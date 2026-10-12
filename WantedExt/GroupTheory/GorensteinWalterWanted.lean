@@ -83,7 +83,7 @@ public theorem_wanted gorenstein_walter
     (_hdih : ∃ n : ℕ, Nonempty ((P : Subgroup G) ≃* DihedralGroup n)) :
     Nonempty (G ≃* alternatingGroup (Fin 7)) ∨
     ∃ p k : ℕ, ∃ _hp : Fact p.Prime, Odd p ∧ 5 ≤ p ^ k ∧
-      Nonempty (G ≃* Matrix.ProjectiveSpecialLinearGroup (Fin 2) (GaloisField p k))
+      (letI := _hp; Nonempty (G ≃* Matrix.ProjectiveSpecialLinearGroup (Fin 2) (GaloisField p k)))
 
 end GroupTheory
 

@@ -30,7 +30,9 @@ into a Batteries `theorem_wanted` (data/instance holes into
 `def_wanted`), replaced `EvalTools.Markers` with
 `Batteries.Util.ProofWanted`, inlined any `LeanEval` helper modules,
 and placed the declarations in the `MathlibExt.AlgebraicGeometry.BezoutWanted` namespace. Mathematical
-statements are unchanged. Source: É. Bézout, *Théorie générale des équations algébriques*, Paris, 1779. Modern projective formulation: see Eisenbud, *Commutative Algebra*, Chapter 12, or Hartshorne, *Algebraic Geometry*, Ch. I §7. Listed as §50 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf).
+statements are unchanged, except for one correction recorded as a Lean variant:
+`intersectionMultiplicity` now takes `Module.length` over the local ring
+`localRingAt q` (the ring of the quotient module), not over `K`. Source: É. Bézout, *Théorie générale des équations algébriques*, Paris, 1779. Modern projective formulation: see Eisenbud, *Commutative Algebra*, Chapter 12, or Hartshorne, *Algebraic Geometry*, Ch. I §7. Listed as §50 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf).
 -/
 module
 
@@ -39,6 +41,10 @@ public import Batteries.Util.ProofWanted
 public import Mathlib.AlgebraicGeometry.Scheme
 public import Mathlib.AlgebraicGeometry.AffineScheme
 public import Mathlib.RingTheory.Polynomial.Basic
+public import Mathlib.LinearAlgebra.Projectivization.Basic
+public import Mathlib.FieldTheory.IsAlgClosed.Basic
+public import Mathlib.RingTheory.Length
+public import Mathlib.RingTheory.MvPolynomial.Homogeneous
 
 @[expose] public section
 
@@ -124,7 +130,7 @@ noncomputable abbrev localRingAt {n : ℕ} (q : Fin (n + 1) → K) :=
   Localization.AtPrime (maxIdealAt q)
 
 /-- Intersection multiplicity at a projective point of homogeneous
-polynomials, via the affine-cone construction. `Module.length` over `K`
+polynomials, via the affine-cone construction. `Module.length` over the local ring
 returns `⊤` on non-proper / positive-dimensional components and a
 natural number on a zero-dimensional intersection point. -/
 noncomputable def intersectionMultiplicity {n : ℕ}
@@ -135,7 +141,7 @@ noncomputable def intersectionMultiplicity {n : ℕ}
   let φ : MvPolynomial (Fin (n + 1)) K →+* localRingAt q := algebraMap _ _
   let I : Ideal (localRingAt q) :=
     Ideal.span ((Set.range fun k : Fin n => φ (f k)) ∪ {φ (X i - C 1)})
-  Module.length K (localRingAt q ⧸ I)
+  Module.length (localRingAt q) (localRingAt q ⧸ I)
 
 /- **Bézout's theorem (with multiplicity).** Given `n` homogeneous
 polynomials `f_k` in `n + 1` variables, each of total degree exactly
