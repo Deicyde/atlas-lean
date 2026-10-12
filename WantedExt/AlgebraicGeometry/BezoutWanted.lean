@@ -39,10 +39,6 @@ public import Batteries.Util.ProofWanted
 public import Mathlib.AlgebraicGeometry.Scheme
 public import Mathlib.AlgebraicGeometry.AffineScheme
 public import Mathlib.RingTheory.Polynomial.Basic
-public import Mathlib.LinearAlgebra.Projectivization.Basic
-public import Mathlib.FieldTheory.IsAlgClosed.Basic
-public import Mathlib.RingTheory.Length
-public import Mathlib.RingTheory.MvPolynomial.Homogeneous
 
 @[expose] public section
 
@@ -62,7 +58,7 @@ The intersection multiplicity is constructed via the affine cone
 (Eisenbud, *Commutative Algebra*, Ch. 12). For `p ∈ ℙⁿ` with rep
 `v ≠ 0`, choose any index `i` with `v_i ≠ 0`, let
 `q_j = v_j / v_i` (so `q_i = 1`), localise `K[X_0, …, X_n]` at the
-maximal ideal of `q`, and take the `Module.length` over `K` of the
+maximal ideal of `q`, and take the `Module.length` over the local ring of the
 quotient by `(f_1, …, f_n, X_i − 1)`. The `X_i − 1` factor cuts the
 affine cone down to the transverse hyperplane slice.
 -/
@@ -139,7 +135,7 @@ noncomputable def intersectionMultiplicity {n : ℕ}
   let φ : MvPolynomial (Fin (n + 1)) K →+* localRingAt q := algebraMap _ _
   let I : Ideal (localRingAt q) :=
     Ideal.span ((Set.range fun k : Fin n => φ (f k)) ∪ {φ (X i - C 1)})
-  Module.length (localRingAt q) (localRingAt q ⧸ I)
+  Module.length K (localRingAt q ⧸ I)
 
 /- **Bézout's theorem (with multiplicity).** Given `n` homogeneous
 polynomials `f_k` in `n + 1` variables, each of total degree exactly
