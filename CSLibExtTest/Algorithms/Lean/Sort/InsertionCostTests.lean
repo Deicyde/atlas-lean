@@ -14,23 +14,23 @@ public import CSLibExt.Algorithms.Lean.Sort.InsertionCost
 
 namespace Cslib.Algorithms.Lean.TimeM
 
-example : (insertionSort ([] : List Nat)).ret = [] := by simp [insertionSort]
-example : (insertionSort ([] : List Nat)).time = 0 := by simp [insertionSort]
+example : (insertionSort ([] : List Nat)).ret = [] := by simp [insertionSort_eq_insertionSortM]
+example : (insertionSort ([] : List Nat)).time = 0 := by simp [insertionSort_eq_insertionSortM]
 
-example : (insertionSort [7]).ret = [7] := by simp [insertionSort]
-example : (insertionSort [7]).time = 0 := by simp [insertionSort]
+example : (insertionSort [7]).ret = [7] := by simp [insertionSort_eq_insertionSortM]
+example : (insertionSort [7]).time = 0 := by simp [insertionSort_eq_insertionSortM]
 
 example : (insertionSort [1, 2, 3, 4]).ret = [1, 2, 3, 4] := by
-  simp [insertionSort, compareLE]
-example : (insertionSort [1, 2, 3, 4]).time = 3 := by simp [insertionSort, compareLE]
+  simp [insertionSort_eq_insertionSortM, compareLE]
+example : (insertionSort [1, 2, 3, 4]).time = 3 := by simp [insertionSort_eq_insertionSortM, compareLE]
 
 example : (insertionSort [4, 3, 2, 1]).ret = [1, 2, 3, 4] := by
-  simp [insertionSort, compareLE]
-example : (insertionSort [4, 3, 2, 1]).time = 6 := by simp [insertionSort, compareLE]
+  simp [insertionSort_eq_insertionSortM, compareLE]
+example : (insertionSort [4, 3, 2, 1]).time = 6 := by simp [insertionSort_eq_insertionSortM, compareLE]
 
 example : (insertionSort [2, 1, 2, 1]).ret = [1, 1, 2, 2] := by
-  simp [insertionSort, compareLE]
-example : (insertionSort [2, 1, 2, 1]).time = 5 := by simp [insertionSort, compareLE]
+  simp [insertionSort_eq_insertionSortM, compareLE]
+example : (insertionSort [2, 1, 2, 1]).time = 5 := by simp [insertionSort_eq_insertionSortM, compareLE]
 
 example (xs : List Nat) :
     List.Pairwise (fun x y => x ≤ y) (insertionSort xs).ret ∧

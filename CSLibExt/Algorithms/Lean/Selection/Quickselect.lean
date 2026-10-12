@@ -137,6 +137,45 @@ private theorem countP_cons_eq_block_add_above (pivot : α) (xs : List α)
   simp [hpivot]
   omega
 
+/-- Predicate counts survive partitioning when both other parts contribute zero. -/
+theorem partition3_countP_eq_below {α : Type u} [LinearOrder α]
+    (pivot : α) (xs : List α) (p : α → Bool)
+    (hequal : ∀ x ∈ (partition3 pivot xs).ret.equal, p x = false)
+    (habove : ∀ x ∈ (partition3 pivot xs).ret.above, p x = false) :
+    xs.countP p = (partition3 pivot xs).ret.below.countP p := by
+  have hparts := partition3_correct pivot xs
+  have hequalZero : (partition3 pivot xs).ret.equal.countP p = 0 :=
+    List.countP_eq_zero.2 fun x hx => by
+      simp [hequal x hx]
+  have haboveZero : (partition3 pivot xs).ret.above.countP p = 0 :=
+    List.countP_eq_zero.2 fun x hx => by
+      simp [habove x hx]
+  have hcount := hparts.1.countP_eq p
+  simp only [List.countP_append, hequalZero, haboveZero, Nat.add_zero] at hcount
+  exact hcount.symm
+
+/-- Filled below and equal blocks contribute their lengths to an above-part count. -/
+theorem partition3_countP_eq_block_add_above {α : Type u} [LinearOrder α]
+    (pivot : α) (xs : List α) (p : α → Bool)
+    (hbelow : ∀ x ∈ (partition3 pivot xs).ret.below, p x = true)
+    (hequal : ∀ x ∈ (partition3 pivot xs).ret.equal, p x = true) :
+    xs.countP p = (partition3 pivot xs).ret.below.length +
+      (partition3 pivot xs).ret.equal.length + (partition3 pivot xs).ret.above.countP p := by
+  have hparts := partition3_correct pivot xs
+  have hbelowCount :
+      (partition3 pivot xs).ret.below.countP p =
+        (partition3 pivot xs).ret.below.length :=
+    List.countP_eq_length.2 fun x hx => by
+      simp [hbelow x hx]
+  have hequalCount :
+      (partition3 pivot xs).ret.equal.countP p =
+        (partition3 pivot xs).ret.equal.length :=
+    List.countP_eq_length.2 fun x hx => by
+      simp [hequal x hx]
+  have hcount := hparts.1.countP_eq p
+  simp only [List.countP_append, hbelowCount, hequalCount] at hcount
+  exact hcount.symm
+
 private theorem count_lt_pivot (pivot : α) (xs : List α) :
     (pivot :: xs).countP (fun x => decide (x < pivot)) =
       (partition3 pivot xs).ret.below.length := by
@@ -168,6 +207,21 @@ private theorem count_le_pivot (pivot : α) (xs : List α) :
     List.countP_eq_zero.2 fun x hx => by
       simp [not_le_of_gt (hparts.2.2.2 x hx)]
   simpa [haboveZero] using hcount
+
+/-- The below block counts exactly the original occurrences below the pivot. -/
+theorem partition3_count_lt {α : Type u} [LinearOrder α] (pivot : α) (xs : List α) :
+    xs.countP (fun x => decide (x < pivot)) = (partition3 pivot xs).ret.below.length := by
+  simpa using count_lt_pivot pivot xs
+
+/-- The below and equal blocks count all original occurrences at most the pivot. -/
+theorem partition3_count_le {α : Type u} [LinearOrder α] (pivot : α) (xs : List α) :
+    xs.countP (fun x => decide (x ≤ pivot)) =
+      (partition3 pivot xs).ret.below.length + (partition3 pivot xs).ret.equal.length := by
+  have h := count_le_pivot pivot xs
+  have hcons : (pivot :: xs).countP (fun x => decide (x ≤ pivot)) =
+      xs.countP (fun x => decide (x ≤ pivot)) + 1 := by simp
+  rw [hcons] at h
+  omega
 
 private theorem count_lt_eq_below_of_lt (pivot : α) (xs : List α) {x : α}
     (hx : x < pivot) :
@@ -358,6 +412,18 @@ theorem quickselect_eq_getElem?_insertionSort (xs : List α) (k : Nat) :
       apply getElem?_eq_some_of_count_rank (List.pairwise_insertionSort _ xs)
       · omega
       · omega
+
+/-- The duplicate-safe rank inequalities characterize a successful quickselect value. -/
+theorem quickselect_eq_some_of_count_rank {α : Type u} [LinearOrder α]
+    {xs : List α} {k : Nat} {x : α}
+    (hlt : xs.countP (fun y => decide (y < x)) ≤ k)
+    (hle : k < xs.countP (fun y => decide (y ≤ x))) :
+    (quickselect xs k).ret = some x := by
+  rw [quickselect_eq_getElem?_insertionSort]
+  have hperm := List.perm_insertionSort (fun a b : α => a ≤ b) xs
+  apply getElem?_eq_some_of_count_rank (List.pairwise_insertionSort _ xs)
+  · simpa only [hperm.countP_eq (fun y => decide (y < x))] using hlt
+  · simpa only [hperm.countP_eq (fun y => decide (y ≤ x))] using hle
 
 private theorem choose_two_add_self (n : Nat) :
     n.choose 2 + n = (n + 1).choose 2 := by

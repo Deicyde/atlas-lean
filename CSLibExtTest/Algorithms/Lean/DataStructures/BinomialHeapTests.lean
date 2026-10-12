@@ -120,4 +120,94 @@ example {heap : BinomialHeap Nat} {minimum value : Nat}
     minimum ≤ value :=
   heap.findMin_le result member
 
+universe u
+
+example {α : Type u} [LE α] {tree : BinomialTree α} (valid : tree.Valid) :
+    tree.rank ≤ Nat.log2 tree.elements.card :=
+  valid.rank_le_log2_card
+
+example {α : Type u} [LE α] {trees : List (BinomialTree α)} {tree : BinomialTree α}
+    (valid : BinomialForest.Valid trees) (member : tree ∈ trees) :
+    tree.rank ≤ Nat.log2 (BinomialForest.elements trees).card :=
+  valid.member_rank_le_log2_card member
+
+example {α : Type u} [LE α] {trees : List (BinomialTree α)}
+    (valid : BinomialForest.Valid trees) :
+    trees.length ≤ Nat.log2 (BinomialForest.elements trees).card + 1 :=
+  valid.length_le_log2_card_succ
+
+example {α : Type u} [LE α] {trees : List (BinomialTree α)}
+    (valid : BinomialForest.Valid trees) (empty : (BinomialForest.elements trees).card = 0) :
+    trees.length = 0 :=
+  valid.length_eq_zero_of_card_eq_zero empty
+
+example {α : Type u} [LinearOrder α] (heap : BinomialHeap α) {tree : BinomialTree α}
+    (member : tree ∈ heap.trees) : tree.rank ≤ Nat.log2 heap.elements.card :=
+  heap.rank_le_log2_card member
+
+example {α : Type u} [LinearOrder α] (heap : BinomialHeap α) :
+    heap.trees.length ≤ Nat.log2 heap.elements.card + 1 :=
+  heap.length_le_log2_card_succ
+
+example : (BinomialHeap.empty : BinomialHeap Nat).elements.card = 0 := by
+  rfl
+
+example : ([] : List (BinomialTree Nat)).length = 0 :=
+  BinomialForest.valid_nil.length_eq_zero_of_card_eq_zero rfl
+
+example : (BinomialTree.singleton (0 : Nat)).elements.card = 1 := by
+  simp
+
+example : (BinomialTree.link (BinomialTree.singleton (0 : Nat))
+    (BinomialTree.singleton 0)).rank = 1 := by
+  rfl
+
+example : (BinomialTree.link (BinomialTree.singleton (0 : Nat))
+    (BinomialTree.singleton 0)).elements.card = 2 := by
+  simp [BinomialTree.elements_link]
+
+example {α : Type u} [LE α] {trees : List (BinomialTree α)} {tree : BinomialTree α}
+    (valid : BinomialForest.Valid trees) (member : tree ∈ trees) :
+    tree.rank ≤ Nat.log2 (BinomialForest.elements trees).card :=
+  @BinomialForest.Valid.member_rank_le_log2_card α _ trees tree valid member
+
+example : (heapOfList [0, 0, 0]).trees.length = 2 := by
+  simp [heapOfList, BinomialHeap.insert, BinomialHeap.singleton, BinomialHeap.meld,
+    BinomialHeap.empty, BinomialForest.meldTrees, BinomialForest.carry,
+    BinomialTree.singleton, BinomialTree.link, BinomialTree.root,
+    BinomialTree.rank, BinomialTree.children]
+
+example : (heapOfList [0, 0, 0]).trees.map BinomialTree.rank = [0, 1] := by
+  simp [heapOfList, BinomialHeap.insert, BinomialHeap.singleton, BinomialHeap.meld,
+    BinomialHeap.empty, BinomialForest.meldTrees, BinomialForest.carry,
+    BinomialTree.singleton, BinomialTree.link, BinomialTree.root,
+    BinomialTree.rank, BinomialTree.children]
+
+example : (heapOfList [0, 0, 0, 0]).trees.map BinomialTree.rank = [2] := by
+  simp [heapOfList, BinomialHeap.insert, BinomialHeap.singleton, BinomialHeap.meld,
+    BinomialHeap.empty, BinomialForest.meldTrees, BinomialForest.carry,
+    BinomialTree.singleton, BinomialTree.link, BinomialTree.root,
+    BinomialTree.rank, BinomialTree.children]
+
+example : (heapOfList [0, 0, 0]).elements.card = 3 := by
+  simp only [heapOfList, List.foldl_cons, List.foldl_nil, BinomialHeap.elements_insert,
+    Multiset.card_cons]
+  rfl
+
+example : (heapOfList [0, 0, 0, 0]).elements.card = 4 := by
+  simp only [heapOfList, List.foldl_cons, List.foldl_nil, BinomialHeap.elements_insert,
+    Multiset.card_cons]
+  rfl
+
+example : ¬ BinomialTree.Valid (BinomialTree.node 1 (0 : Nat) []) := by
+  intro valid
+  have ranks := valid.children_ranks
+  simp [BinomialTree.children, BinomialTree.rank] at ranks
+
+example : ¬ BinomialForest.Valid
+    [BinomialTree.singleton (0 : Nat), BinomialTree.singleton 0, BinomialTree.singleton 0] := by
+  intro valid
+  have ranks := valid.2
+  simp at ranks
+
 end Cslib.Algorithms.Lean.BinomialHeapTests

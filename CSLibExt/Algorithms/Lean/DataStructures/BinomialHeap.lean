@@ -25,8 +25,8 @@ There is no formal cost model here. Under constant-time comparison and construct
 `link` takes constant time; insertion and minimum inspection visit at most the number of roots
 `k`; and the implementation gives conservative worst-case bounds `O((k₁ + k₂) ^ 2)` for
 meld and `O(k + r + (k + r) ^ 2)` for deleting a tree of rank `r`. The proved powers-of-two tree
-sizes and unique ranks give the usual logarithmic bounds on `k` and `r` as a prose consequence,
-not as a theorem about running time in this module.
+sizes and unique ranks give machine-checked binary-logarithm bounds on `k` and `r`.
+These structural bounds are not theorems about running time in this module.
 -/
 
 set_option autoImplicit false
@@ -147,6 +147,11 @@ public theorem Valid.card_elements [LE α] {tree : BinomialTree α} (valid : Val
   cases valid with
   | node _ _ card_elements _ => exact card_elements
 
+/-- The rank of a valid tree is bounded by the binary logarithm of its cardinality. -/
+public theorem Valid.rank_le_log2_card [LE α] {tree : BinomialTree α} (valid : Valid tree) :
+    tree.rank ≤ Nat.log2 tree.elements.card := by
+  simpa only [valid.card_elements, Nat.log2_two_pow] using (le_rfl : tree.rank ≤ tree.rank)
+
 /-- The root of a valid tree is no greater than every represented element. -/
 public theorem Valid.root_le [LE α] {tree : BinomialTree α} (valid : Valid tree)
     {value : α} (member : value ∈ tree.elements) : tree.root ≤ value := by
@@ -228,6 +233,18 @@ variable {α : Type u}
 @[expose] public def elements {α : Type u} (trees : List (BinomialTree α)) : Multiset α :=
   (trees.map BinomialTree.elements).sum
 
+private lemma card_elements_le_card {trees : List (BinomialTree α)} {tree : BinomialTree α}
+    (member : tree ∈ trees) : tree.elements.card ≤ (elements trees).card := by
+  induction trees with
+  | nil => simp at member
+  | cons head tail ih =>
+    change tree.elements.card ≤ (head.elements + elements tail).card
+    rw [Multiset.card_add]
+    rcases List.mem_cons.mp member with rfl | member
+    · omega
+    · have card_le := ih member
+      omega
+
 private theorem mem_elements_iff {trees : List (BinomialTree α)} {value : α} :
     value ∈ elements trees ↔ ∃ tree ∈ trees, value ∈ tree.elements := by
   induction trees with
@@ -286,6 +303,40 @@ public theorem Valid.sublist [LE α] {left right : List (BinomialTree α)}
   · intro tree member
     exact valid.1 tree (sublist.subset member)
   · exact valid.2.sublist (sublist.map BinomialTree.rank)
+
+/-- Every forest member has rank at most the binary logarithm of the forest cardinality. -/
+public theorem Valid.member_rank_le_log2_card [LE α] {trees : List (BinomialTree α)}
+    {tree : BinomialTree α} (valid : Valid trees) (member : tree ∈ trees) :
+    tree.rank ≤ Nat.log2 (elements trees).card := by
+  have card_le := card_elements_le_card member
+  have card_pos : 0 < tree.elements.card := by
+    cases tree
+    simp [BinomialTree.elements]
+  apply (Nat.le_log2 (by omega)).mpr
+  rw [← (valid.1 tree member).card_elements]
+  exact card_le
+
+/-- A valid forest has at most one more root than the binary logarithm of its cardinality. -/
+public theorem Valid.length_le_log2_card_succ [LE α] {trees : List (BinomialTree α)}
+    (valid : Valid trees) : trees.length ≤ Nat.log2 (elements trees).card + 1 := by
+  have subset : trees.map BinomialTree.rank ⊆ List.range (Nat.log2 (elements trees).card + 1) := by
+    intro rank member
+    rcases List.mem_map.mp member with ⟨tree, tree_member, rfl⟩
+    have rank_le := valid.member_rank_le_log2_card tree_member
+    have rank_lt : tree.rank < Nat.log2 (elements trees).card + 1 := by omega
+    simpa using rank_lt
+  simpa using valid.2.nodup.length_le_of_subset subset
+
+/-- A valid forest with no represented elements has no roots. -/
+public theorem Valid.length_eq_zero_of_card_eq_zero [LE α] {trees : List (BinomialTree α)}
+    (valid : Valid trees) (empty : (elements trees).card = 0) : trees.length = 0 := by
+  cases trees with
+  | nil => rfl
+  | cons tree trees =>
+    have tree_valid := valid.1 tree (by simp)
+    have card_le := card_elements_le_card (show tree ∈ tree :: trees by simp)
+    rw [tree_valid.card_elements, empty] at card_le
+    simp at card_le
 
 /-- Insert a tree whose rank is no greater than every forest rank, propagating equal-rank
 links as a binary carry. -/
@@ -642,6 +693,17 @@ variable {α : Type u}
 /-- The multiset represented by a binomial heap. -/
 @[expose] public def elements [LinearOrder α] (heap : BinomialHeap α) : Multiset α :=
   BinomialForest.elements heap.trees
+
+/-- Every heap tree has rank at most the binary logarithm of the heap cardinality. -/
+public theorem rank_le_log2_card [LinearOrder α] (heap : BinomialHeap α)
+    {tree : BinomialTree α} (member : tree ∈ heap.trees) :
+    tree.rank ≤ Nat.log2 heap.elements.card :=
+  heap.valid.member_rank_le_log2_card member
+
+/-- A heap has at most one more root than the binary logarithm of its cardinality. -/
+public theorem length_le_log2_card_succ [LinearOrder α] (heap : BinomialHeap α) :
+    heap.trees.length ≤ Nat.log2 heap.elements.card + 1 :=
+  heap.valid.length_le_log2_card_succ
 
 /-- The empty binomial heap. -/
 @[expose] public def empty [LinearOrder α] : BinomialHeap α :=
