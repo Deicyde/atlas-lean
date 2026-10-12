@@ -8,7 +8,7 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import Cslib.Algorithms.Lean.TimeM
+public import CSLibExt.Algorithms.Lean.DataStructures.Stack.Basic
 import Mathlib.Data.List.TakeDrop
 
 /-!
@@ -100,6 +100,24 @@ public def execute {α : Type u} : List α → List (Operation α) → TimeM Nat
   | stack, .multipop count :: ops => do
     let next ← multipopSigned stack count
     execute next ops
+
+/-- Sequence PUSH agrees with the standalone operation's result and event cost. -/
+public theorem execute_push_eq_bind_push {α : Type u} (stack : List α) (value : α)
+    (ops : List (Operation α)) :
+    execute stack (.push value :: ops) = (do
+      let next ← push stack value
+      execute next ops) := by
+  rfl
+
+/-- Sequence POP agrees with the standalone operation, including underflow. -/
+public theorem execute_pop_eq_bind_pop {α : Type u} (stack : List α)
+    (ops : List (Operation α)) :
+    execute stack (.pop :: ops) = (do
+      let removed ← pop stack
+      match removed with
+      | none => pure none
+      | some (_, next) => execute next ops) := by
+  cases stack <;> rfl
 
 /-- Actual successful cost and remaining size account for every pushed element. -/
 public theorem execute_balance {α : Type u} (stack : List α) (ops : List (Operation α))
