@@ -321,9 +321,9 @@ private lemma sort_measurable {Ω : Type*} [MeasurableSpace Ω] (n : ℕ)
   induction n with
   | zero =>
       constructor
-      · simp [TimeM.insertionSort]
+      · simp
       · intro j
-        simp [TimeM.insertionSort]
+        simp
   | succ n ih =>
       obtain ⟨ht, hr⟩ := ih (fun i => f i.succ) (fun i => hf i.succ)
       let g : Fin n → Ω → ℝ := fun i ω =>
@@ -335,15 +335,17 @@ private lemma sort_measurable {Ω : Type*} [MeasurableSpace Ω] (n : ℕ)
         rw [(TimeM.insertionSort_perm _).length_eq, List.length_ofFn]
       obtain ⟨hit, hir⟩ := insert_measurable n (f 0) g (hf 0) hg
       constructor
-      · simp_rw [List.ofFn_succ, TimeM.insertionSort, List.insertionSortM_cons, TimeM.time_bind]
+      · simp_rw [List.ofFn_succ, TimeM.insertionSort_eq_insertionSortM,
+          List.insertionSortM_cons, TimeM.time_bind]
         have h : Measurable (fun ω =>
             (TimeM.insertionSort (List.ofFn (fun i => f i.succ ω))).time +
               (List.orderedInsertM TimeM.compareLE (f 0 ω) (List.ofFn (fun i => g i ω))).time) :=
           ht.add hit
-        simpa only [hrepr, TimeM.insertionSort] using h
+        simpa only [hrepr, TimeM.insertionSort_eq_insertionSortM] using h
       · intro j
-        simp_rw [List.ofFn_succ, TimeM.insertionSort, List.insertionSortM_cons, TimeM.ret_bind]
-        simpa only [hrepr, TimeM.insertionSort] using hir j
+        simp_rw [List.ofFn_succ, TimeM.insertionSort_eq_insertionSortM,
+          List.insertionSortM_cons, TimeM.ret_bind]
+        simpa only [hrepr, TimeM.insertionSort_eq_insertionSortM] using hir j
 
 private lemma mapped_sort_measurable {Ω : Type*} [MeasurableSpace Ω] {ι : Type*}
     (l : List ι) (f : ι → Ω → ℝ) (hf : ∀ i, Measurable (f i)) :

@@ -16,36 +16,77 @@ import Mathlib.Data.Nat.Choose.Basic
 /-!
 # Comparison cost of insertion sort
 
-This module specializes CSLib's `List.insertionSortM` to `TimeM Nat`. Exactly one unit is charged
-for each order comparison; pattern matching, recursive calls, and pure list construction are free.
-
-The return-value proof reuses CSLib's `Cslib.IsMonadHom.map_listInsertionSortM`. Sortedness and
-permutation reuse Mathlib's `List.pairwise_insertionSort` and `List.perm_insertionSort`.
+This module specializes CSLib's insertion-sort procedure to `TimeM Nat`. The explicit
+`TimeM.bind` calls allow Boolean comparisons in `Type 0` and list results in any universe;
+the canonical generic-monad API is restricted to `Type 0`. Equality with that API is proved
+where it applies. Exactly one unit is charged for each order comparison; pattern matching,
+recursive calls, and pure list construction are free. Sortedness and permutation reuse
+Mathlib's `List.pairwise_insertionSort` and `List.perm_insertionSort`.
 -/
 
 @[expose] public section
 
 set_option autoImplicit false
+universe u
 
 namespace Cslib.Algorithms.Lean.TimeM
 
-variable {α : Type} [LinearOrder α]
+variable {α : Type u} [LinearOrder α]
 
 /-- Decides `x ≤ y`, charging one unit for the comparison. -/
 abbrev compareLE (x y : α) : TimeM Nat Bool := do
   ✓ return decide (x ≤ y)
 
+/-- Insert one element, allowing comparison and output values in different universes. -/
+def insertionSortInsert (a : α) : List α → TimeM Nat (List α)
+  | [] => pure [a]
+  | b :: xs => TimeM.bind (compareLE a b) fun before =>
+      if before then pure (a :: b :: xs)
+      else TimeM.bind (insertionSortInsert a xs) fun tail => pure (b :: tail)
+
 /-- Insertion sort with one unit of time charged for every order comparison. -/
-abbrev insertionSort (xs : List α) : TimeM Nat (List α) :=
-  List.insertionSortM compareLE xs
+def insertionSort : List α → TimeM Nat (List α)
+  | [] => pure []
+  | a :: xs => TimeM.bind (insertionSort xs) (insertionSortInsert a)
+
+/-- Inserting one element returns Mathlib's ordered insert of that element. -/
+theorem ret_insertionSortInsert (a : α) (xs : List α) :
+    (insertionSortInsert a xs).ret = List.orderedInsert (fun x y => x ≤ y) a xs := by
+  induction xs with
+  | nil => simp [insertionSortInsert]
+  | cons b xs ih =>
+      by_cases h : a ≤ b <;>
+        simp [insertionSortInsert, compareLE, TimeM.bind, List.orderedInsert_cons, h, ih]
 
 /-- Erasing comparison costs recovers Mathlib's insertion sort. -/
 @[simp]
 theorem ret_insertionSort (xs : List α) :
     (insertionSort xs).ret = List.insertionSort (fun x y => x ≤ y) xs := by
-  simpa [insertionSort] using
-    Id.ext_iff.mp
-      (isMonadHom_pure_ret.map_listInsertionSortM compareLE xs)
+  induction xs with
+  | nil => simp [insertionSort]
+  | cons a xs ih =>
+      simpa only [insertionSort, TimeM.bind, ret_insertionSortInsert,
+        List.insertionSort_cons, ih]
+
+private theorem insertionSortInsert_eq_orderedInsertM {β : Type} [LinearOrder β]
+    (a : β) (xs : List β) :
+    insertionSortInsert a xs = List.orderedInsertM compareLE a xs := by
+  induction xs with
+  | nil => simp [insertionSortInsert]
+  | cons b xs ih =>
+      apply TimeM.ext <;> by_cases h : a ≤ b <;>
+        simp [insertionSortInsert, List.orderedInsertM_cons, compareLE, TimeM.bind, h, ih]
+
+/-- On `Type 0`, the complete return value and comparison charges equal CSLib's API. -/
+@[simp]
+theorem insertionSort_eq_insertionSortM {β : Type} [LinearOrder β] (xs : List β) :
+    insertionSort xs = List.insertionSortM compareLE xs := by
+  induction xs with
+  | nil => simp [insertionSort]
+  | cons a xs ih =>
+      apply TimeM.ext <;>
+        simp [insertionSort, List.insertionSortM_cons, TimeM.bind, ih,
+          insertionSortInsert_eq_orderedInsertM]
 
 /-- Insertion sort returns a nondecreasing list. -/
 theorem insertionSort_sorted (xs : List α) :
@@ -62,14 +103,15 @@ theorem insertionSort_correct (xs : List α) :
       List.Perm (insertionSort xs).ret xs :=
   ⟨insertionSort_sorted xs, insertionSort_perm xs⟩
 
-private theorem orderedInsert_time_le (a : α) (xs : List α) :
-    (List.orderedInsertM compareLE a xs).time ≤ xs.length := by
+/-- Inserting one element charges at most one comparison per existing element. -/
+theorem insertionSortInsert_time_le (a : α) (xs : List α) :
+    (insertionSortInsert a xs).time ≤ xs.length := by
   induction xs with
-  | nil => simp
+  | nil => simp [insertionSortInsert]
   | cons b xs ih =>
       by_cases h : a ≤ b
-      · simp [List.orderedInsertM_cons, h, compareLE, TimeM.tick]
-      · simp [List.orderedInsertM_cons, h, compareLE]
+      · simp [insertionSortInsert, h, compareLE, TimeM.tick, TimeM.bind]
+      · simp [insertionSortInsert, h, compareLE, TimeM.bind]
         omega
 
 private theorem insertionSort_time_le_choose (xs : List α) :
@@ -78,15 +120,15 @@ private theorem insertionSort_time_le_choose (xs : List α) :
   | nil => simp [insertionSort]
   | cons a xs ih =>
       have hInsert :
-          (List.orderedInsertM compareLE a (insertionSort xs).ret).time ≤ xs.length := by
+          (insertionSortInsert a (insertionSort xs).ret).time ≤ xs.length := by
         calc
-          (List.orderedInsertM compareLE a (insertionSort xs).ret).time ≤
-              (insertionSort xs).ret.length := orderedInsert_time_le a (insertionSort xs).ret
+          (insertionSortInsert a (insertionSort xs).ret).time ≤
+              (insertionSort xs).ret.length := insertionSortInsert_time_le a (insertionSort xs).ret
           _ = xs.length := (insertionSort_perm xs).length_eq
-      simp only [insertionSort, List.insertionSortM_cons, time_bind, List.length_cons]
+      simp only [insertionSort, TimeM.bind, List.length_cons]
       calc
-        (List.insertionSortM compareLE xs).time +
-              (List.orderedInsertM compareLE a (List.insertionSortM compareLE xs).ret).time ≤
+        (insertionSort xs).time +
+              (insertionSortInsert a (insertionSort xs).ret).time ≤
             xs.length.choose 2 + xs.length := Nat.add_le_add ih hInsert
         _ = (xs.length + 1).choose 2 := by
           simpa [Nat.choose_one_right, Nat.add_comm, Nat.succ_eq_add_one] using
