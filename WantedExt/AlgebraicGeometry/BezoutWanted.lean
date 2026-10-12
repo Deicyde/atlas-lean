@@ -35,11 +35,14 @@ statements are unchanged. Source: É. Bézout, *Théorie générale des équatio
 module
 
 
-public import Mathlib
 public import Batteries.Util.ProofWanted
 public import Mathlib.AlgebraicGeometry.Scheme
 public import Mathlib.AlgebraicGeometry.AffineScheme
 public import Mathlib.RingTheory.Polynomial.Basic
+public import Mathlib.LinearAlgebra.Projectivization.Basic
+public import Mathlib.FieldTheory.IsAlgClosed.Basic
+public import Mathlib.RingTheory.Length
+public import Mathlib.RingTheory.MvPolynomial.Homogeneous
 
 @[expose] public section
 
@@ -136,7 +139,7 @@ noncomputable def intersectionMultiplicity {n : ℕ}
   let φ : MvPolynomial (Fin (n + 1)) K →+* localRingAt q := algebraMap _ _
   let I : Ideal (localRingAt q) :=
     Ideal.span ((Set.range fun k : Fin n => φ (f k)) ∪ {φ (X i - C 1)})
-  Module.length K (localRingAt q ⧸ I)
+  Module.length (localRingAt q) (localRingAt q ⧸ I)
 
 /- **Bézout's theorem (with multiplicity).** Given `n` homogeneous
 polynomials `f_k` in `n + 1` variables, each of total degree exactly
