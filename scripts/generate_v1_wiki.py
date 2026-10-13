@@ -14,7 +14,8 @@ accepts exactly what this script asserts.
 
 Status follows v1's own evaluation. A target that passed review is
 `statement: formalized`; a theorem whose dependency chain is also sorry-free
-(per both `sorry_deps` and the `#print axioms` output) is `proof: formalized`. Definitions need a sorry-free chain to be marked at all,
+(per `sorry_deps`) and rests only on Lean's standard axioms (per `#print axioms`;
+so no sorryAx and no native_decide) is `proof: formalized`. Definitions need a sorry-free chain to be marked at all,
 because Autoform counts a stated definition as proved. Graph edges come from
 sources/v1/lean-dependencies.json (see scripts/extract_v1_lean_dependencies.py):
 the targets a target's Lean statement or proof reaches, through helper
@@ -148,6 +149,7 @@ SUBJECTS = {
     ),
 }
 
+KERNEL_AXIOMS = {"propext", "Classical.choice", "Quot.sound", "No axiom dependencies"}
 KIND_DECLARATION = {"definition": "def", "construction": "def", "axiom": "axiom"}
 NUMBERED_HEAD = re.compile(r"(?i)^(section|chapter|lecture|class meeting\s*#?|part)\s*(\d+)")
 ARTICLE_ID = re.compile(r"^article_id: (af_[0-9a-f]{24})$", re.M)
@@ -273,10 +275,10 @@ def load_book(book: str, index, lean_dependencies: dict) -> tuple[list[Target], 
             declaration = KIND_DECLARATION.get(item["kind"], "theorem")
         is_data = declaration in DEFINITION_DECLARATIONS
         # `sorry_deps` sometimes says "None" while the compiled `#print axioms`
-        # output lists sorryAx; the axioms win.
-        sorry_free = (item.get("sorry_deps") or "").startswith("None") and "sorryAx" not in (
-            item.get("axioms") or ""
-        )
+        # output lists sorryAx; the axioms win. Only Lean's standard axioms
+        # count as kernel-checked, so native_decide proofs are not proved here.
+        axioms = {name.strip() for name in (item.get("axioms") or "").split(",") if name.strip()}
+        sorry_free = (item.get("sorry_deps") or "").startswith("None") and axioms <= KERNEL_AXIOMS
         statement = resolved and item["passed"] and (sorry_free or not is_data)
         name = " ".join(item["name"].split())
         # Brackets in link text stop `autoform render` placing the leaf.
