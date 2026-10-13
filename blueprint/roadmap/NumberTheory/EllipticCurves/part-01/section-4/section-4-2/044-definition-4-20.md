@@ -1,4 +1,5 @@
 ---
+article_id: af_49a650107595b66ebcb086ae
 declaration: structure
 origin: cited
 lean: Isogeny

@@ -1,3 +1,7 @@
+---
+article_id: af_15e1384173b7096a71103afa
+---
+
 # Part 1 of 2
 
 - [Alfred Fibonacci Determinant](alfred-consecutive-fibonacci-powers-dete.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_dde01f42e6f2240603ed4508
+---
+
 # Section 1.33
 
 - [Theorem 1.33.1 (Cartier-Kostant)](095-cartier-kostant.md)

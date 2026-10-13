@@ -1,4 +1,5 @@
 ---
+article_id: af_e92a8bfb03d25295a21fa3f5
 declaration: def
 origin: cited
 lean: RiemannRochSpace.genus

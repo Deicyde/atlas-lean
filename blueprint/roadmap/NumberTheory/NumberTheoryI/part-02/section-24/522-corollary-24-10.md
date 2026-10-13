@@ -1,4 +1,5 @@
 ---
+article_id: af_d8b06c698b8541f5a5c717ab
 declaration: theorem
 origin: cited
 lean: ArtinUnramified.herbrand_quotient_ideals_modulus

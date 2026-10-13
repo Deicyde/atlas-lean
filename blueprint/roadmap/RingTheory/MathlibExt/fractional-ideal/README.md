@@ -1,3 +1,7 @@
+---
+article_id: af_14270b5fde0897dd4434a9a1
+---
+
 # Fractional Ideal
 
 - [Dual](dual/README.md)

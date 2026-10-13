@@ -1,3 +1,7 @@
+---
+article_id: af_f611825e9b5916af619522bc
+---
+
 # Lecture 39
 
 - [Lemma 39.1](131-lemma-39-1.md)

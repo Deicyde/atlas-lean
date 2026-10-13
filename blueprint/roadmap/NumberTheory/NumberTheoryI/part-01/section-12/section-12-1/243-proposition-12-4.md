@@ -1,4 +1,5 @@
 ---
+article_id: af_25beebde278ffdc454714cd1
 declaration: theorem
 origin: cited
 lean: differentIdeal_completion

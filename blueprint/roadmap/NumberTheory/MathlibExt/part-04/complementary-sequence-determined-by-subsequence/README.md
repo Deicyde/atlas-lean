@@ -1,3 +1,7 @@
+---
+article_id: af_0fa4a386d13fdecfbd3d7279
+---
+
 # Complementary Sequence Determined By Subsequence Sum Equation
 
 - [Is Complementary Pair](is-complementary-pair.md)

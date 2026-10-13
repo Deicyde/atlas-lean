@@ -1,4 +1,5 @@
 ---
+article_id: af_64cd8ba8f03659a813410ab9
 declaration: theorem
 origin: cited
 lean: CMIdealIsogeny.isogeny_degree_eq_idealNorm

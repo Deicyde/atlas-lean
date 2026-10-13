@@ -1,3 +1,7 @@
+---
+article_id: af_64ab6fc46e3481c2e2b93a0a
+---
+
 # Dedekind Domain
 
 - [Adic Completion Integers](map-as-ideal-eq-maximal-ideal.md)

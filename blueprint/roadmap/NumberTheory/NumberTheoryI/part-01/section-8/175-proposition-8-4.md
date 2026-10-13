@@ -1,4 +1,5 @@
 ---
+article_id: af_5b713ad1538018dbd42731bc
 declaration: theorem
 origin: cited
 lean: completion_universal_property

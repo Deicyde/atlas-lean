@@ -1,4 +1,5 @@
 ---
+article_id: af_fd3307fbb41d509cb4206885
 declaration: theorem
 origin: cited
 lean: kolmogorov_continuity_theorem

@@ -1,3 +1,7 @@
+---
+article_id: af_c9aab3336ff8f433661ff8f9
+---
+
 # Gromov Hyperbolic
 
 - [Is Delta Hyperbolic](is-delta-hyperbolic.md)

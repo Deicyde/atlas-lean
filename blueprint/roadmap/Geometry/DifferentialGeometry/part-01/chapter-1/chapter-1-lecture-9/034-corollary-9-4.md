@@ -1,4 +1,5 @@
 ---
+article_id: af_dcdfb0aa43f68f06e4336586
 declaration: theorem
 origin: cited
 lean: ClosedCurves.total_absolute_curvature_ge_two_pi

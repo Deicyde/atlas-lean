@@ -1,3 +1,7 @@
+---
+article_id: af_ef5d84cefa68b33a6b90280e
+---
+
 # Part 1 of 2
 
 - [Integral div add sq](integral-div-add-sq.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_5d0a67c1598054151079c8a5
+---
+
 # Entire Exponential Integral
 
 - [Ein Term](ein-term.md)

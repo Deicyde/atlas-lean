@@ -1,3 +1,7 @@
+---
+article_id: af_cb4d43fbefc33425d98a7747
+---
+
 # Avl Tree to Binary Heap
 
 - [Avl Tree](avl-tree/README.md)

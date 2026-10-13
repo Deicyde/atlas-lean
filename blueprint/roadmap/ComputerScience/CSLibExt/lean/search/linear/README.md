@@ -1,3 +1,7 @@
+---
+article_id: af_4cdff9668bb926e9d5eec6a0
+---
+
 # Linear
 
 - [Linear Search](linear-search.md)

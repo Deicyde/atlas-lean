@@ -1,3 +1,7 @@
+---
+article_id: af_352ede8bfac26822600b7cd4
+---
+
 # Lecture 15
 
 - [Cook-Levin Theorem](056-cook-levin-theorem.md)

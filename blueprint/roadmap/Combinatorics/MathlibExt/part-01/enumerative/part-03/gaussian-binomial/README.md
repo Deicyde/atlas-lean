@@ -1,3 +1,7 @@
+---
+article_id: af_6ffa8bb91b91a1219112791a
+---
+
 # Gaussian Binomial
 
 - [Gauss Binom](gauss-binom.md)

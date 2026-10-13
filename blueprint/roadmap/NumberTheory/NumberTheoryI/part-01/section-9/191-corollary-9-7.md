@@ -1,4 +1,5 @@
 ---
+article_id: af_f1c4b61475204078d697df3c
 declaration: def
 origin: cited
 lean: corollary_9_7_global

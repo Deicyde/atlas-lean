@@ -1,4 +1,5 @@
 ---
+article_id: af_66d2e1d537ab98801ad2a992
 declaration: def
 origin: cited
 lean: CWComplex.cwComplexProperties

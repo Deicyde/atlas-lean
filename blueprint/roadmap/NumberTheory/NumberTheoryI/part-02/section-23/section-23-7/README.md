@@ -1,3 +1,7 @@
+---
+article_id: af_3e4d915a9de70fcf5b1f96aa
+---
+
 # Section 23.7
 
 - [Lemma 23.64](502-lemma-23-64.md)

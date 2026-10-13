@@ -1,3 +1,7 @@
+---
+article_id: af_d3eda8be7c1a32a603551dbf
+---
+
 # Lecture 9
 
 - [Theorem (Lecture 9)](173-theorem.md)

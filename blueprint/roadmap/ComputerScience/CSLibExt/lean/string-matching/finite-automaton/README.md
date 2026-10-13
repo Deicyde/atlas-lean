@@ -1,3 +1,7 @@
+---
+article_id: af_907e5e47bc74adcb27664c73
+---
+
 # Finite Automaton
 
 - [Compute Transition](compute-transition.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_1833778b0d8b00331b0c2228
+---
+
 # Small House Wanted to Zagier Hoffman Positive Char Wanted
 
 - [Small House Wanted](small-house-wanted/README.md)

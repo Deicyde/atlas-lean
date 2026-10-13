@@ -1,4 +1,5 @@
 ---
+article_id: af_47a66c1d7ee1e9201d2dc14d
 declaration: theorem
 origin: cited
 lean: ShortWeierstrassCurve.theorem_5_25

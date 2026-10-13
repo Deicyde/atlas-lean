@@ -1,3 +1,7 @@
+---
+article_id: af_48be8ddf4bc3f2c49c73a3ee
+---
+
 # Shortest Path
 
 - [Faster APSP](faster-apsp/README.md)

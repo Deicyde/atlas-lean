@@ -1,3 +1,7 @@
+---
+article_id: af_d72994c9e9ad46e7d8b9dcfc
+---
+
 # Basic Set Theory
 
 - [Definition (Set Relations) (Basic Set Theory) (1)](001-set-relations.md)

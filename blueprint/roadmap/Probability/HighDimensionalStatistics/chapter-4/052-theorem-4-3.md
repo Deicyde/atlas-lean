@@ -1,4 +1,5 @@
 ---
+article_id: af_37ffe33b5973ee5a91be47e9
 declaration: theorem
 origin: cited
 lean: SingularValueThresholding.theorem_4_3

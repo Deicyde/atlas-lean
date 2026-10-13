@@ -1,3 +1,7 @@
+---
+article_id: af_f787e01f8bfde0bfa304dbe5
+---
+
 # Section 6
 
 - [Claim 6.1](068-claim-6-1.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_dacb931c092d28f495a5e1e3
+---
+
 # Lecture 25
 
 - [Definition 46](182-definition-46.md)

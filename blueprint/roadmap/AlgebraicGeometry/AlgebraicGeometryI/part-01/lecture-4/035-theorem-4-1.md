@@ -1,4 +1,5 @@
 ---
+article_id: af_3f2841b7f9a521b3bb19c90c
 declaration: theorem
 origin: cited
 lean: GrassmannianProjective.grassmannian_is_projective_variety

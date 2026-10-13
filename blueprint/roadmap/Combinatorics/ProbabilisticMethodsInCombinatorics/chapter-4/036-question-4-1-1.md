@@ -1,4 +1,5 @@
 ---
+article_id: af_d915744e2effbb07fa85a420
 declaration: theorem
 origin: cited
 lean: RandomGraph.triangleThreshold_above

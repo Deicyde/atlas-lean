@@ -1,4 +1,5 @@
 ---
+article_id: af_0d06e32177ef93442f210c9b
 declaration: theorem
 origin: cited
 lean: AlgebraicTopologyI.crossProduct_exists

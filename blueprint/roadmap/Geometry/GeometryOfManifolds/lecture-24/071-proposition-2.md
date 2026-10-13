@@ -1,4 +1,5 @@
 ---
+article_id: af_f7375f2f6587bbe8c3b8b6ec
 declaration: def
 origin: cited
 lean: spinc_connections_affine

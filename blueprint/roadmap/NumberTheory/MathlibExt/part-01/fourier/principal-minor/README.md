@@ -1,3 +1,7 @@
+---
+article_id: af_cf58b6544da823e0b97c5815
+---
+
 # Principal Minor
 
 - [Root Data](root-data.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_037aa81508074450df3a6da3
+---
+
 # Bonse Inequality
 
 - [Bonse primes infinite](bonse-primes-infinite.md)

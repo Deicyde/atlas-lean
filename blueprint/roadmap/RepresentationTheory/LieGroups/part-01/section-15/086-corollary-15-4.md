@@ -1,4 +1,5 @@
 ---
+article_id: af_fa40d78b085bc7cc7dc8a39a
 declaration: theorem
 origin: cited
 lean: CategoryO.center_acts_through_finiteDim_quotient

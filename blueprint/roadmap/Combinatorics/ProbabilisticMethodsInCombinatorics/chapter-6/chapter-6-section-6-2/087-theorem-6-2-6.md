@@ -1,4 +1,5 @@
 ---
+article_id: af_2433442386034c6ac0e3392f
 declaration: theorem
 origin: cited
 lean: HypergraphColoring.hypergraph_two_coloring_of_LLL_bound

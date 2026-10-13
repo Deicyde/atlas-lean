@@ -1,3 +1,7 @@
+---
+article_id: af_185750ca4d03735e2e15f491
+---
+
 # Lecture 17
 
 - [Definition (SPACE complexity)](064-space-complexity.md)

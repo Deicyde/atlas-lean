@@ -1,3 +1,7 @@
+---
+article_id: af_88d037643d459e9396872c74
+---
+
 # Part 4 of 5
 
 - [Valid Invariant remove Min With Cost](valid-invariant-remove-min-with-cost.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_a3a46909727dead609f62d5a
 declaration: theorem
 origin: cited
 lean: Geodesics.cauchy_schwarz_integral

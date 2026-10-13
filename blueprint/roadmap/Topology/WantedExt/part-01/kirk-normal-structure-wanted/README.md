@@ -1,3 +1,7 @@
+---
+article_id: af_7aec6f08763a8ce889eab1dd
+---
+
 # Kirk Normal Structure Wanted
 
 - [Metric Diameter](metric-diameter.md)

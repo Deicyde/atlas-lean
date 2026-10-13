@@ -1,4 +1,5 @@
 ---
+article_id: af_3184ea25b0375aabf0bc5e18
 declaration: theorem
 origin: cited
 lean: DerangementLowerBound.derangement_lower_bound

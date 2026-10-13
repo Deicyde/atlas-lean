@@ -1,4 +1,5 @@
 ---
+article_id: af_1187b368c71bdf2addaf1f05
 declaration: theorem
 origin: cited
 lean: TuringMachine.A_TM_complement_not_recognizable

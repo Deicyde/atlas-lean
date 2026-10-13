@@ -1,3 +1,7 @@
+---
+article_id: af_344dc186052977cec3bfe703
+---
+
 # Prime Gap Bounds Hypotheses
 
 - [Subpower Bound](subpower-bound.md)

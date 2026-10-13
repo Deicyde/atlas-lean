@@ -1,4 +1,5 @@
 ---
+article_id: af_8aac4a02070227e0e2bc9125
 declaration: theorem
 origin: cited
 lean: BrunnMinkowskiInequality.brunn_minkowski_theorem

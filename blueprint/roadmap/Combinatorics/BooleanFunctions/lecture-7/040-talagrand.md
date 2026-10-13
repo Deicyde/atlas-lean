@@ -1,4 +1,5 @@
 ---
+article_id: af_b62e38b11e1b30d97ae5c7f2
 declaration: theorem
 origin: cited
 lean: BooleanFourier.talagrand_influence_inequality

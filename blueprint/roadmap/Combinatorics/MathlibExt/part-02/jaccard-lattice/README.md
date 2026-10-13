@@ -1,3 +1,7 @@
+---
+article_id: af_714ef3eabb673b017b8a930b
+---
+
 # Jaccard Lattice
 
 - [Is Modular Valuation](is-modular-valuation.md)

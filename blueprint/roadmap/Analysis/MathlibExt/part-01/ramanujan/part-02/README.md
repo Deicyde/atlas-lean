@@ -1,3 +1,7 @@
+---
+article_id: af_27d9ed730b3e4184e4838817
+---
+
 # Part1 Ch7 Entry10 Zetaviabernoulli to Part1 Ch8 Entry10 Qgammalimit
 
 - [Part1 Ch7 Entry10 Zetaviabernoulli](part1-ch7-entry10-zetaviabernoulli/README.md)

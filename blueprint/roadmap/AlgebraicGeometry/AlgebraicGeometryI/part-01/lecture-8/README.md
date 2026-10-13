@@ -1,3 +1,7 @@
+---
+article_id: af_c50ac37d3b9c77ba7d72a411
+---
+
 # Lecture 8
 
 - [Corollary 15](072-corollary-15.md)

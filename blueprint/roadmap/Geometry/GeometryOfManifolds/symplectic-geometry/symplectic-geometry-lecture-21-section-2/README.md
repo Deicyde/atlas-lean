@@ -1,3 +1,7 @@
+---
+article_id: af_abc217c09bf52daaa4ccb997
+---
+
 # Symplectic Geometry, Lecture 21, Section 2
 
 - [Theorem 1 (Thurston)](054-thurston.md)

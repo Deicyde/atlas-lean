@@ -1,3 +1,7 @@
+---
+article_id: af_f9f933ff5a694b79affb7ec1
+---
+
 # Weinstein Conjecture3 DWanted
 
 - [One Form](one-form.md)

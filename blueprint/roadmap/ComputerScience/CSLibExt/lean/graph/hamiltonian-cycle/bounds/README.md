@@ -1,3 +1,7 @@
+---
+article_id: af_fe87031a13ab497443ca391a
+---
+
 # Bounds
 
 - [Verify Hamiltonian Cycle certificate size](verify-hamiltonian-cycle-certificate-siz.md)

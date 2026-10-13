@@ -1,4 +1,5 @@
 ---
+article_id: af_de39a0b89bc57b234edc8ee8
 declaration: theorem
 origin: cited
 lean: EulerSequence.eulerSES

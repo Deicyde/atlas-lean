@@ -1,3 +1,7 @@
+---
+article_id: af_71b097e9b79d77717b1bc4c0
+---
+
 # Character
 
 - [Ray Class Character](ray-class-character.md)

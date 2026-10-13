@@ -1,3 +1,7 @@
+---
+article_id: af_99abed47dbde4ecdaed1ccbe
+---
+
 # Part 4 of 4
 
 - [Part1 Ch3 Entry4 Inner Summable](ramanujan-part1-ch3-entry4-inner-summabl.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_5f5f6bd399b5a7e5a71a1ced
+---
+
 # Local Global Apollonian Circle Packings Wanted
 
 - [General Linear Group Action](general-linear-group-action.md)

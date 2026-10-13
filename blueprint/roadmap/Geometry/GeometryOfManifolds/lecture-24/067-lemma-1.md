@@ -1,4 +1,5 @@
 ---
+article_id: af_cfe514224e6bb53ca44e8628
 declaration: def
 origin: cited
 lean: clifford_isomorphisms_exist

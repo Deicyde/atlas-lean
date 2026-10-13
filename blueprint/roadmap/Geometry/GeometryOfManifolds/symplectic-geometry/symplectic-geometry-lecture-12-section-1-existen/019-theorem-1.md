@@ -1,4 +1,5 @@
 ---
+article_id: af_c9765abba27bcc24fa9d4677
 declaration: theorem
 origin: cited
 lean: hirzebruch_signature_theorem

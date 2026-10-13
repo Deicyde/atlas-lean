@@ -1,3 +1,7 @@
+---
+article_id: af_b29a329aa4b1f94ddead1b72
+---
+
 # Power Free
 
 - [Is Power Free](is-power-free.md)

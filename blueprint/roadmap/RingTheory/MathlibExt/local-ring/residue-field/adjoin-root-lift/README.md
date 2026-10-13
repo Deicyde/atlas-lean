@@ -1,3 +1,7 @@
+---
+article_id: af_a352a81e4569cdc2ed30ec56
+---
+
 # Adjoin Root Lift
 
 - [Exists monic lift adjoin Root domain](exists-monic-lift-adjoin-root-domain.md)

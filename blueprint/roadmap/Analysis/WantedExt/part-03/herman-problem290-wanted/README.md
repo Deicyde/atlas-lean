@@ -1,3 +1,7 @@
+---
+article_id: af_f8ac157530606bf779f188d3
+---
+
 # Herman Problem290 Wanted
 
 - [Is Diophantine](is-diophantine.md)

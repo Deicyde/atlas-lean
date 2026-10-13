@@ -1,3 +1,7 @@
+---
+article_id: af_7c83e1b68ebbca1826f11d66
+---
+
 # Chapter 8
 
 - [Theorem 8.1.2 (Janson inequality I)](115-janson-inequality-i.md)

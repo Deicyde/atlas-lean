@@ -1,4 +1,5 @@
 ---
+article_id: af_d3c4a04872adda9aeef860f2
 declaration: def
 origin: cited
 lean: chevalleyRestrictionAlgEquiv

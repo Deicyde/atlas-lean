@@ -1,4 +1,5 @@
 ---
+article_id: af_49aac4ee8a3e35c640976576
 declaration: theorem
 origin: cited
 lean: CMMethod.corollary_21_9

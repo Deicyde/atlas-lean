@@ -1,3 +1,7 @@
+---
+article_id: af_fbabc58a05058f5653b972c3
+---
+
 # Hyperbolic Group to Two Power Rank
 
 - [Hyperbolic Group](hyperbolic-group/README.md)

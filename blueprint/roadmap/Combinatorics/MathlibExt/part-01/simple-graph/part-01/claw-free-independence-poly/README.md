@@ -1,3 +1,7 @@
+---
+article_id: af_b8aa105a111a4379c63a76e6
+---
+
 # Claw Free Independence Poly
 
 - [Claw Free](claw-free.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_f904c64c725f5afa7156de22
+---
+
 # Fourier Laplace
 
 - [Fourier Laplace](fourier-laplace.md)

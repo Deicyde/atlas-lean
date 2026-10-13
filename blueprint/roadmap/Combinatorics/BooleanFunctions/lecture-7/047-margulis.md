@@ -1,4 +1,5 @@
 ---
+article_id: af_7ab783e2fcb47c271048061a
 declaration: theorem
 origin: cited
 lean: BooleanFourier.margulis_sharp_threshold

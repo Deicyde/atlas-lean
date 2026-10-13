@@ -1,3 +1,7 @@
+---
+article_id: af_e20c72b05489823741b191f0
+---
+
 # Lecture 23
 
 - [Theorem (Random walk dichotomy)](050-random-walk-dichotomy.md)

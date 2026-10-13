@@ -1,4 +1,5 @@
 ---
+article_id: af_68dbddc76b46868551a1fb8b
 declaration: theorem
 origin: cited
 lean: SurfaceArea.isoperimetric_inequality

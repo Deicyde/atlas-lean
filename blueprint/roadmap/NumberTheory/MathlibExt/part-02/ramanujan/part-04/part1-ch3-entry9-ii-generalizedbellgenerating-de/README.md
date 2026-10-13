@@ -1,3 +1,7 @@
+---
+article_id: af_8c8f84fc6498df2ea13b5bd6
+---
+
 # Part1 Ch3 Entry9 Ii Generalizedbellgenerating Defining
 
 - [Generalized Bell Generating](generalized-bell-generating.md)

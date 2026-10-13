@@ -1,4 +1,5 @@
 ---
+article_id: af_e39ed5f160d9f2e253cf2de5
 declaration: theorem
 origin: cited
 lean: BooleanFourier.kkl_theorem

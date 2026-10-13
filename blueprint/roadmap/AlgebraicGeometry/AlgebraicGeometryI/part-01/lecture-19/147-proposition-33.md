@@ -1,4 +1,5 @@
 ---
+article_id: af_1b1ec0e88ee5e0a2069b3578
 declaration: theorem
 origin: cited
 lean: proposition33_cotangent_exact_sequence

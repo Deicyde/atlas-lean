@@ -1,3 +1,7 @@
+---
+article_id: af_253c41005f50ec80a7ee76bb
+---
+
 # Hartogs Separate Analyticity
 
 - [Hartogs pos Log norm le circle Average](hartogs-pos-log-norm-le-circle-average.md)

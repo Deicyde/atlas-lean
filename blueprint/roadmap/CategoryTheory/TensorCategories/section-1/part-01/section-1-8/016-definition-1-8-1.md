@@ -1,4 +1,5 @@
 ---
+article_id: af_2daad7918a30edfbf1d172e8
 declaration: class
 origin: cited
 lean: TensorCategories.IsStrictMonoidal

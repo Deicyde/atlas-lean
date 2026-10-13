@@ -1,3 +1,7 @@
+---
+article_id: af_84ebe246066155f8451b06ef
+---
+
 # Part 2 of 3
 
 - [Min? eq some iff of valid](min-eq-some-iff-of-valid.md)

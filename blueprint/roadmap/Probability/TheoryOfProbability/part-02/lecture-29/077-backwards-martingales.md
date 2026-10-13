@@ -1,4 +1,5 @@
 ---
+article_id: af_04abf4875ba2324cdd52f254
 declaration: theorem
 origin: cited
 lean: TheoryOfProbability3.backwards_martingale_ae_tendsto

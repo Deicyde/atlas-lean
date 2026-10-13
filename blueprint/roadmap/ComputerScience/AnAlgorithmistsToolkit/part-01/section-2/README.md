@@ -1,3 +1,7 @@
+---
+article_id: af_79d8be2592ebe3e5e3041acd
+---
+
 # Section 2
 
 - [Definition 2 (Section 2 (Review of Monte Carlo Methods), Lecture 5)](046-definition-2.md)

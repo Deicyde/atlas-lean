@@ -1,3 +1,7 @@
+---
+article_id: af_8c2b9740824d7a43326abf07
+---
+
 # Section 12.5
 
 - [Proposition 12.24](259-proposition-12-24.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_115d0e3c9d497dc5e2f8bf7c
+---
+
 # AP to Associated Stirling Eulerian
 
 - [AP](ap/README.md)

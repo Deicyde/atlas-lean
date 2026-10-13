@@ -1,4 +1,5 @@
 ---
+article_id: af_01d9c304b6046d2bdda99325
 declaration: theorem
 origin: cited
 lean: hampath_is_NP_complete

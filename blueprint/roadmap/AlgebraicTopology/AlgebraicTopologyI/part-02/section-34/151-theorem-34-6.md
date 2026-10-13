@@ -1,4 +1,5 @@
 ---
+article_id: af_c810091afd183bd94417f03c
 declaration: def
 origin: cited
 lean: CechCohomology.cechCohomology_independent_of_embedding

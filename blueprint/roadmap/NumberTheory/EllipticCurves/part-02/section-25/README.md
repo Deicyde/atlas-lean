@@ -1,3 +1,7 @@
+---
+article_id: af_fe2f17d6d697a97d793aef06
+---
+
 # Section 25
 
 - [Conjecture 25.1 (Serre's modularity conjecture)](352-serre-s-modularity-conjecture.md)

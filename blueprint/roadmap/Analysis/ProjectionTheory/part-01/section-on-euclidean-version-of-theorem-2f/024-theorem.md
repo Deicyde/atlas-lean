@@ -1,4 +1,5 @@
 ---
+article_id: af_ab179b5ddd2fe621c414b9e1
 declaration: theorem
 origin: cited
 lean: ProjectionTheory.euclidean_projection_bound

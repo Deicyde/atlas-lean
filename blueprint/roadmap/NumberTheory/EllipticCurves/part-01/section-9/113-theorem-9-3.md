@@ -1,4 +1,5 @@
 ---
+article_id: af_3caaf5dded753d75462169c1
 declaration: theorem
 origin: cited
 lean: expected_rho_asymptotic

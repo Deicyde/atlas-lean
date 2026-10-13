@@ -1,3 +1,7 @@
+---
+article_id: af_8389346bd8b9b7b7861371b9
+---
+
 # Binary
 
 - [Bin Search Contains eq is Some](bin-search-contains-eq-is-some.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_6de472ea99a0b78a1ead7afd
 declaration: theorem
 origin: cited
 lean: ConvexGeometry.banachMazur_distance_ball

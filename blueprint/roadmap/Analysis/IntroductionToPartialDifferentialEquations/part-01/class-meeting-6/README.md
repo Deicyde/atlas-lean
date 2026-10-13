@@ -1,3 +1,7 @@
+---
+article_id: af_1ba0a924a1c5888512f6a877
+---
+
 # Class Meeting 6
 
 - [Theorem 3.1 (Class Meeting #6, Section 3 (Uniqueness via the Energy Method))](028-theorem-3-1.md)

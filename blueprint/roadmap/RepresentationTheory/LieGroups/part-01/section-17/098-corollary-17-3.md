@@ -1,4 +1,5 @@
 ---
+article_id: af_8ac7745383e82291ae7a11c6
 declaration: theorem
 origin: cited
 lean: LieAlgebra.principal_nilpotent_borel_orbit

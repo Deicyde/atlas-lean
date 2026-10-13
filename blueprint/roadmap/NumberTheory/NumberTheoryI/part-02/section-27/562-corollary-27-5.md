@@ -1,4 +1,5 @@
 ---
+article_id: af_4ae754e9d5ad058a728e4441
 declaration: theorem
 origin: cited
 lean: LocalArtinReciprocity.normGroup_map_injective

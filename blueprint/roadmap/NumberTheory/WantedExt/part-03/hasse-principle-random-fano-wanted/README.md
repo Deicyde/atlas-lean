@@ -1,3 +1,7 @@
+---
+article_id: af_623f5c53ae1f46657d6d980c
+---
+
 # Hasse Principle Random Fano Wanted
 
 - [𝔸](untitled.md)

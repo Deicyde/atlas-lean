@@ -1,4 +1,5 @@
 ---
+article_id: af_1ce75ae4278d823d34107694
 declaration: theorem
 origin: cited
 lean: hilbert_syzygy_theorem

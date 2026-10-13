@@ -1,3 +1,7 @@
+---
+article_id: af_a8bfe8c595dcf15fc1da3567
+---
+
 # Section 10
 
 - [Algorithm 10.1 (Index calculus)](122-index-calculus.md)

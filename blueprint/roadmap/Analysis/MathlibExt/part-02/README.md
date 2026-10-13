@@ -1,3 +1,7 @@
+---
+article_id: af_bda8e67e1660e7e291c7b36d
+---
+
 # Variational to Wirsing Constant
 
 - [Variational](variational/README.md)

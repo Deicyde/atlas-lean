@@ -1,4 +1,5 @@
 ---
+article_id: af_907fb0a790139af12d8796b6
 declaration: theorem
 origin: cited
 lean: ArtinUnramified.herbrand_unit_theorem

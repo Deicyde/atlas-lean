@@ -1,3 +1,7 @@
+---
+article_id: af_1cf9cb075f585bf3dd949b06
+---
+
 # Lecture 11
 
 - [Theorem (Self-Reproducing TM)](043-self-reproducing-tm.md)

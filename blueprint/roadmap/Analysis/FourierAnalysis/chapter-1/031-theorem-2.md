@@ -1,4 +1,5 @@
 ---
+article_id: af_375f9d123282559dbc99cbbb
 declaration: theorem
 origin: cited
 lean: WienerConstruction.wiener_construction_brownian_motion

@@ -1,3 +1,7 @@
+---
+article_id: af_8bef7473053800b559eba3b8
+---
+
 # Section 35
 
 - [Theorem 35.2 (Long exact sequence)](152-long-exact-sequence.md)

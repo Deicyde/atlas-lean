@@ -1,3 +1,7 @@
+---
+article_id: af_68ff50e5b555622bac382af8
+---
+
 # Lu Wu Mobius Grid Wanted
 
 - [Mobius Grid Vertex](mobius-grid-vertex.md)

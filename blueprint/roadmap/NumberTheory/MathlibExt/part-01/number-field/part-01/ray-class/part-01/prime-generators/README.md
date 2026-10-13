@@ -1,3 +1,7 @@
+---
+article_id: af_f4820bcdb828087ddf0d1548
+---
+
 # Prime Generators
 
 - [Prime Unit Fractional Ideal](prime-unit-fractional-ideal.md)

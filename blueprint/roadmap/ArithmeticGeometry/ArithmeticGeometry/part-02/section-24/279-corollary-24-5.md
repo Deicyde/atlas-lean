@@ -1,4 +1,5 @@
 ---
+article_id: af_b9bd618a6079954108a014c8
 declaration: theorem
 origin: cited
 lean: EllipticCurveIsogeny.isogeny_kernel_divides_deg

@@ -1,3 +1,7 @@
+---
+article_id: af_9d0fb0931b6b8a46a83b783d
+---
+
 # Digital Binomial Theorem
 
 - [Bin Digit Sum](bin-digit-sum.md)

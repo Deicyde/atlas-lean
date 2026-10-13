@@ -1,4 +1,5 @@
 ---
+article_id: af_a8881ada6b889ef6b4d0f436
 declaration: theorem
 origin: cited
 lean: ArithmeticGeometry.iso_P1_iff_Pic0_trivial

@@ -1,4 +1,5 @@
 ---
+article_id: af_37765b99d5493837f8bebd96
 declaration: abbrev
 origin: cited
 lean: LocalRings.residueFieldOfLocal

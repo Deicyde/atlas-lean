@@ -1,3 +1,7 @@
+---
+article_id: af_d8b3797cb53a42ed7ef31e83
+---
+
 # Polynomial to BNomial Number Type3
 
 - [Polynomial](polynomial/README.md)

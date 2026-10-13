@@ -1,4 +1,5 @@
 ---
+article_id: af_bdcdfeaa27f37efdfa532487
 declaration: theorem
 origin: cited
 lean: ProjectionTheory.szemeredi_trotter_proj

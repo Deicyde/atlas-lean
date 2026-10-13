@@ -1,4 +1,5 @@
 ---
+article_id: af_50e8d9856ca87026826eb9d2
 declaration: def
 origin: cited
 lean: TateCohomology.tateHnGen_biproduct_addEquiv

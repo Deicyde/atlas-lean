@@ -1,3 +1,7 @@
+---
+article_id: af_26ef264f47357ca7d8f3ab2a
+---
+
 # Section 4.3
 
 - [Definition 4.3.1 (Threshold)](048-threshold.md)

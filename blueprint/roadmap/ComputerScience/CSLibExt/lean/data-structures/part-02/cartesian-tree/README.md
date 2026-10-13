@@ -1,3 +1,7 @@
+---
+article_id: af_43b68dfa7ee7728e57971e19
+---
+
 # Cartesian Tree
 
 - [Heap Ordered](heap-ordered.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_0d951f843f8a664e822df1ad
 declaration: theorem
 origin: cited
 lean: ModularFormDimension.dim_modularForm_even

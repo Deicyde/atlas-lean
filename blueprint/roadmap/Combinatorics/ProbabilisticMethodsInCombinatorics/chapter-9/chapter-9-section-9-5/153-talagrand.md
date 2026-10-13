@@ -1,4 +1,5 @@
 ---
+article_id: af_05335917e1f9069da5d0f792
 declaration: theorem
 origin: cited
 lean: Talagrand.talagrand_convex_lipschitz

@@ -1,3 +1,7 @@
+---
+article_id: af_455f912cb36cb27fba2c984d
+---
+
 # Perfect Graph
 
 - [Is Perfect](is-perfect.md)

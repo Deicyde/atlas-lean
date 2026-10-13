@@ -1,3 +1,7 @@
+---
+article_id: af_0d68f6fccaf8b8d1f4d3aee0
+---
+
 # Class Meeting 1
 
 - [Definition 1.0.1 (Class Meeting #1, Section 1)](001-definition-1-0-1.md)

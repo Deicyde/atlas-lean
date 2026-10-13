@@ -1,3 +1,7 @@
+---
+article_id: af_58b1b44f675a039dc6832d92
+---
+
 # Metric
 
 - [Distance Multiplicity](distance-multiplicity.md)

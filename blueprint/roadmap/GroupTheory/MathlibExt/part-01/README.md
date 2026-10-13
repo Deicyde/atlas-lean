@@ -1,3 +1,7 @@
+---
+article_id: af_b1385140a5dce86848f6c5ce
+---
+
 # Burnside Paqb to HNNEmbedding
 
 - [Burnside Paqb](burnside-paqb/README.md)

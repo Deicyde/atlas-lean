@@ -1,4 +1,5 @@
 ---
+article_id: af_9ab77b095cdd549c11c79ab8
 declaration: theorem
 origin: cited
 lean: SchrodingerEquation.theorem_2_1_nD

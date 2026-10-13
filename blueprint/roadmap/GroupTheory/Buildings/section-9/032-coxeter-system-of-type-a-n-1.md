@@ -1,4 +1,5 @@
 ---
+article_id: af_2e0f5f2e80302bab213c5879
 declaration: def
 origin: cited
 lean: SymGroupCoxeter.symGroup_coxeterSystem

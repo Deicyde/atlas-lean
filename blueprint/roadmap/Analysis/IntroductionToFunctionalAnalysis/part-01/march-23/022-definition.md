@@ -1,4 +1,5 @@
 ---
+article_id: af_42e5a178ddde7e239c6a14f7
 declaration: theorem
 origin: cited
 lean: Integration.integral_eq_posPart_sub_negPart

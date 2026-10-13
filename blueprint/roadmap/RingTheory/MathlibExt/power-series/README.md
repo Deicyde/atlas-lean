@@ -1,3 +1,7 @@
+---
+article_id: af_98ef052e9caeadc0401db4c3
+---
+
 # Power Series
 
 - [Bell Riordan Central Coefficient](bell-riordan-central-coefficient.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_865bf60bfbe7a2817451f814
 declaration: theorem
 origin: cited
 lean: LinnikLargeSieve.linnik_large_sieve

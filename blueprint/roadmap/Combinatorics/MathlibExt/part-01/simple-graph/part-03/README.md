@@ -1,3 +1,7 @@
+---
+article_id: af_b5f2dd5ee5b8f297d963edf0
+---
+
 # Matrix Tree to Vertex Transitive
 
 - [Matrix Tree](matrix-tree/README.md)

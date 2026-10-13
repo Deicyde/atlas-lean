@@ -1,4 +1,5 @@
 ---
+article_id: af_7e813bed3f739c913baec9df
 declaration: theorem
 origin: cited
 lean: DifferentialOperators.singSupp_eq_of_hypoelliptic

@@ -1,4 +1,5 @@
 ---
+article_id: af_f4f6d9576180868e7d4bb272
 declaration: theorem
 origin: cited
 lean: CurveDiv.principalDivisor_degree_zero

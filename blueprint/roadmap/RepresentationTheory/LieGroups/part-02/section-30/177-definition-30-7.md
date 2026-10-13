@@ -1,4 +1,5 @@
 ---
+article_id: af_6fc1034aedc6abf2709cff6b
 declaration: structure
 origin: cited
 lean: DModulesII.GEquivariantSheaf

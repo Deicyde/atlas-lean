@@ -1,3 +1,7 @@
+---
+article_id: af_2359851621431671beb97149
+---
+
 # Section 12.3
 
 - [Lemma 12.18](254-lemma-12-18.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_20017b9ec40ac307e6977d6d
+---
+
 # Offline Caching
 
 - [Cache Event](cache-event.md)

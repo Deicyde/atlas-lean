@@ -1,4 +1,5 @@
 ---
+article_id: af_0de44b8600dcab68a76280ec
 declaration: abbrev
 origin: cited
 lean: CategoryTheory.Definition_1_47_5_CategoricalFPdim

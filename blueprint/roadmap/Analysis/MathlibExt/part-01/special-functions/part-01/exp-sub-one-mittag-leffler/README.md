@@ -1,3 +1,7 @@
+---
+article_id: af_9773223f6497f0a76f20b60c
+---
+
 # Exp Sub One Mittag Leffler
 
 - [One div exp sub one eq tsum](one-div-exp-sub-one-eq-tsum.md)

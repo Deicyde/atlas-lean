@@ -1,3 +1,7 @@
+---
+article_id: af_7ab3df1967a591465fb84219
+---
+
 # Residue Class to Weighted Large Sieve
 
 - [Residue Class](residue-class/README.md)

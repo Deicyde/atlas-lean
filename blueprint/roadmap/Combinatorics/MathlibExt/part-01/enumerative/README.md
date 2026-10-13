@@ -1,3 +1,7 @@
+---
+article_id: af_3f00b6074fa9362c72e9b573
+---
+
 # Enumerative
 
 - [Partition to Catalan Generating Function](part-01/README.md)

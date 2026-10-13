@@ -1,4 +1,5 @@
 ---
+article_id: af_e9f6ef5f8ceed3780a252f48
 declaration: theorem
 origin: cited
 lean: TalagrandCertifiable.talagrand_certifiable_corollary

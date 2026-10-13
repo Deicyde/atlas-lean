@@ -1,3 +1,7 @@
+---
+article_id: af_fd189a84378a00895b26ef62
+---
+
 # Gauss Wantzel Wanted
 
 - [Is Constructible](is-constructible.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_ea30245e47e3eb4ea2c3dfd3
 declaration: theorem
 origin: cited
 lean: bgg_reciprocity

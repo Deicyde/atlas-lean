@@ -1,4 +1,5 @@
 ---
+article_id: af_0c36958dd8b62357331c9f73
 declaration: theorem
 origin: cited
 lean: Isogeny.kernel_iff_v_eq_zero

@@ -1,4 +1,5 @@
 ---
+article_id: af_14adde62ebd0da7afa17aeac
 declaration: def
 origin: cited
 lean: CoxeterSystemFromDeletion.deletion_implies_coxeter_system

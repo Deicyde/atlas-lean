@@ -1,3 +1,7 @@
+---
+article_id: af_f2f150fbfc956463292a21e4
+---
+
 # Wiman to Schwarz Pick
 
 - [Wiman](wiman/README.md)

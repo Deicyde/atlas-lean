@@ -1,4 +1,5 @@
 ---
+article_id: af_843b6ad75bb7b7d1f1fbd7c5
 declaration: class
 origin: cited
 lean: BeilinsonBernstein.IsDaffine

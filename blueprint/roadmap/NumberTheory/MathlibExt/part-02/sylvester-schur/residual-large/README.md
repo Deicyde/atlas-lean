@@ -1,3 +1,7 @@
+---
+article_id: af_2430e487a261a847c71b6426
+---
+
 # Residual Large
 
 - [Central Offset Bound](second-residual-large-central-offset-bou.md)

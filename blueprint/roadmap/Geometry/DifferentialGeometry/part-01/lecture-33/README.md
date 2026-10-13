@@ -1,3 +1,7 @@
+---
+article_id: af_d4de163ab6bedd193f242b51
+---
+
 # Lecture 33
 
 - [Lemma 33.2](106-lemma-33-2.md)

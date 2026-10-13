@@ -1,3 +1,7 @@
+---
+article_id: af_f6d101eace8f1da7ca70418b
+---
+
 # Finite Lies Over Valuation
 
 - [Valuation adic Completion Map](valuation-adic-completion-map.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_d31900ced4505e16bf6b5955
+---
+
 # Modular Exponentiation
 
 - [Modular Exponentiation](modular-exponentiation.md)

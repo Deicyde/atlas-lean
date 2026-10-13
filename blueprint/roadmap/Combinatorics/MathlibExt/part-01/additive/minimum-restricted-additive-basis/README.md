@@ -1,3 +1,7 @@
+---
+article_id: af_bfba3f2719bdeb4aed5fd5bb
+---
+
 # Minimum Restricted Additive Basis
 
 - [Minimum Restricted Additive Basis Card](minimum-restricted-additive-basis-card.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_1ddc50f2c7b9e0d878d28f37
 declaration: instance
 origin: cited
 lean: instHilbertBilinearFieldPadic

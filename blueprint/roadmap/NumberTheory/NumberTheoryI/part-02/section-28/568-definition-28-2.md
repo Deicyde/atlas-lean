@@ -1,4 +1,5 @@
 ---
+article_id: af_3deb626aa780ca63bb4e64b3
 declaration: structure
 origin: cited
 lean: GlobalArtinMap

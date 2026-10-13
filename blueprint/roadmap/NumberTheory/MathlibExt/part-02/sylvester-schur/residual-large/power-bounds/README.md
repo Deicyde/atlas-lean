@@ -1,3 +1,7 @@
+---
+article_id: af_e903d891bb061b805fcddc12
+---
+
 # Power Bounds
 
 - [Self le four pow div one twenty eight add one](self-le-four-pow-div-one-twenty-eight-ad.md)

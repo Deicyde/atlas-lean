@@ -1,4 +1,5 @@
 ---
+article_id: af_aec38145a702fedf6ace250d
 declaration: theorem
 origin: cited
 lean: TalagrandCertifiable.lis_concentration

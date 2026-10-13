@@ -1,3 +1,7 @@
+---
+article_id: af_541eb344f4eb5c427aafc6f4
+---
+
 # Matrix Multiplication
 
 - [Matrix Arithmetic Circuit](matrix-arithmetic-circuit.md)

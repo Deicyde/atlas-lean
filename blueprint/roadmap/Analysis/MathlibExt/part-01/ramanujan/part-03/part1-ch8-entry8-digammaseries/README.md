@@ -1,3 +1,7 @@
+---
+article_id: af_51c68767ee6e50ef7af37fe8
+---
+
 # Part1 Ch8 Entry8 Digammaseries
 
 - [Chapter8 Digamma eq Complex digamma](chapter8-digamma-eq-complex-digamma.md)

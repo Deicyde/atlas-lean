@@ -1,3 +1,7 @@
+---
+article_id: af_6adbf18bca2f90440dd36899
+---
+
 # Chapter 2
 
 - [Theorem 2.1.2 (Tournaments with many Hamilton paths; Szele 1943)](017-tournaments-with-many-hamilton-paths-sze.md)

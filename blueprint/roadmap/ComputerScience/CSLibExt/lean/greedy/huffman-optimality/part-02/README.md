@@ -1,3 +1,7 @@
+---
+article_id: af_3a1946ae9df628795b3cbaed
+---
+
 # Part 2 of 2
 
 - [Huffman Loop Invariant](huffman-loop-invariant.md)

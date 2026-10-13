@@ -1,4 +1,5 @@
 ---
+article_id: af_e9ce3a206e1a6000e5507b06
 declaration: theorem
 origin: cited
 lean: SelbergExpansion.expansion_lower_bound

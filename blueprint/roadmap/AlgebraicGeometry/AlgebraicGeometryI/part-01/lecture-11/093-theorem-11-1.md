@@ -1,4 +1,5 @@
 ---
+article_id: af_0a0d4a2c09d93e82fb018182
 declaration: def
 origin: cited
 lean: Proposition18.qcoh_spec_equiv_moduleCat

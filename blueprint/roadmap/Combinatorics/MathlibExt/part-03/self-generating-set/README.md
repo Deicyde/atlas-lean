@@ -1,3 +1,7 @@
+---
+article_id: af_cd14f8b02ff71f909e743684
+---
+
 # Self Generating Set
 
 - [Strict Growth](strict-growth.md)

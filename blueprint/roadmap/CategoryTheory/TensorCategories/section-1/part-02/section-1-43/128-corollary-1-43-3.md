@@ -1,4 +1,5 @@
 ---
+article_id: af_560824820e2a121165bfb834
 declaration: theorem
 origin: cited
 lean: StarAlgWithTrace.trace_pos_of_idempotent

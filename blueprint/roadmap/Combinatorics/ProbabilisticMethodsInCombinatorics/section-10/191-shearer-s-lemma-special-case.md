@@ -1,4 +1,5 @@
 ---
+article_id: af_0cb887df4650370434062353
 declaration: theorem
 origin: cited
 lean: Shearer.shearer_special_case

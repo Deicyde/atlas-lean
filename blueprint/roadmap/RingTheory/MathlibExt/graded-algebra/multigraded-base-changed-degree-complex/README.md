@@ -1,3 +1,7 @@
+---
+article_id: af_e6336f58a2869b7d290a1668
+---
+
 # Multigraded Base Changed Degree Complex
 
 - [Base Changed Degree Complex](base-changed-degree-complex.md)

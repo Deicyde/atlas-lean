@@ -1,4 +1,5 @@
 ---
+article_id: af_61d756ee0077ba460246e332
 declaration: theorem
 origin: cited
 lean: nagell_lutz

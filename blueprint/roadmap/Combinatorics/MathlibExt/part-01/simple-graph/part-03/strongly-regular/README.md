@@ -1,3 +1,7 @@
+---
+article_id: af_71a0eaa171426126f3b8d8e7
+---
+
 # Strongly Regular
 
 - [Adj of adj of adj of mu zero](adj-of-adj-of-adj-of-mu-zero.md)

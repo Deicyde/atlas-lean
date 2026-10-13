@@ -1,3 +1,7 @@
+---
+article_id: af_6e29dcc3acbef97e7095b194
+---
+
 # Completion
 
 - [Finite Lies Over Degree Bound](finrank-adic-completion-le.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_57b60de8a3d49647144e4deb
 declaration: theorem
 origin: cited
 lean: valuation_eq_inv_residueDeg_mul_norm_valuation

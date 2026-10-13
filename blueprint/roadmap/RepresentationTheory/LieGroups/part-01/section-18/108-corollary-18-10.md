@@ -1,4 +1,5 @@
 ---
+article_id: af_57b4bb9aef2741fa1ad42d25
 declaration: theorem
 origin: cited
 lean: corollary_18_10_full

@@ -1,3 +1,7 @@
+---
+article_id: af_79c23f7ef395944ca0c68a2a
+---
+
 # Fraser Kakeya Wanted
 
 - [Space](space.md)

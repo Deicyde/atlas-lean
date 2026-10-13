@@ -1,4 +1,5 @@
 ---
+article_id: af_fcd7dae40a8d7339f6f5c4c6
 declaration: theorem
 origin: cited
 lean: SelbergExpansion.sl2ZBall_card_growth

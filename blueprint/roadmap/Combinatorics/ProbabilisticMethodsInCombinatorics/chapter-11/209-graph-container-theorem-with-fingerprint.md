@@ -1,4 +1,5 @@
 ---
+article_id: af_f47946eb4c69cb69cb3d93c5
 declaration: theorem
 origin: cited
 lean: GraphContainers.graph_container_fingerprints

@@ -1,4 +1,5 @@
 ---
+article_id: af_3554b4fb63b393f3873e49a7
 declaration: def
 origin: cited
 lean: IdealFactorization.idealNorm

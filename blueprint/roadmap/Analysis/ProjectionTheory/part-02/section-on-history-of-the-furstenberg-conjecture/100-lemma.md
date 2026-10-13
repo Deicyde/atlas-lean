@@ -1,4 +1,5 @@
 ---
+article_id: af_00a202fd430077c638a4f760
 declaration: theorem
 origin: cited
 lean: BeckLemma.beck_bootstrap_epsilon_improvement

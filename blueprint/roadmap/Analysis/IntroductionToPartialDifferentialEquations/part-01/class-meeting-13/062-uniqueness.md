@@ -1,4 +1,5 @@
 ---
+article_id: af_70fdd4e961e29c9a80241d77
 declaration: theorem
 origin: cited
 lean: CM14.wave_uniqueness

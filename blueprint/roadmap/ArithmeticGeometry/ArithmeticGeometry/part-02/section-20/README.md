@@ -1,3 +1,7 @@
+---
+article_id: af_dcd1f4d6454840d9795a668a
+---
+
 # Section 20
 
 - [Lemma 20.2 (Triangle equality)](218-triangle-equality.md)

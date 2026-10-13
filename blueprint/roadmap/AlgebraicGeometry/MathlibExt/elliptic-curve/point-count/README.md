@@ -1,3 +1,7 @@
+---
+article_id: af_41f1659de545d466ad6694ec
+---
+
 # Point Count
 
 - [Frobenius Trace](frobenius-trace.md)

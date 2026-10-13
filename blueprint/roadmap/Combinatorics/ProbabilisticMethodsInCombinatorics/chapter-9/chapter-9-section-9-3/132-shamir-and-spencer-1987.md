@@ -1,4 +1,5 @@
 ---
+article_id: af_03e70af2b435927a5bcb2f33
 declaration: theorem
 origin: cited
 lean: ShamirSpencer.shamir_spencer_chromatic_four_concentration

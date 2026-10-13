@@ -1,3 +1,7 @@
+---
+article_id: af_7a11beeaeab86f912c644af3
+---
+
 # Section 25
 
 - [Lemma 25.3](292-lemma-25-3.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_b880e25500b9bb40357d1d16
+---
+
 # Real
 
 - [Real Hilbert Symbol](real-hilbert-symbol.md)

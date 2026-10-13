@@ -1,4 +1,5 @@
 ---
+article_id: af_8c3d168a53b95430116ebe97
 declaration: theorem
 origin: cited
 lean: ArtinUnramified.herbrand_quotient_units_value_eq

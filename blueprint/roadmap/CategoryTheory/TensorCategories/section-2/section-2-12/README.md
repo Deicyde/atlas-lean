@@ -1,3 +1,7 @@
+---
+article_id: af_2eee84226dee24a280191049
+---
+
 # Section 2.12
 
 - [Definition 2.12.1](213-definition-2-12-1.md)

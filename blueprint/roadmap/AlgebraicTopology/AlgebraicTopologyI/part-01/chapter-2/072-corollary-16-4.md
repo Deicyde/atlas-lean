@@ -1,4 +1,5 @@
 ---
+article_id: af_fcb19f1d75b44e0f46be0dfe
 declaration: def
 origin: cited
 lean: CellularHomology.singularHomology_iso_cellularChainGroup

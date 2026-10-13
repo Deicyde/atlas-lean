@@ -1,4 +1,5 @@
 ---
+article_id: af_2f8be36583c6069487716569
 declaration: def
 origin: cited
 lean: secondFundamentalForm

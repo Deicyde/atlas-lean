@@ -1,4 +1,5 @@
 ---
+article_id: af_bf307580d6b26e287dbcb405
 declaration: theorem
 origin: cited
 lean: BipartiteMatchingPolytope.bipartite_matching_polytope_eq

@@ -1,4 +1,5 @@
 ---
+article_id: af_4eb6a04a2fc06aa273f13cc5
 declaration: theorem
 origin: cited
 lean: TranslationFunctor.equivalence

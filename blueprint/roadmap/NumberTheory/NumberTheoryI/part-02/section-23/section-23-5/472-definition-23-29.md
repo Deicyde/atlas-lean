@@ -1,4 +1,5 @@
 ---
+article_id: af_7eaeaff2144dc4dee2c32245
 declaration: def
 origin: cited
 lean: TateCohomology.normMap

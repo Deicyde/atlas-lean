@@ -1,4 +1,5 @@
 ---
+article_id: af_a6b7b22a83a02c25d430de78
 declaration: theorem
 origin: cited
 lean: submartingale_ui_convergence_equiv

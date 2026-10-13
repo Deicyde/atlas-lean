@@ -1,4 +1,5 @@
 ---
+article_id: af_d67ac3efcd1259770f69d449
 declaration: theorem
 origin: cited
 lean: LieAlgebra.NilpotentCone.isReduced

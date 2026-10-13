@@ -1,3 +1,7 @@
+---
+article_id: af_6efd8e538d9ed481ded51c39
+---
+
 # Gradient Descent Exponent
 
 - [Gradient Descent Trajectory](gradient-descent-trajectory.md)

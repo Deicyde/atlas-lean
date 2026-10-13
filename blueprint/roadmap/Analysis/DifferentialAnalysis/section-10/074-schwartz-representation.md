@@ -1,4 +1,5 @@
 ---
+article_id: af_f0b09b28518a9d49b13623f0
 declaration: theorem
 origin: cited
 lean: SchwartzRepresentation.schwartz_representation_improved

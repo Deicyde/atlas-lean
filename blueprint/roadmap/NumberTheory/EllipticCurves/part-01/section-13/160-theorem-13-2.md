@@ -1,4 +1,5 @@
 ---
+article_id: af_adb9c3b405d232539984f884
 declaration: theorem
 origin: cited
 lean: OrdinarySupersingular.isSupersingular_iff_of_isogeny

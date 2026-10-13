@@ -1,4 +1,5 @@
 ---
+article_id: af_0b219b6d9bca5bcc7a13b9e4
 declaration: theorem
 origin: cited
 lean: CM8.representation_formula_n

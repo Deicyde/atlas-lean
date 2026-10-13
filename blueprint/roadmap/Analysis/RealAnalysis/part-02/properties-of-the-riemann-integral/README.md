@@ -1,3 +1,7 @@
+---
+article_id: af_d446288c0faf6b3f5396e34c
+---
+
 # Properties of the Riemann Integral
 
 - [Theorem (Linearity) (Properties of the Riemann Integral section)](074-linearity.md)

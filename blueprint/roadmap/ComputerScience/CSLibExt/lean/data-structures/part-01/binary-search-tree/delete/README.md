@@ -1,3 +1,7 @@
+---
+article_id: af_8dd01c00fb4649a5d7b84fdd
+---
+
 # Delete
 
 - [Join](join.md)

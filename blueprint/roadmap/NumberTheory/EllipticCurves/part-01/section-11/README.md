@@ -1,3 +1,7 @@
+---
+article_id: af_06de9c420e2e822bd39fbd9e
+---
+
 # Section 11
 
 - [Theorem 11.2 (Fermat)](129-fermat.md)

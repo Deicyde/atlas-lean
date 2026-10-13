@@ -1,3 +1,7 @@
+---
+article_id: af_6a9fcf9906e739072995c0f3
+---
+
 # Section 7
 
 - [Lemma 7.1](045-lemma-7-1.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_dfa9af77c5fcc05aa6d7514d
 declaration: theorem
 origin: cited
 lean: GoodMaximalBounded.good_bounded_subgroup_of_Gt_exist

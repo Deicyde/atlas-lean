@@ -1,4 +1,5 @@
 ---
+article_id: af_f5f2e686031c2c7e9ec01933
 declaration: theorem
 origin: cited
 lean: MultiplicativeWeights.mw_average_penalty_bound

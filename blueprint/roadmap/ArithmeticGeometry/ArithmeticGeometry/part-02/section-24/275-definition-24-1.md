@@ -1,4 +1,5 @@
 ---
+article_id: af_e89a80520584fe80043a1f03
 declaration: structure
 origin: cited
 lean: EllipticCurveIsogeny

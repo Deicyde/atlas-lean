@@ -1,4 +1,5 @@
 ---
+article_id: af_b5b4c6740adfc60a0eaaee8e
 declaration: theorem
 origin: cited
 lean: SimpleGraph.edmonds_perfect_matching_polytope

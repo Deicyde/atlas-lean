@@ -1,3 +1,7 @@
+---
+article_id: af_d4964145d463d4ff9a3ce3e6
+---
+
 # Section 3.7
 
 - [Theorem 3.33](025-theorem-3-33.md)

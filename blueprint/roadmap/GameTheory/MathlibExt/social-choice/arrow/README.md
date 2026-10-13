@@ -1,3 +1,7 @@
+---
+article_id: af_8d7a43d0d033ced621a85ca1
+---
+
 # Arrow
 
 - [Strict Total Order](strict-total-order.md)

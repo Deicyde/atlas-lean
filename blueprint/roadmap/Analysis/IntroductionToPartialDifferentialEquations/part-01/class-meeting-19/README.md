@@ -1,3 +1,7 @@
+---
+article_id: af_da7b56d2cc25624e161caf37
+---
+
 # Class Meeting 19
 
 - [Proposition 2.0.1 (Calculation of the Fundamental Solution $K(t,x)$ for Schrödinger's equation)](082-t-x.md)

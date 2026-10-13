@@ -1,3 +1,7 @@
+---
+article_id: af_96692baef9df8ecf04e29b0b
+---
+
 # Padics
 
 - [Hilbert Symbol](hilbert-symbol/README.md)

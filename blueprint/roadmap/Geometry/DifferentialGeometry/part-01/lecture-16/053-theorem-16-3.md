@@ -1,4 +1,5 @@
 ---
+article_id: af_2ae00f87e483f6c6cb8ea6b4
 declaration: theorem
 origin: cited
 lean: GaussEquation.gauss_equation

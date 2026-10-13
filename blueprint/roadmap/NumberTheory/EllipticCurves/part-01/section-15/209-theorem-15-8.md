@@ -1,4 +1,5 @@
 ---
+article_id: af_8d4afd8496c66f0997ffa3cc
 declaration: theorem
 origin: cited
 lean: jFunction_holomorphic

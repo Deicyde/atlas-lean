@@ -1,3 +1,7 @@
+---
+article_id: af_5f659b23e208e7fe27e7cb7a
+---
+
 # Asymptotic Dobrowolski
 
 - [Dobrowolski Scale](dobrowolski-scale.md)

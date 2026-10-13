@@ -1,3 +1,7 @@
+---
+article_id: af_7841894ee55f13274c9c0d85
+---
+
 # Graph
 
 - [Complete Bipartite Crossing](legendre-regular-crossing.md)

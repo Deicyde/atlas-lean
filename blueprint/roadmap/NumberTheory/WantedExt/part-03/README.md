@@ -1,3 +1,7 @@
+---
+article_id: af_7236500c7619ae73e591d053
+---
+
 # Erdos Problem825 Wanted to Local Global Apollonian Circle Packings Wanted
 
 - [Erdos Problem825 Wanted](erdos-problem825-wanted/README.md)

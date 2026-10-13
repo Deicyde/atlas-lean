@@ -1,4 +1,5 @@
 ---
+article_id: af_1927b397a59a8f700aa52529
 declaration: theorem
 origin: cited
 lean: krullDim_eq_trdeg_fractionField

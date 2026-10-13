@@ -1,4 +1,5 @@
 ---
+article_id: af_e53a235f65be7d678c743d65
 declaration: theorem
 origin: cited
 lean: TalagrandWeightedCertificates.talagrand_weighted_certificates

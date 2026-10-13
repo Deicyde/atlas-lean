@@ -1,3 +1,7 @@
+---
+article_id: af_f4fdb1e7146cadab3ade0a24
+---
+
 # Section 8
 
 - [Lemma 8.1](031-lemma-8-1.md)

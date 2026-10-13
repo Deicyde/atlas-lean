@@ -1,4 +1,5 @@
 ---
+article_id: af_7b75c2d6ff62ba219b88e552
 declaration: def
 origin: cited
 lean: EilenbergZilber.eilenbergZilber_homotopyEquiv

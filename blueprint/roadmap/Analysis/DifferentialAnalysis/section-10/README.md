@@ -1,3 +1,7 @@
+---
+article_id: af_b49dc87588e6fd649ac32492
+---
+
 # Section 10
 
 - [Theorem 10.1 (Sobolev embedding)](070-sobolev-embedding.md)

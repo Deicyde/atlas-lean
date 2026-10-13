@@ -1,4 +1,5 @@
 ---
+article_id: af_6638fb66b29cdc8831b7446a
 declaration: theorem
 origin: cited
 lean: TensorCategories.Corollary_1_27_5

@@ -1,3 +1,7 @@
+---
+article_id: af_45960867fadcd23e02ab11c9
+---
+
 # Ramanujan
 
 - [Ramanujan Theta Term](ramanujan-theta-term.md)

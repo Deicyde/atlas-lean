@@ -1,3 +1,7 @@
+---
+article_id: af_1829de628a6a2f244a697e84
+---
+
 # Arithmetic Function to Padics
 
 - [Arithmetic Function](arithmetic-function/README.md)

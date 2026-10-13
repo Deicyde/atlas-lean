@@ -1,4 +1,5 @@
 ---
+article_id: af_d6c26321543e5dd0001eb57e
 declaration: theorem
 origin: cited
 lean: YoungEigenvalues.young_lattice_eigenvalues_closed

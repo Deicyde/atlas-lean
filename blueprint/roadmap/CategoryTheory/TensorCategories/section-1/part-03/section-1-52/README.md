@@ -1,3 +1,7 @@
+---
+article_id: af_627ed6b0d4e42004832a9708
+---
+
 # Section 1.52
 
 - [Definition 1.52.1](168-definition-1-52-1.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_d6854887f28165ac507735d6
+---
+
 # Lecture 13
 
 - [Definition (Legendre transform)](029-legendre-transform.md)

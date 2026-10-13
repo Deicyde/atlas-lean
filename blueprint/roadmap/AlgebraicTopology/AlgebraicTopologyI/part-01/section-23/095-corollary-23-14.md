@@ -1,4 +1,5 @@
 ---
+article_id: af_a70dd87428812f25ea8b9b1d
 declaration: theorem
 origin: cited
 lean: AlgebraicTopologyI.rational_homology_eq_tensor

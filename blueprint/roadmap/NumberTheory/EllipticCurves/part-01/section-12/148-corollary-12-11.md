@@ -1,4 +1,5 @@
 ---
+article_id: af_0b78571ea071daf9edacad65
 declaration: theorem
 origin: cited
 lean: WeierstrassCurve.Affine.EndAlgebra.rosati_fixed_iff_rational

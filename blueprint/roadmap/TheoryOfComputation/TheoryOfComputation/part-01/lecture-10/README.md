@@ -1,3 +1,7 @@
+---
+article_id: af_f3f8497664b9738096940e5d
+---
+
 # Lecture 10
 
 - [Theorem (Lecture 10, $E_{\mathrm{LBA}}$ is undecidable)](034-theorem.md)

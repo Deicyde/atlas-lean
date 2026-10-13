@@ -1,3 +1,7 @@
+---
+article_id: af_32df1461843d719ebcc6fbf9
+---
+
 # Part 2 of 2
 
 - [Summable chapter5 Entry30 Squarefree Term](summable-chapter5-entry30-squarefree-ter.md)

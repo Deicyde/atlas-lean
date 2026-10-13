@@ -1,4 +1,5 @@
 ---
+article_id: af_500c2f2fa9748a6ee8e5ebcd
 declaration: theorem
 origin: cited
 lean: thurston_symplectic_fibration

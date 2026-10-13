@@ -1,3 +1,7 @@
+---
+article_id: af_09f8e6fe3c5389a7c143178f
+---
+
 # Longest Common Subsequence
 
 - [Longest Common Subsequence](longest-common-subsequence.md)

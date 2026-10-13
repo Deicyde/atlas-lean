@@ -1,4 +1,5 @@
 ---
+article_id: af_6bea0f0ad10d718c5e4e48b2
 declaration: def
 origin: cited
 lean: Prop_1_41_1_leftDual_iso_rightDual

@@ -1,3 +1,7 @@
+---
+article_id: af_fdcdbd9e88668e758e87d88d
+---
+
 # Narayana Number
 
 - [Narayana](narayana.md)

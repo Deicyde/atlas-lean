@@ -1,4 +1,5 @@
 ---
+article_id: af_543efc8ea558aecbbc504dfe
 declaration: theorem
 origin: cited
 lean: NumberField.Adeles.strong_approximation

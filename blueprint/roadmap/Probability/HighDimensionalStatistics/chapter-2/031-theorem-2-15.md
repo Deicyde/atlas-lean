@@ -1,4 +1,5 @@
 ---
+article_id: af_97e769dc9f6144cec88f6570
 declaration: theorem
 origin: cited
 lean: Rigollet.theorem_2_15

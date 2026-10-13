@@ -1,4 +1,5 @@
 ---
+article_id: af_8032db6232785f5f88beeb63
 declaration: theorem
 origin: cited
 lean: FusionRing.corollary_1_45_16_fpdim_cosine

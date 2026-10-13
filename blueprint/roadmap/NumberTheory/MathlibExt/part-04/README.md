@@ -1,3 +1,7 @@
+---
+article_id: af_fb96664290a4545dfbfa57b1
+---
+
 # Comma Sequence to Exponential Pascal Matrix
 
 - [Comma Sequence](comma-sequence/README.md)

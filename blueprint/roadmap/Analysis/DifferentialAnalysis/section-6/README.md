@@ -1,3 +1,7 @@
+---
+article_id: af_9a31620ca5a53daca0def608
+---
+
 # Section 6
 
 - [Lemma 6.1](038-lemma-6-1.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_bfaf8f999e469f2ed7e983a5
 declaration: theorem
 origin: cited
 lean: BooleanFourier.hypercontractive_low_degree

@@ -1,4 +1,5 @@
 ---
+article_id: af_493588c0dc21855bfdf49fd6
 declaration: theorem
 origin: cited
 lean: SphericalCap.spherical_cap_bound

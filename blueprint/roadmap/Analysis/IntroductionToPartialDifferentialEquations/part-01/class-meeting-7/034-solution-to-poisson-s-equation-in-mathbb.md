@@ -1,4 +1,5 @@
 ---
+article_id: af_65430aa891b7716c40a1ad4a
 declaration: theorem
 origin: cited
 lean: LaplacePoisson.poisson_theorem_1_1

@@ -1,3 +1,7 @@
+---
+article_id: af_e16ea72b5bdd1c7de3e01ee2
+---
+
 # Arithmetic Function
 
 - [Alder Totient](alder-totient/README.md)

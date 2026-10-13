@@ -1,4 +1,5 @@
 ---
+article_id: af_95fd690647f2704d1b7a76b3
 declaration: def
 origin: cited
 lean: ComplexLattice.uniformization_iso

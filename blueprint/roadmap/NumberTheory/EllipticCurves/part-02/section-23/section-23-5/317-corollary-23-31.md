@@ -1,4 +1,5 @@
 ---
+article_id: af_1d53bb4530c99a7f81050fda
 declaration: theorem
 origin: cited
 lean: WeilPairing.corollary_23_31_order_eq_least_m

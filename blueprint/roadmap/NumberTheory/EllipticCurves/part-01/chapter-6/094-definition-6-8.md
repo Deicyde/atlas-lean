@@ -1,4 +1,5 @@
 ---
+article_id: af_7eab6449c4d6c2164b75fb08
 declaration: abbrev
 origin: cited
 lean: DualIsogeny.dualIsogeny

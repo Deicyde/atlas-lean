@@ -1,3 +1,7 @@
+---
+article_id: af_101417f93d54ebf089646a6d
+---
+
 # Convergence tests
 
 - [Theorem (Convergence tests)](031-theorem.md)

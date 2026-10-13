@@ -1,4 +1,5 @@
 ---
+article_id: af_be65b9f3162d6dc2088c0f9e
 declaration: theorem
 origin: cited
 lean: PoincareDuality.cupProductPairingModTorsion_isPerfPair

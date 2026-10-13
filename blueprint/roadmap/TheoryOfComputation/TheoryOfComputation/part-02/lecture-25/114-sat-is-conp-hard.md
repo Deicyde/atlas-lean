@@ -1,4 +1,5 @@
 ---
+article_id: af_c1a2919321ef9f0c4d4057a0
 declaration: theorem
 origin: cited
 lean: NPCompleteness.sharpSATLang_coNP_hard

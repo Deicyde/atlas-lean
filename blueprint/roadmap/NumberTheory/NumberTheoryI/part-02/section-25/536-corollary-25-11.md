@@ -1,4 +1,5 @@
 ---
+article_id: af_5d74bb31c983992aa3723d03
 declaration: def
 origin: cited
 lean: NumberField.Adeles.adeleRing_directSumDecomposition

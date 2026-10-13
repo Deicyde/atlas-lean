@@ -1,3 +1,7 @@
+---
+article_id: af_03239a37dcbc41b593cf9956
+---
+
 # Part 1 of 2
 
 - [M Fourier Coeff monomial](m-fourier-coeff-monomial.md)

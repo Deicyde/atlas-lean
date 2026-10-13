@@ -1,3 +1,7 @@
+---
+article_id: af_6068c72bb8e201c9cd853a0c
+---
+
 # Paving
 
 - [Finite MSSBound](finite-mssbound.md)

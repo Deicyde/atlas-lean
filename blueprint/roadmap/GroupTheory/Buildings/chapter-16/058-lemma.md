@@ -1,4 +1,5 @@
 ---
+article_id: af_6e088139f694c00780934314
 declaration: theorem
 origin: cited
 lean: AffineBuilding.affine_functional_bounded_on_sector

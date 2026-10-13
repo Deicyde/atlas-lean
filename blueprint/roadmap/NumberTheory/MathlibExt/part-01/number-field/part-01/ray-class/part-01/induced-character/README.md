@@ -1,3 +1,7 @@
+---
+article_id: af_0fa8551ee85775636f320813
+---
+
 # Induced Character
 
 - [Finite Exponent le of dvd](finite-exponent-le-of-dvd.md)

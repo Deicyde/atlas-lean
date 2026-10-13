@@ -1,4 +1,5 @@
 ---
+article_id: af_8a4a50b84639ec2ea35fbd5e
 declaration: theorem
 origin: cited
 lean: LogSpace.nl_subset_space_log2

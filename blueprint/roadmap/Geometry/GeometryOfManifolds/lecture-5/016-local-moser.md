@@ -1,4 +1,5 @@
 ---
+article_id: af_409d68773c1b1636d5a84c68
 declaration: theorem
 origin: cited
 lean: local_moser_theorem4_book

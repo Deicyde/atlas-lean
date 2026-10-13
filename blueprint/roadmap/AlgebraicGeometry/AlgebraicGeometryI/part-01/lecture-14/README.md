@@ -1,3 +1,7 @@
+---
+article_id: af_8e9701f949098166daef126a
+---
+
 # Lecture 14
 
 - [Proposition 20](110-proposition-20.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_d131b3a7ab3898352b94f727
 declaration: theorem
 origin: cited
 lean: TateCohomology.exact_hexagon_exists

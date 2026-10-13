@@ -1,3 +1,7 @@
+---
+article_id: af_335672ed7e9df59a0fee6a06
+---
+
 # Lecture 7
 
 - [Theorem 2.1 (Lecture 7, Section 2)](029-theorem-2-1.md)

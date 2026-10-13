@@ -1,3 +1,7 @@
+---
+article_id: af_dca5afc09f35126a89b7f337
+---
+
 # Diophantine Quintuple Conjecture Question1 Wanted to Erdos Problem822 Wanted
 
 - [Diophantine Quintuple Conjecture Question1 Wanted](diophantine-quintuple-conjecture-question1-wante/README.md)

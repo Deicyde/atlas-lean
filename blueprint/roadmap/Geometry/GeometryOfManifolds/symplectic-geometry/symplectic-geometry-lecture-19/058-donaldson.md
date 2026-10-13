@@ -1,4 +1,5 @@
 ---
+article_id: af_658219bbc22b97fa12360617
 declaration: theorem
 origin: cited
 lean: Donaldson.donaldson_proposition_1_book

@@ -1,3 +1,7 @@
+---
+article_id: af_a3685ff00dd97d6293739b9a
+---
+
 # Associated Stirling Eulerian
 
 - [Excedance Count](excedance-count.md)

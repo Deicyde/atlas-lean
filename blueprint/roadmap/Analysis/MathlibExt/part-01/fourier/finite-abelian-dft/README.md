@@ -1,3 +1,7 @@
+---
+article_id: af_ac62e43a241b61e0d3a4ef2d
+---
+
 # Finite Abelian DFT
 
 - [Dft Fun](dft-fun.md)

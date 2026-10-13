@@ -1,4 +1,5 @@
 ---
+article_id: af_f3dfdd97e3a77d8939005c18
 declaration: theorem
 origin: cited
 lean: Thresholds.bollobas_threshold

@@ -1,4 +1,5 @@
 ---
+article_id: af_7807075bba94f270c46addaf
 declaration: theorem
 origin: cited
 lean: nilpotentCone_singular_codim_ge_two

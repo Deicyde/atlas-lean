@@ -1,4 +1,5 @@
 ---
+article_id: af_1ce54298303400a096184319
 declaration: theorem
 origin: cited
 lean: GraphContainers.triangleFreeContainerLemma

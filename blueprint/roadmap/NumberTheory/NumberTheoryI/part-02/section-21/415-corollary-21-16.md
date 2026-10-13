@@ -1,4 +1,5 @@
 ---
+article_id: af_cfff60edcff55b33fab2f123
 declaration: theorem
 origin: cited
 lean: RayClassField.corollary_21_16

@@ -1,4 +1,5 @@
 ---
+article_id: af_32b038f025ca16e1270e3b12
 declaration: theorem
 origin: cited
 lean: Prop34Blowup.proposition_34_blowup_properties

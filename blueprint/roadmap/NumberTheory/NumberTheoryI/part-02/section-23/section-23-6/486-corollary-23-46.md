@@ -1,4 +1,5 @@
 ---
+article_id: af_161527a38140d747c3141f81
 declaration: theorem
 origin: cited
 lean: TateCohomology.herbrandQuotient_trivial_pow_clean

@@ -1,3 +1,7 @@
+---
+article_id: af_514eeff17593f7c75c935be7
+---
+
 # Counting Oppermann Primes
 
 - [Oppermann Lower Prime Count](oppermann-lower-prime-count.md)

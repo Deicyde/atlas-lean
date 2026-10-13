@@ -1,3 +1,7 @@
+---
+article_id: af_5423cc4f4f47ab2eb92de070
+---
+
 # Cubic Residue Symbol
 
 - [Prime Ideal Cubic Symbol Factor Raw](prime-ideal-cubic-symbol-factor-raw.md)

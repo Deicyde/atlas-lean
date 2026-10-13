@@ -1,3 +1,7 @@
+---
+article_id: af_937401125fd0ccfe004b8614
+---
+
 # Jacobi Theta Product
 
 - [Jacobi Theta Product](jacobi-theta-product.md)

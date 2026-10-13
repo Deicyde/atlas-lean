@@ -1,3 +1,7 @@
+---
+article_id: af_e5e1820450e201aded3c3415
+---
+
 # Killing Lemma
 
 - [Character eq sum roots](character-eq-sum-roots.md)

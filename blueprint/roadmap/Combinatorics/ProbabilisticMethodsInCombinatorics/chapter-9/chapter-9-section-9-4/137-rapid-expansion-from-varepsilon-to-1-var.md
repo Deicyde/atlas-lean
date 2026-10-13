@@ -1,4 +1,5 @@
 ---
+article_id: af_20f062b783905962e45b88b5
 declaration: theorem
 origin: cited
 lean: RapidExpansion.rapid_expansion_hamming

@@ -1,3 +1,7 @@
+---
+article_id: af_68d326453628b5e1dc27cab0
+---
+
 # Delete
 
 - [Get?](get.md)

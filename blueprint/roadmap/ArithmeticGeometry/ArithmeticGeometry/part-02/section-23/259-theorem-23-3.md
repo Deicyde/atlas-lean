@@ -1,4 +1,5 @@
 ---
+article_id: af_948b894cf969dd6c81eb0138
 declaration: theorem
 origin: cited
 lean: weierstrass_model_iff_genus_one

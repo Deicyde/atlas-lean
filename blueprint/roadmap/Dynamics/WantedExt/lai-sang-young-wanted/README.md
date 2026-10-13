@@ -1,3 +1,7 @@
+---
+article_id: af_7a2518af7463db7cc7939324
+---
+
 # Lai Sang Young Wanted
 
 - [Euc Plane](euc-plane.md)

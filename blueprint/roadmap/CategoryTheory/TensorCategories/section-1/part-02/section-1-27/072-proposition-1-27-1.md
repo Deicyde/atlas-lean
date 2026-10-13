@@ -1,4 +1,5 @@
 ---
+article_id: af_29f1ba3d607116d55f8c3418
 declaration: theorem
 origin: cited
 lean: EGNO.Proposition_1_27_1

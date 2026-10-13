@@ -1,4 +1,5 @@
 ---
+article_id: af_a9bc393c5a8fa190fa17360e
 declaration: theorem
 origin: cited
 lean: SemisimpleLieGroup.exists_maximalCompactSubgroup

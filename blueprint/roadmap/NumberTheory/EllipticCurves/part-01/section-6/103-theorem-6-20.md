@@ -1,4 +1,5 @@
 ---
+article_id: af_3dff6370ecb808592de23103
 declaration: theorem
 origin: cited
 lean: Isogeny.torsionMatrix_trace_det_resolution

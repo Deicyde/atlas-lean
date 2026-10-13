@@ -1,4 +1,5 @@
 ---
+article_id: af_043fb7366dc8bc58d3502a89
 declaration: theorem
 origin: cited
 lean: Proposition39.proposition39_range

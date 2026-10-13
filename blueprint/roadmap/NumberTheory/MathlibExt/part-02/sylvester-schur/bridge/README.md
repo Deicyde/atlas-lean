@@ -1,3 +1,7 @@
+---
+article_id: af_43ebb8528ad2a7611b5dc7aa
+---
+
 # Bridge
 
 - [Prime dvd choose of dvd consecutive](prime-dvd-choose-of-dvd-consecutive.md)

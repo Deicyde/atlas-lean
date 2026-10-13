@@ -1,3 +1,7 @@
+---
+article_id: af_86c8c5235b66a787dfbd82c5
+---
+
 # Fundamental Parallelogram
 
 - [Fundamental Parallelogram](fundamental-parallelogram.md)

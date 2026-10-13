@@ -1,3 +1,7 @@
+---
+article_id: af_4c405d88cabbaf2ce75d8495
+---
+
 # Section 2
 
 - [Theorem 2.1](003-theorem-2-1.md)

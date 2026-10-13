@@ -1,3 +1,7 @@
+---
+article_id: af_38018db7654134013906f546
+---
+
 # Part1 Ch9 Entry14 Xoversin
 
 - [Chapter9 Odd Clausen Term norm bound](chapter9-odd-clausen-term-norm-bound.md)

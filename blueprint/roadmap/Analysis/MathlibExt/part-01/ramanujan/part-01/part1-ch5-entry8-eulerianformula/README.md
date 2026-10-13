@@ -1,3 +1,7 @@
+---
+article_id: af_b743905d5209a593c22192a2
+---
+
 # Part1 Ch5 Entry8 Eulerianformula
 
 - [Chapter5 Entry8 exp add one ne](chapter5-entry8-exp-add-one-ne.md)

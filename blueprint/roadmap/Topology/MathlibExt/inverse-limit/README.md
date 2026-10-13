@@ -1,3 +1,7 @@
+---
+article_id: af_18b30c90f2797fa29bca8af6
+---
+
 # Inverse Limit
 
 - [Carrier](carrier.md)

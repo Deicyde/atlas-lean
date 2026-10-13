@@ -1,3 +1,7 @@
+---
+article_id: af_ff0471a0aff33f1610b42238
+---
+
 # Normal Convergence
 
 - [Sup Norm On](sup-norm-on.md)

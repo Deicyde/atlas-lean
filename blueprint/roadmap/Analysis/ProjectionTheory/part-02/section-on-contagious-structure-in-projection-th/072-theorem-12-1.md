@@ -1,4 +1,5 @@
 ---
+article_id: af_5f9874170465e071e3e69dd9
 declaration: theorem
 origin: cited
 lean: ProjectionTheory.exists_eps_dilated_sumset_expansion

@@ -1,3 +1,7 @@
+---
+article_id: af_b8c20a545969747131b28fbd
+---
+
 # Part 1 of 2
 
 - [Radix Trie](radix-trie.md)

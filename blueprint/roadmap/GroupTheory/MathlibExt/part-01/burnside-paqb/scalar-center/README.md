@@ -1,3 +1,7 @@
+---
+article_id: af_981f62245af778d952e09b1b
+---
+
 # Scalar Center
 
 - [All roots eq of norm eq](all-roots-eq-of-norm-eq.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_1909193d2e9c925172861d94
+---
+
 # Cumulant Moments
 
 - [Cont Diff two wiman Growth](cont-diff-two-wiman-growth.md)

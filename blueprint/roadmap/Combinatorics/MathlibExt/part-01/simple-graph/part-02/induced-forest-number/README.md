@@ -1,3 +1,7 @@
+---
+article_id: af_eff7c3d46d20b868e145d109
+---
+
 # Induced Forest Number
 
 - [Induced Forest Number](induced-forest-number.md)

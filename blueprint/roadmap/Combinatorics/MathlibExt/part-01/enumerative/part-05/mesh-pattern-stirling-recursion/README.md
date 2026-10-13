@@ -1,3 +1,7 @@
+---
+article_id: af_9dc36caf320e92cc9053d106
+---
+
 # Mesh Pattern Stirling Recursion
 
 - [Match Pred](match-pred.md)

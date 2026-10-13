@@ -1,3 +1,7 @@
+---
+article_id: af_8e52ea06e2b4e4fa599eb78a
+---
+
 # Contraction
 
 - [Collapse Outside](collapse-outside.md)

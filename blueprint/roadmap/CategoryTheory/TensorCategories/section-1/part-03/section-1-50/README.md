@@ -1,3 +1,7 @@
+---
+article_id: af_26899566efc73933fde22503
+---
+
 # Section 1.50
 
 - [Theorem 1.50.1](159-theorem-1-50-1.md)

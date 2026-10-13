@@ -1,3 +1,7 @@
+---
+article_id: af_49a60d15cecc34cf1400bb16
+---
+
 # Erdos Problem755 Wanted
 
 - [Is Equilateral Triangle](is-equilateral-triangle.md)

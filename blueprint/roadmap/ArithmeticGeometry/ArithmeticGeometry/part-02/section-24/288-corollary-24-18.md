@@ -1,4 +1,5 @@
 ---
+article_id: af_706a0470771104bcab121108
 declaration: theorem
 origin: cited
 lean: PadicElliptic.cor_24_18_torsion_free

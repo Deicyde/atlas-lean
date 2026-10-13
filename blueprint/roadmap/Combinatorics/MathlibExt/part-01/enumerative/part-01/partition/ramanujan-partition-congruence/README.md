@@ -1,3 +1,7 @@
+---
+article_id: af_e1e070fb710a5d6f9f990353
+---
+
 # Ramanujan Partition Congruence
 
 - [Two mul choose two succ](two-mul-choose-two-succ.md)

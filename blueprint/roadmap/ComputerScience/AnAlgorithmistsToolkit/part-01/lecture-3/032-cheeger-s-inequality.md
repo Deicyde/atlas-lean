@@ -1,4 +1,5 @@
 ---
+article_id: af_939255cc54bbae1b693290b7
 declaration: theorem
 origin: cited
 lean: Cheeger.cheeger_inequality_graph

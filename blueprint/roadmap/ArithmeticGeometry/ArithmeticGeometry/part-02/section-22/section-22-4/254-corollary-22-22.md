@@ -1,4 +1,5 @@
 ---
+article_id: af_d21e7b449e69b105a395e1cd
 declaration: theorem
 origin: cited
 lean: Corollary2222.ell_eq_genus

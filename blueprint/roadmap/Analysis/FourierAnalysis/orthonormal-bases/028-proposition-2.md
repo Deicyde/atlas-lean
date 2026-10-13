@@ -1,4 +1,5 @@
 ---
+article_id: af_dda3c3cc97d0f6d8ef34387d
 declaration: theorem
 origin: cited
 lean: OrthonormalBases.inner_hasSum_of_orthonormal_series

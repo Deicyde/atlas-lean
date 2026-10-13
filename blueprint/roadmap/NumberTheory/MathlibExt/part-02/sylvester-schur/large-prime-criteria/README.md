@@ -1,3 +1,7 @@
+---
+article_id: af_a7bedb3503ebbf64a3ed1616
+---
+
 # Large Prime Criteria
 
 - [Exists large prime dvd choose of factorial mul prod erdos layers lt lower pow](exists-large-prime-dvd-choose-of-factori.md)

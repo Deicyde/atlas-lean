@@ -1,3 +1,7 @@
+---
+article_id: af_3531a06439aafdc916212c09
+---
+
 # Condorcet
 
 - [Condorcet jury theorem](condorcet-jury-theorem.md)

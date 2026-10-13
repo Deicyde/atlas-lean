@@ -1,4 +1,5 @@
 ---
+article_id: af_d1582c663f02627611d2acd1
 declaration: theorem
 origin: cited
 lean: ModularPolynomial.eval_eq_zero_iff_of_charZero

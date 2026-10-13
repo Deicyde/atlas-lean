@@ -1,3 +1,7 @@
+---
+article_id: af_4a2d2f21b4b07c3488d3a86f
+---
+
 # Part1 Ch3 Entry13 Corollary Schroder to Part1 Ch3 Entry4
 
 - [Part1 Ch3 Entry13 Corollary Schroder](part1-ch3-entry13-corollary-schroder/README.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_50ccf4be27a3442e7ae1fe91
 declaration: theorem
 origin: cited
 lean: dualBasisProperty

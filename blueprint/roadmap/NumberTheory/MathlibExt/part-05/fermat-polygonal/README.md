@@ -1,3 +1,7 @@
+---
+article_id: af_1be1f268c80f99ea128518ad
+---
+
 # Fermat Polygonal
 
 - [Exists eq add add triangular](exists-eq-add-add-triangular.md)

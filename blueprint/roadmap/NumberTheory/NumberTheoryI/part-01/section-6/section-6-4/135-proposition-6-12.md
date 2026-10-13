@@ -1,4 +1,5 @@
 ---
+article_id: af_d0f735ffb1d679951b9d9d64
 declaration: theorem
 origin: cited
 lean: absNorm_eq_card_quot

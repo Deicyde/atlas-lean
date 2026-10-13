@@ -1,3 +1,7 @@
+---
+article_id: af_4f40677e4431a70cf463e45e
+---
+
 # String Matching
 
 - [Boyer Moore](boyer-moore/README.md)

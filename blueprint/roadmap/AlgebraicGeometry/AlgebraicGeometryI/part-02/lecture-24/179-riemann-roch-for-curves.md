@@ -1,4 +1,5 @@
 ---
+article_id: af_f4a8ba8cbb43814a68a8b138
 declaration: theorem
 origin: cited
 lean: RiemannRochGeometric.theorem_24_2

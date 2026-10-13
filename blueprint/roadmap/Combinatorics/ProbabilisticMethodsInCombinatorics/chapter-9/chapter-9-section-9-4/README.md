@@ -1,3 +1,7 @@
+---
+article_id: af_ef1e57070c1f6fe26c547886
+---
+
 # Chapter 9, Section 9.4
 
 - [Theorem 9.4.1 (Isoperimetric inequality in Euclidean space)](134-isoperimetric-inequality-in-euclidean-sp.md)

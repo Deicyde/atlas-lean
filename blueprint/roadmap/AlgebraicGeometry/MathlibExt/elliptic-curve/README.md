@@ -1,3 +1,7 @@
+---
+article_id: af_994aa42f0bc6aa5201588a08
+---
+
 # Elliptic Curve
 
 - [Galois Representation](galois-representation/README.md)

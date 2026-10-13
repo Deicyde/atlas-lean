@@ -1,4 +1,5 @@
 ---
+article_id: af_622c94f7158140e345714f7f
 declaration: theorem
 origin: cited
 lean: GaussianIsoperimetric.gaussian_concentration_lipschitz

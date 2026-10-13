@@ -1,3 +1,7 @@
+---
+article_id: af_b864cd40068017f076eddd44
+---
+
 # Honsberger Fibonacci P
 
 - [Fibonacci P](fibonacci-p.md)

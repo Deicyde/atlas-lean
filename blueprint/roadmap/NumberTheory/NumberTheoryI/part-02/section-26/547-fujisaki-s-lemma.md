@@ -1,4 +1,5 @@
 ---
+article_id: af_534ef982f086c37e38b265a0
 declaration: theorem
 origin: cited
 lean: Ideles.fujisaki_lemma_full

@@ -1,4 +1,5 @@
 ---
+article_id: af_a21a9357ae1f5b30fc85c35e
 declaration: theorem
 origin: cited
 lean: formalDerivative_linear

@@ -1,4 +1,5 @@
 ---
+article_id: af_982aff4bc2a4275519e9fd07
 declaration: theorem
 origin: cited
 lean: SmoothProjectiveCurve.corollary_18_7

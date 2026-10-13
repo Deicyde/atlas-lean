@@ -1,4 +1,5 @@
 ---
+article_id: af_bc7968f3753a5c402243d8a7
 declaration: theorem
 origin: cited
 lean: AbelianGroups.fundamental_theorem_fg_abelian_groups_invariant_factors

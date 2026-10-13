@@ -1,4 +1,5 @@
 ---
+article_id: af_9d10206e454b7e258cff4a64
 declaration: theorem
 origin: cited
 lean: functor_H_lambda_exact

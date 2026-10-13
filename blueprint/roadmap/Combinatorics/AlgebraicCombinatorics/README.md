@@ -1,3 +1,7 @@
+---
+article_id: af_bd0f60802a6e25c66fdaa7f3
+---
+
 # MIT 18.318 Topics in Algebraic Combinatorics (Spring 2006)
 
 Statements selected from [MIT 18.318 Topics in Algebraic Combinatorics (Spring 2006)](../../../sources/v1/AlgebraicCombinatorics.md) by ATLAS v1, in source order.

@@ -1,3 +1,7 @@
+---
+article_id: af_93dd29a4e99fdd44e1b85dbe
+---
+
 # Wiman
 
 - [Coefficient Exponential Family](coefficient-exponential-family/README.md)

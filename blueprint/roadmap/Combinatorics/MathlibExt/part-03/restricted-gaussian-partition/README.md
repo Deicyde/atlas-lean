@@ -1,3 +1,7 @@
+---
+article_id: af_77c11e0ec843320e9e9c6a13
+---
+
 # Restricted Gaussian Partition
 
 - [Gaussian Partition](gaussian-partition.md)

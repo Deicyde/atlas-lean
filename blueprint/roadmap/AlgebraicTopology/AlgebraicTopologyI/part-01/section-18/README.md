@@ -1,3 +1,7 @@
+---
+article_id: af_1c0859581966ee3240f84c6b
+---
+
 # Section 18
 
 - [Theorem 18.1](074-theorem-18-1.md)

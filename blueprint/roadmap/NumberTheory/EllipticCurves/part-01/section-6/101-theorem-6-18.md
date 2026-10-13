@@ -1,4 +1,5 @@
 ---
+article_id: af_e0928ac6034b02ed99b7d62a
 declaration: theorem
 origin: cited
 lean: WeierstrassCurve.Affine.EndAlgebra.roots_of_char_poly

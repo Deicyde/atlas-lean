@@ -1,4 +1,5 @@
 ---
+article_id: af_f69d6bbb7397d3d0ac928fdf
 declaration: theorem
 origin: cited
 lean: DVRContext.IwahoriDecomposition

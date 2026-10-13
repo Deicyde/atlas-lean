@@ -1,3 +1,7 @@
+---
+article_id: af_7d415443bb0a499d7a20151e
+---
+
 # Part 2 of 4
 
 - [Part1 Ch2 Entry7 Example4](ramanujan-part1-ch2-entry7-example4.md)

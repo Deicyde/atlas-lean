@@ -1,3 +1,7 @@
+---
+article_id: af_41d1115dc284cd45f732e001
+---
+
 # Section 1.35
 
 - [Proposition 1.35.1](105-proposition-1-35-1.md)

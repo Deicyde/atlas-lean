@@ -1,4 +1,5 @@
 ---
+article_id: af_b703e194d2a9854b28e56337
 declaration: theorem
 origin: cited
 lean: CMIsogeny.cm_isogeny_count_by_type

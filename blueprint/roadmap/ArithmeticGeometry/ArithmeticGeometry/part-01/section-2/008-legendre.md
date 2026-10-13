@@ -1,4 +1,5 @@
 ---
+article_id: af_42e493366341a2b4a299658e
 declaration: theorem
 origin: cited
 lean: legendre_theorem

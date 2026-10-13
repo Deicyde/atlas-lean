@@ -1,3 +1,7 @@
+---
+article_id: af_0860e63100105df718b82b4e
+---
+
 # Ordered Insert
 
 - [Ordered Insert](ordered-insert.md)

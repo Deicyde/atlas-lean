@@ -1,3 +1,7 @@
+---
+article_id: af_8f6e7fddb076a92b36434b70
+---
+
 # Immersion Comp
 
 - [Comp](comp.md)

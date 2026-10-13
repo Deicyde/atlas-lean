@@ -1,4 +1,5 @@
 ---
+article_id: af_9e938fccddbcefd9b131dae8
 declaration: theorem
 origin: cited
 lean: ChowLemma.chow_lemma

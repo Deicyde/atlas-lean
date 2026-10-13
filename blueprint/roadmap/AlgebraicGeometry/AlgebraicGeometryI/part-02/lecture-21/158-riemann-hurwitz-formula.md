@@ -1,4 +1,5 @@
 ---
+article_id: af_16d1d8113870d833b0cbe25b
 declaration: theorem
 origin: cited
 lean: riemann_hurwitz_sheaf_iso

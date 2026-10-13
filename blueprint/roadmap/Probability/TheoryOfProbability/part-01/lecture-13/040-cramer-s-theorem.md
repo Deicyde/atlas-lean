@@ -1,4 +1,5 @@
 ---
+article_id: af_8d56b3a4877b7246ba35197d
 declaration: theorem
 origin: cited
 lean: cramer_theorem

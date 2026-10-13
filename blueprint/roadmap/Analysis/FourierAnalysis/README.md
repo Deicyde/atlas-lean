@@ -1,3 +1,7 @@
+---
+article_id: af_30f17486c57c15a1d29b3525
+---
+
 # MIT 18.103 Fourier Analysis (Fall 2013)
 
 Statements selected from [MIT 18.103 Fourier Analysis (Fall 2013)](../../../sources/v1/FourierAnalysis.md) by ATLAS v1, in source order.

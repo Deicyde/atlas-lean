@@ -1,3 +1,7 @@
+---
+article_id: af_d56bef31e6f51efdb054fa3c
+---
+
 # ZAlgorithm
 
 - [Compute Z](compute-z.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_a9ed7136776f399ae4b5125d
+---
+
 # Linear Subspaces Wanted
 
 - [Dist Lines](dist-lines.md)

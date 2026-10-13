@@ -1,3 +1,7 @@
+---
+article_id: af_ae84dd5b23489c91283dfd9a
+---
+
 # Arcsin Taylor Series
 
 - [Central Binomial Coeff](central-binomial-coeff.md)

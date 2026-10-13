@@ -1,3 +1,7 @@
+---
+article_id: af_bc29f53887983b58e183159e
+---
+
 # Section 23.6
 
 - [Theorem 23.37](479-theorem-23-37.md)

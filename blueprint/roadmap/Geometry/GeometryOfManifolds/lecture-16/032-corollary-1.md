@@ -1,4 +1,5 @@
 ---
+article_id: af_b90d91c69618cf64eeffce0b
 declaration: theorem
 origin: cited
 lean: elliptic_regularity

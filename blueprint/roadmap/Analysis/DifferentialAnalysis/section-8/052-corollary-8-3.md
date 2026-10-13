@@ -1,4 +1,5 @@
 ---
+article_id: af_99917223f5ef1f1c612c6c3e
 declaration: theorem
 origin: cited
 lean: ConvolutionDensity.contDiffZeroAtInftyN_dense_of_le

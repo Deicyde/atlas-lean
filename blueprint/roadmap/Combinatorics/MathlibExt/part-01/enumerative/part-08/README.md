@@ -1,3 +1,7 @@
+---
+article_id: af_a7f21d2906361d89fa8d4b21
+---
+
 # Part 8 of 9
 
 - [Signed Stirling First](signed-stirling-first.md)

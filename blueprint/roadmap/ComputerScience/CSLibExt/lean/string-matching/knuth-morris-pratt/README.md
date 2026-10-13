@@ -1,3 +1,7 @@
+---
+article_id: af_66a32e1862a7110078dfb516
+---
+
 # Knuth Morris Pratt
 
 - [Kmp Search](kmp-search.md)

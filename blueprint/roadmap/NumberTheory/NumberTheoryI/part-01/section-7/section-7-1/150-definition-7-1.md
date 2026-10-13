@@ -1,4 +1,5 @@
 ---
+article_id: af_ab9d3512dedcc7a361e51928
 declaration: abbrev
 origin: cited
 lean: IsLeftGModule

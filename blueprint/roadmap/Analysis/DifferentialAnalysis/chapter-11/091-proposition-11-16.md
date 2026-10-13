@@ -1,4 +1,5 @@
 ---
+article_id: af_3b22033a15ddf3e9eb3a37b7
 declaration: theorem
 origin: cited
 lean: HeatEquation.heat_equation_existence_uniqueness

@@ -1,3 +1,7 @@
+---
+article_id: af_f3430a46fc3bcf6b02c25f85
+---
+
 # Section 2.4
 
 - [Proposition 2.4.1](181-proposition-2-4-1.md)

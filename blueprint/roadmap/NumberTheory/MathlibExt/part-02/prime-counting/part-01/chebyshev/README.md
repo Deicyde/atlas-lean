@@ -1,3 +1,7 @@
+---
+article_id: af_a0b481a68ae9925e89ea5f47
+---
+
 # Chebyshev
 
 - [Prime Counting sub theta div log is Little O](prime-counting-sub-theta-div-log-is-litt.md)

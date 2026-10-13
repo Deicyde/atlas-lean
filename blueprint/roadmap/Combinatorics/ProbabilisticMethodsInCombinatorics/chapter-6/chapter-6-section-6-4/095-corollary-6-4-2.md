@@ -1,4 +1,5 @@
 ---
+article_id: af_c053983bea4491abafa3f567
 declaration: theorem
 origin: cited
 lean: DirectedCycles.exists_even_regular_hasCycleDivisibleBy

@@ -1,4 +1,5 @@
 ---
+article_id: af_e6e750bca6ef76224bd5e912
 declaration: theorem
 origin: cited
 lean: schur_hom_eq_zero_of_not_iso

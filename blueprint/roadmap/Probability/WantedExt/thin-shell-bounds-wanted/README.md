@@ -1,3 +1,7 @@
+---
+article_id: af_159bc4401b05f538a1f1c558
+---
+
 # Thin Shell Bounds Wanted
 
 - [Klartag2007a width bound](klartag2007a-width-bound.md)

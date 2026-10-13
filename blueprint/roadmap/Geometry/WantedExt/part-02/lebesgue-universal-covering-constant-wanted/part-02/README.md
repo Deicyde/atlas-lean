@@ -1,3 +1,7 @@
+---
+article_id: af_37b3922b48bc5b336a6fa2df
+---
+
 # Part 2 of 2
 
 - [Elekes1994 Regular Polygon Lower Bound](elekes1994-regular-polygon-lower-bound.md)

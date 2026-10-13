@@ -1,3 +1,7 @@
+---
+article_id: af_20d907479aee702ceeacf5cc
+---
+
 # Lyndon Word
 
 - [Witt Word Content](witt-word-content.md)

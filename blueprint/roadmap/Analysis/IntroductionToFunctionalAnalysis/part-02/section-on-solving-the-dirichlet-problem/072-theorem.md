@@ -1,4 +1,5 @@
 ---
+article_id: af_98dd0dc630a564278a364aa6
 declaration: theorem
 origin: cited
 lean: SpectralTheory.sturm_liouville_existence_uniqueness

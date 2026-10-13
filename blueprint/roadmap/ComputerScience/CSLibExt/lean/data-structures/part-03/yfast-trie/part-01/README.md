@@ -1,3 +1,7 @@
+---
+article_id: af_128e35689cf1569bfebeeee4
+---
+
 # Part 1 of 2
 
 - [Grouped YFast Trie](grouped-yfast-trie.md)

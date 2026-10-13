@@ -1,3 +1,7 @@
+---
+article_id: af_b502c84720096b3259fd6afb
+---
+
 # Lax Approximation Wanted
 
 - [Torus](torus.md)

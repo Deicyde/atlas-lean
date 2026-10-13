@@ -1,3 +1,7 @@
+---
+article_id: af_3b6fb84b05ec2c973459b6ec
+---
+
 # Edge Graceful
 
 - [Incident Sum](incident-sum.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_4101166c91cb8eef7be1a2c7
 declaration: theorem
 origin: cited
 lean: ParityConjecture.parityConjecture

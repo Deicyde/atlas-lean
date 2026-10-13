@@ -1,4 +1,5 @@
 ---
+article_id: af_a6bed684c6db39d4ec222314
 declaration: structure
 origin: cited
 lean: IsEllipticOperatorOnManifold

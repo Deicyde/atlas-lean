@@ -1,3 +1,7 @@
+---
+article_id: af_e0ebd679fc735ddc454f97cb
+---
+
 # Section 5.2
 
 - [Proposition 5.17](110-proposition-5-17.md)

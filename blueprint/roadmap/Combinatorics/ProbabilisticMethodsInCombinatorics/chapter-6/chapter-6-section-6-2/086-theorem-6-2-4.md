@@ -1,4 +1,5 @@
 ---
+article_id: af_a83e9e7c2c76569b21443aa9
 declaration: theorem
 origin: cited
 lean: HypergraphColoring.hypergraph_two_coloring_6_2_4

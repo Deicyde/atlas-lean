@@ -1,4 +1,5 @@
 ---
+article_id: af_800bddafe38367c066faca9a
 declaration: theorem
 origin: cited
 lean: LocallyFactorialDivisors.weil_iso_cartier_of_locally_factorial

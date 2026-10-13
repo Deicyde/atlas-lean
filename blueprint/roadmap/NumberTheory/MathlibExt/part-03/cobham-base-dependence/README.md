@@ -1,3 +1,7 @@
+---
+article_id: af_e0717542577499cd00b49f05
+---
+
 # Cobham Base Dependence
 
 - [Bases Multiplicatively Independent](bases-multiplicatively-independent.md)

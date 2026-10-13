@@ -1,4 +1,5 @@
 ---
+article_id: af_7c6630d39663fa59bbdf06fa
 declaration: def
 origin: cited
 lean: SerreDualityStatement.serre_duality_iso

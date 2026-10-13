@@ -1,4 +1,5 @@
 ---
+article_id: af_681366bf75e12cb2fe2aa330
 declaration: theorem
 origin: cited
 lean: TestFunctions.ContDiffZeroAtInfty.c1_banach

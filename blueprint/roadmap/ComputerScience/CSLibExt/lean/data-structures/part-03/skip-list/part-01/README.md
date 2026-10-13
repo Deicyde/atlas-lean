@@ -1,3 +1,7 @@
+---
+article_id: af_22d22b2daa964e8b1f257058
+---
+
 # Part 1 of 2
 
 - [Entry](entry.md)

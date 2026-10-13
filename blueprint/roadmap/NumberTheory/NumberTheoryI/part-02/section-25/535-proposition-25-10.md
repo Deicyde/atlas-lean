@@ -1,4 +1,5 @@
 ---
+article_id: af_f5d085a43b8f0ac687fb1778
 declaration: theorem
 origin: cited
 lean: NumberField.Adeles.adeles_base_change_diagram

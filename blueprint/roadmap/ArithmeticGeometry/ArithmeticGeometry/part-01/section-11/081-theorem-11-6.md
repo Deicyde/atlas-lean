@@ -1,4 +1,5 @@
 ---
+article_id: af_242338aeeee1679ebfebd42e
 declaration: theorem
 origin: cited
 lean: rat_dense_in_padic

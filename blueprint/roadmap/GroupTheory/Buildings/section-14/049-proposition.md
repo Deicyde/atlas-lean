@@ -1,4 +1,5 @@
 ---
+article_id: af_77a057efabfff7798339a081
 declaration: theorem
 origin: cited
 lean: BornologyProp.proposition_tfae

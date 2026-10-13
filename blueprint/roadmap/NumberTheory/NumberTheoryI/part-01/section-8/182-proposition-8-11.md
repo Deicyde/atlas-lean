@@ -1,4 +1,5 @@
 ---
+article_id: af_645b07ef8d5e7ea33f756eb0
 declaration: theorem
 origin: cited
 lean: KroneckerWeber.prop_8_11_map_asIdeal_eq_maximalIdeal

@@ -1,4 +1,5 @@
 ---
+article_id: af_8288c1dd86a78fe17432c37c
 declaration: theorem
 origin: cited
 lean: PoincareDuality.cech_cohomology_vanishing

@@ -1,4 +1,5 @@
 ---
+article_id: af_128deaa41409995ebd4d9bc0
 declaration: def
 origin: cited
 lean: SobolevEmbedding.sobolevEmbedding_base

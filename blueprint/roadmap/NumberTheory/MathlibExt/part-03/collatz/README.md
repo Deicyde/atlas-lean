@@ -1,3 +1,7 @@
+---
+article_id: af_acf688292b4954564707603a
+---
+
 # Collatz
 
 - [Collatz Step](collatz-step.md)

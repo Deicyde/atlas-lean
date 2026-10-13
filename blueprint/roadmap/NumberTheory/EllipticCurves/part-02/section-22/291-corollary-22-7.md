@@ -1,4 +1,5 @@
 ---
+article_id: af_421442e9d2f2ca7fc170cc2a
 declaration: def
 origin: cited
 lean: IsogenyCount.isogeny_count_exists

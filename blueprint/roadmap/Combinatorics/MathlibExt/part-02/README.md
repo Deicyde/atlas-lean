@@ -1,3 +1,7 @@
+---
+article_id: af_4b7f57d2d1b1257f1b5c82fe
+---
+
 # Associated Stirling Second to Jaccard Lattice
 
 - [Associated Stirling Second](associated-stirling-second/README.md)

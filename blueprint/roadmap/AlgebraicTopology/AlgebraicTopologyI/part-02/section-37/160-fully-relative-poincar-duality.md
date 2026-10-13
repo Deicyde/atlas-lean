@@ -1,4 +1,5 @@
 ---
+article_id: af_83ae9c2946b78eed7e304e53
 declaration: def
 origin: cited
 lean: PoincareDuality.fullyRelativeCapProductIso

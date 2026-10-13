@@ -1,3 +1,7 @@
+---
+article_id: af_4e0894588a03b074f7495c23
+---
+
 # Artin Group
 
 - [Alternating Word](alternating-word.md)

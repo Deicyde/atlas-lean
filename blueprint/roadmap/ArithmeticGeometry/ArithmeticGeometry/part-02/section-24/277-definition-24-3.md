@@ -1,4 +1,5 @@
 ---
+article_id: af_72ccd9afdcf563f0b4d46e5e
 declaration: def
 origin: cited
 lean: EllipticCurveIsogeny.ker

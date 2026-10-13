@@ -1,4 +1,5 @@
 ---
+article_id: af_4d081a12951f32743c4a50ee
 declaration: def
 origin: cited
 lean: HomologyWithCoefficients.homologyTheoryWithCoefficients

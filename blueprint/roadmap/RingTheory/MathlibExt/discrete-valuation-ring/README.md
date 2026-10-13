@@ -1,3 +1,7 @@
+---
+article_id: af_a96536e15f1d1f53c8bc95c9
+---
+
 # Discrete Valuation Ring
 
 - [Finite Extension Complete](is-adic-complete-of-finite-local-extensi.md)

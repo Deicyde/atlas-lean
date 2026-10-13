@@ -1,3 +1,7 @@
+---
+article_id: af_9c148d81fd975b472a27cf5e
+---
+
 # Part 1 of 2
 
 - [Arithmetic Large Sieve](arithmetic-large-sieve-progression.md)

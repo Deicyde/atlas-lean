@@ -1,3 +1,7 @@
+---
+article_id: af_fb999c611769aab2a94bece2
+---
+
 # Section 29
 
 - [Theorem 29.1 (Beilinson-Bernstein)](169-beilinson-bernstein.md)

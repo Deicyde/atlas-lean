@@ -1,3 +1,7 @@
+---
+article_id: af_2783fbf397350bb5ff495bb5
+---
+
 # Generalized Sylvester
 
 - [Generalized Sylvester](generalized-sylvester.md)

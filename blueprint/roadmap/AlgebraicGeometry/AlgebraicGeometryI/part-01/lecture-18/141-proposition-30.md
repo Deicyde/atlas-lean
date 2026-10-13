@@ -1,4 +1,5 @@
 ---
+article_id: af_6c4f64aa0e4a20d9d4fc9963
 declaration: theorem
 origin: cited
 lean: Scheme.proposition30_smooth_locus_dense_open

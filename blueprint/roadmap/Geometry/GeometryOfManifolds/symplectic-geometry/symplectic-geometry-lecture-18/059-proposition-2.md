@@ -1,4 +1,5 @@
 ---
+article_id: af_082797d6abe3ae7edbce81f1
 declaration: theorem
 origin: cited
 lean: donaldson_holomorphic_approximation_exp_bound

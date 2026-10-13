@@ -1,4 +1,5 @@
 ---
+article_id: af_141c6c3bcea5cbf1ab77881a
 declaration: theorem
 origin: cited
 lean: BooleanFourier.invariance_principle_corollary

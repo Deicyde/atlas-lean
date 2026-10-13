@@ -1,3 +1,7 @@
+---
+article_id: af_bd8b31d08f5ed66b92069249
+---
+
 # Ramanujan
 
 - [Part 1 of 4](part-01/README.md)

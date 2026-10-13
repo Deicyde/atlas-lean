@@ -1,4 +1,5 @@
 ---
+article_id: af_0626b91b75ebe95ce213b916
 declaration: def
 origin: cited
 lean: PoincareDuality.alexander_duality

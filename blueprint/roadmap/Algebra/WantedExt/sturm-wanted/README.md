@@ -1,3 +1,7 @@
+---
+article_id: af_d3812d418862dbfc23fe8fe8
+---
+
 # Sturm Wanted
 
 - [Sturm Aux](sturm-aux.md)

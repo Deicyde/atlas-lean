@@ -1,3 +1,7 @@
+---
+article_id: af_7576efdcca55b2b3b3a11c0e
+---
+
 # Hayman Spherical Area Ratio Wanted
 
 - [Root Count](root-count.md)

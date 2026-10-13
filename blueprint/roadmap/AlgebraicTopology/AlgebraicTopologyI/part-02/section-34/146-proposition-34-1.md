@@ -1,4 +1,5 @@
 ---
+article_id: af_81911a9d96a08aa8b168d7d1
 declaration: theorem
 origin: cited
 lean: CapProduct.proposition_34_1

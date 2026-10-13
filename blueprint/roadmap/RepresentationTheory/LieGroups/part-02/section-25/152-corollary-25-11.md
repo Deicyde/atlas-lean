@@ -1,4 +1,5 @@
 ---
+article_id: af_2c86ca02d6a2833ac2e24afb
 declaration: theorem
 origin: cited
 lean: corollary_25_11_realizability

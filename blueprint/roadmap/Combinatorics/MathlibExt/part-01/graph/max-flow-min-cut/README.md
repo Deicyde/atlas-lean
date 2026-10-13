@@ -1,3 +1,7 @@
+---
+article_id: af_72bf734e0236a5287e8d66a3
+---
+
 # Max Flow Min Cut
 
 - [Is Feasible Flow](is-feasible-flow.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_4d9e3b298abe6a3b7196bc12
+---
+
 # Lecture 5
 
 - [Proposition 1 (Lecture 5, Section 1 (Tubular Neighborhoods))](003-proposition-1.md)

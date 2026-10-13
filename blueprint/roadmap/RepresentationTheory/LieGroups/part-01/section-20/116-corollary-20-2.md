@@ -1,4 +1,5 @@
 ---
+article_id: af_0cd3f1133d24d0100b35189f
 declaration: theorem
 origin: cited
 lean: standardly_filtered_higher_ext_vanishing

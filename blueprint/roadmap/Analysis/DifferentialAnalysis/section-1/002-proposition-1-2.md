@@ -1,4 +1,5 @@
 ---
+article_id: af_7d300816d8c00bf79419a0b2
 declaration: theorem
 origin: cited
 lean: NormedSpaces.finDim_norms_equivalent

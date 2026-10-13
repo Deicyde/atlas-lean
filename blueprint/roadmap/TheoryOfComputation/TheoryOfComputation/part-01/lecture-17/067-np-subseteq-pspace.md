@@ -1,4 +1,5 @@
 ---
+article_id: af_ab97aac0437f3a432a02dc01
 declaration: theorem
 origin: cited
 lean: SpaceComplexity.NP_subset_PSPACE

@@ -1,4 +1,5 @@
 ---
+article_id: af_0193cca55acde052dd639570
 declaration: def
 origin: cited
 lean: CechCohomology.cechCohomologyExcision

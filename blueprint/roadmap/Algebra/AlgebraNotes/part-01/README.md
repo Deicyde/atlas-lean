@@ -1,3 +1,7 @@
+---
+article_id: af_715da8be04c093ea2c972ce0
+---
+
 # Section 3 to The Sylow Theorems
 
 - [Section 3](section-3/README.md)

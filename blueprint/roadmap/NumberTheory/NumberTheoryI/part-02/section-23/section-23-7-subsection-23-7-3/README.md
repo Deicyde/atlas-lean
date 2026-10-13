@@ -1,3 +1,7 @@
+---
+article_id: af_eb76e0c35d47d8c542445634
+---
+
 # Section 23.7, Subsection 23.7.3
 
 - [Lemma 23.58](498-lemma-23-58.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_776592a5d1a89233b681a0c6
 declaration: def
 origin: cited
 lean: Building.link_building

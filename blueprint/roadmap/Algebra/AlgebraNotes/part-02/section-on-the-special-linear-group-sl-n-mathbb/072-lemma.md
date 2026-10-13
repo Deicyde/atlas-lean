@@ -1,4 +1,5 @@
 ---
+article_id: af_77a61c16e4cd3e941d4f8736
 declaration: theorem
 origin: cited
 lean: SimpleGroups.det_exp

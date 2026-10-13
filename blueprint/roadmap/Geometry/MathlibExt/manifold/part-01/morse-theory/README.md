@@ -1,3 +1,7 @@
+---
+article_id: af_06da18d641c521479bc4636d
+---
+
 # Morse Theory
 
 - [Morse Quadratic](morse-quadratic.md)

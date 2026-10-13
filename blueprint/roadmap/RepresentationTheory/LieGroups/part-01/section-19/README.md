@@ -1,3 +1,7 @@
+---
+article_id: af_a2706742aabbc876fd947aa9
+---
+
 # Section 19
 
 - [Proposition 19.1](110-proposition-19-1.md)

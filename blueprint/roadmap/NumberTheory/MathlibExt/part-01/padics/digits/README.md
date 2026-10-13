@@ -1,3 +1,7 @@
+---
+article_id: af_2c380ce5769b969ed47875d9
+---
+
 # Digits
 
 - [Padic Digit](padic-digit.md)

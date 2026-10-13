@@ -1,3 +1,7 @@
+---
+article_id: af_ef3b10ad984b23bdac08c1e8
+---
+
 # Mean Value Theorem
 
 - [Theorem (Mean Value Theorem) (Mean Value Theorem section) (1)](058-mean-value-theorem.md)

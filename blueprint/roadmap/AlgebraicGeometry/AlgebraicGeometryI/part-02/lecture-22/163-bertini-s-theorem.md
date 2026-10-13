@@ -1,4 +1,5 @@
 ---
+article_id: af_a499821a5c55a5f874306f22
 declaration: theorem
 origin: cited
 lean: BertiniGeometric.bertini_theorem_projective

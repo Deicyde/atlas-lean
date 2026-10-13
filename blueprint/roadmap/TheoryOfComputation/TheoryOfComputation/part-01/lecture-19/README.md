@@ -1,3 +1,7 @@
+---
+article_id: af_a68752f4e54125c1b938be3d
+---
+
 # Lecture 19
 
 - [Definition (GG)](080-gg.md)

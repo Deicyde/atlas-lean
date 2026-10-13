@@ -1,4 +1,5 @@
 ---
+article_id: af_d2cfccb05aab620caffbec5f
 declaration: theorem
 origin: cited
 lean: IsVermaModule.exists_maximal_submodule_irreducible_quotient

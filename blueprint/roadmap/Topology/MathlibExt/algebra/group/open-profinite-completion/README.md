@@ -1,3 +1,7 @@
+---
+article_id: af_e47669b8bdbd6885b85e84ec
+---
+
 # Open Profinite Completion
 
 - [Index](index.md)

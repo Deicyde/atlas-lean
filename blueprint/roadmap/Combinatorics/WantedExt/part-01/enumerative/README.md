@@ -1,3 +1,7 @@
+---
+article_id: af_0e14d75e79c3aa8f6b6cd251
+---
+
 # Enumerative
 
 - [Partition](partition/README.md)

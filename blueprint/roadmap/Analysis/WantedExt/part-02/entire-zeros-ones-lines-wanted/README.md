@@ -1,3 +1,7 @@
+---
+article_id: af_4036584e87d73ece13fa1449
+---
+
 # Entire Zeros Ones Lines Wanted
 
 - [Is Complex Line](is-complex-line.md)

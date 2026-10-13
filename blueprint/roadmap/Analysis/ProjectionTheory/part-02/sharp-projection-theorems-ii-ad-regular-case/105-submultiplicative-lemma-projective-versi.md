@@ -1,4 +1,5 @@
 ---
+article_id: af_bfd411efc279b2410aeaac06
 declaration: theorem
 origin: cited
 lean: ProjectionTheory.R_AD_proj_submultiplicative

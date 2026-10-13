@@ -1,4 +1,5 @@
 ---
+article_id: af_00cbd1cdac84dfcb8e20fd25
 declaration: theorem
 origin: cited
 lean: almost_complex_structure_criterion

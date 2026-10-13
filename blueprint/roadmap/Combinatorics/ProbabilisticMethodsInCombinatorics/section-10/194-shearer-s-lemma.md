@@ -1,4 +1,5 @@
 ---
+article_id: af_6fb9b4449d5a927b1a08aff2
 declaration: theorem
 origin: cited
 lean: ShearerEntropy.shearer_entropy_inequality

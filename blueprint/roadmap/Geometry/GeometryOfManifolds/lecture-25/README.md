@@ -1,3 +1,7 @@
+---
+article_id: af_3888cf82bd73c11a94344d66
+---
+
 # Lecture 25
 
 - [Theorem 1 (Lecture 25, Section 2 (Seiberg-Witten Equations))](063-theorem-1.md)

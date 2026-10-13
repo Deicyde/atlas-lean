@@ -1,4 +1,5 @@
 ---
+article_id: af_70fb916baf8fd680a2f11d45
 declaration: def
 origin: cited
 lean: SatisfiesLocalGlobalPrinciple

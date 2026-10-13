@@ -1,4 +1,5 @@
 ---
+article_id: af_7a4f8911daae9ac11e9e98c3
 declaration: theorem
 origin: cited
 lean: donaldson_theorem3_axiom

@@ -1,4 +1,5 @@
 ---
+article_id: af_edb6c92ecd8f71526b6c50ad
 declaration: theorem
 origin: cited
 lean: PlancherelCompact.irreducible_rep_finiteDimensional

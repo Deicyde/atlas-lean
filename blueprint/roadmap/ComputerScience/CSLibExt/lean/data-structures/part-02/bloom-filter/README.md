@@ -1,3 +1,7 @@
+---
+article_id: af_16b2d1f384d8666be30b8b72
+---
+
 # Bloom Filter
 
 - [Bloom Filter](bloom-filter.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_bd0b655bd978eeb9379f12f5
+---
+
 # Part1 Ch5 Entry10b Euleriansymmetry
 
 - [Chapter5 Euler Even](chapter5-euler-even.md)

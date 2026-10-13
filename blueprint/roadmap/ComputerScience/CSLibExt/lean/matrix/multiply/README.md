@@ -1,3 +1,7 @@
+---
+article_id: af_ac6698748cc0901764f4a2c9
+---
+
 # Multiply
 
 - [Rectangular Matrix Accumulate](rectangular-matrix-accumulate.md)

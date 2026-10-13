@@ -1,4 +1,5 @@
 ---
+article_id: af_e54ba623f5ab3997e0891b65
 declaration: theorem
 origin: cited
 lean: TateCohomology.tateHnGen_subsingleton_of_free

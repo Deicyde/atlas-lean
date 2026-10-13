@@ -1,4 +1,5 @@
 ---
+article_id: af_940e4bd758ab225c3fbbc9eb
 declaration: theorem
 origin: cited
 lean: AffineBuilding.induced_automorphism_at_infinity

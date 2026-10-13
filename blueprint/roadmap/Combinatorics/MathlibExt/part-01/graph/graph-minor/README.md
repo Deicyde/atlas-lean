@@ -1,3 +1,7 @@
+---
+article_id: af_5e0cbeee760bbbfd4aa98ba3
+---
+
 # Graph Minor
 
 - [Fin Graph](fin-graph.md)

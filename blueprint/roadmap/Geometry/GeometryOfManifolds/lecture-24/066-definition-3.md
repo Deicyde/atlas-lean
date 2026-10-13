@@ -1,4 +1,5 @@
 ---
+article_id: af_ebfbac0e79e2129029e159c5
 declaration: structure
 origin: cited
 lean: DiracOperator

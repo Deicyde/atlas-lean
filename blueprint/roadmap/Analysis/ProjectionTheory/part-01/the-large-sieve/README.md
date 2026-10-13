@@ -1,3 +1,7 @@
+---
+article_id: af_ce080986fdc7d26cc26b2538
+---
+
 # The large sieve
 
 - [Lemma (Section: The large sieve, Subsection: Proof of Linnik's Large Sieve inequality)](023-lemma.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_7ee2a8e9f3411760cd9ea85a
 declaration: theorem
 origin: cited
 lean: LoomisWhitney.loomis_whitney_continuous

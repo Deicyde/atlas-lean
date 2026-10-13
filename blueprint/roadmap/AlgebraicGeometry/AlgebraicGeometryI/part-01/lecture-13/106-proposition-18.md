@@ -1,4 +1,5 @@
 ---
+article_id: af_b58892f778f2a1d9528413c8
 declaration: theorem
 origin: cited
 lean: Proposition18.pushforward_isQuasicoherent_of_isAffineHom

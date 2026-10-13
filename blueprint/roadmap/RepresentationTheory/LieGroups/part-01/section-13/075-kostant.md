@@ -1,4 +1,5 @@
 ---
+article_id: af_eb9d501a39e180362df9a514
 declaration: theorem
 origin: cited
 lean: kostant_Sg_free_over_invariants

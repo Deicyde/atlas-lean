@@ -1,4 +1,5 @@
 ---
+article_id: af_d802493b4b7f6de688429f15
 declaration: def
 origin: cited
 lean: BooleanFourier.noiseStability

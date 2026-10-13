@@ -1,4 +1,5 @@
 ---
+article_id: af_fae8c66d9cf1802e0b9243d0
 declaration: theorem
 origin: cited
 lean: CharacterTheory.decomposition_corollary

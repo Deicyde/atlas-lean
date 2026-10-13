@@ -1,3 +1,7 @@
+---
+article_id: af_eb990733a395ff9f6efcb837
+---
+
 # Multigraded Betti
 
 - [Zero Eval](zero-eval.md)

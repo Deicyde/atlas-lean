@@ -1,4 +1,5 @@
 ---
+article_id: af_a6e0678a0e13e9038eaa80c6
 declaration: theorem
 origin: cited
 lean: FLT.no_semistable_rational_15_isogeny

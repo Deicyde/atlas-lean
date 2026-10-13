@@ -1,4 +1,5 @@
 ---
+article_id: af_02d0564d522ace5655c307b9
 declaration: theorem
 origin: cited
 lean: adjunctionFormula

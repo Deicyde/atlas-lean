@@ -1,4 +1,5 @@
 ---
+article_id: af_d0cbe45802673ef84614c899
 declaration: theorem
 origin: cited
 lean: theorem_31_1

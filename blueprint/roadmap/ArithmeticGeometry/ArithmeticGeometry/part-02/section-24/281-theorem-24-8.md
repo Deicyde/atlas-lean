@@ -1,4 +1,5 @@
 ---
+article_id: af_028bb597a8bc5b895cd44b91
 declaration: def
 origin: cited
 lean: multiplicationByN_isogeny

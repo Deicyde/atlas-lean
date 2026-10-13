@@ -1,4 +1,5 @@
 ---
+article_id: af_63da8fff86f7060ab5a776b4
 declaration: theorem
 origin: cited
 lean: ModularFunctionField.hasse_q_expansion_principle

@@ -1,3 +1,7 @@
+---
+article_id: af_47c2124824d7f35b2b6db05b
+---
+
 # Sprague Grundy
 
 - [Impartial Game](impartial-game.md)

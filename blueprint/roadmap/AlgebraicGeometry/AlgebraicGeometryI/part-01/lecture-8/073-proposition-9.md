@@ -1,4 +1,5 @@
 ---
+article_id: af_8958df7a0eaab41d7561aa2b
 declaration: theorem
 origin: cited
 lean: prop9_separated_iff_affine_intersection_and_tensor_surjective

@@ -1,3 +1,7 @@
+---
+article_id: af_0effcec142b762b4f0469d49
+---
+
 # Section 18.6
 
 - [Definition 18.31](376-definition-18-31.md)

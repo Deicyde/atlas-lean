@@ -1,3 +1,7 @@
+---
+article_id: af_48a9453bbb1003c88424e4b4
+---
+
 # Pascal Matrix
 
 - [Pascal Entry](pascal-entry.md)

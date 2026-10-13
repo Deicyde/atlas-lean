@@ -1,4 +1,5 @@
 ---
+article_id: af_f110c797ed86ae3a6846e393
 declaration: theorem
 origin: cited
 lean: thm81_intersection_codim_bound

@@ -1,3 +1,7 @@
+---
+article_id: af_eec13751a4438084b396892a
+---
+
 # Chapter 1, Lecture 8
 
 - [Definition 8.1](025-definition-8-1.md)

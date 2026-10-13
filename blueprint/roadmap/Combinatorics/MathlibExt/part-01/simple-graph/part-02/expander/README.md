@@ -1,3 +1,7 @@
+---
+article_id: af_93e78a0fc66f0ee37c750a54
+---
+
 # Expander
 
 - [External Neighbor Set](external-neighbor-set.md)

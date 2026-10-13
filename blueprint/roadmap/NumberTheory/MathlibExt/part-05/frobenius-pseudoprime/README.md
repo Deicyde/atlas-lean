@@ -1,3 +1,7 @@
+---
+article_id: af_a351620cee75c239968cfabf
+---
+
 # Frobenius Pseudoprime
 
 - [Is Greatest Common Monic Divisor](is-greatest-common-monic-divisor.md)

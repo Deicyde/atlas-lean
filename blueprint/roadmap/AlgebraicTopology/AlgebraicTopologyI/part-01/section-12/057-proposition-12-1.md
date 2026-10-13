@@ -1,4 +1,5 @@
 ---
+article_id: af_4dfaf12ab15f701859203df7
 declaration: theorem
 origin: cited
 lean: BarycentricSubdivision.subdivision_homotopic_id

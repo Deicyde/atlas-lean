@@ -1,3 +1,7 @@
+---
+article_id: af_02fa1ab5121cd0168087da92
+---
+
 # Domination
 
 - [Is Dominating](is-dominating.md)

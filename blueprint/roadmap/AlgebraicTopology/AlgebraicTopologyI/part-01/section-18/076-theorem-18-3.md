@@ -1,4 +1,5 @@
 ---
+article_id: af_34ddea8c92dd9109ee75a32f
 declaration: theorem
 origin: cited
 lean: EulerCharacteristic.euler_characteristic_eq_alternating_sum_homology_ranks

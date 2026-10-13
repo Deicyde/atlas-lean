@@ -1,4 +1,5 @@
 ---
+article_id: af_ec18ca8545137e53cf0d0287
 declaration: def
 origin: cited
 lean: PadicElliptic.PadicFiltrationChain

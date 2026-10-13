@@ -1,4 +1,5 @@
 ---
+article_id: af_85e24cc9e89c4d06ab70c7a8
 declaration: def
 origin: cited
 lean: BeilinsonBernstein.corollary_30_20

@@ -1,3 +1,7 @@
+---
+article_id: af_7ebee3fc01385ee04242c240
+---
+
 # Manin Sequence
 
 - [Eq quadratic of recurrence](eq-quadratic-of-recurrence.md)

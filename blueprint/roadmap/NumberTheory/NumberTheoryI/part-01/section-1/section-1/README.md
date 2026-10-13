@@ -1,3 +1,7 @@
+---
+article_id: af_02250fc10f15d1cca90ab239
+---
+
 # Section 1
 
 - [Corollary 1.23](019-corollary-1-23.md)

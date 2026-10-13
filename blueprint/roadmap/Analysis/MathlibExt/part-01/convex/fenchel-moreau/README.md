@@ -1,3 +1,7 @@
+---
+article_id: af_97710d1059d09ffbcb751157
+---
+
 # Fenchel Moreau
 
 - [Fenchel Conj](fenchel-conj.md)

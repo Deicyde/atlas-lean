@@ -1,4 +1,5 @@
 ---
+article_id: af_2e3ce99bde25636cd7e7ee23
 declaration: theorem
 origin: cited
 lean: prop_20_9_iii_involutive

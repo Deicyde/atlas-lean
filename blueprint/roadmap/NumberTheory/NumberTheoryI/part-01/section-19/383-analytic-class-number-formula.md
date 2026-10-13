@@ -1,4 +1,5 @@
 ---
+article_id: af_da5c90ea88a7ecfc6194e87a
 declaration: theorem
 origin: cited
 lean: Section19.analytic_class_number_formula_explicit

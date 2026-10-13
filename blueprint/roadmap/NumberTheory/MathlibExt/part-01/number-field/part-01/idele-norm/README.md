@@ -1,3 +1,7 @@
+---
+article_id: af_6dbbd8108b391ce4e4342f9a
+---
+
 # Idele Norm
 
 - [Adelic Norm](adelic-norm.md)

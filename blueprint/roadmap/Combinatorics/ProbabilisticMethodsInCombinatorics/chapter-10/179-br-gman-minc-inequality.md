@@ -1,4 +1,5 @@
 ---
+article_id: af_e21d73fce3b57abe1edaa6e3
 declaration: theorem
 origin: cited
 lean: BregmanMinc.bregman_minc_inequality

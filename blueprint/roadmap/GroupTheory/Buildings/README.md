@@ -1,3 +1,7 @@
+---
+article_id: af_ca712cced8571a830b7e0f35
+---
+
 # Paul Garrett, Buildings and Classical Groups
 
 Statements selected from [Paul Garrett, Buildings and Classical Groups](../../../sources/v1/Buildings.md) by ATLAS v1, in source order.

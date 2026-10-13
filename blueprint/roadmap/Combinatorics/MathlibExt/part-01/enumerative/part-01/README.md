@@ -1,3 +1,7 @@
+---
+article_id: af_7a52b05aa625c54efc31819a
+---
+
 # Partition to Catalan Generating Function
 
 - [Partition](partition/README.md)

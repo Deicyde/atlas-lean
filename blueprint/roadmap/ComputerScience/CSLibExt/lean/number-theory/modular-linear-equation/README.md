@@ -1,3 +1,7 @@
+---
+article_id: af_076a768cf5d65d9e26a9e3ea
+---
+
 # Modular Linear Equation
 
 - [Modular Linear Equation Solver](modular-linear-equation-solver.md)

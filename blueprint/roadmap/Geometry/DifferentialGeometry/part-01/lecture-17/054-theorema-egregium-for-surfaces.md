@@ -1,4 +1,5 @@
 ---
+article_id: af_7a60a7311b0863621fdf9606
 declaration: theorem
 origin: cited
 lean: TheoremaEgregium.theorema_egregium

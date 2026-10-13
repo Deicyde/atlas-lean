@@ -1,3 +1,7 @@
+---
+article_id: af_e8e61926f4bb1b98d8a10cf0
+---
+
 # Section 3
 
 - [Theorem 3.1 (Dinur-Friedgut)](048-dinur-friedgut.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_2bf81e18766a9a8ccb33aaa7
+---
+
 # Lecture 1
 
 - [Definition 1 (Lecture 1, Section 2)](001-definition-1.md)

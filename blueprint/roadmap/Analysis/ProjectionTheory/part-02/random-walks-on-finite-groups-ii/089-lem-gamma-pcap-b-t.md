@@ -1,4 +1,5 @@
 ---
+article_id: af_d8e739904ea31eefaaf6cec2
 declaration: theorem
 origin: cited
 lean: SelbergExpansion.congruence_kernel_ball_count

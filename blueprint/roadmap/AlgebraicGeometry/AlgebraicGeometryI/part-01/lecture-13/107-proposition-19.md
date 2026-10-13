@@ -1,4 +1,5 @@
 ---
+article_id: af_b7e667d6eb49dab36c8c4b15
 declaration: theorem
 origin: cited
 lean: Prop19.pushforward_full_embedding_scheme

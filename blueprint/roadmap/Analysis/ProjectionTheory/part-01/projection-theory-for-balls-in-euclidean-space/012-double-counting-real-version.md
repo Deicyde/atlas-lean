@@ -1,4 +1,5 @@
 ---
+article_id: af_9f1f76e5d301b173b36d86a4
 declaration: theorem
 origin: cited
 lean: ProjectionTheory.double_counting_real

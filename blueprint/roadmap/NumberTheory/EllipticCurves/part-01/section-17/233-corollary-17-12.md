@@ -1,4 +1,5 @@
 ---
+article_id: af_7cbc139bf345cbb4e7458d74
 declaration: theorem
 origin: cited
 lean: ProperIdealInvertible.fractionalIdealNormZsqrtd_mul

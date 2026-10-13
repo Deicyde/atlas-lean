@@ -1,4 +1,5 @@
 ---
+article_id: af_659d79ba57f874349c75922a
 declaration: theorem
 origin: cited
 lean: SubgraphThreshold.subgraphThreshold_answer

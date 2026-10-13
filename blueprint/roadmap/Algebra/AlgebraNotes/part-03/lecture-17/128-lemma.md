@@ -1,4 +1,5 @@
 ---
+article_id: af_a8d694398dbb0fa9ac9040e8
 declaration: theorem
 origin: cited
 lean: classGroup_QSqrtNeg5_iso

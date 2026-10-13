@@ -1,3 +1,7 @@
+---
+article_id: af_f2a3b22635df3cc3584c08fe
+---
+
 # Dual
 
 - [Dual Submodule mul eq div](dual-submodule-mul-eq-div.md)

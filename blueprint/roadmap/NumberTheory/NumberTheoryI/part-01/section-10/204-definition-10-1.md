@@ -1,4 +1,5 @@
 ---
+article_id: af_b0f9184774aea1b98b281ebf
 declaration: theorem
 origin: cited
 lean: NormedSpaceNorm.nullity

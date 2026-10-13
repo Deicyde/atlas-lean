@@ -1,3 +1,7 @@
+---
+article_id: af_daf78332c9cfed8e7fd24f68
+---
+
 # Hessian
 
 - [Hessian Matrix](hessian-matrix.md)

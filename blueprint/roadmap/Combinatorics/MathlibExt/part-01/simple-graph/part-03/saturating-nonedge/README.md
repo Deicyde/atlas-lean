@@ -1,3 +1,7 @@
+---
+article_id: af_1cbd3c0b633bc15fc6b5a3e0
+---
+
 # Saturating Nonedge
 
 - [Is Saturating Nonedge](is-saturating-nonedge.md)

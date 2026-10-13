@@ -1,3 +1,7 @@
+---
+article_id: af_26a2a4fd5cd098f13438619c
+---
+
 # April 6
 
 - [Theorem (Holder's inequality for $L^p$ spaces)](032-holder-s-inequality-for-l-p-spaces.md)

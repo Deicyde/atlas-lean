@@ -1,4 +1,5 @@
 ---
+article_id: af_2336b4615d5cf4f7e4304ba6
 declaration: def
 origin: cited
 lean: ProductsInCohomology.cupProduct

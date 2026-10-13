@@ -1,4 +1,5 @@
 ---
+article_id: af_8c67d7959c16c03916ad4f6a
 declaration: def
 origin: cited
 lean: GroupExponent.groupExponent

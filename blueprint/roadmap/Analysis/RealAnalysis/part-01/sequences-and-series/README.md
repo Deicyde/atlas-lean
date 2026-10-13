@@ -1,3 +1,7 @@
+---
+article_id: af_4783f3b1fef786f9d0b4a00a
+---
+
 # Sequences and Series
 
 - [Definition (Sequences and Series, Sequences and Limits) (1)](017-definition.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_0b6cf8931d663f3c99c6e9fc
+---
+
 # Falconer Distance Set Wanted
 
 - [Falconer1985 General Sufficiency](falconer1985-general-sufficiency.md)

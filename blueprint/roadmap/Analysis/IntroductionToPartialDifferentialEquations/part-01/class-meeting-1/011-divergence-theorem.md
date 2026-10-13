@@ -1,4 +1,5 @@
 ---
+article_id: af_18d52e087c3871175a9a575f
 declaration: theorem
 origin: cited
 lean: VectorCalculus.divergence_theorem

@@ -1,4 +1,5 @@
 ---
+article_id: af_d093b2b3ea52978a0cac8754
 declaration: theorem
 origin: cited
 lean: HyperplaneArrangement.wall_of_C_separates_distinct_chambers

@@ -1,4 +1,5 @@
 ---
+article_id: af_8321e3e9ac4530f4bfe149a0
 declaration: theorem
 origin: cited
 lean: norm_eq_prod_embeddings'

@@ -1,3 +1,7 @@
+---
+article_id: af_a228595b4933d0d78f2b9bfb
+---
+
 # Chapter 1, Section 3
 
 - [Definition 3.1](008-definition-3-1.md)

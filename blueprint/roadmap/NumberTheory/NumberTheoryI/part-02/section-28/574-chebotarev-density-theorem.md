@@ -1,4 +1,5 @@
 ---
+article_id: af_1e083a614a735719a72ff765
 declaration: theorem
 origin: cited
 lean: theorem_28_9_chebotarev

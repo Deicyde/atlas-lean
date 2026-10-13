@@ -1,3 +1,7 @@
+---
+article_id: af_89b565abde285eab1b423778
+---
+
 # Lecture 30
 
 - [Definition (Transition probability)](083-transition-probability.md)

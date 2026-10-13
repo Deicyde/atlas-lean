@@ -1,4 +1,5 @@
 ---
+article_id: af_84d7a5e1b02b16c243cd3bdf
 declaration: theorem
 origin: cited
 lean: coherent_sheaf_quotient_of_twisted_structure_sheaf

@@ -1,3 +1,7 @@
+---
+article_id: af_7fba1452dcfad75fad76ea48
+---
+
 # April 8
 
 - [Theorem (Continuity of the inner product)](035-continuity-of-the-inner-product.md)

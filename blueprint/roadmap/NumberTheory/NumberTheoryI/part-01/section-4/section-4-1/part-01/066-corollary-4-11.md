@@ -1,4 +1,5 @@
 ---
+article_id: af_d06cb3d3eabd099657ce7eb6
 declaration: theorem
 origin: cited
 lean: separable_degree_mul_tower

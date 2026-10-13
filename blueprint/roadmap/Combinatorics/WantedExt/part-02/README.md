@@ -1,3 +1,7 @@
+---
+article_id: af_2cd49ff5cf2d6e57ba8ae0a0
+---
+
 # Erdos Sidon Isolated Sums Wanted to Pseudorandom Grassmann Wanted
 
 - [Erdos Sidon Isolated Sums Wanted](erdos-sidon-isolated-sums-wanted/README.md)

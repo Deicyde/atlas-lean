@@ -1,3 +1,7 @@
+---
+article_id: af_3b96315143e29041dcb3ce90
+---
+
 # Complexity
 
 - [Bitstring Encoding](bitstring-encoding.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_4f68122084159a1206f40762
 declaration: theorem
 origin: cited
 lean: prop_16_4_verma_projective

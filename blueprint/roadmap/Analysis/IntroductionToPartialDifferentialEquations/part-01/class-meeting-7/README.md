@@ -1,3 +1,7 @@
+---
+article_id: af_4347d39a2f81824ecb913a05
+---
+
 # Class Meeting 7
 
 - [Definition 1.0.1 (Class Meeting #7, Section 1 (The Fundamental Solution for $\Delta$ in $\mathbb{R}^{n}$))](032-definition-1-0-1.md)

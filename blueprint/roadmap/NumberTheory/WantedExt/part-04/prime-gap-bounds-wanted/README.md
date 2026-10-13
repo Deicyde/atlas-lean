@@ -1,3 +1,7 @@
+---
+article_id: af_5aded4051294a23c68f8b4f7
+---
+
 # Prime Gap Bounds Wanted
 
 - [Zhang2014 Upper Bound](zhang2014-upper-bound.md)

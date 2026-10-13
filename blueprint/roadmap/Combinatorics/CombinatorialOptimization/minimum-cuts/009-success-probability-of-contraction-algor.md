@@ -1,4 +1,5 @@
 ---
+article_id: af_bfcc4dff757513180fc84a5e
 declaration: theorem
 origin: cited
 lean: MinCut.contraction_algorithm_success_prob

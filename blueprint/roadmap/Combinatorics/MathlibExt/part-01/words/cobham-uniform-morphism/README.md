@@ -1,3 +1,7 @@
+---
+article_id: af_f482fbd923878d185e555cf3
+---
+
 # Cobham Uniform Morphism
 
 - [Base Word Value LSD](base-word-value-lsd.md)

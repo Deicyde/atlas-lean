@@ -1,4 +1,5 @@
 ---
+article_id: af_949daa66d3d022e5e9c8660f
 declaration: theorem
 origin: cited
 lean: IsogenyEndRing_free_rank_1_2_or_4

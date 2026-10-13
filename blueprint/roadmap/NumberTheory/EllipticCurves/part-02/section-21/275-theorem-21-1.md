@@ -1,4 +1,5 @@
 ---
+article_id: af_40b9f4b69697dc4417f25901
 declaration: def
 origin: cited
 lean: GalToClassGroup_mulEquiv

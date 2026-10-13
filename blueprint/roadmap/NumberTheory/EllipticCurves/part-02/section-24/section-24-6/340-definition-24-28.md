@@ -1,4 +1,5 @@
 ---
+article_id: af_810093410f0b4f4dd2f4dc8d
 declaration: def
 origin: cited
 lean: EllipticCurveLFunction.LFunction

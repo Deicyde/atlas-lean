@@ -1,4 +1,5 @@
 ---
+article_id: af_ed078b8a3908ba9dfd164e1b
 declaration: theorem
 origin: cited
 lean: Lec15PicardDivisorClass.prop24_principal_divisor_degree_zero

@@ -1,3 +1,7 @@
+---
+article_id: af_76cf0e361dddcebf1477df1f
+---
+
 # Chapter 1, Lecture 9
 
 - [Theorem 9.1 (Hopf Umlaufsatz)](031-hopf-umlaufsatz.md)

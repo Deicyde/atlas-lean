@@ -1,3 +1,7 @@
+---
+article_id: af_ee7487313a3e6a653454cac2
+---
+
 # Section 1
 
 - [Definition 1.1 (Noise Stability)](052-noise-stability.md)

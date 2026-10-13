@@ -1,4 +1,5 @@
 ---
+article_id: af_557c8c097c07603bc1340b5f
 declaration: theorem
 origin: cited
 lean: sw_moduli_space_theorem1

@@ -1,4 +1,5 @@
 ---
+article_id: af_78c29d751ac7f52bc36b081d
 declaration: theorem
 origin: cited
 lean: corollary_14_3_dim_eq

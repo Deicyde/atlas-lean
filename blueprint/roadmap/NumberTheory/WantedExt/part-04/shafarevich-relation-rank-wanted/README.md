@@ -1,3 +1,7 @@
+---
+article_id: af_46c9580530f9531ab7acb388
+---
+
 # Shafarevich Relation Rank Wanted
 
 - [Is Everywhere Unramified](is-everywhere-unramified.md)

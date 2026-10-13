@@ -1,3 +1,7 @@
+---
+article_id: af_1d6301e9826167c96830906d
+---
+
 # Part1 Ch8 Entry11 Qgammafunctional
 
 - [Chapter8 Digamma eq digamma](chapter8-digamma-eq-digamma.md)

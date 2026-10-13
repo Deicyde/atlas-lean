@@ -1,3 +1,7 @@
+---
+article_id: af_21c2ad23a55b1566d8fc7d42
+---
+
 # Elliptic to Gauss Hypergeometric Summation Klamkin
 
 - [Elliptic](elliptic/README.md)

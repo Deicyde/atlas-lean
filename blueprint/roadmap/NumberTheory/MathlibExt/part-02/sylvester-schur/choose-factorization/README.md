@@ -1,3 +1,7 @@
+---
+article_id: af_dc7bfdfdeb161015d118a0bf
+---
+
 # Choose Factorization
 
 - [Choose eq prod small prime powers of no large](choose-eq-prod-small-prime-powers-of-no.md)

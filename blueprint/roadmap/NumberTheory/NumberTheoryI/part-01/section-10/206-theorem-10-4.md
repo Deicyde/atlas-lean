@@ -1,4 +1,5 @@
 ---
+article_id: af_59d4c65fb27da51c98ab87c7
 declaration: theorem
 origin: cited
 lean: AbsoluteValueExtension.spectralNorm_unique_complete_integralClosure_isDVR

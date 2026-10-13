@@ -1,3 +1,7 @@
+---
+article_id: af_703696a7a18c0481a9e0630e
+---
+
 # Series
 
 - [Definition (Series) (1)](032-definition.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_552d72acfa5aa88cbe29bff1
+---
+
 # Lattice Point Enumerator
 
 - [Std Lattice](std-lattice.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_7ecc8c276b1ae58aa2786f28
+---
+
 # Part 1 of 2
 
 - [Chapter5 Entry30 Local Coeff](chapter5-entry30-local-coeff.md)

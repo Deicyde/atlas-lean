@@ -1,4 +1,5 @@
 ---
+article_id: af_ff65222d93769cae16ac547a
 declaration: def
 origin: cited
 lean: CategoryTheory.distinguishedObj

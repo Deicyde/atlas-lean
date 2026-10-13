@@ -1,4 +1,5 @@
 ---
+article_id: af_e1da5b56bee57ac21f9c9dc4
 declaration: theorem
 origin: cited
 lean: RiemannStieltjes.integration_by_parts

@@ -1,3 +1,7 @@
+---
+article_id: af_e5588b43c59a0623f1c4a4a7
+---
+
 # Section 5
 
 - [Proposition (Section 5.3)](014-proposition.md)

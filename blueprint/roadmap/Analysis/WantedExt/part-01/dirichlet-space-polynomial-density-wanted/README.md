@@ -1,3 +1,7 @@
+---
+article_id: af_8fe76eecd359cf20e0a471bc
+---
+
 # Dirichlet Space Polynomial Density Wanted
 
 - [Dirichlet Space](dirichlet-space.md)

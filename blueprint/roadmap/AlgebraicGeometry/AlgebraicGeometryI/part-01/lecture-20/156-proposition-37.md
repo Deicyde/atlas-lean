@@ -1,4 +1,5 @@
 ---
+article_id: af_d8b09f7dce2a2ec1e9188e26
 declaration: theorem
 origin: cited
 lean: proposition_37_tangent_space

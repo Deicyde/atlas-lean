@@ -1,4 +1,5 @@
 ---
+article_id: af_76b9ceba9ab6625b79219f91
 declaration: theorem
 origin: cited
 lean: fractionalIdealNorm_mul

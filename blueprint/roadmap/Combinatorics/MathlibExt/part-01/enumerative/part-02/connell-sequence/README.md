@@ -1,3 +1,7 @@
+---
+article_id: af_a4ee95dfec3b21be57a7942f
+---
+
 # Connell Sequence
 
 - [Connell Row Length](connell-row-length.md)

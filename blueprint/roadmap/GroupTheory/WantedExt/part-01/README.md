@@ -1,3 +1,7 @@
+---
+article_id: af_751315896035c56419670088
+---
+
 # Absolute Profinite Rigidity Wanted to Gorenstein Walter Wanted
 
 - [Absolute Profinite Rigidity Wanted](absolute-profinite-rigidity-wanted/README.md)

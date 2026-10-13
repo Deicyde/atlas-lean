@@ -1,4 +1,5 @@
 ---
+article_id: af_a77cc0bb5da6d5567817ae9b
 declaration: theorem
 origin: cited
 lean: harish_chandra_globalization_exists

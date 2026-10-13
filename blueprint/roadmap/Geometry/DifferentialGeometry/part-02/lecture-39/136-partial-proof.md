@@ -1,4 +1,5 @@
 ---
+article_id: af_85ae409ffc6abb1d2645b6b3
 declaration: theorem
 origin: cited
 lean: SchwarzPick.hyperbolic_dist_formula

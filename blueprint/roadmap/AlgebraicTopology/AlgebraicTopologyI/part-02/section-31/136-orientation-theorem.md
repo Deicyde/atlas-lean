@@ -1,4 +1,5 @@
 ---
+article_id: af_a403506c0c912e8fe16c0b68
 declaration: def
 origin: cited
 lean: OrientationHomology.orientation_theorem_singular_iso

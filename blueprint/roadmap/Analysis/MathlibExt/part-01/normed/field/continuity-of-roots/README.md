@@ -1,3 +1,7 @@
+---
+article_id: af_a4a651ef4e51feec20137627
+---
+
 # Continuity Of Roots
 
 - [Exists is Closest Conjugate root of l1 Norm sub lt](exists-is-closest-conjugate-root-of-l1-n.md)

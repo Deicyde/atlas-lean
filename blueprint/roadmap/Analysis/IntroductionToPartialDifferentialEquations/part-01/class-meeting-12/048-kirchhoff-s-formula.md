@@ -1,4 +1,5 @@
 ---
+article_id: af_8dc604e514e536c94bfc4ebe
 declaration: theorem
 origin: cited
 lean: WaveEquation3D.kirchhoff_formula

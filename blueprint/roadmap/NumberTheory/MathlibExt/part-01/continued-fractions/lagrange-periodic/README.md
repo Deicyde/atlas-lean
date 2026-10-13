@@ -1,3 +1,7 @@
+---
+article_id: af_2bee0c92dc13cca3d88b3538
+---
+
 # Lagrange Periodic
 
 - [Continued Fraction Eventually Periodic](continued-fraction-eventually-periodic.md)

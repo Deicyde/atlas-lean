@@ -1,3 +1,7 @@
+---
+article_id: af_14efeec8dabe691cdca1847b
+---
+
 # Union Closed Orderly
 
 - [Bin Rep](bin-rep.md)

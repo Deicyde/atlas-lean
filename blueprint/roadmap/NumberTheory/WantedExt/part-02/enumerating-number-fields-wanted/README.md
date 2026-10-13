@@ -1,3 +1,7 @@
+---
+article_id: af_36574dfc750c19c1ad44008c
+---
+
 # Enumerating Number Fields Wanted
 
 - [Number Field Of Degree](number-field-of-degree.md)

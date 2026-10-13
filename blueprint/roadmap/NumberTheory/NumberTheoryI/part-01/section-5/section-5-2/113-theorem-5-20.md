@@ -1,4 +1,5 @@
 ---
+article_id: af_897e268ce0d2dae1f32b0e94
 declaration: theorem
 origin: cited
 lean: thm_5_20_nondegenerate_iff_separable

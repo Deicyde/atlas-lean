@@ -1,4 +1,5 @@
 ---
+article_id: af_57d860ab7b850492bbcd1954
 declaration: abbrev
 origin: cited
 lean: IsTopologicalAddGroupDef

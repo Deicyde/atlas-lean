@@ -1,4 +1,5 @@
 ---
+article_id: af_c247b5ee7a8e111944042865
 declaration: theorem
 origin: cited
 lean: AffineBuilding.chamber_sector_common_apartment_thm

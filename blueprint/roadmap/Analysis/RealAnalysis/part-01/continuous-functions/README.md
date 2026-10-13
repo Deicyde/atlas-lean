@@ -1,3 +1,7 @@
+---
+article_id: af_94e65d39bfa86684f093f3c9
+---
+
 # Continuous Functions
 
 - [Theorem (Continuous Functions) (1)](039-theorem.md)

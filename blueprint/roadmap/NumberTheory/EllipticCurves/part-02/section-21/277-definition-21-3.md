@@ -1,4 +1,5 @@
 ---
+article_id: af_f69c3eb856170cec6145391d
 declaration: abbrev
 origin: cited
 lean: RingClassField.RingClassFieldType

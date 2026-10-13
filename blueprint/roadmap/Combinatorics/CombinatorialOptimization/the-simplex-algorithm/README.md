@@ -1,3 +1,7 @@
+---
+article_id: af_36f6d2455e9265e905f34830
+---
+
 # The Simplex Algorithm
 
 - [Lemma 1 (Farkas)](032-farkas.md)

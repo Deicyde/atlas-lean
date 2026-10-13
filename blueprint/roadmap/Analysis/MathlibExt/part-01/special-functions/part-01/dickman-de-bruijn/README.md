@@ -1,3 +1,7 @@
+---
+article_id: af_1f7beb4b0dc65428db466d22
+---
+
 # Dickman De Bruijn
 
 - [Is Dickman De Bruijn](is-dickman-de-bruijn.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_6efa5995c7b52873a6f9c008
+---
+
 # MIT 18.966 Geometry of Manifolds (Spring 2007)
 
 Statements selected from [MIT 18.966 Geometry of Manifolds (Spring 2007)](../../../sources/v1/GeometryOfManifolds.md) by ATLAS v1, in source order.

@@ -1,4 +1,5 @@
 ---
+article_id: af_19a8fec449829ca346d621a4
 declaration: def
 origin: cited
 lean: cechSingular_mayerVietoris_ladder

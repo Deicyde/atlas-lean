@@ -1,3 +1,7 @@
+---
+article_id: af_d76904eb33c10d64cebe055f
+---
+
 # Arithmetic Circuit
 
 - [Arithmetic Operand](arithmetic-operand.md)

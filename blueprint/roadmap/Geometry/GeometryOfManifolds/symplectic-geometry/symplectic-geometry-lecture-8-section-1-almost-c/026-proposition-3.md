@@ -1,4 +1,5 @@
 ---
+article_id: af_d74461c1b91acb6e15440f7a
 declaration: theorem
 origin: cited
 lean: SymplecticLinearAlgebra.compatible_forms_convex_linear

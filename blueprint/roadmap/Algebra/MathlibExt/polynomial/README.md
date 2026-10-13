@@ -1,3 +1,7 @@
+---
+article_id: af_74cd9464950bca3c6942edc1
+---
+
 # Polynomial
 
 - [Bessel Polynomial](bessel-polynomial/README.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_51d225694a8d38b913d6c8f5
 declaration: theorem
 origin: cited
 lean: IndependentTransversal.independent_transversal_exists

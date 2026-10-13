@@ -1,3 +1,7 @@
+---
+article_id: af_751548664b6f33322dfd346b
+---
+
 # Maximal Ideal Graded Piece
 
 - [Maximal Ideal Graded Piece](maximal-ideal-graded-piece.md)

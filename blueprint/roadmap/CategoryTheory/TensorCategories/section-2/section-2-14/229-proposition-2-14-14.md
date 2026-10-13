@@ -1,4 +1,5 @@
 ---
+article_id: af_70ace73b1b1a53c89fe7e9a7
 declaration: theorem
 origin: cited
 lean: CategoryTheory.proposition_2_14_14_basic_identity

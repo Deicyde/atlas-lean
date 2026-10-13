@@ -1,4 +1,5 @@
 ---
+article_id: af_55197cbd2018c4b4d2f04043
 declaration: theorem
 origin: cited
 lean: SzemerediTrotter.szemeredi_trotter

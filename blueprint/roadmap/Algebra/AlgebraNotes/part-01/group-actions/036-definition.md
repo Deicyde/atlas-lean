@@ -1,4 +1,5 @@
 ---
+article_id: af_70c32b1a767bde3946d62527
 declaration: def
 origin: cited
 lean: GroupActions.stabilizerSet

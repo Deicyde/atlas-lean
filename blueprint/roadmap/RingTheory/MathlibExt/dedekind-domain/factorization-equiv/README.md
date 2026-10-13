@@ -1,3 +1,7 @@
+---
+article_id: af_1c905929df76dc6aa2033851
+---
+
 # Factorization Equiv
 
 - [Units Support Finset](units-support-finset.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_10a317a705ff01adaf15fe97
 declaration: theorem
 origin: cited
 lean: lagrangian_intersection_c1_close

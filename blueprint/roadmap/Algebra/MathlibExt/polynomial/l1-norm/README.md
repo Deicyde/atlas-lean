@@ -1,3 +1,7 @@
+---
+article_id: af_b5b13246819dac6b57b703df
+---
+
 # L1 Norm
 
 - [L1 Norm](l1-norm.md)

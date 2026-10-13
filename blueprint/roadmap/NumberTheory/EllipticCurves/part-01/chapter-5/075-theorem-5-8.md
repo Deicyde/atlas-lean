@@ -1,4 +1,5 @@
 ---
+article_id: af_215636bebee066ccace929e3
 declaration: theorem
 origin: cited
 lean: Isogeny.isogeny_kernel_card_eq_sep_degree

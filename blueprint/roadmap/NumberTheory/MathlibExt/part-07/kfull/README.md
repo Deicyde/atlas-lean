@@ -1,3 +1,7 @@
+---
+article_id: af_a691f4d3c0e336e2a64dc864
+---
+
 # KFull
 
 - [Is KFull](is-kfull.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_a8b7867d13417579c42f781b
 declaration: theorem
 origin: cited
 lean: PostCorrespondence.PCP_not_decidable

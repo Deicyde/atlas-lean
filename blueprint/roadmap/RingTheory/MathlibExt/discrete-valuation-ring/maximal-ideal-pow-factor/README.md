@@ -1,3 +1,7 @@
+---
+article_id: af_e624e0d93a07f6deb21e759f
+---
+
 # Maximal Ideal Pow Factor
 
 - [Residue Field Maximal Ideal Pow Quotient](residue-field-maximal-ideal-pow-quotient.md)

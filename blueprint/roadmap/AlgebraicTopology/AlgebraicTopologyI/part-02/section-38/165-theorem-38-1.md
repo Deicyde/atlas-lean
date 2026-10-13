@@ -1,4 +1,5 @@
 ---
+article_id: af_8c92fc9b4ff3761746c79309
 declaration: def
 origin: cited
 lean: PoincareDuality.capProduct_cechCohomology_iso

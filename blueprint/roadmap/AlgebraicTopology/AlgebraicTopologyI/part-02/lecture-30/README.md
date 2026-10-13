@@ -1,3 +1,7 @@
+---
+article_id: af_178c36f15dc6a24609583ff8
+---
+
 # Lecture 30
 
 - [Lemma 30.5](124-lemma-30-5.md)

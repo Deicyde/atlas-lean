@@ -1,4 +1,5 @@
 ---
+article_id: af_bdff087a230fed38e568a317
 declaration: theorem
 origin: cited
 lean: Elliptic_Curves.theorem_21_5

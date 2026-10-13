@@ -1,4 +1,5 @@
 ---
+article_id: af_57defb53af7f1d8888b916af
 declaration: theorem
 origin: cited
 lean: ComplexLattice.theorem_16_4

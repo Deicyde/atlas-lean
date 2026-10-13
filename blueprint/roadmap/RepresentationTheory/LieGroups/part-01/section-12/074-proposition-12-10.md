@@ -1,4 +1,5 @@
 ---
+article_id: af_7de31d2267059b022a522045
 declaration: theorem
 origin: cited
 lean: prop_12_10_free_module

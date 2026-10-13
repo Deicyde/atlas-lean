@@ -1,3 +1,7 @@
+---
+article_id: af_5e0a21ffc4e62784f62bbb97
+---
+
 # Quantile
 
 - [Cdf Quantile](cdf-quantile.md)

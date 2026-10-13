@@ -1,4 +1,5 @@
 ---
+article_id: af_7a9ccb1876f5db4dddb7f4aa
 declaration: theorem
 origin: cited
 lean: SmoothProjectiveCurve.rationalMap_extends_to_morphism

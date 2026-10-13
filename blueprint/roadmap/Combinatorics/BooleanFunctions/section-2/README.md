@@ -1,3 +1,7 @@
+---
+article_id: af_77bade6b021fa7d57efa8edf
+---
+
 # Section 2
 
 - [Theorem 2.1 (Section 2.1, Set up (Arrow's impossibility theorem))](056-theorem-2-1.md)

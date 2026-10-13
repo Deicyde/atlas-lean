@@ -1,4 +1,5 @@
 ---
+article_id: af_95b102c11230f45c71c92cd6
 declaration: theorem
 origin: cited
 lean: ColorabilityThreshold.sharp_threshold_k_colorability

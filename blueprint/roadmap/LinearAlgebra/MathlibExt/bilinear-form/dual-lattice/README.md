@@ -1,3 +1,7 @@
+---
+article_id: af_fc66cd3a8a27dac4dd967ca9
+---
+
 # Dual Lattice
 
 - [Is Localized Module subtype of span eq top](is-localized-module-subtype-of-span-eq-t.md)

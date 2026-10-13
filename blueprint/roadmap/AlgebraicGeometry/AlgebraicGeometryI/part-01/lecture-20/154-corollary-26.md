@@ -1,4 +1,5 @@
 ---
+article_id: af_2da88ed3b72ade1548f6712b
 declaration: theorem
 origin: cited
 lean: SmoothClosedSubvariety.corollary26_adjunction_formula

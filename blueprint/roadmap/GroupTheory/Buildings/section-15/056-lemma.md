@@ -1,4 +1,5 @@
 ---
+article_id: af_ebd3c2ef89d5de47a0cb214f
 declaration: theorem
 origin: cited
 lean: strong_isometry_one_step_extension

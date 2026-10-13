@@ -1,3 +1,7 @@
+---
+article_id: af_fc75a4730ae7fcfc3fe99567
+---
+
 # Burnside Paqb Reduction
 
 - [Conj Class](conj-class.md)

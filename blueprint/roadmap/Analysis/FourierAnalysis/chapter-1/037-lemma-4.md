@@ -1,4 +1,5 @@
 ---
+article_id: af_114feee93c93b205c23989b8
 declaration: theorem
 origin: cited
 lean: GradientIntegrability.gradient_integral_ae_finite

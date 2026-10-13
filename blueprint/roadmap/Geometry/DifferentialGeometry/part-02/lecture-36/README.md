@@ -1,3 +1,7 @@
+---
+article_id: af_6aaa0b78f6f7dd8c4649d189
+---
+
 # Lecture 36
 
 - [Lemma 36.1](121-lemma-36-1.md)

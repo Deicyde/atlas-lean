@@ -1,4 +1,5 @@
 ---
+article_id: af_17c41617565bb5ff4c81236f
 declaration: theorem
 origin: cited
 statement: formalized

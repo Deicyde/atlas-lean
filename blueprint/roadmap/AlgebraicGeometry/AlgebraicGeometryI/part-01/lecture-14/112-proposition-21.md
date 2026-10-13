@@ -1,4 +1,5 @@
 ---
+article_id: af_252126c80465dbe5fc919fe5
 declaration: def
 origin: cited
 lean: serre_equivalence_qcoh

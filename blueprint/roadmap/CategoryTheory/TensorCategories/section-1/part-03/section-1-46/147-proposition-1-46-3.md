@@ -1,4 +1,5 @@
 ---
+article_id: af_a305f4180e76e5b368177d25
 declaration: theorem
 origin: cited
 lean: Deligne.Proposition_1_46_3

@@ -1,4 +1,5 @@
 ---
+article_id: af_d492f3d36f873a44556302ef
 declaration: theorem
 origin: cited
 lean: GaussianStability.sheppard_formula_arccos

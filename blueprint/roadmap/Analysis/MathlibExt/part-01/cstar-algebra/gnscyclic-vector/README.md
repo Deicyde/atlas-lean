@@ -1,3 +1,7 @@
+---
+article_id: af_a85c53fcf4ce286424d76ae4
+---
+
 # GNSCyclic Vector
 
 - [Exists gns cyclic vector](exists-gns-cyclic-vector.md)

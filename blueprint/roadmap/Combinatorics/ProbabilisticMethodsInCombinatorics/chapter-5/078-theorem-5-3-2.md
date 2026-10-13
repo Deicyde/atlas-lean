@@ -1,4 +1,5 @@
 ---
+article_id: af_5809bb1087e1bda85bbe87ab
 declaration: theorem
 origin: cited
 lean: Hajos.hajos_conjecture_counterexample

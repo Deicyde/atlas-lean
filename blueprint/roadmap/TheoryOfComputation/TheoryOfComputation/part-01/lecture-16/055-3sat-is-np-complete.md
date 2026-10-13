@@ -1,4 +1,5 @@
 ---
+article_id: af_838a28f9c74ed44a54677fbc
 declaration: theorem
 origin: cited
 lean: ThreeSATComplete.threeSAT_is_NP_complete

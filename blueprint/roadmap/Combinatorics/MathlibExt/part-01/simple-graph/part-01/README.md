@@ -1,3 +1,7 @@
+---
+article_id: af_0831816659da0baffa7c8916
+---
+
 # Coloring to Domination
 
 - [Coloring](coloring/README.md)

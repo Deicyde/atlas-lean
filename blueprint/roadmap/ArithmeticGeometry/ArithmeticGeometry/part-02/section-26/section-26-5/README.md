@@ -1,3 +1,7 @@
+---
+article_id: af_8307ad79ad97871aaa9d2307
+---
+
 # Section 26.5
 
 - [Definition 26.15](324-definition-26-15.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_68af0711746d68c198b861e9
 declaration: theorem
 origin: cited
 lean: sts_count_upper_bound

@@ -1,4 +1,5 @@
 ---
+article_id: af_2c2ab7ff9ceb378fb249945a
 declaration: theorem
 origin: cited
 lean: AffineBuildingSLVStrong.slv_strongly_transitive_maximal_apartment_system

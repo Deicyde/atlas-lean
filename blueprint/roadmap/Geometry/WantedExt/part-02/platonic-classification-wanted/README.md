@@ -1,3 +1,7 @@
+---
+article_id: af_90bbbe5a478263b3a47f7d01
+---
+
 # Platonic Classification Wanted
 
 - [E](e.md)

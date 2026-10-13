@@ -1,3 +1,7 @@
+---
+article_id: af_69fcb89d7548b0e3431ca78e
+---
+
 # Polynomial Freiman Ruzsa Binary Wanted
 
 - [Conjecture](conjecture.md)

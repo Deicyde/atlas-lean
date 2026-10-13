@@ -1,4 +1,5 @@
 ---
+article_id: af_30dff9c239b27a3996526f60
 declaration: theorem
 origin: cited
 lean: RayClassField.proposition_21_12_polar_eq_dirichlet

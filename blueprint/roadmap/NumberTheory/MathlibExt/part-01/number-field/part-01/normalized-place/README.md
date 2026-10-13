@@ -1,3 +1,7 @@
+---
+article_id: af_f6ce4754df56ccb378223bb7
+---
+
 # Normalized Place
 
 - [Normalized Absolute Value](normalized-absolute-value.md)

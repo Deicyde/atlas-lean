@@ -1,3 +1,7 @@
+---
+article_id: af_63aa421def40b4e8edafc126
+---
+
 # Simple Graph
 
 - [Coloring to Domination](part-01/README.md)

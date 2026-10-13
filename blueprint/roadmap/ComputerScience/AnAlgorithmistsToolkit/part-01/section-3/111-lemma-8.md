@@ -1,4 +1,5 @@
 ---
+article_id: af_e72fb929cdafaff5d981a1a7
 declaration: theorem
 origin: cited
 lean: ConvexGeometry.lemma8_cone_construction

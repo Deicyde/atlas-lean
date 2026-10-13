@@ -1,4 +1,5 @@
 ---
+article_id: af_4c47f3d665b3dcbc0a0e995d
 declaration: theorem
 origin: cited
 lean: BooleanFourier.invariance_principle

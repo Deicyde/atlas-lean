@@ -1,3 +1,7 @@
+---
+article_id: af_5ea1d3d80cd02bc72bc5b964
+---
+
 # Quickselect
 
 - [Quickselect](quickselect.md)

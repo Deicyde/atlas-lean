@@ -1,3 +1,7 @@
+---
+article_id: af_12e21bfa8752d7ebdb68af90
+---
+
 # Part 1 of 3
 
 - [Van Emde Boas](van-emde-boas.md)

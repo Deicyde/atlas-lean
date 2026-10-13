@@ -1,4 +1,5 @@
 ---
+article_id: af_ad29613ecb0541e1c9ddb365
 declaration: theorem
 origin: cited
 lean: injective_hull_simple_is_dual_projective

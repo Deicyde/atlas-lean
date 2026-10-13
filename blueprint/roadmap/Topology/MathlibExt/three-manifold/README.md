@@ -1,3 +1,7 @@
+---
+article_id: af_d6c62a4666c2a6786133a71f
+---
+
 # Three Manifold
 
 - [Is Three Manifold](is-three-manifold.md)

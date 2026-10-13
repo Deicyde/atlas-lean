@@ -1,4 +1,5 @@
 ---
+article_id: af_739e8e4f6e807d8de91004a5
 declaration: theorem
 origin: cited
 lean: CosetDensity.proposition_22_21

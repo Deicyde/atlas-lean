@@ -1,4 +1,5 @@
 ---
+article_id: af_07a66e6192d16d47cb47c9a8
 declaration: lemma
 origin: cited
 lean: SimpleGraph.tight_oddset_pm_decomposition

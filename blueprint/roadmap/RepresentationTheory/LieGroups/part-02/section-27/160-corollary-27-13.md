@@ -1,4 +1,5 @@
 ---
+article_id: af_41e84faccb002904f1f8ab4c
 declaration: theorem
 origin: cited
 lean: nilpotentCone_isNormal

@@ -1,4 +1,5 @@
 ---
+article_id: af_30f15722f42608acc79a997a
 declaration: theorem
 origin: cited
 lean: EulerCharacteristic.euler_characteristic_homotopy_invariant

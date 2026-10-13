@@ -1,4 +1,5 @@
 ---
+article_id: af_a13f79bb382430d6096becbc
 declaration: theorem
 origin: cited
 lean: Rigollet.Chapter3.thm_3_4_bic_oracle_inequality

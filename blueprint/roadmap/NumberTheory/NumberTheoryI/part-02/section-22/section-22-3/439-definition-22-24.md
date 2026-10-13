@@ -1,4 +1,5 @@
 ---
+article_id: af_c251cc8685ff086d8ec14f0d
 declaration: def
 origin: cited
 lean: GlobalConductor.conductorModulus

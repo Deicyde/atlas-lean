@@ -1,3 +1,7 @@
+---
+article_id: af_d81ac28e96af18d25a78540f
+---
+
 # Part 1 of 2
 
 - [Is Standardized Law](is-standardized-law.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_33c937d30e3496f8a0a7aca2
+---
+
 # Newton Polygon
 
 - [Exponent To Real](exponent-to-real.md)

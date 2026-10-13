@@ -1,3 +1,7 @@
+---
+article_id: af_fe33a242a7cde09660ffb839
+---
+
 # Section 19
 
 - [Theorem (Analytic Class Number Formula)](383-analytic-class-number-formula.md)

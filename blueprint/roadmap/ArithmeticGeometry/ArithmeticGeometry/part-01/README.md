@@ -1,3 +1,7 @@
+---
+article_id: af_38af53cc8f5ebce738fae2a7
+---
+
 # Newton polygon to Section 17
 
 - [Newton polygon](newton-polygon/README.md)

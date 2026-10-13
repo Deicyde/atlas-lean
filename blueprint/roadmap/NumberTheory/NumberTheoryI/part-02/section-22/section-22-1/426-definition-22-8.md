@@ -1,4 +1,5 @@
 ---
+article_id: af_d3e40ac64714adaeb6a6566e
 declaration: def
 origin: cited
 lean: RayClassField.CongruenceSubgroupPair.conductor

@@ -1,3 +1,7 @@
+---
+article_id: af_e732ae636b36beebb2959d76
+---
+
 # Prime Distribution
 
 - [Discrepancy](discrepancy.md)

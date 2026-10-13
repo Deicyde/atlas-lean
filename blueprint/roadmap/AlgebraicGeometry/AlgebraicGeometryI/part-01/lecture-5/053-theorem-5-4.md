@@ -1,4 +1,5 @@
 ---
+article_id: af_412e256d8017e2a0eb911492
 declaration: theorem
 origin: cited
 lean: hypersurface_dim_n_minus_one

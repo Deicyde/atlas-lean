@@ -1,4 +1,5 @@
 ---
+article_id: af_53f81f7bef0447b083fb75d6
 declaration: theorem
 origin: cited
 lean: HypergraphColoring.k_regular_k_uniform_two_colorable

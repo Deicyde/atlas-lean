@@ -1,3 +1,7 @@
+---
+article_id: af_c9465f7a5a9d84e43e853d0a
+---
+
 # Union
 
 - [Rank D link Aux](rank-d-link-aux.md)

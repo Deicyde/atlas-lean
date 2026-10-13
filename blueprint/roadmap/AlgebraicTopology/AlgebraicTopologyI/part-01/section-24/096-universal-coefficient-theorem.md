@@ -1,4 +1,5 @@
 ---
+article_id: af_da70e9e4e8645ad4f55eb78e
 declaration: def
 origin: cited
 lean: UniversalCoefficientTheorem.universal_coefficient_theorem

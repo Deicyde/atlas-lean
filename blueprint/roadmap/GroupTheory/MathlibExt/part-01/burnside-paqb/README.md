@@ -1,3 +1,7 @@
+---
+article_id: af_e9c813fbaa6a54bf98e3fe84
+---
+
 # Burnside Paqb
 
 - [Central Character](central-character/README.md)

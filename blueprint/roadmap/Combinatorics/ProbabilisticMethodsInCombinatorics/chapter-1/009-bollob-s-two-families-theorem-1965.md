@@ -1,4 +1,5 @@
 ---
+article_id: af_dde0bed00191b4b835a703a0
 declaration: theorem
 origin: cited
 lean: BollobasTwoFamilies.bollobas_two_families

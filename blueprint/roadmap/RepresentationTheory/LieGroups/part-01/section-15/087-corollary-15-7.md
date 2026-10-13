@@ -1,4 +1,5 @@
 ---
+article_id: af_f29cd6f526df9f4d5ed8ab87
 declaration: theorem
 origin: cited
 lean: CategoryO.infinitesimalCharacter_decomposition

@@ -1,3 +1,7 @@
+---
+article_id: af_3ced016c14e95fb07c406eef
+---
+
 # Darboux Wanted
 
 - [E](e.md)

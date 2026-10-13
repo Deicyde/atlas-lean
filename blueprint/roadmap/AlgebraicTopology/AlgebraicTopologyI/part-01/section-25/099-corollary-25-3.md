@@ -1,4 +1,5 @@
 ---
+article_id: af_5f9354959c5b56512a006de5
 declaration: theorem
 origin: cited
 lean: KunnethIsos.quasiIso_tensorHom

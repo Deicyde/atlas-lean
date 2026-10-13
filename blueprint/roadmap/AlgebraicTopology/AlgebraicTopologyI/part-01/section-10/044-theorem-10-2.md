@@ -1,4 +1,5 @@
 ---
+article_id: af_c93f43de8a4c2c12dea65771
 declaration: theorem
 origin: cited
 lean: excision_theorem

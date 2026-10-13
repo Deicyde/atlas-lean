@@ -1,4 +1,5 @@
 ---
+article_id: af_3ed984a44806468bc7bfcd7f
 declaration: theorem
 origin: cited
 lean: AffineCoxeterComplex.sc_iso_is_similitude

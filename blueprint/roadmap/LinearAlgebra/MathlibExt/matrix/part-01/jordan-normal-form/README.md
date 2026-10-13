@@ -1,3 +1,7 @@
+---
+article_id: af_791e49cb724bf09bb71de0fb
+---
+
 # Jordan Normal Form
 
 - [Jordan Block](jordan-block.md)

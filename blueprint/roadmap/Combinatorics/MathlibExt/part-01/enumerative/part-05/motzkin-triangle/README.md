@@ -1,3 +1,7 @@
+---
+article_id: af_88e6f727ed02a90eff97367b
+---
+
 # Motzkin Triangle
 
 - [Motzkin Discriminant](motzkin-discriminant.md)

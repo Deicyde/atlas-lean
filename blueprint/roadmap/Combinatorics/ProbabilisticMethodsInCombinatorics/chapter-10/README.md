@@ -1,3 +1,7 @@
+---
+article_id: af_16164920451e6ee377a1210b
+---
+
 # Chapter 10
 
 - [Definition 10.1.1](171-definition-10-1-1.md)

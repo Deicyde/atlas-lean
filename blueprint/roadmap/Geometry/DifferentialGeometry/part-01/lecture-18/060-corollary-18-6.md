@@ -1,4 +1,5 @@
 ---
+article_id: af_1319b91bd0b2164ed0b29512
 declaration: theorem
 origin: cited
 lean: GaussBonnetTorus.torus_curvature_sign_change

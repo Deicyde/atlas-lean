@@ -1,3 +1,7 @@
+---
+article_id: af_4ae5b2a0483ec1fd2bf66f6e
+---
+
 # Integer Complexity
 
 - [Expr](expr.md)

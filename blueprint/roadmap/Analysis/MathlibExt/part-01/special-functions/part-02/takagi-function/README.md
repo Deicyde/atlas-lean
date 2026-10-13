@@ -1,3 +1,7 @@
+---
+article_id: af_6ba7589441968a1c826328c5
+---
+
 # Takagi Function
 
 - [Takagi Bit](takagi-bit.md)

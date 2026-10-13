@@ -1,4 +1,5 @@
 ---
+article_id: af_a448ceabc54821bb691adcf5
 declaration: theorem
 origin: cited
 lean: Equiangular.exists_exp_many_approx_equiangular

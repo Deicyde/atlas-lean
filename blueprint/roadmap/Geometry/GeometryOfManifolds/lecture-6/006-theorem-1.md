@@ -1,4 +1,5 @@
 ---
+article_id: af_adca6ab01888fe64e714437a
 declaration: theorem
 origin: cited
 lean: symplectomorphism_fixed_points

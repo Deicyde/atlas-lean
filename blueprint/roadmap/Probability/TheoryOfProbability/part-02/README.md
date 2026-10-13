@@ -1,3 +1,7 @@
+---
+article_id: af_0b666355bfc44f86e38a9ea5
+---
+
 # Lecture 27 to Lecture 39
 
 - [Lecture 27](lecture-27/README.md)

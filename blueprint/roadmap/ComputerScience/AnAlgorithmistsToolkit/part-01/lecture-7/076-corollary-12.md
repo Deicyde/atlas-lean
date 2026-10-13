@@ -1,4 +1,5 @@
 ---
+article_id: af_760ef89247aa335e999df66e
 declaration: theorem
 origin: cited
 lean: SimpleGraph.rw_convergence_conductance_bound

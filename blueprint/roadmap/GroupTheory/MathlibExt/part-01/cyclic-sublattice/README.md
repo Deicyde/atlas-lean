@@ -1,3 +1,7 @@
+---
+article_id: af_f32bbaa20ce2151a4063d0fb
+---
+
 # Cyclic Sublattice
 
 - [Is Cyclic Sublattice](is-cyclic-sublattice.md)

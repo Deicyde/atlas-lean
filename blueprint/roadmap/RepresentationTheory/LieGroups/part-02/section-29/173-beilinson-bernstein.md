@@ -1,4 +1,5 @@
 ---
+article_id: af_3ffc42fbf88f511df581f428
 declaration: theorem
 origin: cited
 lean: BeilinsonBernstein.thm_29_6_iso

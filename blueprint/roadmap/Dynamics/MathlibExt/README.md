@@ -1,3 +1,7 @@
+---
+article_id: af_25462c1beb28ac458c9d8641
+---
+
 # MathlibExt
 
 Reusable, fully proved extensions to Mathlib.

@@ -1,3 +1,7 @@
+---
+article_id: af_90782fe3722cfae31c823652
+---
+
 # Sphere Packing Density Four Wanted
 
 - [Periodic Approximation](periodic-approximation.md)

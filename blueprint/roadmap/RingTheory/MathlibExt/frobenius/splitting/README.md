@@ -1,3 +1,7 @@
+---
+article_id: af_fa20547fc35647628b88c45e
+---
+
 # Splitting
 
 - [Stabilizer eq bot iff ncard primes Over eq card](stabilizer-eq-bot-iff-ncard-primes-over.md)

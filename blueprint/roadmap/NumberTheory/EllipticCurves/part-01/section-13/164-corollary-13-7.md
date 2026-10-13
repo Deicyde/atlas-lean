@@ -1,4 +1,5 @@
 ---
+article_id: af_ca0a6dfdbb373e9134401c6b
 declaration: theorem
 origin: cited
 lean: endAlg_imagQuad_of_ordinary_or_odd

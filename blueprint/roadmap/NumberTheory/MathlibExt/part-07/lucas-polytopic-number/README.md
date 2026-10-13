@@ -1,3 +1,7 @@
+---
+article_id: af_29ace87fedd45b632c3b47ac
+---
+
 # Lucas Polytopic Number
 
 - [Lucas Bracket Aux](lucas-bracket-aux.md)

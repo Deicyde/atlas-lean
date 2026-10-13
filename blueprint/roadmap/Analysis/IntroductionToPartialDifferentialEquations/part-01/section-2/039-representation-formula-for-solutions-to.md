@@ -1,4 +1,5 @@
 ---
+article_id: af_a1a3e02d0e0aabe5942a1833
 declaration: theorem
 origin: cited
 lean: LaplacePoisson.green_representation_formula

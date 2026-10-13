@@ -1,3 +1,7 @@
+---
+article_id: af_d9b38069ac4367fe750a1087
+---
+
 # Generalized Hypergeometric to Takagi Function
 
 - [Generalized Hypergeometric](generalized-hypergeometric/README.md)

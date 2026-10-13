@@ -1,3 +1,7 @@
+---
+article_id: af_25fea4030d083840a93cb624
+---
+
 # E1
 
 - [Principal Exponential Integral E1 Raw](principal-exponential-integral-e1-raw.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_44765b8dc0b65e707de5f412
+---
+
 # Part 2 of 2
 
 - [Poincare3 DSmooth Wanted](poincare-3d-smooth.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_6fa8385e2a7d2e72b430d27f
 declaration: structure
 origin: cited
 lean: SmoothGaussBonnet.MovingFrameWithSingularities

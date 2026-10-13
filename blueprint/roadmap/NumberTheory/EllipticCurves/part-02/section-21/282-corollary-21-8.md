@@ -1,4 +1,5 @@
 ---
+article_id: af_755a30d5fe762d198b9f3612
 declaration: theorem
 origin: cited
 lean: RingClassFieldRamification.corollary_21_8_conductor_coprime

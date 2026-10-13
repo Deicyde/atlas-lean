@@ -1,4 +1,5 @@
 ---
+article_id: af_cf57e5a12442ac82b2e23405
 declaration: theorem
 origin: cited
 lean: SmoothGaussBonnet.totalGaussianCurvature_eq_degree_general

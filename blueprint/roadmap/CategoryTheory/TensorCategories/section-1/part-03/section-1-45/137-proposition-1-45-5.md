@@ -1,4 +1,5 @@
 ---
+article_id: af_1c686b648f6fbe44b2338896
 declaration: theorem
 origin: cited
 lean: FusionRing.Proposition_1_45_5

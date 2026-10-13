@@ -1,3 +1,7 @@
+---
+article_id: af_d0e90d2ba4b97e9f8b373def
+---
+
 # Zero Divisor Graph
 
 - [Vertex](vertex.md)

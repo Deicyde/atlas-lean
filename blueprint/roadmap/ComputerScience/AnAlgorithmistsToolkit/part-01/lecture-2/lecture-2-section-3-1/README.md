@@ -1,3 +1,7 @@
+---
+article_id: af_a9a2e0693e4c1bb816d004b6
+---
+
 # Lecture 2, Section 3.1
 
 - [Lemma 1 (Edge Union)](007-edge-union.md)

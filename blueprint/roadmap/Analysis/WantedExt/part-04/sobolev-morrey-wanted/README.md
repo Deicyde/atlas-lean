@@ -1,3 +1,7 @@
+---
+article_id: af_bd69e1f9b12a954002a0a2b3
+---
+
 # Sobolev Morrey Wanted
 
 - [E](e.md)

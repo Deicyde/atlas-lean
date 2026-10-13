@@ -1,4 +1,5 @@
 ---
+article_id: af_07c0a8aa25af265adcdb5393
 declaration: theorem
 origin: cited
 lean: PoissonHarnack.harnack_inequality

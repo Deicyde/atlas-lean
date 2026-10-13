@@ -1,4 +1,5 @@
 ---
+article_id: af_41b583d963cacbbdd2d0ceb4
 declaration: theorem
 origin: cited
 lean: principalSeries_right_action

@@ -1,3 +1,7 @@
+---
+article_id: af_20d425257074cc8c3630ec14
+---
+
 # Section 10
 
 - [Theorem 10.3.6](189-theorem-10-3-6.md)

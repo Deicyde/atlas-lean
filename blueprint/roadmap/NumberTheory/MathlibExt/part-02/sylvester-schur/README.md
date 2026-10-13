@@ -1,3 +1,7 @@
+---
+article_id: af_118aa64830933f560d16713c
+---
+
 # Sylvester Schur
 
 - [Residual Large](residual-large/README.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_bf2ed48def6ef444671c84dd
+---
+
 # Generalized Fibonacci Polynomial
 
 - [Generalized Fibonacci Polynomial](generalized-fibonacci-polynomial.md)

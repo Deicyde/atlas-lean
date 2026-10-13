@@ -1,4 +1,5 @@
 ---
+article_id: af_9ca86b4ccf655ea945c20dd7
 declaration: abbrev
 origin: cited
 lean: CategoryTheory.DrinfeldCenter

@@ -1,3 +1,7 @@
+---
+article_id: af_758d089851f89b0479749e59
+---
+
 # Catalan Harmonic Generating Function to Eulerian Polynomial Hankel
 
 - [Catalan Harmonic Generating Function](catalan-harmonic-generating-function/README.md)

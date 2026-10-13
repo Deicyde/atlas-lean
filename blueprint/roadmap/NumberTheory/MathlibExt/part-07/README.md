@@ -1,3 +1,7 @@
+---
+article_id: af_5f142cc4b8c51654a0ee084d
+---
+
 # Integer Complexity to Multiple Counting Jacobsthal Sequence
 
 - [Integer Complexity](integer-complexity/README.md)

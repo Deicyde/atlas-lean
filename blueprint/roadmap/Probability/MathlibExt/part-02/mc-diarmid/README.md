@@ -1,3 +1,7 @@
+---
+article_id: af_45463ec45b503b123b3bb3df
+---
+
 # Mc Diarmid
 
 - [Mcdiarmid one sided finite iid general](mcdiarmid-one-sided-finite-iid-general.md)

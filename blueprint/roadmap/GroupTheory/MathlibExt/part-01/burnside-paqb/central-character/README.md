@@ -1,3 +1,7 @@
+---
+article_id: af_93bf1a507ddbf0cfc5ab31fd
+---
+
 # Central Character
 
 - [Exists scalar of central](exists-scalar-of-central.md)

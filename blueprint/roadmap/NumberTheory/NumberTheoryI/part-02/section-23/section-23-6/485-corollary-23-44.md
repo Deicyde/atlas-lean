@@ -1,4 +1,5 @@
 ---
+article_id: af_55212ae73dd040ba46837353
 declaration: theorem
 origin: cited
 lean: TateCohomology.herbrandQuotient_eq_shortExact_torsion

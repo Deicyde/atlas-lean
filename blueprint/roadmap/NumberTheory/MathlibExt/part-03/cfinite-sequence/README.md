@@ -1,3 +1,7 @@
+---
+article_id: af_3fd0ce2e6ed894eb2947f6b8
+---
+
 # CFinite Sequence
 
 - [Is Integer CFinite Sequence](is-integer-cfinite-sequence.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_78f6cbb72113117d4cb48dd4
+---
+
 # QPochhammer
 
 - [Q Pochhammer Inf Raw](q-pochhammer-inf-raw.md)

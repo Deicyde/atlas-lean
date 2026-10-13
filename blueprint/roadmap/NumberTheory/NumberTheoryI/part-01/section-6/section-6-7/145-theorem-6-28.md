@@ -1,4 +1,5 @@
 ---
+article_id: af_e74493be10c9d5a94cf07169
 declaration: theorem
 origin: cited
 lean: localization_equiv_coprime_conductor

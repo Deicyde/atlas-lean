@@ -1,4 +1,5 @@
 ---
+article_id: af_605ade456aeeeac1dc4f6878
 declaration: theorem
 origin: cited
 lean: LovaszSimonovits.lovasz_simonovits_full

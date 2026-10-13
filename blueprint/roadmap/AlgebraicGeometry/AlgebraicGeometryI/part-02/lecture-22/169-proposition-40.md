@@ -1,4 +1,5 @@
 ---
+article_id: af_5f6c4fc4e9f3bdddedc6212f
 declaration: theorem
 origin: cited
 lean: Proposition40.proposition_40_delta_well_defined

@@ -1,4 +1,5 @@
 ---
+article_id: af_cb4d8dac3f1f437c645876c6
 declaration: abbrev
 origin: cited
 lean: ZariskiCotangentSpace.cotangentSpace

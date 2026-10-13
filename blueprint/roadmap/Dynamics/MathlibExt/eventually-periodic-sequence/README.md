@@ -1,3 +1,7 @@
+---
+article_id: af_6fc065a0e62ad41311c91a41
+---
+
 # Eventually Periodic Sequence
 
 - [Is Eventually Periodic](is-eventually-periodic.md)

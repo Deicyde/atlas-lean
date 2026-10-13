@@ -1,3 +1,7 @@
+---
+article_id: af_baa279b0d209046ced2905d7
+---
+
 # Zagier Hoffman Positive Char Wanted
 
 - [Monic Strict Anti Nat Degree](monic-strict-anti-nat-degree.md)

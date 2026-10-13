@@ -1,4 +1,5 @@
 ---
+article_id: af_614f15f5633a594c4bd9a475
 declaration: theorem
 origin: cited
 lean: DecomposingCoverings.theorem_6_2_12

@@ -1,4 +1,5 @@
 ---
+article_id: af_372b3675a3f056a996dc3f9f
 declaration: structure
 origin: cited
 lean: ArithFunc.IsDirichletCharacter

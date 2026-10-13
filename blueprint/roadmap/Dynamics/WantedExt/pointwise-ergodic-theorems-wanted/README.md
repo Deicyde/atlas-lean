@@ -1,3 +1,7 @@
+---
+article_id: af_3c71cf68ec1b8d0d94497a96
+---
+
 # Pointwise Ergodic Theorems Wanted
 
 - [Lacunary](lacunary.md)

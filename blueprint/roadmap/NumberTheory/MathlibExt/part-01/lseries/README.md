@@ -1,3 +1,7 @@
+---
+article_id: af_530d28b56390d29087154788
+---
+
 # LSeries
 
 - [Abel Continuation](abel-continuation/README.md)

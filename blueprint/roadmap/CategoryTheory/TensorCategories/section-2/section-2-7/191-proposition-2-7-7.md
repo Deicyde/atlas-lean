@@ -1,4 +1,5 @@
 ---
+article_id: af_4eac51886fbce843dc4143ad
 declaration: theorem
 origin: cited
 lean: CategoryTheory.ExactModuleCategory.proposition_2_7_7

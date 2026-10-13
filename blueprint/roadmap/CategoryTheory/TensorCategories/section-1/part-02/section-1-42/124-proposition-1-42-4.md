@@ -1,4 +1,5 @@
 ---
+article_id: af_369dbe46e98de7ade4c18374
 declaration: theorem
 origin: cited
 lean: Proposition_1_42_4_fusion

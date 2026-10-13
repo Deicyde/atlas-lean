@@ -1,4 +1,5 @@
 ---
+article_id: af_a82e73ad31876933b610fc87
 declaration: theorem
 origin: cited
 lean: WaveEquation1D.dAlembert_halfline_corollary

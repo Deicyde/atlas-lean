@@ -1,3 +1,7 @@
+---
+article_id: af_3289064b8265be8cd15d018c
+---
+
 # Calculus
 
 - [Arcsin Div Sin Integral](arcsin-div-sin-integral.md)

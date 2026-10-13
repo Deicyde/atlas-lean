@@ -1,4 +1,5 @@
 ---
+article_id: af_bc8fe2d0a7792d5eeda51cd4
 declaration: theorem
 origin: cited
 lean: AcyclicModels.acyclicModels_chainHomotopyEquiv

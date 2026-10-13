@@ -1,4 +1,5 @@
 ---
+article_id: af_3679e825d51e682f1929f46c
 declaration: abbrev
 origin: cited
 lean: corollary_11_22

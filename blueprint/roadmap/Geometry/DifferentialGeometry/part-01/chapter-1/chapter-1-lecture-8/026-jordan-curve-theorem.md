@@ -1,4 +1,5 @@
 ---
+article_id: af_2a0b9390daeae0f7683431c7
 declaration: theorem
 origin: cited
 lean: ClosedCurves.jordan_curve_theorem

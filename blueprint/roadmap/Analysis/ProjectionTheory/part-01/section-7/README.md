@@ -1,3 +1,7 @@
+---
+article_id: af_ee5685ad3b441392759b39cb
+---
+
 # Section 7
 
 - [Theorem (Dirichlet)](034-dirichlet.md)

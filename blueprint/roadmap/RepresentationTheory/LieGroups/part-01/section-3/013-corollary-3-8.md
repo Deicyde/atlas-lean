@@ -1,4 +1,5 @@
 ---
+article_id: af_077569eb0ac6abff32d16f3c
 declaration: theorem
 origin: cited
 lean: ContinuousRep.corollary_3_8

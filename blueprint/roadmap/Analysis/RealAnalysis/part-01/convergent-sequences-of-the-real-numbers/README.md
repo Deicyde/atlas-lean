@@ -1,3 +1,7 @@
+---
+article_id: af_4f548bd7024b904a477693cb
+---
+
 # Convergent Sequences of the Real Numbers
 
 - [Theorem (Convergent Sequences of the Real Numbers section) (1)](016-theorem.md)

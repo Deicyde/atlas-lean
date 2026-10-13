@@ -1,4 +1,5 @@
 ---
+article_id: af_ad079a3ab18023bc81e6bcd2
 declaration: theorem
 origin: cited
 lean: CategoryTheory.Proposition_1_31_2

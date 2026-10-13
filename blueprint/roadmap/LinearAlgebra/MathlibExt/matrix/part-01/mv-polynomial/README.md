@@ -1,3 +1,7 @@
+---
+article_id: af_b051b94b8926d5ebb5aa48f9
+---
+
 # Mv Polynomial
 
 - [Det add smul vec Mul Vec](det-add-smul-vec-mul-vec.md)

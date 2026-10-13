@@ -1,3 +1,7 @@
+---
+article_id: af_d7873ccf8fc06fe2e4a5654a
+---
+
 # ULDMotzkin Number Of Rank R
 
 - [ULDMotzkin Step](uldmotzkin-step.md)

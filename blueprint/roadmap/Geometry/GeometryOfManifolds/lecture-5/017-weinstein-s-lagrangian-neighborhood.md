@@ -1,4 +1,5 @@
 ---
+article_id: af_82d0f684be89784934fa2565
 declaration: theorem
 origin: cited
 lean: weinstein_lagrangian_neighborhood_book3

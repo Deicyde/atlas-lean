@@ -1,4 +1,5 @@
 ---
+article_id: af_f83ff4fd74fdd9962f9729e8
 declaration: theorem
 origin: cited
 lean: DegreeTheory.degree_is_integer

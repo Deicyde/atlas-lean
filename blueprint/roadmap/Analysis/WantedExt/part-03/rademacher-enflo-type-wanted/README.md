@@ -1,3 +1,7 @@
+---
+article_id: af_298c7d887ddcd111e481fe1c
+---
+
 # Rademacher Enflo Type Wanted
 
 - [Rademacher Distribution](rademacher-distribution.md)

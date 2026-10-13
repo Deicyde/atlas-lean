@@ -1,3 +1,7 @@
+---
+article_id: af_63c420e5f34b9ef8a2e79645
+---
+
 # Bombieri Vinogradov Wanted
 
 - [Bombieri Vinogradov Residue Error](bombieri-vinogradov-residue-error.md)

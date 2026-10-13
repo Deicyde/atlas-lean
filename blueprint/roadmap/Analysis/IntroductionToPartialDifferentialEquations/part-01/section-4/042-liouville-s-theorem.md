@@ -1,4 +1,5 @@
 ---
+article_id: af_6824d2d06fea3f6abec1493d
 declaration: theorem
 origin: cited
 lean: PoissonHarnack.liouville_theorem

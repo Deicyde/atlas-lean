@@ -1,3 +1,7 @@
+---
+article_id: af_4d2f0c15828144dc0d2f99f8
+---
+
 # Fast Fourier Transform
 
 - [Dft Sum](dft-sum.md)

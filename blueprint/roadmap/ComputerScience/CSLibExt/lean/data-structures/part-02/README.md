@@ -1,3 +1,7 @@
+---
+article_id: af_d40077dfe9471c692d6564d4
+---
+
 # Binary Search Tree to Radix Trie
 
 - [Binary Search Tree](binary-search-tree/README.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_b04e9840f39f2871b63e392a
 declaration: theorem
 origin: cited
 lean: RandomWalks.lazy_rw_convergence_bound

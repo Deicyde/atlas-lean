@@ -1,3 +1,7 @@
+---
+article_id: af_4fffcd8bcaf583dc7a213b2e
+---
+
 # Section 2.7
 
 - [Lemma 2.7.1](186-lemma-2-7-1.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_3714e5cc336bab6be460b66c
 declaration: def
 origin: cited
 lean: VolcanoStructure.kohel_volcano_exists

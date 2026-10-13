@@ -1,4 +1,5 @@
 ---
+article_id: af_e192ecbe204375689d8b3033
 declaration: theorem
 origin: cited
 lean: ConvexGeometry.john_ellipsoid_characterization

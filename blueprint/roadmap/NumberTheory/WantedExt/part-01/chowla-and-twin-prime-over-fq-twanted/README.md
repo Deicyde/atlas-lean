@@ -1,3 +1,7 @@
+---
+article_id: af_6b882637bec96470a384e00f
+---
+
 # Chowla And Twin Prime Over Fq TWanted
 
 - [Card Quot span eq pow nat Degree](card-quot-span-eq-pow-nat-degree.md)

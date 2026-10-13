@@ -1,3 +1,7 @@
+---
+article_id: af_065dd40d114415ce2d8f1554
+---
+
 # Thin Shell
 
 - [Is Log Concave Density](is-log-concave-density.md)

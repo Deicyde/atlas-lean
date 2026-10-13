@@ -1,3 +1,7 @@
+---
+article_id: af_2915a9e47e926b3864834d2a
+---
+
 # Section 18 to Section 26
 
 - [Section 18](section-18/README.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_a42f9d60feebc6a57f98aca6
 declaration: theorem
 origin: cited
 lean: Hypersurface.smooth_division

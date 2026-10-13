@@ -1,3 +1,7 @@
+---
+article_id: af_ea273b17da54f192bef81281
+---
+
 # Section 1.26
 
 - [Definition 1.26.1](069-definition-1-26-1.md)

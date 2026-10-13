@@ -1,3 +1,7 @@
+---
+article_id: af_8bc237169f6b323bd63f3be1
+---
+
 # Exact Sequence
 
 - [Fractional Ideal Mk0 mem coprime Fractional Ideals](fractional-ideal-mk0-mem-coprime-fractio.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_5d4ddc4fbc988d41d8cd0837
+---
+
 # Extension Discriminant
 
 - [Image Of B](image-of-b.md)

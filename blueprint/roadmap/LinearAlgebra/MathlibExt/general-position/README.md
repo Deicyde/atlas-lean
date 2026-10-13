@@ -1,3 +1,7 @@
+---
+article_id: af_e6155891cf3df00ebc1afe87
+---
+
 # General Position
 
 - [Is General Position](is-general-position.md)

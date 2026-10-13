@@ -1,4 +1,5 @@
 ---
+article_id: af_f9f6d3a56bb2bd0f002ee607
 declaration: theorem
 origin: cited
 lean: SphericalCap.sphere_concentration

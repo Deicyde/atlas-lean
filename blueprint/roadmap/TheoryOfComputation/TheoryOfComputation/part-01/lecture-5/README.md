@@ -1,3 +1,7 @@
+---
+article_id: af_a3562137d9675d55d0a50d22
+---
+
 # Lecture 5
 
 - [Corollary 1 (Lecture 5, Equivalence of CFGs and PDAs, Corollaries)](019-corollary-1.md)

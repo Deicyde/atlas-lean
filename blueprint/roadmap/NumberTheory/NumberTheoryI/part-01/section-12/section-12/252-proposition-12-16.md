@@ -1,4 +1,5 @@
 ---
+article_id: af_bccbe35e84160ecaf3e8d573
 declaration: theorem
 origin: cited
 lean: discriminantBaseChange_eq_prod

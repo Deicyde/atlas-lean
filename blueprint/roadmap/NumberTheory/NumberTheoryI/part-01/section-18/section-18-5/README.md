@@ -1,3 +1,7 @@
+---
+article_id: af_c0c9c812ce5cc60b35d1e86f
+---
+
 # Section 18.5
 
 - [Definition 18.23](369-definition-18-23.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_8660c136427c250a5130388d
+---
+
 # Class Meeting 15
 
 - [Definition 3.0.1 (Hadamard's classification of second order scalar PDEs)](067-hadamard-s-classification-of-second-orde.md)

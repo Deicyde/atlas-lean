@@ -1,4 +1,5 @@
 ---
+article_id: af_34d109f67458466d03840489
 declaration: theorem
 origin: cited
 lean: PlunneckeInequality.poly_k_growth

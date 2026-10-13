@@ -1,4 +1,5 @@
 ---
+article_id: af_71fc352e303229383558333e
 declaration: theorem
 origin: cited
 lean: PoissonHarnack.poisson_formula

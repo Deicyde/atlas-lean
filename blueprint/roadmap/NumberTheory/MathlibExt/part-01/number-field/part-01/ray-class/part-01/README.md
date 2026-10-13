@@ -1,3 +1,7 @@
+---
+article_id: af_b60a10add5d47a07d2bbd28b
+---
+
 # Artin Map to Ray Class To Class Group
 
 - [Artin Map](artin-map/README.md)

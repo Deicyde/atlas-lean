@@ -1,3 +1,7 @@
+---
+article_id: af_adb5f7fa041a696b1f7a2f56
+---
+
 # Dimension Formula
 
 - [Definition (Dimension Formula, Section on Eigenvectors, Eigenvalues, and Diagonalizable Matrices)](017-definition.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_b973598358b9009148803591
+---
+
 # Unramified
 
 - [Is Unramified In mono](is-unramified-in-mono.md)

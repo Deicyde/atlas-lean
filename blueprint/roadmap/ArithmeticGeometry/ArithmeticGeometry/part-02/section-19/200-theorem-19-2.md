@@ -1,4 +1,5 @@
 ---
+article_id: af_62e7bb8dc9348a5189427e30
 declaration: def
 origin: cited
 lean: ArithmeticGeometry.Thm19_2.curve_functionField_contravariantEquivalence

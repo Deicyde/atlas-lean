@@ -1,4 +1,5 @@
 ---
+article_id: af_1e6ff60e909f2359a0a81ead
 declaration: theorem
 origin: cited
 lean: corollary28_generic_hypersurface_smooth

@@ -1,4 +1,5 @@
 ---
+article_id: af_1b4e960125201f5b5b51bf36
 declaration: theorem
 origin: cited
 lean: VolumeHardness.volume_computation_hardness

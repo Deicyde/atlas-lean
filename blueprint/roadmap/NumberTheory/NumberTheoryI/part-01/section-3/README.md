@@ -1,3 +1,7 @@
+---
+article_id: af_7d5611ed5457ff9ab231784e
+---
+
 # Section 3
 
 - [Lemma 3.1](038-lemma-3-1.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_4be2362a2db92db71a2d826f
 declaration: theorem
 origin: cited
 lean: ComplexLattice.isHomothetic_of_jInvariantLattice_eq

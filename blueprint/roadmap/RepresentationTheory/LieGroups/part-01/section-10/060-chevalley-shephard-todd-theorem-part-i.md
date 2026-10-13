@@ -1,4 +1,5 @@
 ---
+article_id: af_f51e4398d373ec0704d38653
 declaration: theorem
 origin: cited
 lean: chevalley_shephard_todd_iff

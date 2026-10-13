@@ -1,3 +1,7 @@
+---
+article_id: af_b5fcb3ce08d081e1b1a3cd47
+---
+
 # Lecture 18
 
 - [Definition (Lattice)](130-lattice.md)

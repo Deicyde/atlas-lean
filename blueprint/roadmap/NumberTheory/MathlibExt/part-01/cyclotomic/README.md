@@ -1,3 +1,7 @@
+---
+article_id: af_77327e753dc06301bcd423db
+---
+
 # Cyclotomic
 
 - [Cubic Residue Symbol](cubic-residue-symbol/README.md)

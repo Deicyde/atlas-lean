@@ -1,4 +1,5 @@
 ---
+article_id: af_9c6cf430409d06ba25de0e71
 declaration: theorem
 origin: cited
 lean: TensorCategories.Proposition_1_35_1

@@ -1,3 +1,7 @@
+---
+article_id: af_c08d502bb9678a2bb7e8cb49
+---
+
 # Section 1
 
 - [Corollary 2 (Section 1, Fourier Series, Part 1)](005-corollary-2.md)

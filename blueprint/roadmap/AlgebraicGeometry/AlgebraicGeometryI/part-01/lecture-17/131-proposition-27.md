@@ -1,4 +1,5 @@
 ---
+article_id: af_6d3333798f99e08f9c568c93
 declaration: theorem
 origin: cited
 lean: prop27_nonconstant_map_finite

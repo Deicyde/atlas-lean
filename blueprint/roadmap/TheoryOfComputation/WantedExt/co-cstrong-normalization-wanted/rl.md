@@ -1,4 +1,5 @@
 ---
+article_id: af_0bd77991d954b929c08c952e
 declaration: inductive
 origin: cited
 statement: formalized

@@ -1,4 +1,5 @@
 ---
+article_id: af_e1ba0ec7d41839e2003de20d
 declaration: theorem
 origin: cited
 lean: AffineReflectionGroup.proposition_12_4_discreteness

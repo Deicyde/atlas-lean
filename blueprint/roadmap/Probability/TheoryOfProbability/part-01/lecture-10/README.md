@@ -1,3 +1,7 @@
+---
+article_id: af_85b23b3b9243e96249d4d802
+---
+
 # Lecture 10
 
 - [Theorem (Kolmogorov zero-one law)](024-kolmogorov-zero-one-law.md)

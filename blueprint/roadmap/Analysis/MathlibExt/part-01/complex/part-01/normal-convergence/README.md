@@ -1,3 +1,7 @@
+---
+article_id: af_27530f10e60e854e77d4a1c3
+---
+
 # Normal Convergence
 
 - [Summable to Real sup Norm On](summable-to-real-sup-norm-on.md)

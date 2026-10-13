@@ -1,4 +1,5 @@
 ---
+article_id: af_aff97efcafc124f5f23f5f1b
 declaration: theorem
 origin: cited
 ---

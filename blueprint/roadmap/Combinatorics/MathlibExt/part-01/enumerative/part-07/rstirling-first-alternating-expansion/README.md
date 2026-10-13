@@ -1,3 +1,7 @@
+---
+article_id: af_7d94addec93ef540564f5684
+---
+
 # RStirling First Alternating Expansion
 
 - [R Stirling First](r-stirling-first.md)

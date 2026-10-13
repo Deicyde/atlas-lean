@@ -1,3 +1,7 @@
+---
+article_id: af_bff817f99d72170c6d2dd42c
+---
+
 # Part 4 of 4
 
 - [Part1 Ch9 Entry2](ramanujan-part1-ch9-entry2.md)

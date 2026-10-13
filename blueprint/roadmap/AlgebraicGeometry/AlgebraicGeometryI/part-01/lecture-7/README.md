@@ -1,3 +1,7 @@
+---
+article_id: af_130c574812530a6dccb6c939
+---
+
 # Lecture 7
 
 - [Theorem 7.1](062-theorem-7-1.md)

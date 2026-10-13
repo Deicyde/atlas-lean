@@ -1,3 +1,7 @@
+---
+article_id: af_d4bf6c7ad20b656064663a54
+---
+
 # Class Meeting 21
 
 - [Definition 1.0.1 (Lagrangian)](088-lagrangian.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_a574a6dd4777716bbf5befff
+---
+
 # Integer Multiplication Wanted
 
 - [Encode Prod](encode-prod.md)

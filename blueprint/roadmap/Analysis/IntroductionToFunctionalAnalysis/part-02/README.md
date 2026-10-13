@@ -1,3 +1,7 @@
+---
+article_id: af_48cbc4e01831b849d824f96c
+---
+
 # May 4 to Section on solving the Dirichlet problem
 
 - [May 4](may-4/README.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_547566d1ef518cab3139266b
+---
+
 # Inner Product Space
 
 - [Bounded Self Adjoint Spectral](bounded-self-adjoint-spectral/README.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_e5be76ba15b40b1af2fa401f
 declaration: theorem
 origin: cited
 lean: apt_iso_label_preserving

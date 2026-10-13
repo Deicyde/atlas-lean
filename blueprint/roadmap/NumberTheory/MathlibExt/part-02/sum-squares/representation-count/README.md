@@ -1,3 +1,7 @@
+---
+article_id: af_f5a9bc1d23be334688c586b5
+---
+
 # Representation Count
 
 - [Solutions](solutions.md)

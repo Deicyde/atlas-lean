@@ -1,4 +1,5 @@
 ---
+article_id: af_a22ef86a71e1d3a4d82a9042
 declaration: theorem
 origin: cited
 lean: CliqueNumber.clique_number_two_point_concentration

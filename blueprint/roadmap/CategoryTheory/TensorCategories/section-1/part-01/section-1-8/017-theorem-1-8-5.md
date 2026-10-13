@@ -1,4 +1,5 @@
 ---
+article_id: af_5339ee50f7a7d6c8b5ffaef6
 declaration: theorem
 origin: cited
 lean: EGNO.MacLaneStrictness.Theorem_1_8_5_MacLane_strictness

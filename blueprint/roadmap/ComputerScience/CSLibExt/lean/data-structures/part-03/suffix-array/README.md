@@ -1,3 +1,7 @@
+---
+article_id: af_d27d9fdeed70d96d32682bb4
+---
+
 # Suffix Array
 
 - [Suffix](suffix.md)

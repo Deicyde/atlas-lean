@@ -1,4 +1,5 @@
 ---
+article_id: af_0a690d42a75c406a0024b5c1
 declaration: theorem
 origin: cited
 lean: ExcisionApplications.collapseMapOfPairs_homologyMap_bijective_of_DR

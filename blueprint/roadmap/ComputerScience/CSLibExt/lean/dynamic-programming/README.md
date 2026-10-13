@@ -1,3 +1,7 @@
+---
+article_id: af_d61fd25fb13ed6616ad2af75
+---
+
 # Dynamic Programming
 
 - [Edit Distance](edit-distance/README.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_cb91fb29f9f5348d935e5e34
+---
+
 # Union Closed Orderly to Zagier Number
 
 - [Union Closed Orderly](union-closed-orderly/README.md)

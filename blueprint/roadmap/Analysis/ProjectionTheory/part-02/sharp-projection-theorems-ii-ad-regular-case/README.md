@@ -1,3 +1,7 @@
+---
+article_id: af_892d461b7b84835bc2a08877
+---
+
 # Sharp Projection Theorems II: AD Regular Case
 
 - [Theorem (OSRW)](101-osrw.md)

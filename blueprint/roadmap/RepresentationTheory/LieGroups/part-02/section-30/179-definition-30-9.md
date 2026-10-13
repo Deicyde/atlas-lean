@@ -1,4 +1,5 @@
 ---
+article_id: af_8db994179e81d68472beda97
 declaration: structure
 origin: cited
 lean: DModulesII.EquivDModule

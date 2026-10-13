@@ -1,3 +1,7 @@
+---
+article_id: af_e8268488c4b7fd5b23056346
+---
+
 # Scaling
 
 - [Fourier comp mul left](fourier-comp-mul-left.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_3cd57d69da617cbcbfc0969d
+---
+
 # Bernoulli
 
 - [Abel Bernoulli Sums](abel-bernoulli-sum.md)

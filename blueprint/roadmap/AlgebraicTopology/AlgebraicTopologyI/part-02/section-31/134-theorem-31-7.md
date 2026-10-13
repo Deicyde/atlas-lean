@@ -1,4 +1,5 @@
 ---
+article_id: af_918d367b39298c81e8b2fb51
 declaration: def
 origin: cited
 lean: LocalCoefficientSystems.fiberEquivalence

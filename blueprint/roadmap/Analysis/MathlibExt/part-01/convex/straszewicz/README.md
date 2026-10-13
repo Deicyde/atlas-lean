@@ -1,3 +1,7 @@
+---
+article_id: af_63224393b1f914784625dc1e
+---
+
 # Straszewicz
 
 - [Part 1 of 2](part-01/README.md)

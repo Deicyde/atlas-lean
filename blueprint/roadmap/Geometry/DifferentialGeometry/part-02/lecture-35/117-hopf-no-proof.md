@@ -1,4 +1,5 @@
 ---
+article_id: af_dacc045081cd4fd500df8e02
 declaration: theorem
 origin: cited
 lean: SmoothGaussBonnet.euler_characteristic_eq_twice_degree

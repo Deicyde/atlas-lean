@@ -1,4 +1,5 @@
 ---
+article_id: af_45b551dbbce0b1ceca9b3d40
 declaration: theorem
 origin: cited
 lean: ProjectionSmoothing.smoothing_by_projection

@@ -1,3 +1,7 @@
+---
+article_id: af_bffa7a339466e5e7314e18e1
+---
+
 # BNomial Number Type3
 
 - [B Nomial Digit At Or Zero](b-nomial-digit-at-or-zero.md)

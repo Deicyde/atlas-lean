@@ -1,3 +1,7 @@
+---
+article_id: af_28222b088e9e94a264957686
+---
+
 # Absolute Profinite Rigidity Wanted
 
 - [Profinite Completion](profinite-completion.md)

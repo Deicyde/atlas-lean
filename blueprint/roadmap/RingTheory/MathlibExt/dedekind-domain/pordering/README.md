@@ -1,3 +1,7 @@
+---
+article_id: af_80c23e232b48dd183f3ea997
+---
+
 # POrdering
 
 - [P Ordering Valuation](p-ordering-valuation.md)

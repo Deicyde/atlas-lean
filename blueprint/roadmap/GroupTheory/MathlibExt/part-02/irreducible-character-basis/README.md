@@ -1,3 +1,7 @@
+---
+article_id: af_53e3ddff2fee0aae133cebde
+---
+
 # Irreducible Character Basis
 
 - [Simple of is Irreducible](simple-of-is-irreducible.md)

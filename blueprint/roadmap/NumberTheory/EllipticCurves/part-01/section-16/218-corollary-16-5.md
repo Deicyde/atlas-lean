@@ -1,4 +1,5 @@
 ---
+article_id: af_f2895c2012ab87b5e2442695
 declaration: theorem
 origin: cited
 lean: ComplexLattice.corollary_16_5_ring_iso

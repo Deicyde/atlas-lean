@@ -1,4 +1,5 @@
 ---
+article_id: af_e1331ef3d4181d04bcd5e217
 declaration: theorem
 origin: cited
 lean: meanCurvature_parametric_eq_levelSet

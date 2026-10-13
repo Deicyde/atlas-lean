@@ -1,4 +1,5 @@
 ---
+article_id: af_2a18cf6031a156a298318725
 declaration: theorem
 origin: cited
 lean: SelbergExpansion.l2_bound_sigma1

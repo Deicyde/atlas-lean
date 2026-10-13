@@ -1,3 +1,7 @@
+---
+article_id: af_c5877294b08dfde3e19b1fc1
+---
+
 # Degree Divides
 
 - [Self pair sum](self-pair-sum.md)

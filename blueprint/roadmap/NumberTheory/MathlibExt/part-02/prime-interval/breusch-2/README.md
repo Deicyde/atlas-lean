@@ -1,3 +1,7 @@
+---
+article_id: af_0331bb6e0f1e1527a3c9096d
+---
+
 # Breusch
 
 - [Upper ineq](upper-ineq.md)

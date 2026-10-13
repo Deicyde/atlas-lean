@@ -1,3 +1,7 @@
+---
+article_id: af_fe6fb7b3383553199a963271
+---
+
 # Effective Parts
 
 - [Div Zeros](div-zeros.md)

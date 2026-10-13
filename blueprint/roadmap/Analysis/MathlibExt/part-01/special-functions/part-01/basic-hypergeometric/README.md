@@ -1,3 +1,7 @@
+---
+article_id: af_7df0f61c86df964356eadbe0
+---
+
 # Basic Hypergeometric
 
 - [Basic Hypergeometric Coefficient](basic-hypergeometric-coefficient.md)

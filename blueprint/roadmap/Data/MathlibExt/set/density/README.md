@@ -1,3 +1,7 @@
+---
+article_id: af_ed1da2715833ee88638d777a
+---
+
 # Density
 
 - [Partial Density](partial-density.md)

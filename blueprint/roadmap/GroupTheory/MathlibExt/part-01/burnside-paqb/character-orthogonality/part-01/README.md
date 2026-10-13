@@ -1,3 +1,7 @@
+---
+article_id: af_73d9898ab3c74d9a6456d393
+---
+
 # Part 1 of 2
 
 - [Simple fdrep of irreducible](simple-fdrep-of-irreducible.md)

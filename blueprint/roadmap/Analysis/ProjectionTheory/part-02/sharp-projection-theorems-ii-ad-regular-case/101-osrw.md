@@ -1,4 +1,5 @@
 ---
+article_id: af_67d17a0ab0163bdd76bf6e23
 declaration: theorem
 origin: cited
 lean: ProjectionTheory.osrw_sharp_discretized_projection

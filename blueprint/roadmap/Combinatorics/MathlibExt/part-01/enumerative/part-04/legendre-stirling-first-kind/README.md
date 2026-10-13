@@ -1,3 +1,7 @@
+---
+article_id: af_c19e3801dbacd525817fa06d
+---
+
 # Legendre Stirling First Kind
 
 - [Legendre Stirling First Poly](legendre-stirling-first-poly.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_be4677355f31bcdbf56cb883
 declaration: def
 origin: cited
 lean: DModulesII.kashiwara_equiv

@@ -1,3 +1,7 @@
+---
+article_id: af_610ba2c5587eb18c321abaa3
+---
+
 # Hypercube Extremal
 
 - [Hypercube Graph](hypercube-graph.md)

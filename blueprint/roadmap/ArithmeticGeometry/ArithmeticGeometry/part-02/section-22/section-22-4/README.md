@@ -1,3 +1,7 @@
+---
+article_id: af_660ee3104bf0ca8c6c4f3c6b
+---
+
 # Section 22.4
 
 - [Theorem 22.20 (Duality)](252-duality.md)

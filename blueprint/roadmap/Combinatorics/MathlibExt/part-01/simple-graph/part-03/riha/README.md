@@ -1,3 +1,7 @@
+---
+article_id: af_661e269892de8ce9c77942ab
+---
+
 # Riha
 
 - [Is Bound Vertex](is-bound-vertex.md)

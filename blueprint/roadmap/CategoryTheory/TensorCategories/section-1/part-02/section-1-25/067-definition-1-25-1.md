@@ -1,4 +1,5 @@
 ---
+article_id: af_5f4c81700580fce58bd63408
 declaration: abbrev
 origin: cited
 lean: def_1_25_1

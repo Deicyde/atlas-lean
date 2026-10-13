@@ -1,3 +1,7 @@
+---
+article_id: af_95285de1bdffa75d6322cf46
+---
+
 # Parking Function
 
 - [Is Partial Parking Function](is-partial-parking-function.md)

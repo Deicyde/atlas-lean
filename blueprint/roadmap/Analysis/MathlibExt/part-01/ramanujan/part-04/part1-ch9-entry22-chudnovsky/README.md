@@ -1,3 +1,7 @@
+---
+article_id: af_e9cb566998d348ea15b2b8fb
+---
+
 # Part1 Ch9 Entry22 Chudnovsky
 
 - [Chapter9 Chi3 Term eq entry21](chapter9-chi3-term-eq-entry21.md)

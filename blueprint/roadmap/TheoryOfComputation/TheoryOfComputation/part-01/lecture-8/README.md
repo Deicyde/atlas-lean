@@ -1,3 +1,7 @@
+---
+article_id: af_b1a2000fe092d772ae47cdde
+---
+
 # Lecture 8
 
 - [Theorem (Lecture 8)](027-theorem.md)

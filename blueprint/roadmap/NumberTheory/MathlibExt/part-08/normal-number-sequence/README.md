@@ -1,3 +1,7 @@
+---
+article_id: af_b373641500b99201a247e4be
+---
+
 # Normal Number Sequence
 
 - [Normal Seq](normal-seq.md)

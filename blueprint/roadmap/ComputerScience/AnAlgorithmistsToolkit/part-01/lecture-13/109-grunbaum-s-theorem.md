@@ -1,4 +1,5 @@
 ---
+article_id: af_2e3afbc4b05dbc2b27e25548
 declaration: theorem
 origin: cited
 lean: GrunbaumsTheorem.grunbaum_theorem

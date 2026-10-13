@@ -1,4 +1,5 @@
 ---
+article_id: af_be1497729a0ea6fa0beee95a
 declaration: theorem
 origin: cited
 lean: Supersingular.supersingular_iff_card_eq

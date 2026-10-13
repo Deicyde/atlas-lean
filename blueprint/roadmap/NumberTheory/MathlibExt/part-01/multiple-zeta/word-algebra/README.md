@@ -1,3 +1,7 @@
+---
+article_id: af_b680e07db47bfb9d5db8bb05
+---
+
 # Word Algebra
 
 - [X Word](x-word.md)

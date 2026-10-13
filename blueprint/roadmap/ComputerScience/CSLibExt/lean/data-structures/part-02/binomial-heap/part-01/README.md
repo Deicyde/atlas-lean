@@ -1,3 +1,7 @@
+---
+article_id: af_7b3713303a9d289ea2a4c003
+---
+
 # Part 1 of 3
 
 - [Binomial Tree](binomial-tree.md)

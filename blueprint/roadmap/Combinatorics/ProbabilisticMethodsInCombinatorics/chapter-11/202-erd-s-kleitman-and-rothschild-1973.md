@@ -1,4 +1,5 @@
 ---
+article_id: af_cef2d5e14d89130bb214d4c4
 declaration: theorem
 origin: cited
 lean: ErdosKleitmanRothschild.triangleFreeCount_upper_bound

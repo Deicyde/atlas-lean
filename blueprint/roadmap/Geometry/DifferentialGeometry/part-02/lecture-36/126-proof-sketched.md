@@ -1,4 +1,5 @@
 ---
+article_id: af_561a4fc72328711ddc1f46de
 declaration: theorem
 origin: cited
 lean: Geodesics.geodesic_existence

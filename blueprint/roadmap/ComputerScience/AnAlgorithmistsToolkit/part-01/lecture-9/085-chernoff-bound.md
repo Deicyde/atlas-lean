@@ -1,4 +1,5 @@
 ---
+article_id: af_f5451ba0921041d48c3a46d2
 declaration: theorem
 origin: cited
 lean: Concentration.chernoff_bound

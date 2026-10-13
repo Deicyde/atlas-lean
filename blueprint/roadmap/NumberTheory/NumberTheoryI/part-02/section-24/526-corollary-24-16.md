@@ -1,4 +1,5 @@
 ---
+article_id: af_c49423d9da2fee67ab84fa4b
 declaration: theorem
 origin: cited
 lean: ArtinUnramified.class_group_invariants_unramified

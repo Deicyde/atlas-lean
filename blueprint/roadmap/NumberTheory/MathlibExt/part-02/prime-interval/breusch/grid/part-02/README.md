@@ -1,3 +1,7 @@
+---
+article_id: af_e04fa7dee7317d619ce37993
+---
+
 # Part 2 of 2
 
 - [Jmin2 core](jmin2-core.md)

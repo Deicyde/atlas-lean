@@ -1,3 +1,7 @@
+---
+article_id: af_0863b57ad2f934d1e1dcda8a
+---
+
 # Hausdorff Dimension Function
 
 - [Hausdorff Dimension Function](hausdorff-dimension-function.md)

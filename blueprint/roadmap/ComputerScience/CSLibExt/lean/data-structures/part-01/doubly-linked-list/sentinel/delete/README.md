@@ -1,3 +1,7 @@
+---
+article_id: af_370b8632d2726ea0d42a333a
+---
+
 # Delete
 
 - [Sentinel Delete](sentinel-delete.md)

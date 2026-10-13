@@ -1,3 +1,7 @@
+---
+article_id: af_d582da8e961c76513558abc0
+---
+
 # Fibonomial Prime Power Valuation
 
 - [Padic Val Nat fib mul](padic-val-nat-fib-mul.md)

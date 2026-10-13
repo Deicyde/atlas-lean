@@ -1,4 +1,5 @@
 ---
+article_id: af_f0db2f52775f536346359790
 declaration: theorem
 origin: cited
 lean: genus_zero_iff_isomorphicToP1

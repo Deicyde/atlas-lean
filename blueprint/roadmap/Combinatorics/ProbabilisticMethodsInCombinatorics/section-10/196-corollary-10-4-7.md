@@ -1,4 +1,5 @@
 ---
+article_id: af_ae1dba77320635ebc4626d28
 declaration: theorem
 origin: cited
 lean: ShearerCombinatorial.shearer_set_family_inequality

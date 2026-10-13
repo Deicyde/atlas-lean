@@ -1,4 +1,5 @@
 ---
+article_id: af_034cb752deafd2c049991c8c
 declaration: theorem
 origin: cited
 lean: FourierAnalysis.fourier_transform_properties

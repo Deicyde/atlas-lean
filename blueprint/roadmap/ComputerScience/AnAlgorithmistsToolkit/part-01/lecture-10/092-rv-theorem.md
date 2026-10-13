@@ -1,4 +1,5 @@
 ---
+article_id: af_253757fd7c6d8ee97d0feb1a
 declaration: theorem
 origin: cited
 lean: RudelsonVershynin.rv_theorem

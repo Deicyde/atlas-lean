@@ -1,4 +1,5 @@
 ---
+article_id: af_4f30a9b2230184ce85fea2fd
 declaration: theorem
 origin: cited
 lean: NetworkFlow.flow_decomposition_exists

@@ -1,4 +1,5 @@
 ---
+article_id: af_12f2290011955df9fc51a304
 declaration: theorem
 origin: cited
 lean: DualIsogeny.dualIsogeny_comp

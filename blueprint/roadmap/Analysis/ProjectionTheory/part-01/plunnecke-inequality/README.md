@@ -1,3 +1,7 @@
+---
+article_id: af_5dcfffbf861af2de74b6aaf7
+---
+
 # Plunnecke inequality
 
 - [Lemma (Section: Plunnecke inequality)](047-lemma.md)

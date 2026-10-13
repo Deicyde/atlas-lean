@@ -1,4 +1,5 @@
 ---
+article_id: af_9c6510de8a0d4ef89e894059
 declaration: theorem
 origin: cited
 lean: Hasse.hasse_theorem_ec

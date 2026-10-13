@@ -1,4 +1,5 @@
 ---
+article_id: af_4dc79aecd74ef26d5de499fd
 declaration: theorem
 origin: cited
 lean: OrientationTheorem.orientation_theorem_abstract

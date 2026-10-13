@@ -1,4 +1,5 @@
 ---
+article_id: af_5d166051b9e68e1907420d6f
 declaration: def
 origin: cited
 lean: Definition_1_18_1_FiniteAbelianCategory

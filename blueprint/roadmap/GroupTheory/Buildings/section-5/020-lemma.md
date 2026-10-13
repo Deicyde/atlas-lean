@@ -1,4 +1,5 @@
 ---
+article_id: af_e7066fb512caca74e5e94185
 declaration: theorem
 origin: cited
 lean: GeneralizedBNPair.TypePreservingImpliesGlobal

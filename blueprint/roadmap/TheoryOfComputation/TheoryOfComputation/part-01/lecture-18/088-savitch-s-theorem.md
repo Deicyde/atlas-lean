@@ -1,4 +1,5 @@
 ---
+article_id: af_9bcfeb74569550b6ff1c73e0
 declaration: theorem
 origin: cited
 lean: SpaceComplexity.savitch

@@ -1,4 +1,5 @@
 ---
+article_id: af_fd3849e2845ccb9e7c129d45
 declaration: theorem
 origin: cited
 lean: globalization_equivalence_fully_faithful

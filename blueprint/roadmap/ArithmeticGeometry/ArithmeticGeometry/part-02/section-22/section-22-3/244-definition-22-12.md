@@ -1,4 +1,5 @@
 ---
+article_id: af_ea6ec04416b4126cffd6f72d
 declaration: def
 origin: cited
 lean: FunctionFieldAdeleRing.WeilDifferentialSpace

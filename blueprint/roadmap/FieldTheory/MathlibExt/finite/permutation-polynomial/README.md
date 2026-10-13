@@ -1,3 +1,7 @@
+---
+article_id: af_b59373c7d9e7d0c396013684
+---
+
 # Permutation Polynomial
 
 - [Is Permutation Polynomial](is-permutation-polynomial.md)

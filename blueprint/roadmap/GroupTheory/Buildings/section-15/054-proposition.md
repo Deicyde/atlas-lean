@@ -1,4 +1,5 @@
 ---
+article_id: af_98e59b0b1e888ccc57bea091
 declaration: theorem
 origin: cited
 lean: unique_retraction_D_to_C

@@ -1,4 +1,5 @@
 ---
+article_id: af_c2fe4530ca4754bc4e8ec982
 declaration: theorem
 origin: cited
 lean: kolmogorov_three_series_theorem

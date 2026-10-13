@@ -1,3 +1,7 @@
+---
+article_id: af_2cbbfbe26b37c4b4a1129c2e
+---
+
 # Fermat Quotient
 
 - [Fermat Quotient](fermat-quotient.md)

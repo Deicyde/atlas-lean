@@ -1,4 +1,5 @@
 ---
+article_id: af_43e6697e80a6576db001f6eb
 declaration: theorem
 origin: cited
 lean: Elliptic_Curves.Deuring.theorem_21_12

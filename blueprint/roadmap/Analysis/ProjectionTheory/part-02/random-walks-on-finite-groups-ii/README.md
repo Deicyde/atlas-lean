@@ -1,3 +1,7 @@
+---
+article_id: af_90b8a18ccaad504ebd6e5e20
+---
+
 # Random walks on finite groups II
 
 - [Lemma (Section: Random walks on finite groups II)](080-lemma.md)

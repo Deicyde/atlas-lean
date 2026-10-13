@@ -1,4 +1,5 @@
 ---
+article_id: af_3df0b0e6cf17b1d9f49ba045
 declaration: theorem
 origin: cited
 lean: normal_model_maxdeg

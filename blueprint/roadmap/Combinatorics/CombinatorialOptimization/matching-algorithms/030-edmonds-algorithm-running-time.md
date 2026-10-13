@@ -1,4 +1,5 @@
 ---
+article_id: af_8ca90ea3f45ac4e64afd49f5
 declaration: theorem
 origin: cited
 lean: SimpleGraph.edmonds_algorithm_runtime

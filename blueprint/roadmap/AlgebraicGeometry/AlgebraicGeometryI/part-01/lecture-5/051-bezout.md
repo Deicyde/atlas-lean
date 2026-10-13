@@ -1,4 +1,5 @@
 ---
+article_id: af_49014e25a39cc6c591680fea
 declaration: theorem
 origin: cited
 lean: projective_bezout_multiplicity_sum

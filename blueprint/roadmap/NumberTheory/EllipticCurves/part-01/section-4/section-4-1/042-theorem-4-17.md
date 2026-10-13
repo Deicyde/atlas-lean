@@ -1,4 +1,5 @@
 ---
+article_id: af_3f34c9f605920fc90a9b3f7f
 declaration: theorem
 origin: cited
 lean: ProjectiveCurve.morphism_surjective_or_constant

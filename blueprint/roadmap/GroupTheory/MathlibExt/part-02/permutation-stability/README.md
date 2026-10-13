@@ -1,3 +1,7 @@
+---
+article_id: af_8087a61c3b929a080f1ed0a6
+---
+
 # Permutation Stability
 
 - [Normalized Hamming Distance](normalized-hamming-distance.md)

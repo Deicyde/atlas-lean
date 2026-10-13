@@ -1,4 +1,5 @@
 ---
+article_id: af_003b41b1b22a404f859f178c
 declaration: theorem
 origin: cited
 lean: AffineCoxeter.cor_affine_coxeter_isometry_normalized

@@ -1,4 +1,5 @@
 ---
+article_id: af_483e134fee4a9cd12035489c
 declaration: theorem
 origin: cited
 lean: Mestre.theorem_7_7

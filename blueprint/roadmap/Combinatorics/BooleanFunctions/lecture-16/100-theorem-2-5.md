@@ -1,4 +1,5 @@
 ---
+article_id: af_c22a0732f8ab84840d80cdee
 declaration: theorem
 origin: cited
 lean: BooleanFourier.majority_is_stablest_real_valued

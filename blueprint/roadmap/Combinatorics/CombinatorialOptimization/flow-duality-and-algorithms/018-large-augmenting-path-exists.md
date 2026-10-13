@@ -1,4 +1,5 @@
 ---
+article_id: af_b1c10f78425049c43b59566e
 declaration: theorem
 origin: cited
 lean: NetworkFlow.large_augmenting_path

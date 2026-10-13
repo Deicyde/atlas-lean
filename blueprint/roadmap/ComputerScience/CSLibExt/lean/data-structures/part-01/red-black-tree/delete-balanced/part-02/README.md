@@ -1,3 +1,7 @@
+---
+article_id: af_cb70002abe2ef9bc55dcc3ce
+---
+
 # Part 2 of 2
 
 - [Ordered delete Bal](ordered-delete-bal.md)

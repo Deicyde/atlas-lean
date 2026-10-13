@@ -1,4 +1,5 @@
 ---
+article_id: af_6c59d4c8948a6772bb781f6e
 declaration: theorem
 origin: cited
 lean: TensorChainComplex.algebraic_kunneth

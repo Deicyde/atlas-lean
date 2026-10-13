@@ -1,4 +1,5 @@
 ---
+article_id: af_08bbdf4d25633d79ddee0f63
 declaration: theorem
 origin: cited
 lean: ArithmeticGeometry.iso_P1_iff_Pic0_trivial_of_two_rational_points

@@ -1,3 +1,7 @@
+---
+article_id: af_32b607a2328619dd911e833b
+---
+
 # Section 1.13
 
 - [Proposition 1.13.1](030-proposition-1-13-1.md)

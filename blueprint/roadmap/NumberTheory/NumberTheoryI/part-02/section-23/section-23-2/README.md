@@ -1,3 +1,7 @@
+---
+article_id: af_97fb797f984ae724b99c306d
+---
+
 # Section 23.2
 
 - [Definition 23.10](454-definition-23-10.md)

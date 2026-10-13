@@ -1,3 +1,7 @@
+---
+article_id: af_82d90f6d62e852753270cc4b
+---
+
 # Section 2
 
 - [Conjecture 2.1](004-conjecture-2-1.md)

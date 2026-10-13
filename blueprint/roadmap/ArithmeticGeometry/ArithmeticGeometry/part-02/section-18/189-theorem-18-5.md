@@ -1,4 +1,5 @@
 ---
+article_id: af_53566ef19f25cf9cd9cbc8d1
 declaration: theorem
 origin: cited
 lean: ValuationSubring.ringKrullDim_add_one_le_of_lt

@@ -1,4 +1,5 @@
 ---
+article_id: af_2160241b5678ada3e024087d
 declaration: theorem
 origin: cited
 lean: GeometryOfNumbers.fundamental_domain_measure_eq

@@ -1,4 +1,5 @@
 ---
+article_id: af_10c0156b90110f11f4c4dd1e
 declaration: class
 origin: cited
 lean: LocalArtinReciprocity.LocalExistenceTheorem

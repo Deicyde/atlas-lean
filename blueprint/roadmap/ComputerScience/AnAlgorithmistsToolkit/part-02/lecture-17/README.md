@@ -1,3 +1,7 @@
+---
+article_id: af_ac2f62d28be3ef60a5bb4b2f
+---
+
 # Lecture 17
 
 - [Definition 2 (c-Lipschitz)](116-c-lipschitz.md)

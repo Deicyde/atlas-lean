@@ -1,4 +1,5 @@
 ---
+article_id: af_9691a1b58cd9a9a14ed32d5e
 declaration: def
 origin: cited
 statement: formalized
@@ -8,7 +9,7 @@ lean: MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.intersectionMu
 # Intersection Multiplicity
 
 Intersection multiplicity at a projective point of homogeneous
-polynomials, via the affine-cone construction. `Module.length` over `K`
+polynomials, via the affine-cone construction. `Module.length` over the local ring
 returns `⊤` on non-proper / positive-dimensional components and a
 natural number on a zero-dimensional intersection point.
 

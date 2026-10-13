@@ -1,3 +1,7 @@
+---
+article_id: af_39aad9dac617685800111093
+---
+
 # Lattice Discriminant
 
 - [Lattice Discriminant Set](lattice-discriminant-set.md)

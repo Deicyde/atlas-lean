@@ -1,4 +1,5 @@
 ---
+article_id: af_bd93058527c4eac2771ffe5a
 declaration: theorem
 origin: cited
 lean: AlexanderDuality.cechCohomology_compact_euclidean_top_degree_eq_zero

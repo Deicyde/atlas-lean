@@ -1,3 +1,7 @@
+---
+article_id: af_36e962352c216de18459a40d
+---
+
 # The Correspondence Theorem
 
 - [Definition (The Correspondence Theorem, Normal Subgroups)](008-definition.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_2b7dbb1940a2b05325e416f9
+---
+
 # Lecture 24
 
 - [Polynomial Lemma](106-polynomial-lemma.md)
