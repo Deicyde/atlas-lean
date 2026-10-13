@@ -1,3 +1,7 @@
+---
+article_id: af_93572edd08f17ef51faed75e
+---
+
 # Chapter 1, Lecture 10
 
 - [Lemma 10.1 (Sturm-Hurwitz)](036-sturm-hurwitz.md)

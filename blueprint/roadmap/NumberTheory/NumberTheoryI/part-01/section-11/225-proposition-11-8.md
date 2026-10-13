@@ -1,4 +1,5 @@
 ---
+article_id: af_645d131cb751fb055f25de7b
 declaration: theorem
 origin: cited
 lean: tamelyRamified_tower_iff

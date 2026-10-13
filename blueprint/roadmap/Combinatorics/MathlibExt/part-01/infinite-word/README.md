@@ -1,3 +1,7 @@
+---
+article_id: af_146282d1ac0840c777d431a0
+---
+
 # Infinite Word
 
 - [Cloitre Sequence](cloitre-sequence/README.md)

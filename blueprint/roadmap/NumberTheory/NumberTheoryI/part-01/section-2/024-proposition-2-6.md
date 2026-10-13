@@ -1,4 +1,5 @@
 ---
+article_id: af_3c40da057cd8a94afbfd37da
 declaration: theorem
 origin: cited
 lean: prop_2_6_lattice_eq_inter_localizations

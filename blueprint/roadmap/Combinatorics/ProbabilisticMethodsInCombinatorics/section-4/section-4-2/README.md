@@ -1,3 +1,7 @@
+---
+article_id: af_dc4eb40d4355032012d58e75
+---
+
 # Section 4.2
 
 - [Definition 4.2.7](044-definition-4-2-7.md)

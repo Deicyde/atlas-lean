@@ -1,3 +1,7 @@
+---
+article_id: af_d74fbcdf7c385fa7811e1f7d
+---
+
 # Sign Condition Number Decay
 
 - [Is Subpolynomial](is-subpolynomial.md)

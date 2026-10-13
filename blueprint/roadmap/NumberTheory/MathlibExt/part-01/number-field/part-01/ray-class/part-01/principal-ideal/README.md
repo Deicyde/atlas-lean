@@ -1,3 +1,7 @@
+---
+article_id: af_dfbbc445c2cf204dab566c48
+---
+
 # Principal Ideal
 
 - [Principal Ray Ideal Map](principal-ray-ideal-map.md)

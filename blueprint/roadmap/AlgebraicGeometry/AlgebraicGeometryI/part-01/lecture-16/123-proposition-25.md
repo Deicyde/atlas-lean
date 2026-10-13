@@ -1,4 +1,5 @@
 ---
+article_id: af_6c0d7821a1f15d519c5aaa86
 declaration: theorem
 origin: cited
 lean: proposition_25_principal_divisor_deg_zero

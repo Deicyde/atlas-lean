@@ -1,3 +1,7 @@
+---
+article_id: af_36f809abcd8d23d8446acfef
+---
+
 # Odd Distance Graph Infinite Chromatic Wanted
 
 - [Odd Distance Graph](odd-distance-graph.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_11764ea869068a1d318c0eff
 declaration: theorem
 origin: cited
 lean: BrownianMotion.markov_property_condExp

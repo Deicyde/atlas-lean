@@ -1,3 +1,7 @@
+---
+article_id: af_bd5c8c5b85a1b6bf901df2d3
+---
+
 # Edge Coloring to Longest Cycle
 
 - [Edge Coloring](edge-coloring/README.md)

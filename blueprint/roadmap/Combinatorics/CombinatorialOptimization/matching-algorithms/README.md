@@ -1,3 +1,7 @@
+---
+article_id: af_555c46330d1f8d5553c4c7e3
+---
+
 # Matching Algorithms
 
 - [Theorem 1 (Hall, perfect matching condition)](021-hall-perfect-matching-condition.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_ee10b9a714af8520cf22da4b
 declaration: theorem
 origin: cited
 lean: CWComplex.prescribed_homology

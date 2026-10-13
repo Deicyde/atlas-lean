@@ -1,4 +1,5 @@
 ---
+article_id: af_7f4c8223f897d0611a2d8596
 declaration: theorem
 origin: cited
 lean: HeckeEigenformBasis.corollary_24_15

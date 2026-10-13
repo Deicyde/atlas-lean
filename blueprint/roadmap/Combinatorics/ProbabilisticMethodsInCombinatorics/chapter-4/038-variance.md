@@ -1,4 +1,5 @@
 ---
+article_id: af_db4d91ba446297c8fbb053db
 declaration: abbrev
 origin: cited
 lean: SecondMoment.Var

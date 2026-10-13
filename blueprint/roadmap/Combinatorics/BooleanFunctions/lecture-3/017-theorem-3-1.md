@@ -1,4 +1,5 @@
 ---
+article_id: af_7ec52453e427e56093cf17c9
 declaration: theorem
 origin: cited
 lean: BooleanFourier.friedgut_l2_bridge

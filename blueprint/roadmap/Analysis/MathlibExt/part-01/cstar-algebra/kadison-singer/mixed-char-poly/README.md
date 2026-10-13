@@ -1,3 +1,7 @@
+---
+article_id: af_a2f9335c333d4e6509ade171
+---
+
 # Mixed Char Poly
 
 - [Mixed Det Polynomial](mixed-det-polynomial.md)

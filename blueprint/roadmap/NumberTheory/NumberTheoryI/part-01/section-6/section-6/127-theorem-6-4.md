@@ -1,4 +1,5 @@
 ---
+article_id: af_d1998f0ebed8a3d29794b9ed
 declaration: theorem
 origin: cited
 lean: moduleIndex_eq_prod

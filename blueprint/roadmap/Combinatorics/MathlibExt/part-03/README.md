@@ -1,3 +1,7 @@
+---
+article_id: af_c35165b83cdbbea5bcfd4623
+---
+
 # KCyclic Partition to Von Szily Super Catalan
 
 - [KCyclic Partition](kcyclic-partition/README.md)

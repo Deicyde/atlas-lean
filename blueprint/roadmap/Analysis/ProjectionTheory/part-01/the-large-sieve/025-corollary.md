@@ -1,4 +1,5 @@
 ---
+article_id: af_98a28f627e56133dd5a56214
 declaration: theorem
 origin: cited
 lean: LargeSieve.large_sieve_equidistribution_mod_primes

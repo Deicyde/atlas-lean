@@ -1,3 +1,7 @@
+---
+article_id: af_733c28a86b0b775e33040825
+---
+
 # Bisection
 
 - [Is Bisection Sequence](is-bisection-sequence.md)

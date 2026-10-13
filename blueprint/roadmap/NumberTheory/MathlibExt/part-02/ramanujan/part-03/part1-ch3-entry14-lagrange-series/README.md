@@ -1,3 +1,7 @@
+---
+article_id: af_d4af0276b441808b405387cf
+---
+
 # Part1 Ch3 Entry14 Lagrange Series
 
 - [Lagrange Series Coefficient](lagrange-series-coefficient.md)

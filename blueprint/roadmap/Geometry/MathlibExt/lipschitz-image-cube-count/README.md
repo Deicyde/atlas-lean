@@ -1,3 +1,7 @@
+---
+article_id: af_5aee04e090e2ddbf97f31e1a
+---
+
 # Lipschitz Image Cube Count
 
 - [Integer Cube Set](integer-cube-set.md)

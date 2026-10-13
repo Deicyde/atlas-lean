@@ -1,3 +1,7 @@
+---
+article_id: af_5517ead5dfb0d07ce228943f
+---
+
 # Oracles and P versus NP to Lecture 26
 
 - [Oracles and P versus NP](oracles-and-p-versus-np/README.md)

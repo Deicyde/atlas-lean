@@ -1,3 +1,7 @@
+---
+article_id: af_7d4b837d2f00b7dc8f4cd7e1
+---
+
 # Egyptian Fraction
 
 - [Is Nondecreasing Egyptian](is-nondecreasing-egyptian.md)

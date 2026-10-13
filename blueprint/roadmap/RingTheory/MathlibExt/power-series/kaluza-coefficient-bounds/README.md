@@ -1,3 +1,7 @@
+---
+article_id: af_aed43c418d0337af42e99fcd
+---
+
 # Kaluza Coefficient Bounds
 
 - [Has Positive Log Convex Coefficients](has-positive-log-convex-coefficients.md)

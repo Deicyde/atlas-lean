@@ -1,4 +1,5 @@
 ---
+article_id: af_86345c70e42af0c52de21db7
 declaration: theorem
 origin: cited
 lean: TuringMachine.recognizable_complement_decidable

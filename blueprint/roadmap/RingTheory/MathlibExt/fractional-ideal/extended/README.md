@@ -1,3 +1,7 @@
+---
+article_id: af_6b467987b106cb782facd387
+---
+
 # Extended
 
 - [Localized' div of fg](localized-div-of-fg.md)

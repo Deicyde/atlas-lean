@@ -1,4 +1,5 @@
 ---
+article_id: af_d3016dcab4579a01ba452a3f
 declaration: theorem
 origin: cited
 lean: gAction_determined_by_gkModule

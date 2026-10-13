@@ -1,4 +1,5 @@
 ---
+article_id: af_c076a601e7b9d4559ad00df0
 declaration: theorem
 origin: cited
 lean: Rigollet.Chapter4.Thm_4_6.theorem_4_6

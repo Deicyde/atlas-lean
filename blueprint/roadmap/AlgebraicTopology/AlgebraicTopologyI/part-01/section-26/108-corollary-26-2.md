@@ -1,4 +1,5 @@
 ---
+article_id: af_08108509e31be33f76b614d6
 declaration: theorem
 origin: cited
 lean: SingularCohomology.singularHomology_commGradedCoalgebra

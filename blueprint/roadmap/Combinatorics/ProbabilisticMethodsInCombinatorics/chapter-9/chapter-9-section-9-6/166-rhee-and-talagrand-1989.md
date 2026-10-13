@@ -1,4 +1,5 @@
 ---
+article_id: af_35068a7dd646a3bdab22fe1e
 declaration: theorem
 origin: cited
 lean: RheeTalagrand.rhee_talagrand_1989

@@ -1,4 +1,5 @@
 ---
+article_id: af_a1c7310f52bea0489cda879c
 declaration: theorem
 origin: cited
 lean: CohomologyKunneth.totalCohomologyCrossProduct_bijective

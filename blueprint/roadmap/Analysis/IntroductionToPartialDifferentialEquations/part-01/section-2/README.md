@@ -1,3 +1,7 @@
+---
+article_id: af_b6e43663915193c2ff1ba401
+---
+
 # Section 2
 
 - [Lemma 2.0.2 (Invariance of solutions to the heat equation under translations and parabolic dilations)](025-invariance-of-solutions-to-the-heat-equa.md)

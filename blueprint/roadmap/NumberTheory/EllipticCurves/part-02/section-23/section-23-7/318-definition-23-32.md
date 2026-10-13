@@ -1,4 +1,5 @@
 ---
+article_id: af_fac81eabf343cae2ff3c1581
 declaration: def
 origin: cited
 lean: WeilPairing.IsEmbeddingDegree

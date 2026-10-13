@@ -1,3 +1,7 @@
+---
+article_id: af_5d0ee40d10926bf4efe625d0
+---
+
 # Part 1 of 2
 
 - [Open Addressing](open-addressing.md)

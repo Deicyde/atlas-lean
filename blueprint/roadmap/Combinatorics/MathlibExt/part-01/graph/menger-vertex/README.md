@@ -1,3 +1,7 @@
+---
+article_id: af_a206dbb99f2403cb6ca678bf
+---
+
 # Menger Vertex
 
 - [Menger vertex](menger-vertex.md)

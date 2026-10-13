@@ -1,3 +1,7 @@
+---
+article_id: af_c0cad808a51459d61fbbd1ac
+---
+
 # Supremum Of Selector Processes Wanted
 
 - [Binomial Set Distribution](binomial-set-distribution.md)

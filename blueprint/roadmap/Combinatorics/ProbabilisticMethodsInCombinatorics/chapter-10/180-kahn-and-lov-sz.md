@@ -1,4 +1,5 @@
 ---
+article_id: af_36e91eff19afd93297cfcfdd
 declaration: theorem
 origin: cited
 lean: KahnLovasz.kahn_lovasz_inequality

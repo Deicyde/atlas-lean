@@ -1,3 +1,7 @@
+---
+article_id: af_cdb08ae10806b021b647878d
+---
+
 # Lecture 6
 
 - [Claim 2.1 (Lecture 6, Section 2)](041-claim-2-1.md)

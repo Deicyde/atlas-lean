@@ -1,4 +1,5 @@
 ---
+article_id: af_c8f8926fffc80451961070b9
 declaration: theorem
 origin: cited
 lean: corollary_9_10_expected_bound

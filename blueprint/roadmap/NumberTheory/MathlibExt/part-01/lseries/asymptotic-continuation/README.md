@@ -1,3 +1,7 @@
+---
+article_id: af_6e7e1bc0dc51d838eb22fb79
+---
+
 # Asymptotic Continuation
 
 - [Linear Asymptotic Dirichlet Continuation](linear-asymptotic-dirichlet-continuation.md)

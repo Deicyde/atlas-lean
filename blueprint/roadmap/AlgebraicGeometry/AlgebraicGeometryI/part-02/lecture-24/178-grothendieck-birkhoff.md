@@ -1,4 +1,5 @@
 ---
+article_id: af_714fbc8bd70edcdbfd361372
 declaration: theorem
 origin: cited
 lean: GrothendieckBirkhoff.thm24_1_grothendieck_birkhoff

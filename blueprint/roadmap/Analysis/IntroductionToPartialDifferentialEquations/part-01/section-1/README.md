@@ -1,3 +1,7 @@
+---
+article_id: af_4dc958d8ca8108275a0949c1
+---
+
 # Section 1
 
 - [Proposition 1.0.4 (Properties of $\Gamma_{D}(t, x)$)](020-t-x.md)

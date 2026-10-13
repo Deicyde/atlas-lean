@@ -1,4 +1,5 @@
 ---
+article_id: af_786ff854f597805292b218d7
 declaration: def
 origin: cited
 lean: AlgebraicTopologyI.SingularRelativeHomology

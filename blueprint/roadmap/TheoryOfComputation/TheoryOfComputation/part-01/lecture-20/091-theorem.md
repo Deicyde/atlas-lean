@@ -1,4 +1,5 @@
 ---
+article_id: af_b0712847329a8d30bbcadf85
 declaration: theorem
 origin: cited
 lean: NLSubsetP.nl_subset_p

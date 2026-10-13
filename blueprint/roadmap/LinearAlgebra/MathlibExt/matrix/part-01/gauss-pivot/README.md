@@ -1,3 +1,7 @@
+---
+article_id: af_19de346a857588f7a6063cc1
+---
+
 # Gauss Pivot
 
 - [Exists unit Lower Triangular mul submatrix is Row Echelon](exists-unit-lower-triangular-mul-submatr.md)

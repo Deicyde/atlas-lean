@@ -1,3 +1,7 @@
+---
+article_id: af_7dea5a5d1915a54fc26cd2d4
+---
+
 # Lecture 35
 
 - [Theorem 35.1 (Hopf; no proof)](117-hopf-no-proof.md)

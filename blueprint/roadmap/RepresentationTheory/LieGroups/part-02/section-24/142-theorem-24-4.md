@@ -1,4 +1,5 @@
 ---
+article_id: af_c53fbab392758dd99363c142
 declaration: theorem
 origin: cited
 lean: ideals_submodules_lattice_iso

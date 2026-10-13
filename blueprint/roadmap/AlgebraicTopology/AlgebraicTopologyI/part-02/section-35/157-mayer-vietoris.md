@@ -1,4 +1,5 @@
 ---
+article_id: af_47c574f5f4dd061d57f29d45
 declaration: theorem
 origin: cited
 lean: CechCohomology.mayerVietoris

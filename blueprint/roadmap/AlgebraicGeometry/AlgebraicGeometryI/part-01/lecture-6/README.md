@@ -1,3 +1,7 @@
+---
+article_id: af_146da9b8d80187c41267725e
+---
+
 # Lecture 6
 
 - [Definition 14](056-definition-14.md)

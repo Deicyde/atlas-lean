@@ -1,3 +1,7 @@
+---
+article_id: af_b8f4f90ae63f592cb3979779
+---
+
 # Intermediate Field
 
 - [Exists Unique intermediate Field finrank](exists-unique-intermediate-field-finrank.md)

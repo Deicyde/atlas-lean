@@ -1,3 +1,7 @@
+---
+article_id: af_d1124a0c92db3955476b0b3f
+---
+
 # The Fourier method in Euclidean space
 
 - [Lemma (Section: The Fourier method in Euclidean space)](011-lemma.md)

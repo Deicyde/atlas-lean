@@ -1,3 +1,7 @@
+---
+article_id: af_be46a6b38406ed021fac984b
+---
+
 # Part1 Ch6 Entry5 Digamma
 
 - [Chapter6 Section13 Example CTerm](chapter6-section13-example-cterm.md)

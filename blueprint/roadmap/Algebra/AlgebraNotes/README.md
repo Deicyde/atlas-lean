@@ -1,3 +1,7 @@
+---
+article_id: af_8f1f1c521735e705bf67e11d
+---
+
 # MIT RES.18-011 Algebra I Student Notes (Fall 2021)
 
 Statements selected from [MIT RES.18-011 Algebra I Student Notes (Fall 2021)](../../../sources/v1/AlgebraNotes.md) by ATLAS v1, in source order.

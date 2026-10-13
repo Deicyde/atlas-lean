@@ -1,3 +1,7 @@
+---
+article_id: af_b4453a3288ae7c0cc4d20043
+---
+
 # Place
 
 - [Place](place.md)

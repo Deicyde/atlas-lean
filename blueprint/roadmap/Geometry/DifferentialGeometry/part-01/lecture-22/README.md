@@ -1,3 +1,7 @@
+---
+article_id: af_54be5fd6abdbc22e38b840c9
+---
+
 # Lecture 22
 
 - [Definition 22.1](071-definition-22-1.md)

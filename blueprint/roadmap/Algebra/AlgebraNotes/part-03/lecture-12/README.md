@@ -1,3 +1,7 @@
+---
+article_id: af_bcecbadda5ccb00c17ab53d2
+---
+
 # Lecture 12
 
 - [Definition (Lecture 12, Section: Review)](107-definition.md)

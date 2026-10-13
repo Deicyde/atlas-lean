@@ -1,3 +1,7 @@
+---
+article_id: af_1c2027b6c2c730b10d480245
+---
+
 # Lecture 10
 
 - [Theorem 1 (RV Theorem)](092-rv-theorem.md)

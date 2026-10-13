@@ -1,3 +1,7 @@
+---
+article_id: af_8d41b6e9c00d1bd2d90be6db
+---
+
 # Section 4
 
 - [Theorem 4.1 (Harnack's inequality)](041-harnack-s-inequality.md)

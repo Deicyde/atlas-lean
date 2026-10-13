@@ -1,3 +1,7 @@
+---
+article_id: af_872f81aa82a97ffb6b9c30e3
+---
+
 # Frobenius Generators
 
 - [Is Unramified Outside](is-unramified-outside.md)

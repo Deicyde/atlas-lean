@@ -1,3 +1,7 @@
+---
+article_id: af_4c64c67457e39d0fc2d3a14c
+---
+
 # Inscribed Rectangles Wanted
 
 - [Axis Aligned Rectangle Corners](axis-aligned-rectangle-corners.md)

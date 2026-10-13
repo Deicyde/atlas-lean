@@ -1,4 +1,5 @@
 ---
+article_id: af_a9b33a4fc496738d73319f7f
 declaration: theorem
 origin: cited
 lean: LogSpace.nl_config_compute

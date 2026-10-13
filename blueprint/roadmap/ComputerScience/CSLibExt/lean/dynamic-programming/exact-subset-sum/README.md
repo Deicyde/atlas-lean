@@ -1,3 +1,7 @@
+---
+article_id: af_d8bd327ba0e906ba4bd567c1
+---
+
 # Exact Subset Sum
 
 - [Exact Subset Sum Sums](exact-subset-sum-sums.md)

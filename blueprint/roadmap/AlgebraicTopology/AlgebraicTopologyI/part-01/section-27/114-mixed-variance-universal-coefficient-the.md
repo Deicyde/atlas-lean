@@ -1,4 +1,5 @@
 ---
+article_id: af_f8c1863685d14a56891624a1
 declaration: theorem
 origin: cited
 lean: UniversalCoefficientTheorem.cohomologyUCT

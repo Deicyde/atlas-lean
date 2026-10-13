@@ -1,3 +1,7 @@
+---
+article_id: af_93baeda931dc265751d674af
+---
+
 # Part1 Ch7 Entry8 Bernoullibound
 
 - [Chapter7 Integer Phi](chapter7-integer-phi.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_be81bee5fe64e4830d13f3f7
+---
+
 # Lecture 1
 
 - [Theorem 1.1 (Essential Nullstellensatz)](001-essential-nullstellensatz.md)

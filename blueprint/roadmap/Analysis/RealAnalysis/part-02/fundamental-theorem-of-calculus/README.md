@@ -1,3 +1,7 @@
+---
+article_id: af_4b8a10d3601ac6e60c511ed5
+---
+
 # Fundamental Theorem of Calculus
 
 - [Theorem (Fundamental Theorem of Calculus) (Fundamental Theorem of Calculus section) (1)](078-fundamental-theorem-of-calculus.md)

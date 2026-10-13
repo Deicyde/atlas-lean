@@ -1,3 +1,7 @@
+---
+article_id: af_48e8a337b8e94559fa974270
+---
+
 # Section 4.5
 
 - [Theorem 4.5.1 (Hardy and Ramanujan 1917)](058-hardy-and-ramanujan-1917.md)

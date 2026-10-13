@@ -1,4 +1,5 @@
 ---
+article_id: af_3cbfe4c4cb54aef854c6dd70
 declaration: theorem
 origin: cited
 lean: PoincareDualityCompact.poincareDualityMap_bijective

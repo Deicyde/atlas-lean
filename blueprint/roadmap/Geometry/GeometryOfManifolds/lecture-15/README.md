@@ -1,3 +1,7 @@
+---
+article_id: af_0f33325d7ae42d24e8adbc93
+---
+
 # Lecture 15
 
 - [Definition 2 (Lecture 15, Section 1, Hodge Theory)](035-definition-2.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_66e55467beb3fbf471b5622b
 declaration: theorem
 origin: cited
 lean: OrdinarySupersingularClassification.theorem_13_8

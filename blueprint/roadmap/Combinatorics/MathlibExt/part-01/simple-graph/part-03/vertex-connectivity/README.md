@@ -1,3 +1,7 @@
+---
+article_id: af_ae185cbd9dee83c40c5edfc8
+---
+
 # Vertex Connectivity
 
 - [Is Vertex Connected](is-vertex-connected.md)

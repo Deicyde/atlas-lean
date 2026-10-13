@@ -1,3 +1,7 @@
+---
+article_id: af_54b8d957b0bb350986b36e33
+---
+
 # Cost
 
 - [Log2 heap Parent add one](log2-heap-parent-add-one.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_377e5db68bb7732cc34b1ce0
 declaration: theorem
 origin: cited
 lean: ConvolutionDensity.schwartz_dense_C0k

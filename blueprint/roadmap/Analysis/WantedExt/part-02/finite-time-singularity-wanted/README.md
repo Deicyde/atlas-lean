@@ -1,3 +1,7 @@
+---
+article_id: af_28ff42033f66cd71ad42eeb9
+---
+
 # Finite Time Singularity Wanted
 
 - [Is Bounded Fun On](is-bounded-fun-on.md)

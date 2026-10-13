@@ -1,3 +1,7 @@
+---
+article_id: af_ba7eda9767b4417cc6012d64
+---
+
 # Section 18
 
 - [Proposition 18.2](102-proposition-18-2.md)

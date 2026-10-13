@@ -1,3 +1,7 @@
+---
+article_id: af_ccf83e1a27c8a245a8a79e5b
+---
+
 # Isotropic Cube
 
 - [Interval Body](interval-body.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_cb7d5f0de695b79dde96d5ac
+---
+
 # Part 1 of 2
 
 - [Bool Cube](bool-cube.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_235c8f62a1fa291487c47ee6
 declaration: def
 origin: cited
 lean: DModulesII.daffine_equivariant_equiv

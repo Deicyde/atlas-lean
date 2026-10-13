@@ -1,4 +1,5 @@
 ---
+article_id: af_1e0499f8500c24306f8e43ce
 declaration: theorem
 origin: cited
 lean: ChernoffBound.chernoff_upper_tail_sharp

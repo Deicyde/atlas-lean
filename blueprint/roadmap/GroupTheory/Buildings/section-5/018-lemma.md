@@ -1,4 +1,5 @@
 ---
+article_id: af_1ef8eae29718f6ec4933c2a6
 declaration: def
 origin: cited
 lean: BNPair.quotientIso

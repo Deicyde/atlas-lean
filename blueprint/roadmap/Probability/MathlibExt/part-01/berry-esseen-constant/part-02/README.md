@@ -1,3 +1,7 @@
+---
+article_id: af_774eaf242953b20d4584986d
+---
+
 # Part 2 of 2
 
 - [Symmetric Bernoulli integral](symmetric-bernoulli-integral.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_a0f05ba9b7bc11c629a407cc
+---
+
 # Lecture 24
 
 - [Definition 3 (Lecture 24, Section 3 (Dirac Operator))](066-definition-3.md)

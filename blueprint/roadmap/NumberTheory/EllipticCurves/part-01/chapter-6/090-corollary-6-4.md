@@ -1,4 +1,5 @@
 ---
+article_id: af_cdb2b08f600968a0ac18bd6f
 declaration: theorem
 origin: cited
 lean: EllipticCurve.finite_subgroup_two_cyclic

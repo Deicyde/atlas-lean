@@ -1,3 +1,7 @@
+---
+article_id: af_a088130cdf9414081db62b98
+---
+
 # Extend
 
 - [Is Edge Bounded Shortest Path Weight](is-edge-bounded-shortest-path-weight.md)

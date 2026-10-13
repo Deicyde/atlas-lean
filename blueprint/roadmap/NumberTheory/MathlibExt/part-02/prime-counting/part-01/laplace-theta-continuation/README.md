@@ -1,3 +1,7 @@
+---
+article_id: af_4c6ab1b9cb97a8cd0fd1a501
+---
+
 # Laplace Theta Continuation
 
 - [Shifted Log Dirichlet Continuation](shifted-log-dirichlet-continuation.md)

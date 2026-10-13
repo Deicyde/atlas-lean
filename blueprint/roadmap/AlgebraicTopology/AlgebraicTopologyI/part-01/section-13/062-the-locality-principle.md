@@ -1,4 +1,5 @@
 ---
+article_id: af_aba1643bd79aee757dd92cec
 declaration: theorem
 origin: cited
 lean: LocalityPrinciple.locality_principle

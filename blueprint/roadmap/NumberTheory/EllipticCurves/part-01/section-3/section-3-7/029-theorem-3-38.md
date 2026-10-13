@@ -1,4 +1,5 @@
 ---
+article_id: af_b56b3ba4e4a722dd2d4477a1
 declaration: theorem
 origin: cited
 lean: LongDivision.longDiv_complexity

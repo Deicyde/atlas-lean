@@ -1,4 +1,5 @@
 ---
+article_id: af_e37e7045dd307c01ce7e8cf5
 declaration: theorem
 origin: cited
 lean: time_hierarchy_theorem

@@ -1,3 +1,7 @@
+---
+article_id: af_90e19807fe26774e54740d49
+---
+
 # Jordan Totient
 
 - [Jordan Totient](jordan-totient.md)

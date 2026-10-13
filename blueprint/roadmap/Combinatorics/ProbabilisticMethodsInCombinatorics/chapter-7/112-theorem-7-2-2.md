@@ -1,4 +1,5 @@
 ---
+article_id: af_5289956529bcab27b37295a0
 declaration: theorem
 origin: cited
 lean: RandomGraphs.theorem_7_2_2

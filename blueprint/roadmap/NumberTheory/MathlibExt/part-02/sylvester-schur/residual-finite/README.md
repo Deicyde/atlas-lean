@@ -1,3 +1,7 @@
+---
+article_id: af_eb9d03b405a43a148ce71edf
+---
+
 # Residual Finite
 
 - [Exists prime dvd choose of scaled ternary erdos layers bound](exists-prime-dvd-choose-of-scaled-ternar.md)

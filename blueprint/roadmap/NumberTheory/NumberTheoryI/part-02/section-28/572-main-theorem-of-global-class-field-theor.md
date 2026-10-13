@@ -1,4 +1,5 @@
 ---
+article_id: af_848185c0f18809494f040810
 declaration: theorem
 origin: cited
 lean: globalCFT_main_theorem

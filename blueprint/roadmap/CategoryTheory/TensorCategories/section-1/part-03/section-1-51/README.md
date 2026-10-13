@@ -1,3 +1,7 @@
+---
+article_id: af_7ebcff552f70dd0b4fbe8d44
+---
+
 # Section 1.51
 
 - [Lemma 1.51.1](163-lemma-1-51-1.md)

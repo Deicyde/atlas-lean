@@ -1,3 +1,7 @@
+---
+article_id: af_f0a8e69fce3570147f8d3854
+---
+
 # Laplace Theta
 
 - [Prime Log Series](prime-log-series.md)

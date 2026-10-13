@@ -1,3 +1,7 @@
+---
+article_id: af_2b8bf5da05a8e296a8db3019
+---
+
 # Three Squares
 
 - [Three Square Representation Count](three-square-representation-count.md)

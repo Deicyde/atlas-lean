@@ -1,3 +1,7 @@
+---
+article_id: af_de0add6955b0899bf1c1b9e8
+---
+
 # Partition
 
 - [Andrews Mac Mahon Partition](andrews-macmahon-partition-identity.md)

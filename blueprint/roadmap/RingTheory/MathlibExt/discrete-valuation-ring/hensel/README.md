@@ -1,3 +1,7 @@
+---
+article_id: af_dd593877cefcc65fedd9498d
+---
+
 # Hensel
 
 - [Exists is Root sub mem maximal Ideal of is Unit derivative](exists-is-root-sub-mem-maximal-ideal-of.md)

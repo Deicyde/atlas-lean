@@ -1,4 +1,5 @@
 ---
+article_id: af_271637cab64ded61758eb31c
 declaration: theorem
 origin: cited
 lean: ProjectiveFunctors.proposition_22_5_i

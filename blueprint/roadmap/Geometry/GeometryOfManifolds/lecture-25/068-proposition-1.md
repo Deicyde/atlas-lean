@@ -1,4 +1,5 @@
 ---
+article_id: af_f903e27e98bda8b0c9131b29
 declaration: theorem
 origin: cited
 lean: gauge_action_preserves_solutions

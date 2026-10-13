@@ -1,3 +1,7 @@
+---
+article_id: af_a6399f3a84a3d89941ece4eb
+---
+
 # Maximal Ideal Graded Piece Mul
 
 - [Residue Field Mul Maximal Ideal Graded Piece](residue-field-mul-maximal-ideal-graded-p.md)

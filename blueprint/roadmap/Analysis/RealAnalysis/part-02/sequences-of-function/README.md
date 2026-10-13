@@ -1,3 +1,7 @@
+---
+article_id: af_c55fddac16081a4a05e9d843
+---
+
 # Sequences of Function
 
 - [Definition (Power series) (Sequences of Function, Power Series) (1)](084-power-series.md)

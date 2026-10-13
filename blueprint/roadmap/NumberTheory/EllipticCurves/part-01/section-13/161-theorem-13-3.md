@@ -1,4 +1,5 @@
 ---
+article_id: af_bdcdef8a67d71620fa78397a
 declaration: theorem
 origin: cited
 lean: OrdinarySupersingular.isSupersingular_iff_trace_dvd

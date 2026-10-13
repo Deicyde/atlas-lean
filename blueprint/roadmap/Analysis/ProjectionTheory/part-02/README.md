@@ -1,3 +1,7 @@
+---
+article_id: af_faa15abadd3555314c013f80
+---
+
 # Simple Bounds About $P_K(a to Sharp Projection Theorems III
 
 - [Simple Bounds About $P_K(a](simple-bounds-about-p-k-a/README.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_41ada943aece2abade06f738
 declaration: def
 origin: cited
 lean: VermaModule

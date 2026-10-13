@@ -1,4 +1,5 @@
 ---
+article_id: af_3be3d6372f9472cffc4ba118
 declaration: theorem
 origin: cited
 lean: GaussBonnetBoundary.gauss_bonnet_with_boundary

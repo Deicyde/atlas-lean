@@ -1,4 +1,5 @@
 ---
+article_id: af_f4892552a2ea9fbba9e955e7
 declaration: theorem
 origin: cited
 lean: MoserCorrectness.moser_correctness

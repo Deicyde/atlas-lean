@@ -1,4 +1,5 @@
 ---
+article_id: af_6e59452cbcfa00a8b011b031
 declaration: theorem
 origin: cited
 lean: Harris.harris_inequality_multiple_increasing

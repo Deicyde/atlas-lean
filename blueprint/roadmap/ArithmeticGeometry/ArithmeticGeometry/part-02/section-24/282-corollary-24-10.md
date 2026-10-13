@@ -1,4 +1,5 @@
 ---
+article_id: af_e9dd34ad6860c169e64f56a1
 declaration: theorem
 origin: cited
 lean: nTorsion_finite_algClosure

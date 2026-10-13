@@ -1,3 +1,7 @@
+---
+article_id: af_b955e09a9fcd4d45d3f99e90
+---
+
 # Norm One Idele Class Group
 
 - [Norm One Principal Ideles](norm-one-principal-ideles.md)

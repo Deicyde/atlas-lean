@@ -1,3 +1,7 @@
+---
+article_id: af_1198c08f8f6d132caa72e569
+---
+
 # Chapter 6
 
 - [Theorem 6.1](088-theorem-6-1.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_800e3b541c27b963a82d3bd5
+---
+
 # Section 26
 
 - [Corollary 26.2](108-corollary-26-2.md)

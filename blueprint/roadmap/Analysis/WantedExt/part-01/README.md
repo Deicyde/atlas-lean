@@ -1,3 +1,7 @@
+---
+article_id: af_86d31db5476e749dbfdca61a
+---
+
 # Asymptotics to Dirichlet Space Polynomial Density Wanted
 
 - [Asymptotics](asymptotics/README.md)

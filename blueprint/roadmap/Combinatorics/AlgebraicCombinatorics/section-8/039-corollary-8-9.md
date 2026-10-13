@@ -1,4 +1,5 @@
 ---
+article_id: af_b751e7935c7912ffc65b4f32
 declaration: theorem
 origin: cited
 lean: PartitionCycles.partition_cycle_count

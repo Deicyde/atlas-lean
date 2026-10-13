@@ -1,3 +1,7 @@
+---
+article_id: af_91d7d8002e272620eef1af2d
+---
+
 # Lecture 2
 
 - [Theorem (Closure under concatenation)](002-closure-under-concatenation.md)

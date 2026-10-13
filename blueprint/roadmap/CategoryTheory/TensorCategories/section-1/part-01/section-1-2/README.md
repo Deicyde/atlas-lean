@@ -1,3 +1,7 @@
+---
+article_id: af_2e93f08424eee1e83dd3e287
+---
+
 # Section 1.2
 
 - [Proposition 1.2.1](004-proposition-1-2-1.md)

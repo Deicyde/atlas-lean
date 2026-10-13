@@ -1,3 +1,7 @@
+---
+article_id: af_a6ba65117f246943c1dcdbb1
+---
+
 # Independent Set
 
 - [Is Independent](is-independent.md)

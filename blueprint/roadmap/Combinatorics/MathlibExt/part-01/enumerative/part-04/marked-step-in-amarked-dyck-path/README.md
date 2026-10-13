@@ -1,3 +1,7 @@
+---
+article_id: af_7943c70a91bd817d902defbe
+---
+
 # Marked Step In AMarked Dyck Path
 
 - [Marked Dyck Step](marked-dyck-step.md)

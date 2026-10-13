@@ -1,4 +1,5 @@
 ---
+article_id: af_1cab6e5ab193bd45bcb23aac
 declaration: lemma
 origin: cited
 statement: formalized

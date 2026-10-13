@@ -1,3 +1,7 @@
+---
+article_id: af_4c496e3a419a2d7201e89a30
+---
+
 # Part 1 of 2
 
 - [Mem](mem.md)

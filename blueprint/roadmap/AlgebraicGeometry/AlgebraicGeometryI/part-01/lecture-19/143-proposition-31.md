@@ -1,4 +1,5 @@
 ---
+article_id: af_74eb9d5145ec4518113e8598
 declaration: theorem
 origin: cited
 lean: Proposition31_smooth_point_characterization

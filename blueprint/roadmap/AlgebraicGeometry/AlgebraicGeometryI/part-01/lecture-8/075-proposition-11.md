@@ -1,4 +1,5 @@
 ---
+article_id: af_e0e278efb5fbb73464d33ca4
 declaration: theorem
 origin: cited
 lean: HilbertFunctionGrowth.proposition_11

@@ -1,4 +1,5 @@
 ---
+article_id: af_7f71ddea622d5ccd57557437
 declaration: def
 origin: cited
 lean: corollary_1_22_6_rigid

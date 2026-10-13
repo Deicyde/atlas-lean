@@ -1,3 +1,7 @@
+---
+article_id: af_50e70b35b0be65e07eff61b5
+---
+
 # Section 24
 
 - [Theorem 24.1](514-theorem-24-1.md)

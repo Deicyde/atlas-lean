@@ -1,3 +1,7 @@
+---
+article_id: af_0b0b0c422f826cdce8255bed
+---
+
 # Quadratic Forms
 
 - [Difference Of Two Squares](nat-eq-sq-sub-sq-iff-not-eq-four-mul-add.md)

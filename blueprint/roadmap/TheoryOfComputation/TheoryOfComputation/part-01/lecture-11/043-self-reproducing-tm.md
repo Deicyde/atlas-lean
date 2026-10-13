@@ -1,4 +1,5 @@
 ---
+article_id: af_e8054555f637ac6ae96727ae
 declaration: theorem
 origin: cited
 lean: SelfReference.exists_self_reproducing_tm

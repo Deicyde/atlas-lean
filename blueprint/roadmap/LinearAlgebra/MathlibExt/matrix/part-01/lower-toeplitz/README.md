@@ -1,3 +1,7 @@
+---
+article_id: af_f63ae7549398cdd6072dcfcb
+---
+
 # Lower Toeplitz
 
 - [Lower Toeplitz](lower-toeplitz.md)

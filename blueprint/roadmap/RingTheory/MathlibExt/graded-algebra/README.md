@@ -1,3 +1,7 @@
+---
+article_id: af_0dcba86c55e7418de4db9f1d
+---
+
 # Graded Algebra
 
 - [Finite Homogeneous Generators](exists-finset-homogeneous-generators.md)

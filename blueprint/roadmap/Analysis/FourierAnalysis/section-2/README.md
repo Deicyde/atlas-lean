@@ -1,3 +1,7 @@
+---
+article_id: af_2cb62760c1c6cf1b481b2084
+---
+
 # Section 2
 
 - [Theorem 2 (Central Limit Theorem)](021-central-limit-theorem.md)

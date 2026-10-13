@@ -1,3 +1,7 @@
+---
+article_id: af_bfab701fb0d0bf4b361c3788
+---
+
 # Residue Class
 
 - [Prime Counting Mod](prime-counting-mod.md)

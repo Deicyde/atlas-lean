@@ -1,3 +1,7 @@
+---
+article_id: af_f32efc3357c359b3dee05b42
+---
+
 # Hardy Littlewood Prime Tuple
 
 - [Hardy Littlewood Residue Count](hardy-littlewood-residue-count.md)

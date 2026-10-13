@@ -1,4 +1,5 @@
 ---
+article_id: af_0c3a0ea0fd4d0400fb8460d1
 declaration: theorem
 origin: cited
 lean: sections_principle_Mathlib

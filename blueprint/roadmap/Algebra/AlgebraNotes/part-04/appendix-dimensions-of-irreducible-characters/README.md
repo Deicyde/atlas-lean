@@ -1,3 +1,7 @@
+---
+article_id: af_98fdc0be93c63fb072442495
+---
+
 # Appendix: Dimensions of Irreducible Characters
 
 - [Theorem (Appendix: Dimensions of Irreducible Characters)](172-theorem.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_815eba367efd6a4705f11bec
 declaration: def
 origin: cited
 lean: Proposition_2_3_3_exactModule_equiv_exactMonoidalFunctor

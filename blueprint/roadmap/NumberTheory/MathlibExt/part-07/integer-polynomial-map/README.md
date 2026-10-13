@@ -1,3 +1,7 @@
+---
+article_id: af_41e3b5fab1401944b464ce86
+---
+
 # Integer Polynomial Map
 
 - [Integer Polynomial Map](integer-polynomial-map.md)

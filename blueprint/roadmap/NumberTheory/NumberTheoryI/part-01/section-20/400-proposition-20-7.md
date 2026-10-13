@@ -1,4 +1,5 @@
 ---
+article_id: af_c2a0057389111b6a34902d78
 declaration: theorem
 origin: cited
 lean: KroneckerWeber.proposition_20_7_totally_wild_cyclic

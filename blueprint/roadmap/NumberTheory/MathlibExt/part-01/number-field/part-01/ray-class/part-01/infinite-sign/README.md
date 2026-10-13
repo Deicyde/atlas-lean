@@ -1,3 +1,7 @@
+---
+article_id: af_1168ce3f2b1fce70d169e10e
+---
+
 # Infinite Sign
 
 - [Sign At Real Place](sign-at-real-place.md)

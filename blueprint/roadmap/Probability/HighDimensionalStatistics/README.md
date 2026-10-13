@@ -1,3 +1,7 @@
+---
+article_id: af_75466152abc5b403c79f9d20
+---
+
 # MIT 18.S997 High-Dimensional Statistics (Spring 2015)
 
 Statements selected from [MIT 18.S997 High-Dimensional Statistics (Spring 2015)](../../../sources/v1/HighDimensionalStatistics.md) by ATLAS v1, in source order.

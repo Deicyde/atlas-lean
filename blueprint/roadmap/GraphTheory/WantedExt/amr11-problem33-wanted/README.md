@@ -1,3 +1,7 @@
+---
+article_id: af_c82ed13d617180ad26650f05
+---
+
 # AMR11 Problem33 Wanted
 
 - [Regular Cayley Graph](regular-cayley-graph.md)

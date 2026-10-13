@@ -1,3 +1,7 @@
+---
+article_id: af_f301a746502d4bcaa2d4ceb5
+---
+
 # Sard
 
 - [Critical Set](critical-set.md)

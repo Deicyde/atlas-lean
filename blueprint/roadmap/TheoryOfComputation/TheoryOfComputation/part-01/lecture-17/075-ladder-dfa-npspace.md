@@ -1,4 +1,5 @@
 ---
+article_id: af_0e72ef13bab268ec7ec204f2
 declaration: theorem
 origin: cited
 lean: SpaceComplexity.LADDER_DFA_in_NPSPACE

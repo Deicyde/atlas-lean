@@ -1,4 +1,5 @@
 ---
+article_id: af_4bd2f7791fa155a72b54db8c
 declaration: theorem
 origin: cited
 lean: verma_theorem

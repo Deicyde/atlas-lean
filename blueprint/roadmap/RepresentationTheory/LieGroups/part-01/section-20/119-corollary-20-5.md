@@ -1,4 +1,5 @@
 ---
+article_id: af_fbaff824ccf30a3d16d19605
 declaration: theorem
 origin: cited
 lean: free_nminus_has_standard_filtration

@@ -1,3 +1,7 @@
+---
+article_id: af_eca9a54469ff9d8e3ce6245a
+---
+
 # Section 7
 
 - [Proposition 7.1](041-proposition-7-1.md)

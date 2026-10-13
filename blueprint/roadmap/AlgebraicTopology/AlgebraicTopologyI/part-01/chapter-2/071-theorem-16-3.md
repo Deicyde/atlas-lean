@@ -1,4 +1,5 @@
 ---
+article_id: af_6d15bc6dfdd798e9a5d61cca
 declaration: def
 origin: cited
 lean: CWHomology.cellularHomologyGroup_iso_singularHomologyGroup

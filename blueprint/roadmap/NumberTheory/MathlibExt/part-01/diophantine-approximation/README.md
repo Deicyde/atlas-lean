@@ -1,3 +1,7 @@
+---
+article_id: af_b8e03e837cd4451b12878a59
+---
+
 # Diophantine Approximation
 
 - [Baker Davenport Absolute](baker-davenport-absolute/README.md)

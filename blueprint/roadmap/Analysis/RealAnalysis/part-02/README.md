@@ -1,3 +1,7 @@
+---
+article_id: af_0fe4c1641a34a82cb33beeda
+---
+
 # The Riemann Integral to Lecture 9
 
 - [The Riemann Integral](the-riemann-integral/README.md)

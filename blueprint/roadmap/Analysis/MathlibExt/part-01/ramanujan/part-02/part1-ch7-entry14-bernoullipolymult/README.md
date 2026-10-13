@@ -1,3 +1,7 @@
+---
+article_id: af_dc9df11ecdaed37f09fd4abb
+---
+
 # Part1 Ch7 Entry14 Bernoullipolymult
 
 - [Chapter7 Stieltjes A eq entry14 Bernoulliasymptotic](chapter7-stieltjes-a-eq-entry14-bernoull.md)

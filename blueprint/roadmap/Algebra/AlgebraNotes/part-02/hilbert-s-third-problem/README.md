@@ -1,3 +1,7 @@
+---
+article_id: af_aa62a398cbe99d854a99b6ff
+---
+
 # Hilbert's Third Problem
 
 - [Definition (Hilbert's Third Problem, Back to Polytopes)](080-definition.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_e8fb3e0635a529d189229c9f
+---
+
 # Integral Closure Complete
 
 - [Comap eq base maximal of is Adic Complete of is Integral](comap-eq-base-maximal-of-is-adic-complet.md)

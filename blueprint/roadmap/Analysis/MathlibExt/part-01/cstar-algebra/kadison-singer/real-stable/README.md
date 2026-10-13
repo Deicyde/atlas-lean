@@ -1,3 +1,7 @@
+---
+article_id: af_fb13c7af4a686799736dfeff
+---
+
 # Real Stable
 
 - [Mixed Det Polynomial is Stable of pos Semidef](mixed-det-polynomial-is-stable-of-pos-se.md)

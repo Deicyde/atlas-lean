@@ -1,3 +1,7 @@
+---
+article_id: af_b0248baba96489a3b3023ff5
+---
+
 # Alternating Sign Matrix Wanted
 
 - [Row Partial Sum](row-partial-sum.md)

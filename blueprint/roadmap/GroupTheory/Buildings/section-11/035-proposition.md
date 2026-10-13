@@ -1,4 +1,5 @@
 ---
+article_id: af_e6029f75582808ca139c5965
 declaration: theorem
 origin: cited
 lean: Oriflamme.distinct_SO_orbits

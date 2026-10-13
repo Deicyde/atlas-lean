@@ -1,3 +1,7 @@
+---
+article_id: af_1414c7a23a7765c1704b5a96
+---
+
 # Generalized Fibocatalan Number
 
 - [Fibonacci Factorial](fibonacci-factorial.md)

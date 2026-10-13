@@ -1,4 +1,5 @@
 ---
+article_id: af_dffa5611827ead2fa8b6f7ad
 declaration: structure
 origin: cited
 lean: LefschetzFibrationMathlib

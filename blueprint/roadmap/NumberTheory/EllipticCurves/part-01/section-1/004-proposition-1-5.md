@@ -1,4 +1,5 @@
 ---
+article_id: af_da22970bc3b1cfccdc18f733
 declaration: theorem
 origin: cited
 lean: NewtonPolygon.genus_eq_interior_lattice_points

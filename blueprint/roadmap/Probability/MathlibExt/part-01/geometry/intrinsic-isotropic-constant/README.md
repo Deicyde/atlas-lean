@@ -1,3 +1,7 @@
+---
+article_id: af_470dcd66ade1d9586436ef5e
+---
+
 # Intrinsic Isotropic Constant
 
 - [Intrinsic Log Concave Law](intrinsic-log-concave-law.md)

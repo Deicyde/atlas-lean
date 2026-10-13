@@ -1,4 +1,5 @@
 ---
+article_id: af_84bd035c74e83c5d03ac09f4
 declaration: theorem
 origin: cited
 lean: Martingales.azuma_inequality

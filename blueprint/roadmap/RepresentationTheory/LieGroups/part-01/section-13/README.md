@@ -1,3 +1,7 @@
+---
+article_id: af_fdb588d01b75889009d69e3d
+---
+
 # Section 13
 
 - [Theorem 13.1 (Kostant)](075-kostant.md)

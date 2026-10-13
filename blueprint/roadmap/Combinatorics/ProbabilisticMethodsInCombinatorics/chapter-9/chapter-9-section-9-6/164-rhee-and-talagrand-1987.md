@@ -1,4 +1,5 @@
 ---
+article_id: af_161359f294d7f63153da748c
 declaration: theorem
 origin: cited
 lean: TSPConcentration.rhee_talagrand_tsp_concentration

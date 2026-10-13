@@ -1,3 +1,7 @@
+---
+article_id: af_654a581cc3d28a3c991e3fed
+---
+
 # Lambert Series
 
 - [Lambert Series Summand](lambert-series-summand.md)

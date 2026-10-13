@@ -1,4 +1,5 @@
 ---
+article_id: af_5e0e17101e5d5d4a43669d56
 declaration: theorem
 origin: cited
 lean: KroneckerWeber.theorem_20_6

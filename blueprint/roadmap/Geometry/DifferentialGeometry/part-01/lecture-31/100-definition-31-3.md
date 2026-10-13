@@ -1,4 +1,5 @@
 ---
+article_id: af_37c2dbb962e9d0efd7d7640d
 declaration: def
 origin: cited
 lean: GaussMapDegree.SmoothMapBetweenHypersurfaces.tangentMapDet

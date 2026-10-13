@@ -1,3 +1,7 @@
+---
+article_id: af_c6804fd9100ad73c87ad74d0
+---
+
 # Sparse Table
 
 - [Sparse Table](sparse-table.md)

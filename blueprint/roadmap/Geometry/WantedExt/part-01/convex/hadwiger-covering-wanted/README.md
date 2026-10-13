@@ -1,3 +1,7 @@
+---
+article_id: af_bb85ad678cca97af5ba37b6e
+---
+
 # Hadwiger Covering Wanted
 
 - [Homothet Interior Translate Formulations Equivalent](homothet-interior-translate-formulations.md)

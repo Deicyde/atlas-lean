@@ -1,4 +1,5 @@
 ---
+article_id: af_4e16acdc97b8c28bd1e7989c
 declaration: def
 origin: cited
 lean: ComplexLattice.IdealClassGroup.commGroup

@@ -1,3 +1,7 @@
+---
+article_id: af_ac677ba1ac852f050930e411
+---
+
 # Lecture 5
 
 - [Jensen's inequality](007-jensen-s-inequality.md)

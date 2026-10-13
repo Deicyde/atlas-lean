@@ -1,4 +1,5 @@
 ---
+article_id: af_e3c6a80156350ac8f7ec7003
 declaration: theorem
 origin: cited
 lean: CategoryTheory.Corollary_1_51_3_projective

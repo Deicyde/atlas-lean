@@ -1,3 +1,7 @@
+---
+article_id: af_f0a4307c4dfd90f0c3546bbe
+---
+
 # Lunnon Dimension Decomposition
 
 - [Lattice Cell](lattice-cell.md)

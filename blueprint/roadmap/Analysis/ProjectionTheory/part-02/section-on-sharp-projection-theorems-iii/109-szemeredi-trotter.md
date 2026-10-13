@@ -1,4 +1,5 @@
 ---
+article_id: af_3a03a50c9e2fd6dc37d219af
 declaration: theorem
 origin: cited
 lean: SzemerediTrotter.r_rich_lines_bound_all

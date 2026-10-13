@@ -1,4 +1,5 @@
 ---
+article_id: af_496045891bf734221251482f
 declaration: def
 origin: cited
 lean: RayClassField.Proposition_22_19

@@ -1,3 +1,7 @@
+---
+article_id: af_90c76ee7e01b6ee4391b6719
+---
+
 # Class Function
 
 - [Is Class Function](is-class-function.md)

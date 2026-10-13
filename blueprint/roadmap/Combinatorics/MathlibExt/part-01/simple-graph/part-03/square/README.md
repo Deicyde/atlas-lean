@@ -1,3 +1,7 @@
+---
+article_id: af_a9b878621663a04f65d9c157
+---
+
 # Square
 
 - [Square](square.md)

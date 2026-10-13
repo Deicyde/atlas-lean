@@ -1,4 +1,5 @@
 ---
+article_id: af_6f95e3173dca904644791bb5
 declaration: theorem
 origin: cited
 lean: SphericalCap.sphere_lipschitz_concentration

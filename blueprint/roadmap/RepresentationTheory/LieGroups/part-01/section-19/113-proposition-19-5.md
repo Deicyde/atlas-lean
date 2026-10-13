@@ -1,4 +1,5 @@
 ---
+article_id: af_62838b46ec80293f85cd8e2d
 declaration: theorem
 origin: cited
 lean: prop_19_5_formula

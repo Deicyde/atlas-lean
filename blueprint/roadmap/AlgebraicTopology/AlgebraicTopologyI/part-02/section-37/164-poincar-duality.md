@@ -1,4 +1,5 @@
 ---
+article_id: af_38b4a6af48ea241b475df902
 declaration: theorem
 origin: cited
 lean: PoincareDuality.poincare_duality

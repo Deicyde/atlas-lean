@@ -1,3 +1,7 @@
+---
+article_id: af_82cb66fb8a5beddbedccdc8a
+---
+
 # MIT 18.950 Differential Geometry (Fall 2008)
 
 Statements selected from [MIT 18.950 Differential Geometry (Fall 2008)](../../../sources/v1/DifferentialGeometry.md) by ATLAS v1, in source order.

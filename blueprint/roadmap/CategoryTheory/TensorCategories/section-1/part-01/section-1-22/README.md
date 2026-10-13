@@ -1,3 +1,7 @@
+---
+article_id: af_bd6de038359fcdd32a532a61
+---
+
 # Section 1.22
 
 - [Proposition 1.22.1](054-proposition-1-22-1.md)

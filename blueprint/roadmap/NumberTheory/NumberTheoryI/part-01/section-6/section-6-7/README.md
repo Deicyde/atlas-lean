@@ -1,3 +1,7 @@
+---
+article_id: af_4918280125fd924b83e3af06
+---
+
 # Section 6.7
 
 - [Definition 6.19](139-definition-6-19.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_a7261cd4f792bd961fe69dee
 declaration: theorem
 origin: cited
 lean: SimpleGraph.berge_lemma

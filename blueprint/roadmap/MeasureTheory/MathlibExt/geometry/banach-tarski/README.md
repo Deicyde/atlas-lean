@@ -1,3 +1,7 @@
+---
+article_id: af_18134fa963646a1c967f2899
+---
+
 # Banach Tarski
 
 - [Finitely Equidecomposable By Isometries](finitely-equidecomposable-by-isometries.md)

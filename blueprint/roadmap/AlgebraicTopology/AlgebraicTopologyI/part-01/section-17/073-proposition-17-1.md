@@ -1,4 +1,5 @@
 ---
+article_id: af_efe1c2e68fd3e9a8cfb5a591
 declaration: def
 origin: cited
 lean: RealProjectiveSpace.homology_rpn

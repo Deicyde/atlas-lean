@@ -1,3 +1,7 @@
+---
+article_id: af_9be403cb263f5a90e59e3082
+---
+
 # Part 1 of 2
 
 - [XFast Trie](xfast-trie.md)

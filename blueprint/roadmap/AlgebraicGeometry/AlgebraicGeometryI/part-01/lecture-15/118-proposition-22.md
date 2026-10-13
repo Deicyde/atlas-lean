@@ -1,4 +1,5 @@
 ---
+article_id: af_62050f9ce5c2692346fcb251
 declaration: theorem
 origin: cited
 lean: prop22_picard_iso_cartier_quotient_geometric

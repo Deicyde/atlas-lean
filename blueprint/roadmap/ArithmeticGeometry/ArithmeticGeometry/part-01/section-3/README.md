@@ -1,3 +1,7 @@
+---
+article_id: af_193036097ae9ab94d769c390
+---
+
 # Section 3
 
 - [Theorem 3.1 (Gauss)](009-gauss.md)

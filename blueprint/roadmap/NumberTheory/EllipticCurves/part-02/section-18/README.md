@@ -1,3 +1,7 @@
+---
+article_id: af_0edb14d09ce2743650f4efc4
+---
+
 # Section 18
 
 - [Lemma 18.1](241-lemma-18-1.md)

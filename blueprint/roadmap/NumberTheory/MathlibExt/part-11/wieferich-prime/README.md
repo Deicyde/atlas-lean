@@ -1,3 +1,7 @@
+---
+article_id: af_4a8c490cffad2c535eebb4ac
+---
+
 # Wieferich Prime
 
 - [Is Wieferich Prime](is-wieferich-prime.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_56e1df0a4fe63f0068e91cea
 declaration: def
 origin: cited
 lean: EilenbergZilber.eilenbergZilberHomologyIso

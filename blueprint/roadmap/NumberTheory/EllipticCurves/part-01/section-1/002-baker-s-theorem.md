@@ -1,4 +1,5 @@
 ---
+article_id: af_5934e55f6d1c198a883f3cba
 declaration: theorem
 origin: cited
 lean: baker_theorem

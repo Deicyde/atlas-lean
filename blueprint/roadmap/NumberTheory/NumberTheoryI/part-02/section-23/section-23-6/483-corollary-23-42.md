@@ -1,4 +1,5 @@
 ---
+article_id: af_f49fd32834c213a818cb712a
 declaration: theorem
 origin: cited
 lean: TateCohomology.herbrandQuotient_directSum

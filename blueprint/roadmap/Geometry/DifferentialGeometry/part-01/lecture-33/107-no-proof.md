@@ -1,4 +1,5 @@
 ---
+article_id: af_77930c8ef5f4fdd0be4e259c
 declaration: theorem
 origin: cited
 lean: DegreeTheory.degree_as_signed_count

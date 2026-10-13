@@ -1,4 +1,5 @@
 ---
+article_id: af_52570ff3b8460e4158283b8f
 declaration: theorem
 origin: cited
 lean: BooleanFourier.exists_fourierCoeff_ge_of_agreementProb

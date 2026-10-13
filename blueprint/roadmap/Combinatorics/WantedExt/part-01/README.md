@@ -1,3 +1,7 @@
+---
+article_id: af_c0875f481b94ad3fdcd8bef4
+---
+
 # Enumerative to Erdos Problem923 Wanted
 
 - [Enumerative](enumerative/README.md)

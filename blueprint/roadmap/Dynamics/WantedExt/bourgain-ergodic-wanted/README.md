@@ -1,3 +1,7 @@
+---
+article_id: af_463c60afcc0176ebe0949148
+---
+
 # Bourgain Ergodic Wanted
 
 - [Is Integer Polynomial Sequence](is-integer-polynomial-sequence.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_b26494445f37160a5e262d4e
 declaration: abbrev
 origin: cited
 ---

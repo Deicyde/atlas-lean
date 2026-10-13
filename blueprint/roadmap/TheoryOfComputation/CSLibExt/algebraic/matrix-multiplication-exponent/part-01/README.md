@@ -1,3 +1,7 @@
+---
+article_id: af_008b64d37f5ffb9ac194249b
+---
+
 # Part 1 of 3
 
 - [Rank One Trilinear Term](rank-one-trilinear-term.md)

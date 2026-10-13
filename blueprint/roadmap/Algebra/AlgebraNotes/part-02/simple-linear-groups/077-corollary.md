@@ -1,4 +1,5 @@
 ---
+article_id: af_f6273dc95442d302b074aebf
 declaration: theorem
 origin: cited
 lean: SimpleGroups.su2_mod_center_isSimple

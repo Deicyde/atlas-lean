@@ -1,3 +1,7 @@
+---
+article_id: af_d06330fcd549bff503edc912
+---
+
 # Orthonormality of Characters to Lecture 24
 
 - [Orthonormality of Characters](orthonormality-of-characters/README.md)

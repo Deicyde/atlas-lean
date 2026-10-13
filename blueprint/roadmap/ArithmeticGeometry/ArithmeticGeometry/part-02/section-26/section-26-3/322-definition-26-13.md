@@ -1,4 +1,5 @@
 ---
+article_id: af_873535bf9ebb6e9b65db9b98
 declaration: def
 origin: cited
 lean: IsJacobianOf

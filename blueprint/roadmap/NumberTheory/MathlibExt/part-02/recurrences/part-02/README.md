@@ -1,3 +1,7 @@
+---
+article_id: af_5150255aa762f0a9afe7660e
+---
+
 # Part 2 of 2
 
 - [Jacobsthal Closed Form](jacobsthal-closed-form.md)

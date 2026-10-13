@@ -1,4 +1,5 @@
 ---
+article_id: af_17852a7b645b8ccc017bb1cf
 declaration: def
 origin: cited
 lean: CMTorsor.cm_torsor_exists

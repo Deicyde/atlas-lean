@@ -1,3 +1,7 @@
+---
+article_id: af_ab8ba591b2bbd0c1b43bfc45
+---
+
 # Part 1 of 2
 
 - [Segment Tree](segment-tree.md)

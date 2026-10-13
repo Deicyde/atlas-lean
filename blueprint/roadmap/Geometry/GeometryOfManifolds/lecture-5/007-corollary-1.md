@@ -1,4 +1,5 @@
 ---
+article_id: af_f5d4bd06030ece2e784f3fa1
 declaration: theorem
 origin: cited
 lean: DeRhamConcrete.cohomology_isomorphism

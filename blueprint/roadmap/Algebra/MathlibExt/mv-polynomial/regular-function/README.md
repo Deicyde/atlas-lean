@@ -1,3 +1,7 @@
+---
+article_id: af_5c1607b00695faad8a0e3fa1
+---
+
 # Regular Function
 
 - [Regular Function](regular-function.md)

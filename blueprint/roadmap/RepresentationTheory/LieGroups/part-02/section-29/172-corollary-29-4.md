@@ -1,4 +1,5 @@
 ---
+article_id: af_a5843b8966d044531533567e
 declaration: theorem
 origin: cited
 lean: BeilinsonBernstein.cor_29_4_partial_flag_Daffine

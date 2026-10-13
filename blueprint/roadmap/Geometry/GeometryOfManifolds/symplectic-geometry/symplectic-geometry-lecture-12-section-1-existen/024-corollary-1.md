@@ -1,4 +1,5 @@
 ---
+article_id: af_e2140c9821f225d95ce1f95a
 declaration: theorem
 origin: cited
 lean: chern_number_formula

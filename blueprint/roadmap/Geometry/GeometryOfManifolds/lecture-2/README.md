@@ -1,3 +1,7 @@
+---
+article_id: af_2b8dec770df249e925bed77b
+---
+
 # Lecture 2
 
 - [Definition 3 (Lecture 2, Section 2 (Symplectic Vector Spaces))](004-definition-3.md)

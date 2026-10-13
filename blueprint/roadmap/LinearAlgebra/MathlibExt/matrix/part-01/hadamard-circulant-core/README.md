@@ -1,3 +1,7 @@
+---
+article_id: af_3fbc794bb2d64f1e99768574
+---
+
 # Hadamard Circulant Core
 
 - [Is Hadamard Matrix](is-hadamard-matrix.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_8367a2f40fb7f5aaf28aea82
 declaration: theorem
 origin: cited
 lean: TriangleUpperTail.harel_mousset_samotij_upper_regime

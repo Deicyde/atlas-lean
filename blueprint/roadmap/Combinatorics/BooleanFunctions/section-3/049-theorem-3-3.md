@@ -1,4 +1,5 @@
 ---
+article_id: af_a2228aca7ece0ddd87d50e99
 declaration: theorem
 origin: cited
 lean: BooleanFourier.expected_sqrt_sensitivity_lower_bound

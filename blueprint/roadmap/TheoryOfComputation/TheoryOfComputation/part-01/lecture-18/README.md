@@ -1,3 +1,7 @@
+---
+article_id: af_0f95d48bc19d6648e585bfc7
+---
+
 # Lecture 18
 
 - [Definition (PSPACE-complete)](078-pspace-complete.md)

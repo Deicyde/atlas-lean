@@ -1,4 +1,5 @@
 ---
+article_id: af_65b3124569478f081351a525
 declaration: def
 origin: cited
 lean: SurfacesAndBilinearForms.intersectionForm_isomorphism

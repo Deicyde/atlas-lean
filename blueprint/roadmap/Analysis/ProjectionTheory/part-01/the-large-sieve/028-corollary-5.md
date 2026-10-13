@@ -1,4 +1,5 @@
 ---
+article_id: af_8c46791742ceefb3aeae57f7
 declaration: theorem
 origin: cited
 lean: LargeSieveSize.corollary5_large_sieve_size

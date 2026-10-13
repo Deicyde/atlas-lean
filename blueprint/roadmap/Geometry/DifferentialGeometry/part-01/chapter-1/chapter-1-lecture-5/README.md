@@ -1,3 +1,7 @@
+---
+article_id: af_81ddffbf5779c9b9766752cf
+---
+
 # Chapter 1, Lecture 5
 
 - [Lemma 5.1 (Gram-Schmidt orthogonalization)](015-gram-schmidt-orthogonalization.md)

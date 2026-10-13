@@ -1,3 +1,7 @@
+---
+article_id: af_76286d3136180b93604cab69
+---
+
 # Consecutive Cyclic Prime Labeling
 
 - [Cyclic Label](cyclic-label.md)

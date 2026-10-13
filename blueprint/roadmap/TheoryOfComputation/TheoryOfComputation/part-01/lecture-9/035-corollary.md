@@ -1,4 +1,5 @@
 ---
+article_id: af_99bc7915b9b3467abd69356f
 declaration: theorem
 origin: cited
 lean: TuringMachine.not_isTuringRecognizable_of_mappingReducible

@@ -1,4 +1,5 @@
 ---
+article_id: af_99cff9a81ef2f2984296e9e2
 declaration: theorem
 origin: cited
 lean: ClosedCurves.convex_iff_curvature_no_sign_change

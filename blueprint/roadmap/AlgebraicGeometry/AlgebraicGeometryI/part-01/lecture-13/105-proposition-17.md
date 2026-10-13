@@ -1,4 +1,5 @@
 ---
+article_id: af_1abd98cee23b8c8136d9c378
 declaration: def
 origin: cited
 lean: Prop17.affine_antiequiv

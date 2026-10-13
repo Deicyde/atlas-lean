@@ -1,4 +1,5 @@
 ---
+article_id: af_2ee9260445818f3f05b85b56
 declaration: theorem
 origin: cited
 lean: ChamberComplex.coxeter_iff_adjacent_separated_by_wall

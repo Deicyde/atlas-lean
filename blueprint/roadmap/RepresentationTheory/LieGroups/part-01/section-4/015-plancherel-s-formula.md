@@ -1,4 +1,5 @@
 ---
+article_id: af_1c9bbc70b557f4072770daf5
 declaration: theorem
 origin: cited
 lean: PlancherelCompact.plancherel_formula

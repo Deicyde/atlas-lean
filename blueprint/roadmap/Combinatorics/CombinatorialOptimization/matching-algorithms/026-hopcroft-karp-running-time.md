@@ -1,4 +1,5 @@
 ---
+article_id: af_80ed0fa4308c69a515427230
 declaration: theorem
 origin: cited
 lean: SimpleGraph.hopcroft_karp_phase_bound

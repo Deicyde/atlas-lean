@@ -1,3 +1,7 @@
+---
+article_id: af_cdac994ec22b5f4c556a9a93
+---
+
 # Coefficient Exponential Family
 
 - [Wiman Growth](wiman-growth.md)

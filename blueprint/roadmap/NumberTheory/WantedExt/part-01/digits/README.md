@@ -1,3 +1,7 @@
+---
+article_id: af_fce310902847f03a00449e14
+---
+
 # Digits
 
 - [Near Repdigit Perfect Powers Wanted](finite-near-repdigit-perfect-powers.md)

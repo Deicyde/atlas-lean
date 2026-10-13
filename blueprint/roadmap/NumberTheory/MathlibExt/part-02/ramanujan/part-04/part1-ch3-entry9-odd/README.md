@@ -1,3 +1,7 @@
+---
+article_id: af_3a47c3263df52f2980ad630f
+---
+
 # Part1 Ch3 Entry9 Odd
 
 - [Entry9 P](entry9-p.md)

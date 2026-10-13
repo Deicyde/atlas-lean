@@ -1,3 +1,7 @@
+---
+article_id: af_6dce9a5b919d8e1eceb29a3e
+---
+
 # Polygonal Number
 
 - [Polygonal Number](polygonal-number.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_ac36021309a3c627ac3ee5fc
+---
+
 # Rising Sun Wanted
 
 - [Rising Sun Set](rising-sun-set.md)

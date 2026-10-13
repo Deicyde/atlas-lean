@@ -1,4 +1,5 @@
 ---
+article_id: af_2b6f2530c7e94975013edf6b
 declaration: theorem
 origin: cited
 lean: WeilPairing.muN_contained_if_torsion_contained

@@ -1,4 +1,5 @@
 ---
+article_id: af_9c4763eca108267dbc3406fa
 declaration: theorem
 origin: cited
 lean: ProjectionTheory.R_AD_proj_epsilon_improvement_submult

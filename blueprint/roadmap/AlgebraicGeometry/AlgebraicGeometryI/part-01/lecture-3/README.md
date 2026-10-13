@@ -1,3 +1,7 @@
+---
+article_id: af_1995212ce99acf0cbba89379
+---
+
 # Lecture 3
 
 - [Theorem 3.1](017-theorem-3-1.md)

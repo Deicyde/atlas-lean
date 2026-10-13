@@ -1,3 +1,7 @@
+---
+article_id: af_cb392067ef5503958a74a7e5
+---
+
 # Interval Scheduling
 
 - [Interval Compatible](interval-compatible.md)

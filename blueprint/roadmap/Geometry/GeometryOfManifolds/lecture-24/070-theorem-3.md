@@ -1,4 +1,5 @@
 ---
+article_id: af_b555c5726d759e0f7499468c
 declaration: theorem
 origin: cited
 lean: spinc_theorem3_complete

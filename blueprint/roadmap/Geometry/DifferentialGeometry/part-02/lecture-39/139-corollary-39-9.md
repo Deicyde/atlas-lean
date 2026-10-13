@@ -1,4 +1,5 @@
 ---
+article_id: af_9791cc4ff44f21725af9c381
 declaration: theorem
 origin: cited
 lean: SchwarzPick.schwarz_pick

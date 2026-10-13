@@ -1,3 +1,7 @@
+---
+article_id: af_15bdefbd8e1a965e40619a83
+---
+
 # Maximal Ideal Pow Quotient Trace
 
 - [Trace residue Field Maximal Ideal Pow Quotient succ](trace-residue-field-maximal-ideal-pow-qu.md)

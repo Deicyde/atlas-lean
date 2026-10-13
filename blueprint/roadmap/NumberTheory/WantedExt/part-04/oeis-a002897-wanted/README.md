@@ -1,3 +1,7 @@
+---
+article_id: af_f314f7ef4b2c7f6830d86759
+---
+
 # Oeis A002897 Wanted
 
 - [A](a.md)

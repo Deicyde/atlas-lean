@@ -1,4 +1,5 @@
 ---
+article_id: af_ddc91a9e11ab70b91a6615ec
 declaration: theorem
 origin: cited
 lean: NumberField.Adeles.adelic_blichfeldt_minkowski

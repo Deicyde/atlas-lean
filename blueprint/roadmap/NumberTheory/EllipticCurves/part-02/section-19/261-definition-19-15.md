@@ -1,4 +1,5 @@
 ---
+article_id: af_0130ff1319a9afa8459c1345
 declaration: def
 origin: cited
 lean: ModularPolynomial.Phi

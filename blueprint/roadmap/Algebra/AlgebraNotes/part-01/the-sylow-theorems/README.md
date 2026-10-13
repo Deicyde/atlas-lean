@@ -1,3 +1,7 @@
+---
+article_id: af_2b2cb9f06896cb325731fc0b
+---
+
 # The Sylow Theorems
 
 - [Theorem (The Sylow Theorems, Section: Motivation)](045-theorem.md)

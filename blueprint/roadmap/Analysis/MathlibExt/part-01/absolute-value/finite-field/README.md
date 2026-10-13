@@ -1,3 +1,7 @@
+---
+article_id: af_5ae7817b56bf02eef673bc08
+---
+
 # Finite Field
 
 - [Is Nonarchimedean of char P](is-nonarchimedean-of-char-p.md)

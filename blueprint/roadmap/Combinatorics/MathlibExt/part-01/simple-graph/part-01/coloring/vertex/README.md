@@ -1,3 +1,7 @@
+---
+article_id: af_183af4ec2c3e8ac87f33bfe1
+---
+
 # Vertex
 
 - [Is Critical Edges](is-critical-edges.md)

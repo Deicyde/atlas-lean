@@ -1,3 +1,7 @@
+---
+article_id: af_54cb4f0d7f1d9fdc3666875b
+---
+
 # Section 1.27
 
 - [Proposition 1.27.1](072-proposition-1-27-1.md)

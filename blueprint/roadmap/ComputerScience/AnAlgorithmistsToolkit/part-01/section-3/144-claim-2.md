@@ -1,4 +1,5 @@
 ---
+article_id: af_6669ccc1a22fe556b9e3df4b
 declaration: theorem
 origin: cited
 lean: LLL.lll_shortest_vector_approx

@@ -1,3 +1,7 @@
+---
+article_id: af_cd53a4339a86d643582fb0c6
+---
+
 # Lecture 24
 
 - [Definition 24.1](077-definition-24-1.md)

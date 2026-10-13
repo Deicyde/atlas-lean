@@ -1,3 +1,7 @@
+---
+article_id: af_9138b5631d45441b58b5b44f
+---
+
 # Section 4
 
 - [Definition 4 (Determinant)](048-determinant.md)

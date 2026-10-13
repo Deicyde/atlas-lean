@@ -1,4 +1,5 @@
 ---
+article_id: af_a2799bf6d53a4049aa397d9b
 declaration: theorem
 origin: cited
 lean: CanonicalSheafCurves.deg_canonical_eq_2g_sub_2

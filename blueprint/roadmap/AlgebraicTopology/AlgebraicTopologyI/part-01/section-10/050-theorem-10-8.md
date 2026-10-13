@@ -1,4 +1,5 @@
 ---
+article_id: af_433f95d17e95599555a9c919
 declaration: theorem
 origin: cited
 lean: DegreeTheory.degree_surjective

@@ -1,4 +1,5 @@
 ---
+article_id: af_10bf3237da29ee02e068c622
 declaration: theorem
 origin: cited
 lean: prokhorov_theorem

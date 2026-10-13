@@ -1,4 +1,5 @@
 ---
+article_id: af_7281ec4a8f5227321d16cf60
 declaration: theorem
 origin: cited
 lean: AbelianGroups.torsion_subgroup_structure

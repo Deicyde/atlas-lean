@@ -1,4 +1,5 @@
 ---
+article_id: af_571fbaf341f8a6debf188fdc
 declaration: theorem
 origin: cited
 lean: PDEClassification.classification_theorem_3_1

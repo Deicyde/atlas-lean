@@ -1,4 +1,5 @@
 ---
+article_id: af_8f7964326aa2f9849d8ea9dd
 declaration: theorem
 origin: cited
 lean: ProjectiveQCohProperties.prop20_tildeFunctor_essentiallySurjective

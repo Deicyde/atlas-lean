@@ -1,3 +1,7 @@
+---
+article_id: af_a9f21cec4db29b64b8c32aa1
+---
+
 # Transfer Matrix Of GRH
 
 - [Zykov Zero Indicator](zykov-zero-indicator.md)

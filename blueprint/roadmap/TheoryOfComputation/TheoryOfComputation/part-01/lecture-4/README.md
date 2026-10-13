@@ -1,3 +1,7 @@
+---
+article_id: af_9690f917735f6788b11f00b8
+---
+
 # Lecture 4
 
 - [Definition (Context Free Grammar)](013-context-free-grammar.md)

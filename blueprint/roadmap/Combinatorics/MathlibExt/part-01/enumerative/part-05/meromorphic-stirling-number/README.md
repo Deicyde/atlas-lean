@@ -1,3 +1,7 @@
+---
+article_id: af_c238369fe89649a8530880cc
+---
+
 # Meromorphic Stirling Number
 
 - [Meromorphic Stirling First](meromorphic-stirling-first.md)

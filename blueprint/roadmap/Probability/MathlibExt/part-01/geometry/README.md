@@ -1,3 +1,7 @@
+---
+article_id: af_a2b7a9059770b5f4776fd7b3
+---
+
 # Geometry
 
 - [Intrinsic Isotropic Constant](intrinsic-isotropic-constant/README.md)

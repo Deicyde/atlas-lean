@@ -1,3 +1,7 @@
+---
+article_id: af_8cd05ee79024a26d6047fc1a
+---
+
 # CStar Algebra
 
 - [Kadison Singer](kadison-singer/README.md)

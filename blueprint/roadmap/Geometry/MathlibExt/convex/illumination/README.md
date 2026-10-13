@@ -1,3 +1,7 @@
+---
+article_id: af_0e686bbaab4d4d4e8437e707
+---
+
 # Illumination
 
 - [Direction Illuminates](direction-illuminates.md)

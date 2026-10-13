@@ -1,4 +1,5 @@
 ---
+article_id: af_3a349fd9a711c888e367c14a
 declaration: def
 origin: cited
 lean: ProjectiveVanishingIdeal.projectiveVanishingIdeal

@@ -1,3 +1,7 @@
+---
+article_id: af_fdd07ebe3de5fb41af538406
+---
+
 # Lecture 23
 
 - [Proposition (\ref{noetheriansubmodules})](144-ref-noetheriansubmodules.md)

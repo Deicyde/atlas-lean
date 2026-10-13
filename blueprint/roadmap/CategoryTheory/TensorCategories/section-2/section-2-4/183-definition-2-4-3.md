@@ -1,4 +1,5 @@
 ---
+article_id: af_816952c6d9c209577bd657e7
 declaration: abbrev
 origin: cited
 lean: CategoryTheory.Definition_2_4_3

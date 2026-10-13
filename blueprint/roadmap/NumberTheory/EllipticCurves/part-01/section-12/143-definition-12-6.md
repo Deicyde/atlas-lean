@@ -1,4 +1,5 @@
 ---
+article_id: af_c57988e4d6a1535dc4bfd71d
 declaration: def
 origin: cited
 lean: WeierstrassCurve.Affine.End0.N

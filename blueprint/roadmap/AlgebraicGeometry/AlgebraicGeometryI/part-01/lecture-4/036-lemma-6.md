@@ -1,4 +1,5 @@
 ---
+article_id: af_f712c2d789dce5d96b9d4fc7
 declaration: theorem
 origin: cited
 lean: Lec4Grassmannian.lemma6_iff

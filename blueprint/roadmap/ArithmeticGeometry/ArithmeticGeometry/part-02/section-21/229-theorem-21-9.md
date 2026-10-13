@@ -1,4 +1,5 @@
 ---
+article_id: af_c61ac323d0818e4140372552
 declaration: theorem
 origin: cited
 lean: RiemannRochSpace.riemannRochSpace_dim_bound

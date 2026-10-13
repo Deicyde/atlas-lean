@@ -1,3 +1,7 @@
+---
+article_id: af_004f5fb7f742248f048f2463
+---
+
 # Section 37
 
 - [Theorem 37.1 (Fully relative Poincaré duality)](160-fully-relative-poincar-duality.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_0277567f2878649606f846c0
+---
+
 # Lecture 21
 
 - [I (Lecture 21 and 22: The Prime Number Theorem)](034-i.md)

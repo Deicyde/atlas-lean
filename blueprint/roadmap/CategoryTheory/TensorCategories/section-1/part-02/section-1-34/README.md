@@ -1,3 +1,7 @@
+---
+article_id: af_39834ffe0221b69f052e061c
+---
+
 # Section 1.34
 
 - [Definition 1.34.1](098-definition-1-34-1.md)

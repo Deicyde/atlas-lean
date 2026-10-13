@@ -1,4 +1,5 @@
 ---
+article_id: af_538a151ab8841711928cadea
 declaration: def
 origin: cited
 lean: SobolevEmbedding.sobolevEmbedding

@@ -1,4 +1,5 @@
 ---
+article_id: af_be315c6778a2b976842a9319
 declaration: theorem
 origin: cited
 lean: isIntegrable_of_hasHolomorphicCoords

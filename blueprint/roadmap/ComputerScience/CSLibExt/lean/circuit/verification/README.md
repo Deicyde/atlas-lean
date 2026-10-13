@@ -1,3 +1,7 @@
+---
+article_id: af_f6900eef472f35fe782084f2
+---
+
 # Verification
 
 - [Verify Boolean Certificate](verify-boolean-certificate.md)

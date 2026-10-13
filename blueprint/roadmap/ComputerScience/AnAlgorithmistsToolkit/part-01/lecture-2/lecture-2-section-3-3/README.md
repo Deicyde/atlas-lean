@@ -1,3 +1,7 @@
+---
+article_id: af_636d49d14e4cc5746f23c309
+---
+
 # Lecture 2, Section 3.3
 
 - [Definition 6 (Lecture 2, Section 3.3)](011-definition-6.md)

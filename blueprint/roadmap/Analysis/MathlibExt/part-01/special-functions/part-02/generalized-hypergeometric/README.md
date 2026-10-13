@@ -1,3 +1,7 @@
+---
+article_id: af_0edcb913600b8503f946e9d2
+---
+
 # Generalized Hypergeometric
 
 - [Generalized Hypergeometric Coefficient](generalized-hypergeometric-coefficient.md)

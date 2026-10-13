@@ -1,3 +1,7 @@
+---
+article_id: af_bd281796628e774080d307c1
+---
+
 # Taylor's Theorem
 
 - [Definition ($n$-times Differentiable) (Taylor's Theorem section)](060-n-times-differentiable.md)

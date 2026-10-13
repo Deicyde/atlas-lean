@@ -1,3 +1,7 @@
+---
+article_id: af_4cd6d7f501d8f970e7bfad40
+---
+
 # Wirsing Constant
 
 - [Gkw Term](gkw-term.md)

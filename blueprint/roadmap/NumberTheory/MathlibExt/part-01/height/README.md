@@ -1,3 +1,7 @@
+---
+article_id: af_8026aaa2273f3bbf7cfc3300
+---
+
 # Height
 
 - [Absolute](primitive-int-minpoly.md)

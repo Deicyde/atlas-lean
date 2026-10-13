@@ -1,4 +1,5 @@
 ---
+article_id: af_b49b306d07c995339edcadcb
 declaration: theorem
 origin: cited
 lean: TriangleIntersecting.triangle_intersecting_bound

@@ -1,4 +1,5 @@
 ---
+article_id: af_f7693636ee7557d45ae56371
 declaration: theorem
 origin: cited
 lean: RapidExpansion.rapid_expansion_half_to_one_minus_eps

@@ -1,3 +1,7 @@
+---
+article_id: af_19ca8305c38ee68a8881f05f
+---
+
 # Finite Congruence
 
 - [Count span Singleton add ge of ne zero](count-span-singleton-add-ge-of-ne-zero.md)

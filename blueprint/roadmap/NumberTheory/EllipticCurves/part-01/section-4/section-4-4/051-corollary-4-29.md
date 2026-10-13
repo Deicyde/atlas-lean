@@ -1,4 +1,5 @@
 ---
+article_id: af_7f508688aa583aa173028afe
 declaration: theorem
 origin: cited
 lean: Isogeny.isogeny_kernel_finite

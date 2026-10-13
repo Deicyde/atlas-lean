@@ -1,4 +1,5 @@
 ---
+article_id: af_ebdcad07e1940b0a9fff3437
 declaration: theorem
 origin: cited
 lean: OrientationHomology.singularHomology_top_compact_manifold

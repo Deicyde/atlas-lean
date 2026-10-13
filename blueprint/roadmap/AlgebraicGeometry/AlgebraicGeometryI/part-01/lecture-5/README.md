@@ -1,3 +1,7 @@
+---
+article_id: af_022e05b6f603d1255f3edb63
+---
+
 # Lecture 5
 
 - [Lemma 9](043-lemma-9.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_aedcec5cba59bc0086aaf37c
+---
+
 # Lecture 2
 
 - [Theorem (Lecture 2, Section: Irreducible Representations)](083-theorem.md)

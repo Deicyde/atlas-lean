@@ -1,4 +1,5 @@
 ---
+article_id: af_41315ef0d5c4e989b1ef4bf8
 declaration: theorem
 origin: cited
 lean: SimpleGraph.hall_marriage_theorem

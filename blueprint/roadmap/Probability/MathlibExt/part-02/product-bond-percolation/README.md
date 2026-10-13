@@ -1,3 +1,7 @@
+---
+article_id: af_fc810bc4cb0ea13d3b81b2ec
+---
+
 # Product Bond Percolation
 
 - [Int Line](int-line.md)

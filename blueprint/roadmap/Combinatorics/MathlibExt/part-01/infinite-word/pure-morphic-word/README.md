@@ -1,3 +1,7 @@
+---
+article_id: af_b4db032813de4fdba1adc94e
+---
+
 # Pure Morphic Word
 
 - [Morph Extend](morph-extend.md)

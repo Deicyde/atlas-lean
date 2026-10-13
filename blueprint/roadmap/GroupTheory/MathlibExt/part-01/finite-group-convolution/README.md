@@ -1,3 +1,7 @@
+---
+article_id: af_89a53207933b3ebb87b4549c
+---
+
 # Finite Group Convolution
 
 - [Conv](conv.md)

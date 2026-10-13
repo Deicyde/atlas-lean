@@ -1,3 +1,7 @@
+---
+article_id: af_ea8c2b031fe72fae0a721662
+---
+
 # Stable Unstable Manifolds Wanted
 
 - [E](e.md)

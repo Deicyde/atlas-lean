@@ -1,4 +1,5 @@
 ---
+article_id: af_0dd87a5757dad87259d6adda
 declaration: theorem
 origin: cited
 lean: ContinuousRep.theorem_6_3_harish_chandra_analyticity

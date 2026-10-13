@@ -1,4 +1,5 @@
 ---
+article_id: af_b097775dc77d625cc561d346
 declaration: theorem
 origin: cited
 lean: SimpleGraph.blossom_shrinking

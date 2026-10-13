@@ -1,4 +1,5 @@
 ---
+article_id: af_1bedeed5577bd59a58e77247
 declaration: theorem
 origin: cited
 lean: LatticeBasics.equivalent_bases_column_ops

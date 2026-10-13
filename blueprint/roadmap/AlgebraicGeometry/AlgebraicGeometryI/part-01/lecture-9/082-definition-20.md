@@ -1,4 +1,5 @@
 ---
+article_id: af_1af19b26b1f7055041ef64cc
 declaration: def
 origin: cited
 lean: Lec9Blowups.blowupAlgebra

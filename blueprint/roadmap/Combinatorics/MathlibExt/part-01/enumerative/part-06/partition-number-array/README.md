@@ -1,3 +1,7 @@
+---
+article_id: af_0e73bf40821faabb4df8eae5
+---
+
 # Partition Number Array
 
 - [Extend A](extend-a.md)

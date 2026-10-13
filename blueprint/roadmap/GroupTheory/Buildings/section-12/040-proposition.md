@@ -1,4 +1,5 @@
 ---
+article_id: af_30a7e4b49777ecead5306b43
 declaration: theorem
 origin: cited
 lean: affineWeylGroup_semidirectProduct

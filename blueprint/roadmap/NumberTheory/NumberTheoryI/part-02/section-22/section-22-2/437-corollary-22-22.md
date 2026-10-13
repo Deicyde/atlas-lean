@@ -1,4 +1,5 @@
 ---
+article_id: af_c939666702d1d0443c830274
 declaration: theorem
 origin: cited
 lean: CosetDensity.corollary_22_22

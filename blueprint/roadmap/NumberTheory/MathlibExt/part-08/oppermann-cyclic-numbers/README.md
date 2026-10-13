@@ -1,3 +1,7 @@
+---
+article_id: af_3d80c4442cd7fda7b3676e3d
+---
+
 # Oppermann Cyclic Numbers
 
 - [Is Cyclic Number](is-cyclic-number.md)

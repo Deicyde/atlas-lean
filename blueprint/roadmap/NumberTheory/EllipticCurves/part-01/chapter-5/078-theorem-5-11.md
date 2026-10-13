@@ -1,4 +1,5 @@
 ---
+article_id: af_0d10f15204c464d5a99231d1
 declaration: theorem
 origin: cited
 lean: Isogeny.exists_separable_of_finite_subgroup

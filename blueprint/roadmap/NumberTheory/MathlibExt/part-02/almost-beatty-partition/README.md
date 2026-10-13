@@ -1,3 +1,7 @@
+---
+article_id: af_333e74418bc1361efb5bb05c
+---
+
 # Almost Beatty Partition
 
 - [Beatty Term](beatty-term.md)

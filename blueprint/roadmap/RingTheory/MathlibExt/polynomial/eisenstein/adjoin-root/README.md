@@ -1,3 +1,7 @@
+---
+article_id: af_15375e84797a1ef98bb9dcf3
+---
+
 # Adjoin Root
 
 - [Algebra Map coeff zero mem span root](algebra-map-coeff-zero-mem-span-root.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_1a5fb8f42248ea5747453c86
+---
+
 # Catalan Constant
 
 - [Catalan Constant](catalan-constant.md)

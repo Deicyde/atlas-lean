@@ -1,3 +1,7 @@
+---
+article_id: af_6805f6120475695b6f184bbc
+---
+
 # Section 1.48
 
 - [Definition 1.48.1](154-definition-1-48-1.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_ad7b839f5f037e1275c19746
+---
+
 # Edge Coloring
 
 - [Is Proper Edge Coloring](is-proper-edge-coloring.md)

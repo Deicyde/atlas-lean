@@ -1,4 +1,5 @@
 ---
+article_id: af_b54c46aad4a262e026ee31fc
 declaration: theorem
 origin: cited
 lean: Lec17AbelJacobi.torelli_reconstruction

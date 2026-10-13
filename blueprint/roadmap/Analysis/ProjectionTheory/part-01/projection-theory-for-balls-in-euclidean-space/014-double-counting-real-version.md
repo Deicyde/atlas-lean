@@ -1,4 +1,5 @@
 ---
+article_id: af_f76492cce07b31d7c75129f3
 declaration: theorem
 origin: cited
 lean: ProjectionTheory.double_counting_real_hausdorff_dichotomy_line683

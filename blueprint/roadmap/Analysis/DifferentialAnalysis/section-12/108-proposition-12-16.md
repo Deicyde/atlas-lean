@@ -1,4 +1,5 @@
 ---
+article_id: af_df5fb4630752b3f973ca5c10
 declaration: theorem
 origin: cited
 lean: WavefrontSet.wfsc_decomposition_iff

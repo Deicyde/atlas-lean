@@ -1,3 +1,7 @@
+---
+article_id: af_b2badf9e6e3fe4112edb6ec8
+---
+
 # Part 2 of 2
 
 - [Kolmogorov Extension](kolmogorov-extension.md)

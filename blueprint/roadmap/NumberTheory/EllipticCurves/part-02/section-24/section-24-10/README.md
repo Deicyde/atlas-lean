@@ -1,3 +1,7 @@
+---
+article_id: af_b33b1b252b621f88fec3bba4
+---
+
 # Section 24.10
 
 - [Theorem 24.37 (Eichler-Shimura, Carayol)](349-eichler-shimura-carayol.md)

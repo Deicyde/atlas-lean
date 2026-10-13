@@ -1,3 +1,7 @@
+---
+article_id: af_45b74660cdf1bfdfd828bd19
+---
+
 # Lecture 3
 
 - [Corollary 2 (Rayleigh Quotient)](030-rayleigh-quotient.md)

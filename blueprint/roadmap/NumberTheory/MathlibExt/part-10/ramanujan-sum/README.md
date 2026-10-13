@@ -1,3 +1,7 @@
+---
+article_id: af_f354ff7cec0507a8d0498af2
+---
+
 # Ramanujan Sum
 
 - [Ramanujan Sum](ramanujan-sum.md)

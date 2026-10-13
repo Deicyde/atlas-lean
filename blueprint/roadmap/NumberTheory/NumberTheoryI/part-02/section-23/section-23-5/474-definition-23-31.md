@@ -1,4 +1,5 @@
 ---
+article_id: af_535148313b4e518114dde551
 declaration: def
 origin: cited
 lean: TateCohomology.tateHnGen

@@ -1,4 +1,5 @@
 ---
+article_id: af_920e2b55bdba718fd5a96c31
 declaration: theorem
 origin: cited
 lean: CharacterTheory.mainTheorem

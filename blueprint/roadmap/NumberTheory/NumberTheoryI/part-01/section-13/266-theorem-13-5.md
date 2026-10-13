@@ -1,4 +1,5 @@
 ---
+article_id: af_7e21fdda34e2cc243e2710ea
 declaration: theorem
 origin: cited
 lean: theorem_13_5_finite_place_Kv

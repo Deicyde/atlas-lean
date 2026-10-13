@@ -1,4 +1,5 @@
 ---
+article_id: af_85608e0cd64ee0f888f21cbb
 declaration: theorem
 origin: cited
 lean: CWComplex.SkeletonHomology.skeleton_homology_properties

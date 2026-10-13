@@ -1,3 +1,7 @@
+---
+article_id: af_b5016ab56413699bf45790e4
+---
+
 # Section 10
 
 - [Theorem 10.1 (Chevalley restriction theorem)](058-chevalley-restriction-theorem.md)

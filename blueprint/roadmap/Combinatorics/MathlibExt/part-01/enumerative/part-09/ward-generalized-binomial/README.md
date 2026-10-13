@@ -1,3 +1,7 @@
+---
+article_id: af_6eaedf04abd4b29e8b4078ea
+---
+
 # Ward Generalized Binomial
 
 - [Ward Units Carry](ward-units-carry.md)

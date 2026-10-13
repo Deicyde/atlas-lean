@@ -1,3 +1,7 @@
+---
+article_id: af_e033d4107960500b30ec868b
+---
+
 # Poset Matrix
 
 - [Is Poset Matrix](is-poset-matrix.md)

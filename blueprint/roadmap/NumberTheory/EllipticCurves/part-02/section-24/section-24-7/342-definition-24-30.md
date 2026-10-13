@@ -1,4 +1,5 @@
 ---
+article_id: af_a5cdac8647583d7e4e330c3c
 declaration: def
 origin: cited
 lean: EllipticCurve.IsSemiStable

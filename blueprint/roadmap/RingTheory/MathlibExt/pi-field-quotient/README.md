@@ -1,3 +1,7 @@
+---
+article_id: af_ac0b4f82f34687a313780557
+---
+
 # Pi Field Quotient
 
 - [Restrict](restrict.md)

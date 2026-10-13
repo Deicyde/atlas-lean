@@ -1,4 +1,5 @@
 ---
+article_id: af_4c51c33b4c8000a1bcddf4e7
 declaration: theorem
 origin: cited
 lean: SzeleTournament.szele_hamilton_paths

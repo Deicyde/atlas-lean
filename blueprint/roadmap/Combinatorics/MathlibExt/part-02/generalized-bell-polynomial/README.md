@@ -1,3 +1,7 @@
+---
+article_id: af_d05846ba01aa7dcdc42161c9
+---
+
 # Generalized Bell Polynomial
 
 - [Gen Bell Number](gen-bell-number.md)

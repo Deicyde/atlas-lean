@@ -1,3 +1,7 @@
+---
+article_id: af_a03638e7cefc714a228b07c5
+---
+
 # Lecture 11
 
 - [Proposition (Lecture 11, Section: Factorization)](108-proposition.md)

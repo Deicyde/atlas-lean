@@ -1,3 +1,7 @@
+---
+article_id: af_ea424812f7724f1704188aac
+---
+
 # Basic
 
 - [Two term kernel identity](two-term-kernel-identity.md)

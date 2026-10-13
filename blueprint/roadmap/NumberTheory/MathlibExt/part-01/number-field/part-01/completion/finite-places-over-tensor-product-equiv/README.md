@@ -1,3 +1,7 @@
+---
+article_id: af_900437be9936ce867e275aec
+---
+
 # Finite Places Over Tensor Product Equiv
 
 - [Sum finrank adic Completion places Over](sum-finrank-adic-completion-places-over.md)

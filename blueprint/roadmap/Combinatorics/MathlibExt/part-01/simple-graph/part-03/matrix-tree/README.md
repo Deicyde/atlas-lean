@@ -1,3 +1,7 @@
+---
+article_id: af_f2e1977a527a15b746f61865
+---
+
 # Matrix Tree
 
 - [Laplacian Int](laplacian-int.md)

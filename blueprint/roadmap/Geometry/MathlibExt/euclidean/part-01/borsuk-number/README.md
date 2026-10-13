@@ -1,3 +1,7 @@
+---
+article_id: af_8a7e987e6f553774891a01c2
+---
+
 # Borsuk Number
 
 - [Has Borsuk Cover](has-borsuk-cover.md)

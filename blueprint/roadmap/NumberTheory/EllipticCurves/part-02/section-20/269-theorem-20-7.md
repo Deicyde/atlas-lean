@@ -1,4 +1,5 @@
 ---
+article_id: af_276473a3689c42e4ef2ba6c1
 declaration: theorem
 origin: cited
 lean: ModularPolynomial.phi_symmetric

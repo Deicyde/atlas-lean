@@ -1,3 +1,7 @@
+---
+article_id: af_e060dcfa0ff280ac78e5efea
+---
+
 # Base Recognizable
 
 - [Base Word Value](base-word-value.md)

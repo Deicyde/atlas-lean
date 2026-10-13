@@ -1,3 +1,7 @@
+---
+article_id: af_9b52d10e906c6608ee5707e4
+---
+
 # Reduced Row Echelon to Zagier Matrix Inverse
 
 - [Reduced Row Echelon](reduced-row-echelon/README.md)

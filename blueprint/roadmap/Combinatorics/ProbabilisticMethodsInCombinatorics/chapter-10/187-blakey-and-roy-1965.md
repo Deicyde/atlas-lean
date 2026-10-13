@@ -1,4 +1,5 @@
 ---
+article_id: af_4ba5dbf240c6ffb18c91d5a7
 declaration: theorem
 origin: cited
 lean: BlakleyRoy.blakley_roy

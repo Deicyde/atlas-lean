@@ -1,3 +1,7 @@
+---
+article_id: af_a0722858996c1589cbf14495
+---
+
 # Reduced Row Echelon
 
 - [Col eq single of is Leading Entry](col-eq-single-of-is-leading-entry.md)

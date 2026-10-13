@@ -1,3 +1,7 @@
+---
+article_id: af_07b25017f6c7aca3a9cdac81
+---
+
 # Catalan Asymptotic Expansion
 
 - [Tendsto pow mul sub bernoulli sum of log diff](tendsto-pow-mul-sub-bernoulli-sum-of-log.md)

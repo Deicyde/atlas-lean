@@ -1,3 +1,7 @@
+---
+article_id: af_76ab3bc85f64e0e06ce761fa
+---
+
 # Radial Majorant
 
 - [Wiman Majorant](wiman-majorant.md)

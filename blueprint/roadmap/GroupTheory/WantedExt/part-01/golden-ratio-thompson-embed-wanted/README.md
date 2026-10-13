@@ -1,3 +1,7 @@
+---
+article_id: af_d93428262656205e9cda5d87
+---
+
 # Golden Ratio Thompson Embed Wanted
 
 - [Is Dyadic](is-dyadic.md)

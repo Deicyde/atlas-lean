@@ -1,4 +1,5 @@
 ---
+article_id: af_2a82551a223854f4880c41d3
 declaration: def
 origin: cited
 lean: RiemannRochSpace.indexOfSpeciality

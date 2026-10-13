@@ -1,3 +1,7 @@
+---
+article_id: af_68420f47a5e79f1dcc2ef9dd
+---
+
 # Bang Zsigmondy to Collatz
 
 - [Bang Zsigmondy](bang-zsigmondy/README.md)

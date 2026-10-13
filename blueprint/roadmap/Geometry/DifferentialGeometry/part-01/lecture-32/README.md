@@ -1,3 +1,7 @@
+---
+article_id: af_4d163d73eef505f2969907a1
+---
+
 # Lecture 32
 
 - [Lemma 32.1](101-lemma-32-1.md)

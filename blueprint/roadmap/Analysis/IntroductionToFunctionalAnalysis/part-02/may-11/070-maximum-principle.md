@@ -1,4 +1,5 @@
 ---
+article_id: af_a148b0349904bd5f34072611
 declaration: theorem
 origin: cited
 lean: SpectralTheory.compact_selfAdjoint_maximum_principle

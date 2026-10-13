@@ -1,4 +1,5 @@
 ---
+article_id: af_16f1305c69692042946d6e77
 declaration: theorem
 origin: cited
 lean: WeierstrassCurve.Affine.EndAlgebra.isUnit_of_ne_zero

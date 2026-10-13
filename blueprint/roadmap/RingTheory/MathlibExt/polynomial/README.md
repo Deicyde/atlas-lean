@@ -1,3 +1,7 @@
+---
+article_id: af_6d0b064af53acc3b61e3f47c
+---
+
 # Polynomial
 
 - [Eisenstein](eisenstein/README.md)

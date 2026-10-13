@@ -1,3 +1,7 @@
+---
+article_id: af_3ccecda778adb3474407962a
+---
+
 # Simsek Number
 
 - [Simsek Number](simsek-number.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_a584df1f9a909f1da98e3d71
+---
+
 # Lecture 13
 
 - [Definition (Lecture 13: More Factorization, Section: Factoring Integer Polynomials)](113-definition.md)

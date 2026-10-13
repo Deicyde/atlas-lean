@@ -1,4 +1,5 @@
 ---
+article_id: af_bd2905d99833099735a874d7
 declaration: theorem
 origin: cited
 lean: deg_eq_sum_fiber_val

@@ -1,4 +1,5 @@
 ---
+article_id: af_f7b2b286c7e09bd87ec02294
 declaration: theorem
 origin: cited
 lean: EllipticCurve.WeakMordellWeil.corollary_25_6

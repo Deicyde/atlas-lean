@@ -1,3 +1,7 @@
+---
+article_id: af_56ea1fa4643fb8291102915c
+---
+
 # Section 6
 
 - [Proposition 6.2](023-proposition-6-2.md)

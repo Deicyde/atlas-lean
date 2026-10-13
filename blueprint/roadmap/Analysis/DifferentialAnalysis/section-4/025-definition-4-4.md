@@ -1,4 +1,5 @@
 ---
+article_id: af_587b1fc60879b6c2b63042ee
 declaration: def
 origin: cited
 lean: LebesgueIntegration.integrableOnEReal

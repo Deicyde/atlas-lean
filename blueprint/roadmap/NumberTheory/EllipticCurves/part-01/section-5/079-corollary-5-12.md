@@ -1,4 +1,5 @@
 ---
+article_id: af_54d122a60fe852f0d3084d62
 declaration: theorem
 origin: cited
 lean: isogeny_prime_degree_decomposition

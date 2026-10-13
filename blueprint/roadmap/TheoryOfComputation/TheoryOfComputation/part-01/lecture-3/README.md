@@ -1,3 +1,7 @@
+---
+article_id: af_7332a3cf7746f2c1320a0d24
+---
+
 # Lecture 3
 
 - [Pumping Lemma](010-pumping-lemma.md)

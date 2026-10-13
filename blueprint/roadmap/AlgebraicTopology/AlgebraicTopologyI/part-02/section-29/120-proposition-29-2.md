@@ -1,4 +1,5 @@
 ---
+article_id: af_472626dfcd70755cea9515fe
 declaration: def
 origin: cited
 lean: SingularCohomology.crossProduct_algHom

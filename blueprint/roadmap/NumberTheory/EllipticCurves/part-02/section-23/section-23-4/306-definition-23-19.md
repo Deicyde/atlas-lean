@@ -1,4 +1,5 @@
 ---
+article_id: af_b366396dd58893edd81bb7fb
 declaration: def
 origin: cited
 lean: WeilPairing.weilPairingDiv

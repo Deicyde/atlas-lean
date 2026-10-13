@@ -1,4 +1,5 @@
 ---
+article_id: af_f866bed1451eb32462940a84
 declaration: theorem
 origin: cited
 lean: PlancherelCompact.proposition_4_1_plancherel_hasSum

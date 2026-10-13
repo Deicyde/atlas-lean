@@ -1,4 +1,5 @@
 ---
+article_id: af_f78fc8e2ed19d6af050f83b1
 declaration: theorem
 origin: cited
 lean: PoincareDuality.corollary_37_3

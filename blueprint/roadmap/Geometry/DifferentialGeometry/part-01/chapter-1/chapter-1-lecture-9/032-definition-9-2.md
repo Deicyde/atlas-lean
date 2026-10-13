@@ -1,4 +1,5 @@
 ---
+article_id: af_980274548ab8fdeb2fad0cd7
 declaration: def
 origin: cited
 statement: formalized

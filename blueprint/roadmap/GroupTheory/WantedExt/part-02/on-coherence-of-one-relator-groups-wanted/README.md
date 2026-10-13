@@ -1,3 +1,7 @@
+---
+article_id: af_895ee46d409fee7a910122ab
+---
+
 # On Coherence Of One Relator Groups Wanted
 
 - [Coherent](coherent.md)

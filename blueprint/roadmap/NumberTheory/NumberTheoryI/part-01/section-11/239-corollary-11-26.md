@@ -1,4 +1,5 @@
 ---
+article_id: af_300e53b78801419750df7a55
 declaration: theorem
 origin: cited
 lean: corollary_11_26_integral

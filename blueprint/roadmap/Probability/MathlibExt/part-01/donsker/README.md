@@ -1,3 +1,7 @@
+---
+article_id: af_1c9ac72f23eba2e9c798e046
+---
+
 # Donsker
 
 - [Donsker Clamp](donsker-clamp.md)

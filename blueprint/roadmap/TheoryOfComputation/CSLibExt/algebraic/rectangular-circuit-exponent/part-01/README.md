@@ -1,3 +1,7 @@
+---
+article_id: af_da4db16c1c220d00940e0822
+---
+
 # Part 1 of 2
 
 - [Has Rectangular Circuit Exponent](has-rectangular-circuit-exponent.md)

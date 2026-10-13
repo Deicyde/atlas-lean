@@ -1,3 +1,7 @@
+---
+article_id: af_849890e500916277d0ddf50f
+---
+
 # Sendov Radius Constant Wanted
 
 - [Is Admissible Radius](is-admissible-radius.md)

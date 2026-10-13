@@ -1,4 +1,5 @@
 ---
+article_id: af_b240099018da080e5c015181
 declaration: theorem
 origin: cited
 lean: Garrett.orthogonal_direct_sum_neg_isHyperbolic

@@ -1,3 +1,7 @@
+---
+article_id: af_387b81c70ec8d13c2c465999
+---
+
 # Gibbard Satterthwaite
 
 - [Strict Total Order](strict-total-order.md)

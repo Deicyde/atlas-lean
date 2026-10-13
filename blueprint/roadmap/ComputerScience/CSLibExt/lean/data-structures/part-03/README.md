@@ -1,3 +1,7 @@
+---
+article_id: af_b70403e27ddf7438dc4ee97c
+---
+
 # Range Tree to YFast Trie
 
 - [Range Tree](range-tree/README.md)

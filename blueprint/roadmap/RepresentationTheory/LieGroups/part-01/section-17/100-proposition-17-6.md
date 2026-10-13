@@ -1,4 +1,5 @@
 ---
+article_id: af_c28428232f481a35e708085e
 declaration: theorem
 origin: cited
 lean: LieAlgebra.NilpotentCone.coordinateRing_isDomain

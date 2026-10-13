@@ -1,4 +1,5 @@
 ---
+article_id: af_eeb81d879208bae78641a148
 declaration: theorem
 origin: cited
 lean: standard_filtration_iff_ext_vanishing

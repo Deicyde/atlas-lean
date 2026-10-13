@@ -1,3 +1,7 @@
+---
+article_id: af_c81af1ae83d03a3cfd1b87d0
+---
+
 # Gleason Wanted
 
 - [Is Orth Proj](is-orth-proj.md)

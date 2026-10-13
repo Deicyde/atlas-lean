@@ -1,4 +1,5 @@
 ---
+article_id: af_63dee536a8b4cc57e7417276
 declaration: theorem
 origin: cited
 lean: CupProduct.sphere_product_pullback_zero

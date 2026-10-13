@@ -1,4 +1,5 @@
 ---
+article_id: af_21da715b45a2d60e0df8ce85
 declaration: theorem
 origin: cited
 lean: HyperplaneArrangement.inner_inwardUnitNormals_nonpos

@@ -1,3 +1,7 @@
+---
+article_id: af_08aefd1b1f4196846ecc6fad
+---
+
 # Arithmetic Function to De Bruijn Newman Wanted
 
 - [Arithmetic Function](arithmetic-function/README.md)

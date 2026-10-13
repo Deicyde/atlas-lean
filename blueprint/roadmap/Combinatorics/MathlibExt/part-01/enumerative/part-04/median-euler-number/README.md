@@ -1,3 +1,7 @@
+---
+article_id: af_f5ffef446aa9dce78956d9b6
+---
+
 # Median Euler Number
 
 - [Median Euler Coefficients](median-euler-coefficients.md)

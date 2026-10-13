@@ -1,4 +1,5 @@
 ---
+article_id: af_cd8c5ea1d6f550963306fbec
 declaration: theorem
 origin: cited
 lean: TateCohomology.herbrandQuotient_multiplicative

@@ -1,3 +1,7 @@
+---
+article_id: af_f1f7d0d1f0b2a773a37df127
+---
+
 # Angle Bisector to Japanese Quads
 
 - [Angle Bisector](angle-bisector/README.md)

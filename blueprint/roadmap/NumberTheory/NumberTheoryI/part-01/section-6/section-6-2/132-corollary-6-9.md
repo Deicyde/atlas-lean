@@ -1,4 +1,5 @@
 ---
+article_id: af_6cb6d52ea197f97f896beeea
 declaration: theorem
 origin: cited
 lean: fractionalIdealNorm_eq_span_fieldNorms

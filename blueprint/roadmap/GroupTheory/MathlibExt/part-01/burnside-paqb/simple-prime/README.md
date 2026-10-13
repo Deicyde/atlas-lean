@@ -1,3 +1,7 @@
+---
+article_id: af_ac2ad1b9f1853acc32640426
+---
+
 # Simple Prime
 
 - [False of one add prime mul is Integral](false-of-one-add-prime-mul-is-integral.md)

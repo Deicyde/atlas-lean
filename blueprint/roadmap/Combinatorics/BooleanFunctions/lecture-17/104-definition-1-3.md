@@ -1,4 +1,5 @@
 ---
+article_id: af_4058606a482cc22503879730
 declaration: def
 origin: cited
 lean: BooleanFourier.muPWeight

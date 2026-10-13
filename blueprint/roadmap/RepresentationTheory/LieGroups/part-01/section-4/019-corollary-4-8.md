@@ -1,4 +1,5 @@
 ---
+article_id: af_8c8771d107cbd009a82f8ebd
 declaration: theorem
 origin: cited
 lean: PlancherelCompact.kfinite_functions_smooth_dense

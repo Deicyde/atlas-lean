@@ -1,3 +1,7 @@
+---
+article_id: af_abcaa4d636ae05f436af3220
+---
+
 # Probability
 
 - [Randomly Permute Distribution](randomly-permute-distribution.md)

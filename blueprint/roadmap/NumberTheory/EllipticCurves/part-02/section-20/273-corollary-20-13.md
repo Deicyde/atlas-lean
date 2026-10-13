@@ -1,4 +1,5 @@
 ---
+article_id: af_d8584ecd02769715cacb217c
 declaration: theorem
 origin: cited
 lean: CMjInvariant_isIntegral

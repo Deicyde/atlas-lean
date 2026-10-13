@@ -1,4 +1,5 @@
 ---
+article_id: af_d480aab709dbb33092c3668a
 declaration: theorem
 origin: cited
 lean: carmichael_numbers_infinite

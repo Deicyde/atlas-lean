@@ -1,4 +1,5 @@
 ---
+article_id: af_e10d233bb0d2d6ec53a8f009
 declaration: theorem
 origin: cited
 lean: Sequences.monotone_increasing_iff

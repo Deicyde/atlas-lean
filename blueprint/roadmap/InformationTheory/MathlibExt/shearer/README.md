@@ -1,3 +1,7 @@
+---
+article_id: af_886a376dd615d082307b6a42
+---
+
 # Shearer
 
 - [Shearer Marginal](shearer-marginal.md)

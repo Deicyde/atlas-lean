@@ -1,3 +1,7 @@
+---
+article_id: af_0b10134cb68618660c111f1e
+---
+
 # Frobenius
 
 - [Abelian](arith-frob-at-eq-of-under-eq.md)

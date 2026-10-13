@@ -1,4 +1,5 @@
 ---
+article_id: af_fc22fcd660644cac4de84d9b
 declaration: theorem
 origin: cited
 lean: irreducible_eq_expand_separable

@@ -1,3 +1,7 @@
+---
+article_id: af_6a5a873c290757eb00560272
+---
+
 # Root Poset Rowmotion Homomesy Wanted
 
 - [Is Homomesic](is-homomesic.md)

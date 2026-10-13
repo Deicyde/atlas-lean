@@ -1,4 +1,5 @@
 ---
+article_id: af_efba20a2e9c43bae64a5aee4
 declaration: theorem
 origin: cited
 lean: tameWildDecompositionGeneral

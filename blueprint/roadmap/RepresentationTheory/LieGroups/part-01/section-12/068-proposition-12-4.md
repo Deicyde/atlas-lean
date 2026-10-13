@@ -1,4 +1,5 @@
 ---
+article_id: af_02bdf0813e23c1ce520e27fe
 declaration: theorem
 origin: cited
 lean: prop_12_4_ext_vanishing

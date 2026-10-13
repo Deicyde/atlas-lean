@@ -1,3 +1,7 @@
+---
+article_id: af_1bbccb7767a6f16b5de78541
+---
+
 # Centered Coloring
 
 - [Is Phi Center](is-phi-center.md)

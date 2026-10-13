@@ -1,4 +1,5 @@
 ---
+article_id: af_e820752260731dc629ee38c5
 declaration: theorem
 origin: cited
 lean: irreducible_highest_weight_unique_up_to_iso

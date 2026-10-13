@@ -1,4 +1,5 @@
 ---
+article_id: af_016891f6309fc4d5a11911d6
 declaration: theorem
 origin: cited
 lean: LogSpace.nl_eq_conl

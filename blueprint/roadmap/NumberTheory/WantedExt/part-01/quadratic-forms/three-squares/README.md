@@ -1,3 +1,7 @@
+---
+article_id: af_44cdf04f9cf00b29f93d9b7f
+---
+
 # Three Squares
 
 - [Hurwitz Class Number](hurwitz-class-number.md)

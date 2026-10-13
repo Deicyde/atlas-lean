@@ -1,4 +1,5 @@
 ---
+article_id: af_9d84f5a027a280d6d4e6aa46
 declaration: def
 origin: cited
 lean: FLT.IsModularEllipticCurve

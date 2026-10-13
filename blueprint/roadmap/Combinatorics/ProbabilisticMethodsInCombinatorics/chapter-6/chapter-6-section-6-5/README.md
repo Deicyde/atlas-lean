@@ -1,3 +1,7 @@
+---
+article_id: af_f0ac3303889a6d960a2e8d2a
+---
+
 # Chapter 6, Section 6.5
 
 - [Theorem 6.5.1 (Lopsided local lemma)](097-lopsided-local-lemma.md)

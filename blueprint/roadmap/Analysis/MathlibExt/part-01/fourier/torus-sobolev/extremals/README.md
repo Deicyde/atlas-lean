@@ -1,3 +1,7 @@
+---
+article_id: af_e16e7d680e911dc09783f4c1
+---
+
 # Extremals
 
 - [Finite Extremal Parameter](finite-extremal-parameter.md)

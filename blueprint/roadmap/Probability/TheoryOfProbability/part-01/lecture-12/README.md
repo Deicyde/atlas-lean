@@ -1,3 +1,7 @@
+---
+article_id: af_9fed184615cb0fbe6d273a51
+---
+
 # Lecture 12
 
 - [Theorem (DeMoivre-Laplace limit theorem)](027-demoivre-laplace-limit-theorem.md)

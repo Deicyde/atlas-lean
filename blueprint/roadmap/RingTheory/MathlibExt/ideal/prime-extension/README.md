@@ -1,3 +1,7 @@
+---
+article_id: af_93b0d76866396865dbb83423
+---
+
 # Prime Extension
 
 - [Is Prime map of coprime clear Denom](is-prime-map-of-coprime-clear-denom.md)

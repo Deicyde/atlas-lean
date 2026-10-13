@@ -1,3 +1,7 @@
+---
+article_id: af_7c128b5dcf2d5b4e7b2f7738
+---
+
 # Entire Zeros Ones Lines Wanted to Hayman Spherical Area Ratio Wanted
 
 - [Entire Zeros Ones Lines Wanted](entire-zeros-ones-lines-wanted/README.md)

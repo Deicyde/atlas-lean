@@ -1,3 +1,7 @@
+---
+article_id: af_f01c93ca975ad1650d5fea24
+---
+
 # Manin Twist Char Two
 
 - [Manin degree data of card eq two](manin-degree-data-of-card-eq-two.md)

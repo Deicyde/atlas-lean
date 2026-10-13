@@ -1,4 +1,5 @@
 ---
+article_id: af_951089d21d4a99b198304640
 declaration: theorem
 origin: cited
 lean: CMConductorTrichotomy.isogeny_order_trichotomy

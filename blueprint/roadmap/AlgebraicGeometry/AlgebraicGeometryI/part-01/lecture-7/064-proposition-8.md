@@ -1,4 +1,5 @@
 ---
+article_id: af_a74d7c65d93b085604e86418
 declaration: theorem
 origin: cited
 lean: Lec7Products.product_projective_is_projective

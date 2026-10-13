@@ -1,4 +1,5 @@
 ---
+article_id: af_6e38ae0656fb6a42eae14c1e
 declaration: theorem
 origin: cited
 lean: admissible_kfinite_le_smooth

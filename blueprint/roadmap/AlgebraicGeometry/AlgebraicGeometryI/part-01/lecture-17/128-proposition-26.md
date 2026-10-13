@@ -1,4 +1,5 @@
 ---
+article_id: af_7a5b6e35c522aa257d233386
 declaration: theorem
 origin: cited
 lean: Lec17JacobianNormalization.proposition_26_jacobian_variety

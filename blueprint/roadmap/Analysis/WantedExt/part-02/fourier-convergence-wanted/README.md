@@ -1,3 +1,7 @@
+---
+article_id: af_a1310f6fb96134033ee6b549
+---
+
 # Fourier Convergence Wanted
 
 - [Fourier Partial Sum](fourier-partial-sum.md)

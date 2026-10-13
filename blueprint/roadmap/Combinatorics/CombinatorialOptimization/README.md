@@ -1,3 +1,7 @@
+---
+article_id: af_1d3f57ab323feb14660b28ad
+---
+
 # MIT 18.433 Combinatorial Optimization (Fall 2003)
 
 Statements selected from [MIT 18.433 Combinatorial Optimization (Fall 2003)](../../../sources/v1/CombinatorialOptimization.md) by ATLAS v1, in source order.

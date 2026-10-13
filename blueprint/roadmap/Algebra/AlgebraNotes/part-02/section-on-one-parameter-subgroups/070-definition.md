@@ -1,4 +1,5 @@
 ---
+article_id: af_6cc569a2c3e1823d82f33713
 declaration: structure
 origin: cited
 lean: SimpleGroups.IsOneParameterGroup

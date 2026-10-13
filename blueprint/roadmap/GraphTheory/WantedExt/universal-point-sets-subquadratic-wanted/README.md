@@ -1,3 +1,7 @@
+---
+article_id: af_5ebf95ade30636a51c6688ee
+---
+
 # Universal Point Sets Subquadratic Wanted
 
 - [Is Straight Line Planar Embedding](is-straight-line-planar-embedding.md)

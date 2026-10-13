@@ -1,4 +1,5 @@
 ---
+article_id: af_8ba7d1d3994ff5107e0e0462
 declaration: theorem
 origin: cited
 lean: DirectedCycles.hasDirectedCycleDivisibleBy_of_degree_bound

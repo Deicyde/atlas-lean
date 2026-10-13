@@ -1,4 +1,5 @@
 ---
+article_id: af_5d7bd019afe7fcba78b001a6
 declaration: theorem
 origin: cited
 lean: CurveWithOrd.corollary_19_23_deg_div_eq_zero

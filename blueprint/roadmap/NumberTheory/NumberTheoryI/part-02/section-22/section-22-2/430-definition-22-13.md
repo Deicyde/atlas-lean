@@ -1,4 +1,5 @@
 ---
+article_id: af_d2f1a71979739ea2d2e2498f
 declaration: def
 origin: cited
 lean: RayClassField.RayClassChar.conductor

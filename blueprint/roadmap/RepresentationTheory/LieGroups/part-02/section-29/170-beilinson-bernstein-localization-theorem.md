@@ -1,4 +1,5 @@
 ---
+article_id: af_024d2108d7cf8e488b8e93b1
 declaration: theorem
 origin: cited
 lean: BeilinsonBernstein.thm_29_2_localization

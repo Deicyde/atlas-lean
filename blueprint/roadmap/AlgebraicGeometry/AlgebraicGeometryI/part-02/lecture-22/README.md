@@ -1,3 +1,7 @@
+---
+article_id: af_78baad991efd6f77f0460959
+---
+
 # Lecture 22
 
 - [Theorem 22.1 (Bertini's Theorem)](163-bertini-s-theorem.md)

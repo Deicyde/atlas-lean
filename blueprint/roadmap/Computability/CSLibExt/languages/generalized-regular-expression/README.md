@@ -1,3 +1,7 @@
+---
+article_id: af_a41d7abab0bae00876177453
+---
+
 # Generalized Regular Expression
 
 - [Regular Star Height](regular-star-height.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_5cbbef84db72d223bed0e0ef
 declaration: theorem
 origin: cited
 lean: lemma2_L2_adjointness

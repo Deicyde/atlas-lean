@@ -1,4 +1,5 @@
 ---
+article_id: af_d5c9d2cc52dfb57b5531a51b
 declaration: theorem
 origin: cited
 lean: KunnethTopological.kunneth_topological

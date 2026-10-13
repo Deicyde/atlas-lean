@@ -1,3 +1,7 @@
+---
+article_id: af_9114308c4a0dac34af085f68
+---
+
 # Lecture 20
 
 - [Theorem 20.1 (Generalized theorema egregium)](064-generalized-theorema-egregium.md)

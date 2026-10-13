@@ -1,3 +1,7 @@
+---
+article_id: af_964fe460b45f3773d45bd105
+---
+
 # Lecture 24
 
 - [Theorem 24.1 (Grothendieck-Birkhoff)](178-grothendieck-birkhoff.md)

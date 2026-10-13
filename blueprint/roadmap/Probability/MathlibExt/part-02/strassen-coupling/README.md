@@ -1,3 +1,7 @@
+---
+article_id: af_438186abdd1dfbba5b403cdc
+---
+
 # Strassen Coupling
 
 - [Is Upper Set](is-upper-set.md)

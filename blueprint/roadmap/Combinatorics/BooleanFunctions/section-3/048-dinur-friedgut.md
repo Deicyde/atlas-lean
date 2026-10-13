@@ -1,4 +1,5 @@
 ---
+article_id: af_b11a82b3dd5febc90bb204d0
 declaration: theorem
 origin: cited
 lean: BooleanFourier.dinur_friedgut

@@ -1,3 +1,7 @@
+---
+article_id: af_77d4bc0868e2ddbe923a64aa
+---
+
 # De Bruijn Newman
 
 - [Phi Term](phi-term.md)

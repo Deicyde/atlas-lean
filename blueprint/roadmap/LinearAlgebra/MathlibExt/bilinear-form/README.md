@@ -1,3 +1,7 @@
+---
+article_id: af_0217921c146661c38fb2cfac
+---
+
 # Bilinear Form
 
 - [Dual Lattice](dual-lattice/README.md)

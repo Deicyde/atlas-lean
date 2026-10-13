@@ -1,4 +1,5 @@
 ---
+article_id: af_871dfe6f34230ebc349a373b
 declaration: theorem
 origin: cited
 lean: Lec20TangentCone.proposition_38

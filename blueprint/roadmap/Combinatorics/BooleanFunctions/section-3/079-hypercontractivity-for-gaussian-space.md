@@ -1,4 +1,5 @@
 ---
+article_id: af_d9e7ed8dbfe49945e0b2f2fa
 declaration: theorem
 origin: cited
 lean: GaussianHypercontractivity.gaussian_hypercontractivity

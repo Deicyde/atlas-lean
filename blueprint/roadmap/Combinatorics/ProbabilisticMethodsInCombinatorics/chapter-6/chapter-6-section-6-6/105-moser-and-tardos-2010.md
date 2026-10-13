@@ -1,4 +1,5 @@
 ---
+article_id: af_253e9021d81b3be6535dd975
 declaration: theorem
 origin: cited
 lean: AlgorithmicLLL.moser_tardos_expected_resamplings

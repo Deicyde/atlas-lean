@@ -1,4 +1,5 @@
 ---
+article_id: af_b10f59af45c9db60e01080bc
 declaration: theorem
 origin: cited
 lean: taylor_complex

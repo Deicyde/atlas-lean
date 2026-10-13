@@ -1,4 +1,5 @@
 ---
+article_id: af_f14781e3b06346d43700b6a8
 declaration: theorem
 origin: cited
 lean: CrossingNumber.crossing_number_corollary

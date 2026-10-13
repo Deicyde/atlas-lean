@@ -1,4 +1,5 @@
 ---
+article_id: af_19ee21e4972d824cd73a3774
 declaration: theorem
 origin: cited
 lean: IntegerLongDivision.long_division_correct

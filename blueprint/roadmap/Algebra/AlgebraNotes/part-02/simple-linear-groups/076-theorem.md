@@ -1,4 +1,5 @@
 ---
+article_id: af_1116fadd40b05b17d4a5bf2c
 declaration: theorem
 origin: cited
 lean: SimpleGroups.su2_normal_subgroups

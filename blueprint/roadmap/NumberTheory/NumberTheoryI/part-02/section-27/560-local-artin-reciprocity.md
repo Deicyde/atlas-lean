@@ -1,4 +1,5 @@
 ---
+article_id: af_f646fcaced87626b66ae5574
 declaration: structure
 origin: cited
 lean: LocalArtinReciprocity

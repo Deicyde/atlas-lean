@@ -1,4 +1,5 @@
 ---
+article_id: af_c085b3689ccea660e6971402
 declaration: theorem
 origin: cited
 lean: MvPolynomial.linear_change_of_variables_monic

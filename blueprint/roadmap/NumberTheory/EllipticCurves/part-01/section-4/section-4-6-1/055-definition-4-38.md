@@ -1,4 +1,5 @@
 ---
+article_id: af_dc9db2ddb37d493267bf25d2
 declaration: theorem
 origin: cited
 lean: perfectField_iff_perfectRing

@@ -1,3 +1,7 @@
+---
+article_id: af_500280e6adbb32c37d44362c
+---
+
 # Multigraded Free Resolution
 
 - [Is Degree Zero](is-degree-zero.md)

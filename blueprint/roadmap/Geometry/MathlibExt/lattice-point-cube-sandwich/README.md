@@ -1,3 +1,7 @@
+---
+article_id: af_5314eab8ef315896eb2eec5c
+---
+
 # Lattice Point Cube Sandwich
 
 - [Integer Unit Cube](integer-unit-cube.md)

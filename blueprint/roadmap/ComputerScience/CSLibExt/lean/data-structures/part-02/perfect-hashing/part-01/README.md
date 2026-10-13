@@ -1,3 +1,7 @@
+---
+article_id: af_7dea8e43197b6e3b3674d5f1
+---
+
 # Part 1 of 2
 
 - [Perfect Hashing](perfect-hashing.md)

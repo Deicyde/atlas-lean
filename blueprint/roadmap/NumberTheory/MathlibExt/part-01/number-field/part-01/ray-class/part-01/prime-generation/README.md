@@ -1,3 +1,7 @@
+---
+article_id: af_cd5f63e0ea48aad515754948
+---
+
 # Prime Generation
 
 - [Coprime Primes](coprime-primes.md)

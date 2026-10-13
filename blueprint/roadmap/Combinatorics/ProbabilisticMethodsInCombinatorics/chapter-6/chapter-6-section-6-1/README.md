@@ -1,3 +1,7 @@
+---
+article_id: af_329cfeece6835d45c53cf877
+---
+
 # Chapter 6, Section 6.1
 
 - [Definition 6.1.1 (Independence from a set of events)](079-independence-from-a-set-of-events.md)

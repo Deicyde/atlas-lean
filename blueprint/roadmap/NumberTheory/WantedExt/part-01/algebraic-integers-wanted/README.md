@@ -1,3 +1,7 @@
+---
+article_id: af_35b4aec2d87b9322bdfec893
+---
+
 # Algebraic Integers Wanted
 
 - [Trace](trace.md)

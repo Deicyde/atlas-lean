@@ -1,4 +1,5 @@
 ---
+article_id: af_261a497b8392b064bc6f2a25
 declaration: def
 origin: cited
 lean: JInvariant.jInvariant

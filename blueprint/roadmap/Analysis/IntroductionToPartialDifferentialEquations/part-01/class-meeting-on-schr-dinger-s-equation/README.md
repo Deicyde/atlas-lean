@@ -1,3 +1,7 @@
+---
+article_id: af_bae46f61b13998cc70fb9602
+---
+
 # Class Meeting on Schrödinger's equation
 
 - [Proposition 2.0.3 (The behavior of $K(t, \cdot) * \phi(\cdot)$ as $t \downarrow 0$)](085-t-cdot.md)

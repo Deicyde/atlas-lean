@@ -1,3 +1,7 @@
+---
+article_id: af_da534c9162ac3e495fa1a62a
+---
+
 # Part 2 of 3
 
 - [Square Matrix Multiplication Tensor](square-matrix-multiplication-tensor.md)

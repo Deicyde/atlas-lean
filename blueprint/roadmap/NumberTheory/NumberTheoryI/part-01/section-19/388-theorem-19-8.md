@@ -1,4 +1,5 @@
 ---
+article_id: af_dfd75073d271b8a4b6d9bb87
 declaration: theorem
 origin: cited
 lean: Section19.ideal_count_error_bound

@@ -1,4 +1,5 @@
 ---
+article_id: af_3a9972b3af631f350602332b
 declaration: theorem
 origin: cited
 lean: positive_scalar_curvature_vanishing

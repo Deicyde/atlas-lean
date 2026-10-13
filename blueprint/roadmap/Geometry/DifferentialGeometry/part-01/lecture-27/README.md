@@ -1,3 +1,7 @@
+---
+article_id: af_63b96634978854f60eb0579e
+---
+
 # Lecture 27
 
 - [Definition 27.1](084-definition-27-1.md)

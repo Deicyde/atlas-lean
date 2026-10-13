@@ -1,4 +1,5 @@
 ---
+article_id: af_60f543628c7907c31752837b
 declaration: theorem
 origin: cited
 lean: ELBA.E_LBA_not_decidable

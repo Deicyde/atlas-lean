@@ -1,4 +1,5 @@
 ---
+article_id: af_356474bec889b259400f4b1a
 declaration: theorem
 origin: cited
 lean: FiniteFieldArith.fq_inversion_complexity

@@ -1,3 +1,7 @@
+---
+article_id: af_4f5ecc156d7663789579cd42
+---
+
 # Lecture 29
 
 - [Corollary 29.1 (Implicit function theorem, special case)](088-implicit-function-theorem-special-case.md)

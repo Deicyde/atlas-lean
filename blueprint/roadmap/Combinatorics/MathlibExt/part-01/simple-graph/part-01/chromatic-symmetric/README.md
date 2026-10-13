@@ -1,3 +1,7 @@
+---
+article_id: af_984f7dcb545186f8456b4678
+---
+
 # Chromatic Symmetric
 
 - [Chromatic Profile Count](chromatic-profile-count.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_46132159195b0d945dcd39ca
 declaration: theorem
 origin: cited
 lean: HighDimensional.isoperimetric_sphere_weak

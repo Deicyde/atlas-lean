@@ -1,4 +1,5 @@
 ---
+article_id: af_e68e07091e69a66592a5bdb3
 declaration: theorem
 origin: cited
 lean: RamseyLocalLemma.spencer_ramsey_lll

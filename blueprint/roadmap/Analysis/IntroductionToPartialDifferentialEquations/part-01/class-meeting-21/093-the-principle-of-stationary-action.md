@@ -1,4 +1,5 @@
 ---
+article_id: af_f3d80b179c41793ac11bae01
 declaration: theorem
 origin: cited
 lean: CM18.euler_lagrange_equation

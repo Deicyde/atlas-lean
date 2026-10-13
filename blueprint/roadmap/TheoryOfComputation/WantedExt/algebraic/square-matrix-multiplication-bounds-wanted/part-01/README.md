@@ -1,3 +1,7 @@
+---
+article_id: af_12bcaf10b7e127090eb655ab
+---
+
 # Part 1 of 2
 
 - [Omega Equals Two Conjecture](omega-equals-two-conjecture.md)

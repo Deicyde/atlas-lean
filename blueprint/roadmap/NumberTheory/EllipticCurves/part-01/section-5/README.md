@@ -1,3 +1,7 @@
+---
+article_id: af_40d53c74684c2e12f33a276c
+---
+
 # Section 5
 
 - [Corollary 5.12](079-corollary-5-12.md)

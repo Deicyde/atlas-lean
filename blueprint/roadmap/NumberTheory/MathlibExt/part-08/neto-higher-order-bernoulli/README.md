@@ -1,3 +1,7 @@
+---
+article_id: af_d80420a70f40da454af9dd55
+---
+
 # Neto Higher Order Bernoulli
 
 - [Higher Order Bernoulli Number](higher-order-bernoulli-number.md)

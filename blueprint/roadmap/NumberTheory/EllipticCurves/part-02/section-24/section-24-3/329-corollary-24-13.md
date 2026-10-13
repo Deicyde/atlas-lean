@@ -1,4 +1,5 @@
 ---
+article_id: af_ae9636eeb7cf7dc2a793a1bd
 declaration: theorem
 origin: cited
 lean: HeckeMultiplicativity.hecke_prime_power_recurrence_MF

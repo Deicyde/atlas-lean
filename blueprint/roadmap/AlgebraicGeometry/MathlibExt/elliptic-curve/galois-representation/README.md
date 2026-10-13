@@ -1,3 +1,7 @@
+---
+article_id: af_90393de899f4cf70d0a6317e
+---
+
 # Galois Representation
 
 - [Gal Alg Equiv](gal-alg-equiv.md)

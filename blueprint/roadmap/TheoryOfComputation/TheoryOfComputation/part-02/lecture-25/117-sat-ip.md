@@ -1,4 +1,5 @@
 ---
+article_id: af_30f862eb8616e89c582a5140
 declaration: theorem
 origin: cited
 lean: SharpSATInIP.sharpSAT_in_IP

@@ -1,4 +1,5 @@
 ---
+article_id: af_cd43c53748d45b8610665548
 declaration: theorem
 origin: cited
 lean: theorem_9_3_gelfand_naimark_bargmann

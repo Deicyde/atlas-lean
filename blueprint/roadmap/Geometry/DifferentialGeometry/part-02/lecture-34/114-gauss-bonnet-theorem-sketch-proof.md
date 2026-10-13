@@ -1,4 +1,5 @@
 ---
+article_id: af_27ba7a4bdbfdea09ae086807
 declaration: theorem
 origin: cited
 lean: SmoothGaussBonnet.smooth_gauss_bonnet

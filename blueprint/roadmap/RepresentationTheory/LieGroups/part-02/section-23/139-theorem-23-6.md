@@ -1,4 +1,5 @@
 ---
+article_id: af_5c9b2ec5033169038977599d
 declaration: theorem
 origin: cited
 lean: indec_projFunctor_classification

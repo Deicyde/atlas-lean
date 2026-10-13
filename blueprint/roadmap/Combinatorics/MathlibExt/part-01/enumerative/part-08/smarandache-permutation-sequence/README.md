@@ -1,3 +1,7 @@
+---
+article_id: af_25591c46f6c70b1428a86731
+---
+
 # Smarandache Permutation Sequence
 
 - [Smarandache Block](smarandache-block.md)

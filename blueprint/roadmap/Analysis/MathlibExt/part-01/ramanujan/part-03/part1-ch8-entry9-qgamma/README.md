@@ -1,3 +1,7 @@
+---
+article_id: af_582c47ef61443196bc6deb6a
+---
+
 # Part1 Ch8 Entry9 Qgamma
 
 - [Chapter8 Digamma eq digamma](chapter8-digamma-eq-digamma.md)

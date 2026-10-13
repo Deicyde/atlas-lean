@@ -1,3 +1,7 @@
+---
+article_id: af_d1016ebbdec1e2d84d8e773a
+---
+
 # Dual Matrix Multiplication Bounds Wanted
 
 - [Upper Bound One](upper-bound-one.md)

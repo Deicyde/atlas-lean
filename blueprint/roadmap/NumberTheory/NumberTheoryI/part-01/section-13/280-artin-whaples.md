@@ -1,4 +1,5 @@
 ---
+article_id: af_4224899858332eedc571552e
 declaration: theorem
 origin: cited
 lean: artin_whaples_classification

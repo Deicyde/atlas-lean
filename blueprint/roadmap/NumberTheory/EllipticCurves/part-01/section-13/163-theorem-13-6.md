@@ -1,4 +1,5 @@
 ---
+article_id: af_29bdeef786824b7d245f59db
 declaration: theorem
 origin: cited
 lean: EndomorphismRingOverFiniteField.theorem_13_6

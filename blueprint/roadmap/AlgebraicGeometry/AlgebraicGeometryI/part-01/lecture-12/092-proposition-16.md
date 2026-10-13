@@ -1,4 +1,5 @@
 ---
+article_id: af_69d2c373638272deb94c7fc5
 declaration: def
 origin: cited
 lean: QCohSheaves.prop16_pushforward_pullback_qcoh_iso

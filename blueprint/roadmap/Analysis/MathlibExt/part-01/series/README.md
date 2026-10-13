@@ -1,3 +1,7 @@
+---
+article_id: af_7f9a864a525000d77b398c98
+---
+
 # Series
 
 - [Central Binom Power Sum](central-binom-power-sum-stirling.md)

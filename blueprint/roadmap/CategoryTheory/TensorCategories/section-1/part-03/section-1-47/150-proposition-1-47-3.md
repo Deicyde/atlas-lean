@@ -1,4 +1,5 @@
 ---
+article_id: af_45a6d12e64b056850daba275
 declaration: theorem
 origin: cited
 lean: CategoryTheory.dualOfProjectiveIsProjective

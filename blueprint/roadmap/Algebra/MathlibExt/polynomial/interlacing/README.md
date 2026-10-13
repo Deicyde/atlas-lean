@@ -1,3 +1,7 @@
+---
+article_id: af_5d5301ee84bf47fcf7126ae1
+---
+
 # Interlacing
 
 - [Has Upper Interlacing Point](has-upper-interlacing-point.md)

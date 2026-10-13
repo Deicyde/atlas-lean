@@ -1,3 +1,7 @@
+---
+article_id: af_f9c361cf18ef3055ed272afd
+---
+
 # Factorial Ratio
 
 - [Factorial Prod](factorial-prod.md)

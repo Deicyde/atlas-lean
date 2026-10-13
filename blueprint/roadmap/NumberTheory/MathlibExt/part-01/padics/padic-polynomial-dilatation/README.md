@@ -1,3 +1,7 @@
+---
+article_id: af_78b9d3d3da521a3552d0366e
+---
+
 # Padic Polynomial Dilatation
 
 - [Padic Polynomial Dilatation](padic-polynomial-dilatation.md)

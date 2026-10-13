@@ -1,3 +1,7 @@
+---
+article_id: af_2ca8c2341478f956223d3d76
+---
+
 # Trie
 
 - [Trie](trie.md)

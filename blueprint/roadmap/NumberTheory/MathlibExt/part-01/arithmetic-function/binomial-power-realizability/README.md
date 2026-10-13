@@ -1,3 +1,7 @@
+---
+article_id: af_5aa936d404f174124fdf2839
+---
+
 # Binomial Power Realizability
 
 - [Binomial Power Seq](binomial-power-seq.md)

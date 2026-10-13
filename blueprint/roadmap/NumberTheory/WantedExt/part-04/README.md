@@ -1,3 +1,7 @@
+---
+article_id: af_aa039df2f105c14fb12ce81a
+---
+
 # Lucas Numbers Modulo MWanted to Shafarevich Relation Rank Wanted
 
 - [Lucas Numbers Modulo MWanted](lucas-numbers-modulo-mwanted/README.md)

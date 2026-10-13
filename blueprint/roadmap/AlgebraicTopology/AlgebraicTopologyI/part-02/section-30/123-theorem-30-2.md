@@ -1,4 +1,5 @@
 ---
+article_id: af_ea9cad1f4c13a82d4fa1340a
 declaration: theorem
 origin: cited
 lean: poincareDuality_F2

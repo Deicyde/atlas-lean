@@ -1,3 +1,7 @@
+---
+article_id: af_2b57188ade172f654b2cb8ad
+---
+
 # Discrete Spectrum
 
 - [Nonnegative Discrete Spectrum](nonnegative-discrete-spectrum.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_17deed64fa4219a9c014bf60
 declaration: def
 origin: cited
 lean: prop44_affine_pushforward_cohomology

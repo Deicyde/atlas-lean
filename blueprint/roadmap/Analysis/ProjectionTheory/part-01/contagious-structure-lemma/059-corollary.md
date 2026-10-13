@@ -1,4 +1,5 @@
 ---
+article_id: af_48a48ce9c16f4fd25aa25489
 declaration: theorem
 origin: cited
 lean: ProjectionTheory.sum_product_set_expansion

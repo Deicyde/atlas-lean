@@ -1,3 +1,7 @@
+---
+article_id: af_0477eef7b4d2360f5e03017b
+---
+
 # Jacobi Stirling First Kind
 
 - [Jacobi Stirling First Poly](jacobi-stirling-first-poly.md)

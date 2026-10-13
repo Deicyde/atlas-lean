@@ -1,3 +1,7 @@
+---
+article_id: af_37a6b840c370e43ad7f226b1
+---
+
 # Lecture 28
 
 - [Theorem (Lecture 28)](061-theorem.md)

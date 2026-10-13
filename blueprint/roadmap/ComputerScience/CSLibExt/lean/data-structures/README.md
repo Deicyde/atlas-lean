@@ -1,3 +1,7 @@
+---
+article_id: af_7afe10d0333ab8002f4fdefd
+---
+
 # Data Structures
 
 - [Avl Tree to Binary Heap](part-01/README.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_d75b1ec336fa24722fd8f1d8
 declaration: theorem
 origin: cited
 lean: LieAlgebra.maximalQuotient_isDomain

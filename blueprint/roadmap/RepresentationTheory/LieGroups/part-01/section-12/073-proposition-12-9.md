@@ -1,4 +1,5 @@
 ---
+article_id: af_cf919d43d2a1ac6f70060bb4
 declaration: theorem
 origin: cited
 lean: prop_12_9_regular_sequence

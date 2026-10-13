@@ -1,3 +1,7 @@
+---
+article_id: af_1b672e130eaeaadf10b5956b
+---
+
 # Two Power Rank
 
 - [Two Power Image](two-power-image.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_3be860dc6fc5bc0133d2de55
+---
+
 # Lecture 4
 
 - [Definition 2.1 (Discrete derivatives)](006-discrete-derivatives.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_0e6db33621c670d84171d2d0
+---
+
 # Lecture 40
 
 - [Definition 40.1](140-definition-40-1.md)

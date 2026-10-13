@@ -1,4 +1,5 @@
 ---
+article_id: af_d79503f90a58b41893d3b927
 declaration: theorem
 origin: cited
 lean: TuringMachine.deciding_akbk_nlogn

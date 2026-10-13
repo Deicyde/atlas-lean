@@ -1,3 +1,7 @@
+---
+article_id: af_625bf7dccc986d4ada100589
+---
+
 # Countably Monolithic
 
 - [Has Countable Network](has-countable-network.md)

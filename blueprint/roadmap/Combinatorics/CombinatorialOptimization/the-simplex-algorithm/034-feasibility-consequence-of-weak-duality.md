@@ -1,4 +1,5 @@
 ---
+article_id: af_0ab15ac344922079f5fde0b7
 declaration: theorem
 origin: cited
 lean: feasibility_corollary_primal

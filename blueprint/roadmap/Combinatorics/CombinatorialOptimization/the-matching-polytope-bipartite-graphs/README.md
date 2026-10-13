@@ -1,3 +1,7 @@
+---
+article_id: af_b0326877eac7c6144fb4cdd7
+---
+
 # The Matching Polytope - Bipartite Graphs
 
 - [Theorem 1 (matching polytope of bipartite graphs)](003-matching-polytope-of-bipartite-graphs.md)

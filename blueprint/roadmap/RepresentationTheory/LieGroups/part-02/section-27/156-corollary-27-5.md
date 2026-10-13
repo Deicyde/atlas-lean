@@ -1,4 +1,5 @@
 ---
+article_id: af_254e46090fc479643501feeb
 declaration: theorem
 origin: cited
 lean: borelWeil_parabolic_dominant

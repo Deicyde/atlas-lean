@@ -1,4 +1,5 @@
 ---
+article_id: af_9dae537f88c5bef6834032e1
 declaration: theorem
 origin: cited
 lean: BooleanFourier.friedgut_junta_theorem_2_1

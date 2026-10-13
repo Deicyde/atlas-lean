@@ -1,4 +1,5 @@
 ---
+article_id: af_99db03a484a316376b8ca1df
 declaration: theorem
 origin: cited
 lean: MeasureTheory.doob_sq_maximal_ineq_iSup

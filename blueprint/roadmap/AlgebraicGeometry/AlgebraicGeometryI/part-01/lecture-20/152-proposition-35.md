@@ -1,4 +1,5 @@
 ---
+article_id: af_63785118af1e41cb884c5309
 declaration: theorem
 origin: cited
 lean: SmoothClosedSubvariety.proposition35_conormal_right_exact

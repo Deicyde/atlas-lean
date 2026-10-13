@@ -1,3 +1,7 @@
+---
+article_id: af_dbffce31f5d276f5a017684c
+---
+
 # Section 1.32
 
 - [Conjecture 1.32.1](091-conjecture-1-32-1.md)

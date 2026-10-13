@@ -1,3 +1,7 @@
+---
+article_id: af_615292a3cd76723902372b2d
+---
+
 # Class Sum
 
 - [Class Sum](class-sum.md)

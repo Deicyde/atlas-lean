@@ -1,4 +1,5 @@
 ---
+article_id: af_4323879056b451049c60c249
 declaration: theorem
 origin: cited
 lean: AffineBuildingSLVStrong.constructed_apartment_system_is_maximal

@@ -1,3 +1,7 @@
+---
+article_id: af_b69c4d5976bb0459eb8f732e
+---
+
 # Lecture 8
 
 - [Theorem 1 (Lecture 8: Line Integrals, Remarks on Lecture 8)](010-theorem-1.md)

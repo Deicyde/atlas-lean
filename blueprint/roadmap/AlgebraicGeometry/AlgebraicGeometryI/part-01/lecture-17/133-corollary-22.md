@@ -1,4 +1,5 @@
 ---
+article_id: af_b043ecad18ed098de7c30e5c
 declaration: def
 origin: cited
 lean: corollary22_scheme_iso

@@ -1,3 +1,7 @@
+---
+article_id: af_8344af1f6b8ae3decb028a36
+---
+
 # Chapter 1, Lecture 7
 
 - [Lemma 7.1](021-lemma-7-1.md)

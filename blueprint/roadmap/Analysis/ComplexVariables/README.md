@@ -1,3 +1,7 @@
+---
+article_id: af_8b2cb9952851337b1b20e834
+---
+
 # MIT 18.112 Functions of a Complex Variable (Fall 2008)
 
 Statements selected from [MIT 18.112 Functions of a Complex Variable (Fall 2008)](../../../sources/v1/ComplexVariables.md) by ATLAS v1, in source order.

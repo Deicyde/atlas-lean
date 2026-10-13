@@ -1,3 +1,7 @@
+---
+article_id: af_55247cb416957de10b40c976
+---
+
 # Flow Duality and algorithms
 
 - [Theorem 1 (Menger)](012-menger.md)

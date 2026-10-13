@@ -1,3 +1,7 @@
+---
+article_id: af_29edb838cffda575526c2c80
+---
+
 # KLSBounds Wanted
 
 - [Kannan Lovasz Simonovits1995 bound](kannan-lovasz-simonovits1995-bound.md)

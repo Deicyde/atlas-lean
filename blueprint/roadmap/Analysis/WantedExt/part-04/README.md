@@ -1,3 +1,7 @@
+---
+article_id: af_ce4d9a8735e8bac2ee23fb6b
+---
+
 # Rubel HInfinity Coherence Wanted to Wirsing Constant Wanted
 
 - [Rubel HInfinity Coherence Wanted](rubel-hinfinity-coherence-wanted/README.md)

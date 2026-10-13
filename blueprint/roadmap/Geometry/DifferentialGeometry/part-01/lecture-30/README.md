@@ -1,3 +1,7 @@
+---
+article_id: af_4f5c6bfa0224e99c3f1e4cba
+---
+
 # Lecture 30
 
 - [Definition 30.2](093-definition-30-2.md)

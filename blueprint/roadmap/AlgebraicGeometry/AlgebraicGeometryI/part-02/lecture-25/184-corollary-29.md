@@ -1,4 +1,5 @@
 ---
+article_id: af_f696190ed7ab8790ccb5facf
 declaration: theorem
 origin: cited
 lean: ArithmeticGeometricGenus.cor29_arithmetic_eq_geometric_genus

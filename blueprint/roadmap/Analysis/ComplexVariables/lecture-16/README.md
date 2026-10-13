@@ -1,3 +1,7 @@
+---
+article_id: af_126fcb79925f4e4f299116a3
+---
+
 # Lecture 16
 
 - [Definition 1 (Lecture 16: Harmonic Functions)](025-definition-1.md)

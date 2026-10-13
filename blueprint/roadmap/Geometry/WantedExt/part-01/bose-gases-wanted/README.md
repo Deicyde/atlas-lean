@@ -1,3 +1,7 @@
+---
+article_id: af_490335113633fb3ef678afd0
+---
+
 # Bose Gases Wanted
 
 - [Box](box.md)

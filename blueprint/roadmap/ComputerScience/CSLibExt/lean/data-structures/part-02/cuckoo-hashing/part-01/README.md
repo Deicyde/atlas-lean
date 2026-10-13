@@ -1,3 +1,7 @@
+---
+article_id: af_195a3f271c12f7d85118885d
+---
+
 # Part 1 of 2
 
 - [Cuckoo Hashing](cuckoo-hashing.md)

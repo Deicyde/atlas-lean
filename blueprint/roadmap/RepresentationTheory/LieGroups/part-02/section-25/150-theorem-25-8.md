@@ -1,4 +1,5 @@
 ---
+article_id: af_2e7eece16584d3eaf0118f53
 declaration: theorem
 origin: cited
 lean: bernstein_gelfand_25_8_i

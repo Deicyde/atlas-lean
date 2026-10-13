@@ -1,4 +1,5 @@
 ---
+article_id: af_4c2c4f2e2278fb29521b953c
 declaration: theorem
 origin: cited
 lean: SimpleGraph.kahn_zhao

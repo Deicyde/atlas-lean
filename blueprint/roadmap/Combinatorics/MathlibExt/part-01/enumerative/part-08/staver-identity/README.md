@@ -1,3 +1,7 @@
+---
+article_id: af_8e77cd5b48d2b63025a5476f
+---
+
 # Staver Identity
 
 - [Staver sign mul](staver-sign-mul.md)

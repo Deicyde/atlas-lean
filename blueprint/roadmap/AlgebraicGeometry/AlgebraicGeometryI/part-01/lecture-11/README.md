@@ -1,3 +1,7 @@
+---
+article_id: af_d44782c02c04e65156381a10
+---
+
 # Lecture 11
 
 - [Proposition 14](090-proposition-14.md)

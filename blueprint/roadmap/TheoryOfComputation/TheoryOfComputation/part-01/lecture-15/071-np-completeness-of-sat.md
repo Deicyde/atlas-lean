@@ -1,4 +1,5 @@
 ---
+article_id: af_3059579af416864782393f02
 declaration: theorem
 origin: cited
 lean: CookLevin.cook_levin

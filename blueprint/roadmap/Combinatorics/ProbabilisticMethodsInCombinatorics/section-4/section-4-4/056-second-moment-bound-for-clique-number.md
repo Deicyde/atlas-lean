@@ -1,4 +1,5 @@
 ---
+article_id: af_179120c51ddc3bf2f207a8a7
 declaration: theorem
 origin: cited
 lean: CliqueNumber.clique_number_second_moment_bound

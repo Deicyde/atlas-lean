@@ -1,3 +1,7 @@
+---
+article_id: af_f59606d9980263b7ab2614e1
+---
+
 # Hash Table
 
 - [Hash Table](hash-table.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_2c578faf4c1afd5fc2426dfc
+---
+
 # Part1 Ch9 Entry13 Bernoulligen
 
 - [Chapter9 Clausen Term norm bound](chapter9-clausen-term-norm-bound.md)

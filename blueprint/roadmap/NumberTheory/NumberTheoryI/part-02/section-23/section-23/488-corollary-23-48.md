@@ -1,4 +1,5 @@
 ---
+article_id: af_43b83d79b9bb038765da000d
 declaration: theorem
 origin: cited
 lean: TateCohomology.herbrandQuotient_eq_of_mono_finite_cokernel

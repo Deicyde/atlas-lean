@@ -1,3 +1,7 @@
+---
+article_id: af_4108c40d79f8077c13355131
+---
+
 # Section 7
 
 - [Proposition (Section 7.2, Bilinear and hermitian forms)](027-proposition.md)

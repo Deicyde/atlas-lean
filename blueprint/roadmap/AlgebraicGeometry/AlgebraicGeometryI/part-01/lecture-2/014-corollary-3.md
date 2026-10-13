@@ -1,4 +1,5 @@
 ---
+article_id: af_4f8ad9f345a29c384acde905
 declaration: theorem
 origin: cited
 lean: NoetherianTopological.primeSpectrum_noetherianSpace

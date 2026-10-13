@@ -1,3 +1,7 @@
+---
+article_id: af_af2330db95cd3284aeb85842
+---
+
 # Lecture 18
 
 - [Definition 18.1](055-definition-18-1.md)

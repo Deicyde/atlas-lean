@@ -1,4 +1,5 @@
 ---
+article_id: af_f02bc622c35ebbd1169b04da
 declaration: theorem
 origin: cited
 lean: IsVermaModule.corollary_8_7

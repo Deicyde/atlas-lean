@@ -1,3 +1,7 @@
+---
+article_id: af_5d34278a3b0d189f5bd76dde
+---
+
 # Lucas Sequence First Kind
 
 - [Is Lucas Sequence First Kind](is-lucas-sequence-first-kind.md)

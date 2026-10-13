@@ -1,3 +1,7 @@
+---
+article_id: af_f889252ef2261d45b4afc43c
+---
+
 # Part 1 of 2
 
 - [Outer Minkowski Boundary](outer-minkowski-boundary.md)

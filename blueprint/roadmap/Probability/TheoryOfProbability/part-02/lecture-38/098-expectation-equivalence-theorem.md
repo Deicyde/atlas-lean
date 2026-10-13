@@ -1,4 +1,5 @@
 ---
+article_id: af_53cea02e9f276ec4ab96bf75
 declaration: theorem
 origin: cited
 lean: BrownianFiltration.brownian_condExp_equivalence

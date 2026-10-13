@@ -1,3 +1,7 @@
+---
+article_id: af_a81681f41c3124d07ff2c5bf
+---
+
 # Lower Bound
 
 - [Lower Bound](lower-bound.md)

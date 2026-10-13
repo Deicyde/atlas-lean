@@ -1,4 +1,5 @@
 ---
+article_id: af_deab4449248254ff02ac3265
 declaration: theorem
 origin: cited
 lean: prop29_smooth_iff_omega_locally_free

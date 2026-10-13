@@ -1,3 +1,7 @@
+---
+article_id: af_3e139b704cdaebb74ab995c0
+---
+
 # Gale Shapley
 
 - [Strict Total Order](strict-total-order.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_74145a49df720ed5a19479c9
 declaration: theorem
 origin: cited
 lean: CompactSurfaceCurvature.total_abs_curvature_ge_four_pi

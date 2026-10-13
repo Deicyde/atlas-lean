@@ -1,3 +1,7 @@
+---
+article_id: af_73cadae1fbe72ab9fc8a562e
+---
+
 # Dirichlet Character
 
 - [Period](period/README.md)

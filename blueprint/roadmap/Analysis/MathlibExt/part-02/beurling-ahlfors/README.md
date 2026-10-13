@@ -1,3 +1,7 @@
+---
+article_id: af_8730d15af1e7a0909d96aeb7
+---
+
 # Beurling Ahlfors
 
 - [Pstar](pstar.md)

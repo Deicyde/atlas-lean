@@ -1,4 +1,5 @@
 ---
+article_id: af_762c2b1e373ddb6111222507
 declaration: theorem
 origin: cited
 lean: genus_one_isomorphic_to_plane_cubic

@@ -1,4 +1,5 @@
 ---
+article_id: af_d409e5d963e53b823b82ea62
 declaration: theorem
 origin: cited
 lean: SchrodingerEquation.proposition_2_0_4_L2_preservation_nD

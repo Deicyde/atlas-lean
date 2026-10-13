@@ -1,3 +1,7 @@
+---
+article_id: af_c84480b20e6ab8299dcee73a
+---
+
 # Section 1.10
 
 - [Definition 1.10.1](019-definition-1-10-1.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_454305810a0955f742ccf094
+---
+
 # Max Prime Fac
 
 - [Max Prime Fac](max-prime-fac.md)

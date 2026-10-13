@@ -1,4 +1,5 @@
 ---
+article_id: af_e373a64fe563cdfc20d2747c
 declaration: theorem
 origin: cited
 lean: thm_10_9_two_two

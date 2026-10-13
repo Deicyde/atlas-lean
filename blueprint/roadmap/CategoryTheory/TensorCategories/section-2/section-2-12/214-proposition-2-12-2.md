@@ -1,4 +1,5 @@
 ---
+article_id: af_53861393f5fcc0697df5c072
 declaration: theorem
 origin: cited
 lean: CategoryTheory.proposition_2_12_2_bimoduleEquiv

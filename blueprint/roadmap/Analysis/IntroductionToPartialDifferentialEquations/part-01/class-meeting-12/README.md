@@ -1,3 +1,7 @@
+---
+article_id: af_59c1ddd4c79fde140f5fa05e
+---
+
 # Class Meeting 12
 
 - [Theorem 1.1 (Kirchhoff's formula)](048-kirchhoff-s-formula.md)

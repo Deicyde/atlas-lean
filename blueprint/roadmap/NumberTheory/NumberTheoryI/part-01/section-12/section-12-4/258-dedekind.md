@@ -1,4 +1,5 @@
 ---
+article_id: af_30a1b3e4476e46ccac378f82
 declaration: theorem
 origin: cited
 lean: DedekindCriterion.index_dvd_iff_span_eq_top

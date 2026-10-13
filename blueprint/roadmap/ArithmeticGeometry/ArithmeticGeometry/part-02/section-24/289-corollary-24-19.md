@@ -1,4 +1,5 @@
 ---
+article_id: af_ae5a3e6e477ee04916b0ec53
 declaration: theorem
 origin: cited
 lean: torsion_injection

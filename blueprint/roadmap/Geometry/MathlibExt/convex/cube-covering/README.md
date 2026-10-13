@@ -1,3 +1,7 @@
+---
+article_id: af_d0a148b2d0168277017d5d4e
+---
+
 # Cube Covering
 
 - [Coordinate Cube](coordinate-cube.md)

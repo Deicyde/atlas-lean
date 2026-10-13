@@ -1,3 +1,7 @@
+---
+article_id: af_c613928fcce084f69564b58d
+---
+
 # Shannon Source Coding
 
 - [Is Prefix Free](is-prefix-free.md)

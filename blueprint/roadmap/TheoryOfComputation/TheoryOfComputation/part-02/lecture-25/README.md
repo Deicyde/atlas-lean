@@ -1,3 +1,7 @@
+---
+article_id: af_2e33c421d7991a05fd0e8c23
+---
+
 # Lecture 25
 
 - [Defn (Lecture 25, Interactive Proofs – Introduction)](104-defn.md)

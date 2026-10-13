@@ -1,4 +1,5 @@
 ---
+article_id: af_d287823e40e9cd54f0b87644
 declaration: theorem
 origin: cited
 lean: BrunnMinkowski.brunns_theorem

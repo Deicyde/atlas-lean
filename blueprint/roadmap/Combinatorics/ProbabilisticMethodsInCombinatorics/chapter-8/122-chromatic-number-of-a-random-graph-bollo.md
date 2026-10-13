@@ -1,4 +1,5 @@
 ---
+article_id: af_0b439cdf1d476978c6d4981a
 declaration: theorem
 origin: cited
 lean: ChromaticRandom.bollobas_chromatic_number

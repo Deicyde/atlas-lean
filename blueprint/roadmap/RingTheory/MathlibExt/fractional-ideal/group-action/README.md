@@ -1,3 +1,7 @@
+---
+article_id: af_3ff119dea404c075eed5fdaa
+---
+
 # Group Action
 
 - [Ring Equiv Of Ring Equiv Hom](ring-equiv-of-ring-equiv-hom.md)

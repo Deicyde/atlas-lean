@@ -1,3 +1,7 @@
+---
+article_id: af_df2b31f07f4e6cb81d312970
+---
+
 # Zagier Matrix Inverse
 
 - [Zagier Matrix](zagier-matrix.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_4c7e05fde2d2b22a2b1ddfe7
+---
+
 # Density Hales Jewett
 
 - [Reindex](reindex.md)

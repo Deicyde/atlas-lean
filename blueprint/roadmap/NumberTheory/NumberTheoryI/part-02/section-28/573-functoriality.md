@@ -1,4 +1,5 @@
 ---
+article_id: af_7d0d93269958439e63be73a0
 declaration: def
 origin: cited
 lean: theorem_28_8_functoriality

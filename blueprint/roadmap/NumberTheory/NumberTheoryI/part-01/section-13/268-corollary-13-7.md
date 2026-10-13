@@ -1,4 +1,5 @@
 ---
+article_id: af_32d098d91090e9cc3c2e4fbf
 declaration: def
 origin: cited
 lean: corollary_13_7_embeddings_equiv

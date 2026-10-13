@@ -1,3 +1,7 @@
+---
+article_id: af_ca0159d3d7c1aaa2c7ae5446
+---
+
 # Lecture 11
 
 - [Definition 5 (Lecture 11, Section 4)](090-definition-5.md)

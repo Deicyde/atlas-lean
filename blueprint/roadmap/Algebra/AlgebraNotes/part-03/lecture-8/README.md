@@ -1,3 +1,7 @@
+---
+article_id: af_52f0963198ca4b17ec8fa7fe
+---
+
 # Lecture 8
 
 - [Corollary (Lecture 8: Rings, Section 'Zero and Inverses')](102-corollary.md)

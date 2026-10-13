@@ -1,4 +1,5 @@
 ---
+article_id: af_daf699b291f873cc275c84b8
 declaration: def
 origin: cited
 lean: IsogenyGraph.edgeMult

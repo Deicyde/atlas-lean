@@ -1,3 +1,7 @@
+---
+article_id: af_4473f83f3a89c6b7db4177fe
+---
+
 # Genocchi Number
 
 - [Genocchi Power Series](genocchi-power-series.md)

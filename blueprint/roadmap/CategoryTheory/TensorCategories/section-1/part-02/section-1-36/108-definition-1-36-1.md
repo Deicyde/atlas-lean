@@ -1,4 +1,5 @@
 ---
+article_id: af_0f70687a5a9e91eba881823a
 declaration: structure
 origin: cited
 lean: BialgebraTwist

@@ -1,3 +1,7 @@
+---
+article_id: af_a406e3daafec8ed5640a0077
+---
+
 # Logarithmic Potential Equilibrium Free Wanted
 
 - [Charge Seq](charge-seq.md)

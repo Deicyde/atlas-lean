@@ -1,4 +1,5 @@
 ---
+article_id: af_837215fcf30bab58bfe5e831
 declaration: theorem
 origin: cited
 lean: UnbalancingLights.unbalancing_lights_improved

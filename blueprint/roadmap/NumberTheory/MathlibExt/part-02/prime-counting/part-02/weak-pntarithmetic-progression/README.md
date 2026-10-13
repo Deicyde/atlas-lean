@@ -1,3 +1,7 @@
+---
+article_id: af_21aab5ca51de61bc778a6fbd
+---
+
 # Weak PNTArithmetic Progression
 
 - [Tendsto psi Residue Class div self](tendsto-psi-residue-class-div-self.md)

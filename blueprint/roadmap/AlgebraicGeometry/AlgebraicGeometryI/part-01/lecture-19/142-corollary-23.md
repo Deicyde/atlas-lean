@@ -1,4 +1,5 @@
 ---
+article_id: af_42266a2481b3381a27611bf4
 declaration: theorem
 origin: cited
 lean: Corollary23_jacobian_criterion

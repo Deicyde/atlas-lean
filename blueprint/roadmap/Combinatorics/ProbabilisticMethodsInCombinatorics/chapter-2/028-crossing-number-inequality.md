@@ -1,4 +1,5 @@
 ---
+article_id: af_69a55767865cb6095e5bb89d
 declaration: theorem
 origin: cited
 lean: CrossingNumber.crossing_number_inequality

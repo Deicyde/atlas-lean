@@ -1,3 +1,7 @@
+---
+article_id: af_92935f3b44b3114a76bf75c9
+---
+
 # Fibonacci Word
 
 - [Fib Subst](fib-subst.md)

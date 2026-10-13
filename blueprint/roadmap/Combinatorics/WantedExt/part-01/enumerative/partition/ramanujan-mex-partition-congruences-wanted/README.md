@@ -1,3 +1,7 @@
+---
+article_id: af_217c0ba2412b2417329f3396
+---
+
 # Ramanujan Mex Partition Congruences Wanted
 
 - [Partition Mex](partition-mex.md)

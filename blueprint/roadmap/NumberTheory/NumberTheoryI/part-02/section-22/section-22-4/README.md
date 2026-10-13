@@ -1,3 +1,7 @@
+---
+article_id: af_bd6a5a3adb6d6b6564c1f064
+---
+
 # Section 22.4
 
 - [Definition 22.27](442-definition-22-27.md)

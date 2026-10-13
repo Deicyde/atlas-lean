@@ -1,3 +1,7 @@
+---
+article_id: af_f7f76a60c28eaf26063c93d2
+---
+
 # Maximum Term Attained
 
 - [Bdd Above range wiman Term](bdd-above-range-wiman-term.md)

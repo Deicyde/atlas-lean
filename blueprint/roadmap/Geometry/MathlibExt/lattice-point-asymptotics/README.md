@@ -1,3 +1,7 @@
+---
+article_id: af_e17752a5f8bf1782c806210e
+---
+
 # Lattice Point Asymptotics
 
 - [Raw Subtype Equiv Canonical Point Set](raw-subtype-equiv-canonical-point-set.md)

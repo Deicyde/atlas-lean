@@ -1,4 +1,5 @@
 ---
+article_id: af_eb5ceb0a354ea5e9c1e84374
 declaration: theorem
 origin: cited
 lean: FullBNPairContext.hecke_structure_theorem

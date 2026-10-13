@@ -1,4 +1,5 @@
 ---
+article_id: af_6d1e339d7360264421cb04f2
 declaration: def
 origin: cited
 lean: CategoryTheory.ExactModuleCategory.quasiFrobenius_of_exact_rigid

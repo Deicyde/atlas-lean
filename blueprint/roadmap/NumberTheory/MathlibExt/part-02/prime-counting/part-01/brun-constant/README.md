@@ -1,3 +1,7 @@
+---
+article_id: af_0a290c78348d72fe0ddf6ea2
+---
+
 # Brun Constant
 
 - [Brun Twin Prime Reciprocal Term](brun-twin-prime-reciprocal-term.md)

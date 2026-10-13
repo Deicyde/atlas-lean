@@ -1,4 +1,5 @@
 ---
+article_id: af_dfaa1c154bde51afb7509653
 declaration: theorem
 origin: cited
 lean: apt_iso_exists_fixing_intersection

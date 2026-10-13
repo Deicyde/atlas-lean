@@ -1,3 +1,7 @@
+---
+article_id: af_57436df2842193d0a1abe87c
+---
+
 # Transitive Closure
 
 - [Transitive Closure Stages](transitive-closure-stages.md)

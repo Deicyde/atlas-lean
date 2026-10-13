@@ -1,4 +1,5 @@
 ---
+article_id: af_56e8d1fe8b9e01328f8ccc33
 declaration: theorem
 origin: cited
 lean: Burger.burger_constant_along_characteristics

@@ -1,4 +1,5 @@
 ---
+article_id: af_5dc6214d45d510e1fa02a111
 declaration: theorem
 origin: cited
 lean: OracleComputation.exists_oracle_P_eq_NP

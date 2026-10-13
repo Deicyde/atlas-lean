@@ -1,3 +1,7 @@
+---
+article_id: af_97188593d0f800a583a99f88
+---
+
 # Defined Over
 
 - [Ideal Over K](ideal-over-k.md)

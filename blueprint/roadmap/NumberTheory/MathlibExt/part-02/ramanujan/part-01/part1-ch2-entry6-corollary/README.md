@@ -1,3 +1,7 @@
+---
+article_id: af_8e55b74738c171a387d05119
+---
+
 # Part1 Ch2 Entry6 Corollary
 
 - [A](a.md)

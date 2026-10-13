@@ -1,4 +1,5 @@
 ---
+article_id: af_2fa1f5d35e48310e59fc748b
 declaration: abbrev
 origin: cited
 lean: Definition_1_52_1_LeftIntegral

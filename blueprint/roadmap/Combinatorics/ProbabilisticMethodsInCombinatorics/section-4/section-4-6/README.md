@@ -1,3 +1,7 @@
+---
+article_id: af_d0ea35e11d3f8bc1e2579ef0
+---
+
 # Section 4.6
 
 - [Conjecture 4.6.2 (Erdős)](062-erd-s.md)

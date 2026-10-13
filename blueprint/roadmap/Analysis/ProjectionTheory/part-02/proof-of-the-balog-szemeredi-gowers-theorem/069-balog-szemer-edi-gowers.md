@@ -1,4 +1,5 @@
 ---
+article_id: af_40be6fe7fc5adb86f5b6e525
 declaration: theorem
 origin: cited
 lean: ProjectionTheory.bsg_projection_variant

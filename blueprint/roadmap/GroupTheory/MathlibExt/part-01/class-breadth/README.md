@@ -1,3 +1,7 @@
+---
+article_id: af_9c1a2f9ca7c5cc61cff75fc0
+---
+
 # Class Breadth
 
 - [Element Breadth](element-breadth.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_e0d4b75e45b0279d0ed2e6b0
+---
+
 # Lecture 16
 
 - [Theorem (3SAT is NP-complete)](055-3sat-is-np-complete.md)

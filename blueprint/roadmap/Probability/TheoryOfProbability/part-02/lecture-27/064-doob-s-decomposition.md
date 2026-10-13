@@ -1,4 +1,5 @@
 ---
+article_id: af_f797504922e44752f4851dc4
 declaration: theorem
 origin: cited
 lean: DoobDecomposition.doob_decomposition

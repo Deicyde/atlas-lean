@@ -1,4 +1,5 @@
 ---
+article_id: af_24d04e547ce20e8da61378e0
 declaration: theorem
 origin: cited
 lean: SpaceComplexity.tqbf_pspace_complete

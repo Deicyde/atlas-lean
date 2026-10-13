@@ -1,3 +1,7 @@
+---
+article_id: af_d8a67edcb7f81e3eb68a6253
+---
+
 # Projection theory for balls in Euclidean space
 
 - [Theorem (Double Counting Real Version)](012-double-counting-real-version.md)

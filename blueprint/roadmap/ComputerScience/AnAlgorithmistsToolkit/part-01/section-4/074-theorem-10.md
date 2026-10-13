@@ -1,4 +1,5 @@
 ---
+article_id: af_4287dd750ce75296d8dd0310
 declaration: theorem
 origin: cited
 lean: LovaszSimonovits.theorem10_distribution_evolution

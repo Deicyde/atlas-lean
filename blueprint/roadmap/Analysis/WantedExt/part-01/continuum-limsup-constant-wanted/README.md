@@ -1,3 +1,7 @@
+---
+article_id: af_a2d37bb0b1fb6ed37196cf80
+---
+
 # Continuum Limsup Constant Wanted
 
 - [Entire](entire.md)

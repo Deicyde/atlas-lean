@@ -1,4 +1,5 @@
 ---
+article_id: af_08af47028e3f8185f5eeabcd
 declaration: theorem
 origin: cited
 lean: BeckTheorem.beck_theorem_lines_per_point

@@ -1,4 +1,5 @@
 ---
+article_id: af_75b22562ec389eadc9cc56cd
 declaration: theorem
 origin: cited
 lean: theorem_6_16_irreducibility

@@ -1,3 +1,7 @@
+---
+article_id: af_2adf0def37741e81c81f4b05
+---
+
 # Idele
 
 - [Local Integral Unit Subgroup](local-integral-unit-subgroup.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_9ed02b6d76382fb218bad0e4
 declaration: theorem
 origin: cited
 lean: optional_stopping_alt_ui_preserved

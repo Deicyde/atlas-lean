@@ -1,3 +1,7 @@
+---
+article_id: af_873308112d6f489993cc81ee
+---
+
 # Christol Theorem
 
 - [K Kernel](k-kernel.md)

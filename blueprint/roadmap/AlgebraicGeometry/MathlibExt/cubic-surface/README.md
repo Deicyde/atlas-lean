@@ -1,3 +1,7 @@
+---
+article_id: af_491f63e3a21a0ea9cc8951e1
+---
+
 # Cubic Surface
 
 - [Cubic Surface](cubic-surface.md)

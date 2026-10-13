@@ -1,3 +1,7 @@
+---
+article_id: af_fc3d92283065ba9476148976
+---
+
 # Pontryagin Dual
 
 - [Padic Quotient Int](padic-quotient-int.md)

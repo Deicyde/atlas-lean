@@ -1,4 +1,5 @@
 ---
+article_id: af_008fea4c74ad9cb5735c4046
 declaration: theorem
 origin: cited
 lean: ErdosSpencer.erdos_spencer_latin_transversal

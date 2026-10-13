@@ -1,3 +1,7 @@
+---
+article_id: af_b726a4ca2587ee802f564c05
+---
+
 # Mountain Pass Wanted
 
 - [Is Critical Point](is-critical-point.md)

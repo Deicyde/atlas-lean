@@ -1,4 +1,5 @@
 ---
+article_id: af_a1ec25b1acae297b02e2b3fe
 declaration: theorem
 origin: cited
 lean: birch_swinnerton_dyer_conjecture

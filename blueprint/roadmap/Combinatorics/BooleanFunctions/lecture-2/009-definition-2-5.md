@@ -1,4 +1,5 @@
 ---
+article_id: af_45b10880d5c8c69ed00e2b5a
 declaration: def
 origin: cited
 lean: BooleanFourier.restrictToSubset

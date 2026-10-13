@@ -1,4 +1,5 @@
 ---
+article_id: af_63687aee026bb75bee56f2de
 declaration: theorem
 origin: cited
 lean: ProperIdealNormCount.corollary_21_7_conductor_coprime

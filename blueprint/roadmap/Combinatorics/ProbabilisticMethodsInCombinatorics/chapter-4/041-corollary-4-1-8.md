@@ -1,4 +1,5 @@
 ---
+article_id: af_3e04d1dee9d835bfe859bd8c
 declaration: theorem
 origin: cited
 lean: ProbabilityTheory.second_moment_method

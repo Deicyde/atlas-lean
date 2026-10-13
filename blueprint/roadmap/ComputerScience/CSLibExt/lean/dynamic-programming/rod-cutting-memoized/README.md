@@ -1,3 +1,7 @@
+---
+article_id: af_7a4a8dcc18d46e4fd213dff8
+---
+
 # Rod Cutting Memoized
 
 - [Memoized Cut Rod Aux](memoized-cut-rod-aux.md)

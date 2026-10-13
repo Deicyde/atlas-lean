@@ -1,4 +1,5 @@
 ---
+article_id: af_ae08c3d72ad768309a320a8a
 declaration: theorem
 origin: cited
 lean: ChromaticConcentration.shamir_spencer

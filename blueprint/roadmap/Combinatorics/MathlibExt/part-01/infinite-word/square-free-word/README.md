@@ -1,3 +1,7 @@
+---
+article_id: af_8fa56db1555f5d46cf13f169
+---
+
 # Square Free Word
 
 - [Is Word Square](is-word-square.md)

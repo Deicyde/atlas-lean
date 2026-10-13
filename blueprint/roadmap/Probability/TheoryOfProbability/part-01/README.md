@@ -1,3 +1,7 @@
+---
+article_id: af_c272ac384e99d51eb0ba220c
+---
+
 # Lecture 2 to Lecture 26
 
 - [Lecture 2](lecture-2/README.md)

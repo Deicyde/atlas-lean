@@ -1,3 +1,7 @@
+---
+article_id: af_e19d8ee622eff0cce074bde7
+---
+
 # Part 2 of 2
 
 - [Pointwise le kolmogorov Error](pointwise-le-kolmogorov-error.md)

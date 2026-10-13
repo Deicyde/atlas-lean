@@ -1,3 +1,7 @@
+---
+article_id: af_991e1e9b208dfe8375a4da89
+---
+
 # Erdos Problem1138 Wanted
 
 - [Sup prime Gap](sup-prime-gap.md)

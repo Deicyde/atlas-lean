@@ -1,3 +1,7 @@
+---
+article_id: af_1c74c1a0731e88023e07de5f
+---
+
 # Symplectic Geometry, Lecture 12, Section 1 (Existence of Almost-Complex Structures)
 
 - [Theorem 1 (Symplectic Geometry, Lecture 12, Section 1 (Existence of Almost-Complex Structures))](019-theorem-1.md)

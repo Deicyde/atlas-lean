@@ -1,4 +1,5 @@
 ---
+article_id: af_3fd9a7a500f354d93c1d9847
 declaration: def
 origin: cited
 lean: CategoryTheory.Definition_2_9_18

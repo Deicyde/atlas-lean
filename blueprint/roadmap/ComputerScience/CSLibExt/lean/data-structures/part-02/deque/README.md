@@ -1,3 +1,7 @@
+---
+article_id: af_2eaf452f030d931698233c38
+---
+
 # Deque
 
 - [Deque](deque.md)

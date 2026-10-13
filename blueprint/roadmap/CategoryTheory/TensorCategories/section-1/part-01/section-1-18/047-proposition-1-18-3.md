@@ -1,4 +1,5 @@
 ---
+article_id: af_aaf39bd14321afc1e714c557
 declaration: def
 origin: cited
 lean: EndTensorProduct.Proposition_1_18_3

@@ -1,3 +1,7 @@
+---
+article_id: af_773179ec77d2940daca86350
+---
+
 # Generalized Lucas to Imaginary Quadratic Discriminant
 
 - [Generalized Lucas](generalized-lucas/README.md)

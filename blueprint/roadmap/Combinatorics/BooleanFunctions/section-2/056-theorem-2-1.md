@@ -1,4 +1,5 @@
 ---
+article_id: af_8bb60ab290c141eac6ec73cd
 declaration: theorem
 origin: cited
 lean: BooleanFourier.arrow_impossibility

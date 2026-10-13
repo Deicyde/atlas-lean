@@ -1,3 +1,7 @@
+---
+article_id: af_1a11f376cce11bc822afb4d6
+---
+
 # KAbelian Square Free Word
 
 - [Word Factor Count](word-factor-count.md)

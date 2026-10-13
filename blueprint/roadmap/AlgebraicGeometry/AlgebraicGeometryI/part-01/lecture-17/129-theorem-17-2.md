@@ -1,4 +1,5 @@
 ---
+article_id: af_d190ad5e1639a77393d3e2ed
 declaration: theorem
 origin: cited
 lean: Lec17AbelJacobi.genus_one_isomorphic_to_pic0

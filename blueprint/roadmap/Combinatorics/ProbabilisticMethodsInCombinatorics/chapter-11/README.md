@@ -1,3 +1,7 @@
+---
+article_id: af_3fb2183daadc88d2c90c434b
+---
+
 # Chapter 11
 
 - [Theorem 11.0.2 (Erdős, Kleitman, and Rothschild 1973)](202-erd-s-kleitman-and-rothschild-1973.md)

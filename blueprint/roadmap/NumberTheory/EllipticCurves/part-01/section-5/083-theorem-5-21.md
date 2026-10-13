@@ -1,4 +1,5 @@
 ---
+article_id: af_298633390be864dc9236e83b
 declaration: theorem
 origin: cited
 lean: DivisionPolynomial.nsmul_eq_divisionPoly

@@ -1,4 +1,5 @@
 ---
+article_id: af_1da1934960af9a2b00839cb0
 declaration: theorem
 origin: cited
 lean: ContinuousRep.kFiniteSubspace_dense

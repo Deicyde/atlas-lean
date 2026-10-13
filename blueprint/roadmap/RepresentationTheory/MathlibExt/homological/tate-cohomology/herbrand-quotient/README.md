@@ -1,3 +1,7 @@
+---
+article_id: af_3665982d10332d5eb74ac8fd
+---
+
 # Herbrand Quotient
 
 - [Tate Cohomology Card](tate-cohomology-card.md)

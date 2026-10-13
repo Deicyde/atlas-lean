@@ -1,4 +1,5 @@
 ---
+article_id: af_10bd5a42b581726be4f607d9
 declaration: theorem
 origin: cited
 lean: LBADecidability.A_LBA_decidable

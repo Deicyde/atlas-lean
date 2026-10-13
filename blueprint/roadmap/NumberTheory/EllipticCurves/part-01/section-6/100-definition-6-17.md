@@ -1,4 +1,5 @@
 ---
+article_id: af_46811eae8f3d60d6728f1581
 declaration: def
 origin: cited
 lean: Isogeny.trace

@@ -1,3 +1,7 @@
+---
+article_id: af_bc4a0bfe4e1a1b76a5cc64a7
+---
+
 # Lecture 10
 
 - [Definition 21](084-definition-21.md)

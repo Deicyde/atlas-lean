@@ -1,3 +1,7 @@
+---
+article_id: af_f52401960a2477d8177f953a
+---
+
 # Conjugacy Class
 
 - [Arith Frob Conj Class](arith-frob-conj-class.md)

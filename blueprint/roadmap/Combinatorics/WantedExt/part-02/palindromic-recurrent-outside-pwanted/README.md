@@ -1,3 +1,7 @@
+---
+article_id: af_9c8151367beca7df3bc5185f
+---
+
 # Palindromic Recurrent Outside PWanted
 
 - [Sigma](sigma.md)

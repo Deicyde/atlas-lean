@@ -1,3 +1,7 @@
+---
+article_id: af_5bbb0198b86971e086093d3c
+---
+
 # Kadison Singer
 
 - [Barrier](mixed-characteristic-polynomial-max-real.md)

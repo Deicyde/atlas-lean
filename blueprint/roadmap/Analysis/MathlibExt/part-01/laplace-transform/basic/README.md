@@ -1,3 +1,7 @@
+---
+article_id: af_a759f27a823144ba56172b0b
+---
+
 # Basic
 
 - [Laplace Convergent](laplace-convergent.md)

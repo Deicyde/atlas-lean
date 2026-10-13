@@ -1,4 +1,5 @@
 ---
+article_id: af_76eed4d6980fd5081c1a69f6
 declaration: theorem
 origin: cited
 lean: strong_duality

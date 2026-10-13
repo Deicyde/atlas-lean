@@ -1,4 +1,5 @@
 ---
+article_id: af_ba826c08423331736807e1ca
 declaration: theorem
 origin: cited
 lean: AbsoluteValueOnField.cor_5_4_nonarchimedean

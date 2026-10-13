@@ -1,4 +1,5 @@
 ---
+article_id: af_060e2815ea85609df08b9a29
 declaration: def
 origin: cited
 lean: AlgebraicTopologyI.ContinuousMap.Homotopy.naturalSingularChainHomotopy

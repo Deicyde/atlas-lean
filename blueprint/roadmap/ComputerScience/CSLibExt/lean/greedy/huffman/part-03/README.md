@@ -1,3 +1,7 @@
+---
+article_id: af_44b69ae43acb83e7510da877
+---
+
 # Part 3 of 3
 
 - [Initial Huffman Table](initial-huffman-table.md)

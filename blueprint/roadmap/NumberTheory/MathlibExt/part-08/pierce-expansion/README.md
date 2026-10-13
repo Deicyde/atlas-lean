@@ -1,3 +1,7 @@
+---
+article_id: af_74d80c146df37e187221d531
+---
+
 # Pierce Expansion
 
 - [Traj](traj.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_b6e2da494751cc4237be0672
 declaration: theorem
 origin: cited
 lean: corollary_13_6_places_above_finite

@@ -1,4 +1,5 @@
 ---
+article_id: af_5f04cb2ce5fa4ddd2844f859
 declaration: theorem
 origin: cited
 lean: Polynomial.yunAlgorithm_exists_sqfreeFactorization

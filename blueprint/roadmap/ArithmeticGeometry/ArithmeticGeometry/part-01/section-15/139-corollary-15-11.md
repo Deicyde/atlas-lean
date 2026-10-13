@@ -1,4 +1,5 @@
 ---
+article_id: af_ef0ff24cbd68a652406db60b
 declaration: theorem
 origin: cited
 lean: birational_iff_functionField_iso

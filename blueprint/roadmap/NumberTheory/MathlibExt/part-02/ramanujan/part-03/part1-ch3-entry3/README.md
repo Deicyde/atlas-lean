@@ -1,3 +1,7 @@
+---
+article_id: af_7161c684bd6cd9e59d1260da
+---
+
 # Part1 Ch3 Entry3
 
 - [F Coeff eq generalized Bell Generating](f-coeff-eq-generalized-bell-generating.md)

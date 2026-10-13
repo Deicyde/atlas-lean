@@ -1,3 +1,7 @@
+---
+article_id: af_627674fbac71794b756dbe10
+---
+
 # Church Bicknell Fibonacci Convolution
 
 - [Sqrt5 ne](sqrt5-ne.md)

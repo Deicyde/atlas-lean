@@ -1,4 +1,5 @@
 ---
+article_id: af_5fd490e2b35605e6c7cd6dc3
 declaration: theorem
 origin: cited
 lean: CellDecomposition.cell_decomposition_lemma

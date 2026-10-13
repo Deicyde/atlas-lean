@@ -1,3 +1,7 @@
+---
+article_id: af_b5a6a3633e7c3941a3241f26
+---
+
 # Symplectic Geometry
 
 - [Symplectic Geometry, Lecture 9, Section 1 (Curvature)](symplectic-geometry-lecture-9-section-1-curvatur/README.md)

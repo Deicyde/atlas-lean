@@ -1,3 +1,7 @@
+---
+article_id: af_48230f65a01c3a774badaf7d
+---
+
 # Section 12
 
 - [Proposition 12.1 (Hilbert-Noether theorem)](065-hilbert-noether-theorem.md)

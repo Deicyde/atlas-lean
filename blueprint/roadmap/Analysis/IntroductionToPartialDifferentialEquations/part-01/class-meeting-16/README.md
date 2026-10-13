@@ -1,3 +1,7 @@
+---
+article_id: af_80bbd37062cfb917618410b1
+---
+
 # Class Meeting 16
 
 - [Definition 1.0.1 (Fourier Transform)](069-fourier-transform.md)

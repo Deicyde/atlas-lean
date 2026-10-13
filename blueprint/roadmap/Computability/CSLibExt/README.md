@@ -1,3 +1,7 @@
+---
+article_id: af_d54e30a367a1edadc9a691ab
+---
+
 # CSLibExt
 
 Reusable, fully proved computer-science developments built on MathlibExt.

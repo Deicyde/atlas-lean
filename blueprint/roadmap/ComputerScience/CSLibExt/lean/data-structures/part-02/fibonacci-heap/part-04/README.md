@@ -1,3 +1,7 @@
+---
+article_id: af_9c998bad215168e77e41ed37
+---
+
 # Part 4 of 4
 
 - [Delete Min eq none iff](delete-min-eq-none-iff.md)

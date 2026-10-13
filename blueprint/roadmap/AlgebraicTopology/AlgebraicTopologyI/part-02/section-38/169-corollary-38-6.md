@@ -1,4 +1,5 @@
 ---
+article_id: af_72a100fd70124a89f82cc5e2
 declaration: theorem
 origin: cited
 lean: AlgebraicTopologyI.knotComplement_isHomologyCircle

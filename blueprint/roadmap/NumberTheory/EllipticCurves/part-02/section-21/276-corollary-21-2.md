@@ -1,4 +1,5 @@
 ---
+article_id: af_dcd8080629fe22df198cec1e
 declaration: def
 origin: cited
 lean: RingClassField.corollary_21_2_galois_iso

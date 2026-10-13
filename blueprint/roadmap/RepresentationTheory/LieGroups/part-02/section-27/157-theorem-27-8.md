@@ -1,4 +1,5 @@
 ---
+article_id: af_89906cca41ad0ef9344a97c9
 declaration: theorem
 origin: cited
 lean: springerMap_isResolution

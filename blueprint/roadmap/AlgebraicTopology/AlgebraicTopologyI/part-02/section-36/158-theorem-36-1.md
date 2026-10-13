@@ -1,4 +1,5 @@
 ---
+article_id: af_393d9696d6f1508df3277036
 declaration: def
 origin: cited
 lean: FullyRelativeCapProduct.theorem_36_1

@@ -1,3 +1,7 @@
+---
+article_id: af_71d5f2a705dc91ae7df5a953
+---
+
 # Section 4
 
 - [Proposition 4.25](078-proposition-4-25.md)

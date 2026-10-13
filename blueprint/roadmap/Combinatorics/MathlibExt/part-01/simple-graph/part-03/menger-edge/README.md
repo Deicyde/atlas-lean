@@ -1,3 +1,7 @@
+---
+article_id: af_d35645099234961011207040
+---
+
 # Menger Edge
 
 - [Is Edge Disjoint STPaths](is-edge-disjoint-stpaths.md)

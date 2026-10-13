@@ -1,4 +1,5 @@
 ---
+article_id: af_dc64ca3dcc1c13b7f7024a50
 declaration: theorem
 origin: cited
 lean: SelbergExpansion.sl2_rep_min_dimension

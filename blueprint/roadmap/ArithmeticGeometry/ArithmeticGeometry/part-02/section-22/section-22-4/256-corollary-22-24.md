@@ -1,4 +1,5 @@
 ---
+article_id: af_7368f923dfd5ca2ab425b2d5
 declaration: theorem
 origin: cited
 lean: RiemannRochSpace.cor_22_24

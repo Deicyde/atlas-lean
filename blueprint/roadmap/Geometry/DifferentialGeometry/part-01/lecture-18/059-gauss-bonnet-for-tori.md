@@ -1,4 +1,5 @@
 ---
+article_id: af_6271aa918e0ff8b3f7e9d468
 declaration: theorem
 origin: cited
 lean: GaussBonnetTorus.gauss_bonnet_torus

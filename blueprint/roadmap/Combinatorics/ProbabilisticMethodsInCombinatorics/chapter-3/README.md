@@ -1,3 +1,7 @@
+---
+article_id: af_bb9b440c8a4ef7a4e96f3bd8
+---
+
 # Chapter 3
 
 - [Theorem 3.1.1](030-theorem-3-1-1.md)

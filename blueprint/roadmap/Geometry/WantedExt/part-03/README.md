@@ -1,3 +1,7 @@
+---
+article_id: af_35a18caf29ea7435add76a5b
+---
+
 # Steiner Ratio Wanted to Weinstein Conjecture3 DWanted
 
 - [Steiner Ratio Wanted](steiner-ratio-wanted/README.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_ce66019055bfebfaf55ea928
 declaration: structure
 origin: cited
 lean: BasedRingDef

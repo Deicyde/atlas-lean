@@ -1,4 +1,5 @@
 ---
+article_id: af_e9c2e141205c0878964a8cf5
 declaration: theorem
 origin: cited
 lean: bgg_theorem_bruhat_order

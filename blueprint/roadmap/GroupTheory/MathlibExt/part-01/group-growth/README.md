@@ -1,3 +1,7 @@
+---
+article_id: af_3fd11d1ff0f6b3f2c150a111
+---
+
 # Group Growth
 
 - [Growth](growth.md)

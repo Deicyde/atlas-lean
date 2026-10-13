@@ -1,4 +1,5 @@
 ---
+article_id: af_c2c43be2e7272d85e1c03c91
 declaration: abbrev
 origin: cited
 lean: TensorCategories.Definition_1_5_1

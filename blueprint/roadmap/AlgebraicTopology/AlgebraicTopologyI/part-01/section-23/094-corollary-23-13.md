@@ -1,4 +1,5 @@
 ---
+article_id: af_a4e7486114d985bb8878870f
 declaration: theorem
 origin: cited
 lean: DirectLimitHomology.homology_preservesFilteredColimits

@@ -1,3 +1,7 @@
+---
+article_id: af_5ef7a6dbaf6ff721b40321d3
+---
+
 # Part 1 of 4
 
 - [Part1 Ch1 Entry1](ramanujan-part1-ch1-entry1-magicsquare3.md)

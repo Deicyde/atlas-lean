@@ -1,4 +1,5 @@
 ---
+article_id: af_f08986d3afcb5f9db08ac7a7
 declaration: theorem
 origin: cited
 lean: Burger.deriv_along_char_eq_zero

@@ -1,4 +1,5 @@
 ---
+article_id: af_e9fa1c6c7a552f9c732d4b5b
 declaration: theorem
 origin: cited
 lean: CharacterTheory.mainTheorem_characters_span

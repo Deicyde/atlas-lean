@@ -1,3 +1,7 @@
+---
+article_id: af_c57b32e36e1a5f1c25fe2c21
+---
+
 # Lecture 8
 
 - [Definition (moment generating function)](016-moment-generating-function.md)

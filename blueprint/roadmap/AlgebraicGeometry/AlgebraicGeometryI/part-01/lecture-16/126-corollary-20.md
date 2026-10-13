@@ -1,4 +1,5 @@
 ---
+article_id: af_56dc4eb41c4dc85a3b645bc3
 declaration: theorem
 origin: cited
 lean: Lec5BezoutPascal.corollary20_intersection_mult_gt_one_of_singular

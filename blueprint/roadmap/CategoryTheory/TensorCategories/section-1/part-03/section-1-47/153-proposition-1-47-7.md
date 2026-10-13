@@ -1,4 +1,5 @@
 ---
+article_id: af_b37d415e59c65ae9322da6bc
 declaration: theorem
 origin: cited
 lean: CategoryTheory.FiniteTensorCategoryData.Proposition_1_47_7_regular_absorption

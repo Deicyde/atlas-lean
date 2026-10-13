@@ -1,3 +1,7 @@
+---
+article_id: af_9ca22494844e5cb046f69ca7
+---
+
 # Part 6 of 9
 
 - [Octagonal Pyramidal Composition](octagonal-pyramidal-number-eq-compositio.md)

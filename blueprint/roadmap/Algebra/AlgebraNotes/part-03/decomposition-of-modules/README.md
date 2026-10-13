@@ -1,3 +1,7 @@
+---
+article_id: af_bd15d48e42872a4cc448268c
+---
+
 # Decomposition of Modules
 
 - [Definition (Section: Decomposition of Modules, Subsubsection: Uniqueness of Subgroups)](135-definition.md)

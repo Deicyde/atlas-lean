@@ -1,3 +1,7 @@
+---
+article_id: af_475ced3c1ff0e16903473c81
+---
+
 # Abel Continuation
 
 - [Abel Partial Sum](abel-partial-sum.md)

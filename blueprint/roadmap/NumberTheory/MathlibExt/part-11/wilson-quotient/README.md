@@ -1,3 +1,7 @@
+---
+article_id: af_58622092e720ba6a56e6b815
+---
+
 # Wilson Quotient
 
 - [Wilson Quotient](wilson-quotient.md)

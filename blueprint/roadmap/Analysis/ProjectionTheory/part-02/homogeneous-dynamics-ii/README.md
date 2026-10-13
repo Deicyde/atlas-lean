@@ -1,3 +1,7 @@
+---
+article_id: af_d7db914a2d3e310a9363dbaf
+---
+
 # Homogeneous Dynamics II
 
 - [Proposition (Section: Homogeneous Dynamics II)](092-proposition.md)

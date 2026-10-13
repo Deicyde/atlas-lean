@@ -1,4 +1,5 @@
 ---
+article_id: af_eabceb94d424409cbb51a51c
 declaration: theorem
 origin: cited
 lean: simple_algebra_if_irreducible_verma

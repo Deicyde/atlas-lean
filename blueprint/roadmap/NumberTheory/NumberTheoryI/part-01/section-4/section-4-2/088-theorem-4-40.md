@@ -1,4 +1,5 @@
 ---
+article_id: af_8c68b9571f8fd5309cf3a669
 declaration: theorem
 origin: cited
 lean: isEtaleAlgebra_of_isSemisimpleRing_tensor_algClosure

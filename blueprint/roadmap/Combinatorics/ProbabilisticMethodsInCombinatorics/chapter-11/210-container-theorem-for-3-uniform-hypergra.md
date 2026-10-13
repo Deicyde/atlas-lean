@@ -1,4 +1,5 @@
 ---
+article_id: af_3872ee4ea4a1c6998276907f
 declaration: theorem
 origin: cited
 lean: HypergraphContainers.container_theorem_three_uniform

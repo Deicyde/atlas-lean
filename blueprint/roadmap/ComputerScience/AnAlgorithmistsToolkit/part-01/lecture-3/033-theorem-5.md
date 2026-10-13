@@ -1,4 +1,5 @@
 ---
+article_id: af_91873eb6d62e7026dee97959
 declaration: theorem
 origin: cited
 lean: Cheeger.theorem5_sorted_rayleigh_bound

@@ -1,4 +1,5 @@
 ---
+article_id: af_efab1691036dfa7bc1738e00
 declaration: theorem
 origin: cited
 lean: Martingales.azuma_doob_martingale

@@ -1,4 +1,5 @@
 ---
+article_id: af_ec427f2c915e35c0043f3e15
 declaration: theorem
 origin: cited
 lean: RandomGraph.triangle_free_whp_gnp

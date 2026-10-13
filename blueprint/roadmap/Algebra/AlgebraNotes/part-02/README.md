@@ -1,3 +1,7 @@
+---
+article_id: af_b5ff348117d63c5d8b117c45
+---
+
 # Proofs and Applications of the Sylow Theorems to Characters and Schur's Lemma
 
 - [Proofs and Applications of the Sylow Theorems](proofs-and-applications-of-the-sylow-theorems/README.md)

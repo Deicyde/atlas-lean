@@ -1,3 +1,7 @@
+---
+article_id: af_57d6d22adf345e23ad1a9805
+---
+
 # Generalized Extremal
 
 - [Generalized Extremal Number](generalized-extremal-number.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_7aa0cf9720ee8dcbcfde303e
+---
+
 # Part1 Ch6 Entry6 Harmonic
 
 - [Chapter6 Shifted Derived Series Term](chapter6-shifted-derived-series-term.md)

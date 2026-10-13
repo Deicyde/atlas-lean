@@ -1,4 +1,5 @@
 ---
+article_id: af_4095a962cea10ffd20f74468
 declaration: theorem
 origin: cited
 lean: JordanForm.jordan_decomposition_matrix

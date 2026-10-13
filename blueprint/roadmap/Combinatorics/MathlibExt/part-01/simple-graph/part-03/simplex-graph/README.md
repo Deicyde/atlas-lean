@@ -1,3 +1,7 @@
+---
+article_id: af_71f9738dd79da8b8dab210e9
+---
+
 # Simplex Graph
 
 - [Simplex Vertex](simplex-vertex.md)

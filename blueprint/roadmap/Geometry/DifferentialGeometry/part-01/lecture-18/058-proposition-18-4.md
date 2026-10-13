@@ -1,4 +1,5 @@
 ---
+article_id: af_d692d77c2f5c9941807686e0
 declaration: theorem
 origin: cited
 lean: AbstractGaussBonnet.connectionForm_divergence_identity

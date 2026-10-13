@@ -1,3 +1,7 @@
+---
+article_id: af_dc182bfecf2f6363fb5a126b
+---
+
 # Quadratic Reciprocity Bridge Four
 
 - [Jacobi Sym four mul of odd](jacobi-sym-four-mul-of-odd.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_4c02b4747c20156b3e594e00
 declaration: theorem
 origin: cited
 lean: smooth_iff_completion_power_series

@@ -1,3 +1,7 @@
+---
+article_id: af_f47e3cbebc480ab1c52e7e97
+---
+
 # Class Meeting 24
 
 - [Theorem 3.1 (Class Meeting #24, Section 3 ("Solving" Burger's equation))](099-theorem-3-1.md)

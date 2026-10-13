@@ -1,3 +1,7 @@
+---
+article_id: af_83fdf445abb44ff7ca5998a5
+---
+
 # Engel Expansion
 
 - [Neg Rem](neg-rem.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_4429e5b8f332c8996fda050a
 declaration: theorem
 origin: cited
 lean: shoup_theorem_9_7_general_N

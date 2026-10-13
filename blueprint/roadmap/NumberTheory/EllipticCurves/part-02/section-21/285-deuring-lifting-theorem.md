@@ -1,4 +1,5 @@
 ---
+article_id: af_e4e5ec25868a5b5191b17335
 declaration: theorem
 origin: cited
 lean: DeuringLifting.deuring_lifting_theorem

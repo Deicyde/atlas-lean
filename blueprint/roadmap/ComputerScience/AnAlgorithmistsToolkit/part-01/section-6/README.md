@@ -1,3 +1,7 @@
+---
+article_id: af_4be349b47c1a4fa83c95912c
+---
+
 # Section 6
 
 - [Definition 7 (Conductance)](043-conductance.md)

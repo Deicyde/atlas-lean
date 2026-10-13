@@ -1,3 +1,7 @@
+---
+article_id: af_192a1c6db1585c11fe82999e
+---
+
 # Section 6
 
 - [Theorem (Section 6.1)](019-theorem.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_040740e1ea3d4f413c4b2ee3
 declaration: theorem
 origin: cited
 lean: ModularFunction.is_rational_in_j

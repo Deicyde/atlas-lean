@@ -1,3 +1,7 @@
+---
+article_id: af_25996c227af07575d0d28c09
+---
+
 # Link Cut Tree
 
 - [Part 1 of 5](part-01/README.md)

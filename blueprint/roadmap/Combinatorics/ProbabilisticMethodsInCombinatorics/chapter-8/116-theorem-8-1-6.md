@@ -1,4 +1,5 @@
 ---
+article_id: af_06eada860a20dcc81132fc3f
 declaration: theorem
 origin: cited
 lean: JansonInequalities.triangle_free_prob_low_p

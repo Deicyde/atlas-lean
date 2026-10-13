@@ -1,3 +1,7 @@
+---
+article_id: af_93605b02ab835bfc3ae86320
+---
+
 # Quotient To Ray Class
 
 - [Ray Element Class Map](ray-element-class-map.md)

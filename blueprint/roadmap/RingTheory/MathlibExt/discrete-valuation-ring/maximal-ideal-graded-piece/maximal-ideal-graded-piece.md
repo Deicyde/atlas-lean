@@ -1,4 +1,5 @@
 ---
+article_id: af_6c49ea2ebe183c78400542ca
 declaration: abbrev
 origin: cited
 statement: formalized

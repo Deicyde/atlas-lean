@@ -1,3 +1,7 @@
+---
+article_id: af_6928a62f8fbf455f90d443a1
+---
+
 # Finite Lies Over Residue Naturality
 
 - [Ring Of Integers Residue Quotient Map](ring-of-integers-residue-quotient-map.md)

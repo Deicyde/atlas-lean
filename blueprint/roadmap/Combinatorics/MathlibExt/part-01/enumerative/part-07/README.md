@@ -1,3 +1,7 @@
+---
+article_id: af_44508550c9ac2dfd9bb2f971
+---
+
 # Poly Initial Expansion to Signed Robbins Number
 
 - [Poly Initial Expansion](poly-initial-expansion/README.md)

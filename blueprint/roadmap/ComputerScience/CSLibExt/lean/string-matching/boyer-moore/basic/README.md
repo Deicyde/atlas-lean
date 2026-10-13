@@ -1,3 +1,7 @@
+---
+article_id: af_39228133ee520c4ec0f4031a
+---
+
 # Basic
 
 - [Boyer Moore Matches](boyer-moore-matches.md)

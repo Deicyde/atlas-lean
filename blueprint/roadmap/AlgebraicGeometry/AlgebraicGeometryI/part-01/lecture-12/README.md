@@ -1,3 +1,7 @@
+---
+article_id: af_cd2702535144a4f0413db024
+---
+
 # Lecture 12
 
 - [Proposition 16](092-proposition-16.md)

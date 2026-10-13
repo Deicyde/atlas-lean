@@ -1,4 +1,5 @@
 ---
+article_id: af_babec5fddf7d4f707a540aa4
 declaration: theorem
 origin: cited
 lean: Minimax.theorem_5_9

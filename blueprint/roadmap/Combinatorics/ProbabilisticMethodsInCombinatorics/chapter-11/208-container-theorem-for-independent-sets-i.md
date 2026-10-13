@@ -1,4 +1,5 @@
 ---
+article_id: af_19f1098d426b8359ae0700dc
 declaration: theorem
 origin: cited
 lean: GraphContainers.independent_set_container

@@ -1,3 +1,7 @@
+---
+article_id: af_c00ce44587a3dd2c943a780e
+---
+
 # Valuation
 
 - [Emultiplicity maximal Ideal span eq add Val](emultiplicity-maximal-ideal-span-eq-add.md)

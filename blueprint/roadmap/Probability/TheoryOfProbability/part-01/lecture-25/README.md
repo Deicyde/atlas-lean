@@ -1,3 +1,7 @@
+---
+article_id: af_fda28543e92af1285156f52e
+---
+
 # Lecture 25
 
 - [Definition (Conditional expectation)](053-conditional-expectation.md)

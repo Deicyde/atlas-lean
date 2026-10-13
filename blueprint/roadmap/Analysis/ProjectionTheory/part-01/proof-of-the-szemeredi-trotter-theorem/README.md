@@ -1,3 +1,7 @@
+---
+article_id: af_1945aea71a088eacc2f5e571
+---
+
 # Proof of the Szemeredi-Trotter theorem
 
 - [Lemma (Cell decomposition lemma)](048-cell-decomposition-lemma.md)

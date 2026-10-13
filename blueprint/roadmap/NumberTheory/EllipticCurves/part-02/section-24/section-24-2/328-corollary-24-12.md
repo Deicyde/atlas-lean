@@ -1,4 +1,5 @@
 ---
+article_id: af_565ca081522ed3b7143c734c
 declaration: theorem
 origin: cited
 lean: HeckeOperatorProperties.heckeT_mem_closure

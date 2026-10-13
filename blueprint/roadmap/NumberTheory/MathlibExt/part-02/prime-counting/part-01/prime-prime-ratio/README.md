@@ -1,3 +1,7 @@
+---
+article_id: af_fb95ce1558ad84d71ba48135
+---
+
 # Prime Prime Ratio
 
 - [Prime Primes ratio tendsto one'](prime-primes-ratio-tendsto-one.md)

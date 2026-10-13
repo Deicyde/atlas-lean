@@ -1,4 +1,5 @@
 ---
+article_id: af_581de419f904fe67b74a8c62
 declaration: theorem
 origin: cited
 lean: Sidorenko.sidorenko_of_hasUniversalVertex

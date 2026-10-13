@@ -1,3 +1,7 @@
+---
+article_id: af_95cc8f46ca29375e54cfdaa7
+---
+
 # Kadiri Zero Free Region Wanted
 
 - [Kadiri zero free region](kadiri-zero-free-region.md)

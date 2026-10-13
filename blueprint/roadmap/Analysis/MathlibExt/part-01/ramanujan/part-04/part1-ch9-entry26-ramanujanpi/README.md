@@ -1,3 +1,7 @@
+---
+article_id: af_eaed81afcbc0f30ffb6002b4
+---
+
 # Part1 Ch9 Entry26 Ramanujanpi
 
 - [Chapter9 Boundary Log eq log](chapter9-boundary-log-eq-log.md)

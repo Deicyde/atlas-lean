@@ -1,3 +1,7 @@
+---
+article_id: af_5d99a0af7eb78394ee04442c
+---
+
 # Picks Theorem Wanted
 
 - [To Plane](to-plane.md)

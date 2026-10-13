@@ -1,4 +1,5 @@
 ---
+article_id: af_86b38fca0d65f94eb1f6b246
 declaration: theorem
 origin: cited
 lean: IsDiscreteValuationRing.isPrincipalIdealRing

@@ -1,3 +1,7 @@
+---
+article_id: af_aa48555f1658f167623c53d9
+---
+
 # Imaginary Quadratic Discriminant
 
 - [Is Imaginary Quadratic Discriminant](is-imaginary-quadratic-discriminant.md)

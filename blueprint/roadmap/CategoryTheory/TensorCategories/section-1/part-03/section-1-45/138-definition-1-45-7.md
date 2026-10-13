@@ -1,4 +1,5 @@
 ---
+article_id: af_74d0f28346ee715b94dd99ad
 declaration: abbrev
 origin: cited
 lean: Definition_1_45_7

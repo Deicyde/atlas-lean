@@ -1,3 +1,7 @@
+---
+article_id: af_ed6262e345033125e279e7c9
+---
+
 # Even Table Weight to Generalized Stirling Numbers
 
 - [Even Table Weight](even-table-weight/README.md)

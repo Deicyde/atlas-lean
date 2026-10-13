@@ -1,3 +1,7 @@
+---
+article_id: af_a737ded94948609a6b2014db
+---
+
 # Group Actions
 
 - [Definition (Group Actions, The Counting Formula)](036-definition.md)

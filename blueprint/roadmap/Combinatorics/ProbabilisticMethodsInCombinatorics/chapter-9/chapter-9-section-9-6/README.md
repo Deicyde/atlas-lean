@@ -1,3 +1,7 @@
+---
+article_id: af_0dcbdab726a95cef836c66f3
+---
+
 # Chapter 9, Section 9.6
 
 - [Theorem 9.6.1 (Rhee and Talagrand 1987)](164-rhee-and-talagrand-1987.md)

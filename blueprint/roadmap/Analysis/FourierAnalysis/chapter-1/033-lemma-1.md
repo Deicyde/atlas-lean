@@ -1,4 +1,5 @@
 ---
+article_id: af_39b8696d10ac49d5352fefaa
 declaration: theorem
 origin: cited
 lean: GaussianLinearTransform.concrete_converse_covariance_entries

@@ -1,4 +1,5 @@
 ---
+article_id: af_bb7fc0024bd81f1d84e241bc
 declaration: theorem
 origin: cited
 lean: separable_degree_def

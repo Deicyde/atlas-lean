@@ -1,3 +1,7 @@
+---
+article_id: af_273da7027c2af527d8bb22b9
+---
+
 # Part1 Ch8 Entry12 Qgammaintegers
 
 - [Chapter8 Unit Pow eq cpow](chapter8-unit-pow-eq-cpow.md)

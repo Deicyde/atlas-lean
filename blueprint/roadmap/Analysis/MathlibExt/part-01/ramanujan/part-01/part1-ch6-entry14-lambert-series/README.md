@@ -1,3 +1,7 @@
+---
+article_id: af_098d53eb053e280ec6f03942
+---
+
 # Part1 Ch6 Entry14 Lambert Series
 
 - [Summable chapter6 Entry14 Minus Term](summable-chapter6-entry14-minus-term.md)

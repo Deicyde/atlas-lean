@@ -1,3 +1,7 @@
+---
+article_id: af_2a3405b23201cdc3d36374c4
+---
+
 # Perfect Graph NPWanted
 
 - [Perfect Graph Instance](perfect-graph-instance.md)

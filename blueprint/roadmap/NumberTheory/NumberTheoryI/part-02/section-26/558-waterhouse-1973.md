@@ -1,4 +1,5 @@
 ---
+article_id: af_169ad8d7e8818b2b3cde790b
 declaration: theorem
 origin: cited
 lean: Ideles.waterhouse_theorem

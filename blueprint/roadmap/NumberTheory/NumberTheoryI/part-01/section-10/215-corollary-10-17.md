@@ -1,4 +1,5 @@
 ---
+article_id: af_43a0bd129a73e4ed2eb27a80
 declaration: theorem
 origin: cited
 lean: unramified_iff_adjoin_rootOfUnity_and_galois

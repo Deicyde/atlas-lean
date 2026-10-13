@@ -1,3 +1,7 @@
+---
+article_id: af_f53b207b985ddba566a87ccf
+---
+
 # MIT 18.155 Differential Analysis (Fall 2004)
 
 Statements selected from [MIT 18.155 Differential Analysis (Fall 2004)](../../../sources/v1/DifferentialAnalysis.md) by ATLAS v1, in source order.

@@ -1,4 +1,5 @@
 ---
+article_id: af_d7cd33f094fddba1db1b1fce
 declaration: def
 origin: cited
 lean: SobolevEmbedding.allWeightedSobolev_to_schwartz

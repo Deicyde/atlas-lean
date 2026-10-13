@@ -1,3 +1,7 @@
+---
+article_id: af_2c9586f62de51f719e1873dc
+---
+
 # Stern Sequence
 
 - [Stern Sequence](stern-sequence.md)

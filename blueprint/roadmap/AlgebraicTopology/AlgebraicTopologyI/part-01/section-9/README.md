@@ -1,3 +1,7 @@
+---
+article_id: af_ea55f9a727b3cc496a70081e
+---
+
 # Section 9
 
 - [Theorem 9.1 (The homology long exact sequence)](039-the-homology-long-exact-sequence.md)

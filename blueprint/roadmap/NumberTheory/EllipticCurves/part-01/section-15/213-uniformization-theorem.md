@@ -1,4 +1,5 @@
 ---
+article_id: af_14e403d1ebddc9f80413055c
 declaration: theorem
 origin: cited
 lean: uniformization_theorem

@@ -1,3 +1,7 @@
+---
+article_id: af_4f219e562f0909dc5cf4ae68
+---
+
 # Lecture 19
 
 - [Theorem 1 (Blichfield)](122-blichfield.md)

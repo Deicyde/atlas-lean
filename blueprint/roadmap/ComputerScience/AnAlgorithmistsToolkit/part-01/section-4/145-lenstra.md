@@ -1,4 +1,5 @@
 ---
+article_id: af_0694d9858b7be31bd62d3e26
 declaration: theorem
 origin: cited
 lean: IntegerProgramming.lenstra_ip_fpt

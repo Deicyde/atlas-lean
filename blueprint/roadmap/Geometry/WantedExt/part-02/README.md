@@ -1,3 +1,7 @@
+---
+article_id: af_4695afe7186695f70d25ae8f
+---
+
 # Hyperplane Slicing Universal Wanted to Sphere Packing Density Four Wanted
 
 - [Hyperplane Slicing Universal Wanted](hyperplane-slicing-universal-wanted/README.md)

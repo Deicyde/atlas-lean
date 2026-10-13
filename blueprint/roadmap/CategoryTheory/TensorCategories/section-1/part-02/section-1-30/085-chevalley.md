@@ -1,4 +1,5 @@
 ---
+article_id: af_fd94080d086244bc15fb78c6
 declaration: theorem
 origin: cited
 lean: chevalley_tensor_semisimple

@@ -1,4 +1,5 @@
 ---
+article_id: af_7b3694432e26ed42ccc0d4d8
 declaration: theorem
 origin: cited
 lean: skorokhod_representation

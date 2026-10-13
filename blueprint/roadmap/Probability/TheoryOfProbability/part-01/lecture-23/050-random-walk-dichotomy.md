@@ -1,4 +1,5 @@
 ---
+article_id: af_b160032c3194c348ea1b8705
 declaration: theorem
 origin: cited
 lean: random_walk_dichotomy

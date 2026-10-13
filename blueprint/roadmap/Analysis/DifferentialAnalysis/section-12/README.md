@@ -1,3 +1,7 @@
+---
+article_id: af_a94e190cf1c26114518b4eb9
+---
+
 # Section 12
 
 - [Lemma 12.1](093-lemma-12-1.md)

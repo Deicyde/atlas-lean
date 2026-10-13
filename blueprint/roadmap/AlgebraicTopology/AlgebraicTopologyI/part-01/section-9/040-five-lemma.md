@@ -1,4 +1,5 @@
 ---
+article_id: af_ad43836064273a604a64ada4
 declaration: theorem
 origin: cited
 lean: FiveLemma.five_lemma

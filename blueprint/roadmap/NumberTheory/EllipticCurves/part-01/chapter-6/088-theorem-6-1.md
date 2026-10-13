@@ -1,4 +1,5 @@
 ---
+article_id: af_2c0cf0ec561912be510750dd
 declaration: theorem
 origin: cited
 lean: EllipticCurve.torsion_equiv_zmod_prod

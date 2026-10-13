@@ -1,3 +1,7 @@
+---
+article_id: af_ad733fbc3a7aa4fd5b26fcc9
+---
+
 # Chapter 1, Lecture 1
 
 - [Lemma 1.1](001-lemma-1-1.md)

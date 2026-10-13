@@ -1,4 +1,5 @@
 ---
+article_id: af_f52e985e7f3c6a18b1c58182
 declaration: class
 origin: cited
 statement: formalized

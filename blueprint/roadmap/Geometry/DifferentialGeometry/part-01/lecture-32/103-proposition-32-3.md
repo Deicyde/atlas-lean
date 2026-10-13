@@ -1,4 +1,5 @@
 ---
+article_id: af_cd27573c26e7c6c47307c193
 declaration: def
 origin: cited
 lean: GaussMapDegree.degreeOfMapBetweenHypersurfacesReal

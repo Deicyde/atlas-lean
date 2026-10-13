@@ -1,3 +1,7 @@
+---
+article_id: af_a800defb7b30fa8a40fb93f6
+---
+
 # Exponential Bound
 
 - [Laplace Convergent of norm le exp](laplace-convergent-of-norm-le-exp.md)

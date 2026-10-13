@@ -1,3 +1,7 @@
+---
+article_id: af_594b2cc22868b0856337b0fd
+---
+
 # Trip Stern Tree
 
 - [Trip Stern Tree](trip-stern-tree.md)

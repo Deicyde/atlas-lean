@@ -1,4 +1,5 @@
 ---
+article_id: af_c437d36a04b69aa1409ea03d
 declaration: theorem
 origin: cited
 lean: ArtinUnramified.ambiguous_class_number_formula

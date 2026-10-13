@@ -1,4 +1,5 @@
 ---
+article_id: af_4521129205fc97c9613792fa
 declaration: theorem
 origin: cited
 lean: coprime_ideal_group_iso

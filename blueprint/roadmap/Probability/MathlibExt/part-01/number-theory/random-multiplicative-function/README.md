@@ -1,3 +1,7 @@
+---
+article_id: af_aca61f3ebaa0ebaab24d54c7
+---
+
 # Random Multiplicative Function
 
 - [Rademacher Measure](rademacher-measure.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_cf5e147cd3d84f85934cfabe
 declaration: theorem
 origin: cited
 lean: CechCohomology.longExactSequence

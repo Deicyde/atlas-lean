@@ -1,3 +1,7 @@
+---
+article_id: af_ce6771ceb8fc2a3bc80d2238
+---
+
 # Part 2 of 2
 
 - [Not mem erase self](not-mem-erase-self.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_5e38ee5e024a919077412232
 declaration: theorem
 origin: cited
 lean: moduleIndex_eq_idealNorm_eq_fractionalIdealNorm

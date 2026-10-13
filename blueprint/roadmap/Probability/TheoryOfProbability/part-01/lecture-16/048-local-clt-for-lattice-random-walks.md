@@ -1,4 +1,5 @@
 ---
+article_id: af_f420af2768e8c3f24c5169a1
 declaration: theorem
 origin: cited
 lean: ProbabilityTheory.local_clt_lattice

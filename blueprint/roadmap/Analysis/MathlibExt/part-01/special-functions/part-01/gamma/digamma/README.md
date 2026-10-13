@@ -1,3 +1,7 @@
+---
+article_id: af_c2b684be2ceaf2e82fae9192
+---
+
 # Digamma
 
 - [Summable one div add nat succ sq](summable-one-div-add-nat-succ-sq.md)

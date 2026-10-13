@@ -1,3 +1,7 @@
+---
+article_id: af_8a498d0807a41e6a651ae06f
+---
+
 # QRDowling Polynomial to Sylvester Coin Theorem
 
 - [QRDowling Polynomial](qrdowling-polynomial/README.md)

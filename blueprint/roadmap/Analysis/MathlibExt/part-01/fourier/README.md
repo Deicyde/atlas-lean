@@ -1,3 +1,7 @@
+---
+article_id: af_95126640a0aa4ed4b5f84bf1
+---
+
 # Fourier
 
 - [Torus Sobolev](torus-sobolev/README.md)

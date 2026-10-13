@@ -1,3 +1,7 @@
+---
+article_id: af_7e93003a63b9c6dc52689f4d
+---
+
 # Block Reductions
 
 - [Bertrand base](bertrand-base.md)

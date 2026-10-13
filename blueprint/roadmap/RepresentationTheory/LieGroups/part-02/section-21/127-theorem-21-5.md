@@ -1,4 +1,5 @@
 ---
+article_id: af_5adcdcf5205cdeda0a5ea9b2
 declaration: theorem
 origin: cited
 lean: kl_poly_unique

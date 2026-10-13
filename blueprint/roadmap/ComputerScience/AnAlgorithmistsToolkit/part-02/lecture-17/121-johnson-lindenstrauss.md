@@ -1,4 +1,5 @@
 ---
+article_id: af_d488bebf8beec7ce7a29b9ee
 declaration: theorem
 origin: cited
 lean: HighDimensional.johnson_lindenstrauss

@@ -1,3 +1,7 @@
+---
+article_id: af_ad72887f3b03d594026ba48f
+---
+
 # Erdos Problem869 Wanted
 
 - [Add Sumset](add-sumset.md)

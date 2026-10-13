@@ -1,4 +1,5 @@
 ---
+article_id: af_3a39085d846b42101dfd8a36
 declaration: theorem
 origin: cited
 lean: OrdinarySupersingular.supersingular_ordinary_dichotomy

@@ -1,4 +1,5 @@
 ---
+article_id: af_9129637fc84bb7b2f8909904
 declaration: theorem
 origin: cited
 lean: SurfacesAndBilinearForms.cohomology_connectedSum_iso

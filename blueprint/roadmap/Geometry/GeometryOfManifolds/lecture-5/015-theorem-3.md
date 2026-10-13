@@ -1,4 +1,5 @@
 ---
+article_id: af_f09c989f8b509e24b794b1f8
 declaration: def
 origin: cited
 lean: tubular_neighborhood_theorem

@@ -1,3 +1,7 @@
+---
+article_id: af_6f4f444dad253a84e435ac9f
+---
+
 # Ray Class To Class Group
 
 - [Coprime Ideal Class Map](coprime-ideal-class-map.md)

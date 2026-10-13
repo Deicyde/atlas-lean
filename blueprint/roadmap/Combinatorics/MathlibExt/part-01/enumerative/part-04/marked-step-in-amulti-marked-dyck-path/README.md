@@ -1,3 +1,7 @@
+---
+article_id: af_ab4160805cb3e27872ec2c05
+---
+
 # Marked Step In AMulti Marked Dyck Path
 
 - [Multi Marked Step](multi-marked-step.md)

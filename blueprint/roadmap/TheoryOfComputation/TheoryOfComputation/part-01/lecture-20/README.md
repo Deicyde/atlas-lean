@@ -1,3 +1,7 @@
+---
+article_id: af_82a1efd13fd7ec854cff9098
+---
+
 # Lecture 20
 
 - [Theorem (Lecture 20, Review: NL ⊆ P)](091-theorem.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_ffd16f1f213cc09a73e62fb9
+---
+
 # Basic
 
 - [Bucket Sort](bucket-sort.md)

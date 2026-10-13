@@ -1,4 +1,5 @@
 ---
+article_id: af_78f8a9a569377054c6994bd3
 declaration: theorem
 origin: cited
 lean: theorem_28_6_global_existence

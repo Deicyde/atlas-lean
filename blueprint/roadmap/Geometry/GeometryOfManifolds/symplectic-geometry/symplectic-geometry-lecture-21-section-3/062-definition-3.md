@@ -1,4 +1,5 @@
 ---
+article_id: af_a42f1c1366b719594b821ab4
 declaration: structure
 origin: cited
 lean: FiberSum

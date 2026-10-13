@@ -1,3 +1,7 @@
+---
+article_id: af_9f42f3b9d863fa76276d0ccb
+---
+
 # Lecture 23
 
 - [Proposition 41 (Grothendieck)](174-grothendieck.md)

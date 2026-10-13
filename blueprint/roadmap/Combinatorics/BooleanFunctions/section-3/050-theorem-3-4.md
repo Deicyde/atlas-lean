@@ -1,4 +1,5 @@
 ---
+article_id: af_d00b681e2d1d5dce165b132d
 declaration: theorem
 origin: cited
 lean: BooleanFourier.bourgain_noise_sensitivity

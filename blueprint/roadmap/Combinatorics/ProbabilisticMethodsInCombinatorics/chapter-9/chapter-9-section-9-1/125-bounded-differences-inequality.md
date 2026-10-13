@@ -1,4 +1,5 @@
 ---
+article_id: af_9b0c9ca65cf81f91d21aa1ea
 declaration: theorem
 origin: cited
 lean: BoundedDifferences.bounded_differences_inequality

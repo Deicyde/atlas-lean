@@ -1,4 +1,5 @@
 ---
+article_id: af_392b277d67b75311dfb7ea65
 declaration: theorem
 origin: cited
 lean: Building.strong_iso_ext

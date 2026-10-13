@@ -1,4 +1,5 @@
 ---
+article_id: af_b7cb24f8a016cdc2ffb52f2d
 declaration: theorem
 origin: cited
 lean: GroupExponentBound.theorem_7_6

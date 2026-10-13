@@ -1,3 +1,7 @@
+---
+article_id: af_7aa850d443849ad9e36ea2d5
+---
+
 # Amortized
 
 - [Potential](potential.md)

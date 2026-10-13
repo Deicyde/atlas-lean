@@ -1,3 +1,7 @@
+---
+article_id: af_b4141296fc86e1f6fefbabd1
+---
+
 # Words
 
 - [Cobham Uniform Morphism](cobham-uniform-morphism/README.md)

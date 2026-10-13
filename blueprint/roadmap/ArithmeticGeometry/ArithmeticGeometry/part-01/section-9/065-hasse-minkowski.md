@@ -1,4 +1,5 @@
 ---
+article_id: af_8ffd936053551e8efe46d009
 declaration: theorem
 origin: cited
 lean: hasse_minkowski

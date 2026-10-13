@@ -1,3 +1,7 @@
+---
+article_id: af_51fec0c53521bdf00e02e826
+---
+
 # Farey
 
 - [Farey Finset](farey-finset.md)

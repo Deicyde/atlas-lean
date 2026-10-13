@@ -1,4 +1,5 @@
 ---
+article_id: af_06569c5790970786df139138
 declaration: theorem
 origin: cited
 lean: PlunneckeInequality.cube_diff_expansion

@@ -1,4 +1,5 @@
 ---
+article_id: af_e92e27baa1b5ec31b629fb58
 declaration: theorem
 origin: cited
 lean: tangent_dim_ge_variety_dim

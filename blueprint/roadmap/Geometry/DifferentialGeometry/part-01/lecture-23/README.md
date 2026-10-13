@@ -1,3 +1,7 @@
+---
+article_id: af_6731ac556fecbc2f028692f8
+---
+
 # Lecture 23
 
 - [Definition 23.1](074-definition-23-1.md)

@@ -1,4 +1,5 @@
 ---
+article_id: af_8e480a4ecd966ad51ab2c98d
 declaration: theorem
 origin: cited
 lean: index_calculus_relation

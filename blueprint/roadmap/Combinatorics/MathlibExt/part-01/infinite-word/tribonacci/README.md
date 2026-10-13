@@ -1,3 +1,7 @@
+---
+article_id: af_8eca66bd6773bfb1f88477b0
+---
+
 # Tribonacci
 
 - [Tribonacci Letter](tribonacci-letter.md)

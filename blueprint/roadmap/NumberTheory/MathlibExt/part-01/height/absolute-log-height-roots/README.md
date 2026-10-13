@@ -1,3 +1,7 @@
+---
+article_id: af_9e7fe027b71aac0e0a35a5ef
+---
+
 # Absolute Log Height Roots
 
 - [Abs Log Height₁ eq log leading Coeff add sum log roots of is Integral](abs-log-height-eq-log-leading-coeff-add.md)

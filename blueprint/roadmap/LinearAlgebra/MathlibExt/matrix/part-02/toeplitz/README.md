@@ -1,3 +1,7 @@
+---
+article_id: af_3b182b15a9a17abadb700a88
+---
+
 # Toeplitz
 
 - [Is Toeplitz Matrix](is-toeplitz-matrix.md)

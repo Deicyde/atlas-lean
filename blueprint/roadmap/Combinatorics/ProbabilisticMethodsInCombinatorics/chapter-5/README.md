@@ -1,3 +1,7 @@
+---
+article_id: af_68bcf256ce704726304f7a67
+---
+
 # Chapter 5
 
 - [Theorem 5.0.1 (Chernoff bound)](067-chernoff-bound.md)

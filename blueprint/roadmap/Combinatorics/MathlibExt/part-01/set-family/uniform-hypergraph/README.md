@@ -1,3 +1,7 @@
+---
+article_id: af_de0de53d132d517a5dc8bb7d
+---
+
 # Uniform Hypergraph
 
 - [Is Uniform](is-uniform.md)

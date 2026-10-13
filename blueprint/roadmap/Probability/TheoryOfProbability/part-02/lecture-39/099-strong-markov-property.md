@@ -1,4 +1,5 @@
 ---
+article_id: af_deebc3e44306d49779fd1827
 declaration: theorem
 origin: cited
 lean: StrongMarkovBMGoal98.strong_markov_setIntegral_eq

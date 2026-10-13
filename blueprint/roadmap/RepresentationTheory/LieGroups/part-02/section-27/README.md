@@ -1,3 +1,7 @@
+---
+article_id: af_b12a39ab6d9261acd685dad7
+---
+
 # Section 27
 
 - [Theorem 27.3 (Borel-Weil)](155-borel-weil.md)

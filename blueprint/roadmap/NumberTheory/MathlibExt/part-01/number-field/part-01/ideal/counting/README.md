@@ -1,3 +1,7 @@
+---
+article_id: af_fda518dcc3b089e4e476f14f
+---
+
 # Counting
 
 - [Card nonzero abs Norm le](card-nonzero-abs-norm-le.md)

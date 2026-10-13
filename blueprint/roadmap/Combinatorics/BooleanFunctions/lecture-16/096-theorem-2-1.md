@@ -1,4 +1,5 @@
 ---
+article_id: af_ce061954319295cba41019fd
 declaration: theorem
 origin: cited
 lean: ug_hardness_maxcut

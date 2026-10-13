@@ -1,4 +1,5 @@
 ---
+article_id: af_ab7b92ae39e2f7ec2395f06b
 declaration: theorem
 origin: cited
 lean: SeparatedHausdorff.separated_iff_hausdorff_classical

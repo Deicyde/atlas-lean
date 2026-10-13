@@ -1,3 +1,7 @@
+---
+article_id: af_cfd2040e10b56714ee5a7818
+---
+
 # Basic Set Theory to Taylor's Theorem
 
 - [Basic Set Theory](basic-set-theory/README.md)

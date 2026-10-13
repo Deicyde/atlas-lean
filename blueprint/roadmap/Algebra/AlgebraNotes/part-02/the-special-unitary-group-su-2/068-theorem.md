@@ -1,4 +1,5 @@
 ---
+article_id: af_d1132b4c1fb2fc9d8bc56918
 declaration: theorem
 origin: cited
 lean: SimpleGroups.longitude_iso

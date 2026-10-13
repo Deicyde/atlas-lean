@@ -1,3 +1,7 @@
+---
+article_id: af_5783d31f911b1ab74731fc0a
+---
+
 # Tame
 
 - [Is Residue Separable At](is-residue-separable-at.md)

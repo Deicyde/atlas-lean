@@ -1,3 +1,7 @@
+---
+article_id: af_d86947aacc735484dec0814f
+---
+
 # Abelian Representation
 
 - [Is Irreducible of simple](is-irreducible-of-simple.md)

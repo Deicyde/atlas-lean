@@ -1,4 +1,5 @@
 ---
+article_id: af_ffa2ded6c9355a819d0ca881
 declaration: theorem
 origin: cited
 lean: AbstractGaussBonnet.gauss_bonnet_doubly_periodic_abstract

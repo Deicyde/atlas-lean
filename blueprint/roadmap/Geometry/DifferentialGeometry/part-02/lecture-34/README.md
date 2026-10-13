@@ -1,3 +1,7 @@
+---
+article_id: af_a533326237adf50be8fac306
+---
+
 # Lecture 34
 
 - [Definition 34.1](110-definition-34-1.md)

@@ -1,3 +1,7 @@
+---
+article_id: af_f36f774a2917d6563ed0904a
+---
+
 # BAry Multinomial Coefficient
 
 - [B Ary Digit](b-ary-digit.md)

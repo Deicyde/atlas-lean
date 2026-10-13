@@ -1,4 +1,5 @@
 ---
+article_id: af_4259446558d0a560210cbebf
 declaration: theorem
 origin: cited
 lean: JansonInequality.janson_inequality_III

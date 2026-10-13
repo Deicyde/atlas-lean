@@ -1,3 +1,7 @@
+---
+article_id: af_15209c20c9a6bbb887d0b81f
+---
+
 # Section 4
 
 - [Proposition 4.1 (Plancherel's theorem for compact groups)](014-plancherel-s-theorem-for-compact-groups.md)

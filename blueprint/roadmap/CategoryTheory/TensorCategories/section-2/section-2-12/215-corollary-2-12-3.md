@@ -1,4 +1,5 @@
 ---
+article_id: af_2ec757f8d6d78695bedbfe85
 declaration: def
 origin: cited
 lean: CategoryTheory.corollary_2_12_3

@@ -1,3 +1,7 @@
+---
+article_id: af_10a3076f35b50e84ec8f10f7
+---
+
 # Annulus Shared to Pi Six Sphere Three Wanted
 
 - [Annulus Shared](annulus-shared/README.md)

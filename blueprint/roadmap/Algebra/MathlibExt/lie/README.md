@@ -1,3 +1,7 @@
+---
+article_id: af_800421bdae240a5f0ecc7675
+---
+
 # Lie
 
 - [Ado](ado.md)

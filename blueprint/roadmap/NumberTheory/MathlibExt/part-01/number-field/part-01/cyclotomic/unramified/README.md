@@ -1,3 +1,7 @@
+---
+article_id: af_383d47b4c64cabc28d3be7cd
+---
+
 # Unramified
 
 - [Is Unramified In of not dvd](is-unramified-in-of-not-dvd.md)

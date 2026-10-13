@@ -1,4 +1,5 @@
 ---
+article_id: af_38948fb56e6e658c3585a12a
 declaration: theorem
 origin: cited
 lean: BranchingPrograms.EQ_ROBP_in_BPP
