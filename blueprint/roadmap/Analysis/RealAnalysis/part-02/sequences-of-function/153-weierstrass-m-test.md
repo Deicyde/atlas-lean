@@ -12,7 +12,13 @@ Let $f_j:S\to \mathbb{R}$ and suppose $\exists M_j>0$ such that a) $\forall x\in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Series) (1)](../../part-01/series/032-definition.md)
+- [Definition (Uniform Convergence) (Sequences of Function, Pointwise and Uniform Convergence) (1)](088-uniform-convergence.md)
+- [Definition (Series section)](../../part-01/series/097-definition.md)
+
+## Proof depends on
+
+- [Theorem (Comparison Test) (Convergence tests) (1)](../../part-01/convergence-tests/034-comparison-test.md)
 
 ## Sources
 

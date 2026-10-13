@@ -12,7 +12,7 @@ Let $S\subset \mathbb{R}$ and let $c\in S$. We say $f$ is continuous at $c$ if $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Set Relations) (Basic Set Theory) (1)](../basic-set-theory/001-set-relations.md)
 
 ## Sources
 

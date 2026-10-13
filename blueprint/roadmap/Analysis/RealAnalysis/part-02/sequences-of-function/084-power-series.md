@@ -11,7 +11,7 @@ A power series about $x_0$ is a series of the form $\sum_{m=0}^\infty a_m (x-x_0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Series section)](../../part-01/series/097-definition.md)
 
 ## Sources
 

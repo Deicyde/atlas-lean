@@ -11,7 +11,8 @@ We say $f: I\to \mathbb{R}$ is $n$-times differentiable on $J\subset I$ if $f', 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Set Relations) (Basic Set Theory) (1)](../../part-01/basic-set-theory/001-set-relations.md)
+- [Definition (Section on Derivative)](../../part-01/section-on-derivative/050-definition.md)
 
 ## Sources
 

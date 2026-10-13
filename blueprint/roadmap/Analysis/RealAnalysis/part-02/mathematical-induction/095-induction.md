@@ -14,6 +14,10 @@ Let $P(n)$ be a statement depending on $n\in \mathbb{N}$. Assume that (1) (Base 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Axiom (Well-ordering property) (Basic Set Theory, Mathematical Induction)](../../part-01/basic-set-theory/003-well-ordering-property.md)
+
 ## Sources
 
 - [MIT 18.100A Real Analysis (Fall 2020), Mathematical Induction section](../../../../../sources/v1/RealAnalysis.md)

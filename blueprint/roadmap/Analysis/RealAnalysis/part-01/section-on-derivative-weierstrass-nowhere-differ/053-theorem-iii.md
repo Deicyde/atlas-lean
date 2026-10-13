@@ -12,7 +12,14 @@ We will show the following: (1) $\forall x\in \mathbb{R}$, $\sum_{k=0}^\infty \f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Series) (1)](../series/032-definition.md)
+- [Definition (Continuous Functions) (1)](../continuous-functions/043-continuous-functions.md)
+- [Definition (Bounded Functions) (Continuous Functions) (1)](../continuous-functions/044-bounded-functions.md)
+- [Definition (Series section)](../series/097-definition.md)
+
+## Proof depends on
+
+- [Theorem (Comparison Test) (Convergence tests) (1)](../convergence-tests/034-comparison-test.md)
 
 ## Sources
 

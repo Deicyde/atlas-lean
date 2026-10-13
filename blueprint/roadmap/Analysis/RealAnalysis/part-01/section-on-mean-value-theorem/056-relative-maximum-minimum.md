@@ -12,7 +12,7 @@ Let $S \subset \mathbb{R}$ and $f:S\to \mathbb{R}$. Then, $f$ has a relative max
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Set Relations) (Basic Set Theory) (1)](../basic-set-theory/001-set-relations.md)
 
 ## Sources
 

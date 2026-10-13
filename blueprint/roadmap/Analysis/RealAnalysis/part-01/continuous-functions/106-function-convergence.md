@@ -11,7 +11,8 @@ Let $S\subset \mathbb{R}$, let $c$ be a cluster point of $S$, and $f:S\to \mathb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Set Relations) (Basic Set Theory) (1)](../basic-set-theory/001-set-relations.md)
+- [Definition (Cluster Point) (Continuous Functions, Limits of Functions) (1)](040-cluster-point.md)
 
 ## Sources
 

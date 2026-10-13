@@ -12,7 +12,10 @@ Every bounded sequence has a convergent subsequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/017-definition.md)
+- [Definition (Sequence of Reals) (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/021-sequence-of-reals.md)
+- [Definition (Sequence Convergence of Reals) (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/022-sequence-convergence-of-reals.md)
+- [Definition (Subsequence) (Convergent Sequences of the Real Numbers section) (1)](../convergent-sequences-of-the-real-numbers/024-subsequence.md)
 
 ## Sources
 

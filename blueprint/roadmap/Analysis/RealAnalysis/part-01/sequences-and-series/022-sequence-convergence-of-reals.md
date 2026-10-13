@@ -12,7 +12,7 @@ A sequence $\{x_n\}$ converges to $x\in \mathbb{R}$ if $\forall \epsilon >0$, $\
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sequence of Reals) (Sequences and Series, Sequences and Limits) (1)](021-sequence-of-reals.md)
 
 ## Sources
 

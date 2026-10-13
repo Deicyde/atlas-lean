@@ -12,7 +12,13 @@ Let $\varphi:[a,b]\to [c,d]$ be continuously differentiable with $\varphi'>0$ on
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Continuous Functions) (1)](../../part-01/continuous-functions/043-continuous-functions.md)
+- [Definition (Section on Derivative)](../../part-01/section-on-derivative/050-definition.md)
+- [Theorem (Riemann Integral) (The Riemann Integral section)](../the-riemann-integral/068-riemann-integral.md)
+
+## Proof depends on
+
+- [Theorem (Fundamental Theorem of Calculus) (Fundamental Theorem of Calculus section) (1)](078-fundamental-theorem-of-calculus.md)
 
 ## Sources
 

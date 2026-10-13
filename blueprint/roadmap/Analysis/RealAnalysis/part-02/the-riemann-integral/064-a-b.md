@@ -11,7 +11,7 @@ We define the set $C([a,b]) \coloneqq \{f:[a,b]\to \mathbb{R} \mid f \text{ is c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Continuous Functions) (1)](../../part-01/continuous-functions/043-continuous-functions.md)
 
 ## Sources
 

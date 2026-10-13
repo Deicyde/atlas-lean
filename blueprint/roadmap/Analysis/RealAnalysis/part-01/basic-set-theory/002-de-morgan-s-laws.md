@@ -12,7 +12,7 @@ If $A, B, C$ are sets then (1) $(B \cup C)^c = B^c \cap C^c$, (2) $(B \cap C)^c 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Set Relations) (Basic Set Theory) (1)](001-set-relations.md)
 
 ## Sources
 

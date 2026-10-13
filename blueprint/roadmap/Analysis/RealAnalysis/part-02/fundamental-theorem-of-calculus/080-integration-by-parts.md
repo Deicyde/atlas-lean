@@ -12,7 +12,13 @@ Suppose $f,g\in C([a,b])$ and $f',g'\in C([a,b])$. Then, $\int_a^b f'g = (f(b)g(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section on Derivative)](../../part-01/section-on-derivative/050-definition.md)
+- [Definition (C((a,b)))](../the-riemann-integral/064-a-b.md)
+- [Theorem (Riemann Integral) (The Riemann Integral section)](../the-riemann-integral/068-riemann-integral.md)
+
+## Proof depends on
+
+- [Theorem (Fundamental Theorem of Calculus) (Fundamental Theorem of Calculus section) (1)](078-fundamental-theorem-of-calculus.md)
 
 ## Sources
 

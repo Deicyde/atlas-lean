@@ -12,8 +12,8 @@ ATLAS v1 selected 229 statements from this source in
 matched to each in [`report.json`](https://github.com/facebookresearch/atlas-lean/blob/main/v1/Atlas/TensorCategories/report.json). Each roadmap article
 reproduces one target's statement and the source location it names.
 
-1 Lean-level dependencies point to a later statement in
-source order and are not drawn as roadmap edges.
+1 dependencies point to a statement placed later in this
+wiki and are not drawn as roadmap edges, which keeps every chapter acyclic.
 
 ## Targets without a linked Lean declaration
 

@@ -12,7 +12,13 @@ Let $\{x_n\}$ be a monotone decreasing sequence such that $x_n \to 0.$ Then, $\s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sequence of Reals) (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/021-sequence-of-reals.md)
+- [Definition (Sequence Convergence of Reals) (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/022-sequence-convergence-of-reals.md)
+- [Definition (Monotone) (Convergent Sequences of the Real Numbers section) (1)](../convergent-sequences-of-the-real-numbers/023-monotone.md)
+
+## Proof depends on
+
+- [Theorem (Convergent Sequences of the Real Numbers section) (1)](../convergent-sequences-of-the-real-numbers/016-theorem.md)
 
 ## Sources
 

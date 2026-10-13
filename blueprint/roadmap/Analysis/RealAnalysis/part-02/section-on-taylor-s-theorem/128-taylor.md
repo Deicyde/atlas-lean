@@ -12,7 +12,12 @@ Suppose $f:[a,b]\to \mathbb{R}$ is continuous and has $n$ continuous derivatives
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Continuous Functions) (1)](../../part-01/continuous-functions/043-continuous-functions.md)
+- [Definition ($n$-times Differentiable) (Taylor's Theorem section)](../../part-01/taylor-s-theorem/060-n-times-differentiable.md)
+
+## Proof depends on
+
+- [Theorem (Mean Value Theorem) (Mean Value Theorem section) (1)](../../part-01/mean-value-theorem/058-mean-value-theorem.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ The following hold: (1) If $p>0$, then $\lim_{n\to \infty} n^{-p} = 0$. (2) If $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sequence Convergence of Reals) (Sequences and Series, Sequences and Limits) (1)](../../part-01/sequences-and-series/022-sequence-convergence-of-reals.md)
+
+## Proof depends on
+
+- [Theorem (Squeeze Theorem) (Lecture 8, Facts About Limits)](../../part-01/lecture-8/026-squeeze-theorem.md)
 
 ## Sources
 

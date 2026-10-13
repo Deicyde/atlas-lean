@@ -12,7 +12,8 @@ A field $F$ is an ordered field if $F$ is also an ordered set with ordering $<$ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Ordered set) (Real Numbers, Ordered Sets & Fields)](011-ordered-set.md)
+- [Definition (Field) (Real Numbers, Ordered Sets & Fields)](014-field.md)
 
 ## Sources
 

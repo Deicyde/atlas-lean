@@ -12,7 +12,7 @@ If $\{x_n\}$ converges to $x$, then any subsequence of $x_n$ will converge to $x
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Subsequence) (Convergent Sequences of the Real Numbers section) (1)](024-subsequence.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The well-ordering property of $\mathbb{N}$ states that if $S \subset \mathbb{N}$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Set Relations) (Basic Set Theory) (1)](001-set-relations.md)
 
 ## Sources
 

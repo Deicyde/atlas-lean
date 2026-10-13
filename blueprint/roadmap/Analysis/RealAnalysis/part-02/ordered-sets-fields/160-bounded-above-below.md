@@ -12,7 +12,8 @@ Let $S$ be an ordered set and let $E\subset S$. Then, (1) If there exists a $b\i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Set Relations) (Basic Set Theory) (1)](../../part-01/basic-set-theory/001-set-relations.md)
+- [Definition (Ordered set) (Real Numbers, Ordered Sets & Fields)](../../part-01/real-numbers/011-ordered-set.md)
 
 ## Sources
 

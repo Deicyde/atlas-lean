@@ -12,7 +12,8 @@ Suppose $f\in C([a,b])$ and $g\in C([a,b])$. (1) If $\forall x\in [a,b]$ $f(x) \
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (C((a,b)))](../the-riemann-integral/064-a-b.md)
+- [Theorem (Riemann Integral) (The Riemann Integral section)](../the-riemann-integral/068-riemann-integral.md)
 
 ## Sources
 

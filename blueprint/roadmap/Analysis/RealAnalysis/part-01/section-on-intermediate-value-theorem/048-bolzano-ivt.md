@@ -12,7 +12,7 @@ Let $f:[a,b] \to \mathbb{R}$ be continuous. If $f(a) < f(b)$, and $y\in (f(a),f(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Continuous Functions) (1)](../continuous-functions/043-continuous-functions.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ If $f\in C([a,b])$, there exists a sequence of polynomials $\{P_n\}$ such that $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (C((a,b)))](../the-riemann-integral/064-a-b.md)
+- [Definition (Uniform Convergence) (Sequences of Function, Pointwise and Uniform Convergence) (1)](../sequences-of-function/088-uniform-convergence.md)
+
+## Proof depends on
+
+- [Theorem (Min-Max Theorem) (Continuous Functions) (1)](../../part-01/continuous-functions/046-min-max-theorem.md)
+- [Theorem (Comparison and Triangle Inequality for Integrals)](../properties-of-the-riemann-integral/077-comparison-and-triangle-inequality-for-i.md)
+- [Theorem (Change of Variables) (Fundamental Theorem of Calculus section) (1)](../fundamental-theorem-of-calculus/083-change-of-variables.md)
 
 ## Sources
 

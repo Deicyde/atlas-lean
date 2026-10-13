@@ -18,7 +18,8 @@ Status follows v1's own evaluation. A target that passed review is
 because Autoform counts a stated definition as proved. Graph edges come from
 sources/v1/lean-dependencies.json (see scripts/extract_v1_lean_dependencies.py):
 the targets a target's Lean statement or proof reaches, through helper
-declarations if need be.
+declarations if need be. Where sources/v1/book-dependencies/<Book>.json exists,
+its verified edges, read from the source text itself, are added as well.
 """
 
 from __future__ import annotations
@@ -310,7 +311,18 @@ def load_book(book: str, index, lean_dependencies: dict) -> tuple[list[Target], 
                     other = by_name.get(dependency)
                     if other is not None and other is not target and other not in target.depends + target.proof_depends:
                         bucket.append(other)
+    book_edges = SOURCES / "v1" / "book-dependencies" / f"{book}.json"
+    by_idx = {target.idx: target for target in targets}
+    book_pairs = set()
+    if book_edges.is_file():
+        for edge in json.loads(book_edges.read_text())["edges"]:
+            target, other = by_idx[edge["from"]], by_idx[edge["to"]]
+            if other is target or other in target.depends + target.proof_depends:
+                continue
+            (target.depends if edge["kind"] == "statement" else target.proof_depends).append(other)
+            book_pairs.add((target.idx, other.idx))
     summary = {
+        "book_pairs": book_pairs,
         "targets": len(targets),
         "unmatched": [item for item in details if not item.get("lean_declaration")],
         "unresolved": unresolved,
@@ -444,11 +456,18 @@ def render_source(book: str, url: str, summary: dict) -> str:
         f"matched to each in [`report.json`]({blob}/report.json). Each roadmap article",
         "reproduces one target's statement and the source location it names.",
     ]
+    if summary["book_edges"]:
+        lines += [
+            "",
+            f"{summary['book_edges']} roadmap edges come from the source text rather than",
+            f"the Lean code; each is recorded with its evidence in",
+            f"[`book-dependencies/{book}.json`](book-dependencies/{book}.json).",
+        ]
     if summary["forward"]:
         lines += [
             "",
-            f"{summary['forward']} Lean-level dependencies point to a later statement in",
-            "source order and are not drawn as roadmap edges.",
+            f"{summary['forward']} dependencies point to a statement placed later in this",
+            "wiki and are not drawn as roadmap edges, which keeps every chapter acyclic.",
         ]
     missing = summary["unmatched"] + summary["unresolved"]
     if missing:
@@ -518,6 +537,11 @@ def generate(selected: list[str]) -> dict[Path, str]:
         tree = book_tree(book, targets)
         assign_paths(tree, ROADMAP / subject / book)
         summary["forward"] = drop_forward_edges(tree)
+        summary["book_edges"] = sum(
+            (target.idx, other.idx) in summary["book_pairs"]
+            for target in targets
+            for other in target.depends + target.proof_depends
+        )
         for node in walk(tree):
             if isinstance(node, Container):
                 files[node.path] = render_container(node, previous(node.path))

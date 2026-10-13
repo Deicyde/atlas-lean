@@ -11,7 +11,7 @@ A sequence $\{x_n\}$ is bounded if $\exists B\geq 0$ such that $\forall n$, $|x_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sequence of Reals) (Sequences and Series, Sequences and Limits) (1)](021-sequence-of-reals.md)
 
 ## Sources
 

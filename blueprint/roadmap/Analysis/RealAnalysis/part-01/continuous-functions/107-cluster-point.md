@@ -11,7 +11,7 @@ Let $S\subset \mathbb{R}$. $x\in \mathbb{R}$ is a cluster point of $S$ if $\fora
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Set Relations) (Basic Set Theory) (1)](../basic-set-theory/001-set-relations.md)
 
 ## Sources
 

@@ -13,6 +13,13 @@ Let $\sum_{j=0}^\infty a_j(x-x_0)^j$ be a power series of radius of convergence 
 ## Depends on
 
 - [Definition (Radius of Convergence) (Sequences of Function, Power Series) (1)](../sequences-of-function/086-radius-of-convergence.md)
+- [Definition (Power series) (Sequences of Function, Power Series) (1)](../sequences-of-function/084-power-series.md)
+- [Definition (Uniform Convergence) (Sequences of Function, Pointwise and Uniform Convergence) (1)](../sequences-of-function/088-uniform-convergence.md)
+
+## Proof depends on
+
+- [Theorem (Root test) (Convergence tests) (1)](../../part-01/convergence-tests/036-root-test.md)
+- [Theorem (Weierstrass M-test) (Sequences of Function, Pointwise and Uniform Convergence) (1)](../sequences-of-function/089-weierstrass-m-test.md)
 
 ## Sources
 
