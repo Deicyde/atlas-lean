@@ -11,7 +11,7 @@ Let $(\mathcal{C}, \otimes, \mathbf{1}, a, \iota)$ and $(\mathcal{C}', \otimes',
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.1](../section-1-1/001-definition-1-1-1.md)
 
 ## Sources
 

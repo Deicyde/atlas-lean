@@ -11,7 +11,8 @@ Let $X$ be an irreducible variety. The function field of $X$, denoted $k(X)$, is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](../lecture-2/010-definition-3.md)
+- [Definition 7](../lecture-3/025-definition-7.md)
 
 ## Sources
 

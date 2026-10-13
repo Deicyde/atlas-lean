@@ -14,6 +14,12 @@ Let $X_1, X_2, \ldots$ be independent, identically distributed random variables 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition 1 (Section 1, Fourier Integrals of finite measures)](../section-1/017-proposition-1.md)
+- [Proposition 2 (Section 1, Fourier Integrals of finite measures)](../section-1/019-proposition-2.md)
+- [Proposition 3](../section-1/020-proposition-3.md)
+
 ## Sources
 
 - [MIT 18.103 Fourier Analysis (Fall 2013), Section 2, An application to the central limit theorem](../../../../sources/v1/FourierAnalysis.md)

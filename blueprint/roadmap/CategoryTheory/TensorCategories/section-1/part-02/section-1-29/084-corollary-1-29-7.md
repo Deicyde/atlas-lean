@@ -10,7 +10,12 @@ If $H$ is a Hopf algebra over a field of characteristic zero, then the natural m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.22.9](../../part-01/section-1-22/059-definition-1-22-9.md)
+- [Definition 1.24.2](../section-1-24/065-definition-1-24-2.md)
+
+## Proof depends on
+
+- [Proposition 1.29.6](083-proposition-1-29-6.md)
 
 ## Sources
 

@@ -9,7 +9,14 @@ Every prime ideal $J \subset U_{\theta}$ is primitive and moreover is the annihi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proposition 8.9](../../part-01/section-8/053-proposition-8-9.md)
+- [Definition 25.1](144-definition-25-1.md)
+- [Definition 25.2](145-definition-25-2.md)
+
+## Proof depends on
+
+- [Lemma 15.9](../../part-01/section-15/088-lemma-15-9.md)
+- [Theorem 24.4](../section-24/142-theorem-24-4.md)
 
 ## Sources
 

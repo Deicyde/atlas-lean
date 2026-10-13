@@ -10,7 +10,8 @@ A monoidal category is a sextuple $(\mathcal{C}, \otimes, a, \mathbf{1}, l, r)$ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.1](../section-1-1/001-definition-1-1-1.md)
+- [Proposition 1.2.1](004-proposition-1-2-1.md)
 
 ## Sources
 

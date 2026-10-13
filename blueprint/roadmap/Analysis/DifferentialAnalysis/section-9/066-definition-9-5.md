@@ -12,7 +12,7 @@ If $u \in \mathcal{S}'(\mathbb{R}^n)$ we define its Fourier transform by $\hat{u
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.6](../section-6/043-definition-6-6.md)
 
 ## Sources
 

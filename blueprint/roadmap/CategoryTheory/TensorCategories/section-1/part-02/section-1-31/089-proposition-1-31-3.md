@@ -12,7 +12,9 @@ In a tensor category with the Chevalley property, $\operatorname{Lw}(X \otimes Y
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.12.3](../../part-01/section-1-12/029-definition-1-12-3.md)
+- [Definition 1.29.1](../section-1-29/079-definition-1-29-1.md)
+- [Definition 1.31.1](087-definition-1-31-1.md)
 
 ## Sources
 

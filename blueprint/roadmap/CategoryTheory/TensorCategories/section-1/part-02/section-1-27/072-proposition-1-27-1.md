@@ -10,7 +10,10 @@ Let $g, h$ be grouplike elements of a coalgebra $C$, and $\operatorname{Prim}_{h
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.20.1](../../part-01/section-1-20/049-definition-1-20-1.md)
+- [Definition 1.20.2](../../part-01/section-1-20/050-definition-1-20-2.md)
+- [Definition 1.22.13](../../part-01/section-1-22/061-definition-1-22-13.md)
+- [Definition 1.24.6](../section-1-24/066-definition-1-24-6.md)
 
 ## Sources
 

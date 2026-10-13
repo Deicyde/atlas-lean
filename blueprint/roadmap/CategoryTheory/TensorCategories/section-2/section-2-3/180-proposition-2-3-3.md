@@ -10,7 +10,9 @@ Structures of a $\mathcal{C}$-module category on $\mathcal{M}$ are in a natural 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.4.1](../../section-1/part-01/section-1-4/010-definition-1-4-1.md)
+- [Definition 2.1.1](../section-2-1/174-definition-2-1-1.md)
+- [Definition 2.3.1](179-definition-2-3-1.md)
 
 ## Sources
 

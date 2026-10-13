@@ -11,7 +11,12 @@ Let $X_{n,m}$ be independent $\{0,1\}$-valued random variables with $P(X_{n,m} =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (weak convergence)](../lecture-12/031-weak-convergence.md)
+
+## Proof depends on
+
+- [Definition (characteristic function)](../lecture-8/019-characteristic-function.md)
+- [Lévy's continuity theorem](../lecture-8/020-l-vy-s-continuity-theorem.md)
 
 ## Sources
 

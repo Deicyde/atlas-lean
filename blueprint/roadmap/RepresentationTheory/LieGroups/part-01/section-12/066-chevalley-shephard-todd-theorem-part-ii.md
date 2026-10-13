@@ -12,6 +12,11 @@ If $G$ is a complex reflection group then for any irreducible representation $\r
 
 - [Definition 10.5](../section-10/059-definition-10-5.md)
 
+## Proof depends on
+
+- [Theorem 10.6 (Chevalley-Shephard-Todd theorem, part I)](../section-10/060-chevalley-shephard-todd-theorem-part-i.md)
+- [Proposition 12.1 (Hilbert-Noether theorem)](065-hilbert-noether-theorem.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 12.2](../../../../../sources/v1/LieGroups.md)

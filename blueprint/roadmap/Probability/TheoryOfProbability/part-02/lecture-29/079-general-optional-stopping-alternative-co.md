@@ -10,7 +10,7 @@ Let $X_n$ be a uniformly integrable submartingale. If $E|X_n| < \infty$ and $X_n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Uniform integrability)](../../part-01/lecture-28/066-uniform-integrability.md)
 
 ## Sources
 

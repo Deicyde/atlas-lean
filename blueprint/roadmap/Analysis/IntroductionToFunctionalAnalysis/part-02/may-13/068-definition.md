@@ -11,7 +11,8 @@ Let $f \in L^2([0, 1])$, and suppose that $f(x) = \sum_{k=1}^{\infty} c_k \sqrt{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition ($L^p$ space)](../../part-01/april-6/045-l-p-space.md)
+- [Theorem (May 13, 2021)](066-theorem.md)
 
 ## Sources
 

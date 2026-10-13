@@ -10,7 +10,14 @@ If a finite $k$-linear abelian monoidal category $\mathcal{C}$ admits a quasi-fi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.1](../../part-01/section-1-1/001-definition-1-1-1.md)
+- [Definition 1.18.1](../../part-01/section-1-18/045-definition-1-18-1.md)
+- [Definition 1.19.1](../../part-01/section-1-19/048-definition-1-19-1.md)
+- [Definition 1.34.2](099-definition-1-34-2.md)
+
+## Proof depends on
+
+- [Lemma 1.16.1](../../part-01/section-1-16/044-lemma-1-16-1.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Let $X_1, X_2, \ldots$ be i.i.d. and $N$ a stopping time with $N < \infty$. Cond
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Stopping time)](051-stopping-time.md)
 
 ## Sources
 

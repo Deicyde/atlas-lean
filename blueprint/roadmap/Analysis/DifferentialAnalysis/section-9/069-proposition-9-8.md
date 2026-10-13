@@ -12,7 +12,13 @@ Each of the Sobolev spaces $H^m(\mathbb{R}^n)$ is a Hilbert space with the norm 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.1](../section-5/034-definition-5-1.md)
+- [Definition 6.6](../section-6/043-definition-6-6.md)
+
+## Proof depends on
+
+- [Corollary 5.4](../section-5/037-corollary-5-4.md)
+- [Theorem 9.1](062-theorem-9-1.md)
 
 ## Sources
 

@@ -10,7 +10,7 @@ In a locally finite abelian category $\mathcal{C}$, $\operatorname{Hom}(X, Y)=0$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.12.1](027-definition-1-12-1.md)
 
 ## Sources
 

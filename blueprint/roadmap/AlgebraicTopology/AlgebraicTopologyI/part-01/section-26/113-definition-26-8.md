@@ -11,7 +11,8 @@ The relative $n$-cochain group with coefficients in $N$ is $S^{n}(X, A; N) = \ke
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 26.3](110-definition-26-3.md)
+- [Definition 26.5](111-definition-26-5.md)
 
 ## Sources
 

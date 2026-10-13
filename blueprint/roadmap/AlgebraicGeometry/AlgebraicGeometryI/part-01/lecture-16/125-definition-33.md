@@ -11,7 +11,7 @@ $x$ is a smooth point on $X$ if $\dim_x(X) = \dim(\mathfrak{m}_x/\mathfrak{m}_x^
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 11](../lecture-4/042-definition-11.md)
 
 ## Sources
 

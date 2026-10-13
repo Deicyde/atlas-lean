@@ -10,7 +10,9 @@ We have a short exact sequence $0 \to \Omega_{\mathbb{P}^n} \to \mathcal{O}(-1)^
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4 (Projective Space)](../lecture-2/016-projective-space.md)
+- [Definition 34](../lecture-18/136-definition-34.md)
+- [Definition 37](../lecture-19/148-definition-37.md)
 
 ## Sources
 

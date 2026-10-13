@@ -12,7 +12,13 @@ Fourier transform $\mathcal{F} \colon \mathcal{S}(\mathbb{R}^n) \to \mathcal{S}(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.6](../section-6/043-definition-6-6.md)
+- [Proposition 8.11](../section-8/060-proposition-8-11.md)
+
+## Proof depends on
+
+- [Proposition 8.10](../section-8/059-proposition-8-10.md)
+- [Lemma 8.12](../section-8/061-lemma-8-12.md)
 
 ## Sources
 

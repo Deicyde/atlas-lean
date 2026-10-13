@@ -10,7 +10,8 @@ The following are equivalent for a martingale: (1) It is uniformly integrable. (
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Conditional expectation)](../../part-01/lecture-25/053-conditional-expectation.md)
+- [Definition (Uniform integrability)](../../part-01/lecture-28/066-uniform-integrability.md)
 
 ## Sources
 

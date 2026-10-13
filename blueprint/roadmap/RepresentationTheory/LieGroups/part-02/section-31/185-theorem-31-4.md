@@ -10,7 +10,13 @@ Irreducible $(\mathfrak{g}, K)$-modules with (pure) infinitesimal character $\ch
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.7](../../part-01/section-5/026-definition-5-7.md)
+- [Theorem 31.1](183-theorem-31-1.md)
+
+## Proof depends on
+
+- [Corollary 30.20](../section-30/182-corollary-30-20.md)
+- [Proposition 31.3](184-proposition-31-3.md)
 
 ## Sources
 

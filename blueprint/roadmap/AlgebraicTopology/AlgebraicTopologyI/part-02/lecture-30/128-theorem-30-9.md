@@ -10,7 +10,7 @@ Formation of the intersection bilinear form gives an isomorphism of commutative 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 20.1](../../part-01/section-20/079-definition-20-1.md)
 
 ## Sources
 

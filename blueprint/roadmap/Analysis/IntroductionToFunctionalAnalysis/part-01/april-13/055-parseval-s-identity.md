@@ -12,7 +12,12 @@ Let $H$ be a Hilbert space, and let $\{e_n\}$ be a countable orthonormal basis o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (April 8, 2021 section)](../april-8/039-definition.md)
+- [Definition (Norm from inner product)](../april-6/049-norm-from-inner-product.md)
+
+## Proof depends on
+
+- [Theorem (Continuity of the inner product)](../april-8/035-continuity-of-the-inner-product.md)
 
 ## Sources
 

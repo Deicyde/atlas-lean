@@ -11,11 +11,14 @@ For any $u \in \mathcal{S}'(\mathbb{R}^{n})$, $(p, q) \in \mathrm{WF}_{\mathrm{s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.5](../section-9/066-definition-9-5.md)
+- [Definition 12.12](104-definition-12-12.md)
 
 ## Proof depends on
 
 - [Lemma 12.8](100-lemma-12-8.md)
+- [Proposition 9.6](../section-9/067-proposition-9-6.md)
+- [Proposition 12.16](108-proposition-12-16.md)
 
 ## Sources
 

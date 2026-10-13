@@ -10,7 +10,12 @@ $X$ is smooth at $x$ iff $\widehat{\mathcal{O}_{X,x}} \cong k[[t_1,\ldots,t_d]]$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 11](../lecture-4/042-definition-11.md)
+- [Definition 33](../lecture-16/125-definition-33.md)
+
+## Proof depends on
+
+- [Proposition 31](143-proposition-31.md)
 
 ## Sources
 

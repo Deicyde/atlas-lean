@@ -10,7 +10,17 @@ Let $R$ be a PID and $C_{*}$ a chain complex of $R$-modules such that $C_{n}$ is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.6](../chapter-1/chapter-1-section-1/006-definition-1-6.md)
+- [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
+- [Definition 3.5](../chapter-1/chapter-1-section-3/011-definition-3-5.md)
+- [Definition 8.3](../section-8/035-definition-8-3.md)
+- [Definition 20.3](../section-20/080-definition-20-3.md)
+
+## Proof depends on
+
+- [Definition 4.5](../chapter-1/chapter-1-section-4/014-definition-4-5.md)
+- [Lemma 4.8](../chapter-1/chapter-1-section-4/016-lemma-4-8.md)
+- [Theorem 9.1 (The homology long exact sequence)](../section-9/039-the-homology-long-exact-sequence.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ A weakly $G$-equivariant $D$-module on $X$ is a $D_{X}$-module $\mathcal{E}$ wit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 28.6](../section-28/166-definition-28-6.md)
+- [Definition 30.7](177-definition-30-7.md)
 
 ## Sources
 

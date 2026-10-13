@@ -13,6 +13,7 @@ For any $\xi \in \Xi$ there exists an indecomposable projective functor $F_{\xi}
 - [Definition 15.1](../../part-01/section-15/084-definition-15-1.md)
 - [Definition 8.3](../../part-01/section-8/048-definition-8-3.md)
 - [Definition 22.1](../section-22/129-definition-22-1.md)
+- [Definition 8.4](../../part-01/section-8/049-definition-8-4.md)
 
 ## Proof depends on
 
@@ -24,6 +25,7 @@ For any $\xi \in \Xi$ there exists an indecomposable projective functor $F_{\xi}
 - [Lemma 23.3](137-lemma-23-3.md)
 - [Corollary 16.5](../../part-01/section-16/094-corollary-16-5.md)
 - [Theorem 23.2](136-theorem-23-2.md)
+- [Corollary 22.6](../section-22/133-corollary-22-6.md)
 
 ## Sources
 

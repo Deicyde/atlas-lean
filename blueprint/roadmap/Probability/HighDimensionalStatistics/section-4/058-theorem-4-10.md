@@ -10,12 +10,15 @@ Let $X_1, \ldots, X_n$ be $n$ i.i.d. copies of a sub-Gaussian random vector $X \
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../chapter-1/002-definition-1-2.md)
+- [Definition 4.7](055-definition-4-7.md)
 
 ## Proof depends on
 
 - [Definition 1.17](../section-1/017-definition-1-17.md)
 - [Lemma 1.18](../section-1/018-lemma-1-18.md)
+- [Lemma 2.7](../chapter-2/024-lemma-2-7.md)
+- [Theorem 4.6](054-theorem-4-6.md)
 
 ## Sources
 

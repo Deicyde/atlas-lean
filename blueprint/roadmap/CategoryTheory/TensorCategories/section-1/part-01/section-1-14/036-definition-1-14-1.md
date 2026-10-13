@@ -11,7 +11,8 @@ Let $\mathcal{C}, \mathcal{D}$ be multiring categories over $k$, and $F: \mathca
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.4.1](../section-1-4/010-definition-1-4-1.md)
+- [Definition 1.13.3](../section-1-13/031-definition-1-13-3.md)
 
 ## Sources
 

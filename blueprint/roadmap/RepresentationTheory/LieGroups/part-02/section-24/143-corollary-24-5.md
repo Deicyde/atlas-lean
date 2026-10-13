@@ -11,11 +11,14 @@ Let $\theta = \chi_{\lambda}$ where $\lambda$ is dominant. If $M_{\lambda - \rho
 ## Depends on
 
 - [Definition 8.3](../../part-01/section-8/048-definition-8-3.md)
+- [Definition 8.4](../../part-01/section-8/049-definition-8-4.md)
 
 ## Proof depends on
 
 - [Theorem 14.1 (Harish-Chandra)](../../part-01/section-14/080-harish-chandra.md)
 - [Proposition 8.5](../../part-01/section-8/050-proposition-8-5.md)
+- [Corollary 18.8 (The Duflo-Joseph theorem)](../../part-01/section-18/106-the-duflo-joseph-theorem.md)
+- [Theorem 24.4](142-theorem-24-4.md)
 
 ## Sources
 

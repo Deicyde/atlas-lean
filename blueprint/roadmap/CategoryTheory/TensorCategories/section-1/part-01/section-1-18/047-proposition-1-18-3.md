@@ -10,7 +10,7 @@ There is a canonical algebra isomorphism $\alpha_{F_1, F_2} \colon \operatorname
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.18.1](045-definition-1-18-1.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ A rigid monoidal category $\mathcal{C}$ equipped with a pivotal structure is sai
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10.11](../../part-01/section-1-10/024-definition-1-10-11.md)
+- [Definition 1.38.1](113-definition-1-38-1.md)
 
 ## Sources
 

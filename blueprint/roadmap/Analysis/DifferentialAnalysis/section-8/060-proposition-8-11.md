@@ -12,7 +12,12 @@ Fourier transformation, (8.28), defines a continuous linear map $\mathcal{F} \co
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.6](../section-6/043-definition-6-6.md)
+- [Proposition 6.7](../section-6/044-proposition-6-7.md)
+
+## Proof depends on
+
+- [Lemma 7.4](../section-7/048-lemma-7-4.md)
 
 ## Sources
 

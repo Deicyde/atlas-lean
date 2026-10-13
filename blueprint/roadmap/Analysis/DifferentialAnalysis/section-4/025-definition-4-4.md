@@ -10,7 +10,7 @@ A measurable extended function $f \colon X \to [-\infty, \infty]$ is said to be 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.1](022-definition-4-1.md)
 
 ## Sources
 

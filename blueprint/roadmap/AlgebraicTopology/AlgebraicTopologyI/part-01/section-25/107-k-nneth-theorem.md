@@ -10,7 +10,15 @@ Take coefficients in a PID $R$. There is a short exact sequence $0 \rightarrow \
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
+- [Definition 3.5](../chapter-1/chapter-1-section-3/011-definition-3-5.md)
+- [Definition 8.3](../section-8/035-definition-8-3.md)
+- [Definition 20.3](../section-20/080-definition-20-3.md)
+
+## Proof depends on
+
+- [Theorem 25.2](098-theorem-25-2.md)
+- [Theorem 25.13 (Eilenberg-Zilber theorem)](105-eilenberg-zilber-theorem.md)
 
 ## Sources
 

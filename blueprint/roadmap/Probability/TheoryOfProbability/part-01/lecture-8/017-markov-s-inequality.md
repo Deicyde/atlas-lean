@@ -14,6 +14,10 @@ Let $X$ be a non-negative random variable. Fix $a > 0$. Then $P\{X \geq a\} \leq
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (properties of integration)](../lecture-4/006-properties-of-integration.md)
+
 ## Sources
 
 - [MIT 18.175 Theory of Probability (Spring 2014), Lecture 8](../../../../../sources/v1/TheoryOfProbability.md)

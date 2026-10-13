@@ -11,7 +11,7 @@ A Hilbert space is a vector space $V$ with an inner product satisfying (5.1)--(5
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.10](../section-4/031-definition-4-10.md)
 
 ## Sources
 

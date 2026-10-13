@@ -12,7 +12,12 @@ If $f_n$ is a sequence of integrable functions, $f_k \to f$ a.e. and $|f_n| \leq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.4](025-definition-4-4.md)
+
+## Proof depends on
+
+- [Theorem 4.3 (Monotone Convergence)](024-monotone-convergence.md)
+- [Lemma 4.5 (Fatou)](026-fatou.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The operator $U_{i}$ defined by $U_i(x) = \sum_{\substack{y \in (B_n)_{i+1} \\ y
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 4.6](014-lemma-4-6.md)
+
 ## Sources
 
 - [MIT 18.318 Topics in Algebraic Combinatorics (Spring 2006), Section 4](../../../../sources/v1/AlgebraicCombinatorics.md)

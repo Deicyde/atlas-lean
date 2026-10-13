@@ -12,7 +12,7 @@ The support of an irreducible $D$-module is irreducible.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 28.6](../section-28/166-definition-28-6.md)
 
 ## Sources
 

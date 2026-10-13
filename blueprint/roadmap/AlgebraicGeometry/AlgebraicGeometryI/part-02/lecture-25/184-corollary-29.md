@@ -10,7 +10,12 @@ Define the arithmetic genus $g_a = \dim(H^1(\mathcal{O}))$, and the geometric ge
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 37](../../part-01/lecture-19/148-definition-37.md)
+- [Definition 45](../lecture-22/173-definition-45.md)
+
+## Proof depends on
+
+- [Theorem 24.3 (Serre Duality)](../lecture-24/181-serre-duality.md)
 
 ## Sources
 

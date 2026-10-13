@@ -12,7 +12,7 @@ If $\mu$ and $\nu$ are $\sigma$-finite measures on $(\Omega, \mathcal{F})$ and $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Absolutely continuous)](054-absolutely-continuous.md)
 
 ## Sources
 

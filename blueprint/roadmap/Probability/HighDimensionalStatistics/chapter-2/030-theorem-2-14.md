@@ -20,6 +20,7 @@ Assume that the linear model (2.2) holds where $\varepsilon \sim \mathsf{subG}_n
 - [Lemma 1.18](../section-1/018-lemma-1-18.md)
 - [Lemma 2.7](024-lemma-2-7.md)
 - [Theorem 1.6](../section-1/006-theorem-1-6.md)
+- [Theorem 1.19](../section-1/019-theorem-1-19.md)
 
 ## Sources
 

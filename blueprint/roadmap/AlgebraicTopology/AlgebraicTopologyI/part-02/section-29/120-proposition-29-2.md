@@ -12,6 +12,8 @@ The cohomology cross product $\times \colon H^{*}(X) \otimes H^{*}(Y) \rightarro
 
 - [Definition 5.3](../../part-01/chapter-1/chapter-1-section-5/019-definition-5-3.md)
 - [Definition 26.5](../../part-01/section-26/111-definition-26-5.md)
+- [Definition 28.2](../../part-01/section-28/117-definition-28-2.md)
+- [Definition 29.1](119-definition-29-1.md)
 
 ## Sources
 

@@ -12,6 +12,7 @@ Let $\mathcal{A}$ be a cover of $X$. An $n$-simplex $\sigma$ is $\mathcal{A}$-sm
 ## Depends on
 
 - [Definition 1.2](../chapter-1/chapter-1-section-1/002-definition-1-2.md)
+- [Definition 11.2](052-definition-11-2.md)
 
 ## Sources
 

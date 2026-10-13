@@ -11,7 +11,7 @@ If $X, Y \in \mathcal{C}$, then $f \colon X \rightarrow Y$ is an isomorphism if 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.1](008-definition-3-1.md)
 
 ## Sources
 

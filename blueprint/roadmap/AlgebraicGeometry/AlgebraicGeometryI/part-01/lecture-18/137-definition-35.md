@@ -10,7 +10,7 @@ Let $X$ be a variety. The Zariski cotangent space of $X$ at $x \in X$ is defined
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](../lecture-2/010-definition-3.md)
 
 ## Sources
 

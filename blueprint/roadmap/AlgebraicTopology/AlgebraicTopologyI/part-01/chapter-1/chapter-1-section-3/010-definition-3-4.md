@@ -11,7 +11,7 @@ Let $\mathcal{C}, \mathcal{D}$ be categories. A functor $F \colon \mathcal{C} \r
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.1](008-definition-3-1.md)
 
 ## Sources
 

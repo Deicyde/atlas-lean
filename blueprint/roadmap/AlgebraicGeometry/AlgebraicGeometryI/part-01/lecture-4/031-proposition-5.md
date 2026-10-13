@@ -12,7 +12,9 @@ A Noetherian topological space $X$ is a finite union of its components (i.e.\ ma
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corollary 3](../lecture-2/014-corollary-3.md)
+- [Definition 7](../lecture-3/025-definition-7.md)
+- [Definition 8](../lecture-3/027-definition-8.md)
 
 ## Sources
 

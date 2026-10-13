@@ -16,6 +16,7 @@ The homology of real projective space is as follows. $H_{k}(\mathbf{RP}^{n}) = \
 
 - [Definition 16.1](../chapter-2/069-definition-16-1.md)
 - [Theorem 16.3](../chapter-2/071-theorem-16-3.md)
+- [Theorem 10.8](../section-10/050-theorem-10-8.md)
 
 ## Sources
 

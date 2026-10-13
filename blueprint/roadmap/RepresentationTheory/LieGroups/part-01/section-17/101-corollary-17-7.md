@@ -12,6 +12,10 @@ $U_{\chi}$ is an integral domain for all $\chi$.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition 17.6](100-proposition-17-6.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 17.4](../../../../../sources/v1/LieGroups.md)

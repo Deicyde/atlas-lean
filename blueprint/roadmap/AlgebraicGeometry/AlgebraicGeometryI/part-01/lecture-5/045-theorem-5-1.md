@@ -12,7 +12,12 @@ $\dim(\mathbb{A}^n) = n$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 11](../lecture-4/042-definition-11.md)
+
+## Proof depends on
+
+- [Lemma 1 (Noether Normalization)](../lecture-2/007-noether-normalization.md)
+- [Lemma 10](044-lemma-10.md)
 
 ## Sources
 

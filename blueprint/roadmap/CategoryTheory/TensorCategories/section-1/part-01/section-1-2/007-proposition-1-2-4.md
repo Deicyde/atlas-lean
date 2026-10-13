@@ -12,7 +12,12 @@ The unit object in a monoidal category is unique up to a unique isomorphism.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.1](../section-1-1/001-definition-1-1-1.md)
+
+## Proof depends on
+
+- [Proposition 1.2.1](004-proposition-1-2-1.md)
+- [Proposition 1.2.2](005-proposition-1-2-2.md)
 
 ## Sources
 

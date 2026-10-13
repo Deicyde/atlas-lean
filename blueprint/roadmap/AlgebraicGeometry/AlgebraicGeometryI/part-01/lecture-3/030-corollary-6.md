@@ -12,7 +12,7 @@ $0 = \bigcap (\text{minimal prime ideals})$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corollary 5](029-corollary-5.md)
 
 ## Sources
 

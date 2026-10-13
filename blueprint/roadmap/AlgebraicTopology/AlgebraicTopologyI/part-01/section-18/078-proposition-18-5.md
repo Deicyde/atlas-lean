@@ -10,13 +10,14 @@ For any graded abelian group $A_{*}$ with $A_{k} = 0$ for $k \leq 0$, there exis
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.5](../chapter-2/063-definition-14-5.md)
 
 ## Proof depends on
 
 - [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
 - [Definition 16.1](../chapter-2/069-definition-16-1.md)
 - [Theorem 16.3](../chapter-2/071-theorem-16-3.md)
+- [Theorem 10.8](../section-10/050-theorem-10-8.md)
 
 ## Sources
 

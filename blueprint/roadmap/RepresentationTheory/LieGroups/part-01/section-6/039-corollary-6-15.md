@@ -20,6 +20,7 @@ If $V$ is of finite length then $V^{K\text{-fin}}$ is a Harish-Chandra module.
 - [Definition 2.1](../section-2/005-definition-2-1.md)
 - [Corollary 6.12](036-corollary-6-12.md)
 - [Proposition 5.10](../section-5/027-proposition-5-10.md)
+- [Corollary 6.13](037-corollary-6-13.md)
 
 ## Sources
 

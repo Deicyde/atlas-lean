@@ -11,7 +11,7 @@ Given jointly distributed random variables $X$ and $Y$, define $H(X \mid Y) \col
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 10.1.1](171-definition-10-1-1.md)
 
 ## Sources
 

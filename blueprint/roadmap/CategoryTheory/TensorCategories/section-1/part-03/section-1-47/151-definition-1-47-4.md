@@ -11,7 +11,9 @@ The virtual projective object $R_{\mathcal{C}} = \sum_{i \in I} \mathrm{FPdim}(X
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.12.3](../../part-01/section-1-12/029-definition-1-12-3.md)
+- [Definition 1.18.1](../../part-01/section-1-18/045-definition-1-18-1.md)
+- [Definition 1.45.3](../section-1-45/135-definition-1-45-3.md)
 
 ## Sources
 

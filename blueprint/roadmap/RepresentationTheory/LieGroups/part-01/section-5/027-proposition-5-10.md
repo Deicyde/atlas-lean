@@ -13,6 +13,7 @@ If $V$ is a $K$-admissible continuous representation of $G$ then $V^{K\text{-fin
 
 - [Definition 1.2](../section-1/001-definition-1-2.md)
 - [Definition 5.1](024-definition-5-1.md)
+- [Definition 5.7](026-definition-5-7.md)
 
 ## Proof depends on
 

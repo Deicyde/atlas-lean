@@ -14,6 +14,10 @@ If $1 \leq p \leq \infty$ and $f, g: E \to \mathbb{C}$ are two measurable functi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Holder's inequality for $L^p$ spaces)](032-holder-s-inequality-for-l-p-spaces.md)
+
 ## Sources
 
 - [MIT 18.102 Introduction to Functional Analysis (Spring 2021), April 6, 2021](../../../../../sources/v1/IntroductionToFunctionalAnalysis.md)

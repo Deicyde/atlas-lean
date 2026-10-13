@@ -10,7 +10,7 @@ $\omega_D = \omega_X(-D)|_D$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 37](148-definition-37.md)
 
 ## Sources
 

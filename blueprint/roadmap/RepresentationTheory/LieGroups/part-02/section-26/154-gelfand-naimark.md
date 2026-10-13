@@ -10,7 +10,13 @@ The irreducible unitary representations of $\mathrm{SL}_{2}(\mathbb{C})$ are Hil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.3](../../part-01/section-1/002-definition-1-3.md)
+- [Definition 1.8](../../part-01/section-1/004-definition-1-8.md)
+- [Definition 5.7](../../part-01/section-5/026-definition-5-7.md)
+
+## Proof depends on
+
+- [Theorem 25.6](../section-25/148-theorem-25-6.md)
 
 ## Sources
 

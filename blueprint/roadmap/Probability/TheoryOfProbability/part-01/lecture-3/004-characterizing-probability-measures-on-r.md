@@ -13,6 +13,10 @@ Given $F$, there is a unique measure whose values on finite rectangles are deter
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Caratheéodory Extension Theorem](../lecture-2/003-carathe-odory-extension-theorem.md)
+
 ## Sources
 
 - [MIT 18.175 Theory of Probability (Spring 2014), Lecture 3, section 'Characterizing probability measures on R^d'](../../../../../sources/v1/TheoryOfProbability.md)

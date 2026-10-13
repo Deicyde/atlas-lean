@@ -12,7 +12,7 @@ $(X_0, X_1, \ldots)$ chosen from $P_\mu$ is a Markov chain.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Markov chain, general)](084-markov-chain-general.md)
 
 ## Sources
 

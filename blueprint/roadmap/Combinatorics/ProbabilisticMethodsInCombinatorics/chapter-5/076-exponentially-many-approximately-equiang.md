@@ -12,6 +12,10 @@ For every $\alpha \in (0, 1)$ and $\varepsilon > 0$, there exists $c > 0$ so tha
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 5.0.5 (Chernoff bound with bounded variables)](069-chernoff-bound-with-bounded-variables.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 5, Section 5.2](../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

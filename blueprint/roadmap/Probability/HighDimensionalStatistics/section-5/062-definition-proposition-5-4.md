@@ -14,6 +14,10 @@ The total variation distance between two probability measures $\mathbb{P}_0$ and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 5.3 (Neyman-Pearson)](061-neyman-pearson.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Section 5.3](../../../../sources/v1/HighDimensionalStatistics.md)

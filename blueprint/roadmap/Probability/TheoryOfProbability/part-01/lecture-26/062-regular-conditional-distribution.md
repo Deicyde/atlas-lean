@@ -11,7 +11,7 @@ Consider a probability space $(\Omega, \mathcal{F}, P)$, a measurable map $X \co
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Conditional expectation)](../lecture-25/053-conditional-expectation.md)
 
 ## Sources
 

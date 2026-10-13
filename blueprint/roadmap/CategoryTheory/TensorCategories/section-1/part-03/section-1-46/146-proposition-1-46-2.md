@@ -10,7 +10,8 @@ lean: Deligne.Proposition_1_46_2
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.18.1](../../part-01/section-1-18/045-definition-1-18-1.md)
+- [Definition 1.46.1](145-definition-1-46-1.md)
 
 ## Sources
 

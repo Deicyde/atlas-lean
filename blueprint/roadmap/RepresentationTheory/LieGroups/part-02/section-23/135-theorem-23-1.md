@@ -16,6 +16,7 @@ lean: theorem_23_1_iii
 
 - [Definition 22.3](../section-22/130-definition-22-3.md)
 - [Theorem 22.4](../section-22/131-theorem-22-4.md)
+- [Corollary 22.6](../section-22/133-corollary-22-6.md)
 
 ## Sources
 

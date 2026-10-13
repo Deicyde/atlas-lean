@@ -12,7 +12,7 @@ A presheaf $\mathcal{F}$ on the topological space $X$ is called a sheaf if the f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 21](084-definition-21.md)
 
 ## Sources
 

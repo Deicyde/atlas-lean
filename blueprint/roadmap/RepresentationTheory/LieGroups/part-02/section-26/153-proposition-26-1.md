@@ -10,7 +10,11 @@ lean: prop_26_1_i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 25.6](../section-25/148-theorem-25-6.md)
+
+## Proof depends on
+
+- [Theorem 25.8](../section-25/150-theorem-25-8.md)
 
 ## Sources
 

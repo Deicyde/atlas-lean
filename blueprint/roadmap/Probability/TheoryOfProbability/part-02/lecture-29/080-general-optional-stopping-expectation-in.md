@@ -12,7 +12,8 @@ Let $X_n$ be a uniformly integrable submartingale. For any stopping time $N \leq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Stopping time)](../../part-01/lecture-23/051-stopping-time.md)
+- [Definition (Uniform integrability)](../../part-01/lecture-28/066-uniform-integrability.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ An object $X$ in a rigid monoidal category $\mathcal{C}$ is invertible if $\math
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10.1](../section-1-10/019-definition-1-10-1.md)
+- [Definition 1.10.11](../section-1-10/024-definition-1-10-11.md)
 
 ## Sources
 

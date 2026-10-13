@@ -10,7 +10,8 @@ The following are true: 1.\ $M \mapsto \widetilde{M}_{\mathbb{P}^n}$ is an exact
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4 (Projective Space)](../lecture-2/016-projective-space.md)
+- [Definition 25](../lecture-10/088-definition-25.md)
 
 ## Sources
 

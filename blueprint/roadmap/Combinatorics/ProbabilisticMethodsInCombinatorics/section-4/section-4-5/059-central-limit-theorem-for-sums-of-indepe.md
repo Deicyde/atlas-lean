@@ -12,7 +12,7 @@ If $X_n$ is a sum of independent Bernoulli random variables, and $\operatorname{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.1.3 (Variance)](../../chapter-4/038-variance.md)
 
 ## Sources
 

@@ -11,7 +11,9 @@ A natural transformation of functors $\theta \colon F \rightarrow G$ is an $\mat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.5](../chapter-1/chapter-1-section-3/011-definition-3-5.md)
+- [Definition 8.1](../section-8/034-definition-8-1.md)
+- [Definition 25.4](100-definition-25-4.md)
 
 ## Sources
 

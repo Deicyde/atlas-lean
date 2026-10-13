@@ -10,7 +10,8 @@ A pointed tensor category has the Chevalley property.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.28.3](../section-1-28/078-definition-1-28-3.md)
+- [Definition 1.31.1](087-definition-1-31-1.md)
 
 ## Sources
 

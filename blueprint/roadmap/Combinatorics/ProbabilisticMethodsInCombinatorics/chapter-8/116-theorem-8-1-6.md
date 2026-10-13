@@ -12,6 +12,10 @@ If $p = o(n^{-1/2})$, then $\mathbb{P}(G(n, p) \text{ is triangle-free}) = e^{-(
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 8.1.2 (Janson inequality I)](115-janson-inequality-i.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 8, Section 8.1](../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

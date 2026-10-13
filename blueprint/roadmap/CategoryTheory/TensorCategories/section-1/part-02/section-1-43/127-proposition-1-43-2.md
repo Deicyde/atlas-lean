@@ -11,7 +11,7 @@ Any finite dimensional $*$-algebra $B$ is semisimple.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.43.1](126-definition-1-43-1.md)
 
 ## Sources
 

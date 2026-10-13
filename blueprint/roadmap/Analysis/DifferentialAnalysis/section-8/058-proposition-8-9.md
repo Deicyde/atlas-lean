@@ -16,6 +16,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Lemma 8.8](057-lemma-8-8.md)
+- [Proposition 8.7](056-proposition-8-7.md)
 
 ## Sources
 

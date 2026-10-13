@@ -12,12 +12,13 @@ Fix a positive integer $k \leq d/2$. Let $K = \mathcal{B}_0(k)$ be the set of $k
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 2.2](021-theorem-2-2.md)
 
 ## Proof depends on
 
 - [Definition 1.17](../section-1/017-definition-1-17.md)
 - [Lemma 1.18](../section-1/018-lemma-1-18.md)
+- [Theorem 1.19](../section-1/019-theorem-1-19.md)
 
 ## Sources
 

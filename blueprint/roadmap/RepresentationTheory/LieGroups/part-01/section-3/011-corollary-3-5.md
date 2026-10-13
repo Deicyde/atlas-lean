@@ -13,6 +13,11 @@ If $X, Y$ are locally compact second countable Hausdorff spaces then the natural
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 3.2](008-lemma-3-2.md)
+- [Lemma 3.4](010-lemma-3-4.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 3, Subsection 3.3](../../../../../sources/v1/LieGroups.md)

@@ -13,6 +13,10 @@ Let $0 \leq t_0 < t_1 < t_2 < \cdots < t_m$ and let $I_1 \times I_2 \times \cdot
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 2 (Central Limit Theorem)](../section-2/021-central-limit-theorem.md)
+
 ## Sources
 
 - [MIT 18.103 Fourier Analysis (Fall 2013), Chapter 1 (Brownian Motion)](../../../../sources/v1/FourierAnalysis.md)

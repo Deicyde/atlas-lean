@@ -14,6 +14,11 @@ Suppose that $B(t)$ is such that $B(0) = 0$. Then $B$ satisfies property (2) if 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition 1 (Chapter 1 (Brownian Motion))](032-proposition-1.md)
+- [Lemma 1 (Chapter 1 (Brownian Motion))](033-lemma-1.md)
+
 ## Sources
 
 - [MIT 18.103 Fourier Analysis (Fall 2013), Chapter 1 (Brownian Motion)](../../../../sources/v1/FourierAnalysis.md)

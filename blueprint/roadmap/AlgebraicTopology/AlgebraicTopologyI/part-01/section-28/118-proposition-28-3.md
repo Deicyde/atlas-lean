@@ -12,7 +12,11 @@ Let $f \in S^{p}(X)$, $g \in S^{q}(Y)$, and $h \in S^{r}(Z)$, and let $\sigma \c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 26.3](../section-26/110-definition-26-3.md)
+
+## Proof depends on
+
+- [Construction 28.1](116-construction-28-1.md)
 
 ## Sources
 

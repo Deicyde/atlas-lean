@@ -11,7 +11,7 @@ There exists a constant $C > 0$ so that the following holds for any real random 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.4.17 (Sub-Gaussian distribution)](146-sub-gaussian-distribution.md)
 
 ## Sources
 

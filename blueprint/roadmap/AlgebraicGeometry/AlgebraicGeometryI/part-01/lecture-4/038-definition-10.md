@@ -11,7 +11,7 @@ The morphism $f$ is finite if there is an affine open cover $Y = \bigcup U_i$ su
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2](../lecture-1/005-definition-2.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Let $\Sigma$ satisfy the spiked covariance model and let $\tilde{\Sigma}$ be any
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.7](055-definition-4-7.md)
 
 ## Sources
 

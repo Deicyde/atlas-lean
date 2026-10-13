@@ -11,7 +11,8 @@ A tensor category $C$ is pointed if every simple object of $C$ is invertible.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.11.1](../../part-01/section-1-11/025-definition-1-11-1.md)
+- [Definition 1.12.3](../../part-01/section-1-12/029-definition-1-12-3.md)
 
 ## Sources
 

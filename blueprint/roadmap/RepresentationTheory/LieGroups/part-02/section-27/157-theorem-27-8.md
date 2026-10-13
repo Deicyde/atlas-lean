@@ -12,6 +12,10 @@ The Springer map $p: T^{*}\mathcal{F} \to \mathcal{N}$ is birational and project
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition 17.6](../../part-01/section-17/100-proposition-17-6.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 27, Subsection 27.2](../../../../../sources/v1/LieGroups.md)

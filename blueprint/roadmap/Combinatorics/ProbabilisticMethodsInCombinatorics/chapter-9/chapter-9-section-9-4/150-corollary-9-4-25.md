@@ -14,6 +14,10 @@ There is a constant $c > 0$ so that for every positive integer $d$, there is a s
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 9.4.22 (Johnson and Lindenstrauss 1982)](148-johnson-and-lindenstrauss-1982.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 9, Section 9.4](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

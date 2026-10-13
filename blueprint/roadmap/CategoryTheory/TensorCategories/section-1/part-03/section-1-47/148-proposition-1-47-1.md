@@ -12,7 +12,13 @@ Let $\mathcal{C}$ be a finite multitensor category. Then $K_{0}(\mathcal{C})$ is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.12.3](../../part-01/section-1-12/029-definition-1-12-3.md)
+- [Lemma 1.16.1](../../part-01/section-1-16/044-lemma-1-16-1.md)
+- [Definition 1.18.1](../../part-01/section-1-18/045-definition-1-18-1.md)
+
+## Proof depends on
+
+- [Proposition 1.13.6](../../part-01/section-1-13/034-proposition-1-13-6.md)
 
 ## Sources
 

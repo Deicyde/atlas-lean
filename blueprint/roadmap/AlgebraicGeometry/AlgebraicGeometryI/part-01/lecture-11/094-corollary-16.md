@@ -12,7 +12,7 @@ $\widetilde{M}$ is a quasicoherent $\mathcal{O}_X$-module.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 25](../lecture-10/088-definition-25.md)
 
 ## Sources
 

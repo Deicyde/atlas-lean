@@ -12,7 +12,8 @@ If $X \in \mathcal{C}$ has a right (respectively, left) dual object, then it is 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10.1](019-definition-1-10-1.md)
+- [Definition 1.10.2](020-definition-1-10-2.md)
 
 ## Sources
 

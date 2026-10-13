@@ -10,7 +10,14 @@ $\$$ is a natural chain map $S_{*}(X) \rightarrow S_{*}(X)$ that is naturally ch
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.3](../chapter-1/chapter-1-section-1/003-definition-1-3.md)
+- [Definition 3.5](../chapter-1/chapter-1-section-3/011-definition-3-5.md)
+- [Definition 5.9](../chapter-1/chapter-1-section-5/025-definition-5-9.md)
+
+## Proof depends on
+
+- [Theorem 1.5](../chapter-1/chapter-1-section-1/005-theorem-1-5.md)
+- [Proposition 5.13](../chapter-1/chapter-1-section-5/029-proposition-5-13.md)
 
 ## Sources
 

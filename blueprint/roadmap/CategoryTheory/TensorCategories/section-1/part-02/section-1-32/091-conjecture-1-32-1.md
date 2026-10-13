@@ -11,7 +11,9 @@ Any finite dimensional pointed Hopf algebra over a field of characteristic zero 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.22.9](../../part-01/section-1-22/059-definition-1-22-9.md)
+- [Definition 1.24.6](../section-1-24/066-definition-1-24-6.md)
+- [Definition 1.29.1](../section-1-29/079-definition-1-29-1.md)
 
 ## Proof depends on
 

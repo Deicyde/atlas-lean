@@ -12,7 +12,11 @@ Let $B_1, B_2$ be two Banach spaces, and let $T: B_1 \to B_2$ be a (not necessar
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proposition (February 25, 2021 lecture)](005-proposition.md)
+
+## Proof depends on
+
+- [Corollary (February 25, 2021 lecture)](010-corollary.md)
 
 ## Sources
 

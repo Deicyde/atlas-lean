@@ -10,7 +10,11 @@ One has $\sum \Phi_i^1 \beta S(\Phi_i^2) \alpha \Phi_i^3 = 1$ and $\sum S(\bar{\
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.34.5](../section-1-34/101-definition-1-34-5.md)
+
+## Proof depends on
+
+- [Definition 1.10.1](../../part-01/section-1-10/019-definition-1-10-1.md)
 
 ## Sources
 

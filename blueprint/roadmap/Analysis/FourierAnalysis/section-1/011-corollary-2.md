@@ -14,6 +14,10 @@ Let $f \in L^2(\mathbb{R})$ and let $f_j \in \mathcal{S}(\mathbb{R})$ be such th
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary 1 (Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$)](008-corollary-1.md)
+
 ## Sources
 
 - [MIT 18.103 Fourier Analysis (Fall 2013), Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$](../../../../sources/v1/FourierAnalysis.md)

@@ -11,7 +11,8 @@ An algebra $H$ equipped with a comultiplication $\Delta$ and a counit $\varepsil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.20.1](../section-1-20/049-definition-1-20-1.md)
+- [Theorem 1.21.1](051-theorem-1-21-1.md)
 
 ## Sources
 

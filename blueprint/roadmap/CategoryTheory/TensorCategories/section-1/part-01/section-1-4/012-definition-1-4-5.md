@@ -11,7 +11,8 @@ A monoidal functor $\mathcal{C} \to \mathcal{C}'$ is a triple $(F, J, \varphi)$ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.4.1](010-definition-1-4-1.md)
+- [Proposition 1.4.3](011-proposition-1-4-3.md)
 
 ## Sources
 

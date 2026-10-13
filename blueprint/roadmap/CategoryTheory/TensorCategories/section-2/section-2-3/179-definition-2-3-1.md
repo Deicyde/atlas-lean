@@ -11,7 +11,9 @@ A (left or right) abelian module category over a multitensor category $\mathcal{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.12.1](../../section-1/part-01/section-1-12/027-definition-1-12-1.md)
+- [Definition 1.12.3](../../section-1/part-01/section-1-12/029-definition-1-12-3.md)
+- [Definition 2.1.1](../section-2-1/174-definition-2-1-1.md)
 
 ## Sources
 

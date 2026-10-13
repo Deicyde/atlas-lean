@@ -11,6 +11,8 @@ $M_{\lambda}$ has a weight decomposition with $P(M_{\lambda}) = \lambda - Q_+$, 
 ## Depends on
 
 - [Definition 8.3](048-definition-8-3.md)
+- [Definition 8.2](047-definition-8-2.md)
+- [Definition 8.4](049-definition-8-4.md)
 
 ## Proof depends on
 

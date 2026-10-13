@@ -10,7 +10,11 @@ Fix $s, t$. For every $\alpha > 0$ there is some $\epsilon > 0$ so that either $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sharp Projection Theorems II: AD Regular Case, Section on General AD vs Projective AD)](102-definition.md)
+
+## Proof depends on
+
+- [Theorem (Plunnecke)](../../part-01/plunnecke-inequality/058-plunnecke.md)
 
 ## Sources
 

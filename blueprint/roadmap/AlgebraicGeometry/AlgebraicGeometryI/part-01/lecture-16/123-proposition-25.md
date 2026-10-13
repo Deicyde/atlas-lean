@@ -10,7 +10,12 @@ $X$ irreducible curve, $\deg(D) = 0$ if $D$ is a principal divisor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../lecture-3/025-definition-7.md)
+- [Definition 30](../lecture-14/115-definition-30.md)
+
+## Proof depends on
+
+- [Definition 15](../lecture-6/057-definition-15.md)
 
 ## Sources
 

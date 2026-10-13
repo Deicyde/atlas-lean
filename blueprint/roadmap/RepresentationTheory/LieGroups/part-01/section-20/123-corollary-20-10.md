@@ -12,6 +12,7 @@ $\mathcal{O}$ has enough injectives, namely the injective hull of $L_{\lambda}$ 
 
 - [Definition 15.1](../section-15/084-definition-15-1.md)
 - [Definition 8.3](../section-8/048-definition-8-3.md)
+- [Proposition 8.9](../section-8/053-proposition-8-9.md)
 
 ## Sources
 

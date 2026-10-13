@@ -10,7 +10,11 @@ If SETUP, and $X$, $D$ have Hausdorff spacing, then $$|D| \lesssim \log R \left(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section: Projection theory for balls in Euclidean space)](013-definition.md)
+
+## Proof depends on
+
+- [Theorem (Double Counting Real Version)](012-double-counting-real-version.md)
 
 ## Sources
 

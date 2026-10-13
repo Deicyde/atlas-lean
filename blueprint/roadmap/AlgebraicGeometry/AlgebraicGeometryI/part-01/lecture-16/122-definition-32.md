@@ -11,7 +11,7 @@ Two (Cartier) divisors are linearly equivalent if $D_1 - D_2$ is principal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 30](../lecture-14/115-definition-30.md)
 
 ## Sources
 

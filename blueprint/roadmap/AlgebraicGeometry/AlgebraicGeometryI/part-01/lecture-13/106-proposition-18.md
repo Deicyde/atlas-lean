@@ -10,7 +10,9 @@ Suppose $X \to Y$ is affine. Let $\mathcal{A} = f_*\mathcal{O}_X$, then $\mathbf
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9](../lecture-4/037-definition-9.md)
+- [Definition 23](../lecture-10/086-definition-23.md)
+- [Definition 25](../lecture-10/088-definition-25.md)
 
 ## Sources
 

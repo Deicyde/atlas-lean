@@ -12,7 +12,8 @@ Let $H$ be a pre-Hilbert space. Then for any $u, v \in H$, we have $||u+v||^2 + 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Pre-Hilbert space)](../april-6/048-pre-hilbert-space.md)
+- [Definition (Norm from inner product)](../april-6/049-norm-from-inner-product.md)
 
 ## Sources
 

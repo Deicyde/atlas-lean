@@ -11,7 +11,8 @@ If $u \in \mathcal{S}'(\mathbb{R}^{n})$ we define the wavefront set of $u$ to be
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.5](../section-9/066-definition-9-5.md)
+- [Definition 12.2](094-definition-12-2.md)
 
 ## Sources
 

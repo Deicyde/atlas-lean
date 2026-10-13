@@ -14,6 +14,10 @@ Let $G$ be a bipartite graph with vertex partition $(A, B)$. Then $A$ admits a m
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 4 (Konig)](024-konig.md)
+
 ## Sources
 
 - [MIT 18.433 Combinatorial Optimization (Fall 2003), Matching Algorithms, Sept 4-9-11 (Bipartite graphs)](../../../../sources/v1/CombinatorialOptimization.md)

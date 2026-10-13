@@ -10,7 +10,12 @@ The following identities hold: $(\operatorname{Id} \otimes \Delta)(\Delta(h)) = 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.34.1](098-definition-1-34-1.md)
+
+## Proof depends on
+
+- [Definition 1.1.1](../../part-01/section-1-1/001-definition-1-1-1.md)
+- [Proposition 1.2.1](../../part-01/section-1-2/004-proposition-1-2-1.md)
 
 ## Sources
 

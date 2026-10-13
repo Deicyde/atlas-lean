@@ -11,6 +11,8 @@ Let $\lambda, \mu \in \mathfrak{h}^{*}$ and $\mu \preceq \lambda$. Then $\dim \o
 ## Depends on
 
 - [Definition 8.3](../section-8/048-definition-8-3.md)
+- [Definition 8.4](../section-8/049-definition-8-4.md)
+- [Proposition 8.9](../section-8/053-proposition-8-9.md)
 
 ## Proof depends on
 

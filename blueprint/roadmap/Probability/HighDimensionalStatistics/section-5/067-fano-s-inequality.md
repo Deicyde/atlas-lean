@@ -12,7 +12,7 @@ Let $P_1, \ldots, P_M$, $M \geq 2$ be probability distributions such that $P_j \
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.5](063-definition-5-5.md)
 
 ## Sources
 

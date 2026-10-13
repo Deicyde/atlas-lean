@@ -11,7 +11,7 @@ A morphism $f \colon X \rightarrow Y$ in a category $\mathcal{C}$ is a split epi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.1](../chapter-1-section-3/008-definition-3-1.md)
 
 ## Sources
 

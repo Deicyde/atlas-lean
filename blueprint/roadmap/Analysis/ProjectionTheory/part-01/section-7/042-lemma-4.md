@@ -12,7 +12,7 @@ If $f^*, g^* \colon \mathbb{Z}_q^* \to \mathbb{C}$, then $$(f^* *_M g^*)_h = f^*
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Multiplicative Convolution)](037-multiplicative-convolution.md)
 
 ## Sources
 

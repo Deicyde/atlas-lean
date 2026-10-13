@@ -10,7 +10,7 @@ The functors $\Gamma$ and $\operatorname{Loc}$ are mutually inverse equivalences
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 28.6](../section-28/166-definition-28-6.md)
 
 ## Sources
 

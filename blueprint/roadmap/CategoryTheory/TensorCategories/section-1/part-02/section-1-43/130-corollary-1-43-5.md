@@ -11,7 +11,7 @@ Let $A$ be a multifusion ring. Then the algebra $A \otimes_{\mathbb{Z}} \mathbb{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.42.2](../section-1-42/123-definition-1-42-2.md)
 
 ## Sources
 

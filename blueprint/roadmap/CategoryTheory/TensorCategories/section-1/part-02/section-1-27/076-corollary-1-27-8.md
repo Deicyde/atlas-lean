@@ -10,7 +10,12 @@ If $H$ is a finite dimensional commutative Hopf algebra over an algebraically cl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.22.9](../../part-01/section-1-22/059-definition-1-22-9.md)
+
+## Proof depends on
+
+- [Definition 1.24.2](../section-1-24/065-definition-1-24-2.md)
+- [Corollary 1.27.6](075-corollary-1-27-6.md)
 
 ## Sources
 

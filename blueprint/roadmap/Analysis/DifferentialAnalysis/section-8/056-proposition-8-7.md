@@ -14,6 +14,10 @@ If $U_a \subset \mathbb{R}^n$ are open for $a \in A$ and $K \Subset \bigcup_{a \
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 1.8](../section-1/008-lemma-1-8.md)
+
 ## Sources
 
 - [MIT 18.155 Differential Analysis (Fall 2004), Section 8](../../../../sources/v1/DifferentialAnalysis.md)

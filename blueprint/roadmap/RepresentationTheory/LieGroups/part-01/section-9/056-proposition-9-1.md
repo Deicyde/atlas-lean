@@ -10,7 +10,8 @@ The simple $(\mathfrak{g}, K)$-modules (or equivalently, Harish-Chandra modules)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.7](../section-5/026-definition-5-7.md)
+- [Definition 8.4](../section-8/049-definition-8-4.md)
 
 ## Sources
 

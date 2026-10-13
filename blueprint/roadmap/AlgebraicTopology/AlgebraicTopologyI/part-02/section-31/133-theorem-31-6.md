@@ -12,7 +12,9 @@ Assume that $B$ is semi-locally simply connected. Then the functor $\mathbf{Cov}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.1](../../part-01/chapter-1/chapter-1-section-3/008-definition-3-1.md)
+- [Definition 3.4](../../part-01/chapter-1/chapter-1-section-3/010-definition-3-4.md)
+- [Definition 31.1](129-definition-31-1.md)
 
 ## Sources
 

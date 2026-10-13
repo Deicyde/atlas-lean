@@ -9,7 +9,8 @@ Let $H$ be a Hilbert space. Then for all $f \in H'$, there exists a unique $v \i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (February 18, 2021)](../february-18/001-definition.md)
+- [Definition (April 8, 2021 section)](../april-8/039-definition.md)
 
 ## Sources
 

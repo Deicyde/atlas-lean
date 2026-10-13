@@ -13,6 +13,7 @@ The assignment $V \mapsto V^{K\text{-fin}}$ defines an exact, faithful functor $
 - [Definition 1.2](../section-1/001-definition-1-2.md)
 - [Definition 5.1](../section-5/024-definition-5-1.md)
 - [Definition 1.8](../section-1/004-definition-1-8.md)
+- [Definition 5.7](../section-5/026-definition-5-7.md)
 
 ## Proof depends on
 

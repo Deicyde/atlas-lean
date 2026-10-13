@@ -12,6 +12,10 @@ Let $S$ be a body in $\mathbb{R}^3$. Then $\operatorname{vol}(S)^2 \leq \operato
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 10.4.3](192-theorem-10-4-3.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Section 10.4](../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

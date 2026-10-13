@@ -11,7 +11,7 @@ A component of a topological space is a maximal irreducible closed subset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](025-definition-7.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ If $f: E \to \mathbb{C}$ is measurable, then $|f(x)| \leq ||f||_{L^{\infty}(E)}$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition ($L^p$ norm and $L^\infty$ norm)](043-l-p-norm-and-l-infty-norm.md)
 
 ## Sources
 

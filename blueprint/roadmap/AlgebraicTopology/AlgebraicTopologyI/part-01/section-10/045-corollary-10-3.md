@@ -10,11 +10,15 @@ Assume that there is a subspace $B$ of $X$ such that (1) $\bar{A} \subseteq \ope
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.6](../section-8/038-definition-8-6.md)
 
 ## Proof depends on
 
 - [Definition 5.8](../chapter-1/chapter-1-section-5/024-definition-5-8.md)
+- [Theorem 9.1 (The homology long exact sequence)](../section-9/039-the-homology-long-exact-sequence.md)
+- [Proposition 9.4 (Five lemma)](../section-9/040-five-lemma.md)
+- [Definition 10.1](043-definition-10-1.md)
+- [Theorem 10.2](044-theorem-10-2.md)
 
 ## Sources
 

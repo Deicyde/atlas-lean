@@ -12,7 +12,7 @@ Let $H$ be a Hilbert space, and let $W \subset H$ be a closed subspace. Then the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (April 8, 2021 section)](../april-8/039-definition.md)
 
 ## Sources
 

@@ -10,7 +10,12 @@ Suppose $R$ is a PID and $H_{*}(X; R)$ is free over $R$. Then $H_{*}(X; R)$ has 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
+
+## Proof depends on
+
+- [Theorem 25.11 (Acyclic Models)](../section-25/103-acyclic-models.md)
+- [Theorem 25.15 (Künneth theorem)](../section-25/107-k-nneth-theorem.md)
 
 ## Sources
 

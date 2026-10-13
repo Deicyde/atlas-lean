@@ -11,7 +11,8 @@ Let $g, h$ be grouplike elements of a coalgebra $H$. A skew-primitive element of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.20.1](../../part-01/section-1-20/049-definition-1-20-1.md)
+- [Definition 1.22.13](../../part-01/section-1-22/061-definition-1-22-13.md)
 
 ## Sources
 

@@ -12,6 +12,10 @@ Assume $X_i$ are i.i.d. lattice random variables with $E[X_i] = 0$ and $E[X_i^2]
 
 - [Definition (lattice random variable)](046-lattice-random-variable.md)
 
+## Proof depends on
+
+- [Definition (characteristic function)](../lecture-8/019-characteristic-function.md)
+
 ## Sources
 
 - [MIT 18.175 Theory of Probability (Spring 2014), Lecture 16, section on local limit theorems for walks on Z (also recalled in Lecture 17)](../../../../../sources/v1/TheoryOfProbability.md)

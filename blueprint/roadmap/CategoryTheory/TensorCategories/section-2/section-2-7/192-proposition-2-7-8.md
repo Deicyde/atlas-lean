@@ -13,6 +13,8 @@ Let $\mathcal{M}_1$ and $\mathcal{M}_2$ be two module categories over $\mathcal{
 ## Depends on
 
 - [Definition 2.6.1](../section-2-6/185-definition-2-6-1.md)
+- [Definition 2.1.1](../section-2-1/174-definition-2-1-1.md)
+- [Definition 2.2.1](../section-2-2/178-definition-2-2-1.md)
 
 ## Sources
 

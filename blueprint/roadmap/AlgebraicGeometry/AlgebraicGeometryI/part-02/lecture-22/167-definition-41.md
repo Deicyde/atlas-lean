@@ -11,7 +11,12 @@ Let $\mathcal{F}$ be a coherent sheaf. The rank of $\mathcal{F}$ is defined as t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](../../part-01/lecture-2/010-definition-3.md)
+- [Definition 7](../../part-01/lecture-3/025-definition-7.md)
+- [Definition 14](../../part-01/lecture-6/056-definition-14.md)
+- [Definition 26](../../part-01/lecture-10/089-definition-26.md)
+- [Definition 33](../../part-01/lecture-16/125-definition-33.md)
+- [Definition 39](165-definition-39.md)
 
 ## Sources
 

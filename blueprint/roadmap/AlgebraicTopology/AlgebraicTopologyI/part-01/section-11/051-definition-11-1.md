@@ -11,7 +11,11 @@ A homology theory (on $\mathbf{Top}$) is: a sequence of functors $h_{n} \colon \
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.4](../chapter-1/chapter-1-section-3/010-definition-3-4.md)
+- [Definition 3.5](../chapter-1/chapter-1-section-3/011-definition-3-5.md)
+- [Definition 5.1](../chapter-1/chapter-1-section-5/017-definition-5-1.md)
+- [Definition 8.1](../section-8/034-definition-8-1.md)
+- [Definition 10.1](../section-10/043-definition-10-1.md)
 
 ## Sources
 

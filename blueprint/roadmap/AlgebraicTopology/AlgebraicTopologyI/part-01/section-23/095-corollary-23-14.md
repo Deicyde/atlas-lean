@@ -11,6 +11,12 @@ $H_{*}(X; \mathbb{Q}) = H_{*}(X) \otimes \mathbb{Q}$.
 ## Depends on
 
 - [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
+- [Definition 20.3](../section-20/080-definition-20-3.md)
+
+## Proof depends on
+
+- [Proposition 23.10](091-proposition-23-10.md)
+- [Corollary 23.13](094-corollary-23-13.md)
 
 ## Sources
 

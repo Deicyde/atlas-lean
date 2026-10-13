@@ -10,7 +10,9 @@ There is a canonical natural isomorphism $H(S_{*}(X) \otimes S_{*}(Y)) \cong H_{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
+- [Definition 3.5](../chapter-1/chapter-1-section-3/011-definition-3-5.md)
+- [Definition 25.1](097-definition-25-1.md)
 
 ## Proof depends on
 

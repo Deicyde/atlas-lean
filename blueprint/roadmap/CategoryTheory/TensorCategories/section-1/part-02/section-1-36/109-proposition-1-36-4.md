@@ -10,7 +10,13 @@ Let $H$ be a finite dimensional bialgebra. Then $J \mapsto (\operatorname{Id}, J
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.19.1](../../part-01/section-1-19/048-definition-1-19-1.md)
+- [Definition 1.21.2](../../part-01/section-1-21/052-definition-1-21-2.md)
+- [Definition 1.36.1](108-definition-1-36-1.md)
+
+## Proof depends on
+
+- [Proposition 1.34.7](../section-1-34/103-proposition-1-34-7.md)
 
 ## Sources
 

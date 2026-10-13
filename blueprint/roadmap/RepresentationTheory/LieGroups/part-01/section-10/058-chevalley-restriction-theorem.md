@@ -16,6 +16,7 @@ This node has no prerequisites.
 
 - [Definition 8.3](../section-8/048-definition-8-3.md)
 - [Proposition 8.5](../section-8/050-proposition-8-5.md)
+- [Proposition 8.9](../section-8/053-proposition-8-9.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ Suppose $r(n)$ is a coarse threshold of some graph property. Then there is a par
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3.14 (Sharp thresholds)](052-sharp-thresholds.md)
+
+## Proof depends on
+
+- [Theorem 4.2.10 (Threshold for containing a fixed graph: Bollobás 1981)](../section-4-2/047-threshold-for-containing-a-fixed-graph-b.md)
 
 ## Sources
 

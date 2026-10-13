@@ -10,7 +10,7 @@ If $k = \mathbb{C}$, then $X$ is separated if and only if $X_{\mathrm{cl}}$ (whi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 17](../lecture-7/065-definition-17.md)
 
 ## Sources
 

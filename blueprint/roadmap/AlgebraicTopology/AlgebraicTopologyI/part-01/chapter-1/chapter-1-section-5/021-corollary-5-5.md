@@ -11,7 +11,12 @@ Homotopy equivalences induce isomorphisms in homology.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.7](../chapter-1-section-1/007-definition-1-7.md)
+- [Definition 5.4](020-definition-5-4.md)
+
+## Proof depends on
+
+- [Theorem 5.2 (Homotopy invariance of homology)](018-homotopy-invariance-of-homology.md)
 
 ## Sources
 

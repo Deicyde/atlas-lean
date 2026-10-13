@@ -13,6 +13,7 @@ For $u \in \mathcal{S}'(\mathbb{R}^{n})$, $\mathrm{WF}_{\mathrm{sc}}(u) = \empty
 ## Depends on
 
 - [Definition 12.12](104-definition-12-12.md)
+- [Definition 6.6](../section-6/043-definition-6-6.md)
 
 ## Sources
 

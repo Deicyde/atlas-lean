@@ -12,7 +12,11 @@ Let $X$ be a random variable with mean $\mu$ and variance $\sigma^2$. For any $\
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.1.3 (Variance)](038-variance.md)
+
+## Proof depends on
+
+- [Theorem 3.3.1 (Markov's inequality)](../chapter-3/033-markov-s-inequality.md)
 
 ## Sources
 

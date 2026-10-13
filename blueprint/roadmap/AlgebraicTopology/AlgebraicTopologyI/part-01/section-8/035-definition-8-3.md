@@ -11,7 +11,7 @@ A short exact sequence is an exact sequence of the form $0 \rightarrow A \xright
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.1](034-definition-8-1.md)
 
 ## Sources
 

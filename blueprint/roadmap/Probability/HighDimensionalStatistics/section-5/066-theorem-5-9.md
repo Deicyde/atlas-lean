@@ -15,6 +15,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Lemma 5.8 (Pinsker's inequality)](065-pinsker-s-inequality.md)
+- [Definition-Proposition 5.4](062-definition-proposition-5-4.md)
 
 ## Sources
 

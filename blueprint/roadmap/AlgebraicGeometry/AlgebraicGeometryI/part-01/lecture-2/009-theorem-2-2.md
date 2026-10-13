@@ -12,7 +12,11 @@ Given a space of functions $X$, $X$ is an affine variety if and only if $X = \op
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2](../lecture-1/005-definition-2.md)
+
+## Proof depends on
+
+- [Theorem 2.1](006-theorem-2-1.md)
 
 ## Sources
 

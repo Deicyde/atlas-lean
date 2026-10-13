@@ -12,6 +12,11 @@ Any tempered distribution can be written in the form of a finite sum $u = \sum_{
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition 9.8](../section-9/069-proposition-9-8.md)
+- [Theorem 10.1 (Sobolev embedding)](070-sobolev-embedding.md)
+
 ## Sources
 
 - [MIT 18.155 Differential Analysis (Fall 2004), Section 10](../../../../sources/v1/DifferentialAnalysis.md)

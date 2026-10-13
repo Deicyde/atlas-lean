@@ -14,6 +14,10 @@ If $u \in H^m(\mathbb{R}^n)$, $m \in \mathbb{R}$, then $D^\alpha u \in H^{m-|\al
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition 9.6](../section-9/067-proposition-9-6.md)
+
 ## Sources
 
 - [MIT 18.155 Differential Analysis (Fall 2004), Section 10](../../../../sources/v1/DifferentialAnalysis.md)

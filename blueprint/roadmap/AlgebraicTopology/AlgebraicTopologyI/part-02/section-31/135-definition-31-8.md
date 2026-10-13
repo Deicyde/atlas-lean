@@ -11,7 +11,7 @@ An $R$-orientation of an $n$-manifold $M$ is a section of $(o_{M} \otimes R)^{\t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 30.1](../section-30/122-definition-30-1.md)
 
 ## Sources
 

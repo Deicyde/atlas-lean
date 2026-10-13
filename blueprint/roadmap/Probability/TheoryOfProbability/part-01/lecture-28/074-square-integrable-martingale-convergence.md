@@ -13,6 +13,10 @@ Suppose $X_n$ is a martingale with $E[X_n^2] < \infty$ for all $n$. Then $\lim_{
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem ($L^p$ convergence theorem)](068-l-p-convergence-theorem.md)
+
 ## Sources
 
 - [MIT 18.175 Theory of Probability (Spring 2014), Lecture 28](../../../../../sources/v1/TheoryOfProbability.md)

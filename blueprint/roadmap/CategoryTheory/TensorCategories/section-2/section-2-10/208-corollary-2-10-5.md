@@ -10,7 +10,12 @@ lean: CategoryTheory.corollary_2_10_5_part1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.2.1](../section-2-2/178-definition-2-2-1.md)
+- [Definition 2.10.2](206-definition-2-10-2.md)
+
+## Proof depends on
+
+- [Lemma 2.10.4](207-lemma-2-10-4.md)
 
 ## Sources
 

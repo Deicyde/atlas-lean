@@ -11,7 +11,8 @@ Let $A$ be an algebra in $\mathcal{C}$ and let $(M, p_M)$ be a right $A$-module,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.9.1](197-definition-2-9-1.md)
+- [Definition 2.9.5](198-definition-2-9-5.md)
 
 ## Sources
 

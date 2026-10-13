@@ -12,7 +12,12 @@ We have $\operatorname{Null}(A) = \{0\}$, and the orthonormal eigenvectors for $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (May 4, 2021)](../may-4/064-definition.md)
+
+## Proof depends on
+
+- [Proposition (April 6, 2021 section)](../../part-01/april-6/038-proposition.md)
+- [Theorem (April 27, 2021)](../../part-01/april-27/059-theorem.md)
 
 ## Sources
 

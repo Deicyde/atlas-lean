@@ -11,7 +11,8 @@ Let $\mathcal{C}$ be a rigid monoidal category. A pivotal structure on $\mathcal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.5.1](../../part-01/section-1-5/013-definition-1-5-1.md)
+- [Definition 1.10.11](../../part-01/section-1-10/024-definition-1-10-11.md)
 
 ## Sources
 

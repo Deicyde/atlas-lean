@@ -17,6 +17,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Lemma 4](../main-text-after-lemma-3/004-lemma-4.md)
+- [Lemma 5](../main-text-after-lemma-4/005-lemma-5.md)
 
 ## Sources
 

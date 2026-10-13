@@ -10,7 +10,8 @@ The relative singular homology of the pair $(X, A)$ is the homology of the relat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
+- [Definition 8.5](037-definition-8-5.md)
 
 ## Proof depends on
 

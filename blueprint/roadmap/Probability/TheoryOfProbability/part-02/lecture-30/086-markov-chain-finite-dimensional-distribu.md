@@ -12,7 +12,8 @@ If $X_n$ is any Markov chain with initial distribution $\mu$ and transition $p$,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Transition probability)](083-transition-probability.md)
+- [Definition (Markov chain, general)](084-markov-chain-general.md)
 
 ## Sources
 

@@ -12,11 +12,15 @@ For any $u \in \mathcal{S}'(\mathbb{R}^{n})$, $\mathrm{WF}_{\mathrm{sc}}(u) \sub
 ## Depends on
 
 - [Definition 12.12](104-definition-12-12.md)
+- [Definition 11.8](../section-11/083-definition-11-8.md)
+- [Definition 12.2](094-definition-12-2.md)
 
 ## Proof depends on
 
 - [Corollary 12.4](096-corollary-12-4.md)
 - [Lemma 12.8](100-lemma-12-8.md)
+- [Lemma 12.3](095-lemma-12-3.md)
+- [Lemma 12.13](105-lemma-12-13.md)
 
 ## Sources
 

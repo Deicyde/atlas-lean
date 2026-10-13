@@ -11,7 +11,8 @@ Let $X$ be a contractible space. The augmentation $\epsilon \colon H_{*}(X) \rig
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.7](../chapter-1-section-1/007-definition-1-7.md)
+- [Definition 5.6](022-definition-5-6.md)
 
 ## Sources
 

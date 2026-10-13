@@ -12,6 +12,10 @@ Let $X = (X_1, \ldots, X_m)$ be independent Gaussian random variables with mean 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition 1 (Chapter 1 (Brownian Motion))](032-proposition-1.md)
+
 ## Sources
 
 - [MIT 18.103 Fourier Analysis (Fall 2013), Chapter 1 (Brownian Motion)](../../../../sources/v1/FourierAnalysis.md)

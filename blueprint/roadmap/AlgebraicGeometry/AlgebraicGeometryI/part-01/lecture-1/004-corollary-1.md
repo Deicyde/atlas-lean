@@ -12,7 +12,7 @@ There is a Zariski topology on $\mathbb{A}^n$, where the closed sets are the Zar
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1](002-definition-1.md)
 
 ## Sources
 

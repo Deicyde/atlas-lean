@@ -10,7 +10,8 @@ Let $R$ be a PID and assume $C_{n}'$ and $C_{n}$ are $R$ free for all $n$. If $C
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
+- [Definition 25.1](097-definition-25-1.md)
 
 ## Sources
 

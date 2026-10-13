@@ -12,7 +12,7 @@ There is a meaningful bound if $K = |A|^\delta$ for some $\delta > 0$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem (Freiman-Ruzsa)](054-freiman-ruzsa.md)
 
 ## Sources
 

@@ -10,11 +10,14 @@ Suppose that $M$ is an $n$-manifold, and let $K$ be a compact subset. An $R$-ori
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.6](../../part-01/section-8/038-definition-8-6.md)
+- [Definition 30.1](../section-30/122-definition-30-1.md)
+- [Definition 34.4](../section-34/149-definition-34-4.md)
 
 ## Proof depends on
 
 - [Lemma 37.2](161-lemma-37-2.md)
+- [Theorem 37.1 (Fully relative Poincaré duality)](160-fully-relative-poincar-duality.md)
 
 ## Sources
 

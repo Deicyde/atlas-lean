@@ -10,7 +10,7 @@ A monoidal category $\mathcal{C}$ is strict if for all objects $X, Y, Z$ in $\ma
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.1](../section-1-1/001-definition-1-1-1.md)
 
 ## Sources
 

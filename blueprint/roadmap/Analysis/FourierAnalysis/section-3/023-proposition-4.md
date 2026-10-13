@@ -12,7 +12,7 @@ If $T \in \mathcal{S}'(\mathbb{R})$, and define $S$ by $S(\varphi) = T(\check{\v
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 1 (Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$)](../section-1/007-theorem-1.md)
 
 ## Sources
 

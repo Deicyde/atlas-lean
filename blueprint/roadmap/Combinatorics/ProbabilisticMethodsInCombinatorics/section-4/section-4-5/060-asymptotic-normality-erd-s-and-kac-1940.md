@@ -12,6 +12,10 @@ With $x \in [n]$ uniformly chosen at random, $\nu(x)$ is asymptotically normal, 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 4.5.2 (Central limit theorem for sums of independent Bernoullis)](059-central-limit-theorem-for-sums-of-indepe.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Section 4.5](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

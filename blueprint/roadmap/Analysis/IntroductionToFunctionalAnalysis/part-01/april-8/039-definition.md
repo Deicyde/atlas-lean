@@ -9,7 +9,8 @@ A Hilbert space is a pre-Hilbert space that is complete with respect to the norm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Pre-Hilbert space)](../april-6/048-pre-hilbert-space.md)
+- [Definition (Norm from inner product)](../april-6/049-norm-from-inner-product.md)
 
 ## Sources
 

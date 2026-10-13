@@ -12,6 +12,11 @@ lean: LieAlgebra.NilpotentCone.coordinateRing_isDomain
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary 17.3](098-corollary-17-3.md)
+- [Proposition 17.4](099-proposition-17-4.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 17.4](../../../../../sources/v1/LieGroups.md)

@@ -12,7 +12,7 @@ If $\mathcal{L}$ is a collection of lines in $\mathbb{F}_q^2$, and $L(x)$ is the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 2.5](../section-2/008-theorem-2-5.md)
 
 ## Sources
 

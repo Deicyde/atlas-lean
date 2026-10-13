@@ -11,7 +11,7 @@ An associative unital $k$-algebra $H$ equipped with unital algebra homomorphisms
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proposition 1.34.4](100-proposition-1-34-4.md)
 
 ## Sources
 

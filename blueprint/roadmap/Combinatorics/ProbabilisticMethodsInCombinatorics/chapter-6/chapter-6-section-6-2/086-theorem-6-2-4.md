@@ -12,6 +12,10 @@ Let $H$ be a (non-uniform) hypergraph where every edge has size $\geq 3$. Suppos
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary 6.1.10](../chapter-6-section-6-1/083-corollary-6-1-10.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 6, Section 6.2](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

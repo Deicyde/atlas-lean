@@ -11,7 +11,7 @@ The filtration of $C$ by $C_i$ is called the coradical filtration of $C$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.12.1](../../part-01/section-1-12/027-definition-1-12-1.md)
 
 ## Sources
 

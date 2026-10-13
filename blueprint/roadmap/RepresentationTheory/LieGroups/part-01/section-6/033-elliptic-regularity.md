@@ -9,7 +9,7 @@ Suppose $D$ is an elliptic operator with real analytic coefficients on an open s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.4](032-definition-6-4.md)
 
 ## Sources
 

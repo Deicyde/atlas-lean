@@ -12,7 +12,7 @@ A closed subset $Z \subset \operatorname{Spec} A$ is irreducible if and only if 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../lecture-3/025-definition-7.md)
 
 ## Sources
 

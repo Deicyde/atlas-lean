@@ -12,7 +12,8 @@ If $v \in \mathcal{C}_0^{0}(\mathbb{R}^n)$ and $\psi \in \mathcal{S}(\mathbb{R}^
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.4](../section-6/041-definition-6-4.md)
+- [Definition 6.6](../section-6/043-definition-6-6.md)
 
 ## Sources
 

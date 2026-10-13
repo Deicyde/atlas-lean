@@ -17,6 +17,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Theorem 2.6](023-theorem-2-6.md)
+- [Lemma 2.7](024-lemma-2-7.md)
 
 ## Sources
 

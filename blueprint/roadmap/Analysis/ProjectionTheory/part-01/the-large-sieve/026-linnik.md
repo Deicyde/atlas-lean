@@ -12,6 +12,10 @@ If $f \colon [N] \to \mathbb{C}$ and $M \leq N^{1/2}$, then $$\sum_{p \in P_M} \
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma (Section: The large sieve, Subsection: Proof of Linnik's Large Sieve inequality)](023-lemma.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section: The large sieve, Subsection: Proof of Linnik's Large Sieve inequality (rigorous proof)](../../../../../sources/v1/ProjectionTheory.md)

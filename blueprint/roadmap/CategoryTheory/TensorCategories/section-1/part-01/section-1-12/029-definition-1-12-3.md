@@ -11,7 +11,8 @@ Let $\mathcal{C}$ be a locally finite $k$-linear abelian rigid monoidal category
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10.11](../section-1-10/024-definition-1-10-11.md)
+- [Definition 1.12.1](027-definition-1-12-1.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ Let $x = (x_1, \ldots, x_n) \in [0,1]^n$ be independent random variables (not ne
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.4.7 (Lipschitz functions)](../chapter-9-section-9-4/138-lipschitz-functions.md)
+
+## Proof depends on
+
+- [Theorem 9.5.11 (Talagrand's inequality: general form)](155-talagrand-s-inequality-general-form.md)
 
 ## Sources
 

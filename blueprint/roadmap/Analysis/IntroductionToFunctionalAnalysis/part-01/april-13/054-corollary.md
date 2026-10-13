@@ -12,7 +12,7 @@ If a Hilbert space $H$ has an orthonormal basis, then $H$ is separable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (April 8, 2021 section)](../april-8/039-definition.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ If $Z$ is an abelian group and $A \subset Z$, and $|A - t_1 A| \leq K|A|$ and $|
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Ruzsa)](../../part-01/ruzsa-triangle-inequality/056-ruzsa.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section on Contagious Structure in projection theory, first lemma in the Contagious Structure Lemma subsection](../../../../../sources/v1/ProjectionTheory.md)

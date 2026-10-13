@@ -12,6 +12,13 @@ lean: corollary_16_6_i
 
 - [Definition 15.1](../section-15/084-definition-15-1.md)
 - [Definition 8.3](../section-8/048-definition-8-3.md)
+- [Definition 8.4](../section-8/049-definition-8-4.md)
+- [Proposition 8.9](../section-8/053-proposition-8-9.md)
+
+## Proof depends on
+
+- [Proposition 8.5](../section-8/050-proposition-8-5.md)
+- [Lemma 12.3](../section-12/067-lemma-12-3.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The torsion subsheaf $\mathcal{T} \subseteq \mathcal{F}$ is a subsheaf of $\math
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 22](../../part-01/lecture-10/085-definition-22.md)
 
 ## Sources
 

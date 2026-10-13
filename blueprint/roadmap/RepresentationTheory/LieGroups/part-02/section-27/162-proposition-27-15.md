@@ -14,6 +14,10 @@ Let $Y$ be an irreducible normal affine algebraic variety and $p: X \rightarrow 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition 27.14](161-proposition-27-14.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 27, Subsection 27.4](../../../../../sources/v1/LieGroups.md)

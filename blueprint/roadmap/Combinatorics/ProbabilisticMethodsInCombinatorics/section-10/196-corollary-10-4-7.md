@@ -16,6 +16,7 @@ This node has no prerequisites.
 
 - [Definition 10.1.1](../chapter-10/171-definition-10-1-1.md)
 - [Theorem 10.4.5 (Shearer's lemma)](194-shearer-s-lemma.md)
+- [Lemma 10.1.4 (Uniform bound)](../chapter-10/172-uniform-bound.md)
 
 ## Sources
 

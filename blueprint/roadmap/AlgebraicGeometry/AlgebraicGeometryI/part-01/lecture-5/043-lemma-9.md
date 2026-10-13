@@ -12,7 +12,9 @@ Let $f \colon X \to Y$ be a finite map of varieties and $Z_1 \subsetneq Z_2$ irr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](../lecture-2/010-definition-3.md)
+- [Definition 7](../lecture-3/025-definition-7.md)
+- [Definition 10](../lecture-4/038-definition-10.md)
 
 ## Sources
 

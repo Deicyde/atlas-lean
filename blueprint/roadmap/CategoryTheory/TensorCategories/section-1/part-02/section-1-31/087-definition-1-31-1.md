@@ -11,7 +11,7 @@ A tensor category $C$ is said to have the Chevalley property if the category $C_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.12.3](../../part-01/section-1-12/029-definition-1-12-3.md)
 
 ## Sources
 

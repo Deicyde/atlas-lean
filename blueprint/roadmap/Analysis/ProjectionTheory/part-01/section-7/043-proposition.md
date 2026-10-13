@@ -12,11 +12,14 @@ $$\lVert (\pi_q(f *_M g))^*_h \rVert_{L^\infty} \leq \lVert (\pi_q f)_h \rVert_{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Multiplicative Convolution)](037-multiplicative-convolution.md)
 
 ## Proof depends on
 
 - [Lemma 4](042-lemma-4.md)
+- [Lemma 1](039-lemma-1.md)
+- [Lemma 2](040-lemma-2.md)
+- [Lemma 3](041-lemma-3.md)
 
 ## Sources
 

@@ -12,6 +12,10 @@ Every $k$-fold nondecomposable covering of $\mathbb{R}^3$ by open unit balls mus
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 6.2.6](087-theorem-6-2-6.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 6, Section 6.2](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

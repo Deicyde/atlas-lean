@@ -10,7 +10,7 @@ If $e$ is a nonzero idempotent in a finite dimensional $*$-algebra $B$ then $\ta
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.43.1](126-definition-1-43-1.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ Zariski closed subsets in $k^n$ are in bijection with radical ideals in $R = k[x
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1](002-definition-1.md)
+
+## Proof depends on
+
+- [Theorem 1.1 (Essential Nullstellensatz)](001-essential-nullstellensatz.md)
 
 ## Sources
 

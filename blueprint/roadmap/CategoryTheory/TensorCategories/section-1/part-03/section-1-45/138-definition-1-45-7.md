@@ -10,7 +10,7 @@ The element $R$ will be called a regular element of $A$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proposition 1.45.5](137-proposition-1-45-5.md)
 
 ## Sources
 

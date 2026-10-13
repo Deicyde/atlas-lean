@@ -11,7 +11,7 @@ Let $X$, $Y$ be two curves in $\mathbb{A}^2$ with no common component and $(a,b)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8](../lecture-3/027-definition-8.md)
 
 ## Sources
 

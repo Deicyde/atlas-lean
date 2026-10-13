@@ -12,7 +12,7 @@ For any monoidal functor $(F, J) \colon \mathcal{C} \to \mathcal{C}'$, the diagr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.4.1](010-definition-1-4-1.md)
 
 ## Sources
 

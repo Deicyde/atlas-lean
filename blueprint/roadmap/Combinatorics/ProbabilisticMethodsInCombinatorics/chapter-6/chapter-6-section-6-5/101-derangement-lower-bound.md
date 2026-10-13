@@ -12,6 +12,12 @@ The probability that a uniform random permutation of $[n]$ has no fixed points i
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 6.5.1 (Lopsided local lemma)](097-lopsided-local-lemma.md)
+- [Setup 6.5.4 (Random injection model)](099-random-injection-model.md)
+- [Theorem 6.5.5 (Nonnegative dependence for random injections)](100-nonnegative-dependence-for-random-inject.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 6, Section 6.5](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

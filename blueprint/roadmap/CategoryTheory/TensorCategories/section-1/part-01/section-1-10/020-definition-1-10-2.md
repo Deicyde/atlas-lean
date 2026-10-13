@@ -11,7 +11,7 @@ A left dual of an object $X$ in $\mathcal{C}$ is an object ${}^{*}X$ in $\mathca
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.1](../section-1-1/001-definition-1-1-1.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ Let $V$ be a normed vector space, and let $M \subset V$ be a subspace. If $u: M 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (February 18, 2021)](../february-18/001-definition.md)
+
+## Proof depends on
+
+- [Proposition (Zorn's lemma)](../february-25/012-zorn-s-lemma.md)
 
 ## Sources
 

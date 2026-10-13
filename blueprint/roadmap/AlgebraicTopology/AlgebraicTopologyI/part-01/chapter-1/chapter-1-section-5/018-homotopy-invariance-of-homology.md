@@ -12,7 +12,8 @@ If $f_{0} \simeq f_{1}$, then $H_{*}(f_{0}) = H_{*}(f_{1})$: homology cannot dis
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.7](../chapter-1-section-1/007-definition-1-7.md)
+- [Definition 5.1](017-definition-5-1.md)
 
 ## Sources
 

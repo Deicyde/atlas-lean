@@ -11,7 +11,8 @@ Let $x \in X$. $X$ is said to be smooth at $x$ if $\dim(T_x^*X) = \dim_x(X)$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 11](../lecture-4/042-definition-11.md)
+- [Definition 35](137-definition-35.md)
 
 ## Sources
 

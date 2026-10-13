@@ -10,7 +10,8 @@ If $A = k[X]$ where $X$ is affine of dimension $d$, then $D_V(n) = \Theta(n^d)$;
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2](../lecture-1/005-definition-2.md)
+- [Definition 11](../lecture-4/042-definition-11.md)
 
 ## Sources
 

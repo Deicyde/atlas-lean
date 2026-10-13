@@ -11,11 +11,14 @@ lean: free_nminus_has_standard_filtration
 ## Depends on
 
 - [Definition 15.1](../section-15/084-definition-15-1.md)
+- [Definition 8.4](../section-8/049-definition-8-4.md)
 
 ## Proof depends on
 
 - [Definition 8.2](../section-8/047-definition-8-2.md)
 - [Definition 8.1](../section-8/046-definition-8-1.md)
+- [Lemma 20.1](115-lemma-20-1.md)
+- [Theorem 20.3](117-theorem-20-3.md)
 
 ## Sources
 

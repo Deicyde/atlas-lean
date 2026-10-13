@@ -17,6 +17,8 @@ The boolean algebra $B_{n}$ has the Sperner property.
 ## Proof depends on
 
 - [Proposition 4.4](012-proposition-4-4.md)
+- [Lemma 4.5](013-lemma-4-5.md)
+- [Theorem 4.7](015-theorem-4-7.md)
 
 ## Sources
 

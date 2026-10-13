@@ -11,7 +11,7 @@ In any coalgebra $C$, a nonzero element $g \in C$ such that $\Delta(g) = g \otim
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.20.1](../section-1-20/049-definition-1-20-1.md)
 
 ## Sources
 

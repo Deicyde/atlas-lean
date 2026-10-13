@@ -12,7 +12,7 @@ For any bounded linear operator on a Hilbert space $\operatorname{spec}(T) \subs
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.1](../section-5/034-definition-5-1.md)
 
 ## Sources
 

@@ -10,12 +10,15 @@ Let $X_1, \ldots, X_n$ be $n$ i.i.d. sub-Gaussian random vectors such that $\mat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../chapter-1/002-definition-1-2.md)
 
 ## Proof depends on
 
 - [Definition 1.17](../section-1/017-definition-1-17.md)
 - [Lemma 1.18](../section-1/018-lemma-1-18.md)
+- [Definition 1.11](../section-1/011-definition-1-11.md)
+- [Lemma 1.12](../section-1/012-lemma-1-12.md)
+- [Theorem 1.13 (Bernstein's inequality)](../section-1/013-bernstein-s-inequality.md)
 
 ## Sources
 

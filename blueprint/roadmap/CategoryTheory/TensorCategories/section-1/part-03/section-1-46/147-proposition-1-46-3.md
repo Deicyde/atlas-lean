@@ -10,7 +10,12 @@ If $\mathcal{C}, \mathcal{D}$ are multitensor categories then the category $\mat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.12.3](../../part-01/section-1-12/029-definition-1-12-3.md)
+- [Definition 1.46.1](145-definition-1-46-1.md)
+
+## Proof depends on
+
+- [Definition 1.10.11](../../part-01/section-1-10/024-definition-1-10-11.md)
 
 ## Sources
 

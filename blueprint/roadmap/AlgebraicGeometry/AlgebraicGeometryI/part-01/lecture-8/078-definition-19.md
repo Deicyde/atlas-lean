@@ -11,7 +11,8 @@ A variety $X$ is complete if it is separated and universally closed, which means
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](../lecture-2/010-definition-3.md)
+- [Definition 17](../lecture-7/065-definition-17.md)
 
 ## Sources
 

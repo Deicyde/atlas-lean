@@ -12,6 +12,10 @@ $\mathcal{N}$ is normal (i.e., the algebra $\mathcal{O}(\mathcal{N})$ is integra
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary 27.12](159-corollary-27-12.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 27, Subsection 27.3](../../../../../sources/v1/LieGroups.md)

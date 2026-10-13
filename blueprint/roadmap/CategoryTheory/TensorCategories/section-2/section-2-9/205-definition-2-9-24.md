@@ -11,7 +11,8 @@ Let $A, B$ be two algebras in $\mathcal{C}$. An $A$-$B$-bimodule is a triple $(M
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.9.1](197-definition-2-9-1.md)
+- [Definition 2.9.5](198-definition-2-9-5.md)
 
 ## Sources
 

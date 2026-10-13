@@ -14,6 +14,10 @@ If $f_n \geq 0$ and $f_n \uparrow f$ then $\int f_n \, d\mu \uparrow \int f \, d
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fatou's lemma](010-fatou-s-lemma.md)
+
 ## Sources
 
 - [MIT 18.175 Theory of Probability (Spring 2014), Lecture 5, section 'More integral properties'](../../../../../sources/v1/TheoryOfProbability.md)

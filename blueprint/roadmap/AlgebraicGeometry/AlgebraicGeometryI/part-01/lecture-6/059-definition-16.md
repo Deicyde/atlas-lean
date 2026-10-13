@@ -11,7 +11,9 @@ Let $X$, $Y$ be irreducible varieties, and let $f \colon X \to Y$ be a dominant 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](../lecture-2/010-definition-3.md)
+- [Definition 7](../lecture-3/025-definition-7.md)
+- [Definition 15](057-definition-15.md)
 
 ## Sources
 

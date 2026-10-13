@@ -11,6 +11,7 @@ The cup product is the map obtained by taking $X = Y$ and composing with the map
 ## Depends on
 
 - [Definition 26.5](../section-26/111-definition-26-5.md)
+- [Construction 28.1](116-construction-28-1.md)
 
 ## Sources
 

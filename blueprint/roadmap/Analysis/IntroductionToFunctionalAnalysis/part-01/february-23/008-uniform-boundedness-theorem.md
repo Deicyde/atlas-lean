@@ -14,6 +14,10 @@ Let $B$ be a Banach space, and let $\{T_n\}$ be a sequence in $\mathcal{B}(B, V)
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Baire Category Theorem)](007-baire-category-theorem.md)
+
 ## Sources
 
 - [MIT 18.102 Introduction to Functional Analysis (Spring 2021), February 23, 2021 lecture](../../../../../sources/v1/IntroductionToFunctionalAnalysis.md)

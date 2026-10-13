@@ -11,7 +11,11 @@ Let $B$ be path connected and semi-locally simply connected. Then forming the fi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.1](../../part-01/chapter-1/chapter-1-section-3/008-definition-3-1.md)
+
+## Proof depends on
+
+- [Theorem 31.6](133-theorem-31-6.md)
 
 ## Sources
 

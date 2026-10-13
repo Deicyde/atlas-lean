@@ -15,6 +15,9 @@ Let $V$ be a continuous representation of a compact group $K$. Then $V^{\text{fi
 ## Proof depends on
 
 - [Definition 2.1](../section-2/005-definition-2-1.md)
+- [Theorem 2.4 (Peter-Weyl)](../section-2/007-peter-weyl.md)
+- [Corollary 3.8](../section-3/013-corollary-3-8.md)
+- [Lemma 4.5](016-lemma-4-5.md)
 
 ## Sources
 

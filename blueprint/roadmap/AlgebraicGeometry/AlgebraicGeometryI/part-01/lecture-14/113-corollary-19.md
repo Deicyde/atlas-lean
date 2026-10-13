@@ -11,7 +11,7 @@ Isomorphism classes of invertible sheaves on $X$ is an abelian group under tenso
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 26](../lecture-10/089-definition-26.md)
 
 ## Sources
 

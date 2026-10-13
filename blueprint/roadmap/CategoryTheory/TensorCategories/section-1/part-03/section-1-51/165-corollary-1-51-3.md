@@ -10,7 +10,12 @@ One has: $P_{i^{**}} = L_\rho^* \otimes P_{{}^{**}i} \otimes L_\rho$; $L_{i^{**}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10.1](../../part-01/section-1-10/019-definition-1-10-1.md)
+- [Definition 1.10.2](../../part-01/section-1-10/020-definition-1-10-2.md)
+
+## Proof depends on
+
+- [Lemma 1.51.2](164-lemma-1-51-2.md)
 
 ## Sources
 

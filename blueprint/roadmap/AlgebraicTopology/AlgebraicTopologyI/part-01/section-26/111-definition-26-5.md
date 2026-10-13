@@ -11,7 +11,7 @@ The $n$th singular cohomology group of $X$ with coefficients in an abelian group
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 26.3](110-definition-26-3.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ Let $A$ be as above and $*: I \rightarrow I$ be a bijection which extends to an 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.45.3](135-definition-1-45-3.md)
+
+## Proof depends on
+
+- [Proposition 1.45.5](137-proposition-1-45-5.md)
 
 ## Sources
 

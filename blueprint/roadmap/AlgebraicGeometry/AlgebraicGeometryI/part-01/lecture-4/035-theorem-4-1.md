@@ -10,7 +10,8 @@ The Grassmannian $\operatorname{Gr}(k,n)$ defines a projective algebraic variety
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4 (Projective Space)](../lecture-2/016-projective-space.md)
+- [Definition 5](../lecture-3/018-definition-5.md)
 
 ## Sources
 

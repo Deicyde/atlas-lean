@@ -14,6 +14,10 @@ Let $\mathsf{P}$ be a polytope with $N$ vertices $v^{(1)}, \ldots, v^{(N)} \in \
 
 - [Definition 1.2](../chapter-1/002-definition-1-2.md)
 
+## Proof depends on
+
+- [Lemma 1.15](015-lemma-1-15.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Section 1.4](../../../../sources/v1/HighDimensionalStatistics.md)

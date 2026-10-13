@@ -11,7 +11,7 @@ The space $\mathcal{C}_0^{k}(\mathbb{R}^{n}) \subset \mathcal{C}_0^{1}(\mathbb{R
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.2](039-definition-6-2.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ The homomorphism $\phi: U(\mathfrak{g}) \rightarrow \prod_{\lambda \in P_{+}} \o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proposition 8.9](../section-8/053-proposition-8-9.md)
+
+## Proof depends on
+
+- [Theorem 2.4 (Peter-Weyl)](../section-2/007-peter-weyl.md)
 
 ## Sources
 

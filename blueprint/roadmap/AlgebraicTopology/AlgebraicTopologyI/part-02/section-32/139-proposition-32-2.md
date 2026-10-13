@@ -11,7 +11,11 @@ Let $A$ and $B$ be closed subspaces of $M$, and suppose the result holds for $A$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 32.1](138-theorem-32-1.md)
+
+## Proof depends on
+
+- [Proposition 9.4 (Five lemma)](../../part-01/section-9/040-five-lemma.md)
 
 ## Sources
 

@@ -10,7 +10,7 @@ Let $X$ be an affine variety, $x \in X$. We write $\operatorname{Bl}_x(X) = \wid
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2](../lecture-1/005-definition-2.md)
 
 ## Sources
 

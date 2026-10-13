@@ -13,6 +13,9 @@ Let $\mathcal{M}$ be a set of models in a category $\mathcal{C}$. Let $\theta \c
 ## Depends on
 
 - [Definition 25.4](100-definition-25-4.md)
+- [Definition 3.4](../chapter-1/chapter-1-section-3/010-definition-3-4.md)
+- [Definition 3.5](../chapter-1/chapter-1-section-3/011-definition-3-5.md)
+- [Definition 5.9](../chapter-1/chapter-1-section-5/025-definition-5-9.md)
 
 ## Proof depends on
 

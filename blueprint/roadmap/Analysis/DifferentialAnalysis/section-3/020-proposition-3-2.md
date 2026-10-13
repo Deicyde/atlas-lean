@@ -12,7 +12,12 @@ Any continuous map $f \colon X \to Y$ between metric spaces is measurable with r
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.1](../section-2/009-definition-2-1.md)
+
+## Proof depends on
+
+- [Proposition 1.1](../section-1/001-proposition-1-1.md)
+- [Lemma 3.1](019-lemma-3-1.md)
 
 ## Sources
 

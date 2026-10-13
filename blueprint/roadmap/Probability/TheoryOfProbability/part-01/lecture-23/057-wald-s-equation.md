@@ -12,7 +12,7 @@ Let $X_i$ be i.i.d. with $E|X_i| < \infty$. If $N$ is a stopping time with $E[N]
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Stopping time)](051-stopping-time.md)
 
 ## Sources
 

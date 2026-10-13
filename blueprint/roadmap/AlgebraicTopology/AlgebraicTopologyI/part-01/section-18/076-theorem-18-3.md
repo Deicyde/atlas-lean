@@ -10,7 +10,9 @@ Let $X$ be a finite CW complex. Then $\chi(X) = \sum_{k} (-1)^{k} \operatorname{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.5](../chapter-2/063-definition-14-5.md)
+- [Definition 14.7](../chapter-2/064-definition-14-7.md)
+- [Theorem 18.1](074-theorem-18-1.md)
 
 ## Proof depends on
 

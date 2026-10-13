@@ -14,6 +14,10 @@ Let $X_n$ be a martingale with $E[X_n^2] < \infty$ for all $n$. If $m \leq n$ an
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition (Conditional expectation)](../lecture-25/053-conditional-expectation.md)
+
 ## Sources
 
 - [MIT 18.175 Theory of Probability (Spring 2014), Lecture 28](../../../../../sources/v1/TheoryOfProbability.md)

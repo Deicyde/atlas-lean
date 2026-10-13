@@ -10,7 +10,12 @@ Let $X$ be a smooth variety and $K$ a connected algebraic group acting on $X$ wi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 30.9](../section-30/179-definition-30-9.md)
+
+## Proof depends on
+
+- [Proposition 30.2](../section-30/175-proposition-30-2.md)
+- [Theorem 30.4 (Kashiwara)](../section-30/176-kashiwara.md)
 
 ## Sources
 

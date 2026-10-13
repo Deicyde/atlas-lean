@@ -14,6 +14,10 @@ If $X_k$ are independent Gaussians with mean $0$ and variance $\sigma_k^2$ with 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 1 (Uniqueness)](../section-1/018-uniqueness.md)
+
 ## Sources
 
 - [MIT 18.103 Fourier Analysis (Fall 2013), Chapter 1 (Brownian Motion)](../../../../sources/v1/FourierAnalysis.md)

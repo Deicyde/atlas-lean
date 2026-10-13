@@ -11,6 +11,7 @@ Let $\mu_n$ be the law of the empirical mean $A_n = \frac{1}{n} \sum_{j=1}^n X_j
 ## Depends on
 
 - [Definition (rate function and large deviation principle)](039-rate-function-and-large-deviation-princi.md)
+- [Definition (moment generating function)](../lecture-8/016-moment-generating-function.md)
 
 ## Proof depends on
 

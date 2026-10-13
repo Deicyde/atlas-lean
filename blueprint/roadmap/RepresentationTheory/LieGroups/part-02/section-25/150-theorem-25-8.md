@@ -15,6 +15,9 @@ lean: bernstein_gelfand_25_8_i
 ## Proof depends on
 
 - [Lemma 25.5](147-lemma-25-5.md)
+- [Proposition 19.7](../../part-01/section-19/114-proposition-19-7.md)
+- [Theorem 22.4](../section-22/131-theorem-22-4.md)
+- [Theorem 23.6](../section-23/139-theorem-23-6.md)
 
 ## Sources
 

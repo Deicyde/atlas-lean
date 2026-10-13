@@ -16,6 +16,8 @@ This node has no prerequisites.
 
 - [Theorem 14.1 (Harish-Chandra)](../section-14/080-harish-chandra.md)
 - [Definition 8.1](../section-8/046-definition-8-1.md)
+- [Corollary 14.5](../section-14/083-corollary-14-5.md)
+- [Corollary 18.9](107-corollary-18-9.md)
 
 ## Sources
 

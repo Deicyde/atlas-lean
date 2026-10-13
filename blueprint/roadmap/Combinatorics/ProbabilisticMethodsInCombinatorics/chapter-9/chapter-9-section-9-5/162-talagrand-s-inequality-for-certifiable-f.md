@@ -10,7 +10,7 @@ Let $\Omega = \Omega_1 \times \cdots \times \Omega_n$ be equipped with a product
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.4.7 (Lipschitz functions)](../chapter-9-section-9-4/138-lipschitz-functions.md)
 
 ## Proof depends on
 

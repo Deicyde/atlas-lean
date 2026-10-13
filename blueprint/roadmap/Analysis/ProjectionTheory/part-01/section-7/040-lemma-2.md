@@ -12,7 +12,7 @@ If $f, g \colon \mathbb{N} \to \mathbb{C}$, then $$\lVert f *_M g \rVert_{L^\inf
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Multiplicative Convolution)](037-multiplicative-convolution.md)
 
 ## Sources
 

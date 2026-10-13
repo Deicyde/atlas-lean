@@ -11,7 +11,8 @@ A sequence $X_n$ is adapted to $\mathcal{F}_n$ if $X_n \in \mathcal{F}_n$ for al
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Conditional expectation)](../../part-01/lecture-25/053-conditional-expectation.md)
+- [Definition (Filtration)](../../part-01/lecture-25/063-filtration.md)
 
 ## Sources
 

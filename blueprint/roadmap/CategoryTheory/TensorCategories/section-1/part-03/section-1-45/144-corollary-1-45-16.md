@@ -10,7 +10,12 @@ Let $A$ be a fusion ring, and $X \in A$ a basis element. Then if $\mathrm{FPdim}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.42.2](../../part-02/section-1-42/123-definition-1-42-2.md)
+- [Definition 1.45.3](135-definition-1-45-3.md)
+
+## Proof depends on
+
+- [Proposition 1.45.15](143-proposition-1-45-15.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ The definition (9.7) gives an isomorphism $\mathcal{F} \colon \mathcal{S}'(\math
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.5](066-definition-9-5.md)
+
+## Proof depends on
+
+- [Theorem 9.1](062-theorem-9-1.md)
 
 ## Sources
 

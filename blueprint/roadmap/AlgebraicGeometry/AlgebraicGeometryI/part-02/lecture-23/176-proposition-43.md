@@ -12,7 +12,7 @@ There is always a canonical map $H^i(\mathcal{F}(C)) \to \mathcal{R}^i \mathcal{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 45](../lecture-22/173-definition-45.md)
 
 ## Sources
 

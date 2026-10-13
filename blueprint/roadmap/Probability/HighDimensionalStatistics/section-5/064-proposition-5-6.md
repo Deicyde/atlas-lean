@@ -12,7 +12,7 @@ Let $\mathbb{P}$ and $\mathbb{Q}$ be two probability measures. Then 1. $\mathsf{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.5](063-definition-5-5.md)
 
 ## Sources
 

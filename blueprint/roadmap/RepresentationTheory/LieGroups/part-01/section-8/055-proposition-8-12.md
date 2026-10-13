@@ -12,6 +12,7 @@ $L_{\lambda}$ is finite-dimensional if and only if $\lambda \in P_+$.
 ## Depends on
 
 - [Definition 8.3](048-definition-8-3.md)
+- [Proposition 8.9](053-proposition-8-9.md)
 
 ## Sources
 

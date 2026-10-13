@@ -15,6 +15,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Theorem 9.4.5 (Rapid expansion from half to $1 - \varepsilon$)](136-rapid-expansion-from-half-to-1-varepsilo.md)
+- [Theorem 9.1.1 (Bounded differences inequality)](../chapter-9-section-9-1/124-bounded-differences-inequality.md)
 
 ## Sources
 

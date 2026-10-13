@@ -11,7 +11,8 @@ Take $(\Omega_0, \mathcal{F}) = (S^{\{0,1,\ldots\}}, \mathcal{S}^{\{0,1,\ldots\}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Conditional expectation)](../../part-01/lecture-25/053-conditional-expectation.md)
+- [Definition (Markov chain, general)](../lecture-30/084-markov-chain-general.md)
 
 ## Sources
 

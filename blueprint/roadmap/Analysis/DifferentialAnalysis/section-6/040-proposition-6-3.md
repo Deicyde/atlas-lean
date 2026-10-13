@@ -11,6 +11,7 @@ The function $\|u\|_{\mathcal{C}^{1}} = \|u\|_{\infty} + \sum_{i=1}^{n} \left\|\
 ## Depends on
 
 - [Definition 6.2](039-definition-6-2.md)
+- [Definition 4.10](../section-4/031-definition-4-10.md)
 
 ## Sources
 

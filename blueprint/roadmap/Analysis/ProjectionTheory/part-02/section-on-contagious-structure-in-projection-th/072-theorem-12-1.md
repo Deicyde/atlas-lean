@@ -12,6 +12,11 @@ If $A \subset \mathbb{F}_p$, $|A| = p^{s_A}$, $D \subset \mathbb{F}_p$, $|D| = p
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary (Section: Plunnecke inequality)](../../part-01/plunnecke-inequality/057-corollary.md)
+- [Lemma (Double Counting)](../../part-01/contagious-structure-lemma/063-double-counting.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section on Contagious Structure in projection theory (labeled as \label{mainthm})](../../../../../sources/v1/ProjectionTheory.md)

@@ -10,7 +10,13 @@ Let $H$ be a finite dimensional quasi-Hopf algebra, and $C = \operatorname{Rep}(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.35.2](../../part-02/section-1-35/106-definition-1-35-2.md)
+- [Definition 1.51.4](../section-1-51/166-definition-1-51-4.md)
+
+## Proof depends on
+
+- [Lemma 1.51.2](../section-1-51/164-lemma-1-51-2.md)
+- [Definition 1.52.1](168-definition-1-52-1.md)
 
 ## Sources
 

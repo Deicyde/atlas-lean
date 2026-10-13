@@ -12,7 +12,13 @@ Let $A = A^\ast$ be a self-adjoint compact operator on a separable Hilbert space
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (April 8, 2021 section)](../../part-01/april-8/039-definition.md)
+- [Definition (May 4, 2021)](../may-4/064-definition.md)
+
+## Proof depends on
+
+- [Theorem (April 27, 2021)](../../part-01/april-27/059-theorem.md)
+- [Theorem (Maximum principle)](070-maximum-principle.md)
 
 ## Sources
 

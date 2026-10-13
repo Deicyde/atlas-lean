@@ -12,6 +12,11 @@ Let $V \in C([0, 1])$ be a nonnegative real-valued continuous function, and let 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition (May 13, 2021)](../may-13/068-definition.md)
+- [Theorem (Fredholm alternative)](../may-11/069-fredholm-alternative.md)
+
 ## Sources
 
 - [MIT 18.102 Introduction to Functional Analysis (Spring 2021), Section on solving the Dirichlet problem](../../../../../sources/v1/IntroductionToFunctionalAnalysis.md)

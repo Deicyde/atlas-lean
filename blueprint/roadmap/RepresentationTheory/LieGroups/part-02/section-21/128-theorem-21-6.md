@@ -11,7 +11,9 @@ lean: kazhdan_lusztig_conjecture_multiplicity
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.4](../../part-01/section-8/049-definition-8-4.md)
+- [Proposition 8.9](../../part-01/section-8/053-proposition-8-9.md)
+- [Theorem 21.5](127-theorem-21-5.md)
 
 ## Proof depends on
 

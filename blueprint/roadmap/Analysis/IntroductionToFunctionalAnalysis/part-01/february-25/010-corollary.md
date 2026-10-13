@@ -14,6 +14,10 @@ If $B_1, B_2$ are two Banach spaces, and $T \in \mathcal{B}(B_1, B_2)$ is a bije
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Open Mapping Theorem)](009-open-mapping-theorem.md)
+
 ## Sources
 
 - [MIT 18.102 Introduction to Functional Analysis (Spring 2021), February 25, 2021 lecture](../../../../../sources/v1/IntroductionToFunctionalAnalysis.md)

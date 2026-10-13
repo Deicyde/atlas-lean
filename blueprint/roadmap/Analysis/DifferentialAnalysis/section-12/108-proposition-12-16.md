@@ -10,7 +10,9 @@ For any $u \in \mathcal{S}'(\mathbb{R}^{n})$ and $(p, q) \in \partial(\mathbb{B}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.5](../section-9/066-definition-9-5.md)
+- [Definition 12.2](094-definition-12-2.md)
+- [Definition 12.12](104-definition-12-12.md)
 
 ## Proof depends on
 

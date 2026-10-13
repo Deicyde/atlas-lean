@@ -10,7 +10,12 @@ $X$ is separated if and only if for any affine open $U, V \subseteq X$, $U \cap 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2](../lecture-1/005-definition-2.md)
+- [Definition 17](../lecture-7/065-definition-17.md)
+
+## Proof depends on
+
+- [Lemma 2](../lecture-2/011-lemma-2.md)
 
 ## Sources
 

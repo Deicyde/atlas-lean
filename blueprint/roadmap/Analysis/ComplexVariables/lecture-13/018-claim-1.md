@@ -14,6 +14,10 @@ $g$ is continuous on $\Omega \times \Omega$ and holomorphic in each variable and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 1 (Taylor's Theorem)](../lecture-10/012-taylor-s-theorem.md)
+
 ## Sources
 
 - [MIT 18.112 Functions of a Complex Variable (Fall 2008), Lecture 13: The General Cauchy Theorem](../../../../sources/v1/ComplexVariables.md)

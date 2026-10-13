@@ -11,7 +11,7 @@ A vector $v$ in $V[\lambda]$ is called a singular (or highest weight) vector of 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.1](046-definition-8-1.md)
 
 ## Sources
 

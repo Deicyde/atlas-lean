@@ -10,7 +10,11 @@ lean: theorem_13_5
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.1](../section-8/046-definition-8-1.md)
+
+## Proof depends on
+
+- [Theorem 13.1 (Kostant)](075-kostant.md)
 
 ## Sources
 

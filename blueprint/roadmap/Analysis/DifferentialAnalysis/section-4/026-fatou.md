@@ -12,7 +12,12 @@ If $f_k$ is a sequence of non-negative integrable functions then $$\int \liminf_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.1](022-definition-4-1.md)
+- [Definition 4.4](025-definition-4-4.md)
+
+## Proof depends on
+
+- [Theorem 4.3 (Monotone Convergence)](024-monotone-convergence.md)
 
 ## Sources
 

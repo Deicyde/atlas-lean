@@ -11,6 +11,7 @@ If $E \subset \mathbb{R}^2$ is a $(\delta, t, C)$-set and for all $x \in E$, $\m
 ## Depends on
 
 - [Definition (Section: Sharp Projection Theorems I: Introduction and Beck's Theorem)](../sharp-projection-theorems-i-introduction-and-bec/097-definition.md)
+- [Definition (Section: Bourgain's Projection Theorem II)](../bourgain-s-projection-theorem-ii/075-definition.md)
 
 ## Sources
 

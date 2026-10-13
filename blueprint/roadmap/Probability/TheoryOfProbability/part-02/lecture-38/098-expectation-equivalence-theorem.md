@@ -10,7 +10,7 @@ If $Z$ is bounded and measurable then for all $s \geq 0$ and $x \in \mathbb{R}^d
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Conditional expectation)](../../part-01/lecture-25/053-conditional-expectation.md)
 
 ## Sources
 

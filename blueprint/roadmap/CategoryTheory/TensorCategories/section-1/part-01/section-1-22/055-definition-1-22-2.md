@@ -10,7 +10,8 @@ An antipode on a bialgebra $H$ is a linear map $S \colon H \to H$ which satisfie
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.21.2](../section-1-21/052-definition-1-21-2.md)
+- [Proposition 1.22.1](054-proposition-1-22-1.md)
 
 ## Sources
 

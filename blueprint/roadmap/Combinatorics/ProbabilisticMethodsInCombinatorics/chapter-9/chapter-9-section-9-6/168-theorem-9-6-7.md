@@ -11,7 +11,7 @@ The Hilbert curve $H \colon [0,1] \to [0,1]^2$ is Holder continuous with exponen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.6.5 (Hölder continuity)](167-h-lder-continuity.md)
 
 ## Sources
 

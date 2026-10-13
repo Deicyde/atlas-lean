@@ -10,7 +10,8 @@ $T_{\operatorname{Gr}(k,n)} = \operatorname{Hom}(\mathcal{V}, W \otimes \mathcal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 4.1](../lecture-4/035-theorem-4-1.md)
+- [Definition 34](../lecture-18/136-definition-34.md)
 
 ## Sources
 

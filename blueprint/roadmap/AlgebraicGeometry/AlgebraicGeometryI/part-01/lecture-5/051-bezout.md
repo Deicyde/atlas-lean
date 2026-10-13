@@ -10,7 +10,9 @@ Let $X, Y \subset \mathbb{P}^2$ be curves without a common component, of degree 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4 (Projective Space)](../lecture-2/016-projective-space.md)
+- [Definition 8](../lecture-3/027-definition-8.md)
+- [Definition 13](050-definition-13.md)
 
 ## Sources
 

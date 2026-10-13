@@ -13,6 +13,7 @@ lean: cosemisimple_iff_C0_eq_C1
 
 - [Definition 1.29.3](080-definition-1-29-3.md)
 - [Definition 1.29.1](079-definition-1-29-1.md)
+- [Definition 1.20.1](../../part-01/section-1-20/049-definition-1-20-1.md)
 
 ## Sources
 

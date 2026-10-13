@@ -12,7 +12,12 @@ If $u_n \to u$ and $v_n \to v$ in a pre-Hilbert space equipped with the norm $||
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Pre-Hilbert space)](../april-6/048-pre-hilbert-space.md)
+- [Definition (Norm from inner product)](../april-6/049-norm-from-inner-product.md)
+
+## Proof depends on
+
+- [Theorem (Cauchy-Schwarz inequality)](../april-6/050-cauchy-schwarz-inequality.md)
 
 ## Sources
 

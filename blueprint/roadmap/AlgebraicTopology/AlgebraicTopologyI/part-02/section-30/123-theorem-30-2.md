@@ -11,6 +11,9 @@ Let $M$ be a compact manifold of dimension $n$. There exists a unique class $[M]
 ## Depends on
 
 - [Definition 26.5](../../part-01/section-26/111-definition-26-5.md)
+- [Definition 1.7](../../part-01/chapter-1/chapter-1-section-1/007-definition-1-7.md)
+- [Definition 28.2](../../part-01/section-28/117-definition-28-2.md)
+- [Definition 30.1](122-definition-30-1.md)
 
 ## Sources
 

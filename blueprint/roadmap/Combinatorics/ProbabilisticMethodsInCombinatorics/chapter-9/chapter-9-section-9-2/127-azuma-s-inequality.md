@@ -10,7 +10,7 @@ Let $Z_0, Z_1, \ldots, Z_n$ be a martingale satisfying $|Z_i - Z_{i-1}| \leq 1$ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.2.1](126-definition-9-2-1.md)
 
 ## Sources
 

@@ -12,6 +12,11 @@ Let $A = (a_{ij}) \in \{0,1\}^{n \times n}$, whose $i$-th row has sum $d_i$. The
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 10.1.4 (Uniform bound)](172-uniform-bound.md)
+- [Lemma 10.1.7 (Chain rule)](175-chain-rule.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 10, Section 10.2](../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

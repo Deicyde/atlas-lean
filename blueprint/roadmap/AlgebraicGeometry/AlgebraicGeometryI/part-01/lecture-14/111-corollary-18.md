@@ -10,7 +10,11 @@ If $\mathcal{F}$ is coherent, then there exists $d, k$, such that $\mathcal{O}(-
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 28](../lecture-13/104-definition-28.md)
+
+## Proof depends on
+
+- [Proposition 20](110-proposition-20.md)
 
 ## Sources
 

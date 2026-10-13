@@ -10,7 +10,12 @@ If $f \colon [N_1] \to \mathbb{C}$ and $g \colon [N_2] \to \mathbb{C}$, then $f 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Multiplicative Convolution)](../section-7/037-multiplicative-convolution.md)
+
+## Proof depends on
+
+- [Theorem (Linnik)](../the-large-sieve/026-linnik.md)
+- [Proposition (Section 7, Subsection 7.3: Multiplicative Convolution and Projections)](../section-7/043-proposition.md)
 
 ## Sources
 

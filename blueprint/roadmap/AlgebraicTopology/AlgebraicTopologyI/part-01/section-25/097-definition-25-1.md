@@ -11,7 +11,8 @@ Let $C_{*}, D_{*}$ be two chain complexes. Their tensor product is the chain com
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.6](../chapter-1/chapter-1-section-1/006-definition-1-6.md)
+- [Definition 20.3](../section-20/080-definition-20-3.md)
 
 ## Sources
 

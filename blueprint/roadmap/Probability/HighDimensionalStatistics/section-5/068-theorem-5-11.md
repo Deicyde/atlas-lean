@@ -14,6 +14,10 @@ Assume that $\Theta$ contains $M \geq 5$ hypotheses $\theta_1, \ldots, \theta_M$
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 5.10 (Fano's inequality)](067-fano-s-inequality.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Section 5.4](../../../../sources/v1/HighDimensionalStatistics.md)

@@ -12,7 +12,13 @@ If $\mu^*$ is an outer measure on $X$ then the collection of $\mu^*$-measurable 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.6](../section-1/006-definition-1-6.md)
+- [Definition 2.1](009-definition-2-1.md)
+- [Definition 2.2](010-definition-2-2.md)
+
+## Proof depends on
+
+- [Proposition 2.3](011-proposition-2-3.md)
 
 ## Sources
 

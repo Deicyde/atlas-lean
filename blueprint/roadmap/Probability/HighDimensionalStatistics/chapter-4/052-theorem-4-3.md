@@ -10,7 +10,12 @@ Consider the multivariate linear regression model (4.1) under the assumption ORT
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assumption ORT](../section-2/035-assumption-ort.md)
+- [Definition 4.1](050-definition-4-1.md)
+
+## Proof depends on
+
+- [Lemma 4.2](051-lemma-4-2.md)
 
 ## Sources
 

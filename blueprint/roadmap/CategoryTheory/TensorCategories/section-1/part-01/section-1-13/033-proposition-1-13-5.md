@@ -12,7 +12,12 @@ If $\mathcal{C}$ is a multiring category with right duals, then the right dualiz
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10.1](../section-1-10/019-definition-1-10-1.md)
+- [Definition 1.13.3](031-definition-1-13-3.md)
+
+## Proof depends on
+
+- [Proposition 1.10.9](../section-1-10/023-proposition-1-10-9.md)
 
 ## Sources
 

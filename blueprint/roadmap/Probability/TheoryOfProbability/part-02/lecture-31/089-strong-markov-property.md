@@ -11,7 +11,8 @@ One can replace $n$ with an a.s. finite stopping time $N$ and the function $Y$ c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Stopping time)](../../part-01/lecture-23/051-stopping-time.md)
+- [Definition (Conditional expectation)](../../part-01/lecture-25/053-conditional-expectation.md)
 
 ## Proof depends on
 

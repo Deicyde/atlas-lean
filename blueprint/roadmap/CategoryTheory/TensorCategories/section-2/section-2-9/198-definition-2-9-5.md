@@ -11,7 +11,7 @@ A (right) module over an algebra $(A, m, u)$ (or just an $A$-module) is a pair $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.9.1](197-definition-2-9-1.md)
 
 ## Sources
 

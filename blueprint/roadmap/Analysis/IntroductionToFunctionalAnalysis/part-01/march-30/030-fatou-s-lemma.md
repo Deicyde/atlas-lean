@@ -14,6 +14,10 @@ Let $\{f_n\}_n$ be a sequence in $L^+(E)$. Then $\int_E \liminf_{n \to \infty} f
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Monotone Convergence Theorem)](028-monotone-convergence-theorem.md)
+
 ## Sources
 
 - [MIT 18.102 Introduction to Functional Analysis (Spring 2021), March 30, 2021](../../../../../sources/v1/IntroductionToFunctionalAnalysis.md)

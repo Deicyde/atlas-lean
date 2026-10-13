@@ -10,7 +10,13 @@ Any cocommutative Hopf algebra $H$ over an algebraically closed field of charact
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.22.9](../../part-01/section-1-22/059-definition-1-22-9.md)
+
+## Proof depends on
+
+- [Definition 1.20.1](../../part-01/section-1-20/049-definition-1-20-1.md)
+- [Definition 1.24.2](../section-1-24/065-definition-1-24-2.md)
+- [Corollary 1.29.7](../section-1-29/084-corollary-1-29-7.md)
 
 ## Sources
 

@@ -10,7 +10,8 @@ $J$ is called a bialgebra twist if $H^J$ is a bialgebra, i.e., $\Phi^J = 1$. Thu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.21.2](../../part-01/section-1-21/052-definition-1-21-2.md)
+- [Definition 1.34.6](../section-1-34/102-definition-1-34-6.md)
 
 ## Sources
 

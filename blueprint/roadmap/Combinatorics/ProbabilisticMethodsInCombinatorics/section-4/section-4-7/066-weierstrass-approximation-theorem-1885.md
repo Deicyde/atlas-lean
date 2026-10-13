@@ -14,6 +14,10 @@ Let $f \colon [0,1] \to \mathbb{R}$ be a continuous function. Let $\varepsilon >
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 4.1.5 (Chebyshev's inequality)](../../chapter-4/039-chebyshev-s-inequality.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Section 4.7](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

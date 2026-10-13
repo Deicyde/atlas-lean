@@ -12,6 +12,13 @@ Let $R$ be a PID. Assume that $H_{p}(X)$ is a finitely generated free $R$-module
 
 - [Definition 5.3](../../part-01/chapter-1/chapter-1-section-5/019-definition-5-3.md)
 - [Definition 26.5](../../part-01/section-26/111-definition-26-5.md)
+- [Definition 1.7](../../part-01/chapter-1/chapter-1-section-1/007-definition-1-7.md)
+- [Definition 20.3](../../part-01/section-20/080-definition-20-3.md)
+
+## Proof depends on
+
+- [Theorem 25.15 (Künneth theorem)](../../part-01/section-25/107-k-nneth-theorem.md)
+- [Lemma 33.2](144-lemma-33-2.md)
 
 ## Sources
 

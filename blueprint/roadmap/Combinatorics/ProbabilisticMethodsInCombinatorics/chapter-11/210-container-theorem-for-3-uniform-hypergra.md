@@ -12,6 +12,10 @@ For every $c > 0$ there exists $\delta > 0$ such that the following holds. Let $
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 11.2.1 (Container theorem for independent sets in graphs)](208-container-theorem-for-independent-sets-i.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 11, Section 11.3](../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

@@ -11,7 +11,7 @@ Let $M, N$ be $R$-modules. A tensor product of $M$ and $N$ is an $R$-module $P$ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 20.1](079-definition-20-1.md)
 
 ## Sources
 

@@ -10,7 +10,7 @@ Any finite dimensional quasi-Hopf algebra $H$ is a Frobenius algebra, i.e., $H$ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.35.2](../../part-02/section-1-35/106-definition-1-35-2.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ Consider $\sigma$-finite measure spaces $(X, \mathcal{A}, \mu_1)$ and $(Y, \math
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (π-system and λ-system)](../lecture-2/002-system-and-system.md)
+
 ## Sources
 
 - [MIT 18.175 Theory of Probability (Spring 2014), Lecture 7](../../../../../sources/v1/TheoryOfProbability.md)

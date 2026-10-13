@@ -12,6 +12,16 @@ Assume that $\mathcal{A} = \{A, B\}$ is a cover of $X$. There are natural maps $
 ## Depends on
 
 - [Definition 11.1](051-definition-11-1.md)
+- [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
+- [Definition 3.5](../chapter-1/chapter-1-section-3/011-definition-3-5.md)
+- [Definition 8.1](../section-8/034-definition-8-1.md)
+- [Definition 11.2](052-definition-11-2.md)
+
+## Proof depends on
+
+- [Theorem 9.1 (The homology long exact sequence)](../section-9/039-the-homology-long-exact-sequence.md)
+- [Theorem 10.2](../section-10/044-theorem-10-2.md)
+- [Theorem 11.4 (The locality principle)](054-the-locality-principle.md)
 
 ## Sources
 

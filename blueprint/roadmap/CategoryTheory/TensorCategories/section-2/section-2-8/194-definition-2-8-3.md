@@ -11,7 +11,8 @@ A $\mathbb{Z}_{+}$-module $M$ over a $\mathbb{Z}_{+}$-ring $K$ is called irreduc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.42.1](../../section-1/part-02/section-1-42/122-definition-1-42-1.md)
+- [Definition 2.8.1](193-definition-2-8-1.md)
 
 ## Sources
 

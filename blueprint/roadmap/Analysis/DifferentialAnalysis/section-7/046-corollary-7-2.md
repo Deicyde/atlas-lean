@@ -11,7 +11,7 @@ For any $k \in \mathbb{N}$ the norms $\|\langle x\rangle^{k} \varphi\|_{\mathcal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.4](../section-6/041-definition-6-4.md)
 
 ## Sources
 

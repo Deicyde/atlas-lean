@@ -12,7 +12,11 @@ Assume that the assumptions of Theorem 3.4 hold and that the dictionary $\{\varp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 3.4](039-theorem-3-4.md)
+
+## Proof depends on
+
+- [Theorem 3.6](041-theorem-3-6.md)
 
 ## Sources
 

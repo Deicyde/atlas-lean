@@ -12,7 +12,13 @@ Let $(A, X) \rightarrow (B, Y)$ be a map of pairs, and assume that two of $A \ri
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
+- [Definition 8.6](../section-8/038-definition-8-6.md)
+
+## Proof depends on
+
+- [Theorem 9.1 (The homology long exact sequence)](039-the-homology-long-exact-sequence.md)
+- [Proposition 9.4 (Five lemma)](040-five-lemma.md)
 
 ## Sources
 

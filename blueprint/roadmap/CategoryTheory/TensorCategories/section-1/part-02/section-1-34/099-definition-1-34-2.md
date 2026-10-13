@@ -11,7 +11,7 @@ Two quasi-fiber functors $(F, J_1)$ and $(F, J_2)$ are said to be twist equivale
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.19.1](../../part-01/section-1-19/048-definition-1-19-1.md)
 
 ## Sources
 

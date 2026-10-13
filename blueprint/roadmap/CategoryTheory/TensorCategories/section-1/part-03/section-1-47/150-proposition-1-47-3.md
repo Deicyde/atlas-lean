@@ -10,7 +10,14 @@ Let $P$ be a projective object in a multitensor category $\mathcal{C}$. Then $P^
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10.1](../../part-01/section-1-10/019-definition-1-10-1.md)
+- [Definition 1.12.3](../../part-01/section-1-12/029-definition-1-12-3.md)
+
+## Proof depends on
+
+- [Proposition 1.10.9](../../part-01/section-1-10/023-proposition-1-10-9.md)
+- [Proposition 1.13.1](../../part-01/section-1-13/030-proposition-1-13-1.md)
+- [Proposition 1.13.6](../../part-01/section-1-13/034-proposition-1-13-6.md)
 
 ## Sources
 

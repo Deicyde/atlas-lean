@@ -12,7 +12,12 @@ $X_n \Longrightarrow X_\infty$ if and only if for every bounded continuous $g$ w
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (weak convergence)](031-weak-convergence.md)
+
+## Proof depends on
+
+- [Bounded convergence theorem](../lecture-5/009-bounded-convergence-theorem.md)
+- [Theorem (Skorokhod representation)](034-skorokhod-representation.md)
 
 ## Sources
 

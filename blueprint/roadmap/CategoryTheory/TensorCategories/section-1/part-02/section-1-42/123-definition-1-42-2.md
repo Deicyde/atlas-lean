@@ -10,7 +10,7 @@ lean: BasedRingDef
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.42.1](122-definition-1-42-1.md)
 
 ## Sources
 

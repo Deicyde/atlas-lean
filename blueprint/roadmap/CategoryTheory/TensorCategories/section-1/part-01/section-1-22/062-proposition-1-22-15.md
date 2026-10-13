@@ -10,7 +10,13 @@ If $H$ is a finite dimensional bialgebra with an antipode $S$, then $S$ is inver
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.21.2](../section-1-21/052-definition-1-21-2.md)
+- [Definition 1.22.2](055-definition-1-22-2.md)
+- [Definition 1.22.9](059-definition-1-22-9.md)
+
+## Proof depends on
+
+- [Proposition 1.22.5](057-proposition-1-22-5.md)
 
 ## Sources
 

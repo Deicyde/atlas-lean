@@ -12,7 +12,7 @@ A subset $K \subset \mathbb{R}$ (also $\mathbb{R}^n$ and $\mathbb{C}^n$) is comp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (April 27, 2021)](060-definition.md)
 
 ## Sources
 

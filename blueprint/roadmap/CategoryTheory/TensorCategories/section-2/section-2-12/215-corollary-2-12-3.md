@@ -10,7 +10,12 @@ The category $Fun_{\mathcal{C}}(\mathcal{M}_{1}, \mathcal{M}_{2})$ of right exac
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.2.1](../section-2-2/178-definition-2-2-1.md)
+- [Definition 2.12.1](213-definition-2-12-1.md)
+
+## Proof depends on
+
+- [Proposition 2.12.2](214-proposition-2-12-2.md)
 
 ## Sources
 

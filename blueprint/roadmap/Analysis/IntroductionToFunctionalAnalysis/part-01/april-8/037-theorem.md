@@ -11,7 +11,12 @@ If $H$ is a pre-Hilbert space, then $||\cdot||$ is a norm on $H$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Pre-Hilbert space)](../april-6/048-pre-hilbert-space.md)
+- [Definition (Norm from inner product)](../april-6/049-norm-from-inner-product.md)
+
+## Proof depends on
+
+- [Theorem (Cauchy-Schwarz inequality)](../april-6/050-cauchy-schwarz-inequality.md)
 
 ## Sources
 

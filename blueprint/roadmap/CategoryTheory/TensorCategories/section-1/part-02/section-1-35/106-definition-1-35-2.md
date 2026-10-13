@@ -12,6 +12,7 @@ An antipode on a quasi-bialgebra $H$ is a triple $(S, \alpha, \beta)$, where $S 
 ## Depends on
 
 - [Definition 1.34.5](../section-1-34/101-definition-1-34-5.md)
+- [Proposition 1.35.1](105-proposition-1-35-1.md)
 
 ## Sources
 

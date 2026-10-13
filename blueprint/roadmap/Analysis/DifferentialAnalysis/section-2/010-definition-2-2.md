@@ -11,7 +11,7 @@ A set $E \subset X$ is $\mu^*$-measurable (for an outer measure $\mu^*$ on $X$) 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.6](../section-1/006-definition-1-6.md)
 
 ## Sources
 

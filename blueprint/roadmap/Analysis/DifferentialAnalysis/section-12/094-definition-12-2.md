@@ -11,7 +11,8 @@ The cone-support and cone-singular-support of a tempered distribution are the su
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.6](../section-6/043-definition-6-6.md)
+- [Definition 11.8](../section-11/083-definition-11-8.md)
 
 ## Sources
 

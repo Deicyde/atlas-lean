@@ -10,7 +10,12 @@ $\mathbf{QCoh}(\mathbb{P}^n)$ is equivalent to $\mathbf{Mod}_{\mathrm{gr}}(A)$ m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4 (Projective Space)](../lecture-2/016-projective-space.md)
+- [Definition 25](../lecture-10/088-definition-25.md)
+
+## Proof depends on
+
+- [Theorem 11.1](../lecture-11/093-theorem-11-1.md)
 
 ## Sources
 

@@ -10,7 +10,7 @@ The functor $i^{\dagger}$ is an equivalence of categories $\mathcal{M}_{Z}(X) \r
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 28.6](../section-28/166-definition-28-6.md)
 
 ## Sources
 

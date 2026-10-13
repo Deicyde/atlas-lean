@@ -12,7 +12,11 @@ The following are equivalent for a submartingale: (1) It is uniformly integrable
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Uniform integrability)](066-uniform-integrability.md)
+
+## Proof depends on
+
+- [Theorem (Lecture 28)](061-theorem.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Consider the multivariate linear regression model (4.1). Then, the estimator by 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 4.3](052-theorem-4-3.md)
 
 ## Proof depends on
 

@@ -11,7 +11,7 @@ Let $X \colon \mathcal{I} \rightarrow \mathcal{C}$ be a directed system. A direc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.4](089-definition-23-4.md)
 
 ## Sources
 

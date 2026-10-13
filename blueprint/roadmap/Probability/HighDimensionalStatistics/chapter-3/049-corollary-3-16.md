@@ -10,7 +10,15 @@ Fix $\beta \geq (1+\sqrt{5})/4 \approx 0.81$, $Q > 0$, $\delta > 0$ and $n$ larg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../chapter-1/002-definition-1-2.md)
+- [Theorem 3.4](039-theorem-3-4.md)
+- [Theorem 3.5](040-theorem-3-5.md)
+- [Theorem 3.11](044-theorem-3-11.md)
+
+## Proof depends on
+
+- [Lemma 3.13](046-lemma-3-13.md)
+- [Lemma 3.14](047-lemma-3-14.md)
 
 ## Sources
 

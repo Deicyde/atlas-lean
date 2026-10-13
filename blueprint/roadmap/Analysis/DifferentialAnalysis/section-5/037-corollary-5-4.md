@@ -14,6 +14,11 @@ For any positive measure $\mu$, any continuous linear functional $L \colon L^{2}
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 4.11](../section-4/032-theorem-4-11.md)
+- [Proposition 5.3](036-proposition-5-3.md)
+
 ## Sources
 
 - [MIT 18.155 Differential Analysis (Fall 2004), Section 5](../../../../sources/v1/DifferentialAnalysis.md)

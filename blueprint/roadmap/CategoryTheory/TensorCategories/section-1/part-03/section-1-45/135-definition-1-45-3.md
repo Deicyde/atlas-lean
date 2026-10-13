@@ -11,7 +11,12 @@ The function $\operatorname{FPdim}$ is called the Frobenius-Perron dimension.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.42.2](../../part-02/section-1-42/123-definition-1-42-2.md)
+- [Definition 1.45.1](133-definition-1-45-1.md)
+
+## Proof depends on
+
+- [Theorem 1.44.1](../section-1-44/132-theorem-1-44-1.md)
 
 ## Sources
 

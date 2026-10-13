@@ -11,7 +11,7 @@ A left (respectively, right) $D$-module on $X$ is a left (respectively, right) $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 28.1](164-definition-28-1.md)
 
 ## Sources
 

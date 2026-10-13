@@ -11,7 +11,7 @@ A space $X$ is contractible if the map $X \rightarrow *$ is a homotopy equivalen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.4](020-definition-5-4.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ An algebra in a multitensor category $\mathcal{C}$ is a triple $(A, m, u)$ where
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.12.3](../../section-1/part-01/section-1-12/029-definition-1-12-3.md)
 
 ## Sources
 

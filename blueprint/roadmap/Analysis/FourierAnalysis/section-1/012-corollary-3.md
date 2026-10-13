@@ -12,7 +12,7 @@ If $f \in L^2(\mathbb{R})$, and $\hat{f} = 0$ almost everywhere, then $f = 0$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corollary 2 (Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$)](011-corollary-2.md)
 
 ## Sources
 

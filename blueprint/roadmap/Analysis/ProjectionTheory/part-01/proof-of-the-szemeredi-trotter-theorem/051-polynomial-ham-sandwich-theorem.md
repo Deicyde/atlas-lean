@@ -11,7 +11,7 @@ We use the same setup as the ham sandwich theorem, except that there can be up t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corollary (Ham Sandwich Theorem)](050-ham-sandwich-theorem.md)
 
 ## Proof depends on
 

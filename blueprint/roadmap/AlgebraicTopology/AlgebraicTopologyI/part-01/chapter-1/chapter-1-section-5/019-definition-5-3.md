@@ -11,7 +11,8 @@ The homotopy category (of topological spaces) $\operatorname{Ho}(\mathbf{Top})$ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.1](../chapter-1-section-3/008-definition-3-1.md)
+- [Definition 5.1](017-definition-5-1.md)
 
 ## Sources
 

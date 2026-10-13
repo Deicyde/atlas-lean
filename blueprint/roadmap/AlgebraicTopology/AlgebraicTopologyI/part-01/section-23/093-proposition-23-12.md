@@ -12,7 +12,13 @@ The direct limit functor $\varinjlim_{I} \colon \operatorname{Fun}(\mathcal{I}, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.1](../section-8/034-definition-8-1.md)
+- [Definition 23.4](089-definition-23-4.md)
+- [Definition 23.8](090-definition-23-8.md)
+
+## Proof depends on
+
+- [Lemma 23.11](092-lemma-23-11.md)
 
 ## Sources
 

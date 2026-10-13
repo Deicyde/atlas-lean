@@ -14,6 +14,10 @@ Let $\{b_{\nu}\}$ be a sequence in $\mathbb{C}$ such that $\lim_{\nu \to \infty}
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 1 (Taylor's Theorem)](../lecture-10/012-taylor-s-theorem.md)
+
 ## Sources
 
 - [MIT 18.112 Functions of a Complex Variable (Fall 2008), Lecture 17: Mittag-Leffer's Theorem](../../../../sources/v1/ComplexVariables.md)

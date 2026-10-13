@@ -10,7 +10,12 @@ $2H(X, Y, Z) \leq H(X, Y) + H(X, Z) + H(Y, Z)$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 10.1.1](../chapter-10/171-definition-10-1-1.md)
+
+## Proof depends on
+
+- [Lemma 10.1.7 (Chain rule)](../chapter-10/175-chain-rule.md)
+- [Lemma 10.1.10 (Dropping conditioning)](../chapter-10/177-dropping-conditioning.md)
 
 ## Sources
 

@@ -10,7 +10,13 @@ $\delta$ is a well-defined homomorphism, where $\delta \colon K^0(\mathbf{Coh}(X
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 26](../../part-01/lecture-10/089-definition-26.md)
+- [Definition 39](165-definition-39.md)
+- [Definition 42](168-definition-42.md)
+
+## Proof depends on
+
+- [Definition 40](166-definition-40.md)
 
 ## Sources
 

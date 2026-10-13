@@ -10,7 +10,8 @@ The functor $F \colon A\text{-bimod} \to \operatorname{End}(\mathcal{C})$ takes 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.2](../section-1-1/002-definition-1-1-2.md)
+- [Definition 1.4.1](../section-1-4/010-definition-1-4-1.md)
 
 ## Sources
 

@@ -15,6 +15,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Corollary 14.4](082-corollary-14-4.md)
+- [Lemma 7.2 (Dixmier)](../section-7/042-dixmier.md)
 
 ## Sources
 

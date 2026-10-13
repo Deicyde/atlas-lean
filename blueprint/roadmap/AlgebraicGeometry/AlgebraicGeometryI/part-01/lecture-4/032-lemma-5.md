@@ -12,7 +12,8 @@ A Noetherian topological space $X$ is a finite union of closed irreducible subse
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corollary 3](../lecture-2/014-corollary-3.md)
+- [Definition 7](../lecture-3/025-definition-7.md)
 
 ## Sources
 

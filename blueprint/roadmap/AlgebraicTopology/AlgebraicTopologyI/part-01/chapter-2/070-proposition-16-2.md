@@ -11,6 +11,12 @@ Let $k, q \geq 0$. Then $H_{q}(X_{k}) = 0$ for $k < q$ and $H_{q}(X_{k}) \xright
 ## Depends on
 
 - [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
+- [Definition 14.5](063-definition-14-5.md)
+
+## Proof depends on
+
+- [Theorem 9.1 (The homology long exact sequence)](../section-9/039-the-homology-long-exact-sequence.md)
+- [Proposition 15.3](067-proposition-15-3.md)
 
 ## Sources
 

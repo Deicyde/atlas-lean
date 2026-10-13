@@ -12,5 +12,9 @@ ATLAS v1 selected 113 statements from this source in
 matched to each in [`report.json`](https://github.com/facebookresearch/atlas-lean/blob/main/v1/Atlas/DifferentialAnalysis/report.json). Each roadmap article
 reproduces one target's statement and the source location it names.
 
-5 dependencies point to a statement placed later in this
+164 roadmap edges come from the source text rather than
+the Lean code; each is recorded with its evidence in
+[`book-dependencies/DifferentialAnalysis.json`](book-dependencies/DifferentialAnalysis.json).
+
+9 dependencies point to a statement placed later in this
 wiki and are not drawn as roadmap edges, which keeps every chapter acyclic.

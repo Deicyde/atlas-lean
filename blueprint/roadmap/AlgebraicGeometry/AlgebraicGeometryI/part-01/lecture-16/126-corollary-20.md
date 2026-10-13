@@ -10,7 +10,9 @@ For $X, Y$ curves in $\mathbb{P}^2$, the intersection multiplicity is greater th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4 (Projective Space)](../lecture-2/016-projective-space.md)
+- [Definition 13](../lecture-5/050-definition-13.md)
+- [Definition 33](125-definition-33.md)
 
 ## Sources
 

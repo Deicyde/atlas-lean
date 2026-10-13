@@ -10,7 +10,12 @@ Suppose $E(X_{n+1} \mid \mathcal{F}_n) = X_n$ with $n \leq 0$ (and $\mathcal{F}_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Conditional expectation)](../../part-01/lecture-25/053-conditional-expectation.md)
+
+## Proof depends on
+
+- [Theorem (Lecture 28)](../../part-01/lecture-28/061-theorem.md)
+- [Definition (Uniform integrability)](../../part-01/lecture-28/066-uniform-integrability.md)
 
 ## Sources
 

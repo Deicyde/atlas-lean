@@ -10,7 +10,12 @@ lean: FusionRing.Proposition_1_45_5
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 1.44.1](../section-1-44/132-theorem-1-44-1.md)
+- [Definition 1.45.3](135-definition-1-45-3.md)
+
+## Proof depends on
+
+- [Definition 1.45.1](133-definition-1-45-1.md)
 
 ## Sources
 

@@ -12,6 +12,10 @@ If $f \in L^2(\mathbb{R}^d)$, $\operatorname{supp}(f) \subset B_1$, then provide
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma (Dictionary) (Section 6: Projections and smoothing)](032-dictionary.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section 6: Projections and smoothing](../../../../../sources/v1/ProjectionTheory.md)

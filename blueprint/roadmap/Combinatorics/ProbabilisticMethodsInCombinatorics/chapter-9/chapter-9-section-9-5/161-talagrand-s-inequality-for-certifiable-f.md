@@ -10,11 +10,12 @@ Let $\Omega = \Omega_1 \times \cdots \times \Omega_n$ be equipped with a product
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.4.7 (Lipschitz functions)](../chapter-9-section-9-4/138-lipschitz-functions.md)
 
 ## Proof depends on
 
 - [Definition 9.5.20](160-definition-9-5-20.md)
+- [Theorem 9.5.11 (Talagrand's inequality: general form)](155-talagrand-s-inequality-general-form.md)
 
 ## Sources
 

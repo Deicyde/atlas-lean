@@ -12,7 +12,8 @@ If $X$, $Y$ are complete then $\deg K_X = n \cdot \deg K_Y + \sum_{x \in X} (d_x
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 19](../../part-01/lecture-8/078-definition-19.md)
+- [Definition 37](../../part-01/lecture-19/148-definition-37.md)
 
 ## Sources
 

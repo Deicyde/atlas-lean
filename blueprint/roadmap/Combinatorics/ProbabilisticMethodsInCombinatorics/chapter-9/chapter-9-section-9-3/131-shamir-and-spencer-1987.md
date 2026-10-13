@@ -12,6 +12,10 @@ For every $\lambda \geq 0$, the chromatic number of a random graph $Z = \chi(G(n
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 9.1.3 (Bounded differences inequality)](../chapter-9-section-9-1/125-bounded-differences-inequality.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 9, Section 9.3](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)
