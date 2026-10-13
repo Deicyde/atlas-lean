@@ -30,7 +30,9 @@ into a Batteries `theorem_wanted` (data/instance holes into
 `def_wanted`), replaced `EvalTools.Markers` with
 `Batteries.Util.ProofWanted`, inlined any `LeanEval` helper modules,
 and placed the declarations in the `MathlibExt.AlgebraicGeometry.BezoutWanted` namespace. Mathematical
-statements are unchanged. Source: É. Bézout, *Théorie générale des équations algébriques*, Paris, 1779. Modern projective formulation: see Eisenbud, *Commutative Algebra*, Chapter 12, or Hartshorne, *Algebraic Geometry*, Ch. I §7. Listed as §50 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf).
+statements are unchanged, except for one correction recorded as a Lean variant:
+`intersectionMultiplicity` now takes `Module.length` over the local ring
+`localRingAt q` (the ring of the quotient module), not over `K`. Source: É. Bézout, *Théorie générale des équations algébriques*, Paris, 1779. Modern projective formulation: see Eisenbud, *Commutative Algebra*, Chapter 12, or Hartshorne, *Algebraic Geometry*, Ch. I §7. Listed as §50 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf).
 -/
 module
 
@@ -62,7 +64,7 @@ The intersection multiplicity is constructed via the affine cone
 (Eisenbud, *Commutative Algebra*, Ch. 12). For `p ∈ ℙⁿ` with rep
 `v ≠ 0`, choose any index `i` with `v_i ≠ 0`, let
 `q_j = v_j / v_i` (so `q_i = 1`), localise `K[X_0, …, X_n]` at the
-maximal ideal of `q`, and take the `Module.length` over `K` of the
+maximal ideal of `q`, and take the `Module.length` over the local ring of the
 quotient by `(f_1, …, f_n, X_i − 1)`. The `X_i − 1` factor cuts the
 affine cone down to the transverse hyperplane slice.
 -/
@@ -128,7 +130,7 @@ noncomputable abbrev localRingAt {n : ℕ} (q : Fin (n + 1) → K) :=
   Localization.AtPrime (maxIdealAt q)
 
 /-- Intersection multiplicity at a projective point of homogeneous
-polynomials, via the affine-cone construction. `Module.length` over `K`
+polynomials, via the affine-cone construction. `Module.length` over the local ring
 returns `⊤` on non-proper / positive-dimensional components and a
 natural number on a zero-dimensional intersection point. -/
 noncomputable def intersectionMultiplicity {n : ℕ}

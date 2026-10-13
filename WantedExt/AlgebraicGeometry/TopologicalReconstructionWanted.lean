@@ -35,39 +35,14 @@ statements are unchanged. Source: János Kollár, Max Lieblich, Martin Olsson, a
 module
 
 
-public import Mathlib.Tactic.NormNum.RealSqrt
-public import Mathlib.Tactic.NormNum.Ordinal
-public import Mathlib.Tactic.NormNum.NatSqrt
-public import Mathlib.Tactic.NormNum.NatLog
-public import Mathlib.Tactic.NormNum.ModEq
-public import Mathlib.Tactic.NormNum.LegendreSymbol
-public import Mathlib.Tactic.NormNum.IsSquare
-public import Mathlib.Tactic.NormNum.IsCoprime
-public import Mathlib.Tactic.NormNum.Irrational
-public import Mathlib.Tactic.Echelon.Zsqrtd
-public import Mathlib.RingTheory.Radical.NatInt
-public import Mathlib.NumberTheory.SelbergSieve
-public import Mathlib.Tactic.NormNum.Parity
-public import Mathlib.NumberTheory.LucasLehmer
-public import Mathlib.NumberTheory.Height.Projectivization
-public import Mathlib.NumberTheory.Height.NumberField
-public import Mathlib.NumberTheory.Chebyshev
-public import Mathlib.Geometry.Euclidean.Altitude
-public import Mathlib.Data.NNRat.Floor
-public import Mathlib.Combinatorics.Enumerative.DyckWord
-public import Mathlib.Combinatorics.SimpleGraph.Triangle.Removal
-public import Mathlib.Tactic.NormNum.Prime
-public import Mathlib.Tactic.NormNum.NatFib
-public import Mathlib.Analysis.SpecialFunctions.Gamma.Basic
-public import Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp
-public import Mathlib.Analysis.Complex.UpperHalfPlane.Basic
-public import Mathlib.Analysis.SpecialFunctions.Bernstein
-public import Mathlib.Combinatorics.Quiver.ReflQuiver
+public import Batteries.Util.ProofWanted
+public import Mathlib.AlgebraicGeometry.Scheme
+public import Mathlib.Topology.Category.TopCat.Basic
+public import Mathlib.AlgebraicGeometry.Morphisms.Separated
+public import Mathlib.FieldTheory.Minpoly.IsIntegrallyClosed
+public import Mathlib.RingTheory.GradedAlgebra.Basic
+public import Mathlib.Topology.Category.Profinite.Nobeling.Basic
 public import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Basic
-public import Mathlib.AlgebraicGeometry.Morphisms.ClosedImmersion
-public import Mathlib.Algebra.Order.Interval.Basic
-public import Mathlib.Algebra.Order.Floor.Extended
-public import Mathlib.Data.Nat.Choose.Multinomial
 public import Mathlib.RingTheory.MvPolynomial.Homogeneous
 open AlgebraicGeometry
 
