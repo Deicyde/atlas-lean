@@ -2,10 +2,14 @@ name: Blueprint Pages
 
 on:
   push:
-    branches: [main]
+    # wiki/** branches deploy a preview from a fork; see the deploy job.
+    branches: [main, "wiki/**"]
     paths:
       - "blueprint/**"
       - "v1/**"
+      - "MathlibExt/**"
+      - "CSLibExt/**"
+      - "WantedExt/**"
       - "scripts/generate_wiki.py"
       - "mkdocs.yml"
       - "theme/**"
@@ -45,9 +49,9 @@ jobs:
         with:
           version: "0.12.1"
 
-      # The roadmap is generated from v1/Atlas/*/report.json; fail if the
-      # committed pages differ from what the generator writes.
-      - name: Check the generated v1 pages
+      # The roadmap is generated from the v2 sources and v1/Atlas/*/report.json;
+      # fail if the committed pages differ from what the generator writes.
+      - name: Check the generated pages
         run: >-
           uv run --no-project --with "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
           python scripts/generate_wiki.py --check
@@ -78,13 +82,13 @@ jobs:
           mkdocs build --strict
 
       - name: Upload Pages artifact
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/wiki/'))
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: site
 
   deploy:
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/wiki/'))
     needs: build
     runs-on: ubuntu-latest
     permissions:
