@@ -15,6 +15,7 @@ Let $f \colon \{-1,1\}^n \to \{-1,1\}$. Then for every $\varepsilon > 0$, there 
 ## Proof depends on
 
 - [Theorem 3.1](../lecture-3/017-theorem-3-1.md)
+- [Definition 0.1](../lecture-5/027-definition-0-1.md)
 
 ## Sources
 

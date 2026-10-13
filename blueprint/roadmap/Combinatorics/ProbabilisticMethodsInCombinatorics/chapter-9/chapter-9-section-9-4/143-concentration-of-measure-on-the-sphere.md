@@ -12,6 +12,10 @@ Let $S^{n-1}$ denote the unit sphere in $\mathbb{R}^n$. If $f \colon S^{n-1} \to
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary 9.4.12 (Concentration of measure on the sphere)](142-concentration-of-measure-on-the-sphere.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 9, Section 9.4](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

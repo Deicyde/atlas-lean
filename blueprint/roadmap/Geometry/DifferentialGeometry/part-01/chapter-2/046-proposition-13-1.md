@@ -12,10 +12,10 @@ The coordinate changes for the main associated data are $\tilde{\nu}(x) = \nu(\p
 ## Depends on
 
 - [Definition 12.1](040-definition-12-1.md)
-- [Definition 12.5](044-definition-12-5.md)
 - [Definition 12.3](042-definition-12-3.md)
 - [Definition 12.2](041-definition-12-2.md)
 - [Definition 12.4](043-definition-12-4.md)
+- [Definition 12.5](044-definition-12-5.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ If $V$ is a Banach space then a representation $(V, \pi)$ of $G$ is continuous i
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 1.2](001-definition-1-2.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 1, Subsection 1.2](../../../../../sources/v1/LieGroups.md)

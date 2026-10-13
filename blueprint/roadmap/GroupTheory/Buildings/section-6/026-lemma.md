@@ -14,6 +14,10 @@ For all $s, t \in S$, the operators $\lambda_s, \rho_t \in E$ commute.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary (Section 1.7)](../section-1/001-corollary.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 6.1](../../../../sources/v1/Buildings.md)

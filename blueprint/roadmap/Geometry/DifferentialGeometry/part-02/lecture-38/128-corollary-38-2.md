@@ -11,8 +11,8 @@ A path which is an absolute minimizer of the energy (over all paths $\gamma \col
 
 ## Depends on
 
-- [Definition 24.1](../../part-01/lecture-24/077-definition-24-1.md)
 - [Definition 36.2](../lecture-36/122-definition-36-2.md)
+- [Definition 24.1](../../part-01/lecture-24/077-definition-24-1.md)
 
 ## Proof depends on
 

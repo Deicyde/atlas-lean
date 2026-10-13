@@ -14,6 +14,10 @@ With $q=e^{2 \pi i \tau}$ we have
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 14.1](../../part-01/section-14/section-14-1/174-definition-14-1.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 19.2](../../../../../sources/v1/EllipticCurves.md)

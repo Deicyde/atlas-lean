@@ -14,6 +14,10 @@ Let $E/\mathbb{F}_{p}$ be an elliptic curve over a field of prime order
 
 - [Definition 6.2](../chapter-6/089-definition-6-2.md)
 
+## Proof depends on
+
+- [Theorem 13.3](161-theorem-13-3.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 13.1](../../../../../sources/v1/EllipticCurves.md)

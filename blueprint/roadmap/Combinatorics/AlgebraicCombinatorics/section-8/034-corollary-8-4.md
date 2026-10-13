@@ -13,6 +13,10 @@ We have $\alpha(D^{n} U^{n}, \varnothing)=\sum_{\lambda \vdash n}(f^{\lambda})^{
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 8.3](033-theorem-8-3.md)
+
 ## Sources
 
 - [MIT 18.318 Topics in Algebraic Combinatorics (Spring 2006), Section 8](../../../../sources/v1/AlgebraicCombinatorics.md)

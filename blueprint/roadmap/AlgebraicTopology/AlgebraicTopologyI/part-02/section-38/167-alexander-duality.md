@@ -10,6 +10,10 @@ For any compact subset $K$ of $\mathbb{R}^{n}$, the composite $\check{H}^{n-q}(K
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Theorem 37.1 (Fully relative Poincaré duality)](../section-37/160-fully-relative-poincar-duality.md)
 
 ## Sources

@@ -13,6 +13,11 @@ Let $C/k$ be a curve. The quotient group $\operatorname{Pic}_k C \coloneqq \oper
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 19.6](203-definition-19-6.md)
+- [Definition 19.11](207-definition-19-11.md)
+
 ## Sources
 
 - [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 19.2](../../../../../sources/v1/ArithmeticGeometry.md)

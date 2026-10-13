@@ -14,6 +14,11 @@ $\kappa_{\text{scalar}}$ and $\kappa_{\text{gauss}}^{n-1}$ are intrinsic. In par
 - [Definition 12.1](../chapter-2/040-definition-12-1.md)
 - [Definition 12.3](../chapter-2/042-definition-12-3.md)
 
+## Proof depends on
+
+- [Corollary 20.2](065-corollary-20-2.md)
+- [Definition 12.5](../chapter-2/044-definition-12-5.md)
+
 ## Sources
 
 - [MIT 18.950 Differential Geometry (Fall 2008), Lecture 20](../../../../../sources/v1/DifferentialGeometry.md)

@@ -11,7 +11,9 @@ $L^{2}(K)^{\text{fin}}$ is a dense subspace of $L^{2}(K)$. Hence $\{\psi_{\rho i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1/001-definition-1-2.md)
+- [Definition 1.8](../section-1/004-definition-1-8.md)
+- [Definition 1.3](../section-1/002-definition-1-3.md)
 
 ## Sources
 

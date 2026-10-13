@@ -10,8 +10,8 @@ Given any point $y \in M$ and any tangent vector $Y \in TM_{y}$, there is an int
 
 ## Depends on
 
-- [Definition 24.1](../../part-01/lecture-24/077-definition-24-1.md)
 - [Definition 36.2](122-definition-36-2.md)
+- [Definition 24.1](../../part-01/lecture-24/077-definition-24-1.md)
 
 ## Sources
 

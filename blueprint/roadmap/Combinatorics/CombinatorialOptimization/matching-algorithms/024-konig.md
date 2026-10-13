@@ -13,6 +13,10 @@ Let $G$ be a bipartite graph. The size of a maximum matching in $G$ equals the s
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 3 (forest characterization of maximum matching)](023-forest-characterization-of-maximum-match.md)
+
 ## Sources
 
 - [MIT 18.433 Combinatorial Optimization (Fall 2003), Matching Algorithms, Sept 4-9-11 (Bipartite graphs)](../../../../sources/v1/CombinatorialOptimization.md)

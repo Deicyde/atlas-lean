@@ -14,6 +14,11 @@ The function $f(x) = \sum_{k=0}^\infty \frac{\cos(160^k x)}{4^k}$ is nowhere dif
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Theorem II)](052-theorem-ii.md)
+- [Theorem (Theorem I)](051-theorem-i.md)
+
 ## Sources
 
 - [MIT 18.100A Real Analysis (Fall 2020), Section on Derivative (Weierstrass nowhere differentiable function)](../../../../../sources/v1/RealAnalysis.md)

@@ -14,6 +14,19 @@ Let $L \subseteq \mathbb{C}$ be a lattice and let $E_{L}: y^{2}=4
 
 - [Definition 14.1](../section-14/section-14-1/174-definition-14-1.md)
 
+## Proof depends on
+
+- [Definition 14.8](../section-14/section-14-1/180-definition-14-8.md)
+- [Lemma 14.31](../section-14/section-14-5/200-lemma-14-31.md)
+- [Lemma 14.33](../section-14/section-14-5/201-lemma-14-33.md)
+- [Definition 14.19](../section-14/section-14-3/190-definition-14-19.md)
+- [Definition 14.9](../section-14/section-14-1/181-definition-14-9.md)
+- [Definition 14.3](../section-14/section-14-1/175-definition-14-3.md)
+- [Definition 14.23](../section-14/section-14-4/192-definition-14-23.md)
+- [Theorem 14.25](../section-14/section-14-4/194-theorem-14-25.md)
+- [Theorem 14.29](../section-14/section-14-5/198-theorem-14-29.md)
+- [Theorem 14.26](../section-14/section-14-4/195-theorem-14-26.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 15.1](../../../../../sources/v1/EllipticCurves.md)

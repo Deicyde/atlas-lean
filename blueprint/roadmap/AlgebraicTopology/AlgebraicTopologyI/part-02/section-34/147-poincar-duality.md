@@ -12,6 +12,10 @@ Let $M$ be a topological $n$-manifold that is compact and oriented with respect 
 
 - [Definition 26.5](../../part-01/section-26/111-definition-26-5.md)
 
+## Proof depends on
+
+- [Definition 31.8](../section-31/135-definition-31-8.md)
+
 ## Sources
 
 - [MIT 18.905 Algebraic Topology I (Fall 2016), Section 34](../../../../../sources/v1/AlgebraicTopologyI.md)

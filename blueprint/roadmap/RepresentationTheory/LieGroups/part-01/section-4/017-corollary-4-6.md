@@ -13,6 +13,10 @@ $C_{c}(G)$ is sequentially dense in $\operatorname{Meas}_{c}(G)$. For Lie groups
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 4.5](016-lemma-4-5.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 4.2](../../../../../sources/v1/LieGroups.md)

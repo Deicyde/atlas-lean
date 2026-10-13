@@ -12,8 +12,8 @@ Let $(V, \pi)$ be a continuous representation of a Lie group $G$ with $\mathfrak
 
 ## Depends on
 
-- [Definition 4.11](021-definition-4-11.md)
 - [Definition 1.2](../section-1/001-definition-1-2.md)
+- [Definition 4.11](021-definition-4-11.md)
 
 ## Sources
 

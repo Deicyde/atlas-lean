@@ -16,6 +16,10 @@ Let $E$ and $E'$ be elliptic curves over $\mathbb{Q}$ with $L$-functions
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 4.18](../../../part-01/section-4/section-4-2/043-definition-4-18.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 24.10](../../../../../../sources/v1/EllipticCurves.md)

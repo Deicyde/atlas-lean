@@ -14,6 +14,10 @@ The subring of $\operatorname{End}(\operatorname{Div}(\mathcal{L}))$
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 24.11](327-theorem-24-11.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 24.2](../../../../../../sources/v1/EllipticCurves.md)

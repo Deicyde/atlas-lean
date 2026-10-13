@@ -12,6 +12,10 @@ For any $c_1, \ldots, c_{2m} \leq 1$, $\sum_{i=1}^{2m} c_i \rho(e_i) \leq I\!\le
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 7 (Lovasz-Simonovits curve)](061-lovasz-simonovits-curve.md)
 
 ## Sources

@@ -10,9 +10,12 @@ Suppose that the CW complex $X$ has only even cells - that is, $X_{2k} \hookrigh
 
 ## Depends on
 
-- [Theorem 16.3](071-theorem-16-3.md)
 - [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
 - [Definition 16.1](069-definition-16-1.md)
+
+## Proof depends on
+
+- [Theorem 16.3](071-theorem-16-3.md)
 
 ## Sources
 

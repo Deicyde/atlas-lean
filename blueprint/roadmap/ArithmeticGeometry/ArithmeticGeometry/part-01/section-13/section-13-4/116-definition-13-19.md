@@ -11,6 +11,10 @@ Let $V$ be a projective variety with homogeneous ideal $I=\left(f_{1}, \ldots, f
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 13.14](../section-13-3-1/112-definition-13-14.md)
 
 ## Sources

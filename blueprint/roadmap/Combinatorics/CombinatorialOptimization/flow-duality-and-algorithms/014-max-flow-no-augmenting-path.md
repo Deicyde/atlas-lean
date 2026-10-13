@@ -14,6 +14,10 @@ An $s$-$t$ flow $f$ in a directed network $G$ is of maximum value if and only if
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 2 (flow bounded by cut capacity)](013-flow-bounded-by-cut-capacity.md)
+
 ## Sources
 
 - [MIT 18.433 Combinatorial Optimization (Fall 2003), Flow Duality and algorithms, Sept 25-30 (Max Flow-Min Cut)](../../../../sources/v1/CombinatorialOptimization.md)

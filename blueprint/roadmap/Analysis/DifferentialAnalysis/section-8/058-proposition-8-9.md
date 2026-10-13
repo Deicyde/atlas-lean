@@ -13,6 +13,10 @@ If $u \in \mathcal{S}'(\mathbb{R}^n)$ and $\operatorname{supp}(u) = \emptyset$ t
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 8.8](057-lemma-8-8.md)
+
 ## Sources
 
 - [MIT 18.155 Differential Analysis (Fall 2004), Section 8](../../../../sources/v1/DifferentialAnalysis.md)

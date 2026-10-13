@@ -12,6 +12,9 @@ Define $H_{ij}(x) = -\langle \partial_{x_{i}} \nu, \partial_{x_{j}} f \rangle = 
 ## Depends on
 
 - [Definition 12.1](040-definition-12-1.md)
+
+## Proof depends on
+
 - [Definition 12.2](041-definition-12-2.md)
 
 ## Sources

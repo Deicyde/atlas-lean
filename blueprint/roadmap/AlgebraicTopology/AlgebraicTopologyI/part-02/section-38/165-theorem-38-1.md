@@ -12,6 +12,10 @@ Let $M$ be an $n$-manifold and $K$ a compact subset. An $R$-orientation along $K
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 37.2](../section-37/161-lemma-37-2.md)
+
 ## Sources
 
 - [MIT 18.905 Algebraic Topology I (Fall 2016), Section 38](../../../../../sources/v1/AlgebraicTopologyI.md)

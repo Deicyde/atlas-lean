@@ -14,6 +14,10 @@ $\overline{\mathrm{ISO}} \in \mathsf{IP}$.
 
 - [Definition (IP)](111-ip.md)
 
+## Proof depends on
+
+- [Defn (Lecture 25, Interactive Proofs – Introduction)](104-defn.md)
+
 ## Sources
 
 - [MIT 18.404J Theory of Computation (Fall 2020), Lecture 25, ISO-bar ∈ IP section](../../../../../sources/v1/TheoryOfComputation.md)

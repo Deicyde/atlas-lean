@@ -11,8 +11,12 @@ Let $f \colon \mathbb{N} \to \mathbb{N}$ where $f(n) \geq n$. Say TM $M$ runs in
 
 ## Depends on
 
-- [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition (SPACE complexity)](../lecture-17/064-space-complexity.md)
+- [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
 
 ## Sources
 

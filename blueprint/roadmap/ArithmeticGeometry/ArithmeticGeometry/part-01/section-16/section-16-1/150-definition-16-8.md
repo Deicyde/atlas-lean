@@ -11,6 +11,10 @@ Let $X \subseteq \mathbb{P}^{m}$ and $Y \subseteq \mathbb{P}^{n}$ be algebraic s
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 13.11](../../section-13/section-13-2/110-definition-13-11.md)
 
 ## Sources

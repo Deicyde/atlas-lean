@@ -11,6 +11,10 @@ $A$ is Turing-recognizable if $A = L(M)$ for some TM $M$.
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition: Turing Machine](022-definition-turing-machine.md)
 
 ## Sources

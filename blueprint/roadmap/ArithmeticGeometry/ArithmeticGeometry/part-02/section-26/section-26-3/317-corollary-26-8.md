@@ -12,11 +12,12 @@ Every genus one curve $C/k$ is a twist of an elliptic curve $E/k$.
 
 ## Depends on
 
-- [Definition 26.6](315-definition-26-6.md)
-- [Definition 26.2](311-definition-26-2.md)
+This node has no prerequisites.
 
 ## Proof depends on
 
+- [Definition 26.2](311-definition-26-2.md)
+- [Definition 26.6](315-definition-26-6.md)
 - [Theorem 26.3](312-theorem-26-3.md)
 
 ## Sources

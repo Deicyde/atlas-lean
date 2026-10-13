@@ -11,7 +11,7 @@ For a divisor $D$ the adele space of $D$ is the $k$-vector space $\mathcal{A}(D)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 22.5](238-definition-22-5.md)
 
 ## Sources
 

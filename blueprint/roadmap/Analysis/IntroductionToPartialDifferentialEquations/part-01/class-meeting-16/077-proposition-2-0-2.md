@@ -11,8 +11,8 @@ Let $f \in C_{c}^{\infty}(\mathbb{R}^{n})$, i.e., $f$ is a smooth, compactly sup
 
 ## Depends on
 
-- [Definition 1.0.3](071-definition-1-0-3.md)
 - [Definition 1.0.1 (Fourier Transform)](069-fourier-transform.md)
+- [Definition 1.0.3](071-definition-1-0-3.md)
 
 ## Sources
 

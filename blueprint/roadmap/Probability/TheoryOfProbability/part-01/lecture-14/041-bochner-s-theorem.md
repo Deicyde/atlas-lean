@@ -14,6 +14,10 @@ A continuous function from $\mathbb{R}$ to $\mathbb{R}$ with $\phi(1) = 1$ is a 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition (characteristic function)](../lecture-8/019-characteristic-function.md)
+
 ## Sources
 
 - [MIT 18.175 Theory of Probability (Spring 2014), Lecture 14 / Lecture 15, Bochner's theorem](../../../../../sources/v1/TheoryOfProbability.md)

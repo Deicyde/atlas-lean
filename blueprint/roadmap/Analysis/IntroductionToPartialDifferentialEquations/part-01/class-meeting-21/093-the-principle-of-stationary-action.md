@@ -10,8 +10,11 @@ Let $\mathcal{L}(\phi, \nabla \phi, x)$ be a $C^{2}$ Lagrangian. Then a $C^{2}$ 
 
 ## Depends on
 
-- [Definition 1.0.2 (Action)](089-action.md)
 - [Definition 1.0.5 (Definition of a stationary point $\phi$)](092-definition-of-a-stationary-point-phi.md)
+
+## Proof depends on
+
+- [Definition 1.0.2 (Action)](089-action.md)
 
 ## Sources
 

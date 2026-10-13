@@ -14,6 +14,10 @@ Let $K = \mathcal{B}_1$ be the unit $\ell_1$ ball of $\mathbb{R}^d$, $d \geq 2$ 
 
 - [Definition 1.2](../chapter-1/002-definition-1-2.md)
 
+## Proof depends on
+
+- [Theorem 1.6](../section-1/006-theorem-1-6.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Chapter 2, Section 2.2](../../../../sources/v1/HighDimensionalStatistics.md)

@@ -11,8 +11,12 @@ Let $c$ be a simple closed curve. Then $\kappa^{\text{tot}}(c) = \pm 2\pi$.
 
 ## Depends on
 
-- [Definition 8.3](../chapter-1-lecture-8/027-definition-8-3.md)
 - [Definition 8.1](../chapter-1-lecture-8/025-definition-8-1.md)
+- [Definition 8.3](../chapter-1-lecture-8/027-definition-8-3.md)
+
+## Proof depends on
+
+- [Definition 1.2](../chapter-1-lecture-1/002-definition-1-2.md)
 
 ## Sources
 

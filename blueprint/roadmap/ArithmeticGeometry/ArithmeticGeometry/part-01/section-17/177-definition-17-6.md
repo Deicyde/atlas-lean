@@ -11,9 +11,12 @@ A variety $V$ for which $I(V)$ is a nonzero principal ideal is a hypersurface.
 
 ## Depends on
 
-- [Definition 12.12](../section-12/091-definition-12-12.md)
 - [Definition 12.7](../section-12/087-definition-12-7.md)
+
+## Proof depends on
+
 - [Definition 13.3](../section-13/section-13-1/102-definition-13-3.md)
+- [Definition 12.12](../section-12/091-definition-12-12.md)
 
 ## Sources
 

@@ -10,7 +10,9 @@ Let $K$ be a compact group and $f_{1}, f_{2} \in L^{2}(K)$. Then $\left(f_{1}, f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1/001-definition-1-2.md)
+- [Definition 1.8](../section-1/004-definition-1-8.md)
+- [Definition 1.3](../section-1/002-definition-1-3.md)
 
 ## Sources
 

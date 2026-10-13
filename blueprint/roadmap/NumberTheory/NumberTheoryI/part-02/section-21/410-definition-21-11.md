@@ -11,6 +11,10 @@ If for some integer $n \geq 1$ the function $\zeta_{K, S}^{n}$ extends to a mero
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 21.10](409-definition-21-10.md)
 
 ## Sources

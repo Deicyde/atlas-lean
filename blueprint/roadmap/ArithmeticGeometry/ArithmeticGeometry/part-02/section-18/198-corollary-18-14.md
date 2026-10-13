@@ -15,6 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Corollary 18.8](192-corollary-18-8.md)
 - [Theorem 18.13](197-theorem-18-13.md)
 
 ## Sources

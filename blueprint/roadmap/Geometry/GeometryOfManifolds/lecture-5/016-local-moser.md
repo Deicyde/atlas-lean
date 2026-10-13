@@ -12,6 +12,10 @@ Let $X \hookrightarrow M$ be a submanifold, $\omega_{0}, \omega_{1}$ symplectic 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition 1 (Lecture 5, Section 1 (Tubular Neighborhoods))](003-proposition-1.md)
+
 ## Sources
 
 - [MIT 18.966 Geometry of Manifolds (Spring 2007), Lecture 5, Section 1 (Tubular Neighborhoods)](../../../../sources/v1/GeometryOfManifolds.md)

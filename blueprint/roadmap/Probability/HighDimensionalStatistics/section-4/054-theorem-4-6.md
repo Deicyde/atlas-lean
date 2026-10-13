@@ -12,6 +12,11 @@ Let $X_1, \ldots, X_n$ be $n$ i.i.d. sub-Gaussian random vectors such that $\mat
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 1.17](../section-1/017-definition-1-17.md)
+- [Lemma 1.18](../section-1/018-lemma-1-18.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Section 4.3](../../../../sources/v1/HighDimensionalStatistics.md)

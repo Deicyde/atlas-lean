@@ -14,6 +14,10 @@ Let $w = s_1 \cdots s_n$ be a fixed reduced expression of $w \in W$. Then $v \le
 
 - [Definition (Section 1.8)](005-definition.md)
 
+## Proof depends on
+
+- [Proposition (Section 1.8)](003-proposition.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 1 (Bruhat order context)](../../../../sources/v1/Buildings.md)

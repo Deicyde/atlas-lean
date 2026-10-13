@@ -10,7 +10,14 @@ For a semisimple Lie group $G$, the assignment $V \mapsto V^{K\text{-fin}}$ is a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1/001-definition-1-2.md)
+- [Definition 1.8](../section-1/004-definition-1-8.md)
+- [Definition 1.3](../section-1/002-definition-1-3.md)
+
+## Proof depends on
+
+- [Definition 2.1](../section-2/005-definition-2-1.md)
+- [Corollary 4.7](../section-4/018-corollary-4-7.md)
 
 ## Sources
 

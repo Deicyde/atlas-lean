@@ -11,8 +11,12 @@ In a pointed Hopf algebra $H$, the coradical filtration is a Hopf algebra filtra
 
 ## Depends on
 
-- [Definition 1.29.1](../section-1-29/079-definition-1-29-1.md)
 - [Definition 1.28.1](../section-1-28/077-definition-1-28-1.md)
+- [Definition 1.29.1](../section-1-29/079-definition-1-29-1.md)
+
+## Proof depends on
+
+- [Definition 1.22.13](../../part-01/section-1-22/061-definition-1-22-13.md)
 
 ## Sources
 

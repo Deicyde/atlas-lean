@@ -12,6 +12,11 @@ Let $L$ be a totally ramified extension of the fraction field $K$ of a complete 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 9.19 (Hensel's lemma III)](../section-9/200-hensel-s-lemma-iii.md)
+- [Definition 10.21](../section-10/218-definition-10-21.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 11.1](../../../../../sources/v1/NumberTheoryI.md)

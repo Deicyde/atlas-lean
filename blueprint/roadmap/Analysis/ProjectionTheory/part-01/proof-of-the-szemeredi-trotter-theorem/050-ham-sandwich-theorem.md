@@ -13,6 +13,10 @@ Let $O_1, O_2, \ldots, O_n \subset \mathbb{R}^n$ be bounded open subsets. Then t
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Borsuk Ulam Theorem)](049-borsuk-ulam-theorem.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Proof of the Szemeredi-Trotter theorem](../../../../../sources/v1/ProjectionTheory.md)

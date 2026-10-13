@@ -10,7 +10,7 @@ If $G$ is a complex reflection group then for any irreducible representation $\r
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 10.5](../section-10/059-definition-10-5.md)
 
 ## Sources
 

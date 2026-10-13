@@ -12,7 +12,7 @@ Assume $AKLB$ and let $\mathfrak{q}$ be a prime lying above $\mathfrak{p}$. Then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.5](128-definition-6-5.md)
 
 ## Sources
 

@@ -12,6 +12,10 @@ The complement of a knot in $S^{3}$ is a homology circle.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 5.3](../../part-01/chapter-1/chapter-1-section-5/019-definition-5-3.md)
+
 ## Sources
 
 - [MIT 18.905 Algebraic Topology I (Fall 2016), Section 38](../../../../../sources/v1/AlgebraicTopologyI.md)

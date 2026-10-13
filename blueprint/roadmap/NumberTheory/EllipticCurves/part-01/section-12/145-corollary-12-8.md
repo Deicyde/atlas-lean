@@ -13,6 +13,10 @@ Every nonzero $\alpha \in \operatorname{End}^{0}(E)$ has a multiplicative
 
 - [Definition 6.13](../section-6/098-definition-6-13.md)
 
+## Proof depends on
+
+- [Definition 12.2](141-definition-12-2.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 12.2](../../../../../sources/v1/EllipticCurves.md)

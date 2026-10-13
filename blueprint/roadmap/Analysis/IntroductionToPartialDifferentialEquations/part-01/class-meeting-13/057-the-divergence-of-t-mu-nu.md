@@ -14,6 +14,10 @@ Let $T_{\mu \nu}$ be the energy-momentum tensor. Then $\partial_{\mu} T^{\mu \nu
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 1.0.1 (Class Meeting #13, Section 1)](055-definition-1-0-1.md)
+
 ## Sources
 
 - [MIT 18.152 Introduction to Partial Differential Equations (Fall 2011), Class Meeting #13, Section 1](../../../../../sources/v1/IntroductionToPartialDifferentialEquations.md)

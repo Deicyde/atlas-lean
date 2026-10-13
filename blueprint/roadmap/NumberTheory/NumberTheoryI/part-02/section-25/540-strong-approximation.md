@@ -10,7 +10,12 @@ Let $M_{K}=S \sqcup T \sqcup\{w\}$ be a partition of the places of a global fiel
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 25.7](533-definition-25-7.md)
+- [Lemma 25.14 (Adelic Blichfeldt-Minkowski lemma)](539-adelic-blichfeldt-minkowski-lemma.md)
 
 ## Sources
 

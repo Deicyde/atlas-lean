@@ -11,6 +11,10 @@ $A$ is Turing-decidable if $A = L(M)$ for some TM decider $M$.
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition: Turing Machine](022-definition-turing-machine.md)
 - [Definition: Decider](024-definition-decider.md)
 

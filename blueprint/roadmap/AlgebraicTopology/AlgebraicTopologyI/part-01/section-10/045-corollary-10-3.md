@@ -10,6 +10,10 @@ Assume that there is a subspace $B$ of $X$ such that (1) $\bar{A} \subseteq \ope
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 5.8](../chapter-1/chapter-1-section-5/024-definition-5-8.md)
 
 ## Sources

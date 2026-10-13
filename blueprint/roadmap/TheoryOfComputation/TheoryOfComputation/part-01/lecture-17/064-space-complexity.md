@@ -12,6 +12,9 @@ Let $f \colon \mathbb{N} \to \mathbb{N}$ where $f(n) \geq n$. Say TM $M$ runs in
 ## Depends on
 
 - [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+
+## Proof depends on
+
 - [Definition: Decider](../lecture-5/024-definition-decider.md)
 
 ## Sources

@@ -14,6 +14,10 @@ Suppose $f \colon \{-1,1\}^n \to \{-1,1\}$ is a function such that $\Pr_{x,y}[f(
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Claim 1.1](004-claim-1-1.md)
+
 ## Sources
 
 - [MIT 18.218 Analysis of Boolean Functions (Spring 2021), Lecture 2, Section 1](../../../../sources/v1/BooleanFunctions.md)

@@ -11,8 +11,12 @@ Let $S$ and $T$ denote sets of primes in a number field $K$, let $\mathcal{P}$ b
 
 ## Depends on
 
-- [Definition 21.10](409-definition-21-10.md)
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 21.11](410-definition-21-11.md)
+- [Definition 21.10](409-definition-21-10.md)
 
 ## Sources
 

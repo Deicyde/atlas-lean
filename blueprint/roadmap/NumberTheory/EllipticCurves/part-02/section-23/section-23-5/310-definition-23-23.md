@@ -14,6 +14,10 @@ Let $E/k$ be an elliptic curve and let $P \in E(k)$. For each integer $n$ we
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 23.16](../section-23-3/303-definition-23-16.md)
 
 ## Sources

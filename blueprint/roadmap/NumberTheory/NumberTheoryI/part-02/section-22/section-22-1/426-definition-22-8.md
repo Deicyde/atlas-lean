@@ -12,6 +12,11 @@ Let $\mathcal{C}$ be a congruence subgroup for a number field $K$. The unique mo
 
 - [Definition 21.2](../../section-21/404-definition-21-2.md)
 
+## Proof depends on
+
+- [Definition 22.3](421-definition-22-3.md)
+- [Proposition 22.6](424-proposition-22-6.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 22.1](../../../../../../sources/v1/NumberTheoryI.md)

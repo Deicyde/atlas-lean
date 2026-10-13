@@ -14,6 +14,12 @@ Assume the general regression model (3.1) with $\varepsilon \sim \mathsf{subG}_n
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 1.17](../section-1/017-definition-1-17.md)
+- [Definition 1.2](../chapter-1/002-definition-1-2.md)
+- [Lemma 1.18](../section-1/018-lemma-1-18.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Chapter 3, Section 3.1](../../../../sources/v1/HighDimensionalStatistics.md)

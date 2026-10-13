@@ -15,6 +15,10 @@ Let $N$ be a random odd integer in the interval $[2^{k-1}, 2^k]$ and let $a$
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 11.7](134-definition-11-7.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 11](../../../../../sources/v1/EllipticCurves.md)

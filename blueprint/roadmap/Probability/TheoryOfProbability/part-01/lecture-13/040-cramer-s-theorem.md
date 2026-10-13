@@ -12,6 +12,10 @@ Let $\mu_n$ be the law of the empirical mean $A_n = \frac{1}{n} \sum_{j=1}^n X_j
 
 - [Definition (rate function and large deviation principle)](039-rate-function-and-large-deviation-princi.md)
 
+## Proof depends on
+
+- [Definition (Legendre transform)](029-legendre-transform.md)
+
 ## Sources
 
 - [MIT 18.175 Theory of Probability (Spring 2014), Lecture 13, Cramer's theorem section](../../../../../sources/v1/TheoryOfProbability.md)

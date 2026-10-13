@@ -10,9 +10,21 @@ For a divisor $D$ of a genus $g$ curve, the following are equivalent: (a) $D$ is
 
 ## Depends on
 
-- [Definition 22.1](../section-22-1/235-definition-22-1.md)
+- [Definition 19.6](../../section-19/203-definition-19-6.md)
 - [Definition 21.10](../../section-21/230-definition-21-10.md)
+- [Definition 22.1](../section-22-1/235-definition-22-1.md)
 - [Definition 22.4](../section-22-1/237-definition-22-4.md)
+
+## Proof depends on
+
+- [Definition 22.16](../section-22-3/248-definition-22-16.md)
+- [Definition 21.1](../../section-21/224-definition-21-1.md)
+- [Definition 19.15](../../section-19/211-definition-19-15.md)
+- [Definition 19.11](../../section-19/207-definition-19-11.md)
+- [Definition 21.2](../../section-21/225-definition-21-2.md)
+- [Lemma 21.8](../../section-21/228-lemma-21-8.md)
+- [Theorem 22.21 (Riemann-Roch Theorem)](253-riemann-roch-theorem.md)
+- [Corollary 22.23](255-corollary-22-23.md)
 
 ## Sources
 

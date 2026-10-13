@@ -12,6 +12,10 @@ Suppose that $M$ is an $n$-manifold, and let $K$ be a compact subset. An $R$-ori
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 37.2](161-lemma-37-2.md)
+
 ## Sources
 
 - [MIT 18.905 Algebraic Topology I (Fall 2016), Section 37](../../../../../sources/v1/AlgebraicTopologyI.md)

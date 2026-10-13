@@ -12,6 +12,10 @@ Let $E/k$ be an elliptic curve. Two $E$-torsors $C/k$ and $C'/k$ are equivalent 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 26.15](../section-26-5/324-definition-26-15.md)
+
 ## Sources
 
 - [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 26.6](../../../../../../sources/v1/ArithmeticGeometry.md)

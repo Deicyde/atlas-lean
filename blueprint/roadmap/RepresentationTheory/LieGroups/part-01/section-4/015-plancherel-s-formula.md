@@ -10,7 +10,9 @@ If $K$ is a compact Lie group and $f \in C^{\infty}(K)$ then $f(1)=\sum_{\rho \i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1/001-definition-1-2.md)
+- [Definition 1.8](../section-1/004-definition-1-8.md)
+- [Definition 1.3](../section-1/002-definition-1-3.md)
 
 ## Sources
 

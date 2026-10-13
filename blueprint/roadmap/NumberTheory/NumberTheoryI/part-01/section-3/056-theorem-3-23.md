@@ -15,8 +15,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Theorem 3.22](055-theorem-3-22.md)
 - [Corollary 3.18](052-corollary-3-18.md)
+- [Theorem 3.22](055-theorem-3-22.md)
 
 ## Sources
 

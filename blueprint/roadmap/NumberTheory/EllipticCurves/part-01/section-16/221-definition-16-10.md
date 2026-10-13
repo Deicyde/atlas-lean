@@ -17,8 +17,12 @@ Let $\mathcal{O}$ be an order in an imaginary quadratic field $K$. Two
 
 ## Depends on
 
-- [Definition 16.9](220-definition-16-9.md)
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 14.1](../section-14/section-14-1/174-definition-14-1.md)
+- [Definition 16.9](220-definition-16-9.md)
 
 ## Sources
 

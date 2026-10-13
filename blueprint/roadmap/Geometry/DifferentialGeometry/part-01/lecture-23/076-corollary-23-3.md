@@ -12,6 +12,10 @@ Take any Riemannian metric on $\mathbb{R}^{2}$ which is doubly-periodic, $G_{(x_
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition 18.4](../lecture-18/058-proposition-18-4.md)
+
 ## Sources
 
 - [MIT 18.950 Differential Geometry (Fall 2008), Lecture 23](../../../../../sources/v1/DifferentialGeometry.md)

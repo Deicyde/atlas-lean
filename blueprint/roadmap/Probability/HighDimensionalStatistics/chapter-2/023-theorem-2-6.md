@@ -14,6 +14,11 @@ Fix a positive integer $k \leq d/2$. Let $K = \mathcal{B}_0(k)$ be the set of $k
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 1.17](../section-1/017-definition-1-17.md)
+- [Lemma 1.18](../section-1/018-lemma-1-18.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Chapter 2, Section 2.2](../../../../sources/v1/HighDimensionalStatistics.md)

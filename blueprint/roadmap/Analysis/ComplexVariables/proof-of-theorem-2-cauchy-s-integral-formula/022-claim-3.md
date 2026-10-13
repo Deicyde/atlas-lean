@@ -14,6 +14,10 @@ $h \equiv 0$, so the Cauchy Integral Formula (1) holds.
 
 - [Definition 1 (Lecture 13: The General Cauchy Theorem)](../lecture-13/014-definition-1.md)
 
+## Proof depends on
+
+- [Claim 1](../lecture-13/018-claim-1.md)
+
 ## Sources
 
 - [MIT 18.112 Functions of a Complex Variable (Fall 2008), Proof of Theorem 2 (Cauchy's Integral Formula)](../../../../sources/v1/ComplexVariables.md)

@@ -12,10 +12,11 @@ $I[f] = \sum_{S} |S| \, \widehat{f}(S)^2$.
 
 ## Depends on
 
-- [Definition 2.2 (Lecture 4, Section 2)](007-definition-2-2.md)
+This node has no prerequisites.
 
 ## Proof depends on
 
+- [Definition 2.2 (Lecture 4, Section 2)](007-definition-2-2.md)
 - [Claim 5.1](022-claim-5-1.md)
 
 ## Sources

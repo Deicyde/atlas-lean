@@ -13,8 +13,12 @@ Every morphism $f: X \rightarrow Y$ of affine varieties is continuous. That is, 
 ## Depends on
 
 - [Definition 14.1](122-definition-14-1.md)
-- [Definition 14.3](123-definition-14-3.md)
 - [Definition 12.7](../section-12/087-definition-12-7.md)
+- [Definition 14.3](123-definition-14-3.md)
+
+## Proof depends on
+
+- [Definition 12.8](../section-12/088-definition-12-8.md)
 
 ## Sources
 

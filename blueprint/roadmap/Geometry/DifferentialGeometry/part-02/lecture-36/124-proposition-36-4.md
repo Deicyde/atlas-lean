@@ -11,9 +11,12 @@ Let $f \colon U \rightarrow \mathbb{R}^{n+1}$ be a partial parametrization of $M
 
 ## Depends on
 
+- [Definition 36.2](122-definition-36-2.md)
 - [Definition 24.1](../../part-01/lecture-24/077-definition-24-1.md)
 - [Definition 12.1](../../part-01/chapter-2/040-definition-12-1.md)
-- [Definition 36.2](122-definition-36-2.md)
+
+## Proof depends on
+
 - [Definition 16.1](../../part-01/lecture-16/051-definition-16-1.md)
 - [Definition 12.3](../../part-01/chapter-2/042-definition-12-3.md)
 

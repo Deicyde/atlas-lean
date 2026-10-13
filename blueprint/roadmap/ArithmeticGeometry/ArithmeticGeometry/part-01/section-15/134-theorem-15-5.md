@@ -16,6 +16,11 @@ A rational map of affine varieties is a morphism if and only if it is regular.
 - [Definition 12.7](../section-12/087-definition-12-7.md)
 - [Definition 13.3](../section-13/section-13-1/102-definition-13-3.md)
 
+## Proof depends on
+
+- [Definition 12.8](../section-12/088-definition-12-8.md)
+- [Definition 12.20](../section-12/098-definition-12-20.md)
+
 ## Sources
 
 - [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 15.1](../../../../../sources/v1/ArithmeticGeometry.md)

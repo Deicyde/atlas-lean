@@ -19,6 +19,10 @@ A polynomial $f \in k[x, y]$ is nondegenerate with respect to an edge
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 1.1](001-definition-1-1.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 1.1](../../../../../sources/v1/EllipticCurves.md)

@@ -14,6 +14,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Definition 9.5.20](160-definition-9-5-20.md)
 - [Theorem 9.5.21 (Talagrand's inequality for certifiable functions)](161-talagrand-s-inequality-for-certifiable-f.md)
 
 ## Sources

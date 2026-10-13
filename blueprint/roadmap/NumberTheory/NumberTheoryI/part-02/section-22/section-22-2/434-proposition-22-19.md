@@ -10,9 +10,17 @@ Let $\chi$ be a ray class character of modulus $\mathfrak{m}$ for a number field
 
 ## Depends on
 
-- [Definition 22.10](428-definition-22-10.md)
 - [Definition 21.2](../../section-21/404-definition-21-2.md)
+- [Definition 22.10](428-definition-22-10.md)
 - [Definition 22.15](432-definition-22-15.md)
+- [Definition 22.17](433-definition-22-17.md)
+
+## Proof depends on
+
+- [Definition 21.3](../../section-21/405-definition-21-3.md)
+- [Lemma 21.7](../../section-21/406-lemma-21-7.md)
+- [Theorem 21.8](../../section-21/407-theorem-21-8.md)
+- [Lemma 19.9](../../../part-01/section-19/389-lemma-19-9.md)
 
 ## Sources
 

@@ -15,6 +15,7 @@ The elliptic curve $E_{a,b,c}$ is not modular.
 
 ## Proof depends on
 
+- [Definition 24.31](../section-24/section-24-8/343-definition-24-31.md)
 - [Theorem 25.2 (Ribet)](353-ribet.md)
 
 ## Sources

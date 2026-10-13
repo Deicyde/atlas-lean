@@ -11,10 +11,11 @@ For every point $y \in M$, there is a partial parametrization such that $y \in f
 
 ## Depends on
 
-- [Definition 29.3](090-definition-29-3.md)
+This node has no prerequisites.
 
 ## Proof depends on
 
+- [Definition 29.3](090-definition-29-3.md)
 - [Corollary 27.3 (Implicit function theorem, special case)](../lecture-27/086-implicit-function-theorem-special-case.md)
 
 ## Sources

@@ -10,7 +10,11 @@ Let $G$ be a finite cyclic group and let $A$ be a trivial $G$-module that is a f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.38](480-definition-23-38.md)
+
+## Proof depends on
+
+- [Definition 23.29](../section-23-5/472-definition-23-29.md)
 
 ## Sources
 

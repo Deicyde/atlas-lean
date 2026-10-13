@@ -10,7 +10,7 @@ Any CW-complex is Hausdorff, and it's compact if and only if it's finite. Any co
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.7](064-definition-14-7.md)
 
 ## Sources
 

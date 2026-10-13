@@ -14,6 +14,10 @@ Assume $AKLBG$ with finite residue fields and let $\mathfrak{p}$ be an unramifie
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 7.16](164-definition-7-16.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 7.3](../../../../../../sources/v1/NumberTheoryI.md)

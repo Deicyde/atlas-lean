@@ -9,7 +9,7 @@ For a principal divisor $\operatorname{div} f = \sum n_P P$, the divisors $\oper
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 19.6](203-definition-19-6.md)
 
 ## Sources
 

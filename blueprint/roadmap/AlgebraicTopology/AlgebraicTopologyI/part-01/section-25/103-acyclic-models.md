@@ -14,6 +14,11 @@ Let $\mathcal{M}$ be a set of models in a category $\mathcal{C}$. Let $\theta \c
 
 - [Definition 25.4](100-definition-25-4.md)
 
+## Proof depends on
+
+- [Definition 25.7](101-definition-25-7.md)
+- [Lemma 25.10](102-lemma-25-10.md)
+
 ## Sources
 
 - [MIT 18.905 Algebraic Topology I (Fall 2016), Section 25](../../../../../sources/v1/AlgebraicTopologyI.md)

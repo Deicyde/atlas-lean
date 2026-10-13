@@ -12,8 +12,8 @@ An algebraic set is irreducible if and only if its ideal is prime.
 
 ## Depends on
 
-- [Definition 4.46](061-definition-4-46.md)
 - [Definition 4.54](068-definition-4-54.md)
+- [Definition 4.46](061-definition-4-46.md)
 
 ## Sources
 

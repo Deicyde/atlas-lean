@@ -12,6 +12,9 @@ $V$ is said to be $K$-admissible (or of finite $K$-type) if for every finite-dim
 ## Depends on
 
 - [Definition 1.2](../section-1/001-definition-1-2.md)
+
+## Proof depends on
+
 - [Definition 1.8](../section-1/004-definition-1-8.md)
 
 ## Sources

@@ -12,8 +12,13 @@ Let $A$ be a Dedekind domain with fraction field $K$, let $V$ be a $K$-vector sp
 
 ## Depends on
 
-- [Definition 5.11](104-definition-5-11.md)
 - [Definition 5.9](103-definition-5-9.md)
+- [Definition 5.11](104-definition-5-11.md)
+
+## Proof depends on
+
+- [Lemma 5.15](108-lemma-5-15.md)
+- [Proposition 2.6](../../section-2/024-proposition-2-6.md)
 
 ## Sources
 

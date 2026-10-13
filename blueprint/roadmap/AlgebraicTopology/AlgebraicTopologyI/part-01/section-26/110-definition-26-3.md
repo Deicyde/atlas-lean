@@ -11,6 +11,10 @@ Let $N$ be an abelian group. A singular $n$-cochain on $X$ with values in $N$ is
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 1.2](../chapter-1/chapter-1-section-1/002-definition-1-2.md)
 
 ## Sources

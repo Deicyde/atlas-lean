@@ -10,8 +10,12 @@ If $C$ is a pointed coalgebra, then $C_0$ is spanned by (linearly independent) g
 
 ## Depends on
 
-- [Definition 1.29.1](079-definition-1-29-1.md)
 - [Definition 1.28.1](../section-1-28/077-definition-1-28-1.md)
+- [Definition 1.29.1](079-definition-1-29-1.md)
+
+## Proof depends on
+
+- [Definition 1.22.13](../../part-01/section-1-22/061-definition-1-22-13.md)
 
 ## Sources
 

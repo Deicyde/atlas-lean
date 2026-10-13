@@ -11,8 +11,8 @@ Dimensions of objects in a pivotal finite tensor category are algebraic integers
 
 ## Depends on
 
-- [Definition 1.38.4](115-definition-1-38-4.md)
 - [Definition 1.38.2](114-definition-1-38-2.md)
+- [Definition 1.38.4](115-definition-1-38-4.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ Fix $n \geq 2$. Assume that the linear model (2.2) holds where $\varepsilon \sim
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 2.17](033-lemma-2-17.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Chapter 2, Section 2.4](../../../../sources/v1/HighDimensionalStatistics.md)

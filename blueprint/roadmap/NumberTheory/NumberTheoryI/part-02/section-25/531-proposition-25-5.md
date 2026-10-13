@@ -12,6 +12,10 @@ Let $(X_i)$ be a family of topological spaces indexed by $i \in I$, let $(U_i)$ 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 25.4](530-definition-25-4.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 25.2](../../../../../sources/v1/NumberTheoryI.md)

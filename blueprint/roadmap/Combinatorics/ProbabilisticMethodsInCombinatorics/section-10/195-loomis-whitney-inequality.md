@@ -11,10 +11,11 @@ Writing $\pi_i$ for the projection from $\mathbb{R}^n$ onto the hyperplane $x_i 
 
 ## Depends on
 
-- [Definition 10.1.1](../chapter-10/171-definition-10-1-1.md)
+This node has no prerequisites.
 
 ## Proof depends on
 
+- [Definition 10.1.1](../chapter-10/171-definition-10-1-1.md)
 - [Theorem 10.4.5 (Shearer's lemma)](194-shearer-s-lemma.md)
 
 ## Sources

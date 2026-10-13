@@ -13,6 +13,10 @@ If $f \colon D^{n} \rightarrow D^{n}$ is continuous, then there is some point $x
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
+
 ## Sources
 
 - [MIT 18.905 Algebraic Topology I (Fall 2016), Section 10, Excision and applications](../../../../../sources/v1/AlgebraicTopologyI.md)

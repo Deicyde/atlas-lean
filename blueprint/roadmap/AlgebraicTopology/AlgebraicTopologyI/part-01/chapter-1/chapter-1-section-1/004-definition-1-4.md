@@ -13,6 +13,10 @@ An $n$-cycle in $X$ is an $n$-chain $c$ with $dc = 0$. Notation: $$Z_{n}(X) = \o
 
 - [Definition 1.3](003-definition-1-3.md)
 
+## Proof depends on
+
+- [Definition 1.2](002-definition-1-2.md)
+
 ## Sources
 
 - [MIT 18.905 Algebraic Topology I (Fall 2016), Chapter 1, Section 1](../../../../../../sources/v1/AlgebraicTopologyI.md)

@@ -10,6 +10,10 @@ There is a canonical natural isomorphism $H(S_{*}(X) \otimes S_{*}(Y)) \cong H_{
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Theorem 25.13 (Eilenberg-Zilber theorem)](105-eilenberg-zilber-theorem.md)
 
 ## Sources

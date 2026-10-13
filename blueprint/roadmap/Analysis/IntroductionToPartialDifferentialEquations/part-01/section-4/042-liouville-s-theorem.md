@@ -12,6 +12,10 @@ Suppose that $u \in C^{2}(\mathbb{R}^{n})$ is harmonic on $\mathbb{R}^{n}$. Supp
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 4.1 (Harnack's inequality)](041-harnack-s-inequality.md)
+
 ## Sources
 
 - [MIT 18.152 Introduction to Partial Differential Equations (Fall 2011), Section 4](../../../../../sources/v1/IntroductionToPartialDifferentialEquations.md)

@@ -12,6 +12,10 @@ Suppose $A$ and $B$ are closed subsets of a normal space, or compact subsets of 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 34.4](../section-34/149-definition-34-4.md)
+
 ## Sources
 
 - [MIT 18.905 Algebraic Topology I (Fall 2016), Section 35](../../../../../sources/v1/AlgebraicTopologyI.md)

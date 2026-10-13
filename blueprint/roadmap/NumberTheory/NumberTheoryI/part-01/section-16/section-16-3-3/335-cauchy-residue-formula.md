@@ -12,8 +12,8 @@ Let $U$ be an open set containing a simple closed curve $\gamma$. Let $f$ be a f
 
 ## Depends on
 
-- [Definition 16.22](332-definition-16-22.md)
 - [Definition 16.21](331-definition-16-21.md)
+- [Definition 16.22](332-definition-16-22.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ $$\lVert (\pi_q(f *_M g))^*_h \rVert_{L^\infty} \leq \lVert (\pi_q f)_h \rVert_{
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 4](042-lemma-4.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section 7, Subsection 7.3: Multiplicative Convolution and Projections](../../../../../sources/v1/ProjectionTheory.md)

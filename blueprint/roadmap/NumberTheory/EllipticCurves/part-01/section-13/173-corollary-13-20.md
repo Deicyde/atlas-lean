@@ -20,8 +20,8 @@ Let $E$ be an elliptic curve over a finite field of characteristic $p$.
 
 ## Proof depends on
 
-- [Theorem 13.18](171-theorem-13-18.md)
 - [Theorem 13.3](161-theorem-13-3.md)
+- [Theorem 13.18](171-theorem-13-18.md)
 
 ## Sources
 

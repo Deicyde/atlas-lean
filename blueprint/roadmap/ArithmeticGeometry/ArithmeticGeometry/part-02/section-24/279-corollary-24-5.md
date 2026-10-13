@@ -11,6 +11,9 @@ For any isogeny $\varphi: E_{1} \rightarrow E_{2}$ of elliptic curves, $\# \oper
 ## Depends on
 
 - [Definition 24.1](275-definition-24-1.md)
+
+## Proof depends on
+
 - [Definition 24.3](277-definition-24-3.md)
 
 ## Sources

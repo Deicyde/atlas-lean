@@ -14,6 +14,10 @@ Suppose that $v$, $w$ are solutions to the heat equations $v_{t}-D v_{x x}=f$ an
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 1.1 (Weak Maximum Principle)](014-weak-maximum-principle.md)
+
 ## Sources
 
 - [MIT 18.152 Introduction to Partial Differential Equations (Fall 2011), Class Meeting #4, Section 1 (The Weak Maximum Principle)](../../../../../sources/v1/IntroductionToPartialDifferentialEquations.md)

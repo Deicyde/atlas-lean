@@ -11,9 +11,13 @@ If $V$ is a $K$-admissible continuous representation of $G$ then $V^{K\text{-fin
 
 ## Depends on
 
-- [Definition 5.1](024-definition-5-1.md)
 - [Definition 1.2](../section-1/001-definition-1-2.md)
+- [Definition 5.1](024-definition-5-1.md)
+
+## Proof depends on
+
 - [Definition 1.8](../section-1/004-definition-1-8.md)
+- [Definition 2.1](../section-2/005-definition-2-1.md)
 
 ## Sources
 

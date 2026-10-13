@@ -10,7 +10,11 @@ Let $\lambda, \mu \in \mathfrak{h}^{*}$ and $\mu \preceq \lambda$. Then $\dim \o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.3](../section-8/048-definition-8-3.md)
+
+## Proof depends on
+
+- [Proposition 8.5](../section-8/050-proposition-8-5.md)
 
 ## Sources
 

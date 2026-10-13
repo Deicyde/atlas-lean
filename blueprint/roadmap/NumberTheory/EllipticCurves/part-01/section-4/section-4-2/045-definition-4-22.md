@@ -14,6 +14,10 @@ Elliptic curves $E_{1}$ and $E_{2}$ defined over a field $k$ are isomorphic
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 4.18](043-definition-4-18.md)
 
 ## Sources

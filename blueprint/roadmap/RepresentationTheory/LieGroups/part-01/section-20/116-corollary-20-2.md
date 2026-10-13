@@ -14,6 +14,8 @@ If $X$ is standardly filtered then $\operatorname{Ext}_{\mathcal{O}}^{i}(X, M_{\
 
 ## Proof depends on
 
+- [Definition 8.3](../section-8/048-definition-8-3.md)
+- [Proposition 8.5](../section-8/050-proposition-8-5.md)
 - [Lemma 20.1](115-lemma-20-1.md)
 
 ## Sources

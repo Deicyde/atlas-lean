@@ -12,6 +12,10 @@ Suppose that $\bar{W}$ is essential and that $W$ is indecomposable. Then the nor
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary (Section 12.1)](036-corollary.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 12.4](../../../../sources/v1/Buildings.md)

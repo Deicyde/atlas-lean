@@ -10,7 +10,7 @@ $\xi \in W^{s}(E)$, $L$ elliptic, $L\xi \in C^{\infty}(F) \Longrightarrow \xi \i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../lecture-2/011-definition-7.md)
 
 ## Sources
 

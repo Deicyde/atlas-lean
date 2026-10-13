@@ -10,6 +10,10 @@ For any $f \colon \mathbb{N} \to \mathbb{N}$ where $f$ is time constructible the
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition: Turing Machine](../../part-01/lecture-5/022-definition-turing-machine.md)
 - [Definition: Decider](../../part-01/lecture-5/024-definition-decider.md)
 

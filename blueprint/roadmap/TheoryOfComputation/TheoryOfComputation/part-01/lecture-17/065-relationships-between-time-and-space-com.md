@@ -14,6 +14,12 @@ For $t(n) \geq n$: (1) $\mathsf{TIME}(t(n)) \subseteq \mathsf{SPACE}(t(n))$; (2)
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition (SPACE complexity)](064-space-complexity.md)
+- [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+- [Definition: Decider](../lecture-5/024-definition-decider.md)
+
 ## Sources
 
 - [MIT 18.404J Theory of Computation (Fall 2020), Lecture 17, Relationships between Time and SPACE Complexity](../../../../../sources/v1/TheoryOfComputation.md)

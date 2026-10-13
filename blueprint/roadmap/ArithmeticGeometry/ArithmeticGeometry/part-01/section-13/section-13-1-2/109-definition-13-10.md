@@ -11,9 +11,15 @@ Let $V \subseteq \mathbb{A}^{n}$ be a variety, and let $f_{1}, \ldots, f_{m} \in
 
 ## Depends on
 
-- [Definition 12.12](../../section-12/091-definition-12-12.md)
 - [Definition 12.7](../../section-12/087-definition-12-7.md)
 - [Definition 13.3](../section-13-1/102-definition-13-3.md)
+- [Definition 12.12](../../section-12/091-definition-12-12.md)
+
+## Proof depends on
+
+- [Definition 12.8](../../section-12/088-definition-12-8.md)
+- [Definition 12.20](../../section-12/098-definition-12-20.md)
+- [Theorem 12.21](../../section-12/099-theorem-12-21.md)
 
 ## Sources
 

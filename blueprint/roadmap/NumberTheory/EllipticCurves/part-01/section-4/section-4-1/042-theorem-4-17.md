@@ -10,7 +10,7 @@ A morphism of projective curves is either surjective or constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.9](038-definition-4-9.md)
 
 ## Sources
 

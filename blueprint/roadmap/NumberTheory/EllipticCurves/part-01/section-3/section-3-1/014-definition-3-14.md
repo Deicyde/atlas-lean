@@ -11,7 +11,7 @@ A monic irreducible polynomial $f \in \mathbb{F}_{p}[x]$ whose roots generate
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.2](006-definition-3-2.md)
 
 ## Sources
 

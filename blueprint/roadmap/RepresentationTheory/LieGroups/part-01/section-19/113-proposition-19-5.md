@@ -10,7 +10,7 @@ We have an isomorphism $\xi: \mathbf{M}(\lambda, \mu) \rightarrow C_{\lambda-\rh
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.3](../section-8/048-definition-8-3.md)
 
 ## Sources
 

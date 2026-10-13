@@ -13,6 +13,10 @@ Let $S$ be a finite set of places of $\mathbb{Q}$, and let $n$ be an integer. Th
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 14.29](302-lemma-14-29.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 14](../../../../../../sources/v1/NumberTheoryI.md)

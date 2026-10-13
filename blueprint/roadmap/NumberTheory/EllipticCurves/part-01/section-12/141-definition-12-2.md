@@ -12,6 +12,10 @@ The endomorphism algebra of $E$ is $\operatorname{End}^0(E) \coloneqq
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 6.13](../section-6/098-definition-6-13.md)
 
 ## Sources

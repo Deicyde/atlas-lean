@@ -14,6 +14,10 @@ Let $K \subseteq L \subseteq M$ be a tower of finite abelian extensions of globa
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 3.11](../../part-01/section-3/047-theorem-3-11.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 21.1](../../../../../sources/v1/NumberTheoryI.md)

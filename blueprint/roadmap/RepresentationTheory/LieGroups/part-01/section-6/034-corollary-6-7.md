@@ -14,6 +14,10 @@ Let $X$ be a real analytic manifold and $D$ an elliptic operator on $X$ with ana
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 6.4](032-definition-6-4.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 6.2](../../../../../sources/v1/LieGroups.md)

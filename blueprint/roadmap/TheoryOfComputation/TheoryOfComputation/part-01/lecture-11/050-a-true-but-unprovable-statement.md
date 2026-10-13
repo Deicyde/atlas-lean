@@ -13,6 +13,7 @@ lean: GodelIncompleteness.true_but_unprovable_statement
 ## Depends on
 
 - [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+- [Definition: Decider](../lecture-5/024-definition-decider.md)
 
 ## Sources
 

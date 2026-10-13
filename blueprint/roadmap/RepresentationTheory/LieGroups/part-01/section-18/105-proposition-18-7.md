@@ -10,7 +10,12 @@ The action homomorphism $\phi: U_{\chi_{\lambda+\rho}} \rightarrow \operatorname
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.3](../section-8/048-definition-8-3.md)
+
+## Proof depends on
+
+- [Theorem 14.1 (Harish-Chandra)](../section-14/080-harish-chandra.md)
+- [Proposition 8.5](../section-8/050-proposition-8-5.md)
 
 ## Sources
 

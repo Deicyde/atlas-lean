@@ -10,7 +10,7 @@ $L$ elliptic $\Longrightarrow L_{s}$ is Fredholm, i.e.\ $\operatorname{Ker} L_{s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../lecture-2/011-definition-7.md)
 
 ## Proof depends on
 

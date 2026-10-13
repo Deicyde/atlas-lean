@@ -13,6 +13,10 @@ Language $B$ is $\mathsf{NP}$-hard if $A \leq_P B$ for every $A \in \mathsf{NP}$
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition: Turing Machine](../../part-01/lecture-5/022-definition-turing-machine.md)
+
 ## Sources
 
 - [MIT 18.404J Theory of Computation (Fall 2020), Lecture 25](../../../../../sources/v1/TheoryOfComputation.md)

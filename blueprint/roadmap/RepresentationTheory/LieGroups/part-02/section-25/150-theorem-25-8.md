@@ -10,7 +10,11 @@ lean: bernstein_gelfand_25_8_i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 15.1](../../part-01/section-15/084-definition-15-1.md)
+
+## Proof depends on
+
+- [Lemma 25.5](147-lemma-25-5.md)
 
 ## Sources
 

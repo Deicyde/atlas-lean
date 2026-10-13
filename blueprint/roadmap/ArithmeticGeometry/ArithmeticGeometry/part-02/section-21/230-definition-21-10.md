@@ -11,6 +11,10 @@ The dimension $\ell(D)$ of a divisor is the dimension of $\mathcal{L}(D)$.
 
 ## Depends on
 
+- [Definition 19.6](../section-19/203-definition-19-6.md)
+
+## Proof depends on
+
 - [Definition 21.2](225-definition-21-2.md)
 
 ## Sources

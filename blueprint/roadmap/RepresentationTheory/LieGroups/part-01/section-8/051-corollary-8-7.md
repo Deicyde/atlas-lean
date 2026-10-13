@@ -10,7 +10,12 @@ $M_{\lambda}$ has a weight decomposition with $P(M_{\lambda}) = \lambda - Q_+$, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.3](048-definition-8-3.md)
+
+## Proof depends on
+
+- [Proposition 8.5](050-proposition-8-5.md)
+- [Definition 8.1](046-definition-8-1.md)
 
 ## Sources
 

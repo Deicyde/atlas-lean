@@ -14,6 +14,10 @@ Recall that $\mathcal{B}_0(k) \subset \mathbb{R}^d$ denotes the set of all $k$-s
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 5.8 (Pinsker's inequality)](../section-5/065-pinsker-s-inequality.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Chapter 5](../../../../sources/v1/HighDimensionalStatistics.md)

@@ -13,6 +13,10 @@ The geometric dimension of a variety $V$ is the largest integer $d$ for which th
 
 - [Definition 12.7](../../section-12/087-definition-12-7.md)
 
+## Proof depends on
+
+- [Definition 13.3](../section-13-1/102-definition-13-3.md)
+
 ## Sources
 
 - [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 13.1.1](../../../../../../sources/v1/ArithmeticGeometry.md)

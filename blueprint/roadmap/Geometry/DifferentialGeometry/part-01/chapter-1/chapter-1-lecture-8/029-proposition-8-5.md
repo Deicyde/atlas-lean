@@ -13,7 +13,11 @@ $\kappa^{\text{tot}}(c) / 2\pi$ is the degree of $f(t) = c^{\prime}(t) / \left\|
 ## Depends on
 
 - [Definition 7.2](../chapter-1-lecture-7/022-definition-7-2.md)
+
+## Proof depends on
+
 - [Definition 8.3](027-definition-8-3.md)
+- [Definition 1.2](../chapter-1-lecture-1/002-definition-1-2.md)
 
 ## Sources
 

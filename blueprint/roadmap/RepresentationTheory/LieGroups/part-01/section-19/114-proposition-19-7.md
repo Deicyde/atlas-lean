@@ -11,6 +11,11 @@ The functor $H_{\lambda}$ is exact when $\lambda$ is dominant.
 ## Depends on
 
 - [Definition 15.1](../section-15/084-definition-15-1.md)
+- [Definition 8.3](../section-8/048-definition-8-3.md)
+
+## Proof depends on
+
+- [Proposition 16.4](../section-16/093-proposition-16-4.md)
 
 ## Sources
 

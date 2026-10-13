@@ -12,6 +12,10 @@ Let $\phi(x) \in C_{c}^{\infty}(\mathbb{R}^{n})$. Then there exists a unique sol
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition 2.0.3 (The behavior of $K(t, \cdot) * \phi(\cdot)$ as $t \downarrow 0$)](085-t-cdot.md)
+
 ## Sources
 
 - [MIT 18.152 Introduction to Partial Differential Equations (Fall 2011), Class Meeting on Schrödinger's equation, Section 2](../../../../../sources/v1/IntroductionToPartialDifferentialEquations.md)

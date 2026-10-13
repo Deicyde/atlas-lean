@@ -14,6 +14,7 @@ Irreducible highest weight $\mathfrak{g}$-modules are classified by their highes
 
 ## Proof depends on
 
+- [Proposition 8.5](050-proposition-8-5.md)
 - [Proposition 8.8](052-proposition-8-8.md)
 
 ## Sources

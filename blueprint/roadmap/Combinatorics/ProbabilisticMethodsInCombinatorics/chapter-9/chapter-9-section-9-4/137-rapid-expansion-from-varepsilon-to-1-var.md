@@ -12,6 +12,10 @@ Let $\varepsilon > 0$ and $C = \sqrt{2\log(1/\varepsilon)}$. If $A \subseteq \{0
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 9.4.5 (Rapid expansion from half to $1 - \varepsilon$)](136-rapid-expansion-from-half-to-1-varepsilo.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 9, Section 9.4](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

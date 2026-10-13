@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Generate the ATLAS v1 textbook wiki under blueprint/.
 
-    scripts/autoform.sh generate          rewrite the generated pages
-    scripts/autoform.sh generate --check  fail if any generated page is stale
+    python scripts/generate_v1_wiki.py          rewrite the generated pages
+    python scripts/generate_v1_wiki.py --check  fail if any generated page is stale
+
+Run it with a Python that has Autoform installed (see blueprint-pages.yml).
 
 Every target in v1/Atlas/<Book>/report.json becomes one roadmap article: the
 informal statement from the textbook, its source location, and the Lean
@@ -13,9 +15,10 @@ accepts exactly what this script asserts.
 Status follows v1's own evaluation. A target that passed review is
 `statement: formalized`; a theorem whose dependency chain is also sorry-free is
 `proof: formalized`. Definitions need a sorry-free chain to be marked at all,
-because Autoform counts a stated definition as proved. Lean-level `deps`
-between two targets become graph edges: an edge to data (a definition,
-structure, ...) is a statement dependency, anything else a proof dependency.
+because Autoform counts a stated definition as proved. Graph edges come from
+sources/v1/lean-dependencies.json (see scripts/extract_v1_lean_dependencies.py):
+the targets a target's Lean statement or proof reaches, through helper
+declarations if need be.
 """
 
 from __future__ import annotations
@@ -162,7 +165,7 @@ class Target:
     lean: str | None
     statement: bool
     proof: bool
-    deps: list[str]
+    v1_names: list[str]
     path: Path = Path()
     depends: list[Target] = field(default_factory=list)
     proof_depends: list[Target] = field(default_factory=list)
@@ -249,7 +252,7 @@ def disambiguate(targets: list[Target], rename) -> None:
                 target.title = f"{target.title} ({ordinals[target.title]})"
 
 
-def load_book(book: str, index) -> tuple[list[Target], dict]:
+def load_book(book: str, index, lean_dependencies: dict) -> tuple[list[Target], dict]:
     report = json.loads((V1 / "Atlas" / book / "report.json").read_text())
     details = sorted(report["statements"]["details"], key=lambda item: item["idx"])
     unresolved = []
@@ -288,24 +291,25 @@ def load_book(book: str, index) -> tuple[list[Target], dict]:
                 lean=", ".join(names) if resolved else None,
                 statement=statement,
                 proof=statement and not is_data and sorry_free,
-                deps=[name.strip() for name in (item.get("deps") or "").split(",") if name.strip()],
+                v1_names=names,
             )
         )
     disambiguate(targets, lambda target: f"{target.title} ({target.location})")
     disambiguate(targets, None)
-    by_lean: dict[str, Target] = {}
+    # Dependency names are v1's own and unique within a book, so an edge does
+    # not need the `lean:` link that a name collision elsewhere can withhold.
+    by_name: dict[str, Target] = {}
     for target in targets:
-        for name in (target.lean or "").split(", "):
-            if name:
-                by_lean.setdefault(name, target)
+        for name in target.v1_names:
+            by_name.setdefault(name, target)
     for target in targets:
-        for dep in target.deps:
-            other = by_lean.get(dep)
-            if other is None or other is target:
-                continue
-            bucket = target.depends if other.declaration in DEFINITION_DECLARATIONS else target.proof_depends
-            if other not in target.depends and other not in target.proof_depends:
-                bucket.append(other)
+        for name in target.v1_names:
+            entry = lean_dependencies.get(name, {})
+            for bucket, kind in ((target.depends, "statement"), (target.proof_depends, "proof")):
+                for dependency in entry.get(kind, []):
+                    other = by_name.get(dependency)
+                    if other is not None and other is not target and other not in target.depends + target.proof_depends:
+                        bucket.append(other)
     summary = {
         "targets": len(targets),
         "unmatched": [item for item in details if not item.get("lean_declaration")],
@@ -502,13 +506,14 @@ def render_roadmap_root(subjects: list[str], previous: str | None) -> str:
 
 def generate(selected: list[str]) -> dict[Path, str]:
     index = index_project(ROOT)
+    lean_dependencies = json.loads((SOURCES / "v1" / "lean-dependencies.json").read_text())["books"]
     urls = book_urls()
     files: dict[Path, str] = {}
     previous = lambda path: path.read_text() if path.is_file() else None  # noqa: E731
     coverage = []
     by_subject: dict[str, list[Container]] = defaultdict(list)
     for book in selected:
-        targets, summary = load_book(book, index)
+        targets, summary = load_book(book, index, lean_dependencies.get(book, {}))
         subject = BOOKS[book][0]
         tree = book_tree(book, targets)
         assign_paths(tree, ROADMAP / subject / book)

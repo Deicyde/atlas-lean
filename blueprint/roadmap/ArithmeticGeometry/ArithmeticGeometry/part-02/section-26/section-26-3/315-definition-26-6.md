@@ -11,6 +11,10 @@ Let $C/k$ be a curve of genus one. The $j$-invariant $j(C)$ of $C$ is the $j$-in
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 26.2](311-definition-26-2.md)
 
 ## Sources

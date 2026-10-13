@@ -10,7 +10,7 @@ If $g$ has scalar curvature $> 0$, then the SW-invariants $\equiv 0$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2 (Lecture 25, Section 2 (Seiberg-Witten Equations))](065-definition-2.md)
 
 ## Sources
 

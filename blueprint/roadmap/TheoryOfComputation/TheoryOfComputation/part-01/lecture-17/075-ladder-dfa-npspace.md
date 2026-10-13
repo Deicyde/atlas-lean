@@ -12,6 +12,10 @@ $\mathrm{LADDER}_{\mathrm{DFA}} \in \mathsf{NPSPACE}$.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition ($LADDER_{DFA}$)](073-ladder-dfa.md)
+
 ## Sources
 
 - [MIT 18.404J Theory of Computation (Fall 2020), Lecture 17](../../../../../sources/v1/TheoryOfComputation.md)

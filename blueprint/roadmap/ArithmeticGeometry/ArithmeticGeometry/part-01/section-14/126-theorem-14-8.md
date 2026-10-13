@@ -13,8 +13,11 @@ The following hold: (i) Every morphism $\phi: X \rightarrow Y$ of affine varieti
 ## Depends on
 
 - [Definition 14.1](122-definition-14-1.md)
-- [Definition 12.12](../section-12/091-definition-12-12.md)
 - [Definition 12.7](../section-12/087-definition-12-7.md)
+
+## Proof depends on
+
+- [Definition 12.12](../section-12/091-definition-12-12.md)
 
 ## Sources
 

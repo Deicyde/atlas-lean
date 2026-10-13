@@ -14,6 +14,10 @@ Assuming that $(W, S)$ is affine, the set $E \cap U = \bigcup_{w,I} wF_I \cap E 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma (Section 13.4)](041-lemma.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 13.6](../../../../sources/v1/Buildings.md)

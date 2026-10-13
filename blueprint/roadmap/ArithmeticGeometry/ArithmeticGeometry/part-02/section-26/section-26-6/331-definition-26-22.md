@@ -13,6 +13,10 @@ Let $E/k$ be an elliptic curve. The group of continuous crossed homomorphisms of
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 26.20](329-definition-26-20.md)
+
 ## Sources
 
 - [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 26.6](../../../../../../sources/v1/ArithmeticGeometry.md)

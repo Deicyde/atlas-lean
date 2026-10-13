@@ -15,6 +15,10 @@ Let $f(x, y) \in k[x, y]$ be irreducible in $\bar{k}[x, y]$, and let $F
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 1.1](001-definition-1-1.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 1.1](../../../../../sources/v1/EllipticCurves.md)

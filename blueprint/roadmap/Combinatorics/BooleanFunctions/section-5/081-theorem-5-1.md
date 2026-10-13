@@ -14,7 +14,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Definition 2.2 (Lecture 4, Section 2)](../lecture-4/007-definition-2-2.md)
+- [Claim 5.1](../lecture-4/022-claim-5-1.md)
 - [Theorem 1.1 (Section 1 (Motivation and statement))](../section-1/076-theorem-1-1.md)
+- [Corollary 5.3](../lecture-4/024-corollary-5-3.md)
 
 ## Sources
 

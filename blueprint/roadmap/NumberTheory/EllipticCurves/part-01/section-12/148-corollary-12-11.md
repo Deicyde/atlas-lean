@@ -14,6 +14,7 @@ For any nonzero $\alpha \in \operatorname{End}^{0}(E)$, if $\mathrm{T}
 ## Depends on
 
 - [Definition 6.13](../section-6/098-definition-6-13.md)
+- [Definition 12.2](141-definition-12-2.md)
 
 ## Sources
 

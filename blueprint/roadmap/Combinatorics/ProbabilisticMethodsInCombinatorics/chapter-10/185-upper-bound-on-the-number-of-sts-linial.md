@@ -12,6 +12,10 @@ The number of Steiner triple systems on $n$ labeled vertices is at most $(n/(e^2
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 10.2.8 (Steiner triple system)](184-steiner-triple-system.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 10, Section 10.2](../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

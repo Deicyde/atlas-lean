@@ -10,6 +10,7 @@ Let $V$ be a finite-dimensional $\mathfrak{g}$-module. Then for any $\lambda \in
 
 ## Depends on
 
+- [Definition 8.3](../section-8/048-definition-8-3.md)
 - [Definition 8.1](../section-8/046-definition-8-1.md)
 
 ## Sources

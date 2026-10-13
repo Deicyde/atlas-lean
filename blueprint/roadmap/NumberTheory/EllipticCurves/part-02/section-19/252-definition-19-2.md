@@ -12,7 +12,7 @@ Let $\Gamma$ be a congruence subgroup. A modular function for $\Gamma$ is a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 19.1](251-definition-19-1.md)
 
 ## Sources
 

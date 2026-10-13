@@ -11,6 +11,10 @@ An algebraic set $Z \in \mathbb{A}^{n}$ is said to be defined over $k$ if its id
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 12.12](../../section-12/091-definition-12-12.md)
 
 ## Sources

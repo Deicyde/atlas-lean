@@ -10,6 +10,10 @@ Assume $AKLB$. The map $N_{B/A}: \mathcal{I}_{B} \rightarrow \mathcal{I}_{A}$ is
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 6.1](../section-6-1/125-definition-6-1.md)
 
 ## Sources

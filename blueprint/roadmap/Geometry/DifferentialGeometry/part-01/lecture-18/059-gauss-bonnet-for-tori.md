@@ -13,6 +13,11 @@ Let $f \colon \mathbb{R}^{2} \rightarrow \mathbb{R}^{3}$ be a doubly-periodic su
 - [Definition 12.1](../chapter-2/040-definition-12-1.md)
 - [Definition 12.3](../chapter-2/042-definition-12-3.md)
 
+## Proof depends on
+
+- [Definition 16.1](../lecture-16/051-definition-16-1.md)
+- [Definition 12.5](../chapter-2/044-definition-12-5.md)
+
 ## Sources
 
 - [MIT 18.950 Differential Geometry (Fall 2008), Lecture 18](../../../../../sources/v1/DifferentialGeometry.md)

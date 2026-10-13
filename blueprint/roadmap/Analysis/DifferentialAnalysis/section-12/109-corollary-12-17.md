@@ -13,6 +13,10 @@ For any $u \in \mathcal{S}'(\mathbb{R}^{n})$, $(p, q) \in \mathrm{WF}_{\mathrm{s
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 12.8](100-lemma-12-8.md)
+
 ## Sources
 
 - [MIT 18.155 Differential Analysis (Fall 2004), Section 12](../../../../sources/v1/DifferentialAnalysis.md)

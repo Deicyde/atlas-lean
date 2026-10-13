@@ -11,7 +11,7 @@ If $F$ is a projective functor then $[F]$ commutes with $W$ on $K(\mathcal{O})$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 22.1](../section-22/129-definition-22-1.md)
 
 ## Sources
 

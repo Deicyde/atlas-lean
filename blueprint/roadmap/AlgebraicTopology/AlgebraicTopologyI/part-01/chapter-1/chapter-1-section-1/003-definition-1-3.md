@@ -11,6 +11,10 @@ The abelian group $S_{n}(X)$ of singular $n$-chains in $X$ is the free abelian g
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 1.2](002-definition-1-2.md)
 
 ## Sources

@@ -11,8 +11,8 @@ Let $g^{ij}$ be the coefficients of the inverse matrix $G^{-1}$. Then $\Gamma_{i
 
 ## Depends on
 
-- [Definition 12.1](../chapter-2/040-definition-12-1.md)
 - [Definition 16.1](051-definition-16-1.md)
+- [Definition 12.1](../chapter-2/040-definition-12-1.md)
 - [Definition 12.3](../chapter-2/042-definition-12-3.md)
 
 ## Sources

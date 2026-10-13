@@ -12,6 +12,11 @@ lean: HarishChandraIso
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 8.3](../section-8/048-definition-8-3.md)
+- [Proposition 8.5](../section-8/050-proposition-8-5.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 14.1](../../../../../sources/v1/LieGroups.md)

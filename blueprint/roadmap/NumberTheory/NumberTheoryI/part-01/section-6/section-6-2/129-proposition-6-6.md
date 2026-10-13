@@ -12,7 +12,7 @@ Assume $AKLB$ and let $\alpha \in L$. Then $N_{B/A}((\alpha))=\left(\mathrm{N}_{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.5](128-definition-6-5.md)
 
 ## Sources
 

@@ -12,6 +12,10 @@ $\mathrm{SAT}$ is $\mathsf{NP}$-complete. Proof: (1) $\mathrm{SAT} \in \mathsf{N
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+
 ## Sources
 
 - [MIT 18.404J Theory of Computation (Fall 2020), Lecture 16, Cook-Levin Theorem (idea) and Conclusion sections](../../../../../sources/v1/TheoryOfComputation.md)

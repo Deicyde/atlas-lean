@@ -12,6 +12,10 @@ Every rational map $\phi: C_{1} \rightarrow C_{2}$ between smooth projective cur
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 18.6](190-theorem-18-6.md)
+
 ## Sources
 
 - [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 18.2](../../../../../sources/v1/ArithmeticGeometry.md)

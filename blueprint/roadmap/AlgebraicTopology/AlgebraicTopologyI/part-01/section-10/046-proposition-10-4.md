@@ -9,7 +9,11 @@ Let $n > 0$ and let $* \in S^{n-1}$ be any point. Then: $H_{q}(S^{n}) = \begin{c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
+
+## Proof depends on
+
+- [Corollary 5.7](../chapter-1/chapter-1-section-5/023-corollary-5-7.md)
 
 ## Sources
 

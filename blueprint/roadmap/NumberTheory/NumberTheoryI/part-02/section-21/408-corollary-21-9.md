@@ -15,6 +15,11 @@ Let $K$ be a number field and let $\mathfrak{m}$ be a modulus for $K$. The ray c
 - [Definition 21.2](404-definition-21-2.md)
 - [Definition 21.3](405-definition-21-3.md)
 
+## Proof depends on
+
+- [Lemma 21.7](406-lemma-21-7.md)
+- [Theorem 21.8](407-theorem-21-8.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 21.3](../../../../../sources/v1/NumberTheoryI.md)

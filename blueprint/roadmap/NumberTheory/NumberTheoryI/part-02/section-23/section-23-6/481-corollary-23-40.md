@@ -12,6 +12,12 @@ Let $G$ be a finite cyclic group. Given an exact sequence of $G$-modules $0 \lon
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 23.29](../section-23-5/472-definition-23-29.md)
+- [Definition 23.31](../section-23-5/474-definition-23-31.md)
+- [Theorem 23.32](../section-23-5/475-theorem-23-32.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 23.6](../../../../../../sources/v1/NumberTheoryI.md)

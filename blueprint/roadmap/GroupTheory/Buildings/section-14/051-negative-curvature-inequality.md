@@ -14,6 +14,10 @@ Let $X$ be an affine building with canonical metric $d = d_X$. For $x, y, z \in 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition (Section 14.2)](048-proposition.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 14.3](../../../../sources/v1/Buildings.md)

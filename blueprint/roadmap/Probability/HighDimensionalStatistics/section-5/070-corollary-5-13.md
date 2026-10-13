@@ -14,6 +14,10 @@ The minimax rate of estimation over $\mathbb{R}^d$ in the Gaussian sequence mode
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 5.8 (Pinsker's inequality)](065-pinsker-s-inequality.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Section 5.5](../../../../sources/v1/HighDimensionalStatistics.md)

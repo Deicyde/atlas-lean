@@ -10,10 +10,11 @@ Let $M \subset \mathbb{R}^{n+1}$ be a closed hypersurface of even dimension $n$,
 
 ## Depends on
 
-- [Definition 33.4](../../part-01/lecture-33/108-definition-33-4.md)
+This node has no prerequisites.
 
 ## Proof depends on
 
+- [Definition 33.4](../../part-01/lecture-33/108-definition-33-4.md)
 - [Theorem 34.4 (no proof)](../lecture-34/113-no-proof.md)
 
 ## Sources

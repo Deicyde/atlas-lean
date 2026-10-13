@@ -11,7 +11,7 @@ The map $\phi: U(\mathfrak{n}_{-}) \rightarrow M_{\lambda}$ given by $\phi(x)=xv
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.3](048-definition-8-3.md)
 
 ## Sources
 

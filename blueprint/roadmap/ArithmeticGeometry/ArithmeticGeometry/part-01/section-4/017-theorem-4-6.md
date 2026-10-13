@@ -12,7 +12,7 @@ Every element of $\mathbb{Z}_{p}$ has a unique $p$-adic expansion and every sequ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.5](016-definition-4-5.md)
 
 ## Sources
 

@@ -10,8 +10,12 @@ A simple closed curve is convex if and only if its curvature never changes sign.
 
 ## Depends on
 
-- [Definition 8.1](../chapter-1-lecture-8/025-definition-8-1.md)
 - [Definition 9.2](032-definition-9-2.md)
+- [Definition 8.1](../chapter-1-lecture-8/025-definition-8-1.md)
+
+## Proof depends on
+
+- [Definition 1.2](../chapter-1-lecture-1/002-definition-1-2.md)
 
 ## Sources
 
