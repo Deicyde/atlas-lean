@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: PCP.pcp_theorem_gap3SAT
 ---
 

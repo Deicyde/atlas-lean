@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: Geodesics.hopf_rinow_minimizing_geodesic
 ---
 

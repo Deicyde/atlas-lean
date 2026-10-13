@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: GraphColoringBound.sah_sawhney_colorings_bound
 ---
 

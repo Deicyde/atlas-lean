@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: ProbabilityTheory.domain_of_attraction_of_tail_conditions
 ---
 

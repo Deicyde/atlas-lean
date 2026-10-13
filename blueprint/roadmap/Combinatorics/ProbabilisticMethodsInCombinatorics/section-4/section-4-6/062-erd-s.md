@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: DistinctSums.erdos_conjecture_distinct_subset_sums
 ---
 

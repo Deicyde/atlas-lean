@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: Reparametrization.smooth_increasing_has_smooth_inverse
 ---
 

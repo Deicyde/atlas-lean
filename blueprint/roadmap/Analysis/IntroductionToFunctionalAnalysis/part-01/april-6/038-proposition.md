@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: LpSpaces.continuous_vanishing_endpoints_dense_in_Lp
 ---
 

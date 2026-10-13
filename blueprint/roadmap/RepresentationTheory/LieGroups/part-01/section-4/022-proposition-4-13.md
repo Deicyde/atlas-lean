@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: ContinuousRep.derivedRep_bracket
 ---
 

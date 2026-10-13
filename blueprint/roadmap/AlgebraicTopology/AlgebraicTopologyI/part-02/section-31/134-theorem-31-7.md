@@ -1,7 +1,6 @@
 ---
 declaration: def
 origin: cited
-statement: formalized
 lean: LocalCoefficientSystems.fiberEquivalence
 ---
 

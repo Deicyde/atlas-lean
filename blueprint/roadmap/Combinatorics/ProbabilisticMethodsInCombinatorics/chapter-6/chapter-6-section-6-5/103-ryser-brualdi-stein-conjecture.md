@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: ryser_brualdi_stein_conjecture
 ---
 

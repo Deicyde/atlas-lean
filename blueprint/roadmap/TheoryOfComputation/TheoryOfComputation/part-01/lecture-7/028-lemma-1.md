@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: ChomskyNormalForm.cfg_to_cnf
 ---
 

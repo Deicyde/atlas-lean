@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: ConeSupport.scatteringWavefrontSet_eq_empty_iff
 ---
 

@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: An_Algorithmists_Toolkit.steepest_descent_error_reduction
 ---
 

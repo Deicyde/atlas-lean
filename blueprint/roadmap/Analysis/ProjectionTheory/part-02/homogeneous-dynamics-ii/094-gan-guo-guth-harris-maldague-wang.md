@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: RestrictedProjection.gan_guo_guth_harris_maldague_wang
 ---
 

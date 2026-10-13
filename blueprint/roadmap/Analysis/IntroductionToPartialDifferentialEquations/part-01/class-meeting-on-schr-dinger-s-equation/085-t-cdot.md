@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: SchrodingerEquation.proposition_2_0_3_initial_data_recovery_nD
 ---
 

@@ -1,7 +1,6 @@
 ---
 declaration: def
 origin: cited
-statement: formalized
 lean: CechCohomology.cechCohomology_independent_of_embedding
 ---
 

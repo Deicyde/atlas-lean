@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: Discrepancy.spencer_six_std_dev
 ---
 

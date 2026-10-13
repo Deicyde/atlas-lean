@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: Duhamel.theorem_1_2_duhamel
 ---
 

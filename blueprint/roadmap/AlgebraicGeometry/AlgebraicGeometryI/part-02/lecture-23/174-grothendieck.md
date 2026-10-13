@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: Lec23.effaceable_deltaFunctor_isUniversal
 ---
 

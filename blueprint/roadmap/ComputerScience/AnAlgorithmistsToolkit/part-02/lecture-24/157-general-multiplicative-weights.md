@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: MultiplicativeWeights.general_mw_regret_bound
 ---
 

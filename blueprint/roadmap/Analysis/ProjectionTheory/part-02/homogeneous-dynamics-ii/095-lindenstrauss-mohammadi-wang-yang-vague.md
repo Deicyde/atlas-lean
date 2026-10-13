@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: HomogeneousDynamics.lmwy_quantitative_density
 ---
 

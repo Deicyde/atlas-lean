@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: BourgainKatzTaoRobust.bkt2_robust_projection_bound
 ---
 

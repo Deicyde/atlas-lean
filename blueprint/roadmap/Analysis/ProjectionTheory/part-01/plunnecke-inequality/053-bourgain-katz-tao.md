@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: BourgainKatzTao.bourgain_katz_tao_sumproduct
 ---
 

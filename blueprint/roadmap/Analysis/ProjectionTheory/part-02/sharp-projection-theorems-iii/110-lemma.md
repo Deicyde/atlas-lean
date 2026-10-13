@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: BourgainMultiscale.bourgain_multiscale_decomposition
 ---
 

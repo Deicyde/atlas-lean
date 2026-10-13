@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: LLL.reduced_basis_bounds_lemma5
 ---
 
