@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: martingale_condVar_identity
+---
+
+# Theorem (Conditional variance theorem)
+
+If $X_n$ is a martingale with $E[X_n^2] < \infty$ for all $n$ then $E[(X_n - X_m)^2 \mid \mathcal{F}_m] = E[X_n^2 \mid \mathcal{F}_m] - X_m^2$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.175 Theory of Probability (Spring 2014), Lecture 28](../../../../../sources/v1/TheoryOfProbability.md)

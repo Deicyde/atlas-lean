@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: QuadraticFormEquiv.equivalent_isEquiv
+---
+
+# Definition 9.2
+
+Two quadratic forms $f$ and $g$ are equivalent if $g(v)=f(Tv)$ for some $T \in \mathrm{GL}_{n}(k)$. This defines an equivalence relation on the set of all quadratic forms of the same dimension over the field $k$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 9.1](../../../../../sources/v1/ArithmeticGeometry.md)

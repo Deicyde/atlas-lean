@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: LLL.reduced_basis_bounds_lemma5
+---
+
+# Lemma 5 [3]
+
+For a reduced basis $b_1, \ldots, b_n$ ordered as above, $\prod_{i=1}^{n} \|b_i\| \leq 2^{n(n-1)/4} \det(L)$. Consequently, if we let $H = \operatorname{span}(b_1, \ldots, b_{n-1})$, then $2^{-n(n-1)/4} \|b_n\| \leq \operatorname{dist}(H, b_n) \leq \|b_n\|$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.409 An Algorithmist's Toolkit (Fall 2009), Section 4.2.2](../../../../../sources/v1/AnAlgorithmistsToolkit.md)

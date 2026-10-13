@@ -1,0 +1,18 @@
+---
+declaration: structure
+origin: cited
+statement: formalized
+lean: HeckeAlgebra.GenericAlgebra
+---
+
+# Definition (Section 6.1, after the Theorem statement)
+
+Given a Coxeter system $(W, S)$ and structure constants $a_s, b_s$, the generic algebra $\mathcal{A} = \mathcal{A}(W, S, \{(a_s, b_s) : s \in S\})$ is the associative $R$-algebra determined according to the theorem.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [Paul Garrett, Buildings and Classical Groups, Section 6.1, after the Theorem statement](../../../../sources/v1/Buildings.md)

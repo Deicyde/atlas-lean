@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: HasseWalkFormula.hasseWalkCount_formula
+---
+
+# Theorem 8.6
+
+Let $\ell \geq n$ and $\lambda \vdash n$, with $\ell - n$ even. Then $$\beta(\ell, \lambda) = \binom{\ell}{n}(1 \cdot 3 \cdot 5 \cdots (\ell - n - 1)) f^\lambda.$$
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.318 Topics in Algebraic Combinatorics (Spring 2006), Section 8](../../../../sources/v1/AlgebraicCombinatorics.md)

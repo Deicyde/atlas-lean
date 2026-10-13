@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+lean: MillerRabin.damgard_landrock_pomerance
+---
+
+# Theorem 11.11 (Damgård-Landrock-Pomerance)
+
+Let $N$ be a random odd integer in the interval $[2^{k-1}, 2^k]$ and let $a$
+ be a random integer in $[1, N-1]$. Then $$\operatorname{Pr}[N \text{ is
+ prime} \mid a \text{ is not a witness for } N] \geq 1 - k^2 \cdot
+ 4^{2-\sqrt{k}}.$$
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.783 Elliptic Curves (Spring 2021), Section 11](../../../../../sources/v1/EllipticCurves.md)

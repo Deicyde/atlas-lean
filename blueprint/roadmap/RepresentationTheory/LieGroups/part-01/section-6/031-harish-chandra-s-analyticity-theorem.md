@@ -1,0 +1,18 @@
+---
+declaration: theorem
+origin: cited
+lean: ContinuousRep.theorem_6_3_harish_chandra_analyticity
+---
+
+# Theorem 6.3 (Harish-Chandra's analyticity theorem)
+
+If $V$ is an admissible representation of a semisimple Lie group $G$ with maximal compact subgroup $K$ then every $v \in V^{K\text{-fin}}$ is a weakly analytic vector.
+
+## Depends on
+
+- [Definition 5.1](../section-5/024-definition-5-1.md)
+- [Definition 1.2](../section-1/001-definition-1-2.md)
+
+## Sources
+
+- [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 6.1](../../../../../sources/v1/LieGroups.md)

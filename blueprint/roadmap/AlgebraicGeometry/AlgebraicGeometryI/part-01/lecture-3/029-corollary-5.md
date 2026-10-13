@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: cor5_closed_irreducible_eq_primes
+---
+
+# Corollary 5
+
+We have the following correspondences: irreducible closed subsets in $\operatorname{Spec} A$ correspond to prime ideals in $A$; components correspond to minimal prime ideals (i.e.\ prime ideals not containing any other prime ideals).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.725 Algebraic Geometry (Fall 2015), Lecture 3](../../../../../sources/v1/AlgebraicGeometryI.md)

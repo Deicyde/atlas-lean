@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+lean: RayClassField.Proposition_22_19
+---
+
+# Proposition 22.19
+
+Let $\chi$ be a ray class character of modulus $\mathfrak{m}$ for a number field $K$ of degree $n$. Then $L(s, \chi)$ extends to a meromorphic function on $\operatorname{Re}(s)>1-\frac{1}{n}$ that has at most a simple pole at $s=1$ and is holomorphic if $\chi$ is non-principal.
+
+## Depends on
+
+- [Definition 22.10](428-definition-22-10.md)
+- [Definition 21.2](../../section-21/404-definition-21-2.md)
+- [Definition 22.15](432-definition-22-15.md)
+
+## Sources
+
+- [MIT 18.785 Number Theory I (Fall 2021), Section 22.2](../../../../../../sources/v1/NumberTheoryI.md)

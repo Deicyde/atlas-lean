@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: hodge_representative_exists_unique
+---
+
+# Theorem 5 (Hodge)
+
+For $M$ a compact, oriented Riemannian manifold, every cohomology class has a unique harmonic representative.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.966 Geometry of Manifolds (Spring 2007), Lecture 16](../../../../sources/v1/GeometryOfManifolds.md)

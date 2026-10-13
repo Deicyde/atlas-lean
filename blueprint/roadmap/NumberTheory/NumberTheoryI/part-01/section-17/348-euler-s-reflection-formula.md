@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: FourierAnalysis.euler_reflection_formula
+---
+
+# Theorem 17.13 (Euler's Reflection Formula)
+
+We have $$\Gamma(s) \Gamma(1-s)=\frac{\pi}{\sin (\pi s)}$$ as meromorphic functions on $\mathbb{C}$ with simple poles at each integer $s \in \mathbb{Z}$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.785 Number Theory I (Fall 2021), Section 17.1.2](../../../../../sources/v1/NumberTheoryI.md)

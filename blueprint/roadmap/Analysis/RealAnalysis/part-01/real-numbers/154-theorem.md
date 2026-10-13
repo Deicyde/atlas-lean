@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: RealNumbers.sqrt2_exists_unique
+---
+
+# Theorem (Real Numbers section, Lecture 4)
+
+$\exists! r\in \mathbb{R}$ such that $r>0$ and $r^2 =2$. In other words, $\sqrt 2 \in \mathbb{R}$ but $\sqrt 2 \notin \mathbb{Q}$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.100A Real Analysis (Fall 2020), Real Numbers section, Lecture 4](../../../../../sources/v1/RealAnalysis.md)

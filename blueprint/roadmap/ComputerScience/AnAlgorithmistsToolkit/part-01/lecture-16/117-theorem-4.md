@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+lean: HighDimensional.isoperimetric_sphere_weak
+---
+
+# Theorem 4 [2]
+
+For any $A \subset S^{n-1}$ and any $\epsilon > 0$, $\operatorname{Vol}(A_{\epsilon}) > 1 - \frac{2 e^{-n\epsilon^2/16}}{\operatorname{Vol}(A)}$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.409 An Algorithmist's Toolkit (Fall 2009), Lecture 16](../../../../../sources/v1/AnAlgorithmistsToolkit.md)

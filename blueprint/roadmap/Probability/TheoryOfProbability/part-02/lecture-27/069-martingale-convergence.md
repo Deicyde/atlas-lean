@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: submartingale_ae_convergence
+---
+
+# Theorem (Martingale convergence) [1]
+
+If $X_n$ is a submartingale with $\sup E[X_n^+] < \infty$ then as $n \to \infty$, $X_n$ converges a.s. to a limit $X$ with $E|X| < \infty$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.175 Theory of Probability (Spring 2014), Lecture 27](../../../../../sources/v1/TheoryOfProbability.md)

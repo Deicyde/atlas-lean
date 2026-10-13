@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+lean: PlancherelCompact.plancherel_formula
+---
+
+# Proposition 4.3 (Plancherel's formula)
+
+If $K$ is a compact Lie group and $f \in C^{\infty}(K)$ then $f(1)=\sum_{\rho \in \operatorname{Irr} K} \operatorname{dim} \rho \cdot \operatorname{Tr}\left(\pi_{\rho}(f)\right)$ and this series is absolutely convergent.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 4.1](../../../../../sources/v1/LieGroups.md)

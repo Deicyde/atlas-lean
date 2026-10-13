@@ -1,0 +1,17 @@
+---
+declaration: def
+origin: cited
+lean: CWHomology.cellularHomologyGroup_iso_singularHomologyGroup
+---
+
+# Theorem 16.3
+
+For a CW complex $X$, there is an isomorphism $H_{*}(C_{*}(X)) \cong H_{*}(X)$ natural with respect to filtration-preserving maps between CW complexes.
+
+## Depends on
+
+- [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
+
+## Sources
+
+- [MIT 18.905 Algebraic Topology I (Fall 2016), Chapter 2, Section 16](../../../../../sources/v1/AlgebraicTopologyI.md)

@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Lagrange.counting_formula
+---
+
+# Corollary (Counting Formula)
+
+Let $[G:H]$ be the number of left cosets of $H$, which is called the **index** of $H$ in $G.$ Then $|G| = |H|[G:H]$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT RES.18-011 Algebra I Student Notes (Fall 2021), The Correspondence Theorem, Review](../../../../../sources/v1/AlgebraNotes.md)

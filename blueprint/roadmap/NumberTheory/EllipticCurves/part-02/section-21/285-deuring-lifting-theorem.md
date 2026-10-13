@@ -1,0 +1,23 @@
+---
+declaration: theorem
+origin: cited
+lean: DeuringLifting.deuring_lifting_theorem
+---
+
+# Theorem 21.13 (Deuring lifting theorem)
+
+Let $E/\mathbb{F}_{q}$ be an elliptic curve over a finite field and let $\phi
+ \in \operatorname{End}(E)$ be nonzero. There exists an elliptic curve
+ $E^{*}$ over a number field $L$ with an endomorphism $\phi^{*} \in
+ \operatorname{End}(E^{*})$ such that $E^{*}$ has good reduction modulo a
+ prime $\mathfrak{q}$ of $L$ with residue field $\mathcal{O}_{L}/\mathfrak{q}
+ \simeq \mathbb{F}_{q}$ and $E$ and $\phi$ are the reductions modulo
+ $\mathfrak{q}$ of $E^{*}$ and $\phi^{*}$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.783 Elliptic Curves (Spring 2021), Section 21.6](../../../../../sources/v1/EllipticCurves.md)

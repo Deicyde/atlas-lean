@@ -1,0 +1,18 @@
+---
+declaration: structure
+origin: cited
+statement: formalized
+lean: TuringMachine.TuringEnumerator
+---
+
+# Definition: Turing Enumerator
+
+A Turing Enumerator is a deterministic TM with a printer. It starts on a blank tape and it can print strings $w_1, w_2, w_3, \ldots$, possibly going forever. Its language is the set of all strings it prints. It is a generator, not a recognizer. For enumerator $E$ we say $L(E) = \{w \mid E \text{ prints } w\}$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.404J Theory of Computation (Fall 2020), Lecture 6, Turing Enumerators](../../../../../sources/v1/TheoryOfComputation.md)

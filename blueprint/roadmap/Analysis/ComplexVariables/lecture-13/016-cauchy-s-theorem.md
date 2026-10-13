@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: ClosedCurve.cauchy_theorem
+---
+
+# Theorem 1 (Cauchy's Theorem)
+
+If $f$ is analytic in an open set $\Omega$, then $\int_{\gamma} f(z)\, dz = 0$ for every closed curve $\gamma \subset \Omega$ such that $\gamma \sim 0$. In particular, if $\Omega$ is simply connected then $\int_{\gamma} f(z)\, dz = 0$ for every closed $\gamma \subset \Omega$.
+
+## Depends on
+
+- [Definition 1 \[2\]](014-definition-1.md)
+
+## Sources
+
+- [MIT 18.112 Functions of a Complex Variable (Fall 2008), Lecture 13: The General Cauchy Theorem](../../../../sources/v1/ComplexVariables.md)

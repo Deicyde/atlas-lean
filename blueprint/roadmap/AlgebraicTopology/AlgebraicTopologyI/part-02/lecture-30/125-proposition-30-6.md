@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: SymmetricBilinearForms.nondegenerate_symm_bilinearForm_F2_classification
+---
+
+# Proposition 30.6
+
+Any finite dimensional nondegenerate symmetric bilinear form over $\mathbb{F}_{2}$ splits as an orthogonal direct sum of forms with matrices $[1]$ and $\left[\begin{array}{ll}0 & 1 \\ 1 & 0\end{array}\right]$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.905 Algebraic Topology I (Fall 2016), Lecture 30](../../../../../sources/v1/AlgebraicTopologyI.md)

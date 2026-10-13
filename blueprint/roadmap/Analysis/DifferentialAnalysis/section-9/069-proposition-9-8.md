@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: SobolevHilbert.proposition_9_8
+---
+
+# Proposition 9.8
+
+Each of the Sobolev spaces $H^m(\mathbb{R}^n)$ is a Hilbert space with the norm and inner product $\|u\|_{H^m} = \left(\int_{\mathbb{R}^n} |\hat{u}(\xi)|^2 \langle\xi\rangle^{2m}\, d\xi\right)^{1/2}$ and $\langle u, v\rangle = \int_{\mathbb{R}^n} \hat{u}(\xi) \overline{\hat{v}(\xi)} \langle\xi\rangle^{2m}\, d\xi$. The Schwartz space $\mathcal{S}(\mathbb{R}^n) \hookrightarrow H^m(\mathbb{R}^n)$ is dense for each $m$ and the pairing $H^m(\mathbb{R}^n) \times H^{-m}(\mathbb{R}^n) \ni (u, u') \longmapsto ((u, u')) = \int_{\mathbb{R}^n} \hat{u}(\xi) \overline{\hat{u}'(\xi)}\, d\xi \in \mathbb{C}$ gives an identification $(H^m(\mathbb{R}^n))' = H^{-m}(\mathbb{R}^n)$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.155 Differential Analysis (Fall 2004), Section 9](../../../../sources/v1/DifferentialAnalysis.md)

@@ -1,0 +1,18 @@
+---
+declaration: abbrev
+origin: cited
+statement: formalized
+lean: CategoryTheory.Definition_2_12_1
+---
+
+# Definition 2.12.1
+
+A module functor morphism from $(F, s)$ to $(G, t)$ is a natural transformation $a$ from $F$ to $G$ such that the following diagram commutes for any $X \in \mathcal{C}$, $M \in \mathcal{M}$: the diagram involving $s_{X,M}$, $t_{X,M}$, $a_{X \otimes M}$, and $\mathrm{id}_X \otimes a_M$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.769 Topics in Lie Theory: Tensor Categories (Spring 2009), Section 2.12](../../../../../sources/v1/TensorCategories.md)

@@ -1,0 +1,18 @@
+---
+declaration: instance
+origin: cited
+statement: formalized
+lean: Polynomials.polynomialUFD
+---
+
+# Proposition (Lecture 11, Section: Factorization)
+
+For a field $F$, every polynomial $P \in F[x]$ factors as a product of irreducible polynomials in an essentially unique way (up to rearrangement of the factors or multiplying the factors by scalars).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Lecture 11, Section: Factorization](../../../../../sources/v1/AlgebraNotes.md)

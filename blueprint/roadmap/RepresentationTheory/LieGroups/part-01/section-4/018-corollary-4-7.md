@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+lean: ContinuousRep.kFiniteSubspace_dense
+---
+
+# Corollary 4.7
+
+Let $V$ be a continuous representation of a compact group $K$. Then $V^{\text{fin}}$ is dense in $V$.
+
+## Depends on
+
+- [Definition 1.2](../section-1/001-definition-1-2.md)
+
+## Sources
+
+- [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 4.3](../../../../../sources/v1/LieGroups.md)

@@ -1,0 +1,18 @@
+---
+declaration: instance
+origin: cited
+statement: formalized
+lean: presheaf_category_abelian
+---
+
+# Proposition 14
+
+Presheaf of abelian groups on $k$-vector space is an abelian category.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.725 Algebraic Geometry (Fall 2015), Lecture 11: Sheaf Functors and Quasi-coherent Sheaves](../../../../../sources/v1/AlgebraicGeometryI.md)

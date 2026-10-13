@@ -1,0 +1,9 @@
+# Lecture 5
+
+- [Corollary 1 \[1\]](019-corollary-1.md)
+- [Corollary 2 \[1\]](020-corollary-2.md)
+- [Pumping Lemma for CFLs](021-pumping-lemma-for-cfls.md)
+- [Definition: Turing Machine](022-definition-turing-machine.md)
+- [Definition: Turing-recognizable](023-definition-turing-recognizable.md)
+- [Definition: Decider](024-definition-decider.md)
+- [Definition: Turing-decidable](025-definition-turing-decidable.md)

@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: AffineBuilding.negCurvatureIneq
+---
+
+# Proposition (Negative Curvature Inequality)
+
+Let $X$ be an affine building with canonical metric $d = d_X$. For $x, y, z \in |X|$, let $z_t = tx + (1 - t)y$. Then $d^2(z, z_t) \leq t\, d^2(z, x) + (1 - t)\, d^2(z, y) - t(1 - t)\, d^2(x, y)$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [Paul Garrett, Buildings and Classical Groups, Section 14.3](../../../../sources/v1/Buildings.md)

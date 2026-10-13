@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+lean: hilbert_syzygy_theorem
+---
+
+# Theorem 12.5 (Hilbert syzygies theorem)
+
+We have $H(M, q)=\frac{p(q)}{(1-q)^{n}}$ where $p$ is a polynomial with integer coefficients.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 12.5](../../../../../sources/v1/LieGroups.md)

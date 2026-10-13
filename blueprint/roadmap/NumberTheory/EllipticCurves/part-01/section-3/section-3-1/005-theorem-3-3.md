@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: fields_of_card_prime_isomorphic
+---
+
+# Theorem 3.3
+
+The ring $\mathbb{F}_{p}$ is a field, and every field of characteristic $p$
+ contains a canonical subfield isomorphic to $\mathbb{F}_{p}$. In particular,
+ all fields of cardinality $p$ are isomorphic.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.783 Elliptic Curves (Spring 2021), Section 3.1](../../../../../../sources/v1/EllipticCurves.md)

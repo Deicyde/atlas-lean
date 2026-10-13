@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: irreducible_curves_homeomorphic
+---
+
+# Proposition 6
+
+All irreducible curves over a given field (or even various fields of equal cardinality!) are homeomorphic.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.725 Algebraic Geometry (Fall 2015), Lecture 5](../../../../../sources/v1/AlgebraicGeometryI.md)

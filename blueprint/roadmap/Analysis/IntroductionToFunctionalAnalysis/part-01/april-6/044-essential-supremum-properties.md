@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: LpSpaces.essSup_properties
+---
+
+# Proposition (Essential supremum properties)
+
+If $f: E \to \mathbb{C}$ is measurable, then $|f(x)| \leq ||f||_{L^{\infty}(E)}$ almost everywhere on $E$. Also, if $E = [a, b]$ is a closed interval and $f \in C([a, b])$, then $||f||_{L^\infty([a, b])} = ||f||_{\infty}$ is the usual sup norm on bounded continuous functions.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.102 Introduction to Functional Analysis (Spring 2021), April 6, 2021 section](../../../../../sources/v1/IntroductionToFunctionalAnalysis.md)

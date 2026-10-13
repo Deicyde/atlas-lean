@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Sequences.IsSubsequence
+---
+
+# Definition (Subsequence) [2]
+
+Let $\{x_n\}$ be a sequence and let $\{n_k\}$ be a strictly increasing sequence of natural numbers. Then the sequence $\{x_{n_k}\}_{k=1}^\infty$ is called a subsequence of $\{x_n\}$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.100A Real Analysis (Fall 2020), Convergent Sequences of the Real Numbers section](../../../../../sources/v1/RealAnalysis.md)

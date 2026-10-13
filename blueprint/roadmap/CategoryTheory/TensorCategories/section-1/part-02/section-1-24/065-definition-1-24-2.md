@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: IsPrimitiveElement
+---
+
+# Definition 1.24.2
+
+An element $x$ of a bialgebra $H$ is called primitive if $\Delta(x) = x \otimes 1 + 1 \otimes x$. The space of primitive elements of $H$ is denoted $\operatorname{Prim}(H)$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.769 Topics in Lie Theory: Tensor Categories (Spring 2009), Section 1.24](../../../../../../sources/v1/TensorCategories.md)

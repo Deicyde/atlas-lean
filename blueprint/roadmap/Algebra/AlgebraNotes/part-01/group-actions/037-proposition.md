@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: GroupActions.orbitEquivQuotientStabilizer
+---
+
+# Proposition (Group Actions, The Counting Formula)
+
+Fix some $s \in S$ and let $H \coloneqq \operatorname{Stab}(s).$ Then there exists a bijection $\varepsilon$ from the quotient group $G/H$ to the orbit of $s,$ $O_s.$ It takes $G/H \xrightarrow{\varepsilon} O_s$, $gH \mapsto gs.$
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Group Actions, The Counting Formula](../../../../../sources/v1/AlgebraNotes.md)

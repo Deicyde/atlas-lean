@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: GaloisTheory.symmetric_group_not_solvable
+---
+
+# Proposition (Lecture 31, Quintic Equations)
+
+$S_n$ is not solvable for $n \geq 5$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Lecture 31, Quintic Equations](../../../../../sources/v1/AlgebraNotes.md)

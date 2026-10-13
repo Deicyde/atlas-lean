@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: taylorPolynomial
+---
+
+# Definition (Taylor Polynomial and Remainder)
+
+$P_n(x)$ is the $n$-th order Taylor polynomial for $f$ at $x_0$. $R_n(x)$ is the $n$-th order remainder term.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.100A Real Analysis (Fall 2020), Taylor's Theorem section](../../../../../sources/v1/RealAnalysis.md)

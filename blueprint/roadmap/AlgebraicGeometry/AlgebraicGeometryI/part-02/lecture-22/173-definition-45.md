@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: DerivedFunctorsDefs.rightDerivedFunctor
+---
+
+# Definition 45
+
+The universal $\delta$-functor is called the derived functor, and is of course unique if it exists. We denote it by $\mathcal{R}^i F$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.725 Algebraic Geometry (Fall 2015), Lecture 22, Cohomology of quasicoherent sheaves](../../../../../sources/v1/AlgebraicGeometryI.md)

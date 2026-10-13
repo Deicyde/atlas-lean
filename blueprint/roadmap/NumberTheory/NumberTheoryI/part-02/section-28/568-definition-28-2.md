@@ -1,0 +1,17 @@
+---
+declaration: structure
+origin: cited
+lean: GlobalArtinMap
+---
+
+# Definition 28.2
+
+Let $K$ be a global field. The global Artin homomorphism is the continuous homomorphism $\theta_{K}: \mathbb{I}_{K} \rightarrow \varprojlim_{L} \operatorname{Gal}(L / K) \simeq \operatorname{Gal}\left(K^{\mathrm{ab}} / K\right)$ defined by the compatible system of homomorphisms $\theta_{L / K}: \mathbb{I}_{K} \rightarrow \operatorname{Gal}(L / K)$, where $L$ ranges over finite abelian extensions of $K$ in $K^{\mathrm{ab}}$.
+
+## Depends on
+
+- [Definition 26.2](../section-26/542-definition-26-2.md)
+
+## Sources
+
+- [MIT 18.785 Number Theory I (Fall 2021), Section 28.2](../../../../../sources/v1/NumberTheoryI.md)

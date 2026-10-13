@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+lean: OrthonormalBases.inner_hasSum_of_orthonormal_series
+---
+
+# Proposition 2 [3]
+
+Let $\varphi_n$ be an orthonormal sequence in a Hilbert space $H$, and $\sum |a_n|^2 < \infty$, $\sum |b_n|^2 < \infty$. Then $u = \sum_{n=1}^{\infty} a_n \varphi_n$, $v = \sum_{n=1}^{\infty} b_n \varphi_n$ are convergent series in $H$ norm and $\langle u, v \rangle = \sum_{n=1}^{\infty} a_n \overline{b_n}$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.103 Fourier Analysis (Fall 2013), Orthonormal Bases](../../../../sources/v1/FourierAnalysis.md)

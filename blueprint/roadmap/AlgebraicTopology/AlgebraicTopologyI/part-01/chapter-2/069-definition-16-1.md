@@ -1,0 +1,18 @@
+---
+declaration: abbrev
+origin: cited
+statement: formalized
+lean: CWComplex.cellularChains
+---
+
+# Definition 16.1
+
+The group of cellular $n$-chains in a CW complex $X$ is $C_{k}(X) \coloneqq H_{k}(X_{k}, X_{k-1}) = \mathbb{Z}[A_{k}]$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.905 Algebraic Topology I (Fall 2016), Chapter 2, Section 16](../../../../../sources/v1/AlgebraicTopologyI.md)

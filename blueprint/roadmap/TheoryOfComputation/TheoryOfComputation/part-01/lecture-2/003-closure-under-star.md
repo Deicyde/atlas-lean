@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: RegularLanguages.regular_star
+---
+
+# Theorem (Closure under star)
+
+If $A$ is a regular language, so is $A^*$ (the class of regular languages is closed under star).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.404J Theory of Computation (Fall 2020), Lecture 2, Closure under * (star)](../../../../../sources/v1/TheoryOfComputation.md)

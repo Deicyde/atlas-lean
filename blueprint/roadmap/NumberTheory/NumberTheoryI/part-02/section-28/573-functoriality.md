@@ -1,0 +1,17 @@
+---
+declaration: def
+origin: cited
+lean: theorem_28_8_functoriality
+---
+
+# Theorem 28.8 (Functoriality)
+
+Let $K$ be a global field and let $L / K$ be any finite separable extension (not necessarily abelian). Then the following diagram commutes: $C_L \xrightarrow{\theta_L} \operatorname{Gal}(L^{\mathrm{ab}}/L)$ with $C_L \xrightarrow{\mathrm{N}_{L/K}} C_K$ and $\operatorname{Gal}(L^{\mathrm{ab}}/L) \to \operatorname{Gal}(K^{\mathrm{ab}}/K)$, $C_K \xrightarrow{\theta_K} \operatorname{Gal}(K^{\mathrm{ab}}/K)$.
+
+## Depends on
+
+- [Definition 28.2](568-definition-28-2.md)
+
+## Sources
+
+- [MIT 18.785 Number Theory I (Fall 2021), Section 28.3](../../../../../sources/v1/NumberTheoryI.md)

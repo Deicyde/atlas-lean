@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: LatticeBasics.successiveMinimum
+---
+
+# Definition (Successive minima)
+
+The $i$th successive minimum of lattice $\Lambda$, $\lambda_i(\Lambda)$, is defined to be $\inf\{r \mid \dim(\operatorname{span}(\Lambda \cap \bar{B}(0,r))) \geq i\}$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.409 An Algorithmist's Toolkit (Fall 2009), Lecture 18, Section 2](../../../../../sources/v1/AnAlgorithmistsToolkit.md)

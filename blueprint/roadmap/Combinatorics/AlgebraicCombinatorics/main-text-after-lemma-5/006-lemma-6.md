@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: circulantHadamard_eigenvalue_factorization
+---
+
+# Lemma 6
+
+For all $0 \leq j \leq n-1$ there is an integer $h_{j} \geq 0$ such that $a_{0} + a_{1} \zeta^{j} + a_{2} \zeta^{2j} + \cdots + a_{n-1} \zeta^{(n-1)j} = v_{j}(1 - \zeta)^{h_{j}}$, where $v_{j}$ is a unit in $\mathbb{Z}[\zeta]$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.318 Topics in Algebraic Combinatorics (Spring 2006), Main text (after Lemma 5)](../../../../sources/v1/AlgebraicCombinatorics.md)

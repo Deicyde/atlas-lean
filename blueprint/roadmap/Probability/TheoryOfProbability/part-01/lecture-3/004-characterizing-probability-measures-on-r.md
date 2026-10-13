@@ -1,0 +1,18 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: exists_unique_borelMeasure_of_rectangleFunction
+---
+
+# Theorem (characterizing probability measures on R^d)
+
+Given $F$, there is a unique measure whose values on finite rectangles are determined by taking differences of $F$ applied to vertices, provided that $F$ is non-decreasing, right-continuous, and assigns a non-negative value to each rectangle.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.175 Theory of Probability (Spring 2014), Lecture 3, section 'Characterizing probability measures on R^d'](../../../../../sources/v1/TheoryOfProbability.md)

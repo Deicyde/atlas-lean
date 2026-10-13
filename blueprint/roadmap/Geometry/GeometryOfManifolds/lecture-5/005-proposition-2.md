@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: WeinsteinNeighborhood.lagrangianQuotientDualEquiv
+---
+
+# Proposition 2 [1]
+
+Let $X \hookrightarrow (M, \omega)$ be a Lagrangian submanifold. Then $NX \xrightarrow{\sim} T^{*}X$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.966 Geometry of Manifolds (Spring 2007), Lecture 5, Section 1 (Tubular Neighborhoods)](../../../../sources/v1/GeometryOfManifolds.md)

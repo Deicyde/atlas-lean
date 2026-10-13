@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: GraphProperty.coarse_threshold_rational_exponent
+---
+
+# Corollary 4.3.15 (of Friedgut's sharp threshold theorem)
+
+Suppose $r(n)$ is a coarse threshold of some graph property. Then there is a partition $\mathbb{N} = N_1 \cup \cdots \cup N_k$ and rationals $\alpha_1, \ldots, \alpha_k > 0$ such that $r(n) \asymp n^{-\alpha_j}$ for every $n \in N_j$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Section 4.3](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)
