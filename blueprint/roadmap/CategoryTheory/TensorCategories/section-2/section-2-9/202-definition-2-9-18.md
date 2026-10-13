@@ -12,6 +12,10 @@ We say that two algebras $A$ and $B$ in $\mathcal{C}$ are Morita equivalent if t
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 2.1.1](../section-2-1/174-definition-2-1-1.md)
+
 ## Sources
 
 - [MIT 18.769 Topics in Lie Theory: Tensor Categories (Spring 2009), Section 2.9](../../../../../sources/v1/TensorCategories.md)

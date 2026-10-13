@@ -11,6 +11,10 @@ Let $X$ be a geodesic metric space. $X$ is called nonpositively curved in the se
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 40.1](140-definition-40-1.md)
 
 ## Sources

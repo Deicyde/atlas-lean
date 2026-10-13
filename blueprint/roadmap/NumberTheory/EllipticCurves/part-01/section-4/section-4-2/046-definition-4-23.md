@@ -15,6 +15,10 @@ A morphism from an elliptic curve $E/k$ to itself that fixes the
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 4.18](043-definition-4-18.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 4.2](../../../../../../sources/v1/EllipticCurves.md)

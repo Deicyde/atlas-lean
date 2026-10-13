@@ -10,7 +10,8 @@ The cohomology cross product $\times \colon H^{*}(X) \otimes H^{*}(Y) \rightarro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.3](../../part-01/chapter-1/chapter-1-section-5/019-definition-5-3.md)
+- [Definition 26.5](../../part-01/section-26/111-definition-26-5.md)
 
 ## Sources
 

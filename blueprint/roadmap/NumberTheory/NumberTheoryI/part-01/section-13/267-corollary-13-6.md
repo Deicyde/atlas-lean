@@ -12,6 +12,10 @@ Let $L/K$ be a finite separable extension of global fields, $v$ be a place of $K
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition 8.11](../section-8/182-proposition-8-11.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 13.1](../../../../../sources/v1/NumberTheoryI.md)

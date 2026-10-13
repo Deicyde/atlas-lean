@@ -12,7 +12,13 @@ lean: GraphIsoPoset.graph_poset_max_antichain_level
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.4](017-definition-5-4.md)
+
+## Proof depends on
+
+- [Theorem 4.7](../section-4/015-theorem-4-7.md)
+- [Lemma 4.5](../section-4/013-lemma-4-5.md)
+- [Proposition 5.6](018-proposition-5-6.md)
 
 ## Sources
 

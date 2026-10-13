@@ -10,8 +10,12 @@ The action of $G$ on $V$ is completely determined by the corresponding $(\mathfr
 
 ## Depends on
 
-- [Definition 5.1](../section-5/024-definition-5-1.md)
 - [Definition 1.2](../section-1/001-definition-1-2.md)
+- [Definition 5.1](../section-5/024-definition-5-1.md)
+
+## Proof depends on
+
+- [Definition 2.1](../section-2/005-definition-2-1.md)
 
 ## Sources
 

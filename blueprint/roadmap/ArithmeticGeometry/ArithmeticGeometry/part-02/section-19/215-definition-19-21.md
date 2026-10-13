@@ -11,7 +11,7 @@ Let $C/k$ be a curve and let $F/k$ be the corresponding function field. If $P$ i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 19.6](203-definition-19-6.md)
 
 ## Sources
 

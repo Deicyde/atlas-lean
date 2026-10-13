@@ -12,10 +12,7 @@ Assume $AKLBG$ with finite residue fields and let $\mathfrak{q} \mid \mathfrak{p
 
 ## Depends on
 
-This node has no prerequisites.
-
-## Proof depends on
-
+- [Definition 7.16](../section-7-3/164-definition-7-16.md)
 - [Proposition 7.17](../section-7-3/165-proposition-7-17.md)
 
 ## Sources

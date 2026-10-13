@@ -12,6 +12,11 @@ Let $V$ be a finite-dimensional $\mathfrak{g}$-module and $\lambda \in \mathfrak
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 14.1 (Harish-Chandra)](../section-14/080-harish-chandra.md)
+- [Definition 8.1](../section-8/046-definition-8-1.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 18.3](../../../../../sources/v1/LieGroups.md)

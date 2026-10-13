@@ -13,6 +13,14 @@ Assume that the linear model (2.2) holds where $\varepsilon \sim \mathsf{subG}_n
 
 - [Definition 1.2](../chapter-1/002-definition-1-2.md)
 
+## Proof depends on
+
+- [Definition 1.17](../section-1/017-definition-1-17.md)
+- [Definition 2.12](029-definition-2-12.md)
+- [Lemma 1.18](../section-1/018-lemma-1-18.md)
+- [Lemma 2.7](024-lemma-2-7.md)
+- [Theorem 1.6](../section-1/006-theorem-1-6.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Chapter 2, Section 2.4](../../../../sources/v1/HighDimensionalStatistics.md)

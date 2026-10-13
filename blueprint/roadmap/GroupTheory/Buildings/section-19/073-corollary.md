@@ -12,6 +12,10 @@ If $k$ is locally compact then the apartment system $\mathcal{A}$ constructed ab
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition (Section 17.7)](../section-17/067-proposition.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 19.5](../../../../sources/v1/Buildings.md)

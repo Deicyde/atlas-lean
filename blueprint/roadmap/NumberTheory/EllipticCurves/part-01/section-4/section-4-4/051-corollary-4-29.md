@@ -13,7 +13,11 @@ Let $\alpha: E_{1} \rightarrow E_{2}$ be an isogeny of elliptic curves
 ## Depends on
 
 - [Definition 4.18](../section-4-2/043-definition-4-18.md)
+
+## Proof depends on
+
 - [Lemma 4.26](048-lemma-4-26.md)
+- [Corollary 4.28](050-corollary-4-28.md)
 
 ## Sources
 

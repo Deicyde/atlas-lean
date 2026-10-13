@@ -13,6 +13,10 @@ The maximal future development of $S$, which we denote by $\mathcal{D}^{+}(S)$, 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 3.0.3 (Development)](063-development.md)
+
 ## Sources
 
 - [MIT 18.152 Introduction to Partial Differential Equations (Fall 2011), Class Meeting #13, Section 3](../../../../../sources/v1/IntroductionToPartialDifferentialEquations.md)

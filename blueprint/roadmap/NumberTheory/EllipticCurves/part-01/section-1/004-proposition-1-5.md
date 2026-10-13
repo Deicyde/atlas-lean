@@ -15,6 +15,10 @@ Let $f(x, y) \in k[x, y]$ be an irreducible nondegenerate polynomial in
 
 - [Definition 1.3](003-definition-1-3.md)
 
+## Proof depends on
+
+- [Definition 1.1](001-definition-1-1.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 1.1](../../../../../sources/v1/EllipticCurves.md)

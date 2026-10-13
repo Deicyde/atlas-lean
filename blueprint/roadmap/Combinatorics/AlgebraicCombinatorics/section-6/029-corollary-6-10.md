@@ -16,6 +16,11 @@ The posets $L(m, n)$ are rank-symmetric, rank-unimodal, and Sperner.
 
 ## Proof depends on
 
+- [Theorem 4.7](../section-4/015-theorem-4-7.md)
+- [Theorem 5.9](../section-5/021-theorem-5-9.md)
+- [Theorem 6.9](028-theorem-6-9.md)
+- [Definition 5.4](../section-5/017-definition-5-4.md)
+- [Lemma 4.5](../section-4/013-lemma-4-5.md)
 - [Proposition 6.2](023-proposition-6-2.md)
 
 ## Sources

@@ -15,6 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Definition 21.11](410-definition-21-11.md)
 - [Theorem 21.15](414-theorem-21-15.md)
 
 ## Sources

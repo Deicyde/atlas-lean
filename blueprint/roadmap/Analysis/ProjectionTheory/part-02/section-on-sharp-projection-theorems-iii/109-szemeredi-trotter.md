@@ -12,6 +12,10 @@ If $E \subset \mathbb{R}^2$ is a set of $N$ points and $L_R(E)$ the set of $R$-r
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Szemeredi-Trotter) (Section 'The Szemeredi-Trotter theorem')](../../part-01/section-the-szemeredi-trotter-theorem/046-szemeredi-trotter.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section on Sharp Projection Theorems III, Subsection on Well spaced case](../../../../../sources/v1/ProjectionTheory.md)

@@ -14,6 +14,10 @@ In a field of positive characteristic every absolute value is nonarchimedean, an
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 1.4](002-lemma-1-4.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 1.2](../../../../../../sources/v1/NumberTheoryI.md)

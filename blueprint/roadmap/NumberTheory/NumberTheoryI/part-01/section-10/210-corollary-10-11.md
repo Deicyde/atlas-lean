@@ -14,6 +14,10 @@ Let $A$ be a local noetherian ring with maximal ideal $\mathfrak{p}$, let $g \in
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary 10.10](209-corollary-10-10.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 10.1](../../../../../sources/v1/NumberTheoryI.md)

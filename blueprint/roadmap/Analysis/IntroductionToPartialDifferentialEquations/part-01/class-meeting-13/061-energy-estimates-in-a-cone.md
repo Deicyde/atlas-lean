@@ -13,6 +13,14 @@ Let $\phi(t,x)$ be a $C^{2}$ solution to the $1+n$ dimensional global Cauchy pro
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 1.0.2 (Class Meeting #13, Section 1)](058-definition-1-0-2.md)
+- [Corollary 1.0.3](059-corollary-1-0-3.md)
+- [Lemma 1.0.1 (Dominant Energy Condition for $T_{\mu \nu}$)](056-dominant-energy-condition-for-t-mu-nu.md)
+- [Definition 1.0.1 (Class Meeting #13, Section 1)](055-definition-1-0-1.md)
+- [Theorem 1.1 (Divergence Theorem)](060-divergence-theorem.md)
+
 ## Sources
 
 - [MIT 18.152 Introduction to Partial Differential Equations (Fall 2011), Class Meeting #13, Section 2](../../../../../sources/v1/IntroductionToPartialDifferentialEquations.md)

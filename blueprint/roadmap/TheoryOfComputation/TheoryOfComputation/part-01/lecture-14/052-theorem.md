@@ -13,6 +13,11 @@ If $A \leq_P B$ and $B \in \mathsf{P}$ then $A \in \mathsf{P}$.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+- [Definition: Decider](../lecture-5/024-definition-decider.md)
+
 ## Sources
 
 - [MIT 18.404J Theory of Computation (Fall 2020), Lecture 14, section on Polynomial Time Reducibility](../../../../../sources/v1/TheoryOfComputation.md)

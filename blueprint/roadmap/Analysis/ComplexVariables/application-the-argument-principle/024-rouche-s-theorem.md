@@ -13,6 +13,10 @@ Let $f$ and $g$ be holomorphic in a region $\Omega$. Let $\gamma$ be a simple cl
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 18'](023-theorem-18.md)
+
 ## Sources
 
 - [MIT 18.112 Functions of a Complex Variable (Fall 2008), Application: The Argument Principle](../../../../sources/v1/ComplexVariables.md)

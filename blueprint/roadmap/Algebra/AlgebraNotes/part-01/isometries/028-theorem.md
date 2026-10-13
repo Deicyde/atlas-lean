@@ -12,6 +12,10 @@ Every isometry on $\mathbb{R}^2$ is (1) Translation, (2) Rotation around a point
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition (Section: Isometries, Subsection: Isometries in 2-space)](027-definition.md)
 
 ## Sources

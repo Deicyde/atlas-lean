@@ -12,6 +12,12 @@ Let $X_1, \ldots, X_n$ be $n$ i.i.d. copies of a sub-Gaussian random vector $X \
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 1.17](../section-1/017-definition-1-17.md)
+- [Theorem 4.8 (Davis-Kahan $\sin(\theta)$ theorem)](056-theta.md)
+- [Lemma 1.18](../section-1/018-lemma-1-18.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Section 4.4](../../../../sources/v1/HighDimensionalStatistics.md)

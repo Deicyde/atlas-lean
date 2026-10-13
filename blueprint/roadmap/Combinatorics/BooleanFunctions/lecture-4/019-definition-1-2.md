@@ -11,6 +11,10 @@ For a function $f \colon \{-1,1\}^n \to \{0,1\}$, the total influence of $f$ is 
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 1.1](018-definition-1-1.md)
 
 ## Sources

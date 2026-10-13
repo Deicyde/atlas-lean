@@ -14,6 +14,11 @@ Let $X \in \mathbb{R}^d$ be a sub-Gaussian random vector with variance proxy $\s
 
 - [Definition 1.2](../chapter-1/002-definition-1-2.md)
 
+## Proof depends on
+
+- [Definition 1.17](017-definition-1-17.md)
+- [Lemma 1.18](018-lemma-1-18.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Section 1.4](../../../../sources/v1/HighDimensionalStatistics.md)

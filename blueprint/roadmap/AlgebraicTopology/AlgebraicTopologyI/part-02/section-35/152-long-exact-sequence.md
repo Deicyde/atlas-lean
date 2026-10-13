@@ -12,6 +12,11 @@ Let $(K, L)$ be a closed pair in $X$. There is a long exact sequence $\cdots \ri
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 34.4](../section-34/149-definition-34-4.md)
+- [Definition 26.8](../../part-01/section-26/113-definition-26-8.md)
+
 ## Sources
 
 - [MIT 18.905 Algebraic Topology I (Fall 2016), Section 35](../../../../../sources/v1/AlgebraicTopologyI.md)

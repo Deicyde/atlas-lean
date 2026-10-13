@@ -14,6 +14,10 @@ The decomposition of an étale algebra into field extensions is unique up to per
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition 4.32](083-proposition-4-32.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 4.2](../../../../../../sources/v1/NumberTheoryI.md)

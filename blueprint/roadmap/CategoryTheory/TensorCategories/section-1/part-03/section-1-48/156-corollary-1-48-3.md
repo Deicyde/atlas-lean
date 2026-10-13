@@ -12,6 +12,10 @@ The assignment $H \mapsto \operatorname{Rep}(H)$ defines a bijection between int
 
 - [Definition 1.35.2](../../part-02/section-1-35/106-definition-1-35-2.md)
 
+## Proof depends on
+
+- [Definition 1.34.5](../../part-02/section-1-34/101-definition-1-34-5.md)
+
 ## Sources
 
 - [MIT 18.769 Topics in Lie Theory: Tensor Categories (Spring 2009), Section 1.48](../../../../../../sources/v1/TensorCategories.md)

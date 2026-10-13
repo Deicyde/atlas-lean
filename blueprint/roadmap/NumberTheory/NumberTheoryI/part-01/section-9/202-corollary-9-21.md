@@ -13,6 +13,10 @@ Let $A$ be a complete DVR with fraction field $K$, and let $L/K$ be a finite ext
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 9.20 (Hensel-Kürschák lemma)](201-hensel-k-rsch-k-lemma.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 9.2](../../../../../sources/v1/NumberTheoryI.md)

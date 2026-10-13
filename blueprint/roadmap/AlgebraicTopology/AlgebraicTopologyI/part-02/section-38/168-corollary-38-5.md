@@ -10,6 +10,10 @@ If $K$ is a compact subset of $\mathbb{R}^{n}$ then $\check{H}^{n}(K; R) = 0$.
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Theorem 37.1 (Fully relative Poincaré duality)](../section-37/160-fully-relative-poincar-duality.md)
 
 ## Sources

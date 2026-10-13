@@ -12,12 +12,15 @@ Two lattices $L$ and $L^{\prime}$ are homothetic if and only if the
 
 ## Depends on
 
-- [Definition 15.4](205-definition-15-4.md)
 - [Definition 14.1](../section-14/section-14-1/174-definition-14-1.md)
+- [Definition 15.4](205-definition-15-4.md)
 
 ## Proof depends on
 
+- [Lemma 14.33](../section-14/section-14-5/201-lemma-14-33.md)
+- [Definition 14.19](../section-14/section-14-3/190-definition-14-19.md)
 - [Theorem 15.5](206-theorem-15-5.md)
+- [Theorem 13.13](../section-13/168-theorem-13-13.md)
 
 ## Sources
 

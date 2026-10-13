@@ -12,6 +12,7 @@ Let $f\in C([a,b])$. Then, there exists a unique number denoted $\int_a^b f(x)\,
 
 ## Depends on
 
+- [Definition (Partition) (The Riemann Integral section)](065-partition.md)
 - [Definition (Tag) (The Riemann Integral section)](066-tag.md)
 - [Definition (Riemann sum) (The Riemann Integral section)](067-riemann-sum.md)
 

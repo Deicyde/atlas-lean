@@ -13,6 +13,10 @@ The \v{C}ech cohomology of $K$ is $\check{H}^{p}(K) = \varinjlim_{U \in \mathcal
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 26.5](../../part-01/section-26/111-definition-26-5.md)
+
 ## Sources
 
 - [MIT 18.905 Algebraic Topology I (Fall 2016), Section 34](../../../../../sources/v1/AlgebraicTopologyI.md)

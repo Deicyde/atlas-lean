@@ -10,7 +10,7 @@ The right action of $\mathfrak{g}$ on $\mathbf{M}(\lambda, \mu)$ is given by the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.3](../section-8/048-definition-8-3.md)
 
 ## Sources
 

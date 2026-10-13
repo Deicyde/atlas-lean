@@ -15,6 +15,9 @@ Let $n>2$ be an integer and let $E / \mathbb{F}_{q}$ be an elliptic curve
 ## Depends on
 
 - [Definition 23.32](../section-23-7/318-definition-23-32.md)
+
+## Proof depends on
+
 - [Definition 23.23](../section-23-5/310-definition-23-23.md)
 
 ## Sources

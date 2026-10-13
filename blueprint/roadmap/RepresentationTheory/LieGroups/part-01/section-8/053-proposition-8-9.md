@@ -12,6 +12,11 @@ For every $\lambda \in \mathfrak{h}^*$, the Verma module $M_{\lambda}$ has a uni
 
 - [Definition 8.3](048-definition-8-3.md)
 
+## Proof depends on
+
+- [Proposition 8.5](050-proposition-8-5.md)
+- [Proposition 8.8](052-proposition-8-8.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 8, Subsection 8.3](../../../../../sources/v1/LieGroups.md)

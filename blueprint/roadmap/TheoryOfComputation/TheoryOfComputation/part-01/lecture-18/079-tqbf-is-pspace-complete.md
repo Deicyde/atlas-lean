@@ -14,7 +14,11 @@ $\mathrm{TQBF}$ is $\mathsf{PSPACE}$-complete.
 
 ## Proof depends on
 
+- [Definition (SPACE complexity)](../lecture-17/064-space-complexity.md)
+- [Definition (Quantified Boolean Formula and TQBF)](../lecture-17/069-quantified-boolean-formula-and-tqbf.md)
 - [Theorem ($TQBF \in PSPACE$)](../lecture-17/070-tqbf-in-pspace.md)
+- [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+- [Definition: Decider](../lecture-5/024-definition-decider.md)
 
 ## Sources
 

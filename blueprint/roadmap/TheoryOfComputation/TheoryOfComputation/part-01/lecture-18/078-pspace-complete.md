@@ -13,6 +13,10 @@ $B$ is $\mathsf{PSPACE}$-complete if (1) $B \in \mathsf{PSPACE}$, and (2) for al
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+
 ## Sources
 
 - [MIT 18.404J Theory of Computation (Fall 2020), Lecture 18](../../../../../sources/v1/TheoryOfComputation.md)

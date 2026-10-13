@@ -15,6 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Definition 1.2](../chapter-1/002-definition-1-2.md)
 - [Lemma 4.2](051-lemma-4-2.md)
 
 ## Sources

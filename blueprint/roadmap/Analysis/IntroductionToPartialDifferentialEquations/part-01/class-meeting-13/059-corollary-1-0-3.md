@@ -14,6 +14,10 @@ We have that $\partial_{\mu}({}^{(X)} J^{\mu})=T^{\alpha \beta} {}^{(X)} \pi_{\a
 
 - [Definition 1.0.1 (Class Meeting #13, Section 1)](055-definition-1-0-1.md)
 
+## Proof depends on
+
+- [Definition 1.0.2 (Class Meeting #13, Section 1)](058-definition-1-0-2.md)
+
 ## Sources
 
 - [MIT 18.152 Introduction to Partial Differential Equations (Fall 2011), Class Meeting #13, Section 1](../../../../../sources/v1/IntroductionToPartialDifferentialEquations.md)

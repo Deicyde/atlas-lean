@@ -10,7 +10,15 @@ Let $\mathcal{A}$ be a cover of a space $X$. The inclusion $S_{*}^{\mathcal{A}}(
 
 ## Depends on
 
+- [Definition 5.3](../chapter-1/chapter-1-section-5/019-definition-5-3.md)
 - [Definition 11.2](../section-11/052-definition-11-2.md)
+
+## Proof depends on
+
+- [Definition 11.3](../section-11/053-definition-11-3.md)
+- [Definition 1.3](../chapter-1/chapter-1-section-1/003-definition-1-3.md)
+- [Definition 1.2](../chapter-1/chapter-1-section-1/002-definition-1-2.md)
+- [Lemma 13.2](059-lemma-13-2.md)
 
 ## Sources
 

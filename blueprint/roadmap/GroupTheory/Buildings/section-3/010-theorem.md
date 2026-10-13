@@ -12,6 +12,10 @@ A thin chamber complex is a Coxeter complex if and only if any two adjacent cham
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Section 1.7)](../section-1/004-theorem.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 3.5](../../../../sources/v1/Buildings.md)

@@ -12,12 +12,14 @@ Let $G$ be a subgroup of $\mathfrak{S}_{n}$. Then the quotient poset $B_{n} / G$
 
 ## Depends on
 
-- [Definition 5.4](017-definition-5-4.md)
 - [Definition 4.2](../section-4/011-definition-4-2.md)
+- [Definition 5.4](017-definition-5-4.md)
 
 ## Proof depends on
 
+- [Theorem 4.7](../section-4/015-theorem-4-7.md)
 - [Proposition 4.4](../section-4/012-proposition-4-4.md)
+- [Lemma 4.5](../section-4/013-lemma-4-5.md)
 
 ## Sources
 

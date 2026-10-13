@@ -15,6 +15,11 @@ Let $E$ be an elliptic curve over $\mathbb{F}_{q}$ with $q=p^{n}$. If $n$ is
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 6.2](../chapter-6/089-definition-6-2.md)
+- [Theorem 13.3](161-theorem-13-3.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 13.1](../../../../../sources/v1/EllipticCurves.md)

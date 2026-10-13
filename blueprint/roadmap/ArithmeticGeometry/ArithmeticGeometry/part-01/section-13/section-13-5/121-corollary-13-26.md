@@ -12,6 +12,10 @@ The dimension, coordinate ring, and function field of an affine variety are equa
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 13.23](119-theorem-13-23.md)
+
 ## Sources
 
 - [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 13.5](../../../../../../sources/v1/ArithmeticGeometry.md)

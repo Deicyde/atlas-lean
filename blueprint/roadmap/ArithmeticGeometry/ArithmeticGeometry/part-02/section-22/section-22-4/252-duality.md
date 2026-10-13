@@ -11,8 +11,13 @@ For any divisor $D$ and canonical divisor $W = \operatorname{div} \omega$, the l
 
 ## Depends on
 
-- [Definition 21.2](../../section-21/225-definition-21-2.md)
+- [Definition 19.6](../../section-19/203-definition-19-6.md)
 - [Definition 19.11](../../section-19/207-definition-19-11.md)
+- [Definition 21.2](../../section-21/225-definition-21-2.md)
+
+## Proof depends on
+
+- [Definition 21.1](../../section-21/224-definition-21-1.md)
 
 ## Sources
 

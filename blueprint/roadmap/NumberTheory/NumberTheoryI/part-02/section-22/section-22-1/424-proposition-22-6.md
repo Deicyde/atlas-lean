@@ -11,8 +11,8 @@ Let $\mathcal{C}_{1} \sim \mathcal{C}_{2}$ be congruence subgroups of modulus $\
 
 ## Depends on
 
-- [Definition 21.2](../../section-21/404-definition-21-2.md)
 - [Definition 22.3](421-definition-22-3.md)
+- [Definition 21.2](../../section-21/404-definition-21-2.md)
 
 ## Sources
 

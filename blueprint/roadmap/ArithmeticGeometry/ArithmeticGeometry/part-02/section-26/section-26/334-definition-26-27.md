@@ -12,6 +12,12 @@ A curve $C/k$ satisfies the local-global principle (or Hasse principle) if eithe
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 26.20](../section-26-6/329-definition-26-20.md)
+- [Definition 26.15](../section-26-5/324-definition-26-15.md)
+- [Definition 26.18](../section-26-6/327-definition-26-18.md)
+
 ## Sources
 
 - [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 26](../../../../../../sources/v1/ArithmeticGeometry.md)

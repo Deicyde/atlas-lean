@@ -14,6 +14,10 @@ For all $\varepsilon, \delta > 0$, there exists $k \in \mathbb{N}$ such that giv
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 3.5 (Lecture 15, Section 3.2)](094-definition-3-5.md)
+
 ## Sources
 
 - [MIT 18.218 Analysis of Boolean Functions (Spring 2021), Lecture 15, Section 3.2](../../../../sources/v1/BooleanFunctions.md)

@@ -11,6 +11,10 @@ We say that $V$ has a weight decomposition (with respect to a Cartan subalgebra 
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 8.1](046-definition-8-1.md)
 
 ## Sources

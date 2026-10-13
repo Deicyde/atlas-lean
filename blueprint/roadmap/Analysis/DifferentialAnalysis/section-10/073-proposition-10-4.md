@@ -10,8 +10,13 @@ Schwartz space can be written in terms of weighted Sobolev spaces: $\mathcal{S}(
 
 ## Depends on
 
-- [Definition 6.6](../section-6/043-definition-6-6.md)
+This node has no prerequisites.
+
+## Proof depends on
+
+- [Corollary 10.3](072-corollary-10-3.md)
 - [Definition 6.4](../section-6/041-definition-6-4.md)
+- [Definition 6.6](../section-6/043-definition-6-6.md)
 - [Definition 6.5](../section-6/042-definition-6-5.md)
 
 ## Sources

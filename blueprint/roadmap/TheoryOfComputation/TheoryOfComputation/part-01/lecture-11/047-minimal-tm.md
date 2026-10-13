@@ -11,7 +11,7 @@ $M$ is a minimal TM if $|\langle M' \rangle| < |\langle M \rangle| \Rightarrow L
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
 
 ## Sources
 

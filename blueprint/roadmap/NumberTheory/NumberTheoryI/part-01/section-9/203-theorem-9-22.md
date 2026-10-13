@@ -13,6 +13,10 @@ Assume AKLB and that $A$ is a complete DVR with maximal ideal $\mathfrak{p}$. Th
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 9.19 (Hensel's lemma III)](200-hensel-s-lemma-iii.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 9.2](../../../../../sources/v1/NumberTheoryI.md)

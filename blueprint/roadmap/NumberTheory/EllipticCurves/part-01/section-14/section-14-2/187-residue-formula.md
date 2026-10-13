@@ -19,6 +19,10 @@ Let $\gamma$ be a simple closed curve with positive orientation and let
 - [Definition 14.11](182-definition-14-11.md)
 - [Definition 14.15](186-definition-14-15.md)
 
+## Proof depends on
+
+- [Definition 14.12](183-definition-14-12.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 14.2](../../../../../../sources/v1/EllipticCurves.md)

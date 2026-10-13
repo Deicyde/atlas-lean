@@ -13,6 +13,10 @@ Let $f \colon \mathbb{R}^n \to \mathbb{R}$ be a convex and $1$-Lipschitz functio
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary 9.5.6 (Talagrand)](153-talagrand.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 9, Section 9.5](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

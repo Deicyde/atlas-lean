@@ -11,8 +11,8 @@ If $\Omega$ is simply connected and $u$ harmonic in $\Omega$, there exists a hol
 
 ## Depends on
 
-- [Definition 1 (Lecture 16: Harmonic Functions)](025-definition-1.md)
 - [Definition 2](../lecture-13/015-definition-2.md)
+- [Definition 1 (Lecture 16: Harmonic Functions)](025-definition-1.md)
 
 ## Sources
 

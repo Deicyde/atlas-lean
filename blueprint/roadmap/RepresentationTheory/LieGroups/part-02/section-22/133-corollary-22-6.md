@@ -10,8 +10,13 @@ lean: corollary_22_6
 
 ## Depends on
 
+- [Definition 8.3](../../part-01/section-8/048-definition-8-3.md)
 - [Definition 22.1](129-definition-22-1.md)
 - [Definition 22.3](130-definition-22-3.md)
+
+## Proof depends on
+
+- [Theorem 22.4](131-theorem-22-4.md)
 
 ## Sources
 

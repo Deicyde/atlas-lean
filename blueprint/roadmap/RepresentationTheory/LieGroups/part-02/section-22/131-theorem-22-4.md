@@ -11,6 +11,7 @@ Let $F_{1}, F_{2}$ be projective $\theta$-functors for $\theta=\chi_{\lambda}$. 
 
 ## Depends on
 
+- [Definition 8.3](../../part-01/section-8/048-definition-8-3.md)
 - [Definition 22.3](130-definition-22-3.md)
 
 ## Sources

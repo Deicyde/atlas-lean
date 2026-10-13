@@ -10,7 +10,12 @@ If $W_{\lambda} = W_{\mu}$ and $V$ has extremal weight $\mu - \lambda$ then $F_{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.3](../../part-01/section-8/048-definition-8-3.md)
+
+## Proof depends on
+
+- [Theorem 14.1 (Harish-Chandra)](../../part-01/section-14/080-harish-chandra.md)
+- [Definition 8.1](../../part-01/section-8/046-definition-8-1.md)
 
 ## Sources
 

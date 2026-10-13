@@ -11,6 +11,10 @@ A monodromic $D_{X}$-module (with respect to the bundle $\widetilde{X} \rightarr
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 30.8](178-definition-30-8.md)
 
 ## Sources

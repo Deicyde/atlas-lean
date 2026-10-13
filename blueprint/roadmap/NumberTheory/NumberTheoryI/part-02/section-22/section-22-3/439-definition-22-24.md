@@ -12,6 +12,10 @@ Let $L/K$ be a finite abelian extension of local fields. The conductor $\mathfra
 
 - [Definition 21.2](../../section-21/404-definition-21-2.md)
 
+## Proof depends on
+
+- [Definition 9.1](../../../part-01/section-9/187-definition-9-1.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 22.3](../../../../../../sources/v1/NumberTheoryI.md)

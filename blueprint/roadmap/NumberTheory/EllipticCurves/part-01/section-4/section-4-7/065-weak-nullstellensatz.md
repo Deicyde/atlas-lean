@@ -12,6 +12,11 @@ For any ideal $I \subsetneq \bar{k}[x_1, \ldots, x_n]$, the variety $Z_I$ is
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 4.49 (Hilbert's Nullstellensatz)](064-hilbert-s-nullstellensatz.md)
+- [Definition 4.46](061-definition-4-46.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 4.7](../../../../../../sources/v1/EllipticCurves.md)

@@ -13,6 +13,10 @@ Fix $\beta \geq (1+\sqrt{5})/4 \approx 0.81$, $Q > 0$, $\delta > 0$ and assume t
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 3.13](046-lemma-3-13.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Chapter 3, Section on Integrated squared error](../../../../sources/v1/HighDimensionalStatistics.md)

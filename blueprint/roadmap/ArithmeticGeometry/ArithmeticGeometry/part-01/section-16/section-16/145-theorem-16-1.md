@@ -12,8 +12,12 @@ Let $S$ be a subset of $\mathbb{A}^{n}$, and let $\{U_{a}\}_{a \in A}$ be any co
 
 ## Depends on
 
-- [Definition 14.3](../../section-14/123-definition-14-3.md)
 - [Definition 12.7](../../section-12/087-definition-12-7.md)
+- [Definition 14.3](../../section-14/123-definition-14-3.md)
+
+## Proof depends on
+
+- [Definition 12.8](../../section-12/088-definition-12-8.md)
 
 ## Sources
 

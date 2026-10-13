@@ -13,6 +13,10 @@ For all $\rho > 0$, $\delta > 0$ there is $\tau > 0$ such that if $f \colon \{-1
 
 - [Definition 1.1 (Noise Stability)](052-noise-stability.md)
 
+## Proof depends on
+
+- [Claim 2.4 (Lecture 5, Section 2.2)](../lecture-5/032-claim-2-4.md)
+
 ## Sources
 
 - [MIT 18.218 Analysis of Boolean Functions (Spring 2021), Section 1, Noise stability and noise sensitivity](../../../../sources/v1/BooleanFunctions.md)

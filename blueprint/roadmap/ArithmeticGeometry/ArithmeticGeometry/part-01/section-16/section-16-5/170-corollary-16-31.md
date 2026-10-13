@@ -15,8 +15,8 @@ If $X$ is a variety such that for every subvariety $Z \subseteq X$ and valuation
 
 ## Proof depends on
 
-- [Lemma 16.30](169-lemma-16-30.md)
 - [Theorem 16.28](167-theorem-16-28.md)
+- [Lemma 16.30](169-lemma-16-30.md)
 
 ## Sources
 

@@ -12,6 +12,10 @@ Let $V$ be a continuous representation of a compact group $K$. Then $V^{\text{fi
 
 - [Definition 1.2](../section-1/001-definition-1-2.md)
 
+## Proof depends on
+
+- [Definition 2.1](../section-2/005-definition-2-1.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 4.3](../../../../../sources/v1/LieGroups.md)

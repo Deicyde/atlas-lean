@@ -14,6 +14,12 @@ Assume the general regression model (3.1) with $\varepsilon \sim \mathsf{subG}_n
 
 - [Definition 1.2](../chapter-1/002-definition-1-2.md)
 
+## Proof depends on
+
+- [Assumption INC(k)](../section-2/036-k.md)
+- [Lemma 2.17](../chapter-2/033-lemma-2-17.md)
+- [Theorem 1.6](../section-1/006-theorem-1-6.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Chapter 3, Section 3.1](../../../../sources/v1/HighDimensionalStatistics.md)

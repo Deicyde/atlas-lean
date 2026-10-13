@@ -10,8 +10,13 @@ Let $S$ be a set of primes of a number field $K$. If $S$ has a polar density the
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 18.22](../../part-01/section-18/section-18-4/368-definition-18-22.md)
 - [Definition 21.11](410-definition-21-11.md)
+- [Definition 21.10](409-definition-21-10.md)
 
 ## Sources
 

@@ -12,6 +12,11 @@ The homology of real projective space is as follows. $H_{k}(\mathbf{RP}^{n}) = \
 
 - [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
 
+## Proof depends on
+
+- [Definition 16.1](../chapter-2/069-definition-16-1.md)
+- [Theorem 16.3](../chapter-2/071-theorem-16-3.md)
+
 ## Sources
 
 - [MIT 18.905 Algebraic Topology I (Fall 2016), Section 17](../../../../../sources/v1/AlgebraicTopologyI.md)

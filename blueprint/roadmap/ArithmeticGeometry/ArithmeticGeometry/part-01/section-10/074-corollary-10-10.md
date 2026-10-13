@@ -12,6 +12,12 @@ The Hilbert symbol $(a, b)_{p}$ is a nondegenerate bilinear map. This means that
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 10.7](071-theorem-10-7.md)
+- [Lemma 10.8](072-lemma-10-8.md)
+- [Definition 10.1](066-definition-10-1.md)
+
 ## Sources
 
 - [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 10.1](../../../../../sources/v1/ArithmeticGeometry.md)

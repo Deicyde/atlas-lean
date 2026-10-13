@@ -12,9 +12,12 @@ For every ideal $I \subseteq \bar{k}[x_{1}, \ldots, x_{n}]$ we have $I(Z_{I})=\s
 
 ## Depends on
 
-- [Definition 12.12](091-definition-12-12.md)
-- [Definition 12.7](087-definition-12-7.md)
 - [Definition 12.8](088-definition-12-8.md)
+- [Definition 12.12](091-definition-12-12.md)
+
+## Proof depends on
+
+- [Definition 12.7](087-definition-12-7.md)
 
 ## Sources
 

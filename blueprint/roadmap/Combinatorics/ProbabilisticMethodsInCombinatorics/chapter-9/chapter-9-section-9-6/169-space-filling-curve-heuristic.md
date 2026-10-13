@@ -13,6 +13,10 @@ Let $x_1, \ldots, x_n \in [0,1]^2$. There is a permutation $\sigma$ of $[n]$ wit
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 9.6.7](168-theorem-9-6-7.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 9, Section 9.6](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

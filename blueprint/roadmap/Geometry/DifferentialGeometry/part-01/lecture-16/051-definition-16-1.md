@@ -12,6 +12,9 @@ Write $\frac{\partial^{2} f}{\partial x_{i} \partial x_{j}} = \sum_{k} \Gamma_{i
 ## Depends on
 
 - [Definition 12.1](../chapter-2/040-definition-12-1.md)
+
+## Proof depends on
+
 - [Definition 12.3](../chapter-2/042-definition-12-3.md)
 
 ## Sources

@@ -10,8 +10,8 @@ Let $K$ be a local field and let $H$ be a finite index open subgroup of $K^{\tim
 
 ## Depends on
 
-- [Definition 27.3](561-definition-27-3.md)
 - [Theorem 27.2 (Local Artin Reciprocity)](560-local-artin-reciprocity.md)
+- [Definition 27.3](561-definition-27-3.md)
 
 ## Sources
 

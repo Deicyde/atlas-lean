@@ -10,10 +10,12 @@ If $V$ is a finite-dimensional $\mathfrak{g}$-module then the natural map $V \ot
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.3](../section-8/048-definition-8-3.md)
 
 ## Proof depends on
 
+- [Theorem 14.1 (Harish-Chandra)](../section-14/080-harish-chandra.md)
+- [Proposition 8.5](../section-8/050-proposition-8-5.md)
 - [Corollary 18.8 (The Duflo-Joseph theorem)](106-the-duflo-joseph-theorem.md)
 
 ## Sources

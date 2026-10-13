@@ -17,6 +17,10 @@ $$u(t, x)=\frac{1}{4 \pi t^{2}} \int_{\partial B_{t}(x)} f(\sigma) d \sigma+\fra
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary 1.0.2 (Representation formula for $\widetilde{U}(t, r ; x)$)](../class-meeting-11/047-t-r-x.md)
+
 ## Sources
 
 - [MIT 18.152 Introduction to Partial Differential Equations (Fall 2011), Class Meeting #12, Section 1](../../../../../sources/v1/IntroductionToPartialDifferentialEquations.md)

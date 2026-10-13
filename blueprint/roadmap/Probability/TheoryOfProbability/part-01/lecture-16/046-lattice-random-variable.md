@@ -11,6 +11,10 @@ If $\phi_X(\lambda) = 1$ for some $\lambda \neq 0$ then $X$ is supported on (som
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition (characteristic function)](../lecture-8/019-characteristic-function.md)
 
 ## Sources

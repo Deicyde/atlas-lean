@@ -12,6 +12,10 @@ Let $t > 0$. For every $A \subseteq \{0, 1\}^n$ with $|A| \geq 2^{n-1}$, we have
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 9.4.3 (Isoperimetric inequality in the Hamming cube; Harper 1966)](135-isoperimetric-inequality-in-the-hamming.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 9, Section 9.4](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

@@ -15,6 +15,10 @@ Let $E/\mathbb{Q}$ be an elliptic curve, and let $M, N > 1$ be integers with
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 11.12](137-definition-11-12.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 11.2](../../../../../sources/v1/EllipticCurves.md)

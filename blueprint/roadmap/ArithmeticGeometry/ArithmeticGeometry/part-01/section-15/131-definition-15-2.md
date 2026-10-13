@@ -13,6 +13,10 @@ A function $r \in \bar{k}(X)$ is said to be regular at a point $P \in X$ if $gr 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 12.12](../section-12/091-definition-12-12.md)
+
 ## Sources
 
 - [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 15.1](../../../../../sources/v1/ArithmeticGeometry.md)

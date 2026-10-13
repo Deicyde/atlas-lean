@@ -12,6 +12,11 @@ If $M$ is a compact connected $n$-manifold, then $H_{n}(M; R) \cong \begin{cases
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 31.8](135-definition-31-8.md)
+- [Theorem 31.9 (Orientation Theorem)](136-orientation-theorem.md)
+
 ## Sources
 
 - [MIT 18.905 Algebraic Topology I (Fall 2016), Section 31](../../../../../sources/v1/AlgebraicTopologyI.md)

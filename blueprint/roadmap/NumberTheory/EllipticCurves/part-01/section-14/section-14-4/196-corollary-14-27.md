@@ -14,10 +14,16 @@ Let $L$ be a lattice. The function $\wp(z)=\wp(z ; L)$ is an elliptic
 
 ## Depends on
 
-- [Definition 14.23](192-definition-14-23.md)
-- [Definition 14.9](../section-14-1/181-definition-14-9.md)
-- [Definition 14.8](../section-14-1/180-definition-14-8.md)
 - [Definition 14.1](../section-14-1/174-definition-14-1.md)
+- [Definition 14.8](../section-14-1/180-definition-14-8.md)
+- [Definition 14.9](../section-14-1/181-definition-14-9.md)
+- [Definition 14.23](192-definition-14-23.md)
+
+## Proof depends on
+
+- [Definition 14.3](../section-14-1/175-definition-14-3.md)
+- [Theorem 14.25](194-theorem-14-25.md)
+- [Theorem 14.26](195-theorem-14-26.md)
 
 ## Sources
 

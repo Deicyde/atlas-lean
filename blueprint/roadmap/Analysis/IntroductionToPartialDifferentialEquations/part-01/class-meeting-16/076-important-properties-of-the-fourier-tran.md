@@ -17,9 +17,9 @@ Assume that $f, g \in L^{1}(\mathbb{R}^{n})$, and let $t \in \mathbb{R}$. Then:
 
 ## Depends on
 
-- [Definition 1.0.3](071-definition-1-0-3.md)
-- [Definition 1.0.2 (Inverse Fourier transform)](070-inverse-fourier-transform.md)
 - [Definition 1.0.1 (Fourier Transform)](069-fourier-transform.md)
+- [Definition 1.0.2 (Inverse Fourier transform)](070-inverse-fourier-transform.md)
+- [Definition 1.0.3](071-definition-1-0-3.md)
 - [Definition 2.0.6 (Translation of a function)](075-translation-of-a-function.md)
 
 ## Sources

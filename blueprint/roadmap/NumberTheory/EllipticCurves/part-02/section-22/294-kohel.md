@@ -22,7 +22,7 @@ Let $\mathbb{F}_q$ be a finite field, let $\ell \nmid q$ be a prime, and let
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 22.10](293-definition-22-10.md)
 
 ## Sources
 

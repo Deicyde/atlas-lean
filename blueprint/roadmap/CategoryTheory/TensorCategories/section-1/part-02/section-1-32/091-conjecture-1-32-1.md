@@ -13,6 +13,11 @@ Any finite dimensional pointed Hopf algebra over a field of characteristic zero 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 1.22.13](../../part-01/section-1-22/061-definition-1-22-13.md)
+- [Definition 1.28.1](../section-1-28/077-definition-1-28-1.md)
+
 ## Sources
 
 - [MIT 18.769 Topics in Lie Theory: Tensor Categories (Spring 2009), Section 1.32](../../../../../../sources/v1/TensorCategories.md)

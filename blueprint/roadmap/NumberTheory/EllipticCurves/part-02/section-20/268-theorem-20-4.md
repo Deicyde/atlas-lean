@@ -16,6 +16,10 @@ Let $N>1$ be an integer and let $k$ be a field of characteristic not dividing
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 19.15](../section-19/261-definition-19-15.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 20.1](../../../../../sources/v1/EllipticCurves.md)

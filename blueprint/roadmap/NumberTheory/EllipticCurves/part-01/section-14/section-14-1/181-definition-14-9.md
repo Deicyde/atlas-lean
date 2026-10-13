@@ -15,8 +15,12 @@ The order of an elliptic function is the number of poles it has in any
 
 ## Depends on
 
-- [Definition 14.8](180-definition-14-8.md)
 - [Definition 14.1](174-definition-14-1.md)
+- [Definition 14.8](180-definition-14-8.md)
+
+## Proof depends on
+
+- [Definition 14.3](175-definition-14-3.md)
 
 ## Sources
 

@@ -10,7 +10,11 @@ lean: ideals_submodules_lattice_iso
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.3](../../part-01/section-8/048-definition-8-3.md)
+
+## Proof depends on
+
+- [Theorem 14.1 (Harish-Chandra)](../../part-01/section-14/080-harish-chandra.md)
 
 ## Sources
 

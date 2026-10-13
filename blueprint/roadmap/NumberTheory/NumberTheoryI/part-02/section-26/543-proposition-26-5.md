@@ -12,6 +12,10 @@ Let $K$ be a global field. The idele group $\mathbb{I}_{K}$ is a locally compact
 ## Depends on
 
 - [Definition 26.2](542-definition-26-2.md)
+
+## Proof depends on
+
+- [Definition 25.7](../section-25/533-definition-25-7.md)
 - [Proposition 25.9](../section-25/534-proposition-25-9.md)
 
 ## Sources

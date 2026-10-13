@@ -11,7 +11,7 @@ Let $X \in HC(\mathfrak{g})$. Then $\operatorname{Hom}_{\mathfrak{g}-\operatorna
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.3](../section-8/048-definition-8-3.md)
 
 ## Sources
 

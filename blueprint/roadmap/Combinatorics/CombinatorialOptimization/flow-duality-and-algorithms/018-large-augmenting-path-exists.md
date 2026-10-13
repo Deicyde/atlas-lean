@@ -12,6 +12,10 @@ Let $f$ be a flow of value $f$ in a directed network with $m$ edges and let $f^*
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Claim 2 (flow path decomposition)](017-flow-path-decomposition.md)
+
 ## Sources
 
 - [MIT 18.433 Combinatorial Optimization (Fall 2003), Flow Duality and algorithms, Sept 25-30 (Weakly Polynomial Algorithm)](../../../../sources/v1/CombinatorialOptimization.md)

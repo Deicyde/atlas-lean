@@ -12,6 +12,10 @@ For any $\beta > 1$, $$\mathbb{E} \int_{0}^{2\pi} \int_{0}^{1} |\nabla F(r e^{it
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 3](036-lemma-3.md)
+
 ## Sources
 
 - [MIT 18.103 Fourier Analysis (Fall 2013), Chapter 1 (Brownian Motion)](../../../../sources/v1/FourierAnalysis.md)

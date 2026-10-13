@@ -11,8 +11,11 @@ Two affine varieties $X$ and $Y$ are said to be birationally equivalent if there
 
 ## Depends on
 
-- [Definition 15.7](135-definition-15-7.md)
 - [Definition 12.7](../section-12/087-definition-12-7.md)
+
+## Proof depends on
+
+- [Definition 15.7](135-definition-15-7.md)
 
 ## Sources
 

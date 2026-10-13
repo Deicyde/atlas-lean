@@ -20,6 +20,10 @@ Let $n$ be a positive integer and let $k$ be an algebraically closed field
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 23.18](305-definition-23-18.md)
 
 ## Sources

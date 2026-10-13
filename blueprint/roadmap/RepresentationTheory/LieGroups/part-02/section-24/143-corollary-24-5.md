@@ -10,7 +10,12 @@ Let $\theta = \chi_{\lambda}$ where $\lambda$ is dominant. If $M_{\lambda - \rho
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.3](../../part-01/section-8/048-definition-8-3.md)
+
+## Proof depends on
+
+- [Theorem 14.1 (Harish-Chandra)](../../part-01/section-14/080-harish-chandra.md)
+- [Proposition 8.5](../../part-01/section-8/050-proposition-8-5.md)
 
 ## Sources
 

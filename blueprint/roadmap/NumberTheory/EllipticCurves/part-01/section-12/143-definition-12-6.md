@@ -14,6 +14,11 @@ Let $\alpha \in \operatorname{End}^{0}(E)$. The (reduced) norm of $\alpha$ is
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 6.13](../section-6/098-definition-6-13.md)
+- [Definition 12.2](141-definition-12-2.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 12.2](../../../../../sources/v1/EllipticCurves.md)

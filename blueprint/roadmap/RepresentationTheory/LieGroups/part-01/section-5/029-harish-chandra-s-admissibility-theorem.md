@@ -12,10 +12,10 @@ Every irreducible unitary representation of a semisimple Lie group is admissible
 
 ## Depends on
 
-- [Definition 5.1](024-definition-5-1.md)
 - [Definition 1.2](../section-1/001-definition-1-2.md)
-- [Definition 1.3](../section-1/002-definition-1-3.md)
+- [Definition 5.1](024-definition-5-1.md)
 - [Definition 1.8](../section-1/004-definition-1-8.md)
+- [Definition 1.3](../section-1/002-definition-1-3.md)
 
 ## Sources
 

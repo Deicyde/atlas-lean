@@ -13,6 +13,11 @@ For any $u \in \mathcal{S}'(\mathbb{R}^{n})$, $\mathrm{WF}_{\mathrm{sc}}(u) \sub
 
 - [Definition 12.12](104-definition-12-12.md)
 
+## Proof depends on
+
+- [Corollary 12.4](096-corollary-12-4.md)
+- [Lemma 12.8](100-lemma-12-8.md)
+
 ## Sources
 
 - [MIT 18.155 Differential Analysis (Fall 2004), Section 12](../../../../sources/v1/DifferentialAnalysis.md)

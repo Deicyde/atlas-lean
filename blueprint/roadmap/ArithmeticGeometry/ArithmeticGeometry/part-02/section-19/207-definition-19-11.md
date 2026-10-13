@@ -11,7 +11,7 @@ Let $f$ be a nonzero element of a function field $F/k$. The divisor of $f$ is $\
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 19.6](203-definition-19-6.md)
 
 ## Sources
 

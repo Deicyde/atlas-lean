@@ -11,6 +11,10 @@ Let $c$ be a simple closed curve. We say that $c$ is convex if the following hol
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 8.1](../chapter-1-lecture-8/025-definition-8-1.md)
 
 ## Sources

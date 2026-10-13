@@ -12,7 +12,7 @@ Assume $AKLB$ and let $\mathcal{O}$ be a subring of $L$. Then $\mathcal{O}$ is a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.19](139-definition-6-19.md)
 
 ## Sources
 

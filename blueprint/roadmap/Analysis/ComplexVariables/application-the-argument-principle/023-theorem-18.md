@@ -13,6 +13,10 @@ Let $f(z)$ be meromorphic in $\Omega$, $\gamma \subset \Omega$ a simple closed c
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 1 (Lecture 14: The Residue Theorem and Application)](../lecture-14/019-definition-1.md)
+
 ## Sources
 
 - [MIT 18.112 Functions of a Complex Variable (Fall 2008), Application: The Argument Principle](../../../../sources/v1/ComplexVariables.md)

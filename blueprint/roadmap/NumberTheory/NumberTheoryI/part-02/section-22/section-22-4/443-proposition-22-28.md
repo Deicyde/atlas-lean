@@ -13,6 +13,12 @@ Let $L / K$ be a finite abelian extension of number fields and let $\mathfrak{m}
 
 - [Definition 21.2](../../section-21/404-definition-21-2.md)
 
+## Proof depends on
+
+- [Definition 22.3](../section-22-1/421-definition-22-3.md)
+- [Definition 22.27](442-definition-22-27.md)
+- [Proposition 22.6](../section-22-1/424-proposition-22-6.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 22.4](../../../../../../sources/v1/NumberTheoryI.md)

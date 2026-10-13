@@ -14,6 +14,10 @@ Let $\phi$ be a solution to the linear wave equation $\square_{m} \phi=0$. Let $
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 1.0.2 (Class Meeting #13, Section 1)](058-definition-1-0-2.md)
+
 ## Sources
 
 - [MIT 18.152 Introduction to Partial Differential Equations (Fall 2011), Class Meeting #13, Section 1](../../../../../sources/v1/IntroductionToPartialDifferentialEquations.md)

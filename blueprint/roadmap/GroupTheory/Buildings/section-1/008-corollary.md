@@ -14,6 +14,11 @@ Let $v < w$ in $W$. Then there are elements $w_1, \ldots, w_n$ in $W$ so that $v
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition (Section 1.8)](005-definition.md)
+- [Proposition (Section 1.8)](003-proposition.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 1 (Bruhat order context)](../../../../sources/v1/Buildings.md)

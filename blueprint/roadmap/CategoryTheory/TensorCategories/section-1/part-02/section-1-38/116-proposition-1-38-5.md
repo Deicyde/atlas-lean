@@ -12,6 +12,7 @@ If $\mathcal{C}$ is a tensor category, then the function $X \mapsto \operatornam
 ## Depends on
 
 - [Definition 1.38.2](114-definition-1-38-2.md)
+- [Definition 1.38.4](115-definition-1-38-4.md)
 
 ## Sources
 

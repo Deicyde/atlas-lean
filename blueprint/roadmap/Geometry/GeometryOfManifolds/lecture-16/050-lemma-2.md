@@ -10,7 +10,7 @@ $\overline{\partial^{*}}$ is $L^{2}$-adjoint to $\bar{\partial}$, and $\partial^
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../lecture-2/011-definition-7.md)
 
 ## Sources
 

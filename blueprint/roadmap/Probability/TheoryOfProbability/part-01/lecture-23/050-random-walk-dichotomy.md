@@ -10,11 +10,12 @@ If $X_i$ are i.i.d. in $\mathbb{R}$ and $S_n = \sum_{i=1}^n X_i$ is a random wal
 
 ## Depends on
 
-- [Definition (tail σ-algebra)](../lecture-10/033-tail-algebra.md)
+This node has no prerequisites.
 
 ## Proof depends on
 
 - [Theorem (Kolmogorov zero-one law)](../lecture-10/024-kolmogorov-zero-one-law.md)
+- [Definition (tail σ-algebra)](../lecture-10/033-tail-algebra.md)
 
 ## Sources
 

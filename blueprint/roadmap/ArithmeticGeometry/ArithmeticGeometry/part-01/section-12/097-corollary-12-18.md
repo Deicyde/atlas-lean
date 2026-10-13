@@ -11,9 +11,13 @@ There is a one-to-one inclusion-reversing correspondence between radical ideals 
 
 ## Depends on
 
-- [Definition 12.12](091-definition-12-12.md)
 - [Definition 12.7](087-definition-12-7.md)
+
+## Proof depends on
+
 - [Definition 12.8](088-definition-12-8.md)
+- [Theorem 12.15 (Hilbert's Nullstellensatz)](094-hilbert-s-nullstellensatz.md)
+- [Definition 12.12](091-definition-12-12.md)
 
 ## Sources
 

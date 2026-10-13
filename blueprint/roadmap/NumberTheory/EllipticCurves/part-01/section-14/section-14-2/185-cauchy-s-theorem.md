@@ -14,6 +14,10 @@ Let $f$ be a function that is holomorphic on an open set containing a closed
 
 - [Definition 14.11](182-definition-14-11.md)
 
+## Proof depends on
+
+- [Definition 14.12](183-definition-14-12.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 14.2](../../../../../../sources/v1/EllipticCurves.md)

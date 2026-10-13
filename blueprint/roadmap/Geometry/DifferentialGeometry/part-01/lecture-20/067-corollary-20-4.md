@@ -17,7 +17,9 @@ Let $f \colon U \rightarrow \mathbb{R}^{n+1}$ be a hypersurface patch, defined o
 
 ## Proof depends on
 
+- [Corollary 20.2](065-corollary-20-2.md)
 - [Proposition 13.3](../chapter-2/047-proposition-13-3.md)
+- [Definition 12.5](../chapter-2/044-definition-12-5.md)
 
 ## Sources
 

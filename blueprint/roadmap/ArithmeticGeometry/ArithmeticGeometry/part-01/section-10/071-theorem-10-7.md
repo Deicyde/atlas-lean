@@ -12,7 +12,11 @@ Let $p$ be an odd prime, and write $a, b \in \mathbb{Q}_{p}^{\times}$ as $a=p^{\
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 10.1](066-definition-10-1.md)
+
+## Proof depends on
+
+- [Lemma 10.5](070-lemma-10-5.md)
 
 ## Sources
 

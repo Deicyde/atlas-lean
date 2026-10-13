@@ -11,9 +11,13 @@ Let $V/k$ be an affine variety defined over $k$. The function field $k(V)$ of $V
 
 ## Depends on
 
-- [Definition 12.7](../../section-12/087-definition-12-7.md)
 - [Definition 13.2](101-definition-13-2.md)
+- [Definition 12.7](../../section-12/087-definition-12-7.md)
 - [Definition 13.3](102-definition-13-3.md)
+
+## Proof depends on
+
+- [Definition 12.12](../../section-12/091-definition-12-12.md)
 
 ## Sources
 

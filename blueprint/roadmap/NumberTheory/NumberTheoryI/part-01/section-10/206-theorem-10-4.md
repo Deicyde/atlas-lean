@@ -12,6 +12,10 @@ Let $A$ be a complete DVR with fraction field $K$, maximal ideal $\mathfrak{p}$,
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 9.22](../section-9/203-theorem-9-22.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 10](../../../../../sources/v1/NumberTheoryI.md)

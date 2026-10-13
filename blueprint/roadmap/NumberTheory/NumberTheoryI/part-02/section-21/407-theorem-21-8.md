@@ -14,6 +14,10 @@ Let $\mathfrak{m}$ be a modulus for a number field $K$. We have an exact sequenc
 
 - [Definition 21.2](404-definition-21-2.md)
 
+## Proof depends on
+
+- [Theorem 8.5 (Weak Approximation)](../../part-01/section-8/176-weak-approximation.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 21.3](../../../../../sources/v1/NumberTheoryI.md)

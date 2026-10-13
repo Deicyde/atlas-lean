@@ -10,7 +10,16 @@ Let $L / K$ be a finite Galois extension of number fields with Galois group $G\c
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
+- [Definition 22.3](../section-22/section-22-1/421-definition-22-3.md)
 - [Definition 18.22](../../part-01/section-18/section-18-4/368-definition-18-22.md)
+- [Definition 21.2](../section-21/404-definition-21-2.md)
+- [Definition 22.27](../section-22/section-22-4/442-definition-22-27.md)
+- [Definition 21.3](../section-21/405-definition-21-3.md)
+- [Proposition 22.6](../section-22/section-22-1/424-proposition-22-6.md)
 
 ## Sources
 

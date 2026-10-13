@@ -12,9 +12,9 @@ The categories of affine varieties and affine algebras are contravariantly equiv
 ## Depends on
 
 - [Definition 14.1](../section-14/122-definition-14-1.md)
-- [Definition 12.12](../section-12/091-definition-12-12.md)
 - [Definition 12.7](../section-12/087-definition-12-7.md)
 - [Definition 12.8](../section-12/088-definition-12-8.md)
+- [Definition 12.12](../section-12/091-definition-12-12.md)
 
 ## Proof depends on
 

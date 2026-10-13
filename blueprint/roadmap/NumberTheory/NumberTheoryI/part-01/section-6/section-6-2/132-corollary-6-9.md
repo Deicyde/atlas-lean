@@ -12,6 +12,10 @@ Assume $AKLB$ and let $I$ be a fractional ideal of $B$. The ideal norm of $I$ is
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 6.1](../section-6-1/125-definition-6-1.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 6.2](../../../../../../sources/v1/NumberTheoryI.md)

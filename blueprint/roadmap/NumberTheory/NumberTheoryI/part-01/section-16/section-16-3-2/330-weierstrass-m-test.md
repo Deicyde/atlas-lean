@@ -12,7 +12,7 @@ Every locally normally convergent series of functions converges absolutely and l
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 16.18](329-definition-16-18.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ There is a computable function $q \colon \Sigma^* \to \Sigma^*$ such that $q(w) 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
 
 ## Sources
 

@@ -11,8 +11,8 @@ $\mathsf{IP} = \mathsf{PSPACE}$.
 
 ## Depends on
 
-- [Definition (PSPACE and NPSPACE)](../../part-01/lecture-18/087-pspace-and-npspace.md)
 - [Definition (IP)](../lecture-25/111-ip.md)
+- [Definition (PSPACE and NPSPACE)](../../part-01/lecture-18/087-pspace-and-npspace.md)
 
 ## Sources
 

@@ -9,7 +9,7 @@ Assume $AKLB$ and let $M$ be an $A$-lattice in $L$. Then $D(M) \in \mathcal{I}_A
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.9](247-definition-12-9.md)
 
 ## Sources
 

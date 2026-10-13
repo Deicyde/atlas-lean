@@ -11,9 +11,12 @@ $\overline{A_{\mathrm{TM}}}$ is Turing-unrecognizable.
 ## Depends on
 
 - [Definition: Turing-recognizable](../lecture-5/023-definition-turing-recognizable.md)
+- [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+- [Definition: Decider](../lecture-5/024-definition-decider.md)
 
 ## Proof depends on
 
+- [Definition: Turing-decidable](../lecture-5/025-definition-turing-decidable.md)
 - [Theorem (Lecture 8)](027-theorem.md)
 
 ## Sources

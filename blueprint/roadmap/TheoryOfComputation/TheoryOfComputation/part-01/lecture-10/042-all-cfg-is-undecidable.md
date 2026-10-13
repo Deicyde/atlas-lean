@@ -11,6 +11,8 @@ $\mathrm{ALL}_{\mathrm{CFG}}$ is undecidable, where $\mathrm{ALL}_{\mathrm{CFG}}
 ## Depends on
 
 - [Definition: Turing-decidable](../lecture-5/025-definition-turing-decidable.md)
+- [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+- [Definition: Decider](../lecture-5/024-definition-decider.md)
 
 ## Sources
 

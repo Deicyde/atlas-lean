@@ -14,6 +14,10 @@ A connected compact hypersurface is always orientable (in fact, there are precis
 
 - [Definition 24.1](../lecture-24/077-definition-24-1.md)
 
+## Proof depends on
+
+- [Definition 26.2](../lecture-26/083-definition-26-2.md)
+
 ## Sources
 
 - [MIT 18.950 Differential Geometry (Fall 2008), Lecture 30](../../../../../sources/v1/DifferentialGeometry.md)

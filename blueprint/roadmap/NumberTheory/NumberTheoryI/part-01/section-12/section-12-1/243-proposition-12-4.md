@@ -12,6 +12,10 @@ Assume $AKLB$ and let $\mathfrak{q}|\mathfrak{p}$ be a prime of $B$. Then $\math
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 4.34](../../section-4/section-4-2/085-definition-4-34.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 12.1](../../../../../../sources/v1/NumberTheoryI.md)

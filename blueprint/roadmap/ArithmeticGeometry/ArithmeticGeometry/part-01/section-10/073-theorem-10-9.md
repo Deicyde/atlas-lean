@@ -10,7 +10,7 @@ Write $a, b \in \mathbb{Q}_{2}^{\times}$ as $a=2^{\alpha} u$ and $b=2^{\beta} v$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 10.1](066-definition-10-1.md)
 
 ## Proof depends on
 

@@ -11,6 +11,10 @@ We say that $\phi$ is a stationary point of the action if the following relation
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 1.0.2 (Action)](089-action.md)
 
 ## Sources

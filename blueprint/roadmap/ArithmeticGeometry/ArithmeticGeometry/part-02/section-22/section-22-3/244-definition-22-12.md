@@ -12,6 +12,12 @@ Let $F/k$ be a function field and let $\mathcal{A}$ be its adele ring. For a div
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 22.5](../section-22-2/238-definition-22-5.md)
+- [Definition 22.7](../section-22-2/239-definition-22-7.md)
+- [Theorem 19.12](../../section-19/208-theorem-19-12.md)
+
 ## Sources
 
 - [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 22.3](../../../../../../sources/v1/ArithmeticGeometry.md)

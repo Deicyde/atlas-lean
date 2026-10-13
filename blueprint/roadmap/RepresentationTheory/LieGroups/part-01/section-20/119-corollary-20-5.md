@@ -12,6 +12,11 @@ lean: free_nminus_has_standard_filtration
 
 - [Definition 15.1](../section-15/084-definition-15-1.md)
 
+## Proof depends on
+
+- [Definition 8.2](../section-8/047-definition-8-2.md)
+- [Definition 8.1](../section-8/046-definition-8-1.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 20.2](../../../../../sources/v1/LieGroups.md)

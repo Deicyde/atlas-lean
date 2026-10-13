@@ -13,6 +13,10 @@ Assume that $g(x)$ is a continuous function on $\mathbb{R}^{n}$ that verifies th
 
 - [Definition 1.0.1 (Class Meeting #5, Section 1 (The Fundamental solution))](../class-meeting-5/013-definition-1-0-1.md)
 
+## Proof depends on
+
+- [Lemma 1.0.1 (Class Meeting #5, Section 1 (The Fundamental solution))](../class-meeting-5/016-lemma-1-0-1.md)
+
 ## Sources
 
 - [MIT 18.152 Introduction to Partial Differential Equations (Fall 2011), Section 1.1](../../../../../sources/v1/IntroductionToPartialDifferentialEquations.md)

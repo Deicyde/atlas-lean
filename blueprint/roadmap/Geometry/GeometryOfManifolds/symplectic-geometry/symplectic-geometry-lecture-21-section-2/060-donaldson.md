@@ -10,7 +10,7 @@ For $(M^{4}, \omega)$ symplectic, after blowing up points in $M$, we get $\hat{M
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2 (Symplectic Geometry, Lecture 21, Section 2)](057-definition-2.md)
 
 ## Sources
 

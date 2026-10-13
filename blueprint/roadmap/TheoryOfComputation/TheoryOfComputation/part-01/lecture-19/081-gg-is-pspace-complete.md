@@ -10,8 +10,18 @@ $\mathrm{GG}$ is $\mathsf{PSPACE}$-complete.
 
 ## Depends on
 
-- [Definition (PSPACE and NPSPACE)](../lecture-18/087-pspace-and-npspace.md)
 - [Definition (PSPACE-complete)](../lecture-18/078-pspace-complete.md)
+
+## Proof depends on
+
+- [Definition (GG)](080-gg.md)
+- [Definition (PSPACE and NPSPACE)](../lecture-18/087-pspace-and-npspace.md)
+- [Definition (SPACE and NSPACE)](../lecture-18/086-space-and-nspace.md)
+- [Definition (SPACE complexity)](../lecture-17/064-space-complexity.md)
+- [Definition (Quantified Boolean Formula and TQBF)](../lecture-17/069-quantified-boolean-formula-and-tqbf.md)
+- [Savitch's Theorem](../lecture-18/088-savitch-s-theorem.md)
+- [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+- [Definition: Decider](../lecture-5/024-definition-decider.md)
 
 ## Sources
 

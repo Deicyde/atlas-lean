@@ -11,6 +11,10 @@ If $A$ is a CFL and $B$ is regular then $A \cap B$ is a CFL.
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition (Pushdown Automaton)](../lecture-4/015-pushdown-automaton.md)
 
 ## Sources

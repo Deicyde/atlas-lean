@@ -11,7 +11,7 @@ Let $K$ be a number field with moduli $\mathfrak{m}_{1}$ and $\mathfrak{m}_{2}$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 21.2](../../section-21/404-definition-21-2.md)
 
 ## Sources
 

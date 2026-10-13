@@ -11,7 +11,7 @@ Let $K$ be a local field. The local Artin homomorphism induces a canonical isomo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 27.2 (Local Artin Reciprocity)](560-local-artin-reciprocity.md)
 
 ## Sources
 

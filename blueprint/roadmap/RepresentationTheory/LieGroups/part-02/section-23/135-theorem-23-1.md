@@ -12,6 +12,11 @@ lean: theorem_23_1_iii
 
 - [Definition 22.1](../section-22/129-definition-22-1.md)
 
+## Proof depends on
+
+- [Definition 22.3](../section-22/130-definition-22-3.md)
+- [Theorem 22.4](../section-22/131-theorem-22-4.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 23.1](../../../../../sources/v1/LieGroups.md)

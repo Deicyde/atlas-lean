@@ -13,6 +13,10 @@ $A$ is polynomial time reducible to $B$ ($A \leq_P B$) if $A \leq_{\mathrm{m}} B
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+
 ## Sources
 
 - [MIT 18.404J Theory of Computation (Fall 2020), Lecture 14, section on Polynomial Time Reducibility](../../../../../sources/v1/TheoryOfComputation.md)

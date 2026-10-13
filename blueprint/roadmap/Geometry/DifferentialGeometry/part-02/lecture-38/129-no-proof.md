@@ -14,6 +14,10 @@ Suppose that $M$ is closed and connected. Then, for any given $p, q$ and any int
 
 - [Definition 30.3](../../part-01/lecture-30/094-definition-30-3.md)
 
+## Proof depends on
+
+- [Definition 36.2](../lecture-36/122-definition-36-2.md)
+
 ## Sources
 
 - [MIT 18.950 Differential Geometry (Fall 2008), Lecture 38](../../../../../sources/v1/DifferentialGeometry.md)

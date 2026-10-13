@@ -11,6 +11,10 @@ Given any vectorfield $X$, we associate to it the following compatible current, 
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 1.0.1 (Class Meeting #13, Section 1)](055-definition-1-0-1.md)
 
 ## Sources

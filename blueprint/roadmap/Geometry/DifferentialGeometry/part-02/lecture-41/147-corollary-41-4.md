@@ -11,7 +11,8 @@ Let $M \subset \mathbb{R}^{3}$ be a surface, $f \colon U \rightarrow M$ a partia
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.1](../../part-01/chapter-2/040-definition-12-1.md)
+- [Definition 12.3](../../part-01/chapter-2/042-definition-12-3.md)
 
 ## Proof depends on
 

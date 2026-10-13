@@ -13,6 +13,10 @@ $\operatorname{ch}(K_{n,n}) = (1 + o(1)) \log_2 n$.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 1.4.2](013-theorem-1-4-2.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 1, Section 1.4](../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

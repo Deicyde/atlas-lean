@@ -13,6 +13,10 @@ The Riemann sum of $f$ corresponding to $(\underline{x},\underline{\xi})$ is the
 
 - [Definition (Tag) (The Riemann Integral section)](066-tag.md)
 
+## Proof depends on
+
+- [Definition (Partition) (The Riemann Integral section)](065-partition.md)
+
 ## Sources
 
 - [MIT 18.100A Real Analysis (Fall 2020), The Riemann Integral section](../../../../../sources/v1/RealAnalysis.md)

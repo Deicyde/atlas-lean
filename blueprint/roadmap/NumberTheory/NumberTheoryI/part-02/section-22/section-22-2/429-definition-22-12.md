@@ -11,8 +11,12 @@ Let $\chi_{1}, \chi_{2}$ be ray class characters of moduli $\mathfrak{m}_{1}, \m
 
 ## Depends on
 
-- [Definition 22.10](428-definition-22-10.md)
 - [Definition 21.2](../../section-21/404-definition-21-2.md)
+- [Definition 22.10](428-definition-22-10.md)
+
+## Proof depends on
+
+- [Definition 21.3](../../section-21/405-definition-21-3.md)
 
 ## Sources
 

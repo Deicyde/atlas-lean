@@ -11,6 +11,10 @@ A hypersurface $M$ is convex if for all $y \in M$, the whole of $M$ lies on one 
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 24.1](../lecture-24/077-definition-24-1.md)
 
 ## Sources

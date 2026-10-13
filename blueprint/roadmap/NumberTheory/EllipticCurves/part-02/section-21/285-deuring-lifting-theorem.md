@@ -16,7 +16,7 @@ Let $E/\mathbb{F}_{q}$ be an elliptic curve over a finite field and let $\phi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.13](../../part-01/section-6/098-definition-6-13.md)
 
 ## Sources
 

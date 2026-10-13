@@ -14,6 +14,11 @@ Let $\ell \geq n$ and $\lambda \vdash n$, with $\ell - n$ even. Then $$\beta(\el
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 8.5](035-lemma-8-5.md)
+- [Lemma 8.2](032-lemma-8-2.md)
+
 ## Sources
 
 - [MIT 18.318 Topics in Algebraic Combinatorics (Spring 2006), Section 8](../../../../sources/v1/AlgebraicCombinatorics.md)

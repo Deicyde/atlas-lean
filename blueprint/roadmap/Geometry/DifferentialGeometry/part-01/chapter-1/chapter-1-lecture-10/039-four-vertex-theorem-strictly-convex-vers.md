@@ -16,6 +16,7 @@ Take a simple closed curve whose curvature is everywhere positive. Then there ar
 ## Proof depends on
 
 - [Lemma 10.3](038-lemma-10-3.md)
+- [Definition 1.2](../chapter-1-lecture-1/002-definition-1-2.md)
 
 ## Sources
 

@@ -12,8 +12,8 @@ Let $\phi: E_{1} \rightarrow E_{2}$ be an isogeny of elliptic curves. Then
 
 ## Depends on
 
-- [Definition 6.2](../chapter-6/089-definition-6-2.md)
 - [Definition 4.18](../section-4/section-4-2/043-definition-4-18.md)
+- [Definition 6.2](../chapter-6/089-definition-6-2.md)
 
 ## Sources
 

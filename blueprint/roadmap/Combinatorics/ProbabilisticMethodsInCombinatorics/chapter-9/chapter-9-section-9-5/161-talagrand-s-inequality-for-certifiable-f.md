@@ -12,6 +12,10 @@ Let $\Omega = \Omega_1 \times \cdots \times \Omega_n$ be equipped with a product
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 9.5.20](160-definition-9-5-20.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 9, Section 9.5](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

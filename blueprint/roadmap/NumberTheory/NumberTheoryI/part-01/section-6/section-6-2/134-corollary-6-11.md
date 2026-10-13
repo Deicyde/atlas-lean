@@ -12,7 +12,7 @@ Assume $AKLB$. For $I \in \mathcal{I}_{A}$ we have $N_{B/A}(IB)=I^{n}$, where $n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.5](128-definition-6-5.md)
 
 ## Sources
 

@@ -12,9 +12,14 @@ If $(\underline{x}, \underline{\xi})$ and $(\underline{x}', \underline{\xi}')$ a
 
 ## Depends on
 
+- [Definition (Partition) (The Riemann Integral section)](065-partition.md)
 - [Definition (Tag) (The Riemann Integral section)](066-tag.md)
-- [Definition (Riemann sum) (The Riemann Integral section)](067-riemann-sum.md)
 - [Definition (Modulus of Continuity) (The Riemann Integral section)](069-modulus-of-continuity.md)
+- [Definition (Riemann sum) (The Riemann Integral section)](067-riemann-sum.md)
+
+## Proof depends on
+
+- [Theorem II (The Riemann Integral section)](071-theorem-ii.md)
 
 ## Sources
 

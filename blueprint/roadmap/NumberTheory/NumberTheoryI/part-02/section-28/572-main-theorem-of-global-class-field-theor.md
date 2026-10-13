@@ -13,6 +13,11 @@ Let $K$ be a global field. The global Artin homomorphism $\theta_{K}$ induces a 
 - [Definition 28.2](568-definition-28-2.md)
 - [Definition 26.2](../section-26/542-definition-26-2.md)
 
+## Proof depends on
+
+- [Theorem 28.4 (Global Artin Reciprocity)](570-global-artin-reciprocity.md)
+- [Theorem 28.6 (Global Existence Theorem)](571-global-existence-theorem.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 28.3](../../../../../sources/v1/NumberTheoryI.md)

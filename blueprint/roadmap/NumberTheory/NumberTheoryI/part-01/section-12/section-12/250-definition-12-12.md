@@ -11,6 +11,10 @@ Assume $AKLB$. The discriminant $D_{L/K}$ of $L/K$ (and the discriminant $D_{B/A
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 12.9](247-definition-12-9.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 12](../../../../../../sources/v1/NumberTheoryI.md)

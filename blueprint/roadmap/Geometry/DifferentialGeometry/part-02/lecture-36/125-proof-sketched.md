@@ -11,8 +11,8 @@ Two geodesics $\gamma, \tilde{\gamma} \colon I \rightarrow M$ with $\gamma(0) = 
 
 ## Depends on
 
-- [Definition 24.1](../../part-01/lecture-24/077-definition-24-1.md)
 - [Definition 36.2](122-definition-36-2.md)
+- [Definition 24.1](../../part-01/lecture-24/077-definition-24-1.md)
 
 ## Sources
 

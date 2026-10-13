@@ -11,6 +11,10 @@ $\mathsf{PSPACE} = \bigcup_k \mathsf{SPACE}(n^k)$ (polynomial space). $\mathsf{N
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition (SPACE and NSPACE)](086-space-and-nspace.md)
 
 ## Sources

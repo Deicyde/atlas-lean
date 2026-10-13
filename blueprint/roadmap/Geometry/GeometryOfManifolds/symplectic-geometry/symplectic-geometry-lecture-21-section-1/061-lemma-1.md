@@ -10,7 +10,7 @@ $H_{1}(M, \mathbb{Z}) = \mathbb{Z}^{3}$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../../lecture-2/011-definition-7.md)
 
 ## Sources
 

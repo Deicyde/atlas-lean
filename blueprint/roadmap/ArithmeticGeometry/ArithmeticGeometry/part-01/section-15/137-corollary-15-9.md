@@ -10,7 +10,14 @@ The category of affine varieties with dominant rational maps and the category of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.7](../section-12/087-definition-12-7.md)
+
+## Proof depends on
+
+- [Definition 15.4](133-definition-15-4.md)
+- [Definition 12.8](../section-12/088-definition-12-8.md)
+- [Definition 15.2](131-definition-15-2.md)
+- [Definition 12.12](../section-12/091-definition-12-12.md)
 
 ## Sources
 

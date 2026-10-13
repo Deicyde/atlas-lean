@@ -12,6 +12,10 @@ Suppose $f \colon \{-1,1\}^n \to \{-1,1\}$ is a voting rule such that the probab
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Claim 1.1](../lecture-2/004-claim-1-1.md)
+
 ## Sources
 
 - [MIT 18.218 Analysis of Boolean Functions (Spring 2021), Section 2.4, Robust Arrow's theorem](../../../../sources/v1/BooleanFunctions.md)

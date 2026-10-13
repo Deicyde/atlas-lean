@@ -11,11 +11,12 @@ If $f$ is a doubly-periodic surface patch, then the Gauss curvature must be $> 0
 ## Depends on
 
 - [Definition 12.1](../chapter-2/040-definition-12-1.md)
-- [Definition 12.3](../chapter-2/042-definition-12-3.md)
 
 ## Proof depends on
 
 - [Corollary 18.5 (Gauss-Bonnet for tori)](059-gauss-bonnet-for-tori.md)
+- [Definition 12.3](../chapter-2/042-definition-12-3.md)
+- [Definition 12.5](../chapter-2/044-definition-12-5.md)
 
 ## Sources
 

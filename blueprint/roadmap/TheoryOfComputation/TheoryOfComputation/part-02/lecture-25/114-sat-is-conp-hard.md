@@ -10,7 +10,12 @@ $\#\mathrm{SAT}$ is $\mathsf{coNP}$-hard.
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition (coNP)](../../part-01/lecture-17/068-conp.md)
+- [Definition: Turing Machine](../../part-01/lecture-5/022-definition-turing-machine.md)
 
 ## Sources
 

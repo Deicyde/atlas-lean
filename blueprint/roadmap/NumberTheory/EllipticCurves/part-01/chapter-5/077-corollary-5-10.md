@@ -12,8 +12,8 @@ For any composition of isogenies $\alpha = \beta \circ \gamma$ we have $\deg
 
 ## Depends on
 
-- [Definition 4.31](../section-4/section-4-5/052-definition-4-31.md)
 - [Definition 5.6](074-definition-5-6.md)
+- [Definition 4.31](../section-4/section-4-5/052-definition-4-31.md)
 
 ## Sources
 

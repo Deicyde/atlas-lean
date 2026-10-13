@@ -14,6 +14,10 @@ For all $0 \leq j \leq n-1$ there is an integer $h_{j} \geq 0$ such that $a_{0} 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 4](../main-text-after-lemma-3/004-lemma-4.md)
+
 ## Sources
 
 - [MIT 18.318 Topics in Algebraic Combinatorics (Spring 2006), Main text (after Lemma 5)](../../../../sources/v1/AlgebraicCombinatorics.md)

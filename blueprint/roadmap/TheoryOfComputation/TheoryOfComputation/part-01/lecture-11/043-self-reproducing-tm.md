@@ -10,7 +10,7 @@ There is a TM $\mathrm{SELF}$ which (on any input) halts with $\langle \mathrm{S
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
 
 ## Sources
 

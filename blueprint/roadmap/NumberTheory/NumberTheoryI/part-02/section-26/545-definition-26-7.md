@@ -13,6 +13,10 @@ Let $K$ be a global field. The group of 1-ideles is the topological group $\math
 
 - [Definition 26.2](542-definition-26-2.md)
 
+## Proof depends on
+
+- [Definition 25.7](../section-25/533-definition-25-7.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 26](../../../../../sources/v1/NumberTheoryI.md)

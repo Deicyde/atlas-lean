@@ -11,6 +11,7 @@ If $\lambda$ is dominant then $M_{\lambda-\rho}$ is a projective object in $\mat
 ## Depends on
 
 - [Definition 15.1](../section-15/084-definition-15-1.md)
+- [Definition 8.3](../section-8/048-definition-8-3.md)
 
 ## Sources
 

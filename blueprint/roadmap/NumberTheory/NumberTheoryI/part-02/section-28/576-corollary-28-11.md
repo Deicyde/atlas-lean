@@ -14,6 +14,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Definition 18.22](../../part-01/section-18/section-18-4/368-definition-18-22.md)
 - [Theorem 28.9 (Chebotarev density theorem)](574-chebotarev-density-theorem.md)
 
 ## Sources

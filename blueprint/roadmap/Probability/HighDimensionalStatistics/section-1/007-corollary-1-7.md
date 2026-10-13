@@ -14,6 +14,10 @@ Let $X_1, \ldots, X_n$ be $n$ independent random variables such that $X_i \sim \
 
 - [Definition 1.2](../chapter-1/002-definition-1-2.md)
 
+## Proof depends on
+
+- [Theorem 1.6](006-theorem-1-6.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Section 1.2](../../../../sources/v1/HighDimensionalStatistics.md)

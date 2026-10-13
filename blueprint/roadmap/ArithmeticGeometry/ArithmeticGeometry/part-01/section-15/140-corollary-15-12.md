@@ -11,9 +11,16 @@ Let $X$ and $Y$ be affine varieties defined over $k$. If $\varphi \colon X \righ
 
 ## Depends on
 
+- [Definition 13.2](../section-13/section-13-1/101-definition-13-2.md)
 - [Definition 15.4](133-definition-15-4.md)
 - [Definition 13.1](../section-13/section-13-1/100-definition-13-1.md)
-- [Definition 13.2](../section-13/section-13-1/101-definition-13-2.md)
+
+## Proof depends on
+
+- [Definition 12.7](../section-12/087-definition-12-7.md)
+- [Definition 12.8](../section-12/088-definition-12-8.md)
+- [Definition 15.2](131-definition-15-2.md)
+- [Definition 12.12](../section-12/091-definition-12-12.md)
 
 ## Sources
 

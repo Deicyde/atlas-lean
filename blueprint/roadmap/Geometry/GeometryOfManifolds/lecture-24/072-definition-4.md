@@ -11,7 +11,7 @@ The Seiberg-Witten equations are the equations $D_{A}\psi = 0 \in \Gamma(S^{-})$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3 (Lecture 24, Section 3 (Dirac Operator))](066-definition-3.md)
 
 ## Sources
 

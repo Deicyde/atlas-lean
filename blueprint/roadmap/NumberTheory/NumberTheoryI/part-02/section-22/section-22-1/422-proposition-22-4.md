@@ -12,6 +12,7 @@ Let $K$ be a number field. The relation $(\mathcal{C}_{1}, \mathfrak{m}_{1}) \si
 ## Depends on
 
 - [Definition 22.3](421-definition-22-3.md)
+- [Definition 21.2](../../section-21/404-definition-21-2.md)
 
 ## Sources
 

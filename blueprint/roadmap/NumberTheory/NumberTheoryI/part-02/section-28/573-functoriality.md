@@ -11,6 +11,8 @@ Let $K$ be a global field and let $L / K$ be any finite separable extension (not
 ## Depends on
 
 - [Definition 28.2](568-definition-28-2.md)
+- [Definition 26.2](../section-26/542-definition-26-2.md)
+- [Definition 28.1](567-definition-28-1.md)
 
 ## Sources
 

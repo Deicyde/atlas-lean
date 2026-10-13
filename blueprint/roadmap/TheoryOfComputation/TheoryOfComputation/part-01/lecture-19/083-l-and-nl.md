@@ -10,6 +10,10 @@ $\mathsf{L} = \mathsf{SPACE}(\log n)$. $\mathsf{NL} = \mathsf{NSPACE}(\log n)$.
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition (SPACE and NSPACE)](../lecture-18/086-space-and-nspace.md)
 
 ## Sources

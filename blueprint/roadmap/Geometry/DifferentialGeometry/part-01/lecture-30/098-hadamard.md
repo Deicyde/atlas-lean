@@ -11,8 +11,9 @@ Let $M \subset \mathbb{R}^{n+1}$, $n \geq 2$, be a compact connected hypersurfac
 
 ## Depends on
 
-- [Definition 12.1](../chapter-2/040-definition-12-1.md)
 - [Definition 30.6](097-definition-30-6.md)
+- [Definition 24.1](../lecture-24/077-definition-24-1.md)
+- [Definition 12.1](../chapter-2/040-definition-12-1.md)
 - [Definition 12.2](../chapter-2/041-definition-12-2.md)
 
 ## Proof depends on

@@ -14,6 +14,11 @@ $\mathcal{R}$ is intrinsic.
 - [Definition 12.1](../chapter-2/040-definition-12-1.md)
 - [Definition 12.3](../chapter-2/042-definition-12-3.md)
 
+## Proof depends on
+
+- [Theorem 16.2](../lecture-16/052-theorem-16-2.md)
+- [Definition 16.1](../lecture-16/051-definition-16-1.md)
+
 ## Sources
 
 - [MIT 18.950 Differential Geometry (Fall 2008), Lecture 20](../../../../../sources/v1/DifferentialGeometry.md)

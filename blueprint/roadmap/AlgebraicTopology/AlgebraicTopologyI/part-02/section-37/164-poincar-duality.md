@@ -12,6 +12,11 @@ Let $M$ be a compact $R$-oriented $n$-manifold. Then $\cap[M] \colon H^{p}(M; R)
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 31.8](../section-31/135-definition-31-8.md)
+- [Theorem 37.1 (Fully relative Poincaré duality)](160-fully-relative-poincar-duality.md)
+
 ## Sources
 
 - [MIT 18.905 Algebraic Topology I (Fall 2016), Section 37](../../../../../sources/v1/AlgebraicTopologyI.md)

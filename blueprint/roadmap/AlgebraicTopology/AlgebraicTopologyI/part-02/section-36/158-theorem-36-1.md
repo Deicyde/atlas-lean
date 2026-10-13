@@ -12,6 +12,11 @@ Let $L \subseteq K$ be closed subspaces of a space $X$. There is a fully relativ
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 34.4](../section-34/149-definition-34-4.md)
+- [Definition 26.5](../../part-01/section-26/111-definition-26-5.md)
+
 ## Sources
 
 - [MIT 18.905 Algebraic Topology I (Fall 2016), Section 36](../../../../../sources/v1/AlgebraicTopologyI.md)

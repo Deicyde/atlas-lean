@@ -10,6 +10,7 @@ Let $R$ be a PID. Assume that $H_{p}(X)$ is a finitely generated free $R$-module
 
 ## Depends on
 
+- [Definition 5.3](../../part-01/chapter-1/chapter-1-section-5/019-definition-5-3.md)
 - [Definition 26.5](../../part-01/section-26/111-definition-26-5.md)
 
 ## Sources

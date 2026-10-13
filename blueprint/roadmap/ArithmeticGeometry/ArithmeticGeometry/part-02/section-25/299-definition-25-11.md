@@ -11,6 +11,10 @@ The logarithmic height of $P \in \mathbb{P}^n(\overline{\mathbb{Q}})$ is the non
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 25.9](297-definition-25-9.md)
 
 ## Sources

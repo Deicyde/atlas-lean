@@ -10,6 +10,10 @@ Suppose that $\tilde{M}$ is decomposed into $f_{i}(P_{i})$ as in the previous le
 
 ## Depends on
 
+This node has no prerequisites.
+
+## Proof depends on
+
 - [Definition 31.3](../lecture-31/100-definition-31-3.md)
 
 ## Sources

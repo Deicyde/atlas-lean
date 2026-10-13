@@ -15,9 +15,10 @@ Let $E/\mathbb{Q}$ be a semistable elliptic curve. Then $E$ is modular.
 
 ## Proof depends on
 
+- [Definition 24.31](../section-24/section-24-8/343-definition-24-31.md)
+- [Theorem 25.5 (Langlands-Tunnel)](356-langlands-tunnel.md)
 - [Theorem 25.4 (Taylor-Wiles)](355-taylor-wiles.md)
 - [Theorem 25.7 (Wiles)](358-wiles.md)
-- [Theorem 25.5 (Langlands-Tunnel)](356-langlands-tunnel.md)
 
 ## Sources
 

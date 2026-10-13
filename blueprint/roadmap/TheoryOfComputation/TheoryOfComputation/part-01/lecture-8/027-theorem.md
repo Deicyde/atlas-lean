@@ -11,9 +11,12 @@ If $A$ and $\overline{A}$ are Turing-recognizable then $A$ is decidable.
 ## Depends on
 
 - [Definition: Turing-decidable](../lecture-5/025-definition-turing-decidable.md)
+- [Definition: Turing-recognizable](../lecture-5/023-definition-turing-recognizable.md)
+
+## Proof depends on
+
 - [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
 - [Definition: Decider](../lecture-5/024-definition-decider.md)
-- [Definition: Turing-recognizable](../lecture-5/023-definition-turing-recognizable.md)
 
 ## Sources
 
