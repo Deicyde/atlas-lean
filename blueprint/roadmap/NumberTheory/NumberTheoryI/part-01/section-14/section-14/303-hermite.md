@@ -11,11 +11,13 @@ Let $S$ be a finite set of places of $\mathbb{Q}$, and let $n$ be an integer. Th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.37](../../section-5/section-5/124-definition-5-37.md)
+- [Definition 13.1](../../section-13/264-definition-13-1.md)
 
 ## Proof depends on
 
 - [Lemma 14.29](302-lemma-14-29.md)
+- [Theorem 14.28](../section-14-5/301-theorem-14-28.md)
 
 ## Sources
 

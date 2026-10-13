@@ -12,6 +12,7 @@ A hypersurface $M \subset \mathbb{R}^{n+1}$ is connected if every smooth functio
 ## Depends on
 
 - [Definition 24.1](../lecture-24/077-definition-24-1.md)
+- [Definition 26.1](../lecture-26/082-definition-26-1.md)
 
 ## Sources
 

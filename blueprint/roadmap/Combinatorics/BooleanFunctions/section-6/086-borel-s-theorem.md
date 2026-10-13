@@ -11,7 +11,7 @@ Let $\rho \in [0,1]$, and $f \colon \mathbb{R}^n \to [-1,1]$ with $\mathbb{E}[f]
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.2](085-definition-6-2.md)
 
 ## Sources
 

@@ -11,7 +11,9 @@ Let $A$ be a $G$-module. For every $n \geq 0$ we have an isomorphism of abelian 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.1](../section-23-1/446-definition-23-1.md)
+- [Definition 23.3](../section-23-1/448-definition-23-3.md)
+- [Definition 23.10](454-definition-23-10.md)
 
 ## Sources
 

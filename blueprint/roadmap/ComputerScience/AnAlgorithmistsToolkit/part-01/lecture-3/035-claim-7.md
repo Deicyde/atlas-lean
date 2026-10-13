@@ -12,7 +12,7 @@ $\frac{\sum_{(i,j) \in E} (y_i - y_j)^2}{\sum_{i \in V} y_i^2} \geq \frac{\sum_{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Claim 6 (Lecture 3, Section 4.2.1)](034-claim-6.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Given an arbitrary extension, the set of elements in $L$ which are algebraic ove
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 25, Subsection: Algebraic Elements)](140-definition.md)
 
 ## Sources
 

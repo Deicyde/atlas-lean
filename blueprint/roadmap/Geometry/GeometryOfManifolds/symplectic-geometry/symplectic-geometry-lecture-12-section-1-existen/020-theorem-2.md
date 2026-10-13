@@ -10,7 +10,7 @@ $\exists$ an almost complex structure $J$ on $M^{4}$ such that $\alpha = c_{1}(T
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 1 (Symplectic Geometry, Lecture 12, Section 1 (Existence of Almost-Complex Structures))](019-theorem-1.md)
 
 ## Sources
 

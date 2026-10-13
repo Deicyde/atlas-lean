@@ -17,13 +17,21 @@ Let $\mathcal{O}$ be an imaginary quadratic order with discriminant $D$ and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.24](../../part-01/section-4/section-4-3-3/047-definition-4-24.md)
+- [Definition 6.2](../../part-01/chapter-6/089-definition-6-2.md)
+- [Definition 6.17](../../part-01/section-6/100-definition-6-17.md)
+- [Definition 12.22](../../part-01/section-12/155-definition-12-22.md)
+- [Definition 13.11](../../part-01/section-13/166-definition-13-11.md)
+- [Definition 17.16](../../part-01/section-17/237-definition-17-16.md)
+- [Definition 21.3](277-definition-21-3.md)
 
 ## Proof depends on
 
 - [Definition 14.1](../../part-01/section-14/section-14-1/174-definition-14-1.md)
 - [Definition 16.9](../../part-01/section-16/220-definition-16-9.md)
 - [Theorem 20.12](../section-20/272-theorem-20-12.md)
+- [Theorem 13.3](../../part-01/section-13/161-theorem-13-3.md)
+- [Theorem 21.5](279-theorem-21-5.md)
 
 ## Sources
 

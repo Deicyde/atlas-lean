@@ -11,7 +11,7 @@ Let $A$ be a noetherian domain with fraction field $K$, and let $L$ be a (not ne
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.9](../../section-5/section-5/103-definition-5-9.md)
 
 ## Sources
 

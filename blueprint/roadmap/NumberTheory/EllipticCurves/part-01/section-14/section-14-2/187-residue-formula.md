@@ -18,10 +18,12 @@ Let $\gamma$ be a simple closed curve with positive orientation and let
 - [Definition 14.6](../section-14-1/178-definition-14-6.md)
 - [Definition 14.11](182-definition-14-11.md)
 - [Definition 14.15](186-definition-14-15.md)
+- [Definition 14.5](../section-14-1/177-definition-14-5.md)
 
 ## Proof depends on
 
 - [Definition 14.12](183-definition-14-12.md)
+- [Theorem 14.14 (Cauchy's theorem)](185-cauchy-s-theorem.md)
 
 ## Sources
 

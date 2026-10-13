@@ -10,7 +10,12 @@ Let $P=(x_{0}: y_{0}: 1)$ be an affine point of finite order on the elliptic cur
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.14](../section-23/266-definition-23-14.md)
+
+## Proof depends on
+
+- [Theorem 23.20 (Algebraic group law)](../section-23/271-algebraic-group-law.md)
+- [Corollary 24.18](288-corollary-24-18.md)
 
 ## Sources
 

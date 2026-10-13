@@ -11,7 +11,7 @@ Let $X$ be a geodesic metric space. $X$ is called nonpositively curved in the se
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lemma 39.1](../lecture-39/131-lemma-39-1.md)
 
 ## Proof depends on
 

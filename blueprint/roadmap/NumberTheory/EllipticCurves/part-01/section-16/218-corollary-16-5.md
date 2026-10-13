@@ -21,10 +21,18 @@ Let $L \subseteq \mathbb{C}$ be a lattice and let $E \coloneqq E_L$. The maps
 ## Depends on
 
 - [Definition 14.1](../section-14/section-14-1/174-definition-14-1.md)
+- [Definition 4.31](../section-4/section-4-5/052-definition-4-31.md)
+- [Definition 6.8](../chapter-6/094-definition-6-8.md)
+- [Definition 6.13](../section-6/098-definition-6-13.md)
+- [Definition 6.17](../section-6/100-definition-6-17.md)
+- [Theorem 16.4](217-theorem-16-4.md)
 
 ## Proof depends on
 
 - [Corollary 16.2](215-corollary-16-2.md)
+- [Theorem 6.7](../chapter-6/093-theorem-6-7.md)
+- [Theorem 6.18](../section-6/101-theorem-6-18.md)
+- [Theorem 14.26](../section-14/section-14-4/195-theorem-14-26.md)
 
 ## Sources
 

@@ -12,11 +12,14 @@ Every quadratic form of dimension $n>2$ over $\mathbb{Q}$ represents 0 over $\ma
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.1](../section-5/029-definition-5-1.md)
+- [Definition 9.1](../section-9/058-definition-9-1.md)
+- [Definition 9.7](../section-9/063-definition-9-7.md)
 
 ## Proof depends on
 
 - [Theorem 11.1](076-theorem-11-1.md)
+- [Theorem 9.5](../section-9/062-theorem-9-5.md)
 
 ## Sources
 

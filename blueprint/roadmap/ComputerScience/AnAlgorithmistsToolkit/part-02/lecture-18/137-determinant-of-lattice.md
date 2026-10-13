@@ -11,7 +11,9 @@ Let $L = L(B)$ be a lattice of rank $n$. We define the determinant of $L$, denot
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4 (Determinant)](../../part-01/section-4/048-determinant.md)
+- [Definition (Lattice)](130-lattice.md)
+- [Definition (Fundamental parallelepiped)](131-fundamental-parallelepiped.md)
 
 ## Sources
 

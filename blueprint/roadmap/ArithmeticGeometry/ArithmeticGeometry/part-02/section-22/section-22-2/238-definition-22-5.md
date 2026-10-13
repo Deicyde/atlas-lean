@@ -9,7 +9,7 @@ The adele ring of the function field $F/k$ is the subring $\mathcal{A}=\mathcal{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 19.1](../../section-19/199-definition-19-1.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ For each prime power $q=p^{n}$ we define $\mathbb{F}_{q}=\mathbb{F}_{p^{n}}$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.2](006-definition-3-2.md)
 
 ## Sources
 

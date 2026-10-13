@@ -12,7 +12,7 @@ The Laplacian for the ring graph $R_n$ on $n$ vertices has eigenvectors $x_k(u) 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 1, Section 2)](../../lecture-1/001-definition-1.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ A locally compact group is a topological group that is Hausdorff and locally com
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.2](../section-8/173-definition-8-2.md)
+- [Definition 13.12](272-definition-13-12.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ A ring is Noetherian if and only if every increasing chain of ideals stabilizes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Ideal)](../../part-03/lecture-8/103-ideal.md)
 
 ## Sources
 

@@ -11,7 +11,10 @@ Let $K$ be the fraction field of a complete DVR with absolute value $|\;|$ exten
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1/section-1-2/001-definition-1-2.md)
+- [Definition 1.10](../section-1/section-1-4/008-definition-1-10.md)
+- [Definition 8.1](../section-8/172-definition-8-1.md)
+- [Theorem 10.4](../section-10/206-theorem-10-4.md)
 
 ## Sources
 

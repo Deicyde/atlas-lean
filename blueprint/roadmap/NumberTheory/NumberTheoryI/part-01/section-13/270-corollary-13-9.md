@@ -12,7 +12,13 @@ Let $K$ be a number field with $r$ real places and $s$ complex places. Then $[K:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.26](../section-1/section-1/021-definition-1-26.md)
+- [Definition 13.1](264-definition-13-1.md)
+
+## Proof depends on
+
+- [Lemma 4.7](../section-4/section-4-1/part-01/062-lemma-4-7.md)
+- [Corollary 13.7](268-corollary-13-7.md)
 
 ## Sources
 

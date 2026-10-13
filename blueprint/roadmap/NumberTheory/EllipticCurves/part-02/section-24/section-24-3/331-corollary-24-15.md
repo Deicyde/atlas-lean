@@ -11,7 +11,12 @@ For any modular form $f \in S_{k}(\Gamma_{0}(1))$ and integers $m \perp n$ we
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 24.6](../section-24-1/325-definition-24-6.md)
+
+## Proof depends on
+
+- [Corollary 24.13](329-corollary-24-13.md)
+- [Theorem 24.14](330-theorem-24-14.md)
 
 ## Sources
 

@@ -13,6 +13,7 @@ Let $\mathcal{C}$ be a congruence subgroup of modulus $\mathfrak{m}$ for a numbe
 
 - [Definition 22.3](421-definition-22-3.md)
 - [Definition 21.2](../../section-21/404-definition-21-2.md)
+- [Definition 22.1](420-definition-22-1.md)
 
 ## Proof depends on
 

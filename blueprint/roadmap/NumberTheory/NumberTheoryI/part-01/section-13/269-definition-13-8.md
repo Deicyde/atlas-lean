@@ -11,7 +11,7 @@ Let $K$ be a number field. Elements of $\operatorname{Hom}_{\mathbb{Q}}(K, \math
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.26](../section-1/section-1/021-definition-1-26.md)
 
 ## Sources
 

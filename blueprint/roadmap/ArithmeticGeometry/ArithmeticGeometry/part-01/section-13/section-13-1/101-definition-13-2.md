@@ -11,7 +11,7 @@ Let $Z$ be an algebraic set defined over $k$. The affine coordinate ring of $Z/k
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.1](100-definition-13-1.md)
 
 ## Proof depends on
 

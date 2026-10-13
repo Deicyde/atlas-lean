@@ -12,7 +12,12 @@ Every nonzero ideal in $\mathbb{Z}_{p}$ is of the form $(p^{m})$ for some intege
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](015-definition-4-3.md)
+
+## Proof depends on
+
+- [Definition 4.10](020-definition-4-10.md)
+- [Theorem 4.15](025-theorem-4-15.md)
 
 ## Sources
 

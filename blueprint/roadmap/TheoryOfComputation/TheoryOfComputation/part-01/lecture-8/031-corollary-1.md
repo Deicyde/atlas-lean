@@ -12,7 +12,7 @@ $\mathcal{L}$ (the set of all languages) is uncountable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 8)](030-definition.md)
 
 ## Sources
 

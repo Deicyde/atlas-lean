@@ -12,10 +12,13 @@ Assume that $g(x)$ is a continuous function on $\mathbb{R}^{n}$ that verifies th
 ## Depends on
 
 - [Definition 1.0.1 (Class Meeting #5, Section 1 (The Fundamental solution))](../class-meeting-5/013-definition-1-0-1.md)
+- [Definition 1.1.1](021-definition-1-1-1.md)
 
 ## Proof depends on
 
 - [Lemma 1.0.1 (Class Meeting #5, Section 1 (The Fundamental solution))](../class-meeting-5/016-lemma-1-0-1.md)
+- [Proposition 1.0.4 (Properties of $\Gamma_{D}(t, x)$)](020-t-x.md)
+- [Proposition 1.1.1 (Differentiating under the integral)](022-differentiating-under-the-integral.md)
 
 ## Sources
 

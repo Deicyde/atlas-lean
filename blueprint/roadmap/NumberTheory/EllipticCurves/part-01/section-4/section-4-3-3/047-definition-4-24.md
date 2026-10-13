@@ -13,7 +13,7 @@ Let $E$ be an elliptic curve over a finite field $\mathbb{F}_{q}$. The
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.4](../../section-3/section-3-1/007-definition-3-4.md)
 
 ## Sources
 

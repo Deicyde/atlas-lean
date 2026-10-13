@@ -11,7 +11,13 @@ Let $E$ be an elliptic curve over a number field $k$. The canonical height $\hat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.14](../section-23/266-definition-23-14.md)
+- [Definition 25.9](297-definition-25-9.md)
+- [Theorem 25.19 (Tate)](305-tate.md)
+
+## Proof depends on
+
+- [Theorem 25.14](302-theorem-25-14.md)
 
 ## Sources
 

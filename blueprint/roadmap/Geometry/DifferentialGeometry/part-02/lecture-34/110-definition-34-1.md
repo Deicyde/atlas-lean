@@ -11,7 +11,8 @@ Let $f \colon U \rightarrow \mathbb{R}^{3}$ be a surface patch, whose domain con
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.1](../../part-01/chapter-2/040-definition-12-1.md)
+- [Definition 18.1](../../part-01/lecture-18/055-definition-18-1.md)
 
 ## Sources
 

@@ -11,7 +11,9 @@ Let $K$ be a global field. The idele group of $K$ is the topological group $\mat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.22](../../part-01/section-13/279-definition-13-22.md)
+- [Definition 25.1](../section-25/528-definition-25-1.md)
+- [Definition 25.7](../section-25/533-definition-25-7.md)
 
 ## Sources
 

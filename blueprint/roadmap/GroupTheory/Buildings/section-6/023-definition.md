@@ -11,7 +11,7 @@ Given a Coxeter system $(W, S)$ and structure constants $a_s, b_s$, the generic 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem (Section 6.1)](019-theorem.md)
 
 ## Sources
 

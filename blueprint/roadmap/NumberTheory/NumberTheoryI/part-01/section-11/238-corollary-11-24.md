@@ -10,7 +10,13 @@ Assume $AKLB$ and let $\mathfrak{p}$ be a prime of $A$. For every $\alpha \in L$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.46](../section-4/section-4-3/091-definition-4-46.md)
+- [Definition 8.3](../section-8/174-definition-8-3.md)
+
+## Proof depends on
+
+- [Lemma 4.49](../section-4/section-4-3/092-lemma-4-49.md)
+- [Theorem 11.23](237-theorem-11-23.md)
 
 ## Sources
 

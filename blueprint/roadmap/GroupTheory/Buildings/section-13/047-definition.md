@@ -11,7 +11,7 @@ The metric normalized to give a chamber diameter 1 is the canonical metric on th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corollary (Section 13.7)](045-corollary.md)
 
 ## Sources
 

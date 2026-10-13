@@ -12,7 +12,11 @@ Consider a matrix $A$. If the characteristic polynomial is $p_A(t) = (t - \lambd
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Dimension Formula, Section on Eigenvectors, Eigenvalues, and Diagonalizable Matrices)](../dimension-formula/017-definition.md)
+
+## Proof depends on
+
+- [Proposition (Section on Eigenbases and the Jordan Form, subsection on The Characteristic Polynomial)](023-proposition.md)
 
 ## Sources
 

@@ -10,7 +10,7 @@ The gauge group action $(A, \psi) \mapsto (A - 2df \cdot f^{-1},\, f\psi)$ prese
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 25, Section 2 (Seiberg-Witten Equations))](064-definition-1.md)
 
 ## Sources
 

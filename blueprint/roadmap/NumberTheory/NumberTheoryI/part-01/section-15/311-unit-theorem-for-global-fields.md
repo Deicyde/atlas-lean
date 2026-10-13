@@ -12,7 +12,13 @@ Let $K/F$ be a finite separable extension, with $F=\mathbb{Q}$ or $F=\mathbb{F}_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](../section-4/section-4-1/part-01/058-definition-4-3.md)
+- [Definition 13.1](../section-13/264-definition-13-1.md)
+- [Corollary 15.8](307-corollary-15-8.md)
+
+## Proof depends on
+
+- [Theorem 15.12 (Dirichlet's Unit Theorem)](310-dirichlet-s-unit-theorem.md)
 
 ## Sources
 

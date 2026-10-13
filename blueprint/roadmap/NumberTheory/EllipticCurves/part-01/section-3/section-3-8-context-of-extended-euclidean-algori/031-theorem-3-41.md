@@ -12,7 +12,7 @@ Let $q=p^{e}$ be a prime power and assume $\log e=O(\log p)$. The time to
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.4](../section-3-1/007-definition-3-4.md)
 
 ## Sources
 

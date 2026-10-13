@@ -11,7 +11,10 @@ Let $\phi: C_1 \rightarrow C_2$ be a morphism defined over $k$, and $\phi^*: k(C
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 16.20](../../part-01/section-16/section-16-3/160-definition-16-20.md)
+- [Theorem 19.2](200-theorem-19-2.md)
+- [Definition 19.9](206-definition-19-9.md)
+- [Lemma 19.17](212-lemma-19-17.md)
 
 ## Sources
 

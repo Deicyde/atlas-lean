@@ -12,7 +12,7 @@ In fact, $V$ has an orthogonal basis $\{v_1, \cdots, v_k\}$ where $\langle v_i, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section: Fields and Vector Spaces, Bases and Dimension subsection)](../../part-01/fields-and-vector-spaces/014-definition.md)
 
 ## Sources
 

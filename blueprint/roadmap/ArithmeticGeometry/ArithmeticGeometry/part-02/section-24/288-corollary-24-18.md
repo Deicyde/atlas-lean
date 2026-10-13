@@ -10,7 +10,12 @@ The group $E^{1}(\mathbb{Q}_{p})$ is torsion-free.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.1](../../part-01/section-5/029-definition-5-1.md)
+
+## Proof depends on
+
+- [Corollary 24.16](286-corollary-24-16.md)
+- [Lemma 24.17](287-lemma-24-17.md)
 
 ## Sources
 

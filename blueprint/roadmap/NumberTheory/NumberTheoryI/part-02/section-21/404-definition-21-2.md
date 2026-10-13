@@ -11,7 +11,8 @@ Let $K$ be a number field. A modulus (or cycle) $\mathfrak{m}$ for $K$ is a func
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.26](../../part-01/section-1/section-1/021-definition-1-26.md)
+- [Definition 13.1](../../part-01/section-13/264-definition-13-1.md)
 
 ## Sources
 

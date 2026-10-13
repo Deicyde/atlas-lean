@@ -11,7 +11,7 @@ A sequence $(x_n)$ in $k$ is a Cauchy sequence if for every $\epsilon > 0$ there
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.2](../section-5/030-definition-5-2.md)
 
 ## Sources
 

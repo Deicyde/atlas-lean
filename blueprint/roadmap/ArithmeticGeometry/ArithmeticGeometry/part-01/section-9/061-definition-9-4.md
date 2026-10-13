@@ -11,7 +11,9 @@ The discriminant of a nondegenerate quadratic form with matrix $A$ is the image 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.1](058-definition-9-1.md)
+- [Definition 9.2](059-definition-9-2.md)
+- [Definition 9.3](060-definition-9-3.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Let $G = (V, E_G, w_G)$ and $H = (V, E_H, w_H)$ be weighted graphs on the same v
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5 (Lecture 9, Section 2.1)](088-definition-5.md)
 
 ## Sources
 

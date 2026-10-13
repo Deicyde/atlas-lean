@@ -10,7 +10,11 @@ Let $G = (V, E)$ be a connected, undirected graph with $m$ edges and let $\pi(x)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7 (Conductance)](../section-6/043-conductance.md)
+
+## Proof depends on
+
+- [Theorem 11 (Lovasz-Simonovits)](../lecture-7/075-lovasz-simonovits.md)
 
 ## Sources
 

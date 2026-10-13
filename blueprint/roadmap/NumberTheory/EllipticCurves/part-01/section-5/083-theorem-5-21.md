@@ -12,7 +12,7 @@ sends each point $P \in E(\bar{k})$ to $nP$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.9](../section-4/section-4-1/038-definition-4-9.md)
 
 ## Sources
 

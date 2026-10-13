@@ -11,7 +11,7 @@ For a prime $p$, the ring of $p$-adic integers $\mathbb{Z}_{p}$ is the inverse l
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.1](014-definition-4-1.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ For any left $R$-module $A$, the functor $\bullet \otimes_{R} A$ is an additive 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.16](../section-23-2/460-definition-23-16.md)
 
 ## Sources
 

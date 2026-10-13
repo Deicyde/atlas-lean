@@ -18,7 +18,7 @@ A complex structure on a topological space $X$ is an open cover $\{U_{i}\}$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.4](../../part-01/section-14/section-14-1/176-definition-14-4.md)
 
 ## Sources
 

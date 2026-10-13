@@ -15,6 +15,15 @@ Let $E$ be an elliptic curve defined over $\mathbb{C}$. Then
 ## Depends on
 
 - [Definition 14.1](../section-14/section-14-1/174-definition-14-1.md)
+- [Definition 6.13](../section-6/098-definition-6-13.md)
+- [Definition 12.22](../section-12/155-definition-12-22.md)
+
+## Proof depends on
+
+- [Theorem 12.17](../section-12/151-theorem-12-17.md)
+- [Corollary 12.20](../section-12/153-corollary-12-20.md)
+- [Corollary 15.12 (Uniformization Theorem)](../section-15/213-uniformization-theorem.md)
+- [Corollary 16.5](218-corollary-16-5.md)
 
 ## Sources
 

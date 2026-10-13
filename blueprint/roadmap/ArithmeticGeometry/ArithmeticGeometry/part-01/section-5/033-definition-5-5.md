@@ -11,7 +11,7 @@ Two absolute values $\|\|$ and $\|\|^{\prime}$ on a field $k$ are said to be equ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.2](030-definition-5-2.md)
 
 ## Sources
 

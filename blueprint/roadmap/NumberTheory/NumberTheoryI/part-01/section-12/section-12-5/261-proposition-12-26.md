@@ -12,6 +12,7 @@ Assume $AKLB$. Then $\mathcal{D}_{B/A}=(\delta_{B/A}(\alpha): \alpha \in B)$.
 ## Depends on
 
 - [Definition 12.25](260-definition-12-25.md)
+- [Definition 12.2](../section-12-1/241-definition-12-2.md)
 
 ## Sources
 

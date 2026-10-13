@@ -12,7 +12,7 @@ $E(\mathbb{Q})/2E(\mathbb{Q})$ is finite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 24.7](../section-24/280-definition-24-7.md)
 
 ## Proof depends on
 

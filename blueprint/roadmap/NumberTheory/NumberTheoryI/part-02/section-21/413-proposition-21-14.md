@@ -17,6 +17,7 @@ This node has no prerequisites.
 
 - [Definition 21.11](410-definition-21-11.md)
 - [Definition 21.10](409-definition-21-10.md)
+- [Theorem (Analytic Class Number Formula)](../../part-01/section-19/383-analytic-class-number-formula.md)
 
 ## Sources
 

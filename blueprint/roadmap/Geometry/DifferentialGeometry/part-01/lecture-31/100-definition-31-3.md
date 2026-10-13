@@ -10,7 +10,8 @@ In the situation above, let $(X_{1}, \ldots, X_{n})$ be a basis of $TM_{y}$ such
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 26.1](../lecture-26/082-definition-26-1.md)
+- [Definition 26.2](../lecture-26/083-definition-26-2.md)
 
 ## Sources
 

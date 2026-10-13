@@ -17,6 +17,7 @@ $\overline{\mathrm{ISO}} \in \mathsf{IP}$.
 ## Proof depends on
 
 - [Defn (Lecture 25, Interactive Proofs – Introduction)](104-defn.md)
+- [Definition (Interactive Proof acceptance probability)](115-interactive-proof-acceptance-probability.md)
 
 ## Sources
 

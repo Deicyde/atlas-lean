@@ -12,6 +12,7 @@ Let $X \subseteq \mathbb{A}^{m}$ and $Y \subseteq \mathbb{A}^{n}$ be algebraic s
 ## Depends on
 
 - [Definition 12.7](../../section-12/087-definition-12-7.md)
+- [Definition 12.12](../../section-12/091-definition-12-12.md)
 
 ## Proof depends on
 

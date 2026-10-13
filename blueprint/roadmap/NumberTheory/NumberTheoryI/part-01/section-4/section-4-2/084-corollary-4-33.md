@@ -12,7 +12,7 @@ The decomposition of an étale algebra into field extensions is unique up to per
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.29](082-definition-4-29.md)
 
 ## Proof depends on
 

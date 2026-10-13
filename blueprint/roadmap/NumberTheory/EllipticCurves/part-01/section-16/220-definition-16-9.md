@@ -14,6 +14,7 @@ Let $\mathcal{O}$ be an order in an imaginary quadratic field $K$, and let
 ## Depends on
 
 - [Definition 14.1](../section-14/section-14-1/174-definition-14-1.md)
+- [Definition 12.22](../section-12/155-definition-12-22.md)
 
 ## Sources
 

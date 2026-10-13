@@ -12,7 +12,7 @@ Let $L/K$ be an algebraic field extension. An element $\alpha \in L$ is separabl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.1](057-definition-4-1.md)
 
 ## Sources
 

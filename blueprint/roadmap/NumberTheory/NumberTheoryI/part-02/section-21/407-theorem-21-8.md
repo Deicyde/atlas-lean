@@ -13,10 +13,14 @@ Let $\mathfrak{m}$ be a modulus for a number field $K$. We have an exact sequenc
 ## Depends on
 
 - [Definition 21.2](404-definition-21-2.md)
+- [Definition 1.26](../../part-01/section-1/section-1/021-definition-1-26.md)
+- [Definition 2.23](../../part-01/section-2/037-definition-2-23.md)
+- [Definition 21.3](405-definition-21-3.md)
 
 ## Proof depends on
 
 - [Theorem 8.5 (Weak Approximation)](../../part-01/section-8/176-weak-approximation.md)
+- [Lemma 21.7](406-lemma-21-7.md)
 
 ## Sources
 

@@ -18,6 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Definition 11.12](137-definition-11-12.md)
+- [Theorem 7.3 (Hasse)](../section-7/105-hasse.md)
 
 ## Sources
 

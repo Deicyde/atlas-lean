@@ -10,7 +10,12 @@ Let $K$ be a number field of degree $n$. The Dedekind zeta function $\zeta_{K}(z
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.26](../section-1/section-1/021-definition-1-26.md)
+- [Definition 2.23](../section-2/037-definition-2-23.md)
+- [Definition 12.12](../section-12/section-12/250-definition-12-12.md)
+- [Definition 13.1](../section-13/264-definition-13-1.md)
+- [Corollary 15.8](../section-15/307-corollary-15-8.md)
+- [Definition 15.16](../section-15/312-definition-15-16.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ Let $A$ be a noetherian domain. The quotient $\operatorname{cl}(A)\coloneqq \mat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.17](032-definition-2-17.md)
+- [Definition 2.22](036-definition-2-22.md)
 
 ## Sources
 

@@ -9,7 +9,8 @@ Let $G$ be a finite cyclic group and let $A$ be a $G$-module. We define $h^{n}(A
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.1](../section-23-1/446-definition-23-1.md)
+- [Definition 23.31](../section-23-5/474-definition-23-31.md)
 
 ## Proof depends on
 

@@ -11,7 +11,7 @@ A map $\alpha: \operatorname{Gal}(\bar{k}/k) \rightarrow E(\bar{k})$ that satisf
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.14](../../section-23/266-definition-23-14.md)
 
 ## Sources
 

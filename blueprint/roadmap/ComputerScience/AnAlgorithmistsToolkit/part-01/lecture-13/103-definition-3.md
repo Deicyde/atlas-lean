@@ -11,7 +11,7 @@ Let $K$ be a body. The surface area of $K$ is defined as the differential rate o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6 (Section 6)](../section-6/100-definition-6.md)
 
 ## Sources
 

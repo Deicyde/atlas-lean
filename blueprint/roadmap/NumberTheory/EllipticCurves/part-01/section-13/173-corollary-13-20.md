@@ -17,6 +17,10 @@ Let $E$ be an elliptic curve over a finite field of characteristic $p$.
 ## Depends on
 
 - [Definition 6.2](../chapter-6/089-definition-6-2.md)
+- [Definition 4.24](../section-4/section-4-3-3/047-definition-4-24.md)
+- [Definition 6.17](../section-6/100-definition-6-17.md)
+- [Definition 12.2](../section-12/141-definition-12-2.md)
+- [Definition 12.12](../section-12/149-definition-12-12.md)
 
 ## Proof depends on
 

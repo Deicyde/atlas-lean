@@ -13,7 +13,8 @@ Let $f: \mathbb{H} \rightarrow \mathbb{C}$ be a meromorphic function that is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.6](../../part-01/section-14/section-14-1/178-definition-14-6.md)
+- [Definition 18.11](../section-18/250-definition-18-11.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ A subgroup $H$ of a topological group $G$ is discrete if the subspace topology o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.2](../../section-8/173-definition-8-2.md)
 
 ## Sources
 

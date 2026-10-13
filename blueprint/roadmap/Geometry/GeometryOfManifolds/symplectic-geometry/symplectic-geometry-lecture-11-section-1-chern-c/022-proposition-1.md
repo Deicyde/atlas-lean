@@ -9,7 +9,7 @@ $M$ compact and oriented $\Longrightarrow c_{r}(E) = e(E) \in H^{2r}(M, \mathbb{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2 (Symplectic Geometry, Lecture 10, Section 2 (Complex Vector Bundles and Chern Classes))](../symplectic-geometry-lecture-10-section-2-complex/023-definition-2.md)
 
 ## Sources
 

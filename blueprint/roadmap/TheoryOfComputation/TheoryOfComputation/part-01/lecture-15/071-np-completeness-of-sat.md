@@ -11,10 +11,13 @@ $\mathrm{SAT}$ is $\mathsf{NP}$-complete.
 ## Depends on
 
 - [Definition (NP-complete)](061-np-complete.md)
+- [Definition (SAT)](../lecture-14/054-sat.md)
 
 ## Proof depends on
 
 - [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+- [Definition (Lecture 14, section on Polynomial Time Reducibility)](../lecture-14/053-definition.md)
+- [Definition (Tableau)](../lecture-16/072-tableau.md)
 
 ## Sources
 

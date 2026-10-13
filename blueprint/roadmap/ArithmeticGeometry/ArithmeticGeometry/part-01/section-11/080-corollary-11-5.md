@@ -11,13 +11,16 @@ A ternary quadratic form over $\mathbb{Q}$ that represents 0 over all but at mos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7.13](../section-7/046-definition-7-13.md)
+- [Definition 9.1](../section-9/058-definition-9-1.md)
+- [Definition 9.7](../section-9/063-definition-9-7.md)
 
 ## Proof depends on
 
 - [Lemma 10.5](../section-10/070-lemma-10-5.md)
 - [Theorem 10.11](../section-10/075-theorem-10-11.md)
 - [Definition 10.1](../section-10/066-definition-10-1.md)
+- [Corollary 11.4](079-corollary-11-4.md)
 
 ## Sources
 

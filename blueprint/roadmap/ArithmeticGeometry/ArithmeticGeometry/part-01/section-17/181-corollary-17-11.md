@@ -12,6 +12,8 @@ For any point $P$ on an affine variety $V$ we have $\dim T_P(V) \geq \dim V$.
 
 - [Definition 12.7](../section-12/087-definition-12-7.md)
 - [Definition 12.8](../section-12/088-definition-12-8.md)
+- [Definition 13.5](../section-13/section-13-1-1/104-definition-13-5.md)
+- [Definition 17.1](173-definition-17-1.md)
 
 ## Proof depends on
 

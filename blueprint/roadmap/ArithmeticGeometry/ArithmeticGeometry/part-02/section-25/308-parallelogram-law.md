@@ -13,6 +13,7 @@ Let $\hat{h}$ be the canonical height function of an elliptic curve $E$ over a n
 ## Depends on
 
 - [Definition 25.20](306-definition-25-20.md)
+- [Definition 23.14](../section-23/266-definition-23-14.md)
 
 ## Sources
 

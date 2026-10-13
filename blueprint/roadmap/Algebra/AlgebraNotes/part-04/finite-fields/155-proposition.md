@@ -9,7 +9,12 @@ If $p \neq \ell$, then $R/(p)$ is a field if and only if $\operatorname{ord}_{\m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Principal Ideal)](../../part-03/lecture-8/104-principal-ideal.md)
+- [Proposition (Quotient Ring)](../../part-03/lecture-8/105-quotient-ring.md)
+
+## Proof depends on
+
+- [Theorem (Finite Fields, Construction of Finite Fields)](153-theorem.md)
 
 ## Sources
 

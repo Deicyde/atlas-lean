@@ -17,7 +17,9 @@ Let $E / k$ be any elliptic curve with CM by an imaginary quadratic order
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.13](../section-6/098-definition-6-13.md)
+- [Definition 12.21](../section-12/154-definition-12-21.md)
+- [Definition 12.22](../section-12/155-definition-12-22.md)
 
 ## Sources
 

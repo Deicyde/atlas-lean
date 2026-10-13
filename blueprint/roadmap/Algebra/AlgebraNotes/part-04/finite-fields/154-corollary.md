@@ -12,7 +12,7 @@ We have $\mathbb{F}_q \cong \mathbb{F}_p(\alpha)$, and therefore, there exists a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem (Finite Fields, Construction of Finite Fields)](153-theorem.md)
 
 ## Sources
 

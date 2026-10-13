@@ -10,7 +10,15 @@ A quadratic form over $\mathbb{Q}$ represents 0 if and only if it represents 0 o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.1](../section-5/029-definition-5-1.md)
+- [Definition 7.13](../section-7/046-definition-7-13.md)
+- [Definition 9.1](058-definition-9-1.md)
+- [Definition 9.7](063-definition-9-7.md)
+
+## Proof depends on
+
+- [Theorem 9.5](062-theorem-9-5.md)
+- [Theorem 9.9](064-theorem-9-9.md)
 
 ## Sources
 

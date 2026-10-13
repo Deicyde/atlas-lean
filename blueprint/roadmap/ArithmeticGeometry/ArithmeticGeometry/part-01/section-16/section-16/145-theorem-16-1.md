@@ -18,6 +18,7 @@ Let $S$ be a subset of $\mathbb{A}^{n}$, and let $\{U_{a}\}_{a \in A}$ be any co
 ## Proof depends on
 
 - [Definition 12.8](../../section-12/088-definition-12-8.md)
+- [Definition 12.10](../../section-12/089-definition-12-10.md)
 
 ## Sources
 

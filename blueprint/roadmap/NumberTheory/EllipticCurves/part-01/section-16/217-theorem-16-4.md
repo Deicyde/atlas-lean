@@ -24,6 +24,15 @@ For $i=1,2$ let $L_i \subseteq \mathbb{C}$ be a lattice, let $E_i \coloneqq
 ## Depends on
 
 - [Definition 14.1](../section-14/section-14-1/174-definition-14-1.md)
+- [Definition 14.23](../section-14/section-14-4/192-definition-14-23.md)
+- [Theorem 15.1](../section-15/202-theorem-15-1.md)
+
+## Proof depends on
+
+- [Definition 14.8](../section-14/section-14-1/180-definition-14-8.md)
+- [Theorem 14.26](../section-14/section-14-4/195-theorem-14-26.md)
+- [Corollary 16.2](215-corollary-16-2.md)
+- [Lemma 16.3](216-lemma-16-3.md)
 
 ## Sources
 

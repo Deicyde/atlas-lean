@@ -15,7 +15,7 @@ Let $\mathcal{O}=[1, \tau]$ be an imaginary quadratic order. The discriminant
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.22](../section-12/155-definition-12-22.md)
 
 ## Sources
 

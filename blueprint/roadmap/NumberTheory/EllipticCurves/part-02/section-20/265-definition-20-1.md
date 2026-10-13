@@ -16,7 +16,8 @@ If $L_{1}$ is a sublattice of $L_{2}$ for which the group $L_{2} / L_{1}$ is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.18](../../part-01/section-4/section-4-2/043-definition-4-18.md)
+- [Definition 14.1](../../part-01/section-14/section-14-1/174-definition-14-1.md)
 
 ## Sources
 

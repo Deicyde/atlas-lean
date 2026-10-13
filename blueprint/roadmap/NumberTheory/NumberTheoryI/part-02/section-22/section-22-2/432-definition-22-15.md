@@ -13,6 +13,7 @@ A ray class character $\chi$ is principal if $\operatorname{ker} \chi=\chi^{-1}(
 
 - [Definition 21.2](../../section-21/404-definition-21-2.md)
 - [Definition 22.10](428-definition-22-10.md)
+- [Definition 22.12](429-definition-22-12.md)
 
 ## Proof depends on
 

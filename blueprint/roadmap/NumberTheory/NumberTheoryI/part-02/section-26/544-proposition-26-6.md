@@ -13,10 +13,13 @@ Let $K$ be a global field. Then $K^{\times}$ is a discrete subgroup of $\mathbb{
 ## Depends on
 
 - [Definition 26.2](542-definition-26-2.md)
+- [Definition 13.22](../../part-01/section-13/279-definition-13-22.md)
+- [Definition 14.2](../../part-01/section-14/section-14-1/281-definition-14-2.md)
 
 ## Proof depends on
 
 - [Definition 25.7](../section-25/533-definition-25-7.md)
+- [Theorem 25.12](../section-25/537-theorem-25-12.md)
 
 ## Sources
 

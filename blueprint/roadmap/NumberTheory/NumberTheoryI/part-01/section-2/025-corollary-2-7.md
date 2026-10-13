@@ -14,6 +14,10 @@ Let $A$ be an integral domain. Every ideal $I$ of $A$ (including $I=A$) is equal
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition 2.6](024-proposition-2-6.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 2.3](../../../../../sources/v1/NumberTheoryI.md)

@@ -20,7 +20,7 @@ The $n$-dimensional affine space $\mathbb{A}^n = \mathbb{A}_k^n$ over $k$ is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.40](../section-4-6-1/056-definition-4-40.md)
 
 ## Sources
 

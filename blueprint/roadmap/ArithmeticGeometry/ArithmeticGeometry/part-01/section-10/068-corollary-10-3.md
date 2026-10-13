@@ -12,7 +12,13 @@ For all $a, b, c \in \mathbb{Q}_{p}^{\times}$, the following hold: (i) $(1, c)_{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.1](../section-5/029-definition-5-1.md)
+- [Definition 10.1](066-definition-10-1.md)
+
+## Proof depends on
+
+- [Definition 7.1](../section-7/035-definition-7-1.md)
+- [Lemma 10.2](067-lemma-10-2.md)
 
 ## Sources
 

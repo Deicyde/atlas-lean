@@ -9,7 +9,12 @@ An ideal $I$ of norm $n$ contains a nonzero element $\alpha \neq 0$ with $\alpha
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section: Uniqueness of Ideal Factorization, Subsection: Properties of Ideal Multiplication)](../uniqueness-of-ideal-factorization/125-definition.md)
+- [Proposition (Lecture 18, Section: The Ideal Class Group, Subsection: Finiteness of the Class Group)](133-proposition.md)
+
+## Proof depends on
+
+- [Theorem (Section: Ideal Factorization, Subsection: Multiplying Ideals)](../ideal-factorization/122-theorem.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ For any $n \times n$ symmetric matrix $A$, $\lambda_1 = \min_{\|x\|=1} x^\top A 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 1, Section 2)](../../lecture-1/001-definition-1.md)
+
+## Proof depends on
+
+- [Proposition 2 (Lecture 1, Section 2)](../../lecture-1/002-proposition-2.md)
 
 ## Sources
 

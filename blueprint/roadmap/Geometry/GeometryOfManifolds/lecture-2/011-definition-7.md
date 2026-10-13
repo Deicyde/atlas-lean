@@ -11,7 +11,7 @@ A symplectic form on $M$ is a 2-form $\omega$ (i.e.\ a skew-symmetric pairing $\
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6 (Lecture 2, Section 2 (Symplectic Vector Spaces))](010-definition-6.md)
 
 ## Sources
 

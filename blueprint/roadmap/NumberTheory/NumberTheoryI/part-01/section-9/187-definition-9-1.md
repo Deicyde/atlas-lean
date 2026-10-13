@@ -11,7 +11,7 @@ A local field is a field with a nontrivial absolute value $|\;|$ that is locally
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1/section-1-2/001-definition-1-2.md)
 
 ## Sources
 

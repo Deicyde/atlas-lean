@@ -21,6 +21,7 @@ Let $\mathfrak{m}$ be a modulus for a number field $K$ and let $\mathrm{Cl}_{K}^
 - [Definition 21.10](../section-21/409-definition-21-10.md)
 - [Proposition 21.12](../section-21/411-proposition-21-12.md)
 - [Theorem 21.8](../section-21/407-theorem-21-8.md)
+- [Corollary 22.22](../section-22/section-22-2/437-corollary-22-22.md)
 
 ## Sources
 

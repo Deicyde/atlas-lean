@@ -11,7 +11,7 @@ A profinite group is a topological group that is an inverse limit of finite grou
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.9](../../part-01/section-8/180-definition-8-9.md)
 
 ## Sources
 

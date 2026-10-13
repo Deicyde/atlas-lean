@@ -13,10 +13,13 @@ Let $E/\mathbb{F}_{p}$ be an elliptic curve over a field of prime order
 ## Depends on
 
 - [Definition 6.2](../chapter-6/089-definition-6-2.md)
+- [Definition 4.24](../section-4/section-4-3-3/047-definition-4-24.md)
+- [Definition 6.17](../section-6/100-definition-6-17.md)
 
 ## Proof depends on
 
 - [Theorem 13.3](161-theorem-13-3.md)
+- [Theorem 7.3 (Hasse)](../section-7/105-hasse.md)
 
 ## Sources
 

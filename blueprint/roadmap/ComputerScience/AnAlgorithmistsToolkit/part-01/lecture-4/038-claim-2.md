@@ -12,7 +12,7 @@ $W \cdot \pi = \pi$, where $W = W_G$ is the walk matrix and $\pi$ is the station
 
 ## Depends on
 
-This node has no prerequisites.
+- [Claim 1](037-claim-1.md)
 
 ## Sources
 

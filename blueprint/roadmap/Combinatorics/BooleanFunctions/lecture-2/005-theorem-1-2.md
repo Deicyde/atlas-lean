@@ -17,6 +17,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Claim 1.1](004-claim-1-1.md)
+- [Claim 2.2 (Lecture 1, Section 2.1)](../lecture-1/002-claim-2-2.md)
 
 ## Sources
 

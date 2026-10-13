@@ -11,7 +11,7 @@ $B$ is $\mathsf{PSPACE}$-complete if (1) $B \in \mathsf{PSPACE}$, and (2) for al
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 14, section on Polynomial Time Reducibility)](../lecture-14/053-definition.md)
 
 ## Proof depends on
 

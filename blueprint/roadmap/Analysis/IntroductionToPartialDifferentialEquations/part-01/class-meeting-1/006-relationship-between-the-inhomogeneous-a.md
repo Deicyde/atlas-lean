@@ -13,6 +13,8 @@ Let $S_{h}$ be the set of all solutions to the homogeneous linear PDE $\mathcal{
 ## Depends on
 
 - [Definition 4.0.2](002-definition-4-0-2.md)
+- [Definition 4.0.3](003-definition-4-0-3.md)
+- [Definition 4.0.4](004-definition-4-0-4.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ In a Dedekind domain every nonzero fractional ideal $I$ has a unique factorizati
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.10](../section-2/027-definition-2-10.md)
+- [Definition 2.13](../section-2/029-definition-2-13.md)
 
 ## Sources
 

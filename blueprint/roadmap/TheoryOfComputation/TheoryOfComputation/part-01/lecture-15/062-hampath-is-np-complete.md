@@ -15,6 +15,7 @@ $\mathrm{HAMPATH}$ is $\mathsf{NP}$-complete.
 ## Proof depends on
 
 - [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+- [Definition (3SAT)](058-3sat.md)
 
 ## Sources
 

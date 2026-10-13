@@ -15,7 +15,9 @@ Let $C$ be a smooth projective curve over an algebraically closed field $k$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.2](../../../part-01/section-4/section-4-1/036-definition-4-2.md)
+- [Definition 23.3](296-definition-23-3.md)
+- [Definition 23.4](297-definition-23-4.md)
 
 ## Sources
 

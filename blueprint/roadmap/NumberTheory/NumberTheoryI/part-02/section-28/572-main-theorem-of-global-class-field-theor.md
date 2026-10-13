@@ -12,6 +12,9 @@ Let $K$ be a global field. The global Artin homomorphism $\theta_{K}$ induces a 
 
 - [Definition 28.2](568-definition-28-2.md)
 - [Definition 26.2](../section-26/542-definition-26-2.md)
+- [Definition 13.22](../../part-01/section-13/279-definition-13-22.md)
+- [Definition 26.13](../section-26/549-definition-26-13.md)
+- [Definition 28.1](567-definition-28-1.md)
 
 ## Proof depends on
 

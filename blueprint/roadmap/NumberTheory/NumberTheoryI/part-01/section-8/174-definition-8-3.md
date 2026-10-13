@@ -11,7 +11,9 @@ Let $X$ be a metric space. Cauchy sequences $(x_n)$ and $(y_n)$ are equivalent i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1/section-1-2/001-definition-1-2.md)
+- [Definition 8.1](172-definition-8-1.md)
+- [Definition 8.2](173-definition-8-2.md)
 
 ## Sources
 

@@ -9,7 +9,9 @@ Let $d \in \mathbb{N}$ and $p \in [0,1]$ be such that $pd \geqslant 10$. Suppose
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.5](009-definition-2-5.md)
+- [Definition 2.6](010-definition-2-6.md)
+- [Definition 2.9](013-definition-2-9.md)
 
 ## Sources
 

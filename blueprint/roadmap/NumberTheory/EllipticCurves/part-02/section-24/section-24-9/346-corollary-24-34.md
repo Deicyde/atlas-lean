@@ -16,10 +16,13 @@ Let $E$ be an elliptic curve over $\mathbb{Q}$. Then $L(E, s)$ has an
 ## Depends on
 
 - [Definition 24.28](../section-24-6/340-definition-24-28.md)
+- [Definition 14.4](../../../part-01/section-14/section-14-1/176-definition-14-4.md)
+- [Definition 24.31](../section-24-8/343-definition-24-31.md)
 
 ## Proof depends on
 
 - [Theorem 24.25 (Hecke)](../section-24-5/338-hecke.md)
+- [Theorem 24.2 (Breuil-Conrad-Diamond-Taylor)](../section-24/322-breuil-conrad-diamond-taylor.md)
 
 ## Sources
 

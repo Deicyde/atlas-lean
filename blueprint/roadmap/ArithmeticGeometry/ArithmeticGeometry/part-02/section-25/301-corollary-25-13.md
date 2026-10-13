@@ -12,7 +12,12 @@ If $\phi$ is any automorphism of $\mathbb{P}^{n}$, then $h(\phi(P))=h(P)+O(1)$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.11](../../part-01/section-13/section-13-2/110-definition-13-11.md)
+- [Definition 25.11](299-definition-25-11.md)
+
+## Proof depends on
+
+- [Lemma 25.12](300-lemma-25-12.md)
 
 ## Sources
 

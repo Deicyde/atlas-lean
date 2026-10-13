@@ -11,11 +11,12 @@ $K'$ is convex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2 (Lecture 10, Section 2)](../lecture-10/093-definition-2.md)
 
 ## Proof depends on
 
 - [Theorem 2 (Brunn's Theorem)](102-brunn-s-theorem.md)
+- [Theorem 1 (Lecture 13, Section 2)](101-theorem-1.md)
 
 ## Sources
 

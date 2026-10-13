@@ -12,7 +12,8 @@ There is a positive constant $c > 0$ such that, for all $\varepsilon$ and $n$, e
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2 (Lecture 10, Section 2)](../../part-01/lecture-10/093-definition-2.md)
+- [Definition 6 (Lecture 11, Section 5)](../../part-01/lecture-11/097-definition-6.md)
 
 ## Sources
 

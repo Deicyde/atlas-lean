@@ -12,6 +12,7 @@ A rational map $\varphi \colon X \rightarrow Y$ is dominant if the closure of $\
 ## Depends on
 
 - [Definition 12.7](../section-12/087-definition-12-7.md)
+- [Definition 15.4](133-definition-15-4.md)
 
 ## Proof depends on
 

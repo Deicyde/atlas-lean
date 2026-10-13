@@ -12,7 +12,7 @@ Let $A$ and $B$ be boxes in $\mathbb{R}^n$. Then $\operatorname{Vol}(A \oplus B)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6 (Section 6)](100-definition-6.md)
 
 ## Sources
 

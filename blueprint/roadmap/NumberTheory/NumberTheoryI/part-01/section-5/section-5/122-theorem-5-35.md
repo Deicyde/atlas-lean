@@ -12,7 +12,13 @@ Assume $AKLB$. For each prime $\mathfrak{p}$ of $A$ we have $$\sum_{\mathfrak{q}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.19](../../section-1/section-1-6/015-definition-1-19.md)
+- [Definition 2.10](../../section-2/027-definition-2-10.md)
+- [Definition 4.3](../../section-4/section-4-1/part-01/058-definition-4-3.md)
+
+## Proof depends on
+
+- [Lemma 5.33](121-lemma-5-33.md)
 
 ## Sources
 

@@ -13,6 +13,8 @@ A morphism of curves is an isomorphism if and only if its degree is one.
 ## Depends on
 
 - [Definition 19.3](201-definition-19-3.md)
+- [Definition 14.6](../../part-01/section-14/125-definition-14-6.md)
+- [Definition 19.1](199-definition-19-1.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ Two elliptic curves defined over $k$ have the same $j$-invariant if and only if 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.6](../../../part-01/section-14/125-definition-14-6.md)
+- [Definition 23.14](../../section-23/266-definition-23-14.md)
+- [Definition 26.2](311-definition-26-2.md)
+
+## Proof depends on
+
+- [Definition 24.7](../../section-24/280-definition-24-7.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Assume $AKLBG$. For each prime $\mathfrak{q}$ of $B$ the decomposition group $D_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 7.2](../section-7-1/151-theorem-7-2.md)
 
 ## Sources
 

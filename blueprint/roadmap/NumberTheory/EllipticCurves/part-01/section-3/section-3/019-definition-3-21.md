@@ -13,7 +13,7 @@ A field $k$ is perfect if every irreducible polynomial in $k[x]$ is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.17](017-definition-3-17.md)
 
 ## Sources
 

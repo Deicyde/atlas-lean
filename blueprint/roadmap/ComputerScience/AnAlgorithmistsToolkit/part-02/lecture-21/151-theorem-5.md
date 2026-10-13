@@ -13,6 +13,7 @@ Let $e_i$ denote the error vector at step $i$ of steepest descent. Let $\{v_j\}_
 ## Depends on
 
 - [Definition 4 (Lecture 21, Section 4.3)](150-definition-4.md)
+- [Definition 1 (Lecture 1, Section 2)](../../part-01/lecture-1/001-definition-1.md)
 
 ## Sources
 

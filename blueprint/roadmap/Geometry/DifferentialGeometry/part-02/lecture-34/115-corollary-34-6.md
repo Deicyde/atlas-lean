@@ -11,7 +11,9 @@ The Gauss map $\nu$ of a compact surface $M \subset \mathbb{R}^{3}$ satisfies $\
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 26.2](../../part-01/lecture-26/083-definition-26-2.md)
+- [Definition 30.2](../../part-01/lecture-30/093-definition-30-2.md)
+- [Definition 32.2](../../part-01/lecture-32/102-definition-32-2.md)
 
 ## Proof depends on
 

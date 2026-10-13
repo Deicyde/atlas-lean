@@ -10,11 +10,13 @@ $\mathrm{SAT}$ is $\mathsf{NP}$-complete. Proof: (1) $\mathrm{SAT} \in \mathsf{N
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (SAT)](../lecture-14/054-sat.md)
 
 ## Proof depends on
 
 - [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+- [Definition (Lecture 14, section on Polynomial Time Reducibility)](../lecture-14/053-definition.md)
+- [Definition (Tableau)](072-tableau.md)
 
 ## Sources
 

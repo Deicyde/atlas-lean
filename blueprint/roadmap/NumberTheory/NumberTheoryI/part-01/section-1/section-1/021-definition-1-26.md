@@ -12,7 +12,7 @@ A number field $K$ is a finite extension of $\mathbb{Q}$. The ring of integers $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.19](../section-1-6/015-definition-1-19.md)
 
 ## Sources
 

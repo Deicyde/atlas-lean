@@ -12,7 +12,8 @@ For $h$ as before, $I_{h(z)}(Dh(z) X, Dh(z) X) \leq I_{z}(X, X)$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.3](../../part-01/chapter-2/042-definition-12-3.md)
+- [Theorem 39.7 (Schwarz-Pick)](137-schwarz-pick.md)
 
 ## Sources
 

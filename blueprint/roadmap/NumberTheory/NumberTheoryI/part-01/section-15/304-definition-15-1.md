@@ -12,6 +12,8 @@ Let $K$ be a global field. A (multiplicative) Arakelov divisor is a sequence of 
 ## Depends on
 
 - [Definition 13.22](../section-13/279-definition-13-22.md)
+- [Definition 13.1](../section-13/264-definition-13-1.md)
+- [Definition 13.17](../section-13/276-definition-13-17.md)
 
 ## Sources
 

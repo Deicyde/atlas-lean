@@ -9,7 +9,7 @@ A graph $G = (V, E, w)$ is called an $(\varepsilon, \delta)$-small set expander 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.2 (Edge expansion)](034-edge-expansion.md)
 
 ## Sources
 

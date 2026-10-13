@@ -12,7 +12,7 @@ Let $v: F^{\times} \rightarrow \Gamma$ be a valuation on a field $F$. For any $x
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 16.20](../../part-01/section-16/section-16-3/160-definition-16-20.md)
 
 ## Sources
 

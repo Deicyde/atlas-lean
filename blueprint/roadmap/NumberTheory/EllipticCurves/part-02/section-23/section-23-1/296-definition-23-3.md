@@ -17,7 +17,7 @@ For any point $P \in C(\bar{k})$, we define the local ring at $P$ (or the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.2](../../../part-01/section-4/section-4-1/036-definition-4-2.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ Let $k$ be a positive integer. A complex function $f(z)$ has a zero of order
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.4](176-definition-14-4.md)
 
 ## Sources
 

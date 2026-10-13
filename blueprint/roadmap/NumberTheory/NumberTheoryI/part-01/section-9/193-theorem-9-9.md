@@ -12,6 +12,15 @@ Let $L$ be a local field. If $L$ is archimedean then it is isomorphic to $\mathb
 ## Depends on
 
 - [Definition 9.1](187-definition-9-1.md)
+- [Definition 1.2](../section-1/section-1-2/001-definition-1-2.md)
+
+## Proof depends on
+
+- [Corollary 1.5](../section-1/section-1-2/003-corollary-1-5.md)
+- [Theorem 1.8 (Ostrowski's Theorem)](../section-1/section-1-3/006-ostrowski-s-theorem.md)
+- [Corollary 9.5](189-corollary-9-5.md)
+- [Proposition 9.6](190-proposition-9-6.md)
+- [Proposition 9.8](192-proposition-9-8.md)
 
 ## Sources
 

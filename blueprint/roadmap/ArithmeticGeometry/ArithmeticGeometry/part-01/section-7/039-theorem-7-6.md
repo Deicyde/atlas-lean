@@ -14,6 +14,11 @@ Let $L$ be a number field. For every $\alpha \in L^\times$ we have $\prod_{\math
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 7.1](035-definition-7-1.md)
+- [Theorem 7.5](038-theorem-7-5.md)
+
 ## Sources
 
 - [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 7.3](../../../../../sources/v1/ArithmeticGeometry.md)

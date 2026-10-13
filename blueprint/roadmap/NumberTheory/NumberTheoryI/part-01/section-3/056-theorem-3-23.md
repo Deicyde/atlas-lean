@@ -11,7 +11,9 @@ Let $A$ be an integral domain. The following are equivalent: (1) $A$ is an integ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10](../section-1/section-1-4/008-definition-1-10.md)
+- [Definition 1.19](../section-1/section-1-6/015-definition-1-19.md)
+- [Definition 2.19](../section-2/034-definition-2-19.md)
 
 ## Proof depends on
 

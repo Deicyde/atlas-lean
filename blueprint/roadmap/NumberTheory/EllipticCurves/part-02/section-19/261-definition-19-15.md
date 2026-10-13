@@ -11,7 +11,8 @@ The modular polynomial $\Phi_N$ is the minimal polynomial of $j_N$ over
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 15.7](../../part-01/section-15/208-definition-15-7.md)
+- [Theorem 19.13](259-theorem-19-13.md)
 
 ## Sources
 

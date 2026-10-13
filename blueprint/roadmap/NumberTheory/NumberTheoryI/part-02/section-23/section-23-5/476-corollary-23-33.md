@@ -11,6 +11,12 @@ Let $G$ be a finite group. For any $G$-modules $A$ and $B$ we have $\hat{H}^{n}(
 ## Depends on
 
 - [Definition 23.31](474-definition-23-31.md)
+- [Definition 23.1](../section-23-1/446-definition-23-1.md)
+
+## Proof depends on
+
+- [Corollary 23.15](../section-23-2/459-corollary-23-15.md)
+- [Corollary 23.22](../section-23-4/465-corollary-23-22.md)
 
 ## Sources
 

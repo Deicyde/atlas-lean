@@ -12,7 +12,12 @@ If $G$ is abelian, then every irreducible representation is one-dimensional.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 2, Section: Irreducible Representations)](../lecture-2/085-definition.md)
+
+## Proof depends on
+
+- [Definition (Lecture 4, Section: The Main Theorem)](../lecture-4/090-definition.md)
+- [Theorem (Main Theorem)](../lecture-4/091-main-theorem.md)
 
 ## Sources
 

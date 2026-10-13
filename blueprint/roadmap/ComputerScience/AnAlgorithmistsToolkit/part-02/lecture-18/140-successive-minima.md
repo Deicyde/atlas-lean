@@ -11,7 +11,7 @@ The $i$th successive minimum of lattice $\Lambda$, $\lambda_i(\Lambda)$, is defi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lattice)](130-lattice.md)
 
 ## Sources
 

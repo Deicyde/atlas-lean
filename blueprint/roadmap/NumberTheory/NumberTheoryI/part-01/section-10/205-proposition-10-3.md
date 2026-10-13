@@ -12,7 +12,8 @@ Let $V$ be a vector space of finite dimension over a complete field $K$. Every n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.1](../section-8/172-definition-8-1.md)
+- [Definition 10.1](204-definition-10-1.md)
 
 ## Sources
 

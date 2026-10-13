@@ -14,6 +14,10 @@ Any two parabolic subgroups of the same type are conjugate by an element of $G$.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Section 7.3, Extending isometries)](029-theorem.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 7.4 (Parabolics)](../../../../sources/v1/Buildings.md)

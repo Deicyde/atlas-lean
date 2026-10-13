@@ -12,7 +12,11 @@ Let $G$ be a finite abelian group. For all $g_{1}, g_{2} \in G$ we have $\langle
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 18.31](376-definition-18-31.md)
+
+## Proof depends on
+
+- [Corollary 18.34](378-corollary-18-34.md)
 
 ## Sources
 

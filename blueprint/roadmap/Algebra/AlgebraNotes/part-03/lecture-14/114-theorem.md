@@ -12,7 +12,11 @@ The complete list of all primes in $\mathbb{Z}[i]$, up to association, consists 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 12, Section: Review)](../lecture-12/107-definition.md)
+
+## Proof depends on
+
+- [Lemma (Lecture 13: More Factorization, Section: Gaussian Primes)](../lecture-13/118-lemma.md)
 
 ## Sources
 

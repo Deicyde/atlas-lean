@@ -14,7 +14,7 @@ Let $E/\mathbb{Q}$ be a semistable elliptic curve for which
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 24.30](../section-24/section-24-7/342-definition-24-30.md)
 
 ## Sources
 

@@ -12,6 +12,10 @@ For all initial distribution $p^0$ and every $t$, $$I^{t}(x) \leq \min\!\left(\s
 
 - [Definition 7 (Lovasz-Simonovits curve)](../section-4/061-lovasz-simonovits-curve.md)
 
+## Proof depends on
+
+- [Theorem 10](../section-4/074-theorem-10.md)
+
 ## Sources
 
 - [MIT 18.409 An Algorithmist's Toolkit (Fall 2009), Lecture 7](../../../../../sources/v1/AnAlgorithmistsToolkit.md)

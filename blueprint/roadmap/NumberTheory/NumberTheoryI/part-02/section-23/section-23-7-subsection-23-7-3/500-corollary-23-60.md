@@ -12,7 +12,11 @@ For any $R$-module $A$ the functor $\operatorname{Hom}_{R}(\bullet, A)$ is left 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.59](499-definition-23-59.md)
+
+## Proof depends on
+
+- [Lemma 23.58](498-lemma-23-58.md)
 
 ## Sources
 

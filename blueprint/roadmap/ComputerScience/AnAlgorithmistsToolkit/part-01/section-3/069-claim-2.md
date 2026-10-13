@@ -14,6 +14,10 @@ A $d$-Multibutterfly with $N$ nodes in each layer can route any permutation of $
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 1 (Section 3.2)](057-definition-1.md)
+
 ## Sources
 
 - [MIT 18.409 An Algorithmist's Toolkit (Fall 2009), Section 3.2](../../../../../sources/v1/AnAlgorithmistsToolkit.md)

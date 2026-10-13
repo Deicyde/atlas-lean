@@ -11,7 +11,9 @@ Let $L / K$ be a Galois extension of global fields and let $w$ be a place of $L$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7.7](../../part-01/section-7/section-7-2/155-definition-7-7.md)
+- [Definition 13.1](../../part-01/section-13/264-definition-13-1.md)
+- [Definition 13.22](../../part-01/section-13/279-definition-13-22.md)
 
 ## Sources
 

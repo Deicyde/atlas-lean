@@ -12,7 +12,7 @@ Every non-unit ideal $I$ in $R$ is contained in a maximal ideal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Maximal Ideals)](../lecture-10/109-maximal-ideals.md)
 
 ## Sources
 

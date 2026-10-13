@@ -11,7 +11,7 @@ Let $S/R$ be a ring extension in which $S$ is a free $R$-module of rank $n$. For
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.46](../../section-4/section-4-3/091-definition-4-46.md)
 
 ## Sources
 

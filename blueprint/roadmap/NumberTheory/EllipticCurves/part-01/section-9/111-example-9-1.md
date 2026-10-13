@@ -13,7 +13,7 @@ Suppose $G=\mathbb{F}_{101}^{\times}$. Then $\log_{3} 37=24$, since $3^{24}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.2](../section-3/section-3-1/006-definition-3-2.md)
 
 ## Sources
 

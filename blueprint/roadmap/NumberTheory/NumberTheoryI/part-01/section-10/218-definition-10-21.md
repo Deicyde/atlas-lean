@@ -11,7 +11,9 @@ Let $L/K$ be a separable extension. The maximal unramified extension of $K$ in $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](../section-4/section-4-1/part-01/058-definition-4-3.md)
+- [Definition 4.17](../section-4/section-4-1/part-01/072-definition-4-17.md)
+- [Definition 5.37](../section-5/section-5/124-definition-5-37.md)
 
 ## Sources
 

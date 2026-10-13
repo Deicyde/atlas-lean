@@ -12,6 +12,7 @@ In the Zariski topology on $\mathbb{A}^{n}$ (resp. $\mathbb{P}^{n}$), the closed
 ## Depends on
 
 - [Definition 12.7](../section-12/087-definition-12-7.md)
+- [Definition 13.11](../section-13/section-13-2/110-definition-13-11.md)
 
 ## Proof depends on
 

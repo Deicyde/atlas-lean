@@ -12,7 +12,16 @@ Assume $AKLB$ with $A$ a complete DVR and $\pi$ a uniformizer for $B$. The exten
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10](../section-1/section-1-4/008-definition-1-10.md)
+- [Definition 5.37](../section-5/section-5/124-definition-5-37.md)
+- [Definition 8.1](../section-8/172-definition-8-1.md)
+- [Definition 11.1](220-definition-11-1.md)
+
+## Proof depends on
+
+- [Theorem 8.20](../section-8/186-theorem-8-20.md)
+- [Theorem 10.4](../section-10/206-theorem-10-4.md)
+- [Lemma 11.4](222-lemma-11-4.md)
 
 ## Sources
 

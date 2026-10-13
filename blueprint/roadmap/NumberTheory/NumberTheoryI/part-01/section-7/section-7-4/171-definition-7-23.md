@@ -11,7 +11,10 @@ Let $A$ be a Dedekind domain with finite residue fields. Let $L$ be a finite abe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.10](../../section-2/027-definition-2-10.md)
+- [Definition 2.22](../../section-2/036-definition-2-22.md)
+- [Definition 5.37](../../section-5/section-5/124-definition-5-37.md)
+- [Definition 7.20](168-definition-7-20.md)
 
 ## Sources
 

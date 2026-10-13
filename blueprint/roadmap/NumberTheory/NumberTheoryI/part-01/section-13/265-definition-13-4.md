@@ -11,7 +11,8 @@ If $L/K$ is an extension of global fields, for every place $w$ of $L$, any absol
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1/section-1-2/001-definition-1-2.md)
+- [Definition 13.1](264-definition-13-1.md)
 
 ## Sources
 

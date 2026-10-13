@@ -10,11 +10,12 @@ $\mathrm{SAT} \in \mathsf{P} \Rightarrow \mathsf{P} = \mathsf{NP}$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (SAT)](../lecture-14/054-sat.md)
 
 ## Proof depends on
 
 - [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+- [Definition (Lecture 14, section on Polynomial Time Reducibility)](../lecture-14/053-definition.md)
 
 ## Sources
 

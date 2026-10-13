@@ -11,7 +11,7 @@ $B$ is $\mathsf{NP}$-complete if (1) $B \in \mathsf{NP}$, and (2) for all $A \in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 14, section on Polynomial Time Reducibility)](../lecture-14/053-definition.md)
 
 ## Proof depends on
 

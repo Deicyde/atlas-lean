@@ -11,7 +11,7 @@ Let $\chi_1$ and $\chi_2$ be Dirichlet characters of modulus $m_1$ and $m_2$, re
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 18.6](../section-18-2/356-definition-18-6.md)
 
 ## Sources
 

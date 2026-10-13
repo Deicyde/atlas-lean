@@ -12,7 +12,11 @@ The number of cosets of $H$, which is the order $|G/H|$, is equal to the size of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Group Actions, The Counting Formula)](036-definition.md)
+
+## Proof depends on
+
+- [Proposition (Group Actions, The Counting Formula)](037-proposition.md)
 
 ## Sources
 

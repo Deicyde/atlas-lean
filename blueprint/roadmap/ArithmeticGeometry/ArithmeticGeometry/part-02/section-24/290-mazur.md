@@ -12,7 +12,7 @@ Let $E/\mathbb{Q}$ be an elliptic curve. The torsion subgroup of $E(\mathbb{Q})$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.14](../section-23/266-definition-23-14.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ Given $G$ such that $|G| = n = p^e \cdot m,$ where $p^e$ is the largest power of
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition (Group Actions, The Counting Formula)](../group-actions/036-definition.md)
+- [Corollary (Counting Formula for Orbits)](../group-actions/039-counting-formula-for-orbits.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), The Sylow Theorems, The First Sylow Theorem](../../../../../sources/v1/AlgebraNotes.md)

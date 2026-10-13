@@ -11,6 +11,7 @@ If $f$ is a doubly-periodic surface patch, then the Gauss curvature must be $> 0
 ## Depends on
 
 - [Definition 12.1](../chapter-2/040-definition-12-1.md)
+- [Definition 14.4](../chapter-2/049-definition-14-4.md)
 
 ## Proof depends on
 

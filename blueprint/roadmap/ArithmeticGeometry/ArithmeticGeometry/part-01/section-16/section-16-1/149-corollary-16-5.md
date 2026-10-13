@@ -15,10 +15,12 @@ If $X$ and $Y$ are affine varieties, then so is $X \times Y$.
 - [Definition 12.8](../../section-12/088-definition-12-8.md)
 - [Definition 12.20](../../section-12/098-definition-12-20.md)
 - [Definition 16.2](146-definition-16-2.md)
+- [Definition 13.3](../../section-13/section-13-1/102-definition-13-3.md)
 
 ## Proof depends on
 
 - [Definition 12.7](../../section-12/087-definition-12-7.md)
+- [Lemma 16.4](148-lemma-16-4.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Every PID is a Dedekind domain. In particular, $\mathbb{Z}$ is a Dedekind domain
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.10](027-definition-2-10.md)
 
 ## Sources
 

@@ -10,7 +10,7 @@ If $L/K$ is a finite extension of number fields with Galois closure $M/K$ of deg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.37](../../part-01/section-5/section-5/124-definition-5-37.md)
 
 ## Proof depends on
 

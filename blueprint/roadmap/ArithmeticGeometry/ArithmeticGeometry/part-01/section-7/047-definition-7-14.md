@@ -12,7 +12,7 @@ Let $S$ be any subset of a field $k$ with absolute value $\|\|$. The set $S$ is 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.2](../section-5/030-definition-5-2.md)
 
 ## Sources
 

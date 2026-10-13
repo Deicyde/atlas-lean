@@ -13,6 +13,11 @@ Every convergent sequence is a Cauchy sequence.
 ## Depends on
 
 - [Definition 7.7](040-definition-7-7.md)
+- [Definition 7.9](042-definition-7-9.md)
+
+## Proof depends on
+
+- [Theorem 5.3](../section-5/031-theorem-5-3.md)
 
 ## Sources
 

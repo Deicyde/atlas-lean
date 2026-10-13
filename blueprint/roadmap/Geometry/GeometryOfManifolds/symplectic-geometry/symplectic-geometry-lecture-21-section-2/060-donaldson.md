@@ -11,6 +11,7 @@ For $(M^{4}, \omega)$ symplectic, after blowing up points in $M$, we get $\hat{M
 ## Depends on
 
 - [Definition 2 (Symplectic Geometry, Lecture 21, Section 2)](057-definition-2.md)
+- [Definition 7](../../lecture-2/011-definition-7.md)
 
 ## Sources
 

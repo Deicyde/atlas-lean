@@ -23,6 +23,23 @@ Let $\mathbb{F}_q$ be a finite field, let $\ell \nmid q$ be a prime, and let
 ## Depends on
 
 - [Definition 22.10](293-definition-22-10.md)
+- [Definition 3.4](../../part-01/section-3/section-3-1/007-definition-3-4.md)
+- [Definition 4.24](../../part-01/section-4/section-4-3-3/047-definition-4-24.md)
+- [Definition 6.2](../../part-01/chapter-6/089-definition-6-2.md)
+- [Definition 6.13](../../part-01/section-6/098-definition-6-13.md)
+- [Definition 6.17](../../part-01/section-6/100-definition-6-17.md)
+- [Definition 16.11](../../part-01/section-16/222-definition-16-11.md)
+- [Definition 17.16](../../part-01/section-17/237-definition-17-16.md)
+- [Definition 21.4](../section-21/278-definition-21-4.md)
+- [Definition 22.1](286-definition-22-1.md)
+
+## Proof depends on
+
+- [Corollary 13.20](../../part-01/section-13/173-corollary-13-20.md)
+- [Theorem 21.5](../section-21/279-theorem-21-5.md)
+- [Theorem 22.3](287-theorem-22-3.md)
+- [Corollary 22.7](291-corollary-22-7.md)
+- [Corollary 22.8](292-corollary-22-8.md)
 
 ## Sources
 

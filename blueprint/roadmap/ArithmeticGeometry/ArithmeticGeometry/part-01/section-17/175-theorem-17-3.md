@@ -12,7 +12,12 @@ Let $P$ be a point on an affine variety $V \subseteq \mathbb{A}^n$ with ideal $I
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.3](../section-13/section-13-1/102-definition-13-3.md)
+- [Definition 17.1](173-definition-17-1.md)
+
+## Proof depends on
+
+- [Lemma 17.2](174-lemma-17-2.md)
 
 ## Sources
 

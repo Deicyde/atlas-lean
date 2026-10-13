@@ -11,7 +11,9 @@ Let $M$ be a compact hypersurface with an orientation. The total Gauss curvature
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.4](../chapter-2/049-definition-14-4.md)
+- [Definition 26.2](../lecture-26/083-definition-26-2.md)
+- [Definition 30.2](../lecture-30/093-definition-30-2.md)
 
 ## Sources
 

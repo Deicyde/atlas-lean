@@ -12,11 +12,12 @@ For any $f \in \mathbb{Z}_p[x]$ the following are equivalent: (a) $f$ has a root
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](../section-4/015-definition-4-3.md)
 
 ## Proof depends on
 
 - [Lemma 8.3](052-lemma-8-3.md)
+- [Definition 4.1](../section-4/014-definition-4-1.md)
 
 ## Sources
 

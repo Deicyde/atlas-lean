@@ -12,7 +12,7 @@ If $S = \{\vec{v}_1, \cdots, \vec{v}_r\}$ spans $V,$ and $L = \{\vec{w}_1, \cdot
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section: Fields and Vector Spaces, Bases and Dimension subsection)](../fields-and-vector-spaces/014-definition.md)
 
 ## Sources
 

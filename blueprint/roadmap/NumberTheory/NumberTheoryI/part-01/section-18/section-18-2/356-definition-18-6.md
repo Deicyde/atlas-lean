@@ -12,6 +12,7 @@ A Dirichlet character of modulus $m$ is an $m$-periodic Dirichlet character $\ch
 ## Depends on
 
 - [Definition 18.4](354-definition-18-4.md)
+- [Definition 18.5](355-definition-18-5.md)
 
 ## Sources
 

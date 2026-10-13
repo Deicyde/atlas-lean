@@ -12,7 +12,7 @@ Let $(X_{i})_{i \in I}$ be a family of locally compact topological spaces and le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 25.1](528-definition-25-1.md)
 
 ## Sources
 

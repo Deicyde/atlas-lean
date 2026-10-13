@@ -11,7 +11,9 @@ Let $X \subseteq \mathbb{P}^m$ and $Y \subseteq \mathbb{P}^n$ be projective vari
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.4](../section-13/section-13-1/103-definition-13-4.md)
+- [Definition 13.18](../section-13/section-13-4/115-definition-13-18.md)
+- [Definition 15.13](141-definition-15-13.md)
 
 ## Sources
 

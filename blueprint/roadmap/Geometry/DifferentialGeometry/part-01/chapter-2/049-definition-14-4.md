@@ -12,6 +12,9 @@ Let $\lambda_{1}, \ldots, \lambda_{n}$ be the principal curvatures of $f$ at $x$
 ## Depends on
 
 - [Definition 12.1](040-definition-12-1.md)
+- [Definition 12.3](042-definition-12-3.md)
+- [Definition 12.4](043-definition-12-4.md)
+- [Definition 14.1](048-definition-14-1.md)
 
 ## Proof depends on
 

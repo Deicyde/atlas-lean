@@ -12,6 +12,7 @@ The Riemann-Roch space of a divisor $D$ is the $k$-vector space $\mathcal{L}(D)\
 ## Depends on
 
 - [Definition 19.6](../section-19/203-definition-19-6.md)
+- [Definition 19.9](../section-19/206-definition-19-9.md)
 
 ## Proof depends on
 

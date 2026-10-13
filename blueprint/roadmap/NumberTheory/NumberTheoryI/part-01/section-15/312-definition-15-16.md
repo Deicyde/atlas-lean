@@ -11,7 +11,9 @@ The regulator of a number field $K$ is $R_{K}\coloneqq \operatorname{covol}(\pi(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.26](../section-1/section-1/021-definition-1-26.md)
+- [Definition 14.10](../section-14/section-14-1/287-definition-14-10.md)
+- [Proposition 15.11](309-proposition-15-11.md)
 
 ## Sources
 

@@ -10,7 +10,10 @@ Let $K$ be a field with an absolute value $|\,|$ viewed as a topological field u
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1/section-1-2/001-definition-1-2.md)
+- [Definition 8.1](172-definition-8-1.md)
+- [Definition 8.2](173-definition-8-2.md)
+- [Definition 8.3](174-definition-8-3.md)
 
 ## Sources
 

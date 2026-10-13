@@ -11,7 +11,7 @@ Given a function $f \colon \{-1,1\}^n \to \mathbb{R}$ and $i \in [n]$, the $L^2$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.1 (Discrete derivatives)](006-discrete-derivatives.md)
 
 ## Sources
 

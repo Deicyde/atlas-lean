@@ -11,6 +11,7 @@ $\mathsf{NL} \subseteq \mathsf{SPACE}(\log^2 n)$.
 ## Depends on
 
 - [Definition (SPACE and NSPACE)](../lecture-18/086-space-and-nspace.md)
+- [Definition (L and NL)](083-l-and-nl.md)
 
 ## Proof depends on
 

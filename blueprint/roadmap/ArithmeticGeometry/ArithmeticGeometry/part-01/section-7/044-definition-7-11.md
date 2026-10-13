@@ -11,7 +11,8 @@ A field $k$ is complete (with respect to $\|\|$) if every Cauchy sequence in $k$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7.7](040-definition-7-7.md)
+- [Definition 7.9](042-definition-7-9.md)
 
 ## Sources
 

@@ -13,6 +13,8 @@ For any canonical divisor $W$ of a genus $g$ curve we have $\ell(W) = g$, $\oper
 - [Definition 19.6](../../section-19/203-definition-19-6.md)
 - [Definition 21.10](../../section-21/230-definition-21-10.md)
 - [Definition 22.1](../section-22-1/235-definition-22-1.md)
+- [Definition 19.21](../../section-19/215-definition-19-21.md)
+- [Definition 22.4](../section-22-1/237-definition-22-4.md)
 
 ## Proof depends on
 
@@ -22,6 +24,8 @@ For any canonical divisor $W$ of a genus $g$ curve we have $\ell(W) = g$, $\oper
 - [Definition 19.11](../../section-19/207-definition-19-11.md)
 - [Definition 21.2](../../section-21/225-definition-21-2.md)
 - [Theorem 22.21 (Riemann-Roch Theorem)](253-riemann-roch-theorem.md)
+- [Corollary 21.11](../../section-21/231-corollary-21-11.md)
+- [Theorem 22.20 (Duality)](252-duality.md)
 
 ## Sources
 

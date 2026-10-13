@@ -10,7 +10,7 @@ For $(M, J)$ an almost-complex manifold, $\omega_{0}, \omega_{1}$ two symplectic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../../lecture-2/011-definition-7.md)
 
 ## Sources
 

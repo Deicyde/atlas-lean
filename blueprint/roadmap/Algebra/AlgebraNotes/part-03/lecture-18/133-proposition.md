@@ -9,7 +9,12 @@ Every ideal class has a representative with bounded norm --- more precisely, wit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section: Uniqueness of Ideal Factorization, Subsection: Properties of Ideal Multiplication)](../uniqueness-of-ideal-factorization/125-definition.md)
+- [Definition (Section: Similarity Classes of Ideals)](../similarity-classes-of-ideals/129-definition.md)
+
+## Proof depends on
+
+- [Proposition (Section: Uniqueness of Ideal Factorization, Subsection: Properties of Ideal Multiplication)](../uniqueness-of-ideal-factorization/127-proposition.md)
 
 ## Sources
 

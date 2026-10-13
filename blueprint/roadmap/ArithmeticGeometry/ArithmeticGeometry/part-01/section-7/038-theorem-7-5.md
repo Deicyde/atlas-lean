@@ -13,6 +13,7 @@ Let $\alpha$ be an algebraic integer in a number field $L$. Then $N(\alpha) = |N
 ## Depends on
 
 - [Definition 7.3](037-definition-7-3.md)
+- [Definition 7.1](035-definition-7-1.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The moduli space of solutions $\mathcal{M}(S, g, \mu)$ is the set of solutions t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 25, Section 2 (Seiberg-Witten Equations))](064-definition-1.md)
 
 ## Sources
 

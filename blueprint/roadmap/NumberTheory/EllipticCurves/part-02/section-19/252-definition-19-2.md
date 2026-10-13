@@ -13,6 +13,8 @@ Let $\Gamma$ be a congruence subgroup. A modular function for $\Gamma$ is a
 ## Depends on
 
 - [Definition 19.1](251-definition-19-1.md)
+- [Definition 14.6](../../part-01/section-14/section-14-1/178-definition-14-6.md)
+- [Definition 18.11](../section-18/250-definition-18-11.md)
 
 ## Sources
 

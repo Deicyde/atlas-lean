@@ -13,6 +13,13 @@ For all $\varepsilon > 0$, $\rho \in (0,1)$ there are $d \in \mathbb{R}$ and $\t
 - [Definition 2.2 (Lecture 4, Section 2)](../lecture-4/007-definition-2-2.md)
 - [Definition 1.1 (Noise Stability)](../section-1/052-noise-stability.md)
 
+## Proof depends on
+
+- [Theorem 5.3](../section-5/083-theorem-5-3.md)
+- [Definition 6.1](084-definition-6-1.md)
+- [Definition 6.2](085-definition-6-2.md)
+- [Theorem 6.3 (Borel's theorem)](086-borel-s-theorem.md)
+
 ## Sources
 
 - [MIT 18.218 Analysis of Boolean Functions (Spring 2021), Section 6](../../../../sources/v1/BooleanFunctions.md)

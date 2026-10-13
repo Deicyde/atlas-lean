@@ -12,7 +12,7 @@ The $\ell$-isogeny graph $G_{\ell}(k)$ is the directed graph with vertex set
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 19.15](../section-19/261-definition-19-15.md)
 
 ## Sources
 

@@ -9,7 +9,7 @@ Let $C/k$ be a curve with $k=\bar{k}$. A divisor of $C$ is a formal sum $D \colo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 19.1](199-definition-19-1.md)
 
 ## Sources
 

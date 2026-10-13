@@ -11,7 +11,11 @@ $(G_n)_n$ is an expander family if $\varphi(G) \geq c'$ for some constant $c'$ a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3 (Cut Ratio)](../lecture-3/031-cut-ratio.md)
+
+## Proof depends on
+
+- [Theorem 4 (Cheeger's Inequality)](../lecture-3/032-cheeger-s-inequality.md)
 
 ## Sources
 

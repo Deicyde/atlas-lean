@@ -12,7 +12,10 @@ Let $G$ be a finite group, $A$ be an abelian group, and let $B$ be $\operatornam
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.4](../section-23-1/449-definition-23-4.md)
+- [Definition 23.17](../section-23-2/461-definition-23-17.md)
+- [Definition 23.20](463-definition-23-20.md)
+- [Definition 23.25](468-definition-23-25.md)
 
 ## Proof depends on
 

@@ -11,7 +11,8 @@ Assume $AKLBG$ with finite residue fields. For each unramified prime $\mathfrak{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.37](../../section-5/section-5/124-definition-5-37.md)
+- [Definition 7.16](../section-7-3/164-definition-7-16.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The inseparable degree of any finite extension of fields is a power of the chara
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.8](../section-4-1/part-01/063-definition-4-8.md)
 
 ## Sources
 

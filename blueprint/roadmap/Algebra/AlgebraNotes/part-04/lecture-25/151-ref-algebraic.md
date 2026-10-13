@@ -12,7 +12,12 @@ If $\alpha, \beta \in L$ are algebraic over $K$, then $\alpha + \beta$, $\alpha\
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 25, Subsection: Algebraic Elements)](140-definition.md)
+
+## Proof depends on
+
+- [Lemma (Lecture 24, Subsection: Field Extensions)](../../part-03/lecture-24/139-lemma.md)
+- [Proposition (\ref{tower})](../../part-03/lecture-24/149-ref-tower.md)
 
 ## Sources
 

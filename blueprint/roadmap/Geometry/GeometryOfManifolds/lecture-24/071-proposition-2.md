@@ -10,7 +10,7 @@ Any two spin$^{c}$ connections differ by a 1-form on $X$ of the type $ia \otimes
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3 (Symplectic Geometry, Lecture 8, Section 2 (Vector Bundles and Connections))](../symplectic-geometry/symplectic-geometry-lecture-8-section-2-vector-b/029-definition-3.md)
 
 ## Sources
 

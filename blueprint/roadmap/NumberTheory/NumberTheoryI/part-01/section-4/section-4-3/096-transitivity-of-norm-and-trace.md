@@ -12,7 +12,7 @@ Let $A \subseteq B \subseteq C$ be rings with $C$ free of finite rank over $B$ a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.46](091-definition-4-46.md)
 
 ## Sources
 

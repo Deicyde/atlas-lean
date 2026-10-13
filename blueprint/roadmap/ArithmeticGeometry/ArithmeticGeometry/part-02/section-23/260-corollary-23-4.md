@@ -10,7 +10,7 @@ Every genus one curve $C/k$ with a rational point is isomorphic to a plane cubic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 22.1](../section-22/section-22-1/235-definition-22-1.md)
 
 ## Sources
 

@@ -11,7 +11,10 @@ The dimension of a projective variety $V$ is the maximum of the dimensions of it
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.5](../section-13-1-1/104-definition-13-5.md)
+- [Definition 13.10](../section-13-1-2/109-definition-13-10.md)
+- [Definition 13.18](115-definition-13-18.md)
+- [Definition 13.19](116-definition-13-19.md)
 
 ## Sources
 

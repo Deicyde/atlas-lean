@@ -12,7 +12,11 @@ Multiplication of ideals has the following two properties: (a) Cancellation: if 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Ideal)](../lecture-8/103-ideal.md)
+
+## Proof depends on
+
+- [Definition (Section: Uniqueness of Ideal Factorization, Subsection: Properties of Ideal Multiplication)](125-definition.md)
 
 ## Sources
 

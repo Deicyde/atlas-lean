@@ -11,10 +11,13 @@ Let $G$ be a finite cyclic group and let $A$ be a trivial $G$-module that is a f
 ## Depends on
 
 - [Definition 23.38](480-definition-23-38.md)
+- [Definition 23.1](../section-23-1/446-definition-23-1.md)
 
 ## Proof depends on
 
 - [Definition 23.29](../section-23-5/472-definition-23-29.md)
+- [Corollary 23.42](483-corollary-23-42.md)
+- [Corollary 23.44](485-corollary-23-44.md)
 
 ## Sources
 

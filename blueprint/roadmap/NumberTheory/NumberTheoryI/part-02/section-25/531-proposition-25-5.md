@@ -10,7 +10,7 @@ Let $(X_i)$ be a family of topological spaces indexed by $i \in I$, let $(U_i)$ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 25.1](528-definition-25-1.md)
 
 ## Proof depends on
 

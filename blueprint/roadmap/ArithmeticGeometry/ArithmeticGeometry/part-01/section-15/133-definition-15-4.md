@@ -11,7 +11,9 @@ Let $X \subseteq \mathbb{A}^m$ and $Y \subseteq \mathbb{A}^n$ be affine varietie
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.3](../section-13/section-13-1/102-definition-13-3.md)
+- [Definition 13.4](../section-13/section-13-1/103-definition-13-4.md)
+- [Definition 15.2](131-definition-15-2.md)
 
 ## Sources
 

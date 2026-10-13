@@ -12,7 +12,15 @@ For all $j_{1}, j_{2} \in \mathbb{C}$, we have $\Phi_{N}(j_{1}, j_{2})=0$ if
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.11](../../part-01/section-13/166-definition-13-11.md)
+- [Definition 19.15](../section-19/261-definition-19-15.md)
+- [Definition 20.1](265-definition-20-1.md)
+
+## Proof depends on
+
+- [Definition 15.7](../../part-01/section-15/208-definition-15-7.md)
+- [Lemma 15.9](../../part-01/section-15/210-lemma-15-9.md)
+- [Lemma 20.2](266-lemma-20-2.md)
 
 ## Sources
 

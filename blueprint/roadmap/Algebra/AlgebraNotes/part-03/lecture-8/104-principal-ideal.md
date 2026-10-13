@@ -11,7 +11,7 @@ For an element $a \in R$, the ideal $aR$ is called a **principal ideal**, and de
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Ideal)](103-ideal.md)
 
 ## Sources
 

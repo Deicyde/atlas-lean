@@ -13,6 +13,12 @@ The canonical divisors form a single linear equivalence class.
 ## Depends on
 
 - [Definition 22.16](248-definition-22-16.md)
+- [Definition 19.13](../../section-19/209-definition-19-13.md)
+
+## Proof depends on
+
+- [Theorem 22.14](246-theorem-22-14.md)
+- [Lemma 22.17](249-lemma-22-17.md)
 
 ## Sources
 

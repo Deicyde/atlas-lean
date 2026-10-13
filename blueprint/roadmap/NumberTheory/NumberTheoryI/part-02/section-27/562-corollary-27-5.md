@@ -11,6 +11,12 @@ The map $L \mapsto \mathrm{N}\left(L^{\times}\right)$ defines an inclusion rever
 ## Depends on
 
 - [Theorem 27.2 (Local Artin Reciprocity)](560-local-artin-reciprocity.md)
+- [Definition 27.1](559-definition-27-1.md)
+- [Definition 27.3](561-definition-27-3.md)
+
+## Proof depends on
+
+- [Theorem 4.53 (Transitivity of Norm and Trace)](../../part-01/section-4/section-4-3/096-transitivity-of-norm-and-trace.md)
 
 ## Sources
 

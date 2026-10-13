@@ -12,7 +12,13 @@ Let $L/K$ be a finite extension of fields. Then $[L:K]_s \leq [L:K]$ with equali
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](058-definition-4-3.md)
+- [Definition 4.8](063-definition-4-8.md)
+
+## Proof depends on
+
+- [Lemma 4.7](062-lemma-4-7.md)
+- [Corollary 4.11](066-corollary-4-11.md)
 
 ## Sources
 

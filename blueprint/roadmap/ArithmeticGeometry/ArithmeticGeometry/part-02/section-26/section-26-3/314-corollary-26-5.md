@@ -13,6 +13,12 @@ Let $C/k$ be a genus one curve and let $O$ and $O'$ be any two points in $C(\bar
 ## Depends on
 
 - [Definition 26.2](311-definition-26-2.md)
+- [Definition 22.1](../../section-22/section-22-1/235-definition-22-1.md)
+- [Definition 23.14](../../section-23/266-definition-23-14.md)
+
+## Proof depends on
+
+- [Theorem 26.4](313-theorem-26-4.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Assume $AKLB$ and let $\alpha \in B$ have minimal polynomial $f \in A[x]$. The d
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.10](../../section-9/194-definition-9-10.md)
 
 ## Sources
 

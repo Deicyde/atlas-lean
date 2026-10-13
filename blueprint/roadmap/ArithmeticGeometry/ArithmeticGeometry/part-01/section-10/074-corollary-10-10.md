@@ -10,13 +10,15 @@ The Hilbert symbol $(a, b)_{p}$ is a nondegenerate bilinear map. This means that
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.1](../section-5/029-definition-5-1.md)
 
 ## Proof depends on
 
 - [Theorem 10.7](071-theorem-10-7.md)
 - [Lemma 10.8](072-lemma-10-8.md)
 - [Definition 10.1](066-definition-10-1.md)
+- [Theorem 10.4](069-theorem-10-4.md)
+- [Theorem 10.9](073-theorem-10-9.md)
 
 ## Sources
 

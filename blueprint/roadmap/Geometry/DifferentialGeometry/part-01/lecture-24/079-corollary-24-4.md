@@ -10,7 +10,7 @@ Let $\psi, \tilde{\psi} \colon V \rightarrow \mathbb{R}$ be two local defining f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 24.1](077-definition-24-1.md)
 
 ## Sources
 

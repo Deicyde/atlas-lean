@@ -10,7 +10,7 @@ For odd $p$ every totally wildly ramified Galois extension of $\mathbb{Q}_{p}$ i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 11.7](../section-11/224-definition-11-7.md)
 
 ## Sources
 

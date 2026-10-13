@@ -13,6 +13,13 @@ $\mathrm{MIN}_{\mathrm{TM}}$ is Turing-unrecognizable.
 ## Depends on
 
 - [Definition: Turing-recognizable](../lecture-5/023-definition-turing-recognizable.md)
+- [Definition (Minimal TM)](047-minimal-tm.md)
+
+## Proof depends on
+
+- [Theorem (Lecture 6, Turing Enumerators)](../lecture-6/018-theorem.md)
+- [Definition: Turing Enumerator](../lecture-6/026-definition-turing-enumerator.md)
+- [Theorem (Recursion Theorem)](045-recursion-theorem.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ For any full-rank lattice $\Lambda$ and (measurable) set $S \subseteq \mathbb{R}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lattice)](130-lattice.md)
+- [Definition (Determinant of lattice)](137-determinant-of-lattice.md)
+
+## Proof depends on
+
+- [Definition (Fundamental parallelepiped)](131-fundamental-parallelepiped.md)
 
 ## Sources
 

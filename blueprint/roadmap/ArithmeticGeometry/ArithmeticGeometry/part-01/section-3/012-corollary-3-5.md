@@ -14,6 +14,11 @@ Let $C / \mathbb{F}_{q}$ be a conic over a finite field. Then one of the followi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 2.3](../section-2/004-theorem-2-3.md)
+- [Theorem 3.4](011-theorem-3-4.md)
+
 ## Sources
 
 - [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 3.3](../../../../../sources/v1/ArithmeticGeometry.md)

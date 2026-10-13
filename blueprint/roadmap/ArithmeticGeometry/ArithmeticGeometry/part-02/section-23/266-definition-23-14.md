@@ -11,7 +11,9 @@ An elliptic curve $E / k$ is a genus one curve with a distinguished rational poi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 19.1](../section-19/199-definition-19-1.md)
+- [Definition 22.1](../section-22/section-22-1/235-definition-22-1.md)
+- [Definition 23.9](262-definition-23-9.md)
 
 ## Sources
 

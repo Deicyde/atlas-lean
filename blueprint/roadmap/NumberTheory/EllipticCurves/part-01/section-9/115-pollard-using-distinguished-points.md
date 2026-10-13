@@ -16,7 +16,7 @@ lean: PollardRhoDPConfig
 
 ## Depends on
 
-This node has no prerequisites.
+- [Algorithm 9.5 (Pollard-$\rho$)](114-pollard-rho.md)
 
 ## Sources
 

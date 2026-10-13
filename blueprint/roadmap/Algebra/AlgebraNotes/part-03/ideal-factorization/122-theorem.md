@@ -12,7 +12,11 @@ Let $R$ be the ring of algebraic integers in a number field. Then every nonzero 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Ideal)](../lecture-8/103-ideal.md)
+
+## Proof depends on
+
+- [Definition (Maximal Ideals)](../lecture-10/109-maximal-ideals.md)
 
 ## Sources
 

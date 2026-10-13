@@ -13,7 +13,8 @@ The $j$-function $j: \mathbb{H} \rightarrow \mathbb{C}$ is defined by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 14.29](../section-14/section-14-5/198-theorem-14-29.md)
+- [Definition 15.2](203-definition-15-2.md)
 
 ## Proof depends on
 

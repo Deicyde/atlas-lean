@@ -12,7 +12,12 @@ For each positive integer $m$, the sequence $$0 \longrightarrow \mathbb{Z}_{p} \
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](015-definition-4-3.md)
+
+## Proof depends on
+
+- [Definition 4.5](016-definition-4-5.md)
+- [Theorem 4.6](017-theorem-4-6.md)
 
 ## Sources
 

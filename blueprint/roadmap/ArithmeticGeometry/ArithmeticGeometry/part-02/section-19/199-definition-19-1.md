@@ -11,7 +11,9 @@ A curve $C/k$ is a smooth projective variety of dimension one defined over $k$. 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.3](../../part-01/section-12/086-definition-12-3.md)
+- [Definition 13.18](../../part-01/section-13/section-13-4/115-definition-13-18.md)
+- [Definition 13.20](../../part-01/section-13/section-13-4/117-definition-13-20.md)
 
 ## Sources
 

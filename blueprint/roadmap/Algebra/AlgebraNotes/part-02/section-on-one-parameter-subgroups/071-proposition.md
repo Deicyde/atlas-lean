@@ -14,6 +14,10 @@ Every one-parameter group in $GL_n(\mathbb{C})$ is of the form $\varphi(t) = e^{
 
 - [Definition (Section on One-Parameter Subgroups)](070-definition.md)
 
+## Proof depends on
+
+- [Definition (Section 3, Subsection 3.2 (Homomorphisms))](../../part-01/section-3/001-definition.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Section on One-Parameter Subgroups](../../../../../sources/v1/AlgebraNotes.md)

@@ -12,7 +12,8 @@ $G_{n,m}$ has eigenvectors and eigenvalues completely determined by those of $P_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 1, Section 2)](../../lecture-1/001-definition-1.md)
+- [Definition 18](023-definition-18.md)
 
 ## Sources
 

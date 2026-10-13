@@ -13,6 +13,11 @@ Let $f \in C^{1}(\mathbb{R})$ be initial data for Burger's equation. Then the co
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 3.1 (Class Meeting #24, Section 3 ("Solving" Burger's equation))](099-theorem-3-1.md)
+- [Proposition 2.0.2 (Burger solutions are constant along characteristics)](103-burger-solutions-are-constant-along-char.md)
+
 ## Sources
 
 - [MIT 18.152 Introduction to Partial Differential Equations (Fall 2011), Class Meeting #24, Section 4 (Formation of Singularities)](../../../../../sources/v1/IntroductionToPartialDifferentialEquations.md)

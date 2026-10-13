@@ -15,7 +15,7 @@ Let $p$ be a prime and $D$ an integer. For $p>2$ the Kronecker symbol is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.2](../../part-01/section-3/section-3-1/006-definition-3-2.md)
 
 ## Sources
 

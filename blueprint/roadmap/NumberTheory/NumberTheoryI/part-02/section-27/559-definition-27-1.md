@@ -10,7 +10,7 @@ Let $K$ be a local field with separable closure $K^{\text{sep}}$. The field $K^{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.17](../../part-01/section-4/section-4-1/part-01/072-definition-4-17.md)
 
 ## Sources
 

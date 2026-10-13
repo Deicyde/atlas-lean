@@ -12,7 +12,13 @@ The following hold: (1) $\mathbb{Z}_{p}^{\times}=\mathbb{Z}_{p}-p\mathbb{Z}_{p}$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](015-definition-4-3.md)
+- [Definition 4.10](020-definition-4-10.md)
+- [Definition 4.14](024-definition-4-14.md)
+
+## Proof depends on
+
+- [Theorem 4.11](021-theorem-4-11.md)
 
 ## Sources
 

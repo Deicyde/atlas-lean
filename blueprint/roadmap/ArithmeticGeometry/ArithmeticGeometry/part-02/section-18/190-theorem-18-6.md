@@ -10,7 +10,14 @@ Let $C$ be a smooth projective curve. Every rational map $\phi: C \rightarrow V$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.18](../../part-01/section-13/section-13-4/115-definition-13-18.md)
+- [Definition 13.20](../../part-01/section-13/section-13-4/117-definition-13-20.md)
+- [Definition 15.14](../../part-01/section-15/142-definition-15-14.md)
+- [Definition 15.17](../../part-01/section-15/143-definition-15-17.md)
+
+## Proof depends on
+
+- [Theorem 18.2](186-theorem-18-2.md)
 
 ## Sources
 

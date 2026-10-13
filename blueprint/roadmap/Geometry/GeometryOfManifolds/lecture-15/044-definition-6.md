@@ -11,7 +11,7 @@ For $L \colon \Gamma(E) \rightarrow \Gamma(F)$ a differential operator, $P \colo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5 (Lecture 15, Section 1, Hodge Theory)](043-definition-5.md)
 
 ## Sources
 

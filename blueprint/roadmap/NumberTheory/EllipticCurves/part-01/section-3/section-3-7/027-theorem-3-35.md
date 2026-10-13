@@ -14,7 +14,11 @@ Let $q = p^e$ be a prime power, and assume that $\log e = O(\log p)$. The
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.4](../section-3-1/007-definition-3-4.md)
+
+## Proof depends on
+
+- [Algorithm 3.34 (Fast Euclidean division of polynomials)](026-fast-euclidean-division-of-polynomials.md)
 
 ## Sources
 

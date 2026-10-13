@@ -12,7 +12,7 @@ An elliptic curve $E$ for which $\operatorname{End}(E) \not\simeq \mathbb{Z}$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.13](../section-6/098-definition-6-13.md)
 
 ## Sources
 

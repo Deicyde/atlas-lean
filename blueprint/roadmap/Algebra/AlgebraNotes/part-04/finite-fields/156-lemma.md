@@ -14,6 +14,10 @@ If $F$ is any field and $G$ is a finite subgroup of $F^\times$, then $G$ is cycl
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Section: Decomposition of Modules, Subsection: Classification of Abelian Groups)](../../part-03/decomposition-of-modules/136-theorem.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Finite Fields, The Multiplicative Group](../../../../../sources/v1/AlgebraNotes.md)

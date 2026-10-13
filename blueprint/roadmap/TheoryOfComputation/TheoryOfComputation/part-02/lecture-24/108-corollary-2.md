@@ -14,6 +14,10 @@ If $p(x) \neq 0$ has degree $\leq d$ and we pick a random $r \in \mathbb{F}_q$, 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Polynomial Lemma](106-polynomial-lemma.md)
+
 ## Sources
 
 - [MIT 18.404J Theory of Computation (Fall 2020), Lecture 24, Roots of Polynomials](../../../../../sources/v1/TheoryOfComputation.md)

@@ -9,7 +9,7 @@ For $a, b \in \mathbb{Q}_{p}^{\times}$ the Hilbert symbol $(a, b)_{p}$ is define
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.1](../section-5/029-definition-5-1.md)
 
 ## Sources
 

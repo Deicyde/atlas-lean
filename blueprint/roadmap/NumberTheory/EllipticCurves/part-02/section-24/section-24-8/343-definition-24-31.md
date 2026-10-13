@@ -12,7 +12,8 @@ Let $E/\mathbb{Q}$ be a semi-stable elliptic curve with minimal discriminant
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 24.29](../section-24-7/341-definition-24-29.md)
+- [Definition 24.30](../section-24-7/342-definition-24-30.md)
 
 ## Sources
 

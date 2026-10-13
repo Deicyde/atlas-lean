@@ -11,7 +11,8 @@ Let $A$ be a left $R$-module and let $\bullet_*$ denote the application of the f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.49](../section-23-7-subsection-23-7-1/489-definition-23-49.md)
+- [Definition 23.51](../section-23-7-subsection-23-7-1/491-definition-23-51.md)
 
 ## Sources
 

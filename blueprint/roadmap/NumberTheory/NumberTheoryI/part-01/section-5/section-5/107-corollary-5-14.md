@@ -12,7 +12,9 @@ Let $A$ be a noetherian domain with fraction field $K$, let $V$ be a $K$-vector 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.6](../section-5-1/101-definition-5-6.md)
+- [Definition 5.9](103-definition-5-9.md)
+- [Definition 5.11](104-definition-5-11.md)
 
 ## Sources
 

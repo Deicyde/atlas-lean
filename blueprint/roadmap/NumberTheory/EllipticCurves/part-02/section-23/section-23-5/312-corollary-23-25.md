@@ -14,7 +14,11 @@ Let $E/k$ be an elliptic curve and let $n$ be a positive integer. For any $P,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.23](310-definition-23-23.md)
+
+## Proof depends on
+
+- [Lemma 23.24](311-lemma-23-24.md)
 
 ## Sources
 

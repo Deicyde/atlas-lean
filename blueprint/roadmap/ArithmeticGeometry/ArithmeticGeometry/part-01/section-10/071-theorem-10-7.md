@@ -13,10 +13,13 @@ Let $p$ be an odd prime, and write $a, b \in \mathbb{Q}_{p}^{\times}$ as $a=p^{\
 ## Depends on
 
 - [Definition 10.1](066-definition-10-1.md)
+- [Definition 4.14](../section-4/024-definition-4-14.md)
+- [Definition 5.1](../section-5/029-definition-5-1.md)
 
 ## Proof depends on
 
 - [Lemma 10.5](070-lemma-10-5.md)
+- [Corollary 10.3](068-corollary-10-3.md)
 
 ## Sources
 

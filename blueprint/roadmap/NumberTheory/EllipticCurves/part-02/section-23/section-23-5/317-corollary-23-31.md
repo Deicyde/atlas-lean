@@ -15,11 +15,12 @@ Let $E/k$ be an elliptic curve and let $P \in E(\bar{k})$ be a point of order
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.19](../section-23-4/306-definition-23-19.md)
 
 ## Proof depends on
 
 - [Definition 23.23](310-definition-23-23.md)
+- [Theorem 23.29](315-theorem-23-29.md)
 
 ## Sources
 

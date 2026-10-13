@@ -16,7 +16,9 @@ Let $f \in S_{k}(\Gamma_{0}(N))$. The $L$-function $L(f, s)$ extends
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.4](../../../part-01/section-14/section-14-1/176-definition-14-4.md)
+- [Definition 24.6](../section-24-1/325-definition-24-6.md)
+- [Definition 24.24](337-definition-24-24.md)
 
 ## Sources
 

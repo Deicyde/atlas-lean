@@ -10,7 +10,7 @@ Let $c$ be a closed curve of period $T$. Then $\int_{0}^{T} |\kappa(t)| \left\|c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.1](../chapter-1-lecture-8/025-definition-8-1.md)
 
 ## Proof depends on
 

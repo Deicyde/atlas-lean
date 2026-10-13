@@ -15,6 +15,11 @@ The maximal ideals of the ring $\bar{k}[x_1, \ldots, x_n]$ are all of the
 ## Depends on
 
 - [Definition 4.46](061-definition-4-46.md)
+- [Definition 4.41](057-definition-4-41.md)
+
+## Proof depends on
+
+- [Theorem 4.50 (weak Nullstellensatz)](065-weak-nullstellensatz.md)
 
 ## Sources
 

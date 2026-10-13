@@ -13,6 +13,7 @@ Let $G$ be a profinite group. Then $G$ is naturally isomorphic to its profinite 
 ## Depends on
 
 - [Definition 26.13](549-definition-26-13.md)
+- [Definition 8.9](../../part-01/section-8/180-definition-8-9.md)
 
 ## Sources
 

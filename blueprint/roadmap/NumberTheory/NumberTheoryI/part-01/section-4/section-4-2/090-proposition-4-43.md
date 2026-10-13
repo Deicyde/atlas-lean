@@ -11,7 +11,9 @@ Suppose $L$ is a finite étale $K$-algebra and $\Omega$ is a separably closed fi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.21](../section-4-1/part-01/076-definition-4-21.md)
+- [Definition 4.29](082-definition-4-29.md)
+- [Definition 4.34](085-definition-4-34.md)
 
 ## Sources
 

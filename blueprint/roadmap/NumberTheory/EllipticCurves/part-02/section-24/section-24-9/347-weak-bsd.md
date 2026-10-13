@@ -12,7 +12,7 @@ Let $E / \mathbb{Q}$ be an elliptic curve of rank $r$. Then $L(E, s)$ has a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 24.28](../section-24-6/340-definition-24-28.md)
 
 ## Sources
 

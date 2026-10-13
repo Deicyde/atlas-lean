@@ -10,7 +10,8 @@ Let $M \subset \mathbb{R}^{n+1}$ be a closed hypersurface of even dimension $n$,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 26.2](../../part-01/lecture-26/083-definition-26-2.md)
+- [Definition 32.2](../../part-01/lecture-32/102-definition-32-2.md)
 
 ## Proof depends on
 

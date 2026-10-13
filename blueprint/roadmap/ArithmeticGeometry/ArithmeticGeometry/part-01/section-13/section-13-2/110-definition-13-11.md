@@ -11,7 +11,7 @@ $n$-dimensional projective space $\mathbb{P}^{n}$ over $k$ is the set of all poi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.7](../../section-12/087-definition-12-7.md)
 
 ## Sources
 

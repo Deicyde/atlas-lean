@@ -14,6 +14,10 @@ The transcendence degree of a field extension $L/K$ is the cardinality of any
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 4.34](053-theorem-4-34.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 4.6](../../../../../../sources/v1/EllipticCurves.md)

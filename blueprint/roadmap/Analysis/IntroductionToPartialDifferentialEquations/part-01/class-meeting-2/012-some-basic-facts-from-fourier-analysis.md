@@ -12,7 +12,8 @@ If $f(x)$ is a function such that $\|f\|_{L^{2}([0,1])}^{2} \coloneqq \int_{0}^{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7.1.1 ($C^{k}$ norms)](../class-meeting-1/007-c-k-norms.md)
+- [Definition 7.1.2 ($L^{p}$ norms)](../class-meeting-1/008-l-p-norms.md)
 
 ## Sources
 

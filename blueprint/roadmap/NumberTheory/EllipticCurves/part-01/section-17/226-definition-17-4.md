@@ -14,7 +14,7 @@ Let $\mathcal{O}$ be an order in a number field $K$ and let $\mathfrak{a}$ be
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.22](../section-12/155-definition-12-22.md)
 
 ## Sources
 

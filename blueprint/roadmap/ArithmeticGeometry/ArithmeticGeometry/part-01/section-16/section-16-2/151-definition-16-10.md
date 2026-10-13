@@ -11,7 +11,9 @@ A variety $X$ is complete if for every variety $Y$ the projection $X \times Y \r
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.3](../../section-14/123-definition-14-3.md)
+- [Definition 16.2](../section-16-1/146-definition-16-2.md)
+- [Definition 16.8](../section-16-1/150-definition-16-8.md)
 
 ## Sources
 

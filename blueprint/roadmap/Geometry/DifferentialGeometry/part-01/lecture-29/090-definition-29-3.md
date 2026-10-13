@@ -11,7 +11,8 @@ Let $M$ be a hypersurface. A partial parametrization of $M$ consists of an open 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.1](../chapter-2/040-definition-12-1.md)
+- [Definition 24.1](../lecture-24/077-definition-24-1.md)
 
 ## Sources
 

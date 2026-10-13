@@ -11,7 +11,7 @@ Let $N$ be an odd composite integer. The probability that a random integer $a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 11.7](134-definition-11-7.md)
 
 ## Sources
 

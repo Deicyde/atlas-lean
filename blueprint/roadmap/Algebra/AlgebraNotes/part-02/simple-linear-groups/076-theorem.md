@@ -10,7 +10,11 @@ If $N \trianglelefteq SU_2$, then $N$ must be $\{I\}$, $SU_2$, or $\{\pm I\}$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (The Correspondence Theorem, Normal Subgroups)](../../part-01/the-correspondence-theorem/008-definition.md)
+
+## Proof depends on
+
+- [Theorem (Section: The Special Unitary Group $SU_2$, Subsection: Longitudes)](../the-special-unitary-group-su-2/068-theorem.md)
 
 ## Sources
 

@@ -9,7 +9,10 @@ Assume $AKLB$. The discriminant $D_{L/K}$ of $L/K$ (and the discriminant $D_{B/A
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.22](../../section-2/036-definition-2-22.md)
+- [Definition 4.46](../../section-4/section-4-3/091-definition-4-46.md)
+- [Definition 12.5](../section-12-2/244-definition-12-5.md)
+- [Proposition 12.11](249-proposition-12-11.md)
 
 ## Proof depends on
 

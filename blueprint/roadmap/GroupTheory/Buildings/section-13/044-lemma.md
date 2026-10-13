@@ -17,6 +17,8 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Lemma (Section 13.4)](041-lemma.md)
+- [Corollary (Section 13.3)](042-corollary.md)
+- [Theorem (Section 13.1)](043-theorem.md)
 
 ## Sources
 

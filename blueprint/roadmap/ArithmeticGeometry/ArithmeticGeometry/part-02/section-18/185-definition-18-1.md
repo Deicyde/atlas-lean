@@ -11,7 +11,9 @@ A Noetherian local ring $R$ with maximal ideal $\mathfrak{m}$ is a regular local
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.10](../../part-01/section-12/089-definition-12-10.md)
+- [Definition 13.7](../../part-01/section-13/section-13-1-1/106-definition-13-7.md)
+- [Definition 16.16](../../part-01/section-16/section-16-3/156-definition-16-16.md)
 
 ## Sources
 

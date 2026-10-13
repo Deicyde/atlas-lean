@@ -10,12 +10,15 @@ Let $L / K$ be a finite abelian extension of number fields with Galois group $G$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.37](../../part-01/section-5/section-5/124-definition-5-37.md)
+- [Definition 7.19](../../part-01/section-7/section-7-3/167-definition-7-19.md)
 
 ## Proof depends on
 
 - [Definition 18.22](../../part-01/section-18/section-18-4/368-definition-18-22.md)
 - [Theorem 28.9 (Chebotarev density theorem)](574-chebotarev-density-theorem.md)
+- [Definition 22.24](../section-22/section-22-3/439-definition-22-24.md)
+- [Proposition 28.10](575-proposition-28-10.md)
 
 ## Sources
 

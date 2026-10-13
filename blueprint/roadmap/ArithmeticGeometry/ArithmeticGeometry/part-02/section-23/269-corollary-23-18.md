@@ -12,7 +12,13 @@ Let $E / k$ be an elliptic curve defined by a Weierstrass equation. The sum of a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.9](262-definition-23-9.md)
+- [Definition 23.14](266-definition-23-14.md)
+- [Theorem 23.16](267-theorem-23-16.md)
+
+## Proof depends on
+
+- [Lemma 23.17](268-lemma-23-17.md)
 
 ## Sources
 

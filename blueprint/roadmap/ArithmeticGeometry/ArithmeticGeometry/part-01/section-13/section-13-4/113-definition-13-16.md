@@ -11,7 +11,7 @@ A homogeneous ideal in $\bar{k}\left[x_{0}, \ldots, x_{n}\right]$ is an ideal th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.13](../section-13-3/111-definition-13-13.md)
 
 ## Sources
 

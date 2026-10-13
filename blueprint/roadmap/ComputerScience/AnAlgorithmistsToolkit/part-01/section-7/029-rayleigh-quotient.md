@@ -12,7 +12,12 @@ Letting $G = (V, E)$ be a graph with Laplacian $L_G$, $\lambda_1 = 0$ with $v_1 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 1, Section 2)](../lecture-1/001-definition-1.md)
+
+## Proof depends on
+
+- [Proposition 6 (Lecture 1, Section 4)](../lecture-1/006-proposition-6.md)
+- [Theorem 23 (Courant-Fischer Formula)](../lecture-2/lecture-2-section-7/028-courant-fischer-formula.md)
 
 ## Sources
 

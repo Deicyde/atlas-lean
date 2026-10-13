@@ -11,7 +11,14 @@ Let $A$ be a Dedekind domain. The ideal group $\mathcal{I}_{A}$ of $A$ is the fr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.10](../section-2/027-definition-2-10.md)
+- [Definition 2.22](../section-2/036-definition-2-22.md)
+
+## Proof depends on
+
+- [Corollary 2.7](../section-2/025-corollary-2-7.md)
+- [Lemma 3.9](045-lemma-3-9.md)
+- [Corollary 3.10](046-corollary-3-10.md)
 
 ## Sources
 

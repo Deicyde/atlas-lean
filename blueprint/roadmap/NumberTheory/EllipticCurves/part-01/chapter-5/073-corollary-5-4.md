@@ -17,6 +17,12 @@ Let $\alpha$ be an isogeny of elliptic curves over a field $k$ of
 ## Depends on
 
 - [Definition 4.31](../section-4/section-4-5/052-definition-4-31.md)
+- [Definition 4.18](../section-4/section-4-2/043-definition-4-18.md)
+
+## Proof depends on
+
+- [Lemma 4.26](../section-4/section-4-4/048-lemma-4-26.md)
+- [Lemma 5.3](072-lemma-5-3.md)
 
 ## Sources
 

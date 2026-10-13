@@ -11,7 +11,8 @@ A (full) lattice in $V \simeq \mathbb{R}^{n}$ is a $\mathbb{Z}$-submodule genera
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.2](281-definition-14-2.md)
+- [Lemma 14.3](282-lemma-14-3.md)
 
 ## Sources
 

@@ -9,7 +9,9 @@ Let $K$ be a field. A place of $K$ is an equivalence class of nontrivial absolut
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1/section-1-2/001-definition-1-2.md)
+- [Definition 1.6](../section-1/section-1-2/004-definition-1-6.md)
+- [Definition 8.3](../section-8/174-definition-8-3.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ $$[L:K]_i = [L:F]_i [F:K]_i$$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.8](063-definition-4-8.md)
 
 ## Proof depends on
 

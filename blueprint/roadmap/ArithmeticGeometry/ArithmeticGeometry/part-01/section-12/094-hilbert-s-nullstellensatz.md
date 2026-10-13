@@ -14,6 +14,7 @@ For every ideal $I \subseteq \bar{k}[x_{1}, \ldots, x_{n}]$ we have $I(Z_{I})=\s
 
 - [Definition 12.8](088-definition-12-8.md)
 - [Definition 12.12](091-definition-12-12.md)
+- [Definition 12.13](092-definition-12-13.md)
 
 ## Proof depends on
 

@@ -12,7 +12,7 @@ If $\operatorname{char} K = 0$ then every algebraic extension of $K$ is separabl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](058-definition-4-3.md)
 
 ## Sources
 

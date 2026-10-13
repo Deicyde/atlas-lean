@@ -12,7 +12,7 @@ Two quadratic forms $f$ and $g$ are equivalent if $g(v)=f(Tv)$ for some $T \in \
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.1](058-definition-9-1.md)
 
 ## Sources
 

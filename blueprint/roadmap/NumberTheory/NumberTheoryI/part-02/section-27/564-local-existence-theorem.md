@@ -12,6 +12,9 @@ Let $K$ be a local field and let $H$ be a finite index open subgroup of $K^{\tim
 
 - [Theorem 27.2 (Local Artin Reciprocity)](560-local-artin-reciprocity.md)
 - [Definition 27.3](561-definition-27-3.md)
+- [Definition 4.46](../../part-01/section-4/section-4-3/091-definition-4-46.md)
+- [Definition 9.1](../../part-01/section-9/187-definition-9-1.md)
+- [Definition 27.1](559-definition-27-1.md)
 
 ## Sources
 

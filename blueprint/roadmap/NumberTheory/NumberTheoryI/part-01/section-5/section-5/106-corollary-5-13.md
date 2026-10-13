@@ -12,7 +12,14 @@ Let $A$ be a noetherian domain with fraction field $K$. If $M_1, M_2$ are $A$-la
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.6](../section-5-1/101-definition-5-6.md)
+- [Definition 5.9](103-definition-5-9.md)
+- [Definition 5.11](104-definition-5-11.md)
+
+## Proof depends on
+
+- [Lemma 5.2](../section-5-1/098-lemma-5-2.md)
+- [Theorem 5.12](105-theorem-5-12.md)
 
 ## Sources
 

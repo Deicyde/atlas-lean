@@ -12,7 +12,7 @@ Every unique factorization domain is integrally closed. In particular, every PID
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.19](../section-1-6/015-definition-1-19.md)
 
 ## Sources
 

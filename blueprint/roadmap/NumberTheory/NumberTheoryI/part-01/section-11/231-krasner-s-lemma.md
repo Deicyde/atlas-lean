@@ -13,6 +13,13 @@ Let $K$ be the fraction field of a complete DVR and let $\alpha, \beta \in \bar{
 ## Depends on
 
 - [Definition 11.14](230-definition-11-14.md)
+- [Definition 1.10](../section-1/section-1-4/008-definition-1-10.md)
+- [Definition 4.3](../section-4/section-4-1/part-01/058-definition-4-3.md)
+- [Definition 8.1](../section-8/172-definition-8-1.md)
+
+## Proof depends on
+
+- [Lemma 11.13](229-lemma-11-13.md)
 
 ## Sources
 

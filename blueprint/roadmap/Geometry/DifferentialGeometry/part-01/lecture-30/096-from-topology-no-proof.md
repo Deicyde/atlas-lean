@@ -13,6 +13,9 @@ Let $M \subset \mathbb{R}^{n+1}$ be a connected compact hypersurface, with $n \g
 ## Depends on
 
 - [Definition 24.1](../lecture-24/077-definition-24-1.md)
+- [Definition 26.1](../lecture-26/082-definition-26-1.md)
+- [Definition 30.2](093-definition-30-2.md)
+- [Definition 30.3](094-definition-30-3.md)
 
 ## Sources
 

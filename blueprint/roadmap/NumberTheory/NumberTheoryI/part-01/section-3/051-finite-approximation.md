@@ -9,7 +9,12 @@ Let $I$ be a nonzero fractional ideal in a Dedekind domain $A$ and let $\mathfra
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.10](../section-2/027-definition-2-10.md)
+- [Definition 2.13](../section-2/029-definition-2-13.md)
+
+## Proof depends on
+
+- [Corollary 2.16](../section-2/031-corollary-2-16.md)
 
 ## Sources
 

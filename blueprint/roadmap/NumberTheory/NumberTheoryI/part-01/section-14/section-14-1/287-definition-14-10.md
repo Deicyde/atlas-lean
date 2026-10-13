@@ -11,7 +11,10 @@ Let $\Lambda$ be a lattice in $V \simeq \mathbb{R}^{n}$ and fix a Haar measure $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.13](../../section-13/273-definition-13-13.md)
+- [Definition 14.4](283-definition-14-4.md)
+- [Definition 14.8](285-definition-14-8.md)
+- [Proposition 14.9](286-proposition-14-9.md)
 
 ## Sources
 

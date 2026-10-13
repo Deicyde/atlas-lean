@@ -13,7 +13,7 @@ Let $\mathcal{O}$ be an order in an imaginary quadratic field. The ideal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.22](../section-12/155-definition-12-22.md)
 
 ## Proof depends on
 

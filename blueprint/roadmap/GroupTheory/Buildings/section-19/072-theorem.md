@@ -15,6 +15,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Proposition (Section 17.7)](../section-17/067-proposition.md)
+- [Theorem (Section 17.7)](../section-17/065-theorem.md)
 
 ## Sources
 

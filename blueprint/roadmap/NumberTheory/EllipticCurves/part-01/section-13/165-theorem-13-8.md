@@ -14,7 +14,16 @@ Let $E/\mathbb{F}_{q}$ be an elliptic curve for which
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.24](../section-4/section-4-3-3/047-definition-4-24.md)
+- [Definition 6.13](../section-6/098-definition-6-13.md)
+- [Definition 12.2](../section-12/141-definition-12-2.md)
+- [Theorem 12.25](../section-12/157-theorem-12-25.md)
+- [Theorem 12.27](../section-12/159-theorem-12-27.md)
+
+## Proof depends on
+
+- [Definition 12.22](../section-12/155-definition-12-22.md)
+- [Theorem 12.26](../section-12/158-theorem-12-26.md)
 
 ## Sources
 

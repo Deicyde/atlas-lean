@@ -12,6 +12,10 @@ Let $\tilde{G}$ act strongly transitively on a thick affine building $X$, with t
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition (Section 14.7)](049-proposition.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 14.7](../../../../sources/v1/Buildings.md)

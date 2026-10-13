@@ -11,7 +11,8 @@ $\mathrm{CLIQUE} \in \mathsf{P} \Rightarrow \mathrm{3SAT} \in \mathsf{P}$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (3SAT)](058-3sat.md)
+- [Definition (k-clique and CLIQUE)](059-k-clique-and-clique.md)
 
 ## Proof depends on
 

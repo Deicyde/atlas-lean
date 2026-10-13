@@ -11,7 +11,7 @@ A square matrix $U$ is unimodular if all entries are integer and $\det(U) = \pm 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4 (Determinant)](../../part-01/section-4/048-determinant.md)
 
 ## Sources
 

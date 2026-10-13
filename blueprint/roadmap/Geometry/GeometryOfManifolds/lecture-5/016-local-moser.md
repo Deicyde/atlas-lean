@@ -15,6 +15,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Proposition 1 (Lecture 5, Section 1 (Tubular Neighborhoods))](003-proposition-1.md)
+- [Theorem 3 (Lecture 5, Section 1 (Tubular Neighborhoods))](015-theorem-3.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ If $\rho: G \to \operatorname{GL}(V)$ is a complex representation, then (a) $\ch
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Character)](../lecture-1/086-character.md)
 
 ## Sources
 

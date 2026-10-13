@@ -10,7 +10,10 @@ Let $A$ be a $G$-module for a finite group $G$. For $n \geq 0$ the Tate cohomolo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.1](../section-23-1/446-definition-23-1.md)
+- [Definition 23.4](../section-23-1/449-definition-23-4.md)
+- [Definition 23.20](../section-23-4/463-definition-23-20.md)
+- [Lemma 23.30](473-lemma-23-30.md)
 
 ## Sources
 

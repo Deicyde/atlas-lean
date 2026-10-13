@@ -12,7 +12,7 @@ The Dirichlet $L$-function associated to a Dirichlet character $\chi$ is $$L(s, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 18.5](../section-18-2/355-definition-18-5.md)
 
 ## Sources
 

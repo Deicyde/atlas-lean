@@ -11,7 +11,7 @@ For an algebraic set $Z \subseteq \mathbb{A}^{n}$, the ideal of $Z$ is the set $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.8](088-definition-12-8.md)
 
 ## Sources
 

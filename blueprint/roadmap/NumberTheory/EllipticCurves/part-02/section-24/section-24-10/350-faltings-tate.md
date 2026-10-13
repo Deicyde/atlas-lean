@@ -14,7 +14,7 @@ Let $E$ and $E'$ be elliptic curves over $\mathbb{Q}$ with $L$-functions
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 24.28](../section-24-6/340-definition-24-28.md)
 
 ## Proof depends on
 

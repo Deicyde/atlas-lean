@@ -10,7 +10,7 @@ Let $G$ be a finite cyclic group and let $A$ be a $G$-module containing a sub-$G
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.1](../section-23-1/446-definition-23-1.md)
 
 ## Sources
 

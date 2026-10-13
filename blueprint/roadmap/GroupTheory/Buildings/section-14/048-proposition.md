@@ -12,7 +12,11 @@ The canonical metric on $|X|$ is well-defined.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section 13.7)](../section-13/047-definition.md)
+
+## Proof depends on
+
+- [Corollary (Section 13.7)](../section-13/045-corollary.md)
 
 ## Sources
 

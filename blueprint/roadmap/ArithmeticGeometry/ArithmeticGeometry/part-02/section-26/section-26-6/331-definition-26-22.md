@@ -11,7 +11,8 @@ Let $E/k$ be an elliptic curve. The group of continuous crossed homomorphisms of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.14](../../section-23/266-definition-23-14.md)
+- [Definition 26.21](330-definition-26-21.md)
 
 ## Proof depends on
 

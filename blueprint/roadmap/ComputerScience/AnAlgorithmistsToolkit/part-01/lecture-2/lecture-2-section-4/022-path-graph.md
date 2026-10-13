@@ -9,7 +9,12 @@ The Laplacian for the path graph $P_n$ on $n$ vertices has the same eigenvalues 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 1, Section 2)](../../lecture-1/001-definition-1.md)
+
+## Proof depends on
+
+- [Proposition 2 (Lecture 1, Section 2)](../../lecture-1/002-proposition-2.md)
+- [Lemma 16 (Ring graph)](021-ring-graph.md)
 
 ## Sources
 

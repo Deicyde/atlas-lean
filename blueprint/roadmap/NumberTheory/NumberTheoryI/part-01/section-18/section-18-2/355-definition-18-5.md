@@ -10,7 +10,7 @@ A Dirichlet character is a periodic totally multiplicative arithmetic function $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 18.4](354-definition-18-4.md)
 
 ## Sources
 

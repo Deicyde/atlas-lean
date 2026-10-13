@@ -11,7 +11,7 @@ Let $E / \mathbb{Q}$ be an elliptic curve of rank $r$. Then the root number
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corollary 24.34](346-corollary-24-34.md)
 
 ## Sources
 

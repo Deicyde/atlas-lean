@@ -10,7 +10,15 @@ Let $L$ be a number field with ring of integers $\mathcal{O}_{L}$. For any nonze
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.26](../../section-1/section-1/021-definition-1-26.md)
+- [Definition 2.13](../../section-2/029-definition-2-13.md)
+- [Definition 6.1](../section-6-1/125-definition-6-1.md)
+- [Definition 6.5](../section-6-2/128-definition-6-5.md)
+
+## Proof depends on
+
+- [Proposition 5.17](../../section-5/section-5-2/110-proposition-5-17.md)
+- [Corollary 6.8](../section-6-2/131-corollary-6-8.md)
 
 ## Sources
 

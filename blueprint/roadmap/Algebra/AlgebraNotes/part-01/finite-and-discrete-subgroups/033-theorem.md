@@ -12,7 +12,7 @@ If $G \subseteq \mathbb{R}^2$ is discrete, then (1) $G = \{0\}$; or (2) there ex
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section: Finite and Discrete Subgroups, Continued, Subsection: Discrete Subgroups of M2)](032-definition.md)
 
 ## Sources
 

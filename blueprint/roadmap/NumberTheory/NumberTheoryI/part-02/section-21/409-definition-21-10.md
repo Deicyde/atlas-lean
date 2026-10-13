@@ -11,7 +11,8 @@ Let $K$ be a number field and let $S$ be a set of primes of $K$. The partial Ded
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.26](../../part-01/section-1/section-1/021-definition-1-26.md)
+- [Definition 6.5](../../part-01/section-6/section-6-2/128-definition-6-5.md)
 
 ## Sources
 

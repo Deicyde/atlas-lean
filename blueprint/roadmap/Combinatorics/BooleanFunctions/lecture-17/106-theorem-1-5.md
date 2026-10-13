@@ -10,7 +10,8 @@ Assuming UGC, for all $t \in \mathbb{N}$, $\eta > 0$, the problem $\operatorname
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture 3.6 (The Unique-Games Conjecture)](../lecture-15/095-the-unique-games-conjecture.md)
+- [Definition 1.4 (A strongish form of UGC)](105-a-strongish-form-of-ugc.md)
 
 ## Sources
 

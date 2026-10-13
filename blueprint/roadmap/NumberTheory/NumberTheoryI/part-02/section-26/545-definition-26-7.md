@@ -12,10 +12,12 @@ Let $K$ be a global field. The group of 1-ideles is the topological group $\math
 ## Depends on
 
 - [Definition 26.2](542-definition-26-2.md)
+- [Definition 13.22](../../part-01/section-13/279-definition-13-22.md)
 
 ## Proof depends on
 
 - [Definition 25.7](../section-25/533-definition-25-7.md)
+- [Theorem 13.21 (Product Formula)](../../part-01/section-13/278-product-formula.md)
 
 ## Sources
 

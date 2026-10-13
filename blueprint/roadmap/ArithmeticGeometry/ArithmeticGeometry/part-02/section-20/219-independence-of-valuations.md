@@ -12,7 +12,14 @@ Let $P_{1}, \ldots, P_{n}$ be distinct places of a function field $F$. Then ther
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 16.20](../../part-01/section-16/section-16-3/160-definition-16-20.md)
+- [Definition 18.9](../section-18/193-definition-18-9.md)
+- [Definition 19.1](../section-19/199-definition-19-1.md)
+
+## Proof depends on
+
+- [Theorem 18.5](../section-18/189-theorem-18-5.md)
+- [Lemma 20.2 (Triangle equality)](218-triangle-equality.md)
 
 ## Sources
 

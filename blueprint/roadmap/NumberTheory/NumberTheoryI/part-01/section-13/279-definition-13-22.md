@@ -11,7 +11,11 @@ A global field is a field $K$ with at least one place whose completion at each o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1/section-1-2/001-definition-1-2.md)
+- [Definition 8.3](../section-8/174-definition-8-3.md)
+- [Definition 9.1](../section-9/187-definition-9-1.md)
+- [Definition 13.1](264-definition-13-1.md)
+- [Definition 13.17](276-definition-13-17.md)
 
 ## Sources
 

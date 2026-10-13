@@ -11,7 +11,9 @@ Let $E/\mathbb{C}$ be an elliptic curve with complex multiplication. Then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.21](../../part-01/section-12/154-definition-12-21.md)
+- [Definition 12.24](../../part-01/section-12/156-definition-12-24.md)
+- [Definition 13.11](../../part-01/section-13/166-definition-13-11.md)
 
 ## Proof depends on
 

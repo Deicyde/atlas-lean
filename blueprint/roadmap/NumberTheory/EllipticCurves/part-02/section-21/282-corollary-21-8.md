@@ -13,7 +13,12 @@ Let $\mathcal{O}$ be an order of discriminant $D$ in an imaginary quadratic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.22](../../part-01/section-12/155-definition-12-22.md)
+- [Definition 17.16](../../part-01/section-17/237-definition-17-16.md)
+
+## Proof depends on
+
+- [Theorem 21.5](279-theorem-21-5.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The degree of $f$ is $\operatorname{deg}(f) = \frac{1}{2\pi}(\theta(T) - \theta(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lemma 7.1](021-lemma-7-1.md)
 
 ## Sources
 

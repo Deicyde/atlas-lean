@@ -12,7 +12,7 @@ The matrices $N$ and $W$ have the same eigenvalues and related eigenvectors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 1, Section 2)](../lecture-1/001-definition-1.md)
 
 ## Sources
 

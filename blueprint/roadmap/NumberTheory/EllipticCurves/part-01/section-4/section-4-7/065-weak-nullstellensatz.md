@@ -10,7 +10,7 @@ For any ideal $I \subsetneq \bar{k}[x_1, \ldots, x_n]$, the variety $Z_I$ is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.42](058-definition-4-42.md)
 
 ## Proof depends on
 

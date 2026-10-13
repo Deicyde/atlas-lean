@@ -11,7 +11,7 @@ Language $B$ is $\mathsf{NP}$-hard if $A \leq_P B$ for every $A \in \mathsf{NP}$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 14, section on Polynomial Time Reducibility)](../../part-01/lecture-14/053-definition.md)
 
 ## Proof depends on
 

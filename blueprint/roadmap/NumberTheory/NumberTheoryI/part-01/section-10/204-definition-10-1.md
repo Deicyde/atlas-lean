@@ -10,7 +10,7 @@ Let $K$ be a field with absolute value $|\;|$ and let $V$ be a $K$-vector space.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1/section-1-2/001-definition-1-2.md)
 
 ## Sources
 

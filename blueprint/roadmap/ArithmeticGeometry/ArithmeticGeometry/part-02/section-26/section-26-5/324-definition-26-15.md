@@ -10,7 +10,11 @@ Let $E/k$ be an elliptic curve. A principal homogeneous space for $E$ (or $E$-to
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.11](../../../part-01/lecture-14/129-definition-14-11.md)
+- [Definition 16.8](../../../part-01/section-16/section-16-1/150-definition-16-8.md)
+- [Definition 22.1](../../section-22/section-22-1/235-definition-22-1.md)
+- [Definition 23.14](../../section-23/266-definition-23-14.md)
+- [Definition 26.14](../section-26-4/323-definition-26-14.md)
 
 ## Sources
 

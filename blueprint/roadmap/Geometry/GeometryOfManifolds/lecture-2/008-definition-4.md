@@ -11,7 +11,7 @@ $E \subset V$ is a symplectic subspace if $\Omega|_{E}$ is nondegenerate, e.g.\ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3 (Lecture 2, Section 2 (Symplectic Vector Spaces))](004-definition-3.md)
 
 ## Sources
 

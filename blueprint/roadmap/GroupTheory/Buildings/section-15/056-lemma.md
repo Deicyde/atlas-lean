@@ -12,6 +12,10 @@ Let $f \colon Y \to A$ be a strong isometry to an apartment $A$ in $X$. For any 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition (Section 15.5)](054-proposition.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 15.5](../../../../sources/v1/Buildings.md)

@@ -9,7 +9,7 @@ An algebraic extension $L/K$ is purely inseparable if $[L:K]_s = 1$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.8](../part-01/063-definition-4-8.md)
 
 ## Sources
 

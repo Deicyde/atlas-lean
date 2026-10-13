@@ -13,6 +13,11 @@ For any global field $K$ the quotient $\mathbb{A}_{K} / K$ is a compact group.
 ## Depends on
 
 - [Definition 25.7](533-definition-25-7.md)
+- [Definition 13.22](../../part-01/section-13/279-definition-13-22.md)
+
+## Proof depends on
+
+- [Theorem 25.12](537-theorem-25-12.md)
 
 ## Sources
 

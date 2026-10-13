@@ -10,7 +10,8 @@ Let $E/k$ be an elliptic curve. Two $E$-torsors $C/k$ and $C'/k$ are equivalent 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.11](../../../part-01/lecture-14/129-definition-14-11.md)
+- [Definition 23.14](../../section-23/266-definition-23-14.md)
 
 ## Proof depends on
 

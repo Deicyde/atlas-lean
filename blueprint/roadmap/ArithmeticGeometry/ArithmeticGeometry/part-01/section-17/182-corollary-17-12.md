@@ -14,6 +14,12 @@ The set of singular points of a variety is a closed subset; equivalently, the se
 
 - [Definition 12.7](../section-12/087-definition-12-7.md)
 - [Definition 12.8](../section-12/088-definition-12-8.md)
+- [Definition 13.10](../section-13/section-13-1-2/109-definition-13-10.md)
+- [Definition 14.3](../section-14/123-definition-14-3.md)
+
+## Proof depends on
+
+- [Corollary 17.4](176-corollary-17-4.md)
 
 ## Sources
 

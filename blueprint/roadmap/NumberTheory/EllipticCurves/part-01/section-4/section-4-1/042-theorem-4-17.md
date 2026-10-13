@@ -11,6 +11,7 @@ A morphism of projective curves is either surjective or constant.
 ## Depends on
 
 - [Definition 4.9](038-definition-4-9.md)
+- [Definition 4.14](040-definition-4-14.md)
 
 ## Sources
 

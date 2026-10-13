@@ -14,6 +14,10 @@ Let $\rho : G \to \operatorname{GL}(V)$ be any representation of $G$. Then if $f
 
 - [Definition (Section: Span of Irreducible Characters)](../../part-03/span-of-irreducible-characters/099-definition.md)
 
+## Proof depends on
+
+- [Definition (Appendix: Dimensions of Irreducible Characters)](173-definition.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Appendix: Dimensions of Irreducible Characters](../../../../../sources/v1/AlgebraNotes.md)

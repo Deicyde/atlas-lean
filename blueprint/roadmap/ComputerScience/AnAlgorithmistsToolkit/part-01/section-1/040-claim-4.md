@@ -12,7 +12,7 @@ For any $G$, $\delta \leq \frac{\ln(n)}{\lambda}$ where $\delta$ is the diameter
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 1, Section 2)](../lecture-1/001-definition-1.md)
 
 ## Sources
 

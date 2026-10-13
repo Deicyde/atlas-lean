@@ -12,7 +12,7 @@ If $L_G$ has eigenvectors $v_1, \ldots, v_n$ with eigenvalues $\lambda_1, \ldots
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 1, Section 2)](../../lecture-1/001-definition-1.md)
 
 ## Proof depends on
 

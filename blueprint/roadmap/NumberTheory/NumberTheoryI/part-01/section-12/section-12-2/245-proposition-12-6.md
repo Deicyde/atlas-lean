@@ -12,7 +12,13 @@ Let $L/K$ be a finite separable extension of degree $n$, and let $\Omega/K$ be a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](../../section-4/section-4-1/part-01/058-definition-4-3.md)
+- [Definition 4.17](../../section-4/section-4-1/part-01/072-definition-4-17.md)
+- [Definition 12.5](244-definition-12-5.md)
+
+## Proof depends on
+
+- [Theorem 4.50](../../section-4/section-4-3/093-theorem-4-50.md)
 
 ## Sources
 

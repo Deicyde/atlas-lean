@@ -10,7 +10,11 @@ Let $C/k$ be a curve with at least two distinct rational points. Then $C/k$ is i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.11](../../part-01/section-13/section-13-2/110-definition-13-11.md)
+- [Definition 14.11](../../part-01/lecture-14/129-definition-14-11.md)
+- [Definition 19.1](../section-19/199-definition-19-1.md)
+- [Definition 19.13](../section-19/209-definition-19-13.md)
+- [Definition 19.21](../section-19/215-definition-19-21.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ The residue at $z_{0}$ of a function $f(z)=\sum_{n \geq n_{0}}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.6](../section-14-1/178-definition-14-6.md)
 
 ## Sources
 

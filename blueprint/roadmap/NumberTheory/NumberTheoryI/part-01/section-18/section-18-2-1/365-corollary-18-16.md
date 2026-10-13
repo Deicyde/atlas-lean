@@ -11,7 +11,10 @@ Let $M(m)$ denote the set of Dirichlet characters of modulus $m$, let $X(m)$ den
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 18.6](../section-18-2/356-definition-18-6.md)
+- [Definition 18.9](358-definition-18-9.md)
+- [Theorem 18.13](362-theorem-18-13.md)
+- [Definition 18.14](363-definition-18-14.md)
 
 ## Sources
 

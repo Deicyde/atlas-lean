@@ -14,7 +14,7 @@ Let $E/k$ be an elliptic curve and let $n$ be a positive integer prime to the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.4](../../../part-01/section-3/section-3-1/007-definition-3-4.md)
 
 ## Sources
 

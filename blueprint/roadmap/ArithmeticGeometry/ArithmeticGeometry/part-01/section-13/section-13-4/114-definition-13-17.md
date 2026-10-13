@@ -10,7 +10,8 @@ Let $Z$ be an algebraic set in $\mathbb{P}^{n}$, the (homogeneous) ideal of $Z$ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.11](../section-13-2/110-definition-13-11.md)
+- [Definition 13.13](../section-13-3/111-definition-13-13.md)
 
 ## Sources
 

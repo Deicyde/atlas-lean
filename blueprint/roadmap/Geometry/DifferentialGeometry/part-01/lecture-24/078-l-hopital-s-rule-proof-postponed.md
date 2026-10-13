@@ -12,7 +12,7 @@ Let $\psi \colon V \rightarrow \mathbb{R}$ be a local defining function for $M$,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 24.1](077-definition-24-1.md)
 
 ## Sources
 

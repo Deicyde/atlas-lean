@@ -12,7 +12,12 @@ Let $R$ be a local Noetherian ring with maximal ideal $\mathfrak{m}$. Then $t_1,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.10](../../part-01/section-12/089-definition-12-10.md)
+- [Definition 16.16](../../part-01/section-16/section-16-3/156-definition-16-16.md)
+
+## Proof depends on
+
+- [Lemma 18.3 (Nakayama)](187-nakayama.md)
 
 ## Sources
 

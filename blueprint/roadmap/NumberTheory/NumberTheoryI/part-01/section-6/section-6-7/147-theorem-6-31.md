@@ -11,6 +11,14 @@ Let $\mathcal{O}$ be an order with integral closure $B$. Let $\mathfrak{c}$ be a
 ## Depends on
 
 - [Definition 6.30](146-definition-6-30.md)
+- [Definition 1.19](../../section-1/section-1-6/015-definition-1-19.md)
+- [Definition 2.13](../../section-2/029-definition-2-13.md)
+- [Definition 6.16](../section-6-6/137-definition-6-16.md)
+- [Definition 6.19](139-definition-6-19.md)
+
+## Proof depends on
+
+- [Corollary 6.27](144-corollary-6-27.md)
 
 ## Sources
 

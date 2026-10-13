@@ -13,6 +13,7 @@ Let $(M, \omega)$ be a symplectic manifold, $H \colon M \rightarrow \mathbb{R}$ 
 ## Depends on
 
 - [Definition 7](../lecture-2/011-definition-7.md)
+- [Definition 8](../lecture-2/012-definition-8.md)
 
 ## Sources
 

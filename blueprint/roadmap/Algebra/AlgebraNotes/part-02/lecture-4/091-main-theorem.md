@@ -11,6 +11,13 @@ Let $G$ be a finite group. Then: (a) The characters of irreducible representatio
 ## Depends on
 
 - [Definition (Lecture 4, Section: The Main Theorem)](090-definition.md)
+- [Definition (Lecture 2, Section: Irreducible Representations)](../lecture-2/085-definition.md)
+- [Definition (Character)](../lecture-1/086-character.md)
+
+## Proof depends on
+
+- [Theorem (Maschke's Theorem)](../lecture-2/088-maschke-s-theorem.md)
+- [Proposition (Lecture 4, Section: More on Characters)](089-proposition.md)
 
 ## Sources
 

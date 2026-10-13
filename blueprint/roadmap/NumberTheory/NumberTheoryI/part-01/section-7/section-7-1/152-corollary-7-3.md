@@ -12,7 +12,13 @@ Assume $AKLBG$. For each prime $\mathfrak{p}$ of $A$ the group $G$ acts transiti
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 7.2](151-theorem-7-2.md)
+
+## Proof depends on
+
+- [Theorem 4.50](../../section-4/section-4-3/093-theorem-4-50.md)
+- [Corollary 6.9](../../section-6/section-6-2/132-corollary-6-9.md)
+- [Theorem 6.10](../../section-6/section-6-2/133-theorem-6-10.md)
 
 ## Sources
 

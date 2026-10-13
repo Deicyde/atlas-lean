@@ -12,7 +12,11 @@ Let $K$ be a field of characteristic $p>0$. If $L / K$ is purely inseparable of 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.22](../section-4-1/part-02/077-definition-4-22.md)
+
+## Proof depends on
+
+- [Corollary 4.5](../section-4-1/part-01/060-corollary-4-5.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The Hecke operators $T_{n}$ for $M_{k}(\Gamma_{0}(1))$ satisfy $T_{mn}=T_{m}
 
 - [Definition 24.5](../section-24-1/324-definition-24-5.md)
 
+## Proof depends on
+
+- [Theorem 24.11](../section-24-2/327-theorem-24-11.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 24.3](../../../../../../sources/v1/EllipticCurves.md)

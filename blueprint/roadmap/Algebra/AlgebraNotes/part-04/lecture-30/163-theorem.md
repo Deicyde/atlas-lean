@@ -11,7 +11,11 @@ If $E/F$ is a Galois extension (i.e. $\lvert\operatorname{Gal}(E/F)\rvert = [E :
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 29, Subsection: The Galois Group)](../lecture-29/157-definition.md)
+
+## Proof depends on
+
+- [Proposition (Lecture 29, Subsection: The Galois Group)](../lecture-29/160-proposition.md)
 
 ## Sources
 

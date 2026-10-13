@@ -12,7 +12,13 @@ Let $K$ be a global field, and let $\mu_K$ denote the torsion subgroup of $K^\ti
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.17](../section-13/276-definition-13-17.md)
+- [Definition 13.22](../section-13/279-definition-13-22.md)
+- [Definition 15.1](304-definition-15-1.md)
+
+## Proof depends on
+
+- [Lemma 15.7](306-lemma-15-7.md)
 
 ## Sources
 

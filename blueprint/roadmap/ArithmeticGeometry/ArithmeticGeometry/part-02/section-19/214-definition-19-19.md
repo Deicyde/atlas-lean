@@ -12,6 +12,8 @@ Let $\phi: C_1 \rightarrow C_2$ be a morphism defined over $k$. The pullback map
 ## Depends on
 
 - [Definition 19.6](203-definition-19-6.md)
+- [Definition 19.9](206-definition-19-9.md)
+- [Definition 19.18](213-definition-19-18.md)
 
 ## Sources
 

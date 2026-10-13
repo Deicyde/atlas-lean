@@ -11,6 +11,13 @@ Let $K$ be a global field. There is a positive constant $B_{K}$ such that for an
 ## Depends on
 
 - [Definition 25.7](533-definition-25-7.md)
+- [Definition 13.17](../../part-01/section-13/276-definition-13-17.md)
+- [Definition 13.22](../../part-01/section-13/279-definition-13-22.md)
+
+## Proof depends on
+
+- [Definition 1.2](../../part-01/section-1/section-1-2/001-definition-1-2.md)
+- [Theorem 25.12](537-theorem-25-12.md)
 
 ## Sources
 

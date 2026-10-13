@@ -12,7 +12,7 @@ Let $\alpha \in \operatorname{End}^{0}(E)$. The (reduced) norm of $\alpha$ is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.8](../chapter-6/094-definition-6-8.md)
 
 ## Proof depends on
 

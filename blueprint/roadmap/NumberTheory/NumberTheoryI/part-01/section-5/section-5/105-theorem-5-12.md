@@ -13,6 +13,13 @@ Let $A$ be a noetherian domain with fraction field $K$, let $V$ be a $K$-vector 
 ## Depends on
 
 - [Definition 5.9](103-definition-5-9.md)
+- [Definition 5.1](../section-5-1/097-definition-5-1.md)
+- [Definition 5.6](../section-5-1/101-definition-5-6.md)
+- [Definition 5.11](104-definition-5-11.md)
+
+## Proof depends on
+
+- [Proposition 5.7](../section-5-1/102-proposition-5-7.md)
 
 ## Sources
 

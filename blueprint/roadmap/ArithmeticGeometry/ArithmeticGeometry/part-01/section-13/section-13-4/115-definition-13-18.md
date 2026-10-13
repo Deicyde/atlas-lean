@@ -11,7 +11,8 @@ A (projective) variety is an irreducible algebraic set in $\mathbb{P}^{n}$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.20](../../section-12/098-definition-12-20.md)
+- [Definition 13.11](../section-13-2/110-definition-13-11.md)
 
 ## Sources
 

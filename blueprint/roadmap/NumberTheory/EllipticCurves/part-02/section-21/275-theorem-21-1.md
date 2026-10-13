@@ -18,7 +18,9 @@ Let $\mathcal{O}$ be an imaginary quadratic order of discriminant $D$ and let
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.22](../../part-01/section-12/155-definition-12-22.md)
+- [Definition 16.11](../../part-01/section-16/222-definition-16-11.md)
+- [Definition 17.16](../../part-01/section-17/237-definition-17-16.md)
 
 ## Proof depends on
 
@@ -26,6 +28,12 @@ This node has no prerequisites.
 - [Corollary 17.11](../../part-01/section-17/232-corollary-17-11.md)
 - [Definition 16.9](../../part-01/section-16/220-definition-16-9.md)
 - [Theorem 20.14](../section-20/274-theorem-20-14.md)
+- [Corollary 5.4](../../part-01/chapter-5/073-corollary-5-4.md)
+- [Theorem 5.25](../../part-01/section-5/087-theorem-5-25.md)
+- [Theorem 6.7](../../part-01/chapter-6/093-theorem-6-7.md)
+- [Theorem 17.10](../../part-01/section-17/231-theorem-17-10.md)
+- [Theorem 17.14](../../part-01/section-17/235-theorem-17-14.md)
+- [Theorem 20.11](../section-20/271-theorem-20-11.md)
 
 ## Sources
 

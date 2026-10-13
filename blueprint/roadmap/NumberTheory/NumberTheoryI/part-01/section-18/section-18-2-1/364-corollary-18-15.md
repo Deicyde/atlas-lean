@@ -12,7 +12,8 @@ For a Dirichlet character $\chi$ of modulus $m$ we have $\sum_{n \in \mathbb{Z}/
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 18.6](../section-18-2/356-definition-18-6.md)
+- [Definition 18.14](363-definition-18-14.md)
 
 ## Proof depends on
 

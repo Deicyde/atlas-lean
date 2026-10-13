@@ -12,7 +12,7 @@ If $V$ is Euclidean or Hermitian, then there exists an orthonormal basis $\{v_1,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section: Fields and Vector Spaces, Bases and Dimension subsection)](../../part-01/fields-and-vector-spaces/014-definition.md)
 
 ## Sources
 

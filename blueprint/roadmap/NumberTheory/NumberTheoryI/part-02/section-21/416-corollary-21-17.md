@@ -11,7 +11,7 @@ Let $L/K$ be a finite Galois extension of number fields with Galois group $G\col
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7.19](../../part-01/section-7/section-7-3/167-definition-7-19.md)
 
 ## Proof depends on
 

@@ -12,7 +12,7 @@ Let $L/K$ be an algebraic field extension. The field $F$ in Corollary 4.16 is th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corollary 4.16](071-corollary-4-16.md)
 
 ## Sources
 

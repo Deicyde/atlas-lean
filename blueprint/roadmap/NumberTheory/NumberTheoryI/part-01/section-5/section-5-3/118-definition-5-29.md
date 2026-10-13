@@ -12,7 +12,10 @@ Assume $AKLB$, and let $\mathfrak{p}$ be a prime of $A$. The exponent $e_{\mathf
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.19](../../section-1/section-1-6/015-definition-1-19.md)
+- [Definition 2.10](../../section-2/027-definition-2-10.md)
+- [Corollary 3.13](../../section-3/048-corollary-3-13.md)
+- [Definition 4.3](../../section-4/section-4-1/part-01/058-definition-4-3.md)
 
 ## Sources
 

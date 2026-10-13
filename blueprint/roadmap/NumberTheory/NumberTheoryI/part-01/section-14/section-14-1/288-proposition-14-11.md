@@ -12,7 +12,12 @@ If $\Lambda' \subseteq \Lambda$ are lattices in $V \simeq \mathbb{R}^{n}$, then 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.4](283-definition-14-4.md)
+- [Definition 14.10](287-definition-14-10.md)
+
+## Proof depends on
+
+- [Definition 14.8](285-definition-14-8.md)
 
 ## Sources
 

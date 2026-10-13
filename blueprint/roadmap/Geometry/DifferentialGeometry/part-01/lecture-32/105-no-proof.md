@@ -11,6 +11,7 @@ The degree is always an integer.
 ## Depends on
 
 - [Definition 7.2](../chapter-1/chapter-1-lecture-7/022-definition-7-2.md)
+- [Definition 32.2](102-definition-32-2.md)
 
 ## Sources
 

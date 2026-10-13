@@ -12,7 +12,7 @@ Given $V$ and $\langle\cdot,\cdot\rangle,$ the number of 1s, the number of -1s, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corollary (Section: The Projection Formula, Subsection: Orthogonal Bases)](063-corollary.md)
 
 ## Sources
 

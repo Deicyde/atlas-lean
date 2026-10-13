@@ -9,7 +9,7 @@ Let $r \in \mathbb{N}$, $\varepsilon > 0$ and $0 < p < 1$. We say $\mathcal{F}$ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.3 (Section 3.2)](070-definition-3-3.md)
 
 ## Sources
 

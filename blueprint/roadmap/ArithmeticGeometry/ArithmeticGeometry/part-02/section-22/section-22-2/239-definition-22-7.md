@@ -12,6 +12,8 @@ For a divisor $D$ the adele space of $D$ is the $k$-vector space $\mathcal{A}(D)
 ## Depends on
 
 - [Definition 22.5](238-definition-22-5.md)
+- [Definition 19.9](../../section-19/206-definition-19-9.md)
+- [Definition 21.2](../../section-21/225-definition-21-2.md)
 
 ## Sources
 

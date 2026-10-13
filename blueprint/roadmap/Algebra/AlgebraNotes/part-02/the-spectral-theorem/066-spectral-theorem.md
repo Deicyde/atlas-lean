@@ -12,7 +12,7 @@ Given a Hermitian space $V$, for any normal linear operator $T$, there exists an
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section: Euclidean and Hermitian Spaces, Subsection: Complex Linear Operators)](../euclidean-and-hermitian-spaces/060-definition.md)
 
 ## Sources
 

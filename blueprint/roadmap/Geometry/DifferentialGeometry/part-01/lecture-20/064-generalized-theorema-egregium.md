@@ -18,6 +18,7 @@ $\mathcal{R}$ is intrinsic.
 
 - [Theorem 16.2](../lecture-16/052-theorem-16-2.md)
 - [Definition 16.1](../lecture-16/051-definition-16-1.md)
+- [Theorem 16.3](../lecture-16/053-theorem-16-3.md)
 
 ## Sources
 

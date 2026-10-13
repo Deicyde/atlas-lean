@@ -10,7 +10,14 @@ Let $L/K$ be a finite separable extension of global fields and $v$ a place of $K
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](../section-4/section-4-1/part-01/058-definition-4-3.md)
+- [Definition 13.1](264-definition-13-1.md)
+- [Definition 13.4](265-definition-13-4.md)
+
+## Proof depends on
+
+- [Theorem 4.12](../section-4/section-4-1/part-01/067-theorem-4-12.md)
+- [Corollary 13.6](267-corollary-13-6.md)
 
 ## Sources
 

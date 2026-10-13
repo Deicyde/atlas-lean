@@ -15,7 +15,8 @@ Let $\mathcal{O}$ be an order in a number field, let $\alpha \in \mathcal{O}$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.22](../section-12/155-definition-12-22.md)
+- [Definition 17.4](226-definition-17-4.md)
 
 ## Sources
 

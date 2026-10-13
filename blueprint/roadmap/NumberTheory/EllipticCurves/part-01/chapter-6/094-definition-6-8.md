@@ -11,6 +11,7 @@ The isogeny $\hat{\alpha}$ given by Theorem 6.7 is the dual isogeny of $\alpha$.
 ## Depends on
 
 - [Definition 4.18](../section-4/section-4-2/043-definition-4-18.md)
+- [Theorem 6.7](093-theorem-6-7.md)
 
 ## Sources
 

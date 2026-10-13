@@ -11,7 +11,8 @@ The rank of a quadratic form is the rank of its matrix; rank is clearly preserve
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.1](058-definition-9-1.md)
+- [Definition 9.2](059-definition-9-2.md)
 
 ## Sources
 

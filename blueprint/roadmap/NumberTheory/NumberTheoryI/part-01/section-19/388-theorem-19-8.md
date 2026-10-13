@@ -10,7 +10,22 @@ Let $K$ be a number field of degree $n$. As $t \rightarrow \infty$, the number o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.26](../section-1/section-1/021-definition-1-26.md)
+- [Definition 2.23](../section-2/037-definition-2-23.md)
+- [Definition 6.5](../section-6/section-6-2/128-definition-6-5.md)
+- [Definition 12.12](../section-12/section-12/250-definition-12-12.md)
+- [Definition 13.1](../section-13/264-definition-13-1.md)
+- [Corollary 15.8](../section-15/307-corollary-15-8.md)
+- [Definition 15.16](../section-15/312-definition-15-16.md)
+
+## Proof depends on
+
+- [Proposition 14.16](../section-14/section-14-3/291-proposition-14-16.md)
+- [Corollary 14.17](../section-14/section-14-3/292-corollary-14-17.md)
+- [Theorem 14.20](../section-14/section-14-5/295-theorem-14-20.md)
+- [Proposition 15.11](../section-15/309-proposition-15-11.md)
+- [Theorem 15.12 (Dirichlet's Unit Theorem)](../section-15/310-dirichlet-s-unit-theorem.md)
+- [Corollary 19.6](387-corollary-19-6.md)
 
 ## Sources
 

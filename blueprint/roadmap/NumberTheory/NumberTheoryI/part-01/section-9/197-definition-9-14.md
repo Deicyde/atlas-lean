@@ -11,7 +11,7 @@ Let $f \in R[x]$ be a polynomial over a ring $R$ and let $a \in R$. If $f(a)=0$ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.10](194-definition-9-10.md)
 
 ## Sources
 

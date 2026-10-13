@@ -12,6 +12,11 @@ Let $K/\mathbb{Q}_{p}$ be a cyclic extension of odd degree $p^{r}$. Then $K$ lie
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary 10.17](../section-10/215-corollary-10-17.md)
+- [Corollary 10.18](../section-10/216-corollary-10-18.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 20.3](../../../../../sources/v1/NumberTheoryI.md)

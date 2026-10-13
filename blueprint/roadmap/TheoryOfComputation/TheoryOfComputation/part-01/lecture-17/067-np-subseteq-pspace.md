@@ -12,6 +12,11 @@ $\mathsf{NP} \subseteq \mathsf{PSPACE}$.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition (Lecture 14, section on Polynomial Time Reducibility)](../lecture-14/053-definition.md)
+- [Definition (SAT)](../lecture-14/054-sat.md)
+
 ## Sources
 
 - [MIT 18.404J Theory of Computation (Fall 2020), Lecture 17, $NP \subseteq PSPACE$](../../../../../sources/v1/TheoryOfComputation.md)

@@ -12,7 +12,8 @@ $x^\top L_G x = \|\nabla x\|^2 = \sum_{(i,j) \in E} (x_i - x_j)^2$. This gives a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6 (Lecture 2, Section 3.3)](../lecture-2-section-3-3/011-definition-6.md)
+- [Definition 9](014-definition-9.md)
 
 ## Sources
 

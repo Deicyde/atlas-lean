@@ -12,5 +12,9 @@ ATLAS v1 selected 118 statements from this source in
 matched to each in [`report.json`](https://github.com/facebookresearch/atlas-lean/blob/main/v1/Atlas/TheoryOfComputation/report.json). Each roadmap article
 reproduces one target's statement and the source location it names.
 
-33 dependencies point to a statement placed later in this
+68 roadmap edges come from the source text rather than
+the Lean code; each is recorded with its evidence in
+[`book-dependencies/TheoryOfComputation.json`](book-dependencies/TheoryOfComputation.json).
+
+54 dependencies point to a statement placed later in this
 wiki and are not drawn as roadmap edges, which keeps every chapter acyclic.

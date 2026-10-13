@@ -11,7 +11,13 @@ Let $A$ be an integral domain with fraction field $K$ and let $M$ be a nonzero $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.13](../../section-2/029-definition-2-13.md)
+- [Definition 2.19](../../section-2/034-definition-2-19.md)
+- [Definition 5.1](097-definition-5-1.md)
+
+## Proof depends on
+
+- [Lemma 2.20](../../section-2/035-lemma-2-20.md)
 
 ## Sources
 

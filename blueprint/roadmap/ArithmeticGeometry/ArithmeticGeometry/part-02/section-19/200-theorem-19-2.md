@@ -11,10 +11,17 @@ The category of curves $C/k$ with nonconstant morphisms and the category of func
 ## Depends on
 
 - [Definition 19.1](199-definition-19-1.md)
+- [Definition 15.17](../../part-01/section-15/143-definition-15-17.md)
 
 ## Proof depends on
 
 - [Theorem 18.13](../section-18/197-theorem-18-13.md)
+- [Corollary 15.12](../../part-01/section-15/140-corollary-15-12.md)
+- [Theorem 17.8](../../part-01/section-17/179-theorem-17-8.md)
+- [Corollary 18.7](../section-18/191-corollary-18-7.md)
+- [Corollary 18.8](../section-18/192-corollary-18-8.md)
+- [Theorem 18.10](../section-18/194-theorem-18-10.md)
+- [Corollary 18.14](../section-18/198-corollary-18-14.md)
 
 ## Sources
 

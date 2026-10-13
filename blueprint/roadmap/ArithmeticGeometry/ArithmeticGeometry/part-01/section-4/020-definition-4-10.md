@@ -11,7 +11,9 @@ For each nonzero $a \in \mathbb{Z}_{p}$ the $p$-adic valuation of $a$, denoted $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](015-definition-4-3.md)
+- [Definition 4.5](016-definition-4-5.md)
+- [Theorem 4.8](018-theorem-4-8.md)
 
 ## Sources
 

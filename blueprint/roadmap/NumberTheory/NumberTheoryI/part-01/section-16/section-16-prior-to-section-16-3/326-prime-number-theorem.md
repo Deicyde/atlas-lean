@@ -17,6 +17,9 @@ This node has no prerequisites.
 
 - [Corollary 16.12](../section-16/324-corollary-16-12.md)
 - [Theorem 16.13](../section-16/325-theorem-16-13.md)
+- [Theorem 16.6 (Chebyshev)](../section-16-2/318-chebyshev.md)
+- [Lemma 16.7 (Chebyshev)](../section-16/319-chebyshev.md)
+- [Lemma 16.8](../section-16/320-lemma-16-8.md)
 
 ## Sources
 

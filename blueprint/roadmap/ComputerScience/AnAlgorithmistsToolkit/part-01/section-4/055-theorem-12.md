@@ -11,7 +11,13 @@ The conductance of our graph has the following bound $\Phi(C_n) = \Theta\!\left(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7 (Conductance)](../section-6/043-conductance.md)
+
+## Proof depends on
+
+- [Lemma 8 (Section 4.2.4 (How to Sample (Approximately) Uniformly), Lecture 5)](052-lemma-8.md)
+- [Lemma 10 (Section 4.2.6 (Canonical Paths), Lecture 5)](053-lemma-10.md)
+- [Lemma 11](054-lemma-11.md)
 
 ## Sources
 

@@ -13,6 +13,12 @@ Let $E/k$ be an elliptic curve. The endomorphism ring $\operatorname{End}(E)$
 ## Depends on
 
 - [Definition 6.13](../section-6/098-definition-6-13.md)
+- [Definition 12.2](141-definition-12-2.md)
+
+## Proof depends on
+
+- [Lemma 12.9](146-lemma-12-9.md)
+- [Theorem 12.17](151-theorem-12-17.md)
 
 ## Sources
 

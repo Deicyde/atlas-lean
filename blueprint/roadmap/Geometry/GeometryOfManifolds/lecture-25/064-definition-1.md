@@ -11,7 +11,8 @@ The Seiberg-Witten equations are the equations $D_{A}\psi = 0 \in \Gamma(S^{-})$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3 (Symplectic Geometry, Lecture 8, Section 2 (Vector Bundles and Connections))](../symplectic-geometry/symplectic-geometry-lecture-8-section-2-vector-b/029-definition-3.md)
+- [Definition 4 (Symplectic Geometry, Lecture 8, Section 2 (Vector Bundles and Connections))](../symplectic-geometry/symplectic-geometry-lecture-8-section-2-vector-b/030-definition-4.md)
 
 ## Sources
 

@@ -13,6 +13,7 @@ Suppose $\rho: G \to \operatorname{GL}(V)$ and $\psi: G \to \operatorname{GL}(W)
 ## Depends on
 
 - [Definition (Section: Characters and Schur's Lemma, Subsection: Schur's Lemma)](../../part-02/characters-and-schur-s-lemma/092-definition.md)
+- [Definition (Lecture 2, Section: Irreducible Representations)](../../part-02/lecture-2/085-definition.md)
 
 ## Sources
 

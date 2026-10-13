@@ -12,7 +12,9 @@ Let $g(x)$ and $T \coloneqq \frac{1}{4 D b}$ be as in Theorem 1.1. Also assume t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.0.1 (Class Meeting #5, Section 1 (The Fundamental solution))](../class-meeting-5/013-definition-1-0-1.md)
+- [Definition 1.1.1](021-definition-1-1-1.md)
+- [Theorem 1.1 (Solving the global Cauchy problem via the fundamental solution)](023-solving-the-global-cauchy-problem-via-th.md)
 
 ## Sources
 

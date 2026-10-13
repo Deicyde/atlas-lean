@@ -12,7 +12,11 @@ If $P, Q \in \mathbb{Z}[x]$ are such that $P$ divides $Q$ in $\mathbb{Q}[x]$ and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 13: More Factorization, Section: Factoring Integer Polynomials)](113-definition.md)
+
+## Proof depends on
+
+- [Lemma (Gauss's Lemma)](117-gauss-s-lemma.md)
 
 ## Sources
 

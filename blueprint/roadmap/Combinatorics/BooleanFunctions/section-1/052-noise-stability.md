@@ -11,7 +11,7 @@ Let $f \colon \{-1,1\}^n \to \mathbb{R}$, and $\rho \in [0,1]$. The stability of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.2 (Lecture 5, Section 2.2)](../lecture-5/030-definition-2-2.md)
 
 ## Sources
 

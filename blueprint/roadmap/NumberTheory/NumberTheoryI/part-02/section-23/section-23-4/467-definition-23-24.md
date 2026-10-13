@@ -11,7 +11,8 @@ Let $A$ be a $G$-module. The group of $G$-coinvariants of $A$ is the $G$-module 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.1](../section-23-1/446-definition-23-1.md)
+- [Definition 23.23](466-definition-23-23.md)
 
 ## Sources
 

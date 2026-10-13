@@ -11,7 +11,10 @@ Assume $AKLB$. The different $\mathcal{D}_{L/K}$ of $L/K$ (and the different $\m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.22](../../section-2/036-definition-2-22.md)
+- [Definition 4.46](../../section-4/section-4-3/091-definition-4-46.md)
+- [Definition 5.11](../../section-5/section-5/104-definition-5-11.md)
+- [Lemma 12.1](240-lemma-12-1.md)
 
 ## Sources
 

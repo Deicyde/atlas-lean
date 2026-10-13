@@ -11,7 +11,7 @@ Let $\tilde{V} \subset \mathbb{R}^{n+1}$ be an open subset, $\psi \colon \tilde{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 27.1](../lecture-27/084-definition-27-1.md)
 
 ## Sources
 

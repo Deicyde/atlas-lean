@@ -12,7 +12,13 @@ If $L_G$ has eigenvectors $v_1, \ldots, v_n$ with eigenvalues $\lambda_1, \ldots
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 1, Section 2)](../../lecture-1/001-definition-1.md)
+- [Definition 18](023-definition-18.md)
+
+## Proof depends on
+
+- [Lemma 1 (Edge Union)](../lecture-2-section-3-1/007-edge-union.md)
+- [Lemma 3 (Disjoint Union)](../lecture-2-section-3-1/009-disjoint-union.md)
 
 ## Sources
 

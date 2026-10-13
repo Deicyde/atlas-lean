@@ -12,7 +12,8 @@ Let $f$ be a continuous function on an open set $U$, and suppose that for every 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 16.21](331-definition-16-21.md)
+- [Definition 16.22](332-definition-16-22.md)
 
 ## Sources
 

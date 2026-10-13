@@ -15,6 +15,7 @@ Let $f$ be a partial parametrization. Denote by $I^{f}$ its first fundamental fo
 - [Definition 12.3](../chapter-2/042-definition-12-3.md)
 - [Definition 12.2](../chapter-2/041-definition-12-2.md)
 - [Definition 12.5](../chapter-2/044-definition-12-5.md)
+- [Definition 29.3](090-definition-29-3.md)
 
 ## Proof depends on
 

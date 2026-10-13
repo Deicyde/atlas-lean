@@ -11,7 +11,7 @@ The group of $p$-adic units $\mathbb{Z}_{p}^{\times}$ is the multiplicative grou
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](015-definition-4-3.md)
 
 ## Sources
 

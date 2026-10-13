@@ -12,6 +12,12 @@ The trace of an endomorphism $\alpha$ is the integer $\operatorname{tr}
 ## Depends on
 
 - [Definition 4.18](../section-4/section-4-2/043-definition-4-18.md)
+- [Definition 4.23](../section-4/section-4-2/046-definition-4-23.md)
+- [Definition 6.8](../chapter-6/094-definition-6-8.md)
+
+## Proof depends on
+
+- [Lemma 6.16](099-lemma-6-16.md)
 
 ## Sources
 

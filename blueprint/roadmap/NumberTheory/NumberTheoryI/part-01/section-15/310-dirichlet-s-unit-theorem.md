@@ -12,7 +12,13 @@ Let $K$ be a number field with $r$ real and $s$ complex places. Then $\mathcal{O
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.26](../section-1/section-1/021-definition-1-26.md)
+- [Definition 13.1](../section-13/264-definition-13-1.md)
+- [Corollary 15.8](307-corollary-15-8.md)
+
+## Proof depends on
+
+- [Proposition 15.11](309-proposition-15-11.md)
 
 ## Sources
 

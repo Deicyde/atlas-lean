@@ -12,6 +12,12 @@ Let $A$ be a $G$-module. The cochain complexes $\mathcal{S}_{A}$ and $\mathcal{C
 ## Depends on
 
 - [Definition 23.4](../section-23-1/449-definition-23-4.md)
+- [Definition 23.1](../section-23-1/446-definition-23-1.md)
+- [Definition 23.12](456-definition-23-12.md)
+
+## Proof depends on
+
+- [Proposition 23.13](457-proposition-23-13.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ $\zeta(s)$ has no zeros on $\operatorname{Re}(s) \geq 1$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 16.1](313-definition-16-1.md)
+
+## Proof depends on
+
+- [Theorem 16.2 (Euler product)](314-euler-product.md)
+- [Theorem 16.3 (Analytic continuation I)](315-analytic-continuation-i.md)
+- [Lemma 16.4 (Mertens)](316-mertens.md)
 
 ## Sources
 

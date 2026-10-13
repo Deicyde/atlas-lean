@@ -11,6 +11,9 @@ Let $L/K$ be a finite separable extension of global fields. The idele norm $\mat
 ## Depends on
 
 - [Definition 26.2](../section-26/542-definition-26-2.md)
+- [Definition 4.46](../../part-01/section-4/section-4-3/091-definition-4-46.md)
+- [Definition 13.1](../../part-01/section-13/264-definition-13-1.md)
+- [Definition 13.22](../../part-01/section-13/279-definition-13-22.md)
 
 ## Sources
 

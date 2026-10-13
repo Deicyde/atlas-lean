@@ -10,7 +10,8 @@ For $(M, \omega)$ compact, if $H^{1}(M, \mathbb{R}) = 0$, then every symplectomo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../lecture-2/011-definition-7.md)
+- [Definition 8](../lecture-2/012-definition-8.md)
 
 ## Sources
 

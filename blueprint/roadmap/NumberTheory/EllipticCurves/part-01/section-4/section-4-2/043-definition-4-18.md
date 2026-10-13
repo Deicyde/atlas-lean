@@ -14,7 +14,7 @@ An isogeny $\phi: E_{1} \rightarrow E_{2}$ of elliptic curves defined over
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.14](../section-4-1/040-definition-4-14.md)
 
 ## Sources
 

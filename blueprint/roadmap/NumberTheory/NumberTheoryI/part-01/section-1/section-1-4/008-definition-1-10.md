@@ -9,7 +9,7 @@ A valuation on a field $k$ is a group homomorphism $k^{\times} \rightarrow \math
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1-2/001-definition-1-2.md)
 
 ## Sources
 

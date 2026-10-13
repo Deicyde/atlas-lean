@@ -12,7 +12,11 @@ There are two parts: (a) Given $H \leq G,$ where $H$ is a Sylow $p$-subgroup, an
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sylow $p$-subgroup)](048-sylow-p-subgroup.md)
+
+## Proof depends on
+
+- [Corollary (Counting Formula for Orbits)](../group-actions/039-counting-formula-for-orbits.md)
 
 ## Sources
 

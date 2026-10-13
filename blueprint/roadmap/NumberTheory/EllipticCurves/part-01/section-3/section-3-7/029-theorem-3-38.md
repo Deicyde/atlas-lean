@@ -11,7 +11,7 @@ The long division algorithm uses $O(mn)$ bit operations to perform Euclidean
 
 ## Depends on
 
-This node has no prerequisites.
+- [Algorithm 3.37 (Long division)](028-long-division.md)
 
 ## Sources
 

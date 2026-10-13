@@ -14,6 +14,10 @@ $M$ is PSD if and only if there exists a matrix $A$ such that $M = A^\top A$. No
 
 - [Definition 6 (Lecture 2, Section 3.3)](011-definition-6.md)
 
+## Proof depends on
+
+- [Proposition 2 (Lecture 1, Section 2)](../../lecture-1/002-proposition-2.md)
+
 ## Sources
 
 - [MIT 18.409 An Algorithmist's Toolkit (Fall 2009), Lecture 2, Section 3.3](../../../../../../sources/v1/AnAlgorithmistsToolkit.md)

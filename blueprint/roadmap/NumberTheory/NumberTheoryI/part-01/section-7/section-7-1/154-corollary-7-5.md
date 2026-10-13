@@ -12,7 +12,12 @@ Assume $AKLBG$. For each prime $\mathfrak{p}$ of $A$ we have $e_{\mathfrak{p}} f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.29](../../section-5/section-5-3/118-definition-5-29.md)
+
+## Proof depends on
+
+- [Theorem 5.35](../../section-5/section-5/122-theorem-5-35.md)
+- [Corollary 7.4](153-corollary-7-4.md)
 
 ## Sources
 

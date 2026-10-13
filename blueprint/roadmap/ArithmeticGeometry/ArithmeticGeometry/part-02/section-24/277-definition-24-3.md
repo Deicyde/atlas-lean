@@ -11,6 +11,7 @@ Let $\varphi: E_{1} \rightarrow E_{2}$ be an isogeny of elliptic curves over $k$
 ## Depends on
 
 - [Definition 24.1](275-definition-24-1.md)
+- [Theorem 24.2](276-theorem-24-2.md)
 
 ## Sources
 

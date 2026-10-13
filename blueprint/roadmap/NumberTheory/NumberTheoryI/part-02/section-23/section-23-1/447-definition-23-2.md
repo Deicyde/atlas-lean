@@ -11,7 +11,7 @@ Let $A$ be a $G$-module. The $G$-invariants of $A$ constitute the $G$-module $A^
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.1](446-definition-23-1.md)
 
 ## Sources
 

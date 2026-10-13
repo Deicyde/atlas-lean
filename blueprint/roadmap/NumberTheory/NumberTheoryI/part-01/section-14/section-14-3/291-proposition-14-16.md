@@ -9,7 +9,14 @@ Let $K$ be a number field. Using the normalized Haar measure on $K_{\mathbb{R}}$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.26](../../section-1/section-1/021-definition-1-26.md)
+- [Definition 12.12](../../section-12/section-12/250-definition-12-12.md)
+- [Definition 13.13](../../section-13/273-definition-13-13.md)
+- [Definition 14.10](../section-14-1/287-definition-14-10.md)
+
+## Proof depends on
+
+- [Proposition 12.6](../../section-12/section-12-2/245-proposition-12-6.md)
 
 ## Sources
 

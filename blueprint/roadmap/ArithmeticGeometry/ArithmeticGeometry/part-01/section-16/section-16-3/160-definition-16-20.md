@@ -11,7 +11,7 @@ Let $R$ be a valuation ring with fraction field $K$. The value group of $R$ is $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 16.15](155-definition-16-15.md)
 
 ## Sources
 

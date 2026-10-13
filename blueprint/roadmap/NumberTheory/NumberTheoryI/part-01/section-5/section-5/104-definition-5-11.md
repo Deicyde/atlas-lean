@@ -11,7 +11,8 @@ Let $A$ be a noetherian domain with fraction field $K$, and let $V$ be a $K$-vec
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.6](../section-5-1/101-definition-5-6.md)
+- [Definition 5.9](103-definition-5-9.md)
 
 ## Sources
 

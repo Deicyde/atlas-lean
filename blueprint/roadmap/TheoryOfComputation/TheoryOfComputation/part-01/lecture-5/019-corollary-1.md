@@ -11,7 +11,7 @@ Every regular language is a CFL.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Context Free Language)](../lecture-4/014-context-free-language.md)
 
 ## Proof depends on
 

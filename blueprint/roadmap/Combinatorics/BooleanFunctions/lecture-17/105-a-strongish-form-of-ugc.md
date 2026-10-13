@@ -11,7 +11,7 @@ For $\eta > 0$, $t \in \mathbb{N}$ we are given a non-bipartite Unique-Games ins
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.5 (Lecture 15, Section 3.2)](../lecture-15/094-definition-3-5.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ If $G$ is finite and $H$ is a subgroup of $G$, then $|H|$ divides $|G|$.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Isomorphisms and Cosets, Lagrange's Theorem)](../isomorphisms-and-cosets/007-theorem.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), The Sylow Theorems, Section: Motivation](../../../../../sources/v1/AlgebraNotes.md)

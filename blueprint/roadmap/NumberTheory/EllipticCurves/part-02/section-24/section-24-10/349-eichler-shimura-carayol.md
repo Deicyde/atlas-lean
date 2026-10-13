@@ -13,7 +13,9 @@ Let $f = \sum a_n q^n \in S_2^{\text{new}}(\Gamma_0(N))$ be a newform with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 24.6](../section-24-1/325-definition-24-6.md)
+- [Definition 24.28](../section-24-6/340-definition-24-28.md)
+- [Definition 24.31](../section-24-8/343-definition-24-31.md)
 
 ## Sources
 

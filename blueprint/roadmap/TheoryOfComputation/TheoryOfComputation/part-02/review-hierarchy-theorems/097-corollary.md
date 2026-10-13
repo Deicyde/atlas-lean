@@ -12,6 +12,7 @@ $\mathsf{NL} \subsetneq \mathsf{PSPACE}$.
 ## Depends on
 
 - [Definition (PSPACE and NPSPACE)](../../part-01/lecture-18/087-pspace-and-npspace.md)
+- [Definition (L and NL)](../../part-01/lecture-19/083-l-and-nl.md)
 
 ## Proof depends on
 

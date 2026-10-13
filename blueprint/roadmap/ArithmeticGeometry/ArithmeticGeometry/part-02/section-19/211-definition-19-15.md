@@ -10,6 +10,7 @@ For a principal divisor $\operatorname{div} f = \sum n_P P$, the divisors $\oper
 ## Depends on
 
 - [Definition 19.6](203-definition-19-6.md)
+- [Definition 19.11](207-definition-19-11.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ Let $p$ be an odd prime and let $f$ be a diagonal quadratic form of dimension $n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.14](../section-4/024-definition-4-14.md)
+- [Definition 5.1](../section-5/029-definition-5-1.md)
+- [Definition 9.1](../section-9/058-definition-9-1.md)
+- [Definition 9.7](../section-9/063-definition-9-7.md)
+
+## Proof depends on
+
+- [Theorem 8.8 (Hensel's lemma)](../section-8/057-hensel-s-lemma.md)
 
 ## Sources
 

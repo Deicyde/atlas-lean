@@ -11,7 +11,9 @@ Let $K$ be a global field. The adele ring of $K$ is the restricted product $\mat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.1](../../part-01/section-13/264-definition-13-1.md)
+- [Definition 13.22](../../part-01/section-13/279-definition-13-22.md)
+- [Definition 25.1](528-definition-25-1.md)
 
 ## Sources
 

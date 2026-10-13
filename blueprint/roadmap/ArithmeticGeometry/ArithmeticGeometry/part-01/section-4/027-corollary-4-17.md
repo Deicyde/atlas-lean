@@ -12,7 +12,7 @@ The ring $\mathbb{Z}_{p}$ is a principal ideal domain with a unique maximal idea
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](015-definition-4-3.md)
 
 ## Sources
 

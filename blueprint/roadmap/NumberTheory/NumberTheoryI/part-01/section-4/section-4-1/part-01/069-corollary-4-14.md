@@ -12,7 +12,12 @@ Let $L/F/K$ be a tower of finite extensions of fields. Then $L/K$ is separable i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](058-definition-4-3.md)
+
+## Proof depends on
+
+- [Corollary 4.11](066-corollary-4-11.md)
+- [Corollary 4.13](068-corollary-4-13.md)
 
 ## Sources
 

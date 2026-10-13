@@ -10,7 +10,7 @@ For any $x \perp \mathbf{1}$, $x_1 \leq x_2 \leq \cdots \leq x_n$, there is some
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3 (Cut Ratio)](031-cut-ratio.md)
 
 ## Sources
 

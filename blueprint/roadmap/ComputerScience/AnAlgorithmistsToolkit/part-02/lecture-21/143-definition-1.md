@@ -11,7 +11,7 @@ The spectral radius $\rho$ of a symmetric matrix $M$ is the absolute value of it
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 1, Section 2)](../../part-01/lecture-1/001-definition-1.md)
 
 ## Sources
 

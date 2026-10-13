@@ -12,7 +12,11 @@ The functions $\Phi(s+1) - \frac{1}{s}$ and $(\mathcal{L} H)(s) = \frac{\Phi(s+1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 16.9](321-definition-16-9.md)
+
+## Proof depends on
+
+- [Lemma 16.11](323-lemma-16-11.md)
 
 ## Sources
 

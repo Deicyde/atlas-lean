@@ -11,7 +11,10 @@ Let $M, \tilde{M}$ be compact hypersurfaces equipped with Gauss maps. Assume tha
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 26.1](../lecture-26/082-definition-26-1.md)
+- [Definition 26.2](../lecture-26/083-definition-26-2.md)
+- [Definition 30.2](../lecture-30/093-definition-30-2.md)
+- [Definition 30.3](../lecture-30/094-definition-30-3.md)
 
 ## Proof depends on
 

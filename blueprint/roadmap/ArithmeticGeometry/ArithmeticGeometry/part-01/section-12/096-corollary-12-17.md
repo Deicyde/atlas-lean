@@ -12,7 +12,11 @@ The maximal ideals of the ring $\bar{k}[x_{1}, \ldots, x_{n}]$ are all of the fo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.7](087-definition-12-7.md)
+
+## Proof depends on
+
+- [Theorem 12.16 (weak Nullstellensatz)](095-weak-nullstellensatz.md)
 
 ## Sources
 

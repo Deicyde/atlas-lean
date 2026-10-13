@@ -11,7 +11,7 @@ A continuous path $\gamma \colon [a,b] \rightarrow X$ is called a metric geodesi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lemma 39.1](../lecture-39/131-lemma-39-1.md)
 
 ## Sources
 

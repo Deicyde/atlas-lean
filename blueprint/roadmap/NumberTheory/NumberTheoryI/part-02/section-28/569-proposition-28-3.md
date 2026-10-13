@@ -14,6 +14,8 @@ Let $K$ be a global field. The global Artin homomorphism $\theta_{K}$ is the uni
 
 - [Definition 28.2](568-definition-28-2.md)
 - [Definition 26.2](../section-26/542-definition-26-2.md)
+- [Definition 13.22](../../part-01/section-13/279-definition-13-22.md)
+- [Theorem 27.2 (Local Artin Reciprocity)](../section-27/560-local-artin-reciprocity.md)
 
 ## Sources
 

@@ -10,11 +10,18 @@ Assume $AKLB$ and let $I$ be a fractional ideal of $B$. The ideal norm of $I$ is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.19](../../section-1/section-1-6/015-definition-1-19.md)
+- [Definition 2.10](../../section-2/027-definition-2-10.md)
+- [Definition 2.13](../../section-2/029-definition-2-13.md)
+- [Definition 4.3](../../section-4/section-4-1/part-01/058-definition-4-3.md)
+- [Definition 4.46](../../section-4/section-4-3/091-definition-4-46.md)
+- [Definition 6.5](128-definition-6-5.md)
 
 ## Proof depends on
 
 - [Definition 6.1](../section-6-1/125-definition-6-1.md)
+- [Proposition 6.2](../section-6-1/126-proposition-6-2.md)
+- [Proposition 6.6](129-proposition-6-6.md)
 
 ## Sources
 

@@ -9,7 +9,7 @@ Let $a=(a_{n})$ be a $p$-adic integer with each $a_{n}$ uniquely represented by 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](015-definition-4-3.md)
 
 ## Sources
 

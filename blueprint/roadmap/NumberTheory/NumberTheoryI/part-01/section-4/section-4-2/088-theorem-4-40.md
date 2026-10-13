@@ -11,6 +11,13 @@ Let $L$ be a commutative $K$-algebra of finite dimension and assume that the dim
 ## Depends on
 
 - [Definition 4.29](082-definition-4-29.md)
+- [Definition 4.1](../section-4-1/part-01/057-definition-4-1.md)
+- [Definition 4.3](../section-4-1/part-01/058-definition-4-3.md)
+- [Definition 4.34](085-definition-4-34.md)
+
+## Proof depends on
+
+- [Corollary 4.39](087-corollary-4-39.md)
 
 ## Sources
 

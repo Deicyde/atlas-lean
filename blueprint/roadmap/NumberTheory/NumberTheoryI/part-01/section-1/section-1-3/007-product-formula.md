@@ -12,7 +12,7 @@ For every $x \in \mathbb{Q}^{\times}$ we have $\prod_{p \leq \infty} |x|_p = 1$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.7](005-definition-1-7.md)
 
 ## Sources
 

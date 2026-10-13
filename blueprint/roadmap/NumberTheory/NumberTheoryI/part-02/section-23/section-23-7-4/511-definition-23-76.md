@@ -11,7 +11,14 @@ Let $A$ be a left $R$-module and let $M$ be a right $R$-module. $\operatorname{T
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.9](../section-23/453-definition-23-9.md)
+- [Definition 23.49](../section-23-7-subsection-23-7-1/489-definition-23-49.md)
+- [Definition 23.56](../section-23-7-subsection-23-7-2/496-definition-23-56.md)
+- [Theorem 23.75](510-theorem-23-75.md)
+
+## Proof depends on
+
+- [Theorem 23.50](../section-23-7-subsection-23-7-1/490-theorem-23-50.md)
 
 ## Sources
 

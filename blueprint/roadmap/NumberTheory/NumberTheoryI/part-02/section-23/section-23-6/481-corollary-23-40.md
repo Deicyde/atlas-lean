@@ -10,13 +10,14 @@ Let $G$ be a finite cyclic group. Given an exact sequence of $G$-modules $0 \lon
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.1](../section-23-1/446-definition-23-1.md)
 
 ## Proof depends on
 
 - [Definition 23.29](../section-23-5/472-definition-23-29.md)
 - [Definition 23.31](../section-23-5/474-definition-23-31.md)
 - [Theorem 23.32](../section-23-5/475-theorem-23-32.md)
+- [Theorem 23.37](479-theorem-23-37.md)
 
 ## Sources
 

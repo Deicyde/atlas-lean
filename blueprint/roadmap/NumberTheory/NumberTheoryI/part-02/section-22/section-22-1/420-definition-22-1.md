@@ -12,6 +12,7 @@ Let $K$ be a number field and let $\mathfrak{m}$ be a modulus for $K$. A congrue
 ## Depends on
 
 - [Definition 21.2](../../section-21/404-definition-21-2.md)
+- [Definition 21.3](../../section-21/405-definition-21-3.md)
 
 ## Sources
 

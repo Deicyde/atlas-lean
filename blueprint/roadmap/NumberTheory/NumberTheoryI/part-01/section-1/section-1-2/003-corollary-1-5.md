@@ -12,7 +12,7 @@ In a field of positive characteristic every absolute value is nonarchimedean, an
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](001-definition-1-2.md)
 
 ## Proof depends on
 

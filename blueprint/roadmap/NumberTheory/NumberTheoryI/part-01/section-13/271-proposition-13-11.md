@@ -12,7 +12,13 @@ Let $K$ be a number field with $s$ complex places. The sign of the absolute disc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.26](../section-1/section-1/021-definition-1-26.md)
+- [Definition 13.1](264-definition-13-1.md)
+
+## Proof depends on
+
+- [Proposition 12.6](../section-12/section-12-2/245-proposition-12-6.md)
+- [Definition 13.8](269-definition-13-8.md)
 
 ## Sources
 

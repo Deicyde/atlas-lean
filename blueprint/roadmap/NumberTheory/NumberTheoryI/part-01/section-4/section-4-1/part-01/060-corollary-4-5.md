@@ -10,7 +10,11 @@ Let $f \in K[x]$ be irreducible and let $p \geq 0$ be the characteristic of $K$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.1](057-definition-4-1.md)
+
+## Proof depends on
+
+- [Lemma 4.4](059-lemma-4-4.md)
 
 ## Sources
 

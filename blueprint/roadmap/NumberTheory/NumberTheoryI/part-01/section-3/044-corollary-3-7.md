@@ -12,7 +12,11 @@ Let $I$ be a nonzero ideal of a Dedekind domain $A$. The number of prime ideals 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.10](../section-2/027-definition-2-10.md)
+
+## Proof depends on
+
+- [Lemma 3.6](043-lemma-3-6.md)
 
 ## Sources
 

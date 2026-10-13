@@ -12,7 +12,7 @@ Two permutations $\sigma$ and $\tau$ are conjugate if and only if $\sigma$ and $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Conjugacy Classes for Symmetric and Alternating Groups, Section: Cycle Type)](044-definition.md)
 
 ## Sources
 

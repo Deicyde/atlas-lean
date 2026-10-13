@@ -12,7 +12,7 @@ For any vertex $v \in V(G)$, $|p_t(v) - \pi(v)| \leq (1 - \lambda)^t \cdot \sqrt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Claim 1](../lecture-4/037-claim-1.md)
 
 ## Sources
 

@@ -9,7 +9,13 @@ Suppose that $f \colon \{-1,1\}^n \to \{-1,1\}$ satisfies $W^{\geqslant d}[f] \l
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.5](009-definition-2-5.md)
+- [Definition 2.6](010-definition-2-6.md)
+
+## Proof depends on
+
+- [Claim 2.2 (Lecture 1, Section 2.1)](../lecture-1/002-claim-2-2.md)
+- [Claim 2.7](011-claim-2-7.md)
 
 ## Sources
 

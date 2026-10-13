@@ -14,6 +14,10 @@ Let $V$ be a non-degenerate space. Then there is a hyperbolic subspace $H$ of $V
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition (Section 7.2, Bilinear and hermitian forms)](027-proposition.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 7.2, Bilinear and hermitian forms](../../../../sources/v1/Buildings.md)

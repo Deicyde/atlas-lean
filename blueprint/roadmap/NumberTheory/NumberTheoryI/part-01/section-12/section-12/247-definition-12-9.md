@@ -9,7 +9,8 @@ Assume $AKLB$, let $M$ be an $A$-lattice in $L$, and let $n \coloneqq [L:K]$. Th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.9](../../section-5/section-5/103-definition-5-9.md)
+- [Definition 12.5](../section-12-2/244-definition-12-5.md)
 
 ## Sources
 

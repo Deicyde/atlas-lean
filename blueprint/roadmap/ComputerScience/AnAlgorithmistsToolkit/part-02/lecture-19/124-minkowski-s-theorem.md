@@ -12,7 +12,11 @@ If $L$ is a full rank lattice, and $S$ any centrally-symmetric convex set of vol
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2 (Lecture 10, Section 2)](../../part-01/lecture-10/093-definition-2.md)
+
+## Proof depends on
+
+- [Theorem 1 (Blichfield)](122-blichfield.md)
 
 ## Sources
 

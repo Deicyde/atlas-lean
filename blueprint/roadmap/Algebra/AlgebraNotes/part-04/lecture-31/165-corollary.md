@@ -14,6 +14,10 @@ A root of a polynomial $P$ of degree $5$ with Galois group $S_5$ cannot be expre
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition (Lecture 31, Quintic Equations)](161-proposition.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Lecture 31, Quintic Equations](../../../../../sources/v1/AlgebraNotes.md)

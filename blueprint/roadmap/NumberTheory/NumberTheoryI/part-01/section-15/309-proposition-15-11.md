@@ -11,7 +11,17 @@ Let $K$ be a number field with $r$ real and $s$ complex places, and let $\Lambda
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.26](../section-1/section-1/021-definition-1-26.md)
+- [Definition 13.1](../section-13/264-definition-13-1.md)
+- [Definition 14.4](../section-14/section-14-1/283-definition-14-4.md)
+- [Corollary 15.8](307-corollary-15-8.md)
+
+## Proof depends on
+
+- [Lemma 14.3](../section-14/section-14-1/282-lemma-14-3.md)
+- [Lemma 14.21](../section-14/section-14-5/296-lemma-14-21.md)
+- [Lemma 15.7](306-lemma-15-7.md)
+- [Proposition 15.9](308-proposition-15-9.md)
 
 ## Sources
 

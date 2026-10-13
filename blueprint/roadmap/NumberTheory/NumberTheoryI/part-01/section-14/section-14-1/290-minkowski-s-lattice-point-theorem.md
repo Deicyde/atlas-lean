@@ -12,7 +12,10 @@ Let $\Lambda$ be a lattice in $V \simeq \mathbb{R}^{n}$ and $\mu$ a Haar measure
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.13](../../section-13/273-definition-13-13.md)
+- [Definition 14.4](283-definition-14-4.md)
+- [Definition 14.10](287-definition-14-10.md)
+- [Definition 14.12](289-definition-14-12.md)
 
 ## Sources
 

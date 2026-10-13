@@ -16,7 +16,7 @@ Given $a, b \in \mathbb{F}_p[x]$ with $b$ monic, compute $q, r \in \mathbb{F}_p[
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.2](../section-3-1/006-definition-3-2.md)
 
 ## Sources
 

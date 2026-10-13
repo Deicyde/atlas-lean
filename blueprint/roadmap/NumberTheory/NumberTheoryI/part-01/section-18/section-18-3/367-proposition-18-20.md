@@ -12,7 +12,13 @@ Let $\chi$ be a non-principal Dirichlet character of modulus $m$. Then $L(s, \ch
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 18.6](../section-18-2/356-definition-18-6.md)
+- [Definition 18.11](../section-18-2-1/360-definition-18-11.md)
+- [Definition 18.19](366-definition-18-19.md)
+
+## Proof depends on
+
+- [Corollary 18.15](../section-18-2-1/364-corollary-18-15.md)
 
 ## Sources
 

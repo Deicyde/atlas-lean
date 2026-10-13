@@ -12,7 +12,12 @@ Let $L/K$ be a Galois extension and let $G\coloneqq \operatorname{Gal}(L/K)$ be 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 26.22](554-definition-26-22.md)
+
+## Proof depends on
+
+- [Lemma 26.21](553-lemma-26-21.md)
+- [Theorem 26.23](555-theorem-26-23.md)
 
 ## Sources
 

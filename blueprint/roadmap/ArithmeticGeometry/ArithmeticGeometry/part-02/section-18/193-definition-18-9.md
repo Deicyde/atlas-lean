@@ -11,7 +11,8 @@ An abstract curve is the topological space $X = X_{F}$ with rings of regular fun
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.18](../../part-01/section-4/028-definition-4-18.md)
+- [Definition 13.18](../../part-01/section-13/section-13-4/115-definition-13-18.md)
 
 ## Sources
 

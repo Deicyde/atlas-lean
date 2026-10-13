@@ -14,6 +14,10 @@ Every $p$-group has non-trivial center.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary (Counting Formula for Orbits)](../group-actions/039-counting-formula-for-orbits.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Section: Group Actions on $G$, Subsection: $p$-groups](../../../../../sources/v1/AlgebraNotes.md)

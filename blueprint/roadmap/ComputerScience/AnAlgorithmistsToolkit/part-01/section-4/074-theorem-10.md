@@ -12,6 +12,10 @@ For every initial distribution $p^0$, all $t$, and every $x \in [0, m]$, $I^t(x)
 
 - [Definition 7 (Lovasz-Simonovits curve)](061-lovasz-simonovits-curve.md)
 
+## Proof depends on
+
+- [Claim 8](073-claim-8.md)
+
 ## Sources
 
 - [MIT 18.409 An Algorithmist's Toolkit (Fall 2009), Section 4.3](../../../../../sources/v1/AnAlgorithmistsToolkit.md)

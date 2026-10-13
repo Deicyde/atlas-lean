@@ -10,7 +10,12 @@ For all $d \in \mathbb{N}$, if $f(x_1, \ldots, x_n) = \sum_{|S| \leqslant d} \wi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.2 (Lecture 4, Section 2)](../lecture-4/007-definition-2-2.md)
+
+## Proof depends on
+
+- [Claim 5.1](../lecture-4/022-claim-5-1.md)
+- [Lemma 3.2](../section-3/080-lemma-3-2.md)
 
 ## Sources
 

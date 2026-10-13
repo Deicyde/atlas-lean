@@ -12,7 +12,8 @@ For any two functions $\phi$ and $\psi$, we have $\rho(\phi * \psi) = \rho(\phi)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section: Span of Irreducible Characters)](../../part-03/span-of-irreducible-characters/099-definition.md)
+- [Definition (Appendix: Dimensions of Irreducible Characters)](173-definition.md)
 
 ## Sources
 

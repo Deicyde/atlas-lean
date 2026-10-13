@@ -12,11 +12,13 @@ Assume $AKLBG$ with finite residue fields and let $\mathfrak{p}$ be an unramifie
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.37](../../section-5/section-5/124-definition-5-37.md)
 
 ## Proof depends on
 
 - [Definition 7.16](164-definition-7-16.md)
+- [Corollary 7.3](../section-7-1/152-corollary-7-3.md)
+- [Proposition 7.17](165-proposition-7-17.md)
 
 ## Sources
 

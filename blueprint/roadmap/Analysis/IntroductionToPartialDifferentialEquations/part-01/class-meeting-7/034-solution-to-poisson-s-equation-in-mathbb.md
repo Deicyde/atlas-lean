@@ -10,12 +10,13 @@ Let $f(x) \in C_{0}^{\infty}(\mathbb{R}^{n})$ (i.e., $f(x)$ is a smooth, compact
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.1](../section-1/021-definition-1-1-1.md)
 
 ## Proof depends on
 
 - [Definition 1.0.1 (Class Meeting #7, Section 1 (The Fundamental Solution for $\Delta$ in $\mathbb{R}^{n}$))](032-definition-1-0-1.md)
 - [Lemma 1.0.1 (Class Meeting #7, Section 1 (The Fundamental Solution for $\Delta$ in $\mathbb{R}^{n}$))](033-lemma-1-0-1.md)
+- [Proposition 1.1.1 (Differentiating under the integral)](../section-1/022-differentiating-under-the-integral.md)
 
 ## Sources
 

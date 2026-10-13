@@ -12,7 +12,14 @@ Let $G$ be a finite group where $|G| = n = p^em$ and $\gcd(p, m) = 1$. The three
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sylow $p$-subgroup)](../../part-01/the-sylow-theorems/048-sylow-p-subgroup.md)
+
+## Proof depends on
+
+- [Corollary (Lagrange's Theorem)](../../part-01/isomorphisms-and-cosets/010-lagrange-s-theorem.md)
+- [Definition (Group Actions, The Counting Formula)](../../part-01/group-actions/036-definition.md)
+- [Corollary (Counting Formula for Orbits)](../../part-01/group-actions/039-counting-formula-for-orbits.md)
+- [Theorem (Sylow II)](../../part-01/the-sylow-theorems/050-sylow-ii.md)
 
 ## Sources
 
