@@ -269,7 +269,7 @@ class Target:
     lean: str | None
     statement: bool
     proof: bool
-    v1_names: list[str]
+    names: list[str]
     source: tuple[str, Path] | None = None
     citations: list[str] = field(default_factory=list)
     module: tuple[str, ...] = ()
@@ -402,7 +402,7 @@ def load_book(book: str, index, lean_dependencies: dict) -> tuple[list[Target], 
                 lean=", ".join(names) if resolved else None,
                 statement=statement,
                 proof=statement and not is_data and sorry_free,
-                v1_names=names,
+                names=names,
             )
         )
     disambiguate(targets, lambda target: f"{target.title} ({target.location})")
@@ -411,10 +411,10 @@ def load_book(book: str, index, lean_dependencies: dict) -> tuple[list[Target], 
     # not need the `lean:` link that a name collision elsewhere can withhold.
     by_name: dict[str, Target] = {}
     for target in targets:
-        for name in target.v1_names:
+        for name in target.names:
             by_name.setdefault(name, target)
     for target in targets:
-        for name in target.v1_names:
+        for name in target.names:
             entry = lean_dependencies.get(name, {})
             for bucket, kind in ((target.depends, "statement"), (target.proof_depends, "proof")):
                 for dependency in entry.get(kind, []):
@@ -548,7 +548,7 @@ def load_library(library: str, index) -> tuple[list[Target], dict]:
                     lean=lean,
                     statement=statement,
                     proof=proof,
-                    v1_names=[],
+                    names=[lean or short],
                     source=(f"{library}, {'.'.join(module)}", Path("sources") / "v2" / f"{library}.md"),
                     citations=citations,
                     module=module,
@@ -588,6 +588,29 @@ def library_tree(library: str, targets: list[Target]) -> Container:
     return tree
 
 
+def link_v2(targets: list[Target], dependencies: dict) -> None:
+    """Add Lean dependency edges between v2 articles from sources/v2/lean-dependencies.json."""
+    by_name = {target.lean: target for target in targets if target.lean}
+    # Wanted entries have no `lean:` link; match them by module and short name.
+    by_short = {(".".join(target.module), target.names[0]): target for target in targets if not target.lean}
+
+    def find(name: str) -> Target | None:
+        module = dependencies.get(name, {}).get("module", "")
+        return by_name.get(name) or by_short.get((module, name.split(".")[-1]))
+
+    for name, entry in dependencies.items():
+        target = find(name)
+        if target is None:
+            continue
+        seen = {id(other) for other in target.depends + target.proof_depends}
+        for kind, bucket in (("statement", target.depends), ("proof", target.proof_depends)):
+            for dependency in entry[kind]:
+                other = find(dependency)
+                if other is not None and other is not target and id(other) not in seen:
+                    bucket.append(other)
+                    seen.add(id(other))
+
+
 def render_library_source(library: str, summary: dict) -> str:
     lines = [
         "---",
@@ -611,6 +634,13 @@ def render_library_source(library: str, summary: dict) -> str:
             f"{summary['wanted']} articles are `theorem_wanted` or `def_wanted` entries: their Lean",
             "statements exist, but Autoform's source index does not recognize those",
             "commands yet, so the articles carry no `lean:` link and show as not stated.",
+        ]
+    if summary.get("edges"):
+        lines += [
+            "",
+            f"{summary['edges']} roadmap edges come from the compiled Lean: the articles each",
+            "article's statement or proof reaches, through private helpers and undocumented",
+            "declarations if need be ([`lean-dependencies.json`](lean-dependencies.json)).",
         ]
     return "\n".join(lines) + "\n"
 
@@ -851,15 +881,27 @@ def generate(selected: list[str]) -> dict[Path, str]:
         )
     v2_coverage = []
     v2_by_subject: dict[str, list[Container]] = defaultdict(list)
-    for library in LIBRARIES:
-        targets, summary = load_library(library, index)
+    v2_loaded = {library: load_library(library, index) for library in LIBRARIES}
+    for library, (targets, summary) in v2_loaded.items():
         for subject in sorted(summary["subjects"]):
             tree = library_tree(library, [target for target in targets if target.location == subject])
             assign_paths(tree, ROADMAP / subject / library)
-            for node in walk(tree):
-                render = render_container if isinstance(node, Container) else render_target
-                files[node.path] = render(node, previous(node.path))
             v2_by_subject[subject].append(tree)
+    dependency_file = SOURCES / "v2" / "lean-dependencies.json"
+    if dependency_file.is_file():
+        link_v2(
+            [target for targets, _ in v2_loaded.values() for target in targets],
+            json.loads(dependency_file.read_text())["articles"],
+        )
+    every_v2 = Container("v2", "v2", [tree for subject in sorted(v2_by_subject) for tree in v2_by_subject[subject]])
+    v2_forward = drop_forward_edges(every_v2)
+    for node in walk(every_v2):
+        if node is not every_v2:
+            render = render_container if isinstance(node, Container) else render_target
+            files[node.path] = render(node, previous(node.path))
+    for library, (targets, summary) in v2_loaded.items():
+        summary["edges"] = sum(len(target.depends) + len(target.proof_depends) for target in targets)
+        summary["forward"] = v2_forward
         files[SOURCES / "v2" / f"{library}.md"] = render_library_source(library, summary)
         first = sorted(summary["subjects"])[0]
         v2_coverage.append(
