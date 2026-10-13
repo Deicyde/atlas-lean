@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: PeriodPair.poleMultiplicity_ne_zero_iff
+---
+
+# Pole Multiplicity ne zero iff
+
+The multiplicity is nonzero if and only if the order is negative, that is, if
+and only if `f` has a genuine pole at `z`. This holds unconditionally: where `f` is
+not locally meromorphic, both sides are false for an explicitly local reason.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.SpecialFunctions.Elliptic.Order](../../../../../../../../sources/v2/MathlibExt.md)

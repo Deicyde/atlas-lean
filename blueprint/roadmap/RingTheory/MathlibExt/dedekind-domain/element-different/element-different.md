@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: elementDifferent
+---
+
+# Element Different
+
+The element different `δ_{B/A}(α)`: `aeval α (derivative (minpoly A α))` when
+`algebraMap B L α` generates `L` over `K`, and `0` otherwise.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.DedekindDomain.ElementDifferent](../../../../../sources/v2/MathlibExt.md)

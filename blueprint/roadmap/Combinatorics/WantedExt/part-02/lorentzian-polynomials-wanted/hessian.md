@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.H.hessian
+---
+
+# Hessian
+
+The Hessian matrix of a degree 2 homogeneous polynomial `f` in `n` variables.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.LorentzianPolynomialsWanted](../../../../../sources/v2/WantedExt.md)

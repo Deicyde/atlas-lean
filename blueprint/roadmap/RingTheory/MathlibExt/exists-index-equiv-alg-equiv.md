@@ -1,0 +1,23 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Pi Field Decomposition
+
+A product algebra equivalence induces a permutation of the factors together
+with factorwise algebra equivalences. In particular the decomposition of a
+finite product of fields into fields is unique up to permutation and
+factorwise `K`-algebra equivalence.
+
+This is the multiplicity-preserving correction of
+`EtaleAlgebra.etale_decomposition_unique` from the primary Lean source for
+ATLAS N83, Corollary 4.33.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.PiFieldDecomposition](../../../sources/v2/MathlibExt.md)

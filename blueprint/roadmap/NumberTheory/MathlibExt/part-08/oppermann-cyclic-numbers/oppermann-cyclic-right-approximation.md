@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.oppermannCyclicRightApproximation
+---
+
+# Oppermann Cyclic Right Approximation
+
+The source's first right-hand asymptotic approximation.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.OppermannCyclicNumbers](../../../../../sources/v2/MathlibExt.md)

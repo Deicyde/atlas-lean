@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.kmpSearch_time_le
+---
+
+# Kmp Search time le
+
+KMP uses at most twice the combined pattern and text lengths in symbol comparisons.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.StringMatching.KnuthMorrisPratt](../../../../../../sources/v2/CSLibExt.md)

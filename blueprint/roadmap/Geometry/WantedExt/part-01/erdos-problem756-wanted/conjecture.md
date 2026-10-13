@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.ErdosProblem756Wanted.conjecture
+---
+
+# Conjecture
+
+Three externally proved rich-distance results: the linear lower bound,
+Bhowmick's quarter-density construction, and its generalization.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Geometry.ErdosProblem756Wanted](../../../../../sources/v2/WantedExt.md)

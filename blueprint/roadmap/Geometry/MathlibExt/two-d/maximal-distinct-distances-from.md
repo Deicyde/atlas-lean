@@ -1,0 +1,21 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: EuclideanGeometry.maximalDistinctDistancesFrom
+---
+
+# Maximal Distinct Distances From
+
+Let $x_1,\ldots,x_n\in \mathbb{R}^2$ and let $R(x_i)=\#\{ \lvert x_j-x_i\rvert : j\neq i\}$,
+where the points are ordered such that
+$$R(x_1)\leq \cdots \leq R(x_n).$$
+Let $g(n)$ be the maximum number of distinct values the $R(x_i)$ can take.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Geometry.TwoD](../../../../sources/v2/MathlibExt.md)

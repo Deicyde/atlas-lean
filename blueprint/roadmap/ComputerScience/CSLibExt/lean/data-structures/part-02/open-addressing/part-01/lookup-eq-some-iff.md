@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Lookup eq some iff
+
+Under `Valid`, lookup returns exactly the unique stored binding: `lookup`
+returns `some value` if and only if `key ↦ value` is stored. Together with
+`lookup_insert` this says a successful insert really replaces the old
+binding: no other value for the key remains stored afterwards.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.OpenAddressing](../../../../../../../../sources/v2/CSLibExt.md)

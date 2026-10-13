@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.yuCarlsson2023StrictUpperBound
+---
+
+# Yu Carlsson2023 Strict Upper Bound
+
+[YC2023] strict computer-aided upper bound `β_2 < 0.90304`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Probability.BeardwoodHaltonHammersleyConstantWanted](../../../../../sources/v2/WantedExt.md)

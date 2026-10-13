@@ -1,0 +1,24 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Geometry.Manifold.ImmersionCompWanted.immersion_comp
+---
+
+# Immersion comp
+
+Composition of immersions between Banach manifolds without boundary. Sources:
+Mathlib `Mathlib/Geometry/Manifold/Immersion.lean` TODO (`IsImmersion.comp`);
+J. Lee, Introduction to Smooth Manifolds, 2nd ed., Ch. 4.
+
+Proof: Apply the pointwise composition construction using the product of the two global
+complements, then package the resulting fixed-complement immersion.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Geometry.Manifold.ImmersionComp](../../../../../../sources/v2/MathlibExt.md)

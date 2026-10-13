@@ -4,7 +4,7 @@ A map of the textbook mathematics in ATLAS. Each of the 26 ATLAS v1 sources
 is a book in the roadmap; each statement ATLAS v1 selected from it is an
 article that reproduces the statement and links the Lean declaration that
 formalizes it. The roadmap pages are generated from
-`v1/Atlas/<Book>/report.json` by `scripts/generate_v1_wiki.py`; edit the
+`v1/Atlas/<Book>/report.json` by `scripts/generate_wiki.py`; edit the
 generator, not the pages.
 
 - [Roadmap](roadmap/README.md): subjects, books, chapters, and statements,

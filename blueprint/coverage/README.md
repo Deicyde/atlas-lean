@@ -5,11 +5,15 @@ status: in-progress
 
 # ATLAS coverage
 
-Every ATLAS v1 textbook target has one roadmap article. The v2 root
-libraries and the standalone `Atlas/` developments are not decomposed yet.
+Every documented public declaration of the ATLAS v2 libraries and every
+ATLAS v1 textbook target has one roadmap article. The standalone `Atlas/`
+developments are not decomposed yet.
 
 | Area | Coverage | Evidence |
 | --- | --- | --- |
+| v2 / MathlibExt | DECOMPOSED | [5722 documented public declarations](../roadmap/Algebra/MathlibExt/README.md) across 23 subjects; 136 instances and 1065 undocumented public declarations are not articles. |
+| v2 / CSLibExt | DECOMPOSED | [2448 documented public declarations](../roadmap/Computability/CSLibExt/README.md) across 3 subjects; 19 instances and 552 undocumented public declarations are not articles. |
+| v2 / WantedExt | DECOMPOSED | [1770 documented public declarations](../roadmap/Algebra/WantedExt/README.md) across 16 subjects; 44 instances and 96 undocumented public declarations are not articles. |
 | v1 / AlgebraNotes | DECOMPOSED | [176 source statements](../roadmap/Algebra/AlgebraNotes/README.md), 151 with a formalized statement. |
 | v1 / AlgebraicCombinatorics | DECOMPOSED | [39 source statements](../roadmap/Combinatorics/AlgebraicCombinatorics/README.md), 37 with a formalized statement. |
 | v1 / AlgebraicGeometryI | DECOMPOSED | [186 source statements](../roadmap/AlgebraicGeometry/AlgebraicGeometryI/README.md), 112 with a formalized statement. |
@@ -36,7 +40,7 @@ libraries and the standalone `Atlas/` developments are not decomposed yet.
 | v1 / TensorCategories | DECOMPOSED | [229 source statements](../roadmap/CategoryTheory/TensorCategories/README.md), 120 with a formalized statement. |
 | v1 / TheoryOfComputation | DECOMPOSED | [118 source statements](../roadmap/TheoryOfComputation/TheoryOfComputation/README.md), 84 with a formalized statement. |
 | v1 / TheoryOfProbability | DECOMPOSED | [100 source statements](../roadmap/Probability/TheoryOfProbability/README.md), 83 with a formalized statement. |
-| v2 root libraries (MathlibExt, CSLibExt, WantedExt) | MAPPED | Module catalogs for the root Lake package are not generated yet. |
+| v2 tests (MathlibExtTest, CSLibExtTest) | OUT | Tests and diagnostics rather than mathematical results. |
 | Atlas/StatisticalMechanics | MAPPED | Standalone development; no roadmap articles yet. |
 | Atlas/FC | MAPPED | Nine standalone solution files; no roadmap articles yet. |
 | Atlas/CPythonListsort | OUT | Maintained as its own Autoform blueprint inside Atlas/CPythonListsort. |

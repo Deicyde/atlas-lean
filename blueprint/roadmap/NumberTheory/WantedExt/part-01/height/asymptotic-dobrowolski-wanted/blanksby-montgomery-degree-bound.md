@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Blanksby Montgomery degree Bound
+
+Source: Blanksby--Montgomery, the strict degree-dependent bound quoted by Voutier.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.NumberTheory.Height.AsymptoticDobrowolskiWanted](../../../../../../sources/v2/WantedExt.md)

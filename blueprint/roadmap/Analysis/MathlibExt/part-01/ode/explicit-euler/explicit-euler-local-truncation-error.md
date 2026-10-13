@@ -1,0 +1,24 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.ODE.ExplicitEulerWanted.explicit_euler_local_truncation_error
+---
+
+# Explicit euler local truncation error
+
+Explicit Euler consistency: one step from the exact solution has local
+truncation error `O(h^2)`.
+
+Proof: differentiate the velocity by the chain rule, bound that derivative on the compact time
+interval, and apply the mean value inequality twice.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.ODE.ExplicitEuler](../../../../../../sources/v2/MathlibExt.md)
+- `Mathlib/docs/undergrad.yaml`, section `Numerical Analysis` / `Ordinary differential equations`, entry `consistency` (unmapped); E. Hairer, S. P. Nørsett and G. Wanner, Solving Ordinary Differential Equations I, 2nd ed., Section I.7.

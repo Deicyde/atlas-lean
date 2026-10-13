@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: FractionRing.isRegularAt_algebraMap
+---
+
+# Is Regular At algebra Map
+
+Elements in the image of the base ring are regular at every evaluation.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.Localization.RegularAt](../../../../../sources/v2/MathlibExt.md)

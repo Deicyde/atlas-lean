@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Metric.dimensionBorsukNumber
+---
+
+# Dimension Borsuk Number
+
+The supremum of set Borsuk numbers over bounded sets with at least two points.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Geometry.Euclidean.BorsukNumber](../../../../../../sources/v2/MathlibExt.md)

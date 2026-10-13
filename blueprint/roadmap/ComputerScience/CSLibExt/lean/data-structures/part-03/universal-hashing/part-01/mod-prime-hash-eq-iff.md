@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Mod Prime Hash eq iff
+
+Two keys collide under `h_{a,b}` exactly when the inner values agree modulo `m`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.UniversalHashing](../../../../../../../../sources/v2/CSLibExt.md)

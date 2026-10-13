@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Faster APSP ret
+
+The actual saved-matrix execution returns the least adequate power of two.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.Graph.ShortestPath.FasterAPSP.Basic](../../../../../../../../sources/v2/CSLibExt.md)

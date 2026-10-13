@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.SylvesterSchur.choose_le_top_pow_sub_one_of_no_large
+---
+
+# Choose le top pow sub one of no large
+
+Replacing `Nat.primeCounting r` by the elementary bound `r - 1` gives a slightly coarser
+version of the preceding no-large-prime estimate.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.ChooseFactorization](../../../../../../sources/v2/MathlibExt.md)

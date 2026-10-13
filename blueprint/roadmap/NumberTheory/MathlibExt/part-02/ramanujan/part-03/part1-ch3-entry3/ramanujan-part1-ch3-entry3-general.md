@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry3.ramanujan_part1_ch3_entry3_general
+---
+
+# Ramanujan part1 ch3 entry3 general
+
+`ramanujan_part1_ch3_entry3` without the hypothesis `x ≠ 0`. It follows from
+`Entry9Odd.ramanujan_part1_ch3_entry9_odd` with `a = 0, b = 1`, which has no nonzero
+hypothesis on `x`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry3](../../../../../../../sources/v2/MathlibExt.md)

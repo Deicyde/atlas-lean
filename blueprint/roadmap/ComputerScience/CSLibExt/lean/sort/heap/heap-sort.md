@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.heapSort
+---
+
+# Heap Sort
+
+Sort a list in nondecreasing order by repeated insertion into and extraction from a binary
+min-heap.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.Sort.Heap](../../../../../../sources/v2/CSLibExt.md)

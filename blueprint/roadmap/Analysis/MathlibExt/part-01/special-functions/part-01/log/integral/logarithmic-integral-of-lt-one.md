@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Real.logarithmicIntegral_of_lt_one
+---
+
+# Logarithmic Integral of lt one
+
+Unfolding for the lower branch `x < 1`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.SpecialFunctions.Log.Integral](../../../../../../../../sources/v2/MathlibExt.md)
+- Direct unfolding of the `x < 1` branch of the piecewise definition.

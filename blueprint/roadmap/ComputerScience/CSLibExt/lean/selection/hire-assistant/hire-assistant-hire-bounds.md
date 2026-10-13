@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Hire Assistant hire bounds
+
+A nonempty input makes at least one hire and at most one per interview.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.Selection.HireAssistant](../../../../../../sources/v2/CSLibExt.md)

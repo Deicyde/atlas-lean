@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: NumberField.ArakelovDivisor.idealNorm_coe
+---
+
+# Ideal Norm coe
+
+Coercion of the ideal norm to the reals.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.NumberField.ArakelovDivisor](../../../../../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: DVRResidue.adjoinRoot_isLocalHom_of_irreducible_map
+---
+
+# Adjoin Root is Local Hom of irreducible map
+
+`AdjoinRoot.of g` is local when the reduction is irreducible.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.LocalRing.ResidueField.AdjoinRootLift](../../../../../../sources/v2/MathlibExt.md)

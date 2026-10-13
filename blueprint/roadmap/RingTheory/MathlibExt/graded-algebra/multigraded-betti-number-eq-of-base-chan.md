@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Multigraded Betti Invariance
+
+For one fixed multigraded free resolution, the multigraded Betti number is
+independent of the certified component-presentation package: any two
+`MultigradedBaseChange` presentations give the same `multigradedBettiNumber`
+in every multidegree `α` and homological index `i`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.GradedAlgebra.MultigradedBettiInvariance](../../../../sources/v2/MathlibExt.md)
+- Benjamin Braun and Brian Davis, “Antichain Simplices,” Journal of Integer Sequences 23 (2020), `https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex`, exact lines 866--874. This covers only the fixed-resolution coherence step; independence across resolutions, finite support, Poincaré polynomiality, and Hilbert syzygy are deliberately not claimed here.

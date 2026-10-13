@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.DeBruijnNewman.H
+---
+
+# H
+
+The de Bruijn--Newman deformation: the heat-flow evolved Riemann
+`Ξ`-type integral at time `λ`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.DeBruijnNewman](../../../../../sources/v2/MathlibExt.md)

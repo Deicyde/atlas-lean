@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.SylvesterSchur.consecutive_of_factorial_mul_top_pow_sqrt_mul_primorial_lt_start_pow
+---
+
+# Consecutive of factorial mul top pow sqrt mul primorial lt start pow
+
+Conditional consecutive form using the split `sqrt/primorial` factorization estimate and
+the elementary lower bound `k ^ n / n! ≤ Nat.choose (k+n-1) n`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.Conditional](../../../../../../sources/v2/MathlibExt.md)

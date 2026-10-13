@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.GraphTheory.ErdosProblem1077Wanted.disprovedMain
+---
+
+# Disproved Main
+
+Its disproof (companion).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.GraphTheory.ErdosProblem1077Wanted](../../../../sources/v2/WantedExt.md)

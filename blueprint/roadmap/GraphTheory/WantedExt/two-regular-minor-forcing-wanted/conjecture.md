@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.GraphTheory.TwoRegularMinorForcingWanted.conjecture
+---
+
+# Conjecture
+
+[OPG-59911] Every finite graph of average degree at least `4t/3 - 2`
+contains every 2-regular graph on `t` vertices as a minor.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.GraphTheory.TwoRegularMinorForcingWanted](../../../../sources/v2/WantedExt.md)

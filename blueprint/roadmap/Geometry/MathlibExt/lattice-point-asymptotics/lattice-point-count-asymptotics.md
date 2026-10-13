@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: LatticePointAsymptotics.lattice_point_count_asymptotics
+---
+
+# Lattice point count asymptotics
+
+Eventual lattice-point asymptotics with `O(t ^ (n - 1))` error, stated through
+the canonical `LatticePointEnumerator.latticeEnumerator`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Geometry.LatticePointAsymptotics](../../../../sources/v2/MathlibExt.md)

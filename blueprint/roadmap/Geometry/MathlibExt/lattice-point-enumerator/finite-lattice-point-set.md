@@ -1,0 +1,22 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: LatticePointEnumerator.finite_latticePointSet
+---
+
+# Finite lattice Point Set
+
+The counted dilate intersection is finite for bounded `P`
+(via `ZSpan.setFinite_inter`). This holds for every real dilate `t`, so no
+positivity is assumed here; positivity is tracked structurally in the
+source-domain declarations `latticePointSetPos` / `latticeEnumeratorPos`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Geometry.LatticePointEnumerator](../../../../sources/v2/MathlibExt.md)

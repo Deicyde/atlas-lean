@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: BurnsidePaqb.classSum_centralScalar_isIntegral
+---
+
+# Class Sum central Scalar is Integral
+
+Bielefeld Prop 1: `|C|χ(g)/χ(1)` is an algebraic integer.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.CentralCharacter](../../../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.hurwitzSingle
+---
+
+# Hurwitz Single
+
+Single-sequence specialization from the source, with second sequence `0 ^ n`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.LinearAlgebra.HurwitzTransform](../../../../sources/v2/MathlibExt.md)

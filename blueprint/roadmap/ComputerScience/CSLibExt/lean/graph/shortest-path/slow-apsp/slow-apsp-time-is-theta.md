@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Slow APSP time is Theta
+
+The sum of the three actual executed cost coordinates is `Θ(n^4)`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.Graph.ShortestPath.SlowAPSP](../../../../../../../sources/v2/CSLibExt.md)

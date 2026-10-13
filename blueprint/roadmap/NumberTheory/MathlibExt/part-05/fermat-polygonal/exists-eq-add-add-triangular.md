@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.exists_eq_add_add_triangular
+---
+
+# Exists eq add add triangular
+
+Gauss's Eureka theorem: every natural number is a sum of three triangular numbers.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.FermatPolygonal](../../../../../sources/v2/MathlibExt.md)
+- C. F. Gauss, *Disquisitiones Arithmeticae* (1801), as cited in Nathanson (1987), whose introduction gives the equivalent form used here: `8n + 3` is a sum of three odd squares.

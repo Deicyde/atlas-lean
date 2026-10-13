@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Exists root re eq max Real Root
+
+A polynomial with a root has a root whose real part is `maxRealRoot`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Algebra.Polynomial.RealRooted](../../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,16 @@
+---
+declaration: def
+origin: cited
+---
+
+# Insert
+
+Insert or replace a key with an explicit priority using split and merge.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.Treap](../../../../../../../../sources/v2/CSLibExt.md)

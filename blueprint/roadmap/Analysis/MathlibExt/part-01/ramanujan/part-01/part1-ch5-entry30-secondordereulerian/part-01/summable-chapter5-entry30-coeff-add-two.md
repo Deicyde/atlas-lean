@@ -1,0 +1,20 @@
+---
+declaration: lemma
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry30Secondordereulerian.summable_chapter5Entry30Coeff_add_two
+---
+
+# Summable chapter5 Entry30 Coeff add two
+
+The coefficients from `n = 2` on are summable when `‖a p‖ ≤ p ^ (-c)` at every prime, for
+some `c > 1`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch5Entry30Secondordereulerian](../../../../../../../../sources/v2/MathlibExt.md)

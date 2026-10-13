@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: TateCohomology.herbrandQuotient_congr
+---
+
+# Herbrand Quotient congr
+
+Invariance under carrier equivalences in degrees `0` and `-1`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RepresentationTheory.Homological.TateCohomology.HerbrandQuotient](../../../../../../sources/v2/MathlibExt.md)

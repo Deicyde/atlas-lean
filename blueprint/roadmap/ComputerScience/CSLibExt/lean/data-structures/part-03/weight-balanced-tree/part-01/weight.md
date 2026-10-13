@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+---
+
+# Weight
+
+The Nievergelt-Reingold weight of a tree: external leaves count, so the
+empty tree has weight `1` and any tree has weight one more than its number
+of keys. The weight of a node is the sum of the weights of its children
+(`weight_node`).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.WeightBalancedTree](../../../../../../../../sources/v2/CSLibExt.md)

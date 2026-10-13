@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: RectilinearRectangle.boundaryIntegral_ofBounds_horizontal_concat
+---
+
+# Boundary Integral of Bounds horizontal concat
+
+Horizontal gluing of two rectangle boundary integrals.  The common
+horizontal side cancels and the two vertical integrals concatenate.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Complex.RectilinearCycle](../../../../../../../../sources/v2/MathlibExt.md)

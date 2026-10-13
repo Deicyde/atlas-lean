@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: CurveDivisor.divZeros_apply
+---
+
+# Div Zeros apply
+
+The coefficient of the zero part is the positive part of the coefficient.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.AlgebraicGeometry.Curve.EffectiveParts](../../../../../sources/v2/MathlibExt.md)

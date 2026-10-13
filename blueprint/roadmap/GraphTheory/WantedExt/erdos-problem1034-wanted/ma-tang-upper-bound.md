@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.GraphTheory.ErdosProblem1034Wanted.maTangUpperBound
+---
+
+# Ma Tang Upper Bound
+
+Ma–Tang upper bound (established companion): some dense graphs join at
+most `(2 - √(5/2) + ε)n` vertices doubly to every triangle.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.GraphTheory.ErdosProblem1034Wanted](../../../../sources/v2/WantedExt.md)

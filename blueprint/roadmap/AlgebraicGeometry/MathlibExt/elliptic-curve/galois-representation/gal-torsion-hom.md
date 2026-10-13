@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.galTorsionHom
+---
+
+# Gal Torsion Hom
+
+The Galois action restricted to the `p`-torsion subtype. The ambient point
+group is not a `ZMod p`-module, so restriction to the subtype comes first.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.AlgebraicGeometry.EllipticCurve.GaloisRepresentation](../../../../../sources/v2/MathlibExt.md)

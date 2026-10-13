@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: arithFrobAt_eq_one_iff_ncard_primesOver_eq_card
+---
+
+# Arith Frob At eq one iff ncard primes Over eq card
+
+The Frobenius is trivial iff the prime splits completely, at an unramified
+prime with finite residue field.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.Frobenius.Splitting](../../../../../sources/v2/MathlibExt.md)

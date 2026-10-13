@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.isCarmichaelNumber_iff_zmod
+---
+
+# Is Carmichael Number iff zmod
+
+The universal congruence in the definition of a Carmichael number, expressed for every
+element of `ZMod n`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.CarmichaelNumber](../../../../../sources/v2/MathlibExt.md)

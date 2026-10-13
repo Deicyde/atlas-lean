@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Roth Auxiliary
+
+Roth's finiteness theorem with an abstract finite collection of divisibility places.
+
+The functions `p`, `μ`, and `ν` encode lower bounds on powers dividing the numerator and
+denominator. Taking `S` empty gives the usual archimedean approximation set.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.RothAuxiliary](../../../../sources/v2/MathlibExt.md)

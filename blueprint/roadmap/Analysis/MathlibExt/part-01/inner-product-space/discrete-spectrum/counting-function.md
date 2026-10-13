@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: NonnegativeDiscreteSpectrum.countingFunction
+---
+
+# Counting Function
+
+Strict counting function `N(Λ) = #{j | E_j < Λ}`, with multiplicity.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.InnerProductSpace.DiscreteSpectrum](../../../../../../sources/v2/MathlibExt.md)

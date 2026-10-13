@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.StringMatching.computeTransition_spec
+---
+
+# Compute Transition spec
+
+Every actual table entry is the greatest feasible suffix-prefix length.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.StringMatching.FiniteAutomaton](../../../../../../sources/v2/CSLibExt.md)

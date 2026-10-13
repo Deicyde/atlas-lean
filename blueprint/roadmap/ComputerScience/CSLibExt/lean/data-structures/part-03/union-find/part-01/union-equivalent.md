@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Union equivalent
+
+`union` makes its two selected vertices equivalent.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.UnionFind](../../../../../../../../sources/v2/CSLibExt.md)

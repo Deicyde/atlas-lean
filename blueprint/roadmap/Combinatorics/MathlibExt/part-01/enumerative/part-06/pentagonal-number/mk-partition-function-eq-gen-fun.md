@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.mk_partitionFunction_eq_genFun
+---
+
+# Mk partition Function eq gen Fun
+
+The generating function of `partitionFunction` is Mathlib's partition generating function
+`Nat.Partition.genFun` with all weights `1`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.Enumerative.PentagonalNumber](../../../../../../../sources/v2/MathlibExt.md)

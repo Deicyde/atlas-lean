@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: IsLipschitzParametrizable.image_lipschitzWith
+---
+
+# Image lipschitz With
+
+The image of a `d`-Lipschitz parametrizable set under a Lipschitz map is
+`d`-Lipschitz parametrizable, by composing each chart with the map.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Topology.MetricSpace.LipschitzParametrizable](../../../../../sources/v2/MathlibExt.md)

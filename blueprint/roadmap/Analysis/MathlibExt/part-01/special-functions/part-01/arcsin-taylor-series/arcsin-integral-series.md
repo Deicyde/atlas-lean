@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.SpecialFunctions.ArcsinTaylorSeries.arcsinIntegralSeries
+---
+
+# Arcsin Integral Series
+
+The termwise integral of `arcsinSeries t / t`, normalized to vanish at zero.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.SpecialFunctions.ArcsinTaylorSeries](../../../../../../../sources/v2/MathlibExt.md)

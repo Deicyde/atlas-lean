@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: PeriodPair.poleMultiplicity_eq_zero_of_nonneg
+---
+
+# Pole Multiplicity eq zero of nonneg
+
+The multiplicity vanishes at points of nonnegative order.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.SpecialFunctions.Elliptic.Order](../../../../../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Valuation.module_finite_integer_of_isAdicComplete
+---
+
+# Module finite integer of is Adic Complete
+
+The valuation integer ring is a finite module over the complete DVR,
+as the immediate integral-closure consequence.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.DiscreteValuationRing.IntegralClosureComplete](../../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: PeriodPair.fundamentalParallelogram_zero
+---
+
+# Fundamental Parallelogram zero
+
+At the origin, the fundamental parallelogram is the standard fundamental domain.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.SpecialFunctions.Elliptic.FundamentalParallelogram](../../../../../../../../sources/v2/MathlibExt.md)

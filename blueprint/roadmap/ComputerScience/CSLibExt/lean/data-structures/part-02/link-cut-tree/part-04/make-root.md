@@ -1,0 +1,20 @@
+---
+declaration: def
+origin: cited
+---
+
+# Make Root
+
+Reroot the represented tree containing `x` at `x` (`rerootAt`): the
+edges on the path from the old root to `x` are reversed and every other
+edge is kept, so the undirected represented tree is unchanged. Preferred
+edges are reset (all dashed). On a vertex outside the forest this only
+resets the preferred edges.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.LinkCutTree](../../../../../../../../sources/v2/CSLibExt.md)

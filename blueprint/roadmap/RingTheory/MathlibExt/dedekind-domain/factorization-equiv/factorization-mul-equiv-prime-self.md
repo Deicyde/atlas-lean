@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: FractionalIdeal.factorizationMulEquiv_prime_self
+---
+
+# Factorization Mul Equiv prime self
+
+The image of a prime ideal is the corresponding basis exponent function.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.DedekindDomain.FactorizationEquiv](../../../../../sources/v2/MathlibExt.md)

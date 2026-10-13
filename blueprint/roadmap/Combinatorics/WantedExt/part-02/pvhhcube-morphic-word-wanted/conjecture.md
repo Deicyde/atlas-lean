@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.PVHHCubeMorphicWordWanted.conjecture
+---
+
+# Conjecture
+
+The fixed point beginning with `0` of the substitution
+`0 ↦ 03`, `1 ↦ 43`, `3 ↦ 1`, `4 ↦ 01` avoids every PVHH-cube.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.PVHHCubeMorphicWordWanted](../../../../../sources/v2/WantedExt.md)

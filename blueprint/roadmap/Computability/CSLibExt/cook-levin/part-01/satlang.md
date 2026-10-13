@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.CookLevin.SATLang
+---
+
+# SATLang
+
+SAT as a language of encoded satisfiable CNF formulas.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Computability.CookLevin](../../../../../sources/v2/CSLibExt.md)

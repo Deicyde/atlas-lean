@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.LinearAlgebra.Matrix.SimultaneousDiagonalizationWanted._root_.Matrix.PosDef.exists_isUnit_transpose_mul_mul_eq_one
+---
+
+# Exists is Unit transpose mul mul eq one
+
+A real positive-definite matrix is congruent to the identity by an invertible matrix.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.LinearAlgebra.Matrix.SimultaneousDiagonalization](../../../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: arithFrobConjClass_eq_of_under_eq
+---
+
+# Arith Frob Conj Class eq of under eq
+
+Primes of `S` lying over the same prime of `R` give the same Frobenius
+conjugacy class.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.Frobenius.ConjugacyClass](../../../../../sources/v2/MathlibExt.md)

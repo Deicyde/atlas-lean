@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: TorusSobolev.theta_le_iff
+---
+
+# Theta le iff
+
+The extended-real supremum has the standard least-upper-bound characterization.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Fourier.TorusSobolev.Fourier](../../../../../../../../sources/v2/MathlibExt.md)

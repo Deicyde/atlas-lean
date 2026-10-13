@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.AlgebraicGeometry.TopologicalReconstructionWanted.AlgebraicGeometry.TopologicalReconstruction.IsProjectiveHom
+---
+
+# Is Projective Hom
+
+A morphism from a scheme to Spec R is projective if it factors through some
+closed immersion into ℙⁿ_R.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.AlgebraicGeometry.TopologicalReconstructionWanted](../../../../sources/v2/WantedExt.md)

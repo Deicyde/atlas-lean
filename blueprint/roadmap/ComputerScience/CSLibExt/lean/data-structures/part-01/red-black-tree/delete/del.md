@@ -1,0 +1,20 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.del
+---
+
+# Del
+
+Unbalanced deletion: delete a key by comparisons, splicing the subtrees of a
+deleted node together with `join`. Colors are kept, but `RedOk` and
+`Balanced` need not hold of the result; `delete` repairs them.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.RedBlackTree.Delete](../../../../../../../../sources/v2/CSLibExt.md)

@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: FalconerDistanceSet.planarThresholdProperty_mono
+---
+
+# Planar Threshold Property mono
+
+Raising a sufficient strict dimension threshold preserves sufficiency.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Geometry.FalconerDistanceSet](../../../../../sources/v2/MathlibExt.md)

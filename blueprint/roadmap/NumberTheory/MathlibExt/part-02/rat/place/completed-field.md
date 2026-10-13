@@ -1,0 +1,19 @@
+---
+declaration: abbrev
+origin: cited
+statement: formalized
+lean: Rat.Place.CompletedField
+---
+
+# Completed Field
+
+The completed field `ℚ_v` attached to a place `v`. Coerced from the
+selected bundle.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.Rat.Place](../../../../../../sources/v2/MathlibExt.md)

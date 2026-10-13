@@ -1,0 +1,19 @@
+---
+declaration: lemma
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.BreuschWanted.Internal.log2_gt
+---
+
+# Log2 gt
+
+Certified bound `0.6931 < log 2`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Theta](../../../../../../../../sources/v2/MathlibExt.md)

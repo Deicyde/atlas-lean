@@ -1,0 +1,20 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.RubelHInfinityCoherenceWanted.RubelProblem524
+---
+
+# Rubel Problem524
+
+Rubel problem 5.24 ([AMR-022-5024], Research Problems in Function Theory):
+is the intersection of two finitely generated ideals in H∞ finitely
+generated?
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Analysis.RubelHInfinityCoherenceWanted](../../../../../sources/v2/WantedExt.md)

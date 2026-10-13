@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: PerronKernel.horiz_side_bound_exact
+---
+
+# Horiz side bound exact
+
+Horizontal side bound over `[c, U]`, exact value (no sign hypothesis on `L`).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.PerronKernel](../../../../../../sources/v2/MathlibExt.md)

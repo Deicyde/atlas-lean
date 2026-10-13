@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Fang xia partition transitive of tiling
+
+Source: T. Fang and B. Xia, 'Tiling the symmetric group by transpositions', Bull. London Math. Soc. 58(5) (2026); DOI 10.1112/blms.70366; arXiv:2506.00360. The λ-transitivity notion in the statement is due to Martin–Sagan. Via leanprover/lean-eval@38361be, problem `fang_xia_tiling_partition_transitive`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.FangXiaTilingWanted](../../../../../sources/v2/WantedExt.md)

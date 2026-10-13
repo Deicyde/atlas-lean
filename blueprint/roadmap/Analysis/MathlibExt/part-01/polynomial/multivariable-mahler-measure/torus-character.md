@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: LogarithmicMahlerMeasure.torusCharacter
+---
+
+# Torus Character
+
+The torus character `e ↦ exp (I * ∑ j, e j * θ j)` at the angle vector `θ`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Polynomial.MultivariableMahlerMeasure](../../../../../../sources/v2/MathlibExt.md)

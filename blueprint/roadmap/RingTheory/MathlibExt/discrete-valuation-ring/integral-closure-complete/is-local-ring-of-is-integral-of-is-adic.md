@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: isLocalRing_of_isIntegral_of_isAdicComplete_maximal
+---
+
+# Is Local Ring of is Integral of is Adic Complete maximal
+
+An integral domain over an adically complete domain at a maximal ideal is local.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.DiscreteValuationRing.IntegralClosureComplete](../../../../../sources/v2/MathlibExt.md)

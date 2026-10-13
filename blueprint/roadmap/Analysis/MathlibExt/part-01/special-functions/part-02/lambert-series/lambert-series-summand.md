@@ -1,0 +1,16 @@
+---
+declaration: def
+origin: cited
+---
+
+# Lambert Series Summand
+
+The summand `qⁿ / (1 - qⁿ)` of the basic Lambert series.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.SpecialFunctions.LambertSeries](../../../../../../../sources/v2/MathlibExt.md)

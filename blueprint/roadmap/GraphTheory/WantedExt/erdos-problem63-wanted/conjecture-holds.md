@@ -1,0 +1,18 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Conjecture holds
+
+Resolved true: Resolved true (Liu–Montgomery [LiMo20]), per erdosproblems.com/63. Source:
+Liu–Montgomery [LiMo20], per erdosproblems.com/63, https://www.erdosproblems.com/63. Moved from
+`OpenConjectures/GraphTheory/ErdosProblem63`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.GraphTheory.ErdosProblem63Wanted](../../../../sources/v2/WantedExt.md)

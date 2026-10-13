@@ -1,0 +1,20 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.bhhConstantFor
+---
+
+# Bhh Constant For
+
+A real-valued BHH constant for an explicit law, canonically constructed as the infimum of all
+real values satisfying the BHH limit characterization. The source theorem below asserts that the
+unit-square value satisfies that characterization and is unique. No existence theorem is assumed.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Probability.BeardwoodHaltonHammersleyConstantWanted](../../../../../sources/v2/WantedExt.md)

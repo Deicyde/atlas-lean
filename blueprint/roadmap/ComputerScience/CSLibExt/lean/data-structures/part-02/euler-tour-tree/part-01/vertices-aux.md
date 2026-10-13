@@ -1,0 +1,20 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.EulerTourTree.Tree.verticesAux
+---
+
+# Vertices Aux
+
+Accumulator preorder traversal: `verticesAux t acc = vertices t ++ acc`
+(see `verticesAux_eq`), so `vertices` is linear rather than repeatedly
+appending child lists.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.EulerTourTree](../../../../../../../../sources/v2/CSLibExt.md)

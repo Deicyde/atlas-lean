@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Deque.peekFront_eq_head
+---
+
+# Peek Front eq head
+
+Peeking at the front returns the head of the represented sequence.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.Deque](../../../../../../../sources/v2/CSLibExt.md)

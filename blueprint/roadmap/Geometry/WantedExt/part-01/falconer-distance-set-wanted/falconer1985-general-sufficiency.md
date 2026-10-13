@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: FalconerDistanceSetWanted.falconer1985GeneralSufficiency
+---
+
+# Falconer1985 General Sufficiency
+
+Falconer's general sufficient exponent is `(d+1)/2`, not `d+1/2`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Geometry.FalconerDistanceSetWanted](../../../../../sources/v2/WantedExt.md)
+- GIOW, arXiv:1808.09346v1, introduction line 76, reporting Falconer (1985).

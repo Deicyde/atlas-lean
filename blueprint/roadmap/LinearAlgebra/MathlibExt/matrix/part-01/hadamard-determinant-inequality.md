@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Hadamard Determinant
+
+Hadamard's determinant inequality for a complex `n × n` matrix:
+`‖det A‖ ≤ ∏ i, √(∑ j, ‖A i j‖^2)` via `normSq`,
+i.e. `‖det A‖ ≤ ∏ i, sqrt(∑ j, normSq(A i j))`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.LinearAlgebra.Matrix.HadamardDeterminant](../../../../../sources/v2/MathlibExt.md)
+- J. Hadamard, Résolution d'une question relative aux déterminants, Bulletin des Sciences Mathématiques 17 (1893), 240–246.

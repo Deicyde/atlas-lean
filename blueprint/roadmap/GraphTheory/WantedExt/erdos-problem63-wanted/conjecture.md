@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.GraphTheory.ErdosProblem63Wanted.conjecture
+---
+
+# Conjecture
+
+Infinite chromatic number forces `2^n` cycle lengths infinitely often.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.GraphTheory.ErdosProblem63Wanted](../../../../sources/v2/WantedExt.md)

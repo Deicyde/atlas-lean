@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.narayanaPolynomialCoeff_succ_succ
+---
+
+# Narayana Polynomial Coeff succ succ
+
+Positive-index Narayana-polynomial coefficients agree definitionally with
+the shared Narayana-number API.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.Enumerative.NarayanaPolynomial](../../../../../../../sources/v2/MathlibExt.md)

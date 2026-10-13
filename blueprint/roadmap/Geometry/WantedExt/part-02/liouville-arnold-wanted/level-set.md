@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.LiouvilleArnoldWanted.Geometry.LiouvilleArnold.levelSet
+---
+
+# Level Set
+
+The common level set `{x : F₁(x) = c₁, …, F_n(x) = c_n}`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Geometry.LiouvilleArnoldWanted](../../../../../sources/v2/WantedExt.md)

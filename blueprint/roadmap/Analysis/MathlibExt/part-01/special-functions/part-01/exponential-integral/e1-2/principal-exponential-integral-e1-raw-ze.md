@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Complex.principalExponentialIntegralE1Raw_zero
+---
+
+# Principal Exponential Integral E1 Raw zero
+
+The raw kernel at `0` is `-γ` by junk values (`ein 0 = 0`,
+`Complex.log 0 = 0`), not by classical analysis.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.SpecialFunctions.ExponentialIntegral.E1](../../../../../../../../sources/v2/MathlibExt.md)

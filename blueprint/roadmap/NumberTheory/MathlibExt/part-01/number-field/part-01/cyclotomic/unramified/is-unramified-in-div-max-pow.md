@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: IsCyclotomicExtension.Rat.isUnramifiedIn_divMaxPow
+---
+
+# Is Unramified In div Max Pow
+
+The `p`-free conductor of `m` admits an unramified cyclotomic field
+at `p`: `Q(zeta_{m'})` with `m' = Nat.divMaxPow m p`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.NumberField.Cyclotomic.Unramified](../../../../../../../../sources/v2/MathlibExt.md)

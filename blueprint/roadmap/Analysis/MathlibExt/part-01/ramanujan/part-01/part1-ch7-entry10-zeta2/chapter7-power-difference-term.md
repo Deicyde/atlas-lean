@@ -1,0 +1,21 @@
+---
+declaration: abbrev
+origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceTerm
+---
+
+# Chapter7 Power Difference Term
+
+Compatibility alias for the former `Entry10Zeta2.chapter7PowerDifferenceTerm`.
+
+For new code, use `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceTerm`
+directly.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch7Entry10Zeta2](../../../../../../../sources/v2/MathlibExt.md)

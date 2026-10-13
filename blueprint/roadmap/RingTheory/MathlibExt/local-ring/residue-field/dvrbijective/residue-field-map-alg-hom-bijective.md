@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: DVRResidue.residueFieldMapAlgHom_bijective
+---
+
+# Residue Field Map Alg Hom bijective
+
+The map from algebra homomorphisms of finite local DVR extensions to their induced
+residue-field algebra homomorphisms is bijective when the source is etale and the target is
+Henselian.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.LocalRing.ResidueField.DVRBijective](../../../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,16 @@
+---
+declaration: def
+origin: cited
+---
+
+# Selected
+
+The indices where the kernel of `φ` vanishes componentwise.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.PiFieldQuotient](../../../../sources/v2/MathlibExt.md)

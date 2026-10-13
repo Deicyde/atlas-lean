@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.MultipleZeta.Index.empty
+---
+
+# Empty
+
+The empty multiple-zeta index. Source: arXiv:2307.09867, empty-index convention.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.MultipleZeta.Series](../../../../../../sources/v2/MathlibExt.md)

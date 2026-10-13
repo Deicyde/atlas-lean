@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry3.psi_eq_entry9_P
+---
+
+# Psi eq entry9 P
+
+`psi` is pointwise `entry9_P 0 1`: the guard in `psi` is redundant because
+complex division by zero is already zero.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry3](../../../../../../../sources/v2/MathlibExt.md)

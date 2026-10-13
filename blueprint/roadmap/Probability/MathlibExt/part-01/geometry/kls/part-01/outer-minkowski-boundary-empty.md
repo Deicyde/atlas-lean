@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Probability.KLS.outerMinkowskiBoundary_empty
+---
+
+# Outer Minkowski Boundary empty
+
+The empty set has no outer Minkowski boundary.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Probability.Geometry.KLS](../../../../../../../sources/v2/MathlibExt.md)

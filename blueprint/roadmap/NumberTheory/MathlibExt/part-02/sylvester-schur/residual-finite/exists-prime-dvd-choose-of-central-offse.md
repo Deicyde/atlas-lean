@@ -1,0 +1,20 @@
+---
+declaration: lemma
+origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.SylvesterSchur.Internal.exists_prime_dvd_choose_of_central_offset_erdos_div_three_layers_bound
+---
+
+# Exists prime dvd choose of central offset erdos div three layers bound
+
+In the central residual range, the offset central-binomial lower bound contradicts
+the `N / 3` first-layer estimate unless a large prime divides `Nat.choose N r`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.ResidualFinite](../../../../../../sources/v2/MathlibExt.md)

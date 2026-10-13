@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: AlgebraicGeometry.IsVariety.quasiSeparated
+---
+
+# Quasi Separated
+
+The structure morphism of a variety is quasi-separated (being separated).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.AlgebraicGeometry.Variety](../../../../sources/v2/MathlibExt.md)

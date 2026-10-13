@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.matrixMultiplicationExponent
+---
+
+# Matrix Multiplication Exponent
+
+The square matrix-multiplication exponent in its concrete tensor-rank formulation. An empty
+admissible set gives `⊤`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Complexity.Algebraic.MatrixMultiplicationExponent](../../../../../../sources/v2/CSLibExt.md)

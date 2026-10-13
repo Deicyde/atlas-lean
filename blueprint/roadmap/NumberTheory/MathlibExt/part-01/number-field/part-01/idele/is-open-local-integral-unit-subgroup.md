@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: NumberField.FiniteIdeleGroup.isOpen_localIntegralUnitSubgroup
+---
+
+# Is Open local Integral Unit Subgroup
+
+The integral unit subgroup at a finite place is open in the local multiplicative group.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.NumberField.Idele](../../../../../../../sources/v2/MathlibExt.md)

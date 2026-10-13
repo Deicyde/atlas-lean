@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Hamming.expansion
+---
+
+# Expansion
+
+The `t`-expansion of `A`: all points at Hamming distance at most `t` from some
+element of `A`, as the union of `ball a t` over `a ∈ A`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.InformationTheory.HammingExpansion](../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: BurnsidePaqb.cyc_rootSet
+---
+
+# Cyc root Set
+
+The `ℚ`-root set of `X ^ m - C 1` in `ℂ` is exactly the roots of unity.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.CyclotomicField](../../../../../../sources/v2/MathlibExt.md)

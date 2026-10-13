@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: IsDiscreteValuationRing.addVal_algebraMap_eq_ramificationIdx_mul
+---
+
+# Add Val algebra Map eq ramification Idx mul
+
+Scaling of `addVal` along a torsion-free local DVR extension by the
+current unprimed ramification index.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.RamificationInertia.Valuation](../../../../../sources/v2/MathlibExt.md)

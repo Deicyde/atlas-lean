@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Submodule.arePNeighbors_comm
+---
+
+# Are PNeighbors comm
+
+The `p`-neighbor relation is symmetric.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.LinearAlgebra.Submodule.PNeighbor](../../../../../sources/v2/MathlibExt.md)

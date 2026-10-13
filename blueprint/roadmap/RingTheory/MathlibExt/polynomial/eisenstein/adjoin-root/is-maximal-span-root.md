@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: AdjoinRoot.isMaximal_span_root
+---
+
+# Is Maximal span root
+
+The span of the root of a monic Eisenstein polynomial of positive degree
+over a DVR is a maximal ideal.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.Polynomial.Eisenstein.AdjoinRoot](../../../../../../sources/v2/MathlibExt.md)

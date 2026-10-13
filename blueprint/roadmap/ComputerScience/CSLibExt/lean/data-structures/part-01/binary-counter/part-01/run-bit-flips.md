@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Run bit flips
+
+Bit `i` changes exactly `n / 2 ^ i` times in an actual zero-start run.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BinaryCounter](../../../../../../../../sources/v2/CSLibExt.md)

@@ -1,0 +1,21 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BTree.borrowRight
+---
+
+# Borrow Right
+
+Borrow for `child` from its right sibling: the separator `sep` moves
+down as the child's last key (with the sibling's first child), and the
+sibling's first key moves up as the new separator. Returns the new child,
+separator, and sibling.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BTree.DeleteBalanced](../../../../../../../../../sources/v2/CSLibExt.md)

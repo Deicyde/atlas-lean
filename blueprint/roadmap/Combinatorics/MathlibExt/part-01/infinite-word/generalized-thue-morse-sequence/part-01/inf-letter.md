@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+---
+
+# Inf Letter
+
+The infinite word `A_∞`: its `m`-th letter is read from the finite block
+`A_{m+1}`, proven long enough, via checked indexing with no default letter
+(concept `jis_sem_12ac243c6e8826ae73e194e0`, statement `jis_099e0392547ec836b0b913d1`).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.GeneralizedThueMorseSequence](../../../../../../../sources/v2/MathlibExt.md)

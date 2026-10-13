@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.SelbergSieve.levelWeights_inner
+---
+
+# Level Weights inner
+
+The divisor sum of the level weights diagonalizes to the normalized `y`-coefficient.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.SelbergSieve](../../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.SimpleGraph.MatrixTreeWanted.numSpanningTrees_eq_card_trees
+---
+
+# Num Spanning Trees eq card trees
+
+The spanning-tree count equals the number of trees below `G` on the same vertex
+type, matching `OpenConjectures.Combinatorics.MinimalSpanningTreeOrder.spanningTreeCount`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.MatrixTree](../../../../../../../sources/v2/MathlibExt.md)

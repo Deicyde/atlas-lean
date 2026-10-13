@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Complex.wimanCoefficientMeasure
+---
+
+# Wiman Coefficient Measure
+
+The atomic measure whose mass at `n` is the norm of the `n`th Taylor coefficient.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Complex.Wiman.CoefficientExponentialFamily](../../../../../../../../sources/v2/MathlibExt.md)

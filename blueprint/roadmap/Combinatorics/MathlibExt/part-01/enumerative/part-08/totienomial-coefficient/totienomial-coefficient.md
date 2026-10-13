@@ -1,0 +1,21 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.totienomialCoefficient
+---
+
+# Totienomial Coefficient
+
+Totienomial coefficient: the generalized binomial coefficient at Euler's `phi`.
+The values `Nat.totient i` are positive for positive `i`, so this specialization lies in the
+source domain rather than the totalized zero-denominator extension.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.Enumerative.TotienomialCoefficient](../../../../../../../sources/v2/MathlibExt.md)
+- https://cs.uwaterloo.ca/journals/JIS/VOL19/Edgar/edgar3.tex

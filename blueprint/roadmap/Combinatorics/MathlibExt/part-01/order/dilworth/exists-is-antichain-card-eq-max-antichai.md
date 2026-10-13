@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.Order.DilworthWanted.exists_isAntichain_card_eq_maxAntichainSize
+---
+
+# Exists is Antichain card eq max Antichain Size
+
+Some antichain has exactly `maxAntichainSize α` elements.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.Order.Dilworth](../../../../../../sources/v2/MathlibExt.md)

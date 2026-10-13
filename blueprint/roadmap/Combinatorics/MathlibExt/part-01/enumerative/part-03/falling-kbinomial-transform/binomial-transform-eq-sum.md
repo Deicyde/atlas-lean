@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.binomialTransform_eq_sum
+---
+
+# Binomial Transform eq sum
+
+The `k = 1` falling `k`-binomial transform has the usual binomial sum.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.Enumerative.FallingKBinomialTransform](../../../../../../../sources/v2/MathlibExt.md)

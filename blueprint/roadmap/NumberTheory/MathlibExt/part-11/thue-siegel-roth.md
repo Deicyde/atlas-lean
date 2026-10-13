@@ -1,0 +1,22 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Thue Siegel Roth
+
+For irrational real algebraic `α : ℝ` and any `ε > 0`, only finitely many `q : ℚ` satisfy `|α - q|
+< 1 / (q.den : ℝ) ^ (2+ε)` via `Real.rpow`. Source: K. F. Roth, Rational approximations to
+algebraic numbers, Mathematika 2 (1955) 1–20; predecessors Thue 1909 and Siegel 1921; textbook in
+Schmidt, Diophantine Approximation
+
+Proof: The proof constructs Siegel's auxiliary polynomial, bounds its index at rational
+approximation points by a Taylor estimate, and contradicts the inductive Roth lemma.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.ThueSiegelRoth](../../../../sources/v2/MathlibExt.md)

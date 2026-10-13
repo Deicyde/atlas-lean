@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+---
+
+# Spine
+
+The chain `r → c₁ → c₂ → ⋯` as a rooted tree: each vertex has the next as
+its only child. A convenience constructor for building represented trees
+from vertex lists; the structural operations do not use it (they perform
+adjacency-preserving surgery instead).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.LinkCutTree](../../../../../../../../sources/v2/CSLibExt.md)

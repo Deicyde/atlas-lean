@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Fourier.hasDerivAt_fourierLaplace
+---
+
+# Has Deriv At fourier Laplace
+
+Derivative of the Fourier–Laplace transform of an integrable compactly
+supported function.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Fourier.FourierLaplace](../../../../../../sources/v2/MathlibExt.md)

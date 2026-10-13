@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.HoneycombConnectiveConstantWanted.Combinatorics.HoneycombConnectiveConstant.step_injective
+---
+
+# Step injective
+
+The three direction labels at a vertex select three distinct neighbors.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.HoneycombConnectiveConstantWanted](../../../../../sources/v2/WantedExt.md)

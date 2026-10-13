@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Execute balance
+
+Actual successful cost and remaining size account for every pushed element.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.Stack.Multipop](../../../../../../../../sources/v2/CSLibExt.md)

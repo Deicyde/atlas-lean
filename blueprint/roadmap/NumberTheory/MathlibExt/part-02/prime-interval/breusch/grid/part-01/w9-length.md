@@ -1,0 +1,19 @@
+---
+declaration: lemma
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.BreuschWanted.Internal.w9_length
+---
+
+# W9 length
+
+The table `w9` has 16 entries.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Grid](../../../../../../../../sources/v2/MathlibExt.md)

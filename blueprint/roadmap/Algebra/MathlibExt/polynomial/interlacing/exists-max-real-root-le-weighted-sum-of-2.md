@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Exists max Real Root le weighted Sum of segment real Rooted
+
+If the segment from a weighted sum to every member of a finite monic family stays
+real-rooted, some member has largest root no larger than that of the weighted sum.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Algebra.Polynomial.Interlacing](../../../../../sources/v2/MathlibExt.md)

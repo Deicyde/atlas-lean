@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Std Gaussian inverse Cheeger
+
+The standard Gaussian has the exact inverse Cheeger coefficient `sqrt(pi/2)`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Probability.KLSBoundsWanted](../../../../sources/v2/WantedExt.md)
+- optimizationproblems `constants/20c.md`, classical Gaussian row; the Gaussian isoperimetric theorem supplies the minimizing half-space claim.

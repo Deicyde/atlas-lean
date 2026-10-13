@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: ProfiniteGrp.OpenProfiniteCompletion.etaFn_apply
+---
+
+# Eta Fn apply
+
+Coordinate evaluation of `etaFn`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Topology.Algebra.Group.OpenProfiniteCompletion](../../../../../../sources/v2/MathlibExt.md)

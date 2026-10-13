@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.ErdosProblem871Wanted.disprovedForm
+---
+
+# Disproved Form
+
+Rich order-2 bases need not split (companion recording the disproof).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.NumberTheory.ErdosProblem871Wanted](../../../../../sources/v2/WantedExt.md)

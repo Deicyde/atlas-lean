@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: DVRResidue.adjoinRoot_isDiscreteValuationRing_of_monic_of_irreducible_map
+---
+
+# Adjoin Root is Discrete Valuation Ring of monic of irreducible map
+
+The monic irreducible-reduction `AdjoinRoot` over a DVR is a DVR.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.LocalRing.ResidueField.AdjoinRootLift](../../../../../../sources/v2/MathlibExt.md)

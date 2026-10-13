@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.JaegerModularOrientationWanted.cutSize
+---
+
+# Cut Size
+
+The number of edges crossing a cut. Distinct parallel edges are counted separately.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.JaegerModularOrientationWanted](../../../../../sources/v2/WantedExt.md)

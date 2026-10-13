@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Probability.ProductBondPercolation.AlmostSurely
+---
+
+# Almost Surely
+
+Almost-sure truth under the Bernoulli(`p`) bond law.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Probability.ProductBondPercolation](../../../../../sources/v2/MathlibExt.md)

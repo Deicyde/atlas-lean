@@ -1,0 +1,16 @@
+---
+declaration: def
+origin: cited
+---
+
+# Lambert Lm
+
+The Lambert family `L_m(q) = ∑_{n≥1} q^(mn) / (1 - q^(2n))^m`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.SpecialFunctions.LambertSeries](../../../../../../../sources/v2/MathlibExt.md)

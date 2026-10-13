@@ -1,0 +1,21 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.HadwigerWanted.ConvexGeometry.IsValuation
+---
+
+# Is Valuation
+
+A continuous, rigid-motion-invariant, additive real valuation on the
+convex bodies of `ℝⁿ`: continuity in the Hausdorff metric, inclusion–
+exclusion additivity, and invariance under linear isometries and
+translations.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Geometry.HadwigerWanted](../../../../../sources/v2/WantedExt.md)

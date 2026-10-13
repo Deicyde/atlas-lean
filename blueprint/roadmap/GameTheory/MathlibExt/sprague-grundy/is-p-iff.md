@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.SpragueGrundy.isP_iff
+---
+
+# Is P iff
+
+A position is a P-position iff every move from it leads to a position that is not.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.GameTheory.SpragueGrundy](../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Matrix.rectangularMatrixAccumulate_zero_inner
+---
+
+# Rectangular Matrix Accumulate zero inner
+
+A zero inner dimension preserves the entire incoming accumulator at zero scalar cost.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.Matrix.Multiply](../../../../../../sources/v2/CSLibExt.md)

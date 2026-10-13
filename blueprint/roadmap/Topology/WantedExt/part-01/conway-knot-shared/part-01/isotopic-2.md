@@ -1,0 +1,20 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.TwoLink.Isotopic
+---
+
+# Isotopic
+
+Two oriented two-component links are ambient-isotopic if a single ambient
+isotopy carries each oriented component of the first link to the
+corresponding oriented component of the second.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Topology.ConwayKnotShared](../../../../../../sources/v2/WantedExt.md)

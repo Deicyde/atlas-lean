@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.stern_one
+---
+
+# Stern one
+
+`sternSequence 1 = 1` (Stern sequence `jis_term_8e87f9eebae5b6160acdc06a`,
+OEIS A002487; JIS Lansing, lines 92-103).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.SternSequence](../../../../../sources/v2/MathlibExt.md)

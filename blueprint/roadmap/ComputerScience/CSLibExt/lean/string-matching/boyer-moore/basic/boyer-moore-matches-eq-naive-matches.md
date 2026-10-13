@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Boyer Moore Matches eq naive Matches
+
+Boyer-Moore and the canonical naive matcher return the same ordered list.
+This is a result specification bridge, not a naive execution path.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.StringMatching.BoyerMoore.Basic](../../../../../../../sources/v2/CSLibExt.md)

@@ -1,0 +1,17 @@
+---
+declaration: def
+origin: cited
+---
+
+# Pisot Number
+
+A Pisot number is a real algebraic integer greater than one whose other complex
+conjugates all have norm less than one.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.PisotNumber](../../../../sources/v2/MathlibExt.md)

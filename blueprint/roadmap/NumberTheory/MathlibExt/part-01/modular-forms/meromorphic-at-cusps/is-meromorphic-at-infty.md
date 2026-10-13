@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: ModularFunction.IsMeromorphicAtInfty
+---
+
+# Is Meromorphic At Infty
+
+A function on the upper half-plane is meromorphic at infinity when it is eventually the
+pullback, along a positive-period `q`-parameter, of a function meromorphic at zero.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.ModularForms.MeromorphicAtCusps](../../../../../../sources/v2/MathlibExt.md)

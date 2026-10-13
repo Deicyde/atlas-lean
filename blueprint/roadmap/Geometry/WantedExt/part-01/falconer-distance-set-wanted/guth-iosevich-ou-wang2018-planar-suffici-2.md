@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Guth Iosevich Ou Wang2018 Planar Sufficiency holds
+
+Source: GIOW, arXiv:1808.09346v1, Theorem 1.1, lines 80-81.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Geometry.FalconerDistanceSetWanted](../../../../../sources/v2/WantedExt.md)

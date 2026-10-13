@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+---
+
+# Takagi Ell
+
+Coefficient `ell` (required clause `ell`): `ell_1 = 0`, and `ell_(i+1)` is the
+prefix-digit sum below `k - i` when that digit is `0`, else `i` minus that sum.
+Cites concept `jis_sem_95dbf183cc4eaf1172157db5` and source statement
+`jis_23b2f8f9e624bca533bd6deb`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.SpecialFunctions.TakagiFunction](../../../../../../../sources/v2/MathlibExt.md)

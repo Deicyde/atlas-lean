@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Trivial Jung Elekes1994 Upper Bound holds
+
+Source: Jung's theorem, quoted in Elekes (1994), catalogue constant 13b.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Geometry.LebesgueUniversalCoveringConstantWanted](../../../../../../sources/v2/WantedExt.md)

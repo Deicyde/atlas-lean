@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: ClassBreadth.elementBreadth_eq_of_card_eq
+---
+
+# Element Breadth eq of card eq
+
+The logarithm recovers the exact exponent when the class size is a power.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.GroupTheory.ClassBreadth](../../../../../sources/v2/MathlibExt.md)

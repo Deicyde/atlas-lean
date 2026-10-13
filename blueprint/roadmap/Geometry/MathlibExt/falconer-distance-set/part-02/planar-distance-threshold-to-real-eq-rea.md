@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: FalconerDistanceSet.planarDistanceThreshold_toReal_eq_real_sInf
+---
+
+# Planar Distance Threshold to Real eq real s Inf
+
+The finite ENNReal representation gives the exact defining infimum over real `[0,2]`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Geometry.FalconerDistanceSet](../../../../../sources/v2/MathlibExt.md)

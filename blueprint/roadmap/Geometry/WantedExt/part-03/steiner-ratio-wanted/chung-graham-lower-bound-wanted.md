@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Chung Graham Lower Bound wanted
+
+Source: Chung and Graham (1985), via the frozen catalogue's best
+unconditional published lower bound `0.824` before the conditional 2026
+computer-assisted rows. Known literature result; its proof is not
+supplied here.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Geometry.SteinerRatioWanted](../../../../../sources/v2/WantedExt.md)

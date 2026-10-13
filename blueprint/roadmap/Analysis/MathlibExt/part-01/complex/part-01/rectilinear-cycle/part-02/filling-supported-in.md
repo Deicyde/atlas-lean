@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: RectilinearCycle.FillingSupportedIn
+---
+
+# Filling Supported In
+
+A rectangle filling is supported in `G` when every rectangle occurring
+with nonzero coefficient is contained in `G`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Complex.RectilinearCycle](../../../../../../../../sources/v2/MathlibExt.md)

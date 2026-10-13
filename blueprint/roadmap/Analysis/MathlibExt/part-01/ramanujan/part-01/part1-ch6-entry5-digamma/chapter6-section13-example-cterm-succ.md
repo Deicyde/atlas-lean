@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.chapter6Section13ExampleCTerm_succ
+---
+
+# Chapter6 Section13 Example CTerm succ
+
+Peeling off the first factor: the `(j + 1)`-th term at `x` is `-1 / (x + 1)` times the
+`j`-th term at `x + 1`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch6Entry5Digamma](../../../../../../../sources/v2/MathlibExt.md)

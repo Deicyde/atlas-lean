@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Is Equilibrious Word reverse
+
+Reversal invariance: a finite binary word is equilibrious iff its reversal
+is. Elementary reusable consequence of the `List.count` definition.
+Provenance: concept `jis_sem_061cc96760fa3a6b576dda00`, source location
+`coons6.tex:543-575`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.Words.EquilibriousWord](../../../../../../sources/v2/MathlibExt.md)

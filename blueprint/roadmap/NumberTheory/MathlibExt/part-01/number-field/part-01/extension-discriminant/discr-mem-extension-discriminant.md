@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: discr_mem_extensionDiscriminant
+---
+
+# Discr mem extension Discriminant
+
+The discriminant of a tuple from imageOfB belongs to the extension discriminant.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.NumberField.ExtensionDiscriminant](../../../../../../../sources/v2/MathlibExt.md)

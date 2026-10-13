@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Klartag Lehec2025 variance bound
+
+Klartag--Lehec's affirmative resolution: a finite universal variance bound.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Probability.ThinShellBoundsWanted](../../../../sources/v2/WantedExt.md)
+- arXiv:2507.15495v1, Theorem 1.1. The constant is not optimized or made explicit.

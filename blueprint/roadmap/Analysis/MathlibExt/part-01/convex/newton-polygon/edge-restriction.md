@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: NewtonPolygon.edgeRestriction
+---
+
+# Edge Restriction
+
+Restriction of `f` to monomials whose exponents lie in `gamma`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Convex.NewtonPolygon](../../../../../../sources/v2/MathlibExt.md)

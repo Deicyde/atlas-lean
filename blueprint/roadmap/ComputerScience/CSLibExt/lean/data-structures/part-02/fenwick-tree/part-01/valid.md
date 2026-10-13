@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+---
+
+# Valid
+
+The tree represents `arr`: the stored array has one dummy entry plus one
+entry per underlying element, and every stored entry equals its interval sum.
+The underlying array itself is not stored at runtime; it appears only in this
+specification relation.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.FenwickTree](../../../../../../../../sources/v2/CSLibExt.md)

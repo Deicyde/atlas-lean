@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: BurnsidePaqb.conj_mem_conjClass
+---
+
+# Conj mem conj Class
+
+Conjugation preserves conjugacy classes.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqbReduction](../../../../../sources/v2/MathlibExt.md)

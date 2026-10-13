@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.SylvesterSchur.exists_large_prime_dvd_choose_of_mul_prod_erdos_div_three_layers_lt_four_pow
+---
+
+# Exists large prime dvd choose of mul prod erdos div three layers lt four pow
+
+The central-binomial lower bound turns the `N / 3` Erdős layer estimate into a
+large-prime criterion.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.ErdosLayers](../../../../../../sources/v2/MathlibExt.md)

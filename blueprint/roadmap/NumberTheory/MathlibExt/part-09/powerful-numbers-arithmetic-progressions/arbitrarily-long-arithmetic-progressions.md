@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.arbitrarily_long_arithmetic_progressions_of_powerful_numbers_general
+---
+
+# Arbitrarily long arithmetic progressions of powerful numbers general
+
+For every length `k`, there is a nonconstant arithmetic progression of `k` positive
+powerful numbers. `arbitrarily_long_arithmetic_progressions_of_powerful_numbers` is the
+source-shaped form.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.PowerfulNumbersArithmeticProgressions](../../../../../sources/v2/MathlibExt.md)

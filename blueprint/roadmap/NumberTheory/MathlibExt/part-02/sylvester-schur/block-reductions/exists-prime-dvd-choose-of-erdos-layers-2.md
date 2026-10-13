@@ -1,0 +1,19 @@
+---
+declaration: lemma
+origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.SylvesterSchur.Internal.exists_prime_dvd_choose_of_erdos_layers_four_pow_bound
+---
+
+# Exists prime dvd choose of erdos layers four pow bound
+
+Coarse power-of-four Erdős layer estimate in binomial form.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.BlockReductions](../../../../../../sources/v2/MathlibExt.md)

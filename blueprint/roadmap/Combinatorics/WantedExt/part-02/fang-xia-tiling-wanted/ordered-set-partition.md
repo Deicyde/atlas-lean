@@ -1,0 +1,19 @@
+---
+declaration: structure
+origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.FangXiaTilingWanted.Combinatorics.FangXiaTilingProblem.OrderedSetPartition
+---
+
+# Ordered Set Partition
+
+An ordered set partition of `Fin n` with block sizes given by
+`lam`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.FangXiaTilingWanted](../../../../../sources/v2/WantedExt.md)

@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.rabinKarpMatches_time_le
+---
+
+# Rabin Karp Matches time le
+
+Setup plus matching work is bounded by the candidate count and the number of hash hits.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.StringMatching.RabinKarp](../../../../../../sources/v2/CSLibExt.md)

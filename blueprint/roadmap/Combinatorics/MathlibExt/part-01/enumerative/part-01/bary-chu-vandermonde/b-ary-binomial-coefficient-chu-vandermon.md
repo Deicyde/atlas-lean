@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.bAryBinomialCoefficient_chu_vandermonde
+---
+
+# B Ary Binomial Coefficient chu vandermonde
+
+Chu-Vandermonde identity for `b`-ary binomial coefficients: when `m` and `n` add without
+carries in base `b`, `bAryBinomialCoefficient b (m + n) r hb` is the convolution of the `b`-ary
+binomial coefficients of `m` and `n`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.Enumerative.BAryChuVandermonde](../../../../../../../sources/v2/MathlibExt.md)

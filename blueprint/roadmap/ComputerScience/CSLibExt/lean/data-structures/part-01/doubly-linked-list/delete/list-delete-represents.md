@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# List Delete represents
+
+Deleting a represented member removes exactly that identity from the represented list.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.DoublyLinkedList.Delete](../../../../../../../../sources/v2/CSLibExt.md)

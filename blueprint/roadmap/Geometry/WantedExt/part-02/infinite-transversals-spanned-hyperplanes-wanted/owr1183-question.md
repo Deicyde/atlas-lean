@@ -1,0 +1,20 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.InfiniteTransversalsSpannedHyperplanesWanted.ITSP.OWR1183Question
+---
+
+# OWR1183 Question
+
+The question of [OWR-1183-011]: for every `d ≥ 1` and every `P`
+spanning the ambient space, with `H` the hyperplanes spanned by `P`,
+is there an injective `f : P → H` with `p ∈ f p` for every `p`?
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Geometry.InfiniteTransversalsSpannedHyperplanesWanted](../../../../../sources/v2/WantedExt.md)

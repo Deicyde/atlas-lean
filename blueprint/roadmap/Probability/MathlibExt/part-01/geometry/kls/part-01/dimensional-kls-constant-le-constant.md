@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Probability.KLS.dimensionalKlsConstant_le_constant
+---
+
+# Dimensional Kls Constant le constant
+
+Each positive dimension contributes its actual supremum to the global constant.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Probability.Geometry.KLS](../../../../../../../sources/v2/MathlibExt.md)

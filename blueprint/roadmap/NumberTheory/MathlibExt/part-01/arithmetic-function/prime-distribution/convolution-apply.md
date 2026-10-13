@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.PrimeDistribution.convolution_apply
+---
+
+# Convolution apply
+
+The coefficient is the finite sum over positive factors whose product is `n`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.ArithmeticFunction.PrimeDistribution](../../../../../../sources/v2/MathlibExt.md)

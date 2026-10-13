@@ -1,0 +1,19 @@
+---
+declaration: lemma
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.BreuschWanted.Internal.log_fact_lower
+---
+
+# Log fact lower
+
+Log-factorial lower bound from Stirling.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Lower](../../../../../../../../sources/v2/MathlibExt.md)

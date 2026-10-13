@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.Convex.Straszewicz.GateauxPt
+---
+
+# Gateaux Pt
+
+Gateaux points: both opposite directional derivatives sum nonpositively.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Convex.Straszewicz](../../../../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.cubicRecurrenceDiscriminant_dvd_mul
+---
+
+# Cubic Recurrence Discriminant dvd mul
+
+For the source cubic-recurrence discriminant sequence, each positive-index
+term divides every positive multiple-index term.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.Recurrences.CubicRecurrenceDiscriminant](../../../../../../../sources/v2/MathlibExt.md)
+- E. L. Roettger and H. C. Williams, "Some Arithmetic Properties of Certain Sequences", Journal of Integer Sequences 18 (2015), Article 15.6.2, Theorem `Dndivis`, line 269, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Roettger/roettger4.tex>.

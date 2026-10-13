@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.GroupTheory.AbelianRepresentationWanted._root_.FDRep.rho_eq_character_smul_of_simple
+---
+
+# Rho eq character smul of simple
+
+On a simple representation of a multiplicatively commutative monoid, every group action is
+scalar multiplication by its character value.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.GroupTheory.AbelianRepresentation](../../../../../sources/v2/MathlibExt.md)

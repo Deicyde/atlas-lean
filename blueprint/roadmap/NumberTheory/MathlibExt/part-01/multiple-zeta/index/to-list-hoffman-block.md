@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.MultipleZeta.toList_hoffmanBlock
+---
+
+# To List hoffman Block
+
+Reading a Hoffman block as a list recovers `k - 1` copies of `x` followed
+by one `y`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.MultipleZeta.Index](../../../../../../sources/v2/MathlibExt.md)

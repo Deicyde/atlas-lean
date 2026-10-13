@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: EuclideanLaplacian.neumannPolyaEigenvalueBenchmark_succ
+---
+
+# Neumann Polya Eigenvalue Benchmark succ
+
+The source's Neumann index `j + 2` has the same Weyl benchmark as the
+Dirichlet index `j + 1`; in zero-based API indices this is `j + 1` versus `j`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.InnerProductSpace.NeumannPolyaBenchmark](../../../../../../sources/v2/MathlibExt.md)

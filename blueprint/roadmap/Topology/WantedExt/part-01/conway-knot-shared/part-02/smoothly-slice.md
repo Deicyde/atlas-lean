@@ -1,0 +1,21 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.PLKnot.SmoothlySlice
+---
+
+# Smoothly slice (PL knot version)
+
+**Smoothly slice (PL knot version).** A PL knot is smoothly slice if
+some smooth knot of the same knot type is smoothly slice. This is
+Piccirillo's theorem about the Conway knot in the form most natural for
+a polyline witness.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Topology.ConwayKnotShared](../../../../../../sources/v2/WantedExt.md)

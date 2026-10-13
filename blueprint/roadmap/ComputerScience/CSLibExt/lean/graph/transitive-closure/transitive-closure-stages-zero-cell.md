@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TransitiveClosure.transitiveClosureStages_zero_cell
+---
+
+# Transitive Closure Stages zero cell
+
+Before any pivot, a cell is the diagonal test or the corresponding input edge.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.Graph.TransitiveClosure](../../../../../../sources/v2/CSLibExt.md)

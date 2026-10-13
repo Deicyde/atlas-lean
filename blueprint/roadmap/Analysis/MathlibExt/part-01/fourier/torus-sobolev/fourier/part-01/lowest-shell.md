@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: TorusSobolev.lowestShell
+---
+
+# Lowest Shell
+
+The four distinct lowest nonzero modes of the source's lattice.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Fourier.TorusSobolev.Fourier](../../../../../../../../sources/v2/MathlibExt.md)

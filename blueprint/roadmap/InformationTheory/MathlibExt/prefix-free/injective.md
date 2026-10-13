@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.InformationTheory.IsPrefixFree.injective
+---
+
+# Injective
+
+A prefix-free code is injective: equal codewords are mutually prefix, hence
+come from equal symbols.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.InformationTheory.PrefixFree](../../../../sources/v2/MathlibExt.md)

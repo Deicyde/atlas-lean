@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: SimpleGraph.dichromaticNumber
+---
+
+# Dichromatic Number
+
+The dichromatic number of `G`: the least `k` such that `G` is
+dichromatically `k`-colourable (`⊤` if there is none).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Dichromatic](../../../../../../../sources/v2/MathlibExt.md)

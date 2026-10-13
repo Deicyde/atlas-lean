@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.bhhLimitValues
+---
+
+# Bhh Limit Values
+
+The candidate BHH limit values for the explicit common law `law`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Probability.BeardwoodHaltonHammersleyConstantWanted](../../../../../sources/v2/WantedExt.md)

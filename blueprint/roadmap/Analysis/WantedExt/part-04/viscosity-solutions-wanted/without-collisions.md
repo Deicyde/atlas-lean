@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.ViscositySolutionsWanted.ViscositySolutions.WithoutCollisions
+---
+
+# Without Collisions
+
+We say that a configuration `x : Eᴺ` is without collisions if `rᵢⱼ ≠ 0` for each `i ≠ j`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Analysis.ViscositySolutionsWanted](../../../../../sources/v2/WantedExt.md)

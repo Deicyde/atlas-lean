@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: IsogenyVolcano.surface_degreeOn
+---
+
+# Surface degree On
+
+Surface regularity via surface predicates.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.IsogenyVolcano](../../../../../../sources/v2/MathlibExt.md)

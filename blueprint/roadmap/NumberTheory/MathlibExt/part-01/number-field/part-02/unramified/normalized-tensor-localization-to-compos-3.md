@@ -1,0 +1,24 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: NumberField.IsUnramifiedIn.normalizedTensorLocalizationToCompositumAtPrime_mk'_spec
+---
+
+# Normalized Tensor Localization To Compositum At Prime mk' spec
+
+Characteristic equation for the canonical localization map on a
+localization representative: the value at `IsLocalization.mk' _ x y` is
+characterized by cross multiplication against the base map. This is the stable
+`IsLocalization.lift_mk'`-style form; it avoids exposing the
+implementation-only unit proof inside
+`normalizedTensorLocalizationToCompositumAtPrime`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.NumberField.Unramified](../../../../../../../sources/v2/MathlibExt.md)

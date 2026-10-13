@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.ModularExponentiation.modularExponentiation_time_even
+---
+
+# Modular Exponentiation time even
+
+The even source branch adds exactly one multiplication to its child cost.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.NumberTheory.ModularExponentiation](../../../../../../sources/v2/CSLibExt.md)

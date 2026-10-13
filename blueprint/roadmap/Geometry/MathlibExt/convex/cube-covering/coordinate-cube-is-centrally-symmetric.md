@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: ConvexCovering.coordinateCube_isCentrallySymmetric
+---
+
+# Coordinate Cube is Centrally Symmetric
+
+Reflection about the origin preserves the cube.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Geometry.Convex.CubeCovering](../../../../../sources/v2/MathlibExt.md)

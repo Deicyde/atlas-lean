@@ -1,0 +1,20 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.RandomMultiplicativeFunction.rademacherFunction
+---
+
+# Rademacher Function
+
+The Rademacher random multiplicative function associated with a realization of the prime
+signs. It is the pointwise product of the square of the Möbius function and the product of the
+signs over the prime divisors.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Probability.NumberTheory.RandomMultiplicativeFunction](../../../../../../sources/v2/MathlibExt.md)

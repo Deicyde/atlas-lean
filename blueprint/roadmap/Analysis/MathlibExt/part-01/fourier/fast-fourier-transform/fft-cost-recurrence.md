@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Fft Cost recurrence
+
+The `n log n` cost satisfies the radix-2 FFT recurrence.
+
+Proof: Apply `Nat.log_mul_base` to `n * 2`, commute the factors, and expand
+multiplication.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Fourier.FastFourierTransform](../../../../../../sources/v2/MathlibExt.md)
+- `undergrad.yaml`, section "Fourier transform", entry "fast Fourier transform"; J. W. Cooley and J. W. Tukey, Math. Comp. 19 (1965) (`n log n` operation count).

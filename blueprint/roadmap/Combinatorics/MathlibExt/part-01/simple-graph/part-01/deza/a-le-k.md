@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.IsDezaWith.a_le_k
+---
+
+# A le k
+
+The chained bound `a ≤ k`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Deza](../../../../../../../sources/v2/MathlibExt.md)

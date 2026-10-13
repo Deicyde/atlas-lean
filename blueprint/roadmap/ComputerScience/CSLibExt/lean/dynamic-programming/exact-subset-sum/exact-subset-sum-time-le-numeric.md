@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Exact Subset Sum time le numeric
+
+Numeric upper bound on the same run, using both target and total-value cardinalities.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.ExactSubsetSum](../../../../../../sources/v2/CSLibExt.md)

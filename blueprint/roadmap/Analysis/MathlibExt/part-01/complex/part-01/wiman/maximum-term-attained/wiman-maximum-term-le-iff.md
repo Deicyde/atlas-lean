@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Complex.wimanMaximumTerm_le_iff
+---
+
+# Wiman Maximum Term le iff
+
+The maximum term is below a bound exactly when every Taylor term is.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Complex.Wiman.MaximumTermAttained](../../../../../../../../sources/v2/MathlibExt.md)

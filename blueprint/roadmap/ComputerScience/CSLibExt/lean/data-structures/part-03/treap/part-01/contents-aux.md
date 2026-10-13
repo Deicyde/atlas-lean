@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+---
+
+# Contents Aux
+
+Append the inorder key-value traversal of a tree to a suffix in linear
+time: the left traversal is accumulated onto the node entry and the already
+traversed right suffix, so no ancestor recopies a completed traversal.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.Treap](../../../../../../../../sources/v2/CSLibExt.md)

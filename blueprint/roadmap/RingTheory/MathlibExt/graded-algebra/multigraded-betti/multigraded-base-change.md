@@ -1,0 +1,19 @@
+---
+declaration: structure
+origin: cited
+---
+
+# Multigraded Base Change
+
+Certified base-change data over the canonical span family: one shared
+direct-sum decomposition and successor-differential preservation, plus for
+every multidegree the component complex with inclusion into the actual
+base-changed complex, homology existence, and coefficientwise finiteness.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.GradedAlgebra.MultigradedBetti](../../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.RandomMultiplicativeFunction.rademacherFunction_eq_prod_of_squarefree
+---
+
+# Rademacher Function eq prod of squarefree
+
+On a squarefree positive integer, the function is the product of its prime signs.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Probability.NumberTheory.RandomMultiplicativeFunction](../../../../../../sources/v2/MathlibExt.md)
