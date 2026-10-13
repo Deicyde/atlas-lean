@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: corollary_15_12
+---
+
+# Corollary 15.12
+
+Let $X$ and $Y$ be affine varieties defined over $k$. If $\varphi \colon X \rightarrow Y$ is a dominant rational map defined over $k$ then $\varphi^* \colon \bar{k}(Y) \rightarrow \bar{k}(X)$ restricts to a morphism $k(Y) \rightarrow k(X)$.
+
+## Depends on
+
+- [Definition 15.4](133-definition-15-4.md)
+- [Definition 13.1](../section-13/section-13-1/100-definition-13-1.md)
+- [Definition 13.2](../section-13/section-13-1/101-definition-13-2.md)
+
+## Sources
+
+- [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 15.1](../../../../../sources/v1/ArithmeticGeometry.md)

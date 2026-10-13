@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: ConvexGeometry.polarBody_polarBody_eq
+---
+
+# Theorem 4 [1]
+
+Let $K$ be a convex body. Then $K^{**} = K$.
+
+## Depends on
+
+- [Definition 1 \[4\]](094-definition-1.md)
+
+## Sources
+
+- [MIT 18.409 An Algorithmist's Toolkit (Fall 2009), Lecture 11, Section 3.2](../../../../../sources/v1/AnAlgorithmistsToolkit.md)

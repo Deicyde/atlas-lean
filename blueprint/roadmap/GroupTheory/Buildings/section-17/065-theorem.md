@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: maximally_strong_transitivity_theorem
+---
+
+# Theorem (Section 17.7)
+
+With the hypothesis that $B$ is compact and open in $G$, the group $G^o$ of type-preserving maps in $G$ acts strongly transitively on pairs $C' \subset A'$ for chambers $C'$ and apartments $A'$ in the maximal apartment system.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [Paul Garrett, Buildings and Classical Groups, Section 17.7](../../../../sources/v1/Buildings.md)

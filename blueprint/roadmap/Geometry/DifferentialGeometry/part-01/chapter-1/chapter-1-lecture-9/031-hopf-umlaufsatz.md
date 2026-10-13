@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: ClosedCurves.totalCurvature_simple_closed_eq_pm_two_pi
+---
+
+# Theorem 9.1 (Hopf Umlaufsatz)
+
+Let $c$ be a simple closed curve. Then $\kappa^{\text{tot}}(c) = \pm 2\pi$.
+
+## Depends on
+
+- [Definition 8.3](../chapter-1-lecture-8/027-definition-8-3.md)
+- [Definition 8.1](../chapter-1-lecture-8/025-definition-8-1.md)
+
+## Sources
+
+- [MIT 18.950 Differential Geometry (Fall 2008), Chapter 1, Lecture 9](../../../../../../sources/v1/DifferentialGeometry.md)

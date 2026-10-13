@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: ClosedCurves.IsSimpleClosedCurve
+---
+
+# Definition 8.1
+
+A closed curve of period $T$ is a regular curve $c \colon \mathbb{R} \rightarrow \mathbb{R}^{2}$ such that $c(t+T) = c(t)$ for all $t$. We say that $c$ is simple if it has no self-intersections. This means that for all $0 \leq s < t < T$, we have $c(s) \neq c(t)$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.950 Differential Geometry (Fall 2008), Chapter 1, Lecture 8](../../../../../../sources/v1/DifferentialGeometry.md)

@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: VectorCalculus.divergence
+---
+
+# Definition 7.2.2 (Divergence)
+
+$\nabla \cdot \mathbf{F}$, the divergence of $\mathbf{F}$, is the scalar-valued function on $\mathbb{R}^{n}$ defined by $\nabla \cdot \mathbf{F} \coloneqq \sum_{i=1}^{n} \partial_{i} F^{i}$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.152 Introduction to Partial Differential Equations (Fall 2011), Class Meeting #1, Section 7.2](../../../../../sources/v1/IntroductionToPartialDifferentialEquations.md)

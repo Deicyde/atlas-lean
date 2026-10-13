@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: RationalMap.IsDominant
+---
+
+# Definition 15.7
+
+A rational map $\varphi \colon X \rightarrow Y$ is dominant if the closure of $\varphi(\operatorname{dom}(\varphi))$ equals $Y$.
+
+## Depends on
+
+- [Definition 14.3](../section-14/123-definition-14-3.md)
+- [Definition 12.7](../section-12/087-definition-12-7.md)
+
+## Sources
+
+- [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 15.1](../../../../../sources/v1/ArithmeticGeometry.md)

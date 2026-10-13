@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: FieldExtensions.tower_law
+---
+
+# Proposition (\ref{tower})
+
+Suppose that we have a tower of field extensions $K \supset E \supset F$, where $K/E$ and $E/F$ are finite. Then $K/F$ is finite, and $[K : F] = [K : E] \cdot [E : F]$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Lecture 24, Subsection: Towers of Extensions](../../../../../sources/v1/AlgebraNotes.md)

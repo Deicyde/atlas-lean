@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: acs_submanifold_symplectic
+---
+
+# Proposition 4 [1]
+
+If $X$ is an almost-complex submanifold in compatible $(M, \omega, J)$, then $X$ is symplectic (i.e.\ $\omega|_{X}$ is nondegenerate).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.966 Geometry of Manifolds (Spring 2007), Symplectic Geometry, Lecture 8, Section 1 (Almost-complex Structures)](../../../../../sources/v1/GeometryOfManifolds.md)

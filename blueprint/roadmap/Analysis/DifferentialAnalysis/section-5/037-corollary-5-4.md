@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: HilbertSpace.l2_dual_eq_integral
+---
+
+# Corollary 5.4
+
+For any positive measure $\mu$, any continuous linear functional $L \colon L^{2}(X, \mu) \to \mathbb{C}$ is of the form $Lf = \int_{X} f\bar{g}\, d\mu$, for some $g \in L^{2}(X, \mu)$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.155 Differential Analysis (Fall 2004), Section 5](../../../../sources/v1/DifferentialAnalysis.md)

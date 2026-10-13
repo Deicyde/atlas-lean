@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: kahler_laplacian_identity
+---
+
+# Theorem 7
+
+$\Delta = 2\square = 2\bar{\square}$.
+
+## Depends on
+
+- [Definition 7](../lecture-2/011-definition-7.md)
+
+## Sources
+
+- [MIT 18.966 Geometry of Manifolds (Spring 2007), Lecture 16](../../../../sources/v1/GeometryOfManifolds.md)

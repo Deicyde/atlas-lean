@@ -1,0 +1,18 @@
+---
+declaration: structure
+origin: cited
+statement: formalized
+lean: SWModuliSpace
+---
+
+# Definition 2 [5]
+
+The moduli space of solutions $\mathcal{M}(S, g, \mu)$ is the set of solutions to the Seiberg-Witten equations modulo $\mathcal{G}$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.966 Geometry of Manifolds (Spring 2007), Lecture 25, Section 2 (Seiberg-Witten Equations)](../../../../sources/v1/GeometryOfManifolds.md)

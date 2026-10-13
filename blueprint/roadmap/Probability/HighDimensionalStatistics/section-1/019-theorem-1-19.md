@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: theorem_1_19_high_prob
+---
+
+# Theorem 1.19
+
+Let $X \in \mathbb{R}^d$ be a sub-Gaussian random vector with variance proxy $\sigma^2$. Then $$\mathbb{E}\!\left[\max_{\theta \in \mathcal{B}_2} \theta^\top X\right] = \mathbb{E}\!\left[\max_{\theta \in \mathcal{B}_2} |\theta^\top X|\right] \leq 4\sigma\sqrt{d}.$$ Moreover, for any $\delta > 0$, with probability $1 - \delta$, it holds $$\max_{\theta \in \mathcal{B}_2} \theta^\top X = \max_{\theta \in \mathcal{B}_2} |\theta^\top X| \leq 4\sigma \sqrt{d} + 2\sigma \sqrt{2\log(1/\delta)}.$$
+
+## Depends on
+
+- [Definition 1.2](../chapter-1/002-definition-1-2.md)
+
+## Sources
+
+- [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Section 1.4](../../../../sources/v1/HighDimensionalStatistics.md)

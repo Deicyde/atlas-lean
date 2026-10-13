@@ -1,0 +1,18 @@
+---
+declaration: structure
+origin: cited
+statement: formalized
+lean: SymplecticManifold
+---
+
+# Definition 7
+
+A symplectic form on $M$ is a 2-form $\omega$ (i.e.\ a skew-symmetric pairing $\omega_{p} \colon T_{p}M \times T_{p}M \rightarrow \mathbb{R}$ for all $p \in M$) which is nondegenerate (i.e.\ $\frac{1}{n!} \omega^{n}$ is a volume form) and closed (i.e.\ $d\omega = 0$).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.966 Geometry of Manifolds (Spring 2007), Lecture 2, Section 3 (Symplectic Manifolds)](../../../../sources/v1/GeometryOfManifolds.md)

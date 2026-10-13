@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: regular_rational_map_is_morphism
+---
+
+# Theorem 15.5
+
+A rational map of affine varieties is a morphism if and only if it is regular.
+
+## Depends on
+
+- [Definition 14.1](../section-14/122-definition-14-1.md)
+- [Definition 12.7](../section-12/087-definition-12-7.md)
+- [Definition 13.3](../section-13/section-13-1/102-definition-13-3.md)
+
+## Sources
+
+- [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 15.1](../../../../../sources/v1/ArithmeticGeometry.md)

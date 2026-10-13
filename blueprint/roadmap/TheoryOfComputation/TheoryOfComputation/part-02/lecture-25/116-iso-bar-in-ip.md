@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: ISO_bar_in_IP
+---
+
+# Theorem (ISO-bar in IP)
+
+$\overline{\mathrm{ISO}} \in \mathsf{IP}$.
+
+## Depends on
+
+- [Definition (IP)](111-ip.md)
+
+## Sources
+
+- [MIT 18.404J Theory of Computation (Fall 2020), Lecture 25, ISO-bar ∈ IP section](../../../../../sources/v1/TheoryOfComputation.md)

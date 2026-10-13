@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: theorem_14_14
+---
+
+# Theorem 14.14 (Cauchy's theorem)
+
+Let $f$ be a function that is holomorphic on an open set containing a closed
+ curve $\gamma$ and its interior. Then $$\int_{\gamma} f(z) dz=0$$
+
+## Depends on
+
+- [Definition 14.11](182-definition-14-11.md)
+
+## Sources
+
+- [MIT 18.783 Elliptic Curves (Spring 2021), Section 14.2](../../../../../../sources/v1/EllipticCurves.md)

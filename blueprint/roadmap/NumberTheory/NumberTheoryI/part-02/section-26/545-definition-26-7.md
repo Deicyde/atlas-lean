@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Ideles.OneIdeleGroup
+---
+
+# Definition 26.7
+
+Let $K$ be a global field. The group of 1-ideles is the topological group $\mathbb{I}_{K}^{1}\coloneqq \ker\|\cdot\|=\{a \in \mathbb{I}_{K}:\|a\|=1\}$ which contains $K^{\times}$, by the product formula (Theorem 13.21).
+
+## Depends on
+
+- [Definition 26.2](542-definition-26-2.md)
+
+## Sources
+
+- [MIT 18.785 Number Theory I (Fall 2021), Section 26](../../../../../sources/v1/NumberTheoryI.md)

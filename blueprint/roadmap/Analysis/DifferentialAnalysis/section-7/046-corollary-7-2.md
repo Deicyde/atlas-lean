@@ -1,0 +1,18 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: corollary_7_2_japaneseBracket_multiindex
+---
+
+# Corollary 7.2
+
+For any $k \in \mathbb{N}$ the norms $\|\langle x\rangle^{k} \varphi\|_{\mathcal{C}^{k}}$ and $\sum_{|\alpha| \leq k,\, |\beta| \leq k} \|x^{\alpha} D_{x}^{\beta} \varphi\|_{\infty}$ are equivalent.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.155 Differential Analysis (Fall 2004), Section 7](../../../../sources/v1/DifferentialAnalysis.md)

@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: ClosedCurves.rotationNumber_eq_degree
+---
+
+# Proposition 8.5
+
+$\kappa^{\text{tot}}(c) / 2\pi$ is the degree of $f(t) = c^{\prime}(t) / \left\|c^{\prime}(t)\right\|$. In particular, it is always an integer. We call it the rotation number of the curve.
+
+## Depends on
+
+- [Definition 7.2](../chapter-1-lecture-7/022-definition-7-2.md)
+- [Definition 8.3](027-definition-8-3.md)
+
+## Sources
+
+- [MIT 18.950 Differential Geometry (Fall 2008), Chapter 1, Lecture 8](../../../../../../sources/v1/DifferentialGeometry.md)

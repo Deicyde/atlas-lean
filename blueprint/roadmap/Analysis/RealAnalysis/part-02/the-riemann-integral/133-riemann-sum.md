@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Integration.riemannSum
+---
+
+# Definition (Riemann sum) [2]
+
+The Riemann sum of $f$ corresponding to $(\underline{x},\underline{\xi})$ is the number $S_f(\underline{x}, \underline{\xi}) \coloneqq \sum_{k=1}^n f(\xi_k) (x_k-x_{k-1}).$
+
+## Depends on
+
+- [Definition (Tag) \[1\]](066-tag.md)
+
+## Sources
+
+- [MIT 18.100A Real Analysis (Fall 2020), The Riemann Integral](../../../../../sources/v1/RealAnalysis.md)

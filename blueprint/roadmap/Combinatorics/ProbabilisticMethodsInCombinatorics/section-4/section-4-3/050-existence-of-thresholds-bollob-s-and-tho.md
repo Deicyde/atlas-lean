@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MonotoneProperty.existence_of_threshold
+---
+
+# Theorem 4.3.6 (Existence of thresholds: Bollobás and Thomason 1987)
+
+Every sequence of nontrivial monotone properties has a threshold.
+
+## Depends on
+
+- [Definition 4.3.1 (Threshold)](048-threshold.md)
+
+## Sources
+
+- [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Section 4.3](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

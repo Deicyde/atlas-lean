@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: reverse_triangle_three
+---
+
+# Theorem (Theorem II)
+
+For all $a,b,c\in \mathbb{R}$, $|a+b+c|\geq |a|-|b|-|c|.$
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.100A Real Analysis (Fall 2020), Section on Derivative (Weierstrass nowhere differentiable function)](../../../../../sources/v1/RealAnalysis.md)

@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: EllipticCurve.NeronTateHeight
+---
+
+# Definition 25.20
+
+Let $E$ be an elliptic curve over a number field $k$. The canonical height $\hat{h}: E(\bar{k}) \rightarrow \mathbb{R}$ is the function $\hat{h}=\hat{h}_{\phi} \circ \pi$, where $\hat{h}_{\phi}$ is the function given by Theorem 25.19, with $\phi: \mathbb{P}^{1} \rightarrow \mathbb{P}^{1}$ as above and $h$ the absolute height on $\mathbb{P}^{1}$. It satisfies $\hat{h}(2P)=4\hat{h}(P)$ for all $P \in E(\mathbb{Q})$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 25.6](../../../../../sources/v1/ArithmeticGeometry.md)

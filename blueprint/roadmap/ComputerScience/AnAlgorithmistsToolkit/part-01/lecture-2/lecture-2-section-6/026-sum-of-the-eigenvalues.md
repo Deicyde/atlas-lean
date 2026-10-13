@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: EigenvalueBounds.sum_eigenvalues₀_eq_sum_degrees_le_maxDegree_mul_card
+---
+
+# Lemma 21 (Sum of the eigenvalues)
+
+Given an $n$-vertex graph $G$ with degrees $d_i$, where $d_{\max} = \max_i d_i$, and Laplacian $L_G$ with eigenvalues $\lambda_i$, then $\sum_i \lambda_i = \sum_i d_i \leq d_{\max} \cdot n$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.409 An Algorithmist's Toolkit (Fall 2009), Lecture 2, Section 6](../../../../../../sources/v1/AnAlgorithmistsToolkit.md)

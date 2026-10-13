@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: BourgainProjection.avg_projection_covering_bound
+---
+
+# Corollary (Section: Homogeneous Dynamics II)
+
+$|X_{j+1}|_\delta \gtrsim \delta^{-1} |X_j|^{1/2}$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.156 Projection Theory (Spring 2025), Section: Homogeneous Dynamics II](../../../../../sources/v1/ProjectionTheory.md)

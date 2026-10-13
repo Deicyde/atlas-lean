@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Factorization.gauss_lemma
+---
+
+# Lemma (Gauss's Lemma)
+
+If $P$ and $Q$ are primitive, then $PQ$ is as well.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Lecture 13: More Factorization, Section: Factoring Integer Polynomials](../../../../../sources/v1/AlgebraNotes.md)

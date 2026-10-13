@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: GodelIncompleteness.godel_first_incompleteness
+---
+
+# Theorem (Gödel's First Incompleteness Theorem)
+
+In any reasonable formal system, some true statements are not provable.
+
+## Depends on
+
+- [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+- [Definition: Turing-recognizable](../lecture-5/023-definition-turing-recognizable.md)
+
+## Sources
+
+- [MIT 18.404J Theory of Computation (Fall 2020), Lecture 11, Intro to Mathematical Logic section](../../../../../sources/v1/TheoryOfComputation.md)

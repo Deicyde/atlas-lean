@@ -1,0 +1,18 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: sq_martingale_convergence_on_predictable_quadvar_finite
+---
+
+# Theorem (Square integrable martingale convergence)
+
+Suppose $X_n$ is a martingale with $E[X_n^2] < \infty$ for all $n$. Then $\lim_{n \to \infty} X_n$ exists and is finite a.s. on $\{A_\infty < \infty\}$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.175 Theory of Probability (Spring 2014), Lecture 28](../../../../../sources/v1/TheoryOfProbability.md)

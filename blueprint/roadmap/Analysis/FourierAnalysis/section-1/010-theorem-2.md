@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: TruncatedFourierInversion.truncated_fourier_inversion_L2
+---
+
+# Theorem 2 [1]
+
+Suppose that $f \in L^2(\mathbb{R})$. Then $\hat{f}(\xi) \mathbf{1}_{[-N,N]}(\xi)$ is in $L^2(\mathbb{R}) \cap L^1(\mathbb{R})$ and $s_N(x) = \frac{1}{2\pi} \int_{-N}^{N} \hat{f}(\xi) e^{ix\xi} \, d\xi$ satisfies $\lim_{N \to \infty} \|f - s_N\|_{L^2} = 0$.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.103 Fourier Analysis (Fall 2013), Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$](../../../../sources/v1/FourierAnalysis.md)

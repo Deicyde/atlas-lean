@@ -1,0 +1,18 @@
+---
+declaration: abbrev
+origin: cited
+statement: formalized
+lean: WeierstrassCurve.IsShortWeierstrass
+---
+
+# Definition 23.12
+
+A Weierstrass equation with $a_{1}=a_{2}=a_{3}=0$ is a short Weierstrass equation.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 23](../../../../../sources/v1/ArithmeticGeometry.md)
