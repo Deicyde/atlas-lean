@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: CM14.spacetime_divergence_theorem
 ---
 

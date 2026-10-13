@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: ProjectionTheory.double_counting_real_hausdorff_dichotomy
 ---
 

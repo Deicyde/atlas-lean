@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: MultiplicativeWeights.randomized_mw_expected_regret_bound
 ---
 

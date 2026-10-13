@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: Hardness.dinur_safra_vertex_cover
 ---
 

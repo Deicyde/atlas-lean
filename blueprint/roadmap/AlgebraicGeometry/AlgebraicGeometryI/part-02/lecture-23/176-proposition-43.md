@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: Lec23.prop43_iso_when_adjusted
 ---
 

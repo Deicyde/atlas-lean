@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: ConvolutionDensity.l2_continuous_in_mean
 ---
 

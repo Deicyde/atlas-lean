@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: DifferentialOperators.constCoeffDiffOp_has_tempered_fundamental_solution
 ---
 

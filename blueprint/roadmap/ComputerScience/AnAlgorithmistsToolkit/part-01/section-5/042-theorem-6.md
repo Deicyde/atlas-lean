@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: RandomWalks.lazy_rw_pointwise_convergence
 ---
 

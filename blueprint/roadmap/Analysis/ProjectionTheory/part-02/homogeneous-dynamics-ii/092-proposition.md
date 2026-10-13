@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: BourgainProjection.projection_averaging_estimate
 ---
 

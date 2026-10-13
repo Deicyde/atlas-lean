@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: HeckeAnalyticContinuation.hecke_analytic_continuation_and_functional_equation
 ---
 

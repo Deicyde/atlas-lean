@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: DirichletPrimesAP.dirichlet_primes_in_ap
 ---
 

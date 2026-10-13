@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: ABCSumProduct.abc_sum_product_theorem
 ---
 

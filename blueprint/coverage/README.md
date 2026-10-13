@@ -13,7 +13,7 @@ libraries and the standalone `Atlas/` developments are not decomposed yet.
 | v1 / AlgebraNotes | DECOMPOSED | [176 source statements](../roadmap/Algebra/AlgebraNotes/README.md), 151 with a formalized statement. |
 | v1 / AlgebraicCombinatorics | DECOMPOSED | [39 source statements](../roadmap/Combinatorics/AlgebraicCombinatorics/README.md), 37 with a formalized statement. |
 | v1 / AlgebraicGeometryI | DECOMPOSED | [186 source statements](../roadmap/AlgebraicGeometry/AlgebraicGeometryI/README.md), 112 with a formalized statement. |
-| v1 / AlgebraicTopologyI | DECOMPOSED | [171 source statements](../roadmap/AlgebraicTopology/AlgebraicTopologyI/README.md), 106 with a formalized statement. |
+| v1 / AlgebraicTopologyI | DECOMPOSED | [171 source statements](../roadmap/AlgebraicTopology/AlgebraicTopologyI/README.md), 104 with a formalized statement. |
 | v1 / AnAlgorithmistsToolkit | DECOMPOSED | [158 source statements](../roadmap/ComputerScience/AnAlgorithmistsToolkit/README.md), 130 with a formalized statement. |
 | v1 / ArithmeticGeometry | DECOMPOSED | [335 source statements](../roadmap/ArithmeticGeometry/ArithmeticGeometry/README.md), 247 with a formalized statement. |
 | v1 / BooleanFunctions | DECOMPOSED | [108 source statements](../roadmap/Combinatorics/BooleanFunctions/README.md), 43 with a formalized statement. |

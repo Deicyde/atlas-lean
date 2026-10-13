@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: SimpleGroups.lie_algebra_proposition
 ---
 

@@ -2,7 +2,6 @@
 declaration: theorem
 origin: cited
 statement: formalized
-proof: formalized
 lean: GaussMap.smooth_local_diffeo_compact_to_sphere_bijective
 ---
 
