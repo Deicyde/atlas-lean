@@ -1,0 +1,89 @@
+# Benchmarks `autoform render` on this vault for each autoform commit listed in
+# .github/bench/refs.txt ("<label> <sha>" per line): wall time, peak memory, a
+# cProfile, and a SHA-256 manifest of every output file, so candidates can be
+# checked for byte-identical output against a baseline on the same runner.
+
+name: render bench
+
+on:
+  push:
+    branches: ["bench/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: render-bench-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  bench:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
+
+      - name: Render once per autoform commit
+        run: |
+          set -euo pipefail
+          mkdir -p out
+          while read -r label ref; do
+            [ -n "$label" ] || continue
+            echo "::group::$label $ref"
+            uv venv --quiet "/tmp/venv-$label"
+            uv pip install --quiet --python "/tmp/venv-$label" "git+https://github.com/facebookresearch/autoform-bot.git@$ref"
+            rm -rf site-src
+            /usr/bin/time -v -o "out/time-$label.txt" \
+              "/tmp/venv-$label/bin/python" -m cProfile -o "out/prof-$label.prof" -m autoform_cli \
+              render blueprint --output site-src --lean-root . --require-declarations \
+              --repository-url https://github.com/Deicyde/atlas-lean --ref "$GITHUB_SHA" \
+              | tail -2
+            (cd site-src && find . -type f -print0 | sort -z | xargs -0 sha256sum) > "out/manifest-$label.txt"
+            echo "$label: $(wc -l < "out/manifest-$label.txt") files, $(du -sh site-src | cut -f1)"
+            grep -E 'Elapsed|Maximum resident' "out/time-$label.txt"
+            "/tmp/venv-$label/bin/python" - "$label" <<'EOF'
+          import pstats, sys
+          label = sys.argv[1]
+          with open(f"out/top-{label}.txt", "w") as out:
+              stats = pstats.Stats(f"out/prof-{label}.prof", stream=out)
+              stats.sort_stats("cumulative").print_stats(60)
+              stats.sort_stats("tottime").print_stats(40)
+          EOF
+            head -c 6000 "out/top-$label.txt" | sed -n '1,90p'
+            mv site-src "out/site-src-$label"
+            echo "::endgroup::"
+          done < .github/bench/refs.txt
+
+      - name: Compare outputs with the first listed commit
+        run: |
+          set -euo pipefail
+          base=$(awk 'NF {print $1; exit}' .github/bench/refs.txt)
+          for manifest in out/manifest-*.txt; do
+            label=${manifest#out/manifest-}; label=${label%.txt}
+            [ "$label" = "$base" ] && continue
+            if cmp -s "out/manifest-$base.txt" "$manifest"; then
+              echo "$label: byte-identical to $base"
+            else
+              echo "$label: DIFFERS from $base"
+              diff "out/manifest-$base.txt" "$manifest" | head -40 || true
+            fi
+          done
+          for t in out/time-*.txt; do echo "$t: $(grep -E 'Elapsed' "$t")"; done
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: render-bench
+          path: |
+            out/*.prof
+            out/top-*.txt
+            out/time-*.txt
+            out/manifest-*.txt
+          retention-days: 14
