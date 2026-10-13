@@ -1,0 +1,104 @@
+# Builds the ATLAS v2 libraries and dumps, for every declaration, the v2
+# declarations its statement and proof use. The wiki generator collapses the
+# dump onto articles (scripts/extract_v2_lean_dependencies.py).
+
+name: v2 dependencies
+
+on:
+  push:
+    branches: ["wiki/**"]
+    paths:
+      - ".github/workflows/v2-dependencies.yml"
+      - "scripts/dump_v2_dependencies.lean"
+      - "MathlibExt/**"
+      - "CSLibExt/**"
+      - "WantedExt/**"
+      - "lake-manifest.json"
+      - "lean-toolchain"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: v2-dependencies-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  dump:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Free disk space for Lean caches
+        run: |
+          set -euo pipefail
+          sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc
+          df -h /
+
+      - name: Add swap for cold Lean builds
+        run: |
+          set -euo pipefail
+          sudo fallocate -l 16G /mnt/lean-swap
+          sudo chmod 600 /mnt/lean-swap
+          sudo mkswap /mnt/lean-swap
+          sudo swapon /mnt/lean-swap
+          free -h
+
+      - name: Install elan v4.2.4
+        run: |
+          set -euo pipefail
+          installer_dir="${RUNNER_TEMP}/elan-installer"
+          archive="${installer_dir}/elan-x86_64-unknown-linux-gnu.tar.gz"
+          mkdir -p "$installer_dir"
+          curl --fail --silent --show-error --location \
+            --proto '=https' --tlsv1.2 \
+            https://github.com/leanprover/elan/releases/download/v4.2.4/elan-x86_64-unknown-linux-gnu.tar.gz \
+            --output "$archive"
+          echo "42b94d4244e8353142c456ec0e4ca6528fd898a6c604d4059f494e706e431f63  $archive" \
+            | sha256sum --check --strict
+          tar xzf "$archive" -C "$installer_dir"
+          "$installer_dir/elan-init" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Fetch Mathlib cache
+        run: lake exe cache get
+
+      - name: Restore local build
+        id: build-cache
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .lake/build
+          key: v2-deps-build-${{ runner.os }}-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-${{ github.sha }}
+          restore-keys: |
+            v2-deps-build-${{ runner.os }}-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-
+
+      - name: Build the v2 libraries
+        run: lake build MathlibExt CSLibExt WantedExt
+
+      # Saved before the dump so a failing dump does not cost another cold build.
+      - name: Save local build
+        if: steps.build-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .lake/build
+          key: v2-deps-build-${{ runner.os }}-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-${{ github.sha }}
+
+      - name: Dump declaration dependencies
+        run: |
+          set -euo pipefail
+          git ls-files 'MathlibExt/*.lean' 'CSLibExt/*.lean' 'WantedExt/*.lean' \
+            | sed -e 's/\.lean$//' -e 's#/#.#g' > v2-modules.txt
+          wc -l < v2-modules.txt
+          lake env lean --run scripts/dump_v2_dependencies.lean v2-modules.txt > v2-dependencies.jsonl
+          wc -l < v2-dependencies.jsonl
+          gzip -9 v2-dependencies.jsonl
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: v2-dependencies
+          path: v2-dependencies.jsonl.gz
+          retention-days: 14
