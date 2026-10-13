@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.HuffmanWeightTree.contractLeastPair
+---
+
+# Contract Least Pair
+
+Contract the two least weights after an independently derived sibling
+exchange argument on structural tree cost.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.Greedy.HuffmanOptimality](../../../../../../../sources/v2/CSLibExt.md)

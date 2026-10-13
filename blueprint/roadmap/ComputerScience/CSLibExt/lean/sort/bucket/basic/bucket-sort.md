@@ -1,0 +1,16 @@
+---
+declaration: def
+origin: cited
+---
+
+# Bucket Sort
+
+Prepend into saved floor buckets, insertion-sort each bucket, then concatenate them.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.Sort.Bucket.Basic](../../../../../../../sources/v2/CSLibExt.md)

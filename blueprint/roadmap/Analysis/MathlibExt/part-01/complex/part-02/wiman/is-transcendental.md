@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Complex.IsTranscendental
+---
+
+# Is Transcendental
+
+A complex function is transcendental when it is not represented by a complex polynomial.
+Analytic regularity is recorded separately by callers.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Complex.Wiman](../../../../../../../sources/v2/MathlibExt.md)

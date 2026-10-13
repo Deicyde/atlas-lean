@@ -1,0 +1,22 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: factorResidueFieldMaximalIdealPowQuotient
+---
+
+# Factor Residue Field Maximal Ideal Pow Quotient
+
+The canonical `ResidueField A`-algebra factor map from index `n + 1` to
+index `n`. The underlying ring hom is `Ideal.Quotient.factor` for the
+containment `maximalIdealPowQuotientIdeal_le`; scalar compatibility is by
+quotient induction on a residue-field representative (both algebra maps send
+`⟦a⟧` to `⟦algebraMap A B a⟧`, definitionally).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.DiscreteValuationRing.MaximalIdealPowFactor](../../../../../sources/v2/MathlibExt.md)

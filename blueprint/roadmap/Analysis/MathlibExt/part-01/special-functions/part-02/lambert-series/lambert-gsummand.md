@@ -1,0 +1,16 @@
+---
+declaration: def
+origin: cited
+---
+
+# Lambert GSummand
+
+The summand `n qⁿ / (1 + qⁿ)` of the source's `g(q)`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.SpecialFunctions.LambertSeries](../../../../../../../sources/v2/MathlibExt.md)

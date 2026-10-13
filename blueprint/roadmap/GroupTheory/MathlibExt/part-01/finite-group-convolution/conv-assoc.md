@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Conv assoc
+
+Convolution is associative.
+
+Proof: Expand into double sums, swap them, and reindex by left multiplication,
+following the finite group-algebra argument in Terras, Ch. 1.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.GroupTheory.FiniteGroupConvolution](../../../../../sources/v2/MathlibExt.md)
+- `undergrad.yaml`, section "Representation theory of finite groups", entry "convolution"; A. Terras, Fourier Analysis on Finite Groups and Applications, Ch. 1 (the group algebra).

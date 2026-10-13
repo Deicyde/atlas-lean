@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.sum_signedStirlingFirst_mul_stirlingSecond
+---
+
+# Sum signed Stirling First mul stirling Second
+
+Scalar form of `stirlingMatrices_mutualInverse_and_lowerTriangular`: the signed first-kind
+and the second-kind Stirling numbers are orthogonal, `∑_{k=0}^n (-1)^(n-k) s(n,k) S(k,m) = δ_{nm}`
+for all `n` and `m`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.Enumerative.StirlingMatrices](../../../../../../../sources/v2/MathlibExt.md)

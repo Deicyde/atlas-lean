@@ -1,5 +1,13 @@
 # ATLAS source catalog
 
+## ATLAS v2
+
+- [MathlibExt](v2/MathlibExt.md)
+- [CSLibExt](v2/CSLibExt.md)
+- [WantedExt](v2/WantedExt.md)
+
+## ATLAS v1 textbooks
+
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021)](v1/AlgebraNotes.md)
 - [MIT 18.318 Topics in Algebraic Combinatorics (Spring 2006)](v1/AlgebraicCombinatorics.md)
 - [MIT 18.725 Algebraic Geometry (Fall 2015)](v1/AlgebraicGeometryI.md)

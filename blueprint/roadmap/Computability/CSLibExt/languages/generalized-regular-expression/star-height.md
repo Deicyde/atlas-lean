@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Language.GenRegExp.starHeight
+---
+
+# Star Height
+
+Generalized star height: the nesting depth of `star`, counting stars
+in the ordinary base expression as well.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Computability.Languages.GeneralizedRegularExpression](../../../../../sources/v2/CSLibExt.md)

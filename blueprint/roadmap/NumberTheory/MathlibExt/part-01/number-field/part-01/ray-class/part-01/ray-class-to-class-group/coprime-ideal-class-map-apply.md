@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: NumberField.Modulus.coprimeIdealClassMap_apply
+---
+
+# Coprime Ideal Class Map apply
+
+Pointwise evaluation of the coprime ideal-class map.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.RayClassToClassGroup](../../../../../../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: GroupRing.InversionTwist.equiv
+---
+
+# Equiv
+
+The canonical equivalence between an inversion twist and its underlying type.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Algebra.MonoidAlgebra.InversionTwist](../../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Randomly Permute Distribution eq map uniform
+
+The actual ideal-oracle computation is the pushforward of the canonical uniform
+position permutation. This equation retains the saved vector and the exact same-run cost.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.Random.RandomlyPermute.Probability](../../../../../../../sources/v2/CSLibExt.md)

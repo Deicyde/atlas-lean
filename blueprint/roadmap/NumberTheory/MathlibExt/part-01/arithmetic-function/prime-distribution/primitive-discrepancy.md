@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.PrimeDistribution.primitiveDiscrepancy
+---
+
+# Primitive Discrepancy
+
+The finite maximum over all primitive residue classes of a positive modulus.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.ArithmeticFunction.PrimeDistribution](../../../../../../sources/v2/MathlibExt.md)

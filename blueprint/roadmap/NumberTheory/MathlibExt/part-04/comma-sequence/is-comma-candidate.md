@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+---
+
+# Is Comma Candidate
+
+Finite candidate digit for the generalized comma step: with `x = n % b`
+the least significant digit, `m = n + b * (n % b) + y.val` is the next value
+and `y` is its most significant digit
+(source lines 183-193, concept `jis_term_0c062437479f9d4e43de4e3f`).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.CommaSequence](../../../../../sources/v2/MathlibExt.md)

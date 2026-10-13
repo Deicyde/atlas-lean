@@ -1,0 +1,21 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.keithSequence
+---
+
+# Keith Sequence
+
+The zero-indexed Keith sequence whose initial entries are `digits`.
+
+After the initial entries, each term is the sum of the preceding
+`digits.length` terms.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.KeithNumber](../../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,21 @@
+---
+declaration: def
+origin: cited
+---
+
+# Delete Bal
+
+Delete a key by the double-black method. The result is again valid
+when the input satisfies the three structural invariants `Ordered`,
+`RedOk`, and `Balanced` (`valid_deleteBal_of_invariants`); in
+particular `valid_deleteBal` covers `Valid tree`. The traversal
+specifications `inorder_deleteBal` and `mem_deleteBal` require only
+`Ordered tree`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.RedBlackTree.DeleteBalanced](../../../../../../../../../sources/v2/CSLibExt.md)

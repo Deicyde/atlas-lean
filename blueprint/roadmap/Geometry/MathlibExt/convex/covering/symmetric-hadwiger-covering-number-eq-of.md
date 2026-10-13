@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: ConvexCovering.symmetricHadwigerCoveringNumber_eq_of_isLeast
+---
+
+# Symmetric Hadwiger Covering Number eq of is Least
+
+The same characteristic API for the centrally symmetric class.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Geometry.Convex.Covering](../../../../../sources/v2/MathlibExt.md)

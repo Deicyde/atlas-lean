@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Randomly Permute singleton
+
+Singleton execution retains its element but still retrieves the final
+unique draw and executes its self-swap.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.Random.RandomlyPermute.Correctness](../../../../../../../sources/v2/CSLibExt.md)

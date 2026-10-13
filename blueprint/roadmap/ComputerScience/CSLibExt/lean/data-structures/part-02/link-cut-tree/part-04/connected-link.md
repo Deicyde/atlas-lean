@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Connected link
+
+A link connects its endpoints: after `link x y`, `x` and `y` lie in one
+represented tree. No invariant on the state is needed.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.LinkCutTree](../../../../../../../../sources/v2/CSLibExt.md)

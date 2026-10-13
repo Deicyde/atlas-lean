@@ -1,0 +1,17 @@
+---
+declaration: def
+origin: cited
+---
+
+# Ins Leaf
+
+Insert into a leaf's key list, splitting the leaf around the median key when the
+inserted list exceeds `2 * t - 1` keys.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BTree](../../../../../../../../sources/v2/CSLibExt.md)

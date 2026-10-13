@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: IsIntegralClosure.existsUnique_primesOver_maximalIdeal_of_isAdicComplete
+---
+
+# Exists Unique primes Over maximal Ideal of is Adic Complete
+
+There is a unique prime of the integral closure above the maximal ideal of
+an adically complete DVR.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.DiscreteValuationRing.IntegralClosureComplete](../../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: InverseLimit.proj_compat
+---
+
+# Proj compat
+
+Projection compatibility for limit elements: applying a transition map to
+a higher component agrees with the lower component.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Topology.InverseLimit](../../../../sources/v2/MathlibExt.md)

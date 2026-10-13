@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsSelfDualMonotone
+---
+
+# Is Self Dual Monotone
+
+A self-dual monotone Boolean function: a coordinatewise monotone function
+equal to its dual.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Order.BooleanFunction.SelfDual](../../../../../sources/v2/MathlibExt.md)

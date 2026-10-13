@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Slow APSP time
+
+Exact copy/fill assignment, scalar-addition, and scalar-minimum counts.
+The first coordinate excludes the accumulator vector updates in `matrixAccumulate`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.Graph.ShortestPath.SlowAPSP](../../../../../../../sources/v2/CSLibExt.md)

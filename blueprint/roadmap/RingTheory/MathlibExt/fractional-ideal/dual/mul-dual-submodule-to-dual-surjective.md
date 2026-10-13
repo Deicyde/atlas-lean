@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Submodule.mul_dualSubmoduleToDual_surjective
+---
+
+# Mul dual Submodule To Dual surjective
+
+`dualSubmoduleToDual` for `mul` is surjective on nonzero submodules.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.FractionalIdeal.Dual](../../../../../sources/v2/MathlibExt.md)

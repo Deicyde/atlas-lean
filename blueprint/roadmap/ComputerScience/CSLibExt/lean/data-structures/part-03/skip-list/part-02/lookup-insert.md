@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Lookup insert
+
+Looking up an inserted key returns the replacement value.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.SkipList](../../../../../../../../sources/v2/CSLibExt.md)

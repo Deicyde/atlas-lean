@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: NumberField.Set.HasPolarDensity.unique
+---
+
+# Unique
+
+Uniqueness of the polar density: the `NeBot`/closure argument above is
+essential, without it side equality could be vacuous.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.NumberField.PolarDensity](../../../../../../../sources/v2/MathlibExt.md)

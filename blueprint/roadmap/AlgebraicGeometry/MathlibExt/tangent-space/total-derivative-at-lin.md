@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MvPolynomial.totalDerivativeAtLin
+---
+
+# Total Derivative At Lin
+
+Linearization of `totalDerivativeAt f P` in the direction `v`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.AlgebraicGeometry.TangentSpace](../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Multigraded Betti Number eq of resolution Comparison
+
+Conditional resolution invariance of multigraded Betti numbers: a
+`MultigradedResolutionComparison` forces the two `multigradedBettiNumber`
+families to agree in every multidegree `α` and homological index `i`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.GradedAlgebra.MultigradedBettiResolutionInvariance](../../../../../sources/v2/MathlibExt.md)
+- Benjamin Braun and Brian Davis, “Antichain Simplices,” Journal of Integer Sequences 23 (2020), `https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex`, exact lines 866--874. This is conditional only: it assumes the comparison and claims no existence, uniqueness, minimality, finite support, Poincaré polynomiality or rationality, or Hilbert syzygy.

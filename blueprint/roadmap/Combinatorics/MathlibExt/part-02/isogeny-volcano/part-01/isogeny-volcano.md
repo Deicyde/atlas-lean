@@ -1,0 +1,18 @@
+---
+declaration: structure
+origin: cited
+statement: formalized
+lean: IsogenyVolcano
+---
+
+# Isogeny Volcano
+
+An `ℓ`-isogeny volcano with `Fin` levels, for prime `ℓ`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.IsogenyVolcano](../../../../../../sources/v2/MathlibExt.md)

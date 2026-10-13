@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: LatticePointEnumerator.mem_stdLattice_iff
+---
+
+# Mem std Lattice iff
+
+A vector is in the standard lattice exactly when all its coordinates are integers.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Geometry.LatticePointEnumerator](../../../../sources/v2/MathlibExt.md)

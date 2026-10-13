@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsKolakoski
+---
+
+# Is Kolakoski
+
+A one-indexed Kolakoski sequence: its values are one or two, its blocks
+alternate between ones and twos, and block `n` has length `K n`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.Words.KolakoskiSequence](../../../../../../sources/v2/MathlibExt.md)

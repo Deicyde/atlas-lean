@@ -1,0 +1,12 @@
+# MathlibExt
+
+Reusable, fully proved extensions to Mathlib.
+
+- [Finite](finite/README.md)
+- [Galois](galois/README.md)
+- [Minpoly](minpoly/README.md)
+- [Hermite Dickson](hermite-dickson-permutation-criterion.md)
+- [Puiseux Theorem](puiseux-theorem/README.md)
+- [Purely Inseparable Prime Degree](exists-minpoly-x-pow-sub-c-of-finrank-eq.md)
+- [Separable Adjoin Root](is-separable-iff-exists-monic-irreducibl.md)
+- [Tsen](tsen.md)

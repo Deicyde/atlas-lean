@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.SylvesterSchur.consecutive_of_factorial_mul_top_pow_half_add_one_lt_start_pow
+---
+
+# Consecutive of factorial mul top pow half add one lt start pow
+
+Conditional consecutive form using the project prime-counting estimate
+`Nat.primeCounting n ≤ n / 2 + 1`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.Conditional](../../../../../../sources/v2/MathlibExt.md)

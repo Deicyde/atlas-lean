@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.IsDegenerateOn.of_subset
+---
+
+# Of subset
+
+Restricting the vertex set preserves degeneracy.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Degeneracy](../../../../../../../sources/v2/MathlibExt.md)

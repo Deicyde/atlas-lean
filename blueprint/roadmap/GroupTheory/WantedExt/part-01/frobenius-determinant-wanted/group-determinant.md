@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.FrobeniusDeterminantWanted.RepresentationTheory.FrobeniusDeterminant.groupDeterminant
+---
+
+# Group Determinant
+
+The **group determinant** `Θ(G) = det(A)`, a polynomial in the variables
+`x_g`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.GroupTheory.FrobeniusDeterminantWanted](../../../../../sources/v2/WantedExt.md)

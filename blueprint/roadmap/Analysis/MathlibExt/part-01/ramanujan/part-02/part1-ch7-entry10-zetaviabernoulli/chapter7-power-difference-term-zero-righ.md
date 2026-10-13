@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceTerm_zero_right
+---
+
+# Chapter7 Power Difference Term zero right
+
+Compatibility alias for the former
+`Entry10Zetaviabernoulli.chapter7PowerDifferenceTerm_zero_right`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch7Entry10Zetaviabernoulli](../../../../../../../sources/v2/MathlibExt.md)

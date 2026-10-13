@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Lax approximation
+
+Source: P. D. Lax, *Approximation of measure preserving transformations*, Comm. Pure Appl. Math. 24 (1971). Knill, *Some fundamental theorems in mathematics*, §110. Via leanprover/lean-eval@38361be, problem `lax_approximation`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Dynamics.LaxApproximationWanted](../../../../sources/v2/WantedExt.md)

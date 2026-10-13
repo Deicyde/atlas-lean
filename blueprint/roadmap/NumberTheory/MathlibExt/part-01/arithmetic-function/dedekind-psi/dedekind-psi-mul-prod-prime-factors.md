@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: ArithmeticFunction.dedekindPsi_mul_prod_primeFactors
+---
+
+# Dedekind Psi mul prod prime Factors
+
+Cleared-denominator formula for the Dedekind psi function.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.ArithmeticFunction.DedekindPsi](../../../../../../sources/v2/MathlibExt.md)

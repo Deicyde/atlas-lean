@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Calegari Dimitrov Tang Linear Independent Wanted
+
+Theorem A and C in arXiv:2408.15403.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.NumberTheory.CalegariDimitrovTangLinearIndependentWanted](../../../../sources/v2/WantedExt.md)
+- https://arxiv.org/abs/2408.15403 Via leanprover/lean-eval@38361be, problem `cdt_linearIndependent`.

@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Squarefree Totient
+
+The explicit lower bound for the squarefree-totient sum.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.SquarefreeTotient](../../../../../../sources/v2/MathlibExt.md)
+- Montgomery–Vaughan, *The large sieve* (1973), Lemmas 4–7 and equation (4.3), lines 462–657. The bound here uses `log (z + 1)`, which is slightly stronger than the paper's `log z`.

@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: TorusSobolev.oneLogLeadingCoefficientInfimum
+---
+
+# One Log Leading Coefficient Infimum
+
+The infimum over leading coefficients whose actual uniform bound holds.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Fourier.TorusSobolev.LogarithmicBounds](../../../../../../../sources/v2/MathlibExt.md)

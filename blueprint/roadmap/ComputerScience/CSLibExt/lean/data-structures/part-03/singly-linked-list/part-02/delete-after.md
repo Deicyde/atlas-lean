@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.SinglyLinkedList.deleteAfter
+---
+
+# Delete After
+
+Delete the successor of the allocated node `y` by splicing `y` past it.
+The removed node stays allocated; at the tail this is a no-op on links.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.SinglyLinkedList](../../../../../../../../sources/v2/CSLibExt.md)

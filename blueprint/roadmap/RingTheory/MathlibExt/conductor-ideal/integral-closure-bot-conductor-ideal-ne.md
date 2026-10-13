@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Subalgebra.integralClosure_bot_conductorIdeal_ne_bot_iff
+---
+
+# Integral Closure bot conductor Ideal ne bot iff
+
+The finiteness characterization for the integral closure in the same
+fraction field.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.ConductorIdeal](../../../../sources/v2/MathlibExt.md)

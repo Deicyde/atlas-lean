@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Deque.contents_eq_append_of_popBack_eq_some
+---
+
+# Contents eq append of pop Back eq some
+
+A successful back pop returns the last element and a deque for the remaining prefix.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.Deque](../../../../../../../sources/v2/CSLibExt.md)

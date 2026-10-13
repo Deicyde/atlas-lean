@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: ArithmeticFunction.alderTotientTwo_succ_Iic_apply
+---
+
+# Alder Totient Two succ Iic apply
+
+Inclusive `Iic` form of the shifted theorem, matching the source's
+`0 ≤ r ≤ k` range: `Finset.Iic k` with source-order predicates.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.ArithmeticFunction.AlderTotient](../../../../../../sources/v2/MathlibExt.md)

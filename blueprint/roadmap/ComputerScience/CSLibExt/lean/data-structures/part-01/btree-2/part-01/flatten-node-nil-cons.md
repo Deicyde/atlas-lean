@@ -1,0 +1,18 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Flatten node nil cons
+
+Flattening a node with no separator keys concatenates the flattenings
+of its children in order. This covers nodes with more children than a
+well-formed node would have.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BTree](../../../../../../../../sources/v2/CSLibExt.md)

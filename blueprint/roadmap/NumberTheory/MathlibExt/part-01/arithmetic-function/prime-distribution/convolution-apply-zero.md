@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.PrimeDistribution.convolution_apply_zero
+---
+
+# Convolution apply zero
+
+A positive-index convolution has coefficient zero at index zero.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.ArithmeticFunction.PrimeDistribution](../../../../../../sources/v2/MathlibExt.md)

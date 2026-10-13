@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: SumSquares.representationNumber_zero_zero
+---
+
+# Representation Number zero zero
+
+The representation number at `k = 0, n = 0` is one.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.SumSquares.RepresentationCount](../../../../../../sources/v2/MathlibExt.md)

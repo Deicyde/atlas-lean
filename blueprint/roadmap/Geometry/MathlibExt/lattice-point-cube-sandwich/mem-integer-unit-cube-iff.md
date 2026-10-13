@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: LatticePointCubeSandwich.mem_integerUnitCube_iff
+---
+
+# Mem integer Unit Cube iff
+
+Unfolding lemma for `integerUnitCube`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Geometry.LatticePointCubeSandwich](../../../../sources/v2/MathlibExt.md)

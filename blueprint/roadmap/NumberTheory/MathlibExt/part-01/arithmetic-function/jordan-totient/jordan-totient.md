@@ -1,0 +1,16 @@
+---
+declaration: def
+origin: cited
+---
+
+# Jordan Totient
+
+Jordan totient `J_k`, integral factorization form (He (1.7)).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.ArithmeticFunction.JordanTotient](../../../../../../sources/v2/MathlibExt.md)

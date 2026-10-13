@@ -1,0 +1,16 @@
+---
+declaration: def
+origin: cited
+---
+
+# Lookup
+
+Search for a key by following the BST comparisons.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.Treap](../../../../../../../../sources/v2/CSLibExt.md)

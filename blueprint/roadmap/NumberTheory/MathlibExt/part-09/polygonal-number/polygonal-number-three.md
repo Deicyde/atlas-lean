@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.polygonalNumber_three
+---
+
+# Polygonal Number three
+
+Triangular specialization `p_3(n) = n * (n + 1) / 2`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.PolygonalNumber](../../../../../sources/v2/MathlibExt.md)

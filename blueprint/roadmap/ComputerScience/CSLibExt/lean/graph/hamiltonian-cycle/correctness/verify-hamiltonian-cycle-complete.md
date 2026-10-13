@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Verify Hamiltonian Cycle complete
+
+Every canonical Hamiltonian cycle has an accepted exact fixed-width certificate.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.Graph.HamiltonianCycle.Correctness](../../../../../../../sources/v2/CSLibExt.md)

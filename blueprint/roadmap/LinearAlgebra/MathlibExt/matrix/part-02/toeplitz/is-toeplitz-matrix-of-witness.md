@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.isToeplitzMatrix_of_witness
+---
+
+# Is Toeplitz Matrix of witness
+
+Construction of a Toeplitz matrix from an explicit coefficient witness.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.LinearAlgebra.Matrix.Toeplitz](../../../../../../sources/v2/MathlibExt.md)

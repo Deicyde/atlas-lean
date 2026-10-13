@@ -1,0 +1,23 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Fourier.fourierLaplace_ofReal
+---
+
+# Fourier Laplace of Real
+
+On the real axis `fourierLaplace` coincides with Mathlib's Fourier integral
+for the standard `2π` additive character `Real.fourierChar`.
+
+More precisely, for `r : ℝ` (coerced to `ℂ`) we have
+`fourierLaplace f (r : ℂ) = fourierIntegral Real.fourierChar volume f r`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Fourier.FourierLaplace](../../../../../../sources/v2/MathlibExt.md)

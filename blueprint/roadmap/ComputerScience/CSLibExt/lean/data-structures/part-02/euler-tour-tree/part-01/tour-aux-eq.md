@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.EulerTourTree.Tree.tourAux_eq
+---
+
+# Tour Aux eq
+
+The accumulator tour appends the tour onto its accumulator.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.EulerTourTree](../../../../../../../../sources/v2/CSLibExt.md)

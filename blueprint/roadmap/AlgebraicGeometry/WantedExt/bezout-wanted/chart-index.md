@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.chartIndex
+---
+
+# Chart Index
+
+A chosen index `i : Fin (n+1)` with `p.rep i ≠ 0`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.AlgebraicGeometry.BezoutWanted](../../../../sources/v2/WantedExt.md)

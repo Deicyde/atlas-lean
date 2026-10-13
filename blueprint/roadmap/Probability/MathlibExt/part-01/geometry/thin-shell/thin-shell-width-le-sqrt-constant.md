@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Probability.ThinShell.thinShellWidth_le_sqrt_constant
+---
+
+# Thin Shell Width le sqrt constant
+
+A variance bound gives a simultaneous dimension-independent bound on shell width.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Probability.Geometry.ThinShell](../../../../../../sources/v2/MathlibExt.md)

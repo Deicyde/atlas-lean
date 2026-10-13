@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.BraidClosure.iterate
+---
+
+# Iterate
+
+Iterate passes until back at position `1`, bounded by `fuel` to
+guarantee termination (we visit at most `n` distinct strand positions).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Topology.ConwayKnotShared](../../../../../../sources/v2/WantedExt.md)

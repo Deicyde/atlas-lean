@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: PrimeSpectrum.smul_asIdeal_coe
+---
+
+# Spectrum
+
+The prime-spectrum action is the restriction of the fractional-ideal action.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.FractionalIdeal.Spectrum](../../../../sources/v2/MathlibExt.md)

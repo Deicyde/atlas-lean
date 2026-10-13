@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.genocchiNumber_eq_stirlingSecond_sum_general
+---
+
+# Genocchi Number eq stirling Second sum general
+
+Garabedian's explicit formula for the Genocchi numbers, for every `n : ℕ`:
+`G n = n * ∑ k = 1..n, (-1)^(n-k) * (k-1)! * S(n, k) / 2^(k-1)`. At `n = 0` both sides are `0`.
+`genocchiNumber_eq_stirlingSecond_sum` is the source-shaped form.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.Enumerative.GarabedianGenocchiFormula](../../../../../../../sources/v2/MathlibExt.md)

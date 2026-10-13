@@ -8,7 +8,7 @@ declaration, its statement and proof dependencies collapsed onto the evaluated
 textbook targets (`eval_statement_deps`, `eval_proof_deps`), so a chain through
 helper lemmas still links the two targets it connects. This keeps only the
 target-to-target part and writes blueprint/sources/v1/lean-dependencies.json,
-which scripts/generate_v1_wiki.py reads.
+which scripts/generate_wiki.py reads.
 """
 
 from __future__ import annotations

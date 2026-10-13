@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Is KFull k eq zero
+
+Explicit total extension at `k = 0`: every nonzero `n` is `0`-full since
+`p ^ 0 = 1`. This lies outside the source scope.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.KFull](../../../../../sources/v2/MathlibExt.md)

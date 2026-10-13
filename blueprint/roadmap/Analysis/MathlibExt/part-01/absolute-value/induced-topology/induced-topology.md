@@ -1,0 +1,16 @@
+---
+declaration: def
+origin: cited
+---
+
+# Induced Topology
+
+Topology on the carrier field induced by the norm topology on `WithAbs v`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.AbsoluteValue.InducedTopology](../../../../../../sources/v2/MathlibExt.md)

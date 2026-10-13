@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: BerryEsseenWanted.tyurin2009UpperBound
+---
+
+# Tyurin2009 Upper Bound
+
+Source: catalogue C19a, upper row Tyu2009; retained Shevtsova2011 lines 150-154.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Probability.BerryEsseenConstantWanted](../../../../../sources/v2/WantedExt.md)

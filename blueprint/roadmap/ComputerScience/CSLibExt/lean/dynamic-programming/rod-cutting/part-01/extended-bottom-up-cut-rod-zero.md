@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Extended Bottom Up Cut Rod zero
+
+Empty input returns its zero revenue row, no cut entries and no candidate events.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.RodCutting](../../../../../../../sources/v2/CSLibExt.md)

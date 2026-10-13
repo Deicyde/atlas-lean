@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Preprocess bad Character
+
+A bad-character slot is the distance from the last pattern position to the
+rightmost occurrence before that position, or the pattern length if absent.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.StringMatching.BoyerMoore.Preprocessing](../../../../../../../sources/v2/CSLibExt.md)

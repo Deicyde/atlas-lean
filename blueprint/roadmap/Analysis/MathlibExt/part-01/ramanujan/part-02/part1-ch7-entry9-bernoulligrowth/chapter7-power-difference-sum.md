@@ -1,0 +1,21 @@
+---
+declaration: abbrev
+origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceSum
+---
+
+# Chapter7 Power Difference Sum
+
+Compatibility alias for the former `Entry9Bernoulligrowth.chapter7PowerDifferenceSum`.
+
+For new code, use `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceSum`
+directly.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch7Entry9Bernoulligrowth](../../../../../../../sources/v2/MathlibExt.md)

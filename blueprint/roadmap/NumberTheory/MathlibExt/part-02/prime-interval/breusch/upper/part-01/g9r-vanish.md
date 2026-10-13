@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.BreuschWanted.Internal.G9r_vanish
+---
+
+# G9r vanish
+
+`G9r` vanishes on `[0, 1 / 2100)`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Upper](../../../../../../../../sources/v2/MathlibExt.md)

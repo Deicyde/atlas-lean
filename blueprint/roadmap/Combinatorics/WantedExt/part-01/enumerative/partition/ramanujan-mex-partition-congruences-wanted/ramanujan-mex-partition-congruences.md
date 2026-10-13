@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Ramanujan mex partition congruences
+
+Source corollary (Barman–Singh, JIS 24 (2021), Art. 21.6.3): six congruences for
+   `p = 5, 7, 11`, with plain and doubled first parameters.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.RamanujanMexPartitionCongruencesWanted](../../../../../../../sources/v2/WantedExt.md)

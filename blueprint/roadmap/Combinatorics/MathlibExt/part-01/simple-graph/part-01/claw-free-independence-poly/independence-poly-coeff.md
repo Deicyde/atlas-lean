@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Independence Poly coeff
+
+The `k`-th coefficient of `independencePoly G` is the number of independent
+sets of `G` with `k` vertices.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.ClawFreeIndependencePoly](../../../../../../../sources/v2/MathlibExt.md)

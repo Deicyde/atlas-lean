@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Unit Square BHHTheorem holds
+
+Source: Beardwood, Halton and Hammersley (1959), quoted in Steinerberger (2015).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Probability.BeardwoodHaltonHammersleyConstantWanted](../../../../../sources/v2/WantedExt.md)

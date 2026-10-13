@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.isParkingFunction_iff_card_filter_le
+---
+
+# Is Parking Function iff card filter le
+
+The threshold definition of a parking function is equivalent to the usual
+lower-tail count: at least `k + 1` cars prefer one of the first `k + 1` spots.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.Enumerative.ParkingFunction](../../../../../../../sources/v2/MathlibExt.md)

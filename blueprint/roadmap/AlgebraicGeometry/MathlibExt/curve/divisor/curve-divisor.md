@@ -1,0 +1,19 @@
+---
+declaration: abbrev
+origin: cited
+statement: formalized
+lean: CurveDivisor
+---
+
+# Curve Divisor
+
+A divisor on a curve with point type `C` is a finitely supported integer-valued function on
+`C`. Its support is available as `Finsupp.support`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.AlgebraicGeometry.Curve.Divisor](../../../../../sources/v2/MathlibExt.md)

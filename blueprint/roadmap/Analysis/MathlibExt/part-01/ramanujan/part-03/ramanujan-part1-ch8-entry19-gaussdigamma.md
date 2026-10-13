@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry19Gaussdigamma.ramanujan_part1_ch8_entry19_gaussdigamma
+---
+
+# Part1 Ch8 Entry19 Gaussdigamma
+
+Proof: Analytic continuation of ζ to `re s > -1` by Euler–Maclaurin, Cauchy estimates for the
+remainder's derivatives, and the Euler–Maclaurin tail expansion of the log-power sums.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch8Entry19Gaussdigamma](../../../../../../sources/v2/MathlibExt.md)
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 8.

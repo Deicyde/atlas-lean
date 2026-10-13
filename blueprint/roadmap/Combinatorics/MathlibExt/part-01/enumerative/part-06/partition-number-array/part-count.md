@@ -1,0 +1,20 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.PartitionNumberArray.partCount
+---
+
+# Part Count
+
+Part count of a partition multiplicity vector.
+Concept `jis_sem_4bcead3a4bcda58a1d4dbb9f`; source D3
+`jis_352979520d341b10e3330dad`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.Enumerative.PartitionNumberArray](../../../../../../../sources/v2/MathlibExt.md)

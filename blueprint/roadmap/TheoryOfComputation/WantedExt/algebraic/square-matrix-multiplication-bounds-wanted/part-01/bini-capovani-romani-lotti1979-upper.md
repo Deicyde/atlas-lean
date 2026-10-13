@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Bini Capovani Romani Lotti1979 Upper
+
+Source: C15a [BCRL1979, B1980], the `3 log₁₂ 10` approximate-algorithm bound.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted](../../../../../../sources/v2/WantedExt.md)

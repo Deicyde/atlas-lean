@@ -2,6 +2,8 @@
 
 Analysis studies limits, approximation, continuity, and infinite-dimensional spaces of functions and operators.
 
+- [MathlibExt](MathlibExt/README.md)
+- [WantedExt](WantedExt/README.md)
 - [MIT 18.112 Functions of a Complex Variable (Fall 2008)](ComplexVariables/README.md)
 - [MIT 18.155 Differential Analysis (Fall 2004)](DifferentialAnalysis/README.md)
 - [MIT 18.103 Fourier Analysis (Fall 2013)](FourierAnalysis/README.md)

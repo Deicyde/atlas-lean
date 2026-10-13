@@ -1,0 +1,19 @@
+---
+declaration: lemma
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.BreuschWanted.Internal.w9_complete
+---
+
+# W9 complete
+
+The first components of `w9` are exactly the divisors of `Q9`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Grid](../../../../../../../../sources/v2/MathlibExt.md)

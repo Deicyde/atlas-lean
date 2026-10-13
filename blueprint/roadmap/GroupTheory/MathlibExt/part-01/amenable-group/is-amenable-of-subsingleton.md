@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: isAmenable_of_subsingleton
+---
+
+# Is Amenable of subsingleton
+
+Every trivial (subsingleton) group is amenable, witnessed by `F = {1}`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.GroupTheory.AmenableGroup](../../../../../sources/v2/MathlibExt.md)

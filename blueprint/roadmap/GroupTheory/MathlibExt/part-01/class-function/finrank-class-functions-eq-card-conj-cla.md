@@ -1,0 +1,22 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Finrank class Functions eq card conj Classes
+
+The space of class functions has dimension equal to the number of conjugacy
+classes.
+
+Proof: Use `classFunctionsEquivConjClasses` and
+`Module.finrank_fintype_fun_eq_card`, after obtaining a finite quotient from
+`ConjClasses.mk_surjective`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.GroupTheory.ClassFunction](../../../../../sources/v2/MathlibExt.md)
+- `undergrad.yaml`, section "Representation theory of finite groups", entry "class function over a group"; J.-P. Serre, Linear Representations of Finite Groups, GTM 42, §2.7, Theorem 6 (dimension count for class functions).

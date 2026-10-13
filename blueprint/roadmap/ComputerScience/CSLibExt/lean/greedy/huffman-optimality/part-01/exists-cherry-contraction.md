@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.HuffmanWeightTree.exists_cherry_contraction
+---
+
+# Exists cherry contraction
+
+Expose a deepest sibling pair and describe contraction by structural cost
+identities, without representing the whole tree as weight-depth pairs.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.Greedy.HuffmanOptimality](../../../../../../../sources/v2/CSLibExt.md)

@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+---
+
+# Cut Tree At
+
+Cut the subtree at path `p` inside the `i`-th tree of a forest: returns the
+extracted subtree together with the forest in which that tree is replaced by the cut
+remainder (or removed when the whole tree was extracted).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.FibonacciHeap.DecreaseKey](../../../../../../../../../sources/v2/CSLibExt.md)

@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.NormalNumber.IsSimplyNormalInBase
+---
+
+# Is Simply Normal In Base
+
+A real number is simply normal in base `b`. This predicate is intended for
+bases `b ≥ 2`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.NormalNumber](../../../../../sources/v2/MathlibExt.md)

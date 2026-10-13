@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: PeriodPair.IsHomothetic
+---
+
+# Is Homothetic
+
+Two period pairs are homothetic when their lattices differ by a nonzero scaling.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.SpecialFunctions.Elliptic.Homothety](../../../../../../../../sources/v2/MathlibExt.md)

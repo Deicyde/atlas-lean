@@ -1,0 +1,16 @@
+---
+declaration: def
+origin: cited
+---
+
+# Comp Line
+
+Transport a combinatorial line through a combinatorial subspace.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.DensityHalesJewett](../../../../../sources/v2/MathlibExt.md)

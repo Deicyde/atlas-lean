@@ -1,0 +1,23 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Probability.BerryEsseenWanted.berry_esseen_explicit
+---
+
+# Berry esseen explicit
+
+I.i.d. Berry–Esseen bound with explicit constant `42`.
+
+Reusable public API for `berry_esseen`: the constant is stated explicitly, and
+the redundant `Integrable (X 0) P` premise is omitted since it follows from
+`hXmem` via `MemLp.integrable` on a probability space.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Probability.BerryEsseen](../../../../../sources/v2/MathlibExt.md)

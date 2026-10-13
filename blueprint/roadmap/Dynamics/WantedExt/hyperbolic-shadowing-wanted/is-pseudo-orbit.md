@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.IsPseudoOrbit
+---
+
+# Is Pseudo Orbit
+
+`(xₙ)_{n : ℕ}` is an **ε-pseudo orbit** of `T : ℝᵈ → ℝᵈ`:
+`‖x (n+1) − T (xₙ)‖ < ε` for every `n`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Dynamics.HyperbolicShadowingWanted](../../../../sources/v2/WantedExt.md)

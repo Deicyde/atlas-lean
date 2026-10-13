@@ -2,7 +2,7 @@
 
 `blueprint/sources/v1/book-dependencies/<Book>.json` records which earlier
 statements each ATLAS v1 target uses, read from the book's own text rather
-than from the Lean code. `scripts/generate_v1_wiki.py` draws them as roadmap
+than from the Lean code. `scripts/generate_wiki.py` draws them as roadmap
 edges alongside the Lean dependency closure. Every edge carries the source
 file, line, and a verbatim quote that shows the use.
 

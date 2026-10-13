@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.isPowerFree_iff
+---
+
+# Is Power Free iff
+
+Transparent characterization of `IsPowerFree`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.PowerFree](../../../../../sources/v2/MathlibExt.md)

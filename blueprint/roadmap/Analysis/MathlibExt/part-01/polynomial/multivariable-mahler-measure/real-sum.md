@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: LogarithmicMahlerMeasure.realSum
+---
+
+# Real Sum
+
+The real phase `∑ j, e j * θ j` associated to an exponent vector `e`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Polynomial.MultivariableMahlerMeasure](../../../../../../sources/v2/MathlibExt.md)

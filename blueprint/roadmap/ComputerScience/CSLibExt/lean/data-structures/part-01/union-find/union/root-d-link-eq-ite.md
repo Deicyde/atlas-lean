@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Root D link eq ite
+
+Canonical LINK chooses the higher-rank root, and the second root on ties.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.UnionFind.Union](../../../../../../../../sources/v2/CSLibExt.md)

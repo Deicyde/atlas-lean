@@ -1,0 +1,22 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: NumberField.size_principal
+---
+
+# Size principal
+
+Every principal divisor has size one. This is Mathlib's number-field product
+formula: the archimedean factor is `|Algebra.norm ℚ x|` by
+`NumberField.InfinitePlace.prod_eq_abs_norm`, and the ideal norm of the principal
+ideal is the same value by `FractionalIdeal.absNorm_span_singleton`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.NumberField.ArakelovDivisor](../../../../../../../../sources/v2/MathlibExt.md)

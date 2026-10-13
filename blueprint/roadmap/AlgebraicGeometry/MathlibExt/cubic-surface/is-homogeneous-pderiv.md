@@ -1,0 +1,20 @@
+---
+declaration: lemma
+origin: cited
+statement: formalized
+proof: formalized
+lean: AlgebraicGeometry.CubicSurface.isHomogeneous_pderiv
+---
+
+# Is Homogeneous pderiv
+
+Each partial derivative of the defining cubic is homogeneous of degree `2`: the gradient of a
+cubic surface is quadratic.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.AlgebraicGeometry.CubicSurface](../../../../sources/v2/MathlibExt.md)

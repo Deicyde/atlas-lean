@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+---
+
+# Pair Equiv
+
+The core bijection of the CLRS counting argument. For fixed distinct keys `x ≠ y` in
+the field `ZMod p`, solving the linear system `a * x + b = r`, `a * y + b = s` gives
+`a = (r - s) / (x - y)` and `b = r - a * x`; this inverts `pairMap`. Hence the indices
+`(a, b)` with `a ≠ 0` are in bijection with the ordered pairs `(r, s)` with `r ≠ s`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.UniversalHashing](../../../../../../../../sources/v2/CSLibExt.md)

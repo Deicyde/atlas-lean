@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: BurnsidePaqb.charDivDeg_isIntegral_of_coprime
+---
+
+# Char Div Deg is Integral of coprime
+
+Bielefeld Thm 5, integrality step: if `|C|` and `χ(1)` are coprime,
+then `χ(g)/χ(1)` is an algebraic integer.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.KillingLemma](../../../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.InscribedRectanglesWanted.InscribedRectangles.IsInscribedRectangle
+---
+
+# Is Inscribed Rectangle
+
+A rectangle is inscribed in a Jordan curve `γ` if all its vertices are distinct and lie on `γ`.
+Note: We don't need the smooth hypothesis on the Jordan curve to define this.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Geometry.InscribedRectanglesWanted](../../../../../sources/v2/WantedExt.md)

@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Dft Fun translate
+
+Translation of the input modulates the Fourier transform by the character.
+
+Proof: reindex the finite sum by `x ↦ x + t` and use character additivity.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Fourier.FiniteAbelianDFT](../../../../../../sources/v2/MathlibExt.md)
+- `undergrad.yaml`, section "Fourier transform", entry "discrete Fourier transform on a finite abelian group"; A. Terras, Fourier Analysis on Finite Groups and Applications, Ch. 2 (translation and modulation).

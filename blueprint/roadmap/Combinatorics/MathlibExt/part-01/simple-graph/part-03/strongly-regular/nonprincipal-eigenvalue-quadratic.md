@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Nonprincipal eigenvalue quadratic
+
+Every adjacency eigenvalue other than the regular degree of a strongly regular graph
+satisfies the standard strongly regular graph quadratic.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.StronglyRegular](../../../../../../../sources/v2/MathlibExt.md)

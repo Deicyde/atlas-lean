@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Topology.FamiliesOfMapsB01Wanted.FamiliesOfMapsB01.AdaptedTo
+---
+
+# Adapted To
+
+`AdaptedTo U k f`: `f` is supported on the union of at most `k` of the
+sets `U α`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Topology.FamiliesOfMapsB01Wanted](../../../../../sources/v2/WantedExt.md)

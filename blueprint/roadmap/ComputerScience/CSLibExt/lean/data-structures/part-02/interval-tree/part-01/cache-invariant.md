@@ -1,0 +1,21 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.IntervalTree.Tree.CacheInvariant
+---
+
+# Cache Invariant
+
+Every cached field is exact, recursively: the cached maximum is an
+attained upper bound, and the stored height and size equal the recursive
+height (`max` of the child heights plus one) and size (sum of the child
+sizes plus one) of the subtree.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.IntervalTree](../../../../../../../../sources/v2/CSLibExt.md)

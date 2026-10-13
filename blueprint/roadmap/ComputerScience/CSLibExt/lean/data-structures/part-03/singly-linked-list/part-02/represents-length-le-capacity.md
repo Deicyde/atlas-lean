@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.SinglyLinkedList.represents_length_le_capacity
+---
+
+# Represents length le capacity
+
+A represented identity list is no longer than the pool capacity: its
+identities are distinct elements of `Fin capacity`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.SinglyLinkedList](../../../../../../../../sources/v2/CSLibExt.md)

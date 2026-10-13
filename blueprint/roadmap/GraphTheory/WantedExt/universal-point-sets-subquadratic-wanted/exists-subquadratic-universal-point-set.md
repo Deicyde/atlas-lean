@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.GraphTheory.UniversalPointSetsSubquadraticWanted.UPSS.ExistsSubquadraticUniversalPointSet
+---
+
+# Exists Subquadratic Universal Point Set
+
+Existence of subquadratic-size universal point sets for planar graphs
+[GRAPH-022].
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.GraphTheory.UniversalPointSetsSubquadraticWanted](../../../../sources/v2/WantedExt.md)

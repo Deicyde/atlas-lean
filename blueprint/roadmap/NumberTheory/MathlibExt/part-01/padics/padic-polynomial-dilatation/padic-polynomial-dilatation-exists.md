@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: padicPolynomialDilatation_exists
+---
+
+# Padic Polynomial Dilatation exists
+
+Atomic existence of dilatation data for every point.
+Proves `Wanted` entry `padicPolynomialDilatation_exists`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.Padics.PadicPolynomialDilatation](../../../../../../sources/v2/MathlibExt.md)

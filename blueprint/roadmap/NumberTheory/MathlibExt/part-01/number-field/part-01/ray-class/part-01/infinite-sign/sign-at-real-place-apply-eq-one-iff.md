@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: NumberField.Modulus.signAtRealPlace_apply_eq_one_iff
+---
+
+# Sign At Real Place apply eq one iff
+
+The sign at a real place is trivial iff the real embedding is positive.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.InfiniteSign](../../../../../../../../../sources/v2/MathlibExt.md)

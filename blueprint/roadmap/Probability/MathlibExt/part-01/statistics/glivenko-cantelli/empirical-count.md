@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Probability.Statistics.GlivenkoCantelliWanted.empiricalCount
+---
+
+# Empirical Count
+
+Counts indices `i ≤ n` with `X i ω ≤ x` for the empirical CDF.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Probability.Statistics.GlivenkoCantelli](../../../../../../sources/v2/MathlibExt.md)

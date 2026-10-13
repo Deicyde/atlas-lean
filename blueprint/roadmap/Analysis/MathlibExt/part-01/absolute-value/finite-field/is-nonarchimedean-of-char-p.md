@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Is Nonarchimedean of char P
+
+Any absolute value on a positive-characteristic field is nonarchimedean.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.AbsoluteValue.FiniteField](../../../../../../sources/v2/MathlibExt.md)

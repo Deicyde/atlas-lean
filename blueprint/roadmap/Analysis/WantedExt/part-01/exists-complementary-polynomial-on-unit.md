@@ -1,0 +1,16 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Complementary Polynomials Wanted
+
+Source: https://link.springer.com/article/10.1007/s00220-025-05302-9 Via leanprover/lean-eval@38361be, problem `exists_complementary_polynomial_on_unit_circle`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Analysis.ComplementaryPolynomialsWanted](../../../../sources/v2/WantedExt.md)

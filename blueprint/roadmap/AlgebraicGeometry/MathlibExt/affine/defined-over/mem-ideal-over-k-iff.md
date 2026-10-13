@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MvPolynomial.mem_idealOverK_iff
+---
+
+# Mem ideal Over K iff
+
+`f ∈ I_k(Z)` iff its image in `AlgebraicClosure k[X]` vanishes on `Z`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.AlgebraicGeometry.Affine.DefinedOver](../../../../../sources/v2/MathlibExt.md)

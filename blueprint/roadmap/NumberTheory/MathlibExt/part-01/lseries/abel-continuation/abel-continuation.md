@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: abelContinuation
+---
+
+# Abel Continuation
+
+The Abel continuation `F_f(s) = s * ∫ x in Ioi 1, A(⌊x⌋) * x^(-s-1)`,
+in the exact conventions of `LSeries_eq_mul_integral`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.LSeries.AbelContinuation](../../../../../../sources/v2/MathlibExt.md)

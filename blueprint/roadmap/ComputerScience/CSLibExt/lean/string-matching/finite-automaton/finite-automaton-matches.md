@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.StringMatching.finiteAutomatonMatches
+---
+
+# Finite Automaton Matches
+
+All overlapping zero-based shifts, including every empty-pattern boundary.
+The constructed table is bound once before the one-pass scan.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.StringMatching.FiniteAutomaton](../../../../../../sources/v2/CSLibExt.md)

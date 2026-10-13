@@ -6,7 +6,7 @@ on:
     paths:
       - "blueprint/**"
       - "v1/**"
-      - "scripts/generate_v1_wiki.py"
+      - "scripts/generate_wiki.py"
       - "mkdocs.yml"
       - "theme/**"
       - "hooks/**"
@@ -15,7 +15,7 @@ on:
     paths:
       - "blueprint/**"
       - "v1/**"
-      - "scripts/generate_v1_wiki.py"
+      - "scripts/generate_wiki.py"
       - "mkdocs.yml"
       - "theme/**"
       - "hooks/**"
@@ -50,7 +50,7 @@ jobs:
       - name: Check the generated v1 pages
         run: >-
           uv run --no-project --with "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
-          python scripts/generate_v1_wiki.py --check
+          python scripts/generate_wiki.py --check
 
       # Rejects cycles and dangling links, and fails when a node names a Lean
       # declaration that is not in the sources.

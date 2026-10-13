@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.ErdosProblem756Wanted.maxRichDistances
+---
+
+# Max Rich Distances
+
+The largest number of rich distances over `n`-point sets.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Geometry.ErdosProblem756Wanted](../../../../../sources/v2/WantedExt.md)

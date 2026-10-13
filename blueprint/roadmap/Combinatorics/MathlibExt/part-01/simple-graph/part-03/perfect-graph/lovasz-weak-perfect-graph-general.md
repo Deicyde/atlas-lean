@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.SimpleGraph.PerfectGraphWanted.lovasz_weak_perfect_graph_general
+---
+
+# Lovasz weak perfect graph general
+
+Weak perfect graph theorem without decidable equality: `G` perfect iff `Gᶜ` perfect.
+General version of `lovasz_weak_perfect_graph`; the `DecidableEq` instance needed by
+the internal finset argument is obtained locally via `classical`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.PerfectGraph](../../../../../../../sources/v2/MathlibExt.md)

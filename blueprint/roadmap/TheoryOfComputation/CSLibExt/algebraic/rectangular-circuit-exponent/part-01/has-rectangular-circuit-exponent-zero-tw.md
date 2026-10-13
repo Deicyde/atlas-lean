@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Complexity.Algebraic.hasRectangularCircuitExponent_zero_two
+---
+
+# Has Rectangular Circuit Exponent zero two
+
+The actual outer-product circuit gives an essentially quadratic zero-aspect algorithm.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Complexity.Algebraic.RectangularCircuitExponent](../../../../../../sources/v2/CSLibExt.md)

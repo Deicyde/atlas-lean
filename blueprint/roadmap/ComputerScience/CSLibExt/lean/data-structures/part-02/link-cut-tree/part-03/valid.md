@@ -1,0 +1,22 @@
+---
+declaration: def
+origin: cited
+---
+
+# Valid
+
+The state invariant bundle used below: the vertex lists of the represented
+trees are collectively duplicate-free (so the trees are vertex-disjoint), and
+the preferred edges are a functional set of represented directed edges: no
+duplicates, every preferred edge is a parent-child edge of some represented
+tree, and each vertex has at most one preferred child. The duplicate-free
+vertex condition also pins down the parent of each vertex, so the maximal
+solid chains (`treePaths`) are genuine disjoint paths.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.LinkCutTree](../../../../../../../../sources/v2/CSLibExt.md)

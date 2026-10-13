@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.Overpartition.isOverlined_mem_parts
+---
+
+# Is Overlined mem parts
+
+An overlined size occurs in the underlying multiset of parts.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.Enumerative.Partition.Overpartition](../../../../../../../../sources/v2/MathlibExt.md)

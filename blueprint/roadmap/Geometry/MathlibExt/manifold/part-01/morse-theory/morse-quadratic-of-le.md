@@ -1,0 +1,19 @@
+---
+declaration: lemma
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Geometry.Manifold.MorseTheoryWanted.morseQuadratic_of_le
+---
+
+# Morse Quadratic of le
+
+If `n ≤ k` the form is minus the squared norm.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Geometry.Manifold.MorseTheory](../../../../../../sources/v2/MathlibExt.md)

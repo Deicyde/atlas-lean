@@ -1,0 +1,16 @@
+---
+declaration: def
+origin: cited
+---
+
+# Well Formed
+
+Exactly the compact prefix is occupied; payload equality is not required.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.DynamicTable.Basic](../../../../../../../../../sources/v2/CSLibExt.md)

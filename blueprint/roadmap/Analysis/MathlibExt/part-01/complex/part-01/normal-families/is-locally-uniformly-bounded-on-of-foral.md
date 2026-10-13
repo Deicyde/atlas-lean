@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.Complex.NormalFamilies.isLocallyUniformlyBoundedOn_of_forall_norm_le
+---
+
+# Is Locally Uniformly Bounded On of forall norm le
+
+A family bounded by `C` on an open set is locally uniformly bounded there.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Complex.NormalFamilies](../../../../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.differentiable_oneDivExpSubOneLaurentRemainder
+---
+
+# Differentiable one Div Exp Sub One Laurent Remainder
+
+The analytic Laurent remainder of the Bose-Einstein kernel is differentiable.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.SpecialFunctions.ExpSubOneMittagLeffler](../../../../../../../sources/v2/MathlibExt.md)

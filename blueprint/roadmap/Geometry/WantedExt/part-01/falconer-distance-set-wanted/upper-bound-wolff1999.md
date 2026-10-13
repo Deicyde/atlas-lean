@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: FalconerDistanceSetWanted.upperBound_Wolff1999
+---
+
+# Upper Bound Wolff1999
+
+The planar threshold is at most `4/3`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Geometry.FalconerDistanceSetWanted](../../../../../sources/v2/WantedExt.md)
+- optimization catalogue C34a, Wolff (1999) upper row.

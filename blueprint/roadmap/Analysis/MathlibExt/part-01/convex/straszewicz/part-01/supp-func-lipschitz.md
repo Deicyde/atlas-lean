@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.Convex.Straszewicz.suppFunc_lipschitz
+---
+
+# Supp Func lipschitz
+
+The support function is Lipschitz on bounded sets.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Convex.Straszewicz](../../../../../../../sources/v2/MathlibExt.md)

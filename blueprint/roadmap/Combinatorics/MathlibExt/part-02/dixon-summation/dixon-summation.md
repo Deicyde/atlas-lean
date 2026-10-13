@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Dixon summation
+
+Dixon's summation theorem for terminating 3F2 series (Proposition (Dixon)).
+
+Proof: Wilf-Zeilberger pair. For `a, b ≥ 0` the normalized summand in `c = a₃` has the
+certificate ratio `R(c, k) = -(a + k)(b + k) / (2(c - k + 1)(a + b + c + 1))`; induction on `c`
+telescopes over the fixed window `[-a, a]`. Negative arguments make both sides zero.
+Statement source: Abdesselam, arXiv:1903.11147v2, Proposition (Dixon), TeX lines 502-512.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.DixonSummation](../../../../../sources/v2/MathlibExt.md)

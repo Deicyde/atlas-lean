@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: AdjoinRoot.is_maximal_of_irreducible_factor
+---
+
+# Is maximal of irreducible factor
+
+An irreducible factor of the reduced polynomial generates a maximal ideal
+upstairs together with the base maximal ideal. No integrality hypothesis.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.RingTheory.AdjoinRoot.LocalMaximal](../../../../../sources/v2/MathlibExt.md)

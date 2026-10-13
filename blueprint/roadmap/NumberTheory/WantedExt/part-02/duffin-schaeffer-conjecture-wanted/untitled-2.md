@@ -1,0 +1,22 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.DuffinSchaefferConjectureWanted.DuffinSchaefferConjecture.𝒦
+---
+
+# 𝒦
+
+The set `𝒦` as defined in Theorem 2:
+The `α ∈ [0,1]` such that inequality 1.7 `|α - a/q| ≤ ψ(q)/q` has infinitely many solutions `(a, q)`
+with `0 ≤ a ≤ q`.
+
+Note: we allow non-coprime `(a, q)` and we explicitly rule out `q = 0`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.NumberTheory.DuffinSchaefferConjectureWanted](../../../../../sources/v2/WantedExt.md)

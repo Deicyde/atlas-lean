@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: EuclideanLaplacian.semiclassicalCountingCoefficient
+---
+
+# Semiclassical Counting Coefficient
+
+Semiclassical counting coefficient `ωₙ |Ω| / (2π)ⁿ`: the product of the
+unit-ball volume and the domain volume, divided by `(2π)ⁿ`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.InnerProductSpace.DirichletSpectrum](../../../../../../sources/v2/MathlibExt.md)

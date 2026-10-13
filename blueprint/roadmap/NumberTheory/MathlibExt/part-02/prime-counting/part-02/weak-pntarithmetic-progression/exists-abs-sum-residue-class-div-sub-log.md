@@ -1,0 +1,18 @@
+---
+declaration: lemma
+origin: cited
+---
+
+# Exists abs sum residue Class div sub log le
+
+Mertens' theorem in arithmetic progressions: the reciprocal sum of the
+von Mangoldt function over a reduced residue class equals `(log x) / φ(q)` up to
+a bounded error.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.WeakPNTArithmeticProgression](../../../../../../../sources/v2/MathlibExt.md)

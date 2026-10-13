@@ -1,9 +1,10 @@
 # ATLAS roadmap
 
-ATLAS v1 formalized statements from 26 undergraduate and graduate
-textbooks and lecture notes. Each book below is one source track; its
-articles reproduce the source statements in order and link the Lean
-declaration that formalizes each one.
+ATLAS v2 is the root Lake package: MathlibExt and CSLibExt hold reusable,
+fully proved results, and WantedExt states established results whose proofs
+are deferred. Each subject below leads with those libraries. The 26
+textbooks and lecture notes formalized by the archived ATLAS v1 release follow
+as source tracks whose articles reproduce the source statements in order.
 
 ## Subjects
 
@@ -14,10 +15,25 @@ declaration that formalizes each one.
 - [Arithmetic Geometry](ArithmeticGeometry/README.md)
 - [Category Theory](CategoryTheory/README.md)
 - [Combinatorics](Combinatorics/README.md)
+- [Computability](Computability/README.md)
 - [Computer Science](ComputerScience/README.md)
+- [Data](Data/README.md)
+- [Dynamics](Dynamics/README.md)
+- [Field Theory](FieldTheory/README.md)
+- [Game Theory](GameTheory/README.md)
 - [Geometry](Geometry/README.md)
+- [Graph Theory](GraphTheory/README.md)
 - [Group Theory](GroupTheory/README.md)
+- [Information Theory](InformationTheory/README.md)
+- [Linear Algebra](LinearAlgebra/README.md)
+- [Logic](Logic/README.md)
+- [Measure Theory](MeasureTheory/README.md)
 - [Number Theory](NumberTheory/README.md)
+- [Order](Order/README.md)
 - [Probability](Probability/README.md)
+- [Quantum Information](QuantumInformation/README.md)
 - [Representation Theory](RepresentationTheory/README.md)
+- [Ring Theory](RingTheory/README.md)
+- [Set Theory](SetTheory/README.md)
 - [Theory of Computation](TheoryOfComputation/README.md)
+- [Topology](Topology/README.md)

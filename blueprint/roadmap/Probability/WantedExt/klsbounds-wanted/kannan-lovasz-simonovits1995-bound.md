@@ -1,0 +1,17 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Kannan Lovasz Simonovits1995 bound
+
+The first polynomial bound, with one multiplier for every sufficiently large dimension.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Probability.KLSBoundsWanted](../../../../sources/v2/WantedExt.md)
+- Kannan, Lovasz and Simonovits, DCG 13 (1995), 541--560; optimizationproblems `constants/20c.md`, KLS1995 row.

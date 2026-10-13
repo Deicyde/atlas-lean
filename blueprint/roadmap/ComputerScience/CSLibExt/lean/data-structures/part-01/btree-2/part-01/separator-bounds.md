@@ -1,0 +1,22 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Separator bounds
+
+The separator bounds of an ordered node, in index-free form. If the key list is
+`keys₁ ++ key :: keys₂` and the child list splits as `children₁ ++ children₂` with
+`children₁` holding one more child than `keys₁` has keys (so the last child of `children₁`
+is the subtree immediately left of `key` and the first child of `children₂` the one
+immediately right of it), then every key stored on the left is below `key` and every key
+stored on the right is above `key`. In particular, every key in the `i`-th child lies
+strictly between the `(i-1)`-st and `i`-th separators.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BTree](../../../../../../../../sources/v2/CSLibExt.md)

@@ -1,0 +1,17 @@
+---
+declaration: def
+origin: cited
+---
+
+# Is KAbelian Equivalent
+
+Two nonempty words are `k`-abelian equivalent when their prefixes and suffixes of
+length `k - 1` agree and every factor of length `k` occurs equally often.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.KAbelianSquareFreeWord](../../../../../../sources/v2/MathlibExt.md)

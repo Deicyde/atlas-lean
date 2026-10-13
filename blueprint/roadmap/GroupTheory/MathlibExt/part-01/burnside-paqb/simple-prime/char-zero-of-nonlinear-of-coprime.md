@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: BurnsidePaqb.char_zero_of_nonlinear_of_coprime
+---
+
+# Char zero of nonlinear of coprime
+
+For a nonlinear irreducible of a simple group, a coprime-size class
+element with `g ≠ 1` is killed by the character.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.SimplePrime](../../../../../../sources/v2/MathlibExt.md)

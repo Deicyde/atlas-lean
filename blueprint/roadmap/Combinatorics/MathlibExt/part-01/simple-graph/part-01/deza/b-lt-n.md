@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.IsDezaWith.b_lt_n
+---
+
+# B lt n
+
+The chained bound `b < n`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Deza](../../../../../../../sources/v2/MathlibExt.md)

@@ -1,0 +1,20 @@
+---
+declaration: def
+origin: cited
+---
+
+# Insert
+
+Inserts a binding or replaces the existing binding for the key. An existing binding in
+either of the key's slots is overwritten in place; a replacement in the first table also
+clears a duplicate copy of the key in its second slot, so no stale competing value
+remains. Otherwise the eviction loop runs with the given fuel. Returns `none` when the
+loop exhausts its fuel, which models the rehash trigger of the classical algorithm.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.CuckooHashing](../../../../../../../../sources/v2/CSLibExt.md)

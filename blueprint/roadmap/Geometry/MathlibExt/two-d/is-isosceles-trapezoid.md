@@ -1,0 +1,22 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: EuclideanGeometry.IsIsoscelesTrapezoid
+---
+
+# Is Isosceles Trapezoid
+
+`a b c d` are the vertices, in counter-clockwise order, of an isosceles trapezoid: they are in
+strictly convex position, the side `ab` is parallel to the side `cd` (the two bases), and the
+diagonals `ac` and `bd` have equal length. One pair of parallel sides together with equal
+diagonals is the classical characterization of an isosceles trapezoid; in particular it rules
+out non-rectangular parallelograms.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Geometry.TwoD](../../../../sources/v2/MathlibExt.md)

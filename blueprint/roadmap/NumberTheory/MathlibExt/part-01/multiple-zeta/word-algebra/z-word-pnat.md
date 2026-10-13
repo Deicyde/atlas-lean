@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.MultipleZeta.zWordPNat
+---
+
+# Z Word PNat
+
+Auxiliary product of Hoffman blocks for a list of `PNat`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.MultipleZeta.WordAlgebra](../../../../../../sources/v2/MathlibExt.md)

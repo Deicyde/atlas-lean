@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.HausdorffMomentsWanted.Analysis.IsPositiveMomentConfiguration
+---
+
+# Is Positive Moment Configuration
+
+`a` is a **positive** moment configuration: realized by a single finite
+*positive* measure on the cube.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Analysis.HausdorffMomentsWanted](../../../../../sources/v2/WantedExt.md)

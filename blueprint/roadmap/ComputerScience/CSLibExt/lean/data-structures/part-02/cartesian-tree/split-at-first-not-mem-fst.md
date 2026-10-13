@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+---
+
+# Split At First not mem fst
+
+Splitting at the *first* occurrence: the split value does not occur in
+the left part. Together with the reconstruction equation in
+`splitAtFirst_spec`, this characterizes the split point (including the
+duplicate tie-breaking behavior used by `build`) without unfolding the
+definition: reconstruction alone would hold for a split at any
+occurrence.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.CartesianTree](../../../../../../../sources/v2/CSLibExt.md)

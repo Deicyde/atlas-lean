@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: NewtonPolygon.newtonPolygonBoundary
+---
+
+# Newton Polygon Boundary
+
+Boundary of the Newton polygon, via the frontier.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.Convex.NewtonPolygon](../../../../../../sources/v2/MathlibExt.md)

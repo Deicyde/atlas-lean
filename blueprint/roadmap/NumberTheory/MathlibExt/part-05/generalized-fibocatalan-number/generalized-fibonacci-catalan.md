@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.generalizedFibonacciCatalan
+---
+
+# Generalized Fibonacci Catalan
+
+Generalized FiboCatalan number
+`J_{r,F} * F_{2n}! / (F_n! * F_{n+r+1}!)` over `ℚ`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.GeneralizedFibocatalanNumber](../../../../../sources/v2/MathlibExt.md)

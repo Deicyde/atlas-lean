@@ -1,0 +1,20 @@
+---
+declaration: lemma
+origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.SylvesterSchur.Internal.exists_prime_dvd_choose_of_smooth_count_bound
+---
+
+# Exists prime dvd choose of smooth count bound
+
+The smooth-number count contradiction gives a large prime divisor of the block
+binomial coefficient.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.BlockReductions](../../../../../../sources/v2/MathlibExt.md)

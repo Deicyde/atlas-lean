@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.SendovRadiusConstantWanted.sendovRadius_le_of_isAdmissibleRadius
+---
+
+# Sendov Radius le of is Admissible Radius
+
+Every admissible radius is an upper bound for the Sendov radius.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Analysis.SendovRadiusConstantWanted](../../../../../sources/v2/WantedExt.md)

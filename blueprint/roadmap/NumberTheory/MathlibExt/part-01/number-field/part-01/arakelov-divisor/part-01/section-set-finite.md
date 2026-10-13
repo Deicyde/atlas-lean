@@ -1,0 +1,22 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: NumberField.ArakelovDivisor.sectionSet_finite
+---
+
+# Section Set finite
+
+Every section set of an Arakelov divisor is finite. Clearing denominators by a
+nonzero element of `𝓞 K` lands in the ring of integers, and the ordinary-radius
+archimedean bounds transfer to uniform bounds on all complex embeddings, so
+`NumberField.Embeddings.finite_of_norm_le` applies.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.NumberField.ArakelovDivisor](../../../../../../../../sources/v2/MathlibExt.md)

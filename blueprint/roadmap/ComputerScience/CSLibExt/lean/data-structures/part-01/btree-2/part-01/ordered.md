@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+---
+
+# Ordered
+
+The ordering invariant of a B-tree: the flattening is strictly increasing. This single
+condition packages sortedness of the keys at each node and the separator bounds between a
+node's keys and the keys stored in its subtrees; see `Ordered.node_keys_pairwise` and
+`Ordered.separator_bounds`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BTree](../../../../../../../../sources/v2/CSLibExt.md)

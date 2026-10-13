@@ -1,0 +1,16 @@
+---
+declaration: def
+origin: cited
+---
+
+# Total Weight
+
+Sum of edge weights, counting parallel edge occurrences separately.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.Graph.Kruskal](../../../../../../../sources/v2/CSLibExt.md)

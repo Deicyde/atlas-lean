@@ -1,0 +1,21 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Rat.Place.embedding
+---
+
+# Embedding
+
+Canonical ring embedding `ℚ →+* ℚ_v`.
+
+At infinity this is `Rat.castHom ℝ`; at a finite prime it is
+`Rat.castHom (Padic p)` under the local `Fact p.Prime` instance.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.Rat.Place](../../../../../../sources/v2/MathlibExt.md)

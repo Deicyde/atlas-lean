@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.trivialJungElekes1994UpperBound
+---
+
+# Trivial Jung Elekes1994 Upper Bound
+
+Jung's theorem gives the exact upper bound `π / 3`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Geometry.LebesgueUniversalCoveringConstantWanted](../../../../../../sources/v2/WantedExt.md)

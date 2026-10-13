@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: PierceExpansion.traj_ne_zero_of_lt_length
+---
+
+# Traj ne zero of lt length
+
+The Pierce trajectory is nonzero at positive steps below the length.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.PierceExpansion](../../../../../sources/v2/MathlibExt.md)

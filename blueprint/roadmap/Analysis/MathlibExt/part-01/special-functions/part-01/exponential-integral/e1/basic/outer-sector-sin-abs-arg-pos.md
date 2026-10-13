@@ -1,0 +1,19 @@
+---
+declaration: lemma
+origin: cited
+statement: formalized
+proof: formalized
+lean: Complex.outer_sector_sin_abs_arg_pos
+---
+
+# Outer sector sin abs arg pos
+
+The sine of the absolute argument is positive in the outer sector.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Analysis.SpecialFunctions.ExponentialIntegral.E1.Basic](../../../../../../../../../sources/v2/MathlibExt.md)
