@@ -12,7 +12,8 @@ For all $f \in L^2([-\pi, \pi])$, we have $\sigma_N f(x) = \int_{-\pi}^\pi K_N(x
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition ($L^p$ space)](../april-6/045-l-p-space.md)
+- [Definition (April 13, 2021)](../april-13/051-definition.md)
 
 ## Sources
 

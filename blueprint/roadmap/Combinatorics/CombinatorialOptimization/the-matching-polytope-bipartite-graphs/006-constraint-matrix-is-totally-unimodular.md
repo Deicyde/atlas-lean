@@ -12,7 +12,7 @@ Let $G = (V, E)$ be a bipartite graph. The constraint matrix obtained by stackin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3 (totally unimodular matrix)](005-totally-unimodular-matrix.md)
 
 ## Sources
 

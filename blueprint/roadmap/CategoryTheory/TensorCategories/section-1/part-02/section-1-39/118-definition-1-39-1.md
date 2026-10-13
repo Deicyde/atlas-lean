@@ -11,7 +11,10 @@ A pivotal structure $a$ on a tensor category $\mathcal{C}$ is spherical if $\ope
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10.1](../../part-01/section-1-10/019-definition-1-10-1.md)
+- [Definition 1.12.3](../../part-01/section-1-12/029-definition-1-12-3.md)
+- [Definition 1.38.1](../section-1-38/113-definition-1-38-1.md)
+- [Definition 1.38.4](../section-1-38/115-definition-1-38-4.md)
 
 ## Sources
 

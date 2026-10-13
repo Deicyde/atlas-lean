@@ -10,7 +10,10 @@ Let $R$ be a PID and $N$ an $R$-module, and let $C_{*}$ be a chain-complex of fr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.6](../chapter-1/chapter-1-section-1/006-definition-1-6.md)
+- [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
+- [Definition 3.5](../chapter-1/chapter-1-section-3/011-definition-3-5.md)
+- [Definition 8.3](../section-8/035-definition-8-3.md)
 
 ## Sources
 

@@ -11,11 +11,13 @@ For every $\lambda \in \mathfrak{h}^*$, the Verma module $M_{\lambda}$ has a uni
 ## Depends on
 
 - [Definition 8.3](048-definition-8-3.md)
+- [Definition 8.4](049-definition-8-4.md)
 
 ## Proof depends on
 
 - [Proposition 8.5](050-proposition-8-5.md)
 - [Proposition 8.8](052-proposition-8-8.md)
+- [Corollary 8.7](051-corollary-8-7.md)
 
 ## Sources
 

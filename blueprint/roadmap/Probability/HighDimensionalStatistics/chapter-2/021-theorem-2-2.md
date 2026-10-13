@@ -19,6 +19,8 @@ This node has no prerequisites.
 - [Definition 1.17](../section-1/017-definition-1-17.md)
 - [Definition 1.2](../chapter-1/002-definition-1-2.md)
 - [Lemma 1.18](../section-1/018-lemma-1-18.md)
+- [Lemma 1.4](../section-1/004-lemma-1-4.md)
+- [Theorem 1.19](../section-1/019-theorem-1-19.md)
 
 ## Sources
 

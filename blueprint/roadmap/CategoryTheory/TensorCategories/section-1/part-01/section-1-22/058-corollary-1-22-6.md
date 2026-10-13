@@ -10,7 +10,16 @@ lean: corollary_1_22_6_rigid
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10.1](../section-1-10/019-definition-1-10-1.md)
+- [Definition 1.10.2](../section-1-10/020-definition-1-10-2.md)
+- [Definition 1.10.11](../section-1-10/024-definition-1-10-11.md)
+- [Definition 1.12.3](../section-1-12/029-definition-1-12-3.md)
+- [Definition 1.21.2](../section-1-21/052-definition-1-21-2.md)
+- [Definition 1.22.2](055-definition-1-22-2.md)
+
+## Proof depends on
+
+- [Proposition 1.22.5](057-proposition-1-22-5.md)
 
 ## Sources
 

@@ -12,6 +12,10 @@ The following conditions on a weight $\lambda \in \mathfrak{h}^{*}$ are equivale
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition 15.12](../section-15/090-proposition-15-12.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 16.1](../../../../../sources/v1/LieGroups.md)

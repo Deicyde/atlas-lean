@@ -11,7 +11,7 @@ The triangle diagram $(X \otimes \mathbf{1}) \otimes Y \to X \otimes (\mathbf{1}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.1](../section-1-1/001-definition-1-1-1.md)
 
 ## Sources
 

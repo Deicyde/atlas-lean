@@ -10,7 +10,17 @@ lean: CategoryTheory.FiniteTensorCategoryData.Proposition_1_47_7_regular_absorpt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lemma 1.16.1](../../part-01/section-1-16/044-lemma-1-16-1.md)
+- [Definition 1.45.3](../section-1-45/135-definition-1-45-3.md)
+- [Definition 1.45.7](../section-1-45/138-definition-1-45-7.md)
+- [Definition 1.47.4](151-definition-1-47-4.md)
+
+## Proof depends on
+
+- [Proposition 1.10.9](../../part-01/section-1-10/023-proposition-1-10-9.md)
+- [Proposition 1.13.6](../../part-01/section-1-13/034-proposition-1-13-6.md)
+- [Proposition 1.45.5](../section-1-45/137-proposition-1-45-5.md)
+- [Proposition 1.45.8](../section-1-45/139-proposition-1-45-8.md)
 
 ## Sources
 

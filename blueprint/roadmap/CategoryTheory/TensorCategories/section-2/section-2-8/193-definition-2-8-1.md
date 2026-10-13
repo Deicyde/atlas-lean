@@ -11,7 +11,7 @@ Let $K$ be a $\mathbb{Z}_{+}$-ring with basis $\{b_i\}$. A $\mathbb{Z}_{+}$-modu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.42.1](../../section-1/part-02/section-1-42/122-definition-1-42-1.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Every variety has finite dimension.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](../lecture-2/010-definition-3.md)
+- [Definition 11](../lecture-4/042-definition-11.md)
 
 ## Sources
 

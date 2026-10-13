@@ -11,7 +11,7 @@ Let $\lambda$ be a partition and $w=A_{n} A_{n-1} \cdots A_{1}$ a valid $\lambda
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lemma 8.1](031-lemma-8-1.md)
 
 ## Proof depends on
 

@@ -10,7 +10,7 @@ Let $g$ be the (geometric) genus of $X$ and assume it equals $1$. Then $\mathbb{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corollary 19](../lecture-14/113-corollary-19.md)
 
 ## Sources
 

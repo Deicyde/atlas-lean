@@ -11,7 +11,11 @@ Suppose $X_{n,m}$ are independent expectation-zero random variables when $1 \leq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (weak convergence)](../lecture-12/031-weak-convergence.md)
+
+## Proof depends on
+
+- [Definition (characteristic function)](../lecture-8/019-characteristic-function.md)
 
 ## Sources
 

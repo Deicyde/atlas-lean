@@ -11,7 +11,7 @@ Let $\mathcal{M}_1, \mathcal{M}_2$ be two module categories over $\mathcal{C}$. 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.1.1](../section-2-1/174-definition-2-1-1.md)
 
 ## Sources
 

@@ -12,6 +12,10 @@ For any finite-dimensional irreducible $\mathfrak{g}$-module $V$ we have $\dim \
 
 - [Definition 8.1](../section-8/046-definition-8-1.md)
 
+## Proof depends on
+
+- [Theorem 13.5 (Kostant)](../section-13/079-kostant.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 14.2](../../../../../sources/v1/LieGroups.md)

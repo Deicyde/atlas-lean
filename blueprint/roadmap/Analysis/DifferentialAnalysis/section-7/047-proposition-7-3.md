@@ -12,7 +12,12 @@ A linear functional $u \colon \mathcal{S}(\mathbb{R}^{n}) \to \mathbb{C}$ is con
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.6](../section-6/043-definition-6-6.md)
+- [Proposition 6.7](../section-6/044-proposition-6-7.md)
+
+## Proof depends on
+
+- [Corollary 7.2](046-corollary-7-2.md)
 
 ## Sources
 

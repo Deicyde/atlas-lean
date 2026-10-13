@@ -10,7 +10,12 @@ A locally free coherent sheaf of rank $n$ on $\mathbb{P}^1$ is isomorphic to $\b
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4 (Projective Space)](../../part-01/lecture-2/016-projective-space.md)
+- [Definition 26](../../part-01/lecture-10/089-definition-26.md)
+
+## Proof depends on
+
+- [Corollary 18](../../part-01/lecture-14/111-corollary-18.md)
 
 ## Sources
 

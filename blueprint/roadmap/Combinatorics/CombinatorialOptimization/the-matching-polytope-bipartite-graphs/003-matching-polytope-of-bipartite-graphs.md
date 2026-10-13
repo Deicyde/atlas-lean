@@ -12,6 +12,10 @@ Let $G = (V, E)$ be a bipartite graph and let $M$ be the convex hull of the indi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Claim 1 (matching characterization)](../polyhedral-combinatorics/001-matching-characterization.md)
+
 ## Sources
 
 - [MIT 18.433 Combinatorial Optimization (Fall 2003), The Matching Polytope - Bipartite Graphs, Sept 18](../../../../sources/v1/CombinatorialOptimization.md)

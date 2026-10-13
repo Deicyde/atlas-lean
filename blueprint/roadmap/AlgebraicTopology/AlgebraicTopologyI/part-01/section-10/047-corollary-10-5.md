@@ -9,11 +9,12 @@ If $m \neq n$, then $S^{m}$ and $S^{n}$ are not homotopy equivalent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.4](../chapter-1/chapter-1-section-5/020-definition-5-4.md)
 
 ## Proof depends on
 
 - [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
+- [Proposition 10.4](046-proposition-10-4.md)
 
 ## Sources
 

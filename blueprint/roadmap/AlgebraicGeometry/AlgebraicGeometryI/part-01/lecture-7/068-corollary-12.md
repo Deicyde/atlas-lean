@@ -12,7 +12,8 @@ A quasiprojective variety is separated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6](../lecture-3/019-definition-6.md)
+- [Definition 17](065-definition-17.md)
 
 ## Sources
 

@@ -11,6 +11,7 @@ If $C, D$ are coalgebras, and $f \colon C \to D$ is a coalgebra homomorphism suc
 ## Depends on
 
 - [Definition 1.29.1](079-definition-1-29-1.md)
+- [Definition 1.20.1](../../part-01/section-1-20/049-definition-1-20-1.md)
 
 ## Sources
 

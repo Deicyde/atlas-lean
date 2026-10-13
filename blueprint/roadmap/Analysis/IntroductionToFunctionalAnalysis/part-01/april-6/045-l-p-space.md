@@ -11,7 +11,7 @@ For any $1 \leq p \leq \infty$, we define the $L^p$ space $L^p(E) = \left\{f: E 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition ($L^p$ norm and $L^\infty$ norm)](043-l-p-norm-and-l-infty-norm.md)
 
 ## Sources
 

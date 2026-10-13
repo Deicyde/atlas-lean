@@ -14,6 +14,10 @@ Let $X_1, \ldots, X_n$ be $n$ independent random variables such that almost sure
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 1.8 (Hoeffding's lemma (1963))](008-1963.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Section 1.2](../../../../sources/v1/HighDimensionalStatistics.md)

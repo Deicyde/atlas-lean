@@ -10,7 +10,7 @@ In a map of exact sequences $A_4 \rightarrow A_3 \rightarrow A_2 \rightarrow A_1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.1](../section-8/034-definition-8-1.md)
 
 ## Sources
 

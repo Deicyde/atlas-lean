@@ -14,6 +14,12 @@ There exists a universal constant $c > 0$ so that for every prime $p$, $\sigma_1
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma (Section: Random walks on finite groups II)](../random-walks-on-finite-groups-ii/080-lemma.md)
+- [Lemma (lem-B_T)](../random-walks-on-finite-groups-ii/088-lem-b-t.md)
+- [Lemma (lem-Gamma_pcap B_T)](../random-walks-on-finite-groups-ii/089-lem-gamma-pcap-b-t.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section on Random walks on finite groups (first lecture)](../../../../../sources/v1/ProjectionTheory.md)

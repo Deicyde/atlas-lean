@@ -13,6 +13,10 @@ Let $f_{1}, \ldots, f_{m} \in k[x_{1}, \ldots, x_{n}]$ be homogeneous polynomial
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 12.6](070-lemma-12-6.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 12.6](../../../../../sources/v1/LieGroups.md)

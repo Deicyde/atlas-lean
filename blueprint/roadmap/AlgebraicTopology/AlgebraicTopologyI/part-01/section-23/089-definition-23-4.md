@@ -11,7 +11,9 @@ Let $\mathcal{I}$ be a directed set. An $\mathcal{I}$-directed system in a categ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.1](../chapter-1/chapter-1-section-3/008-definition-3-1.md)
+- [Definition 3.4](../chapter-1/chapter-1-section-3/010-definition-3-4.md)
+- [Definition 23.2](088-definition-23-2.md)
 
 ## Sources
 

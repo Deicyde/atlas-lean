@@ -12,7 +12,13 @@ Let $P$ be a projective object in a multiring category $\mathcal{C}$. If $X \in 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10.1](../section-1-10/019-definition-1-10-1.md)
+- [Definition 1.10.2](../section-1-10/020-definition-1-10-2.md)
+- [Definition 1.13.3](031-definition-1-13-3.md)
+
+## Proof depends on
+
+- [Proposition 1.10.9](../section-1-10/023-proposition-1-10-9.md)
 
 ## Sources
 

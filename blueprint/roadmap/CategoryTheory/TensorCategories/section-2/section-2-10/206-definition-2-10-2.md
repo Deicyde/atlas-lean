@@ -11,7 +11,7 @@ The internal Hom $\underline{\operatorname{Hom}}(M_1, M_2)$ is an object of $\ma
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.1.1](../section-2-1/174-definition-2-1-1.md)
 
 ## Sources
 

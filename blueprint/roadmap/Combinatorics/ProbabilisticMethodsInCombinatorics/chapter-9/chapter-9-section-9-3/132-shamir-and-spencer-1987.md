@@ -12,6 +12,10 @@ Let $\alpha > 5/6$ be fixed. Then for $p < n^{-\alpha}$, $\chi(G(n, p))$ is conc
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 9.1.1 (Bounded differences inequality)](../chapter-9-section-9-1/124-bounded-differences-inequality.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 9, Section 9.3](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

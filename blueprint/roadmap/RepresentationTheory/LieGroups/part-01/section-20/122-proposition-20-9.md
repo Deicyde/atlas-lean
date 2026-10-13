@@ -11,6 +11,8 @@ lean: prop_20_9_iii_involutive
 ## Depends on
 
 - [Definition 15.1](../section-15/084-definition-15-1.md)
+- [Definition 8.4](../section-8/049-definition-8-4.md)
+- [Proposition 8.9](../section-8/053-proposition-8-9.md)
 
 ## Sources
 

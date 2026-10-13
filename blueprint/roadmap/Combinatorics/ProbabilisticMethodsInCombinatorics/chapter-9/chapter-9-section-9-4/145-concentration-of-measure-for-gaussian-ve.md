@@ -10,7 +10,11 @@ If $f \colon \mathbb{R}^n \to \mathbb{R}$ is $1$-Lipschitz, and $Z$ is a vector 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.4.7 (Lipschitz functions)](138-lipschitz-functions.md)
+
+## Proof depends on
+
+- [Theorem 9.4.15 (Gaussian isoperimetric inequality)](144-gaussian-isoperimetric-inequality.md)
 
 ## Sources
 

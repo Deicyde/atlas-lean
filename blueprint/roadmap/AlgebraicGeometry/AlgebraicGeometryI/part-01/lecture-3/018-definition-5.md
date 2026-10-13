@@ -11,7 +11,8 @@ An algebraic variety is projective if it is isomorphic to a closed subvariety of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](../lecture-2/010-definition-3.md)
+- [Definition 4 (Projective Space)](../lecture-2/016-projective-space.md)
 
 ## Sources
 

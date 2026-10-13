@@ -13,6 +13,7 @@ A left $D_{X}$-module is the same thing as an $\mathcal{O}_{X}$-module with a fl
 
 - [Definition 28.7](167-definition-28-7.md)
 - [Definition 28.3](165-definition-28-3.md)
+- [Definition 28.6](166-definition-28-6.md)
 
 ## Sources
 

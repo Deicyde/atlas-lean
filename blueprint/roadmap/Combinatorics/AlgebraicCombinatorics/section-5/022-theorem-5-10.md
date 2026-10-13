@@ -19,6 +19,7 @@ lean: GraphIsoPoset.graph_poset_max_antichain_level
 - [Theorem 4.7](../section-4/015-theorem-4-7.md)
 - [Lemma 4.5](../section-4/013-lemma-4-5.md)
 - [Proposition 5.6](018-proposition-5-6.md)
+- [Theorem 5.9](021-theorem-5-9.md)
 
 ## Sources
 

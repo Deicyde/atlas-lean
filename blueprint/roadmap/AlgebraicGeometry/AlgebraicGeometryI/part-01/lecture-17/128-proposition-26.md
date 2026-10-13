@@ -10,7 +10,8 @@ $\operatorname{Pic}^{\circ}(X)$ is itself a complex variety as well as a compact
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](../lecture-2/010-definition-3.md)
+- [Corollary 19](../lecture-14/113-corollary-19.md)
 
 ## Sources
 

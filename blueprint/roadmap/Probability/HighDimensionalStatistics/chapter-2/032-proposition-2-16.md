@@ -14,6 +14,10 @@ Let $\mathbb{X} \in \mathbb{R}^{n \times d}$ be a random matrix with entries $X_
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 1.9 (Hoeffding's inequality)](../section-1/009-hoeffding-s-inequality.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Chapter 2, Section 2.4](../../../../sources/v1/HighDimensionalStatistics.md)

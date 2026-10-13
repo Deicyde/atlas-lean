@@ -14,6 +14,10 @@ Lebesgue measure is a Borel measure.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 2.2](010-definition-2-2.md)
+
 ## Sources
 
 - [MIT 18.155 Differential Analysis (Fall 2004), Section 2](../../../../sources/v1/DifferentialAnalysis.md)

@@ -10,7 +10,12 @@ If $\mathcal{C}$ is a multiring category with right duals, then $\mathbf{1} \in 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10.1](../section-1-10/019-definition-1-10-1.md)
+- [Definition 1.13.3](031-definition-1-13-3.md)
+
+## Proof depends on
+
+- [Proposition 1.13.6](034-proposition-1-13-6.md)
 
 ## Sources
 

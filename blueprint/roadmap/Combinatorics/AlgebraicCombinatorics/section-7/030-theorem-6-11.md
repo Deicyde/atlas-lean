@@ -23,6 +23,8 @@ This node has no prerequisites.
 - [Definition 5.4](../section-5/017-definition-5-4.md)
 - [Lemma 4.5](../section-4/013-lemma-4-5.md)
 - [Proposition 6.2](../section-6/023-proposition-6-2.md)
+- [Theorem 6.6](../section-6/026-theorem-6-6.md)
+- [Corollary 6.10](../section-6/029-corollary-6-10.md)
 
 ## Sources
 

@@ -10,7 +10,12 @@ A generic hypersurface of degree $d$ is smooth. Moreover, if $X \subset \mathbb{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4 (Projective Space)](../../part-01/lecture-2/016-projective-space.md)
+- [Definition 33](../../part-01/lecture-16/125-definition-33.md)
+
+## Proof depends on
+
+- [Theorem 22.1 (Bertini's Theorem)](163-bertini-s-theorem.md)
 
 ## Sources
 

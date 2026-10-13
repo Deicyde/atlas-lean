@@ -11,7 +11,11 @@ $S^{\infty}$ is contractible.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.6](../chapter-1/chapter-1-section-5/022-definition-5-6.md)
+
+## Proof depends on
+
+- [Definition 5.1](../chapter-1/chapter-1-section-5/017-definition-5-1.md)
 
 ## Sources
 

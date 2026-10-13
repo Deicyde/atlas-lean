@@ -10,7 +10,14 @@ If $\lambda \in \mathfrak{h}^{*}$ is antidominant then the functors $\Gamma$, Lo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.7](../../part-01/section-5/026-definition-5-7.md)
+- [Definition 30.9](179-definition-30-9.md)
+
+## Proof depends on
+
+- [Theorem 29.2 (Beilinson-Bernstein localization theorem)](../section-29/170-beilinson-bernstein-localization-theorem.md)
+- [Theorem 29.7 (Beilinson-Bernstein localization theorem)](../section-29/174-beilinson-bernstein-localization-theorem.md)
+- [Proposition 30.18](181-proposition-30-18.md)
 
 ## Sources
 

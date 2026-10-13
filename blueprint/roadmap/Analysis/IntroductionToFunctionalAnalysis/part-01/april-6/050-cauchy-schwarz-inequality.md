@@ -12,7 +12,8 @@ Let $H$ be a pre-Hilbert space. For all $u, v \in H$, we have $\left|\langle u, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Pre-Hilbert space)](048-pre-hilbert-space.md)
+- [Definition (Norm from inner product)](049-norm-from-inner-product.md)
 
 ## Sources
 

@@ -10,7 +10,8 @@ The tangent cone is the cone over the exceptional locus in the blowup at $x$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 20](../lecture-9/082-definition-20.md)
+- [Definition 38](150-definition-38.md)
 
 ## Sources
 

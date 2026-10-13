@@ -11,7 +11,11 @@ Let $X$ be a basis element of a fusion ring $A$. Then there exists $n>0$ such th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.42.2](../section-1-42/123-definition-1-42-2.md)
+
+## Proof depends on
+
+- [Corollary 1.43.3](128-corollary-1-43-3.md)
 
 ## Sources
 

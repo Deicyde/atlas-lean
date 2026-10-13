@@ -10,7 +10,8 @@ If a finite ring category $C$ over a field of characteristic zero has a unique s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.13.3](../../part-01/section-1-13/031-definition-1-13-3.md)
+- [Definition 1.18.1](../../part-01/section-1-18/045-definition-1-18-1.md)
 
 ## Sources
 

@@ -11,6 +11,12 @@ Assume that $\mathcal{M}$ is an exact module category. Then the functor $\underl
 ## Depends on
 
 - [Definition 2.6.1](../section-2-6/185-definition-2-6-1.md)
+- [Definition 2.10.2](206-definition-2-10-2.md)
+
+## Proof depends on
+
+- [Proposition 2.7.8](../section-2-7/192-proposition-2-7-8.md)
+- [Corollary 2.10.5](208-corollary-2-10-5.md)
 
 ## Sources
 

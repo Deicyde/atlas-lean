@@ -10,7 +10,12 @@ Assume that $\mathcal{M}_{1} \simeq \operatorname{Mod}_{\mathcal{C}}(A)$ and $\m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.2.1](../section-2-2/178-definition-2-2-1.md)
+- [Definition 2.9.1](../section-2-9/197-definition-2-9-1.md)
+- [Proposition 2.9.10](../section-2-9/200-proposition-2-9-10.md)
+- [Definition 2.9.22](../section-2-9/204-definition-2-9-22.md)
+- [Definition 2.9.24](../section-2-9/205-definition-2-9-24.md)
+- [Definition 2.12.1](213-definition-2-12-1.md)
 
 ## Sources
 

@@ -12,6 +12,10 @@ Let $G$ be a graph. Let $d_v$ denote the degree of $v$. Then the number $\operat
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 10.2.1 (Brégman–Minc inequality)](179-br-gman-minc-inequality.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 10, Section 10.2](../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

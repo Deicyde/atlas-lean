@@ -10,7 +10,7 @@ The opposite monoidal category $\mathcal{C}^{\mathrm{op}}$ to $\mathcal{C}$ is t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.1](001-definition-1-1-1.md)
 
 ## Sources
 

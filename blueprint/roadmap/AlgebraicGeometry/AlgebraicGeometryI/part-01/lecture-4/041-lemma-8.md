@@ -12,7 +12,9 @@ Let $Z_1 \subsetneq Z_2$ be irreducible closed subsets of an algebraic variety $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](../lecture-2/010-definition-3.md)
+- [Definition 7](../lecture-3/025-definition-7.md)
+- [Definition 10](038-definition-10.md)
 
 ## Sources
 

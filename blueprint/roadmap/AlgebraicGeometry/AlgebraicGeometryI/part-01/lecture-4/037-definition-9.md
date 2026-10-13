@@ -11,7 +11,8 @@ A morphism of algebraic varieties $f \colon X \longrightarrow Y$ is called affin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2](../lecture-1/005-definition-2.md)
+- [Definition 3](../lecture-2/010-definition-3.md)
 
 ## Sources
 

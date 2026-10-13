@@ -14,6 +14,10 @@ Let $s_1, s_2, \ldots, s_N$ be a set of finite sets in $\mathbb{R}^n$. Then ther
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Polynomial Ham Sandwich Theorem)](051-polynomial-ham-sandwich-theorem.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Proof of the Szemeredi-Trotter theorem](../../../../../sources/v1/ProjectionTheory.md)

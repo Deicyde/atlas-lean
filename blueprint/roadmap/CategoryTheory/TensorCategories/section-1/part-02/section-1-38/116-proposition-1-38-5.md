@@ -13,6 +13,13 @@ If $\mathcal{C}$ is a tensor category, then the function $X \mapsto \operatornam
 
 - [Definition 1.38.2](114-definition-1-38-2.md)
 - [Definition 1.38.4](115-definition-1-38-4.md)
+- [Definition 1.12.3](../../part-01/section-1-12/029-definition-1-12-3.md)
+- [Lemma 1.16.1](../../part-01/section-1-16/044-lemma-1-16-1.md)
+
+## Proof depends on
+
+- [Proposition 1.37.1](../section-1-37/111-proposition-1-37-1.md)
+- [Proposition 1.37.3](../section-1-37/112-proposition-1-37-3.md)
 
 ## Sources
 

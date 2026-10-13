@@ -10,7 +10,11 @@ Let $H$ be a commutative Hopf algebra over a field $k$ of characteristic zero. T
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.22.9](../../part-01/section-1-22/059-definition-1-22-9.md)
+
+## Proof depends on
+
+- [Theorem 1.33.1 (Cartier-Kostant)](095-cartier-kostant.md)
 
 ## Sources
 

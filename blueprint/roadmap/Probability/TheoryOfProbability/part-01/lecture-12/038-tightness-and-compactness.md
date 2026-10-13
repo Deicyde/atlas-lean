@@ -10,7 +10,8 @@ Every subsequential limit of the $F_n$ is the distribution function of a probabi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (tightness)](032-tightness.md)
+- [Theorem (Helly's selection theorem)](037-helly-s-selection-theorem.md)
 
 ## Sources
 

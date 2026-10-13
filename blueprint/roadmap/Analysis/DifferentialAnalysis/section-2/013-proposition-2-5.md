@@ -13,6 +13,12 @@ If $0 \leq u \in (\mathcal{C}_0(X))'$, for $X$ a locally compact metric space, t
 ## Depends on
 
 - [Definition 2.2](010-definition-2-2.md)
+- [Definition 1.6](../section-1/006-definition-1-6.md)
+- [Theorem 2.4](012-theorem-2-4.md)
+
+## Proof depends on
+
+- [Lemma 1.7](../section-1/007-lemma-1-7.md)
 
 ## Sources
 

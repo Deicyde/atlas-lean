@@ -12,7 +12,11 @@ Let $f_n$ be an increasing sequence of non-negative measurable (extended) functi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.1](022-definition-4-1.md)
+
+## Proof depends on
+
+- [Lemma 3.1](../section-3/019-lemma-3-1.md)
 
 ## Sources
 

@@ -10,12 +10,15 @@ Let $L \subseteq K$ be closed subspaces of a space $X$. There is a fully relativ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.6](../../part-01/section-8/038-definition-8-6.md)
 
 ## Proof depends on
 
 - [Definition 34.4](../section-34/149-definition-34-4.md)
 - [Definition 26.5](../../part-01/section-26/111-definition-26-5.md)
+- [Theorem 10.2](../../part-01/section-10/044-theorem-10-2.md)
+- [Theorem 11.4 (The locality principle)](../../part-01/section-11/054-the-locality-principle.md)
+- [Proposition 34.1](../section-34/146-proposition-34-1.md)
 
 ## Sources
 

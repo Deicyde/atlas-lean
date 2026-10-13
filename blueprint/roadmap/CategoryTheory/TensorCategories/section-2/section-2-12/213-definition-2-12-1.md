@@ -11,7 +11,7 @@ A module functor morphism from $(F, s)$ to $(G, t)$ is a natural transformation 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.2.1](../section-2-2/178-definition-2-2-1.md)
 
 ## Sources
 

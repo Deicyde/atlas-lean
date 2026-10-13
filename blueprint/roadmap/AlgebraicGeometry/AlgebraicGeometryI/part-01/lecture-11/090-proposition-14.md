@@ -11,7 +11,7 @@ Presheaf of abelian groups on $k$-vector space is an abelian category.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 21](../lecture-10/084-definition-21.md)
 
 ## Sources
 

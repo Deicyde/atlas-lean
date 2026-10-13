@@ -12,7 +12,11 @@ $\operatorname{Spec} A$ is irreducible if and only if $A$ has no zerodivisors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](025-definition-7.md)
+
+## Proof depends on
+
+- [Theorem 1.2](../lecture-1/003-theorem-1-2.md)
 
 ## Sources
 

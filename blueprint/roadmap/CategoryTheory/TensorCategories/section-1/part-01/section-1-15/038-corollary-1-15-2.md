@@ -12,7 +12,7 @@ In any multiring category $\mathcal{C}$ the unit object $\mathbf{1}$ is isomorph
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.13.3](../section-1-13/031-definition-1-13-3.md)
 
 ## Sources
 

@@ -10,7 +10,7 @@ If $s \geq 0$ and $Y$ is bounded and $\mathcal{C}$-measurable, then for all $x \
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Conditional expectation)](../../part-01/lecture-25/053-conditional-expectation.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Let $\mathcal{G}$ be a presheaf on $Y$. Then its pullback along $f$ is a preshea
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 21](084-definition-21.md)
 
 ## Sources
 

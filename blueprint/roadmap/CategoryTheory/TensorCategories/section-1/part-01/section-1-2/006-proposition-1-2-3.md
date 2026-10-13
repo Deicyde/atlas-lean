@@ -11,7 +11,7 @@ For any object $X$ in $\mathcal{C}$ one has the equalities $l_{\mathbf{1} \otime
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.1](../section-1-1/001-definition-1-1-1.md)
 
 ## Sources
 

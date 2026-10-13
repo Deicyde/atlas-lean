@@ -11,7 +11,8 @@ Let $\mathcal{C}$ be a category, and fix a set $\mathcal{M}$ of objects in $\mat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.1](../chapter-1/chapter-1-section-3/008-definition-3-1.md)
+- [Definition 3.4](../chapter-1/chapter-1-section-3/010-definition-3-4.md)
 
 ## Sources
 

@@ -11,7 +11,15 @@ Let $0 \rightarrow A_{*} \rightarrow B_{*} \rightarrow C_{*} \rightarrow 0$ be a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.6](../chapter-1/chapter-1-section-1/006-definition-1-6.md)
+- [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
+- [Definition 3.5](../chapter-1/chapter-1-section-3/011-definition-3-5.md)
+- [Definition 8.1](../section-8/034-definition-8-1.md)
+- [Definition 8.3](../section-8/035-definition-8-3.md)
+
+## Proof depends on
+
+- [Definition 1.4](../chapter-1/chapter-1-section-1/004-definition-1-4.md)
 
 ## Sources
 

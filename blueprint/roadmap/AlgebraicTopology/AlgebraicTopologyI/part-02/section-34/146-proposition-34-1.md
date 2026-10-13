@@ -11,6 +11,12 @@ The cap product enjoys the following properties. (1) $(a \cup b) \cap x = a \cap
 ## Depends on
 
 - [Definition 26.5](../../part-01/section-26/111-definition-26-5.md)
+- [Definition 1.7](../../part-01/chapter-1/chapter-1-section-1/007-definition-1-7.md)
+- [Definition 28.2](../../part-01/section-28/117-definition-28-2.md)
+
+## Proof depends on
+
+- [Construction 28.1](../../part-01/section-28/116-construction-28-1.md)
 
 ## Sources
 

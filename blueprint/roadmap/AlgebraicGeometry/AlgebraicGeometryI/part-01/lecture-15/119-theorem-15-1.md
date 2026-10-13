@@ -10,7 +10,12 @@ If $X$ is locally factorial (i.e.\ $\mathcal{O}_{X,x}$ is always a UFD), then $\
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 29](../lecture-14/114-definition-29.md)
+- [Definition 30](../lecture-14/115-definition-30.md)
+
+## Proof depends on
+
+- [Theorem 5.4](../lecture-5/053-theorem-5-4.md)
 
 ## Sources
 

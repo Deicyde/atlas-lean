@@ -13,6 +13,10 @@ Let $V$ be a fixed $d$-dimensional subspace in $\mathbb{R}^n$. For uniformly ran
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 9.4.17 (Sub-Gaussian distribution)](../chapter-9-section-9-4/146-sub-gaussian-distribution.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 9, Section 9.5](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

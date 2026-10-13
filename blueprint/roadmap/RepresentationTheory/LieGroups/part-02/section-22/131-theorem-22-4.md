@@ -13,6 +13,11 @@ Let $F_{1}, F_{2}$ be projective $\theta$-functors for $\theta=\chi_{\lambda}$. 
 
 - [Definition 8.3](../../part-01/section-8/048-definition-8-3.md)
 - [Definition 22.3](130-definition-22-3.md)
+- [Definition 8.4](../../part-01/section-8/049-definition-8-4.md)
+
+## Proof depends on
+
+- [Corollary 18.8 (The Duflo-Joseph theorem)](../../part-01/section-18/106-the-duflo-joseph-theorem.md)
 
 ## Sources
 

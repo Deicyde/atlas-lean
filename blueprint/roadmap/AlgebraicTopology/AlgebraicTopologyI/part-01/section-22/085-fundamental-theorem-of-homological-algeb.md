@@ -11,7 +11,8 @@ Let $M$ and $N$ be $R$-modules; let $0 \leftarrow M \leftarrow E_{0} \leftarrow 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.9](../chapter-1/chapter-1-section-5/025-definition-5-9.md)
+- [Definition 8.1](../section-8/034-definition-8-1.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ The relative singular chain complex of the pair $(X, A)$ is $S_{*}(X, A) = S_{*}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.4](../chapter-1/chapter-1-section-3/010-definition-3-4.md)
+- [Lemma 8.4](036-lemma-8-4.md)
 
 ## Proof depends on
 

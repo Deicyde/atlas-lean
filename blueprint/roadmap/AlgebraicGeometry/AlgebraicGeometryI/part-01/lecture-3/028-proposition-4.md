@@ -12,7 +12,9 @@ A Noetherian topological space is the union of its components (finite in number)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corollary 3](../lecture-2/014-corollary-3.md)
+- [Definition 7](025-definition-7.md)
+- [Definition 8](027-definition-8.md)
 
 ## Sources
 

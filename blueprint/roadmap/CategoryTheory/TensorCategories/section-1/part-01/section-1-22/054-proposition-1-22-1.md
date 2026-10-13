@@ -12,7 +12,8 @@ lean: Proposition_1_22_1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10.1](../section-1-10/019-definition-1-10-1.md)
+- [Definition 1.21.2](../section-1-21/052-definition-1-21-2.md)
 
 ## Sources
 

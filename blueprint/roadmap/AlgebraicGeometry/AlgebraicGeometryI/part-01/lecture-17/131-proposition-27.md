@@ -10,7 +10,8 @@ A non-constant map between irreducible compact curves is finite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../lecture-3/025-definition-7.md)
+- [Definition 10](../lecture-4/038-definition-10.md)
 
 ## Sources
 

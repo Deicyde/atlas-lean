@@ -12,7 +12,7 @@ If $H$ is an infinite-dimensional separable Hilbert space, then $H$ is isometric
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (April 8, 2021 section)](../april-8/039-definition.md)
 
 ## Sources
 

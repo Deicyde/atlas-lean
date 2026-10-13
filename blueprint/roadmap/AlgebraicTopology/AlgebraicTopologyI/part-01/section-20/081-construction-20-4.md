@@ -12,7 +12,8 @@ The universal $R$-bilinear map out of $M \times N$ is constructed as follows. Le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 20.1](079-definition-20-1.md)
+- [Definition 20.3](080-definition-20-3.md)
 
 ## Sources
 

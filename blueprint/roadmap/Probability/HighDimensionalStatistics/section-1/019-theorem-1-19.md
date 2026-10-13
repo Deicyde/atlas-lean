@@ -18,6 +18,7 @@ Let $X \in \mathbb{R}^d$ be a sub-Gaussian random vector with variance proxy $\s
 
 - [Definition 1.17](017-definition-1-17.md)
 - [Lemma 1.18](018-lemma-1-18.md)
+- [Theorem 1.14](014-theorem-1-14.md)
 
 ## Sources
 

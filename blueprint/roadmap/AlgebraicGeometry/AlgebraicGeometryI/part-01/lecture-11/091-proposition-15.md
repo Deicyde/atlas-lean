@@ -12,7 +12,8 @@ Some properties: 1.\ $\mathcal{F} \to \mathcal{F}^\#$ is exact; in particular it
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 21](../lecture-10/084-definition-21.md)
+- [Definition 22](../lecture-10/085-definition-22.md)
 
 ## Sources
 

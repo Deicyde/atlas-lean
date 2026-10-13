@@ -10,12 +10,14 @@ Let $(K, L)$ be a closed pair in $X$. There is a long exact sequence $\cdots \ri
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.5](../../part-01/chapter-1/chapter-1-section-3/011-definition-3-5.md)
+- [Definition 8.1](../../part-01/section-8/034-definition-8-1.md)
 
 ## Proof depends on
 
 - [Definition 34.4](../section-34/149-definition-34-4.md)
 - [Definition 26.8](../../part-01/section-26/113-definition-26-8.md)
+- [Proposition 23.12](../../part-01/section-23/093-proposition-23-12.md)
 
 ## Sources
 

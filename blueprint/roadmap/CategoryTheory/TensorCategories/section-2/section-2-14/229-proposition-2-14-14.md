@@ -11,6 +11,13 @@ lean: CategoryTheory.proposition_2_14_14_basic_identity
 ## Depends on
 
 - [Definition 2.6.1](../section-2-6/185-definition-2-6-1.md)
+- [Definition 1.10.2](../../section-1/part-01/section-1-10/020-definition-1-10-2.md)
+- [Definition 2.10.2](../section-2-10/206-definition-2-10-2.md)
+- [Definition 2.14.1](220-definition-2-14-1.md)
+
+## Proof depends on
+
+- [Theorem 2.14.6](223-theorem-2-14-6.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The map from finite Radon measures $M_{\mathrm{fin}}(\mathbb{R}^n) \ni \mu \maps
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.7](../section-2/015-definition-2-7.md)
 
 ## Sources
 

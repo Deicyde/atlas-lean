@@ -12,7 +12,7 @@ The Lebesgue integral of an integrable function $f: E \to \mathbb{R}$ is $\int_E
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (March 23, 2021)](../march-23/022-definition.md)
 
 ## Sources
 

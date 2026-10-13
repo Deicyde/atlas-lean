@@ -10,7 +10,8 @@ $i_* \colon \mathbf{QCoh}(Z) \to \mathbf{QCoh}(X)$ (or coherent to coherent) is 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23](../lecture-10/086-definition-23.md)
+- [Definition 25](../lecture-10/088-definition-25.md)
 
 ## Sources
 

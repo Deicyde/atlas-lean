@@ -11,7 +11,12 @@ If $X$ is a smooth irreducible variety of dimension $d$, then $\Omega(X)$ is a l
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](../lecture-2/010-definition-3.md)
+- [Definition 7](../lecture-3/025-definition-7.md)
+- [Definition 11](../lecture-4/042-definition-11.md)
+- [Definition 26](../lecture-10/089-definition-26.md)
+- [Definition 33](../lecture-16/125-definition-33.md)
+- [Definition 34](../lecture-18/136-definition-34.md)
 
 ## Sources
 

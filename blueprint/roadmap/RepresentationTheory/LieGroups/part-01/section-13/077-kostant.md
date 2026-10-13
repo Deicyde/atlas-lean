@@ -11,7 +11,7 @@ For $\lambda \in P_{+}$ we have $H\left(\operatorname{Hom}_{\mathfrak{g}}\left(L
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proposition 8.9](../section-8/053-proposition-8-9.md)
 
 ## Sources
 

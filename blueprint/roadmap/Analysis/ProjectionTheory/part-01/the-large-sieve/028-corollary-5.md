@@ -15,6 +15,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Theorem (Linnik)](026-linnik.md)
+- [Corollary 4](027-corollary-4.md)
 
 ## Sources
 

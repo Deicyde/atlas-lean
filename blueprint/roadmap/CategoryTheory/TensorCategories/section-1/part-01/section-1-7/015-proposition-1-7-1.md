@@ -12,7 +12,9 @@ lean: Proposition_1_7_1_combined
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.1](../section-1-1/001-definition-1-1-1.md)
+- [Definition 1.4.1](../section-1-4/010-definition-1-4-1.md)
+- [Definition 1.5.1](../section-1-5/013-definition-1-5-1.md)
 
 ## Sources
 

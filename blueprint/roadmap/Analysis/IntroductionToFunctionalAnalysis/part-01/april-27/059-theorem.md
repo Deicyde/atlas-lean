@@ -12,7 +12,7 @@ Let $H$ be a Hilbert space, and let $A: H \to H$ be a bounded linear operator. T
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (April 8, 2021 section)](../april-8/039-definition.md)
 
 ## Sources
 

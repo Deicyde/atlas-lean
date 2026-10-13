@@ -10,7 +10,8 @@ $j_* j^* \mathcal{F} = \varinjlim(f^{-n}\mathcal{F})$, where $j \colon U \hookri
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23](../lecture-10/086-definition-23.md)
+- [Definition 24](../lecture-10/087-definition-24.md)
 
 ## Sources
 

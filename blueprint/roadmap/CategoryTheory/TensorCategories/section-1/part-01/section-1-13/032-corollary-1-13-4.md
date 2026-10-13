@@ -11,7 +11,11 @@ For any pair of morphisms $f_{1}, f_{2}$ in a multiring category $\mathcal{C}$ o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.13.3](031-definition-1-13-3.md)
+
+## Proof depends on
+
+- [Proposition 1.13.1](030-proposition-1-13-1.md)
 
 ## Sources
 

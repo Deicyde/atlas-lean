@@ -11,7 +11,11 @@ If $u \in \mathcal{S}'(\mathbb{R}^{n})$ and $\varphi \in \mathcal{S}(\mathbb{R}^
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.6](../section-6/043-definition-6-6.md)
+
+## Proof depends on
+
+- [Proposition 7.3](../section-7/047-proposition-7-3.md)
 
 ## Sources
 

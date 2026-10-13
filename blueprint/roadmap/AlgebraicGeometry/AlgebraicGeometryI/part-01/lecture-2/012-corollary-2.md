@@ -12,7 +12,7 @@ A closed subspace of a variety is a variety.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](010-definition-3.md)
 
 ## Sources
 

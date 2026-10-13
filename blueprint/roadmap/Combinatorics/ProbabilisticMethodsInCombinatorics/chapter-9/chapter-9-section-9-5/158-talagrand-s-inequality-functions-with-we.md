@@ -12,6 +12,10 @@ Let $\Omega = \Omega_1 \times \cdots \times \Omega_n$ equipped with the product 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 9.5.11 (Talagrand's inequality: general form)](155-talagrand-s-inequality-general-form.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 9, Section 9.5](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

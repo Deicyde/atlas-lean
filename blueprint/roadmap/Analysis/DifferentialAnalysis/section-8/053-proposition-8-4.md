@@ -11,6 +11,11 @@ $\mathcal{S}(\mathbb{R}^n)$ is dense in $\mathcal{C}_0^{k}(\mathbb{R}^n)$ for an
 ## Depends on
 
 - [Definition 6.4](../section-6/041-definition-6-4.md)
+- [Definition 6.6](../section-6/043-definition-6-6.md)
+
+## Proof depends on
+
+- [Proposition 8.2](051-proposition-8-2.md)
 
 ## Sources
 

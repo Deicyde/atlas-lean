@@ -12,6 +12,10 @@ Let $B_{+}$ be the Borel subgroup of $G$ with Lie algebra $\mathfrak{b}_{+}:=\ma
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 17.2](097-lemma-17-2.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 17.3](../../../../../sources/v1/LieGroups.md)

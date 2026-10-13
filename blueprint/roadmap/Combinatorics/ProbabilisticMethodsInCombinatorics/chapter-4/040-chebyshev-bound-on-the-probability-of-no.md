@@ -12,7 +12,11 @@ For any random variable $X$, $\mathbb{P}(X = 0) \leq \operatorname{Var} X / (\ma
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.1.3 (Variance)](038-variance.md)
+
+## Proof depends on
+
+- [Theorem 4.1.5 (Chebyshev's inequality)](039-chebyshev-s-inequality.md)
 
 ## Sources
 

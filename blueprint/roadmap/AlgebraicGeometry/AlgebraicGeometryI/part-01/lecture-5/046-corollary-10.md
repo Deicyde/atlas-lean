@@ -12,7 +12,7 @@ If $X$ is a hypersurface in $\mathbb{A}^n$ defined by a non-constant polynomial 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 11](../lecture-4/042-definition-11.md)
 
 ## Sources
 

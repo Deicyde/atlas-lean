@@ -10,7 +10,13 @@ Any monoidal category is monoidally equivalent to a strict monoidal category.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.1](../section-1-1/001-definition-1-1-1.md)
+- [Definition 1.4.1](../section-1-4/010-definition-1-4-1.md)
+- [Definition 1.8.1](016-definition-1-8-1.md)
+
+## Proof depends on
+
+- [Proposition 1.2.1](../section-1-2/004-proposition-1-2-1.md)
 
 ## Sources
 

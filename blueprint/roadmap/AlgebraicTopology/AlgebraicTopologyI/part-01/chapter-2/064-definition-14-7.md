@@ -11,7 +11,7 @@ A CW-complex is finite-dimensional if $\operatorname{Sk}_{n} X = X$ for some $n$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.5](063-definition-14-5.md)
 
 ## Sources
 

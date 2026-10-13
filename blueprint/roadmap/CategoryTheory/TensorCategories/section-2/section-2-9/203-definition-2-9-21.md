@@ -11,7 +11,8 @@ An algebra $A$ in the category $\mathcal{C}$ is called exact if the module categ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.9.1](197-definition-2-9-1.md)
+- [Proposition 2.9.10](200-proposition-2-9-10.md)
 
 ## Proof depends on
 

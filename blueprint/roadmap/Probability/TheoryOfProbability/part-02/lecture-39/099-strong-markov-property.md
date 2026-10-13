@@ -10,7 +10,11 @@ Let $(s, \omega) \mapsto Y_s(\omega)$ be bounded and $\mathcal{R} \times \mathca
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Conditional expectation)](../../part-01/lecture-25/053-conditional-expectation.md)
+
+## Proof depends on
+
+- [Bounded convergence theorem](../../part-01/lecture-5/009-bounded-convergence-theorem.md)
 
 ## Sources
 

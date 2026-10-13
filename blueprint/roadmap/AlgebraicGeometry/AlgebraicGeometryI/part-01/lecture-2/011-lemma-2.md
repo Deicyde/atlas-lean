@@ -12,7 +12,11 @@ A closed subspace in an affine variety is also affine, and global regular functi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2](../lecture-1/005-definition-2.md)
+
+## Proof depends on
+
+- [Theorem 2.1](006-theorem-2-1.md)
 
 ## Sources
 

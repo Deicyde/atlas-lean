@@ -12,7 +12,12 @@ Let $X_1, X_2, \ldots$ be i.i.d. with $E[X_i] = \mu$, $\operatorname{Var}(X_i) =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (weak convergence)](../lecture-12/031-weak-convergence.md)
+
+## Proof depends on
+
+- [Definition (characteristic function)](../lecture-8/019-characteristic-function.md)
+- [Lévy's continuity theorem](../lecture-8/020-l-vy-s-continuity-theorem.md)
 
 ## Sources
 

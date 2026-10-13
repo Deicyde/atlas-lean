@@ -11,7 +11,7 @@ Let $F, G \colon \mathcal{C} \rightarrow \mathcal{D}$ be two functors. A natural
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.4](010-definition-3-4.md)
 
 ## Sources
 

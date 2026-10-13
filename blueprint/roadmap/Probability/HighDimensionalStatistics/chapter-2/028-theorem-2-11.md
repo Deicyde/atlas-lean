@@ -14,6 +14,10 @@ Consider the linear regression model (2.2) under the assumption ORT or, equivale
 
 - [Definition 2.10](027-definition-2-10.md)
 
+## Proof depends on
+
+- [Theorem 1.14](../section-1/014-theorem-1-14.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Chapter 2, Section 2.3](../../../../sources/v1/HighDimensionalStatistics.md)

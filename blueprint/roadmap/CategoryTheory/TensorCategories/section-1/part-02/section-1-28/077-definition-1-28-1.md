@@ -11,7 +11,8 @@ A coalgebra $C$ is pointed if its category of right comodules is pointed, i.e., 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.20.1](../../part-01/section-1-20/049-definition-1-20-1.md)
+- [Definition 1.20.2](../../part-01/section-1-20/050-definition-1-20-2.md)
 
 ## Sources
 

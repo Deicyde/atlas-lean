@@ -10,7 +10,8 @@ Assume that the linear model (2.2) holds where $\varepsilon \sim \mathsf{subG}_n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../chapter-1/002-definition-1-2.md)
+- [Definition 2.12](029-definition-2-12.md)
 
 ## Sources
 

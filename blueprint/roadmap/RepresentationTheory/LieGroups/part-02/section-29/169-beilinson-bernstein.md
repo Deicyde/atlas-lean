@@ -12,6 +12,11 @@ lean: BeilinsonBernstein.thm_29_1_iso
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 14.1 (Harish-Chandra)](../../part-01/section-14/080-harish-chandra.md)
+- [Theorem 27.16](../section-27/163-theorem-27-16.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 29, Subsection 29.1](../../../../../sources/v1/LieGroups.md)

@@ -10,7 +10,7 @@ Let $A = A^\ast$ be a self-adjoint compact operator. Then the nonzero eigenvalue
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (May 4, 2021)](../may-4/064-definition.md)
 
 ## Sources
 

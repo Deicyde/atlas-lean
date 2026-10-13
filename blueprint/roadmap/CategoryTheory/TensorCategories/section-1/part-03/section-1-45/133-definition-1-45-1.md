@@ -11,7 +11,7 @@ We will say that a $\mathbb{Z}_{+}$-ring $A$ with $\mathbb{Z}_{+}$-basis $I$ is 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.42.1](../../part-02/section-1-42/122-definition-1-42-1.md)
 
 ## Sources
 

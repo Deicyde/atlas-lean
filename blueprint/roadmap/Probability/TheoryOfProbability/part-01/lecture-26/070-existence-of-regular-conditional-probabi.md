@@ -12,7 +12,7 @@ Regular conditional probabilities exist if $(S, \mathcal{S})$ is nice.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Regular conditional distribution)](062-regular-conditional-distribution.md)
 
 ## Sources
 

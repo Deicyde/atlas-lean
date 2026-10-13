@@ -12,7 +12,12 @@ Let $0 \rightarrow A_{*} \xrightarrow{f} A'_{*} \rightarrow 0$, $0 \rightarrow B
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
+- [Definition 8.3](../section-8/035-definition-8-3.md)
+
+## Proof depends on
+
+- [Proposition 9.4 (Five lemma)](040-five-lemma.md)
 
 ## Sources
 

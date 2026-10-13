@@ -10,7 +10,8 @@ For any fixed $Y$, the category of $X$ that has an affine morphism to $Y$ corres
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9](../lecture-4/037-definition-9.md)
+- [Definition 25](../lecture-10/088-definition-25.md)
 
 ## Sources
 

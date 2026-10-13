@@ -12,7 +12,7 @@ Suppose that $\lim_{x \to \infty} P(X_1 > x) / P(|X_1| > x) = \theta \in [0,1]$ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (weak convergence)](../lecture-12/031-weak-convergence.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ Let $S_n = X_1 + \cdots + X_n$ where $X_i \in \{-1, 1\}$ uniformly i.i.d. Let $\
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 3.3.1 (Markov's inequality)](../chapter-3/033-markov-s-inequality.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 5](../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

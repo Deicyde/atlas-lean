@@ -10,7 +10,16 @@ Assume that $\mathcal{C}$ is a finite tensor (not only multitensor) category. Th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.12.3](../../section-1/part-01/section-1-12/029-definition-1-12-3.md)
+- [Definition 1.18.1](../../section-1/part-01/section-1-18/045-definition-1-18-1.md)
+- [Definition 2.4.3](../section-2-4/183-definition-2-4-3.md)
+- [Definition 2.6.1](../section-2-6/185-definition-2-6-1.md)
+- [Definition 2.14.1](220-definition-2-14-1.md)
+
+## Proof depends on
+
+- [Lemma 2.14.3](221-lemma-2-14-3.md)
+- [Theorem 2.14.6](223-theorem-2-14-6.md)
 
 ## Sources
 

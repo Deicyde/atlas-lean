@@ -10,7 +10,11 @@ If $X_n$ is a martingale with $E[X_n^2] < \infty$ for all $n$, and $A_n = \sum_{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Conditional expectation)](../lecture-25/053-conditional-expectation.md)
+
+## Proof depends on
+
+- [Monotone convergence](../lecture-5/011-monotone-convergence.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ Let $p_{i}(m, n)$ denote the number of elements of $L(m, n)$ of rank $i$. Then $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proposition 6.2](023-proposition-6-2.md)
+
+## Proof depends on
+
+- [Lemma 6.5](025-lemma-6-5.md)
 
 ## Sources
 

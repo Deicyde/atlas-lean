@@ -16,6 +16,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Lemma 2 (Berge, max matching iff no augmenting path)](022-berge-max-matching-iff-no-augmenting-pat.md)
+- [Lemma 8 (Cycle Shrinking / Edmonds)](028-cycle-shrinking-edmonds.md)
 
 ## Sources
 

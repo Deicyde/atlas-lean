@@ -11,7 +11,7 @@ Let $P$ be a graded poset of rank $n$. We say that $P$ has the Sperner property 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.1](010-definition-4-1.md)
 
 ## Sources
 

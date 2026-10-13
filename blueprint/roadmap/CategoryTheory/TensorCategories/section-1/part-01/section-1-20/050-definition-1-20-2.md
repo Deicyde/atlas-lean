@@ -11,7 +11,7 @@ A left comodule over a coalgebra $C$ is a vector space $M$ together with a linea
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.20.1](049-definition-1-20-1.md)
 
 ## Sources
 

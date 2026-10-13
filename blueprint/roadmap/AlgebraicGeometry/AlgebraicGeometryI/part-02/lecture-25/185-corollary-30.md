@@ -12,7 +12,12 @@ Riemann--Roch implies $\dim(\Gamma(\mathcal{E})) - \dim(\Gamma(K \otimes \mathca
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 37](../../part-01/lecture-19/148-definition-37.md)
+- [Definition 41](../lecture-22/167-definition-41.md)
+
+## Proof depends on
+
+- [Theorem 24.2 (Riemann-Roch for Curves)](../lecture-24/179-riemann-roch-for-curves.md)
 
 ## Sources
 

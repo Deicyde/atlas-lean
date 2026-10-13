@@ -10,7 +10,11 @@ Let $Q$ be a conic in $\mathbb{P}^2$ and $X$ a hexagon inscribed in $Q$. Then th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4 (Projective Space)](../lecture-2/016-projective-space.md)
+
+## Proof depends on
+
+- [Theorem 5.2 (Bezout)](051-bezout.md)
 
 ## Sources
 

@@ -10,7 +10,9 @@ We say that two algebras $A$ and $B$ in $\mathcal{C}$ are Morita equivalent if t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.2.1](../section-2-2/178-definition-2-2-1.md)
+- [Definition 2.9.1](197-definition-2-9-1.md)
+- [Proposition 2.9.10](200-proposition-2-9-10.md)
 
 ## Proof depends on
 

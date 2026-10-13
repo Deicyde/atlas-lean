@@ -11,7 +11,7 @@ A left module category over $\mathcal{C}$ is a category $\mathcal{M}$ equipped w
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.1](../../section-1/part-01/section-1-1/001-definition-1-1-1.md)
 
 ## Sources
 

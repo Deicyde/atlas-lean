@@ -10,12 +10,14 @@ Let $A, B$ be closed in a normal space or compact in a Hausdorff space. The \v{C
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.6](../../part-01/section-8/038-definition-8-6.md)
+- [Corollary 35.9 (Mayer-Vietoris)](../section-35/157-mayer-vietoris.md)
 
 ## Proof depends on
 
 - [Definition 34.4](../section-34/149-definition-34-4.md)
 - [Definition 26.5](../../part-01/section-26/111-definition-26-5.md)
+- [Theorem 36.1](158-theorem-36-1.md)
 
 ## Sources
 

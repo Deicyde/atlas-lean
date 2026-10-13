@@ -16,6 +16,7 @@ This node has no prerequisites.
 
 - [Lemma 1 (Farkas)](032-farkas.md)
 - [Theorem 2 (weak duality for standard form)](033-weak-duality-for-standard-form.md)
+- [Weak Duality Theorem](../linear-programs/010-weak-duality-theorem.md)
 
 ## Sources
 

@@ -12,11 +12,13 @@ Recall that $\mathcal{B}_0(k) \subset \mathbb{R}^d$ denotes the set of all $k$-s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.1](../section-5/059-definition-5-1.md)
 
 ## Proof depends on
 
 - [Lemma 5.8 (Pinsker's inequality)](../section-5/065-pinsker-s-inequality.md)
+- [Theorem 5.11](../section-5/068-theorem-5-11.md)
+- [Lemma 5.14 (Sparse Varshamov-Gilbert)](../section-5/071-sparse-varshamov-gilbert.md)
 
 ## Sources
 

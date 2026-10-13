@@ -12,7 +12,12 @@ $\mathbb{P}^n$ is complete.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4 (Projective Space)](../lecture-2/016-projective-space.md)
+- [Definition 19](078-definition-19.md)
+
+## Proof depends on
+
+- [Lemma 18](../lecture-7/067-lemma-18.md)
 
 ## Sources
 

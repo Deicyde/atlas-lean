@@ -12,7 +12,11 @@ Let $\mathcal{C}$ be a multitensor category. Then the bifunctor $\otimes: \mathc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.12.3](../section-1-12/029-definition-1-12-3.md)
+
+## Proof depends on
+
+- [Proposition 1.10.9](../section-1-10/023-proposition-1-10-9.md)
 
 ## Sources
 

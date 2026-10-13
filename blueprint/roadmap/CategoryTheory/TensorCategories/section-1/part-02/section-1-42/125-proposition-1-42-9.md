@@ -13,6 +13,10 @@ The categorifications of $\mathbb{Z}[G]$ are $\operatorname{Vec}_{G}^{\omega}$, 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition 1.7.1](../../part-01/section-1-7/015-proposition-1-7-1.md)
+
 ## Sources
 
 - [MIT 18.769 Topics in Lie Theory: Tensor Categories (Spring 2009), Section 1.42](../../../../../../sources/v1/TensorCategories.md)

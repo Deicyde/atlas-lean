@@ -12,7 +12,7 @@ Suppose $f, g: E \to \mathbb{R}$ are measurable functions. Then we have the foll
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (April 1, 2021)](025-definition.md)
 
 ## Sources
 

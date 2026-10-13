@@ -12,6 +12,7 @@ The map $\phi: U(\mathfrak{n}_{-}) \rightarrow M_{\lambda}$ given by $\phi(x)=xv
 ## Depends on
 
 - [Definition 8.3](048-definition-8-3.md)
+- [Definition 8.4](049-definition-8-4.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ For $u \in \mathcal{S}(\mathbb{R}^{n})$, set $\|u\|_{(k)} = \|\langle x\rangle^{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.4](041-definition-6-4.md)
+- [Definition 6.6](043-definition-6-6.md)
+
+## Proof depends on
+
+- [Definition 6.5](042-definition-6-5.md)
 
 ## Sources
 

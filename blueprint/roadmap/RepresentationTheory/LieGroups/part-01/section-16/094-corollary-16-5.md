@@ -12,6 +12,11 @@ lean: tensor_projective_in_O
 ## Depends on
 
 - [Definition 15.1](../section-15/084-definition-15-1.md)
+- [Definition 8.4](../section-8/049-definition-8-4.md)
+
+## Proof depends on
+
+- [Proposition 16.4](093-proposition-16-4.md)
 
 ## Sources
 

@@ -10,7 +10,9 @@ If $S$ is an antipode on a bialgebra $H$ then $S$ is an antihomomorphism of alge
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.20.1](../section-1-20/049-definition-1-20-1.md)
+- [Definition 1.21.2](../section-1-21/052-definition-1-21-2.md)
+- [Definition 1.22.2](055-definition-1-22-2.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ lean: TensorDual.prop_1_10_9
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10.1](019-definition-1-10-1.md)
+- [Definition 1.10.2](020-definition-1-10-2.md)
 
 ## Sources
 

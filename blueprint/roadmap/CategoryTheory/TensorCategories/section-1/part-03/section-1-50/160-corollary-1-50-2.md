@@ -10,7 +10,11 @@ In the above situation, one has $\operatorname{FPdim}(\mathcal{C}) \geq \operato
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.47.5](../section-1-47/152-definition-1-47-5.md)
+
+## Proof depends on
+
+- [Theorem 1.50.1](159-theorem-1-50-1.md)
 
 ## Sources
 

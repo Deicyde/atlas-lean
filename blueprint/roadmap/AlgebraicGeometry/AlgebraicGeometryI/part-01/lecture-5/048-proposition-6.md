@@ -12,7 +12,11 @@ All irreducible curves over a given field (or even various fields of equal cardi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../lecture-3/025-definition-7.md)
+
+## Proof depends on
+
+- [Definition 11](../lecture-4/042-definition-11.md)
 
 ## Sources
 

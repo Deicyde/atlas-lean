@@ -12,6 +12,7 @@ A vector $v \in V$ is $K$-finite if it is contained in a finite-dimensional subr
 ## Depends on
 
 - [Definition 1.2](../section-1/001-definition-1-2.md)
+- [Definition 1.8](../section-1/004-definition-1-8.md)
 
 ## Sources
 

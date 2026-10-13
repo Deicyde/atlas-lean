@@ -11,7 +11,7 @@ A projective $\theta$-functor is a direct summand in $F_{V}(\theta)$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 22.1](129-definition-22-1.md)
 
 ## Sources
 

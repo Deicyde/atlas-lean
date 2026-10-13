@@ -11,7 +11,7 @@ A module subcategory of a $\mathcal{C}$-module category $\mathcal{M}$ is a full 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.1.1](174-definition-2-1-1.md)
 
 ## Sources
 

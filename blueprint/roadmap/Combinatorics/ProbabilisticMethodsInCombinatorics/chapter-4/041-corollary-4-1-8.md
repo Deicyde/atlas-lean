@@ -10,7 +10,7 @@ If $\mathbb{E}X > 0$ and $\operatorname{Var} X = o((\mathbb{E}X)^2)$, then $X > 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.1.3 (Variance)](038-variance.md)
 
 ## Proof depends on
 

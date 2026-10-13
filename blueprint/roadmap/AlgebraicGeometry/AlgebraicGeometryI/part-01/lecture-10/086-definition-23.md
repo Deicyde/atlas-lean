@@ -11,7 +11,7 @@ Let $\mathcal{F}$ be a presheaf on $X$. Then its pushforward along $f$ is a pres
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 21](084-definition-21.md)
 
 ## Sources
 

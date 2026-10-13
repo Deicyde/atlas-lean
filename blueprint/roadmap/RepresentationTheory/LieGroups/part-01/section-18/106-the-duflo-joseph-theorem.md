@@ -17,6 +17,8 @@ $\phi$ is an isomorphism, i.e., the action homomorphism $\phi: U_{\chi_{\lambda+
 - [Theorem 14.1 (Harish-Chandra)](../section-14/080-harish-chandra.md)
 - [Proposition 8.5](../section-8/050-proposition-8-5.md)
 - [Proposition 18.7](105-proposition-18-7.md)
+- [Theorem 13.5 (Kostant)](../section-13/079-kostant.md)
+- [Proposition 18.5](104-proposition-18-5.md)
 
 ## Sources
 

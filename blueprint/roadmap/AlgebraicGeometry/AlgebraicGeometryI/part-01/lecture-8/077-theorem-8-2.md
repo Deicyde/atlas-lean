@@ -12,7 +12,9 @@ The previous theorem holds for $X, Y \subseteq \mathbb{P}^n$; moreover, the inte
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4 (Projective Space)](../lecture-2/016-projective-space.md)
+- [Definition 11](../lecture-4/042-definition-11.md)
+- [Theorem 8.1](076-theorem-8-1.md)
 
 ## Sources
 

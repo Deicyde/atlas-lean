@@ -14,6 +14,11 @@ If $X_i$ are i.i.d. with mean zero, variance $\sigma^2$, and $E|X_i|^3 = \rho < 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fubini's theorem](../lecture-7/015-fubini-s-theorem.md)
+- [Definition (characteristic function)](../lecture-8/019-characteristic-function.md)
+
 ## Sources
 
 - [MIT 18.175 Theory of Probability (Spring 2014), Lecture 16, Berry-Esseen theorem](../../../../../sources/v1/TheoryOfProbability.md)

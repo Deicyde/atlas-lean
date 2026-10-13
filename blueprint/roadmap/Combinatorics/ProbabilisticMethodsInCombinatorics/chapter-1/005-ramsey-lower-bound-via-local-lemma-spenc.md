@@ -12,6 +12,10 @@ If $\left(\binom{k}{2}\binom{n}{k-2} + 1\right) 2^{1-\binom{k}{2}} < 1/e$, then 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 1.1.8 (Lovász local lemma – random variable model)](004-lov-sz-local-lemma-random-variable-model.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 1, Section 1.1](../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

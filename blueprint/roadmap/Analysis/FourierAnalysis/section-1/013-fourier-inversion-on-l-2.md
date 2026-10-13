@@ -12,7 +12,11 @@ Let $\mathcal{G}(f)(x) = \frac{1}{2\pi}\hat{f}(-x)$. Then for all $f \in L^2(\ma
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corollary 2 (Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$)](011-corollary-2.md)
+
+## Proof depends on
+
+- [Theorem 1 (Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$)](007-theorem-1.md)
 
 ## Sources
 

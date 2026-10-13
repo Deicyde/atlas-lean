@@ -10,7 +10,8 @@ If $L_{\mu-\rho}$ occurs in the composition series of $M_{\lambda-\rho}$ (i.e., 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.4](../section-8/049-definition-8-4.md)
+- [Proposition 8.9](../section-8/053-proposition-8-9.md)
 
 ## Proof depends on
 

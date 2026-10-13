@@ -11,7 +11,7 @@ Let $R$ be a commutative ring. A graded $R$-algebra is a graded $R$-module $\ldo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 20.3](../../part-01/section-20/080-definition-20-3.md)
 
 ## Sources
 

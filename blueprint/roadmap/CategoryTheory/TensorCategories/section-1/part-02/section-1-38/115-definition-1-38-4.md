@@ -12,6 +12,8 @@ The dimension of an object $X$ with respect to a pivotal structure $a$ is $\oper
 ## Depends on
 
 - [Definition 1.38.2](114-definition-1-38-2.md)
+- [Definition 1.10.11](../../part-01/section-1-10/024-definition-1-10-11.md)
+- [Definition 1.38.1](113-definition-1-38-1.md)
 
 ## Sources
 

@@ -10,7 +10,9 @@ $\sum_{x \in X \cap Y} \operatorname{mult}_x(X,Y) = \deg(X) \deg(Y)$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4 (Projective Space)](../lecture-2/016-projective-space.md)
+- [Definition 8](../lecture-3/027-definition-8.md)
+- [Definition 13](../lecture-5/050-definition-13.md)
 
 ## Sources
 

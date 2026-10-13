@@ -13,6 +13,7 @@ If $f$ is analytic in an open set $\Omega$, then $\int_{\gamma} f(z)\, dz = 0$ f
 ## Depends on
 
 - [Definition 1 (Lecture 13: The General Cauchy Theorem)](014-definition-1.md)
+- [Definition 2](015-definition-2.md)
 
 ## Sources
 

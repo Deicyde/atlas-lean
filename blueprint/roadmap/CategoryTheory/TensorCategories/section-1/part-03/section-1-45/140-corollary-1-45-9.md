@@ -12,7 +12,14 @@ Let $\mathcal{C}$ be a ring category with right duals and finitely many simple o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10.1](../../part-01/section-1-10/019-definition-1-10-1.md)
+- [Definition 1.11.1](../../part-01/section-1-11/025-definition-1-11-1.md)
+- [Definition 1.13.3](../../part-01/section-1-13/031-definition-1-13-3.md)
+- [Definition 1.45.3](135-definition-1-45-3.md)
+
+## Proof depends on
+
+- [Proposition 1.45.5](137-proposition-1-45-5.md)
 
 ## Sources
 

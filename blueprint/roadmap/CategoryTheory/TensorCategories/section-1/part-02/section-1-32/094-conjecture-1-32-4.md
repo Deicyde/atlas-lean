@@ -11,7 +11,9 @@ Any finite pointed tensor category over a field of characteristic zero is tensor
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.18.1](../../part-01/section-1-18/045-definition-1-18-1.md)
+- [Definition 1.28.3](../section-1-28/078-definition-1-28-3.md)
+- [Definition 1.32.2](092-definition-1-32-2.md)
 
 ## Sources
 

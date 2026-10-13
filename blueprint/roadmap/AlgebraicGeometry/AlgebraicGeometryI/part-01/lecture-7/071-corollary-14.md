@@ -12,7 +12,8 @@ Suppose $X$ is irreducible, $Y$ is separated, $U$ is a nonempty open subset of $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../lecture-3/025-definition-7.md)
+- [Definition 17](065-definition-17.md)
 
 ## Sources
 

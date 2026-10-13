@@ -12,7 +12,12 @@ If $X$ is irreducible and $Y$ is separated and $f, g \colon X \to Y$ agree on a 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../lecture-3/025-definition-7.md)
+- [Definition 17](065-definition-17.md)
+
+## Proof depends on
+
+- [Definition 18](069-definition-18.md)
 
 ## Sources
 

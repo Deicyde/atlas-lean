@@ -10,7 +10,12 @@ If $(V, \pi)$ is a continuous representation of $G$ then the action $G \times V 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1/001-definition-1-2.md)
+
+## Proof depends on
+
+- [Lemma 3.4](010-lemma-3-4.md)
+- [Lemma 3.7](012-lemma-3-7.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ Let $X \in I$. (1) The number $\alpha = \mathrm{FPdim}(X)$ is an algebraic integ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.45.3](135-definition-1-45-3.md)
+
+## Proof depends on
+
+- [Theorem 1.44.1](../section-1-44/132-theorem-1-44-1.md)
 
 ## Sources
 

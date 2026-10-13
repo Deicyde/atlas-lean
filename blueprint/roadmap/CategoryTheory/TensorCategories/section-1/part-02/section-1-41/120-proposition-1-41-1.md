@@ -10,7 +10,13 @@ Let $\mathcal{C}$ be a semisimple multitensor category and let $V$ be an object 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10.1](../../part-01/section-1-10/019-definition-1-10-1.md)
+- [Definition 1.10.2](../../part-01/section-1-10/020-definition-1-10-2.md)
+- [Definition 1.12.3](../../part-01/section-1-12/029-definition-1-12-3.md)
+
+## Proof depends on
+
+- [Proposition 1.10.9](../../part-01/section-1-10/023-proposition-1-10-9.md)
 
 ## Sources
 

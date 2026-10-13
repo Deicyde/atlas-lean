@@ -10,7 +10,8 @@ Assume that $X$ is a $D$-affine variety and that $K$ is an affine algebraic grou
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 29.3](../section-29/171-definition-29-3.md)
+- [Definition 30.9](179-definition-30-9.md)
 
 ## Sources
 

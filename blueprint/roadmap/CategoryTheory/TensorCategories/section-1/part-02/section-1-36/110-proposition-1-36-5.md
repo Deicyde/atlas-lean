@@ -10,7 +10,11 @@ Let $G$ be a group. Then fiber functors on $\operatorname{Vec}_G$ up to an isomo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.19.1](../../part-01/section-1-19/048-definition-1-19-1.md)
+
+## Proof depends on
+
+- [Definition 1.4.1](../../part-01/section-1-4/010-definition-1-4-1.md)
 
 ## Sources
 

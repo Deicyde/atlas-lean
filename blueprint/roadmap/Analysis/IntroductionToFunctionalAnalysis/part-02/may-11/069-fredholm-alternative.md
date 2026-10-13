@@ -14,6 +14,10 @@ Let $A = A^\ast \in \mathcal{B}(H)$ be a self-adjoint compact operator, and let 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition (April 22, 2021)](../../part-01/april-22/058-proposition.md)
+
 ## Sources
 
 - [MIT 18.102 Introduction to Functional Analysis (Spring 2021), May 11, 2021](../../../../../sources/v1/IntroductionToFunctionalAnalysis.md)

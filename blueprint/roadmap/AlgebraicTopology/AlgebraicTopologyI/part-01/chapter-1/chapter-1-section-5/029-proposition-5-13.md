@@ -11,7 +11,9 @@ $S_{*}(X) \rightarrow \mathbb{Z}$ is a chain homotopy equivalence, where $X$ is 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.3](../chapter-1-section-1/003-definition-1-3.md)
+- [Definition 5.9](025-definition-5-9.md)
+- [Definition 5.12](028-definition-5-12.md)
 
 ## Sources
 

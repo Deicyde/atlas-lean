@@ -14,6 +14,10 @@ Let $\Omega \subset \mathbb{C}$ be a region, $\mathcal{F}$ a family of holomorph
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 2 (Cauchy's Integral Formula)](../lecture-13/017-cauchy-s-integral-formula.md)
+
 ## Sources
 
 - [MIT 18.112 Functions of a Complex Variable (Fall 2008), Lecture 19: Normal Families](../../../../sources/v1/ComplexVariables.md)

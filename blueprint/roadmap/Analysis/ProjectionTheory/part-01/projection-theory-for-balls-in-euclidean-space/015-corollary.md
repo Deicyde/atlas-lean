@@ -12,7 +12,7 @@ If $R$-SETUP and $X, D$ have Hausdorff spacing, then $|D| \lesssim \frac{SR}{|X|
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section: Projection theory for balls in Euclidean space)](013-definition.md)
 
 ## Sources
 

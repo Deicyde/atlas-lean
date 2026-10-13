@@ -10,7 +10,11 @@ $L_n$ is $O(1)$-subGaussian about its mean. That is, $\mathbb{P}(|L_n - \mathbb{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.4.17 (Sub-Gaussian distribution)](../chapter-9-section-9-4/146-sub-gaussian-distribution.md)
+
+## Proof depends on
+
+- [Theorem 9.5.14 (Talagrand's inequality — functions with weighted certificates)](../chapter-9-section-9-5/158-talagrand-s-inequality-functions-with-we.md)
 
 ## Sources
 

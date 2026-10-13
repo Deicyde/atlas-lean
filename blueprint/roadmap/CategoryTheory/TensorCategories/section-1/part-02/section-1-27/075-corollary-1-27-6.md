@@ -10,7 +10,13 @@ A finite dimensional bialgebra $H$ over a field of characteristic zero cannot co
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.21.2](../../part-01/section-1-21/052-definition-1-21-2.md)
+- [Definition 1.24.2](../section-1-24/065-definition-1-24-2.md)
+
+## Proof depends on
+
+- [Proposition 1.27.1](072-proposition-1-27-1.md)
+- [Theorem 1.27.4](073-theorem-1-27-4.md)
 
 ## Sources
 

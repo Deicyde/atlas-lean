@@ -11,7 +11,7 @@ Let $\mathcal{M}$ be a sheaf on $X$. We say that $\mathcal{M}$ is a sheaf of $\m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 22](085-definition-22.md)
 
 ## Sources
 

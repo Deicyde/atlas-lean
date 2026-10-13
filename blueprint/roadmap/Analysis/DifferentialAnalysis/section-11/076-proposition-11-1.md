@@ -12,7 +12,11 @@ The subspace $\mathcal{S}(\mathbb{R}^{n}) \subset \mathcal{S}'(\mathbb{R}^{n})$ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.6](../section-6/043-definition-6-6.md)
+
+## Proof depends on
+
+- [Theorem 10.5 (Schwartz representation)](../section-10/074-schwartz-representation.md)
 
 ## Sources
 

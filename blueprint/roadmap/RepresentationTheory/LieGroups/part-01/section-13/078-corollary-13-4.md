@@ -13,6 +13,10 @@ $\frac{1}{|W|} \mathrm{CT}\left(\prod_{\alpha \in R} \frac{1-e^{\alpha}}{1-qe^{\
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 13.3 (Kostant)](077-kostant.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 13.2](../../../../../sources/v1/LieGroups.md)

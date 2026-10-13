@@ -10,7 +10,10 @@ Let $E$ be the exceptional locus over $x$ when blowing up $X \ni x$. Then the co
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 20](../lecture-9/082-definition-20.md)
+- [Definition 33](../lecture-16/125-definition-33.md)
+- [Definition 35](../lecture-18/137-definition-35.md)
+- [Definition 38](../lecture-19/150-definition-38.md)
 
 ## Sources
 

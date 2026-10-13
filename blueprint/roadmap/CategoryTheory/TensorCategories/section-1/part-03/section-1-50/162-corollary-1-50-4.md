@@ -10,7 +10,7 @@ A finite dimensional quasi-Hopf algebra is a free module over its quasi-Hopf sub
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.35.2](../../part-02/section-1-35/106-definition-1-35-2.md)
 
 ## Sources
 

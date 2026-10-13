@@ -14,6 +14,10 @@ We have $\mathbb{Z}[\zeta]/(1-\zeta) \cong \mathbb{F}_{2}$.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 4](../main-text-after-lemma-3/004-lemma-4.md)
+
 ## Sources
 
 - [MIT 18.318 Topics in Algebraic Combinatorics (Spring 2006), Main text (after Lemma 4)](../../../../sources/v1/AlgebraicCombinatorics.md)

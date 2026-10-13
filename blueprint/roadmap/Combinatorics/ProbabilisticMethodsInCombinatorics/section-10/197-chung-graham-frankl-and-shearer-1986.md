@@ -12,6 +12,10 @@ Every triangle-intersecting family of graphs on $n$ labeled vertices has size $<
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary 10.4.7](196-corollary-10-4-7.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Section 10.4](../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

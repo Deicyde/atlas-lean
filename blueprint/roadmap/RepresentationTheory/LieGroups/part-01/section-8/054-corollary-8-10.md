@@ -11,6 +11,7 @@ Irreducible highest weight $\mathfrak{g}$-modules are classified by their highes
 ## Depends on
 
 - [Definition 8.3](048-definition-8-3.md)
+- [Proposition 8.9](053-proposition-8-9.md)
 
 ## Proof depends on
 

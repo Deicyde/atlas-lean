@@ -12,7 +12,11 @@ The measure defined by (1.11), (1.12) from $0 \leq u \in (\mathcal{C}_0(X))'$ by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 2.4](012-theorem-2-4.md)
+
+## Proof depends on
+
+- [Proposition 2.5](013-proposition-2-5.md)
 
 ## Sources
 

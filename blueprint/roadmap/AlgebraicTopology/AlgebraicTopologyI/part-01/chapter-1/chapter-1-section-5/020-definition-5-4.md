@@ -11,7 +11,9 @@ A map $f \colon X \rightarrow Y$ is a homotopy equivalence if $[f] \in [X, Y]$ i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.2](../chapter-1-section-3/009-definition-3-2.md)
+- [Definition 5.1](017-definition-5-1.md)
+- [Definition 5.3](019-definition-5-3.md)
 
 ## Sources
 

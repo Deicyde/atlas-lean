@@ -10,12 +10,13 @@ lean: HarishChandraIso
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 10.1 (Chevalley restriction theorem)](../section-10/058-chevalley-restriction-theorem.md)
 
 ## Proof depends on
 
 - [Definition 8.3](../section-8/048-definition-8-3.md)
 - [Proposition 8.5](../section-8/050-proposition-8-5.md)
+- [Definition 8.4](../section-8/049-definition-8-4.md)
 
 ## Sources
 

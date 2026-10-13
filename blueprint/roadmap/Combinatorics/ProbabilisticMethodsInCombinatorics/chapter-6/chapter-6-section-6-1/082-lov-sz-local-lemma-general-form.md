@@ -13,6 +13,7 @@ Let $A_1, \ldots, A_n$ be events. For each $i \in [n]$, let $N(i)$ be such that 
 ## Depends on
 
 - [Definition 6.1.2 (Dependency (di)graph)](080-di.md)
+- [Definition 6.1.1 (Independence from a set of events)](079-independence-from-a-set-of-events.md)
 
 ## Sources
 

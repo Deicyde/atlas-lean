@@ -14,6 +14,10 @@ For any $\gamma \in (0, 1/2)$, there exist binary vectors $\omega_1, \ldots, \om
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 1.9 (Hoeffding's inequality)](../section-1/009-hoeffding-s-inequality.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Section 5.4](../../../../sources/v1/HighDimensionalStatistics.md)

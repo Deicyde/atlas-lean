@@ -12,7 +12,7 @@ Let $X_i$ be i.i.d. with $E[X_i] = 0$ and $E[X_i^2] = \sigma^2 < \infty$. If $N$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Stopping time)](051-stopping-time.md)
 
 ## Sources
 

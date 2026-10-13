@@ -14,6 +14,10 @@ If $B \subset A$ and $A$ is finitely generated over $B$ as a $B$-module ($A$ is 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 7](039-lemma-7.md)
+
 ## Sources
 
 - [MIT 18.725 Algebraic Geometry (Fall 2015), Lecture 4](../../../../../sources/v1/AlgebraicGeometryI.md)

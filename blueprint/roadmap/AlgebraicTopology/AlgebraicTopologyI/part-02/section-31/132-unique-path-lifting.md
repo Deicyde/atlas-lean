@@ -12,7 +12,7 @@ Let $p \colon E \rightarrow B$ be a covering space, and $\omega \colon I \righta
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 31.1](129-definition-31-1.md)
 
 ## Sources
 

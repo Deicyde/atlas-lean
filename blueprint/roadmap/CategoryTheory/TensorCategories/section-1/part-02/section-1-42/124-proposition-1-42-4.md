@@ -10,7 +10,13 @@ If $\mathcal{C}$ is a semisimple multitensor category then $\operatorname{Gr}(\m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.12.3](../../part-01/section-1-12/029-definition-1-12-3.md)
+- [Lemma 1.16.1](../../part-01/section-1-16/044-lemma-1-16-1.md)
+- [Definition 1.42.2](123-definition-1-42-2.md)
+
+## Proof depends on
+
+- [Proposition 1.41.1](../section-1-41/120-proposition-1-41-1.md)
 
 ## Sources
 

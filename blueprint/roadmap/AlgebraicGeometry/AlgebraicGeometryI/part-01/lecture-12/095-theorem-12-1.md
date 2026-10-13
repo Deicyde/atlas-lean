@@ -10,7 +10,12 @@ Let $X = \operatorname{Spec}(A)$ be an affine variety. Then there is an equivale
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2](../lecture-1/005-definition-2.md)
+- [Definition 25](../lecture-10/088-definition-25.md)
+
+## Proof depends on
+
+- [Proposition 16](092-proposition-16.md)
 
 ## Sources
 

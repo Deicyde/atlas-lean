@@ -11,7 +11,7 @@ Let $X$ be any topological space. A singular $n$-simplex in $X$ is a continuous 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1](001-definition-1-1.md)
 
 ## Sources
 

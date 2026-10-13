@@ -13,6 +13,10 @@ The quotient poset $B_{R_{mn}} / G_{mn}$ is isomorphic to $L(m, n)$.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 6.8](027-lemma-6-8.md)
+
 ## Sources
 
 - [MIT 18.318 Topics in Algebraic Combinatorics (Spring 2006), Section 6](../../../../sources/v1/AlgebraicCombinatorics.md)

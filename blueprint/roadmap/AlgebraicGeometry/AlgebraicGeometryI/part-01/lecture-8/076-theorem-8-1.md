@@ -10,7 +10,15 @@ Suppose $X$, $Y$ are irreducible subvarieties in $\mathbb{A}^n$. Then each compo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](../lecture-2/010-definition-3.md)
+- [Definition 7](../lecture-3/025-definition-7.md)
+- [Definition 8](../lecture-3/027-definition-8.md)
+- [Definition 11](../lecture-4/042-definition-11.md)
+
+## Proof depends on
+
+- [Theorem 5.4](../lecture-5/053-theorem-5-4.md)
+- [Theorem 7.1](../lecture-7/062-theorem-7-1.md)
 
 ## Sources
 

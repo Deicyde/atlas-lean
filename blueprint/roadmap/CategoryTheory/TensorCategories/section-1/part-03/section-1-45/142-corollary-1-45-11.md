@@ -12,7 +12,9 @@ Let $\mathcal{C}$ and $\mathcal{D}$ be tensor categories with finitely many clas
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.12.3](../../part-01/section-1-12/029-definition-1-12-3.md)
+- [Definition 1.14.1](../../part-01/section-1-14/036-definition-1-14-1.md)
+- [Definition 1.45.3](135-definition-1-45-3.md)
 
 ## Sources
 

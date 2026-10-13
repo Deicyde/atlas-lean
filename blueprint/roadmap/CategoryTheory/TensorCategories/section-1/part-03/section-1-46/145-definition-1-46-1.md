@@ -11,7 +11,7 @@ Deligne's tensor product $\mathcal{C} \boxtimes \mathcal{D}$ is an abelian categ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.18.1](../../part-01/section-1-18/045-definition-1-18-1.md)
 
 ## Sources
 

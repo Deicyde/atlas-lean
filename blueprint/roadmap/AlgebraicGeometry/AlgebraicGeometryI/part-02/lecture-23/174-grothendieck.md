@@ -12,7 +12,8 @@ A $\delta$-functor $(\mathcal{F}^i)$ for given $\mathcal{F}$ is universal provid
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 43](../lecture-22/171-definition-43.md)
+- [Definition 44](../lecture-22/172-definition-44.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ A multiring category over $k$ is a locally finite $k$-linear abelian monoidal ca
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.1](../section-1-1/001-definition-1-1-1.md)
+- [Definition 1.12.1](../section-1-12/027-definition-1-12-1.md)
 
 ## Sources
 

@@ -12,11 +12,13 @@ The minimax rate of estimation over $\mathbb{R}^d$ in the Gaussian sequence mode
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.1](059-definition-5-1.md)
 
 ## Proof depends on
 
 - [Lemma 5.8 (Pinsker's inequality)](065-pinsker-s-inequality.md)
+- [Theorem 5.11](068-theorem-5-11.md)
+- [Lemma 5.12 (Varshamov-Gilbert)](069-varshamov-gilbert.md)
 
 ## Sources
 

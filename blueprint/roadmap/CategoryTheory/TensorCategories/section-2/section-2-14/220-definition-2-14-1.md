@@ -11,7 +11,8 @@ We denote the category $\operatorname{Fun}_{\mathcal{C}}(\mathcal{M}, \mathcal{M
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.2.1](../section-2-2/178-definition-2-2-1.md)
+- [Definition 2.12.1](../section-2-12/213-definition-2-12-1.md)
 
 ## Sources
 

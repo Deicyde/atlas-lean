@@ -11,7 +11,7 @@ A monoidal subcategory of a monoidal category $(\mathcal{C}, \otimes, a, \mathbf
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.1](001-definition-1-1-1.md)
 
 ## Sources
 

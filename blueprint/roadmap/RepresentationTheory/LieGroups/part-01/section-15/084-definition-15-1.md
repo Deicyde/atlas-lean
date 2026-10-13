@@ -12,6 +12,7 @@ The category $\mathcal{O}=\mathcal{O}_{\mathfrak{g}}$ is the full subcategory of
 ## Depends on
 
 - [Definition 8.2](../section-8/047-definition-8-2.md)
+- [Definition 8.1](../section-8/046-definition-8-1.md)
 
 ## Sources
 

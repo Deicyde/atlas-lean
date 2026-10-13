@@ -10,7 +10,7 @@ Let $p, q > 0$. Any map $S^{p+q} \rightarrow S^{p} \times S^{q}$ induces the zer
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 26.5](../../part-01/section-26/111-definition-26-5.md)
 
 ## Proof depends on
 

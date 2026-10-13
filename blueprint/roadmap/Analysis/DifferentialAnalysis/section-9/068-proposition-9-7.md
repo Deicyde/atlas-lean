@@ -13,6 +13,10 @@ If $m \leq 0$ is an integer then $u \in H^m(\mathbb{R}^n)$ if and only if it can
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition 9.6](067-proposition-9-6.md)
+
 ## Sources
 
 - [MIT 18.155 Differential Analysis (Fall 2004), Section 9](../../../../sources/v1/DifferentialAnalysis.md)

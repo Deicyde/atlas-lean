@@ -12,7 +12,7 @@ Any boundary is a cycle; that is, $d^{2} = 0$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.4](004-definition-1-4.md)
 
 ## Sources
 

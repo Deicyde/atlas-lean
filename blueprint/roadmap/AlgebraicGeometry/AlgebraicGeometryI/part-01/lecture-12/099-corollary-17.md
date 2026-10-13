@@ -12,7 +12,8 @@ $f_*$ is exact for a map of affine varieties. It is left exact in general.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2](../lecture-1/005-definition-2.md)
+- [Definition 23](../lecture-10/086-definition-23.md)
 
 ## Sources
 

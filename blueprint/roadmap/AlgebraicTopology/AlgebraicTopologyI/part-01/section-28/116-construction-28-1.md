@@ -11,7 +11,10 @@ For each pair of natural numbers $p, q$, we define a natural homomorphism $\alph
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../chapter-1/chapter-1-section-1/002-definition-1-2.md)
+- [Definition 1.3](../chapter-1/chapter-1-section-1/003-definition-1-3.md)
+- [Definition 3.5](../chapter-1/chapter-1-section-3/011-definition-3-5.md)
+- [Definition 20.3](../section-20/080-definition-20-3.md)
 
 ## Sources
 

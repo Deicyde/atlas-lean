@@ -10,7 +10,15 @@ Every Harish-Chandra bimodule $M$ with right infinitesimal character $\theta$ is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.1](../../part-01/section-2/005-definition-2-1.md)
+- [Definition 5.1](../../part-01/section-5/024-definition-5-1.md)
+
+## Proof depends on
+
+- [Corollary 6.13](../../part-01/section-6/037-corollary-6-13.md)
+- [Proposition 16.4](../../part-01/section-16/093-proposition-16-4.md)
+- [Proposition 19.5](../../part-01/section-19/113-proposition-19-5.md)
+- [Theorem 25.8](150-theorem-25-8.md)
 
 ## Sources
 

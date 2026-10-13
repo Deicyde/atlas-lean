@@ -10,7 +10,12 @@ The following conditions on a finite dimensional quasi-Hopf algebra $H$ are equi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.35.2](../../part-02/section-1-35/106-definition-1-35-2.md)
+- [Definition 1.52.1](168-definition-1-52-1.md)
+
+## Proof depends on
+
+- [Corollary 1.13.7](../../part-01/section-1-13/035-corollary-1-13-7.md)
 
 ## Sources
 

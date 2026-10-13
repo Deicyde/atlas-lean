@@ -10,7 +10,7 @@ We have $d_{\lambda \mu}^{*}=d_{\mu \lambda}$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corollary 20.5](119-corollary-20-5.md)
 
 ## Proof depends on
 
@@ -18,6 +18,7 @@ This node has no prerequisites.
 - [Definition 8.3](../section-8/048-definition-8-3.md)
 - [Proposition 8.5](../section-8/050-proposition-8-5.md)
 - [Definition 8.1](../section-8/046-definition-8-1.md)
+- [Lemma 20.1](115-lemma-20-1.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ The universal $\delta$-functor is called the derived functor, and is of course u
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 43](171-definition-43.md)
+- [Definition 44](172-definition-44.md)
 
 ## Sources
 

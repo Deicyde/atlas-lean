@@ -10,7 +10,13 @@ Let $M$ be an $n$-manifold and let $A$ be a compact subset of $M$. Then $H_{q}(M
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.6](../../part-01/section-8/038-definition-8-6.md)
+- [Definition 30.1](../section-30/122-definition-30-1.md)
+
+## Proof depends on
+
+- [Definition 5.8](../../part-01/chapter-1/chapter-1-section-5/024-definition-5-8.md)
+- [Theorem 10.2](../../part-01/section-10/044-theorem-10-2.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ Let $X_{1}, \ldots, X_{n} \in \mathcal{C}$. Let $P_{1}, P_{2}$ be any two parent
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.1](../section-1-1/001-definition-1-1-1.md)
+
+## Proof depends on
+
+- [Definition 1.4.1](../section-1-4/010-definition-1-4-1.md)
+- [Definition 1.8.1](../section-1-8/016-definition-1-8-1.md)
+- [Theorem 1.8.5](../section-1-8/017-theorem-1-8-5.md)
 
 ## Sources
 

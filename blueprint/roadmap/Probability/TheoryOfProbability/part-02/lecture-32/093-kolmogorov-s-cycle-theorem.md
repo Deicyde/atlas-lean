@@ -12,7 +12,7 @@ Suppose $p$ is irreducible. Then there exists a reversible measure if and only i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Transition probability)](../lecture-30/083-transition-probability.md)
 
 ## Sources
 

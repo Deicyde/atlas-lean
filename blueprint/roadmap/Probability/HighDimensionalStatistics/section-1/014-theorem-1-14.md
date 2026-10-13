@@ -14,6 +14,10 @@ Let $X_1, \ldots, X_N$ be $N$ random variables such that $X_i \sim \mathsf{subG}
 
 - [Definition 1.2](../chapter-1/002-definition-1-2.md)
 
+## Proof depends on
+
+- [Lemma 1.3](003-lemma-1-3.md)
+
 ## Sources
 
 - [MIT 18.S997 High-Dimensional Statistics (Spring 2015), Section 1.4](../../../../sources/v1/HighDimensionalStatistics.md)

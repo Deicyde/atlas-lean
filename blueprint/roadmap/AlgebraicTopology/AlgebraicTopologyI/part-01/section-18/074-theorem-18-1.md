@@ -10,7 +10,13 @@ Let $X$ be a finite CW-complex with $a_{n}$ $n$-cells. Then $\chi(X) = \sum_{k=0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.4](../chapter-1/chapter-1-section-5/020-definition-5-4.md)
+- [Definition 14.5](../chapter-2/063-definition-14-5.md)
+- [Definition 14.7](../chapter-2/064-definition-14-7.md)
+
+## Proof depends on
+
+- [Corollary 5.5](../chapter-1/chapter-1-section-5/021-corollary-5-5.md)
 
 ## Sources
 

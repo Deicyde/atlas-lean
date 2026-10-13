@@ -10,7 +10,9 @@ The irreducible unitary representations of $SL_2(\mathbb{R})$ are Hilbert space 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.3](../section-1/002-definition-1-3.md)
+- [Definition 1.8](../section-1/004-definition-1-8.md)
+- [Definition 5.7](../section-5/026-definition-5-7.md)
 
 ## Sources
 

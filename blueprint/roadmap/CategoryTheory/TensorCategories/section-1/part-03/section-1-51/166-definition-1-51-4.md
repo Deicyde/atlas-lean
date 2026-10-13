@@ -10,7 +10,8 @@ $L_\rho$ is called the distinguished invertible object of $\mathcal{C}$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.11.1](../../part-01/section-1-11/025-definition-1-11-1.md)
+- [Lemma 1.51.1](163-lemma-1-51-1.md)
 
 ## Sources
 

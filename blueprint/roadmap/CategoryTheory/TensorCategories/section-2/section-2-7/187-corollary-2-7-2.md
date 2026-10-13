@@ -12,6 +12,7 @@ Assume that an exact module category $\mathcal{M}$ over $\mathcal{C}$ has finite
 ## Depends on
 
 - [Definition 2.6.1](../section-2-6/185-definition-2-6-1.md)
+- [Definition 1.18.1](../../section-1/part-01/section-1-18/045-definition-1-18-1.md)
 
 ## Sources
 

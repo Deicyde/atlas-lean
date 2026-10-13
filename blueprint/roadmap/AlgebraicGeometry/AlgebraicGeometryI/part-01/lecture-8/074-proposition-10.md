@@ -12,7 +12,9 @@ lean: algebraicVariety_catenary_chain
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](../lecture-2/010-definition-3.md)
+- [Definition 7](../lecture-3/025-definition-7.md)
+- [Definition 11](../lecture-4/042-definition-11.md)
 
 ## Sources
 

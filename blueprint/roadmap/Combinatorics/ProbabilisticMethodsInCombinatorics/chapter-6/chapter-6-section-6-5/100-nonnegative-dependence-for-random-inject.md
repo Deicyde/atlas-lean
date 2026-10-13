@@ -12,7 +12,7 @@ In Setup 6.5.4, let $F_0$ be a matching in $K_{X,Y}$ such that $F_0$ is vertex d
 
 ## Depends on
 
-This node has no prerequisites.
+- [Setup 6.5.4 (Random injection model)](099-random-injection-model.md)
 
 ## Sources
 

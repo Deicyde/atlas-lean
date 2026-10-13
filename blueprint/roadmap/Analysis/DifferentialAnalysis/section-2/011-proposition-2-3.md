@@ -12,6 +12,8 @@ The collection of $\mu^*$-measurable sets for any outer measure is a $\sigma$-al
 ## Depends on
 
 - [Definition 2.1](009-definition-2-1.md)
+- [Definition 1.6](../section-1/006-definition-1-6.md)
+- [Definition 2.2](010-definition-2-2.md)
 
 ## Sources
 

@@ -10,7 +10,14 @@ Let $X$ be a normal irreducible affine variety and $Z \subset X$ be a closed sub
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2](../../part-01/lecture-1/005-definition-2.md)
+- [Definition 3](../../part-01/lecture-2/010-definition-3.md)
+- [Definition 7](../../part-01/lecture-3/025-definition-7.md)
+- [Definition 11](../../part-01/lecture-4/042-definition-11.md)
+
+## Proof depends on
+
+- [Theorem 5.4](../../part-01/lecture-5/053-theorem-5-4.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Let $\phi$ be a measure-preserving transformation of $(\Omega, \mathcal{F}, P)$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Conditional expectation)](../../part-01/lecture-25/053-conditional-expectation.md)
 
 ## Sources
 

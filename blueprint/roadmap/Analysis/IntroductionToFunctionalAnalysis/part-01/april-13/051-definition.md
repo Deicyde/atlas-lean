@@ -11,7 +11,7 @@ Let $f \in L^2([-\pi, \pi])$. The $N$th Cesaro-Fourier mean of $f$ is $\sigma_N 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition ($L^p$ space)](../april-6/045-l-p-space.md)
 
 ## Sources
 

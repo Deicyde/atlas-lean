@@ -10,7 +10,10 @@ If $f$ is affine, $\mathcal{F}$ is quasicoherent, then $H^i f_* \mathcal{F} = H^
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9](../../part-01/lecture-4/037-definition-9.md)
+- [Definition 23](../../part-01/lecture-10/086-definition-23.md)
+- [Definition 25](../../part-01/lecture-10/088-definition-25.md)
+- [Definition 45](../lecture-22/173-definition-45.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Let $f \colon \mathbb{R}^n \to \mathbb{R}$ be a convex and $1$-Lipschitz functio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.4.7 (Lipschitz functions)](../chapter-9-section-9-4/138-lipschitz-functions.md)
 
 ## Proof depends on
 

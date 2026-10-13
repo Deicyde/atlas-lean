@@ -14,6 +14,10 @@ $k[x_1, \ldots, x_n]$ is Noetherian.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 3](021-lemma-3.md)
+
 ## Sources
 
 - [MIT 18.725 Algebraic Geometry (Fall 2015), Lecture 3](../../../../../sources/v1/AlgebraicGeometryI.md)

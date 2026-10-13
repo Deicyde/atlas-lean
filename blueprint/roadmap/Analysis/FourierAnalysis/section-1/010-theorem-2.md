@@ -14,6 +14,10 @@ Suppose that $f \in L^2(\mathbb{R})$. Then $\hat{f}(\xi) \mathbf{1}_{[-N,N]}(\xi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition 2 (Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$)](009-proposition-2.md)
+
 ## Sources
 
 - [MIT 18.103 Fourier Analysis (Fall 2013), Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$](../../../../sources/v1/FourierAnalysis.md)

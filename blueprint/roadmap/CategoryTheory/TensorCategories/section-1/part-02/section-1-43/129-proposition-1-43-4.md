@@ -10,7 +10,8 @@ Let $A$ be a based ring. Then the algebra $A \otimes_{\mathbb{Z}} \mathbb{C}$ is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.42.2](../section-1-42/123-definition-1-42-2.md)
+- [Definition 1.43.1](126-definition-1-43-1.md)
 
 ## Sources
 

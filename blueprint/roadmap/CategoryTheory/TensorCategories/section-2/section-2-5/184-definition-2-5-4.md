@@ -10,7 +10,10 @@ Let $\mathcal{C}, \mathcal{D}$ be multitensor categories. A $(\mathcal{C}, \math
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.3](../../section-1/part-01/section-1-1/003-definition-1-1-3.md)
+- [Definition 1.12.3](../../section-1/part-01/section-1-12/029-definition-1-12-3.md)
+- [Definition 1.46.1](../../section-1/part-03/section-1-46/145-definition-1-46-1.md)
+- [Definition 2.1.1](../section-2-1/174-definition-2-1-1.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ If $f \in \mathcal{S}'(\mathbb{R}^n)$ and $u \in \mathcal{S}'(\mathbb{R}^n)$ has
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 11.8](../section-11/083-definition-11-8.md)
+
+## Proof depends on
+
+- [Theorem 11.6 (Hörmander, Theorem 4.1.1)](../section-11/081-h-rmander-theorem-4-1-1.md)
 
 ## Sources
 

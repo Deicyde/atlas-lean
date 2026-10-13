@@ -11,7 +11,7 @@ Let $C_{*}, D_{*}$ be chain complexes, and $f_{0}, f_{1} \colon C_{*} \rightarro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.6](../chapter-1-section-1/006-definition-1-6.md)
 
 ## Sources
 

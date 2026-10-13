@@ -12,7 +12,8 @@ In a ring category with right duals, the evaluation morphisms are surjective and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10.1](../section-1-10/019-definition-1-10-1.md)
+- [Definition 1.13.3](../section-1-13/031-definition-1-13-3.md)
 
 ## Sources
 

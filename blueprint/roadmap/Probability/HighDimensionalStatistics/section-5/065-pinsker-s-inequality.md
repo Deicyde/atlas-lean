@@ -12,7 +12,8 @@ Let $\mathbb{P}$ and $\mathbb{Q}$ be two probability measures such that $\mathbb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition-Proposition 5.4](062-definition-proposition-5-4.md)
+- [Definition 5.5](063-definition-5-5.md)
 
 ## Sources
 

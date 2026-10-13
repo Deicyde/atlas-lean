@@ -11,7 +11,9 @@ Let $f_{0}, f_{1} \colon X \rightarrow Y$ be homotopic. Then $f_{0*}, f_{1*} \co
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.3](../chapter-1-section-1/003-definition-1-3.md)
+- [Definition 5.1](017-definition-5-1.md)
+- [Definition 5.9](025-definition-5-9.md)
 
 ## Sources
 

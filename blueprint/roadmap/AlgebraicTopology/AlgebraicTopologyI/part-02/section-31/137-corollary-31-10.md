@@ -10,7 +10,8 @@ If $M$ is a compact connected $n$-manifold, then $H_{n}(M; R) \cong \begin{cases
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.7](../../part-01/chapter-1/chapter-1-section-1/007-definition-1-7.md)
+- [Definition 30.1](../section-30/122-definition-30-1.md)
 
 ## Proof depends on
 

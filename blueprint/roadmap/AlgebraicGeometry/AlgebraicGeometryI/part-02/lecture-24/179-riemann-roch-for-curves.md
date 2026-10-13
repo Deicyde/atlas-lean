@@ -10,7 +10,16 @@ Let $X$ be an irreducible complete (or smooth) curve. Then $\chi(\mathcal{F}) = 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../../part-01/lecture-3/025-definition-7.md)
+- [Definition 19](../../part-01/lecture-8/078-definition-19.md)
+- [Definition 33](../../part-01/lecture-16/125-definition-33.md)
+- [Definition 41](../lecture-22/167-definition-41.md)
+- [Proposition 40](../lecture-22/169-proposition-40.md)
+- [Definition 45](../lecture-22/173-definition-45.md)
+
+## Proof depends on
+
+- [Definition 42](../lecture-22/168-definition-42.md)
 
 ## Sources
 

@@ -11,7 +11,13 @@ When $X$ is factorial (for instance, when $X$ is smooth), $\operatorname{DW}(X) 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corollary 19](113-corollary-19.md)
+- [Definition 29](114-definition-29.md)
+- [Definition 30](115-definition-30.md)
+
+## Proof depends on
+
+- [Theorem 5.4](../lecture-5/053-theorem-5-4.md)
 
 ## Sources
 

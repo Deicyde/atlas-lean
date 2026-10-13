@@ -12,7 +12,11 @@ Let $E \subset \mathbb{R}$ be measurable. Then $f \in L^p(E)$ if and only if (le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition ($L^p$ space)](045-l-p-space.md)
+
+## Proof depends on
+
+- [Theorem (Monotone Convergence Theorem)](../march-30/028-monotone-convergence-theorem.md)
 
 ## Sources
 

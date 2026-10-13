@@ -12,6 +12,10 @@ Fix $j \geq 1$. The number of ways to choose a partition $\lambda$ of $j$, then 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 8.8](038-theorem-8-8.md)
+
 ## Sources
 
 - [MIT 18.318 Topics in Algebraic Combinatorics (Spring 2006), Section 8](../../../../sources/v1/AlgebraicCombinatorics.md)

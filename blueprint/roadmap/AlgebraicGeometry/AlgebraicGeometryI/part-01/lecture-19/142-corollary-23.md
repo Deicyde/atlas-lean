@@ -10,7 +10,9 @@ We have the following: 1.\ If $X \subseteq \mathbb{A}^n$ is a hypersurface given
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 11](../lecture-4/042-definition-11.md)
+- [Definition 33](../lecture-16/125-definition-33.md)
+- [Definition 35](../lecture-18/137-definition-35.md)
 
 ## Sources
 

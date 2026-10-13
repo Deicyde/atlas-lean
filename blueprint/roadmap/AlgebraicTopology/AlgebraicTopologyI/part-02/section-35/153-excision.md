@@ -10,7 +10,7 @@ Suppose $A$ and $B$ are closed subsets of a normal space, or compact subsets of 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 34.4](../section-34/149-definition-34-4.md)
 
 ## Proof depends on
 

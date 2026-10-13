@@ -11,7 +11,12 @@ The group of cellular $n$-chains in a CW complex $X$ is $C_{k}(X) \coloneqq H_{k
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.6](../section-8/038-definition-8-6.md)
+- [Definition 14.5](063-definition-14-5.md)
+
+## Proof depends on
+
+- [Corollary 10.3](../section-10/045-corollary-10-3.md)
 
 ## Sources
 

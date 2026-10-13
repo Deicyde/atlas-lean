@@ -10,7 +10,13 @@ Let $X \subseteq \mathbb{P}V$ be a smooth subvariety. Then for a generic hyperpl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](../../part-01/lecture-2/010-definition-3.md)
+- [Definition 4 (Projective Space)](../../part-01/lecture-2/016-projective-space.md)
+- [Definition 33](../../part-01/lecture-16/125-definition-33.md)
+
+## Proof depends on
+
+- [Theorem 21.2 (Chevalley's theorem)](../lecture-21/161-chevalley-s-theorem.md)
 
 ## Sources
 

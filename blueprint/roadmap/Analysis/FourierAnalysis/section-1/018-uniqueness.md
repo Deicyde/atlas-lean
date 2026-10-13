@@ -12,7 +12,11 @@ Let $\mu \in M_+(\mathbb{R})$. Then $\mu$ is uniquely determined by $\hat{\mu}$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proposition 1 (Section 1, Fourier Integrals of finite measures)](017-proposition-1.md)
+
+## Proof depends on
+
+- [Theorem 1 (Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$)](007-theorem-1.md)
 
 ## Sources
 

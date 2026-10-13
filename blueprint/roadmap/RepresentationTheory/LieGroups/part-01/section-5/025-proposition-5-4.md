@@ -12,6 +12,7 @@ If $V$ is $K$-admissible then $V^{K\text{-fin}} \subset V^{\infty}$, and it is a
 
 - [Definition 1.2](../section-1/001-definition-1-2.md)
 - [Definition 5.1](024-definition-5-1.md)
+- [Proposition 4.13](../section-4/022-proposition-4-13.md)
 
 ## Proof depends on
 
@@ -19,6 +20,7 @@ If $V$ is $K$-admissible then $V^{K\text{-fin}} \subset V^{\infty}$, and it is a
 - [Definition 2.1](../section-2/005-definition-2-1.md)
 - [Definition 4.11](../section-4/021-definition-4-11.md)
 - [Lemma 2.2](../section-2/006-lemma-2-2.md)
+- [Lemma 4.5](../section-4/016-lemma-4-5.md)
 
 ## Sources
 

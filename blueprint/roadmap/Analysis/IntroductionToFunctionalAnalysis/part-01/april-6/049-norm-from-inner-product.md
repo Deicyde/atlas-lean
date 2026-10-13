@@ -12,7 +12,7 @@ Let $H$ be a pre-Hilbert space. Then for any $v \in H$, we define $||v|| = \lang
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Pre-Hilbert space)](048-pre-hilbert-space.md)
 
 ## Sources
 

@@ -15,6 +15,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Theorem 9.4.3 (Isoperimetric inequality in the Hamming cube; Harper 1966)](135-isoperimetric-inequality-in-the-hamming.md)
+- [Theorem 5.0.1 (Chernoff bound)](../../chapter-5/067-chernoff-bound.md)
 
 ## Sources
 

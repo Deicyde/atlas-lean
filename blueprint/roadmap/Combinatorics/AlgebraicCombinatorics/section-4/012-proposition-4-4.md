@@ -13,6 +13,7 @@ Let $P$ be a graded poset of rank $n$. Suppose there exists an integer $0 \leq j
 ## Depends on
 
 - [Definition 4.2](011-definition-4-2.md)
+- [Definition 4.1](010-definition-4-1.md)
 
 ## Sources
 

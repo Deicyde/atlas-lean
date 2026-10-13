@@ -10,7 +10,8 @@ $\operatorname{Pic}(X) = \operatorname{Div}_C(X)/\operatorname{Im}(\mathcal{K}^*
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corollary 19](../lecture-14/113-corollary-19.md)
+- [Definition 30](../lecture-14/115-definition-30.md)
 
 ## Sources
 

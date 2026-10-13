@@ -12,6 +12,12 @@ Let $X_1, X_2, \ldots$ be independent and fix $A > 0$. Write $Y_i = X_i \mathbf{
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [First Borel-Cantelli lemma](../lecture-9/021-first-borel-cantelli-lemma.md)
+- [Theorem (Kolmogorov zero-one law)](024-kolmogorov-zero-one-law.md)
+- [Theorem (Kolmogorov maximal inequality)](025-kolmogorov-maximal-inequality.md)
+
 ## Sources
 
 - [MIT 18.175 Theory of Probability (Spring 2014), Lecture 10, Kolmogorov three-series theorem](../../../../../sources/v1/TheoryOfProbability.md)

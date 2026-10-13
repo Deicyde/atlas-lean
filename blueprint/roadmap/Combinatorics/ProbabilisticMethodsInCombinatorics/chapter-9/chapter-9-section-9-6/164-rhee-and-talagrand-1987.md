@@ -10,7 +10,12 @@ $L_n$ is $O(\sqrt{\log n})$-subGaussian about its mean. That is, $\mathbb{P}(|L_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.4.17 (Sub-Gaussian distribution)](../chapter-9-section-9-4/146-sub-gaussian-distribution.md)
+
+## Proof depends on
+
+- [Theorem 9.2.8 (Azuma's inequality)](../chapter-9-section-9-2/128-azuma-s-inequality.md)
+- [Definition 9.4.7 (Lipschitz functions)](../chapter-9-section-9-4/138-lipschitz-functions.md)
 
 ## Sources
 

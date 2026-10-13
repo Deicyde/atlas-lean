@@ -10,7 +10,13 @@ lean: Proposition22_7.proposition_22_7_ii
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.4](../../part-01/section-8/049-definition-8-4.md)
+- [Definition 22.1](129-definition-22-1.md)
+
+## Proof depends on
+
+- [Proposition 16.4](../../part-01/section-16/093-proposition-16-4.md)
+- [Corollary 22.6](133-corollary-22-6.md)
 
 ## Sources
 

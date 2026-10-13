@@ -10,7 +10,10 @@ If $X$, $Z$ smooth, $Z$ closed in $X$, then we get a short exact sequence of loc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 26](../lecture-10/089-definition-26.md)
+- [Definition 33](../lecture-16/125-definition-33.md)
+- [Definition 34](../lecture-18/136-definition-34.md)
+- [Definition 37](../lecture-19/148-definition-37.md)
 
 ## Sources
 

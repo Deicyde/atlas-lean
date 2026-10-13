@@ -10,7 +10,7 @@ $\check{H}^{p}(K; R) = 0$ for $p > n$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 34.4](../section-34/149-definition-34-4.md)
 
 ## Sources
 

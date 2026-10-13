@@ -16,6 +16,8 @@ If $W_{\lambda} = W_{\mu}$ and $V$ has extremal weight $\mu - \lambda$ then $F_{
 
 - [Theorem 14.1 (Harish-Chandra)](../../part-01/section-14/080-harish-chandra.md)
 - [Definition 8.1](../../part-01/section-8/046-definition-8-1.md)
+- [Corollary 20.5](../../part-01/section-20/119-corollary-20-5.md)
+- [Lemma 23.4](../section-23/138-lemma-23-4.md)
 
 ## Sources
 

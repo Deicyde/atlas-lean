@@ -12,6 +12,10 @@ Let $E$ be a set of points in $\mathbb{R}^2$ and for any line $\ell$, assume tha
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (1982)](../sharp-projection-theorems-i-introduction-and-bec/096-theorem-1982.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section on History of the Furstenberg conjecture](../../../../../sources/v1/ProjectionTheory.md)

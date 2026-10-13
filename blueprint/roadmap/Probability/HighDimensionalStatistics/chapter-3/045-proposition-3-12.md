@@ -12,7 +12,7 @@ The Sobolev ellipsoids enjoy the following properties: (i) For any $Q > 0$, $0 <
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 3.11](044-theorem-3-11.md)
 
 ## Sources
 

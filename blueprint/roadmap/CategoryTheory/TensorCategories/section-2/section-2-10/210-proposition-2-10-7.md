@@ -12,6 +12,13 @@ lean: CategoryTheory.Proposition_2_10_7.part1
 ## Depends on
 
 - [Definition 2.6.1](../section-2-6/185-definition-2-6-1.md)
+- [Definition 2.2.1](../section-2-2/178-definition-2-2-1.md)
+- [Definition 2.10.2](206-definition-2-10-2.md)
+
+## Proof depends on
+
+- [Lemma 2.10.4](207-lemma-2-10-4.md)
+- [Corollary 2.10.5](208-corollary-2-10-5.md)
 
 ## Sources
 

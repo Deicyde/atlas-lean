@@ -12,6 +12,11 @@ Every directed graph with min out-degree $\delta$ and max in-degree $\Delta$ con
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 6.1.2 (Dependency (di)graph)](../chapter-6-section-6-1/080-di.md)
+- [Theorem 6.1.7 (Lovász local lemma; symmetric form)](../chapter-6-section-6-1/081-lov-sz-local-lemma-symmetric-form.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 6, Section 6.4](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

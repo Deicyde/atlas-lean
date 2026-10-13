@@ -10,7 +10,9 @@ We will say that a module category $\mathcal{M}$ over $\mathcal{C}$ is indecompo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.1.1](../section-2-1/174-definition-2-1-1.md)
+- [Definition 2.2.1](../section-2-2/178-definition-2-2-1.md)
+- [Definition 2.4.2](182-definition-2-4-2.md)
 
 ## Sources
 

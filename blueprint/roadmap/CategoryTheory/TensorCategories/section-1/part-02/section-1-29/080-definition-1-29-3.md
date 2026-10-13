@@ -11,7 +11,7 @@ A coalgebra $C$ is said to be cosemisimple if $C$ is a direct sum of simple subc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.20.1](../../part-01/section-1-20/049-definition-1-20-1.md)
 
 ## Sources
 

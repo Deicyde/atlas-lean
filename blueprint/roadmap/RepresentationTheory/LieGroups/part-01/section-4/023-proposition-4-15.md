@@ -10,7 +10,12 @@ lean: prop_4_15_i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.1](../section-2/005-definition-2-1.md)
+- [Definition 4.11](021-definition-4-11.md)
+
+## Proof depends on
+
+- [Lemma 4.5](016-lemma-4-5.md)
 
 ## Sources
 

@@ -11,7 +11,9 @@ Let $\mathcal{C}$ be any category. A simplicial object in $\mathcal{C}$ is a fun
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.1](../chapter-1-section-3/008-definition-3-1.md)
+- [Definition 3.4](../chapter-1-section-3/010-definition-3-4.md)
+- [Definition 3.5](../chapter-1-section-3/011-definition-3-5.md)
 
 ## Sources
 

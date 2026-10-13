@@ -10,7 +10,7 @@ If $F_n \to F_\infty$, then we can find corresponding random variables $Y_n$ on 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (weak convergence)](031-weak-convergence.md)
 
 ## Sources
 

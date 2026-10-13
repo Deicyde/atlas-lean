@@ -11,7 +11,7 @@ The subcategories $\mathcal{C}_{ij} \coloneqq \mathbf{1}_{i} \otimes \mathcal{C}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corollary 1.15.2](038-corollary-1-15-2.md)
 
 ## Sources
 

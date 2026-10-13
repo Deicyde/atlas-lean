@@ -11,6 +11,11 @@ Fix a graph $H$. Then $p = n^{-1/m(H)}$ is a threshold for containing $H$ as a s
 ## Depends on
 
 - [Question 4.2.1](../../chapter-4/043-question-4-2-1.md)
+- [Definition 4.2.7](044-definition-4-2-7.md)
+
+## Proof depends on
+
+- [Lemma 4.2.4](045-lemma-4-2-4.md)
 
 ## Sources
 

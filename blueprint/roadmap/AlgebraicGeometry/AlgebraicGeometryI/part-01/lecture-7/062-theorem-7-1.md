@@ -12,7 +12,11 @@ $\dim(X \times Y) = \dim(X) + \dim(Y)$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 11](../lecture-4/042-definition-11.md)
+
+## Proof depends on
+
+- [Lemma 10](../lecture-5/044-lemma-10.md)
 
 ## Sources
 

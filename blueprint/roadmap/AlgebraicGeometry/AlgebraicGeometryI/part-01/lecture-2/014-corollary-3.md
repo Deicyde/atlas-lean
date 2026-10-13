@@ -10,7 +10,7 @@ An algebraic variety is a Noetherian topological space (that is, every descendin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](010-definition-3.md)
 
 ## Sources
 

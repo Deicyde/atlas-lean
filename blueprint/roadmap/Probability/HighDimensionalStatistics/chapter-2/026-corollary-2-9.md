@@ -12,7 +12,7 @@ Under the assumptions of Theorem 2.6, $$\mathbb{E}\!\left[\mathsf{MSE}(\mathbb{X
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 2.6](023-theorem-2-6.md)
 
 ## Proof depends on
 

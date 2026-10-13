@@ -12,7 +12,11 @@ Any endomorphism of an irreducible $(\mathfrak{g}, K)$-module $M$ is a scalar. T
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.7](../section-5/026-definition-5-7.md)
+
+## Proof depends on
+
+- [Lemma 7.2 (Dixmier)](042-dixmier.md)
 
 ## Sources
 

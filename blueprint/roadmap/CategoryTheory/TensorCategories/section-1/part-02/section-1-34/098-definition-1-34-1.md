@@ -11,7 +11,8 @@ Let $\mathcal{C}$ be an abelian monoidal category over $k$, and $(F, J) \colon \
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.1](../../part-01/section-1-1/001-definition-1-1-1.md)
+- [Definition 1.19.1](../../part-01/section-1-19/048-definition-1-19-1.md)
 
 ## Sources
 

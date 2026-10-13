@@ -11,6 +11,7 @@ Any CW-complex is Hausdorff, and it's compact if and only if it's finite. Any co
 ## Depends on
 
 - [Definition 14.7](064-definition-14-7.md)
+- [Definition 14.5](063-definition-14-5.md)
 
 ## Sources
 

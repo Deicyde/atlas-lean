@@ -12,6 +12,12 @@ The simples (and indecomposable projectives) in $\operatorname{HC}_{\theta}^1$ a
 
 - [Definition 15.1](../../part-01/section-15/084-definition-15-1.md)
 - [Definition 8.3](../../part-01/section-8/048-definition-8-3.md)
+- [Definition 8.4](../../part-01/section-8/049-definition-8-4.md)
+
+## Proof depends on
+
+- [Proposition 16.2](../../part-01/section-16/092-proposition-16-2.md)
+- [Theorem 23.6](../section-23/139-theorem-23-6.md)
 
 ## Sources
 

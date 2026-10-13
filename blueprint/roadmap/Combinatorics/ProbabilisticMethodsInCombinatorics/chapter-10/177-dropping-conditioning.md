@@ -13,6 +13,12 @@ $H(X \mid Y) \leq H(X)$ and more generally, $H(X \mid Y, Z) \leq H(X \mid Z)$.
 ## Depends on
 
 - [Definition 10.1.6 (Conditional entropy)](174-conditional-entropy.md)
+- [Definition 10.1.1](171-definition-10-1-1.md)
+
+## Proof depends on
+
+- [Lemma 10.1.7 (Chain rule)](175-chain-rule.md)
+- [Lemma 10.1.8 (Subadditivity)](176-subadditivity.md)
 
 ## Sources
 

@@ -10,7 +10,14 @@ For a variety $X$, the set of smooth points in $X$ is open and dense in $X$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](../lecture-2/010-definition-3.md)
+- [Definition 33](../lecture-16/125-definition-33.md)
+
+## Proof depends on
+
+- [Lemma 10](../lecture-5/044-lemma-10.md)
+- [Lemma 30](138-lemma-30.md)
+- [Proposition 29](140-proposition-29.md)
 
 ## Sources
 

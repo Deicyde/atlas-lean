@@ -12,7 +12,7 @@ If SETUP, $X$ and $D$ have Hausdorff spacing, and $$S \leq R^{-\epsilon} \min(R,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section: Projection theory for balls in Euclidean space)](013-definition.md)
 
 ## Sources
 

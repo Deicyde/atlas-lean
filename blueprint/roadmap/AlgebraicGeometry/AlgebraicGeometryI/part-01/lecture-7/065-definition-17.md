@@ -11,7 +11,7 @@ An algebraic variety is separated if its diagonal $\Delta_X$ is a closed subvari
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](../lecture-2/010-definition-3.md)
 
 ## Sources
 

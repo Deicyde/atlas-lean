@@ -10,7 +10,11 @@ Let $\lambda \in P$ with $\left(\lambda, \alpha_{i}^{\vee}\right)=0, i \in S$. T
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proposition 8.9](../../part-01/section-8/053-proposition-8-9.md)
+
+## Proof depends on
+
+- [Theorem 27.3 (Borel-Weil)](155-borel-weil.md)
 
 ## Sources
 

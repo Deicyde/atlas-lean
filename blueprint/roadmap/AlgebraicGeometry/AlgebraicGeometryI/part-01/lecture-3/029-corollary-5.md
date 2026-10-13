@@ -12,7 +12,8 @@ We have the following correspondences: irreducible closed subsets in $\operatorn
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](025-definition-7.md)
+- [Definition 8](027-definition-8.md)
 
 ## Sources
 

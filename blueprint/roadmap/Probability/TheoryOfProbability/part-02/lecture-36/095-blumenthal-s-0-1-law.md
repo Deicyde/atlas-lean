@@ -13,6 +13,10 @@ If $A \in \mathcal{F}_0^+$, then $P(A) \in \{0, 1\}$ (if $P$ is the probability 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition (Conditional expectation)](../../part-01/lecture-25/053-conditional-expectation.md)
+
 ## Sources
 
 - [MIT 18.175 Theory of Probability (Spring 2014), Lecture 36, Brownian motion properties and construction](../../../../../sources/v1/TheoryOfProbability.md)

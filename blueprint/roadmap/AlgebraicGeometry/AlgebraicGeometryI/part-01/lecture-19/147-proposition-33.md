@@ -10,7 +10,9 @@ Suppose $Z \subseteq X$ is a closed subvariety. 1.\ We have an exact sequence $\
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](../lecture-2/010-definition-3.md)
+- [Definition 26](../lecture-10/089-definition-26.md)
+- [Definition 34](../lecture-18/136-definition-34.md)
 
 ## Sources
 

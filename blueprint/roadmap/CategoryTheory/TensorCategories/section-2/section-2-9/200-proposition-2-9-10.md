@@ -11,7 +11,9 @@ The category $\operatorname{Mod}_{\mathcal{C}}(A)$ together with functor $\tilde
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.1.1](../section-2-1/174-definition-2-1-1.md)
+- [Definition 2.9.5](198-definition-2-9-5.md)
+- [Definition 2.9.6](199-definition-2-9-6.md)
 
 ## Sources
 

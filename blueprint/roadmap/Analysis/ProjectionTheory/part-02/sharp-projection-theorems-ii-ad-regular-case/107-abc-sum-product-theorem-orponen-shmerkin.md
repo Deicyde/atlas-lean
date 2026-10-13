@@ -12,7 +12,7 @@ Under the hypotheses that $A$ is a $(\rho, a)$-set with $|A| \sim \rho^{-a}$, $B
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section: Sharp Projection Theorems I: Introduction and Beck's Theorem)](../sharp-projection-theorems-i-introduction-and-bec/097-definition.md)
 
 ## Sources
 

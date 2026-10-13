@@ -14,6 +14,10 @@ The number of edges in an $n$-vertex $K_{r+1}$-free graph is at most $\left(1 - 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary 2.3.5](020-corollary-2-3-5.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 2, Section 2.3](../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

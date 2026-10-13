@@ -14,6 +14,10 @@ $|X_{j+1}|_\delta \gtrsim \delta^{-1} |X_j|^{1/2}$.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition (Section: Homogeneous Dynamics II)](092-proposition.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section: Homogeneous Dynamics II](../../../../../sources/v1/ProjectionTheory.md)

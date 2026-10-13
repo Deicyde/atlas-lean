@@ -12,7 +12,12 @@ Suppose $g$ is measurable and its set of discontinuity points has $\mu_X$-measur
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (weak convergence)](031-weak-convergence.md)
+
+## Proof depends on
+
+- [Bounded convergence theorem](../lecture-5/009-bounded-convergence-theorem.md)
+- [Theorem (Skorokhod representation)](034-skorokhod-representation.md)
 
 ## Sources
 

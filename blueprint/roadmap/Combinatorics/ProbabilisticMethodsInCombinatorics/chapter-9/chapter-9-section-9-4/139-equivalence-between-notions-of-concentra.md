@@ -12,7 +12,7 @@ Let $t, \varepsilon \geq 0$. In a probability space $(\Omega, \mathbb{P})$ equip
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.4.7 (Lipschitz functions)](138-lipschitz-functions.md)
 
 ## Sources
 

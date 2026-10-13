@@ -12,7 +12,7 @@ If $X_n$ is a martingale with $E[X_n^2] < \infty$ for all $n$ then $E[(X_n - X_m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Conditional expectation)](../lecture-25/053-conditional-expectation.md)
 
 ## Sources
 

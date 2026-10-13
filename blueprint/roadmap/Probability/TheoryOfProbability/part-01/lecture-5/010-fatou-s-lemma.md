@@ -14,6 +14,10 @@ If $f_n \geq 0$ then $\int \liminf_{n \to \infty} f_n \, d\mu \leq \liminf_{n \t
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bounded convergence theorem](009-bounded-convergence-theorem.md)
+
 ## Sources
 
 - [MIT 18.175 Theory of Probability (Spring 2014), Lecture 5, section 'Fatou's lemma'](../../../../../sources/v1/TheoryOfProbability.md)

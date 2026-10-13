@@ -14,6 +14,10 @@ $X_n \to X$ in probability if and only if for every subsequence of the $X_n$ the
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [First Borel-Cantelli lemma](021-first-borel-cantelli-lemma.md)
+
 ## Sources
 
 - [MIT 18.175 Theory of Probability (Spring 2014), Lecture 9, Convergence in probability subsequential a.s. convergence](../../../../../sources/v1/TheoryOfProbability.md)

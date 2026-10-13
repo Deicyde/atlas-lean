@@ -12,7 +12,12 @@ Let $X$ be a space with functions. Then $X$ is affine if and only if $X = \opera
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2](../lecture-1/005-definition-2.md)
+
+## Proof depends on
+
+- [Theorem 2.1](../lecture-2/006-theorem-2-1.md)
+- [Theorem 2.2](../lecture-2/009-theorem-2-2.md)
 
 ## Sources
 

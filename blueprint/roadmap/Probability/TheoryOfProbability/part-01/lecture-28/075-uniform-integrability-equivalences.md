@@ -12,7 +12,7 @@ If $X_n \to X$ in probability then the following are equivalent: (1) the $X_n$ a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Uniform integrability)](066-uniform-integrability.md)
 
 ## Sources
 

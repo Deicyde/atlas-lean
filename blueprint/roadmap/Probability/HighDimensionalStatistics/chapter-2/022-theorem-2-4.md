@@ -13,10 +13,12 @@ Let $K = \mathcal{B}_1$ be the unit $\ell_1$ ball of $\mathbb{R}^d$, $d \geq 2$ 
 ## Depends on
 
 - [Definition 1.2](../chapter-1/002-definition-1-2.md)
+- [Theorem 2.2](021-theorem-2-2.md)
 
 ## Proof depends on
 
 - [Theorem 1.6](../section-1/006-theorem-1-6.md)
+- [Theorem 1.16](../section-1/016-theorem-1-16.md)
 
 ## Sources
 

@@ -10,7 +10,7 @@ Let $\lambda \in P$. If $\lambda \in P_{+}$ then we have an isomorphism of $G$-m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proposition 8.9](../../part-01/section-8/053-proposition-8-9.md)
 
 ## Sources
 

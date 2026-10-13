@@ -10,7 +10,15 @@ For any object $Z$ of $\mathcal{C}$, $P_{i} \otimes Z \cong \oplus_{j,k} N_{kj^{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10.1](../../part-01/section-1-10/019-definition-1-10-1.md)
+- [Definition 1.10.2](../../part-01/section-1-10/020-definition-1-10-2.md)
+- [Definition 1.12.3](../../part-01/section-1-12/029-definition-1-12-3.md)
+- [Lemma 1.16.1](../../part-01/section-1-16/044-lemma-1-16-1.md)
+
+## Proof depends on
+
+- [Proposition 1.10.9](../../part-01/section-1-10/023-proposition-1-10-9.md)
+- [Proposition 1.13.6](../../part-01/section-1-13/034-proposition-1-13-6.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ The $n$th singular homology group of $X$ is: $$H_{n}(X) = \frac{Z_{n}(X)}{B_{n}(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.3](003-definition-1-3.md)
+- [Definition 1.4](004-definition-1-4.md)
 
 ## Sources
 

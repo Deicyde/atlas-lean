@@ -10,7 +10,10 @@ Let $f \colon X \to Y$ be a morphism of smooth irreducible curves. Then $k(X)/k(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../../part-01/lecture-3/025-definition-7.md)
+- [Definition 14](../../part-01/lecture-6/056-definition-14.md)
+- [Definition 33](../../part-01/lecture-16/125-definition-33.md)
+- [Definition 37](../../part-01/lecture-19/148-definition-37.md)
 
 ## Sources
 

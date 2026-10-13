@@ -15,6 +15,8 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Definition 10.2.8 (Steiner triple system)](184-steiner-triple-system.md)
+- [Lemma 10.1.4 (Uniform bound)](172-uniform-bound.md)
+- [Lemma 10.1.7 (Chain rule)](175-chain-rule.md)
 
 ## Sources
 

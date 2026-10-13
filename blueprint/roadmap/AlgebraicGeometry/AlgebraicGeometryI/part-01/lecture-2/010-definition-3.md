@@ -11,7 +11,7 @@ An algebraic variety over $k$ is a space with functions which is a finite union 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2](../lecture-1/005-definition-2.md)
 
 ## Sources
 

@@ -10,7 +10,14 @@ $S\mathfrak{g}$ is a free $(S\mathfrak{g})^{\mathfrak{g}}$-module. Moreover, for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.1](../section-8/046-definition-8-1.md)
+
+## Proof depends on
+
+- [Theorem 10.1 (Chevalley restriction theorem)](../section-10/058-chevalley-restriction-theorem.md)
+- [Theorem 10.6 (Chevalley-Shephard-Todd theorem, part I)](../section-10/060-chevalley-shephard-todd-theorem-part-i.md)
+- [Theorem 12.2 (Chevalley-Shephard-Todd theorem, part II)](../section-12/066-chevalley-shephard-todd-theorem-part-ii.md)
+- [Lemma 12.3](../section-12/067-lemma-12-3.md)
 
 ## Sources
 

@@ -10,7 +10,9 @@ The following hold: 1.\ If $Z \subseteq X$ is a closed subvariety, then we have 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](../lecture-2/010-definition-3.md)
+- [Definition 33](../lecture-16/125-definition-33.md)
+- [Definition 34](../lecture-18/136-definition-34.md)
 
 ## Sources
 

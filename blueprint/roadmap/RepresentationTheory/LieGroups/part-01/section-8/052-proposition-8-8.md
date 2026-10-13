@@ -13,6 +13,12 @@ lean: IsVermaModule.highest_weight_module_is_quotient
 ## Depends on
 
 - [Definition 8.3](048-definition-8-3.md)
+- [Definition 8.2](047-definition-8-2.md)
+- [Definition 8.4](049-definition-8-4.md)
+
+## Proof depends on
+
+- [Corollary 8.7](051-corollary-8-7.md)
 
 ## Sources
 

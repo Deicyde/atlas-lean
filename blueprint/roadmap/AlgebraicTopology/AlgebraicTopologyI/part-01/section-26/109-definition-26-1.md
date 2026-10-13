@@ -11,7 +11,7 @@ Let $R$ be a ring. A (graded) coalgebra over $R$ is a (graded) $R$-module $M$ eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 20.3](../section-20/080-definition-20-3.md)
 
 ## Sources
 

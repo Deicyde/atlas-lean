@@ -10,7 +10,8 @@ If $X = \operatorname{Spec}(A)$, then $\mathbf{QCoh}(X) \cong \mathbf{Mod}(A)$, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2](../lecture-1/005-definition-2.md)
+- [Definition 25](../lecture-10/088-definition-25.md)
 
 ## Sources
 

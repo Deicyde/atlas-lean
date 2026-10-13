@@ -13,6 +13,8 @@ Let $X$ be a CW-complex with a chosen cell structure. Any compact subspace of $X
 ## Depends on
 
 - [Definition 15.1](066-definition-15-1.md)
+- [Definition 14.5](063-definition-14-5.md)
+- [Definition 14.7](064-definition-14-7.md)
 
 ## Sources
 

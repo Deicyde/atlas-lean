@@ -10,7 +10,12 @@ Let $\varphi_n$ be an orthonormal sequence in a Hilbert space $H$, and $\sum |a_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1](025-definition-1.md)
+- [Definition 2](026-definition-2.md)
+
+## Proof depends on
+
+- [Proposition 1 (Continuity)](024-continuity.md)
 
 ## Sources
 

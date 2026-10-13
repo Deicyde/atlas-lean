@@ -14,6 +14,10 @@ Let $\Omega$ be a finite set and $F$ some non-trivial monotone property. If $p \
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 4.3.5 (Monotonicity of satisfying probability)](049-monotonicity-of-satisfying-probability.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Section 4.3](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

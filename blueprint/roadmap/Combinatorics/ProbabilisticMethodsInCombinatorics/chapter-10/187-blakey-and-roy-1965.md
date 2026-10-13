@@ -10,7 +10,12 @@ Sidorenko's conjecture holds if $F$ is a three-edge path.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture 10.3.2 (Sidorenko)](186-sidorenko.md)
+
+## Proof depends on
+
+- [Lemma 10.1.4 (Uniform bound)](172-uniform-bound.md)
+- [Lemma 10.1.7 (Chain rule)](175-chain-rule.md)
 
 ## Sources
 

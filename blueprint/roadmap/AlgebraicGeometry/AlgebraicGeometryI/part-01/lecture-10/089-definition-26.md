@@ -11,7 +11,8 @@ A locally free sheaf $\mathcal{M}$ of rank $n$ on an algebraic variety $X$ is a 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3](../lecture-2/010-definition-3.md)
+- [Definition 25](088-definition-25.md)
 
 ## Sources
 

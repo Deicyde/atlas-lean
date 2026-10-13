@@ -11,6 +11,10 @@ The assignment $H \mapsto \operatorname{Rep}(H)$ defines a bijection between int
 ## Depends on
 
 - [Definition 1.35.2](../../part-02/section-1-35/106-definition-1-35-2.md)
+- [Definition 1.12.3](../../part-01/section-1-12/029-definition-1-12-3.md)
+- [Definition 1.18.1](../../part-01/section-1-18/045-definition-1-18-1.md)
+- [Definition 1.34.6](../../part-02/section-1-34/102-definition-1-34-6.md)
+- [Definition 1.48.1](154-definition-1-48-1.md)
 
 ## Proof depends on
 

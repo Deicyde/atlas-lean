@@ -10,7 +10,7 @@ Assume the general regression model (3.1) with $\varepsilon \sim \mathsf{subG}_n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../chapter-1/002-definition-1-2.md)
 
 ## Sources
 

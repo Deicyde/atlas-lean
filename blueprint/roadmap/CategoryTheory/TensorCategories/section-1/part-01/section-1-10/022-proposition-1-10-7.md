@@ -10,7 +10,9 @@ Let $\mathcal{C}$ be a monoidal category. (i) Let $U, V, W$ be objects in $\math
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.1.1](../section-1-1/001-definition-1-1-1.md)
+- [Definition 1.10.1](019-definition-1-10-1.md)
+- [Definition 1.10.2](020-definition-1-10-2.md)
 
 ## Sources
 

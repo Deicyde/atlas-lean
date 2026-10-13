@@ -16,6 +16,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Definition 1 (Lecture 14: The Residue Theorem and Application)](../lecture-14/019-definition-1.md)
+- [Theorem 17'](../lecture-14/020-theorem-17.md)
 
 ## Sources
 

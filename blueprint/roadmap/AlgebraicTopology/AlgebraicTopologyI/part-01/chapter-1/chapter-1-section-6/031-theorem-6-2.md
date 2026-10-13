@@ -15,6 +15,9 @@ There exists a map $\times \colon S_{p}(X) \times S_{q}(Y) \rightarrow S_{p+q}(X
 ## Proof depends on
 
 - [Definition 1.2](../chapter-1-section-1/002-definition-1-2.md)
+- [Theorem 1.5](../chapter-1-section-1/005-theorem-1-5.md)
+- [Definition 5.12](../chapter-1-section-5/028-definition-5-12.md)
+- [Proposition 5.13](../chapter-1-section-5/029-proposition-5-13.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ The Weil divisor group $\operatorname{DW}(X)$ is a free abelian group spanned by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../lecture-3/025-definition-7.md)
+- [Definition 11](../lecture-4/042-definition-11.md)
 
 ## Sources
 

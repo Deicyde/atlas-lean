@@ -12,7 +12,9 @@ If $L \leq M$ are stopping times and $Y_{M \wedge n}$ is a uniformly integrable 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Stopping time)](../../part-01/lecture-23/051-stopping-time.md)
+- [Definition (Conditional expectation)](../../part-01/lecture-25/053-conditional-expectation.md)
+- [Definition (Uniform integrability)](../../part-01/lecture-28/066-uniform-integrability.md)
 
 ## Sources
 

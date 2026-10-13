@@ -14,6 +14,10 @@ Let $\mathcal{F}$ be a collection of $m$ subsets of $[n]$. Then there exists som
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 5.0.1 (Chernoff bound)](../chapter-5/067-chernoff-bound.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Section 5.1](../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

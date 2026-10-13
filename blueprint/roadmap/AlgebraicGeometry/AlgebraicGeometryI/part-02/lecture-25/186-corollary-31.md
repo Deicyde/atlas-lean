@@ -10,7 +10,12 @@ $\deg(K) = 2g - 2$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 37](../../part-01/lecture-19/148-definition-37.md)
+
+## Proof depends on
+
+- [Theorem 24.2 (Riemann-Roch for Curves)](../lecture-24/179-riemann-roch-for-curves.md)
+- [Theorem 24.3 (Serre Duality)](../lecture-24/181-serre-duality.md)
 
 ## Sources
 

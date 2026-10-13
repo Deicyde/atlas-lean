@@ -11,7 +11,7 @@ Say that $X_n$ is a Markov chain w.r.t. $\mathcal{F}_n$ with transition probabil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Transition probability)](083-transition-probability.md)
 
 ## Sources
 

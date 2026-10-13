@@ -15,6 +15,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Theorem 9.4.11 (Upper bound on spherical cap size)](141-upper-bound-on-spherical-cap-size.md)
+- [Theorem 9.4.10 (Lévy's isoperimetric inequality on the sphere)](140-l-vy-s-isoperimetric-inequality-on-the-s.md)
 
 ## Sources
 

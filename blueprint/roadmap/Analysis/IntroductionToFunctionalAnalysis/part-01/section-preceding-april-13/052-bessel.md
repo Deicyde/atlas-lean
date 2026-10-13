@@ -12,7 +12,8 @@ Let $\{e_n\}$ be a countable (finite or countably infinite) orthonormal subset o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Pre-Hilbert space)](../april-6/048-pre-hilbert-space.md)
+- [Definition (Norm from inner product)](../april-6/049-norm-from-inner-product.md)
 
 ## Sources
 

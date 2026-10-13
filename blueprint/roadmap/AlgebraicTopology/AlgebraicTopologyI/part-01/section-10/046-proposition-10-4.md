@@ -10,10 +10,13 @@ Let $n > 0$ and let $* \in S^{n-1}$ be any point. Then: $H_{q}(S^{n}) = \begin{c
 ## Depends on
 
 - [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
+- [Definition 8.6](../section-8/038-definition-8-6.md)
 
 ## Proof depends on
 
 - [Corollary 5.7](../chapter-1/chapter-1-section-5/023-corollary-5-7.md)
+- [Theorem 9.1 (The homology long exact sequence)](../section-9/039-the-homology-long-exact-sequence.md)
+- [Corollary 10.3](045-corollary-10-3.md)
 
 ## Sources
 

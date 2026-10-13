@@ -14,6 +14,10 @@ If $K$ is a compact Lie group and $f \in C^{\infty}(K)$ then $f(1)=\sum_{\rho \i
 - [Definition 1.8](../section-1/004-definition-1-8.md)
 - [Definition 1.3](../section-1/002-definition-1-3.md)
 
+## Proof depends on
+
+- [Theorem 2.4 (Peter-Weyl)](../section-2/007-peter-weyl.md)
+
 ## Sources
 
 - [MIT 18.757 Representations of Lie Groups (Fall 2023), Section 4.1](../../../../../sources/v1/LieGroups.md)

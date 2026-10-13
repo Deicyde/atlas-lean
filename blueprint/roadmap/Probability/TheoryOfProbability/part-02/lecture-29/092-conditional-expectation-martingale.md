@@ -9,7 +9,8 @@ $E(X \mid \mathcal{F}_i)$ is a martingale if $\mathcal{F}_i$ is an increasing se
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Conditional expectation)](../../part-01/lecture-25/053-conditional-expectation.md)
+- [Definition (Martingale, supermartingale, submartingale)](091-martingale-supermartingale-submartingale.md)
 
 ## Sources
 

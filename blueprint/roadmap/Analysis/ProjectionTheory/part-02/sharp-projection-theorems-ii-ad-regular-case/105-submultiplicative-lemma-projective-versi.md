@@ -10,7 +10,7 @@ If $\delta = \delta_1 \delta_2$, $\delta_1, \delta_2 < 1$, then $R_{AD, \mathrm{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sharp Projection Theorems II: AD Regular Case, Section on General AD vs Projective AD)](102-definition.md)
 
 ## Sources
 

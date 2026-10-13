@@ -10,11 +10,13 @@ Suppose $X \subseteq \mathbb{A}^n$, $x \in X$ is a smooth point if and only if t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 33](../lecture-16/125-definition-33.md)
 
 ## Proof depends on
 
 - [Corollary 23](142-corollary-23.md)
+- [Lemma 4 (Nakayama lemma)](../lecture-3/023-nakayama-lemma.md)
+- [Lemma 30](../lecture-18/138-lemma-30.md)
 
 ## Sources
 

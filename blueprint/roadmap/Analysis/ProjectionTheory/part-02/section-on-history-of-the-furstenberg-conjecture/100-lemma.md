@@ -10,7 +10,8 @@ If $0 < s < \min(u, 1)$, and if a typical set $L_{x,E}$ is uniform and $(\delta,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section: Bourgain's Projection Theorem II)](../bourgain-s-projection-theorem-ii/075-definition.md)
+- [Definition (Section: Sharp Projection Theorems I: Introduction and Beck's Theorem)](../sharp-projection-theorems-i-introduction-and-bec/097-definition.md)
 
 ## Sources
 
