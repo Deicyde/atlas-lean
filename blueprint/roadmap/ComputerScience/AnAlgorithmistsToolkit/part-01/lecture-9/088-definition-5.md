@@ -5,7 +5,7 @@ statement: formalized
 lean: Sparsification.GraphLoewnerLE
 ---
 
-# Definition 5 [2]
+# Definition 5 (Lecture 9, Section 2.1)
 
 Given graphs $G$ and $H$, say that $G \succeq H$ if $L_G \succeq L_H$.
 

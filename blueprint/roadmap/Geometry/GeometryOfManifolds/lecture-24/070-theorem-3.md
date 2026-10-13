@@ -4,7 +4,7 @@ origin: cited
 lean: spinc_theorem3_complete
 ---
 
-# Theorem 3 [3]
+# Theorem 3 (Lecture 24, Section 2 (Seiberg-Witten Invariants))
 
 Every compact 4-manifold admits spin$^{c}$ structures classified up to 2-torsion by $c = c_{1}(S^{+}) = c_{1}(S^{-}) = c_{1}(L) \in H^{2}(X, \mathbb{Z})$, where $L = \det(S^{+}) = \bigwedge^{2} S^{+} = \bigwedge^{2} S^{-}$. Moreover, $c$ is a characteristic element, i.e.\ $\langle c_{1}(L), \alpha \rangle \equiv Q(\alpha, \alpha) \pmod{2}$.
 

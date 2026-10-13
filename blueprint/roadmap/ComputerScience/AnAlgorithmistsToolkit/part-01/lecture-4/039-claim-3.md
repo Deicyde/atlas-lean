@@ -6,7 +6,7 @@ proof: formalized
 lean: RandomWalks.normWalkMatrix_rwMatrixGen_same_eigenvalues
 ---
 
-# Claim 3 [1]
+# Claim 3 (Lecture 4, Section 3)
 
 The matrices $N$ and $W$ have the same eigenvalues and related eigenvectors.
 

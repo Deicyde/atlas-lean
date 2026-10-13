@@ -5,7 +5,7 @@ statement: formalized
 lean: SimpleGraph.IsBipartiteExpander
 ---
 
-# Definition 1 [3]
+# Definition 1 (Section 3.2)
 
 A $d$-regular bipartite graph is an $(\alpha, \beta)$-expander if every set $S$ on the left with $|S| \leq \alpha n$ has $|N(S)| \geq \beta |S|$.
 

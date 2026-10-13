@@ -6,7 +6,7 @@ proof: formalized
 lean: Decidability.languages_uncountable
 ---
 
-# Corollary 1 [2]
+# Corollary 1 (Lecture 8)
 
 $\mathcal{L}$ (the set of all languages) is uncountable.
 

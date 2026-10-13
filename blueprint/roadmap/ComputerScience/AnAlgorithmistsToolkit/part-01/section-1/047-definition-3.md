@@ -5,7 +5,7 @@ statement: formalized
 lean: RandomWalks.lazyRwMatrix
 ---
 
-# Definition 3 [2]
+# Definition 3 (Section 1 (Diameters and Eigenvalues), Lecture 6)
 
 A lazy random walk is simply a random walk along a graph with self loops added in: $M = \frac{A}{2d} + \frac{I}{2}$ where $A$ is the graph's adjacency matrix and $I$ is the identity matrix.
 

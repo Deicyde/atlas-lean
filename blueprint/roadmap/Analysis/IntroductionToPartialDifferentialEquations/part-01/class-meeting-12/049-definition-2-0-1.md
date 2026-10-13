@@ -5,7 +5,7 @@ statement: formalized
 lean: MinkowskiVectors.IsCausal
 ---
 
-# Definition 2.0.1 [1]
+# Definition 2.0.1 (Class Meeting #12, Section 2)
 
 (1) Timelike vectors: $m(X, X) \coloneqq m_{\alpha \beta} X^{\alpha} X^{\beta}<0$.
 (2) Spacelike vectors: $m(X, X)>0$.

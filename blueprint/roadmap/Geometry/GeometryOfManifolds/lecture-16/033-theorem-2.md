@@ -4,7 +4,7 @@ origin: cited
 lean: elliptic_fredholm
 ---
 
-# Theorem 2 [3]
+# Theorem 2 (Lecture 16)
 
 $L$ elliptic $\Longrightarrow L_{s}$ is Fredholm, i.e.\ $\operatorname{Ker} L_{s}$ and $\operatorname{Coker} L_{s}$ are finite dimensional, $\operatorname{Im} L_{s}$ is closed, and $\operatorname{Ker} L_{s} = \operatorname{Ker} L \subset C^{\infty}(E)$.
 
@@ -14,7 +14,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Theorem 1 \[3\]](031-theorem-1.md)
+- [Theorem 1 (Lecture 16)](031-theorem-1.md)
 
 ## Sources
 

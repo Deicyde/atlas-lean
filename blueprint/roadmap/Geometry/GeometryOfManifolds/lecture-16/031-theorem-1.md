@@ -6,7 +6,7 @@ proof: formalized
 lean: elliptic_has_parametrix
 ---
 
-# Theorem 1 [3]
+# Theorem 1 (Lecture 16)
 
 Every elliptic operator has a pseudoinverse.
 

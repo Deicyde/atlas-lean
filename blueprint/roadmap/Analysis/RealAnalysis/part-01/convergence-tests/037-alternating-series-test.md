@@ -6,7 +6,7 @@ proof: formalized
 lean: Real_Analysis.Series.alternating_series_test
 ---
 
-# Theorem (Alternating Series test) [1]
+# Theorem (Alternating Series test) (Convergence tests) (1)
 
 Let $\{x_n\}$ be a monotone decreasing sequence such that $x_n \to 0.$ Then, $\sum (-1)^n x_n$ converges.
 

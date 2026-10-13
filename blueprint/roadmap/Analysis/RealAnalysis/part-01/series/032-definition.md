@@ -5,7 +5,7 @@ statement: formalized
 lean: Real_Analysis.Series.AbsolutelyConvergent
 ---
 
-# Definition (Series) [1]
+# Definition (Series) (1)
 
 $\sum x_n$ converges absolutely if $\sum |x_n|$ converges.
 

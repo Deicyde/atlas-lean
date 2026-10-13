@@ -4,7 +4,7 @@ origin: cited
 lean: SzemerediTrotter.szemeredi_trotter
 ---
 
-# Theorem (Szemeredi-Trotter) [1]
+# Theorem (Szemeredi-Trotter) (Section 'The Szemeredi-Trotter theorem')
 
 Let $X$ be a set of points in $\mathbb{R}^2$ and $L$ a set of lines in $\mathbb{R}^2$. Define $I(X, L) \coloneqq \#\{x \in X,\, \ell \in L \mid x \in \ell\}$. Then $$I(X, L) \leq |X| + |L| + |X|^{2/3} |L|^{2/3}.$$
 

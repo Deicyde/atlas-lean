@@ -6,7 +6,7 @@ proof: formalized
 lean: acs_submanifold_symplectic
 ---
 
-# Proposition 4 [1]
+# Proposition 4 (Symplectic Geometry, Lecture 8, Section 1 (Almost-complex Structures))
 
 If $X$ is an almost-complex submanifold in compatible $(M, \omega, J)$, then $X$ is symplectic (i.e.\ $\omega|_{X}$ is nondegenerate).
 

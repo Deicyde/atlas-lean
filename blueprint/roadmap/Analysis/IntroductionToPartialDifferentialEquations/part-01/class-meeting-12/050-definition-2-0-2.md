@@ -5,7 +5,7 @@ statement: formalized
 lean: MinkowskiVectors.IsFutureDirected
 ---
 
-# Definition 2.0.2 [3]
+# Definition 2.0.2 (Class Meeting #12, Section 2)
 
 A vector $X \in \mathbb{R}^{n}$ is said to be future-directed if $X^{0}>0$.
 

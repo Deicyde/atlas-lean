@@ -5,7 +5,7 @@ statement: formalized
 lean: ContinuousFunctions.AchievesAbsMin
 ---
 
-# Definition (Absolute Minimum/Maximum) [2]
+# Definition (Absolute Minimum/Maximum) (Continuous Functions) (2)
 
 Let $f: S\to \mathbb{R}$. Then, $f$ achieves an absolute minimum at $c$ if $\forall x\in S$, $f(x) \geq f(c)$. Similarly, $f$ achieves an absolute maximum at $d$ if $\forall x\in S$, $f(x) \leq f(d)$.
 

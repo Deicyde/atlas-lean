@@ -6,7 +6,7 @@ proof: formalized
 lean: Sparsification.claim6_weight_monotone_loewner
 ---
 
-# Claim 6 [3]
+# Claim 6 (Lecture 9, Section 2.1)
 
 Let $G = (V, E_G, w_G)$ and $H = (V, E_H, w_H)$ be weighted graphs on the same vertex set such that $w_G(i,j) \geq w_H(i,j)$ for all edges $(i,j) \in E$. Then, $G \succeq H$.
 

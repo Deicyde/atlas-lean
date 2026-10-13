@@ -6,7 +6,7 @@ proof: formalized
 lean: LpCompleteness.lp_banach_space
 ---
 
-# Theorem 1 [3]
+# Theorem 1 (Section 1, Completeness of L^p)
 
 For $1 \leq p < \infty$, $L^p(X, \mu)$ is a Banach space.
 

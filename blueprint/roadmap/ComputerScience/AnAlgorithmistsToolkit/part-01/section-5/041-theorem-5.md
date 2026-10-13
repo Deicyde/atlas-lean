@@ -4,7 +4,7 @@ origin: cited
 lean: RandomWalks.lazy_rw_convergence_bound
 ---
 
-# Theorem 5 [2]
+# Theorem 5 (Section 5 ($\ell_2$ Convergence))
 
 Let $p_0$ be an arbitrary initial distribution, and $p_t$ be the distribution after $t$ steps of the lazy random walk. Then, $\|p_t - \pi\|_2 \leq (1 - \lambda)^t \cdot \sqrt{\frac{\max_x d(x)}{\min_y d(y)}}$.
 

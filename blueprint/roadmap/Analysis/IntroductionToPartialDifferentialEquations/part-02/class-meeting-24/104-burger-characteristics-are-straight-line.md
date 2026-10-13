@@ -10,7 +10,7 @@ The characteristic curves are straight lines in $\mathbb{R}^{1+1}$.
 
 ## Depends on
 
-- [Definition 2.0.1 \[2\]](102-definition-2-0-1.md)
+- [Definition 2.0.1 (Class Meeting #24, Section 2 (Burger's Equation))](102-definition-2-0-1.md)
 
 ## Proof depends on
 

@@ -11,7 +11,7 @@ A divisor $D \geq 0$ is said to be effective. As with principal divisors $\opera
 
 ## Depends on
 
-- [Definition 19.6](../section-19/203-definition-19-6.md)
+This node has no prerequisites.
 
 ## Sources
 

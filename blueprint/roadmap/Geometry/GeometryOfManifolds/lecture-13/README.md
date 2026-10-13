@@ -1,4 +1,4 @@
 # Lecture 13
 
-- [Proposition 3 \[3\]](039-proposition-3.md)
-- [Proposition 4 \[2\]](040-proposition-4.md)
+- [Proposition 3 (Lecture 13, Section 1, Integrability of Almost-Complex Structures)](039-proposition-3.md)
+- [Proposition 4 (Lecture 13, Section 1, Integrability of Almost-Complex Structures)](040-proposition-4.md)

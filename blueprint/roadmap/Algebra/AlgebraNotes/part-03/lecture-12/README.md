@@ -2,4 +2,4 @@
 
 - [Definition (Lecture 12, Section: Review)](107-definition.md)
 - [Proposition (Lecture 12: Factorization in Rings, Section: Greatest Common Divisors)](115-proposition.md)
-- [Theorem (Theorem \ref{R UFD implies R\[x\]})](119-theorem-ref-r-ufd-implies-r-x.md)
+- [Theorem (Theorem \ref{R UFD implies R(x)})](119-theorem-ref-r-ufd-implies-r-x.md)

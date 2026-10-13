@@ -1,8 +1,6 @@
 ---
 declaration: def
 origin: cited
-statement: formalized
-lean: TateCohomology.herbrandQuotient
 ---
 
 # Definition 23.38

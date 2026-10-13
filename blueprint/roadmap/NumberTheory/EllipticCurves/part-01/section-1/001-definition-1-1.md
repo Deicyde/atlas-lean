@@ -1,8 +1,6 @@
 ---
 declaration: def
 origin: cited
-statement: formalized
-lean: NewtonPolygon.newtonPolygon
 ---
 
 # Definition 1.1

@@ -10,7 +10,7 @@ Let $G$ be a finite cyclic group. For any exact sequence of $G$-modules $0 \long
 
 ## Depends on
 
-- [Definition 23.38](480-definition-23-38.md)
+This node has no prerequisites.
 
 ## Sources
 

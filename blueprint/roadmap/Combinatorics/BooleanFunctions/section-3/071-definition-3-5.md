@@ -3,7 +3,7 @@ declaration: def
 origin: cited
 ---
 
-# Definition 3.5 [1]
+# Definition 3.5 (Section 3.2)
 
 Let $r \in \mathbb{N}$, $\varepsilon > 0$ and $0 < p < 1$. We say $\mathcal{F}$ is $(r, \varepsilon)$ quasi-random with respect to $p$ if $1_{\mathcal{F}}$ is $(r, \varepsilon)$ quasi-random with respect to $p$.
 

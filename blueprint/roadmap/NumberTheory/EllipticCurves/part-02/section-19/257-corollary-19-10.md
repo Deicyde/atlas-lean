@@ -10,7 +10,7 @@ Every modular function $f(\tau)$ for $\Gamma(1)$ that is holomorphic on
 
 ## Depends on
 
-- [Definition 19.2](252-definition-19-2.md)
+This node has no prerequisites.
 
 ## Sources
 

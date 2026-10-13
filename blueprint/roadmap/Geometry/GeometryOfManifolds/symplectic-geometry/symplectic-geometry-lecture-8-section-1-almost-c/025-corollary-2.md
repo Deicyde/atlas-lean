@@ -4,7 +4,7 @@ origin: cited
 lean: sections_principle_Mathlib
 ---
 
-# Corollary 2 [1]
+# Corollary 2 (Symplectic Geometry, Lecture 8, Section 1 (Almost-complex Structures))
 
 The space of compatible almost-complex structures on $(M, \omega)$ is contractible. It is the space of sections of a bundle whose fibers are contractible by the previous proposition.
 

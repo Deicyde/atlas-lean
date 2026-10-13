@@ -6,7 +6,7 @@ proof: formalized
 lean: ContinuousFunctions.extreme_value_theorem
 ---
 
-# Theorem (Min-Max Theorem) [2]
+# Theorem (Min-Max Theorem) (Continuous Functions) (2)
 
 Let $f:[a,b]\to \mathbb{R}$. If $f$ is continuous, then $f$ achieves an absolute maximum and absolute minimum.
 

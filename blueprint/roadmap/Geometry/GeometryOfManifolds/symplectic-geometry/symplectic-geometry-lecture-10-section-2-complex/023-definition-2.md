@@ -5,7 +5,7 @@ statement: formalized
 lean: totalChernFormGeometric
 ---
 
-# Definition 2 [2]
+# Definition 2 (Symplectic Geometry, Lecture 10, Section 2 (Complex Vector Bundles and Chern Classes))
 
 The total Chern form is $c(E, \nabla) = \det\!\left(I + \frac{i}{2\pi} R^{\nabla}\right) \in \bigoplus_{p \text{ even}} \Omega^{p}(M, \mathbb{C})$. Decomposing this element, we obtain projections $c_{j}(E, \nabla) \in \Omega^{2j}(M, \mathbb{C})$. Here $I + \frac{i}{2\pi} R^{\nabla}$ is a matrix with entries (const + 2-forms) in a local trivialization, and $\det$ is the usual determinant under the $\wedge$ product.
 

@@ -5,7 +5,7 @@ statement: formalized
 lean: ConvexGeometry.minkowskiFunctional
 ---
 
-# Definition 5 [3]
+# Definition 5 (Lecture 11, Section 4)
 
 The Minkowski functional of an origin symmetric convex body $C$ is the map $p_C : \mathbb{R}^n \to \mathbb{R}$ defined by $p_C(x) = \inf\{\lambda > 0 \mid x \in \lambda C\}$.
 

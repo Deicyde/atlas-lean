@@ -3,7 +3,7 @@ declaration: def
 origin: cited
 ---
 
-# Definition 3.3 [1]
+# Definition 3.3 (Lecture 5, Section 3.1)
 
 A graph $G = (V, E, w)$ is called an $(\varepsilon, \delta)$-small set expander if for any $S \subseteq V$ of size at most $\delta n$, it holds that $\Phi_G(S) \geqslant 1 - \varepsilon$.
 

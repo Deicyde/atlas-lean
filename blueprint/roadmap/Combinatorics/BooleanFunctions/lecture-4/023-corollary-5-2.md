@@ -12,7 +12,7 @@ $I_i[f] = \sum_{S \ni i} \widehat{f}(S)^2$.
 
 ## Depends on
 
-- [Definition 2.2 \[1\]](007-definition-2-2.md)
+- [Definition 2.2 (Lecture 4, Section 2)](007-definition-2-2.md)
 
 ## Sources
 

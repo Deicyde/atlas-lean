@@ -6,7 +6,7 @@ proof: formalized
 lean: LpCompleteness.smooth_compactSupport_dense_Lp_Rn
 ---
 
-# Theorem 2 [2]
+# Theorem 2 (Section 2, Density in L^p)
 
 $C_0^{\infty}(\mathbb{R}^n)$ is dense in $L^p(\mathbb{R}^n)$ for $1 \leq p < \infty$.
 

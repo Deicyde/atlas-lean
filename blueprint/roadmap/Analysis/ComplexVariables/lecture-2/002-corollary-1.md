@@ -6,7 +6,7 @@ proof: formalized
 lean: rpow_add_mul
 ---
 
-# Corollary 1 [1]
+# Corollary 1 (Lecture 2: Exponential function & Logarithm for a complex argument)
 
 For any $b > 0$, $x, y \in \mathbb{R}$, we have $b^{x+y} = b^{x} b^{y}$.
 

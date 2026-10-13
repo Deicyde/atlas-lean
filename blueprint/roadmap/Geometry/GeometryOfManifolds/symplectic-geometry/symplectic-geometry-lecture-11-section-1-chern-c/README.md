@@ -1,3 +1,3 @@
 # Symplectic Geometry, Lecture 11, Section 1 (Chern Classes)
 
-- [Proposition 1 \[2\]](022-proposition-1.md)
+- [Proposition 1 (Symplectic Geometry, Lecture 11, Section 1 (Chern Classes))](022-proposition-1.md)

@@ -6,7 +6,7 @@ proof: formalized
 lean: Cheeger.claim6
 ---
 
-# Claim 6 [1]
+# Claim 6 (Lecture 3, Section 4.2.1)
 
 With $y$ defined by $y_i = x_i - x_m$, $\frac{x^\top L x}{x^\top x} \geq \frac{y^\top L y}{y^\top y}$.
 

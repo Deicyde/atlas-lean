@@ -5,7 +5,7 @@ statement: formalized
 lean: IntegerProgramming.lattice_approx_bound_chain
 ---
 
-# Lemma 4 [2]
+# Lemma 4 (Section 4.2.2)
 
 Let $b_1, \ldots, b_n$ be any basis for $L$ with $\|b_1\|^2 \leq \cdots \leq \|b_n\|^2$. Then for every $x \in \mathbb{R}^n$, there exists a lattice point $y$ such that $\|x - y\|^2 \leq \frac{1}{4}(\|b_1\|^2 + \cdots + \|b_n\|^2) \leq \frac{1}{4} n \|b_n\|^2$.
 

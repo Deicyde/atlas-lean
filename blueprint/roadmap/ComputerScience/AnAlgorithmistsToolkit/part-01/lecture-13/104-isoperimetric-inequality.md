@@ -10,7 +10,7 @@ For any convex body $K$, with $n$-dimensional volume $V(K)$ and surface area $S(
 
 ## Depends on
 
-- [Definition 3 \[4\]](103-definition-3.md)
+- [Definition 3 (Lecture 13, Section 3.2)](103-definition-3.md)
 
 ## Sources
 

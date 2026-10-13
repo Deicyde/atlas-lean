@@ -5,7 +5,7 @@ statement: formalized
 lean: BrunnMinkowski.convex_bodyOfRevolution_of_convex
 ---
 
-# Lemma 7 [2]
+# Lemma 7 (Lecture 13, Section 3.3)
 
 $K'$ is convex.
 

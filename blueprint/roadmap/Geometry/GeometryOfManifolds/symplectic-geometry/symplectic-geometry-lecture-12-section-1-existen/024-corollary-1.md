@@ -4,7 +4,7 @@ origin: cited
 lean: chern_number_formula
 ---
 
-# Corollary 1 [2]
+# Corollary 1 (Symplectic Geometry, Lecture 12, Section 1 (Existence of Almost-Complex Structures))
 
 $c_{1}^{2} \cdot [M] = 2\chi(M) + 3\sigma(M)$.
 

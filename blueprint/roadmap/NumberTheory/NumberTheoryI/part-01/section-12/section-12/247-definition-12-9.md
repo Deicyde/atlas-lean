@@ -1,8 +1,6 @@
 ---
 declaration: def
 origin: cited
-statement: formalized
-lean: latticeDiscriminant
 ---
 
 # Definition 12.9

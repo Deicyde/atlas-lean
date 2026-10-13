@@ -6,7 +6,7 @@ proof: formalized
 lean: weierstrass_approximation
 ---
 
-# Theorem (Weierstrass Approximation Theorem) [1]
+# Theorem (Weierstrass Approximation Theorem) (Weierstrass Approximation Theorem section) (1)
 
 If $f\in C([a,b])$, there exists a sequence of polynomials $\{P_n\}$ such that $P_n\to f$ uniformly on $[a,b]$.
 

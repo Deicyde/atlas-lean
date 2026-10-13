@@ -1,9 +1,6 @@
 ---
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
-lean: Ideal.exists_elem_eq_valuation_at_primes
 ---
 
 # Corollary 3.17 (Finite approximation)

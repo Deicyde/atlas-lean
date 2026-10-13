@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Proposition 6 \[1\]](../../lecture-1/006-proposition-6.md)
+- [Proposition 6 (Lecture 1, Section 4)](../../lecture-1/006-proposition-6.md)
 
 ## Sources
 

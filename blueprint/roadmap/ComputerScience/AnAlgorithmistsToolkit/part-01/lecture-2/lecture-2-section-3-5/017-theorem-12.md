@@ -6,7 +6,7 @@ proof: formalized
 lean: LaplacianProperties.ker_lapMatrix_eq_span_ones
 ---
 
-# Theorem 12 [1]
+# Theorem 12 (Lecture 2, Section 3.5)
 
 If $G$ is connected, the null space is $1$-dimensional and spanned by the vector $\mathbf{1}$.
 

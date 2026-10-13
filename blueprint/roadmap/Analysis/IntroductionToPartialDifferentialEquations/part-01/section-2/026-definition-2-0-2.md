@@ -5,7 +5,7 @@ statement: formalized
 lean: HeatEquation.totalThermalEnergy
 ---
 
-# Definition 2.0.2 [1]
+# Definition 2.0.2 (Section 2) (1)
 
 We define the total thermal energy $\mathcal{T}(t)$ at time $t$ associated to $u(t, x)$ by $\mathcal{T}(t) \coloneqq \int_{\mathbb{R}^{n}} u(t, x) d^{n} x$.
 

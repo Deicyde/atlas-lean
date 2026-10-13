@@ -5,7 +5,7 @@ statement: formalized
 lean: HighDimensional.concentration_lipschitz_sphere
 ---
 
-# Theorem 3 [1]
+# Theorem 3 (Lecture 16)
 
 If $f$ is Lipschitz, $M$ is its median, and $\epsilon > 0$, then $\operatorname{Vol}(\{x : |f(x) - M| > \epsilon\}) \leq 2 e^{-n\epsilon^2/2}$.
 

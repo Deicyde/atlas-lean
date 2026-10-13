@@ -10,7 +10,6 @@ The genus of the curve $C/k$ is defined by $g\coloneqq \max\{r(D)+1: D \in \oper
 
 ## Depends on
 
-- [Definition 19.6](../../section-19/203-definition-19-6.md)
 - [Definition 21.10](../../section-21/230-definition-21-10.md)
 
 ## Proof depends on

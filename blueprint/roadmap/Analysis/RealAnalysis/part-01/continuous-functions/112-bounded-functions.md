@@ -5,7 +5,7 @@ statement: formalized
 lean: ContinuousFunctions.IsBoundedOn
 ---
 
-# Definition (Bounded Functions) [2]
+# Definition (Bounded Functions) (Continuous Functions) (2)
 
 A function $f:S\to \mathbb{R}$ is bounded if $\exists B\geq 0$ such that for all $x\in S$, $|f(x)| \leq B$.
 

@@ -6,7 +6,7 @@ proof: formalized
 lean: complex_line_integral_substitution
 ---
 
-# Theorem 1 [3]
+# Theorem 1 (Lecture 8: Line Integrals, Remarks on Lecture 8)
 
 Let $w = \varphi(z)$ be a holomorphic function on a region $\Omega$. Let $\gamma$ be a curve in $\Omega$, then $$\int_{\varphi(\gamma)} f(w)\, dw = \int_{\gamma} f(\varphi(z))\, \varphi'(z)\, dz.$$
 

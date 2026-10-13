@@ -12,8 +12,8 @@ Let $c$ be a cluster point of $S\subset \mathbb{R}$, and let $f: S\to \mathbb{R}
 
 ## Depends on
 
-- [Definition (Function Convergence) \[1\]](041-function-convergence.md)
-- [Definition (Cluster Point) \[1\]](040-cluster-point.md)
+- [Definition (Function Convergence) (Continuous Functions, Limits of Functions) (1)](041-function-convergence.md)
+- [Definition (Cluster Point) (Continuous Functions, Limits of Functions) (1)](040-cluster-point.md)
 
 ## Sources
 

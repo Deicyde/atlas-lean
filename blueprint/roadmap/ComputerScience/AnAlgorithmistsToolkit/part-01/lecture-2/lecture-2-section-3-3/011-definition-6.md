@@ -5,7 +5,7 @@ statement: formalized
 lean: PSDMatrix.IsPSD
 ---
 
-# Definition 6 [1]
+# Definition 6 (Lecture 2, Section 3.3)
 
 A symmetric matrix $M$ is positive semidefinite (PSD) if $\forall x \in \mathbb{R}^n$, $x^\top M x \geq 0$. $M$ is positive definite (PD) if the inequality is strict $\forall x \neq 0$.
 

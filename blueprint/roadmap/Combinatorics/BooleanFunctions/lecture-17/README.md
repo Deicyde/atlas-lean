@@ -1,7 +1,7 @@
 # Lecture 17
 
-- [Theorem 1.1 \[3\]](102-theorem-1-1.md)
-- [Corollary 1.2 \[2\]](103-corollary-1-2.md)
+- [Theorem 1.1 (Lecture 17, Section 1.1)](102-theorem-1-1.md)
+- [Corollary 1.2 (Lecture 17, Section 1.1)](103-corollary-1-2.md)
 - [Definition 1.3](104-definition-1-3.md)
 - [Definition 1.4 (A strongish form of UGC)](105-a-strongish-form-of-ugc.md)
 - [Theorem 1.5](106-theorem-1-5.md)

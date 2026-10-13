@@ -6,7 +6,7 @@ proof: formalized
 lean: TorusConvolution.eLpNorm_convolution_le
 ---
 
-# Proposition 1 [1]
+# Proposition 1 (Fourier Series, Continued (part 3))
 
 If $f$ and $g$ belong to $L^1(\mathbb{T})$, then $f * g \in L^1(\mathbb{T})$ and $\|f * g\|_p \leq \|f\|_p \|g\|_1$.
 

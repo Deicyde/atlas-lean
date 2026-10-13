@@ -6,7 +6,7 @@ proof: formalized
 lean: SumIndependentGaussians.sum_independent_gaussians
 ---
 
-# Proposition 1 [4]
+# Proposition 1 (Chapter 1 (Brownian Motion))
 
 If $X_k$ are independent Gaussians with mean $0$ and variance $\sigma_k^2$ with $\sum_k \sigma_k^2 < \infty$, then $X_1 + X_2 + \cdots$ converges in $L^2(\Omega)$ to a Gaussian random variable with mean zero and variance $\sigma^2 = \sum_k \sigma_k^2$.
 

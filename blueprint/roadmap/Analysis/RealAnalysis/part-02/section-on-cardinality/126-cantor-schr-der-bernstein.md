@@ -6,7 +6,7 @@ proof: formalized
 lean: SetTheory.Cardinality.cantor_schroeder_bernstein
 ---
 
-# Theorem (Cantor-Schröder-Bernstein) [2]
+# Theorem (Cantor-Schröder-Bernstein) (Section on Cardinality)
 
 If $|A| \leq |B|$ and $|B| \leq |A|$ then $|A| = |B|$.
 

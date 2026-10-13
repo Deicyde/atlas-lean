@@ -6,7 +6,7 @@ proof: formalized
 lean: ProjectionTheory.dft_discreteProjection
 ---
 
-# Lemma (Dictionary) [1]
+# Lemma (Dictionary) (Section: The large sieve, Subsection: Proof of Linnik's Large Sieve inequality)
 
 $\widehat{\pi_p f}(\alpha) = \widehat{f}\!\left(\frac{\alpha}{p}\right)$.
 

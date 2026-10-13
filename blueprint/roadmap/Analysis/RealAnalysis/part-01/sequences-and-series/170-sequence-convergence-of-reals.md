@@ -6,7 +6,7 @@ proof: formalized
 lean: Sequences.seq_converges_iff
 ---
 
-# Definition (Sequence Convergence of Reals) [2]
+# Definition (Sequence Convergence of Reals) (Sequences and Series, Sequences and Limits) (2)
 
 A sequence $\{x_n\}$ converges to $x\in \mathbb{R}$ if $\forall \epsilon >0$, $\exists M\in \mathbb{N}$ such that $\forall n\geq M$, $|x_n - x| <\epsilon$.
 

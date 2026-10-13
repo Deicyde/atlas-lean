@@ -6,7 +6,7 @@ proof: formalized
 lean: relative_poincare_lemma
 ---
 
-# Proposition 1 [1]
+# Proposition 1 (Lecture 5, Section 1 (Tubular Neighborhoods))
 
 $\beta \in \Omega^{\ell}(U)$, $d\beta = 0$, $i^{*}\beta = \beta|_{X} = 0 \Longrightarrow \exists \mu \in \Omega^{\ell-1}(U)$, $\beta = d\mu$ and $\mu_{x} = 0$ for all $x \in X$.
 

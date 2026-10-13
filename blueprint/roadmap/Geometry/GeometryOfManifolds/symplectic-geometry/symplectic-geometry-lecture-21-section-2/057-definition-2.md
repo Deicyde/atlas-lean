@@ -4,7 +4,7 @@ origin: cited
 lean: LefschetzFibrationMathlib
 ---
 
-# Definition 2 [4]
+# Definition 2 (Symplectic Geometry, Lecture 21, Section 2)
 
 A Lefschetz fibration is a map $M^{4} \rightarrow \Sigma^{2}$ between oriented manifolds with isolated critical points modeled in oriented coordinates on $\mathbb{C}^{2} \rightarrow \mathbb{C},\; (z_{1}, z_{2}) \mapsto z_{1}^{2} + z_{2}^{2}$.
 

@@ -6,7 +6,7 @@ proof: formalized
 lean: HallTheorem.multibutterfly_can_route
 ---
 
-# Claim 2 [2]
+# Claim 2 (Section 3.2)
 
 A $d$-Multibutterfly with $N$ nodes in each layer can route any permutation of $2\alpha N$ inputs to $2\alpha N$ outputs.
 

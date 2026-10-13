@@ -1,5 +1,5 @@
 # Section on Taylor's Theorem
 
-- [Definition ($n$-times Differentiable) \[2\]](127-n-times-differentiable.md)
-- [Theorem (Taylor) \[2\]](128-taylor.md)
-- [Theorem (Second Derivative Test) \[2\]](130-second-derivative-test.md)
+- [Definition ($n$-times Differentiable) (Section on Taylor's Theorem)](127-n-times-differentiable.md)
+- [Theorem (Taylor) (Section on Taylor's Theorem)](128-taylor.md)
+- [Theorem (Second Derivative Test) (Section on Taylor's Theorem)](130-second-derivative-test.md)

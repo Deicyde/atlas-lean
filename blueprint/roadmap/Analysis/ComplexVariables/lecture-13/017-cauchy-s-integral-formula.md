@@ -12,7 +12,7 @@ Let $f$ be holomorphic in an open set $\Omega$. Then $$n(\gamma, z)\, f(z) = \fr
 
 ## Depends on
 
-- [Definition 1 \[2\]](014-definition-1.md)
+- [Definition 1 (Lecture 13: The General Cauchy Theorem)](014-definition-1.md)
 
 ## Sources
 

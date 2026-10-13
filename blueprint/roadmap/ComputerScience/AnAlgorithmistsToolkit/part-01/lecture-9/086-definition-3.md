@@ -5,7 +5,7 @@ statement: formalized
 lean: Sparsification.IsSpectralSparsifier
 ---
 
-# Definition 3 [3]
+# Definition 3 (Lecture 9, Section 2)
 
 A Spectral Sparsifier $G'$ of a graph $G$ is one for which the relation $(1 - \epsilon) x^\top L_{G'} x \leq x^\top L_G x \leq (1 + \epsilon) x^\top L_{G'} x$ for all $x \in [0,1]^n$.
 

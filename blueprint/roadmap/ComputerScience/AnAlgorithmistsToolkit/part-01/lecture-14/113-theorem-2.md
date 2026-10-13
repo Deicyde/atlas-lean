@@ -4,7 +4,7 @@ origin: cited
 lean: VolumeHardness.volume_computation_hardness
 ---
 
-# Theorem 2 [1]
+# Theorem 2 (Lecture 14, Section 1)
 
 There is no deterministic poly time algorithm that, given a membership oracle for $K$, computes $\operatorname{Vol}(K)$ within a polynomial factor.
 

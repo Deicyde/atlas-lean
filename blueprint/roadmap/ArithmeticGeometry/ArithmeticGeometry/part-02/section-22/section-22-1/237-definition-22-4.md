@@ -10,7 +10,6 @@ Let $C/k$ be a curve of genus $g$. For $D \in \operatorname{Div}_{k} C$, the non
 
 ## Depends on
 
-- [Definition 19.6](../../section-19/203-definition-19-6.md)
 - [Definition 22.1](235-definition-22-1.md)
 - [Definition 21.10](../../section-21/230-definition-21-10.md)
 

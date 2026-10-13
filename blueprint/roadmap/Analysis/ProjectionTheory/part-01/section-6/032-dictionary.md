@@ -6,7 +6,7 @@ proof: formalized
 lean: FourierProjection.fourier_projection_dictionary
 ---
 
-# Lemma (Dictionary) [2]
+# Lemma (Dictionary) (Section 6: Projections and smoothing)
 
 For any subspace $V \subset \mathbb{R}^d$ and any $\xi \in V$, $\widehat{\pi_V f}(\xi) = \hat{f}(\xi)$.
 

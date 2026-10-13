@@ -6,13 +6,13 @@ proof: formalized
 lean: ConvexGeometry.polarBody_polarBody_eq
 ---
 
-# Theorem 4 [1]
+# Theorem 4 (Lecture 11, Section 3.2)
 
 Let $K$ be a convex body. Then $K^{**} = K$.
 
 ## Depends on
 
-- [Definition 1 \[4\]](094-definition-1.md)
+- [Definition 1 (Lecture 11, Section 3)](094-definition-1.md)
 
 ## Sources
 

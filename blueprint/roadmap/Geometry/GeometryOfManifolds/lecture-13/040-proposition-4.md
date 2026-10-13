@@ -6,7 +6,7 @@ proof: formalized
 lean: nijenhuis_dual_map_is_d_20_typed
 ---
 
-# Proposition 4 [2]
+# Proposition 4 (Lecture 13, Section 1, Integrability of Almost-Complex Structures)
 
 The dual map $N^{*} \colon \bigwedge^{0,1} T^{*}M \rightarrow \bigwedge^{2,0} T^{*}M$ is precisely the map $N^{*}\alpha = (d\alpha)^{(2,0)}$.
 

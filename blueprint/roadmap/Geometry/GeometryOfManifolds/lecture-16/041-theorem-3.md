@@ -6,7 +6,7 @@ proof: formalized
 lean: elliptic_solvability
 ---
 
-# Theorem 3 [2]
+# Theorem 3 (Lecture 16)
 
 $L$ elliptic, $\tau \in (\operatorname{Ker} L^{*})^{\perp} = \operatorname{Im} L \subset C^{\infty}(F) \Longrightarrow \exists!\, \xi \in C^{\infty}(E)$ such that $L\xi = \tau$ and $\xi \perp \operatorname{Ker} L$.
 

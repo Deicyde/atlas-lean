@@ -5,7 +5,7 @@ statement: formalized
 lean: FunctionSequences.PowerSeries
 ---
 
-# Definition (Power series) [2]
+# Definition (Power series) (Sequences of Function, Power Series) (2)
 
 A power series about $x_0$ is a series of the form $\sum_{m=0}^\infty a_m (x-x_0)^m$.
 

@@ -6,7 +6,7 @@ proof: formalized
 lean: CompactSubgroups.good_maximal_bounded_exists
 ---
 
-# Corollary (Section 14.8) [1]
+# Corollary (Section 14.8) (1)
 
 There exist good maximal bounded subgroups of $G$, obtained as $BW_xB$ where $W_x$ is the fixer in $W$ of a special vertex $x$ of the chamber fixed by $B$.
 

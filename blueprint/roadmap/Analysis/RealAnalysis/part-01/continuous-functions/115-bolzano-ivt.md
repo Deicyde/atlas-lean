@@ -6,7 +6,7 @@ proof: formalized
 lean: ContinuousFunctions.intermediate_value_theorem
 ---
 
-# Theorem (Bolzano IVT) [2]
+# Theorem (Bolzano IVT) (Continuous Functions)
 
 Let $f:[a,b] \to \mathbb{R}$ be continuous. If $f(a) < f(b)$, and $y\in (f(a),f(b))$, $\exists c\in (a,b)$ such that $f(c) = y.$ If $f(b) < f(a)$ and $y\in (f(b),f(a))$, $\exists c\in (a,b)$ such that $f(c) = y.$
 

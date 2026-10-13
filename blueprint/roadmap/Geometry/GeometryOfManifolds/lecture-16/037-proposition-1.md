@@ -6,7 +6,7 @@ proof: formalized
 lean: hodge_star_pq_type
 ---
 
-# Proposition 1 [3]
+# Proposition 1 (Lecture 16)
 
 $\ast$ maps $\bigwedge^{p,q} \rightarrow \bigwedge^{n-q, n-p}$.
 

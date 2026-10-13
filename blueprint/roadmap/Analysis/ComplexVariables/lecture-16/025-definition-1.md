@@ -5,7 +5,7 @@ statement: formalized
 lean: IsHarmonic
 ---
 
-# Definition 1 [4]
+# Definition 1 (Lecture 16: Harmonic Functions)
 
 A real-valued function $u(z) = u(x, y)$ in a region $\Omega$ is harmonic if it is $C^{2}$ and satisfies the equation $$\frac{\partial^{2} u}{\partial x^{2}} + \frac{\partial^{2} u}{\partial y^{2}} = 0.$$
 

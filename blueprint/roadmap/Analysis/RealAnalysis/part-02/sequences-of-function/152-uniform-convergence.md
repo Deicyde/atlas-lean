@@ -6,7 +6,7 @@ proof: formalized
 lean: uniform_convergence_iff
 ---
 
-# Definition (Uniform Convergence) [2]
+# Definition (Uniform Convergence) (Sequences of Function, Pointwise and Uniform Convergence) (2)
 
 For $n\in \mathbb{N}$, let $f_n:S\to \mathbb{R}$, and let $f:S\to \mathbb{R}$. Then, we say $f_n$ converges to $f$ uniformly if $\forall \epsilon>0$ $\exists M\in \mathbb{N}$ such that for all $n\geq M$ $\forall x\in S$, $|f_n(x) - f(x)|<\epsilon$.
 

@@ -11,7 +11,7 @@ Let $f$ be analytic except for isolated singularities $a_j$ in a region $\Omega$
 
 ## Depends on
 
-- [Definition 1 \[3\]](019-definition-1.md)
+- [Definition 1 (Lecture 14: The Residue Theorem and Application)](019-definition-1.md)
 
 ## Sources
 

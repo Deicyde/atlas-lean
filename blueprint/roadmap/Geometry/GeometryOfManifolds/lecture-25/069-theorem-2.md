@@ -4,7 +4,7 @@ origin: cited
 lean: positive_scalar_curvature_vanishing
 ---
 
-# Theorem 2 [4]
+# Theorem 2 (Lecture 25, Section 2 (Seiberg-Witten Equations))
 
 If $g$ has scalar curvature $> 0$, then the SW-invariants $\equiv 0$.
 

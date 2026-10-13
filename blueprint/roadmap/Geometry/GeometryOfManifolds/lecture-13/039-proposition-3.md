@@ -4,7 +4,7 @@ origin: cited
 lean: isIntegrable_of_hasHolomorphicCoords
 ---
 
-# Proposition 3 [3]
+# Proposition 3 (Lecture 13, Section 1, Integrability of Almost-Complex Structures)
 
 If $J$ is a complex structure, $N = 0$.
 

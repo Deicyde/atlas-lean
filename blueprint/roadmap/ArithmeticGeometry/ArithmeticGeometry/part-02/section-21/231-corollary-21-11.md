@@ -11,7 +11,6 @@ The following hold: (a) $\ell(0)=1$. (b) If $A \sim B$ then $\ell(A)=\ell(B)$ an
 
 ## Depends on
 
-- [Definition 19.6](../section-19/203-definition-19-6.md)
 - [Definition 21.2](225-definition-21-2.md)
 - [Definition 21.10](230-definition-21-10.md)
 

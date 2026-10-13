@@ -10,7 +10,7 @@ Let $K$ be a convex body, and divide it into $K_1$ and $K_2$ using a hyperplane.
 
 ## Depends on
 
-- [Definition 2 \[2\]](../lecture-10/093-definition-2.md)
+- [Definition 2 (Lecture 10, Section 2)](../lecture-10/093-definition-2.md)
 
 ## Sources
 

@@ -6,7 +6,7 @@ proof: formalized
 lean: rolle
 ---
 
-# Theorem (Rolle) [2]
+# Theorem (Rolle) (Mean Value Theorem section)
 
 Let $f:[a,b]\to \mathbb{R}$ be continuous and differentiable on $(a,b)$. If $f(a) = f(b)$, then $\exists c\in (a,b)$ such that $f'(c) = 0$.
 

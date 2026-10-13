@@ -5,7 +5,7 @@ statement: formalized
 lean: GraphMatrices.singleEdgeLapMatrix
 ---
 
-# Definition 5 [1]
+# Definition 5 (Lecture 2, Section 3.2)
 
 Let $L_e$ be the Laplacian of the graph on $n$ vertices consisting of just the edge $e$.
 

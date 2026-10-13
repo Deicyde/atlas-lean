@@ -4,7 +4,7 @@ origin: cited
 lean: DeRhamConcrete.cohomology_isomorphism
 ---
 
-# Corollary 1 [1]
+# Corollary 1 (Lecture 5, Section 1 (Tubular Neighborhoods))
 
 $i^{*} \colon H^{*}(U_{1}, \mathbb{R}) \rightarrow H^{*}(X, \mathbb{R})$ is an isomorphism.
 

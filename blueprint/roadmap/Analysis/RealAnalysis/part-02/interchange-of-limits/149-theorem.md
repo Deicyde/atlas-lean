@@ -12,7 +12,7 @@ Let $\sum_{j=0}^\infty a_j(x-x_0)^j$ be a power series of radius of convergence 
 
 ## Depends on
 
-- [Definition (Radius of Convergence) \[1\]](../sequences-of-function/086-radius-of-convergence.md)
+- [Definition (Radius of Convergence) (Sequences of Function, Power Series) (1)](../sequences-of-function/086-radius-of-convergence.md)
 
 ## Sources
 

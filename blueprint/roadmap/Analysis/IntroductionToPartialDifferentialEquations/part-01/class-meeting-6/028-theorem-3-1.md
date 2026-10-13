@@ -5,7 +5,7 @@ statement: formalized
 lean: CM7.poisson_uniqueness
 ---
 
-# Theorem 3.1 [1]
+# Theorem 3.1 (Class Meeting #6, Section 3 (Uniqueness via the Energy Method))
 
 Let $\Omega \subset \mathbb{R}^{n}$ be a smooth, bounded domain. Then under Dirichlet, Robin, or mixed boundary conditions, there is at most one solution of regularity $u \in C^{2}(\Omega) \cap C^{1}(\bar{\Omega})$ to the Poisson equation. In the case of Neumann conditions, any two solutions can differ by at most a constant.
 

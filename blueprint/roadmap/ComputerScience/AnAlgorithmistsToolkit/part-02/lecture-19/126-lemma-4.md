@@ -6,7 +6,7 @@ proof: formalized
 lean: LatticeShortestVector.lattice_vector_norm_bound
 ---
 
-# Lemma 4 [1]
+# Lemma 4 (Lecture 19, Section 4.1)
 
 For any nonzero $b \in L(B)$, $\|b\| \geq \min_i \|b_i^{\star}\|$.
 

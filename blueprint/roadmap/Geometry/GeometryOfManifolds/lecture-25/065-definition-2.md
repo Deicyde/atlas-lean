@@ -5,7 +5,7 @@ statement: formalized
 lean: SWModuliSpace
 ---
 
-# Definition 2 [5]
+# Definition 2 (Lecture 25, Section 2 (Seiberg-Witten Equations))
 
 The moduli space of solutions $\mathcal{M}(S, g, \mu)$ is the set of solutions to the Seiberg-Witten equations modulo $\mathcal{G}$.
 

@@ -1,4 +1,4 @@
 # Section 6
 
-- [Lemma (Dictionary) \[2\]](032-dictionary.md)
+- [Lemma (Dictionary) (Section 6: Projections and smoothing)](032-dictionary.md)
 - [Theorem 6.1](033-theorem-6-1.md)

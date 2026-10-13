@@ -4,7 +4,7 @@ origin: cited
 lean: lagrangian_intersection_c1_close
 ---
 
-# Theorem 2 [1]
+# Theorem 2 (Lecture 6, Section 1 (Applications))
 
 For $(M, \omega)$ symplectic, $X \subset (M, \omega)$ compact and Lagrangian, if $H^{1}(X, \mathbb{R}) = 0$, then every Lagrangian submanifold of $M$ which is $C^{1}$ close to $X$ intersects $X$ in $\geq 2$ points.
 

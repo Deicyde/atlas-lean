@@ -18,8 +18,8 @@ source order and are not drawn as roadmap edges.
 ## Targets without a linked Lean declaration
 
 These targets have no `lean:` link: v1 matched no declaration, the
-matched name is not found by Autoform's lexical scan of `v1/`, or another
-v1 book declares the same name.
+matched name is not found by Autoform's lexical scan, or another v1 book
+or a root library declares the same name.
 
 | Target | v1 match |
 | --- | --- |

@@ -5,7 +5,7 @@ statement: formalized
 lean: cfl_inter_regular
 ---
 
-# Corollary 2 [1]
+# Corollary 2 (Lecture 5, Equivalence of CFGs and PDAs, Corollaries)
 
 If $A$ is a CFL and $B$ is regular then $A \cap B$ is a CFL.
 

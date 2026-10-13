@@ -11,7 +11,7 @@ Let $C/k$ be a curve of genus $g$. Then $r(D) \leq g-1$ for all $D \in \operator
 
 ## Depends on
 
-- [Definition 19.6](../../section-19/203-definition-19-6.md)
+This node has no prerequisites.
 
 ## Sources
 

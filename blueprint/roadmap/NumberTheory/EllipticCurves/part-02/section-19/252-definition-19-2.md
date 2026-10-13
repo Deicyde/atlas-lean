@@ -1,8 +1,6 @@
 ---
-declaration: structure
+declaration: def
 origin: cited
-statement: formalized
-lean: IsModularFunction
 ---
 
 # Definition 19.2
@@ -14,7 +12,7 @@ Let $\Gamma$ be a congruence subgroup. A modular function for $\Gamma$ is a
 
 ## Depends on
 
-- [Definition 19.1](251-definition-19-1.md)
+This node has no prerequisites.
 
 ## Sources
 

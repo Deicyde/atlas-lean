@@ -1,8 +1,6 @@
 ---
-declaration: abbrev
+declaration: def
 origin: cited
-statement: formalized
-lean: CurveDivisor
 ---
 
 # Definition 19.6

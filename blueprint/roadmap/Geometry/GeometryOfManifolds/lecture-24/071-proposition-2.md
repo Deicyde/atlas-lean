@@ -4,7 +4,7 @@ origin: cited
 lean: spinc_connections_affine
 ---
 
-# Proposition 2 [5]
+# Proposition 2 (Lecture 24, Section 3 (Dirac Operator))
 
 Any two spin$^{c}$ connections differ by a 1-form on $X$ of the type $ia \otimes \operatorname{id}_{S^{\pm}}$, and the induced connection $A$ on $L = \bigwedge^{2} S^{\pm}$ defines the spin$^{c}$ connection uniquely.
 

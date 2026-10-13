@@ -6,7 +6,7 @@ proof: formalized
 lean: Sequences.subseq_tendsto
 ---
 
-# Theorem (Convergent Sequences of the Real Numbers section) [2]
+# Theorem (Convergent Sequences of the Real Numbers section) (2)
 
 If $\{x_n\}$ converges to $x$, then any subsequence of $x_n$ will converge to $x$.
 

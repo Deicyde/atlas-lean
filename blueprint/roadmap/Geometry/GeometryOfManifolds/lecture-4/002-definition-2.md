@@ -5,7 +5,7 @@ statement: formalized
 lean: IsDeformationEquivalent
 ---
 
-# Definition 2 [1]
+# Definition 2 (Lecture 4, Section 2 (Moser's Theorem))
 
 Two forms $\omega_{0}, \omega_{1}$ are deformation equivalent if $\exists (\omega_{t})_{t \in [0,1]}$ a continuous family of symplectic forms, and isotopic if there is such a family with $[\omega_{t}]$ constant in $H^{2}(M, \mathbb{R})$.
 

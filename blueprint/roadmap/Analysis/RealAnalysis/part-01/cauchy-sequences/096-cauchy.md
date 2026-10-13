@@ -6,7 +6,7 @@ proof: formalized
 lean: Real_Analysis.cauchy_seq_iff
 ---
 
-# Definition (Cauchy) [2]
+# Definition (Cauchy) (Cauchy Sequences section) (2)
 
 A sequence $\{x_n\}$ is Cauchy if $\forall \epsilon>0$ $\exists M \in \mathbb{N}$ such that for all $n,k \geq M$, $|x_n - x_k| <\epsilon.$
 

@@ -5,7 +5,7 @@ statement: formalized
 lean: IsNTimesDiffOn
 ---
 
-# Definition ($n$-times Differentiable) [2]
+# Definition ($n$-times Differentiable) (Section on Taylor's Theorem)
 
 We say $f: I\to \mathbb{R}$ is $n$-times differentiable on $J\subset I$ if $f', f'', \dots, f^{(n)}$ exist at every point in $J.$
 

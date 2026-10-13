@@ -6,7 +6,7 @@ proof: formalized
 lean: second_derivative_test_min
 ---
 
-# Theorem (Second Derivative Test) [1]
+# Theorem (Second Derivative Test) (Taylor's Theorem section)
 
 Suppose $f:(a,b) \to \mathbb{R}$ has two continuous derivatives. If $x_0\in (a,b)$ such that $f'(x_0) = 0$ and $f''(x_0) >0$, then $f$ has a strict relative minimum at $x_0.$
 

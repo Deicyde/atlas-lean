@@ -10,7 +10,6 @@ For a divisor $D$ of a genus $g$ curve, the following are equivalent: (a) $D$ is
 
 ## Depends on
 
-- [Definition 19.6](../../section-19/203-definition-19-6.md)
 - [Definition 22.1](../section-22-1/235-definition-22-1.md)
 - [Definition 21.10](../../section-21/230-definition-21-10.md)
 - [Definition 22.4](../section-22-1/237-definition-22-4.md)

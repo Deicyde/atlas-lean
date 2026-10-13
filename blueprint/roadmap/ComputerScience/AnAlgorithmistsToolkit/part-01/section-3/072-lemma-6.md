@@ -6,17 +6,17 @@ proof: formalized
 lean: RandomWalks.expander_matching_contraction_ratio
 ---
 
-# Lemma 6 [2]
+# Lemma 6 (Section 3.2)
 
 For all $i$, $|S_{i+1}| / |S_i| \leq 2(1 - \beta/d)$.
 
 ## Depends on
 
-- [Definition 1 \[3\]](057-definition-1.md)
+- [Definition 1 (Section 3.2)](057-definition-1.md)
 
 ## Proof depends on
 
-- [Lemma 5 \[1\]](071-lemma-5.md)
+- [Lemma 5 (Section 3.2)](071-lemma-5.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ $h \equiv 0$, so the Cauchy Integral Formula (1) holds.
 
 ## Depends on
 
-- [Definition 1 \[2\]](../lecture-13/014-definition-1.md)
+- [Definition 1 (Lecture 13: The General Cauchy Theorem)](../lecture-13/014-definition-1.md)
 
 ## Sources
 

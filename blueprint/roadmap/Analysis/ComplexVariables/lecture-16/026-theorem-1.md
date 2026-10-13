@@ -5,13 +5,13 @@ statement: formalized
 lean: IsHarmonic.exists_holomorphic_re_eq
 ---
 
-# Theorem 1 [4]
+# Theorem 1 (Lecture 16: Harmonic Functions)
 
 If $\Omega$ is simply connected and $u$ harmonic in $\Omega$, there exists a holomorphic function $f(z)$ such that $$u(z) = \operatorname{Re} f(z).$$
 
 ## Depends on
 
-- [Definition 1 \[4\]](025-definition-1.md)
+- [Definition 1 (Lecture 16: Harmonic Functions)](025-definition-1.md)
 - [Definition 2](../lecture-13/015-definition-2.md)
 
 ## Sources

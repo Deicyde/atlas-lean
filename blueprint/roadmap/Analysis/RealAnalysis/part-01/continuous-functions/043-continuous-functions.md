@@ -6,7 +6,7 @@ proof: formalized
 lean: ContinuousFunctions.continuous_at_iff_eps_delta
 ---
 
-# Definition (Continuous Functions) [1]
+# Definition (Continuous Functions) (1)
 
 Let $S\subset \mathbb{R}$ and let $c\in S$. We say $f$ is continuous at $c$ if $\forall \epsilon>0$ $\exists\delta>0$ such that if $x\in S$ and $|x-c|<\delta$ then $|f(x) - f(c)|< \epsilon$. We say $f$ is continuous on $U$ for $U\subset S$ if $f$ is continuous at every point in $U$.
 

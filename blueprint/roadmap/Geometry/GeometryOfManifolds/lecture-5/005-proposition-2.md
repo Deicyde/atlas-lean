@@ -5,7 +5,7 @@ statement: formalized
 lean: WeinsteinNeighborhood.lagrangianQuotientDualEquiv
 ---
 
-# Proposition 2 [1]
+# Proposition 2 (Lecture 5, Section 1 (Tubular Neighborhoods))
 
 Let $X \hookrightarrow (M, \omega)$ be a Lagrangian submanifold. Then $NX \xrightarrow{\sim} T^{*}X$.
 

@@ -1,8 +1,6 @@
 ---
 declaration: def
 origin: cited
-statement: formalized
-lean: CurveDivisor.divZeros
 ---
 
 # Definition 19.15
@@ -11,7 +9,7 @@ For a principal divisor $\operatorname{div} f = \sum n_P P$, the divisors $\oper
 
 ## Depends on
 
-- [Definition 19.6](203-definition-19-6.md)
+This node has no prerequisites.
 
 ## Sources
 

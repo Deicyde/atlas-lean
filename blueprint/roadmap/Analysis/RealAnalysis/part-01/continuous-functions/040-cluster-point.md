@@ -5,7 +5,7 @@ statement: formalized
 lean: ContinuousFunctions.IsClusterPoint
 ---
 
-# Definition (Cluster Point) [1]
+# Definition (Cluster Point) (Continuous Functions, Limits of Functions) (1)
 
 Let $S\subset \mathbb{R}$. $x\in \mathbb{R}$ is a cluster point of $S$ if $\forall \delta >0$, $(x-\delta, x+\delta) \cap S\setminus \{x\} \neq \emptyset$.
 

@@ -6,7 +6,7 @@ proof: formalized
 lean: LowStretchSpanningTree.low_stretch_spanning_tree
 ---
 
-# Theorem 3 [2]
+# Theorem 3 (Lecture 23, Section 4.1.2)
 
 Any graph $G$ has a spanning tree $T$ into which it can be embedded such that $\sum_{(i,j) \in E(G)} \operatorname{stretch}(i,j) \leq m \log^c n$.
 

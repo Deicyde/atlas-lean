@@ -5,7 +5,7 @@ statement: formalized
 lean: Sequences.IsSubsequence
 ---
 
-# Definition (Subsequence) [2]
+# Definition (Subsequence) (Convergent Sequences of the Real Numbers section) (2)
 
 Let $\{x_n\}$ be a sequence and let $\{n_k\}$ be a strictly increasing sequence of natural numbers. Then the sequence $\{x_{n_k}\}_{k=1}^\infty$ is called a subsequence of $\{x_n\}$.
 

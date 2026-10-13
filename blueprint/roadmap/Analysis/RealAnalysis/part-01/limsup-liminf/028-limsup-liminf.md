@@ -6,7 +6,7 @@ proof: formalized
 lean: Sequences.limsup_eq_lim_sup_tail
 ---
 
-# Definition (Limsup/Liminf) [1]
+# Definition (Limsup/Liminf) (Limsup/Liminf section)
 
 Let $\{x_n\}$ be a bounded sequence. We define, if the limits exist, $\limsup_{n\to \infty} x_n \coloneqq \lim_{n\to \infty}(\sup\{x_k \mid k \geq n\})$ and $\liminf_{n\to \infty} x_n \coloneqq \lim_{n\to \infty}(\inf\{x_k \mid k \geq n\}).$ These are called the limit superior and limit inferior respectively.
 

@@ -5,7 +5,7 @@ statement: formalized
 lean: residue
 ---
 
-# Definition 1 [3]
+# Definition 1 (Lecture 14: The Residue Theorem and Application)
 
 The residue is defined as $$\operatorname{Res}_{z=a} f(z) \coloneqq \frac{1}{2\pi i} \int_{C} f(z)\, dz$$ where $C$ is any circle contained in $\Omega$ with center $a$, and $f(z)$ is holomorphic in $\Omega' = \Omega \setminus \{a\}$.
 
