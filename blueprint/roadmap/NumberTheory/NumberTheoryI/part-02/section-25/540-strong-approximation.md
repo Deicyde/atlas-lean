@@ -10,7 +10,9 @@ Let $M_{K}=S \sqcup T \sqcup\{w\}$ be a partition of the places of a global fiel
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.1](../../part-01/section-13/264-definition-13-1.md)
+- [Definition 13.17](../../part-01/section-13/276-definition-13-17.md)
+- [Definition 13.22](../../part-01/section-13/279-definition-13-22.md)
 
 ## Proof depends on
 

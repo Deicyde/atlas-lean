@@ -12,7 +12,12 @@ Let $L / K$ be a finite cyclic extension with Galois group $\operatorname{Gal}(L
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.46](../../part-01/section-4/section-4-3/091-definition-4-46.md)
+
+## Proof depends on
+
+- [Theorem 23.37](../section-23/section-23-6/479-theorem-23-37.md)
+- [Theorem 24.1](514-theorem-24-1.md)
 
 ## Sources
 

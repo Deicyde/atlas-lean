@@ -12,6 +12,11 @@ $A$ is a CFL if and only if some PDA recognizes $A$.
 ## Depends on
 
 - [Definition (Pushdown Automaton)](015-pushdown-automaton.md)
+- [Definition (Context Free Language)](014-context-free-language.md)
+
+## Proof depends on
+
+- [Theorem (Converting CFGs to PDAs)](016-converting-cfgs-to-pdas.md)
 
 ## Sources
 

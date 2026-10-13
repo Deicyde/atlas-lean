@@ -11,7 +11,7 @@ An abelian variety is a projective algebraic group.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.18](../../part-01/section-13/section-13-4/115-definition-13-18.md)
 
 ## Sources
 

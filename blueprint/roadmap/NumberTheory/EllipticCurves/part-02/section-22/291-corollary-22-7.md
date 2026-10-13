@@ -18,7 +18,18 @@ Let $E/\mathbb{F}_q$ be an elliptic curve with CM by an order $\mathcal{O}$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.4](../../part-01/section-3/section-3-1/007-definition-3-4.md)
+- [Definition 12.21](../../part-01/section-12/154-definition-12-21.md)
+- [Definition 12.22](../../part-01/section-12/155-definition-12-22.md)
+- [Definition 17.16](../../part-01/section-17/237-definition-17-16.md)
+- [Definition 21.4](../section-21/278-definition-21-4.md)
+- [Definition 22.4](288-definition-22-4.md)
+
+## Proof depends on
+
+- [Theorem 21.13 (Deuring lifting theorem)](../section-21/285-deuring-lifting-theorem.md)
+- [Theorem 22.5](289-theorem-22-5.md)
+- [Lemma 22.6](290-lemma-22-6.md)
 
 ## Sources
 

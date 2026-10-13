@@ -11,6 +11,7 @@ Let $G$ be a finite cyclic group. For any exact sequence of $G$-modules $0 \long
 ## Depends on
 
 - [Definition 23.38](480-definition-23-38.md)
+- [Definition 23.1](../section-23-1/446-definition-23-1.md)
 
 ## Proof depends on
 

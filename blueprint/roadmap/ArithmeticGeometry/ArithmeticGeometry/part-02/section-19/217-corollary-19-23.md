@@ -12,10 +12,17 @@ Let $f \in k(C)^{\times}$ for some curve $C/k$. Then $f$ has the same number of 
 
 - [Definition 19.6](203-definition-19-6.md)
 - [Definition 19.11](207-definition-19-11.md)
+- [Definition 19.1](199-definition-19-1.md)
+- [Definition 19.21](215-definition-19-21.md)
 
 ## Proof depends on
 
 - [Definition 19.15](211-definition-19-15.md)
+- [Theorem 18.6](../section-18/190-theorem-18-6.md)
+- [Definition 19.3](201-definition-19-3.md)
+- [Definition 19.18](213-definition-19-18.md)
+- [Definition 19.19](214-definition-19-19.md)
+- [Theorem 19.22](216-theorem-19-22.md)
 
 ## Sources
 

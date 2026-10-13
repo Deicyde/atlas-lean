@@ -11,6 +11,11 @@ For any convex body $K$, with $n$-dimensional volume $V(K)$ and surface area $S(
 ## Depends on
 
 - [Definition 3 (Lecture 13, Section 3.2)](103-definition-3.md)
+- [Definition 2 (Lecture 10, Section 2)](../lecture-10/093-definition-2.md)
+
+## Proof depends on
+
+- [Theorem 1 (Lecture 13, Section 2)](101-theorem-1.md)
 
 ## Sources
 

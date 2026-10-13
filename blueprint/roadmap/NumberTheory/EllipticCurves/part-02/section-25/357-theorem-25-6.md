@@ -10,7 +10,8 @@ No semistable elliptic curve $E/\mathbb{Q}$ admits a rational 15-isogeny.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.18](../../part-01/section-4/section-4-2/043-definition-4-18.md)
+- [Definition 24.30](../section-24/section-24-7/342-definition-24-30.md)
 
 ## Proof depends on
 

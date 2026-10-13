@@ -10,7 +10,7 @@ For $(M, \omega)$ symplectic, $X \subset (M, \omega)$ compact and Lagrangian, if
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../lecture-2/011-definition-7.md)
 
 ## Sources
 

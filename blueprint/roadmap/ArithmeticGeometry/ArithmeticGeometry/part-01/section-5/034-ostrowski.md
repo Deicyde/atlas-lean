@@ -13,6 +13,11 @@ Every nontrivial absolute value on $\mathbb{Q}$ is equivalent to some $|\;|_{p}$
 ## Depends on
 
 - [Definition 5.5](033-definition-5-5.md)
+- [Definition 5.2](030-definition-5-2.md)
+
+## Proof depends on
+
+- [Theorem 5.3](031-theorem-5-3.md)
 
 ## Sources
 

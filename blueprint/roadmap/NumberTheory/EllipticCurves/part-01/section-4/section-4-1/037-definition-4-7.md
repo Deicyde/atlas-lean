@@ -14,7 +14,7 @@ Let $C / k$ be a projective curve with $\alpha \in k(C)$. We say that
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.2](036-definition-4-2.md)
 
 ## Sources
 

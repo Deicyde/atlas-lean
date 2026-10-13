@@ -12,7 +12,7 @@ If $P$ and $Q$ are primitive, then $PQ$ is as well.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 13: More Factorization, Section: Factoring Integer Polynomials)](113-definition.md)
 
 ## Sources
 

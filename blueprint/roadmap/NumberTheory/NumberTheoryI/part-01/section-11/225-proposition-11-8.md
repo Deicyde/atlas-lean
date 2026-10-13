@@ -10,7 +10,16 @@ The properties of being unramified, tamely ramified, wildly ramified, totally ra
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10](../section-1/section-1-4/008-definition-1-10.md)
+- [Definition 4.3](../section-4/section-4-1/part-01/058-definition-4-3.md)
+- [Definition 5.37](../section-5/section-5/124-definition-5-37.md)
+- [Definition 8.1](../section-8/172-definition-8-1.md)
+- [Definition 11.7](224-definition-11-7.md)
+
+## Proof depends on
+
+- [Corollary 4.14](../section-4/section-4-1/part-01/069-corollary-4-14.md)
+- [Lemma 5.30](../section-5/section-5-3/120-lemma-5-30.md)
 
 ## Sources
 

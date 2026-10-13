@@ -12,7 +12,7 @@ Let $\alpha, \beta \in B$ be integral over $A \subseteq B$. Then $\alpha + \beta
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.17](013-definition-1-17.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ The maximal ideals in $\mathbb{C}[x_1, \cdots, x_n]/(P_1, \cdots, P_m)$ are in b
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proposition (Quotient Ring)](../lecture-8/105-quotient-ring.md)
+
+## Proof depends on
+
+- [Theorem (Hilbert's Nullstelensatz)](110-hilbert-s-nullstelensatz.md)
 
 ## Sources
 

@@ -13,6 +13,11 @@ Every semilocal Dedekind domain is a principal ideal domain.
 ## Depends on
 
 - [Definition 3.19](053-definition-3-19.md)
+- [Definition 2.10](../section-2/027-definition-2-10.md)
+
+## Proof depends on
+
+- [Lemma 3.16](050-lemma-3-16.md)
 
 ## Sources
 

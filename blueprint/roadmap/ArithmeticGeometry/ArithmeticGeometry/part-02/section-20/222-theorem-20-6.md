@@ -10,7 +10,17 @@ Assume $k=\bar{k}$. Then $C \simeq \mathbb{P}^{1}$ if and only if $\operatorname
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.11](../../part-01/section-13/section-13-2/110-definition-13-11.md)
+- [Definition 14.6](../../part-01/section-14/125-definition-14-6.md)
+- [Definition 19.13](../section-19/209-definition-19-13.md)
+- [Definition 19.21](../section-19/215-definition-19-21.md)
+
+## Proof depends on
+
+- [Corollary 19.5](../section-19/202-corollary-19-5.md)
+- [Definition 19.11](../section-19/207-definition-19-11.md)
+- [Definition 19.18](../section-19/213-definition-19-18.md)
+- [Theorem 19.22](../section-19/216-theorem-19-22.md)
 
 ## Sources
 

@@ -19,7 +19,9 @@ Let $\Gamma$ be a congruence subgroup. For $k=0$ we have $\dim
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 18.11](../../section-18/250-definition-18-11.md)
+- [Definition 24.5](324-definition-24-5.md)
+- [Definition 24.6](325-definition-24-6.md)
 
 ## Sources
 

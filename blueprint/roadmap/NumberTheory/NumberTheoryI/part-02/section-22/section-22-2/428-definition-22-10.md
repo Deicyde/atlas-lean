@@ -12,6 +12,9 @@ Let $K$ be a number field and let $\chi: \mathcal{I}_{K} \rightarrow \mathbb{C}$
 ## Depends on
 
 - [Definition 21.2](../../section-21/404-definition-21-2.md)
+- [Definition 2.22](../../../part-01/section-2/036-definition-2-22.md)
+- [Definition 18.31](../../../part-01/section-18/section-18-6/376-definition-18-31.md)
+- [Definition 22.1](../section-22-1/420-definition-22-1.md)
 
 ## Proof depends on
 

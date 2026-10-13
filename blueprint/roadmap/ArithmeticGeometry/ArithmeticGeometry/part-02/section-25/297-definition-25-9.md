@@ -11,7 +11,8 @@ The (absolute) height of a projective point $P = (x_0 : \cdots : x_n) \in \mathb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.2](../../part-01/section-5/030-definition-5-2.md)
+- [Definition 13.11](../../part-01/section-13/section-13-2/110-definition-13-11.md)
 
 ## Sources
 

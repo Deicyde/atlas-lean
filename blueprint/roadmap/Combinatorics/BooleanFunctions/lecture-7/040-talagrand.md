@@ -10,7 +10,13 @@ There exists an absolute constant $C > 0$, such that for any $f \colon \{-1, 1\}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.2 (Lecture 4, Section 2)](../lecture-4/007-definition-2-2.md)
+
+## Proof depends on
+
+- [Claim 2.2 (Lecture 1, Section 2.1)](../lecture-1/002-claim-2-2.md)
+- [Definition 2.1 (Discrete derivatives)](../lecture-4/006-discrete-derivatives.md)
+- [Corollary 5.2](../lecture-4/023-corollary-5-2.md)
 
 ## Sources
 

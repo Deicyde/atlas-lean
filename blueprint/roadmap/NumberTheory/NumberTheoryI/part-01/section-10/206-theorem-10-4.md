@@ -10,11 +10,22 @@ Let $A$ be a complete DVR with fraction field $K$, maximal ideal $\mathfrak{p}$,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1/section-1-2/001-definition-1-2.md)
+- [Definition 1.10](../section-1/section-1-4/008-definition-1-10.md)
+- [Definition 1.19](../section-1/section-1-6/015-definition-1-19.md)
+- [Definition 4.3](../section-4/section-4-1/part-01/058-definition-4-3.md)
+- [Definition 4.46](../section-4/section-4-3/091-definition-4-46.md)
+- [Definition 5.29](../section-5/section-5-3/118-definition-5-29.md)
+- [Definition 8.1](../section-8/172-definition-8-1.md)
 
 ## Proof depends on
 
 - [Theorem 9.22](../section-9/203-theorem-9-22.md)
+- [Definition 1.6](../section-1/section-1-2/004-definition-1-6.md)
+- [Theorem 8.20](../section-8/186-theorem-8-20.md)
+- [Corollary 9.21](../section-9/202-corollary-9-21.md)
+- [Definition 10.1](204-definition-10-1.md)
+- [Proposition 10.3](205-proposition-10-3.md)
 
 ## Sources
 

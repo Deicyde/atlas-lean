@@ -14,6 +14,7 @@ Let $E/k$ be an elliptic curve with distinct points $P, Q \in E(k)[n]$, where
 ## Depends on
 
 - [Definition 23.23](310-definition-23-23.md)
+- [Definition 23.19](../section-23-4/306-definition-23-19.md)
 
 ## Proof depends on
 

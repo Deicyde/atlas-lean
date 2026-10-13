@@ -11,7 +11,9 @@ An automorphism of an elliptic curve $E$ is an isomorphism $E \rightarrow E$ tha
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.6](../../../part-01/section-14/125-definition-14-6.md)
+- [Definition 23.14](../../section-23/266-definition-23-14.md)
+- [Definition 24.1](../../section-24/275-definition-24-1.md)
 
 ## Sources
 

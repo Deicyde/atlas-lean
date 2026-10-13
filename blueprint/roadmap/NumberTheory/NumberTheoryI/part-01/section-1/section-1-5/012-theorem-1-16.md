@@ -19,7 +19,9 @@ For an integral domain $A$, the following are equivalent:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10](../section-1-4/008-definition-1-10.md)
+- [Definition 1.11](../section-1-4/009-definition-1-11.md)
+- [Definition 1.12](../section-1-4/010-definition-1-12.md)
 
 ## Sources
 

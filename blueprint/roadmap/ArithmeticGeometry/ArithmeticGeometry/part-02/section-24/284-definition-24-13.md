@@ -10,7 +10,8 @@ The infinite chain of groups $E^{0}(\mathbb{Q}_{p}) \supset E^{1}(\mathbb{Q}_{p}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.1](../../part-01/section-5/029-definition-5-1.md)
+- [Lemma 24.12](283-lemma-24-12.md)
 
 ## Sources
 

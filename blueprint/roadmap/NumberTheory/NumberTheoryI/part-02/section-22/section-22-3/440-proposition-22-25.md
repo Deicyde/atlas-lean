@@ -12,6 +12,9 @@ Let $L/K$ be a finite abelian extension of local or global fields. For each prim
 ## Depends on
 
 - [Definition 21.2](../../section-21/404-definition-21-2.md)
+- [Definition 5.37](../../../part-01/section-5/section-5/124-definition-5-37.md)
+- [Definition 11.7](../../../part-01/section-11/224-definition-11-7.md)
+- [Definition 22.24](439-definition-22-24.md)
 
 ## Proof depends on
 

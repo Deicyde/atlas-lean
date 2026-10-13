@@ -11,7 +11,8 @@ The completion of $k$ (with respect to $\|\|$) is the field $\hat{k}$ whose elem
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7.9](042-definition-7-9.md)
+- [Definition 7.12](045-definition-7-12.md)
 
 ## Sources
 

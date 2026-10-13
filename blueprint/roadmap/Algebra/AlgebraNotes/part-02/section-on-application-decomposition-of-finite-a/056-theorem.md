@@ -12,7 +12,14 @@ Every abelian group $G$ is isomorphic to a product of groups of prime power orde
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Product group)](../../part-01/the-sylow-theorems/052-product-group.md)
+
+## Proof depends on
+
+- [Definition (Section 3, Subsection 3.2 (Homomorphisms))](../../part-01/section-3/001-definition.md)
+- [Corollary (Lagrange's Theorem)](../../part-01/isomorphisms-and-cosets/010-lagrange-s-theorem.md)
+- [Theorem (Sylow I)](../../part-01/the-sylow-theorems/047-sylow-i.md)
+- [Theorem (Sylow II)](../../part-01/the-sylow-theorems/050-sylow-ii.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ The ring of integers of a number field is a Dedekind domain.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.26](../../section-1/section-1/021-definition-1-26.md)
+- [Definition 2.10](../../section-2/027-definition-2-10.md)
 
 ## Sources
 

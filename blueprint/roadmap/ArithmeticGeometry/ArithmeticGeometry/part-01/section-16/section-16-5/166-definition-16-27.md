@@ -9,7 +9,9 @@ Let $X$ be a variety with coordinate ring $k[X]$ and let $P \in X$. The local ri
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.2](../../section-13/section-13-1/101-definition-13-2.md)
+- [Definition 13.4](../../section-13/section-13-1/103-definition-13-4.md)
+- [Definition 16.24](../section-16-4/164-definition-16-24.md)
 
 ## Sources
 

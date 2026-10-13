@@ -9,7 +9,7 @@ There exists $0 < \alpha < 1/2$ such that for all $f \colon \{-1,1\}^n \to \{-1,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.2 (Lecture 4, Section 2)](../lecture-4/007-definition-2-2.md)
 
 ## Sources
 

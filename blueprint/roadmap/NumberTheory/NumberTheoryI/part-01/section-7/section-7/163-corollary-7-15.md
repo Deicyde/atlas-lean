@@ -12,7 +12,12 @@ Assume $AKLBG$ and let $\mathfrak{p}$ be a prime of $K$. The fields $L^{I_{\math
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.29](../../section-5/section-5-3/118-definition-5-29.md)
+
+## Proof depends on
+
+- [Corollary 7.3](../section-7-1/152-corollary-7-3.md)
+- [Corollary 7.14](162-corollary-7-14.md)
 
 ## Sources
 

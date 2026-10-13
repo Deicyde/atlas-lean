@@ -12,7 +12,7 @@ If $X$ is an almost-complex submanifold in compatible $(M, \omega, J)$, then $X$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../../lecture-2/011-definition-7.md)
 
 ## Sources
 

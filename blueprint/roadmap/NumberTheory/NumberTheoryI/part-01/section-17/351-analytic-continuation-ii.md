@@ -12,7 +12,13 @@ The function $$\xi(s)\coloneqq \binom{s}{2} \Gamma_{\mathbb{R}}(s) \zeta(s)$$ is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 16.1](../section-16/section-16-1/313-definition-16-1.md)
+- [Definition 17.12](347-definition-17-12.md)
+
+## Proof depends on
+
+- [Lemma 17.10](345-lemma-17-10.md)
+- [Corollary 17.16](350-corollary-17-16.md)
 
 ## Sources
 

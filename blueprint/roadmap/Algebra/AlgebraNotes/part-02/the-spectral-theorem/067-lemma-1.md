@@ -12,7 +12,11 @@ For a linear operator $T: V \to V$ where $V$ is Hermitian, and a subspace $W \su
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section: Orthogonality)](../orthogonality/058-definition.md)
+
+## Proof depends on
+
+- [Claim (Section: Euclidean and Hermitian Spaces, Subsection: Complex Linear Operators)](../euclidean-and-hermitian-spaces/065-claim.md)
 
 ## Sources
 

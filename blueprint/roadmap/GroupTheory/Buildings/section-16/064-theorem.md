@@ -12,6 +12,13 @@ Let $f \colon X \to X$ be a simplicial-complex automorphism of the thick affine 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Section 3.5)](../section-3/010-theorem.md)
+- [Corollary (Section 4.4)](../section-4/012-corollary.md)
+- [Corollary (Section 13.7)](../section-13/045-corollary.md)
+- [Proposition (Section 16.10)](063-proposition.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 16.10](../../../../sources/v1/Buildings.md)

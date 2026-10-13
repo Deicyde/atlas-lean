@@ -16,6 +16,8 @@ Every nonzero $\alpha \in \operatorname{End}^{0}(E)$ has a multiplicative
 ## Proof depends on
 
 - [Definition 12.2](141-definition-12-2.md)
+- [Definition 12.6](143-definition-12-6.md)
+- [Lemma 12.7](144-lemma-12-7.md)
 
 ## Sources
 

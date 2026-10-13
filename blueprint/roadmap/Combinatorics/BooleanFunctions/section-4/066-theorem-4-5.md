@@ -9,7 +9,13 @@ There exists an absolute constant $C > 0$, such that for all $k \in \mathbb{N}$,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.2 (Lecture 4, Section 2)](../lecture-4/007-definition-2-2.md)
+- [Definition 2.6](../lecture-2/010-definition-2-6.md)
+
+## Proof depends on
+
+- [Definition 1.1](../lecture-4/018-definition-1-1.md)
+- [Theorem 3.6](../lecture-5/037-theorem-3-6.md)
 
 ## Sources
 

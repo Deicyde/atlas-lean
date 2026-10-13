@@ -11,7 +11,8 @@ The complement of $H_{i}$ in $\mathbb{P}^{n}$ is the affine patch (or affine cha
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.7](../../section-12/087-definition-12-7.md)
+- [Definition 13.11](../section-13-2/110-definition-13-11.md)
 
 ## Sources
 

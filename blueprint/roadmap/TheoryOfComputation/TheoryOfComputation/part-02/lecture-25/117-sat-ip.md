@@ -11,6 +11,7 @@ $\#\mathrm{SAT} \in \mathsf{IP}$.
 ## Depends on
 
 - [Definition (IP)](111-ip.md)
+- [Definition (#SAT)](112-sat.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ If $H$ is in CNF and $w \in L(H)$ then every derivation of $w$ has $2|w| - 1$ st
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Context Free Grammar)](../lecture-4/013-context-free-grammar.md)
 
 ## Sources
 

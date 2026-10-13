@@ -11,7 +11,7 @@ Let $B/A$ be a ring extension with $B$ a free $A$-module of finite rank. The tra
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.46](../../section-4/section-4-3/091-definition-4-46.md)
 
 ## Sources
 

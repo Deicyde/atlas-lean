@@ -12,7 +12,14 @@ A valuation ring is discrete if and only if it is Noetherian.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.18](../../section-4/028-definition-4-18.md)
+- [Definition 12.10](../../section-12/089-definition-12-10.md)
+- [Definition 16.15](155-definition-16-15.md)
+
+## Proof depends on
+
+- [Lemma 16.21](161-lemma-16-21.md)
+- [Lemma 16.22](162-lemma-16-22.md)
 
 ## Sources
 

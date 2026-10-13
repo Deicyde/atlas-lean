@@ -11,7 +11,8 @@ Let $X$ be a projective variety. We say that $r \in \bar{k}(X)$ is regular at a 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.4](../section-13/section-13-1/103-definition-13-4.md)
+- [Definition 13.18](../section-13/section-13-4/115-definition-13-18.md)
 
 ## Sources
 

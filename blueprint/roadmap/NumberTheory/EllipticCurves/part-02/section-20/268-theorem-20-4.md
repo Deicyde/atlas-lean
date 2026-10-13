@@ -14,7 +14,8 @@ Let $N>1$ be an integer and let $k$ be a field of characteristic not dividing
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.11](../../part-01/section-13/166-definition-13-11.md)
+- [Definition 20.1](265-definition-20-1.md)
 
 ## Proof depends on
 

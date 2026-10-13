@@ -11,7 +11,7 @@ A Weierstrass equation with $a_{1}=a_{2}=a_{3}=0$ is a short Weierstrass equatio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.9](262-definition-23-9.md)
 
 ## Sources
 

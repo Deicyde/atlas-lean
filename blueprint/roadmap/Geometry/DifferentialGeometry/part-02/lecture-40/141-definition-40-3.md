@@ -12,6 +12,7 @@ Let $X$ be a geodesic metric space. $X$ is called nonpositively curved in the se
 ## Depends on
 
 - [Definition 40.1](140-definition-40-1.md)
+- [Lemma 39.1](../lecture-39/131-lemma-39-1.md)
 
 ## Sources
 

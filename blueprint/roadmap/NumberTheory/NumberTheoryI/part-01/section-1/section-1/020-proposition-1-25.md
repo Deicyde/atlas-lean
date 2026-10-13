@@ -12,7 +12,12 @@ Every valuation ring is integrally closed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.11](../section-1-4/009-definition-1-11.md)
+- [Definition 1.19](../section-1-6/015-definition-1-19.md)
+
+## Proof depends on
+
+- [Definition 1.17](../section-1-6/013-definition-1-17.md)
 
 ## Sources
 

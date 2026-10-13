@@ -11,7 +11,15 @@ Assume $AKLBG$. For each fractional ideal $I$ of $B$ and $\sigma \in G$ define $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.13](../../section-2/029-definition-2-13.md)
+- [Definition 2.22](../../section-2/036-definition-2-22.md)
+- [Definition 7.1](150-definition-7-1.md)
+
+## Proof depends on
+
+- [Definition 1.17](../../section-1/section-1-6/013-definition-1-17.md)
+- [Definition 1.19](../../section-1/section-1-6/015-definition-1-19.md)
+- [Corollary 3.13](../../section-3/048-corollary-3-13.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ A function $f \colon M \rightarrow \mathbb{R}$ is smooth if for every point $y \
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 24.1](../lecture-24/077-definition-24-1.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Let $\Omega \subset \mathbb{R}^{n}$ be a domain, and assume that $u \in C(\Omega
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 4.1 (Mean value properties)](029-mean-value-properties.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ If $B/A$ is a ring extension, then the integral closure of $A$ in $B$ is integra
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.19](015-definition-1-19.md)
 
 ## Sources
 

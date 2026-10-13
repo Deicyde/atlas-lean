@@ -12,7 +12,12 @@ Let $G$ be a finite abelian group. There is an inclusion reversing bijection $\v
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 18.31](376-definition-18-31.md)
+
+## Proof depends on
+
+- [Proposition 18.33](377-proposition-18-33.md)
+- [Proposition 18.37](380-proposition-18-37.md)
 
 ## Sources
 

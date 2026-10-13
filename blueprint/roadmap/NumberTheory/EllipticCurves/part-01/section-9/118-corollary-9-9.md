@@ -12,6 +12,10 @@ Let $G$ be a cyclic group of prime order $N$. Every generic Monte Carlo algorith
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 9.7 (Shoup)](116-shoup.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 9.13](../../../../../sources/v1/EllipticCurves.md)

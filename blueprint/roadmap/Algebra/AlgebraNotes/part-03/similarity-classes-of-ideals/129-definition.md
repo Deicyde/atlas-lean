@@ -11,7 +11,7 @@ Two nonzero ideals $I, J \subset R$ are **similar** if there exists some $\lambd
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Ideal)](../lecture-8/103-ideal.md)
 
 ## Sources
 

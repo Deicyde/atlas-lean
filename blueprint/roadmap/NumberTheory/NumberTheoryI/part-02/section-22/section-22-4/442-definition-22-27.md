@@ -12,6 +12,9 @@ Let $L / K$ be a finite abelian extension of number fields and let $\mathfrak{m}
 ## Depends on
 
 - [Definition 21.2](../../section-21/404-definition-21-2.md)
+- [Definition 6.5](../../../part-01/section-6/section-6-2/128-definition-6-5.md)
+- [Definition 22.1](../section-22-1/420-definition-22-1.md)
+- [Definition 22.24](../section-22-3/439-definition-22-24.md)
 
 ## Sources
 

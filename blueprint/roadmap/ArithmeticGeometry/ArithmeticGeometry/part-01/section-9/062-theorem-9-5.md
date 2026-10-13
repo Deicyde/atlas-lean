@@ -12,7 +12,8 @@ Every quadratic form is equivalent to a diagonal quadratic form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.1](058-definition-9-1.md)
+- [Definition 9.2](059-definition-9-2.md)
 
 ## Sources
 

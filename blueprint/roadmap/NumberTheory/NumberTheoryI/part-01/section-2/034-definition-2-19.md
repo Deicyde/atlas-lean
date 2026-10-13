@@ -11,7 +11,7 @@ A fractional ideal $I$ is invertible if $IJ=A$ for some fractional ideal $J$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.13](029-definition-2-13.md)
 
 ## Sources
 

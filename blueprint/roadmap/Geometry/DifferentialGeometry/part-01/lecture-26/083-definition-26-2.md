@@ -11,7 +11,7 @@ A Gauss map for $M$ is a smooth map $\nu \colon M \rightarrow \mathbb{R}^{n+1}$ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 26.1](082-definition-26-1.md)
 
 ## Sources
 

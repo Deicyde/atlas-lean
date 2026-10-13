@@ -12,7 +12,8 @@ Assume $AKLB$. If $B=A[\alpha]$ for some $\alpha \in L$ and $f \in A[x]$ is the 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.10](../../section-9/194-definition-9-10.md)
+- [Definition 12.2](../section-12-1/241-definition-12-2.md)
 
 ## Sources
 

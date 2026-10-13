@@ -17,6 +17,7 @@ If $A$ is a CFL then some PDA recognizes $A$.
 ## Proof depends on
 
 - [Definition (Pushdown Automaton)](015-pushdown-automaton.md)
+- [Definition (Context Free Grammar)](013-context-free-grammar.md)
 
 ## Sources
 

@@ -13,6 +13,11 @@ $M$ is PSD if and only if all eigenvalues $\lambda_i \geq 0$. Similarly $M$ is P
 ## Depends on
 
 - [Definition 6 (Lecture 2, Section 3.3)](011-definition-6.md)
+- [Definition 1 (Lecture 1, Section 2)](../../lecture-1/001-definition-1.md)
+
+## Proof depends on
+
+- [Proposition 2 (Lecture 1, Section 2)](../../lecture-1/002-proposition-2.md)
 
 ## Sources
 

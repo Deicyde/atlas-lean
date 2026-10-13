@@ -12,7 +12,12 @@ Let $I$ be a nonzero ideal in a Dedekind domain $A$. The quotient ring $A/I$ is 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.10](../section-2/027-definition-2-10.md)
+
+## Proof depends on
+
+- [Corollary 3.13](048-corollary-3-13.md)
+- [Corollary 3.17 (Finite approximation)](051-finite-approximation.md)
 
 ## Sources
 

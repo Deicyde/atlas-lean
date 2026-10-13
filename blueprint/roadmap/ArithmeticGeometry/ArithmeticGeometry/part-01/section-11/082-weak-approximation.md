@@ -12,7 +12,11 @@ Let $S$ be a finite set of primes $p \leq \infty$, and for each $p \in S$ let $x
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.1](../section-5/029-definition-5-1.md)
+
+## Proof depends on
+
+- [Theorem 11.6](081-theorem-11-6.md)
 
 ## Sources
 

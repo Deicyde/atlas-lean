@@ -12,6 +12,11 @@ Let $u$ be harmonic and non-negative in the ball $B_{R}(0) \subset \mathbb{R}^{n
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 4.1 (Mean value properties)](../class-meeting-6/029-mean-value-properties.md)
+- [Theorem 3.1 (Poisson's formula)](../section-3/040-poisson-s-formula.md)
+
 ## Sources
 
 - [MIT 18.152 Introduction to Partial Differential Equations (Fall 2011), Section 4](../../../../../sources/v1/IntroductionToPartialDifferentialEquations.md)

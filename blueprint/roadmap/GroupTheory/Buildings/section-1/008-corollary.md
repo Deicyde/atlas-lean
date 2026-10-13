@@ -18,6 +18,7 @@ This node has no prerequisites.
 
 - [Definition (Section 1.8)](005-definition.md)
 - [Proposition (Section 1.8)](003-proposition.md)
+- [Theorem (Section 1 (Bruhat order context))](007-theorem.md)
 
 ## Sources
 

@@ -11,6 +11,13 @@ Assume $AKLB$ and let $\mathfrak{p}$ be a prime of $A$. Then $$D_{B/A} \hat{A}_{
 ## Depends on
 
 - [Definition 12.12](250-definition-12-12.md)
+- [Definition 8.3](../../section-8/174-definition-8-3.md)
+
+## Proof depends on
+
+- [Theorem 8.5 (Weak Approximation)](../../section-8/176-weak-approximation.md)
+- [Corollary 11.26](../../section-11/239-corollary-11-26.md)
+- [Lemma 12.10](248-lemma-12-10.md)
 
 ## Sources
 

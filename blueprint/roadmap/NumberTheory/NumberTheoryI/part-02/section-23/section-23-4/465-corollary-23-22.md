@@ -11,7 +11,8 @@ For any $G$-modules $A$ and $B$ we have $H_{n}(G, A \oplus B) \simeq H_{n}(G, A)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.1](../section-23-1/446-definition-23-1.md)
+- [Definition 23.20](463-definition-23-20.md)
 
 ## Sources
 

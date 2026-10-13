@@ -10,7 +10,13 @@ Given a linear operator $T: V \to V,$ where $\dim V = n,$ there exists a basis $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section: Fields and Vector Spaces, Bases and Dimension subsection)](../fields-and-vector-spaces/014-definition.md)
+
+## Proof depends on
+
+- [Theorem (Dimension formula)](../dimension-formula/020-dimension-formula.md)
+- [Definition (Section on The Jordan Decomposition, subsection on Proof of Jordan Decomposition Theorem)](../section-on-the-jordan-decomposition/022-definition.md)
+- [Theorem (Section on The Jordan Decomposition, subsection on Proof of Jordan Decomposition Theorem)](../section-on-the-jordan-decomposition/026-theorem.md)
 
 ## Sources
 

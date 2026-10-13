@@ -10,7 +10,7 @@ The **norm** of an ideal $I$, denoted $\operatorname{N}(I)$, is the positive int
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Ideal)](../lecture-8/103-ideal.md)
 
 ## Sources
 

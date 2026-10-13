@@ -14,6 +14,11 @@ Let $K$ be a number field. The relation $(\mathcal{C}_{1}, \mathfrak{m}_{1}) \si
 - [Definition 22.3](421-definition-22-3.md)
 - [Definition 21.2](../../section-21/404-definition-21-2.md)
 
+## Proof depends on
+
+- [Theorem 8.5 (Weak Approximation)](../../../part-01/section-8/176-weak-approximation.md)
+- [Lemma 21.7](../../section-21/406-lemma-21-7.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 22.1](../../../../../../sources/v1/NumberTheoryI.md)

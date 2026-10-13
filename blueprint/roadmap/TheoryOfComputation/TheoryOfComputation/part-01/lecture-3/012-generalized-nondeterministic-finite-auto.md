@@ -11,7 +11,7 @@ A Generalized Nondeterministic Finite Automaton (GNFA) is similar to an NFA, but
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Nondeterministic Finite Automaton)](../lecture-2/009-nondeterministic-finite-automaton.md)
 
 ## Sources
 

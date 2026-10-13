@@ -12,7 +12,7 @@ Let $f$ and $g$ be functions on $[a, b]$ such that $f$ and $g$ are not both disc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 18.23](369-definition-18-23.md)
 
 ## Sources
 

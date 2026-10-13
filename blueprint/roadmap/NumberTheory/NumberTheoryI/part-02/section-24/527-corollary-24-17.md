@@ -12,11 +12,13 @@ Let $L/K$ be a totally unramified cyclic extension of number fields. Then every 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.46](../../part-01/section-4/section-4-3/091-definition-4-46.md)
+- [Definition 24.5](517-definition-24-5.md)
 
 ## Proof depends on
 
 - [Theorem 24.15](525-theorem-24-15.md)
+- [Theorem 24.11 (Ambiguous class number formula)](523-ambiguous-class-number-formula.md)
 
 ## Sources
 

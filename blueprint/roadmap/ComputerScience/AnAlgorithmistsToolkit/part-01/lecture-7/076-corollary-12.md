@@ -10,7 +10,11 @@ For $W$ a set of vertices, and $x = \sum_{w \in W} d_w$, $$\left| \sum_{w \in W}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Claim 1](../lecture-4/037-claim-1.md)
+
+## Proof depends on
+
+- [Theorem 11 (Lovasz-Simonovits)](075-lovasz-simonovits.md)
 
 ## Sources
 

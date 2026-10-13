@@ -11,7 +11,8 @@ Assume $AKLBG$, and let $\mathfrak{q} \mid \mathfrak{p}$ be a prime of $B$. The 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7.7](155-definition-7-7.md)
+- [Proposition 7.9](157-proposition-7-9.md)
 
 ## Sources
 

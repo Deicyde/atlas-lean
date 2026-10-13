@@ -12,7 +12,13 @@ Let $k$ be a field with absolute value $\|\|$. Then $k$ is dense in its completi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.2](../section-5/030-definition-5-2.md)
+- [Definition 7.13](046-definition-7-13.md)
+- [Definition 7.14](047-definition-7-14.md)
+
+## Proof depends on
+
+- [Definition 7.9](042-definition-7-9.md)
 
 ## Sources
 

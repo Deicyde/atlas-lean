@@ -11,7 +11,9 @@ For a polynomial $f(x) = \prod_i (x - \alpha_i)$, the discriminant of $f$ is def
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.10](../../section-2/027-definition-2-10.md)
+- [Definition 4.1](../../section-4/section-4-1/part-01/057-definition-4-1.md)
+- [Definition 12.5](244-definition-12-5.md)
 
 ## Sources
 

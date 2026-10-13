@@ -26,6 +26,10 @@ Let $L \subseteq \mathbb{C}$ be a lattice and let $E_{L}: y^{2}=4
 - [Theorem 14.25](../section-14/section-14-4/194-theorem-14-25.md)
 - [Theorem 14.29](../section-14/section-14-5/198-theorem-14-29.md)
 - [Theorem 14.26](../section-14/section-14-4/195-theorem-14-26.md)
+- [Theorem 6.1](../chapter-6/088-theorem-6-1.md)
+- [Theorem 14.17](../section-14/section-14-2/188-theorem-14-17.md)
+- [Theorem 14.18](../section-14/section-14-2/189-theorem-14-18.md)
+- [Corollary 14.27](../section-14/section-14-4/196-corollary-14-27.md)
 
 ## Sources
 

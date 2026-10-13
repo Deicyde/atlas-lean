@@ -13,6 +13,8 @@ The following hold: (a) $\ell(0)=1$. (b) If $A \sim B$ then $\ell(A)=\ell(B)$ an
 
 - [Definition 19.6](../section-19/203-definition-19-6.md)
 - [Definition 21.10](230-definition-21-10.md)
+- [Definition 19.13](../section-19/209-definition-19-13.md)
+- [Definition 19.21](../section-19/215-definition-19-21.md)
 
 ## Proof depends on
 
@@ -21,6 +23,10 @@ The following hold: (a) $\ell(0)=1$. (b) If $A \sim B$ then $\ell(A)=\ell(B)$ an
 - [Definition 19.11](../section-19/207-definition-19-11.md)
 - [Definition 21.2](225-definition-21-2.md)
 - [Lemma 21.8](228-lemma-21-8.md)
+- [Corollary 19.23](../section-19/217-corollary-19-23.md)
+- [Lemma 21.6](226-lemma-21-6.md)
+- [Lemma 21.7](227-lemma-21-7.md)
+- [Theorem 21.9](229-theorem-21-9.md)
 
 ## Sources
 

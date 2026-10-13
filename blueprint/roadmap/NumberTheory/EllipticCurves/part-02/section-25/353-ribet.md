@@ -16,6 +16,7 @@ Let $\ell$ be prime, let $E$ be an elliptic curve of conductor $N=mN'$, where
 ## Depends on
 
 - [Definition 24.32](../section-24/section-24-8/344-definition-24-32.md)
+- [Definition 24.29](../section-24/section-24-7/341-definition-24-29.md)
 
 ## Proof depends on
 

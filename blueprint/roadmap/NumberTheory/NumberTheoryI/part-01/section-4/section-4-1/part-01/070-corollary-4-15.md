@@ -12,7 +12,11 @@ Let $L/F/K$ be a tower of algebraic field extensions. Then $L/K$ is separable if
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](058-definition-4-3.md)
+
+## Proof depends on
+
+- [Corollary 4.14](069-corollary-4-14.md)
 
 ## Sources
 

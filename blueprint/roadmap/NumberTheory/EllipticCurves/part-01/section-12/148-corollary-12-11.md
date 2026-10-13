@@ -15,6 +15,12 @@ For any nonzero $\alpha \in \operatorname{End}^{0}(E)$, if $\mathrm{T}
 
 - [Definition 6.13](../section-6/098-definition-6-13.md)
 - [Definition 12.2](141-definition-12-2.md)
+- [Definition 12.6](143-definition-12-6.md)
+
+## Proof depends on
+
+- [Lemma 12.9](146-lemma-12-9.md)
+- [Lemma 12.10](147-lemma-12-10.md)
 
 ## Sources
 

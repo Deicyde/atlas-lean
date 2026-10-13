@@ -13,6 +13,7 @@ Every locally normally convergent series of functions converges absolutely and l
 ## Depends on
 
 - [Definition 16.18](329-definition-16-18.md)
+- [Definition 16.16](327-definition-16-16.md)
 
 ## Sources
 

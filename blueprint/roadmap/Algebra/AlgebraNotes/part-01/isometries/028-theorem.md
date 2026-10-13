@@ -17,6 +17,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Definition (Section: Isometries, Subsection: Isometries in 2-space)](027-definition.md)
+- [Proposition (Dimension Formula, Section on Finding Eigenvalues and Eigenvectors)](../dimension-formula/021-proposition.md)
 
 ## Sources
 

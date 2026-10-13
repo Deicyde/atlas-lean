@@ -14,7 +14,9 @@ Let $\mathfrak{b} = \frac{1}{b} \mathfrak{a}$ be a nonzero fractional ideal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.22](../section-12/155-definition-12-22.md)
+- [Definition 17.2](224-definition-17-2.md)
+- [Definition 17.4](226-definition-17-4.md)
 
 ## Sources
 

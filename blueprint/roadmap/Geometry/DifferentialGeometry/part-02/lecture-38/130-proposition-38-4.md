@@ -9,7 +9,12 @@ Write the geodesic equations in conjugate variables $x_{k}$ (position) and $p_{k
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.3](../../part-01/chapter-2/042-definition-12-3.md)
+- [Proposition 36.4](../lecture-36/124-proposition-36-4.md)
+
+## Proof depends on
+
+- [Theorem 16.2](../../part-01/lecture-16/052-theorem-16-2.md)
 
 ## Sources
 

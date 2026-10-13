@@ -12,6 +12,8 @@ Let $L/K$ be a finite Galois extension of number fields and let $\mathcal{C}$ be
 ## Depends on
 
 - [Definition 21.2](../../section-21/404-definition-21-2.md)
+- [Definition 5.37](../../../part-01/section-5/section-5/124-definition-5-37.md)
+- [Definition 22.1](../section-22-1/420-definition-22-1.md)
 
 ## Proof depends on
 
@@ -23,6 +25,7 @@ Let $L/K$ be a finite Galois extension of number fields and let $\mathcal{C}$ be
 - [Proposition 21.12](../../section-21/411-proposition-21-12.md)
 - [Theorem 21.15](../../section-21/414-theorem-21-15.md)
 - [Theorem 21.8](../../section-21/407-theorem-21-8.md)
+- [Corollary 22.22](437-corollary-22-22.md)
 
 ## Sources
 

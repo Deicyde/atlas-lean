@@ -12,12 +12,13 @@ Some language is not decidable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition: Turing-decidable](../lecture-5/025-definition-turing-decidable.md)
 
 ## Proof depends on
 
 - [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
 - [Definition: Decider](../lecture-5/024-definition-decider.md)
+- [Corollary 1 (Lecture 8)](031-corollary-1.md)
 
 ## Sources
 

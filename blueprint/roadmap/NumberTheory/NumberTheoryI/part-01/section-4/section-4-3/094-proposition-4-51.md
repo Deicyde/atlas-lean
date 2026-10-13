@@ -12,7 +12,7 @@ Let $L/K$ be a (not necessarily separable) finite extension, let $\bar{K}$ be an
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.46](091-definition-4-46.md)
 
 ## Sources
 

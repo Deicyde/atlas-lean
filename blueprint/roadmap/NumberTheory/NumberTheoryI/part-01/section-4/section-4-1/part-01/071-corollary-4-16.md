@@ -12,7 +12,11 @@ Let $L/K$ be an algebraic field extension, and let $F = \{\alpha \in L : \alpha 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](058-definition-4-3.md)
+
+## Proof depends on
+
+- [Corollary 4.15](070-corollary-4-15.md)
 
 ## Sources
 

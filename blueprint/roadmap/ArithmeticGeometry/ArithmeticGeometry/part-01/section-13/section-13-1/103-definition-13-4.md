@@ -14,6 +14,7 @@ Let $V/k$ be an affine variety defined over $k$. The function field $k(V)$ of $V
 - [Definition 13.2](101-definition-13-2.md)
 - [Definition 12.7](../../section-12/087-definition-12-7.md)
 - [Definition 13.3](102-definition-13-3.md)
+- [Definition 13.1](100-definition-13-1.md)
 
 ## Proof depends on
 

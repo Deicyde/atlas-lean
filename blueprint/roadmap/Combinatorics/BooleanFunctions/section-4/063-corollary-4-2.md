@@ -9,7 +9,12 @@ There exists an absolute constant $c > 0$, such that for all $k \leqslant c \log
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.2 (Lecture 4, Section 2)](../lecture-4/007-definition-2-2.md)
+- [Definition 2.6](../lecture-2/010-definition-2-6.md)
+
+## Proof depends on
+
+- [Theorem 4.1](062-theorem-4-1.md)
 
 ## Sources
 

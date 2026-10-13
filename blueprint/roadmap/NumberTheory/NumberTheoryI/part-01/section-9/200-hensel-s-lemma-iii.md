@@ -12,7 +12,9 @@ Let $A$ be a complete DVR with maximal ideal $\mathfrak{p}$ and residue field $k
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10](../section-1/section-1-4/008-definition-1-10.md)
+- [Definition 1.13](../section-1/section-1-4/011-definition-1-13.md)
+- [Definition 8.1](../section-8/172-definition-8-1.md)
 
 ## Sources
 

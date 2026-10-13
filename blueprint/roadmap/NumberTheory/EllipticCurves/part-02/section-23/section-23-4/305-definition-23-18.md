@@ -16,7 +16,8 @@ Let $C/k$ be a smooth projective curve, and let $f \in k(C)^{\times}$. For
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.2](../../../part-01/section-4/section-4-1/036-definition-4-2.md)
+- [Definition 23.13](../section-23-2/301-definition-23-13.md)
 
 ## Sources
 

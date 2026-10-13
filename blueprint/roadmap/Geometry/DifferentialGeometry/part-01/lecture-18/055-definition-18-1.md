@@ -12,6 +12,8 @@ Let $f \colon U \rightarrow \mathbb{R}^{n+1}$ be a hypersurface patch. A moving 
 ## Depends on
 
 - [Definition 12.1](../chapter-2/040-definition-12-1.md)
+- [Definition 12.3](../chapter-2/042-definition-12-3.md)
+- [Definition 16.1](../lecture-16/051-definition-16-1.md)
 
 ## Sources
 

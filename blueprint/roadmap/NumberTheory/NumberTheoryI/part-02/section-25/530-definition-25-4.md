@@ -11,7 +11,7 @@ Let $(X_i, f_{ij})$ be a direct system of topological spaces. The direct limit (
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 25.3](529-definition-25-3.md)
 
 ## Sources
 

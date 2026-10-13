@@ -16,7 +16,7 @@ For a smooth curve $\gamma:[a, b] \rightarrow \mathbb{C}$ and a complex
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.11](182-definition-14-11.md)
 
 ## Sources
 

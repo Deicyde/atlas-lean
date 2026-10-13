@@ -12,7 +12,13 @@ Let $a \in \mathbb{Z}_{p}$ and $f \in \mathbb{Z}_{p}[x]$. Suppose $f(a) \equiv 0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](../section-4/015-definition-4-3.md)
+- [Definition 8.6](055-definition-8-6.md)
+
+## Proof depends on
+
+- [Theorem 4.15](../section-4/025-theorem-4-15.md)
+- [Definition 8.5](054-definition-8-5.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ Let $R$ be a local ring with maximal ideal $\mathfrak{m}$ and suppose that $M$ i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 16.16](../../part-01/section-16/section-16-3/156-definition-16-16.md)
+
+## Proof depends on
+
+- [Lemma 16.17](../../part-01/section-16/section-16-3/157-lemma-16-17.md)
 
 ## Sources
 

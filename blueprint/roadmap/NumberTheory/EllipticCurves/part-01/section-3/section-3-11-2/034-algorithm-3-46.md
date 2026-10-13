@@ -16,7 +16,11 @@ Given a monic polynomial $f \in \mathbb{F}_{q}[x]$ with $\operatorname{deg} f < 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.4](../section-3-1/007-definition-3-4.md)
+
+## Proof depends on
+
+- [Theorem 3.22](../section-3/020-theorem-3-22.md)
 
 ## Sources
 

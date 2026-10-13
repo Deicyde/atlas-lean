@@ -14,6 +14,10 @@ If $n$ has prime factorization $n = p_1^{d_1}\cdots p_r^{d_r}$ in $\mathbb{Z}$, 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Lecture 14: Number Fields, Section: The Gaussian Integers)](114-theorem.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Lecture 14: Number Fields, Section: The Gaussian Integers](../../../../../sources/v1/AlgebraNotes.md)

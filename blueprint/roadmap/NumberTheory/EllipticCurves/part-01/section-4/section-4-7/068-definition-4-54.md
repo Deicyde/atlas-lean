@@ -12,7 +12,7 @@ An algebraic set is irreducible if it is nonempty and not the union of two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.42](058-definition-4-42.md)
 
 ## Sources
 

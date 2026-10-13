@@ -10,11 +10,15 @@ Every rational map $\phi: C_{1} \rightarrow C_{2}$ between smooth projective cur
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.18](../../part-01/section-13/section-13-4/115-definition-13-18.md)
+- [Definition 13.20](../../part-01/section-13/section-13-4/117-definition-13-20.md)
+- [Definition 15.14](../../part-01/section-15/142-definition-15-14.md)
 
 ## Proof depends on
 
 - [Theorem 18.6](190-theorem-18-6.md)
+- [Lemma 16.12](../../part-01/section-16/section-16-2/152-lemma-16-12.md)
+- [Theorem 16.33](../../part-01/section-16/section-16-5/172-theorem-16-33.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ For a field $K$ with absolute value $|\;|$ the $L^1$-norm of $f=\sum f_i x^i \in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1/section-1-2/001-definition-1-2.md)
 
 ## Sources
 

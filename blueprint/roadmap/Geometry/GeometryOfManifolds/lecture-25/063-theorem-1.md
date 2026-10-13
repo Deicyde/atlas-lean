@@ -10,7 +10,12 @@ For $(g, \mu)$ generic, $\mathcal{M}$ (if nonempty) is a smooth, compact, orient
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Symplectic Geometry, Lecture 10, Section 2 (Complex Vector Bundles and Chern Classes))](../symplectic-geometry/symplectic-geometry-lecture-10-section-2-complex/021-definition-1.md)
+
+## Proof depends on
+
+- [Corollary 1 (Lecture 16)](../lecture-16/032-corollary-1.md)
+- [Theorem 2 (Lecture 16)](../lecture-16/033-theorem-2.md)
 
 ## Sources
 

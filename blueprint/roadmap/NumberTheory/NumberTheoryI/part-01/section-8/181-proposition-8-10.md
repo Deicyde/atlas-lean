@@ -13,6 +13,7 @@ Let $(X_i, f_{ij})$ be an inverse system of Hausdorff topological spaces. Then $
 ## Depends on
 
 - [Definition 8.9](180-definition-8-9.md)
+- [Definition 8.8](179-definition-8-8.md)
 
 ## Sources
 

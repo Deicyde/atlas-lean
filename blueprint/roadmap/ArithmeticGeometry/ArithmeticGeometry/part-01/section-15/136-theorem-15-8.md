@@ -15,6 +15,9 @@ The following hold: (i) Every dominant rational map $\varphi \colon X \rightarro
 - [Definition 12.7](../section-12/087-definition-12-7.md)
 - [Definition 15.2](131-definition-15-2.md)
 - [Definition 12.12](../section-12/091-definition-12-12.md)
+- [Definition 13.3](../section-13/section-13-1/102-definition-13-3.md)
+- [Definition 13.4](../section-13/section-13-1/103-definition-13-4.md)
+- [Definition 15.7](135-definition-15-7.md)
 
 ## Proof depends on
 

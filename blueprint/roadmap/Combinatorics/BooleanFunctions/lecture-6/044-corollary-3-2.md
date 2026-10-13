@@ -10,11 +10,12 @@ For any $f \colon \{-1,1\}^n \to \{-1,1\}$, there is $i \in [n]$ such that $I_i[
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.2 (Lecture 4, Section 2)](../lecture-4/007-definition-2-2.md)
 
 ## Proof depends on
 
 - [Theorem 1.1 (Talagrand)](../lecture-7/040-talagrand.md)
+- [Theorem 0.1](../lecture-7/046-theorem-0-1.md)
 
 ## Sources
 

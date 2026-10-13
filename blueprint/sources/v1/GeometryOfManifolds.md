@@ -12,7 +12,11 @@ ATLAS v1 selected 72 statements from this source in
 matched to each in [`report.json`](https://github.com/facebookresearch/atlas-lean/blob/main/v1/Atlas/GeometryOfManifolds/report.json). Each roadmap article
 reproduces one target's statement and the source location it names.
 
-28 dependencies point to a statement placed later in this
+39 roadmap edges come from the source text rather than
+the Lean code; each is recorded with its evidence in
+[`book-dependencies/GeometryOfManifolds.json`](book-dependencies/GeometryOfManifolds.json).
+
+58 dependencies point to a statement placed later in this
 wiki and are not drawn as roadmap edges, which keeps every chapter acyclic.
 
 ## Targets without a linked Lean declaration

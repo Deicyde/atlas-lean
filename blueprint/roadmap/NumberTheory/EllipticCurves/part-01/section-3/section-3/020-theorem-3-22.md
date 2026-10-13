@@ -12,7 +12,11 @@ Finite fields are perfect.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.21](019-definition-3-21.md)
+
+## Proof depends on
+
+- [Lemma 3.20](018-lemma-3-20.md)
 
 ## Sources
 

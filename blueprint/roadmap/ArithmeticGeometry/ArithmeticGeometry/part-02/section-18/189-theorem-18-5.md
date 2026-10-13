@@ -10,7 +10,13 @@ Let $R_{1}$ and $R_{2}$ be valuation rings with the same fraction field, let $\m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.18](../../part-01/section-4/028-definition-4-18.md)
+- [Definition 13.7](../../part-01/section-13/section-13-1-1/106-definition-13-7.md)
+- [Definition 16.15](../../part-01/section-16/section-16-3/155-definition-16-15.md)
+
+## Proof depends on
+
+- [Theorem 18.2](186-theorem-18-2.md)
 
 ## Sources
 

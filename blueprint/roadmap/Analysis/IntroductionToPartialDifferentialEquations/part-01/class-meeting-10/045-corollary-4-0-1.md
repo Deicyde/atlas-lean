@@ -18,6 +18,10 @@ $$u(t, x)= \begin{cases}\frac{1}{2}(f(x+t)+f(x-t))+\frac{1}{2} \int_{z=|x-t|}^{z
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 4.1 (d'Alembert's formula)](044-d-alembert-s-formula.md)
+
 ## Sources
 
 - [MIT 18.152 Introduction to Partial Differential Equations (Fall 2011), Class Meeting #10, Section on wave equation](../../../../../sources/v1/IntroductionToPartialDifferentialEquations.md)

@@ -13,6 +13,7 @@ Let $c$ be a closed curve with normal self-intersections. Assume that it is para
 ## Depends on
 
 - [Definition 8.3](../chapter-1-lecture-8/027-definition-8-3.md)
+- [Definition 8.1](../chapter-1-lecture-8/025-definition-8-1.md)
 
 ## Sources
 

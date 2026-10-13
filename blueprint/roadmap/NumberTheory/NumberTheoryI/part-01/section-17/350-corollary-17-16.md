@@ -12,7 +12,11 @@ The function $\Gamma(s)$ has no zeros on $\mathbb{C}$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 17.12](347-definition-17-12.md)
+
+## Proof depends on
+
+- [Theorem 17.13 (Euler's Reflection Formula)](348-euler-s-reflection-formula.md)
 
 ## Sources
 

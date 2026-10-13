@@ -12,11 +12,16 @@ The nondegenerate form $ax^{2}+by^{2}+cz^{2}$ over $\mathbb{Q}_{p}$ represents 0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.1](../section-5/029-definition-5-1.md)
+- [Definition 9.1](../section-9/058-definition-9-1.md)
+- [Definition 9.3](../section-9/060-definition-9-3.md)
+- [Definition 9.7](../section-9/063-definition-9-7.md)
+- [Definition 10.1](../section-10/066-definition-10-1.md)
 
 ## Proof depends on
 
 - [Lemma 11.3](078-lemma-11-3.md)
+- [Theorem 9.9](../section-9/064-theorem-9-9.md)
 
 ## Sources
 

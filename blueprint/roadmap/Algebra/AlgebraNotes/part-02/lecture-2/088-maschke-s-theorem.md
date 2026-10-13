@@ -12,7 +12,12 @@ Every finite-dimensional complex representation of a finite group can be written
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 2, Section: Irreducible Representations)](085-definition.md)
+- [Definition (Direct Sum)](087-direct-sum.md)
+
+## Proof depends on
+
+- [Theorem (Lecture 2, Section: Irreducible Representations)](083-theorem.md)
 
 ## Sources
 

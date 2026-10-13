@@ -12,7 +12,12 @@ A Dedekind domain is a UFD if and only if it is a PID, equivalently, if and only
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.10](../section-2/027-definition-2-10.md)
+- [Definition 2.23](../section-2/037-definition-2-23.md)
+
+## Proof depends on
+
+- [Corollary 3.13](048-corollary-3-13.md)
 
 ## Sources
 

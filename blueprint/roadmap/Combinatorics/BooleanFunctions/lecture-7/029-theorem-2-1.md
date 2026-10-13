@@ -11,11 +11,15 @@ Let $f \colon \{-1,1\}^n \to \{-1,1\}$. Then for every $\varepsilon > 0$, there 
 ## Depends on
 
 - [Definition 1.2](../lecture-4/019-definition-1-2.md)
+- [Definition 2.2 (Lecture 4, Section 2)](../lecture-4/007-definition-2-2.md)
 
 ## Proof depends on
 
 - [Theorem 3.1](../lecture-3/017-theorem-3-1.md)
 - [Definition 0.1](../lecture-5/027-definition-0-1.md)
+- [Claim 2.2 (Lecture 1, Section 2.1)](../lecture-1/002-claim-2-2.md)
+- [Definition 2.1 (Discrete derivatives)](../lecture-4/006-discrete-derivatives.md)
+- [Corollary 5.3](../lecture-4/024-corollary-5-3.md)
 
 ## Sources
 

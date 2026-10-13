@@ -11,7 +11,7 @@ Two absolute values $|\cdot|$ and $|\cdot|'$ on the same field $k$ are equivalen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](001-definition-1-2.md)
 
 ## Sources
 

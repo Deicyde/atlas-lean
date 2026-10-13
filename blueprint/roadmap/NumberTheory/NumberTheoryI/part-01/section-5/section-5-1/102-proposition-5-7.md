@@ -12,7 +12,11 @@ Let $A$ be a commutative ring and let $M$ be a free $A$-module of rank $n$ with 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.6](101-definition-5-6.md)
+
+## Proof depends on
+
+- [Theorem 5.5](100-theorem-5-5.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ The ideal group $\mathcal{I}_A$ of a noetherian domain $A$ is the group of inver
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.13](029-definition-2-13.md)
+- [Definition 2.19](034-definition-2-19.md)
 
 ## Sources
 

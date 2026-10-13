@@ -10,7 +10,14 @@ Let $K$ be a field with separable closure $\Omega$ and let $L$ be a finite étal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.17](../section-4-1/part-01/072-definition-4-17.md)
+- [Definition 4.29](../section-4-2/082-definition-4-29.md)
+- [Definition 4.46](091-definition-4-46.md)
+
+## Proof depends on
+
+- [Proposition 4.43](../section-4-2/090-proposition-4-43.md)
+- [Lemma 4.49](092-lemma-4-49.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ We have $$\Gamma(s) \Gamma(1-s)=\frac{\pi}{\sin (\pi s)}$$ as meromorphic functi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 17.12](347-definition-17-12.md)
 
 ## Sources
 

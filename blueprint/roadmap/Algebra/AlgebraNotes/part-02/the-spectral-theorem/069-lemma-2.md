@@ -14,6 +14,10 @@ If $Tv = \lambda v,$ then $T^*v = \overline{\lambda}v.$ This just means that $T$
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition (Section: Euclidean and Hermitian Spaces, Subsection: Complex Linear Operators)](../euclidean-and-hermitian-spaces/060-definition.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Section: The Spectral Theorem, Subsection: The Spectral Theorem](../../../../../sources/v1/AlgebraNotes.md)

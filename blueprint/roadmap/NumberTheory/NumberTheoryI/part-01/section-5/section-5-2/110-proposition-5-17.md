@@ -12,7 +12,12 @@ Let $A$ be a Dedekind domain with fraction field $K$, let $L/K$ be a finite exte
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.19](../../section-1/section-1-6/015-definition-1-19.md)
+- [Definition 2.10](../../section-2/027-definition-2-10.md)
+
+## Proof depends on
+
+- [Definition 1.17](../../section-1/section-1-6/013-definition-1-17.md)
 
 ## Sources
 

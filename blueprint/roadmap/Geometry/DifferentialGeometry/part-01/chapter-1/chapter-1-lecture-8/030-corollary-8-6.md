@@ -11,7 +11,7 @@ Let $c$ be a closed curve of period $T$. Suppose that there are only finitely ma
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.1](025-definition-8-1.md)
 
 ## Proof depends on
 

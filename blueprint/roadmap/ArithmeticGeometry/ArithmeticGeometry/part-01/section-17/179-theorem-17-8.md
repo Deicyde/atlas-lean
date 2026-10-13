@@ -12,7 +12,7 @@ Let $F/k$ be a function field of dimension $n$. Then there exist algebraically i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.3](../section-12/086-definition-12-3.md)
 
 ## Sources
 

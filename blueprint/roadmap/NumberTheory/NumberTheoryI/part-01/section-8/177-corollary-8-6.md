@@ -12,7 +12,8 @@ Let $K$ be a field with absolute values $|\,|_1$ and $|\,|_2$. The induced topol
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1/section-1-2/001-definition-1-2.md)
+- [Definition 1.6](../section-1/section-1-2/004-definition-1-6.md)
 
 ## Sources
 

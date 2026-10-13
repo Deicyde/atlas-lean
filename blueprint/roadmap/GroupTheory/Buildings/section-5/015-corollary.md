@@ -13,6 +13,10 @@ The parabolic subgroups of $G$ are exactly those subgroups containing $B$. Every
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition (Section 5.3)](014-proposition.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 5.3](../../../../sources/v1/Buildings.md)

@@ -18,6 +18,8 @@ This node has no prerequisites.
 
 - [Theorem (Closure under concatenation)](002-closure-under-concatenation.md)
 - [Theorem (Closure under star)](003-closure-under-star.md)
+- [Theorem (Closure under union)](../lecture-1/001-closure-under-union.md)
+- [Theorem (NFA to DFA conversion)](004-nfa-to-dfa-conversion.md)
 
 ## Sources
 

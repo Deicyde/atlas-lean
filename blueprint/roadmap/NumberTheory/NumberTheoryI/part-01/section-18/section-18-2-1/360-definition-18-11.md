@@ -11,7 +11,7 @@ A Dirichlet character $\chi$ induced by $\mathbb{1}$ is called principal (and is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 18.9](358-definition-18-9.md)
 
 ## Sources
 

@@ -13,6 +13,11 @@ Let $A$ be a DVR with fraction field $K$ and let $f \in A[x]$ be Eisenstein. The
 ## Depends on
 
 - [Definition 11.1](220-definition-11-1.md)
+- [Definition 1.10](../section-1/section-1-4/008-definition-1-10.md)
+
+## Proof depends on
+
+- [Theorem 1.16](../section-1/section-1-5/012-theorem-1-16.md)
 
 ## Sources
 

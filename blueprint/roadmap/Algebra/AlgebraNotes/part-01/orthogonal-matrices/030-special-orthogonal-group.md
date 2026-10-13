@@ -11,7 +11,7 @@ The orthogonal matrices with determinant 1 form a subgroup $SO_n \subset O_n \su
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proposition (Section: Orthogonal Matrices, Subsection: Dot Products and Orthogonal Matrices)](029-proposition.md)
 
 ## Sources
 

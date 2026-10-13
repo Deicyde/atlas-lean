@@ -12,7 +12,11 @@ Every finite field is a perfect field.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.18](073-definition-4-18.md)
+
+## Proof depends on
+
+- [Theorem 4.19](074-theorem-4-19.md)
 
 ## Sources
 

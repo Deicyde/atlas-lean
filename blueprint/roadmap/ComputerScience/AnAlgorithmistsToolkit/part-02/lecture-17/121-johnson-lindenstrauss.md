@@ -10,7 +10,11 @@ Let $X = \{x_1, x_2, \ldots, x_n\} \in \mathbb{R}^m$ (for any $m$) and let $k = 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4 (D-embedding)](120-d-embedding.md)
+
+## Proof depends on
+
+- [Lemma 3](119-lemma-3.md)
 
 ## Sources
 

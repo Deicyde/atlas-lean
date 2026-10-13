@@ -14,6 +14,10 @@ Given a finite-dimensional complex representation of a finite group, each invari
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition (Section: Orthogonality)](../orthogonality/058-definition.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Lecture 2, Section: Irreducible Representations](../../../../../sources/v1/AlgebraNotes.md)

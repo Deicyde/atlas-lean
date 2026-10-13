@@ -12,7 +12,7 @@ If $R$ is a noetherian ring, then so is $R[x]$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.10](089-definition-12-10.md)
 
 ## Sources
 

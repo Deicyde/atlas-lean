@@ -11,7 +11,7 @@ For a Galois extension of number fields $L / K$ we define the integers $e_{0}(L 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.29](../../part-01/section-5/section-5-3/118-definition-5-29.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ Assume $AKLBG$ and let $\mathfrak{p}$ be a prime of $A$. The residue field degre
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.29](../../section-5/section-5-3/118-definition-5-29.md)
+
+## Proof depends on
+
+- [Corollary 7.3](152-corollary-7-3.md)
 
 ## Sources
 

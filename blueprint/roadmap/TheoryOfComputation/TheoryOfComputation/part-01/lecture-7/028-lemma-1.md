@@ -12,7 +12,7 @@ Can convert every CFG into Chomsky Normal Form (CNF).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Context Free Grammar)](../lecture-4/013-context-free-grammar.md)
 
 ## Sources
 

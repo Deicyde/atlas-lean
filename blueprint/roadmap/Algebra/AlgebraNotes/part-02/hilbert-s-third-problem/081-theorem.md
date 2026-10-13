@@ -11,7 +11,7 @@ If $C$ is a cube and $T$ is a regular tetrahedron, then $d(C) = d(T)$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Hilbert's Third Problem, Back to Polytopes)](080-definition.md)
 
 ## Sources
 

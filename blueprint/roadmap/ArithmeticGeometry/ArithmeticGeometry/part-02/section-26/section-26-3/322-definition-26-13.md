@@ -10,7 +10,8 @@ The elliptic curve $E/k$ given by Theorem 26.12 is the Jacobian of the genus one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 22.1](../../section-22/section-22-1/235-definition-22-1.md)
+- [Theorem 26.12](321-theorem-26-12.md)
 
 ## Sources
 

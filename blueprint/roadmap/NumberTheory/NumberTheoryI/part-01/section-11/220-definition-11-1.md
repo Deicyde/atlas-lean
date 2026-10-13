@@ -11,7 +11,7 @@ Let $A$ be a DVR with maximal ideal $\mathfrak{p}$. A monic polynomial $f(x)=x^{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10](../section-1/section-1-4/008-definition-1-10.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ Let $C / \mathbb{F}_{q}$ be a conic over a finite field of odd characteristic. T
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 2.1](../section-2/003-theorem-2-1.md)
+- [Theorem 3.3](010-theorem-3-3.md)
+
 ## Sources
 
 - [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 3.3](../../../../../sources/v1/ArithmeticGeometry.md)

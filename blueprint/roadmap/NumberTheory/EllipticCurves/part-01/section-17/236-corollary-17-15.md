@@ -14,7 +14,11 @@ Let $\mathcal{O}$ be an imaginary quadratic order and let $\mathfrak{a}$ be
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.18](../section-4/section-4-2/043-definition-4-18.md)
+- [Definition 4.31](../section-4/section-4-5/052-definition-4-31.md)
+- [Definition 12.21](../section-12/154-definition-12-21.md)
+- [Definition 12.22](../section-12/155-definition-12-22.md)
+- [Definition 17.4](226-definition-17-4.md)
 
 ## Proof depends on
 

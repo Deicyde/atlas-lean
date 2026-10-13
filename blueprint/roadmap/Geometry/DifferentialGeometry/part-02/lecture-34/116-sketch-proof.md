@@ -10,7 +10,7 @@ For any compact surface $M \subset \mathbb{R}^{3}$, $\int_{M} \|\kappa\| \, d\op
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 30.2](../../part-01/lecture-30/093-definition-30-2.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Let $A$ be an integrally closed domain with fraction field $K$. Let $\alpha$ be 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.17](../section-1-6/013-definition-1-17.md)
+- [Definition 1.19](../section-1-6/015-definition-1-19.md)
 
 ## Sources
 

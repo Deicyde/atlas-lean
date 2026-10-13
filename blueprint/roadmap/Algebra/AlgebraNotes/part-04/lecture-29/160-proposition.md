@@ -12,11 +12,12 @@ For any finite (separable) extension $E/F$, we have $\lvert\operatorname{Gal}(E/
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Finite Fields, Multiple Roots)](../finite-fields/152-definition.md)
 
 ## Proof depends on
 
 - [Definition (Lecture 29, Subsection: The Galois Group)](157-definition.md)
+- [Theorem (Lecture 29, Subsection: The Galois Group)](158-theorem.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Let $p$ be a prime. The time to invert an element of $\mathbb{F}_p^{\times}$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.2](../section-3-1/006-definition-3-2.md)
 
 ## Sources
 

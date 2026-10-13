@@ -11,6 +11,12 @@ Let $M, \tilde{M} \subset \mathbb{R}^{n+1}$ be compact connected hypersurfaces w
 ## Depends on
 
 - [Definition 7.2](../chapter-1/chapter-1-lecture-7/022-definition-7-2.md)
+- [Definition 26.1](../lecture-26/082-definition-26-1.md)
+- [Definition 26.2](../lecture-26/083-definition-26-2.md)
+- [Definition 30.2](../lecture-30/093-definition-30-2.md)
+- [Definition 30.3](../lecture-30/094-definition-30-3.md)
+- [Definition 31.3](../lecture-31/100-definition-31-3.md)
+- [Definition 32.2](../lecture-32/102-definition-32-2.md)
 
 ## Sources
 

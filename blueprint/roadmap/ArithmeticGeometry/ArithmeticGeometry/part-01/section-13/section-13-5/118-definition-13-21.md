@@ -11,7 +11,10 @@ If $Z \subseteq \mathbb{A}^{n}$ is any affine algebraic set, we can embed it in 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.8](../../section-12/088-definition-12-8.md)
+- [Definition 12.12](../../section-12/091-definition-12-12.md)
+- [Definition 13.11](../section-13-2/110-definition-13-11.md)
+- [Definition 13.14](../section-13-3-1/112-definition-13-14.md)
 
 ## Sources
 

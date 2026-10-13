@@ -12,11 +12,13 @@ Let $K \subseteq L \subseteq M$ be a tower of finite abelian extensions of globa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7.23](../../part-01/section-7/section-7-4/171-definition-7-23.md)
+- [Definition 13.22](../../part-01/section-13/279-definition-13-22.md)
 
 ## Proof depends on
 
 - [Theorem 3.11](../../part-01/section-3/047-theorem-3-11.md)
+- [Proposition 7.22](../../part-01/section-7/section-7-4/170-proposition-7-22.md)
 
 ## Sources
 

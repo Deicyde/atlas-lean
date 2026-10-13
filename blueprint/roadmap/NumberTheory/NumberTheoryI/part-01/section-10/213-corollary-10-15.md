@@ -11,7 +11,11 @@ Assume $AKLB$ with $A$ a complete DVR with residue field $k$. Then $L/K$ is unra
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10](../section-1/section-1-4/008-definition-1-10.md)
+- [Definition 1.13](../section-1/section-1-4/011-definition-1-13.md)
+- [Definition 4.1](../section-4/section-4-1/part-01/057-definition-4-1.md)
+- [Definition 5.37](../section-5/section-5/124-definition-5-37.md)
+- [Definition 8.1](../section-8/172-definition-8-1.md)
 
 ## Proof depends on
 

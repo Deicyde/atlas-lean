@@ -12,7 +12,9 @@ A nonzero fractional ideal in a noetherian domain $A$ is invertible if and only 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.13](../section-2/029-definition-2-13.md)
+- [Definition 2.17](../section-2/032-definition-2-17.md)
+- [Definition 2.19](../section-2/034-definition-2-19.md)
 
 ## Proof depends on
 

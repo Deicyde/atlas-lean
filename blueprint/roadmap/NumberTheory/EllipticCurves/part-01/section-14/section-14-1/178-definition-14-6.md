@@ -12,7 +12,8 @@ A complex function $f$ is meromorphic on an open set $\Omega$ if it is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.4](176-definition-14-4.md)
+- [Definition 14.5](177-definition-14-5.md)
 
 ## Sources
 

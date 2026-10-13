@@ -12,7 +12,8 @@ Let $K$ be a field and let $|\cdot|_1, \ldots, |\cdot|_n$ be pairwise inequivale
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1/section-1-2/001-definition-1-2.md)
+- [Definition 1.6](../section-1/section-1-2/004-definition-1-6.md)
 
 ## Sources
 

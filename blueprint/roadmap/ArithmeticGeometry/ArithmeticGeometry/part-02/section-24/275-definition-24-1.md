@@ -10,7 +10,7 @@ Let $E_{1} / k$ and $E_{2} / k$ be elliptic curves with distinguished rational p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.14](../section-23/266-definition-23-14.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ Let $A$ be an integrally closed domain with fraction field $K$ and let $L/K$ be 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.17](../../section-1/section-1-6/013-definition-1-17.md)
+- [Definition 1.19](../../section-1/section-1-6/015-definition-1-19.md)
+- [Definition 4.46](091-definition-4-46.md)
+
+## Proof depends on
+
+- [Proposition 1.28](../../section-1/section-1/022-proposition-1-28.md)
+- [Proposition 4.51](094-proposition-4-51.md)
 
 ## Sources
 

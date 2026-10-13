@@ -12,7 +12,11 @@ If $R$ is Noetherian, then every finitely generated module is finitely presented
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 20, Section: Modules and Presentation Matrices, Subsection: Presentation Matrices)](../../part-03/lecture-20/132-definition.md)
+
+## Proof depends on
+
+- [Proposition (\ref{noetheriansubmodules})](144-ref-noetheriansubmodules.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ If $\rho = \bigoplus \rho_i^{n_i}$, then $\langle \chi_\rho, \chi_\rho \rangle =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 2, Section: Irreducible Representations)](../../part-02/lecture-2/085-definition.md)
+- [Definition (Character)](../../part-02/lecture-1/086-character.md)
+- [Definition (Direct Sum)](../../part-02/lecture-2/087-direct-sum.md)
+
+## Proof depends on
+
+- [Theorem (Main Theorem)](../../part-02/lecture-4/091-main-theorem.md)
 
 ## Sources
 

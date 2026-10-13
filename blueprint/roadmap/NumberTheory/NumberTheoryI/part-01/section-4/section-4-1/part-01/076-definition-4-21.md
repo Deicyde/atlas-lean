@@ -12,7 +12,8 @@ A field $K$ is separably closed if $K$ has no nontrivial finite separable extens
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](058-definition-4-3.md)
+- [Definition 4.17](072-definition-4-17.md)
 
 ## Sources
 

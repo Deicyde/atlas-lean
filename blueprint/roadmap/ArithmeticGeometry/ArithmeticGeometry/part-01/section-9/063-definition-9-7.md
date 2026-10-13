@@ -11,7 +11,8 @@ A quadratic form $f$ on $V$ represents $a \in k$ if $a$ lies in the image of $f:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.1](058-definition-9-1.md)
+- [Definition 9.2](059-definition-9-2.md)
 
 ## Sources
 

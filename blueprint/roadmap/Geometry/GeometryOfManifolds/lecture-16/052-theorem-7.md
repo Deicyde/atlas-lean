@@ -14,6 +14,11 @@ $\Delta = 2\square = 2\bar{\square}$.
 
 - [Definition 7](../lecture-2/011-definition-7.md)
 
+## Proof depends on
+
+- [Proposition 2 (Lecture 16)](038-proposition-2.md)
+- [Lemma 1 (Lecture 16)](049-lemma-1.md)
+
 ## Sources
 
 - [MIT 18.966 Geometry of Manifolds (Spring 2007), Lecture 16](../../../../sources/v1/GeometryOfManifolds.md)

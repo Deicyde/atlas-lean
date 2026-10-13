@@ -13,6 +13,7 @@ The unordered collection of $n(n-1)/2$ numbers $\lambda_{i} \lambda_{j}$ is intr
 
 - [Definition 12.1](../chapter-2/040-definition-12-1.md)
 - [Definition 12.3](../chapter-2/042-definition-12-3.md)
+- [Definition 14.1](../chapter-2/048-definition-14-1.md)
 
 ## Proof depends on
 

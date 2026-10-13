@@ -11,7 +11,7 @@ For a global field $K$ the compact group $C_{K}^{1}\coloneqq \mathbb{I}_{K}^{1} 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.22](../../part-01/section-13/279-definition-13-22.md)
 
 ## Proof depends on
 

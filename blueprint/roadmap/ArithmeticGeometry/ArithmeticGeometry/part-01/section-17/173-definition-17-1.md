@@ -11,7 +11,8 @@ Let $P$ be a point on an affine variety $V$. The tangent space of $V$ at $P$ is 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.12](../section-12/091-definition-12-12.md)
+- [Definition 13.3](../section-13/section-13-1/102-definition-13-3.md)
 
 ## Sources
 

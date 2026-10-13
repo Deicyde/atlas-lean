@@ -11,7 +11,7 @@ For a prime $p$ the $p$-adic valuation $v_p: \mathbb{Q} \rightarrow \mathbb{Z}$ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1-2/001-definition-1-2.md)
 
 ## Sources
 

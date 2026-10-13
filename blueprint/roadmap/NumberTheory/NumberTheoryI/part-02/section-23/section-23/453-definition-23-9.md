@@ -11,7 +11,7 @@ A family of functors $F^{n}$ from the category of $G$-modules to the category of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.1](../section-23-1/446-definition-23-1.md)
 
 ## Sources
 

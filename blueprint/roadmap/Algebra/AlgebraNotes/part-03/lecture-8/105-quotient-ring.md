@@ -11,7 +11,8 @@ Let $R$ be a ring and $I \subset R$ an ideal. Since $I$ is a normal subgroup of 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (The Correspondence Theorem, Normal Subgroups)](../../part-01/the-correspondence-theorem/008-definition.md)
+- [Definition (Ideal)](103-ideal.md)
 
 ## Sources
 

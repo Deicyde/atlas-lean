@@ -19,7 +19,8 @@ Let $C_{1}$ and $C_{2}$ be plane projective curves defined over $k$. A
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.2](036-definition-4-2.md)
+- [Definition 4.7](037-definition-4-7.md)
 
 ## Sources
 

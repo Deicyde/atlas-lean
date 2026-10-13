@@ -13,7 +13,7 @@ The time to multiply two elements of $\mathbb{F}_p$ is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.2](../section-3-1/006-definition-3-2.md)
 
 ## Sources
 

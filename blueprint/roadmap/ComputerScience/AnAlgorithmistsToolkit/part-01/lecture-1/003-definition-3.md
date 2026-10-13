@@ -11,7 +11,7 @@ We call the span of the eigenvectors with the same eigenvalue an eigenspace.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 1, Section 2)](001-definition-1.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ Let $\mathcal{O}$ be an order of discriminant $D$ in an imaginary quadratic
 ## Depends on
 
 - [Definition 21.4](278-definition-21-4.md)
+- [Definition 12.22](../../part-01/section-12/155-definition-12-22.md)
+- [Definition 16.9](../../part-01/section-16/220-definition-16-9.md)
+- [Definition 17.4](../../part-01/section-17/226-definition-17-4.md)
+- [Definition 17.16](../../part-01/section-17/237-definition-17-16.md)
 
 ## Sources
 

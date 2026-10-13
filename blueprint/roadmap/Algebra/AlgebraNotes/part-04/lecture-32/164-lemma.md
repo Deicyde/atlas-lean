@@ -12,7 +12,12 @@ $S_5$ is not solvable. In fact, $A_5$ is simple.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 32, Solvable Groups)](162-definition.md)
+
+## Proof depends on
+
+- [Definition (The Correspondence Theorem, Normal Subgroups)](../../part-01/the-correspondence-theorem/008-definition.md)
+- [Corollary (Lagrange's Theorem)](../../part-01/isomorphisms-and-cosets/010-lagrange-s-theorem.md)
 
 ## Sources
 

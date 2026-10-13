@@ -12,6 +12,9 @@ Let $M \subset \mathbb{R}^{3}$ be a surface, and $f \colon U \rightarrow M$ a pa
 
 - [Definition 12.1](../../part-01/chapter-2/040-definition-12-1.md)
 - [Definition 12.3](../../part-01/chapter-2/042-definition-12-3.md)
+- [Definition 14.4](../../part-01/chapter-2/049-definition-14-4.md)
+- [Definition 29.3](../../part-01/lecture-29/090-definition-29-3.md)
+- [Definition 41.1](144-definition-41-1.md)
 
 ## Sources
 

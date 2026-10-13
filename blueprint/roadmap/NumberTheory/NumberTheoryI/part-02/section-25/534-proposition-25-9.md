@@ -12,6 +12,12 @@ The adele ring $\mathbb{A}_{K}$ of a global field $K$ is locally compact and Hau
 ## Depends on
 
 - [Definition 25.7](533-definition-25-7.md)
+- [Definition 13.22](../../part-01/section-13/279-definition-13-22.md)
+
+## Proof depends on
+
+- [Definition 9.1](../../part-01/section-9/187-definition-9-1.md)
+- [Proposition 25.6](532-proposition-25-6.md)
 
 ## Sources
 

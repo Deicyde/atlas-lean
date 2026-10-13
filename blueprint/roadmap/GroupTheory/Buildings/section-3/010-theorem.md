@@ -15,6 +15,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Theorem (Section 1.7)](../section-1/004-theorem.md)
+- [Corollary (Section 1.7)](../section-1/001-corollary.md)
 
 ## Sources
 

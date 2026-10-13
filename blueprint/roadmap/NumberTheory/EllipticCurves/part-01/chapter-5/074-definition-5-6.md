@@ -15,7 +15,8 @@ For an isogeny $\alpha = \alpha_{\text{sep}} \circ \pi^n$ decomposed as in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.18](../section-4/section-4-2/043-definition-4-18.md)
+- [Corollary 5.4](073-corollary-5-4.md)
 
 ## Proof depends on
 

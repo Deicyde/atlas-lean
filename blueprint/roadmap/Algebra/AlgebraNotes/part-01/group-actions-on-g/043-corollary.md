@@ -14,6 +14,11 @@ If $|G| = p^2,$ then $G$ must be abelian.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary (Lagrange's Theorem)](../isomorphisms-and-cosets/010-lagrange-s-theorem.md)
+- [Theorem (Section: Group Actions on $G$, Subsection: $p$-groups)](040-theorem.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Section: Group Actions on $G$, Subsection: $p$-groups](../../../../../sources/v1/AlgebraNotes.md)

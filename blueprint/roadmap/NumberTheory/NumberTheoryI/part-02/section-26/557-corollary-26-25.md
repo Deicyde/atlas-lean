@@ -12,7 +12,11 @@ Let $L/K$ be a Galois extension and let $H$ be a subgroup of $\operatorname{Gal}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 26.22](554-definition-26-22.md)
+
+## Proof depends on
+
+- [Theorem 26.24 (Fundamental theorem of Galois theory)](556-fundamental-theorem-of-galois-theory.md)
 
 ## Sources
 

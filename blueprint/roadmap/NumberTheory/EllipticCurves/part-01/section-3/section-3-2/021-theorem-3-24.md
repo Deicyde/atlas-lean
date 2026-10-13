@@ -14,7 +14,7 @@ The time to add or subtract two elements of $\mathbb{F}_{q}$ in our standard
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.4](../section-3-1/007-definition-3-4.md)
 
 ## Sources
 

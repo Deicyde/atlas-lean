@@ -10,7 +10,13 @@ Let $L / K$ be a Galois extension of number fields. Let $w_{1}, \ldots, w_{r+s}$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.1](../../part-01/section-13/264-definition-13-1.md)
+
+## Proof depends on
+
+- [Theorem 13.21 (Product Formula)](../../part-01/section-13/278-product-formula.md)
+- [Theorem 15.12 (Dirichlet's Unit Theorem)](../../part-01/section-15/310-dirichlet-s-unit-theorem.md)
+- [Definition 24.4](516-definition-24-4.md)
 
 ## Sources
 

@@ -10,7 +10,7 @@ There is an absolute constant $c > 0$, such that for any $f \colon \{-1,1\}^n \t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.2 (Lecture 4, Section 2)](007-definition-2-2.md)
 
 ## Sources
 

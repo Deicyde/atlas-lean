@@ -14,6 +14,10 @@ lean: PolyEquivProb.robp_agreement_claim
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Schwartz-Zippel)](109-schwartz-zippel.md)
+
 ## Sources
 
 - [MIT 18.404J Theory of Computation (Fall 2020), Lecture 24, section on $EQ_{ROBP} \in BPP$](../../../../../sources/v1/TheoryOfComputation.md)

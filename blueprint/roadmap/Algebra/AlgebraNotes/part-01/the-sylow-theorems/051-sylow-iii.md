@@ -12,7 +12,13 @@ The number of Sylow $p$-subgroups of $G$ divides $m = \frac{n}{p^e}$ and is cong
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sylow $p$-subgroup)](048-sylow-p-subgroup.md)
+
+## Proof depends on
+
+- [Corollary (Lagrange's Theorem)](../isomorphisms-and-cosets/010-lagrange-s-theorem.md)
+- [Corollary (Counting Formula for Orbits)](../group-actions/039-counting-formula-for-orbits.md)
+- [Theorem (Sylow II)](050-sylow-ii.md)
 
 ## Sources
 

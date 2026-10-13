@@ -11,7 +11,7 @@ Let $R$ be a commutative ring. A discrete valuation (on $R$) is a function $v: R
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 4.11](021-theorem-4-11.md)
 
 ## Sources
 

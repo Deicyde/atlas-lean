@@ -17,7 +17,8 @@ Theorem 22.3 allows us to distinguish $\ell$-isogenies $\varphi: E
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.21](../../part-01/section-12/154-definition-12-21.md)
+- [Theorem 22.3](287-theorem-22-3.md)
 
 ## Sources
 

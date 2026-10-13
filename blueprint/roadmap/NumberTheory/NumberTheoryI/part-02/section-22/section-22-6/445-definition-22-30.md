@@ -11,7 +11,7 @@ Let $K$ be a global field. The Hilbert class field of $K$ is the maximal unramif
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.22](../../../part-01/section-13/279-definition-13-22.md)
 
 ## Sources
 

@@ -19,6 +19,8 @@ $\mathrm{TQBF}$ is $\mathsf{PSPACE}$-complete.
 - [Theorem ($TQBF \in PSPACE$)](../lecture-17/070-tqbf-in-pspace.md)
 - [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
 - [Definition: Decider](../lecture-5/024-definition-decider.md)
+- [Definition (Lecture 14, section on Polynomial Time Reducibility)](../lecture-14/053-definition.md)
+- [Definition (Tableau)](../lecture-16/072-tableau.md)
 
 ## Sources
 

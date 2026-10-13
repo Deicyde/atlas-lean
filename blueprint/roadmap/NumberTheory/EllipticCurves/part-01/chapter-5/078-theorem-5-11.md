@@ -15,6 +15,8 @@ Let $E/k$ be an elliptic curve and let $G$ be a finite subgroup of
 ## Depends on
 
 - [Definition 4.18](../section-4/section-4-2/043-definition-4-18.md)
+- [Definition 4.22](../section-4/section-4-2/045-definition-4-22.md)
+- [Definition 4.31](../section-4/section-4-5/052-definition-4-31.md)
 
 ## Sources
 

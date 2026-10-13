@@ -14,7 +14,9 @@ The $L$-function (or $L$-series) of a cusp form $f(\tau)=\sum_{n=1}^{\infty}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.4](../../../part-01/section-14/section-14-1/176-definition-14-4.md)
+- [Definition 24.6](../section-24-1/325-definition-24-6.md)
+- [Definition 24.22](336-definition-24-22.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ A set $B$ in a metric space $X$ is $d$-Lipschitz parametrizable if it is the uni
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 19.3](384-definition-19-3.md)
 
 ## Sources
 

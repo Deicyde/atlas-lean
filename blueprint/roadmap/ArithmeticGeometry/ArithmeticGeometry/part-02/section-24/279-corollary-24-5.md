@@ -11,10 +11,12 @@ For any isogeny $\varphi: E_{1} \rightarrow E_{2}$ of elliptic curves, $\# \oper
 ## Depends on
 
 - [Definition 24.1](275-definition-24-1.md)
+- [Definition 19.3](../section-19/201-definition-19-3.md)
 
 ## Proof depends on
 
 - [Definition 24.3](277-definition-24-3.md)
+- [Lemma 24.4](278-lemma-24-4.md)
 
 ## Sources
 

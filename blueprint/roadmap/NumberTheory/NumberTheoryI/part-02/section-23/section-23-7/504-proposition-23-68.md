@@ -13,6 +13,8 @@ Let $A$ be an $R$-module and let $\bullet^{*}$ denote the application of the fun
 ## Depends on
 
 - [Definition 23.49](../section-23-7-subsection-23-7-1/489-definition-23-49.md)
+- [Definition 23.51](../section-23-7-subsection-23-7-1/491-definition-23-51.md)
+- [Definition 23.53](../section-23-7-subsection-23-7-1/493-definition-23-53.md)
 
 ## Sources
 

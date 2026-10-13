@@ -14,6 +14,7 @@ For a divisor $D$ of a genus $g$ curve, the following are equivalent: (a) $D$ is
 - [Definition 21.10](../../section-21/230-definition-21-10.md)
 - [Definition 22.1](../section-22-1/235-definition-22-1.md)
 - [Definition 22.4](../section-22-1/237-definition-22-4.md)
+- [Definition 19.21](../../section-19/215-definition-19-21.md)
 
 ## Proof depends on
 
@@ -25,6 +26,7 @@ For a divisor $D$ of a genus $g$ curve, the following are equivalent: (a) $D$ is
 - [Lemma 21.8](../../section-21/228-lemma-21-8.md)
 - [Theorem 22.21 (Riemann-Roch Theorem)](253-riemann-roch-theorem.md)
 - [Corollary 22.23](255-corollary-22-23.md)
+- [Corollary 22.22](254-corollary-22-22.md)
 
 ## Sources
 

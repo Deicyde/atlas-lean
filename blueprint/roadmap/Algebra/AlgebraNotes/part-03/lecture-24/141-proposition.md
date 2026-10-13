@@ -12,7 +12,7 @@ In a Noetherian ring, every (non-unit) ideal is contained in a maximal ideal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Maximal Ideals)](../lecture-10/109-maximal-ideals.md)
 
 ## Sources
 

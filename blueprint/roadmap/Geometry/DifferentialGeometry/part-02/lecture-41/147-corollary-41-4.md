@@ -13,6 +13,9 @@ Let $M \subset \mathbb{R}^{3}$ be a surface, $f \colon U \rightarrow M$ a partia
 
 - [Definition 12.1](../../part-01/chapter-2/040-definition-12-1.md)
 - [Definition 12.3](../../part-01/chapter-2/042-definition-12-3.md)
+- [Definition 14.4](../../part-01/chapter-2/049-definition-14-4.md)
+- [Definition 29.3](../../part-01/lecture-29/090-definition-29-3.md)
+- [Definition 36.2](../lecture-36/122-definition-36-2.md)
 
 ## Proof depends on
 

@@ -13,6 +13,8 @@ If a nondegenerate quadratic form $f$ represents 0 then it represents every elem
 ## Depends on
 
 - [Definition 9.7](063-definition-9-7.md)
+- [Definition 9.1](058-definition-9-1.md)
+- [Definition 9.3](060-definition-9-3.md)
 
 ## Sources
 

@@ -12,11 +12,12 @@ Given $\lambda_i$ and $d_i$ as above, $\lambda_2 \leq (\sum_i d_i)/(n-1)$ and $\
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 1, Section 2)](../../lecture-1/001-definition-1.md)
 
 ## Proof depends on
 
 - [Proposition 6 (Lecture 1, Section 4)](../../lecture-1/006-proposition-6.md)
+- [Lemma 21 (Sum of the eigenvalues)](026-sum-of-the-eigenvalues.md)
 
 ## Sources
 

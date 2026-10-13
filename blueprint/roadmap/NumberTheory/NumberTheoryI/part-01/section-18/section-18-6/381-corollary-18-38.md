@@ -12,7 +12,7 @@ For $\chi \in \widehat{G}$ we have $\sum_{g \in G} \chi(g) \neq 0$ if and only i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 18.31](376-definition-18-31.md)
 
 ## Sources
 

@@ -10,7 +10,14 @@ Let $p \leq \infty$ be any prime of $\mathbb{Q}$. Under the metric $d(x, y)=|x-y
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](../section-4/015-definition-4-3.md)
+- [Definition 5.1](../section-5/029-definition-5-1.md)
+- [Definition 7.14](../section-7/047-definition-7-14.md)
+
+## Proof depends on
+
+- [Theorem 7.15](../section-7/048-theorem-7-15.md)
+- [Theorem 8.1](../section-8/051-theorem-8-1.md)
 
 ## Sources
 

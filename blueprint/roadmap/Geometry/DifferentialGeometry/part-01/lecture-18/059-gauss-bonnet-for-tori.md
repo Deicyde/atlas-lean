@@ -12,6 +12,7 @@ Let $f \colon \mathbb{R}^{2} \rightarrow \mathbb{R}^{3}$ be a doubly-periodic su
 
 - [Definition 12.1](../chapter-2/040-definition-12-1.md)
 - [Definition 12.3](../chapter-2/042-definition-12-3.md)
+- [Definition 14.4](../chapter-2/049-definition-14-4.md)
 
 ## Proof depends on
 

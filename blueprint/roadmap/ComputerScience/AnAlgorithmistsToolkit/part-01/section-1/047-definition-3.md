@@ -11,7 +11,7 @@ A lazy random walk is simply a random walk along a graph with self loops added i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4 (Lecture 1, Section 3)](../lecture-1/004-definition-4.md)
 
 ## Sources
 

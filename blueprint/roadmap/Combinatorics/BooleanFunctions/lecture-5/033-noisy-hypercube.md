@@ -11,7 +11,7 @@ For $\rho \in [0,1]$, the $\rho$-noisy hypercube graph is the graph on the verte
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.2 (Lecture 5, Section 2.2)](030-definition-2-2.md)
 
 ## Sources
 

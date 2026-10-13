@@ -12,7 +12,12 @@ For groups of order 10, there are two isomorphism classes: $G \cong C_5 \times C
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Product group)](052-product-group.md)
+
+## Proof depends on
+
+- [Definition (The Correspondence Theorem, Normal Subgroups)](../the-correspondence-theorem/008-definition.md)
+- [Theorem (Sylow III)](051-sylow-iii.md)
 
 ## Sources
 

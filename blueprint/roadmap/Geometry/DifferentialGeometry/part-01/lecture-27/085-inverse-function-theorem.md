@@ -12,7 +12,7 @@ Let $\tilde{V} \subset \mathbb{R}^{n+1}$ be an open subset, $y \in \tilde{V}$ a 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 27.1](084-definition-27-1.md)
 
 ## Sources
 

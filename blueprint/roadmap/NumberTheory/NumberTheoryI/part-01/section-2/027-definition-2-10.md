@@ -12,7 +12,7 @@ A noetherian domain satisfying either of the equivalent properties of Propositio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proposition 2.9](026-proposition-2-9.md)
 
 ## Sources
 

@@ -10,7 +10,8 @@ An elliptic curve $E/\mathbb{Q}$ is modular if $f_{E}$ is a modular form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 24.5](../section-24-1/324-definition-24-5.md)
+- [Definition 24.28](../section-24-6/340-definition-24-28.md)
 
 ## Proof depends on
 

@@ -9,7 +9,12 @@ There exists an absolute constant $\alpha > 0$ such that for all $\varepsilon > 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.2 (Lecture 4, Section 2)](../lecture-4/007-definition-2-2.md)
+- [Definition 3.1 (Noise Sensitivity)](../section-3/060-noise-sensitivity.md)
+
+## Proof depends on
+
+- [Corollary 4.2](063-corollary-4-2.md)
 
 ## Sources
 

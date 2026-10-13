@@ -12,7 +12,11 @@ For any TM $T$ there is a TM $R$ where for all $w$, $R$ on input $w$ operates in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+
+## Proof depends on
+
+- [Lemma (Computable function q)](044-computable-function-q.md)
 
 ## Sources
 

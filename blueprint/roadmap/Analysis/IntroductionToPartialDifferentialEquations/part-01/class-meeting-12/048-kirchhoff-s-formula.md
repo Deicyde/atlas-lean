@@ -20,6 +20,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Corollary 1.0.2 (Representation formula for $\widetilde{U}(t, r ; x)$)](../class-meeting-11/047-t-r-x.md)
+- [Proposition 1.0.1 (Spherical averages)](../class-meeting-11/046-spherical-averages.md)
 
 ## Sources
 

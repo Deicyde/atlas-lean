@@ -9,7 +9,8 @@ There exists $\alpha > 0$ such that for all monotone $f \colon \{-1,1\}^n \to \{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.2 (Lecture 4, Section 2)](../lecture-4/007-definition-2-2.md)
+- [Definition 3.1 (Noise Sensitivity)](../section-3/060-noise-sensitivity.md)
 
 ## Sources
 

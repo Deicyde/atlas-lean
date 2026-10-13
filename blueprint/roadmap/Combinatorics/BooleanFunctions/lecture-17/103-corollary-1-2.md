@@ -9,7 +9,7 @@ Assuming UGC, for all $\varepsilon > 0$, given a graph $G = (V, E)$ it is NP-har
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture 3.6 (The Unique-Games Conjecture)](../lecture-15/095-the-unique-games-conjecture.md)
 
 ## Sources
 

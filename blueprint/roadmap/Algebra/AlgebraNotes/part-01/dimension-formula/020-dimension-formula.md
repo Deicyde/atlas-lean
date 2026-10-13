@@ -14,6 +14,10 @@ Given $T : V \rightarrow W$, $\dim(\ker\ T) + \dim(\operatorname{im}\ T) = \dim(
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition (Section: Fields and Vector Spaces, Bases and Dimension subsection)](../fields-and-vector-spaces/014-definition.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Dimension Formula, Section on Dimension Formula](../../../../../sources/v1/AlgebraNotes.md)

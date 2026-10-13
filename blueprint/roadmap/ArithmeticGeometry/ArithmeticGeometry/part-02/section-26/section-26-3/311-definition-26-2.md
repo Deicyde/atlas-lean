@@ -11,7 +11,8 @@ Let $E/k$ be an elliptic curve with Weierstrass equation $y^{2}=x^{3}+a_{4} x+a_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.9](../../section-23/262-definition-23-9.md)
+- [Definition 23.14](../../section-23/266-definition-23-14.md)
 
 ## Sources
 

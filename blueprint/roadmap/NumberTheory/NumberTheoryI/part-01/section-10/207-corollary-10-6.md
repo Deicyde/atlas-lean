@@ -10,7 +10,15 @@ Assume AKLB and that $A$ is a complete DVR with maximal ideal $\mathfrak{p}$ and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10](../section-1/section-1-4/008-definition-1-10.md)
+- [Definition 4.46](../section-4/section-4-3/091-definition-4-46.md)
+- [Definition 5.29](../section-5/section-5-3/118-definition-5-29.md)
+- [Definition 8.1](../section-8/172-definition-8-1.md)
+
+## Proof depends on
+
+- [Proposition 6.6](../section-6/section-6-2/129-proposition-6-6.md)
+- [Theorem 6.10](../section-6/section-6-2/133-theorem-6-10.md)
 
 ## Sources
 

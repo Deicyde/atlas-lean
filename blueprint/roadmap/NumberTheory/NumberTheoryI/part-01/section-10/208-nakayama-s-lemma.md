@@ -12,7 +12,7 @@ Let $A$ be a local ring with maximal ideal $\mathfrak{p}$, and let $M$ be a fini
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.12](../section-1/section-1-4/010-definition-1-12.md)
 
 ## Sources
 

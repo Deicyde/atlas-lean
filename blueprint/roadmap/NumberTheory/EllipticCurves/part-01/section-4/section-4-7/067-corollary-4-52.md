@@ -14,6 +14,9 @@ There is a one-to-one inclusion-reversing correspondence between radical
 ## Depends on
 
 - [Definition 4.46](061-definition-4-46.md)
+- [Definition 4.41](057-definition-4-41.md)
+- [Definition 4.42](058-definition-4-42.md)
+- [Definition 4.47](062-definition-4-47.md)
 
 ## Proof depends on
 

@@ -11,7 +11,7 @@ Let $A$ be a $G$-module. The $n$th homology group of $G$ with coefficients in $A
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.1](../section-23-1/446-definition-23-1.md)
 
 ## Sources
 

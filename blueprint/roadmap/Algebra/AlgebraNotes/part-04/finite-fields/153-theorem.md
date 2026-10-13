@@ -14,6 +14,10 @@ For every prime $p$ and every $n \geq 1$, there exists a field of $q = p^n$ elem
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition (Lecture 11, Section: Factorization)](../../part-03/lecture-11/108-proposition.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Finite Fields, Construction of Finite Fields](../../../../../sources/v1/AlgebraNotes.md)

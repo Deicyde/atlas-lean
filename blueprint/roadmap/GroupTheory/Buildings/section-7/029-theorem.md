@@ -14,6 +14,11 @@ Let $U$, $W$ be subspaces of a non-degenerate space $V$. Every isometry $\varphi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition (Section 7.2, Bilinear and hermitian forms)](027-proposition.md)
+- [Corollary (Section 7.2, Bilinear and hermitian forms)](028-corollary.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 7.3, Extending isometries](../../../../sources/v1/Buildings.md)

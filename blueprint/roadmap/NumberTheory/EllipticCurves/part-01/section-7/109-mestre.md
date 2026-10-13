@@ -14,7 +14,14 @@ Let $p>229$ be prime, and let $E/\mathbb{F}_{p}$ be an elliptic curve with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.2](../section-3/section-3-1/006-definition-3-2.md)
+- [Definition 7.5](107-definition-7-5.md)
+
+## Proof depends on
+
+- [Corollary 6.4](../chapter-6/090-corollary-6-4.md)
+- [Theorem 6.20](../section-6/103-theorem-6-20.md)
+- [Theorem 7.3 (Hasse)](105-hasse.md)
 
 ## Sources
 

@@ -13,6 +13,8 @@ Let $\Lambda$ be a lattice in an $\mathbb{R}$-vector space $V \simeq \mathbb{R}^
 ## Depends on
 
 - [Definition 19.4](385-definition-19-4.md)
+- [Definition 14.4](../section-14/section-14-1/283-definition-14-4.md)
+- [Definition 14.10](../section-14/section-14-1/287-definition-14-10.md)
 
 ## Proof depends on
 

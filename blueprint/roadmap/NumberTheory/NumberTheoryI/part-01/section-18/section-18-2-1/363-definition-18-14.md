@@ -11,7 +11,9 @@ The conductor of a Dirichlet character $\chi$ is the period of the unique primit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 18.4](../section-18-2/354-definition-18-4.md)
+- [Definition 18.9](358-definition-18-9.md)
+- [Theorem 18.13](362-theorem-18-13.md)
 
 ## Sources
 

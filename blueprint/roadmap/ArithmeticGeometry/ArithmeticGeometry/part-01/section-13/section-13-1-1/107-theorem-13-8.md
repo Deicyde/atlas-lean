@@ -11,6 +11,7 @@ Let $k$ be a field and let $R$ be an integral domain finitely generated as a $k$
 ## Depends on
 
 - [Definition 13.7](106-definition-13-7.md)
+- [Definition 12.3](../../section-12/086-definition-12-3.md)
 
 ## Sources
 

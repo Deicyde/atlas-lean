@@ -11,7 +11,7 @@ For all positive integers $m$ we have $\mathbb{Z}_{p} / p^{m} \mathbb{Z}_{p} \si
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](015-definition-4-3.md)
 
 ## Sources
 

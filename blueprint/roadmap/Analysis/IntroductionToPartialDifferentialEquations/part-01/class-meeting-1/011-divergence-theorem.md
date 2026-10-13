@@ -11,6 +11,7 @@ Let $\Omega \subset \mathbb{R}^{3}$ be a domain with a boundary that we denote b
 ## Depends on
 
 - [Definition 7.2.2 (Divergence)](010-divergence.md)
+- [Definition 7.2.1 (Vectorfield)](009-vectorfield.md)
 
 ## Sources
 

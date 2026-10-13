@@ -14,6 +14,9 @@ Let $K$ be the fraction field of a complete DVR and $f \in K[x]$ a monic irreduc
 
 - [Definition 11.14](230-definition-11-14.md)
 - [Definition 11.17](232-definition-11-17.md)
+- [Definition 1.10](../section-1/section-1-4/008-definition-1-10.md)
+- [Definition 4.1](../section-4/section-4-1/part-01/057-definition-4-1.md)
+- [Definition 8.1](../section-8/172-definition-8-1.md)
 
 ## Proof depends on
 

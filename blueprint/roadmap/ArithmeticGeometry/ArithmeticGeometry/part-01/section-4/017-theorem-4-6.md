@@ -13,6 +13,7 @@ Every element of $\mathbb{Z}_{p}$ has a unique $p$-adic expansion and every sequ
 ## Depends on
 
 - [Definition 4.5](016-definition-4-5.md)
+- [Definition 4.3](015-definition-4-3.md)
 
 ## Sources
 

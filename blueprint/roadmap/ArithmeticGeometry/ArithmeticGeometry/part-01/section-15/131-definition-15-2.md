@@ -11,7 +11,8 @@ A function $r \in \bar{k}(X)$ is said to be regular at a point $P \in X$ if $gr 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.2](../section-13/section-13-1/101-definition-13-2.md)
+- [Definition 13.4](../section-13/section-13-1/103-definition-13-4.md)
 
 ## Proof depends on
 

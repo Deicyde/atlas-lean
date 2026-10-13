@@ -12,7 +12,7 @@ For any computable function $f \colon \Sigma^* \to \Sigma^*$, there is a TM $R$ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
 
 ## Proof depends on
 

@@ -12,7 +12,11 @@ Let $S$ be a finite set of primes $p<\infty$, and for each $p \in S$ let $x_{p} 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](../section-4/015-definition-4-3.md)
+
+## Proof depends on
+
+- [Theorem 11.6](081-theorem-11-6.md)
 
 ## Sources
 

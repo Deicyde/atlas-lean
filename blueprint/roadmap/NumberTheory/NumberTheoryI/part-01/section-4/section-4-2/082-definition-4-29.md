@@ -11,7 +11,7 @@ Let $K$ be a field. An étale $K$-algebra is a $K$-algebra $L$ that is isomorphi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](../section-4-1/part-01/058-definition-4-3.md)
 
 ## Sources
 

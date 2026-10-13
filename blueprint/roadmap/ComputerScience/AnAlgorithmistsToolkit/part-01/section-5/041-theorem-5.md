@@ -10,7 +10,7 @@ Let $p_0$ be an arbitrary initial distribution, and $p_t$ be the distribution af
 
 ## Depends on
 
-This node has no prerequisites.
+- [Claim 1](../lecture-4/037-claim-1.md)
 
 ## Sources
 

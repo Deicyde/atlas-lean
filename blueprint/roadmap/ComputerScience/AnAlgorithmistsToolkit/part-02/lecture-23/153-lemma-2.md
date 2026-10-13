@@ -12,7 +12,7 @@ Let $P_{u,v}$ be a path from $u$ to $v$ of length $k$, and let $E_{u,v}$ be the 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5 (Lecture 9, Section 2.1)](../../part-01/lecture-9/088-definition-5.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ Let $C/k$ be a curve. The quotient group $\operatorname{Pic}_k C \coloneqq \oper
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 19.1](199-definition-19-1.md)
+- [Definition 19.9](206-definition-19-9.md)
 
 ## Proof depends on
 

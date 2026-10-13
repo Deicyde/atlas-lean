@@ -13,6 +13,7 @@ For every $j \in k$ there exists an elliptic curve $E/k$ with $j(E)=j$.
 ## Depends on
 
 - [Definition 26.2](311-definition-26-2.md)
+- [Definition 23.14](../../section-23/266-definition-23-14.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ For any $z_1 \leq \cdots \leq z_m = 0$, $\sum_{(i,j) \in E'_{-}} |z_i - z_j| \ge
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3 (Cut Ratio)](031-cut-ratio.md)
+- [Claim 7](035-claim-7.md)
 
 ## Sources
 

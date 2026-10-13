@@ -11,7 +11,7 @@ A sequence $(x_n)$ of elements of $k$ converges (to $\ell$) if there is an eleme
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.2](../section-5/030-definition-5-2.md)
 
 ## Sources
 

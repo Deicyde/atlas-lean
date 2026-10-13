@@ -12,7 +12,17 @@ Assume $AKLB$ with $L=K(\alpha)$ and $\alpha \in B$. Let $f \in A[x]$ be the min
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.19](../../section-1/section-1-6/015-definition-1-19.md)
+- [Definition 2.10](../../section-2/027-definition-2-10.md)
+- [Corollary 3.13](../../section-3/048-corollary-3-13.md)
+- [Definition 4.3](../../section-4/section-4-1/part-01/058-definition-4-3.md)
+- [Definition 5.29](../../section-5/section-5-3/118-definition-5-29.md)
+
+## Proof depends on
+
+- [Theorem 5.35](../../section-5/section-5/122-theorem-5-35.md)
+- [Proposition 6.7](../section-6-2/130-proposition-6-7.md)
+- [Theorem 6.10](../section-6-2/133-theorem-6-10.md)
 
 ## Sources
 

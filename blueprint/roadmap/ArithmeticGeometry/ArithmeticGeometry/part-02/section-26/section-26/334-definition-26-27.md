@@ -10,7 +10,8 @@ A curve $C/k$ satisfies the local-global principle (or Hasse principle) if eithe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7.13](../../../part-01/section-7/046-definition-7-13.md)
+- [Definition 19.1](../../section-19/199-definition-19-1.md)
 
 ## Proof depends on
 

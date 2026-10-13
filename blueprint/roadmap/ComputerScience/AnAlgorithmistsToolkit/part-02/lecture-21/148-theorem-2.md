@@ -14,6 +14,10 @@ Suppose $A$ is a square matrix admitting a decomposition $A = L + S$ where $L$ i
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 1 (Lecture 21, Section 2.4)](143-definition-1.md)
+
 ## Sources
 
 - [MIT 18.409 An Algorithmist's Toolkit (Fall 2009), Lecture 21, Section 2.4](../../../../../sources/v1/AnAlgorithmistsToolkit.md)

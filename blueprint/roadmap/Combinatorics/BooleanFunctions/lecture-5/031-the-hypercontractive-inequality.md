@@ -12,6 +12,7 @@ For all $f \colon \{-1,1\} \to \mathbb{R}$, $1 \leqslant p \leqslant q$ and $0 \
 ## Depends on
 
 - [Definition 0.1](027-definition-0-1.md)
+- [Definition 2.2 (Lecture 5, Section 2.2)](030-definition-2-2.md)
 
 ## Sources
 

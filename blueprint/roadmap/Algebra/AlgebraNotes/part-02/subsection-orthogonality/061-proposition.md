@@ -12,7 +12,7 @@ A form on a vector space $(V, \langle\cdot,\cdot\rangle)$ is non-degenerate if a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proposition (Section: Bilinear Forms)](../bilinear-forms/057-proposition.md)
 
 ## Sources
 

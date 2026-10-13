@@ -12,7 +12,12 @@ Assume $AKLB$ and let $S$ be a multiplicative subset of $A$. Then $S^{-1}\mathca
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.2](241-definition-12-2.md)
+
+## Proof depends on
+
+- [Lemma 3.1](../../section-3/038-lemma-3-1.md)
+- [Lemma 5.15](../../section-5/section-5/108-lemma-5-15.md)
 
 ## Sources
 

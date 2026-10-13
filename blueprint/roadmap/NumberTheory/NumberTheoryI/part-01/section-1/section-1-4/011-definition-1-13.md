@@ -10,7 +10,7 @@ The residue field of a local ring $A$ with maximal ideal $\mathfrak{m}$ is the f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.12](010-definition-1-12.md)
 
 ## Sources
 

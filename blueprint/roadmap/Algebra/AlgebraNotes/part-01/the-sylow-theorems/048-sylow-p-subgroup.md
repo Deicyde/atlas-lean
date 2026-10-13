@@ -11,7 +11,7 @@ Let $G$ be a group such that $|G| = n = p^e m$ such that $\gcd(p, m) = 1.$ Then 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Group)](../section-1/002-group.md)
 
 ## Sources
 

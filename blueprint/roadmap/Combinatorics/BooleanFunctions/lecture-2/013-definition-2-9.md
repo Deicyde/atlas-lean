@@ -9,7 +9,7 @@ We define the weight around level $d$ to be $W^{\approx d}[f] = \sum_{d \leqslan
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.6](010-definition-2-6.md)
 
 ## Sources
 

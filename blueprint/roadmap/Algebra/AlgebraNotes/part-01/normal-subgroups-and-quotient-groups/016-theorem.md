@@ -12,7 +12,12 @@ The following two statements are true about the quotient group: (1) The composit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section 3, Subsection 3.2 (Homomorphisms))](../section-3/001-definition.md)
+- [Definition (Group)](../section-1/002-group.md)
+
+## Proof depends on
+
+- [Definition (The Correspondence Theorem, Normal Subgroups)](../the-correspondence-theorem/008-definition.md)
 
 ## Sources
 

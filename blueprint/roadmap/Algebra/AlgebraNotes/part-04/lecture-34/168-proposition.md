@@ -9,7 +9,12 @@ Every $p$-group is solvable --- if $G$ is a finite group with $\lvert G\rvert = 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section: Group Actions on $G$, Subsection: $p$-groups)](../../part-01/group-actions-on-g/042-definition.md)
+- [Definition (Lecture 32, Solvable Groups)](../lecture-32/162-definition.md)
+
+## Proof depends on
+
+- [Theorem (Section: Group Actions on $G$, Subsection: $p$-groups)](../../part-01/group-actions-on-g/040-theorem.md)
 
 ## Sources
 

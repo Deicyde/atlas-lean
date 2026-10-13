@@ -11,7 +11,7 @@ The Gamma function $$\Gamma(s)\coloneqq \mathcal{M}\left(e^{-t}\right)(s)=\int_{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 17.11](346-definition-17-11.md)
 
 ## Sources
 

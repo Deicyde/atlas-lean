@@ -11,7 +11,7 @@ $\nabla \cdot \mathbf{F}$, the divergence of $\mathbf{F}$, is the scalar-valued 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7.2.1 (Vectorfield)](009-vectorfield.md)
 
 ## Sources
 

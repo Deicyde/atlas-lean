@@ -12,6 +12,11 @@ The solution $u$ to (2.0.16) can be represented as $u(x)=-\int_{\Omega} f(y) G(x
 
 - [Definition 2.0.2 (Section 2) (2)](036-definition-2-0-2.md)
 
+## Proof depends on
+
+- [Proposition 2.0.2 (Section 2)](037-proposition-2-0-2.md)
+- [Proposition 2.0.3 (Representation formula for $u$)](038-representation-formula-for-u.md)
+
 ## Sources
 
 - [MIT 18.152 Introduction to Partial Differential Equations (Fall 2011), Section 2](../../../../../sources/v1/IntroductionToPartialDifferentialEquations.md)

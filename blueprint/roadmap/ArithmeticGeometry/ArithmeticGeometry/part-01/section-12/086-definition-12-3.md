@@ -11,7 +11,7 @@ The transcendence degree of a field extension $L/K$ is the cardinality of any (h
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 12.2](085-theorem-12-2.md)
 
 ## Sources
 

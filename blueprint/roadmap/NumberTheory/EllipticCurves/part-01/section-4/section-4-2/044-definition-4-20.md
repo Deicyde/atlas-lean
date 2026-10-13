@@ -12,7 +12,12 @@ An isogeny $\phi: E_{1} \rightarrow E_{2}$ of elliptic curves defined over
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.9](../section-4-1/038-definition-4-9.md)
+
+## Proof depends on
+
+- [Theorem 4.15](../section-4-1/041-theorem-4-15.md)
+- [Theorem 4.17](../section-4-1/042-theorem-4-17.md)
 
 ## Sources
 

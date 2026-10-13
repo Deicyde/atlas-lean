@@ -12,7 +12,7 @@ Let $A$ be a local noetherian ring with maximal ideal $\mathfrak{p}$, let $g \in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.12](../section-1/section-1-4/010-definition-1-12.md)
 
 ## Proof depends on
 

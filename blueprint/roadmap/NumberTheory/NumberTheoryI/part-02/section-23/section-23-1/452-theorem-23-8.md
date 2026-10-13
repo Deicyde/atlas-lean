@@ -12,7 +12,13 @@ Every short exact sequence of $G$-modules $0 \longrightarrow A \xrightarrow{\alp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.1](446-definition-23-1.md)
+- [Definition 23.4](449-definition-23-4.md)
+
+## Proof depends on
+
+- [Lemma 23.6](450-lemma-23-6.md)
+- [Lemma 23.7](451-lemma-23-7.md)
 
 ## Sources
 

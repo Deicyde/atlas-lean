@@ -14,6 +14,10 @@ For any full-rank lattice $L$, $\lambda_1(L) \leq \sqrt{n} \cdot (\det L)^{1/n}$
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 2 (Minkowski's Theorem)](124-minkowski-s-theorem.md)
+
 ## Sources
 
 - [MIT 18.409 An Algorithmist's Toolkit (Fall 2009), Lecture 19, Section 2](../../../../../sources/v1/AnAlgorithmistsToolkit.md)

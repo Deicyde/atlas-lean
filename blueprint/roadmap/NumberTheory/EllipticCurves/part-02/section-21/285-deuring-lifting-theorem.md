@@ -17,6 +17,7 @@ Let $E/\mathbb{F}_{q}$ be an elliptic curve over a finite field and let $\phi
 ## Depends on
 
 - [Definition 6.13](../../part-01/section-6/098-definition-6-13.md)
+- [Definition 3.4](../../part-01/section-3/section-3-1/007-definition-3-4.md)
 
 ## Sources
 

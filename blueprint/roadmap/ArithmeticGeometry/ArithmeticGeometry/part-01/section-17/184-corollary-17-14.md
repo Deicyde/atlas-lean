@@ -12,6 +12,10 @@ The smooth points $P$ on a variety $V$ are precisely the points $P$ for which $\
 
 - [Definition 12.7](../section-12/087-definition-12-7.md)
 - [Definition 12.8](../section-12/088-definition-12-8.md)
+- [Definition 13.2](../section-13/section-13-1/101-definition-13-2.md)
+- [Definition 13.5](../section-13/section-13-1-1/104-definition-13-5.md)
+- [Definition 13.7](../section-13/section-13-1-1/106-definition-13-7.md)
+- [Definition 13.10](../section-13/section-13-1-2/109-definition-13-10.md)
 
 ## Proof depends on
 
@@ -21,6 +25,7 @@ The smooth points $P$ on a variety $V$ are precisely the points $P$ for which $\
 - [Definition 12.12](../section-12/091-definition-12-12.md)
 - [Theorem 12.21](../section-12/099-theorem-12-21.md)
 - [Corollary 17.11](181-corollary-17-11.md)
+- [Theorem 13.8](../section-13/section-13-1-1/107-theorem-13-8.md)
 
 ## Sources
 

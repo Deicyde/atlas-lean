@@ -10,7 +10,7 @@ Let $K=\mathbb{Q}(\alpha)$ be a number field, let $f$ be the minimal polynomial 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.26](../../section-1/section-1/021-definition-1-26.md)
 
 ## Sources
 

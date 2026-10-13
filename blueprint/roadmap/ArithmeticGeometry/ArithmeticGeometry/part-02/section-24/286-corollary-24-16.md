@@ -11,7 +11,12 @@ Suppose $P=(x: y: 1)$ is an affine point in $E^{0}(\mathbb{Q}_{p})$ with finite 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](../../part-01/section-4/015-definition-4-3.md)
+- [Definition 5.1](../../part-01/section-5/029-definition-5-1.md)
+
+## Proof depends on
+
+- [Theorem 24.14](285-theorem-24-14.md)
 
 ## Sources
 

@@ -9,7 +9,14 @@ Let $K$ be a number field of degree $n$ with $s$ complex places. Then $|D_{K}| \
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.26](../../section-1/section-1/021-definition-1-26.md)
+- [Definition 12.12](../../section-12/section-12/250-definition-12-12.md)
+- [Definition 13.1](../../section-13/264-definition-13-1.md)
+
+## Proof depends on
+
+- [Theorem 14.18 (Minkowski bound)](../section-14-4/293-minkowski-bound.md)
+- [Theorem 14.20](295-theorem-14-20.md)
 
 ## Sources
 

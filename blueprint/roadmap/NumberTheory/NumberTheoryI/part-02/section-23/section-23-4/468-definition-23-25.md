@@ -11,7 +11,7 @@ Let $G$ be a group and let $A$ be an abelian group. The abelian group $\operator
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.1](../section-23-1/446-definition-23-1.md)
 
 ## Sources
 

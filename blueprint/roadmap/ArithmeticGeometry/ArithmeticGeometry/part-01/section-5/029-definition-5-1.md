@@ -12,7 +12,7 @@ The field of $p$-adic numbers $\mathbb{Q}_{p}$ is the fraction field of $\mathbb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](../section-4/015-definition-4-3.md)
 
 ## Sources
 

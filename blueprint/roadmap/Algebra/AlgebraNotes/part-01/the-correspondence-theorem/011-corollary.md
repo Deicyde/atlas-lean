@@ -12,7 +12,11 @@ The size of the group is $|G| = |\ker(f)|\cdot|\operatorname{im}(f)|.$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section 3, Subsection 3.2 (Homomorphisms))](../section-3/001-definition.md)
+
+## Proof depends on
+
+- [Theorem (Isomorphisms and Cosets, Lagrange's Theorem)](../isomorphisms-and-cosets/007-theorem.md)
 
 ## Sources
 

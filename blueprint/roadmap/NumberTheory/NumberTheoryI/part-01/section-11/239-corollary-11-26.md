@@ -10,7 +10,14 @@ Assume $AKLB$ and let $\mathfrak{p}$ be a prime of $A$. Let $\mathfrak{p}B = \pr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.34](../section-4/section-4-2/085-definition-4-34.md)
+- [Definition 5.29](../section-5/section-5-3/118-definition-5-29.md)
+- [Definition 8.3](../section-8/174-definition-8-3.md)
+
+## Proof depends on
+
+- [Theorem 5.35](../section-5/section-5/122-theorem-5-35.md)
+- [Theorem 11.23](237-theorem-11-23.md)
 
 ## Sources
 

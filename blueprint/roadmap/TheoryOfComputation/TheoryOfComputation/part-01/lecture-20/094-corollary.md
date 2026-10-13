@@ -10,7 +10,7 @@ Some $\mathsf{NL}$-machine computes $c_{d+1}$ from $c_d$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 20, NL = coNL (part 1/4))](092-definition.md)
 
 ## Sources
 

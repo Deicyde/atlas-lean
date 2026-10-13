@@ -12,7 +12,12 @@ Suppose $p$ has degree $k$, $p(1) = 1$, and $|p(\mu_i)| < 1/n$ for all $i \geq 2
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 1, Section 2)](../lecture-1/001-definition-1.md)
+- [Definition 1 (Section 1 (Diameters and Eigenvalues), Lecture 6)](045-definition-1.md)
+
+## Proof depends on
+
+- [Proposition 2 (Lecture 1, Section 2)](../lecture-1/002-proposition-2.md)
 
 ## Sources
 

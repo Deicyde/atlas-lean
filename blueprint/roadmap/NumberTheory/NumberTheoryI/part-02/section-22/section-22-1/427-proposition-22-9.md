@@ -13,6 +13,7 @@ Let $\mathcal{C}$ be a primitive congruence subgroup of modulus $\mathfrak{m}$ f
 
 - [Definition 22.8](426-definition-22-8.md)
 - [Definition 21.2](../../section-21/404-definition-21-2.md)
+- [Definition 22.1](420-definition-22-1.md)
 
 ## Proof depends on
 

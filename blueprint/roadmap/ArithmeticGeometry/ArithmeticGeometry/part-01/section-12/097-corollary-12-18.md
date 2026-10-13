@@ -12,6 +12,7 @@ There is a one-to-one inclusion-reversing correspondence between radical ideals 
 ## Depends on
 
 - [Definition 12.7](087-definition-12-7.md)
+- [Definition 12.13](092-definition-12-13.md)
 
 ## Proof depends on
 

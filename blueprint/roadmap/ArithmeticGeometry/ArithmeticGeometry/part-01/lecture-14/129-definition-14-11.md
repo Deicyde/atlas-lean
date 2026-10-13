@@ -13,6 +13,9 @@ If $\varphi = (\varphi_1, \ldots, \varphi_n)$ is a morphism of varieties $X \rig
 
 - [Definition 14.1](../section-14/122-definition-14-1.md)
 - [Definition 12.7](../section-12/087-definition-12-7.md)
+- [Definition 13.1](../section-13/section-13-1/100-definition-13-1.md)
+- [Definition 13.2](../section-13/section-13-1/101-definition-13-2.md)
+- [Definition 14.6](../section-14/125-definition-14-6.md)
 
 ## Sources
 

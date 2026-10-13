@@ -22,6 +22,7 @@ $\mathrm{GG}$ is $\mathsf{PSPACE}$-complete.
 - [Savitch's Theorem](../lecture-18/088-savitch-s-theorem.md)
 - [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
 - [Definition: Decider](../lecture-5/024-definition-decider.md)
+- [Theorem (TQBF is PSPACE-complete)](../lecture-18/079-tqbf-is-pspace-complete.md)
 
 ## Sources
 

@@ -11,7 +11,16 @@ Let $K$ be a local field with discrete valuation $v$, residue field $k$, and abs
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1/section-1-2/001-definition-1-2.md)
+- [Definition 1.10](../section-1/section-1-4/008-definition-1-10.md)
+- [Definition 1.13](../section-1/section-1-4/011-definition-1-13.md)
+- [Definition 9.1](../section-9/187-definition-9-1.md)
+- [Definition 13.13](273-definition-13-13.md)
+
+## Proof depends on
+
+- [Corollary 8.6](../section-8/177-corollary-8-6.md)
+- [Theorem 13.14 (Weil)](274-weil.md)
 
 ## Sources
 

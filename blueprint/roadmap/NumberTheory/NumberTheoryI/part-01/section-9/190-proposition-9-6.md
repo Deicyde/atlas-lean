@@ -12,7 +12,18 @@ Let $K$ be a field with absolute value $|\;|_v$ induced by a discrete valuation 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../section-1/section-1-2/001-definition-1-2.md)
+- [Definition 1.10](../section-1/section-1-4/008-definition-1-10.md)
+- [Definition 1.13](../section-1/section-1-4/011-definition-1-13.md)
+- [Definition 8.1](../section-8/172-definition-8-1.md)
+- [Definition 9.1](187-definition-9-1.md)
+
+## Proof depends on
+
+- [Proposition 8.10](../section-8/181-proposition-8-10.md)
+- [Proposition 8.11](../section-8/182-proposition-8-11.md)
+- [Lemma 9.4](188-lemma-9-4.md)
+- [Corollary 9.5](189-corollary-9-5.md)
 
 ## Sources
 

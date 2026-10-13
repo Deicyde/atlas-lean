@@ -12,6 +12,7 @@ Let $\mathfrak{m}$ be a modulus for a number field $K$. The ray class group for 
 ## Depends on
 
 - [Definition 21.2](404-definition-21-2.md)
+- [Definition 7.23](../../part-01/section-7/section-7-4/171-definition-7-23.md)
 
 ## Sources
 

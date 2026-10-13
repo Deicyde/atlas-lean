@@ -13,7 +13,7 @@ Suppose $G=\mathbb{F}_{101}^{+}$. Then $\log_{3} 37=46$, since $46 \cdot 3
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.2](../section-3/section-3-1/006-definition-3-2.md)
 
 ## Sources
 

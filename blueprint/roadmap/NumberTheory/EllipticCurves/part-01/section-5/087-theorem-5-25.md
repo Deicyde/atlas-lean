@@ -12,11 +12,14 @@ Let $E/k$ be an elliptic curve. The multiplication-by-$n$ map $[n]: E
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.31](../section-4/section-4-5/052-definition-4-31.md)
 
 ## Proof depends on
 
 - [Lemma 5.24](086-lemma-5-24.md)
+- [Theorem 5.8](../chapter-5/075-theorem-5-8.md)
+- [Lemma 5.22](084-lemma-5-22.md)
+- [Corollary 5.23](085-corollary-5-23.md)
 
 ## Sources
 

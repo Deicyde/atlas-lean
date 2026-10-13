@@ -10,7 +10,19 @@ Let $L / K$ be an extension of number fields with cyclic Galois group $G = \lang
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.1](../section-23/section-23-1/446-definition-23-1.md)
+- [Definition 23.38](../section-23/section-23-6/480-definition-23-38.md)
+- [Definition 24.5](517-definition-24-5.md)
+
+## Proof depends on
+
+- [Definition 23.25](../section-23/section-23-4/468-definition-23-25.md)
+- [Corollary 23.41](../section-23/section-23-6/482-corollary-23-41.md)
+- [Corollary 23.42](../section-23/section-23-6/483-corollary-23-42.md)
+- [Lemma 23.43](../section-23/section-23-6/484-lemma-23-43.md)
+- [Corollary 23.46](../section-23/section-23-6/486-corollary-23-46.md)
+- [Corollary 23.48](../section-23/section-23/488-corollary-23-48.md)
+- [Theorem 24.6 (Herbrand unit theorem)](518-herbrand-unit-theorem.md)
 
 ## Sources
 

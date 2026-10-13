@@ -11,10 +11,13 @@ Write $a, b \in \mathbb{Q}_{2}^{\times}$ as $a=2^{\alpha} u$ and $b=2^{\beta} v$
 ## Depends on
 
 - [Definition 10.1](066-definition-10-1.md)
+- [Definition 4.14](../section-4/024-definition-4-14.md)
+- [Definition 5.1](../section-5/029-definition-5-1.md)
 
 ## Proof depends on
 
 - [Corollary 10.3](068-corollary-10-3.md)
+- [Lemma 10.8](072-lemma-10-8.md)
 
 ## Sources
 

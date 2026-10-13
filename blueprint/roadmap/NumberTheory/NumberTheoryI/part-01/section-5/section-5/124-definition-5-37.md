@@ -11,7 +11,10 @@ Assume $AKLB$, let $\mathfrak{p}$ be a prime of $A$. - $L/K$ is totally ramified
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.19](../../section-1/section-1-6/015-definition-1-19.md)
+- [Definition 2.10](../../section-2/027-definition-2-10.md)
+- [Definition 4.3](../../section-4/section-4-1/part-01/058-definition-4-3.md)
+- [Definition 4.29](../../section-4/section-4-2/082-definition-4-29.md)
 
 ## Sources
 

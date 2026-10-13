@@ -11,7 +11,9 @@ Let $A$ and $M$ be $R$-modules. $\operatorname{Ext}_{R}^{n}(M, A)$ is the abelia
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.53](../section-23-7-subsection-23-7-1/493-definition-23-53.md)
+- [Definition 23.56](../section-23-7-subsection-23-7-2/496-definition-23-56.md)
+- [Theorem 23.70](506-theorem-23-70.md)
 
 ## Sources
 

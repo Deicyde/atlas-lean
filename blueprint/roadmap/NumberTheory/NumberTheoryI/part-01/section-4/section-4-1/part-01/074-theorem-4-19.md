@@ -12,7 +12,11 @@ A field $K$ of characteristic $p > 0$ is perfect if and only if $K = K^p$, that 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.18](073-definition-4-18.md)
+
+## Proof depends on
+
+- [Corollary 4.5](060-corollary-4-5.md)
 
 ## Sources
 

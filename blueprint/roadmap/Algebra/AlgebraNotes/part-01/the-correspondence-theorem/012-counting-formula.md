@@ -14,6 +14,10 @@ Let $[G:H]$ be the number of left cosets of $H$, which is called the **index** o
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition (Isomorphisms and Cosets, Cosets)](../isomorphisms-and-cosets/006-proposition.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), The Correspondence Theorem, Review](../../../../../sources/v1/AlgebraNotes.md)

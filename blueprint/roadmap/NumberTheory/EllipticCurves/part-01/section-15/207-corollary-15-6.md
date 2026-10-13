@@ -14,6 +14,7 @@ Two lattices $L$ and $L^{\prime}$ are homothetic if and only if the
 
 - [Definition 14.1](../section-14/section-14-1/174-definition-14-1.md)
 - [Definition 15.4](205-definition-15-4.md)
+- [Definition 4.22](../section-4/section-4-2/045-definition-4-22.md)
 
 ## Proof depends on
 

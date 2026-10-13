@@ -14,7 +14,8 @@ A modular form $f$ is a weak modular form that is holomorphic at the cusps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.4](../../../part-01/section-14/section-14-1/176-definition-14-4.md)
+- [Definition 24.3](323-definition-24-3.md)
 
 ## Sources
 

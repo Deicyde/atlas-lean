@@ -13,7 +13,8 @@ A morphism from an elliptic curve $E/k$ to itself that fixes the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.14](../section-4-1/040-definition-4-14.md)
+- [Definition 4.22](045-definition-4-22.md)
 
 ## Proof depends on
 

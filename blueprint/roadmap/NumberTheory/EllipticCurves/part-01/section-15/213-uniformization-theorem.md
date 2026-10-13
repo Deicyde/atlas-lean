@@ -17,6 +17,8 @@ For every elliptic curve $E/\mathbb{C}$ there exists a lattice $L$ such that
 
 - [Lemma 14.33](../section-14/section-14-5/201-lemma-14-33.md)
 - [Theorem 13.13](../section-13/168-theorem-13-13.md)
+- [Definition 15.7](208-definition-15-7.md)
+- [Theorem 15.11](212-theorem-15-11.md)
 
 ## Sources
 

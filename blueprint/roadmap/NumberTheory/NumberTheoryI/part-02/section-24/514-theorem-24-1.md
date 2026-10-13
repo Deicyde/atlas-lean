@@ -12,7 +12,13 @@ Let $L / K$ be a cyclic Galois extension with Galois group $G \coloneqq \operato
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.46](../../part-01/section-4/section-4-3/091-definition-4-46.md)
+- [Definition 23.31](../section-23/section-23-5/474-definition-23-31.md)
+
+## Proof depends on
+
+- [Theorem 5.20](../../part-01/section-5/section-5-2/113-theorem-5-20.md)
+- [Definition 23.3](../section-23/section-23-1/448-definition-23-3.md)
 
 ## Sources
 

@@ -12,6 +12,7 @@ The geodesic curvature of a regular curve $\gamma$ on a surface $M \subset \math
 ## Depends on
 
 - [Definition 12.1](../../part-01/chapter-2/040-definition-12-1.md)
+- [Definition 26.2](../../part-01/lecture-26/083-definition-26-2.md)
 
 ## Proof depends on
 

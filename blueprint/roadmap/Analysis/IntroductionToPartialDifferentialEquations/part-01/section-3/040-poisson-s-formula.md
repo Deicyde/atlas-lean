@@ -12,6 +12,10 @@ Let $B_{R}(p) \subset \mathbb{R}^{3}$ be a ball of radius $R$ centered at $p=(p^
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 2.2 (Representation formula for solutions to the boundary value Poisson equation)](../section-2/039-representation-formula-for-solutions-to.md)
+
 ## Sources
 
 - [MIT 18.152 Introduction to Partial Differential Equations (Fall 2011), Section 3](../../../../../sources/v1/IntroductionToPartialDifferentialEquations.md)

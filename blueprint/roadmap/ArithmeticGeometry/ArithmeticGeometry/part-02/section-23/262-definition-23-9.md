@@ -11,7 +11,7 @@ Equation (1) in Theorem 23.3, namely $y^{2} + a_{1}xy + a_{3}y = x^{3} + a_{2}x^
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 23.3](259-theorem-23-3.md)
 
 ## Sources
 

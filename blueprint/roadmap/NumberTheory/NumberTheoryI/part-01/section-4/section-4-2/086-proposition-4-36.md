@@ -12,7 +12,12 @@ Suppose $L$ is a finite étale $K$-algebra and $K^{\prime} / K$ is any field ext
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.29](082-definition-4-29.md)
+- [Definition 4.34](085-definition-4-34.md)
+
+## Proof depends on
+
+- [Theorem 4.12](../section-4-1/part-01/067-theorem-4-12.md)
 
 ## Sources
 

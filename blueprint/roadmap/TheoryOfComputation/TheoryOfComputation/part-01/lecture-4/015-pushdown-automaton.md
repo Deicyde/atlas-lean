@@ -11,7 +11,7 @@ A Pushdown Automaton (PDA) is a 6-tuple $(Q, \Sigma, \Gamma, \delta, q_0, F)$ wh
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Nondeterministic Finite Automaton)](../lecture-2/009-nondeterministic-finite-automaton.md)
 
 ## Sources
 

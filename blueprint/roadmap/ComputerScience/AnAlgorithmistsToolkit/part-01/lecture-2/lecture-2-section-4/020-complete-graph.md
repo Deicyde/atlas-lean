@@ -12,7 +12,12 @@ The Laplacian for the complete graph $K_n$ on $n$ vertices has eigenvalue $0$ wi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 1, Section 2)](../../lecture-1/001-definition-1.md)
+- [Definition 3 (Lecture 1, Section 2)](../../lecture-1/003-definition-3.md)
+
+## Proof depends on
+
+- [Corollary 13](../lecture-2-section-3-5/018-corollary-13.md)
 
 ## Sources
 

@@ -12,6 +12,8 @@ A morphism is a regular rational map. A rational map is dominant if its image is
 ## Depends on
 
 - [Definition 15.14](142-definition-15-14.md)
+- [Definition 14.3](../section-14/123-definition-14-3.md)
+- [Definition 15.4](133-definition-15-4.md)
 
 ## Sources
 

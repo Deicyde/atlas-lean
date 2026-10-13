@@ -12,7 +12,8 @@ Let $T: V \rightarrow V$ be a linear transformation of $V \simeq \mathbb{R}^{n}$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.12](../../section-13/272-definition-13-12.md)
+- [Definition 13.13](../../section-13/273-definition-13-13.md)
 
 ## Sources
 

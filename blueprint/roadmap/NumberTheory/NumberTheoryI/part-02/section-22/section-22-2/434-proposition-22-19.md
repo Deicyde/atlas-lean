@@ -21,6 +21,8 @@ Let $\chi$ be a ray class character of modulus $\mathfrak{m}$ for a number field
 - [Lemma 21.7](../../section-21/406-lemma-21-7.md)
 - [Theorem 21.8](../../section-21/407-theorem-21-8.md)
 - [Lemma 19.9](../../../part-01/section-19/389-lemma-19-9.md)
+- [Theorem 16.3 (Analytic continuation I)](../../../part-01/section-16/section-16-1/315-analytic-continuation-i.md)
+- [Corollary 18.38](../../../part-01/section-18/section-18-6/381-corollary-18-38.md)
 
 ## Sources
 

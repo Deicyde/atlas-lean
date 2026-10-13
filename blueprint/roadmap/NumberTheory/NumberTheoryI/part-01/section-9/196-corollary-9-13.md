@@ -12,7 +12,7 @@ Let $R$ be a ring, $f \in R[x]$, and $a \in R$. Then $f(a)=f'(a)=0$ if and only 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 9.10](194-definition-9-10.md)
 
 ## Sources
 

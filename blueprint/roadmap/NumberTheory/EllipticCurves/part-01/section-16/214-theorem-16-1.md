@@ -15,6 +15,11 @@ Let $\varphi: \mathbb{C}/L_1 \rightarrow \mathbb{C}/L_2$ be a holomorphic map
 ## Depends on
 
 - [Definition 14.1](../section-14/section-14-1/174-definition-14-1.md)
+- [Definition 14.4](../section-14/section-14-1/176-definition-14-4.md)
+
+## Proof depends on
+
+- [Definition 14.8](../section-14/section-14-1/180-definition-14-8.md)
 
 ## Sources
 

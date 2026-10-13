@@ -11,7 +11,8 @@ For any $G$-modules $A$ and $B$ we have $H^{n}(G, A \oplus B) \simeq H^{n}(G, A)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.1](../section-23-1/446-definition-23-1.md)
+- [Definition 23.4](../section-23-1/449-definition-23-4.md)
 
 ## Sources
 

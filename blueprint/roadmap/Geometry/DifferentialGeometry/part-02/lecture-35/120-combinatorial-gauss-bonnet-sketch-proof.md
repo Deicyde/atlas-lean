@@ -12,7 +12,7 @@ $\sum_{k} \kappa_{\text{gauss}}^{\text{comb}}(V_{k}) = 2\pi \chi(M)$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 35.3](119-definition-35-3.md)
 
 ## Sources
 

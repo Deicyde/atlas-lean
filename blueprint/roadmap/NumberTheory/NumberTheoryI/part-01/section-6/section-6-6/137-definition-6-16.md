@@ -9,7 +9,7 @@ Let $S/R$ be an extension of commutative rings. The conductor of $R$ in $S$ is t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.19](../../section-1/section-1-6/015-definition-1-19.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The maximal ideals in $\mathbb{C}[x_1, \cdots, x_n]$ are exactly the kernels of 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 9: Building New Rings, Section 'Polynomial Rings')](../lecture-9/100-definition.md)
 
 ## Sources
 

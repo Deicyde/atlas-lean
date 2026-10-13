@@ -14,6 +14,10 @@ Let $V^+$ be an anisotropic quadratic space over $k$. Suppose that $k$ is a comp
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Section 18.3)](../section-18/070-theorem.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 20.3](../../../../sources/v1/Buildings.md)

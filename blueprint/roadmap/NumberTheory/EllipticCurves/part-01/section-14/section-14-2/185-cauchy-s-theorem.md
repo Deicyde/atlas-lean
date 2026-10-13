@@ -13,6 +13,7 @@ Let $f$ be a function that is holomorphic on an open set containing a closed
 ## Depends on
 
 - [Definition 14.11](182-definition-14-11.md)
+- [Definition 14.4](../section-14-1/176-definition-14-4.md)
 
 ## Proof depends on
 

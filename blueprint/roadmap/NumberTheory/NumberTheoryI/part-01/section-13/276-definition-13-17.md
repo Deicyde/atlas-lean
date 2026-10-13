@@ -11,7 +11,10 @@ Let $K$ be a global field. For each place $v$ of $K$ the normalized absolute val
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.3](../section-8/174-definition-8-3.md)
+- [Definition 13.1](264-definition-13-1.md)
+- [Definition 13.13](273-definition-13-13.md)
+- [Theorem 13.14 (Weil)](274-weil.md)
 
 ## Sources
 

@@ -11,6 +11,7 @@ Let $E/k$ be an elliptic curve. For any positive integer $n$, the number of $n$-
 ## Depends on
 
 - [Definition 24.7](280-definition-24-7.md)
+- [Definition 23.14](../section-23/266-definition-23-14.md)
 
 ## Proof depends on
 

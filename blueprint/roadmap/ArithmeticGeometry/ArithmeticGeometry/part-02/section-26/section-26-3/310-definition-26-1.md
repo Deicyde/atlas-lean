@@ -11,7 +11,8 @@ Two varieties defined over a field $k$ that are related by an isomorphism define
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.6](../../../part-01/section-14/125-definition-14-6.md)
+- [Definition 14.11](../../../part-01/lecture-14/129-definition-14-11.md)
 
 ## Sources
 

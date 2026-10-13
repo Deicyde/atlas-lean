@@ -11,7 +11,7 @@ Let $A$ be a commutative ring and $M$ an $A$-module. A (bilinear) pairing on $M$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.1](097-definition-5-1.md)
 
 ## Sources
 

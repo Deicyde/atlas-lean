@@ -14,6 +14,10 @@ $p' = \operatorname{pr}_{\alpha}(s - r')$.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition 3 (Linearity)](079-linearity.md)
+
 ## Sources
 
 - [MIT 18.409 An Algorithmist's Toolkit (Fall 2009), Lecture 8, Section 3.3](../../../../../sources/v1/AnAlgorithmistsToolkit.md)

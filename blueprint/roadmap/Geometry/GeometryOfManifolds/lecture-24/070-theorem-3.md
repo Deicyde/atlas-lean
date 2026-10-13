@@ -10,7 +10,8 @@ Every compact 4-manifold admits spin$^{c}$ structures classified up to 2-torsion
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Symplectic Geometry, Lecture 10, Section 2 (Complex Vector Bundles and Chern Classes))](../symplectic-geometry/symplectic-geometry-lecture-10-section-2-complex/021-definition-1.md)
+- [Definition 2 (Symplectic Geometry, Lecture 10, Section 2 (Complex Vector Bundles and Chern Classes))](../symplectic-geometry/symplectic-geometry-lecture-10-section-2-complex/023-definition-2.md)
 
 ## Sources
 

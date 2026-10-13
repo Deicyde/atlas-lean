@@ -13,6 +13,14 @@ Let $\alpha$ be an endomorphism of an elliptic curve. Both $\alpha$ and its
 ## Depends on
 
 - [Definition 6.13](098-definition-6-13.md)
+- [Definition 4.23](../section-4/section-4-2/046-definition-4-23.md)
+- [Definition 4.31](../section-4/section-4-5/052-definition-4-31.md)
+- [Definition 6.8](../chapter-6/094-definition-6-8.md)
+- [Definition 6.17](100-definition-6-17.md)
+
+## Proof depends on
+
+- [Theorem 6.7](../chapter-6/093-theorem-6-7.md)
 
 ## Sources
 

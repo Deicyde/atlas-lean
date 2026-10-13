@@ -11,7 +11,7 @@ Fix some $s \in S$ and let $H \coloneqq \operatorname{Stab}(s).$ Then there exis
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Group Actions, The Counting Formula)](036-definition.md)
 
 ## Sources
 

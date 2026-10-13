@@ -11,7 +11,7 @@ Let $A$ be a $G$-module and let $n \in \mathbb{Z}_{\geq 0}$. The group of $n$-co
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.1](446-definition-23-1.md)
 
 ## Sources
 

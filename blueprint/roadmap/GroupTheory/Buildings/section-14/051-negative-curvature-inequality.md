@@ -12,7 +12,7 @@ Let $X$ be an affine building with canonical metric $d = d_X$. For $x, y, z \in 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section 13.7)](../section-13/047-definition.md)
 
 ## Proof depends on
 

@@ -12,7 +12,7 @@ If $C/B/A$ is a tower of ring extensions in which $B$ is integral over $A$ and $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.17](013-definition-1-17.md)
 
 ## Sources
 

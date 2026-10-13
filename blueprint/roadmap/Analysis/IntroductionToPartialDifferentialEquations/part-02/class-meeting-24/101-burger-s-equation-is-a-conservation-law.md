@@ -12,7 +12,7 @@ Let $T \geq 0$, and let $u(t,x)$ be a $C^{1}$ solution to on $S_{T} \coloneqq [0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7.1.2 ($L^{p}$ norms)](../../part-01/class-meeting-1/008-l-p-norms.md)
 
 ## Sources
 

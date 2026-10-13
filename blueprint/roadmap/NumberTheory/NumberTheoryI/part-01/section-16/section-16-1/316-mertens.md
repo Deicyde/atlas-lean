@@ -12,7 +12,11 @@ For $x, y \in \mathbb{R}$ with $x>1$ we have $\left|\zeta(x)^{3} \zeta(x+i y)^{4
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 16.1](313-definition-16-1.md)
+
+## Proof depends on
+
+- [Theorem 16.2 (Euler product)](314-euler-product.md)
 
 ## Sources
 

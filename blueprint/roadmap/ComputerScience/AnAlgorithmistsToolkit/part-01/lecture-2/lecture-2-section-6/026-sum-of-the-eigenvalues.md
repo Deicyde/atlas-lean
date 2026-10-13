@@ -12,7 +12,7 @@ Given an $n$-vertex graph $G$ with degrees $d_i$, where $d_{\max} = \max_i d_i$,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 1, Section 2)](../../lecture-1/001-definition-1.md)
 
 ## Sources
 

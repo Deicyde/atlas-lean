@@ -11,6 +11,7 @@ Moving frames with singularities always exist. Moreover, for any choice of such 
 ## Depends on
 
 - [Definition 33.4](../../part-01/lecture-33/108-definition-33-4.md)
+- [Definition 34.3](112-definition-34-3.md)
 
 ## Sources
 

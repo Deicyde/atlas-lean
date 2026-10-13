@@ -10,7 +10,8 @@ Let $E/k$ be an elliptic curve. The Tate-Shafarevich group $\amalg(E)$ is the ke
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7.13](../../../part-01/section-7/046-definition-7-13.md)
+- [Definition 23.14](../../section-23/266-definition-23-14.md)
 
 ## Proof depends on
 

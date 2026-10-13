@@ -16,7 +16,8 @@ For any nonzero complex function $f(z)$ that is meromorphic on an open
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.5](177-definition-14-5.md)
+- [Definition 14.6](178-definition-14-6.md)
 
 ## Sources
 

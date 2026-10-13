@@ -11,7 +11,13 @@ The completion $\hat{k}$ of $k$ is complete. Moreover it is the smallest complet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7.11](044-definition-7-11.md)
+- [Definition 7.13](046-definition-7-13.md)
+
+## Proof depends on
+
+- [Lemma 7.8](041-lemma-7-8.md)
+- [Corollary 7.16](049-corollary-7-16.md)
 
 ## Sources
 

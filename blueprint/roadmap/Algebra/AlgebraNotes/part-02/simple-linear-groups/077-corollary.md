@@ -15,6 +15,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Theorem (Section: Simple Linear Groups, Subsection: The Special Unitary Group)](076-theorem.md)
+- [Theorem (Correspondence Theorem)](../../part-01/normal-subgroups-and-quotient-groups/015-correspondence-theorem.md)
 
 ## Sources
 

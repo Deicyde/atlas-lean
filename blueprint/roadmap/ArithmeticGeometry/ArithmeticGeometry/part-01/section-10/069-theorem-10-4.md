@@ -9,7 +9,12 @@ $(a, b)_{\infty}=-1$ if and only if $a, b<0$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 10.1](066-definition-10-1.md)
+
+## Proof depends on
+
+- [Lemma 10.2](067-lemma-10-2.md)
+- [Corollary 10.3](068-corollary-10-3.md)
 
 ## Sources
 

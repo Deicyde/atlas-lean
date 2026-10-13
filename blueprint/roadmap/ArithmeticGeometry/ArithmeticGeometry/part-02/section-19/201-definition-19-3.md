@@ -11,7 +11,8 @@ The degree of a morphism of curves $\phi: C_1 \rightarrow C_2$ is the degree of 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 19.1](199-definition-19-1.md)
+- [Theorem 19.2](200-theorem-19-2.md)
 
 ## Sources
 

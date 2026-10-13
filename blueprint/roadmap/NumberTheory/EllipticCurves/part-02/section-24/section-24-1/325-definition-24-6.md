@@ -12,7 +12,7 @@ A modular form is a cusp form if it vanishes at all the cusps. Equivalently,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 24.5](324-definition-24-5.md)
 
 ## Sources
 

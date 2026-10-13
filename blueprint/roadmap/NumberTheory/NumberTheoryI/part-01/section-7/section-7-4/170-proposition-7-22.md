@@ -14,6 +14,12 @@ Assume $AKLBG$ with finite residue fields and let $\mathfrak{q} \mid \mathfrak{p
 
 - [Definition 7.16](../section-7-3/164-definition-7-16.md)
 - [Proposition 7.17](../section-7-3/165-proposition-7-17.md)
+- [Definition 5.37](../../section-5/section-5/124-definition-5-37.md)
+- [Definition 7.20](168-definition-7-20.md)
+
+## Proof depends on
+
+- [Proposition 7.13](../section-7-2/161-proposition-7-13.md)
 
 ## Sources
 

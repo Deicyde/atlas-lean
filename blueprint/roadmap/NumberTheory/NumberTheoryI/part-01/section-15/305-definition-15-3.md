@@ -11,7 +11,14 @@ Let $K$ be a global field. The size of an Arakelov divisor $c$ is $\|c\| \colone
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.13](../section-2/029-definition-2-13.md)
+- [Definition 13.17](../section-13/276-definition-13-17.md)
+- [Definition 13.22](../section-13/279-definition-13-22.md)
+- [Definition 15.1](304-definition-15-1.md)
+
+## Proof depends on
+
+- [Theorem 13.21 (Product Formula)](../section-13/278-product-formula.md)
 
 ## Sources
 

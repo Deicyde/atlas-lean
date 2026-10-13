@@ -20,7 +20,7 @@ Let $n$ be a positive integer and let $k$ be an algebraically closed field
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.13](../section-23-2/301-definition-23-13.md)
 
 ## Proof depends on
 

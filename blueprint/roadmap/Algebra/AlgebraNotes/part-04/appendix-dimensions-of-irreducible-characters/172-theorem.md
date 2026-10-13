@@ -12,12 +12,15 @@ If $\rho : G \to \operatorname{GL}(V)$ is an irreducible representation of dimen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 2, Section: Irreducible Representations)](../../part-02/lecture-2/085-definition.md)
 
 ## Proof depends on
 
 - [Definition (Section: Span of Irreducible Characters)](../../part-03/span-of-irreducible-characters/099-definition.md)
 - [Lemma (Section: Span of Irreducible Characters)](../../part-03/span-of-irreducible-characters/097-lemma.md)
+- [Proposition (Lecture 4, Section: More on Characters)](../../part-02/lecture-4/089-proposition.md)
+- [Theorem (Main Theorem)](../../part-02/lecture-4/091-main-theorem.md)
+- [Theorem (Schur's Lemma)](../../part-03/orthonormality-of-characters/095-schur-s-lemma.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The total curvature of a closed curve is defined to be $\kappa^{\text{tot}}(c) =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.1](025-definition-8-1.md)
 
 ## Proof depends on
 

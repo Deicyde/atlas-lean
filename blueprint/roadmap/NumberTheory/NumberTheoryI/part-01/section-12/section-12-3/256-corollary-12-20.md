@@ -12,7 +12,12 @@ Assume $AKLB$. Only finitely many primes of $A$ (or $B$) ramify.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.37](../../section-5/section-5/124-definition-5-37.md)
+
+## Proof depends on
+
+- [Corollary 3.13](../../section-3/048-corollary-3-13.md)
+- [Theorem 12.19](255-theorem-12-19.md)
 
 ## Sources
 

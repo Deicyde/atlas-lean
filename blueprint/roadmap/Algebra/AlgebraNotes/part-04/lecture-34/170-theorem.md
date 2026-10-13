@@ -11,6 +11,14 @@ $\mathbb{C}$ is the only finite extension of $\mathbb{R}$.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition (Lecture 29, Subsection: The Galois Group)](../lecture-29/157-definition.md)
+- [Proposition (Lecture 29, Subsection: The Galois Group)](../lecture-29/160-proposition.md)
+- [Theorem (Lecture 30)](../lecture-30/163-theorem.md)
+- [Lemma (Lecture 34, Subsection: Main Theorem of Algebra)](167-lemma.md)
+- [Proposition (Lecture 34, Subsection: Main Theorem of Algebra)](168-proposition.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Lecture 34, Subsection: Main Theorem of Algebra](../../../../../sources/v1/AlgebraNotes.md)

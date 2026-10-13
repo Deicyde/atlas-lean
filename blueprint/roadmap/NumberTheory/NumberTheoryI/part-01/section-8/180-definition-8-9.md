@@ -11,7 +11,7 @@ Let $(X_i, f_{ij})$ be an inverse system in a concrete category with products. T
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.8](179-definition-8-8.md)
 
 ## Sources
 

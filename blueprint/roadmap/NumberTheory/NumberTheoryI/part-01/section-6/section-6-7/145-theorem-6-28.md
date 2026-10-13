@@ -10,7 +10,11 @@ Let $\mathcal{O}$ be an order with integral closure $B$ and conductor $\mathfrak
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10](../../section-1/section-1-4/008-definition-1-10.md)
+- [Definition 1.19](../../section-1/section-1-6/015-definition-1-19.md)
+- [Definition 2.19](../../section-2/034-definition-2-19.md)
+- [Definition 6.16](../section-6-6/137-definition-6-16.md)
+- [Definition 6.19](139-definition-6-19.md)
 
 ## Sources
 

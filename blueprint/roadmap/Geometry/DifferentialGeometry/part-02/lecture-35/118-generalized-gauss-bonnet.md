@@ -11,6 +11,8 @@ In the same situation as above, $\kappa_{\text{gauss}}^{\text{tot}} = \chi(M) \o
 ## Depends on
 
 - [Definition 33.4](../../part-01/lecture-33/108-definition-33-4.md)
+- [Theorem 34.4 (no proof)](../lecture-34/113-no-proof.md)
+- [Theorem 35.1 (Hopf; no proof)](117-hopf-no-proof.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ Let $\Omega \subset \mathbb{R}^{n}$ be a smooth, bounded domain. Then under Diri
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 7.1 (Divergence Theorem)](../class-meeting-1/011-divergence-theorem.md)
+
 ## Sources
 
 - [MIT 18.152 Introduction to Partial Differential Equations (Fall 2011), Class Meeting #6, Section 3 (Uniqueness via the Energy Method)](../../../../../sources/v1/IntroductionToPartialDifferentialEquations.md)

@@ -12,7 +12,15 @@ The completion $\hat{\mathbb{Q}}$ of $\mathbb{Q}$ with respect to the $p$-adic a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.1](../section-5/029-definition-5-1.md)
+- [Definition 7.13](../section-7/046-definition-7-13.md)
+
+## Proof depends on
+
+- [Definition 4.3](../section-4/015-definition-4-3.md)
+- [Definition 7.9](../section-7/042-definition-7-9.md)
+- [Definition 7.11](../section-7/044-definition-7-11.md)
+- [Corollary 7.17](../section-7/050-corollary-7-17.md)
 
 ## Sources
 

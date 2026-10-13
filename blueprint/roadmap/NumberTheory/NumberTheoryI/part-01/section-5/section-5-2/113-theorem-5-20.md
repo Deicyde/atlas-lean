@@ -10,7 +10,14 @@ Let $L$ be a commutative $K$-algebra of finite dimension. The trace pairing $\la
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.29](../../section-4/section-4-2/082-definition-4-29.md)
+- [Definition 5.6](../section-5-1/101-definition-5-6.md)
+- [Definition 5.19](112-definition-5-19.md)
+
+## Proof depends on
+
+- [Theorem 4.40](../../section-4/section-4-2/088-theorem-4-40.md)
+- [Lemma 4.42](../../section-4/section-4-2/089-lemma-4-42.md)
 
 ## Sources
 

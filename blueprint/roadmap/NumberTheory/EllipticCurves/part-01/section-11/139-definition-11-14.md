@@ -14,7 +14,7 @@ A primality certificate for $p$ is a tuple of integers $(p, A, B, x_1, y_1,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 11.12](137-definition-11-12.md)
 
 ## Sources
 

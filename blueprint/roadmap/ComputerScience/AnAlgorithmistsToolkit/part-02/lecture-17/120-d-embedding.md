@@ -11,7 +11,7 @@ Suppose that $X = \{x_1, x_2, \ldots, x_n\}$ is a finite set, $d$ is a metric on
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2 (c-Lipschitz)](116-c-lipschitz.md)
 
 ## Sources
 

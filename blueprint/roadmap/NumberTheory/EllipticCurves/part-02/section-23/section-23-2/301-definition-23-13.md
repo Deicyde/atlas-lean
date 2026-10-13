@@ -41,7 +41,12 @@ To each point $P \in C(\bar{k})$ we associate a formal symbol $[P]$. The
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.2](../../../part-01/section-4/section-4-1/036-definition-4-2.md)
+- [Definition 23.4](../section-23-1/297-definition-23-4.md)
+
+## Proof depends on
+
+- [Corollary 23.10](../section-23-1/300-corollary-23-10.md)
 
 ## Sources
 

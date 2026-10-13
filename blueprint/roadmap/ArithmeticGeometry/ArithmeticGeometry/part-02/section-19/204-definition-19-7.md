@@ -9,7 +9,9 @@ Let $F/k$ be a function field with $k=\bar{k}$. A divisor of $F$ is a formal sum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.18](../../part-01/section-4/028-definition-4-18.md)
+- [Definition 18.9](../section-18/193-definition-18-9.md)
+- [Definition 19.1](199-definition-19-1.md)
 
 ## Sources
 

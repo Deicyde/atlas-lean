@@ -12,6 +12,9 @@ If $X$ is a variety such that for every subvariety $Z \subseteq X$ and valuation
 ## Depends on
 
 - [Definition 16.10](../section-16-2/151-definition-16-10.md)
+- [Definition 16.15](../section-16-3/155-definition-16-15.md)
+- [Definition 16.16](../section-16-3/156-definition-16-16.md)
+- [Definition 16.27](166-definition-16-27.md)
 
 ## Proof depends on
 

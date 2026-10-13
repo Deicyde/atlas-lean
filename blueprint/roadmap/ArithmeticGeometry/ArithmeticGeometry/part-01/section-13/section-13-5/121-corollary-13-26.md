@@ -10,7 +10,14 @@ The dimension, coordinate ring, and function field of an affine variety are equa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.2](../section-13-1/101-definition-13-2.md)
+- [Definition 13.3](../section-13-1/102-definition-13-3.md)
+- [Definition 13.4](../section-13-1/103-definition-13-4.md)
+- [Definition 13.5](../section-13-1-1/104-definition-13-5.md)
+- [Definition 13.18](../section-13-4/115-definition-13-18.md)
+- [Definition 13.19](../section-13-4/116-definition-13-19.md)
+- [Definition 13.20](../section-13-4/117-definition-13-20.md)
+- [Definition 13.21](118-definition-13-21.md)
 
 ## Proof depends on
 

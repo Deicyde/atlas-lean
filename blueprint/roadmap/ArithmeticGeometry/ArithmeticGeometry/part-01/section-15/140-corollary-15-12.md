@@ -14,6 +14,10 @@ Let $X$ and $Y$ be affine varieties defined over $k$. If $\varphi \colon X \righ
 - [Definition 13.2](../section-13/section-13-1/101-definition-13-2.md)
 - [Definition 15.4](133-definition-15-4.md)
 - [Definition 13.1](../section-13/section-13-1/100-definition-13-1.md)
+- [Definition 13.3](../section-13/section-13-1/102-definition-13-3.md)
+- [Definition 13.4](../section-13/section-13-1/103-definition-13-4.md)
+- [Definition 15.7](135-definition-15-7.md)
+- [Theorem 15.8](136-theorem-15-8.md)
 
 ## Proof depends on
 

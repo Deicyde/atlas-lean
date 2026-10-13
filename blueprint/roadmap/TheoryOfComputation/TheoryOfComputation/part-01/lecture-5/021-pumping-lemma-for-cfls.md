@@ -11,7 +11,11 @@ For every CFL $A$, there is a $p$ such that if $s \in A$ and $|s| \geq p$ then $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Context Free Language)](../lecture-4/014-context-free-language.md)
+
+## Proof depends on
+
+- [Definition (Context Free Grammar)](../lecture-4/013-context-free-grammar.md)
 
 ## Sources
 

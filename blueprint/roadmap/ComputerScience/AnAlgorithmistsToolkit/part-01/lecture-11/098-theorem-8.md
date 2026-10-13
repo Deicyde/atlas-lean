@@ -12,6 +12,10 @@ Let $K$ be an origin-symmetric convex body. Then $K$ contains a unique ellipsoid
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 1 (Lecture 11, Section 3)](094-definition-1.md)
+
 ## Sources
 
 - [MIT 18.409 An Algorithmist's Toolkit (Fall 2009), Lecture 11, Section 6](../../../../../sources/v1/AnAlgorithmistsToolkit.md)

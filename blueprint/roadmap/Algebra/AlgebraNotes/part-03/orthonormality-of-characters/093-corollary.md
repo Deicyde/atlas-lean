@@ -10,7 +10,12 @@ Let $\rho: G \to \operatorname{GL}(V)$ be a representation. Let $\rho_1$, \ldots
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 2, Section: Irreducible Representations)](../../part-02/lecture-2/085-definition.md)
+- [Definition (Section: Characters and Schur's Lemma, Subsection: Schur's Lemma)](../../part-02/characters-and-schur-s-lemma/092-definition.md)
+
+## Proof depends on
+
+- [Theorem (Maschke's Theorem)](../../part-02/lecture-2/088-maschke-s-theorem.md)
 
 ## Sources
 

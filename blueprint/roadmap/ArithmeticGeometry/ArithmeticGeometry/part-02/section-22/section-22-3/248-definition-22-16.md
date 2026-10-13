@@ -11,7 +11,8 @@ For a nonzero Weil differential $\omega \in \Omega$ we define the divisor of $\o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 22.12](244-definition-22-12.md)
+- [Lemma 22.15](247-lemma-22-15.md)
 
 ## Sources
 

@@ -10,11 +10,13 @@ Given a graph $G$, $\varphi(G)^2 / (2 d_{\max}) \leq \lambda_2 \leq 2\varphi(G)$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 1, Section 2)](../lecture-1/001-definition-1.md)
 
 ## Proof depends on
 
 - [Definition 3 (Cut Ratio)](031-cut-ratio.md)
+- [Lemma 15 (Complete graph)](../lecture-2/lecture-2-section-4/020-complete-graph.md)
+- [Corollary 24 (Rayleigh Quotient)](../section-7/029-rayleigh-quotient.md)
 
 ## Sources
 

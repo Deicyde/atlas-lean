@@ -11,7 +11,7 @@ A null frame is a basis for $\mathbb{R}^{1+n}$ consisting of vectors $\{L, \unde
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.0.1 (Class Meeting #12, Section 2)](049-definition-2-0-1.md)
 
 ## Sources
 

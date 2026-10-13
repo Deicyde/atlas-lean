@@ -10,7 +10,9 @@ Let $A$ be a Dedekind domain with fraction field $K$, let $V$ be an $n$-dimensio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.10](../../section-2/027-definition-2-10.md)
+- [Definition 2.17](../../section-2/032-definition-2-17.md)
+- [Definition 5.9](../../section-5/section-5/103-definition-5-9.md)
 
 ## Sources
 

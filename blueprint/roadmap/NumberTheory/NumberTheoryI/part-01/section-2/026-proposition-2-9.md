@@ -12,7 +12,15 @@ Let $A$ be a noetherian domain. The following are equivalent: (i) For every nonz
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10](../section-1/section-1-4/008-definition-1-10.md)
+- [Definition 1.19](../section-1/section-1-6/015-definition-1-19.md)
+
+## Proof depends on
+
+- [Theorem 1.16](../section-1/section-1-5/012-theorem-1-16.md)
+- [Definition 1.17](../section-1/section-1-6/013-definition-1-17.md)
+- [Theorem 2.1](023-theorem-2-1.md)
+- [Corollary 2.7](025-corollary-2-7.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ of $j$-invariants of elliptic curves $E/\mathbb{F}_{q}$ with CM by $\mathcal{O}$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.4](../../part-01/section-3/section-3-1/007-definition-3-4.md)
+- [Definition 6.13](../../part-01/section-6/098-definition-6-13.md)
+- [Definition 12.22](../../part-01/section-12/155-definition-12-22.md)
+- [Definition 13.11](../../part-01/section-13/166-definition-13-11.md)
+- [Definition 17.16](../../part-01/section-17/237-definition-17-16.md)
+- [Definition 21.3](277-definition-21-3.md)
 
 ## Proof depends on
 

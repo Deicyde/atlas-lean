@@ -11,7 +11,13 @@ For any positive integers $B, d$, and $n$, the set $\{P \in \mathbb{P}^{n}(k): h
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.11](../../part-01/section-13/section-13-2/110-definition-13-11.md)
+- [Definition 25.11](299-definition-25-11.md)
+
+## Proof depends on
+
+- [Definition 25.9](297-definition-25-9.md)
+- [Lemma 25.16](303-lemma-25-16.md)
 
 ## Sources
 

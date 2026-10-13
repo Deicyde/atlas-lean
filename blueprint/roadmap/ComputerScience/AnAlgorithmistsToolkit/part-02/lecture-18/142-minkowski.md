@@ -12,7 +12,13 @@ Let $\Lambda$ be a full-rank lattice of rank $n$. Any centrally-symmetric convex
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2 (Lecture 10, Section 2)](../../part-01/lecture-10/093-definition-2.md)
+- [Definition (Lattice)](130-lattice.md)
+- [Definition (Determinant of lattice)](137-determinant-of-lattice.md)
+
+## Proof depends on
+
+- [Theorem (Blichfield)](141-blichfield.md)
 
 ## Sources
 

@@ -14,6 +14,7 @@ Let $V \subseteq \mathbb{A}^{n}$ be a variety, and let $f_{1}, \ldots, f_{m} \in
 - [Definition 12.7](../../section-12/087-definition-12-7.md)
 - [Definition 13.3](../section-13-1/102-definition-13-3.md)
 - [Definition 12.12](../../section-12/091-definition-12-12.md)
+- [Definition 13.5](../section-13-1-1/104-definition-13-5.md)
 
 ## Proof depends on
 

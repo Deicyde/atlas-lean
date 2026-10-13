@@ -12,7 +12,7 @@ Let $G = (V, E)$ be a graph for which we wish to bound $\Phi(G)$. For every $v, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7 (Conductance)](../section-6/043-conductance.md)
 
 ## Sources
 

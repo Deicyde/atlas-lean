@@ -12,7 +12,11 @@ Let $I$ be a nonzero ideal in a Dedekind domain $A$ and let $a \in I$ be nonzero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.10](../section-2/027-definition-2-10.md)
+
+## Proof depends on
+
+- [Lemma 3.16](050-lemma-3-16.md)
 
 ## Sources
 

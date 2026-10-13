@@ -12,7 +12,7 @@ Every fractional ideal of $A$ can be written in the form $\frac{1}{a} I$, for so
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.13](029-definition-2-13.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Given a graph $G$ with $n$ vertices and $m$ edges, it is possible to obtain a gr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4 (Lecture 9, Section 2.1)](../../part-01/lecture-9/087-definition-4.md)
 
 ## Sources
 

@@ -12,6 +12,12 @@ For all $\rho \in (0,1)$, $\delta > 0$ there exist $d \in \mathbb{N}$, $\tau > 0
 
 - [Definition 2.2 (Lecture 4, Section 2)](../lecture-4/007-definition-2-2.md)
 - [Definition 1.1 (Noise Stability)](../section-1/052-noise-stability.md)
+- [Definition 2.3](../section-2/058-definition-2-3.md)
+
+## Proof depends on
+
+- [Claim 1.3](../section-1/054-claim-1-3.md)
+- [Theorem 6.4](../section-6/087-theorem-6-4.md)
 
 ## Sources
 

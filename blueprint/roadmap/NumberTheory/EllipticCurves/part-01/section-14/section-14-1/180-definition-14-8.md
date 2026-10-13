@@ -14,6 +14,7 @@ An elliptic function for a lattice $L$ is a complex function $f(z)$ such that
 ## Depends on
 
 - [Definition 14.1](174-definition-14-1.md)
+- [Definition 14.6](178-definition-14-6.md)
 
 ## Sources
 

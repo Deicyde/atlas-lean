@@ -11,7 +11,7 @@ Where $f: G \rightarrow G'$ is a surjective homomorphism, and $K = \ker(f),$ the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section 3, Subsection 3.2 (Homomorphisms))](../section-3/001-definition.md)
 
 ## Sources
 

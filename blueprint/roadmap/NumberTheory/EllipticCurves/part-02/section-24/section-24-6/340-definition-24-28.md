@@ -23,7 +23,9 @@ The $L$-function of an elliptic curve $E/\mathbb{Q}$ is given by the Euler
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.2](../../../part-01/section-3/section-3-1/006-definition-3-2.md)
+- [Definition 4.24](../../../part-01/section-4/section-4-3-3/047-definition-4-24.md)
+- [Definition 6.17](../../../part-01/section-6/100-definition-6-17.md)
 
 ## Sources
 

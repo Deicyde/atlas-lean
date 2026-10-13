@@ -17,7 +17,7 @@ The Petersson inner product on $S_{k}(\Gamma)$ is defined by $$\langle f,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 24.6](../section-24-1/325-definition-24-6.md)
 
 ## Sources
 

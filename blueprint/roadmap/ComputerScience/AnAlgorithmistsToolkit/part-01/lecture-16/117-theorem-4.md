@@ -12,6 +12,10 @@ For any $A \subset S^{n-1}$ and any $\epsilon > 0$, $\operatorname{Vol}(A_{\epsi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 1 (Lecture 13, Section 2)](../lecture-13/101-theorem-1.md)
+
 ## Sources
 
 - [MIT 18.409 An Algorithmist's Toolkit (Fall 2009), Lecture 16](../../../../../sources/v1/AnAlgorithmistsToolkit.md)

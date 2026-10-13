@@ -13,6 +13,13 @@ Every Cauchy sequence in $\hat{k}$ is equivalent to a Cauchy sequence whose elem
 ## Depends on
 
 - [Definition 7.12](045-definition-7-12.md)
+- [Definition 7.9](042-definition-7-9.md)
+- [Definition 7.13](046-definition-7-13.md)
+
+## Proof depends on
+
+- [Definition 5.2](../section-5/030-definition-5-2.md)
+- [Theorem 7.15](048-theorem-7-15.md)
 
 ## Sources
 

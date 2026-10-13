@@ -16,6 +16,10 @@ Let $q=p^{n}$ be a prime power. The field $\mathbb{F}_{q}$ has cardinality
 
 - [Definition 3.4](007-definition-3-4.md)
 
+## Proof depends on
+
+- [Theorem 3.3](005-theorem-3-3.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 3.1](../../../../../../sources/v1/EllipticCurves.md)

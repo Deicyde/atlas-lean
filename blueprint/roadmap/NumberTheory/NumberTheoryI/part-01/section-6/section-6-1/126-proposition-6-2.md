@@ -11,6 +11,9 @@ Let $A$ be a Dedekind domain with fraction field $K$ and let $M$ and $N$ be $A$-
 ## Depends on
 
 - [Definition 6.1](125-definition-6-1.md)
+- [Definition 2.10](../../section-2/027-definition-2-10.md)
+- [Definition 2.13](../../section-2/029-definition-2-13.md)
+- [Definition 5.9](../../section-5/section-5/103-definition-5-9.md)
 
 ## Sources
 

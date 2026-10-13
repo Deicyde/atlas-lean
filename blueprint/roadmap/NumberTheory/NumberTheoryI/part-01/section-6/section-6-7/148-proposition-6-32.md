@@ -12,7 +12,18 @@ Assume $AKLB$ and let $\mathcal{O}$ be an order with integral closure $B$. Let $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.19](../../section-1/section-1-6/015-definition-1-19.md)
+- [Definition 5.9](../../section-5/section-5/103-definition-5-9.md)
+- [Definition 5.29](../../section-5/section-5-3/118-definition-5-29.md)
+- [Definition 6.5](../section-6-2/128-definition-6-5.md)
+- [Definition 6.16](../section-6-6/137-definition-6-16.md)
+- [Definition 6.19](139-definition-6-19.md)
+- [Definition 6.30](146-definition-6-30.md)
+
+## Proof depends on
+
+- [Theorem 6.10](../section-6-2/133-theorem-6-10.md)
+- [Proposition 6.22](141-proposition-6-22.md)
 
 ## Sources
 

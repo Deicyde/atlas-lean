@@ -12,7 +12,15 @@ Let $L$ be a global field. For all $x \in L^{\times}$ we have $\prod_{v \in M_{L
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.1](264-definition-13-1.md)
+- [Definition 13.17](276-definition-13-17.md)
+
+## Proof depends on
+
+- [Theorem 1.9 (Product Formula)](../section-1/section-1-3/007-product-formula.md)
+- [Lemma 4.49](../section-4/section-4-3/092-lemma-4-49.md)
+- [Theorem 13.5](266-theorem-13-5.md)
+- [Lemma 13.19](277-lemma-13-19.md)
 
 ## Sources
 

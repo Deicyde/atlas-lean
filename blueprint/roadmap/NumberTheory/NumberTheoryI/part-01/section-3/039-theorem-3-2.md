@@ -12,7 +12,14 @@ Let $I$ be a fractional ideal of a noetherian domain $A$. Then $I$ is invertible
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.13](../section-2/029-definition-2-13.md)
+- [Definition 2.19](../section-2/034-definition-2-19.md)
+
+## Proof depends on
+
+- [Proposition 2.6](../section-2/024-proposition-2-6.md)
+- [Lemma 2.20](../section-2/035-lemma-2-20.md)
+- [Lemma 3.1](038-lemma-3-1.md)
 
 ## Sources
 

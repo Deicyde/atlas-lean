@@ -14,10 +14,13 @@ The following hold: (i) Every morphism $\phi: X \rightarrow Y$ of affine varieti
 
 - [Definition 14.1](122-definition-14-1.md)
 - [Definition 12.7](../section-12/087-definition-12-7.md)
+- [Definition 13.2](../section-13/section-13-1/101-definition-13-2.md)
+- [Definition 13.3](../section-13/section-13-1/102-definition-13-3.md)
 
 ## Proof depends on
 
 - [Definition 12.12](../section-12/091-definition-12-12.md)
+- [Theorem 12.15 (Hilbert's Nullstellensatz)](../section-12/094-hilbert-s-nullstellensatz.md)
 
 ## Sources
 

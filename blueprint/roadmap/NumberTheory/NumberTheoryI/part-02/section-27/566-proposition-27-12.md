@@ -13,6 +13,12 @@ Let $K$ be a local field and assume every finite index open subgroup of $K^{\tim
 ## Depends on
 
 - [Theorem 27.2 (Local Artin Reciprocity)](560-local-artin-reciprocity.md)
+- [Definition 9.1](../../part-01/section-9/187-definition-9-1.md)
+- [Definition 27.3](561-definition-27-3.md)
+
+## Proof depends on
+
+- [Theorem 27.8 (Local Existence Theorem)](564-local-existence-theorem.md)
 
 ## Sources
 

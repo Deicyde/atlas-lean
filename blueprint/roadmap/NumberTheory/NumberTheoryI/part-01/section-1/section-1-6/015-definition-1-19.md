@@ -11,7 +11,7 @@ Given a ring extension $B/A$, the ring $\tilde{A} = \{b \in B : b \text{ is inte
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.17](013-definition-1-17.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ A direct system (or inductive system) in a category is a family of objects $\{X_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.7](../../part-01/section-8/178-definition-8-7.md)
 
 ## Sources
 

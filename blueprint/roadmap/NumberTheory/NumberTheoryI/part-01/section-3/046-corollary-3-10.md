@@ -12,7 +12,14 @@ Let $A$ be a Dedekind domain with fraction field $K$. For each nonzero fractiona
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.10](../section-2/027-definition-2-10.md)
+- [Definition 2.13](../section-2/029-definition-2-13.md)
+
+## Proof depends on
+
+- [Corollary 2.16](../section-2/031-corollary-2-16.md)
+- [Corollary 3.7](044-corollary-3-7.md)
+- [Lemma 3.9](045-lemma-3-9.md)
 
 ## Sources
 

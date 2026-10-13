@@ -14,6 +14,10 @@ Suppose we have a ring $R$, and a ring homomorphism $\varphi : R \to S$. Then gi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition (Lecture 9: Building New Rings, Section 'Polynomial Rings')](100-definition.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Lecture 9: Building New Rings, Section 'Polynomial Rings'](../../../../../sources/v1/AlgebraNotes.md)

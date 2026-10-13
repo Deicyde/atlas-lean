@@ -13,6 +13,8 @@ Assume $AKLBG$ with finite residue fields and $\mathfrak{q} \mid \mathfrak{p}$ u
 ## Depends on
 
 - [Definition 7.16](../section-7-3/164-definition-7-16.md)
+- [Definition 5.37](../../section-5/section-5/124-definition-5-37.md)
+- [Definition 7.20](168-definition-7-20.md)
 
 ## Sources
 

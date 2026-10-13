@@ -11,6 +11,8 @@ Given a set of Gauss normal vectors, we define the second fundamental forms $H^{
 ## Depends on
 
 - [Definition 12.1](../chapter-2/040-definition-12-1.md)
+- [Definition 12.3](../chapter-2/042-definition-12-3.md)
+- [Definition 23.1](074-definition-23-1.md)
 
 ## Proof depends on
 

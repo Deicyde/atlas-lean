@@ -9,7 +9,12 @@ If $G = \operatorname{Gal}(E/\mathbb{R})$ for a finite Galois extension $E/\math
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 29, Subsection: The Galois Group)](../lecture-29/157-definition.md)
+
+## Proof depends on
+
+- [Definition (Sylow $p$-subgroup)](../../part-01/the-sylow-theorems/048-sylow-p-subgroup.md)
+- [Proposition (\ref{tower})](../../part-03/lecture-24/149-ref-tower.md)
 
 ## Sources
 

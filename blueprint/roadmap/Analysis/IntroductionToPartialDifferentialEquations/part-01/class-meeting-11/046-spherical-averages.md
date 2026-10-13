@@ -29,6 +29,11 @@ $$\lim_{r \rightarrow 0} U(t, r ; x)=u(t, x).$$
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 7.1 (Divergence Theorem)](../class-meeting-1/011-divergence-theorem.md)
+- [Proposition 1.1.1 (Differentiating under the integral)](../section-1/022-differentiating-under-the-integral.md)
+
 ## Sources
 
 - [MIT 18.152 Introduction to Partial Differential Equations (Fall 2011), Class Meeting #11, Section 1](../../../../../sources/v1/IntroductionToPartialDifferentialEquations.md)

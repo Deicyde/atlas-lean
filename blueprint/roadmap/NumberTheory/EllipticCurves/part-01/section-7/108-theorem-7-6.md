@@ -12,7 +12,7 @@ Let $G$ be a finite abelian group with exponent $\lambda(G)$. Let $\alpha$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7.5](107-definition-7-5.md)
 
 ## Sources
 

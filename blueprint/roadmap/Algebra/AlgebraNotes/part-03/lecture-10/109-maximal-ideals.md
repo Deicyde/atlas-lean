@@ -12,7 +12,7 @@ An ideal $I \subset R$ is **maximal** if $I \neq R$, and the only ideals of $R$ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Ideal)](../lecture-8/103-ideal.md)
 
 ## Sources
 

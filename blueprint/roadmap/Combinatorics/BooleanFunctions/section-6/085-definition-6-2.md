@@ -10,7 +10,7 @@ Given $\rho \in [0,1]$ and $f \colon \mathbb{R}^n \to \mathbb{R}$, the noise sta
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6.1](084-definition-6-1.md)
 
 ## Sources
 

@@ -11,6 +11,12 @@ Let $K$ be a global field. The global Artin homomorphism is the continuous homom
 ## Depends on
 
 - [Definition 26.2](../section-26/542-definition-26-2.md)
+- [Definition 8.9](../../part-01/section-8/180-definition-8-9.md)
+- [Definition 13.22](../../part-01/section-13/279-definition-13-22.md)
+
+## Proof depends on
+
+- [Theorem 26.23](../section-26/555-theorem-26-23.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The $j$-invariant of a lattice $L$ is defined by $$j(L)=1728
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 14.29](../section-14/section-14-5/198-theorem-14-29.md)
 
 ## Sources
 

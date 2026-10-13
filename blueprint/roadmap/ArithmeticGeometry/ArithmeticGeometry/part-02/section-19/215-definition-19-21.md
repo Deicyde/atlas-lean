@@ -12,6 +12,10 @@ Let $C/k$ be a curve and let $F/k$ be the corresponding function field. If $P$ i
 ## Depends on
 
 - [Definition 19.6](203-definition-19-6.md)
+- [Definition 16.16](../../part-01/section-16/section-16-3/156-definition-16-16.md)
+- [Definition 16.27](../../part-01/section-16/section-16-5/166-definition-16-27.md)
+- [Definition 19.1](199-definition-19-1.md)
+- [Definition 19.9](206-definition-19-9.md)
 
 ## Sources
 

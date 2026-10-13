@@ -15,6 +15,7 @@ The characteristic curves are straight lines in $\mathbb{R}^{1+1}$.
 ## Proof depends on
 
 - [Proposition 1.0.1 (Connection between transport equations and ODEs)](100-connection-between-transport-equations-a.md)
+- [Proposition 2.0.2 (Burger solutions are constant along characteristics)](103-burger-solutions-are-constant-along-char.md)
 
 ## Sources
 

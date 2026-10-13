@@ -14,11 +14,15 @@ Let $f(\tau)$ be a modular function for $\Gamma(1)$ that is holomorphic on
 ## Depends on
 
 - [Definition 19.2](252-definition-19-2.md)
+- [Definition 14.4](../../part-01/section-14/section-14-1/176-definition-14-4.md)
+- [Definition 15.7](../../part-01/section-15/208-definition-15-7.md)
 
 ## Proof depends on
 
 - [Definition 14.1](../../part-01/section-14/section-14-1/174-definition-14-1.md)
 - [Theorem 19.8](255-theorem-19-8.md)
+- [Corollary 19.6](254-corollary-19-6.md)
+- [Corollary 19.10](257-corollary-19-10.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ Every algebraic extension $L / K$ can be uniquely decomposed into a tower of alg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](../section-4-1/part-01/058-definition-4-3.md)
+- [Definition 4.22](../section-4-1/part-02/077-definition-4-22.md)
+
+## Proof depends on
+
+- [Theorem 4.26](079-theorem-4-26.md)
 
 ## Sources
 

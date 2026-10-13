@@ -12,7 +12,7 @@ If the current error vector $e_i$ is an eigenvector of $A$, then the subsequent 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 1, Section 2)](../../part-01/lecture-1/001-definition-1.md)
 
 ## Sources
 

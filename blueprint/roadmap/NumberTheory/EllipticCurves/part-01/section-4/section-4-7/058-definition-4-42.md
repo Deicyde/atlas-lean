@@ -16,7 +16,7 @@ If $S$ is a set of polynomials in $\bar{k}[x_1, \ldots, x_n]$, the set of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.41](057-definition-4-41.md)
 
 ## Sources
 

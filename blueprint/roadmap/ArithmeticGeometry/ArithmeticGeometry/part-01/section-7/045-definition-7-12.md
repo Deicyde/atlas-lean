@@ -11,7 +11,7 @@ Two sequences $(a_n)$ and $(b_n)$ are equivalent if $\|a_n - b_n\| \rightarrow 0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.2](../section-5/030-definition-5-2.md)
 
 ## Sources
 

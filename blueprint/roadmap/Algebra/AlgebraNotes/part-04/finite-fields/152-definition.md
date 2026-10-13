@@ -12,7 +12,7 @@ An extension $E/F$ is **separable** if the minimal polynomial (over $F$) of ever
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 25, Subsection: Algebraic Elements)](../lecture-25/140-definition.md)
 
 ## Sources
 

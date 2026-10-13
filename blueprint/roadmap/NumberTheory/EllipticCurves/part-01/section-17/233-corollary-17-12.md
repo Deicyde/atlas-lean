@@ -13,7 +13,14 @@ Let $\mathcal{O}$ be an order in an imaginary quadratic field and let
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 12.22](../section-12/155-definition-12-22.md)
+- [Definition 16.9](../section-16/220-definition-16-9.md)
+- [Definition 17.2](224-definition-17-2.md)
+- [Definition 17.8](229-definition-17-8.md)
+
+## Proof depends on
+
+- [Theorem 17.10](231-theorem-17-10.md)
 
 ## Sources
 

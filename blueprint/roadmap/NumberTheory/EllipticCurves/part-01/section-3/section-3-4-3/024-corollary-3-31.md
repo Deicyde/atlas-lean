@@ -20,6 +20,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Theorem 3.29](022-theorem-3-29.md)
+- [Theorem 3.30](023-theorem-3-30.md)
 
 ## Sources
 

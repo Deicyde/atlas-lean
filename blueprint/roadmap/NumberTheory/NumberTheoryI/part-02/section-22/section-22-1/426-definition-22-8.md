@@ -11,6 +11,8 @@ Let $\mathcal{C}$ be a congruence subgroup for a number field $K$. The unique mo
 ## Depends on
 
 - [Definition 21.2](../../section-21/404-definition-21-2.md)
+- [Definition 22.1](420-definition-22-1.md)
+- [Corollary 22.7](425-corollary-22-7.md)
 
 ## Proof depends on
 

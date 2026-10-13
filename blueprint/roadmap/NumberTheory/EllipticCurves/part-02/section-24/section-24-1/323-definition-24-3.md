@@ -14,7 +14,8 @@ A holomorphic function $f: \mathbb{H} \rightarrow \mathbb{C}$ is a weak
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 14.4](../../../part-01/section-14/section-14-1/176-definition-14-4.md)
+- [Definition 18.11](../../section-18/250-definition-18-11.md)
 
 ## Sources
 

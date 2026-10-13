@@ -12,7 +12,7 @@ The following results hold about the eigenvalues $\lambda_i$ and corresponding e
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 1, Section 2)](001-definition-1.md)
 
 ## Sources
 

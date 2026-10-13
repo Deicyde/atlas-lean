@@ -11,7 +11,7 @@ A closed curve of period $T$ is a regular curve $c \colon \mathbb{R} \rightarrow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.2](../chapter-1-lecture-1/002-definition-1-2.md)
 
 ## Sources
 

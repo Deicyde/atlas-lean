@@ -12,7 +12,13 @@ Let $E / k$ be an elliptic curve given by the short Weierstrass equation $y^{2}=
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.12](264-definition-23-12.md)
+- [Definition 23.14](266-definition-23-14.md)
+- [Theorem 23.16](267-theorem-23-16.md)
+
+## Proof depends on
+
+- [Corollary 23.19 (Geometric group law)](270-geometric-group-law.md)
 
 ## Sources
 

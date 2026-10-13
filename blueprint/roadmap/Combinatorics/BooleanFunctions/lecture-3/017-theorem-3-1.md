@@ -12,6 +12,11 @@ For all $t, \varepsilon, \delta > 0$ there exists an algorithm whose runtime is 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Claim 2.1 (Lecture 3, Section 2)](001-claim-2-1.md)
+- [Claim 1.2](016-claim-1-2.md)
+
 ## Sources
 
 - [MIT 18.218 Analysis of Boolean Functions (Spring 2021), Lecture 3, Section 3](../../../../sources/v1/BooleanFunctions.md)

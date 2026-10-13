@@ -14,6 +14,10 @@ Every $A \in \overline{G}$ maps $L$ to $L.$
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition (The Correspondence Theorem, Normal Subgroups)](../the-correspondence-theorem/008-definition.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Section: Finite and Discrete Subgroups, Continued, Subsection: Back to Discrete Subgroups of M2](../../../../../sources/v1/AlgebraNotes.md)

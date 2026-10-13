@@ -13,6 +13,8 @@ Every purely inseparable isogeny has trivial kernel.
 ## Depends on
 
 - [Definition 4.31](../section-4/section-4-5/052-definition-4-31.md)
+- [Definition 4.18](../section-4/section-4-2/043-definition-4-18.md)
+- [Definition 5.6](074-definition-5-6.md)
 
 ## Sources
 

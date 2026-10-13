@@ -13,6 +13,7 @@ If $u_{1}, \cdots, u_{M}$ are solutions to the linear PDE $\mathcal{L} u=0$ and 
 ## Depends on
 
 - [Definition 4.0.2](002-definition-4-0-2.md)
+- [Definition 4.0.3](003-definition-4-0-3.md)
 
 ## Sources
 

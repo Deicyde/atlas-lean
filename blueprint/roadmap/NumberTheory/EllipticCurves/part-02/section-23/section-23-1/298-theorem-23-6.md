@@ -13,7 +13,13 @@ Let $C_{1}/k$ be a smooth projective curve and let $\phi: C_{1} \rightarrow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.9](../../../part-01/section-4/section-4-1/038-definition-4-9.md)
+- [Definition 4.14](../../../part-01/section-4/section-4-1/040-definition-4-14.md)
+
+## Proof depends on
+
+- [Definition 23.3](296-definition-23-3.md)
+- [Definition 23.4](297-definition-23-4.md)
 
 ## Sources
 

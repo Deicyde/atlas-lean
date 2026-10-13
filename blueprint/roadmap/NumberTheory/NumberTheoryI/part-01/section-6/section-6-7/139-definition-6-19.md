@@ -9,7 +9,8 @@ An order $\mathcal{O}$ is a noetherian domain of dimension one whose conductor i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.19](../../section-1/section-1-6/015-definition-1-19.md)
+- [Definition 6.16](../section-6-6/137-definition-6-16.md)
 
 ## Sources
 

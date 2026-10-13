@@ -11,11 +11,12 @@ If $A$ is a CFL and $B$ is regular then $A \cap B$ is a CFL.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Context Free Language)](../lecture-4/014-context-free-language.md)
 
 ## Proof depends on
 
 - [Definition (Pushdown Automaton)](../lecture-4/015-pushdown-automaton.md)
+- [Theorem (Equivalence of CFGs and PDAs)](../lecture-4/017-equivalence-of-cfgs-and-pdas.md)
 
 ## Sources
 

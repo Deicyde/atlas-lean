@@ -10,7 +10,7 @@ Any finitely presented abelian group $A$ is isomorphic to $\mathbb{Z}/d_1\mathbb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 20, Section: Modules and Presentation Matrices, Subsection: Presentation Matrices)](../lecture-20/132-definition.md)
 
 ## Sources
 

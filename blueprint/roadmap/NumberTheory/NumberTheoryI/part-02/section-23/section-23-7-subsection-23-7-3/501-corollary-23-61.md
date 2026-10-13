@@ -11,7 +11,7 @@ For any $R$-module $A$, the functor $\operatorname{Hom}_{R}(\bullet, A)$ is an a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.16](../section-23-2/460-definition-23-16.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ Let $A$ be a $G$-module. The $n$th cohomology group of $G$ with coefficients in 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.1](446-definition-23-1.md)
+- [Definition 23.3](448-definition-23-3.md)
 
 ## Sources
 

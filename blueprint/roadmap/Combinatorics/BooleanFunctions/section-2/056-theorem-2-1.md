@@ -12,6 +12,13 @@ lean: BooleanFourier.arrow_impossibility
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Claim 2.2 (Lecture 1, Section 2.1)](../lecture-1/002-claim-2-2.md)
+- [Definition 2.6](../lecture-2/010-definition-2-6.md)
+- [Definition 1.1 (Noise Stability)](../section-1/052-noise-stability.md)
+- [Claim 1.3](../section-1/054-claim-1-3.md)
+
 ## Sources
 
 - [MIT 18.218 Analysis of Boolean Functions (Spring 2021), Section 2.1, Set up (Arrow's impossibility theorem)](../../../../sources/v1/BooleanFunctions.md)

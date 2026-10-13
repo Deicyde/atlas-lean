@@ -12,7 +12,11 @@ Every nonzero ideal of $R$ is again a lattice.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Ideal)](../lecture-8/103-ideal.md)
+
+## Proof depends on
+
+- [Definition (Principal Ideal)](../lecture-8/104-principal-ideal.md)
 
 ## Sources
 

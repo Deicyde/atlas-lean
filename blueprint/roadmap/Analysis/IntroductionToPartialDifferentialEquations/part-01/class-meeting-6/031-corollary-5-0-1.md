@@ -13,6 +13,10 @@ Let $\Omega \subset \mathbb{R}^{n}$ be a bounded domain and let $f \in C(\Omega)
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 5.1 (Strong Maximum Principle)](030-strong-maximum-principle.md)
+
 ## Sources
 
 - [MIT 18.152 Introduction to Partial Differential Equations (Fall 2011), Class Meeting #6, Section 5 (Maximum Principle)](../../../../../sources/v1/IntroductionToPartialDifferentialEquations.md)

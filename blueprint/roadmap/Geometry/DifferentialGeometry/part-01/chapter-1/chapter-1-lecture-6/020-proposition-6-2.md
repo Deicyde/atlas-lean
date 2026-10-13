@@ -12,6 +12,7 @@ Let $c$ be a Frenet curve in $\mathbb{R}^{n}$. Then $\frac{\operatorname{det}\le
 ## Depends on
 
 - [Definition 5.3](../chapter-1-lecture-5/017-definition-5-3.md)
+- [Theorem 6.1](019-theorem-6-1.md)
 
 ## Sources
 

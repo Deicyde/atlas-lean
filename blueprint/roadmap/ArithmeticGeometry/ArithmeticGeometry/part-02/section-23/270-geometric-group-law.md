@@ -12,7 +12,13 @@ Let $P$ and $Q$ be rational points on an elliptic curve embedded in $\mathbb{P}^
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.11](../../part-01/section-13/section-13-2/110-definition-13-11.md)
+- [Definition 23.14](266-definition-23-14.md)
+- [Theorem 23.16](267-theorem-23-16.md)
+
+## Proof depends on
+
+- [Corollary 23.18](269-corollary-23-18.md)
 
 ## Sources
 

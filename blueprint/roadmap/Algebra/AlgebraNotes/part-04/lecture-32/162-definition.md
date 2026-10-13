@@ -11,7 +11,7 @@ A finite group $G$ is **solvable** if there exists a sequence of subgroups $G = 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (The Correspondence Theorem, Normal Subgroups)](../../part-01/the-correspondence-theorem/008-definition.md)
 
 ## Sources
 

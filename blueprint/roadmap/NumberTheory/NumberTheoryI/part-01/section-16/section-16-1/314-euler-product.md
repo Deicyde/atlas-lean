@@ -12,7 +12,7 @@ For $\operatorname{Re}(s)>1$ we have $\zeta(s)=\sum_{n \geq 1} n^{-s}=\prod_{p}\
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 16.1](313-definition-16-1.md)
 
 ## Sources
 

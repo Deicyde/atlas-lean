@@ -18,6 +18,7 @@ This node has no prerequisites.
 
 - [Definition 2.2 (Lecture 4, Section 2)](007-definition-2-2.md)
 - [Claim 5.1](022-claim-5-1.md)
+- [Corollary 5.2](023-corollary-5-2.md)
 
 ## Sources
 

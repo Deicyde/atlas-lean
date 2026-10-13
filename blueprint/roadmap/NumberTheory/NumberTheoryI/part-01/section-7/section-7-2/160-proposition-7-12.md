@@ -12,7 +12,15 @@ Assume $AKLBG$, let $\mathfrak{q} \mid \mathfrak{p}$ be a prime of $B$, and supp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](../../section-4/section-4-1/part-01/058-definition-4-3.md)
+- [Definition 5.29](../../section-5/section-5-3/118-definition-5-29.md)
+- [Definition 7.7](155-definition-7-7.md)
+- [Definition 7.10](158-definition-7-10.md)
+
+## Proof depends on
+
+- [Lemma 7.8](156-lemma-7-8.md)
+- [Proposition 7.9](157-proposition-7-9.md)
 
 ## Sources
 

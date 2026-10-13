@@ -15,6 +15,12 @@ Let $\phi: E_{1} \rightarrow E_{2}$ be an isogeny of elliptic curves. Then
 - [Definition 4.18](../section-4/section-4-2/043-definition-4-18.md)
 - [Definition 6.2](../chapter-6/089-definition-6-2.md)
 
+## Proof depends on
+
+- [Theorem 5.8](../chapter-5/075-theorem-5-8.md)
+- [Corollary 5.10](../chapter-5/077-corollary-5-10.md)
+- [Proposition 6.5](../chapter-6/091-proposition-6-5.md)
+
 ## Sources
 
 - [MIT 18.783 Elliptic Curves (Spring 2021), Section 13 (Lecture 13)](../../../../../sources/v1/EllipticCurves.md)

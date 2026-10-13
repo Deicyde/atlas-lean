@@ -11,7 +11,9 @@ Let $A$ be a noetherian domain and let $J$ be an ideal of $A$. A fractional idea
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.13](../../section-2/029-definition-2-13.md)
+- [Definition 2.19](../../section-2/034-definition-2-19.md)
+- [Definition 2.22](../../section-2/036-definition-2-22.md)
 
 ## Sources
 

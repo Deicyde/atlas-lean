@@ -13,6 +13,7 @@ For all $f \colon \{-1,1\}^n \to \{-1,1\}$ it holds that $$I[f] \geqslant \Pr[f(
 ## Depends on
 
 - [Definition 1.2](../lecture-4/019-definition-1-2.md)
+- [Definition 2.2 (Lecture 4, Section 2)](../lecture-4/007-definition-2-2.md)
 
 ## Proof depends on
 

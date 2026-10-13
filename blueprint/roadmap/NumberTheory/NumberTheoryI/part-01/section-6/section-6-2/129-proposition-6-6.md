@@ -13,6 +13,15 @@ Assume $AKLB$ and let $\alpha \in L$. Then $N_{B/A}((\alpha))=\left(\mathrm{N}_{
 ## Depends on
 
 - [Definition 6.5](128-definition-6-5.md)
+- [Definition 1.19](../../section-1/section-1-6/015-definition-1-19.md)
+- [Definition 2.10](../../section-2/027-definition-2-10.md)
+- [Definition 2.17](../../section-2/032-definition-2-17.md)
+- [Definition 4.3](../../section-4/section-4-1/part-01/058-definition-4-3.md)
+- [Definition 4.46](../../section-4/section-4-3/091-definition-4-46.md)
+
+## Proof depends on
+
+- [Definition 6.1](../section-6-1/125-definition-6-1.md)
 
 ## Sources
 

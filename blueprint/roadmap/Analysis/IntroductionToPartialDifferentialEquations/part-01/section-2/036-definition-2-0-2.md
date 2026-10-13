@@ -11,7 +11,7 @@ Let $\Omega \subset \mathbb{R}^{n}$ be a domain. A Green function in $\Omega$ is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.0.2 (Class Meeting #5, Section 1 (The Fundamental solution))](../class-meeting-5/018-definition-1-0-2.md)
 
 ## Sources
 

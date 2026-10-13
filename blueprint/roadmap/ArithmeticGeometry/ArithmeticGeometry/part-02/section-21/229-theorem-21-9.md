@@ -12,6 +12,7 @@ For any divisor $D$ we have $\operatorname{dim} \mathcal{L}(D) \leq \operatornam
 
 - [Definition 19.6](../section-19/203-definition-19-6.md)
 - [Definition 21.2](225-definition-21-2.md)
+- [Definition 19.21](../section-19/215-definition-19-21.md)
 
 ## Proof depends on
 

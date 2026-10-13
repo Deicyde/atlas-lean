@@ -11,7 +11,7 @@ The dual $\Lambda^*$ of lattice $\Lambda$ is $\{x \in \mathbb{R}^n : \forall v \
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lattice)](130-lattice.md)
 
 ## Sources
 

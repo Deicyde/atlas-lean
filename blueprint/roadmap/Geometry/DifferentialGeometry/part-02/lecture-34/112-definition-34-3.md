@@ -10,7 +10,10 @@ Let $M \subset \mathbb{R}^{3}$ be a compact surface. A moving frame with singula
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 26.2](../../part-01/lecture-26/083-definition-26-2.md)
+- [Definition 29.3](../../part-01/lecture-29/090-definition-29-3.md)
+- [Definition 30.2](../../part-01/lecture-30/093-definition-30-2.md)
+- [Definition 34.1](110-definition-34-1.md)
 
 ## Sources
 

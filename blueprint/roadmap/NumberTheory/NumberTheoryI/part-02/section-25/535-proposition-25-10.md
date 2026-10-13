@@ -10,7 +10,14 @@ Let $L$ be a finite separable extension of a global field $K$. There is a natura
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 13.22](../../part-01/section-13/279-definition-13-22.md)
+- [Definition 25.7](533-definition-25-7.md)
+
+## Proof depends on
+
+- [Theorem 11.23](../../part-01/section-11/237-theorem-11-23.md)
+- [Corollary 11.26](../../part-01/section-11/239-corollary-11-26.md)
+- [Proposition 25.5](531-proposition-25-5.md)
 
 ## Sources
 

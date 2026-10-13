@@ -11,7 +11,7 @@ Let $M$ be an $R$-module. A projective resolution of $M$ is an exact chain compl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 23.49](../section-23-7-subsection-23-7-1/489-definition-23-49.md)
 
 ## Sources
 

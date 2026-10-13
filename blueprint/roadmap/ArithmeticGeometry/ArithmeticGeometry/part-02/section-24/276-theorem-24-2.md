@@ -11,6 +11,12 @@ Let $E_{1} / k$ and $E_{2} / k$ be elliptic curves and let $\varphi: E_{1} \righ
 ## Depends on
 
 - [Definition 24.1](275-definition-24-1.md)
+- [Definition 23.14](../section-23/266-definition-23-14.md)
+- [Theorem 23.16](../section-23/267-theorem-23-16.md)
+
+## Proof depends on
+
+- [Definition 19.19](../section-19/214-definition-19-19.md)
 
 ## Sources
 

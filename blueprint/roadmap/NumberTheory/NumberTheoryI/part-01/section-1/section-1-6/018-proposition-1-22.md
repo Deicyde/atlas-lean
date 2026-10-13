@@ -12,7 +12,11 @@ The ring $\mathbb{Z}$ is integrally closed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.19](015-definition-1-19.md)
+
+## Proof depends on
+
+- [Definition 1.17](013-definition-1-17.md)
 
 ## Sources
 

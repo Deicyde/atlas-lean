@@ -11,6 +11,7 @@ All the nonempty affine parts of a projective variety are isomorphic.
 ## Depends on
 
 - [Definition 12.7](../section-12/087-definition-12-7.md)
+- [Definition 13.19](../section-13/section-13-4/116-definition-13-19.md)
 
 ## Proof depends on
 
@@ -24,6 +25,7 @@ All the nonempty affine parts of a projective variety are isomorphic.
 - [Corollary 14.9](127-corollary-14-9.md)
 - [Definition 12.12](../section-12/091-definition-12-12.md)
 - [Theorem 12.21](../section-12/099-theorem-12-21.md)
+- [Corollary 13.26](../section-13/section-13-5/121-corollary-13-26.md)
 
 ## Sources
 

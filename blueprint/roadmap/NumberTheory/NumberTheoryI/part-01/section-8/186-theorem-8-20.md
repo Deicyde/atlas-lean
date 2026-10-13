@@ -12,7 +12,14 @@ Assume $AKLB$ and let $\mathfrak{p}$ be a prime of $A$. For each prime $\mathfra
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10](../section-1/section-1-4/008-definition-1-10.md)
+- [Definition 5.29](../section-5/section-5-3/118-definition-5-29.md)
+- [Definition 8.19](185-definition-8-19.md)
+
+## Proof depends on
+
+- [Proposition 1.25](../section-1/section-1/020-proposition-1-25.md)
+- [Corollary 3.13](../section-3/048-corollary-3-13.md)
 
 ## Sources
 

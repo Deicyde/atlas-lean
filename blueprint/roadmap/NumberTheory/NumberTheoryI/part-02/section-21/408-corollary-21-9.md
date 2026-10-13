@@ -14,6 +14,9 @@ Let $K$ be a number field and let $\mathfrak{m}$ be a modulus for $K$. The ray c
 
 - [Definition 21.2](404-definition-21-2.md)
 - [Definition 21.3](405-definition-21-3.md)
+- [Definition 1.26](../../part-01/section-1/section-1/021-definition-1-26.md)
+- [Definition 2.23](../../part-01/section-2/037-definition-2-23.md)
+- [Definition 6.5](../../part-01/section-6/section-6-2/128-definition-6-5.md)
 
 ## Proof depends on
 

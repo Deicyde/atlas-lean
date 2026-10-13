@@ -11,7 +11,11 @@ Assume $AKLB$ with $A$ a complete DVR and separable residue field extension of c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.10](../section-1/section-1-4/008-definition-1-10.md)
+- [Definition 4.3](../section-4/section-4-1/part-01/058-definition-4-3.md)
+- [Definition 5.29](../section-5/section-5-3/118-definition-5-29.md)
+- [Definition 5.37](../section-5/section-5/124-definition-5-37.md)
+- [Definition 8.1](../section-8/172-definition-8-1.md)
 
 ## Sources
 

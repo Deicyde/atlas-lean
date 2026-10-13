@@ -13,7 +13,8 @@ If $C_{1}$ is a smooth projective curve then every rational map from $C_{1}$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.9](038-definition-4-9.md)
+- [Definition 4.14](040-definition-4-14.md)
 
 ## Sources
 

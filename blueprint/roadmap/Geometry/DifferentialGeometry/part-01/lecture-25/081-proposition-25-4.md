@@ -12,6 +12,7 @@ Let $M \subset \mathbb{R}^{n+1}$ be a hypersurface. Take a point $y \in M$, a lo
 
 - [Definition 12.1](../chapter-2/040-definition-12-1.md)
 - [Definition 14.4](../chapter-2/049-definition-14-4.md)
+- [Definition 24.1](../lecture-24/077-definition-24-1.md)
 
 ## Proof depends on
 

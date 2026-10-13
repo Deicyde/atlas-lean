@@ -15,7 +15,8 @@ Let $\alpha(x, y)=\left(\frac{u(x)}{v(x)}, \frac{s(x)}{t(x)} y\right)$ be an
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.18](../section-4-2/043-definition-4-18.md)
+- [Lemma 4.26](../section-4-4/048-lemma-4-26.md)
 
 ## Sources
 

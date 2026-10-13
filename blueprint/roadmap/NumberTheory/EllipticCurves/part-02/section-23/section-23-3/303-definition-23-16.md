@@ -16,7 +16,7 @@ Let $E / k$ be an elliptic curve with 0 as its distinguished point (for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.2](../../../part-01/section-4/section-4-1/036-definition-4-2.md)
 
 ## Sources
 

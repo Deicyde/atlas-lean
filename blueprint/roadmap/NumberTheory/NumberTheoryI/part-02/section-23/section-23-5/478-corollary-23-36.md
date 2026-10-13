@@ -15,6 +15,7 @@ Let $G$ be a finite group and let $A$ be a free $\mathbb{Z}[G]$-module. Then we 
 ## Proof depends on
 
 - [Theorem 23.34](477-theorem-23-34.md)
+- [Definition 23.25](../section-23-4/468-definition-23-25.md)
 
 ## Sources
 

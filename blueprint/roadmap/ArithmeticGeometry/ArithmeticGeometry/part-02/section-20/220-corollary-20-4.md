@@ -12,7 +12,12 @@ Let $\mathcal{O}_{1}, \ldots, \mathcal{O}_{n}$ be distinct discrete valuation ri
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.18](../../part-01/section-4/028-definition-4-18.md)
+- [Definition 19.1](../section-19/199-definition-19-1.md)
+
+## Proof depends on
+
+- [Lemma 20.3 (Independence of valuations)](219-independence-of-valuations.md)
 
 ## Sources
 

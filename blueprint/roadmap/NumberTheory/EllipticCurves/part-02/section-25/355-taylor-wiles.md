@@ -14,6 +14,7 @@ Let $E/\mathbb{Q}$ be a semistable elliptic curve. If $\bar{\rho}_{E,\ell}$
 ## Depends on
 
 - [Definition 24.32](../section-24/section-24-8/344-definition-24-32.md)
+- [Definition 24.30](../section-24/section-24-7/342-definition-24-30.md)
 
 ## Proof depends on
 

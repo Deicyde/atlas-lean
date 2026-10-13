@@ -13,6 +13,7 @@ If $X$ is timelike, and $\Lambda$ is a Lorentz transformation, then $\Lambda X$ 
 ## Depends on
 
 - [Definition 2.1.1](051-definition-2-1-1.md)
+- [Definition 2.0.1 (Class Meeting #12, Section 2)](049-definition-2-0-1.md)
 
 ## Sources
 

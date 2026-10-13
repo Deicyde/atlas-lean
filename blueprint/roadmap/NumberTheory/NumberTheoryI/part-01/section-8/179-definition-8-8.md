@@ -11,7 +11,7 @@ An inverse system (projective system) in a category is a family of objects $\{X_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 8.7](178-definition-8-7.md)
 
 ## Sources
 

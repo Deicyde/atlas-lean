@@ -12,7 +12,11 @@ $\mathbb{Z}_{p}$ is an integral domain (a ring with no zero divisors).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 4.3](015-definition-4-3.md)
+
+## Proof depends on
+
+- [Theorem 4.11](021-theorem-4-11.md)
 
 ## Sources
 

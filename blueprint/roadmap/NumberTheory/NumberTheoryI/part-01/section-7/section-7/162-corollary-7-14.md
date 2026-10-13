@@ -12,7 +12,15 @@ Assume $AKLBG$, let $E$ be an intermediate field between $K$ and $L$. Let $\math
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5.29](../../section-5/section-5-3/118-definition-5-29.md)
+- [Definition 7.7](../section-7-2/155-definition-7-7.md)
+- [Definition 7.10](../section-7-2/158-definition-7-10.md)
+
+## Proof depends on
+
+- [Lemma 5.30](../../section-5/section-5-3/120-lemma-5-30.md)
+- [Proposition 7.12](../section-7-2/160-proposition-7-12.md)
+- [Proposition 7.13](../section-7-2/161-proposition-7-13.md)
 
 ## Sources
 
