@@ -12,7 +12,13 @@ Suppose $f:(a,b) \to \mathbb{R}$ has two continuous derivatives. If $x_0\in (a,b
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Continuous Functions) (1)](../continuous-functions/043-continuous-functions.md)
+- [Definition (Relative Maximum/Minimum) (Section on Mean Value Theorem)](../section-on-mean-value-theorem/056-relative-maximum-minimum.md)
+- [Definition ($n$-times Differentiable) (Taylor's Theorem section)](060-n-times-differentiable.md)
+
+## Proof depends on
+
+- [Theorem (Taylor) (Taylor's Theorem section)](061-taylor.md)
 
 ## Sources
 

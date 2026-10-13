@@ -14,6 +14,10 @@ We already showed that $\sum \frac{(-1)^n}{n}$ does not absolutely converge. How
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Alternating Series test) (Convergence tests) (1)](037-alternating-series-test.md)
+
 ## Sources
 
 - [MIT 18.100A Real Analysis (Fall 2020), Convergence tests](../../../../../sources/v1/RealAnalysis.md)

@@ -12,7 +12,7 @@ If $A$ is a set, then $|A| < |\mathcal P(A)|$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Cardinality) (Basic Set Theory, Cardinality)](../../part-01/basic-set-theory/006-cardinality.md)
 
 ## Sources
 

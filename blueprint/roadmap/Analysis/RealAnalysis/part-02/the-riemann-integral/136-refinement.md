@@ -12,6 +12,8 @@ If $(\underline{x}, \underline{\xi})$ and $(\underline{x}', \underline{\xi}')$ a
 ## Depends on
 
 - [Definition (Partition) (The Riemann Integral section)](065-partition.md)
+- [Definition (Set Relations) (Basic Set Theory) (1)](../../part-01/basic-set-theory/001-set-relations.md)
+- [Definition (Tag) (The Riemann Integral section)](066-tag.md)
 
 ## Sources
 

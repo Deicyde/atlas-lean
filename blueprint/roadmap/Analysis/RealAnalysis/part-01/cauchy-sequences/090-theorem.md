@@ -12,7 +12,13 @@ A sequence of real numbers $\{x_n\}$ is Cauchy if and only if $\{x_n\}$ is conve
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sequence of Reals) (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/021-sequence-of-reals.md)
+- [Definition (Sequence Convergence of Reals) (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/022-sequence-convergence-of-reals.md)
+- [Definition (Cauchy) (Cauchy Sequences section) (1)](030-cauchy.md)
+
+## Proof depends on
+
+- [Theorem (Bolzano-Weierstrass) (Limsup/Liminf section)](../limsup-liminf/029-bolzano-weierstrass.md)
 
 ## Sources
 

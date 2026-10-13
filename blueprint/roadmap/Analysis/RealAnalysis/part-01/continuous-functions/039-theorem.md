@@ -14,6 +14,11 @@ If $f:[a,b]\to \mathbb{R}$ is continuous then $f$ is bounded.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition (Subsequence) (Convergent Sequences of the Real Numbers section) (1)](../convergent-sequences-of-the-real-numbers/024-subsequence.md)
+- [Theorem (Bolzano-Weierstrass) (Limsup/Liminf section)](../limsup-liminf/029-bolzano-weierstrass.md)
+
 ## Sources
 
 - [MIT 18.100A Real Analysis (Fall 2020), Continuous Functions](../../../../../sources/v1/RealAnalysis.md)

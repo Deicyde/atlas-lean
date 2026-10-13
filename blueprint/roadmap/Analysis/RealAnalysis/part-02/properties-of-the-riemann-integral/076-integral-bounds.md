@@ -12,7 +12,8 @@ Let $f\in C([a,b])$, and $m_f = \inf\{f(x) \mid x\in [a,b]\} \in \mathbb{R}$, $M
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (C((a,b)))](../the-riemann-integral/064-a-b.md)
+- [Theorem (Riemann Integral) (The Riemann Integral section)](../the-riemann-integral/068-riemann-integral.md)
 
 ## Sources
 

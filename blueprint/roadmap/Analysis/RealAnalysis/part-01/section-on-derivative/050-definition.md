@@ -12,7 +12,7 @@ Let $I$ be an interval, let $f:I \to \mathbb{R}$, and let $c\in I$. We say that 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Function Convergence) (Continuous Functions, Limits of Functions) (1)](../continuous-functions/041-function-convergence.md)
 
 ## Sources
 

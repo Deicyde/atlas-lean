@@ -16,6 +16,8 @@ If $(\underline{x}, \underline{\xi})$ and $(\underline{x}', \underline{\xi}')$ a
 - [Definition (Tag) (The Riemann Integral section)](../the-riemann-integral/066-tag.md)
 - [Definition (Modulus of Continuity) (The Riemann Integral section)](../the-riemann-integral/069-modulus-of-continuity.md)
 - [Definition (Riemann sum) (The Riemann Integral section)](../the-riemann-integral/067-riemann-sum.md)
+- [Definition (Set Relations) (Basic Set Theory) (1)](../../part-01/basic-set-theory/001-set-relations.md)
+- [Definition (C((a,b)))](../the-riemann-integral/064-a-b.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Suppose $x_n \neq 0$ for all $n$ and $L = \lim_{n\to \infty} \frac{|x_{n+1}|}{|x
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sequence Convergence of Reals) (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/022-sequence-convergence-of-reals.md)
 
 ## Sources
 

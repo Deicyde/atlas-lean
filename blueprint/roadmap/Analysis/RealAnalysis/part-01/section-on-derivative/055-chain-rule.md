@@ -12,7 +12,7 @@ Let $I_1, I_2$ be two intervals, $g:I_1\to I_2$ be differentiable at $c\in I_1$,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section on Derivative)](050-definition.md)
 
 ## Sources
 

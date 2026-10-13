@@ -12,7 +12,16 @@ Suppose $f\in C([-\pi, \pi])$ and $f'\in C([-\pi,\pi])$ with $f$ $2\pi$-periodic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sequence Convergence of Reals) (Sequences and Series, Sequences and Limits) (1)](../../part-01/sequences-and-series/022-sequence-convergence-of-reals.md)
+- [Definition (Section on Derivative)](../../part-01/section-on-derivative/050-definition.md)
+- [Definition (C((a,b)))](../the-riemann-integral/064-a-b.md)
+- [Theorem (Riemann Integral) (The Riemann Integral section)](../the-riemann-integral/068-riemann-integral.md)
+
+## Proof depends on
+
+- [Theorem (Squeeze Theorem) (Lecture 8, Facts About Limits)](../../part-01/lecture-8/026-squeeze-theorem.md)
+- [Theorem (Comparison and Triangle Inequality for Integrals)](../properties-of-the-riemann-integral/077-comparison-and-triangle-inequality-for-i.md)
+- [Theorem (Integration by Parts) (Fundamental Theorem of Calculus section) (1)](080-integration-by-parts.md)
 
 ## Sources
 

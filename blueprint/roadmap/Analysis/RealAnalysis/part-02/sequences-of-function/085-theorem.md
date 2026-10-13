@@ -12,7 +12,12 @@ If $f_n:[a,b]\to \mathbb{R}$ is continuously differentiable, $f:[a,b]\to \mathbb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Continuous Functions) (1)](../../part-01/continuous-functions/043-continuous-functions.md)
+- [Definition (Section on Derivative)](../../part-01/section-on-derivative/050-definition.md)
+
+## Proof depends on
+
+- [Theorem (Fundamental Theorem of Calculus) (Fundamental Theorem of Calculus section) (1)](../fundamental-theorem-of-calculus/078-fundamental-theorem-of-calculus.md)
 
 ## Sources
 

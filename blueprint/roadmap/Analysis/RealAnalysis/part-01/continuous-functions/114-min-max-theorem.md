@@ -12,7 +12,13 @@ Let $f:[a,b]\to \mathbb{R}$. If $f$ is continuous, then $f$ achieves an absolute
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Continuous Functions) (1)](043-continuous-functions.md)
+- [Definition (Absolute Minimum/Maximum) (Continuous Functions) (1)](045-absolute-minimum-maximum.md)
+
+## Proof depends on
+
+- [Theorem (Bolzano-Weierstrass) (Limsup/Liminf section)](../limsup-liminf/029-bolzano-weierstrass.md)
+- [Theorem (Continuous Functions) (1)](039-theorem.md)
 
 ## Sources
 

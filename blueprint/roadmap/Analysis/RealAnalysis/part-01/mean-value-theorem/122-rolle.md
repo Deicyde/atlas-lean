@@ -12,7 +12,13 @@ Let $f:[a,b]\to \mathbb{R}$ be continuous and differentiable on $(a,b)$. If $f(a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Continuous Functions) (1)](../continuous-functions/043-continuous-functions.md)
+- [Definition (Section on Derivative)](../section-on-derivative/050-definition.md)
+
+## Proof depends on
+
+- [Theorem (Min-Max Theorem) (Continuous Functions) (1)](../continuous-functions/046-min-max-theorem.md)
+- [Theorem (Section on Mean Value Theorem)](../section-on-mean-value-theorem/047-theorem.md)
 
 ## Sources
 

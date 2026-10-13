@@ -11,7 +11,7 @@ $P_n(x)$ is the $n$-th order Taylor polynomial for $f$ at $x_0$. $R_n(x)$ is the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem (Taylor) (Taylor's Theorem section)](061-taylor.md)
 
 ## Sources
 

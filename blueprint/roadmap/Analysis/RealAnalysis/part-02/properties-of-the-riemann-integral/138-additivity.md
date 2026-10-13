@@ -12,7 +12,8 @@ If $f\in C([a,b])$ and $a<c<b$, then $\int_a^b f = \int_a^c f + \int_c^b f.$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (C((a,b)))](../the-riemann-integral/064-a-b.md)
+- [Theorem (Riemann Integral) (The Riemann Integral section)](../the-riemann-integral/068-riemann-integral.md)
 
 ## Sources
 

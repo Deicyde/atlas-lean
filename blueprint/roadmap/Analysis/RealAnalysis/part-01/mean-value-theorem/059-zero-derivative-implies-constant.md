@@ -12,7 +12,11 @@ If $f:I\to \mathbb{R}$ is differentiable and $f'(x) = 0$ for all $x\in I$, then 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section on Derivative)](../section-on-derivative/050-definition.md)
+
+## Proof depends on
+
+- [Theorem (Mean Value Theorem) (Mean Value Theorem section) (1)](058-mean-value-theorem.md)
 
 ## Sources
 

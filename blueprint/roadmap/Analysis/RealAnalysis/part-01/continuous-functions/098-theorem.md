@@ -14,6 +14,7 @@ Let $c$ be a cluster point of $S\subset \mathbb{R}$, and let $f: S\to \mathbb{R}
 
 - [Definition (Function Convergence) (Continuous Functions, Limits of Functions) (1)](041-function-convergence.md)
 - [Definition (Cluster Point) (Continuous Functions, Limits of Functions) (1)](040-cluster-point.md)
+- [Definition (Set Relations) (Basic Set Theory) (1)](../basic-set-theory/001-set-relations.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ $\exists! r\in \mathbb{R}$ such that $r>0$ and $r^2 =2$. In other words, $\sqrt 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Real Numbers)](005-theorem.md)
+
 ## Sources
 
 - [MIT 18.100A Real Analysis (Fall 2020), Real Numbers section, Lecture 4](../../../../../sources/v1/RealAnalysis.md)

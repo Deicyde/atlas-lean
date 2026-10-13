@@ -11,7 +11,7 @@ For $f\in C([a,b])$, $\eta >0$, we define the modulus of continuity $w_f(\eta) =
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (C((a,b)))](064-a-b.md)
 
 ## Sources
 

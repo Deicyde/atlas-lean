@@ -12,7 +12,12 @@ Let $f:[a,b] \to \mathbb{R}$ be continuous, and let $f$ be differentiable on $(a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Continuous Functions) (1)](../continuous-functions/043-continuous-functions.md)
+- [Definition (Section on Derivative)](../section-on-derivative/050-definition.md)
+
+## Proof depends on
+
+- [Theorem (Rolle) (Section on Mean Value Theorem)](../section-on-mean-value-theorem/057-rolle.md)
 
 ## Sources
 

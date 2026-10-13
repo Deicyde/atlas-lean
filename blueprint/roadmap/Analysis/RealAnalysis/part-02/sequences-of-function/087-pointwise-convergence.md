@@ -11,7 +11,7 @@ For $n\in \mathbb{N}$, let $f_n: S\to \mathbb{R}$. Let $f:S\to \mathbb{R}$. We s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sequence Convergence of Reals) (Sequences and Series, Sequences and Limits) (1)](../../part-01/sequences-and-series/022-sequence-convergence-of-reals.md)
 
 ## Sources
 

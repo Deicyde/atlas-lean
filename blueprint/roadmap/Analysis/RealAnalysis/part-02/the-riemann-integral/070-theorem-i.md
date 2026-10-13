@@ -13,6 +13,8 @@ For all $f\in C([a,b])$, $\lim_{\eta\to 0} w_f(\eta) = 0$. In other words, for a
 ## Depends on
 
 - [Definition (Modulus of Continuity) (The Riemann Integral section)](069-modulus-of-continuity.md)
+- [Definition (Function Convergence) (Continuous Functions, Limits of Functions) (1)](../../part-01/continuous-functions/041-function-convergence.md)
+- [Definition (C((a,b)))](064-a-b.md)
 
 ## Sources
 

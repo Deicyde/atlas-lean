@@ -14,6 +14,10 @@ This concept was invented by Pascal in 1665. Let $P(n)$ be a statement depending
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Axiom (Well-ordering property) (Basic Set Theory, Mathematical Induction)](003-well-ordering-property.md)
+
 ## Sources
 
 - [MIT 18.100A Real Analysis (Fall 2020), Basic Set Theory, Mathematical Induction](../../../../../sources/v1/RealAnalysis.md)

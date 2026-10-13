@@ -12,7 +12,7 @@ A sequence $\{x_n\}$ is Cauchy if $\forall \epsilon>0$ $\exists M \in \mathbb{N}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sequence of Reals) (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/021-sequence-of-reals.md)
 
 ## Sources
 

@@ -11,7 +11,9 @@ An ordered set $S$ has the least upper bound property if every $E \subset S$ whi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Set Relations) (Basic Set Theory) (1)](../basic-set-theory/001-set-relations.md)
+- [Definition (Ordered set) (Real Numbers, Ordered Sets & Fields)](011-ordered-set.md)
+- [Definition (Bounded Above/Below) (Real Numbers, Ordered Sets & Fields)](012-bounded-above-below.md)
 
 ## Sources
 

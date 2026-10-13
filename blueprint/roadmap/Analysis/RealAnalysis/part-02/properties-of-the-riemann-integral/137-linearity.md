@@ -12,7 +12,8 @@ If $f,g\in C([a,b])$ and $\alpha \in \mathbb{R}$, then $\int_a^b (\alpha f + g) 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (C((a,b)))](../the-riemann-integral/064-a-b.md)
+- [Theorem (Riemann Integral) (The Riemann Integral section)](../the-riemann-integral/068-riemann-integral.md)
 
 ## Sources
 

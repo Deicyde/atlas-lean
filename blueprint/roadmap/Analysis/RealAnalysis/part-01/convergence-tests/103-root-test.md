@@ -12,7 +12,7 @@ Let $\sum x_n$ be a series and suppose that $L = \lim_{n\to \infty} |x_n|^{1/n}$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sequence Convergence of Reals) (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/022-sequence-convergence-of-reals.md)
 
 ## Sources
 

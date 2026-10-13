@@ -12,7 +12,14 @@ Suppose $f\in C([a,b])$. (1) If $F:[a,b] \to \mathbb{R}$ is differentiable and $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section on Derivative)](../../part-01/section-on-derivative/050-definition.md)
+- [Definition (C((a,b)))](../the-riemann-integral/064-a-b.md)
+- [Theorem (Riemann Integral) (The Riemann Integral section)](../the-riemann-integral/068-riemann-integral.md)
+
+## Proof depends on
+
+- [Theorem (Mean Value Theorem) (Mean Value Theorem section) (1)](../../part-01/mean-value-theorem/058-mean-value-theorem.md)
+- [Theorem (Comparison and Triangle Inequality for Integrals)](../properties-of-the-riemann-integral/077-comparison-and-triangle-inequality-for-i.md)
 
 ## Sources
 

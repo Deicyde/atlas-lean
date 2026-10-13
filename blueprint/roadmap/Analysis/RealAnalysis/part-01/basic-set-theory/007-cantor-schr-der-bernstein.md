@@ -12,7 +12,7 @@ If $|A| \leq |B|$ and $|B| \leq |A|$ then $|A| = |B|$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Cardinality) (Basic Set Theory, Cardinality)](006-cardinality.md)
 
 ## Sources
 

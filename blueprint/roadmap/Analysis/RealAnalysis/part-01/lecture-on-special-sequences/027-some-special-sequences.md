@@ -12,7 +12,11 @@ What follows are some special sequences to have in our toolbox. (1) If $p>0$, th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sequence Convergence of Reals) (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/022-sequence-convergence-of-reals.md)
+
+## Proof depends on
+
+- [Theorem (Squeeze Theorem) (Lecture 8, Facts About Limits)](../lecture-8/026-squeeze-theorem.md)
 
 ## Sources
 
