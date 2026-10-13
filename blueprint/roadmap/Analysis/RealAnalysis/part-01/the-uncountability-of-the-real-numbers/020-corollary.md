@@ -6,7 +6,7 @@ proof: formalized
 lean: RealNumbers.real_uncountable
 ---
 
-# Corollary (The Uncountability of the Real Numbers section) [1]
+# Corollary (The Uncountability of the Real Numbers section) (1)
 
 The set of real numbers, $\mathbb{R}$, is uncountable.
 

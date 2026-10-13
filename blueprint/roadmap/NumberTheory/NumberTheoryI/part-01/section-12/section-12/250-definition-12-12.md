@@ -1,8 +1,6 @@
 ---
 declaration: def
 origin: cited
-statement: formalized
-lean: extensionDiscriminant
 ---
 
 # Definition 12.12
@@ -11,7 +9,7 @@ Assume $AKLB$. The discriminant $D_{L/K}$ of $L/K$ (and the discriminant $D_{B/A
 
 ## Depends on
 
-- [Definition 12.9](247-definition-12-9.md)
+This node has no prerequisites.
 
 ## Sources
 

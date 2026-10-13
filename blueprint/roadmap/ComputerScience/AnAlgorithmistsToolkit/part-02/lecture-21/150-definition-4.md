@@ -5,7 +5,7 @@ statement: formalized
 lean: An_Algorithmists_Toolkit.energyNorm
 ---
 
-# Definition 4 [3]
+# Definition 4 (Lecture 21, Section 4.3)
 
 The energy norm of a vector $e$ is given by $\|e\|_A = e^\top A e$.
 

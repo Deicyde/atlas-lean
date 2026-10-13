@@ -5,7 +5,7 @@ statement: formalized
 lean: SymplecticLinearAlgebra.symplecticVolumeForm
 ---
 
-# Definition 6 [1]
+# Definition 6 (Lecture 2, Section 2 (Symplectic Vector Spaces))
 
 The symplectic volume form is $\frac{1}{n!} \Omega^{\wedge n}$ (where $\Omega$ is considered as an element of $\bigwedge^{2}(V^{*})$).
 

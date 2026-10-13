@@ -4,7 +4,7 @@ origin: cited
 lean: ConvexGeometry.lemma8_cone_construction
 ---
 
-# Lemma 8 [2]
+# Lemma 8 (Section 3.3)
 
 We can turn $K'$ into a cone while decreasing the ratio.
 

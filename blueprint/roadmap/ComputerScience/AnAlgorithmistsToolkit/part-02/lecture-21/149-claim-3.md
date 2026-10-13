@@ -6,7 +6,7 @@ proof: formalized
 lean: An_Algorithmists_Toolkit.steepest_descent_eigenvector_convergence
 ---
 
-# Claim 3 [2]
+# Claim 3 (Lecture 21, Section 4.3)
 
 If the current error vector $e_i$ is an eigenvector of $A$, then the subsequent descent step moves directly to the correct answer. That is, $e_{i+1} = 0$.
 

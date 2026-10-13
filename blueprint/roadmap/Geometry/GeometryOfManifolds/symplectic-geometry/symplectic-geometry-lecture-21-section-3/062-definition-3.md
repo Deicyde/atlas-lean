@@ -4,7 +4,7 @@ origin: cited
 lean: FiberSum
 ---
 
-# Definition 3 [4]
+# Definition 3 (Symplectic Geometry, Lecture 21, Section 3)
 
 A symplectic sum is a connected sum along a codimension 2 symplectic submanifold.
 

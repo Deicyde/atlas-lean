@@ -10,7 +10,6 @@ Let $f \in k(C)^{\times}$ for some curve $C/k$. Then $f$ has the same number of 
 
 ## Depends on
 
-- [Definition 19.6](203-definition-19-6.md)
 - [Definition 19.11](207-definition-19-11.md)
 
 ## Sources

@@ -5,7 +5,7 @@ statement: formalized
 lean: corollary2_green_operator_summary
 ---
 
-# Corollary 2 [2]
+# Corollary 2 (Lecture 16)
 
 $\exists G \colon \Omega^{k} \rightarrow \Omega^{k}$ and $H \colon \Omega^{k} \rightarrow \mathcal{H}^{k} = \operatorname{Ker} \Delta$ such that $G\Delta = \Delta G = \operatorname{id} - H$ and $\operatorname{Im}(G\Delta) = (\mathcal{H}^{k})^{\perp}$.
 

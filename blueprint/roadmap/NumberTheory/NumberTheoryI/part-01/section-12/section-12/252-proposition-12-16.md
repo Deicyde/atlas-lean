@@ -10,7 +10,7 @@ Assume $AKLB$ and let $\mathfrak{p}$ be a prime of $A$. Then $$D_{B/A} \hat{A}_{
 
 ## Depends on
 
-- [Definition 12.12](250-definition-12-12.md)
+This node has no prerequisites.
 
 ## Sources
 

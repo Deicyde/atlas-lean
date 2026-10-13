@@ -6,7 +6,7 @@ proof: formalized
 lean: RealNumbers.Ioc_zero_one_uncountable
 ---
 
-# Theorem (Cantor) [4]
+# Theorem (Cantor) (The Uncountability of the Real Numbers section) (2)
 
 $(0,1]$ is uncountable.
 

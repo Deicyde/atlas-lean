@@ -6,7 +6,7 @@ proof: formalized
 lean: Integration.integration_by_parts
 ---
 
-# Theorem (Integration by Parts) [2]
+# Theorem (Integration by Parts) (Fundamental Theorem of Calculus section) (2)
 
 Suppose $f,g\in C([a,b])$ and $f',g'\in C([a,b])$. Then, $\int_a^b f'g = (f(b)g(b)-f(a)g(a)) - \int_a^b fg'$.
 

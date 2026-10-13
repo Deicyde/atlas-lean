@@ -12,8 +12,7 @@ Assume $AKLB$ and let $S$ be a multiplicative subset of $A$. Then $$S^{-1} D_{B/
 
 ## Depends on
 
-- [Definition 12.12](250-definition-12-12.md)
-- [Definition 12.9](247-definition-12-9.md)
+This node has no prerequisites.
 
 ## Sources
 

@@ -5,7 +5,7 @@ statement: formalized
 lean: FunctionSequences.radiusOfConvergence
 ---
 
-# Definition (Radius of Convergence) [2]
+# Definition (Radius of Convergence) (Sequences of Function, Power Series) (2)
 
 In the above theorem, we define $p$ to be the radius of convergence.
 

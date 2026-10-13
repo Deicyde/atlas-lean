@@ -4,7 +4,7 @@ origin: cited
 lean: SzemerediTrotter.r_rich_lines_bound_all
 ---
 
-# Theorem (Szemeredi-Trotter) [2]
+# Theorem (Szemeredi-Trotter) (Section on Sharp Projection Theorems III, Subsection on Well spaced case)
 
 If $E \subset \mathbb{R}^2$ is a set of $N$ points and $L_R(E)$ the set of $R$-rich lines, then $|L_R(E)| \lesssim \frac{N^2}{R^3} + \frac{N}{R}$.
 

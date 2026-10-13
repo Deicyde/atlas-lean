@@ -5,7 +5,7 @@ statement: formalized
 lean: ContinuousFunctions.FunctionConvergesAt
 ---
 
-# Definition (Function Convergence) [2]
+# Definition (Function Convergence) (Continuous Functions, Limits of Functions) (2)
 
 Let $S\subset \mathbb{R}$, let $c$ be a cluster point of $S$, and $f:S\to \mathbb{R}$. We say that $f(x)$ converges to $L\in \mathbb{R}$ at $c$ if $\forall \epsilon>0$ $\exists \delta >0$ such that if $x\in S$ and $0<|x-c|<\delta$, then $|f(x)-L| < \epsilon$.
 

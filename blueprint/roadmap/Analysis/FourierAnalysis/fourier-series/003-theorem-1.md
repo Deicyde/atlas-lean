@@ -6,7 +6,7 @@ proof: formalized
 lean: FejerL1Density.fejer_L1_convergence
 ---
 
-# Theorem 1 [1]
+# Theorem 1 (Fourier Series, Continued (part 3))
 
 Let $f \in L^1(\mathbb{T})$. Then $\lim_{N \to \infty} \|f - \sigma_N f\|_1 = 0$. In particular, trigonometric polynomials are dense in $L^1(\mathbb{T})$.
 

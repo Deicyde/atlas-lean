@@ -1,4 +1,4 @@
 # Section on Cardinality
 
-- [Definition (Cardinality) \[2\]](125-cardinality.md)
-- [Theorem (Cantor-Schröder-Bernstein) \[2\]](126-cantor-schr-der-bernstein.md)
+- [Definition (Cardinality) (Section on Cardinality)](125-cardinality.md)
+- [Theorem (Cantor-Schröder-Bernstein) (Section on Cardinality)](126-cantor-schr-der-bernstein.md)

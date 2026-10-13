@@ -11,7 +11,7 @@ Assume that $g(x)$ is a continuous function on $\mathbb{R}^{n}$ that verifies th
 
 ## Depends on
 
-- [Definition 1.0.1 \[2\]](../class-meeting-5/013-definition-1-0-1.md)
+- [Definition 1.0.1 (Class Meeting #5, Section 1 (The Fundamental solution))](../class-meeting-5/013-definition-1-0-1.md)
 
 ## Sources
 

@@ -6,7 +6,7 @@ proof: formalized
 lean: Real_Analysis.Series.root_test
 ---
 
-# Theorem (Root test) [1]
+# Theorem (Root test) (Convergence tests) (1)
 
 Let $\sum x_n$ be a series and suppose that $L = \lim_{n\to \infty} |x_n|^{1/n}$ exists. Then, (1) if $L<1$ then $\sum x_n$ converges absolutely; (2) if $L>1$ then $\sum x_n$ diverges.
 

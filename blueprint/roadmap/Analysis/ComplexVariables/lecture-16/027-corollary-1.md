@@ -6,13 +6,13 @@ proof: formalized
 lean: IsHarmonic.mean_value_property
 ---
 
-# Corollary 1 [2]
+# Corollary 1 (Lecture 16: Harmonic Functions)
 
 If $u$ is harmonic in $\Omega$, then if the disk $|z - z_{0}| \leq r$ lies in $\Omega$, $$u(z_{0}) = \frac{1}{2\pi} \int_{0}^{2\pi} u(z_{0} + r e^{i\theta})\, d\theta.$$
 
 ## Depends on
 
-- [Definition 1 \[4\]](025-definition-1.md)
+- [Definition 1 (Lecture 16: Harmonic Functions)](025-definition-1.md)
 
 ## Sources
 

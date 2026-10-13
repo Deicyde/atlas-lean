@@ -10,7 +10,6 @@ For any divisor $D$ we have $\operatorname{dim} \mathcal{L}(D) \leq \operatornam
 
 ## Depends on
 
-- [Definition 19.6](../section-19/203-definition-19-6.md)
 - [Definition 21.2](225-definition-21-2.md)
 - [Definition 21.1](224-definition-21-1.md)
 

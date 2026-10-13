@@ -6,7 +6,7 @@ proof: formalized
 lean: convexHull_finset_eq_convex_combinations
 ---
 
-# Proposition 1 [2]
+# Proposition 1 (Lecture 3: Analytic Functions; Rational Functions, Remarks on Lecture 3)
 
 Given $a_{1}, \cdots, a_{n} \in \mathbb{C}$, the set $$\left\{\sum_{i=1}^{n} m_{i} a_{i} \mid m_{i} \geq 0,\, \sum_{i=1}^{n} m_{i} = 1\right\}$$ is the intersection $C$ of all convex sets containing all $a_{i}$ (which is called the convex hull of $a_{1}, \cdots, a_{n}$).
 

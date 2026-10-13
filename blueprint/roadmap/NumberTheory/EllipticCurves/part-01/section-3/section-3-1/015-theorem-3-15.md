@@ -14,7 +14,7 @@ For every prime $p$ and positive integer $n$ there exist primitive
 
 ## Depends on
 
-- [Definition 3.14](014-definition-3-14.md)
+This node has no prerequisites.
 
 ## Sources
 

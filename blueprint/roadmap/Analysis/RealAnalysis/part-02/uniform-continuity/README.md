@@ -1,3 +1,3 @@
 # Uniform Continuity
 
-- [Definition (Uniformly Continuous) \[2\]](117-uniformly-continuous.md)
+- [Definition (Uniformly Continuous) (Uniform Continuity section)](117-uniformly-continuous.md)

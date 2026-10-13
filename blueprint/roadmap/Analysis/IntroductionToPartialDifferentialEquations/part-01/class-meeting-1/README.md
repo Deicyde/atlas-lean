@@ -1,6 +1,6 @@
 # Class Meeting 1
 
-- [Definition 1.0.1 \[1\]](001-definition-1-0-1.md)
+- [Definition 1.0.1 (Class Meeting #1, Section 1)](001-definition-1-0-1.md)
 - [Definition 4.0.2](002-definition-4-0-2.md)
 - [Definition 4.0.3](003-definition-4-0-3.md)
 - [Definition 4.0.4](004-definition-4-0-4.md)

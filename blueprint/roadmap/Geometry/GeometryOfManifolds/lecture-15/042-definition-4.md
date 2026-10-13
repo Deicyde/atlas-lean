@@ -5,13 +5,13 @@ statement: formalized
 lean: HarmonicForms
 ---
 
-# Definition 4 [3]
+# Definition 4 (Lecture 15, Section 1, Hodge Theory)
 
 The space of harmonic forms is the set $\mathcal{H}^{k} = \{\alpha \in \Omega^{k} \mid \Delta\alpha = 0\}$.
 
 ## Depends on
 
-- [Definition 2 \[3\]](035-definition-2.md)
+- [Definition 2 (Lecture 15, Section 1, Hodge Theory)](035-definition-2.md)
 
 ## Sources
 

@@ -5,4 +5,4 @@
 - [Theorem (Linnik)](026-linnik.md)
 - [Corollary 4](027-corollary-4.md)
 - [Corollary 5](028-corollary-5.md)
-- [Lemma (Dictionary) \[1\]](029-dictionary.md)
+- [Lemma (Dictionary) (Section: The large sieve, Subsection: Proof of Linnik's Large Sieve inequality)](029-dictionary.md)

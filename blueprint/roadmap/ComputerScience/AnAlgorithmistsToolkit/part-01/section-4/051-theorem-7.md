@@ -4,7 +4,7 @@ origin: cited
 lean: BipartiteMatching.matching_ratio_bound
 ---
 
-# Theorem 7 [1]
+# Theorem 7 (Section 4.2.3 (Bounding the $r_k$), Lecture 5)
 
 Let $G$ be a bipartite graph of minimum degree $\geq n/2$. Then $1/n^2 \leq r_k \leq n^2$ for all $k$.
 

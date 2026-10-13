@@ -8,4 +8,4 @@
 - [Theorem (MIN_TM is T-unrecognizable)](048-min-tm-is-t-unrecognizable.md)
 - [Theorem (Gödel's First Incompleteness Theorem)](049-g-del-s-first-incompleteness-theorem.md)
 - [Theorem (A True but Unprovable Statement)](050-a-true-but-unprovable-statement.md)
-- [Theorem (Fixed-point Theorem) \[2\]](051-fixed-point-theorem.md)
+- [Theorem (Fixed-point Theorem) (Lecture 11, Ex 2: Fixed-point Theorem section)](051-fixed-point-theorem.md)

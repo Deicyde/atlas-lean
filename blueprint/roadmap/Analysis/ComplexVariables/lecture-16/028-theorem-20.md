@@ -12,7 +12,7 @@ If $u$ is harmonic in $\Omega$, and $\{z \mid r_{1} \leq |z - z_{0}| \leq r_{2}\
 
 ## Depends on
 
-- [Definition 1 \[4\]](025-definition-1.md)
+- [Definition 1 (Lecture 16: Harmonic Functions)](025-definition-1.md)
 
 ## Sources
 

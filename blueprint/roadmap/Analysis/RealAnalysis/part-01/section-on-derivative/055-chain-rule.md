@@ -6,7 +6,7 @@ proof: formalized
 lean: chain_rule
 ---
 
-# Theorem (Chain Rule) [1]
+# Theorem (Chain Rule) (Section on Derivative)
 
 Let $I_1, I_2$ be two intervals, $g:I_1\to I_2$ be differentiable at $c\in I_1$, and $f:I_2 \to \mathbb{R}$ differentiable at $g(c).$ Then, $f\circ g:I_1 \to \mathbb{R}$ is differentiable at $c$ and $(f\circ g)'(c) = f'(g(c)) g'(c).$
 

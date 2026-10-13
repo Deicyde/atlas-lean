@@ -5,7 +5,7 @@ statement: formalized
 lean: MoebiusTrans.IsParabolic
 ---
 
-# Definition 1 [1]
+# Definition 1 (Lecture 7: Linear Transformations)
 
 - $S$ is parabolic if either it is the identity or has exactly one fixed point.
 - $S$ is strictly hyperbolic if $k > 0$ in (12) but $k \neq 1$.

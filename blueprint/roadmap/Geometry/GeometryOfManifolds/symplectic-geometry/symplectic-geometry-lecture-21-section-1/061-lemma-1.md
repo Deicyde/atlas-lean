@@ -4,7 +4,7 @@ origin: cited
 lean: kodaira_thurston_first_betti
 ---
 
-# Lemma 1 [2]
+# Lemma 1 (Symplectic Geometry, Lecture 21, Section 1)
 
 $H_{1}(M, \mathbb{Z}) = \mathbb{Z}^{3}$.
 

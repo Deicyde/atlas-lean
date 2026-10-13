@@ -6,7 +6,7 @@ proof: formalized
 lean: Factorization.polynomial_ufd
 ---
 
-# Theorem (Theorem \ref{R UFD implies R[x]})
+# Theorem (Theorem \ref{R UFD implies R(x)})
 
 If $R$ is a UFD, then $R[x]$ is also a UFD.
 

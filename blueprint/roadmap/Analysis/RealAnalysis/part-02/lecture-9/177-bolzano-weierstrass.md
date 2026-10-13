@@ -6,7 +6,7 @@ proof: formalized
 lean: Sequences.bolzano_weierstrass
 ---
 
-# Theorem (Bolzano-Weierstrass) [2]
+# Theorem (Bolzano-Weierstrass) (Lecture 9)
 
 Every bounded sequence has a convergent subsequence.
 

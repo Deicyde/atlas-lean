@@ -7,7 +7,7 @@
 Every target in v1/Atlas/<Book>/report.json becomes one roadmap article: the
 informal statement from the textbook, its source location, and the Lean
 declaration that ATLAS v1 matched to it. Lean names and declaration keywords
-come from Autoform's own source index, so `autoform check --lean-root v1`
+come from Autoform's own source index, so `autoform check --lean-root .`
 accepts exactly what this script asserts.
 
 Status follows v1's own evaluation. A target that passed review is
@@ -234,6 +234,21 @@ def chapter(title: str, targets: list[Target]) -> Container:
     return chunk(title, slugify(title), [chunk(name, slugify(name), items) for name, items in sections])
 
 
+def disambiguate(targets: list[Target], rename) -> None:
+    """Make titles unique within a book: by location first, then by ordinal."""
+    counts: dict[str, int] = defaultdict(int)
+    for target in targets:
+        counts[target.title] += 1
+    ordinals: dict[str, int] = defaultdict(int)
+    for target in targets:
+        if counts[target.title] > 1:
+            if rename is not None and target.location not in target.title:
+                target.title = rename(target)
+            elif rename is None:
+                ordinals[target.title] += 1
+                target.title = f"{target.title} ({ordinals[target.title]})"
+
+
 def load_book(book: str, index) -> tuple[list[Target], dict]:
     report = json.loads((V1 / "Atlas" / book / "report.json").read_text())
     details = sorted(report["statements"]["details"], key=lambda item: item["idx"])
@@ -244,7 +259,7 @@ def load_book(book: str, index) -> tuple[list[Target], dict]:
         found = [index.find(name) for name in names]
         # Unqualified names such as `Place` recur across v1 books, and the
         # index keeps one; link only a declaration from this book.
-        resolved = bool(names) and all(item and item.path.parts[:2] == ("Atlas", book) for item in found)
+        resolved = bool(names) and all(item and item.path.parts[:3] == ("v1", "Atlas", book) for item in found)
         if names and not resolved:
             unresolved.append(item)
         if resolved:
@@ -256,7 +271,10 @@ def load_book(book: str, index) -> tuple[list[Target], dict]:
         sorry_free = (item.get("sorry_deps") or "").startswith("None")
         statement = resolved and item["passed"] and (sorry_free or not is_data)
         name = " ".join(item["name"].split())
-        title = f"{name} ({item['location'].strip()})" if BARE_NAME.fullmatch(name) else name
+        # Brackets in link text stop `autoform render` placing the leaf.
+        title = name.replace("[", "(").replace("]", ")")
+        if BARE_NAME.fullmatch(name):
+            title = f"{title} ({item['location'].strip()})"
         label = re.search(r"\(([^()]+)\)", name)
         targets.append(
             Target(
@@ -273,14 +291,8 @@ def load_book(book: str, index) -> tuple[list[Target], dict]:
                 deps=[name.strip() for name in (item.get("deps") or "").split(",") if name.strip()],
             )
         )
-    seen: dict[str, int] = defaultdict(int)
-    for target in targets:
-        seen[target.title] += 1
-    repeats: dict[str, int] = defaultdict(int)
-    for target in targets:
-        if seen[target.title] > 1:
-            repeats[target.title] += 1
-            target.title = f"{target.title} [{repeats[target.title]}]"
+    disambiguate(targets, lambda target: f"{target.title} ({target.location})")
+    disambiguate(targets, None)
     by_lean: dict[str, Target] = {}
     for target in targets:
         for name in (target.lean or "").split(", "):
@@ -441,8 +453,8 @@ def render_source(book: str, url: str, summary: dict) -> str:
             "## Targets without a linked Lean declaration",
             "",
             "These targets have no `lean:` link: v1 matched no declaration, the",
-            "matched name is not found by Autoform's lexical scan of `v1/`, or another",
-            "v1 book declares the same name.",
+            "matched name is not found by Autoform's lexical scan, or another v1 book",
+            "or a root library declares the same name.",
             "",
             "| Target | v1 match |",
             "| --- | --- |",
@@ -489,7 +501,7 @@ def render_roadmap_root(subjects: list[str], previous: str | None) -> str:
 
 
 def generate(selected: list[str]) -> dict[Path, str]:
-    index = index_project(V1)
+    index = index_project(ROOT)
     urls = book_urls()
     files: dict[Path, str] = {}
     previous = lambda path: path.read_text() if path.is_file() else None  # noqa: E731

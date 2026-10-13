@@ -6,7 +6,7 @@ proof: formalized
 lean: BooleanFourier.exists_fourierCoeff_ge_of_agreementProb
 ---
 
-# Theorem 1.2 [1]
+# Theorem 1.2 (Lecture 2, Section 1)
 
 Suppose $f \colon \{-1,1\}^n \to \{-1,1\}$ is a function such that $\Pr_{x,y}[f(x)f(y) = f(xy)] \geqslant \frac{1}{2} + \delta$. Then there exists $S \subseteq [n]$ such that $\widehat{f}(S) \geqslant 2\delta$.
 

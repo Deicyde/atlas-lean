@@ -6,7 +6,7 @@ proof: formalized
 lean: ContinuousFunctions.polynomial_has_real_root
 ---
 
-# Theorem (Continuous Functions) [2]
+# Theorem (Continuous Functions) (2)
 
 The polynomial $f(x) = x^{2021} + x^{2020} + 9.03x + 1$ has at least one real root.
 

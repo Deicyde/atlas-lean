@@ -11,7 +11,7 @@ A divisor $D = \sum n_P P \in \operatorname{Div} C$ is defined over $k$ if for a
 
 ## Depends on
 
-- [Definition 19.6](203-definition-19-6.md)
+This node has no prerequisites.
 
 ## Sources
 

@@ -5,7 +5,7 @@ statement: formalized
 lean: BrunnMinkowski.minkowskiSum
 ---
 
-# Definition 6 [3]
+# Definition 6 (Section 6)
 
 For $A, B \in \mathbb{R}^n$, the Minkowski sum $A \oplus B$ is given by $A \oplus B = \{a + b \mid a \in A,\, b \in B\}$.
 

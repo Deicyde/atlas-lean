@@ -5,7 +5,7 @@ statement: formalized
 lean: ConvergesPointwise
 ---
 
-# Definition (Pointwise Convergence) [1]
+# Definition (Pointwise Convergence) (Sequences of Function, Pointwise and Uniform Convergence) (1)
 
 For $n\in \mathbb{N}$, let $f_n: S\to \mathbb{R}$. Let $f:S\to \mathbb{R}$. We say that $\{f_n\}$ converges pointwise to $f$ if for all $x\in S$, $\lim_{n\to \infty} f_n(x) = f(x)$.
 

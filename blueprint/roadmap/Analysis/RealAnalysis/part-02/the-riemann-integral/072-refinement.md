@@ -5,13 +5,13 @@ statement: formalized
 lean: Integration.Partition.IsRefinement
 ---
 
-# Definition (Refinement) [1]
+# Definition (Refinement) (The Riemann Integral section)
 
 If $(\underline{x}, \underline{\xi})$ and $(\underline{x}', \underline{\xi}')$ are tagged partitions of $[a,b]$ such that $\underline{x}\subset \underline{x}'$, we say $\underline{x}'$ is a refinement of $\underline{x}$.
 
 ## Depends on
 
-- [Definition (Partition) \[1\]](065-partition.md)
+- [Definition (Partition) (The Riemann Integral section)](065-partition.md)
 
 ## Sources
 

@@ -5,13 +5,13 @@ statement: formalized
 lean: CM14.compatibleCurrent
 ---
 
-# Definition 1.0.2 [2]
+# Definition 1.0.2 (Class Meeting #13, Section 1)
 
 Given any vectorfield $X$, we associate to it the following compatible current, which is itself a vectorfield: ${}^{(X)} J^{\mu} \coloneqq T^{\mu \alpha} X_{\alpha}$.
 
 ## Depends on
 
-- [Definition 1.0.1 \[4\]](055-definition-1-0-1.md)
+- [Definition 1.0.1 (Class Meeting #13, Section 1)](055-definition-1-0-1.md)
 
 ## Sources
 

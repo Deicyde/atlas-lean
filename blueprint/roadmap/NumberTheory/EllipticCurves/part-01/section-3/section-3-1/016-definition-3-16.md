@@ -19,7 +19,7 @@ Order polynomials $f(x)=x^{n}-a_{n-1} x^{n-1}+\cdots+(-1)^{n} a_{0} \in
 
 ## Depends on
 
-- [Definition 3.14](014-definition-3-14.md)
+This node has no prerequisites.
 
 ## Sources
 

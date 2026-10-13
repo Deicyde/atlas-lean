@@ -1,5 +1,5 @@
 # Limsup/Liminf
 
 - [Theorem (Limsup/Liminf section)](025-theorem.md)
-- [Definition (Limsup/Liminf) \[1\]](028-limsup-liminf.md)
-- [Theorem (Bolzano-Weierstrass) \[1\]](029-bolzano-weierstrass.md)
+- [Definition (Limsup/Liminf) (Limsup/Liminf section)](028-limsup-liminf.md)
+- [Theorem (Bolzano-Weierstrass) (Limsup/Liminf section)](029-bolzano-weierstrass.md)

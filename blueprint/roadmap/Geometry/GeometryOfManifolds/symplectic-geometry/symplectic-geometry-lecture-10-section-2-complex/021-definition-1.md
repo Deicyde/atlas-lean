@@ -4,7 +4,7 @@ origin: cited
 lean: firstChernClassRep
 ---
 
-# Definition 1 [2]
+# Definition 1 (Symplectic Geometry, Lecture 10, Section 2 (Complex Vector Bundles and Chern Classes))
 
 The first Chern class of $L$ is $c_{1}(L) = \left[\frac{1}{2\pi} R^{\nabla}\right] \in H^{2}(M, \mathbb{R})$.
 

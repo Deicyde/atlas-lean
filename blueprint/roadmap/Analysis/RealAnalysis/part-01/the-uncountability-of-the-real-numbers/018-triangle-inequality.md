@@ -6,7 +6,7 @@ proof: formalized
 lean: RealNumbers.triangle_inequality
 ---
 
-# Theorem (Triangle Inequality) [1]
+# Theorem (Triangle Inequality) (The Uncountability of the Real Numbers section) (1)
 
 $\forall x,y\in \mathbb{R}$, $|x+y| \leq |x|+|y|$.
 

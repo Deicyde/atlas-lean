@@ -14,7 +14,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Theorem 1.1 \[1\]](../section-1/076-theorem-1-1.md)
+- [Theorem 1.1 (Section 1 (Motivation and statement))](../section-1/076-theorem-1-1.md)
 
 ## Sources
 

@@ -6,7 +6,7 @@ proof: formalized
 lean: RandomWalks.walkMatrix_mulVec_stationaryVec
 ---
 
-# Claim 2 [1]
+# Claim 2 (Lecture 4, Section 2)
 
 $W \cdot \pi = \pi$, where $W = W_G$ is the walk matrix and $\pi$ is the stationary distribution.
 

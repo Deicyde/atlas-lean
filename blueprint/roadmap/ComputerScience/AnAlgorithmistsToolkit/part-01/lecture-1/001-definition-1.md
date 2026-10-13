@@ -5,7 +5,7 @@ statement: formalized
 lean: Matrix.IsEigenvectorOf
 ---
 
-# Definition 1 [1]
+# Definition 1 (Lecture 1, Section 2)
 
 Let $M$ be an $n \times n$ matrix. Suppose that $Mx = \lambda x$ for $x \in \mathbb{R}^n$, $x \neq 0$, and $\lambda \in \mathbb{R}$. Then we call $x$ an eigenvector and $\lambda$ an eigenvalue of $M$.
 

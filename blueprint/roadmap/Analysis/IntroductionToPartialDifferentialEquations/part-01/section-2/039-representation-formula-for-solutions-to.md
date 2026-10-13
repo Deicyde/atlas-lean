@@ -10,7 +10,7 @@ The solution $u$ to (2.0.16) can be represented as $u(x)=-\int_{\Omega} f(y) G(x
 
 ## Depends on
 
-- [Definition 2.0.2 \[2\]](036-definition-2-0-2.md)
+- [Definition 2.0.2 (Section 2) (2)](036-definition-2-0-2.md)
 
 ## Sources
 

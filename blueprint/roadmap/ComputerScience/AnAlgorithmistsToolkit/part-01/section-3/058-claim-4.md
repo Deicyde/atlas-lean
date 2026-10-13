@@ -6,7 +6,7 @@ proof: formalized
 lean: Matchings.matching_terminates_log_steps
 ---
 
-# Claim 4 [2]
+# Claim 4 (Section 3.2)
 
 The previous algorithm finds a matching of $S$ and $T$ in $O(\log n)$ steps.
 

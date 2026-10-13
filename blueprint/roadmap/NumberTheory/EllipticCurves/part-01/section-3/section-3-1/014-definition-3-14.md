@@ -1,8 +1,6 @@
 ---
 declaration: def
 origin: cited
-statement: formalized
-lean: Polynomial.IsPrimitivePolynomial
 ---
 
 # Definition 3.14

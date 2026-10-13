@@ -6,7 +6,7 @@ proof: formalized
 lean: relative_extremum_def
 ---
 
-# Definition (Relative Maximum/Minimum) [2]
+# Definition (Relative Maximum/Minimum) (Mean Value Theorem section)
 
 Let $S \subset \mathbb{R}$ and $f:S\to \mathbb{R}$. Then, $f$ has a relative maximum at $c\in S$ if $\exists \delta>0$ such that for all $x\in S$, $|x-c|<\delta \implies f(x) \leq f(c).$ The definition for relative minimum is analogous.
 

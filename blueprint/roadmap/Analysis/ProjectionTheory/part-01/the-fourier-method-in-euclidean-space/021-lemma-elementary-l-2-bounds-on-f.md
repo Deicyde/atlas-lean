@@ -6,7 +6,7 @@ proof: formalized
 lean: LineSumDecomposition.norm_sq_lineSumFn_le
 ---
 
-# Lemma [Elementary $L^2$ bounds on $f$]
+# Lemma (Elementary $L^2$ bounds on $f$)
 
 We have $\|f\|^2_{L^2} \lesssim |\mathcal{L}| q + |\mathcal{L}|^2$.
 

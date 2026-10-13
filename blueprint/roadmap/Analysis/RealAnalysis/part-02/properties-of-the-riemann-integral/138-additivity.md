@@ -6,7 +6,7 @@ proof: formalized
 lean: Integration.integral_additivity
 ---
 
-# Theorem (Additivity) [2]
+# Theorem (Additivity) (Properties of the Riemann Integral)
 
 If $f\in C([a,b])$ and $a<c<b$, then $\int_a^b f = \int_a^c f + \int_c^b f.$
 

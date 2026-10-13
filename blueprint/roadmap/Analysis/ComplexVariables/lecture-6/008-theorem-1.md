@@ -6,7 +6,7 @@ proof: formalized
 lean: Lecture6.nonintersecting_circles_concentric
 ---
 
-# Theorem 1 [2]
+# Theorem 1 (Lecture 6: Conformal Maps; Linear Transformations)
 
 If $A$ and $B$ are two nonintersecting circles there exists a linear transformation mapping $A$ and $B$ into concentric circles.
 

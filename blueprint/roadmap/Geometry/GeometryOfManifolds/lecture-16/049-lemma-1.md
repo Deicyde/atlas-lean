@@ -6,7 +6,7 @@ proof: formalized
 lean: kahler_identities_all_four
 ---
 
-# Lemma 1 [1]
+# Lemma 1 (Lecture 16)
 
 For $X$ Kahler, $[L, d] = 0$, $[L^{*}, d^{*}] = 0$, $[L, d^{*}] = d_{C}$, $[L^{*}, d] = -d_{C}^{*}$.
 

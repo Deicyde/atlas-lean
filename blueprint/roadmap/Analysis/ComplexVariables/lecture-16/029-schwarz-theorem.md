@@ -12,7 +12,7 @@ Let $U$ be a real piecewise continuous function on $|z| = 1$ and define the Pois
 
 ## Depends on
 
-- [Definition 1 \[4\]](025-definition-1.md)
+- [Definition 1 (Lecture 16: Harmonic Functions)](025-definition-1.md)
 
 ## Sources
 

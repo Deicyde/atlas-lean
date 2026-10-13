@@ -5,7 +5,7 @@ statement: formalized
 lean: OrderedSetsFields.IsOrderedSet
 ---
 
-# Definition (Ordered set) [1]
+# Definition (Ordered set) (Real Numbers, Ordered Sets & Fields)
 
 An ordered set is a set $S$ with a relation $<$ called an ordering such that (1) $\forall x, y \in S$ either $x < y$, $y < x$, or $x = y$. (2) If $x < y$ and $y < z$ then $x < z$.
 

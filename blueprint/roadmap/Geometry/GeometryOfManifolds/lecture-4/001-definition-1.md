@@ -5,7 +5,7 @@ statement: formalized
 lean: IsSymplecticVectorField
 ---
 
-# Definition 1 [1]
+# Definition 1 (Lecture 4, Section 1 (Hamiltonian Vector Fields))
 
 $X$ is a symplectic vector field if $L_{X} \omega = 0$, i.e.\ $i_{X} \omega$ is closed. $X$ is Hamiltonian if $i_{X} \omega$ is exact.
 

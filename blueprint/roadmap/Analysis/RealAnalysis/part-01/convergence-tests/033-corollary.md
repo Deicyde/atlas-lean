@@ -6,7 +6,7 @@ proof: formalized
 lean: Real_Analysis.Series.alternating_harmonic_converges
 ---
 
-# Corollary (Convergence tests) [1]
+# Corollary (Convergence tests) (1)
 
 We already showed that $\sum \frac{(-1)^n}{n}$ does not absolutely converge. However, $\sum \frac{(-1)^n}{n}$ converges.
 

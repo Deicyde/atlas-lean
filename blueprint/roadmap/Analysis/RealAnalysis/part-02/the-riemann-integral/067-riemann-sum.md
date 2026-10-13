@@ -5,13 +5,13 @@ statement: formalized
 lean: Integration.riemannSum
 ---
 
-# Definition (Riemann sum) [1]
+# Definition (Riemann sum) (The Riemann Integral section)
 
 The Riemann sum of $f$ corresponding to $(\underline{x},\underline{\xi})$ is the number $S_f(\underline{x}, \underline{\xi}) \coloneqq \sum_{k=1}^n f(\xi_k) (x_k-x_{k-1}).$
 
 ## Depends on
 
-- [Definition (Tag) \[1\]](066-tag.md)
+- [Definition (Tag) (The Riemann Integral section)](066-tag.md)
 
 ## Sources
 

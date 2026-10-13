@@ -10,7 +10,7 @@ Let $F/k$ be a function field and let $\mathcal{A}$ be its adele ring. For a div
 
 ## Depends on
 
-- [Definition 22.5](../section-22-2/238-definition-22-5.md)
+This node has no prerequisites.
 
 ## Sources
 

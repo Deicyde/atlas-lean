@@ -5,7 +5,7 @@ statement: formalized
 lean: SymplecticFibration
 ---
 
-# Definition 1 [4]
+# Definition 1 (Symplectic Geometry, Lecture 21, Section 2)
 
 A fibration $f \colon M \rightarrow B$ with generic fiber $(F, \omega_{F})$ a symplectic manifold is symplectic if the structure group reduces to $\operatorname{Symp}(F, \omega_{F})$, i.e.\ $\exists$ local trivializations $f \colon f^{-1}(U_{i}) \cong U_{i} \times F \rightarrow U_{i}$ such that, over $U_{i} \cap U_{j}$, the change of trivialization is a symplectomorphism.
 

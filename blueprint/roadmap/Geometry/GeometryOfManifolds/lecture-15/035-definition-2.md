@@ -5,7 +5,7 @@ statement: formalized
 lean: Codifferential
 ---
 
-# Definition 2 [3]
+# Definition 2 (Lecture 15, Section 1, Hodge Theory)
 
 The codifferential is the map $d^{*} = (-1)^{n(k-1)+1} \ast d \ast \colon \Omega^{k}(M) \rightarrow \Omega^{k-1}(M)$.
 

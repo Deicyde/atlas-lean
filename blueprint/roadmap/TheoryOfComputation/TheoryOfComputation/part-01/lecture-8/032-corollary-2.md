@@ -6,7 +6,7 @@ proof: formalized
 lean: Decidability.some_language_not_decidable
 ---
 
-# Corollary 2 [2]
+# Corollary 2 (Lecture 8)
 
 Some language is not decidable.
 

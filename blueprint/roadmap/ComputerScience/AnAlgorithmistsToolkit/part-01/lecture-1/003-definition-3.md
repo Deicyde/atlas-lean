@@ -5,7 +5,7 @@ statement: formalized
 lean: Matrix.eigenspaceOf
 ---
 
-# Definition 3 [1]
+# Definition 3 (Lecture 1, Section 2)
 
 We call the span of the eigenvectors with the same eigenvalue an eigenspace.
 

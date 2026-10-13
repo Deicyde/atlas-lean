@@ -5,7 +5,7 @@ statement: formalized
 lean: Sequences.IsBoundedSeq
 ---
 
-# Definition (Sequences and Series, Sequences and Limits) [2]
+# Definition (Sequences and Series, Sequences and Limits) (2)
 
 A sequence $\{x_n\}$ is bounded if $\exists B\geq 0$ such that $\forall n$, $|x_n| \leq B$.
 

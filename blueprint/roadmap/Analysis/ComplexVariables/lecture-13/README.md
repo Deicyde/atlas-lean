@@ -1,6 +1,6 @@
 # Lecture 13
 
-- [Definition 1 \[2\]](014-definition-1.md)
+- [Definition 1 (Lecture 13: The General Cauchy Theorem)](014-definition-1.md)
 - [Definition 2](015-definition-2.md)
 - [Theorem 1 (Cauchy's Theorem)](016-cauchy-s-theorem.md)
 - [Theorem 2 (Cauchy's Integral Formula)](017-cauchy-s-integral-formula.md)

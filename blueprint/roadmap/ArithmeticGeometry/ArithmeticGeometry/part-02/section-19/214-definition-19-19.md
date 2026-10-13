@@ -11,7 +11,7 @@ Let $\phi: C_1 \rightarrow C_2$ be a morphism defined over $k$. The pullback map
 
 ## Depends on
 
-- [Definition 19.6](203-definition-19-6.md)
+This node has no prerequisites.
 
 ## Sources
 

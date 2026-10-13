@@ -8,5 +8,5 @@
 - [Lemma 2.0.1 (Properties of $\hat{f}$ for $f \in L^{1}$)](074-properties-of-hat-f-for-f-in-l-1.md)
 - [Definition 2.0.6 (Translation of a function)](075-translation-of-a-function.md)
 - [Theorem 2.1 (Important properties of the Fourier transform)](076-important-properties-of-the-fourier-tran.md)
-- [Proposition 2.0.2 \[2\]](077-proposition-2-0-2.md)
+- [Proposition 2.0.2 (Class Meeting #16, Section 2)](077-proposition-2-0-2.md)
 - [Proposition 3.0.3 (The Fourier transform of a Gaussian is another Gaussian)](078-the-fourier-transform-of-a-gaussian-is-a.md)

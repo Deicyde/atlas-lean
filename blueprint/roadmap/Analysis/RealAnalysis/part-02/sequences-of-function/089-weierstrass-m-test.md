@@ -6,7 +6,7 @@ proof: formalized
 lean: weierstrass_m_test
 ---
 
-# Theorem (Weierstrass M-test) [1]
+# Theorem (Weierstrass M-test) (Sequences of Function, Pointwise and Uniform Convergence) (1)
 
 Let $f_j:S\to \mathbb{R}$ and suppose $\exists M_j>0$ such that a) $\forall x\in S$, $|f_j(x)|\leq M_j$, and b) $\sum_{j=1}^\infty M_j$ converges. Then, 1. $\forall x\in S$, $\sum_{j=1}^\infty f_j(x)$ converges absolutely. 2. Let $f(x) = \sum_{j=1}^\infty f_j(x)$ for $x\in S.$ Then, $\sum_{j=1}^n f_j\to f$ uniformly on $S$.
 

@@ -5,7 +5,7 @@ statement: formalized
 lean: Integration.modulusOfContinuity
 ---
 
-# Definition (Modulus of Continuity) [2]
+# Definition (Modulus of Continuity) (The Riemann Integral)
 
 For $f\in C([a,b])$, $\eta >0$, we define the modulus of continuity $w_f(\eta) = \sup \{|f(x) - f(y)| \mid |x-y| \leq \eta\}.$
 

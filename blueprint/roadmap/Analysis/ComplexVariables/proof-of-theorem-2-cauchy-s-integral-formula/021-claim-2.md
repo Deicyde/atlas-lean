@@ -12,7 +12,7 @@ $h$ is holomorphic, where $h$ is defined on $\mathbb{C}$ by $h(z) = \frac{1}{2\p
 
 ## Depends on
 
-- [Definition 1 \[2\]](../lecture-13/014-definition-1.md)
+- [Definition 1 (Lecture 13: The General Cauchy Theorem)](../lecture-13/014-definition-1.md)
 
 ## Sources
 

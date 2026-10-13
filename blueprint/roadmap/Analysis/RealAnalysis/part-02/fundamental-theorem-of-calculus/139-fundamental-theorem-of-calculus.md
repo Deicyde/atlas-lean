@@ -6,7 +6,7 @@ proof: formalized
 lean: Integration.fundamental_theorem_of_calculus
 ---
 
-# Theorem (Fundamental Theorem of Calculus) [2]
+# Theorem (Fundamental Theorem of Calculus)
 
 Suppose $f\in C([a,b])$. (1) If $F:[a,b] \to \mathbb{R}$ is differentiable and $F' = f$, then $\int_a^b f = F(b) - F(a).$ (2) The function $G(x) \coloneqq \int_a^x f$ is differentiable on $[a,b]$ and $G' = f$, $G(a) = 0$.
 

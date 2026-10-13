@@ -6,7 +6,7 @@ proof: formalized
 lean: SetTheory.Cardinality.cantor_cardinal
 ---
 
-# Theorem (Cantor) [3]
+# Theorem (Cantor) (Lecture 3)
 
 If $A$ is a set, then $|A| < |\mathcal P(A)|$.
 

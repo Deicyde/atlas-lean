@@ -11,7 +11,7 @@ For all $\varepsilon > 0$, $\rho \in (0,1)$ there are $d \in \mathbb{R}$ and $\t
 ## Depends on
 
 - [Definition 1.1 (Noise Stability)](../section-1/052-noise-stability.md)
-- [Definition 2.2 \[1\]](../lecture-4/007-definition-2-2.md)
+- [Definition 2.2 (Lecture 4, Section 2)](../lecture-4/007-definition-2-2.md)
 
 ## Sources
 

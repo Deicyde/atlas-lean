@@ -5,7 +5,7 @@ statement: formalized
 lean: Approximation.FPRAS
 ---
 
-# Definition 2 [1]
+# Definition 2 (Section 2 (Review of Monte Carlo Methods), Lecture 5)
 
 A fully-polynomial randomized approximation scheme, or FPRAS, is an $(\epsilon, \delta)$ approximation scheme with a runtime that is polynomial in $n$, $1/\epsilon$, and $\log(1/\delta)$.
 

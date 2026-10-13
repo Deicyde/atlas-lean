@@ -10,7 +10,7 @@ Let $G$ be a finite cyclic group and let $A$ be a $G$-module that is a finitely 
 
 ## Depends on
 
-- [Definition 23.38](480-definition-23-38.md)
+This node has no prerequisites.
 
 ## Proof depends on
 

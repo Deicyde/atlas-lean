@@ -6,7 +6,7 @@ proof: formalized
 lean: JActsOnForms.laplacian_C_eq_laplacian
 ---
 
-# Proposition 2 [3]
+# Proposition 2 (Lecture 16)
 
 $\Delta_{C} = J^{-1}\Delta J = d_{C}d_{C}^{*} + d_{C}^{*}d_{C} = \Delta$.
 

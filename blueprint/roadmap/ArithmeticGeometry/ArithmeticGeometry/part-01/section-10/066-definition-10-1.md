@@ -1,8 +1,6 @@
 ---
 declaration: def
 origin: cited
-statement: formalized
-lean: padicHilbertSymbol
 ---
 
 # Definition 10.1

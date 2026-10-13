@@ -5,7 +5,7 @@ statement: formalized
 lean: Matrix.IsHermitian.spectralRadius
 ---
 
-# Definition 1 [5]
+# Definition 1 (Lecture 21, Section 2.4)
 
 The spectral radius $\rho$ of a symmetric matrix $M$ is the absolute value of its largest eigenvalue: $\rho = |\lambda_{\max}|$.
 

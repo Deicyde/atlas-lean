@@ -1,4 +1,4 @@
 # Lecture 8
 
-- [Theorem (Squeeze Theorem) \[1\]](026-squeeze-theorem.md)
-- [Theorem (Squeeze Theorem) \[2\]](174-squeeze-theorem.md)
+- [Theorem (Squeeze Theorem) (Lecture 8, Facts About Limits)](026-squeeze-theorem.md)
+- [Theorem (Squeeze Theorem) (Lecture 8)](174-squeeze-theorem.md)

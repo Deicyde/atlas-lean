@@ -6,7 +6,7 @@ proof: formalized
 lean: Sparsification.loewner_order_iff_posSemidef
 ---
 
-# Definition 4 [2]
+# Definition 4 (Lecture 9, Section 2.1)
 
 We write that $M \succeq N$ if $x^\top M x \geq x^\top N x$ for all $x \in \mathbb{R}^n$.
 

@@ -4,7 +4,7 @@ origin: cited
 lean: ConvexGeometry.banachMazur_distance_ball
 ---
 
-# Theorem 7 [3]
+# Theorem 7 (Lecture 11, Section 6)
 
 For any $n$-dimensional, origin-symmetric convex body $K$, $d(K, B_2^n) \leq \sqrt{n}$.
 

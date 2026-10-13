@@ -3,7 +3,7 @@ declaration: theorem
 origin: cited
 ---
 
-# Theorem 1.1 [2]
+# Theorem 1.1 (Lecture 16, Section 1.3)
 
 Suppose $G=(V,E)$ has a cut of size $(1-\varepsilon)|E|$. Then the expected size of the cut in the Goemans-Williamson algorithm is at least $\left(1-\frac{2}{\pi}\sqrt{\varepsilon}-O(\varepsilon^{1.5})\right)|E|$.
 

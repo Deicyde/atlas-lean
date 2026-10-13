@@ -1,8 +1,6 @@
 ---
 declaration: def
 origin: cited
-statement: formalized
-lean: ModularFunction.IsMeromorphicAtCusps
 ---
 
 # Definition 19.1

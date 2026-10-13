@@ -6,7 +6,7 @@ proof: formalized
 lean: PageRank.pageRankVec_invariant_preserved
 ---
 
-# Proposition 5 [1]
+# Proposition 5 (Lecture 8, Section 3.3)
 
 $p' = \operatorname{pr}_{\alpha}(s - r')$.
 

@@ -5,7 +5,7 @@ statement: formalized
 lean: RegularIsCFL.regular_is_cfl
 ---
 
-# Corollary 1 [1]
+# Corollary 1 (Lecture 5, Equivalence of CFGs and PDAs, Corollaries)
 
 Every regular language is a CFL.
 

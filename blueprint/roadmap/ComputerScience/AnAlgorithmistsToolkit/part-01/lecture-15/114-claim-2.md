@@ -6,7 +6,7 @@ proof: formalized
 lean: Concentration.inner_product_eq_dist_hyperplane
 ---
 
-# Claim 2 [3]
+# Claim 2 (Lecture 15, Section 8.1)
 
 $\sum a_i x_i = a \cdot x = $ distance of $x$ from hyperplane $H_a = \{x \mid a \cdot x = 0\}$.
 

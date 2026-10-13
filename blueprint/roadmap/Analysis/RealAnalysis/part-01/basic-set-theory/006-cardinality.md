@@ -5,7 +5,7 @@ statement: formalized
 lean: SetTheory.Cardinality.SameCardinality
 ---
 
-# Definition (Cardinality) [1]
+# Definition (Cardinality) (Basic Set Theory, Cardinality)
 
 We state that two sets $A$ and $B$ have the same cardinality if there exists a bijection $f : A \to B$.
 

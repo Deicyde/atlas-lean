@@ -5,7 +5,7 @@ statement: formalized
 lean: ClosedCurve.IsHomologousToZero
 ---
 
-# Definition 1 [2]
+# Definition 1 (Lecture 13: The General Cauchy Theorem)
 
 A closed curve $\gamma$ in an open set $\Omega$ is homologous to $0$ (written $\gamma \sim 0$) with respect to $\Omega$ if $n(\gamma, a) = 0$ for all $a \notin \Omega$.
 

@@ -6,7 +6,7 @@ proof: formalized
 lean: Real_Analysis.uniform_continuous_on_iff
 ---
 
-# Definition (Uniformly Continuous) [1]
+# Definition (Uniformly Continuous) (Section on Uniform Continuity)
 
 Let $f:S\to \mathbb{R}$. Then, $f$ is uniformly continuous on $S$ if $\forall \epsilon >0$, $\exists \delta = \delta(\epsilon) >0$ such that $\forall x,c\in S$, $|x-c|< \delta \implies |f(x) - f(c)|<\epsilon.$
 

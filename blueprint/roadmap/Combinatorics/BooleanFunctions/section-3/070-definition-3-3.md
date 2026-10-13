@@ -3,7 +3,7 @@ declaration: def
 origin: cited
 ---
 
-# Definition 3.3 [2]
+# Definition 3.3 (Section 3.2)
 
 Let $r \in \mathbb{N}$, $\varepsilon > 0$ and $0 < p < 1$. We say a Boolean function $f \colon \{0,1\}^n \to \{0,1\}$ is $(r, \varepsilon)$ quasi-random with respect to $p$ if for any $R \subseteq [n]$ of size at most $r$, and any $z \in \{0,1\}^R$ it holds that $|\mu_p(f_{R \to z}) - \mu_p(f)| \leqslant \varepsilon$.
 

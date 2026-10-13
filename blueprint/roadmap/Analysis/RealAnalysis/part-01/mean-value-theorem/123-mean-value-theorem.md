@@ -6,7 +6,7 @@ proof: formalized
 lean: mean_value_theorem
 ---
 
-# Theorem (Mean Value Theorem) [2]
+# Theorem (Mean Value Theorem) (Mean Value Theorem section) (2)
 
 Let $f:[a,b] \to \mathbb{R}$ be continuous, and let $f$ be differentiable on $(a,b)$. Then, $\exists c\in (a,b)$ such that $f(b)-f(a) = f'(c)(b-a).$
 

@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Theorem 3 \[1\]](../../part-01/lecture-16/115-theorem-3.md)
+- [Theorem 3 (Lecture 16)](../../part-01/lecture-16/115-theorem-3.md)
 
 ## Sources
 

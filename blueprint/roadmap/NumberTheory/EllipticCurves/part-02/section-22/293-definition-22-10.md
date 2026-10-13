@@ -1,8 +1,6 @@
 ---
-declaration: structure
+declaration: def
 origin: cited
-statement: formalized
-lean: IsogenyVolcano
 ---
 
 # Definition 22.10

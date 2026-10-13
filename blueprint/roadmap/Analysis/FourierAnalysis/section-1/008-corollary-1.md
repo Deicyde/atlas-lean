@@ -6,7 +6,7 @@ proof: formalized
 lean: SchwartzFourierInversion.plancherel_schwartz_book
 ---
 
-# Corollary 1 [2]
+# Corollary 1 (Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$)
 
 If $f \in \mathcal{S}(\mathbb{R})$, then $2\pi \int_{\mathbb{R}} |f(x)|^2 \, dx = \int_{\mathbb{R}} |\hat{f}(\xi)|^2 \, d\xi$.
 

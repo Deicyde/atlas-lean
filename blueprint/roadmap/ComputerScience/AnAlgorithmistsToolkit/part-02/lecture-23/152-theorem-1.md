@@ -6,7 +6,7 @@ proof: formalized
 lean: spectral_sparsifier_near_linear
 ---
 
-# Theorem 1 [2]
+# Theorem 1 (Lecture 23, Section 4.1)
 
 Given a graph $G$ with $n$ vertices and $m$ edges, it is possible to obtain a graph $H$ with $n + t \log^{O(1)} n$ edges such that $L_H \preceq L_G \preceq (n/t) L_H$, independent of $m$.
 

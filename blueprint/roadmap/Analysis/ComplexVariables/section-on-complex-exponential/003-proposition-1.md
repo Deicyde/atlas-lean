@@ -6,7 +6,7 @@ proof: formalized
 lean: Complex.exp_add_prop1
 ---
 
-# Proposition 1 [1]
+# Proposition 1 (Section on complex exponential)
 
 $e^{z+w} = e^{z} e^{w}$ for all $z, w \in \mathbb{C}$.
 

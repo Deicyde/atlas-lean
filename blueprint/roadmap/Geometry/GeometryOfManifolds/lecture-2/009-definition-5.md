@@ -5,7 +5,7 @@ statement: formalized
 lean: SymplecticLinearAlgebra.IsLagrangian
 ---
 
-# Definition 5 [1]
+# Definition 5 (Lecture 2, Section 2 (Symplectic Vector Spaces))
 
 $E \subset V$ is an isotropic (resp.\ coisotropic, Lagrangian) subspace if $E \subset E^{\Omega}$ (resp.\ $E^{\Omega} \subset E$, $E^{\Omega} = E$), e.g.\ in a standard basis $E$ is the span of $(e_{1}, \ldots, e_{k})$ (resp.\ $(e_{1}, f_{1}, \ldots, e_{k}, f_{k}, e_{k+1}, \ldots, e_{n})$, $(e_{1}, \ldots, e_{n})$).
 

@@ -12,7 +12,7 @@ $M$ is PSD if and only if there exists a matrix $A$ such that $M = A^\top A$. No
 
 ## Depends on
 
-- [Definition 6 \[1\]](011-definition-6.md)
+- [Definition 6 (Lecture 2, Section 3.3)](011-definition-6.md)
 
 ## Sources
 

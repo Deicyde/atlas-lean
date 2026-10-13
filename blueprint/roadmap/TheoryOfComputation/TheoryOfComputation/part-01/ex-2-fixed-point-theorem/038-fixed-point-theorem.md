@@ -6,7 +6,7 @@ proof: formalized
 lean: RecursionTheorem.recursion_theorem_language
 ---
 
-# Theorem (Fixed-point Theorem) [1]
+# Theorem (Fixed-point Theorem) (Ex 2: Fixed-point Theorem)
 
 For any computable function $f \colon \Sigma^* \to \Sigma^*$, there is a TM $R$ such that $L(R) = L(S)$ where $f(\langle R \rangle) = \langle S \rangle$.
 

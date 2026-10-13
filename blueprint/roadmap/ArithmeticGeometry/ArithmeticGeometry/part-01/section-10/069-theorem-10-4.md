@@ -1,9 +1,6 @@
 ---
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
-lean: realHilbertSymbol.eq_neg_one_iff_both_neg
 ---
 
 # Theorem 10.4

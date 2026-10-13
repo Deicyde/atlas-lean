@@ -4,7 +4,7 @@ origin: cited
 lean: HighDimensional.isoperimetric_sphere_weak
 ---
 
-# Theorem 4 [2]
+# Theorem 4 (Lecture 16)
 
 For any $A \subset S^{n-1}$ and any $\epsilon > 0$, $\operatorname{Vol}(A_{\epsilon}) > 1 - \frac{2 e^{-n\epsilon^2/16}}{\operatorname{Vol}(A)}$.
 

@@ -4,7 +4,7 @@ origin: cited
 lean: WienerConstruction.wiener_construction_brownian_motion
 ---
 
-# Theorem 2 [3]
+# Theorem 2 (Chapter 1 (Brownian Motion))
 
 Let $W$ be given by (3). Then $W(0) = 0$ and (a) $B(t) = W(t)$ satisfies (2) (or equivalently (1)) on $0 \leq t \leq \pi$. (b) $W$ is almost surely continuous in $t$.
 

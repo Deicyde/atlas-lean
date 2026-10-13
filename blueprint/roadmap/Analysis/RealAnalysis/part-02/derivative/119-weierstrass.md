@@ -6,7 +6,7 @@ proof: formalized
 lean: weierstrass_nowhere_differentiable
 ---
 
-# Theorem (Weierstrass) [2]
+# Theorem (Weierstrass) (Derivative section)
 
 The function $f(x) = \sum_{k=0}^\infty \frac{\cos(160^k x)}{4^k}$ is nowhere differentiable.
 

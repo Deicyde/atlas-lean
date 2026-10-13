@@ -53,12 +53,11 @@ jobs:
           python scripts/generate_v1_wiki.py --check
 
       # Rejects cycles and dangling links, and fails when a node names a Lean
-      # declaration that is not in the sources. The roadmap describes the
-      # archived v1 package, so v1/ is the Lean root.
+      # declaration that is not in the sources.
       - name: Validate the theorem DAG and its declarations
         run: >-
           uvx --from "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
-          autoform check blueprint --lean-root v1
+          autoform check blueprint --lean-root .
 
       # Writes site-src/: statement boxes, derived statuses, the Mermaid graph,
       # and permalinks into the Lean code at this exact commit.
@@ -67,7 +66,7 @@ jobs:
           uvx --from "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
           autoform render blueprint
           --output site-src
-          --lean-root v1
+          --lean-root .
           --require-declarations
 
       - name: Build the Markdown site

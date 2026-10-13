@@ -4,7 +4,7 @@ origin: cited
 lean: symplectomorphism_fixed_points
 ---
 
-# Theorem 1 [1]
+# Theorem 1 (Lecture 6, Section 1 (Applications))
 
 For $(M, \omega)$ compact, if $H^{1}(M, \mathbb{R}) = 0$, then every symplectomorphism of $M$ which is $C^{1}$ close to the identity has $\geq 2$ fixed points.
 

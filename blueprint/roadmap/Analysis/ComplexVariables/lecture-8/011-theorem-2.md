@@ -6,7 +6,7 @@ proof: formalized
 lean: circleIntegral_comp_sq_eq_zero
 ---
 
-# Theorem 2 [2]
+# Theorem 2 (Lecture 8, Exercise 3 on page 108)
 
 Let $R$ be a rational function on $\mathbb{C}$. Then $$\int_{\gamma} R\left(z^{2}\right)\, dz = 0$$ for every circle $\gamma$ around the origin provided $R\left(z^{2}\right) \neq 0$ on $\gamma$.
 

@@ -5,7 +5,7 @@ statement: formalized
 lean: OrderedSetsFields.HasLUBProperty
 ---
 
-# Definition (Least Upper Bound Property) [2]
+# Definition (Least Upper Bound Property) (Ordered Sets & Fields section)
 
 An ordered set $S$ has the least upper bound property if every $E\subset S$ which is nonempty and bounded above has a supremum in $S$.
 

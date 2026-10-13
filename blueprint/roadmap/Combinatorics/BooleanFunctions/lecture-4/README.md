@@ -1,7 +1,7 @@
 # Lecture 4
 
 - [Definition 2.1 (Discrete derivatives)](006-discrete-derivatives.md)
-- [Definition 2.2 \[1\]](007-definition-2-2.md)
+- [Definition 2.2 (Lecture 4, Section 2)](007-definition-2-2.md)
 - [Definition 1.1](018-definition-1-1.md)
 - [Definition 1.2](019-definition-1-2.md)
 - [Claim 3.1](020-claim-3-1.md)

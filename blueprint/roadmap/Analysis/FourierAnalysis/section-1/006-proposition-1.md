@@ -6,7 +6,7 @@ proof: formalized
 lean: L2L1FourierAgree.fourier_L2_eq_L1
 ---
 
-# Proposition 1 [2]
+# Proposition 1 (Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$)
 
 If $f \in L^2(\mathbb{R}) \cap L^1(\mathbb{R})$, then the definition by continuity in Corollary 2 for $\hat{f}$ coincides with the definition $\hat{f}(\xi) = \int_{-\infty}^{\infty} f(x) e^{-ix\xi} \, dx$.
 

@@ -4,7 +4,7 @@ origin: cited
 lean: donaldson_holomorphic_approximation_exp_bound
 ---
 
-# Proposition 2 [4]
+# Proposition 2 (Symplectic Geometry, Lecture 18)
 
 Given a family of sections $\{\sigma_{k,p}\}$ as above, $\exists \{\tilde{\sigma}_{k,p}\}$ holomorphic such that $\sup(k^{r/2}|\nabla^{r}\sigma_{k,p} - \nabla^{r}\tilde{\sigma}_{k,p}|) \leq C e^{-\lambda k/3}$.
 

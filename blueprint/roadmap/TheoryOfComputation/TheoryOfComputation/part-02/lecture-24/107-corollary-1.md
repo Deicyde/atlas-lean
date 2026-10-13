@@ -6,7 +6,7 @@ proof: formalized
 lean: Probabilistic.distinct_poly_agree_le_degree
 ---
 
-# Corollary 1 [3]
+# Corollary 1 (Lecture 24, Roots of Polynomials)
 
 If $p_1(x)$ and $p_2(x)$ are both degree $\leq d$ and $p_1 \neq p_2$ then $p_1(a) = p_2(a)$ for $\leq d$ values $a$.
 

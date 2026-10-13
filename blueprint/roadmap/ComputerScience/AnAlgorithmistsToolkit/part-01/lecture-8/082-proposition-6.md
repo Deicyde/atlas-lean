@@ -6,7 +6,7 @@ proof: formalized
 lean: PageRank.residual_decrease_bound
 ---
 
-# Proposition 6 [2]
+# Proposition 6 (Lecture 8, Section 3.3)
 
 $\|r'\|_1 \leq \|r\|_1 - \alpha r(u)$.
 

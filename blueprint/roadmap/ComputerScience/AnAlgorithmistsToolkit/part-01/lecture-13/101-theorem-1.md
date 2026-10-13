@@ -4,7 +4,7 @@ origin: cited
 lean: BrunnMinkowskiInequality.brunn_minkowski_theorem
 ---
 
-# Theorem 1 [1]
+# Theorem 1 (Lecture 13, Section 2)
 
 Let $A, B \subseteq \mathbb{R}^n$ be compact measurable sets. Then $(\operatorname{Vol}(A \oplus B))^{1/n} \geq (\operatorname{Vol}(A))^{1/n} + (\operatorname{Vol}(B))^{1/n}$. The equality holds when $A$ is a translation of a dilation of $B$ (up to zero-measure sets).
 

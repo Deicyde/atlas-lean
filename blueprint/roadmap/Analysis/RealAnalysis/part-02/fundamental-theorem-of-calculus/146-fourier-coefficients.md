@@ -5,7 +5,7 @@ statement: formalized
 lean: Integration.fourierCoefficientCos
 ---
 
-# Definition (Fourier Coefficients) [2]
+# Definition (Fourier Coefficients) (Fundamental Theorem of Calculus section) (2)
 
 The $a_n,b_n$ defined in the Riemann-Lebesgue lemma are referred to as the Fourier coefficients of $f$.
 

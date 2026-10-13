@@ -5,7 +5,7 @@ statement: formalized
 lean: SimpleGraph.diameter
 ---
 
-# Definition 1 [2]
+# Definition 1 (Section 1 (Diameters and Eigenvalues), Lecture 6)
 
 The diameter, $\delta$, is the longest shortest path between any two vertices of a graph. In other words, we can define the distance between two vertices $u$ and $v$ in $G$ as the shortest path connecting the two. The diameter of $G$ is the largest distance between any two vertices in $G$.
 

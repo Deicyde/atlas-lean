@@ -6,7 +6,7 @@ proof: formalized
 lean: rpow_eq_exp_mul_log
 ---
 
-# Theorem 1 [1]
+# Theorem 1 (Lecture 2: Exponential function & Logarithm for a complex argument)
 
 $b^{x} = E(x L(b))$ for all $x \in \mathbb{R}$.
 

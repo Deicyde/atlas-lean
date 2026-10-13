@@ -6,7 +6,7 @@ proof: formalized
 lean: TrigPolyDensity.trigPoly_dense_in_continuous
 ---
 
-# Corollary 1 [1]
+# Corollary 1 (Fourier Series 2)
 
 Trigonometric polynomials are dense in continuous, $2\pi$-periodic functions in the uniform norm.
 

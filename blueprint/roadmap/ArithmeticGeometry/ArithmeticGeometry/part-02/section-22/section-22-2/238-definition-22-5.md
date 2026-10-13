@@ -1,8 +1,6 @@
 ---
 declaration: def
 origin: cited
-statement: formalized
-lean: FunctionFieldAdeleRing
 ---
 
 # Definition 22.5

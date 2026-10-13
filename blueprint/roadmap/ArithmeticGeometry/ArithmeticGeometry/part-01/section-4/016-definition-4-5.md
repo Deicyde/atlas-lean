@@ -1,8 +1,6 @@
 ---
 declaration: def
 origin: cited
-statement: formalized
-lean: PadicInt.padicExpansion
 ---
 
 # Definition 4.5
