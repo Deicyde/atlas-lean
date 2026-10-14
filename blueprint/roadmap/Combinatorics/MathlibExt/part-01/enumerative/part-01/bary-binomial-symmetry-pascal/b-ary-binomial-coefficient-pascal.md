@@ -14,7 +14,11 @@ The `b`-ary binomial coefficients satisfy Pascal's recurrence where they are non
 
 ## Depends on
 
-This node has no prerequisites.
+- [B Ary Binomial Coefficient](../bary-binomial-coefficient/b-ary-binomial-coefficient.md)
+
+## Proof depends on
+
+- [B Ary Binomial Coefficient eq prod div pow](b-ary-binomial-coefficient-eq-prod-div-p.md)
 
 ## Sources
 

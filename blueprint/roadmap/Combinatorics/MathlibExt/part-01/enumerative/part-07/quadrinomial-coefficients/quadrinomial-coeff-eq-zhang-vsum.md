@@ -14,7 +14,8 @@ Zhang's `V`-sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quadrinomial Coeff](quadrinomial-coeff.md)
+- [Zhang VSum](zhang-vsum.md)
 
 ## Sources
 

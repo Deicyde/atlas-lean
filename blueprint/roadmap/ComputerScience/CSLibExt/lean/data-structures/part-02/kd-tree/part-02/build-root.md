@@ -12,7 +12,11 @@ Builds a kd-tree starting from axis `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kd Tree](../part-01/kd-tree.md)
+
+## Proof depends on
+
+- [Build](../part-01/build.md)
 
 ## Sources
 

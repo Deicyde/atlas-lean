@@ -13,7 +13,7 @@ Membership in `selected φ` is vanishing of the corresponding component ideal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Selected](selected.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ Breusch intervals from the chain and the upper bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper ineq](upper-ineq.md)
+
+## Proof depends on
+
+- [Analytic at X](analytic-at-x.md)
+- [Chain cover](chain-cover.md)
 
 ## Sources
 

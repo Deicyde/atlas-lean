@@ -13,7 +13,7 @@ The source's degree range makes the scale strictly positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dobrowolski Scale](dobrowolski-scale.md)
 
 ## Sources
 

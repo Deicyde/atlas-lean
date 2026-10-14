@@ -12,7 +12,12 @@ The number of keys strictly smaller than a query, using cached left sizes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Entry](entry.md)
+- [Cached Size](cached-size.md)
 
 ## Sources
 

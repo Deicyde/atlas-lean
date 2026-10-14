@@ -13,7 +13,12 @@ The marginal on all coordinates has the full entropy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shearer Full Entropy](shearer-full-entropy.md)
+- [Shearer Marginal Entropy](shearer-marginal-entropy.md)
+
+## Proof depends on
+
+- [Shearer Marginal](shearer-marginal.md)
 
 ## Sources
 

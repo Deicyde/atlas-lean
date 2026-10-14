@@ -15,6 +15,10 @@ Exponential moments of a gamma law exist below the rate.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integrable On rpow mul exp neg mul Ioi](integrable-on-rpow-mul-exp-neg-mul-ioi.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.Gamma](../../../../../../sources/v2/MathlibExt.md)

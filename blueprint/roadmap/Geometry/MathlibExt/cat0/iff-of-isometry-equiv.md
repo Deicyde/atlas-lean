@@ -13,7 +13,11 @@ The CAT(0) four-point condition is invariant under isometric equivalence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is CAT0 Four Point](is-cat0-four-point.md)
+
+## Proof depends on
+
+- [Of isometry](of-isometry.md)
 
 ## Sources
 

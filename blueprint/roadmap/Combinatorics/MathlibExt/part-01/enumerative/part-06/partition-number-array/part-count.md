@@ -14,7 +14,11 @@ Concept `jis_sem_4bcead3a4bcda58a1d4dbb9f`; source D3
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Multiplicity](partition-multiplicity.md)
+
+## Proof depends on
+
+- [Count Sum](count-sum.md)
 
 ## Sources
 

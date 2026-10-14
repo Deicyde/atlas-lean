@@ -12,7 +12,16 @@ The canonical Riordan pair defining the Motzkin triangle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motzkin Riordan Pair](motzkin-riordan-pair.md)
+
+## Proof depends on
+
+- [Is Motzkin Riordan Pair](is-motzkin-riordan-pair.md)
+- [Is Motzkin Square Root](is-motzkin-square-root.md)
+- [Motzkin Discriminant](motzkin-discriminant.md)
+- [Motzkin G](motzkin-g.md)
+- [Motzkin H](motzkin-h.md)
+- [Motzkin Square Root](motzkin-square-root.md)
 
 ## Sources
 

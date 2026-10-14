@@ -14,7 +14,15 @@ parent-child edge of the tree, from parent to child.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Parent Child](parent-child.md)
+- [Root Path](root-path.md)
+
+## Proof depends on
+
+- [Children ind](../../euler-tour-tree/part-01/children-ind.md)
+- [Root](../../euler-tour-tree/part-01/root.md)
+- [Head? root Path](head-root-path.md)
 
 ## Sources
 

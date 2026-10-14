@@ -16,6 +16,11 @@ homomorphism `F_τ → F`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cleary FTau](cleary-ftau.md)
+- [Thompson F](thompson-f.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.GoldenRatioThompsonEmbedWanted](../../../../../sources/v2/WantedExt.md)

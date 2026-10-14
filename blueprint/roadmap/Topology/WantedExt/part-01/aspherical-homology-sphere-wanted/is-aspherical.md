@@ -13,7 +13,7 @@ basepoint.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closed4 Manifold](closed4-manifold.md)
 
 ## Sources
 

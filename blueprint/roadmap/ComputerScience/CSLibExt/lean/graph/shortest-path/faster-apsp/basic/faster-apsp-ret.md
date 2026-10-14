@@ -13,7 +13,7 @@ The actual saved-matrix execution returns the least adequate power of two.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Faster APSP](faster-apsp.md)
 
 ## Sources
 

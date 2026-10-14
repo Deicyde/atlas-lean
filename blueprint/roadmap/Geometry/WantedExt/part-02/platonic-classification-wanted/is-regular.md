@@ -13,7 +13,15 @@ symmetry group acts transitively on its flags.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convex Polytope](convex-polytope.md)
+
+## Proof depends on
+
+- [Flag](flag.md)
+- [Is Full Dim](is-full-dim.md)
+- [Isom](isom.md)
+- [Is Symmetry](is-symmetry.md)
+- [E](e.md)
 
 ## Sources
 

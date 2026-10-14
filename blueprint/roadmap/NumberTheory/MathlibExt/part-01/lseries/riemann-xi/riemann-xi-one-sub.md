@@ -13,7 +13,7 @@ Functional equation for the Riemann xi function: `ξ(1 - s) = ξ(s)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Riemann Xi](riemann-xi.md)
 
 ## Sources
 

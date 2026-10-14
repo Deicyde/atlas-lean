@@ -12,7 +12,7 @@ The element `det (∂Eᵢ/∂xⱼ)` of the quotient ring `ℚ[x₁,…,xᵣ]/(E�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quotient Ring](quotient-ring.md)
 
 ## Sources
 

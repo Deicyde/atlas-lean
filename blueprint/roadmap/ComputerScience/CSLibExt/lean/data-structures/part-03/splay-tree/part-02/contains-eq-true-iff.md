@@ -13,7 +13,16 @@ lean: Cslib.Algorithms.Lean.SplayTree.contains_eq_true_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
+- [Ordered](../../../part-02/binary-search-tree/part-01/ordered.md)
+- [Contains](../part-01/contains.md)
+
+## Proof depends on
+
+- [Mem splay](../part-01/mem-splay.md)
+- [Root?](../part-01/root.md)
+- [Root? splay of mem](../part-01/root-splay-of-mem-2.md)
+- [Splay](../part-01/splay.md)
 
 ## Sources
 

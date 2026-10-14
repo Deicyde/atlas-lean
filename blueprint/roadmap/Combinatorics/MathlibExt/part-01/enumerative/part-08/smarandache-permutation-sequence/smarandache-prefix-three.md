@@ -15,7 +15,7 @@ The first three blocks concatenate to the required initial segment
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smarandache Prefix](smarandache-prefix.md)
 
 ## Sources
 

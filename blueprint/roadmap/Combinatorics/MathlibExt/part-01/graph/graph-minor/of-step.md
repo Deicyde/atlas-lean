@@ -13,7 +13,9 @@ A single minor step yields a minor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fin Graph](fin-graph.md)
+- [Is Minor](is-minor.md)
+- [Minor Step](minor-step.md)
 
 ## Sources
 

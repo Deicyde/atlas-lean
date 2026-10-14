@@ -14,7 +14,7 @@ proof fields are irrelevant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonnegative Discrete Spectrum](nonnegative-discrete-spectrum.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ The supremum is taken in EReal, including its empty and unbounded conventions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gradient Descent Uniform Rate](gradient-descent-uniform-rate.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Convex.GradientDescentExponent](../../../../../../sources/v2/MathlibExt.md)

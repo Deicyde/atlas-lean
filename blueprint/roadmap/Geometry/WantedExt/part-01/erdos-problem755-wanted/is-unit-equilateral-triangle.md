@@ -14,6 +14,10 @@ A unit equilateral triangle.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Equilateral Triangle](is-equilateral-triangle.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.ErdosProblem755Wanted](../../../../../sources/v2/WantedExt.md)

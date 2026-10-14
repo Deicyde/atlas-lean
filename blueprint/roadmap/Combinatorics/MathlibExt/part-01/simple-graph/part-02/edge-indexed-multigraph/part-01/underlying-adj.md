@@ -14,7 +14,8 @@ endpoints.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
+- [Underlying](underlying.md)
 
 ## Sources
 

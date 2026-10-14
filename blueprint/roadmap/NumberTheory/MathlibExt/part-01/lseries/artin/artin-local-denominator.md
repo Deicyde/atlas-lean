@@ -12,7 +12,7 @@ The determinant whose inverse is the formal Artin local factor at `p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Artin Local Datum](artin-local-datum.md)
 
 ## Sources
 

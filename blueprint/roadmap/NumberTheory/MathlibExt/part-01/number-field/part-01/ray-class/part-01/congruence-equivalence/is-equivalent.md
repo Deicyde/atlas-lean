@@ -13,7 +13,7 @@ common ambient group of all nonzero fractional ideals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Congruence Subgroup Pair](congruence-subgroup-pair.md)
 
 ## Sources
 

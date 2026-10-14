@@ -22,6 +22,14 @@ the categorical equivalence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Adjoin Root is Discrete Valuation Ring of monic of irreducible map](adjoin-root-is-discrete-valuation-ring-o.md)
+- [Adjoin Root is Local Hom of irreducible map](adjoin-root-is-local-hom-of-irreducible.md)
+- [Adjoin Root is Local Ring of monic of irreducible map](adjoin-root-is-local-ring-of-monic-of-ir.md)
+- [Exists monic lift adjoin Root domain](exists-monic-lift-adjoin-root-domain.md)
+- [Residue Field Alg Equiv Adjoin Root Of Map Eq](residue-field-alg-equiv-adjoin-root-of-m.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.LocalRing.ResidueField.AdjoinRootLift](../../../../../../sources/v2/MathlibExt.md)

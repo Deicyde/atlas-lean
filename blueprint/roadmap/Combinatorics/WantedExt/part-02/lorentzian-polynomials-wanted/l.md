@@ -13,7 +13,12 @@ For `d` larger than 2, we define `L n d := { f ∈ M n d | ∂ᵢf ∈ L n (d−
 
 ## Depends on
 
-This node has no prerequisites.
+- [H](h.md)
+
+## Proof depends on
+
+- [M](m.md)
+- [S](s.md)
 
 ## Sources
 

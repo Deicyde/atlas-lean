@@ -17,6 +17,10 @@ Noncentral Tanny-Dowling polynomial, equation (6), concept
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Noncentral Whitney Second](noncentral-whitney-second.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NoncentralTannyDowlingPolynomial](../../../../../sources/v2/MathlibExt.md)

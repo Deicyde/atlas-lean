@@ -12,7 +12,12 @@ The Banach-valued contour integral of a finite rectilinear cycle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectilinear Cycle](rectilinear-cycle.md)
+
+## Proof depends on
+
+- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Boundary Integral](boundary-integral.md)
 
 ## Sources
 

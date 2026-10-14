@@ -13,7 +13,16 @@ Membership in the report of a built tree, stated on the input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build](../part-01/build.md)
+- [In Box](../part-01/in-box.md)
+- [Report](../part-01/report.md)
+
+## Proof depends on
+
+- [Mem report iff](../part-01/mem-report-iff.md)
+- [Mem to List build iff](../part-01/mem-to-list-build-iff.md)
+- [To List](../part-01/to-list.md)
+- [Valid build](../part-01/valid-build.md)
 
 ## Sources
 

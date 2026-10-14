@@ -14,6 +14,10 @@ lean: Set.IsAsymptoticAddBasis
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Asymptotic Add Basis Of Order](is-asymptotic-add-basis-of-order.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Additive.Basis](../../../../../../sources/v2/MathlibExt.md)

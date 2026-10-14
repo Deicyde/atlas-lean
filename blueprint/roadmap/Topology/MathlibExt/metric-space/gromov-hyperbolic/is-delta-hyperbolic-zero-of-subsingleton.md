@@ -13,7 +13,7 @@ A subsingleton space (in particular a single point) is `0`-hyperbolic: it is an 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Delta Hyperbolic](is-delta-hyperbolic.md)
 
 ## Sources
 

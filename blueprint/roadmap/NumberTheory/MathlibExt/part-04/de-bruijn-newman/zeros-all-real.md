@@ -14,6 +14,10 @@ At deformation time `λ`, every zero of `H` is real.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [H](h.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.DeBruijnNewman](../../../../../sources/v2/MathlibExt.md)

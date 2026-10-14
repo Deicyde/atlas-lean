@@ -13,7 +13,15 @@ Inserting a key adds exactly that key to membership.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](../part-01/btree.md)
+- [Is BTree](is-btree.md)
+- [Mem](../part-01/mem.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Flatten](../part-01/flatten.md)
+- [Flatten insert](flatten-insert.md)
 
 ## Sources
 

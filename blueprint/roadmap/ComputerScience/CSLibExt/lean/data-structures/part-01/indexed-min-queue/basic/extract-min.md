@@ -12,7 +12,7 @@ Remove and return the canonical minimum, rejecting only the empty queue.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Min Queue](indexed-min-queue.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ Repeated-symbol matching cost lies between mL and 10mL, independently of preproc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rabin Karp Matches](rabin-karp-matches.md)
+
+## Proof depends on
+
+- [Rabin Karp Matches time replicate](rabin-karp-matches-time-replicate.md)
 
 ## Sources
 

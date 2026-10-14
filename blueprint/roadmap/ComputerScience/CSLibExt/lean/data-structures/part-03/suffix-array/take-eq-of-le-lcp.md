@@ -14,7 +14,11 @@ of length `lcp x y` at `q ≤ lcp x y` still gives equal prefixes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lcp](lcp.md)
+
+## Proof depends on
+
+- [Take lcp eq](take-lcp-eq.md)
 
 ## Sources
 

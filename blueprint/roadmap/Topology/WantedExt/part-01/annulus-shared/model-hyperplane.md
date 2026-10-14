@@ -13,7 +13,7 @@ embedded sphere.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amb](amb.md)
 
 ## Sources
 

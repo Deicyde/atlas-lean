@@ -14,6 +14,10 @@ Prefix-free encoding of `n`: unary length, separator, binary digits.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nat Bits](nat-bits.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.ComputerScience.GraphIsomorphismQuasipolynomialWanted](../../../../sources/v2/WantedExt.md)

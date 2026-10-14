@@ -13,7 +13,14 @@ A key is in a tree built from a list exactly when it is in the list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](../part-01/mem.md)
+- [Tree](../part-01/tree.md)
+- [From List](from-list.md)
+
+## Proof depends on
+
+- [Insert](insert.md)
+- [Mem insert](mem-insert.md)
 
 ## Sources
 

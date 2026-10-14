@@ -14,7 +14,11 @@ unit-valued extension to the p-adic integers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Morita Padic Gamma](morita-gamma/is-morita-padic-gamma.md)
+
+## Proof depends on
+
+- [Morita Gamma Nat](morita-gamma/morita-gamma-nat.md)
 
 ## Sources
 

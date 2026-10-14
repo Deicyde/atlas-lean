@@ -13,7 +13,12 @@ Every left key is smaller and every right key is larger, recursively; it is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Ordered](../../../part-02/binary-search-tree/part-01/ordered.md)
+- [Erase](erase.md)
 
 ## Sources
 

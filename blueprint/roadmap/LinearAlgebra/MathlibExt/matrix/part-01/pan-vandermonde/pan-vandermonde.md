@@ -17,6 +17,10 @@ and the matrix inverse formula.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pan vandermonde general](pan-vandermonde-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.PanVandermonde](../../../../../../sources/v2/MathlibExt.md)

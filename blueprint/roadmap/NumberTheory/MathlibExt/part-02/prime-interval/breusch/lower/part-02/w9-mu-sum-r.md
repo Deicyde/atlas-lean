@@ -13,7 +13,11 @@ Real form of the Möbius reciprocal sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [W9](../../grid/part-01/w9.md)
+
+## Proof depends on
+
+- [W9 mu sum Q](w9-mu-sum-q.md)
 
 ## Sources
 

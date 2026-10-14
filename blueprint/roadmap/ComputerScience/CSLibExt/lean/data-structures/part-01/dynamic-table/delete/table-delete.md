@@ -14,7 +14,7 @@ strictly below `1/4`; otherwise clear the vacated slot in place.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](../basic/part-01/table.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ Singular series `𝔖(b)`: Euler product over all primes of the Euler factors
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hardy Littlewood Euler Factor](hardy-littlewood-euler-factor.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.HardyLittlewoodPrimeTuple](../../../../../sources/v2/MathlibExt.md)

@@ -14,6 +14,10 @@ The infimum over leading coefficients whose actual uniform bound holds.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [One Log Bound](one-log-bound.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Fourier.TorusSobolev.LogarithmicBounds](../../../../../../../sources/v2/MathlibExt.md)

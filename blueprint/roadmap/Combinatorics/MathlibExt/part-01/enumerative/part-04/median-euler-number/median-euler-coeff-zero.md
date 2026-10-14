@@ -13,7 +13,7 @@ The zeroth Euler coefficient is `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Median Euler Coeff](median-euler-coeff.md)
 
 ## Sources
 

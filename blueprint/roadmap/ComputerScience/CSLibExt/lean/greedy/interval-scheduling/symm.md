@@ -13,7 +13,7 @@ Compatibility is symmetric.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Interval Compatible](interval-compatible.md)
 
 ## Sources
 

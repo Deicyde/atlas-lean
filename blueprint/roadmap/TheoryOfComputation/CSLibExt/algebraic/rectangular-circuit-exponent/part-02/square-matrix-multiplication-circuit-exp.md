@@ -14,7 +14,12 @@ actual square matrix-multiplication circuits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Rectangular Circuit Exponent](../part-01/has-rectangular-circuit-exponent.md)
+- [Square Matrix Multiplication Circuit Exponent](../part-01/square-matrix-multiplication-circuit-exp.md)
+
+## Proof depends on
+
+- [Rectangular Circuit Exponent le iff](../part-01/rectangular-circuit-exponent-le-iff.md)
 
 ## Sources
 

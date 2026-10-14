@@ -13,7 +13,11 @@ The directional derivative in direction zero vanishes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dir Deriv](dir-deriv.md)
+
+## Proof depends on
+
+- [Dir Quot](dir-quot.md)
 
 ## Sources
 

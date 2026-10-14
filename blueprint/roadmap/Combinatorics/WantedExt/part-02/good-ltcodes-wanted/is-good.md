@@ -13,7 +13,12 @@ such that the rate and normalised distance of each `Cᵢ` are bounded from below
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary Code](binary-code.md)
+
+## Proof depends on
+
+- [Normalised Distance](normalised-distance.md)
+- [Rate](rate.md)
 
 ## Sources
 

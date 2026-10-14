@@ -13,7 +13,8 @@ A generalized factorial is positive when `f` has the source's positive range.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Positive Sequence](is-positive-sequence.md)
+- [Generalized Factorial](generalized-factorial.md)
 
 ## Sources
 

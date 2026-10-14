@@ -13,7 +13,11 @@ lean: SimpleGraph.hypercubeGraph_zero_not_adj
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypercube Graph](hypercube-graph.md)
+
+## Proof depends on
+
+- [Hypercube Graph adj](hypercube-graph-adj.md)
 
 ## Sources
 

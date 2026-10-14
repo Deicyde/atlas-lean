@@ -13,7 +13,13 @@ The tree produced by deletion has a black root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete Bal](../part-01/delete-bal.md)
+
+## Proof depends on
+
+- [BBTree](../part-01/bbtree.md)
+- [Blacken](../part-01/blacken.md)
+- [Del](../part-01/del.md)
 
 ## Sources
 

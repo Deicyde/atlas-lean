@@ -13,7 +13,11 @@ sifts down, so extraction follows one `d`-ary child path.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Min Heap](../part-02/dary-min-heap.md)
+
+## Proof depends on
+
+- [Extract Tail](extract-tail.md)
 
 ## Sources
 

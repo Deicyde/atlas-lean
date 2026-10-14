@@ -16,6 +16,10 @@ with `IsCubicResidueDenominator`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prime Ideal Cubic Symbol Factor Raw](prime-ideal-cubic-symbol-factor-raw.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Cyclotomic.CubicResidueSymbol](../../../../../../sources/v2/MathlibExt.md)

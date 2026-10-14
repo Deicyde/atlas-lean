@@ -13,7 +13,7 @@ Splaying the empty tree is empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Splay](splay.md)
 
 ## Sources
 

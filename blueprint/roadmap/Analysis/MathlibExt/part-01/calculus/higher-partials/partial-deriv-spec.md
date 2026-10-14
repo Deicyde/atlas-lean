@@ -14,7 +14,7 @@ axis slice.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partial Deriv](partial-deriv.md)
 
 ## Sources
 

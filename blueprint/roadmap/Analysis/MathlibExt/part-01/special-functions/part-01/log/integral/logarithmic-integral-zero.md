@@ -13,7 +13,7 @@ lean: Real.logarithmicIntegral_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Logarithmic Integral](logarithmic-integral.md)
 
 ## Sources
 

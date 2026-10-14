@@ -13,7 +13,7 @@ Properness is monotone in the graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Proper Sym2 Coloring](is-proper-sym2-coloring.md)
 
 ## Sources
 

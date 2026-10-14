@@ -19,6 +19,11 @@ finite-local-extension completeness theorem.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Finite Extension Complete](../is-adic-complete-of-finite-local-extensi.md)
+- [Is Discrete Valuation Ring of is Adic Complete](is-discrete-valuation-ring-of-is-adic-co.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DiscreteValuationRing.IntegralClosureComplete](../../../../../sources/v2/MathlibExt.md)

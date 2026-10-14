@@ -13,7 +13,7 @@ Each marginal of a probability mass function sums to `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shearer Marginal](shearer-marginal.md)
 
 ## Sources
 

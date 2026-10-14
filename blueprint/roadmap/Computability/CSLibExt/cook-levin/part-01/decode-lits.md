@@ -12,7 +12,11 @@ Decode exactly `n` literals and return the unconsumed suffix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNFClause](cnfclause.md)
+
+## Proof depends on
+
+- [Decode Lit](decode-lit.md)
 
 ## Sources
 

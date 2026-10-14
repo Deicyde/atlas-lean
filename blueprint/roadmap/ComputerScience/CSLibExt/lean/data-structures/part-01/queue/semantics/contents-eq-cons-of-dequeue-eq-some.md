@@ -13,7 +13,7 @@ A successful dequeue returns the FIFO head and a queue representing the remainin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Contents](contents.md)
 
 ## Sources
 

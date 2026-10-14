@@ -16,6 +16,10 @@ this predicate exposes `Summable` without claiming a radius theorem.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized Hypergeometric Coefficient](generalized-hypergeometric-coefficient.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.GeneralizedHypergeometric](../../../../../../../sources/v2/MathlibExt.md)

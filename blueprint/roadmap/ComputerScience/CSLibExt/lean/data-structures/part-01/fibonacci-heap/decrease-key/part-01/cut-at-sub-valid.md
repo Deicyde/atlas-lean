@@ -13,7 +13,12 @@ The subtree extracted by a cut from a valid tree is valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cut At](cut-at.md)
+
+## Proof depends on
+
+- [Subtree At](subtree-at-2.md)
+- [Cut At subtree At](cut-at-subtree-at.md)
 
 ## Sources
 

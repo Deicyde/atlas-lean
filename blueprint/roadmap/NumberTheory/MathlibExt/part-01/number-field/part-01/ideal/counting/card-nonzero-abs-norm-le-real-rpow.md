@@ -19,6 +19,10 @@ integer/floor variants above.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Card nonzero abs Norm le real](card-nonzero-abs-norm-le-real.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.Ideal.Counting](../../../../../../../../sources/v2/MathlibExt.md)

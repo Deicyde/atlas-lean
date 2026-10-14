@@ -13,7 +13,15 @@ The model CDF is exactly the probability of the source's non-strict event.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Standardized Law](is-standardized-law.md)
+- [Iid Law](iid-law.md)
+- [Normalized Law](normalized-law.md)
+- [Normalized Sum](normalized-sum.md)
+
+## Proof depends on
+
+- [Normalized Law probability](normalized-law-probability.md)
+- [Normalized Sum measurable](normalized-sum-measurable.md)
 
 ## Sources
 

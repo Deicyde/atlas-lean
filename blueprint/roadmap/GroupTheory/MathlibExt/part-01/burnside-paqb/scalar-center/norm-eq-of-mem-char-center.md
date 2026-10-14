@@ -13,7 +13,7 @@ Elements of the scalar center attain the norm bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Char Center](char-center.md)
 
 ## Sources
 

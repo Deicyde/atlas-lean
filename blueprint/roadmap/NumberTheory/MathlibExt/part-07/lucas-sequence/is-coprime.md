@@ -13,7 +13,7 @@ Lucas sequences.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](lucas-sequence-params.md)
 
 ## Sources
 

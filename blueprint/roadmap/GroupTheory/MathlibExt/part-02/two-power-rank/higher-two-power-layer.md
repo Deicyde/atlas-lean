@@ -14,6 +14,10 @@ For positive `j`, the additive quotient `2^(j-1) A / 2^j A`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Two Power Image](two-power-image.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.TwoPowerRank](../../../../../sources/v2/MathlibExt.md)

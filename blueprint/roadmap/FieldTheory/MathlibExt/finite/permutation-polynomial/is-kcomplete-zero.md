@@ -13,7 +13,8 @@ Level zero is no extra condition: `0`-completeness is permutation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KComplete](is-kcomplete.md)
+- [Is Permutation Polynomial](is-permutation-polynomial.md)
 
 ## Sources
 

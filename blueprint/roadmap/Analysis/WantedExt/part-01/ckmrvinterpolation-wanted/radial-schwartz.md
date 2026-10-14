@@ -14,6 +14,10 @@ Radial complex-valued Schwartz functions on `R^n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Radial](radial.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.CKMRVInterpolationWanted](../../../../../sources/v2/WantedExt.md)

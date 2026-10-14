@@ -12,7 +12,8 @@ Every strictly decreasing tuple is weakly decreasing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strict Decreasing Tuple](strict-decreasing-tuple.md)
+- [Weakly Decreasing Tuple](weakly-decreasing-tuple.md)
 
 ## Sources
 

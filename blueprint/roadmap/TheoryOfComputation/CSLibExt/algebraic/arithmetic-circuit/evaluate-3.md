@@ -12,7 +12,13 @@ Read an output after the actual arithmetic computation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arithmetic Circuit](arithmetic-circuit.md)
+
+## Proof depends on
+
+- [Evaluate Node](evaluate-node.md)
+- [Arithmetic Operand](arithmetic-operand.md)
+- [Evaluate](evaluate.md)
 
 ## Sources
 

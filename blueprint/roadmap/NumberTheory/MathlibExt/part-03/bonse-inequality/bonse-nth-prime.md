@@ -15,6 +15,10 @@ Every indexed prime is prime and hence at least two.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bonse primes infinite](bonse-primes-infinite.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.BonseInequality](../../../../../sources/v2/MathlibExt.md)

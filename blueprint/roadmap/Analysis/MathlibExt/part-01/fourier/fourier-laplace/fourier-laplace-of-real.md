@@ -17,7 +17,7 @@ More precisely, for `r : ℝ` (coerced to `ℂ`) we have
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fourier Laplace](fourier-laplace.md)
 
 ## Sources
 

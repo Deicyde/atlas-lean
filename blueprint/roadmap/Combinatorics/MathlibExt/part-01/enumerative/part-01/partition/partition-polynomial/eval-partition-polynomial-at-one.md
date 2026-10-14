@@ -15,7 +15,7 @@ Evaluation at one recovers the number of parts (concept
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Polynomial](partition-polynomial.md)
 
 ## Sources
 

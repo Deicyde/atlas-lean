@@ -13,7 +13,7 @@ Every Möbius value in `w9` is `1` or `-1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [W9](../part-01/w9.md)
 
 ## Sources
 

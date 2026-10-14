@@ -15,7 +15,11 @@ Proves `Wanted` entry `ramanujan_part1_ch5_entry10b_euleriansymmetry`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter5 Euler Even](chapter5-euler-even.md)
+
+## Proof depends on
+
+- [Chapter5 Euler Even recurrence](chapter5-euler-even-recurrence.md)
 
 ## Sources
 

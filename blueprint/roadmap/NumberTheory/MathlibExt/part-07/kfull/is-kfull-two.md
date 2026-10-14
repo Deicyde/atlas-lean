@@ -14,7 +14,7 @@ The `k = 2` specialization: `2`-full numbers are exactly the squarefull
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KFull](is-kfull.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ Total `p`-adic valuation of the weighted product `F_9(n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nu9term](nu9term.md)
+- [W9](../../grid/part-01/w9.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Upper](../../../../../../../../sources/v2/MathlibExt.md)

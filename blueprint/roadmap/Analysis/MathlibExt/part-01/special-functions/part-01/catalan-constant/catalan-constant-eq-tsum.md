@@ -16,7 +16,7 @@ definition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catalan Constant](catalan-constant.md)
 
 ## Sources
 

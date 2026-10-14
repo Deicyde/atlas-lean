@@ -13,7 +13,11 @@ Every finite graph has an independent dominating set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Indep Dominating](is-indep-dominating.md)
+
+## Proof depends on
+
+- [Is Dominating](is-dominating.md)
 
 ## Sources
 

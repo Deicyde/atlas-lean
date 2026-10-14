@@ -17,6 +17,10 @@ summability are hypotheses of theorems, not arguments of this definition.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized Hypergeometric Coefficient](generalized-hypergeometric-coefficient.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.GeneralizedHypergeometric](../../../../../../../sources/v2/MathlibExt.md)

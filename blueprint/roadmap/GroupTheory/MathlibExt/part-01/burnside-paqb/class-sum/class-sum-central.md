@@ -13,7 +13,7 @@ Class sums are central in the group algebra.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Class Sum](class-sum.md)
 
 ## Sources
 

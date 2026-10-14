@@ -14,6 +14,10 @@ Common coefficients restricted to the actual Bernoulli subclass.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Bernoulli Law](../part-01/is-bernoulli-law.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.BerryEsseenConstant](../../../../../../sources/v2/MathlibExt.md)

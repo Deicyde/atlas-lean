@@ -13,7 +13,15 @@ In a valid tree the cached root aggregate is the sum of the leaf list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Segment Tree](segment-tree.md)
+- [Valid](valid.md)
+- [Agg](agg.md)
+- [To List](to-list.md)
+
+## Proof depends on
+
+- [Size](size.md)
+- [To List node](to-list-node.md)
 
 ## Sources
 

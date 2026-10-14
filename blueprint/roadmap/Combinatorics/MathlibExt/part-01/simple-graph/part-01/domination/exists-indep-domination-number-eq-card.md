@@ -13,7 +13,12 @@ An independent dominating set attaining the independent domination number exists
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Indep Dominating](is-indep-dominating.md)
+- [Indep Domination Number](indep-domination-number.md)
+
+## Proof depends on
+
+- [Exists is Indep Dominating](exists-is-indep-dominating.md)
 
 ## Sources
 

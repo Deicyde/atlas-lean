@@ -12,7 +12,8 @@ Okasaki's rebalancing: repair a red-red redex below a black node.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Color](color.md)
+- [Tree](tree.md)
 
 ## Sources
 

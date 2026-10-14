@@ -13,7 +13,11 @@ The CLRS base clause is deliberately visible at the modulus-one boundary.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Exponentiation](modular-exponentiation.md)
+
+## Proof depends on
+
+- [Modular Exponentiation zero](modular-exponentiation-zero.md)
 
 ## Sources
 

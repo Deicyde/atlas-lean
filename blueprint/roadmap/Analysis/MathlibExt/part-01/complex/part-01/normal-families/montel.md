@@ -18,7 +18,11 @@ Proves `Wanted` entry `montel`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Locally Uniformly Bounded On](is-locally-uniformly-bounded-on.md)
+
+## Proof depends on
+
+- [Exists bound of is Compact](exists-bound-of-is-compact.md)
 
 ## Sources
 

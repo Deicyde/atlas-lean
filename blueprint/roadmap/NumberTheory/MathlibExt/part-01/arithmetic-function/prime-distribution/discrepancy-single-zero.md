@@ -13,7 +13,7 @@ The extra index zero contributes nothing to discrepancy over any coefficient fie
 
 ## Depends on
 
-This node has no prerequisites.
+- [Discrepancy](discrepancy.md)
 
 ## Sources
 

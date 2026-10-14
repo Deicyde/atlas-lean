@@ -17,6 +17,10 @@ declared equal.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Alternating Word](alternating-word.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.ArtinGroup](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,12 @@ time; inherited from `BinarySearchTree` through `erase`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Inorder Aux](../../../part-02/binary-search-tree/part-01/inorder-aux.md)
+- [Erase](erase.md)
 
 ## Sources
 

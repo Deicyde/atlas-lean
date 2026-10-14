@@ -15,6 +15,10 @@ A nontrivial linear character of a simple group forces prime order.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Linear Char Hom](linear-char-hom.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.SimplePrime](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,12 @@ A lookup of a stored key returns its stored value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lru Cache](lru-cache.md)
+- [Get](get.md)
+
+## Proof depends on
+
+- [Erase Key](erase-key.md)
 
 ## Sources
 

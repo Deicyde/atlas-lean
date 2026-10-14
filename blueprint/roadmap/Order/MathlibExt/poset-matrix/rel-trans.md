@@ -13,7 +13,8 @@ The represented relation is transitive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Poset Matrix](is-poset-matrix.md)
+- [Rel](rel.md)
 
 ## Sources
 

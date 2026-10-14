@@ -13,7 +13,13 @@ Prefix lookup in the suffix tree succeeds exactly when the pattern occurs in `s`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Prefix](../../part-02/radix-trie/part-02/has-prefix.md)
+- [Suffix Tree](suffix-tree.md)
+
+## Proof depends on
+
+- [Has Prefix suffix Tree iff exists](has-prefix-suffix-tree-iff-exists.md)
+- [Is Infix iff exists is Prefix drop](is-infix-iff-exists-is-prefix-drop.md)
 
 ## Sources
 

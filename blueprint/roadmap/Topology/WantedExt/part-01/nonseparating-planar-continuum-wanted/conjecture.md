@@ -17,6 +17,10 @@ proposition.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Fixed Point Property](has-fixed-point-property.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Topology.NonseparatingPlanarContinuumWanted](../../../../../sources/v2/WantedExt.md)

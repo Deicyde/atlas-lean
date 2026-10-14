@@ -12,7 +12,7 @@ The right-angle vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
 
 ## Sources
 

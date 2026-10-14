@@ -14,7 +14,7 @@ The raw kernel at `0` is `-γ` by junk values (`ein 0 = 0`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Principal Exponential Integral E1 Raw](principal-exponential-integral-e1-raw.md)
 
 ## Sources
 

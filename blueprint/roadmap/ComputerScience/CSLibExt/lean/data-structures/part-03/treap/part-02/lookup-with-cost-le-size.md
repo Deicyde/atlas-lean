@@ -13,7 +13,9 @@ Costed lookup visits no more nodes than the tree contains.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Lookup With Cost](../part-01/lookup-with-cost.md)
+- [Size](../part-01/size.md)
 
 ## Sources
 

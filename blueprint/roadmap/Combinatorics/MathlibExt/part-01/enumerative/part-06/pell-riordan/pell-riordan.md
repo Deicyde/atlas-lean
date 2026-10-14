@@ -17,6 +17,10 @@ relation are the coefficients of the Riordan-array product.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pell riordan general](pell-riordan-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.PellRiordan](../../../../../../../sources/v2/MathlibExt.md)

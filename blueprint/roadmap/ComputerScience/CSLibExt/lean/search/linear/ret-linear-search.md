@@ -13,7 +13,7 @@ Erasing the recorded cost recovers Lean's standard first-index search.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Search](linear-search.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ Standard integer choice `⌊π / (4θ)⌋` for known marked count.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Grover Angle](../analysis/grover-angle.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Quantum.Grover.IterationBounds](../../../../../../sources/v2/CSLibExt.md)

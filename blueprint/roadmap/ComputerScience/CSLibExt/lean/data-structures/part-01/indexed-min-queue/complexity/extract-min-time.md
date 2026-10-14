@@ -13,7 +13,8 @@ Each selected EXTRACT-MIN coordinate has the frozen logarithmic bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Min Queue](../basic/indexed-min-queue.md)
+- [Extract Min](../basic/extract-min.md)
 
 ## Sources
 

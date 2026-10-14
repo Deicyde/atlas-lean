@@ -14,7 +14,7 @@ adaptation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arc Parameter](arc-parameter.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The number of cyclic integers in the closed interval `[n²-n, n²]`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Cyclic Number](is-cyclic-number.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.OppermannCyclicNumbers](../../../../../sources/v2/MathlibExt.md)

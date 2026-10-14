@@ -20,6 +20,10 @@ Proves `Wanted` entry `pompeiu`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pompeiu general](pompeiu-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.Pompeiu](../../../../../../sources/v2/MathlibExt.md)

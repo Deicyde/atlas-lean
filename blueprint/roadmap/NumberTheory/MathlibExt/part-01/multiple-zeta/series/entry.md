@@ -12,7 +12,8 @@ The `i`th entry of a multiple-zeta index, bundled as a positive natural number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
+- [Depth](../index/depth.md)
 
 ## Sources
 

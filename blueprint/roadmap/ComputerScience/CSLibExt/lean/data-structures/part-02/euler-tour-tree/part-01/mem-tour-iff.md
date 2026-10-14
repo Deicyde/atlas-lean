@@ -13,7 +13,15 @@ A vertex occurs in the Euler tour exactly when it is a vertex of the tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+- [Tour](tour.md)
+- [Vertices](vertices.md)
+
+## Proof depends on
+
+- [Children ind](children-ind.md)
+- [Tour node](tour-node.md)
+- [Vertices node](vertices-node.md)
 
 ## Sources
 

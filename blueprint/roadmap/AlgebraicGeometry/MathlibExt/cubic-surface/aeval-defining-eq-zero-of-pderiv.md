@@ -14,7 +14,7 @@ the defining cubic at a point forces the cubic itself to vanish there.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cubic Surface](cubic-surface.md)
 
 ## Sources
 

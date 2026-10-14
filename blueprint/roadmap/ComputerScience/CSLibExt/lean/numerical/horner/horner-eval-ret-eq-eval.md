@@ -13,7 +13,11 @@ Erasing the executed cost gives evaluation of the canonical coefficient polynomi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Horner Eval](horner-eval.md)
+
+## Proof depends on
+
+- [Horner Eval ret eq sum](horner-eval-ret-eq-sum.md)
 
 ## Sources
 

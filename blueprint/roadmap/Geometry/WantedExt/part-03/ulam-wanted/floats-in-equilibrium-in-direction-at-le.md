@@ -13,7 +13,12 @@ hyperplanes at level `δ`, the line `l(ξ)` through the centers of masses is par
 
 ## Depends on
 
-This node has no prerequisites.
+- [S](s.md)
+
+## Proof depends on
+
+- [Cutting Hyperplane At Level](cutting-hyperplane-at-level.md)
+- [Line Through Centers Of Mass](line-through-centers-of-mass.md)
 
 ## Sources
 

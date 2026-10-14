@@ -14,7 +14,16 @@ Product formula: for `k ≤ M`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gauss Binom](gauss-binom.md)
+- [Q Poch Fin](q-poch-fin.md)
+
+## Proof depends on
+
+- [Gauss Binom self](gauss-binom-self.md)
+- [Gauss Binom succ succ](gauss-binom-succ-succ.md)
+- [Gauss Binom zero right](gauss-binom-zero-right.md)
+- [Q Poch Fin succ](q-poch-fin-succ.md)
+- [Q Poch Fin zero](q-poch-fin-zero.md)
 
 ## Sources
 

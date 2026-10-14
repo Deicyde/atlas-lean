@@ -17,6 +17,10 @@ whole-word cyclic shift `f^{κ(j,n)}(Aₙ)` for `j = 1, …, k-1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Shift Word](shift-word.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.GeneralizedThueMorseSequence](../../../../../../../sources/v2/MathlibExt.md)

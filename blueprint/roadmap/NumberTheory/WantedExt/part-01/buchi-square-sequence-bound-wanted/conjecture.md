@@ -16,6 +16,11 @@ is trivial.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Buchi Sequence](is-buchi-sequence.md)
+- [Is Trivial](is-trivial.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.BuchiSquareSequenceBoundWanted](../../../../../sources/v2/WantedExt.md)

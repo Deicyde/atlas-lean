@@ -13,7 +13,7 @@ Square specialization `p_4(n) = n ^ 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polygonal Number](polygonal-number.md)
 
 ## Sources
 

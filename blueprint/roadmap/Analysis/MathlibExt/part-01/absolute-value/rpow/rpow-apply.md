@@ -13,7 +13,7 @@ Evaluation of `AbsoluteValue.rpow`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rpow](rpow.md)
 
 ## Sources
 

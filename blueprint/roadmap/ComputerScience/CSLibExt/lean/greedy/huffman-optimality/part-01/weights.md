@@ -12,7 +12,7 @@ Leaf weights, independent of their locations in the tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Weight Tree](huffman-weight-tree.md)
 
 ## Sources
 

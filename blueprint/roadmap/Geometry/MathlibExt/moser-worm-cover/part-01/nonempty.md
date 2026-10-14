@@ -14,7 +14,14 @@ adaptation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covers Every Unit Arc](covers-every-unit-arc.md)
+
+## Proof depends on
+
+- [Arc Parameter](arc-parameter.md)
+- [Unit Arc](unit-arc.md)
+- [Move](move.md)
+- [Straight Unit Arc](straight-unit-arc.md)
 
 ## Sources
 

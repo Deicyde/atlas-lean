@@ -12,7 +12,7 @@ Total value of the items at the selected indices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Item](item.md)
 
 ## Sources
 

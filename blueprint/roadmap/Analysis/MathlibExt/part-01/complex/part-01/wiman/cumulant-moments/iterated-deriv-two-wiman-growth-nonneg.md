@@ -13,7 +13,12 @@ The logarithmic radial majorant has nonnegative second derivative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Growth](../coefficient-exponential-family/wiman-growth.md)
+
+## Proof depends on
+
+- [Iterated Deriv two wiman Growth eq variance](iterated-deriv-two-wiman-growth-eq-varia.md)
+- [Wiman Tilted Measure](../coefficient-exponential-family/wiman-tilted-measure.md)
 
 ## Sources
 

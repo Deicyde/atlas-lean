@@ -13,7 +13,17 @@ The mixed characteristic polynomial of positive semidefinite matrices is real-ro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mixed Characteristic Polynomial](../mixed-char-poly/mixed-characteristic-polynomial.md)
+- [Is Real Rooted](../../../../../../Algebra/MathlibExt/polynomial/real-rooted/is-real-rooted.md)
+
+## Proof depends on
+
+- [Mixed Det Polynomial](../mixed-char-poly/mixed-det-polynomial.md)
+- [Mixed Det Polynomial is Real Stable of pos Semidef](mixed-det-polynomial-is-real-stable-of-p.md)
+- [Is Real Stable](../../../../../../Algebra/MathlibExt/mv-polynomial/stable/is-real-stable.md)
+- [Mixed Differential](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential.md)
+- [Mixed Differential cons](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential-cons.md)
+- [Univariate Specialization](../../../../../../Algebra/MathlibExt/mv-polynomial/stable/univariate-specialization.md)
 
 ## Sources
 

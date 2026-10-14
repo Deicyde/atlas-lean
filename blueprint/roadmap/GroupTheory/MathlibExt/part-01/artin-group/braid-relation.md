@@ -14,7 +14,15 @@ the two length-`M i j` alternating words in `of M i` and `of M j` agree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Artin Group](artin-group.md)
+- [Of](of.md)
+- [Alternating Word](alternating-word.md)
+- [Artin Relations Set](artin-relations-set.md)
+
+## Proof depends on
+
+- [Artin Relation](artin-relation.md)
+- [Map alternating Word](map-alternating-word.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ as an `ℝ`-basis of `V`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Rational](is-rational.md)
+
+## Proof depends on
+
+- [Int Points](int-points.md)
+- [Int Points Subspace](int-points-subspace.md)
 
 ## Sources
 

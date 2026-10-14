@@ -14,7 +14,12 @@ an algebra isomorphism, compatibly in both directions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residue Field Map Alg Hom](../dvr/residue-field-map-alg-hom.md)
+
+## Proof depends on
+
+- [Is Local Hom of is Discrete Valuation Ring](../dvr/is-local-hom-of-is-discrete-valuation-ri.md)
+- [Residue Field Map Alg Hom injective](../dvr/residue-field-map-alg-hom-injective.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ from `dresden_du_simplified_binet_of_initial_window`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dresden du simplified binet of initial window](dresden-du-simplified-binet-of-initial-w.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Recurrences.DresdenDuSimplifiedBinet](../../../../../../../sources/v2/MathlibExt.md)

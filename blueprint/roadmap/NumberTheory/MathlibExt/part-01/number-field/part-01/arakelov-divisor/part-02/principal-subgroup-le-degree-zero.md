@@ -13,7 +13,15 @@ The principal subgroup is contained in the degree-zero subgroup.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arakelov Divisor](../part-01/arakelov-divisor.md)
+- [Degree Zero](degree-zero.md)
+- [Principal Subgroup](principal-subgroup.md)
+
+## Proof depends on
+
+- [Size Hom](../part-01/size-hom.md)
+- [Principal Hom](../part-01/principal-hom.md)
+- [Size principal](size-principal.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Inserting an absent key increases the canonical node count by one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](../part-01/mem.md)
+- [Insert](../part-01/insert.md)
 
 ## Sources
 

@@ -14,7 +14,12 @@ for arbitrary real `σ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abel Continuation](abel-continuation.md)
+- [Abel Partial Sum](abel-partial-sum.md)
+
+## Proof depends on
+
+- [Differentiable At abel Continuation](differentiable-at-abel-continuation.md)
 
 ## Sources
 

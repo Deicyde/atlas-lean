@@ -14,7 +14,13 @@ when both factors are.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Rough](is-rough.md)
+
+## Proof depends on
+
+- [Lt of prime dvd](lt-of-prime-dvd.md)
+- [Ne zero](ne-zero.md)
+- [Of dvd](of-dvd.md)
 
 ## Sources
 

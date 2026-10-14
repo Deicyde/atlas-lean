@@ -13,7 +13,13 @@ A variance bound gives a simultaneous dimension-independent bound on shell width
 
 ## Depends on
 
-This node has no prerequisites.
+- [Thin Shell Variance Constant](thin-shell-variance-constant.md)
+- [Thin Shell Width](thin-shell-width.md)
+
+## Proof depends on
+
+- [Is Isotropic Log Concave](is-isotropic-log-concave.md)
+- [Radius fluctuation le constant](radius-fluctuation-le-constant.md)
 
 ## Sources
 

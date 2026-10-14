@@ -20,6 +20,10 @@ Proves `Wanted` entry `generalizedCatalan_prime_dvd_iff_not_geometric_sum`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fuss Catalan Divisibility](../../../Combinatorics/MathlibExt/part-01/enumerative/part-03/fuss-catalan-dvd-choose.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.GeneralizedCatalanPrimeDivisibility](../../../../sources/v2/MathlibExt.md)

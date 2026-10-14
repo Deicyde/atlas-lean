@@ -13,7 +13,7 @@ Partial differentiation becomes ordinary differentiation after univariate specia
 
 ## Depends on
 
-This node has no prerequisites.
+- [Univariate Specialization](univariate-specialization.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ The Morse quadratic form is smooth.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Morse Quadratic](morse-quadratic.md)
 
 ## Sources
 

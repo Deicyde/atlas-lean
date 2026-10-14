@@ -13,7 +13,11 @@ set is bounded below by `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
+
+## Proof depends on
+
+- [Steiner Tree Lengths](steiner-tree-lengths.md)
 
 ## Sources
 

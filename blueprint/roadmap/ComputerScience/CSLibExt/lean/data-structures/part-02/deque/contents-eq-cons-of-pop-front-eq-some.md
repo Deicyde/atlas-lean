@@ -13,7 +13,9 @@ A successful front pop returns the head and a deque representing the remaining t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Deque](deque.md)
+- [Contents](contents.md)
+- [Pop Front](pop-front.md)
 
 ## Sources
 

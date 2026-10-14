@@ -16,6 +16,11 @@ construction is out of scope.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Adj Lcp](adj-lcp.md)
+- [Suffix Array](suffix-array.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.SuffixArray](../../../../../../../sources/v2/CSLibExt.md)

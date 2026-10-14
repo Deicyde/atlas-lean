@@ -16,6 +16,10 @@ if and only if `m ∈ {2, 4, 6, 7, 14}` or `m = 3 ^ k` for some integer `k ≥ 1
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lucas Number](../../../MathlibExt/part-07/lucas-sequence/lucas-number.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LucasNumbersModuloMWanted](../../../../../sources/v2/WantedExt.md)

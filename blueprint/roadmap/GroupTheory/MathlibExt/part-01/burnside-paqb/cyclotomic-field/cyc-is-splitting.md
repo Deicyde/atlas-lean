@@ -13,7 +13,12 @@ lean: BurnsidePaqb.cyc_isSplitting
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyc Subfield](cyc-subfield.md)
+
+## Proof depends on
+
+- [Cyc root Set](cyc-root-set.md)
+- [Map X pow sub C rat](map-x-pow-sub-c-rat.md)
 
 ## Sources
 

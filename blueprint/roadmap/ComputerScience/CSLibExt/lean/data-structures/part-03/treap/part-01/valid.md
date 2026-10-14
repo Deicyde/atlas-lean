@@ -12,7 +12,12 @@ The representation invariant: strict BST order and min-heap priority order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Heap Ordered](heap-ordered.md)
+- [Ordered](ordered.md)
 
 ## Sources
 

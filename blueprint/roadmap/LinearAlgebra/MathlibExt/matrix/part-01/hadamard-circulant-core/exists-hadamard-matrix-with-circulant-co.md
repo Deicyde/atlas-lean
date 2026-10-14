@@ -13,7 +13,7 @@ Proves `Wanted` entry `exists_hadamard_matrix_with_circulant_core`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Hadamard Matrix](is-hadamard-matrix.md)
 
 ## Sources
 

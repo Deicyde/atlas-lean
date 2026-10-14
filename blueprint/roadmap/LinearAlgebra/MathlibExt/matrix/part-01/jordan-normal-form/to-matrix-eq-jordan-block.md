@@ -13,7 +13,7 @@ The matrix of a linear map on a Jordan chain is the corresponding Jordan block.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jordan Block](jordan-block.md)
 
 ## Sources
 

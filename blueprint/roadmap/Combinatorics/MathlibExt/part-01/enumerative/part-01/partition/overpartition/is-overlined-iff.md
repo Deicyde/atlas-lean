@@ -13,7 +13,8 @@ Membership characterization for `IsOverlined`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition](overpartition.md)
+- [Is Overlined](is-overlined.md)
 
 ## Sources
 

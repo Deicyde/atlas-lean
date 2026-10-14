@@ -16,7 +16,7 @@ Concept `jis_sem_e1177ff556038d65c81b8a4b`; source statement
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fubini Number](fubini-number.md)
 
 ## Sources
 

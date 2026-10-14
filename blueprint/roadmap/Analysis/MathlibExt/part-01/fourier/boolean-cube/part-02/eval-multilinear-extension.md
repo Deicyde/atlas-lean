@@ -14,7 +14,13 @@ cube point.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](../part-01/bool-cube.md)
+- [Multilinear Extension](../part-01/multilinear-extension.md)
+
+## Proof depends on
+
+- [Cube Basis](../part-01/cube-basis.md)
+- [Eval cube Basis](eval-cube-basis.md)
 
 ## Sources
 

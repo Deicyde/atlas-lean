@@ -12,7 +12,7 @@ Payloads stored at `ids`, in order; `none` marks an unallocated cell.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
 
 ## Sources
 

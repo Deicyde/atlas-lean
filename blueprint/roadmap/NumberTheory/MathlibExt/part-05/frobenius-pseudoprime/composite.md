@@ -13,7 +13,11 @@ A Frobenius pseudoprime is composite, as `¬ n.Prime`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Frobenius Pseudoprime](is-frobenius-pseudoprime.md)
+
+## Proof depends on
+
+- [Is Frobenius Probable Prime](is-frobenius-probable-prime.md)
 
 ## Sources
 

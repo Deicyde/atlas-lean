@@ -14,6 +14,10 @@ lean: MathlibExt.GroupTheory.BenderSuzukiWanted.GroupTheory.Defs.SzModel
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sz Generators](sz-generators.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.BenderSuzukiWanted](../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,8 @@ A list is a factor iff it equals a list-valued factor at some position.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Factor](is-factor.md)
+- [Factor List](factor-list.md)
 
 ## Sources
 

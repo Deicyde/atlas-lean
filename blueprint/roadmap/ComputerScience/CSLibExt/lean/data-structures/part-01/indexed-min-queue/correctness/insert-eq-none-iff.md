@@ -13,7 +13,8 @@ INSERT rejects exactly the identities already present.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Min Queue](../basic/indexed-min-queue.md)
+- [Insert](../basic/insert.md)
 
 ## Sources
 

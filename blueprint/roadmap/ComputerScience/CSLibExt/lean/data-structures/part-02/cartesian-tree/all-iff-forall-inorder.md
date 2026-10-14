@@ -13,7 +13,14 @@ lean: Cslib.Algorithms.Lean.CartesianTree.all_iff_forall_inorder
 
 ## Depends on
 
-This node has no prerequisites.
+- [All](../binary-search-tree/part-01/all.md)
+- [Inorder](../binary-search-tree/part-01/inorder.md)
+
+## Proof depends on
+
+- [Mem](../binary-search-tree/part-01/mem.md)
+- [All iff forall mem](../binary-search-tree/part-01/all-iff-forall-mem.md)
+- [Mem inorder](../binary-search-tree/part-01/mem-inorder.md)
 
 ## Sources
 

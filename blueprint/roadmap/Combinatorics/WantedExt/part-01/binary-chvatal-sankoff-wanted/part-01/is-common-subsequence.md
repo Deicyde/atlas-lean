@@ -13,7 +13,7 @@ Using `List.Sublist` retains repeated symbols and their multiplicities.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary String](binary-string.md)
 
 ## Sources
 

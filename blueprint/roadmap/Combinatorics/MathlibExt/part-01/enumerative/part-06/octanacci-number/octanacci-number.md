@@ -19,6 +19,10 @@ statements `jis_cb7e03aa435f1bbd253660ca` and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Octanacci Window](octanacci-window.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.OctanacciNumber](../../../../../../../sources/v2/MathlibExt.md)

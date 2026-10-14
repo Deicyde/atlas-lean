@@ -13,7 +13,7 @@ loops contribute two and hence are even. Source: [OPG-323] (URL: http://www.open
 
 ## Depends on
 
-This node has no prerequisites.
+- [FGraph](fgraph.md)
 
 ## Sources
 

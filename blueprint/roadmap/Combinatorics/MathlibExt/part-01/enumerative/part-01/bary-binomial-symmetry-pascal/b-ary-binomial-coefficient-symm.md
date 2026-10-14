@@ -13,7 +13,11 @@ The `b`-ary binomial coefficients are symmetric: `C_b(n, k) = C_b(n, n - k)` for
 
 ## Depends on
 
-This node has no prerequisites.
+- [B Ary Binomial Coefficient](../bary-binomial-coefficient/b-ary-binomial-coefficient.md)
+
+## Proof depends on
+
+- [B Ary Binomial Coefficient eq prod div pow](b-ary-binomial-coefficient-eq-prod-div-p.md)
 
 ## Sources
 

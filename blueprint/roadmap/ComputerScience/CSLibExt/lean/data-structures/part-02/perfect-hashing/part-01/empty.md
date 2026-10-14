@@ -12,7 +12,7 @@ The empty table for the given bucket sizes and secondary hash functions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](perfect-hashing.md)
 
 ## Sources
 

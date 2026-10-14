@@ -13,7 +13,12 @@ Selecting the rank of a key that survives deletion returns that key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Cache Correct delete](cache-correct-delete.md)
+- [Ordered delete](ordered-delete.md)
 
 ## Sources
 

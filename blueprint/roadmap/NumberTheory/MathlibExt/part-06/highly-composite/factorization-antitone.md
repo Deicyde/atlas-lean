@@ -13,7 +13,7 @@ The exponents in the prime factorization of a highly composite number are non-in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Highly Composite](is-highly-composite.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The standard example `z ^ n - 1` gives the lower bound one.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sendov Radius](sendov-radius.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.SendovRadiusConstantWanted](../../../../../sources/v2/WantedExt.md)

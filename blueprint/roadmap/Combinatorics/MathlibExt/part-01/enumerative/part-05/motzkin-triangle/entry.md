@@ -12,7 +12,7 @@ The `(n, k)` entry of the Motzkin triangle represented by `p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motzkin Riordan Pair](motzkin-riordan-pair.md)
 
 ## Sources
 

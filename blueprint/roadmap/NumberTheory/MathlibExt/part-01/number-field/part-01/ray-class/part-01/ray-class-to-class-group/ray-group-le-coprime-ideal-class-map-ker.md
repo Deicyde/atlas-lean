@@ -13,7 +13,14 @@ The ray group lies in the kernel of the ideal-class map.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprime Ideal Class Map](coprime-ideal-class-map.md)
+
+## Proof depends on
+
+- [Coprime Ideal Class Map apply](coprime-ideal-class-map-apply.md)
+- [Principal Ray Ideal Map](../principal-ideal/principal-ray-ideal-map.md)
+- [Principal Ray Ideal Map apply](../principal-ideal/principal-ray-ideal-map-apply.md)
+- [Ray Group eq map ray One Elements](../principal-ideal/ray-group-eq-map-ray-one-elements.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ Every real parameter lies in the interior exponential-integrability interval.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Coefficient Measure](wiman-coefficient-measure.md)
+
+## Proof depends on
+
+- [Integrable Exp Set wiman Coefficient Measure eq univ](integrable-exp-set-wiman-coefficient-mea.md)
 
 ## Sources
 

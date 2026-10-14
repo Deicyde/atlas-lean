@@ -14,7 +14,7 @@ iff `s ∉ C`, `t ∉ C`, and every `s-t` walk meets `C`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is STVertex Cut](is-stvertex-cut.md)
 
 ## Sources
 

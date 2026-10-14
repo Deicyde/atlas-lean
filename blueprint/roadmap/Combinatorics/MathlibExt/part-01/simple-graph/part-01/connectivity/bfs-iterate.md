@@ -14,6 +14,10 @@ Iterate `G.bfsStep` at most `n` times, stopping as soon as no new vertex shows u
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bfs Step](bfs-step.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Connectivity](../../../../../../../sources/v2/MathlibExt.md)

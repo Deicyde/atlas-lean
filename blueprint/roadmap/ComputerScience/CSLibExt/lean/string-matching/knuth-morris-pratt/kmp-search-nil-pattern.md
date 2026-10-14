@@ -13,7 +13,7 @@ The empty pattern occurs at offset zero without any symbol comparisons.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kmp Search](kmp-search.md)
 
 ## Sources
 

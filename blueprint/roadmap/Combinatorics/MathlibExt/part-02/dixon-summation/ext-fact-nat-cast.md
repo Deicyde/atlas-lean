@@ -13,7 +13,7 @@ The extended factorial agrees with `Nat.factorial` on natural inputs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ext Fact](ext-fact.md)
 
 ## Sources
 

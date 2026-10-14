@@ -18,6 +18,11 @@ value `1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gal Rep](gal-rep.md)
+- [Torsion Pts](torsion-pts.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.EllipticCurve.GaloisRepresentation](../../../../../sources/v2/MathlibExt.md)

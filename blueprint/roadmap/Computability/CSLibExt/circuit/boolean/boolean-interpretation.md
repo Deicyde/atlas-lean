@@ -12,7 +12,11 @@ The usual Boolean interpretation of NOT, AND and OR.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boolean Signature](boolean-signature.md)
+
+## Proof depends on
+
+- [Boolean Gate](boolean-gate.md)
 
 ## Sources
 

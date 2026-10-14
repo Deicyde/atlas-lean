@@ -14,7 +14,11 @@ the right sibling with `fixLeft`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BBTree](bbtree.md)
+
+## Proof depends on
+
+- [Fix Left](fix-left.md)
 
 ## Sources
 

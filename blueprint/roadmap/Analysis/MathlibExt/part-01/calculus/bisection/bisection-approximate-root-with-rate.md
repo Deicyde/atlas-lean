@@ -17,7 +17,7 @@ halved interval length gives the midpoint error bound, following Burden and Fair
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bisection Sequence](is-bisection-sequence.md)
 
 ## Sources
 

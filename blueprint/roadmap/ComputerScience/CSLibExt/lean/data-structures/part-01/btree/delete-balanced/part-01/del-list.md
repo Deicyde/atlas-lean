@@ -22,6 +22,15 @@ sibling and separator are in hand.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Borrow Left](borrow-left.md)
+- [Borrow Right](borrow-right.md)
+- [Key Count](key-count.md)
+- [Max Key](max-key.md)
+- [Merge](merge.md)
+- [Min Key](min-key.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BTree.DeleteBalanced](../../../../../../../../../sources/v2/CSLibExt.md)

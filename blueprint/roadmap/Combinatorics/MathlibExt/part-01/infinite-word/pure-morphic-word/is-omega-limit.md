@@ -20,6 +20,10 @@ iterate carries the same letter as the infinite word (concept
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Morph Iterate](morph-iterate.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.PureMorphicWord](../../../../../../sources/v2/MathlibExt.md)

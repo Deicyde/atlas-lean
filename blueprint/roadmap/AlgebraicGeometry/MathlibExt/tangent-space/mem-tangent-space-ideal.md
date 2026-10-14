@@ -13,7 +13,13 @@ Membership in the ideal tangent space is simultaneous vanishing on all of `I`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tangent Space Ideal](tangent-space-ideal.md)
+- [Total Derivative At](total-derivative-at.md)
+
+## Proof depends on
+
+- [Mem tangent Space Poly](mem-tangent-space-poly.md)
+- [Tangent Space Poly](tangent-space-poly.md)
 
 ## Sources
 

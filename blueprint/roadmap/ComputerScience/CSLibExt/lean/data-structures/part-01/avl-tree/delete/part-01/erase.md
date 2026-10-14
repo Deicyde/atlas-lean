@@ -16,6 +16,11 @@ deletes that minimum with `eraseMin`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Delete Min](delete-min.md)
+- [Min D](min-d.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.AvlTree.Delete](../../../../../../../../../sources/v2/CSLibExt.md)

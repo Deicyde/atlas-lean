@@ -30,6 +30,10 @@ and `ha0` are unused and keep the source's shape.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Det toeplitz Hessenberg eq sum compositions general](det-toeplitz-hessenberg-eq-sum-compositi.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.TrudiBrioschiDeterminant](../../../../../../sources/v2/MathlibExt.md)

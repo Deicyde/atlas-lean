@@ -14,6 +14,10 @@ Elements of `Kˣ` whose principal ideal is coprime to the modulus.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Coprime Fractional Ideals](coprime-fractional-ideals.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.RayGroup](../../../../../../../../../sources/v2/MathlibExt.md)

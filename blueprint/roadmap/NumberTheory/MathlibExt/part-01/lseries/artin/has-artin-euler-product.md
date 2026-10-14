@@ -12,7 +12,11 @@ The raw local factors have the convergent product `z` at `s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Artin Local Datum](artin-local-datum.md)
+
+## Proof depends on
+
+- [Artin Local Factor Raw](artin-local-factor-raw.md)
 
 ## Sources
 

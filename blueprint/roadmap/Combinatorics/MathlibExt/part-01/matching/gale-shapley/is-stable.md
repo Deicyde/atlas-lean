@@ -12,7 +12,13 @@ A perfect matching is stable if it has no blocking pair.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MPrefs](mprefs.md)
+- [Perfect Matching](perfect-matching.md)
+- [WPrefs](wprefs.md)
+
+## Proof depends on
+
+- [Is Blocking Pair](is-blocking-pair.md)
 
 ## Sources
 

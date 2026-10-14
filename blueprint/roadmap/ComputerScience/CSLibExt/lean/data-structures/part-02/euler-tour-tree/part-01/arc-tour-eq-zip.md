@@ -13,7 +13,9 @@ lean: Cslib.Algorithms.Lean.EulerTourTree.Tree.arcTour_eq_zip
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+- [Arc Tour](arc-tour.md)
+- [Tour](tour.md)
 
 ## Sources
 

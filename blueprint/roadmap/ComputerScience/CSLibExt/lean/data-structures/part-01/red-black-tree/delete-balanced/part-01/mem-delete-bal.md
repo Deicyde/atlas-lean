@@ -13,7 +13,11 @@ Deletion from an ordered tree removes exactly the deleted key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete Bal](delete-bal.md)
+
+## Proof depends on
+
+- [Inorder delete Bal](inorder-delete-bal.md)
 
 ## Sources
 

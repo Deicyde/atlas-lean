@@ -13,7 +13,7 @@ The extended factorial vanishes at negative integers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ext Fact](ext-fact.md)
 
 ## Sources
 

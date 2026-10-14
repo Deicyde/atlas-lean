@@ -16,6 +16,11 @@ Concept `jis_sem_4bcead3a4bcda58a1d4dbb9f`; source D3
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Extend A](extend-a.md)
+- [Weight Sum Aux](weight-sum-aux.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.PartitionNumberArray](../../../../../../../sources/v2/MathlibExt.md)

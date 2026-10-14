@@ -13,7 +13,11 @@ Deletion preserves the red invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete Bal](../part-01/delete-bal.md)
+
+## Proof depends on
+
+- [Valid delete Bal](valid-delete-bal.md)
 
 ## Sources
 

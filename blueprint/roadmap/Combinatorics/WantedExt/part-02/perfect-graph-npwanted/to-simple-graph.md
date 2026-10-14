@@ -13,7 +13,8 @@ A valid instance determines a finite simple undirected loopless graph
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Graph Instance](perfect-graph-instance.md)
+- [Valid](valid.md)
 
 ## Sources
 

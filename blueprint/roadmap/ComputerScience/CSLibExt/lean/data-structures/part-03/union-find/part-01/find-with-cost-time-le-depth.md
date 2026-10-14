@@ -13,7 +13,13 @@ One `find` costs at most the certified input depth plus one root visit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
+- [Find With Cost](find-with-cost.md)
+
+## Proof depends on
+
+- [Find With Cost time](find-with-cost-time.md)
+- [Path Length](path-length.md)
 
 ## Sources
 

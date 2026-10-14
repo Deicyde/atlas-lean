@@ -12,7 +12,7 @@ A proof that a particular occurrence of a weight sits at a given depth.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Weight Tree](huffman-weight-tree.md)
 
 ## Sources
 

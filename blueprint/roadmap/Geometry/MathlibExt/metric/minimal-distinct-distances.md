@@ -16,6 +16,10 @@ taken silently over `∅` (where `Nat.sInf_empty = 0` would apply).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Distinct Distances](distinct-distances.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Metric](../../../../sources/v2/MathlibExt.md)

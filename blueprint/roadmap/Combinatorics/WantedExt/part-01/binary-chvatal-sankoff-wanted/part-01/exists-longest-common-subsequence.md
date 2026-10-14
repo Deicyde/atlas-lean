@@ -14,7 +14,14 @@ other common subsequence is no longer.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary String](binary-string.md)
+- [Is Common Subsequence](is-common-subsequence.md)
+- [Lcs Length](lcs-length.md)
+
+## Proof depends on
+
+- [Common Subsequence Lengths](common-subsequence-lengths.md)
+- [Lcs Length is Greatest](lcs-length-is-greatest.md)
 
 ## Sources
 

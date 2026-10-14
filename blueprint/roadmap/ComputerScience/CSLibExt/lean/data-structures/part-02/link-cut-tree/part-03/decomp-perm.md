@@ -14,7 +14,15 @@ paths are a permutation of the vertex list, for every preferred-edge list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
+- [Decomp](decomp.md)
+
+## Proof depends on
+
+- [Children ind](../../euler-tour-tree/part-01/children-ind.md)
+- [Root](../../euler-tour-tree/part-01/root.md)
+- [Vertices node](../../euler-tour-tree/part-01/vertices-node.md)
 
 ## Sources
 

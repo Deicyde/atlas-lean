@@ -15,6 +15,11 @@ expansion of `a / n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists traj eq zero pos](exists-traj-eq-zero-pos.md)
+- [Traj](traj.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PierceExpansion](../../../../../sources/v2/MathlibExt.md)

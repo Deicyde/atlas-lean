@@ -13,7 +13,11 @@ An indexed walk is Eulerian exactly when it is a trail containing every edge ide
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
+- [Indexed Walk](indexed-walk.md)
+- [Is Eulerian](is-eulerian.md)
+- [Is Trail](is-trail.md)
+- [Edges](edges.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ An inserted element is a member of the resulting tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](van-emde-boas.md)
+- [Insert](insert.md)
+- [Member](member.md)
 
 ## Sources
 

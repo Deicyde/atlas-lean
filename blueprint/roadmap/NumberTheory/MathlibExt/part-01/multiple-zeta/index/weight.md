@@ -13,7 +13,7 @@ Weight of an index: the sum of its entries. Source clause D3
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](index.md)
 
 ## Sources
 

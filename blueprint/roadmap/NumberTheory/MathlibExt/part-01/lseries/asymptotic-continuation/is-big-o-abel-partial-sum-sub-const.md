@@ -13,7 +13,11 @@ The shifted partial sums inherit the `O(n ^ σ)` bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abel Partial Sum](../abel-continuation/abel-partial-sum.md)
+
+## Proof depends on
+
+- [Abel Partial Sum sub const](abel-partial-sum-sub-const.md)
 
 ## Sources
 

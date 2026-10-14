@@ -13,7 +13,8 @@ Evaluation at a finite prime.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Place](place.md)
+- [Absolute Value](absolute-value.md)
 
 ## Sources
 

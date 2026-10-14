@@ -12,7 +12,12 @@ Curvature `κ(t) = ‖r'(t) × r''(t)‖ / ‖r'(t)‖³`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Space](space.md)
+
+## Proof depends on
+
+- [Acceleration](acceleration.md)
+- [Velocity](velocity.md)
 
 ## Sources
 

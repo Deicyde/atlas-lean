@@ -15,6 +15,10 @@ lines 62-67. Distinct from dilate-after-translate `t • (P + {x})`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Std Lattice](std-lattice.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.LatticePointEnumerator](../../../../sources/v2/MathlibExt.md)

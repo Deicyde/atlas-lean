@@ -13,7 +13,9 @@ Every returned heap satisfies its local heap-order invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Heap Ordered](../part-01/dary-heap-ordered.md)
+- [Dary Min Heap](../part-02/dary-min-heap.md)
+- [Extract Min](extract-min.md)
 
 ## Sources
 

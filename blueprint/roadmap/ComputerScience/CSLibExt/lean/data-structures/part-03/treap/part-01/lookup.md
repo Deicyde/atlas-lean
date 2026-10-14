@@ -12,7 +12,7 @@ Search for a key by following the BST comparisons.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
 
 ## Sources
 

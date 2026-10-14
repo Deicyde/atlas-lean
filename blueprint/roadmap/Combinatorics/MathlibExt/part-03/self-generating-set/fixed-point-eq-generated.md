@@ -14,7 +14,16 @@ if a non-seed element is `f x`, then strict growth gives `x < f x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fixed Point](fixed-point.md)
+- [Generated Set](generated-set.md)
+- [Strict Growth](strict-growth.md)
+
+## Proof depends on
+
+- [Gen](gen.md)
+- [SG](sg.md)
+- [Fixed Point is SG](fixed-point-is-sg.md)
+- [Generated le of sg](generated-le-of-sg.md)
 
 ## Sources
 

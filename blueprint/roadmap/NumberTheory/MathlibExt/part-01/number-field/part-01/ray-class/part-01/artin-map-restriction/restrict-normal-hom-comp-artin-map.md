@@ -14,7 +14,11 @@ homomorphisms.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Artin Map](../artin-map/artin-map.md)
+
+## Proof depends on
+
+- [Restrict Normal Hom artin Map prime Coprime Unit](restrict-normal-hom-artin-map-prime-copr.md)
 
 ## Sources
 

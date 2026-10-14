@@ -19,6 +19,10 @@ the lifted minimal polynomial is a uniformizer. This is a projection of
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists generator with residue minpoly uniformizer](exists-generator-with-residue-minpoly-un.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DiscreteValuationRing.Monogenic](../../../../../sources/v2/MathlibExt.md)

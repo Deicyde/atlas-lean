@@ -14,7 +14,11 @@ The Lucasnomial coefficient. As for `Nat.choose`, it is zero when
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Parameters](lucas-parameters.md)
+
+## Proof depends on
+
+- [Lucas Factorial](lucas-factorial.md)
 
 ## Sources
 

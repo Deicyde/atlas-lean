@@ -13,7 +13,8 @@ The empty graph has no edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empty](empty.md)
+- [Has Edge](has-edge.md)
 
 ## Sources
 

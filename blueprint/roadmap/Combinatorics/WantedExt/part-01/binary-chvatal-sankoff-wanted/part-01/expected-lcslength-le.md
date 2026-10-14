@@ -13,7 +13,15 @@ Expected LCS length is at most the common input length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected LCSLength](expected-lcslength.md)
+
+## Proof depends on
+
+- [Binary String](binary-string.md)
+- [Binary String Pair](binary-string-pair.md)
+- [Lcs Length](lcs-length.md)
+- [Lcs Length le](lcs-length-le.md)
+- [Uniform Binary String Pairs](uniform-binary-string-pairs.md)
 
 ## Sources
 

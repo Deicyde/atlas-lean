@@ -15,6 +15,11 @@ The moments `a` are **Hausdorff bounded**: there is `C` with
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Diff](diff.md)
+- [Multi Choose](multi-choose.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HausdorffMomentsWanted](../../../../../sources/v2/WantedExt.md)

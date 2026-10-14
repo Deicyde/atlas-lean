@@ -13,7 +13,7 @@ A key collides with itself under every function in the family.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Collision Count](collision-count.md)
 
 ## Sources
 

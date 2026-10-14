@@ -16,6 +16,10 @@ and a sum-versus-integral error bound, followed by passage to the defining limit
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Summable chapter7 Entry14 Term](summable-chapter7-entry14-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch7Entry14Bernoullipolymult](../../../../../../../sources/v2/MathlibExt.md)

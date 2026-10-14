@@ -16,6 +16,10 @@ must be a distinct Fermat prime.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fermat Prime](../../../MathlibExt/part-05/is-fermat-prime.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GaussWantzelWanted](../../../../../sources/v2/WantedExt.md)

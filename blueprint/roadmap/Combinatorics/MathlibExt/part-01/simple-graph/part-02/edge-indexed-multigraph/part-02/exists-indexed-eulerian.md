@@ -14,7 +14,19 @@ Euler circuit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](../part-01/edge-indexed-multigraph.md)
+- [Indexed Walk](../part-01/indexed-walk.md)
+- [Is Eulerian](../part-01/is-eulerian.md)
+- [Degree](degree.md)
+- [Underlying](../part-01/underlying.md)
+
+## Proof depends on
+
+- [Inc](../part-01/inc.md)
+- [Is Trail](../part-01/is-trail.md)
+- [Edges](../part-01/edges.md)
+- [Inc iff](../part-01/inc-iff.md)
+- [Underlying adj](../part-01/underlying-adj.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ The averaging operator commutes with the `G`-action for class functions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Class Fun](is-class-fun.md)
+- [Zimm Op](zimm-op.md)
 
 ## Sources
 

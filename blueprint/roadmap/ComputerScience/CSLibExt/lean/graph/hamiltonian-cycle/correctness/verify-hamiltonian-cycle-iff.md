@@ -13,7 +13,7 @@ The actual verifier accepts exactly its graph encoding and ordered-cycle checks.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Basic](../verify-hamiltonian-cycle.md)
 
 ## Sources
 

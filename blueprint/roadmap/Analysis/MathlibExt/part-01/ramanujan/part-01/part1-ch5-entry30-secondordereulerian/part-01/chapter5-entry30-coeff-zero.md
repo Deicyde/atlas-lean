@@ -13,7 +13,11 @@ The coefficient at `0` is `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter5 Entry30 Coeff](chapter5-entry30-coeff.md)
+
+## Proof depends on
+
+- [Chapter5 Entry30 Local Coeff](chapter5-entry30-local-coeff.md)
 
 ## Sources
 

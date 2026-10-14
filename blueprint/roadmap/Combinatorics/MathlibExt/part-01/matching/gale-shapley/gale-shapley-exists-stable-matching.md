@@ -14,7 +14,14 @@ perfect matching exists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Stable](is-stable.md)
+- [MPrefs](mprefs.md)
+- [Perfect Matching](perfect-matching.md)
+- [WPrefs](wprefs.md)
+
+## Proof depends on
+
+- [Gale shapley exists stable matching general](gale-shapley-exists-stable-matching-gene.md)
 
 ## Sources
 

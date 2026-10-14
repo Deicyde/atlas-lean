@@ -13,7 +13,15 @@ The actual order-one sign-matrix minimum is one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minimum Condition Number](minimum-condition-number.md)
+
+## Proof depends on
+
+- [Sign Matrix](sign-matrix.md)
+- [Realize](realize.md)
+- [Condition Number](condition-number.md)
+- [Condition Number one order one](condition-number-one-order-one.md)
+- [One le minimum Condition Number](one-le-minimum-condition-number.md)
 
 ## Sources
 

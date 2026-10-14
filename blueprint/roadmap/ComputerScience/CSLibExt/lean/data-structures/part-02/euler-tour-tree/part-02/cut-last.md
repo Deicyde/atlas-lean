@@ -13,7 +13,7 @@ removed subtree, or `none` when the root has no children.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
 
 ## Sources
 

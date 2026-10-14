@@ -13,7 +13,7 @@ surface but is singular.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cubic Surface](cubic-surface.md)
 
 ## Sources
 

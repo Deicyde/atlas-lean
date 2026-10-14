@@ -13,7 +13,13 @@ Adding a disjoint family of indexed edges preserves connectedness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](../part-01/edge-indexed-multigraph.md)
+- [Disjoint Sum](disjoint-sum.md)
+- [Underlying](../part-01/underlying.md)
+
+## Proof depends on
+
+- [Underlying adj](../part-01/underlying-adj.md)
 
 ## Sources
 

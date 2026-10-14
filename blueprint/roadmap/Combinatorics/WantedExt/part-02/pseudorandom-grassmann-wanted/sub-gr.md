@@ -13,7 +13,7 @@ See page 13 of the paper.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gr Vertex](gr-vertex.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The unique strictly decreasing tuple of length zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strict Decreasing Tuple](strict-decreasing-tuple.md)
 
 ## Sources
 

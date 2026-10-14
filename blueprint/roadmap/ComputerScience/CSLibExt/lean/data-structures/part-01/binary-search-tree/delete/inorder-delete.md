@@ -13,7 +13,12 @@ Deleting a key erases it from the inorder traversal of an ordered tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Inorder join](inorder-join.md)
+- [Join](join.md)
 
 ## Sources
 

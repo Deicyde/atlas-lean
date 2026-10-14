@@ -12,7 +12,11 @@ Search a tree by following comparisons from its root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Color](color.md)
 
 ## Sources
 

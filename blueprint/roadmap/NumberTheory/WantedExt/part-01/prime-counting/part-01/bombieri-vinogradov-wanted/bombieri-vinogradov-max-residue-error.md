@@ -15,6 +15,10 @@ The maximal residue-class error at level `y` over the reduced residues
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bombieri Vinogradov Residue Error](bombieri-vinogradov-residue-error.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.PrimeCounting.BombieriVinogradovWanted](../../../../../../../sources/v2/WantedExt.md)

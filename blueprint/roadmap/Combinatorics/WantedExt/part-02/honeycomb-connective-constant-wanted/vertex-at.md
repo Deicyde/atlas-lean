@@ -12,7 +12,11 @@ The vertex visited after the first `i` steps of a direction word.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Honeycomb Vertex](honeycomb-vertex.md)
+
+## Proof depends on
+
+- [Endpoint](endpoint.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ At a real place, the degree-normalization exponent is `1 / [K : ℚ]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Absolute Value](normalized-absolute-value-2.md)
+
+## Proof depends on
+
+- [Normalized Absolute Value apply](normalized-absolute-value-apply-2.md)
 
 ## Sources
 

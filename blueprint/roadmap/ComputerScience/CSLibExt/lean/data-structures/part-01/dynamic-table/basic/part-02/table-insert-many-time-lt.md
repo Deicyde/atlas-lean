@@ -13,7 +13,16 @@ The first allocation has charge two, giving a strict bound for every nonempty in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](../part-01/table.md)
+- [Empty](../part-01/empty.md)
+- [Table Insert Many](../part-01/table-insert-many.md)
+
+## Proof depends on
+
+- [Table Insert](../part-01/table-insert.md)
+- [Table Insert num](../part-01/table-insert-num.md)
+- [Table Insert size](../part-01/table-insert-size.md)
+- [Table Insert time](../part-01/table-insert-time.md)
 
 ## Sources
 

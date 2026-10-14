@@ -14,6 +14,10 @@ The number of edges crossing a cut. Distinct parallel edges are counted separate
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Crosses Cut](crosses-cut.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.JaegerModularOrientationWanted](../../../../../sources/v2/WantedExt.md)

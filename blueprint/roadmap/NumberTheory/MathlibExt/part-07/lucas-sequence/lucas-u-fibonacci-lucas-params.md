@@ -13,7 +13,12 @@ The `U` sequence for `(P, Q) = (1, -1)` is the Fibonacci sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Lucas Params](fibonacci-lucas-params.md)
+- [Lucas U](lucas-u.md)
+
+## Proof depends on
+
+- [Lucas Sequence Params](lucas-sequence-params.md)
 
 ## Sources
 

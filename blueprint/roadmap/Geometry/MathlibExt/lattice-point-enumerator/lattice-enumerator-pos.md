@@ -16,6 +16,10 @@ Rocha-Neves, lines 24-31. The `hb` proof rules out unbounded `P`, where
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lattice Enumerator](lattice-enumerator.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.LatticePointEnumerator](../../../../sources/v2/MathlibExt.md)

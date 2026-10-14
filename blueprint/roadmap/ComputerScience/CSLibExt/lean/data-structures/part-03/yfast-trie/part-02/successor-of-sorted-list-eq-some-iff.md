@@ -14,7 +14,15 @@ above the query.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Of Sorted List](of-sorted-list.md)
+- [Successor](../part-01/successor.md)
+
+## Proof depends on
+
+- [Contents](../part-01/contents.md)
+- [Contents of Sorted List](contents-of-sorted-list.md)
+- [Successor eq some iff](../part-01/successor-eq-some-iff.md)
+- [Valid of Sorted List](valid-of-sorted-list.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ most `(2 - √(5/2) + ε)n` vertices doubly to every triangle.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Joined To Two](joined-to-two.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.ErdosProblem1034Wanted](../../../../sources/v2/WantedExt.md)

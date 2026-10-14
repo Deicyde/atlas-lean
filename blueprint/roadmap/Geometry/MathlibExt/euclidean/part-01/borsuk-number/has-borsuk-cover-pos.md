@@ -13,7 +13,7 @@ A nonempty set cannot have a zero-member cover.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Borsuk Cover](has-borsuk-cover.md)
 
 ## Sources
 

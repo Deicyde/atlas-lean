@@ -13,7 +13,11 @@ The support function is continuous.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Supp Func](supp-func.md)
+
+## Proof depends on
+
+- [Supp Func lipschitz](supp-func-lipschitz.md)
 
 ## Sources
 

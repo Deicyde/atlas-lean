@@ -12,7 +12,7 @@ Strictly lower the finite key of one present identity and sift it upward.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Min Queue](indexed-min-queue.md)
 
 ## Sources
 

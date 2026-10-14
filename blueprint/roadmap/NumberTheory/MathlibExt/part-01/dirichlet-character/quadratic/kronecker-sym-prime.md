@@ -13,7 +13,8 @@ Kronecker symbol at a prime lower argument reduces to the prime dispatcher.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kronecker At Prime](kronecker-at-prime.md)
+- [Kronecker Sym](kronecker-sym.md)
 
 ## Sources
 

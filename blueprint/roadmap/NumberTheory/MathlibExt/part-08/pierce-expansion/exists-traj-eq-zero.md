@@ -13,7 +13,7 @@ Every Pierce trajectory reaches `0` within `a + 1` steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Traj](traj.md)
 
 ## Sources
 

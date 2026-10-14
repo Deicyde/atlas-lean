@@ -14,7 +14,12 @@ some `c > 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter5 Entry30 Coeff](chapter5-entry30-coeff.md)
+
+## Proof depends on
+
+- [Chapter5 Entry30 Coeff of not squarefree](chapter5-entry30-coeff-of-not-squarefree.md)
+- [Chapter5 Entry30 Coeff of squarefree](chapter5-entry30-coeff-of-squarefree.md)
 
 ## Sources
 

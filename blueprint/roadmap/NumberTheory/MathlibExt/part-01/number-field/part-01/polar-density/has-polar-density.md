@@ -20,6 +20,10 @@ Dedekind zeta function on the right-half-plane germ at `1`, has
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Partial Dedekind Zeta](../partial-dedekind-zeta.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.PolarDensity](../../../../../../../sources/v2/MathlibExt.md)

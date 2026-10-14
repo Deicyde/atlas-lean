@@ -13,7 +13,7 @@ A locally uniformly bounded family is uniformly bounded on each compact subset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Locally Uniformly Bounded On](is-locally-uniformly-bounded-on.md)
 
 ## Sources
 

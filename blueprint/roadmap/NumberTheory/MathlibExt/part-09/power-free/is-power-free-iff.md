@@ -13,7 +13,7 @@ Transparent characterization of `IsPowerFree`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Power Free](is-power-free.md)
 
 ## Sources
 

@@ -14,7 +14,15 @@ optimal among all feasible subsets of the input indices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Feasible](feasible.md)
+- [Item](item.md)
+- [Result](result.md)
+- [Solve](solve.md)
+- [Total Value](total-value.md)
+
+## Proof depends on
+
+- [Total Weight](total-weight.md)
 
 ## Sources
 

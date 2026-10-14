@@ -15,6 +15,10 @@ lean: MathlibExt.Analysis.HausdorffMomentsWanted.Analysis.IsPositiveMomentConfig
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Moment Of](moment-of.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HausdorffMomentsWanted](../../../../../sources/v2/WantedExt.md)

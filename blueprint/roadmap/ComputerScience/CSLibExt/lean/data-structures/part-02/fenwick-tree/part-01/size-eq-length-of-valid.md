@@ -13,7 +13,13 @@ A tree representing `arr` has size `arr.length`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fenwick Tree](fenwick-tree.md)
+- [Valid](valid.md)
+- [Size](size.md)
+
+## Proof depends on
+
+- [Block Sum](block-sum.md)
 
 ## Sources
 

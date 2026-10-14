@@ -14,7 +14,7 @@ Concept `jis_sem_f409ef3715730614fd194b4d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Morph](fib-morph.md)
 
 ## Sources
 

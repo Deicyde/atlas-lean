@@ -15,6 +15,10 @@ In a finite `p`-group, every conjugacy-class size is a power of `p`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Card carrier dvd card](card-carrier-dvd-card.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.ClassBreadth](../../../../../sources/v2/MathlibExt.md)

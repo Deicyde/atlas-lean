@@ -14,7 +14,15 @@ Finite Shearer inequality without the hypothesis `0 < k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shearer Full Entropy](shearer-full-entropy.md)
+- [Shearer Marginal Entropy](shearer-marginal-entropy.md)
+
+## Proof depends on
+
+- [Shearer Marginal Entropy empty](shearer-marginal-entropy-empty.md)
+- [Shearer Marginal Entropy mono](shearer-marginal-entropy-mono.md)
+- [Shearer Marginal Entropy submodular](shearer-marginal-entropy-submodular.md)
+- [Shearer Marginal Entropy univ](shearer-marginal-entropy-univ.md)
 
 ## Sources
 

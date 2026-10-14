@@ -13,7 +13,7 @@ Minimum extraction compares the candidate with every remaining element exactly o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extract Min](extract-min.md)
 
 ## Sources
 

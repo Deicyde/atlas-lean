@@ -14,7 +14,12 @@ rather than a scan of the work forest.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](../part-01/huffman-tree.md)
+- [Huffman Work Item](huffman-work-item.md)
+
+## Proof depends on
+
+- [Huffman Priority](huffman-priority.md)
 
 ## Sources
 

@@ -17,6 +17,10 @@ Proves `Wanted` entry `ramanujan_part1_ch3_entry12_summable_succ_n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ramanujan part1 ch3 entry12 summable succ n general](ramanujan-part1-ch3-entry12-summable-suc.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry12SummableSuccN](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,8 @@ A successor run returns the increment of its actual predecessor state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Increment](increment.md)
+- [Run](run.md)
 
 ## Sources
 

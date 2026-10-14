@@ -14,7 +14,13 @@ This counts element-order decisions, not full RAM instructions or comparator bit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Max](min-max.md)
+
+## Proof depends on
+
+- [Min Max nil](min-max-nil.md)
+- [Min Max time even](min-max-time-even.md)
+- [Min Max time odd](min-max-time-odd.md)
 
 ## Sources
 

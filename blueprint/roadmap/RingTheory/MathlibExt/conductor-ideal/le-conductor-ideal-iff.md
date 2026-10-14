@@ -14,7 +14,11 @@ if it lies in `A`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conductor Ideal](conductor-ideal.md)
+
+## Proof depends on
+
+- [Mem conductor Ideal](mem-conductor-ideal.md)
 
 ## Sources
 

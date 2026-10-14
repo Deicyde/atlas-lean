@@ -13,7 +13,9 @@ Every admissible law contributes its actual variance to the universal supremum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Isotropic Log Concave](is-isotropic-log-concave.md)
+- [Normalized Radius Variance](normalized-radius-variance.md)
+- [Thin Shell Variance Constant](thin-shell-variance-constant.md)
 
 ## Sources
 

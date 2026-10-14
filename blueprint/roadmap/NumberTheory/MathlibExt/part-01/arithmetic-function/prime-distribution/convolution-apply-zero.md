@@ -13,7 +13,11 @@ A positive-index convolution has coefficient zero at index zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convolution](convolution.md)
+
+## Proof depends on
+
+- [Convolution apply](convolution-apply.md)
 
 ## Sources
 

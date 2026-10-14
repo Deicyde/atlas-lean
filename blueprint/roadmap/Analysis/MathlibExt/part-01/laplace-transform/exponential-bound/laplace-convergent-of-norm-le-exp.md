@@ -13,7 +13,7 @@ Laplace convergence from an exponential norm bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laplace Convergent](../basic/laplace-convergent.md)
 
 ## Sources
 

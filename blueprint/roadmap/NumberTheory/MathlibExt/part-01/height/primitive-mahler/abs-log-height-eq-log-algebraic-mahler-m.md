@@ -13,7 +13,14 @@ On algebraic inputs, the canonical absolute logarithmic height is `log M / degre
 
 ## Depends on
 
-This node has no prerequisites.
+- [Algebraic Mahler Measure](algebraic-mahler-measure.md)
+
+## Proof depends on
+
+- [Abs Mul Height₁ eq map Mahler Measure of is Integral](../absolute-log-height-roots/abs-mul-height-eq-map-mahler-measure-of.md)
+- [Algebraic Mahler Measure eq](algebraic-mahler-measure-eq.md)
+- [One le algebraic Mahler Measure](one-le-algebraic-mahler-measure.md)
+- [Absolute](../primitive-int-minpoly.md)
 
 ## Sources
 

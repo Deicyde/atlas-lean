@@ -13,7 +13,8 @@ Each Pierce length is bounded by the length function.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Length](length.md)
+- [Max Length](max-length.md)
 
 ## Sources
 

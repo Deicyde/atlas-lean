@@ -12,7 +12,7 @@ Scan the real requests and evict the first resident used furthest in the strict 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](cache-event.md)
 
 ## Sources
 

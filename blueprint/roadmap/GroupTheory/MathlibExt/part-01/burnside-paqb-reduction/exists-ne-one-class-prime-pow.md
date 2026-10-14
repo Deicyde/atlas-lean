@@ -15,7 +15,11 @@ size `p^k`, `k ≤ a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conj Class](conj-class.md)
+
+## Proof depends on
+
+- [Conj Class card mul centralizer card](conj-class-card-mul-centralizer-card.md)
 
 ## Sources
 

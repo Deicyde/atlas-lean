@@ -14,7 +14,7 @@ multiset by the new key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decrease Root](decrease-root.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ There is one partition of `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Function](partition-function.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ Over a finite alphabet, a language whose words all have length at most `n` is re
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Of finite](of-finite.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.Finite](../../../../../sources/v2/CSLibExt.md)

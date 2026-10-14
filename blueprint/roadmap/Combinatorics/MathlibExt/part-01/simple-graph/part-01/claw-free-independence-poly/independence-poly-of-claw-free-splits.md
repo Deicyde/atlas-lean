@@ -16,7 +16,7 @@ image splits, i.e. it has only real zeros.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Claw Free](claw-free.md)
 
 ## Sources
 

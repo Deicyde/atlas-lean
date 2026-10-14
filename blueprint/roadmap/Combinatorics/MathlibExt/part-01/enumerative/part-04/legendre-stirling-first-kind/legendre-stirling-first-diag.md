@@ -15,7 +15,11 @@ Concept `jis_sem_f66a64ccd0402d409b050315` (statements
 
 ## Depends on
 
-This node has no prerequisites.
+- [Legendre Stirling First](legendre-stirling-first.md)
+
+## Proof depends on
+
+- [Jacobi Stirling First diagonal](../jacobi-stirling-first-kind/jacobi-stirling-first-diagonal.md)
 
 ## Sources
 

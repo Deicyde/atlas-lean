@@ -13,7 +13,7 @@ Every accepted certificate gives a canonical Hamiltonian cycle in the encoded gr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Basic](../verify-hamiltonian-cycle.md)
 
 ## Sources
 

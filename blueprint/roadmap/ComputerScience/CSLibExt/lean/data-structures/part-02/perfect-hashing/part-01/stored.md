@@ -12,7 +12,7 @@ Whether some secondary slot, in any bucket, holds the binding `(key, value)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](perfect-hashing.md)
 
 ## Sources
 

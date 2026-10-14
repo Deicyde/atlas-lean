@@ -16,6 +16,10 @@ Letterwise action of a cyclic shift on words
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Shift Letter](shift-letter.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.GeneralizedThueMorseSequence](../../../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,7 @@ Merge two increasing-rank forests, linking equal-rank trees and propagating carr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Tree](../part-01/binomial-tree.md)
 
 ## Sources
 

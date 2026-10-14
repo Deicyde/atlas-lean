@@ -17,6 +17,10 @@ choosing the corresponding predicate `P`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Consecutive Prime Block](is-consecutive-prime-block.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ConsecutivePrime](../../../../../sources/v2/MathlibExt.md)

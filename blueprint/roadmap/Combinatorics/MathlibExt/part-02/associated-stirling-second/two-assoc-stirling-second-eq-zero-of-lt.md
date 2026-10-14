@@ -14,7 +14,11 @@ least two in each block.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two Assoc Stirling Second](two-assoc-stirling-second.md)
+
+## Proof depends on
+
+- [Two Assoc Stirling Second recurrence](two-assoc-stirling-second-recurrence.md)
 
 ## Sources
 

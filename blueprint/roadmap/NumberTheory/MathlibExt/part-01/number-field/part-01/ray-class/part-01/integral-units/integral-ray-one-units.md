@@ -14,6 +14,10 @@ Ray-one integral units, by comap (ATLAS `UnitsInCongruenceSubgroup`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integral Units To Ray Elements](integral-units-to-ray-elements.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.IntegralUnits](../../../../../../../../../sources/v2/MathlibExt.md)

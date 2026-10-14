@@ -13,7 +13,11 @@ A fixed divisor can be primitive at only one index of a sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Divisor](is-primitive-divisor.md)
+
+## Proof depends on
+
+- [Le of dvd](le-of-dvd.md)
 
 ## Sources
 

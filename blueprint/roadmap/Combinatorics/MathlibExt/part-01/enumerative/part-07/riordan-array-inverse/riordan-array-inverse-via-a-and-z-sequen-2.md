@@ -21,6 +21,10 @@ It follows from `riordan_array_inverse_via_a_and_z_sequences_general`; the hypot
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Riordan array inverse via a and z sequences general](riordan-array-inverse-via-a-and-z-sequen.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.RiordanArrayInverse](../../../../../../../sources/v2/MathlibExt.md)

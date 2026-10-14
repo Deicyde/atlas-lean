@@ -12,7 +12,11 @@ The restricted action as a `ZMod p`-linear map.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torsion Pts](torsion-pts.md)
+
+## Proof depends on
+
+- [Gal Torsion Hom](gal-torsion-hom.md)
 
 ## Sources
 

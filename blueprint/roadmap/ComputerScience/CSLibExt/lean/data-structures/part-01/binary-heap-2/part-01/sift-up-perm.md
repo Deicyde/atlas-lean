@@ -13,7 +13,12 @@ Sifting up only permutes the input array.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sift Up](sift-up.md)
+
+## Proof depends on
+
+- [Heap Parent](heap-parent.md)
+- [Heap Parent lt size](heap-parent-lt-size.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ lean: MathlibExt.NumberTheory.BreuschWanted.Internal.M34_bound_large
 
 ## Depends on
 
-This node has no prerequisites.
+- [M34](m34.md)
+
+## Proof depends on
+
+- [M34 key](m34-key.md)
+- [P34](p34.md)
 
 ## Sources
 

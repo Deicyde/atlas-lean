@@ -13,7 +13,7 @@ Constructor repackaging the definition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is GHarmonic](is-gharmonic.md)
 
 ## Sources
 

@@ -15,7 +15,12 @@ series.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Median Euler Coeff](median-euler-coeff.md)
+
+## Proof depends on
+
+- [Median Euler Coeff succ](median-euler-coeff-succ.md)
+- [Median Euler Coeff zero](median-euler-coeff-zero.md)
 
 ## Sources
 

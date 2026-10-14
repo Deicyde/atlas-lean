@@ -13,7 +13,7 @@ The uniform real amplitude vector. For a nonempty search space its value is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amplitude](amplitude.md)
 
 ## Sources
 

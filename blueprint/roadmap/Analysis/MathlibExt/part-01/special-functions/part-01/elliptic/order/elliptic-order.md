@@ -13,7 +13,11 @@ with vertex `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Elliptic Function](../function/is-elliptic-function.md)
+
+## Proof depends on
+
+- [Elliptic Order In Fundamental Parallelogram](elliptic-order-in-fundamental-parallelog.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ NumberTheoryI Lemma 16.11: one continuation with all three properties.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log Dirichlet Series](log-dirichlet-series.md)
+
+## Proof depends on
+
+- [Log Dirichlet Continuation](log-dirichlet-continuation.md)
+- [Log Dirichlet Continuation agree](log-dirichlet-continuation-agree.md)
+- [Log Dirichlet Continuation analytic On](log-dirichlet-continuation-analytic-on.md)
+- [Log Dirichlet Continuation meromorphic](log-dirichlet-continuation-meromorphic.md)
 
 ## Sources
 

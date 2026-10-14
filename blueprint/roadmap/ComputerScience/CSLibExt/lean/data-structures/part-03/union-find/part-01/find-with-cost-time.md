@@ -13,7 +13,9 @@ The cost annotation is exactly the traversed edge count plus the root visit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
+- [Find With Cost](find-with-cost.md)
+- [Path Length](path-length.md)
 
 ## Sources
 

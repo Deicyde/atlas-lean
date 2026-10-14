@@ -13,7 +13,14 @@ The empty trie is valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](valid.md)
+- [Empty](empty.md)
+
+## Proof depends on
+
+- [Group Ordered](group-ordered.md)
+- [Valid](../../xfast-trie/part-01/valid.md)
+- [Valid empty](../../xfast-trie/part-01/valid-empty.md)
 
 ## Sources
 

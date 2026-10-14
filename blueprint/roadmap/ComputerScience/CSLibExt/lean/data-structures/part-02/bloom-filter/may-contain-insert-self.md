@@ -13,7 +13,14 @@ No false negatives: an element is reported present immediately after its own ins
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bloom Filter](bloom-filter.md)
+- [Insert](insert.md)
+- [May Contain](may-contain.md)
+
+## Proof depends on
+
+- [Bit insert iff](bit-insert-iff.md)
+- [May Contain iff](may-contain-iff.md)
 
 ## Sources
 

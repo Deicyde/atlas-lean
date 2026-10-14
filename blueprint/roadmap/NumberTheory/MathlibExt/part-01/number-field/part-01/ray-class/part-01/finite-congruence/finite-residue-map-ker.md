@@ -15,7 +15,12 @@ Source (N406 §21.3): the finite kernel component used in the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Ray One Elements](finite-ray-one-elements.md)
+- [Finite Residue Map](finite-residue-map.md)
+
+## Proof depends on
+
+- [Finite Residue Map eq one iff](finite-residue-map-eq-one-iff.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ The trees of a forest have strictly increasing degrees.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
+
+## Proof depends on
+
+- [Degree](../part-01/degree.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ The logarithmic radial majorant is twice continuously differentiable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Growth](../coefficient-exponential-family/wiman-growth.md)
+
+## Proof depends on
+
+- [Integrable Exp Set wiman Coefficient Measure eq univ](../coefficient-exponential-family/integrable-exp-set-wiman-coefficient-mea.md)
+- [Wiman Coefficient Measure](../coefficient-exponential-family/wiman-coefficient-measure.md)
+- [Wiman cgf eq growth](../coefficient-exponential-family/wiman-cgf-eq-growth.md)
 
 ## Sources
 

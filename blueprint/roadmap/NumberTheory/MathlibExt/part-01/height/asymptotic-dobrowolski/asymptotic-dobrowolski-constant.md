@@ -15,6 +15,10 @@ and top for an unbounded set; neither finite attainment nor a finite upper bound
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Asymptotic Dobrowolski Coefficient](is-asymptotic-dobrowolski-coefficient.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Height.AsymptoticDobrowolski](../../../../../../sources/v2/MathlibExt.md)

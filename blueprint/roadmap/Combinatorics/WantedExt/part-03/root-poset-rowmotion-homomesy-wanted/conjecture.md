@@ -14,6 +14,14 @@ Conjecture 3.3: antichain cardinality is homomesic under rowmotion with average 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Antichain Cardinality](is-antichain-cardinality.md)
+- [Is Antichain Rowmotion](is-antichain-rowmotion.md)
+- [Is Homomesic](is-homomesic.md)
+- [Is Type ARoot Poset](is-type-aroot-poset.md)
+- [Poset Antichain](poset-antichain.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.RootPosetRowmotionHomomesyWanted](../../../../../sources/v2/WantedExt.md)

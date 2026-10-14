@@ -13,7 +13,7 @@ Every optional output cell is the negation of the corresponding optional input c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hamiltonian Cycle To Tsp](hamiltonian-cycle-to-tsp.md)
 
 ## Sources
 

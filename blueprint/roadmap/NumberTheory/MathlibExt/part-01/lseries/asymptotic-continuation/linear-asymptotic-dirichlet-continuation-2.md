@@ -13,7 +13,8 @@ Cleared-denominator factorization away from `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abel Continuation](../abel-continuation/abel-continuation.md)
+- [Linear Asymptotic Dirichlet Continuation](linear-asymptotic-dirichlet-continuation.md)
 
 ## Sources
 

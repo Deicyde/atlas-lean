@@ -19,6 +19,10 @@ For `n ≥ 48`, this follows by applying `breusch_prime_interval` at `n` and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Breusch prime interval](breusch-2/breusch-prime-interval.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.RamanujanTwoPrimes](../../../../../sources/v2/MathlibExt.md)

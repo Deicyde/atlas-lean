@@ -13,7 +13,13 @@ The degree sum of a finite edge-indexed multigraph is even.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](../part-01/edge-indexed-multigraph.md)
+- [Degree](degree.md)
+
+## Proof depends on
+
+- [Inc](../part-01/inc.md)
+- [Inc iff](../part-01/inc-iff.md)
 
 ## Sources
 

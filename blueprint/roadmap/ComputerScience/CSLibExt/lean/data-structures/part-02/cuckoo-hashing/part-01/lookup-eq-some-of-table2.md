@@ -14,7 +14,8 @@ the first slot does not hold the key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cuckoo Hashing](cuckoo-hashing.md)
+- [Lookup](lookup.md)
 
 ## Sources
 

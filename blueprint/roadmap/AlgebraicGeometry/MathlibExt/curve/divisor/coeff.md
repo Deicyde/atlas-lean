@@ -12,7 +12,7 @@ The coefficient of a point in a curve divisor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Curve Divisor](curve-divisor.md)
 
 ## Sources
 

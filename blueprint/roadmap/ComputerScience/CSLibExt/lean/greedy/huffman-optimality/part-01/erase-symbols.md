@@ -12,7 +12,8 @@ Erase symbols and cast natural weights to real weights.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](../../huffman/part-01/huffman-tree.md)
+- [Huffman Weight Tree](huffman-weight-tree.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ links as a binary carry.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Tree](../part-01/binomial-tree.md)
+
+## Proof depends on
+
+- [Link](../part-01/link.md)
+- [Rank](../part-01/rank.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ factor the character pairing, following Terras, Ch. 2–3.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conv](conv.md)
 
 ## Sources
 

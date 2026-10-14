@@ -12,7 +12,11 @@ Whether some stored key shares the length-`l` prefix of `x`: the level-`l` probe
 
 ## Depends on
 
-This node has no prerequisites.
+- [XFast Trie](xfast-trie.md)
+
+## Proof depends on
+
+- [Prefix Of](prefix-of.md)
 
 ## Sources
 

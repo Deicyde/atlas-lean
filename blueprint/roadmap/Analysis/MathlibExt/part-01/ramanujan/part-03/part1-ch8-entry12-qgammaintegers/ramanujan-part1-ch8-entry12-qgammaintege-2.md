@@ -17,6 +17,11 @@ Proves `Wanted` entry `ramanujan_part1_ch8_entry12_qgammaintegers`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter8 Unit Pow eq cpow](chapter8-unit-pow-eq-cpow.md)
+- [Ramanujan part1 ch8 entry12 qgammaintegers cpow](ramanujan-part1-ch8-entry12-qgammaintege.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch8Entry12Qgammaintegers](../../../../../../../sources/v2/MathlibExt.md)

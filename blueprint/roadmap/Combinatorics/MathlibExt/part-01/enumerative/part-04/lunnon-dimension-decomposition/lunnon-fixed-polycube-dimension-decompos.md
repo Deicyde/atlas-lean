@@ -20,7 +20,18 @@ valid exactly on this domain. No claim is made for `n = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fixed Polycube Count](fixed-polycube-count.md)
+- [Proper Fixed Polycube Count](proper-fixed-polycube-count.md)
+
+## Proof depends on
+
+- [Face Adjacent](face-adjacent.md)
+- [Fixed Polycube](fixed-polycube.md)
+- [Is Canonical Cells](is-canonical-cells.md)
+- [Is Polycube Cells](is-polycube-cells.md)
+- [Lattice Cell](lattice-cell.md)
+- [Proper Dimension](proper-dimension.md)
+- [Proper Fixed Polycube](proper-fixed-polycube.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Insert one absent identity, rejecting an identity already in the queue.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Min Queue](indexed-min-queue.md)
 
 ## Sources
 

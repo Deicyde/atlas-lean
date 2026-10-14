@@ -13,7 +13,12 @@ The representation number at `k = 0, n = 0` is one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Representation Number](representation-number.md)
+
+## Proof depends on
+
+- [Solutions](solutions.md)
+- [Solutions zero zero](solutions-zero-zero.md)
 
 ## Sources
 

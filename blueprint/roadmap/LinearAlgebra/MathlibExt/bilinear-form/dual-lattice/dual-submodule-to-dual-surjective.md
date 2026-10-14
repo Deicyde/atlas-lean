@@ -15,6 +15,10 @@ The pairing map from the dual submodule onto the module dual is surjective.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Localized Module subtype of span eq top](is-localized-module-subtype-of-span-eq-t.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.BilinearForm.DualLattice](../../../../../sources/v2/MathlibExt.md)

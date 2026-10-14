@@ -13,7 +13,7 @@ A valid requested arity is unchanged by normalization.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Arity](normalized-arity.md)
 
 ## Sources
 

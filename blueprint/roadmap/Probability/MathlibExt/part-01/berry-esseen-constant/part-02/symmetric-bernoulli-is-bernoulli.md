@@ -13,7 +13,12 @@ The Bernoulli witness is supported on the two distinct actual points.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bernoulli Law](../part-01/is-bernoulli-law.md)
+- [Symmetric Bernoulli Law](../part-01/symmetric-bernoulli-law.md)
+
+## Proof depends on
+
+- [Symmetric Bernoulli is Standardized](symmetric-bernoulli-is-standardized.md)
 
 ## Sources
 

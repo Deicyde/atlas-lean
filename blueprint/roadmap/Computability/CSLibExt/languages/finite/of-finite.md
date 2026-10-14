@@ -15,6 +15,10 @@ Every finite language is regular.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Singleton word](singleton-word.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.Finite](../../../../../sources/v2/CSLibExt.md)

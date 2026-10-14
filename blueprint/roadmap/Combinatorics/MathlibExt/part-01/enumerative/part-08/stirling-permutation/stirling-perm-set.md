@@ -18,6 +18,10 @@ written as words `w(1) w(2) ⋯ w(2n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Stirling Permutation](is-stirling-permutation.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.StirlingPermutation](../../../../../../../sources/v2/MathlibExt.md)

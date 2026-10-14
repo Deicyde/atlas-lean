@@ -14,6 +14,10 @@ A uniform Siegel-Walfisz bound after the actual coprimality mask.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Discrepancy](../../../MathlibExt/part-01/arithmetic-function/prime-distribution/discrepancy.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.PrimeGapBoundsHypotheses](../../../../../sources/v2/WantedExt.md)

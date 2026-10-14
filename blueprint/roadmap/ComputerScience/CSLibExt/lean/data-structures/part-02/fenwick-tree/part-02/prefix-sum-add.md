@@ -14,7 +14,15 @@ at every query index including past-the-end ones.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fenwick Tree](../part-01/fenwick-tree.md)
+- [Valid](../part-01/valid.md)
+- [Add](add.md)
+- [Prefix Sum](../part-01/prefix-sum.md)
+
+## Proof depends on
+
+- [Prefix Sum eq take sum](../part-01/prefix-sum-eq-take-sum.md)
+- [Valid add](valid-add.md)
 
 ## Sources
 

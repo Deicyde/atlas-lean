@@ -12,7 +12,12 @@ Process a list of already ordered edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](../part-01/state.md)
+- [Weighted Edge](../part-01/weighted-edge.md)
+
+## Proof depends on
+
+- [Step](step.md)
 
 ## Sources
 

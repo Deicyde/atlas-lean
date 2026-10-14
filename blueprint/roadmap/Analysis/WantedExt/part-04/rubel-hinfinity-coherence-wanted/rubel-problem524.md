@@ -16,6 +16,10 @@ generated?
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [HInfinity](hinfinity.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.RubelHInfinityCoherenceWanted](../../../../../sources/v2/WantedExt.md)

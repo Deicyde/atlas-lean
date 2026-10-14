@@ -13,7 +13,11 @@ Successor approximation from the previous one plus the digit contribution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padic Digit](padic-digit.md)
+
+## Proof depends on
+
+- [Padic Digit mul pow](padic-digit-mul-pow.md)
 
 ## Sources
 

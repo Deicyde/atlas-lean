@@ -13,7 +13,13 @@ Multiplication count depends on the exponent, not the base or modulus.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Exponentiation](modular-exponentiation.md)
+
+## Proof depends on
+
+- [Modular Exponentiation time even](modular-exponentiation-time-even.md)
+- [Modular Exponentiation time odd](modular-exponentiation-time-odd.md)
+- [Modular Exponentiation zero](modular-exponentiation-zero.md)
 
 ## Sources
 

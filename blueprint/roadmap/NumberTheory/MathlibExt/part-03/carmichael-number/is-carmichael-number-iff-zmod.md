@@ -14,7 +14,7 @@ element of `ZMod n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Carmichael Number](is-carmichael-number.md)
 
 ## Sources
 

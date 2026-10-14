@@ -14,7 +14,7 @@ left translation, so it is a Følner set with symmetric-difference ratio `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Amenable](is-amenable.md)
 
 ## Sources
 

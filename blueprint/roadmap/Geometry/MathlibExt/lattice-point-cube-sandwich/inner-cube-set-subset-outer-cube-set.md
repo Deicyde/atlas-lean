@@ -13,7 +13,15 @@ Every inner cube index is an outer cube index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inner Cube Set](inner-cube-set.md)
+- [Outer Cube Set](outer-cube-set.md)
+
+## Proof depends on
+
+- [Integer Unit Cube](integer-unit-cube.md)
+- [Mem inner Cube Set iff](mem-inner-cube-set-iff.md)
+- [Mem integer Unit Cube iff](mem-integer-unit-cube-iff.md)
+- [Mem outer Cube Set iff](mem-outer-cube-set-iff.md)
 
 ## Sources
 

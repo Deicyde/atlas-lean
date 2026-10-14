@@ -14,7 +14,7 @@ representative. It avoids exposing the implementation's chosen inverse unit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Semilocalization To At Prime](semilocalization-to-at-prime.md)
 
 ## Sources
 

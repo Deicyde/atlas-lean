@@ -13,7 +13,13 @@ The actual cost is candidate events plus one event for every emitted piece.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cut Rod Solution](cut-rod-solution.md)
+
+## Proof depends on
+
+- [Extended Bottom Up Cut Rod](extended-bottom-up-cut-rod.md)
+- [Extended Bottom Up Cut Rod first Cut](extended-bottom-up-cut-rod-first-cut.md)
+- [Extended Bottom Up Cut Rod time](extended-bottom-up-cut-rod-time.md)
 
 ## Sources
 

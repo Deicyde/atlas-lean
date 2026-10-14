@@ -13,7 +13,8 @@ Every rising diagonal of `BT(a₀,a₁,α,β;α,β)` is constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Binary Binomial Interpolated Triangle](is-binary-binomial-interpolated-triangle.md)
+- [Rising Diagonal](rising-diagonal.md)
 
 ## Sources
 

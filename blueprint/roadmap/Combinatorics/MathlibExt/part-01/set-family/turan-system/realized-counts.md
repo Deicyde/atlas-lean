@@ -14,6 +14,10 @@ Realized sizes: cardinalities of Turan systems with parameters `n s r`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Turan System](is-turan-system.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SetFamily.TuranSystem](../../../../../../sources/v2/MathlibExt.md)

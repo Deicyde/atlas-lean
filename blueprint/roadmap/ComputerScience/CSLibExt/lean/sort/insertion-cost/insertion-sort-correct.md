@@ -13,7 +13,12 @@ Insertion sort returns a sorted permutation of its input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Insertion Sort](insertion-sort.md)
+
+## Proof depends on
+
+- [Insertion Sort perm](insertion-sort-perm.md)
+- [Insertion Sort sorted](insertion-sort-sorted.md)
 
 ## Sources
 

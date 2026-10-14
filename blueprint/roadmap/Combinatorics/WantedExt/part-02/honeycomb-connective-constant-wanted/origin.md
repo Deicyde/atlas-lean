@@ -12,7 +12,7 @@ A fixed origin in the vertex-transitive honeycomb lattice.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Honeycomb Vertex](honeycomb-vertex.md)
 
 ## Sources
 

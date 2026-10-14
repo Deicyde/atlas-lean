@@ -13,7 +13,12 @@ Boundary value: there is exactly one length-`0` factor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Word Factor Complexity](word-factor-complexity.md)
+
+## Proof depends on
+
+- [Factor](../factor/factor.md)
+- [Factor Set](../factor/factor-set.md)
 
 ## Sources
 

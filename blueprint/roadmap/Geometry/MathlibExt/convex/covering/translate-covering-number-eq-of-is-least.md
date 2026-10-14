@@ -13,7 +13,8 @@ A witnessed least finite translate count gives the actual extended-natural value
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covered By Translates](covered-by-translates.md)
+- [Translate Covering Number](translate-covering-number.md)
 
 ## Sources
 

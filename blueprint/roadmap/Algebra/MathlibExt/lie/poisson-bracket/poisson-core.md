@@ -13,7 +13,11 @@ as the supremum of all Poisson ideals below `J`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson Bracket](poisson-bracket.md)
+
+## Proof depends on
+
+- [Is Poisson Ideal](is-poisson-ideal.md)
 
 ## Sources
 

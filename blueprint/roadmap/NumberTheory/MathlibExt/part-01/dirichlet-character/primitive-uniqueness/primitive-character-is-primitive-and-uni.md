@@ -16,6 +16,11 @@ primitive inducer of `χ` agrees with it after transport to the conductor.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Conductor eq of is Primitive change Level](conductor-eq-of-is-primitive-change-leve.md)
+- [Eq primitive Character of change Level eq](eq-primitive-character-of-change-level-e.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.DirichletCharacter.PrimitiveUniqueness](../../../../../../sources/v2/MathlibExt.md)

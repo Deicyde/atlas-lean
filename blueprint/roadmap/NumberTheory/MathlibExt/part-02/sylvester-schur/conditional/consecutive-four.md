@@ -15,6 +15,10 @@ The consecutive theorem for blocks of length four.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Consecutive three](consecutive-three.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.Conditional](../../../../../../sources/v2/MathlibExt.md)

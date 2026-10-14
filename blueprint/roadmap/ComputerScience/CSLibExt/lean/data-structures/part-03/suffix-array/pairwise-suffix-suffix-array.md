@@ -13,7 +13,8 @@ The suffixes in suffix-array order are pairwise sorted in lexicographic order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Suffix](suffix.md)
+- [Suffix Array](suffix-array.md)
 
 ## Sources
 

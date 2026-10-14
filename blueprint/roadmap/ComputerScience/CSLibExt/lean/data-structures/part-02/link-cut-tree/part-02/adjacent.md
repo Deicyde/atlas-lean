@@ -13,7 +13,14 @@ A directed parent-child edge is an undirected edge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Adjacent](../part-01/adjacent.md)
+- [Parent Child](parent-child.md)
+
+## Proof depends on
+
+- [Children ind](../../euler-tour-tree/part-01/children-ind.md)
+- [Root](../../euler-tour-tree/part-01/root.md)
 
 ## Sources
 

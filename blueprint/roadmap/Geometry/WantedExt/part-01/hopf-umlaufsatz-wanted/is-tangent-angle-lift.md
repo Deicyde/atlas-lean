@@ -12,7 +12,7 @@ A real-valued tangent-angle lift: `r'(t) = (cos α(t), sin α(t))`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
 
 ## Sources
 

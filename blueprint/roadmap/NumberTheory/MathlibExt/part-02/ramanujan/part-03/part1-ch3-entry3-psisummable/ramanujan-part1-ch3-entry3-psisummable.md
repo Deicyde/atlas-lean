@@ -19,6 +19,10 @@ and keep the source's shape.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ramanujan part1 ch3 entry3 psisummable general](ramanujan-part1-ch3-entry3-psisummable-g.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry3Psisummable](../../../../../../../sources/v2/MathlibExt.md)

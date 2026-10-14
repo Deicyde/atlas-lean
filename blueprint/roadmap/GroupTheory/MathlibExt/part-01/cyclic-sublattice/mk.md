@@ -13,7 +13,7 @@ Constructor for `IsCyclicSublattice` from containment and cyclicity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Cyclic Sublattice](is-cyclic-sublattice.md)
 
 ## Sources
 

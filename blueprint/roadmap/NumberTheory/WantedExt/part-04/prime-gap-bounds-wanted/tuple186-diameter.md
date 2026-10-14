@@ -13,7 +13,11 @@ The actual finite set of displayed integer shifts has diameter 186.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tuple186](tuple186.md)
+
+## Proof depends on
+
+- [Tuple186 bounds](tuple186-bounds.md)
 
 ## Sources
 

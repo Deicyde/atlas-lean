@@ -15,6 +15,10 @@ The constructed table is bound once before the one-pass scan.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Compute Transition](compute-transition.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.StringMatching.FiniteAutomaton](../../../../../../sources/v2/CSLibExt.md)

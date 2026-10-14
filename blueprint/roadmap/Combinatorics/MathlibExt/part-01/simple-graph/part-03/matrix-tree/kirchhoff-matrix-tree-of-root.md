@@ -14,7 +14,14 @@ already witnesses nonemptiness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Num Spanning Trees](num-spanning-trees.md)
+- [Reduced Laplacian](reduced-laplacian.md)
+
+## Proof depends on
+
+- [Is Spanning Tree](is-spanning-tree.md)
+- [Laplacian Int](laplacian-int.md)
+- [Spanning Tree Subgraph Equiv](spanning-tree-subgraph-equiv.md)
 
 ## Sources
 

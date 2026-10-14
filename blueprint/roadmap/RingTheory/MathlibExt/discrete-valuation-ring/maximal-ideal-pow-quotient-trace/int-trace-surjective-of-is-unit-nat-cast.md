@@ -25,6 +25,10 @@ equality.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Residue int Trace eq nsmul trace residue of map maximal Ideal eq pow](residue-int-trace-eq-nsmul-trace-residue.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DiscreteValuationRing.MaximalIdealPowQuotientTrace](../../../../../sources/v2/MathlibExt.md)

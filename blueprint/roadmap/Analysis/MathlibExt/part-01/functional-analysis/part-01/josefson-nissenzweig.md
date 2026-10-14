@@ -25,6 +25,10 @@ and Banach-limit/Rademacher route of Hagler--Johnson (1977) and Behrends (1995).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Banach Limit](banach-limit.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.JosefsonNissenzweig](../../../../../../sources/v2/MathlibExt.md)

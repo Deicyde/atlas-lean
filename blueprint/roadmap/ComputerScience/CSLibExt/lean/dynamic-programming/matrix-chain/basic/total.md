@@ -12,7 +12,7 @@ Total charged events.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](cost.md)
 
 ## Sources
 

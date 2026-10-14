@@ -12,7 +12,11 @@ Connectivity via reflexive-transitive closure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraph](multigraph.md)
+
+## Proof depends on
+
+- [Adj](adj.md)
 
 ## Sources
 

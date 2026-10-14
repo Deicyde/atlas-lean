@@ -13,7 +13,14 @@ The actual one-summand standard Gaussian has zero comparison error.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov Error](../part-01/kolmogorov-error.md)
+
+## Proof depends on
+
+- [Normal CDF](../part-01/normal-cdf.md)
+- [Normalized Law](../part-01/normalized-law.md)
+- [Normalized Law one](normalized-law-one.md)
+- [Standard Gaussian is Standardized](standard-gaussian-is-standardized.md)
 
 ## Sources
 

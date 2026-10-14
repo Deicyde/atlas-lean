@@ -18,7 +18,11 @@ at `r`) is deferred, so this is the y-fast skeleton only.
 
 ## Depends on
 
-This node has no prerequisites.
+- [YFast Trie](yfast-trie.md)
+
+## Proof depends on
+
+- [Valid](../part-01/valid.md)
 
 ## Sources
 

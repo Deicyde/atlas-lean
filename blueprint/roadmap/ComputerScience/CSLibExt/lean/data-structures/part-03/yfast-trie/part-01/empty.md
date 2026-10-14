@@ -12,7 +12,12 @@ The empty grouped y-fast trie: empty representative trie, no groups.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grouped YFast Trie](grouped-yfast-trie.md)
+
+## Proof depends on
+
+- [XFast Trie](../../xfast-trie/part-01/xfast-trie.md)
+- [Empty](../../xfast-trie/part-01/empty.md)
 
 ## Sources
 

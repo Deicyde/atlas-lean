@@ -13,7 +13,7 @@ The twin-prime reciprocal terms are summable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Brun Twin Prime Reciprocal Term](brun-twin-prime-reciprocal-term.md)
 
 ## Sources
 

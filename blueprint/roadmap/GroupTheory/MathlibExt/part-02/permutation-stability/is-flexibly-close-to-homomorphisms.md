@@ -16,6 +16,10 @@ flexible Hamming distance for every fixed `g` along `Filter.atTop`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Flexible Hamming Distance](flexible-hamming-distance.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.PermutationStability](../../../../../sources/v2/MathlibExt.md)

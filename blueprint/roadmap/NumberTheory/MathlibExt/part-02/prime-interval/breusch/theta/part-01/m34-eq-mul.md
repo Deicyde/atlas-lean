@@ -13,7 +13,11 @@ Clearing the denominator of `M34 t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [M34](m34.md)
+
+## Proof depends on
+
+- [M34 dvd](m34-dvd.md)
 
 ## Sources
 

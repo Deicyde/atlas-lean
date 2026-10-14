@@ -13,7 +13,7 @@ Every common lower bound of the coefficient valuations bounds the polynomial val
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padic Valuation](padic-valuation.md)
 
 ## Sources
 

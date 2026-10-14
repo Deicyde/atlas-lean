@@ -13,7 +13,7 @@ The L1 norm of the zero polynomial is zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [L1 Norm](l1-norm.md)
 
 ## Sources
 

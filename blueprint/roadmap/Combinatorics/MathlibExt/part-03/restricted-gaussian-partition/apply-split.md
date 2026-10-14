@@ -16,6 +16,10 @@ No sorting is performed; sortedness is checked separately at every stage.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Remove First NPos](remove-first-npos.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.RestrictedGaussianPartition](../../../../../sources/v2/MathlibExt.md)

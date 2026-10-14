@@ -12,7 +12,7 @@ Whether every bit selected for `x` is set, so `x` may have been inserted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bloom Filter](bloom-filter.md)
 
 ## Sources
 

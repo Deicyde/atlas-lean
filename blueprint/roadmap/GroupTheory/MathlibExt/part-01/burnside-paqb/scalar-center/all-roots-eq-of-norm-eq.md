@@ -15,6 +15,13 @@ If `‖χ g‖` attains the degree, all characteristic roots of `ρ g` coincide.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Abs multiset sum lt](../killing-lemma/abs-multiset-sum-lt.md)
+- [Character eq sum roots](../killing-lemma/character-eq-sum-roots.md)
+- [Charpoly root norm eq one](../killing-lemma/charpoly-root-norm-eq-one.md)
+- [Charpoly roots card](../killing-lemma/charpoly-roots-card.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.ScalarCenter](../../../../../../sources/v2/MathlibExt.md)

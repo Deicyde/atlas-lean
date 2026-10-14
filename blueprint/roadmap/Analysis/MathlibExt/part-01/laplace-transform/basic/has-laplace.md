@@ -15,6 +15,11 @@ lean: HasLaplace
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Laplace Convergent](laplace-convergent.md)
+- [Laplace](laplace.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.LaplaceTransform.Basic](../../../../../../sources/v2/MathlibExt.md)

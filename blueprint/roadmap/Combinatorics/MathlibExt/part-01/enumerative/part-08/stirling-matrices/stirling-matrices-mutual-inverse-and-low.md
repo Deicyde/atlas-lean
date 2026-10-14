@@ -16,6 +16,10 @@ matrices consists of mutual inverses, and both matrices are lower triangular.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Signed Stirling First](../signed-stirling-first.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.StirlingMatrices](../../../../../../../sources/v2/MathlibExt.md)

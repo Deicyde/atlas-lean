@@ -19,7 +19,8 @@ The paper's `[x^n] (1/x) u(x)` is rendered as `coeff (n+1) u`, and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bell Matrix](../../../NumberTheory/MathlibExt/part-03/bell-matrix/bell-matrix.md)
+- [Entry](../../../NumberTheory/MathlibExt/part-03/bell-matrix/entry.md)
 
 ## Sources
 

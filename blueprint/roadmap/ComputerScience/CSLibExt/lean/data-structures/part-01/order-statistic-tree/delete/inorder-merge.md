@@ -13,7 +13,7 @@ The inorder traversal of a merge is the concatenation of the traversals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Merge](merge.md)
 
 ## Sources
 

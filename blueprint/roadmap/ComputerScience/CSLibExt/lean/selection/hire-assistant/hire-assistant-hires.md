@@ -13,7 +13,7 @@ The actual chronological history consists exactly of strict prefix records.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hire Assistant](hire-assistant.md)
 
 ## Sources
 

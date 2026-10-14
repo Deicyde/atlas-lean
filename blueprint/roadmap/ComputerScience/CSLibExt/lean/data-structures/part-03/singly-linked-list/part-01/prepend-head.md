@@ -13,7 +13,8 @@ The prepended node is always the new head.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
+- [Prepend](prepend.md)
 
 ## Sources
 

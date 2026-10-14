@@ -16,7 +16,12 @@ Children that already differ by at most one are rebuilt with `mkNode`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Height](height.md)
+- [Mk Node](mk-node.md)
 
 ## Sources
 

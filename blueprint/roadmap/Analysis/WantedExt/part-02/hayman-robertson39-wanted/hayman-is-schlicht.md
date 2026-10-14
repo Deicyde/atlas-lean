@@ -14,6 +14,10 @@ Class `S`: analytic, injective on the unit disc, `f 0 = 0`, `f'(0) = 1` [AMR-022
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hayman Unit Disc](hayman-unit-disc.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HaymanRobertson39Wanted](../../../../../sources/v2/WantedExt.md)

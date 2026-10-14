@@ -14,7 +14,12 @@ corresponding oriented component of the second.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two Link](two-link.md)
+
+## Proof depends on
+
+- [Ambient Isotopy](ambient-isotopy.md)
+- [R3](r3.md)
 
 ## Sources
 

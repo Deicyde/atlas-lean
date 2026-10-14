@@ -12,7 +12,7 @@ Antichain rowmotion: bijective map sending `A` to minima of complement of its do
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poset Antichain](poset-antichain.md)
 
 ## Sources
 

@@ -13,7 +13,15 @@ The flattening of an ordered tree is strictly increasing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered](ordered.md)
+- [Tree](tree.md)
+- [Flatten](flatten.md)
+
+## Proof depends on
+
+- [All](all.md)
+- [All iff forall flatten](all-iff-forall-flatten.md)
+- [Flatten Aux](flatten-aux.md)
 
 ## Sources
 

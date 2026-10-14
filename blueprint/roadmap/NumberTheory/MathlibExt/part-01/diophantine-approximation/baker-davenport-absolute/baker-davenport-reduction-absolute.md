@@ -27,6 +27,10 @@ Proves `Wanted` entry `bakerDavenport_reduction_absolute`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Baker Davenport reduction absolute general](baker-davenport-reduction-absolute-gener.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.DiophantineApproximation.BakerDavenportAbsolute](../../../../../../sources/v2/MathlibExt.md)

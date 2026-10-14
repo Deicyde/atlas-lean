@@ -14,7 +14,19 @@ Gale–Shapley stable marriage existence without `DecidableEq` instances on the 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Stable](is-stable.md)
+- [MPrefs](mprefs.md)
+- [Perfect Matching](perfect-matching.md)
+- [WPrefs](wprefs.md)
+
+## Proof depends on
+
+- [Is Blocking Pair](is-blocking-pair.md)
+- [Strict Total Order](strict-total-order.md)
+- [Irrefl](irrefl.md)
+- [Lt](lt.md)
+- [Total](total.md)
+- [Trans](trans.md)
 
 ## Sources
 

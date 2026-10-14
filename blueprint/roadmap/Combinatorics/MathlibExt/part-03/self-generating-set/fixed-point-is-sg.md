@@ -13,7 +13,8 @@ A fixed point satisfies the self-generating condition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fixed Point](fixed-point.md)
+- [SG](sg.md)
 
 ## Sources
 

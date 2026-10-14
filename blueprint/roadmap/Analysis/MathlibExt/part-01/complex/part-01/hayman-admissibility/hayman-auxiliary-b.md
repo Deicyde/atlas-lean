@@ -14,6 +14,10 @@ Hayman auxiliary function `B(r) = r * A'(r)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hayman Auxiliary A](hayman-auxiliary-a.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.HaymanAdmissibility](../../../../../../../sources/v2/MathlibExt.md)

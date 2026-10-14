@@ -13,7 +13,11 @@ lean: PerronKernel.E1_differentiable
 
 ## Depends on
 
-This node has no prerequisites.
+- [E1](e1.md)
+
+## Proof depends on
+
+- [E1 has Deriv At](e1-has-deriv-at.md)
 
 ## Sources
 

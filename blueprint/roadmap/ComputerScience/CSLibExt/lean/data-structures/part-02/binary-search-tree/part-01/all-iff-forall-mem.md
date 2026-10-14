@@ -13,7 +13,8 @@ lean: Cslib.Algorithms.Lean.BinarySearchTree.all_iff_forall_mem
 
 ## Depends on
 
-This node has no prerequisites.
+- [All](all.md)
+- [Mem](mem.md)
 
 ## Sources
 

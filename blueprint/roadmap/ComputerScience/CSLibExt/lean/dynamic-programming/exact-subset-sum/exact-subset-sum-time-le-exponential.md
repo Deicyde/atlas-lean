@@ -13,7 +13,12 @@ Exponential upper bound on the actual selected-event count, including the final 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Subset Sum](exact-subset-sum.md)
+
+## Proof depends on
+
+- [Exact Subset Sum Sums](exact-subset-sum-sums.md)
+- [Exact Subset Sum Sums length le pow](exact-subset-sum-sums-length-le-pow.md)
 
 ## Sources
 

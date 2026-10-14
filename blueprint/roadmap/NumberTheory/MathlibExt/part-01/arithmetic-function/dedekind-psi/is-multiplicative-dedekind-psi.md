@@ -13,7 +13,11 @@ The Dedekind psi function is multiplicative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dedekind Psi](dedekind-psi.md)
+
+## Proof depends on
+
+- [Dedekind Psi eq prod factorization](dedekind-psi-eq-prod-factorization.md)
 
 ## Sources
 

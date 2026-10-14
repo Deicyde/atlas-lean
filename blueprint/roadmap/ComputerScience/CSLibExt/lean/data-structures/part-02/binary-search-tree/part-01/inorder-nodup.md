@@ -13,7 +13,12 @@ The inorder traversal of an ordered tree has no duplicate keys.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered](ordered.md)
+- [Inorder](inorder.md)
+
+## Proof depends on
+
+- [Ordered inorder](ordered-inorder.md)
 
 ## Sources
 

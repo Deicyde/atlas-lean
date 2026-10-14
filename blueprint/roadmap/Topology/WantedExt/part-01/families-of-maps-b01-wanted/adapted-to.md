@@ -15,6 +15,10 @@ sets `U α`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Supported](supported.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Topology.FamiliesOfMapsB01Wanted](../../../../../sources/v2/WantedExt.md)

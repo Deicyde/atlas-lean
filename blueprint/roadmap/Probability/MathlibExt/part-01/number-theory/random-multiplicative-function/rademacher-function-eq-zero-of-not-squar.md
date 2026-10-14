@@ -13,7 +13,12 @@ The function vanishes on every nonsquarefree natural number, including zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rademacher Function](rademacher-function.md)
+
+## Proof depends on
+
+- [Prime Sign Nat](prime-sign-nat.md)
+- [Rademacher Function apply](rademacher-function-apply.md)
 
 ## Sources
 

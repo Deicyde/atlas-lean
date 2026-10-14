@@ -13,7 +13,16 @@ Two-minimum extraction partitions the original heap without losing multiplicitie
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Priority](huffman-priority.md)
+- [Huffman Two Min](huffman-two-min.md)
+- [Min Heap](../../../data-structures/part-01/binary-heap-2/part-02/min-heap.md)
+- [Elements](../../../data-structures/part-01/binary-heap-2/part-02/elements.md)
+- [Extract Two Min?](extract-two-min.md)
+
+## Proof depends on
+
+- [Extract Min](../../../data-structures/part-01/binary-heap-2/part-02/extract-min.md)
+- [Extract Min cons elements](../../../data-structures/part-01/binary-heap-2/part-03/extract-min-cons-elements.md)
 
 ## Sources
 

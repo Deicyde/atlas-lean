@@ -14,6 +14,10 @@ Build a tree by inserting the list from right to left.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Insert](insert.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.WeightBalancedTree](../../../../../../../../sources/v2/CSLibExt.md)

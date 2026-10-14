@@ -13,7 +13,16 @@ Insertion preserves `blackHeight` up to the final root recoloring.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Black Height](../part-01/black-height.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Color](../part-01/color.md)
+- [Balance](../part-01/balance.md)
+- [Ins](ins.md)
+- [Make Black](make-black.md)
 
 ## Sources
 

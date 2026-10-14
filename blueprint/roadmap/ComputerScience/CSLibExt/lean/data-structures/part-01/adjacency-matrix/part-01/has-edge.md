@@ -12,7 +12,7 @@ Whether there is a directed edge from `i` to `j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adjacency Matrix](adjacency-matrix.md)
 
 ## Sources
 

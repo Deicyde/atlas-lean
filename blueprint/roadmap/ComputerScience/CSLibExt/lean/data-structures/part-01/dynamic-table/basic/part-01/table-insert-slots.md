@@ -13,7 +13,13 @@ Preserve the complete occupied prefix and all unused returned slots.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](table.md)
+- [Well Formed](well-formed.md)
+- [Table Insert](table-insert.md)
+
+## Proof depends on
+
+- [Table Insert size](table-insert-size.md)
 
 ## Sources
 

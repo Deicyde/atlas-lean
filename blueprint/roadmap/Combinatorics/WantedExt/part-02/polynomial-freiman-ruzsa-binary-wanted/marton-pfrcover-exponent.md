@@ -14,6 +14,10 @@ Optimization Problems constant 18a, the infimum of admissible exponents.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Asymptotic Coset Cover Exponents](asymptotic-coset-cover-exponents.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PolynomialFreimanRuzsaBinaryWanted](../../../../../sources/v2/WantedExt.md)

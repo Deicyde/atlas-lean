@@ -13,7 +13,7 @@ Third absolute moments are nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Third Moment](third-moment.md)
 
 ## Sources
 

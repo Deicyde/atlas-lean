@@ -12,7 +12,12 @@ The source's frequency ratio; applications require positive gradient energy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torus](torus.md)
+
+## Proof depends on
+
+- [Gradient Energy](gradient-energy.md)
+- [Laplace Energy](laplace-energy.md)
 
 ## Sources
 

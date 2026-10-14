@@ -12,7 +12,7 @@ A single Nim heap of size `n`: positions `0, …, n`, moves decrease the value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](impartial-game.md)
 
 ## Sources
 

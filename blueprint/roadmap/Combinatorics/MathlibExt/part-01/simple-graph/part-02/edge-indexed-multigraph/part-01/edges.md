@@ -12,7 +12,8 @@ The edge identities traversed by an indexed walk.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
+- [Indexed Walk](indexed-walk.md)
 
 ## Sources
 

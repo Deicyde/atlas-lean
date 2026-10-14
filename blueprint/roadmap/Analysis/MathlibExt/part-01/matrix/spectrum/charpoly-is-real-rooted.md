@@ -13,7 +13,7 @@ The characteristic polynomial of a Hermitian complex matrix is real-rooted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Real Rooted](../../../../../Algebra/MathlibExt/polynomial/real-rooted/is-real-rooted.md)
 
 ## Sources
 

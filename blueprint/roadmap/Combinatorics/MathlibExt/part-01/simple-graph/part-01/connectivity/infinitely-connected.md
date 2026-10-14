@@ -16,6 +16,10 @@ infinitely connected.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Internally Disjoint](internally-disjoint.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Connectivity](../../../../../../../sources/v2/MathlibExt.md)

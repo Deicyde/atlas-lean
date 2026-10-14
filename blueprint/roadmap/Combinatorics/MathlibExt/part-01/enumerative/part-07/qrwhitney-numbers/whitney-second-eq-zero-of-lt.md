@@ -16,7 +16,13 @@ Concept `jis_sem_1510537ed21edced61e4c308`; statements `jis_b6c9b8526668212b3d27
 
 ## Depends on
 
-This node has no prerequisites.
+- [Whitney Second](whitney-second.md)
+
+## Proof depends on
+
+- [Q Brack](q-brack.md)
+- [Whitney Second succ succ](whitney-second-succ-succ.md)
+- [Whitney Second zero succ](whitney-second-zero-succ.md)
 
 ## Sources
 

@@ -15,6 +15,12 @@ A circuit is a nonempty connected 2-regular edge set. This includes a loop as a
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Connected On Support](is-connected-on-support.md)
+- [Degree Within](degree-within.md)
+- [Support](support.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.EndpointMapMultigraph](../../../../../sources/v2/MathlibExt.md)

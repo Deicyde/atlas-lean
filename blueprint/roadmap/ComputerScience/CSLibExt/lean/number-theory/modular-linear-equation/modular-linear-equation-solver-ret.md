@@ -13,7 +13,7 @@ The returned list is the CLRS progression built from the canonical extended-GCD 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Linear Equation Solver](modular-linear-equation-solver.md)
 
 ## Sources
 

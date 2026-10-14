@@ -18,7 +18,11 @@ and `flatten_node_cons_nil`). Computed in linear time by `flattenAux`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](btree.md)
+
+## Proof depends on
+
+- [Flatten Aux](flatten-aux.md)
 
 ## Sources
 

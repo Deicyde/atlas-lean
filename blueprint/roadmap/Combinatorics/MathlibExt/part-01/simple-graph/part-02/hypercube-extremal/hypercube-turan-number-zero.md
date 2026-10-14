@@ -13,7 +13,13 @@ Boundary value: the extremal number over `Q_0` is zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypercube Turan Number](hypercube-turan-number.md)
+
+## Proof depends on
+
+- [Hypercube Graph](hypercube-graph.md)
+- [Hypercube Graph zero edge Set](hypercube-graph-zero-edge-set.md)
+- [Hypercube Turan Number le edge Set ncard](hypercube-turan-number-le-edge-set-ncard.md)
 
 ## Sources
 

@@ -20,6 +20,11 @@ N390.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Semilocalization To At Prime](semilocalization-to-at-prime.md)
+- [Tensor Product Localization Equiv Integral Closure](tensor-product-localization-equiv-integr.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.Unramified](../../../../../../../sources/v2/MathlibExt.md)

@@ -17,7 +17,11 @@ Finsupp, global meromorphic existence holomorphic on Sᶜ.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Principal Part](principal-part.md)
+
+## Proof depends on
+
+- [Mittag leffler of is Discrete](mittag-leffler-of-is-discrete.md)
 
 ## Sources
 

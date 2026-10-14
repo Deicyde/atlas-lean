@@ -27,6 +27,10 @@ quotient `F_{p^b}! / (F_{p^a}! * F_{p^b - p^a}!)` under `ℕ` division.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Padic Val Nat fib mul](padic-val-nat-fib-mul.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Padics.FibonomialPrimePowerValuation](../../../../../../sources/v2/MathlibExt.md)

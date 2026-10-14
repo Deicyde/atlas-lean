@@ -14,7 +14,9 @@ the other end.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
+- [Depth](../index/depth.md)
+- [Reverse](reverse.md)
 
 ## Sources
 

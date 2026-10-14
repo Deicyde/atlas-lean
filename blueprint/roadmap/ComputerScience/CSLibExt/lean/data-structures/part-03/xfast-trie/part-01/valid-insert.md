@@ -13,7 +13,13 @@ Insertion preserves the level invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [XFast Trie](xfast-trie.md)
+- [Valid](valid.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Prefix Of](prefix-of.md)
 
 ## Sources
 

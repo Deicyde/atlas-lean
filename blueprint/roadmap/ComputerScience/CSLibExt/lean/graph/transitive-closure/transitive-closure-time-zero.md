@@ -13,7 +13,11 @@ The empty graph performs no cell assignments.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transitive Closure](transitive-closure.md)
+
+## Proof depends on
+
+- [Transitive Closure time](transitive-closure-time.md)
 
 ## Sources
 

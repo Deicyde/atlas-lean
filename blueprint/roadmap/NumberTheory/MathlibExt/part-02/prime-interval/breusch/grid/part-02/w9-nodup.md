@@ -13,7 +13,7 @@ The table `w9` has no duplicate entries.
 
 ## Depends on
 
-This node has no prerequisites.
+- [W9](../part-01/w9.md)
 
 ## Sources
 

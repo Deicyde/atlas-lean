@@ -17,7 +17,8 @@ required clause `second_identification`, under `n <= 2*k` and `k <= n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bessel Number Second](bessel-number-second.md)
+- [Meromorphic Stirling Second](meromorphic-stirling-second.md)
 
 ## Sources
 

@@ -13,7 +13,16 @@ A proved actual positive-dimensional member of the shared admissible family.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Isotropic Log Concave](../thin-shell/is-isotropic-log-concave.md)
+- [Uniform Interval](uniform-interval.md)
+
+## Proof depends on
+
+- [Is Log Concave Density](../thin-shell/is-log-concave-density.md)
+- [Cond eq with Density indicator](../log-concave-uniform/cond-eq-with-density-indicator.md)
+- [Is Log Concave Density indicator const](../log-concave-uniform/is-log-concave-density-indicator-const.md)
+- [Line Isometry](line-isometry.md)
+- [Symmetric Interval](symmetric-interval.md)
 
 ## Sources
 

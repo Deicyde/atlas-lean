@@ -14,7 +14,7 @@ transition `n` times starting from the seed. Source: Amburg et al., *TRIP-Stern 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trip Stern Tree](trip-stern-tree.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ A B-tree is root-valid at some height.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](../part-01/btree.md)
+- [Is BTree](is-btree.md)
+- [Valid Root](../part-01/valid-root.md)
+
+## Proof depends on
+
+- [Ordered](../part-01/ordered.md)
 
 ## Sources
 

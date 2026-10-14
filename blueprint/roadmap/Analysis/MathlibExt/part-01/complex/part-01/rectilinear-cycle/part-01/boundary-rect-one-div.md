@@ -15,6 +15,11 @@ Boundary integral of `1/s` over a rectangle containing `0`: `2πi`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Horiz diff one div](horiz-diff-one-div.md)
+- [Vertical side one div](vertical-side-one-div.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.RectilinearCycle](../../../../../../../../sources/v2/MathlibExt.md)

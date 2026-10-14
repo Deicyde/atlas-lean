@@ -22,6 +22,16 @@ case supplied by Sperner's theorem and the required Graham–Rothschild line the
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reindex](reindex.md)
+- [Reindex apply](reindex-apply.md)
+- [Comp](comp.md)
+- [Comp Line](comp-line.md)
+- [Comp Line apply](comp-line-apply.md)
+- [Comp apply](comp-apply.md)
+- [Comp comp Line](comp-comp-line.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.DensityHalesJewett](../../../../../sources/v2/MathlibExt.md)

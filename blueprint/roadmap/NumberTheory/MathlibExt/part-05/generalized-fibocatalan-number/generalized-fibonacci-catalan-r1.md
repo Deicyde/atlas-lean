@@ -13,7 +13,13 @@ T3: at `r = 1` the value equals `2 * F_{2n}! / (F_{n+2}! * F_n!)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Factorial](fibonacci-factorial.md)
+- [Generalized Fibonacci Catalan](generalized-fibonacci-catalan.md)
+
+## Proof depends on
+
+- [Fibonacci Jordan Quotient](fibonacci-jordan-quotient.md)
+- [Fibonacci Jordan Quotient r1](fibonacci-jordan-quotient-r1.md)
 
 ## Sources
 

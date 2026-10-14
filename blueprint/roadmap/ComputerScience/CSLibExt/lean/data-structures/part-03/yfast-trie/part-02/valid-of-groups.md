@@ -14,7 +14,16 @@ valid trie.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Group Ordered](../part-01/group-ordered.md)
+- [Valid](../part-01/valid.md)
+- [Of Groups](../part-01/of-groups.md)
+
+## Proof depends on
+
+- [Contents mk Reps](../part-01/contents-mk-reps.md)
+- [Mk Reps](../part-01/mk-reps.md)
+- [Valid mk Reps](../part-01/valid-mk-reps.md)
+- [Valid](../../xfast-trie/part-01/valid.md)
 
 ## Sources
 

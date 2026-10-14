@@ -14,6 +14,10 @@ lean: MathlibExt.NumberTheory.ErdosProblem539Wanted.conjecture
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cofactor Threshold](cofactor-threshold.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem539Wanted](../../../../../sources/v2/WantedExt.md)

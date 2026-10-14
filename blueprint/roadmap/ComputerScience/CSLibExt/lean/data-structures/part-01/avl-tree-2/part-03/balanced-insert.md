@@ -13,7 +13,20 @@ Insertion preserves the AVL balance invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balanced](../part-01/balanced.md)
+- [Cache Correct](../part-01/cache-correct.md)
+- [Tree](../part-01/tree.md)
+- [Insert](../part-01/insert.md)
+
+## Proof depends on
+
+- [Balance](../part-01/balance.md)
+- [Balanced balance](../part-02/balanced-balance.md)
+- [Balanced mk Node](../part-02/balanced-mk-node.md)
+- [Cache Correct insert](../part-02/cache-correct-insert.md)
+- [Height](../part-01/height.md)
+- [Height insert le](../part-02/height-insert-le.md)
+- [Le height insert](../part-02/le-height-insert.md)
 
 ## Sources
 

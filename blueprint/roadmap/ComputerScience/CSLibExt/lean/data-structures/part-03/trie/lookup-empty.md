@@ -13,7 +13,8 @@ Every lookup in the empty trie fails.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empty](empty.md)
+- [Lookup](lookup.md)
 
 ## Sources
 

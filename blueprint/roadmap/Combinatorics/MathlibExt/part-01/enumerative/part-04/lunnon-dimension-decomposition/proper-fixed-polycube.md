@@ -15,6 +15,14 @@ representatives in host dimension `i` whose varying-axis count equals `i`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fixed Polycube](fixed-polycube.md)
+- [Is Canonical Cells](is-canonical-cells.md)
+- [Is Polycube Cells](is-polycube-cells.md)
+- [Lattice Cell](lattice-cell.md)
+- [Proper Dimension](proper-dimension.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.LunnonDimensionDecomposition](../../../../../../../sources/v2/MathlibExt.md)

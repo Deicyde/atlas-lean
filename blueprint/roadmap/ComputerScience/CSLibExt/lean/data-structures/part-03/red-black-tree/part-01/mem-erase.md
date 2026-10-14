@@ -14,7 +14,10 @@ color-erased tree, by definition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
+- [Mem](mem.md)
+- [Tree](tree.md)
+- [Erase](erase.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ Executes queue operations from left to right, accumulating modeled cost.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Operation](operation.md)
+
+## Proof depends on
+
+- [Step](step.md)
 
 ## Sources
 

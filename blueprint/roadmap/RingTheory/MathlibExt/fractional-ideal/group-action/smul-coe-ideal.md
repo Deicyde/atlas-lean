@@ -15,6 +15,10 @@ The action on an integral ideal agrees with the induced fractional-ideal action.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mem smul iff exists](mem-smul-iff-exists.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.FractionalIdeal.GroupAction](../../../../../sources/v2/MathlibExt.md)

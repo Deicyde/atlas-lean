@@ -14,7 +14,7 @@ appending (and copying) left-subtree results.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kd Tree](kd-tree.md)
 
 ## Sources
 

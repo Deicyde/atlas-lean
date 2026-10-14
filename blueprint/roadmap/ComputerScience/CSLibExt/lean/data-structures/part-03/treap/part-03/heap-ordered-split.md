@@ -13,7 +13,14 @@ Splitting preserves min-heap priority order in both output trees.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Heap Ordered](../part-01/heap-ordered.md)
+- [Split](../part-01/split.md)
+
+## Proof depends on
+
+- [All Nodes](../part-01/all-nodes.md)
+- [Split Result](../part-01/split-result.md)
 
 ## Sources
 

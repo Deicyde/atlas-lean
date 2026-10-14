@@ -13,7 +13,7 @@ Each saved transition stage performs exactly `n²` new-cell assignments.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transitive Closure Stages](transitive-closure-stages.md)
 
 ## Sources
 

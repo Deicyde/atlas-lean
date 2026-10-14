@@ -13,7 +13,7 @@ The denominator of the Herbrand quotient is positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Herbrand Finite](herbrand-finite.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ A character at `m2` induced by one at `m1` via level change.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Character](../character/ray-class-character.md)
+
+## Proof depends on
+
+- [Ray Class Group](../group/ray-class-group.md)
+- [Map Of Dvd](map-of-dvd.md)
 
 ## Sources
 

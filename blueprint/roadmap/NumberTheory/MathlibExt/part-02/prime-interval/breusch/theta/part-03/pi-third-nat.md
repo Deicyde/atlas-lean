@@ -15,6 +15,11 @@ Prime-counting bound `3 * π(m) ≤ m` for `m ≥ 36`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pi third large](pi-third-large.md)
+- [Pi third small](pi-third-small.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Theta](../../../../../../../../sources/v2/MathlibExt.md)

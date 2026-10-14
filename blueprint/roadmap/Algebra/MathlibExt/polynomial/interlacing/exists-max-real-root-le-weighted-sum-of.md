@@ -14,7 +14,12 @@ larger than the largest root of any real-rooted monic nonnegative weighted sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Common Upper Interlacing](has-common-upper-interlacing.md)
+
+## Proof depends on
+
+- [Has Upper Interlacing Point](has-upper-interlacing-point.md)
+- [Eval re nonpos of upper Interlacing](eval-re-nonpos-of-upper-interlacing.md)
 
 ## Sources
 

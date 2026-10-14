@@ -17,7 +17,17 @@ subtree and the remainder, keeping all remaining edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
+- [Find Subtree](../part-01/find-subtree.md)
+- [Prune At](prune-at.md)
+
+## Proof depends on
+
+- [Children ind](../../euler-tour-tree/part-01/children-ind.md)
+- [Root](../../euler-tour-tree/part-01/root.md)
+- [Vertices node](../../euler-tour-tree/part-01/vertices-node.md)
+- [Prune At eq self of not mem](prune-at-eq-self-of-not-mem.md)
 
 ## Sources
 

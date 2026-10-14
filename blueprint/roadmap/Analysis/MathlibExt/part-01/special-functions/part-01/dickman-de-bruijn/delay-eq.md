@@ -13,7 +13,7 @@ The Dickman–de Bruijn delay differential equation above one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dickman De Bruijn](is-dickman-de-bruijn.md)
 
 ## Sources
 

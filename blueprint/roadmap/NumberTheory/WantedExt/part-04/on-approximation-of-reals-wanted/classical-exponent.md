@@ -14,6 +14,10 @@ The classical exponent `ω⋆_n(ξ)` defined as the supremum of the set `ω_star
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ω stars](stars.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.OnApproximationOfRealsWanted](../../../../../sources/v2/WantedExt.md)

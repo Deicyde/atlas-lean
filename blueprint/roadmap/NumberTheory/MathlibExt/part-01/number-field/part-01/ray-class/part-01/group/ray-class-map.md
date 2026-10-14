@@ -12,7 +12,7 @@ Canonical projection onto the ray class group.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Group](ray-class-group.md)
 
 ## Sources
 

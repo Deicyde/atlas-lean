@@ -13,7 +13,9 @@ Circuits with the same length, charged gates and output references are equal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arithmetic Circuit](arithmetic-circuit.md)
+- [Arithmetic Gate](arithmetic-gate.md)
+- [Arithmetic Operand](arithmetic-operand.md)
 
 ## Sources
 

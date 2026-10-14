@@ -13,7 +13,11 @@ The denominators of a strict underapproximation are strictly monotone.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Strict Underapproximation](is-strict-underapproximation.md)
+
+## Proof depends on
+
+- [Is Strict Egyptian](is-strict-egyptian-2.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ expectation.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Binary String](binary-string.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.BinaryChvatalSankoffWanted](../../../../../../sources/v2/WantedExt.md)

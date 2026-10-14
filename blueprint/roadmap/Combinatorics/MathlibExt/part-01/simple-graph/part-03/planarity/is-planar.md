@@ -14,6 +14,10 @@ A crossing-free straight-line drawing of a simple graph.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Segment](segment.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Planarity](../../../../../../../sources/v2/MathlibExt.md)

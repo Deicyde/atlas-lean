@@ -13,7 +13,13 @@ The empty skip list satisfies the representation invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](valid.md)
+- [Empty](empty.md)
+
+## Proof depends on
+
+- [Skip List](skip-list.md)
+- [Entry](entry.md)
 
 ## Sources
 

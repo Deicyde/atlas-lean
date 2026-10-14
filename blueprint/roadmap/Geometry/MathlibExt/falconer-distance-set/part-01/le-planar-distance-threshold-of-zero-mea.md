@@ -13,7 +13,13 @@ A compact zero-measure distance example rules out all strictly smaller threshold
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distance Set](distance-set.md)
+- [Planar Distance Threshold](planar-distance-threshold.md)
+
+## Proof depends on
+
+- [Admissible Planar Threshold](admissible-planar-threshold.md)
+- [Planar Threshold Property](planar-threshold-property.md)
 
 ## Sources
 

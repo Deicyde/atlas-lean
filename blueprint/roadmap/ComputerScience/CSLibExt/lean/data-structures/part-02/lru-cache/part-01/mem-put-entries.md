@@ -13,7 +13,12 @@ Every entry stored by `put` is either the new binding or was already in the cach
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lru Cache](lru-cache.md)
+- [Put](put.md)
+
+## Proof depends on
+
+- [Erase Key](erase-key.md)
 
 ## Sources
 

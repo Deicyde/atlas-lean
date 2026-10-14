@@ -15,6 +15,12 @@ over all packings.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [E](e.md)
+- [Is Packing](is-packing.md)
+- [Density](density.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.KeplerConjectureWanted](../../../../../sources/v2/WantedExt.md)

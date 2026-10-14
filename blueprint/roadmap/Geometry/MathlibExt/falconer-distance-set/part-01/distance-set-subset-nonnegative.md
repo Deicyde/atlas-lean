@@ -13,7 +13,7 @@ Every realized Euclidean distance is nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distance Set](distance-set.md)
 
 ## Sources
 

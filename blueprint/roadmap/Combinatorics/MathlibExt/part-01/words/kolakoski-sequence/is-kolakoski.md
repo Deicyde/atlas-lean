@@ -15,6 +15,10 @@ alternate between ones and twos, and block `n` has length `K n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kolakoski Block Start](kolakoski-block-start.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Words.KolakoskiSequence](../../../../../../sources/v2/MathlibExt.md)

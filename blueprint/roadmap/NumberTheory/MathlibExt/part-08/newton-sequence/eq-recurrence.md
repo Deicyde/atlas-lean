@@ -13,7 +13,7 @@ The defining Newton recurrence at a specified index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Newton Sequence](is-newton-sequence.md)
 
 ## Sources
 

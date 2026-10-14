@@ -13,7 +13,14 @@ The variance formulation controls the radius fluctuation for every actual law.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Isotropic Log Concave](is-isotropic-log-concave.md)
+- [Thin Shell Variance Constant](thin-shell-variance-constant.md)
+
+## Proof depends on
+
+- [Normalized Radius Variance](normalized-radius-variance.md)
+- [Normalized Radius Variance le constant](normalized-radius-variance-le-constant.md)
+- [Radius fluctuation le normalized variance](radius-fluctuation-le-normalized-varianc.md)
 
 ## Sources
 

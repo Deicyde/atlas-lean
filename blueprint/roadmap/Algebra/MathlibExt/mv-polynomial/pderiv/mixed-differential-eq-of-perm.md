@@ -13,7 +13,12 @@ The mixed differential operator depends only on the multiset of differentiation 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mixed Differential](mixed-differential.md)
+
+## Proof depends on
+
+- [Mixed Differential cons](mixed-differential-cons.md)
+- [Pderiv comm](pderiv-comm.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ The law of the first variable on any carrier is standardized.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is IIDModel](is-iidmodel.md)
+- [Is Standardized Law](../part-01/is-standardized-law.md)
 
 ## Sources
 

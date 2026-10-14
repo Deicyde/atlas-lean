@@ -13,7 +13,14 @@ Splaying a present key of an ordered tree brings it to the root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
+- [Ordered](../../../part-02/binary-search-tree/part-01/ordered.md)
+- [Splay](splay.md)
+
+## Proof depends on
+
+- [All](../../../part-02/binary-search-tree/part-01/all.md)
+- [All iff forall mem](../../../part-02/binary-search-tree/part-01/all-iff-forall-mem.md)
 
 ## Sources
 

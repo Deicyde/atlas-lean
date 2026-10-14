@@ -12,7 +12,7 @@ The endpoints of an interval are ordered.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Interval](interval.md)
 
 ## Sources
 

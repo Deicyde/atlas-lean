@@ -13,7 +13,7 @@ A Dickman–de Bruijn function is continuous on the nonnegative reals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dickman De Bruijn](is-dickman-de-bruijn.md)
 
 ## Sources
 

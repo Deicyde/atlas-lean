@@ -13,7 +13,11 @@ The actual candidate count is the triangular number, independent of all prices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bottom Up Cut Rod](bottom-up-cut-rod.md)
+
+## Proof depends on
+
+- [Bottom Up Cut Rod time sum](bottom-up-cut-rod-time-sum.md)
 
 ## Sources
 

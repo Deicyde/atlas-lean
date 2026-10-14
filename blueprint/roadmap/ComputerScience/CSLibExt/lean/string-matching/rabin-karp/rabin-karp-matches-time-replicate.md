@@ -13,7 +13,11 @@ Repeated-symbol words execute exactly m comparisons at every alignment, plus set
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rabin Karp Matches](rabin-karp-matches.md)
+
+## Proof depends on
+
+- [Rabin Karp Matches time eq](rabin-karp-matches-time-eq.md)
 
 ## Sources
 

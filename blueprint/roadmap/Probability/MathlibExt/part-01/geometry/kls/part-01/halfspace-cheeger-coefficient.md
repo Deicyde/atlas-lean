@@ -14,6 +14,11 @@ The same boundary quotient with cuts restricted to actual affine half-spaces.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Halfspace](is-halfspace.md)
+- [Outer Minkowski Boundary](outer-minkowski-boundary.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Geometry.KLS](../../../../../../../sources/v2/MathlibExt.md)

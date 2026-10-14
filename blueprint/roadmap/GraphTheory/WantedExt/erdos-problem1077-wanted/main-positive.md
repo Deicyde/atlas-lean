@@ -15,6 +15,10 @@ with many edges (disproved).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Balanced](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-01/is-balanced.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.ErdosProblem1077Wanted](../../../../sources/v2/WantedExt.md)

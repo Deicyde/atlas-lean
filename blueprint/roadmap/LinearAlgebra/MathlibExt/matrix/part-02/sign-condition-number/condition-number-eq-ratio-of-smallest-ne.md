@@ -13,7 +13,7 @@ On the nonsingular branch, the definition is exactly the singular-value ratio.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Condition Number](condition-number.md)
 
 ## Sources
 

@@ -18,7 +18,13 @@ paired principal-value constant plus `∫₂ˣ`, whose derivative is `(log x)⁻
 
 ## Depends on
 
-This node has no prerequisites.
+- [Logarithmic Integral Real](logarithmic-integral-real.md)
+
+## Proof depends on
+
+- [Logarithmic Integral](../integral/logarithmic-integral.md)
+- [Logarithmic Integral of lt one](../integral/logarithmic-integral-of-lt-one.md)
+- [Logarithmic Integral of one lt](../integral/logarithmic-integral-of-one-lt.md)
 
 ## Sources
 

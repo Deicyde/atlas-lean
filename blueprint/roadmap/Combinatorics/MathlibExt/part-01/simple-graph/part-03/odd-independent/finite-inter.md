@@ -13,7 +13,7 @@ Finiteness of each outside-neighbourhood intersection.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Odd Independent](is-odd-independent.md)
 
 ## Sources
 

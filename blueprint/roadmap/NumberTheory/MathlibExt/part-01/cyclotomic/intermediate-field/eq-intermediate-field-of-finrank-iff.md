@@ -14,7 +14,11 @@ An intermediate field is the canonical degree-`s` field exactly when it has degr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Intermediate Field Of Finrank](intermediate-field-of-finrank.md)
+
+## Proof depends on
+
+- [Exists Unique intermediate Field finrank](exists-unique-intermediate-field-finrank.md)
 
 ## Sources
 

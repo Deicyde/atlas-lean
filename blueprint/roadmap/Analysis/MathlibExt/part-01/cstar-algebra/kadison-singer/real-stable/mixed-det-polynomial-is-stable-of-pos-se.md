@@ -13,7 +13,12 @@ The determinant polynomial of positive semidefinite matrices is stable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mixed Det Polynomial](../mixed-char-poly/mixed-det-polynomial.md)
+- [Is Stable](../../../../../../Algebra/MathlibExt/mv-polynomial/stable/is-stable.md)
+
+## Proof depends on
+
+- [Eval mixed Det Polynomial](../mixed-char-poly/eval-mixed-det-polynomial.md)
 
 ## Sources
 

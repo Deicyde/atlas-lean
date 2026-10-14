@@ -13,7 +13,13 @@ For positive capacity, the exact pseudo-polynomial cost is at most `3 * n * W`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Item](item.md)
+- [Result](result.md)
+- [Solve](solve.md)
+
+## Proof depends on
+
+- [Solve time](solve-time.md)
 
 ## Sources
 

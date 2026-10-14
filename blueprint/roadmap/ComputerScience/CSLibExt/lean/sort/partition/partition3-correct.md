@@ -13,7 +13,8 @@ Three-way partition preserves occurrences and classifies every output field.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Way Partition](three-way-partition.md)
+- [Partition3](partition3.md)
 
 ## Sources
 

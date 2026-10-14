@@ -13,7 +13,13 @@ The square tensor has the direct cubic decomposition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Trilinear Rank At Most](../part-01/has-trilinear-rank-at-most.md)
+- [Matrix Coordinate](../part-01/matrix-coordinate.md)
+- [Square Matrix Multiplication Tensor](square-matrix-multiplication-tensor.md)
+
+## Proof depends on
+
+- [Matrix Multiplication Tensor rank le product](matrix-multiplication-tensor-rank-le-pro.md)
 
 ## Sources
 

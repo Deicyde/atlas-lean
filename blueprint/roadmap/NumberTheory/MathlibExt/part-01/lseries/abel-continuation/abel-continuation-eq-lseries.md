@@ -16,7 +16,8 @@ nonsummable (there it is `0` by definition).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abel Continuation](abel-continuation.md)
+- [Abel Partial Sum](abel-partial-sum.md)
 
 ## Sources
 

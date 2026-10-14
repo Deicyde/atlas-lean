@@ -13,7 +13,7 @@ The square of a connected graph is connected.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square](square.md)
 
 ## Sources
 

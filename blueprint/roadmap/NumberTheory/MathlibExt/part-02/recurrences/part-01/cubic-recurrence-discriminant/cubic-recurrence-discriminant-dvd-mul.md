@@ -14,7 +14,12 @@ term divides every positive multiple-index term.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Cubic Recurrence Pair](is-cubic-recurrence-pair.md)
+- [Cubic Recurrence Discriminant](cubic-recurrence-discriminant.md)
+
+## Proof depends on
+
+- [Cubic Recurrence Root Condition](cubic-recurrence-root-condition.md)
 
 ## Sources
 

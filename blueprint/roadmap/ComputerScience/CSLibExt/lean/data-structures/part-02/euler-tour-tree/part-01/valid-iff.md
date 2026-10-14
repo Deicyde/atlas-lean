@@ -13,7 +13,9 @@ Validity is exactly duplicate-freeness of the preorder vertex list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+- [Valid](valid.md)
+- [Vertices](vertices.md)
 
 ## Sources
 

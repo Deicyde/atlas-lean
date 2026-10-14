@@ -13,7 +13,12 @@ The KLS conjecture is equivalent to a finite real simultaneous bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inverse Cheeger Constant](inverse-cheeger-constant.md)
+- [Kls Constant](kls-constant.md)
+
+## Proof depends on
+
+- [Kls Constant le iff measures](kls-constant-le-iff-measures.md)
 
 ## Sources
 

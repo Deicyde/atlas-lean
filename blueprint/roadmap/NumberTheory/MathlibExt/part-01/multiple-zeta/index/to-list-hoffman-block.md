@@ -14,7 +14,7 @@ by one `y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hoffman Block](hoffman-block.md)
 
 ## Sources
 

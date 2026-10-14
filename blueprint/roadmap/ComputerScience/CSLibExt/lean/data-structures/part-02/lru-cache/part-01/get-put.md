@@ -14,7 +14,14 @@ is positive so the new entry is not itself evicted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lru Cache](lru-cache.md)
+- [Get](get.md)
+- [Put](put.md)
+
+## Proof depends on
+
+- [Erase Key](erase-key.md)
+- [Get hit](get-hit.md)
 
 ## Sources
 

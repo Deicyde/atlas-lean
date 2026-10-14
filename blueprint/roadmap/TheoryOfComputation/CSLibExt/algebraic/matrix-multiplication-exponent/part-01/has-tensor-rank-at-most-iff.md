@@ -13,7 +13,17 @@ Actual pure-tensor decompositions correspond exactly to coefficient decompositio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Tensor Rank At Most](has-tensor-rank-at-most.md)
+- [Has Trilinear Rank At Most](has-trilinear-rank-at-most.md)
+- [Trilinear Tensor](trilinear-tensor.md)
+- [Trilinear Tensor Coefficients](trilinear-tensor-coefficients.md)
+
+## Proof depends on
+
+- [Rank One Trilinear Term](rank-one-trilinear-term.md)
+- [Eval](eval.md)
+- [Tensor](tensor.md)
+- [Trilinear Tensor Coefficients tmul](trilinear-tensor-coefficients-tmul.md)
 
 ## Sources
 

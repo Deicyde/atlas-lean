@@ -15,6 +15,10 @@ Binomial transform of a sequence, the `k = 1` case of
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Falling KBinomial Transform](falling-kbinomial-transform.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.FallingKBinomialTransform](../../../../../../../sources/v2/MathlibExt.md)

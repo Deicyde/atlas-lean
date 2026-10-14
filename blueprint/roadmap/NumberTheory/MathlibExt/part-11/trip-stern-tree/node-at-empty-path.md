@@ -14,7 +14,8 @@ The empty path selects the root seed. Source: Amburg et al., *TRIP-Stern Sequenc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trip Stern Tree](trip-stern-tree.md)
+- [Node At Path](node-at-path.md)
 
 ## Sources
 

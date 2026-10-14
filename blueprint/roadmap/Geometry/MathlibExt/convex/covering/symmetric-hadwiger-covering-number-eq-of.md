@@ -13,7 +13,8 @@ The same characteristic API for the centrally symmetric class.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniform Symmetric Interior Translate Bound](uniform-symmetric-interior-translate-bou.md)
+- [Symmetric Hadwiger Covering Number](symmetric-hadwiger-covering-number.md)
 
 ## Sources
 

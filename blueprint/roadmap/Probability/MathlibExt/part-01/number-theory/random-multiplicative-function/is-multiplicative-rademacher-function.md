@@ -13,7 +13,11 @@ The Rademacher arithmetic function is multiplicative on coprime inputs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rademacher Function](rademacher-function.md)
+
+## Proof depends on
+
+- [Prime Sign Nat](prime-sign-nat.md)
 
 ## Sources
 

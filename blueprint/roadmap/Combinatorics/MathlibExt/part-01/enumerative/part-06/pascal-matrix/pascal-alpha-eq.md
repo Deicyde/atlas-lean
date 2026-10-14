@@ -13,7 +13,11 @@ The closed form for a column generating function of the infinite Pascal matrix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pascal Alpha](pascal-alpha.md)
+
+## Proof depends on
+
+- [Pascal Entry](pascal-entry.md)
 
 ## Sources
 

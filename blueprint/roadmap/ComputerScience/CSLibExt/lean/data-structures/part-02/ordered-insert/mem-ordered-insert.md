@@ -13,7 +13,7 @@ Ordered insertion into a list adds exactly the inserted key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered Insert](ordered-insert.md)
 
 ## Sources
 

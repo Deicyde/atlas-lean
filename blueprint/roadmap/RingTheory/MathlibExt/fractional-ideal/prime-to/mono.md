@@ -13,7 +13,7 @@ Being prime to an ideal implies being prime to every larger ideal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Prime To](is-prime-to.md)
 
 ## Sources
 

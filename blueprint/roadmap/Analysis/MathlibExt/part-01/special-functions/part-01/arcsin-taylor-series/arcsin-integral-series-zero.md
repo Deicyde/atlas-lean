@@ -13,7 +13,11 @@ The integrated arcsine series vanishes at zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arcsin Integral Series](arcsin-integral-series.md)
+
+## Proof depends on
+
+- [Central Binomial Coeff](central-binomial-coeff.md)
 
 ## Sources
 

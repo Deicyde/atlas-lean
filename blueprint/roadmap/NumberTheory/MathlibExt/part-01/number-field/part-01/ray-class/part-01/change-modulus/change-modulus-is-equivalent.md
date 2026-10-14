@@ -13,7 +13,13 @@ The canonical change of modulus is equivalent to the original pair.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Change Modulus](change-modulus.md)
+- [Ray Group Ambient](ray-group-ambient.md)
+
+## Proof depends on
+
+- [Change Modulus to Ambient Subgroup of dvd](change-modulus-to-ambient-subgroup-of-dv.md)
+- [Coprime Fractional Ideals le of dvd](coprime-fractional-ideals-le-of-dvd.md)
 
 ## Sources
 

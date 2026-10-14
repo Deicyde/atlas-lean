@@ -16,6 +16,10 @@ This is the pointwise form of the representation `ρ_{E,p}` of the source.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gal Alg Equiv](gal-alg-equiv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.EllipticCurve.GaloisRepresentation](../../../../../sources/v2/MathlibExt.md)

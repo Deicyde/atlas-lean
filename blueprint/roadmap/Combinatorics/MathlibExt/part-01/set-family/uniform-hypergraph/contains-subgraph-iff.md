@@ -13,7 +13,7 @@ Unfolding characterization of finite subhypergraph containment.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Contains Subgraph](contains-subgraph.md)
 
 ## Sources
 

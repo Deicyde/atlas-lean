@@ -13,7 +13,15 @@ Membership in the search of a valid tree, stated on its point list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ball Tree](ball-tree.md)
+- [Valid](valid.md)
+- [Dist Sq](dist-sq.md)
+- [Search](search.md)
+- [To List](to-list.md)
+
+## Proof depends on
+
+- [Search eq filter](search-eq-filter.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ The same actual law exercises the radius-fluctuation bridge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Thin Shell Variance Constant](../thin-shell/thin-shell-variance-constant.md)
+- [Uniform Interval](uniform-interval.md)
+
+## Proof depends on
+
+- [Radius fluctuation le constant](../thin-shell/radius-fluctuation-le-constant.md)
+- [Uniform Interval sqrt three is Isotropic Log Concave](uniform-interval-sqrt-three-is-isotropic.md)
 
 ## Sources
 

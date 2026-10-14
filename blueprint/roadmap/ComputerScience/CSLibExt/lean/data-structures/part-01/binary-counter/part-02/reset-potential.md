@@ -13,7 +13,12 @@ Reset charge plus final one-bit potential equals the initial potential.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reset](../part-01/reset.md)
+
+## Proof depends on
+
+- [Reset time](../part-01/reset-time.md)
+- [Reset to List](../part-01/reset-to-list.md)
 
 ## Sources
 

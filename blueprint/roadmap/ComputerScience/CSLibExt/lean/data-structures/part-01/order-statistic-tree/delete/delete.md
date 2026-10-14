@@ -14,6 +14,10 @@ Delete a key, leaving the tree unchanged in membership when it is absent.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Merge](merge.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.OrderStatisticTree.Delete](../../../../../../../../sources/v2/CSLibExt.md)

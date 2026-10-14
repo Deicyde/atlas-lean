@@ -18,6 +18,11 @@ A consecutive cyclic prime labeling of `P_n x P_2`: `0 < n` and the rotation
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ladder Adj](ladder-adj.md)
+- [Cyclic Label](cyclic-label.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.ConsecutiveCyclicPrimeLabeling](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,12 @@ An upper bound on the supremum is exactly an upper bound on all admissible coeff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Asymptotic Dobrowolski Coefficient](is-asymptotic-dobrowolski-coefficient.md)
+- [Asymptotic Dobrowolski Constant](asymptotic-dobrowolski-constant.md)
+
+## Proof depends on
+
+- [Coe le asymptotic Dobrowolski Constant](coe-le-asymptotic-dobrowolski-constant.md)
 
 ## Sources
 

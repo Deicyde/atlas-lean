@@ -17,6 +17,10 @@ the union of `k` independent sets.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Indep Num K](indep-num-k.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Coloring.Vertex](../../../../../../../../sources/v2/MathlibExt.md)

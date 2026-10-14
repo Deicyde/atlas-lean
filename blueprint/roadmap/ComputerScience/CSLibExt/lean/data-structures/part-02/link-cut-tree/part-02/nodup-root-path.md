@@ -13,7 +13,15 @@ A root path in a duplicate-free tree has distinct vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
+- [Root Path](root-path.md)
+
+## Proof depends on
+
+- [Children ind](../../euler-tour-tree/part-01/children-ind.md)
+- [Vertices node](../../euler-tour-tree/part-01/vertices-node.md)
+- [Mem root Path](mem-root-path.md)
 
 ## Sources
 

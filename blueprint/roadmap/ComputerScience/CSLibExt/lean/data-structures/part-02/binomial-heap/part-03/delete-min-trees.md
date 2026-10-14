@@ -12,7 +12,14 @@ The computational forest projection of minimum deletion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Tree](../part-01/binomial-tree.md)
+
+## Proof depends on
+
+- [Meld Trees](../part-02/meld-trees.md)
+- [Remove Min Tree](../part-02/remove-min-tree.md)
+- [Children](../part-01/children.md)
+- [Root](../part-01/root.md)
 
 ## Sources
 

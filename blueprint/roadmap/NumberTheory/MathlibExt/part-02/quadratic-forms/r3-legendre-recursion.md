@@ -16,7 +16,7 @@ finite-field conic counts, followed by a two-step induction on the exponent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Square Representation Count](three-squares/three-square-representation-count.md)
 
 ## Sources
 

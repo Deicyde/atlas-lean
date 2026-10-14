@@ -14,6 +14,10 @@ Completion residue-field quotient map along the adic integer map.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Finite Lies Over Maximal Ideal](../comap-maximal-ideal-adic-completion-inte.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.Completion.FiniteLiesOverResidueNaturality](../../../../../../../../sources/v2/MathlibExt.md)

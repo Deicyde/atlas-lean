@@ -13,7 +13,11 @@ The unit fractional ideal is prime to every ideal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Prime To](is-prime-to.md)
+
+## Proof depends on
+
+- [Non Zero Divisors le comap algebra Map at Prime](non-zero-divisors-le-comap-algebra-map-a.md)
 
 ## Sources
 

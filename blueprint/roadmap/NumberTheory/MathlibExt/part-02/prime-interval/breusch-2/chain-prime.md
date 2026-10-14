@@ -13,7 +13,7 @@ Every chain entry is prime.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain](chain.md)
 
 ## Sources
 

@@ -15,6 +15,11 @@ A summable nonnegative Taylor-term sequence realizes its supremum.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Wiman Maximum Term le iff](wiman-maximum-term-le-iff.md)
+- [Wiman Term le wiman Maximum Term](wiman-term-le-wiman-maximum-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.Wiman.MaximumTermAttained](../../../../../../../../sources/v2/MathlibExt.md)

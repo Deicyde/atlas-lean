@@ -13,7 +13,11 @@ Every finite graph is cocolorable, via its tautological finite coloring.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cocolorable](cocolorable.md)
+
+## Proof depends on
+
+- [Cocolorable](cocolorable-2.md)
 
 ## Sources
 

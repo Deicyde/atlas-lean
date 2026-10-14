@@ -13,7 +13,12 @@ The point list of a tree built from axis `0` permutes the input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build Root](build-root.md)
+- [To List](../part-01/to-list.md)
+
+## Proof depends on
+
+- [To List build perm](../part-01/to-list-build-perm.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ Explicit total extension at `k = 0`: every nonzero `n` is `0`-full since
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KFull](is-kfull.md)
 
 ## Sources
 

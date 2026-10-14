@@ -12,7 +12,11 @@ Automorphisms of the full shift: homeomorphisms commuting with the unit shift.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Full Shift Space](full-shift-space.md)
+
+## Proof depends on
+
+- [Shift Homeomorph](shift-homeomorph.md)
 
 ## Sources
 

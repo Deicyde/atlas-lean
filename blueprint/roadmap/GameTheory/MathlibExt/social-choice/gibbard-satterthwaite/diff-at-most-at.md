@@ -12,7 +12,11 @@ lean: MathlibExt.GameTheory.SocialChoice.GibbardSatterthwaiteWanted.DiffAtMostAt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Profile](profile.md)
+
+## Proof depends on
+
+- [Strict Total Order](strict-total-order.md)
 
 ## Sources
 

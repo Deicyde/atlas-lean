@@ -13,7 +13,12 @@ In particular `pairMap` is injective for distinct keys.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mod Prime Index](mod-prime-index.md)
+- [Pair Map](pair-map.md)
+
+## Proof depends on
+
+- [Pair Equiv](pair-equiv.md)
 
 ## Sources
 

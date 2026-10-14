@@ -13,7 +13,7 @@ A transported line consists of the corresponding points of the ambient subspace.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp Line](comp-line.md)
 
 ## Sources
 

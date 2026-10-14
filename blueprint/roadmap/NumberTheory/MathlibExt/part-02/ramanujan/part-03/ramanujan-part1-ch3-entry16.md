@@ -18,6 +18,10 @@ recurrence is `Entry12.ramanujan_part1_ch3_entry12` multiplied by `exp (-n * log
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Part1 Ch3 Entry12](../part-02/ramanujan-part1-ch3-entry12.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry16](../../../../../../sources/v2/MathlibExt.md)

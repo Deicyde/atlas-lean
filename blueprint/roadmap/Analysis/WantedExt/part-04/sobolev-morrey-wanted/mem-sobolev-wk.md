@@ -13,7 +13,11 @@ derivative `D^m f` of order `|m| ≤ k` exists and lies in `L^p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
+
+## Proof depends on
+
+- [Is Weak Deriv](is-weak-deriv.md)
 
 ## Sources
 

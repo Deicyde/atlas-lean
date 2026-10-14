@@ -14,7 +14,9 @@ the saved final cache is duplicate-free and within capacity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](cache-event.md)
+- [Cache LTS](cache-lts.md)
+- [Furthest In Future](furthest-in-future.md)
 
 ## Sources
 

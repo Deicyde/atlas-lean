@@ -13,7 +13,13 @@ Membership in the report of a tree built from axis `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build Root](build-root.md)
+- [In Box](../part-01/in-box.md)
+- [Report](../part-01/report.md)
+
+## Proof depends on
+
+- [Mem report build iff](mem-report-build-iff.md)
 
 ## Sources
 

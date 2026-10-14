@@ -13,7 +13,7 @@ Descending, nonnegative singular values make every defined ratio at least one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Condition Number](condition-number.md)
 
 ## Sources
 

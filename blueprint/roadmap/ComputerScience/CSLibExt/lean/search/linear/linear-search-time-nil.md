@@ -13,7 +13,7 @@ Searching an empty list evaluates the predicate zero times.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Search](linear-search.md)
 
 ## Sources
 

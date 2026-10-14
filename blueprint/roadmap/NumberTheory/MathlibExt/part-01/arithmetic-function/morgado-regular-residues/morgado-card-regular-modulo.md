@@ -21,6 +21,10 @@ property (OEIS `A055653`). A divisor `d ∣ n` is unitary iff
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ncard regular eq sum totient unitary Divisors](ncard-regular-eq-sum-totient-unitary-div.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ArithmeticFunction.MorgadoRegularResidues](../../../../../../sources/v2/MathlibExt.md)

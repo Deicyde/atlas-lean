@@ -13,7 +13,7 @@ Every `x > -exp (-1)` has exactly one preimage `y > -1` under `h`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lambert Map](lambert-map.md)
 
 ## Sources
 

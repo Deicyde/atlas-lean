@@ -13,7 +13,19 @@ Kruskal returns a source-contained acyclic edge list spanning every input compon
 
 ## Depends on
 
-This node has no prerequisites.
+- [Graph](../part-01/graph.md)
+- [Is Spanning Forest](../part-01/is-spanning-forest.md)
+- [Kruskal](kruskal.md)
+
+## Proof depends on
+
+- [Acyclic](../part-01/acyclic.md)
+- [Spans](../part-01/spans.md)
+- [Weighted Edge](../part-01/weighted-edge.md)
+- [Kruskal acyclic](kruskal-acyclic.md)
+- [Kruskal edge mem valid](kruskal-edge-mem-valid.md)
+- [Kruskal spans](kruskal-spans.md)
+- [Valid Edges](../part-01/valid-edges.md)
 
 ## Sources
 

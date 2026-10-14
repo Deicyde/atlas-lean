@@ -15,7 +15,13 @@ nor `h1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kronecker Sym](quadratic/kronecker-sym.md)
+
+## Proof depends on
+
+- [Kronecker At Prime](quadratic/kronecker-at-prime.md)
+- [Kronecker At Two](quadratic/kronecker-at-two.md)
+- [Kronecker Sym prime](quadratic/kronecker-sym-prime.md)
 
 ## Sources
 

@@ -16,7 +16,18 @@ cost whenever the leaf symbols are unique.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](../../huffman/part-01/huffman-tree.md)
+- [Admissible](admissible.md)
+- [Encoded Length](../../huffman/part-01/encoded-length.md)
+- [Huffman](../../huffman/part-03/huffman.md)
+
+## Proof depends on
+
+- [Encoded Length fork](../../huffman/part-01/encoded-length-fork.md)
+- [Weighted Leaves](../../huffman/part-01/weighted-leaves.md)
+- [Weighted Path Length](../../huffman/part-01/weighted-path-length.md)
+- [Huffman optimal](huffman-optimal.md)
+- [Huffman weighted Leaves perm](../../huffman/part-03/huffman-weighted-leaves-perm.md)
 
 ## Sources
 

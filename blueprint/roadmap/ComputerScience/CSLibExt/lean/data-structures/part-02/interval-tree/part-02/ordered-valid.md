@@ -12,7 +12,15 @@ Check strict deterministic key ordering and interval validity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+
+## Proof depends on
+
+- [Entry](../part-01/entry.md)
+- [Key](../part-01/key.md)
+- [Interval](../part-01/interval.md)
+- [Valid](../part-01/valid-2.md)
+- [Key Between](key-between.md)
 
 ## Sources
 

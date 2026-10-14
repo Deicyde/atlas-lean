@@ -13,7 +13,11 @@ Enlarging the constant preserves `δ`-hyperbolicity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Delta Hyperbolic](is-delta-hyperbolic.md)
+
+## Proof depends on
+
+- [Four point](four-point.md)
 
 ## Sources
 

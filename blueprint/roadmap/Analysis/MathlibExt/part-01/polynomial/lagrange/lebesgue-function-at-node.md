@@ -13,7 +13,13 @@ For injective nodes, the Lebesgue function equals `1` at every node.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lebesgue Function](lebesgue-function.md)
+
+## Proof depends on
+
+- [Eval Basis](eval-basis.md)
+- [Eval Basis of ne](eval-basis-of-ne.md)
+- [Eval Basis self](eval-basis-self.md)
 
 ## Sources
 

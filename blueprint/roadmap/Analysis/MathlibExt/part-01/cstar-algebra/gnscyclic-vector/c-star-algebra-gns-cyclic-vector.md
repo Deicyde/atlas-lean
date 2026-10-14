@@ -20,6 +20,10 @@ Proves `Wanted` entry `cStarAlgebra_gns_cyclic_vector`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists gns cyclic vector](exists-gns-cyclic-vector.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.CStarAlgebra.GNSCyclicVector](../../../../../../sources/v2/MathlibExt.md)

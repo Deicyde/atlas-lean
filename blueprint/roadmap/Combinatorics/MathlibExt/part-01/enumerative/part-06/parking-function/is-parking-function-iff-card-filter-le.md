@@ -14,7 +14,11 @@ lower-tail count: at least `k + 1` cars prefer one of the first `k + 1` spots.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Parking Function](is-parking-function.md)
+
+## Proof depends on
+
+- [Is Partial Parking Function](is-partial-parking-function.md)
 
 ## Sources
 

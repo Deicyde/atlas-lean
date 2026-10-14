@@ -13,7 +13,7 @@ Evaluation of the multiplication dual equivalence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dual Equiv Mul Dual Submodule](dual-equiv-mul-dual-submodule.md)
 
 ## Sources
 

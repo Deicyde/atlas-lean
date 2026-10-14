@@ -13,7 +13,12 @@ An unsuccessful search evaluates the predicate once for every list element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Search](linear-search.md)
+
+## Proof depends on
+
+- [Linear Search time cons](linear-search-time-cons.md)
+- [Ret linear Search](ret-linear-search.md)
 
 ## Sources
 

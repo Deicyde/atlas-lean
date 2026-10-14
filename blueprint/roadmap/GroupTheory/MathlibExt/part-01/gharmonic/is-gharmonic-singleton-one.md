@@ -13,7 +13,7 @@ The positive singleton `(1)` is `G`-harmonic via `⊤` and `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is GHarmonic](is-gharmonic.md)
 
 ## Sources
 

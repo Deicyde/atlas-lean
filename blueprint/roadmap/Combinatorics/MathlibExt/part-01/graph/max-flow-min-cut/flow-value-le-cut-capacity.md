@@ -13,7 +13,14 @@ Weak duality: any feasible flow value is at most any s-t cut capacity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Feasible Flow](is-feasible-flow.md)
+- [Is STCut](is-stcut.md)
+- [Cut Capacity](cut-capacity.md)
+- [Flow Value](flow-value.md)
+
+## Proof depends on
+
+- [Cut Flow eq](cut-flow-eq.md)
 
 ## Sources
 

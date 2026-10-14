@@ -24,6 +24,10 @@ unused and keeps the source's shape.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Stirling bell polynomial connection pair general](stirling-bell-polynomial-connection-pair.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.StirlingBellPolynomialConnection](../../../../../../../sources/v2/MathlibExt.md)

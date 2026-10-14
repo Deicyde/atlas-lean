@@ -13,7 +13,14 @@ Membership after insertion: the new element, or a previous member.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](van-emde-boas.md)
+- [Insert](insert.md)
+- [Member](member.md)
+
+## Proof depends on
+
+- [Member insert of ne](member-insert-of-ne.md)
+- [Member insert self](member-insert-self.md)
 
 ## Sources
 

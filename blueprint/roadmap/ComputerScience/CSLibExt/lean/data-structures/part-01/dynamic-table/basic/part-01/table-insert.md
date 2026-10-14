@@ -13,7 +13,7 @@ Each actual old-item copy and the new-item write contributes one tick.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](table.md)
 
 ## Sources
 

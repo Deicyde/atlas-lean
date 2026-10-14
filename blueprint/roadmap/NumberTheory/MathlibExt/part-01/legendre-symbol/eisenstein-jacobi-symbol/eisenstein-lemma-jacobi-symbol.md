@@ -15,6 +15,10 @@ Eisenstein's lemma for Jacobi symbols.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eisenstein lemma jacobi symbol general](eisenstein-lemma-jacobi-symbol-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.LegendreSymbol.EisensteinJacobiSymbol](../../../../../../sources/v2/MathlibExt.md)

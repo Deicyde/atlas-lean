@@ -18,6 +18,14 @@ compatibility alias.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter5 Entry8 exp add one ne](chapter5-entry8-exp-add-one-ne.md)
+- [Chapter5 Entry8 has Sum bernoulli](chapter5-entry8-has-sum-bernoulli.md)
+- [Chapter5 Entry8 has Sum psi](chapter5-entry8-has-sum-psi.md)
+- [Chapter5 Entry8 psi neg one](chapter5-entry8-psi-neg-one.md)
+- [Chapter5 Entry8 psi one](chapter5-entry8-psi-one.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch5Entry8Eulerianformula](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,12 @@ Every finite Fibonacci word lists the first letters of the infinite Fibonacci wo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Inf](../../infinite-word/fibonacci-word/fib-inf.md)
+- [Fib Word](../../infinite-word/fibonacci-word/fib-word.md)
+
+## Proof depends on
+
+- [Fib Inf agrees](../../infinite-word/fibonacci-word/fib-inf-agrees.md)
 
 ## Sources
 

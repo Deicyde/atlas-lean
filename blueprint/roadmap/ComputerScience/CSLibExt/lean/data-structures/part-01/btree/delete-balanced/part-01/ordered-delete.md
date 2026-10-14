@@ -13,7 +13,11 @@ Deletion preserves orderedness of the result.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Delete](delete-2.md)
 
 ## Sources
 

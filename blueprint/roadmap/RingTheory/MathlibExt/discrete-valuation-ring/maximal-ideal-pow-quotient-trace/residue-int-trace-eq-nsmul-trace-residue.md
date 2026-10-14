@@ -31,6 +31,11 @@ mixed-characteristic fractional-dual bound.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Residue Field Maximal Ideal Pow Quotient](../maximal-ideal-pow-factor/residue-field-maximal-ideal-pow-quotient.md)
+- [Trace residue Field Maximal Ideal Pow Quotient](trace-residue-field-maximal-ideal-pow-qu-2.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DiscreteValuationRing.MaximalIdealPowQuotientTrace](../../../../../sources/v2/MathlibExt.md)

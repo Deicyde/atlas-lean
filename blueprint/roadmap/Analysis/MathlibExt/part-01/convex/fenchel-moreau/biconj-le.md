@@ -13,7 +13,11 @@ Easy direction of Fenchel–Moreau: the biconjugate never exceeds `f`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fenchel Biconj](fenchel-biconj.md)
+
+## Proof depends on
+
+- [Fenchel Conj](fenchel-conj.md)
 
 ## Sources
 

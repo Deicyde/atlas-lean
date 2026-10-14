@@ -14,6 +14,10 @@ The weighted Lambert series `f(q) = ∑_{n≥1} n qⁿ / (1 - qⁿ)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lambert FSummand](lambert-fsummand.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.LambertSeries](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,13 @@ Numeric upper bound on the same run, using both target and total-value cardinali
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Subset Sum](exact-subset-sum.md)
+
+## Proof depends on
+
+- [Exact Subset Sum Sums](exact-subset-sum-sums.md)
+- [Exact Subset Sum Sums length le sum](exact-subset-sum-sums-length-le-sum.md)
+- [Exact Subset Sum Sums length le target](exact-subset-sum-sums-length-le-target.md)
 
 ## Sources
 

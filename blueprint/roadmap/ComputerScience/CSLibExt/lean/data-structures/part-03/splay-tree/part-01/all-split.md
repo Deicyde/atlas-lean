@@ -14,7 +14,14 @@ part lies above `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [All](../../../part-02/binary-search-tree/part-01/all.md)
+- [Ordered](../../../part-02/binary-search-tree/part-01/ordered.md)
+- [Split](split.md)
+
+## Proof depends on
+
+- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
+- [All iff forall mem](../../../part-02/binary-search-tree/part-01/all-iff-forall-mem.md)
 
 ## Sources
 

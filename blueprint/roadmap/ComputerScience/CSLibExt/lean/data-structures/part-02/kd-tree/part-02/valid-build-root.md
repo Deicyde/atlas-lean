@@ -13,7 +13,12 @@ A tree built from axis `0` satisfies the kd invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](../part-01/valid.md)
+- [Build Root](build-root.md)
+
+## Proof depends on
+
+- [Valid build](../part-01/valid-build.md)
 
 ## Sources
 

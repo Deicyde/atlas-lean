@@ -13,7 +13,7 @@ lean: MetaMathlibExt.wardUnitsCarry_eq_div
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ward Units Carry](ward-units-carry.md)
 
 ## Sources
 

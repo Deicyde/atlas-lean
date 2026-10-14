@@ -13,7 +13,7 @@ The backing array is the selected replacement followed by canonical sift-up.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decrease Key](decrease-key.md)
 
 ## Sources
 

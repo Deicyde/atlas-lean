@@ -13,7 +13,8 @@ A same-universe package witnesses algebraicity of `M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Algebraic Representation Some Field](algebraic-representation-some-field.md)
+- [Is Algebraic](is-algebraic.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The dual Boolean function `f⋆ x = !(f (xᶜ))`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Boolean Vector Complement](boolean-vector-complement.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Order.BooleanFunction.SelfDual](../../../../../sources/v2/MathlibExt.md)

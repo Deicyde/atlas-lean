@@ -30,6 +30,10 @@ finite-etale claim about its factors.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Quotient Inf Alg Equiv Pi Quotient](quotient-inf-alg-equiv-pi-quotient.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Polynomial.AdjoinRootTensorProduct](../../../../../sources/v2/MathlibExt.md)

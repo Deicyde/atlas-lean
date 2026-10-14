@@ -14,6 +14,13 @@ Blaschke selection yields a convex cover attaining the infimum.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Universal Convex Cover](is-universal-convex-cover.md)
+- [Plane](plane.md)
+- [Lebesgue Universal Covering Constant](lebesgue-universal-covering-constant.md)
+- [Planar Area](planar-area.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.LebesgueUniversalCoveringConstantWanted](../../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,11 @@ Value at prime powers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jordan Totient](jordan-totient.md)
+
+## Proof depends on
+
+- [Jordan Totient eq prod factorization](jordan-totient-eq-prod-factorization.md)
 
 ## Sources
 

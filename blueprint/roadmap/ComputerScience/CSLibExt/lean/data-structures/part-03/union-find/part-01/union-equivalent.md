@@ -13,7 +13,14 @@ lean: Cslib.Algorithms.Lean.UnionFind.union_equivalent
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equivalent](equivalent.md)
+- [Forest](forest.md)
+- [Union](union.md)
+
+## Proof depends on
+
+- [Find](find.md)
+- [Find union](find-union.md)
 
 ## Sources
 

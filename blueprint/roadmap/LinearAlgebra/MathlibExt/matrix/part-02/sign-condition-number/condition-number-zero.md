@@ -14,7 +14,7 @@ condition number under the singular convention.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Condition Number](condition-number.md)
 
 ## Sources
 

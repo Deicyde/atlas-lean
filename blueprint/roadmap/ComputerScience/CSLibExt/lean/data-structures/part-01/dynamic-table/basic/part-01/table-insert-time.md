@@ -13,7 +13,8 @@ Count the new payload write and exactly the old-item writes on a full resize.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](table.md)
+- [Table Insert](table-insert.md)
 
 ## Sources
 

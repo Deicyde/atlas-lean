@@ -13,7 +13,13 @@ Membership is preserved by insertion of any element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](van-emde-boas.md)
+- [Insert](insert.md)
+- [Member](member.md)
+
+## Proof depends on
+
+- [Member insert](member-insert.md)
 
 ## Sources
 

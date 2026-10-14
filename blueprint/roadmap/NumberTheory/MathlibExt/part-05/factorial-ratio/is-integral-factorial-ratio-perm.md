@@ -13,7 +13,12 @@ The predicate is invariant under permuting both tuples.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Integral Factorial Ratio](is-integral-factorial-ratio.md)
+
+## Proof depends on
+
+- [Is Integral Factorial Ratio perm left](is-integral-factorial-ratio-perm-left.md)
+- [Is Integral Factorial Ratio perm right](is-integral-factorial-ratio-perm-right.md)
 
 ## Sources
 

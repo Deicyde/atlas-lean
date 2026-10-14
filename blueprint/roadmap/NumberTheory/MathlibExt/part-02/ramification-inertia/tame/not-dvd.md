@@ -13,7 +13,11 @@ The characteristic/index part of tame ramification.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Tamely Ramified At](is-tamely-ramified-at.md)
+
+## Proof depends on
+
+- [Is Residue Separable At](is-residue-separable-at.md)
 
 ## Sources
 

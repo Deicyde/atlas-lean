@@ -13,7 +13,7 @@ The quotient cycle count is the number of nontrivial cycles plus fixed points.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cycle Quotient Count](cycle-quotient-count.md)
 
 ## Sources
 

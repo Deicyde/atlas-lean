@@ -13,7 +13,18 @@ Insertion preserves the red invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Red Ok](../part-01/red-ok.md)
+- [Tree](../part-01/tree.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Almost Red Ok](../part-01/almost-red-ok.md)
+- [Color](../part-01/color.md)
+- [Balance](../part-01/balance.md)
+- [Color Of](../part-01/color-of.md)
+- [Ins](ins.md)
+- [Make Black](make-black.md)
 
 ## Sources
 

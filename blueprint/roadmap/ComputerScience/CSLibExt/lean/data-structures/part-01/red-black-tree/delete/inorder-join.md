@@ -13,7 +13,7 @@ The inorder traversal of a splice appends the two traversals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Join](join.md)
 
 ## Sources
 

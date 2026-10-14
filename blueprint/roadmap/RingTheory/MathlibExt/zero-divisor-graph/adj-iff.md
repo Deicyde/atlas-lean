@@ -13,7 +13,8 @@ Adjacency is distinctness plus zero product in source orientation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertex](vertex.md)
+- [Zero Divisor Graph](zero-divisor-graph.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Convex Cover Area Infimum](../part-01/convex-cover-area-infimum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.MoserWormCover](../../../../../sources/v2/MathlibExt.md)

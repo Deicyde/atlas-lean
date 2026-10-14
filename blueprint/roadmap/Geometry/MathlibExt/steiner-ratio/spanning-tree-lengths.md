@@ -12,7 +12,11 @@ Lengths of spanning trees of `V`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
+
+## Proof depends on
+
+- [Total Length](total-length.md)
 
 ## Sources
 

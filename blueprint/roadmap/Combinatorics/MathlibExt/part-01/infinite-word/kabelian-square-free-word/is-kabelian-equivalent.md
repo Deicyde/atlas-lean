@@ -15,6 +15,10 @@ length `k - 1` agree and every factor of length `k` occurs equally often.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Word Factor Count](word-factor-count.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.KAbelianSquareFreeWord](../../../../../../sources/v2/MathlibExt.md)

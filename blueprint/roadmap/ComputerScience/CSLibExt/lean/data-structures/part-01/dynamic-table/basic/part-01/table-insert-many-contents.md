@@ -13,7 +13,16 @@ The sole insertion fold appends all payloads in their original array order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](table.md)
+- [Well Formed](well-formed.md)
+- [Contents](contents.md)
+- [Table Insert Many](table-insert-many.md)
+
+## Proof depends on
+
+- [Table Insert](table-insert.md)
+- [Table Insert contents](table-insert-contents.md)
+- [Table Insert well Formed](table-insert-well-formed.md)
 
 ## Sources
 

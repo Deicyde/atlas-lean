@@ -14,7 +14,12 @@ with an odd or even number of prime factors, and `0` when `n` is not squarefree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter5 Entry30 Signed Coeff](../part-01/chapter5-entry30-signed-coeff.md)
+
+## Proof depends on
+
+- [Chapter5 Entry30 Coeff](../part-01/chapter5-entry30-coeff.md)
+- [Chapter5 Entry30 Coeff of ne zero](../part-01/chapter5-entry30-coeff-of-ne-zero.md)
 
 ## Sources
 

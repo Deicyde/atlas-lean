@@ -14,7 +14,15 @@ exchange argument on structural tree cost.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Weight Tree](huffman-weight-tree.md)
+- [Path Cost](path-cost.md)
+- [Weights](weights.md)
+
+## Proof depends on
+
+- [Exists cherry contraction](exists-cherry-contraction.md)
+- [Height](height.md)
+- [Raise Pair](raise-pair.md)
 
 ## Sources
 

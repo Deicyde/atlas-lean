@@ -13,7 +13,12 @@ The lengths of finite Tribonacci-word approximants are monotone.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Letter](tribonacci-letter.md)
+- [Tribonacci Word Approx](tribonacci-word-approx.md)
+
+## Proof depends on
+
+- [Tribonacci Word Approx prefix](tribonacci-word-approx-prefix.md)
 
 ## Sources
 

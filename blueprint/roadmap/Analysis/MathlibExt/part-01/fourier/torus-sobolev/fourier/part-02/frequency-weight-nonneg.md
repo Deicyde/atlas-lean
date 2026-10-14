@@ -13,7 +13,8 @@ The weights are nonnegative squared integer frequencies.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frequency](../../basic/frequency.md)
+- [Frequency Weight](../../basic/frequency-weight.md)
 
 ## Sources
 

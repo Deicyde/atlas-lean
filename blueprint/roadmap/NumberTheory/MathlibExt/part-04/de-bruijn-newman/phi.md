@@ -14,6 +14,10 @@ Newman's kernel `Φ`, defined by its (absolutely convergent) series.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Phi Term](phi-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.DeBruijnNewman](../../../../../sources/v2/MathlibExt.md)

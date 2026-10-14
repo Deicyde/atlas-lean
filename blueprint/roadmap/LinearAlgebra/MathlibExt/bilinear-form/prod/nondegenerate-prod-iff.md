@@ -14,7 +14,7 @@ only if both factors are nondegenerate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prod](prod.md)
 
 ## Sources
 

@@ -14,7 +14,12 @@ lookup on the cache state is reordering by promotion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lru Cache](../part-01/lru-cache.md)
+- [Get](../part-01/get.md)
+
+## Proof depends on
+
+- [Erase Key](../part-01/erase-key.md)
 
 ## Sources
 

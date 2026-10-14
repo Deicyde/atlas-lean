@@ -14,6 +14,13 @@ The sequence gives the diagonal coefficients.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Vars](vars.md)
+- [A](a.md)
+- [P Poly](p-poly.md)
+- [Xyz Pow N](xyz-pow-n.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.OeisA002897Wanted](../../../../../sources/v2/WantedExt.md)

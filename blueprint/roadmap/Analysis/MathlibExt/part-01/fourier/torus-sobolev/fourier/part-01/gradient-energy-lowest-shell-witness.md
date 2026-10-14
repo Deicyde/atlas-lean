@@ -13,7 +13,17 @@ Its gradient energy, computed from the actual integral coefficients.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gradient Energy](../../basic/gradient-energy.md)
+- [Lowest Shell Witness](lowest-shell-witness.md)
+
+## Proof depends on
+
+- [Frequency](../../basic/frequency.md)
+- [Axis Frequency](axis-frequency.md)
+- [Fourier Coefficient](../../basic/fourier-coefficient.md)
+- [Fourier Coefficient lowest Shell Witness](fourier-coefficient-lowest-shell-witness.md)
+- [Frequency Weight](../../basic/frequency-weight.md)
+- [Lowest Shell](lowest-shell.md)
 
 ## Sources
 

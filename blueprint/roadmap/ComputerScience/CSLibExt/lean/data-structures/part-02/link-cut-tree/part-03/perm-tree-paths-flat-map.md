@@ -13,7 +13,14 @@ The preferred paths of a tree partition its vertex set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
+- [Tree Paths](tree-paths.md)
+
+## Proof depends on
+
+- [Decomp](decomp.md)
+- [Decomp perm](decomp-perm.md)
 
 ## Sources
 

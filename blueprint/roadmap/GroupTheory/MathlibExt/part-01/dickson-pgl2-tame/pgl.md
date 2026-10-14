@@ -14,6 +14,10 @@ The projective general linear group `PGL₂(K p)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [K](k.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.DicksonPGL2Tame](../../../../../sources/v2/MathlibExt.md)

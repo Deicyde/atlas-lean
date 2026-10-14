@@ -13,7 +13,13 @@ Inserting an absent key stores the requested height, raised to at least one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skip List](../part-01/skip-list.md)
+- [Height Of](../part-01/height-of.md)
+- [Insert](../part-01/insert.md)
+
+## Proof depends on
+
+- [Entry](../part-01/entry.md)
 
 ## Sources
 

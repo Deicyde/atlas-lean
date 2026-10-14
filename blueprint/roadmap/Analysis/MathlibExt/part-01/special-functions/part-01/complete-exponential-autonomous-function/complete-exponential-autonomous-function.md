@@ -22,6 +22,10 @@ polynomial family `completeBellPolynomial` (argument `i : Nat` standing for
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Complete Bell Polynomial](complete-bell-polynomial.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.CompleteExponentialAutonomousFunction](../../../../../../../sources/v2/MathlibExt.md)

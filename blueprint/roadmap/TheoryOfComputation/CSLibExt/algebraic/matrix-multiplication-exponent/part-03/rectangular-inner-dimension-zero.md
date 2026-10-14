@@ -13,7 +13,7 @@ Zero aspect is the inner dimension of an outer product.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectangular Inner Dimension](rectangular-inner-dimension.md)
 
 ## Sources
 

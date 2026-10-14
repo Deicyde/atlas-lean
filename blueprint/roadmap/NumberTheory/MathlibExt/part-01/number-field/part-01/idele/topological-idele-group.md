@@ -19,6 +19,11 @@ Upstream `NumberField.IdeleGroup` (`𝔸[R, K]ˣ`) is a distinct type.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Finite Idele Group](finite-idele-group.md)
+- [Infinite Idele Group](infinite-idele-group.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.Idele](../../../../../../../sources/v2/MathlibExt.md)

@@ -15,7 +15,11 @@ The generating function over `k` of the `b`-ary binomial coefficients
 
 ## Depends on
 
-This node has no prerequisites.
+- [B Ary Binomial Coefficient](../bary-binomial-coefficient/b-ary-binomial-coefficient.md)
+
+## Proof depends on
+
+- [B Ary Binomial Coefficient eq prod get D](../bary-binomial-coefficient/b-ary-binomial-coefficient-eq-prod-get-d.md)
 
 ## Sources
 

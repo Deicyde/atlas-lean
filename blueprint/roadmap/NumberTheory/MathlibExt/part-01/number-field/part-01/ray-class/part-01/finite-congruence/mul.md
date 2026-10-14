@@ -15,6 +15,11 @@ Congruence at the finite part is closed under multiplication.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Count span Singleton add ge of ne zero](count-span-singleton-add-ge-of-ne-zero.md)
+- [Ray Element count span Singleton eq zero](ray-element-count-span-singleton-eq-zero.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.FiniteCongruence](../../../../../../../../../sources/v2/MathlibExt.md)

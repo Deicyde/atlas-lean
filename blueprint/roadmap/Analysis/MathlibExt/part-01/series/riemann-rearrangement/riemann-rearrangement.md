@@ -14,7 +14,11 @@ prescribed real number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered Has Sum](ordered-has-sum.md)
+
+## Proof depends on
+
+- [Ordered Has Sum tendsto zero](ordered-has-sum-tendsto-zero.md)
 
 ## Sources
 

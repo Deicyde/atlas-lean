@@ -13,7 +13,7 @@ Membership in the maximal divergence set, unfolded.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dick Set](dick-set.md)
 
 ## Sources
 

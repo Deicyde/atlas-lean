@@ -13,7 +13,7 @@ Unfolding lemma for `IsIndependent`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Independent](is-independent.md)
 
 ## Sources
 

@@ -16,7 +16,11 @@ Proves `Wanted` entry `ramanujan_part1_ch2_entry6`. It follows from
 
 ## Depends on
 
-This node has no prerequisites.
+- [A](a.md)
+
+## Proof depends on
+
+- [Ramanujan part1 ch2 entry6 general](ramanujan-part1-ch2-entry6-general.md)
 
 ## Sources
 

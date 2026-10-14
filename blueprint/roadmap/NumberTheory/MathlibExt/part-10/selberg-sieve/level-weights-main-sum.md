@@ -13,7 +13,15 @@ The main sum of the squared level weights is the reciprocal of the level sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Level Sum](level-sum.md)
+- [Level Weights](level-weights.md)
+
+## Proof depends on
+
+- [Level Set](level-set.md)
+- [Level Sum ge one](level-sum-ge-one.md)
+- [Level Weights inner](level-weights-inner.md)
+- [Level Y](level-y.md)
 
 ## Sources
 

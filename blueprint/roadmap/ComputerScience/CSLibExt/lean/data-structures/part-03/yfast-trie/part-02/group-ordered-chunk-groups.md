@@ -13,7 +13,12 @@ Chunks appear in increasing order when the original list is strictly sorted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Group Ordered](../part-01/group-ordered.md)
+- [Chunk Groups](chunk-groups.md)
+
+## Proof depends on
+
+- [Flatten chunk Groups](flatten-chunk-groups.md)
 
 ## Sources
 

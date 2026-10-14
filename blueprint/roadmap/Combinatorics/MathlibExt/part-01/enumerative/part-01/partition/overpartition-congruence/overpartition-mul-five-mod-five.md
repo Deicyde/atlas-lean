@@ -21,6 +21,10 @@ Theorem (label thm1), lines 110–114.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Jacobi Triple Product](../../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/jacobi-triple-product.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.Partition.OverpartitionCongruence](../../../../../../../../sources/v2/MathlibExt.md)

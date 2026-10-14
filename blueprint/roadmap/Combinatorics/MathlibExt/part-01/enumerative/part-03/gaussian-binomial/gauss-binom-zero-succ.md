@@ -13,7 +13,7 @@ The `M = 0` case: `G(0, k+1) = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gauss Binom](gauss-binom.md)
 
 ## Sources
 

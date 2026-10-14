@@ -13,7 +13,8 @@ Every independent dominating set has size at least the independent domination nu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Indep Dominating](is-indep-dominating.md)
+- [Indep Domination Number](indep-domination-number.md)
 
 ## Sources
 

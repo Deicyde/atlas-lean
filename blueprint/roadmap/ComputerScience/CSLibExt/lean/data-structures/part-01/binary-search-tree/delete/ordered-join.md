@@ -14,7 +14,11 @@ smaller than every key of the right tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Join](join.md)
+
+## Proof depends on
+
+- [Mem join](mem-join.md)
 
 ## Sources
 

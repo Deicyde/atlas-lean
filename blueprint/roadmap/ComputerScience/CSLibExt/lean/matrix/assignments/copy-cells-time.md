@@ -13,7 +13,7 @@ A counted square-matrix copy executes exactly `n²` logical assignments.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Copy Cells](copy-cells.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ The left summand restricts to the original left-hand system.
 
 ## Depends on
 
-This node has no prerequisites.
+- [System Orthogonal Sum](system-orthogonal-sum.md)
+
+## Proof depends on
+
+- [System Orthogonal Sum apply](system-orthogonal-sum-apply.md)
 
 ## Sources
 

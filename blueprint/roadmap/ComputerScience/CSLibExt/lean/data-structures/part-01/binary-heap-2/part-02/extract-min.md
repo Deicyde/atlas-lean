@@ -12,7 +12,11 @@ Remove and return the minimum, if one exists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Heap](min-heap.md)
+
+## Proof depends on
+
+- [Extract Tail](extract-tail.md)
 
 ## Sources
 

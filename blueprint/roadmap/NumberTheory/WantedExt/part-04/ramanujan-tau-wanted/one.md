@@ -13,7 +13,7 @@ Normalisation check: `τ 1 = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Τ](untitled.md)
 
 ## Sources
 

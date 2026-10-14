@@ -15,6 +15,12 @@ Shevtsova2011 quotation at lines 141-148. The additive offset is 0.489, not 0.42
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Standardized Law](../../../MathlibExt/part-01/berry-esseen-model/part-01/is-standardized-law.md)
+- [Kolmogorov Error](../../../MathlibExt/part-01/berry-esseen-model/part-01/kolmogorov-error.md)
+- [Third Moment](../../../MathlibExt/part-01/berry-esseen-model/part-01/third-moment.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Probability.BerryEsseenConstantWanted](../../../../../sources/v2/WantedExt.md)

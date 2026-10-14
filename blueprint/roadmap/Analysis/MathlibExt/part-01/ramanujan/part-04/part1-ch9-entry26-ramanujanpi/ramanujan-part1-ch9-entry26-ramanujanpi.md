@@ -15,6 +15,10 @@ Entry 26 stated with the existing Entry 24 series terms and `Real.log`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter9 Boundary Log eq log](chapter9-boundary-log-eq-log.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch9Entry26Ramanujanpi](../../../../../../../sources/v2/MathlibExt.md)

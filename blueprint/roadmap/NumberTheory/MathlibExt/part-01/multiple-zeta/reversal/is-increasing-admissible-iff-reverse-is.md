@@ -13,7 +13,16 @@ Increasing admissibility is decreasing admissibility after reversing the index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
+- [Is Admissible](../index/is-admissible.md)
+- [Is Increasing Admissible](is-increasing-admissible.md)
+- [Reverse](reverse.md)
+
+## Proof depends on
+
+- [Entries](../index/entries.md)
+- [Is Admissible iff](../index/is-admissible-iff.md)
+- [Is Admissible](../index/is-admissible-2.md)
 
 ## Sources
 

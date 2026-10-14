@@ -13,7 +13,13 @@ A tree built from a list is ordered.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered](ordered.md)
+- [From List](from-list.md)
+
+## Proof depends on
+
+- [Ordered empty](ordered-empty.md)
+- [Ordered insert](ordered-insert.md)
 
 ## Sources
 

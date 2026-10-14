@@ -16,6 +16,10 @@ If `G` is finite and `Fintype.card G = p ^ a * q ^ b` for primes `p, q` and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Burnside paqb zero](burnside-paqb-zero.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb](../../../../../sources/v2/MathlibExt.md)

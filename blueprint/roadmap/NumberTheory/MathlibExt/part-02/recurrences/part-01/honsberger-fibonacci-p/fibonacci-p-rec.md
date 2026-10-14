@@ -13,7 +13,7 @@ Fibonacci `p`-numbers satisfy their defining recurrence above index `p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci P](fibonacci-p.md)
 
 ## Sources
 

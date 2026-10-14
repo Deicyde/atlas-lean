@@ -13,7 +13,7 @@ Each entry of a `G`-harmonic tuple is positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is GHarmonic](is-gharmonic.md)
 
 ## Sources
 

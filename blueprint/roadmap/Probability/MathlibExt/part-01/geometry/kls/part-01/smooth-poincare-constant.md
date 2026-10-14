@@ -14,6 +14,10 @@ The least simultaneous smooth-function Poincare bound, with infinity retained.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Smooth Poincare Bound](is-smooth-poincare-bound.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Geometry.KLS](../../../../../../../sources/v2/MathlibExt.md)

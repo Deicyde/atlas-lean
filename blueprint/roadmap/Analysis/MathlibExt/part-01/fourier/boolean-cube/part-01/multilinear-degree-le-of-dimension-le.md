@@ -13,7 +13,12 @@ Every function on an `n`-dimensional cube has Fourier degree at most `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](bool-cube.md)
+- [Multilinear Degree LE](multilinear-degree-le.md)
+
+## Proof depends on
+
+- [Bool Fourier Coeff](bool-fourier-coeff.md)
 
 ## Sources
 

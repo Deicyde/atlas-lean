@@ -15,7 +15,11 @@ subset of a compact product.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Carrier](carrier.md)
+
+## Proof depends on
+
+- [Is Closed carrier](is-closed-carrier.md)
 
 ## Sources
 

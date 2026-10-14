@@ -13,7 +13,16 @@ On an ordered tree, lookup agrees with membership in the key-value contents list
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Ordered](../part-01/ordered.md)
+- [Contents](../part-01/contents.md)
+- [Lookup](../part-01/lookup.md)
+
+## Proof depends on
+
+- [Mem Node](../part-01/mem-node.md)
+- [Lookup eq some iff](lookup-eq-some-iff.md)
+- [Mem contents](mem-contents.md)
 
 ## Sources
 

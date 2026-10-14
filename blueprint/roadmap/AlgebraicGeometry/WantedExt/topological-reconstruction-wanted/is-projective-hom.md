@@ -15,6 +15,10 @@ closed immersion into ℙⁿ_R.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proj To Spec](proj-to-spec.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.AlgebraicGeometry.TopologicalReconstructionWanted](../../../../sources/v2/WantedExt.md)

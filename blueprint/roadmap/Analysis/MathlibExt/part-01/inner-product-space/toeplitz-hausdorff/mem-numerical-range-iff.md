@@ -13,7 +13,7 @@ Membership in the numerical range, unfolded.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Numerical Range](numerical-range.md)
 
 ## Sources
 

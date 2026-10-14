@@ -13,7 +13,15 @@ The diagonal map from the global multiplicative group into the ideles is injecti
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Idele Group](finite-idele-group.md)
+- [Infinite Idele Group](infinite-idele-group.md)
+- [Topological Idele Group](topological-idele-group.md)
+- [Principal Embedding](principal-embedding.md)
+- [Local Integral Unit Subgroup](local-integral-unit-subgroup.md)
+
+## Proof depends on
+
+- [Units Equiv](units-equiv.md)
 
 ## Sources
 

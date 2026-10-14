@@ -13,7 +13,11 @@ The canonical Matrix view of the materialized result is `C + A * B`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recursive Matrix Accumulate](recursive-matrix-accumulate.md)
+
+## Proof depends on
+
+- [Recursive Matrix Accumulate apply](recursive-matrix-accumulate-apply.md)
 
 ## Sources
 

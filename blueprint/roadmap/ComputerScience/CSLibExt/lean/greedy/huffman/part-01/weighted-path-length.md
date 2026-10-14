@@ -12,7 +12,11 @@ The standard weighted external path length, with the root at depth zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](huffman-tree.md)
+
+## Proof depends on
+
+- [Total Weight](total-weight.md)
 
 ## Sources
 

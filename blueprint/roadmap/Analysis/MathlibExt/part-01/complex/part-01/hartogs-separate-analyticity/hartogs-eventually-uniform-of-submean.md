@@ -16,6 +16,11 @@ zero converge uniformly on a smaller concentric polydisc.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hartogs Polydisc Integral](hartogs-polydisc-integral.md)
+- [Hartogs Polydisc submean](hartogs-polydisc-submean.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.HartogsSeparateAnalyticity](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,13 @@ lean: Cslib.Algorithms.Lean.LruCache.get_size
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lru Cache](../part-01/lru-cache.md)
+- [Get](../part-01/get.md)
+- [Size](../part-01/size.md)
+
+## Proof depends on
+
+- [Get perm](get-perm.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ FIND preserves every rank and changes exactly the original-chain parent fields.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Find parent eq ite iterate](find-parent-eq-ite-iterate.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.UnionFind.Find](../../../../../../../../sources/v2/CSLibExt.md)

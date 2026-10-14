@@ -13,7 +13,13 @@ Every preferred path of a valid state has distinct vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Valid](valid.md)
+- [Paths](paths.md)
+
+## Proof depends on
+
+- [Nodup paths flat Map](nodup-paths-flat-map.md)
 
 ## Sources
 

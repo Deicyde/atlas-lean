@@ -12,7 +12,7 @@ The empty indexed queue has the canonical empty heap and no present identity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Min Queue](indexed-min-queue.md)
 
 ## Sources
 

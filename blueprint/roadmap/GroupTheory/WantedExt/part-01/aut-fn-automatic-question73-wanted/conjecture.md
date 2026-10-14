@@ -14,6 +14,10 @@ Question 7.3 [AMR-109-0302] (Farb - Problems on Mapping Class Groups and Related
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Automatic Group](is-automatic-group.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.AutFnAutomaticQuestion73Wanted](../../../../../sources/v2/WantedExt.md)

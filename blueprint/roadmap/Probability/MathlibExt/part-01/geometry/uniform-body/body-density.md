@@ -12,7 +12,7 @@ The actual normalized indicator density of a convex body.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Full Dimensional Body](../isotropic-constant/full-dimensional-body.md)
 
 ## Sources
 

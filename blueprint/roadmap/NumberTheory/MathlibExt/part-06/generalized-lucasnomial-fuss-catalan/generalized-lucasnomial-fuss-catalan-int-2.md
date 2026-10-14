@@ -23,6 +23,10 @@ Proves `Wanted` entry `generalized_lucasnomial_fuss_catalan_integral`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized lucasnomial fuss catalan integral general](generalized-lucasnomial-fuss-catalan-int.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.GeneralizedLucasnomialFussCatalan](../../../../../sources/v2/MathlibExt.md)

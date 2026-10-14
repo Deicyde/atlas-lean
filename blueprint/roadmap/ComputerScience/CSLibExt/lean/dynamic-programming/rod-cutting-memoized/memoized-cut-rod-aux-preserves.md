@@ -13,7 +13,11 @@ Known entries and every cell above the requested length are preserved.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Memoized Cut Rod Aux](memoized-cut-rod-aux.md)
+
+## Proof depends on
+
+- [Memoized Cut Rod Aux hit](memoized-cut-rod-aux-hit.md)
 
 ## Sources
 

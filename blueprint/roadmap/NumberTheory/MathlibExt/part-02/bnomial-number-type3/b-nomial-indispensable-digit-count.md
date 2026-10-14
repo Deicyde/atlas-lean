@@ -14,6 +14,10 @@ The number `ι(x)` of indispensable digits in a finite `b`-ary string.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is BNomial Indispensable Digit](is-bnomial-indispensable-digit.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.BNomialNumberType3](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ Reset returns the all-false bit list at the original width.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reset](reset.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ The sum of the potential-method charges for a sequence of operations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Operation](operation.md)
+
+## Proof depends on
+
+- [Charge](charge.md)
 
 ## Sources
 

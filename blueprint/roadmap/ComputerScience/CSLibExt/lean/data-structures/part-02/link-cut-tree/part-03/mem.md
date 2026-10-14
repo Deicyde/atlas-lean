@@ -12,7 +12,12 @@ lean: Cslib.Algorithms.Lean.LinkCutTree.State.Mem
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
 
 ## Sources
 

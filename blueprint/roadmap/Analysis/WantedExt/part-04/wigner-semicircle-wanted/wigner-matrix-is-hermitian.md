@@ -14,7 +14,7 @@ are symmetric in their arguments, and the entries are real).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wigner Matrix](wigner-matrix.md)
 
 ## Sources
 

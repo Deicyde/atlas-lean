@@ -16,6 +16,10 @@ jointly complex differentiable at every point of that product.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Differentiable At uncurry of separately differentiable of bounded](differentiable-at-uncurry-of-separately.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.HartogsSeparateAnalyticity](../../../../../../../sources/v2/MathlibExt.md)

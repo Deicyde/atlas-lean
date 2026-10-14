@@ -15,6 +15,10 @@ both directions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Between](is-between.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.Permutation.Betweenness](../../../../../../sources/v2/MathlibExt.md)

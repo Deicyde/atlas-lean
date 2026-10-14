@@ -13,7 +13,14 @@ One `union` costs at most the two certified input depths plus three visits/links
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](../part-01/forest.md)
+- [Union With Cost](../part-01/union-with-cost.md)
+
+## Proof depends on
+
+- [Find](../part-01/find.md)
+- [Find With Cost](../part-01/find-with-cost.md)
+- [Find With Cost time le depth](../part-01/find-with-cost-time-le-depth.md)
 
 ## Sources
 

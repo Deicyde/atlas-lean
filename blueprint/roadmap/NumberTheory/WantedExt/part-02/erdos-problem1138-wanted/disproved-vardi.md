@@ -14,6 +14,10 @@ Its disproof (companion).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Vardi Asymptotic](vardi-asymptotic.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem1138Wanted](../../../../../sources/v2/WantedExt.md)

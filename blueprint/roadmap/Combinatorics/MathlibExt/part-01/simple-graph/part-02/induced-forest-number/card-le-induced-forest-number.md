@@ -13,7 +13,7 @@ Any acyclic induced vertex set is bounded by the induced forest number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Induced Forest Number](induced-forest-number.md)
 
 ## Sources
 

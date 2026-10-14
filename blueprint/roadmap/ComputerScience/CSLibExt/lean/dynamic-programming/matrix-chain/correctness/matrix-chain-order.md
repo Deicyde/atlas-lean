@@ -12,7 +12,15 @@ Compute an optimal matrix-chain scalar cost and reconstruct one attaining tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../basic/cost.md)
+- [Result](../basic/result.md)
+
+## Proof depends on
+
+- [Parenthesization](../basic/parenthesization.md)
+- [Cols](../basic/cols.md)
+- [Rows](../basic/rows.md)
+- [Scalar Multiplication Cost](../basic/scalar-multiplication-cost.md)
 
 ## Sources
 

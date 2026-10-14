@@ -12,7 +12,7 @@ The height of a tree, computed from its leftmost spine.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
 
 ## Sources
 

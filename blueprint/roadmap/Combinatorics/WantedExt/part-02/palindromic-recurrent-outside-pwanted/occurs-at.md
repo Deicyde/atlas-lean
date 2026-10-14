@@ -12,7 +12,8 @@ A finite word occurs in an infinite word at position `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inf Word](inf-word.md)
+- [Sigma](sigma.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ A set of integers has two-sided natural density `α`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Int Partial Density](int-partial-density.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Data.Set.Density](../../../../../sources/v2/MathlibExt.md)

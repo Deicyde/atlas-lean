@@ -13,7 +13,7 @@ increasing chain `F_0 ⊂ F_1 ⊂ ⋯ ⊂ F_{n−1}` of faces with `faceDim F_k 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convex Polytope](convex-polytope.md)
 
 ## Sources
 

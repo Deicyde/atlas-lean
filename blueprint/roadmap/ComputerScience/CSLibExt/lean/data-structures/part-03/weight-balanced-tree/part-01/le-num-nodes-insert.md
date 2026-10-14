@@ -13,7 +13,12 @@ Insertion never decreases the size.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Balance](balance.md)
+- [Num Nodes balance](num-nodes-balance.md)
 
 ## Sources
 

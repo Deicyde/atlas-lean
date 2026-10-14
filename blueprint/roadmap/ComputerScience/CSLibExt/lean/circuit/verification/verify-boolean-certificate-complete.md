@@ -13,7 +13,13 @@ A satisfying input supplies an accepted certificate through the canonical trace.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Verify Boolean Certificate](verify-boolean-certificate.md)
+- [Boolean Interpretation](../../../../../Computability/CSLibExt/circuit/boolean/boolean-interpretation.md)
+- [Boolean Signature](../../../../../Computability/CSLibExt/circuit/boolean/boolean-signature.md)
+
+## Proof depends on
+
+- [Verify Boolean Certificate iff](verify-boolean-certificate-iff.md)
 
 ## Sources
 

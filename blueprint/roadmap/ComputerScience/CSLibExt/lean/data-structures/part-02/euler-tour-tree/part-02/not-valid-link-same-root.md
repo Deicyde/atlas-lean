@@ -14,7 +14,14 @@ trees with the same root duplicates that vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Valid](../part-01/valid.md)
+- [Link](../part-01/link.md)
+
+## Proof depends on
+
+- [Vertices](../part-01/vertices.md)
+- [Vertices node](../part-01/vertices-node.md)
 
 ## Sources
 

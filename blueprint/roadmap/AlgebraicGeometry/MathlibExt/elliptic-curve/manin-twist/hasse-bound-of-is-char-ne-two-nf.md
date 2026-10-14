@@ -15,6 +15,12 @@ Hasse's bound for an elliptic Weierstrass equation in odd-characteristic normal 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Manin Degree Data](../manin-sequence/manin-degree-data.md)
+- [Hasse bound](../manin-sequence/hasse-bound.md)
+- [Manin degree data of is Char Ne Two NF](manin-degree-data-of-is-char-ne-two-nf.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.EllipticCurve.ManinTwist](../../../../../sources/v2/MathlibExt.md)

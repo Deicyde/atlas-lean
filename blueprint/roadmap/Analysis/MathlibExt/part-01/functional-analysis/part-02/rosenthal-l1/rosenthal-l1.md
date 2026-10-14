@@ -22,7 +22,7 @@ Albiac and Kalton, Sections 10.1–10.2, and Farahat's 1974 proof.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Uniform L1 Lower Bound](has-uniform-l1-lower-bound.md)
 
 ## Sources
 

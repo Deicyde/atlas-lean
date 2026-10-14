@@ -14,7 +14,17 @@ heights differ by at most two restores AVL balance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../part-01/cost.md)
+- [Entry](../part-01/entry.md)
+- [Tree](../part-01/tree.md)
+- [Balanced Prop](../part-02/balanced-prop.md)
+- [Mk Node](../part-01/mk-node.md)
+- [Rebalance With Cost](../part-02/rebalance-with-cost.md)
+
+## Proof depends on
+
+- [Balanced Prop rebalance node](balanced-prop-rebalance-node.md)
+- [Node Max](../part-01/node-max.md)
 
 ## Sources
 

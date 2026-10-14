@@ -13,7 +13,13 @@ The subclass infimum is nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Value](bernoulli-value.md)
+
+## Proof depends on
+
+- [Is Bernoulli Admissible](is-bernoulli-admissible.md)
+- [Bernoulli Admissible nonempty](bernoulli-admissible-nonempty.md)
+- [Is Bernoulli Admissible nonnegative](is-bernoulli-admissible-nonnegative.md)
 
 ## Sources
 

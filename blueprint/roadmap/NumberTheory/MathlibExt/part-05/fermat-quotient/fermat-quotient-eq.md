@@ -13,7 +13,7 @@ Evaluation formula for the Fermat quotient.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fermat Quotient](fermat-quotient.md)
 
 ## Sources
 

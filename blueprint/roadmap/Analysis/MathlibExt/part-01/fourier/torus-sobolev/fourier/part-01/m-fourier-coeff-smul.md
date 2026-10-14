@@ -13,7 +13,7 @@ Scalar linearity of the actual coefficient integral.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frequency](../../basic/frequency.md)
 
 ## Sources
 

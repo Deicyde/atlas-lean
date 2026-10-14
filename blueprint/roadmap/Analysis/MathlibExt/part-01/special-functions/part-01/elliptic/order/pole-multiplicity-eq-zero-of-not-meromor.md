@@ -14,7 +14,7 @@ This is an explicitly local statement: no global hypothesis on `f` is used.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pole Multiplicity](pole-multiplicity.md)
 
 ## Sources
 

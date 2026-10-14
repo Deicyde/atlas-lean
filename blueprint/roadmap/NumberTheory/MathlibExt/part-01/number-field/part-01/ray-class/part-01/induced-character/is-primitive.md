@@ -12,7 +12,11 @@ A character is primitive if induced only from the same modulus.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Character](../character/ray-class-character.md)
+
+## Proof depends on
+
+- [Is Induced By](is-induced-by.md)
 
 ## Sources
 

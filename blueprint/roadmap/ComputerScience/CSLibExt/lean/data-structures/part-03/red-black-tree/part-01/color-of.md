@@ -12,7 +12,8 @@ The color of the root of a tree; the empty tree counts as black.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Color](color.md)
+- [Tree](tree.md)
 
 ## Sources
 

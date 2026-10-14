@@ -20,6 +20,10 @@ Proves `Wanted` entry `midy_theorem`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Midy theorem general](midy-theorem-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Digits.Midy](../../../../../../sources/v2/MathlibExt.md)

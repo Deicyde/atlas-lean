@@ -12,7 +12,7 @@ A smooth parametrised knot: a regular smooth simple closed curve.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Space](space.md)
 
 ## Sources
 

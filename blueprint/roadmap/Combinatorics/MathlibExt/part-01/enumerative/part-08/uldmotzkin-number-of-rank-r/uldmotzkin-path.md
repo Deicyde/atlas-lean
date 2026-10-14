@@ -19,6 +19,11 @@ statement `jis_a4c8498023ac94f370aead45`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Motzkin Path](is-motzkin-path.md)
+- [ULDMotzkin Step](uldmotzkin-step.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.ULDMotzkinNumberOfRankR](../../../../../../../sources/v2/MathlibExt.md)

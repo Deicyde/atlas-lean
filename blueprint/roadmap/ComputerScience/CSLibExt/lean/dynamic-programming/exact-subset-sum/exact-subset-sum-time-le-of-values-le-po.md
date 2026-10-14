@@ -13,7 +13,11 @@ Bounded numeric input values give the source's selected-event polynomial bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Subset Sum](exact-subset-sum.md)
+
+## Proof depends on
+
+- [Exact Subset Sum time le numeric](exact-subset-sum-time-le-numeric.md)
 
 ## Sources
 

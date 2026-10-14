@@ -13,7 +13,11 @@ Membership in `I_k(Z)` implies vanishing of the extended polynomial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ideal Over K](ideal-over-k.md)
+
+## Proof depends on
+
+- [Mem ideal Over K iff](mem-ideal-over-k-iff.md)
 
 ## Sources
 

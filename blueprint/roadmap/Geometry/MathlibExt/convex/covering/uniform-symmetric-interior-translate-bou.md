@@ -14,6 +14,12 @@ The uniform bound restricted to centrally symmetric convex bodies.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Covered By Interior Translates](covered-by-interior-translates.md)
+- [Is Centrally Symmetric](is-centrally-symmetric.md)
+- [Is Convex Body](is-convex-body.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Convex.Covering](../../../../../sources/v2/MathlibExt.md)

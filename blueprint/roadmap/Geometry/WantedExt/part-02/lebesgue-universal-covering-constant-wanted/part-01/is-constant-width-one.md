@@ -12,7 +12,11 @@ Nonempty compact convex planar sets of width one in every unit direction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
+
+## Proof depends on
+
+- [Directional Width](directional-width.md)
 
 ## Sources
 

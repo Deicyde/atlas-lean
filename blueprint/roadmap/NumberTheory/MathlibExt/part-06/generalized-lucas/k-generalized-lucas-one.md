@@ -13,7 +13,7 @@ Source clause: value `1` at index `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Generalized Lucas](k-generalized-lucas.md)
 
 ## Sources
 

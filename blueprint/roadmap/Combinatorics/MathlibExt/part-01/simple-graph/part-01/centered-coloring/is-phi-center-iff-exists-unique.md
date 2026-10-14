@@ -13,7 +13,7 @@ Characterization of centers via unique existence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Phi Center](is-phi-center.md)
 
 ## Sources
 

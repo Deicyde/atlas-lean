@@ -13,7 +13,13 @@ Looking up an inserted key returns its new value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trie](trie.md)
+- [Insert](insert.md)
+- [Lookup](lookup.md)
+
+## Proof depends on
+
+- [Empty](empty.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ Primary coefficients: `a_k = 2π c_k`, where `c_k` uses normalized Haar measure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frequency](frequency.md)
+- [Torus](torus.md)
+
+## Proof depends on
+
+- [Unit Representative](unit-representative.md)
 
 ## Sources
 

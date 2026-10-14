@@ -13,7 +13,7 @@ An `l`-bit prefix fits in `l` bits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prefix Of](prefix-of.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ Building from a list preserves every occurrence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elements](../part-02/elements.md)
+- [Of List](of-list.md)
+
+## Proof depends on
+
+- [Dary Min Heap](../part-02/dary-min-heap.md)
+- [Elements push](../part-02/elements-push.md)
+- [Push](../part-02/push.md)
 
 ## Sources
 

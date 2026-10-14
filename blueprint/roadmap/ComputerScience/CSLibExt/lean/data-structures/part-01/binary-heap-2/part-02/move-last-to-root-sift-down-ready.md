@@ -14,7 +14,14 @@ violation at the root whenever at least two entries were present.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heap Ordered](../part-01/heap-ordered.md)
+- [Sift Down Ready](../part-01/sift-down-ready.md)
+- [Move Last To Root](move-last-to-root.md)
+
+## Proof depends on
+
+- [Heap Parent](../part-01/heap-parent.md)
+- [Heap Parent lt size](../part-01/heap-parent-lt-size.md)
 
 ## Sources
 

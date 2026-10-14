@@ -16,6 +16,10 @@ integrability set for MGF uniqueness.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integrable exp mul gamma Measure](integrable-exp-mul-gamma-measure.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.Gamma](../../../../../../sources/v2/MathlibExt.md)

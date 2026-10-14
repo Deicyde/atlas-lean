@@ -15,6 +15,10 @@ Existence of subquadratic-size universal point sets for planar graphs
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Universal Point Set](is-universal-point-set.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.UniversalPointSetsSubquadraticWanted](../../../../sources/v2/WantedExt.md)

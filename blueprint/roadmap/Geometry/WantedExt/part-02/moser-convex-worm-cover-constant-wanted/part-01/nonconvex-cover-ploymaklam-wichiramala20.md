@@ -15,6 +15,10 @@ adaptation.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Universal Cover](../../../../MathlibExt/moser-worm-cover/part-01/is-universal-cover.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.MoserConvexWormCoverConstantWanted](../../../../../../sources/v2/WantedExt.md)

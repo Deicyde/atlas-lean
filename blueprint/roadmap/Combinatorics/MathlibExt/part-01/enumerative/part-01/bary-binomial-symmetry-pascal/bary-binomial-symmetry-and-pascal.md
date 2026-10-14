@@ -16,6 +16,13 @@ digits are symmetric and, when nonzero, satisfy Pascal's recurrence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [B Ary Binomial Coefficient](../bary-binomial-coefficient/b-ary-binomial-coefficient.md)
+- [B Ary Binomial Coefficient eq prod div pow](b-ary-binomial-coefficient-eq-prod-div-p.md)
+- [B Ary Binomial Coefficient pascal](b-ary-binomial-coefficient-pascal.md)
+- [B Ary Binomial Coefficient symm](b-ary-binomial-coefficient-symm.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.BAryBinomialSymmetryPascal](../../../../../../../sources/v2/MathlibExt.md)

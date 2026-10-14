@@ -12,7 +12,8 @@ Validate one raw edge at a supplied input ordinal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Raw Edge](raw-edge.md)
+- [Weighted Edge](weighted-edge.md)
 
 ## Sources
 

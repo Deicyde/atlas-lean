@@ -13,7 +13,12 @@ The linear action is multiplicative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gal Linear Map](gal-linear-map.md)
+- [Torsion Pts](torsion-pts.md)
+
+## Proof depends on
+
+- [Gal Point Hom apply mul](gal-point-hom-apply-mul.md)
 
 ## Sources
 

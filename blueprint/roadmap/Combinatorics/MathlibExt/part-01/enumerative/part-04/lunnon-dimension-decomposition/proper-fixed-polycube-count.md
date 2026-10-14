@@ -16,6 +16,10 @@ counted as `Nat.card` of canonical representatives. Asinowski et al., JIS 15
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proper Fixed Polycube](proper-fixed-polycube.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.LunnonDimensionDecomposition](../../../../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,7 @@ additions/subtractions exactly. This does not charge allocation or bit operation
 
 ## Depends on
 
-This node has no prerequisites.
+- [Basic](strassen-matrix-accumulate.md)
 
 ## Sources
 

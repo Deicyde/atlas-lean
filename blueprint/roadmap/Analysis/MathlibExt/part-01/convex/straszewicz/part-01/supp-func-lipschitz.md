@@ -13,7 +13,11 @@ The support function is Lipschitz on bounded sets.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Supp Func](supp-func.md)
+
+## Proof depends on
+
+- [Supp Func attain](supp-func-attain.md)
 
 ## Sources
 

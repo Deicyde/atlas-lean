@@ -16,6 +16,10 @@ extension of its fraction field is a DVR.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Local Ring of is Adic Complete](is-local-ring-of-is-adic-complete.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DiscreteValuationRing.IntegralClosureComplete](../../../../../sources/v2/MathlibExt.md)

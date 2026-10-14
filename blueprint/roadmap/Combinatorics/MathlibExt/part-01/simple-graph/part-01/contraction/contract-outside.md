@@ -14,6 +14,10 @@ Contract the complement of `D` to one vertex.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Collapse Outside](collapse-outside.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Contraction](../../../../../../../sources/v2/MathlibExt.md)

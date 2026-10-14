@@ -21,6 +21,11 @@ bound to `IsBoundedValueDistribution`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Bounded Value Distribution](is-bounded-value-distribution.md)
+- [Root Mult Sph](root-mult-sph.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.TuranThreeValueBoundedDistributionWanted](../../../../../sources/v2/WantedExt.md)

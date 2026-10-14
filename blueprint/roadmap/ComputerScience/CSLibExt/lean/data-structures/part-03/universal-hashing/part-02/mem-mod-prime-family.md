@@ -13,7 +13,9 @@ Membership in the `Finset` of distinct mod-prime functions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mod Prime Index](../part-01/mod-prime-index.md)
+- [Mod Prime Family](../part-01/mod-prime-family.md)
+- [Mod Prime Hashes](../part-01/mod-prime-hashes.md)
 
 ## Sources
 

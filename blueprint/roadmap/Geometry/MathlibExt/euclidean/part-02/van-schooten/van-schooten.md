@@ -16,6 +16,10 @@ circumcircle on arc `AB` not containing `C` satisfies `PA + PB = PC`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Van Schooten general](van-schooten-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.VanSchooten](../../../../../../sources/v2/MathlibExt.md)

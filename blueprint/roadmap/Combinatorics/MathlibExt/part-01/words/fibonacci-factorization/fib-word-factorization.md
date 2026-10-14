@@ -14,7 +14,11 @@ Prepending `01` to the concatenation `fibWord 0 ++ ⋯ ++ fibWord (N - 1)` gives
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Word](../../infinite-word/fibonacci-word/fib-word.md)
+
+## Proof depends on
+
+- [Fib Word add two](fib-word-add-two.md)
 
 ## Sources
 

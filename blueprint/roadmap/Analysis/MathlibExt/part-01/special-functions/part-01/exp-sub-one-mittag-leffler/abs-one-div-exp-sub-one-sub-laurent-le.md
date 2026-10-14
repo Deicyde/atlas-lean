@@ -16,6 +16,10 @@ The truncated Laurent expansion of the Bose-Einstein kernel has a global
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [One div exp sub one eq tsum](one-div-exp-sub-one-eq-tsum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.ExpSubOneMittagLeffler](../../../../../../../sources/v2/MathlibExt.md)

@@ -15,7 +15,11 @@ presentation is the free-group Frobenius map. Proved through the public
 
 ## Depends on
 
-This node has no prerequisites.
+- [Artin Map](artin-map.md)
+
+## Proof depends on
+
+- [Free Group To Coprime ker le free Group To Gal ker](free-group-to-coprime-ker-le-free-group.md)
 
 ## Sources
 

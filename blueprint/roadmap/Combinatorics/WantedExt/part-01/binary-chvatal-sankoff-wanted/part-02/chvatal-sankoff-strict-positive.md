@@ -14,6 +14,10 @@ Chvátal--Sankoff's strict positive lower bound.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [C31a](../part-01/c31a.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.BinaryChvatalSankoffWanted](../../../../../../sources/v2/WantedExt.md)

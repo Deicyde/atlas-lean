@@ -13,7 +13,7 @@ Positive even inputs save two comparisons by initializing from one ordered pair.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Max](min-max.md)
 
 ## Sources
 

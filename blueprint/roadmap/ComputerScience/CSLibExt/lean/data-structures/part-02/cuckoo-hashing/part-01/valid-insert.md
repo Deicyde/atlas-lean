@@ -13,7 +13,14 @@ A successful insertion or replacement preserves the placement invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cuckoo Hashing](cuckoo-hashing.md)
+- [Valid](valid.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Insert Aux](insert-aux.md)
+- [Slot Has Key](slot-has-key.md)
 
 ## Sources
 

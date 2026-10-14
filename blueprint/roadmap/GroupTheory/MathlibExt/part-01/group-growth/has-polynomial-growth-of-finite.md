@@ -14,7 +14,12 @@ by the (constant) order of the group, i.e. by a polynomial of degree `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Polynomial Growth](has-polynomial-growth.md)
+
+## Proof depends on
+
+- [Growth](growth.md)
+- [Growth le card](growth-le-card.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Two adjacency matrices with the same edges everywhere are equal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adjacency Matrix](adjacency-matrix.md)
+- [Has Edge](has-edge.md)
 
 ## Sources
 

@@ -22,6 +22,10 @@ Proves `Wanted` entry `dilcher_finite_multiple_harmonic_identity`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dilcher finite multiple harmonic identity general](dilcher-finite-multiple-harmonic-identit.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.DilcherFiniteMultipleHarmonic](../../../../../sources/v2/MathlibExt.md)

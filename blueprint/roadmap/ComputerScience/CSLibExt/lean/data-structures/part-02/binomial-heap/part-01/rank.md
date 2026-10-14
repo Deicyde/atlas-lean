@@ -12,7 +12,7 @@ The stored rank of a binomial tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Tree](binomial-tree.md)
 
 ## Sources
 

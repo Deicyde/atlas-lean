@@ -13,7 +13,14 @@ In a heap-ordered tree, the root is no greater than every member.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](../binary-search-tree/part-01/mem.md)
+- [Heap Ordered](heap-ordered.md)
+- [Root](root.md)
+
+## Proof depends on
+
+- [All](../binary-search-tree/part-01/all.md)
+- [All iff forall mem](../binary-search-tree/part-01/all-iff-forall-mem.md)
 
 ## Sources
 

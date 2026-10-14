@@ -18,6 +18,23 @@ with `β` an algebraic integer.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Irr](../character-orthogonality/part-01/irr.md)
+- [Char Fun](../character-orthogonality/part-01/char-fun.md)
+- [Char Fun eq rep Bundle char](../character-orthogonality/part-01/char-fun-eq-rep-bundle-char.md)
+- [Char Fun inj](../character-orthogonality/part-01/char-fun-inj.md)
+- [Char Fun one](../character-orthogonality/part-01/char-fun-one.md)
+- [Char Fun triv](../character-orthogonality/part-01/char-fun-triv.md)
+- [Rep Bundle](../character-orthogonality/part-01/rep-bundle.md)
+- [Triv](../character-orthogonality/part-01/triv.md)
+- [Card eq prime of nontrivial linear](card-eq-prime-of-nontrivial-linear.md)
+- [Char zero of nonlinear of coprime](char-zero-of-nonlinear-of-coprime.md)
+- [Character is Integral](../killing-lemma/character-is-integral.md)
+- [False of one add prime mul is Integral](false-of-one-add-prime-mul-is-integral.md)
+- [Irreducible of simple fdrep](../character-orthogonality/part-01/irreducible-of-simple-fdrep.md)
+- [Regular character vanishes](../character-orthogonality/part-02/regular-character-vanishes.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.SimplePrime](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,10 @@ Table lookup agrees with lookup in its bucket-independent finite-map abstraction
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hash Table](hash-table.md)
+- [Valid](valid.md)
+- [Abstraction](abstraction.md)
+- [Lookup](lookup.md)
 
 ## Sources
 

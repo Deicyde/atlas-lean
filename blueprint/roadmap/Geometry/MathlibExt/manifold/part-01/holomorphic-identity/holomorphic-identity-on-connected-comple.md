@@ -19,6 +19,10 @@ Proves `Wanted` entry `holomorphic_identity_on_connected_complex_manifold`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eq of eq On of is Open](eq-of-eq-on-of-is-open.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.HolomorphicIdentity](../../../../../../sources/v2/MathlibExt.md)

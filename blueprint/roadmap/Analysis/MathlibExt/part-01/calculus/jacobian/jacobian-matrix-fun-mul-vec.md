@@ -13,7 +13,11 @@ The Jacobian of a matrix acting by multiplication is the matrix itself at every 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobian Matrix](jacobian-matrix.md)
+
+## Proof depends on
+
+- [Jacobian Matrix apply of differentiable At](jacobian-matrix-apply-of-differentiable.md)
 
 ## Sources
 

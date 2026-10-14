@@ -16,6 +16,10 @@ Natural-number version of
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Choose le top pow prime Counting of no large](../choose-factorization/choose-le-top-pow-prime-counting-of-no-l.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.LargePrimeCriteria](../../../../../../sources/v2/MathlibExt.md)

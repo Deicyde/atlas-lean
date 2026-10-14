@@ -14,7 +14,12 @@ This is the invariant maintained by `insert` and `fromList`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](../part-01/btree.md)
+
+## Proof depends on
+
+- [Ordered](../part-01/ordered.md)
+- [Valid Root](../part-01/valid-root.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ pattern `ω`: keep exactly the product edges with `ω e = true`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prod Graph](prod-graph.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.ProductBondPercolation](../../../../../sources/v2/MathlibExt.md)

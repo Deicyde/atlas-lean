@@ -12,7 +12,7 @@ Entropy and covariance are computed relative to the intrinsic affine span.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Intrinsic Log Concave Law](intrinsic-log-concave-law.md)
 
 ## Sources
 

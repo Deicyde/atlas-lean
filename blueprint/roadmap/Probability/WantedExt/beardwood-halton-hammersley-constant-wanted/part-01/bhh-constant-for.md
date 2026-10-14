@@ -14,7 +14,11 @@ unit-square value satisfies that characterization and is unique. No existence th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar Point](planar-point.md)
+
+## Proof depends on
+
+- [Bhh Limit Values](bhh-limit-values.md)
 
 ## Sources
 

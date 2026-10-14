@@ -12,7 +12,7 @@ lean: MathlibExt.GameTheory.ShapleyValue.IsNullPlayer
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coop Game](coop-game.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ input values repeat.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Randomly Permute](../basic/randomly-permute.md)
 
 ## Sources
 

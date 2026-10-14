@@ -15,6 +15,10 @@ Bottom-minus-top of `1/s`: `2i·Δarctan` (log parts cancel).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integral div add sq](integral-div-add-sq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.RectilinearCycle](../../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ Every singleton is odd independent in any simple graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Odd Independent](is-odd-independent.md)
 
 ## Sources
 

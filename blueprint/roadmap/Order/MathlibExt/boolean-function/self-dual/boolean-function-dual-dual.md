@@ -13,7 +13,12 @@ Boolean-function duality is involutive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boolean Function Dual](boolean-function-dual.md)
+
+## Proof depends on
+
+- [Boolean Vector Complement](boolean-vector-complement.md)
+- [Boolean Vector Complement complement](boolean-vector-complement-complement.md)
 
 ## Sources
 

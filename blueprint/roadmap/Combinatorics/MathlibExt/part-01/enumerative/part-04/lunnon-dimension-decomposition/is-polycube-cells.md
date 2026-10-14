@@ -12,7 +12,11 @@ A polycube as a nonempty finite cell set connected through face adjacency.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice Cell](lattice-cell.md)
+
+## Proof depends on
+
+- [Face Adjacent](face-adjacent.md)
 
 ## Sources
 

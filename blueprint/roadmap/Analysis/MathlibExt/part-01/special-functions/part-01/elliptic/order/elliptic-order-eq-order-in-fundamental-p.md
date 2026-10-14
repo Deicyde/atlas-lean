@@ -14,7 +14,9 @@ count at vertex `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Elliptic Function](../function/is-elliptic-function.md)
+- [Elliptic Order](elliptic-order.md)
+- [Elliptic Order In Fundamental Parallelogram](elliptic-order-in-fundamental-parallelog.md)
 
 ## Sources
 

@@ -15,7 +15,12 @@ slots, this says exactly that the table is full with other keys.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Open Addressing](../part-01/open-addressing.md)
+- [Insert](../part-01/insert.md)
+
+## Proof depends on
+
+- [Insert Aux](../part-01/insert-aux.md)
 
 ## Sources
 

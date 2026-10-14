@@ -13,7 +13,8 @@ The initially unallocated table has no slots and no logical items.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](table.md)
+- [Empty](empty.md)
 
 ## Sources
 

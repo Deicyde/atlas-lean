@@ -14,7 +14,11 @@ The image of a `d`-Lipschitz parametrizable set under a Lipschitz map is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lipschitz Parametrizable](is-lipschitz-parametrizable.md)
+
+## Proof depends on
+
+- [Unit Cube](unit-cube.md)
 
 ## Sources
 

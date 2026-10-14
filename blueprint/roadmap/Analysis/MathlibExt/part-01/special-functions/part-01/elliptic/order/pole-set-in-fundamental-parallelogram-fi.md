@@ -15,7 +15,16 @@ finiteness of divisor support there.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Elliptic Function](../function/is-elliptic-function.md)
+- [Pole Set In Fundamental Parallelogram](pole-set-in-fundamental-parallelogram.md)
+
+## Proof depends on
+
+- [Fundamental Parallelogram](../fundamental-parallelogram/fundamental-parallelogram.md)
+- [Is Bounded fundamental Parallelogram](is-bounded-fundamental-parallelogram.md)
+- [Mem pole Set In Fundamental Parallelogram iff](mem-pole-set-in-fundamental-parallelogra.md)
+- [Pole Multiplicity](pole-multiplicity.md)
+- [Pole Multiplicity ne zero iff](pole-multiplicity-ne-zero-iff.md)
 
 ## Sources
 

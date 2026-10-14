@@ -13,7 +13,8 @@ Exact pointer-assignment/NIL-test events in the same execution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
+- [List Prepend](list-prepend.md)
 
 ## Sources
 

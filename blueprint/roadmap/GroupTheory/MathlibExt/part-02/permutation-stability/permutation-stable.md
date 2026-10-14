@@ -15,6 +15,11 @@ genuine homomorphisms.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Almost Homomorphism](is-almost-homomorphism.md)
+- [Is Close To Homomorphisms](is-close-to-homomorphisms.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.PermutationStability](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,12 @@ Inserting a fresh allocated identity preserves the exact circular list represent
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circular Represents](../basic/circular-represents.md)
+- [Sentinel Insert](sentinel-insert.md)
+
+## Proof depends on
+
+- [Sentinel Insert get](sentinel-insert-get.md)
 
 ## Sources
 

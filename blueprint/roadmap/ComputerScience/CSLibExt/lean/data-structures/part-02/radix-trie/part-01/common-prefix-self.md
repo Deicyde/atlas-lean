@@ -13,7 +13,7 @@ The longest common prefix of a list with itself is the list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Common Prefix](common-prefix.md)
 
 ## Sources
 

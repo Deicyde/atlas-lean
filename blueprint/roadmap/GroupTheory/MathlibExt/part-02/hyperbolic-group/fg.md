@@ -13,7 +13,7 @@ A word-hyperbolic group is finitely generated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Hyperbolic](is-hyperbolic.md)
 
 ## Sources
 

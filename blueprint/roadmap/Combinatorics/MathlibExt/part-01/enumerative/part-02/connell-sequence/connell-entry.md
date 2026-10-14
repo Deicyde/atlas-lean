@@ -14,6 +14,10 @@ Entry `k`, indexed from zero, of row `j` in the Connell `(m, r)` triangle.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Connell Row Start](connell-row-start.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.ConnellSequence](../../../../../../../sources/v2/MathlibExt.md)

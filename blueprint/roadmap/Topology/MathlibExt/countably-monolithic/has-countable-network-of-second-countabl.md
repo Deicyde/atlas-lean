@@ -13,7 +13,7 @@ Every second-countable space has a countable network.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Countable Network](has-countable-network.md)
 
 ## Sources
 

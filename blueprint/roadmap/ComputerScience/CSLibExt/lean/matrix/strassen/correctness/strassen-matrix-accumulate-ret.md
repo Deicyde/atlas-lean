@@ -14,7 +14,7 @@ Matrix product `A * B`, preserving multiplication operand order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Basic](../strassen-matrix-accumulate.md)
 
 ## Sources
 

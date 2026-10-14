@@ -13,7 +13,12 @@ aggregates on the path back to the root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Segment Tree](segment-tree.md)
+
+## Proof depends on
+
+- [Agg](agg.md)
+- [Size](size.md)
 
 ## Sources
 

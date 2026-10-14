@@ -18,7 +18,7 @@ exponentially at a uniform rate `λ ∈ (0, 1)` with a uniform constant
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
 
 ## Sources
 

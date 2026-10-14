@@ -12,7 +12,7 @@ Prepend an already allocated node, following all five source lines in order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ Scalar multiplications performed by a parenthesization.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parenthesization](parenthesization.md)
+
+## Proof depends on
+
+- [Cols](cols.md)
+- [Rows](rows.md)
 
 ## Sources
 

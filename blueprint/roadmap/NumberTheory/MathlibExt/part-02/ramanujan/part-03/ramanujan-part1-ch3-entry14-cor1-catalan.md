@@ -18,6 +18,10 @@ Proves `Wanted` entry `ramanujan_part1_ch3_entry14_cor1_catalanpowerseries`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Catalan Generating Function](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/catalan-generating-function-sqrt.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry14Cor1Catalanpowerseries](../../../../../../sources/v2/MathlibExt.md)

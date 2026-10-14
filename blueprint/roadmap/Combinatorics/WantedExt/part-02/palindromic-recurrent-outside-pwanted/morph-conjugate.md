@@ -14,7 +14,11 @@ symmetric condition) for some word `w`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Morphism](morphism.md)
+
+## Proof depends on
+
+- [Sigma](sigma.md)
 
 ## Sources
 

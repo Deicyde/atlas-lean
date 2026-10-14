@@ -14,6 +14,10 @@ The domination number: the least size of a dominating set.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Dominating](is-dominating.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Domination](../../../../../../../sources/v2/MathlibExt.md)

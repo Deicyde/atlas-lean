@@ -18,6 +18,10 @@ works.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rising Product Series](../../../../../../Analysis/MathlibExt/part-01/specific-limits/summable-neg-pow-mul-pow-div-prod-add-mu.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry3Psisummable](../../../../../../../sources/v2/MathlibExt.md)

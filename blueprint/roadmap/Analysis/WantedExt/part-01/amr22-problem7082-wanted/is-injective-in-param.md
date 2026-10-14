@@ -15,6 +15,10 @@ Condition (a) from [AMR-022-7082] Problem 7.82: for every fixed
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unit Disc](unit-disc.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.AMR22Problem7082Wanted](../../../../../sources/v2/WantedExt.md)

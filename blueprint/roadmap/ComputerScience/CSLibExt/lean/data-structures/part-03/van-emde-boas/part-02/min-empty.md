@@ -13,7 +13,15 @@ The empty tree has no least element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empty](../part-01/empty.md)
+- [Min?](../part-01/min.md)
+
+## Proof depends on
+
+- [Member](../part-01/member.md)
+- [Member empty](../part-01/member-empty.md)
+- [Min? eq none iff](../part-01/min-eq-none-iff.md)
+- [Valid empty](../part-01/valid-empty.md)
 
 ## Sources
 

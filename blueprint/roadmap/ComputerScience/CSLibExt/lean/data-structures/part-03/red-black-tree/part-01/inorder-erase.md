@@ -14,7 +14,10 @@ inorder traversal of its color-erased tree, by definition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inorder](../../../part-02/binary-search-tree/part-01/inorder.md)
+- [Tree](tree.md)
+- [Erase](erase.md)
+- [Inorder](inorder.md)
 
 ## Sources
 

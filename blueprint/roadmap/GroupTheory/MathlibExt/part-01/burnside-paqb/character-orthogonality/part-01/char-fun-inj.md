@@ -13,7 +13,12 @@ Characters separate iso-classes (via `FDRep.char_orthonormal`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Irr](irr.md)
+- [Char Fun](char-fun.md)
+
+## Proof depends on
+
+- [Iso Setoid](iso-setoid.md)
 
 ## Sources
 

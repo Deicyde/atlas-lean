@@ -13,7 +13,8 @@ The fundamental discriminant stored by a decomposition is fundamental.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Imaginary Quadratic Discriminant Decomposition](imaginary-quadratic-discriminant-decompo.md)
+- [Is Fundamental Imaginary Quadratic Discriminant](is-fundamental-imaginary-quadratic-discr.md)
 
 ## Sources
 

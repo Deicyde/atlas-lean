@@ -13,7 +13,15 @@ A range query on a tree built from a list is the sum of the list slice.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build](build.md)
+- [Query](query.md)
+
+## Proof depends on
+
+- [Query eq](query-eq.md)
+- [To List](to-list.md)
+- [To List build](to-list-build.md)
+- [Valid build](valid-build.md)
 
 ## Sources
 

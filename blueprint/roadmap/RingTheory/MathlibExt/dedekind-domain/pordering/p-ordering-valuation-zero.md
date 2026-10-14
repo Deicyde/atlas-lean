@@ -13,7 +13,7 @@ At stage zero the product is empty, so the valuation is zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [P Ordering Valuation](p-ordering-valuation.md)
 
 ## Sources
 

@@ -17,7 +17,17 @@ in `collidingPairs_mul_le`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mod Prime Index](../part-01/mod-prime-index.md)
+- [Mod Prime Hashes](../part-01/mod-prime-hashes.md)
+
+## Proof depends on
+
+- [Mod Prime Hash](../part-01/mod-prime-hash.md)
+- [Mod Prime Hash eq iff](../part-01/mod-prime-hash-eq-iff.md)
+- [Pair Equiv](../part-01/pair-equiv.md)
+- [Pair Equiv apply fst](../part-01/pair-equiv-apply-fst.md)
+- [Pair Map](../part-01/pair-map.md)
+- [Pair Map fst ne snd](../part-01/pair-map-fst-ne-snd.md)
 
 ## Sources
 

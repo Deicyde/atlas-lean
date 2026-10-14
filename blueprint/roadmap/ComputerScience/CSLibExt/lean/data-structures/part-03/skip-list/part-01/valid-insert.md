@@ -13,7 +13,13 @@ Insertion and duplicate replacement preserve sortedness and positive tower heigh
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skip List](skip-list.md)
+- [Valid](valid.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Entry](entry.md)
 
 ## Sources
 

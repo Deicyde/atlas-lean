@@ -13,7 +13,14 @@ The proved interval law exercises the actual universal-supremum bridge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Radius Variance](../thin-shell/normalized-radius-variance.md)
+- [Thin Shell Variance Constant](../thin-shell/thin-shell-variance-constant.md)
+- [Uniform Interval](uniform-interval.md)
+
+## Proof depends on
+
+- [Normalized Radius Variance le constant](../thin-shell/normalized-radius-variance-le-constant.md)
+- [Uniform Interval sqrt three is Isotropic Log Concave](uniform-interval-sqrt-three-is-isotropic.md)
 
 ## Sources
 

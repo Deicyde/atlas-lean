@@ -12,7 +12,12 @@ Turn weighted symbols into serial-numbered leaf work items.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Work Item](huffman-work-item.md)
+
+## Proof depends on
+
+- [Huffman Priority](huffman-priority.md)
+- [Huffman Tree](../part-01/huffman-tree.md)
 
 ## Sources
 

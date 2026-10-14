@@ -13,7 +13,15 @@ The maximum value of a feasible s-t flow equals the minimum capacity of an s-t c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Feasible Flow](is-feasible-flow.md)
+- [Is STCut](is-stcut.md)
+- [Cut Capacity](cut-capacity.md)
+- [Flow Value](flow-value.md)
+
+## Proof depends on
+
+- [Cut Flow eq](cut-flow-eq.md)
+- [Flow Value le cut Capacity](flow-value-le-cut-capacity.md)
 
 ## Sources
 

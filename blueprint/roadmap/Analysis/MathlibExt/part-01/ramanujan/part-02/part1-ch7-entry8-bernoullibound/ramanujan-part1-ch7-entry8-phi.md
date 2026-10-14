@@ -16,6 +16,12 @@ Source: Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 8, for 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter7 Integer Phi](chapter7-integer-phi.md)
+- [Chapter7 Phi eq chapter7 Integer Phi](chapter7-phi-eq-chapter7-integer-phi.md)
+- [Ramanujan part1 ch7 entry8 bernoullibound](ramanujan-part1-ch7-entry8-bernoulliboun.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch7Entry8Bernoullibound](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ The parameter of a `k`-perfect number is positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KPerfect](is-kperfect.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ Taking a serial removes exactly the work item stored at that index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Priority](huffman-priority.md)
+- [Huffman Tree](../part-01/huffman-tree.md)
+- [Huffman Work Item](huffman-work-item.md)
+- [Huffman Table Forest](huffman-table-forest.md)
+- [Take Serial?](take-serial.md)
 
 ## Sources
 

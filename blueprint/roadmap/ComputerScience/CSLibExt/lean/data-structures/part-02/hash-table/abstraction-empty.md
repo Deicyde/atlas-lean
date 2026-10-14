@@ -13,7 +13,8 @@ The empty table abstracts to the empty finite map.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abstraction](abstraction.md)
+- [Empty](empty.md)
 
 ## Sources
 

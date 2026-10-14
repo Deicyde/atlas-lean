@@ -13,7 +13,16 @@ In a valid tree, `min?` returns the least stored element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](../part-01/van-emde-boas.md)
+- [Valid](../part-01/valid.md)
+- [Member](../part-01/member.md)
+- [Min?](../part-01/min.md)
+
+## Proof depends on
+
+- [Min? eq none iff](../part-01/min-eq-none-iff.md)
+- [Min? least](../part-01/min-least.md)
+- [Min? mem](../part-01/min-mem.md)
 
 ## Sources
 

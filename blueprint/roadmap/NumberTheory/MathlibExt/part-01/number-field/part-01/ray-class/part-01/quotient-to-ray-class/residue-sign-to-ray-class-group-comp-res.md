@@ -14,7 +14,13 @@ ray-element class map.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Group](../group/ray-class-group.md)
+- [Ray Element Class Map](ray-element-class-map.md)
+- [Residue Sign To Ray Class Group](residue-sign-to-ray-class-group.md)
+
+## Proof depends on
+
+- [Residue Sign To Ray Class Group residue Sign Map](residue-sign-to-ray-class-group-residue.md)
 
 ## Sources
 

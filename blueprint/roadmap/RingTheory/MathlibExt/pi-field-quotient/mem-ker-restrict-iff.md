@@ -13,7 +13,11 @@ Vanishing on `restrict S` is vanishing on all selected coordinates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restrict](restrict.md)
+
+## Proof depends on
+
+- [Restrict apply](restrict-apply.md)
 
 ## Sources
 

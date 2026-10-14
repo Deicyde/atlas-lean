@@ -14,7 +14,8 @@ JIS 20 (2017), Article 17.1.7, Definition TRIPSternDef, lines 471-481.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trip Stern Tree](trip-stern-tree.md)
+- [Rightmost Node](rightmost-node.md)
 
 ## Sources
 

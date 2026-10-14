@@ -13,7 +13,13 @@ slice if some smooth knot of the same knot type is topologically slice.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PLKnot](plknot.md)
+
+## Proof depends on
+
+- [Knot](../part-01/knot.md)
+- [Topologically slice (smooth knot version)](../part-01/topologically-slice.md)
+- [Has Smooth Representative](has-smooth-representative.md)
 
 ## Sources
 

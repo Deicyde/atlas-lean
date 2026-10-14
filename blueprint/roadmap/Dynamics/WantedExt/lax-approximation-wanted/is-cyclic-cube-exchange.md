@@ -13,7 +13,13 @@ cube `k` by the rigid translation carrying it to cube `σ k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Volume Preserving Equiv](volume-preserving-equiv.md)
+
+## Proof depends on
+
+- [Torus](torus.md)
+- [Cube](cube.md)
+- [Cube Shift](cube-shift.md)
 
 ## Sources
 

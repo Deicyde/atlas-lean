@@ -13,7 +13,11 @@ Deletion, under the name `delete`, preserves the balance invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](../part-01/delete.md)
+
+## Proof depends on
+
+- [Balanced erase](../part-01/balanced-erase.md)
 
 ## Sources
 

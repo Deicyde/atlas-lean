@@ -13,7 +13,14 @@ Every saved revenue is attained by a whole-rod composition and dominates all its
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composition Revenue](composition-revenue.md)
+- [Extended Bottom Up Cut Rod](extended-bottom-up-cut-rod.md)
+
+## Proof depends on
+
+- [Composition Revenue append](composition-revenue-append.md)
+- [Composition Revenue single](composition-revenue-single.md)
+- [Composition Revenue zero](composition-revenue-zero.md)
 
 ## Sources
 

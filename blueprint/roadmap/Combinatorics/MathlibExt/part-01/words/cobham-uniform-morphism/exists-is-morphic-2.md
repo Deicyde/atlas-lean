@@ -13,7 +13,15 @@ Every `k`-automatic sequence is a morphic word.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KAutomatic Sequence](is-kautomatic-sequence.md)
+- [Is Morphic](../../infinite-word/morphic-word/is-morphic.md)
+
+## Proof depends on
+
+- [Is Coding Of Prolongable KUniform Fixed Point](is-coding-of-prolongable-kuniform-fixed.md)
+- [Exists is Morphic](exists-is-morphic.md)
+- [Base Word Value LSD](base-word-value-lsd.md)
+- [Cobham automatic iff uniform morphic](cobham-automatic-iff-uniform-morphic.md)
 
 ## Sources
 

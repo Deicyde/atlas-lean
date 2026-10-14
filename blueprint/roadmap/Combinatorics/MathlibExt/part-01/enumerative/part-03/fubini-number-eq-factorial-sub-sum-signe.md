@@ -17,7 +17,11 @@ This recurrence is distinct from the same paper's r-horse-number theorem
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fubini Number](fubini-number/fubini-number.md)
+
+## Proof depends on
+
+- [Fubini Number eq sum](fubini-number/fubini-number-eq-sum.md)
 
 ## Sources
 

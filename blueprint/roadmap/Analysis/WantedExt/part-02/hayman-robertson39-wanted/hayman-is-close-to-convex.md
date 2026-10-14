@@ -14,6 +14,12 @@ Close-to-convex: schlicht with one shared starlike `g` and angle `α` satisfying
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hayman Is Schlicht](hayman-is-schlicht.md)
+- [Hayman Is Starlike](hayman-is-starlike.md)
+- [Hayman Unit Disc](hayman-unit-disc.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HaymanRobertson39Wanted](../../../../../sources/v2/WantedExt.md)

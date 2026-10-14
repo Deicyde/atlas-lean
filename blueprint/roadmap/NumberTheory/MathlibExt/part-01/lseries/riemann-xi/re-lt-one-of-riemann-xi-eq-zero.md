@@ -13,7 +13,11 @@ Every zero of `ξ` has real part strictly less than one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Riemann Xi](riemann-xi.md)
+
+## Proof depends on
+
+- [Riemann Xi ne zero of one le re](riemann-xi-ne-zero-of-one-le-re.md)
 
 ## Sources
 

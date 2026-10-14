@@ -15,6 +15,11 @@ totalized by real `sSup`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Beurling Norm](beurling-norm.md)
+- [Pstar](pstar.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.BeurlingAhlfors](../../../../../sources/v2/MathlibExt.md)

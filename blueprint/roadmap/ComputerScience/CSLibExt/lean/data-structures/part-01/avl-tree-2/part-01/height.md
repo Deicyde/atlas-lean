@@ -12,7 +12,7 @@ The cached height of a tree, read off the root in constant time.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
 
 ## Sources
 

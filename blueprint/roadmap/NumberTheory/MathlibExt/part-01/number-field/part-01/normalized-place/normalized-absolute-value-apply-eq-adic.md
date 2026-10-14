@@ -13,7 +13,11 @@ The degree-normalized finite-place value expressed through Mathlib's canonical `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Absolute Value](normalized-absolute-value.md)
+
+## Proof depends on
+
+- [Normalized Absolute Value apply](normalized-absolute-value-apply.md)
 
 ## Sources
 

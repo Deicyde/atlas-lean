@@ -14,6 +14,10 @@ Single continuation `(g1(s) - 1) / (s + 1)` of `L H`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Shifted Log Dirichlet Continuation](shifted-log-dirichlet-continuation.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.LaplaceThetaContinuation](../../../../../../../sources/v2/MathlibExt.md)

@@ -15,6 +15,16 @@ Nonnegative integrable cocycle: invariant a.e. limit of `fₙ/n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dick Set](birkhoff/dick-set.md)
+- [Dick iter](birkhoff/dick-iter.md)
+- [Dick measurable](birkhoff/dick-measurable.md)
+- [Dick mem](birkhoff/dick-mem.md)
+- [Dick sum in](birkhoff/dick-sum-in.md)
+- [Dick sum out](birkhoff/dick-sum-out.md)
+- [Maximal ergodic](birkhoff/maximal-ergodic.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Dynamics.Ergodic.Kingman](../../../../sources/v2/MathlibExt.md)

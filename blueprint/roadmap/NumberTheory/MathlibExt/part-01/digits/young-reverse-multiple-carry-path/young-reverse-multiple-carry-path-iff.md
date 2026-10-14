@@ -21,6 +21,10 @@ formalized here.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Young reverse multiple carry path iff general](young-reverse-multiple-carry-path-iff-ge.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Digits.YoungReverseMultipleCarryPath](../../../../../../sources/v2/MathlibExt.md)

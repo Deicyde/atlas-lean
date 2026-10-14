@@ -13,7 +13,15 @@ Inserting two distinct keys commutes up to lookup equivalence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trie](trie.md)
+- [Lookup Equiv](lookup-equiv.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Lookup](lookup.md)
+- [Lookup insert of ne](lookup-insert-of-ne.md)
+- [Lookup insert same](lookup-insert-same.md)
 
 ## Sources
 

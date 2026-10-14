@@ -15,6 +15,10 @@ Existence of `ε`-approximate minimizer with perturbed minimality.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ekeland variational principle general](ekeland-variational-principle-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Variational.EkelandCaristi](../../../../../../sources/v2/MathlibExt.md)

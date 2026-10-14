@@ -12,7 +12,11 @@ Null/dummy player axiom: a null player receives zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coop Game](coop-game.md)
+
+## Proof depends on
+
+- [Is Null Player](is-null-player.md)
 
 ## Sources
 

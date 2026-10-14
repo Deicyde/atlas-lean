@@ -13,7 +13,7 @@ The set of admissible radii is bounded below by zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Radius](is-admissible-radius.md)
 
 ## Sources
 

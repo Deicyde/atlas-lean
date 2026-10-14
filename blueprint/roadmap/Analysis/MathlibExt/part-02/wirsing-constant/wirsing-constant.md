@@ -20,6 +20,10 @@ requests in `WantedExt/Analysis/WirsingConstantWanted.lean`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Holomorphic Eigenvalue](is-holomorphic-eigenvalue.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.WirsingConstant](../../../../../sources/v2/MathlibExt.md)

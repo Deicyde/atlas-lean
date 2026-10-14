@@ -18,7 +18,7 @@ of the FKS construction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](perfect-hashing.md)
 
 ## Sources
 

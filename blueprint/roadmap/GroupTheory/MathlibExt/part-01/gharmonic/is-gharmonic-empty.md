@@ -13,7 +13,7 @@ The empty tuple is vacuously `G`-harmonic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is GHarmonic](is-gharmonic.md)
 
 ## Sources
 

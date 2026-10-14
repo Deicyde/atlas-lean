@@ -13,7 +13,7 @@ An ordered set partition of `Fin n` with block sizes given by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Shape](partition-shape.md)
 
 ## Sources
 

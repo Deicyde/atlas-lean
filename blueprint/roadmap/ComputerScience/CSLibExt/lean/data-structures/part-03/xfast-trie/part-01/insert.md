@@ -12,7 +12,11 @@ Inserts a key and adds its prefix to every level.
 
 ## Depends on
 
-This node has no prerequisites.
+- [XFast Trie](xfast-trie.md)
+
+## Proof depends on
+
+- [Prefix Of](prefix-of.md)
 
 ## Sources
 

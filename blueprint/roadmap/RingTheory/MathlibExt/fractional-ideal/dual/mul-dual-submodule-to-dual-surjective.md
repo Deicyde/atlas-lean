@@ -15,6 +15,10 @@ lean: Submodule.mul_dualSubmoduleToDual_surjective
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists mul rep](exists-mul-rep.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.FractionalIdeal.Dual](../../../../../sources/v2/MathlibExt.md)

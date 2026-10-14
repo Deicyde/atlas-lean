@@ -13,7 +13,7 @@ The image of a prime ideal is the corresponding basis exponent function.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Factorization Mul Equiv](factorization-mul-equiv.md)
 
 ## Sources
 

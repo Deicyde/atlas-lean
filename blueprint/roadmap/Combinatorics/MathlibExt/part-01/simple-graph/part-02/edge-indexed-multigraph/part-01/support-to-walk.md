@@ -13,7 +13,11 @@ Forgetting edge identities preserves the vertex support.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
+- [Indexed Walk](indexed-walk.md)
+- [Support](support.md)
+- [To Walk](to-walk.md)
+- [Underlying](underlying.md)
 
 ## Sources
 

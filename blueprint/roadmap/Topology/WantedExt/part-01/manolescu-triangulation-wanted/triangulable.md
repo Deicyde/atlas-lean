@@ -16,7 +16,7 @@ is essential (see the module docstring).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closed Top Manifold](closed-top-manifold.md)
 
 ## Sources
 

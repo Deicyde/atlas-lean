@@ -12,7 +12,8 @@ Incidence by natural-coordinate equations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mobius Grid Edge](mobius-grid-edge.md)
+- [Mobius Grid Vertex](mobius-grid-vertex.md)
 
 ## Sources
 

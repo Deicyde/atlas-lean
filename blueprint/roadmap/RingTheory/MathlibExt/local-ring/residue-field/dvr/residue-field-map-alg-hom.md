@@ -14,6 +14,10 @@ Induced map on residue fields from `IsLocalRing.ResidueField.map`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Local Hom of is Discrete Valuation Ring](is-local-hom-of-is-discrete-valuation-ri.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.LocalRing.ResidueField.DVR](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ A closest-conjugate hypothesis gives the conjugate-root inequality used by Krasn
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Closest Conjugate](is-closest-conjugate.md)
 
 ## Sources
 

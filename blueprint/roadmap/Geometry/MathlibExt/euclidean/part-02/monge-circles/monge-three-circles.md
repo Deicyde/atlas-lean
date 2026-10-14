@@ -19,6 +19,10 @@ hypotheses.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Monge three circles general](monge-three-circles-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.MongeCircles](../../../../../../sources/v2/MathlibExt.md)

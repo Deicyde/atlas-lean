@@ -16,7 +16,7 @@ Dresden–Li, Journal of Integer Sequences 26 (2023).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quadratic Gauss Sum5](quadratic-gauss-sum5.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ The conductor ideal is the top ideal if and only if the subalgebra is.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conductor Ideal](conductor-ideal.md)
+
+## Proof depends on
+
+- [Conductor Ideal top](conductor-ideal-top.md)
+- [Le conductor Ideal iff](le-conductor-ideal-iff.md)
 
 ## Sources
 

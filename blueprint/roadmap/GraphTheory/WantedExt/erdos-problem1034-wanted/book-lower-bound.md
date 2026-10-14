@@ -15,6 +15,10 @@ least `(1/6 - ε)n` vertices doubly.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Joined To Two](joined-to-two.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.ErdosProblem1034Wanted](../../../../sources/v2/WantedExt.md)

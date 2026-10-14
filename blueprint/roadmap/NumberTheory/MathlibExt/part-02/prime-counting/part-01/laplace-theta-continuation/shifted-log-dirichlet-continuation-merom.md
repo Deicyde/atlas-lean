@@ -13,7 +13,12 @@ The shifted witness is meromorphic for -(1 / 2) < re s.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shifted Log Dirichlet Continuation](shifted-log-dirichlet-continuation.md)
+
+## Proof depends on
+
+- [Log Dirichlet Continuation](../../../../part-01/lseries/prime-log/log-dirichlet-continuation.md)
+- [Log Dirichlet Continuation meromorphic](../../../../part-01/lseries/prime-log/log-dirichlet-continuation-meromorphic.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ Deletion, under the name `delete`, preserves correct cached heights.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](../part-01/delete.md)
+
+## Proof depends on
+
+- [Cache Correct erase](../part-01/cache-correct-erase.md)
 
 ## Sources
 

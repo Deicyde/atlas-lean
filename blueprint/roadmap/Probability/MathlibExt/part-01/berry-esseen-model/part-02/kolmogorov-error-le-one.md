@@ -13,7 +13,13 @@ The error supremum is at most one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov Error](../part-01/kolmogorov-error.md)
+
+## Proof depends on
+
+- [Normal CDF](../part-01/normal-cdf.md)
+- [Normalized Law](../part-01/normalized-law.md)
+- [Pointwise error le one](../part-01/pointwise-error-le-one.md)
 
 ## Sources
 

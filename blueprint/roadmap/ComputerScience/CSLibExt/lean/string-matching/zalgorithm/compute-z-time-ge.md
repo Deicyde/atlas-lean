@@ -13,7 +13,7 @@ Every positive-index visit contributes one event, even a zero-comparison copy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compute Z](compute-z.md)
 
 ## Sources
 

@@ -18,7 +18,11 @@ https://en.wikipedia.org/wiki/Pentagonal_number_theorem
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Function](partition-function.md)
+
+## Proof depends on
+
+- [Mk partition Function mul pentagonal Series](mk-partition-function-mul-pentagonal-ser.md)
 
 ## Sources
 

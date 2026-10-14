@@ -15,7 +15,12 @@ for `D < 0` the `(-1)` factor supplies it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kronecker Sym](quadratic/kronecker-sym.md)
+
+## Proof depends on
+
+- [Kronecker At Prime](quadratic/kronecker-at-prime.md)
+- [Quadratic Character Aux](kronecker-sym-eq-jacobi-sym-of-prime-ne.md)
 
 ## Sources
 

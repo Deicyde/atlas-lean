@@ -16,7 +16,11 @@ value rather than a pole encoded by the raw definitions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Artin Local Datum](artin-local-datum.md)
+
+## Proof depends on
+
+- [Has Artin Euler Product](has-artin-euler-product.md)
 
 ## Sources
 

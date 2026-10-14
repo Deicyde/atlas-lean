@@ -16,7 +16,7 @@ For every `j` with `0 ≤ j ≤ k` (the lower bound is automatic for `j : ℕ`),
 
 ## Depends on
 
-This node has no prerequisites.
+- [S Restricted Weighted Composition Count](s-restricted-weighted-composition-count.md)
 
 ## Sources
 

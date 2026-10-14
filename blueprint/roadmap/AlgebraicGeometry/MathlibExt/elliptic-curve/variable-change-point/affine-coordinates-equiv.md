@@ -14,6 +14,10 @@ Affine coordinates form an equivalence under an admissible Weierstrass variable 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Map Affine Coordinates](map-affine-coordinates.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.EllipticCurve.VariableChangePoint](../../../../../sources/v2/MathlibExt.md)

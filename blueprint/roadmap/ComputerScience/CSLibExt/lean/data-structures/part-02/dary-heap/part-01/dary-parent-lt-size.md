@@ -13,7 +13,11 @@ A nonroot node's parent is valid whenever the node is.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Parent](dary-parent.md)
+
+## Proof depends on
+
+- [Dary Parent lt](dary-parent-lt.md)
 
 ## Sources
 

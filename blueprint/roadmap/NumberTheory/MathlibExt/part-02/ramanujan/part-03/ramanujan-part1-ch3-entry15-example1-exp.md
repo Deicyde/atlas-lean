@@ -17,6 +17,10 @@ the series is realized as `B_n(z) ^ m` with `B_n = 1 + z * B_n ^ n`; root select
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Part1 Ch3 Entry14 Cor1 Catalanpowerseries](ramanujan-part1-ch3-entry14-cor1-catalan.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry15Example1ExponentialSeries](../../../../../../sources/v2/MathlibExt.md)

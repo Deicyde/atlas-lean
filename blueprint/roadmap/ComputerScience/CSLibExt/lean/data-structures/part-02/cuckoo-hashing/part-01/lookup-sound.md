@@ -13,7 +13,9 @@ Lookup is sound: a found value is stored in one of the two tables.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cuckoo Hashing](cuckoo-hashing.md)
+- [Stored](stored.md)
+- [Lookup](lookup.md)
 
 ## Sources
 

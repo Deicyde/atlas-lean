@@ -13,7 +13,13 @@ A successful extraction returns an element that was stored.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Heap](min-heap.md)
+- [Elements](elements.md)
+- [Extract Min](extract-min.md)
+
+## Proof depends on
+
+- [Extract Tail](extract-tail.md)
 
 ## Sources
 

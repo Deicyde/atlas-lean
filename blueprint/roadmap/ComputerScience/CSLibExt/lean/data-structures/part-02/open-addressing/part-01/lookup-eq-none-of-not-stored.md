@@ -13,7 +13,13 @@ A key stored in no slot looks up to `none`, with no validity assumption.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Open Addressing](open-addressing.md)
+- [Stored](stored.md)
+- [Lookup](lookup.md)
+
+## Proof depends on
+
+- [Stored of lookup eq some](stored-of-lookup-eq-some.md)
 
 ## Sources
 

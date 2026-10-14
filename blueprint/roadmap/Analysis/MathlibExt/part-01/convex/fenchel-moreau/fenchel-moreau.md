@@ -23,6 +23,13 @@ C. R. Acad. Sci. Paris 255 (1962), 2897–2899, zbMATH 0118.10502.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Biconj le](biconj-le.md)
+- [Fenchel Biconj](fenchel-biconj.md)
+- [Fenchel Conj](fenchel-conj.md)
+- [Is Closed epi real](is-closed-epi-real.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Convex.FenchelMoreau](../../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,7 @@ Equip a partition with no overlined part sizes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition](overpartition.md)
 
 ## Sources
 

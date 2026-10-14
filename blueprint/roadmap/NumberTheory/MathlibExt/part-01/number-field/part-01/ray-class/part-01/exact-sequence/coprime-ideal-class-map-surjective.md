@@ -17,6 +17,10 @@ Surjectivity of the ideal-class map on coprime fractional ideals
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fractional Ideal Mk0 mem coprime Fractional Ideals](fractional-ideal-mk0-mem-coprime-fractio.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.ExactSequence](../../../../../../../../../sources/v2/MathlibExt.md)

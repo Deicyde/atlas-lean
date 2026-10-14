@@ -14,7 +14,8 @@ history weights. Repeated values coalesce, and impossible event counts receive n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Randomly Permute](../basic/randomly-permute.md)
+- [Randomly Permute Distribution](randomly-permute-distribution.md)
 
 ## Sources
 

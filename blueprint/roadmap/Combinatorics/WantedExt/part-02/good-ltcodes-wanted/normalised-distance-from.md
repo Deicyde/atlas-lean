@@ -13,7 +13,11 @@ to the closest codeword in `C` divided by its length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary Code](binary-code.md)
+
+## Proof depends on
+
+- [Distance From](distance-from.md)
 
 ## Sources
 

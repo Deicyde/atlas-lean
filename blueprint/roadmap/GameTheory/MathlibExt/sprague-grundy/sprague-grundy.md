@@ -14,7 +14,15 @@ single Nim heap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equiv](equiv.md)
+- [Impartial Game](impartial-game.md)
+- [Nim Heap](nim-heap.md)
+
+## Proof depends on
+
+- [Is P](is-p.md)
+- [Game Sum](game-sum.md)
+- [Is P iff](is-p-iff.md)
 
 ## Sources
 

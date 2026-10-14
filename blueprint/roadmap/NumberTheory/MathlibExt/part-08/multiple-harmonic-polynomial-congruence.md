@@ -18,7 +18,7 @@ statement `jis_9e5865a09e42b4fb025d838d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multiple Harmonic](multiple-harmonic.md)
 
 ## Sources
 

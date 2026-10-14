@@ -15,7 +15,7 @@ the last column is a `beta`-weighted sum of lower entries.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Nu Lambda Pascal Matrix](is-nu-lambda-pascal-matrix.md)
 
 ## Sources
 

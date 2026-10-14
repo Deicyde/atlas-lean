@@ -15,6 +15,10 @@ given by the canonical `SimpleGraph.Segment` [GRAPH-022].
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Segment](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-03/planarity/segment.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.UniversalPointSetsSubquadraticWanted](../../../../sources/v2/WantedExt.md)

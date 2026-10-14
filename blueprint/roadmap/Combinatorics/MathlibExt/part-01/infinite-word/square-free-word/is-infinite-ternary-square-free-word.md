@@ -16,7 +16,11 @@ Source concept `jis_sem_4970e15c0be600988a8749e5`; statements
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ternary Alphabet](ternary-alphabet.md)
+
+## Proof depends on
+
+- [Is Infinite Square Free Word](is-infinite-square-free-word.md)
 
 ## Sources
 

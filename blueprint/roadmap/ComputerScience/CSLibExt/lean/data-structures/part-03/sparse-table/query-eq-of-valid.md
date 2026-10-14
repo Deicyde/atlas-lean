@@ -15,7 +15,17 @@ bounds `r ≤ l` both sides are `none`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sparse Table](sparse-table.md)
+- [Valid](valid.md)
+- [Query](query.md)
+
+## Proof depends on
+
+- [Entry](entry.md)
+- [Entry eq of valid](entry-eq-of-valid.md)
+- [Level](level.md)
+- [Omin](omin.md)
+- [Omin self](omin-self.md)
 
 ## Sources
 

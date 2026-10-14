@@ -14,7 +14,9 @@ from the same valid initial cache. Competitors may permute representations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](cache-event.md)
+- [Cache LTS](cache-lts.md)
+- [Furthest In Future](furthest-in-future.md)
 
 ## Sources
 

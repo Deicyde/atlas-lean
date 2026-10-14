@@ -13,7 +13,13 @@ Each actual threshold error is below the supremum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov Error](../part-01/kolmogorov-error.md)
+- [Normal CDF](../part-01/normal-cdf.md)
+- [Normalized Law](../part-01/normalized-law.md)
+
+## Proof depends on
+
+- [Error Range bdd Above](../part-01/error-range-bdd-above.md)
 
 ## Sources
 

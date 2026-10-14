@@ -13,7 +13,7 @@ The empty saved-bucket computation returns the empty array with zero cost.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bucket Sort](bucket-sort.md)
 
 ## Sources
 

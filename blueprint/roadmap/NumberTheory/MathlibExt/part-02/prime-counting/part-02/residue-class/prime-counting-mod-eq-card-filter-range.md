@@ -13,7 +13,7 @@ The residue-class prime count as a range filtered by primality and congruence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Counting Mod](prime-counting-mod.md)
 
 ## Sources
 

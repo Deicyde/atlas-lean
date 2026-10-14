@@ -19,7 +19,7 @@ https://kconrad.math.uconn.edu/blurbs/grouptheory/charthy.pdf, up to reindexing 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dft Fun](dft-fun.md)
 
 ## Sources
 

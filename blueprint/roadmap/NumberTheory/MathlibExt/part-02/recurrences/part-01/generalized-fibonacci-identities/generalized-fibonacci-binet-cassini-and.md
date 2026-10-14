@@ -23,6 +23,13 @@ Proves `Wanted` entry `generalizedFibonacci_binet_cassini_and_ratio_limit`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized Fibonacci binet](generalized-fibonacci-binet.md)
+- [Generalized Fibonacci cassini](generalized-fibonacci-cassini.md)
+- [Generalized Fibonacci mixed identity](generalized-fibonacci-mixed-identity.md)
+- [Generalized Fibonacci tendsto ratio](generalized-fibonacci-tendsto-ratio.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Recurrences.GeneralizedFibonacciIdentities](../../../../../../../sources/v2/MathlibExt.md)

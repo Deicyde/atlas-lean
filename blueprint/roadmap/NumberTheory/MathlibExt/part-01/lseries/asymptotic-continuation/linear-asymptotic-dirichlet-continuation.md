@@ -14,6 +14,10 @@ Linear asymptotic ansatz: pole part plus continuation of the remainder.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Abel Continuation](../abel-continuation/abel-continuation.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.LSeries.AsymptoticContinuation](../../../../../../sources/v2/MathlibExt.md)

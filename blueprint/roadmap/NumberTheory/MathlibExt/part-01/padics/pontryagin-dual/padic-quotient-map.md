@@ -12,7 +12,7 @@ The canonical quotient map from `ℚ_p` to `ℚ_p / ℤ_p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padic Quotient Int](padic-quotient-int.md)
 
 ## Sources
 

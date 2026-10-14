@@ -13,7 +13,11 @@ An actual gap two is equivalent to a twin prime at the same prime index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Gap](../prime-gap.md)
+
+## Proof depends on
+
+- [Two le prime Gap](two-le-prime-gap.md)
 
 ## Sources
 

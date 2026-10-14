@@ -14,6 +14,10 @@ The corresponding minimum number of actual exterior light sources.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Illuminated By External Points](illuminated-by-external-points.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Convex.Illumination](../../../../../sources/v2/MathlibExt.md)

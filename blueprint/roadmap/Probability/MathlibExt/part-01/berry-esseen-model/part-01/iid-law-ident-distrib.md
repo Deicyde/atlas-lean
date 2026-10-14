@@ -13,7 +13,12 @@ Each coordinate is identically distributed with the identity on its real law.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Standardized Law](is-standardized-law.md)
+- [Iid Law](iid-law.md)
+
+## Proof depends on
+
+- [Iid Law map eval](iid-law-map-eval.md)
 
 ## Sources
 

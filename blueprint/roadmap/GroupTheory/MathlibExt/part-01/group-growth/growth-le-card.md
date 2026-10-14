@@ -13,7 +13,7 @@ The growth function is bounded by the order of the group, since every ball is a 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Growth](growth.md)
 
 ## Sources
 

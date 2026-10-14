@@ -13,7 +13,8 @@ Each canonical coordinate has the original law.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Standardized Law](is-standardized-law.md)
+- [Iid Law](iid-law.md)
 
 ## Sources
 

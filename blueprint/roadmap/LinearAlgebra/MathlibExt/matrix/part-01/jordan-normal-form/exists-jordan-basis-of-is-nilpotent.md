@@ -13,7 +13,11 @@ A nilpotent endomorphism has a basis made of Jordan chains.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jordan Block](jordan-block.md)
+
+## Proof depends on
+
+- [To Matrix eq block Diagonal jordan Block](to-matrix-eq-block-diagonal-jordan-block.md)
 
 ## Sources
 

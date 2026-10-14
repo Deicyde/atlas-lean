@@ -15,7 +15,16 @@ basis index type is finite, and those types are empty above `bound`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraded Base Change](multigraded-betti/multigraded-base-change.md)
+- [Multigraded Free Resolution](multigraded-free-resolution/multigraded-free-resolution.md)
+- [Multigraded Poincare Coefficients](multigraded-poincare-coefficients/multigraded-poincare-coefficients.md)
+
+## Proof depends on
+
+- [Base Changed Complex](multigraded-betti/base-changed-complex.md)
+- [Base Changed Degree Piece](multigraded-betti/base-changed-degree-piece.md)
+- [Multigraded Betti Number](multigraded-betti/multigraded-betti-number.md)
+- [Zero Eval](multigraded-betti/zero-eval.md)
 
 ## Sources
 

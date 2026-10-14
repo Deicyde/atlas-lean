@@ -13,7 +13,7 @@ The removed node stays allocated; at the tail this is a no-op on links.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../part-01/node.md)
 
 ## Sources
 

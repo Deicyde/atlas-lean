@@ -17,6 +17,13 @@ Cites [AIM-COMBINATORICS-0270] Source item 4, notes[269], Section A.4.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Perfect Graph Instance](perfect-graph-instance.md)
+- [Valid](valid.md)
+- [To Simple Graph](to-simple-graph.md)
+- [Is Perfect](../../../MathlibExt/part-01/simple-graph/part-03/perfect-graph/is-perfect.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PerfectGraphNPWanted](../../../../../sources/v2/WantedExt.md)

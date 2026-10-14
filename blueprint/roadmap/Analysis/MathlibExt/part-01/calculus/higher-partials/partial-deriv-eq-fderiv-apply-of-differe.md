@@ -14,7 +14,11 @@ applied pointwise to the coordinate vector.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partial Deriv](partial-deriv.md)
+
+## Proof depends on
+
+- [Partial Deriv eq fderiv apply](partial-deriv-eq-fderiv-apply.md)
 
 ## Sources
 

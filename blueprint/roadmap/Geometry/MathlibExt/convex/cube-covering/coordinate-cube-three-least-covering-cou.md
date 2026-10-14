@@ -13,7 +13,13 @@ The matching cover and vertex obstruction give an actual least count of eight.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covered By Interior Translates](../covering/covered-by-interior-translates.md)
+- [Coordinate Cube](coordinate-cube.md)
+
+## Proof depends on
+
+- [Coordinate Cube covering Count ge two pow](coordinate-cube-covering-count-ge-two-po.md)
+- [Coordinate Cube three covered By Interior Translates](coordinate-cube-three-covered-by-interio.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ No two submodules are `1`-neighbors, since `1` is not prime.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Are PNeighbors](are-pneighbors.md)
 
 ## Sources
 

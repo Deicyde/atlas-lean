@@ -13,7 +13,8 @@ Advancing one level returns a suffix of the supplied search window.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Entry](entry.md)
+- [Advance At Level](advance-at-level.md)
 
 ## Sources
 

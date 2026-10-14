@@ -13,7 +13,14 @@ A mixed characteristic polynomial is monic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mixed Characteristic Polynomial](../mixed-char-poly/mixed-characteristic-polynomial.md)
+
+## Proof depends on
+
+- [Mixed Det Polynomial](../mixed-char-poly/mixed-det-polynomial.md)
+- [Mixed Differential](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential.md)
+- [Mixed Differential cons](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential-cons.md)
+- [Univariate Specialization](../../../../../../Algebra/MathlibExt/mv-polynomial/stable/univariate-specialization.md)
 
 ## Sources
 

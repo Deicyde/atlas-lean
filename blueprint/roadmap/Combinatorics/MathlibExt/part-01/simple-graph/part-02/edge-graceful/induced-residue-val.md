@@ -13,7 +13,8 @@ Residue unfolds to the incident sum modulo `p` when `p ≠ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Incident Sum](incident-sum.md)
+- [Induced Residue](induced-residue.md)
 
 ## Sources
 

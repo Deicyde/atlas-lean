@@ -20,6 +20,10 @@ coloring with no such solution.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ramsey](ramsey-two-uniform.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SchurRamsey](../../../../sources/v2/MathlibExt.md)

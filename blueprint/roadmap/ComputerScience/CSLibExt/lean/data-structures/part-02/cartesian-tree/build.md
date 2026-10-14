@@ -14,6 +14,10 @@ The Cartesian tree of a list: min-heap by value, inorder equal to the list.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Build Fuel](build-fuel.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.CartesianTree](../../../../../../../sources/v2/CSLibExt.md)

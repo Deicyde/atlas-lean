@@ -13,7 +13,13 @@ An arbitrary initial unsigned value advances by the run length modulo the fixed 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run](run.md)
+
+## Proof depends on
+
+- [Increment](increment.md)
+- [Increment value](increment-value.md)
+- [Run ret succ](run-ret-succ.md)
 
 ## Sources
 

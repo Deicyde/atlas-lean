@@ -17,6 +17,11 @@ then every `p^a q^b`-group is solvable.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eq prime pow mul of dvd](eq-prime-pow-mul-of-dvd.md)
+- [Is Solvable of prime card](is-solvable-of-prime-card.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.SolvableInduction](../../../../../../sources/v2/MathlibExt.md)

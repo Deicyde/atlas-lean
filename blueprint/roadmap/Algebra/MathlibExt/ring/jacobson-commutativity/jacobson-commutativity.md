@@ -16,6 +16,11 @@ satisfies `x ^ n = x` for some `n > 1` is commutative.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is MSystem](is-msystem.md)
+- [Is Prime Ideal](is-prime-ideal.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Ring.JacobsonCommutativity](../../../../../sources/v2/MathlibExt.md)

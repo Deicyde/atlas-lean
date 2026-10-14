@@ -13,7 +13,13 @@ Monotonicity in the exponent: `k`-free implies `l`-free for `k ≤ l`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Power Free](is-power-free.md)
+
+## Proof depends on
+
+- [Not dvd](not-dvd.md)
+- [Pos](pos.md)
+- [Two le](two-le.md)
 
 ## Sources
 

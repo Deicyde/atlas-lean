@@ -16,6 +16,11 @@ statement `jis_f769f4ddb64ff3cef3f34a43`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Complementary Pair](is-complementary-pair.md)
+- [Satisfies Shifted Sum Equation](satisfies-shifted-sum-equation.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ComplementarySequenceDeterminedBySubsequenceSumEquation](../../../../../sources/v2/MathlibExt.md)

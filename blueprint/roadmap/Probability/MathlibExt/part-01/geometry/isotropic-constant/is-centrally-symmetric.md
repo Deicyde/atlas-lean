@@ -12,7 +12,7 @@ The centered symmetry convention `K = -K` used by the sharp body conjecture.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Full Dimensional Body](full-dimensional-body.md)
 
 ## Sources
 

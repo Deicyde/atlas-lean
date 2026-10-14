@@ -13,7 +13,8 @@ The literal source endpoints agree with the orthonormal interval construction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Full Dimensional Body](../isotropic-constant/full-dimensional-body.md)
+- [Unit Interval Body](unit-interval-body.md)
 
 ## Sources
 

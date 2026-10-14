@@ -14,7 +14,12 @@ finiteness of an overring in the fraction field.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conductor Ideal](conductor-ideal.md)
+
+## Proof depends on
+
+- [Conductor Ideal bot ne bot of finite](conductor-ideal-bot-ne-bot-of-finite.md)
+- [Finite of conductor Ideal bot ne bot](finite-of-conductor-ideal-bot-ne-bot.md)
 
 ## Sources
 

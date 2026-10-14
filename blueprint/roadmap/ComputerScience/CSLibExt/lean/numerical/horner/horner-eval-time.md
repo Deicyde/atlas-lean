@@ -13,7 +13,7 @@ Every coefficient executes exactly one multiplication and one addition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Horner Eval](horner-eval.md)
 
 ## Sources
 

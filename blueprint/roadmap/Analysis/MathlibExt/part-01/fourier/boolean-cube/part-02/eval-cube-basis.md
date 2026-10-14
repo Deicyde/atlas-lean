@@ -14,7 +14,8 @@ other Boolean point.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](../part-01/bool-cube.md)
+- [Cube Basis](../part-01/cube-basis.md)
 
 ## Sources
 

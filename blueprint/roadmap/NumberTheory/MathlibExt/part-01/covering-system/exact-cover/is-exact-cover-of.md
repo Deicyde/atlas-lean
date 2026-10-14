@@ -16,6 +16,10 @@ have at least two classes and positive moduli.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Indexed Cover Multiplicity](indexed-cover-multiplicity.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.CoveringSystem.ExactCover](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,16 @@ Membership in the search of a built tree, stated on the input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build](../part-01/build.md)
+- [Dist Sq](../part-01/dist-sq.md)
+- [Search](../part-01/search.md)
+
+## Proof depends on
+
+- [Mem search iff](../part-01/mem-search-iff.md)
+- [Mem to List build iff](../part-01/mem-to-list-build-iff.md)
+- [To List](../part-01/to-list.md)
+- [Valid build](../part-01/valid-build.md)
 
 ## Sources
 

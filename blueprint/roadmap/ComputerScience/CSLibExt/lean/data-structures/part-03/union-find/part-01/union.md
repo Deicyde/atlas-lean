@@ -12,7 +12,13 @@ Persistently merge the classes of `x` and `y` by linking the first root to the s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
+
+## Proof depends on
+
+- [Find](find.md)
+- [Find is Root](find-is-root.md)
+- [Link](link.md)
 
 ## Sources
 

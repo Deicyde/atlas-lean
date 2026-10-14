@@ -15,6 +15,10 @@ dominating set.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Indep Dominating](is-indep-dominating.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Domination](../../../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,7 @@ The Lucas sequence `U(P, Q)`, initialized by `0, 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](lucas-sequence-params.md)
 
 ## Sources
 

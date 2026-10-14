@@ -13,7 +13,15 @@ Full weighted `H²` summability supplies finite Laplacian energy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frequency](../../basic/frequency.md)
+- [Is H2](../../basic/is-h2.md)
+- [Torus](../../basic/torus.md)
+- [Fourier Coefficient](../../basic/fourier-coefficient.md)
+- [Frequency Weight](../../basic/frequency-weight.md)
+
+## Proof depends on
+
+- [Frequency Weight nonneg](frequency-weight-nonneg.md)
 
 ## Sources
 

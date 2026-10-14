@@ -13,7 +13,16 @@ Insertion increases the cached height by at most one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Correct](../part-01/cache-correct.md)
+- [Tree](../part-01/tree.md)
+- [Height](../part-01/height.md)
+- [Insert](../part-01/insert.md)
+
+## Proof depends on
+
+- [Balance](../part-01/balance.md)
+- [Cache Correct insert](cache-correct-insert.md)
+- [Height balance le](height-balance-le.md)
 
 ## Sources
 

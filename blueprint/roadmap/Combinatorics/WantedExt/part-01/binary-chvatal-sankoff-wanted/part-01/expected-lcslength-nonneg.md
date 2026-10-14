@@ -13,7 +13,14 @@ Expected LCS length is nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected LCSLength](expected-lcslength.md)
+
+## Proof depends on
+
+- [Binary String](binary-string.md)
+- [Binary String Pair](binary-string-pair.md)
+- [Lcs Length](lcs-length.md)
+- [Uniform Binary String Pairs](uniform-binary-string-pairs.md)
 
 ## Sources
 

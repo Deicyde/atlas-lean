@@ -15,6 +15,10 @@ converted exactly to `π²/16`; `0.616850` is only an approximation.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sphere Packing Density4](../../../MathlibExt/sphere-packing-density-four/part-01/sphere-packing-density4.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.SpherePackingDensityFourWanted](../../../../../sources/v2/WantedExt.md)

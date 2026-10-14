@@ -13,7 +13,8 @@ corner-order orientation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectilinear Cycle](rectilinear-cycle.md)
+- [Rectilinear Rectangle](rectilinear-rectangle.md)
 
 ## Sources
 

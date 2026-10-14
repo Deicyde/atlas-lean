@@ -14,7 +14,12 @@ a number that is both `k`-rough and `(k + 1)`-smooth must equal `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Rough](is-rough.md)
+
+## Proof depends on
+
+- [Lt of prime dvd](lt-of-prime-dvd.md)
+- [Ne zero](ne-zero.md)
 
 ## Sources
 

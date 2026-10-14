@@ -14,7 +14,13 @@ in the coprime ideals for `m2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Change Modulus](change-modulus.md)
+- [Ray Group Ambient](ray-group-ambient.md)
+
+## Proof depends on
+
+- [Change Modulus to Ambient Subgroup](change-modulus-to-ambient-subgroup.md)
+- [Coprime Fractional Ideals le of dvd](coprime-fractional-ideals-le-of-dvd.md)
 
 ## Sources
 

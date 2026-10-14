@@ -13,7 +13,11 @@ The signed primitive polynomial vanishes at the actual algebraic input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positive Primitive Int Minpoly](positive-primitive-int-minpoly.md)
+
+## Proof depends on
+
+- [Absolute](../primitive-int-minpoly.md)
 
 ## Sources
 

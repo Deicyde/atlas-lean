@@ -12,7 +12,11 @@ Each key is stored with at most one value (duplicate copies of a pair are allowe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cuckoo Hashing](cuckoo-hashing.md)
+
+## Proof depends on
+
+- [Stored](stored.md)
 
 ## Sources
 

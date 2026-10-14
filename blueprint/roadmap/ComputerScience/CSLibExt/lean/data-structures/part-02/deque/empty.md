@@ -12,7 +12,7 @@ The deque containing no elements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Deque](deque.md)
 
 ## Sources
 

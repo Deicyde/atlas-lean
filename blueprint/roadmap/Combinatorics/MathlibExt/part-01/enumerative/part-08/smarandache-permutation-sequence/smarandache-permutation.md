@@ -18,6 +18,10 @@ The Smarandache permutation sequence A004741
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Smarandache Prefix](smarandache-prefix.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.SmarandachePermutationSequence](../../../../../../../sources/v2/MathlibExt.md)

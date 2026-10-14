@@ -13,7 +13,13 @@ The membership wrapper uses at most one comparison beyond lower-bound search.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary Search First?](binary-search-first.md)
+
+## Proof depends on
+
+- [Binary Search First? time](binary-search-first-time.md)
+- [Lower Bound](lower-bound.md)
+- [Lower Bound time le](lower-bound-time-le.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ Profinite diagram obtained by forgetting to `ProfiniteGrp`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](index.md)
+
+## Proof depends on
+
+- [Finite Grp Diagram](finite-grp-diagram.md)
 
 ## Sources
 

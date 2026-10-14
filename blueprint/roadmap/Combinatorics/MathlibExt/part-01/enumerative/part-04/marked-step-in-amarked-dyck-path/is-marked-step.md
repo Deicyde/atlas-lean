@@ -15,7 +15,8 @@ concept `jis_sem_1ec0710af356bb3047cb9588`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Marked Dyck Path](marked-dyck-path.md)
+- [Marked Dyck Step](marked-dyck-step.md)
 
 ## Sources
 

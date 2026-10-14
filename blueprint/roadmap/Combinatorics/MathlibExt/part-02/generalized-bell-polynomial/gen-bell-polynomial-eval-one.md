@@ -13,7 +13,8 @@ Evaluation at one gives the corresponding generalized Bell number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Bell Number](gen-bell-number.md)
+- [Gen Bell Polynomial](gen-bell-polynomial.md)
 
 ## Sources
 

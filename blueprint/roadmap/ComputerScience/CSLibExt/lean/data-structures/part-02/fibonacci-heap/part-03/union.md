@@ -12,7 +12,11 @@ lean: Cslib.Algorithms.Lean.FibonacciHeap.union
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Heap](../part-02/fibonacci-heap.md)
+
+## Proof depends on
+
+- [Meld](meld.md)
 
 ## Sources
 

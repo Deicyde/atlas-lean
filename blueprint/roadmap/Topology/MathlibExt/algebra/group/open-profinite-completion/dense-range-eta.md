@@ -13,7 +13,12 @@ Corrected endpoint: density of `eta` under separate continuity of `*`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Completion](completion.md)
+- [Eta](eta.md)
+
+## Proof depends on
+
+- [Dense Range eta Fn](dense-range-eta-fn.md)
 
 ## Sources
 

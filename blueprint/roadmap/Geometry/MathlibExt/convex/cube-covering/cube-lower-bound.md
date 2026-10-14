@@ -13,7 +13,11 @@ The classical three-dimensional lower-bound row.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniform Interior Translate Bound](../covering/uniform-interior-translate-bound.md)
+
+## Proof depends on
+
+- [Uniform Interior Translate Bound ge two pow](uniform-interior-translate-bound-ge-two.md)
 
 ## Sources
 

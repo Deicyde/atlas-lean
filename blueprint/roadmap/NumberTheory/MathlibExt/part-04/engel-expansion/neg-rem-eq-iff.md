@@ -14,7 +14,7 @@ Characterization of the negated remainder: `negRem n k = u` iff `u < k` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neg Rem](neg-rem.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The infimal admissible operation exponent, with an empty family giving infinity.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Rectangular Circuit Exponent](has-rectangular-circuit-exponent.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Complexity.Algebraic.RectangularCircuitExponent](../../../../../../sources/v2/CSLibExt.md)

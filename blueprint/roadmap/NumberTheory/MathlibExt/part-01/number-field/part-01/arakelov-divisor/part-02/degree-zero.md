@@ -12,7 +12,11 @@ The degree-zero subgroup: the kernel of the size homomorphism.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arakelov Divisor](../part-01/arakelov-divisor.md)
+
+## Proof depends on
+
+- [Size Hom](../part-01/size-hom.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Every cyclic label is at least 1.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclic Label](cyclic-label.md)
 
 ## Sources
 

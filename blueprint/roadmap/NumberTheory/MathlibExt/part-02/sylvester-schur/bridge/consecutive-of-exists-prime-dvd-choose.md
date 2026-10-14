@@ -16,6 +16,10 @@ the consecutive block.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists dvd consecutive of prime dvd choose](exists-dvd-consecutive-of-prime-dvd-choo.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.Bridge](../../../../../../sources/v2/MathlibExt.md)

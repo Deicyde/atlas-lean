@@ -13,7 +13,12 @@ Cached rank after deletion refines the traversal rank of the erased result.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Cache Correct delete](cache-correct-delete.md)
+- [Ordered delete](ordered-delete.md)
 
 ## Sources
 

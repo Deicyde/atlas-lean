@@ -13,7 +13,11 @@ The tilted measure has the atomic mass representation of normalized Taylor terms
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Tilted Measure](wiman-tilted-measure.md)
+
+## Proof depends on
+
+- [Wiman Tilted Measure singleton](wiman-tilted-measure-singleton.md)
 
 ## Sources
 

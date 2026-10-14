@@ -15,6 +15,10 @@ Real prime-counting bound `π(⌊x⌋₊) ≤ x / 3`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pi third nat](pi-third-nat.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Theta](../../../../../../../../sources/v2/MathlibExt.md)

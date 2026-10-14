@@ -13,7 +13,8 @@ Every CDF error lies between zero and one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normal CDF](normal-cdf.md)
+- [Normalized Law](normalized-law.md)
 
 ## Sources
 

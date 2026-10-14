@@ -16,7 +16,7 @@ Every pure morphic word is morphic via the identity coding (concept
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Morphic](is-morphic.md)
 
 ## Sources
 

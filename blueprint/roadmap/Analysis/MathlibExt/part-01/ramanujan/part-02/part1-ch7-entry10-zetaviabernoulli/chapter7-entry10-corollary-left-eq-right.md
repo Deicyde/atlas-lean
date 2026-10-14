@@ -13,7 +13,12 @@ For `re r < -1` the two sides of the corollary agree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter7 Entry10 Corollary Left](chapter7-entry10-corollary-left.md)
+- [Chapter7 Entry10 Corollary Right](chapter7-entry10-corollary-right.md)
+
+## Proof depends on
+
+- [Chapter7 Admissible neg div](chapter7-admissible-neg-div.md)
 
 ## Sources
 

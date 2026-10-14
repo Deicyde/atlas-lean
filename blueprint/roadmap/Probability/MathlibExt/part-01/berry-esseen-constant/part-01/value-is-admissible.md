@@ -13,7 +13,12 @@ The optimizer is admissible, not just an unattained real projection.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible](is-admissible.md)
+- [Value](value.md)
+
+## Proof depends on
+
+- [Value bound](value-bound.md)
 
 ## Sources
 

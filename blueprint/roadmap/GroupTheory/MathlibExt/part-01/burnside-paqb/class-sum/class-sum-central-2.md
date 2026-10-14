@@ -13,7 +13,11 @@ Class sums commute with every group-algebra element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Class Sum](class-sum.md)
+
+## Proof depends on
+
+- [Class Sum central](class-sum-central.md)
 
 ## Sources
 

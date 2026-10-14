@@ -18,6 +18,10 @@ clause `definition`; source statements `jis_3a038c4cc84dc07fe8919282`,
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Modified Bessel I term](modified-bessel-i-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.ModifiedBesselFirstKind](../../../../../../../sources/v2/MathlibExt.md)

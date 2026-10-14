@@ -15,6 +15,11 @@ Finite iid McDiarmid inequality gives exponential tail bound above the mean.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mcdiarmid one sided finite iid general](mcdiarmid-one-sided-finite-iid-general.md)
+- [Mcdiarmid one sided finite iid of sum sq eq zero](mcdiarmid-one-sided-finite-iid-of-sum-sq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.McDiarmid](../../../../../sources/v2/MathlibExt.md)

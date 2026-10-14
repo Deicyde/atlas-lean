@@ -14,7 +14,12 @@ The successful optional lookup also witnesses that this saved entry is in bounds
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cut Rod Solution](cut-rod-solution.md)
+- [Extended Bottom Up Cut Rod](extended-bottom-up-cut-rod.md)
+
+## Proof depends on
+
+- [Extended Bottom Up Cut Rod first Cut](extended-bottom-up-cut-rod-first-cut.md)
 
 ## Sources
 

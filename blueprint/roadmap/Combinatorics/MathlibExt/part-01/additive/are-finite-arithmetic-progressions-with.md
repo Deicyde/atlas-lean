@@ -18,6 +18,10 @@ terms and different cardinalities.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is APOf Length With](../ap/basic/is-apof-length-with.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Additive.CommonDifferenceProgressions](../../../../../sources/v2/MathlibExt.md)

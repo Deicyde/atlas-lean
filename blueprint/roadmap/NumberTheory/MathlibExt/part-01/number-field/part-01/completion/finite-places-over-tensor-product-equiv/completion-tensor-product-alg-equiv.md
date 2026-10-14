@@ -14,7 +14,12 @@ later in N265.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Places Over](../finite-places-over/places-over.md)
+
+## Proof depends on
+
+- [Completion Tensor Product Map](../finite-places-over-tensor-product/completion-tensor-product-map.md)
+- [Completion Tensor Product Map bijective](completion-tensor-product-map-bijective.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ Membership in a translated fractional ideal via a forward witness.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Smul def](smul-def.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.FractionalIdeal.GroupAction](../../../../../sources/v2/MathlibExt.md)

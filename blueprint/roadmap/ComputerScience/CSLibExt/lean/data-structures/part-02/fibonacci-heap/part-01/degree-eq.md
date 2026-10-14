@@ -13,7 +13,14 @@ The stored degree of a valid tree is its number of children.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Tree](fibonacci-tree.md)
+- [Valid](valid.md)
+- [Children](children.md)
+- [Degree](degree.md)
+
+## Proof depends on
+
+- [Elements](elements.md)
 
 ## Sources
 

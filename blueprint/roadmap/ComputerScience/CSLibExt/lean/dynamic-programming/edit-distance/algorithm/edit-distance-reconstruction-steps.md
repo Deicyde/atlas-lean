@@ -13,7 +13,7 @@ Reconstruction charges exactly one step per emitted operation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edit Distance](edit-distance.md)
 
 ## Sources
 

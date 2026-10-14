@@ -16,6 +16,10 @@ prefix-product valuation over `S`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [P Ordering Valuation](p-ordering-valuation.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DedekindDomain.POrdering](../../../../../sources/v2/MathlibExt.md)

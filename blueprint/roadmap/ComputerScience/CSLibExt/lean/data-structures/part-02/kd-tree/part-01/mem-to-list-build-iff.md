@@ -13,7 +13,12 @@ Membership in the point list of a built tree is membership in the input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build](build.md)
+- [To List](to-list.md)
+
+## Proof depends on
+
+- [To List build perm](to-list-build-perm.md)
 
 ## Sources
 

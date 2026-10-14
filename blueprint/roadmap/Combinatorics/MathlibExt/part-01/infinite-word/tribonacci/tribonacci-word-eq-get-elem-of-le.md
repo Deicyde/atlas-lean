@@ -13,7 +13,14 @@ Every sufficiently late approximant agrees with the infinite Tribonacci word.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Letter](tribonacci-letter.md)
+- [Tribonacci Word](tribonacci-word.md)
+- [Tribonacci Word Approx](tribonacci-word-approx.md)
+
+## Proof depends on
+
+- [Tribonacci Word Approx length ge](tribonacci-word-approx-length-ge.md)
+- [Tribonacci Word Approx prefix](tribonacci-word-approx-prefix.md)
 
 ## Sources
 

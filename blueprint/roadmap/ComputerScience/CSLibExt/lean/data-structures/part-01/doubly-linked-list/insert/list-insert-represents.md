@@ -14,7 +14,13 @@ representation, with no head write. Freshness is a proof premise, not an executi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../basic/node.md)
+- [Represents](../basic/represents.md)
+- [List Insert](list-insert.md)
+
+## Proof depends on
+
+- [List Insert get](list-insert-get.md)
 
 ## Sources
 

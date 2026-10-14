@@ -14,6 +14,10 @@ Finite-volume free energy density.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ising Partition Function](ising-partition-function.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.IsingPhaseTransitionWanted](../../../../../sources/v2/WantedExt.md)

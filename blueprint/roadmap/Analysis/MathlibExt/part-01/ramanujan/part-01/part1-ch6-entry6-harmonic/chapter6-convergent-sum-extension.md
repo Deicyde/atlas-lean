@@ -16,6 +16,11 @@ Ramanujan's extension of the partial sums of `f` to real arguments,
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter6 Derived Series Constant](chapter6-derived-series-constant.md)
+- [Chapter6 Shifted Derived Series Term](chapter6-shifted-derived-series-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch6Entry6Harmonic](../../../../../../../sources/v2/MathlibExt.md)

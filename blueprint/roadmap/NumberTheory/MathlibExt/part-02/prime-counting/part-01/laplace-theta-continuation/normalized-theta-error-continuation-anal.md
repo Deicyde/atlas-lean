@@ -13,7 +13,12 @@ Analyticity of the normalized-error continuation on 0 ≤ re s.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Theta Error Continuation](normalized-theta-error-continuation.md)
+
+## Proof depends on
+
+- [Shifted Log Dirichlet Continuation](shifted-log-dirichlet-continuation.md)
+- [Shifted Log Dirichlet Continuation analytic On](shifted-log-dirichlet-continuation-analy.md)
 
 ## Sources
 

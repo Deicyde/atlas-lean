@@ -13,7 +13,7 @@ Replaces the first child edge whose label starts with `c` by `newEdge`, appendin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Radix Trie](radix-trie.md)
 
 ## Sources
 

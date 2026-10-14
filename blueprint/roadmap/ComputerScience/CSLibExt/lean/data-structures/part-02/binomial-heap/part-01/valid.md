@@ -13,7 +13,7 @@ A binomial tree has recursively valid children of ranks `r - 1, ..., 0`, exact s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Tree](binomial-tree.md)
 
 ## Sources
 

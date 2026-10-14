@@ -14,7 +14,21 @@ point-updated array.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fenwick Tree](../part-01/fenwick-tree.md)
+- [Valid](../part-01/valid.md)
+- [Add](add.md)
+
+## Proof depends on
+
+- [Block Sum](../part-01/block-sum.md)
+- [Lowbit](../part-01/lowbit.md)
+- [Lowbit div odd](../part-01/lowbit-div-odd.md)
+- [Lowbit dvd](../part-01/lowbit-dvd.md)
+- [Lowbit le](../part-01/lowbit-le.md)
+- [Lowbit pos](../part-01/lowbit-pos.md)
+- [Lowbit two pow](../part-01/lowbit-two-pow.md)
+- [Size](../part-01/size.md)
+- [Size eq length of valid](../part-01/size-eq-length-of-valid.md)
 
 ## Sources
 

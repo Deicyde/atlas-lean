@@ -14,6 +14,10 @@ Least number of strictly smaller-diameter pieces, with infinity if no finite cov
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Borsuk Cover](has-borsuk-cover.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.BorsukNumber](../../../../../../sources/v2/MathlibExt.md)

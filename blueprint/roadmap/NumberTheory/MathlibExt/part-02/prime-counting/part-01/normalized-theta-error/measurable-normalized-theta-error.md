@@ -13,7 +13,7 @@ Global measurability of the normalized theta error.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Theta Error](../laplace-theta-continuation/normalized-theta-error.md)
 
 ## Sources
 

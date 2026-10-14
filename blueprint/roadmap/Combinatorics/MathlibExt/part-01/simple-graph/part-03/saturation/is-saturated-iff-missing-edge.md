@@ -14,7 +14,11 @@ iff it is `H`-free and every one-edge extension contains a copy of `H`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Saturated](is-saturated.md)
+
+## Proof depends on
+
+- [Is Saturated iff forall gt](is-saturated-iff-forall-gt.md)
 
 ## Sources
 

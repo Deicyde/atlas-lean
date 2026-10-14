@@ -13,7 +13,7 @@ Under finiteness, the cardinal is the cast of `Nat.card`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tate Cohomology Card](tate-cohomology-card.md)
 
 ## Sources
 

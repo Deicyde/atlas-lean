@@ -23,7 +23,15 @@ and uniqueness of laws on `C([0,1])` from finite-dimensional distributions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Donsker Process](donsker-process.md)
+- [Icc To NNReal](icc-to-nnreal.md)
+
+## Proof depends on
+
+- [Continuous Map measure ext of finset eval](continuous-map-measure-ext-of-finset-eva.md)
+- [Donsker Process apply eq](donsker-process-apply-eq.md)
+- [Donsker Weight CM](donsker-weight-cm.md)
+- [Etemadi maximal inequality](etemadi-maximal-inequality.md)
 
 ## Sources
 

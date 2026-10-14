@@ -14,7 +14,15 @@ for the two power-growth arguments.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Growth](coefficient-exponential-family/wiman-growth.md)
+
+## Proof depends on
+
+- [Cont Diff two wiman Growth](cumulant-moments/cont-diff-two-wiman-growth.md)
+- [Deriv wiman Growth eq expectation](cumulant-moments/deriv-wiman-growth-eq-expectation.md)
+- [Infinite Taylor Support](infinite-support-wiman-taylor-coefficien.md)
+- [Iterated Deriv two wiman Growth nonneg](cumulant-moments/iterated-deriv-two-wiman-growth-nonneg.md)
+- [Wiman Tilted Measure](coefficient-exponential-family/wiman-tilted-measure.md)
 
 ## Sources
 

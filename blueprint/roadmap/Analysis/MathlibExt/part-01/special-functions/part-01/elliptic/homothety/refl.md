@@ -13,7 +13,7 @@ Homothety of period pairs is reflexive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Homothetic](is-homothetic.md)
 
 ## Sources
 

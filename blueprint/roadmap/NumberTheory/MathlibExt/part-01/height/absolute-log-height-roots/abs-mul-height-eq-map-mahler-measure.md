@@ -16,7 +16,11 @@ Mahler measure of a primitive integral minimal polynomial. Source: arXiv:2608.15
 
 ## Depends on
 
-This node has no prerequisites.
+- [Absolute](../primitive-int-minpoly.md)
+
+## Proof depends on
+
+- [Abs Mul Height₁ eq map Mahler Measure of is Integral](abs-mul-height-eq-map-mahler-measure-of.md)
 
 ## Sources
 

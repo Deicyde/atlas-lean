@@ -13,7 +13,12 @@ Singletons are `d`-Lipschitz parametrizable, via one constant map.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lipschitz Parametrizable](is-lipschitz-parametrizable.md)
+
+## Proof depends on
+
+- [Unit Cube](unit-cube.md)
+- [Unit Cube zero mem](unit-cube-zero-mem.md)
 
 ## Sources
 

@@ -16,6 +16,11 @@ of cycles, where fixed points are included as one-cycles.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cycle Quotient Count](cycle-quotient-count.md)
+- [Cycle Quotient Count eq](cycle-quotient-count-eq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.Stirling](../../../../../../../sources/v2/MathlibExt.md)

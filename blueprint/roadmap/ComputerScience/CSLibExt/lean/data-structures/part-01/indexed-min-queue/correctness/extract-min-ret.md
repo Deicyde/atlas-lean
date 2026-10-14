@@ -13,7 +13,12 @@ Successful extraction refines canonical extraction and removes only its identity
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Min Queue](../basic/indexed-min-queue.md)
+- [Extract Min](../basic/extract-min.md)
+
+## Proof depends on
+
+- [Position eq none iff](position-eq-none-iff.md)
 
 ## Sources
 

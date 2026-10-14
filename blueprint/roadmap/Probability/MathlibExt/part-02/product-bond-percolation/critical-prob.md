@@ -21,6 +21,11 @@ global "some infinite cluster exists" event is measurable for the
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gbernoulli Law](gbernoulli-law.md)
+- [Gcluster](gcluster.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.ProductBondPercolation](../../../../../sources/v2/MathlibExt.md)

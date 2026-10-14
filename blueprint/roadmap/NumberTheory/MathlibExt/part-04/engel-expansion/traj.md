@@ -15,6 +15,10 @@ absorbing at `0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Neg Rem](neg-rem.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.EngelExpansion](../../../../../sources/v2/MathlibExt.md)

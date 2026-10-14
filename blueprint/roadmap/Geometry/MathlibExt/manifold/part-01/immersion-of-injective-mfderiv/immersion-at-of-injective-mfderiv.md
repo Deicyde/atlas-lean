@@ -19,6 +19,10 @@ the resulting product map in extended charts, and use its local inverse as a tar
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Of injective mfderiv of closed Complemented range](of-injective-mfderiv-of-closed-complemen.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.ImmersionOfInjectiveMFDeriv](../../../../../../sources/v2/MathlibExt.md)

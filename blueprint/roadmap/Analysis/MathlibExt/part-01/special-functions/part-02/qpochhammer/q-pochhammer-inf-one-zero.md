@@ -13,7 +13,11 @@ The first factor vanishes at `(a, q) = (1, 0)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Pochhammer Inf](q-pochhammer-inf.md)
+
+## Proof depends on
+
+- [Has Prod q Pochhammer Inf](has-prod-q-pochhammer-inf.md)
 
 ## Sources
 

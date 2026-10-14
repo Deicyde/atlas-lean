@@ -13,7 +13,7 @@ The saved-bucket computation preserves every input occurrence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bucket Sort](bucket-sort.md)
 
 ## Sources
 

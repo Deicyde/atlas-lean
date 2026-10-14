@@ -13,7 +13,16 @@ The folded representative trie is a valid x-fast trie.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mk Reps](mk-reps.md)
+- [Valid](../../xfast-trie/part-01/valid.md)
+
+## Proof depends on
+
+- [XFast Trie](../../xfast-trie/part-01/xfast-trie.md)
+- [Empty](../../xfast-trie/part-01/empty.md)
+- [Insert](../../xfast-trie/part-01/insert.md)
+- [Valid empty](../../xfast-trie/part-01/valid-empty.md)
+- [Valid insert](../../xfast-trie/part-01/valid-insert.md)
 
 ## Sources
 

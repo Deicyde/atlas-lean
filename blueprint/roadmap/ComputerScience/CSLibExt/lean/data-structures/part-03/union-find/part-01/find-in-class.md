@@ -13,7 +13,13 @@ Every queried vertex is equivalent to its representative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equivalent](equivalent.md)
+- [Forest](forest.md)
+- [Find](find.md)
+
+## Proof depends on
+
+- [Find is Root](find-is-root.md)
 
 ## Sources
 

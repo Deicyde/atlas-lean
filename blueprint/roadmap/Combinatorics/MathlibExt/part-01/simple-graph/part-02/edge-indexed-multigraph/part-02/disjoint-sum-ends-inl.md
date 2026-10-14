@@ -13,7 +13,8 @@ A left edge keeps its endpoints in a disjoint sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](../part-01/edge-indexed-multigraph.md)
+- [Disjoint Sum](disjoint-sum.md)
 
 ## Sources
 

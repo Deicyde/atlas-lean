@@ -16,6 +16,10 @@ preceding fixed-size window.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Keith Number With Digits](is-keith-number-with-digits.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.KeithNumber](../../../../../sources/v2/MathlibExt.md)

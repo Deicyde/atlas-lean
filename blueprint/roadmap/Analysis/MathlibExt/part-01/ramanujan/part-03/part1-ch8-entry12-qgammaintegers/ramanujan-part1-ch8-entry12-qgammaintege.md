@@ -18,6 +18,10 @@ rather than `chapter8UnitPow`; the two agree there by `chapter8UnitPow_eq_cpow`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter8 Unit Pow eq cpow](chapter8-unit-pow-eq-cpow.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch8Entry12Qgammaintegers](../../../../../../../sources/v2/MathlibExt.md)

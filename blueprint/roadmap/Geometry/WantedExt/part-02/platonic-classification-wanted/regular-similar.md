@@ -12,7 +12,12 @@ The similarity relation on regular polytopes in dimension `d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convex Polytope](convex-polytope.md)
+- [Regular Polytopes](regular-polytopes.md)
+
+## Proof depends on
+
+- [Similar](similar.md)
 
 ## Sources
 

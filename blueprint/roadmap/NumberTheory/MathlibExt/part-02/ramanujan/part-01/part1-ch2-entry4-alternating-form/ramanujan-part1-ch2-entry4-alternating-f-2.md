@@ -17,6 +17,10 @@ Proves `Wanted` entry `ramanujan_part1_ch2_entry4_alternating_form`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ramanujan part1 ch2 entry4 alternating form general](ramanujan-part1-ch2-entry4-alternating-f.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch2Entry4AlternatingForm](../../../../../../../sources/v2/MathlibExt.md)

@@ -14,6 +14,10 @@ A Hamiltonian cycle in the square whose two edges at `x` come from the original 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Square](../square/square.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.StrongSquareCycle](../../../../../../../sources/v2/MathlibExt.md)

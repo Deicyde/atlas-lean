@@ -13,7 +13,11 @@ The empty set is `d`-Lipschitz parametrizable, via the empty family.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lipschitz Parametrizable](is-lipschitz-parametrizable.md)
+
+## Proof depends on
+
+- [Unit Cube](unit-cube.md)
 
 ## Sources
 

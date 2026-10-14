@@ -18,7 +18,7 @@ source statements `jis_1986849a138b5f4709dd284a`, `jis_2b78f59babf40128fececb65`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Josephus](josephus.md)
 
 ## Sources
 

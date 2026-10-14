@@ -14,7 +14,8 @@ itself a permutation polynomial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KComplete](is-kcomplete.md)
+- [Is Permutation Polynomial](is-permutation-polynomial.md)
 
 ## Sources
 

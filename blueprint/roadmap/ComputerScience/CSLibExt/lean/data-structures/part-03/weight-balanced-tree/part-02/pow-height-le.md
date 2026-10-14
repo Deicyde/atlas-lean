@@ -17,7 +17,8 @@ has weight at most three quarters of the weight of the node.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balanced](../part-01/balanced.md)
+- [Weight](../part-01/weight.md)
 
 ## Sources
 

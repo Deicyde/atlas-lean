@@ -13,7 +13,13 @@ Insertion sort performs at most `n * (n - 1) / 2` comparisons on a list of lengt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Insertion Sort](insertion-sort.md)
+
+## Proof depends on
+
+- [Insertion Sort Insert](insertion-sort-insert.md)
+- [Insertion Sort Insert time le](insertion-sort-insert-time-le.md)
+- [Insertion Sort perm](insertion-sort-perm.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Adjacency in `Kₙ` is inequality of vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fin Graph](fin-graph.md)
+- [Clique Fin Graph](clique-fin-graph.md)
 
 ## Sources
 

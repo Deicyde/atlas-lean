@@ -13,7 +13,19 @@ Composition of the projection with the transported residue-sign map.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Group](../group/ray-class-group.md)
+- [Coprime Ideal Class Map](coprime-ideal-class-map.md)
+- [Principal Ray Ideal Map](../principal-ideal/principal-ray-ideal-map.md)
+- [Ray Class To Class Group](ray-class-to-class-group.md)
+- [Residue Sign To Ray Class Group](../quotient-to-ray-class/residue-sign-to-ray-class-group.md)
+
+## Proof depends on
+
+- [Ray Class Map](../group/ray-class-map.md)
+- [Ray Class To Class Group ray Class Map](ray-class-to-class-group-ray-class-map.md)
+- [Ray Element Class Map](../quotient-to-ray-class/ray-element-class-map.md)
+- [Ray Element Class Map apply](../quotient-to-ray-class/ray-element-class-map-apply.md)
+- [Residue Sign To Ray Class Group residue Sign Map](../quotient-to-ray-class/residue-sign-to-ray-class-group-residue.md)
 
 ## Sources
 

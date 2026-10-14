@@ -14,6 +14,11 @@ Affine solutions of Weierstrass equations are equivalent under a variable change
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Equation map Affine Coordinates iff](equation-map-affine-coordinates-iff.md)
+- [Map Affine Coordinates](map-affine-coordinates.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.EllipticCurve.VariableChangePoint](../../../../../sources/v2/MathlibExt.md)

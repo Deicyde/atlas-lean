@@ -13,7 +13,12 @@ Every remaining key of an ordered tree is larger than the removed minimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Erase Min](erase-min.md)
+- [Min D](min-d.md)
+
+## Proof depends on
+
+- [Min D mem](min-d-mem.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Every term of the generalized Sylvester sequence is positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Sylvester](generalized-sylvester.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ The relation of two number fields being isomorphic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number Field Of Bounded Discriminant](number-field-of-bounded-discriminant.md)
+
+## Proof depends on
+
+- [Number Field Of Degree](number-field-of-degree.md)
 
 ## Sources
 

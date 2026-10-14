@@ -13,7 +13,8 @@ The predecessor is `some y` exactly when `y` is the greatest stored key below `x
 
 ## Depends on
 
-This node has no prerequisites.
+- [XFast Trie](../part-01/xfast-trie.md)
+- [Predecessor](../part-01/predecessor.md)
 
 ## Sources
 

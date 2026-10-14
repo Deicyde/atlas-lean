@@ -14,7 +14,11 @@ Blocks form a compatible chain of prefixes
 
 ## Depends on
 
-This node has no prerequisites.
+- [Block](block.md)
+
+## Proof depends on
+
+- [Block prefix succ](block-prefix-succ.md)
 
 ## Sources
 

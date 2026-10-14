@@ -14,7 +14,7 @@ Note: we actually index the `xᵢ` starting from zero, for convenience.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Body Of Revolution](body-of-revolution.md)
 
 ## Sources
 

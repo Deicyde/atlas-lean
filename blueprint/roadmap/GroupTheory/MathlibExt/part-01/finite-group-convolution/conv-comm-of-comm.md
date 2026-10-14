@@ -16,7 +16,7 @@ as in the commutative group-algebra argument in Terras, Ch. 2.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conv](conv.md)
 
 ## Sources
 

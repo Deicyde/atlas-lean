@@ -12,7 +12,12 @@ The entropy convention for actual log-concave laws.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log Concave Law](log-concave-law.md)
+
+## Proof depends on
+
+- [Covariance Matrix](covariance-matrix.md)
+- [Differential Entropy](differential-entropy.md)
 
 ## Sources
 

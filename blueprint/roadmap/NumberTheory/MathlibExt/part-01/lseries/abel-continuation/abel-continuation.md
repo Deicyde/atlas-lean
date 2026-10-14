@@ -15,6 +15,10 @@ in the exact conventions of `LSeries_eq_mul_integral`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Abel Summatory](abel-summatory.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.LSeries.AbelContinuation](../../../../../../sources/v2/MathlibExt.md)

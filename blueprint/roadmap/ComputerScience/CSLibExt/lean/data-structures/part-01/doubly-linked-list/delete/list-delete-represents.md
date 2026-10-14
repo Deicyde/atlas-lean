@@ -13,7 +13,14 @@ Deleting a represented member removes exactly that identity from the represented
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../basic/node.md)
+- [Represents](../basic/represents.md)
+- [List Delete](list-delete.md)
+
+## Proof depends on
+
+- [List Delete get](list-delete-get.md)
+- [List Delete head](list-delete-head.md)
 
 ## Sources
 

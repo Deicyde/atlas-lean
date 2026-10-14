@@ -13,7 +13,15 @@ Deletion preserves exact compact-prefix occupancy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](../basic/part-01/table.md)
+- [Well Formed](../basic/part-01/well-formed.md)
+- [Table Delete](table-delete.md)
+
+## Proof depends on
+
+- [Table Delete num](table-delete-num.md)
+- [Table Delete slots](table-delete-slots.md)
+- [Well Formed iff](../basic/part-01/well-formed-iff.md)
 
 ## Sources
 

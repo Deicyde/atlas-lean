@@ -12,7 +12,11 @@ Semantic equality of tries: every list key has the same lookup result.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trie](trie.md)
+
+## Proof depends on
+
+- [Lookup](lookup.md)
 
 ## Sources
 

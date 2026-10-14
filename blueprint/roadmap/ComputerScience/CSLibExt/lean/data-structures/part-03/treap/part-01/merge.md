@@ -12,7 +12,7 @@ Merge two trees, choosing the smaller root priority at every step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
 
 ## Sources
 

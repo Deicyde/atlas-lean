@@ -13,7 +13,7 @@ Independence persists to subsets of the independent set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Independent](is-independent.md)
 
 ## Sources
 

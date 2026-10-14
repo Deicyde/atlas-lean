@@ -13,7 +13,7 @@ Source initial value at `4`: `p_m(4) = 6 * m - 8` for `3 ≤ s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polygonal Number](polygonal-number.md)
 
 ## Sources
 

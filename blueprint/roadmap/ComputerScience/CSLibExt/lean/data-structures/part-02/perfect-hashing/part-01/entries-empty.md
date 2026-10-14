@@ -13,7 +13,14 @@ The empty table has no entries.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empty](empty.md)
+- [Entries](entries.md)
+
+## Proof depends on
+
+- [Stored](stored.md)
+- [Mem entries iff](mem-entries-iff.md)
+- [Not stored empty](not-stored-empty.md)
 
 ## Sources
 

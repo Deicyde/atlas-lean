@@ -29,7 +29,14 @@ the preferred edges are reset either way.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](../part-03/state.md)
+
+## Proof depends on
+
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Cut](cut.md)
+- [Make Root](make-root.md)
+- [Adjacent B](../part-01/adjacent-b.md)
 
 ## Sources
 

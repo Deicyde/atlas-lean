@@ -13,7 +13,14 @@ Main triangle inequality for strictly positive monotone modular valuations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Modular Valuation](is-modular-valuation.md)
+- [Is Strictly Positive](is-strictly-positive.md)
+- [Jaccard Dist](jaccard-dist.md)
+
+## Proof depends on
+
+- [Gilbert Condition](gilbert-condition.md)
+- [Jaccard Dist triangle of gilbert Condition](jaccard-dist-triangle-of-gilbert-conditi.md)
 
 ## Sources
 

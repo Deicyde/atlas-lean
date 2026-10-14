@@ -13,7 +13,16 @@ Erasure preserves weighted path length after casting to the reals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](../../huffman/part-01/huffman-tree.md)
+- [Erase Symbols](erase-symbols.md)
+- [Weighted Path Length](../../huffman/part-01/weighted-path-length.md)
+- [Path Cost](path-cost.md)
+
+## Proof depends on
+
+- [Erase Symbols total Weight](erase-symbols-total-weight.md)
+- [Total Weight](../../huffman/part-01/total-weight.md)
+- [Total Weight](total-weight.md)
 
 ## Sources
 

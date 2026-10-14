@@ -13,7 +13,7 @@ aggregates and every cached length equal to the sum of its children's lengths.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Segment Tree](segment-tree.md)
 
 ## Sources
 

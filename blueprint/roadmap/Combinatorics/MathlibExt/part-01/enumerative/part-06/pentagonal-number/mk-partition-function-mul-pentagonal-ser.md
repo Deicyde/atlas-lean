@@ -14,7 +14,11 @@ which is `∏ (1 - X ^ (i + 1))`, is `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Function](partition-function.md)
+
+## Proof depends on
+
+- [Mk partition Function eq gen Fun](mk-partition-function-eq-gen-fun.md)
 
 ## Sources
 

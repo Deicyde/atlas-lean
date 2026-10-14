@@ -15,7 +15,12 @@ contradicts the `.not_dvd` projection of any putative tame proof.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Wildly Ramified At](is-wildly-ramified-at.md)
+
+## Proof depends on
+
+- [Is Residue Separable At](is-residue-separable-at.md)
+- [Is Tamely Ramified At](is-tamely-ramified-at.md)
 
 ## Sources
 

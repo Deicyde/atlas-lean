@@ -12,7 +12,12 @@ lean: MathlibExt.GameTheory.SocialChoice.GibbardSatterthwaiteWanted.IsDictator
 
 ## Depends on
 
-This node has no prerequisites.
+- [Social Choice Function](social-choice-function.md)
+
+## Proof depends on
+
+- [Is Top Ranked](is-top-ranked.md)
+- [Profile](profile.md)
 
 ## Sources
 

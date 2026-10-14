@@ -13,7 +13,14 @@ The level-`R` Selberg weight at `1` is `1` when `1 ≤ R`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Level Weights](level-weights.md)
+
+## Proof depends on
+
+- [Level Set](level-set.md)
+- [Level Sum](level-sum.md)
+- [Level Sum ge one](level-sum-ge-one.md)
+- [Level Y](level-y.md)
 
 ## Sources
 

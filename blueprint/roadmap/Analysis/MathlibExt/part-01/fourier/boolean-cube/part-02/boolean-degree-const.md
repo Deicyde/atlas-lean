@@ -13,7 +13,13 @@ Constants have Boolean degree zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](../part-01/bool-cube.md)
+- [Boolean Degree](boolean-degree.md)
+
+## Proof depends on
+
+- [Multilinear Extension](../part-01/multilinear-extension.md)
+- [Multilinear Extension const](multilinear-extension-const.md)
 
 ## Sources
 

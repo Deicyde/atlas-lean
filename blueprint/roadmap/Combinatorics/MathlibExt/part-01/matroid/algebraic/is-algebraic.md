@@ -17,6 +17,10 @@ universe-local form of algebraicity for `E : Type v`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Algebraic Representation Some Field](algebraic-representation-some-field.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Matroid.Algebraic](../../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,7 @@ Executable closed-interval overlap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Interval](interval.md)
 
 ## Sources
 

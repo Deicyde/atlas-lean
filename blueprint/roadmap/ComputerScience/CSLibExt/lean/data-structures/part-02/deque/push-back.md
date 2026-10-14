@@ -12,7 +12,7 @@ Add an element at the back of a deque.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Deque](deque.md)
 
 ## Sources
 

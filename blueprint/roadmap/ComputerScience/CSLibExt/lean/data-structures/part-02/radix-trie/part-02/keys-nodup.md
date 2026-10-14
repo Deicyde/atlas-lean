@@ -13,7 +13,14 @@ The stored keys of a valid radix trie are duplicate-free.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Radix Trie](../part-01/radix-trie.md)
+- [Valid](../part-01/valid.md)
+- [Keys](keys.md)
+
+## Proof depends on
+
+- [Root Compact](../part-01/root-compact.md)
+- [Entries](entries.md)
 
 ## Sources
 

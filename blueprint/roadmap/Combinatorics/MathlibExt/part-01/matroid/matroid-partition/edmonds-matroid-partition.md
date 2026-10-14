@@ -17,6 +17,10 @@ Edmonds' matroid partition theorem (k-partition form), finite-type version:
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists common indep of cut le](../matroid-intersection/exists-common-indep-of-cut-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Matroid.MatroidPartition](../../../../../../sources/v2/MathlibExt.md)

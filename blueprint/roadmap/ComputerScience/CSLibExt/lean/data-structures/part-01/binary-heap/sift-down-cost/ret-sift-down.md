@@ -13,7 +13,12 @@ Erasing events recovers canonical sift-down for every array and index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sift Down](sift-down.md)
+
+## Proof depends on
+
+- [Ret timed Smaller Child](ret-timed-smaller-child.md)
+- [Timed Smaller Child](timed-smaller-child.md)
 
 ## Sources
 

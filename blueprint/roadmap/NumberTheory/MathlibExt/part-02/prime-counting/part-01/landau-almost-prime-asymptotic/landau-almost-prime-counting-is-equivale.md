@@ -15,7 +15,11 @@ Landau's theorem on `k`-almost primes: the counting function
 
 ## Depends on
 
-This node has no prerequisites.
+- [Almost Prime Counting](almost-prime-counting.md)
+
+## Proof depends on
+
+- [Theta is Equivalent of prime Counting is Equivalent](../chebyshev/theta-is-equivalent-of-prime-counting-is.md)
 
 ## Sources
 

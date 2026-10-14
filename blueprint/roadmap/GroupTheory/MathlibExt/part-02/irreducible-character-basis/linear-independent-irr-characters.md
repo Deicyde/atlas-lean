@@ -19,6 +19,10 @@ combination of pairwise distinct irreducible characters.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Linear Independent character](linear-independent-character.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.IrreducibleCharacterBasis](../../../../../sources/v2/MathlibExt.md)

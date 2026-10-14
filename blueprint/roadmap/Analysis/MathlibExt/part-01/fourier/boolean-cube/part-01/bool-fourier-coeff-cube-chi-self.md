@@ -13,7 +13,13 @@ A Fourier character has normalized coefficient one at its own index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Fourier Coeff](bool-fourier-coeff.md)
+- [Cube Chi](cube-chi.md)
+
+## Proof depends on
+
+- [Bool Cube](bool-cube.md)
+- [Cube Chi mul self](cube-chi-mul-self.md)
 
 ## Sources
 

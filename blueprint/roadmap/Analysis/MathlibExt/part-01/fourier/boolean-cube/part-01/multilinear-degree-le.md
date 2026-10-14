@@ -13,7 +13,11 @@ This is the degree of the multilinear polynomial representing the function on th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](bool-cube.md)
+
+## Proof depends on
+
+- [Bool Fourier Coeff](bool-fourier-coeff.md)
 
 ## Sources
 

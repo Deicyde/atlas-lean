@@ -13,7 +13,15 @@ Every key found by lookup in the built trie comes from the list, with its value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build From](build-from.md)
+- [Lookup](../part-01/lookup.md)
+
+## Proof depends on
+
+- [Insert](../part-01/insert.md)
+- [Lookup empty](../part-01/lookup-empty.md)
+- [Lookup insert of ne](../part-01/lookup-insert-of-ne.md)
+- [Lookup insert same](../part-01/lookup-insert-same.md)
 
 ## Sources
 

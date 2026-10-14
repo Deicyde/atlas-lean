@@ -13,7 +13,7 @@ Every finite sequence of Grover steps preserves squared norm.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grover Iterate](grover-iterate.md)
 
 ## Sources
 

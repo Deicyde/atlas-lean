@@ -13,7 +13,16 @@ Vanishing single valuation term off the support.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q9](../../grid/part-01/q9.md)
+- [Nu9term](nu9term.md)
+- [Ratio9](../../lower/part-01/ratio9.md)
+
+## Proof depends on
+
+- [N10m](../../lower/part-01/n10m.md)
+- [N1m](../../lower/part-01/n1m.md)
+- [N9m](../../lower/part-01/n9m.md)
+- [Vp ratio9](vp-ratio9.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Consecutive bisection intervals are nested.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bisection Sequence](is-bisection-sequence.md)
 
 ## Sources
 

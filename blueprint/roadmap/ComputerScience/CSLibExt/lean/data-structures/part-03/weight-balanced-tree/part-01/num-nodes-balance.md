@@ -13,7 +13,7 @@ Rebalancing does not change the number of keys.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balance](balance.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The total secondary space: the total number of secondary slots, `∑ i, mᵢ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](../part-01/perfect-hashing.md)
 
 ## Sources
 

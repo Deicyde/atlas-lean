@@ -13,7 +13,7 @@ The defining equation for `generalizedFussCatalanNumber`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fuss Catalan Number](generalized-fuss-catalan-number.md)
 
 ## Sources
 

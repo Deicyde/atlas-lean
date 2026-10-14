@@ -14,7 +14,17 @@ The `WithAbs` embedding has dense range, inherited from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Place](place.md)
+- [Completed Field](completed-field.md)
+- [Completed Field Bundle](completed-field-bundle.md)
+- [Absolute Value](absolute-value.md)
+- [Bundle](bundle.md)
+- [With Abs Embedding](with-abs-embedding.md)
+
+## Proof depends on
+
+- [Dense Range embedding](dense-range-embedding.md)
+- [Embedding](embedding.md)
 
 ## Sources
 

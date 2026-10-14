@@ -13,7 +13,12 @@ A successful decrease replaces its key and preserves every identity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Min Queue](../basic/indexed-min-queue.md)
+- [Decrease Key](../basic/decrease-key.md)
+
+## Proof depends on
+
+- [Position valid](position-valid.md)
 
 ## Sources
 

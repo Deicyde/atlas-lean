@@ -13,7 +13,7 @@ Maximality applied: an admissible competitor `M / K` embeds into `L` over `K`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Hilbert Class Field](is-hilbert-class-field.md)
 
 ## Sources
 

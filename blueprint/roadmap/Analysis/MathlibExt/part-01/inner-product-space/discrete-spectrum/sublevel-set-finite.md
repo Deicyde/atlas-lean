@@ -14,7 +14,8 @@ bounds it by an initial segment.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonnegative Discrete Spectrum](nonnegative-discrete-spectrum.md)
+- [Sublevel Set](sublevel-set.md)
 
 ## Sources
 

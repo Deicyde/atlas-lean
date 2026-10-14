@@ -13,7 +13,18 @@ Distinct matrix entries require distinct charged nodes, over every field.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arithmetic Circuit](../arithmetic-circuit/arithmetic-circuit.md)
+- [Is Matrix Multiplication](is-matrix-multiplication.md)
+- [Matrix Arithmetic Circuit](matrix-arithmetic-circuit.md)
+
+## Proof depends on
+
+- [Evaluate](../arithmetic-circuit/evaluate-3.md)
+- [Evaluate Node](../arithmetic-circuit/evaluate-node.md)
+- [Arithmetic Operand](../arithmetic-circuit/arithmetic-operand.md)
+- [Evaluate](../arithmetic-circuit/evaluate.md)
+- [Output is node](output-is-node.md)
+- [Matrix Input](matrix-input.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ A vanishing smallest singular value selects the infinite branch.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Condition Number](condition-number.md)
 
 ## Sources
 

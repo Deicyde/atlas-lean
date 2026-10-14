@@ -12,7 +12,7 @@ Source-legal transitions, independent of the order representing cache contents.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](cache-event.md)
 
 ## Sources
 

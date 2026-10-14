@@ -13,7 +13,15 @@ The public node constructor preserves correct subtree-size caches.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Correct](cache-correct.md)
+- [Tree](tree.md)
+- [Node](node.md)
+
+## Proof depends on
+
+- [Entry](entry.md)
+- [Cached Size](cached-size.md)
+- [Cached Size eq num Nodes](cached-size-eq-num-nodes.md)
 
 ## Sources
 

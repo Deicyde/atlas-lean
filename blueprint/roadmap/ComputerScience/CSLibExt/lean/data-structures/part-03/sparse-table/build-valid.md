@@ -13,7 +13,15 @@ Tables produced by `build` satisfy the representation invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](valid.md)
+- [Build](build.md)
+
+## Proof depends on
+
+- [Sparse Table](sparse-table.md)
+- [Build Step](build-step.md)
+- [Level](level.md)
+- [Next Level](next-level.md)
 
 ## Sources
 

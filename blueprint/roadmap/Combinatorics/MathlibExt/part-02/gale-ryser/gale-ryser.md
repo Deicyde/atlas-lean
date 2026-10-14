@@ -15,7 +15,11 @@ Gale-Ryser prefix inequalities hold.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prefix Sum](prefix-sum.md)
+
+## Proof depends on
+
+- [Prefix Sum eq sum fin](prefix-sum-eq-sum-fin.md)
 
 ## Sources
 

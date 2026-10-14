@@ -15,7 +15,11 @@ over the empty list interval `((arr.take hi).drop lo)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fenwick Tree](../part-01/fenwick-tree.md)
+
+## Proof depends on
+
+- [Prefix Sum](../part-01/prefix-sum.md)
 
 ## Sources
 

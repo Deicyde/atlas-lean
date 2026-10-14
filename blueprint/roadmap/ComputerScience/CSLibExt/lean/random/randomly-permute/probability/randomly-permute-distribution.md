@@ -15,6 +15,10 @@ obtained from uniform complete legal suffix-draw histories.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Randomly Permute](../basic/randomly-permute.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Random.RandomlyPermute.Probability](../../../../../../../sources/v2/CSLibExt.md)

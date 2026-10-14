@@ -13,7 +13,14 @@ The deleted key is absent after deletion from an ordered tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Erase](../part-01/erase.md)
+
+## Proof depends on
+
+- [Delete Min](../part-01/delete-min.md)
+- [Erase Min](../part-01/erase-min.md)
+- [Min D](../part-01/min-d.md)
+- [Min D mem](../part-01/min-d-mem.md)
 
 ## Sources
 

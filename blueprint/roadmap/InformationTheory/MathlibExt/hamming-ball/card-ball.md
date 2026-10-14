@@ -13,7 +13,7 @@ The cardinality of a closed Hamming ball over a finite alphabet.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ball](ball.md)
 
 ## Sources
 

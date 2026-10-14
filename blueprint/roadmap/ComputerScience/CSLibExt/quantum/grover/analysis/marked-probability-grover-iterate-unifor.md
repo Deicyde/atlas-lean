@@ -13,7 +13,13 @@ Exact success probability of standard Grover search after `k` iterations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grover Iterate](grover-iterate.md)
+- [Grover Phase](grover-phase.md)
+
+## Proof depends on
+
+- [Angle Amplitude](angle-amplitude.md)
+- [Grover Angle](grover-angle.md)
 
 ## Sources
 

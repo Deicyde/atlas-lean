@@ -16,6 +16,10 @@ functional on the dual `E →L[𝕜] 𝕜` is evaluation at some `x : E`, i.e. `
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Banach Space](goldstine.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.MilmanPettis](../../../../../../sources/v2/MathlibExt.md)

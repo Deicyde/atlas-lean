@@ -15,6 +15,10 @@ cohomology in degree `2` with trivial `ZMod p` coefficients.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Trivial ZModp Rep](trivial-zmodp-rep.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.GolodShafarevichWanted](../../../../../sources/v2/WantedExt.md)

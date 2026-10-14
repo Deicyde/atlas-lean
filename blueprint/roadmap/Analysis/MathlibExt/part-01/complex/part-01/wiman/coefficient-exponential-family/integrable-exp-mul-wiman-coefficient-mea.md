@@ -13,7 +13,7 @@ Every exponential moment of the coefficient measure is integrable for an entire 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Coefficient Measure](wiman-coefficient-measure.md)
 
 ## Sources
 

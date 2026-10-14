@@ -13,7 +13,11 @@ There is only one overpartition of zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition](overpartition.md)
+
+## Proof depends on
+
+- [Overlines eq empty of zero](overlines-eq-empty-of-zero.md)
 
 ## Sources
 

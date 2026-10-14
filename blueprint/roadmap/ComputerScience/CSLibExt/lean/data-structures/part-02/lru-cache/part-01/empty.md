@@ -12,7 +12,7 @@ The empty cache.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lru Cache](lru-cache.md)
 
 ## Sources
 

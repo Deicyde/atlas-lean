@@ -14,6 +14,10 @@ The Bianchi group `PSL(2, 𝓞)` where `𝓞` is the ring of integers of `ℚ(�
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ring Of Integers](ring-of-integers.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.AbsoluteProfiniteRigidityWanted](../../../../../sources/v2/WantedExt.md)

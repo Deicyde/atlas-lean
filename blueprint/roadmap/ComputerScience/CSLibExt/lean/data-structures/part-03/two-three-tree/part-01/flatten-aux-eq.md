@@ -13,7 +13,9 @@ lean: Cslib.Algorithms.Lean.TwoThreeTree.flattenAux_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+- [Flatten](flatten.md)
+- [Flatten Aux](flatten-aux.md)
 
 ## Sources
 

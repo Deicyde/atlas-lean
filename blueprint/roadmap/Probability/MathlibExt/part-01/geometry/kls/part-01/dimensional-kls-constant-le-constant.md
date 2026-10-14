@@ -13,7 +13,8 @@ Each positive dimension contributes its actual supremum to the global constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dimensional Kls Constant](dimensional-kls-constant.md)
+- [Kls Constant](kls-constant.md)
 
 ## Sources
 

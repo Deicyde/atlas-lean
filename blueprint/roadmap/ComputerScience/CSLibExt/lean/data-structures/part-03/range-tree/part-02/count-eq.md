@@ -13,7 +13,15 @@ The count is the length of the leaf list filtered to `[lo, hi]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Range Tree](../part-01/range-tree.md)
+- [Bounds Ok](../part-01/bounds-ok.md)
+- [Count](../part-01/count.md)
+- [To List](../part-01/to-list.md)
+
+## Proof depends on
+
+- [Report](../part-01/report.md)
+- [Report eq filter](../part-01/report-eq-filter.md)
 
 ## Sources
 

@@ -16,6 +16,11 @@ of their product.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [I Sup ker aeval eq ker aeval prod of pairwise is Coprime](i-sup-ker-aeval-eq-ker-aeval-prod-of-pai.md)
+- [Sup Indep ker aeval of pairwise is Coprime](sup-indep-ker-aeval-of-pairwise-is-copri.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.KernelsLemma](../../../../sources/v2/MathlibExt.md)

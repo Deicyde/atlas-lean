@@ -13,7 +13,14 @@ A singleton heap represents a singleton multiset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elements](elements.md)
+- [Singleton](singleton.md)
+
+## Proof depends on
+
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
+- [Elements](../part-01/elements.md)
+- [Singleton](../part-01/singleton.md)
 
 ## Sources
 

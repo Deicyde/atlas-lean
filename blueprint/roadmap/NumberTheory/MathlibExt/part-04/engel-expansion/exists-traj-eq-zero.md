@@ -13,7 +13,11 @@ Every Engel trajectory reaches `0` within `a + 1` steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Traj](traj.md)
+
+## Proof depends on
+
+- [Neg Rem](neg-rem.md)
 
 ## Sources
 

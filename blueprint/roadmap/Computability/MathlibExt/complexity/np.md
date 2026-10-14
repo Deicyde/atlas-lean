@@ -14,7 +14,12 @@ accepted. Inlined from FormalConjectures (absent from Mathlib).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decision Complexity Class](decision-complexity-class.md)
+
+## Proof depends on
+
+- [Decision Problem](decision-problem.md)
+- [Is Poly Time](is-poly-time.md)
 
 ## Sources
 

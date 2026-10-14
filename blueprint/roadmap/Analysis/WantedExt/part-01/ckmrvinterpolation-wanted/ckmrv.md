@@ -15,6 +15,14 @@ as parameters. The equivalence is required to be the sampling map `coeffs`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Radial](radial.md)
+- [Radial Schwartz](radial-schwartz.md)
+- [Rapid Sample Data](rapid-sample-data.md)
+- [Rapidly Decreasing Samples](rapidly-decreasing-samples.md)
+- [Coeffs](coeffs.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.CKMRVInterpolationWanted](../../../../../sources/v2/WantedExt.md)

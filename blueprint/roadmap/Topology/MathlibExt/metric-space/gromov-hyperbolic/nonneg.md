@@ -13,7 +13,7 @@ The hyperbolicity constant is nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Delta Hyperbolic](is-delta-hyperbolic.md)
 
 ## Sources
 

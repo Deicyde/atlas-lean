@@ -12,7 +12,13 @@ Full spectral `H²`, not merely finite Fourier polynomials.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torus](torus.md)
+
+## Proof depends on
+
+- [Frequency](frequency.md)
+- [Fourier Coefficient](fourier-coefficient.md)
+- [Frequency Weight](frequency-weight.md)
 
 ## Sources
 

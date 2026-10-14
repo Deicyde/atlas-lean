@@ -13,7 +13,11 @@ The suffix array is a permutation of all starting indices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Suffix Array](suffix-array.md)
+
+## Proof depends on
+
+- [Suffix](suffix.md)
 
 ## Sources
 

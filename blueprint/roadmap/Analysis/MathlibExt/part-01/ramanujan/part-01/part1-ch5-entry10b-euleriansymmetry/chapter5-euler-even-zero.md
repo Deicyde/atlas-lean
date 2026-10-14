@@ -13,7 +13,7 @@ The initial even Euler number: `E_0 = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter5 Euler Even](chapter5-euler-even.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ lean: ArithmeticFunction.jordanTotient_apply_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jordan Totient](jordan-totient.md)
 
 ## Sources
 

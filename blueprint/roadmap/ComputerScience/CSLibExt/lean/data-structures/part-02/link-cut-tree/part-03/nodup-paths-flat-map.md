@@ -15,7 +15,17 @@ paths partition the vertex set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Valid](valid.md)
+- [Paths](paths.md)
+
+## Proof depends on
+
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
+- [Parent Child](../part-02/parent-child.md)
+- [Perm tree Paths flat Map](perm-tree-paths-flat-map.md)
+- [Tree Paths](tree-paths.md)
 
 ## Sources
 

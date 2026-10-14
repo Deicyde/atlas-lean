@@ -14,6 +14,11 @@ Number of perfect matchings of the `2 * M`-by-`N` Mobius grid.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Mobius Grid Perfect Matching](is-mobius-grid-perfect-matching.md)
+- [Mobius Grid Edge](mobius-grid-edge.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.LuWuMobiusGridWanted](../../../../../../sources/v2/WantedExt.md)

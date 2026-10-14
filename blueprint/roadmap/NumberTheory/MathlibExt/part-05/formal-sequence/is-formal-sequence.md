@@ -22,6 +22,11 @@ raw block SHA-256: `9665499a711e4ccc50f15a8b66c8cc5e643123774d2a19478a2e7605e8d7
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Formal Alpha](formal-alpha.md)
+- [Formal Beta](formal-beta.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.FormalSequence](../../../../../sources/v2/MathlibExt.md)

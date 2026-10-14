@@ -13,7 +13,11 @@ The exponent is nonnegative by construction, including if the admitted set is em
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dirichlet Subconvexity Exponent](dirichlet-subconvexity-exponent.md)
+
+## Proof depends on
+
+- [Is Dirichlet Subconvexity Exponent](is-dirichlet-subconvexity-exponent.md)
 
 ## Sources
 

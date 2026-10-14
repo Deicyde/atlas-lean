@@ -16,7 +16,14 @@ resets the preferred edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](../part-03/state.md)
+
+## Proof depends on
+
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Find Tree](../part-01/find-tree.md)
+- [Remove Tree](../part-01/remove-tree.md)
+- [Reroot At](../part-01/reroot-at.md)
 
 ## Sources
 

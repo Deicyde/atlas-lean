@@ -13,7 +13,7 @@ places of each value raised to that place's multiplicity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arakelov Divisor](arakelov-divisor.md)
 
 ## Sources
 

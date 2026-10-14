@@ -13,7 +13,13 @@ Adding the identity to an actual conference matrix gives an actual sign matrix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Symmetric Conference](is-symmetric-conference.md)
+- [Sign Matrix](../sign-condition-number/sign-matrix.md)
+- [Realize](../sign-condition-number/realize.md)
+
+## Proof depends on
+
+- [Exists realize iff](../sign-condition-number/exists-realize-iff.md)
 
 ## Sources
 

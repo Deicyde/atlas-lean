@@ -12,7 +12,16 @@ Run stable Kruskal selection and return accepted edges in processing order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Graph](../part-01/graph.md)
+- [Weighted Edge](../part-01/weighted-edge.md)
+
+## Proof depends on
+
+- [State](../part-01/state.md)
+- [Initial Forest](../part-01/initial-forest.md)
+- [Ordered Edges](../part-01/ordered-edges.md)
+- [Scan](scan.md)
+- [Forest](../../../data-structures/part-03/union-find/part-01/forest.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ OR visits the nonempty argument vector from left to right.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boolean Gate](boolean-gate.md)
+- [Boolean Interpretation](boolean-interpretation.md)
 
 ## Sources
 

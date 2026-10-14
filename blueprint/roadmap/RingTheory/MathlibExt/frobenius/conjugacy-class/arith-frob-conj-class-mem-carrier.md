@@ -13,7 +13,7 @@ The chosen Frobenius element lies in its conjugacy class.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arith Frob Conj Class](arith-frob-conj-class.md)
 
 ## Sources
 

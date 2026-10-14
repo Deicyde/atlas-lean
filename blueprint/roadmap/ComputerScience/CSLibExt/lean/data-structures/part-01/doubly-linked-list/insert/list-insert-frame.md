@@ -13,7 +13,12 @@ Cells outside the three source write targets are unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../basic/node.md)
+- [List Insert](list-insert.md)
+
+## Proof depends on
+
+- [List Insert get](list-insert-get.md)
 
 ## Sources
 

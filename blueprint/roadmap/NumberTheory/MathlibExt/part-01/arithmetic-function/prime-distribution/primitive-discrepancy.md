@@ -14,6 +14,10 @@ The finite maximum over all primitive residue classes of a positive modulus.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Discrepancy](discrepancy.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ArithmeticFunction.PrimeDistribution](../../../../../../sources/v2/MathlibExt.md)

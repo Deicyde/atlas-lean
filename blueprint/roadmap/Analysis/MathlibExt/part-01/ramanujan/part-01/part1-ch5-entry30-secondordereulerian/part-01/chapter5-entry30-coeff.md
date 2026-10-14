@@ -15,6 +15,10 @@ The multiplicative coefficient with local factors `chapter5Entry30LocalCoeff a`:
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter5 Entry30 Local Coeff](chapter5-entry30-local-coeff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch5Entry30Secondordereulerian](../../../../../../../../sources/v2/MathlibExt.md)

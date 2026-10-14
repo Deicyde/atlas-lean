@@ -13,7 +13,7 @@ All `n` transition stages together perform exactly `n³` cell assignments.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transitive Closure Stages](transitive-closure-stages.md)
 
 ## Sources
 

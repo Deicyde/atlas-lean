@@ -14,6 +14,10 @@ The number of pairs of points of a finite set `s` in a metric space that are dis
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Distance Multiplicity](distance-multiplicity.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Metric](../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ Restatement of the exact source explicit formula for the Fine numbers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fine Number](fine-number.md)
 
 ## Sources
 

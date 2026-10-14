@@ -17,7 +17,7 @@ clause `periodic_special_case`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Eventually Periodic](is-eventually-periodic.md)
 
 ## Sources
 

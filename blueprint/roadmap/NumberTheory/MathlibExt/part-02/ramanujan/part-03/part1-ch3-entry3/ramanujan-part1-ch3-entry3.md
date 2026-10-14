@@ -20,6 +20,10 @@ source's shape.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ramanujan part1 ch3 entry3 general](ramanujan-part1-ch3-entry3-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry3](../../../../../../../sources/v2/MathlibExt.md)

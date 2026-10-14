@@ -13,7 +13,15 @@ Under strict growth, a fixed point is the intersection of all self-generating se
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fixed Point](fixed-point.md)
+- [SG](sg.md)
+- [Strict Growth](strict-growth.md)
+
+## Proof depends on
+
+- [Generated Set](generated-set.md)
+- [Fixed Point eq generated](fixed-point-eq-generated.md)
+- [Generated eq s Inter](generated-eq-s-inter.md)
 
 ## Sources
 

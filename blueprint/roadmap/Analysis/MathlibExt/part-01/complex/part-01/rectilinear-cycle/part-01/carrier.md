@@ -12,7 +12,7 @@ The closed rectangle determined by the two opposite corners.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectilinear Rectangle](rectilinear-rectangle.md)
 
 ## Sources
 

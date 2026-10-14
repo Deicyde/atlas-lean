@@ -19,6 +19,10 @@ sum is the `Finset.filter` over `m ≤ n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rising Factorial Binomial](../../../../../Algebra/MathlibExt/polynomial/asc-pochhammer-eval-add.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.BaseBGeneralizedDigitalBinomial](../../../../../../sources/v2/MathlibExt.md)

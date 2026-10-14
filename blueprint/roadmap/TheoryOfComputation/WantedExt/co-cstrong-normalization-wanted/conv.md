@@ -12,7 +12,7 @@ Beta conversion: the equivalence closure of `Step`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tm](tm.md)
 
 ## Sources
 

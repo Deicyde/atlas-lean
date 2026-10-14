@@ -12,7 +12,11 @@ lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.shortestTou
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar Point](planar-point.md)
+
+## Proof depends on
+
+- [Tour Length](tour-length.md)
 
 ## Sources
 

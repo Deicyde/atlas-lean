@@ -16,7 +16,7 @@ following the finite group-algebra argument in Terras, Ch. 1.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conv](conv.md)
 
 ## Sources
 

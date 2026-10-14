@@ -13,7 +13,11 @@ The L1 norm as a sum over all degrees through the natural degree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [L1 Norm](l1-norm.md)
+
+## Proof depends on
+
+- [L1 Norm def](l1-norm-def.md)
 
 ## Sources
 

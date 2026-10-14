@@ -14,7 +14,14 @@ new key and the old minimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cut Tree At](../part-01/cut-tree-at.md)
+- [Decrease Key](../part-01/decrease-key.md)
+
+## Proof depends on
+
+- [Decrease Key elements](decrease-key-elements.md)
+- [Decrease Key trees of cut](../part-01/decrease-key-trees-of-cut.md)
+- [Decrease Root](../part-01/decrease-root.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ Shifted continuation `g1(s) = g(s+1)` for `Phi - 1/(z-1)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Log Dirichlet Continuation](../../../../part-01/lseries/prime-log/log-dirichlet-continuation.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.LaplaceThetaContinuation](../../../../../../../sources/v2/MathlibExt.md)

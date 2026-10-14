@@ -13,7 +13,14 @@ The signed source potential bounds the amortized copy/write charge by three.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](table.md)
+- [Table Insert](table-insert.md)
+
+## Proof depends on
+
+- [Table Insert num](table-insert-num.md)
+- [Table Insert size](table-insert-size.md)
+- [Table Insert time](table-insert-time.md)
 
 ## Sources
 

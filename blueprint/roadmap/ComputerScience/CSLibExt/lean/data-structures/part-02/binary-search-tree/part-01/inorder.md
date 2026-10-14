@@ -14,6 +14,10 @@ The linear-time inorder traversal of a tree.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inorder Aux](inorder-aux.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BinarySearchTree](../../../../../../../../sources/v2/CSLibExt.md)

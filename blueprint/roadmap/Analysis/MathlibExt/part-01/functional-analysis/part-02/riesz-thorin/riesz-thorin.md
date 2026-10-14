@@ -23,6 +23,10 @@ interpolation identities `p⁻¹=(1-θ)p₀⁻¹+θp₁⁻¹` and bound `M₀^(1
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Riesz thorin finite](riesz-thorin-finite.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.RieszThorin](../../../../../../../sources/v2/MathlibExt.md)

@@ -19,6 +19,10 @@ Lee, ISMs; Lean states compact-source uniform-approx regular-value-zero corollar
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Thom transversality uniform approx regular value zero](thom-transversality-uniform-approx-regul.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.ThomTransversality](../../../../../../sources/v2/MathlibExt.md)

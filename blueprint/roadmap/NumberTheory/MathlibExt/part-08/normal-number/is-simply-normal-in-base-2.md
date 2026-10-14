@@ -13,7 +13,12 @@ Normality in a base implies simple normality in that base.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Normal In Base](is-normal-in-base.md)
+- [Is Simply Normal In Base](is-simply-normal-in-base.md)
+
+## Proof depends on
+
+- [Digit Seq](digit-seq.md)
 
 ## Sources
 

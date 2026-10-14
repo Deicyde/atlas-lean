@@ -15,7 +15,11 @@ A singleton tree uses `[false]`; larger trees use `false` for a left edge and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](huffman-tree.md)
+
+## Proof depends on
+
+- [Path Code?](path-code.md)
 
 ## Sources
 

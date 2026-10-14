@@ -13,7 +13,13 @@ Distinct preferred paths of a valid state are vertex-disjoint.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Valid](valid.md)
+- [Paths](paths.md)
+
+## Proof depends on
+
+- [Nodup paths flat Map](nodup-paths-flat-map.md)
 
 ## Sources
 

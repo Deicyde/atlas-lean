@@ -13,7 +13,15 @@ Restricting to Bernoulli laws cannot increase the optimized coefficient.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Value](bernoulli-value.md)
+- [Value](../part-01/value.md)
+
+## Proof depends on
+
+- [Is Bernoulli Admissible](is-bernoulli-admissible.md)
+- [Is Bernoulli Law](../part-01/is-bernoulli-law.md)
+- [Bernoulli Admissible bdd Below](bernoulli-admissible-bdd-below.md)
+- [Value is Admissible](../part-01/value-is-admissible.md)
 
 ## Sources
 

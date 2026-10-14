@@ -12,7 +12,11 @@ The length of the closed tour obtained by visiting `points` in the order `order`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar Point](planar-point.md)
+
+## Proof depends on
+
+- [Cyclic Next](cyclic-next.md)
 
 ## Sources
 

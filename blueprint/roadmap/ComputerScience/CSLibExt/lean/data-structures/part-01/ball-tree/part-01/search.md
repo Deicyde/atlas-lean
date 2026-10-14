@@ -13,7 +13,11 @@ Similarity search: the points of the tree within squared distance
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ball Tree](ball-tree.md)
+
+## Proof depends on
+
+- [Search Aux](search-aux.md)
 
 ## Sources
 

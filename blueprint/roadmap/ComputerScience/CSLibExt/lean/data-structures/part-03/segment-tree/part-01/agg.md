@@ -12,7 +12,7 @@ The cached aggregate of a tree; the empty tree has aggregate `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Segment Tree](segment-tree.md)
 
 ## Sources
 

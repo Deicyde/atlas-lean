@@ -12,7 +12,7 @@ The cached keys, most recently used first.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lru Cache](lru-cache.md)
 
 ## Sources
 

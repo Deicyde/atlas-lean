@@ -13,7 +13,7 @@ Decrease-key preserves local heap order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decrease Key](decrease-key.md)
 
 ## Sources
 

@@ -13,7 +13,17 @@ The smart constructor preserves recursively attained maximum caches.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Entry](../part-01/entry.md)
+- [Tree](../part-01/tree.md)
+- [Cache Invariant](../part-01/cache-invariant.md)
+- [Mk Node](../part-01/mk-node.md)
+
+## Proof depends on
+
+- [Interval](../part-01/interval.md)
+- [Cached Max?](../part-01/cached-max.md)
+- [Max With](../part-01/max-with.md)
+- [Node Max](../part-01/node-max.md)
 
 ## Sources
 

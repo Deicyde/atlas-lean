@@ -13,7 +13,13 @@ A singleton tree satisfies every Fibonacci-tree invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](valid.md)
+- [Singleton](singleton.md)
+
+## Proof depends on
+
+- [Fibonacci Tree](fibonacci-tree.md)
+- [Elements](elements.md)
 
 ## Sources
 

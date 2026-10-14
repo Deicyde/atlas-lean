@@ -16,6 +16,10 @@ of $H$, i.e. no injective homomorphism (copy) of $H$ whose edges all receive dif
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Rainbow](is-rainbow.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Coloring.Vertex](../../../../../../../../sources/v2/MathlibExt.md)

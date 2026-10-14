@@ -13,7 +13,7 @@ Involutive parameter symmetry: `j(q / x; q) = j(x; q)` when `q ≠ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobi Theta Product](jacobi-theta-product.md)
 
 ## Sources
 

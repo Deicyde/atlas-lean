@@ -13,7 +13,8 @@ The character of the trivial class is `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Char Fun](char-fun.md)
+- [Triv](triv.md)
 
 ## Sources
 

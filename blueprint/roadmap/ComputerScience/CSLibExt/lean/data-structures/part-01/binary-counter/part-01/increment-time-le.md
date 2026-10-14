@@ -13,7 +13,7 @@ Increment changes at most the fixed number of existing bits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Increment](increment.md)
 
 ## Sources
 

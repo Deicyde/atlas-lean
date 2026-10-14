@@ -12,7 +12,12 @@ A toral dynamical system as an element of `𝒳`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Toral Dynamical System](toral-dynamical-system.md)
+- [Volume Preserving Equiv](volume-preserving-equiv.md)
+
+## Proof depends on
+
+- [Torus](torus.md)
 
 ## Sources
 

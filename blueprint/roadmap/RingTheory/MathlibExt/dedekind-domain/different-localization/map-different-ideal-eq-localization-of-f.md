@@ -18,6 +18,10 @@ inverses. Transport to an arbitrary base localization is deferred.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Extended Hom dual one eq dual one of Field](extended-hom-dual-one-eq-dual-one-of-fie.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DedekindDomain.DifferentLocalization](../../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,15 @@ exactly the edge from `y` to the root of `newChild`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Root](../../euler-tour-tree/part-01/root.md)
+- [Adjacent](adjacent.md)
+- [Graft At](graft-at.md)
+
+## Proof depends on
+
+- [Children ind](../../euler-tour-tree/part-01/children-ind.md)
+- [Root graft At](root-graft-at.md)
 
 ## Sources
 

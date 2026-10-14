@@ -12,7 +12,11 @@ Recolor the root of a tree black.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+
+## Proof depends on
+
+- [Color](../part-01/color.md)
 
 ## Sources
 

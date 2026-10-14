@@ -13,7 +13,14 @@ Quadratic Dirichlet character attachment from the source contract.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Fundamental Discriminant](quadratic/is-fundamental-discriminant.md)
+- [Kronecker Sym](quadratic/kronecker-sym.md)
+
+## Proof depends on
+
+- [Kronecker At Prime](quadratic/kronecker-at-prime.md)
+- [Kronecker At Two](quadratic/kronecker-at-two.md)
+- [Quadratic Character Aux](kronecker-sym-eq-jacobi-sym-of-prime-ne.md)
 
 ## Sources
 

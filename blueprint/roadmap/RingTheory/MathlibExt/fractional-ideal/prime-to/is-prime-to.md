@@ -14,6 +14,10 @@ A fractional ideal is prime to J if it becomes one at every prime containing J.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Non Zero Divisors le comap algebra Map at Prime](non-zero-divisors-le-comap-algebra-map-a.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.FractionalIdeal.PrimeTo](../../../../../sources/v2/MathlibExt.md)

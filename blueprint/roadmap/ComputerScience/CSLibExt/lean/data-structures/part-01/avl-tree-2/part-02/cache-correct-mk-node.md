@@ -13,7 +13,13 @@ The smart constructor produces a node with a correct cached height.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Correct](../part-01/cache-correct.md)
+- [Tree](../part-01/tree.md)
+- [Mk Node](../part-01/mk-node.md)
+
+## Proof depends on
+
+- [Height](../part-01/height.md)
 
 ## Sources
 

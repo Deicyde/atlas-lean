@@ -15,6 +15,10 @@ Eventually the logarithm of the maximum Taylor term is positive.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eventually one lt wiman Maximum Term](eventually-one-lt-wiman-maximum-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.Wiman.MaximumTermTendsToInfinity](../../../../../../../../sources/v2/MathlibExt.md)

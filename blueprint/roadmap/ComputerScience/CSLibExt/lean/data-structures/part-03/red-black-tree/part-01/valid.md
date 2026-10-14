@@ -12,7 +12,15 @@ A valid red-black tree: ordered, red-invariant, balanced, black root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Balanced](balanced.md)
+- [Color](color.md)
+- [Ordered](ordered.md)
+- [Red Ok](red-ok.md)
+- [Color Of](color-of.md)
 
 ## Sources
 

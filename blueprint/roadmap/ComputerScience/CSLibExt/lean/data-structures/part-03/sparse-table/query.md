@@ -13,7 +13,12 @@ at `l` and at `r - 2 ^ k`, where `k = Nat.log2 (r - l)`. Empty intervals give `n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sparse Table](sparse-table.md)
+
+## Proof depends on
+
+- [Entry](entry.md)
+- [Omin](omin.md)
 
 ## Sources
 

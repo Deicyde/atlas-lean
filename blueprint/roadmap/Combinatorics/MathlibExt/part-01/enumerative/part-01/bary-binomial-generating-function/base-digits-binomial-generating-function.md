@@ -22,6 +22,12 @@ identity for `b ∈ {2, 3, 5, 10}` and `n ∈ {0, 1, 2, 5, 7, 13, 19, 29}`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [B Ary Binomial Coefficient](../bary-binomial-coefficient/b-ary-binomial-coefficient.md)
+- [B Ary Binomial Coefficient eq prod get D](../bary-binomial-coefficient/b-ary-binomial-coefficient-eq-prod-get-d.md)
+- [B Ary Binomial Coefficient generating function](b-ary-binomial-coefficient-generating-fu.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.BAryBinomialGeneratingFunction](../../../../../../../sources/v2/MathlibExt.md)

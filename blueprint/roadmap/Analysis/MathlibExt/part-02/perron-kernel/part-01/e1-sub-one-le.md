@@ -13,7 +13,12 @@ lean: PerronKernel.E1_sub_one_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [E1](e1.md)
+
+## Proof depends on
+
+- [E1 eq div](e1-eq-div.md)
+- [E1 zero](e1-zero.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ A real number is absolutely normal if it is normal in every base at least two.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Normal In Base](is-normal-in-base.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NormalNumber](../../../../../sources/v2/MathlibExt.md)

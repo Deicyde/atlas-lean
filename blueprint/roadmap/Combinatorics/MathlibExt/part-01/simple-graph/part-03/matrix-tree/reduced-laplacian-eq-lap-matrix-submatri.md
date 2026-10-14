@@ -14,7 +14,12 @@ deleting `root`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reduced Laplacian](reduced-laplacian.md)
+
+## Proof depends on
+
+- [Laplacian Int](laplacian-int.md)
+- [Laplacian Int eq lap Matrix](laplacian-int-eq-lap-matrix.md)
 
 ## Sources
 

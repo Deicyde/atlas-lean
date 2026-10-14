@@ -15,6 +15,10 @@ indexed by the type `ι`, which is a measure on `ι → {-1,1}`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rademacher Distribution](rademacher-distribution.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.RademacherEnfloTypeWanted](../../../../../sources/v2/WantedExt.md)

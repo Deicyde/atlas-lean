@@ -13,7 +13,12 @@ Every positive exponent strictly above the infimum admits an actual uniform rank
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Matrix Multiplication Rank Exponent](../part-02/has-matrix-multiplication-rank-exponent.md)
+- [Matrix Multiplication Exponent](../part-02/matrix-multiplication-exponent.md)
+
+## Proof depends on
+
+- [Mono](../part-02/mono.md)
 
 ## Sources
 

@@ -21,6 +21,10 @@ approximation points by a Taylor estimate, and contradicts the inductive Roth le
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Roth Auxiliary](../part-10/finite-of-divisible-approximations.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ThueSiegelRoth](../../../../sources/v2/MathlibExt.md)

@@ -17,7 +17,7 @@ piece, so this is well defined).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Ideal Graded Piece](maximal-ideal-graded-piece.md)
 
 ## Sources
 

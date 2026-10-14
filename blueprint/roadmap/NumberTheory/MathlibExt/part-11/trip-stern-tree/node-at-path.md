@@ -14,7 +14,7 @@ right transition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trip Stern Tree](trip-stern-tree.md)
 
 ## Sources
 

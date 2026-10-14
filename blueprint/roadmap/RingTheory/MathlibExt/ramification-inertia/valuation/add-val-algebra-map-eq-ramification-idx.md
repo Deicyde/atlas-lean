@@ -16,6 +16,10 @@ current unprimed ramification index.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Emultiplicity maximal Ideal span eq add Val](emultiplicity-maximal-ideal-span-eq-add.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.RamificationInertia.Valuation](../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,12 @@ Every multiplication node has matching inner dimensions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parenthesization](parenthesization.md)
+
+## Proof depends on
+
+- [Cols](cols.md)
+- [Rows](rows.md)
 
 ## Sources
 

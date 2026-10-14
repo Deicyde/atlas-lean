@@ -15,7 +15,13 @@ a polyline witness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PLKnot](plknot.md)
+
+## Proof depends on
+
+- [Knot](../part-01/knot.md)
+- [Smoothly slice (smooth knot version)](../part-01/smoothly-slice.md)
+- [Has Smooth Representative](has-smooth-representative.md)
 
 ## Sources
 

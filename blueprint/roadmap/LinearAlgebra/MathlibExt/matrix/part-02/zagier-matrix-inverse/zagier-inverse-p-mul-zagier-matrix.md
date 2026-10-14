@@ -13,7 +13,13 @@ The candidate inverse is a left inverse of Zagier's matrix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zagier Inverse P](zagier-inverse-p.md)
+- [Zagier Matrix](zagier-matrix.md)
+
+## Proof depends on
+
+- [Zagier Inverse P eq zagier Inverse Q](zagier-inverse-p-eq-zagier-inverse-q.md)
+- [Zagier Inverse Q](zagier-inverse-q.md)
 
 ## Sources
 

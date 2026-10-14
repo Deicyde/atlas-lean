@@ -21,6 +21,11 @@ finite remainder.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists eq add add triangular](exists-eq-add-add-triangular.md)
+- [Exists sum four sq eq and sum eq of odd](exists-sum-four-sq-eq-and-sum-eq-of-odd.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.FermatPolygonal](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,11 @@ Lowest source index `2 - k` is zero when `k ≥ 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Generalized Lucas](k-generalized-lucas.md)
+
+## Proof depends on
+
+- [K Generalized Lucas neg eq zero](k-generalized-lucas-neg-eq-zero.md)
 
 ## Sources
 

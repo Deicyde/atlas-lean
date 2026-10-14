@@ -15,6 +15,11 @@ The canonical map on finite-place completion integer rings preserves ramificatio
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Adic Completion Integers Map injective](adic-completion-integers-map-injective.md)
+- [Finite Lies Over Maximal Ideal](../comap-maximal-ideal-adic-completion-inte.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.Completion.FiniteLiesOverRamificationIndex](../../../../../../../../sources/v2/MathlibExt.md)

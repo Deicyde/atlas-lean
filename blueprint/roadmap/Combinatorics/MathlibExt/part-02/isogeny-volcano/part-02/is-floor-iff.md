@@ -13,7 +13,8 @@ Floor means level value equals depth.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Isogeny Volcano](../part-01/isogeny-volcano.md)
+- [Is Floor](../part-01/is-floor.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ Question: is `χ(O) = ∞`? (record OPG-616)
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Odd Distance Graph](odd-distance-graph.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.OddDistanceGraphInfiniteChromaticWanted](../../../../sources/v2/WantedExt.md)

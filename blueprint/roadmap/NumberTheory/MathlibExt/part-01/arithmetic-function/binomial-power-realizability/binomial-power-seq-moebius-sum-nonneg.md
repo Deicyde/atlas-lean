@@ -14,7 +14,12 @@ factored out of `binomial_power_sequence_dold_realizable`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Power Seq](binomial-power-seq.md)
+
+## Proof depends on
+
+- [Binomial power sequence dold realizable](binomial-power-sequence-dold-realizable.md)
+- [Dold Realizable nonneg](dold-realizable-nonneg.md)
 
 ## Sources
 

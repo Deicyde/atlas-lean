@@ -21,6 +21,10 @@ Proves `Wanted` entry `ramanujan_part1_ch3_entry9_odd_productsummable`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rising Product Series](../../../../../Analysis/MathlibExt/part-01/specific-limits/summable-neg-pow-mul-pow-div-prod-add-mu.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry9OddProductsummable](../../../../../../sources/v2/MathlibExt.md)

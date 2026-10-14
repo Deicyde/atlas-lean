@@ -13,7 +13,13 @@ Canonical API form of the overpartition congruence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition](../overpartition/overpartition.md)
+
+## Proof depends on
+
+- [Overpartition mul five mod five](overpartition-mul-five-mod-five.md)
+- [Nat Card eq card subtype](nat-card-eq-card-subtype.md)
+- [Three Square Representation Count eq nat Card](three-square-representation-count-eq-nat.md)
 
 ## Sources
 

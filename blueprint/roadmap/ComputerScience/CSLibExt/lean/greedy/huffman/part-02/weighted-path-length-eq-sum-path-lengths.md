@@ -14,7 +14,16 @@ leaves of weight times root-to-leaf path length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](../part-01/huffman-tree.md)
+- [Path Code?](../part-01/path-code.md)
+- [Symbols](../part-01/symbols.md)
+- [Weighted Leaves](../part-01/weighted-leaves.md)
+- [Weighted Path Length](../part-01/weighted-path-length.md)
+
+## Proof depends on
+
+- [Path Code? eq none iff](path-code-eq-none-iff.md)
+- [Total Weight](../part-01/total-weight.md)
 
 ## Sources
 

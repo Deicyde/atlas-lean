@@ -12,7 +12,7 @@ Validity of a perfect-graph instance: symmetric adjacency, no loops.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Graph Instance](perfect-graph-instance.md)
 
 ## Sources
 

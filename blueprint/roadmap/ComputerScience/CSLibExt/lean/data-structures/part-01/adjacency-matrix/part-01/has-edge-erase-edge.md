@@ -13,7 +13,9 @@ The erased edge is absent after deletion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adjacency Matrix](adjacency-matrix.md)
+- [Erase Edge](erase-edge.md)
+- [Has Edge](has-edge.md)
 
 ## Sources
 

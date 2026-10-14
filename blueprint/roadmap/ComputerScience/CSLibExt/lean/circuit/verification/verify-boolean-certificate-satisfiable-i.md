@@ -13,7 +13,14 @@ A short accepted valuation exists exactly when the circuit is satisfiable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Verify Boolean Certificate](verify-boolean-certificate.md)
+- [Boolean Interpretation](../../../../../Computability/CSLibExt/circuit/boolean/boolean-interpretation.md)
+- [Boolean Signature](../../../../../Computability/CSLibExt/circuit/boolean/boolean-signature.md)
+
+## Proof depends on
+
+- [Verify Boolean Certificate complete](verify-boolean-certificate-complete.md)
+- [Verify Boolean Certificate sound](verify-boolean-certificate-sound.md)
 
 ## Sources
 

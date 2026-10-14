@@ -13,7 +13,8 @@ The set-level and sequence-level notions of ultimate periodicity coincide.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Ultimately Periodic](../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-ultimately-periodic.md)
+- [Is Ultimately Periodic Set](is-ultimately-periodic-set.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ lean: Cslib.Algorithms.Lean.FenwickTree.lowbit_two_pow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lowbit](lowbit.md)
 
 ## Sources
 

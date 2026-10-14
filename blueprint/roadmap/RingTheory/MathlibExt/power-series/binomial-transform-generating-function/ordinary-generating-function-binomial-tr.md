@@ -24,6 +24,10 @@ Proves `Wanted` entry `ordinary_generating_function_binomial_transform`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mk sum choose mul eq inv one sub mul subst](mk-sum-choose-mul-eq-inv-one-sub-mul-sub.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.PowerSeries.BinomialTransformGeneratingFunction](../../../../../sources/v2/MathlibExt.md)

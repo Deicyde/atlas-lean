@@ -15,6 +15,13 @@ space. Each ordered pair has weight `1 / |BinaryStringPair n|`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Binary String](binary-string.md)
+- [Binary String Pair](binary-string-pair.md)
+- [Lcs Length](lcs-length.md)
+- [Uniform Binary String Pairs](uniform-binary-string-pairs.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.BinaryChvatalSankoffWanted](../../../../../../sources/v2/WantedExt.md)

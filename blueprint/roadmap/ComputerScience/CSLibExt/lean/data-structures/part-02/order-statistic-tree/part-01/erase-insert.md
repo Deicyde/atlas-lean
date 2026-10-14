@@ -13,7 +13,15 @@ Erasing after insertion agrees with insertion in the underlying binary search tr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Insert](../../binary-search-tree/part-01/insert.md)
+- [Tree](tree.md)
+- [Erase](erase.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Entry](entry.md)
+- [Node](node.md)
 
 ## Sources
 

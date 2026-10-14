@@ -13,7 +13,12 @@ A second reset has zero flip charge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reset](../part-01/reset.md)
+
+## Proof depends on
+
+- [Reset time](../part-01/reset-time.md)
+- [Reset to List](../part-01/reset-to-list.md)
 
 ## Sources
 

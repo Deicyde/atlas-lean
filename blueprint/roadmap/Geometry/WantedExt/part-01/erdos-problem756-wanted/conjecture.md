@@ -15,6 +15,11 @@ Bhowmick's quarter-density construction, and its generalization.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Max Rich Distances](max-rich-distances.md)
+- [Rich Distances](rich-distances.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.ErdosProblem756Wanted](../../../../../sources/v2/WantedExt.md)

@@ -16,6 +16,10 @@ For a positive natural `a`, a prime `p`, and `1 ≤ r`,
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Euler fermat prime power congruence general](euler-fermat-prime-power-congruence-gene.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.EulerFermatPrimePower](../../../../../sources/v2/MathlibExt.md)

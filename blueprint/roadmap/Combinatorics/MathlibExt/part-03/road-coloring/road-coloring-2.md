@@ -19,6 +19,10 @@ as reset sequences. Source: https://en.wikipedia.org/wiki/Road_coloring_theorem
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Road Coloring'](road-coloring.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.RoadColoring](../../../../../sources/v2/MathlibExt.md)

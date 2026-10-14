@@ -15,6 +15,10 @@ The four functions `g(x)`, `g(x - 1)`, `g(x - √2)`, and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Modulation One](modulation-one.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.FourFunctionHRTWanted](../../../../../sources/v2/WantedExt.md)

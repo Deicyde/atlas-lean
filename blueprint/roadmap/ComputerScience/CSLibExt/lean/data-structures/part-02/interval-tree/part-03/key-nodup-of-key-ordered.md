@@ -13,7 +13,14 @@ Strict key ordering implies the stored keys are duplicate-free.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Entry](../part-01/entry.md)
+- [Key](../part-01/key.md)
+- [Tree](../part-01/tree.md)
+- [Key Ordered](key-ordered.md)
+
+## Proof depends on
+
+- [Compare Key](../part-01/compare-key.md)
 
 ## Sources
 

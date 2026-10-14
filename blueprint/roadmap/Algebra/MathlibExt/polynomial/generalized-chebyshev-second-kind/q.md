@@ -16,6 +16,10 @@ Generalized Chebyshev polynomials of the second kind: `Q 0 = 1`,
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [P](p.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Polynomial.GeneralizedChebyshevSecondKind](../../../../../sources/v2/MathlibExt.md)

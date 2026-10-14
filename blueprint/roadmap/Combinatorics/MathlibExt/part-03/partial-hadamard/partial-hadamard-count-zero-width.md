@@ -14,7 +14,12 @@ the empty matrix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partial Hadamard Count](partial-hadamard-count.md)
+
+## Proof depends on
+
+- [Is Partial Hadamard](is-partial-hadamard.md)
+- [Sign Val](sign-val.md)
 
 ## Sources
 

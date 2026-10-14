@@ -13,7 +13,7 @@ The empty digraph orients any edgeless graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Orientation](is-orientation.md)
 
 ## Sources
 

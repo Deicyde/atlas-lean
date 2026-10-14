@@ -16,6 +16,10 @@ with `ψ = (log ∘ Gamma)'`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Summable one div add nat succ sq](summable-one-div-add-nat-succ-sq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.Gamma.Digamma](../../../../../../../../sources/v2/MathlibExt.md)

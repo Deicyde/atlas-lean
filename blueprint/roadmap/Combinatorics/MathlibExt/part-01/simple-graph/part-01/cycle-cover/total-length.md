@@ -12,7 +12,11 @@ The total length of a multiset of cycles.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cycle](cycle.md)
+
+## Proof depends on
+
+- [Length](length.md)
 
 ## Sources
 

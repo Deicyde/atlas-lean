@@ -15,6 +15,12 @@ positive order.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sign Matrix](sign-matrix.md)
+- [Realize](realize.md)
+- [Condition Number](condition-number.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.SignConditionNumber](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,10 @@ The root of a valid tree is no greater than every represented element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Tree](fibonacci-tree.md)
+- [Valid](valid.md)
+- [Elements](elements.md)
+- [Root](root.md)
 
 ## Sources
 

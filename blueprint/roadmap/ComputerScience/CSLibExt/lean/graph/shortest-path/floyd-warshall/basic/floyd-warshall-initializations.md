@@ -13,7 +13,8 @@ Floyd-Warshall initializes exactly one cell for each ordered vertex pair.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](cost.md)
+- [Floyd Warshall](floyd-warshall.md)
 
 ## Sources
 

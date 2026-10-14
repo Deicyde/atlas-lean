@@ -13,7 +13,12 @@ Deletion keeps every key other than the deleted one, ordered or not.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Join](join.md)
+- [Mem join](mem-join.md)
 
 ## Sources
 

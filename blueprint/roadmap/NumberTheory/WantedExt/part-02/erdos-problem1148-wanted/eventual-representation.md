@@ -14,6 +14,10 @@ Every large integer has such a representation (established).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Erdos1148 Prop](erdos1148-prop.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem1148Wanted](../../../../../sources/v2/WantedExt.md)

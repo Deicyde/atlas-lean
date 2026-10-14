@@ -15,7 +15,8 @@ ideal of the local target.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Tensor Compositum Prime](normalized-tensor-compositum-prime.md)
+- [Normalized Tensor To Compositum At Prime](normalized-tensor-to-compositum-at-prime.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ A power-only variant of the `3r/8` criterion, using `r! ≤ r ^ r`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists large prime dvd choose of factorial mul top pow three mul div eight lt lower pow](exists-large-prime-dvd-choose-of-factori-6.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.LargePrimeCriteria](../../../../../../sources/v2/MathlibExt.md)

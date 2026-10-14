@@ -12,7 +12,7 @@ A characteristic root as an element of the cyclotomic field.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyc Subfield](../cyclotomic-field/cyc-subfield.md)
 
 ## Sources
 

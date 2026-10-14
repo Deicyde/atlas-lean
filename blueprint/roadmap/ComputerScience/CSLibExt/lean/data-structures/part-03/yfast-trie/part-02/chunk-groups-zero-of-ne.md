@@ -13,7 +13,11 @@ The degenerate `B = 0` chunking of a nonempty list is one chunk.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chunk Groups](chunk-groups.md)
+
+## Proof depends on
+
+- [Chunk Groups Aux](chunk-groups-aux.md)
 
 ## Sources
 

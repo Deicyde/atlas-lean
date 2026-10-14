@@ -20,6 +20,10 @@ every value `w` finite or infinite (poles counted with multiplicity).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Root Mult Sph](root-mult-sph.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.TuranThreeValueBoundedDistributionWanted](../../../../../sources/v2/WantedExt.md)

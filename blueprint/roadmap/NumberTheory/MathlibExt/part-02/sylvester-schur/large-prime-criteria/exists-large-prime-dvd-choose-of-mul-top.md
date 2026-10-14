@@ -16,6 +16,10 @@ into a large-prime criterion.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Choose eq prod small prime powers of no large](../choose-factorization/choose-eq-prod-small-prime-powers-of-no.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.LargePrimeCriteria](../../../../../../sources/v2/MathlibExt.md)

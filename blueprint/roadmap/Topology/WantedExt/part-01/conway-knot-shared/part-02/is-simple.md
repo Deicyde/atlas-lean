@@ -15,7 +15,12 @@ edges meet only at their shared vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PLKnot](plknot.md)
+
+## Proof depends on
+
+- [R3](../part-01/r3.md)
+- [Pl Curve](../part-01/pl-curve.md)
 
 ## Sources
 

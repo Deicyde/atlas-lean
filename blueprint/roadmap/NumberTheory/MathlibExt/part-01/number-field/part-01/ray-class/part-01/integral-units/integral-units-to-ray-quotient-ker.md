@@ -13,7 +13,12 @@ Kernel of the quotient endpoint is the ray-one unit subgroup.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integral Ray One Units](integral-ray-one-units.md)
+- [Integral Units To Ray Quotient](integral-units-to-ray-quotient.md)
+
+## Proof depends on
+
+- [Integral Units To Ray Elements](integral-units-to-ray-elements.md)
 
 ## Sources
 

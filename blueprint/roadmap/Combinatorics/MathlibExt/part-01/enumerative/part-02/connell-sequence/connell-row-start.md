@@ -15,6 +15,10 @@ The source numbers rows from one; this helper is total at row zero.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Connell Row Length](connell-row-length.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.ConnellSequence](../../../../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,16 @@ succeeds with probability one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grover Iterate](../analysis/grover-iterate.md)
+- [Marked Probability](../basic/marked-probability.md)
+- [Uniform Amplitude](../basic/uniform-amplitude.md)
+
+## Proof depends on
+
+- [Amplitude](../basic/amplitude.md)
+- [Grover Step](../diffusion/grover-step.md)
+- [Mean Amplitude](../diffusion/mean-amplitude.md)
+- [Phase Oracle](../basic/phase-oracle.md)
 
 ## Sources
 

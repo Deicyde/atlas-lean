@@ -13,7 +13,7 @@ Unfolding at step zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Traj](traj.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ A bisection sequence exists for every function and pair of endpoints.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bisection Sequence](is-bisection-sequence.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ The Selberg level sum is at least one when the level is at least one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Level Sum](level-sum.md)
+
+## Proof depends on
+
+- [Level Set](level-set.md)
 
 ## Sources
 

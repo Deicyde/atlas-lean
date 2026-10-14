@@ -14,6 +14,10 @@ The quotient endpoint map (ATLAS `exactSeq_map2`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integral Units To Ray Elements](integral-units-to-ray-elements.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.IntegralUnits](../../../../../../../../../sources/v2/MathlibExt.md)

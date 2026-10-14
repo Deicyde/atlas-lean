@@ -13,7 +13,7 @@ Below-diagonal (and diagonal) entries of a lower-triangular Toeplitz matrix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Toeplitz](lower-toeplitz.md)
 
 ## Sources
 

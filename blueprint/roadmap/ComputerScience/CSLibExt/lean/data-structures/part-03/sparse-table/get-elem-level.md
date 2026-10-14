@@ -13,7 +13,11 @@ An in-range level entry is `List.min?` of its interval slice.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Level](level.md)
+
+## Proof depends on
+
+- [Omin](omin.md)
 
 ## Sources
 

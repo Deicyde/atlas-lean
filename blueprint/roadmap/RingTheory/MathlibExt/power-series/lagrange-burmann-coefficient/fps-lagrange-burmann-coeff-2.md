@@ -33,6 +33,10 @@ variants `formal_implicit_composition` and `formal_power_specialization`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fps lagrange burmann coeff'](fps-lagrange-burmann-coeff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.PowerSeries.LagrangeBurmannCoefficient](../../../../../sources/v2/MathlibExt.md)

@@ -16,6 +16,10 @@ value is one at `k = 0` and zero otherwise.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [B Nomial Indispensable Digit Count](b-nomial-indispensable-digit-count.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.BNomialNumberType3](../../../../../sources/v2/MathlibExt.md)

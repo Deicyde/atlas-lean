@@ -12,7 +12,12 @@ Source: CE2003 Appendix A, limsup as positive radii tend to infinity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Packing](packing.md)
+
+## Proof depends on
+
+- [Positive Radius](positive-radius.md)
+- [Centered Radius Density](centered-radius-density.md)
 
 ## Sources
 

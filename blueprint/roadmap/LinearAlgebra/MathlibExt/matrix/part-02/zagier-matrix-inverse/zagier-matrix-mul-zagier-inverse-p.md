@@ -13,7 +13,12 @@ The candidate inverse is a right inverse of Zagier's matrix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zagier Inverse P](zagier-inverse-p.md)
+- [Zagier Matrix](zagier-matrix.md)
+
+## Proof depends on
+
+- [Zagier Inverse P mul zagier Matrix](zagier-inverse-p-mul-zagier-matrix.md)
 
 ## Sources
 

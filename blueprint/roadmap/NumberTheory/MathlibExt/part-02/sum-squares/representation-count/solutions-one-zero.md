@@ -13,7 +13,7 @@ The `k = 1` level set at `n = 0` is the zero singleton.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solutions](solutions.md)
 
 ## Sources
 

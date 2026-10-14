@@ -15,6 +15,10 @@ graph on `n` vertices. This is `0` when no saturated graph exists.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sat Counts](sat-counts.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Saturation](../../../../../../../sources/v2/MathlibExt.md)

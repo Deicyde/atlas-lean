@@ -18,6 +18,10 @@ witnessing each convex-hull membership.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Colorful caratheodory](colorful-caratheodory.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Convex.ColorfulCaratheodory](../../../../../sources/v2/MathlibExt.md)

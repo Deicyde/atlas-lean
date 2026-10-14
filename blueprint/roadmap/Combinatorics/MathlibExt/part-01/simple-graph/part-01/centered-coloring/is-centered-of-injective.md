@@ -13,7 +13,11 @@ An injective coloring is centered: any vertex of a connected set works.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Centered](is-centered.md)
+
+## Proof depends on
+
+- [Is Phi Center](is-phi-center.md)
 
 ## Sources
 

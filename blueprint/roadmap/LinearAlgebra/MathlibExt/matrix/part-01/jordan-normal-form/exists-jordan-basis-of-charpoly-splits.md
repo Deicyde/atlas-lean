@@ -13,7 +13,12 @@ An endomorphism with split characteristic polynomial has a Jordan-chain basis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jordan Block](jordan-block.md)
+
+## Proof depends on
+
+- [To Matrix eq block Diagonal jordan Block](to-matrix-eq-block-diagonal-jordan-block.md)
+- [Exists jordan Basis of is Nilpotent](exists-jordan-basis-of-is-nilpotent.md)
 
 ## Sources
 

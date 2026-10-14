@@ -18,6 +18,10 @@ Concept `jis_sem_f66a64ccd0402d409b050315` (statements
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Jacobi Stirling First](../jacobi-stirling-first-kind/jacobi-stirling-first.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.LegendreStirlingFirstKind](../../../../../../../sources/v2/MathlibExt.md)

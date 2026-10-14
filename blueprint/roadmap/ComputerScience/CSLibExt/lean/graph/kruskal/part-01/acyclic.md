@@ -12,7 +12,11 @@ Each edge joins two components created by the preceding edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Edge](weighted-edge.md)
+
+## Proof depends on
+
+- [Acyclic Rev](acyclic-rev.md)
 
 ## Sources
 

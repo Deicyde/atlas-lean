@@ -19,6 +19,11 @@ whose exact threshold the source records as `3`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Leading Term](leading-term.md)
+- [Partial Hadamard Count](partial-hadamard-count.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.PartialHadamard](../../../../../sources/v2/MathlibExt.md)

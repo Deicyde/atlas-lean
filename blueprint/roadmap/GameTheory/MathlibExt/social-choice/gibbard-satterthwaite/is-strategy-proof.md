@@ -13,7 +13,13 @@ Strategy-proof: no voter can get a strictly preferred outcome
 
 ## Depends on
 
-This node has no prerequisites.
+- [Social Choice Function](social-choice-function.md)
+
+## Proof depends on
+
+- [Diff At Most At](diff-at-most-at.md)
+- [Profile](profile.md)
+- [Lt](lt.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The primary takes all `δ ≥ 1`, not merely sufficiently large ratios.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Remainder](remainder.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Fourier.TorusSobolev.Basic](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ Erasing the comparison and swap events recovers the canonical returned array.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sift Up](sift-up.md)
 
 ## Sources
 

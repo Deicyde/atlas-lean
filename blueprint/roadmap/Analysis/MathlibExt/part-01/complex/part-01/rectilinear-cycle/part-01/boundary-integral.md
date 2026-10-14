@@ -15,7 +15,7 @@ exactly the form used by Mathlib's rectangular Cauchy--Goursat theorem.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectilinear Rectangle](rectilinear-rectangle.md)
 
 ## Sources
 

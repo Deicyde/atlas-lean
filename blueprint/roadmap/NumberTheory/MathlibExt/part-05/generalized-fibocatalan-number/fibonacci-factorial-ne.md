@@ -13,7 +13,11 @@ Every Fibonacci factorial is nonzero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Factorial](fibonacci-factorial.md)
+
+## Proof depends on
+
+- [Fibonacci Factorial pos](fibonacci-factorial-pos.md)
 
 ## Sources
 

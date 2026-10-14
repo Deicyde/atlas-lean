@@ -13,7 +13,13 @@ Homothety of period pairs is an equivalence relation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Homothetic](is-homothetic.md)
+
+## Proof depends on
+
+- [Refl](refl.md)
+- [Symm](symm.md)
+- [Trans](trans.md)
 
 ## Sources
 

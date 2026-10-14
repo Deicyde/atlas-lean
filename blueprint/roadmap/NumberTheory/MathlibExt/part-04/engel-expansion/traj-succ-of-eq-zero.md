@@ -13,7 +13,11 @@ Unfolding after a vanishing step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Traj](traj.md)
+
+## Proof depends on
+
+- [Neg Rem](neg-rem.md)
 
 ## Sources
 

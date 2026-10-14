@@ -13,7 +13,12 @@ A concrete finite bound for the optimizer.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Value](value.md)
+
+## Proof depends on
+
+- [Is Admissible forty Two](is-admissible-forty-two.md)
+- [Value le of is Admissible](value-le-of-is-admissible.md)
 
 ## Sources
 

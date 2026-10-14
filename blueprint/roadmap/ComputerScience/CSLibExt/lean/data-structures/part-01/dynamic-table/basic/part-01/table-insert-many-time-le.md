@@ -13,7 +13,16 @@ From empty, the actual total copied-item and insertion writes are at most three 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](table.md)
+- [Empty](empty.md)
+- [Table Insert Many](table-insert-many.md)
+
+## Proof depends on
+
+- [Table Insert](table-insert.md)
+- [Table Insert num](table-insert-num.md)
+- [Table Insert size](table-insert-size.md)
+- [Table Insert time](table-insert-time.md)
 
 ## Sources
 

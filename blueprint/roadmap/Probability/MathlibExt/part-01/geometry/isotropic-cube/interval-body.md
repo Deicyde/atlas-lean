@@ -12,7 +12,7 @@ A full-dimensional interval body, built from the actual closed interval.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Full Dimensional Body](../isotropic-constant/full-dimensional-body.md)
 
 ## Sources
 

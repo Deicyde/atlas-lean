@@ -14,6 +14,10 @@ The group ring `𝔽₂[P]` defined in Theorem A of the paper.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [P](p.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.UnitConjectureWanted](../../../../../sources/v2/WantedExt.md)

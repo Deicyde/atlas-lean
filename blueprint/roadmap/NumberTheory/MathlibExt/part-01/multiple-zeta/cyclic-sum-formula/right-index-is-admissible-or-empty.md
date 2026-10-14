@@ -13,7 +13,11 @@ The right-hand index is always admissible or empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Right Index](right-index.md)
+
+## Proof depends on
+
+- [To Index](to-index.md)
 
 ## Sources
 

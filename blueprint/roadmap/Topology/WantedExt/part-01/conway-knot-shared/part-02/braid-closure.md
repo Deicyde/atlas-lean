@@ -13,7 +13,13 @@ component starting at strand position `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R3](../part-01/r3.md)
+
+## Proof depends on
+
+- [State](state.md)
+- [Iterate](iterate.md)
+- [Mk R3](mk-r3.md)
 
 ## Sources
 

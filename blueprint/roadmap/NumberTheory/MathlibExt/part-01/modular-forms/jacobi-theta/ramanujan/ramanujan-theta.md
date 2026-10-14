@@ -12,7 +12,11 @@ Ramanujan's general theta function, restricted to summable parameters.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ramanujan Theta Term](ramanujan-theta-term.md)
+
+## Proof depends on
+
+- [Ramanujan Theta Raw](ramanujan-theta-raw.md)
 
 ## Sources
 

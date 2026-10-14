@@ -15,6 +15,10 @@ Log-factorial upper bound from Stirling.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Stirling upper](../part-01/stirling-upper.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Lower](../../../../../../../../sources/v2/MathlibExt.md)

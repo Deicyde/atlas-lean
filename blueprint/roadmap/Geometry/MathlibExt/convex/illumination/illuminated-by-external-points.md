@@ -14,6 +14,10 @@ A finite family of actual exterior light sources illuminates every boundary poin
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [External Point Illuminates](external-point-illuminates.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Convex.Illumination](../../../../../sources/v2/MathlibExt.md)

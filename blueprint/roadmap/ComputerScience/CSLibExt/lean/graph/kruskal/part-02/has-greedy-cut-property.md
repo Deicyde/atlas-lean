@@ -14,7 +14,20 @@ union-find partition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Graph](../part-01/graph.md)
+
+## Proof depends on
+
+- [Key LE](../part-01/key-le.md)
+- [State](../part-01/state.md)
+- [Weighted Edge](../part-01/weighted-edge.md)
+- [Key](../part-01/key.md)
+- [Initial Forest](../part-01/initial-forest.md)
+- [Ordered Edges](../part-01/ordered-edges.md)
+- [Scan](scan.md)
+- [Valid Edges](../part-01/valid-edges.md)
+- [Equivalent](../../../data-structures/part-03/union-find/part-01/equivalent.md)
+- [Forest](../../../data-structures/part-03/union-find/part-01/forest.md)
 
 ## Sources
 

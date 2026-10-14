@@ -13,7 +13,7 @@ Marginals of a nonnegative `μ` are nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shearer Marginal](shearer-marginal.md)
 
 ## Sources
 

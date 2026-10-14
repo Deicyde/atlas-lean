@@ -12,7 +12,7 @@ The length of a cycle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cycle](cycle.md)
 
 ## Sources
 

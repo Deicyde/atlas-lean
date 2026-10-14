@@ -13,7 +13,7 @@ The inverse factorial is the reciprocal of `Nat.factorial` on natural inputs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv Fact](inv-fact.md)
 
 ## Sources
 

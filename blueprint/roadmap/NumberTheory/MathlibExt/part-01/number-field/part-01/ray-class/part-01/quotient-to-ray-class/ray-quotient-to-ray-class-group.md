@@ -12,7 +12,12 @@ Quotient-to-ray-class map (ATLAS `exactSeq_map3`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Group](../group/ray-class-group.md)
+
+## Proof depends on
+
+- [Ray Element Class Map](ray-element-class-map.md)
+- [Ray One Elements le ray Element Class Map ker](ray-one-elements-le-ray-element-class-ma.md)
 
 ## Sources
 

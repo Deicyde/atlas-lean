@@ -13,7 +13,12 @@ Agreement with the quotient off `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perron Remainder](perron-remainder.md)
+
+## Proof depends on
+
+- [E1](e1.md)
+- [E1 eq div](e1-eq-div.md)
 
 ## Sources
 

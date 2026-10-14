@@ -14,6 +14,14 @@ Robertson bound under real coefficients, and under close-to-convexity [AMR-022-6
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hayman Has Real Coeffs](hayman-has-real-coeffs.md)
+- [Hayman Is Close To Convex](hayman-is-close-to-convex.md)
+- [Hayman Is Odd Sqrt](hayman-is-odd-sqrt.md)
+- [Hayman Is Schlicht](hayman-is-schlicht.md)
+- [Hayman Robertson Bound](hayman-robertson-bound.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HaymanRobertson39Wanted](../../../../../sources/v2/WantedExt.md)

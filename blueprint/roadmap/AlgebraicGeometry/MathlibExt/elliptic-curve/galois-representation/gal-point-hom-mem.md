@@ -13,7 +13,12 @@ The Galois point action preserves `p`-torsion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gal Point Hom](gal-point-hom.md)
+- [Torsion Pts](torsion-pts.md)
+
+## Proof depends on
+
+- [Mem torsion Pts iff](mem-torsion-pts-iff.md)
 
 ## Sources
 

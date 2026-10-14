@@ -14,6 +14,10 @@ Biconjugate of `f` at `x`: supremum over dual elements.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fenchel Conj](fenchel-conj.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Convex.FenchelMoreau](../../../../../../sources/v2/MathlibExt.md)

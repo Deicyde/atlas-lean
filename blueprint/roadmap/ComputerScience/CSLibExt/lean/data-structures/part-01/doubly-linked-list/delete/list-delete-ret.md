@@ -13,7 +13,8 @@ The complete returned store and header, with the successor read from the carried
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../basic/node.md)
+- [List Delete](list-delete.md)
 
 ## Sources
 

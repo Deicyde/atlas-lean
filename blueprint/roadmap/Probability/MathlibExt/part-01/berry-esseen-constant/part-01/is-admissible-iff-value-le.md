@@ -13,7 +13,14 @@ Admissibility is precisely lying above the optimal coefficient.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible](is-admissible.md)
+- [Value](value.md)
+
+## Proof depends on
+
+- [Is Admissible mono](is-admissible-mono.md)
+- [Value is Admissible](value-is-admissible.md)
+- [Value le of is Admissible](value-le-of-is-admissible.md)
 
 ## Sources
 

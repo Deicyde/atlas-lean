@@ -13,7 +13,8 @@ Complete source update, including an aliased supplied node and old head.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
+- [List Prepend](list-prepend.md)
 
 ## Sources
 

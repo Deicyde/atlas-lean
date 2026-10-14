@@ -13,7 +13,9 @@ Popping the front fails exactly when the represented sequence is empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Deque](deque.md)
+- [Contents](contents.md)
+- [Pop Front](pop-front.md)
 
 ## Sources
 

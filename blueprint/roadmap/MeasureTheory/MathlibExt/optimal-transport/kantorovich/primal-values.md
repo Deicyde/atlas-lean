@@ -14,6 +14,10 @@ Values of `∫ c dπ` over couplings `π` of `μ`, `ν`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Coupling](is-coupling.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.MeasureTheory.OptimalTransport.Kantorovich](../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,12 @@ Insert one value into a Fibonacci heap by melding with a one-element heap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Heap](../part-02/fibonacci-heap.md)
+
+## Proof depends on
+
+- [Meld](meld.md)
+- [Singleton](singleton.md)
 
 ## Sources
 

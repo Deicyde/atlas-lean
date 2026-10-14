@@ -13,7 +13,11 @@ identifies two independent pairs with a pair of the combined length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary String Pair](../part-01/binary-string-pair.md)
+
+## Proof depends on
+
+- [Binary String](../part-01/binary-string.md)
 
 ## Sources
 

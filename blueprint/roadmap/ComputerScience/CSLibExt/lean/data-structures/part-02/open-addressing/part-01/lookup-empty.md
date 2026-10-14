@@ -13,7 +13,12 @@ Looking up any key in the empty table returns `none`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empty](empty.md)
+- [Lookup](lookup.md)
+
+## Proof depends on
+
+- [Lookup Aux](lookup-aux.md)
 
 ## Sources
 

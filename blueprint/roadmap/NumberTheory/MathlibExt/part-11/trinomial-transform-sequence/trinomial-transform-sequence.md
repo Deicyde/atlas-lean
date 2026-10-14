@@ -19,6 +19,10 @@ Triangle*, Journal of Integer Sequences 21 (2018), Article 18.7.3.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Trinomial Coefficient](../trinomial-coefficient.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.TrinomialTransformSequence](../../../../../sources/v2/MathlibExt.md)

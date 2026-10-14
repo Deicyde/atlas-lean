@@ -13,7 +13,14 @@ The canonical insertion fold preserves compact-prefix occupancy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](table.md)
+- [Well Formed](well-formed.md)
+- [Table Insert Many](table-insert-many.md)
+
+## Proof depends on
+
+- [Table Insert](table-insert.md)
+- [Table Insert well Formed](table-insert-well-formed.md)
 
 ## Sources
 

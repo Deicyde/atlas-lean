@@ -16,6 +16,13 @@ Staver's identity: for even `n`, `S¹ = (n/2) * S⁰`, and for odd `n`,
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Staver reflect one](staver-reflect-one.md)
+- [Staver reflect zero](staver-reflect-zero.md)
+- [Staver sign even](staver-sign-even.md)
+- [Staver sign odd](staver-sign-odd.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.StaverIdentity](../../../../../../../sources/v2/MathlibExt.md)

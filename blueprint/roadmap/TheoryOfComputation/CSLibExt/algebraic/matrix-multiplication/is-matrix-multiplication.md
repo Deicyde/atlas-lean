@@ -12,7 +12,12 @@ Correctness on all actual inputs, without a formal-polynomial identity restricti
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matrix Arithmetic Circuit](matrix-arithmetic-circuit.md)
+
+## Proof depends on
+
+- [Evaluate](../arithmetic-circuit/evaluate-3.md)
+- [Matrix Input](matrix-input.md)
 
 ## Sources
 

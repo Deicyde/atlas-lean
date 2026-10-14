@@ -13,7 +13,13 @@ Sifting down only permutes the input array.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Sift Down](dary-sift-down.md)
+
+## Proof depends on
+
+- [Dary Smallest Child](../part-01/dary-smallest-child.md)
+- [Dary Smallest Child gt](dary-smallest-child-gt.md)
+- [Dary Smallest Child valid](../part-01/dary-smallest-child-valid.md)
 
 ## Sources
 

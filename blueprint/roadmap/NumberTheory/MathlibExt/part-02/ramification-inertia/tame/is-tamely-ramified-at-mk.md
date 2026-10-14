@@ -13,7 +13,8 @@ Constructor for tame ramification from its two defining parts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Residue Separable At](is-residue-separable-at.md)
+- [Is Tamely Ramified At](is-tamely-ramified-at.md)
 
 ## Sources
 

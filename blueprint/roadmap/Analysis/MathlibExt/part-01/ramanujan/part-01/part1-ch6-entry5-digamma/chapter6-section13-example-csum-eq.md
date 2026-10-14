@@ -13,7 +13,13 @@ The functional equation `C(x) = 1 / (x + 1) - C(x + 1) / (x + 1)` for `0 < x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter6 Section13 Example CSum](chapter6-section13-example-csum.md)
+
+## Proof depends on
+
+- [Chapter6 Section13 Example CTerm](chapter6-section13-example-cterm.md)
+- [Chapter6 Section13 Example CTerm succ](chapter6-section13-example-cterm-succ.md)
+- [Summable chapter6 Section13 Example CTerm](summable-chapter6-section13-example-cter.md)
 
 ## Sources
 

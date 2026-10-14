@@ -14,6 +14,10 @@ The type of `n × n` alternating sign matrices.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Alternating Sign Matrix](is-alternating-sign-matrix.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.AlternatingSignMatrixWanted](../../../../../sources/v2/WantedExt.md)

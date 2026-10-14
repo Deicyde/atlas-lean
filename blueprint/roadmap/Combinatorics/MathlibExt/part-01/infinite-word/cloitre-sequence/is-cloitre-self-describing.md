@@ -19,6 +19,11 @@ Source `jis_38a9669323eb3fad1c972241`, `jis_dec34d24d6807862a9e836cc`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Run Boundary](is-run-boundary.md)
+- [Cloitre Run Sum](cloitre-run-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.CloitreSequence](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ The table recursion charges exactly one transition per prefix pair.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edit Distance](edit-distance.md)
 
 ## Sources
 

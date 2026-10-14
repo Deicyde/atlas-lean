@@ -15,6 +15,11 @@ Every real `x ≥ 48` has a prime strictly between `x` and `(9 / 8) * x`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Breusch prime interval of upper](breusch-prime-interval-of-upper.md)
+- [Log F9 upper](../breusch/upper/part-03/log-f9-upper.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch](../../../../../../sources/v2/MathlibExt.md)

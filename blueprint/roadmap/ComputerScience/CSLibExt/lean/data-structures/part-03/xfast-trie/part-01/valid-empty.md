@@ -13,7 +13,12 @@ The empty trie satisfies the level invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](valid.md)
+- [Empty](empty.md)
+
+## Proof depends on
+
+- [Prefix Of](prefix-of.md)
 
 ## Sources
 

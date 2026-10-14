@@ -14,7 +14,7 @@ The formula also includes conversions, preprocessing and the other selected even
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boyer Moore Matches](../basic/boyer-moore-matches.md)
 
 ## Sources
 

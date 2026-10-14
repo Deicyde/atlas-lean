@@ -14,7 +14,7 @@ solvable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Real Hilbert Symbol](real-hilbert-symbol.md)
 
 ## Sources
 

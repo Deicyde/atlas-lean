@@ -13,7 +13,7 @@ Exact recovery: `p * q_p(a) = a ^ (p - 1) - 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fermat Quotient](fermat-quotient.md)
 
 ## Sources
 

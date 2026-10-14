@@ -13,7 +13,7 @@ carrying one adjacency matrix to the other.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Graph Code](graph-code.md)
 
 ## Sources
 

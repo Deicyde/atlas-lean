@@ -13,7 +13,18 @@ The combined map is trivial exactly on ray-one elements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Ray Element One](../ray-group/is-ray-element-one.md)
+- [Residue Sign Target](residue-sign-target.md)
+- [Ray Elements](../ray-group/ray-elements.md)
+- [Residue Sign Map](residue-sign-map.md)
+
+## Proof depends on
+
+- [Congruent One At Finite Part](../ray-group/congruent-one-at-finite-part.md)
+- [Positive At Infinite Part](../ray-group/positive-at-infinite-part.md)
+- [Mem ray One Elements iff](mem-ray-one-elements-iff.md)
+- [Ray One Elements](ray-one-elements.md)
+- [Residue Sign Map ker](residue-sign-map-ker.md)
 
 ## Sources
 

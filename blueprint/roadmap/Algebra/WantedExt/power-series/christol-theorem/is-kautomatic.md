@@ -14,6 +14,10 @@ lean: MetaMathlibExt.IsKAutomatic
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [K Kernel](k-kernel.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Algebra.PowerSeries.ChristolTheorem](../../../../../sources/v2/WantedExt.md)

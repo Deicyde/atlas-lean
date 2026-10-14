@@ -20,7 +20,7 @@ parent; the three subcases mirror the black-sibling cases).
 
 ## Depends on
 
-This node has no prerequisites.
+- [BBTree](bbtree.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Pointwise evaluation of the joint sign map.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Infinite Sign Map](infinite-sign-map.md)
+- [Sign At Real Place](sign-at-real-place.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Pointwise effect of deleting a successor: only the cell at `y` changes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../part-01/node.md)
+- [Delete After](delete-after.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ validity field of the resulting heap, exposed as a theorem for convenience.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decrease Key](../part-01/decrease-key.md)
 
 ## Sources
 

@@ -24,6 +24,10 @@ ratio zero while the even product coefficients stay nonzero. Natural subtraction
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bender product coefficient asymptotic general](bender-product-coefficient-asymptotic-ge.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Asymptotics.BenderProductCoefficient](../../../../../../sources/v2/MathlibExt.md)

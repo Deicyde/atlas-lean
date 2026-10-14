@@ -12,7 +12,7 @@ The entry in row `n` and column `k` of the Bell matrix represented by `M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bell Matrix](bell-matrix.md)
 
 ## Sources
 

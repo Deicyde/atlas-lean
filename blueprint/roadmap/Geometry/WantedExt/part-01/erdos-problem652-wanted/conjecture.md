@@ -14,6 +14,10 @@ The question of [EP-652]: is it true that `αₖ → ∞` as `k → ∞`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Erdos Alpha](erdos-alpha.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.ErdosProblem652Wanted](../../../../../sources/v2/WantedExt.md)

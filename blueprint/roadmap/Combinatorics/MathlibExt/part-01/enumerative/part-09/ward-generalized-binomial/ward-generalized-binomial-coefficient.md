@@ -19,6 +19,10 @@ sequences, including sequences with zero terms.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ward Units Carry](ward-units-carry.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.WardGeneralizedBinomial](../../../../../../../sources/v2/MathlibExt.md)

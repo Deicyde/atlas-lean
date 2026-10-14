@@ -12,7 +12,7 @@ The number of occurrences of the unbarred letter labeled `m` in `w`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gessel Alphabet](gessel-alphabet.md)
 
 ## Sources
 

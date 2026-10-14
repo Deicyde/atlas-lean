@@ -12,7 +12,7 @@ Efficiency: total allocated equals worth of grand coalition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coop Game](coop-game.md)
 
 ## Sources
 

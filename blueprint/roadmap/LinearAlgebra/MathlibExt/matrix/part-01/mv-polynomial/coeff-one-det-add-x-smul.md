@@ -13,7 +13,7 @@ The coefficient of `X` in `det (B + X A)` is `Matrix.detLinear B A`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Det Linear](det-linear.md)
 
 ## Sources
 

@@ -16,6 +16,16 @@ element with `g ≠ 1` is killed by the character.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [All roots eq of norm eq](../scalar-center/all-roots-eq-of-norm-eq.md)
+- [Burnside coprime vanish](../killing-lemma/burnside-coprime-vanish.md)
+- [Char Center](../scalar-center/char-center.md)
+- [Char Center proper of nonlinear](../scalar-center/char-center-proper-of-nonlinear.md)
+- [Charpoly roots card](../killing-lemma/charpoly-roots-card.md)
+- [Eq smul one of all roots eq](../scalar-center/eq-smul-one-of-all-roots-eq.md)
+- [Mem char Center of eq smul](../scalar-center/mem-char-center-of-eq-smul.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.SimplePrime](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ remaining budget of attempts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Open Addressing](open-addressing.md)
 
 ## Sources
 

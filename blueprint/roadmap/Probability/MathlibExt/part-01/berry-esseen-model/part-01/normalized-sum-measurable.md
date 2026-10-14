@@ -13,7 +13,7 @@ The sample map is measurable, so its pushforward is not a fallback measure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Sum](normalized-sum.md)
 
 ## Sources
 

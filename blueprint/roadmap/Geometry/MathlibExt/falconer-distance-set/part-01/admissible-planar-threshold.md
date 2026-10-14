@@ -14,6 +14,10 @@ Sufficient thresholds in the source's closed interval `[0,2]`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Planar Threshold Property](planar-threshold-property.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.FalconerDistanceSet](../../../../../sources/v2/MathlibExt.md)

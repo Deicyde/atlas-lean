@@ -12,7 +12,11 @@ The `s,t`-factorial, the product of Lucas brackets from one through `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Parameters](lucas-parameters.md)
+
+## Proof depends on
+
+- [Lucas Bracket](lucas-bracket.md)
 
 ## Sources
 

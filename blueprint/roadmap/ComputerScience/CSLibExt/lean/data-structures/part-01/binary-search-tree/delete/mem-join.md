@@ -13,7 +13,7 @@ A key is in a splice exactly when it is in one of the two parts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Join](join.md)
 
 ## Sources
 

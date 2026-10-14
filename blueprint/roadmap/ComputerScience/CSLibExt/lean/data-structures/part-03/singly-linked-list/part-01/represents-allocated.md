@@ -13,7 +13,8 @@ Every represented identity is allocated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
+- [Represents](represents.md)
 
 ## Sources
 

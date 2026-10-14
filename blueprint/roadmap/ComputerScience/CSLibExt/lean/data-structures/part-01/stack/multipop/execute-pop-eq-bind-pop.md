@@ -13,7 +13,9 @@ Sequence POP agrees with the standalone operation, including underflow.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Operation](operation.md)
+- [Execute](execute.md)
+- [Pop](../basic/pop.md)
 
 ## Sources
 

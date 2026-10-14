@@ -17,6 +17,10 @@ admits a universal cycle for the `k`-subsets of an `n`-set.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Universal Cycle](is-universal-cycle.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.UniversalCycleSubsetsWanted](../../../../../sources/v2/WantedExt.md)

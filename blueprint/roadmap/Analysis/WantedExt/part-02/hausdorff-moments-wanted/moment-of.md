@@ -15,6 +15,11 @@ over the cube.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cube](cube.md)
+- [Monomial](monomial.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HausdorffMomentsWanted](../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,7 @@ Transparent characterization of roughness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Rough](is-rough.md)
 
 ## Sources
 

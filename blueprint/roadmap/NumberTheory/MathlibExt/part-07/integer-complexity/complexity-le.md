@@ -13,7 +13,15 @@ Minimality: complexity is least leaf count. Source C4.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expr](expr.md)
+- [Count](count.md)
+- [Eval](eval.md)
+- [Complexity](complexity.md)
+
+## Proof depends on
+
+- [Pred](pred.md)
+- [Exists expr of pos](exists-expr-of-pos.md)
 
 ## Sources
 

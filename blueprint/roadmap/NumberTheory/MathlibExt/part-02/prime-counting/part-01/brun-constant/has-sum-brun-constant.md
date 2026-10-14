@@ -13,7 +13,12 @@ The defining twin-prime reciprocal series has Brun's constant as its sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Brun Constant](brun-constant.md)
+- [Brun Twin Prime Reciprocal Term](brun-twin-prime-reciprocal-term.md)
+
+## Proof depends on
+
+- [Summable brun Twin Prime Reciprocal Term](summable-brun-twin-prime-reciprocal-term.md)
 
 ## Sources
 

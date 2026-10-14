@@ -12,7 +12,12 @@ Low endpoints respect the BST split at every node.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Entry](entry.md)
+- [Interval](interval.md)
 
 ## Sources
 

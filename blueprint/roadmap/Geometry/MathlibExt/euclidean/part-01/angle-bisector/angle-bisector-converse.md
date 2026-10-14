@@ -16,6 +16,10 @@ dividing `BC` in the ratio `AB : AC` lies on the internal bisector of angle `A`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Angle bisector converse general](angle-bisector-converse-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.AngleBisector](../../../../../../sources/v2/MathlibExt.md)

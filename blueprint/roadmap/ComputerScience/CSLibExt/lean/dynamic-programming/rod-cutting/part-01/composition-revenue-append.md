@@ -13,7 +13,7 @@ Revenue is additive when two whole-rod compositions are concatenated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composition Revenue](composition-revenue.md)
 
 ## Sources
 

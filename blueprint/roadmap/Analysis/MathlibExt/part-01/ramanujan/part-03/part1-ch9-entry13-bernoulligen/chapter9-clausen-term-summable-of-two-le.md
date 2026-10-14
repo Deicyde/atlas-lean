@@ -15,6 +15,10 @@ The Clausen series is summable for `2 ≤ m`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter9 Clausen Term norm bound](chapter9-clausen-term-norm-bound.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch9Entry13Bernoulligen](../../../../../../../sources/v2/MathlibExt.md)

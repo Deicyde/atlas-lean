@@ -13,7 +13,8 @@ A representation in `max u v` witnesses algebraicity over `K`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Algebraic Representation](algebraic-representation.md)
+- [Is Algebraic Over](is-algebraic-over.md)
 
 ## Sources
 

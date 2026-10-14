@@ -13,7 +13,8 @@ The element returned by `successor` is strictly above `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](../part-01/van-emde-boas.md)
+- [Successor](successor.md)
 
 ## Sources
 

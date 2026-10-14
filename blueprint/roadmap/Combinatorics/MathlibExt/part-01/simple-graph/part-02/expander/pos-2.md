@@ -13,7 +13,11 @@ A uniform vertex expander satisfies `0 < h`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Uniform Vertex Expander](is-uniform-vertex-expander.md)
+
+## Proof depends on
+
+- [External Neighbor Set](external-neighbor-set.md)
 
 ## Sources
 

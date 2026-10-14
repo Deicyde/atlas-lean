@@ -15,6 +15,11 @@ in equilibrium in direction `ξ` at level `δ`, for all `ξ ∈ S^d`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Floats In Equilibrium In Direction At Level](floats-in-equilibrium-in-direction-at-le.md)
+- [S](s.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.UlamWanted](../../../../../sources/v2/WantedExt.md)

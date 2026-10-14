@@ -16,6 +16,10 @@ Natural-number version of
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Choose le prod primorial nth Root of no large](../choose-factorization/choose-le-prod-primorial-nth-root-of-no.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.LargePrimeCriteria](../../../../../../sources/v2/MathlibExt.md)

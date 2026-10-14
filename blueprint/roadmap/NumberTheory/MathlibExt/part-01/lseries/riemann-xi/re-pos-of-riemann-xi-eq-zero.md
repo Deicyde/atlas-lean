@@ -13,7 +13,12 @@ Every zero of `ξ` has strictly positive real part.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Riemann Xi](riemann-xi.md)
+
+## Proof depends on
+
+- [Riemann Xi ne zero of one le re](riemann-xi-ne-zero-of-one-le-re.md)
+- [Riemann Xi one sub](riemann-xi-one-sub.md)
 
 ## Sources
 

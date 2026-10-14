@@ -13,7 +13,8 @@ Unfolding lemma for `outerCubeSet`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer Unit Cube](integer-unit-cube.md)
+- [Outer Cube Set](outer-cube-set.md)
 
 ## Sources
 

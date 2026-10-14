@@ -16,6 +16,10 @@ any two color classes differ by at most one.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists equitable coloring of max Degree lt](exists-equitable-coloring-of-max-degree.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.HajnalSzemeredi](../../../../../../../sources/v2/MathlibExt.md)

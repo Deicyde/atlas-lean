@@ -17,6 +17,10 @@ range of root counts at radius `r` is bounded above; see
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Root Count](root-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HaymanSphericalAreaRatioWanted](../../../../../sources/v2/WantedExt.md)

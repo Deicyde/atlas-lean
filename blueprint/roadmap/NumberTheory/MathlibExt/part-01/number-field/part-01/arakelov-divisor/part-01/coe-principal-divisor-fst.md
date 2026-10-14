@@ -13,7 +13,7 @@ The finite component of a principal divisor is the principal fractional ideal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Principal Divisor](principal-divisor.md)
 
 ## Sources
 

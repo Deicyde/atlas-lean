@@ -13,7 +13,13 @@ Meld adds the element counts of both heaps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Heap](../part-02/fibonacci-heap.md)
+- [Elements](elements.md)
+- [Meld](meld.md)
+
+## Proof depends on
+
+- [Elements meld](elements-meld.md)
 
 ## Sources
 

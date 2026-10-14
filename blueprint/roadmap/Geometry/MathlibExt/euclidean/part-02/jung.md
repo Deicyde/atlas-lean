@@ -17,6 +17,10 @@ existence of centre `c` with `s ⊆ closedBall c (√(n / (2(n+1))) * diam s)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Convex Hull of compact](../../../../Analysis/MathlibExt/part-01/convex/straszewicz/part-01/convex-hull-of-compact.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.Jung](../../../../../sources/v2/MathlibExt.md)

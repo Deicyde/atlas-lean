@@ -14,6 +14,10 @@ The finite ideles, with the restricted-product topology.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Local Integral Unit Subgroup](local-integral-unit-subgroup.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.Idele](../../../../../../../sources/v2/MathlibExt.md)

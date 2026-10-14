@@ -13,7 +13,7 @@ Exact multiplication and accumulator-addition counts of the actual rectangular r
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectangular Matrix Accumulate](rectangular-matrix-accumulate.md)
 
 ## Sources
 

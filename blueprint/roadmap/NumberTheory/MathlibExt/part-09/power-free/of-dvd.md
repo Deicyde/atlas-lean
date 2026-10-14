@@ -13,7 +13,13 @@ Divisors of a power-free number are power-free at the same level.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Power Free](is-power-free.md)
+
+## Proof depends on
+
+- [Not dvd](not-dvd.md)
+- [Pos](pos.md)
+- [Two le](two-le.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Coercion of the infinite component of a principal divisor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Principal Divisor](principal-divisor.md)
 
 ## Sources
 

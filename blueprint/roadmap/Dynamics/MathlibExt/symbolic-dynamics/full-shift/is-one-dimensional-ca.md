@@ -13,7 +13,11 @@ characterization: a continuous self-map commuting with the unit shift.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Full Shift Space](full-shift-space.md)
+
+## Proof depends on
+
+- [Unit Shift](unit-shift.md)
 
 ## Sources
 

@@ -14,7 +14,13 @@ vertex-bijection clauses.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Edge Graceful](is-edge-graceful.md)
+- [Incident Sum](incident-sum.md)
+- [Induced Residue](induced-residue.md)
+
+## Proof depends on
+
+- [Induced Residue val](induced-residue-val.md)
 
 ## Sources
 

@@ -20,7 +20,11 @@ use `ArtinLocalFactorRegular` when a genuine finite Euler factor is required.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Artin Local Datum](artin-local-datum.md)
+
+## Proof depends on
+
+- [Artin Local Denominator](artin-local-denominator.md)
 
 ## Sources
 

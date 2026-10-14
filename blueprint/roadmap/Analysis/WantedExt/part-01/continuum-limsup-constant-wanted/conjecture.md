@@ -21,6 +21,13 @@ counterexample, since its ratio is constantly `⊥`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Transcendental](../../../MathlibExt/part-01/complex/part-02/wiman/is-transcendental.md)
+- [Entire](entire.md)
+- [Ratio](ratio.md)
+- [Recedes To Inf](recedes-to-inf.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.ContinuumLimsupConstantWanted](../../../../../sources/v2/WantedExt.md)

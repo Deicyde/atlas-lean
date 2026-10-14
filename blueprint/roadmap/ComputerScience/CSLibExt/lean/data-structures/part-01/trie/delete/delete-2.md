@@ -13,7 +13,12 @@ Deletion preserves the trie invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Set Child](set-child.md)
+- [Set Child valid](set-child-valid.md)
 
 ## Sources
 

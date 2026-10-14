@@ -12,7 +12,7 @@ The graph with no edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adjacency Matrix](adjacency-matrix.md)
 
 ## Sources
 

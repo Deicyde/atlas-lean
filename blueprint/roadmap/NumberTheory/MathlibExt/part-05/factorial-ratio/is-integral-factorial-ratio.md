@@ -17,6 +17,10 @@ product at every index `n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Factorial Prod](factorial-prod.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.FactorialRatio](../../../../../sources/v2/MathlibExt.md)

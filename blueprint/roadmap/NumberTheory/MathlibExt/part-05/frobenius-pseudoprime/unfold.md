@@ -13,7 +13,7 @@ Unfolding of `Polynomial.IsGreatestCommonMonicDivisor`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Greatest Common Monic Divisor](is-greatest-common-monic-divisor.md)
 
 ## Sources
 

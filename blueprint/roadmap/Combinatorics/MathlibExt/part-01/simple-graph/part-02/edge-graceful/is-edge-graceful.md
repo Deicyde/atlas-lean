@@ -15,6 +15,10 @@ vertex-residue map. Only `[Fintype V]` is assumed publicly.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Induced Residue](induced-residue.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.EdgeGraceful](../../../../../../../sources/v2/MathlibExt.md)

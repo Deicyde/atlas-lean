@@ -16,6 +16,10 @@ Natural-number version of
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Choose le top pow half add one of no large](../choose-factorization/choose-le-top-pow-half-add-one-of-no-lar.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.LargePrimeCriteria](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,11 @@ Witt's formula for the dimension of a multihomogeneous component of a free Lie a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Free Lie Multihomogeneous Component](../free-lie-multihomogeneous-component/free-lie-multihomogeneous-component.md)
+
+## Proof depends on
+
+- [Is Free Lie Monomial](../free-lie-multihomogeneous-component/is-free-lie-monomial.md)
 
 ## Sources
 

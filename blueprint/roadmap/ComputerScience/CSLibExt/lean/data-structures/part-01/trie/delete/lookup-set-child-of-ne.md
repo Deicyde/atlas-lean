@@ -13,7 +13,11 @@ Lookup at any other key is unchanged by `setChild`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set Child](set-child.md)
+
+## Proof depends on
+
+- [Is Empty Node](is-empty-node.md)
 
 ## Sources
 

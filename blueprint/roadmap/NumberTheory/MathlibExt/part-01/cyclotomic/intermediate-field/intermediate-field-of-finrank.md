@@ -14,6 +14,10 @@ The unique degree-`s` intermediate field of the `p`-th cyclotomic field.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists Unique intermediate Field finrank](exists-unique-intermediate-field-finrank.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Cyclotomic.IntermediateField](../../../../../../sources/v2/MathlibExt.md)

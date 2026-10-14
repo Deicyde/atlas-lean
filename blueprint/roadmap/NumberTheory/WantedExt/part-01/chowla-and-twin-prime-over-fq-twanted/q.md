@@ -15,6 +15,11 @@ see Equation (1.4) in the paper.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Indicator](indicator.md)
+- [Primes](primes.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted](../../../../../sources/v2/WantedExt.md)

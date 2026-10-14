@@ -13,7 +13,7 @@ Exponent monotonicity: `k`-full implies `j`-full for `j ≤ k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KFull](is-kfull.md)
 
 ## Sources
 

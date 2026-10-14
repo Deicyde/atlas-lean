@@ -16,6 +16,10 @@ harmonic numbers has the stated logarithmic closed form.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Catalan harmonic generating function canonical](catalan-harmonic-generating-function-can.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.CatalanHarmonicGeneratingFunction](../../../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,12 @@ The set of degree `d` strictly Lorentzian polynomials in `ℝ[w₁,...,wₙ]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H](h.md)
+
+## Proof depends on
+
+- [Hessian](hessian.md)
+- [P](p.md)
 
 ## Sources
 

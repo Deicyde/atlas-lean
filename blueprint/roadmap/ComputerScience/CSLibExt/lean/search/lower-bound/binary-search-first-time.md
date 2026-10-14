@@ -13,7 +13,8 @@ The wrapper adds one comparison exactly when the lower-bound index is valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary Search First?](binary-search-first.md)
+- [Lower Bound](lower-bound.md)
 
 ## Sources
 

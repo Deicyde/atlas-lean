@@ -16,6 +16,15 @@ shifts?
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Aperiodic X](aperiodic-x.md)
+- [Aperiodic Y](aperiodic-y.md)
+- [X](x.md)
+- [YAmb](yamb.md)
+- [Shift XRes](shift-xres.md)
+- [Shift YRes](shift-yres.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Dynamics.AMR43Problem1Wanted](../../../../sources/v2/WantedExt.md)

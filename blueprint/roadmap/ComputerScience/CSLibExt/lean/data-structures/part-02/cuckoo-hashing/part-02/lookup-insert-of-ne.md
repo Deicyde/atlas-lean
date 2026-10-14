@@ -14,7 +14,20 @@ any other key, the cuckoo analogue of `HashTable.lookup_insert_of_ne`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cuckoo Hashing](../part-01/cuckoo-hashing.md)
+- [Key Det](../part-01/key-det.md)
+- [Valid](../part-01/valid.md)
+- [Insert](../part-01/insert.md)
+- [Lookup](../part-01/lookup.md)
+
+## Proof depends on
+
+- [Stored](../part-01/stored.md)
+- [Key Det insert](key-det-insert.md)
+- [Lookup eq some of stored](../part-01/lookup-eq-some-of-stored.md)
+- [Lookup sound](../part-01/lookup-sound.md)
+- [Stored insert iff of ne](stored-insert-iff-of-ne.md)
+- [Valid insert](../part-01/valid-insert.md)
 
 ## Sources
 

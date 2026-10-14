@@ -15,6 +15,10 @@ of 3AP-free sets.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Few3 APs](has-few3-aps.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem847Wanted](../../../../../sources/v2/WantedExt.md)

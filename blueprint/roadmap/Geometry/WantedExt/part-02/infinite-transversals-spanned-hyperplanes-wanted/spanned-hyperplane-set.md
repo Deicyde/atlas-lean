@@ -15,6 +15,10 @@ whose affine span is attained by some subset of `P`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Affine Hyperplane](is-affine-hyperplane.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.InfiniteTransversalsSpannedHyperplanesWanted](../../../../../sources/v2/WantedExt.md)

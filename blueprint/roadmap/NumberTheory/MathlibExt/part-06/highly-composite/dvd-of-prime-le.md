@@ -13,7 +13,11 @@ The prime support of a highly composite number is an initial segment of the prim
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Highly Composite](is-highly-composite.md)
+
+## Proof depends on
+
+- [Factorization antitone](factorization-antitone.md)
 
 ## Sources
 

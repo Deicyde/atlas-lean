@@ -14,7 +14,13 @@ the original list and do not contain the fresh insertion identity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../basic/node.md)
+- [Represents](../basic/represents.md)
+- [List Insert](list-insert.md)
+
+## Proof depends on
+
+- [List Insert frame](list-insert-frame.md)
 
 ## Sources
 

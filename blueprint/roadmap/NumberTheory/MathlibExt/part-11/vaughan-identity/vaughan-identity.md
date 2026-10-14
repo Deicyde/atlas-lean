@@ -20,6 +20,10 @@ type-II `μ_{>U} * Λ_{>V} * 1` double sum.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Vaughan identity general](vaughan-identity-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.VaughanIdentity](../../../../../sources/v2/MathlibExt.md)

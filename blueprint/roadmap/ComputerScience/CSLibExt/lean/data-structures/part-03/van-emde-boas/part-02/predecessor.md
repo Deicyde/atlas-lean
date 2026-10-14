@@ -14,7 +14,7 @@ summary-selected nonempty cluster, else `none`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](../part-01/van-emde-boas.md)
 
 ## Sources
 

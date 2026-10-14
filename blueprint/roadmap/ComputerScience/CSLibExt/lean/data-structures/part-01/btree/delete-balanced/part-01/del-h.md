@@ -20,6 +20,10 @@ the tree fall back to leaf erasure or the identity; the specification
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Del List](del-list.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BTree.DeleteBalanced](../../../../../../../../../sources/v2/CSLibExt.md)

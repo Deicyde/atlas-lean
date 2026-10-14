@@ -16,6 +16,10 @@ from its parent. Deleting an absent key leaves every lookup unchanged.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Set Child](set-child.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.Trie.Delete](../../../../../../../../sources/v2/CSLibExt.md)

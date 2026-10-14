@@ -23,7 +23,14 @@ corrected ATLAS N261 quotient-filtration route, not a source theorem.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residue Field Maximal Ideal Pow Quotient](../maximal-ideal-pow-factor/residue-field-maximal-ideal-pow-quotient.md)
+
+## Proof depends on
+
+- [Maximal Ideal Graded Piece](../maximal-ideal-graded-piece/maximal-ideal-graded-piece.md)
+- [Factor Residue Field Maximal Ideal Pow Quotient](../maximal-ideal-pow-factor/factor-residue-field-maximal-ideal-pow-q.md)
+- [Factor Residue Field Maximal Ideal Pow Quotient surjective](../maximal-ideal-pow-factor/factor-residue-field-maximal-ideal-pow-q-2.md)
+- [Trace residue Field Maximal Ideal Pow Quotient succ](trace-residue-field-maximal-ideal-pow-qu.md)
 
 ## Sources
 

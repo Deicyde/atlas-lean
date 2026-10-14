@@ -12,7 +12,7 @@ Decode one path after the root choice, leaving unconsumed bits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](huffman-tree.md)
 
 ## Sources
 

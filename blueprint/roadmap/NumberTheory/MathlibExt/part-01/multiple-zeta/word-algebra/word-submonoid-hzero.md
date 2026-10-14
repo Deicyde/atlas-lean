@@ -14,6 +14,12 @@ Word submonoid for `H^0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is HZero Word](is-hzero-word.md)
+- [X Word](x-word.md)
+- [Y Word](y-word.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.MultipleZeta.WordAlgebra](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ Every vertex set is independent in the empty hypergraph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Independent](is-independent.md)
 
 ## Sources
 

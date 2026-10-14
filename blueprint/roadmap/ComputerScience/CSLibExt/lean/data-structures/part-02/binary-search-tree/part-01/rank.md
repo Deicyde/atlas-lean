@@ -14,6 +14,10 @@ The number of keys strictly smaller than `x`, computed from inorder traversal.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inorder](inorder.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BinarySearchTree](../../../../../../../../sources/v2/CSLibExt.md)

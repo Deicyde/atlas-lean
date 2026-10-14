@@ -15,7 +15,7 @@ bindings, and in particular the keys, are equal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](perfect-hashing.md)
 
 ## Sources
 

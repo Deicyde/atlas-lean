@@ -13,7 +13,13 @@ A uniform all-threshold estimate is equivalent to its supremum estimate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov Error](../part-01/kolmogorov-error.md)
+- [Normal CDF](../part-01/normal-cdf.md)
+- [Normalized Law](../part-01/normalized-law.md)
+
+## Proof depends on
+
+- [Pointwise le kolmogorov Error](pointwise-le-kolmogorov-error.md)
 
 ## Sources
 

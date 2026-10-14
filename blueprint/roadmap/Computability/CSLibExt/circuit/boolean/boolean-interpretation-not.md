@@ -13,7 +13,8 @@ NOT negates its sole input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boolean Gate](boolean-gate.md)
+- [Boolean Interpretation](boolean-interpretation.md)
 
 ## Sources
 

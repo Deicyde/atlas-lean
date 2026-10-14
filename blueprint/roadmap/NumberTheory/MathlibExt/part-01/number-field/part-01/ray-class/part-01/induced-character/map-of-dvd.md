@@ -12,7 +12,12 @@ Level-change map on ray class groups.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Group](../group/ray-class-group.md)
+
+## Proof depends on
+
+- [Of dvd](of-dvd.md)
+- [Coprime Inclusion](coprime-inclusion.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ Positive-exponent results lie strictly below a positive modulus.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Exponentiation](modular-exponentiation.md)
+
+## Proof depends on
+
+- [Modular Exponentiation correct](modular-exponentiation-correct.md)
 
 ## Sources
 

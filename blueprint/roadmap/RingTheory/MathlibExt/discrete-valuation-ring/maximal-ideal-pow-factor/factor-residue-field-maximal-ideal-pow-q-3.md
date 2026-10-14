@@ -14,7 +14,8 @@ The canonical factor map fixes quotient representatives, by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residue Field Maximal Ideal Pow Quotient](residue-field-maximal-ideal-pow-quotient.md)
+- [Factor Residue Field Maximal Ideal Pow Quotient](factor-residue-field-maximal-ideal-pow-q.md)
 
 ## Sources
 

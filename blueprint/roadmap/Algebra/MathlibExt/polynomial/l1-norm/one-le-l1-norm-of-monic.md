@@ -13,7 +13,11 @@ The L1 norm of a monic polynomial is at least one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [L1 Norm](l1-norm.md)
+
+## Proof depends on
+
+- [L1 Norm eq sum range](l1-norm-eq-sum-range.md)
 
 ## Sources
 

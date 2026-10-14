@@ -13,7 +13,13 @@ The accumulator tour appends the tour onto its accumulator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+- [Tour](tour.md)
+- [Tour Aux](tour-aux.md)
+
+## Proof depends on
+
+- [Children ind](children-ind.md)
 
 ## Sources
 

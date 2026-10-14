@@ -17,6 +17,12 @@ a proposition whose truth is not asserted here.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Complex Line](is-complex-line.md)
+- [Ones On Line](ones-on-line.md)
+- [Zeros On Line](zeros-on-line.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.EntireZerosOnesLinesWanted](../../../../../sources/v2/WantedExt.md)

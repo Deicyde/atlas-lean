@@ -15,7 +15,7 @@ The sum over the parameter's own `Fin k` of `L_{n-k+i}` enumerates
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Generalized Lucas](k-generalized-lucas.md)
 
 ## Sources
 

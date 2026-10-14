@@ -13,7 +13,11 @@ Odd inputs use a free first-element seed and compare each remaining pair three t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Max](min-max.md)
+
+## Proof depends on
+
+- [Min Max singleton](min-max-singleton.md)
 
 ## Sources
 

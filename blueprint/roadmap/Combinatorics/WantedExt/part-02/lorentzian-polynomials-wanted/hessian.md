@@ -12,7 +12,7 @@ The Hessian matrix of a degree 2 homogeneous polynomial `f` in `n` variables.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H](h.md)
 
 ## Sources
 

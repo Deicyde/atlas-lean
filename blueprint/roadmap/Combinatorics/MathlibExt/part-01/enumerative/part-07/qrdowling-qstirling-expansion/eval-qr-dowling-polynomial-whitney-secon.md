@@ -18,6 +18,10 @@ qStirlingSecond k j * x ^ j`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Whitney Second eq sum q Stirling Second](whitney-second-eq-sum-q-stirling-second.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.QRDowlingQStirlingExpansion](../../../../../../../sources/v2/MathlibExt.md)

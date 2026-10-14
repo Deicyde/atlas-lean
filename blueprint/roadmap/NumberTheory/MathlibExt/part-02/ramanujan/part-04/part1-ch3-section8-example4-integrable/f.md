@@ -15,6 +15,10 @@ which is `generalizedBellGenerating 0 1 x n`, otherwise.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized Bell Generating](../part1-ch3-entry9-ii-generalizedbellgenerating-de/generalized-bell-generating.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Section8Example4Integrable](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,8 @@ Each primitive-residue discrepancy is bounded by that finite maximum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Discrepancy](discrepancy.md)
+- [Primitive Discrepancy](primitive-discrepancy.md)
 
 ## Sources
 

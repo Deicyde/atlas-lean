@@ -12,7 +12,13 @@ Total curvature over one `2π` period, against arc length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Space](space.md)
+
+## Proof depends on
+
+- [Curvature](curvature.md)
+- [Period](period.md)
+- [Velocity](velocity.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ The ideal over `k` of the empty set is the whole ring.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ideal Over K](ideal-over-k.md)
 
 ## Sources
 

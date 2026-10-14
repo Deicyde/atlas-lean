@@ -16,6 +16,10 @@ assuming the Frobenius generates the decomposition group.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Stabilizer eq bot iff ncard primes Over eq card](stabilizer-eq-bot-iff-ncard-primes-over.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Frobenius.Splitting](../../../../../sources/v2/MathlibExt.md)

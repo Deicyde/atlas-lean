@@ -13,7 +13,7 @@ Deletion is, by definition, erase-and-rebuild through the proved builder.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete Rebuild](delete-rebuild.md)
 
 ## Sources
 

@@ -20,6 +20,10 @@ as noted in the source.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Watson Laplace Lemma](../../../../Analysis/MathlibExt/part-01/asymptotics/watson-laplace-integral-asymptotic.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Bernoulli.BernoulliSecondKindAsymptotic](../../../../../sources/v2/MathlibExt.md)

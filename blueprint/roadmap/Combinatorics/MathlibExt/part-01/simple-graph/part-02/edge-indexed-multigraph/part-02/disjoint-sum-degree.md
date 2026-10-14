@@ -13,7 +13,13 @@ Degrees add under disjoint union of indexed edge sets.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](../part-01/edge-indexed-multigraph.md)
+- [Degree](degree.md)
+- [Disjoint Sum](disjoint-sum.md)
+
+## Proof depends on
+
+- [Inc](../part-01/inc.md)
 
 ## Sources
 

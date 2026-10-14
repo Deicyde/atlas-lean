@@ -15,7 +15,14 @@ which resets all edges to dashed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
+- [State](state.md)
+- [Valid](valid.md)
+
+## Proof depends on
+
+- [Parent Child](../part-02/parent-child.md)
 
 ## Sources
 

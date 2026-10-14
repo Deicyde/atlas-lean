@@ -15,6 +15,10 @@ proposition `IsEnfloType X C p` holds.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Enflo Type](is-enflo-type.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.RademacherEnfloTypeWanted](../../../../../sources/v2/WantedExt.md)

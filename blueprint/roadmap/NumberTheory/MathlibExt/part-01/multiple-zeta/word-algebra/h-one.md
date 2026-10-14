@@ -14,6 +14,10 @@ Subalgebra `H^1` of the free algebra.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Word Submonoid HOne](word-submonoid-hone.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.MultipleZeta.WordAlgebra](../../../../../../sources/v2/MathlibExt.md)

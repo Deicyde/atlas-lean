@@ -14,7 +14,11 @@ by Mathlib's `aeval_derivative_mem_differentIdeal`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Element Different](element-different.md)
+
+## Proof depends on
+
+- [Element Different of adjoin eq top](element-different-of-adjoin-eq-top.md)
 
 ## Sources
 

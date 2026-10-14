@@ -15,6 +15,10 @@ Monic specialization: for monic `g`, integrality is automatic.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is maximal iff irreducible factor](is-maximal-iff-irreducible-factor.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.AdjoinRoot.LocalMaximal](../../../../../sources/v2/MathlibExt.md)

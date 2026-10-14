@@ -13,7 +13,7 @@ Construction of a symmetric Toeplitz matrix from an even witness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Symmetric Toeplitz Matrix](is-symmetric-toeplitz-matrix.md)
 
 ## Sources
 

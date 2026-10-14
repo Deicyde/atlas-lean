@@ -13,7 +13,7 @@ Structure constants are constant on conjugacy classes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Struct Const](struct-const.md)
 
 ## Sources
 

@@ -14,7 +14,11 @@ Deletion preserves orderedness of the result, in the form recorded by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete Rebuild](delete-rebuild.md)
+
+## Proof depends on
+
+- [Delete Rebuild](delete-rebuild-2.md)
 
 ## Sources
 

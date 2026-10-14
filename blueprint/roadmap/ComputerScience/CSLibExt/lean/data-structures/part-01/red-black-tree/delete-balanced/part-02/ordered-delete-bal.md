@@ -13,7 +13,11 @@ Deletion preserves the strict search-tree invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete Bal](../part-01/delete-bal.md)
+
+## Proof depends on
+
+- [Inorder delete Bal](../part-01/inorder-delete-bal.md)
 
 ## Sources
 

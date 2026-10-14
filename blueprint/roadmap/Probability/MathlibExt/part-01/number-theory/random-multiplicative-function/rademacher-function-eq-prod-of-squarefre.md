@@ -13,7 +13,12 @@ On a squarefree positive integer, the function is the product of its prime signs
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Sign Nat](prime-sign-nat.md)
+- [Rademacher Function](rademacher-function.md)
+
+## Proof depends on
+
+- [Rademacher Function apply](rademacher-function-apply.md)
 
 ## Sources
 

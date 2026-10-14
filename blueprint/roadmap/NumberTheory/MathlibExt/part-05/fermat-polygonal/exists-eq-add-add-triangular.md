@@ -15,6 +15,10 @@ Gauss's Eureka theorem: every natural number is a sum of three triangular number
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Legendre Three Square](../../part-02/quadratic-forms/exists-three-squares-of-not-four-pow-mul.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.FermatPolygonal](../../../../../sources/v2/MathlibExt.md)

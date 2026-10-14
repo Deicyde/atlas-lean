@@ -12,7 +12,7 @@ A degree-zero tree containing one value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Tree](fibonacci-tree.md)
 
 ## Sources
 

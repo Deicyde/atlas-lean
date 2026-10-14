@@ -13,7 +13,8 @@ Appending a merged work item to the table appends it to the work forest.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Work Item](../part-02/huffman-work-item.md)
+- [Huffman Table Forest](../part-02/huffman-table-forest.md)
 
 ## Sources
 

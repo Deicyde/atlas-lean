@@ -14,6 +14,10 @@ The statement that a sequence of points form a convex polygon.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Ccw Convex Polygon](is-ccw-convex-polygon.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.TwoD](../../../../sources/v2/MathlibExt.md)

@@ -14,6 +14,10 @@ Advance one position in a row-major traversal of the Connell triangle.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Connell Row Length](connell-row-length.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.ConnellSequence](../../../../../../../sources/v2/MathlibExt.md)

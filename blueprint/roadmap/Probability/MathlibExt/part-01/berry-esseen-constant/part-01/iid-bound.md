@@ -13,7 +13,7 @@ The same coefficient controls i.i.d. variables on every carrier universe.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible](is-admissible.md)
 
 ## Sources
 

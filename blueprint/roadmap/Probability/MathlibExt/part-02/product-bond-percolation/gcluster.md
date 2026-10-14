@@ -14,6 +14,10 @@ The open cluster of `x` for bond percolation on `G`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Open Subgraph](open-subgraph.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.ProductBondPercolation](../../../../../sources/v2/MathlibExt.md)

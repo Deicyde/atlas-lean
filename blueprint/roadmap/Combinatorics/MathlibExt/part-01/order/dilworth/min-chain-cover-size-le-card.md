@@ -13,7 +13,8 @@ A chain cover bounds `minChainCoverSize` from above.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Chain Cover Fin](is-chain-cover-fin.md)
+- [Min Chain Cover Size](min-chain-cover-size.md)
 
 ## Sources
 

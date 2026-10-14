@@ -19,6 +19,11 @@ positivity hypothesis records the denominator convention and, together with
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Partial List Coloring](is-partial-list-coloring.md)
+- [Is Choice Number](../../../MathlibExt/part-01/simple-graph/part-02/list-coloring/is-choice-number.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PartialListColoringProportionalBoundWanted](../../../../../sources/v2/WantedExt.md)

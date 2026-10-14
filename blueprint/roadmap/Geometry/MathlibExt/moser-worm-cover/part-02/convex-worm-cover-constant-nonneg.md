@@ -14,7 +14,11 @@ adaptation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convex Worm Cover Constant](convex-worm-cover-constant.md)
+
+## Proof depends on
+
+- [Convex Cover Area Infimum](../part-01/convex-cover-area-infimum.md)
 
 ## Sources
 

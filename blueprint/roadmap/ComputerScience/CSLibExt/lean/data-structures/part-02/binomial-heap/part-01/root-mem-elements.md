@@ -13,7 +13,9 @@ A tree's root occurs in its represented multiset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Tree](binomial-tree.md)
+- [Elements](elements.md)
+- [Root](root.md)
 
 ## Sources
 

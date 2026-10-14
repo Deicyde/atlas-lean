@@ -16,6 +16,10 @@ Proves `Wanted` entry `ramanujan_part1_ch9_entry33_zeta3integral`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ramanujan part1 ch9 entry33 zeta3integral general](ramanujan-part1-ch9-entry33-zeta3integra.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch9Entry33Zeta3integral](../../../../../../../sources/v2/MathlibExt.md)

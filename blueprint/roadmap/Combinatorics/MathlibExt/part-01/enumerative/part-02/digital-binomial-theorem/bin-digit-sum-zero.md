@@ -13,7 +13,7 @@ The binary digit sum of `0` is `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bin Digit Sum](bin-digit-sum.md)
 
 ## Sources
 

@@ -16,6 +16,14 @@ group by principal ideles. Upstream `NumberField.IdeleClassGroup` (the quotient 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Finite Idele Group](finite-idele-group.md)
+- [Infinite Idele Group](infinite-idele-group.md)
+- [Topological Idele Group](topological-idele-group.md)
+- [Principal Ideles](principal-ideles.md)
+- [Local Integral Unit Subgroup](local-integral-unit-subgroup.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.Idele](../../../../../../../sources/v2/MathlibExt.md)

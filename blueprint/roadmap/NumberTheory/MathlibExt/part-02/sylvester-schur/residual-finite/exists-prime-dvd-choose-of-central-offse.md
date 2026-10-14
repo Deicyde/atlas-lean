@@ -16,6 +16,11 @@ the `N / 3` first-layer estimate unless a large prime divides `Nat.choose N r`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Choose le prod erdos div three layers of no large](../choose-factorization/choose-le-prod-erdos-div-three-layers-of.md)
+- [Exists large prime dvd choose of not forall prime dvd le](../prime-counting/exists-large-prime-dvd-choose-of-not-for.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.ResidualFinite](../../../../../../sources/v2/MathlibExt.md)

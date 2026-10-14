@@ -13,7 +13,11 @@ hyperbolic splitting.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
+
+## Proof depends on
+
+- [Hyperbolic Structure](hyperbolic-structure.md)
 
 ## Sources
 

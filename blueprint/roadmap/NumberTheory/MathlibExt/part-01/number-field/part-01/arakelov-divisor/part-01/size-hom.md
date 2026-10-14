@@ -13,7 +13,12 @@ by the absolute norm of the finite component.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arakelov Divisor](arakelov-divisor.md)
+
+## Proof depends on
+
+- [Arch Hom](arch-hom.md)
+- [Ideal Hom](ideal-hom.md)
 
 ## Sources
 

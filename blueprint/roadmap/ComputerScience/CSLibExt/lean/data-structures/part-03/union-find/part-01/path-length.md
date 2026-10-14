@@ -12,7 +12,7 @@ The number of non-root parent edges traversed by `find`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
 
 ## Sources
 

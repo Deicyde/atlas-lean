@@ -15,6 +15,11 @@ The maximum Taylor term of a transcendental entire function tends to infinity.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Infinite Taylor Support](../infinite-support-wiman-taylor-coefficien.md)
+- [Wiman Term le wiman Maximum Term](../maximum-term-attained/wiman-term-le-wiman-maximum-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.Wiman.MaximumTermTendsToInfinity](../../../../../../../../sources/v2/MathlibExt.md)

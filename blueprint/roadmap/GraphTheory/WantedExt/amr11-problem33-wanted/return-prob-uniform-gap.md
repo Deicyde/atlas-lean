@@ -14,6 +14,11 @@ Uniform return-probability gap question for [AMR-011-0033] Question 33.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Regular Cayley Graph](regular-cayley-graph.md)
+- [Return Prob](return-prob.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.AMR11Problem33Wanted](../../../../sources/v2/WantedExt.md)

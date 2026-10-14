@@ -13,7 +13,7 @@ The leftmost key of a nonempty tree is present in the tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min D](min-d.md)
 
 ## Sources
 

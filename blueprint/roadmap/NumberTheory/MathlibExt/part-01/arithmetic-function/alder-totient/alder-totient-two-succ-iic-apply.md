@@ -14,7 +14,7 @@ Inclusive `Iic` form of the shifted theorem, matching the source's
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alder Totient Two](alder-totient-two.md)
 
 ## Sources
 

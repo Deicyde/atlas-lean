@@ -13,7 +13,7 @@ An accepted certificate has the exact fixed-word size and is no longer than the 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Basic](../verify-hamiltonian-cycle.md)
 
 ## Sources
 

@@ -14,7 +14,10 @@ the single right rotation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Balance](../part-01/balance.md)
+- [Height](../part-01/height.md)
+- [Mk Node](../part-01/mk-node.md)
 
 ## Sources
 

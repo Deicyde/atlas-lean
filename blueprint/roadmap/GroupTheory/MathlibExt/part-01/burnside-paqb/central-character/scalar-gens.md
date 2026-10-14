@@ -14,6 +14,10 @@ The finite set of scalars spanning the integrality subalgebra.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Central Scalar](central-scalar.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.CentralCharacter](../../../../../../sources/v2/MathlibExt.md)

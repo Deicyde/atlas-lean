@@ -13,7 +13,14 @@ This is the convention in arXiv:2304.08722 and arXiv:2608.10675.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
+- [Is Increasing Admissible](is-increasing-admissible.md)
+
+## Proof depends on
+
+- [Depth](../index/depth.md)
+- [Strict Increasing Tuple](strict-increasing-tuple.md)
+- [Increasing Summand](increasing-summand.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ The sentinel is a stopping device, never a successful returned data identity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circular Represents](../basic/circular-represents.md)
+- [List Search Sentinel](list-search-sentinel.md)
 
 ## Sources
 

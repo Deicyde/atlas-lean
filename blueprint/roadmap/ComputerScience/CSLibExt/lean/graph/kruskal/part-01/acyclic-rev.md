@@ -12,7 +12,11 @@ Reverse-chronological acyclicity invariant used by the executable scan.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Edge](weighted-edge.md)
+
+## Proof depends on
+
+- [Connected Rev](connected-rev.md)
 
 ## Sources
 

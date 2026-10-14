@@ -15,6 +15,10 @@ the map `z ↦ F w z` is analytic on `𝔻`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unit Disc](unit-disc.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.AMR22Problem7082Wanted](../../../../../sources/v2/WantedExt.md)

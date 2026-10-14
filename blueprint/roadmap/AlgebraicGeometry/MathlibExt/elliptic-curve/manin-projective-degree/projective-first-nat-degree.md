@@ -14,7 +14,11 @@ functions has first-coordinate degree equal to the sum of their numerator degree
 
 ## Depends on
 
-This node has no prerequisites.
+- [Primitive Triple](primitive-triple.md)
+
+## Proof depends on
+
+- [Primitive Triple of no common irreducible](primitive-triple-of-no-common-irreducibl.md)
 
 ## Sources
 

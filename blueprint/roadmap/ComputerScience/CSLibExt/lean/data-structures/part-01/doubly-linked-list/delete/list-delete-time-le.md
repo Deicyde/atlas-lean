@@ -13,7 +13,12 @@ Deletion executes at most four counted pointer events.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../basic/node.md)
+- [List Delete](list-delete.md)
+
+## Proof depends on
+
+- [List Delete time](list-delete-time.md)
 
 ## Sources
 

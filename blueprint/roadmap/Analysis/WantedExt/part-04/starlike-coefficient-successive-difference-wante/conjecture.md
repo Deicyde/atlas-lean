@@ -16,6 +16,12 @@ coefficients `a n` at `0`, is `‖ |a (n+1)| - |a n| ‖ ≤ 1` for all `n ≥ 1
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Wiman Taylor Coefficient](../../../MathlibExt/part-01/complex/part-02/wiman/wiman-taylor-coefficient.md)
+- [Is In Class S](is-in-class-s.md)
+- [Is Starlike](is-starlike.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.StarlikeCoefficientSuccessiveDifferenceWanted](../../../../../sources/v2/WantedExt.md)

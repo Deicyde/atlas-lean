@@ -12,7 +12,7 @@ The composition of two vector valued polynomial functions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Function](regular-function.md)
 
 ## Sources
 

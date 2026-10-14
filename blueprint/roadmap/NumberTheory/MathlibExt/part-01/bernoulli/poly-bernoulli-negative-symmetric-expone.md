@@ -25,6 +25,10 @@ Theorems 2 and 4, and Kaneko's original formula.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Sum stirling Second succ egf](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-08/stirling-second-explicit/has-sum-stirling-second-succ-egf.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Bernoulli.PolyBernoulliSymmetricExponentialGeneratingFunction](../../../../../sources/v2/MathlibExt.md)

@@ -18,7 +18,12 @@ section "The radix-2 DIT case" of Wikipedia, "Cooley–Tukey FFT algorithm".
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dft Sum](dft-sum.md)
+
+## Proof depends on
+
+- [Dft Sum mod](dft-sum-mod.md)
+- [Dft Sum two mul](dft-sum-two-mul.md)
 
 ## Sources
 

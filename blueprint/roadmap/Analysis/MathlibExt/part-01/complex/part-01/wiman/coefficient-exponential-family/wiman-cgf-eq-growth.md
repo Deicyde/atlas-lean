@@ -13,7 +13,12 @@ The coefficient-measure cumulant-generating function is the logarithmic majorant
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Coefficient Measure](wiman-coefficient-measure.md)
+- [Wiman Growth](wiman-growth.md)
+
+## Proof depends on
+
+- [Wiman mgf eq majorant](wiman-mgf-eq-majorant.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Applying no mixed differential operators leaves a polynomial unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mixed Differential](mixed-differential.md)
 
 ## Sources
 

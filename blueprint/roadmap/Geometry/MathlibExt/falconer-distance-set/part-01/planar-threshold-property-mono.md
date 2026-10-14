@@ -13,7 +13,7 @@ Raising a sufficient strict dimension threshold preserves sufficiency.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar Threshold Property](planar-threshold-property.md)
 
 ## Sources
 

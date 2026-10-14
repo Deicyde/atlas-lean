@@ -13,7 +13,10 @@ In a valid tree, the element returned by `min?` precedes every member.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](van-emde-boas.md)
+- [Valid](valid.md)
+- [Member](member.md)
+- [Min?](min.md)
 
 ## Sources
 

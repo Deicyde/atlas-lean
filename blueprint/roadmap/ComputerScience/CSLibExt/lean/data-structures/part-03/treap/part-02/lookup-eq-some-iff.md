@@ -13,7 +13,16 @@ BST lookup returns a value exactly when the matching key-value node exists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Mem Node](../part-01/mem-node.md)
+- [Ordered](../part-01/ordered.md)
+- [Lookup](../part-01/lookup.md)
+
+## Proof depends on
+
+- [All Nodes](../part-01/all-nodes.md)
+- [All Nodes key iff](all-nodes-key-iff.md)
+- [Mem Key of mem Node](mem-key-of-mem-node.md)
 
 ## Sources
 

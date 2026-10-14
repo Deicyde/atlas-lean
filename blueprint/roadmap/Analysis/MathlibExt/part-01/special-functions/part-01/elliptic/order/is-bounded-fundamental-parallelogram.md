@@ -14,7 +14,11 @@ image of a compact cube, rather than by an explicit norm estimate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fundamental Parallelogram](../fundamental-parallelogram/fundamental-parallelogram.md)
+
+## Proof depends on
+
+- [Mem fundamental Parallelogram iff](../fundamental-parallelogram/mem-fundamental-parallelogram-iff.md)
 
 ## Sources
 

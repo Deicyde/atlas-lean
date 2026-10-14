@@ -13,7 +13,13 @@ Insertion preserves every different value's multiplicity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Min Heap](dary-min-heap.md)
+- [Elements](elements.md)
+- [Push](push.md)
+
+## Proof depends on
+
+- [Elements push](elements-push.md)
 
 ## Sources
 

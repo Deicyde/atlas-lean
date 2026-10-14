@@ -14,7 +14,7 @@ or the derivative of its minimal polynomial evaluates to zero at `α`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Element Different](element-different.md)
 
 ## Sources
 

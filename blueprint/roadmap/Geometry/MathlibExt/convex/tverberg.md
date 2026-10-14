@@ -15,6 +15,10 @@ Any (d+1)(r-1)+1 points in R^d can be partitioned into r parts with intersecting
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Colorful caratheodory finrank](colorful-caratheodory/colorful-caratheodory-finrank.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Convex.Tverberg](../../../../sources/v2/MathlibExt.md)

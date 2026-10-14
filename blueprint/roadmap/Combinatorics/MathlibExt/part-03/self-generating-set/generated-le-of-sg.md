@@ -13,7 +13,12 @@ The generated closure is contained in every self-generating set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generated Set](generated-set.md)
+- [SG](sg.md)
+
+## Proof depends on
+
+- [Gen](gen.md)
 
 ## Sources
 

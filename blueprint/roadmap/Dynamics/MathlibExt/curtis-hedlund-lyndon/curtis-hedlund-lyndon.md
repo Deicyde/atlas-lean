@@ -18,6 +18,10 @@ shift-commuting.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Curtis hedlund lyndon general](curtis-hedlund-lyndon-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Dynamics.CurtisHedlundLyndon](../../../../sources/v2/MathlibExt.md)

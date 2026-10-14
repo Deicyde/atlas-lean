@@ -13,7 +13,12 @@ Each finite Tribonacci-word approximant is a prefix of the next one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Letter](tribonacci-letter.md)
+- [Tribonacci Word Approx](tribonacci-word-approx.md)
+
+## Proof depends on
+
+- [Tribonacci Word Approx add three](tribonacci-word-approx-add-three.md)
 
 ## Sources
 

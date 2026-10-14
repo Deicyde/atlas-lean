@@ -14,6 +14,11 @@ The open subscheme of `Spec ℚ[x₁,…,xᵣ]/(E₁,…,Eᵣ)` defined by `det 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Jacobian](jacobian.md)
+- [Quotient Ring](quotient-ring.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.EnumeratingNumberFieldsWanted](../../../../../sources/v2/WantedExt.md)

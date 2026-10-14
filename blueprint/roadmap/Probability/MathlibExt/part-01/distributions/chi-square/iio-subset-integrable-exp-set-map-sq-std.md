@@ -15,6 +15,10 @@ The law of the square pushes exponential integrability forward.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integrable exp mul sq std Gaussian](integrable-exp-mul-sq-std-gaussian.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.ChiSquare](../../../../../../sources/v2/MathlibExt.md)

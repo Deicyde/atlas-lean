@@ -13,7 +13,7 @@ The empty product: `P_Q(0) = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Poch Fin](q-poch-fin.md)
 
 ## Sources
 

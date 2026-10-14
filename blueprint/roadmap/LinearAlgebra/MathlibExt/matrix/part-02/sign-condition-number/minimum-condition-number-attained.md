@@ -13,7 +13,10 @@ The finite minimum is attained by an actual sign matrix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sign Matrix](sign-matrix.md)
+- [Realize](realize.md)
+- [Condition Number](condition-number.md)
+- [Minimum Condition Number](minimum-condition-number.md)
 
 ## Sources
 

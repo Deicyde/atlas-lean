@@ -12,7 +12,14 @@ Principal generators coming from elements congruent to `1` mod `m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprime Fractional Ideals](coprime-fractional-ideals.md)
+
+## Proof depends on
+
+- [Congruent One At Finite Part](congruent-one-at-finite-part.md)
+- [Is Ray Element One](is-ray-element-one.md)
+- [Positive At Infinite Part](positive-at-infinite-part.md)
+- [Ray Elements](ray-elements.md)
 
 ## Sources
 

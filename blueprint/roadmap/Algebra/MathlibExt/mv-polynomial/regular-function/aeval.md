@@ -13,7 +13,7 @@ with coordinates in some algebra over `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Function](regular-function.md)
 
 ## Sources
 

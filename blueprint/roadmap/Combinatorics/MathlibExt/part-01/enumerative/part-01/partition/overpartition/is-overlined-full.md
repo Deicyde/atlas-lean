@@ -13,7 +13,8 @@ A size is overlined in `full p` exactly when it occurs in `p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Overlined](is-overlined.md)
+- [Full](full.md)
 
 ## Sources
 

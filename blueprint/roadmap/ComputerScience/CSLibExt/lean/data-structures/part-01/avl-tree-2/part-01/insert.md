@@ -13,7 +13,12 @@ every node on the search path.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Balance](balance.md)
+- [Mk Node](mk-node.md)
 
 ## Sources
 

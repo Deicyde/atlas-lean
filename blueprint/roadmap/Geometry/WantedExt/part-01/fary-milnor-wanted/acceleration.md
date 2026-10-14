@@ -12,7 +12,11 @@ Acceleration.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Space](space.md)
+
+## Proof depends on
+
+- [Velocity](velocity.md)
 
 ## Sources
 

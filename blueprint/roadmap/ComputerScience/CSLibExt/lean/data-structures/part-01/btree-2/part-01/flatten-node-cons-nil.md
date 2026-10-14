@@ -15,7 +15,12 @@ have.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](btree.md)
+- [Flatten](flatten.md)
+
+## Proof depends on
+
+- [Flatten Aux](flatten-aux.md)
 
 ## Sources
 

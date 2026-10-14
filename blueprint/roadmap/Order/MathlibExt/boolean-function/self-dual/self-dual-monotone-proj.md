@@ -13,7 +13,11 @@ Every coordinate projection is a self-dual monotone Boolean function.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Self Dual Monotone](is-self-dual-monotone.md)
+
+## Proof depends on
+
+- [Boolean Function Dual](boolean-function-dual.md)
 
 ## Sources
 

@@ -13,7 +13,15 @@ No arbitrary reconstruction is supplied: the representative is the actual polyno
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lowest Shell Unit](lowest-shell-unit.md)
+- [Lowest Shell Witness](lowest-shell-witness.md)
+- [Unit Representative](../../basic/unit-representative.md)
+
+## Proof depends on
+
+- [Torus](../../basic/torus.md)
+- [Lowest Shell Unit im zero](lowest-shell-unit-im-zero.md)
+- [Unit Rescaling](../../basic/unit-rescaling.md)
 
 ## Sources
 

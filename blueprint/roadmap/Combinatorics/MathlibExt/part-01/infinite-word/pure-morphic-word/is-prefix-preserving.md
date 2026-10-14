@@ -20,6 +20,10 @@ nonempty (concept `jis_sem_817d955b6393d48d72476d2d`, clause
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Morph Iterate](morph-iterate.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.PureMorphicWord](../../../../../../sources/v2/MathlibExt.md)

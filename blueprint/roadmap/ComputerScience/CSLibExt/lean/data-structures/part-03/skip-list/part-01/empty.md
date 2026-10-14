@@ -12,7 +12,11 @@ The empty skip list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skip List](skip-list.md)
+
+## Proof depends on
+
+- [Entry](entry.md)
 
 ## Sources
 

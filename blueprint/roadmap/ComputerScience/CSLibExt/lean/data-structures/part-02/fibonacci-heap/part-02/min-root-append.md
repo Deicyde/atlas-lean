@@ -13,7 +13,13 @@ The minimum root of a concatenated forest combines the minima of its parts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Option](min-option.md)
+- [Min Root](min-root.md)
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
+
+## Proof depends on
+
+- [Root](../part-01/root.md)
 
 ## Sources
 

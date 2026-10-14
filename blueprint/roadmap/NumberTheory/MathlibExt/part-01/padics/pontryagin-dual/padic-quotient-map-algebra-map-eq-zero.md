@@ -13,7 +13,8 @@ The quotient map kills the canonical image of `ℤ_p` in `ℚ_p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padic Quotient Int](padic-quotient-int.md)
+- [Padic Quotient Map](padic-quotient-map.md)
 
 ## Sources
 

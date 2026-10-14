@@ -12,7 +12,7 @@ An allocated singly-linked list with exactly the distinct identities `ids`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
 
 ## Sources
 

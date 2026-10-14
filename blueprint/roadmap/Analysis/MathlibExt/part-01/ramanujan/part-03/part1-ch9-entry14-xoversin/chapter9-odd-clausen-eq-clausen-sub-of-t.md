@@ -15,6 +15,11 @@ The odd Clausen function is the odd-frequency part of `chapter9Clausen` for `2 â
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter9 Clausen Term summable of two le](../part1-ch9-entry13-bernoulligen/chapter9-clausen-term-summable-of-two-le.md)
+- [Chapter9 Clausen of two le](../part1-ch9-entry13-bernoulligen/chapter9-clausen-of-two-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch9Entry14Xoversin](../../../../../../../sources/v2/MathlibExt.md)

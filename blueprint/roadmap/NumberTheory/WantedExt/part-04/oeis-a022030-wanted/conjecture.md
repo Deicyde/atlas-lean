@@ -14,6 +14,10 @@ The sequence satisfies a linear recurrence from `n ≥ 4`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [A](a.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.OeisA022030Wanted](../../../../../sources/v2/WantedExt.md)

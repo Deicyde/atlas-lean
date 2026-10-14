@@ -14,7 +14,14 @@ partial product is a prefix of `fibInf`, and every prefix of `fibInf` lies in on
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Inf](../../infinite-word/fibonacci-word/fib-inf.md)
+- [Fib Word](../../infinite-word/fibonacci-word/fib-word.md)
+
+## Proof depends on
+
+- [Fib Word eq of Fn fib Inf](fib-word-eq-of-fn-fib-inf.md)
+- [Fib Word factorization](fib-word-factorization.md)
+- [Fib Word length](../../infinite-word/fibonacci-word/fib-word-length.md)
 
 ## Sources
 

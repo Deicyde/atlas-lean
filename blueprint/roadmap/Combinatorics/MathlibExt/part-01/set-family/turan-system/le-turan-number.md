@@ -13,7 +13,12 @@ Greatest lower bound: any uniform lower bound is at most the number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Realized Counts](realized-counts.md)
+- [Turan Number](turan-number.md)
+
+## Proof depends on
+
+- [Turan Number mem](turan-number-mem.md)
 
 ## Sources
 

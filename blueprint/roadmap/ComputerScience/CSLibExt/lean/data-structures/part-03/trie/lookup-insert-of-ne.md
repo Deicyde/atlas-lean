@@ -13,7 +13,14 @@ Inserting one key does not change the lookup result for a distinct key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trie](trie.md)
+- [Insert](insert.md)
+- [Lookup](lookup.md)
+
+## Proof depends on
+
+- [Empty](empty.md)
+- [Lookup empty](lookup-empty.md)
 
 ## Sources
 

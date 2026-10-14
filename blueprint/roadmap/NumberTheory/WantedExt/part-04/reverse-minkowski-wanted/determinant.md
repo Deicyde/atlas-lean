@@ -15,6 +15,10 @@ The determinant of a `ℤ`-lattice of arbitrary rank is the square root of the d
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [B](b.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ReverseMinkowskiWanted](../../../../../sources/v2/WantedExt.md)

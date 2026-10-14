@@ -14,7 +14,11 @@ keeps the node valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set Child](set-child.md)
+
+## Proof depends on
+
+- [Set Child valid](set-child-valid.md)
 
 ## Sources
 

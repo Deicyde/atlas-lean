@@ -13,7 +13,12 @@ Pruning and distinctness bound the actual saved list by the target's numeric val
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Subset Sum Sums](exact-subset-sum-sums.md)
+
+## Proof depends on
+
+- [Exact Subset Sum Sums mem](exact-subset-sum-sums-mem.md)
+- [Exact Subset Sum Sums sorted](exact-subset-sum-sums-sorted.md)
 
 ## Sources
 

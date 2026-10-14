@@ -13,7 +13,11 @@ The order-one higher-order Bernoulli numbers are the ordinary Bernoulli numbers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Higher Order Bernoulli Number](higher-order-bernoulli-number.md)
+
+## Proof depends on
+
+- [Higher Order Bernoulli Number nat](higher-order-bernoulli-number-nat.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ The canonical adjacent pair in `Q_1`: constant `true` and constant `false`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypercube Graph](hypercube-graph.md)
+
+## Proof depends on
+
+- [Hypercube Graph adj](hypercube-graph-adj.md)
 
 ## Sources
 

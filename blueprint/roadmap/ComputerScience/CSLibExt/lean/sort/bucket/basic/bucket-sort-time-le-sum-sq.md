@@ -13,7 +13,11 @@ Squared actual bucket occupancies bound the cost for arbitrary valid arrays.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bucket Sort](bucket-sort.md)
+
+## Proof depends on
+
+- [Bucket Sort time](bucket-sort-time.md)
 
 ## Sources
 

@@ -23,6 +23,10 @@ half-contraction and geometric convergence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Newton step sub root abs le](newton-step-sub-root-abs-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Calculus.NewtonMethod](../../../../../../sources/v2/MathlibExt.md)

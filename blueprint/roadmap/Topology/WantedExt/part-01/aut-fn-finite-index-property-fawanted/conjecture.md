@@ -15,6 +15,10 @@ subgroups of finite index in `Aut(Fₙ)` have Serre's Property FA?
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Property FA](has-property-fa.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Topology.AutFnFiniteIndexPropertyFAWanted](../../../../../sources/v2/WantedExt.md)

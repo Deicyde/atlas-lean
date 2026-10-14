@@ -16,7 +16,7 @@ Provenance: concept `jis_sem_061cc96760fa3a6b576dda00`, source location
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Equilibrious Word](is-equilibrious-word.md)
 
 ## Sources
 

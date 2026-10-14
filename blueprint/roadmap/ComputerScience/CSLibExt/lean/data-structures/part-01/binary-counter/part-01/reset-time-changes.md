@@ -13,7 +13,7 @@ The exact reset charge is the indexed Hamming difference of input and output.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reset](reset.md)
 
 ## Sources
 

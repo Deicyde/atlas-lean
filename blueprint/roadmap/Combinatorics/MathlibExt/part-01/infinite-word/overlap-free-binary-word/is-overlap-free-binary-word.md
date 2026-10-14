@@ -14,6 +14,10 @@ A finite binary word is overlap-free when none of its contiguous factors is an o
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Word Overlap](is-word-overlap.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.OverlapFreeBinaryWord](../../../../../../sources/v2/MathlibExt.md)

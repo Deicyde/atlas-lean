@@ -12,7 +12,7 @@ Returns the first child edge whose label starts with `c`, if any.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Radix Trie](radix-trie.md)
 
 ## Sources
 

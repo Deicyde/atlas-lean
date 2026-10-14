@@ -13,7 +13,11 @@ consolidation below is what makes them distinct.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Tree](fibonacci-tree.md)
+
+## Proof depends on
+
+- [Valid](valid.md)
 
 ## Sources
 

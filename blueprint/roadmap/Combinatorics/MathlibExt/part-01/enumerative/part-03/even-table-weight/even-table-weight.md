@@ -12,7 +12,11 @@ The weight of an even table is the product of its column weights.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even Table](even-table.md)
+
+## Proof depends on
+
+- [Column Weight](../../part-02/column-weight.md)
 
 ## Sources
 

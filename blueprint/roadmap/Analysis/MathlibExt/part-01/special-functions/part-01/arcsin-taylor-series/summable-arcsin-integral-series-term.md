@@ -13,7 +13,11 @@ The terms defining `arcsinIntegralSeries` are summable on the closed unit interv
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Binomial Coeff](central-binomial-coeff.md)
+
+## Proof depends on
+
+- [Norm arcsin Integral Series term le](norm-arcsin-integral-series-term-le.md)
 
 ## Sources
 

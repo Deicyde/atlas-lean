@@ -13,7 +13,8 @@ The four source branches, on the actual saved suffix result and valid initial ca
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](cache-event.md)
+- [Furthest In Future](furthest-in-future.md)
 
 ## Sources
 

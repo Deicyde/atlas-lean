@@ -13,7 +13,14 @@ Algebraic density of `etaFn`, following Mathlib `denseRange`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Completion](completion.md)
+- [Eta Fn](eta-fn.md)
+
+## Proof depends on
+
+- [Index](index.md)
+- [Diagram](diagram.md)
+- [Finite Grp Diagram](finite-grp-diagram.md)
 
 ## Sources
 

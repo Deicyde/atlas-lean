@@ -12,7 +12,7 @@ Total charged events in the edit-distance cost model.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edit Distance Cost](edit-distance-cost.md)
 
 ## Sources
 

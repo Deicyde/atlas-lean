@@ -22,6 +22,11 @@ representative and half-open `Finset.range` normalization, while omitting the re
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Psi Residue Class](../residue-class-psi/psi-residue-class.md)
+- [Tendsto psi Residue Class div self](tendsto-psi-residue-class-div-self.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.WeakPNTArithmeticProgression](../../../../../../../sources/v2/MathlibExt.md)

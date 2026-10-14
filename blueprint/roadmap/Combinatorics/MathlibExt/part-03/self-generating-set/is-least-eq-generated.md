@@ -13,7 +13,13 @@ Every least self-generating set is the generated closure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generated Set](generated-set.md)
+- [SG](sg.md)
+
+## Proof depends on
+
+- [Generated is SG](generated-is-sg.md)
+- [Generated le of sg](generated-le-of-sg.md)
 
 ## Sources
 

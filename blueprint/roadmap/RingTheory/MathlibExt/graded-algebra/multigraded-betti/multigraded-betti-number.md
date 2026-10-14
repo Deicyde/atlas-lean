@@ -12,7 +12,7 @@ Readable multigraded Betti number: `Module.finrank` of the component homology.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraded Base Change](multigraded-base-change.md)
 
 ## Sources
 

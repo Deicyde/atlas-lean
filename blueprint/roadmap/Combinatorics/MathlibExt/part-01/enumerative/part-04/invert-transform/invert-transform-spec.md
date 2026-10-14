@@ -15,7 +15,7 @@ inverse of `1 - A(t)`, where `A(t) = X * mk a` and `B(t) = X * mk (invertTransfo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Invert Transform](invert-transform.md)
 
 ## Sources
 

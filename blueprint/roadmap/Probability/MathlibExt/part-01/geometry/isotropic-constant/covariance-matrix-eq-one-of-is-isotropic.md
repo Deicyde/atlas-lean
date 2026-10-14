@@ -13,7 +13,7 @@ The shared probabilistic isotropy convention gives the actual identity covarianc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covariance Matrix](covariance-matrix.md)
 
 ## Sources
 

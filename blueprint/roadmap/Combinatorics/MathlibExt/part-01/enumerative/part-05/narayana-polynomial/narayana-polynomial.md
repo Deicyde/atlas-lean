@@ -19,6 +19,10 @@ Concept `jis_sem_06bee1249c32868dc6d7f8d6`; the source normalization begins
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Narayana Polynomial Coeff](narayana-polynomial-coeff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.NarayanaPolynomial](../../../../../../../sources/v2/MathlibExt.md)

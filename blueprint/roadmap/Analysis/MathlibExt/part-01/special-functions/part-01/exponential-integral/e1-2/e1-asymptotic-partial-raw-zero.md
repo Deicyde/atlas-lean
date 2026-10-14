@@ -13,7 +13,12 @@ Each raw partial sum vanishes at `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E1 Asymptotic Partial Raw](e1-asymptotic-partial-raw.md)
+
+## Proof depends on
+
+- [E1 Asymptotic Term Raw](e1-asymptotic-term-raw.md)
+- [E1 Asymptotic Term Raw zero](e1-asymptotic-term-raw-zero.md)
 
 ## Sources
 

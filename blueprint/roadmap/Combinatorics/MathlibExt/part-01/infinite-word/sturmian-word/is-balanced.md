@@ -16,6 +16,10 @@ A binary word is balanced when any two factors of the same length
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Factor Ones](factor-ones.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.SturmianWord](../../../../../../sources/v2/MathlibExt.md)

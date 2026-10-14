@@ -20,7 +20,7 @@ falsifies the claimed nonvanishing locus.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dirichlet Character Modulus](is-dirichlet-character-modulus.md)
 
 ## Sources
 

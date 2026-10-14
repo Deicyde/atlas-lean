@@ -17,6 +17,11 @@ by Dirichlet's box principle.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Algebraic Deg LE](algebraic-deg-le.md)
+- [Height](height.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.OnApproximationOfRealsWanted](../../../../../sources/v2/WantedExt.md)

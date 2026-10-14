@@ -15,6 +15,11 @@ is an `L^2` limit of `p * f` over polynomials `p`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bergman](bergman.md)
+- [Disc](disc.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.BergmanCyclicityWanted](../../../../../sources/v2/WantedExt.md)

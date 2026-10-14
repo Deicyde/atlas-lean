@@ -13,7 +13,11 @@ The maximal divergence set is invariant under `T`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dick Set](dick-set.md)
+
+## Proof depends on
+
+- [Dick mem](dick-mem.md)
 
 ## Sources
 

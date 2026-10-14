@@ -15,6 +15,10 @@ exists.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Normalized Expected LCS](normalized-expected-lcs.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.BinaryChvatalSankoffWanted](../../../../../../sources/v2/WantedExt.md)

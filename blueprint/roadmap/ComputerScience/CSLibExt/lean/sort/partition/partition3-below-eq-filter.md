@@ -13,7 +13,8 @@ The below field preserves the input order of all occurrences below the pivot.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Way Partition](three-way-partition.md)
+- [Partition3](partition3.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ A topological 3-manifold is locally compact, since `ℝ³` is.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Three Manifold](is-three-manifold.md)
 
 ## Sources
 

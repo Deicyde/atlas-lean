@@ -22,7 +22,11 @@ result.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Residue Map](finite-residue-map.md)
+
+## Proof depends on
+
+- [Finite Residue Map eq one iff](finite-residue-map-eq-one-iff.md)
 
 ## Sources
 

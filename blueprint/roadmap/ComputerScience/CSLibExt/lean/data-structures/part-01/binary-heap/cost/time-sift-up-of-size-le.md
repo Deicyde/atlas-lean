@@ -13,7 +13,7 @@ An invalid index performs no comparisons or swaps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sift Up](sift-up.md)
 
 ## Sources
 

@@ -17,6 +17,10 @@ by analytic continuation.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Euler Maclaurin Formula](../../calculus/euler-maclaurin-formula.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch7Entry1Powersum](../../../../../../sources/v2/MathlibExt.md)

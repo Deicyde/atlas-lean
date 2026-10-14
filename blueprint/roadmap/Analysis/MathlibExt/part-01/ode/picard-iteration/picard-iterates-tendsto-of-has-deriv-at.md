@@ -17,6 +17,10 @@ Proof: Use `ODE_solution_unique_univ` to identify the constructed solution with 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Picard iterates converge](picard-iterates-converge.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.ODE.PicardIteration](../../../../../../sources/v2/MathlibExt.md)

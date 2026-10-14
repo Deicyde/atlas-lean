@@ -13,7 +13,7 @@ Ambient ray is contained in every congruence ambient subgroup.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Group Ambient](ray-group-ambient.md)
 
 ## Sources
 

@@ -14,7 +14,13 @@ coincide, `union` performs no link and none is charged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
+
+## Proof depends on
+
+- [Find](find.md)
+- [Find With Cost](find-with-cost.md)
+- [Union](union.md)
 
 ## Sources
 

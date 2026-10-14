@@ -13,7 +13,12 @@ Deleting the same key twice has the same flattening as deleting it once.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete Rebuild](delete-rebuild.md)
+
+## Proof depends on
+
+- [Flatten delete Rebuild](flatten-delete-rebuild.md)
+- [Ordered delete Rebuild](ordered-delete-rebuild.md)
 
 ## Sources
 

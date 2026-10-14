@@ -12,7 +12,7 @@ The product polynomial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vars](vars.md)
 
 ## Sources
 

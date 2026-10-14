@@ -14,7 +14,15 @@ trees.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Tour](../../euler-tour-tree/part-01/tour.md)
+- [State](state.md)
+- [Connected](connected.md)
+
+## Proof depends on
+
+- [Mem tour iff](../../euler-tour-tree/part-01/mem-tour-iff.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
 
 ## Sources
 

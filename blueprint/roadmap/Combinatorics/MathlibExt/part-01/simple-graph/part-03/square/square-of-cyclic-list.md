@@ -14,7 +14,11 @@ square.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square](square.md)
+
+## Proof depends on
+
+- [Hamiltonian Cycle](../../part-02/of-cyclic-list.md)
 
 ## Sources
 

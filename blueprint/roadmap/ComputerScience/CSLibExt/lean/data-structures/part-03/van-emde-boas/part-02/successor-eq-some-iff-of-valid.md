@@ -13,7 +13,17 @@ In a valid tree, `successor` returns the least stored element above `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](../part-01/van-emde-boas.md)
+- [Valid](../part-01/valid.md)
+- [Member](../part-01/member.md)
+- [Successor](successor.md)
+
+## Proof depends on
+
+- [Successor eq none iff](successor-eq-none-iff.md)
+- [Successor gt](successor-gt.md)
+- [Successor least](successor-least.md)
+- [Successor mem](successor-mem.md)
 
 ## Sources
 

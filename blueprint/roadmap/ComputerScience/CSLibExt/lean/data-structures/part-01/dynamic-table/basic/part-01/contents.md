@@ -12,7 +12,7 @@ Derived contents, never consulted by the insertion executor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](table.md)
 
 ## Sources
 

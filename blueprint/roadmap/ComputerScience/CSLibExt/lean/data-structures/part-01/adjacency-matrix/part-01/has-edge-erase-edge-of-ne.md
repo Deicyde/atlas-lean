@@ -13,7 +13,9 @@ Deletion does not change any other ordered pair.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adjacency Matrix](adjacency-matrix.md)
+- [Erase Edge](erase-edge.md)
+- [Has Edge](has-edge.md)
 
 ## Sources
 

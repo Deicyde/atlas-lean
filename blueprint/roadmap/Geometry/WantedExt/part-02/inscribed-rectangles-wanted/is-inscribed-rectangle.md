@@ -15,6 +15,10 @@ Note: We don't need the smooth hypothesis on the Jordan curve to define this.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rectangle Corners](rectangle-corners.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.InscribedRectanglesWanted](../../../../../sources/v2/WantedExt.md)

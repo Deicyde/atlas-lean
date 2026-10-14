@@ -14,6 +14,10 @@ lean: HasMonotoneAP
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is APOf Length](is-apof-length-2.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.AP.Basic](../../../../../../sources/v2/MathlibExt.md)

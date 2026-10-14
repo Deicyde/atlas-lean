@@ -13,7 +13,7 @@ The zeroth Fibonacci `p`-number is zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci P](fibonacci-p.md)
 
 ## Sources
 

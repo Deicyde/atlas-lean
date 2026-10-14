@@ -20,6 +20,11 @@ and hence a well-defined scattering length `a`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Radial](is-radial.md)
+- [Is Scattering Solution](is-scattering-solution.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.BoseGasesWanted](../../../../../sources/v2/WantedExt.md)

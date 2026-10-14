@@ -14,7 +14,7 @@ For total input length `N = n + 1`, this is `3 * N - 4` events.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compute Z](compute-z.md)
 
 ## Sources
 

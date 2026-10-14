@@ -12,7 +12,7 @@ A knapsack result. `Finset` gives distinct indices and `Fin` keeps them in range
 
 ## Depends on
 
-This node has no prerequisites.
+- [Item](item.md)
 
 ## Sources
 

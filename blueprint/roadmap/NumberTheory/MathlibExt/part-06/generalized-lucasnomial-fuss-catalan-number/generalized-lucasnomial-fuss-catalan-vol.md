@@ -15,7 +15,8 @@ Concept `jis_sem_17c3c7bf3e94f23255e5a2a1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Lucasnomial Fuss Catalan](generalized-lucasnomial-fuss-catalan.md)
+- [Generalized Lucasnomial Fuss Catalan RS](generalized-lucasnomial-fuss-catalan-rs.md)
 
 ## Sources
 

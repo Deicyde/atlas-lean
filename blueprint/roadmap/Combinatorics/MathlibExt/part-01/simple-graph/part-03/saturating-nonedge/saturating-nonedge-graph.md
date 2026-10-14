@@ -14,6 +14,10 @@ The simple graph whose edges are exactly the `F`-saturating non-edges of `G`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Saturating Nonedge](is-saturating-nonedge.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.SaturatingNonedge](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ The induced forest number is attained by some acyclic induced vertex set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Induced Forest Number](induced-forest-number.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ Insertion inserts the new payload at the same position of the contents.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../part-01/node.md)
+- [Contents](../part-01/contents.md)
+- [Insert After](../part-01/insert-after.md)
+
+## Proof depends on
+
+- [Insert After payload](../part-01/insert-after-payload.md)
 
 ## Sources
 

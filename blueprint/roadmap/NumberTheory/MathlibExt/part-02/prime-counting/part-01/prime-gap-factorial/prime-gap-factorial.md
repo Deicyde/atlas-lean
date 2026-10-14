@@ -23,6 +23,10 @@ Proves `Wanted` entry `prime_gap_factorial`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prime gap factorial general](prime-gap-factorial-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.PrimeGapFactorial](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,8 @@ Every admissible operation exponent bounds its infimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Rectangular Circuit Exponent](has-rectangular-circuit-exponent.md)
+- [Rectangular Circuit Exponent](rectangular-circuit-exponent.md)
 
 ## Sources
 

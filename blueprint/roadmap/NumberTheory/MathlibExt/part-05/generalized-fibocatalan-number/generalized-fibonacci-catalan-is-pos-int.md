@@ -14,7 +14,12 @@ positive integer (a positive natural whose rational cast equals it).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Catalan](generalized-fibonacci-catalan.md)
+
+## Proof depends on
+
+- [Fibonacci Factorial](fibonacci-factorial.md)
+- [Fibonacci Jordan Quotient](fibonacci-jordan-quotient.md)
 
 ## Sources
 

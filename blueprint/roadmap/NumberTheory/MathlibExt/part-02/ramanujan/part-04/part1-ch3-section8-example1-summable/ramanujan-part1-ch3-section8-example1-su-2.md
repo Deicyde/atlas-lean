@@ -19,6 +19,10 @@ keeps the source's shape.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ramanujan part1 ch3 section8 example1 summable general](ramanujan-part1-ch3-section8-example1-su.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Section8Example1Summable](../../../../../../../sources/v2/MathlibExt.md)

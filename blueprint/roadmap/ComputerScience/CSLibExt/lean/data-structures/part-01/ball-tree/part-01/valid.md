@@ -14,7 +14,7 @@ The bounding-sphere invariant: at a node with center `c` and squared-radius boun
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ball Tree](ball-tree.md)
 
 ## Sources
 

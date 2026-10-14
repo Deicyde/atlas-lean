@@ -13,7 +13,11 @@ The solver returns `gcd a n` residues exactly when the congruence is solvable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Linear Equation Solver](modular-linear-equation-solver.md)
+
+## Proof depends on
+
+- [Modular Linear Equation Solver ret](modular-linear-equation-solver-ret.md)
 
 ## Sources
 

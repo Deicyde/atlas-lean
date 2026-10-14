@@ -13,7 +13,8 @@ A lower bound for every admissible growth exponent bounds the infimum from below
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Matrix Multiplication Rank Exponent](has-matrix-multiplication-rank-exponent.md)
+- [Matrix Multiplication Exponent](matrix-multiplication-exponent.md)
 
 ## Sources
 

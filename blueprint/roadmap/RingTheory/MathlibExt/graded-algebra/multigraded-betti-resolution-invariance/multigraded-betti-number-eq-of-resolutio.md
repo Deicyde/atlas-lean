@@ -15,7 +15,9 @@ families to agree in every multidegree `α` and homological index `i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraded Base Change](../multigraded-betti/multigraded-base-change.md)
+- [Multigraded Resolution Comparison](multigraded-resolution-comparison.md)
+- [Multigraded Betti Number](../multigraded-betti/multigraded-betti-number.md)
 
 ## Sources
 

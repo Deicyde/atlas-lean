@@ -13,7 +13,11 @@ Three affine independent points always form a convex polygon.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Convex Polygon](is-convex-polygon.md)
+
+## Proof depends on
+
+- [Is Ccw Convex Polygon](is-ccw-convex-polygon.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ A complex-differentiable function has vanishing Wirtinger derivative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bar Deriv](bar-deriv.md)
 
 ## Sources
 

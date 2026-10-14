@@ -13,7 +13,13 @@ The canonical continuation is analytic on the closed half-plane `Re s ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log Dirichlet Continuation](log-dirichlet-continuation.md)
+
+## Proof depends on
+
+- [Log Dirichlet Correction](log-dirichlet-correction.md)
+- [Log Dirichlet Correction analytic On](log-dirichlet-correction-analytic-on.md)
+- [Riemann Zeta₁ ne zero of one le re](riemann-zeta-ne-zero-of-one-le-re.md)
 
 ## Sources
 

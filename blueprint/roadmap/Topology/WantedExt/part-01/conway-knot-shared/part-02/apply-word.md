@@ -13,7 +13,11 @@ accumulating vertices in `state`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [Apply Crossing](apply-crossing.md)
 
 ## Sources
 

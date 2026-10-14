@@ -13,7 +13,13 @@ Sifting up only permutes the input array.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Sift Up](dary-sift-up.md)
+
+## Proof depends on
+
+- [Dary Parent](dary-parent.md)
+- [Dary Parent lt](dary-parent-lt.md)
+- [Dary Parent lt size](dary-parent-lt-size.md)
 
 ## Sources
 

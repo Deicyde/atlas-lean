@@ -13,7 +13,16 @@ Under `Valid` and `KeyDet`, a stored binding is found by `lookup` with its value
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cuckoo Hashing](cuckoo-hashing.md)
+- [Key Det](key-det.md)
+- [Stored](stored.md)
+- [Valid](valid.md)
+- [Lookup](lookup.md)
+
+## Proof depends on
+
+- [Lookup eq some of table1](lookup-eq-some-of-table1.md)
+- [Lookup eq some of table2](lookup-eq-some-of-table2.md)
 
 ## Sources
 

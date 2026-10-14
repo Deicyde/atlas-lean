@@ -12,7 +12,12 @@ Decode one clause and return its unconsumed suffix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNFClause](cnfclause.md)
+
+## Proof depends on
+
+- [Decode Lits](decode-lits.md)
+- [Read Unary Length](read-unary-length.md)
 
 ## Sources
 

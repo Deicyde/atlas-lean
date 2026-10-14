@@ -13,7 +13,15 @@ Prepending a fresh allocated identity conses it onto the represented list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
+- [Represents](represents.md)
+- [Prepend](prepend.md)
+
+## Proof depends on
+
+- [Prepend frame](prepend-frame.md)
+- [Prepend head](prepend-head.md)
+- [Prepend node](prepend-node.md)
 
 ## Sources
 

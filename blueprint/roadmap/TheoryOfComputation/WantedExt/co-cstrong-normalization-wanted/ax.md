@@ -12,7 +12,7 @@ lean: MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerific
 
 ## Depends on
 
-This node has no prerequisites.
+- [Srt](srt.md)
 
 ## Sources
 

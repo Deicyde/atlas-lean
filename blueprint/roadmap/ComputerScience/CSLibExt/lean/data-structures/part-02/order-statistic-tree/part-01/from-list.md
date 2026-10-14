@@ -12,7 +12,12 @@ Build a tree by inserting keys from right to left.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Entry](entry.md)
+- [Insert](insert.md)
 
 ## Sources
 

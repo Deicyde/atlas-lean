@@ -13,7 +13,8 @@ Composing with the identity on the left is the identity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Function](regular-function.md)
+- [Comp](comp.md)
 
 ## Sources
 

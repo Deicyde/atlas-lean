@@ -15,7 +15,15 @@ natural number on a zero-dimensional intersection point.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proj Space](proj-space.md)
+
+## Proof depends on
+
+- [Affine Cone Coord](affine-cone-coord.md)
+- [Chart Index](chart-index.md)
+- [Eval At](eval-at.md)
+- [Local Ring At](local-ring-at.md)
+- [Max Ideal At](max-ideal-at.md)
 
 ## Sources
 

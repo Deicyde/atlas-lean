@@ -15,6 +15,12 @@ in `ℕ∞ = ℕ ∪ {⊤}` so `⊤` records "infinitely many".
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Convex Polytope](convex-polytope.md)
+- [Regular Polytopes](regular-polytopes.md)
+- [Regular Similar](regular-similar.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.PlatonicClassificationWanted](../../../../../sources/v2/WantedExt.md)

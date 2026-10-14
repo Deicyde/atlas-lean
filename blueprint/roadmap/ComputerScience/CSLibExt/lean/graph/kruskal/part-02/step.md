@@ -12,7 +12,15 @@ Process one edge, accepting it exactly when it joins two current classes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](../part-01/state.md)
+- [Weighted Edge](../part-01/weighted-edge.md)
+
+## Proof depends on
+
+- [Equivalent](../../../data-structures/part-03/union-find/part-01/equivalent.md)
+- [Forest](../../../data-structures/part-03/union-find/part-01/forest.md)
+- [Find](../../../data-structures/part-03/union-find/part-01/find.md)
+- [Union](../../../data-structures/part-03/union-find/part-01/union.md)
 
 ## Sources
 

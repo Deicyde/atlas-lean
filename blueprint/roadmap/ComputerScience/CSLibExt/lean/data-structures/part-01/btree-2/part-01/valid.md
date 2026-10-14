@@ -18,7 +18,7 @@ Non-root trees are used with `mink = t - 1`; the root invariant is `ValidRoot`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](btree.md)
 
 ## Sources
 

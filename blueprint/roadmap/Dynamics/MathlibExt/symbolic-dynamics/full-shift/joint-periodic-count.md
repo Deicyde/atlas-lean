@@ -13,7 +13,11 @@ are also periodic for `f`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Full Shift Space](full-shift-space.md)
+
+## Proof depends on
+
+- [Unit Shift](unit-shift.md)
 
 ## Sources
 

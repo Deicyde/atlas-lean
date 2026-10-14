@@ -13,7 +13,13 @@ Isomorphic graphs are mutual minors in one step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fin Graph](fin-graph.md)
+- [Is Minor](is-minor.md)
+
+## Proof depends on
+
+- [Of step](of-step.md)
+- [Minor Step](minor-step.md)
 
 ## Sources
 

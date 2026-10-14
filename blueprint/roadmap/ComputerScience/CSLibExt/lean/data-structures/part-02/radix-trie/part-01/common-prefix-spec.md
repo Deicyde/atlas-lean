@@ -14,7 +14,7 @@ prefix is longest: one is empty, or their heads differ.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Common Prefix](common-prefix.md)
 
 ## Sources
 

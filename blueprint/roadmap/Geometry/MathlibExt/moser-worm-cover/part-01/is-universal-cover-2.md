@@ -14,7 +14,12 @@ adaptation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Convex Universal Cover](is-convex-universal-cover.md)
+- [Is Universal Cover](is-universal-cover.md)
+
+## Proof depends on
+
+- [Covers Every Unit Arc](covers-every-unit-arc.md)
 
 ## Sources
 

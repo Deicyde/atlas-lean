@@ -13,7 +13,11 @@ Every payload, including keys and satellite data, is preserved.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sentinel Insert](sentinel-insert.md)
+
+## Proof depends on
+
+- [Sentinel Insert ret](sentinel-insert-ret.md)
 
 ## Sources
 

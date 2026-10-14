@@ -12,7 +12,11 @@ The multiset represented by a Fibonacci heap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Heap](../part-02/fibonacci-heap.md)
+
+## Proof depends on
+
+- [Elements](../part-01/elements-2.md)
 
 ## Sources
 

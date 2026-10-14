@@ -13,7 +13,8 @@ The empty tree is ordered.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered](ordered.md)
+- [Empty](empty.md)
 
 ## Sources
 

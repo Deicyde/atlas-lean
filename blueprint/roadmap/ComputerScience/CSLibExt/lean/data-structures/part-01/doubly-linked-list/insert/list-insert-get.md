@@ -13,7 +13,12 @@ The whole-store characteristic reduced at one index, preserving all aliases.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../basic/node.md)
+- [List Insert](list-insert.md)
+
+## Proof depends on
+
+- [List Insert ret](list-insert-ret.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ Bit `i` changes exactly `n / 2 ^ i` times in an actual zero-start run.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run](run.md)
+
+## Proof depends on
+
+- [Run value](run-value.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ Check strict lower and upper key bounds when either bound is present.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Compare Key](../part-01/compare-key.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.IntervalTree](../../../../../../../../sources/v2/CSLibExt.md)

@@ -13,7 +13,14 @@ The total abstract event count is `n^2 + n^3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](cost.md)
+- [Total](total.md)
+- [Floyd Warshall](floyd-warshall.md)
+
+## Proof depends on
+
+- [Floyd Warshall initializations](floyd-warshall-initializations.md)
+- [Floyd Warshall transitions](floyd-warshall-transitions.md)
 
 ## Sources
 

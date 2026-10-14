@@ -14,6 +14,10 @@ Odd square root `h(z) = {f (z^2)}^(1/2)`: analytic, `h^2 = f(z^2)`, odd, normali
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hayman Unit Disc](hayman-unit-disc.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HaymanRobertson39Wanted](../../../../../sources/v2/WantedExt.md)

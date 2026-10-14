@@ -22,6 +22,14 @@ then makes the Cauchy expansion in the last variable converge locally uniformly.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Differentiable At uncurry of separately differentiable of locally bounded](differentiable-at-uncurry-of-separately-2.md)
+- [Differentiable On cauchy Coefficient of separately differentiable of bounded](differentiable-on-cauchy-coefficient-of.md)
+- [Hartogs eventually uniform of submean](hartogs-eventually-uniform-of-submean.md)
+- [Hartogs pos Log norm le circle Average](hartogs-pos-log-norm-le-circle-average.md)
+- [Norm cauchy Coefficient le](norm-cauchy-coefficient-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.HartogsSeparateAnalyticity](../../../../../../../sources/v2/MathlibExt.md)

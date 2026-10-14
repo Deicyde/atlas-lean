@@ -14,6 +14,10 @@ The degree threshold depends on epsilon and is uniform over eligible algebraic n
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dobrowolski Scale](dobrowolski-scale.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Height.AsymptoticDobrowolski](../../../../../../sources/v2/MathlibExt.md)

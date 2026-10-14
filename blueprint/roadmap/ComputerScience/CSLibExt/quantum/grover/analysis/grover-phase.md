@@ -14,6 +14,10 @@ Phase reached from the uniform initial state after `k` iterations.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Grover Angle](grover-angle.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Quantum.Grover.Analysis](../../../../../../sources/v2/CSLibExt.md)

@@ -13,7 +13,7 @@ lean: PerronKernel.E1_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [E1](e1.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ Dirichlet index `j + 1`; in zero-based API indices this is `j + 1` versus `j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Neumann Polya Eigenvalue Benchmark](neumann-polya-eigenvalue-benchmark.md)
+- [Polya Eigenvalue Benchmark](../dirichlet-spectrum/polya-eigenvalue-benchmark.md)
 
 ## Sources
 

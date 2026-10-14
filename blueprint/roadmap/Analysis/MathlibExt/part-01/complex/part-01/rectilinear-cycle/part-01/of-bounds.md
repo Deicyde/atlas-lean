@@ -12,7 +12,7 @@ Axis-parallel rectangle specified by its real-coordinate bounds.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectilinear Rectangle](rectilinear-rectangle.md)
 
 ## Sources
 

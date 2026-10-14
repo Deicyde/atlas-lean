@@ -13,7 +13,7 @@ lean: MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowing
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
 
 ## Sources
 

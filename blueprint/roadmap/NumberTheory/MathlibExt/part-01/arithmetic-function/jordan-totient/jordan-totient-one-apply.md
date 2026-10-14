@@ -13,7 +13,12 @@ lean: ArithmeticFunction.jordanTotient_one_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jordan Totient](jordan-totient.md)
+
+## Proof depends on
+
+- [Jordan Totient eq prod factorization](jordan-totient-eq-prod-factorization.md)
+- [Jordan Totient zero](jordan-totient-zero.md)
 
 ## Sources
 

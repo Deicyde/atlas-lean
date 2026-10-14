@@ -13,7 +13,7 @@ Selecting no child performs no value comparisons or swaps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Timed Smaller Child](timed-smaller-child.md)
 
 ## Sources
 

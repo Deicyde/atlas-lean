@@ -14,7 +14,12 @@ The defining binomial recurrence for even Euler numbers:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter5 Euler Even](chapter5-euler-even.md)
+
+## Proof depends on
+
+- [Chapter5 Euler Even step](chapter5-euler-even-step.md)
+- [Chapter5 Euler Even zero](chapter5-euler-even-zero.md)
 
 ## Sources
 

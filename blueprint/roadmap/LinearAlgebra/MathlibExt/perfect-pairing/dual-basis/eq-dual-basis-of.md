@@ -14,7 +14,7 @@ Uniqueness: any basis satisfying the dual evaluation formula against
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dual Basis](dual-basis.md)
 
 ## Sources
 

@@ -22,6 +22,10 @@ Here `G.getD (j - 1) 0` is `g_j` (the `j`-th entry, `1`-indexed) and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Telescopic C](telescopic-c.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.TelescopicSequence](../../../../../sources/v2/MathlibExt.md)

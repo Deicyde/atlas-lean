@@ -15,6 +15,11 @@ Certified bound `0.6931 < log 2`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exp lt of pow lt](exp-lt-of-pow-lt.md)
+- [Log gt of exp lt](log-gt-of-exp-lt.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Theta](../../../../../../../../sources/v2/MathlibExt.md)

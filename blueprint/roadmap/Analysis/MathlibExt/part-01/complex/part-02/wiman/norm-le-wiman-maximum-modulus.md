@@ -14,7 +14,7 @@ maximum modulus.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Maximum Modulus](wiman-maximum-modulus.md)
 
 ## Sources
 

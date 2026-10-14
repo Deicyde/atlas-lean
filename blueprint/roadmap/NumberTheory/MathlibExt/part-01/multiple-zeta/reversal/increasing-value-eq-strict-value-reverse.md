@@ -14,7 +14,20 @@ the exponent index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
+- [Is Admissible](../index/is-admissible.md)
+- [Is Increasing Admissible](is-increasing-admissible.md)
+- [Depth](../index/depth.md)
+- [Is Increasing Admissible iff reverse is Admissible](is-increasing-admissible-iff-reverse-is.md)
+- [Reverse](reverse.md)
+- [Increasing Value](increasing-value.md)
+
+## Proof depends on
+
+- [Strict Increasing Tuple](strict-increasing-tuple.md)
+- [Increasing Equiv Decreasing](increasing-equiv-decreasing.md)
+- [Increasing Summand](increasing-summand.md)
+- [Increasing Summand eq strict Summand reverse](increasing-summand-eq-strict-summand-rev.md)
 
 ## Sources
 

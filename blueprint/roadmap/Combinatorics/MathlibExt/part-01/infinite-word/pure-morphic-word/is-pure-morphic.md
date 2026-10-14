@@ -20,6 +20,11 @@ coding and no global non-erasing hypothesis (concept
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Omega Limit](is-omega-limit.md)
+- [Is Prefix Preserving](is-prefix-preserving.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.PureMorphicWord](../../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,7 @@ Evaluate an operand using the input assignment and computed prefix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arithmetic Operand](arithmetic-operand.md)
 
 ## Sources
 

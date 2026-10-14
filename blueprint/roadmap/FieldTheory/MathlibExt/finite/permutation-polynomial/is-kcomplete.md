@@ -19,6 +19,10 @@ characterization `isKComplete_succ_iff` and the zero-level boundary
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Permutation Polynomial](is-permutation-polynomial.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.FieldTheory.Finite.PermutationPolynomial](../../../../../sources/v2/MathlibExt.md)

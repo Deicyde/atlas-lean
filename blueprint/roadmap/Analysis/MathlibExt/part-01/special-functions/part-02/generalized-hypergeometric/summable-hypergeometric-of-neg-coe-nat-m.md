@@ -13,7 +13,11 @@ Finite support implies summability when an upper parameter is `-(N : ℂ)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Summable Hypergeometric](summable-hypergeometric.md)
+
+## Proof depends on
+
+- [Generalized Hypergeometric Coefficient](generalized-hypergeometric-coefficient.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ Square accumulation returns the incoming matrix plus its canonical square produc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matrix Accumulate](matrix-accumulate.md)
+
+## Proof depends on
+
+- [Rectangular Matrix Accumulate ret](rectangular-matrix-accumulate-ret.md)
 
 ## Sources
 

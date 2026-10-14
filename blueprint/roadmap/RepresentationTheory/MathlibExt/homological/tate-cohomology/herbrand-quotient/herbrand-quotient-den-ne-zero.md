@@ -13,7 +13,11 @@ The denominator of the Herbrand quotient is nonzero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Herbrand Finite](herbrand-finite.md)
+
+## Proof depends on
+
+- [Herbrand Quotient den pos](herbrand-quotient-den-pos.md)
 
 ## Sources
 

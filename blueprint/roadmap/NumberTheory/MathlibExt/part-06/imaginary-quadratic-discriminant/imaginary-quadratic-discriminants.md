@@ -14,6 +14,10 @@ The set of imaginary quadratic discriminants.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Imaginary Quadratic Discriminant](is-imaginary-quadratic-discriminant.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ImaginaryQuadraticDiscriminant](../../../../../sources/v2/MathlibExt.md)

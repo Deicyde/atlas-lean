@@ -13,7 +13,12 @@ Membership in the hypersurface tangent space is vanishing of the total derivativ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tangent Space Poly](tangent-space-poly.md)
+- [Total Derivative At](total-derivative-at.md)
+
+## Proof depends on
+
+- [Total Derivative At Lin](total-derivative-at-lin.md)
 
 ## Sources
 

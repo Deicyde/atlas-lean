@@ -13,7 +13,11 @@ The deleted key is absent after deletion from an ordered tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete Bal](delete-bal.md)
+
+## Proof depends on
+
+- [Mem delete Bal](mem-delete-bal.md)
 
 ## Sources
 

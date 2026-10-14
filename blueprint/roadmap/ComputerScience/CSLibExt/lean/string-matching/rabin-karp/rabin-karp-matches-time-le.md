@@ -13,7 +13,11 @@ Setup plus matching work is bounded by the candidate count and the number of has
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rabin Karp Matches](rabin-karp-matches.md)
+
+## Proof depends on
+
+- [Rabin Karp Matches time eq](rabin-karp-matches-time-eq.md)
 
 ## Sources
 

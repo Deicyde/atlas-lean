@@ -13,7 +13,10 @@ Pointwise evaluation of the ray-element class map.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Group](../group/ray-class-group.md)
+- [Principal Ray Ideal Map](../principal-ideal/principal-ray-ideal-map.md)
+- [Ray Class Map](../group/ray-class-map.md)
+- [Ray Element Class Map](ray-element-class-map.md)
 
 ## Sources
 

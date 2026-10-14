@@ -15,6 +15,10 @@ Entry 11's `chapter8Phi` agrees with Entry 12's version.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter8 Phi Term eq entry12 Qgammaintegers](chapter8-phi-term-eq-entry12-qgammainteg.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch8Entry11Qgammafunctional](../../../../../../../sources/v2/MathlibExt.md)

@@ -16,6 +16,10 @@ Coxeter group `M.Group`, no involution relations `s i ^ 2 = 1` are imposed.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Artin Relations Set](artin-relations-set.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.ArtinGroup](../../../../../sources/v2/MathlibExt.md)

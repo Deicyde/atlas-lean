@@ -12,7 +12,15 @@ Canonical quotient equivalence onto the residue-sign target.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residue Sign Target](residue-sign-target.md)
+- [Ray Elements](../ray-group/ray-elements.md)
+- [Ray One Elements](ray-one-elements.md)
+
+## Proof depends on
+
+- [Residue Sign Map](residue-sign-map.md)
+- [Residue Sign Map ker](residue-sign-map-ker.md)
+- [Residue Sign Map surjective](residue-sign-map-surjective.md)
 
 ## Sources
 

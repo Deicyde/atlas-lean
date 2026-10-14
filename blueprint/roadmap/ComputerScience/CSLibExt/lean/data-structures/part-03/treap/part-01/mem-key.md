@@ -12,7 +12,7 @@ Structural membership of a key, independent of representation invariants.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
 
 ## Sources
 

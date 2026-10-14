@@ -14,6 +14,10 @@ Elekes's disk-and-triangle finite-decimal lower bound.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lebesgue Universal Covering Constant](lebesgue-universal-covering-constant.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.LebesgueUniversalCoveringConstantWanted](../../../../../../sources/v2/WantedExt.md)

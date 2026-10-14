@@ -13,7 +13,11 @@ The source's positive-count guard makes nonpositive requests a complete no-op.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multipop Signed](multipop-signed.md)
+
+## Proof depends on
+
+- [Multipop](multipop.md)
 
 ## Sources
 

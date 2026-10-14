@@ -15,6 +15,10 @@ is origin symmetric.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Origin Symmetric](is-origin-symmetric.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.UlamWanted](../../../../../sources/v2/WantedExt.md)

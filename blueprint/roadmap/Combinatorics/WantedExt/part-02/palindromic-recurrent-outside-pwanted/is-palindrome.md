@@ -12,7 +12,7 @@ Palindromes read the same backwards.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma](sigma.md)
 
 ## Sources
 

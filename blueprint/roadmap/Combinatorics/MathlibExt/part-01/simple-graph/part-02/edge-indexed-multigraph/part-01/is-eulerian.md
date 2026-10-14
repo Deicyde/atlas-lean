@@ -12,7 +12,13 @@ An indexed trail is Eulerian when it uses every edge identity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
+- [Indexed Walk](indexed-walk.md)
+
+## Proof depends on
+
+- [Is Trail](is-trail.md)
+- [Edges](edges.md)
 
 ## Sources
 

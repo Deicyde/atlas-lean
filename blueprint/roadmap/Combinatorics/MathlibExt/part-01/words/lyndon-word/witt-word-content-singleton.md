@@ -13,7 +13,7 @@ The content of a one-letter word is the corresponding coordinate vector.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Witt Word Content](witt-word-content.md)
 
 ## Sources
 

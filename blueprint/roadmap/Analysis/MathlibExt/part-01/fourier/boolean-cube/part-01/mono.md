@@ -13,7 +13,8 @@ Increasing the degree bound preserves the Fourier degree condition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](bool-cube.md)
+- [Multilinear Degree LE](multilinear-degree-le.md)
 
 ## Sources
 

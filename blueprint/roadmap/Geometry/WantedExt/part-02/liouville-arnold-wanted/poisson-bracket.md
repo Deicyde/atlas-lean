@@ -14,7 +14,12 @@ Standard **Poisson bracket** on `ℝ^{2n}` for the symplectic form
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
+
+## Proof depends on
+
+- [Idx P](idx-p.md)
+- [Idx Q](idx-q.md)
 
 ## Sources
 

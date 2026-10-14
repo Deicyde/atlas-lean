@@ -15,7 +15,14 @@ insertion), and the terminal `huffmanTableForest` scan.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Priority](../part-02/huffman-priority.md)
+- [Huffman Tree](../part-01/huffman-tree.md)
+- [Huffman Work Item](../part-02/huffman-work-item.md)
+- [Min Heap](../../../data-structures/part-01/binary-heap-2/part-02/min-heap.md)
+
+## Proof depends on
+
+- [Huffman Loop With Lookup Count Aux](huffman-loop-with-lookup-count-aux.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ The summands in `chapter6Entry14PlusSum` are summable for positive arguments.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Summable chapter6 Entry14 Minus Term](summable-chapter6-entry14-minus-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch6Entry14LambertSeries](../../../../../../../sources/v2/MathlibExt.md)

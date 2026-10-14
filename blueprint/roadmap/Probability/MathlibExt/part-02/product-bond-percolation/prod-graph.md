@@ -16,6 +16,10 @@ line edges (see `SimpleGraph.boxProd_adj`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Int Line](int-line.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.ProductBondPercolation](../../../../../sources/v2/MathlibExt.md)

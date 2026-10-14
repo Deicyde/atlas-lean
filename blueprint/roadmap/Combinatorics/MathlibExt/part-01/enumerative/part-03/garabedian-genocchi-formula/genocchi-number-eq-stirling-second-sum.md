@@ -27,6 +27,10 @@ hypothesis `hn` is unused and keeps the source's shape.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Genocchi Number eq stirling Second sum general](genocchi-number-eq-stirling-second-sum-g.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.GarabedianGenocchiFormula](../../../../../../../sources/v2/MathlibExt.md)

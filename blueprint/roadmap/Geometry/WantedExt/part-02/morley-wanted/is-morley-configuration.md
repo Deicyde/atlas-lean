@@ -12,7 +12,11 @@ The six Morley trisector incidences for a nondegenerate triangle `ABC`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
+
+## Proof depends on
+
+- [Lies In Triangle](lies-in-triangle.md)
 
 ## Sources
 

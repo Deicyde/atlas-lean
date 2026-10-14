@@ -13,7 +13,8 @@ Membership in the ray-one unit subgroup is the ray-one property.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integral Ray One Units](integral-ray-one-units.md)
+- [Integral Units To Ray Elements](integral-units-to-ray-elements.md)
 
 ## Sources
 

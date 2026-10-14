@@ -13,7 +13,7 @@ Finite unramifiedness is stable under `K`-automorphisms of `L`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Finite Unramified](is-finite-unramified.md)
 
 ## Sources
 

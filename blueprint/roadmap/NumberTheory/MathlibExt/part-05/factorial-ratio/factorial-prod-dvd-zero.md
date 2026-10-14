@@ -13,7 +13,11 @@ The `n = 0` boundary always divides: both products are `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Factorial Prod](factorial-prod.md)
+
+## Proof depends on
+
+- [Factorial Prod zero](factorial-prod-zero.md)
 
 ## Sources
 

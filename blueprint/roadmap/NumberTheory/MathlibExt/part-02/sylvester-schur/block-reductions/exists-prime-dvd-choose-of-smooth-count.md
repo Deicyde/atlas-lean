@@ -16,6 +16,10 @@ binomial coefficient.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists prime dvd choose of large prime dvd block](exists-prime-dvd-choose-of-large-prime-d.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.BlockReductions](../../../../../../sources/v2/MathlibExt.md)

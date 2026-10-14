@@ -16,6 +16,10 @@ and `beta` have the same Hankel transform, whatever their `alpha` coefficients.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hankel Transform eq prod of has Jacobi Fraction](hankel-transform-eq-prod-of-has-jacobi-f.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.HeilermannFormula](../../../../../../../sources/v2/MathlibExt.md)

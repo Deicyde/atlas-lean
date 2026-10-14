@@ -17,6 +17,10 @@ The iterated **backward** partial difference `(Δᵏa)ₙ`, in closed form
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Multi Choose](multi-choose.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HausdorffMomentsWanted](../../../../../sources/v2/WantedExt.md)

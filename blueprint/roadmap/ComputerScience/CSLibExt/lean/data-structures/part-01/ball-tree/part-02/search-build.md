@@ -14,7 +14,15 @@ predicate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build](../part-01/build.md)
+- [Dist Sq](../part-01/dist-sq.md)
+- [Search](../part-01/search.md)
+- [To List](../part-01/to-list.md)
+
+## Proof depends on
+
+- [Search eq filter](../part-01/search-eq-filter.md)
+- [Valid build](../part-01/valid-build.md)
 
 ## Sources
 

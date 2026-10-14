@@ -16,7 +16,12 @@ statement; the hypothesis `0 < k` is therefore omitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jordan Totient](jordan-totient.md)
+
+## Proof depends on
+
+- [Is Multiplicative jordan Totient](is-multiplicative-jordan-totient.md)
+- [Jordan Totient prime pow](jordan-totient-prime-pow.md)
 
 ## Sources
 

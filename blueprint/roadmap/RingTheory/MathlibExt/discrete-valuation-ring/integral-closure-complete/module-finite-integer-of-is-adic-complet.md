@@ -16,6 +16,10 @@ as the immediate integral-closure consequence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integer is Integral Closure of is Adic Complete](integer-is-integral-closure-of-is-adic-c.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DiscreteValuationRing.IntegralClosureComplete](../../../../../sources/v2/MathlibExt.md)

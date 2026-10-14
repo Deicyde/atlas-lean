@@ -13,7 +13,8 @@ The root of a nonempty tree is a member of the tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](../binary-search-tree/part-01/mem.md)
+- [Root](root.md)
 
 ## Sources
 

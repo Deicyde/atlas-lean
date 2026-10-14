@@ -13,7 +13,7 @@ time.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fenwick Tree](fenwick-tree.md)
 
 ## Sources
 

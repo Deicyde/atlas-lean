@@ -13,7 +13,12 @@ The Turan number is realized under the parameter bounds.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Realized Counts](realized-counts.md)
+- [Turan Number](turan-number.md)
+
+## Proof depends on
+
+- [Realized Counts nonempty](realized-counts-nonempty.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ the input as a delimited block followed by the unconsumed suffix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delimit](../../../MathlibExt/complexity/delimit.md)
+- [Undelimit](../../../MathlibExt/complexity/undelimit.md)
 
 ## Sources
 

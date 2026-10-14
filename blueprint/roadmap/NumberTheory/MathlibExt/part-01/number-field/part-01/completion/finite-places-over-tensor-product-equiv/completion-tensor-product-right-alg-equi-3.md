@@ -13,7 +13,11 @@ The source's `K`-algebra formulation, obtained by restriction of scalars.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Places Over](../finite-places-over/places-over.md)
+
+## Proof depends on
+
+- [Completion Tensor Product Right Alg Equiv](completion-tensor-product-right-alg-equi.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ Looking up a successfully inserted key returns the newly supplied value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Open Addressing](open-addressing.md)
+- [Insert](insert.md)
+- [Lookup](lookup.md)
+
+## Proof depends on
+
+- [Insert Aux](insert-aux.md)
+- [Lookup Aux](lookup-aux.md)
 
 ## Sources
 

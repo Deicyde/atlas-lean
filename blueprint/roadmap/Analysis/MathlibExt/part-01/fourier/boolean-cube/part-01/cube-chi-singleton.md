@@ -13,7 +13,9 @@ A singleton Fourier character is its coordinate sign.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](bool-cube.md)
+- [Cube Chi](cube-chi.md)
+- [Cube Val](cube-val.md)
 
 ## Sources
 

@@ -13,7 +13,17 @@ Encoding and then decoding any leaf-subtype message is a round trip.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](../part-01/huffman-tree.md)
+- [Leaf Symbol](../part-01/leaf-symbol.md)
+- [Decode?](../part-01/decode.md)
+- [Encode?](../part-01/encode.md)
+- [Symbols](../part-01/symbols.md)
+
+## Proof depends on
+
+- [Code Of Leaf](../part-01/code-of-leaf.md)
+- [Decode code Of Leaf](../part-01/decode-code-of-leaf.md)
+- [Encode code Of Leaf](encode-code-of-leaf.md)
 
 ## Sources
 

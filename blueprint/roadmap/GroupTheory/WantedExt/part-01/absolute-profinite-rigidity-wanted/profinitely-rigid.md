@@ -25,6 +25,10 @@ generated groups automatically preserves the topology and is thus a homeomorphis
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Profinite Completion](profinite-completion.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.AbsoluteProfiniteRigidityWanted](../../../../../sources/v2/WantedExt.md)

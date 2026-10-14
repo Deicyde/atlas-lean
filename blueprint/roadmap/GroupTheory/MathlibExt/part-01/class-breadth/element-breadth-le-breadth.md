@@ -13,7 +13,8 @@ Every element breadth is bounded by the group breadth.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Breadth](breadth.md)
+- [Element Breadth](element-breadth.md)
 
 ## Sources
 

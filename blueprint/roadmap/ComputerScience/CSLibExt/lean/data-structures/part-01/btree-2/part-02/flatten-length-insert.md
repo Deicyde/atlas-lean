@@ -14,7 +14,16 @@ absent key increases it by one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](../part-01/btree.md)
+- [Is BTree](is-btree.md)
+- [Flatten](../part-01/flatten.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Ordered](../part-01/ordered.md)
+- [Valid Root](../part-01/valid-root.md)
+- [Flatten insert](flatten-insert.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ Erasing comparison costs recovers Mathlib's insertion sort.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Insertion Sort](insertion-sort.md)
+
+## Proof depends on
+
+- [Insertion Sort Insert](insertion-sort-insert.md)
+- [Ret insertion Sort Insert](ret-insertion-sort-insert.md)
 
 ## Sources
 

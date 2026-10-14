@@ -13,7 +13,14 @@ Insertion preserves exact compact-prefix occupancy for arbitrary payload types.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](table.md)
+- [Well Formed](well-formed.md)
+- [Table Insert](table-insert.md)
+
+## Proof depends on
+
+- [Table Insert num](table-insert-num.md)
+- [Table Insert slots](table-insert-slots.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Finite dichromatic-colorability description of the dichromatic number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dichromatic Colorable](dichromatic-colorable.md)
+- [Dichromatic Number](dichromatic-number.md)
 
 ## Sources
 

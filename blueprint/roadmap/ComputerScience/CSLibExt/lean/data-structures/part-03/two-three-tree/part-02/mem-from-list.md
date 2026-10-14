@@ -14,7 +14,14 @@ in the list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flatten](flatten.md)
+- [From List](from-list.md)
+
+## Proof depends on
+
+- [Insert](insert.md)
+- [Mem flatten insert](mem-flatten-insert.md)
+- [Ordered from List](ordered-from-list.md)
 
 ## Sources
 

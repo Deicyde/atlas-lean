@@ -13,7 +13,12 @@ The Bernoulli benchmark has the source's actual mean and variance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Symmetric Bernoulli Law](../part-01/symmetric-bernoulli-law.md)
+
+## Proof depends on
+
+- [Symmetric Bernoulli integral](symmetric-bernoulli-integral.md)
+- [Symmetric Bernoulli mem Lp](../part-01/symmetric-bernoulli-mem-lp.md)
 
 ## Sources
 

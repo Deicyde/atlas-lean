@@ -14,7 +14,15 @@ from the verified gpt-5.6-sol proof in task T292145496.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expected LCSLength](../part-01/expected-lcslength.md)
+
+## Proof depends on
+
+- [Binary String](../part-01/binary-string.md)
+- [Binary String Pair](../part-01/binary-string-pair.md)
+- [Append Binary String Pair Equiv](append-binary-string-pair-equiv.md)
+- [Lcs Length](../part-01/lcs-length.md)
+- [Lcs Length append le](lcs-length-append-le.md)
 
 ## Sources
 

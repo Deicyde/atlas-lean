@@ -13,7 +13,8 @@ A binding in the first table at its hash slot is found by `lookup` with its valu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cuckoo Hashing](cuckoo-hashing.md)
+- [Lookup](lookup.md)
 
 ## Sources
 

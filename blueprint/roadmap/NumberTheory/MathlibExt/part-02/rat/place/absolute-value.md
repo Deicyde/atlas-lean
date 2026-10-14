@@ -16,7 +16,7 @@ so the proof in `prime` is turned into a local `Fact` dictionary.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Place](place.md)
 
 ## Sources
 

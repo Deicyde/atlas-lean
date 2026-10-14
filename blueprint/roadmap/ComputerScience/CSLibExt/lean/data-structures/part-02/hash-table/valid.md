@@ -12,7 +12,7 @@ Every binding lies in its hash-selected bucket; each `AList` chain has unique ke
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hash Table](hash-table.md)
 
 ## Sources
 

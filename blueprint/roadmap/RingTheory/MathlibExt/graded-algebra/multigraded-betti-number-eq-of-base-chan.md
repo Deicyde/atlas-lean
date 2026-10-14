@@ -16,7 +16,13 @@ in every multidegree `α` and homological index `i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraded Base Change](multigraded-betti/multigraded-base-change.md)
+- [Multigraded Betti Number](multigraded-betti/multigraded-betti-number.md)
+
+## Proof depends on
+
+- [Base Changed Complex](multigraded-betti/base-changed-complex.md)
+- [Base Changed Degree Piece](multigraded-betti/base-changed-degree-piece.md)
 
 ## Sources
 

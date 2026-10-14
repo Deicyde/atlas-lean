@@ -14,7 +14,11 @@ The explicit suffix-length bound rules out equality caused by `List.take` trunca
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compute Z](compute-z.md)
+
+## Proof depends on
+
+- [Compute Z zero](compute-z-zero.md)
 
 ## Sources
 

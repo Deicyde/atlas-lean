@@ -13,7 +13,7 @@ No index `10 ≤ j < 963` has `G j ≥ 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G9](../part-01/g9.md)
 
 ## Sources
 

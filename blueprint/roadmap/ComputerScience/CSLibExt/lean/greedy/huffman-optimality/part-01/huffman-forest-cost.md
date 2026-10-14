@@ -12,7 +12,12 @@ Sum of the already-incurred subtree costs in a work forest.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Work Item](../../huffman/part-02/huffman-work-item.md)
+
+## Proof depends on
+
+- [Huffman Tree](../../huffman/part-01/huffman-tree.md)
+- [Weighted Path Length](../../huffman/part-01/weighted-path-length.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ A successfully inserted binding is stored in the resulting table.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cuckoo Hashing](cuckoo-hashing.md)
+- [Stored](stored.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Insert Aux](insert-aux.md)
+- [Slot Has Key](slot-has-key.md)
 
 ## Sources
 

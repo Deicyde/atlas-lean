@@ -14,7 +14,7 @@ Compatibility alias for the former
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter7 Power Difference Term](chapter7-power-difference-term.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ Reconstruction after taking exponents is the identity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finsupp To Units](finsupp-to-units.md)
+- [Units To Finsupp](units-to-finsupp.md)
+
+## Proof depends on
+
+- [Units Support Finset](units-support-finset.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ A node built by `mkNode` inherits stored-interval validity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Entry](../part-01/entry.md)
+- [Interval](../part-01/interval.md)
+- [Valid](../part-01/valid.md)
+- [Tree](../part-01/tree.md)
+- [Valid Invariant](../part-01/valid-invariant.md)
+- [Mk Node](../part-01/mk-node.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ The summatory function is locally integrable on `Ioi 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abel Summatory](abel-summatory.md)
 
 ## Sources
 

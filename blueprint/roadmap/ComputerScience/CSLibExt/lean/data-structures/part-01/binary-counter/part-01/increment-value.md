@@ -13,7 +13,7 @@ Increment adds one to the unsigned value modulo the fixed width.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Increment](increment.md)
 
 ## Sources
 

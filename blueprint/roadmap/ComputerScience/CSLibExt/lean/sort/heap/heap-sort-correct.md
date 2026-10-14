@@ -13,7 +13,12 @@ Heap sort refines the standard sorted-permutation specification.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heap Sort](heap-sort.md)
+
+## Proof depends on
+
+- [Heap Sort perm](heap-sort-perm.md)
+- [Heap Sort sorted](heap-sort-sorted.md)
 
 ## Sources
 

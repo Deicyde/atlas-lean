@@ -13,7 +13,9 @@ The element returned by `predecessor` is stored in the tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](../part-01/van-emde-boas.md)
+- [Member](../part-01/member.md)
+- [Predecessor](predecessor.md)
 
 ## Sources
 

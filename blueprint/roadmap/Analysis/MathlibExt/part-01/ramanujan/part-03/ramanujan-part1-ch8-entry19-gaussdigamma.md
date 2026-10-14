@@ -16,6 +16,11 @@ remainder's derivatives, and the Euler–Maclaurin tail expansion of the log-pow
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Part1 Ch7 Entry1 Powersum](../part-02/ramanujan-part1-ch7-entry1-powersum.md)
+- [Euler Maclaurin Formula](../../calculus/euler-maclaurin-formula.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch8Entry19Gaussdigamma](../../../../../../sources/v2/MathlibExt.md)

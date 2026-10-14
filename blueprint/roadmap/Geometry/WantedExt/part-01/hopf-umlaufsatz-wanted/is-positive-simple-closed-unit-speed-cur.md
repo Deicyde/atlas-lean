@@ -12,7 +12,7 @@ A positively oriented simple regular closed unit-speed curve.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
 
 ## Sources
 

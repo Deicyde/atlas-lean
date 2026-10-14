@@ -15,6 +15,10 @@ and deleting any single vertex reduces the chromatic number.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Critical Vertex](is-critical-vertex.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Coloring.Vertex](../../../../../../../../sources/v2/MathlibExt.md)

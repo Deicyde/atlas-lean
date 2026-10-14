@@ -14,7 +14,11 @@ only when the head fails.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Search](linear-search.md)
+
+## Proof depends on
+
+- [Ret linear Search](ret-linear-search.md)
 
 ## Sources
 

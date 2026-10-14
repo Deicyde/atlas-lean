@@ -13,7 +13,12 @@ The explicit tuple is admissible in the existing Hardy-Littlewood sense.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Hardy Littlewood Admissible](../../../MathlibExt/part-06/hardy-littlewood-prime-tuple/is-hardy-littlewood-admissible.md)
+- [Tuple186](tuple186.md)
+
+## Proof depends on
+
+- [Hardy Littlewood Residue Count](../../../MathlibExt/part-06/hardy-littlewood-prime-tuple/hardy-littlewood-residue-count.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ Fixed points: limits of iterated images of a prolongable letter.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inf Word](inf-word.md)
+- [Morphism](morphism.md)
+
+## Proof depends on
+
+- [Sigma](sigma.md)
+- [Extend Iter](extend-iter.md)
 
 ## Sources
 

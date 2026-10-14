@@ -15,7 +15,11 @@ cube index lies in an explicit finite box.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer Cube Set](integer-cube-set.md)
+
+## Proof depends on
+
+- [Mem integer Cube Set iff](mem-integer-cube-set-iff.md)
 
 ## Sources
 

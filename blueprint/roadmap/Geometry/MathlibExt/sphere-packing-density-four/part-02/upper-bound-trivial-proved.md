@@ -13,7 +13,13 @@ Source: catalogue C36 trivial upper bound, proved for the actual optimized const
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Bound trivial](../part-01/upper-bound-trivial.md)
+
+## Proof depends on
+
+- [Packing](../part-01/packing.md)
+- [Upper Density](../part-01/upper-density.md)
+- [Upper Density le one](upper-density-le-one.md)
 
 ## Sources
 

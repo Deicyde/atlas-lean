@@ -14,6 +14,10 @@ Source: dLOV2014 Section 1.4, volume of a unit ball in `ℝ⁴`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Space](space.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.SpherePackingDensityFour](../../../../../sources/v2/MathlibExt.md)

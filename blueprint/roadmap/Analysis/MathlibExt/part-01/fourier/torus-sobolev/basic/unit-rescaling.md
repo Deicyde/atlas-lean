@@ -12,7 +12,7 @@ Canonical coordinate rescaling from physical period `2*pi` to unit period.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torus](torus.md)
 
 ## Sources
 

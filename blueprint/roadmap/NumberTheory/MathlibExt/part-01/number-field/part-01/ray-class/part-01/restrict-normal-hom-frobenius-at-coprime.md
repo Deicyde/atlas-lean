@@ -15,7 +15,12 @@ only to trivialize conjugation of the lower Frobenius value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Unramified Outside](frobenius-generators/is-unramified-outside.md)
+- [Frobenius At Coprime Prime](frobenius-generators/frobenius-at-coprime-prime.md)
+
+## Proof depends on
+
+- [Frobenius At Coprime Prime spec](frobenius-generators/frobenius-at-coprime-prime-spec.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Evaluation of a residue class agrees with evaluation of its representative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Affine Coordinate Ring](affine-coordinate-ring.md)
+- [Eval At](eval-at.md)
 
 ## Sources
 

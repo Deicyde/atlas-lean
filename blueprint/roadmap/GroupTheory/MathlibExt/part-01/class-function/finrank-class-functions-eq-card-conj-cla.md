@@ -18,7 +18,11 @@ Proof: Use `classFunctionsEquivConjClasses` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Class Functions](class-functions.md)
+
+## Proof depends on
+
+- [Class Functions Equiv Conj Classes](class-functions-equiv-conj-classes.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch2.Entry6.ramanujan_part1_ch2_entr
 
 ## Depends on
 
-This node has no prerequisites.
+- [A](a.md)
+
+## Proof depends on
+
+- [A ge](a-ge.md)
+- [A succ](a-succ.md)
+- [A zero](a-zero.md)
 
 ## Sources
 

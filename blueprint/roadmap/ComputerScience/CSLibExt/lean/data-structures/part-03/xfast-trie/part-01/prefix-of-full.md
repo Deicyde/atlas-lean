@@ -13,7 +13,7 @@ The full-length prefix of a key is the key itself.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prefix Of](prefix-of.md)
 
 ## Sources
 

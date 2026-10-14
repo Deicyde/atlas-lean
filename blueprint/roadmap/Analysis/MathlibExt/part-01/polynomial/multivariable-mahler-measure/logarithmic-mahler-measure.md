@@ -18,6 +18,11 @@ zero under `Real.log_zero` and the convention for the Bochner integral.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Normalized Box Integral](normalized-box-integral.md)
+- [Torus Eval](torus-eval.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Polynomial.MultivariableMahlerMeasure](../../../../../../sources/v2/MathlibExt.md)

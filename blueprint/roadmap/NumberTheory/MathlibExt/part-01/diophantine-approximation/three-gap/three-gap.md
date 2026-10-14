@@ -19,7 +19,11 @@ following Alessandri and Berthé, *Three distance theorems and combinatorics on 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Three Gap Length](is-three-gap-length.md)
+
+## Proof depends on
+
+- [Is Three Gap Point](is-three-gap-point.md)
 
 ## Sources
 

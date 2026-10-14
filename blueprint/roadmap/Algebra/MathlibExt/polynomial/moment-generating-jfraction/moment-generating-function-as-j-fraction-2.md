@@ -24,6 +24,10 @@ Proves `Wanted` entry `moment_generating_function_as_J_fraction`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Moment generating function as J fraction general](moment-generating-function-as-j-fraction.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Polynomial.MomentGeneratingJFraction](../../../../../sources/v2/MathlibExt.md)

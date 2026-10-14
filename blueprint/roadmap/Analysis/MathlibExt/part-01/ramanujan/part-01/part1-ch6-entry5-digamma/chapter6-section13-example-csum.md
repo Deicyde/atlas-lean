@@ -15,6 +15,10 @@ The sum `∑_{j ≥ 0} (-1)ʲ / ((x + 1) ⋯ (x + j + 1))` of the factorial seri
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter6 Section13 Example CTerm](chapter6-section13-example-cterm.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch6Entry5Digamma](../../../../../../../sources/v2/MathlibExt.md)

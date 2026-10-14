@@ -14,6 +14,10 @@ Almost-sure truth under the Bernoulli(`p`) bond law.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bernoulli Law](bernoulli-law.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.ProductBondPercolation](../../../../../sources/v2/MathlibExt.md)

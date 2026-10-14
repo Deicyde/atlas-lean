@@ -13,7 +13,15 @@ Under `Valid`, lookup fails exactly on keys that are not stored.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](perfect-hashing.md)
+- [Stored](stored.md)
+- [Valid](valid.md)
+- [Lookup](lookup.md)
+
+## Proof depends on
+
+- [Lookup eq some of stored](lookup-eq-some-of-stored.md)
+- [Stored of lookup eq some](stored-of-lookup-eq-some.md)
 
 ## Sources
 

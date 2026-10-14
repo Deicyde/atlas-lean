@@ -19,6 +19,10 @@ is no `M`-augmenting path, i.e. no alternating path with both endpoints
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Berge's lemma](berge-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Matching.BergeLemma](../../../../../../sources/v2/MathlibExt.md)

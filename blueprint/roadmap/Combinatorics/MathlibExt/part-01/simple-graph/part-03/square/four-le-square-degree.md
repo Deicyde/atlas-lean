@@ -14,7 +14,7 @@ neighbors in the graph square.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square](square.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ The primary's closed ambient covering pieces give the same strict-diameter cover
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Borsuk Cover](has-borsuk-cover.md)
 
 ## Sources
 

@@ -14,7 +14,13 @@ sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Lucas Params](fibonacci-lucas-params.md)
+- [Lucas Number](lucas-number.md)
+- [Lucas V](lucas-v.md)
+
+## Proof depends on
+
+- [Lucas Sequence Params](lucas-sequence-params.md)
 
 ## Sources
 

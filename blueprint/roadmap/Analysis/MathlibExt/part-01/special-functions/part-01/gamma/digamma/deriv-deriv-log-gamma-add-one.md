@@ -15,6 +15,11 @@ Trigamma series on `(1, ∞)`: `(log ∘ Gamma)''(y + 1) = ∑ 1/(y+j+1)²` for 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Deriv At tsum digamma series](has-deriv-at-tsum-digamma-series.md)
+- [Has Sum digamma series](has-sum-digamma-series.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.Gamma.Digamma](../../../../../../../../sources/v2/MathlibExt.md)

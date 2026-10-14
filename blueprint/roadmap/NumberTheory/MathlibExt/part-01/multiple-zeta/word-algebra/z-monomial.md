@@ -12,7 +12,11 @@ Monomial in the free algebra attached to an index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
+
+## Proof depends on
+
+- [Z Word](z-word.md)
 
 ## Sources
 

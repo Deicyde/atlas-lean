@@ -13,7 +13,7 @@ Pointwise evaluation of the coprime ideal-class map.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprime Ideal Class Map](coprime-ideal-class-map.md)
 
 ## Sources
 

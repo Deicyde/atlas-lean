@@ -15,7 +15,12 @@ the field `ZMod p`, solving the linear system `a * x + b = r`, `a * y + b = s` g
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mod Prime Index](mod-prime-index.md)
+
+## Proof depends on
+
+- [Pair Map](pair-map.md)
+- [Pair Map fst ne snd](pair-map-fst-ne-snd.md)
 
 ## Sources
 

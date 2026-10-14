@@ -18,7 +18,12 @@ source conjecture satisfies the predicate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Van Der Laan](is-van-der-laan.md)
+
+## Proof depends on
+
+- [Is Van Der Laan Window](is-van-der-laan-window.md)
+- [Is Van Der Laan Window const iff](is-van-der-laan-window-const-iff.md)
 
 ## Sources
 

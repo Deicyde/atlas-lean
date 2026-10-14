@@ -16,6 +16,10 @@ the spectral-norm unit ball is the image of any integral closure `B` of `A` in `
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Spectral Norm le one iff is Integral](spectral-norm-le-one-iff-is-integral.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SpectralNormUnitBall](../../../../../sources/v2/MathlibExt.md)

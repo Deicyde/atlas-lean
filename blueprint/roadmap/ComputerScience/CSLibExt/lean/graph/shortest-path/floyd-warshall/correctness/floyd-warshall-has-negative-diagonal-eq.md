@@ -13,7 +13,14 @@ No negative cycle implies that the diagonal detector is false.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../basic/cost.md)
+- [No Negative Cycle](../basic/no-negative-cycle.md)
+- [Floyd Warshall](../basic/floyd-warshall.md)
+- [Has Negative Diagonal](../basic/has-negative-diagonal.md)
+
+## Proof depends on
+
+- [Floyd Warshall has Negative Diagonal sound](floyd-warshall-has-negative-diagonal-sou.md)
 
 ## Sources
 

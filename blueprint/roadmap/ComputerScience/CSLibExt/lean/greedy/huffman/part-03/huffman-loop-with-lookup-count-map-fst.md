@@ -13,7 +13,16 @@ Forgetting the instrumentation yields exactly the existing loop result.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Priority](../part-02/huffman-priority.md)
+- [Huffman Tree](../part-01/huffman-tree.md)
+- [Huffman Work Item](../part-02/huffman-work-item.md)
+- [Min Heap](../../../data-structures/part-01/binary-heap-2/part-02/min-heap.md)
+- [Huffman Loop](huffman-loop.md)
+- [Huffman Loop With Lookup Count](huffman-loop-with-lookup-count.md)
+
+## Proof depends on
+
+- [Huffman Loop With Lookup Count eq](huffman-loop-with-lookup-count-eq.md)
 
 ## Sources
 

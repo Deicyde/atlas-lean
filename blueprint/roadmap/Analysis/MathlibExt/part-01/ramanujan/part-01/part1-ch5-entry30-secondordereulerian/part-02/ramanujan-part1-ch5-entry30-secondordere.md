@@ -15,7 +15,24 @@ Proves `Wanted` entry `ramanujan_part1_ch5_entry30_secondordereulerian`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter5 Entry30 Coeff](../part-01/chapter5-entry30-coeff.md)
+- [Chapter5 Entry30 Non Squarefree Term](../part-01/chapter5-entry30-non-squarefree-term.md)
+- [Chapter5 Entry30 Odd Term](../part-01/chapter5-entry30-odd-term.md)
+- [Chapter5 Entry30 Signed Coeff](../part-01/chapter5-entry30-signed-coeff.md)
+- [Chapter5 Entry30 Squarefree Term](../part-01/chapter5-entry30-squarefree-term.md)
+
+## Proof depends on
+
+- [Chapter5 Entry30 Coeff of ne zero](../part-01/chapter5-entry30-coeff-of-ne-zero.md)
+- [Chapter5 Entry30 Signed Coeff of ne zero](chapter5-entry30-signed-coeff-of-ne-zero.md)
+- [Has Prod one add chapter5 Entry30 Coeff](../part-01/has-prod-one-add-chapter5-entry30-coeff.md)
+- [Summable chapter5 Entry30 Coeff add two](../part-01/summable-chapter5-entry30-coeff-add-two.md)
+- [Summable chapter5 Entry30 Non Squarefree Term](summable-chapter5-entry30-non-squarefree.md)
+- [Summable chapter5 Entry30 Odd Term](summable-chapter5-entry30-odd-term.md)
+- [Summable chapter5 Entry30 Squarefree Term](summable-chapter5-entry30-squarefree-ter.md)
+- [Tsum chapter5 Entry30 Non Squarefree Term](tsum-chapter5-entry30-non-squarefree-ter.md)
+- [Tsum chapter5 Entry30 Odd Term](tsum-chapter5-entry30-odd-term.md)
+- [Tsum chapter5 Entry30 Squarefree Term](tsum-chapter5-entry30-squarefree-term.md)
 
 ## Sources
 

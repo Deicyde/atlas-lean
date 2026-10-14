@@ -13,7 +13,12 @@ those `V` for which `V(𝔸_ℚ) ≠ ∅`, i.e., which have a solution in the ad
 
 ## Depends on
 
-This node has no prerequisites.
+- [𝕍](untitled-2.md)
+
+## Proof depends on
+
+- [Has Solutions In](has-solutions-in.md)
+- [𝔸](untitled.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ Inner product of the delta function with a character picks out `χ 1 / |G|`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Irr](../part-01/irr.md)
+- [Char Fun](../part-01/char-fun.md)
+- [Delta One](../part-01/delta-one.md)
 
 ## Sources
 

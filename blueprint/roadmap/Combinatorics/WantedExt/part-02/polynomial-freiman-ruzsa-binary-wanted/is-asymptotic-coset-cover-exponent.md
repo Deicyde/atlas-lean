@@ -21,6 +21,10 @@ translates, rather than a caller-provided cover oracle.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Binary Ambient Space](binary-ambient-space.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PolynomialFreimanRuzsaBinaryWanted](../../../../../sources/v2/WantedExt.md)

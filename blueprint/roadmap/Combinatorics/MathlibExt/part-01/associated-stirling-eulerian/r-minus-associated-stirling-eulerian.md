@@ -19,6 +19,11 @@ Lines 257-259; URL https://cs.uwaterloo.ca/journals/JIS/VOL28/Rakotoson/rakoto12
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is RMinus Associated Cycle Perm](is-rminus-associated-cycle-perm.md)
+- [Excedance Count](excedance-count.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.AssociatedStirlingEulerian](../../../../../sources/v2/MathlibExt.md)

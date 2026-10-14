@@ -15,6 +15,10 @@ numbers of the strong powers tend to `θ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Strong Power](strong-power.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ShannonCapacityPentagonWanted](../../../../../sources/v2/WantedExt.md)

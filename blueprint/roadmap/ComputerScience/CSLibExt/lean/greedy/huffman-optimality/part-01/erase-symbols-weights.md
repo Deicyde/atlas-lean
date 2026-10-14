@@ -13,7 +13,10 @@ Erasure preserves the multiset of leaf weights.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](../../huffman/part-01/huffman-tree.md)
+- [Erase Symbols](erase-symbols.md)
+- [Weighted Leaves](../../huffman/part-01/weighted-leaves.md)
+- [Weights](weights.md)
 
 ## Sources
 

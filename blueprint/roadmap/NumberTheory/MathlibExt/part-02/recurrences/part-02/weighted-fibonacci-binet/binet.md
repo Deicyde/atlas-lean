@@ -22,6 +22,10 @@ characteristic polynomial."
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Binet general](binet-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Recurrences.WeightedFibonacciBinet](../../../../../../../sources/v2/MathlibExt.md)

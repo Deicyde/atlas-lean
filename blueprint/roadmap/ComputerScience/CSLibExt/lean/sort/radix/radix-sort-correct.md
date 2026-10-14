@@ -13,7 +13,12 @@ Radix sort returns a lexicographically and numerically sorted stable permutation
 
 ## Depends on
 
-This node has no prerequisites.
+- [Radix Sort](radix-sort.md)
+
+## Proof depends on
+
+- [Counting Sort](../counting/counting-sort.md)
+- [Counting Sort correct](../counting/counting-sort-correct.md)
 
 ## Sources
 

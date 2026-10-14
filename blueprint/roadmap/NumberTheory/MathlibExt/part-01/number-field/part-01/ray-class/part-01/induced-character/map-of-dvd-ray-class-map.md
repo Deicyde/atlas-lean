@@ -13,7 +13,10 @@ lean: NumberField.Modulus.RayClassGroup.mapOfDvd_rayClassMap
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Group](../group/ray-class-group.md)
+- [Map Of Dvd](map-of-dvd.md)
+- [Coprime Inclusion](coprime-inclusion.md)
+- [Ray Class Map](../group/ray-class-map.md)
 
 ## Sources
 

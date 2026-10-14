@@ -13,7 +13,7 @@ Every scaled factorial at index `0` equals `1`, so the whole product is `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Factorial Prod](factorial-prod.md)
 
 ## Sources
 

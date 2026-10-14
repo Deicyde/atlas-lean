@@ -13,7 +13,7 @@ The logarithm recovers the exact exponent when the class size is a power.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Element Breadth](element-breadth.md)
 
 ## Sources
 

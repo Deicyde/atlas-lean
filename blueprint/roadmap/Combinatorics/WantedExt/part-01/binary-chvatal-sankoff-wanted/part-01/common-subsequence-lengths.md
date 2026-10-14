@@ -12,7 +12,11 @@ The lengths admitted by common subsequences of `x` and `y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary String](binary-string.md)
+
+## Proof depends on
+
+- [Is Common Subsequence](is-common-subsequence.md)
 
 ## Sources
 

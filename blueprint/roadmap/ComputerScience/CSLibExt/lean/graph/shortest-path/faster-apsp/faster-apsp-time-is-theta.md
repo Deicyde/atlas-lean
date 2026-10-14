@@ -13,7 +13,11 @@ The total selected event count of this execution family is Θ(n³ log n).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Faster APSP](basic/faster-apsp.md)
+
+## Proof depends on
+
+- [Faster APSP time](basic/faster-apsp-time.md)
 
 ## Sources
 

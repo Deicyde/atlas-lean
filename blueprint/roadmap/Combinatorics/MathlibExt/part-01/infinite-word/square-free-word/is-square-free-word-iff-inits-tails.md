@@ -14,7 +14,11 @@ is a nonempty square. This form is directly decidable when letter equality is de
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Square Free Word](is-square-free-word.md)
+
+## Proof depends on
+
+- [Is Word Square](is-word-square.md)
 
 ## Sources
 

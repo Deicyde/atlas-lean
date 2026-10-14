@@ -13,7 +13,11 @@ the bitstrings encoding a satisfiable CNF formula.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decision Problem](../../../MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [SATLang](satlang.md)
 
 ## Sources
 

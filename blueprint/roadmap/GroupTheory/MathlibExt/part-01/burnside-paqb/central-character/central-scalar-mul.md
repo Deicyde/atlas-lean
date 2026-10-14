@@ -13,7 +13,11 @@ Central scalars multiply with the structure constants.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Scalar](central-scalar.md)
+
+## Proof depends on
+
+- [Exists scalar of central](exists-scalar-of-central.md)
 
 ## Sources
 

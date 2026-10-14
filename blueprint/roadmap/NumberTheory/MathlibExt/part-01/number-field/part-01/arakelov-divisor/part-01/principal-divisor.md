@@ -13,7 +13,11 @@ with the archimedean absolute values.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arakelov Divisor](arakelov-divisor.md)
+
+## Proof depends on
+
+- [Principal Arch](principal-arch.md)
 
 ## Sources
 

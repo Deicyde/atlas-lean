@@ -13,7 +13,9 @@ The exact cost is one tick per table cell and one tick per reconstructed item ro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Item](item.md)
+- [Result](result.md)
+- [Solve](solve.md)
 
 ## Sources
 

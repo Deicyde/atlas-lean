@@ -12,7 +12,11 @@ Bit serialization of a graph code: vertex count then row-major adjacency.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Graph Code](graph-code.md)
+
+## Proof depends on
+
+- [Nat To Bits](nat-to-bits.md)
 
 ## Sources
 

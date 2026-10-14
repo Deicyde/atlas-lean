@@ -12,7 +12,7 @@ The sum of both abstract event counts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](cost.md)
 
 ## Sources
 

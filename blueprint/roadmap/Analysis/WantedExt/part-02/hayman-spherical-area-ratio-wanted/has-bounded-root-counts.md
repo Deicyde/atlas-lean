@@ -16,6 +16,10 @@ conditional supremum `n f r` is taken over a bounded set.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Root Count](root-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HaymanSphericalAreaRatioWanted](../../../../../sources/v2/WantedExt.md)

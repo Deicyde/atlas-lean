@@ -13,7 +13,12 @@ Actual insertion comparisons give the sharper continuous expected-time upper bou
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bucket Sort](../basic/bucket-sort.md)
+
+## Proof depends on
+
+- [Bucket Sort empty](../basic/bucket-sort-empty.md)
+- [Bucket Sort time](../basic/bucket-sort-time.md)
 
 ## Sources
 

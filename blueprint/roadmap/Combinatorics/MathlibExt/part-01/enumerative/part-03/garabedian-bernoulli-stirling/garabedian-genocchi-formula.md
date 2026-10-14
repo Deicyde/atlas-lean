@@ -24,6 +24,10 @@ keeps the source's shape.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Garabedian genocchi formula general](garabedian-genocchi-formula-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.GarabedianBernoulliStirling](../../../../../../../sources/v2/MathlibExt.md)

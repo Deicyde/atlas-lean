@@ -14,7 +14,9 @@ the selected constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary Chvatal Sankoff Constant](../part-01/binary-chvatal-sankoff-constant.md)
+- [Chvatal Sankoff Limit Exists](../part-01/chvatal-sankoff-limit-exists.md)
+- [Normalized Expected LCS](../part-01/normalized-expected-lcs.md)
 
 ## Sources
 

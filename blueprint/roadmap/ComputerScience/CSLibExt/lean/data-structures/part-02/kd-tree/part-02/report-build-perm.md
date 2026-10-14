@@ -13,7 +13,15 @@ The report of a built tree permutes the input filtered by the box.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build](../part-01/build.md)
+- [In Box](../part-01/in-box.md)
+- [Report](../part-01/report.md)
+
+## Proof depends on
+
+- [Report build](report-build.md)
+- [To List](../part-01/to-list.md)
+- [To List build perm](../part-01/to-list-build-perm.md)
 
 ## Sources
 

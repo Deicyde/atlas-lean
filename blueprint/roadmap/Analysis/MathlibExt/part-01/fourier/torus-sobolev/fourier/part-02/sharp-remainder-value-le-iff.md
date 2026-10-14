@@ -13,7 +13,8 @@ The primary global domain is visible in the least-bound API.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Remainder](../../basic/remainder.md)
+- [Sharp Remainder Value](../../basic/sharp-remainder-value.md)
 
 ## Sources
 

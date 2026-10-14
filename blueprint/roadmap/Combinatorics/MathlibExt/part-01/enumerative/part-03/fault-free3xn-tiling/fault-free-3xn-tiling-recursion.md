@@ -19,7 +19,17 @@ polynomial for that matrix gives the recurrence after the six initial values.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tiling Count](tiling-count.md)
+- [Vertical Fault Free Tiling Count](vertical-fault-free-tiling-count.md)
+
+## Proof depends on
+
+- [Is Square Domino Tiling](is-square-domino-tiling.md)
+- [Is Square Or Domino](is-square-or-domino.md)
+- [Is Vertical Fault Free](is-vertical-fault-free.md)
+- [Tiling Cell](tiling-cell.md)
+- [Adjacent](adjacent.md)
+- [Is Square Or Domino iff](is-square-or-domino-iff.md)
 
 ## Sources
 

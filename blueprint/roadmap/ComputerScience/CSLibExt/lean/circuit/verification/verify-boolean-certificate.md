@@ -12,7 +12,11 @@ Check a full supplied Boolean valuation, visiting every gate and argument.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boolean Signature](../../../../../Computability/CSLibExt/circuit/boolean/boolean-signature.md)
+
+## Proof depends on
+
+- [Boolean Interpretation](../../../../../Computability/CSLibExt/circuit/boolean/boolean-interpretation.md)
 
 ## Sources
 

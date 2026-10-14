@@ -13,7 +13,11 @@ The duplicate-safe rank inequalities characterize a successful quickselect value
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quickselect](quickselect.md)
+
+## Proof depends on
+
+- [Quickselect eq get Elem? insertion Sort](quickselect-eq-get-elem-insertion-sort.md)
 
 ## Sources
 

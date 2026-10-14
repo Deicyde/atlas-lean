@@ -13,7 +13,7 @@ Orbit-stabilizer for the class: class card times stabilizer card is group card.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conj Class](conj-class.md)
 
 ## Sources
 

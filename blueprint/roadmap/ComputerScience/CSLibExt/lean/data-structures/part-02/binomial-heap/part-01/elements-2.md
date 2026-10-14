@@ -12,7 +12,11 @@ The multiset represented by a forest.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Tree](binomial-tree.md)
+
+## Proof depends on
+
+- [Elements](elements.md)
 
 ## Sources
 

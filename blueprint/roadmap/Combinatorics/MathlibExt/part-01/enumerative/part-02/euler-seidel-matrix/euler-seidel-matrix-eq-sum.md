@@ -14,7 +14,7 @@ transform of the initial row.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Seidel Matrix](euler-seidel-matrix.md)
 
 ## Sources
 

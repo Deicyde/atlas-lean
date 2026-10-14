@@ -29,7 +29,13 @@ This is the orderly-generation argument of Brinkmann and Deklerck, Theorem `thm:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Canonical](is-canonical.md)
+- [Is Union Closed](is-union-closed.md)
+- [Set LT](set-lt.md)
+
+## Proof depends on
+
+- [Orderly canonical prefix of sorted](orderly-canonical-prefix-of-sorted.md)
 
 ## Sources
 

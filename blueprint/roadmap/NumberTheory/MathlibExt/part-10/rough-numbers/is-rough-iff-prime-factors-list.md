@@ -13,7 +13,12 @@ Equivalent finite characterization through the prime-factor list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Rough](is-rough.md)
+
+## Proof depends on
+
+- [Lt of prime dvd](lt-of-prime-dvd.md)
+- [Ne zero](ne-zero.md)
 
 ## Sources
 

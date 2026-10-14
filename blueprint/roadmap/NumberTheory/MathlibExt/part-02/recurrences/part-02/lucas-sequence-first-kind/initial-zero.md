@@ -13,7 +13,7 @@ First clause of the defining recurrence: the value at `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lucas Sequence First Kind](is-lucas-sequence-first-kind.md)
 
 ## Sources
 

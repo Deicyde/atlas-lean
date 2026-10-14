@@ -14,7 +14,13 @@ the closed rectangle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Boundary Integral](boundary-integral.md)
+- [Carrier](carrier.md)
+
+## Proof depends on
+
+- [Boundary Integral eq zero](boundary-integral-eq-zero.md)
 
 ## Sources
 

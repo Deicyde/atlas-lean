@@ -13,7 +13,12 @@ Farey neighbors have determinant one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Farey Neighbor](is-farey-neighbor.md)
+
+## Proof depends on
+
+- [Farey Finset](farey-finset.md)
+- [Mem farey Finset iff](mem-farey-finset-iff.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Finite equidecomposability holds iff there is a piecewise-isometric bijection.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finitely Equidecomposable By Isometries](finitely-equidecomposable-by-isometries.md)
 
 ## Sources
 

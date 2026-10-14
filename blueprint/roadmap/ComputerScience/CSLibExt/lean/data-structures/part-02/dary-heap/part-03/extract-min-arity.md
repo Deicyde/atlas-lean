@@ -13,7 +13,13 @@ A successful extraction preserves the heap arity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Min Heap](../part-02/dary-min-heap.md)
+- [Extract Min](extract-min.md)
+
+## Proof depends on
+
+- [Extract Tail](extract-tail.md)
+- [Extract Tail arity](extract-tail-arity.md)
 
 ## Sources
 

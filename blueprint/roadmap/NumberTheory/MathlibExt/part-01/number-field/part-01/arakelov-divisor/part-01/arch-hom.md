@@ -12,7 +12,12 @@ The archimedean factor as a bundled monoid homomorphism.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arakelov Divisor](arakelov-divisor.md)
+
+## Proof depends on
+
+- [Archimedean Factor](archimedean-factor.md)
+- [Archimedean Factor coe](archimedean-factor-coe.md)
 
 ## Sources
 

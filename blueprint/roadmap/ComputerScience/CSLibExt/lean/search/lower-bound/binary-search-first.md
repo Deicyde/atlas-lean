@@ -18,6 +18,10 @@ array a present key can be missed and the result can be `none`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lower Bound](lower-bound.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Search.LowerBound](../../../../../../sources/v2/CSLibExt.md)

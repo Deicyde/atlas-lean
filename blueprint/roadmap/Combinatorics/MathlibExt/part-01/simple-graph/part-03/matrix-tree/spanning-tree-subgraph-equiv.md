@@ -13,7 +13,7 @@ on the same vertex type.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Spanning Tree](is-spanning-tree.md)
 
 ## Sources
 

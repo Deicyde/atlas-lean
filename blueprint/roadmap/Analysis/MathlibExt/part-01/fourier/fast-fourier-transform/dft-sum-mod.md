@@ -13,7 +13,7 @@ A DFT sum at an `n`th root of unity depends only on the frequency modulo `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dft Sum](dft-sum.md)
 
 ## Sources
 

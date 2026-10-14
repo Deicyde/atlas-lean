@@ -19,7 +19,11 @@ source `jis_source_dcf0849efa23d51892aa79c7`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PQPatalan Params](pqpatalan-params.md)
+
+## Proof depends on
+
+- [Patalan Generalized Binomial](patalan-generalized-binomial.md)
 
 ## Sources
 

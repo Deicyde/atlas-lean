@@ -13,7 +13,12 @@ Eight actual translates of the interior cover the three-dimensional cube.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covered By Interior Translates](../covering/covered-by-interior-translates.md)
+- [Coordinate Cube](coordinate-cube.md)
+
+## Proof depends on
+
+- [Coordinate Cube interior iff](coordinate-cube-interior-iff.md)
 
 ## Sources
 

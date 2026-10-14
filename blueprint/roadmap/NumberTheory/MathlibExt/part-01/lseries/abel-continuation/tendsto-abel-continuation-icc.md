@@ -18,7 +18,12 @@ with `abelPartialSum f`, with weight `x ↦ (x : ℂ) ^ (-s)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abel Continuation](abel-continuation.md)
+- [Abel Partial Sum](abel-partial-sum.md)
+
+## Proof depends on
+
+- [Abel Summatory](abel-summatory.md)
 
 ## Sources
 

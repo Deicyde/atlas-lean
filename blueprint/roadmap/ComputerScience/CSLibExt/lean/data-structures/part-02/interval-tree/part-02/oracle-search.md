@@ -12,7 +12,13 @@ A separate full-traversal oracle used only by specifications and tests.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Entry](../part-01/entry.md)
+- [Interval](../part-01/interval.md)
+- [Tree](../part-01/tree.md)
+
+## Proof depends on
+
+- [Overlaps](../part-01/overlaps-2.md)
 
 ## Sources
 

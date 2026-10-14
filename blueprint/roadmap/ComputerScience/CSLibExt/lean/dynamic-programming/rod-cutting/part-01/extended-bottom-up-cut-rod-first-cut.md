@@ -14,7 +14,7 @@ The witness `i : Fin j` represents the positive piece length `i.val + 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Bottom Up Cut Rod](extended-bottom-up-cut-rod.md)
 
 ## Sources
 

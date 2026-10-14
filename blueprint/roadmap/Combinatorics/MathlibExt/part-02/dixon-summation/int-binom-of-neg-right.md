@@ -13,7 +13,13 @@ Integer binomial coefficients vanish when the lower argument is negative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Int Binom](int-binom.md)
+
+## Proof depends on
+
+- [Ext Fact](ext-fact.md)
+- [Inv Fact](inv-fact.md)
+- [Inv Fact of neg](inv-fact-of-neg.md)
 
 ## Sources
 

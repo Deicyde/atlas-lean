@@ -13,7 +13,15 @@ Ray-one elements lie in the kernel of the ray-element class map.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Group](../group/ray-class-group.md)
+- [Ray Element Class Map](ray-element-class-map.md)
+
+## Proof depends on
+
+- [Principal Ray Ideal Map](../principal-ideal/principal-ray-ideal-map.md)
+- [Ray Class Map](../group/ray-class-map.md)
+- [Ray Element Class Map apply](ray-element-class-map-apply.md)
+- [Ray Group eq map ray One Elements](../principal-ideal/ray-group-eq-map-ray-one-elements.md)
 
 ## Sources
 

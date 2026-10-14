@@ -19,6 +19,15 @@ Source indices are 1-based; here rows and columns run over `Fin (K - 1)` with
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Zagier Inverse P](zagier-inverse-p.md)
+- [Zagier Inverse P eq zagier Inverse Q](zagier-inverse-p-eq-zagier-inverse-q.md)
+- [Zagier Inverse P mul zagier Matrix](zagier-inverse-p-mul-zagier-matrix.md)
+- [Zagier Inverse Q](zagier-inverse-q.md)
+- [Zagier Matrix](zagier-matrix.md)
+- [Zagier Matrix mul zagier Inverse P](zagier-matrix-mul-zagier-inverse-p.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.ZagierMatrixInverse](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ Aspect one is square matrix multiplication, without rounding error.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectangular Inner Dimension](rectangular-inner-dimension.md)
 
 ## Sources
 

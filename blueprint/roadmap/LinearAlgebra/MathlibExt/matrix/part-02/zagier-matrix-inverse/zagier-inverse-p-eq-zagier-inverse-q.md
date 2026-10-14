@@ -13,7 +13,8 @@ The two Bernoulli formulas defining the candidate inverse agree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zagier Inverse P](zagier-inverse-p.md)
+- [Zagier Inverse Q](zagier-inverse-q.md)
 
 ## Sources
 

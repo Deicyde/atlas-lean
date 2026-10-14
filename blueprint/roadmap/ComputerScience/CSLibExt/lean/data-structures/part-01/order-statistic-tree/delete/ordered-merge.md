@@ -13,7 +13,7 @@ Merging separated trees preserves the prerequisite BST ordering invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Merge](merge.md)
 
 ## Sources
 

@@ -18,6 +18,10 @@ The hypothesis `hBell` expands `y n` as the Bell sum over `k = 0..n`, and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bell convolution linear recurrence of char Zero](bell-convolution-linear-recurrence-of-ch.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.BellPolynomialConvolutionRecurrence](../../../../../../../sources/v2/MathlibExt.md)

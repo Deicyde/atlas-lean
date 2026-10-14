@@ -13,7 +13,11 @@ Integration preserves the radius-to-variance bound, even for infinite moments.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Radius Variance](normalized-radius-variance.md)
+
+## Proof depends on
+
+- [Radius deviation sq le](radius-deviation-sq-le.md)
 
 ## Sources
 

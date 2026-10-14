@@ -14,6 +14,10 @@ Lattice indices whose unit cube meets the scaled set.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integer Unit Cube](integer-unit-cube.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.LatticePointCubeSandwich](../../../../sources/v2/MathlibExt.md)

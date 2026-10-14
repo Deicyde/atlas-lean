@@ -16,6 +16,10 @@ lean: MetaMathlibExt.bell_convolution_linear_recurrence_partialBellPolynomial
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bell convolution linear recurrence of char Zero](bell-convolution-linear-recurrence-of-ch.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.BellPolynomialConvolutionRecurrence](../../../../../../../sources/v2/MathlibExt.md)

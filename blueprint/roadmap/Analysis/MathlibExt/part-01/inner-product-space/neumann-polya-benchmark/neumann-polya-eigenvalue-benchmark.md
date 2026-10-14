@@ -16,6 +16,11 @@ constant Neumann mode in positive dimension.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Domain Volume](../dirichlet-spectrum/domain-volume.md)
+- [Unit Ball Volume](../dirichlet-spectrum/unit-ball-volume.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.NeumannPolyaBenchmark](../../../../../../sources/v2/MathlibExt.md)

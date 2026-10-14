@@ -13,7 +13,14 @@ The coefficient is multiplicative on coprime arguments.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter5 Entry30 Coeff](chapter5-entry30-coeff.md)
+
+## Proof depends on
+
+- [Chapter5 Entry30 Coeff of not squarefree](chapter5-entry30-coeff-of-not-squarefree.md)
+- [Chapter5 Entry30 Coeff of squarefree](chapter5-entry30-coeff-of-squarefree.md)
+- [Chapter5 Entry30 Coeff one](chapter5-entry30-coeff-one.md)
+- [Chapter5 Entry30 Coeff zero](chapter5-entry30-coeff-zero.md)
 
 ## Sources
 

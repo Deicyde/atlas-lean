@@ -14,7 +14,15 @@ addressed subtree's root) by the new key in the represented multiset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cut Tree At](../part-01/cut-tree-at.md)
+- [Decrease Key](../part-01/decrease-key.md)
+
+## Proof depends on
+
+- [Cut Tree At elements](../part-01/cut-tree-at-elements.md)
+- [Decrease Key trees of cut](../part-01/decrease-key-trees-of-cut.md)
+- [Decrease Root](../part-01/decrease-root.md)
+- [Elements decrease Root](../part-01/elements-decrease-root.md)
 
 ## Sources
 

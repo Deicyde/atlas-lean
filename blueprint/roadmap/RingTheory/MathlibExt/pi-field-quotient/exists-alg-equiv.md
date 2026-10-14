@@ -15,6 +15,10 @@ Weaker corollary: only the existence of the subfamily and the equivalence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists alg Equiv restrict](exists-alg-equiv-restrict.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.PiFieldQuotient](../../../../sources/v2/MathlibExt.md)

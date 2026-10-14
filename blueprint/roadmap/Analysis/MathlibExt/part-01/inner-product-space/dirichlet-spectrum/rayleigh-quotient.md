@@ -14,7 +14,7 @@ by the full-space `volume` integral of `|f| ^ 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smooth Test Space](smooth-test-space.md)
 
 ## Sources
 

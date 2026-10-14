@@ -16,6 +16,11 @@ then `χ(g)/χ(1)` is an algebraic integer.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Character is Integral](character-is-integral.md)
+- [Class Sum central Scalar is Integral](../central-character/class-sum-central-scalar-is-integral.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.KillingLemma](../../../../../../sources/v2/MathlibExt.md)

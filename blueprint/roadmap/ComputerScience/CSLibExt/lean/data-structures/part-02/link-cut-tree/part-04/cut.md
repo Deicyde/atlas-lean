@@ -17,7 +17,15 @@ edges are reset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](../part-03/state.md)
+
+## Proof depends on
+
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Find Subtree](../part-01/find-subtree.md)
+- [Find Tree](../part-01/find-tree.md)
+- [Prune At](../part-02/prune-at.md)
+- [Remove Tree](../part-01/remove-tree.md)
 
 ## Sources
 

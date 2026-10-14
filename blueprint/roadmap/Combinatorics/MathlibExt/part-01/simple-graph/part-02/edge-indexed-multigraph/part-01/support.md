@@ -12,7 +12,8 @@ The vertices of an indexed walk, including both endpoints.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
+- [Indexed Walk](indexed-walk.md)
 
 ## Sources
 

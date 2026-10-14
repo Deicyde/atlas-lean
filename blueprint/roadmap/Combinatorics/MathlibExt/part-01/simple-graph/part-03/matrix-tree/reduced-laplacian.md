@@ -14,6 +14,10 @@ Reduced Laplacian after deleting a chosen root vertex.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Laplacian Int](laplacian-int.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.MatrixTree](../../../../../../../sources/v2/MathlibExt.md)

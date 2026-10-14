@@ -13,7 +13,7 @@ A nonlinear irreducible representation has proper scalar center.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Char Center](char-center.md)
 
 ## Sources
 

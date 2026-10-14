@@ -14,7 +14,17 @@ subtree in front of the cut remainder forest.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cut Tree At](cut-tree-at.md)
+- [Decrease Key](decrease-key.md)
+- [Decrease Root](decrease-root.md)
+
+## Proof depends on
+
+- [Cut Tree At elements](cut-tree-at-elements.md)
+- [Cut Tree At valid](cut-tree-at-valid.md)
+- [Decrease Root](decrease-root-2.md)
+- [Cut At](cut-at.md)
+- [Elements decrease Root](elements-decrease-root.md)
 
 ## Sources
 

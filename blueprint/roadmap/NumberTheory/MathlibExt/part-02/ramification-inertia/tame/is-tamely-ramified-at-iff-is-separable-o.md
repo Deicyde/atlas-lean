@@ -14,7 +14,12 @@ residue separability.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Residue Separable At](is-residue-separable-at.md)
+- [Is Tamely Ramified At](is-tamely-ramified-at.md)
+
+## Proof depends on
+
+- [Is Tamely Ramified At iff](is-tamely-ramified-at-iff.md)
 
 ## Sources
 

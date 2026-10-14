@@ -13,7 +13,7 @@ Every subgraph of `Q_n` has at most as many edges as `Q_n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypercube Graph](hypercube-graph.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The substitution `0 ↦ 03`, `1 ↦ 43`, `3 ↦ 1`, `4 ↦ 01`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letter](letter.md)
 
 ## Sources
 

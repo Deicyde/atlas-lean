@@ -13,7 +13,11 @@ Search fails exactly when no list element satisfies the predicate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Search](linear-search.md)
+
+## Proof depends on
+
+- [Ret linear Search](ret-linear-search.md)
 
 ## Sources
 

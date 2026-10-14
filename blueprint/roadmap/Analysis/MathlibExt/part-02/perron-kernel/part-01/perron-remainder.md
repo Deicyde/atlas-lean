@@ -14,6 +14,10 @@ Entire extension of `(y^s - 1)/s` via the averaging operator.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [E1](e1.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.PerronKernel](../../../../../../sources/v2/MathlibExt.md)

@@ -18,6 +18,10 @@ finite rank one.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Quotient algebra Map surjective of adjoin singleton eq top](quotient-algebra-map-surjective-of-adjoi.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.RamificationInertia.ResidueGenerator](../../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,11 @@ Inversion about the mean.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amplitude](../basic/amplitude.md)
+
+## Proof depends on
+
+- [Mean Amplitude](mean-amplitude.md)
 
 ## Sources
 

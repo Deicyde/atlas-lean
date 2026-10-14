@@ -12,7 +12,7 @@ The potential-method charge assigned to one queue operation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Operation](operation.md)
 
 ## Sources
 

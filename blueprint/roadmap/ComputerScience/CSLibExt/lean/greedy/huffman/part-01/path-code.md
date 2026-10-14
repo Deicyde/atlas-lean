@@ -12,7 +12,7 @@ The root-to-leaf path for a symbol, using the empty path for a leaf root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](huffman-tree.md)
 
 ## Sources
 

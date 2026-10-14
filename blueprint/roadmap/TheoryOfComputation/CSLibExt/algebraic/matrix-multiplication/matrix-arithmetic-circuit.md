@@ -14,6 +14,10 @@ A circuit whose inputs and outputs are actual rectangular matrix entries.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Arithmetic Circuit](../arithmetic-circuit/arithmetic-circuit.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Complexity.Algebraic.MatrixMultiplication](../../../../../sources/v2/CSLibExt.md)

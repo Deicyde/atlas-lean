@@ -14,7 +14,7 @@ Skew-symmetry clause `skew_symmetry` of concept `jis_sem_48e0bb143520a73f6b828a2
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Nu Lambda Pascal Matrix](is-nu-lambda-pascal-matrix.md)
 
 ## Sources
 

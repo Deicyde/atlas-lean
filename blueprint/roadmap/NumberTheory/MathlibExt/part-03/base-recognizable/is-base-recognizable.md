@@ -15,6 +15,11 @@ automaton accepts exactly its canonical base-`k` expansions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Canonical Base Word](is-canonical-base-word.md)
+- [Base Word Value](base-word-value.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.BaseRecognizable](../../../../../sources/v2/MathlibExt.md)

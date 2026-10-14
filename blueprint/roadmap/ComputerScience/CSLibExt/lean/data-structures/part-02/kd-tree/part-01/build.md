@@ -14,7 +14,7 @@ the right half, and recurse on the next axis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kd Tree](kd-tree.md)
 
 ## Sources
 

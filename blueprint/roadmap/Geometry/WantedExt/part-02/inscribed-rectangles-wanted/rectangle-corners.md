@@ -14,6 +14,10 @@ A rectangle in the Euclidean plane with opposite vertices `a` and `b` rotated by
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Axis Aligned Rectangle Corners](axis-aligned-rectangle-corners.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.InscribedRectanglesWanted](../../../../../sources/v2/WantedExt.md)

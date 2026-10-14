@@ -13,7 +13,8 @@ The defining recursion for finite Tribonacci-word approximants.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Letter](tribonacci-letter.md)
+- [Tribonacci Word Approx](tribonacci-word-approx.md)
 
 ## Sources
 

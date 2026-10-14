@@ -13,7 +13,9 @@ Pushing at the back appends to the represented sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Deque](deque.md)
+- [Contents](contents.md)
+- [Push Back](push-back.md)
 
 ## Sources
 

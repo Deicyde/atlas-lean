@@ -12,7 +12,7 @@ Remove cached heights, yielding the underlying binary search tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
 
 ## Sources
 

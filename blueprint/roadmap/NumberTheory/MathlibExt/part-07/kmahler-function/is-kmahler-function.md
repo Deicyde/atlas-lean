@@ -19,6 +19,10 @@ source https://cs.uwaterloo.ca/journals/JIS/VOL16/Bell/bell2.tex).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mahler Subst](mahler-subst.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.KMahlerFunction](../../../../../sources/v2/MathlibExt.md)

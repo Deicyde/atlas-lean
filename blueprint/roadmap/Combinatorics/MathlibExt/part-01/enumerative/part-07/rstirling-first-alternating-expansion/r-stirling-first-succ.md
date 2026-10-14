@@ -13,7 +13,11 @@ Recurrence `[n + 1, m]_r = [n, m - 1]_r + n [n, m]_r` for `1 ≤ r ≤ n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Stirling First](r-stirling-first.md)
+
+## Proof depends on
+
+- [R Stirling First zero of pos](r-stirling-first-zero-of-pos.md)
 
 ## Sources
 

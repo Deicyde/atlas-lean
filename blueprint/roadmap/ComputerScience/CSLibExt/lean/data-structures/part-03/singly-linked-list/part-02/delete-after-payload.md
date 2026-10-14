@@ -13,7 +13,12 @@ Deleting a successor preserves every payload.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../part-01/node.md)
+- [Delete After](delete-after.md)
+
+## Proof depends on
+
+- [Delete After get](delete-after-get.md)
 
 ## Sources
 

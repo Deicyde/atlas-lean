@@ -12,7 +12,13 @@ Delete exactly the occurrence with this identifier; absent IDs are unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../part-01/cost.md)
+- [Indexed Interval Tree](indexed-interval-tree.md)
+
+## Proof depends on
+
+- [Tree](../part-01/tree.md)
+- [Erase Key With Cost](../part-02/erase-key-with-cost.md)
 
 ## Sources
 

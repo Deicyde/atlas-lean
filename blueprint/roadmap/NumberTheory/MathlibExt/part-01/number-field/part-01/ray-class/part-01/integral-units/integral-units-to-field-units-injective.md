@@ -13,7 +13,7 @@ The integral-unit embedding is injective.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integral Units To Field Units](integral-units-to-field-units.md)
 
 ## Sources
 

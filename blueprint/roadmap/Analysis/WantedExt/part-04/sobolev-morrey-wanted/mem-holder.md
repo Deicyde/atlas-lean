@@ -13,7 +13,7 @@ derivatives up to order `r` bounded, `r`-th derivative `α`-Hölder.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ A trivial (subsingleton) group is word-hyperbolic, witnessed by the empty genera
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Hyperbolic](is-hyperbolic.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Accepted certificates give a bound in the graph's encoded bit length alone.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Basic](../verify-hamiltonian-cycle.md)
 
 ## Sources
 

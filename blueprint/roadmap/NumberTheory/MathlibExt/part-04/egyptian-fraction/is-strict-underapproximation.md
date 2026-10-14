@@ -17,6 +17,10 @@ and `λ > 0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Strict Egyptian](is-strict-egyptian.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.EgyptianFraction](../../../../../sources/v2/MathlibExt.md)

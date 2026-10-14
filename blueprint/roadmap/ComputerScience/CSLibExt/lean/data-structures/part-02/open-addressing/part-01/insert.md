@@ -14,7 +14,11 @@ probed slot that is empty or already holds the key. Returns `none` when the firs
 
 ## Depends on
 
-This node has no prerequisites.
+- [Open Addressing](open-addressing.md)
+
+## Proof depends on
+
+- [Insert Aux](insert-aux.md)
 
 ## Sources
 

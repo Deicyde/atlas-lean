@@ -13,7 +13,13 @@ lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.lcsLength_isGreatest
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary String](binary-string.md)
+- [Common Subsequence Lengths](common-subsequence-lengths.md)
+- [Lcs Length](lcs-length.md)
+
+## Proof depends on
+
+- [Is Common Subsequence](is-common-subsequence.md)
 
 ## Sources
 

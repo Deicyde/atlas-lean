@@ -23,7 +23,12 @@ dimension shifting, and Hilbert's syzygy theorem.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraded Free Resolution](multigraded-free-resolution/multigraded-free-resolution.md)
+
+## Proof depends on
+
+- [Is Degree Zero](multigraded-free-resolution/is-degree-zero.md)
+- [Multigraded Free Module](multigraded-free-resolution/multigraded-free-module.md)
 
 ## Sources
 

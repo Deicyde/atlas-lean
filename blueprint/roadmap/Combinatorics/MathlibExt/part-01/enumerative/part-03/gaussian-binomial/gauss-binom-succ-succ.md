@@ -13,7 +13,7 @@ The Pascal recursion for `G`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gauss Binom](gauss-binom.md)
 
 ## Sources
 

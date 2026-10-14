@@ -14,7 +14,7 @@ normalization factor `((-1)^n q^{n choose 2})^{1+s-r}` disappears.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Basic Hypergeometric Coefficient](basic-hypergeometric-coefficient.md)
 
 ## Sources
 

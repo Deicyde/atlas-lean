@@ -12,7 +12,7 @@ The Lagrange basis polynomial associated to a Boolean cube point.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](bool-cube.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ The weighted leaves represented by a work forest.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Work Item](huffman-work-item.md)
+
+## Proof depends on
+
+- [Huffman Tree](../part-01/huffman-tree.md)
+- [Weighted Leaves](../part-01/weighted-leaves.md)
 
 ## Sources
 

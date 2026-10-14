@@ -16,6 +16,10 @@ Conditional consecutive form using the project prime-counting estimate
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Consecutive of exists prime dvd choose](../bridge/consecutive-of-exists-prime-dvd-choose.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.Conditional](../../../../../../sources/v2/MathlibExt.md)

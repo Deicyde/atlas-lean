@@ -13,7 +13,7 @@ Every finite bipartite graph has edge chromatic number equal to its maximum degr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Proper Edge Coloring](is-proper-edge-coloring.md)
 
 ## Sources
 

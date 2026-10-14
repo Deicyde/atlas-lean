@@ -13,7 +13,13 @@ Exact membership for the sublevel finset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonnegative Discrete Spectrum](nonnegative-discrete-spectrum.md)
+- [Sublevel Finset](sublevel-finset.md)
+
+## Proof depends on
+
+- [Sublevel Set](sublevel-set.md)
+- [Sublevel Set finite](sublevel-set-finite.md)
 
 ## Sources
 

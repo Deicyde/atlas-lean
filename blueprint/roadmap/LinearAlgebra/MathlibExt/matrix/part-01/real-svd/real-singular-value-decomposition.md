@@ -21,6 +21,10 @@ Linear Algebra Done Right, 4th ed., 7.70, and the matrix form that follows it (S
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists orthogonal Group rectangular Diagonal antitone](exists-orthogonal-group-rectangular-diag.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.RealSVD](../../../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,7 @@ absorbed, so `blackHeight right + 1 = blackHeight left`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BBTree](bbtree.md)
 
 ## Sources
 

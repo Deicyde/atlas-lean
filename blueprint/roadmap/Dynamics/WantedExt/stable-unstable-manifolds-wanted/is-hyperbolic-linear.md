@@ -13,7 +13,11 @@ circle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
+
+## Proof depends on
+
+- [Complex Eigenvalues](complex-eigenvalues.md)
 
 ## Sources
 

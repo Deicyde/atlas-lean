@@ -14,7 +14,11 @@ extension, distinct `A`-algebra maps induce distinct residue-field maps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residue Field Map Alg Hom](residue-field-map-alg-hom.md)
+
+## Proof depends on
+
+- [Is Local Hom of is Discrete Valuation Ring](is-local-hom-of-is-discrete-valuation-ri.md)
 
 ## Sources
 

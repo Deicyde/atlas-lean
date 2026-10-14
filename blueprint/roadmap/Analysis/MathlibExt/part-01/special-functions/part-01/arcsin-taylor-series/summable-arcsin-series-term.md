@@ -13,7 +13,12 @@ The terms defining `arcsinSeries` are summable in the open unit interval.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Binomial Coeff](central-binomial-coeff.md)
+
+## Proof depends on
+
+- [Central Binomial Coeff le one](central-binomial-coeff-le-one.md)
+- [Central Binomial Coeff nonneg](central-binomial-coeff-nonneg.md)
 
 ## Sources
 

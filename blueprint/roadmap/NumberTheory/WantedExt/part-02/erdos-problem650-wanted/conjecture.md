@@ -14,6 +14,10 @@ lean: MathlibExt.NumberTheory.ErdosProblem650Wanted.conjecture
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [F](f.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem650Wanted](../../../../../sources/v2/WantedExt.md)

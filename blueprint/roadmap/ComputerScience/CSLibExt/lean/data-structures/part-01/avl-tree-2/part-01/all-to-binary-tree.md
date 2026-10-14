@@ -14,7 +14,9 @@ by definition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [All](all.md)
+- [Tree](tree.md)
+- [To Binary Tree](to-binary-tree.md)
 
 ## Sources
 

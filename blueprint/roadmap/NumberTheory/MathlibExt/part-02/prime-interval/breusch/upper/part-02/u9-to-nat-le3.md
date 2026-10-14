@@ -13,7 +13,11 @@ Truncated `G9r` values are at most `3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G9r](../part-01/g9r.md)
+
+## Proof depends on
+
+- [G9r le3](../part-01/g9r-le3.md)
 
 ## Sources
 

@@ -17,6 +17,10 @@ source-backed map/exactness/surjectivity declarations from ATLAS lines
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ray Class To Class Group surjective](ray-class-to-class-group-surjective.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.ExactSequence](../../../../../../../../../sources/v2/MathlibExt.md)

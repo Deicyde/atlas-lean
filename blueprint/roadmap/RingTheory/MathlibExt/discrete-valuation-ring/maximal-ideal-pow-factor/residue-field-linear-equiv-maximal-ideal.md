@@ -23,7 +23,15 @@ source theorem.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Ideal Graded Piece](../maximal-ideal-graded-piece/maximal-ideal-graded-piece.md)
+- [Residue Field Maximal Ideal Pow Quotient](residue-field-maximal-ideal-pow-quotient.md)
+- [Factor Residue Field Maximal Ideal Pow Quotient](factor-residue-field-maximal-ideal-pow-q.md)
+
+## Proof depends on
+
+- [Factor Residue Field Maximal Ideal Pow Quotient mk](factor-residue-field-maximal-ideal-pow-q-3.md)
+- [Residue Field Maximal Ideal Pow Quotient Equiv Pow](residue-field-maximal-ideal-pow-quotient-2.md)
+- [Residue Field Maximal Ideal Pow Quotient Equiv Pow mk](residue-field-maximal-ideal-pow-quotient-3.md)
 
 ## Sources
 

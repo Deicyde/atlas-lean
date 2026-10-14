@@ -13,7 +13,13 @@ Attainment: some Turan system has cardinality `turanNumber n s r`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Turan System](is-turan-system.md)
+- [Turan Number](turan-number.md)
+
+## Proof depends on
+
+- [Realized Counts](realized-counts.md)
+- [Turan Number mem](turan-number-mem.md)
 
 ## Sources
 

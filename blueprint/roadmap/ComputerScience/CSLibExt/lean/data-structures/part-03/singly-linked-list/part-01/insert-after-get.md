@@ -13,7 +13,8 @@ Pointwise effect of insertion: `x` is written first, then `y` is relinked.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
+- [Insert After](insert-after.md)
 
 ## Sources
 

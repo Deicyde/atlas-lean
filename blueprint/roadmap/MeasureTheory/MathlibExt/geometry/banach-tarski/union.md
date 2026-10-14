@@ -13,7 +13,7 @@ Finite equidecomposability is closed under disjoint unions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finitely Equidecomposable By Isometries](finitely-equidecomposable-by-isometries.md)
 
 ## Sources
 

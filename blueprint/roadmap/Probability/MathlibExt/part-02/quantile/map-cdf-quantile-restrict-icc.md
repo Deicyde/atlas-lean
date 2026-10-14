@@ -14,7 +14,12 @@ to the given real probability measure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cdf Quantile](cdf-quantile.md)
+
+## Proof depends on
+
+- [Cdf Quantile le iff](cdf-quantile-le-iff.md)
+- [Measurable cdf Quantile](measurable-cdf-quantile.md)
 
 ## Sources
 

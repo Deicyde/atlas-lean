@@ -13,7 +13,7 @@ The defining four-point inequality of a `δ`-hyperbolic space.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Delta Hyperbolic](is-delta-hyperbolic.md)
 
 ## Sources
 

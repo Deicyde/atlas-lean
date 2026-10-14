@@ -15,6 +15,10 @@ as the supremum of all sizes attained by good subsets.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Good](good.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosDivisibilityFamilyGrowthWanted](../../../../../sources/v2/WantedExt.md)

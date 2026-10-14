@@ -16,6 +16,11 @@ Paths may repeat vertices; no absence-of-negative-cycles hypothesis is needed.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Weighted Path](../floyd-warshall/basic/is-weighted-path.md)
+- [Path Weight](../floyd-warshall/basic/path-weight.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Graph.ShortestPath.Extend](../../../../../../../sources/v2/CSLibExt.md)

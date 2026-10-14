@@ -13,7 +13,8 @@ The empty queue marks every identity absent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Min Queue](../basic/indexed-min-queue.md)
+- [Empty](../basic/empty.md)
 
 ## Sources
 

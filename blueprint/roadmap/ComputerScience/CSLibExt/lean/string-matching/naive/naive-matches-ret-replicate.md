@@ -13,7 +13,11 @@ On repeated-symbol inputs every possible alignment is reported, including overla
 
 ## Depends on
 
-This node has no prerequisites.
+- [Naive Matches](naive-matches.md)
+
+## Proof depends on
+
+- [Naive Matches ret](naive-matches-ret.md)
 
 ## Sources
 

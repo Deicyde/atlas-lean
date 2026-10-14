@@ -13,7 +13,8 @@ Exact candidate-table work, two events per symbol, and one event per output.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compute Transition](compute-transition.md)
+- [Finite Automaton Matches](finite-automaton-matches.md)
 
 ## Sources
 

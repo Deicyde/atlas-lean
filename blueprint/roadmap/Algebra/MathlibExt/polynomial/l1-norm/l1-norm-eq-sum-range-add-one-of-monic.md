@@ -13,7 +13,11 @@ For a monic polynomial, the leading coefficient contributes one to the L1 norm.
 
 ## Depends on
 
-This node has no prerequisites.
+- [L1 Norm](l1-norm.md)
+
+## Proof depends on
+
+- [L1 Norm eq sum range](l1-norm-eq-sum-range.md)
 
 ## Sources
 

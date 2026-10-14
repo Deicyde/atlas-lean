@@ -14,6 +14,11 @@ Super Patalan numbers of order `p`, obtained by specializing `q` to `1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [PQPatalan Params](../pqpatalan-numbers/pqpatalan-params.md)
+- [Pq Super Patalan Number](pq-super-patalan-number.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.PQSuperPatalanNumbers](../../../../../../../sources/v2/MathlibExt.md)

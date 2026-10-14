@@ -13,7 +13,7 @@ The **feasible region** of `lp`: the vectors `x ∈ ℝ^m` with `A x ≤ b` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Program](linear-program.md)
 
 ## Sources
 

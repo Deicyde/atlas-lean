@@ -15,7 +15,15 @@ with `A_∞` (concept `jis_sem_12ac243c6e8826ae73e194e0`, statement
 
 ## Depends on
 
-This node has no prerequisites.
+- [Block](block.md)
+- [Inf Letter](inf-letter.md)
+
+## Proof depends on
+
+- [Block length](block-length.md)
+- [Block prefix](block-prefix.md)
+- [Get append left](get-append-left.md)
+- [Lt pow succ self](lt-pow-succ-self.md)
 
 ## Sources
 

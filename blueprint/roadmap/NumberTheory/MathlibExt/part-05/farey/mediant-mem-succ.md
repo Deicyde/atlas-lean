@@ -14,7 +14,14 @@ member of the next Farey sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Farey Neighbor](is-farey-neighbor.md)
+- [Farey Finset](farey-finset.md)
+- [Mediant](mediant.md)
+
+## Proof depends on
+
+- [Mediant not mem](mediant-not-mem.md)
+- [Mem farey Finset iff](mem-farey-finset-iff.md)
 
 ## Sources
 

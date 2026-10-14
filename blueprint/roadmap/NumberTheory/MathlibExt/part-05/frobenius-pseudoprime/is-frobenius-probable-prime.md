@@ -24,6 +24,10 @@ and the Jacobi step asks `(-1) ^ S = jacobiSym f.discr n` where `S` sums
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Greatest Common Monic Divisor](is-greatest-common-monic-divisor.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.FrobeniusPseudoprime](../../../../../sources/v2/MathlibExt.md)

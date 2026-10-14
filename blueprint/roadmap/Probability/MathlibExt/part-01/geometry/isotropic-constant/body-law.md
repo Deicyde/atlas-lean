@@ -12,7 +12,7 @@ Actual normalized Lebesgue volume on a full-dimensional convex body.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Full Dimensional Body](full-dimensional-body.md)
 
 ## Sources
 

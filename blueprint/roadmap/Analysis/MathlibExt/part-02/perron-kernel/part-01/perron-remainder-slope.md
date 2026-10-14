@@ -13,7 +13,13 @@ Slope of the remainder at `0`, in integral form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E1](e1.md)
+- [Perron Remainder](perron-remainder.md)
+
+## Proof depends on
+
+- [E1 eq div](e1-eq-div.md)
+- [E1 zero](e1-zero.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ the canonical `LatticePointEnumerator.latticeEnumerator`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lattice point count error bound](lattice-point-count-error-bound.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.LatticePointAsymptotics](../../../../sources/v2/MathlibExt.md)

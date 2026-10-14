@@ -14,7 +14,7 @@ the only one: `[]` is a prefix of every word.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Prefix Free](is-prefix-free.md)
 
 ## Sources
 

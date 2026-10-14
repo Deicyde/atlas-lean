@@ -13,7 +13,13 @@ Hagen–Rothe convolution for the coefficients in Ramanujan's Lagrange series.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lagrange Series Coefficient](lagrange-series-coefficient.md)
+
+## Proof depends on
+
+- [Schroder abel binomial](../part1-ch3-entry13-corollary-schroder/schroder-abel-binomial.md)
+- [Lagrange Series Coefficient of ne zero](lagrange-series-coefficient-of-ne-zero.md)
+- [Lagrange Series Coefficient zero](lagrange-series-coefficient-zero.md)
 
 ## Sources
 

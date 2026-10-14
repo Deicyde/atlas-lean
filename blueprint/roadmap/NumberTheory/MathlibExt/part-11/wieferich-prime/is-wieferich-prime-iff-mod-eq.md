@@ -13,7 +13,7 @@ The divisibility and modular-congruence forms of the base-two Wieferich conditio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Wieferich Prime](is-wieferich-prime.md)
 
 ## Sources
 

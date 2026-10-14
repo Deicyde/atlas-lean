@@ -17,6 +17,10 @@ bijection.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Incident Sum](incident-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.EdgeGraceful](../../../../../../../sources/v2/MathlibExt.md)

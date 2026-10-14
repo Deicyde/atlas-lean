@@ -12,7 +12,8 @@ The extended color of the root of a `BBTree`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BBTree](bbtree.md)
+- [BColor](bcolor.md)
 
 ## Sources
 

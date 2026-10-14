@@ -13,7 +13,12 @@ Extraction fails exactly for the empty representation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Heap](min-heap.md)
+- [Extract Min](extract-min.md)
+
+## Proof depends on
+
+- [Extract Tail](extract-tail.md)
 
 ## Sources
 

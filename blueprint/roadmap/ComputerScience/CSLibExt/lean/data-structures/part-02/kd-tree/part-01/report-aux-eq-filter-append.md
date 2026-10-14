@@ -13,7 +13,15 @@ The accumulator report of a valid tree is its filtered point list on `acc`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kd Tree](kd-tree.md)
+- [Valid](valid.md)
+- [In Box](in-box.md)
+- [Report Aux](report-aux.md)
+- [To List](to-list.md)
+
+## Proof depends on
+
+- [To List node](to-list-node.md)
 
 ## Sources
 

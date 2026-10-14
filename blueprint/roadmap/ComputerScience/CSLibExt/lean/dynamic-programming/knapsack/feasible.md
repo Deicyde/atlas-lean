@@ -12,7 +12,11 @@ A selected set is feasible when its total weight does not exceed the capacity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Item](item.md)
+
+## Proof depends on
+
+- [Total Weight](total-weight.md)
 
 ## Sources
 

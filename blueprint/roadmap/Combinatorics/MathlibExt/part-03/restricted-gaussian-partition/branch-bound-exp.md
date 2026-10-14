@@ -12,7 +12,7 @@ First-split exponent `u = prefix_i + (m_i - 1) * d_i` for block `i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Block](block.md)
 
 ## Sources
 

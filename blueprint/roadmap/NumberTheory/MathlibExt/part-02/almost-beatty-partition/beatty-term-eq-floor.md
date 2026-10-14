@@ -13,7 +13,7 @@ The natural-valued wrapper agrees with the usual floor formula.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Beatty Term](beatty-term.md)
 
 ## Sources
 

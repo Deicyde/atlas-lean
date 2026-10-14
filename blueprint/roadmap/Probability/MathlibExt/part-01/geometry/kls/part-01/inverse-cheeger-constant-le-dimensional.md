@@ -13,7 +13,8 @@ Every admissible law contributes its inverse coefficient to the dimensional supr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dimensional Kls Constant](dimensional-kls-constant.md)
+- [Inverse Cheeger Constant](inverse-cheeger-constant.md)
 
 ## Sources
 

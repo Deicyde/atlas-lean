@@ -13,7 +13,12 @@ A fixed prime divisor can be primitive at only one index of a sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Prime Divisor](is-primitive-prime-divisor.md)
+
+## Proof depends on
+
+- [Is Primitive Divisor](is-primitive-divisor.md)
+- [Unique](unique.md)
 
 ## Sources
 

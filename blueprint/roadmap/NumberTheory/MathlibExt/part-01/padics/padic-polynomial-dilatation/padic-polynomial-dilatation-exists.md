@@ -14,7 +14,7 @@ Proves `Wanted` entry `padicPolynomialDilatation_exists`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padic Polynomial Dilatation](padic-polynomial-dilatation.md)
 
 ## Sources
 

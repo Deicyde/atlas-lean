@@ -12,7 +12,11 @@ Inserts or replaces the value at a list key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trie](trie.md)
+
+## Proof depends on
+
+- [Empty](empty.md)
 
 ## Sources
 

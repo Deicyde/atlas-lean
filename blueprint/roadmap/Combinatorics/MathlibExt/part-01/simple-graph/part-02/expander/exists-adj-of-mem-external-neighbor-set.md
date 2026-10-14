@@ -13,7 +13,7 @@ An external neighbour comes with an adjacent source vertex in `A`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [External Neighbor Set](external-neighbor-set.md)
 
 ## Sources
 

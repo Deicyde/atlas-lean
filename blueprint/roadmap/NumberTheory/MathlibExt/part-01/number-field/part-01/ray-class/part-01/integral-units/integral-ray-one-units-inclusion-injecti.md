@@ -13,7 +13,8 @@ The ray-one inclusion is injective.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integral Ray One Units](integral-ray-one-units.md)
+- [Integral Ray One Units Inclusion](integral-ray-one-units-inclusion.md)
 
 ## Sources
 

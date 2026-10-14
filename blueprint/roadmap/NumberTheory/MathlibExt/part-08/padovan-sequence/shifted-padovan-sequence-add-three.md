@@ -13,7 +13,7 @@ The defining recurrence of the shifted Padovan sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shifted Padovan Sequence](shifted-padovan-sequence.md)
 
 ## Sources
 

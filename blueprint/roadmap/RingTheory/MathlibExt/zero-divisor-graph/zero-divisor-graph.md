@@ -12,7 +12,7 @@ Zero-divisor graph via the zero-product relation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertex](vertex.md)
 
 ## Sources
 

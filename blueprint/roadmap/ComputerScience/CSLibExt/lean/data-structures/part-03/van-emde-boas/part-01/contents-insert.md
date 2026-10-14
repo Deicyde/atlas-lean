@@ -13,7 +13,15 @@ Abstracting insertion is finite-set insertion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](van-emde-boas.md)
+- [Contents](contents.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Mem contents](mem-contents.md)
+- [Member](member.md)
+- [Member insert](member-insert.md)
 
 ## Sources
 

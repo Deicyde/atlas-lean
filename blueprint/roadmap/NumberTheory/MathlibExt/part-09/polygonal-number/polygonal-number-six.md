@@ -13,7 +13,7 @@ Hexagonal specialization `p_6(n) = 2 * n ^ 2 - n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polygonal Number](polygonal-number.md)
 
 ## Sources
 

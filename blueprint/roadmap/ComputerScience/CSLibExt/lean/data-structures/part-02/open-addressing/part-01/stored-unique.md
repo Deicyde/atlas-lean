@@ -13,7 +13,9 @@ In a valid table, a key has at most one stored binding.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Open Addressing](open-addressing.md)
+- [Stored](stored.md)
+- [Valid](valid.md)
 
 ## Sources
 

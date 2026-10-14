@@ -13,7 +13,8 @@ The coefficient of the pole part is the negative part of the coefficient.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Curve Divisor](../divisor/curve-divisor.md)
+- [Div Poles](div-poles.md)
 
 ## Sources
 

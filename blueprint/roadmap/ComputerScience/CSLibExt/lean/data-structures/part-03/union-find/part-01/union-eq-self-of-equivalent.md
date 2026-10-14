@@ -13,7 +13,15 @@ Unioning two already equivalent vertices leaves the persistent forest unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equivalent](equivalent.md)
+- [Forest](forest.md)
+- [Union](union.md)
+
+## Proof depends on
+
+- [Find](find.md)
+- [Find is Root](find-is-root.md)
+- [Link](link.md)
 
 ## Sources
 

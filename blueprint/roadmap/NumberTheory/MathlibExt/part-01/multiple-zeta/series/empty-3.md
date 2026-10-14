@@ -12,7 +12,7 @@ The unique weakly decreasing tuple of length zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weakly Decreasing Tuple](weakly-decreasing-tuple.md)
 
 ## Sources
 

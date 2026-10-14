@@ -14,7 +14,9 @@ Attainment: when a saturated graph exists, some saturated graph has exactly
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Saturated](is-saturated.md)
+- [Sat](sat.md)
+- [Sat Counts](sat-counts.md)
 
 ## Sources
 

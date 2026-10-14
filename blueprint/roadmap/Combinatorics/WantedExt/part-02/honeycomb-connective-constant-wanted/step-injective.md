@@ -13,7 +13,8 @@ The three direction labels at a vertex select three distinct neighbors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Honeycomb Vertex](honeycomb-vertex.md)
+- [Step](step.md)
 
 ## Sources
 

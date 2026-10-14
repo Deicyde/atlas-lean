@@ -17,6 +17,11 @@ is created.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Splay](splay.md)
+- [Split](split.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.SplayTree](../../../../../../../../sources/v2/CSLibExt.md)

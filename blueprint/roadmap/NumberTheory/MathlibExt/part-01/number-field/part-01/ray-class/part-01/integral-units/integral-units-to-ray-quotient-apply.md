@@ -13,7 +13,8 @@ The quotient map evaluated on an integral unit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integral Units To Ray Elements](integral-units-to-ray-elements.md)
+- [Integral Units To Ray Quotient](integral-units-to-ray-quotient.md)
 
 ## Sources
 

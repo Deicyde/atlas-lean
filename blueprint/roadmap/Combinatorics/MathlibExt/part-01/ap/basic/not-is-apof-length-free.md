@@ -13,7 +13,8 @@ A nontrivial arithmetic progression is not free of progressions of its own lengt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is APOf Length](is-apof-length.md)
+- [Is APOf Length Free](is-apof-length-free.md)
 
 ## Sources
 

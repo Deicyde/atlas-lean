@@ -13,7 +13,13 @@ The set of realized sizes is nonempty under the parameter bounds.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Realized Counts](realized-counts.md)
+
+## Proof depends on
+
+- [Is Turan System](is-turan-system.md)
+- [Complete Graph](complete-graph.md)
+- [Complete Graph is Turan](complete-graph-is-turan.md)
 
 ## Sources
 

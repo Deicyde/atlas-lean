@@ -13,7 +13,7 @@ Each row of a fractal sequence's position array is injective.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fractal Sequence](fractal-sequence.md)
 
 ## Sources
 

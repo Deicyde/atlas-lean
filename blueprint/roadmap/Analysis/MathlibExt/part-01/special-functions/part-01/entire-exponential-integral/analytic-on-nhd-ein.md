@@ -13,7 +13,11 @@ lean: Complex.analyticOnNhd_ein
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ein](ein.md)
+
+## Proof depends on
+
+- [Differentiable ein](differentiable-ein.md)
 
 ## Sources
 

@@ -17,6 +17,10 @@ Concept `jis_sem_f409ef3715730614fd194b4d`, sources `jis_138e7e26819c0bf6a015b5e
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fib Word](fib-word.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.FibonacciWord](../../../../../../sources/v2/MathlibExt.md)

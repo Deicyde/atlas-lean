@@ -13,7 +13,16 @@ The point list of a built tree is a permutation of the input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build](build.md)
+- [To List](to-list.md)
+
+## Proof depends on
+
+- [Kd Tree](kd-tree.md)
+- [Valid](valid.md)
+- [Head Coord](head-coord.md)
+- [Next Axis](next-axis.md)
+- [To List node](to-list-node.md)
 
 ## Sources
 

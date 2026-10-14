@@ -13,7 +13,7 @@ The identity automorphism acts trivially on points.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gal Point Hom](gal-point-hom.md)
 
 ## Sources
 

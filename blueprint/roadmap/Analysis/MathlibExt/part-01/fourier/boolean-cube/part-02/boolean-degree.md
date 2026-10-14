@@ -12,7 +12,11 @@ The total degree of the unique real multilinear extension of `f`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](../part-01/bool-cube.md)
+
+## Proof depends on
+
+- [Multilinear Extension](../part-01/multilinear-extension.md)
 
 ## Sources
 

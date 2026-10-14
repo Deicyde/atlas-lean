@@ -15,7 +15,12 @@ Denominator product of the `M3` closed form. Concept
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Multiplicity](partition-multiplicity.md)
+
+## Proof depends on
+
+- [Denom Prod Aux](denom-prod-aux.md)
+- [Extend A](extend-a.md)
 
 ## Sources
 

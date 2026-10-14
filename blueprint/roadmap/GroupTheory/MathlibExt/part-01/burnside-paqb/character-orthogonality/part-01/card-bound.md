@@ -13,7 +13,12 @@ Every finite set of iso-classes has cardinality at most `|G|`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Irr](irr.md)
+
+## Proof depends on
+
+- [Char Fun](char-fun.md)
+- [Char Inner orth](char-inner-orth.md)
 
 ## Sources
 

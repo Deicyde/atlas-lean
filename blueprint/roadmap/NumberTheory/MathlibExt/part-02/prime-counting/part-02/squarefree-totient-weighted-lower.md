@@ -15,6 +15,10 @@ The weighted explicit lower bound for the squarefree-totient sum.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Squarefree Totient](moebius-sq-div-totient-sum-gt-log.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.SquarefreeTotientWeighted](../../../../../../sources/v2/MathlibExt.md)

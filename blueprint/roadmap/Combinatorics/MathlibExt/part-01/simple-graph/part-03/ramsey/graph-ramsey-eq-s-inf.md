@@ -13,7 +13,8 @@ The defining characterization of `graphRamsey`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Classical Ramsey](classical-ramsey.md)
+- [Graph Ramsey](graph-ramsey.md)
 
 ## Sources
 

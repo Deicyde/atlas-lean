@@ -18,6 +18,10 @@ integral, so `HasDerivAt` at such `x` does not depend on the junk choice.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Logarithmic Integral](../integral/logarithmic-integral.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.Log.IntegralDerivative](../../../../../../../../sources/v2/MathlibExt.md)

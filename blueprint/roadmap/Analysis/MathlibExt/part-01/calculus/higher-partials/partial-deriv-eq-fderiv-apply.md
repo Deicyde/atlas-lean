@@ -16,7 +16,7 @@ by the chain rule `HasFDerivAt.comp_hasDerivAt`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partial Deriv](partial-deriv.md)
 
 ## Sources
 

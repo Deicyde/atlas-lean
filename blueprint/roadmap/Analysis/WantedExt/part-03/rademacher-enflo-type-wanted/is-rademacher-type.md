@@ -18,6 +18,10 @@ where `ε₁, …, εₙ` is a sequence of independent Rademacher variables.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rademacher Product Distribution](rademacher-product-distribution.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.RademacherEnfloTypeWanted](../../../../../sources/v2/WantedExt.md)

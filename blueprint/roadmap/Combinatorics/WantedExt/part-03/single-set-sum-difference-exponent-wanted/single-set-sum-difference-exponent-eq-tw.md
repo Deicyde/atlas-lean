@@ -14,6 +14,10 @@ The resolved exact value `C₃d = 2` stated in the frozen source.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Single Set Sum Difference Exponent](single-set-sum-difference-exponent.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.SingleSetSumDifferenceExponentWanted](../../../../../sources/v2/WantedExt.md)

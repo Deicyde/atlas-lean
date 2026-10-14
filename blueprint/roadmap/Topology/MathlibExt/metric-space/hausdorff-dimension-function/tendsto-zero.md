@@ -13,7 +13,12 @@ Source limit `lim_{r→0} ψ r = 0`, realized as `Tendsto ψ (𝓝[>] 0) (𝓝 0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hausdorff Dimension Function](hausdorff-dimension-function.md)
+
+## Proof depends on
+
+- [Continuous](continuous.md)
+- [Map zero](map-zero.md)
 
 ## Sources
 

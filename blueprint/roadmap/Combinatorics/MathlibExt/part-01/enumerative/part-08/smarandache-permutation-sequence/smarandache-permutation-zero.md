@@ -13,7 +13,7 @@ Initial term of A004741 (statement `jis_c46e1d9809a20ee69374dac7`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smarandache Permutation](smarandache-permutation.md)
 
 ## Sources
 

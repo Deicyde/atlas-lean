@@ -13,7 +13,16 @@ A left rotation preserves attained maximum caches.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Cache Invariant](../part-01/cache-invariant.md)
+- [Rotate Left](../part-02/rotate-left.md)
+
+## Proof depends on
+
+- [Entry](../part-01/entry.md)
+- [Interval](../part-01/interval.md)
+- [Cache Invariant mk Node](cache-invariant-mk-node.md)
+- [Mk Node](../part-01/mk-node.md)
 
 ## Sources
 

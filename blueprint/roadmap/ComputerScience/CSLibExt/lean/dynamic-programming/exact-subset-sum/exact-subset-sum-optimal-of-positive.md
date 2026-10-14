@@ -14,7 +14,11 @@ The positional Nat generalization is `exactSubsetSum_optimal`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Subset Sum](exact-subset-sum.md)
+
+## Proof depends on
+
+- [Exact Subset Sum optimal](exact-subset-sum-optimal.md)
 
 ## Sources
 

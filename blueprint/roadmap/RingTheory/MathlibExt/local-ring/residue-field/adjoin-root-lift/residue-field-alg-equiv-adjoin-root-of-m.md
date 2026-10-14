@@ -14,6 +14,11 @@ The residue-field equivalence as an algebra equivalence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Residue Field Equiv Adjoin Root Of Map Eq](residue-field-equiv-adjoin-root-of-map-e.md)
+- [Residue Field Equiv Adjoin Root Of Map Eq residue mk](residue-field-equiv-adjoin-root-of-map-e-2.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.LocalRing.ResidueField.AdjoinRootLift](../../../../../../sources/v2/MathlibExt.md)

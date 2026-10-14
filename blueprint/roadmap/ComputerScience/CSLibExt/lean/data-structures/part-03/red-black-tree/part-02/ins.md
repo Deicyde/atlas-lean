@@ -12,7 +12,12 @@ Unchecked insertion; the result may violate `RedOk` at the root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+
+## Proof depends on
+
+- [Color](../part-01/color.md)
+- [Balance](../part-01/balance.md)
 
 ## Sources
 

@@ -15,7 +15,9 @@ is the product of its two semilocal images.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Semilocalization To At Prime](semilocalization-to-at-prime.md)
+- [Normalized Tensor To Compositum At Prime](normalized-tensor-to-compositum-at-prime.md)
+- [Tensor Product Localization Equiv Integral Closure](tensor-product-localization-equiv-integr.md)
 
 ## Sources
 

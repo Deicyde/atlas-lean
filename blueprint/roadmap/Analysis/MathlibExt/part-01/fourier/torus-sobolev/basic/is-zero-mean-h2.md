@@ -12,7 +12,12 @@ Actual zero-mean real `H²` functions on the period-`2π` torus.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torus](torus.md)
+
+## Proof depends on
+
+- [Is H2](is-h2.md)
+- [Mean](mean.md)
 
 ## Sources
 

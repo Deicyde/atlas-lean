@@ -13,7 +13,9 @@ uniquely-serial-numbered weighted trees.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Priority](../../huffman/part-02/huffman-priority.md)
+- [Huffman Work Item](../../huffman/part-02/huffman-work-item.md)
+- [Min Heap](../../../data-structures/part-01/binary-heap-2/part-02/min-heap.md)
 
 ## Sources
 

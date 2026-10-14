@@ -16,6 +16,11 @@ than a factor of two.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bonse nth prime](bonse-nth-prime.md)
+- [Bonse nth strict Mono](bonse-nth-strict-mono.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.BonseInequality](../../../../../sources/v2/MathlibExt.md)

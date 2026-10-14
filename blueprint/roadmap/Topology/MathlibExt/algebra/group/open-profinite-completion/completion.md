@@ -14,6 +14,11 @@ Open profinite completion as the limit of `diagram G`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Index](index.md)
+- [Diagram](diagram.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Topology.Algebra.Group.OpenProfiniteCompletion](../../../../../../sources/v2/MathlibExt.md)

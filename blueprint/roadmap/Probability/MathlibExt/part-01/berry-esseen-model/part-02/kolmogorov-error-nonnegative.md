@@ -13,7 +13,13 @@ The error supremum is nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kolmogorov Error](../part-01/kolmogorov-error.md)
+
+## Proof depends on
+
+- [Normal CDF](../part-01/normal-cdf.md)
+- [Normalized Law](../part-01/normalized-law.md)
+- [Pointwise le kolmogorov Error](pointwise-le-kolmogorov-error.md)
 
 ## Sources
 

@@ -16,7 +16,11 @@ there.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectilinear Cycle](../part-01/rectilinear-cycle.md)
+
+## Proof depends on
+
+- [Integral](../part-01/integral.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ The deepest vertex of a root path (its last entry) is the target vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Root Path](root-path.md)
+
+## Proof depends on
+
+- [Children ind](../../euler-tour-tree/part-01/children-ind.md)
 
 ## Sources
 

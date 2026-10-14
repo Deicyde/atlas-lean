@@ -21,6 +21,10 @@ Proves `Wanted` entry `angle_bisector_theorem`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Angle bisector theorem general](angle-bisector-theorem-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.AngleBisector](../../../../../../sources/v2/MathlibExt.md)

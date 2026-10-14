@@ -18,7 +18,7 @@ record the source domain `k ≥ 2`, `n ≥ 1` and are unused by the proof.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Josephus](josephus.md)
 
 ## Sources
 

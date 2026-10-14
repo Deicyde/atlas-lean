@@ -13,7 +13,7 @@ Canonical covers can be intersected with the original set to give an exact union
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Borsuk Cover](has-borsuk-cover.md)
 
 ## Sources
 

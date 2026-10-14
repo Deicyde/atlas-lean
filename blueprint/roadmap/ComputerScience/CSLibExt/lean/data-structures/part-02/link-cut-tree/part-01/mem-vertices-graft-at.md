@@ -14,7 +14,14 @@ new child.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
+- [Graft At](graft-at.md)
+
+## Proof depends on
+
+- [Children ind](../../euler-tour-tree/part-01/children-ind.md)
+- [Vertices node](../../euler-tour-tree/part-01/vertices-node.md)
 
 ## Sources
 

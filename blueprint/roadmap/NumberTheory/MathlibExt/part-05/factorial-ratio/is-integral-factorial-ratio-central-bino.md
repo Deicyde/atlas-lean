@@ -14,7 +14,11 @@ Central-binomial example: `[(2)] / [(1), (1)]` is integral, since
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Integral Factorial Ratio](is-integral-factorial-ratio.md)
+
+## Proof depends on
+
+- [Factorial Prod](factorial-prod.md)
 
 ## Sources
 

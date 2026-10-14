@@ -17,7 +17,20 @@ this specifies `pruneAt` at edge level on the surviving vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
+- [Adjacent](../part-01/adjacent.md)
+- [Prune At](prune-at.md)
+
+## Proof depends on
+
+- [Children ind](../../euler-tour-tree/part-01/children-ind.md)
+- [Root](../../euler-tour-tree/part-01/root.md)
+- [Vertices node](../../euler-tour-tree/part-01/vertices-node.md)
+- [Mem left](../part-01/mem-left.md)
+- [Mem right](../part-01/mem-right.md)
+- [Mem vertices prune At](mem-vertices-prune-at.md)
+- [Root prune At](root-prune-at.md)
 
 ## Sources
 

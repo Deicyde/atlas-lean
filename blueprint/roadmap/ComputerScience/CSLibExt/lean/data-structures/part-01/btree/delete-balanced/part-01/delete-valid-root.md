@@ -14,7 +14,20 @@ same height, or one less when a root merge collapsed the root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Borrow Left](borrow-left.md)
+- [Borrow Right](borrow-right.md)
+- [Del H](del-h.md)
+- [Del List](del-list.md)
+- [Key Count](key-count.md)
+- [Max Key](max-key.md)
+- [Merge](merge.md)
+- [Min Key](min-key.md)
+- [Split Last](split-last.md)
+- [Tree Height](tree-height.md)
 
 ## Sources
 

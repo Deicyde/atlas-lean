@@ -14,7 +14,7 @@ book number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Book Number](book-number.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ The minor relation is transitive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fin Graph](fin-graph.md)
+- [Is Minor](is-minor.md)
+
+## Proof depends on
+
+- [Minor Step](minor-step.md)
 
 ## Sources
 

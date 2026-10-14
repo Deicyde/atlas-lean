@@ -13,7 +13,7 @@ A successful selection returns the value occupying rank `k`, including duplicate
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quickselect](quickselect.md)
 
 ## Sources
 

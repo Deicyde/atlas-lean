@@ -14,6 +14,10 @@ Rich order-2 bases need not split (companion recording the disproof).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Conjecture](conjecture.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem871Wanted](../../../../../sources/v2/WantedExt.md)

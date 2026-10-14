@@ -14,7 +14,8 @@ with the ambient ray group.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Change Modulus](change-modulus.md)
+- [Ray Group Ambient](ray-group-ambient.md)
 
 ## Sources
 

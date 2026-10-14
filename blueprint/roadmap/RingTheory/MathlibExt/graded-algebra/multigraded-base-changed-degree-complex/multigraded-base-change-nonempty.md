@@ -17,6 +17,11 @@ of their homology groups is finite-dimensional because the degree pieces are.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Base Changed Degree Complex](base-changed-degree-complex.md)
+- [Base Changed Degree Inclusion](base-changed-degree-inclusion.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.GradedAlgebra.MultigradedBaseChangedDegreeComplex](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,13 @@ Reducing the raw result gives the canonical modular power, including at exponent
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Exponentiation](modular-exponentiation.md)
+
+## Proof depends on
+
+- [Modular Exponentiation ret even](modular-exponentiation-ret-even.md)
+- [Modular Exponentiation ret odd](modular-exponentiation-ret-odd.md)
+- [Modular Exponentiation zero](modular-exponentiation-zero.md)
 
 ## Sources
 

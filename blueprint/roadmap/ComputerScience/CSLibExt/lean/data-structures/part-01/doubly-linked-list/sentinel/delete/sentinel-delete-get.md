@@ -13,7 +13,11 @@ Every returned cell follows the predecessor write and then the carried successor
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sentinel Delete](sentinel-delete.md)
+
+## Proof depends on
+
+- [Sentinel Delete ret](sentinel-delete-ret.md)
 
 ## Sources
 

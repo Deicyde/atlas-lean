@@ -15,7 +15,7 @@ Gauss formula, residue 7 mod 8: `r₃(n) = 0`. Source: arXiv:2307.05244
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Square Representation Count](three-square-representation-count.md)
 
 ## Sources
 

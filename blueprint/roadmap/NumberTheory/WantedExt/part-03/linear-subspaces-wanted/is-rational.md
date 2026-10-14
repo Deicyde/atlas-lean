@@ -17,6 +17,11 @@ of rational subspaces below.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Int Points](int-points.md)
+- [Int Points Subspace](int-points-subspace.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LinearSubspacesWanted](../../../../../sources/v2/WantedExt.md)

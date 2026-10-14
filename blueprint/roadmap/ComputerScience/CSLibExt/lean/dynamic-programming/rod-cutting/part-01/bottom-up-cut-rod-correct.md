@@ -14,7 +14,14 @@ This covers signed prices without offering an option to discard any material.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bottom Up Cut Rod](bottom-up-cut-rod.md)
+- [Composition Revenue](composition-revenue.md)
+
+## Proof depends on
+
+- [Composition Revenue append](composition-revenue-append.md)
+- [Composition Revenue single](composition-revenue-single.md)
+- [Composition Revenue zero](composition-revenue-zero.md)
 
 ## Sources
 

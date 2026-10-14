@@ -16,6 +16,11 @@ An infinite binary word `x : ℕ → Bool` is Sturmian exactly when it is
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Aperiodic](is-aperiodic.md)
+- [Is Balanced](is-balanced.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.SturmianWord](../../../../../../sources/v2/MathlibExt.md)

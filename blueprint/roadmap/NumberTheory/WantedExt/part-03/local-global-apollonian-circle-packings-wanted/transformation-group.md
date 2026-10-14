@@ -14,6 +14,10 @@ The group of allowable transformations of integral primitive Descartes quadruple
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Apollonian Group](apollonian-group.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LocalGlobalApollonianCirclePackingsWanted](../../../../../sources/v2/WantedExt.md)

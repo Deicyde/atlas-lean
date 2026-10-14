@@ -13,7 +13,13 @@ Every vertex of a finite 2-vertex-connected graph has degree at least two.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Vertex Connected](is-vertex-connected.md)
+
+## Proof depends on
+
+- [Card gt](card-gt.md)
+- [Connected](connected.md)
+- [Connected compl singleton](connected-compl-singleton.md)
 
 ## Sources
 

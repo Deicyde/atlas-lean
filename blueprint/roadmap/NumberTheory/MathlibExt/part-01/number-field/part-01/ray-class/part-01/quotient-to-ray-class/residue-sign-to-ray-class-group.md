@@ -13,7 +13,11 @@ equivalence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Group](../group/ray-class-group.md)
+
+## Proof depends on
+
+- [Ray Quotient To Ray Class Group](ray-quotient-to-ray-class-group.md)
 
 ## Sources
 

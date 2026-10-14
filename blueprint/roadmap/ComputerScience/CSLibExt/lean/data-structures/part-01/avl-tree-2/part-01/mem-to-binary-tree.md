@@ -14,7 +14,9 @@ cache-erased tree, by definition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](mem.md)
+- [Tree](tree.md)
+- [To Binary Tree](to-binary-tree.md)
 
 ## Sources
 

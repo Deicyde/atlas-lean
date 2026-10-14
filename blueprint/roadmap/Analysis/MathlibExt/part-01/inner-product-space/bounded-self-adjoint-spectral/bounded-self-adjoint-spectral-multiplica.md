@@ -23,6 +23,10 @@ measure, where the spectral coordinate acts by multiplication.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists spectral Measure](exists-spectral-measure.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.BoundedSelfAdjointSpectral](../../../../../../sources/v2/MathlibExt.md)

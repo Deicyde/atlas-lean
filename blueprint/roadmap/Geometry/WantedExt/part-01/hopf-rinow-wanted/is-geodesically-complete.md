@@ -16,6 +16,10 @@ geodesic defined on all of `ℝ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Geodesic](is-geodesic.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.HopfRinowWanted](../../../../../sources/v2/WantedExt.md)

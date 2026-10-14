@@ -14,6 +14,10 @@ Evaluation of a multivariable Laurent polynomial at a point of the unit torus.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Torus Character Hom](torus-character-hom.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Polynomial.MultivariableMahlerMeasure](../../../../../../sources/v2/MathlibExt.md)

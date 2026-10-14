@@ -12,7 +12,12 @@ Decode one CNF formula and return its unconsumed suffix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](cnf.md)
+
+## Proof depends on
+
+- [Decode Clauses](decode-clauses.md)
+- [Read Unary Length](read-unary-length.md)
 
 ## Sources
 

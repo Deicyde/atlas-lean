@@ -14,7 +14,7 @@ Classical block `A₀ = 0`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Classical Block](classical-block.md)
 
 ## Sources
 

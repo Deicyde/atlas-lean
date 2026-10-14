@@ -15,6 +15,10 @@ of `|count - length * N|`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Count Q](count-q.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosSequenceDiscrepancyWanted](../../../../../sources/v2/WantedExt.md)

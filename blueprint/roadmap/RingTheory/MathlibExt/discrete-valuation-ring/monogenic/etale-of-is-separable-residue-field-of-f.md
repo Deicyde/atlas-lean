@@ -15,6 +15,10 @@ Finite separable residue-field extension with matching finrank is étale.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists adjoin eq top of separable residue Field](exists-adjoin-eq-top-of-separable-residu.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DiscreteValuationRing.Monogenic](../../../../../sources/v2/MathlibExt.md)

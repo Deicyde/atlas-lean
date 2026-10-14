@@ -14,6 +14,10 @@ The inverse Cheeger coefficient; zero coefficient gives infinity.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cheeger Coefficient](cheeger-coefficient.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Geometry.KLS](../../../../../../../sources/v2/MathlibExt.md)

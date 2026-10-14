@@ -15,7 +15,11 @@ Cites concept `jis_sem_95dbf183cc4eaf1172157db5` and source statement
 
 ## Depends on
 
-This node has no prerequisites.
+- [Takagi Ell](takagi-ell.md)
+
+## Proof depends on
+
+- [Takagi Bit](takagi-bit.md)
 
 ## Sources
 

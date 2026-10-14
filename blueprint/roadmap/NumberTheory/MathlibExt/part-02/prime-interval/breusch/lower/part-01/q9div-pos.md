@@ -13,7 +13,11 @@ lean: MathlibExt.NumberTheory.BreuschWanted.Internal.Q9div_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q9](../../grid/part-01/q9.md)
+
+## Proof depends on
+
+- [Q9 pos](q9-pos.md)
 
 ## Sources
 

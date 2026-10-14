@@ -13,7 +13,7 @@ Exact cost of the accepted saved-bucket executor on every valid array.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bucket Sort](bucket-sort.md)
 
 ## Sources
 

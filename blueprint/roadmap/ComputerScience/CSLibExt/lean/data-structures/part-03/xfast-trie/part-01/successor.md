@@ -14,7 +14,7 @@ bound is claimed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [XFast Trie](xfast-trie.md)
 
 ## Sources
 

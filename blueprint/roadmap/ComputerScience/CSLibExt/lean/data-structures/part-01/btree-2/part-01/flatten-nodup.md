@@ -13,7 +13,9 @@ The flattening of an ordered tree has no duplicate keys.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](btree.md)
+- [Ordered](ordered.md)
+- [Flatten](flatten.md)
 
 ## Sources
 

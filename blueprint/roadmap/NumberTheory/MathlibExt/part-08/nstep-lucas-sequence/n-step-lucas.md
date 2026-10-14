@@ -19,6 +19,10 @@ for `1 ≤ m ≤ n` and `nStepLucas n m` is the sum of the `n` preceding values 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [N Step Lucas List](n-step-lucas-list.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NStepLucasSequence](../../../../../sources/v2/MathlibExt.md)

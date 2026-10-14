@@ -14,6 +14,10 @@ Ternary specialization of a `3`-abelian square.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is KAbelian Square](is-kabelian-square.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.KAbelianSquareFreeWord](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,13 @@ The source identity initialization gives the minimum over at most `n-1` edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Edge Bounded Shortest Path Weight](../extend/is-edge-bounded-shortest-path-weight.md)
+- [Slow APSP](slow-apsp.md)
+
+## Proof depends on
+
+- [Matrix Power](../matrix-pow-edge-bounded.md)
+- [Slow APSP ret](slow-apsp-ret.md)
 
 ## Sources
 

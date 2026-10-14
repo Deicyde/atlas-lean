@@ -17,6 +17,10 @@ satisfies `k ≤ M₁.eRk X + M₂.eRk Xᶜ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists common indep of cut le](exists-common-indep-of-cut-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Matroid.MatroidIntersection](../../../../../../sources/v2/MathlibExt.md)

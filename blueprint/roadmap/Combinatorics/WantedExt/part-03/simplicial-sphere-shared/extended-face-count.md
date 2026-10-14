@@ -12,7 +12,11 @@ Extended f-vector entry: `f_{-1} = 1`, then `f_{i-1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Simplicial Sphere](finite-simplicial-sphere.md)
+
+## Proof depends on
+
+- [Face Count](face-count.md)
 
 ## Sources
 

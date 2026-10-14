@@ -13,7 +13,8 @@ Source: every finite-radius observation ball has finite volume.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positive Radius](positive-radius.md)
+- [Space](space.md)
 
 ## Sources
 

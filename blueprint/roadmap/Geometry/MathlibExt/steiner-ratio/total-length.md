@@ -12,7 +12,11 @@ Total Euclidean length of a finite graph on a finset of points.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
+
+## Proof depends on
+
+- [Edge Length](edge-length.md)
 
 ## Sources
 

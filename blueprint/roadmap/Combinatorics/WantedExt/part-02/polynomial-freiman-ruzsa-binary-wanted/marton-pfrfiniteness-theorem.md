@@ -14,6 +14,10 @@ Marton's historical finiteness claim, now resolved by the quantitative bounds.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Asymptotic Coset Cover Exponents](asymptotic-coset-cover-exponents.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PolynomialFreimanRuzsaBinaryWanted](../../../../../sources/v2/WantedExt.md)

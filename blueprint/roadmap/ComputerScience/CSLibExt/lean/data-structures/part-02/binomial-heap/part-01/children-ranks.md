@@ -13,7 +13,14 @@ The child ranks of a valid tree are exactly `r - 1, ..., 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Tree](binomial-tree.md)
+- [Valid](valid.md)
+- [Children](children.md)
+- [Rank](rank.md)
+
+## Proof depends on
+
+- [Elements](elements.md)
 
 ## Sources
 

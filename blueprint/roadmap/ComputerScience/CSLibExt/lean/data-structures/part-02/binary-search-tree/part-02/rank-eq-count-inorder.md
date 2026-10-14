@@ -13,7 +13,8 @@ lean: Cslib.Algorithms.Lean.BinarySearchTree.rank_eq_count_inorder
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inorder](../part-01/inorder.md)
+- [Rank](../part-01/rank.md)
 
 ## Sources
 

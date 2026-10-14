@@ -13,7 +13,7 @@ Repeated-symbol inputs attain the comparison upper bound exactly.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Naive Matches](naive-matches.md)
 
 ## Sources
 

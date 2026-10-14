@@ -15,6 +15,10 @@ Term-by-term derivative of the digamma series: its derivative is `âˆ‘ 1/(y+j+1)Â
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Summable one div add nat succ sq](summable-one-div-add-nat-succ-sq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.Gamma.Digamma](../../../../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,7 @@ The complete graph on `n` vertices, `Kₙ`, as a bundled finite graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fin Graph](fin-graph.md)
 
 ## Sources
 

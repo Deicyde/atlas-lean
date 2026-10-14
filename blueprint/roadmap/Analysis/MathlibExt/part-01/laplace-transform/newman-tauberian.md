@@ -15,7 +15,14 @@ convergent partial integrals tending to the value at zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Laplace](basic/has-laplace.md)
+
+## Proof depends on
+
+- [Boundary rect one div](../complex/part-01/rectilinear-cycle/part-01/boundary-rect-one-div.md)
+- [Laplace Convergent](basic/laplace-convergent.md)
+- [Differentiable On laplace of norm le exp](exponential-bound/differentiable-on-laplace-of-norm-le-exp.md)
+- [Laplace](basic/laplace.md)
 
 ## Sources
 

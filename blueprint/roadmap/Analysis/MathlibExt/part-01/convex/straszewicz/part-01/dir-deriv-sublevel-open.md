@@ -13,7 +13,15 @@ Sublevel sets of the symmetrized directional derivative are open.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dir Deriv](dir-deriv.md)
+- [Supp Func](supp-func.md)
+
+## Proof depends on
+
+- [Dir Quot](dir-quot.md)
+- [Dir Quot bdd Below](dir-quot-bdd-below.md)
+- [Supp Func continuous](supp-func-continuous.md)
+- [Supp Func convex](supp-func-convex.md)
 
 ## Sources
 

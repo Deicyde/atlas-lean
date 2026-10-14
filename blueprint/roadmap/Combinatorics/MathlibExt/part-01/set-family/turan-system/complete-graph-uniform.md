@@ -13,7 +13,7 @@ The complete `r`-graph is `r`-uniform.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complete Graph](complete-graph.md)
 
 ## Sources
 

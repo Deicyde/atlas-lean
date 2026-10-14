@@ -16,6 +16,11 @@ least `k` points satisfying the bound.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Plane](plane.md)
+- [Count Small Points](count-small-points.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.ErdosProblem652Wanted](../../../../../sources/v2/WantedExt.md)

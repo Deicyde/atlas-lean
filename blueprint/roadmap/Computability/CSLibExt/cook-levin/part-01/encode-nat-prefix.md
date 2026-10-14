@@ -15,6 +15,10 @@ natural-number bits wrapped in a canonical self-delimiting block.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Delimit](../../../MathlibExt/complexity/delimit.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.CookLevin](../../../../../sources/v2/CSLibExt.md)

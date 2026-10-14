@@ -12,7 +12,11 @@ Strict counting function `N(Λ) = #{j | E_j < Λ}`, with multiplicity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonnegative Discrete Spectrum](nonnegative-discrete-spectrum.md)
+
+## Proof depends on
+
+- [Sublevel Finset](sublevel-finset.md)
 
 ## Sources
 

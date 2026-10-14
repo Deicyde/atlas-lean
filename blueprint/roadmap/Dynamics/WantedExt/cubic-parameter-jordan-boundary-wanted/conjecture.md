@@ -15,6 +15,11 @@ Jordan curve. Cites [AMR-052-0019].
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Jordan Curve](is-jordan-curve.md)
+- [Is Parameter Component](is-parameter-component.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Dynamics.CubicParameterJordanBoundaryWanted](../../../../sources/v2/WantedExt.md)

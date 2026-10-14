@@ -13,7 +13,7 @@ The initial values zero and one recover Mathlib's Fibonacci numbers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gibonacci Number](gibonacci-number.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Number of columns of the product represented by a parenthesization.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parenthesization](parenthesization.md)
 
 ## Sources
 

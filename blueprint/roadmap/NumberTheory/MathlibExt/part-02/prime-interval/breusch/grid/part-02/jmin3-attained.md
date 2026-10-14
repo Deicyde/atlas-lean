@@ -13,7 +13,7 @@ The level `G ≥ 3` is attained at `j = 963`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G9](../part-01/g9.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ Unlinking retains the complete selected record.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sentinel Delete](sentinel-delete.md)
+
+## Proof depends on
+
+- [Sentinel Delete ret](sentinel-delete-ret.md)
 
 ## Sources
 

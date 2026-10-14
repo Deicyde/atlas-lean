@@ -14,7 +14,11 @@ maximal-adically complete local DVR lifts uniquely.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residue Field Map Alg Hom](../dvr/residue-field-map-alg-hom.md)
+
+## Proof depends on
+
+- [Residue Field Map Alg Hom bijective](../dvrbijective/residue-field-map-alg-hom-bijective.md)
 
 ## Sources
 

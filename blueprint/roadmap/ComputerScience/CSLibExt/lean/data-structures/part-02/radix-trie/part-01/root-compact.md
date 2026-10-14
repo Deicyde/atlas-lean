@@ -15,7 +15,7 @@ radix trie rules out. The root is exempt, since it has no incoming edge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Radix Trie](radix-trie.md)
 
 ## Sources
 

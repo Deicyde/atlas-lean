@@ -17,6 +17,10 @@ Cites: Hayman (2018), Problem 2.90; https://arxiv.org/abs/1809.07200.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Analytic Circle Diffeo](analytic-circle-diffeo.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HermanProblem290Wanted](../../../../../sources/v2/WantedExt.md)

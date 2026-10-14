@@ -16,7 +16,11 @@ matrices of Fréchet derivatives, then apply `fderiv_comp` and `LinearMap.toMatr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobian Matrix](jacobian-matrix.md)
+
+## Proof depends on
+
+- [Jacobian Matrix eq to Matrix' fderiv](jacobian-matrix-eq-to-matrix-fderiv.md)
 
 ## Sources
 

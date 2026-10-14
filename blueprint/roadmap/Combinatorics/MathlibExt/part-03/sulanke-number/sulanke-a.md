@@ -16,6 +16,10 @@ read as `0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sulanke B](sulanke-b.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SulankeNumber](../../../../../sources/v2/MathlibExt.md)

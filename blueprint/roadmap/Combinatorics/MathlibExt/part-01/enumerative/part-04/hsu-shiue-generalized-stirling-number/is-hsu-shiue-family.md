@@ -21,6 +21,10 @@ fixes the otherwise unconstrained initial row (source statement
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized Falling Factorial](generalized-falling-factorial.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.HsuShiueGeneralizedStirlingNumber](../../../../../../../sources/v2/MathlibExt.md)

@@ -14,6 +14,10 @@ Bergman space `A^2` membership: analytic on the disc and square-integrable.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Disc](disc.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.BergmanCyclicityWanted](../../../../../sources/v2/WantedExt.md)

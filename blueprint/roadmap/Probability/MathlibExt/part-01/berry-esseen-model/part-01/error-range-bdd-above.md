@@ -13,7 +13,12 @@ The ordinary real supremum is taken over a nonempty bounded range.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normal CDF](normal-cdf.md)
+- [Normalized Law](normalized-law.md)
+
+## Proof depends on
+
+- [Pointwise error le one](pointwise-error-le-one.md)
 
 ## Sources
 

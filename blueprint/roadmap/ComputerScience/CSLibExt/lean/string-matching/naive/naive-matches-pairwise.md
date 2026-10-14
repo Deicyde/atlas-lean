@@ -13,7 +13,11 @@ Reported offsets are strictly increasing, so each occurrence is reported only on
 
 ## Depends on
 
-This node has no prerequisites.
+- [Naive Matches](naive-matches.md)
+
+## Proof depends on
+
+- [Naive Matches ret](naive-matches-ret.md)
 
 ## Sources
 

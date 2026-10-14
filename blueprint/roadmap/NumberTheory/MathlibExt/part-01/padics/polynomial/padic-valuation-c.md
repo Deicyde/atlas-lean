@@ -13,7 +13,12 @@ The polynomial valuation of a nonzero constant is its integer valuation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padic Valuation](padic-valuation.md)
+
+## Proof depends on
+
+- [Le padic Valuation](le-padic-valuation.md)
+- [Padic Valuation le coeff](padic-valuation-le-coeff.md)
 
 ## Sources
 

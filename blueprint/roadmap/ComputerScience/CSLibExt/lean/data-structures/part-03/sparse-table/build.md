@@ -15,7 +15,11 @@ bound once (`data`) and shared between level zero and the `data` field.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sparse Table](sparse-table.md)
+
+## Proof depends on
+
+- [Build Step](build-step.md)
 
 ## Sources
 

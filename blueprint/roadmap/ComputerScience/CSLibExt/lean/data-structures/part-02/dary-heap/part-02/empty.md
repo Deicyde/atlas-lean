@@ -12,7 +12,15 @@ The empty heap, normalizing a requested arity below two to two.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Min Heap](dary-min-heap.md)
+
+## Proof depends on
+
+- [Dary Heap Ordered](../part-01/dary-heap-ordered.md)
+- [Dary Parent](../part-01/dary-parent.md)
+- [Dary Parent lt size](../part-01/dary-parent-lt-size.md)
+- [Normalized Arity](../part-01/normalized-arity.md)
+- [Normalized Arity valid](../part-01/normalized-arity-valid.md)
 
 ## Sources
 

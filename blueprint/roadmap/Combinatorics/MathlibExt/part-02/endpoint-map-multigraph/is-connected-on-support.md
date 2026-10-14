@@ -14,6 +14,11 @@ The edge set `F` is connected on its support.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Adjacent Using](adjacent-using.md)
+- [Support](support.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.EndpointMapMultigraph](../../../../../sources/v2/MathlibExt.md)

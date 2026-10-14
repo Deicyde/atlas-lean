@@ -14,6 +14,10 @@ Single-sequence specialization from the source, with second sequence `0 ^ n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hurwitz Transform](hurwitz-transform.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.HurwitzTransform](../../../../sources/v2/MathlibExt.md)

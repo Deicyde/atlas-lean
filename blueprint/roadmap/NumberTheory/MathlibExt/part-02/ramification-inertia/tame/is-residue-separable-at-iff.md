@@ -13,7 +13,7 @@ The helper unfolds to separability under the canonical algebra.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Residue Separable At](is-residue-separable-at.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ product space is convex. Completeness is not needed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Numerical Range](numerical-range.md)
 
 ## Sources
 

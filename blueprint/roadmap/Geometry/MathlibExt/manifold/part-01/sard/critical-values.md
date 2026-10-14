@@ -14,6 +14,10 @@ Image of `criticalSet` under `f`, i.e., the critical values.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Critical Set](critical-set.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.Sard](../../../../../../sources/v2/MathlibExt.md)

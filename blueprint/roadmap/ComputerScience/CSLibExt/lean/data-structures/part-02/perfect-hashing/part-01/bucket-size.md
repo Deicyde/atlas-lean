@@ -12,7 +12,7 @@ The number of occupied slots of bucket `i`, the `nᵢ` of the FKS analysis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](perfect-hashing.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ The empty heap represents the empty multiset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elements](elements.md)
+- [Empty](empty.md)
+
+## Proof depends on
+
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
+- [Elements](../part-01/elements.md)
 
 ## Sources
 

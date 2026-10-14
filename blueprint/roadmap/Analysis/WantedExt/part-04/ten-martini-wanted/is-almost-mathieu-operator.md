@@ -13,7 +13,7 @@ with frequency `alpha`, coupling `lambda`, and phase `theta`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ell Two](ell-two.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ Repackaging the Dold congruences and non-negativity into
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dold Realizable](dold-realizable.md)
 
 ## Sources
 

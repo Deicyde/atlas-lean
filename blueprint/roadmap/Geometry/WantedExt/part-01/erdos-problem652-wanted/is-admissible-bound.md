@@ -16,6 +16,10 @@ the bound.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Small Kth](has-small-kth.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.ErdosProblem652Wanted](../../../../../sources/v2/WantedExt.md)

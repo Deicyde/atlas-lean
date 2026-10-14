@@ -13,7 +13,7 @@ Counted square-matrix initialization executes exactly `n²` assignments.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fill Cells](fill-cells.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ Zero-field ferromagnetic Ising Hamiltonian on the periodic box.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ising Site](ising-site.md)
+
+## Proof depends on
+
+- [Right Neighbour](right-neighbour.md)
+- [Spin Value](spin-value.md)
+- [Up Neighbour](up-neighbour.md)
 
 ## Sources
 

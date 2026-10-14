@@ -14,6 +14,10 @@ lean: MathlibExt.NumberTheory.ErdosProblem822Wanted.conjecture
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lower Density](../../../../Data/MathlibExt/set/density/lower-density.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem822Wanted](../../../../../sources/v2/WantedExt.md)

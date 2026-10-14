@@ -13,7 +13,7 @@ The counted copy returns the unchanged saved matrix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Copy Cells](copy-cells.md)
 
 ## Sources
 

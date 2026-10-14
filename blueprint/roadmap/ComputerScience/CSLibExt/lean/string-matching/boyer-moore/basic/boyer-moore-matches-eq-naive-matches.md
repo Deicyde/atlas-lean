@@ -14,7 +14,12 @@ This is a result specification bridge, not a naive execution path.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boyer Moore Matches](boyer-moore-matches.md)
+
+## Proof depends on
+
+- [Boyer Moore Matches pairwise](boyer-moore-matches-pairwise.md)
+- [Mem boyer Moore Matches iff](mem-boyer-moore-matches-iff.md)
 
 ## Sources
 

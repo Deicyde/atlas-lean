@@ -14,7 +14,13 @@ adaptation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convex Cover Area Infimum](../part-01/convex-cover-area-infimum.md)
+
+## Proof depends on
+
+- [Is Convex Universal Cover](../part-01/is-convex-universal-cover.md)
+- [Closed Ball one is Convex Universal Cover](closed-ball-one-is-convex-universal-cove.md)
+- [Convex Cover Areas](../part-01/convex-cover-areas.md)
 
 ## Sources
 

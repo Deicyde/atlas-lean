@@ -13,7 +13,7 @@ Coordinate restriction is surjective (extend by zero off `S`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restrict](restrict.md)
 
 ## Sources
 

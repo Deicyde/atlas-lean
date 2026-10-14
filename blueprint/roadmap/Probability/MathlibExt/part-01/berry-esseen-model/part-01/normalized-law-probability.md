@@ -13,7 +13,14 @@ The normalized law is a probability measure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Standardized Law](is-standardized-law.md)
+- [Normalized Law](normalized-law.md)
+
+## Proof depends on
+
+- [Iid Law](iid-law.md)
+- [Iid Law probability](iid-law-probability.md)
+- [Normalized Sum](normalized-sum.md)
 
 ## Sources
 

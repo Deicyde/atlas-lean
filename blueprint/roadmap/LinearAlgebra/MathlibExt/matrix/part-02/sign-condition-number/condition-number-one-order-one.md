@@ -13,7 +13,11 @@ The order-one identity is nonsingular and has condition number one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Condition Number](condition-number.md)
+
+## Proof depends on
+
+- [Condition Number eq ratio of smallest ne zero](condition-number-eq-ratio-of-smallest-ne.md)
 
 ## Sources
 

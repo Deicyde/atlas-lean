@@ -12,7 +12,12 @@ Build a root by inserting the list from right to left.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Root](root.md)
+
+## Proof depends on
+
+- [Empty](empty.md)
+- [Insert](insert.md)
 
 ## Sources
 

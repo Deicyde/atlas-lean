@@ -16,6 +16,11 @@ many integers outside the sumset.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Additive Basis Order2](is-additive-basis-order2.md)
+- [Add Sumset](add-sumset.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem869Wanted](../../../../../sources/v2/WantedExt.md)

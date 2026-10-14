@@ -16,6 +16,10 @@ sequence when the discriminant is a nonzero quadratic residue.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized Bi Periodic Fibonacci period dvd general](generalized-bi-periodic-fibonacci-period.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Recurrences.GeneralizedBiPeriodicFibonacciPeriod](../../../../../../../sources/v2/MathlibExt.md)

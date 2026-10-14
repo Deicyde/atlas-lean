@@ -13,7 +13,13 @@ Source-order repeated INSERT has the frozen summed event bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Min Queue](../basic/indexed-min-queue.md)
+- [Empty](../basic/empty.md)
+- [Insert](../basic/insert.md)
+
+## Proof depends on
+
+- [Insert time](insert-time.md)
 
 ## Sources
 

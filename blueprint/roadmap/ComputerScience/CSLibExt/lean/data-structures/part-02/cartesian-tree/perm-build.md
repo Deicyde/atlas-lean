@@ -13,7 +13,12 @@ The elements of the Cartesian tree are a permutation of the input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inorder](../binary-search-tree/part-01/inorder.md)
+- [Build](build.md)
+
+## Proof depends on
+
+- [Inorder build](inorder-build.md)
 
 ## Sources
 

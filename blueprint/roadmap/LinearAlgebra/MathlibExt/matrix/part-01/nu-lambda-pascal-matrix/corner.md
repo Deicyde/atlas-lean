@@ -15,7 +15,7 @@ equals one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Nu Lambda Pascal Matrix](is-nu-lambda-pascal-matrix.md)
 
 ## Sources
 

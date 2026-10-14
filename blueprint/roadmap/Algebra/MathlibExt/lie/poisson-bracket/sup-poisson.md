@@ -13,7 +13,8 @@ The supremum of two Poisson ideals below `J` is Poisson below `J`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Poisson Ideal](is-poisson-ideal.md)
+- [Poisson Bracket](poisson-bracket.md)
 
 ## Sources
 

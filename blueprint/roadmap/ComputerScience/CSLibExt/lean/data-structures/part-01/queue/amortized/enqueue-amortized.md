@@ -13,7 +13,8 @@ Enqueueing has amortized charge two.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Enqueue](enqueue.md)
+- [Potential](potential.md)
 
 ## Sources
 

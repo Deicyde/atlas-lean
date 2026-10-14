@@ -13,7 +13,11 @@ The numerical range of a bounded operator on a complex Hilbert space is convex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Numerical Range](numerical-range.md)
+
+## Proof depends on
+
+- [Toeplitz hausdorff general](toeplitz-hausdorff-general.md)
 
 ## Sources
 

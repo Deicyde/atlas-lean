@@ -13,7 +13,12 @@ PNT for AP via the `Nat.primeCountingMod` residue-class counting API.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Counting Mod](../../part-02/prime-counting/part-02/residue-class/prime-counting-mod.md)
+
+## Proof depends on
+
+- [Prime number theorem arithmetic progression](prime-number-theorem-arithmetic-progress.md)
+- [Prime Counting Mod eq card filter range](../../part-02/prime-counting/part-02/residue-class/prime-counting-mod-eq-card-filter-range.md)
 
 ## Sources
 

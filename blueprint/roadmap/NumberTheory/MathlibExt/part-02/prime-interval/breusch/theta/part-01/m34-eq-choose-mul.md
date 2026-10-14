@@ -13,7 +13,11 @@ lean: MathlibExt.NumberTheory.BreuschWanted.Internal.M34_eq_choose_mul
 
 ## Depends on
 
-This node has no prerequisites.
+- [M34](m34.md)
+
+## Proof depends on
+
+- [M34 eq mul](m34-eq-mul.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ coupling `π` of `p` and `q` is supported on pairs `x ≤ y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Upper Set](is-upper-set.md)
 
 ## Sources
 

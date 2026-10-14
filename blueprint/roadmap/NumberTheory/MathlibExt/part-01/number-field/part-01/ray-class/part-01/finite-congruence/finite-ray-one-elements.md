@@ -14,6 +14,11 @@ Finite ray-one subgroup: ray elements congruent to `1` at finite places.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inv](inv.md)
+- [Mul](mul.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.FiniteCongruence](../../../../../../../../../sources/v2/MathlibExt.md)

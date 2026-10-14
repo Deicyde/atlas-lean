@@ -13,7 +13,11 @@ The chained bound `a < n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Deza With](is-deza-with.md)
+
+## Proof depends on
+
+- [A le k](a-le-k.md)
 
 ## Sources
 

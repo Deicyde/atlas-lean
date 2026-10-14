@@ -15,6 +15,11 @@ The real-valued binomial convolution identity, before descending to `ℚ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cb lucas binet](cb-lucas-binet.md)
+- [Sqrt5 ne](sqrt5-ne.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ChurchBicknellFibonacciConvolution](../../../../../sources/v2/MathlibExt.md)

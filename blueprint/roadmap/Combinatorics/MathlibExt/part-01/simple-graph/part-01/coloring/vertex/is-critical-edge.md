@@ -14,6 +14,10 @@ An edge is critical if deleting it reduces the chromatic number.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Critical Edges](is-critical-edges.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Coloring.Vertex](../../../../../../../../sources/v2/MathlibExt.md)

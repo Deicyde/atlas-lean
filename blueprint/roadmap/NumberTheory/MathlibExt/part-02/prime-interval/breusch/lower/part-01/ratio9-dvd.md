@@ -13,7 +13,14 @@ The denominator of `ratio9` divides its numerator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [N10m](n10m.md)
+- [N1m](n1m.md)
+- [N9m](n9m.md)
+- [Q9](../../grid/part-01/q9.md)
+
+## Proof depends on
+
+- [Nadd9](nadd9.md)
 
 ## Sources
 

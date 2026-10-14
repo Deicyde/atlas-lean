@@ -14,7 +14,12 @@ number of elements of `Y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Shape](partition-shape.md)
+
+## Proof depends on
+
+- [Ordered Set Partition](ordered-set-partition.md)
+- [Sends Partition](sends-partition.md)
 
 ## Sources
 

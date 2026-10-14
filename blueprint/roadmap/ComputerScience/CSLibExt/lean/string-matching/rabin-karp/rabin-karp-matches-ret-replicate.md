@@ -13,7 +13,13 @@ Repeated-symbol words report every possible shift, including overlaps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rabin Karp Matches](rabin-karp-matches.md)
+
+## Proof depends on
+
+- [Naive Matches](../naive/naive-matches.md)
+- [Naive Matches ret replicate](../naive/naive-matches-ret-replicate.md)
+- [Rabin Karp Matches ret eq naive Matches](rabin-karp-matches-ret-eq-naive-matches.md)
 
 ## Sources
 

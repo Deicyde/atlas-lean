@@ -13,7 +13,7 @@ Complete carried-store characteristic, without freshness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sentinel Insert](sentinel-insert.md)
 
 ## Sources
 

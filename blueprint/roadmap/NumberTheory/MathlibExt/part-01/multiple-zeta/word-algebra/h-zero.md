@@ -14,6 +14,10 @@ Subalgebra `H^0` of the free algebra.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Word Submonoid HZero](word-submonoid-hzero.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.MultipleZeta.WordAlgebra](../../../../../../sources/v2/MathlibExt.md)

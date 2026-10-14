@@ -13,7 +13,7 @@ One is `k`-full vacuously: it is nonzero and has no prime divisors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KFull](is-kfull.md)
 
 ## Sources
 

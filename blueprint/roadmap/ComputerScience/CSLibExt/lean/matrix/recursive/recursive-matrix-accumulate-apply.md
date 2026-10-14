@@ -13,7 +13,7 @@ Each actual returned entry is the saved entry plus its canonical finite dot prod
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recursive Matrix Accumulate](recursive-matrix-accumulate.md)
 
 ## Sources
 

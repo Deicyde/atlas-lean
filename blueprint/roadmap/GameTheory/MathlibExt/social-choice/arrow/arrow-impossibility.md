@@ -14,7 +14,14 @@ voter type is dictatorial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dictatorial](is-dictatorial.md)
+- [Is IIA](is-iia.md)
+- [Is Pareto](is-pareto.md)
+- [Social Welfare Function](social-welfare-function.md)
+
+## Proof depends on
+
+- [Arrow impossibility general](arrow-impossibility-general.md)
 
 ## Sources
 

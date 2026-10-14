@@ -13,7 +13,11 @@ Reset refines the unsigned numeric constant zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reset](reset.md)
+
+## Proof depends on
+
+- [Reset to List](reset-to-list.md)
 
 ## Sources
 

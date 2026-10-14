@@ -18,6 +18,10 @@ complete length spaces `(M, d₁)` and `(M, d₂)` over the same `M` with
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [OWR1319022 Data](owr1319022-data.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.CocompactAsymptoticallyEquivalentMetricsWanted](../../../../../sources/v2/WantedExt.md)

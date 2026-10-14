@@ -14,6 +14,11 @@ The supremum over actual full-dimensional convex bodies in dimension n.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Full Dimensional Body](full-dimensional-body.md)
+- [Body Isotropic Constant](body-isotropic-constant.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Geometry.IsotropicConstant](../../../../../../sources/v2/MathlibExt.md)

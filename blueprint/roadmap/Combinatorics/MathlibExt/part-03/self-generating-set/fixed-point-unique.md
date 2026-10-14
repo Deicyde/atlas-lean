@@ -13,7 +13,13 @@ Under strict growth, the fixed-point self-generating set is unique.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fixed Point](fixed-point.md)
+- [Strict Growth](strict-growth.md)
+
+## Proof depends on
+
+- [Generated Set](generated-set.md)
+- [Fixed Point eq generated](fixed-point-eq-generated.md)
 
 ## Sources
 

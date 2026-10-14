@@ -12,7 +12,7 @@ The children of a binomial tree, stored in decreasing rank order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Tree](binomial-tree.md)
 
 ## Sources
 

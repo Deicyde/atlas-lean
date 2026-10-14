@@ -15,7 +15,11 @@ infinite-degree multigraph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](../part-01/edge-indexed-multigraph.md)
+
+## Proof depends on
+
+- [Degree](degree.md)
 
 ## Sources
 

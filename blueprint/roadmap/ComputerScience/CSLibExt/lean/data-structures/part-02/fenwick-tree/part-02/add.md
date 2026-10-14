@@ -17,7 +17,12 @@ size, which always suffices because visited indices strictly increase.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fenwick Tree](../part-01/fenwick-tree.md)
+
+## Proof depends on
+
+- [Lowbit](../part-01/lowbit.md)
+- [Size](../part-01/size.md)
 
 ## Sources
 

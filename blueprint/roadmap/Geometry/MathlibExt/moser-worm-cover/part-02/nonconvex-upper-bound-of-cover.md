@@ -14,7 +14,13 @@ adaptation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Universal Cover](../part-01/is-universal-cover.md)
+- [Nonconvex Worm Cover Constant](nonconvex-worm-cover-constant.md)
+
+## Proof depends on
+
+- [Cover Area Infimum](../part-01/cover-area-infimum.md)
+- [Cover Areas](../part-01/cover-areas.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ Farey carriers are monotone in their order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Finset](farey-finset.md)
+
+## Proof depends on
+
+- [Mem farey Finset iff](mem-farey-finset-iff.md)
 
 ## Sources
 

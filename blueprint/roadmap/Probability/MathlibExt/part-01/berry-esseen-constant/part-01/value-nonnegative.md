@@ -13,7 +13,13 @@ The optimal coefficient is nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Value](value.md)
+
+## Proof depends on
+
+- [Is Admissible](is-admissible.md)
+- [Admissible nonempty](admissible-nonempty.md)
+- [Is Admissible nonnegative](is-admissible-nonnegative.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ Every complete cell outside the two updated neighbors is unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sentinel Delete](sentinel-delete.md)
+
+## Proof depends on
+
+- [Sentinel Delete ret](sentinel-delete-ret.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ First-return probability at time `n` for [AMR-011-0033] Question 33.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Cayley Graph](regular-cayley-graph.md)
 
 ## Sources
 

@@ -17,6 +17,11 @@ Proves `Wanted` entry `ramanujan_part1_ch9_entry31_ramanujansum`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter9 Entry16 Difference Term](../part-03/part1-ch9-entry16-tanseries/chapter9-entry16-difference-term.md)
+- [Ramanujan part1 ch9 entry16 tanseries](../part-03/part1-ch9-entry16-tanseries/ramanujan-part1-ch9-entry16-tanseries.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch9Entry31Ramanujansum](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,9 @@ Insertion preserves the summary invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](van-emde-boas.md)
+- [Valid](valid.md)
+- [Insert](insert.md)
 
 ## Sources
 

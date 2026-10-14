@@ -12,7 +12,12 @@ Sum of the unit costs of a script.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edit Script](edit-script.md)
+
+## Proof depends on
+
+- [Edit Step](edit-step.md)
+- [Cost](cost.md)
 
 ## Sources
 

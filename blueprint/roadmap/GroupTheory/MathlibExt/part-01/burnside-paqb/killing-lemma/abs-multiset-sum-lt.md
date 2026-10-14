@@ -16,6 +16,10 @@ not all equal.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Abs add two ne unit lt two](abs-add-two-ne-unit-lt-two.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.KillingLemma](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,14 @@ Directional derivatives of the support function are bounded by any Lipschitz con
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dir Deriv](dir-deriv.md)
+- [Supp Func](supp-func.md)
+
+## Proof depends on
+
+- [Dir Quot](dir-quot.md)
+- [Dir Quot bdd Below](dir-quot-bdd-below.md)
+- [Supp Func convex](supp-func-convex.md)
 
 ## Sources
 

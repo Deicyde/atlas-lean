@@ -13,7 +13,13 @@ Deleting a successor erases the corresponding content entry.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../part-01/node.md)
+- [Contents](../part-01/contents.md)
+- [Delete After](delete-after.md)
+
+## Proof depends on
+
+- [Delete After payload](delete-after-payload.md)
 
 ## Sources
 

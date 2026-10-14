@@ -14,6 +14,10 @@ Interior of the Newton polygon.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Newton Polygon](newton-polygon.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Convex.NewtonPolygon](../../../../../../sources/v2/MathlibExt.md)

@@ -16,6 +16,10 @@ from `Nat.factorization_choose_of_lt_three_mul`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Choose eq prod small prime powers of no large](choose-eq-prod-small-prime-powers-of-no.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.ChooseFactorization](../../../../../../sources/v2/MathlibExt.md)

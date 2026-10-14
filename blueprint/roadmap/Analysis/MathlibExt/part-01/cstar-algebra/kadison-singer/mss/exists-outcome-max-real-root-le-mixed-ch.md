@@ -14,7 +14,12 @@ root of the mixed characteristic polynomial of the covariance matrices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Real Root](../../../../../../Algebra/MathlibExt/polynomial/real-rooted/max-real-root.md)
+
+## Proof depends on
+
+- [Is Real Rooted](../../../../../../Algebra/MathlibExt/polynomial/real-rooted/is-real-rooted.md)
+- [Exists max Real Root le weighted Sum of segment real Rooted](../../../../../../Algebra/MathlibExt/polynomial/interlacing/exists-max-real-root-le-weighted-sum-of-2.md)
 
 ## Sources
 

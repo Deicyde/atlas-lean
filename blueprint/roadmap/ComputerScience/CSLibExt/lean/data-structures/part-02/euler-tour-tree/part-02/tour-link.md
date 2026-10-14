@@ -14,7 +14,14 @@ prefix, and the second tour is inserted whole before the final return to the roo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Link](../part-01/link.md)
+- [Root](../part-01/root.md)
+- [Tour](../part-01/tour.md)
+
+## Proof depends on
+
+- [Tour node](../part-01/tour-node.md)
 
 ## Sources
 

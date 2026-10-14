@@ -13,7 +13,12 @@ The real infimum satisfies the actual source inequality.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Value](value.md)
+
+## Proof depends on
+
+- [Is Admissible](is-admissible.md)
+- [Admissible nonempty](admissible-nonempty.md)
 
 ## Sources
 

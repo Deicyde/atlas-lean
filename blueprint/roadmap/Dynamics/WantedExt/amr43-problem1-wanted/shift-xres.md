@@ -12,7 +12,14 @@ lean: MathlibExt.Dynamics.AMR43Problem1Wanted.shiftXRes
 
 ## Depends on
 
-This node has no prerequisites.
+- [Aperiodic X](aperiodic-x.md)
+- [X](x.md)
+
+## Proof depends on
+
+- [Full Shift Space](../../MathlibExt/symbolic-dynamics/full-shift/full-shift-space.md)
+- [Shift Homeomorph](../../MathlibExt/symbolic-dynamics/full-shift/shift-homeomorph.md)
+- [Unit Shift](../../MathlibExt/symbolic-dynamics/full-shift/unit-shift.md)
 
 ## Sources
 

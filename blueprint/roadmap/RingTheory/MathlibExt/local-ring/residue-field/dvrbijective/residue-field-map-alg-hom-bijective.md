@@ -15,7 +15,11 @@ Henselian.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residue Field Map Alg Hom](../dvr/residue-field-map-alg-hom.md)
+
+## Proof depends on
+
+- [Residue Field Map Alg Hom injective](../dvr/residue-field-map-alg-hom-injective.md)
 
 ## Sources
 

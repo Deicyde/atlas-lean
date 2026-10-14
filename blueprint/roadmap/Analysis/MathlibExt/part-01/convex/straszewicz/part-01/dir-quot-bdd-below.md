@@ -13,7 +13,11 @@ Difference quotients are bounded below (slope comparison on the line).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dir Quot](dir-quot.md)
+
+## Proof depends on
+
+- [Convex On line](convex-on-line.md)
 
 ## Sources
 

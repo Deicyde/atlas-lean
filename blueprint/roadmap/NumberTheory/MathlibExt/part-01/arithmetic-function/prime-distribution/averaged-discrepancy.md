@@ -14,6 +14,10 @@ The sum of primitive-residue discrepancies over positive moduli at most `Q`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Primitive Discrepancy](primitive-discrepancy.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ArithmeticFunction.PrimeDistribution](../../../../../../sources/v2/MathlibExt.md)

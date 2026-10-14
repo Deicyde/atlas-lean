@@ -13,7 +13,7 @@ Every class member is conjugate to its class representative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Class Rep](../class-sum/class-rep.md)
 
 ## Sources
 

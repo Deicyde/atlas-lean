@@ -13,7 +13,8 @@ Explicit total value on the empty admissible family.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sat](sat.md)
+- [Sat Counts](sat-counts.md)
 
 ## Sources
 

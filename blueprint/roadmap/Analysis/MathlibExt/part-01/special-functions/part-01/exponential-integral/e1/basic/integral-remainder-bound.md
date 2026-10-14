@@ -16,6 +16,13 @@ times the outer-sector cosecant factor.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integrable On exp neg mul pow](integrable-on-exp-neg-mul-pow.md)
+- [Integral exp neg mul pow Ioi](integral-exp-neg-mul-pow-ioi.md)
+- [Outer sector distance](outer-sector-distance.md)
+- [Outer sector sin abs arg pos](outer-sector-sin-abs-arg-pos.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.ExponentialIntegral.E1.Basic](../../../../../../../../../sources/v2/MathlibExt.md)

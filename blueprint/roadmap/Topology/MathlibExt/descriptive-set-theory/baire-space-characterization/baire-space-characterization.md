@@ -14,7 +14,7 @@ has empty interior.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Zero Dimensional Space](is-zero-dimensional-space.md)
 
 ## Sources
 

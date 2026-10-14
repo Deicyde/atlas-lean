@@ -12,7 +12,11 @@ The set `𝕍_{d,n}(A)` of degree-`d` hypersurfaces in `ℙⁿ` with height at m
 
 ## Depends on
 
-This node has no prerequisites.
+- [𝕍](untitled-2.md)
+
+## Proof depends on
+
+- [Height](height.md)
 
 ## Sources
 

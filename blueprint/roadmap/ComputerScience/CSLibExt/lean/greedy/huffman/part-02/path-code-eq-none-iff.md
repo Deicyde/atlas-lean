@@ -13,7 +13,13 @@ A symbol has no root-to-leaf path exactly when it is not a leaf symbol.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](../part-01/huffman-tree.md)
+- [Path Code?](../part-01/path-code.md)
+- [Symbols](../part-01/symbols.md)
+
+## Proof depends on
+
+- [Weighted Leaves](../part-01/weighted-leaves.md)
 
 ## Sources
 

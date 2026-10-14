@@ -14,7 +14,13 @@ minimum of admissible color counts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cocolorable](cocolorable.md)
+- [Cochromatic Number](cochromatic-number.md)
+
+## Proof depends on
+
+- [Cochromatic Number eq s Inf](cochromatic-number-eq-s-inf.md)
+- [Cocolorable of fintype](cocolorable-of-fintype.md)
 
 ## Sources
 

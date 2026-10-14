@@ -13,7 +13,7 @@ The principal part is meromorphic at every point.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Principal Part](principal-part.md)
 
 ## Sources
 

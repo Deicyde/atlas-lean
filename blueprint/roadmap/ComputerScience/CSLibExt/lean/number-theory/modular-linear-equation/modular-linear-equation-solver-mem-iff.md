@@ -13,7 +13,11 @@ Membership characterizes exactly the least nonnegative solutions of the congruen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Linear Equation Solver](modular-linear-equation-solver.md)
+
+## Proof depends on
+
+- [Modular Linear Equation Solver ret](modular-linear-equation-solver-ret.md)
 
 ## Sources
 

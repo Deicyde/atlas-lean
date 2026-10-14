@@ -13,7 +13,11 @@ Both returned extrema occur in the input and bound all its members.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Max](min-max.md)
+
+## Proof depends on
+
+- [Min Max ret](min-max-ret.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ finds it among the representatives, otherwise the representative successor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grouped YFast Trie](grouped-yfast-trie.md)
+
+## Proof depends on
+
+- [Member](../../xfast-trie/part-01/member.md)
+- [Successor](../../xfast-trie/part-01/successor.md)
 
 ## Sources
 

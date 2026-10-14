@@ -14,7 +14,20 @@ to its two-minimum merge trace.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](../../huffman/part-01/huffman-tree.md)
+- [Admissible](admissible.md)
+- [Weighted Path Length](../../huffman/part-01/weighted-path-length.md)
+- [Merge Trace](../part-01/merge-trace.md)
+
+## Proof depends on
+
+- [Erase Symbols](../part-01/erase-symbols.md)
+- [Erase Symbols path Cost](../part-01/erase-symbols-path-cost.md)
+- [Erase Symbols weights](../part-01/erase-symbols-weights.md)
+- [Weighted Leaves](../../huffman/part-01/weighted-leaves.md)
+- [Le path Cost](../part-01/le-path-cost.md)
+- [Path Cost](../part-01/path-cost.md)
+- [Weights](../part-01/weights.md)
 
 ## Sources
 

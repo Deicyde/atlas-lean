@@ -13,7 +13,12 @@ Explicit partial-sum interpolation formula for `donskerProcess`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Donsker Process](donsker-process.md)
+
+## Proof depends on
+
+- [Donsker Weight](donsker-weight.md)
+- [Donsker Weight CM](donsker-weight-cm.md)
 
 ## Sources
 

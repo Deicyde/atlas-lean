@@ -17,7 +17,7 @@ source domain `k ≥ 2` and is unused by the proof.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Josephus](josephus.md)
 
 ## Sources
 

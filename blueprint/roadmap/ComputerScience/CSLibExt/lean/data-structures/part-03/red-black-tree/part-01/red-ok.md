@@ -12,7 +12,12 @@ The red invariant: no red node has a red child.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Color](color.md)
+- [Color Of](color-of.md)
 
 ## Sources
 

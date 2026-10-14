@@ -16,7 +16,8 @@ for every `r ≥ 1` and `s ≥ 0`, the sequence
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Power Seq](binomial-power-seq.md)
+- [Dold Realizable](dold-realizable.md)
 
 ## Sources
 

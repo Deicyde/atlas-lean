@@ -14,7 +14,11 @@ standard basis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hessian Matrix](hessian-matrix.md)
+
+## Proof depends on
+
+- [Hessian Matrix apply](hessian-matrix-apply.md)
 
 ## Sources
 

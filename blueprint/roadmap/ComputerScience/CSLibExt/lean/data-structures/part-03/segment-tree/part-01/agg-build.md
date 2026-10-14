@@ -13,7 +13,15 @@ The root aggregate of a tree built from a list is the sum of that list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Agg](agg.md)
+- [Build](build.md)
+
+## Proof depends on
+
+- [Agg eq sum to List](agg-eq-sum-to-list.md)
+- [To List](to-list.md)
+- [To List build](to-list-build.md)
+- [Valid build](valid-build.md)
 
 ## Sources
 

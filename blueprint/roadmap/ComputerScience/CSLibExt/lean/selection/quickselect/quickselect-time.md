@@ -13,7 +13,7 @@ Quickselect uses at most `n * (n - 1) / 2` comparisons on a list of length `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quickselect](quickselect.md)
 
 ## Sources
 

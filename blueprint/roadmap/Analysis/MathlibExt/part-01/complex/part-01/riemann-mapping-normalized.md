@@ -20,6 +20,12 @@ uniqueness on U.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Locally Uniformly Bounded On](normal-families/is-locally-uniformly-bounded-on.md)
+- [Is Locally Uniformly Bounded On of forall norm le](normal-families/is-locally-uniformly-bounded-on-of-foral.md)
+- [Montel](normal-families/montel.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.RiemannMapping](../../../../../../sources/v2/MathlibExt.md)

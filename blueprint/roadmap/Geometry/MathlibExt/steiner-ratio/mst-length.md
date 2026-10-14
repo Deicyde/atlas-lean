@@ -13,7 +13,11 @@ finite and, for nonempty `V`, nonempty).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
+
+## Proof depends on
+
+- [Spanning Tree Lengths](spanning-tree-lengths.md)
 
 ## Sources
 

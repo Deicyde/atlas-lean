@@ -13,7 +13,11 @@ Evaluation at the square of a prime is zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rademacher Function](rademacher-function.md)
+
+## Proof depends on
+
+- [Rademacher Function eq zero of not squarefree](rademacher-function-eq-zero-of-not-squar.md)
 
 ## Sources
 

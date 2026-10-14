@@ -13,7 +13,7 @@ The structure morphism of a variety is quasi-separated (being separated).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Variety](is-variety.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ The final saved revenue is exactly the existing bottom-up solver's result.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bottom Up Cut Rod](bottom-up-cut-rod.md)
+- [Extended Bottom Up Cut Rod](extended-bottom-up-cut-rod.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ Product formula for the mesh-pattern generating function from its recurrence and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mesh Pattern Generating Function eq factorial mul prod general](mesh-pattern-generating-function-eq-fact.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MeshPatternGeneratingFunction](../../../../../../../sources/v2/MathlibExt.md)

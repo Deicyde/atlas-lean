@@ -13,7 +13,16 @@ The empty tree is a B-tree of every minimum degree `t ≥ 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is BTree](is-btree.md)
+- [Empty](empty.md)
+
+## Proof depends on
+
+- [BTree](../part-01/btree.md)
+- [Ordered](../part-01/ordered.md)
+- [Valid Root](../part-01/valid-root.md)
+- [Flatten](../part-01/flatten.md)
+- [Flatten Aux](../part-01/flatten-aux.md)
 
 ## Sources
 

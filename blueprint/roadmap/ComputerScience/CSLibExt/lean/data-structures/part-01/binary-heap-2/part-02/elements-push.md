@@ -13,7 +13,14 @@ Insertion adds exactly one occurrence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Heap](min-heap.md)
+- [Elements](elements.md)
+- [Push](push.md)
+
+## Proof depends on
+
+- [Sift Up](../part-01/sift-up.md)
+- [Sift Up perm](../part-01/sift-up-perm.md)
 
 ## Sources
 

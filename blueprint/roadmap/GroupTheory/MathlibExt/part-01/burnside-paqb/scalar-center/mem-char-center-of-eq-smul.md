@@ -13,7 +13,7 @@ A scalar action puts an element in the scalar center.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Char Center](char-center.md)
 
 ## Sources
 

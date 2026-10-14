@@ -13,7 +13,25 @@ The selected edge list is ordered by weight and then by original input ordinal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Graph](../part-01/graph.md)
+- [Key LE](../part-01/key-le.md)
+- [Weighted Edge](../part-01/weighted-edge.md)
+- [Key](../part-01/key.md)
+- [Kruskal](kruskal.md)
+
+## Proof depends on
+
+- [State](../part-01/state.md)
+- [Step](step.md)
+- [Initial Forest](../part-01/initial-forest.md)
+- [Ordered Edges](../part-01/ordered-edges.md)
+- [Scan](scan.md)
+- [Sort Edges](../part-01/sort-edges.md)
+- [Valid Edges](../part-01/valid-edges.md)
+- [Equivalent](../../../data-structures/part-03/union-find/part-01/equivalent.md)
+- [Forest](../../../data-structures/part-03/union-find/part-01/forest.md)
+- [Find](../../../data-structures/part-03/union-find/part-01/find.md)
+- [Union](../../../data-structures/part-03/union-find/part-01/union.md)
 
 ## Sources
 

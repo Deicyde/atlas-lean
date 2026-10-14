@@ -13,7 +13,11 @@ The longest-common-prefix decomposition, stated with the drop remainders.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Common Prefix](common-prefix.md)
+
+## Proof depends on
+
+- [Common Prefix spec](common-prefix-spec.md)
 
 ## Sources
 

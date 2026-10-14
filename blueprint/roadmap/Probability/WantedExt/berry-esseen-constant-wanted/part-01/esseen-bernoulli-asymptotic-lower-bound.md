@@ -17,6 +17,13 @@ large sample sizes; an original Esseen primary comparison remains a source gap.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Bernoulli Law](../../../MathlibExt/part-01/berry-esseen-constant/part-01/is-bernoulli-law.md)
+- [Esseen Constant](../../../MathlibExt/part-01/berry-esseen-constant/part-01/esseen-constant.md)
+- [Kolmogorov Error](../../../MathlibExt/part-01/berry-esseen-model/part-01/kolmogorov-error.md)
+- [Third Moment](../../../MathlibExt/part-01/berry-esseen-model/part-01/third-moment.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Probability.BerryEsseenConstantWanted](../../../../../sources/v2/WantedExt.md)

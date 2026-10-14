@@ -13,7 +13,12 @@ and carrying the link forward, as in binary addition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
+
+## Proof depends on
+
+- [Degree](../part-01/degree.md)
+- [Link](../part-01/link.md)
 
 ## Sources
 

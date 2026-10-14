@@ -13,7 +13,7 @@ Given a direction `ξ ∈ S d` and `t ∈ ℝ`, we define the set
 
 ## Depends on
 
-This node has no prerequisites.
+- [S](s.md)
 
 ## Sources
 

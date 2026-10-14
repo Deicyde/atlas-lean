@@ -13,7 +13,10 @@ decreasing tuples for its reversed index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
+- [Depth](../index/depth.md)
+- [Reverse](reverse.md)
+- [Strict Increasing Tuple](strict-increasing-tuple.md)
 
 ## Sources
 

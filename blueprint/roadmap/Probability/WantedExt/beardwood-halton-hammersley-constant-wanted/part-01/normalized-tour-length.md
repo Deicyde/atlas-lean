@@ -13,7 +13,11 @@ zero branch makes the degenerate input auditable and does not affect a limit alo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar Point](planar-point.md)
+
+## Proof depends on
+
+- [Shortest Tour Length](shortest-tour-length.md)
 
 ## Sources
 

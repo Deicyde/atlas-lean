@@ -13,7 +13,7 @@ An identity is absent exactly when no heap entry carries it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Min Queue](../basic/indexed-min-queue.md)
 
 ## Sources
 

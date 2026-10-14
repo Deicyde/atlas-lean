@@ -14,7 +14,7 @@ the specialized power of the logarithmic majorant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Growth](coefficient-exponential-family/wiman-growth.md)
 
 ## Sources
 

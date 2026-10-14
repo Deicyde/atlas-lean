@@ -16,6 +16,14 @@ through the boundary circle, and a continuous exponential lift.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lagrange Series Coefficient](lagrange-series-coefficient.md)
+- [Lagrange Series Coefficient add](lagrange-series-coefficient-add.md)
+- [Lagrange Series Coefficient of ne zero](lagrange-series-coefficient-of-ne-zero.md)
+- [Lagrange Series Coefficient zero](lagrange-series-coefficient-zero.md)
+- [Exp Of Continuous Add Mul](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-01/exists-eq-exp-mul-of-continuous-add-mul.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry14LagrangeSeries](../../../../../../../sources/v2/MathlibExt.md)

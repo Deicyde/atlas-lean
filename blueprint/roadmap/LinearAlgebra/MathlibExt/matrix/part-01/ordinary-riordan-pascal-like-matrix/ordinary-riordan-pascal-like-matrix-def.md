@@ -16,7 +16,7 @@ definition unfolds to the finite sum over `j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordinary Riordan Pascal Like Matrix](ordinary-riordan-pascal-like-matrix.md)
 
 ## Sources
 

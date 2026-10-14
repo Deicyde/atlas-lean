@@ -12,7 +12,14 @@ Closed half-disk with diameter `p q` on the side selected by `side`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
+
+## Proof depends on
+
+- [Det2](det2.md)
+- [Euclidean Dist Sq](euclidean-dist-sq.md)
+- [Midpoint](midpoint.md)
+- [Vec](vec.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ a matching `M` and a vertex cover `C` with `M.edgeSet.ncard = C.ncard`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Konig matching cover general](konig-matching-cover-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.KonigMatchingCover](../../../../../../../sources/v2/MathlibExt.md)

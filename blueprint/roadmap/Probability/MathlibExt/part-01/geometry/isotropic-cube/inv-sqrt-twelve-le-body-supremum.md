@@ -13,7 +13,16 @@ The single actual cube already witnesses the source's global lower bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Body Supremum](../isotropic-constant/body-supremum.md)
+
+## Proof depends on
+
+- [Full Dimensional Body](../isotropic-constant/full-dimensional-body.md)
+- [Body Isotropic Constant](../isotropic-constant/body-isotropic-constant.md)
+- [Body Law](../isotropic-constant/body-law.md)
+- [Covariance Matrix](../isotropic-constant/covariance-matrix.md)
+- [Dimension Body Supremum](../isotropic-constant/dimension-body-supremum.md)
+- [Unit Interval Body](unit-interval-body.md)
 
 ## Sources
 

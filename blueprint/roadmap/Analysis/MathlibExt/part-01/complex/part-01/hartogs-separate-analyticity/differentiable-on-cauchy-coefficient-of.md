@@ -16,6 +16,10 @@ finite-dimensional block variable on a smaller ball.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Differentiable At uncurry of separately differentiable of locally bounded](differentiable-at-uncurry-of-separately-2.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.HartogsSeparateAnalyticity](../../../../../../../sources/v2/MathlibExt.md)

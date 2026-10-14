@@ -13,7 +13,12 @@ Merging preserves exactly the union of structural key membership.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Merge](../part-01/merge.md)
+
+## Proof depends on
+
+- [Size](../part-01/size.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Every moment of the two-point identity is finite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Symmetric Bernoulli Law](symmetric-bernoulli-law.md)
 
 ## Sources
 

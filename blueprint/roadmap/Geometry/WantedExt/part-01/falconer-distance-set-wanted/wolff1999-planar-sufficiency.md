@@ -14,6 +14,10 @@ Wolff's strict compact planar `4/3` sufficient threshold.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Planar Threshold Property](../../../MathlibExt/falconer-distance-set/part-01/planar-threshold-property.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.FalconerDistanceSetWanted](../../../../../sources/v2/WantedExt.md)

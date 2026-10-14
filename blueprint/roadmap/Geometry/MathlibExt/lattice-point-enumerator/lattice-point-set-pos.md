@@ -15,6 +15,10 @@ Positive-dilation helper, not a full source-domain object: no boundedness carrie
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lattice Point Set](lattice-point-set.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.LatticePointEnumerator](../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,12 @@ type, matching `OpenConjectures.Combinatorics.MinimalSpanningTreeOrder.spanningT
 
 ## Depends on
 
-This node has no prerequisites.
+- [Num Spanning Trees](num-spanning-trees.md)
+
+## Proof depends on
+
+- [Is Spanning Tree](is-spanning-tree.md)
+- [Spanning Tree Subgraph Equiv](spanning-tree-subgraph-equiv.md)
 
 ## Sources
 

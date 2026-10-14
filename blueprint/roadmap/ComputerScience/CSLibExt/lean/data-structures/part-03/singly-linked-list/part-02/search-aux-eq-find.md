@@ -14,7 +14,9 @@ is `List.find?` over the represented identities.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../part-01/node.md)
+- [Represents](../part-01/represents.md)
+- [Search Aux](search-aux.md)
 
 ## Sources
 

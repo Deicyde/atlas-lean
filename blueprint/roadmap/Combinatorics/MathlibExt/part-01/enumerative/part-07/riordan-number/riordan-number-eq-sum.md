@@ -15,7 +15,7 @@ closed form `jis_d7e3bdcfd9ce7889bf468982`; context only `jis_8247c394aad205ae41
 
 ## Depends on
 
-This node has no prerequisites.
+- [Riordan Number](riordan-number.md)
 
 ## Sources
 

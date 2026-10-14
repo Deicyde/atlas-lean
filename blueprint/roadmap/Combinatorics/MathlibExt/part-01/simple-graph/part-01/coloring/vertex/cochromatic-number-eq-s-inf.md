@@ -14,7 +14,8 @@ Finite cocolorability description of the cochromatic number, mirroring
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cocolorable](cocolorable.md)
+- [Cochromatic Number](cochromatic-number.md)
 
 ## Sources
 

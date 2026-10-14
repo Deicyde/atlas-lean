@@ -12,7 +12,8 @@ Extension of a letter map to words.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Morphism](morphism.md)
+- [Sigma](sigma.md)
 
 ## Sources
 

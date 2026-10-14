@@ -13,7 +13,13 @@ Taking a serial preserves the size of the table.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](../part-01/huffman-tree.md)
+- [Huffman Work Item](huffman-work-item.md)
+- [Take Serial?](take-serial.md)
+
+## Proof depends on
+
+- [Huffman Priority](huffman-priority.md)
 
 ## Sources
 

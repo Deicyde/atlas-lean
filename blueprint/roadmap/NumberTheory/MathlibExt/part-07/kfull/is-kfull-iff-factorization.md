@@ -14,7 +14,7 @@ divisor occurs with multiplicity at least `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KFull](is-kfull.md)
 
 ## Sources
 

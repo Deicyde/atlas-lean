@@ -14,6 +14,10 @@ The explicit tuple uses the existing integer-valued prime-tuple API.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Shifts186](shifts186.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.PrimeGapBoundsWanted](../../../../../sources/v2/WantedExt.md)

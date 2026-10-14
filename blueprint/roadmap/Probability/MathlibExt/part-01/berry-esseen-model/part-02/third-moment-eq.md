@@ -13,7 +13,8 @@ Canonical transport preserves the actual third absolute moment.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is IIDModel](is-iidmodel.md)
+- [Third Moment](../part-01/third-moment.md)
 
 ## Sources
 

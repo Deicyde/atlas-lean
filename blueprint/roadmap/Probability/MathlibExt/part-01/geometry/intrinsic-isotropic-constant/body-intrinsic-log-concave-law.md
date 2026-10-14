@@ -12,7 +12,11 @@ Actual uniform body laws give intrinsic members via the identity orthonormal cha
 
 ## Depends on
 
-This node has no prerequisites.
+- [Intrinsic Log Concave Law](intrinsic-log-concave-law.md)
+
+## Proof depends on
+
+- [Body Law affine Span support](body-law-affine-span-support.md)
 
 ## Sources
 

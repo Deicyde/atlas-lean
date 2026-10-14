@@ -13,7 +13,13 @@ The generic covering-number data evaluates to eight for the actual cube.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coordinate Cube](coordinate-cube.md)
+- [Translate Covering Number](../covering/translate-covering-number.md)
+
+## Proof depends on
+
+- [Coordinate Cube three least covering Count](coordinate-cube-three-least-covering-cou.md)
+- [Translate Covering Number eq of is Least](../covering/translate-covering-number-eq-of-is-least.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ Remove the leftmost entry, rebuilding and rebalancing its ancestor path.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../part-01/cost.md)
+- [Entry](../part-01/entry.md)
+- [Tree](../part-01/tree.md)
+
+## Proof depends on
+
+- [Mk Node](../part-01/mk-node.md)
+- [Rebalance With Cost](rebalance-with-cost.md)
 
 ## Sources
 

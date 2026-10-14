@@ -13,7 +13,7 @@ At `n = r` the product is empty, so `[r, m]_r` is `1` at `m = r` and `0` otherwi
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Stirling First](r-stirling-first.md)
 
 ## Sources
 

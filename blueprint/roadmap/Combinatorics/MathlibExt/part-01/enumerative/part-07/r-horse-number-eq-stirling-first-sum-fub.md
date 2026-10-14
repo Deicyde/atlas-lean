@@ -19,7 +19,11 @@ image decomposition and binomial inversion, rather than by shift operators.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fubini Number](../part-03/fubini-number/fubini-number.md)
+
+## Proof depends on
+
+- [Fubini Number eq sum](../part-03/fubini-number/fubini-number-eq-sum.md)
 
 ## Sources
 

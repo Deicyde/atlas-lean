@@ -13,7 +13,19 @@ Insertion preserves AVL balance; the height grows by at most one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../part-01/cost.md)
+- [Entry](../part-01/entry.md)
+- [Tree](../part-01/tree.md)
+- [Balanced Prop](../part-02/balanced-prop.md)
+- [Insert Key With Cost](../part-02/insert-key-with-cost.md)
+
+## Proof depends on
+
+- [Key](../part-01/key.md)
+- [Balanced Prop rebalance mk Node](balanced-prop-rebalance-mk-node.md)
+- [Mk Node](../part-01/mk-node.md)
+- [Rebalance With Cost](../part-02/rebalance-with-cost.md)
+- [Compare Key](../part-01/compare-key.md)
 
 ## Sources
 

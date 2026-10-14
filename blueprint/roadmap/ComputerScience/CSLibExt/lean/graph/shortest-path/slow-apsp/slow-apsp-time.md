@@ -14,7 +14,7 @@ The first coordinate excludes the accumulator vector updates in `matrixAccumulat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slow APSP](slow-apsp.md)
 
 ## Sources
 

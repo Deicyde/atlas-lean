@@ -14,6 +14,10 @@ lean: SimpleGraph.oddCycleLengths
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cycle Lengths](cycle-lengths.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Circumference](../../../../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,13 @@ Proves `Wanted` entry `ramanujan_part1_ch6_entry5_digamma`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter6 Section13 Example CSum](chapter6-section13-example-csum.md)
+- [Chapter6 Section13 Example CTerm](chapter6-section13-example-cterm.md)
+
+## Proof depends on
+
+- [Is Big O chapter6 Section13 Example CSum sub sum bell](is-big-o-chapter6-section13-example-csum.md)
+- [Summable chapter6 Section13 Example CTerm](summable-chapter6-section13-example-cter.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ Every valid input edge has endpoints connected by the candidate forest.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Graph](graph.md)
+- [Weighted Edge](weighted-edge.md)
+
+## Proof depends on
+
+- [Connected](connected.md)
+- [Valid Edges](valid-edges.md)
 
 ## Sources
 

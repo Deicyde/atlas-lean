@@ -13,7 +13,12 @@ The smallest valid child of `i` is a valid array index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Smallest Child](dary-smallest-child.md)
+
+## Proof depends on
+
+- [Dary Child](dary-child.md)
+- [Dary Smallest Child From](dary-smallest-child-from.md)
 
 ## Sources
 

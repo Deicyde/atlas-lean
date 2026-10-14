@@ -14,6 +14,10 @@ Hansen's finite-decimal upper bound, corrected by Baez, Bagdasaryan and Gibbs.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lebesgue Universal Covering Constant](lebesgue-universal-covering-constant.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.LebesgueUniversalCoveringConstantWanted](../../../../../../sources/v2/WantedExt.md)

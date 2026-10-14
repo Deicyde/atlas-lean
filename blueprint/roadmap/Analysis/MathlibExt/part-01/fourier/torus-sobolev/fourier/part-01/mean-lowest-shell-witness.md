@@ -13,7 +13,20 @@ Its zero mean is an integral calculation, not a witness field.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lowest Shell Witness](lowest-shell-witness.md)
+- [Mean](../../basic/mean.md)
+
+## Proof depends on
+
+- [Frequency](../../basic/frequency.md)
+- [Axis Frequency](axis-frequency.md)
+- [Lowest Shell Unit](lowest-shell-unit.md)
+- [M Fourier Coeff add](m-fourier-coeff-add.md)
+- [M Fourier Coeff monomial](m-fourier-coeff-monomial.md)
+- [M Fourier Coeff smul](m-fourier-coeff-smul.md)
+- [Mean eq m Fourier Coeff zero re](mean-eq-m-fourier-coeff-zero-re.md)
+- [Unit Representative](../../basic/unit-representative.md)
+- [Unit Representative lowest Shell Witness](unit-representative-lowest-shell-witness.md)
 
 ## Sources
 

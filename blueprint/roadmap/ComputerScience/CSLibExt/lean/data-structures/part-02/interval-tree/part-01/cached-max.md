@@ -12,7 +12,11 @@ A constant-time read of the cached maximum high endpoint.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Entry](entry.md)
 
 ## Sources
 

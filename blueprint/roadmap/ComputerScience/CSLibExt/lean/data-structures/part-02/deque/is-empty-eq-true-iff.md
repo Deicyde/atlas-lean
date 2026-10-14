@@ -13,7 +13,9 @@ A deque reports that it is empty exactly when its represented sequence is empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Deque](deque.md)
+- [Contents](contents.md)
+- [Is Empty](is-empty.md)
 
 ## Sources
 

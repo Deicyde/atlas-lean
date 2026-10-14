@@ -13,7 +13,13 @@ A value returned by `lookup` is stored in the table.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Open Addressing](open-addressing.md)
+- [Stored](stored.md)
+- [Lookup](lookup.md)
+
+## Proof depends on
+
+- [Lookup Aux](lookup-aux.md)
 
 ## Sources
 

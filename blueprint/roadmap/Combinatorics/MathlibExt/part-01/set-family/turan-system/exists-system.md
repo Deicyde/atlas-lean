@@ -13,7 +13,12 @@ Existence of a Turan system under the parameter bounds.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Turan System](is-turan-system.md)
+
+## Proof depends on
+
+- [Complete Graph](complete-graph.md)
+- [Complete Graph is Turan](complete-graph-is-turan.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ Linearity of the actual coefficient integral on continuous functions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frequency](../../basic/frequency.md)
+
+## Proof depends on
+
+- [M Fourier Coeff integrable](m-fourier-coeff-integrable.md)
 
 ## Sources
 

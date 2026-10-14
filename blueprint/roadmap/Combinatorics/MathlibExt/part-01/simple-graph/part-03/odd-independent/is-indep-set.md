@@ -13,7 +13,7 @@ Independence projection of an odd independent set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Odd Independent](is-odd-independent.md)
 
 ## Sources
 

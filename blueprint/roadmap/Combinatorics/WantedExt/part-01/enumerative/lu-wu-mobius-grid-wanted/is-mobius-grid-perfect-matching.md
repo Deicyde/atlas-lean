@@ -13,7 +13,12 @@ exactly once.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mobius Grid Edge](mobius-grid-edge.md)
+
+## Proof depends on
+
+- [Mobius Grid Incident](mobius-grid-incident.md)
+- [Mobius Grid Vertex](mobius-grid-vertex.md)
 
 ## Sources
 

@@ -22,6 +22,10 @@ below.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Empty Node](is-empty-node.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.Trie.Delete](../../../../../../../../sources/v2/CSLibExt.md)

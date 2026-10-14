@@ -16,7 +16,7 @@ the defining condition with explicit period and preperiod witnesses.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Eventually Periodic](is-eventually-periodic.md)
 
 ## Sources
 

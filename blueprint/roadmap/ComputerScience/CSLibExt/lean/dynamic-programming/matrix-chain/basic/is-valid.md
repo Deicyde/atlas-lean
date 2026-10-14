@@ -12,7 +12,12 @@ A parenthesization uses every input matrix exactly once in order and is dimensio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parenthesization](parenthesization.md)
+
+## Proof depends on
+
+- [Dimension Compatible](dimension-compatible.md)
+- [Matrix Indices](matrix-indices.md)
 
 ## Sources
 

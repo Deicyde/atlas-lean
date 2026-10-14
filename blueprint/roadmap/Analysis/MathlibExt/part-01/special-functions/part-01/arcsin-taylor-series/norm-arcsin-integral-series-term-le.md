@@ -13,7 +13,11 @@ Uniform summable bound for the terms of `arcsinIntegralSeries` on `[-1, 1]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Binomial Coeff](central-binomial-coeff.md)
+
+## Proof depends on
+
+- [Arcsin Integral Series term eq](arcsin-integral-series-term-eq.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ A position with no child incurs no sift-down events.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sift Down](sift-down.md)
+
+## Proof depends on
+
+- [Ret timed Smaller Child](ret-timed-smaller-child.md)
+- [Time timed Smaller Child of none](time-timed-smaller-child-of-none.md)
+- [Timed Smaller Child](timed-smaller-child.md)
 
 ## Sources
 

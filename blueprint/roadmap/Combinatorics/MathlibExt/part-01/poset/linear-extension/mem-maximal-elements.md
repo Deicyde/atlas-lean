@@ -13,7 +13,7 @@ Membership characterization for `maximalElements`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Elements](maximal-elements.md)
 
 ## Sources
 

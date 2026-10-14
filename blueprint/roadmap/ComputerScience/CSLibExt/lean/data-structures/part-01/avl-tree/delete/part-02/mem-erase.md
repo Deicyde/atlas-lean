@@ -13,7 +13,16 @@ Deletion from an ordered tree removes exactly the deleted key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Erase](../part-01/erase.md)
+
+## Proof depends on
+
+- [Delete Min](../part-01/delete-min.md)
+- [Erase Min](../part-01/erase-min.md)
+- [Mem erase of mem](../part-01/mem-erase-of-mem.md)
+- [Min D](../part-01/min-d.md)
+- [Min D mem](../part-01/min-d-mem.md)
+- [Not mem erase self](not-mem-erase-self.md)
 
 ## Sources
 

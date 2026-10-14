@@ -13,7 +13,18 @@ Codewords of distinct leaf symbols are prefix-free.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](huffman-tree.md)
+- [Leaf Symbol](leaf-symbol.md)
+- [Code Of Leaf](code-of-leaf.md)
+
+## Proof depends on
+
+- [Code?](code.md)
+- [Code? code Of Leaf](code-code-of-leaf.md)
+- [Decode One?](decode-one.md)
+- [Decode Path?](decode-path.md)
+- [Path Code?](path-code.md)
+- [Symbols](symbols.md)
 
 ## Sources
 

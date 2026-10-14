@@ -14,7 +14,14 @@ forest precondition for reading `link` as a dynamic-forest link.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Valid](../part-01/valid.md)
+- [Link](../part-01/link.md)
+- [Vertices](../part-01/vertices.md)
+
+## Proof depends on
+
+- [Vertices node](../part-01/vertices-node.md)
 
 ## Sources
 

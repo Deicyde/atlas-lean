@@ -14,7 +14,7 @@ come from equal symbols.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Prefix Free](is-prefix-free.md)
 
 ## Sources
 

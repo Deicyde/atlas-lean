@@ -13,7 +13,7 @@ Measurability is stated before the totalized `Measure.map` operation is used.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar Point](planar-point.md)
 
 ## Sources
 

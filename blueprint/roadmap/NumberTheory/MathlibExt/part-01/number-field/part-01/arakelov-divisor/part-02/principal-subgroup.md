@@ -12,7 +12,11 @@ The subgroup of principal Arakelov divisors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arakelov Divisor](../part-01/arakelov-divisor.md)
+
+## Proof depends on
+
+- [Principal Hom](../part-01/principal-hom.md)
 
 ## Sources
 

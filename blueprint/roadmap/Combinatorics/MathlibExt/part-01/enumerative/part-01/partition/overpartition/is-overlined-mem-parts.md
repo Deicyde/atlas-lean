@@ -13,7 +13,8 @@ An overlined size occurs in the underlying multiset of parts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition](overpartition.md)
+- [Is Overlined](is-overlined.md)
 
 ## Sources
 

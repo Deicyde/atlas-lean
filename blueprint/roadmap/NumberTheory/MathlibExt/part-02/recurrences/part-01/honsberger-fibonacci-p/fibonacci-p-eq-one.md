@@ -13,7 +13,7 @@ Fibonacci `p`-numbers from index one through index `p` are one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci P](fibonacci-p.md)
 
 ## Sources
 

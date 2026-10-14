@@ -13,7 +13,12 @@ Combined fractionality and nontriviality for sandwiched lattices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice Discriminant](lattice-discriminant.md)
+
+## Proof depends on
+
+- [Lattice Discriminant is Fractional](lattice-discriminant-is-fractional.md)
+- [Lattice Discriminant ne bot of basis](lattice-discriminant-ne-bot-of-basis.md)
 
 ## Sources
 

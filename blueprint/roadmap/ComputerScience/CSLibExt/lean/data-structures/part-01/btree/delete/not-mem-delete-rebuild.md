@@ -13,7 +13,11 @@ The deleted key is absent from the result.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete Rebuild](delete-rebuild.md)
+
+## Proof depends on
+
+- [Mem delete Rebuild](mem-delete-rebuild.md)
 
 ## Sources
 

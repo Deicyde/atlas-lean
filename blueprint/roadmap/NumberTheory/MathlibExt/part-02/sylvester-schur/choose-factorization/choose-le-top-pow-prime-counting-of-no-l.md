@@ -17,6 +17,10 @@ using lower estimates for the relevant binomial coefficient.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Choose eq prod small prime powers of no large](choose-eq-prod-small-prime-powers-of-no.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.ChooseFactorization](../../../../../../sources/v2/MathlibExt.md)

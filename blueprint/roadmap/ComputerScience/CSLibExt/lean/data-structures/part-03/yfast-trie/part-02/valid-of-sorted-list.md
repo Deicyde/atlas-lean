@@ -13,7 +13,15 @@ Building from a strictly sorted list with a positive bound gives a valid trie.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](../part-01/valid.md)
+- [Of Sorted List](of-sorted-list.md)
+
+## Proof depends on
+
+- [Chunk Groups](chunk-groups.md)
+- [Chunk Groups spec](chunk-groups-spec.md)
+- [Group Ordered chunk Groups](group-ordered-chunk-groups.md)
+- [Valid of Groups](valid-of-groups.md)
 
 ## Sources
 

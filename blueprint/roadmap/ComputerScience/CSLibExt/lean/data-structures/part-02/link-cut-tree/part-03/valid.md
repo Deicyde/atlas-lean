@@ -18,7 +18,13 @@ solid chains (`treePaths`) are genuine disjoint paths.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
+- [Parent Child](../part-02/parent-child.md)
 
 ## Sources
 

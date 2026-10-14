@@ -12,7 +12,12 @@ Structural membership, inherited from `BinarySearchTree` through `erase`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
+- [Erase](erase.md)
 
 ## Sources
 

@@ -17,6 +17,11 @@ specifications.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Del H](del-h.md)
+- [Tree Height](tree-height.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BTree.DeleteBalanced](../../../../../../../../../sources/v2/CSLibExt.md)

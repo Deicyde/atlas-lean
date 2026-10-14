@@ -21,6 +21,11 @@ base case from Berndt (16.6) extends to the star-convex domain by analytic uniqu
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ramanujan part1 ch3 entry12 summable succ n general](../part-02/part1-ch3-entry12-summable-succ-n/ramanujan-part1-ch3-entry12-summable-suc.md)
+- [Part1 Ch3 Entry16 Corollary1 Jensen Series](ramanujan-part1-ch3-entry16-corollary1-j.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry16PsiSeries](../../../../../../sources/v2/MathlibExt.md)

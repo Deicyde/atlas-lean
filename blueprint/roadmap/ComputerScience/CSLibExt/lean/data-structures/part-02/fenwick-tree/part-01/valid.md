@@ -15,7 +15,11 @@ specification relation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fenwick Tree](fenwick-tree.md)
+
+## Proof depends on
+
+- [Block Sum](block-sum.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ The physical origin is taken to the unit-torus origin.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torus](../../basic/torus.md)
+- [Unit Rescaling](../../basic/unit-rescaling.md)
 
 ## Sources
 

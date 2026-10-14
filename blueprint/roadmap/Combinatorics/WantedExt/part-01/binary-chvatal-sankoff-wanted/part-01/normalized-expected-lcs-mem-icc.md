@@ -14,7 +14,13 @@ Every normalized expectation lies in the source's trivial interval
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Expected LCS](normalized-expected-lcs.md)
+
+## Proof depends on
+
+- [Expected LCSLength](expected-lcslength.md)
+- [Expected LCSLength le](expected-lcslength-le.md)
+- [Expected LCSLength nonneg](expected-lcslength-nonneg.md)
 
 ## Sources
 

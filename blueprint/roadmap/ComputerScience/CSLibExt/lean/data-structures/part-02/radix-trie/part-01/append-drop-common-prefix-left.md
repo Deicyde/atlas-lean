@@ -13,7 +13,11 @@ A list is its longest common prefix with another list, followed by the drop rema
 
 ## Depends on
 
-This node has no prerequisites.
+- [Common Prefix](common-prefix.md)
+
+## Proof depends on
+
+- [Common Prefix spec](common-prefix-spec.md)
 
 ## Sources
 

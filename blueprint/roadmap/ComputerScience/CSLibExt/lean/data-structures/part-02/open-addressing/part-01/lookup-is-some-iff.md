@@ -16,7 +16,15 @@ insert, by `lookup_insert`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Open Addressing](open-addressing.md)
+- [Stored](stored.md)
+- [Valid](valid.md)
+- [Lookup](lookup.md)
+
+## Proof depends on
+
+- [Lookup is Some of stored](lookup-is-some-of-stored.md)
+- [Stored of lookup eq some](stored-of-lookup-eq-some.md)
 
 ## Sources
 

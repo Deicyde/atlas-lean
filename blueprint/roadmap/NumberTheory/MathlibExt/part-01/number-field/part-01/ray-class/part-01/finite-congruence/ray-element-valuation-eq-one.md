@@ -18,6 +18,10 @@ and `hx_coprime`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ray Element count span Singleton eq zero](ray-element-count-span-singleton-eq-zero.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.FiniteCongruence](../../../../../../../../../sources/v2/MathlibExt.md)

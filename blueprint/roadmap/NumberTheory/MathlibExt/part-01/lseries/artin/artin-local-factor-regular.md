@@ -12,7 +12,11 @@ The domain condition saying that the formal local factor has no pole at `s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Artin Local Datum](artin-local-datum.md)
+
+## Proof depends on
+
+- [Artin Local Denominator](artin-local-denominator.md)
 
 ## Sources
 

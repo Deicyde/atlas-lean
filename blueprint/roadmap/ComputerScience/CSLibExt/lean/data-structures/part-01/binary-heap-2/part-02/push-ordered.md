@@ -13,7 +13,9 @@ Insertion preserves local heap order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heap Ordered](../part-01/heap-ordered.md)
+- [Min Heap](min-heap.md)
+- [Push](push.md)
 
 ## Sources
 

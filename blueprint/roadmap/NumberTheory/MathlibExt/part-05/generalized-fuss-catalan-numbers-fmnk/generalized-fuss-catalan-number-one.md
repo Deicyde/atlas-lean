@@ -13,7 +13,7 @@ The specialization `F_m(1, k) = k`, corresponding to case (c) of the source theo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fuss Catalan Number](generalized-fuss-catalan-number.md)
 
 ## Sources
 

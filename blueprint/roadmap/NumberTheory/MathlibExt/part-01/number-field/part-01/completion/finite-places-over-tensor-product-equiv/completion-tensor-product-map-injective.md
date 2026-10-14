@@ -13,7 +13,12 @@ Injectivity of the completion tensor-product map.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Completion Tensor Product Map](../finite-places-over-tensor-product/completion-tensor-product-map.md)
+- [Places Over](../finite-places-over/places-over.md)
+
+## Proof depends on
+
+- [Finrank completion Tensor Product eq pi](finrank-completion-tensor-product-eq-pi.md)
 
 ## Sources
 

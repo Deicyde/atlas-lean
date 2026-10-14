@@ -16,6 +16,10 @@ lean: MetaMathlibExt.condorcet_jury_theorem_of_iIndepFun
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Condorcet jury theorem](condorcet-jury-theorem.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Condorcet](../../../../../sources/v2/MathlibExt.md)

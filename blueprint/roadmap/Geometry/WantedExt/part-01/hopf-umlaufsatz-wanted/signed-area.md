@@ -13,7 +13,13 @@ the orientation convention.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
+
+## Proof depends on
+
+- [Det2](det2.md)
+- [Period](period.md)
+- [Velocity](velocity.md)
 
 ## Sources
 

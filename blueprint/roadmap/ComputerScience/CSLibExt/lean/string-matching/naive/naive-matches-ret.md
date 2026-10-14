@@ -13,7 +13,7 @@ Erasing cost gives the canonical index filter on the candidate suffixes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Naive Matches](naive-matches.md)
 
 ## Sources
 

@@ -14,7 +14,10 @@ heights already differ by at most one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balanced](../part-01/balanced.md)
+- [Tree](../part-01/tree.md)
+- [Height](../part-01/height.md)
+- [Mk Node](../part-01/mk-node.md)
 
 ## Sources
 

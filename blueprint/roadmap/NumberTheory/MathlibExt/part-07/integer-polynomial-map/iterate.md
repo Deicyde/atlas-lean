@@ -12,7 +12,11 @@ Apply an integer polynomial endomap `k` times.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer Polynomial Map](integer-polynomial-map.md)
+
+## Proof depends on
+
+- [To Fun](to-fun.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ source `jis_source_6670e6fe84c03e3ab211c809`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Normal Seq](normal-seq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NormalNumberSequence](../../../../../sources/v2/MathlibExt.md)

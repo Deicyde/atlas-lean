@@ -16,6 +16,11 @@ intermediate fields whose conductors have least common multiple `m`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sup eq top of lcm eq](sup-eq-top-of-lcm-eq.md)
+- [Abelian](../../../../../FieldTheory/MathlibExt/galois/is-modular-lattice-intermediate-field.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Cyclotomic.IntermediateField](../../../../../../sources/v2/MathlibExt.md)

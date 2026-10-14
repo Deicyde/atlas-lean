@@ -12,7 +12,7 @@ Structural membership, independent of the ordering invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
 
 ## Sources
 

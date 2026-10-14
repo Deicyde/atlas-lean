@@ -17,6 +17,11 @@ finite component of the quotient isomorphism.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists is Unit mod finite Part div eq](exists-is-unit-mod-finite-part-div-eq.md)
+- [Quotient Units div eq of div eq](quotient-units-div-eq-of-div-eq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.FiniteCongruence](../../../../../../../../../sources/v2/MathlibExt.md)

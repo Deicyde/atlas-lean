@@ -14,7 +14,11 @@ budget is reached first.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Open Addressing](open-addressing.md)
+
+## Proof depends on
+
+- [Lookup Aux](lookup-aux.md)
 
 ## Sources
 

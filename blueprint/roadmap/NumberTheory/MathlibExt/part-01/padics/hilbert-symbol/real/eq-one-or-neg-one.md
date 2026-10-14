@@ -13,7 +13,7 @@ The real Hilbert symbol takes only the values one and negative one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Real Hilbert Symbol](real-hilbert-symbol.md)
 
 ## Sources
 

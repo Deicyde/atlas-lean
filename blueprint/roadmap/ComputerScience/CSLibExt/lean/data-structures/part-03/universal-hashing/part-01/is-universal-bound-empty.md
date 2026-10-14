@@ -15,7 +15,7 @@ family satisfies this bound vacuously; `IsUniversal` is this bound together with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Collision Count](collision-count.md)
 
 ## Sources
 

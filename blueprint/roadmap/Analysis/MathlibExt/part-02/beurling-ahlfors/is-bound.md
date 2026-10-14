@@ -15,6 +15,10 @@ all strongly measurable functions, in extended `L^p` norms.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Beurling Transform](beurling-transform.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.BeurlingAhlfors](../../../../../sources/v2/MathlibExt.md)

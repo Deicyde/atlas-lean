@@ -15,6 +15,10 @@ contains a non-diametral point.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Diametral Point](is-diametral-point.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Topology.KirkNormalStructureWanted](../../../../../sources/v2/WantedExt.md)

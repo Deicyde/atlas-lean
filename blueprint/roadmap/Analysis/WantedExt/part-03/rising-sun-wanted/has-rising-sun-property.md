@@ -14,6 +14,11 @@ The rising-sun property on `[a,b]`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Rising Sun Decomposition](has-rising-sun-decomposition.md)
+- [Rising Sun Set](rising-sun-set.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.RisingSunWanted](../../../../../sources/v2/WantedExt.md)

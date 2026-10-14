@@ -14,7 +14,14 @@ tilted coefficient distribution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Growth](../coefficient-exponential-family/wiman-growth.md)
+- [Wiman Tilted Measure](../coefficient-exponential-family/wiman-tilted-measure.md)
+
+## Proof depends on
+
+- [Mem interior integrable Exp Set wiman Coefficient Measure](../coefficient-exponential-family/mem-interior-integrable-exp-set-wiman-co.md)
+- [Wiman Coefficient Measure](../coefficient-exponential-family/wiman-coefficient-measure.md)
+- [Wiman cgf eq growth](../coefficient-exponential-family/wiman-cgf-eq-growth.md)
 
 ## Sources
 

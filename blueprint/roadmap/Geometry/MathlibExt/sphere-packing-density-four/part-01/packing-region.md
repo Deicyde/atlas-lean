@@ -12,7 +12,12 @@ Source: CE2003 Appendix A, the union `P` of all packed balls.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Packing](packing.md)
+- [Space](space.md)
+
+## Proof depends on
+
+- [Packed Ball](packed-ball.md)
 
 ## Sources
 

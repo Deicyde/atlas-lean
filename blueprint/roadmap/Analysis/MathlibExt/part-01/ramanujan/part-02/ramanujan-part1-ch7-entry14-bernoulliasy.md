@@ -18,6 +18,10 @@ The identity follows by termwise differentiation in `s` and evaluation at `s = 1
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Part1 Ch7 Entry13 Bernoullirecurrence](ramanujan-part1-ch7-entry13-bernoullirec.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch7Entry14Bernoulliasymptotic](../../../../../../sources/v2/MathlibExt.md)

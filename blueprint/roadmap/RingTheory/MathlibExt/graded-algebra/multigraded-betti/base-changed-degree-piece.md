@@ -13,7 +13,11 @@ actual base-changed basis vectors whose recorded edge-2 degree equals `α`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base Changed Complex](base-changed-complex.md)
+
+## Proof depends on
+
+- [Zero Eval](zero-eval.md)
 
 ## Sources
 

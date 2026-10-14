@@ -13,7 +13,7 @@ The L1 norm as a sum over the polynomial's support.
 
 ## Depends on
 
-This node has no prerequisites.
+- [L1 Norm](l1-norm.md)
 
 ## Sources
 

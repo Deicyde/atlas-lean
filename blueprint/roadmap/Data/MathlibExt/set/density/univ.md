@@ -14,7 +14,11 @@ elements has density one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Density](has-density.md)
+
+## Proof depends on
+
+- [Partial Density](partial-density.md)
 
 ## Sources
 

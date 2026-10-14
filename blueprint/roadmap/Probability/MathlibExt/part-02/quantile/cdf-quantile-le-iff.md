@@ -14,7 +14,11 @@ the cdf at `x` is at least `u`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cdf Quantile](cdf-quantile.md)
+
+## Proof depends on
+
+- [Cdf Quantile mem](cdf-quantile-mem.md)
 
 ## Sources
 

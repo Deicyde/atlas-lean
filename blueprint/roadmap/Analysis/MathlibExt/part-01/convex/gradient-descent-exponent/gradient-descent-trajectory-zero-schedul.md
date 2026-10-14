@@ -13,7 +13,7 @@ Zero steps leave every initial point unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gradient Descent Trajectory](gradient-descent-trajectory.md)
 
 ## Sources
 

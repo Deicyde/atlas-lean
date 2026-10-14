@@ -15,7 +15,7 @@ Gauss formula, `4 ∣ n`: `r₃(n) = r₃(n / 4)`. Source: arXiv:2307.05244
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Square Representation Count](three-square-representation-count.md)
 
 ## Sources
 

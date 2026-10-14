@@ -19,6 +19,11 @@ induction, and that forces their last columns to agree.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Col eq single of is Leading Entry](col-eq-single-of-is-leading-entry.md)
+- [Submatrix order Iso](submatrix-order-iso.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.ReducedRowEchelon](../../../../../../sources/v2/MathlibExt.md)

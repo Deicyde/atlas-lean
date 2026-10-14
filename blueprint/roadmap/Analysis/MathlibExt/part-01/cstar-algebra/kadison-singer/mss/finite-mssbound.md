@@ -15,6 +15,12 @@ Finite-support Marcus--Spielman--Srivastava bound.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists outcome max Real Root le mixed Characteristic Polynomial](exists-outcome-max-real-root-le-mixed-ch.md)
+- [Barrier](../mixed-characteristic-polynomial-max-real.md)
+- [Max Real Root](../../../../../../Algebra/MathlibExt/polynomial/real-rooted/max-real-root.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.CStarAlgebra.KadisonSinger.MSS](../../../../../../../sources/v2/MathlibExt.md)

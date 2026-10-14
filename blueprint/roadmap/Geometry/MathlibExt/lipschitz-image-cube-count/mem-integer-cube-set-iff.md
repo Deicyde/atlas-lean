@@ -13,7 +13,7 @@ Unfolding lemma for `integerCubeSet`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer Cube Set](integer-cube-set.md)
 
 ## Sources
 

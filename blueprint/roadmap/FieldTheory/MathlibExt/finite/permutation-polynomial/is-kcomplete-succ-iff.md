@@ -14,7 +14,8 @@ into `k`-completeness plus the new top translated polynomial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KComplete](is-kcomplete.md)
+- [Is Permutation Polynomial](is-permutation-polynomial.md)
 
 ## Sources
 

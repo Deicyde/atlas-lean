@@ -12,7 +12,11 @@ Boolean satisfiability of a CNF formula: some assignment satisfies every clause.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](cnf.md)
+
+## Proof depends on
+
+- [CNFClause](cnfclause.md)
 
 ## Sources
 

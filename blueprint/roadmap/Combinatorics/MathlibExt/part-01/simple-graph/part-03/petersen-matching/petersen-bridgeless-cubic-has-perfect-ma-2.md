@@ -15,6 +15,10 @@ Petersen's theorem: every finite bridgeless cubic simple graph has a perfect mat
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Petersen bridgeless cubic has perfect matching general](petersen-bridgeless-cubic-has-perfect-ma.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.PetersenMatching](../../../../../../../sources/v2/MathlibExt.md)

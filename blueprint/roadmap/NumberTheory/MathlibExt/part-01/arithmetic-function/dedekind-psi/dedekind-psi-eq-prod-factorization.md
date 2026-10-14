@@ -13,7 +13,7 @@ Factorization product formula for `dedekindPsi` on nonzero inputs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dedekind Psi](dedekind-psi.md)
 
 ## Sources
 

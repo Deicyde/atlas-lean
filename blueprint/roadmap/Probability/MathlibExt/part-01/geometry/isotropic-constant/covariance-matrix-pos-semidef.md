@@ -13,7 +13,8 @@ Actual covariance is positive semidefinite, by integrating squared linear forms.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log Concave Law](log-concave-law.md)
+- [Covariance Matrix](covariance-matrix.md)
 
 ## Sources
 

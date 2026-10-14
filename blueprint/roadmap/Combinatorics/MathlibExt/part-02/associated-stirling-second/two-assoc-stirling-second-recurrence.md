@@ -13,7 +13,7 @@ Recurrence for 2-associated Stirling numbers of the second kind.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two Assoc Stirling Second](two-assoc-stirling-second.md)
 
 ## Sources
 

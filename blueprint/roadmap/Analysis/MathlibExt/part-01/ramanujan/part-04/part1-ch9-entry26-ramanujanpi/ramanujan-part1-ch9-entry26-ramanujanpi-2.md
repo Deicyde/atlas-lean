@@ -18,6 +18,11 @@ Chapter 1.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter9 Boundary Log eq log](chapter9-boundary-log-eq-log.md)
+- [Ramanujan part1 ch9 entry26 ramanujanpi entry24 terms](ramanujan-part1-ch9-entry26-ramanujanpi.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch9Entry26Ramanujanpi](../../../../../../../sources/v2/MathlibExt.md)

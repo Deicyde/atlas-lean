@@ -13,7 +13,13 @@ Every Fourier character has square one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](bool-cube.md)
+- [Cube Chi](cube-chi.md)
+
+## Proof depends on
+
+- [Cube Val](cube-val.md)
+- [Cube Val mul self](cube-val-mul-self.md)
 
 ## Sources
 

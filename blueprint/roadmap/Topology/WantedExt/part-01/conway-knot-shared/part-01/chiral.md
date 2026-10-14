@@ -14,7 +14,13 @@ reflection of the image through the `xy`-plane).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knot](knot.md)
+
+## Proof depends on
+
+- [Ambient Isotopy](ambient-isotopy.md)
+- [R3](r3.md)
+- [Reflect Z](reflect-z.md)
 
 ## Sources
 

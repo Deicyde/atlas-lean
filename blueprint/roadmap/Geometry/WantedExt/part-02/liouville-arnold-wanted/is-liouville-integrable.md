@@ -15,7 +15,11 @@ linearly independent at every point of `U`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
+
+## Proof depends on
+
+- [Poisson Bracket](poisson-bracket.md)
 
 ## Sources
 

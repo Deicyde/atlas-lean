@@ -14,6 +14,11 @@ The four lowest nonzero lattice modes, with the primary's normalization.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Frequency](../../basic/frequency.md)
+- [Axis Frequency](axis-frequency.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Fourier.TorusSobolev.Fourier](../../../../../../../../sources/v2/MathlibExt.md)

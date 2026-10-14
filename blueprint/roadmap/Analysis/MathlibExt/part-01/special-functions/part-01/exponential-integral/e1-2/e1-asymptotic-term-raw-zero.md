@@ -13,7 +13,7 @@ Each raw asymptotic term vanishes at `0` by junk-value division.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E1 Asymptotic Term Raw](e1-asymptotic-term-raw.md)
 
 ## Sources
 

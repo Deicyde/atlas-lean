@@ -14,7 +14,7 @@ Arakawa–Kaneko duality for poly-Bernoulli numbers:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Bernoulli](poly-bernoulli.md)
 
 ## Sources
 

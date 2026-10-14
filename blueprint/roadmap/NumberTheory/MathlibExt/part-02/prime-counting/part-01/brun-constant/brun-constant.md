@@ -14,6 +14,10 @@ Brun's constant, with a shared prime such as `5` counted once for each twin-prim
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Brun Twin Prime Reciprocal Term](brun-twin-prime-reciprocal-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.BrunConstant](../../../../../../../sources/v2/MathlibExt.md)

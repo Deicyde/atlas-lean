@@ -13,7 +13,11 @@ Empty continuous input has actual expected time zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bucket Sort](../basic/bucket-sort.md)
+
+## Proof depends on
+
+- [Bucket Sort empty](../basic/bucket-sort-empty.md)
 
 ## Sources
 

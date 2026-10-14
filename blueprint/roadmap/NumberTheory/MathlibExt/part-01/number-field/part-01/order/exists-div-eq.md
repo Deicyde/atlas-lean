@@ -16,6 +16,10 @@ Every element of `K` is a quotient of elements of the order. Uses the local
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Fraction Ring](is-fraction-ring.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.Order](../../../../../../../sources/v2/MathlibExt.md)

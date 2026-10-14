@@ -17,7 +17,15 @@ new unrelated bindings.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cuckoo Hashing](../part-01/cuckoo-hashing.md)
+- [Stored](../part-01/stored.md)
+- [Valid](../part-01/valid.md)
+- [Insert](../part-01/insert.md)
+
+## Proof depends on
+
+- [Insert Aux](../part-01/insert-aux.md)
+- [Slot Has Key](../part-01/slot-has-key.md)
 
 ## Sources
 

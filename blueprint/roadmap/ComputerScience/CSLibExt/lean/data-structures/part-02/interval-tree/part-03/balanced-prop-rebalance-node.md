@@ -15,7 +15,19 @@ is the unrebalanced height or one less.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../part-01/cost.md)
+- [Entry](../part-01/entry.md)
+- [Tree](../part-01/tree.md)
+- [Balanced Prop](../part-02/balanced-prop.md)
+- [Rebalance With Cost](../part-02/rebalance-with-cost.md)
+
+## Proof depends on
+
+- [Mk Node](../part-01/mk-node.md)
+- [Rotate Left](../part-02/rotate-left.md)
+- [Rotate Left Right](../part-02/rotate-left-right.md)
+- [Rotate Right](../part-02/rotate-right.md)
+- [Rotate Right Left](../part-02/rotate-right-left.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ Keith sequence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Keith Sequence](keith-sequence.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.KeithNumber](../../../../../sources/v2/MathlibExt.md)

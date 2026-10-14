@@ -14,6 +14,10 @@ Compute reflexive transitive closure by the CLRS saved-matrix recurrence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Transitive Closure Stages](transitive-closure-stages.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Graph.TransitiveClosure](../../../../../../sources/v2/CSLibExt.md)

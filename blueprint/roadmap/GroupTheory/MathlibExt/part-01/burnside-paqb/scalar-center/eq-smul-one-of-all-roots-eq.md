@@ -15,6 +15,10 @@ If all characteristic roots of `ρ g` equal `μ₀`, then `ρ g` is the scalar `
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Charpoly roots card](../killing-lemma/charpoly-roots-card.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.ScalarCenter](../../../../../../sources/v2/MathlibExt.md)

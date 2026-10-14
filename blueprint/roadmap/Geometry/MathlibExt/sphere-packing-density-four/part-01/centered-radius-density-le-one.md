@@ -13,7 +13,15 @@ Source: taking the observation-center supremum preserves the bound by one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Packing](packing.md)
+- [Positive Radius](positive-radius.md)
+- [Centered Radius Density](centered-radius-density.md)
+
+## Proof depends on
+
+- [Space](space.md)
+- [Finite Radius Density](finite-radius-density.md)
+- [Finite Radius Density le one](finite-radius-density-le-one.md)
 
 ## Sources
 

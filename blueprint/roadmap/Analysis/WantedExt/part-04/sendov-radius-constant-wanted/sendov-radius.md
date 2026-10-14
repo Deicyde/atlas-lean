@@ -14,6 +14,10 @@ The infimum of the admissible positive radii in Sendov's problem.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Admissible Radius](is-admissible-radius.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.SendovRadiusConstantWanted](../../../../../sources/v2/WantedExt.md)

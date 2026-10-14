@@ -12,7 +12,7 @@ Smallest congruence subgroup, given by the ray group.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Congruence Subgroup](congruence-subgroup.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The principal Fourier minor indexed by `S`, with `(i,j)` entry `ζ ^ (i*j)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Root Data](root-data.md)
 
 ## Sources
 

@@ -14,7 +14,12 @@ position permutation. This equation retains the saved vector and the exact same-
 
 ## Depends on
 
-This node has no prerequisites.
+- [Randomly Permute Distribution](randomly-permute-distribution.md)
+
+## Proof depends on
+
+- [Randomly Permute](../basic/randomly-permute.md)
+- [Randomly Permute time](../basic/randomly-permute-time.md)
 
 ## Sources
 

@@ -19,7 +19,11 @@ their own paths in `rest`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+
+## Proof depends on
+
+- [Root](../../euler-tour-tree/part-01/root.md)
 
 ## Sources
 

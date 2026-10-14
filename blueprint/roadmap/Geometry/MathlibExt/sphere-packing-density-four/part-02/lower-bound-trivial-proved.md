@@ -13,7 +13,11 @@ Source: catalogue C36 trivial lower bound, proved in the measure codomain.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Bound trivial](../part-01/lower-bound-trivial.md)
+
+## Proof depends on
+
+- [Sphere Packing Density4](../part-01/sphere-packing-density4.md)
 
 ## Sources
 

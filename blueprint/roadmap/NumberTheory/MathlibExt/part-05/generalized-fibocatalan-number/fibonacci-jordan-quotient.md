@@ -14,6 +14,10 @@ Jordan-type quotient `J_{r,F} = F_{2r+1}! / F_r! ` over `ℚ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fibonacci Factorial](fibonacci-factorial.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.GeneralizedFibocatalanNumber](../../../../../sources/v2/MathlibExt.md)

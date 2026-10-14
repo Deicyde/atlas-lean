@@ -12,7 +12,7 @@ Standard dot product on `F_q^d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Space](space.md)
 
 ## Sources
 

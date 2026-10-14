@@ -13,7 +13,13 @@ realized as the braid closure of `conwayBraidWord` on 4 strands.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PLKnot](plknot.md)
+
+## Proof depends on
+
+- [R3](../part-01/r3.md)
+- [Braid Closure](braid-closure.md)
+- [Conway Braid Word](conway-braid-word.md)
 
 ## Sources
 

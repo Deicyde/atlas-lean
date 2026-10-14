@@ -13,7 +13,7 @@ At `(a, b) = (1, 1)`, every term is one, so the bilateral series diverges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ramanujan Theta Term](ramanujan-theta-term.md)
 
 ## Sources
 

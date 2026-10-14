@@ -12,7 +12,7 @@ The number of leaves of a tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Range Tree](range-tree.md)
 
 ## Sources
 

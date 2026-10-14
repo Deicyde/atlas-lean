@@ -13,7 +13,11 @@ A nondecreasing underapproximation has at least one term (`n ≥ 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Nondecreasing Underapproximation](is-nondecreasing-underapproximation.md)
+
+## Proof depends on
+
+- [Is Nondecreasing Egyptian](is-nondecreasing-egyptian.md)
 
 ## Sources
 

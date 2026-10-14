@@ -17,6 +17,10 @@ tour.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists is Eulerian](exists-is-eulerian.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.EulerCircuit](../../../../../../../sources/v2/MathlibExt.md)

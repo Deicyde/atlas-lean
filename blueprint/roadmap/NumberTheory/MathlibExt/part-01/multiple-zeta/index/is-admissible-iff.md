@@ -13,7 +13,10 @@ The bundled and list formulations of admissibility agree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](index.md)
+- [Is Admissible](is-admissible.md)
+- [Entries](entries.md)
+- [Is Admissible](is-admissible-2.md)
 
 ## Sources
 

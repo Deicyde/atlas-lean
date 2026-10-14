@@ -13,7 +13,14 @@ In a well-formed table, lookup returns a value exactly on the logical range.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](../basic/part-01/table.md)
+- [Well Formed](../basic/part-01/well-formed.md)
+- [Get?](get.md)
+
+## Proof depends on
+
+- [Get? eq none of le](get-eq-none-of-le.md)
+- [Well Formed iff](../basic/part-01/well-formed-iff.md)
 
 ## Sources
 

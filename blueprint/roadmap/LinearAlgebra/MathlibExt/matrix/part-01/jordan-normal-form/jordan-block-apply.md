@@ -13,7 +13,7 @@ Characteristic entrywise description of a Jordan block.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jordan Block](jordan-block.md)
 
 ## Sources
 

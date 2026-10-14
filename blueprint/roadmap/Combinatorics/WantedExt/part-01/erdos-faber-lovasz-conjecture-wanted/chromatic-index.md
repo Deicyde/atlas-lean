@@ -13,7 +13,11 @@ that there exists a `(Fin n)`-coloring of `𝓗` (a coloring using `n` colors).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypergraph](hypergraph.md)
+
+## Proof depends on
+
+- [Coloring](coloring.md)
 
 ## Sources
 

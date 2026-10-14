@@ -13,7 +13,7 @@ The normalized central-binomial coefficients are at most one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Binomial Coeff](central-binomial-coeff.md)
 
 ## Sources
 

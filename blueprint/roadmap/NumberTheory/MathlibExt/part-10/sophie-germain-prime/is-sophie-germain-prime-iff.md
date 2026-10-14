@@ -13,7 +13,7 @@ Definitional characterization of Sophie Germain primes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sophie Germain Prime](is-sophie-germain-prime.md)
 
 ## Sources
 

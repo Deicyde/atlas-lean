@@ -18,6 +18,10 @@ Proof: Specialize `compositions_parts_one_two_three_eq_tribonacci` to
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Compositions parts one two three eq tribonacci](compositions-parts-one-two-three-eq-trib.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.CompositionsTribonacci](../../../../../../../sources/v2/MathlibExt.md)

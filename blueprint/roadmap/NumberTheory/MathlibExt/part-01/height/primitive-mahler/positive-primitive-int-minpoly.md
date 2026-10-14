@@ -15,6 +15,10 @@ Nonalgebraic inputs retain the canonical primitive-part fallback `1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Absolute](../primitive-int-minpoly.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Height.PrimitiveMahler](../../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,11 @@ The subtype of symbols occurring as leaves of a tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](huffman-tree.md)
+
+## Proof depends on
+
+- [Symbols](symbols.md)
 
 ## Sources
 

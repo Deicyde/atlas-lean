@@ -14,7 +14,7 @@ of the cdf.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cdf Quantile](cdf-quantile.md)
 
 ## Sources
 

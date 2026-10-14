@@ -16,6 +16,10 @@ one the rounded inner dimension is exactly `n`, so this is the infimal exponent 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rectangular Circuit Exponent](rectangular-circuit-exponent.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Complexity.Algebraic.RectangularCircuitExponent](../../../../../../sources/v2/CSLibExt.md)

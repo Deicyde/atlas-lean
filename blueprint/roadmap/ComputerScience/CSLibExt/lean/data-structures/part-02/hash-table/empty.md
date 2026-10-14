@@ -12,7 +12,7 @@ The empty hash table with the specified positive bucket count.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hash Table](hash-table.md)
 
 ## Sources
 

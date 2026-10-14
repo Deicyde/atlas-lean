@@ -13,7 +13,7 @@ Membership characterization: `q ∈ F_n` iff `0 ≤ q ≤ 1` and `q.den ≤ n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Finset](farey-finset.md)
 
 ## Sources
 

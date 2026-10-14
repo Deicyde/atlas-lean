@@ -13,7 +13,13 @@ The source word "smallest" is an implemented leastness theorem.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible](is-admissible.md)
+- [Value](value.md)
+
+## Proof depends on
+
+- [Value is Admissible](value-is-admissible.md)
+- [Value le of is Admissible](value-le-of-is-admissible.md)
 
 ## Sources
 

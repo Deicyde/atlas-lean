@@ -13,7 +13,8 @@ A least universal count gives the Hadwiger number without any finiteness oracle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniform Interior Translate Bound](uniform-interior-translate-bound.md)
+- [Hadwiger Covering Number](hadwiger-covering-number.md)
 
 ## Sources
 

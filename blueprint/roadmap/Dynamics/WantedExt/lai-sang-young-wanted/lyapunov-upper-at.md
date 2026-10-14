@@ -12,7 +12,7 @@ lean: MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.lyapunovUpperAt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euc Plane](euc-plane.md)
 
 ## Sources
 

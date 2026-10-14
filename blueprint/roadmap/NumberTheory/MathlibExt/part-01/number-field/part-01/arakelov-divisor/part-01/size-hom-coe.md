@@ -13,7 +13,18 @@ Coercion of the size homomorphism to the reals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arakelov Divisor](arakelov-divisor.md)
+- [Size Hom](size-hom.md)
+
+## Proof depends on
+
+- [Arch Hom](arch-hom.md)
+- [Archimedean Factor](archimedean-factor.md)
+- [Archimedean Factor coe](archimedean-factor-coe.md)
+- [Ideal Hom](ideal-hom.md)
+- [Ideal Norm](ideal-norm.md)
+- [Ideal Norm coe](ideal-norm-coe.md)
+- [Size Hom apply](size-hom-apply.md)
 
 ## Sources
 

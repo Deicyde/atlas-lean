@@ -13,7 +13,14 @@ The free-group map surjects onto the coprime ideals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprime Primes](coprime-primes.md)
+- [Free Group To Coprime](free-group-to-coprime.md)
+
+## Proof depends on
+
+- [Closure coprime Prime Units eq top](closure-coprime-prime-units-eq-top.md)
+- [Coprime Prime Units](coprime-prime-units.md)
+- [Coprime Prime Units eq range](coprime-prime-units-eq-range.md)
 
 ## Sources
 

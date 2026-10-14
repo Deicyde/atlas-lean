@@ -14,7 +14,11 @@ Shifting preserves word length
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shift Word](shift-word.md)
+
+## Proof depends on
+
+- [Shift Letter](shift-letter.md)
 
 ## Sources
 

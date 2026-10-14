@@ -14,7 +14,7 @@ basis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bilin Form Rank](bilin-form-rank.md)
 
 ## Sources
 

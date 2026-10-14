@@ -14,7 +14,7 @@ rightmost occurrence before that position, or the pattern length if absent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Preprocess](preprocess.md)
 
 ## Sources
 

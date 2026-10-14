@@ -14,6 +14,11 @@ Source: catalogue C36, supremum over all congruent-ball packings in `ℝ⁴`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Packing](packing.md)
+- [Upper Density](upper-density.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.SpherePackingDensityFour](../../../../../sources/v2/MathlibExt.md)

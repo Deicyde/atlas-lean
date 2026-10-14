@@ -14,6 +14,11 @@ The real-valued unit-square Beardwood-Halton-Hammersley constant.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bhh Constant For](bhh-constant-for.md)
+- [Unit Square Uniform Law](unit-square-uniform-law.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Probability.BeardwoodHaltonHammersleyConstantWanted](../../../../../sources/v2/WantedExt.md)

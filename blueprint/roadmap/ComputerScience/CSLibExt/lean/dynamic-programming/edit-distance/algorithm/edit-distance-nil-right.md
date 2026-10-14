@@ -13,7 +13,7 @@ Distance to the empty list is the source length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edit Distance](edit-distance.md)
 
 ## Sources
 

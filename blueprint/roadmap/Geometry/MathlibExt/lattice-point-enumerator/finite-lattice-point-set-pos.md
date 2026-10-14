@@ -13,7 +13,11 @@ Source-domain finiteness: for bounded `P` and positive `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice Point Set Pos](lattice-point-set-pos.md)
+
+## Proof depends on
+
+- [Finite lattice Point Set](finite-lattice-point-set.md)
 
 ## Sources
 

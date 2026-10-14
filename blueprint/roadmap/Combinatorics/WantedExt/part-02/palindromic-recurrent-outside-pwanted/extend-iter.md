@@ -12,7 +12,12 @@ Iterate the word extension.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Morphism](morphism.md)
+- [Sigma](sigma.md)
+
+## Proof depends on
+
+- [Extend](extend.md)
 
 ## Sources
 

@@ -17,6 +17,11 @@ because `NonnegativeDiscreteSpectrum` is zero-based.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Domain Volume](domain-volume.md)
+- [Unit Ball Volume](unit-ball-volume.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.DirichletSpectrum](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,12 @@ universal limit clause, preventing an empty realization type from making the cla
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar Point](planar-point.md)
+
+## Proof depends on
+
+- [Has BHHLimit](has-bhhlimit.md)
+- [IIDRealization](iidrealization.md)
 
 ## Sources
 

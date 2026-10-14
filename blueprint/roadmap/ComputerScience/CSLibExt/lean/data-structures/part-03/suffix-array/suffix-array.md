@@ -17,6 +17,10 @@ to the merge sort's handling of the comparison.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Suffix](suffix.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.SuffixArray](../../../../../../../sources/v2/CSLibExt.md)

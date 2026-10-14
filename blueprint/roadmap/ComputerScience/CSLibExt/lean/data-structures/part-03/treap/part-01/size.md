@@ -12,7 +12,7 @@ The recursively computed number of nodes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
 
 ## Sources
 

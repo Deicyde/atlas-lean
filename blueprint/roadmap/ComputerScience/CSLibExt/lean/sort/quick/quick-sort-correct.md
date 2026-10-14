@@ -13,7 +13,14 @@ Quicksort returns a nondecreasing permutation, preserving duplicate occurrences.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quick Sort](quick-sort.md)
+
+## Proof depends on
+
+- [Three Way Partition](../partition/three-way-partition.md)
+- [Partition3](../partition/partition3.md)
+- [Partition3 correct](../partition/partition3-correct.md)
+- [Partition3 length](../partition/partition3-length.md)
 
 ## Sources
 

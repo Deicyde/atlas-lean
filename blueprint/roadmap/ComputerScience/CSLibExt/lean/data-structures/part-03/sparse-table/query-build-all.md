@@ -13,7 +13,19 @@ A query over the whole array is `List.min?` of the whole list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build](build.md)
+- [Query](query.md)
+
+## Proof depends on
+
+- [Sparse Table](sparse-table.md)
+- [Valid](valid.md)
+- [Build valid](build-valid.md)
+- [Entry](entry.md)
+- [Entry eq of valid](entry-eq-of-valid.md)
+- [Level](level.md)
+- [Omin](omin.md)
+- [Omin self](omin-self.md)
 
 ## Sources
 

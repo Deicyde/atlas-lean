@@ -13,7 +13,7 @@ Every meaningful table cell has the CLRS recurrence and the earliest attaining r
 
 ## Depends on
 
-This node has no prerequisites.
+- [Optimal BST](../basic/optimal-bst.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ The total number of stored keys, `∑ i, nᵢ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](../part-01/perfect-hashing.md)
+
+## Proof depends on
+
+- [Bucket Size](../part-01/bucket-size.md)
 
 ## Sources
 

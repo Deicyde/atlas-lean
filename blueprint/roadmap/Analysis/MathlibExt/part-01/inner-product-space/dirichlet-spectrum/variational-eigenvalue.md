@@ -18,6 +18,11 @@ operator-spectrum claim is made here.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Smooth Test Space](smooth-test-space.md)
+- [Rayleigh Quotient](rayleigh-quotient.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.DirichletSpectrum](../../../../../../sources/v2/MathlibExt.md)

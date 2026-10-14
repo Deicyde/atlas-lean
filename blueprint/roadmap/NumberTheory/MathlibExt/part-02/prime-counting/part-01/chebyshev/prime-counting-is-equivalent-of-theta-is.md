@@ -15,6 +15,10 @@ The prime number theorem follows from Chebyshev's estimate `θ(x) ~ x`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prime Counting sub theta div log is Little O](prime-counting-sub-theta-div-log-is-litt.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.Chebyshev](../../../../../../../sources/v2/MathlibExt.md)

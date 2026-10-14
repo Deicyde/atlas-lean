@@ -12,7 +12,11 @@ The h-vector via the alternating binomial transform of the f-vector.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Simplicial Sphere](finite-simplicial-sphere.md)
+
+## Proof depends on
+
+- [Extended Face Count](extended-face-count.md)
 
 ## Sources
 

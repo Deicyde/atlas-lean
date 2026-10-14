@@ -13,7 +13,8 @@ Incidence means membership in the unordered pair of edge endpoints.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
+- [Inc](inc.md)
 
 ## Sources
 

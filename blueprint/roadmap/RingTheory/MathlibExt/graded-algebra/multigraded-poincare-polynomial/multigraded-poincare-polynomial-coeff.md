@@ -15,7 +15,16 @@ Coefficient equation: evaluating the Poincaré polynomial at
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraded Base Change](../multigraded-betti/multigraded-base-change.md)
+- [Multigraded Free Resolution](../multigraded-free-resolution/multigraded-free-resolution.md)
+- [Multigraded Betti Number](../multigraded-betti/multigraded-betti-number.md)
+- [Multigraded Poincare Polynomial](multigraded-poincare-polynomial.md)
+
+## Proof depends on
+
+- [Multigraded Poincare Coefficients](../multigraded-poincare-coefficients/multigraded-poincare-coefficients.md)
+- [Multigraded Poincare Coefficients apply](../multigraded-poincare-coefficients/multigraded-poincare-coefficients-apply.md)
+- [Multigraded Poincare Finite Support](../multigraded-poincare-coefficients-has-fi.md)
 
 ## Sources
 

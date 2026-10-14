@@ -14,7 +14,7 @@ the Dirichlet inverse of `f`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rearick Log](rearick-log.md)
 
 ## Sources
 

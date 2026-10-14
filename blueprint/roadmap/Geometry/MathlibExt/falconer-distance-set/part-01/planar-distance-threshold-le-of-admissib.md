@@ -13,7 +13,8 @@ Every admissible threshold is an upper bound for the defining infimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admissible Planar Threshold](admissible-planar-threshold.md)
+- [Planar Distance Threshold](planar-distance-threshold.md)
 
 ## Sources
 

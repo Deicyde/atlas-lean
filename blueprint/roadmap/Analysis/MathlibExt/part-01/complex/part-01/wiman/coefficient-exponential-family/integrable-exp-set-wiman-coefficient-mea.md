@@ -13,7 +13,11 @@ The exponential-integrability interval of the coefficient measure is all of `ℝ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Coefficient Measure](wiman-coefficient-measure.md)
+
+## Proof depends on
+
+- [Integrable exp mul wiman Coefficient Measure](integrable-exp-mul-wiman-coefficient-mea.md)
 
 ## Sources
 

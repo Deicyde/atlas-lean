@@ -13,7 +13,11 @@ The family defining the dual exponent contains an actual quadratic endpoint.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectangular Circuit Exponent](rectangular-circuit-exponent.md)
+
+## Proof depends on
+
+- [Rectangular Circuit Exponent zero](rectangular-circuit-exponent-zero.md)
 
 ## Sources
 

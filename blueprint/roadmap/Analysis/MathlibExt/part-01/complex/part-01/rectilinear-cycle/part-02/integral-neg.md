@@ -13,7 +13,13 @@ Reversing a rectilinear cycle negates its contour integral.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectilinear Cycle](../part-01/rectilinear-cycle.md)
+- [Integral](../part-01/integral.md)
+- [Rectilinear Rectangle](../part-01/rectilinear-rectangle.md)
+
+## Proof depends on
+
+- [Integral add](integral-add.md)
 
 ## Sources
 

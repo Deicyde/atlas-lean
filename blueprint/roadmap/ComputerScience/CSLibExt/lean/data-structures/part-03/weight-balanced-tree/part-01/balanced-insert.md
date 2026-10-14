@@ -13,7 +13,16 @@ Insertion preserves the weight-balance invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balanced](balanced.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Balance](balance.md)
+- [Balanced balance](balanced-balance.md)
+- [Balanced node](balanced-node.md)
+- [Le num Nodes insert](le-num-nodes-insert.md)
+- [Num Nodes insert le](num-nodes-insert-le.md)
 
 ## Sources
 

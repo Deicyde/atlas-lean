@@ -16,6 +16,10 @@ is there an injective `f : P → H` with `p ∈ f p` for every `p`?
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Spanned Hyperplane Set](spanned-hyperplane-set.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.InfiniteTransversalsSpannedHyperplanesWanted](../../../../../sources/v2/WantedExt.md)

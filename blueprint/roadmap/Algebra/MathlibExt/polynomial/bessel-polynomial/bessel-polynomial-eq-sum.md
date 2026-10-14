@@ -14,7 +14,7 @@ Restatement of the defining formula for `besselPolynomial`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bessel Polynomial](bessel-polynomial.md)
 
 ## Sources
 

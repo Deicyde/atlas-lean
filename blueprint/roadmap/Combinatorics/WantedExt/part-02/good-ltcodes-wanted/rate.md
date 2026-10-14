@@ -12,7 +12,11 @@ The rate of a binary code is its dimension divided by its length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary Code](binary-code.md)
+
+## Proof depends on
+
+- [Dim](dim.md)
 
 ## Sources
 

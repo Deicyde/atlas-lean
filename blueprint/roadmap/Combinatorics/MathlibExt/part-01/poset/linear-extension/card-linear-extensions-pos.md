@@ -13,7 +13,11 @@ The linear-extension count is positive: a valid denominator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Extensions](linear-extensions.md)
+
+## Proof depends on
+
+- [Nonempty linear Extensions](nonempty-linear-extensions.md)
 
 ## Sources
 

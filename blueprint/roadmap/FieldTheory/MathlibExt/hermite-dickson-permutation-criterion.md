@@ -17,7 +17,7 @@ remainder of `f ^ t` upon division by `X ^ q - X` has `natDegree ≤ q - 2`, whe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Permutation Polynomial](finite/permutation-polynomial/is-permutation-polynomial.md)
 
 ## Sources
 

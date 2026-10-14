@@ -13,7 +13,11 @@ The reciprocal sum of a strict underapproximation is below its target.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Strict Underapproximation](is-strict-underapproximation.md)
+
+## Proof depends on
+
+- [Is Strict Egyptian](is-strict-egyptian.md)
 
 ## Sources
 

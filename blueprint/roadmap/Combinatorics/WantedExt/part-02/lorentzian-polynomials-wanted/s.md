@@ -13,7 +13,11 @@ with nonnegative coefficients.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H](h.md)
+
+## Proof depends on
+
+- [Is Stable](is-stable.md)
 
 ## Sources
 

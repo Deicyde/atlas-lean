@@ -16,7 +16,15 @@ canonical strict multiple-zeta API (`MetaMathlibExt.MultipleZeta.strictValue`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Left Index](left-index.md)
+- [Left Index is Admissible Or Empty](left-index-is-admissible-or-empty.md)
+- [Right Index](right-index.md)
+- [Right Index is Admissible Or Empty](right-index-is-admissible-or-empty.md)
+
+## Proof depends on
+
+- [To Index](to-index.md)
+- [Convergence](../summable-strict-summand.md)
 
 ## Sources
 

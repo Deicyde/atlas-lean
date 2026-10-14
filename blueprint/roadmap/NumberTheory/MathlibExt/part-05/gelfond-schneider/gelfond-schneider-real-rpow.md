@@ -18,6 +18,10 @@ over `ℚ`. Source: A. O. Gelfond, Sur le septième problème de Hilbert, Dokl. 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gelfond Schneider complex exp](gelfond-schneider-complex-exp.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.GelfondSchneider](../../../../../sources/v2/MathlibExt.md)

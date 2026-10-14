@@ -13,7 +13,7 @@ Unfolded sum for the Domb numbers, with the powers of one simplified.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Domb Number](domb-number.md)
 
 ## Sources
 

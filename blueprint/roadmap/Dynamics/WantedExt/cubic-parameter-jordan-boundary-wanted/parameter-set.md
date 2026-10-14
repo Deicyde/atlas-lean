@@ -15,6 +15,11 @@ basin of zero. Cites [AMR-052-0019].
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Critical Point](is-critical-point.md)
+- [Is Immediate Basin](is-immediate-basin.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Dynamics.CubicParameterJordanBoundaryWanted](../../../../sources/v2/WantedExt.md)

@@ -16,6 +16,10 @@ Eisenstein `f` of positive degree over a DVR.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Maximal span root](is-maximal-span-root.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Polynomial.Eisenstein.AdjoinRoot](../../../../../../sources/v2/MathlibExt.md)

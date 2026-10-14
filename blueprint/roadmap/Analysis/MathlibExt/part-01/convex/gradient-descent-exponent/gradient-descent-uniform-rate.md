@@ -15,6 +15,11 @@ dimension, objective, minimizer, initialization and horizon.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Unit Smooth Convex](is-unit-smooth-convex.md)
+- [Gradient Descent Trajectory](gradient-descent-trajectory.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Convex.GradientDescentExponent](../../../../../../sources/v2/MathlibExt.md)

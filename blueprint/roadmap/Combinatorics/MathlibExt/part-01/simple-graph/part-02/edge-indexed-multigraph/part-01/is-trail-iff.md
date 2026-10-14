@@ -13,7 +13,10 @@ An indexed walk is a trail exactly when its edge list has no duplicates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
+- [Indexed Walk](indexed-walk.md)
+- [Is Trail](is-trail.md)
+- [Edges](edges.md)
 
 ## Sources
 

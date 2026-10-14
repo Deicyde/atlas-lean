@@ -17,6 +17,11 @@ particular a sequence that is holonomic over `ℤ` is MC-finite.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is MCFinite](is-mcfinite-2.md)
+- [Is MCFinite of mv Polynomial recursion](is-mcfinite-of-mv-polynomial-recursion.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Sequences.PolynomiallyRecursiveMCFinite](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ compactness, so the extrema range over nonempty bounded images.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
 
 ## Sources
 

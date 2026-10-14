@@ -23,6 +23,10 @@ it is not Alzer's later strict refinement nor the series identity.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bell Turan Identity](../part-01/bell-turan-identity.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.EngelBellLogConvexity](../../../../../../sources/v2/MathlibExt.md)

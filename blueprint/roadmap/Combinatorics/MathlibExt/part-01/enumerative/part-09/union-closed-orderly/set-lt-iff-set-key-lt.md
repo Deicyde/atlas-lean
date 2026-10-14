@@ -13,7 +13,12 @@ The paper's strict set order agrees exactly with strict order on its numeric sor
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set Key](set-key.md)
+- [Set LT](set-lt.md)
+
+## Proof depends on
+
+- [Bin Rep](bin-rep.md)
 
 ## Sources
 

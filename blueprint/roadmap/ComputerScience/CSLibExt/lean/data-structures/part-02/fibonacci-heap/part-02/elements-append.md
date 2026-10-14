@@ -13,7 +13,12 @@ The elements of a concatenated forest are the sum of the elements of its parts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elements](../part-01/elements-2.md)
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
+
+## Proof depends on
+
+- [Elements](../part-01/elements.md)
 
 ## Sources
 

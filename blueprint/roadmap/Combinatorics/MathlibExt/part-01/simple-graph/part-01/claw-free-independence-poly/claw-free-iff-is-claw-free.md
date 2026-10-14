@@ -13,7 +13,8 @@ The Wanted `clawFree` predicate agrees with `SimpleGraph.IsClawFree`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Claw Free](claw-free.md)
+- [Is Claw Free](is-claw-free.md)
 
 ## Sources
 

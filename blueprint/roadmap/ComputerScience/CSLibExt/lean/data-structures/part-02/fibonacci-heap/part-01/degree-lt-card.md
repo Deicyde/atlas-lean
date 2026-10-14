@@ -14,7 +14,16 @@ contributes at least one element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Tree](fibonacci-tree.md)
+- [Valid](valid.md)
+- [Degree](degree.md)
+- [Elements](elements.md)
+
+## Proof depends on
+
+- [Degree eq](degree-eq.md)
+- [Card elements pos](card-elements-pos.md)
+- [Children](children.md)
 
 ## Sources
 

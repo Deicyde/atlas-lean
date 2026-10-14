@@ -19,6 +19,10 @@ so no explicit `Module.IsReflexive` assumption is needed.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dual Submodule flip dual Submodule of is Lattice](dual-submodule-flip-dual-submodule-of-is.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.BilinearForm.DualLatticeReflexive](../../../../../sources/v2/MathlibExt.md)

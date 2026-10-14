@@ -13,7 +13,16 @@ Closed form for the weighted `fmain` sum at scale `C * n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K9](k9.md)
+- [Q9](../../grid/part-01/q9.md)
+- [Fmain](fmain.md)
+- [W9](../../grid/part-01/w9.md)
+
+## Proof depends on
+
+- [CNdvd9](cndvd9.md)
+- [W9 mu sum R](w9-mu-sum-r.md)
+- [W9 pos](../../grid/part-01/w9-pos.md)
 
 ## Sources
 

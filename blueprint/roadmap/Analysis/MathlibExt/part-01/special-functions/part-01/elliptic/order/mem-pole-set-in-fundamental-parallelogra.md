@@ -13,7 +13,9 @@ Membership in the pole set unfolds to the conjunction of its defining data.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fundamental Parallelogram](../fundamental-parallelogram/fundamental-parallelogram.md)
+- [Pole Multiplicity](pole-multiplicity.md)
+- [Pole Set In Fundamental Parallelogram](pole-set-in-fundamental-parallelogram.md)
 
 ## Sources
 

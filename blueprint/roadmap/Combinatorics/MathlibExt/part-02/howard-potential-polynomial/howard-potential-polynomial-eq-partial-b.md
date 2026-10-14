@@ -23,7 +23,7 @@ evidence only.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partial Bell Polynomial](../../part-01/enumerative/part-06/partial-bell-polynomial.md)
 
 ## Sources
 

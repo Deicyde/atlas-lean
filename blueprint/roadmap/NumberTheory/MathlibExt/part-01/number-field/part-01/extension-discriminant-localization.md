@@ -18,7 +18,14 @@ Dedekind, fraction-ring, integrally-closed, or separability hypotheses are used.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extension Discriminant](extension-discriminant/extension-discriminant.md)
+
+## Proof depends on
+
+- [Discr mem extension Discriminant](extension-discriminant/discr-mem-extension-discriminant.md)
+- [Extension Discriminant eq](extension-discriminant/extension-discriminant-eq.md)
+- [Image Of B](extension-discriminant/image-of-b.md)
+- [Mem image Of B](extension-discriminant/mem-image-of-b.md)
 
 ## Sources
 

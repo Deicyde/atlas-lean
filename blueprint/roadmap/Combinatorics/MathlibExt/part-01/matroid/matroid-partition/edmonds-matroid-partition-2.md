@@ -15,6 +15,10 @@ Edmonds' matroid partition theorem (k-partition form).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Edmonds matroid partition'](edmonds-matroid-partition.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Matroid.MatroidPartition](../../../../../../sources/v2/MathlibExt.md)

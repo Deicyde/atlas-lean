@@ -13,7 +13,14 @@ A heap has at most one more root than the binary logarithm of its cardinality.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Heap](binomial-heap.md)
+- [Elements](elements.md)
+- [Binomial Tree](../part-01/binomial-tree.md)
+
+## Proof depends on
+
+- [Valid](../part-01/valid-2.md)
+- [Length le log2 card succ](length-le-log2-card-succ.md)
 
 ## Sources
 

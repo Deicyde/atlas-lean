@@ -13,7 +13,9 @@ lean: MvPolynomial.RegularFunction.comp_aeval
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Function](regular-function.md)
+- [Aeval](aeval.md)
+- [Comp](comp.md)
 
 ## Sources
 

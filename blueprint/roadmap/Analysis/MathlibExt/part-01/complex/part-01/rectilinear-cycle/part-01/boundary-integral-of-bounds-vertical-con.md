@@ -14,7 +14,12 @@ side cancels and the two horizontal integrals concatenate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boundary Integral](boundary-integral.md)
+- [Of Bounds](of-bounds.md)
+
+## Proof depends on
+
+- [Rectilinear Rectangle](rectilinear-rectangle.md)
 
 ## Sources
 

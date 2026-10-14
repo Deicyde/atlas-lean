@@ -15,7 +15,17 @@ leaf list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Segment Tree](../part-01/segment-tree.md)
+- [Valid](../part-01/valid.md)
+- [Size](../part-01/size.md)
+- [To List](../part-01/to-list.md)
+- [Update](../part-01/update.md)
+
+## Proof depends on
+
+- [Agg](../part-01/agg.md)
+- [Length to List of valid](../part-01/length-to-list-of-valid.md)
+- [To List node](../part-01/to-list-node.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ The prime sum via the logarithmic derivative of zeta, up to the correction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log Dirichlet Correction](log-dirichlet-correction.md)
+- [Log Dirichlet Series](log-dirichlet-series.md)
+
+## Proof depends on
+
+- [Log Dirichlet von Mangoldt split](log-dirichlet-von-mangoldt-split.md)
 
 ## Sources
 

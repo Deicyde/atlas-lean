@@ -17,6 +17,10 @@ statement.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kirszbraun general](kirszbraun-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.Kirszbraun](../../../../../../sources/v2/MathlibExt.md)

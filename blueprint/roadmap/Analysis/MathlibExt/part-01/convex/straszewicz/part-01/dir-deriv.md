@@ -14,6 +14,10 @@ Directional derivative of a convex function as an infimum of quotients.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dir Quot](dir-quot.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Convex.Straszewicz](../../../../../../../sources/v2/MathlibExt.md)

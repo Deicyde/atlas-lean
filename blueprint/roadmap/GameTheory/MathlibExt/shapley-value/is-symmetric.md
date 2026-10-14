@@ -12,7 +12,7 @@ Symmetry under permutations preserving the game via `σ '' S`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coop Game](coop-game.md)
 
 ## Sources
 

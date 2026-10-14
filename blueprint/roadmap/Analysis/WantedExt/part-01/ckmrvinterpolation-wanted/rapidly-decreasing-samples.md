@@ -14,6 +14,10 @@ Four rapidly decreasing sample sequences.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rapidly Decreasing](rapidly-decreasing.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.CKMRVInterpolationWanted](../../../../../sources/v2/WantedExt.md)

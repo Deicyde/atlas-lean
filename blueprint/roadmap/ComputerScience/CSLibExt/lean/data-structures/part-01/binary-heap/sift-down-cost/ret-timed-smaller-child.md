@@ -13,7 +13,7 @@ Erasing the selector's events gives canonical child selection.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Timed Smaller Child](timed-smaller-child.md)
 
 ## Sources
 

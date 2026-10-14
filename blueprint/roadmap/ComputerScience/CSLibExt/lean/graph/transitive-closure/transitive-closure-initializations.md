@@ -13,7 +13,7 @@ Initialization performs exactly `n²` cell assignments.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transitive Closure Stages](transitive-closure-stages.md)
 
 ## Sources
 

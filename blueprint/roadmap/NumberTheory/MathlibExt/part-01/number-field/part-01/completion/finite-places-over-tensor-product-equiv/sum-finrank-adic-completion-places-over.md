@@ -14,7 +14,12 @@ This combines parts (4) and (5) of ATLAS N236, Theorem 11.23, for use in N265.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Places Over](../finite-places-over/places-over.md)
+
+## Proof depends on
+
+- [Finite Lies Over Local Degree](../finrank-adic-completion-eq-ramification.md)
+- [Places Over Equiv Primes Over](../finite-places-over/places-over-equiv-primes-over.md)
 
 ## Sources
 

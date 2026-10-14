@@ -13,7 +13,11 @@ A nonzero Taylor coefficient gives nonzero mass to the coefficient measure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Coefficient Measure](wiman-coefficient-measure.md)
+
+## Proof depends on
+
+- [Wiman Coefficient Measure singleton](wiman-coefficient-measure-singleton.md)
 
 ## Sources
 

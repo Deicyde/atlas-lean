@@ -27,6 +27,10 @@ Proves `Wanted` entry `bakerDavenport_reduction_oneSided`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Baker Davenport reduction one Sided general](baker-davenport-reduction-one-sided-gene.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.DiophantineApproximation.BakerDavenportOneSided](../../../../../../sources/v2/MathlibExt.md)

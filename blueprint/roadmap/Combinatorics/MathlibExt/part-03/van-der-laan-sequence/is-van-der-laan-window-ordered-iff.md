@@ -17,7 +17,7 @@ only if the largest term is the sum of the two smallest, `d = a + b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Van Der Laan Window](is-van-der-laan-window.md)
 
 ## Sources
 

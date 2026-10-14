@@ -13,7 +13,12 @@ The remainder is entire in `s`: constant times `E1` of a linear map.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perron Remainder](perron-remainder.md)
+
+## Proof depends on
+
+- [E1](e1.md)
+- [E1 differentiable](e1-differentiable.md)
 
 ## Sources
 

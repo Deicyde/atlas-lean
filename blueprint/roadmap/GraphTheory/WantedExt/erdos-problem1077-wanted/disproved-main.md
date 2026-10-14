@@ -14,6 +14,10 @@ Its disproof (companion).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Main Positive](main-positive.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.ErdosProblem1077Wanted](../../../../sources/v2/WantedExt.md)

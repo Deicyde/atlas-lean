@@ -15,6 +15,10 @@ lean: Group.Generators.HasPolynomialGrowth
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Growth](growth.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.GroupGrowth](../../../../../sources/v2/MathlibExt.md)

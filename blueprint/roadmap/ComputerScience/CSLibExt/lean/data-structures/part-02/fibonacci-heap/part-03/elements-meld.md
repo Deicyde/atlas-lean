@@ -13,7 +13,13 @@ Meld preserves every occurrence from both heaps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Heap](../part-02/fibonacci-heap.md)
+- [Elements](elements.md)
+- [Meld](meld.md)
+
+## Proof depends on
+
+- [Elements append](../part-02/elements-append.md)
 
 ## Sources
 

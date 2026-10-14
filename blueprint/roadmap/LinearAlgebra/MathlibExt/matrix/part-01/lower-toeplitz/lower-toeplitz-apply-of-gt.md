@@ -13,7 +13,7 @@ Above-diagonal entries of a lower-triangular Toeplitz matrix vanish.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Toeplitz](lower-toeplitz.md)
 
 ## Sources
 

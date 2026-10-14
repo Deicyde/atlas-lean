@@ -13,7 +13,7 @@ outgoing-isogeny convention.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraph](multigraph.md)
 
 ## Sources
 

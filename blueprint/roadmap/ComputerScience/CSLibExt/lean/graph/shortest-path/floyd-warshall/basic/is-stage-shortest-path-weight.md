@@ -14,6 +14,12 @@ lean: Cslib.Algorithms.Lean.FloydWarshall.IsStageShortestPathWeight
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Internal Vertices Below](internal-vertices-below.md)
+- [Is Weighted Path](is-weighted-path.md)
+- [Path Weight](path-weight.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Graph.ShortestPath.FloydWarshall.Basic](../../../../../../../../sources/v2/CSLibExt.md)

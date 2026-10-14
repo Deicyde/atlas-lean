@@ -15,6 +15,10 @@ The residue rings at `q` and its contraction have the same `Nat.card`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Quotient coprime residue equiv](quotient-coprime-residue-equiv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.ConductorResidue](../../../../sources/v2/MathlibExt.md)

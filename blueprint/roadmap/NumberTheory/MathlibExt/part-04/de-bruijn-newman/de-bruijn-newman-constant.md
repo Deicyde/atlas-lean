@@ -17,6 +17,10 @@ theorem and is not asserted here.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Zeros All Real](zeros-all-real.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.DeBruijnNewman](../../../../../sources/v2/MathlibExt.md)

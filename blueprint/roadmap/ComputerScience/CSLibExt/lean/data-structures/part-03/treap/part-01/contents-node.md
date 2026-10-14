@@ -13,7 +13,12 @@ Characteristic node equation for the linear inorder traversal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+- [Contents](contents.md)
+
+## Proof depends on
+
+- [Contents Aux](contents-aux.md)
 
 ## Sources
 

@@ -19,7 +19,7 @@ gated `qPochhammerInf` (which demands `‖q‖ < 1`) rules out.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Pochhammer Inf Raw](q-pochhammer-inf-raw.md)
 
 ## Sources
 

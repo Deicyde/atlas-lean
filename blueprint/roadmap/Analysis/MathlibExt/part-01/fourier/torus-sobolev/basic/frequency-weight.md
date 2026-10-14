@@ -12,7 +12,7 @@ The squared physical frequency, for a torus of period `2π`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frequency](frequency.md)
 
 ## Sources
 

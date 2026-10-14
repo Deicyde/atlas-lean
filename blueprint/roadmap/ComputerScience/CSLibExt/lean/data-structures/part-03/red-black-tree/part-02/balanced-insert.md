@@ -13,7 +13,17 @@ Insertion preserves black-height balance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balanced](../part-01/balanced.md)
+- [Tree](../part-01/tree.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Color](../part-01/color.md)
+- [Balance](../part-01/balance.md)
+- [Black Height](../part-01/black-height.md)
+- [Ins](ins.md)
+- [Make Black](make-black.md)
 
 ## Sources
 

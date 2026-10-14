@@ -12,7 +12,7 @@ A point lies in the closed triangle spanned by `A`, `B`, `C`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ The infimum is the least sufficient threshold in the source domain.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admissible Planar Threshold](../part-01/admissible-planar-threshold.md)
+- [Planar Distance Threshold](../part-01/planar-distance-threshold.md)
+
+## Proof depends on
+
+- [Planar Distance Threshold admissible](planar-distance-threshold-admissible.md)
+- [Planar Distance Threshold le of admissible](../part-01/planar-distance-threshold-le-of-admissib.md)
 
 ## Sources
 

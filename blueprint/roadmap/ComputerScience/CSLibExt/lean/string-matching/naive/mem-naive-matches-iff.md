@@ -13,7 +13,12 @@ An offset is reported exactly when the pattern matches there, including empty pa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Match At](../basic/match-at.md)
+- [Naive Matches](naive-matches.md)
+
+## Proof depends on
+
+- [Naive Matches ret](naive-matches-ret.md)
 
 ## Sources
 

@@ -13,7 +13,19 @@ Every valid parenthesization costs at least the reported optimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../basic/cost.md)
+- [Parenthesization](../basic/parenthesization.md)
+- [Is Valid](../basic/is-valid.md)
+- [Result](../basic/result.md)
+- [Matrix Chain Order](matrix-chain-order.md)
+- [Scalar Multiplication Cost](../basic/scalar-multiplication-cost.md)
+
+## Proof depends on
+
+- [Dimension Compatible](../basic/dimension-compatible.md)
+- [Cols](../basic/cols.md)
+- [Matrix Indices](../basic/matrix-indices.md)
+- [Rows](../basic/rows.md)
 
 ## Sources
 

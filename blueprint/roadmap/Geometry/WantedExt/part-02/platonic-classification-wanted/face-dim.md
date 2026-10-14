@@ -12,7 +12,7 @@ The affine dimension of a subset of `ℝⁿ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
 
 ## Sources
 

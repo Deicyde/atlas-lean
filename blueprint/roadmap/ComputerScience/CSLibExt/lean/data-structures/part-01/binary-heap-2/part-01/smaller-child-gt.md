@@ -13,7 +13,12 @@ A selected child has an index strictly below its parent in the tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smaller Child](smaller-child.md)
+
+## Proof depends on
+
+- [Heap Left](heap-left.md)
+- [Heap Right](heap-right.md)
 
 ## Sources
 

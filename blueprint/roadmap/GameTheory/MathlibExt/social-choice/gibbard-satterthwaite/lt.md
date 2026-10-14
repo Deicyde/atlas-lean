@@ -15,7 +15,7 @@ For new code, use `MathlibExt.Order.StrictTotalOrder.lt` directly.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strict Total Order](strict-total-order.md)
 
 ## Sources
 

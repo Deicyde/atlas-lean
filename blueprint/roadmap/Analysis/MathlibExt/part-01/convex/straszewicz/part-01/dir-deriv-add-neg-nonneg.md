@@ -13,7 +13,12 @@ The two opposite directional derivatives sum to something nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dir Deriv](dir-deriv.md)
+
+## Proof depends on
+
+- [Dir Deriv subadd](dir-deriv-subadd.md)
+- [Dir Deriv zero](dir-deriv-zero.md)
 
 ## Sources
 

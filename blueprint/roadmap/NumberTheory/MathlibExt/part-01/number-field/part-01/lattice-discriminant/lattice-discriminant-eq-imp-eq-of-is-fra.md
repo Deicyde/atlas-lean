@@ -13,7 +13,11 @@ Rigidity under `IsFractionRing`: equal discriminants force equal lattices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice Discriminant](lattice-discriminant.md)
+
+## Proof depends on
+
+- [Lattice Discriminant eq imp eq](lattice-discriminant-eq-imp-eq.md)
 
 ## Sources
 

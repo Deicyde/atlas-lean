@@ -14,6 +14,10 @@ The largest number of rich distances over `n`-point sets.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rich Distances](rich-distances.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.ErdosProblem756Wanted](../../../../../sources/v2/WantedExt.md)

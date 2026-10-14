@@ -13,7 +13,11 @@ The sum of the three actual executed cost coordinates is `Θ(n^4)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slow APSP](slow-apsp.md)
+
+## Proof depends on
+
+- [Slow APSP time](slow-apsp-time.md)
 
 ## Sources
 

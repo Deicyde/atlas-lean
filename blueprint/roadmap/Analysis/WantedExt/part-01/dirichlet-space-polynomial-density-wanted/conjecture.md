@@ -14,6 +14,12 @@ Open question from [AMR-022-8011] (Hayman (2018), Problem 8.11, https://arxiv.or
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dirichlet Space](dirichlet-space.md)
+- [Is Dirichlet Dense](is-dirichlet-dense.md)
+- [Poly Times](poly-times.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.DirichletSpacePolynomialDensityWanted](../../../../../sources/v2/WantedExt.md)

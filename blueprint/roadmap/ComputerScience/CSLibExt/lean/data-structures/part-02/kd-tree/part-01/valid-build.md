@@ -13,7 +13,16 @@ A tree built by median splits satisfies the kd invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](valid.md)
+- [Build](build.md)
+
+## Proof depends on
+
+- [Kd Tree](kd-tree.md)
+- [Head Coord](head-coord.md)
+- [Next Axis](next-axis.md)
+- [To List](to-list.md)
+- [To List node](to-list-node.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Floyd-Warshall executes exactly one transition for each `(k, i, j)` triple.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](cost.md)
+- [Floyd Warshall](floyd-warshall.md)
 
 ## Sources
 

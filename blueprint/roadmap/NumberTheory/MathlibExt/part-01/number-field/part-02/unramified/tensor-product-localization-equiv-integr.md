@@ -23,6 +23,10 @@ needed to recover those source theorems is not claimed here.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Etale localization](etale-localization.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.Unramified](../../../../../../../sources/v2/MathlibExt.md)

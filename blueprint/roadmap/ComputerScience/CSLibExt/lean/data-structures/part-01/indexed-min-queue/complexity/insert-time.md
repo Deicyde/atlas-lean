@@ -13,7 +13,8 @@ Each selected INSERT event coordinate has the frozen logarithmic bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Min Queue](../basic/indexed-min-queue.md)
+- [Insert](../basic/insert.md)
 
 ## Sources
 

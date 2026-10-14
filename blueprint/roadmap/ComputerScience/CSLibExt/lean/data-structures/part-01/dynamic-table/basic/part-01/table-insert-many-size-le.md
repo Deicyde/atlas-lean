@@ -13,7 +13,15 @@ Starting unallocated, logical slot capacity never exceeds twice the item count.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](table.md)
+- [Empty](empty.md)
+- [Table Insert Many](table-insert-many.md)
+
+## Proof depends on
+
+- [Table Insert](table-insert.md)
+- [Table Insert num](table-insert-num.md)
+- [Table Insert size](table-insert-size.md)
 
 ## Sources
 

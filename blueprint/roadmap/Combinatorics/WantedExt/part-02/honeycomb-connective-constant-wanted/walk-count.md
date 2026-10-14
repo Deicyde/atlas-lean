@@ -15,6 +15,12 @@ starting at the origin.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Honeycomb Vertex](honeycomb-vertex.md)
+- [Is Self Avoiding](is-self-avoiding.md)
+- [Visited Vertices](visited-vertices.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.HoneycombConnectiveConstantWanted](../../../../../sources/v2/WantedExt.md)

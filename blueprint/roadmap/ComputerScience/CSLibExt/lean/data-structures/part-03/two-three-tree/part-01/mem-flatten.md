@@ -13,7 +13,13 @@ The flattening contains exactly the structurally present keys.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](mem.md)
+- [Tree](tree.md)
+- [Flatten](flatten.md)
+
+## Proof depends on
+
+- [Flatten Aux](flatten-aux.md)
 
 ## Sources
 

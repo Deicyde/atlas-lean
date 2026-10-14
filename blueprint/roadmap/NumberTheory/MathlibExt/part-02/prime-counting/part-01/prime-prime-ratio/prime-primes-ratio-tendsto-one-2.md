@@ -22,6 +22,10 @@ supplied as the `Infinite` instance hypothesis.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prime Primes ratio tendsto one'](prime-primes-ratio-tendsto-one.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.PrimePrimeRatio](../../../../../../../sources/v2/MathlibExt.md)

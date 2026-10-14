@@ -14,6 +14,10 @@ The direct-weight matrix contains a negative cycle.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Negative Cycle](is-negative-cycle.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Graph.ShortestPath.FloydWarshall.Basic](../../../../../../../../sources/v2/CSLibExt.md)

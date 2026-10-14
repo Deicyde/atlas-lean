@@ -13,7 +13,11 @@ Repeating an existing piece enlarges a nonempty set's cover to any greater size.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Borsuk Cover](has-borsuk-cover.md)
+
+## Proof depends on
+
+- [Has Borsuk Cover pos](has-borsuk-cover-pos.md)
 
 ## Sources
 

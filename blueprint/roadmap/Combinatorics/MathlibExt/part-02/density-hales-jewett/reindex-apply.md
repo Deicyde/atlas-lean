@@ -13,7 +13,7 @@ Reindexing a line reindexes each of its points.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reindex](reindex.md)
 
 ## Sources
 

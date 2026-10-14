@@ -13,7 +13,11 @@ At most `m` comparisons per alignment, and no comparisons when the pattern is to
 
 ## Depends on
 
-This node has no prerequisites.
+- [Naive Matches](naive-matches.md)
+
+## Proof depends on
+
+- [Naive Matches time eq](naive-matches-time-eq.md)
 
 ## Sources
 

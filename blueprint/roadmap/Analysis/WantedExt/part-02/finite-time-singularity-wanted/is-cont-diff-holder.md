@@ -15,6 +15,11 @@ and `Df` is bounded and `α`-Hölder.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Holder](holder.md)
+- [Is Bounded Fun](is-bounded-fun.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.FiniteTimeSingularityWanted](../../../../../sources/v2/WantedExt.md)

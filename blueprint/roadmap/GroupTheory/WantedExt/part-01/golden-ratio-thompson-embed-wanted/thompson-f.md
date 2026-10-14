@@ -14,6 +14,11 @@ Thompson's group `F`: breakpoints in `ℤ[1/2]`, slopes powers of `2`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Dyadic](is-dyadic.md)
+- [Is PLHomeo With](is-plhomeo-with.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.GoldenRatioThompsonEmbedWanted](../../../../../sources/v2/WantedExt.md)

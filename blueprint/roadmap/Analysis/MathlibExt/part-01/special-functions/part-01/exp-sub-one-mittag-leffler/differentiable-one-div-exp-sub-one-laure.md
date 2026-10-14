@@ -13,7 +13,11 @@ The analytic Laurent remainder of the Bose-Einstein kernel is differentiable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [One Div Exp Sub One Laurent Remainder](one-div-exp-sub-one-laurent-remainder.md)
+
+## Proof depends on
+
+- [One div exp sub one eq tsum](one-div-exp-sub-one-eq-tsum.md)
 
 ## Sources
 

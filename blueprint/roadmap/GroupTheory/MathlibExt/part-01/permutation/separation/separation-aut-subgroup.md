@@ -15,6 +15,10 @@ in both directions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Circular Separates](circular-separates.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.Permutation.Separation](../../../../../../sources/v2/MathlibExt.md)

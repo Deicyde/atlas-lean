@@ -13,7 +13,7 @@ For `r ≥ 1` the polynomial is divisible by `X`, so its constant coefficient va
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Stirling First](r-stirling-first.md)
 
 ## Sources
 

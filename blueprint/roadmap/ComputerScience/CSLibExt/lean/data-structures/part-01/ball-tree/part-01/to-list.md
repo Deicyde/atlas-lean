@@ -12,7 +12,11 @@ The points stored in a tree, from left to right.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ball Tree](ball-tree.md)
+
+## Proof depends on
+
+- [To List Aux](to-list-aux.md)
 
 ## Sources
 

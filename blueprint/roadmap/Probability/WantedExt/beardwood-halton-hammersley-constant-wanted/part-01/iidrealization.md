@@ -12,7 +12,7 @@ A realization of an infinite i.i.d. sample with common law `law`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar Point](planar-point.md)
 
 ## Sources
 

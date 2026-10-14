@@ -13,7 +13,13 @@ The outer cube index set of a bounded set is finite for `0 < t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Outer Cube Set](outer-cube-set.md)
+
+## Proof depends on
+
+- [Integer Unit Cube](integer-unit-cube.md)
+- [Mem integer Unit Cube iff](mem-integer-unit-cube-iff.md)
+- [Mem outer Cube Set iff](mem-outer-cube-set-iff.md)
 
 ## Sources
 

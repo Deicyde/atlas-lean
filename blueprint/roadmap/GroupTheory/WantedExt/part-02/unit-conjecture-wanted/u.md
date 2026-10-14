@@ -12,7 +12,19 @@ The nontrivial unit defined in Theorem A of the paper.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R](r.md)
+
+## Proof depends on
+
+- [P](p.md)
+- [A](a.md)
+- [B](b.md)
+- [Generators](generators.md)
+- [P](p-2.md)
+- [Q](q.md)
+- [R](r-2.md)
+- [Relations](relations.md)
+- [S](s.md)
 
 ## Sources
 

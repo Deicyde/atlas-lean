@@ -35,6 +35,10 @@ normalized formula lines 283–289 SHA-256
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lucas binet formulas of field](lucas-binet-formulas-of-field.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Recurrences.LucasBinetFormula](../../../../../../../sources/v2/MathlibExt.md)

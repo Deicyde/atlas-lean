@@ -15,6 +15,11 @@ is an inscribed rectangle in `γ` of aspect ratio `tan(r·π/4)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Inscribed Rectangle](is-inscribed-rectangle.md)
+- [Aspect Ratio](aspect-ratio.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.InscribedRectanglesWanted](../../../../../sources/v2/WantedExt.md)

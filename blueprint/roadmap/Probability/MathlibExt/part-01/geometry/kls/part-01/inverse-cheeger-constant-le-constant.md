@@ -13,7 +13,14 @@ A law in positive dimension is bounded by the global KLS constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inverse Cheeger Constant](inverse-cheeger-constant.md)
+- [Kls Constant](kls-constant.md)
+
+## Proof depends on
+
+- [Dimensional Kls Constant](dimensional-kls-constant.md)
+- [Dimensional Kls Constant le constant](dimensional-kls-constant-le-constant.md)
+- [Inverse Cheeger Constant le dimensional](inverse-cheeger-constant-le-dimensional.md)
 
 ## Sources
 

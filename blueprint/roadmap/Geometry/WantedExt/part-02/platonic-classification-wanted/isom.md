@@ -14,6 +14,10 @@ Affine isometries of `ℝⁿ` — the rigid motions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [E](e.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.PlatonicClassificationWanted](../../../../../sources/v2/WantedExt.md)

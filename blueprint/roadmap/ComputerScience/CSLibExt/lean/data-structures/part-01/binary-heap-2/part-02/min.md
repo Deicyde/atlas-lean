@@ -12,7 +12,7 @@ Inspect the minimum without removing it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Heap](min-heap.md)
 
 ## Sources
 

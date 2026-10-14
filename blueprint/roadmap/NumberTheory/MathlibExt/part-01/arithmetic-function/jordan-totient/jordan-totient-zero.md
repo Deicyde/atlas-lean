@@ -13,7 +13,7 @@ Zero extension convention: `J_k(0) = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jordan Totient](jordan-totient.md)
 
 ## Sources
 

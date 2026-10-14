@@ -13,7 +13,7 @@ No valid edit script costs less than the reported distance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edit Distance](edit-distance.md)
 
 ## Sources
 

@@ -14,7 +14,12 @@ their starting positions as P-positions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](impartial-game.md)
+
+## Proof depends on
+
+- [Is P](is-p.md)
+- [Game Sum](game-sum.md)
 
 ## Sources
 

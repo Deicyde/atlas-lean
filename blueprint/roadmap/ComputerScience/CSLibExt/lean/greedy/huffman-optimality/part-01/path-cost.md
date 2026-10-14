@@ -12,7 +12,11 @@ Weighted external path length, defined directly by the merge recurrence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Weight Tree](huffman-weight-tree.md)
+
+## Proof depends on
+
+- [Total Weight](total-weight.md)
 
 ## Sources
 

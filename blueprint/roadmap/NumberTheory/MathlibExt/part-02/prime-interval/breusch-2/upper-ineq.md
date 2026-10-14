@@ -14,6 +14,10 @@ The assumed upper-bound shape for the endgame.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Log F9](../breusch/lower/part-01/log-f9.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch](../../../../../../sources/v2/MathlibExt.md)

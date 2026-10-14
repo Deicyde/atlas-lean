@@ -14,6 +14,12 @@ Ray elements congruent to `1` modulo `m`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Congruent One At Finite Part](congruent-one-at-finite-part.md)
+- [Positive At Infinite Part](positive-at-infinite-part.md)
+- [Ray Elements](ray-elements.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.RayGroup](../../../../../../../../../sources/v2/MathlibExt.md)

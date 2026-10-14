@@ -13,7 +13,11 @@ Cubic lower and upper bounds for the selected candidate-event metric.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Optimal BST](../basic/optimal-bst.md)
+
+## Proof depends on
+
+- [Optimal BST time](optimal-bst-time.md)
 
 ## Sources
 

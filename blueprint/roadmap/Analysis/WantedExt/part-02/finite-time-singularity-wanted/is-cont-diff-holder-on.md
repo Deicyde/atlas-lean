@@ -15,6 +15,11 @@ differentiable, and `Df` is bounded and `α`-Hölder on `s`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Holder On](holder-on.md)
+- [Is Bounded Fun On](is-bounded-fun-on.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.FiniteTimeSingularityWanted](../../../../../sources/v2/WantedExt.md)

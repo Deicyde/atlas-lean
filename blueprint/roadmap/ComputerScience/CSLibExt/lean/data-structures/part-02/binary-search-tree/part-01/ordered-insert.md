@@ -13,7 +13,12 @@ Insertion preserves the strict search-tree invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered](ordered.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [All](all.md)
 
 ## Sources
 

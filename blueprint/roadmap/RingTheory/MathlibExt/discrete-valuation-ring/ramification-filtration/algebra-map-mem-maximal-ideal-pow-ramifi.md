@@ -16,6 +16,10 @@ the `e`-th power of the target maximal ideal.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Map maximal Ideal eq pow ramification Idx](map-maximal-ideal-eq-pow-ramification-id.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DiscreteValuationRing.RamificationFiltration](../../../../../sources/v2/MathlibExt.md)

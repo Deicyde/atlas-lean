@@ -15,6 +15,12 @@ and every real value with that characterization equals `β_2`. This is a closed 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is BHHConstant For](is-bhhconstant-for.md)
+- [Unit Square Uniform Law](unit-square-uniform-law.md)
+- [Β₂](untitled.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Probability.BeardwoodHaltonHammersleyConstantWanted](../../../../../sources/v2/WantedExt.md)

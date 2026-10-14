@@ -13,7 +13,11 @@ fraction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
+
+## Proof depends on
+
+- [Covered Fraction](covered-fraction.md)
 
 ## Sources
 

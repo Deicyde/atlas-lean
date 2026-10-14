@@ -14,6 +14,10 @@ lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.yuCarlsson2
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Β₂](../part-01/untitled.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Probability.BeardwoodHaltonHammersleyConstantWanted](../../../../../sources/v2/WantedExt.md)

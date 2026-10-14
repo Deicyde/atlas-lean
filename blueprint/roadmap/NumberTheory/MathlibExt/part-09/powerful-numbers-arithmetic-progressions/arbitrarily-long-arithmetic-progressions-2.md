@@ -28,6 +28,11 @@ Proves `Wanted` entry `arbitrarily_long_arithmetic_progressions_of_powerful_numb
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Arbitrarily long arithmetic progressions of powerful numbers general](arbitrarily-long-arithmetic-progressions.md)
+- [Is KFull](../../part-07/kfull/is-kfull.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PowerfulNumbersArithmeticProgressions](../../../../../sources/v2/MathlibExt.md)

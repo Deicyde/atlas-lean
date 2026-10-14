@@ -13,7 +13,14 @@ Every successfully constructed Huffman tree supplies prefix-free codewords.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](../part-01/huffman-tree.md)
+- [Leaf Symbol](../part-01/leaf-symbol.md)
+- [Code Of Leaf](../part-01/code-of-leaf.md)
+- [Huffman](huffman.md)
+
+## Proof depends on
+
+- [Prefix Free](../part-01/prefix-free.md)
 
 ## Sources
 

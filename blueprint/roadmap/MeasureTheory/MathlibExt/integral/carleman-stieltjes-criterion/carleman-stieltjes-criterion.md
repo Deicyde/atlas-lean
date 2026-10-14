@@ -24,7 +24,11 @@ uniqueness to the difference of characteristic functions, then push forward by s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stieltjes Moment Determinate](stieltjes-moment-determinate.md)
+
+## Proof depends on
+
+- [Summable geometric means](summable-geometric-means.md)
 
 ## Sources
 

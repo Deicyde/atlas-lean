@@ -13,7 +13,8 @@ Each qualifying intermediate field lies below the maximal one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Finite Unramified](is-finite-unramified.md)
+- [Maximal Unramified Subextension](maximal-unramified-subextension.md)
 
 ## Sources
 

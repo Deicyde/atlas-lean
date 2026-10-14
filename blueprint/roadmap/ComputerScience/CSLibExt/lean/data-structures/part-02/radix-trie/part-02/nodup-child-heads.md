@@ -13,7 +13,12 @@ A valid node has no duplicate edge first symbols.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Radix Trie](../part-01/radix-trie.md)
+- [Valid](../part-01/valid.md)
+
+## Proof depends on
+
+- [Root Compact](../part-01/root-compact.md)
 
 ## Sources
 

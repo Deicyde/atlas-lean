@@ -13,7 +13,14 @@ Every listed key is found by lookup in the built trie, under some value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build From](build-from.md)
+- [Lookup](../part-01/lookup.md)
+
+## Proof depends on
+
+- [Insert](../part-01/insert.md)
+- [Lookup insert of ne](../part-01/lookup-insert-of-ne.md)
+- [Lookup insert same](../part-01/lookup-insert-same.md)
 
 ## Sources
 

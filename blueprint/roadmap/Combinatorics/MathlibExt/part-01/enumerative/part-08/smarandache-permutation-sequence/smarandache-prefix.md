@@ -16,6 +16,10 @@ sequence (concept `jis_sem_23e7b5e48daf56d0a358ebfc`, statement
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Smarandache Block](smarandache-block.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.SmarandachePermutationSequence](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ At most `n * ⌈log₂ n⌉ + (n - 1)` comparisons are charged for `n` input occ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Interval Schedule](interval-schedule.md)
 
 ## Sources
 

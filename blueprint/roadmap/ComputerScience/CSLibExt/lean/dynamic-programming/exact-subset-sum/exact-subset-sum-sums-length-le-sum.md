@@ -13,7 +13,12 @@ Nonnegative positional inputs bound all computed sums by the total input value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Subset Sum Sums](exact-subset-sum-sums.md)
+
+## Proof depends on
+
+- [Exact Subset Sum Sums mem](exact-subset-sum-sums-mem.md)
+- [Exact Subset Sum Sums sorted](exact-subset-sum-sums-sorted.md)
 
 ## Sources
 

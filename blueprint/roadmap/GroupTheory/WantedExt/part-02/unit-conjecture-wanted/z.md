@@ -12,7 +12,14 @@ The element `z` defined in Theorem A of the paper.
 
 ## Depends on
 
-This node has no prerequisites.
+- [P](p.md)
+
+## Proof depends on
+
+- [A](a.md)
+- [B](b.md)
+- [Generators](generators.md)
+- [Relations](relations.md)
 
 ## Sources
 

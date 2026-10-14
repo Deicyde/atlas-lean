@@ -14,6 +14,10 @@ The set of admissible asymptotic coset-cover exponents.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Asymptotic Coset Cover Exponent](is-asymptotic-coset-cover-exponent.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PolynomialFreimanRuzsaBinaryWanted](../../../../../sources/v2/WantedExt.md)

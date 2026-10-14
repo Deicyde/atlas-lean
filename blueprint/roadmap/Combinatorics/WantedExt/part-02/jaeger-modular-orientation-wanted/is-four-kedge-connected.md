@@ -17,6 +17,10 @@ The multigraph has at least two vertices, and every cut whose two sides are none
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cut Size](cut-size.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.JaegerModularOrientationWanted](../../../../../sources/v2/WantedExt.md)

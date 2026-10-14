@@ -13,7 +13,7 @@ The first candidate is hired regardless of its quality.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hire Assistant](hire-assistant.md)
 
 ## Sources
 

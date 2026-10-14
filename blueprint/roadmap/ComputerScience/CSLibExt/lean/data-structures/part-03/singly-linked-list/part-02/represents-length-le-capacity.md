@@ -14,7 +14,8 @@ identities are distinct elements of `Fin capacity`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../part-01/node.md)
+- [Represents](../part-01/represents.md)
 
 ## Sources
 

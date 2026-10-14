@@ -13,7 +13,11 @@ The defining series of Catalan's constant has it as its sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Catalan Constant](catalan-constant.md)
+
+## Proof depends on
+
+- [Summable catalan Constant terms](summable-catalan-constant-terms.md)
 
 ## Sources
 

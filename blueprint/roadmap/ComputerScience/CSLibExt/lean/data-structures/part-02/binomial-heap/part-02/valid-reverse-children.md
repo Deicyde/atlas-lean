@@ -13,7 +13,16 @@ Reversing a valid tree's children produces a valid increasing-rank forest.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](../part-01/valid-2.md)
+- [Binomial Tree](../part-01/binomial-tree.md)
+- [Valid](../part-01/valid.md)
+- [Children](../part-01/children.md)
+
+## Proof depends on
+
+- [Child valid](../part-01/child-valid.md)
+- [Children ranks](../part-01/children-ranks.md)
+- [Rank](../part-01/rank.md)
 
 ## Sources
 

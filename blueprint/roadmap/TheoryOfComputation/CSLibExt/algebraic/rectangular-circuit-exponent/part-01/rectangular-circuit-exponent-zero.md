@@ -13,7 +13,13 @@ The exact zero-aspect operation exponent follows from actual outer-product circu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectangular Circuit Exponent](rectangular-circuit-exponent.md)
+
+## Proof depends on
+
+- [Has Rectangular Circuit Exponent zero two](has-rectangular-circuit-exponent-zero-tw.md)
+- [Rectangular Circuit Exponent le of admissible](rectangular-circuit-exponent-le-of-admis.md)
+- [Two le rectangular Circuit Exponent](two-le-rectangular-circuit-exponent.md)
 
 ## Sources
 

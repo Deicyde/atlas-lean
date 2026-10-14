@@ -15,6 +15,11 @@ ATLAS `valuation_algebraMap_unit_eq_one` is discharged inline below).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integral Units To Field Units](integral-units-to-field-units.md)
+- [Mem ray Elements of valuation eq one](../finite-congruence/mem-ray-elements-of-valuation-eq-one.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.IntegralUnits](../../../../../../../../../sources/v2/MathlibExt.md)

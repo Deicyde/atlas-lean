@@ -13,7 +13,18 @@ Membership in a tree built from a list is list membership.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](../../binary-search-tree/part-01/mem.md)
+- [Tree](../part-01/tree.md)
+- [Erase](../part-01/erase.md)
+- [From List](../part-01/from-list.md)
+
+## Proof depends on
+
+- [From List](../../binary-search-tree/part-01/from-list.md)
+- [Insert](../../binary-search-tree/part-01/insert.md)
+- [Mem from List](../../binary-search-tree/part-01/mem-from-list.md)
+- [Erase insert](../part-01/erase-insert.md)
+- [Insert](../part-01/insert.md)
 
 ## Sources
 

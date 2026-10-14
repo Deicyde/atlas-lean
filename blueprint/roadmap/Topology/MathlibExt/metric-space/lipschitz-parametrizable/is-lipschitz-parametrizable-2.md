@@ -13,7 +13,11 @@ A finite set is `d`-Lipschitz parametrizable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lipschitz Parametrizable](is-lipschitz-parametrizable.md)
+
+## Proof depends on
+
+- [Is Lipschitz Parametrizable coe](is-lipschitz-parametrizable-coe.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ already set or some hash function sends `x` to `i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bloom Filter](bloom-filter.md)
+- [Insert](insert.md)
 
 ## Sources
 

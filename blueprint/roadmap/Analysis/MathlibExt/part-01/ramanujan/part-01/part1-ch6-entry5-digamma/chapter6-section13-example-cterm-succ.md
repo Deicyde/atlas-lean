@@ -14,7 +14,7 @@ Peeling off the first factor: the `(j + 1)`-th term at `x` is `-1 / (x + 1)` tim
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter6 Section13 Example CTerm](chapter6-section13-example-cterm.md)
 
 ## Sources
 

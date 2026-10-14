@@ -12,7 +12,12 @@ Build a heap by genuine arity-dependent insertions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Min Heap](../part-02/dary-min-heap.md)
+
+## Proof depends on
+
+- [Empty](../part-02/empty.md)
+- [Push](../part-02/push.md)
 
 ## Sources
 

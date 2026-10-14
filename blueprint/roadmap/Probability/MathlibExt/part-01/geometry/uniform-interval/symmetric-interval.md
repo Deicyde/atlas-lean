@@ -14,6 +14,10 @@ An actual closed symmetric interval in one-dimensional Euclidean space.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Line Isometry](line-isometry.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Geometry.UniformInterval](../../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,7 @@ The number of points stored in a tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kd Tree](kd-tree.md)
 
 ## Sources
 

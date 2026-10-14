@@ -13,7 +13,8 @@ The denominator tuple lies in `𝓔ₙ^<`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Strict Egyptian](is-strict-egyptian.md)
+- [Is Strict Underapproximation](is-strict-underapproximation.md)
 
 ## Sources
 

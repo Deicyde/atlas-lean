@@ -13,7 +13,7 @@ The affine-coordinate map carries the changed Weierstrass equation to the origin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Map Affine Coordinates](map-affine-coordinates.md)
 
 ## Sources
 

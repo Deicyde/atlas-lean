@@ -13,7 +13,11 @@ of `Disc → ℂ` ([AMR-022-5024], Problem 5.24).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Disc](disc.md)
+
+## Proof depends on
+
+- [Is HInf](is-hinf.md)
 
 ## Sources
 

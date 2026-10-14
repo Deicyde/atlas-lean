@@ -13,7 +13,20 @@ Linking valid trees preserves all tree invariants.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Tree](fibonacci-tree.md)
+- [Valid](valid.md)
+- [Link](link.md)
+
+## Proof depends on
+
+- [Child valid](child-valid.md)
+- [Degree eq](degree-eq.md)
+- [Root le](root-le.md)
+- [Children](children.md)
+- [Degree](degree.md)
+- [Elements](elements.md)
+- [Elements link](elements-link.md)
+- [Root](root.md)
 
 ## Sources
 

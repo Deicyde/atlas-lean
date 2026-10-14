@@ -12,7 +12,12 @@ Executes one operation and discards the value removed by a dequeue.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Operation](operation.md)
+
+## Proof depends on
+
+- [Dequeue](dequeue.md)
+- [Enqueue](enqueue.md)
 
 ## Sources
 

@@ -22,6 +22,10 @@ Source identifiers: `jis_0047f665dcff445f0a87ef54`,
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Telescopic Gcd](telescopic-gcd.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.TelescopicSequence](../../../../../sources/v2/MathlibExt.md)

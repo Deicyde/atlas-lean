@@ -13,7 +13,12 @@ Truncated Perron formula with explicit Schoenfeld-shape error bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perron Kernel](../part-01/perron-kernel.md)
+
+## Proof depends on
+
+- [Perron bound gt one](perron-bound-gt-one.md)
+- [Perron bound lt one](perron-bound-lt-one.md)
 
 ## Sources
 

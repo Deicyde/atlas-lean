@@ -13,7 +13,14 @@ Pruning at a vertex that does not occur is the identity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
+- [Prune At](prune-at.md)
+
+## Proof depends on
+
+- [Children ind](../../euler-tour-tree/part-01/children-ind.md)
+- [Vertices node](../../euler-tour-tree/part-01/vertices-node.md)
 
 ## Sources
 

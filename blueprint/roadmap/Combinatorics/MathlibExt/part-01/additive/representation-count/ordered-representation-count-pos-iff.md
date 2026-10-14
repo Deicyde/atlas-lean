@@ -14,7 +14,7 @@ ordered representation `a + b = n` with `a ∈ A` and `b ∈ A`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered Representation Count](ordered-representation-count.md)
 
 ## Sources
 

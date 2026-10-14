@@ -12,7 +12,12 @@ Total weights represented by a work forest.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Work Item](../../huffman/part-02/huffman-work-item.md)
+
+## Proof depends on
+
+- [Huffman Tree](../../huffman/part-01/huffman-tree.md)
+- [Total Weight](../../huffman/part-01/total-weight.md)
 
 ## Sources
 

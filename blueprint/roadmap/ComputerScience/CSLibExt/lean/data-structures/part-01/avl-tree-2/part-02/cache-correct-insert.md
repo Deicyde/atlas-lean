@@ -13,7 +13,16 @@ Insertion preserves correct cached heights.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Correct](../part-01/cache-correct.md)
+- [Tree](../part-01/tree.md)
+- [Insert](../part-01/insert.md)
+
+## Proof depends on
+
+- [Balance](../part-01/balance.md)
+- [Cache Correct balance](cache-correct-balance.md)
+- [Cache Correct mk Node](cache-correct-mk-node.md)
+- [Height](../part-01/height.md)
 
 ## Sources
 

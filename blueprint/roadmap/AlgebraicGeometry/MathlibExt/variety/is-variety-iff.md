@@ -14,7 +14,7 @@ properties on the structure morphism.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Variety](is-variety.md)
 
 ## Sources
 

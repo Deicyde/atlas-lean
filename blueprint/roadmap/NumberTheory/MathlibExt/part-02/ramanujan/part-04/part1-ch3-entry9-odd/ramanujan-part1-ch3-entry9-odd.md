@@ -16,7 +16,13 @@ Proves `Wanted` entry `ramanujan_part1_ch3_entry9_odd`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Bell Generating](../part1-ch3-entry9-ii-generalizedbellgenerating-de/generalized-bell-generating.md)
+- [Entry9 P](entry9-p.md)
+
+## Proof depends on
+
+- [Ramanujan part1 ch3 entry9 ii generalizedbellgenerating defining](../part1-ch3-entry9-ii-generalizedbellgenerating-de/ramanujan-part1-ch3-entry9-ii-generalize.md)
+- [Entry9 P closed](entry9-p-closed.md)
 
 ## Sources
 

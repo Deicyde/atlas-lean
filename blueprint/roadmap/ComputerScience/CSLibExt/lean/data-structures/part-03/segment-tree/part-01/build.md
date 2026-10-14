@@ -12,7 +12,12 @@ Builds a segment tree from a list by recursively splitting the list in half.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Segment Tree](segment-tree.md)
+
+## Proof depends on
+
+- [Agg](agg.md)
+- [Size](size.md)
 
 ## Sources
 

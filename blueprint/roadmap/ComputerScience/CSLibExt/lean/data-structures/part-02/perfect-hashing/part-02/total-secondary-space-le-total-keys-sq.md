@@ -16,7 +16,15 @@ function, whose existence is a probabilistic statement not proved here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](../part-01/perfect-hashing.md)
+- [Square Sized](square-sized.md)
+- [Total Keys](total-keys.md)
+- [Total Secondary Space](total-secondary-space.md)
+
+## Proof depends on
+
+- [Bucket Size](../part-01/bucket-size.md)
+- [Total Secondary Space eq sum sq](total-secondary-space-eq-sum-sq.md)
 
 ## Sources
 

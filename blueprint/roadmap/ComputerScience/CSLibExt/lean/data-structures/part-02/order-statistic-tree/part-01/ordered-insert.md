@@ -13,7 +13,17 @@ Insertion preserves the prerequisite BST ordering invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered](ordered.md)
+- [Tree](tree.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Ordered](../../binary-search-tree/part-01/ordered.md)
+- [Insert](../../binary-search-tree/part-01/insert.md)
+- [Ordered insert](../../binary-search-tree/part-01/ordered-insert.md)
+- [Erase](erase.md)
+- [Erase insert](erase-insert.md)
 
 ## Sources
 

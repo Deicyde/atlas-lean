@@ -12,7 +12,11 @@ The vertices of a tree in preorder.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Vertices Aux](vertices-aux.md)
 
 ## Sources
 

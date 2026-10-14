@@ -13,7 +13,11 @@ lean: Cslib.Algorithms.Lean.AvlTree.cacheCorrect_deleteMin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete Min](../part-01/delete-min.md)
+
+## Proof depends on
+
+- [Cache Correct erase Min](../part-01/cache-correct-erase-min.md)
 
 ## Sources
 

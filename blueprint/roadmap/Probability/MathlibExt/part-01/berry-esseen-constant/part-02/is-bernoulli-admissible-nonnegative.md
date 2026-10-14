@@ -13,7 +13,13 @@ The subclass is nonvacuous, so its common coefficients are nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bernoulli Admissible](is-bernoulli-admissible.md)
+
+## Proof depends on
+
+- [Symmetric Bernoulli Law](../part-01/symmetric-bernoulli-law.md)
+- [Symmetric Bernoulli is Bernoulli](symmetric-bernoulli-is-bernoulli.md)
+- [Symmetric Bernoulli third Moment](symmetric-bernoulli-third-moment.md)
 
 ## Sources
 

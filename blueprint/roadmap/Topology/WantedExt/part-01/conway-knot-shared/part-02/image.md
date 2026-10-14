@@ -12,7 +12,12 @@ The image of the PL knot in `ℝ³` (the trace of the polyline).
 
 ## Depends on
 
-This node has no prerequisites.
+- [PLKnot](plknot.md)
+- [R3](../part-01/r3.md)
+
+## Proof depends on
+
+- [Pl Curve](../part-01/pl-curve.md)
 
 ## Sources
 

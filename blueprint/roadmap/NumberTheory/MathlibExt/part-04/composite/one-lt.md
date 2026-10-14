@@ -13,7 +13,7 @@ A composite natural number is greater than one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Composite](is-composite.md)
 
 ## Sources
 

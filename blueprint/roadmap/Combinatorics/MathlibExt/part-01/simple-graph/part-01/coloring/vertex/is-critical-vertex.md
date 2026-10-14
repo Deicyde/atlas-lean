@@ -14,6 +14,10 @@ A vertex is critical if deleting it reduces the chromatic number.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Critical Verts](is-critical-verts.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Coloring.Vertex](../../../../../../../../sources/v2/MathlibExt.md)

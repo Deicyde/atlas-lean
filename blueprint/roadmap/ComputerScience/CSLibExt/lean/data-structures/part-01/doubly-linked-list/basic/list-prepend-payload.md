@@ -13,7 +13,12 @@ Every payload, including satellite data and duplicate keys, is preserved.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
+- [List Prepend](list-prepend.md)
+
+## Proof depends on
+
+- [List Prepend get](list-prepend-get.md)
 
 ## Sources
 

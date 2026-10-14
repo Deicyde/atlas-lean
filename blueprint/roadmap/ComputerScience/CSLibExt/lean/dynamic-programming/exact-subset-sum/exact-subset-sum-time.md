@@ -13,7 +13,8 @@ Exact selected-event cost, with every phase reading the actual public prefix res
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Subset Sum](exact-subset-sum.md)
+- [Exact Subset Sum Sums](exact-subset-sum-sums.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ Classical block `A₃ = 01101001`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Classical Block](../part-01/classical-block.md)
 
 ## Sources
 

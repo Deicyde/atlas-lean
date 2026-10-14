@@ -14,6 +14,10 @@ Integer request interface; nonpositive counts perform no POP.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Multipop](multipop.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.Stack.Multipop](../../../../../../../../sources/v2/CSLibExt.md)

@@ -13,7 +13,14 @@ Upper bound for `logF9 n` assuming no prime in `(1890 * n, 2100 * n]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log F9](../../lower/part-01/log-f9.md)
+
+## Proof depends on
+
+- [U9 B le](u9-b-le.md)
+- [U9 C le](u9-c-le.md)
+- [U9 bridge](../part-02/u9-bridge.md)
+- [Nu9](../part-02/nu9.md)
 
 ## Sources
 

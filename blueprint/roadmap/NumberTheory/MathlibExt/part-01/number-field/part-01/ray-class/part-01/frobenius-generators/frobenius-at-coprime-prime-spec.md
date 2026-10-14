@@ -16,7 +16,8 @@ at a prime above `p` with finite residue field, and that prime is unramified
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Unramified Outside](is-unramified-outside.md)
+- [Frobenius At Coprime Prime](frobenius-at-coprime-prime.md)
 
 ## Sources
 

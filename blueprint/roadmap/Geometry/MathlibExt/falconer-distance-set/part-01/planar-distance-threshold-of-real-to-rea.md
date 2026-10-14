@@ -13,7 +13,11 @@ Conversion to the nonnegative real value and back retains the actual infimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar Distance Threshold](planar-distance-threshold.md)
+
+## Proof depends on
+
+- [Planar Distance Threshold ne top](planar-distance-threshold-ne-top.md)
 
 ## Sources
 

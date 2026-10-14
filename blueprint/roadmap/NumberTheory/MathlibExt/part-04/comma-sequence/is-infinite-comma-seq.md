@@ -16,6 +16,10 @@ valid base `2 ≤ b` and positive initial value `0 < v`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Comma Succ](is-comma-succ.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.CommaSequence](../../../../../sources/v2/MathlibExt.md)

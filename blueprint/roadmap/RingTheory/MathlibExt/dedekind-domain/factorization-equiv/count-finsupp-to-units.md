@@ -13,7 +13,7 @@ The valuation of a reconstructed ideal recovers the prescribed exponent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finsupp To Units](finsupp-to-units.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ over fields of characteristic other than `3`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cubic Surface](cubic-surface.md)
 
 ## Sources
 

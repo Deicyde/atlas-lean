@@ -13,7 +13,16 @@ A tree built from a list is valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](valid.md)
+- [Build](build.md)
+
+## Proof depends on
+
+- [Segment Tree](segment-tree.md)
+- [Agg](agg.md)
+- [Size](size.md)
+- [To List](to-list.md)
+- [To List node](to-list-node.md)
 
 ## Sources
 

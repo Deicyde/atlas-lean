@@ -13,7 +13,12 @@ The removed node remains allocated with its entire original record.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../basic/node.md)
+- [List Delete](list-delete.md)
+
+## Proof depends on
+
+- [List Delete get](list-delete-get.md)
 
 ## Sources
 

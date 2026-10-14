@@ -15,6 +15,10 @@ The maximum term is below a bound exactly when every Taylor term is.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Wiman Term le wiman Maximum Term](wiman-term-le-wiman-maximum-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.Wiman.MaximumTermAttained](../../../../../../../../sources/v2/MathlibExt.md)

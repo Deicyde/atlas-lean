@@ -13,7 +13,8 @@ The quotient map agrees with the quotient constructor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padic Quotient Int](padic-quotient-int.md)
+- [Padic Quotient Map](padic-quotient-map.md)
 
 ## Sources
 

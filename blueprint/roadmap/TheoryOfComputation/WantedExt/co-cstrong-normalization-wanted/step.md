@@ -12,7 +12,7 @@ One step of beta reduction, under any context.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tm](tm.md)
 
 ## Sources
 

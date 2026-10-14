@@ -14,6 +14,10 @@ Source-domain `F_{t,P}(x)` for bounded `P` and positive `t`, lines 62-67.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Translated Lattice Enumerator](translated-lattice-enumerator.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.LatticePointEnumerator](../../../../sources/v2/MathlibExt.md)

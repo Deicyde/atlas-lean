@@ -22,7 +22,7 @@ source wording.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laplace Convergent](../basic/laplace-convergent.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ A dimensional upper bound is exactly the universal canonical smaller-diameter co
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Borsuk Cover](has-borsuk-cover.md)
+- [Dimension Borsuk Number](dimension-borsuk-number.md)
+
+## Proof depends on
+
+- [Set Borsuk Number](set-borsuk-number.md)
+- [Set Borsuk Number le iff](set-borsuk-number-le-iff.md)
+- [Set Borsuk Number le of cover](set-borsuk-number-le-of-cover.md)
 
 ## Sources
 

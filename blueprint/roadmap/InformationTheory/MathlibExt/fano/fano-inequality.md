@@ -15,6 +15,10 @@ Conditional entropy is bounded by error probability via Fano's inequality.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fano inequality general](fano-inequality-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.InformationTheory.Fano](../../../../sources/v2/MathlibExt.md)

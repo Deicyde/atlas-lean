@@ -14,6 +14,11 @@ Universality of a point set for `n`-vertex planar graphs [GRAPH-022].
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Straight Line Planar Embedding](is-straight-line-planar-embedding.md)
+- [Is Planar](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-03/planarity/is-planar.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.UniversalPointSetsSubquadraticWanted](../../../../sources/v2/WantedExt.md)

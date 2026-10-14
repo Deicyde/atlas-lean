@@ -12,7 +12,11 @@ Dictatorship: some fixed voter whose strict preferences are always respected soc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Social Welfare Function](social-welfare-function.md)
+
+## Proof depends on
+
+- [Is Dictator](is-dictator.md)
 
 ## Sources
 

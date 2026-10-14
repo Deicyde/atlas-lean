@@ -15,6 +15,10 @@ The one-variable multivariable-Laurent representation agrees with Mathlib's
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fin One Add Equiv](fin-one-add-equiv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Polynomial.MultivariableMahlerMeasure](../../../../../../sources/v2/MathlibExt.md)

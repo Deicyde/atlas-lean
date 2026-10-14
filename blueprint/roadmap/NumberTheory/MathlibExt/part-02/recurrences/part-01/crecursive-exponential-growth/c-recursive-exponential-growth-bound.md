@@ -21,6 +21,10 @@ Proves `Wanted` entry `c_recursive_exponential_growth_bound`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists norm lt pow of is Solution](exists-norm-lt-pow-of-is-solution.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Recurrences.CRecursiveExponentialGrowth](../../../../../../../sources/v2/MathlibExt.md)

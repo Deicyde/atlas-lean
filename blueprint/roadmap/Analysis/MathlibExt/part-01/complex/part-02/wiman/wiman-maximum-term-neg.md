@@ -13,7 +13,12 @@ Negating a radius does not change the maximum Taylor term.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Maximum Term](wiman-maximum-term.md)
+
+## Proof depends on
+
+- [Wiman Term](wiman-term.md)
+- [Wiman Term neg](wiman-term-neg.md)
 
 ## Sources
 

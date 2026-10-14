@@ -14,7 +14,7 @@ compositions. Negative prices do not create a discard option.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recursive Cut Rod](recursive-cut-rod.md)
 
 ## Sources
 

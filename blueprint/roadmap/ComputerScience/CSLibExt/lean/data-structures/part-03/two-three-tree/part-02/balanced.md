@@ -13,7 +13,12 @@ Every root's tree is balanced.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balanced](../part-01/balanced.md)
+- [Root](root.md)
+
+## Proof depends on
+
+- [Balanced](../part-01/balanced-2.md)
 
 ## Sources
 

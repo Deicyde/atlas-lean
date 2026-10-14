@@ -13,7 +13,9 @@ The accumulator traversal prepends exactly the tree's points.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kd Tree](kd-tree.md)
+- [To List](to-list.md)
+- [To List Aux](to-list-aux.md)
 
 ## Sources
 

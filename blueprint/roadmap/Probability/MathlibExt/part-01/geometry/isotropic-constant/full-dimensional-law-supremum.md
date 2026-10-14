@@ -15,6 +15,10 @@ separately tracked intrinsic-coordinate bridge.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dimension Law Supremum](dimension-law-supremum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Geometry.IsotropicConstant](../../../../../../sources/v2/MathlibExt.md)

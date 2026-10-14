@@ -18,6 +18,10 @@ recorded here as an abbreviation so its semantics are not duplicated.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Eventually Periodic](is-eventually-periodic.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Dynamics.EventuallyPeriodicSequence](../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,7 @@ including the final singleton draw and self-swap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Randomly Permute](randomly-permute.md)
 
 ## Sources
 

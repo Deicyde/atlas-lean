@@ -15,6 +15,15 @@ The chain covers `[53, 9820997)` with ratio `9 / 8`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bracket](bracket.md)
+- [Chain](chain.md)
+- [Chain prime](chain-prime.md)
+- [Chain ratio](chain-ratio.md)
+- [Chain sorted](chain-sorted.md)
+- [Zip mem of consec](zip-mem-of-consec.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,12 @@ An overlined size is positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition](overpartition.md)
+- [Is Overlined](is-overlined.md)
+
+## Proof depends on
+
+- [Is Overlined mem parts](is-overlined-mem-parts.md)
 
 ## Sources
 

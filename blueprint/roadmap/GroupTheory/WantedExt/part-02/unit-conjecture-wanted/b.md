@@ -12,7 +12,7 @@ The second generator of the group `P` defined in Theorem A of the paper.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generators](generators.md)
 
 ## Sources
 

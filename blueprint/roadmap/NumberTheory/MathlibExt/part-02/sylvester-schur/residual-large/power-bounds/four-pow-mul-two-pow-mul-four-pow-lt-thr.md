@@ -16,6 +16,10 @@ exponents.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Two pow nineteen mul div twelve le three pow](two-pow-nineteen-mul-div-twelve-le-three.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.ResidualLarge.PowerBounds](../../../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,8 @@ The actual structure tensor `sum e_(i,j) ⊗ e_(j,k) ⊗ e_(k,i)` in Mathlib's t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matrix Coordinate](../part-01/matrix-coordinate.md)
+- [Trilinear Tensor](../part-01/trilinear-tensor.md)
 
 ## Sources
 

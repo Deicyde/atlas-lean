@@ -14,7 +14,13 @@ member of the optimization family, not its claimed optimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gradient Descent Uniform Rate](gradient-descent-uniform-rate.md)
+
+## Proof depends on
+
+- [Is Unit Smooth Convex](is-unit-smooth-convex.md)
+- [Gradient Descent](../gradient-descent-convex-sublinear-rate.md)
+- [Gradient Descent Trajectory](gradient-descent-trajectory.md)
 
 ## Sources
 

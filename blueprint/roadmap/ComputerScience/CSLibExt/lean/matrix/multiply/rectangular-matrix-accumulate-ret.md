@@ -13,7 +13,11 @@ The saved vector output refines accumulation using canonical matrix multiplicati
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectangular Matrix Accumulate](rectangular-matrix-accumulate.md)
+
+## Proof depends on
+
+- [Rectangular Matrix Accumulate apply](rectangular-matrix-accumulate-apply.md)
 
 ## Sources
 

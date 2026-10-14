@@ -13,7 +13,9 @@ Every vertex degree is bounded by the maximum degree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](../part-01/edge-indexed-multigraph.md)
+- [Degree](degree.md)
+- [Max Degree](max-degree.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ through `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tarski Absolute](tarski-absolute.md)
 
 ## Sources
 

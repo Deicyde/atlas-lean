@@ -12,7 +12,7 @@ Per-place component map out of the completion tensor product.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Places Over](../finite-places-over/places-over.md)
 
 ## Sources
 

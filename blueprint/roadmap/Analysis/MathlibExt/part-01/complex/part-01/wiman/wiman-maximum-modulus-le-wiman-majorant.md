@@ -15,6 +15,10 @@ The maximum modulus on a circle is bounded by the positive radial Taylor majoran
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Maximum Modulus Attained](exists-mem-sphere-eq-wiman-maximum-modul.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.Wiman.MaximumModulusLeMajorant](../../../../../../../sources/v2/MathlibExt.md)

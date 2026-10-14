@@ -14,7 +14,8 @@ disjoint nonempty open balls have countably many centers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Packing](packing.md)
+- [Space](space.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The half-open cube `cube n k ⊆ 𝕋^d` for `k : Fin d → Fin n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torus](torus.md)
 
 ## Sources
 

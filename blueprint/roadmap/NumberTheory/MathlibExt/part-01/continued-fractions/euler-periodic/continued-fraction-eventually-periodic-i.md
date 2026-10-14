@@ -17,6 +17,10 @@ no stronger reduced-quadratic criterion are asserted.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Real Quadratic Irrational of continued Fraction Eventually Periodic](is-real-quadratic-irrational-of-continue.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ContinuedFractions.EulerPeriodic](../../../../../../sources/v2/MathlibExt.md)

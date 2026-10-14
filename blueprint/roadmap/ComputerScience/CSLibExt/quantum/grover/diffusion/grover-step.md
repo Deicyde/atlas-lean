@@ -12,7 +12,12 @@ One Grover iteration: phase inversion followed by inversion about the mean.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amplitude](../basic/amplitude.md)
+
+## Proof depends on
+
+- [Diffusion](diffusion.md)
+- [Phase Oracle](../basic/phase-oracle.md)
 
 ## Sources
 

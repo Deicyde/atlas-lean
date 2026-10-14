@@ -14,6 +14,10 @@ Köthe's conjecture: the sum of two nil left ideals is nil.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Nil Left Ideal](is-nil-left-ideal.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Algebra.KoetheNilLeftIdealsWanted](../../../../sources/v2/WantedExt.md)

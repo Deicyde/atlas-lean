@@ -13,7 +13,11 @@ symbols as the input.  Full binary structure is intrinsic to `HuffmanTree`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](../../huffman/part-01/huffman-tree.md)
+
+## Proof depends on
+
+- [Weighted Leaves](../../huffman/part-01/weighted-leaves.md)
 
 ## Sources
 

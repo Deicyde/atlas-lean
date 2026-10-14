@@ -14,6 +14,10 @@ The key at the zero-based inorder position, if that position exists.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inorder](inorder.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BinarySearchTree](../../../../../../../../sources/v2/CSLibExt.md)

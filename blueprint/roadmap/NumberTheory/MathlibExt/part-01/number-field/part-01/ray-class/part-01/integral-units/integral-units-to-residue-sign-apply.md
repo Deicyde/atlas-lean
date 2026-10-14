@@ -13,7 +13,13 @@ The residue-sign map evaluated on an integral unit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integral Units To Ray Elements](integral-units-to-ray-elements.md)
+- [Integral Units To Residue Sign](integral-units-to-residue-sign.md)
+
+## Proof depends on
+
+- [Integral Units To Ray Quotient](integral-units-to-ray-quotient.md)
+- [Integral Units To Ray Quotient apply](integral-units-to-ray-quotient-apply.md)
 
 ## Sources
 

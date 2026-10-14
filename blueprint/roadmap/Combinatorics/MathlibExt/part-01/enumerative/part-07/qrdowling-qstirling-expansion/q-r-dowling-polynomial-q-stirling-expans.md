@@ -18,6 +18,10 @@ recurrences over `ℂ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eval qr Dowling Polynomial whitney Second](eval-qr-dowling-polynomial-whitney-secon.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.QRDowlingQStirlingExpansion](../../../../../../../sources/v2/MathlibExt.md)

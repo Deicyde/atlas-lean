@@ -13,7 +13,7 @@ Unfolding characterization of level-`k` completeness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KComplete](is-kcomplete.md)
 
 ## Sources
 

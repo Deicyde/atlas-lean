@@ -13,7 +13,8 @@ Contents have one entry per identity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
+- [Contents](contents.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ Recoloring the root black is invisible after erasing colors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Erase](../part-01/erase.md)
+- [Make Black](make-black.md)
+
+## Proof depends on
+
+- [Color](../part-01/color.md)
 
 ## Sources
 

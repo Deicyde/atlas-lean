@@ -13,7 +13,7 @@ The first mixed differential operator can be peeled from the defining list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mixed Differential](mixed-differential.md)
 
 ## Sources
 

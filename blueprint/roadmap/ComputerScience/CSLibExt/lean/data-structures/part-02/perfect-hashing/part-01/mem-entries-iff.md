@@ -13,7 +13,9 @@ The list abstraction `entries` contains exactly the stored bindings.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](perfect-hashing.md)
+- [Stored](stored.md)
+- [Entries](entries.md)
 
 ## Sources
 

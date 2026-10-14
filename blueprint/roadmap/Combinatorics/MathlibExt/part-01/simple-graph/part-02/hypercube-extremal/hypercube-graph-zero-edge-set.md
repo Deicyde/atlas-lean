@@ -13,7 +13,11 @@ lean: SimpleGraph.hypercubeGraph_zero_edgeSet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypercube Graph](hypercube-graph.md)
+
+## Proof depends on
+
+- [Hypercube Graph zero not adj](hypercube-graph-zero-not-adj.md)
 
 ## Sources
 

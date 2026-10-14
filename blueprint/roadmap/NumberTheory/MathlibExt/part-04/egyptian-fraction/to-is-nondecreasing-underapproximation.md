@@ -16,7 +16,17 @@ same sum bound).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Nondecreasing Underapproximation](is-nondecreasing-underapproximation.md)
+- [Is Strict Underapproximation](is-strict-underapproximation.md)
+
+## Proof depends on
+
+- [Is Nondecreasing Egyptian](is-nondecreasing-egyptian.md)
+- [Is Strict Egyptian](is-strict-egyptian.md)
+- [Is Strict Egyptian](is-strict-egyptian-2.md)
+- [Nonempty](nonempty-2.md)
+- [Sum lt](sum-lt-2.md)
+- [Target pos](target-pos-2.md)
 
 ## Sources
 

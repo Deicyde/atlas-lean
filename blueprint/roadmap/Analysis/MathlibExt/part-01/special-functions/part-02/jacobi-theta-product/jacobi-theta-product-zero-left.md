@@ -13,7 +13,7 @@ At `x = 0`, the first two q-Pochhammer factors are one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobi Theta Product](jacobi-theta-product.md)
 
 ## Sources
 

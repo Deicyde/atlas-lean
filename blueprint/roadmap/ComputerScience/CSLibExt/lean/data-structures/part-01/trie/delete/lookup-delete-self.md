@@ -13,7 +13,13 @@ Looking up a deleted key fails.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Is Empty Node](is-empty-node.md)
+- [Lookup set Child self](lookup-set-child-self.md)
+- [Set Child](set-child.md)
 
 ## Sources
 

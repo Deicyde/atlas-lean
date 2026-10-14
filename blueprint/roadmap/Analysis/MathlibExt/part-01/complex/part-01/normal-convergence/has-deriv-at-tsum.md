@@ -15,6 +15,11 @@ A locally normally convergent holomorphic series may be differentiated termwise.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Deriv](deriv.md)
+- [Tendsto Locally Uniformly On tsum nat](tendsto-locally-uniformly-on-tsum-nat.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.NormalConvergence](../../../../../../../sources/v2/MathlibExt.md)

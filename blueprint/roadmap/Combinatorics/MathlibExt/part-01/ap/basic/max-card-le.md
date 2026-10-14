@@ -13,7 +13,11 @@ The extremal cardinality is at most the size of `{1, ..., N}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Card](max-card.md)
+
+## Proof depends on
+
+- [Is APOf Length Free](is-apof-length-free-2.md)
 
 ## Sources
 

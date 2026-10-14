@@ -13,7 +13,12 @@ Insertion preserves a disjoint represented circle that excludes the inserted ide
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circular Represents](../basic/circular-represents.md)
+- [Sentinel Insert](sentinel-insert.md)
+
+## Proof depends on
+
+- [Sentinel Insert frame](sentinel-insert-frame.md)
 
 ## Sources
 

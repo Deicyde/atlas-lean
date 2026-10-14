@@ -13,7 +13,9 @@ The value component of costed lookup is ordinary lookup.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Lookup](../part-01/lookup.md)
+- [Lookup With Cost](../part-01/lookup-with-cost.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ exact source sum with coefficient `choose (i+m) m`, ordinary number
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Stirling First](generalized-stirling-first.md)
 
 ## Sources
 

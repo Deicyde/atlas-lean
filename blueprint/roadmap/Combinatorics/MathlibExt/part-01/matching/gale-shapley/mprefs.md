@@ -14,6 +14,10 @@ Preferences of `M` over `W`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Strict Total Order](strict-total-order.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Matching.GaleShapley](../../../../../../sources/v2/MathlibExt.md)

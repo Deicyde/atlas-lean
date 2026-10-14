@@ -13,7 +13,11 @@ values. Derived from the linear `contents` traversal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+
+## Proof depends on
+
+- [Contents](../part-01/contents.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Membership in `torsionPts` is the `p`-torsion condition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torsion Pts](torsion-pts.md)
 
 ## Sources
 

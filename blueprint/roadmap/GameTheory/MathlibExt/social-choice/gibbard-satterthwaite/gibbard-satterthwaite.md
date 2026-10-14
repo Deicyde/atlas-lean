@@ -13,7 +13,14 @@ Resolute SCF on ≥3 alternatives, onto and strategy-proof, is dictatorial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dictatorial](is-dictatorial.md)
+- [Is Onto](is-onto.md)
+- [Is Strategy Proof](is-strategy-proof.md)
+- [Social Choice Function](social-choice-function.md)
+
+## Proof depends on
+
+- [Gibbard satterthwaite general](gibbard-satterthwaite-general.md)
 
 ## Sources
 

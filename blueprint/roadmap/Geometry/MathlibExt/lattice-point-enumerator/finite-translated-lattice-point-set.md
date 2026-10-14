@@ -13,7 +13,11 @@ Translated finiteness for bounded `P`: `(t • P) + {x}` stays bounded.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Translated Lattice Point Set](translated-lattice-point-set.md)
+
+## Proof depends on
+
+- [Std Lattice](std-lattice.md)
 
 ## Sources
 

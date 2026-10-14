@@ -18,6 +18,10 @@ textbook in Baker, Transcendental Number Theory
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lindemann weierstrass'](lindemann-weierstrass.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.LindemannWeierstrass](../../../../../sources/v2/MathlibExt.md)

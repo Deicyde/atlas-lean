@@ -13,7 +13,14 @@ Each fixed evaluation of a Rademacher random multiplicative function is measurab
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Rademacher Family](is-rademacher-family.md)
+- [Rademacher Function](rademacher-function.md)
+
+## Proof depends on
+
+- [Measurable prime Sign Nat](measurable-prime-sign-nat.md)
+- [Prime Sign Nat](prime-sign-nat.md)
+- [Rademacher Function apply](rademacher-function-apply.md)
 
 ## Sources
 

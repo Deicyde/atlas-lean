@@ -13,7 +13,7 @@ Negating a radius does not change the maximum modulus.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Maximum Modulus](wiman-maximum-modulus.md)
 
 ## Sources
 

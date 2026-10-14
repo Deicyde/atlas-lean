@@ -13,7 +13,9 @@ Peeking at the front returns the head of the represented sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Deque](deque.md)
+- [Contents](contents.md)
+- [Peek Front](peek-front.md)
 
 ## Sources
 

@@ -15,7 +15,14 @@ with both ends clamped through `List.take`. This holds for every `lo` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fenwick Tree](../part-01/fenwick-tree.md)
+- [Valid](../part-01/valid.md)
+- [Range Sum](range-sum.md)
+
+## Proof depends on
+
+- [Prefix Sum](../part-01/prefix-sum.md)
+- [Prefix Sum eq take sum](../part-01/prefix-sum-eq-take-sum.md)
 
 ## Sources
 

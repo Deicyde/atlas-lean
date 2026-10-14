@@ -15,6 +15,10 @@ if it contains no three points that lie on the same line.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Triplewise](../../../Data/MathlibExt/set/triplewise.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.TwoD](../../../../sources/v2/MathlibExt.md)

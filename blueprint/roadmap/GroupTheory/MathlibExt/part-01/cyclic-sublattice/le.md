@@ -13,7 +13,7 @@ A cyclic sublattice is contained in the ambient subgroup.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Cyclic Sublattice](is-cyclic-sublattice.md)
 
 ## Sources
 

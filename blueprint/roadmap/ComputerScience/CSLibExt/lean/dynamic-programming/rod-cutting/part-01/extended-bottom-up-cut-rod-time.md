@@ -13,7 +13,12 @@ The saved tables execute exactly the triangular number of candidate events.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Bottom Up Cut Rod](extended-bottom-up-cut-rod.md)
+
+## Proof depends on
+
+- [Bottom Up Cut Rod](bottom-up-cut-rod.md)
+- [Bottom Up Cut Rod time](bottom-up-cut-rod-time.md)
 
 ## Sources
 

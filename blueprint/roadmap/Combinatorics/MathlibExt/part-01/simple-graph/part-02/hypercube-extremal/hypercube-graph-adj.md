@@ -13,7 +13,7 @@ Adjacency in `Q_n` holds exactly when the endpoints differ in a unique coordinat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypercube Graph](hypercube-graph.md)
 
 ## Sources
 

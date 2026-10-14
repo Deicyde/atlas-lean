@@ -13,7 +13,11 @@ Every graph has the same chromatic symmetric function as itself.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Same Chromatic Symmetric Function](same-chromatic-symmetric-function.md)
+
+## Proof depends on
+
+- [Chromatic Profile Count](chromatic-profile-count.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Every point of `pts` lies in the sphere computed by `radiusSq`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dist Sq](dist-sq.md)
+- [Radius Sq](radius-sq.md)
 
 ## Sources
 

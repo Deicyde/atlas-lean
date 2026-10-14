@@ -13,7 +13,7 @@ The sup norm of the zero function vanishes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sup Norm On](sup-norm-on.md)
 
 ## Sources
 

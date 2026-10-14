@@ -12,7 +12,12 @@ Depth certificate used after redirecting `fromRoot` to `toRoot`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
+
+## Proof depends on
+
+- [Equivalent](equivalent.md)
+- [Find](find.md)
 
 ## Sources
 

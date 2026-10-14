@@ -13,7 +13,7 @@ Projection of the upper-triangularity clause (D2).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Poset Matrix](is-poset-matrix.md)
 
 ## Sources
 

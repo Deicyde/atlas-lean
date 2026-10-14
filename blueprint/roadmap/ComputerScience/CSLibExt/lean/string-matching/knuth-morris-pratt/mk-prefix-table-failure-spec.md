@@ -13,7 +13,7 @@ Each failure entry is the longest proper prefix that is also a suffix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mk Prefix Table size](mk-prefix-table-size.md)
 
 ## Sources
 

@@ -19,7 +19,12 @@ Cobham72 bibliography entry is line 1275, span SHA-256
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Coding Of Prolongable KUniform Fixed Point](is-coding-of-prolongable-kuniform-fixed.md)
+- [Is KAutomatic Sequence](is-kautomatic-sequence.md)
+
+## Proof depends on
+
+- [Base Word Value LSD](base-word-value-lsd.md)
 
 ## Sources
 

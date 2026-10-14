@@ -14,7 +14,12 @@ general-length API.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is APOf Length Free](is-apof-length-free.md)
+
+## Proof depends on
+
+- [Is APOf Length](is-apof-length.md)
+- [Is APOf Length With](is-apof-length-with.md)
 
 ## Sources
 

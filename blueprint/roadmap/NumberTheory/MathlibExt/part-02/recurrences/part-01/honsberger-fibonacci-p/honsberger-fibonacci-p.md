@@ -24,7 +24,7 @@ base case.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci P](fibonacci-p.md)
 
 ## Sources
 

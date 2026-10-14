@@ -12,7 +12,11 @@ Decode one nonempty codeword, leaving unconsumed bits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](huffman-tree.md)
+
+## Proof depends on
+
+- [Decode Path?](decode-path.md)
 
 ## Sources
 

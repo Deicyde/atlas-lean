@@ -14,7 +14,12 @@ Concept `jis_sem_f409ef3715730614fd194b4d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Word](fib-word.md)
+
+## Proof depends on
+
+- [Fib Morph](fib-morph.md)
+- [Fib Subst](fib-subst.md)
 
 ## Sources
 

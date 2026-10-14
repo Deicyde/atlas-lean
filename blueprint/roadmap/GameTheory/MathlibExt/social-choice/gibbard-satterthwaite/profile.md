@@ -14,6 +14,10 @@ Profile of strict total orders.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Strict Total Order](strict-total-order.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GameTheory.SocialChoice.GibbardSatterthwaite](../../../../../sources/v2/MathlibExt.md)

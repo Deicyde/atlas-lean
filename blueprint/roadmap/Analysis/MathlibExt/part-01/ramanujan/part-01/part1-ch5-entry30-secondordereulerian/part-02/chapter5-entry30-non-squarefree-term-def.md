@@ -13,7 +13,7 @@ Unfolding lemma for `chapter5Entry30NonSquarefreeTerm`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter5 Entry30 Non Squarefree Term](../part-01/chapter5-entry30-non-squarefree-term.md)
 
 ## Sources
 

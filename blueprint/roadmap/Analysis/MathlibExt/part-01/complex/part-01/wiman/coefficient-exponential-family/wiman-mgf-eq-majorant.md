@@ -13,7 +13,11 @@ The MGF of the coefficient measure is the radial Taylor majorant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Coefficient Measure](wiman-coefficient-measure.md)
+
+## Proof depends on
+
+- [Integral exp mul wiman Coefficient Measure](integral-exp-mul-wiman-coefficient-measu.md)
 
 ## Sources
 

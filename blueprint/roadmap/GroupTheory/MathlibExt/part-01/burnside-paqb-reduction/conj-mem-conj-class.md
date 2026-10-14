@@ -13,7 +13,7 @@ Conjugation preserves conjugacy classes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conj Class](conj-class.md)
 
 ## Sources
 

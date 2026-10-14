@@ -14,6 +14,10 @@ Positive-denominator Kronecker symbol, with multiplicity preserved.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kronecker At Prime](kronecker-at-prime.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.DirichletCharacter.Quadratic](../../../../../../sources/v2/MathlibExt.md)

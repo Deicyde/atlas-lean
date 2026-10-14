@@ -15,6 +15,10 @@ uniform law on the integer units.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rademacher Measure](rademacher-measure.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.NumberTheory.RandomMultiplicativeFunction](../../../../../../sources/v2/MathlibExt.md)

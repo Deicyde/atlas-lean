@@ -14,7 +14,17 @@ lookup returned before the `put`: surviving bindings keep their values.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lru Cache](../part-01/lru-cache.md)
+- [Get](../part-01/get.md)
+- [Keys](../part-01/keys.md)
+- [Put](../part-01/put.md)
+- [Size](../part-01/size.md)
+
+## Proof depends on
+
+- [Get hit](../part-01/get-hit.md)
+- [Get miss](../part-01/get-miss.md)
+- [Mem put entries iff of not full](mem-put-entries-iff-of-not-full.md)
 
 ## Sources
 

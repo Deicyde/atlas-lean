@@ -13,7 +13,7 @@ A polynomial with a root has a root whose real part is `maxRealRoot`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Real Root](max-real-root.md)
 
 ## Sources
 

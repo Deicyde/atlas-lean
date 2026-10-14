@@ -13,7 +13,7 @@ Integration against the finite actual law.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Symmetric Bernoulli Law](../part-01/symmetric-bernoulli-law.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Herbrand quotient `h^0 / h_0` in `ℚ`, gated on finiteness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Herbrand Finite](herbrand-finite.md)
 
 ## Sources
 

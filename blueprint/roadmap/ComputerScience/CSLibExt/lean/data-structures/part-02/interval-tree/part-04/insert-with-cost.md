@@ -12,7 +12,17 @@ Insert a new occurrence or replace the occurrence with the same identifier.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../part-01/cost.md)
+- [Entry](../part-01/entry.md)
+- [Indexed Interval Tree](indexed-interval-tree.md)
+
+## Proof depends on
+
+- [Interval](../part-01/interval.md)
+- [Valid](../part-01/valid-2.md)
+- [Tree](../part-01/tree.md)
+- [Erase Key With Cost](../part-02/erase-key-with-cost.md)
+- [Insert Key With Cost](../part-02/insert-key-with-cost.md)
 
 ## Sources
 

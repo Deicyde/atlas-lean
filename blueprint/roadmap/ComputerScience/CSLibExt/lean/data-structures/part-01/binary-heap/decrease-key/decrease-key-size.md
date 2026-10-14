@@ -13,7 +13,11 @@ Decrease-key preserves the number of stored entries.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decrease Key](decrease-key.md)
+
+## Proof depends on
+
+- [Decrease Key data](decrease-key-data.md)
 
 ## Sources
 

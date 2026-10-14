@@ -23,6 +23,10 @@ so this extends the standard `G.Connected` formulation to the empty graph (see
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Robbins theorem connected](robbins-theorem-connected.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Graph.RobbinsTheorem](../../../../../../sources/v2/MathlibExt.md)

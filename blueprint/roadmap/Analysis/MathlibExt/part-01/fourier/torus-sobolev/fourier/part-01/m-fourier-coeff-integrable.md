@@ -13,7 +13,7 @@ Integrability needed for coefficient linearity is supplied by compactness, not a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frequency](../../basic/frequency.md)
 
 ## Sources
 

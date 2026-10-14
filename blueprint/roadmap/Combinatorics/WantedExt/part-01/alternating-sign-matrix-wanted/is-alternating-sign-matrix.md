@@ -14,6 +14,12 @@ An `n × n` alternating sign matrix (via the partial-sum characterisation).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Zero Or One](is-zero-or-one.md)
+- [Col Partial Sum](col-partial-sum.md)
+- [Row Partial Sum](row-partial-sum.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.AlternatingSignMatrixWanted](../../../../../sources/v2/WantedExt.md)

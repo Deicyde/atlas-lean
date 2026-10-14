@@ -12,7 +12,7 @@ Evaluate a rank-one trilinear summand.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rank One Trilinear Term](rank-one-trilinear-term.md)
 
 ## Sources
 

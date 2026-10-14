@@ -12,7 +12,13 @@ Link two trees, retaining the left root when the roots compare equal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Tree](binomial-tree.md)
+
+## Proof depends on
+
+- [Children](children.md)
+- [Rank](rank.md)
+- [Root](root.md)
 
 ## Sources
 

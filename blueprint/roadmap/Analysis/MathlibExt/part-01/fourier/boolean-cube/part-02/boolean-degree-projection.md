@@ -13,7 +13,13 @@ Coordinate projections have Boolean degree one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](../part-01/bool-cube.md)
+- [Boolean Degree](boolean-degree.md)
+
+## Proof depends on
+
+- [Multilinear Extension](../part-01/multilinear-extension.md)
+- [Multilinear Extension projection](multilinear-extension-projection.md)
 
 ## Sources
 

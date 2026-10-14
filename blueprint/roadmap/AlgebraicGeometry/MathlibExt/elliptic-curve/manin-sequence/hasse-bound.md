@@ -13,7 +13,12 @@ Manin degree data implies the integral squared form of the Hasse bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Manin Degree Data](manin-degree-data.md)
+
+## Proof depends on
+
+- [Eq quadratic of recurrence](eq-quadratic-of-recurrence.md)
+- [Sq le four mul of quadratic nonnegative](sq-le-four-mul-of-quadratic-nonnegative.md)
 
 ## Sources
 

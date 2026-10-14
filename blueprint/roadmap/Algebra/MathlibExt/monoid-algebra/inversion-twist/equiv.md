@@ -12,7 +12,7 @@ The canonical equivalence between an inversion twist and its underlying type.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inversion Twist](inversion-twist.md)
 
 ## Sources
 

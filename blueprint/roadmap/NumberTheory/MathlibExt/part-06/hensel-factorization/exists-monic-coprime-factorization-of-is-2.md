@@ -19,6 +19,10 @@ reduction equality is vacuous, so no degree conclusion can hold there.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists monic coprime factorization of is Adic Complete](exists-monic-coprime-factorization-of-is.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.HenselFactorization](../../../../../sources/v2/MathlibExt.md)

@@ -16,7 +16,11 @@ display `(p-1)! = -1 + p * w_p` from Avitabile–Mattarei `AH.tex` ll. 315–321
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wilson Quotient](wilson-quotient.md)
+
+## Proof depends on
+
+- [Mul wilson Quotient](mul-wilson-quotient.md)
 
 ## Sources
 

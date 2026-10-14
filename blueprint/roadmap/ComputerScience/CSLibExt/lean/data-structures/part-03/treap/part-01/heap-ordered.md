@@ -12,7 +12,11 @@ Every node priority is no greater than every descendant priority.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [All Nodes](all-nodes.md)
 
 ## Sources
 

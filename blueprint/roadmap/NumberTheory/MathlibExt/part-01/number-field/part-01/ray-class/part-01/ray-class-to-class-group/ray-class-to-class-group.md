@@ -13,7 +13,12 @@ Projection from the ray class group to the ordinary class group
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Group](../group/ray-class-group.md)
+
+## Proof depends on
+
+- [Coprime Ideal Class Map](coprime-ideal-class-map.md)
+- [Ray Group le coprime Ideal Class Map ker](ray-group-le-coprime-ideal-class-map-ker.md)
 
 ## Sources
 

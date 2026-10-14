@@ -15,7 +15,9 @@ shared key hashes to), so it needs no decidable equality on keys.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](perfect-hashing.md)
+- [Stored](stored.md)
+- [Valid](valid.md)
 
 ## Sources
 

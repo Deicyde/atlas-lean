@@ -13,7 +13,7 @@ Characterization via primitive roots.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Polynomial](is-primitive-polynomial.md)
 
 ## Sources
 

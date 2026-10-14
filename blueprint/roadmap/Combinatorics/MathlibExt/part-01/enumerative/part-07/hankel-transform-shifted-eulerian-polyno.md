@@ -23,6 +23,10 @@ route used by Barry and discussed by Krattenthaler.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Heilermann Weighted Motzkin Determinant](../part-04/hankel-transform-eq-prod-of-weighted-mot.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.ShiftedEulerianHankel](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,16 @@ The actual tensor rank is attained by a pure-tensor decomposition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Tensor Rank At Most](has-tensor-rank-at-most.md)
+- [Trilinear Tensor](trilinear-tensor.md)
+- [Tensor Rank](tensor-rank.md)
+
+## Proof depends on
+
+- [Has Trilinear Rank At Most](has-trilinear-rank-at-most.md)
+- [Has Tensor Rank At Most iff](has-tensor-rank-at-most-iff.md)
+- [Trilinear Rank spec](trilinear-rank-spec.md)
+- [Trilinear Tensor Coefficients](trilinear-tensor-coefficients.md)
 
 ## Sources
 

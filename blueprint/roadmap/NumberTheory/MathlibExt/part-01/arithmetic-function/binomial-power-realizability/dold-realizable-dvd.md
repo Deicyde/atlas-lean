@@ -13,7 +13,7 @@ Divisibility (Dold congruence) half of `doldRealizable`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dold Realizable](dold-realizable.md)
 
 ## Sources
 

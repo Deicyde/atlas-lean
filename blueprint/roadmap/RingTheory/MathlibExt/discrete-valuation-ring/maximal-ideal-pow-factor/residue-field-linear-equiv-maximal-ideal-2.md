@@ -14,7 +14,10 @@ quotient representative, by definition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Ideal Graded Piece](../maximal-ideal-graded-piece/maximal-ideal-graded-piece.md)
+- [Residue Field Maximal Ideal Pow Quotient](residue-field-maximal-ideal-pow-quotient.md)
+- [Factor Residue Field Maximal Ideal Pow Quotient](factor-residue-field-maximal-ideal-pow-q.md)
+- [Residue Field Linear Equiv Maximal Ideal Graded Piece Ker Factor](residue-field-linear-equiv-maximal-ideal.md)
 
 ## Sources
 

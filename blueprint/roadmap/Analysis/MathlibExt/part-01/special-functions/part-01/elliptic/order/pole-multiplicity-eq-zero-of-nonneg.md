@@ -13,7 +13,7 @@ The multiplicity vanishes at points of nonnegative order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pole Multiplicity](pole-multiplicity.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ All root-to-leaf paths contain the same number of black nodes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Color](color.md)
+- [Black Height](black-height.md)
 
 ## Sources
 

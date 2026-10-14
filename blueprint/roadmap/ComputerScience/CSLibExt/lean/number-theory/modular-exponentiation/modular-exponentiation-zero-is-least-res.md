@@ -13,7 +13,11 @@ With `n > 1`, the literal zero-exponent result is also the least residue.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Exponentiation](modular-exponentiation.md)
+
+## Proof depends on
+
+- [Modular Exponentiation ret zero](modular-exponentiation-ret-zero.md)
 
 ## Sources
 

@@ -13,7 +13,15 @@ Looking up a terminated suffix in the suffix tree returns its starting index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lookup](../../part-02/radix-trie/part-01/lookup.md)
+- [Suffix Tree](suffix-tree.md)
+- [Terminated](terminated.md)
+
+## Proof depends on
+
+- [Lookup build From of mem](../../part-02/radix-trie/part-02/lookup-build-from-of-mem.md)
+- [Nodup terminated drops](nodup-terminated-drops.md)
+- [Suffix Entries](suffix-entries.md)
 
 ## Sources
 

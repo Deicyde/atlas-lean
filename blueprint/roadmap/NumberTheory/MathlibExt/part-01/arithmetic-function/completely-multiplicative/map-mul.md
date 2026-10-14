@@ -13,7 +13,7 @@ Projection for `IsCompletelyMultiplicative`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Completely Multiplicative](is-completely-multiplicative.md)
 
 ## Sources
 

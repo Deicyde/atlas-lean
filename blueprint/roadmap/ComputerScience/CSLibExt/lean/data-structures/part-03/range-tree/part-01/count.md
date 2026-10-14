@@ -12,7 +12,11 @@ The number of stored values in `[lo, hi]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Range Tree](range-tree.md)
+
+## Proof depends on
+
+- [Report](report.md)
 
 ## Sources
 

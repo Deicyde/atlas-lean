@@ -13,7 +13,13 @@ An extremal progression-free subset attaining `maxCard` exists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is APOf Length Free](is-apof-length-free-2.md)
+- [Max Card](max-card.md)
+
+## Proof depends on
+
+- [Is APOf Length](is-apof-length.md)
+- [Card](card.md)
 
 ## Sources
 

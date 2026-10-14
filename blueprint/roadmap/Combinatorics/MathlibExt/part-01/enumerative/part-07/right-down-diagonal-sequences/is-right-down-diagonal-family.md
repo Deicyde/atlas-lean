@@ -19,6 +19,10 @@ The family index has type `Fin (k+2)`, exactly representing source indices
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Right Down Diagonal Coefficient](right-down-diagonal-coefficient.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.RightDownDiagonalSequences](../../../../../../../sources/v2/MathlibExt.md)

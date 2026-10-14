@@ -14,7 +14,12 @@ the direct native counterpart of ATLAS `primesCoprime_eq_range`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprime Primes](coprime-primes.md)
+- [Coprime Prime Units](coprime-prime-units.md)
+
+## Proof depends on
+
+- [Mem coprime Prime Units](mem-coprime-prime-units.md)
 
 ## Sources
 

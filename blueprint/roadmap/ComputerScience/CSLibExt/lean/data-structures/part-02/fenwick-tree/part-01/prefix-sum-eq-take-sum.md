@@ -14,7 +14,18 @@ sum of the corresponding `List.take` of the represented array.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fenwick Tree](fenwick-tree.md)
+- [Valid](valid.md)
+- [Prefix Sum](prefix-sum.md)
+
+## Proof depends on
+
+- [Block Sum](block-sum.md)
+- [Lowbit](lowbit.md)
+- [Lowbit le](lowbit-le.md)
+- [Lowbit pos](lowbit-pos.md)
+- [Size](size.md)
+- [Size eq length of valid](size-eq-length-of-valid.md)
 
 ## Sources
 

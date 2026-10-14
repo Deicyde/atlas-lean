@@ -13,7 +13,16 @@ Every forest member has rank at most the binary logarithm of the forest cardinal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](../part-01/valid-2.md)
+- [Elements](../part-01/elements-2.md)
+- [Binomial Tree](../part-01/binomial-tree.md)
+- [Rank](../part-01/rank.md)
+
+## Proof depends on
+
+- [Valid](../part-01/valid.md)
+- [Card elements](../part-01/card-elements.md)
+- [Elements](../part-01/elements.md)
 
 ## Sources
 

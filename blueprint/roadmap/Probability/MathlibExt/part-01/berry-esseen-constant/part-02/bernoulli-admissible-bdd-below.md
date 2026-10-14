@@ -13,7 +13,11 @@ A lower bound on the real family defining the subclass optimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bernoulli Admissible](is-bernoulli-admissible.md)
+
+## Proof depends on
+
+- [Is Bernoulli Admissible nonnegative](is-bernoulli-admissible-nonnegative.md)
 
 ## Sources
 

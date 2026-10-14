@@ -15,7 +15,15 @@ well-formed ratio of one more child than keys.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](btree.md)
+- [Flatten](flatten.md)
+
+## Proof depends on
+
+- [Flatten Aux](flatten-aux.md)
+- [Flatten Aux eq](flatten-aux-eq.md)
+- [Flatten node nil cons](flatten-node-nil-cons.md)
+- [Flatten node nil nil](flatten-node-nil-nil.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ Membership: locate the least representative at least `x`, then scan its group.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grouped YFast Trie](grouped-yfast-trie.md)
+
+## Proof depends on
+
+- [Find Group](find-group.md)
+- [Rep Ge](rep-ge.md)
 
 ## Sources
 

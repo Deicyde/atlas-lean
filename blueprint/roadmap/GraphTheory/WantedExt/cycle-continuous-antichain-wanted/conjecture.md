@@ -15,6 +15,12 @@ graphs with at least one edge. Source: [OPG-323] (URL: http://www.openproblemgar
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [FGraph](fgraph.md)
+- [Is Cycle Continuous](is-cycle-continuous.md)
+- [Is Finite Nontrivial](is-finite-nontrivial.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.CycleContinuousAntichainWanted](../../../../sources/v2/WantedExt.md)

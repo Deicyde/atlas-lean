@@ -13,7 +13,7 @@ Defining finite-sum formula for `simsekNumber`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Simsek Number](simsek-number.md)
 
 ## Sources
 

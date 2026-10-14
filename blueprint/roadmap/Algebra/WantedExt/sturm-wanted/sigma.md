@@ -14,6 +14,11 @@ The Sturm sign-variation function `σ_p(x)` of a real polynomial `p`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sign Changes](sign-changes.md)
+- [Sturm Chain](sturm-chain.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Algebra.SturmWanted](../../../../sources/v2/WantedExt.md)

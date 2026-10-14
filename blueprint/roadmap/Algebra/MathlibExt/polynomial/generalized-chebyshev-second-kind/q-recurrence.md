@@ -14,7 +14,11 @@ hypothesis on `mu` is needed once shifted past the `n = 0` boundary).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q](q.md)
+
+## Proof depends on
+
+- [P](p.md)
 
 ## Sources
 

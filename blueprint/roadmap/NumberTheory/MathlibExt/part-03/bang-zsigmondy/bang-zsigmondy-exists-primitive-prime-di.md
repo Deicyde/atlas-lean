@@ -14,7 +14,7 @@ General Bang–Zsigmondy existence of a primitive prime divisor of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bang Zsigmondy Exceptional](is-bang-zsigmondy-exceptional.md)
 
 ## Sources
 

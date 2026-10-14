@@ -13,7 +13,12 @@ The exact pure-tensor coordinate law in ATLAS N265, Theorem 13.5.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Completion Tensor Product Right Alg Equiv](completion-tensor-product-right-alg-equi.md)
+- [Places Over](../finite-places-over/places-over.md)
+
+## Proof depends on
+
+- [Completion Tensor Product Alg Equiv](completion-tensor-product-alg-equiv.md)
 
 ## Sources
 

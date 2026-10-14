@@ -13,7 +13,8 @@ Well-formedness means exactly that the compact logical prefix is occupied.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](table.md)
+- [Well Formed](well-formed.md)
 
 ## Sources
 

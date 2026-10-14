@@ -13,7 +13,12 @@ Upper bound: `sat(n, H)` is at most the edge count of any saturated graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Saturated](is-saturated.md)
+- [Sat](sat.md)
+
+## Proof depends on
+
+- [Sat Counts](sat-counts.md)
 
 ## Sources
 

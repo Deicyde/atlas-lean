@@ -13,7 +13,16 @@ Allowing Steiner points never increases the optimal length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
+- [Mst Length](mst-length.md)
+- [Steiner Length](steiner-length.md)
+
+## Proof depends on
+
+- [Edge Length](edge-length.md)
+- [Spanning Tree Lengths](spanning-tree-lengths.md)
+- [Steiner Tree Lengths](steiner-tree-lengths.md)
+- [Total Length](total-length.md)
 
 ## Sources
 

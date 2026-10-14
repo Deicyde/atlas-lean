@@ -15,7 +15,8 @@ to turn a concrete `L^p` bound into a statement about `beurlingNorm`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bound](is-bound.md)
+- [Beurling Norm](beurling-norm.md)
 
 ## Sources
 

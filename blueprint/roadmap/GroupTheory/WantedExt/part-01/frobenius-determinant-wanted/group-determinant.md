@@ -15,6 +15,10 @@ The **group determinant** `Θ(G) = det(A)`, a polynomial in the variables
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Group Matrix](group-matrix.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.FrobeniusDeterminantWanted](../../../../../sources/v2/WantedExt.md)

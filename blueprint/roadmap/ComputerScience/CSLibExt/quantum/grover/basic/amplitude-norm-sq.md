@@ -12,7 +12,7 @@ Squared Euclidean norm of a finite real amplitude vector.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amplitude](amplitude.md)
 
 ## Sources
 

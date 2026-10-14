@@ -13,7 +13,7 @@ Dequeueing fails exactly when the FIFO contents are empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Contents](contents.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ to the root of `newChild`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
 
 ## Sources
 

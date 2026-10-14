@@ -13,7 +13,11 @@ A prime `p` is `k`-rough exactly when `k < p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Rough](is-rough.md)
+
+## Proof depends on
+
+- [Lt of prime dvd](lt-of-prime-dvd.md)
 
 ## Sources
 

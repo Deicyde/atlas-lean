@@ -13,7 +13,12 @@ Complete node membership implies key membership.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Mem Node](../part-01/mem-node.md)
+
+## Proof depends on
+
+- [Mem Key](../part-01/mem-key.md)
 
 ## Sources
 

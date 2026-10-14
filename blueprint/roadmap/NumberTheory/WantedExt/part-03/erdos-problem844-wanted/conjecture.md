@@ -15,6 +15,10 @@ set.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Even Or Odd Non Squarefree](even-or-odd-non-squarefree.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem844Wanted](../../../../../sources/v2/WantedExt.md)

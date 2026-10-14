@@ -12,7 +12,11 @@ The set of regular (Platonic) polytopes in dimension `d`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convex Polytope](convex-polytope.md)
+
+## Proof depends on
+
+- [Is Regular](is-regular.md)
 
 ## Sources
 

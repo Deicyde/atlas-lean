@@ -13,7 +13,7 @@ Level-`k` completeness is downward monotone in the level.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KComplete](is-kcomplete.md)
 
 ## Sources
 

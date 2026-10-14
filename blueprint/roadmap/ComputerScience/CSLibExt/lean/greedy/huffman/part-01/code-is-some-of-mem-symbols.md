@@ -13,7 +13,14 @@ Every leaf symbol has a codeword.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](huffman-tree.md)
+- [Code?](code.md)
+- [Symbols](symbols.md)
+
+## Proof depends on
+
+- [Path Code?](path-code.md)
+- [Weighted Leaves](weighted-leaves.md)
 
 ## Sources
 

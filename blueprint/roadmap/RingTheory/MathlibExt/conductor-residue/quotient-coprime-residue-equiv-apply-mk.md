@@ -14,7 +14,7 @@ The canonical equivalence sends residue classes to residue classes along
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quotient coprime residue equiv](quotient-coprime-residue-equiv.md)
 
 ## Sources
 

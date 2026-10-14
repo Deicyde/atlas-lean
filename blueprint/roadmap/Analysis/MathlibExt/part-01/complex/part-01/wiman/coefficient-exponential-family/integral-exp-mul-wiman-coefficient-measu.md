@@ -13,7 +13,11 @@ The exponential moment integral is the radial Taylor majorant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Coefficient Measure](wiman-coefficient-measure.md)
+
+## Proof depends on
+
+- [Integrable exp mul wiman Coefficient Measure](integrable-exp-mul-wiman-coefficient-mea.md)
 
 ## Sources
 

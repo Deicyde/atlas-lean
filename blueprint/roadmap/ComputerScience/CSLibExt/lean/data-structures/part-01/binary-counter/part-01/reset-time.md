@@ -13,7 +13,7 @@ The exact reset charge is the number of set input bits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reset](reset.md)
 
 ## Sources
 

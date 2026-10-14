@@ -14,6 +14,10 @@ The planar threshold is at most `5/4`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Planar Distance Threshold](../../../MathlibExt/falconer-distance-set/part-01/planar-distance-threshold.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.FalconerDistanceSetWanted](../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,11 @@ Remove the first tree whose root is minimal, preferring earlier trees on ties.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
+
+## Proof depends on
+
+- [Root](../part-01/root.md)
 
 ## Sources
 

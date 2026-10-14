@@ -13,7 +13,9 @@ Banach-valued Cauchy--Goursat on a rectangle boundary.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Boundary Integral](boundary-integral.md)
+- [Carrier](carrier.md)
 
 ## Sources
 

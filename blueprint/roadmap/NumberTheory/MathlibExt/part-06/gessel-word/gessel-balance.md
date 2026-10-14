@@ -12,7 +12,12 @@ The signed balance of the unbarred and barred occurrences of the letter labeled 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gessel Alphabet](gessel-alphabet.md)
+
+## Proof depends on
+
+- [Gessel Barred Count](gessel-barred-count.md)
+- [Gessel Unbarred Count](gessel-unbarred-count.md)
 
 ## Sources
 

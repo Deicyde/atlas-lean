@@ -14,6 +14,10 @@ The pointwise conductor-aspect Dirichlet subconvexity exponent.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Dirichlet Subconvexity Exponent](is-dirichlet-subconvexity-exponent.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.LSeries.DirichletSubconvexity](../../../../../../sources/v2/MathlibExt.md)

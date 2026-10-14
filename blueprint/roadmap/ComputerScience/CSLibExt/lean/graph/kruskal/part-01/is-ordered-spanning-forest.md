@@ -12,7 +12,14 @@ A spanning forest together with the deterministic Kruskal processing order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Graph](graph.md)
+- [Weighted Edge](weighted-edge.md)
+
+## Proof depends on
+
+- [Is Spanning Forest](is-spanning-forest.md)
+- [Key LE](key-le.md)
+- [Key](key.md)
 
 ## Sources
 

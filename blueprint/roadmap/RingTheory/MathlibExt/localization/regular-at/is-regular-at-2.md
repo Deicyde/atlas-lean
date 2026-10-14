@@ -13,7 +13,12 @@ does not vanish there clears the function.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Affine Coordinate Ring](affine-coordinate-ring.md)
+
+## Proof depends on
+
+- [Is Regular At](is-regular-at.md)
+- [Eval At](eval-at.md)
 
 ## Sources
 

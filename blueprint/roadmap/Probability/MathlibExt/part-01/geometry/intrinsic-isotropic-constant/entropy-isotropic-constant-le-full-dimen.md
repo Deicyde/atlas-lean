@@ -13,7 +13,13 @@ Each actual intrinsic representation contributes its actual coordinate entropy v
 
 ## Depends on
 
-This node has no prerequisites.
+- [Entropy Isotropic Constant](entropy-isotropic-constant.md)
+
+## Proof depends on
+
+- [Intrinsic Log Concave Law](intrinsic-log-concave-law.md)
+- [Dimension Intrinsic Law Supremum](dimension-intrinsic-law-supremum.md)
+- [Intrinsic Law Isotropic Constant](intrinsic-law-isotropic-constant.md)
 
 ## Sources
 

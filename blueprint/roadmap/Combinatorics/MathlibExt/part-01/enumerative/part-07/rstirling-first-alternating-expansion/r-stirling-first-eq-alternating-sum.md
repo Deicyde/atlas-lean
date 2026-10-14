@@ -23,7 +23,13 @@ Natural coefficients are cast to `Int` so the alternating signs are exact.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Stirling First](r-stirling-first.md)
+
+## Proof depends on
+
+- [R Stirling First self](r-stirling-first-self.md)
+- [R Stirling First succ](r-stirling-first-succ.md)
+- [R Stirling First zero of pos](r-stirling-first-zero-of-pos.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The unit left-translation of the two-sided full shift.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Full Shift Space](full-shift-space.md)
 
 ## Sources
 

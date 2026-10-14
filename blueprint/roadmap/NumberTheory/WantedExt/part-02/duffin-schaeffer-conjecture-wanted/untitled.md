@@ -14,6 +14,10 @@ Definition of the set `𝒜` appearing in Theorem 1.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inequality 1 7](inequality-1-7.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.DuffinSchaefferConjectureWanted](../../../../../sources/v2/WantedExt.md)

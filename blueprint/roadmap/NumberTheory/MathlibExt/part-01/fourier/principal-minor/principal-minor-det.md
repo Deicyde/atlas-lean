@@ -12,7 +12,11 @@ The determinant of the principal Fourier minor indexed by `S`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Root Data](root-data.md)
+
+## Proof depends on
+
+- [Principal Minor Matrix](principal-minor-matrix.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ Weight `t ↦ clamp(n·t - i)` for the polygonal interpolation.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Donsker Clamp](donsker-clamp.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Donsker](../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,12 @@ The direct outer-product circuit has exactly one multiplication per output.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arithmetic Circuit](arithmetic-circuit.md)
+
+## Proof depends on
+
+- [Arithmetic Gate](arithmetic-gate.md)
+- [Arithmetic Operand](arithmetic-operand.md)
 
 ## Sources
 

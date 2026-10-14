@@ -15,6 +15,10 @@ lean: SimpleGraph.caroWei_le_indepNum
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Caro–Wei bound](exists-is-indep-set-caro-wei.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.CaroWei](../../../../../../../sources/v2/MathlibExt.md)

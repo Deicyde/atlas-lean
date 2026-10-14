@@ -14,7 +14,23 @@ Under `Valid`, representative lookup plus group scan decides membership in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grouped YFast Trie](grouped-yfast-trie.md)
+- [Valid](valid.md)
+- [Contents](contents.md)
+- [Member](member.md)
+
+## Proof depends on
+
+- [Group Ordered](group-ordered.md)
+- [Find Group](find-group.md)
+- [Mem contents iff](mem-contents-iff.md)
+- [Rep Ge](rep-ge.md)
+- [Valid](../../xfast-trie/part-01/valid.md)
+- [Member](../../xfast-trie/part-01/member.md)
+- [Member iff](../../xfast-trie/part-01/member-iff.md)
+- [Successor](../../xfast-trie/part-01/successor.md)
+- [Successor eq none iff](../../xfast-trie/part-01/successor-eq-none-iff.md)
+- [Successor eq some iff](../../xfast-trie/part-01/successor-eq-some-iff.md)
 
 ## Sources
 

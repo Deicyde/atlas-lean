@@ -18,6 +18,11 @@ Proves `Wanted` entry `ramanujan_part1_ch3_entry2_corollary2_harmonic_series`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Harmonic eq mathlib harmonic](harmonic-eq-mathlib-harmonic.md)
+- [Ramanujan part1 ch3 entry2 corollary2 harmonic series mathlib](ramanujan-part1-ch3-entry2-corollary2-ha.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry2Corollary2HarmonicSeries](../../../../../../../sources/v2/MathlibExt.md)

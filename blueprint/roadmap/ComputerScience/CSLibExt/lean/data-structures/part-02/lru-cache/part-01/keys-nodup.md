@@ -13,7 +13,8 @@ The keys of any cache are pairwise distinct.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lru Cache](lru-cache.md)
+- [Keys](keys.md)
 
 ## Sources
 

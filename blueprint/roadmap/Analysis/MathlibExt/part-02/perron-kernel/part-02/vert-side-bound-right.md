@@ -15,6 +15,10 @@ Right-side corollary: `d = U`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Vert side bound](../part-01/vert-side-bound.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.PerronKernel](../../../../../../sources/v2/MathlibExt.md)

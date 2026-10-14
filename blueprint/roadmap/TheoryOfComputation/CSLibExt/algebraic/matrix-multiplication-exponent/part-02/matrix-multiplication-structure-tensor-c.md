@@ -13,7 +13,15 @@ The actual structure tensor has precisely the matrix-multiplication coefficients
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matrix Coordinate](../part-01/matrix-coordinate.md)
+- [Trilinear Tensor](../part-01/trilinear-tensor.md)
+- [Matrix Multiplication Structure Tensor](matrix-multiplication-structure-tensor.md)
+- [Matrix Multiplication Tensor](../part-01/matrix-multiplication-tensor.md)
+- [Trilinear Tensor Coefficients](../part-01/trilinear-tensor-coefficients.md)
+
+## Proof depends on
+
+- [Trilinear Tensor Coefficients tmul](../part-01/trilinear-tensor-coefficients-tmul.md)
 
 ## Sources
 

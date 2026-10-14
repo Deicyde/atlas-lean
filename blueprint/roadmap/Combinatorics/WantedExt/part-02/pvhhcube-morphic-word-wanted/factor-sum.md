@@ -12,7 +12,11 @@ The sum of the values in a factor of `w`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letter](letter.md)
+
+## Proof depends on
+
+- [Letter Value](letter-value.md)
 
 ## Sources
 

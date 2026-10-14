@@ -13,7 +13,12 @@ The pointwise store update, applying the predecessor write before the successor 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../basic/node.md)
+- [List Delete](list-delete.md)
+
+## Proof depends on
+
+- [List Delete ret](list-delete-ret.md)
 
 ## Sources
 

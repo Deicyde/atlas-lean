@@ -16,7 +16,11 @@ source-domain declarations `latticePointSetPos` / `latticeEnumeratorPos`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice Point Set](lattice-point-set.md)
+
+## Proof depends on
+
+- [Std Lattice](std-lattice.md)
 
 ## Sources
 

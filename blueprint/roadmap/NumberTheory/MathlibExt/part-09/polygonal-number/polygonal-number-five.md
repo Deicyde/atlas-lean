@@ -13,7 +13,7 @@ Pentagonal specialization `p_5(n) = (3 * n ^ 2 - n) / 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polygonal Number](polygonal-number.md)
 
 ## Sources
 

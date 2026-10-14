@@ -13,7 +13,12 @@ Vanishing exactly at zero: `ψ r = 0 ↔ r = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hausdorff Dimension Function](hausdorff-dimension-function.md)
+
+## Proof depends on
+
+- [Map pos](map-pos.md)
+- [Map zero](map-zero.md)
 
 ## Sources
 

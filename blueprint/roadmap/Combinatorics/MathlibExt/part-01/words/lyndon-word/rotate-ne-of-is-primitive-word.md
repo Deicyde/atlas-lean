@@ -15,6 +15,10 @@ A primitive word is changed by every nontrivial rotation.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Primitive Word iff nodup cyclic Permutations](is-primitive-word-iff-nodup-cyclic-permu.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Words.LyndonWord](../../../../../../sources/v2/MathlibExt.md)

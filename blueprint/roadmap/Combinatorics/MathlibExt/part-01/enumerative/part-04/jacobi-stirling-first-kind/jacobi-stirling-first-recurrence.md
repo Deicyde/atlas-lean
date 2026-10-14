@@ -16,7 +16,11 @@ Concept `jis_sem_108a092cfddb7cc6b11d221e`, from `e:JacobiStirling1` with factor
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobi Stirling First](jacobi-stirling-first.md)
+
+## Proof depends on
+
+- [Jacobi Stirling First Poly](jacobi-stirling-first-poly.md)
 
 ## Sources
 

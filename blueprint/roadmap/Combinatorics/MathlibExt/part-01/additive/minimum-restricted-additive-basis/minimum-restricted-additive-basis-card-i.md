@@ -13,7 +13,7 @@ The value of `minimumRestrictedAdditiveBasisCard s` is `some` iff `s % 2 = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minimum Restricted Additive Basis Card](minimum-restricted-additive-basis-card.md)
 
 ## Sources
 

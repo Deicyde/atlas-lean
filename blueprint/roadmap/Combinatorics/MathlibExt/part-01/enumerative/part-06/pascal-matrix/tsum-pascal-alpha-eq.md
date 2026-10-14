@@ -13,7 +13,12 @@ Summing the column generating functions agrees with both source expansions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pascal Alpha](pascal-alpha.md)
+- [Pascal Entry](pascal-entry.md)
+
+## Proof depends on
+
+- [Pascal Alpha eq](pascal-alpha-eq.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ a genuine tree. This touches only the root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BBTree](bbtree.md)
+
+## Proof depends on
+
+- [Root Black](root-black.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ Recomputing all caches, used by the executable invariant checker only.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+
+## Proof depends on
+
+- [Entry](../part-01/entry.md)
+- [Node Max](../part-01/node-max.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ Resetting an all-false counter has zero flip charge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reset](../part-01/reset.md)
+
+## Proof depends on
+
+- [Reset time](../part-01/reset-time.md)
 
 ## Sources
 

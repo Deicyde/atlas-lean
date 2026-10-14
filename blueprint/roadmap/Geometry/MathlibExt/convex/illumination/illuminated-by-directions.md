@@ -14,6 +14,10 @@ Every boundary point is illuminated by one of a finite family of unit directions
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Direction Illuminates](direction-illuminates.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Convex.Illumination](../../../../../sources/v2/MathlibExt.md)

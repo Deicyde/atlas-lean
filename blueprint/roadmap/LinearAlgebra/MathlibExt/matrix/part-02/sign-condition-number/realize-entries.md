@@ -13,7 +13,8 @@ Realization produces only the two allowed entries.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sign Matrix](sign-matrix.md)
+- [Realize](realize.md)
 
 ## Sources
 

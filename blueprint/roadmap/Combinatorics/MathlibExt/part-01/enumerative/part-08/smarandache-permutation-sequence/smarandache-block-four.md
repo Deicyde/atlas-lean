@@ -14,7 +14,7 @@ Fourth block: `(1, 3, 5, 7, 8, 6, 4, 2)` (statement
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smarandache Block](smarandache-block.md)
 
 ## Sources
 

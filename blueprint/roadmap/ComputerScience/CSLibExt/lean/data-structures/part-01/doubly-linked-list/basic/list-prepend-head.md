@@ -13,7 +13,8 @@ The last source assignment always makes the supplied node the new head.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
+- [List Prepend](list-prepend.md)
 
 ## Sources
 

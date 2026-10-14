@@ -14,6 +14,10 @@ The graph contains no induced wheel in Davies's three-neighbour sense.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Induced Wheel](has-induced-wheel.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.SimpleGraph.DaviesWheelFreeChromaticWanted](../../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,11 @@ The optimized family is bounded below by zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible](is-admissible.md)
+
+## Proof depends on
+
+- [Is Admissible nonnegative](is-admissible-nonnegative.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ Newton polygon of zero is empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Newton Polygon](newton-polygon.md)
+
+## Proof depends on
+
+- [Newton Support](newton-support.md)
+- [Newton Support zero](newton-support-zero.md)
 
 ## Sources
 

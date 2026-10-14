@@ -14,6 +14,10 @@ A point is preperiodic when its forward orbit is finite.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Forward Orbit](forward-orbit.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Dynamics.Preperiodic](../../../../sources/v2/MathlibExt.md)

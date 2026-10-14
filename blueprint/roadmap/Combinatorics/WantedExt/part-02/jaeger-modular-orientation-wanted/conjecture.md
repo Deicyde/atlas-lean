@@ -17,6 +17,11 @@ specializations at `k = 1` and `k = 2`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Four KEdge Connected](is-four-kedge-connected.md)
+- [Is Modular Orientation](is-modular-orientation.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.JaegerModularOrientationWanted](../../../../../sources/v2/WantedExt.md)

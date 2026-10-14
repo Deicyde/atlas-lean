@@ -14,7 +14,12 @@ packaged via `LinearEquiv.ofBijective` to avoid normalizing
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torsion Pts](torsion-pts.md)
+
+## Proof depends on
+
+- [Gal Linear Map](gal-linear-map.md)
+- [Gal Linear Map bijective](gal-linear-map-bijective.md)
 
 ## Sources
 

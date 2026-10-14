@@ -13,7 +13,7 @@ KMP uses at most twice the combined pattern and text lengths in symbol compariso
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kmp Search](kmp-search.md)
 
 ## Sources
 

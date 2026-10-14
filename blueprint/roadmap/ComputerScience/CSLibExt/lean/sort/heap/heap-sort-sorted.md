@@ -13,7 +13,18 @@ Heap sort returns its output in nondecreasing order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heap Sort](heap-sort.md)
+
+## Proof depends on
+
+- [Min Heap](../../data-structures/part-01/binary-heap-2/part-02/min-heap.md)
+- [Elements](../../data-structures/part-01/binary-heap-2/part-02/elements.md)
+- [Empty](../../data-structures/part-01/binary-heap-2/part-02/empty.md)
+- [Extract Min](../../data-structures/part-01/binary-heap-2/part-02/extract-min.md)
+- [Extract Min cons elements](../../data-structures/part-01/binary-heap-2/part-03/extract-min-cons-elements.md)
+- [Extract Min eq none iff](../../data-structures/part-01/binary-heap-2/part-02/extract-min-eq-none-iff.md)
+- [Extract Min le](../../data-structures/part-01/binary-heap-2/part-03/extract-min-le.md)
+- [Push](../../data-structures/part-01/binary-heap-2/part-02/push.md)
 
 ## Sources
 

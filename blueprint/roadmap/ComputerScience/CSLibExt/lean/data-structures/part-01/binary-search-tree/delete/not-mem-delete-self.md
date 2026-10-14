@@ -13,7 +13,12 @@ The deleted key is absent after deletion from an ordered tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Join](join.md)
+- [Mem join](mem-join.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ guarantee termination (we visit at most `n` distinct strand positions).
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [One Pass](one-pass.md)
 
 ## Sources
 

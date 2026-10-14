@@ -12,7 +12,12 @@ Binary code of a CNF formula: its clause count followed by the encoded clauses.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](cnf.md)
+
+## Proof depends on
+
+- [CNFClause](cnfclause.md)
+- [Encode Clause](encode-clause.md)
 
 ## Sources
 

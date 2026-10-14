@@ -16,6 +16,11 @@ one event is charged per emitted positive piece; allocation and arithmetic remai
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Extended Bottom Up Cut Rod](extended-bottom-up-cut-rod.md)
+- [Extended Bottom Up Cut Rod first Cut](extended-bottom-up-cut-rod-first-cut.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.RodCutting](../../../../../../../sources/v2/CSLibExt.md)

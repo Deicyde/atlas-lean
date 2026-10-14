@@ -14,7 +14,11 @@ Covers `D < 0`; the positive case is proved separately.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kronecker Sym](../quadratic/kronecker-sym.md)
+
+## Proof depends on
+
+- [Quadratic Character Aux](../kronecker-sym-eq-jacobi-sym-of-prime-ne.md)
 
 ## Sources
 

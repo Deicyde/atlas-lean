@@ -13,7 +13,7 @@ Covering projection: every `s`-set contains an edge of `H`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Turan System](is-turan-system.md)
 
 ## Sources
 

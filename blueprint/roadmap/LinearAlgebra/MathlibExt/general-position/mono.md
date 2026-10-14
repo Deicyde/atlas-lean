@@ -13,7 +13,7 @@ General position through a larger dimension implies general position through a s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is General Position](is-general-position.md)
 
 ## Sources
 

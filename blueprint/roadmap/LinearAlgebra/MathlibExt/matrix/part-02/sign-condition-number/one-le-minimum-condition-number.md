@@ -13,7 +13,14 @@ Every positive-order minimum is at least one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minimum Condition Number](minimum-condition-number.md)
+
+## Proof depends on
+
+- [Sign Matrix](sign-matrix.md)
+- [Realize](realize.md)
+- [Condition Number](condition-number.md)
+- [One le condition Number](one-le-condition-number.md)
 
 ## Sources
 

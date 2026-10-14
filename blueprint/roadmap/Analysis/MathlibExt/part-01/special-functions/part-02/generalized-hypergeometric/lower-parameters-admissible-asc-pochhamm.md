@@ -15,7 +15,7 @@ Uses `ascPochhammer_eval_eq_zero_iff`: over an integral domain,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Parameters Admissible](lower-parameters-admissible.md)
 
 ## Sources
 

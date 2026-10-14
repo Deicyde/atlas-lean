@@ -13,7 +13,7 @@ Accumulator traversal collecting the points of a tree in front of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ball Tree](ball-tree.md)
 
 ## Sources
 

@@ -15,7 +15,11 @@ not, and query correctness below is stated only for valid tables.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sparse Table](sparse-table.md)
+
+## Proof depends on
+
+- [Level](level.md)
 
 ## Sources
 

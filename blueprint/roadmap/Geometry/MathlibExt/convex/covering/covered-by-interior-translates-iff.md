@@ -13,7 +13,8 @@ Interior covering is the generic translate cover specialized to the actual inter
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covered By Interior Translates](covered-by-interior-translates.md)
+- [Covered By Translates](covered-by-translates.md)
 
 ## Sources
 

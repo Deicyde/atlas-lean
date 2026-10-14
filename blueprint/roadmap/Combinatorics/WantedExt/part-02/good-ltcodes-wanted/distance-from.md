@@ -13,7 +13,7 @@ closest codeword in `C`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary Code](binary-code.md)
 
 ## Sources
 

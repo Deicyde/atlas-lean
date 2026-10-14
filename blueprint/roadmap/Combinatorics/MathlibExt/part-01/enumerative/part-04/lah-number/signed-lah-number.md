@@ -20,6 +20,10 @@ https://cs.uwaterloo.ca/journals/JIS/VOL15/Schork/schork2.tex.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unsigned Lah Number](unsigned-lah-number.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.LahNumber](../../../../../../../sources/v2/MathlibExt.md)

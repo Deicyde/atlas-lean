@@ -24,6 +24,10 @@ Provenance:
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Genocchi Power Series](genocchi-power-series.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.GenocchiNumber](../../../../../sources/v2/MathlibExt.md)

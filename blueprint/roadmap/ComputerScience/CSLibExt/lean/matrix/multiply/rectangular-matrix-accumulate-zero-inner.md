@@ -13,7 +13,7 @@ A zero inner dimension preserves the entire incoming accumulator at zero scalar 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectangular Matrix Accumulate](rectangular-matrix-accumulate.md)
 
 ## Sources
 

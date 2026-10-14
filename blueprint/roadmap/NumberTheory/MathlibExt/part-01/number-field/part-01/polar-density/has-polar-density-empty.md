@@ -14,7 +14,11 @@ constant continuation `F = fun _ => 1` with `n = 1` and `m = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Polar Density](has-polar-density.md)
+
+## Proof depends on
+
+- [Partial Dedekind Zeta](../partial-dedekind-zeta.md)
 
 ## Sources
 

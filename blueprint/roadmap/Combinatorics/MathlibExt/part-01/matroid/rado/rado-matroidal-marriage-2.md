@@ -18,6 +18,10 @@ The full-ground hypothesis is not needed; see `rado_matroidal_marriage'`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rado matroidal marriage'](rado-matroidal-marriage.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Matroid.Rado](../../../../../../sources/v2/MathlibExt.md)

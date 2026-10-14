@@ -15,6 +15,11 @@ together with the restructured tree.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Root?](root.md)
+- [Splay](splay.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.SplayTree](../../../../../../../../sources/v2/CSLibExt.md)

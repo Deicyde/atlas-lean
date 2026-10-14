@@ -13,7 +13,13 @@ Row orthogonality over iso-classes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Irr](irr.md)
+- [Char Fun](char-fun.md)
+
+## Proof depends on
+
+- [Rep Bundle](rep-bundle.md)
+- [Iso Setoid](iso-setoid.md)
 
 ## Sources
 

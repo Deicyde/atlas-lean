@@ -13,7 +13,12 @@ The empty set enumerates to zero, at any dilate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice Enumerator](lattice-enumerator.md)
+
+## Proof depends on
+
+- [Lattice Point Set](lattice-point-set.md)
+- [Std Lattice](std-lattice.md)
 
 ## Sources
 

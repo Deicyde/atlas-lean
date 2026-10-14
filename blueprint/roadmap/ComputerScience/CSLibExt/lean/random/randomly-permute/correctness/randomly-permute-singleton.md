@@ -14,7 +14,11 @@ unique draw and executes its self-swap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Randomly Permute](../basic/randomly-permute.md)
+
+## Proof depends on
+
+- [Randomly Permute time](../basic/randomly-permute-time.md)
 
 ## Sources
 

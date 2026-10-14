@@ -13,7 +13,13 @@ The membership wrapper returns `none` exactly when `key` is absent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary Search First?](binary-search-first.md)
+
+## Proof depends on
+
+- [Binary Search First? eq some iff](binary-search-first-eq-some-iff.md)
+- [Lower Bound](lower-bound.md)
+- [Lower Bound spec](lower-bound-spec.md)
 
 ## Sources
 

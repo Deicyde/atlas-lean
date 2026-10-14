@@ -19,6 +19,10 @@ inverse function theorem to obtain charts in which the map is the first projecti
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Of surjective mfderiv](of-surjective-mfderiv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.SubmersionOfSurjectiveMFDeriv](../../../../../../sources/v2/MathlibExt.md)

@@ -16,7 +16,7 @@ argument, so no global meromorphicity is hidden in it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pole Multiplicity](pole-multiplicity.md)
 
 ## Sources
 

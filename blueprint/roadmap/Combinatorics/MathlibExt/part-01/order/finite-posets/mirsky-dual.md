@@ -13,7 +13,12 @@ In a finite poset max chain size equals min antichain-cover size.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Chain Size](max-chain-size.md)
+- [Min Antichain Cover Size](min-antichain-cover-size.md)
+
+## Proof depends on
+
+- [Mirsky dual general](mirsky-dual-general.md)
 
 ## Sources
 

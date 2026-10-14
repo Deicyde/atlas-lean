@@ -13,7 +13,11 @@ Diagonal entries of a lower-triangular Toeplitz matrix equal `a 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Toeplitz](lower-toeplitz.md)
+
+## Proof depends on
+
+- [Lower Toeplitz apply of le](lower-toeplitz-apply-of-le.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ A vector is in the standard lattice exactly when all its coordinates are integer
 
 ## Depends on
 
-This node has no prerequisites.
+- [Std Lattice](std-lattice.md)
 
 ## Sources
 

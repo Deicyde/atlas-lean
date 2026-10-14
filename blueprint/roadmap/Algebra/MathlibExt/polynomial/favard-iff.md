@@ -19,6 +19,10 @@ here.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Favard Forward](favard-forward.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Polynomial.FavardIff](../../../../sources/v2/MathlibExt.md)

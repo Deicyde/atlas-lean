@@ -23,7 +23,11 @@ inverse-array equivalence from the `linvOf` Stieltjes production construction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formal Orthogonality](is-formally-orthogonal.md)
+
+## Proof depends on
+
+- [Favard Iff](favard-iff.md)
 
 ## Sources
 

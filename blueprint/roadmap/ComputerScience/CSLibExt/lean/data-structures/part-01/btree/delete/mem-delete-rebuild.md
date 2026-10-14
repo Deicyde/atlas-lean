@@ -14,7 +14,11 @@ tree and is not the deleted key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete Rebuild](delete-rebuild.md)
+
+## Proof depends on
+
+- [Flatten delete Rebuild](flatten-delete-rebuild.md)
 
 ## Sources
 

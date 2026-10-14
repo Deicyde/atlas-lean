@@ -13,7 +13,7 @@ unit balls centred at the points of `X` are pairwise disjoint.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
 
 ## Sources
 

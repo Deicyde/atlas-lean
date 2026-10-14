@@ -12,7 +12,11 @@ The forest obtained by removing every tree whose vertices contain `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+
+## Proof depends on
+
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
 
 ## Sources
 

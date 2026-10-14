@@ -18,7 +18,7 @@ Existence and uniqueness of such a comparison are not claimed here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraded Base Change](../multigraded-betti/multigraded-base-change.md)
 
 ## Sources
 

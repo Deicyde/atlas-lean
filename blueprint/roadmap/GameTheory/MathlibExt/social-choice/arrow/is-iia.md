@@ -14,7 +14,12 @@ voters' `a`-vs-`b` comparisons, the social `a`-vs-`b` comparison agrees.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Social Welfare Function](social-welfare-function.md)
+
+## Proof depends on
+
+- [Profile](profile.md)
+- [Lt](lt.md)
 
 ## Sources
 

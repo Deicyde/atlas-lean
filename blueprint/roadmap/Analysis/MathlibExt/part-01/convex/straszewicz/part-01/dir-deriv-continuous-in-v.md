@@ -13,7 +13,16 @@ The directional derivative is continuous in the direction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dir Deriv](dir-deriv.md)
+- [Supp Func](supp-func.md)
+
+## Proof depends on
+
+- [Dir Deriv subadd](dir-deriv-subadd.md)
+- [Dir Quot](dir-quot.md)
+- [Dir Quot bdd Below](dir-quot-bdd-below.md)
+- [Supp Func convex](supp-func-convex.md)
+- [Supp Func lipschitz](supp-func-lipschitz.md)
 
 ## Sources
 

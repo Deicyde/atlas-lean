@@ -13,7 +13,12 @@ The shifted witness is analytic where 0 ≤ re s.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shifted Log Dirichlet Continuation](shifted-log-dirichlet-continuation.md)
+
+## Proof depends on
+
+- [Log Dirichlet Continuation](../../../../part-01/lseries/prime-log/log-dirichlet-continuation.md)
+- [Log Dirichlet Continuation analytic On](../../../../part-01/lseries/prime-log/log-dirichlet-continuation-analytic-on.md)
 
 ## Sources
 

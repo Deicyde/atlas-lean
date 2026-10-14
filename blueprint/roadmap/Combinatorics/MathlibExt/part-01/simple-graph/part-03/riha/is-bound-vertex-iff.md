@@ -13,7 +13,7 @@ A vertex is bound to a closed walk exactly when it and all its neighbors lie on 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bound Vertex](is-bound-vertex.md)
 
 ## Sources
 

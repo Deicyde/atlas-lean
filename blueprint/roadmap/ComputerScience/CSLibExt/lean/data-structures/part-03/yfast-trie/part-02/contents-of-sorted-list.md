@@ -13,7 +13,15 @@ The trie built from a list stores exactly that list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Contents](../part-01/contents.md)
+- [Of Sorted List](of-sorted-list.md)
+
+## Proof depends on
+
+- [Grouped YFast Trie](../part-01/grouped-yfast-trie.md)
+- [Chunk Groups](chunk-groups.md)
+- [Flatten chunk Groups](flatten-chunk-groups.md)
+- [Of Groups](../part-01/of-groups.md)
 
 ## Sources
 

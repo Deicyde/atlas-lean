@@ -14,6 +14,10 @@ The least common coefficient, with nonempty and bounded family proved below.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Admissible](is-admissible.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.BerryEsseenConstant](../../../../../../sources/v2/MathlibExt.md)

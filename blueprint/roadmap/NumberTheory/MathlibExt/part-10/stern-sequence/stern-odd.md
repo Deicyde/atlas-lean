@@ -15,7 +15,7 @@ JIS Lansing, lines 92-103; JIS Dennison, lines 80-85).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stern Sequence](stern-sequence.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Distances of a compact Euclidean set form a compact real set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distance Set](distance-set.md)
 
 ## Sources
 

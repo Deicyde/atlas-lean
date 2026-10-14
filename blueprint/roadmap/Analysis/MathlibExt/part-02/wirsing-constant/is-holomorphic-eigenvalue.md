@@ -19,6 +19,10 @@ the totalized one of `gkwOperatorHol`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gkw Term Hol](gkw-term-hol.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.WirsingConstant](../../../../../sources/v2/MathlibExt.md)

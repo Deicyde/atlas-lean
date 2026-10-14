@@ -13,7 +13,12 @@ Small-square prime contribution bounded by the square-root term.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nu9](../part-02/nu9.md)
+
+## Proof depends on
+
+- [U9 Ccard le](u9-ccard-le.md)
+- [U9 Cterm le](u9-cterm-le.md)
 
 ## Sources
 

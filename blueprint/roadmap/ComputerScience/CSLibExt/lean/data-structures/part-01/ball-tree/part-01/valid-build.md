@@ -13,7 +13,17 @@ A tree built by halving satisfies the bounding-sphere invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](valid.md)
+- [Build](build.md)
+
+## Proof depends on
+
+- [Ball Tree](ball-tree.md)
+- [Dist Sq](dist-sq.md)
+- [Dist Sq le radius Sq](dist-sq-le-radius-sq.md)
+- [Radius Sq](radius-sq.md)
+- [To List](to-list.md)
+- [To List Aux](to-list-aux.md)
 
 ## Sources
 

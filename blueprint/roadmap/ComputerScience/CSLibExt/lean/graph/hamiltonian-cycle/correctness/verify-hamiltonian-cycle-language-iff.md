@@ -13,7 +13,12 @@ Certificate existence is exactly strict canonical Hamiltonian-cycle existence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Basic](../verify-hamiltonian-cycle.md)
+
+## Proof depends on
+
+- [Verify Hamiltonian Cycle complete](verify-hamiltonian-cycle-complete.md)
+- [Verify Hamiltonian Cycle sound](verify-hamiltonian-cycle-sound.md)
 
 ## Sources
 

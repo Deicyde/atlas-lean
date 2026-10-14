@@ -15,6 +15,10 @@ element of `A`, as the union of `ball a t` over `a ∈ A`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ball](../hamming-ball/ball.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.InformationTheory.HammingExpansion](../../../../sources/v2/MathlibExt.md)

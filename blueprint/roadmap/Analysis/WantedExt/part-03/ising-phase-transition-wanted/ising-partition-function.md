@@ -14,6 +14,11 @@ Finite-volume partition function at inverse temperature `β`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ising Site](ising-site.md)
+- [Ising Energy](ising-energy.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.IsingPhaseTransitionWanted](../../../../../sources/v2/WantedExt.md)

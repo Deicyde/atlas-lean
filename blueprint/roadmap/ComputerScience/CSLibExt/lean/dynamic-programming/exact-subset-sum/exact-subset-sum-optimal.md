@@ -13,7 +13,14 @@ The returned value is optimal for positional Nat inputs, including zero and repe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Subset Sum](exact-subset-sum.md)
+
+## Proof depends on
+
+- [Exact Subset Sum Sums](exact-subset-sum-sums.md)
+- [Exact Subset Sum Sums mem](exact-subset-sum-sums-mem.md)
+- [Exact Subset Sum Sums zero mem](exact-subset-sum-sums-zero-mem.md)
+- [Exact Subset Sum ret](exact-subset-sum-ret.md)
 
 ## Sources
 

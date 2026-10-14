@@ -13,7 +13,7 @@ and two subspaces are adjacent when their intersection has dimension `ℓ - 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gr Vertex](gr-vertex.md)
 
 ## Sources
 

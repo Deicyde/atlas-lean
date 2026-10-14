@@ -13,7 +13,7 @@ The underlying partition of `ofPartition p` is `p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Of Partition](of-partition.md)
 
 ## Sources
 

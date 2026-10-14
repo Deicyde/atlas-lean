@@ -14,6 +14,10 @@ The supremum of nonnegative aspects whose rectangular exponent equals two.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rectangular Matrix Multiplication Exponent](rectangular-matrix-multiplication-expone.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Complexity.Algebraic.MatrixMultiplicationExponent](../../../../../../sources/v2/CSLibExt.md)

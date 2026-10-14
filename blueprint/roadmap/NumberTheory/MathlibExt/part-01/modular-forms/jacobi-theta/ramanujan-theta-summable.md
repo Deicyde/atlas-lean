@@ -16,7 +16,7 @@ exponents via `Int.toNat`); this is the absolute-summability theorem over `ℝ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ramanujan Theta Term](ramanujan/ramanujan-theta-term.md)
 
 ## Sources
 

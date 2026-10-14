@@ -12,7 +12,11 @@ The finite set of vertices visited by a direction word, including the origin.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Honeycomb Vertex](honeycomb-vertex.md)
+
+## Proof depends on
+
+- [Vertex At](vertex-at.md)
 
 ## Sources
 

@@ -19,7 +19,12 @@ graded free resolution and take the degree-`α` component after tensoring with `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraded Free Module](multigraded-free-resolution/multigraded-free-module.md)
+- [Zero Eval](multigraded-betti/zero-eval.md)
+
+## Proof depends on
+
+- [Nat Degree To Int](multigraded-polynomial-module/nat-degree-to-int.md)
 
 ## Sources
 

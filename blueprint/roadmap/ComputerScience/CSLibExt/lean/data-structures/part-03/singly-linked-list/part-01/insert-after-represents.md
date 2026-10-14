@@ -14,7 +14,13 @@ position `k + 1` of the represented list; the header is unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
+- [Represents](represents.md)
+- [Insert After](insert-after.md)
+
+## Proof depends on
+
+- [Insert After get](insert-after-get.md)
 
 ## Sources
 

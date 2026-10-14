@@ -13,7 +13,9 @@ Insertion adds the new edge to the old edge set and nothing else.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adjacency Matrix](adjacency-matrix.md)
+- [Add Edge](add-edge.md)
+- [Has Edge](has-edge.md)
 
 ## Sources
 

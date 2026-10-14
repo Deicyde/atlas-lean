@@ -16,6 +16,10 @@ source domain rather than the totalized zero-denominator extension.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized Binomial Coefficient](generalized-binomial-coefficient.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.TotienomialCoefficient](../../../../../../../sources/v2/MathlibExt.md)

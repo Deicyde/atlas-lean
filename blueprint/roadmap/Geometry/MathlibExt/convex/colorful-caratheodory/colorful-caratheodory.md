@@ -16,6 +16,10 @@ See `exists_colorful_mem_convexHull` for arbitrary sets.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Colorful caratheodory finrank](colorful-caratheodory-finrank.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Convex.ColorfulCaratheodory](../../../../../sources/v2/MathlibExt.md)

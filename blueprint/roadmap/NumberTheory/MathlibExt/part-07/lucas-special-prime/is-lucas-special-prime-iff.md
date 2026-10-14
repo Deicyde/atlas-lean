@@ -16,7 +16,7 @@ Equivalence for special primes (concept `jis_term_9fa09acd972f484f5b457a48`):
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lucas Special Prime](is-lucas-special-prime.md)
 
 ## Sources
 

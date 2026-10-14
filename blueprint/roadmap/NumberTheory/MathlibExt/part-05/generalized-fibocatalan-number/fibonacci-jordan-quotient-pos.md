@@ -13,7 +13,12 @@ lean: MetaMathlibExt.fibonacciJordanQuotient_pos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Jordan Quotient](fibonacci-jordan-quotient.md)
+
+## Proof depends on
+
+- [Fibonacci Factorial](fibonacci-factorial.md)
+- [Fibonacci Factorial pos](fibonacci-factorial-pos.md)
 
 ## Sources
 

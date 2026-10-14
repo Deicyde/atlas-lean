@@ -14,6 +14,11 @@ The `n`-th moment `∫_{Iᵈ} xⁿ dμ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cube](cube.md)
+- [Monomial](monomial.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HausdorffAbsoluteContinuityWanted](../../../../../sources/v2/WantedExt.md)

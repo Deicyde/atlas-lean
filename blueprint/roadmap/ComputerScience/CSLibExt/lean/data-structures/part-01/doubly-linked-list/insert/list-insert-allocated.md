@@ -13,7 +13,12 @@ Allocation is preserved at every cell, including overlapping write targets.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../basic/node.md)
+- [List Insert](list-insert.md)
+
+## Proof depends on
+
+- [List Insert get](list-insert-get.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ Deletion preserves any disjoint represented circle, including its sentinel.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circular Represents](../basic/circular-represents.md)
+- [Sentinel Delete](sentinel-delete.md)
+
+## Proof depends on
+
+- [Sentinel Delete frame](sentinel-delete-frame.md)
 
 ## Sources
 

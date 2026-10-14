@@ -13,7 +13,11 @@ singular homology is isomorphic to that of the standard 4-sphere.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closed4 Manifold](closed4-manifold.md)
+
+## Proof depends on
+
+- [Int Homology](int-homology.md)
 
 ## Sources
 

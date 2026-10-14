@@ -13,7 +13,10 @@ The size homomorphism unfolds to the quotient of its two factors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arakelov Divisor](arakelov-divisor.md)
+- [Arch Hom](arch-hom.md)
+- [Ideal Hom](ideal-hom.md)
+- [Size Hom](size-hom.md)
 
 ## Sources
 

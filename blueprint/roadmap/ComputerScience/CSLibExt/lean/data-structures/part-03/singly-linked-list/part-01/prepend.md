@@ -12,7 +12,7 @@ Prepend an already allocated node: point it at the old head and make it the head
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
 
 ## Sources
 

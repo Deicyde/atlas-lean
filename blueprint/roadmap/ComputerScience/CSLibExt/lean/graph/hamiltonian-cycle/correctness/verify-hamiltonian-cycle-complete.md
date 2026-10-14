@@ -13,7 +13,7 @@ Every canonical Hamiltonian cycle has an accepted exact fixed-width certificate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Basic](../verify-hamiltonian-cycle.md)
 
 ## Sources
 

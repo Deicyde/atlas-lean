@@ -13,7 +13,12 @@ Every finite simple graph has edge chromatic number at most max degree plus one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Proper Edge Coloring](../part-02/edge-coloring/is-proper-edge-coloring.md)
+
+## Proof depends on
+
+- [Is Proper Sym2 Coloring](../part-02/edge-coloring/is-proper-sym2-coloring.md)
+- [Is Proper Edge Coloring of is Proper Sym2 Coloring](../part-02/edge-coloring/is-proper-edge-coloring-of-is-proper-sym.md)
 
 ## Sources
 

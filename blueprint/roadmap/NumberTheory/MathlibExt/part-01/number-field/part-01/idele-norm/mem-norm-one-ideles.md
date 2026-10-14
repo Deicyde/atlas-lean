@@ -13,7 +13,12 @@ Membership in the norm-one ideles.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Idele Group](../idele/finite-idele-group.md)
+- [Infinite Idele Group](../idele/infinite-idele-group.md)
+- [Topological Idele Group](../idele/topological-idele-group.md)
+- [Adelic Norm](adelic-norm.md)
+- [Norm One Ideles](norm-one-ideles.md)
+- [Local Integral Unit Subgroup](../idele/local-integral-unit-subgroup.md)
 
 ## Sources
 

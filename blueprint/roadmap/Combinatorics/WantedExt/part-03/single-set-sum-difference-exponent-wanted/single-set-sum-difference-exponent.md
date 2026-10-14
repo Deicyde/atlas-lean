@@ -15,6 +15,10 @@ least-admissible-exponent formulation over finite integer sets.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Admissible Exponent](is-admissible-exponent.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.SingleSetSumDifferenceExponentWanted](../../../../../sources/v2/WantedExt.md)

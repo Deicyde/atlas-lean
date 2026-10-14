@@ -13,7 +13,13 @@ lean: Cslib.Algorithms.Lean.LruCache.get_keys_nodup
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lru Cache](lru-cache.md)
+- [Get](get.md)
+- [Keys](keys.md)
+
+## Proof depends on
+
+- [Keys nodup](keys-nodup.md)
 
 ## Sources
 

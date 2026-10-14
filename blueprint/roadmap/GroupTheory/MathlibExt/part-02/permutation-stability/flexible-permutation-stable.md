@@ -15,6 +15,11 @@ flexibly close to genuine homomorphisms.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Almost Homomorphism](is-almost-homomorphism.md)
+- [Is Flexibly Close To Homomorphisms](is-flexibly-close-to-homomorphisms.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.PermutationStability](../../../../../sources/v2/MathlibExt.md)

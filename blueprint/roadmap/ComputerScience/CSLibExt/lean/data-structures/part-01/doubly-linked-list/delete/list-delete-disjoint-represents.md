@@ -13,7 +13,13 @@ A represented list disjoint from both written neighbors is preserved.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../basic/node.md)
+- [Represents](../basic/represents.md)
+- [List Delete](list-delete.md)
+
+## Proof depends on
+
+- [List Delete frame](list-delete-frame.md)
 
 ## Sources
 

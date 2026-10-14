@@ -13,7 +13,8 @@ The empty identity list is represented by any pool with header NIL.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
+- [Represents](represents.md)
 
 ## Sources
 

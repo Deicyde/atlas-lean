@@ -13,7 +13,8 @@ Exactly one endpoint relation is skipped when the first relation is false.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Interval](interval.md)
+- [Overlaps With Cost](overlaps-with-cost.md)
 
 ## Sources
 

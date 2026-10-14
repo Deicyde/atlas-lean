@@ -13,7 +13,7 @@ Taking graph squares is monotone.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square](square.md)
 
 ## Sources
 

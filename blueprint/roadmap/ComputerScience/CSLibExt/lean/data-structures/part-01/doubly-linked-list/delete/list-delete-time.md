@@ -13,7 +13,8 @@ The exact number of executed NIL tests and pointer or header assignments.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../basic/node.md)
+- [List Delete](list-delete.md)
 
 ## Sources
 

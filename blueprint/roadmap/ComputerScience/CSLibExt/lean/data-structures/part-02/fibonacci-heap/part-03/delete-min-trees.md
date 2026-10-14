@@ -13,7 +13,14 @@ promote its children, and consolidate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
+
+## Proof depends on
+
+- [Consolidate](../part-02/consolidate.md)
+- [Remove Min Tree](../part-02/remove-min-tree.md)
+- [Children](../part-01/children.md)
+- [Root](../part-01/root.md)
 
 ## Sources
 

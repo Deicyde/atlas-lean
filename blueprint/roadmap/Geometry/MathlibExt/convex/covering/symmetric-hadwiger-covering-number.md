@@ -14,6 +14,10 @@ The least universal bound over centrally symmetric bodies, or infinity.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Uniform Symmetric Interior Translate Bound](uniform-symmetric-interior-translate-bou.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Convex.Covering](../../../../../sources/v2/MathlibExt.md)

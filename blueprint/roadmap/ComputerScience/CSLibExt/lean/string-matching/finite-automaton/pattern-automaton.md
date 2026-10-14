@@ -14,6 +14,10 @@ Canonical deterministic automaton whose transition is the constructed table.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Compute Transition](compute-transition.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.StringMatching.FiniteAutomaton](../../../../../../sources/v2/CSLibExt.md)

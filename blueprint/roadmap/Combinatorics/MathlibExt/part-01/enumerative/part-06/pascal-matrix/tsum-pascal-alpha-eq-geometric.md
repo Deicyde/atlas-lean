@@ -13,7 +13,13 @@ The total generating function of the infinite Pascal matrix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pascal Alpha](pascal-alpha.md)
+
+## Proof depends on
+
+- [Pascal Entry](pascal-entry.md)
+- [Tsum pascal Alpha eq](tsum-pascal-alpha-eq.md)
+- [Tsum pascal Entry comm](tsum-pascal-entry-comm.md)
 
 ## Sources
 

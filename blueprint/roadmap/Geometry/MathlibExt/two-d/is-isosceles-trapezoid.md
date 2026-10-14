@@ -18,6 +18,10 @@ out non-rectangular parallelograms.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Ccw Convex Polygon](is-ccw-convex-polygon.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.TwoD](../../../../sources/v2/MathlibExt.md)

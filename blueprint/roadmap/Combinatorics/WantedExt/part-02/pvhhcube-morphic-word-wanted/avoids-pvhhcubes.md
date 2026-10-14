@@ -12,7 +12,11 @@ The word has no three consecutive nonempty factors of equal length and equal let
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letter](letter.md)
+
+## Proof depends on
+
+- [Factor Sum](factor-sum.md)
 
 ## Sources
 

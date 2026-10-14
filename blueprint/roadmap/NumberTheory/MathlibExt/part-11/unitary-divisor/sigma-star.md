@@ -14,6 +14,10 @@ The sum of the unitary divisors of `n`, conventionally denoted `σ⋆(n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unitary Divisors](unitary-divisors.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.UnitaryDivisor](../../../../../sources/v2/MathlibExt.md)

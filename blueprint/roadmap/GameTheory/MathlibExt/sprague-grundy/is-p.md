@@ -12,7 +12,7 @@ Normal-play P-positions: a position is losing iff every move goes to an N-positi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](impartial-game.md)
 
 ## Sources
 

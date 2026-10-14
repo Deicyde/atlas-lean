@@ -14,6 +14,10 @@ Decode one literal and return its unconsumed suffix.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Decode Nat Prefix](decode-nat-prefix.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.CookLevin](../../../../../sources/v2/CSLibExt.md)

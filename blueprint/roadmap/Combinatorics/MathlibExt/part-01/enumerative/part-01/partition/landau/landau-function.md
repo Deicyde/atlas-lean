@@ -14,6 +14,10 @@ The maximum least common multiple of the parts of a partition of `n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Parts LCM](parts-lcm.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.Partition.Landau](../../../../../../../../sources/v2/MathlibExt.md)

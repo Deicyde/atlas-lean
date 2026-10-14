@@ -13,7 +13,25 @@ Erasure preserves AVL balance; the height drops by at most one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../part-01/cost.md)
+- [Entry](../part-01/entry.md)
+- [Tree](../part-01/tree.md)
+- [Balanced Prop](../part-02/balanced-prop.md)
+- [Erase Key With Cost](../part-02/erase-key-with-cost.md)
+
+## Proof depends on
+
+- [Key](../part-01/key.md)
+- [Balanced Prop rebalance mk Node](balanced-prop-rebalance-mk-node.md)
+- [Balanced Prop remove Min With Cost](balanced-prop-remove-min-with-cost.md)
+- [Mk Node](../part-01/mk-node.md)
+- [Rebalance With Cost](../part-02/rebalance-with-cost.md)
+- [Remove Min With Cost](../part-02/remove-min-with-cost.md)
+- [Rotate Left](../part-02/rotate-left.md)
+- [Rotate Left Right](../part-02/rotate-left-right.md)
+- [Rotate Right](../part-02/rotate-right.md)
+- [Rotate Right Left](../part-02/rotate-right-left.md)
+- [Compare Key](../part-01/compare-key.md)
 
 ## Sources
 

@@ -19,6 +19,18 @@ by `ψ`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [In Class P](in-class-p.md)
+- [Inf Word](inf-word.md)
+- [Is Fixed Point](is-fixed-point.md)
+- [Is Identity Morphism](is-identity-morphism.md)
+- [Is Palindromic](is-palindromic.md)
+- [Is Primitive](is-primitive.md)
+- [Is Uniformly Recurrent](is-uniformly-recurrent.md)
+- [Morph Conjugate](morph-conjugate.md)
+- [Morphism](morphism.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PalindromicRecurrentOutsidePWanted](../../../../../sources/v2/WantedExt.md)

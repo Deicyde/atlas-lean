@@ -13,7 +13,17 @@ Priority-guided merge preserves the min-heap invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Heap Ordered](../part-01/heap-ordered.md)
+- [Merge](../part-01/merge.md)
+
+## Proof depends on
+
+- [All Nodes](../part-01/all-nodes.md)
+- [Mem Node](../part-01/mem-node.md)
+- [All Nodes iff forall mem](../part-01/all-nodes-iff-forall-mem.md)
+- [Heap root min](heap-root-min.md)
+- [Size](../part-01/size.md)
 
 ## Sources
 

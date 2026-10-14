@@ -12,7 +12,17 @@ A one-element binomial heap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Heap](binomial-heap.md)
+
+## Proof depends on
+
+- [Valid](../part-01/valid-2.md)
+- [Valid nil](valid-nil.md)
+- [Binomial Tree](../part-01/binomial-tree.md)
+- [Valid](../part-01/valid.md)
+- [Rank](../part-01/rank.md)
+- [Singleton](../part-01/singleton.md)
+- [Valid singleton](../part-01/valid-singleton.md)
 
 ## Sources
 

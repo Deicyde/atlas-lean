@@ -15,7 +15,14 @@ functions to be equal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraded Base Change](../multigraded-betti/multigraded-base-change.md)
+- [Multigraded Free Resolution](../multigraded-free-resolution/multigraded-free-resolution.md)
+- [Multigraded Resolution Comparison](../multigraded-betti-resolution-invariance/multigraded-resolution-comparison.md)
+- [Multigraded Poincare Coefficients](multigraded-poincare-coefficients.md)
+
+## Proof depends on
+
+- [Multigraded Betti Number eq of resolution Comparison](../multigraded-betti-resolution-invariance/multigraded-betti-number-eq-of-resolutio.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ The selected arithmetic-event cost is bounded by the source logarithmic-plus-out
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Linear Equation Solver](modular-linear-equation-solver.md)
 
 ## Sources
 

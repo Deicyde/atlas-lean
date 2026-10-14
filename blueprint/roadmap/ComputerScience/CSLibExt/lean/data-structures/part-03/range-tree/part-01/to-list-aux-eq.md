@@ -13,7 +13,9 @@ The accumulator traversal appends the leaf list onto its accumulator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Range Tree](range-tree.md)
+- [To List](to-list.md)
+- [To List Aux](to-list-aux.md)
 
 ## Sources
 

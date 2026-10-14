@@ -17,6 +17,11 @@ Proves `Wanted` entry `ramanujan_part1_ch8_entry8_digammaseries`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter8 Digamma eq Complex digamma](chapter8-digamma-eq-complex-digamma.md)
+- [Ramanujan part1 ch8 entry8 digammaseries complex digamma](ramanujan-part1-ch8-entry8-digammaseries.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch8Entry8Digammaseries](../../../../../../../sources/v2/MathlibExt.md)

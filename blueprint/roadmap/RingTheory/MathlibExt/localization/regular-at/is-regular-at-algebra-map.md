@@ -13,7 +13,7 @@ Elements in the image of the base ring are regular at every evaluation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Regular At](is-regular-at.md)
 
 ## Sources
 

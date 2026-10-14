@@ -14,6 +14,10 @@ The `4`-rank is the `F₂`-dimension of `2A / 4A`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Higher Two Power Rank](higher-two-power-rank.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.TwoPowerRank](../../../../../sources/v2/MathlibExt.md)

@@ -14,6 +14,10 @@ The **mandelbar set** (tricorn): connectedness locus of `z ↦ z̄² + c`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tantibar](tantibar.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.MandelbarWanted](../../../../../sources/v2/WantedExt.md)

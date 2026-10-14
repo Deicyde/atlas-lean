@@ -15,7 +15,7 @@ for all `n` and `m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Stirling First](../signed-stirling-first.md)
 
 ## Sources
 

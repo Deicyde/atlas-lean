@@ -13,7 +13,8 @@ The computed height of a tree agrees with its height index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+- [Height](height.md)
 
 ## Sources
 

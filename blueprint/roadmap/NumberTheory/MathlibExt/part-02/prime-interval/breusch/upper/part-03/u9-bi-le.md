@@ -13,7 +13,13 @@ One level layer bounded via the primorial estimate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G9r](../part-01/g9r.md)
+
+## Proof depends on
+
+- [U9 logp nonneg](../part-02/u9-logp-nonneg.md)
+- [U9 of to Nat](../part-02/u9-of-to-nat.md)
+- [U9 theta le](u9-theta-le.md)
 
 ## Sources
 

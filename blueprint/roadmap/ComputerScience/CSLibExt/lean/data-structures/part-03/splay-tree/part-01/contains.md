@@ -14,6 +14,10 @@ Membership test via splay: splay the key and inspect the root.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Access](access.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.SplayTree](../../../../../../../../sources/v2/CSLibExt.md)

@@ -14,7 +14,7 @@ is balanced.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balanced](balanced.md)
 
 ## Sources
 

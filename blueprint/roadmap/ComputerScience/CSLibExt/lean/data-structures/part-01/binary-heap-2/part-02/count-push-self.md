@@ -13,7 +13,13 @@ Inserting a value increases its multiplicity by exactly one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Heap](min-heap.md)
+- [Elements](elements.md)
+- [Push](push.md)
+
+## Proof depends on
+
+- [Elements push](elements-push.md)
 
 ## Sources
 

@@ -22,6 +22,10 @@ applied to each polynomial and the product of the others.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [I Sup Indep ker aeval and i Sup eq of pairwise is Coprime](i-sup-indep-ker-aeval-and-i-sup-eq-of-pa.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.KernelsLemma](../../../../sources/v2/MathlibExt.md)

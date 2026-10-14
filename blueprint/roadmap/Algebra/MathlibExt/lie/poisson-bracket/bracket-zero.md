@@ -13,7 +13,7 @@ Bracketing with zero vanishes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson Bracket](poisson-bracket.md)
 
 ## Sources
 

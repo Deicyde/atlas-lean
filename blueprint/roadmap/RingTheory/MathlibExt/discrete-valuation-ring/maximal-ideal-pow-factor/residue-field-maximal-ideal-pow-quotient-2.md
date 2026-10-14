@@ -14,7 +14,11 @@ with `B ⧸ 𝔪B ^ n`, by `Ideal.quotEquivOfEq` applied to
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residue Field Maximal Ideal Pow Quotient](residue-field-maximal-ideal-pow-quotient.md)
+
+## Proof depends on
+
+- [Maximal Ideal Pow Quotient Ideal eq](maximal-ideal-pow-quotient-ideal-eq.md)
 
 ## Sources
 

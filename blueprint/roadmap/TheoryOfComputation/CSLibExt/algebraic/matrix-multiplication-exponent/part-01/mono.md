@@ -13,7 +13,12 @@ A decomposition with at most `r` summands is also one with at most `s ≥ r` sum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Trilinear Rank At Most](has-trilinear-rank-at-most.md)
+
+## Proof depends on
+
+- [Rank One Trilinear Term](rank-one-trilinear-term.md)
+- [Eval](eval.md)
 
 ## Sources
 

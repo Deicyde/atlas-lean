@@ -13,7 +13,11 @@ The power series defining `ein` is complex differentiable everywhere.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ein](ein.md)
+
+## Proof depends on
+
+- [Ein Term](ein-term.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Structural membership of a complete key-value-priority entry.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
 
 ## Sources
 

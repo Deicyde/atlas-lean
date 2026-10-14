@@ -12,7 +12,11 @@ The unit left-translation of the two-sided full shift, bundled as a homeomorphis
 
 ## Depends on
 
-This node has no prerequisites.
+- [Full Shift Space](full-shift-space.md)
+
+## Proof depends on
+
+- [Unit Shift](unit-shift.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Sorting the saved buckets yields a globally nondecreasing array.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bucket Sort](bucket-sort.md)
 
 ## Sources
 

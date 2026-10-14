@@ -15,6 +15,10 @@ Then, if `x = x¹` is a line and `y = yᵏ` a k-dimensional subspace, we set
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dist Lines](dist-lines.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LinearSubspacesWanted](../../../../../sources/v2/WantedExt.md)

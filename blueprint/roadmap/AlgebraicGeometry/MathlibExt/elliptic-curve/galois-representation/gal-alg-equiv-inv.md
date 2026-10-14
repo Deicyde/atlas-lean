@@ -13,7 +13,7 @@ The bridge preserves inverses definitionally.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gal Alg Equiv](gal-alg-equiv.md)
 
 ## Sources
 

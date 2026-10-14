@@ -14,6 +14,10 @@ Unit equilateral triangles spanned by a point set.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Unit Equilateral Triangle](is-unit-equilateral-triangle.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.ErdosProblem755Wanted](../../../../../sources/v2/WantedExt.md)

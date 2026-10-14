@@ -12,7 +12,14 @@ A source-contained acyclic edge list spanning every input component.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Graph](graph.md)
+- [Weighted Edge](weighted-edge.md)
+
+## Proof depends on
+
+- [Acyclic](acyclic.md)
+- [Spans](spans.md)
+- [Valid Edges](valid-edges.md)
 
 ## Sources
 

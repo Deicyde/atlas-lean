@@ -13,7 +13,11 @@ Heap sort returns a permutation of its input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heap Sort](heap-sort.md)
+
+## Proof depends on
+
+- [Heap Sort multiset](heap-sort-multiset.md)
 
 ## Sources
 

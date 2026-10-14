@@ -17,6 +17,10 @@ and are presented in nondecreasing order. This is the condition
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Nondecreasing Egyptian](is-nondecreasing-egyptian.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.EgyptianFraction](../../../../../sources/v2/MathlibExt.md)

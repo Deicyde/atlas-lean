@@ -13,7 +13,12 @@ Selection sort performs exactly `n * (n - 1) / 2` comparisons on `n` elements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Selection Sort](selection-sort.md)
+
+## Proof depends on
+
+- [Extract Min](extract-min.md)
+- [Extract Min time](extract-min-time.md)
 
 ## Sources
 

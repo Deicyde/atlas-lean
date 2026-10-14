@@ -14,7 +14,7 @@ The value `y_2 = 1 + 3 * X + 3 * X ^ 2`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bessel Polynomial](bessel-polynomial.md)
 
 ## Sources
 

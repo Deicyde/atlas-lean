@@ -12,7 +12,11 @@ The source's singular constant clause for an explicit sampling law.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar Point](planar-point.md)
+
+## Proof depends on
+
+- [Is BHHConstant For](is-bhhconstant-for.md)
 
 ## Sources
 

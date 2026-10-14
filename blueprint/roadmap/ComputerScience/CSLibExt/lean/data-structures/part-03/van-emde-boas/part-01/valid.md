@@ -12,7 +12,7 @@ The summary bit of a cluster is set exactly when the cluster is nonempty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](van-emde-boas.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ If the longest common prefix is the whole second list, the first extends it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Common Prefix](common-prefix.md)
+
+## Proof depends on
+
+- [Append drop common Prefix left](append-drop-common-prefix-left.md)
 
 ## Sources
 

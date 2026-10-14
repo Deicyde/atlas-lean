@@ -13,7 +13,7 @@ Selling the rod without a cut earns its supplied price.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composition Revenue](composition-revenue.md)
 
 ## Sources
 

@@ -13,7 +13,10 @@ The empty clique is adjacent to every singleton clique.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Simplex Vertex](simplex-vertex.md)
+- [Empty Vertex](empty-vertex.md)
+- [Simplex Graph](simplex-graph.md)
+- [Singleton Vertex](singleton-vertex.md)
 
 ## Sources
 

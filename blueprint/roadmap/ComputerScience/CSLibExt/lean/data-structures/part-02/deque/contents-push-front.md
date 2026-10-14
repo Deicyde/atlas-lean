@@ -13,7 +13,9 @@ Pushing at the front conses onto the represented sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Deque](deque.md)
+- [Contents](contents.md)
+- [Push Front](push-front.md)
 
 ## Sources
 

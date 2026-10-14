@@ -13,7 +13,12 @@ The minimum rank has a decomposition witness, not merely a numerical designation
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Trilinear Rank At Most](has-trilinear-rank-at-most.md)
+- [Trilinear Rank](trilinear-rank.md)
+
+## Proof depends on
+
+- [Has Trilinear Rank At Most card](has-trilinear-rank-at-most-card.md)
 
 ## Sources
 

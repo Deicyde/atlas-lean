@@ -15,7 +15,15 @@ expected combined flattening.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overflow](../part-01/overflow.md)
+- [Tree](../part-01/tree.md)
+
+## Proof depends on
+
+- [All](../part-01/all.md)
+- [Ordered](../part-01/ordered.md)
+- [Flatten](../part-01/flatten.md)
+- [Ordered Insert](../../../part-02/ordered-insert/ordered-insert.md)
 
 ## Sources
 

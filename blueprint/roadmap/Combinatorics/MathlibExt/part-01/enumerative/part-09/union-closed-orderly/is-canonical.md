@@ -16,6 +16,11 @@ string is lexicographically minimal among all permuted images (`≤` on
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fam String](fam-string.md)
+- [Perm Image](perm-image.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.UnionClosedOrderly](../../../../../../../sources/v2/MathlibExt.md)

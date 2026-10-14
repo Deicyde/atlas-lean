@@ -12,7 +12,11 @@ Search a root's tree by separator comparisons.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Root](root.md)
+
+## Proof depends on
+
+- [Contains](../part-01/contains.md)
 
 ## Sources
 

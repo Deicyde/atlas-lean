@@ -16,6 +16,11 @@ Schulz primary proof has not been acquired or verified in this lane.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bernoulli Value](../../../MathlibExt/part-01/berry-esseen-constant/part-02/bernoulli-value.md)
+- [Esseen Constant](../../../MathlibExt/part-01/berry-esseen-constant/part-01/esseen-constant.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Probability.BerryEsseenConstantWanted](../../../../../sources/v2/WantedExt.md)

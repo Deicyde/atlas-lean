@@ -14,7 +14,7 @@ signed balance.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Complete Gessel Word](is-complete-gessel-word.md)
 
 ## Sources
 

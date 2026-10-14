@@ -23,6 +23,10 @@ forms αⁿ±βⁿ*, Ann. of Math. (2) 15 (1913), 30–70).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Padic Val Nat fib mul](../../../part-01/padics/fibonomial-prime-power-valuation/padic-val-nat-fib-mul.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Recurrences.FibonacciPrimitiveDivisor](../../../../../../sources/v2/MathlibExt.md)

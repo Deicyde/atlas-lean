@@ -12,7 +12,12 @@ Canonical map `G → completion G` sending `x` to `(mk x)_H`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Completion](completion.md)
+
+## Proof depends on
+
+- [Index](index.md)
+- [Diagram](diagram.md)
 
 ## Sources
 

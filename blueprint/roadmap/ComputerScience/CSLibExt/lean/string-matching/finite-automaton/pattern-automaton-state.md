@@ -13,7 +13,11 @@ The actual canonical automaton state is the greatest suffix-prefix length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pattern Automaton](pattern-automaton.md)
+
+## Proof depends on
+
+- [Compute Transition spec](compute-transition-spec.md)
 
 ## Sources
 

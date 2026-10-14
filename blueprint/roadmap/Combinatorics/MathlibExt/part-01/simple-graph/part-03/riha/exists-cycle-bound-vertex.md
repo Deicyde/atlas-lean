@@ -14,7 +14,7 @@ different vertex whose neighbors all lie on the cycle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bound Vertex](is-bound-vertex.md)
 
 ## Sources
 

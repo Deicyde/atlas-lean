@@ -13,7 +13,12 @@ The zero coefficient gives a lower bound independently of literature.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Asymptotic Dobrowolski Constant](asymptotic-dobrowolski-constant.md)
+
+## Proof depends on
+
+- [Coe le asymptotic Dobrowolski Constant](coe-le-asymptotic-dobrowolski-constant.md)
+- [Zero is Asymptotic Dobrowolski Coefficient](zero-is-asymptotic-dobrowolski-coefficie.md)
 
 ## Sources
 

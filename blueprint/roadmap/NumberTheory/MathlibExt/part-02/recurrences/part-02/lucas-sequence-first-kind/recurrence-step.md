@@ -13,7 +13,7 @@ Third clause of the defining recurrence: the two-step relation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lucas Sequence First Kind](is-lucas-sequence-first-kind.md)
 
 ## Sources
 

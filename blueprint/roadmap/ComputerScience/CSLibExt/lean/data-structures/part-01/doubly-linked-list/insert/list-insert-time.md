@@ -13,7 +13,8 @@ Exact source assignment/NIL-test events, including access-valid aliases.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../basic/node.md)
+- [List Insert](list-insert.md)
 
 ## Sources
 

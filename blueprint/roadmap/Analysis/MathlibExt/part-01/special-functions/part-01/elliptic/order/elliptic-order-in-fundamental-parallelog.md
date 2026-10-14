@@ -16,7 +16,13 @@ hypothesis `hf`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Elliptic Function](../function/is-elliptic-function.md)
+
+## Proof depends on
+
+- [Pole Multiplicity](pole-multiplicity.md)
+- [Pole Set In Fundamental Parallelogram](pole-set-in-fundamental-parallelogram.md)
+- [Pole Set In Fundamental Parallelogram finite](pole-set-in-fundamental-parallelogram-fi.md)
 
 ## Sources
 

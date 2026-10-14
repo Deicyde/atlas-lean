@@ -13,7 +13,18 @@ The coefficient-rank minimum equals the actual tensor-product rank minimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matrix Coordinate](../part-01/matrix-coordinate.md)
+- [Square Matrix Multiplication Rank](square-matrix-multiplication-rank.md)
+- [Square Matrix Multiplication Tensor](square-matrix-multiplication-tensor.md)
+- [Trilinear Rank](../part-01/trilinear-rank.md)
+
+## Proof depends on
+
+- [Trilinear Tensor](../part-01/trilinear-tensor.md)
+- [Matrix Multiplication Structure Tensor](matrix-multiplication-structure-tensor.md)
+- [Matrix Multiplication Structure Tensor coefficients](matrix-multiplication-structure-tensor-c.md)
+- [Matrix Multiplication Tensor](../part-01/matrix-multiplication-tensor.md)
+- [Trilinear Tensor Coefficients](../part-01/trilinear-tensor-coefficients.md)
 
 ## Sources
 

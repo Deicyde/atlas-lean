@@ -13,7 +13,7 @@ Lower-bound search uses at most `clog₂(n + 1)` element comparisons.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Bound](lower-bound.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Unfolding of `IsEquivalent` to the intersection formula.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Congruence Subgroup Pair](congruence-subgroup-pair.md)
+- [Is Equivalent](is-equivalent.md)
 
 ## Sources
 

@@ -17,6 +17,10 @@ for these vertex types. The threshold is any positive integer.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Wheel Free](wheel-free.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.SimpleGraph.DaviesWheelFreeChromaticWanted](../../../../../../sources/v2/WantedExt.md)

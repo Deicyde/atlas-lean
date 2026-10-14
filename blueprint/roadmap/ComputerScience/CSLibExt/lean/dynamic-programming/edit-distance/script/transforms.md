@@ -12,7 +12,11 @@ A script transforms a source when its executable interpretation returns the targ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edit Script](edit-script.md)
+
+## Proof depends on
+
+- [Apply?](apply.md)
 
 ## Sources
 

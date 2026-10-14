@@ -14,7 +14,8 @@ with the group-ring inversion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inversion Twist](inversion-twist.md)
+- [Inversion](inversion.md)
 
 ## Sources
 

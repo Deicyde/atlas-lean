@@ -13,7 +13,11 @@ lean: MonoidHom.isDirichletCharacterModulus_self
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dirichlet Character Modulus](is-dirichlet-character-modulus.md)
+
+## Proof depends on
+
+- [Is Dirichlet Character Modulus iff](is-dirichlet-character-modulus-iff.md)
 
 ## Sources
 

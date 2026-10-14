@@ -13,7 +13,7 @@ An isometry maps a set to its image equidecomposably.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finitely Equidecomposable By Isometries](finitely-equidecomposable-by-isometries.md)
 
 ## Sources
 

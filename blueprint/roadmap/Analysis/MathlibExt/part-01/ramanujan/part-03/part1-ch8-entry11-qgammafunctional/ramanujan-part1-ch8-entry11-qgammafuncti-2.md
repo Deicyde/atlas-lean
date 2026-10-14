@@ -17,6 +17,11 @@ Proves `Wanted` entry `ramanujan_part1_ch8_entry11_qgammafunctional`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter8 Digamma eq digamma](chapter8-digamma-eq-digamma.md)
+- [Ramanujan part1 ch8 entry11 qgammafunctional digamma](ramanujan-part1-ch8-entry11-qgammafuncti.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch8Entry11Qgammafunctional](../../../../../../../sources/v2/MathlibExt.md)

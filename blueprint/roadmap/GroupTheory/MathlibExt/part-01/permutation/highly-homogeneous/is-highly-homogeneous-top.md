@@ -14,7 +14,7 @@ carried to any other by some permutation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Highly Homogeneous](is-highly-homogeneous.md)
 
 ## Sources
 

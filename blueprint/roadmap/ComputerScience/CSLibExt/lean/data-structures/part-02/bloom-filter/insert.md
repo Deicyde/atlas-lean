@@ -12,7 +12,7 @@ Inserts an element by setting the bit selected by each hash function.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bloom Filter](bloom-filter.md)
 
 ## Sources
 

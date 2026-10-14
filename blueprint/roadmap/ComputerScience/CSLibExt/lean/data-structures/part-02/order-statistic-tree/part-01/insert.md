@@ -12,7 +12,12 @@ Insert a key, ignoring a duplicate and repairing every cache on the search path.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Entry](entry.md)
+- [Node](node.md)
 
 ## Sources
 

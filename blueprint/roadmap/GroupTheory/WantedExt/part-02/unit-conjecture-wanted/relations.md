@@ -12,7 +12,12 @@ The relations defining the group `P` defined in Theorem A of the paper.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generators](generators.md)
+
+## Proof depends on
+
+- [A](a.md)
+- [B](b.md)
 
 ## Sources
 

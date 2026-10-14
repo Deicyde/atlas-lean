@@ -13,7 +13,12 @@ For a nonempty pattern, KMP agrees with the start-offset projection of `List.dro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kmp Search](kmp-search.md)
+
+## Proof depends on
+
+- [Match At](../basic/match-at.md)
+- [Kmp Search eq some iff](kmp-search-eq-some-iff.md)
 
 ## Sources
 

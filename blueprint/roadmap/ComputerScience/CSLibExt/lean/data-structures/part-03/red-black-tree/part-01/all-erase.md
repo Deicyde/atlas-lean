@@ -14,7 +14,10 @@ tree, by definition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [All](../../../part-02/binary-search-tree/part-01/all.md)
+- [All](all.md)
+- [Tree](tree.md)
+- [Erase](erase.md)
 
 ## Sources
 

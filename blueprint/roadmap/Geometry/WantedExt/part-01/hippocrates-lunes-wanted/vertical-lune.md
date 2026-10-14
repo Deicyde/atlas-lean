@@ -12,7 +12,14 @@ The Hippocrates lune on the vertical leg.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
+
+## Proof depends on
+
+- [A](a.md)
+- [C](c.md)
+- [Closed Half Disk](closed-half-disk.md)
+- [Hypotenuse Semidisk](hypotenuse-semidisk.md)
 
 ## Sources
 

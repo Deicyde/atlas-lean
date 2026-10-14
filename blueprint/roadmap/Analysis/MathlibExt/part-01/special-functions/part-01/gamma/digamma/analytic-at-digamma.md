@@ -15,6 +15,10 @@ lean: Complex.analyticAt_digamma
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Analytic At Gamma](analytic-at-gamma.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.Gamma.Digamma](../../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,11 @@ Chunking partitions the list: flattening recovers it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chunk Groups](chunk-groups.md)
+
+## Proof depends on
+
+- [Chunk Groups Aux](chunk-groups-aux.md)
 
 ## Sources
 

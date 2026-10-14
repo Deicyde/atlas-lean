@@ -14,7 +14,28 @@ Insertion preserves the B-tree invariant: the result is again ordered and root-v
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](../part-01/btree.md)
+- [Is BTree](is-btree.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Ins Result](../part-01/ins-result.md)
+- [Ordered](../part-01/ordered.md)
+- [Valid](../part-01/valid.md)
+- [Valid Root](../part-01/valid-root.md)
+- [Flatten](../part-01/flatten.md)
+- [Flatten Aux](../part-01/flatten-aux.md)
+- [Flatten Aux eq](../part-01/flatten-aux-eq.md)
+- [Flatten insert](flatten-insert.md)
+- [Flatten node append cons](../part-01/flatten-node-append-cons.md)
+- [Flatten node nil cons](../part-01/flatten-node-nil-cons.md)
+- [Flatten node nil nil](../part-01/flatten-node-nil-nil.md)
+- [Grown Flatten](../part-01/grown-flatten.md)
+- [Ins](ins.md)
+- [Ins Leaf](../part-01/ins-leaf.md)
+- [Mk Node](mk-node.md)
+- [Split Node](split-node.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Overlength patterns return immediately, without preprocessing or search events.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boyer Moore Matches](boyer-moore-matches.md)
 
 ## Sources
 

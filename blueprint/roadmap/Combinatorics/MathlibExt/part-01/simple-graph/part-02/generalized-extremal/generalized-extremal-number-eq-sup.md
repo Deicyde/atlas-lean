@@ -15,7 +15,7 @@ expression: the supremum of `G.copyCount T` over all `H`-free hosts on
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Extremal Number](generalized-extremal-number.md)
 
 ## Sources
 

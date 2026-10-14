@@ -14,7 +14,11 @@ present, and leaves it unchanged otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete Rebuild](delete-rebuild.md)
+
+## Proof depends on
+
+- [Flatten delete Rebuild](flatten-delete-rebuild.md)
 
 ## Sources
 

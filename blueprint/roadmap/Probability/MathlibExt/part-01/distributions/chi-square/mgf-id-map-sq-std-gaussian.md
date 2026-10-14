@@ -15,6 +15,10 @@ MGF of the pushed-forward square law, via the promoted Gaussian-square MGF.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mgf sq std Gaussian](mgf-sq-std-gaussian.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.ChiSquare](../../../../../../sources/v2/MathlibExt.md)

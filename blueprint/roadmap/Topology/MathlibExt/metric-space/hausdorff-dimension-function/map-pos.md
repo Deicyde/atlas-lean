@@ -13,7 +13,7 @@ Strict positivity at positive radii, preserving source codomain `(0,∞)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hausdorff Dimension Function](hausdorff-dimension-function.md)
 
 ## Sources
 

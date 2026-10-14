@@ -15,6 +15,10 @@ Local normal convergence implies pointwise absolute convergence on the domain.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Summable norm](summable-norm.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.NormalConvergence](../../../../../../../sources/v2/MathlibExt.md)

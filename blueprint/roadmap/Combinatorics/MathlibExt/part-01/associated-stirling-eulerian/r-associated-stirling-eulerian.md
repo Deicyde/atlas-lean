@@ -19,6 +19,11 @@ Lines 653-657; URL https://cs.uwaterloo.ca/journals/JIS/VOL28/Rakotoson/rakoto12
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is RAssociated Cycle Perm](is-rassociated-cycle-perm.md)
+- [Excedance Count](excedance-count.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.AssociatedStirlingEulerian](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ Peeling off the last factor of `P_Q`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Poch Fin](q-poch-fin.md)
 
 ## Sources
 

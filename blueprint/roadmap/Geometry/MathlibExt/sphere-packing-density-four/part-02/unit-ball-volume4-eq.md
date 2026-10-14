@@ -13,7 +13,11 @@ Source: the standard four-dimensional unit-ball volume `π²/2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit Ball Volume4](../part-01/unit-ball-volume4.md)
+
+## Proof depends on
+
+- [Space](../part-01/space.md)
 
 ## Sources
 

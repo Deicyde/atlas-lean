@@ -14,7 +14,14 @@ predicate together with nonemptiness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Factor](is-factor.md)
+- [Is Nonempty Factor](is-nonempty-factor.md)
+
+## Proof depends on
+
+- [Factor List](factor-list.md)
+- [Is Factor iff exists factor List](is-factor-iff-exists-factor-list.md)
+- [Is Nonempty Factor iff exists factor List](is-nonempty-factor-iff-exists-factor-lis.md)
 
 ## Sources
 

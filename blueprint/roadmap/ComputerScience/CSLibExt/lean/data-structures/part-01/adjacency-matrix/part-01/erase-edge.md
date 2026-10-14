@@ -12,7 +12,7 @@ Remove the single directed edge from `i` to `j`; all other entries are kept.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adjacency Matrix](adjacency-matrix.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Gilbert condition holds iff the valuation is modular and monotone.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gilbert Condition](gilbert-condition.md)
+- [Is Modular Valuation](is-modular-valuation.md)
 
 ## Sources
 

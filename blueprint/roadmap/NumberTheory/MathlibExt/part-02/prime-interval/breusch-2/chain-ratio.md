@@ -13,7 +13,7 @@ Consecutive chain entries have ratio below `9 / 8`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain](chain.md)
 
 ## Sources
 

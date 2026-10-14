@@ -13,7 +13,20 @@ Looking up an inserted key returns its replacement value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Valid](../part-01/valid.md)
+- [Insert](../part-01/insert.md)
+- [Lookup](../part-01/lookup.md)
+
+## Proof depends on
+
+- [Heap Ordered](../part-01/heap-ordered.md)
+- [Ordered](../part-01/ordered.md)
+- [Contents](../part-01/contents.md)
+- [Contents insert](contents-insert.md)
+- [Lookup contents](../part-02/lookup-contents.md)
+- [Split](../part-01/split.md)
+- [Valid insert](valid-insert.md)
 
 ## Sources
 

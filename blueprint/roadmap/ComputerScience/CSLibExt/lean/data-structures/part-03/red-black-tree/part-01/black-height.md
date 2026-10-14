@@ -12,7 +12,11 @@ The number of black nodes on a root-to-leaf path, counting the leaf.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Color](color.md)
 
 ## Sources
 

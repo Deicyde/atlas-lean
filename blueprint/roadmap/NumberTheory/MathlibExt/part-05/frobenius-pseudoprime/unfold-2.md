@@ -13,7 +13,8 @@ Unfolding of `Nat.IsFrobeniusProbablePrime`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Frobenius Probable Prime](is-frobenius-probable-prime.md)
+- [Is Greatest Common Monic Divisor](is-greatest-common-monic-divisor.md)
 
 ## Sources
 

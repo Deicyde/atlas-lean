@@ -13,7 +13,11 @@ The chosen linear extension is bijective.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Some Linear Extension](some-linear-extension.md)
+
+## Proof depends on
+
+- [Lin Ext Order Iso](lin-ext-order-iso.md)
 
 ## Sources
 

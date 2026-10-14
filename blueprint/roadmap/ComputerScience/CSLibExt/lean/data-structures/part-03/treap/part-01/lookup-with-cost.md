@@ -12,7 +12,7 @@ Search result paired with the number of visited nodes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
 
 ## Sources
 

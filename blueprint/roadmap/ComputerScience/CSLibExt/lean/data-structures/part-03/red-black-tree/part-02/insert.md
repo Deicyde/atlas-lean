@@ -12,7 +12,12 @@ Insert a key, leaving an existing equal key unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+
+## Proof depends on
+
+- [Ins](ins.md)
+- [Make Black](make-black.md)
 
 ## Sources
 

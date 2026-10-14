@@ -16,6 +16,10 @@ with respect to the list assignment `L` (the largest `k` for which some
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is List Coloring](is-list-coloring.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.PartialListColoringWanted](../../../../sources/v2/WantedExt.md)

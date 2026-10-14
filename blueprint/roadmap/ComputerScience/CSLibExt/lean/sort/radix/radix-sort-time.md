@@ -13,7 +13,13 @@ Radix sort uses at most `d * (7 * n + 3 * b)` charged operations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Radix Sort](radix-sort.md)
+
+## Proof depends on
+
+- [Counting Sort](../counting/counting-sort.md)
+- [Counting Sort correct](../counting/counting-sort-correct.md)
+- [Counting Sort time](../counting/counting-sort-time.md)
 
 ## Sources
 

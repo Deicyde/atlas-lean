@@ -12,7 +12,12 @@ The ideal norm as a bundled monoid homomorphism.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arakelov Divisor](arakelov-divisor.md)
+
+## Proof depends on
+
+- [Ideal Norm](ideal-norm.md)
+- [Ideal Norm coe](ideal-norm-coe.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ At a prime `p`, the coefficient is `a p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter5 Entry30 Coeff](chapter5-entry30-coeff.md)
+
+## Proof depends on
+
+- [Chapter5 Entry30 Coeff of squarefree](chapter5-entry30-coeff-of-squarefree.md)
 
 ## Sources
 

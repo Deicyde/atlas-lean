@@ -12,7 +12,12 @@ The action of the Descartes orthogonal group on primitive Descartes quadruples.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Descartes Orthogonal Group](descartes-orthogonal-group.md)
+
+## Proof depends on
+
+- [Descartes Matrix](descartes-matrix.md)
+- [General Linear Group Action](general-linear-group-action.md)
 
 ## Sources
 

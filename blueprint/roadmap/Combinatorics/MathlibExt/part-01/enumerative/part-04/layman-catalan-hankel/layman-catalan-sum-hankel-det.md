@@ -21,6 +21,10 @@ Corrected occurrence count: 3 mentions / 2 papers / 0 proof uses.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Layman catalan sum hankel det unrestricted](layman-catalan-sum-hankel-det-unrestrict.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.LaymanCatalanHankel](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ The actual integral coefficient of a single multivariate Fourier monomial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frequency](../../basic/frequency.md)
 
 ## Sources
 

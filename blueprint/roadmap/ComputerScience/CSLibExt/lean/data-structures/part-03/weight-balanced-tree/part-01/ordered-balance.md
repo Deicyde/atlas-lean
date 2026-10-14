@@ -13,7 +13,9 @@ Rebalancing preserves the search-tree ordering invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [All](../../../part-02/binary-search-tree/part-01/all.md)
+- [Ordered](../../../part-02/binary-search-tree/part-01/ordered.md)
+- [Balance](balance.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ Erased contents are exactly the two non-pivot split sides.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Contents](../part-01/contents.md)
+- [Erase](../part-01/erase.md)
+- [Split](../part-01/split.md)
+
+## Proof depends on
+
+- [Contents merge](../part-02/contents-merge.md)
 
 ## Sources
 

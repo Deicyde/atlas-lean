@@ -13,7 +13,7 @@ The exact increment cost is the initial one-prefix plus a first zero when presen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Increment](increment.md)
 
 ## Sources
 

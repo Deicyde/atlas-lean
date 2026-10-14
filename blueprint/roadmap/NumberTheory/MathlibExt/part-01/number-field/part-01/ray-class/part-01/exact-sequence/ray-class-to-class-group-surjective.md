@@ -16,6 +16,10 @@ Surjectivity of the ray-class-to-class-group projection
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Coprime Ideal Class Map surjective](coprime-ideal-class-map-surjective.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.ExactSequence](../../../../../../../../../sources/v2/MathlibExt.md)

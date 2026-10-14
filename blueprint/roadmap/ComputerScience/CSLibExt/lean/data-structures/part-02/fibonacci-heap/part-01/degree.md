@@ -12,7 +12,7 @@ The stored degree of a Fibonacci tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Tree](fibonacci-tree.md)
 
 ## Sources
 

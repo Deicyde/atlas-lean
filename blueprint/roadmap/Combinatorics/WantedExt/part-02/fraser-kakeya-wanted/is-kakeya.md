@@ -12,7 +12,11 @@ A **Kakeya set**: it contains a line in every direction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Space](space.md)
+
+## Proof depends on
+
+- [Affine Line](affine-line.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ Deletion keeps every key other than the deleted one, ordered or not.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Erase](erase.md)
+
+## Proof depends on
+
+- [Delete Min](delete-min.md)
+- [Erase Min](erase-min.md)
+- [Inorder eq min D cons erase Min](inorder-eq-min-d-cons-erase-min.md)
+- [Min D](min-d.md)
 
 ## Sources
 

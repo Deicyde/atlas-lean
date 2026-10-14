@@ -13,7 +13,7 @@ Evaluation formula for the canonical left dual basis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dual Basis](dual-basis.md)
 
 ## Sources
 

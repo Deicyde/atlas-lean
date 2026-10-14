@@ -14,7 +14,13 @@ summand has strictly positive base.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonnegative Discrete Spectrum](nonnegative-discrete-spectrum.md)
+- [Counting Function](counting-function.md)
+- [Riesz Mean](riesz-mean.md)
+
+## Proof depends on
+
+- [Sublevel Finset](sublevel-finset.md)
 
 ## Sources
 

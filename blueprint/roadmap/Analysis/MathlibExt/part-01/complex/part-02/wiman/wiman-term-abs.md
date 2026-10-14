@@ -13,7 +13,11 @@ Re-normalizing a Wiman term's radius does not change it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Term](wiman-term.md)
+
+## Proof depends on
+
+- [Wiman Taylor Coefficient](wiman-taylor-coefficient.md)
 
 ## Sources
 

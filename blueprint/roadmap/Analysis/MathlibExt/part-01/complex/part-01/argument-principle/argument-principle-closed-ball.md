@@ -17,6 +17,10 @@ divisor sum (zeros minus poles with multiplicity) inside `ball c R`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Argument Principle closed Ball general](argument-principle-closed-ball-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.ArgumentPrinciple](../../../../../../../sources/v2/MathlibExt.md)

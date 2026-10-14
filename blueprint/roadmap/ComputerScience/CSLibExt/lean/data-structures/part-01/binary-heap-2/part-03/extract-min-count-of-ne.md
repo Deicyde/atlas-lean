@@ -13,7 +13,13 @@ Successful extraction preserves every other value's multiplicity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Heap](../part-02/min-heap.md)
+- [Elements](../part-02/elements.md)
+- [Extract Min](../part-02/extract-min.md)
+
+## Proof depends on
+
+- [Extract Min cons elements](extract-min-cons-elements.md)
 
 ## Sources
 

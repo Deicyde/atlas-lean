@@ -19,7 +19,11 @@ by preimages and adding kernel vectors, as in Wikipedia, "Jordan normal form", s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jordan Block](jordan-block.md)
+
+## Proof depends on
+
+- [Exists jordan Basis of charpoly splits](exists-jordan-basis-of-charpoly-splits.md)
 
 ## Sources
 

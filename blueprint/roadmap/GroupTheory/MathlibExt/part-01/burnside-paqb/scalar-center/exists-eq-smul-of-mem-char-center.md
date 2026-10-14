@@ -13,7 +13,7 @@ An element of the scalar center acts by some scalar.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Char Center](char-center.md)
 
 ## Sources
 

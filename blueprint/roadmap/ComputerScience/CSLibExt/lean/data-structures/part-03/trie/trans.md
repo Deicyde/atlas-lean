@@ -13,7 +13,12 @@ Lookup equivalence is transitive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trie](trie.md)
+- [Lookup Equiv](lookup-equiv.md)
+
+## Proof depends on
+
+- [Lookup](lookup.md)
 
 ## Sources
 

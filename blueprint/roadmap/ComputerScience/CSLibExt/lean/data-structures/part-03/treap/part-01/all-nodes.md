@@ -12,7 +12,7 @@ lean: Cslib.Algorithms.Lean.Treap.Tree.AllNodes
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
 
 ## Sources
 

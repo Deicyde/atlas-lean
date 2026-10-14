@@ -14,7 +14,15 @@ and its `π²/2`-scaled volume-density bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Center Density4](../part-01/center-density4.md)
+- [Sphere Packing Density4](../part-01/sphere-packing-density4.md)
+
+## Proof depends on
+
+- [Unit Ball Volume4](../part-01/unit-ball-volume4.md)
+- [Unit Ball Volume4 eq](unit-ball-volume4-eq.md)
+- [Unit Ball Volume4 ne top](unit-ball-volume4-ne-top.md)
+- [Unit Ball Volume4 ne zero](unit-ball-volume4-ne-zero.md)
 
 ## Sources
 

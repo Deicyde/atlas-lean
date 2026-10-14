@@ -16,6 +16,10 @@ i.e. does the ratio tend to `1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Extremal Number](extremal-number.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ErdosProblem574Wanted](../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,7 @@ A rough number is nonzero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Rough](is-rough.md)
 
 ## Sources
 

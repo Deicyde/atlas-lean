@@ -14,6 +14,10 @@ The actual sharp global remainder, with finite attainment recorded separately.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sharp Remainder Values](sharp-remainder-values.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Fourier.TorusSobolev.Basic](../../../../../../../sources/v2/MathlibExt.md)

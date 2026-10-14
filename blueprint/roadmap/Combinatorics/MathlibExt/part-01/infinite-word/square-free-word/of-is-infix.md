@@ -13,7 +13,7 @@ Every infix of a squarefree word is squarefree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Square Free Word](is-square-free-word.md)
 
 ## Sources
 

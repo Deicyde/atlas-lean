@@ -15,6 +15,11 @@ positive order.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Subpolynomial](is-subpolynomial.md)
+- [Minimum Condition Number](../sign-condition-number/minimum-condition-number.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.SignConditionNumberDecay](../../../../../../sources/v2/MathlibExt.md)

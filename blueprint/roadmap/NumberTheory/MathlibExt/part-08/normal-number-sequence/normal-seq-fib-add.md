@@ -16,7 +16,11 @@ source `jis_source_6670e6fe84c03e3ab211c809`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normal Seq Fib](normal-seq-fib.md)
+
+## Proof depends on
+
+- [Normal Seq](normal-seq.md)
 
 ## Sources
 

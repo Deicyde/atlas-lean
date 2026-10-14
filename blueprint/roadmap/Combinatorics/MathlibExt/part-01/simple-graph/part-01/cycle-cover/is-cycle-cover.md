@@ -12,7 +12,11 @@ lean: SimpleGraph.IsCycleCover
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cycle](cycle.md)
+
+## Proof depends on
+
+- [Edges](edges.md)
 
 ## Sources
 

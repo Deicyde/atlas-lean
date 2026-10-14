@@ -19,6 +19,10 @@ segments, using an averaging argument to obtain a positive-measure family of suc
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Szemeredi](../../../Combinatorics/MathlibExt/part-01/additive/szemeredi.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Dynamics.Ergodic.MultipleRecurrence](../../../../sources/v2/MathlibExt.md)

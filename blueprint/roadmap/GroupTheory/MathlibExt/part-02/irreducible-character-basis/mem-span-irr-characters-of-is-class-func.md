@@ -20,6 +20,12 @@ Teleman's Theorem 9.3 (completeness of characters).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eq zero of is Class Function of orthogonal](eq-zero-of-is-class-function-of-orthogon.md)
+- [Character is Class Function](../../part-01/class-function/character-is-class-function.md)
+- [Linear Independent irr Characters](linear-independent-irr-characters.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.IrreducibleCharacterBasis](../../../../../sources/v2/MathlibExt.md)

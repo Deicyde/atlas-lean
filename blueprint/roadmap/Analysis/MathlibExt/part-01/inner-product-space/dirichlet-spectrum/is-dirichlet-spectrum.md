@@ -16,6 +16,10 @@ pointwise equality, not an unconstrained certificate field.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Variational Eigenvalue](variational-eigenvalue.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.DirichletSpectrum](../../../../../../sources/v2/MathlibExt.md)

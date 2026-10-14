@@ -14,7 +14,7 @@ Value equation for the cyclic shift: it sends `aᵢ` to `a_{i+t mod L}`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shift Letter](shift-letter.md)
 
 ## Sources
 

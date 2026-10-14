@@ -14,6 +14,10 @@ Smooth `2^k 3^l` subset sums have density zero.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Density](../../../../Data/MathlibExt/set/density/has-density.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem845Wanted](../../../../../sources/v2/WantedExt.md)

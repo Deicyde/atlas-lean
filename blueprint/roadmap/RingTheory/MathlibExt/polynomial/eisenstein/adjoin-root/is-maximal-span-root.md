@@ -16,6 +16,11 @@ over a DVR is a maximal ideal.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is maximal of irreducible factor](../../../adjoin-root/local-maximal/is-maximal-of-irreducible-factor.md)
+- [Map maximal Ideal le span root](map-maximal-ideal-le-span-root.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Polynomial.Eisenstein.AdjoinRoot](../../../../../../sources/v2/MathlibExt.md)

@@ -17,6 +17,10 @@ Proves `Wanted` entry `ramanujan_part1_ch3_entry11_corollary_newton_girard`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ramanujan part1 ch3 entry11 corollary newton girard general](ramanujan-part1-ch3-entry11-corollary-ne.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry11CorollaryNewtonGirard](../../../../../../../sources/v2/MathlibExt.md)

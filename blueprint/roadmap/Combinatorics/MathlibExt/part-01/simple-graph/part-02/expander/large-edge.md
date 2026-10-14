@@ -13,7 +13,11 @@ Large-set edge clause of a `C`-expander.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is CExpander](is-cexpander.md)
+
+## Proof depends on
+
+- [External Neighbor Set](external-neighbor-set.md)
 
 ## Sources
 

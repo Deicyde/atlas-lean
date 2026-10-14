@@ -12,7 +12,11 @@ The stored tower height of a key, when present.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skip List](skip-list.md)
+
+## Proof depends on
+
+- [Entry](entry.md)
 
 ## Sources
 

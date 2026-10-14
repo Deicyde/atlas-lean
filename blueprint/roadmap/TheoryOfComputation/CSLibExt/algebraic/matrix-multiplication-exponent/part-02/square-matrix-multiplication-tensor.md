@@ -12,7 +12,11 @@ The square `n` by `n` matrix-multiplication tensor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matrix Coordinate](../part-01/matrix-coordinate.md)
+
+## Proof depends on
+
+- [Matrix Multiplication Tensor](../part-01/matrix-multiplication-tensor.md)
 
 ## Sources
 

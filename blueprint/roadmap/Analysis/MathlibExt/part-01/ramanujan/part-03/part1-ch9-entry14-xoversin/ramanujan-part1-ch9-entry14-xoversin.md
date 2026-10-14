@@ -17,6 +17,13 @@ and Lewin, *Polylogarithms and Associated Functions*, Chapter 4.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ramanujan part1 ch9 entry13 bernoulligen](../part1-ch9-entry13-bernoulligen/ramanujan-part1-ch9-entry13-bernoulligen.md)
+- [Chapter9 Chi At One eq zeta](chapter9-chi-at-one-eq-zeta.md)
+- [Chapter9 Odd Clausen Term summable of two le](chapter9-odd-clausen-term-summable-of-tw.md)
+- [Chapter9 Odd Clausen eq clausen sub](chapter9-odd-clausen-eq-clausen-sub.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch9Entry14Xoversin](../../../../../../../sources/v2/MathlibExt.md)

@@ -18,6 +18,11 @@ constrains the theorem to planar (embeddable) maps.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has K33 Minor](has-k33-minor.md)
+- [Has K5 Minor](has-k5-minor.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Graph.FourColorTheoremWanted](../../../../../../sources/v2/WantedExt.md)

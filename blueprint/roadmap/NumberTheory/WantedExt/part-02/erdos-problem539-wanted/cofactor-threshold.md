@@ -14,6 +14,10 @@ Largest cofactor lower bound for `n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Cofactor Lower Bound](is-cofactor-lower-bound.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem539Wanted](../../../../../sources/v2/WantedExt.md)

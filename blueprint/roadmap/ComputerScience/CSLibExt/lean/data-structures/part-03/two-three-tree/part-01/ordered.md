@@ -13,7 +13,11 @@ subtrees, recursively.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [All](all.md)
 
 ## Sources
 

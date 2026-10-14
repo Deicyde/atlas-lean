@@ -13,7 +13,7 @@ The empty set has no outer Minkowski boundary.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Outer Minkowski Boundary](outer-minkowski-boundary.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ For `m = 0` the cyclotomic field collapses to `⊥`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyc Subfield](cyc-subfield.md)
 
 ## Sources
 

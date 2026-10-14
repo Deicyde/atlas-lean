@@ -14,6 +14,10 @@ A graph is `k`-degenerate if it is `k`-degenerate on its full vertex set.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Degenerate On](is-degenerate-on.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Degeneracy](../../../../../../../sources/v2/MathlibExt.md)

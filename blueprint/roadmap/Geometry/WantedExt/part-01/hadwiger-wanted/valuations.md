@@ -12,7 +12,11 @@ The valuations form an `ℝ`-subspace of `ConvexBody ℝⁿ → ℝ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
+
+## Proof depends on
+
+- [Is Valuation](is-valuation.md)
 
 ## Sources
 

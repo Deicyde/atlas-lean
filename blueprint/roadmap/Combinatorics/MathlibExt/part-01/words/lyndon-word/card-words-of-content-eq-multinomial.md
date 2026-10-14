@@ -13,7 +13,13 @@ The multinomial coefficient counts words with prescribed content.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Words Of Content](words-of-content.md)
+- [Sum witt Word Content](sum-witt-word-content.md)
+- [Witt Word Content](witt-word-content.md)
+
+## Proof depends on
+
+- [Witt Word Content cons](witt-word-content-cons.md)
 
 ## Sources
 

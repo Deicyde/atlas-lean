@@ -13,7 +13,11 @@ A Frobenius probable prime candidate exceeds one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Frobenius Probable Prime](is-frobenius-probable-prime.md)
+
+## Proof depends on
+
+- [Is Greatest Common Monic Divisor](is-greatest-common-monic-divisor.md)
 
 ## Sources
 

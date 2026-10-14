@@ -13,7 +13,17 @@ Its Laplacian energy, with the primary's physical-frequency weights.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laplace Energy](../../basic/laplace-energy.md)
+- [Lowest Shell Witness](lowest-shell-witness.md)
+
+## Proof depends on
+
+- [Frequency](../../basic/frequency.md)
+- [Axis Frequency](axis-frequency.md)
+- [Fourier Coefficient](../../basic/fourier-coefficient.md)
+- [Fourier Coefficient lowest Shell Witness](fourier-coefficient-lowest-shell-witness.md)
+- [Frequency Weight](../../basic/frequency-weight.md)
+- [Lowest Shell](lowest-shell.md)
 
 ## Sources
 

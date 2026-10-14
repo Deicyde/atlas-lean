@@ -12,7 +12,13 @@ Blocking pair: `m` prefers `w` over `μ m` and `w` prefers `m` over `μ.symm w`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [MPrefs](mprefs.md)
+- [Perfect Matching](perfect-matching.md)
+- [WPrefs](wprefs.md)
+
+## Proof depends on
+
+- [Lt](lt.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ The prime-to subgroups are monotone in the ideal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Units Prime To](units-prime-to.md)
+
+## Proof depends on
+
+- [Mono](mono.md)
 
 ## Sources
 

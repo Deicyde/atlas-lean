@@ -13,7 +13,13 @@ Insertion increments the element count.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Heap](../part-02/fibonacci-heap.md)
+- [Elements](elements.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Elements insert](elements-insert.md)
 
 ## Sources
 

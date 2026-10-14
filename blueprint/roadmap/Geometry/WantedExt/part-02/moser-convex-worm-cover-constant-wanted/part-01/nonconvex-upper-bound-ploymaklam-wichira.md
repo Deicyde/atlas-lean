@@ -15,6 +15,10 @@ adaptation.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nonconvex Worm Cover Constant](../../../../MathlibExt/moser-worm-cover/part-02/nonconvex-worm-cover-constant.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.MoserConvexWormCoverConstantWanted](../../../../../../sources/v2/WantedExt.md)

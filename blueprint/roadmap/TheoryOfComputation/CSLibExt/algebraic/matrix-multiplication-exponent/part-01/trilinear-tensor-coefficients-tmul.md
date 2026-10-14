@@ -13,7 +13,8 @@ A pure tensor has exactly the product of its three coordinate coefficients.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trilinear Tensor](trilinear-tensor.md)
+- [Trilinear Tensor Coefficients](trilinear-tensor-coefficients.md)
 
 ## Sources
 

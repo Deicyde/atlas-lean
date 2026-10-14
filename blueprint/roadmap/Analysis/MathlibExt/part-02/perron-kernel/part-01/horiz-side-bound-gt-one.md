@@ -15,6 +15,11 @@ Horizontal side bound for `y > 1`, uniform in the left endpoint.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integral exp mul](integral-exp-mul.md)
+- [Norm cpow of Real](norm-cpow-of-real.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.PerronKernel](../../../../../../sources/v2/MathlibExt.md)

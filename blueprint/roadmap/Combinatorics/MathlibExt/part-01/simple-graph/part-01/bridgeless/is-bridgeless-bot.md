@@ -13,7 +13,7 @@ The edgeless graph is vacuously bridgeless.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bridgeless](is-bridgeless.md)
 
 ## Sources
 

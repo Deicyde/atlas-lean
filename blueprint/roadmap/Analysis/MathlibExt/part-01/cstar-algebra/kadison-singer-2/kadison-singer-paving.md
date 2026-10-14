@@ -23,7 +23,13 @@ dilation reduction to derive Anderson paving.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Paving Proj](paving-proj.md)
+
+## Proof depends on
+
+- [Finite MSSBound](../kadison-singer/paving/finite-mssbound.md)
+- [Anderson Paving of finite MSS](../kadison-singer/paving/anderson-paving-of-finite-mss.md)
+- [Finite MSSBound](../kadison-singer/mss/finite-mssbound.md)
 
 ## Sources
 

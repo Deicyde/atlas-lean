@@ -27,6 +27,11 @@ instead of his continued fraction.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Euler Seidel Matrix](../part-02/euler-seidel-matrix/euler-seidel-matrix.md)
+- [Euler Seidel Matrix eq sum](../part-02/euler-seidel-matrix/euler-seidel-matrix-eq-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MedianGenocchiDivisibility](../../../../../../sources/v2/MathlibExt.md)

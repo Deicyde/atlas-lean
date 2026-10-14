@@ -13,7 +13,7 @@ The trivial lower bound uses the bottom of the actual nonnegative threshold doma
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar Distance Threshold](planar-distance-threshold.md)
 
 ## Sources
 

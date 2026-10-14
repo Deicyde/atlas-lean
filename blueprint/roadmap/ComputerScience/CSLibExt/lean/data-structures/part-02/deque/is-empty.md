@@ -12,7 +12,7 @@ A deque reports that it is empty when both of its lists are empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Deque](deque.md)
 
 ## Sources
 

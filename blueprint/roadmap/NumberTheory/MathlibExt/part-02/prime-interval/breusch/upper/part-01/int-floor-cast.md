@@ -15,6 +15,10 @@ Real floors of `Nat` quotients as integer casts.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nat floor nat div](nat-floor-nat-div.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Upper](../../../../../../../../sources/v2/MathlibExt.md)

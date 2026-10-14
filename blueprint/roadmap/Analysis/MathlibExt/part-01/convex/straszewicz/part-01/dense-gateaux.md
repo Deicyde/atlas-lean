@@ -13,7 +13,21 @@ Mazur's theorem: Gateaux points of the support function are dense.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gateaux Pt](gateaux-pt.md)
+- [Supp Func](supp-func.md)
+
+## Proof depends on
+
+- [Dir Deriv](dir-deriv.md)
+- [Dir Deriv add neg nonneg](dir-deriv-add-neg-nonneg.md)
+- [Dir Deriv continuous in v](dir-deriv-continuous-in-v.md)
+- [Dir Deriv sublevel open](dir-deriv-sublevel-open.md)
+- [Dir Deriv supp Func bound](dir-deriv-supp-func-bound.md)
+- [Dir Deriv zero](dir-deriv-zero.md)
+- [Dir Quot](dir-quot.md)
+- [Dir Quot bdd Below](dir-quot-bdd-below.md)
+- [Supp Func convex](supp-func-convex.md)
+- [Supp Func lipschitz](supp-func-lipschitz.md)
 
 ## Sources
 

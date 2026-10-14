@@ -13,7 +13,8 @@ The source's sign convention does not change the canonical polynomial's Mahler m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Algebraic Mahler Measure](algebraic-mahler-measure.md)
+- [Absolute](../primitive-int-minpoly.md)
 
 ## Sources
 

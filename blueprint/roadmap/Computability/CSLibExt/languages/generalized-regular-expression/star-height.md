@@ -13,7 +13,11 @@ in the ordinary base expression as well.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Reg Exp](gen-reg-exp.md)
+
+## Proof depends on
+
+- [Regular Star Height](regular-star-height.md)
 
 ## Sources
 

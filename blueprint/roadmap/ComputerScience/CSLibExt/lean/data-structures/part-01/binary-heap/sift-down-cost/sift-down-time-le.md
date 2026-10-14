@@ -13,7 +13,12 @@ Total event count is at most three per remaining binary-tree level.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sift Down](sift-down.md)
+
+## Proof depends on
+
+- [Sift Down comparisons le](sift-down-comparisons-le.md)
+- [Sift Down swaps le](sift-down-swaps-le.md)
 
 ## Sources
 

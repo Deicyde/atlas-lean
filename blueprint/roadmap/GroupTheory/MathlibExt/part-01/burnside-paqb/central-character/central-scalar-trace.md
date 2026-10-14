@@ -13,7 +13,11 @@ Trace equation: the central scalar times the degree is the character sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Scalar](central-scalar.md)
+
+## Proof depends on
+
+- [Exists scalar of central](exists-scalar-of-central.md)
 
 ## Sources
 

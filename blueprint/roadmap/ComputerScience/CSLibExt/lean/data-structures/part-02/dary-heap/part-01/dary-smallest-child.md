@@ -14,6 +14,10 @@ The smallest valid child of `i` in a `d`-ary heap, if one exists.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dary Smallest Child From](dary-smallest-child-from.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.DaryHeap](../../../../../../../../sources/v2/CSLibExt.md)

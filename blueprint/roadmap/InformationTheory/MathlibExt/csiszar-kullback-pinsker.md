@@ -17,6 +17,10 @@ with natural log, equivalent to `TV(p,q) ≤ √(D_KL/2)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Log-sum inequality](sum-mul-log-sum-div-sum-le-sum-mul-log-d.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.InformationTheory.Pinsker](../../../sources/v2/MathlibExt.md)

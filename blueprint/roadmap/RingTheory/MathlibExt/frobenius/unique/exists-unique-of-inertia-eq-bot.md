@@ -16,6 +16,10 @@ subgroup of `Q` is trivial.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eq of inertia eq bot](eq-of-inertia-eq-bot.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Frobenius.Unique](../../../../../sources/v2/MathlibExt.md)

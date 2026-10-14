@@ -13,7 +13,7 @@ Exactly two pointer assignments, including access-valid alias cases.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sentinel Delete](sentinel-delete.md)
 
 ## Sources
 

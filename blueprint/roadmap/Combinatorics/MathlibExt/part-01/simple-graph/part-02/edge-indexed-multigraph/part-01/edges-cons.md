@@ -13,7 +13,9 @@ Prepending an indexed edge prepends its identity to the edge list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
+- [Indexed Walk](indexed-walk.md)
+- [Edges](edges.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ The Connell `(m, r)` sequence obtained by reading its triangle row by row.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Connell Parameters](connell-parameters.md)
+
+## Proof depends on
+
+- [Connell Entry](connell-entry.md)
+- [Connell Position](connell-position.md)
 
 ## Sources
 

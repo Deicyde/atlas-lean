@@ -13,7 +13,12 @@ Deletion preserves correct caches.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Cache Correct merge](cache-correct-merge.md)
+- [Merge](merge.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ Newton support: exponents of `f` viewed as real points.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exponent To Real](exponent-to-real.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Convex.NewtonPolygon](../../../../../../sources/v2/MathlibExt.md)

@@ -15,6 +15,11 @@ Generalized FiboCatalan number
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fibonacci Factorial](fibonacci-factorial.md)
+- [Fibonacci Jordan Quotient](fibonacci-jordan-quotient.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.GeneralizedFibocatalanNumber](../../../../../sources/v2/MathlibExt.md)

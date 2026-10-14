@@ -13,7 +13,7 @@ The point-count formula rearranged as `#E(𝔽_q) = q + 1 - a_q(E)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frobenius Trace](frobenius-trace.md)
 
 ## Sources
 

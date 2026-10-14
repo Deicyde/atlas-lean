@@ -13,7 +13,14 @@ Nothing is a member of the empty trie.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empty](empty.md)
+- [Member](member.md)
+
+## Proof depends on
+
+- [Contents](contents.md)
+- [Member iff](member-iff.md)
+- [Valid empty](valid-empty.md)
 
 ## Sources
 

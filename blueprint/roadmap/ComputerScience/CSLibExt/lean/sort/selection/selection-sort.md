@@ -14,6 +14,10 @@ Selection sort by repeated minimum extraction.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Extract Min](extract-min.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Sort.Selection](../../../../../../sources/v2/CSLibExt.md)

@@ -18,7 +18,10 @@ implementation-only unit proof inside
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Tensor Compositum Prime](normalized-tensor-compositum-prime.md)
+- [Normalized Tensor Compositum Prime is Prime](normalized-tensor-compositum-prime-is-pr.md)
+- [Normalized Tensor Localization To Compositum At Prime](normalized-tensor-localization-to-compos.md)
+- [Normalized Tensor To Compositum At Prime](normalized-tensor-to-compositum-at-prime.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ Integer binomial coefficients agree with `Nat.choose` on their natural range.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Int Binom](int-binom.md)
+
+## Proof depends on
+
+- [Ext Fact](ext-fact.md)
+- [Ext Fact nat Cast](ext-fact-nat-cast.md)
+- [Inv Fact](inv-fact.md)
+- [Inv Fact nat Cast](inv-fact-nat-cast.md)
 
 ## Sources
 

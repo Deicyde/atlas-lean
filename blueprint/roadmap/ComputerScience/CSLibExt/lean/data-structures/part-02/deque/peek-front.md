@@ -12,7 +12,7 @@ Observe the front element without removing it, or `none` when the deque is empty
 
 ## Depends on
 
-This node has no prerequisites.
+- [Deque](deque.md)
 
 ## Sources
 

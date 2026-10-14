@@ -13,7 +13,7 @@ Repeated-symbol input executes exactly `n - 1` comparisons as well as its outer 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compute Z](compute-z.md)
 
 ## Sources
 

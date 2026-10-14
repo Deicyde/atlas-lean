@@ -12,7 +12,12 @@ Insert one value into a binomial heap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Heap](binomial-heap.md)
+
+## Proof depends on
+
+- [Meld](meld.md)
+- [Singleton](singleton.md)
 
 ## Sources
 

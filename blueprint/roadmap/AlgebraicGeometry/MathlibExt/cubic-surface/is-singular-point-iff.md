@@ -14,7 +14,12 @@ defining cubic vanish there; the equation `f = 0` is then automatic (Euler's ide
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cubic Surface](cubic-surface.md)
+- [Is Singular Point](is-singular-point.md)
+
+## Proof depends on
+
+- [Aeval defining eq zero of pderiv](aeval-defining-eq-zero-of-pderiv.md)
 
 ## Sources
 

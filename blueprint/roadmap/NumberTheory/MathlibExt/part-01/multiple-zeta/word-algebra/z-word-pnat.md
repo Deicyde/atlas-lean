@@ -14,6 +14,10 @@ Auxiliary product of Hoffman blocks for a list of `PNat`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hoffman Block](../index/hoffman-block.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.MultipleZeta.WordAlgebra](../../../../../../sources/v2/MathlibExt.md)

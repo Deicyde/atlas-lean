@@ -13,7 +13,14 @@ Every finite output distance is realized by a concrete weighted path.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../basic/cost.md)
+- [Is Weighted Path](../basic/is-weighted-path.md)
+- [Floyd Warshall](../basic/floyd-warshall.md)
+- [Path Weight](../basic/path-weight.md)
+
+## Proof depends on
+
+- [Internal Vertices Below](../basic/internal-vertices-below.md)
 
 ## Sources
 

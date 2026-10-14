@@ -17,7 +17,11 @@ well-definedness, and use equality in `ConjClasses` for the converse.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Class Function](is-class-function.md)
+
+## Proof depends on
+
+- [Eq of is Conj](eq-of-is-conj.md)
 
 ## Sources
 

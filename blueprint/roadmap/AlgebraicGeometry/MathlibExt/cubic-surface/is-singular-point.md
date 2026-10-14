@@ -14,7 +14,7 @@ projective surface exactly when its only such point is the origin.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cubic Surface](cubic-surface.md)
 
 ## Sources
 

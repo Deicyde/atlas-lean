@@ -14,7 +14,16 @@ tree: consecutive vertices are joined by a parent-child edge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Adjacent](../part-01/adjacent.md)
+- [Decomp](decomp.md)
+
+## Proof depends on
+
+- [Children ind](../../euler-tour-tree/part-01/children-ind.md)
+- [Root](../../euler-tour-tree/part-01/root.md)
+- [Decomp fst head?](decomp-fst-head.md)
+- [Tree Paths](tree-paths.md)
 
 ## Sources
 

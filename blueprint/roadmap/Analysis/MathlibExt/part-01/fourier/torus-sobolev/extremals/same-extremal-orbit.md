@@ -12,7 +12,7 @@ Translation and nonzero real scaling describe the source's extremal orbit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torus](../basic/torus.md)
 
 ## Sources
 

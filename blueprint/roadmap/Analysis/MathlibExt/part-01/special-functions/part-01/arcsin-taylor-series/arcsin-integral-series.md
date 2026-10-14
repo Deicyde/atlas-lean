@@ -14,6 +14,10 @@ The termwise integral of `arcsinSeries t / t`, normalized to vanish at zero.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Central Binomial Coeff](central-binomial-coeff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.ArcsinTaylorSeries](../../../../../../../sources/v2/MathlibExt.md)

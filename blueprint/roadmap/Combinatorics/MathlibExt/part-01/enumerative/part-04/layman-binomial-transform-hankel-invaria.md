@@ -30,7 +30,11 @@ grounded task `jis_grounded_16fbee6379089c6cf50650f2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Transform](../part-03/falling-kbinomial-transform/binomial-transform.md)
+
+## Proof depends on
+
+- [Binomial Transform eq sum](../part-03/falling-kbinomial-transform/binomial-transform-eq-sum.md)
 
 ## Sources
 

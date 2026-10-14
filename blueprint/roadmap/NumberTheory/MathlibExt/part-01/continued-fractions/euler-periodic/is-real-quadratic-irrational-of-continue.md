@@ -16,6 +16,10 @@ continued fraction forces real quadratic irrationality.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Eventually Periodic](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ContinuedFractions.EulerPeriodic](../../../../../../sources/v2/MathlibExt.md)

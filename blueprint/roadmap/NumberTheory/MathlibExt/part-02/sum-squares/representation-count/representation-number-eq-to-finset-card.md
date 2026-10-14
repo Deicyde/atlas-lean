@@ -13,7 +13,9 @@ The representation number is the cardinality of the finite solution set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Representation Number](representation-number.md)
+- [Solutions](solutions.md)
+- [Solutions finite](solutions-finite.md)
 
 ## Sources
 

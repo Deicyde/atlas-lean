@@ -13,7 +13,7 @@ Cardinality of overpartitions as the explicit pair subtype.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition](../overpartition/overpartition.md)
 
 ## Sources
 

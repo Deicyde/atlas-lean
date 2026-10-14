@@ -13,7 +13,11 @@ The existing implemented Berry--Esseen API supplies the coefficient 42.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible](is-admissible.md)
+
+## Proof depends on
+
+- [Berry esseen explicit](../../berry-esseen/berry-esseen-explicit.md)
 
 ## Sources
 

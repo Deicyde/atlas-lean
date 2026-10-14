@@ -14,6 +14,10 @@ lean: Cslib.Algorithms.Lean.AvlTree.deleteMin
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Erase Min](erase-min.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.AvlTree.Delete](../../../../../../../../../sources/v2/CSLibExt.md)

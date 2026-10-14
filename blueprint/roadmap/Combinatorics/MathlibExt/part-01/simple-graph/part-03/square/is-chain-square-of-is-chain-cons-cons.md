@@ -13,7 +13,7 @@ Replacing two consecutive edges by their endpoints preserves a chain in the grap
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square](square.md)
 
 ## Sources
 

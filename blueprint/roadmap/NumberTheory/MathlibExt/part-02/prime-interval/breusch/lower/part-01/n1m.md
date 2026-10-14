@@ -14,6 +14,10 @@ Scaled factorial argument `n * (Q9 / m)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Q9](../../grid/part-01/q9.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Lower](../../../../../../../../sources/v2/MathlibExt.md)

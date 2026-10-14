@@ -12,7 +12,7 @@ The unit `(n-1)`-sphere `Sⁿ⁻¹ ⊂ ℝⁿ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amb](amb.md)
 
 ## Sources
 

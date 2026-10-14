@@ -12,7 +12,11 @@ The cubic residue symbol of `a` modulo a denominator in the source domain.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Cubic Residue Denominator](is-cubic-residue-denominator.md)
+
+## Proof depends on
+
+- [Cubic Residue Symbol Raw](cubic-residue-symbol-raw.md)
 
 ## Sources
 

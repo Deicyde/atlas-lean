@@ -12,7 +12,12 @@ A bound on actual tensor rank consists of a finite pure-tensor decomposition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trilinear Tensor](trilinear-tensor.md)
+
+## Proof depends on
+
+- [Rank One Trilinear Term](rank-one-trilinear-term.md)
+- [Tensor](tensor.md)
 
 ## Sources
 

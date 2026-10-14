@@ -14,6 +14,10 @@ Large `ε`-light subsets exist uniformly.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Epsilon Light](is-epsilon-light.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.EpsilonLightSubsetWanted](../../../../../sources/v2/WantedExt.md)

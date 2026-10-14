@@ -14,7 +14,12 @@ corresponding pair of coordinate vectors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partial Deriv](partial-deriv.md)
+
+## Proof depends on
+
+- [Partial Deriv eq fderiv apply](partial-deriv-eq-fderiv-apply.md)
+- [Partial Deriv eq fderiv apply of differentiable](partial-deriv-eq-fderiv-apply-of-differe.md)
 
 ## Sources
 

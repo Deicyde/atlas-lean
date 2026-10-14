@@ -14,7 +14,7 @@ solid polydisc average.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hartogs Polydisc Integral](hartogs-polydisc-integral.md)
 
 ## Sources
 

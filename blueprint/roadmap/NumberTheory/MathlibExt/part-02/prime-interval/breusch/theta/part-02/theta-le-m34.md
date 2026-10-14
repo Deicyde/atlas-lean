@@ -13,7 +13,12 @@ Primorial splitting at `(m + 5) / 6` via `M34`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [M34](../part-01/m34.md)
+
+## Proof depends on
+
+- [M34 pos](../part-01/m34-pos.md)
+- [Vp M34](vp-m34.md)
 
 ## Sources
 

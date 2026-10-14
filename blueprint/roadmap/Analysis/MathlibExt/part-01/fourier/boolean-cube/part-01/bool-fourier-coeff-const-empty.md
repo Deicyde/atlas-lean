@@ -13,7 +13,13 @@ The mean of a constant function is that constant, including in dimension zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](bool-cube.md)
+- [Bool Fourier Coeff](bool-fourier-coeff.md)
+
+## Proof depends on
+
+- [Cube Chi](cube-chi.md)
+- [Cube Chi empty](cube-chi-empty.md)
 
 ## Sources
 

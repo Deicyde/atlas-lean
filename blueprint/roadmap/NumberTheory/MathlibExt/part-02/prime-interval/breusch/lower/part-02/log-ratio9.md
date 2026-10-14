@@ -13,7 +13,15 @@ Logarithm of `ratio9` as a difference of log-factorials.
 
 ## Depends on
 
-This node has no prerequisites.
+- [N10m](../part-01/n10m.md)
+- [N1m](../part-01/n1m.md)
+- [N9m](../part-01/n9m.md)
+- [Q9](../../grid/part-01/q9.md)
+- [Ratio9](../part-01/ratio9.md)
+
+## Proof depends on
+
+- [Ratio9 dvd](../part-01/ratio9-dvd.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ The `n`th finite Thue–Morse block, obtained by iterating
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Thue Morse Substitution](thue-morse-substitution.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.ThueMorse](../../../../../../sources/v2/MathlibExt.md)

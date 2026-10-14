@@ -14,6 +14,10 @@ A chosen linear extension via Szpilrajn: rank through `linExtOrderIso`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lin Ext Order Iso](lin-ext-order-iso.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Poset.LinearExtension](../../../../../../sources/v2/MathlibExt.md)

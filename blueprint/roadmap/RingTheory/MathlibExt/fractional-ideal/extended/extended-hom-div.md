@@ -15,6 +15,10 @@ Extension commutes with division for a nonzero denominator over a Noetherian bas
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Extended Hom div of fg](extended-hom-div-of-fg.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.FractionalIdeal.Extended](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,15 @@ lean: Cslib.Algorithms.Lean.TwoThreeTree.all_iff_forall_flatten
 
 ## Depends on
 
-This node has no prerequisites.
+- [All](all.md)
+- [Tree](tree.md)
+- [Flatten](flatten.md)
+
+## Proof depends on
+
+- [Mem](mem.md)
+- [All iff forall mem](all-iff-forall-mem.md)
+- [Mem flatten](mem-flatten.md)
 
 ## Sources
 

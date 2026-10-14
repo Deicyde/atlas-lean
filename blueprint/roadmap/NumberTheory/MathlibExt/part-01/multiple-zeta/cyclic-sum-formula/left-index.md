@@ -15,6 +15,10 @@ The left-hand index of the cyclic sum formula, bundled as a
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [To Index](to-index.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.MultipleZeta.CyclicSumFormula](../../../../../../sources/v2/MathlibExt.md)

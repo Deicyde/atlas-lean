@@ -13,7 +13,7 @@ Rewrites a term of `arcsinIntegralSeries` without the normalized coefficient.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Binomial Coeff](central-binomial-coeff.md)
 
 ## Sources
 

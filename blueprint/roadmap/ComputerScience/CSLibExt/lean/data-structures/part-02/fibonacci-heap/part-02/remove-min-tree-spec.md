@@ -13,7 +13,11 @@ Removing a minimum tree partitions the forest and returns a globally minimal roo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elements](../part-01/elements-2.md)
+- [Remove Min Tree](remove-min-tree.md)
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
+- [Elements](../part-01/elements.md)
+- [Root](../part-01/root.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ Source: catalogue C36, trivial upper-bound row.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sphere Packing Density4](sphere-packing-density4.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.SpherePackingDensityFour](../../../../../sources/v2/MathlibExt.md)

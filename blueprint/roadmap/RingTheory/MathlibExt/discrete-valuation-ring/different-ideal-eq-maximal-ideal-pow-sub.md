@@ -17,6 +17,10 @@ correct tame equality, not the false wild equality in ATLAS.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Int Trace surjective of is Unit nat Cast of map maximal Ideal eq pow](maximal-ideal-pow-quotient-trace/int-trace-surjective-of-is-unit-nat-cast.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DiscreteValuationRing.TameDifferent](../../../../sources/v2/MathlibExt.md)

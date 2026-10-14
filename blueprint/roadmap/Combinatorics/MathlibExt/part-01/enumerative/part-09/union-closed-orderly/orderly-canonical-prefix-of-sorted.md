@@ -14,7 +14,15 @@ Every prefix of a canonically sorted indexed family is canonical. This holds for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Canonical](is-canonical.md)
+- [Set LT](set-lt.md)
+
+## Proof depends on
+
+- [Bin Rep](bin-rep.md)
+- [Fam String](fam-string.md)
+- [Perm Image](perm-image.md)
+- [Set Key](set-key.md)
 
 ## Sources
 

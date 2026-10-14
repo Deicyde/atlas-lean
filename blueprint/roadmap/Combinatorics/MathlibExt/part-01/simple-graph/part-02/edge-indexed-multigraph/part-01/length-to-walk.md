@@ -13,7 +13,15 @@ Forgetting edge identities preserves the number of traversed edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
+- [Indexed Walk](indexed-walk.md)
+- [Edges](edges.md)
+- [To Walk](to-walk.md)
+- [Underlying](underlying.md)
+
+## Proof depends on
+
+- [Edges to Walk](edges-to-walk.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Unfolding after a nonvanishing step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Traj](traj.md)
 
 ## Sources
 

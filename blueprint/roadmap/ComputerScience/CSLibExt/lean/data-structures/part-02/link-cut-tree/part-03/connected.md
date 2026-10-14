@@ -13,7 +13,12 @@ contains both vertices. This is the abstraction of the structure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
 
 ## Sources
 

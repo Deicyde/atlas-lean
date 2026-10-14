@@ -13,7 +13,16 @@ Weighted square summability of this actual finite-mode function.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is H2](../../basic/is-h2.md)
+- [Lowest Shell Witness](lowest-shell-witness.md)
+
+## Proof depends on
+
+- [Frequency](../../basic/frequency.md)
+- [Fourier Coefficient](../../basic/fourier-coefficient.md)
+- [Fourier Coefficient lowest Shell Witness](fourier-coefficient-lowest-shell-witness.md)
+- [Frequency Weight](../../basic/frequency-weight.md)
+- [Lowest Shell](lowest-shell.md)
 
 ## Sources
 

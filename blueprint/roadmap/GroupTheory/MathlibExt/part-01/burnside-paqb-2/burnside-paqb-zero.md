@@ -17,6 +17,11 @@ Proved via the simple-prime-power corollary and induction.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Burnside paqb of simple prime](../burnside-paqb/solvable-induction/burnside-paqb-of-simple-prime.md)
+- [Cor6 of prime pow class](../burnside-paqb/simple-prime/cor6-of-prime-pow-class.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb](../../../../../sources/v2/MathlibExt.md)

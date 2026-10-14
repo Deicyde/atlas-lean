@@ -13,7 +13,8 @@ A finite upper bound on the liminf means infinitely many actual gaps obey that b
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Gap Liminf](prime-gap-liminf.md)
+- [Prime Gap](../prime-gap.md)
 
 ## Sources
 

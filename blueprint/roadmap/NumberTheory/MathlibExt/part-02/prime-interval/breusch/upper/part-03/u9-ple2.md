@@ -13,7 +13,13 @@ Level-2 primes are at most `18900 * n / 657`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G9r](../part-01/g9r.md)
+
+## Proof depends on
+
+- [G9r level2](../part-01/g9r-level2.md)
+- [U9 ple of G](u9-ple-of-g.md)
+- [U9 xlo](u9-xlo.md)
 
 ## Sources
 

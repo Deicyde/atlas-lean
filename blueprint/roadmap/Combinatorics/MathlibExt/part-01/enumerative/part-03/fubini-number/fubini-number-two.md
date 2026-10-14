@@ -13,7 +13,7 @@ lean: MetaMathlibExt.fubiniNumber_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fubini Number](fubini-number.md)
 
 ## Sources
 

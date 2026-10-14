@@ -13,7 +13,8 @@ The predecessor is `none` exactly when no stored key is smaller than `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [XFast Trie](../part-01/xfast-trie.md)
+- [Predecessor](../part-01/predecessor.md)
 
 ## Sources
 

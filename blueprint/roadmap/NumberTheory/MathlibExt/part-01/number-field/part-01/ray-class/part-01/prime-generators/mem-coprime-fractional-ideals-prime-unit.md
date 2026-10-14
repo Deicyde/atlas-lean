@@ -13,7 +13,7 @@ A prime outside the finite support of `m` gives a unit in `m.coprimeFractionalId
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Unit Fractional Ideal](prime-unit-fractional-ideal.md)
 
 ## Sources
 

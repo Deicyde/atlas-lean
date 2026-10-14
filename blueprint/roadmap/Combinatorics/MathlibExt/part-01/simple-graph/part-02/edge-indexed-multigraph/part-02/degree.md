@@ -12,7 +12,11 @@ The number of indexed edges incident with a vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](../part-01/edge-indexed-multigraph.md)
+
+## Proof depends on
+
+- [Inc](../part-01/inc.md)
 
 ## Sources
 

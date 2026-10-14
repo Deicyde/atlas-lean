@@ -13,7 +13,8 @@ Transporting a line through a composite subspace is associative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](comp.md)
+- [Comp Line](comp-line.md)
 
 ## Sources
 

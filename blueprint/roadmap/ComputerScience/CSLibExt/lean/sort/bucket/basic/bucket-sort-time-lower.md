@@ -13,7 +13,11 @@ Every valid array pays the five mandatory saved-bucket phase events per input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bucket Sort](bucket-sort.md)
+
+## Proof depends on
+
+- [Bucket Sort time](bucket-sort-time.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ lean: MathlibExt.Geometry.ErdosProblem755Wanted.conjecture
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [TAny Size](tany-size.md)
+- [TUnit](tunit.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.ErdosProblem755Wanted](../../../../../sources/v2/WantedExt.md)

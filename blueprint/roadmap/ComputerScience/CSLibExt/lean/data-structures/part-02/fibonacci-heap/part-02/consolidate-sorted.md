@@ -13,7 +13,16 @@ A consolidated forest has strictly increasing root degrees.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sorted Degrees](sorted-degrees.md)
+- [Consolidate](consolidate.md)
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
+
+## Proof depends on
+
+- [Add Tree](add-tree.md)
+- [Degree](../part-01/degree.md)
+- [Degree link of eq](../part-01/degree-link-of-eq.md)
+- [Link](../part-01/link.md)
 
 ## Sources
 

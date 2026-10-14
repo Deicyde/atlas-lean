@@ -16,6 +16,10 @@ span dense in `L¹`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fourier comp mul left of pos](scaling/fourier-comp-mul-left-of-pos.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Fourier.WienerTauberian](../../../../../sources/v2/MathlibExt.md)

@@ -16,6 +16,10 @@ complex scalar `(a : ℂ)⁻¹`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fourier comp mul left](fourier-comp-mul-left.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Fourier.Scaling](../../../../../../sources/v2/MathlibExt.md)

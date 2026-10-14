@@ -17,7 +17,13 @@ injectively by its cell and an offset in `Fin (2 * L + 3) ^ n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer Cube Set](integer-cube-set.md)
+
+## Proof depends on
+
+- [Abs floor sub le ceil](abs-floor-sub-le-ceil.md)
+- [Mem integer Cube Set iff](mem-integer-cube-set-iff.md)
+- [Scaled coord abs le](scaled-coord-abs-le.md)
 
 ## Sources
 

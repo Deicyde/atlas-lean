@@ -13,7 +13,8 @@ Source: positive observation radii give nonzero volume denominators.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positive Radius](positive-radius.md)
+- [Space](space.md)
 
 ## Sources
 

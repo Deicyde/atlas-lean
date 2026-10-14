@@ -13,7 +13,9 @@ The mediant of a Farey pair is not already present at the same order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Farey Neighbor](is-farey-neighbor.md)
+- [Farey Finset](farey-finset.md)
+- [Mediant](mediant.md)
 
 ## Sources
 

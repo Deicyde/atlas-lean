@@ -12,7 +12,8 @@ The actual pure tensor specified by the three factors of a decomposition summand
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rank One Trilinear Term](rank-one-trilinear-term.md)
+- [Trilinear Tensor](trilinear-tensor.md)
 
 ## Sources
 

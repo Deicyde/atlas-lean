@@ -15,6 +15,10 @@ are encoded by `Fin 2` entries to keep the type finite.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sign Val](sign-val.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.PartialHadamard](../../../../../sources/v2/MathlibExt.md)

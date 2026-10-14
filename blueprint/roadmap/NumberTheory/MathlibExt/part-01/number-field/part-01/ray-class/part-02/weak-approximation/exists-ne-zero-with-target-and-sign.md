@@ -21,7 +21,8 @@ absolute-value-to-discrete-valuation residue comparison at 2480--2568.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Exponent](../ray-group/finite-exponent.md)
+- [Finite Supported](../ray-group/finite-supported.md)
 
 ## Sources
 

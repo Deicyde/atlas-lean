@@ -14,7 +14,9 @@ and finite attainment, without unfolding the path specification.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Edge Bounded Shortest Path Weight](is-edge-bounded-shortest-path-weight.md)
+- [Is Weighted Path](../floyd-warshall/basic/is-weighted-path.md)
+- [Path Weight](../floyd-warshall/basic/path-weight.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ Without negative cycles the actual return realizes unrestricted shortest-path we
 
 ## Depends on
 
-This node has no prerequisites.
+- [Faster APSP](../basic/faster-apsp.md)
+
+## Proof depends on
+
+- [Faster APSP edge Bounded](faster-apsp-edge-bounded.md)
 
 ## Sources
 

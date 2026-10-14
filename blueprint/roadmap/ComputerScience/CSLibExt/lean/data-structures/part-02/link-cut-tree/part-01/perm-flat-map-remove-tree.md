@@ -15,7 +15,10 @@ to permutation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
+- [Find Tree](find-tree.md)
+- [Remove Tree](remove-tree.md)
 
 ## Sources
 

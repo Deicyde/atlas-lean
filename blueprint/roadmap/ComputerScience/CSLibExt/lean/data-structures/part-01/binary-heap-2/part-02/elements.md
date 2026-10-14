@@ -12,7 +12,7 @@ The multiset represented by a heap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Heap](min-heap.md)
 
 ## Sources
 

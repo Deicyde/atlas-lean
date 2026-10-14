@@ -14,6 +14,10 @@ Source: catalogue C19a, upper row Shi1986; retained Shevtsova2011 introduction r
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Value](../../../MathlibExt/part-01/berry-esseen-constant/part-01/value.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Probability.BerryEsseenConstantWanted](../../../../../sources/v2/WantedExt.md)

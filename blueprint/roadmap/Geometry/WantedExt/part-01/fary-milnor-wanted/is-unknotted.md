@@ -12,7 +12,12 @@ Smooth isotopy through knots from `r` to the standard circle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Space](space.md)
+
+## Proof depends on
+
+- [Is Smooth Knot](is-smooth-knot.md)
+- [Standard Circle](standard-circle.md)
 
 ## Sources
 

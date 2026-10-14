@@ -13,7 +13,21 @@ Key insertion preserves attained maximum caches, including replacement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../part-01/cost.md)
+- [Entry](../part-01/entry.md)
+- [Tree](../part-01/tree.md)
+- [Cache Invariant](../part-01/cache-invariant.md)
+- [Insert Key With Cost](../part-02/insert-key-with-cost.md)
+
+## Proof depends on
+
+- [Key](../part-01/key.md)
+- [Interval](../part-01/interval.md)
+- [Cache Invariant mk Node](cache-invariant-mk-node.md)
+- [Cache Invariant rebalance With Cost](cache-invariant-rebalance-with-cost.md)
+- [Mk Node](../part-01/mk-node.md)
+- [Rebalance With Cost](../part-02/rebalance-with-cost.md)
+- [Compare Key](../part-01/compare-key.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ Local flatness of the disk image at an *interior* disk point `q`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R3](r3.md)
+
+## Proof depends on
+
+- [Disk2](disk2.md)
+- [Model Plane2](model-plane2.md)
 
 ## Sources
 

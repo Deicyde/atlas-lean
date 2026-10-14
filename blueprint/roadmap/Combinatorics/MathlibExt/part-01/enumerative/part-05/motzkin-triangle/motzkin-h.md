@@ -14,6 +14,10 @@ coefficient shift so no division by `X` is required.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Motzkin Square Root](motzkin-square-root.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MotzkinTriangle](../../../../../../../sources/v2/MathlibExt.md)

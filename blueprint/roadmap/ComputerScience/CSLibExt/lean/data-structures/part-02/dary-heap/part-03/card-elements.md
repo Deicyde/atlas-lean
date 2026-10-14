@@ -13,7 +13,8 @@ The backing array stores exactly one entry per represented occurrence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Min Heap](../part-02/dary-min-heap.md)
+- [Elements](../part-02/elements.md)
 
 ## Sources
 

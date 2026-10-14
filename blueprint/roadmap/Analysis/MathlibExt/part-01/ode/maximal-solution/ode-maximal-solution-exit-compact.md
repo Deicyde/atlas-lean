@@ -22,6 +22,10 @@ statements of Corollaries 2.15--2.16.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Deriv At piecewise union of eq On](has-deriv-at-piecewise-union-of-eq-on.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.ODE.MaximalSolution](../../../../../../sources/v2/MathlibExt.md)

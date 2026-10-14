@@ -13,7 +13,15 @@ Point update preserves validity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Segment Tree](../part-01/segment-tree.md)
+- [Valid](../part-01/valid.md)
+- [Update](../part-01/update.md)
+
+## Proof depends on
+
+- [Agg](../part-01/agg.md)
+- [Size](../part-01/size.md)
+- [Size update](../part-01/size-update.md)
 
 ## Sources
 

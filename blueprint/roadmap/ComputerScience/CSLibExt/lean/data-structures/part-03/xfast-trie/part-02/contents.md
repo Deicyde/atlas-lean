@@ -14,7 +14,7 @@ universe against an existential over all potential owners.
 
 ## Depends on
 
-This node has no prerequisites.
+- [YFast Trie](yfast-trie.md)
 
 ## Sources
 

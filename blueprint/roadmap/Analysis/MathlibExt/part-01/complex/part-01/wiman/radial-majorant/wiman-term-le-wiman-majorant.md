@@ -13,7 +13,12 @@ Each Taylor term is bounded by the radial majorant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Majorant](wiman-majorant.md)
+
+## Proof depends on
+
+- [Summable wiman Term](summable-wiman-term.md)
+- [Wiman Term nonneg](wiman-term-nonneg.md)
 
 ## Sources
 

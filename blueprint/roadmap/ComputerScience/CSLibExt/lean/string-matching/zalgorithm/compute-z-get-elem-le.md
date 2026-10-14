@@ -13,7 +13,7 @@ Every suffix value is bounded even when the executable comparator is not lawful.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compute Z](compute-z.md)
 
 ## Sources
 

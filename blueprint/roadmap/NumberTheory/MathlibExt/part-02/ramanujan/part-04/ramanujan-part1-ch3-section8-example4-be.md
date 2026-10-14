@@ -17,6 +17,10 @@ Proves `Wanted` entry `ramanujan_part1_ch3_section8_example4_bernoulli_integral`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized Bell Generating](part1-ch3-entry9-ii-generalizedbellgenerating-de/generalized-bell-generating.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Section8Example4BernoulliIntegral](../../../../../../sources/v2/MathlibExt.md)

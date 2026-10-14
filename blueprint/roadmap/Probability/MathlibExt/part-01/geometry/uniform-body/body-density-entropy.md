@@ -13,7 +13,9 @@ The entropy equality uses the integral of the actual normalized density.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Full Dimensional Body](../isotropic-constant/full-dimensional-body.md)
+- [Body Density](body-density.md)
+- [Differential Entropy](../isotropic-constant/differential-entropy.md)
 
 ## Sources
 

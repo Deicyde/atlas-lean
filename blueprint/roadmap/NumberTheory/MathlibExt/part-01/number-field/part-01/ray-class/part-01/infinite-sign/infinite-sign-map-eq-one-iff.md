@@ -13,7 +13,13 @@ The joint sign map is trivial iff the element is positive at infinity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Infinite Sign Map](infinite-sign-map.md)
+
+## Proof depends on
+
+- [Infinite Sign Map apply](infinite-sign-map-apply.md)
+- [Sign At Real Place](sign-at-real-place.md)
+- [Sign At Real Place apply eq one iff](sign-at-real-place-apply-eq-one-iff.md)
 
 ## Sources
 

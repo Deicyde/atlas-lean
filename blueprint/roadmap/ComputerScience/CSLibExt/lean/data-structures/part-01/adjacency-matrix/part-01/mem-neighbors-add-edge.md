@@ -13,7 +13,15 @@ After insertion, the target vertex is a neighbor of the source.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adjacency Matrix](adjacency-matrix.md)
+- [Add Edge](add-edge.md)
+- [Neighbors](neighbors.md)
+
+## Proof depends on
+
+- [Has Edge](has-edge.md)
+- [Has Edge add Edge](has-edge-add-edge.md)
+- [Mem neighbors](mem-neighbors.md)
 
 ## Sources
 

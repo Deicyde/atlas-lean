@@ -13,7 +13,7 @@ Bound on the actual candidate/comparison/decrement/write event count.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compute Transition](compute-transition.md)
 
 ## Sources
 

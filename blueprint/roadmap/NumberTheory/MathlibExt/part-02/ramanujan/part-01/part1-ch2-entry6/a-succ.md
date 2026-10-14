@@ -13,7 +13,7 @@ The recurrence `A n (k + 1) = 3 * A n k + 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [A](a.md)
 
 ## Sources
 

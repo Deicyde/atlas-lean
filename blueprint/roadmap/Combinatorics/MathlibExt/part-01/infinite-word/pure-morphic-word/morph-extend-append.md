@@ -17,7 +17,7 @@ The extended letter map preserves concatenation of finite words (concept
 
 ## Depends on
 
-This node has no prerequisites.
+- [Morph Extend](morph-extend.md)
 
 ## Sources
 

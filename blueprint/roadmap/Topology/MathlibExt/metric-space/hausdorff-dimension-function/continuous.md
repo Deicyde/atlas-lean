@@ -13,7 +13,7 @@ Continuity as a function `ℝ≥0 → ℝ≥0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hausdorff Dimension Function](hausdorff-dimension-function.md)
 
 ## Sources
 

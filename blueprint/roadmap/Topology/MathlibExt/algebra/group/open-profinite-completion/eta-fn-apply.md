@@ -13,7 +13,9 @@ Coordinate evaluation of `etaFn`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](index.md)
+- [Diagram](diagram.md)
+- [Eta Fn](eta-fn.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Every sign has probability `1 / 2` under `rademacherMeasure`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rademacher Measure](rademacher-measure.md)
 
 ## Sources
 

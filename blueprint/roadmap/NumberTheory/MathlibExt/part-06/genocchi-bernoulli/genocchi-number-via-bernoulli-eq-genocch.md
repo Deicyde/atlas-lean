@@ -13,7 +13,11 @@ The Bernoulli-formula representation `genocchiNumberViaBernoulli` is `genocchiNu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Genocchi Number Via Bernoulli](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-05/median-genocchi-number/genocchi-number-via-bernoulli.md)
+
+## Proof depends on
+
+- [Genocchi Number eq bernoulli](genocchi-number-eq-bernoulli.md)
 
 ## Sources
 

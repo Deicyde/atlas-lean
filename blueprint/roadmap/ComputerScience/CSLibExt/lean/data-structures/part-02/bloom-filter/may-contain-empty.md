@@ -13,7 +13,8 @@ With at least one hash function, the empty filter reports every element absent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empty](empty.md)
+- [May Contain](may-contain.md)
 
 ## Sources
 

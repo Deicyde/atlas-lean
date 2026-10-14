@@ -15,6 +15,11 @@ over finite measurable partitions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Measurable Partition](is-measurable-partition.md)
+- [Entropy W](entropy-w.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Dynamics.LaiSangYoungWanted](../../../../sources/v2/WantedExt.md)

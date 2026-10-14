@@ -17,6 +17,10 @@ formulas; see the module scope note in the repository copy.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Leading Admissible](is-leading-admissible.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.PartialHadamard](../../../../../sources/v2/MathlibExt.md)

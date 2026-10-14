@@ -15,6 +15,11 @@ Combined endpoint: the dual submodule is a lattice and dual map is bijective.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dual Submodule To Dual bijective](dual-submodule-to-dual-bijective.md)
+- [Dual Submodule is Lattice](dual-submodule-is-lattice.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.BilinearForm.DualLattice](../../../../../sources/v2/MathlibExt.md)

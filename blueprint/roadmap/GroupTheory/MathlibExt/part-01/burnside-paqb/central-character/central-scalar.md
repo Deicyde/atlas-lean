@@ -14,6 +14,10 @@ Central character scalar: the scalar by which the class sum of `l` acts.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists scalar of central](exists-scalar-of-central.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.CentralCharacter](../../../../../../sources/v2/MathlibExt.md)

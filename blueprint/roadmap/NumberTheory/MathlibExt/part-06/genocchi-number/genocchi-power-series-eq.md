@@ -13,7 +13,7 @@ Interface restatement of `genocchiPowerSeries`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Genocchi Power Series](genocchi-power-series.md)
 
 ## Sources
 

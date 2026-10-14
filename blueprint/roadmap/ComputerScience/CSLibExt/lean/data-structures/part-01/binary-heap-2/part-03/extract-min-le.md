@@ -13,7 +13,15 @@ A successful extraction returns a globally minimal stored value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Heap](../part-02/min-heap.md)
+- [Elements](../part-02/elements.md)
+- [Extract Min](../part-02/extract-min.md)
+
+## Proof depends on
+
+- [Heap Ordered](../part-01/heap-ordered.md)
+- [Root le](../part-01/root-le.md)
+- [Extract Tail](../part-02/extract-tail.md)
 
 ## Sources
 

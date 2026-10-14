@@ -13,7 +13,7 @@ The `p`-neighbor relation is symmetric.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Are PNeighbors](are-pneighbors.md)
 
 ## Sources
 

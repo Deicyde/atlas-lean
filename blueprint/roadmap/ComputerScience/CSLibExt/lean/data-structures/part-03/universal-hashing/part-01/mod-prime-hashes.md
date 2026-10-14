@@ -12,7 +12,11 @@ The mod-prime family as functions indexed by pairs `(a, b)` with `a ≠ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mod Prime Index](mod-prime-index.md)
+
+## Proof depends on
+
+- [Mod Prime Hash](mod-prime-hash.md)
 
 ## Sources
 

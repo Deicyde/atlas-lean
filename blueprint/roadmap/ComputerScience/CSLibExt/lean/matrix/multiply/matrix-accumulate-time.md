@@ -13,7 +13,12 @@ The square wrapper emits exactly `n^3` ticks in each scalar-operation component.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matrix Accumulate](matrix-accumulate.md)
+
+## Proof depends on
+
+- [Rectangular Matrix Accumulate](rectangular-matrix-accumulate.md)
+- [Rectangular Matrix Accumulate time](rectangular-matrix-accumulate-time.md)
 
 ## Sources
 

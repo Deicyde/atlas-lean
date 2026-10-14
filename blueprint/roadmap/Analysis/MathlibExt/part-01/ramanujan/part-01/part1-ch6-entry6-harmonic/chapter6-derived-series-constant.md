@@ -14,6 +14,10 @@ The constant `∑_{k ≥ 0} f⁽q⁾(k + 1)`: the shifted series of `q`-th deriv
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter6 Shifted Derived Series Term](chapter6-shifted-derived-series-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch6Entry6Harmonic](../../../../../../../sources/v2/MathlibExt.md)

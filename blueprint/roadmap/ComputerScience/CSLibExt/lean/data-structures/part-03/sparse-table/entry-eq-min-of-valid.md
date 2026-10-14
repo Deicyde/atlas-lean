@@ -13,7 +13,15 @@ A valid table's in-range entry is `List.min?` of its interval slice.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sparse Table](sparse-table.md)
+- [Valid](valid.md)
+- [Entry](entry.md)
+
+## Proof depends on
+
+- [Entry eq of valid](entry-eq-of-valid.md)
+- [Get Elem? level](get-elem-level.md)
+- [Level](level.md)
 
 ## Sources
 

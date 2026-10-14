@@ -16,6 +16,10 @@ corresponding binomial coefficient.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prime dvd seq implies choose](prime-dvd-seq-implies-choose.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.BlockReductions](../../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,7 @@ Finite-group diagram `G ⧸ H` with projection maps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](index.md)
 
 ## Sources
 

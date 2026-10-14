@@ -13,7 +13,13 @@ Search fails exactly when no represented payload equals the target.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../part-01/node.md)
+- [Represents](../part-01/represents.md)
+- [Search](search.md)
+
+## Proof depends on
+
+- [Search eq find?](search-eq-find.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ Gateaux points: both opposite directional derivatives sum nonpositively.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dir Deriv](dir-deriv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Convex.Straszewicz](../../../../../../../sources/v2/MathlibExt.md)

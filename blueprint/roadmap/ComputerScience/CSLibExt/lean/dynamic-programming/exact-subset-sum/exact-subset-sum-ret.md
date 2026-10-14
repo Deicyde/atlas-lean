@@ -13,7 +13,8 @@ The returned maximum scans exactly the actual saved-list traversal's result.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Subset Sum](exact-subset-sum.md)
+- [Exact Subset Sum Sums](exact-subset-sum-sums.md)
 
 ## Sources
 

@@ -19,6 +19,10 @@ defined here.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Phi Center](is-phi-center.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.CenteredColoring](../../../../../../../sources/v2/MathlibExt.md)

@@ -21,6 +21,10 @@ constrained to a Dyck bridge. Both sides equal
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cube lattice paths card eq uld Motzkin Number](cube-lattice-paths-card-eq-uld-motzkin-n.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.CubicLatticeColoredMotzkin](../../../../../../../sources/v2/MathlibExt.md)

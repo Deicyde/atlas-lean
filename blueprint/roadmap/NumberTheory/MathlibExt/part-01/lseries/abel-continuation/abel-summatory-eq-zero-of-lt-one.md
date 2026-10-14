@@ -13,7 +13,7 @@ The summatory function vanishes below `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abel Summatory](abel-summatory.md)
 
 ## Sources
 

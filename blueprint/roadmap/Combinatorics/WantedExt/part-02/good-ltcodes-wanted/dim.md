@@ -12,7 +12,7 @@ The dimension of a binary code is its dimension as an `𝔽₂` subspace.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary Code](binary-code.md)
 
 ## Sources
 

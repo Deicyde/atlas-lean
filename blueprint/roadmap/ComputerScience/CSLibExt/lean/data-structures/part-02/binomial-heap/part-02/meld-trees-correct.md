@@ -13,7 +13,10 @@ Melding valid forests preserves validity and their common rank lower bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ranks At Least](../part-01/ranks-at-least.md)
+- [Valid](../part-01/valid-2.md)
+- [Meld Trees](meld-trees.md)
+- [Binomial Tree](../part-01/binomial-tree.md)
 
 ## Sources
 

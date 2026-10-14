@@ -12,7 +12,12 @@ The sole ordinary node constructor; it repairs all metadata fields.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Entry](entry.md)
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Node Max](node-max.md)
 
 ## Sources
 

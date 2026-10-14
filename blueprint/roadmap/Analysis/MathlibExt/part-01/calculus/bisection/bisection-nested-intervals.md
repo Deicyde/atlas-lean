@@ -17,7 +17,11 @@ proves the nesting, sign, and exact halving invariants from Burden and Faires, S
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bisection Sequence](is-bisection-sequence.md)
+
+## Proof depends on
+
+- [Exists is Bisection Sequence nested](exists-is-bisection-sequence-nested.md)
 
 ## Sources
 

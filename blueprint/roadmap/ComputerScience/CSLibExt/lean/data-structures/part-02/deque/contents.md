@@ -12,7 +12,7 @@ The sequence represented by a deque, from front to back.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Deque](deque.md)
 
 ## Sources
 

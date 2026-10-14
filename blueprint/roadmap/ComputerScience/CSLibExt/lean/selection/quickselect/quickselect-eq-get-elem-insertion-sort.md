@@ -13,7 +13,12 @@ Quickselect equals the zero-based entry of the canonical sorted permutation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quickselect](quickselect.md)
+
+## Proof depends on
+
+- [Quickselect correct](quickselect-correct.md)
+- [Quickselect eq none iff](quickselect-eq-none-iff.md)
 
 ## Sources
 

@@ -15,7 +15,13 @@ we continue at the top of the new position.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [Apply Word](apply-word.md)
+- [Mk R3](mk-r3.md)
+- [R3](../part-01/r3.md)
 
 ## Sources
 

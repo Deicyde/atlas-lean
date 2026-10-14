@@ -13,7 +13,16 @@ Selecting the rank of a present key returns that key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](../part-01/mem.md)
+- [Ordered](../part-01/ordered.md)
+- [Rank](../part-01/rank.md)
+- [Select](../part-01/select.md)
+
+## Proof depends on
+
+- [Inorder](../part-01/inorder.md)
+- [Mem inorder](../part-01/mem-inorder.md)
+- [Ordered inorder](../part-01/ordered-inorder.md)
 
 ## Sources
 

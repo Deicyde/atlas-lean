@@ -12,7 +12,12 @@ Decode exactly `n` clauses and return the unconsumed suffix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](cnf.md)
+
+## Proof depends on
+
+- [CNFClause](cnfclause.md)
+- [Decode Clause](decode-clause.md)
 
 ## Sources
 

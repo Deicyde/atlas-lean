@@ -12,7 +12,13 @@ Source: CE2003 Appendix A, supremum over all observation centers at fixed radius
 
 ## Depends on
 
-This node has no prerequisites.
+- [Packing](packing.md)
+- [Positive Radius](positive-radius.md)
+
+## Proof depends on
+
+- [Space](space.md)
+- [Finite Radius Density](finite-radius-density.md)
 
 ## Sources
 

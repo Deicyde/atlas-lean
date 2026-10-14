@@ -14,6 +14,10 @@ The maximum term, initially expressed as a supremum over all indices.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Wiman Term](wiman-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.Wiman](../../../../../../../sources/v2/MathlibExt.md)

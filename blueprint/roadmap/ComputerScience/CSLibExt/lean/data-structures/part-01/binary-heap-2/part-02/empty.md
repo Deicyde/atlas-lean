@@ -12,7 +12,13 @@ The empty min-heap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Heap](min-heap.md)
+
+## Proof depends on
+
+- [Heap Ordered](../part-01/heap-ordered.md)
+- [Heap Parent](../part-01/heap-parent.md)
+- [Heap Parent lt size](../part-01/heap-parent-lt-size.md)
 
 ## Sources
 

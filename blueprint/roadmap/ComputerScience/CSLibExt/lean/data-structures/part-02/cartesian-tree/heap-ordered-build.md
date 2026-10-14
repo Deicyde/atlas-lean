@@ -13,7 +13,18 @@ The Cartesian tree of a list is heap-ordered.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heap Ordered](heap-ordered.md)
+- [Build](build.md)
+
+## Proof depends on
+
+- [All](../binary-search-tree/part-01/all.md)
+- [Inorder](../binary-search-tree/part-01/inorder.md)
+- [Inorder Aux](../binary-search-tree/part-01/inorder-aux.md)
+- [All iff forall inorder](all-iff-forall-inorder.md)
+- [Build Fuel](build-fuel.md)
+- [List Min](list-min.md)
+- [Split At First](split-at-first.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ is finite in `ℝ≥0∞`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sup Norm On](sup-norm-on.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Series.NormalConvergence](../../../../../../../sources/v2/MathlibExt.md)

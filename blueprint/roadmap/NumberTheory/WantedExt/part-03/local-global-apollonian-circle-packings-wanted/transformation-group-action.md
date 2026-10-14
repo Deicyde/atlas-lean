@@ -12,7 +12,12 @@ The action of `TransformationGroup` on integral primitive Descartes quadruples.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transformation Group](transformation-group.md)
+
+## Proof depends on
+
+- [Integral Primitive Descartes Quadruple](integral-primitive-descartes-quadruple.md)
+- [Transformation Group smul integral Primitive Descartes Quadruple](transformation-group-smul-integral-primi.md)
 
 ## Sources
 

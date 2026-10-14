@@ -13,7 +13,14 @@ Some chain cover has exactly `minChainCoverSize α` chains.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Chain Cover Fin](is-chain-cover-fin.md)
+- [Min Chain Cover Size](min-chain-cover-size.md)
+
+## Proof depends on
+
+- [Dilworth decomposition](dilworth-decomposition.md)
+- [Max Antichain Size](max-antichain-size.md)
+- [Min Chain Cover Size le card](min-chain-cover-size-le-card.md)
 
 ## Sources
 

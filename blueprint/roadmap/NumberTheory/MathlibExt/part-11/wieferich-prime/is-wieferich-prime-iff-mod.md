@@ -13,7 +13,11 @@ The base-two Wieferich condition written using natural-number remainder.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Wieferich Prime](is-wieferich-prime.md)
+
+## Proof depends on
+
+- [Is Wieferich Prime iff mod Eq](is-wieferich-prime-iff-mod-eq.md)
 
 ## Sources
 

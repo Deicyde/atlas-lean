@@ -13,7 +13,11 @@ Weak perfect graph theorem: `G` perfect iff `Gᶜ` perfect.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect](is-perfect.md)
+
+## Proof depends on
+
+- [Lovasz weak perfect graph general](lovasz-weak-perfect-graph-general.md)
 
 ## Sources
 

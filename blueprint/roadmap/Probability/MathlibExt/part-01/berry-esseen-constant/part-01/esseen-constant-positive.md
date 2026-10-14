@@ -13,7 +13,7 @@ The Esseen benchmark is positive; no decimal is identified with it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Esseen Constant](esseen-constant.md)
 
 ## Sources
 

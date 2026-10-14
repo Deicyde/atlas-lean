@@ -13,7 +13,13 @@ For a nonempty set, an upper bound on its least number is equivalent to an actua
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Borsuk Cover](has-borsuk-cover.md)
+- [Set Borsuk Number](set-borsuk-number.md)
+
+## Proof depends on
+
+- [Has Borsuk Cover mono](has-borsuk-cover-mono.md)
+- [Set Borsuk Number le of cover](set-borsuk-number-le-of-cover.md)
 
 ## Sources
 

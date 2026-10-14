@@ -13,7 +13,12 @@ Removing the minimum shrinks the height of a balanced tree by at most one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Erase Min](erase-min.md)
+
+## Proof depends on
+
+- [Cache Correct erase Min](cache-correct-erase-min.md)
+- [Height erase Min le](height-erase-min-le.md)
 
 ## Sources
 

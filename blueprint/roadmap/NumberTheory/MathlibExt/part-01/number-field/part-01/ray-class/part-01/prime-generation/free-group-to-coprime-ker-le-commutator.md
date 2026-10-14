@@ -21,7 +21,12 @@ builds the ATLAS retraction to the abelianization through
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprime Primes](coprime-primes.md)
+- [Free Group To Coprime](free-group-to-coprime.md)
+
+## Proof depends on
+
+- [Free Group To Coprime of](free-group-to-coprime-of.md)
 
 ## Sources
 

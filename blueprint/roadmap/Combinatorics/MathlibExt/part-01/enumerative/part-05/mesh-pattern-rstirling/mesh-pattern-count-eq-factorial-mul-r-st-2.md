@@ -16,6 +16,10 @@ parameter `k` equals `(k - 1)!` times the corresponding `r`-Stirling number.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mesh Pattern Count eq factorial mul r Stirling Number general](mesh-pattern-count-eq-factorial-mul-r-st.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MeshPatternRStirling](../../../../../../../sources/v2/MathlibExt.md)

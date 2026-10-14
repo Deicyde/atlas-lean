@@ -13,7 +13,11 @@ Leaves, including invalid indices, incur no sift-down events.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sift Down](sift-down.md)
+
+## Proof depends on
+
+- [Time sift Down of smaller Child none](time-sift-down-of-smaller-child-none.md)
 
 ## Sources
 

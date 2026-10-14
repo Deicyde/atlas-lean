@@ -12,7 +12,11 @@ The initial leaf forest, numbered in input order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Work Item](huffman-work-item.md)
+
+## Proof depends on
+
+- [Initial Huffman Forest From](initial-huffman-forest-from.md)
 
 ## Sources
 

@@ -16,7 +16,11 @@ in arXiv:2304.11607, 2309.11173, 2311.13047, 2311.14001, 2607.25168, 2608.04445,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Absolute](../primitive-int-minpoly.md)
+
+## Proof depends on
+
+- [Abs Log Height₁ eq log leading Coeff add sum log roots of is Integral](abs-log-height-eq-log-leading-coeff-add.md)
 
 ## Sources
 

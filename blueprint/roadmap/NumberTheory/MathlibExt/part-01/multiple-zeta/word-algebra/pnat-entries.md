@@ -12,7 +12,7 @@ Positive entries of an index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
 
 ## Sources
 

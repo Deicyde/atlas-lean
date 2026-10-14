@@ -14,6 +14,10 @@ The KLS constant is the supremum over every positive dimension.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dimensional Kls Constant](dimensional-kls-constant.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Geometry.KLS](../../../../../../../sources/v2/MathlibExt.md)

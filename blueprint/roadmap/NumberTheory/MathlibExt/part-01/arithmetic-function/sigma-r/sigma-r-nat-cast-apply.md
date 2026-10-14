@@ -14,7 +14,11 @@ At a natural exponent, `sigmaR` agrees with Mathlib's divisor-power sum after co
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma R](sigma-r.md)
+
+## Proof depends on
+
+- [Sigma R apply](sigma-r-apply.md)
 
 ## Sources
 

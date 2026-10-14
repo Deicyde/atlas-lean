@@ -15,6 +15,10 @@ The hypercube Turán number `ex(Q_n, H)`: the maximum edge count over all
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hypercube Graph](hypercube-graph.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.HypercubeExtremal](../../../../../../../sources/v2/MathlibExt.md)

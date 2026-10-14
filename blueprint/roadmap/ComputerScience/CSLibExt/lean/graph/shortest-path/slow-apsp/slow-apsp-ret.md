@@ -13,7 +13,7 @@ The saved matrix after all phases is `L0 * W^(n-1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Slow APSP](slow-apsp.md)
 
 ## Sources
 

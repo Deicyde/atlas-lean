@@ -16,7 +16,20 @@ duplicate-freeness and the at-most-one-preferred-child condition carry over.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](../part-03/state.md)
+- [Valid](../part-03/valid.md)
+- [Access](access.md)
+
+## Proof depends on
+
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
+- [Parent Child](../part-02/parent-child.md)
+- [Find Tree](../part-01/find-tree.md)
+- [Is Chain parent Child root Path](../part-02/is-chain-parent-child-root-path.md)
+- [Nodup root Path](../part-02/nodup-root-path.md)
+- [Path Edges](../part-02/path-edges.md)
+- [Root Path](../part-02/root-path.md)
 
 ## Sources
 

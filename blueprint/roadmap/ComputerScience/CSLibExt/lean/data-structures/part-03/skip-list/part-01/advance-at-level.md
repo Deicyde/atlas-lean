@@ -12,7 +12,7 @@ Advance one search level while retaining the suffix needed by every lower level.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Entry](entry.md)
 
 ## Sources
 

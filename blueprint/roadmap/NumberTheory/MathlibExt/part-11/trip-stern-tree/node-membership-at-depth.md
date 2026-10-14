@@ -14,7 +14,9 @@ Membership characterization of a level. Source: Amburg et al., *TRIP-Stern Seque
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trip Stern Tree](trip-stern-tree.md)
+- [Node At Path](node-at-path.md)
+- [Nodes At Depth](nodes-at-depth.md)
 
 ## Sources
 

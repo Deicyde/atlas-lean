@@ -13,7 +13,12 @@ Antitonicity in the bound: a `k`-rough number is `l`-rough for `l ≤ k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Rough](is-rough.md)
+
+## Proof depends on
+
+- [Lt of prime dvd](lt-of-prime-dvd.md)
+- [Ne zero](ne-zero.md)
 
 ## Sources
 

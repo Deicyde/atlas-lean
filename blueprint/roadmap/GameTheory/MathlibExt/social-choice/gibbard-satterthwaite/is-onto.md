@@ -12,7 +12,11 @@ Onto / surjective: every alternative is chosen for some profile.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Social Choice Function](social-choice-function.md)
+
+## Proof depends on
+
+- [Profile](profile.md)
 
 ## Sources
 

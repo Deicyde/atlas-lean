@@ -12,7 +12,11 @@ Build a tree by inserting the list from right to left.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Insert](insert.md)
 
 ## Sources
 

@@ -19,6 +19,11 @@ specifications `inorder_deleteBal` and `mem_deleteBal` require only
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Blacken](blacken.md)
+- [Del](del.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.RedBlackTree.DeleteBalanced](../../../../../../../../../sources/v2/CSLibExt.md)

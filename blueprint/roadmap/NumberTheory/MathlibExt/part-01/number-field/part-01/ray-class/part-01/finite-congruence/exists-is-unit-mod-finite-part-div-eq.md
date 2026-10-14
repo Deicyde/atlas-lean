@@ -18,6 +18,10 @@ admissible integral numerator/denominator representation with both residues unit
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ray Element valuation eq one](ray-element-valuation-eq-one.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.FiniteCongruence](../../../../../../../../../sources/v2/MathlibExt.md)

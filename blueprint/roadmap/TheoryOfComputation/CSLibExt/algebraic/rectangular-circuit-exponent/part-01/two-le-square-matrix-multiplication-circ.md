@@ -13,7 +13,11 @@ Actual output costs give the trivial lower bound two for the square exponent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Matrix Multiplication Circuit Exponent](square-matrix-multiplication-circuit-exp.md)
+
+## Proof depends on
+
+- [Two le rectangular Circuit Exponent](two-le-rectangular-circuit-exponent.md)
 
 ## Sources
 

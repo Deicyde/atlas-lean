@@ -14,6 +14,10 @@ Polygonal normalized partial-sum process as a `C([0,1],ℝ)`-valued variable.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Donsker Weight CM](donsker-weight-cm.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Donsker](../../../../../sources/v2/MathlibExt.md)

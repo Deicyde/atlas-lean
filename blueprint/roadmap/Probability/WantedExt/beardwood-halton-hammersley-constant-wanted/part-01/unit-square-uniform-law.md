@@ -12,7 +12,11 @@ Lebesgue measure restricted to the source's unit square.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar Point](planar-point.md)
+
+## Proof depends on
+
+- [Unit Square](unit-square.md)
 
 ## Sources
 

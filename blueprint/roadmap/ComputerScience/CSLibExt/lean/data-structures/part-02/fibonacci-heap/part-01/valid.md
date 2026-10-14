@@ -13,7 +13,7 @@ children, and a globally minimal root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Tree](fibonacci-tree.md)
 
 ## Sources
 

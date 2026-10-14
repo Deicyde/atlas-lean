@@ -13,7 +13,16 @@ Prepending a fresh allocated identity preserves all doubly-linked neighbours.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
+- [Represents](represents.md)
+- [List Prepend](list-prepend.md)
+
+## Proof depends on
+
+- [List Prepend frame](list-prepend-frame.md)
+- [List Prepend head](list-prepend-head.md)
+- [List Prepend node](list-prepend-node.md)
+- [List Prepend old Head](list-prepend-old-head.md)
 
 ## Sources
 

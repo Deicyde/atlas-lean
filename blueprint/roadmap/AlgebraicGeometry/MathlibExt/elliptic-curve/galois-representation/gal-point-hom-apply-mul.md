@@ -13,7 +13,12 @@ The point action is multiplicative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gal Point Hom](gal-point-hom.md)
+
+## Proof depends on
+
+- [Gal Alg Equiv](gal-alg-equiv.md)
+- [Gal To Alg Hom comp](gal-to-alg-hom-comp.md)
 
 ## Sources
 

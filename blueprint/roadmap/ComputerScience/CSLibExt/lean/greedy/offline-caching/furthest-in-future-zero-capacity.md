@@ -13,7 +13,8 @@ With no storage, each real request produces exactly one miss and the cache stays
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](cache-event.md)
+- [Furthest In Future](furthest-in-future.md)
 
 ## Sources
 

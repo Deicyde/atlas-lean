@@ -13,7 +13,7 @@ lean: MetaMathlibExt.fibonacciFactorial_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Factorial](fibonacci-factorial.md)
 
 ## Sources
 

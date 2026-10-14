@@ -13,7 +13,7 @@ inner values `(a * x + b, a * y + b)` at two fixed keys.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mod Prime Index](mod-prime-index.md)
 
 ## Sources
 

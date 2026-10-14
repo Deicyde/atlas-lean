@@ -15,6 +15,10 @@ Admissibility of the tuple `b`: `v_p(b) ≠ p` for every prime `p`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hardy Littlewood Residue Count](hardy-littlewood-residue-count.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.HardyLittlewoodPrimeTuple](../../../../../sources/v2/MathlibExt.md)

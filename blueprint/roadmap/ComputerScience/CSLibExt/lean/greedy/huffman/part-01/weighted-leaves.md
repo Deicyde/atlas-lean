@@ -12,7 +12,7 @@ The weighted leaves, in left-to-right order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](huffman-tree.md)
 
 ## Sources
 

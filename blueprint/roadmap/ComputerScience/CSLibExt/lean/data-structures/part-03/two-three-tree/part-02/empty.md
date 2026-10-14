@@ -12,7 +12,11 @@ The empty 2-3 tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Root](root.md)
+
+## Proof depends on
+
+- [Tree](../part-01/tree.md)
 
 ## Sources
 

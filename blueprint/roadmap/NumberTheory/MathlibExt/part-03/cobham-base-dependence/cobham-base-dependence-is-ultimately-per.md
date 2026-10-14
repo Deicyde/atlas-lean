@@ -13,7 +13,15 @@ Cobham's theorem with aperiodicity stated for the characteristic sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bases Multiplicatively Independent](bases-multiplicatively-independent.md)
+- [Is Base Recognizable](../base-recognizable/is-base-recognizable.md)
+- [Is Ultimately Periodic](../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-ultimately-periodic.md)
+
+## Proof depends on
+
+- [Is Ultimately Periodic Set](is-ultimately-periodic-set.md)
+- [Cobham base dependence](cobham-base-dependence.md)
+- [Is Ultimately Periodic Set iff is Ultimately Periodic](is-ultimately-periodic-set-iff-is-ultima.md)
 
 ## Sources
 

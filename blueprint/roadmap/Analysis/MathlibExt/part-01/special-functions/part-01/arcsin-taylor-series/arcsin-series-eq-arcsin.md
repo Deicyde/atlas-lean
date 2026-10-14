@@ -13,7 +13,13 @@ The central-binomial Taylor series equals `Real.arcsin` on `(-1, 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arcsin Series](arcsin-series.md)
+
+## Proof depends on
+
+- [Central Binomial Coeff](central-binomial-coeff.md)
+- [Central Binomial Coeff le one](central-binomial-coeff-le-one.md)
+- [Central Binomial Coeff nonneg](central-binomial-coeff-nonneg.md)
 
 ## Sources
 

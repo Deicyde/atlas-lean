@@ -13,7 +13,7 @@ lean: Cslib.Algorithms.Lean.SparseTable.omin_self
 
 ## Depends on
 
-This node has no prerequisites.
+- [Omin](omin.md)
 
 ## Sources
 

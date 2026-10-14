@@ -13,7 +13,8 @@ Membership in unitsPrimeTo is the prime-to condition on the underlying fractiona
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Prime To](is-prime-to.md)
+- [Units Prime To](units-prime-to.md)
 
 ## Sources
 

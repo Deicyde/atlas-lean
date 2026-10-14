@@ -14,6 +14,10 @@ A strictly preperiodic point is preperiodic but not periodic.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Preperiodic Pt](is-preperiodic-pt.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Dynamics.Preperiodic](../../../../sources/v2/MathlibExt.md)

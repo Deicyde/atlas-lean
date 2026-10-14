@@ -13,7 +13,7 @@ The defining recurrence of the Pell–Lucas sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pell Lucas Sequence](pell-lucas-sequence.md)
 
 ## Sources
 

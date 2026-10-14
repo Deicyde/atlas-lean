@@ -13,7 +13,13 @@ Every vertex of the empty graph has out-degree zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empty](../part-01/empty.md)
+- [Out Degree](out-degree.md)
+
+## Proof depends on
+
+- [Neighbors](../part-01/neighbors.md)
+- [Neighbors empty](../part-01/neighbors-empty.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ An empty request list preserves the exact initial cache representation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Event](cache-event.md)
+- [Furthest In Future](furthest-in-future.md)
 
 ## Sources
 

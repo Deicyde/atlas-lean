@@ -13,7 +13,7 @@ to `α`, such that any two distinct edges which share a vertex are mapped to dis
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypergraph](hypergraph.md)
 
 ## Sources
 

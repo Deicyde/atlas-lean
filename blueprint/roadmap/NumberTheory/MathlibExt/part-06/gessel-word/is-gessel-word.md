@@ -15,7 +15,11 @@ last `k` labels `n, n - 1, …, n + 1 - k` is nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gessel Alphabet](gessel-alphabet.md)
+
+## Proof depends on
+
+- [Gessel Balance](gessel-balance.md)
 
 ## Sources
 

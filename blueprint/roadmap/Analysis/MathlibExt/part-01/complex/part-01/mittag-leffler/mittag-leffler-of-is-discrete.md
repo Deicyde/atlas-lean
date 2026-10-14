@@ -15,7 +15,12 @@ holomorphic on `Sᶜ` and meromorphic on `ℂ` has principal part `principalPart
 
 ## Depends on
 
-This node has no prerequisites.
+- [Principal Part](principal-part.md)
+
+## Proof depends on
+
+- [Principal Part analytic At](principal-part-analytic-at.md)
+- [Principal Part meromorphic At](principal-part-meromorphic-at.md)
 
 ## Sources
 

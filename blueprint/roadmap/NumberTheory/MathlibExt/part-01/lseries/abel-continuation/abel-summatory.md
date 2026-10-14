@@ -14,6 +14,10 @@ The summatory step function `t ↦ A(⌊t⌋₊)` on `ℝ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Abel Partial Sum](abel-partial-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.LSeries.AbelContinuation](../../../../../../sources/v2/MathlibExt.md)

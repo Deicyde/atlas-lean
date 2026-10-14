@@ -16,6 +16,10 @@ integrability set, as required by `measure_eq_of_mgf_eqOn_Ioo`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Iio subset integrable Exp Set gamma Measure](iio-subset-integrable-exp-set-gamma-meas.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.Gamma](../../../../../../sources/v2/MathlibExt.md)

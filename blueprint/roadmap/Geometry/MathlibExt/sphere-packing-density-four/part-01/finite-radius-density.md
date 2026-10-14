@@ -12,7 +12,13 @@ Source: CE2003 Appendix A, `vol(P ∩ B(p,R)) / vol(B(p,R))`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Packing](packing.md)
+- [Positive Radius](positive-radius.md)
+- [Space](space.md)
+
+## Proof depends on
+
+- [Packing Region](packing-region.md)
 
 ## Sources
 

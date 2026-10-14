@@ -15,6 +15,10 @@ Ray-one mod `m2` implies ray-one mod `m1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Finite Exponent le of dvd](finite-exponent-le-of-dvd.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.InducedCharacter](../../../../../../../../../sources/v2/MathlibExt.md)

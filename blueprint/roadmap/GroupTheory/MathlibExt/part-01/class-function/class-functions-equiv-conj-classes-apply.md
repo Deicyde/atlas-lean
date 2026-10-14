@@ -13,7 +13,8 @@ Descending a class function and evaluating on its conjugacy class recovers its v
 
 ## Depends on
 
-This node has no prerequisites.
+- [Class Functions](class-functions.md)
+- [Class Functions Equiv Conj Classes](class-functions-equiv-conj-classes.md)
 
 ## Sources
 

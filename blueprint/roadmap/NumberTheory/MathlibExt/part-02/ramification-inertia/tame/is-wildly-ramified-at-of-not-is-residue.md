@@ -14,7 +14,12 @@ contradicts the `.isSeparable` projection of any putative tame proof.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Residue Separable At](is-residue-separable-at.md)
+- [Is Wildly Ramified At](is-wildly-ramified-at.md)
+
+## Proof depends on
+
+- [Is Tamely Ramified At](is-tamely-ramified-at.md)
 
 ## Sources
 

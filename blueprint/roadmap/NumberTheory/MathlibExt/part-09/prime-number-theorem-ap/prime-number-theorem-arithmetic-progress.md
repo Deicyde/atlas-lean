@@ -18,6 +18,12 @@ Montgomery-Vaughan, Multiplicative Number Theory I, Multiplicative Number Theory
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prime Counting sub theta div log is Little O](../../part-02/prime-counting/part-01/chebyshev/prime-counting-sub-theta-div-log-is-litt.md)
+- [Psi Residue Class](../../part-02/prime-counting/part-02/residue-class-psi/psi-residue-class.md)
+- [Tendsto psi Residue Class div self](../../part-02/prime-counting/part-02/weak-pntarithmetic-progression/tendsto-psi-residue-class-div-self.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeNumberTheoremAP](../../../../../sources/v2/MathlibExt.md)

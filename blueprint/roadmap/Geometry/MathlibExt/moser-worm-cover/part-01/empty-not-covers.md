@@ -14,7 +14,11 @@ adaptation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covers Every Unit Arc](covers-every-unit-arc.md)
+
+## Proof depends on
+
+- [Nonempty](nonempty.md)
 
 ## Sources
 

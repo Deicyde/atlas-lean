@@ -16,7 +16,12 @@ source predicate (every prime factor exceeds `k`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Rough](is-rough.md)
+
+## Proof depends on
+
+- [Eq one of mem smooth Numbers](eq-one-of-mem-smooth-numbers.md)
+- [Ne zero](ne-zero.md)
 
 ## Sources
 

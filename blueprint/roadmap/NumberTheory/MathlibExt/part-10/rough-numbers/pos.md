@@ -13,7 +13,11 @@ A rough number is positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Rough](is-rough.md)
+
+## Proof depends on
+
+- [Ne zero](ne-zero.md)
 
 ## Sources
 

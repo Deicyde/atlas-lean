@@ -12,7 +12,7 @@ Arithmetic mean of a finite real amplitude vector.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amplitude](../basic/amplitude.md)
 
 ## Sources
 

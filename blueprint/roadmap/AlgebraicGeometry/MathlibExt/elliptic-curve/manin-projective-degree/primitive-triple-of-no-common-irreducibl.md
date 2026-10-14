@@ -13,7 +13,7 @@ Three polynomials are primitive if no irreducible polynomial divides all three.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Primitive Triple](primitive-triple.md)
 
 ## Sources
 

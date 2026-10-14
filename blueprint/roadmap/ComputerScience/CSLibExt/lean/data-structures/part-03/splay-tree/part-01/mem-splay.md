@@ -13,7 +13,14 @@ Splaying preserves structural membership.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
+- [Splay](splay.md)
+
+## Proof depends on
+
+- [Inorder](../../../part-02/binary-search-tree/part-01/inorder.md)
+- [Mem inorder](../../../part-02/binary-search-tree/part-01/mem-inorder.md)
+- [Inorder splay](inorder-splay.md)
 
 ## Sources
 

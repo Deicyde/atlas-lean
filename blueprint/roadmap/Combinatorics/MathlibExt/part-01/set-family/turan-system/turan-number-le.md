@@ -13,7 +13,12 @@ Upper bound: the Turan number is at most the size of any system.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Turan System](is-turan-system.md)
+- [Turan Number](turan-number.md)
+
+## Proof depends on
+
+- [Realized Counts](realized-counts.md)
 
 ## Sources
 

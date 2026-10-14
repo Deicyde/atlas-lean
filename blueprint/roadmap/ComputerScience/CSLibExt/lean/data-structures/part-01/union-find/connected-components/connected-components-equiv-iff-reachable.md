@@ -13,7 +13,11 @@ The returned canonical partition is exactly undirected graph reachability.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Connected Components](connected-components.md)
+
+## Proof depends on
+
+- [Check Equiv spec](check-equiv-spec.md)
 
 ## Sources
 

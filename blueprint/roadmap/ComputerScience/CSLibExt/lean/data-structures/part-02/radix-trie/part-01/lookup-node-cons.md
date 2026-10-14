@@ -14,7 +14,10 @@ head, and continues below it only when the whole label prefixes the key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Radix Trie](radix-trie.md)
+- [Common Prefix](common-prefix.md)
+- [Find Edge](find-edge.md)
+- [Lookup](lookup.md)
 
 ## Sources
 

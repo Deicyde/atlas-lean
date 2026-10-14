@@ -13,7 +13,18 @@ Abstracting insertion is finite-map insertion, including replacement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hash Table](hash-table.md)
+- [Valid](valid.md)
+- [Abstraction](abstraction.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Lookup](lookup.md)
+- [Lookup abstraction](lookup-abstraction.md)
+- [Lookup insert](lookup-insert.md)
+- [Lookup insert of ne](lookup-insert-of-ne.md)
+- [Valid insert](valid-insert.md)
 
 ## Sources
 

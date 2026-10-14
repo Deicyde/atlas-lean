@@ -13,7 +13,11 @@ A compact Euclidean distance set is Lebesgue measurable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distance Set](distance-set.md)
+
+## Proof depends on
+
+- [Distance Set is Compact](distance-set-is-compact.md)
 
 ## Sources
 

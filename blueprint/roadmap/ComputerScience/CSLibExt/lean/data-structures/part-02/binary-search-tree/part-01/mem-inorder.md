@@ -13,7 +13,12 @@ Inorder traversal contains exactly the structurally present keys.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](mem.md)
+- [Inorder](inorder.md)
+
+## Proof depends on
+
+- [Inorder Aux](inorder-aux.md)
 
 ## Sources
 

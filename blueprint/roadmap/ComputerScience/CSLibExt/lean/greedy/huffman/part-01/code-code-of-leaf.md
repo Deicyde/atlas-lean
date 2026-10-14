@@ -13,7 +13,15 @@ Looking up a leaf symbol returns its total codeword.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](huffman-tree.md)
+- [Leaf Symbol](leaf-symbol.md)
+- [Code?](code.md)
+- [Code Of Leaf](code-of-leaf.md)
+- [Symbols](symbols.md)
+
+## Proof depends on
+
+- [Code? is Some of mem symbols](code-is-some-of-mem-symbols.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ Holomorphy of the Laplace transform from an exponential bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laplace](../basic/laplace.md)
+
+## Proof depends on
+
+- [Laplace Convergent](../basic/laplace-convergent.md)
+- [Laplace Convergent of norm le exp](laplace-convergent-of-norm-le-exp.md)
 
 ## Sources
 

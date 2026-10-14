@@ -13,7 +13,16 @@ Deletion preserves the strict search-tree invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Erase](erase.md)
+
+## Proof depends on
+
+- [All min D lt erase Min of ordered](all-min-d-lt-erase-min-of-ordered.md)
+- [Delete Min](delete-min.md)
+- [Erase Min](erase-min.md)
+- [Min D](min-d.md)
+- [Min D mem](min-d-mem.md)
+- [Ordered erase Min](ordered-erase-min.md)
 
 ## Sources
 

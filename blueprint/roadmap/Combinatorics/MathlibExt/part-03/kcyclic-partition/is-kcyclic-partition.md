@@ -19,6 +19,10 @@ there is no directed edge from `i` to `j`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Truncated Succ](truncated-succ.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.KCyclicPartition](../../../../../sources/v2/MathlibExt.md)

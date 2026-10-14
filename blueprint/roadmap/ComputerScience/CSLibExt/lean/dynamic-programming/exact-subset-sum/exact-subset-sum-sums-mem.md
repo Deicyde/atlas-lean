@@ -13,7 +13,7 @@ Every returned value is exactly a feasible sum of an input sublist.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Subset Sum Sums](exact-subset-sum-sums.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ A nonroot node's parent is a valid index whenever the node is.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heap Parent](heap-parent.md)
 
 ## Sources
 

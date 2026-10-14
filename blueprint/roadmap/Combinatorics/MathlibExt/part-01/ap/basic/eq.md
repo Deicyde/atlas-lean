@@ -13,7 +13,11 @@ Unpack a set arithmetic progression into its first term and common difference.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is APOf Length](is-apof-length.md)
+
+## Proof depends on
+
+- [Is APOf Length With](is-apof-length-with.md)
 
 ## Sources
 

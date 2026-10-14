@@ -13,7 +13,12 @@ Every successful sequence costs at most two events per operation plus initial si
 
 ## Depends on
 
-This node has no prerequisites.
+- [Operation](operation.md)
+- [Execute](execute.md)
+
+## Proof depends on
+
+- [Execute balance](execute-balance.md)
 
 ## Sources
 

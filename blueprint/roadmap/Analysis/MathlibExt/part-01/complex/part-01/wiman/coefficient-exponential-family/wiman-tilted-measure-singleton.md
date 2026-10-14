@@ -13,7 +13,13 @@ The tilted singleton masses are the Taylor terms normalized by the majorant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Tilted Measure](wiman-tilted-measure.md)
+
+## Proof depends on
+
+- [Wiman Coefficient Measure](wiman-coefficient-measure.md)
+- [Wiman Coefficient Measure singleton](wiman-coefficient-measure-singleton.md)
+- [Wiman mgf eq majorant](wiman-mgf-eq-majorant.md)
 
 ## Sources
 

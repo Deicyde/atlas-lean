@@ -14,6 +14,10 @@ The smallest number of antichains covering `α`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Antichain Cover Fin](is-antichain-cover-fin.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Order.FinitePosets](../../../../../../sources/v2/MathlibExt.md)

@@ -14,6 +14,10 @@ Its disproof (companion).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Conjecture](conjecture.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.ErdosProblem1034Wanted](../../../../sources/v2/WantedExt.md)

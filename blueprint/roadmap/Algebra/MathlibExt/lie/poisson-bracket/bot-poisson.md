@@ -13,7 +13,12 @@ The zero ideal is Poisson.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Poisson Ideal](is-poisson-ideal.md)
+- [Poisson Bracket](poisson-bracket.md)
+
+## Proof depends on
+
+- [Bracket zero](bracket-zero.md)
 
 ## Sources
 

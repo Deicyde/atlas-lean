@@ -21,6 +21,11 @@ proposition with no proof in this repository.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Convex Body](is-convex-body.md)
+- [Is Hyperplane](is-hyperplane.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.HyperplaneSlicingUniversalWanted](../../../../../sources/v2/WantedExt.md)

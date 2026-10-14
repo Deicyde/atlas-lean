@@ -14,7 +14,8 @@ the shared Narayana-number API.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Narayana](../narayana-number/narayana.md)
+- [Narayana Polynomial Coeff](narayana-polynomial-coeff.md)
 
 ## Sources
 

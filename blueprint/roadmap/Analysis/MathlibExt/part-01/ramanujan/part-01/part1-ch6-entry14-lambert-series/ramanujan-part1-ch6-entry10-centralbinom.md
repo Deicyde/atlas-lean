@@ -16,6 +16,11 @@ kernel, then bound its periodic Bernoulli remainder by its Fourier series.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter6 Entry14 Minus Sum error le](chapter6-entry14-minus-sum-error-le.md)
+- [Summable chapter6 Entry14 Minus Term](summable-chapter6-entry14-minus-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch6Entry14LambertSeries](../../../../../../../sources/v2/MathlibExt.md)

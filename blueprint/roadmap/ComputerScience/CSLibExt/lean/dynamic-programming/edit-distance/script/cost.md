@@ -12,7 +12,7 @@ Unit cost of an edit step. Keeps are free and the three edits cost one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edit Step](edit-step.md)
 
 ## Sources
 

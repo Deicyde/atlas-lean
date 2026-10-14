@@ -13,7 +13,7 @@ Convergent ordered series have vanishing terms.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered Has Sum](ordered-has-sum.md)
 
 ## Sources
 

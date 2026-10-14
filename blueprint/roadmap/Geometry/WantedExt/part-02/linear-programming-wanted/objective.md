@@ -12,7 +12,7 @@ The **objective** `f(x) = c · x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Program](linear-program.md)
 
 ## Sources
 

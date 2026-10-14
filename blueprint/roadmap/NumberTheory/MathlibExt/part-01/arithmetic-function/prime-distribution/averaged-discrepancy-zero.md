@@ -13,7 +13,11 @@ There are no positive moduli below the cutoff zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Averaged Discrepancy](averaged-discrepancy.md)
+
+## Proof depends on
+
+- [Primitive Discrepancy](primitive-discrepancy.md)
 
 ## Sources
 

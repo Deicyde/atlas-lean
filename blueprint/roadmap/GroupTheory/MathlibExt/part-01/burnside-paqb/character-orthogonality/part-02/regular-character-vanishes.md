@@ -13,7 +13,15 @@ The regular character vanishes off the identity (column orthogonality).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Irr](../part-01/irr.md)
+- [Char Fun](../part-01/char-fun.md)
+
+## Proof depends on
+
+- [Is Class Fun](../part-01/is-class-fun.md)
+- [Classfun expand](../part-01/classfun-expand.md)
+- [Delta One](../part-01/delta-one.md)
+- [Delta One inner](delta-one-inner.md)
 
 ## Sources
 

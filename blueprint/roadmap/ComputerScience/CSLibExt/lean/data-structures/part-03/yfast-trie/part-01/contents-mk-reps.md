@@ -13,7 +13,13 @@ The representative trie built from a list stores exactly that list's keys.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mk Reps](mk-reps.md)
+
+## Proof depends on
+
+- [XFast Trie](../../xfast-trie/part-01/xfast-trie.md)
+- [Empty](../../xfast-trie/part-01/empty.md)
+- [Insert](../../xfast-trie/part-01/insert.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ Weierstrass equation over a finite field.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Point Equiv](point-equiv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.EllipticCurve.VariableChangePoint](../../../../../sources/v2/MathlibExt.md)

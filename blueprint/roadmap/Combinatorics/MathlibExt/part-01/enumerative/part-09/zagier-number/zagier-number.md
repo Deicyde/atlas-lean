@@ -14,6 +14,10 @@ The Zagier numbers `Z(n) = D(n,1,1,1)` (OEIS A081085).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Domb Type Sum](domb-type-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.ZagierNumber](../../../../../../../sources/v2/MathlibExt.md)

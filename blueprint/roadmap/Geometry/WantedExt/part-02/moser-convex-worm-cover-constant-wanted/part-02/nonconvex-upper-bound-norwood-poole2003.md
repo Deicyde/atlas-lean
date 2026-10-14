@@ -14,7 +14,12 @@ adaptation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonconvex Cover Norwood Poole2003](../part-01/nonconvex-cover-norwood-poole2003.md)
+- [Nonconvex Upper Bound Norwood Poole2003](../part-01/nonconvex-upper-bound-norwood-poole2003.md)
+
+## Proof depends on
+
+- [Nonconvex Upper Bound of cover](../../../../MathlibExt/moser-worm-cover/part-02/nonconvex-upper-bound-of-cover.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Equip a partition with every distinct occurring part size overlined.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition](overpartition.md)
 
 ## Sources
 

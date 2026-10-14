@@ -14,7 +14,7 @@ single selected slot. Returns the stored value when that slot holds the key, and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](perfect-hashing.md)
 
 ## Sources
 

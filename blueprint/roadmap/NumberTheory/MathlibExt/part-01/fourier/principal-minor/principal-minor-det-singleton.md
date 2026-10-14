@@ -13,7 +13,13 @@ Formula for the determinant of a singleton principal minor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Root Data](root-data.md)
+- [Principal Minor Det](principal-minor-det.md)
+
+## Proof depends on
+
+- [Principal Minor Matrix](principal-minor-matrix.md)
+- [Principal Minor Matrix apply](principal-minor-matrix-apply.md)
 
 ## Sources
 

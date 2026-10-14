@@ -15,6 +15,10 @@ The de Bruijn--Newman deformation: the heat-flow evolved Riemann
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Phi](phi.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.DeBruijnNewman](../../../../../sources/v2/MathlibExt.md)

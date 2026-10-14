@@ -13,7 +13,12 @@ Central scalars are algebraic integers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Scalar](central-scalar.md)
+
+## Proof depends on
+
+- [Scalar Gens](scalar-gens.md)
+- [Scalar Subalg](scalar-subalg.md)
 
 ## Sources
 

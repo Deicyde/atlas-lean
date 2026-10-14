@@ -15,6 +15,10 @@ ranges of finitely many Lipschitz maps out of the unit cube.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unit Cube](unit-cube.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Topology.MetricSpace.LipschitzParametrizable](../../../../../sources/v2/MathlibExt.md)

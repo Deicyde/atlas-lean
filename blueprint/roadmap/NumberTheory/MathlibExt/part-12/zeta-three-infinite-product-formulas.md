@@ -15,6 +15,12 @@ Three finite-product sequences converge to exponential expressions involving the
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter9 Clausen of two le](../../../Analysis/MathlibExt/part-01/ramanujan/part-03/part1-ch9-entry13-bernoulligen/chapter9-clausen-of-two-le.md)
+- [Chapter9 Clausen one](../../../Analysis/MathlibExt/part-01/ramanujan/part-03/part1-ch9-entry13-bernoulligen/chapter9-clausen-one.md)
+- [Ramanujan part1 ch9 entry13 bernoulligen](../../../Analysis/MathlibExt/part-01/ramanujan/part-03/part1-ch9-entry13-bernoulligen/ramanujan-part1-ch9-entry13-bernoulligen.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ZetaThreeProductFormulas](../../../../sources/v2/MathlibExt.md)

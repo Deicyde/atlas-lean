@@ -12,7 +12,13 @@ Twisting twice by inversion canonically recovers the original module.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inversion Twist](inversion-twist.md)
+- [Equiv](equiv.md)
+- [Inversion](inversion.md)
+
+## Proof depends on
+
+- [Inversion involution](inversion-involution.md)
 
 ## Sources
 

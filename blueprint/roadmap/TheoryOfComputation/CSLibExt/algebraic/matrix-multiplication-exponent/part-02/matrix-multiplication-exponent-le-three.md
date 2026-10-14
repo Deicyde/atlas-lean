@@ -13,7 +13,12 @@ The concrete square matrix-multiplication exponent is at most three.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matrix Multiplication Exponent](matrix-multiplication-exponent.md)
+
+## Proof depends on
+
+- [Has Matrix Multiplication Rank Exponent](has-matrix-multiplication-rank-exponent.md)
+- [Has Matrix Multiplication Rank Exponent three](has-matrix-multiplication-rank-exponent-3.md)
 
 ## Sources
 

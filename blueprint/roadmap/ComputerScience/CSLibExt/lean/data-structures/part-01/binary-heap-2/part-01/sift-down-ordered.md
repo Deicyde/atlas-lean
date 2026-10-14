@@ -15,7 +15,19 @@ the local heap-order invariant. This theorem is reusable independently of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heap Ordered](heap-ordered.md)
+- [Sift Down Ready](sift-down-ready.md)
+- [Sift Down](sift-down.md)
+
+## Proof depends on
+
+- [Heap Left](heap-left.md)
+- [Heap Parent](heap-parent.md)
+- [Heap Parent lt size](heap-parent-lt-size.md)
+- [Heap Right](heap-right.md)
+- [Smaller Child](smaller-child.md)
+- [Smaller Child gt](smaller-child-gt.md)
+- [Smaller Child valid](smaller-child-valid.md)
 
 ## Sources
 

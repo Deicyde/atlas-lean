@@ -13,7 +13,8 @@ Degree-zero Tate homology is cohomological degree `-1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tate Cohomology Card](tate-cohomology-card.md)
+- [Tate Homology Card](tate-homology-card.md)
 
 ## Sources
 

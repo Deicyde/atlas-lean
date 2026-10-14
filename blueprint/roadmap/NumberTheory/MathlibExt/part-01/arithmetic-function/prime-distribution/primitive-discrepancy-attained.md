@@ -13,7 +13,8 @@ A primitive-residue maximum is attained because the positive modulus is finite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Discrepancy](discrepancy.md)
+- [Primitive Discrepancy](primitive-discrepancy.md)
 
 ## Sources
 

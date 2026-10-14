@@ -13,7 +13,7 @@ Source clause: negative initial zeros for `k ≥ 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K Generalized Lucas](k-generalized-lucas.md)
 
 ## Sources
 

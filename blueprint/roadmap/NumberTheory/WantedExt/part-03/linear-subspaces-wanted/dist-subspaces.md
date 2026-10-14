@@ -16,6 +16,10 @@ Finally, in general, if `x = xˡ` is `l`-dimensional and `y = yᵏ` is `k`-dimen
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dist Line Subspace](dist-line-subspace.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LinearSubspacesWanted](../../../../../sources/v2/WantedExt.md)

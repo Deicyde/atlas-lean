@@ -14,7 +14,7 @@ edge (with a stored key below) or at a node reached by consuming whole edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Radix Trie](../part-01/radix-trie.md)
 
 ## Sources
 

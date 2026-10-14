@@ -12,7 +12,12 @@ Hoffman word attached to an index, concatenation of blocks in source order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
+
+## Proof depends on
+
+- [Pnat Entries](pnat-entries.md)
+- [Z Word PNat](z-word-pnat.md)
 
 ## Sources
 

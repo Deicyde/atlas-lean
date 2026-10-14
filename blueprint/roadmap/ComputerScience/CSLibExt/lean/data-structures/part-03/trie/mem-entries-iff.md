@@ -13,7 +13,15 @@ Lookup-equivalent valid tries enumerate the same entries, disregarding list orde
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trie](trie.md)
+- [Lookup Equiv](lookup-equiv.md)
+- [Valid](valid.md)
+- [Entries](entries.md)
+
+## Proof depends on
+
+- [Lookup](lookup.md)
+- [Lookup eq some iff mem entries](lookup-eq-some-iff-mem-entries.md)
 
 ## Sources
 

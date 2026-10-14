@@ -15,7 +15,11 @@ there exists a nonnegative `π : α → α → ℝ` with row marginal `p`, colum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Upper Set](is-upper-set.md)
+
+## Proof depends on
+
+- [Forall is Upper Set sum le iff exists coupling](forall-is-upper-set-sum-le-iff-exists-co.md)
 
 ## Sources
 

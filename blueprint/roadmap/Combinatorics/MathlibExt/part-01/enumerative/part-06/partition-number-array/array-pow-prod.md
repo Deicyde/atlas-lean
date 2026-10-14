@@ -14,7 +14,12 @@ Auxiliary product of powers over a partition vector. Concept
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Multiplicity](partition-multiplicity.md)
+
+## Proof depends on
+
+- [Extend A](extend-a.md)
+- [Pow Prod Aux](pow-prod-aux.md)
 
 ## Sources
 

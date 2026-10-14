@@ -16,6 +16,10 @@ If `q < r` are consecutive primes and a prime `p` satisfies
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prime sub primorial prime of between consecutive primes general](prime-sub-primorial-prime-of-between-con.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeGapsNearPrimorials](../../../../../sources/v2/MathlibExt.md)

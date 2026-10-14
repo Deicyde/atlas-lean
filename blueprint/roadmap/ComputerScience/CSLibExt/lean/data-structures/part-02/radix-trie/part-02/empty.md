@@ -13,7 +13,13 @@ The empty trie is valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](../part-01/valid.md)
+- [Empty](../part-01/empty.md)
+
+## Proof depends on
+
+- [Radix Trie](../part-01/radix-trie.md)
+- [Root Compact](../part-01/root-compact.md)
 
 ## Sources
 

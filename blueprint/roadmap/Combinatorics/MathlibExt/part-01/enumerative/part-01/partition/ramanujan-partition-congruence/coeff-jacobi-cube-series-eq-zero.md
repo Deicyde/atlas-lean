@@ -13,7 +13,7 @@ Coefficients of `jacobiCubeSeries` vanish away from triangular indices `(t + 1).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobi Cube Series](jacobi-cube-series.md)
 
 ## Sources
 

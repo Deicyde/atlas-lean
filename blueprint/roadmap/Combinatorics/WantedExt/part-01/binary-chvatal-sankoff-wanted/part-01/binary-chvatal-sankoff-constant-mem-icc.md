@@ -13,7 +13,12 @@ The bounded liminf lies in the source's trivial interval `[0,1]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [C31a](c31a.md)
+
+## Proof depends on
+
+- [Normalized Expected LCS](normalized-expected-lcs.md)
+- [Normalized Expected LCS mem Icc](normalized-expected-lcs-mem-icc.md)
 
 ## Sources
 

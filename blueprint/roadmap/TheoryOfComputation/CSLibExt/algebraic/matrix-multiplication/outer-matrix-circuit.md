@@ -12,7 +12,14 @@ One multiplication per output computes the inner-dimension-one matrix product.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matrix Arithmetic Circuit](matrix-arithmetic-circuit.md)
+
+## Proof depends on
+
+- [Arithmetic Circuit](../arithmetic-circuit/arithmetic-circuit.md)
+- [Outer Product](../arithmetic-circuit/outer-product.md)
+- [Arithmetic Gate](../arithmetic-circuit/arithmetic-gate.md)
+- [Arithmetic Operand](../arithmetic-circuit/arithmetic-operand.md)
 
 ## Sources
 

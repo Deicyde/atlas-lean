@@ -14,7 +14,11 @@ from the two halves of the list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ball Tree](ball-tree.md)
+
+## Proof depends on
+
+- [Radius Sq](radius-sq.md)
 
 ## Sources
 

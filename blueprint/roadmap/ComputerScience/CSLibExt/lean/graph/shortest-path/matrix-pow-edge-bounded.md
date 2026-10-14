@@ -14,7 +14,13 @@ A min-plus matrix power gives optimal weights among walks with at most
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Edge Bounded Shortest Path Weight](extend/is-edge-bounded-shortest-path-weight.md)
+
+## Proof depends on
+
+- [Is Weighted Path](floyd-warshall/basic/is-weighted-path.md)
+- [Path Weight](floyd-warshall/basic/path-weight.md)
+- [Matrix Accumulate edge Bounded](extend/matrix-accumulate-edge-bounded.md)
 
 ## Sources
 

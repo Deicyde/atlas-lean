@@ -16,7 +16,7 @@ exact source sum with coefficient `choose n i`, ordinary number
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Stirling Second](generalized-stirling-second.md)
 
 ## Sources
 

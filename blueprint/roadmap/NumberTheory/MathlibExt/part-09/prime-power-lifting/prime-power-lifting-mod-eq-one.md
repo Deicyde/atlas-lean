@@ -15,6 +15,10 @@ Prime-power lifting for a natural number congruent to one modulo a prime.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pow pow mod Eq one of mod Eq one](pow-pow-mod-eq-one-of-mod-eq-one.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimePowerLifting](../../../../../sources/v2/MathlibExt.md)

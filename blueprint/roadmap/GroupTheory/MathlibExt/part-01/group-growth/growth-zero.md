@@ -13,7 +13,7 @@ The ball of radius `0` is exactly `{1}`, so the growth function starts at `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Growth](growth.md)
 
 ## Sources
 

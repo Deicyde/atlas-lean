@@ -13,7 +13,7 @@ The empty rod earns zero revenue.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composition Revenue](composition-revenue.md)
 
 ## Sources
 

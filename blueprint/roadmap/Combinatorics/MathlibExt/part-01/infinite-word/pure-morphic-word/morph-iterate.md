@@ -19,6 +19,10 @@ clause `word_morphism`; statements `jis_59581da9ed7395999b79fb6c`,
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Morph Extend](morph-extend.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.PureMorphicWord](../../../../../../sources/v2/MathlibExt.md)

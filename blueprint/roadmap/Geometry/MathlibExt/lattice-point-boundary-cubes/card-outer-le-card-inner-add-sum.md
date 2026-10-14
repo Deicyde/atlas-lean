@@ -15,6 +15,10 @@ Cardinality of the outer set bounded by inner plus boundary charts.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Outer diff inner subset i Union integer Cube Set](outer-diff-inner-subset-i-union-integer.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.LatticePointBoundaryCubes](../../../../sources/v2/MathlibExt.md)

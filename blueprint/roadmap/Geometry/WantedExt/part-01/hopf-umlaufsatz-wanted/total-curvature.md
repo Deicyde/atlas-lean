@@ -14,6 +14,11 @@ Total signed curvature over one period.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Period](period.md)
+- [Signed Curvature](signed-curvature.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.HopfUmlaufsatzWanted](../../../../../sources/v2/WantedExt.md)

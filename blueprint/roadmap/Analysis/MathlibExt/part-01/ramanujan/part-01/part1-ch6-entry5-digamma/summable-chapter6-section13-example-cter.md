@@ -13,7 +13,7 @@ For `0 < x` the terms are bounded by `1 / (j + 1)!`, so the series converges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter6 Section13 Example CTerm](chapter6-section13-example-cterm.md)
 
 ## Sources
 

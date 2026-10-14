@@ -19,6 +19,11 @@ Frozen source statements: `jis_3a6643107cb0f496a9559012`,
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Almost Beatty Sequence](is-almost-beatty-sequence.md)
+- [Is Positive Nat Three Way Partition](is-positive-nat-three-way-partition.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.AlmostBeattyPartition](../../../../../sources/v2/MathlibExt.md)

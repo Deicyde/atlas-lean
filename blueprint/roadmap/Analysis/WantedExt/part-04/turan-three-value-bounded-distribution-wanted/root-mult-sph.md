@@ -19,6 +19,11 @@ Citing stable source identifiers: Hayman - Research Problems in Function Theory
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pole Mult](pole-mult.md)
+- [Root Mult](root-mult.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.TuranThreeValueBoundedDistributionWanted](../../../../../sources/v2/WantedExt.md)

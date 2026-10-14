@@ -14,7 +14,13 @@ determinant of the principal submatrix deleting `root` counts spanning trees.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Num Spanning Trees](num-spanning-trees.md)
+
+## Proof depends on
+
+- [Kirchhoff matrix tree of root](kirchhoff-matrix-tree-of-root.md)
+- [Reduced Laplacian](reduced-laplacian.md)
+- [Reduced Laplacian eq lap Matrix submatrix](reduced-laplacian-eq-lap-matrix-submatri.md)
 
 ## Sources
 

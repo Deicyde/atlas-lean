@@ -13,7 +13,8 @@ Sign normalization preserves the canonical primitive polynomial's degree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positive Primitive Int Minpoly](positive-primitive-int-minpoly.md)
+- [Absolute](../primitive-int-minpoly.md)
 
 ## Sources
 

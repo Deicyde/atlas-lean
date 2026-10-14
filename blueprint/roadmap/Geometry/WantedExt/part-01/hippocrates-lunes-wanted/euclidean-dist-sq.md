@@ -12,7 +12,7 @@ Squared Euclidean distance (not the product sup metric).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
 
 ## Sources
 

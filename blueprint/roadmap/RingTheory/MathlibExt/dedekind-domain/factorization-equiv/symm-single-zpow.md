@@ -13,7 +13,7 @@ Reconstruction at a single prime power recovers the prime power.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Factorization Mul Equiv](factorization-mul-equiv.md)
 
 ## Sources
 

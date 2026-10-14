@@ -17,7 +17,11 @@ satisfy this).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lcp](lcp.md)
+
+## Proof depends on
+
+- [Take eq of le lcp](take-eq-of-le-lcp.md)
 
 ## Sources
 

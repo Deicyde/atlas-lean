@@ -15,6 +15,10 @@ every node on the search path.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Balance](balance.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.WeightBalancedTree](../../../../../../../../sources/v2/CSLibExt.md)

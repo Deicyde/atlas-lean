@@ -13,7 +13,13 @@ adaptation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit Arc](unit-arc.md)
+
+## Proof depends on
+
+- [Arc Parameter](arc-parameter.md)
+- [Straight Path](straight-path.md)
+- [Straight Path length](straight-path-length.md)
 
 ## Sources
 

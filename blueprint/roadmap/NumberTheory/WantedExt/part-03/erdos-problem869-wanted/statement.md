@@ -15,6 +15,11 @@ bases of order `2`, must their union contain a minimal additive basis of order `
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Additive Basis Order2](is-additive-basis-order2.md)
+- [Is Minimal Additive Basis Order2](is-minimal-additive-basis-order2.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem869Wanted](../../../../../sources/v2/WantedExt.md)

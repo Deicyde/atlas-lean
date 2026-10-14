@@ -13,7 +13,11 @@ The zero measure has no positive-mass cuts, so its Cheeger infimum is infinity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cheeger Coefficient](cheeger-coefficient.md)
+
+## Proof depends on
+
+- [Outer Minkowski Boundary](outer-minkowski-boundary.md)
 
 ## Sources
 

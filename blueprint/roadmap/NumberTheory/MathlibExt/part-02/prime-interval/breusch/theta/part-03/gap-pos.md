@@ -15,6 +15,10 @@ The per-`n` margin dominates all error terms for `n ≥ 4762`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Log le sqrt06](log-le-sqrt06.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Theta](../../../../../../../../sources/v2/MathlibExt.md)

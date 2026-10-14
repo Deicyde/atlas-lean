@@ -12,7 +12,11 @@ The contragredient action of `g` on a p-adic Pontryagin-dual element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padic Pontryagin Dual](padic-pontryagin-dual.md)
+
+## Proof depends on
+
+- [Padic Quotient Int](padic-quotient-int.md)
 
 ## Sources
 

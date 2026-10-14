@@ -13,7 +13,9 @@ Insertion or replacement preserves canonical bucket placement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hash Table](hash-table.md)
+- [Valid](valid.md)
+- [Insert](insert.md)
 
 ## Sources
 

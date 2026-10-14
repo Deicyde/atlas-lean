@@ -12,7 +12,12 @@ The infinite Tribonacci word, obtained from the coherent chain of finite approxi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Letter](tribonacci-letter.md)
+
+## Proof depends on
+
+- [Tribonacci Word Approx](tribonacci-word-approx.md)
+- [Tribonacci Word Approx length ge](tribonacci-word-approx-length-ge.md)
 
 ## Sources
 

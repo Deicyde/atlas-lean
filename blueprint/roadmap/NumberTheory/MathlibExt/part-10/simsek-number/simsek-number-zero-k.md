@@ -13,7 +13,7 @@ Boundary case `k = 0`: only the `j = 0` term survives.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Simsek Number](simsek-number.md)
 
 ## Sources
 

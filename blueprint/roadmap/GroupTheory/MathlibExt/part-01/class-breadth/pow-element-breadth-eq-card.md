@@ -13,7 +13,12 @@ Characteristic property: `p ^ br(g)` is the conjugacy-class size.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Element Breadth](element-breadth.md)
+
+## Proof depends on
+
+- [Element Breadth eq of card eq](element-breadth-eq-of-card-eq.md)
+- [Exists card carrier eq pow](exists-card-carrier-eq-pow.md)
 
 ## Sources
 

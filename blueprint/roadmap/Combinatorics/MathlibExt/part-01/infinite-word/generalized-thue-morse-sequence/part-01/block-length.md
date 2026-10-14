@@ -14,7 +14,13 @@ Each block `Aₙ` has exactly `k^n` letters
 
 ## Depends on
 
-This node has no prerequisites.
+- [Block](block.md)
+
+## Proof depends on
+
+- [Length flatten eq](length-flatten-eq.md)
+- [Shift Word](shift-word.md)
+- [Shift Word length](shift-word-length.md)
 
 ## Sources
 

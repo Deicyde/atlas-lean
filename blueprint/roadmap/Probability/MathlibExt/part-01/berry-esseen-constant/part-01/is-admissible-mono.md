@@ -13,7 +13,7 @@ Larger coefficients remain admissible.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible](is-admissible.md)
 
 ## Sources
 

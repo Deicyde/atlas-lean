@@ -15,7 +15,13 @@ between the two vertical sides.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boundary Integral](boundary-integral.md)
+- [Of Bounds](of-bounds.md)
+
+## Proof depends on
+
+- [Boundary rect one div](boundary-rect-one-div.md)
+- [Rectilinear Rectangle](rectilinear-rectangle.md)
 
 ## Sources
 

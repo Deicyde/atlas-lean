@@ -13,7 +13,7 @@ Uniformity projection from a Steiner triple system.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Steiner Triple System](is-steiner-triple-system.md)
 
 ## Sources
 

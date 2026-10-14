@@ -14,7 +14,12 @@ together with nonemptiness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Nonempty Factor](is-nonempty-factor.md)
+- [Factor List](factor-list.md)
+
+## Proof depends on
+
+- [Factor](factor.md)
 
 ## Sources
 

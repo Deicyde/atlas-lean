@@ -13,7 +13,14 @@ The direct cubic decomposition gives rank-growth exponent three.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Matrix Multiplication Rank Exponent](has-matrix-multiplication-rank-exponent.md)
+
+## Proof depends on
+
+- [Has Trilinear Rank At Most](../part-01/has-trilinear-rank-at-most.md)
+- [Matrix Coordinate](../part-01/matrix-coordinate.md)
+- [Square Matrix Multiplication Tensor](square-matrix-multiplication-tensor.md)
+- [Square Matrix Multiplication Tensor rank le cube](square-matrix-multiplication-tensor-rank-2.md)
 
 ## Sources
 

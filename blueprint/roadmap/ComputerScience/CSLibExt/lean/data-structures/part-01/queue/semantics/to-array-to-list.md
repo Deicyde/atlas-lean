@@ -13,7 +13,7 @@ Converting a queue to an array preserves its FIFO contents.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Contents](contents.md)
 
 ## Sources
 

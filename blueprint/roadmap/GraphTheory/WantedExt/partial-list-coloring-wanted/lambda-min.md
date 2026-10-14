@@ -15,6 +15,10 @@ lean: MathlibExt.GraphTheory.PartialListColoringWanted.lambdaMin
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lambda Max](lambda-max.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.PartialListColoringWanted](../../../../sources/v2/WantedExt.md)

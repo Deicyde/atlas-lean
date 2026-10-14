@@ -13,7 +13,7 @@ The catalogue's infinite upper row is just the top bound, not a finite estimate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Asymptotic Dobrowolski Constant](asymptotic-dobrowolski-constant.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ A positively vertex-connected graph is connected.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Vertex Connected](is-vertex-connected.md)
+
+## Proof depends on
+
+- [Connected induce compl](connected-induce-compl.md)
 
 ## Sources
 

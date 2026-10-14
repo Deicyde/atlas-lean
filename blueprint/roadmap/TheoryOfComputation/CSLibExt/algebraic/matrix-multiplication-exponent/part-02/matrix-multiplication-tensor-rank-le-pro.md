@@ -14,7 +14,14 @@ tensors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Trilinear Rank At Most](../part-01/has-trilinear-rank-at-most.md)
+- [Matrix Coordinate](../part-01/matrix-coordinate.md)
+- [Matrix Multiplication Tensor](../part-01/matrix-multiplication-tensor.md)
+
+## Proof depends on
+
+- [Rank One Trilinear Term](../part-01/rank-one-trilinear-term.md)
+- [Eval](../part-01/eval.md)
 
 ## Sources
 

@@ -13,7 +13,15 @@ Valuation of a ratio factor as a difference of valuations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [N10m](../../lower/part-01/n10m.md)
+- [N1m](../../lower/part-01/n1m.md)
+- [N9m](../../lower/part-01/n9m.md)
+- [Q9](../../grid/part-01/q9.md)
+- [Ratio9](../../lower/part-01/ratio9.md)
+
+## Proof depends on
+
+- [Ratio9 dvd](../../lower/part-01/ratio9-dvd.md)
 
 ## Sources
 

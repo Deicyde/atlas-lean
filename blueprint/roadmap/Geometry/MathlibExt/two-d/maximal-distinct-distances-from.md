@@ -17,6 +17,10 @@ Let $g(n)$ be the maximum number of distinct values the $R(x_i)$ can take.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Distinct Distances From](../metric/distinct-distances-from.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.TwoD](../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,14 @@ The two-bit all-true function has degree two.
 
 ## Depends on
 
-This node has no prerequisites.
+- [All True Function](all-true-function.md)
+- [Boolean Degree](boolean-degree.md)
+
+## Proof depends on
+
+- [Bool Cube](../part-01/bool-cube.md)
+- [Multilinear Extension](../part-01/multilinear-extension.md)
+- [Multilinear Extension all True](multilinear-extension-all-true.md)
 
 ## Sources
 

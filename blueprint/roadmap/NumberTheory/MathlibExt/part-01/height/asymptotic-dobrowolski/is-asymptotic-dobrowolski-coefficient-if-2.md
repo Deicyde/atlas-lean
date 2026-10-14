@@ -14,7 +14,12 @@ the non-strict convention in the coefficient definition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Asymptotic Dobrowolski Coefficient](is-asymptotic-dobrowolski-coefficient.md)
+- [Dobrowolski Scale](dobrowolski-scale.md)
+
+## Proof depends on
+
+- [Dobrowolski Scale pos](dobrowolski-scale-pos.md)
 
 ## Sources
 

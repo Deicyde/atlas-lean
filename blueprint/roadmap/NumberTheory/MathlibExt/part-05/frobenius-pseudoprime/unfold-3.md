@@ -13,7 +13,8 @@ Unfolding of `Nat.IsFrobeniusPseudoprime`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Frobenius Probable Prime](is-frobenius-probable-prime.md)
+- [Is Frobenius Pseudoprime](is-frobenius-pseudoprime.md)
 
 ## Sources
 

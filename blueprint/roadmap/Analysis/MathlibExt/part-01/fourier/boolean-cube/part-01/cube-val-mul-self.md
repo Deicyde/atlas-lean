@@ -13,7 +13,7 @@ Each coordinate sign has square one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cube Val](cube-val.md)
 
 ## Sources
 

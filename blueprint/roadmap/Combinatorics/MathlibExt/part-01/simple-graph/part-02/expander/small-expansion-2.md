@@ -13,7 +13,8 @@ Small-set expansion clause of a uniform vertex expander.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Uniform Vertex Expander](is-uniform-vertex-expander.md)
+- [External Neighbor Set](external-neighbor-set.md)
 
 ## Sources
 

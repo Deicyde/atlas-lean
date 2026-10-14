@@ -13,7 +13,13 @@ The character at `1` is the degree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Irr](irr.md)
+- [Char Fun](char-fun.md)
+- [Rep Bundle](rep-bundle.md)
+
+## Proof depends on
+
+- [Iso Setoid](iso-setoid.md)
 
 ## Sources
 

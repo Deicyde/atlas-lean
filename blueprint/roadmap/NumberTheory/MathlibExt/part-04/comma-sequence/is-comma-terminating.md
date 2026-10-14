@@ -16,6 +16,10 @@ Termination as absence of any infinite comma sequence, requiring valid base
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Infinite Comma Seq](is-infinite-comma-seq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.CommaSequence](../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,8 @@ The underlying convex set of the polytope.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convex Polytope](convex-polytope.md)
+- [E](e.md)
 
 ## Sources
 

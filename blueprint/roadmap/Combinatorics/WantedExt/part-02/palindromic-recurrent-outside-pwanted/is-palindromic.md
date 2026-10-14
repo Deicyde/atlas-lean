@@ -14,7 +14,13 @@ ternary alphabet.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inf Word](inf-word.md)
+
+## Proof depends on
+
+- [Is Factor](is-factor.md)
+- [Is Palindrome](is-palindrome.md)
+- [Sigma](sigma.md)
 
 ## Sources
 

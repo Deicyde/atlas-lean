@@ -14,7 +14,16 @@ carrier.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](index.md)
+- [Of Rectangle](../part-01/of-rectangle.md)
+- [Rectilinear Rectangle](../part-01/rectilinear-rectangle.md)
+- [Carrier](../part-01/carrier.md)
+
+## Proof depends on
+
+- [Integral](../part-01/integral.md)
+- [Boundary Integral](../part-01/boundary-integral.md)
+- [Boundary Integral eq zero](../part-01/boundary-integral-eq-zero.md)
 
 ## Sources
 

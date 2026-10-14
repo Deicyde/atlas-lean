@@ -12,7 +12,7 @@ The decoding function of the canonical `BitstringEncoding` of `α`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bitstring Encoding](bitstring-encoding.md)
 
 ## Sources
 

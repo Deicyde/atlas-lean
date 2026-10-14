@@ -12,7 +12,13 @@ Every stored interval has ordered endpoints.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Entry](entry.md)
+- [Interval](interval.md)
+- [Valid](valid.md)
 
 ## Sources
 

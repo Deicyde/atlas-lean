@@ -15,7 +15,11 @@ node's keys and the keys stored in its subtrees; see `Ordered.node_keys_pairwise
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](btree.md)
+
+## Proof depends on
+
+- [Flatten](flatten.md)
 
 ## Sources
 

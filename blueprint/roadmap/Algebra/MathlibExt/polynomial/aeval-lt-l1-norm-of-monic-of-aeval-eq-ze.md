@@ -15,7 +15,12 @@ archimedean hypothesis is needed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [L1 Norm](l1-norm/l1-norm.md)
+
+## Proof depends on
+
+- [L1 Norm eq sum range add one of monic](l1-norm/l1-norm-eq-sum-range-add-one-of-monic.md)
+- [One le l1 Norm of monic](l1-norm/one-le-l1-norm-of-monic.md)
 
 ## Sources
 

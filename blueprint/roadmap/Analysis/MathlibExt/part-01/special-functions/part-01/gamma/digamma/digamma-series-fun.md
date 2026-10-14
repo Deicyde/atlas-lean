@@ -14,6 +14,10 @@ Complex digamma series function.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Digamma Series Term](digamma-series-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.Gamma.Digamma](../../../../../../../../sources/v2/MathlibExt.md)

@@ -17,6 +17,10 @@ and `y` is its most significant digit
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Comma Msd](comma-msd.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.CommaSequence](../../../../../sources/v2/MathlibExt.md)

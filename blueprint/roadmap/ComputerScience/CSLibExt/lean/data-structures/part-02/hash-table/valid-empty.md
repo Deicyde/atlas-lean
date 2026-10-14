@@ -13,7 +13,12 @@ The empty table satisfies the canonicality invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](valid.md)
+- [Empty](empty.md)
+
+## Proof depends on
+
+- [Hash Table](hash-table.md)
 
 ## Sources
 

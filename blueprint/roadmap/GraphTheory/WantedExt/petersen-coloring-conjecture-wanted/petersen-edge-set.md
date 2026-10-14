@@ -13,7 +13,7 @@ and inner-star edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PVertex](pvertex.md)
 
 ## Sources
 

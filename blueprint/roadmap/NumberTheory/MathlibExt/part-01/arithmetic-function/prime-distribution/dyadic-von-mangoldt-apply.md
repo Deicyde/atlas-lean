@@ -13,7 +13,7 @@ The finite cutoff gives exactly the source's two closed real endpoints.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dyadic Von Mangoldt](dyadic-von-mangoldt.md)
 
 ## Sources
 

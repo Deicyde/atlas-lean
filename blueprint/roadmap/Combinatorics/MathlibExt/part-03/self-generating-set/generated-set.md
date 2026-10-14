@@ -14,6 +14,10 @@ The closure of `seed` under finite compositions of generators in `F`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gen](gen.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SelfGeneratingSet](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ The exponent restriction of a power-free number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Power Free](is-power-free.md)
 
 ## Sources
 

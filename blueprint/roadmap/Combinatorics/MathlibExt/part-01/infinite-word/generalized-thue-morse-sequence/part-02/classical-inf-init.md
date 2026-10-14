@@ -14,7 +14,8 @@ The infinite classical word begins `01101001`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Classical Kappa](../part-01/classical-kappa.md)
+- [Inf Letter](../part-01/inf-letter.md)
 
 ## Sources
 

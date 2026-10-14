@@ -19,6 +19,10 @@ metadata gaps.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Wiman Maximum Modulus](../../../MathlibExt/part-01/complex/part-02/wiman/wiman-maximum-modulus.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.ContinuumLimsupConstantWanted](../../../../../sources/v2/WantedExt.md)

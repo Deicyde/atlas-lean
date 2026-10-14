@@ -17,7 +17,14 @@ Euler direction are proved in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Continued Fraction Eventually Periodic](continued-fraction-eventually-periodic.md)
+- [Is Real Quadratic Irrational](is-real-quadratic-irrational.md)
+
+## Proof depends on
+
+- [Is Eventually Periodic](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
+- [Of finite orbit](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/of-finite-orbit.md)
+- [Of witness](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/of-witness.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ The Poisson core lies below `J`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson Bracket](poisson-bracket.md)
+- [Poisson Core](poisson-core.md)
+
+## Proof depends on
+
+- [Is Poisson Ideal](is-poisson-ideal.md)
 
 ## Sources
 

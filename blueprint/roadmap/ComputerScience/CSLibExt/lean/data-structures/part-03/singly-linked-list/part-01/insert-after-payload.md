@@ -13,7 +13,12 @@ Insertion preserves every payload.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
+- [Insert After](insert-after.md)
+
+## Proof depends on
+
+- [Insert After get](insert-after-get.md)
 
 ## Sources
 

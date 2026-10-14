@@ -12,7 +12,11 @@ The finite set of stored elements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](van-emde-boas.md)
+
+## Proof depends on
+
+- [Member](member.md)
 
 ## Sources
 

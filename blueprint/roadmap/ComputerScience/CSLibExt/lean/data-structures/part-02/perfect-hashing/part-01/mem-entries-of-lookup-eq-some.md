@@ -13,7 +13,15 @@ Lookup soundness phrased against the list abstraction `entries`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](perfect-hashing.md)
+- [Entries](entries.md)
+- [Lookup](lookup.md)
+
+## Proof depends on
+
+- [Stored](stored.md)
+- [Mem entries iff](mem-entries-iff.md)
+- [Stored of lookup eq some](stored-of-lookup-eq-some.md)
 
 ## Sources
 

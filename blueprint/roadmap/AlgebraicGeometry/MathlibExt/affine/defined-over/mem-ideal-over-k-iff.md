@@ -13,7 +13,7 @@ lean: MvPolynomial.mem_idealOverK_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ideal Over K](ideal-over-k.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ using `fuel` to bound the number of blocks.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Undelimit](undelimit.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.Complexity](../../../../sources/v2/MathlibExt.md)

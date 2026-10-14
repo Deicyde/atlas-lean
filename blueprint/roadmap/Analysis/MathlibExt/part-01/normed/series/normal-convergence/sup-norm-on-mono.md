@@ -13,7 +13,7 @@ The sup norm shrinks when the domain shrinks.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sup Norm On](sup-norm-on.md)
 
 ## Sources
 

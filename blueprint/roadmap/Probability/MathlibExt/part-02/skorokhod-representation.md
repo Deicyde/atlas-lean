@@ -17,6 +17,14 @@ exist measurable `Yₙ, Y₀ : ℝ → X` with `(volume.restrict (Icc 0 1)).map 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cdf Quantile](quantile/cdf-quantile.md)
+- [Cdf Quantile le iff](quantile/cdf-quantile-le-iff.md)
+- [Cdf Quantile mono On](quantile/cdf-quantile-mono-on.md)
+- [Map cdf Quantile restrict Icc](quantile/map-cdf-quantile-restrict-icc.md)
+- [Measurable cdf Quantile](quantile/measurable-cdf-quantile.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.SkorokhodRepresentation](../../../../sources/v2/MathlibExt.md)

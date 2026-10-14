@@ -12,7 +12,12 @@ A finite word occurs in an infinite word at some position.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inf Word](inf-word.md)
+- [Sigma](sigma.md)
+
+## Proof depends on
+
+- [Occurs At](occurs-at.md)
 
 ## Sources
 

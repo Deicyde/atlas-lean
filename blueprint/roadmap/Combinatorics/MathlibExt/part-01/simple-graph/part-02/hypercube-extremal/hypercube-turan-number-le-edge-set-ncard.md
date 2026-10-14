@@ -13,7 +13,12 @@ lean: SimpleGraph.hypercubeTuranNumber_le_edgeSet_ncard
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypercube Graph](hypercube-graph.md)
+- [Hypercube Turan Number](hypercube-turan-number.md)
+
+## Proof depends on
+
+- [Hypercube Graph subgraph edge Set ncard le](hypercube-graph-subgraph-edge-set-ncard.md)
 
 ## Sources
 

@@ -17,7 +17,11 @@ derivatives".
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partial Deriv](partial-deriv.md)
+
+## Proof depends on
+
+- [Partial Deriv partial Deriv eq fderiv fderiv](partial-deriv-partial-deriv-eq-fderiv-fd.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ The child endpoint of a directed edge is a vertex of the tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
+- [Parent Child](parent-child.md)
+
+## Proof depends on
+
+- [Mem right](../part-01/mem-right.md)
+- [Adjacent](adjacent.md)
 
 ## Sources
 

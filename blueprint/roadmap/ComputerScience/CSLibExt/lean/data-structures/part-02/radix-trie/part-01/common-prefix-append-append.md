@@ -13,7 +13,7 @@ A shared prefix factors out of the longest common prefix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Common Prefix](common-prefix.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ An actually quadratic aspect is a lower bound on the dual exponent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dual Circuit Exponent](dual-circuit-exponent.md)
+- [Rectangular Circuit Exponent](rectangular-circuit-exponent.md)
 
 ## Sources
 

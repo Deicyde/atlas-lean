@@ -13,7 +13,16 @@ Under `Valid`, the deepest-level probe decides membership exactly.
 
 ## Depends on
 
-This node has no prerequisites.
+- [XFast Trie](xfast-trie.md)
+- [Valid](valid.md)
+- [Member](member.md)
+
+## Proof depends on
+
+- [Has Prefix](has-prefix.md)
+- [Has Prefix iff](has-prefix-iff.md)
+- [Prefix Of](prefix-of.md)
+- [Prefix Of full](prefix-of-full.md)
 
 ## Sources
 

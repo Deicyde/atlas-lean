@@ -13,7 +13,9 @@ Insertion preserves local `d`-ary heap order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Heap Ordered](../part-01/dary-heap-ordered.md)
+- [Dary Min Heap](dary-min-heap.md)
+- [Push](push.md)
 
 ## Sources
 

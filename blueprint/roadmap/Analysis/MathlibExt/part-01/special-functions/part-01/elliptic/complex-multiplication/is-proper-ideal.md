@@ -17,6 +17,10 @@ The ambient assumptions that `𝒪` is an imaginary quadratic order and that the
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Endomorphism Ring](endomorphism-ring.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.Elliptic.ComplexMultiplication](../../../../../../../../sources/v2/MathlibExt.md)

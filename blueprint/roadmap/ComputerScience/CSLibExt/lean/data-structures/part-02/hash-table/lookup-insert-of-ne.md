@@ -13,7 +13,9 @@ Inserting one key leaves lookup of every distinct key unchanged, including colli
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hash Table](hash-table.md)
+- [Insert](insert.md)
+- [Lookup](lookup.md)
 
 ## Sources
 

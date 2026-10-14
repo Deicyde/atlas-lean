@@ -15,6 +15,12 @@ If `‖χ g‖ < degree`, the characteristic roots are not all equal.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Character eq sum roots](character-eq-sum-roots.md)
+- [Charpoly root norm eq one](charpoly-root-norm-eq-one.md)
+- [Charpoly roots card](charpoly-roots-card.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.KillingLemma](../../../../../../sources/v2/MathlibExt.md)

@@ -14,6 +14,10 @@ The dimension-specific thin-shell width of the Euclidean radius.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Isotropic Log Concave](is-isotropic-log-concave.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Geometry.ThinShell](../../../../../../sources/v2/MathlibExt.md)

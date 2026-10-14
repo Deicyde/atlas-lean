@@ -12,7 +12,11 @@ The normalised distance of a binary code `C` is its distance divided by its leng
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary Code](binary-code.md)
+
+## Proof depends on
+
+- [Distance](distance.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The companion Lucas sequence `V(P, Q)`, initialized by `2, P`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](lucas-sequence-params.md)
 
 ## Sources
 

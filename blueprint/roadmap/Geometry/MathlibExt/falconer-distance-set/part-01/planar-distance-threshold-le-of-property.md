@@ -13,7 +13,12 @@ A sufficient threshold in the interval gives an upper bound for the infimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar Distance Threshold](planar-distance-threshold.md)
+- [Planar Threshold Property](planar-threshold-property.md)
+
+## Proof depends on
+
+- [Planar Distance Threshold le of admissible](planar-distance-threshold-le-of-admissib.md)
 
 ## Sources
 

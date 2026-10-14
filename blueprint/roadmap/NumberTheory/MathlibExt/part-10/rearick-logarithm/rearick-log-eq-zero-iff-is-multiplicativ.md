@@ -20,7 +20,11 @@ Proves `Wanted` entry `rearick_log_eq_zero_iff_isMultiplicative`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rearick Log](rearick-log.md)
+
+## Proof depends on
+
+- [Rearick Log eq pmul log mul dirichlet Inverse](rearick-log-eq-pmul-log-mul-dirichlet-in.md)
 
 ## Sources
 

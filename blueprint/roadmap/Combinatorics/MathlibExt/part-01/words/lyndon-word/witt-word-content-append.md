@@ -13,7 +13,7 @@ Word content is additive under concatenation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Witt Word Content](witt-word-content.md)
 
 ## Sources
 

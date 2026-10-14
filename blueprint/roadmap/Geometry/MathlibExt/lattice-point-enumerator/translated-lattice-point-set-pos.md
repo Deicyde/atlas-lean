@@ -15,6 +15,10 @@ Translate-after-dilate helper, not a full source-domain object: no boundedness.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Translated Lattice Point Set](translated-lattice-point-set.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.LatticePointEnumerator](../../../../sources/v2/MathlibExt.md)

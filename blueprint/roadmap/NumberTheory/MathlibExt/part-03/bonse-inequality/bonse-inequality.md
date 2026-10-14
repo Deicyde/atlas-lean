@@ -20,6 +20,12 @@ one-indexed `p_{k+1}` and the product over `Finset.range k` is
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bonse nth five](bonse-nth-five.md)
+- [Bonse nth strict Mono](bonse-nth-strict-mono.md)
+- [Bonse nth succ lt](bonse-nth-succ-lt.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.BonseInequality](../../../../../sources/v2/MathlibExt.md)

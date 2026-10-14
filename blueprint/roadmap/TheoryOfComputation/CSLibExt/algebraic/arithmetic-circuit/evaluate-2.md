@@ -12,7 +12,12 @@ Evaluate the charged operation on its two actual operands.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arithmetic Gate](arithmetic-gate.md)
+
+## Proof depends on
+
+- [Arithmetic Operand](arithmetic-operand.md)
+- [Evaluate](evaluate.md)
 
 ## Sources
 

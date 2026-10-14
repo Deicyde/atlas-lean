@@ -12,7 +12,11 @@ Looks up a list key in a radix trie.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Radix Trie](radix-trie.md)
+
+## Proof depends on
+
+- [Common Prefix](common-prefix.md)
 
 ## Sources
 

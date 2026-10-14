@@ -16,7 +16,15 @@ within `S`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is POrdering](is-pordering.md)
+- [P Ordering Valuation](p-ordering-valuation.md)
+
+## Proof depends on
+
+- [Infinite](infinite.md)
+- [Mem](mem.md)
+- [Min le](min-le.md)
+- [P Ordering Valuation zero](p-ordering-valuation-zero.md)
 
 ## Sources
 

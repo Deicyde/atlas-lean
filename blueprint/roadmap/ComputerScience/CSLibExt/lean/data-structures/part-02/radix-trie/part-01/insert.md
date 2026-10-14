@@ -16,7 +16,7 @@ internal node with no value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Radix Trie](radix-trie.md)
 
 ## Sources
 

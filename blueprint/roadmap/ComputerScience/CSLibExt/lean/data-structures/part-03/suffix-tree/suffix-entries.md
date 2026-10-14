@@ -14,6 +14,10 @@ The suffix entries of `s`: each suffix of `terminated s` with its starting index
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Terminated](terminated.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.SuffixTree](../../../../../../../sources/v2/CSLibExt.md)

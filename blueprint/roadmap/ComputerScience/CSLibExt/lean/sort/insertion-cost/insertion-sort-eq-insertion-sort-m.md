@@ -13,7 +13,12 @@ On `Type 0`, the complete return value and comparison charges equal CSLib's API.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compare LE](compare-le.md)
+- [Insertion Sort](insertion-sort.md)
+
+## Proof depends on
+
+- [Insertion Sort Insert](insertion-sort-insert.md)
 
 ## Sources
 

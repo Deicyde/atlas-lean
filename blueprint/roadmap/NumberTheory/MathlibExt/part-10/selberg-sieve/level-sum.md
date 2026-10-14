@@ -14,6 +14,10 @@ The Selberg level sum is the sum of `s.selbergTerms` over the level set.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Level Set](level-set.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SelbergSieve](../../../../../sources/v2/MathlibExt.md)

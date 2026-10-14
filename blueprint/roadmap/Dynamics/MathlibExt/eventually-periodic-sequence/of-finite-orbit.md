@@ -13,7 +13,7 @@ An orbit `r (n + 1) = F (r n)` of a map on a finite type is eventually periodic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Eventually Periodic](is-eventually-periodic.md)
 
 ## Sources
 

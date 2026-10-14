@@ -13,7 +13,8 @@ Reflection about the origin preserves the cube.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Centrally Symmetric](../covering/is-centrally-symmetric.md)
+- [Coordinate Cube](coordinate-cube.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Unfolding lemma for `integerUnitCube`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer Unit Cube](integer-unit-cube.md)
 
 ## Sources
 

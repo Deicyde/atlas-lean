@@ -12,7 +12,7 @@ The finite simplex graph: adjacency by symmetric-difference cardinality one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Simplex Vertex](simplex-vertex.md)
 
 ## Sources
 

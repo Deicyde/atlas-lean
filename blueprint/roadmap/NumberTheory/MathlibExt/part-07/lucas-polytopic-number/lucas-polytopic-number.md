@@ -12,7 +12,11 @@ The `n`-th simplicial `d`-Lucas-polytopic number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Parameters](lucas-parameters.md)
+
+## Proof depends on
+
+- [Lucasnomial](lucasnomial.md)
 
 ## Sources
 

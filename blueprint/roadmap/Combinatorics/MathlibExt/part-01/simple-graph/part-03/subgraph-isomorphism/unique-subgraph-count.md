@@ -20,6 +20,10 @@ count: if distinct `G₁ ≤ H` and `G₂ ≤ H` are isomorphic, neither satisfi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Unique Subgraph](is-unique-subgraph.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.SubgraphIsomorphism](../../../../../../../sources/v2/MathlibExt.md)

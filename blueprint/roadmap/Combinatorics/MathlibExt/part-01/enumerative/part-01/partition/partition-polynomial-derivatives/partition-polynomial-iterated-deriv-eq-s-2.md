@@ -21,6 +21,10 @@ The partition `λ = ⟨1^m₁, …, k^mₖ⟩` in frequency notation has largest
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Partition Polynomial iterated Deriv eq sum stirling Second general](partition-polynomial-iterated-deriv-eq-s.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.Partition.PartitionPolynomialDerivatives](../../../../../../../../sources/v2/MathlibExt.md)

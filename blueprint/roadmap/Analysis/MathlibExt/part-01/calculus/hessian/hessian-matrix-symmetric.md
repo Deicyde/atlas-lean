@@ -17,7 +17,11 @@ second derivatives”.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hessian Matrix](hessian-matrix.md)
+
+## Proof depends on
+
+- [Hessian Matrix eq fderiv fderiv](hessian-matrix-eq-fderiv-fderiv.md)
 
 ## Sources
 

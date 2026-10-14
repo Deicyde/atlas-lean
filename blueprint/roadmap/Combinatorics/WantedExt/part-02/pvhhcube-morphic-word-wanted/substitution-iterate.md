@@ -12,7 +12,11 @@ The `k`-fold substituted image of the initial letter `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letter](letter.md)
+
+## Proof depends on
+
+- [Substitution](substitution.md)
 
 ## Sources
 

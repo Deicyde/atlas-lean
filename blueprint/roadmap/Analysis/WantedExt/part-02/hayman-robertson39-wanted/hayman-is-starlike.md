@@ -14,6 +14,11 @@ Starlike: schlicht with `Re (z f'(z) / f z) > 0` on punctured disc [AMR-022-6039
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hayman Is Schlicht](hayman-is-schlicht.md)
+- [Hayman Unit Disc](hayman-unit-disc.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HaymanRobertson39Wanted](../../../../../sources/v2/WantedExt.md)

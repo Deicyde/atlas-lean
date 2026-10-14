@@ -15,6 +15,10 @@ Full-range `binSearchContains` is true exactly when the key belongs to the array
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bin Search Contains eq true iff](bin-search-contains-eq-true-iff.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Search.Binary](../../../../../../sources/v2/CSLibExt.md)

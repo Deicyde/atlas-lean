@@ -13,7 +13,7 @@ lean: MathlibExt.Analysis.Series.RiemannRearrangementWanted.orderedHasSum_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered Has Sum](ordered-has-sum.md)
 
 ## Sources
 

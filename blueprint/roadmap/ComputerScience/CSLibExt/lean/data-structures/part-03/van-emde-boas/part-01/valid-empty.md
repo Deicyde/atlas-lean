@@ -13,7 +13,8 @@ The empty tree satisfies the summary invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](valid.md)
+- [Empty](empty.md)
 
 ## Sources
 

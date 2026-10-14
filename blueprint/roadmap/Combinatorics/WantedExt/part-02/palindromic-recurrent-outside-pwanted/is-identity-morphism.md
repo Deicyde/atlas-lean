@@ -12,7 +12,11 @@ Identity morphism.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Morphism](morphism.md)
+
+## Proof depends on
+
+- [Sigma](sigma.md)
 
 ## Sources
 

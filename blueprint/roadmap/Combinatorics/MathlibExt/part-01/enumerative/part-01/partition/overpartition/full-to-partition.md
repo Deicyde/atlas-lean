@@ -13,7 +13,7 @@ The underlying partition of `full p` is `p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Full](full.md)
 
 ## Sources
 

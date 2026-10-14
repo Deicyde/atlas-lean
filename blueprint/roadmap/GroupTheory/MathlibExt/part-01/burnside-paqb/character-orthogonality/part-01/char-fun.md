@@ -12,7 +12,11 @@ Character of a class, well-defined by `FDRep.char_iso`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Irr](irr.md)
+
+## Proof depends on
+
+- [Iso Setoid](iso-setoid.md)
 
 ## Sources
 

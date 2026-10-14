@@ -16,7 +16,11 @@ When the family is not multipliable, `tprod` takes its conventional default valu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Artin Local Datum](artin-local-datum.md)
+
+## Proof depends on
+
+- [Artin Local Factor Raw](artin-local-factor-raw.md)
 
 ## Sources
 

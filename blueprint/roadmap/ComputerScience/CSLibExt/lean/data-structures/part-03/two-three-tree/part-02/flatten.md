@@ -12,7 +12,11 @@ The inorder traversal of a root's tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Root](root.md)
+
+## Proof depends on
+
+- [Flatten](../part-01/flatten.md)
 
 ## Sources
 

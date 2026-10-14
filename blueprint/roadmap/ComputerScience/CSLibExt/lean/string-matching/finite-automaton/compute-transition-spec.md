@@ -13,7 +13,7 @@ Every actual table entry is the greatest feasible suffix-prefix length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compute Transition](compute-transition.md)
 
 ## Sources
 

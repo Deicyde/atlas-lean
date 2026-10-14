@@ -12,7 +12,7 @@ The root vertex of a tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
 
 ## Sources
 

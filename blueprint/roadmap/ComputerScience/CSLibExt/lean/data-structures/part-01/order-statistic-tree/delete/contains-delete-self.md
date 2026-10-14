@@ -13,7 +13,12 @@ Comparison search does not find the deleted key in the result.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Not mem delete](not-mem-delete.md)
+- [Ordered delete](ordered-delete.md)
 
 ## Sources
 

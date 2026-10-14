@@ -14,7 +14,7 @@ induced graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Vertex Connected](is-vertex-connected.md)
 
 ## Sources
 

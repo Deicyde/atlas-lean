@@ -14,7 +14,15 @@ element is above `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](../part-01/van-emde-boas.md)
+- [Valid](../part-01/valid.md)
+- [Member](../part-01/member.md)
+- [Successor](successor.md)
+
+## Proof depends on
+
+- [Successor gt](successor-gt.md)
+- [Successor mem](successor-mem.md)
 
 ## Sources
 

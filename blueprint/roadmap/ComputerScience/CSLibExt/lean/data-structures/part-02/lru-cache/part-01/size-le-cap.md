@@ -13,7 +13,8 @@ The size of any cache is at most its capacity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lru Cache](lru-cache.md)
+- [Size](size.md)
 
 ## Sources
 

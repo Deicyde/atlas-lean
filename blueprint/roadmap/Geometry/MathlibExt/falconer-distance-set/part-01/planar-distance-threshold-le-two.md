@@ -13,7 +13,12 @@ The planar distance threshold is at most two.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar Distance Threshold](planar-distance-threshold.md)
+
+## Proof depends on
+
+- [Planar Distance Threshold le of admissible](planar-distance-threshold-le-of-admissib.md)
+- [Two admissible Planar Threshold](two-admissible-planar-threshold.md)
 
 ## Sources
 

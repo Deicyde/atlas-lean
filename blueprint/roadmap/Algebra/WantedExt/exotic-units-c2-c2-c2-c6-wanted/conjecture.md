@@ -17,6 +17,11 @@ of the trivial form `±g` for any `g ∈ G` and any sign in `ℤˣ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [OWRGroup](owrgroup.md)
+- [OWRGroup Ring](owrgroup-ring.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Algebra.ExoticUnitsC2C2C2C6Wanted](../../../../sources/v2/WantedExt.md)

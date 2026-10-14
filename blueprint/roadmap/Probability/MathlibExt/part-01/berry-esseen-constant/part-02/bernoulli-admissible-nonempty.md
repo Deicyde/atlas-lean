@@ -13,7 +13,12 @@ The coefficient 42 applies to the actual subclass too.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bernoulli Admissible](is-bernoulli-admissible.md)
+
+## Proof depends on
+
+- [Is Bernoulli Law](../part-01/is-bernoulli-law.md)
+- [Is Admissible forty Two](../part-01/is-admissible-forty-two.md)
 
 ## Sources
 

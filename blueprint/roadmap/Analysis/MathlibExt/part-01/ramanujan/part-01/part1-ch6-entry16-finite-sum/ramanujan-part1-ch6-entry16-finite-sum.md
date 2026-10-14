@@ -18,6 +18,10 @@ Proves `Wanted` entry `ramanujan_part1_ch6_entry16_harmonicasymptotic`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ramanujan part1 ch6 entry16 finite sum general](ramanujan-part1-ch6-entry16-finite-sum-g.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch6Entry16FiniteSum](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ A positive outer dimension gives a positive rounded inner dimension.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectangular Inner Dimension](../../matrix-multiplication-exponent/part-03/rectangular-inner-dimension.md)
 
 ## Sources
 

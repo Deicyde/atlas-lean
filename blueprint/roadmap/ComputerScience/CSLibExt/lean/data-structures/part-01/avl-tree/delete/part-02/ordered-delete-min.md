@@ -13,7 +13,11 @@ lean: Cslib.Algorithms.Lean.AvlTree.ordered_deleteMin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete Min](../part-01/delete-min.md)
+
+## Proof depends on
+
+- [Ordered erase Min](../part-01/ordered-erase-min.md)
 
 ## Sources
 

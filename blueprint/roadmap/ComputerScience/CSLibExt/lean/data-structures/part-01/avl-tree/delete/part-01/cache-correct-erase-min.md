@@ -13,7 +13,7 @@ Removing the minimum preserves correct cached heights.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Erase Min](erase-min.md)
 
 ## Sources
 

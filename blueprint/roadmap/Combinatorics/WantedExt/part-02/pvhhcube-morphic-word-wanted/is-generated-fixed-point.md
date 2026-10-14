@@ -13,7 +13,11 @@ iterate is a prefix of `w`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letter](letter.md)
+
+## Proof depends on
+
+- [Substitution Iterate](substitution-iterate.md)
 
 ## Sources
 

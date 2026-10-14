@@ -13,7 +13,12 @@ The determinant of the empty principal minor is one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Root Data](root-data.md)
+- [Principal Minor Det](principal-minor-det.md)
+
+## Proof depends on
+
+- [Principal Minor Matrix](principal-minor-matrix.md)
 
 ## Sources
 

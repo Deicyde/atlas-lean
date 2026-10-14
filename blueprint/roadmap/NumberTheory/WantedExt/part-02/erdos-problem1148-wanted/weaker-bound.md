@@ -14,6 +14,10 @@ The weaker bound always holds (established companion).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weaker prop](weaker-prop.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem1148Wanted](../../../../../sources/v2/WantedExt.md)

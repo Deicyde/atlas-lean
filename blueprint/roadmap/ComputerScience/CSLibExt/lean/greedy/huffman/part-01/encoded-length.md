@@ -18,7 +18,12 @@ the structural path cost rather than the emitted encoder cost.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](huffman-tree.md)
+
+## Proof depends on
+
+- [Total Weight](total-weight.md)
+- [Weighted Path Length](weighted-path-length.md)
 
 ## Sources
 

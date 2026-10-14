@@ -13,7 +13,11 @@ Every function series converges locally normally on the empty set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Converges Locally Normally On](converges-locally-normally-on.md)
+
+## Proof depends on
+
+- [Converges Normally On](converges-normally-on.md)
 
 ## Sources
 

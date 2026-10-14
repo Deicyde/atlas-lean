@@ -12,7 +12,13 @@ Class functions are linearly equivalent to functions on conjugacy classes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Class Functions](class-functions.md)
+
+## Proof depends on
+
+- [Is Class Function](is-class-function.md)
+- [Eq of is Conj](eq-of-is-conj.md)
+- [Is Class Function iff factor conj Classes](is-class-function-iff-factor-conj-classe.md)
 
 ## Sources
 

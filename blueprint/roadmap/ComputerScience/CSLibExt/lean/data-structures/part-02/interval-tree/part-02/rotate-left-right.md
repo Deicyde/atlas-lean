@@ -12,7 +12,12 @@ A left-right rotation repairs the three affected nodes' metadata.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+
+## Proof depends on
+
+- [Entry](../part-01/entry.md)
+- [Mk Node](../part-01/mk-node.md)
 
 ## Sources
 

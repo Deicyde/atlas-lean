@@ -15,7 +15,7 @@ The nonzero hypothesis is not needed; see `Matrix.IsIrreducible.perron_frobenius
 
 ## Depends on
 
-This node has no prerequisites.
+- [To Complex Matrix](to-complex-matrix.md)
 
 ## Sources
 

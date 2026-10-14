@@ -13,7 +13,7 @@ lean: MvPolynomial.idealOverK_anti_mono
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ideal Over K](ideal-over-k.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ The number of missing curvatures up to `N` in a primitive Apollonian circle pack
 
 ## Depends on
 
-This node has no prerequisites.
+- [Primitive Apollonian Circle Packing](primitive-apollonian-circle-packing.md)
+
+## Proof depends on
+
+- [Missing Curvature Set](missing-curvature-set.md)
 
 ## Sources
 

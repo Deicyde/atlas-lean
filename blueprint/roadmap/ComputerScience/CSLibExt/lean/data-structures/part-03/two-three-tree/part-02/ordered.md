@@ -12,7 +12,11 @@ The ordering invariant for a root's tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Root](root.md)
+
+## Proof depends on
+
+- [Ordered](../part-01/ordered.md)
 
 ## Sources
 

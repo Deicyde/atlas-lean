@@ -12,7 +12,11 @@ The Petersen graph on `ZMod 5 × Bool`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PVertex](pvertex.md)
+
+## Proof depends on
+
+- [Petersen Edge Set](petersen-edge-set.md)
 
 ## Sources
 

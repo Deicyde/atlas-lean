@@ -14,7 +14,11 @@ eigenfunction: the defining series telescopes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Eigenvalue](is-eigenvalue.md)
+
+## Proof depends on
+
+- [Gkw Term](gkw-term.md)
 
 ## Sources
 

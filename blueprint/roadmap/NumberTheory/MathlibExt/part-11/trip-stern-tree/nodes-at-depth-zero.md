@@ -14,7 +14,12 @@ Depth zero contains exactly the root seed. Source: Amburg et al., *TRIP-Stern Se
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trip Stern Tree](trip-stern-tree.md)
+- [Nodes At Depth](nodes-at-depth.md)
+
+## Proof depends on
+
+- [Node At Path](node-at-path.md)
 
 ## Sources
 

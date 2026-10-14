@@ -13,7 +13,8 @@ A dominating set attaining the domination number exists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dominating](is-dominating.md)
+- [Domination Number](domination-number.md)
 
 ## Sources
 

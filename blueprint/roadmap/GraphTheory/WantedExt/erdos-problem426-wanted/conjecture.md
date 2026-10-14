@@ -14,6 +14,10 @@ Some constant `c > 0` works for arbitrarily large `n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unique Subgraph Count](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-03/subgraph-isomorphism/unique-subgraph-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.ErdosProblem426Wanted](../../../../sources/v2/WantedExt.md)

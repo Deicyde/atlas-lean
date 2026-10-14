@@ -24,7 +24,7 @@ the proof combines first-occurrence decompositions with the Chebyshev recurrence
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Surjective Restricted Growth String](is-surjective-restricted-growth-string.md)
 
 ## Sources
 

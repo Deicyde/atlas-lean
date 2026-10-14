@@ -12,7 +12,7 @@ Enumerates the key-value entries of a trie in stored sibling order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trie](trie.md)
 
 ## Sources
 

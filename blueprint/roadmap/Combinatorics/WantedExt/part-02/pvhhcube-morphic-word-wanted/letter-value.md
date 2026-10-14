@@ -12,7 +12,7 @@ The integer represented by a letter.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Letter](letter.md)
 
 ## Sources
 

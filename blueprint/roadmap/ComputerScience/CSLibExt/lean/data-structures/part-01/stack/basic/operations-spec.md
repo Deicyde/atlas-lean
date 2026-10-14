@@ -13,7 +13,9 @@ Exact list refinement and selected-event costs, including underflow.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pop](pop.md)
+- [Push](push.md)
+- [Top](top.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ The local ring of `𝔸^{n+1}` at the affine point `q`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eval At](eval-at.md)
+- [Max Ideal At](max-ideal-at.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.AlgebraicGeometry.BezoutWanted](../../../../sources/v2/WantedExt.md)

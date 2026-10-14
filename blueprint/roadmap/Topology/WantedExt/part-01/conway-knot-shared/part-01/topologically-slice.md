@@ -15,7 +15,15 @@ boundary points using the matching local model.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knot](knot.md)
+
+## Proof depends on
+
+- [Is Locally Flat Boundary](is-locally-flat-boundary.md)
+- [Is Locally Flat Interior](is-locally-flat-interior.md)
+- [R3](r3.md)
+- [Circle1](circle1.md)
+- [Disk2](disk2.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ lean: MathlibExt.NumberTheory.BreuschWanted.Internal.floor_N9
 
 ## Depends on
 
-This node has no prerequisites.
+- [N9m](../../lower/part-01/n9m.md)
+- [Q9](../../grid/part-01/q9.md)
+
+## Proof depends on
+
+- [N9 eq](../../lower/part-02/n9-eq.md)
+- [Int Floor cast](int-floor-cast.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ The tree returned by `access` is the splayed tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Access](access.md)
+- [Splay](splay.md)
 
 ## Sources
 

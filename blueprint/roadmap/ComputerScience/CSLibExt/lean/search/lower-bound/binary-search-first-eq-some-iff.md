@@ -13,7 +13,12 @@ The membership wrapper returns exactly the first occurrence of `key`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary Search First?](binary-search-first.md)
+
+## Proof depends on
+
+- [Lower Bound](lower-bound.md)
+- [Lower Bound spec](lower-bound-spec.md)
 
 ## Sources
 

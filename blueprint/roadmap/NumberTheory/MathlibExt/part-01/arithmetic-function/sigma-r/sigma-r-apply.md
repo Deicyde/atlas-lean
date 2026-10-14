@@ -13,7 +13,7 @@ The defining finite divisor-sum formula for `sigmaR`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma R](sigma-r.md)
 
 ## Sources
 

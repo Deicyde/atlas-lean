@@ -12,7 +12,7 @@ The predecessor of `x`: the greatest stored key smaller than `x`, if one exists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [XFast Trie](xfast-trie.md)
 
 ## Sources
 

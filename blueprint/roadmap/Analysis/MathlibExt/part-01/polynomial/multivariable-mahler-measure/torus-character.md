@@ -14,6 +14,10 @@ The torus character `e ↦ exp (I * ∑ j, e j * θ j)` at the angle vector `θ`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Real Sum](real-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Polynomial.MultivariableMahlerMeasure](../../../../../../sources/v2/MathlibExt.md)

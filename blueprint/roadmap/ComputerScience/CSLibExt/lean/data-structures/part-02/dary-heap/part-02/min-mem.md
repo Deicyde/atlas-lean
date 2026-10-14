@@ -13,7 +13,9 @@ Inspection returns a stored value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Min Heap](dary-min-heap.md)
+- [Elements](elements.md)
+- [Min?](min.md)
 
 ## Sources
 

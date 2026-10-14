@@ -14,7 +14,8 @@ fundamental-discriminant predicate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Fundamental Imaginary Quadratic Discriminant](is-fundamental-imaginary-quadratic-discr.md)
+- [Is Fundamental Discriminant](../../part-01/dirichlet-character/quadratic/is-fundamental-discriminant.md)
 
 ## Sources
 

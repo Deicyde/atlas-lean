@@ -14,7 +14,11 @@ Restriction of the `M`-Artin map at a prime generator agrees with the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Artin Map](../artin-map/artin-map.md)
+
+## Proof depends on
+
+- [Artin Map prime Coprime Unit](../artin-map/artin-map-prime-coprime-unit.md)
 
 ## Sources
 

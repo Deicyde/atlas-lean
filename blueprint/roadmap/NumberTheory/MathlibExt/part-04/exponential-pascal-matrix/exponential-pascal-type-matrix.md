@@ -17,6 +17,10 @@ into the `(n, k)` matrix entry.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exponential Pascal Type Series](exponential-pascal-type-series.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ExponentialPascalMatrix](../../../../../sources/v2/MathlibExt.md)

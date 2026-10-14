@@ -12,7 +12,7 @@ Inserts `x` by setting its cluster bit and the summary bit of its cluster.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](van-emde-boas.md)
 
 ## Sources
 

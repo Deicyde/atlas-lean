@@ -20,6 +20,10 @@ out-of-domain `q`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Q Pochhammer Inf Raw](q-pochhammer-inf-raw.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.QPochhammer](../../../../../../../sources/v2/MathlibExt.md)

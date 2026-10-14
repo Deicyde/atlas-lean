@@ -15,6 +15,10 @@ Vertical side bound at real part `d ≠ 0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Norm cpow of Real](norm-cpow-of-real.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.PerronKernel](../../../../../../sources/v2/MathlibExt.md)

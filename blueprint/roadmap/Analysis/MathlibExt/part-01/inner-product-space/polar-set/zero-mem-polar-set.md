@@ -13,7 +13,7 @@ The origin lies in every polar set, since `⟪x, 0⟫_ℝ = 0 ≤ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polar Set](polar-set.md)
 
 ## Sources
 

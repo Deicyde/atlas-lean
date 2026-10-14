@@ -13,7 +13,12 @@ Total charged events are all table cells plus all reconstructed operations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edit Distance](edit-distance.md)
+
+## Proof depends on
+
+- [Edit Distance cell Transitions](edit-distance-cell-transitions.md)
+- [Edit Distance reconstruction Steps](edit-distance-reconstruction-steps.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ lean: MathlibExt.NumberTheory.BreuschWanted.Internal.G9r_vanish_of
 
 ## Depends on
 
-This node has no prerequisites.
+- [G9r](../part-01/g9r.md)
+- [Q9](../../grid/part-01/q9.md)
+
+## Proof depends on
+
+- [G9r vanish](../part-01/g9r-vanish.md)
+- [Q9 pos](../../lower/part-01/q9-pos.md)
 
 ## Sources
 

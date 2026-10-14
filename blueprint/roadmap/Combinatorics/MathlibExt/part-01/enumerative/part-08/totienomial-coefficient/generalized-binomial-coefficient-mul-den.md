@@ -14,7 +14,13 @@ quotient equation with a nonzero denominator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Positive Sequence](is-positive-sequence.md)
+- [Generalized Binomial Coefficient](generalized-binomial-coefficient.md)
+- [Generalized Factorial](generalized-factorial.md)
+
+## Proof depends on
+
+- [Generalized Factorial pos](generalized-factorial-pos.md)
 
 ## Sources
 

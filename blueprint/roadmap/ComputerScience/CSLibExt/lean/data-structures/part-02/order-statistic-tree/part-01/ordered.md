@@ -12,7 +12,12 @@ The ordering invariant is the prerequisite BST invariant after erasing caches.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Ordered](../../binary-search-tree/part-01/ordered.md)
+- [Erase](erase.md)
 
 ## Sources
 

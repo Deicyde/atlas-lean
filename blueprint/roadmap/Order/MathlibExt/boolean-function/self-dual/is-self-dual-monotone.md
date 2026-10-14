@@ -15,6 +15,10 @@ equal to its dual.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Boolean Function Dual](boolean-function-dual.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Order.BooleanFunction.SelfDual](../../../../../sources/v2/MathlibExt.md)

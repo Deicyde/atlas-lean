@@ -12,7 +12,11 @@ The absolute norm of the finite (ideal) component, as a positive real.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arakelov Divisor](arakelov-divisor.md)
+
+## Proof depends on
+
+- [Abs Norm units pos](abs-norm-units-pos.md)
 
 ## Sources
 

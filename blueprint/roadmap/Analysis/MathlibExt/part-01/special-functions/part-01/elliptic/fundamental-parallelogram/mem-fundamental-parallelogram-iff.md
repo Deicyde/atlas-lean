@@ -13,7 +13,11 @@ Membership in a fundamental parallelogram in terms of the two period coordinates
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fundamental Parallelogram](fundamental-parallelogram.md)
+
+## Proof depends on
+
+- [Basis repr omega](basis-repr-omega.md)
 
 ## Sources
 

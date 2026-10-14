@@ -15,6 +15,10 @@ The entire exponential integral
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ein Term](ein-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.EntireExponentialIntegral](../../../../../../../sources/v2/MathlibExt.md)

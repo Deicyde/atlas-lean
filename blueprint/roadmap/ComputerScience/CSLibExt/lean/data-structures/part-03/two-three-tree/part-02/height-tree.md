@@ -13,7 +13,12 @@ The computed height of a root's tree agrees with its stored height.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Root](root.md)
+- [Height](../part-01/height.md)
+
+## Proof depends on
+
+- [Height eq](../part-01/height-eq.md)
 
 ## Sources
 

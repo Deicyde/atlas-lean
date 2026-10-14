@@ -13,7 +13,12 @@ The identity acts as the identity linear map.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gal Linear Map](gal-linear-map.md)
+- [Torsion Pts](torsion-pts.md)
+
+## Proof depends on
+
+- [Gal Point Hom apply one](gal-point-hom-apply-one.md)
 
 ## Sources
 

@@ -19,6 +19,12 @@ and `jis_40ae94aec46faf8f37032d00`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [B Ary Digit](b-ary-digit.md)
+- [B Ary Lower Digits](b-ary-lower-digits.md)
+- [Ordinary Multinomial Factor](ordinary-multinomial-factor.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.BAryMultinomialCoefficient](../../../../../sources/v2/MathlibExt.md)

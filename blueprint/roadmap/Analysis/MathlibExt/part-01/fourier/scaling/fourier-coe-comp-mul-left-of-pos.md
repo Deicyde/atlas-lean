@@ -15,6 +15,10 @@ Dilation of a Schwartz function by a positive factor, as coerced functions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fourier comp mul left of pos](fourier-comp-mul-left-of-pos.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Fourier.Scaling](../../../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,12 @@ tree minus the deleted key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete Rebuild](delete-rebuild.md)
+
+## Proof depends on
+
+- [Delete Rebuild](delete-rebuild-2.md)
+- [Mem delete Rebuild](mem-delete-rebuild.md)
 
 ## Sources
 

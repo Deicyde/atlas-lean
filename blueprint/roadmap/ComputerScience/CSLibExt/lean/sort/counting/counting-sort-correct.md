@@ -13,7 +13,7 @@ Counting sort returns a sorted, stable permutation of the input records.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Counting Sort](counting-sort.md)
 
 ## Sources
 

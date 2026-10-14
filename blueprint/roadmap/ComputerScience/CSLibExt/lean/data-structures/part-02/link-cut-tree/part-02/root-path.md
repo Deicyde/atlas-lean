@@ -13,7 +13,7 @@ the tree. This is the preferred path installed by `access x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
 
 ## Sources
 

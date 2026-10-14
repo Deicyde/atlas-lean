@@ -18,6 +18,10 @@ derive them from an actual admissible bound.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Bound](is-bound.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.BeurlingAhlfors](../../../../../sources/v2/MathlibExt.md)

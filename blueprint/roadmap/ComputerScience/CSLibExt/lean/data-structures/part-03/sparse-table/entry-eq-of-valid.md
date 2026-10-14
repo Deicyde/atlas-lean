@@ -14,7 +14,10 @@ In a valid table, entry `i` of level `k` is the corresponding entry of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sparse Table](sparse-table.md)
+- [Valid](valid.md)
+- [Entry](entry.md)
+- [Level](level.md)
 
 ## Sources
 

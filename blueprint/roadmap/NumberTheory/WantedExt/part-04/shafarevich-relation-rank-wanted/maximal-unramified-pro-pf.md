@@ -16,6 +16,10 @@ whose Galois group is a `p`-group.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Everywhere Unramified](is-everywhere-unramified.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ShafarevichRelationRankWanted](../../../../../sources/v2/WantedExt.md)

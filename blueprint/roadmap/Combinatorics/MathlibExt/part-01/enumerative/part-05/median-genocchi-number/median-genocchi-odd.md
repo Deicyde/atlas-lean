@@ -20,6 +20,10 @@ statements `jis_94b979a01da48153660bbf5f` and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Genocchi Number Via Bernoulli](genocchi-number-via-bernoulli.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MedianGenocchiNumber](../../../../../../../sources/v2/MathlibExt.md)

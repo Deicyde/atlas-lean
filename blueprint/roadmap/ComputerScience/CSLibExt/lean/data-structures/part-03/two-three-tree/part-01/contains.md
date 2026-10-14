@@ -12,7 +12,7 @@ Search a tree by comparing the query against separator keys.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
 
 ## Sources
 

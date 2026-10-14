@@ -14,7 +14,11 @@ FormalConjectures (absent from Mathlib).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bitstring Encoding](bitstring-encoding.md)
+
+## Proof depends on
+
+- [Is Poly Time With Encoding](is-poly-time-with-encoding.md)
 
 ## Sources
 

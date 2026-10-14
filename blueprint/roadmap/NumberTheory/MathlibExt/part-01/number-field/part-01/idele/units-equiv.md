@@ -16,7 +16,10 @@ restricted-product topology, not the topology induced on the units of the adele 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Idele Group](finite-idele-group.md)
+- [Infinite Idele Group](infinite-idele-group.md)
+- [Topological Idele Group](topological-idele-group.md)
+- [Local Integral Unit Subgroup](local-integral-unit-subgroup.md)
 
 ## Sources
 

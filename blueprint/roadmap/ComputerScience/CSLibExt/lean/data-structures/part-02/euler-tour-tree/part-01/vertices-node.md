@@ -13,7 +13,13 @@ Characteristic node equation for `vertices` (the former definition).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+- [Vertices](vertices.md)
+
+## Proof depends on
+
+- [Vertices Aux](vertices-aux.md)
+- [Vertices Aux eq](vertices-aux-eq.md)
 
 ## Sources
 

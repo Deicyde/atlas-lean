@@ -13,7 +13,11 @@ Insertion sort preserves every input occurrence, including duplicates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Insertion Sort](insertion-sort.md)
+
+## Proof depends on
+
+- [Ret insertion Sort](ret-insertion-sort.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ The multiplicative form of `torusCharacter`, used to evaluate a monoid algebra.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Real Sum](real-sum.md)
+- [Torus Character](torus-character.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Polynomial.MultivariableMahlerMeasure](../../../../../../sources/v2/MathlibExt.md)

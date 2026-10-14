@@ -13,7 +13,14 @@ Insertion adds exactly one multiset occurrence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Min Heap](dary-min-heap.md)
+- [Elements](elements.md)
+- [Push](push.md)
+
+## Proof depends on
+
+- [Dary Sift Up](../part-01/dary-sift-up.md)
+- [Dary Sift Up perm](../part-01/dary-sift-up-perm.md)
 
 ## Sources
 

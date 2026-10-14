@@ -13,7 +13,8 @@ Lifting a function on conjugacy classes evaluates by the quotient map.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Class Functions](class-functions.md)
+- [Class Functions Equiv Conj Classes](class-functions-equiv-conj-classes.md)
 
 ## Sources
 

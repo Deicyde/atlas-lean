@@ -15,6 +15,10 @@ bases `b ≥ 2`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Digit Seq](digit-seq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NormalNumber](../../../../../sources/v2/MathlibExt.md)

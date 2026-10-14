@@ -12,7 +12,7 @@ The invariant that every node has distinct child keys and valid child tries.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trie](trie.md)
 
 ## Sources
 

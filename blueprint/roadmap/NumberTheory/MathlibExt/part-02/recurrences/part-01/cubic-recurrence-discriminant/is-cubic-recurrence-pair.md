@@ -19,6 +19,10 @@ while `U 0 = 0` is specified separately.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cubic Recurrence Root Condition](cubic-recurrence-root-condition.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Recurrences.CubicRecurrenceDiscriminant](../../../../../../../sources/v2/MathlibExt.md)

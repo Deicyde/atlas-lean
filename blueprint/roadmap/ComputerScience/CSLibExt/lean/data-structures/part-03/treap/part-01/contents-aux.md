@@ -14,7 +14,7 @@ traversed right suffix, so no ancestor recopies a completed traversal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ A child offset below `d` maps back to its parent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Child](dary-child.md)
+- [Dary Parent](dary-parent.md)
 
 ## Sources
 

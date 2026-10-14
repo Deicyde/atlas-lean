@@ -13,7 +13,7 @@ the empty list when there is none.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grouped YFast Trie](grouped-yfast-trie.md)
 
 ## Sources
 

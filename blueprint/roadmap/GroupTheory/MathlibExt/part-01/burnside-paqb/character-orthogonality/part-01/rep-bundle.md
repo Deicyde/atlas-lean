@@ -12,7 +12,11 @@ Chosen representative bundle of a class.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Irr](irr.md)
+
+## Proof depends on
+
+- [Iso Setoid](iso-setoid.md)
 
 ## Sources
 

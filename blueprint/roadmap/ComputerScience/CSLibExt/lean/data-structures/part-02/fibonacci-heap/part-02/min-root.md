@@ -12,7 +12,11 @@ The minimum root value in a forest, or `none` for the empty forest.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
+
+## Proof depends on
+
+- [Root](../part-01/root.md)
 
 ## Sources
 

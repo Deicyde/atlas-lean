@@ -13,7 +13,7 @@ The support function attains its value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Supp Func](supp-func.md)
 
 ## Sources
 

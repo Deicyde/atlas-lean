@@ -16,7 +16,11 @@ and otherwise the query recurses into both children.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Segment Tree](segment-tree.md)
+
+## Proof depends on
+
+- [Size](size.md)
 
 ## Sources
 

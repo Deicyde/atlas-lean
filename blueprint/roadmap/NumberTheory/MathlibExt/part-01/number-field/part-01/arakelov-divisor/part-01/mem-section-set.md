@@ -14,7 +14,8 @@ archimedean bounds.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arakelov Divisor](arakelov-divisor.md)
+- [Section Set](section-set.md)
 
 ## Sources
 

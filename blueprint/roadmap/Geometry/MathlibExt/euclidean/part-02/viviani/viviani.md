@@ -19,6 +19,10 @@ compatibility with the former `Wanted` entry. New callers should prefer
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Viviani general](viviani-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.Viviani](../../../../../../sources/v2/MathlibExt.md)

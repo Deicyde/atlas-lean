@@ -14,7 +14,11 @@ constant (whose order is `⊤`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pole Multiplicity](pole-multiplicity.md)
+
+## Proof depends on
+
+- [Pole Multiplicity eq zero of nonneg](pole-multiplicity-eq-zero-of-nonneg.md)
 
 ## Sources
 

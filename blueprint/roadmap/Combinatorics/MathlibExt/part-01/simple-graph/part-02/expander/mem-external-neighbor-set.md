@@ -13,7 +13,7 @@ Membership characterization for the external neighbourhood set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [External Neighbor Set](external-neighbor-set.md)
 
 ## Sources
 

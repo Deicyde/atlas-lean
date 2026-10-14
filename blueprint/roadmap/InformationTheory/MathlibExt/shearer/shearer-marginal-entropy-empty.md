@@ -13,7 +13,12 @@ The empty marginal has entropy `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shearer Marginal Entropy](shearer-marginal-entropy.md)
+
+## Proof depends on
+
+- [Shearer Marginal](shearer-marginal.md)
+- [Shearer Marginal sum](shearer-marginal-sum.md)
 
 ## Sources
 

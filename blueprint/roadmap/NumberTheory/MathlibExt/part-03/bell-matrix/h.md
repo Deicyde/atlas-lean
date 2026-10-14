@@ -12,7 +12,7 @@ The second component `X * g` of the Riordan-array pair represented by `M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bell Matrix](bell-matrix.md)
 
 ## Sources
 

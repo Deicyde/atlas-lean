@@ -18,6 +18,11 @@ no basis is needed when the lattice `M` is reflexive as an `A`-module.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dual Submodule Linear Equiv](../dual-lattice/dual-submodule-linear-equiv.md)
+- [Dual Submodule span eq top](../dual-lattice/dual-submodule-span-eq-top.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.BilinearForm.DualLatticeReflexive](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ Zero is never `k`-full: the source works with positive naturals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KFull](is-kfull.md)
 
 ## Sources
 

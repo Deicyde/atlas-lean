@@ -15,6 +15,10 @@ converges. This is now a theorem, with a separately cited formal proof.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [In A](in-a.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.DivisorSumReciprocalConvergenceWanted](../../../../../sources/v2/WantedExt.md)

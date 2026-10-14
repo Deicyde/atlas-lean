@@ -13,7 +13,8 @@ A key is stored exactly when it lies in some group.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grouped YFast Trie](grouped-yfast-trie.md)
+- [Contents](contents.md)
 
 ## Sources
 

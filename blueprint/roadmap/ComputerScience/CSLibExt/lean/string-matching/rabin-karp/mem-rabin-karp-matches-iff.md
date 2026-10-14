@@ -13,7 +13,14 @@ An offset is reported exactly when the canonical pattern match holds there.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Match At](../basic/match-at.md)
+- [Rabin Karp Matches](rabin-karp-matches.md)
+
+## Proof depends on
+
+- [Mem naive Matches iff](../naive/mem-naive-matches-iff.md)
+- [Naive Matches](../naive/naive-matches.md)
+- [Rabin Karp Matches ret eq naive Matches](rabin-karp-matches-ret-eq-naive-matches.md)
 
 ## Sources
 

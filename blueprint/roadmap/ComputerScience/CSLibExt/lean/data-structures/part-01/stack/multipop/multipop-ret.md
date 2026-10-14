@@ -13,7 +13,7 @@ The timed loop removes exactly the requested prefix, stopping at empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multipop](multipop.md)
 
 ## Sources
 

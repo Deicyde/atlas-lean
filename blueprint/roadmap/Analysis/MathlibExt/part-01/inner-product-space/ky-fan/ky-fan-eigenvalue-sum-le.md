@@ -13,7 +13,7 @@ Sum of k largest eigenvalues of A+B is at most sum for A plus sum for B.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eig Pref Sum](eig-pref-sum.md)
 
 ## Sources
 

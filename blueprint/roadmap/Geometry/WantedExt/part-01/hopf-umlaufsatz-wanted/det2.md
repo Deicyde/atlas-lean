@@ -12,7 +12,7 @@ The planar determinant / signed area form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
 
 ## Sources
 

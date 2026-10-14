@@ -13,7 +13,7 @@ The empty instance performs initialization but no candidate evaluation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Optimal BST](../basic/optimal-bst.md)
 
 ## Sources
 

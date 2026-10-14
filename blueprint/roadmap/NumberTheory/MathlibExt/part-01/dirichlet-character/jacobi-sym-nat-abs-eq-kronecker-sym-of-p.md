@@ -23,7 +23,11 @@ reused from `kroneckerSym_eq_jacobiSym_of_prime_ne_two`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kronecker Sym](quadratic/kronecker-sym.md)
+
+## Proof depends on
+
+- [Quadratic Character Aux](kronecker-sym-eq-jacobi-sym-of-prime-ne.md)
 
 ## Sources
 

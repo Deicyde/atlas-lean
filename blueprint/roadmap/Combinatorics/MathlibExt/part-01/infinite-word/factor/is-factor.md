@@ -14,6 +14,10 @@ A finite list occurs as a contiguous factor of a right-infinite word.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Factor List](factor-list.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.Factor](../../../../../../sources/v2/MathlibExt.md)

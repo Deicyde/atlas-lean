@@ -13,7 +13,15 @@ The total event count is the split count plus the reconstructed-tree size.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../basic/cost.md)
+- [Total](../basic/total.md)
+- [Result](../basic/result.md)
+- [Matrix Chain Order](matrix-chain-order.md)
+
+## Proof depends on
+
+- [Matrix Chain Order candidate Evaluations](matrix-chain-order-candidate-evaluations.md)
+- [Matrix Chain Order reconstruction Nodes](matrix-chain-order-reconstruction-nodes.md)
 
 ## Sources
 

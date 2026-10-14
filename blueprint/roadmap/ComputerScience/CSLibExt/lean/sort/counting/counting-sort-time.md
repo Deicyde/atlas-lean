@@ -13,7 +13,7 @@ Counting sort uses at most `7 * n + 3 * k` charged operations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Counting Sort](counting-sort.md)
 
 ## Sources
 

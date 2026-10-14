@@ -14,7 +14,12 @@ Hat `M32` partition number array entry. Concept
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Multiplicity](partition-multiplicity.md)
+
+## Proof depends on
+
+- [Array Pow Prod](array-pow-prod.md)
+- [Gen Stirling Second](gen-stirling-second.md)
 
 ## Sources
 

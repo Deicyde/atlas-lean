@@ -20,7 +20,11 @@ Proof: Following Dil, Kurt, and Cenkci, Proposition 5, the proof is induction on
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Stirling Second](../../part-03/generalized-stirling-numbers/generalized-stirling-second.md)
+
+## Proof depends on
+
+- [Chen stirling Second expansion](chen-stirling-second-expansion.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Away from its pole `s`, the principal part is analytic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Principal Part](principal-part.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Dual submodules commute with orthogonal products of bilinear forms.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prod](prod.md)
 
 ## Sources
 

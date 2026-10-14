@@ -13,7 +13,8 @@ lean: Cslib.Algorithms.Lean.BinarySearchTree.select_eq_getElem?_inorder
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inorder](../part-01/inorder.md)
+- [Select](../part-01/select.md)
 
 ## Sources
 

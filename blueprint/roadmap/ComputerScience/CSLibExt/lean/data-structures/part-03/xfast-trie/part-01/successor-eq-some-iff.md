@@ -13,7 +13,8 @@ The successor is `some y` exactly when `y` is the least stored key above `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [XFast Trie](xfast-trie.md)
+- [Successor](successor.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ Infinite chromatic number forces divergent odd-cycle reciprocal sums.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Odd Cycle Lengths](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-01/circumference/odd-cycle-lengths.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.ErdosProblem57Wanted](../../../../sources/v2/WantedExt.md)

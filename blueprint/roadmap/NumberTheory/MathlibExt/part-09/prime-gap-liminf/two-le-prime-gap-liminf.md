@@ -13,7 +13,12 @@ The elementary lower bound for the least recurring prime gap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Gap Liminf](prime-gap-liminf.md)
+
+## Proof depends on
+
+- [Two le prime Gap](two-le-prime-gap.md)
+- [Prime Gap](../prime-gap.md)
 
 ## Sources
 

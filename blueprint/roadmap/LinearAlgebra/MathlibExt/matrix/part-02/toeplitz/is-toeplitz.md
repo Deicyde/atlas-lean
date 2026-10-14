@@ -13,7 +13,8 @@ Every symmetric Toeplitz matrix is Toeplitz (forget the symmetry).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Symmetric Toeplitz Matrix](is-symmetric-toeplitz-matrix.md)
+- [Is Toeplitz Matrix](is-toeplitz-matrix.md)
 
 ## Sources
 

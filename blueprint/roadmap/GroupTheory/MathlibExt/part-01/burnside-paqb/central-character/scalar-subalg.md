@@ -14,6 +14,12 @@ The ℤ-span of the central scalars, as a subalgebra.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Central Scalar](central-scalar.md)
+- [Scalar Gens](scalar-gens.md)
+- [Scalar Gens mul](scalar-gens-mul.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.CentralCharacter](../../../../../../sources/v2/MathlibExt.md)

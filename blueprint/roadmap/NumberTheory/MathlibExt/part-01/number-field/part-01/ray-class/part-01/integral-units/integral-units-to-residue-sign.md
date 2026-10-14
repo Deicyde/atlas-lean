@@ -14,6 +14,10 @@ Transported residue-sign endpoint map.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integral Units To Ray Quotient](integral-units-to-ray-quotient.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.IntegralUnits](../../../../../../../../../sources/v2/MathlibExt.md)

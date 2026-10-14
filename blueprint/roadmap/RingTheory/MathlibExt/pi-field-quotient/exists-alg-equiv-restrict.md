@@ -16,6 +16,15 @@ coordinate restriction to a subfamily, up to `K`-algebra equivalence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mem ker iff](mem-ker-iff.md)
+- [Mem ker restrict iff](mem-ker-restrict-iff.md)
+- [Mem selected](mem-selected.md)
+- [Restrict](restrict.md)
+- [Restrict surjective](restrict-surjective.md)
+- [Selected](selected.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.PiFieldQuotient](../../../../sources/v2/MathlibExt.md)

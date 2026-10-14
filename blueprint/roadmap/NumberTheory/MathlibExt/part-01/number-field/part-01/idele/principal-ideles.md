@@ -12,7 +12,14 @@ The subgroup of principal ideles, namely the image of the diagonal embedding.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Idele Group](finite-idele-group.md)
+- [Infinite Idele Group](infinite-idele-group.md)
+- [Topological Idele Group](topological-idele-group.md)
+- [Local Integral Unit Subgroup](local-integral-unit-subgroup.md)
+
+## Proof depends on
+
+- [Principal Embedding](principal-embedding.md)
 
 ## Sources
 

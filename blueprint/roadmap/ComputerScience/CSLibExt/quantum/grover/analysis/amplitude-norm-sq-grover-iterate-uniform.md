@@ -13,7 +13,11 @@ Grover iteration preserves normalization of the uniform initial state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grover Iterate](grover-iterate.md)
+
+## Proof depends on
+
+- [Amplitude Norm Sq grover Iterate](amplitude-norm-sq-grover-iterate.md)
 
 ## Sources
 

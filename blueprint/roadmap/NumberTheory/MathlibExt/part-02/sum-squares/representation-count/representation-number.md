@@ -14,6 +14,10 @@ Number of ordered signed representations of `n` as `k` squares.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Solutions](solutions.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SumSquares.RepresentationCount](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ A vertex outside `D` is sent to the contraction vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Collapse Outside](collapse-outside.md)
 
 ## Sources
 

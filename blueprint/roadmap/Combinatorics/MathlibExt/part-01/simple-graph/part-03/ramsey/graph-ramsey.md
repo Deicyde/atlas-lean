@@ -18,6 +18,10 @@ total independently of that fact because `sInf` on `ℕ` is total.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Classical Ramsey](classical-ramsey.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Ramsey](../../../../../../../sources/v2/MathlibExt.md)

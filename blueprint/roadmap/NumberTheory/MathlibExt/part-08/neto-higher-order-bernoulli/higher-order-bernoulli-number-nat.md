@@ -14,7 +14,7 @@ corresponding natural power of the Bernoulli generating series.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Higher Order Bernoulli Number](higher-order-bernoulli-number.md)
 
 ## Sources
 

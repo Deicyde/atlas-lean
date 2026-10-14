@@ -13,7 +13,7 @@ The local factor at exponent `0` is `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter5 Entry30 Local Coeff](chapter5-entry30-local-coeff.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Every key other than the split key survives into one of the parts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
+- [Split](split.md)
 
 ## Sources
 

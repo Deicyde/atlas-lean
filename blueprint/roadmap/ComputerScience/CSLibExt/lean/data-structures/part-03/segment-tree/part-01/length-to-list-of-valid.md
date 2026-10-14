@@ -13,7 +13,15 @@ In a valid tree the cached size is the length of the leaf list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Segment Tree](segment-tree.md)
+- [Valid](valid.md)
+- [Size](size.md)
+- [To List](to-list.md)
+
+## Proof depends on
+
+- [Agg](agg.md)
+- [To List node](to-list-node.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ Search agrees with `List.find?` over the represented identities.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../part-01/node.md)
+- [Represents](../part-01/represents.md)
+- [Search](search.md)
+
+## Proof depends on
+
+- [Represents length le capacity](represents-length-le-capacity.md)
+- [Search Aux eq find?](search-aux-eq-find.md)
 
 ## Sources
 

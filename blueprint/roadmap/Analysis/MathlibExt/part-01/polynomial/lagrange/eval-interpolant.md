@@ -14,6 +14,10 @@ Lagrange interpolant `𝓛ⁿf(t) = ∑ₖ f(xₖ) * lₖ(t)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eval Basis](eval-basis.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Polynomial.Lagrange](../../../../../../sources/v2/MathlibExt.md)

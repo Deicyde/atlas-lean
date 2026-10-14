@@ -13,7 +13,12 @@ Every edge of the accessed root path is preferred after `access x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [State](../part-03/state.md)
+- [Access](access.md)
+- [Find Tree](../part-01/find-tree.md)
+- [Path Edges](../part-02/path-edges.md)
+- [Root Path](../part-02/root-path.md)
 
 ## Sources
 

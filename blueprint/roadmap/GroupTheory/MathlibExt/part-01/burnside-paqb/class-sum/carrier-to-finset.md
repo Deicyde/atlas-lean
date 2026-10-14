@@ -13,7 +13,7 @@ The carrier finset of a class is the conjugacy class of its representative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Class Rep](class-rep.md)
 
 ## Sources
 

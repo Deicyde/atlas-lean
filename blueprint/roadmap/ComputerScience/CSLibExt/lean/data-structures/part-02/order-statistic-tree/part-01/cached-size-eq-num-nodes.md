@@ -13,7 +13,10 @@ A correct root cache equals the canonical number of nodes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Correct](cache-correct.md)
+- [Entry](entry.md)
+- [Tree](tree.md)
+- [Cached Size](cached-size.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ lean: MathlibExt.NumberTheory.BreuschWanted.Internal.N10_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [N10m](n10m.md)
+- [Q9](../../grid/part-01/q9.md)
 
 ## Sources
 

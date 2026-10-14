@@ -13,7 +13,7 @@ Every Fibonacci factorial is strictly positive as a rational.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Factorial](fibonacci-factorial.md)
 
 ## Sources
 

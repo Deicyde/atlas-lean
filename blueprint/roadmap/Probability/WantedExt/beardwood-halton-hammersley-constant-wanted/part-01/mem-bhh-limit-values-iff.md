@@ -13,7 +13,9 @@ Membership in `bhhLimitValues` unfolds to the generic BHH characterization.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is BHHConstant For](is-bhhconstant-for.md)
+- [Planar Point](planar-point.md)
+- [Bhh Limit Values](bhh-limit-values.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The total weight of all leaves.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](huffman-tree.md)
 
 ## Sources
 

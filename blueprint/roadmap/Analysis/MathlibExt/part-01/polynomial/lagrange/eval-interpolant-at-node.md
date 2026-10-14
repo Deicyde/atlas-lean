@@ -13,7 +13,13 @@ For injective nodes, the Lagrange interpolant agrees with the sampled function a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eval Interpolant](eval-interpolant.md)
+
+## Proof depends on
+
+- [Eval Basis](eval-basis.md)
+- [Eval Basis of ne](eval-basis-of-ne.md)
+- [Eval Basis self](eval-basis-self.md)
 
 ## Sources
 

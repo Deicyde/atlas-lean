@@ -12,7 +12,13 @@ Semicircle on the hypotenuse, on the side of the right-angle vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
+
+## Proof depends on
+
+- [B](b.md)
+- [C](c.md)
+- [Closed Half Disk](closed-half-disk.md)
 
 ## Sources
 

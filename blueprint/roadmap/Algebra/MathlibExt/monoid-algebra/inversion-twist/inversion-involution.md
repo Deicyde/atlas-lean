@@ -13,7 +13,7 @@ Applying the group-ring inversion twice is the identity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inversion](inversion.md)
 
 ## Sources
 

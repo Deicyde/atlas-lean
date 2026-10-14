@@ -12,7 +12,7 @@ Lexicographic sorting key `(weight, input ordinal)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Edge](weighted-edge.md)
 
 ## Sources
 

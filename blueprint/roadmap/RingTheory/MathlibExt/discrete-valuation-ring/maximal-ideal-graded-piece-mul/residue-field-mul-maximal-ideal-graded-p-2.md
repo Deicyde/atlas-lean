@@ -16,7 +16,8 @@ quotient.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Ideal Graded Piece](../maximal-ideal-graded-piece/maximal-ideal-graded-piece.md)
+- [Residue Field Mul Maximal Ideal Graded Piece](residue-field-mul-maximal-ideal-graded-p.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Triangular specialization `p_3(n) = n * (n + 1) / 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polygonal Number](polygonal-number.md)
 
 ## Sources
 

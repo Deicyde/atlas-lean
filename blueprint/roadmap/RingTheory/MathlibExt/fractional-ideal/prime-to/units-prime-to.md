@@ -14,6 +14,13 @@ The subgroup of invertible fractional ideals prime to J.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Prime To](is-prime-to.md)
+- [Inv unit](inv-unit.md)
+- [Mul](mul.md)
+- [Is Prime To one](is-prime-to-one.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.FractionalIdeal.PrimeTo](../../../../../sources/v2/MathlibExt.md)

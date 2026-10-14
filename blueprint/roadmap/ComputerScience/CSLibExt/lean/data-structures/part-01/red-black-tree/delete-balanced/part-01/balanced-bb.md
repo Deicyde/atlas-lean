@@ -13,7 +13,7 @@ a genuine tree, and balance of the two children for a double-black node.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BBTree](bbtree.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: MathlibExt.Dynamics.AMR43Problem1Wanted.AperiodicX
 
 ## Depends on
 
-This node has no prerequisites.
+- [X](x.md)
+
+## Proof depends on
+
+- [Unit Shift](../../MathlibExt/symbolic-dynamics/full-shift/unit-shift.md)
 
 ## Sources
 

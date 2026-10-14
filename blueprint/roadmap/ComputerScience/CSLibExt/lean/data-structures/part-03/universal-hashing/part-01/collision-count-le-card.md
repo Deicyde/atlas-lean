@@ -13,7 +13,7 @@ The collision count never exceeds the size of the family.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Collision Count](collision-count.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ A zero-step run returns the full pure input, with zero accumulated cost.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run](run.md)
 
 ## Sources
 

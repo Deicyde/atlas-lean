@@ -15,6 +15,10 @@ has at least `h * |S|` neighbours outside `S`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [External Neighbor Set](external-neighbor-set.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Expander](../../../../../../../sources/v2/MathlibExt.md)

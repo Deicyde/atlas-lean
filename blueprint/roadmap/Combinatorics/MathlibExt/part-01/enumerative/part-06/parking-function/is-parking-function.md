@@ -15,6 +15,10 @@ many cars and spots.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Partial Parking Function](is-partial-parking-function.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.ParkingFunction](../../../../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,7 @@ dividing `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lowbit](lowbit.md)
 
 ## Sources
 

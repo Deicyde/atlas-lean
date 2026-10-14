@@ -12,7 +12,7 @@ Remove and return the front element, or `none` when the deque is empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Deque](deque.md)
 
 ## Sources
 

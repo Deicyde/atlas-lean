@@ -16,7 +16,11 @@ already realize every pair of tangent vectors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
+
+## Proof depends on
+
+- [Nijenhuis](nijenhuis.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ The tautological vertex coloring is centered.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Centered](is-centered.md)
+
+## Proof depends on
+
+- [Is Centered of injective](is-centered-of-injective.md)
 
 ## Sources
 

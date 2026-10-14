@@ -14,7 +14,12 @@ depth-based predicate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
+
+## Proof depends on
+
+- [Is Admissible](../index/is-admissible.md)
+- [Entries](../index/entries.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ Nothing succeeds in the empty trie.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empty](empty.md)
+- [Successor](successor.md)
+
+## Proof depends on
+
+- [Contents](contents.md)
+- [Successor eq none iff](successor-eq-none-iff.md)
+- [Valid empty](valid-empty.md)
 
 ## Sources
 

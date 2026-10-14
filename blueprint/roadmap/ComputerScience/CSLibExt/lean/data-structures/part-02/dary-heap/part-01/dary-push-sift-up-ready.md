@@ -13,7 +13,14 @@ Appending to an ordered heap creates only the new entry's incoming-edge violatio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Heap Ordered](dary-heap-ordered.md)
+- [Dary Sift Up Ready](dary-sift-up-ready.md)
+
+## Proof depends on
+
+- [Dary Parent](dary-parent.md)
+- [Dary Parent lt](dary-parent-lt.md)
+- [Dary Parent lt size](dary-parent-lt-size.md)
 
 ## Sources
 

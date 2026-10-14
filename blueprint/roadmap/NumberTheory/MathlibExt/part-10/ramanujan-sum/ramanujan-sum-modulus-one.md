@@ -13,7 +13,7 @@ Every Ramanujan sum of modulus one equals one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ramanujan Sum](ramanujan-sum.md)
 
 ## Sources
 

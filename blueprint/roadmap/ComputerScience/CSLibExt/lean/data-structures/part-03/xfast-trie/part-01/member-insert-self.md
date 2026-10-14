@@ -15,7 +15,14 @@ directly into the deepest level that `member` probes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [XFast Trie](xfast-trie.md)
+- [Insert](insert.md)
+- [Member](member.md)
+
+## Proof depends on
+
+- [Has Prefix](has-prefix.md)
+- [Prefix Of](prefix-of.md)
 
 ## Sources
 

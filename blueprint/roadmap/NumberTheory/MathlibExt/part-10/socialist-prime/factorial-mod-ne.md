@@ -14,7 +14,7 @@ have distinct factorial residues mod `p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Socialist Prime](is-socialist-prime.md)
 
 ## Sources
 

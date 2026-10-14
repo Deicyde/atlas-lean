@@ -13,7 +13,11 @@ The trinomial transform of the zero sequence is zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Transform Sequence](trinomial-transform-sequence.md)
+
+## Proof depends on
+
+- [Trinomial Coefficient](../trinomial-coefficient.md)
 
 ## Sources
 

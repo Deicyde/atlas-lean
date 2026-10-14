@@ -14,6 +14,10 @@ Dequeues one value, retaining the input queue when it is empty.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dequeue Cost](dequeue-cost.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.Queue.Amortized](../../../../../../../../sources/v2/CSLibExt.md)

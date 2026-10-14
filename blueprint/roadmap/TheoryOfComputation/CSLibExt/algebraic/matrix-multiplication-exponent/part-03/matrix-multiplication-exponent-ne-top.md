@@ -13,7 +13,11 @@ The actual admissible family is nonempty and its infimum is finite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matrix Multiplication Exponent](../part-02/matrix-multiplication-exponent.md)
+
+## Proof depends on
+
+- [Matrix Multiplication Exponent le three](../part-02/matrix-multiplication-exponent-le-three.md)
 
 ## Sources
 

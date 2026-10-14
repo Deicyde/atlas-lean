@@ -13,7 +13,7 @@ Two strict total orders with the same relation are equal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strict Total Order](strict-total-order.md)
 
 ## Sources
 

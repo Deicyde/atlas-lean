@@ -14,6 +14,10 @@ Initialize an unknown cache and invoke the memoized auxiliary on the whole rod.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Memoized Cut Rod Aux](memoized-cut-rod-aux.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.RodCuttingMemoized](../../../../../../sources/v2/CSLibExt.md)

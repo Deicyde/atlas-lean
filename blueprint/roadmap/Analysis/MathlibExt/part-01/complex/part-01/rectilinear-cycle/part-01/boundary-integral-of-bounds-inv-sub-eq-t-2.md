@@ -14,7 +14,17 @@ A positively oriented rectangle has Cauchy-kernel boundary integral
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boundary Integral](boundary-integral.md)
+- [Of Bounds](of-bounds.md)
+
+## Proof depends on
+
+- [Rectilinear Rectangle](rectilinear-rectangle.md)
+- [Boundary Integral inv sub eq zero of not mem carrier](boundary-integral-inv-sub-eq-zero-of-not.md)
+- [Boundary Integral of Bounds horizontal concat](boundary-integral-of-bounds-horizontal-c.md)
+- [Boundary Integral of Bounds inv eq two pi mul I](boundary-integral-of-bounds-inv-eq-two-p.md)
+- [Boundary Integral of Bounds inv sub eq translate](boundary-integral-of-bounds-inv-sub-eq-t.md)
+- [Carrier](carrier.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ of `Pi.single`, following the identity-element argument in Terras, Ch. 1.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conv](conv.md)
 
 ## Sources
 

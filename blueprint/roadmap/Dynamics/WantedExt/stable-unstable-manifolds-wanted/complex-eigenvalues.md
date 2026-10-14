@@ -12,7 +12,7 @@ Multiset of complex eigenvalues of `L : ℝⁿ →L[ℝ] ℝⁿ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
 
 ## Sources
 

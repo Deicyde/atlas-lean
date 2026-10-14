@@ -15,6 +15,10 @@ recursively.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [All](../binary-search-tree/part-01/all.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.CartesianTree](../../../../../../../sources/v2/CSLibExt.md)

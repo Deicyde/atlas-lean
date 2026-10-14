@@ -13,7 +13,12 @@ The complete `r`-graph is a Turan system under the parameter bounds.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Turan System](is-turan-system.md)
+- [Complete Graph](complete-graph.md)
+
+## Proof depends on
+
+- [Complete Graph uniform](complete-graph-uniform.md)
 
 ## Sources
 

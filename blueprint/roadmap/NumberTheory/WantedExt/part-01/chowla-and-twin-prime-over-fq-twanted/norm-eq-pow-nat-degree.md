@@ -15,6 +15,11 @@ The norm of a nonzero `f ∈ F[T]` is `|F| ^ deg(f)`; see Equation (1.1) in the 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Card Quot span eq pow nat Degree](card-quot-span-eq-pow-nat-degree.md)
+- [Norm eq card Quot](norm-eq-card-quot.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted](../../../../../sources/v2/WantedExt.md)

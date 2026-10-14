@@ -14,7 +14,7 @@ measurable sets `A, B`, the Cesàro average of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Automorphism](automorphism.md)
 
 ## Sources
 

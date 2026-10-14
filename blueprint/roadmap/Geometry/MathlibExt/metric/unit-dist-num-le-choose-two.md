@@ -14,7 +14,11 @@ the total number of unordered pairs of distinct points.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit Dist Num](unit-dist-num.md)
+
+## Proof depends on
+
+- [Distance Multiplicity](distance-multiplicity.md)
 
 ## Sources
 

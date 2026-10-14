@@ -12,7 +12,7 @@ Lookup by logical position; positions at or beyond `num` return `none`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](../basic/part-01/table.md)
 
 ## Sources
 

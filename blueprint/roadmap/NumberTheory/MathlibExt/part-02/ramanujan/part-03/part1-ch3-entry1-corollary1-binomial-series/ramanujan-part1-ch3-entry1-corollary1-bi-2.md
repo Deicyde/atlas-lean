@@ -17,6 +17,10 @@ Proves `Wanted` entry `ramanujan_part1_ch3_entry1_corollary1_binomial_series`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ramanujan part1 ch3 entry1 corollary1 binomial series general](ramanujan-part1-ch3-entry1-corollary1-bi.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry1Corollary1BinomialSeries](../../../../../../../sources/v2/MathlibExt.md)

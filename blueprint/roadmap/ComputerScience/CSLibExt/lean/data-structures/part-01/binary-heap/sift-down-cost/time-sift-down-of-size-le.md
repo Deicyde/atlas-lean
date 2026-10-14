@@ -13,7 +13,11 @@ An invalid index incurs no sift-down events.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sift Down](sift-down.md)
+
+## Proof depends on
+
+- [Time sift Down of heap Left ge](time-sift-down-of-heap-left-ge.md)
 
 ## Sources
 

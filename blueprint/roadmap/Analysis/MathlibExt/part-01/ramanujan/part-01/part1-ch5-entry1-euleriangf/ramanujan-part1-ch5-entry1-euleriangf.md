@@ -14,7 +14,7 @@ Proves `Wanted` entry `ramanujan_part1_ch5_entry1_euleriangf`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter5 Polynomial Shift](chapter5-polynomial-shift.md)
 
 ## Sources
 

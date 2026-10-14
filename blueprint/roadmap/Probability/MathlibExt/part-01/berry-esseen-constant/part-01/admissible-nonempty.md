@@ -13,7 +13,11 @@ The optimized family is genuinely nonempty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible](is-admissible.md)
+
+## Proof depends on
+
+- [Is Admissible forty Two](is-admissible-forty-two.md)
 
 ## Sources
 

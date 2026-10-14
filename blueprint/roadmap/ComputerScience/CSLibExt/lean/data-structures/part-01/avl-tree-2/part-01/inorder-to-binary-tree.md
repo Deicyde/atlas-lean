@@ -14,7 +14,9 @@ traversal of its cache-erased tree, by definition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+- [Inorder](inorder.md)
+- [To Binary Tree](to-binary-tree.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ deleted node together with `join`. Colors are kept, but `RedOk` and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Join](join.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.RedBlackTree.Delete](../../../../../../../../sources/v2/CSLibExt.md)

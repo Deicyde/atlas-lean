@@ -13,7 +13,11 @@ Its third absolute moment is exactly one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Symmetric Bernoulli Law](../part-01/symmetric-bernoulli-law.md)
+
+## Proof depends on
+
+- [Symmetric Bernoulli integral](symmetric-bernoulli-integral.md)
 
 ## Sources
 

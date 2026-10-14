@@ -15,6 +15,10 @@ three symbols.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Full Shift Space](../../MathlibExt/symbolic-dynamics/full-shift/full-shift-space.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Dynamics.AMR43Problem1Wanted](../../../../sources/v2/WantedExt.md)

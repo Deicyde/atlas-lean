@@ -13,7 +13,7 @@ Restricting the vertex set preserves degeneracy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Degenerate On](is-degenerate-on.md)
 
 ## Sources
 

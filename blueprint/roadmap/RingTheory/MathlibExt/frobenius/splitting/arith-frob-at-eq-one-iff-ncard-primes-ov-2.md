@@ -16,6 +16,11 @@ prime with finite residue field.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Arith Frob At eq one iff ncard primes Over eq card of generates](arith-frob-at-eq-one-iff-ncard-primes-ov.md)
+- [Arith Frob At generates stabilizer of is Unramified At](arith-frob-at-generates-stabilizer-of-is.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Frobenius.Splitting](../../../../../sources/v2/MathlibExt.md)

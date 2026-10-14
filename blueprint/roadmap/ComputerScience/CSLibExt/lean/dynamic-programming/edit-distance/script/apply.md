@@ -12,7 +12,11 @@ Execute a script, rejecting a stored source value that does not match the next i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edit Script](edit-script.md)
+
+## Proof depends on
+
+- [Edit Step](edit-step.md)
 
 ## Sources
 

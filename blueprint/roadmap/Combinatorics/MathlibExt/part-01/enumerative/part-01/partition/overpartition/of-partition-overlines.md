@@ -13,7 +13,7 @@ The overlined sizes of `ofPartition p` are empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Of Partition](of-partition.md)
 
 ## Sources
 

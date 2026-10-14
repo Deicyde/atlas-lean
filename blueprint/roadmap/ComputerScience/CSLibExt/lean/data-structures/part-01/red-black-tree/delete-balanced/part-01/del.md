@@ -14,7 +14,14 @@ successor, the minimum key of its right subtree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BBTree](bbtree.md)
+
+## Proof depends on
+
+- [Bal Left](bal-left.md)
+- [Bal Right](bal-right.md)
+- [Incr Black](incr-black.md)
+- [Min Key](min-key.md)
 
 ## Sources
 

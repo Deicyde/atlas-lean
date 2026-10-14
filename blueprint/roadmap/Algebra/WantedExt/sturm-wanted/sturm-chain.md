@@ -16,6 +16,10 @@ entry.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sturm Aux](sturm-aux.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Algebra.SturmWanted](../../../../sources/v2/WantedExt.md)

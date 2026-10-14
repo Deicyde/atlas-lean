@@ -13,7 +13,12 @@ The signed integral polynomial has the degree of the rational minimal polynomial
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positive Primitive Int Minpoly](positive-primitive-int-minpoly.md)
+
+## Proof depends on
+
+- [Positive Primitive Int Minpoly nat Degree](positive-primitive-int-minpoly-nat-degre.md)
+- [Absolute](../primitive-int-minpoly.md)
 
 ## Sources
 

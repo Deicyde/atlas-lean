@@ -16,7 +16,16 @@ final dimensions exactly.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gaussian Partition](gaussian-partition.md)
+
+## Proof depends on
+
+- [Block](block.md)
+- [Branch Step](branch-step.md)
+- [Branch Valid](branch-valid.md)
+- [Basic Count](basic-count.md)
+- [Block Final Dims](block-final-dims.md)
+- [Stage Segments](stage-segments.md)
 
 ## Sources
 

@@ -15,7 +15,17 @@ extension vanish. This connects `booleanDegree` to `MultilinearDegreeLE`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](../part-01/bool-cube.md)
+- [Multilinear Degree LE](../part-01/multilinear-degree-le.md)
+- [Boolean Degree](boolean-degree.md)
+
+## Proof depends on
+
+- [Bool Fourier Coeff](../part-01/bool-fourier-coeff.md)
+- [Cube Chi](../part-01/cube-chi.md)
+- [Cube Val](../part-01/cube-val.md)
+- [Eval multilinear Extension](eval-multilinear-extension.md)
+- [Multilinear Extension](../part-01/multilinear-extension.md)
 
 ## Sources
 

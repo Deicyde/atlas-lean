@@ -13,7 +13,12 @@ Characterization of the vertices sent to the contraction vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Collapse Outside](collapse-outside.md)
+
+## Proof depends on
+
+- [Collapse Outside of mem](collapse-outside-of-mem.md)
+- [Collapse Outside of not Mem](collapse-outside-of-not-mem.md)
 
 ## Sources
 

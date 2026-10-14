@@ -13,7 +13,7 @@ With index zero the form is the squared norm.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Morse Quadratic](morse-quadratic.md)
 
 ## Sources
 

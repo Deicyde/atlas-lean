@@ -21,6 +21,10 @@ specialization in second-countable real Banach space with `ProbabilityMeasure` c
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Choquet representation of is Compact](choquet-representation-of-is-compact.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Convex.Choquet](../../../../../../sources/v2/MathlibExt.md)

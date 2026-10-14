@@ -16,6 +16,10 @@ array.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bin Search eq some iff](bin-search-eq-some-iff.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Search.Binary](../../../../../../sources/v2/CSLibExt.md)

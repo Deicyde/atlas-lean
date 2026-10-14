@@ -15,7 +15,14 @@ core reduces to membership in some member.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Poisson Ideal](is-poisson-ideal.md)
+- [Poisson Bracket](poisson-bracket.md)
+- [Poisson Core](poisson-core.md)
+
+## Proof depends on
+
+- [Bot poisson](bot-poisson.md)
+- [Sup poisson](sup-poisson.md)
 
 ## Sources
 

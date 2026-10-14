@@ -13,7 +13,8 @@ Every admissible subset has cardinality at most `maxCard`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is APOf Length Free](is-apof-length-free-2.md)
+- [Max Card](max-card.md)
 
 ## Sources
 

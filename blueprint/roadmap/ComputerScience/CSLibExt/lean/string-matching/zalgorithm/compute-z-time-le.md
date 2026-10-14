@@ -13,7 +13,7 @@ In the declared event model, the algorithm uses at most three events per positiv
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compute Z](compute-z.md)
 
 ## Sources
 

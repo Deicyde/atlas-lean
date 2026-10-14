@@ -13,7 +13,7 @@ matrix by an `n` by `p` matrix over `F`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matrix Coordinate](matrix-coordinate.md)
 
 ## Sources
 

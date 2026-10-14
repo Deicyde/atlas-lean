@@ -13,7 +13,13 @@ Overlength patterns return no matches, retaining high-place and attempted Horner
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rabin Karp Matches](rabin-karp-matches.md)
+
+## Proof depends on
+
+- [Naive Matches](../naive/naive-matches.md)
+- [Naive Matches of length lt](../naive/naive-matches-of-length-lt.md)
+- [Rabin Karp Matches ret eq naive Matches](rabin-karp-matches-ret-eq-naive-matches.md)
 
 ## Sources
 

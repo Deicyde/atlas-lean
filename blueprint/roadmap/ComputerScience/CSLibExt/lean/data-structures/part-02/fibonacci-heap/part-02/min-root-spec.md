@@ -14,7 +14,13 @@ every root in the forest.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Root](min-root.md)
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
+- [Root](../part-01/root.md)
+
+## Proof depends on
+
+- [Min Root eq none iff](min-root-eq-none-iff.md)
 
 ## Sources
 

@@ -14,7 +14,11 @@ essential, without it side equality could be vacuous.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Polar Density](has-polar-density.md)
+
+## Proof depends on
+
+- [Partial Dedekind Zeta](../partial-dedekind-zeta.md)
 
 ## Sources
 

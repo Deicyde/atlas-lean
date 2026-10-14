@@ -14,7 +14,11 @@ the input or one less (see `delete_validRoot`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Delete](delete-2.md)
 
 ## Sources
 

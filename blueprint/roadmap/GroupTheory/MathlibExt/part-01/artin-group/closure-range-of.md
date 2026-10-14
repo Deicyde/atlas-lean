@@ -13,7 +13,9 @@ The generators generate the whole Artin group.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Artin Group](artin-group.md)
+- [Of](of.md)
+- [Artin Relations Set](artin-relations-set.md)
 
 ## Sources
 

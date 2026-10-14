@@ -12,7 +12,7 @@ Insert an already allocated node `x` after the allocated node `y`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
 
 ## Sources
 

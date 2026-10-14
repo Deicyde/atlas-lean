@@ -13,7 +13,8 @@ Transparent characterization of the predicate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Integral Factorial Ratio](is-integral-factorial-ratio.md)
+- [Factorial Prod](factorial-prod.md)
 
 ## Sources
 

@@ -15,6 +15,12 @@ Open question of [AMR-022-6028] Problem 6.28: does the Hadamard bound hold for a
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Class S](class-s.md)
+- [Circle Max](circle-max.md)
+- [Hadamard Product](hadamard-product.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HadamardProductCircleBoundWanted](../../../../../sources/v2/WantedExt.md)

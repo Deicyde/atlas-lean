@@ -15,6 +15,10 @@ The consecutive theorem for blocks of length six.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Consecutive five](consecutive-five.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.Conditional](../../../../../../sources/v2/MathlibExt.md)

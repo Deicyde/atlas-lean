@@ -12,7 +12,11 @@ Every left key is smaller and every right key is larger, recursively.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [All Nodes](all-nodes.md)
 
 ## Sources
 

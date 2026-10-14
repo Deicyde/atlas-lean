@@ -15,6 +15,10 @@ A nonconstant `MDiff` map between connected `1`-dimensional complex manifolds is
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Open Map of finrank eq one](is-open-map-of-finrank-eq-one.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.HolomorphicOpenMapping](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ Every singleton set has its point as a center.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Phi Center](is-phi-center.md)
 
 ## Sources
 

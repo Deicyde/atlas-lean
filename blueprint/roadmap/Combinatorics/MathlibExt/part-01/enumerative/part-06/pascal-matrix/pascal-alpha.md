@@ -17,6 +17,10 @@ Concept `jis_sem_0dfae529bb25056055d54002`, statement
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pascal Entry](pascal-entry.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.PascalMatrix](../../../../../../../sources/v2/MathlibExt.md)

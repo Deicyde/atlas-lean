@@ -15,7 +15,7 @@ value-free node remains to be merged into its parent edge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Radix Trie](radix-trie.md)
 
 ## Sources
 

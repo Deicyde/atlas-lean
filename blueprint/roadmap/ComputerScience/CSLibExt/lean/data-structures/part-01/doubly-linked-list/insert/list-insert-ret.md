@@ -13,7 +13,8 @@ Complete carried-store update; no freshness or representation premise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../basic/node.md)
+- [List Insert](list-insert.md)
 
 ## Sources
 

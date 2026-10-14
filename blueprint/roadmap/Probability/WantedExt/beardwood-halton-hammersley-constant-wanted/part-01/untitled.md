@@ -14,6 +14,10 @@ The source notation `β_2`, definitionally equal to the real BHH constant.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Beardwood Halton Hammersley Constant](beardwood-halton-hammersley-constant.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Probability.BeardwoodHaltonHammersleyConstantWanted](../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,14 @@ Quicksort uses at most `n * (n - 1) / 2` comparisons on a list of length `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quick Sort](quick-sort.md)
+
+## Proof depends on
+
+- [Three Way Partition](../partition/three-way-partition.md)
+- [Partition3](../partition/partition3.md)
+- [Partition3 length](../partition/partition3-length.md)
+- [Partition3 time](../partition/partition3-time.md)
 
 ## Sources
 

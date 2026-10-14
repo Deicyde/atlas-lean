@@ -13,7 +13,11 @@ The same run performs `n²` initialization assignments and `n³` transition assi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transitive Closure](transitive-closure.md)
+
+## Proof depends on
+
+- [Transitive Closure Stages](transitive-closure-stages.md)
 
 ## Sources
 

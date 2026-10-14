@@ -13,7 +13,7 @@ The local Hadamard predicate coincides with Mathlib's `Matrix.IsHadamard`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Hadamard Matrix](is-hadamard-matrix.md)
 
 ## Sources
 

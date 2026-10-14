@@ -12,7 +12,11 @@ Membership by a single probe of the deepest level, as in the classical structure
 
 ## Depends on
 
-This node has no prerequisites.
+- [XFast Trie](xfast-trie.md)
+
+## Proof depends on
+
+- [Has Prefix](has-prefix.md)
 
 ## Sources
 

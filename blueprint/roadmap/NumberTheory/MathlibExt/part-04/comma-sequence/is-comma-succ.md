@@ -16,6 +16,10 @@ earliest next value (source lines 183-193, concept `jis_term_0c062437479f9d4e43d
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Comma Candidate](is-comma-candidate.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.CommaSequence](../../../../../sources/v2/MathlibExt.md)

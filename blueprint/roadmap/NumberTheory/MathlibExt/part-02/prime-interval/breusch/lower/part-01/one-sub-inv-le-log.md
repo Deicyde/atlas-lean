@@ -15,6 +15,10 @@ Logarithm lower bound `1 - 1 / t ≤ log t` for `t ≥ 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exp le inv one sub](exp-le-inv-one-sub.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Lower](../../../../../../../../sources/v2/MathlibExt.md)

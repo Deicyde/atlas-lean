@@ -14,7 +14,7 @@ alter the semantics of the sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sum NE](sum-ne.md)
 
 ## Sources
 

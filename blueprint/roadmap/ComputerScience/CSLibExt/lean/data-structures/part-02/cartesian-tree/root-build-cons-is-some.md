@@ -13,7 +13,14 @@ The Cartesian tree of a nonempty list has a root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build](build.md)
+- [Root](root.md)
+
+## Proof depends on
+
+- [Build Fuel](build-fuel.md)
+- [List Min](list-min.md)
+- [Split At First](split-at-first.md)
 
 ## Sources
 

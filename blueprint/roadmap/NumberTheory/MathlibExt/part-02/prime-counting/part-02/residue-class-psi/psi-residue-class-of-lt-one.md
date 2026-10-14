@@ -13,7 +13,7 @@ The residue-class von Mangoldt sum vanishes below one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Psi Residue Class](psi-residue-class.md)
 
 ## Sources
 

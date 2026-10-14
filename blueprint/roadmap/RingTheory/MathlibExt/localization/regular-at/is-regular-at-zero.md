@@ -13,7 +13,11 @@ Zero is regular at every evaluation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Regular At](is-regular-at.md)
+
+## Proof depends on
+
+- [Is Regular At algebra Map](is-regular-at-algebra-map.md)
 
 ## Sources
 

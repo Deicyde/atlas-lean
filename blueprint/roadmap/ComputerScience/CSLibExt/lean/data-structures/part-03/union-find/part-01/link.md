@@ -12,7 +12,15 @@ Link two distinct certified roots, preserving the parent-forest invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
+
+## Proof depends on
+
+- [Equivalent](equivalent.md)
+- [Find](find.md)
+- [Find parent](find-parent.md)
+- [Link Depth](link-depth.md)
+- [Link Parent](link-parent.md)
 
 ## Sources
 

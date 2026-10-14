@@ -13,7 +13,13 @@ A point update at an out-of-range position is the identity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fenwick Tree](../part-01/fenwick-tree.md)
+- [Add](add.md)
+- [Size](../part-01/size.md)
+
+## Proof depends on
+
+- [Lowbit](../part-01/lowbit.md)
 
 ## Sources
 

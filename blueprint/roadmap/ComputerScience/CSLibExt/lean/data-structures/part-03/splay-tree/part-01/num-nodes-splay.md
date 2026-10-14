@@ -13,7 +13,13 @@ Splaying preserves the number of nodes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Splay](splay.md)
+
+## Proof depends on
+
+- [Inorder](../../../part-02/binary-search-tree/part-01/inorder.md)
+- [Num Nodes eq length inorder](../../../part-02/binary-search-tree/part-01/num-nodes-eq-length-inorder.md)
+- [Inorder splay](inorder-splay.md)
 
 ## Sources
 

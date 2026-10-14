@@ -13,7 +13,7 @@ The returned manager is the canonical earliest maximum index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hire Assistant](hire-assistant.md)
 
 ## Sources
 

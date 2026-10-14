@@ -13,7 +13,11 @@ Removing the minimum never increases the height.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Erase Min](erase-min.md)
+
+## Proof depends on
+
+- [Cache Correct erase Min](cache-correct-erase-min.md)
 
 ## Sources
 

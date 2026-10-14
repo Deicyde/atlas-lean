@@ -15,6 +15,10 @@ the extension of `I_k(Z)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ideal Over K](ideal-over-k.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.Affine.DefinedOver](../../../../../sources/v2/MathlibExt.md)

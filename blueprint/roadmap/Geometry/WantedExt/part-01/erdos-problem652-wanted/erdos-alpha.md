@@ -15,6 +15,10 @@ admissible bounds.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Admissible Bound](is-admissible-bound.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.ErdosProblem652Wanted](../../../../../sources/v2/WantedExt.md)

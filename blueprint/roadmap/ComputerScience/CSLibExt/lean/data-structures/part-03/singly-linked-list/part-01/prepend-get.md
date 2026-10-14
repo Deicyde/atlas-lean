@@ -13,7 +13,8 @@ Pointwise effect of prepending: only the cell at `x` changes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
+- [Prepend](prepend.md)
 
 ## Sources
 

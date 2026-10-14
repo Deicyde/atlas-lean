@@ -15,6 +15,10 @@ Mathlib's quotient universal property `MonoidHom.liftOfSurjective`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Free Group To Coprime ker le free Group To Gal ker](free-group-to-coprime-ker-le-free-group.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.ArtinMap](../../../../../../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,14 @@ at length zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Factor](is-factor.md)
+- [Factor Set](factor-set.md)
+
+## Proof depends on
+
+- [Factor](factor.md)
+- [Factor List](factor-list.md)
+- [Is Factor iff exists factor List](is-factor-iff-exists-factor-list.md)
 
 ## Sources
 

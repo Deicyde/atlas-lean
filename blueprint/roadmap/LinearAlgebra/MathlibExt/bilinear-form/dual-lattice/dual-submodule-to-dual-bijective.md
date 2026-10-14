@@ -15,6 +15,10 @@ The pairing map from the dual submodule to the module dual is bijective.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dual Submodule To Dual surjective](dual-submodule-to-dual-surjective.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.BilinearForm.DualLattice](../../../../../sources/v2/MathlibExt.md)

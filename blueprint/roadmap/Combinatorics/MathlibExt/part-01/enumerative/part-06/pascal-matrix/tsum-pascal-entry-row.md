@@ -13,7 +13,7 @@ Summing each finite row first gives the geometric series in `2 * x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pascal Entry](pascal-entry.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The source notation `C_12`, definitionally equal to `β_2`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Β₂](untitled.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Probability.BeardwoodHaltonHammersleyConstantWanted](../../../../../sources/v2/WantedExt.md)

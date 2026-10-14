@@ -16,6 +16,10 @@ Concept `jis_term_6793c0b8b44e37675229ccfc`, source
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hurwitz Entry](hurwitz-entry.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.HurwitzTransform](../../../../sources/v2/MathlibExt.md)

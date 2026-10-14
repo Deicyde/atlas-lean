@@ -16,7 +16,7 @@ vanishes for `n > N`; the lower product never enters.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Hypergeometric Coefficient](generalized-hypergeometric-coefficient.md)
 
 ## Sources
 

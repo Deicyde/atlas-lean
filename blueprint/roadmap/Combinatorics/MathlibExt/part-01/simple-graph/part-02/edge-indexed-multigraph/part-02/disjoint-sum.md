@@ -12,7 +12,7 @@ Disjoint union of two indexed edge sets on the same vertex type.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](../part-01/edge-indexed-multigraph.md)
 
 ## Sources
 

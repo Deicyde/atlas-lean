@@ -13,7 +13,12 @@ The returned array is empty exactly when `gcd a n` does not divide `b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Linear Equation Solver](modular-linear-equation-solver.md)
+
+## Proof depends on
+
+- [Modular Linear Equation Solver length](modular-linear-equation-solver-length.md)
+- [Modular Linear Equation Solver ret](modular-linear-equation-solver-ret.md)
 
 ## Sources
 

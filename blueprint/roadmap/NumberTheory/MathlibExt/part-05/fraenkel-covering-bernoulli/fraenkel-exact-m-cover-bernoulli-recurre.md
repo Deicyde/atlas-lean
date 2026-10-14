@@ -14,7 +14,7 @@ source's `2 ≤ q` is not needed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Cover Multiplicity](../../part-01/covering-system/exact-cover/indexed-cover-multiplicity.md)
 
 ## Sources
 

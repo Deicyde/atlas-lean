@@ -12,7 +12,12 @@ The minimum number of pure summands of an actual finite tensor-product element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trilinear Tensor](trilinear-tensor.md)
+
+## Proof depends on
+
+- [Trilinear Rank](trilinear-rank.md)
+- [Trilinear Tensor Coefficients](trilinear-tensor-coefficients.md)
 
 ## Sources
 

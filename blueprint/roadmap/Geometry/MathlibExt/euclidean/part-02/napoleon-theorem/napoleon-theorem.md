@@ -24,6 +24,10 @@ remaining vertex, stated as the product of the two signed areas being `< 0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Napoleon theorem general](napoleon-theorem-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.NapoleonTheorem](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,14 @@ Strassen's seven actual pure summands compute the `2 × 2` tensor in every chara
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Trilinear Rank At Most](../part-01/has-trilinear-rank-at-most.md)
+- [Matrix Coordinate](../part-01/matrix-coordinate.md)
+- [Square Matrix Multiplication Tensor](square-matrix-multiplication-tensor.md)
+
+## Proof depends on
+
+- [Rank One Trilinear Term](../part-01/rank-one-trilinear-term.md)
+- [Eval](../part-01/eval.md)
 
 ## Sources
 

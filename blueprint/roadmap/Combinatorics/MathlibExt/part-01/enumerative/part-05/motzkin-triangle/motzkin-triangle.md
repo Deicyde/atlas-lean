@@ -14,6 +14,11 @@ The canonical `(n, k)` entry of the Motzkin triangle (OEIS A094531).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Entry](entry.md)
+- [Motzkin Riordan Pair](motzkin-riordan-pair-2.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MotzkinTriangle](../../../../../../../sources/v2/MathlibExt.md)

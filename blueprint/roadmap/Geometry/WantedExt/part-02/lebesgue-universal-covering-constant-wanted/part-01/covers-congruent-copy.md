@@ -12,7 +12,7 @@ A surjective planar isometry carries the entire set `K` into `Ω`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
 
 ## Sources
 

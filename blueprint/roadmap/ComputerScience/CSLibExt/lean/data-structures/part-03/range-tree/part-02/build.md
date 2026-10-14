@@ -15,7 +15,12 @@ a hypothesis on the caller, recorded by `valid_build_of_sorted`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Range Tree](../part-01/range-tree.md)
+
+## Proof depends on
+
+- [Tmax](../part-01/tmax.md)
+- [Tmin](../part-01/tmin.md)
 
 ## Sources
 

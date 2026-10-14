@@ -12,7 +12,11 @@ The actual real function, expressed on the unit torus for normalized Haar Fourie
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torus](torus.md)
+
+## Proof depends on
+
+- [Unit Rescaling](unit-rescaling.md)
 
 ## Sources
 

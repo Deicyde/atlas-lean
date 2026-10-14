@@ -14,7 +14,18 @@ predicate; pruning against the bounding spheres loses no point.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ball Tree](ball-tree.md)
+- [Valid](valid.md)
+- [Dist Sq](dist-sq.md)
+- [Search](search.md)
+- [To List](to-list.md)
+
+## Proof depends on
+
+- [Dist Sq comm](dist-sq-comm.md)
+- [Dist Sq le two mul](dist-sq-le-two-mul.md)
+- [Search Aux](search-aux.md)
+- [To List Aux](to-list-aux.md)
 
 ## Sources
 

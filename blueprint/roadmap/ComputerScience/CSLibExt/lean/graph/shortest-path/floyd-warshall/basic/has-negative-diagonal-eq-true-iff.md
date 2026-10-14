@@ -13,7 +13,7 @@ The Boolean detector is true exactly when some diagonal entry is negative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Negative Diagonal](has-negative-diagonal.md)
 
 ## Sources
 

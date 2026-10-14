@@ -14,6 +14,10 @@ A weak additive basis of some order.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Weak Add Basis Of Order](is-weak-add-basis-of-order.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Additive.Basis](../../../../../../sources/v2/MathlibExt.md)

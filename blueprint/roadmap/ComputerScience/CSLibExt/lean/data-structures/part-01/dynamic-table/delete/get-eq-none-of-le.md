@@ -13,7 +13,8 @@ Lookup outside the logical range always returns `none`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](../basic/part-01/table.md)
+- [Get?](get.md)
 
 ## Sources
 

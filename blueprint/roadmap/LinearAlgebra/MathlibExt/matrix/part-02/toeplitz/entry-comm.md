@@ -13,7 +13,7 @@ Entries of a symmetric Toeplitz matrix commute: `A i j = A j i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Symmetric Toeplitz Matrix](is-symmetric-toeplitz-matrix.md)
 
 ## Sources
 

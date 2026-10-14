@@ -13,7 +13,11 @@ as defined in the start of Section 1.2 of the paper.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Primitive Apollonian Circle Packing](primitive-apollonian-circle-packing.md)
+
+## Proof depends on
+
+- [Curvature Set](curvature-set.md)
 
 ## Sources
 

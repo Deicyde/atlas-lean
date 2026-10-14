@@ -13,7 +13,7 @@ The optimal variance constant is nonnegative in the extended nonnegative reals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Thin Shell Variance Constant](thin-shell-variance-constant.md)
 
 ## Sources
 

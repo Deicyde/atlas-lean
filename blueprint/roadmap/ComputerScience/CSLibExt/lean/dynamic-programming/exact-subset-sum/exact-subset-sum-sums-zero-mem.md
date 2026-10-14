@@ -13,7 +13,11 @@ The empty sublist's zero sum survives every actual phase.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Subset Sum Sums](exact-subset-sum-sums.md)
+
+## Proof depends on
+
+- [Exact Subset Sum Sums mem](exact-subset-sum-sums-mem.md)
 
 ## Sources
 

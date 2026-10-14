@@ -12,7 +12,12 @@ The endpoint reached by following a finite word of directions from the origin.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Honeycomb Vertex](honeycomb-vertex.md)
+
+## Proof depends on
+
+- [Origin](origin.md)
+- [Step](step.md)
 
 ## Sources
 

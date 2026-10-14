@@ -12,7 +12,14 @@ Combine both cached child maxima with the root interval's high endpoint.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Entry](entry.md)
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Interval](interval.md)
+- [Cached Max?](cached-max.md)
+- [Max With](max-with.md)
 
 ## Sources
 

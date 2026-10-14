@@ -12,7 +12,7 @@ The discrete union-find forest used before scanning any edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](../../../data-structures/part-03/union-find/part-01/forest.md)
 
 ## Sources
 

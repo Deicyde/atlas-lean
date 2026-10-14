@@ -18,6 +18,10 @@ http://www.openproblemgarden.org/op/2_accessibility_of_primes):
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is RAccessible](is-raccessible.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PrimeTwoAccessibilityWanted](../../../../../sources/v2/WantedExt.md)

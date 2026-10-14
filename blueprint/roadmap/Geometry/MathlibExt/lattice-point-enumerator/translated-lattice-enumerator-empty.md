@@ -13,7 +13,12 @@ The translated empty set enumerates to zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Translated Lattice Enumerator](translated-lattice-enumerator.md)
+
+## Proof depends on
+
+- [Std Lattice](std-lattice.md)
+- [Translated Lattice Point Set](translated-lattice-point-set.md)
 
 ## Sources
 

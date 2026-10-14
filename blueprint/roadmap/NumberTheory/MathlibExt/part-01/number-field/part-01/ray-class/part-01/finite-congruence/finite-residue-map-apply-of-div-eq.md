@@ -16,7 +16,12 @@ for the finite component.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Residue Map](finite-residue-map.md)
+
+## Proof depends on
+
+- [Exists is Unit mod finite Part div eq](exists-is-unit-mod-finite-part-div-eq.md)
+- [Quotient Units div eq of div eq](quotient-units-div-eq-of-div-eq.md)
 
 ## Sources
 

@@ -15,7 +15,11 @@ Real `O(t ^ d)` consequence (source lines 283–311): with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer Cube Set](integer-cube-set.md)
+
+## Proof depends on
+
+- [Card integer Cube Set le](card-integer-cube-set-le.md)
 
 ## Sources
 

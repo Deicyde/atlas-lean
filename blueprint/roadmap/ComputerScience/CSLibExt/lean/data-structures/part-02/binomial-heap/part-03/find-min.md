@@ -12,7 +12,13 @@ Inspect the minimum value without removing it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Heap](../part-02/binomial-heap.md)
+
+## Proof depends on
+
+- [Remove Min Tree](../part-02/remove-min-tree.md)
+- [Binomial Tree](../part-01/binomial-tree.md)
+- [Root](../part-01/root.md)
 
 ## Sources
 

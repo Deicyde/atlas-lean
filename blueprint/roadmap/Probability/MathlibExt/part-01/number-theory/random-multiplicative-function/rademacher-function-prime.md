@@ -13,7 +13,12 @@ Evaluation at a prime is its assigned sign.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Sign Nat](prime-sign-nat.md)
+- [Rademacher Function](rademacher-function.md)
+
+## Proof depends on
+
+- [Rademacher Function eq prod of squarefree](rademacher-function-eq-prod-of-squarefre.md)
 
 ## Sources
 

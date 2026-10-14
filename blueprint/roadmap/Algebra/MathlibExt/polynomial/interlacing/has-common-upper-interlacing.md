@@ -15,6 +15,10 @@ between the two largest roots of every member, with multiplicity.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Upper Interlacing Point](has-upper-interlacing-point.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Polynomial.Interlacing](../../../../../sources/v2/MathlibExt.md)

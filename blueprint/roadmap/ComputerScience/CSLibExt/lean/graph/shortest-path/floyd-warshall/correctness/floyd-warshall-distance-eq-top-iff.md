@@ -13,7 +13,15 @@ An output cell is infinite exactly when no weighted path connects its endpoints.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../basic/cost.md)
+- [Is Weighted Path](../basic/is-weighted-path.md)
+- [Floyd Warshall](../basic/floyd-warshall.md)
+
+## Proof depends on
+
+- [Internal Vertices Below](../basic/internal-vertices-below.md)
+- [Floyd Warshall distance realized](floyd-warshall-distance-realized.md)
+- [Path Weight](../basic/path-weight.md)
 
 ## Sources
 

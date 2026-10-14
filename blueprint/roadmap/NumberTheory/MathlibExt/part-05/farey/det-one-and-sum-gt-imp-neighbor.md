@@ -13,7 +13,12 @@ Determinant one plus denominator sum exceeding `n` implies Farey neighbors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Farey Neighbor](is-farey-neighbor.md)
+- [Farey Finset](farey-finset.md)
+
+## Proof depends on
+
+- [Mem farey Finset iff](mem-farey-finset-iff.md)
 
 ## Sources
 

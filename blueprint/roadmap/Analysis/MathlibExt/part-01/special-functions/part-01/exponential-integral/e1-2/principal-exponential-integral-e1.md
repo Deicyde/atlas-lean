@@ -16,6 +16,10 @@ exclude `z = 0` and the branch cut.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Principal Exponential Integral E1 Raw](principal-exponential-integral-e1-raw.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.ExponentialIntegral.E1](../../../../../../../../sources/v2/MathlibExt.md)

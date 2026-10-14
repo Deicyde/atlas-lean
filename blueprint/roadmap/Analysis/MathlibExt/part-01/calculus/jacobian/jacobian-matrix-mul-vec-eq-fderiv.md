@@ -17,7 +17,11 @@ it represents the total derivative), by `jacobianMatrix_eq_toMatrix'_fderiv`; th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobian Matrix](jacobian-matrix.md)
+
+## Proof depends on
+
+- [Jacobian Matrix eq to Matrix' fderiv](jacobian-matrix-eq-to-matrix-fderiv.md)
 
 ## Sources
 

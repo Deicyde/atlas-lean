@@ -13,7 +13,7 @@ Elimination of `IsUnramifiedOutside` at a prime coprime to `m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Unramified Outside](is-unramified-outside.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ Chunks of a strictly sorted list are nonempty, bounded, and strictly sorted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chunk Groups](chunk-groups.md)
+
+## Proof depends on
+
+- [Chunk Groups Aux](chunk-groups-aux.md)
 
 ## Sources
 

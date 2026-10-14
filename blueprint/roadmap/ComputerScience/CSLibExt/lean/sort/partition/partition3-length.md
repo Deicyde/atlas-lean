@@ -13,7 +13,12 @@ The three output fields contain exactly as many occurrences as the input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Way Partition](three-way-partition.md)
+- [Partition3](partition3.md)
+
+## Proof depends on
+
+- [Partition3 correct](partition3-correct.md)
 
 ## Sources
 

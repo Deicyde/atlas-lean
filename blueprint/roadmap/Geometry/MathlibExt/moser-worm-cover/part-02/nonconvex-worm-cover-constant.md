@@ -15,6 +15,10 @@ adaptation.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cover Area Infimum](../part-01/cover-area-infimum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.MoserWormCover](../../../../../sources/v2/MathlibExt.md)

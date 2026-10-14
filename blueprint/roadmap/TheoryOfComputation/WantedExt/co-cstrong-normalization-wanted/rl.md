@@ -13,7 +13,7 @@ lives in `s₃`. The first constructor is the impredicativity of `Prop`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Srt](srt.md)
 
 ## Sources
 

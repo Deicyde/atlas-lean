@@ -14,6 +14,10 @@ Supremal admissible exponent, without assuming that a maximum is attained.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Admissible Exponent](is-admissible-exponent.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.SignConditionNumberDecay](../../../../../../sources/v2/MathlibExt.md)

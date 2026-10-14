@@ -12,7 +12,7 @@ Free group on the coprime primes mapping to the coprime ideals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprime Primes](coprime-primes.md)
 
 ## Sources
 

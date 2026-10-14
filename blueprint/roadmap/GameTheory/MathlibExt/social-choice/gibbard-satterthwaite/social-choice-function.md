@@ -14,6 +14,10 @@ Resolute social choice function: profile ↦ chosen alternative.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Profile](profile.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GameTheory.SocialChoice.GibbardSatterthwaite](../../../../../sources/v2/MathlibExt.md)

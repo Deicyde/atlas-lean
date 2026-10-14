@@ -12,7 +12,12 @@ Validate a suffix whose first edge has the supplied input ordinal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Raw Edge](raw-edge.md)
+- [Weighted Edge](weighted-edge.md)
+
+## Proof depends on
+
+- [Decode At](decode-at.md)
 
 ## Sources
 

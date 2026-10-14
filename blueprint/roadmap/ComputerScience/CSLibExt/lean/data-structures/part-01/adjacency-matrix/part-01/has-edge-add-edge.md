@@ -13,7 +13,9 @@ The added edge is present after insertion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adjacency Matrix](adjacency-matrix.md)
+- [Add Edge](add-edge.md)
+- [Has Edge](has-edge.md)
 
 ## Sources
 

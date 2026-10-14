@@ -24,6 +24,10 @@ Soare II.3.1.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Acceptable Numbering fixed point](acceptable-numbering-fixed-point.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.RiceTheorem](../../../../sources/v2/MathlibExt.md)

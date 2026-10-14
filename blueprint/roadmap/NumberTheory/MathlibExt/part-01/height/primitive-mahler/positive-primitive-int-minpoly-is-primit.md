@@ -13,7 +13,11 @@ Sign normalization preserves the canonical polynomial's primitivity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positive Primitive Int Minpoly](positive-primitive-int-minpoly.md)
+
+## Proof depends on
+
+- [Absolute](../primitive-int-minpoly.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ The polar is antitone: a larger set has a smaller polar.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polar Set](polar-set.md)
 
 ## Sources
 

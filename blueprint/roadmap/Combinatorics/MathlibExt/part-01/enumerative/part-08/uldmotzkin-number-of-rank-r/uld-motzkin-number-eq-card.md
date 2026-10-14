@@ -16,7 +16,9 @@ statement `jis_a4c8498023ac94f370aead45`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Motzkin Path](is-motzkin-path.md)
+- [ULDMotzkin Step](uldmotzkin-step.md)
+- [Uld Motzkin Number](uld-motzkin-number.md)
 
 ## Sources
 

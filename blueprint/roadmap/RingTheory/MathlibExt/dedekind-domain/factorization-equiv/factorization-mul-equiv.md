@@ -15,6 +15,14 @@ finitely supported prime-exponent functions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Finsupp To Units](finsupp-to-units.md)
+- [To Units left inv](to-units-left-inv.md)
+- [To Units right inv](to-units-right-inv.md)
+- [Units To Finsupp](units-to-finsupp.md)
+- [Units To Finsupp mul](units-to-finsupp-mul.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DedekindDomain.FactorizationEquiv](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,13 @@ A tree built by insertions from the empty tree is a B-tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is BTree](is-btree.md)
+- [From List](from-list.md)
+
+## Proof depends on
+
+- [Empty](empty-2.md)
+- [Insert](insert-2.md)
 
 ## Sources
 

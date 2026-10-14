@@ -13,7 +13,9 @@ The downward preferred path of a tree starts at the root of the tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Root](../../euler-tour-tree/part-01/root.md)
+- [Decomp](decomp.md)
 
 ## Sources
 

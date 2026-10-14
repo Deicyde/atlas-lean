@@ -13,7 +13,7 @@ dynamic-programming implementation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary String](binary-string.md)
 
 ## Sources
 

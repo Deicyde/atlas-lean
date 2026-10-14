@@ -16,7 +16,12 @@ standard symplectic form `ω₀ = ∑_i dxᵢ ∧ dx_{n+i}`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
+
+## Proof depends on
+
+- [Idx P](idx-p.md)
+- [Idx Q](idx-q.md)
 
 ## Sources
 

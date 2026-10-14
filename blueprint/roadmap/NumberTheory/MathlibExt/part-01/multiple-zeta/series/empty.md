@@ -12,7 +12,7 @@ The empty multiple-zeta index. Source: arXiv:2307.09867, empty-index convention.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
 
 ## Sources
 

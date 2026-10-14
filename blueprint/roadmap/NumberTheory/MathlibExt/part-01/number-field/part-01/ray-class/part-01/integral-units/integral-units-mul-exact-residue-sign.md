@@ -13,7 +13,13 @@ Exactness at integral units, residue-sign form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integral Ray One Units](integral-ray-one-units.md)
+- [Integral Ray One Units Inclusion](integral-ray-one-units-inclusion.md)
+- [Integral Units To Residue Sign](integral-units-to-residue-sign.md)
+
+## Proof depends on
+
+- [Integral Units To Residue Sign ker](integral-units-to-residue-sign-ker.md)
 
 ## Sources
 

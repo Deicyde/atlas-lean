@@ -13,7 +13,11 @@ Doubling appends a binary digit `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bin Digit Sum](bin-digit-sum.md)
+
+## Proof depends on
+
+- [Bin Digit Sum zero](bin-digit-sum-zero.md)
 
 ## Sources
 

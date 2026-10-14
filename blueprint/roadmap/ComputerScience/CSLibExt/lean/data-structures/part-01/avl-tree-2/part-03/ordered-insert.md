@@ -13,7 +13,20 @@ Insertion preserves the strict search-tree invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered](../part-01/ordered.md)
+- [Tree](../part-01/tree.md)
+- [Insert](../part-01/insert.md)
+
+## Proof depends on
+
+- [All](../part-01/all.md)
+- [Mem](../part-01/mem.md)
+- [All iff forall mem](../part-01/all-iff-forall-mem.md)
+- [Balance](../part-01/balance.md)
+- [Height](../part-01/height.md)
+- [Mem insert](mem-insert.md)
+- [Ordered balance](../part-02/ordered-balance.md)
+- [To Binary Tree](../part-01/to-binary-tree.md)
 
 ## Sources
 

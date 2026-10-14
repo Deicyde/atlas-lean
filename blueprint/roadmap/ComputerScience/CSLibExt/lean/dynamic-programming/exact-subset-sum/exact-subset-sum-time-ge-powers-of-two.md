@@ -13,7 +13,13 @@ The actual shifted additions alone establish exponential growth on powers-of-two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Subset Sum](exact-subset-sum.md)
+
+## Proof depends on
+
+- [Exact Subset Sum Sums](exact-subset-sum-sums.md)
+- [Exact Subset Sum Sums powers of two](exact-subset-sum-sums-powers-of-two.md)
+- [Exact Subset Sum time](exact-subset-sum-time.md)
 
 ## Sources
 

@@ -20,7 +20,7 @@ Definition 1.1 in the original paper `Good Locally Testable Codes`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary Code](binary-code.md)
 
 ## Sources
 

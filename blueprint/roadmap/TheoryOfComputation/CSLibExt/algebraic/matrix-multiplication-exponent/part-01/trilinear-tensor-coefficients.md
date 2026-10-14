@@ -12,7 +12,7 @@ The canonical finite-coordinate linear equivalence, not a tensor-rank oracle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trilinear Tensor](trilinear-tensor.md)
 
 ## Sources
 

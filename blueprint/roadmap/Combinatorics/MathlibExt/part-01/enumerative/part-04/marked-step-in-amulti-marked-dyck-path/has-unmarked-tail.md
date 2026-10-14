@@ -14,7 +14,11 @@ source statement `jis_54a13fcd4eb84116f24d6935`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multi Marked Dyck Path](multi-marked-dyck-path.md)
+
+## Proof depends on
+
+- [Has Marked Tail](has-marked-tail.md)
 
 ## Sources
 

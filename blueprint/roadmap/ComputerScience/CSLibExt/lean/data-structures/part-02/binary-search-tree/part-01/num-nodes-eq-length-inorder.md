@@ -13,7 +13,11 @@ Canonical node count agrees with the length of inorder traversal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inorder](inorder.md)
+
+## Proof depends on
+
+- [Inorder Aux](inorder-aux.md)
 
 ## Sources
 

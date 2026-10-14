@@ -13,7 +13,12 @@ The empty table is valid: no slot is occupied, so both clauses are vacuous.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](valid.md)
+- [Empty](empty.md)
+
+## Proof depends on
+
+- [Mk of placed](mk-of-placed.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Membership in a merge is membership in one of the two trees.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Merge](merge.md)
 
 ## Sources
 

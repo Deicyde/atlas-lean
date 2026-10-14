@@ -18,7 +18,12 @@ with no analytic convergence assumptions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Positive Log Convex Coefficients](has-positive-log-convex-coefficients.md)
+
+## Proof depends on
+
+- [Coeff pos](coeff-pos.md)
+- [Sq coeff succ le](sq-coeff-succ-le.md)
 
 ## Sources
 

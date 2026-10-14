@@ -19,6 +19,11 @@ http://www.openproblemgarden.org/op/2_accessibility_of_primes):
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Monochromatic](is-monochromatic.md)
+- [Is SDiff Sequence](is-sdiff-sequence.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PrimeTwoAccessibilityWanted](../../../../../sources/v2/WantedExt.md)

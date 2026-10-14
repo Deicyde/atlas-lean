@@ -13,7 +13,16 @@ Split outputs contain only keys respectively below and above the pivot.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [All Nodes](../part-01/all-nodes.md)
+- [Ordered](../part-01/ordered.md)
+- [Split](../part-01/split.md)
+
+## Proof depends on
+
+- [Mem Node](../part-01/mem-node.md)
+- [Split Result](../part-01/split-result.md)
+- [All Nodes iff forall mem](../part-01/all-nodes-iff-forall-mem.md)
 
 ## Sources
 

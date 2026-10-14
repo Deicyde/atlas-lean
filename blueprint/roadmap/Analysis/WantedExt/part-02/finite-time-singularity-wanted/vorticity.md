@@ -15,6 +15,10 @@ This is given by the formula: `∑ (e i) ×₃ ∂ᵢ u` (where `×₃` is the c
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [E](e.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.FiniteTimeSingularityWanted](../../../../../sources/v2/WantedExt.md)

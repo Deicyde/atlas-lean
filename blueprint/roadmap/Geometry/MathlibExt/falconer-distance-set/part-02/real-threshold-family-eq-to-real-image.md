@@ -13,7 +13,12 @@ The real source domain is exactly the image of the finite ENNReal threshold fami
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admissible Planar Threshold](../part-01/admissible-planar-threshold.md)
+- [Planar Threshold Property](../part-01/planar-threshold-property.md)
+
+## Proof depends on
+
+- [Of Real admissible Planar Threshold iff](of-real-admissible-planar-threshold-iff.md)
 
 ## Sources
 

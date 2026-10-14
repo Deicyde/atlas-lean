@@ -13,7 +13,12 @@ The identically zero function has zero Fourier coefficients.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](bool-cube.md)
+- [Bool Fourier Coeff](bool-fourier-coeff.md)
+
+## Proof depends on
+
+- [Cube Chi](cube-chi.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ The weighted large sieve.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weighted Hilbert](weighted-hilbert-cosecant.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.WeightedLargeSieve](../../../../../../sources/v2/MathlibExt.md)

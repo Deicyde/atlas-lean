@@ -15,6 +15,10 @@ with and without a prescribed girth lower bound.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cycle Lengths](../../../MathlibExt/part-01/simple-graph/part-01/circumference/cycle-lengths.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ErdosProblem751Wanted](../../../../../sources/v2/WantedExt.md)

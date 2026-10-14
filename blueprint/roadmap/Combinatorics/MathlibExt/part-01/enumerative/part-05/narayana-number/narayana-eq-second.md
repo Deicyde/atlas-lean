@@ -15,7 +15,7 @@ Equivalent second formula for the Narayana number (concept
 
 ## Depends on
 
-This node has no prerequisites.
+- [Narayana](narayana.md)
 
 ## Sources
 

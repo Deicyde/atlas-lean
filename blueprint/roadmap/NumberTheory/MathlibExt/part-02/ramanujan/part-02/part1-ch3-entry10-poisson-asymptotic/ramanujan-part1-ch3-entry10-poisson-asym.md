@@ -14,7 +14,13 @@ central-moment identity from Comtet; Berndt's route and even-moment tails contro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two Assoc Stirling Second](two-assoc-stirling-second.md)
+
+## Proof depends on
+
+- [Two Assoc Stirling Second eq canonical](two-assoc-stirling-second-eq-canonical.md)
+- [Two Assoc Stirling Second](../../../../../../Combinatorics/MathlibExt/part-02/associated-stirling-second/two-assoc-stirling-second.md)
+- [Two Assoc Stirling Second eq zero of lt two mul](../../../../../../Combinatorics/MathlibExt/part-02/associated-stirling-second/two-assoc-stirling-second-eq-zero-of-lt.md)
 
 ## Sources
 

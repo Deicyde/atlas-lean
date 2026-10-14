@@ -15,7 +15,14 @@ in `Valid`. Use `0 < B` (see `valid_ofSortedList`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](../part-01/valid.md)
+- [Of Sorted List](of-sorted-list.md)
+
+## Proof depends on
+
+- [Group Ordered](../part-01/group-ordered.md)
+- [Chunk Groups zero of ne](chunk-groups-zero-of-ne.md)
+- [Valid](../../xfast-trie/part-01/valid.md)
 
 ## Sources
 

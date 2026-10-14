@@ -14,6 +14,10 @@ Parse a sequence of self-delimiting blocks off the front of the input.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Undelimit Blocks Aux](undelimit-blocks-aux.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.Complexity](../../../../sources/v2/MathlibExt.md)

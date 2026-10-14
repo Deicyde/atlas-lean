@@ -16,6 +16,10 @@ Cardinal equality between the raw integer count and the canonical
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Raw Subtype Equiv Canonical Point Set](raw-subtype-equiv-canonical-point-set.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.LatticePointAsymptotics](../../../../sources/v2/MathlibExt.md)

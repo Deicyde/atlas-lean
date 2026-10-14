@@ -13,7 +13,12 @@ An embedding sends the character value to the sum of conjugate roots.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conj Root Elem](conj-root-elem.md)
+- [Cyc Subfield](../cyclotomic-field/cyc-subfield.md)
+
+## Proof depends on
+
+- [Character eq sum roots](character-eq-sum-roots.md)
 
 ## Sources
 

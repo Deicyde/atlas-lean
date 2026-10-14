@@ -15,6 +15,10 @@ number of edges of every finite graph `H` without isolated vertices.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Graph Pair Ramsey](graph-pair-ramsey.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Ramsey](../../../../../../../sources/v2/MathlibExt.md)

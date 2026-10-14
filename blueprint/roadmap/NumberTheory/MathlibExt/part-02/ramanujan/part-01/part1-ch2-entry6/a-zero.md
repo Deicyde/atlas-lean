@@ -13,7 +13,7 @@ The starting value `A n 0 = n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [A](a.md)
 
 ## Sources
 

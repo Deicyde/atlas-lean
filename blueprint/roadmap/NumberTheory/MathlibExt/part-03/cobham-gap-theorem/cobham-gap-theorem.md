@@ -16,7 +16,11 @@ or the consecutive gaps `x (i+1) - x i` are uniformly bounded.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Base Recognizable](../base-recognizable/is-base-recognizable.md)
+
+## Proof depends on
+
+- [Cobham gap theorem general](cobham-gap-theorem-general.md)
 
 ## Sources
 

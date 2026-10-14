@@ -13,7 +13,7 @@ Every positive integer occurs infinitely often in a fractal sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fractal Sequence](fractal-sequence.md)
 
 ## Sources
 

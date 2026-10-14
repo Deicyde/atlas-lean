@@ -15,7 +15,12 @@ like `List.take`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fenwick Tree](fenwick-tree.md)
+
+## Proof depends on
+
+- [Lowbit](lowbit.md)
+- [Size](size.md)
 
 ## Sources
 

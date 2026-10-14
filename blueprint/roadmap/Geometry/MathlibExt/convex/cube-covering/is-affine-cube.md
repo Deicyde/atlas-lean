@@ -14,6 +14,10 @@ An affine cube is the image under a genuinely invertible affine map.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Coordinate Cube](coordinate-cube.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Convex.CubeCovering](../../../../../sources/v2/MathlibExt.md)

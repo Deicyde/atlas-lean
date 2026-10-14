@@ -16,6 +16,11 @@ well-distributed?
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Well Distributed](well-distributed.md)
+- [Prime Fract](prime-fract.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem997Wanted](../../../../../sources/v2/WantedExt.md)

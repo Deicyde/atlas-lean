@@ -14,7 +14,13 @@ supplying a two-sided inverse.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gal Linear Map](gal-linear-map.md)
+- [Torsion Pts](torsion-pts.md)
+
+## Proof depends on
+
+- [Gal Linear Map mul apply](gal-linear-map-mul-apply.md)
+- [Gal Linear Map one apply](gal-linear-map-one-apply.md)
 
 ## Sources
 

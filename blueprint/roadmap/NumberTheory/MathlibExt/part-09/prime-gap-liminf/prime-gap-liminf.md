@@ -14,6 +14,10 @@ The liminf of actual consecutive-prime gaps, with infinity retained.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prime Gap](../prime-gap.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeGapLiminf](../../../../../sources/v2/MathlibExt.md)

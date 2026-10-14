@@ -17,6 +17,10 @@ statement `jis_b3eb662622ec0b548e5acec4`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Ramanujan Prime](is-ramanujan-prime.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.RamanujanPrime](../../../../../../../sources/v2/MathlibExt.md)

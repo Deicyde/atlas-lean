@@ -21,6 +21,11 @@ semantic child `jis_sem_8f93866ba77d801d9ead13ca`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [B Ary Multinomial Bound](b-ary-multinomial-bound.md)
+- [B Ary Multinomial Factor](b-ary-multinomial-factor.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.BAryMultinomialCoefficient](../../../../../sources/v2/MathlibExt.md)

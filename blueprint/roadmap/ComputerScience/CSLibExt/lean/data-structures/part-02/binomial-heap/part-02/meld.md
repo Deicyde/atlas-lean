@@ -12,7 +12,16 @@ Meld two binomial heaps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Heap](binomial-heap.md)
+
+## Proof depends on
+
+- [Ranks At Least](../part-01/ranks-at-least.md)
+- [Valid](../part-01/valid-2.md)
+- [Meld Trees](meld-trees.md)
+- [Meld Trees correct](meld-trees-correct.md)
+- [Binomial Tree](../part-01/binomial-tree.md)
+- [Rank](../part-01/rank.md)
 
 ## Sources
 

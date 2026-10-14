@@ -16,7 +16,12 @@ loop exhausts its fuel, which models the rehash trigger of the classical algorit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cuckoo Hashing](cuckoo-hashing.md)
+
+## Proof depends on
+
+- [Insert Aux](insert-aux.md)
+- [Slot Has Key](slot-has-key.md)
 
 ## Sources
 

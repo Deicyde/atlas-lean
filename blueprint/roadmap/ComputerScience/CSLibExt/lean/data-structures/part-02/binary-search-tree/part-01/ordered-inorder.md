@@ -13,7 +13,16 @@ The inorder traversal of an ordered tree is strictly increasing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered](ordered.md)
+- [Inorder](inorder.md)
+
+## Proof depends on
+
+- [All](all.md)
+- [Mem](mem.md)
+- [All iff forall mem](all-iff-forall-mem.md)
+- [Inorder Aux](inorder-aux.md)
+- [Mem inorder](mem-inorder.md)
 
 ## Sources
 

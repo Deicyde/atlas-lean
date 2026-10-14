@@ -13,7 +13,7 @@ The zero-index normalization applies to the second factor as well.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convolution](convolution.md)
 
 ## Sources
 

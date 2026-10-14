@@ -14,6 +14,10 @@ The first component of the canonical Motzkin Riordan pair.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Motzkin Square Root](motzkin-square-root.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MotzkinTriangle](../../../../../../../sources/v2/MathlibExt.md)

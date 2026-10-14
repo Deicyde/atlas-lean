@@ -12,7 +12,7 @@ A rank-zero tree containing one value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Tree](binomial-tree.md)
 
 ## Sources
 

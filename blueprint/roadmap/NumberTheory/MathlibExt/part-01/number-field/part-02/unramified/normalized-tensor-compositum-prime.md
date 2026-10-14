@@ -30,6 +30,10 @@ maximality theorem.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Normalized Tensor To Compositum At Prime](normalized-tensor-to-compositum-at-prime.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.Unramified](../../../../../../../sources/v2/MathlibExt.md)

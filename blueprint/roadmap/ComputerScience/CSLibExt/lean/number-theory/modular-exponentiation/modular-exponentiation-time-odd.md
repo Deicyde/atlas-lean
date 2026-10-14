@@ -13,7 +13,11 @@ The odd source branch adds exactly one multiplication after its `b - 1` child.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Exponentiation](modular-exponentiation.md)
+
+## Proof depends on
+
+- [Modular Exponentiation odd](modular-exponentiation-odd.md)
 
 ## Sources
 

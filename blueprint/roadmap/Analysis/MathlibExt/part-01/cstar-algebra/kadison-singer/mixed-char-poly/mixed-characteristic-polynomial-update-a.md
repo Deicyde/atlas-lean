@@ -13,7 +13,11 @@ Binary affine form of `mixedCharacteristicPolynomial_update_sum`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mixed Characteristic Polynomial](mixed-characteristic-polynomial.md)
+
+## Proof depends on
+
+- [Mixed Characteristic Polynomial update sum](mixed-characteristic-polynomial-update-s.md)
 
 ## Sources
 

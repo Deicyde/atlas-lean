@@ -13,7 +13,8 @@ Contents are the occupied prefix with its option constructors removed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](table.md)
+- [Contents](contents.md)
 
 ## Sources
 

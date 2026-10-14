@@ -13,7 +13,12 @@ Coefficient zero witnesses nonemptiness using the actual integral-polynomial mod
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Asymptotic Dobrowolski Coefficient](is-asymptotic-dobrowolski-coefficient.md)
+
+## Proof depends on
+
+- [Dobrowolski Scale](dobrowolski-scale.md)
+- [Dobrowolski Scale pos](dobrowolski-scale-pos.md)
 
 ## Sources
 

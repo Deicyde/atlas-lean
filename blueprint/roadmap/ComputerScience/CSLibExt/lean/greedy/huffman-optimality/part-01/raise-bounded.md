@@ -13,7 +13,16 @@ Replace one smaller weight by a larger one, with a height-based cost bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Weight Tree](huffman-weight-tree.md)
+- [Height](height.md)
+- [Path Cost](path-cost.md)
+- [Weights](weights.md)
+
+## Proof depends on
+
+- [Contains At](contains-at.md)
+- [Reweight](reweight.md)
+- [Total Weight](total-weight.md)
 
 ## Sources
 

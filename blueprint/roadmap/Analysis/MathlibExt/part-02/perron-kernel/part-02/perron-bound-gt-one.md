@@ -13,7 +13,13 @@ Truncated Perron bound for `y > 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perron Kernel](../part-01/perron-kernel.md)
+
+## Proof depends on
+
+- [Horiz side bound gt one](../part-01/horiz-side-bound-gt-one.md)
+- [Rect identity gt one](rect-identity-gt-one.md)
+- [Vert side bound left](vert-side-bound-left.md)
 
 ## Sources
 

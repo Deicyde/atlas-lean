@@ -13,7 +13,8 @@ A key is stored exactly when it lies in some representative's bucket.
 
 ## Depends on
 
-This node has no prerequisites.
+- [YFast Trie](yfast-trie.md)
+- [Contents](contents.md)
 
 ## Sources
 

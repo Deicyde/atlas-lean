@@ -14,6 +14,10 @@ SAT as a language of encoded satisfiable CNF formulas.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is SATEncoded](is-satencoded.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.CookLevin](../../../../../sources/v2/CSLibExt.md)

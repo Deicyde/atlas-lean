@@ -16,7 +16,7 @@ explicit period and preperiod witnesses give eventual periodicity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Eventually Periodic](is-eventually-periodic.md)
 
 ## Sources
 

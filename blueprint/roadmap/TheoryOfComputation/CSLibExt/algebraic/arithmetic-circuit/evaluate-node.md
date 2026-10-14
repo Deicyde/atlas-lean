@@ -12,7 +12,12 @@ Actual evaluation of a node, recursively evaluating only prior references.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arithmetic Circuit](arithmetic-circuit.md)
+
+## Proof depends on
+
+- [Arithmetic Gate](arithmetic-gate.md)
+- [Evaluate](evaluate-2.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ The set of length-`k` factors over a finite alphabet is finite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Factor Set](factor-set.md)
 
 ## Sources
 

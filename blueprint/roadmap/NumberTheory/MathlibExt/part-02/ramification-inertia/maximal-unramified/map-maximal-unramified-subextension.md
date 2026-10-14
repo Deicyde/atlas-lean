@@ -13,7 +13,13 @@ The maximal unramified subextension is invariant under `σ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Unramified Subextension](maximal-unramified-subextension.md)
+
+## Proof depends on
+
+- [Is Finite Unramified](is-finite-unramified.md)
+- [Map](map.md)
+- [Le maximal Unramified Subextension](le-maximal-unramified-subextension.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Maximality unfolded with strict extensions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Saturated](is-saturated.md)
 
 ## Sources
 

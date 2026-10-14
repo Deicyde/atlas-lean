@@ -15,7 +15,7 @@ is proved below), not a source theorem.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Ideal Graded Piece](../maximal-ideal-graded-piece/maximal-ideal-graded-piece.md)
 
 ## Sources
 

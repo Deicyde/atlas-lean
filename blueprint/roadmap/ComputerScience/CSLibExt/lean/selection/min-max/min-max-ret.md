@@ -13,7 +13,7 @@ The paired scan returns the canonical minimum and maximum of the original list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Max](min-max.md)
 
 ## Sources
 

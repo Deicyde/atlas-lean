@@ -13,7 +13,12 @@ The cube is compact, convex and has nonempty ambient interior.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Convex Body](../covering/is-convex-body.md)
+- [Coordinate Cube](coordinate-cube.md)
+
+## Proof depends on
+
+- [Coordinate Cube interior iff](coordinate-cube-interior-iff.md)
 
 ## Sources
 

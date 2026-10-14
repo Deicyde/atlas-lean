@@ -17,6 +17,11 @@ hypothesis on `x`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [F Coeff eq generalized Bell Generating](f-coeff-eq-generalized-bell-generating.md)
+- [Psi eq entry9 P](psi-eq-entry9-p.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry3](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ Residue separability at an unramified prime.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Residue Separable At](is-residue-separable-at.md)
 
 ## Sources
 

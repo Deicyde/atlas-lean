@@ -18,6 +18,10 @@ concept `jis_sem_ccb5c04c7ffe1e3f68d34c98`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Stieltjes Matrix](stieltjes-matrix.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.StieltjesMatrix](../../../../../../sources/v2/MathlibExt.md)

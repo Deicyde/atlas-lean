@@ -13,7 +13,7 @@ Stage `k + 1` reads every operand from the complete saved result of stage `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transitive Closure Stages](transitive-closure-stages.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ Perform two occurrence-preserving weight exchanges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Weight Tree](huffman-weight-tree.md)
+- [Height](height.md)
+- [Path Cost](path-cost.md)
+- [Weights](weights.md)
+
+## Proof depends on
+
+- [Raise Bounded](raise-bounded.md)
 
 ## Sources
 

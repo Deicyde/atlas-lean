@@ -13,7 +13,11 @@ The algebra-homomorphism form of the bridge is multiplicative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gal Alg Equiv](gal-alg-equiv.md)
+
+## Proof depends on
+
+- [Gal Alg Equiv mul](gal-alg-equiv-mul.md)
 
 ## Sources
 

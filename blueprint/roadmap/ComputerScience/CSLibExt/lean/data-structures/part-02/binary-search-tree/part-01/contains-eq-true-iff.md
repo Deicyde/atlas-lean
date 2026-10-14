@@ -13,7 +13,14 @@ Search is equivalent to structural membership for an ordered tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](mem.md)
+- [Ordered](ordered.md)
+- [Contains](contains.md)
+
+## Proof depends on
+
+- [All](all.md)
+- [All iff forall mem](all-iff-forall-mem.md)
 
 ## Sources
 

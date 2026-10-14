@@ -13,7 +13,10 @@ The initial table represents exactly the initial leaf forest.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Work Item](../part-02/huffman-work-item.md)
+- [Huffman Table Forest](../part-02/huffman-table-forest.md)
+- [Initial Huffman Forest](../part-02/initial-huffman-forest.md)
+- [Initial Huffman Table](initial-huffman-table.md)
 
 ## Sources
 

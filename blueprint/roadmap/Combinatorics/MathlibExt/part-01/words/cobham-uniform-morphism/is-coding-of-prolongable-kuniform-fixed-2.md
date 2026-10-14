@@ -15,7 +15,15 @@ letter images all have length `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Coding Of Prolongable KUniform Fixed Point](is-coding-of-prolongable-kuniform-fixed.md)
+- [Is Omega Limit](../../infinite-word/pure-morphic-word/is-omega-limit.md)
+- [Is Prefix Preserving](../../infinite-word/pure-morphic-word/is-prefix-preserving.md)
+
+## Proof depends on
+
+- [Morph Extend](../../infinite-word/pure-morphic-word/morph-extend.md)
+- [Morph Iterate](../../infinite-word/pure-morphic-word/morph-iterate.md)
+- [Morph Iterate length of uniform](../../infinite-word/pure-morphic-word/morph-iterate-length-of-uniform.md)
 
 ## Sources
 

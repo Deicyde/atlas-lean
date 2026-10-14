@@ -13,7 +13,9 @@ Adjacency in the multigraph line graph: distinct edges sharing a vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](../part-01/edge-indexed-multigraph.md)
+- [Inc](../part-01/inc.md)
+- [Line Graph](line-graph.md)
 
 ## Sources
 

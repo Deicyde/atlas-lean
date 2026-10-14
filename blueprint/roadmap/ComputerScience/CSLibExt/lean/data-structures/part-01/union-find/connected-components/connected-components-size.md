@@ -13,7 +13,7 @@ The returned union-find has exactly the requested number of allocated vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Connected Components](connected-components.md)
 
 ## Sources
 

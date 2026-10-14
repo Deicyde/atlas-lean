@@ -13,7 +13,12 @@ Dequeueing has amortized charge one, including on an empty queue.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dequeue](dequeue.md)
+- [Potential](potential.md)
+
+## Proof depends on
+
+- [Dequeue Cost](dequeue-cost.md)
 
 ## Sources
 

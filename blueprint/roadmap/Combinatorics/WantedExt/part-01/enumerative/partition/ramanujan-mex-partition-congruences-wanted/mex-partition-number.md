@@ -14,6 +14,10 @@ Number of partitions `λ` of `n` with `partitionMex A a λ ≡ a [MOD 2 * A]`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Partition Mex](partition-mex.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.RamanujanMexPartitionCongruencesWanted](../../../../../../../sources/v2/WantedExt.md)

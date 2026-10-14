@@ -13,7 +13,10 @@ Unfolding of primitivity to an explicit induction equation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Character](../character/ray-class-character.md)
+- [Is Primitive](is-primitive.md)
+- [Ray Class Group](../group/ray-class-group.md)
+- [Map Of Dvd](map-of-dvd.md)
 
 ## Sources
 

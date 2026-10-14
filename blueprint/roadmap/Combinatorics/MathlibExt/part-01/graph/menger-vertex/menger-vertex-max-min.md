@@ -14,7 +14,13 @@ vertex-disjoint `s-t` paths equals min size of `s-t` vertex cut.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Internally Vertex Disjoint STPaths](is-internally-vertex-disjoint-stpaths.md)
+- [Is STVertex Cut](is-stvertex-cut.md)
+
+## Proof depends on
+
+- [Is STVertex Cut iff walk Separator](is-stvertex-cut-iff-walk-separator.md)
+- [Menger vertex](menger-vertex.md)
 
 ## Sources
 

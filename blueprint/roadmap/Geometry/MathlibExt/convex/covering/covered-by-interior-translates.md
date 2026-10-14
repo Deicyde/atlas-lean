@@ -14,6 +14,10 @@ An actual interior-translate cover of a body.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Covered By Translates](covered-by-translates.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Convex.Covering](../../../../../sources/v2/MathlibExt.md)

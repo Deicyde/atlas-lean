@@ -21,6 +21,10 @@ Narayana-number API.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Narayana](../narayana-number/narayana.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.NarayanaPolynomial](../../../../../../../sources/v2/MathlibExt.md)

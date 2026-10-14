@@ -12,7 +12,7 @@ The empty clique as a simplex vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Simplex Vertex](simplex-vertex.md)
 
 ## Sources
 

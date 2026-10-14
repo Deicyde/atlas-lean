@@ -13,7 +13,11 @@ front; on a miss, returns `none` and the unchanged cache.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lru Cache](lru-cache.md)
+
+## Proof depends on
+
+- [Erase Key](erase-key.md)
 
 ## Sources
 

@@ -25,6 +25,10 @@ Proves `Wanted` entry `generalized_biperiodic_fibonacci_zero_indices`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized biperiodic fibonacci zero indices general](generalized-biperiodic-fibonacci-zero-in.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Recurrences.GeneralizedBiPeriodicFibonacciZeroIndices](../../../../../../../sources/v2/MathlibExt.md)

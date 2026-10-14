@@ -13,7 +13,13 @@ The flattening of an ordered tree has no duplicate keys.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered](ordered.md)
+- [Tree](tree.md)
+- [Flatten](flatten.md)
+
+## Proof depends on
+
+- [Ordered flatten pairwise](ordered-flatten-pairwise.md)
 
 ## Sources
 

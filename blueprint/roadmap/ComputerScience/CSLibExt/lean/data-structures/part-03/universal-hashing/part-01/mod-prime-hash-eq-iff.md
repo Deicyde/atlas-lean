@@ -13,7 +13,7 @@ Two keys collide under `h_{a,b}` exactly when the inner values agree modulo `m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mod Prime Hash](mod-prime-hash.md)
 
 ## Sources
 

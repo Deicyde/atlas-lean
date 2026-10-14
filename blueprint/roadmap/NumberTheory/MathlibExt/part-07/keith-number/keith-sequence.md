@@ -17,6 +17,10 @@ After the initial entries, each term is the sum of the preceding
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Keith Sequence Prefix](keith-sequence-prefix.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.KeithNumber](../../../../../sources/v2/MathlibExt.md)

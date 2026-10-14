@@ -12,7 +12,11 @@ The range report for `[lo, hi]`; see `reportAux`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Range Tree](range-tree.md)
+
+## Proof depends on
+
+- [Report Aux](report-aux.md)
 
 ## Sources
 

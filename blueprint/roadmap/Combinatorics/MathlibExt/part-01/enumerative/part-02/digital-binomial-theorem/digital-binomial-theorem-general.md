@@ -15,7 +15,13 @@ Digital binomial theorem over a commutative semiring: `(x + y) ^ s(n)` is the su
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bin Digit Sum](bin-digit-sum.md)
+
+## Proof depends on
+
+- [Bin Digit Sum two mul](bin-digit-sum-two-mul.md)
+- [Bin Digit Sum two mul add one](bin-digit-sum-two-mul-add-one.md)
+- [Bin Digit Sum zero](bin-digit-sum-zero.md)
 
 ## Sources
 

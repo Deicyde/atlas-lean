@@ -14,7 +14,13 @@ Exactness at the ray class group as `MulExact`, raw quotient form
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Group](../group/ray-class-group.md)
+- [Ray Class To Class Group](ray-class-to-class-group.md)
+- [Ray Quotient To Ray Class Group](../quotient-to-ray-class/ray-quotient-to-ray-class-group.md)
+
+## Proof depends on
+
+- [Ray Class To Class Group ker](ray-class-to-class-group-ker.md)
 
 ## Sources
 

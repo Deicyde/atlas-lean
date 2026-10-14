@@ -14,7 +14,9 @@ tree, by definition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered](ordered.md)
+- [Tree](tree.md)
+- [To Binary Tree](to-binary-tree.md)
 
 ## Sources
 

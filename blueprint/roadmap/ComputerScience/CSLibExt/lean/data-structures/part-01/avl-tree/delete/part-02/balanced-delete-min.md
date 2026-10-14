@@ -13,7 +13,11 @@ lean: Cslib.Algorithms.Lean.AvlTree.balanced_deleteMin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete Min](../part-01/delete-min.md)
+
+## Proof depends on
+
+- [Balanced erase Min](../part-01/balanced-erase-min.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ and letter palindromes `q` (Labbé 2014, Section 2).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Morphism](morphism.md)
+
+## Proof depends on
+
+- [Is Palindrome](is-palindrome.md)
+- [Sigma](sigma.md)
 
 ## Sources
 

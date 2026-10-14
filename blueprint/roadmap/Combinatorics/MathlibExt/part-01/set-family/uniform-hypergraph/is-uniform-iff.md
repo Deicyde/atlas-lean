@@ -13,7 +13,7 @@ Unfolding characterization of uniformity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Uniform](is-uniform.md)
 
 ## Sources
 

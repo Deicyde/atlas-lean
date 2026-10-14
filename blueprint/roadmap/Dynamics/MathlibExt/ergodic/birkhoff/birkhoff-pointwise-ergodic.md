@@ -19,6 +19,17 @@ onto invariant σ-algebra.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dick Set](dick-set.md)
+- [Dick inv](dick-inv.md)
+- [Dick iter](dick-iter.md)
+- [Dick measurable](dick-measurable.md)
+- [Dick mem](dick-mem.md)
+- [Dick sum in](dick-sum-in.md)
+- [Dick sum out](dick-sum-out.md)
+- [Maximal ergodic](maximal-ergodic.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Dynamics.Ergodic.Birkhoff](../../../../../sources/v2/MathlibExt.md)

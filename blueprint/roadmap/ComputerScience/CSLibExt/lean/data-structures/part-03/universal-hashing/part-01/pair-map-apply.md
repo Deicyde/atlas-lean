@@ -13,7 +13,8 @@ Extensionality form of `pairMap`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mod Prime Index](mod-prime-index.md)
+- [Pair Map](pair-map.md)
 
 ## Sources
 

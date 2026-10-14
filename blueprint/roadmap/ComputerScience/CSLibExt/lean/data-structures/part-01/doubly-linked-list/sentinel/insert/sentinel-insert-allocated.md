@@ -13,7 +13,11 @@ Insertion neither allocates nor deallocates a cell, even with aliased targets.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sentinel Insert](sentinel-insert.md)
+
+## Proof depends on
+
+- [Sentinel Insert ret](sentinel-insert-ret.md)
 
 ## Sources
 

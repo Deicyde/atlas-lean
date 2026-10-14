@@ -13,7 +13,13 @@ Characteristic node equation for the inorder key list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Keys](keys.md)
+
+## Proof depends on
+
+- [Contents](../part-01/contents.md)
+- [Contents node](../part-01/contents-node.md)
 
 ## Sources
 

@@ -17,6 +17,11 @@ Completeness gives the unique prime over the base maximal ideal.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists Unique primes Over maximal Ideal of is Adic Complete](exists-unique-primes-over-maximal-ideal.md)
+- [Is Discrete Valuation Ring of is Adic Complete](is-discrete-valuation-ring-of-is-adic-co.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DiscreteValuationRing.IntegralClosureComplete](../../../../../sources/v2/MathlibExt.md)

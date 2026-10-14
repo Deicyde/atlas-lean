@@ -15,7 +15,14 @@ index therefore collides on any two distinct keys with probability at most `1 / 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Universal On](../part-01/is-universal-on.md)
+- [Mod Prime Index](../part-01/mod-prime-index.md)
+- [Mod Prime Hashes](../part-01/mod-prime-hashes.md)
+
+## Proof depends on
+
+- [Mod Prime Index card](mod-prime-index-card.md)
+- [Mod Prime collision mul le](mod-prime-collision-mul-le.md)
 
 ## Sources
 

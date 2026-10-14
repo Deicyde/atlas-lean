@@ -13,7 +13,10 @@ Under `Valid`, the level-`l` probe succeeds exactly on shared prefixes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [XFast Trie](xfast-trie.md)
+- [Valid](valid.md)
+- [Has Prefix](has-prefix.md)
+- [Prefix Of](prefix-of.md)
 
 ## Sources
 

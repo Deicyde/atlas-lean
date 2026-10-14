@@ -14,6 +14,10 @@ Delete a key, splicing the subtrees of a deleted node together with `join`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Join](join.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BinarySearchTree.Delete](../../../../../../../../sources/v2/CSLibExt.md)

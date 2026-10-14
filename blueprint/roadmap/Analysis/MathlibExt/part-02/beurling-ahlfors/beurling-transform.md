@@ -17,6 +17,10 @@ or representability statement is made here.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Beurling Trunc](beurling-trunc.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.BeurlingAhlfors](../../../../../sources/v2/MathlibExt.md)

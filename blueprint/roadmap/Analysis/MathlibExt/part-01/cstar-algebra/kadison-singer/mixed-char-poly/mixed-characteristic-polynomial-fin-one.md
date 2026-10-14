@@ -14,7 +14,12 @@ polynomial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mixed Characteristic Polynomial](mixed-characteristic-polynomial.md)
+
+## Proof depends on
+
+- [Mixed Det Polynomial](mixed-det-polynomial.md)
+- [Mixed Differential](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ Build a B-tree by inserting the list from right to left into the empty tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](../part-01/btree.md)
+
+## Proof depends on
+
+- [Empty](empty.md)
+- [Insert](insert.md)
 
 ## Sources
 

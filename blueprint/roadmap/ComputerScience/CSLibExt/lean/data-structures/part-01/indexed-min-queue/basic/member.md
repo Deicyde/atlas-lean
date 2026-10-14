@@ -12,7 +12,7 @@ Test membership by one inverse-vector read.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Min Queue](indexed-min-queue.md)
 
 ## Sources
 

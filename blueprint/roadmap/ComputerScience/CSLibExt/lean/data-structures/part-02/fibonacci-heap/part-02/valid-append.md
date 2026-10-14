@@ -13,7 +13,12 @@ The concatenation of valid forests is valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](../part-01/valid-2.md)
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
+
+## Proof depends on
+
+- [Valid](../part-01/valid.md)
 
 ## Sources
 

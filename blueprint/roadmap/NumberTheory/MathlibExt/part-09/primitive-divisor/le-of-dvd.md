@@ -14,7 +14,7 @@ divisor occurs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Divisor](is-primitive-divisor.md)
 
 ## Sources
 

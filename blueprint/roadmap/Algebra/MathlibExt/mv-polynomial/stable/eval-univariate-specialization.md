@@ -13,7 +13,7 @@ Evaluating a univariate specialization amounts to updating the selected variable
 
 ## Depends on
 
-This node has no prerequisites.
+- [Univariate Specialization](univariate-specialization.md)
 
 ## Sources
 

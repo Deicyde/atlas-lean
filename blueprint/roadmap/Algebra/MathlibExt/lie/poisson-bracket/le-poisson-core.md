@@ -13,7 +13,9 @@ Every Poisson ideal below `J` lies below the core.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Poisson Ideal](is-poisson-ideal.md)
+- [Poisson Bracket](poisson-bracket.md)
+- [Poisson Core](poisson-core.md)
 
 ## Sources
 

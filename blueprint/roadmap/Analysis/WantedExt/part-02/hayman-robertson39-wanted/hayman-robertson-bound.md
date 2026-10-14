@@ -14,6 +14,10 @@ Robertson bound `|c_1|^2 + |c_3|^2 + … + |c_{2n-1}|^2 ≤ n` [AMR-022-6039, Ha
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hayman Odd Sqrt Coeff](hayman-odd-sqrt-coeff.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HaymanRobertson39Wanted](../../../../../sources/v2/WantedExt.md)

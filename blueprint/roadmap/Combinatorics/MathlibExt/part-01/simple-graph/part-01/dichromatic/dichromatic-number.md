@@ -15,6 +15,10 @@ dichromatically `k`-colourable (`⊤` if there is none).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dichromatic Colorable](dichromatic-colorable.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Dichromatic](../../../../../../../sources/v2/MathlibExt.md)

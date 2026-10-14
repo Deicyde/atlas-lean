@@ -15,6 +15,10 @@ The maximal residue-class error over all levels `y ≤ x` for the modulus
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bombieri Vinogradov Max Residue Error](bombieri-vinogradov-max-residue-error.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.PrimeCounting.BombieriVinogradovWanted](../../../../../../../sources/v2/WantedExt.md)

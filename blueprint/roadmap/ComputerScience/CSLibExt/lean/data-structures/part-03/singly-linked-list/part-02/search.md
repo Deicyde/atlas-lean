@@ -13,7 +13,11 @@ following next pointers from the head; the fuel is the pool capacity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../part-01/node.md)
+
+## Proof depends on
+
+- [Search Aux](search-aux.md)
 
 ## Sources
 

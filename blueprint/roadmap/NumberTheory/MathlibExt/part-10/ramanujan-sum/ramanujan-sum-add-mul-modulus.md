@@ -13,7 +13,7 @@ A Ramanujan sum is periodic in its integer argument with period the modulus.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ramanujan Sum](ramanujan-sum.md)
 
 ## Sources
 

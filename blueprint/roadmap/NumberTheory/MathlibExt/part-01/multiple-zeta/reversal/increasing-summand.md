@@ -13,7 +13,9 @@ This is the convention in arXiv:2304.08722 and arXiv:2608.10675.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
+- [Depth](../index/depth.md)
+- [Strict Increasing Tuple](strict-increasing-tuple.md)
 
 ## Sources
 

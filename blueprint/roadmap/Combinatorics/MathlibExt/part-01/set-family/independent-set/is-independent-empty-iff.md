@@ -13,7 +13,7 @@ The empty vertex set is independent iff every edge is nonempty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Independent](is-independent.md)
 
 ## Sources
 

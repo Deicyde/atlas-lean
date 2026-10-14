@@ -16,6 +16,10 @@ negatives of the summands here, and `exp x * exp (-x) = 1` identifies the value.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ramanujan part1 ch3 entry2](part1-ch3-entry2/ramanujan-part1-ch3-entry2.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry2Formula23SeriesPair](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,14 @@ The right endpoint of an edge is a vertex of the tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
+- [Adjacent](adjacent.md)
+
+## Proof depends on
+
+- [Mem left](mem-left.md)
+- [Symm](symm.md)
 
 ## Sources
 

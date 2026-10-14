@@ -16,6 +16,10 @@ proposition only.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Steiner Ratio Constant](steiner-ratio-constant.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.SteinerRatio](../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,7 @@ tree valid: the new root is still no greater than every represented element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decrease Root](decrease-root.md)
 
 ## Sources
 

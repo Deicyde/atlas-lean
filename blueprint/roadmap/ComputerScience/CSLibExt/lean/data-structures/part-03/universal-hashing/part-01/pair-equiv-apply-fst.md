@@ -13,7 +13,9 @@ The forward direction of `pairEquiv` is `pairMap` on first components.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mod Prime Index](mod-prime-index.md)
+- [Pair Equiv](pair-equiv.md)
+- [Pair Map](pair-map.md)
 
 ## Sources
 

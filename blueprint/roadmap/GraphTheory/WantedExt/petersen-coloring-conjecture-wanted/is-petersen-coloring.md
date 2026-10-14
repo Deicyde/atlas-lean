@@ -14,7 +14,11 @@ set of some Petersen vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PVertex](pvertex.md)
+
+## Proof depends on
+
+- [Petersen Graph](petersen-graph.md)
 
 ## Sources
 

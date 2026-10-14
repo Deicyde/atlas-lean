@@ -13,7 +13,18 @@ Every valid basic ancestor (realized with no branches) is restricted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Block](block.md)
+- [Gaussian Partition](gaussian-partition.md)
+- [Is Restricted Gaussian Partition](is-restricted-gaussian-partition.md)
+- [Basic Count](basic-count.md)
+
+## Proof depends on
+
+- [Branch Step](branch-step.md)
+- [Branch Valid](branch-valid.md)
+- [Apply Split](apply-split.md)
+- [Block Final Dims](block-final-dims.md)
+- [Stage Segments](stage-segments.md)
 
 ## Sources
 

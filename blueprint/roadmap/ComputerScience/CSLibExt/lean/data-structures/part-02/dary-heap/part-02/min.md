@@ -12,7 +12,7 @@ Inspect the minimum without removing it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Min Heap](dary-min-heap.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ The predicate is invariant under permuting the denominator tuple.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Integral Factorial Ratio](is-integral-factorial-ratio.md)
+
+## Proof depends on
+
+- [Factorial Prod](factorial-prod.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ C20b with the entropy convention and actual intrinsic-span laws.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dimension Intrinsic Law Supremum](dimension-intrinsic-law-supremum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Geometry.IntrinsicIsotropicConstant](../../../../../../sources/v2/MathlibExt.md)

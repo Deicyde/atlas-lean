@@ -13,7 +13,7 @@ Adjacency in the square of a simple graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square](square.md)
 
 ## Sources
 

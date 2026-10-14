@@ -17,6 +17,10 @@ The full-ground hypotheses are not needed; see `edmonds_matroid_intersection'`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Edmonds matroid intersection'](edmonds-matroid-intersection.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Matroid.MatroidIntersection](../../../../../../sources/v2/MathlibExt.md)

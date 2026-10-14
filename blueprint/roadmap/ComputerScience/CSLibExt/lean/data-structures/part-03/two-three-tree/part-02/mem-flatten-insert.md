@@ -13,7 +13,16 @@ Root insertion adds exactly the inserted key to the flattening.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Root](root.md)
+- [Ordered](ordered.md)
+- [Flatten](flatten.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Flatten insert](flatten-insert.md)
+- [Mem ordered Insert](../../../part-02/ordered-insert/mem-ordered-insert.md)
+- [Ordered Insert](../../../part-02/ordered-insert/ordered-insert.md)
 
 ## Sources
 

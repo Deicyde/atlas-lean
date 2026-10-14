@@ -14,7 +14,12 @@ Ramanujan's factorial series as `x → ∞`, with the Bell numbers `Nat.bell`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter6 Section13 Example CSum](chapter6-section13-example-csum.md)
+
+## Proof depends on
+
+- [Chapter6 Section13 Example CSum eq](chapter6-section13-example-csum-eq.md)
+- [Chapter6 Section13 Example CTerm](chapter6-section13-example-cterm.md)
 
 ## Sources
 

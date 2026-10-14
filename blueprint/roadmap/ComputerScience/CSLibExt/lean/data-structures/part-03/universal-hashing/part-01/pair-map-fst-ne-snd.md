@@ -14,7 +14,8 @@ differ: their difference is `a * (x - y)` with both factors nonzero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mod Prime Index](mod-prime-index.md)
+- [Pair Map](pair-map.md)
 
 ## Sources
 

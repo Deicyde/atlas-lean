@@ -13,7 +13,12 @@ When finite, the infimal exponent itself is the minimum in the every-epsilon sen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Rectangular Circuit Exponent](has-rectangular-circuit-exponent.md)
+- [Rectangular Circuit Exponent](rectangular-circuit-exponent.md)
+
+## Proof depends on
+
+- [Rectangular Circuit Exponent le iff](rectangular-circuit-exponent-le-iff.md)
 
 ## Sources
 

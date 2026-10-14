@@ -13,7 +13,8 @@ Membership in the image is existential over the subgroup.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Congruence Subgroup](congruence-subgroup.md)
+- [Image](image.md)
 
 ## Sources
 

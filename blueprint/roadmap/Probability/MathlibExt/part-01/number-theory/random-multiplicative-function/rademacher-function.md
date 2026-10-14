@@ -16,6 +16,10 @@ signs over the prime divisors.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prime Sign Nat](prime-sign-nat.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.NumberTheory.RandomMultiplicativeFunction](../../../../../../sources/v2/MathlibExt.md)

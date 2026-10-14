@@ -13,7 +13,8 @@ The header changes to the original successor exactly when the predecessor is NIL
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../basic/node.md)
+- [List Delete](list-delete.md)
 
 ## Sources
 

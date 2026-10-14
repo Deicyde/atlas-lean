@@ -13,7 +13,9 @@ lean: Cslib.Algorithms.Lean.BTree.flattenAux_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](btree.md)
+- [Flatten](flatten.md)
+- [Flatten Aux](flatten-aux.md)
 
 ## Sources
 

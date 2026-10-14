@@ -13,7 +13,8 @@ A bound on every actually quadratic aspect bounds their supremum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dual Circuit Exponent](dual-circuit-exponent.md)
+- [Rectangular Circuit Exponent](rectangular-circuit-exponent.md)
 
 ## Sources
 

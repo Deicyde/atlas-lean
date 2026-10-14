@@ -14,7 +14,7 @@ is at least two and erased otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Powerful Part](powerful-part.md)
 
 ## Sources
 

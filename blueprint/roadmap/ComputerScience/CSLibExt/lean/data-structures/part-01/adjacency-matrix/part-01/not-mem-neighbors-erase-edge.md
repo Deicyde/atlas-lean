@@ -13,7 +13,15 @@ After deletion, the target vertex is no longer a neighbor of the source.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adjacency Matrix](adjacency-matrix.md)
+- [Erase Edge](erase-edge.md)
+- [Neighbors](neighbors.md)
+
+## Proof depends on
+
+- [Has Edge](has-edge.md)
+- [Has Edge erase Edge](has-edge-erase-edge.md)
+- [Mem neighbors](mem-neighbors.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Constant-time: a projection of the node cache, not a traversal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Range Tree](range-tree.md)
 
 ## Sources
 

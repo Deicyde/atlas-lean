@@ -13,7 +13,11 @@ The interval-restricted sufficient-threshold family is nonempty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admissible Planar Threshold](admissible-planar-threshold.md)
+
+## Proof depends on
+
+- [Two admissible Planar Threshold](two-admissible-planar-threshold.md)
 
 ## Sources
 

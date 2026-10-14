@@ -14,7 +14,11 @@ original tree and is not the deleted key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Flatten delete](flatten-delete.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ No constant `c > 0` works (companion recording the disproof).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Conjecture](conjecture.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.ErdosProblem426Wanted](../../../../sources/v2/WantedExt.md)

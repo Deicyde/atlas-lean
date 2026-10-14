@@ -14,7 +14,7 @@ node.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Empty Node](is-empty-node.md)
 
 ## Sources
 

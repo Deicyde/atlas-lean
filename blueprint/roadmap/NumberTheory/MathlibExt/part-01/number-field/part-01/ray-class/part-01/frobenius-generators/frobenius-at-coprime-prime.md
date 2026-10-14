@@ -17,7 +17,7 @@ choice-independence stage.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Unramified Outside](is-unramified-outside.md)
 
 ## Sources
 

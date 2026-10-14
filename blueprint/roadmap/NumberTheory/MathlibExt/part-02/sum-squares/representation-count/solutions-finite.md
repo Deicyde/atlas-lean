@@ -14,7 +14,7 @@ integer vectors having that squared norm.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solutions](solutions.md)
 
 ## Sources
 

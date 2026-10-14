@@ -13,7 +13,11 @@ Every complex-exponent divisor sum takes the value one at one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma R](sigma-r.md)
+
+## Proof depends on
+
+- [Sigma R apply](sigma-r-apply.md)
 
 ## Sources
 

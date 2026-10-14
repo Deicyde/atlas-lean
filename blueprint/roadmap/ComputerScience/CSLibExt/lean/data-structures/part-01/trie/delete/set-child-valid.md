@@ -14,7 +14,11 @@ keys stay duplicate-free and every surviving child stays valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Set Child](set-child.md)
+
+## Proof depends on
+
+- [Is Empty Node](is-empty-node.md)
 
 ## Sources
 

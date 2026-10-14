@@ -13,7 +13,8 @@ No size is overlined in `ofPartition p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Overlined](is-overlined.md)
+- [Of Partition](of-partition.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Unfolding of `E_m` for `m ≠ 0` as a signed binomial sum over earlier values.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter5 Euler Even](chapter5-euler-even.md)
 
 ## Sources
 

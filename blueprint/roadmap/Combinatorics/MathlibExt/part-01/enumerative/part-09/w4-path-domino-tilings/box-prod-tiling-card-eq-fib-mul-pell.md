@@ -23,6 +23,10 @@ The paper's values `c_2 = 2, c_3 = 10, c_4 = 36` match `fib * pell`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Box Prod tiling card eq fib mul pell Number](box-prod-tiling-card-eq-fib-mul-pell-num.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.W4PathDominoTilings](../../../../../../../sources/v2/MathlibExt.md)

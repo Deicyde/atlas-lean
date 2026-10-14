@@ -13,7 +13,8 @@ Generator computation for `freeGroupToCoprime`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprime Primes](coprime-primes.md)
+- [Free Group To Coprime](free-group-to-coprime.md)
 
 ## Sources
 

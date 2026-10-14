@@ -14,7 +14,7 @@ slots.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cuckoo Hashing](cuckoo-hashing.md)
 
 ## Sources
 

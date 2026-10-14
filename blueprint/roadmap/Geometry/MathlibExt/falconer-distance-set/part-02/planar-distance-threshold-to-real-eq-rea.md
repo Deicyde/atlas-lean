@@ -13,7 +13,13 @@ The finite ENNReal representation gives the exact defining infimum over real `[0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar Distance Threshold](../part-01/planar-distance-threshold.md)
+- [Planar Threshold Property](../part-01/planar-threshold-property.md)
+
+## Proof depends on
+
+- [Admissible Planar Threshold](../part-01/admissible-planar-threshold.md)
+- [Real Threshold Family eq to Real image](real-threshold-family-eq-to-real-image.md)
 
 ## Sources
 

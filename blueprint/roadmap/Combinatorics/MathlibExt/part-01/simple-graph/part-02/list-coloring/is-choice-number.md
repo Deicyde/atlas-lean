@@ -15,6 +15,10 @@ list-colorable with any smaller number of colors.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is List Colorable](is-list-colorable.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.ListColoring](../../../../../../../sources/v2/MathlibExt.md)

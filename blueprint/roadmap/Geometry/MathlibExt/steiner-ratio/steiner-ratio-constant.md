@@ -15,6 +15,12 @@ over finite planar point sets with at least two points.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Plane](plane.md)
+- [Mst Length](mst-length.md)
+- [Steiner Length](steiner-length.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.SteinerRatio](../../../../sources/v2/MathlibExt.md)

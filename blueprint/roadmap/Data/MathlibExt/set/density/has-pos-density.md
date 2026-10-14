@@ -16,6 +16,10 @@ positive density (relative to a set `A`) if there exists a positive `α : ℝ` s
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Density](has-density.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Data.Set.Density](../../../../../sources/v2/MathlibExt.md)

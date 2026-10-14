@@ -14,7 +14,14 @@ identities, without representing the whole tree as weight-depth pairs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Weight Tree](huffman-weight-tree.md)
+- [Height](height.md)
+- [Path Cost](path-cost.md)
+- [Weights](weights.md)
+
+## Proof depends on
+
+- [Total Weight](total-weight.md)
 
 ## Sources
 

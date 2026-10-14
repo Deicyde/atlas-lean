@@ -12,7 +12,7 @@ The bucket-independent finite map represented by the table.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hash Table](hash-table.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ Word submonoid for `H^1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is HOne Word](is-hone-word.md)
+- [Y Word](y-word.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.MultipleZeta.WordAlgebra](../../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,12 @@ Inorder traversal is inherited from the prerequisite BST.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Inorder](../../binary-search-tree/part-01/inorder.md)
+- [Erase](erase.md)
 
 ## Sources
 

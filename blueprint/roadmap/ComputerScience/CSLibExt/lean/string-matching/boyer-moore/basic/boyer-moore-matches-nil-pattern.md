@@ -13,7 +13,7 @@ An empty pattern occurs at every bounded text boundary.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boyer Moore Matches](boyer-moore-matches.md)
 
 ## Sources
 

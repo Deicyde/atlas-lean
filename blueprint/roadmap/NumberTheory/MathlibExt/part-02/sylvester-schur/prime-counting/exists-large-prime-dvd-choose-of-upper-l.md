@@ -16,6 +16,10 @@ bound, then `Nat.choose N r` has a prime divisor greater than `r`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists large prime dvd choose of not forall prime dvd le](exists-large-prime-dvd-choose-of-not-for.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.PrimeCounting](../../../../../../sources/v2/MathlibExt.md)

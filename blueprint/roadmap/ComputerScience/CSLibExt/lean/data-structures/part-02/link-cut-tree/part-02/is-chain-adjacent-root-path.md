@@ -14,7 +14,15 @@ of the tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Adjacent](../part-01/adjacent.md)
+- [Root Path](root-path.md)
+
+## Proof depends on
+
+- [Children ind](../../euler-tour-tree/part-01/children-ind.md)
+- [Root](../../euler-tour-tree/part-01/root.md)
+- [Head? root Path](head-root-path.md)
 
 ## Sources
 

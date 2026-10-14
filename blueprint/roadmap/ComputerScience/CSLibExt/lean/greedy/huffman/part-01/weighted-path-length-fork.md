@@ -13,7 +13,9 @@ Merging two trees increases weighted path length by their total weights.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](huffman-tree.md)
+- [Total Weight](total-weight.md)
+- [Weighted Path Length](weighted-path-length.md)
 
 ## Sources
 

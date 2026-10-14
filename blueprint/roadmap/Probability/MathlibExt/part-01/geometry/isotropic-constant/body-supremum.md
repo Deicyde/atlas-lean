@@ -14,6 +14,10 @@ The sharp-value body constant from `constants/20b.md`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dimension Body Supremum](dimension-body-supremum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Geometry.IsotropicConstant](../../../../../../sources/v2/MathlibExt.md)

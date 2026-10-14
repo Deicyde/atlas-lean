@@ -13,7 +13,13 @@ Grafting does not change the root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Root](../../euler-tour-tree/part-01/root.md)
+- [Graft At](graft-at.md)
+
+## Proof depends on
+
+- [Children ind](../../euler-tour-tree/part-01/children-ind.md)
 
 ## Sources
 

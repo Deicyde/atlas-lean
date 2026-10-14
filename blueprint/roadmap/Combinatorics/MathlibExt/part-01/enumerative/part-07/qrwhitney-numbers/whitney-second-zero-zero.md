@@ -16,7 +16,7 @@ Concept `jis_sem_1510537ed21edced61e4c308`; statements `jis_b6c9b8526668212b3d27
 
 ## Depends on
 
-This node has no prerequisites.
+- [Whitney Second](whitney-second.md)
 
 ## Sources
 

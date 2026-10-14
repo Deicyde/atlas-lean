@@ -17,7 +17,11 @@ one value finitely often near c.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Essential Isolated Singularity At](is-essential-isolated-singularity-at.md)
+
+## Proof depends on
+
+- [Bloch](../bloch.md)
 
 ## Sources
 

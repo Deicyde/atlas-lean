@@ -13,7 +13,15 @@ A successful extraction returns a globally minimal stored value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Min Heap](../part-02/dary-min-heap.md)
+- [Elements](../part-02/elements.md)
+- [Extract Min](extract-min.md)
+
+## Proof depends on
+
+- [Dary Heap Ordered](../part-01/dary-heap-ordered.md)
+- [Root le](../part-01/root-le.md)
+- [Extract Tail](extract-tail.md)
 
 ## Sources
 

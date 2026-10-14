@@ -13,7 +13,18 @@ The stored keys of the built trie are exactly the listed keys.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build From](build-from.md)
+- [Keys](keys.md)
+
+## Proof depends on
+
+- [Valid](../part-01/valid.md)
+- [Empty](empty.md)
+- [Insert](insert.md)
+- [Lookup](../part-01/lookup.md)
+- [Lookup build From exists of mem](lookup-build-from-exists-of-mem.md)
+- [Mem keys iff](mem-keys-iff.md)
+- [Mem of lookup build From](mem-of-lookup-build-from.md)
 
 ## Sources
 

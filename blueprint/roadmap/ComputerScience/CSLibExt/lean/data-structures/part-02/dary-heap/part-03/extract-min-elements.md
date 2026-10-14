@@ -13,7 +13,13 @@ A successful extraction erases exactly one occurrence of its result.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Min Heap](../part-02/dary-min-heap.md)
+- [Elements](../part-02/elements.md)
+- [Extract Min](extract-min.md)
+
+## Proof depends on
+
+- [Extract Min cons elements](extract-min-cons-elements.md)
 
 ## Sources
 

@@ -16,7 +16,12 @@ archimedean bounds transfer to uniform bounds on all complex embeddings, so
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arakelov Divisor](arakelov-divisor.md)
+- [Section Set](section-set.md)
+
+## Proof depends on
+
+- [Mem section Set](mem-section-set.md)
 
 ## Sources
 

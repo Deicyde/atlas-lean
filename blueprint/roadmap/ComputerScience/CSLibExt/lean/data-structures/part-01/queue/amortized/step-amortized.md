@@ -14,7 +14,15 @@ potential.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Operation](operation.md)
+- [Charge](charge.md)
+- [Potential](potential.md)
+- [Step](step.md)
+
+## Proof depends on
+
+- [Dequeue amortized](dequeue-amortized.md)
+- [Enqueue amortized](enqueue-amortized.md)
 
 ## Sources
 

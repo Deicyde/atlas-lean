@@ -12,7 +12,7 @@ The cached upper leaf bound; `0` for the empty tree (vacuous).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Range Tree](range-tree.md)
 
 ## Sources
 

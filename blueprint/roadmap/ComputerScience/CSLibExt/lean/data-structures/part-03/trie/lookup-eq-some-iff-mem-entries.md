@@ -13,7 +13,10 @@ Lookup succeeds with a value exactly when the corresponding pair occurs in `entr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trie](trie.md)
+- [Valid](valid.md)
+- [Entries](entries.md)
+- [Lookup](lookup.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ The empty table satisfies the placement invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](valid.md)
+- [Empty](empty.md)
 
 ## Sources
 

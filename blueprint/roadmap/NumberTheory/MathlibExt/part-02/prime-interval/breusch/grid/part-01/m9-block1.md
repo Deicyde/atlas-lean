@@ -13,7 +13,7 @@ Grid upper bound `G9 ≤ 3` on the block `[2700, 5400)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G9](g9.md)
 
 ## Sources
 

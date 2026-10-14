@@ -13,7 +13,11 @@ The raw zero-exponent result is literal `1`, even when the modulus is one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Exponentiation](modular-exponentiation.md)
+
+## Proof depends on
+
+- [Modular Exponentiation zero](modular-exponentiation-zero.md)
 
 ## Sources
 

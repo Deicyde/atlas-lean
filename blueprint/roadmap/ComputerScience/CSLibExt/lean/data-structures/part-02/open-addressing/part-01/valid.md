@@ -17,7 +17,7 @@ most one binding and `insert` genuinely replaces it (see `stored_unique` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Open Addressing](open-addressing.md)
 
 ## Sources
 

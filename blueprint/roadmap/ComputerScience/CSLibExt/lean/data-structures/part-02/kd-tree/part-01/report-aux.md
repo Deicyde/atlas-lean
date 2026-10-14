@@ -19,7 +19,11 @@ pruned when `s < lo a` and the right child is pruned when `hi a < s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kd Tree](kd-tree.md)
+
+## Proof depends on
+
+- [In Box](in-box.md)
 
 ## Sources
 

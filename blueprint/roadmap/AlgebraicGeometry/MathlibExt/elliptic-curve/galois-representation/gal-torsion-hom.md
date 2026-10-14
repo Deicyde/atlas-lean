@@ -13,7 +13,12 @@ group is not a `ZMod p`-module, so restriction to the subtype comes first.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torsion Pts](torsion-pts.md)
+
+## Proof depends on
+
+- [Gal Point Hom](gal-point-hom.md)
+- [Gal Point Hom mem](gal-point-hom-mem.md)
 
 ## Sources
 

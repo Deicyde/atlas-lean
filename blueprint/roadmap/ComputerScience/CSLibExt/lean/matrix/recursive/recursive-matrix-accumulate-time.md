@@ -14,7 +14,7 @@ For dimension `2 ^ k` this equals its cube. Calls, indexing and allocation are u
 
 ## Depends on
 
-This node has no prerequisites.
+- [Recursive Matrix Accumulate](recursive-matrix-accumulate.md)
 
 ## Sources
 

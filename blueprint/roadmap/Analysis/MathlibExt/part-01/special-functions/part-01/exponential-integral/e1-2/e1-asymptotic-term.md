@@ -14,6 +14,10 @@ The `n`-th full term in the finite asymptotic expansion of `E1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [E1 Asymptotic Term Raw](e1-asymptotic-term-raw.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.ExponentialIntegral.E1](../../../../../../../../sources/v2/MathlibExt.md)

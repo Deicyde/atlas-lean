@@ -14,7 +14,29 @@ General form assuming only `Finite`; `gibbard_satterthwaite` is the source-shape
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dictatorial](is-dictatorial.md)
+- [Is Onto](is-onto.md)
+- [Is Strategy Proof](is-strategy-proof.md)
+- [Social Choice Function](social-choice-function.md)
+
+## Proof depends on
+
+- [Is Dictator](../arrow/is-dictator.md)
+- [Is Dictatorial](../arrow/is-dictatorial.md)
+- [Is IIA](../arrow/is-iia.md)
+- [Is Pareto](../arrow/is-pareto.md)
+- [Profile](../arrow/profile.md)
+- [Lt](../arrow/lt.md)
+- [Arrow impossibility general](../arrow/arrow-impossibility-general.md)
+- [Diff At Most At](diff-at-most-at.md)
+- [Is Dictator](is-dictator.md)
+- [Is Top Ranked](is-top-ranked.md)
+- [Profile](profile.md)
+- [Strict Total Order](strict-total-order.md)
+- [Irrefl](irrefl.md)
+- [Lt](lt.md)
+- [Total](total.md)
+- [Trans](trans.md)
 
 ## Sources
 

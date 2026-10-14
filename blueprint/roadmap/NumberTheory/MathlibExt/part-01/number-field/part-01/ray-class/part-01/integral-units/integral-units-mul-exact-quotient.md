@@ -13,7 +13,13 @@ Exactness at integral units, quotient form (ATLAS `exactSeq_exact_at_units`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integral Ray One Units](integral-ray-one-units.md)
+- [Integral Ray One Units Inclusion](integral-ray-one-units-inclusion.md)
+- [Integral Units To Ray Quotient](integral-units-to-ray-quotient.md)
+
+## Proof depends on
+
+- [Integral Units To Ray Quotient ker](integral-units-to-ray-quotient-ker.md)
 
 ## Sources
 

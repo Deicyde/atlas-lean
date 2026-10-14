@@ -14,7 +14,8 @@ keeps the remaining keys and children.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](../part-01/btree.md)
+- [Ins Result](../part-01/ins-result.md)
 
 ## Sources
 

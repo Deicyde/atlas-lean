@@ -13,7 +13,7 @@ The empty prefix (the trie root) is `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prefix Of](prefix-of.md)
 
 ## Sources
 

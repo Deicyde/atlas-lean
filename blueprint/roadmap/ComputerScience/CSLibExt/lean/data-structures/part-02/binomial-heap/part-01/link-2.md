@@ -13,7 +13,21 @@ Linking equal-rank valid trees preserves all tree invariants.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Tree](binomial-tree.md)
+- [Valid](valid.md)
+- [Link](link.md)
+- [Rank](rank.md)
+
+## Proof depends on
+
+- [Card elements](card-elements.md)
+- [Child valid](child-valid.md)
+- [Children ranks](children-ranks.md)
+- [Root le](root-le.md)
+- [Children](children.md)
+- [Elements](elements.md)
+- [Elements link](elements-link.md)
+- [Root](root.md)
 
 ## Sources
 

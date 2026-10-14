@@ -13,7 +13,8 @@ Uniform lower bounds on admissible operation exponents pass to the infimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Rectangular Circuit Exponent](has-rectangular-circuit-exponent.md)
+- [Rectangular Circuit Exponent](rectangular-circuit-exponent.md)
 
 ## Sources
 

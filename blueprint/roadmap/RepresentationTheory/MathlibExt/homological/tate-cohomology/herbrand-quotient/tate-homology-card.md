@@ -14,6 +14,10 @@ Cardinality of degree-`n` Tate homology, via `H_hat_n = H_hat^(-n-1)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tate Cohomology Card](tate-cohomology-card.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RepresentationTheory.Homological.TateCohomology.HerbrandQuotient](../../../../../../sources/v2/MathlibExt.md)

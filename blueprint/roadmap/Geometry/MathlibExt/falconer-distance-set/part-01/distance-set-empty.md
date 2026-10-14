@@ -13,7 +13,7 @@ The empty set determines no distances.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distance Set](distance-set.md)
 
 ## Sources
 

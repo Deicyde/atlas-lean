@@ -19,7 +19,12 @@ Frozen source statements: `jis_3a6643107cb0f496a9559012`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Almost Beatty Sequence](is-almost-beatty-sequence.md)
+- [Beatty Term](beatty-term.md)
+
+## Proof depends on
+
+- [Beatty Term eq floor](beatty-term-eq-floor.md)
 
 ## Sources
 

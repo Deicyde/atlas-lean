@@ -13,7 +13,7 @@ One element seeds both extrema without comparing elements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Max](min-max.md)
 
 ## Sources
 

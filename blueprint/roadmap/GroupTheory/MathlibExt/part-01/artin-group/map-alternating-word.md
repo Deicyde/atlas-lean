@@ -13,7 +13,7 @@ A monoid homomorphism carries an alternating word to the alternating word of the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Word](alternating-word.md)
 
 ## Sources
 

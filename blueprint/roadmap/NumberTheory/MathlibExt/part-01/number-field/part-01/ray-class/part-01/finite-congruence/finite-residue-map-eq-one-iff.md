@@ -15,7 +15,12 @@ Source (N406 §21.3): helper
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Residue Map](finite-residue-map.md)
+
+## Proof depends on
+
+- [Exists is Unit mod finite Part div eq](exists-is-unit-mod-finite-part-div-eq.md)
+- [Finite Residue Map apply of div eq](finite-residue-map-apply-of-div-eq.md)
 
 ## Sources
 

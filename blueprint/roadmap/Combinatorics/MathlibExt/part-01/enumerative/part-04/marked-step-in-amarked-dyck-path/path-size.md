@@ -14,7 +14,13 @@ concept `jis_sem_1ec0710af356bb3047cb9588`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Marked Dyck Path](marked-dyck-path.md)
+
+## Proof depends on
+
+- [Marked Dyck Step](marked-dyck-step.md)
+- [Marked Dyck Count E](marked-dyck-count-e.md)
+- [Marked Dyck Count Nstar](marked-dyck-count-nstar.md)
 
 ## Sources
 

@@ -13,7 +13,15 @@ The positive witness is genuinely in the source's zero-mean Sobolev class.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Zero Mean H2](../../basic/is-zero-mean-h2.md)
+- [Lowest Shell Witness](lowest-shell-witness.md)
+
+## Proof depends on
+
+- [Is H2](../../basic/is-h2.md)
+- [Lowest Shell Witness is H2](lowest-shell-witness-is-h2.md)
+- [Mean](../../basic/mean.md)
+- [Mean lowest Shell Witness](mean-lowest-shell-witness.md)
 
 ## Sources
 

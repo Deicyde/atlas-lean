@@ -15,6 +15,10 @@ The canonical completion map preserves integrality.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Valuation adic Completion Map](valuation-adic-completion-map.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.Completion.FiniteLiesOverValuation](../../../../../../../../sources/v2/MathlibExt.md)

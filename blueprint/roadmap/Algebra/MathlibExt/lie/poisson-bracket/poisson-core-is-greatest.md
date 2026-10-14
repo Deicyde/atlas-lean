@@ -14,7 +14,15 @@ below `J`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Poisson Ideal](is-poisson-ideal.md)
+- [Poisson Bracket](poisson-bracket.md)
+- [Poisson Core](poisson-core.md)
+
+## Proof depends on
+
+- [Le poisson Core](le-poisson-core.md)
+- [Poisson Core le](poisson-core-le.md)
+- [Poisson Core poisson](poisson-core-poisson.md)
 
 ## Sources
 

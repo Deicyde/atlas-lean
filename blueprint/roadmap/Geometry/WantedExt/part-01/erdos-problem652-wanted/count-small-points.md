@@ -13,7 +13,11 @@ from [EP-652], via the shared `distinctDistancesFrom` API.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
+
+## Proof depends on
+
+- [Distinct Distances From](../../../MathlibExt/metric/distinct-distances-from.md)
 
 ## Sources
 

@@ -13,7 +13,15 @@ The actual finite normalized sum law is preserved by canonical transport.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is IIDModel](is-iidmodel.md)
+- [Normalized Law](../part-01/normalized-law.md)
+
+## Proof depends on
+
+- [Joint Law](joint-law.md)
+- [Iid Law](../part-01/iid-law.md)
+- [Normalized Sum](../part-01/normalized-sum.md)
+- [Normalized Sum measurable](../part-01/normalized-sum-measurable.md)
 
 ## Sources
 

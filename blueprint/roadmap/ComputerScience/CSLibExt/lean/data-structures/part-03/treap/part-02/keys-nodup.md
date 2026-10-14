@@ -13,7 +13,13 @@ Strict BST ordering implies that all stored keys are distinct.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Ordered](../part-01/ordered.md)
+- [Keys](keys.md)
+
+## Proof depends on
+
+- [Ordered keys](ordered-keys.md)
 
 ## Sources
 

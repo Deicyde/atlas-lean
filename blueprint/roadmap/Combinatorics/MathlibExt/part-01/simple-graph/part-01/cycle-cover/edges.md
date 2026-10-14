@@ -12,7 +12,7 @@ The edges traversed by a cycle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cycle](cycle.md)
 
 ## Sources
 

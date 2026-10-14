@@ -13,7 +13,12 @@ There exists a prefix-free code with expected length less than entropy plus one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Prefix Free](is-prefix-free.md)
+
+## Proof depends on
+
+- [Is Prefix Free](../prefix-free/is-prefix-free.md)
+- [Kraft Mc Millan](../kraft-mcmillan-lengths.md)
 
 ## Sources
 

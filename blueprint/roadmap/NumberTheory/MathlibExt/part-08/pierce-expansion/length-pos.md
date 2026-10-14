@@ -13,7 +13,12 @@ The Pierce length is positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Length](length.md)
+
+## Proof depends on
+
+- [Exists traj eq zero pos](exists-traj-eq-zero-pos.md)
+- [Traj](traj.md)
 
 ## Sources
 

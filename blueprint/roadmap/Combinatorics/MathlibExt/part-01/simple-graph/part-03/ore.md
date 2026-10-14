@@ -16,6 +16,10 @@ distinct nonadjacent vertices the degree sum is at least the number of vertices.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hamiltonian Cycle](../part-02/of-cyclic-list.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Ore](../../../../../../sources/v2/MathlibExt.md)

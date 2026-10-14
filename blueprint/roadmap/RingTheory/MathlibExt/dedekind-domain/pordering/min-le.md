@@ -13,7 +13,8 @@ Accessor: the minimum property at every stage.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is POrdering](is-pordering.md)
+- [P Ordering Valuation](p-ordering-valuation.md)
 
 ## Sources
 

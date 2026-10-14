@@ -16,7 +16,8 @@ symmetric principal value `PV ∫₀²`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Logarithmic Integral Domain](logarithmic-integral-domain.md)
+- [Logarithmic Integral](logarithmic-integral.md)
 
 ## Sources
 

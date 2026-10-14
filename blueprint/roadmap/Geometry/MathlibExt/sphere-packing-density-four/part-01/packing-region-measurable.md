@@ -13,7 +13,14 @@ Source: the covered region is Lebesgue measurable, without an extra packing rest
 
 ## Depends on
 
-This node has no prerequisites.
+- [Packing](packing.md)
+- [Space](space.md)
+- [Packing Region](packing-region.md)
+
+## Proof depends on
+
+- [Centers countable](centers-countable.md)
+- [Packed Ball](packed-ball.md)
 
 ## Sources
 

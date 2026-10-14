@@ -12,7 +12,11 @@ lean: MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassifi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convex Polytope](convex-polytope.md)
+
+## Proof depends on
+
+- [Dim](dim.md)
 
 ## Sources
 

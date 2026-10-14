@@ -12,7 +12,7 @@ Follow parent pointers to the unique root reached from `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
 
 ## Sources
 

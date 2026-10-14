@@ -17,7 +17,8 @@ required clause `first_identification`, under `1 <= k <= n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bessel Number First](bessel-number-first.md)
+- [Meromorphic Stirling First](meromorphic-stirling-first.md)
 
 ## Sources
 

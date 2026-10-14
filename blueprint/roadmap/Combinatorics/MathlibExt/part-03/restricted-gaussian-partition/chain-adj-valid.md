@@ -14,7 +14,7 @@ unlike `List.Pairwise`, which would relate every later pair.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Branch Step](branch-step.md)
 
 ## Sources
 

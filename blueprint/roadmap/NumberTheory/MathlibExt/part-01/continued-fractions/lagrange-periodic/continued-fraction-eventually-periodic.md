@@ -17,6 +17,10 @@ vacuous `Option.none` tail. Source: Nimbran–Levrie lines 130–134.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Eventually Periodic](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ContinuedFractions.LagrangePeriodic](../../../../../../sources/v2/MathlibExt.md)

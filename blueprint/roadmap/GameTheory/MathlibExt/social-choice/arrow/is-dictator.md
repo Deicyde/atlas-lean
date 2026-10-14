@@ -12,7 +12,12 @@ lean: MathlibExt.GameTheory.SocialChoice.ArrowWanted.IsDictator
 
 ## Depends on
 
-This node has no prerequisites.
+- [Social Welfare Function](social-welfare-function.md)
+
+## Proof depends on
+
+- [Profile](profile.md)
+- [Lt](lt.md)
 
 ## Sources
 

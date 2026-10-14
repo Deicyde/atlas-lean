@@ -13,7 +13,11 @@ Jacobi's cube identity, formal: `E^3 = J` in `ℤ⟦X⟧`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobi Cube Series](jacobi-cube-series.md)
+
+## Proof depends on
+
+- [Two mul choose two succ](two-mul-choose-two-succ.md)
 
 ## Sources
 

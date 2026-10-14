@@ -13,7 +13,12 @@ Building a tree by insertion always produces an ordered tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered](ordered.md)
+- [From List](from-list.md)
+
+## Proof depends on
+
+- [Ordered insert](ordered-insert.md)
 
 ## Sources
 

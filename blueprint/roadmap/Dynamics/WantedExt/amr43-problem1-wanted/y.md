@@ -13,7 +13,7 @@ equal adjacents.
 
 ## Depends on
 
-This node has no prerequisites.
+- [YAmb](yamb.md)
 
 ## Sources
 

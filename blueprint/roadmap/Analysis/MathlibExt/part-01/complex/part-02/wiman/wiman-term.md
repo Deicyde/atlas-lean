@@ -17,6 +17,10 @@ absolute values, so this quantity is always nonnegative.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Wiman Taylor Coefficient](wiman-taylor-coefficient.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.Wiman](../../../../../../../sources/v2/MathlibExt.md)

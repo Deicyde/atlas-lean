@@ -13,7 +13,14 @@ Each class contributes `degree * (ω l * χ g_l⁻¹)` to the self-pairing sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Scalar](../central-character/central-scalar.md)
+- [Class Rep](../class-sum/class-rep.md)
+
+## Proof depends on
+
+- [Central Scalar trace](../central-character/central-scalar-trace.md)
+- [Char eq of mem carrier](char-eq-of-mem-carrier.md)
+- [Char inv eq of mem carrier](char-inv-eq-of-mem-carrier.md)
 
 ## Sources
 

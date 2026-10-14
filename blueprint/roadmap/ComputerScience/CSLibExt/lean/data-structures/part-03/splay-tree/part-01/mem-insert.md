@@ -13,7 +13,16 @@ Inserting a key adds exactly that key to structural membership.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Mem of mem split](mem-of-mem-split.md)
+- [Mem splay](mem-splay.md)
+- [Mem split of mem](mem-split-of-mem.md)
+- [Splay](splay.md)
+- [Split](split.md)
 
 ## Sources
 

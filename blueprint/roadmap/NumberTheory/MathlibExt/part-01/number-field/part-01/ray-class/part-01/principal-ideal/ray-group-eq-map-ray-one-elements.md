@@ -13,7 +13,11 @@ The ray group is exactly the image of ray-one elements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Principal Ray Ideal Map](principal-ray-ideal-map.md)
+
+## Proof depends on
+
+- [Principal Ray Ideal Map apply](principal-ray-ideal-map-apply.md)
 
 ## Sources
 

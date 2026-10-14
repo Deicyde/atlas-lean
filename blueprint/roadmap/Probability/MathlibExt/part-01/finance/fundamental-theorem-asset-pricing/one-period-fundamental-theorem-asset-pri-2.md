@@ -16,6 +16,10 @@ expected gain exists.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [One period fundamental theorem asset pricing general](one-period-fundamental-theorem-asset-pri.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Finance.FundamentalTheoremAssetPricing](../../../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,12 @@ requested by `WantedExt.NumberTheory.BoundedPrimeGapsWanted`. No finiteness is p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Gap Liminf](prime-gap-liminf.md)
+
+## Proof depends on
+
+- [Prime Gap Liminf le iff infinite](prime-gap-liminf-le-iff-infinite.md)
+- [Prime Gap](../prime-gap.md)
 
 ## Sources
 

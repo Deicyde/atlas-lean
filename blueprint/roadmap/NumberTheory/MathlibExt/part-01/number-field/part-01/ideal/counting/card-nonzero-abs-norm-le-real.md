@@ -17,6 +17,10 @@ least `1`; for `1 ≤ M` the real and integer subtypes coincide.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Card nonzero abs Norm le](card-nonzero-abs-norm-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.Ideal.Counting](../../../../../../../../sources/v2/MathlibExt.md)

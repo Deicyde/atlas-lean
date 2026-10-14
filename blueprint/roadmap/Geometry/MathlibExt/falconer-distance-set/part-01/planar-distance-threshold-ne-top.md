@@ -13,7 +13,11 @@ The planar distance threshold is finite, without any analytic bound being assume
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar Distance Threshold](planar-distance-threshold.md)
+
+## Proof depends on
+
+- [Planar Distance Threshold le two](planar-distance-threshold-le-two.md)
 
 ## Sources
 

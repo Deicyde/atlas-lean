@@ -19,6 +19,15 @@ pentagonal number theorem and Jacobi's cube identity.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Coeff jacobi Cube Series eq zero](ramanujan-partition-congruence/coeff-jacobi-cube-series-eq-zero.md)
+- [Coeff jacobi Cube Series triangle](ramanujan-partition-congruence/coeff-jacobi-cube-series-triangle.md)
+- [Dvd partition Function of dvd coeff pentagonal Series pow](ramanujan-partition-congruence/dvd-partition-function-of-dvd-coeff-pent.md)
+- [Jacobi Cube Series](ramanujan-partition-congruence/jacobi-cube-series.md)
+- [Pentagonal Series pow three](ramanujan-partition-congruence/pentagonal-series-pow-three.md)
+- [Two mul choose two succ](ramanujan-partition-congruence/two-mul-choose-two-succ.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.Partition.RamanujanPartitionCongruenceModEleven](../../../../../../../sources/v2/MathlibExt.md)

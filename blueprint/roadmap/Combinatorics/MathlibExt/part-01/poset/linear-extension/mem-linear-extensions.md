@@ -13,7 +13,7 @@ Membership characterization for `linearExtensions`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Extensions](linear-extensions.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ The determinant-and-volume convention for convex bodies.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Full Dimensional Body](full-dimensional-body.md)
+
+## Proof depends on
+
+- [Body Law](body-law.md)
+- [Covariance Matrix](covariance-matrix.md)
 
 ## Sources
 

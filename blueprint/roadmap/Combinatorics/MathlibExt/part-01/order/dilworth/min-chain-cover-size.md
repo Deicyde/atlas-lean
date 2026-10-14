@@ -14,6 +14,10 @@ The smallest number of chains covering the finite partial order `α`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Chain Cover Fin](is-chain-cover-fin.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Order.Dilworth](../../../../../../sources/v2/MathlibExt.md)

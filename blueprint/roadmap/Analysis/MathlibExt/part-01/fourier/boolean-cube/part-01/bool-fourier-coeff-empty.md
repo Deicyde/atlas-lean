@@ -13,7 +13,13 @@ The coefficient of the empty character is the uniform mean.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](bool-cube.md)
+- [Bool Fourier Coeff](bool-fourier-coeff.md)
+
+## Proof depends on
+
+- [Cube Chi](cube-chi.md)
+- [Cube Chi empty](cube-chi-empty.md)
 
 ## Sources
 

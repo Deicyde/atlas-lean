@@ -13,7 +13,12 @@ Divisors of `Q9` divide multiples of multiples of `Q9`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q9](../../grid/part-01/q9.md)
+- [W9](../../grid/part-01/w9.md)
+
+## Proof depends on
+
+- [W9 dvd](../../grid/part-01/w9-dvd.md)
 
 ## Sources
 

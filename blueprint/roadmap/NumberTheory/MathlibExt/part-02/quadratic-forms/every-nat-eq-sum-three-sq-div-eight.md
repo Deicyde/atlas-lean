@@ -15,6 +15,10 @@ Every natural number is a sum of three values of the form `⌊n² / 8⌋`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Legendre Three Square](exists-three-squares-of-not-four-pow-mul.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.QuadraticForms.ThreeFloorSquareSums](../../../../../sources/v2/MathlibExt.md)

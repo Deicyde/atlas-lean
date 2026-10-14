@@ -12,7 +12,7 @@ A vertex is incident with an edge when it belongs to the edge's endpoint pair.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
 
 ## Sources
 

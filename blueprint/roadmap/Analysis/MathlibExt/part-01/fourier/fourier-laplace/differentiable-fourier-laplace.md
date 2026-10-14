@@ -14,7 +14,11 @@ is entire (complex-differentiable at every `z`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fourier Laplace](fourier-laplace.md)
+
+## Proof depends on
+
+- [Has Deriv At fourier Laplace](has-deriv-at-fourier-laplace.md)
 
 ## Sources
 

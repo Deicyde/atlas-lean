@@ -16,7 +16,13 @@ form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lucas Sequence First Kind](../../part-02/recurrences/part-02/lucas-sequence-first-kind/is-lucas-sequence-first-kind.md)
+
+## Proof depends on
+
+- [Initial One](../../part-02/recurrences/part-02/lucas-sequence-first-kind/initial-one.md)
+- [Initial Zero](../../part-02/recurrences/part-02/lucas-sequence-first-kind/initial-zero.md)
+- [Recurrence Step](../../part-02/recurrences/part-02/lucas-sequence-first-kind/recurrence-step.md)
 
 ## Sources
 

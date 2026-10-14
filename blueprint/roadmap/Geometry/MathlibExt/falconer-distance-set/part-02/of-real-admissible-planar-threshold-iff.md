@@ -13,7 +13,8 @@ Nonnegative real thresholds have exactly the source's real interval domain.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admissible Planar Threshold](../part-01/admissible-planar-threshold.md)
+- [Planar Threshold Property](../part-01/planar-threshold-property.md)
 
 ## Sources
 

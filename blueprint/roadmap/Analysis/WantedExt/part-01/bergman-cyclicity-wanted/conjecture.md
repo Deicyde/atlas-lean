@@ -14,6 +14,13 @@ lean: MathlibExt.Analysis.BergmanCyclicityWanted.conjecture
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bergman](bergman.md)
+- [Dense](dense.md)
+- [Disc](disc.md)
+- [Inv](inv.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.BergmanCyclicityWanted](../../../../../sources/v2/WantedExt.md)

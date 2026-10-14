@@ -13,7 +13,11 @@ used entries if the cache would exceed its capacity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lru Cache](lru-cache.md)
+
+## Proof depends on
+
+- [Erase Key](erase-key.md)
 
 ## Sources
 

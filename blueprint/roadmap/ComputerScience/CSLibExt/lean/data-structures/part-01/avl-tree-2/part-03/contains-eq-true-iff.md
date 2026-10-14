@@ -14,7 +14,14 @@ inherited from `BinarySearchTree` through `toBinaryTree`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](../part-01/mem.md)
+- [Ordered](../part-01/ordered.md)
+- [Tree](../part-01/tree.md)
+- [Contains](../part-01/contains.md)
+
+## Proof depends on
+
+- [To Binary Tree](../part-01/to-binary-tree.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ The actual insertion increases the saved item count by one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](table.md)
+- [Table Insert](table-insert.md)
 
 ## Sources
 

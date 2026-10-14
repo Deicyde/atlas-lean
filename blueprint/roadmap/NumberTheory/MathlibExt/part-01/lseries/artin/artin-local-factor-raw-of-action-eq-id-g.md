@@ -14,7 +14,12 @@ dimension of the inertia-invariant subspace.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Artin Local Datum](artin-local-datum.md)
+- [Artin Local Factor Raw](artin-local-factor-raw.md)
+
+## Proof depends on
+
+- [Artin Local Denominator](artin-local-denominator.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ Accessor: the underlying set is infinite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is POrdering](is-pordering.md)
+
+## Proof depends on
+
+- [P Ordering Valuation](p-ordering-valuation.md)
 
 ## Sources
 

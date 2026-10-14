@@ -20,6 +20,10 @@ increasing part sizes).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Perfect composition iff symbolic parts perm perfect partition general](perfect-composition-iff-symbolic-parts-p.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.PerfectCompositions](../../../../../../../sources/v2/MathlibExt.md)

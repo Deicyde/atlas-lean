@@ -13,7 +13,11 @@ Membership in a tree is membership in its flattening. The structural reading is
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](btree.md)
+
+## Proof depends on
+
+- [Flatten](flatten.md)
 
 ## Sources
 

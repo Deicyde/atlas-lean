@@ -12,7 +12,13 @@ The empty binomial heap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Heap](binomial-heap.md)
+
+## Proof depends on
+
+- [Valid](../part-01/valid-2.md)
+- [Valid nil](valid-nil.md)
+- [Binomial Tree](../part-01/binomial-tree.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ The lattice is the integer span of a real basis, not an arbitrary periodicity or
 
 ## Depends on
 
-This node has no prerequisites.
+- [Packing](packing.md)
+
+## Proof depends on
+
+- [Space](space.md)
 
 ## Sources
 

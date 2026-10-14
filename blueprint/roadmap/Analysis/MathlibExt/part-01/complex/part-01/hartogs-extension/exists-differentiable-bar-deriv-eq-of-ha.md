@@ -13,7 +13,7 @@ A compactly supported `C¹` function on `ℂ` is a Wirtinger derivative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bar Deriv](bar-deriv.md)
 
 ## Sources
 

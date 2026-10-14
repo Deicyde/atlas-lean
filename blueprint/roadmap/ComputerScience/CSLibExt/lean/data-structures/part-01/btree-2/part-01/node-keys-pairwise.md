@@ -13,7 +13,15 @@ In an ordered node, the separator keys are strictly increasing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](btree.md)
+- [Ordered](ordered.md)
+
+## Proof depends on
+
+- [Flatten](flatten.md)
+- [Flatten Aux](flatten-aux.md)
+- [Flatten Aux eq](flatten-aux-eq.md)
+- [Flatten node cons nil](flatten-node-cons-nil.md)
 
 ## Sources
 

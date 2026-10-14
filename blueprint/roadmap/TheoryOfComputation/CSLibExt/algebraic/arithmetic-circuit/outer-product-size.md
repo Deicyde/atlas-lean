@@ -13,7 +13,8 @@ The exact arithmetic-operation count of the finite outer-product circuit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arithmetic Circuit](arithmetic-circuit.md)
+- [Outer Product](outer-product.md)
 
 ## Sources
 

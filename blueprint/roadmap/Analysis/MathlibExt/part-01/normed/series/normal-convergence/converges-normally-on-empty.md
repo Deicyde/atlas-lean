@@ -13,7 +13,12 @@ Every function series converges normally on the empty set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Converges Normally On](converges-normally-on.md)
+
+## Proof depends on
+
+- [Sup Norm On](sup-norm-on.md)
+- [Sup Norm On empty](sup-norm-on-empty.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ any range of positions `L` covering the base-`b` digits of both `n` and `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [B Ary Binomial Coefficient](b-ary-binomial-coefficient.md)
 
 ## Sources
 

@@ -13,7 +13,16 @@ The actual real mean is the real part of the actual zero Fourier coefficient.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torus](../../basic/torus.md)
+- [Mean](../../basic/mean.md)
+- [Unit Representative](../../basic/unit-representative.md)
+
+## Proof depends on
+
+- [Frequency](../../basic/frequency.md)
+- [M Fourier Coeff integrable](m-fourier-coeff-integrable.md)
+- [Unit Haar](../../basic/unit-haar.md)
+- [Unit Rescaling](../../basic/unit-rescaling.md)
 
 ## Sources
 

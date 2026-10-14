@@ -13,7 +13,8 @@ Interface restatement of `genocchiNumber`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Genocchi Number](genocchi-number.md)
+- [Genocchi Power Series](genocchi-power-series.md)
 
 ## Sources
 

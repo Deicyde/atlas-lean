@@ -13,7 +13,13 @@ Inserting a value raises its multiplicity by one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Min Heap](dary-min-heap.md)
+- [Elements](elements.md)
+- [Push](push.md)
+
+## Proof depends on
+
+- [Elements push](elements-push.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Construction of a Toeplitz matrix from an explicit coefficient witness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Toeplitz Matrix](is-toeplitz-matrix.md)
 
 ## Sources
 

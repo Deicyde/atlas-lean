@@ -14,7 +14,11 @@ product sum, with the left factor drawn from `A` and the right factor from `B`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Basic](../strassen-matrix-accumulate.md)
+
+## Proof depends on
+
+- [Strassen Matrix Accumulate ret](strassen-matrix-accumulate-ret.md)
 
 ## Sources
 

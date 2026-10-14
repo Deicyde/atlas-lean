@@ -14,6 +14,10 @@ A pseudometric space is Gromov-hyperbolic if it is `δ`-hyperbolic for some `δ`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Delta Hyperbolic](is-delta-hyperbolic.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Topology.MetricSpace.GromovHyperbolic](../../../../../sources/v2/MathlibExt.md)

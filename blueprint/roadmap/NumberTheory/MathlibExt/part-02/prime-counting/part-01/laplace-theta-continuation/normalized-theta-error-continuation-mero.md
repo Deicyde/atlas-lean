@@ -13,7 +13,12 @@ Meromorphicity of the normalized-error continuation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Theta Error Continuation](normalized-theta-error-continuation.md)
+
+## Proof depends on
+
+- [Shifted Log Dirichlet Continuation](shifted-log-dirichlet-continuation.md)
+- [Shifted Log Dirichlet Continuation meromorphic](shifted-log-dirichlet-continuation-merom.md)
 
 ## Sources
 

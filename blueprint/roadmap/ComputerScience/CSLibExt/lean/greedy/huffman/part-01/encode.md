@@ -12,7 +12,11 @@ Encode a message when every symbol occurs in the tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](huffman-tree.md)
+
+## Proof depends on
+
+- [Code?](code.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Unfolding at nonzero `n` (integral form of He (1.7)).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jordan Totient](jordan-totient.md)
 
 ## Sources
 

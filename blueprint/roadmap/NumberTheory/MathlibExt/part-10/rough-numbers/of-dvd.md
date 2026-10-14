@@ -13,7 +13,11 @@ Positive divisors of a rough number are rough.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Rough](is-rough.md)
+
+## Proof depends on
+
+- [Lt of prime dvd](lt-of-prime-dvd.md)
 
 ## Sources
 

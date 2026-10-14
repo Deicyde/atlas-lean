@@ -12,7 +12,7 @@ Inspect the minimum value (the cached minimum) without removing it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Heap](../part-02/fibonacci-heap.md)
 
 ## Sources
 

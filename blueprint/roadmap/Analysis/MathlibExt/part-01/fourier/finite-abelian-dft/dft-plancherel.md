@@ -17,7 +17,11 @@ checking it on characters.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dft Fun](dft-fun.md)
+
+## Proof depends on
+
+- [Dft inversion](dft-inversion.md)
 
 ## Sources
 

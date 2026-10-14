@@ -12,7 +12,14 @@ The multiple-zeta-star series over weakly decreasing tuples.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
+- [Is Admissible Or Empty](is-admissible-or-empty.md)
+
+## Proof depends on
+
+- [Depth](../index/depth.md)
+- [Weakly Decreasing Tuple](weakly-decreasing-tuple.md)
+- [Star Summand](star-summand.md)
 
 ## Sources
 

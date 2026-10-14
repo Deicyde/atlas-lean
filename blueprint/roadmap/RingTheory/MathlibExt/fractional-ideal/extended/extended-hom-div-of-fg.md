@@ -15,6 +15,11 @@ Extension commutes with division for a nonzero finitely generated denominator.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Coe extended Hom eq localized'](coe-extended-hom-eq-localized.md)
+- [Localized' div of fg](localized-div-of-fg.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.FractionalIdeal.Extended](../../../../../sources/v2/MathlibExt.md)

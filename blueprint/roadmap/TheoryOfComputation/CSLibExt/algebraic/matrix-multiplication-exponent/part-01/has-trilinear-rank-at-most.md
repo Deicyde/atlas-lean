@@ -15,6 +15,11 @@ A concrete trilinear coefficient tensor has rank at most `r` when it is the sum 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rank One Trilinear Term](rank-one-trilinear-term.md)
+- [Eval](eval.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Complexity.Algebraic.MatrixMultiplicationExponent](../../../../../../sources/v2/CSLibExt.md)

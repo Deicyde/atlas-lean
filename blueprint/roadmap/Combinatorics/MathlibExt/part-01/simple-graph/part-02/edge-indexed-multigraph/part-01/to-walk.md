@@ -12,7 +12,13 @@ Forget edge identities in an indexed walk.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
+- [Indexed Walk](indexed-walk.md)
+- [Underlying](underlying.md)
+
+## Proof depends on
+
+- [Underlying adj](underlying-adj.md)
 
 ## Sources
 

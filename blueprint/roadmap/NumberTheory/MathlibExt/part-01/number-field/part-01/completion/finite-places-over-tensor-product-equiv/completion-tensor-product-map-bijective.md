@@ -13,7 +13,12 @@ Bijectivity of the completion tensor-product map.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Completion Tensor Product Map](../finite-places-over-tensor-product/completion-tensor-product-map.md)
+- [Places Over](../finite-places-over/places-over.md)
+
+## Proof depends on
+
+- [Completion Tensor Product Map injective](completion-tensor-product-map-injective.md)
 
 ## Sources
 

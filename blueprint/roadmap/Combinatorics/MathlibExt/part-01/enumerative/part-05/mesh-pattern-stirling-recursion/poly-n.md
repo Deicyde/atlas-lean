@@ -15,6 +15,10 @@ recursion and the coefficient theorem.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mesh N](mesh-n.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MeshPatternStirlingRecursion](../../../../../../../sources/v2/MathlibExt.md)

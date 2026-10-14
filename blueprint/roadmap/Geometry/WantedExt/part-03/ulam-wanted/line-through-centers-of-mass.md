@@ -13,7 +13,13 @@ center of mass of the "submerged part" `K ∩ H⁻(ξ)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cutting Hyperplane At Level](cutting-hyperplane-at-level.md)
+- [S](s.md)
+
+## Proof depends on
+
+- [H minus](h-minus.md)
+- [Center Of Mass](center-of-mass.md)
 
 ## Sources
 

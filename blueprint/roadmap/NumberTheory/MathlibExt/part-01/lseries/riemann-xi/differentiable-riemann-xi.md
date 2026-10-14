@@ -13,7 +13,7 @@ The Riemann xi function is entire.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Riemann Xi](riemann-xi.md)
 
 ## Sources
 

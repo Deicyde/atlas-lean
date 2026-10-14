@@ -15,6 +15,10 @@ The absolute norm of an invertible fractional ideal is positive.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Abs Norm units ne zero](abs-norm-units-ne-zero.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.ArakelovDivisor](../../../../../../../../sources/v2/MathlibExt.md)

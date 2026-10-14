@@ -13,7 +13,15 @@ Every heap tree has rank at most the binary logarithm of the heap cardinality.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Heap](binomial-heap.md)
+- [Elements](elements.md)
+- [Binomial Tree](../part-01/binomial-tree.md)
+- [Rank](../part-01/rank.md)
+
+## Proof depends on
+
+- [Valid](../part-01/valid-2.md)
+- [Member rank le log2 card](member-rank-le-log2-card.md)
 
 ## Sources
 

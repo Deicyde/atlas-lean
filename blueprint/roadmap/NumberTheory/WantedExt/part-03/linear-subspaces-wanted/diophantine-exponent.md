@@ -16,6 +16,12 @@ for approximation by `k`-dimensional rational subspaces by
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Rational](is-rational.md)
+- [Dist Subspaces](dist-subspaces.md)
+- [Height](height.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LinearSubspacesWanted](../../../../../sources/v2/WantedExt.md)

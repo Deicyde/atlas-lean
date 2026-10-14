@@ -13,7 +13,11 @@ Every sift-up executes at most one value comparison per level above its index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sift Up](sift-up.md)
+
+## Proof depends on
+
+- [Log2 heap Parent add one](log2-heap-parent-add-one.md)
 
 ## Sources
 

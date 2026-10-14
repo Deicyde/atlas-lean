@@ -15,6 +15,10 @@ predicate from `MathlibExt` applied to its coercion to a set.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sidon](../../../MathlibExt/part-01/additive/is-sidon.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ErdosSidonIsolatedSumsWanted](../../../../../sources/v2/WantedExt.md)

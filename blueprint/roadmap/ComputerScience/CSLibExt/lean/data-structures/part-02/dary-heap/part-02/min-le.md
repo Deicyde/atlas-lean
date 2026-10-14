@@ -13,7 +13,14 @@ Inspection returns a value no greater than every represented value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Min Heap](dary-min-heap.md)
+- [Elements](elements.md)
+- [Min?](min.md)
+
+## Proof depends on
+
+- [Dary Heap Ordered](../part-01/dary-heap-ordered.md)
+- [Root le](../part-01/root-le.md)
 
 ## Sources
 

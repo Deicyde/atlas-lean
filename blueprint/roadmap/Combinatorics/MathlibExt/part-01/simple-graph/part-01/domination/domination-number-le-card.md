@@ -13,7 +13,8 @@ Every dominating set has size at least the domination number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dominating](is-dominating.md)
+- [Domination Number](domination-number.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ Sifting down only permutes the input array.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sift Down](sift-down.md)
+
+## Proof depends on
+
+- [Smaller Child](smaller-child.md)
+- [Smaller Child gt](smaller-child-gt.md)
+- [Smaller Child valid](smaller-child-valid.md)
 
 ## Sources
 

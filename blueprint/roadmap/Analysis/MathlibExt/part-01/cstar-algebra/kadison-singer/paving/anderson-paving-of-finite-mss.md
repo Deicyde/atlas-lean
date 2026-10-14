@@ -13,7 +13,11 @@ A quantitative Anderson paving bound follows from the finite MSS random-vector b
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite MSSBound](finite-mssbound.md)
+
+## Proof depends on
+
+- [Exists frame partition of finite MSS](exists-frame-partition-of-finite-mss.md)
 
 ## Sources
 

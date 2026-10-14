@@ -17,6 +17,10 @@ power series. The constant-coefficient condition selects the intended square-roo
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Motzkin Square Root](is-motzkin-square-root.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MotzkinTriangle](../../../../../../../sources/v2/MathlibExt.md)

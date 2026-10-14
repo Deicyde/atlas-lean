@@ -12,7 +12,12 @@ The integral of the actual real function; physical mean is `(2π)²` times this 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torus](torus.md)
+
+## Proof depends on
+
+- [Unit Haar](unit-haar.md)
+- [Unit Rescaling](unit-rescaling.md)
 
 ## Sources
 

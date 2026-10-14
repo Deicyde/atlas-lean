@@ -15,6 +15,10 @@ source only evaluates at `t > 0` (see `latticePointSetPos`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Std Lattice](std-lattice.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.LatticePointEnumerator](../../../../sources/v2/MathlibExt.md)

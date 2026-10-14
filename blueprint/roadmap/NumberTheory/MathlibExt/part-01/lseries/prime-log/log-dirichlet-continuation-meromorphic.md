@@ -13,7 +13,12 @@ The canonical continuation is meromorphic on `Re s > 1 / 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log Dirichlet Continuation](log-dirichlet-continuation.md)
+
+## Proof depends on
+
+- [Log Dirichlet Correction](log-dirichlet-correction.md)
+- [Log Dirichlet Correction analytic On](log-dirichlet-correction-analytic-on.md)
 
 ## Sources
 

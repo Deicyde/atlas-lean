@@ -13,7 +13,13 @@ A key is in a tree built from a list exactly when it is in the list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
+- [From List](../part-01/from-list.md)
+
+## Proof depends on
+
+- [Insert](../part-01/insert.md)
+- [Mem insert](../part-01/mem-insert.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ Inserting `x` does not change membership of any other element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](van-emde-boas.md)
+- [Insert](insert.md)
+- [Member](member.md)
 
 ## Sources
 

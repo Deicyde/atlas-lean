@@ -13,7 +13,13 @@ Inorder contents contain exactly the tree's key-value pairs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Mem Node](../part-01/mem-node.md)
+- [Contents](../part-01/contents.md)
+
+## Proof depends on
+
+- [Contents node](../part-01/contents-node.md)
 
 ## Sources
 

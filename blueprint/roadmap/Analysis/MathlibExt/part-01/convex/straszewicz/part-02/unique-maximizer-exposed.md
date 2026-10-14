@@ -13,7 +13,7 @@ A unique maximizer of a functional is an exposed point.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Supp Func](../part-01/supp-func.md)
 
 ## Sources
 

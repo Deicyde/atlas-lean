@@ -14,6 +14,10 @@ A planar threshold forces positive one-dimensional Lebesgue distance measure.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Distance Set](distance-set.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.FalconerDistanceSet](../../../../../sources/v2/MathlibExt.md)

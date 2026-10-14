@@ -15,6 +15,10 @@ Every ideal class has an integral representative coprime to any prescribed nonze
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists is Coprime mul is Principal](exists-is-coprime-mul-is-principal.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.ClassGroup.CoprimeRepresentative](../../../../../sources/v2/MathlibExt.md)

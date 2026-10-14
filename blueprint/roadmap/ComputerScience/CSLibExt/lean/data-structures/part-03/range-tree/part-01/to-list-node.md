@@ -13,7 +13,13 @@ Characteristic node equation for `toList` (the former definition).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Range Tree](range-tree.md)
+- [To List](to-list.md)
+
+## Proof depends on
+
+- [To List Aux](to-list-aux.md)
+- [To List Aux eq](to-list-aux-eq.md)
 
 ## Sources
 

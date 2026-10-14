@@ -13,7 +13,8 @@ Inspection fails exactly for the empty representation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Heap](min-heap.md)
+- [Min?](min.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ from `x` by open edges.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Config Graph](config-graph.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.ProductBondPercolation](../../../../../sources/v2/MathlibExt.md)

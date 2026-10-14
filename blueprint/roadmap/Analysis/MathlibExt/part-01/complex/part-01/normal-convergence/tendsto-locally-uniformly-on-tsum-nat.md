@@ -15,6 +15,10 @@ A locally normally convergent series converges locally uniformly to its pointwis
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tendsto Uniformly On tsum nat](tendsto-uniformly-on-tsum-nat.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.NormalConvergence](../../../../../../../sources/v2/MathlibExt.md)

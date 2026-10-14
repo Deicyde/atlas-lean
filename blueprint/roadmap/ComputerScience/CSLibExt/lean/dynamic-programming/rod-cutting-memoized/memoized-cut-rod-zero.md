@@ -13,7 +13,11 @@ The empty uncached rod earns zero with one probe and one actual cache write.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Memoized Cut Rod](memoized-cut-rod.md)
+
+## Proof depends on
+
+- [Memoized Cut Rod Aux](memoized-cut-rod-aux.md)
 
 ## Sources
 

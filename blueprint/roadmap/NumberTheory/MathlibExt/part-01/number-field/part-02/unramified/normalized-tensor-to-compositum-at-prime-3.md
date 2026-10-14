@@ -16,7 +16,7 @@ ideal. No localization equivalence or maximality is claimed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Tensor To Compositum At Prime](normalized-tensor-to-compositum-at-prime.md)
 
 ## Sources
 

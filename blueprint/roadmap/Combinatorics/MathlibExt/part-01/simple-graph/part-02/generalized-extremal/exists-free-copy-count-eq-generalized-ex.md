@@ -14,7 +14,11 @@ Attainment: when at least one `H`-free host graph on `Fin n` exists, some
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Extremal Number](generalized-extremal-number.md)
+
+## Proof depends on
+
+- [Generalized Extremal Number eq sup](generalized-extremal-number-eq-sup.md)
 
 ## Sources
 

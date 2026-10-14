@@ -13,7 +13,7 @@ The level `G ≥ 1` is attained at `j = 279`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G9](g9.md)
 
 ## Sources
 

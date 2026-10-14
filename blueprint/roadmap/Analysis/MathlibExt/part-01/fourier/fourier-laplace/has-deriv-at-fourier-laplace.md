@@ -14,7 +14,7 @@ supported function.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fourier Laplace](fourier-laplace.md)
 
 ## Sources
 

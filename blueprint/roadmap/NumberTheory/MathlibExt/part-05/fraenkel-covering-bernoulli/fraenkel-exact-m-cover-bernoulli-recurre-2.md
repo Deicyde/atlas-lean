@@ -28,7 +28,11 @@ weighted variant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Cover Multiplicity](../../part-01/covering-system/exact-cover/indexed-cover-multiplicity.md)
+
+## Proof depends on
+
+- [Fraenkel exact M cover bernoulli recurrence general](fraenkel-exact-m-cover-bernoulli-recurre.md)
 
 ## Sources
 

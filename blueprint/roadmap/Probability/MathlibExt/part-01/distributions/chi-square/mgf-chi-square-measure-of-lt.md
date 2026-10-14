@@ -13,7 +13,7 @@ MGF of a chi-square law below `1/2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chi Square Measure](chi-square-measure.md)
 
 ## Sources
 

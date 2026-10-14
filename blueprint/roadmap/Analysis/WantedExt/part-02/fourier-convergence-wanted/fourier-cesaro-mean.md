@@ -15,6 +15,10 @@ The Cesàro mean of the first `N + 1` Fourier partial sums:
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fourier Partial Sum](fourier-partial-sum.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.FourierConvergenceWanted](../../../../../sources/v2/WantedExt.md)

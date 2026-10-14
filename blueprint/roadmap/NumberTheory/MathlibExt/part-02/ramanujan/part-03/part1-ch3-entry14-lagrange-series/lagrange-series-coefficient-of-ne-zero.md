@@ -13,7 +13,7 @@ The positive-degree Lagrange-series coefficient in product form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lagrange Series Coefficient](lagrange-series-coefficient.md)
 
 ## Sources
 

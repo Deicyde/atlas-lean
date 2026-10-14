@@ -20,6 +20,10 @@ Frozen source statements: `jis_3a6643107cb0f496a9559012`,
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Beatty Term](beatty-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.AlmostBeattyPartition](../../../../../sources/v2/MathlibExt.md)

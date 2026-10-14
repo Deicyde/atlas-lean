@@ -14,7 +14,11 @@ the positive-period source sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Full Shift Space](full-shift-space.md)
+
+## Proof depends on
+
+- [Joint Periodic Count](joint-periodic-count.md)
 
 ## Sources
 

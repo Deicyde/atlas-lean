@@ -13,7 +13,8 @@ Membership performs exactly one selected inverse read.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Min Queue](../basic/indexed-min-queue.md)
+- [Member](../basic/member.md)
 
 ## Sources
 

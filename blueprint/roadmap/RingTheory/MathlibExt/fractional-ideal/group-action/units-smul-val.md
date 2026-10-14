@@ -13,7 +13,7 @@ The action on invertible fractional ideals agrees with the ambient action.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Units Mul Distrib Mul Action](units-mul-distrib-mul-action.md)
 
 ## Sources
 

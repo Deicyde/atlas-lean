@@ -14,7 +14,8 @@ The word shift acts letterwise
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shift Letter](shift-letter.md)
+- [Shift Word](shift-word.md)
 
 ## Sources
 

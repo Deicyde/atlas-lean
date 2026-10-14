@@ -15,7 +15,7 @@ Proves `Wanted` entry `ramanujan_part1_ch9_entry16_tanseries`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter9 Entry16 Difference Term](chapter9-entry16-difference-term.md)
 
 ## Sources
 

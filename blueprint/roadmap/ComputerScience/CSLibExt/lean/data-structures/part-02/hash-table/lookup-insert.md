@@ -13,7 +13,9 @@ Looking up an inserted key returns the newly supplied value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hash Table](hash-table.md)
+- [Insert](insert.md)
+- [Lookup](lookup.md)
 
 ## Sources
 

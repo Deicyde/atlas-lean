@@ -15,6 +15,11 @@ Vertical side integral of `1/s`: `2 * arctan (T / c)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integral div add sq](integral-div-add-sq.md)
+- [Odd integral eq zero](odd-integral-eq-zero.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.RectilinearCycle](../../../../../../../../sources/v2/MathlibExt.md)

@@ -16,7 +16,13 @@ through `mkNode`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](../part-01/btree.md)
+- [Ins Result](../part-01/ins-result.md)
+
+## Proof depends on
+
+- [Ins Leaf](../part-01/ins-leaf.md)
+- [Mk Node](mk-node.md)
 
 ## Sources
 

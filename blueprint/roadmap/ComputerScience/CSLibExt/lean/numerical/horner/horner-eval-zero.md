@@ -13,7 +13,11 @@ At zero a nonempty coefficient vector returns its constant coefficient.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Horner Eval](horner-eval.md)
+
+## Proof depends on
+
+- [Horner Eval ret eq sum](horner-eval-ret-eq-sum.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The binding `key ↦ value` is held in some slot of the table.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Open Addressing](open-addressing.md)
 
 ## Sources
 

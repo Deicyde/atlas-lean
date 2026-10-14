@@ -13,7 +13,7 @@ Empty Fisher–Yates execution retrieves no choices and performs no swaps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Randomly Permute](../basic/randomly-permute.md)
 
 ## Sources
 

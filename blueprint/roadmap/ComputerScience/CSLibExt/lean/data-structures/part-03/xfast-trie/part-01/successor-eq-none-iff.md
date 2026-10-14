@@ -13,7 +13,8 @@ The successor is `none` exactly when no stored key is greater than `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [XFast Trie](xfast-trie.md)
+- [Successor](successor.md)
 
 ## Sources
 

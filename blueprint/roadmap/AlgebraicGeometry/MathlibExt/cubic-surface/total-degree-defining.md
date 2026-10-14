@@ -13,7 +13,7 @@ The defining cubic of a cubic surface has total degree exactly `3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cubic Surface](cubic-surface.md)
 
 ## Sources
 

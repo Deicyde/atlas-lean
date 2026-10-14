@@ -15,6 +15,12 @@ nonempty finite face-connected sets of cardinality `n` with minima at zero.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Canonical Cells](is-canonical-cells.md)
+- [Is Polycube Cells](is-polycube-cells.md)
+- [Lattice Cell](lattice-cell.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.LunnonDimensionDecomposition](../../../../../../../sources/v2/MathlibExt.md)

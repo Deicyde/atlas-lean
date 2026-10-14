@@ -13,7 +13,7 @@ Subtracting a constant shifts one-based partial sums by `n • ρ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abel Partial Sum](../abel-continuation/abel-partial-sum.md)
 
 ## Sources
 

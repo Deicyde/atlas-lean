@@ -16,7 +16,7 @@ Cites concept `jis_sem_f50f75500661653b133949f3` (`rp relation`, alias
 
 ## Depends on
 
-This node has no prerequisites.
+- [KString](kstring.md)
 
 ## Sources
 

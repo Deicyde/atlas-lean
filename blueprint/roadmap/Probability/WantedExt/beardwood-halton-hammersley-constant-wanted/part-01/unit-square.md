@@ -12,7 +12,7 @@ The closed unit square from the primary BHH formulation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar Point](planar-point.md)
 
 ## Sources
 

@@ -14,7 +14,13 @@ MC-finite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is MCFinite](is-mcfinite.md)
+
+## Proof depends on
+
+- [Is Eventually Periodic](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
+- [Of finite orbit](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/of-finite-orbit.md)
+- [Of periodic](../../../../../Dynamics/MathlibExt/eventually-periodic-sequence/of-periodic.md)
 
 ## Sources
 

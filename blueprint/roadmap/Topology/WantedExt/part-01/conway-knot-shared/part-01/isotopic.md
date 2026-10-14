@@ -14,7 +14,12 @@ orientation-preserving smooth reparametrization of the source circle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knot](knot.md)
+
+## Proof depends on
+
+- [Ambient Isotopy](ambient-isotopy.md)
+- [R3](r3.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Every `t`-Nicol number is a Nicol number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Nicol Number](is-nicol-number.md)
+- [Is TNicol Number](is-tnicol-number.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ Continuity of `etaFn`; needs only separate continuity of `*`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Completion](completion.md)
+- [Eta Fn](eta-fn.md)
+
+## Proof depends on
+
+- [Index](index.md)
+- [Diagram](diagram.md)
 
 ## Sources
 

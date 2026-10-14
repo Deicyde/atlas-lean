@@ -13,7 +13,12 @@ The key list contains exactly the structurally present keys.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Keys](keys.md)
+
+## Proof depends on
+
+- [Keys node](keys-node.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ real-rooted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Real Rooted](is-real-rooted.md)
 
 ## Sources
 

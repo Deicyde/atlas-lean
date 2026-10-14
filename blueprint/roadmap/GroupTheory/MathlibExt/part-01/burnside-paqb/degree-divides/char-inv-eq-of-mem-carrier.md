@@ -13,7 +13,11 @@ Character values at inverses are constant on each class.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Class Rep](../class-sum/class-rep.md)
+
+## Proof depends on
+
+- [Conj to rep](conj-to-rep.md)
 
 ## Sources
 

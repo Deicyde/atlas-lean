@@ -12,7 +12,7 @@ Closed-interval overlap; in particular, touching endpoints overlap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Interval](interval.md)
 
 ## Sources
 

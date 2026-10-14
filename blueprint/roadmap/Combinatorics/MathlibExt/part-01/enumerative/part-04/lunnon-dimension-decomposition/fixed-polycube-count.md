@@ -15,6 +15,10 @@ lean: MetaMathlibExt.fixedPolycubeCount
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fixed Polycube](fixed-polycube.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.LunnonDimensionDecomposition](../../../../../../../sources/v2/MathlibExt.md)

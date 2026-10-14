@@ -14,6 +14,10 @@ Euler coefficient `E_n` in `sech x + tanh x = ∑ n, E_n x^n / n!`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Median Euler Coefficients](median-euler-coefficients.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MedianEulerNumber](../../../../../../../sources/v2/MathlibExt.md)

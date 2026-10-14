@@ -14,7 +14,13 @@ connected, and stays connected after deleting each single vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Vertex Connected](is-vertex-connected.md)
+
+## Proof depends on
+
+- [Card gt](card-gt.md)
+- [Connected](connected.md)
+- [Connected compl singleton](connected-compl-singleton.md)
 
 ## Sources
 

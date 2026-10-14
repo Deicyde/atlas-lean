@@ -21,6 +21,10 @@ lengths, following Euclid's *Elements*, Book I, Proposition 24.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hinge theorem of inner lt](hinge-theorem-of-inner-lt.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.Hinge](../../../../../../sources/v2/MathlibExt.md)

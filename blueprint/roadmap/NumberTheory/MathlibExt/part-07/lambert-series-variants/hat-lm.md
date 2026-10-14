@@ -16,6 +16,10 @@ Concept `jis_sem_e9cabece6d32bf6b52d62673`, source
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hat LMSummand](hat-lmsummand.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.LambertSeriesVariants](../../../../../sources/v2/MathlibExt.md)

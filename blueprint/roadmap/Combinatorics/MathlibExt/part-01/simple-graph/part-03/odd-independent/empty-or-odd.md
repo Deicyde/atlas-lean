@@ -13,7 +13,7 @@ Empty-or-odd alternative for each outside intersection.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Odd Independent](is-odd-independent.md)
 
 ## Sources
 

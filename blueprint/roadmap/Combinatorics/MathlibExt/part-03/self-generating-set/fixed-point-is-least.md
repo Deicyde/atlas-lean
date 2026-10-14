@@ -13,7 +13,16 @@ Under strict growth, a fixed point is the least self-generating set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fixed Point](fixed-point.md)
+- [SG](sg.md)
+- [Strict Growth](strict-growth.md)
+
+## Proof depends on
+
+- [Generated Set](generated-set.md)
+- [Fixed Point eq generated](fixed-point-eq-generated.md)
+- [Fixed Point is SG](fixed-point-is-sg.md)
+- [Generated le of sg](generated-le-of-sg.md)
 
 ## Sources
 

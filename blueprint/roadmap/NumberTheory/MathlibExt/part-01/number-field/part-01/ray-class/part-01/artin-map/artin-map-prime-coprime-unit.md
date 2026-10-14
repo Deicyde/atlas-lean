@@ -13,7 +13,11 @@ The Artin map evaluates on a prime generator as the unramified Frobenius.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Artin Map](artin-map.md)
+
+## Proof depends on
+
+- [Artin Map comp free Group To Coprime](artin-map-comp-free-group-to-coprime.md)
 
 ## Sources
 

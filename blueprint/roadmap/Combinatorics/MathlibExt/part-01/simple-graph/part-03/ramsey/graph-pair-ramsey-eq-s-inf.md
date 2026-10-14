@@ -13,7 +13,7 @@ The defining characterization of `graphPairRamsey`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Graph Pair Ramsey](graph-pair-ramsey.md)
 
 ## Sources
 

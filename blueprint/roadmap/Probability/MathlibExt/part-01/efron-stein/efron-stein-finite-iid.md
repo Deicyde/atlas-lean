@@ -15,6 +15,10 @@ Expected sum of squared differences under independent resampling of each coordin
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Efron stein finite iid general](efron-stein-finite-iid-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.EfronStein](../../../../../sources/v2/MathlibExt.md)

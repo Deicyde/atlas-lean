@@ -13,7 +13,8 @@ Small-set expansion clause of a `C`-expander.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is CExpander](is-cexpander.md)
+- [External Neighbor Set](external-neighbor-set.md)
 
 ## Sources
 

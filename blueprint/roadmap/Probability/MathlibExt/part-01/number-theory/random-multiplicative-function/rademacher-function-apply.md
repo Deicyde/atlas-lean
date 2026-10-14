@@ -13,7 +13,8 @@ The defining Möbius-square formula away from zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Sign Nat](prime-sign-nat.md)
+- [Rademacher Function](rademacher-function.md)
 
 ## Sources
 

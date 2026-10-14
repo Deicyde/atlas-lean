@@ -16,6 +16,13 @@ together with its coefficient recurrence and initial value.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Match Pred](match-pred.md)
+- [Poly N](poly-n.md)
+- [Zero Pred](zero-pred.md)
+- [Mesh N](mesh-n.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MeshPatternStirlingRecursion](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ Every trivial (subsingleton) group is amenable, witnessed by `F = {1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Amenable](is-amenable.md)
 
 ## Sources
 

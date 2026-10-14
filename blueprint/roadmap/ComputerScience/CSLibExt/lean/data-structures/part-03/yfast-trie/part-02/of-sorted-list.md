@@ -15,7 +15,12 @@ result is invalid for nonempty `l` (`not_valid_ofSortedList_zero`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grouped YFast Trie](../part-01/grouped-yfast-trie.md)
+
+## Proof depends on
+
+- [Chunk Groups](chunk-groups.md)
+- [Of Groups](../part-01/of-groups.md)
 
 ## Sources
 

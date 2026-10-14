@@ -15,6 +15,11 @@ The prime number theorem `π(x) ~ x / log x` holds iff `θ(x) ~ x`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prime Counting is Equivalent of theta is Equivalent](prime-counting-is-equivalent-of-theta-is.md)
+- [Theta is Equivalent of prime Counting is Equivalent](theta-is-equivalent-of-prime-counting-is.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.Chebyshev](../../../../../../../sources/v2/MathlibExt.md)

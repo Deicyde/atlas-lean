@@ -18,7 +18,7 @@ finite-dimensional measure-zero form with `fderiv ℝ F` surjective hypothesis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bad Parameter Set](bad-parameter-set.md)
 
 ## Sources
 

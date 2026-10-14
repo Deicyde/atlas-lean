@@ -15,6 +15,10 @@ A real number is normal in base `b`. This predicate is intended for bases
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Digit Seq](digit-seq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NormalNumber](../../../../../sources/v2/MathlibExt.md)

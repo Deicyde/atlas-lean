@@ -13,7 +13,11 @@ Negating a radius does not change its Wiman term.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Term](wiman-term.md)
+
+## Proof depends on
+
+- [Wiman Taylor Coefficient](wiman-taylor-coefficient.md)
 
 ## Sources
 

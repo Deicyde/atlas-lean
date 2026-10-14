@@ -14,7 +14,11 @@ fraction field.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conductor Ideal](conductor-ideal.md)
+
+## Proof depends on
+
+- [Bot conductor Ideal ne bot iff](bot-conductor-ideal-ne-bot-iff.md)
 
 ## Sources
 

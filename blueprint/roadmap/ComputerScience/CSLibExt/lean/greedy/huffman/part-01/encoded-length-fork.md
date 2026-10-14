@@ -13,7 +13,9 @@ At a fork, the encoded-length objective agrees with weighted path length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](huffman-tree.md)
+- [Encoded Length](encoded-length.md)
+- [Weighted Path Length](weighted-path-length.md)
 
 ## Sources
 

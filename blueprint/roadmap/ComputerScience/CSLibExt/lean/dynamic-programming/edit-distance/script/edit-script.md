@@ -14,6 +14,10 @@ A left-to-right sequence of edit operations.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Edit Step](edit-step.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.EditDistance.Script](../../../../../../../sources/v2/CSLibExt.md)

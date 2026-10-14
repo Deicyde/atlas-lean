@@ -12,7 +12,12 @@ A forest has valid trees at unique, strictly increasing ranks.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Tree](binomial-tree.md)
+
+## Proof depends on
+
+- [Valid](valid.md)
+- [Rank](rank.md)
 
 ## Sources
 

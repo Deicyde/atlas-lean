@@ -14,6 +14,11 @@ The actual pushforward law of the normalized sum.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Iid Law](iid-law.md)
+- [Normalized Sum](normalized-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.BerryEsseenModel](../../../../../../sources/v2/MathlibExt.md)

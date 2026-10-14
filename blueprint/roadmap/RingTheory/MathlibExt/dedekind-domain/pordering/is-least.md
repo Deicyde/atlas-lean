@@ -13,7 +13,13 @@ The minimum property as an `IsLeast` statement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is POrdering](is-pordering.md)
+- [P Ordering Valuation](p-ordering-valuation.md)
+
+## Proof depends on
+
+- [Mem](mem.md)
+- [Min le](min-le.md)
 
 ## Sources
 

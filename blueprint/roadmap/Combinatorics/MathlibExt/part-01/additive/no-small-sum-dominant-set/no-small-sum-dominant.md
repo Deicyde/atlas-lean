@@ -19,6 +19,10 @@ The source works with sets of nonnegative integers; the hypothesis
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Card add le card sub of card lt six](card-add-le-card-sub-of-card-lt-six.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Additive.NoSmallSumDominantSet](../../../../../../sources/v2/MathlibExt.md)

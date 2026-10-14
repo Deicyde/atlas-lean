@@ -16,7 +16,11 @@ point of the subtree can then lie within the query ball.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ball Tree](ball-tree.md)
+
+## Proof depends on
+
+- [Dist Sq](dist-sq.md)
 
 ## Sources
 

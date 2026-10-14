@@ -23,6 +23,10 @@ and keeps the source's shape.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Aronson Transform exists Unique general](aronson-transform-exists-unique-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Sequences.AronsonTransform](../../../../../../sources/v2/MathlibExt.md)

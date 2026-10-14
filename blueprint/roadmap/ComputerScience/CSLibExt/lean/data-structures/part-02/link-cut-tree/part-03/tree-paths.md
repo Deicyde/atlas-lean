@@ -13,7 +13,11 @@ list `edges`: the downward path from the root, then every other path.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+
+## Proof depends on
+
+- [Decomp](decomp.md)
 
 ## Sources
 

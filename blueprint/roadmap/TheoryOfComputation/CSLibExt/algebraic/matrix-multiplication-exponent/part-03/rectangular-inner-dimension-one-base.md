@@ -13,7 +13,7 @@ Dimension one has inner dimension one at every aspect.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectangular Inner Dimension](rectangular-inner-dimension.md)
 
 ## Sources
 

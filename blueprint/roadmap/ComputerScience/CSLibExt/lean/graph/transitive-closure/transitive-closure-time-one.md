@@ -13,7 +13,11 @@ A singleton graph performs one initialization and one transition assignment.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transitive Closure](transitive-closure.md)
+
+## Proof depends on
+
+- [Transitive Closure time](transitive-closure-time.md)
 
 ## Sources
 

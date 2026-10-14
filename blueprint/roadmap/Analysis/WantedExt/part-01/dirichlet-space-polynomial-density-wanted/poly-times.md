@@ -12,7 +12,7 @@ Polynomial multiples Pg from [AMR-022-8011] Problem 8.11, Pg as defined in Probl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dirichlet Space](dirichlet-space.md)
 
 ## Sources
 

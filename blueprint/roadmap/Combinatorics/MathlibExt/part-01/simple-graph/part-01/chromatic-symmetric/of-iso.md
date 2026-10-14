@@ -14,7 +14,7 @@ their color-class fibers transport along the isomorphism.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Same Chromatic Symmetric Function](same-chromatic-symmetric-function.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ With nonzero coefficient mass, the tilted coefficient measure is a probability m
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Tilted Measure](wiman-tilted-measure.md)
+
+## Proof depends on
+
+- [Integrable exp mul wiman Coefficient Measure](integrable-exp-mul-wiman-coefficient-mea.md)
+- [Wiman Coefficient Measure](wiman-coefficient-measure.md)
+- [Wiman Coefficient Measure ne zero](wiman-coefficient-measure-ne-zero.md)
 
 ## Sources
 

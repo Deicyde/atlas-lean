@@ -13,7 +13,8 @@ Coercion of the archimedean factor to the reals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arakelov Divisor](arakelov-divisor.md)
+- [Archimedean Factor](archimedean-factor.md)
 
 ## Sources
 

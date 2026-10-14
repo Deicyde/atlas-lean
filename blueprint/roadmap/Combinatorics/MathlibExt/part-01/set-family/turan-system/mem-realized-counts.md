@@ -13,7 +13,8 @@ Membership unfolding for `realizedCounts`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Turan System](is-turan-system.md)
+- [Realized Counts](realized-counts.md)
 
 ## Sources
 

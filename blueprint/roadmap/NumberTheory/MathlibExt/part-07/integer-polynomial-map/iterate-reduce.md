@@ -12,7 +12,11 @@ Reduce an integer polynomial endomap modulo `p`, then apply it `k` times.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer Polynomial Map](integer-polynomial-map.md)
+
+## Proof depends on
+
+- [To Fun Reduce](to-fun-reduce.md)
 
 ## Sources
 

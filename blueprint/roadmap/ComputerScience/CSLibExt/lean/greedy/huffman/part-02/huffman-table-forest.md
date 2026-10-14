@@ -12,7 +12,7 @@ The work items still available to merge, read off the serial-indexed table.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Work Item](huffman-work-item.md)
 
 ## Sources
 

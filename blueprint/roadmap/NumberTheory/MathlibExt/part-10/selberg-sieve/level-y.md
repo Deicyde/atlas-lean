@@ -14,6 +14,11 @@ The normalized Selberg `y`-coefficient at `l`, extended by zero off the level se
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Level Set](level-set.md)
+- [Level Sum](level-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SelbergSieve](../../../../../sources/v2/MathlibExt.md)

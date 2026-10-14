@@ -15,7 +15,12 @@ valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Del](del.md)
+- [Rebalance](rebalance.md)
 
 ## Sources
 

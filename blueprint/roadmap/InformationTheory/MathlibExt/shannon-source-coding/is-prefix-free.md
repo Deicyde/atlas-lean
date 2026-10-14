@@ -18,6 +18,10 @@ proved Kraft–McMillan theorem share.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Prefix Free](../prefix-free/is-prefix-free.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.InformationTheory.ShannonSourceCoding](../../../../sources/v2/MathlibExt.md)

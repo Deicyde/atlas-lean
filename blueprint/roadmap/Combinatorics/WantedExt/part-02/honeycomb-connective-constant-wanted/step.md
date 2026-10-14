@@ -12,7 +12,7 @@ Take one of the three incident edges at a honeycomb-lattice vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Honeycomb Vertex](honeycomb-vertex.md)
 
 ## Sources
 

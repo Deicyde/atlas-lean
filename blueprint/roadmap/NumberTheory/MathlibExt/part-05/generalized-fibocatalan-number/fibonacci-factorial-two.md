@@ -13,7 +13,11 @@ lean: MetaMathlibExt.fibonacciFactorial_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Factorial](fibonacci-factorial.md)
+
+## Proof depends on
+
+- [Fibonacci Factorial one](fibonacci-factorial-one.md)
 
 ## Sources
 

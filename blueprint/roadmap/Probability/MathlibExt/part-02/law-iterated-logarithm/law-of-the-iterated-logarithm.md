@@ -23,6 +23,10 @@ argument and the second Borel–Cantelli lemma give the lower half.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Law of the iterated logarithm of mem Lp](law-of-the-iterated-logarithm-of-mem-lp.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.LawIteratedLogarithm](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,14 @@ Every child of a valid tree is valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Tree](binomial-tree.md)
+- [Valid](valid.md)
+- [Children](children.md)
+
+## Proof depends on
+
+- [Elements](elements.md)
+- [Rank](rank.md)
 
 ## Sources
 

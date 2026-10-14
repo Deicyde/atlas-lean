@@ -13,7 +13,12 @@ Trees built by insertion have correct caches.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cache Correct](../part-01/cache-correct.md)
+- [From List](../part-01/from-list.md)
+
+## Proof depends on
+
+- [Cache Correct insert](../part-02/cache-correct-insert.md)
 
 ## Sources
 

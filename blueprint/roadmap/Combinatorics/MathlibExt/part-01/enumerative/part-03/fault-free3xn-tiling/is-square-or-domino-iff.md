@@ -13,7 +13,9 @@ A valid square-or-domino tile is exactly a singleton or an adjacent pair.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Square Or Domino](is-square-or-domino.md)
+- [Tiling Cell](tiling-cell.md)
+- [Adjacent](adjacent.md)
 
 ## Sources
 

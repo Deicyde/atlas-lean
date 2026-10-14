@@ -15,6 +15,11 @@ lean: SimpleGraph.DichromaticColorable
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Directed Cycle](is-directed-cycle.md)
+- [Is Orientation](is-orientation.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Dichromatic](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,16 @@ Every nonconstant matrix-product output must be computed by a charged node.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arithmetic Circuit](../arithmetic-circuit/arithmetic-circuit.md)
+- [Arithmetic Operand](../arithmetic-circuit/arithmetic-operand.md)
+- [Is Matrix Multiplication](is-matrix-multiplication.md)
+- [Matrix Arithmetic Circuit](matrix-arithmetic-circuit.md)
+
+## Proof depends on
+
+- [Evaluate](../arithmetic-circuit/evaluate-3.md)
+- [Evaluate Node](../arithmetic-circuit/evaluate-node.md)
+- [Matrix Input](matrix-input.md)
 
 ## Sources
 

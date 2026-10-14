@@ -19,6 +19,10 @@ the redundant `Integrable (X 0) P` premise is omitted since it follows from
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Berry esseen finset Sum gaussian](berry-esseen-finset-sum-gaussian.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.BerryEsseen](../../../../../sources/v2/MathlibExt.md)

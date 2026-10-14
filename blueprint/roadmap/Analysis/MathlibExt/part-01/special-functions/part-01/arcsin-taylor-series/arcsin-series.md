@@ -14,6 +14,10 @@ The central-binomial Taylor series for `Real.arcsin`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Central Binomial Coeff](central-binomial-coeff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.ArcsinTaylorSeries](../../../../../../../sources/v2/MathlibExt.md)

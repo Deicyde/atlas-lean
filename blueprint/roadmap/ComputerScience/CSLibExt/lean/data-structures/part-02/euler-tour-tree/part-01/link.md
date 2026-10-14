@@ -12,7 +12,7 @@ Records `t₂` as a new last child subtree of the root of `t₁`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
 
 ## Sources
 

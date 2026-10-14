@@ -17,7 +17,8 @@ and equivalence symmetry/transitivity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Place](place.md)
+- [Absolute Value](absolute-value.md)
 
 ## Sources
 

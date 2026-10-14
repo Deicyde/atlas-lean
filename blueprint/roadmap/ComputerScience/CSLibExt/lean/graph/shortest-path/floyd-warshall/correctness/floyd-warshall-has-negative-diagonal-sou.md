@@ -13,7 +13,18 @@ A negative diagonal entry in the computed matrix implies a simple negative cycle
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../basic/cost.md)
+- [Has Negative Cycle](../basic/has-negative-cycle.md)
+- [Floyd Warshall](../basic/floyd-warshall.md)
+- [Has Negative Diagonal](../basic/has-negative-diagonal.md)
+
+## Proof depends on
+
+- [Is Negative Cycle](../basic/is-negative-cycle.md)
+- [Is Weighted Path](../basic/is-weighted-path.md)
+- [Floyd Warshall distance realized](floyd-warshall-distance-realized.md)
+- [Has Negative Diagonal eq true iff](../basic/has-negative-diagonal-eq-true-iff.md)
+- [Path Weight](../basic/path-weight.md)
 
 ## Sources
 

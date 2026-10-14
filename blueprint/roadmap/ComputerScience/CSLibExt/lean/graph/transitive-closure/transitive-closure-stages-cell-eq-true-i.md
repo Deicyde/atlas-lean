@@ -14,7 +14,13 @@ among the admitted pivots.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Internal Vertices Below](../shortest-path/floyd-warshall/basic/internal-vertices-below.md)
+- [Transitive Closure Stages](transitive-closure-stages.md)
+
+## Proof depends on
+
+- [Transitive Closure Stages succ cell](transitive-closure-stages-succ-cell.md)
+- [Transitive Closure Stages zero cell](transitive-closure-stages-zero-cell.md)
 
 ## Sources
 

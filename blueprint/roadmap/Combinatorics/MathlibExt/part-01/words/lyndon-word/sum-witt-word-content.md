@@ -13,7 +13,7 @@ The sum of the content of a word is its length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Witt Word Content](witt-word-content.md)
 
 ## Sources
 

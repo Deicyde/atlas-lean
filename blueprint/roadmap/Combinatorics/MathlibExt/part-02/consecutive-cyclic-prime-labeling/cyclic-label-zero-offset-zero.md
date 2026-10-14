@@ -13,7 +13,7 @@ With zero offset, the first perimeter position carries label 1.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclic Label](cyclic-label.md)
 
 ## Sources
 

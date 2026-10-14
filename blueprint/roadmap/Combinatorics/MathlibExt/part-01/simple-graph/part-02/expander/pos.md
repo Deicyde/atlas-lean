@@ -13,7 +13,11 @@ A `C`-expander satisfies `0 < C`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is CExpander](is-cexpander.md)
+
+## Proof depends on
+
+- [External Neighbor Set](external-neighbor-set.md)
 
 ## Sources
 

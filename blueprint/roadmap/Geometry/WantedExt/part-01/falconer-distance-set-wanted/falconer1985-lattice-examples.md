@@ -14,6 +14,10 @@ Compact Euclidean lattice examples include the endpoint `s = d/2`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Distance Set](../../../MathlibExt/falconer-distance-set/part-01/distance-set.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.FalconerDistanceSetWanted](../../../../../sources/v2/WantedExt.md)

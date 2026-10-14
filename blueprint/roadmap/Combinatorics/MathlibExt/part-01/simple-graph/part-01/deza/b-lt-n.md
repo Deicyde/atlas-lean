@@ -13,7 +13,7 @@ The chained bound `b < n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Deza With](is-deza-with.md)
 
 ## Sources
 

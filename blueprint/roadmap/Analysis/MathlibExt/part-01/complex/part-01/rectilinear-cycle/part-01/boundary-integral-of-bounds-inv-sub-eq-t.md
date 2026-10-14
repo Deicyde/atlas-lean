@@ -14,7 +14,12 @@ Cauchy-kernel boundary integral to a pole at the origin.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boundary Integral](boundary-integral.md)
+- [Of Bounds](of-bounds.md)
+
+## Proof depends on
+
+- [Rectilinear Rectangle](rectilinear-rectangle.md)
 
 ## Sources
 

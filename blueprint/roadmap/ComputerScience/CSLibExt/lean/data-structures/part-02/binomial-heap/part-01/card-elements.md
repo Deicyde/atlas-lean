@@ -13,7 +13,10 @@ A valid rank-`r` tree contains exactly `2 ^ r` elements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Tree](binomial-tree.md)
+- [Valid](valid.md)
+- [Elements](elements.md)
+- [Rank](rank.md)
 
 ## Sources
 

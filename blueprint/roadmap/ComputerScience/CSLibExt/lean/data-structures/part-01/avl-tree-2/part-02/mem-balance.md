@@ -13,7 +13,15 @@ Rebalancing preserves structural membership.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](../part-01/mem.md)
+- [Tree](../part-01/tree.md)
+- [Balance](../part-01/balance.md)
+
+## Proof depends on
+
+- [Inorder](../part-01/inorder.md)
+- [Inorder balance](inorder-balance.md)
+- [Mem inorder](mem-inorder.md)
 
 ## Sources
 

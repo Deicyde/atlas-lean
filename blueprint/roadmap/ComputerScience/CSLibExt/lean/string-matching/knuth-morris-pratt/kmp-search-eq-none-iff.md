@@ -13,7 +13,8 @@ KMP returns no offset exactly when no bounded offset matches the pattern.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Match At](../basic/match-at.md)
+- [Kmp Search](kmp-search.md)
 
 ## Sources
 

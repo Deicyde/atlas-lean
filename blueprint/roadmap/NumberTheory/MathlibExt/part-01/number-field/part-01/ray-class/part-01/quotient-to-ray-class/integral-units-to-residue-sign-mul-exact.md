@@ -13,7 +13,13 @@ Exactness at the residue-sign target as `MulExact`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Group](../group/ray-class-group.md)
+- [Integral Units To Residue Sign](../integral-units/integral-units-to-residue-sign.md)
+- [Residue Sign To Ray Class Group](residue-sign-to-ray-class-group.md)
+
+## Proof depends on
+
+- [Residue Sign To Ray Class Group ker](residue-sign-to-ray-class-group-ker.md)
 
 ## Sources
 

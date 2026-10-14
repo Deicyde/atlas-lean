@@ -13,7 +13,7 @@ The adjacency relation of the Johnson graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Johnson Graph](johnson-graph.md)
 
 ## Sources
 

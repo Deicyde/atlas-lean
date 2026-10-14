@@ -13,7 +13,13 @@ The infimal tensor exponent itself permits `n^(omega + o(1))` rank growth.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Matrix Multiplication Rank Exponent](../part-02/has-matrix-multiplication-rank-exponent.md)
+- [Matrix Multiplication Exponent](../part-02/matrix-multiplication-exponent.md)
+
+## Proof depends on
+
+- [Matrix Multiplication Exponent le iff](matrix-multiplication-exponent-le-iff.md)
+- [Matrix Multiplication Exponent ne top](matrix-multiplication-exponent-ne-top.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ Every admissible radius is an upper bound for the Sendov radius.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Radius](is-admissible-radius.md)
+- [Sendov Radius](sendov-radius.md)
+
+## Proof depends on
+
+- [Bdd Below admissible Radii](bdd-below-admissible-radii.md)
 
 ## Sources
 

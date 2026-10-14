@@ -13,7 +13,11 @@ lean: Nat.isPowerFree_two
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Power Free](is-power-free.md)
+
+## Proof depends on
+
+- [Not dvd](not-dvd.md)
 
 ## Sources
 

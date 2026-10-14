@@ -13,7 +13,8 @@ The discriminant of a tuple from imageOfB belongs to the extension discriminant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extension Discriminant](extension-discriminant.md)
+- [Image Of B](image-of-b.md)
 
 ## Sources
 

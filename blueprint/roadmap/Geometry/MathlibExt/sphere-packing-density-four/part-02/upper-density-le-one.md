@@ -13,7 +13,14 @@ Source: taking the radius limsup preserves the bound by one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Packing](../part-01/packing.md)
+- [Upper Density](../part-01/upper-density.md)
+
+## Proof depends on
+
+- [Positive Radius](../part-01/positive-radius.md)
+- [Centered Radius Density](../part-01/centered-radius-density.md)
+- [Centered Radius Density le one](../part-01/centered-radius-density-le-one.md)
 
 ## Sources
 

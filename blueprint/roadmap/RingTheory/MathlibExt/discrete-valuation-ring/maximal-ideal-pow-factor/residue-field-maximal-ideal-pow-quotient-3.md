@@ -14,7 +14,8 @@ The quotient-ring equivalence fixes quotient representatives, by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residue Field Maximal Ideal Pow Quotient](residue-field-maximal-ideal-pow-quotient.md)
+- [Residue Field Maximal Ideal Pow Quotient Equiv Pow](residue-field-maximal-ideal-pow-quotient-2.md)
 
 ## Sources
 

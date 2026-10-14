@@ -13,7 +13,13 @@ A lookup of an absent key misses and leaves the cache unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lru Cache](lru-cache.md)
+- [Get](get.md)
+- [Keys](keys.md)
+
+## Proof depends on
+
+- [Erase Key](erase-key.md)
 
 ## Sources
 

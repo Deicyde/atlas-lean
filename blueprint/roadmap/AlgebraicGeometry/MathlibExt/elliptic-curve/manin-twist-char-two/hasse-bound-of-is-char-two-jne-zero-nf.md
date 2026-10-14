@@ -15,6 +15,10 @@ Hasse's bound for the ordinary characteristic-two Manin normal form.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hasse bound of is Char Two NF](hasse-bound-of-is-char-two-nf.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.EllipticCurve.ManinTwistCharTwo](../../../../../sources/v2/MathlibExt.md)

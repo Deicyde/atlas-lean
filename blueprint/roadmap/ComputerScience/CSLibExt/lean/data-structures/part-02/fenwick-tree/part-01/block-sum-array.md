@@ -17,6 +17,10 @@ rather than quadratic list indexing.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lowbit](lowbit.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.FenwickTree](../../../../../../../../sources/v2/CSLibExt.md)

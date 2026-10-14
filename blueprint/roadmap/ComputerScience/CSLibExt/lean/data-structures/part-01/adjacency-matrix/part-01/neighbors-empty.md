@@ -13,7 +13,13 @@ Every vertex of the empty graph has an empty neighbor list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empty](empty.md)
+- [Neighbors](neighbors.md)
+
+## Proof depends on
+
+- [Has Edge](has-edge.md)
+- [Mem neighbors](mem-neighbors.md)
 
 ## Sources
 

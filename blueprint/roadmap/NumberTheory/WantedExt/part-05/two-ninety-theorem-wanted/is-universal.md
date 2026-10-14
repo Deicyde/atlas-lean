@@ -15,6 +15,10 @@ positive integer value.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Represents](represents.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.TwoNinetyTheoremWanted](../../../../../sources/v2/WantedExt.md)

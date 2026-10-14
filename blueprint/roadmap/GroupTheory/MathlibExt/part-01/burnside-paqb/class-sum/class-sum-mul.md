@@ -13,7 +13,14 @@ Product of class sums as a combination of class sums (structure constants).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Class Rep](class-rep.md)
+- [Class Sum](class-sum.md)
+- [Struct Const](struct-const.md)
+
+## Proof depends on
+
+- [Coeff class Sum mul](coeff-class-sum-mul.md)
+- [Struct Const conj](struct-const-conj.md)
 
 ## Sources
 

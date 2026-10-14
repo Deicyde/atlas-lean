@@ -13,7 +13,12 @@ A monic real-rooted polynomial is positive to the right of its largest root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Real Rooted](is-real-rooted.md)
+- [Max Real Root](max-real-root.md)
+
+## Proof depends on
+
+- [Root re le max Real Root](root-re-le-max-real-root.md)
 
 ## Sources
 

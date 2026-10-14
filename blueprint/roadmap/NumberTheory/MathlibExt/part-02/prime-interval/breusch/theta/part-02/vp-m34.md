@@ -13,7 +13,14 @@ Every prime in `(t, 6 * t]` divides `M34 t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [M34](../part-01/m34.md)
+
+## Proof depends on
+
+- [M34 eq mul](../part-01/m34-eq-mul.md)
+- [M34 pos](../part-01/m34-pos.md)
+- [Div add div add div le](../part-01/div-add-div-add-div-le.md)
+- [Vp term1](vp-term1.md)
 
 ## Sources
 

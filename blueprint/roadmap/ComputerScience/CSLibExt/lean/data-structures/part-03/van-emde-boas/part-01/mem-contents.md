@@ -13,7 +13,9 @@ The abstraction contains exactly the members of the tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](van-emde-boas.md)
+- [Contents](contents.md)
+- [Member](member.md)
 
 ## Sources
 

@@ -17,6 +17,10 @@ of size at least `|A| / 3 + ω(|A|)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Sum Free](is-sum-free.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.GreenProblem1LargeSumFreeWanted](../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,11 @@ The prime coprime units generate the full group of coprime ideals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprime Prime Units](coprime-prime-units.md)
+
+## Proof depends on
+
+- [Mem coprime Prime Units](mem-coprime-prime-units.md)
 
 ## Sources
 

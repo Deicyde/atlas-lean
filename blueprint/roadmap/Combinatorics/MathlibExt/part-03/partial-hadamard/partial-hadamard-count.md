@@ -14,6 +14,10 @@ lean: MathlibExt.Combinatorics.PartialHadamard.partialHadamardCount
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Partial Hadamard](is-partial-hadamard.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.PartialHadamard](../../../../../sources/v2/MathlibExt.md)

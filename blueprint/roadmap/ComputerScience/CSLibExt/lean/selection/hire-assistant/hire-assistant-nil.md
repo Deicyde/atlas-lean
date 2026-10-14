@@ -13,7 +13,7 @@ Empty input interviews and hires nobody and returns no manager.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hire Assistant](hire-assistant.md)
 
 ## Sources
 

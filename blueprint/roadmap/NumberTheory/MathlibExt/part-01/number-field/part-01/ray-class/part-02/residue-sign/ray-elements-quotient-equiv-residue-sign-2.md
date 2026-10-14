@@ -13,7 +13,15 @@ The quotient equivalence evaluated on a class representative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residue Sign Target](residue-sign-target.md)
+- [Ray Elements](../ray-group/ray-elements.md)
+- [Ray Elements Quotient Equiv Residue Sign](ray-elements-quotient-equiv-residue-sign.md)
+- [Ray One Elements](ray-one-elements.md)
+- [Residue Sign Map](residue-sign-map.md)
+
+## Proof depends on
+
+- [Residue Sign Map surjective](residue-sign-map-surjective.md)
 
 ## Sources
 

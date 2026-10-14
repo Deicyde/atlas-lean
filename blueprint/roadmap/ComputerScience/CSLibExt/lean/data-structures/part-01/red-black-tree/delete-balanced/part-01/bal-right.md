@@ -13,7 +13,11 @@ of `balLeft`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BBTree](bbtree.md)
+
+## Proof depends on
+
+- [Fix Right](fix-right.md)
 
 ## Sources
 

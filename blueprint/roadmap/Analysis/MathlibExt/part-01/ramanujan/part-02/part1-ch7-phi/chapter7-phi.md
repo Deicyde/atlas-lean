@@ -14,7 +14,7 @@ not introduce the spurious period-one identification present outside it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter7 Phi Argument](chapter7-phi-argument.md)
 
 ## Sources
 

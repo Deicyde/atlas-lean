@@ -14,6 +14,10 @@ Square specialization of `rectangularMatrixAccumulate`, with no extra traversal.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rectangular Matrix Accumulate](rectangular-matrix-accumulate.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Matrix.Multiply](../../../../../../sources/v2/CSLibExt.md)

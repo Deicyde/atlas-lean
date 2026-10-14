@@ -14,6 +14,10 @@ Definition 1 from the source: `C`-expander with a real parameter `C`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [External Neighbor Set](external-neighbor-set.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Expander](../../../../../../../sources/v2/MathlibExt.md)

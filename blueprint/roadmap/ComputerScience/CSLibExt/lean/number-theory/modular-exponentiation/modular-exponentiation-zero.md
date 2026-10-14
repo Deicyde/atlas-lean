@@ -13,7 +13,7 @@ The source base clause returns literal `1` and performs no multiplication.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Exponentiation](modular-exponentiation.md)
 
 ## Sources
 

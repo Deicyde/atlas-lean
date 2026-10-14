@@ -13,7 +13,7 @@ An element lifts to a vertex iff it is nonzero and a zero divisor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertex](vertex.md)
 
 ## Sources
 

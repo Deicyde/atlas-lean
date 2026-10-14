@@ -13,7 +13,7 @@ A projectively independent family is in general position in every dimension.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is General Position](is-general-position-3.md)
 
 ## Sources
 

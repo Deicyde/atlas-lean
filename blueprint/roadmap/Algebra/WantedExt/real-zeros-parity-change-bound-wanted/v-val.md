@@ -14,6 +14,10 @@ Number of parity changes in the index sequence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pos Indices](pos-indices.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Algebra.RealZerosParityChangeBoundWanted](../../../../sources/v2/WantedExt.md)

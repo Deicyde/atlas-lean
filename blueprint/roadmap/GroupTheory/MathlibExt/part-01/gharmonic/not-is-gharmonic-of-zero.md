@@ -13,7 +13,11 @@ A tuple containing a zero entry is never `G`-harmonic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is GHarmonic](is-gharmonic.md)
+
+## Proof depends on
+
+- [Pos](pos.md)
 
 ## Sources
 

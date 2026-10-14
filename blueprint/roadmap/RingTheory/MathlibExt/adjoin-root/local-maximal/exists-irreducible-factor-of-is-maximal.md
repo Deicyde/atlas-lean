@@ -16,6 +16,10 @@ a lift of an irreducible factor of the reduced polynomial.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Comap map Ring Hom bot eq map C ker](comap-map-ring-hom-bot-eq-map-c-ker.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.AdjoinRoot.LocalMaximal](../../../../../sources/v2/MathlibExt.md)

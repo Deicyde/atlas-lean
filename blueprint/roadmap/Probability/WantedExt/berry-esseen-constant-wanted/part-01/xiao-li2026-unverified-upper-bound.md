@@ -15,6 +15,10 @@ repository certificate or compiler-trusting proof is accepted by this request.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Value](../../../MathlibExt/part-01/berry-esseen-constant/part-01/value.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Probability.BerryEsseenConstantWanted](../../../../../sources/v2/WantedExt.md)

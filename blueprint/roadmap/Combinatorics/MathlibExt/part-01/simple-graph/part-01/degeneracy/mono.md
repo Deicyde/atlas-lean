@@ -13,7 +13,7 @@ Increasing the degree bound preserves degeneracy on a vertex set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Degenerate On](is-degenerate-on.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ Trees built by insertion are balanced.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balanced](../part-01/balanced.md)
+- [From List](../part-01/from-list.md)
+
+## Proof depends on
+
+- [Balanced insert](balanced-insert.md)
+- [Cache Correct from List](cache-correct-from-list.md)
 
 ## Sources
 

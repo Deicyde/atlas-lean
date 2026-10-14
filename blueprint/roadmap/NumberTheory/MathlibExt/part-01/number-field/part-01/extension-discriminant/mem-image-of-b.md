@@ -13,7 +13,7 @@ Membership in imageOfB is membership in the range of the algebra map from B to L
 
 ## Depends on
 
-This node has no prerequisites.
+- [Image Of B](image-of-b.md)
 
 ## Sources
 

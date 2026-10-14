@@ -13,7 +13,12 @@ Every candidate in a strictly increasing input is hired, including empty input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hire Assistant](hire-assistant.md)
+
+## Proof depends on
+
+- [Hire Assistant hires](hire-assistant-hires.md)
+- [Hire Assistant time](hire-assistant-time.md)
 
 ## Sources
 

@@ -14,7 +14,12 @@ tree with the same flattening.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](../part-01/btree.md)
+
+## Proof depends on
+
+- [Ins Result](../part-01/ins-result.md)
+- [Ins](ins.md)
 
 ## Sources
 

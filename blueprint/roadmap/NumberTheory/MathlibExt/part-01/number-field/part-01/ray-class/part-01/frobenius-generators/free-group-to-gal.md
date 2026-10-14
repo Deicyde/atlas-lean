@@ -13,7 +13,11 @@ unramified Frobenius values.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Unramified Outside](is-unramified-outside.md)
+
+## Proof depends on
+
+- [Frobenius At Coprime Prime](frobenius-at-coprime-prime.md)
 
 ## Sources
 

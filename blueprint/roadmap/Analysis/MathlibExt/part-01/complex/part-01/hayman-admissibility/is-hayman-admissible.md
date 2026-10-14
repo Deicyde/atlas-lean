@@ -21,6 +21,11 @@ maximum-modulus condition is insufficient as stated and is not used.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hayman Auxiliary A](hayman-auxiliary-a.md)
+- [Hayman Auxiliary B](hayman-auxiliary-b.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.HaymanAdmissibility](../../../../../../../sources/v2/MathlibExt.md)

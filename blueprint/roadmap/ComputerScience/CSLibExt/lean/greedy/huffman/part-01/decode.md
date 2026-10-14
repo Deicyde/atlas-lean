@@ -12,7 +12,12 @@ Decode a complete bit string, rejecting an incomplete or invalid final codeword.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](huffman-tree.md)
+
+## Proof depends on
+
+- [Decode One?](decode-one.md)
+- [Decode Path?](decode-path.md)
 
 ## Sources
 

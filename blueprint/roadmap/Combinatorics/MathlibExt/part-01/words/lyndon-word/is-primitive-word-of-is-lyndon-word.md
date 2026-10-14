@@ -13,7 +13,11 @@ Every Lyndon word is primitive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lyndon Word](is-lyndon-word.md)
+
+## Proof depends on
+
+- [Is Primitive Word iff nodup cyclic Permutations](is-primitive-word-iff-nodup-cyclic-permu.md)
 
 ## Sources
 

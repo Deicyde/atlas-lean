@@ -13,7 +13,14 @@ The declared event count is bounded above by three times the cube of chain lengt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../basic/cost.md)
+- [Total](../basic/total.md)
+- [Result](../basic/result.md)
+- [Matrix Chain Order](matrix-chain-order.md)
+
+## Proof depends on
+
+- [Matrix Chain Order time](matrix-chain-order-time.md)
 
 ## Sources
 

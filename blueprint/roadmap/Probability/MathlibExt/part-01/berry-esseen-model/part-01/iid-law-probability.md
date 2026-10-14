@@ -13,7 +13,8 @@ The canonical product is a probability measure on admissible laws.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Standardized Law](is-standardized-law.md)
+- [Iid Law](iid-law.md)
 
 ## Sources
 

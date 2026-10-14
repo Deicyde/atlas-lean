@@ -13,7 +13,9 @@ Membership in the neighbor list is the edge query.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adjacency Matrix](adjacency-matrix.md)
+- [Has Edge](has-edge.md)
+- [Neighbors](neighbors.md)
 
 ## Sources
 

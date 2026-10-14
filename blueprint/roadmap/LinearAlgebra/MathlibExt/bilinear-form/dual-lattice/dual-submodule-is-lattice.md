@@ -15,6 +15,11 @@ The dual submodule of a lattice is a lattice.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dual Submodule fg](dual-submodule-fg.md)
+- [Dual Submodule span eq top](dual-submodule-span-eq-top.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.BilinearForm.DualLattice](../../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,14 @@ consecutive pairs. An empty chain means no branch and is valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Block](block.md)
+- [Branch Step](branch-step.md)
+
+## Proof depends on
+
+- [Chain Adj Valid](chain-adj-valid.md)
+- [Basic Count](basic-count.md)
+- [Branch Bound Exp](branch-bound-exp.md)
 
 ## Sources
 

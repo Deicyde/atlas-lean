@@ -17,6 +17,10 @@ of those divisor counts.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Liouville divisor function identity general](liouville-divisor-function-identity-gene.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ArithmeticFunction.LiouvilleDivisorIdentity](../../../../../../sources/v2/MathlibExt.md)

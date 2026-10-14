@@ -12,7 +12,7 @@ Sum of edge weights, counting parallel edge occurrences separately.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Edge](weighted-edge.md)
 
 ## Sources
 

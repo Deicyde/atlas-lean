@@ -13,7 +13,12 @@ Generator-generator products stay in the span.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scalar Gens](scalar-gens.md)
+
+## Proof depends on
+
+- [Central Scalar](central-scalar.md)
+- [Central Scalar mul](central-scalar-mul.md)
 
 ## Sources
 

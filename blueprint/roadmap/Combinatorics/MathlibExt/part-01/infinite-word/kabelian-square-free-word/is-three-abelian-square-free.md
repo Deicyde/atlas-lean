@@ -14,6 +14,10 @@ Ternary specialization of `3`-abelian square-freeness.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is KAbelian Square Free](is-kabelian-square-free.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.KAbelianSquareFreeWord](../../../../../../sources/v2/MathlibExt.md)

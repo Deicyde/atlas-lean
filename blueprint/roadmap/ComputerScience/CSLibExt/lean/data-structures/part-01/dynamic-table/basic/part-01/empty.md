@@ -12,7 +12,7 @@ The source's initially unallocated empty table.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](table.md)
 
 ## Sources
 

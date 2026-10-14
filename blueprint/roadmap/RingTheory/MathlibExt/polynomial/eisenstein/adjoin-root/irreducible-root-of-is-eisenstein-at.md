@@ -16,6 +16,12 @@ irreducible.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Discrete Valuation Ring of is Eisenstein At](is-discrete-valuation-ring-of-is-eisenst.md)
+- [Is Local Ring maximal Ideal eq span root](is-local-ring-maximal-ideal-eq-span-root.md)
+- [Is Local Ring of is Eisenstein At](is-local-ring-of-is-eisenstein-at.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Polynomial.Eisenstein.AdjoinRoot](../../../../../../sources/v2/MathlibExt.md)

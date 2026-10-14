@@ -13,7 +13,11 @@ lean: MathlibExt.NumberTheory.BreuschWanted.Internal.G9_eq_mod
 
 ## Depends on
 
-This node has no prerequisites.
+- [G9](../../grid/part-01/g9.md)
+
+## Proof depends on
+
+- [G9 period iter](g9-period-iter.md)
 
 ## Sources
 

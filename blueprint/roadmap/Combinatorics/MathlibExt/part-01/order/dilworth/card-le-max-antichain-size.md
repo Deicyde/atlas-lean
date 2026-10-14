@@ -13,7 +13,7 @@ An antichain has at most `maxAntichainSize α` elements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Antichain Size](max-antichain-size.md)
 
 ## Sources
 

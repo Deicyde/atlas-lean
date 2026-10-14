@@ -13,7 +13,8 @@ Entry formula for a principal Fourier minor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Root Data](root-data.md)
+- [Principal Minor Matrix](principal-minor-matrix.md)
 
 ## Sources
 

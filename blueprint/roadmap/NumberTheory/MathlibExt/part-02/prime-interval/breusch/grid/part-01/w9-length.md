@@ -13,7 +13,7 @@ The table `w9` has 16 entries.
 
 ## Depends on
 
-This node has no prerequisites.
+- [W9](w9.md)
 
 ## Sources
 

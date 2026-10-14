@@ -13,7 +13,12 @@ has at most `2 * t - 1` keys, and split it otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](../part-01/btree.md)
+- [Ins Result](../part-01/ins-result.md)
+
+## Proof depends on
+
+- [Split Node](split-node.md)
 
 ## Sources
 

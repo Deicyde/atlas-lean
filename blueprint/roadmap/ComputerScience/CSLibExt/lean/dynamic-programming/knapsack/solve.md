@@ -12,7 +12,8 @@ Bottom-up zero-one knapsack with one tick per table cell and reconstructed item 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Item](item.md)
+- [Result](result.md)
 
 ## Sources
 

@@ -13,7 +13,17 @@ Induction holds iff pullbacks agree on all ideals coprime to `m2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Character](../character/ray-class-character.md)
+- [Is Induced By](is-induced-by.md)
+- [Coprime Inclusion](coprime-inclusion.md)
+- [Pullback](../character/pullback.md)
+
+## Proof depends on
+
+- [Ray Class Group](../group/ray-class-group.md)
+- [Map Of Dvd](map-of-dvd.md)
+- [Map Of Dvd ray Class Map](map-of-dvd-ray-class-map.md)
+- [Ray Class Map](../group/ray-class-map.md)
 
 ## Sources
 

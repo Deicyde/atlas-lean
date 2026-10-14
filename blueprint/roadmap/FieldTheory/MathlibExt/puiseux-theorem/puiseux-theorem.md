@@ -26,6 +26,10 @@ then with the ramification bounded inside a power-series level.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Alg Closed rat](is-alg-closed-rat.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.FieldTheory.PuiseuxTheorem](../../../../sources/v2/MathlibExt.md)

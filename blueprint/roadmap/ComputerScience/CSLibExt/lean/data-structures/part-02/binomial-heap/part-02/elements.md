@@ -12,7 +12,11 @@ The multiset represented by a binomial heap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Heap](binomial-heap.md)
+
+## Proof depends on
+
+- [Elements](../part-01/elements-2.md)
 
 ## Sources
 

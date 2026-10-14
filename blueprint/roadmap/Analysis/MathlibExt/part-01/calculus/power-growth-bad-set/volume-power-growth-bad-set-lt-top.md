@@ -15,7 +15,7 @@ measure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Power Growth Bad Set](power-growth-bad-set.md)
 
 ## Sources
 

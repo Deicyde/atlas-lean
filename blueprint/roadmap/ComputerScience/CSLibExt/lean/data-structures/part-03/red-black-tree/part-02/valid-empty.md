@@ -13,7 +13,16 @@ The empty tree is a valid red-black tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Valid](../part-01/valid.md)
+
+## Proof depends on
+
+- [Balanced](../part-01/balanced.md)
+- [Color](../part-01/color.md)
+- [Ordered](../part-01/ordered.md)
+- [Red Ok](../part-01/red-ok.md)
+- [Color Of](../part-01/color-of.md)
 
 ## Sources
 

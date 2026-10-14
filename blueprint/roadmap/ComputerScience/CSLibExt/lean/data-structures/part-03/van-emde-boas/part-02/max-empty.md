@@ -13,7 +13,15 @@ The empty tree has no greatest element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empty](../part-01/empty.md)
+- [Max?](max.md)
+
+## Proof depends on
+
+- [Max? eq none iff](max-eq-none-iff.md)
+- [Member](../part-01/member.md)
+- [Member empty](../part-01/member-empty.md)
+- [Valid empty](../part-01/valid-empty.md)
 
 ## Sources
 

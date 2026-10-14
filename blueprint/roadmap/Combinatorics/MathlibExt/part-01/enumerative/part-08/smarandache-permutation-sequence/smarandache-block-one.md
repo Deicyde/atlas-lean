@@ -13,7 +13,7 @@ First block: `(1, 2)` (statement `jis_c46e1d9809a20ee69374dac7`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smarandache Block](smarandache-block.md)
 
 ## Sources
 

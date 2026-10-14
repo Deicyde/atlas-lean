@@ -13,7 +13,12 @@ The actual continuous expected saved-bucket execution time is Theta of input siz
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bucket Sort](../basic/bucket-sort.md)
+
+## Proof depends on
+
+- [Bucket Sort time expected lower](bucket-sort-time-expected-lower.md)
+- [Bucket Sort time expected upper](bucket-sort-time-expected-upper.md)
 
 ## Sources
 

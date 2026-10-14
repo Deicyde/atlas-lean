@@ -13,7 +13,7 @@ set varies.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice Cell](lattice-cell.md)
 
 ## Sources
 

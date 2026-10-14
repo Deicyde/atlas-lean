@@ -13,7 +13,8 @@ Bondareva-Shapley: cooperative game has nonempty core iff balanced.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Balanced](is-balanced.md)
+- [Is Core Allocation](is-core-allocation.md)
 
 ## Sources
 

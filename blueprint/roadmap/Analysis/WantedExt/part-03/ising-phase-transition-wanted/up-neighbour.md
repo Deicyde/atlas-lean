@@ -12,7 +12,7 @@ Upward neighbour in the periodic lattice.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ising Site](ising-site.md)
 
 ## Sources
 

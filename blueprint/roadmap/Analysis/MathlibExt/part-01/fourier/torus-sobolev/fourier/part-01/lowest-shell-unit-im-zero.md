@@ -13,7 +13,12 @@ Opposite Fourier modes make this polynomial real.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lowest Shell Unit](lowest-shell-unit.md)
+
+## Proof depends on
+
+- [Frequency](../../basic/frequency.md)
+- [Axis Frequency](axis-frequency.md)
 
 ## Sources
 

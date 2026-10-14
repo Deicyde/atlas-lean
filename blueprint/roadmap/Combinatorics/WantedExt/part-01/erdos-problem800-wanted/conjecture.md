@@ -15,6 +15,10 @@ linear.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Diagonal Graph Ramsey](../../../MathlibExt/part-01/simple-graph/part-03/ramsey/diagonal-graph-ramsey.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ErdosProblem800Wanted](../../../../../sources/v2/WantedExt.md)

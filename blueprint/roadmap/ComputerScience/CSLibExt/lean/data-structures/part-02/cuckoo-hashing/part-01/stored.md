@@ -12,7 +12,7 @@ The binding `key ↦ value` is held in some slot of either table.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cuckoo Hashing](cuckoo-hashing.md)
 
 ## Sources
 

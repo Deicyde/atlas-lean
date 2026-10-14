@@ -14,6 +14,10 @@ The radius-half disk gives the exact lower bound `π / 4`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lebesgue Universal Covering Constant](lebesgue-universal-covering-constant.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.LebesgueUniversalCoveringConstantWanted](../../../../../../sources/v2/WantedExt.md)

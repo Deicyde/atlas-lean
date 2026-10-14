@@ -13,7 +13,14 @@ Search at the root succeeds exactly on keys of the flattening.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Root](root.md)
+- [Ordered](ordered.md)
+- [Contains](contains.md)
+- [Flatten](flatten.md)
+
+## Proof depends on
+
+- [Contains eq true iff](../part-01/contains-eq-true-iff.md)
 
 ## Sources
 

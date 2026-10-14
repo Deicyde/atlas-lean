@@ -13,7 +13,13 @@ Exact same-execution event count: one per cache probe, candidate, and actual wri
 
 ## Depends on
 
-This node has no prerequisites.
+- [Memoized Cut Rod](memoized-cut-rod.md)
+
+## Proof depends on
+
+- [Memoized Cut Rod Aux](memoized-cut-rod-aux.md)
+- [Memoized Cut Rod Aux hit](memoized-cut-rod-aux-hit.md)
+- [Memoized Cut Rod Aux preserves](memoized-cut-rod-aux-preserves.md)
 
 ## Sources
 

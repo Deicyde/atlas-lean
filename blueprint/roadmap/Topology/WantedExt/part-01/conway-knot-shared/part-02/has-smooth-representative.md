@@ -15,7 +15,14 @@ the usual smooth/PL knot type relation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knot](../part-01/knot.md)
+- [PLKnot](plknot.md)
+
+## Proof depends on
+
+- [Image](image.md)
+- [R3](../part-01/r3.md)
+- [Unoriented Top Amb Isotopic](../part-01/unoriented-top-amb-isotopic.md)
 
 ## Sources
 

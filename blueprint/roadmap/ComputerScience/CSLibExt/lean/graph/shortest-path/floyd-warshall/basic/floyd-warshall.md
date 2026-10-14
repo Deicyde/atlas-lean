@@ -12,7 +12,7 @@ Compute the all-pairs distance matrix by the bottom-up Floyd-Warshall recurrence
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](cost.md)
 
 ## Sources
 

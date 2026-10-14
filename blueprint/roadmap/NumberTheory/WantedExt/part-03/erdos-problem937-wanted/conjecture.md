@@ -15,6 +15,10 @@ coprime powerful numbers.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Coprime Powerful AP4](is-coprime-powerful-ap4.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem937Wanted](../../../../../sources/v2/WantedExt.md)

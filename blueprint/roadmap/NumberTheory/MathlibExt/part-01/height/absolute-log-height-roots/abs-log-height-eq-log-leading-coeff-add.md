@@ -13,7 +13,7 @@ Element-level version assuming `x` is integral over `ℚ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Absolute](../primitive-int-minpoly.md)
 
 ## Sources
 

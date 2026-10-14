@@ -14,6 +14,10 @@ An order-statistic tree uses Mathlib's canonical binary-tree carrier.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Entry](entry.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.OrderStatisticTree](../../../../../../../../sources/v2/CSLibExt.md)

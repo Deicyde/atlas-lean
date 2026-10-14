@@ -14,6 +14,10 @@ Grand orbit of `x`, viewed as its equivalence class.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Grand Orbit Rel](grand-orbit-rel.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Dynamics.Preperiodic](../../../../sources/v2/MathlibExt.md)

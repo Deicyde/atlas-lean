@@ -17,6 +17,10 @@ Cites concept `jis_sem_95dbf183cc4eaf1172157db5` and source statement
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Takagi Bit](takagi-bit.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.TakagiFunction](../../../../../../../sources/v2/MathlibExt.md)

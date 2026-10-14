@@ -16,6 +16,10 @@ density of `S` (relative to a set `A`) to be the limsup of the partial densities
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Partial Density](partial-density.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Data.Set.Density](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ Stronger explicit global bound; the source proof never uses `0 ≤ t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Theta Error](../laplace-theta-continuation/normalized-theta-error.md)
 
 ## Sources
 

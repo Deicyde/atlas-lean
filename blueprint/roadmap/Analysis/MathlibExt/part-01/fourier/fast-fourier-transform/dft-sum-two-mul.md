@@ -13,7 +13,7 @@ Splits an even-length DFT sum into its even and odd samples.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dft Sum](dft-sum.md)
 
 ## Sources
 

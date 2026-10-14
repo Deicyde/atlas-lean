@@ -13,7 +13,12 @@ lean: MathlibExt.NumberTheory.BreuschWanted.Internal.jmin3
 
 ## Depends on
 
-This node has no prerequisites.
+- [G9](../part-01/g9.md)
+
+## Proof depends on
+
+- [Jmin3 attained](jmin3-attained.md)
+- [Jmin3 core](jmin3-core.md)
 
 ## Sources
 

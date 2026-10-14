@@ -13,7 +13,8 @@ lean: Multigraph.degreeOn_congr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraph](multigraph.md)
+- [Degree On](degree-on.md)
 
 ## Sources
 

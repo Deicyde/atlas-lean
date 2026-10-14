@@ -13,7 +13,7 @@ Every edge of a bridgeless graph is not a bridge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bridgeless](is-bridgeless.md)
 
 ## Sources
 

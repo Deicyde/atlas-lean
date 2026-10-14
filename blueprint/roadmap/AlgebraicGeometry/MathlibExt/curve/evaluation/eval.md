@@ -12,7 +12,11 @@ Evaluate a divisor by multiplying the corresponding integer powers of `f`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Curve Divisor](../divisor/curve-divisor.md)
+
+## Proof depends on
+
+- [Eval Monoid Hom](eval-monoid-hom.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Membership characterization of `polarSet`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polar Set](polar-set.md)
 
 ## Sources
 

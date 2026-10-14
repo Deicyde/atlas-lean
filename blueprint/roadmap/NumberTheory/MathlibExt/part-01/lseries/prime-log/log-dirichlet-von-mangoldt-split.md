@@ -13,7 +13,12 @@ Prime-power splitting of the von Mangoldt L-series into `Φ` plus correction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log Dirichlet Correction](log-dirichlet-correction.md)
+- [Log Dirichlet Series](log-dirichlet-series.md)
+
+## Proof depends on
+
+- [Log Dirichlet Correction Term](log-dirichlet-correction-term.md)
 
 ## Sources
 

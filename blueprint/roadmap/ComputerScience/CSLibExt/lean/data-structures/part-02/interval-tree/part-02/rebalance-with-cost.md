@@ -12,7 +12,16 @@ Rebalance one node and report the cache writes and rotations it performs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../part-01/cost.md)
+- [Tree](../part-01/tree.md)
+
+## Proof depends on
+
+- [Entry](../part-01/entry.md)
+- [Rotate Left](rotate-left.md)
+- [Rotate Left Right](rotate-left-right.md)
+- [Rotate Right](rotate-right.md)
+- [Rotate Right Left](rotate-right-left.md)
 
 ## Sources
 

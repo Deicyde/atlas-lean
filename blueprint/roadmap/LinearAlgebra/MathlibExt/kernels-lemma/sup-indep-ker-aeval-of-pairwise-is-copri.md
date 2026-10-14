@@ -15,6 +15,10 @@ Kernels of a finite set of pairwise coprime polynomials are supremum-independent
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [I Sup ker aeval eq ker aeval prod of pairwise is Coprime](i-sup-ker-aeval-eq-ker-aeval-prod-of-pai.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.KernelsLemma](../../../../sources/v2/MathlibExt.md)

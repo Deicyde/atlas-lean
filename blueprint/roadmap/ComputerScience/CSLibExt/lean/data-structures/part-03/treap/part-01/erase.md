@@ -12,7 +12,13 @@ Delete a key by splitting around it and merging the two remaining trees.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Split Result](split-result.md)
+- [Merge](merge.md)
+- [Split](split.md)
 
 ## Sources
 

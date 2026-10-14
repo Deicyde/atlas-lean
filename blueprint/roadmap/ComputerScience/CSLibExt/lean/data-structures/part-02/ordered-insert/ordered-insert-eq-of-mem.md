@@ -15,7 +15,7 @@ without strict sortedness it fails, e.g. `orderedInsert 2 [3, 2] = [2, 3, 2]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered Insert](ordered-insert.md)
 
 ## Sources
 

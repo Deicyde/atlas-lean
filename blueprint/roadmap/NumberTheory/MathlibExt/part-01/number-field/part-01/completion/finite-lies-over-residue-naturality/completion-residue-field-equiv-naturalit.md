@@ -13,7 +13,13 @@ Naturality of the residue-field equivalences with explicit quotient maps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adic Completion Residue Quotient Map](adic-completion-residue-quotient-map.md)
+- [Ring Of Integers Residue Quotient Map](ring-of-integers-residue-quotient-map.md)
+
+## Proof depends on
+
+- [Finite Lies Over Residue Field](../adic-completion-integers-map-algebra-map.md)
+- [Finite Lies Over Maximal Ideal](../comap-maximal-ideal-adic-completion-inte.md)
 
 ## Sources
 

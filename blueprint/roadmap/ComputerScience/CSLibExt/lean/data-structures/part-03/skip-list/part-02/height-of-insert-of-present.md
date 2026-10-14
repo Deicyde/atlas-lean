@@ -13,7 +13,14 @@ Replacing an existing key preserves the height of its tower.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skip List](../part-01/skip-list.md)
+- [Valid](../part-01/valid.md)
+- [Height Of](../part-01/height-of.md)
+- [Insert](../part-01/insert.md)
+
+## Proof depends on
+
+- [Entry](../part-01/entry.md)
 
 ## Sources
 

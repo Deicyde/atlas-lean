@@ -13,7 +13,7 @@ Child selection compares values exactly when the right child exists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Timed Smaller Child](timed-smaller-child.md)
 
 ## Sources
 

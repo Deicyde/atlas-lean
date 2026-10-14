@@ -13,7 +13,7 @@ Prepending a letter increments its coordinate in the content.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Witt Word Content](witt-word-content.md)
 
 ## Sources
 

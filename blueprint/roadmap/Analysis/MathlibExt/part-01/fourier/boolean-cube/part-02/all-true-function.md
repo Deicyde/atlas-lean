@@ -12,7 +12,7 @@ The Boolean AND function on all coordinates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](../part-01/bool-cube.md)
 
 ## Sources
 

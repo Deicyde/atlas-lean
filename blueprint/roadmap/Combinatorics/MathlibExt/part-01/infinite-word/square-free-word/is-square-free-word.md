@@ -18,6 +18,10 @@ Source concept `jis_sem_4970e15c0be600988a8749e5`; statements
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Word Square](is-word-square.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.SquareFreeWord](../../../../../../sources/v2/MathlibExt.md)

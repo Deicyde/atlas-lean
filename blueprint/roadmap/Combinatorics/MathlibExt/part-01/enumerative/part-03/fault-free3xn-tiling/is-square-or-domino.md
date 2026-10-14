@@ -12,7 +12,11 @@ A tile is either one unit square or one domino joining adjacent cells.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tiling Cell](tiling-cell.md)
+
+## Proof depends on
+
+- [Adjacent](adjacent.md)
 
 ## Sources
 

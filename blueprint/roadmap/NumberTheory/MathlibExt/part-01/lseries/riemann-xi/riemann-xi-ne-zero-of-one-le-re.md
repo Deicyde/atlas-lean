@@ -14,7 +14,11 @@ The Riemann xi function does not vanish on the closed half-plane
 
 ## Depends on
 
-This node has no prerequisites.
+- [Riemann Xi](riemann-xi.md)
+
+## Proof depends on
+
+- [Riemann Xi eq mul completed Riemann Zeta](riemann-xi-eq-mul-completed-riemann-zeta.md)
 
 ## Sources
 

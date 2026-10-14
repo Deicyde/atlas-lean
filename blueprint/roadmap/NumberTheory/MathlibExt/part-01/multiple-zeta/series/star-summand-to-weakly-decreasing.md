@@ -13,7 +13,12 @@ Passing a strict tuple to the star summand recovers the strict summand.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
+- [Depth](../index/depth.md)
+- [Strict Decreasing Tuple](strict-decreasing-tuple.md)
+- [To Weakly Decreasing](to-weakly-decreasing.md)
+- [Star Summand](star-summand.md)
+- [Strict Summand](strict-summand.md)
 
 ## Sources
 

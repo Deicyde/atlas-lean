@@ -14,7 +14,7 @@ element at `g⁻¹`, without changing its coefficient.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inversion](inversion.md)
 
 ## Sources
 

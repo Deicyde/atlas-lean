@@ -15,7 +15,16 @@ level bound `k ≤ Nat.log2 a.length`, which is derived internally.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build](build.md)
+- [Entry](entry.md)
+
+## Proof depends on
+
+- [Sparse Table](sparse-table.md)
+- [Build valid](build-valid.md)
+- [Entry eq of valid](entry-eq-of-valid.md)
+- [Level](level.md)
+- [Omin](omin.md)
 
 ## Sources
 

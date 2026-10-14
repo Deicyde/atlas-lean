@@ -13,7 +13,11 @@ Knill's metric `δ`: the essential supremum of the pointwise torus-distance
 
 ## Depends on
 
-This node has no prerequisites.
+- [Volume Preserving Equiv](volume-preserving-equiv.md)
+
+## Proof depends on
+
+- [Torus](torus.md)
 
 ## Sources
 

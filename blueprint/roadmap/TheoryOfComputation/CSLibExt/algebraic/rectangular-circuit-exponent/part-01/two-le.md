@@ -13,7 +13,16 @@ Actual output costs prohibit any essentially subquadratic operation exponent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Rectangular Circuit Exponent](has-rectangular-circuit-exponent.md)
+
+## Proof depends on
+
+- [Arithmetic Circuit](../../arithmetic-circuit/arithmetic-circuit.md)
+- [Is Matrix Multiplication](../../matrix-multiplication/is-matrix-multiplication.md)
+- [Output cost le](../../matrix-multiplication/output-cost-le.md)
+- [Matrix Arithmetic Circuit](../../matrix-multiplication/matrix-arithmetic-circuit.md)
+- [Rectangular Inner Dimension](../../matrix-multiplication-exponent/part-03/rectangular-inner-dimension.md)
+- [Rectangular Inner Dimension pos](rectangular-inner-dimension-pos.md)
 
 ## Sources
 

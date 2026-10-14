@@ -13,7 +13,7 @@ Quickselect returns `none` exactly for an out-of-range rank.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quickselect](quickselect.md)
 
 ## Sources
 

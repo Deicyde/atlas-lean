@@ -12,7 +12,7 @@ Looks up a list key in a trie.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trie](trie.md)
 
 ## Sources
 

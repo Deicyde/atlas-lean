@@ -13,7 +13,7 @@ Normalization always produces a valid heap arity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Arity](normalized-arity.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ A vertex in `D` survives contraction as its subtype copy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Collapse Outside](collapse-outside.md)
 
 ## Sources
 

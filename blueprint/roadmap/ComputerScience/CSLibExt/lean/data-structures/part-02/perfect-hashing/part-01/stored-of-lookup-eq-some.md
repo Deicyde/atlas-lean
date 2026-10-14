@@ -14,7 +14,9 @@ value that is actually stored alongside the key in some secondary slot.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](perfect-hashing.md)
+- [Stored](stored.md)
+- [Lookup](lookup.md)
 
 ## Sources
 

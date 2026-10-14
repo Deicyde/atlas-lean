@@ -13,7 +13,12 @@ The generated closure is a fixed point. This direction does not require strict g
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fixed Point](fixed-point.md)
+- [Generated Set](generated-set.md)
+
+## Proof depends on
+
+- [Gen](gen.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ For positive `b`, multiplication count lies between one and two per exponent bit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Exponentiation](modular-exponentiation.md)
+
+## Proof depends on
+
+- [Modular Exponentiation time even](modular-exponentiation-time-even.md)
+- [Modular Exponentiation time odd](modular-exponentiation-time-odd.md)
+- [Modular Exponentiation zero](modular-exponentiation-zero.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Each bucket's secondary size is dominated by the total secondary space.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](../part-01/perfect-hashing.md)
+- [Total Secondary Space](total-secondary-space.md)
 
 ## Sources
 

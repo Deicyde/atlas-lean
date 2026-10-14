@@ -13,7 +13,8 @@ Every admitted real exponent bounds the infimal exponent from above.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dirichlet Subconvexity Exponent](is-dirichlet-subconvexity-exponent.md)
+- [Dirichlet Subconvexity Exponent](dirichlet-subconvexity-exponent.md)
 
 ## Sources
 

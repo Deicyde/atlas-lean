@@ -15,6 +15,10 @@ ramified over `R`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Tamely Ramified At](is-tamely-ramified-at.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.RamificationInertia.Tame](../../../../../../sources/v2/MathlibExt.md)

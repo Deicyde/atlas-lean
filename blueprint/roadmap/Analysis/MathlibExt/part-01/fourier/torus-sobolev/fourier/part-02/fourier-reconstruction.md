@@ -13,7 +13,11 @@ The canonical infinite Fourier sum evaluates the actual physical-period function
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frequency](../../basic/frequency.md)
+- [Torus](../../basic/torus.md)
+- [Fourier Coefficient](../../basic/fourier-coefficient.md)
+- [Unit Representative](../../basic/unit-representative.md)
+- [Unit Rescaling](../../basic/unit-rescaling.md)
 
 ## Sources
 

@@ -22,6 +22,10 @@ Proves `Wanted` entry `thue_lemma`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Thue lemma general](thue-lemma-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ThueLemma](../../../../../sources/v2/MathlibExt.md)

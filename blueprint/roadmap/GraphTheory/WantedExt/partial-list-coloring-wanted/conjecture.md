@@ -16,6 +16,11 @@ has `λ_r / r ≥ λ_s / s`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lambda Min](lambda-min.md)
+- [Is Choice Number](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-02/list-coloring/is-choice-number.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.PartialListColoringWanted](../../../../sources/v2/WantedExt.md)

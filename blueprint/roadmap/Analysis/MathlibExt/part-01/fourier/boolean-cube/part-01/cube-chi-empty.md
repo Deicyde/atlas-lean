@@ -13,7 +13,8 @@ The empty Fourier character is the constant one function.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](bool-cube.md)
+- [Cube Chi](cube-chi.md)
 
 ## Sources
 

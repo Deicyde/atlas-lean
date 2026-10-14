@@ -13,7 +13,7 @@ The parent of a nonroot node has a strictly smaller index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Parent](dary-parent.md)
 
 ## Sources
 

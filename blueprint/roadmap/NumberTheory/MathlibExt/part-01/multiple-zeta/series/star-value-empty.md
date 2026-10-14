@@ -13,7 +13,17 @@ The multiple-zeta-star value of the empty index is one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Or Empty](is-admissible-or-empty.md)
+- [Empty](empty.md)
+- [Star Value](star-value.md)
+
+## Proof depends on
+
+- [Depth](../index/depth.md)
+- [Entry](entry.md)
+- [Weakly Decreasing Tuple](weakly-decreasing-tuple.md)
+- [Empty](empty-3.md)
+- [Star Summand](star-summand.md)
 
 ## Sources
 

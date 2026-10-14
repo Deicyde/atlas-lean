@@ -12,7 +12,7 @@ Proved witness: dilatation data exists for the constant polynomial one at zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padic Polynomial Dilatation](padic-polynomial-dilatation.md)
 
 ## Sources
 

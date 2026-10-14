@@ -13,7 +13,14 @@ Contradiction at level `n ≥ 4762` from the two bounds.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper ineq](upper-ineq.md)
+
+## Proof depends on
+
+- [T03c eqmain margin](../breusch/theta/part-03/t03c-eqmain-margin.md)
+- [Gap pos](../breusch/theta/part-03/gap-pos.md)
+- [Log F9](../breusch/lower/part-01/log-f9.md)
+- [Log F9 lower](../breusch/lower/part-02/log-f9-lower.md)
 
 ## Sources
 

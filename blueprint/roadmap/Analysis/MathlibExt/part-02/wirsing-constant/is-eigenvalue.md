@@ -21,6 +21,10 @@ Wirsing constant itself is defined over holomorphic eigenfunctions at
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gkw Term](gkw-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.WirsingConstant](../../../../../sources/v2/MathlibExt.md)

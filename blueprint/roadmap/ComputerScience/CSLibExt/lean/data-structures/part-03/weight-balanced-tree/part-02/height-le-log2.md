@@ -16,7 +16,11 @@ base `4 / 3` to base `2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balanced](../part-01/balanced.md)
+
+## Proof depends on
+
+- [Pow height le](pow-height-le.md)
 
 ## Sources
 

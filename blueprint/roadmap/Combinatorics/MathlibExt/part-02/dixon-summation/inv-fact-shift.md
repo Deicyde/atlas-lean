@@ -13,7 +13,7 @@ Universal shift identity for the inverse factorial with the negative-input conve
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv Fact](inv-fact.md)
 
 ## Sources
 

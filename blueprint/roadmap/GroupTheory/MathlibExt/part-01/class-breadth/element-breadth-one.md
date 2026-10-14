@@ -13,7 +13,11 @@ The breadth of the identity element is zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Element Breadth](element-breadth.md)
+
+## Proof depends on
+
+- [Carrier mk one](carrier-mk-one.md)
 
 ## Sources
 

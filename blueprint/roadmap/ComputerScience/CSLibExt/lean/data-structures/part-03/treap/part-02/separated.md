@@ -12,7 +12,7 @@ lean: Cslib.Algorithms.Lean.Treap.Tree.Separated
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
 
 ## Sources
 

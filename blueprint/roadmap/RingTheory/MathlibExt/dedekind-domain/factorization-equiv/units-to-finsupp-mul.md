@@ -13,7 +13,7 @@ Valuations add under multiplication of fractional ideals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Units To Finsupp](units-to-finsupp.md)
 
 ## Sources
 

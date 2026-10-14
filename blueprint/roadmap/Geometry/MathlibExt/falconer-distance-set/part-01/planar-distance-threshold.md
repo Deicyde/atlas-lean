@@ -14,6 +14,10 @@ The infimum of sufficient planar thresholds in `[0,2]`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Admissible Planar Threshold](admissible-planar-threshold.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.FalconerDistanceSet](../../../../../sources/v2/MathlibExt.md)

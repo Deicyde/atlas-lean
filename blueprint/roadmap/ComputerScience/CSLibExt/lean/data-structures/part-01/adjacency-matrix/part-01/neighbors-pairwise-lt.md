@@ -14,7 +14,12 @@ The neighbor list is in strictly increasing order, as documented for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adjacency Matrix](adjacency-matrix.md)
+- [Neighbors](neighbors.md)
+
+## Proof depends on
+
+- [Has Edge](has-edge.md)
 
 ## Sources
 

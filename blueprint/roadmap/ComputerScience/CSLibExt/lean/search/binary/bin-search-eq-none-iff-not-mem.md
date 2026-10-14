@@ -15,6 +15,10 @@ Full-range binary search returns `none` exactly when the key is absent.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bin Search eq none iff](bin-search-eq-none-iff.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Search.Binary](../../../../../../sources/v2/CSLibExt.md)

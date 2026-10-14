@@ -15,6 +15,10 @@ tuples from the image of B in L. It is not, at this level of generality, an Idea
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Image Of B](image-of-b.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.ExtensionDiscriminant](../../../../../../../sources/v2/MathlibExt.md)

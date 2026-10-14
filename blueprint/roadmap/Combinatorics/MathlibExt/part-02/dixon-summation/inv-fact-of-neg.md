@@ -13,7 +13,7 @@ The inverse factorial vanishes at negative integers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv Fact](inv-fact.md)
 
 ## Sources
 

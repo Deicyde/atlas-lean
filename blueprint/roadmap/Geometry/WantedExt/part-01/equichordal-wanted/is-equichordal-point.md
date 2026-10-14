@@ -16,7 +16,7 @@ crossings for nonconvex star-like domains.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
 
 ## Sources
 

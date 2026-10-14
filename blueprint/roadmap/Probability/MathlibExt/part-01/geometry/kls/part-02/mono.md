@@ -13,7 +13,7 @@ Increasing a supplied Poincare bound preserves its variance inequalities.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Smooth Poincare Bound](../part-01/is-smooth-poincare-bound.md)
 
 ## Sources
 

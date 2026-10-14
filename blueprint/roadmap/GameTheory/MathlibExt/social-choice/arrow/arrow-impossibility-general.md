@@ -15,7 +15,20 @@ voter type is dictatorial, with `Finite` hypotheses.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dictatorial](is-dictatorial.md)
+- [Is IIA](is-iia.md)
+- [Is Pareto](is-pareto.md)
+- [Social Welfare Function](social-welfare-function.md)
+
+## Proof depends on
+
+- [Is Dictator](is-dictator.md)
+- [Profile](profile.md)
+- [Strict Total Order](strict-total-order.md)
+- [Irrefl](irrefl.md)
+- [Lt](lt.md)
+- [Total](total.md)
+- [Trans](trans.md)
 
 ## Sources
 

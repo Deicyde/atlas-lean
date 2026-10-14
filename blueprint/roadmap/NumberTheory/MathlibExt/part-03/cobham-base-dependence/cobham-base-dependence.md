@@ -17,7 +17,15 @@ arXiv:1801.06704, Section 3.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bases Multiplicatively Independent](bases-multiplicatively-independent.md)
+- [Is Base Recognizable](../base-recognizable/is-base-recognizable.md)
+- [Is Ultimately Periodic Set](is-ultimately-periodic-set.md)
+
+## Proof depends on
+
+- [Is Canonical Base Word](../base-recognizable/is-canonical-base-word.md)
+- [Base Digits](../base-recognizable/base-digits.md)
+- [Base Word Value](../base-recognizable/base-word-value.md)
 
 ## Sources
 

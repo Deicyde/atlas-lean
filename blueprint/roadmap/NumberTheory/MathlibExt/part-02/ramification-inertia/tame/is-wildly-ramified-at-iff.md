@@ -13,7 +13,8 @@ Unfolding of wild ramification as the negation of tame ramification.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Tamely Ramified At](is-tamely-ramified-at.md)
+- [Is Wildly Ramified At](is-wildly-ramified-at.md)
 
 ## Sources
 

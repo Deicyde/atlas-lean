@@ -13,7 +13,11 @@ An empty search performs its terminal visit and no endpoint comparisons.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../part-01/cost.md)
+- [Entry](../part-01/entry.md)
+- [Interval](../part-01/interval.md)
+- [Tree](../part-01/tree.md)
+- [Search With Cost](search-with-cost.md)
 
 ## Sources
 

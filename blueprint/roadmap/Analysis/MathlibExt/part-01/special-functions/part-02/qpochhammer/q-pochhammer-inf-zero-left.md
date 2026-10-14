@@ -13,7 +13,7 @@ With zero first parameter, every q-Pochhammer factor is one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Pochhammer Inf](q-pochhammer-inf.md)
 
 ## Sources
 

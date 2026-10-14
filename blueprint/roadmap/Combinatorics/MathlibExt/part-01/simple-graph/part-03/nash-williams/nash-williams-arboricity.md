@@ -14,7 +14,7 @@ nonempty `U` spans at most `k * (|U| - 1)` edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Arboricity Coloring](is-arboricity-coloring.md)
 
 ## Sources
 

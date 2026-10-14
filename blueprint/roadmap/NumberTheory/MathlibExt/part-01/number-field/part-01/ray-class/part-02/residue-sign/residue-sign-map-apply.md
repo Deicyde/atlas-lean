@@ -13,7 +13,11 @@ Pointwise evaluation of the combined residue-sign map.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residue Sign Target](residue-sign-target.md)
+- [Finite Residue Map](../../part-01/finite-congruence/finite-residue-map.md)
+- [Infinite Sign Map](../../part-01/infinite-sign/infinite-sign-map.md)
+- [Ray Elements](../ray-group/ray-elements.md)
+- [Residue Sign Map](residue-sign-map.md)
 
 ## Sources
 

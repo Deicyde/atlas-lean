@@ -13,7 +13,13 @@ The extended-real supremum has the standard least-upper-bound characterization.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conditional Admissible](../../basic/conditional-admissible.md)
+- [Torus](../../basic/torus.md)
+- [Theta](../../basic/theta.md)
+
+## Proof depends on
+
+- [Conditional Point Values](../../basic/conditional-point-values.md)
 
 ## Sources
 

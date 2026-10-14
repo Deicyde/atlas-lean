@@ -13,7 +13,12 @@ Character values lie in the cyclotomic field for `orderOf g`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyc Subfield](../cyclotomic-field/cyc-subfield.md)
+
+## Proof depends on
+
+- [Character eq sum roots](character-eq-sum-roots.md)
+- [Charpoly root pow order Of](charpoly-root-pow-order-of.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ Pointwise additive Hilbert 90: every trace-zero element is a `σ`-coboundary.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ker trace eq range alg Equiv sub id](ker-trace-eq-range-alg-equiv-sub-id.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.FieldTheory.Galois.AdditiveHilbert90](../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,11 @@ The generator `s i` of the Artin group of `M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Artin Group](artin-group.md)
+
+## Proof depends on
+
+- [Artin Relations Set](artin-relations-set.md)
 
 ## Sources
 

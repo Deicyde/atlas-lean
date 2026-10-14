@@ -14,7 +14,15 @@ distance predicate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build](../part-01/build.md)
+- [Dist Sq](../part-01/dist-sq.md)
+- [Search](../part-01/search.md)
+
+## Proof depends on
+
+- [Search build](search-build.md)
+- [To List](../part-01/to-list.md)
+- [To List build perm](../part-01/to-list-build-perm.md)
 
 ## Sources
 

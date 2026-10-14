@@ -17,6 +17,10 @@ numbers of the second kind, binomial coefficients, and smaller Bell numbers. Thi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Spivey bell number add](spivey-bell-number-add.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.SpiveyBellNumberAddition](../../../../../../../sources/v2/MathlibExt.md)

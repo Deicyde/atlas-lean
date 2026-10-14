@@ -14,7 +14,15 @@ violation at the root whenever at least two entries were present.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Heap Ordered](../part-01/dary-heap-ordered.md)
+- [Dary Sift Down Ready](../part-01/dary-sift-down-ready.md)
+- [Dary Move Last To Root](dary-move-last-to-root.md)
+
+## Proof depends on
+
+- [Dary Parent](../part-01/dary-parent.md)
+- [Dary Parent lt](../part-01/dary-parent-lt.md)
+- [Dary Parent lt size](../part-01/dary-parent-lt-size.md)
 
 ## Sources
 

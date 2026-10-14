@@ -16,6 +16,14 @@ Integer complexity: least number of ones needed to express `n`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Expr](expr.md)
+- [Count](count.md)
+- [Eval](eval.md)
+- [Pred](pred.md)
+- [Exists expr of pos](exists-expr-of-pos.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.IntegerComplexity](../../../../../sources/v2/MathlibExt.md)

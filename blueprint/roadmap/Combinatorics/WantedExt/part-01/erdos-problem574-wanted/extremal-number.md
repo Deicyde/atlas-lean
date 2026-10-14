@@ -15,6 +15,10 @@ counts over `n`-vertex simple graphs free of both cycles.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Free Of574 Cycles](is-free-of574-cycles.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ErdosProblem574Wanted](../../../../../sources/v2/WantedExt.md)

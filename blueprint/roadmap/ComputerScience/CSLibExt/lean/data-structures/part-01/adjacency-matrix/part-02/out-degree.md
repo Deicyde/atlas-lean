@@ -12,7 +12,11 @@ The out-degree of a vertex: the number of its out-neighbors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adjacency Matrix](../part-01/adjacency-matrix.md)
+
+## Proof depends on
+
+- [Neighbors](../part-01/neighbors.md)
 
 ## Sources
 

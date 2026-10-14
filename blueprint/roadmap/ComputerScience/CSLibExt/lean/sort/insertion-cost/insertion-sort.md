@@ -14,6 +14,10 @@ Insertion sort with one unit of time charged for every order comparison.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Insertion Sort Insert](insertion-sort-insert.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Sort.InsertionCost](../../../../../../sources/v2/CSLibExt.md)

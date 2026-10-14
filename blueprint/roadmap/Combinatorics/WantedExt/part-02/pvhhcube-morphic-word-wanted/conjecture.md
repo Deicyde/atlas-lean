@@ -15,6 +15,12 @@ The fixed point beginning with `0` of the substitution
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Avoids PVHHCubes](avoids-pvhhcubes.md)
+- [Is Generated Fixed Point](is-generated-fixed-point.md)
+- [Letter](letter.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PVHHCubeMorphicWordWanted](../../../../../sources/v2/WantedExt.md)

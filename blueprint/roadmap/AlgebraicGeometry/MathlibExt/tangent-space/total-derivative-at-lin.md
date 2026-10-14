@@ -14,6 +14,10 @@ Linearization of `totalDerivativeAt f P` in the direction `v`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Total Derivative At](total-derivative-at.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.TangentSpace](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,13 @@ Insert or replace a key with an explicit priority using split and merge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Split Result](split-result.md)
+- [Merge](merge.md)
+- [Split](split.md)
 
 ## Sources
 

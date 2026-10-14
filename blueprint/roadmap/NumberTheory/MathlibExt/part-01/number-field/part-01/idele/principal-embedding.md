@@ -12,7 +12,15 @@ The diagonal embedding of global units as principal ideles.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Idele Group](finite-idele-group.md)
+- [Infinite Idele Group](infinite-idele-group.md)
+- [Topological Idele Group](topological-idele-group.md)
+- [Local Integral Unit Subgroup](local-integral-unit-subgroup.md)
+
+## Proof depends on
+
+- [Finite Principal Embedding](finite-principal-embedding.md)
+- [Infinite Principal Embedding](infinite-principal-embedding.md)
 
 ## Sources
 

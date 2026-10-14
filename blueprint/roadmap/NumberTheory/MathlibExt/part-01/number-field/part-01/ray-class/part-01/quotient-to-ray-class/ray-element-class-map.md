@@ -13,7 +13,12 @@ Ray-element class map: principal ideal followed by the class projection
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Group](../group/ray-class-group.md)
+
+## Proof depends on
+
+- [Principal Ray Ideal Map](../principal-ideal/principal-ray-ideal-map.md)
+- [Ray Class Map](../group/ray-class-map.md)
 
 ## Sources
 

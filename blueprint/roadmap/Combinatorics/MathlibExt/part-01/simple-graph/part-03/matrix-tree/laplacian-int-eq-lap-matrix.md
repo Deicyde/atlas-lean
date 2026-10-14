@@ -13,7 +13,7 @@ The integer Laplacian agrees with Mathlib's `SimpleGraph.lapMatrix` at `ℤ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laplacian Int](laplacian-int.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ Three-layer power-of-four Erdős estimate in binomial form.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists prime dvd choose of erdos layers bound](exists-prime-dvd-choose-of-erdos-layers.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.BlockReductions](../../../../../../sources/v2/MathlibExt.md)

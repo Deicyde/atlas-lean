@@ -14,7 +14,11 @@ data for every Weierstrass equation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Manin Degree Data](../manin-sequence/manin-degree-data.md)
+
+## Proof depends on
+
+- [Of Quadratic](../manin-sequence/of-quadratic.md)
 
 ## Sources
 

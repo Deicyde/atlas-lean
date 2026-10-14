@@ -13,7 +13,8 @@ A bucket cannot hold more bindings than it has slots.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](../part-01/perfect-hashing.md)
+- [Bucket Size](../part-01/bucket-size.md)
 
 ## Sources
 

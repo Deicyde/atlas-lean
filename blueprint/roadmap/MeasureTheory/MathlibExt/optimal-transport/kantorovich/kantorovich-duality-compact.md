@@ -15,7 +15,12 @@ dπ = sup_{φ,ψ} ∫ φ dμ + ∫ ψ dν` over couplings `π` and continuous po
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dual Feasible](dual-feasible.md)
+- [Primal Values](primal-values.md)
+
+## Proof depends on
+
+- [Is Coupling](is-coupling.md)
 
 ## Sources
 

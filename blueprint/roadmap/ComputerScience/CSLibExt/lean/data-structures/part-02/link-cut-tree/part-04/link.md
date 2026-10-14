@@ -18,7 +18,16 @@ reset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](../part-03/state.md)
+
+## Proof depends on
+
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
+- [Find Tree](../part-01/find-tree.md)
+- [Graft At](../part-01/graft-at.md)
+- [Remove Tree](../part-01/remove-tree.md)
+- [Reroot At](../part-01/reroot-at.md)
 
 ## Sources
 

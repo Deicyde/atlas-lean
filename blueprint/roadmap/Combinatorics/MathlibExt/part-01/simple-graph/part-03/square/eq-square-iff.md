@@ -13,7 +13,11 @@ A graph is the square of `G` exactly when it has the expected adjacency relation
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square](square.md)
+
+## Proof depends on
+
+- [Square adj](square-adj.md)
 
 ## Sources
 

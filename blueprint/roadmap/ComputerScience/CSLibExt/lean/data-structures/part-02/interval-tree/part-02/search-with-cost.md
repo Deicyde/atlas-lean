@@ -12,7 +12,15 @@ Cache-pruned overlap search and its faithful primitive trace.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../part-01/cost.md)
+- [Entry](../part-01/entry.md)
+- [Interval](../part-01/interval.md)
+- [Tree](../part-01/tree.md)
+
+## Proof depends on
+
+- [Overlaps With Cost](../part-01/overlaps-with-cost.md)
+- [Cached Max?](../part-01/cached-max.md)
 
 ## Sources
 

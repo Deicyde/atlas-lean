@@ -12,7 +12,11 @@ Every level holds exactly the prefixes of the stored keys at that length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [XFast Trie](xfast-trie.md)
+
+## Proof depends on
+
+- [Prefix Of](prefix-of.md)
 
 ## Sources
 

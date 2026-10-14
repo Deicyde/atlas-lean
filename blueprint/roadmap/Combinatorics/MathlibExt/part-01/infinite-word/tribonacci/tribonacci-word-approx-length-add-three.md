@@ -13,7 +13,8 @@ The lengths satisfy the corresponding Tribonacci recurrence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Letter](tribonacci-letter.md)
+- [Tribonacci Word Approx](tribonacci-word-approx.md)
 
 ## Sources
 

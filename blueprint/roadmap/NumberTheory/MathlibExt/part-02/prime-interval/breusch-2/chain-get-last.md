@@ -13,7 +13,7 @@ The chain ends at `9820997`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain](chain.md)
 
 ## Sources
 

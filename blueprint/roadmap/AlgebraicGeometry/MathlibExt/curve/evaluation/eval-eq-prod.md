@@ -13,7 +13,8 @@ Evaluation is the finite product over the support of the divisor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Curve Divisor](../divisor/curve-divisor.md)
+- [Eval](eval.md)
 
 ## Sources
 

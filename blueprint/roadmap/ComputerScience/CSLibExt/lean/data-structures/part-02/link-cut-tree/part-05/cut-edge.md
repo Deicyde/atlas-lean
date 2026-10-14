@@ -15,7 +15,21 @@ preferred path.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](../part-03/state.md)
+- [Valid](../part-03/valid.md)
+- [Cut Edge](../part-04/cut-edge.md)
+
+## Proof depends on
+
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
+- [Parent Child](../part-02/parent-child.md)
+- [Cut](../part-04/cut-2.md)
+- [Make Root](../part-04/make-root-2.md)
+- [Cut](../part-04/cut.md)
+- [Make Root](../part-04/make-root.md)
+- [Valid of preferred nil](../part-03/valid-of-preferred-nil.md)
+- [Adjacent B](../part-01/adjacent-b.md)
 
 ## Sources
 

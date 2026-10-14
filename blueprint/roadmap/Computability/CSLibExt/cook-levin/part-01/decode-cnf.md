@@ -12,7 +12,11 @@ Decode a complete CNF formula, rejecting missing or trailing bits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](cnf.md)
+
+## Proof depends on
+
+- [Decode CNFAux](decode-cnfaux.md)
 
 ## Sources
 

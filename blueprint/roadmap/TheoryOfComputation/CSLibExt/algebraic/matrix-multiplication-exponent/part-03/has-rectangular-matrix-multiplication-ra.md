@@ -15,6 +15,13 @@ dimension threshold may depend on epsilon, but not on the dimension.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Trilinear Rank At Most](../part-01/has-trilinear-rank-at-most.md)
+- [Matrix Coordinate](../part-01/matrix-coordinate.md)
+- [Matrix Multiplication Tensor](../part-01/matrix-multiplication-tensor.md)
+- [Rectangular Inner Dimension](rectangular-inner-dimension.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Complexity.Algebraic.MatrixMultiplicationExponent](../../../../../../sources/v2/CSLibExt.md)

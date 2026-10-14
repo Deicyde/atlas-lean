@@ -13,7 +13,7 @@ A list-colorable graph is colorable with the same number of colors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is List Colorable](is-list-colorable.md)
 
 ## Sources
 

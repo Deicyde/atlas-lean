@@ -14,7 +14,12 @@ Concept `jis_sem_108a092cfddb7cc6b11d221e`, from `e:JacobiStirling1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobi Stirling First](jacobi-stirling-first.md)
+
+## Proof depends on
+
+- [Jacobi Stirling First initial row](jacobi-stirling-first-initial-row.md)
+- [Jacobi Stirling First recurrence](jacobi-stirling-first-recurrence.md)
 
 ## Sources
 

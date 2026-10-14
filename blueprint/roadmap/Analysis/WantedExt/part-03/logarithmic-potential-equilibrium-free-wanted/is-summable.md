@@ -13,7 +13,7 @@ term is defined.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Charge Seq](charge-seq.md)
 
 ## Sources
 

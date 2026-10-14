@@ -13,7 +13,15 @@ The complete increasing list of zero-based shifts, including overlaps and empty 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Automaton Matches](finite-automaton-matches.md)
+
+## Proof depends on
+
+- [Match At](../basic/match-at.md)
+- [Compute Transition](compute-transition.md)
+- [Compute Transition spec](compute-transition-spec.md)
+- [Pattern Automaton](pattern-automaton.md)
+- [Pattern Automaton state](pattern-automaton-state.md)
 
 ## Sources
 

@@ -18,6 +18,10 @@ and `jis_40ae94aec46faf8f37032d00`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [B Ary Digit](b-ary-digit.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.BAryMultinomialCoefficient](../../../../../sources/v2/MathlibExt.md)

@@ -14,6 +14,10 @@ Maximal ideal of `K[X_0, …, X_n]` at the affine point `q`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eval At](eval-at.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.AlgebraicGeometry.BezoutWanted](../../../../sources/v2/WantedExt.md)

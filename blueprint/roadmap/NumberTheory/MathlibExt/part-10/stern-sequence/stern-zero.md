@@ -14,7 +14,7 @@ OEIS A002487; JIS Lansing, lines 92-103).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stern Sequence](stern-sequence.md)
 
 ## Sources
 

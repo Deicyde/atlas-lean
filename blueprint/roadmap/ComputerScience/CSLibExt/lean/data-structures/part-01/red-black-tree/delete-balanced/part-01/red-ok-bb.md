@@ -13,7 +13,7 @@ genuine tree, and `RedOk` of both children for a double-black node.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BBTree](bbtree.md)
 
 ## Sources
 

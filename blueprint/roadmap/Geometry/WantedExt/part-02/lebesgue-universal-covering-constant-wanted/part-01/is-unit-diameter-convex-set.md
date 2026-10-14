@@ -13,7 +13,7 @@ diameter is exactly `1`. Nonemptiness excludes the totalized empty diameter.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Unfolding of `IsDefinedOver` as an equality of ideals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Defined Over](is-defined-over.md)
+- [Ideal Over K](ideal-over-k.md)
 
 ## Sources
 

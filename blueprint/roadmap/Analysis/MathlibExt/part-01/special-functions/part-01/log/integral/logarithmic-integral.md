@@ -22,7 +22,7 @@ integrals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Logarithmic Integral Domain](logarithmic-integral-domain.md)
 
 ## Sources
 

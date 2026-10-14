@@ -13,7 +13,11 @@ A Hamiltonian square remains Hamiltonian after edges are added to the original g
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square](square.md)
+
+## Proof depends on
+
+- [Square mono](square-mono.md)
 
 ## Sources
 

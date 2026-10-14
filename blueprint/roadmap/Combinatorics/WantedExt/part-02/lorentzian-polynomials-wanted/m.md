@@ -13,7 +13,11 @@ coefficients in `ℝ[w₁,...,wₙ]` whose supports are M-convex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H](h.md)
+
+## Proof depends on
+
+- [Is MConvex](is-mconvex.md)
 
 ## Sources
 

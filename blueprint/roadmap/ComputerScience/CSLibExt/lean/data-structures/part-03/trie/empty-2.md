@@ -13,7 +13,12 @@ The empty trie is valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](valid.md)
+- [Empty](empty.md)
+
+## Proof depends on
+
+- [Trie](trie.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ trees it separates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ins Result](ins-result.md)
+
+## Proof depends on
+
+- [BTree](btree.md)
+- [Flatten](flatten.md)
 
 ## Sources
 

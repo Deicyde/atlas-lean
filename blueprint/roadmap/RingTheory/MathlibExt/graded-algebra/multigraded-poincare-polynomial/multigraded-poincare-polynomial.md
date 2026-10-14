@@ -20,7 +20,13 @@ mathematics.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraded Base Change](../multigraded-betti/multigraded-base-change.md)
+- [Multigraded Free Resolution](../multigraded-free-resolution/multigraded-free-resolution.md)
+
+## Proof depends on
+
+- [Multigraded Poincare Coefficients](../multigraded-poincare-coefficients/multigraded-poincare-coefficients.md)
+- [Multigraded Poincare Finite Support](../multigraded-poincare-coefficients-has-fi.md)
 
 ## Sources
 

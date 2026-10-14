@@ -13,7 +13,11 @@ A `(q, r)`-Dowling number is the sum of its Whitney coefficients.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Qr Dowling Number](qr-dowling-number.md)
+
+## Proof depends on
+
+- [Qr Dowling Polynomial](qr-dowling-polynomial.md)
 
 ## Sources
 

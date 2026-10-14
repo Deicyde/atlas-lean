@@ -12,7 +12,11 @@ Affine cone coordinates of `p` on the chart `X_{chartIndex p} = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proj Space](proj-space.md)
+
+## Proof depends on
+
+- [Chart Index](chart-index.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ A constant window `(k, k, k, k)` has largest value `k` and smallest pair sum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Van Der Laan Window](is-van-der-laan-window.md)
 
 ## Sources
 

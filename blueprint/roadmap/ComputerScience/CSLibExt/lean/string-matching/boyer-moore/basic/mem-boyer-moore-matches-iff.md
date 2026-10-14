@@ -13,7 +13,12 @@ The matcher returns exactly the canonical occurrences, including overlaps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boyer Moore Matches](boyer-moore-matches.md)
+
+## Proof depends on
+
+- [Boyer Moore Matches nil pattern](boyer-moore-matches-nil-pattern.md)
+- [Boyer Moore Matches of length lt](boyer-moore-matches-of-length-lt.md)
 
 ## Sources
 

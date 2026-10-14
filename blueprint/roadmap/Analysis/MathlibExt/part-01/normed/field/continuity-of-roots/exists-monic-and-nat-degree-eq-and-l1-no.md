@@ -14,7 +14,12 @@ while preserving irreducibility and separability after mapping to the complete f
 
 ## Depends on
 
-This node has no prerequisites.
+- [L1 Norm](../../../../../../Algebra/MathlibExt/polynomial/l1-norm/l1-norm.md)
+
+## Proof depends on
+
+- [Exists pos irreducible and separable of l1 Norm sub lt](exists-pos-irreducible-and-separable-of.md)
+- [L1 Norm def](../../../../../../Algebra/MathlibExt/polynomial/l1-norm/l1-norm-def.md)
 
 ## Sources
 

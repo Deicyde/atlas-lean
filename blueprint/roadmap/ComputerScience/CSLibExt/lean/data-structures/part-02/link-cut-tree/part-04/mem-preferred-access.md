@@ -15,7 +15,15 @@ edge-level statement behind retaining off-path preferred paths.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [State](../part-03/state.md)
+- [Access](access.md)
+- [Find Tree](../part-01/find-tree.md)
+- [Root Path](../part-02/root-path.md)
+
+## Proof depends on
+
+- [Path Edges](../part-02/path-edges.md)
 
 ## Sources
 

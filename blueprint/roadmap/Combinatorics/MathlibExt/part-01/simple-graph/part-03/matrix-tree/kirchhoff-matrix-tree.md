@@ -14,7 +14,12 @@ Laplacian equals the number of spanning trees as an integer; zero for disconnect
 
 ## Depends on
 
-This node has no prerequisites.
+- [Num Spanning Trees](num-spanning-trees.md)
+- [Reduced Laplacian](reduced-laplacian.md)
+
+## Proof depends on
+
+- [Kirchhoff matrix tree of root](kirchhoff-matrix-tree-of-root.md)
 
 ## Sources
 

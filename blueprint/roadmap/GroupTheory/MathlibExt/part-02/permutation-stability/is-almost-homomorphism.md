@@ -17,6 +17,10 @@ Following the source, no condition such as `f n 1 = 1` is imposed.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Normalized Hamming Distance](normalized-hamming-distance.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.PermutationStability](../../../../../sources/v2/MathlibExt.md)

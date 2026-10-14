@@ -14,6 +14,11 @@ Cleary's golden-ratio Thompson group `F_τ`: breakpoints in `ℤ[τ]`, slopes po
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Golden Integer](is-golden-integer.md)
+- [Is PLHomeo With](is-plhomeo-with.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.GoldenRatioThompsonEmbedWanted](../../../../../sources/v2/WantedExt.md)

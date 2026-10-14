@@ -13,7 +13,12 @@ The uniform amplitude vector on a nonempty finite type has squared norm one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amplitude Norm Sq](amplitude-norm-sq.md)
+- [Uniform Amplitude](uniform-amplitude.md)
+
+## Proof depends on
+
+- [Amplitude](amplitude.md)
 
 ## Sources
 

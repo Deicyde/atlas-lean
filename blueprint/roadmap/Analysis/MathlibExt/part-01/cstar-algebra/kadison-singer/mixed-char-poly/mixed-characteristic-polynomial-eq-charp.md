@@ -14,7 +14,19 @@ their sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mixed Characteristic Polynomial](mixed-characteristic-polynomial.md)
+
+## Proof depends on
+
+- [Eval mixed Det Polynomial](eval-mixed-det-polynomial.md)
+- [Mixed Det Polynomial](mixed-det-polynomial.md)
+- [Mixed Det Polynomial pderiv sq eq zero of eq vec Mul Vec](mixed-det-polynomial-pderiv-sq-eq-zero-o.md)
+- [Mixed Differential](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential.md)
+- [Mixed Differential append](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential-append.md)
+- [Mixed Differential cons](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential-cons.md)
+- [Mixed Differential eq of perm](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential-eq-of-perm.md)
+- [Mixed Differential nil](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential-nil.md)
+- [Pderiv mixed Differential](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/pderiv-mixed-differential.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Equality of the complete sequence law, in every carrier universe.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is IIDModel](is-iidmodel.md)
+- [Iid Law](../part-01/iid-law.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ The monic irreducible-reduction `AdjoinRoot` over a DVR is a DVR.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Maximal Ideal adjoin Root eq map](maximal-ideal-adjoin-root-eq-map.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.LocalRing.ResidueField.AdjoinRootLift](../../../../../../sources/v2/MathlibExt.md)

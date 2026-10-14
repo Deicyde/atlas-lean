@@ -14,7 +14,13 @@ T2: at `r = 0` the value equals the FiboCatalan expression
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Factorial](fibonacci-factorial.md)
+- [Generalized Fibonacci Catalan](generalized-fibonacci-catalan.md)
+
+## Proof depends on
+
+- [Fibonacci Jordan Quotient](fibonacci-jordan-quotient.md)
+- [Fibonacci Jordan Quotient r0](fibonacci-jordan-quotient-r0.md)
 
 ## Sources
 

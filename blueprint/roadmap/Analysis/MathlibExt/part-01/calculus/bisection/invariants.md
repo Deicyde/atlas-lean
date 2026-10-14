@@ -13,7 +13,7 @@ Every bisection interval stays ordered, inside the initial interval, and preserv
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bisection Sequence](is-bisection-sequence.md)
 
 ## Sources
 

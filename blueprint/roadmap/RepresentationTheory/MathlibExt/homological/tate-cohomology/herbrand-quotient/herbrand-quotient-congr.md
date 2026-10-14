@@ -13,7 +13,12 @@ Invariance under carrier equivalences in degrees `0` and `-1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Herbrand Finite](herbrand-finite.md)
+- [Herbrand Quotient](herbrand-quotient.md)
+
+## Proof depends on
+
+- [Herbrand Quotient eq](herbrand-quotient-eq.md)
 
 ## Sources
 

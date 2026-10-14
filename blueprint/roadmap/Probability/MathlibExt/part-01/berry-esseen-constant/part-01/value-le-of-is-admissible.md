@@ -13,7 +13,12 @@ The optimal coefficient is no larger than any admissible coefficient.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible](is-admissible.md)
+- [Value](value.md)
+
+## Proof depends on
+
+- [Admissible bdd Below](admissible-bdd-below.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The group of matrices preserving the Descartes form.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Descartes Matrix](descartes-matrix.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LocalGlobalApollonianCirclePackingsWanted](../../../../../sources/v2/WantedExt.md)

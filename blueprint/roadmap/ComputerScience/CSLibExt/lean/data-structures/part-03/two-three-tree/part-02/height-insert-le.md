@@ -13,7 +13,14 @@ Insertion grows the stored height by at most one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Root](root.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Overflow](../part-01/overflow.md)
+- [Tree](../part-01/tree.md)
+- [Ins](../part-01/ins.md)
 
 ## Sources
 

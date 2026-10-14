@@ -13,7 +13,8 @@ The exact charged cost of the matrix outer-product circuit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arithmetic Circuit](../arithmetic-circuit/arithmetic-circuit.md)
+- [Outer Matrix Circuit](outer-matrix-circuit.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ The representation number at `k = 0` and positive `n` is zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Representation Number](representation-number.md)
+
+## Proof depends on
+
+- [Solutions](solutions.md)
+- [Solutions zero succ](solutions-zero-succ.md)
 
 ## Sources
 

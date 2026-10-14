@@ -13,7 +13,12 @@ A forest has no minimum root exactly when it is empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Root](min-root.md)
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
+
+## Proof depends on
+
+- [Root](../part-01/root.md)
 
 ## Sources
 

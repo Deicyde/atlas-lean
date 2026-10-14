@@ -14,6 +14,10 @@ An exponent admissible for all primitive Dirichlet characters.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Central Value Exponent On](is-central-value-exponent-on.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.LSeries.DirichletSubconvexity](../../../../../../sources/v2/MathlibExt.md)

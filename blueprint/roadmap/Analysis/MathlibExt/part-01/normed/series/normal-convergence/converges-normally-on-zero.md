@@ -13,7 +13,12 @@ The zero series converges normally on every set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Converges Normally On](converges-normally-on.md)
+
+## Proof depends on
+
+- [Sup Norm On](sup-norm-on.md)
+- [Sup Norm On zero](sup-norm-on-zero.md)
 
 ## Sources
 

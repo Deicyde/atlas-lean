@@ -13,7 +13,13 @@ KMP returns no offset exactly when the pattern is not an infix of the text.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kmp Search](kmp-search.md)
+
+## Proof depends on
+
+- [Match At](../basic/match-at.md)
+- [Exists match At iff is Infix](../basic/exists-match-at-iff-is-infix.md)
+- [Kmp Search eq none iff](kmp-search-eq-none-iff.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Nothing is stored in the empty table.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Stored](stored.md)
+- [Empty](empty.md)
 
 ## Sources
 

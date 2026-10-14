@@ -12,7 +12,11 @@ The leaf symbols, in left-to-right order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](huffman-tree.md)
+
+## Proof depends on
+
+- [Weighted Leaves](weighted-leaves.md)
 
 ## Sources
 

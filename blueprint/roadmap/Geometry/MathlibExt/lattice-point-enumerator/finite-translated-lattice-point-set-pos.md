@@ -13,7 +13,11 @@ Source-domain translated finiteness for bounded `P` and positive `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Translated Lattice Point Set Pos](translated-lattice-point-set-pos.md)
+
+## Proof depends on
+
+- [Finite translated Lattice Point Set](finite-translated-lattice-point-set.md)
 
 ## Sources
 

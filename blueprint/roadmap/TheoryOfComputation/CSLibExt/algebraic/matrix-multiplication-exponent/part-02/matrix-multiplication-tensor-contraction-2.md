@@ -13,7 +13,12 @@ The concrete coefficient tensor contracts to ordinary matrix multiplication.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matrix Multiplication Tensor Contraction](matrix-multiplication-tensor-contraction.md)
+
+## Proof depends on
+
+- [Matrix Coordinate](../part-01/matrix-coordinate.md)
+- [Matrix Multiplication Tensor](../part-01/matrix-multiplication-tensor.md)
 
 ## Sources
 

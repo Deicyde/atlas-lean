@@ -12,7 +12,12 @@ Run `find`, charging one unit for every visited vertex, including the root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
+
+## Proof depends on
+
+- [Find](find.md)
+- [Path Length](path-length.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ The source's infinity convention holds exactly when no positive dimension fails.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dimension Borsuk Number](dimension-borsuk-number.md)
+- [First Borsuk Failure Dimension](first-borsuk-failure-dimension.md)
 
 ## Sources
 

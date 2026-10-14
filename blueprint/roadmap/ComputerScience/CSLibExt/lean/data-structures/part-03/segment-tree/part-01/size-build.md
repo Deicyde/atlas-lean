@@ -13,7 +13,15 @@ The size of a tree built from a list is the length of that list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build](build.md)
+- [Size](size.md)
+
+## Proof depends on
+
+- [Length to List of valid](length-to-list-of-valid.md)
+- [To List](to-list.md)
+- [To List build](to-list-build.md)
+- [Valid build](valid-build.md)
 
 ## Sources
 

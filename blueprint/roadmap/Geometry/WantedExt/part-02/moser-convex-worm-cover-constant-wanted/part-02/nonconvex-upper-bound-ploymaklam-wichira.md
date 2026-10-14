@@ -14,7 +14,12 @@ adaptation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonconvex Cover Ploymaklam Wichiramala2018](../part-01/nonconvex-cover-ploymaklam-wichiramala20.md)
+- [Nonconvex Upper Bound Ploymaklam Wichiramala2018](../part-01/nonconvex-upper-bound-ploymaklam-wichira.md)
+
+## Proof depends on
+
+- [Nonconvex Upper Bound of cover](../../../../MathlibExt/moser-worm-cover/part-02/nonconvex-upper-bound-of-cover.md)
 
 ## Sources
 

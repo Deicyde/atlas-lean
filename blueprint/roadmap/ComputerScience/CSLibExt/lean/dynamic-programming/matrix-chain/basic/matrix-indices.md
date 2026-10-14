@@ -12,7 +12,7 @@ Matrix indices in left-to-right leaf order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parenthesization](parenthesization.md)
 
 ## Sources
 

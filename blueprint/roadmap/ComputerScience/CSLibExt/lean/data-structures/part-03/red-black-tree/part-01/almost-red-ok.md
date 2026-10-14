@@ -14,7 +14,12 @@ This is the intermediate invariant of Okasaki's unchecked insertion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Color](color.md)
+- [Red Ok](red-ok.md)
 
 ## Sources
 

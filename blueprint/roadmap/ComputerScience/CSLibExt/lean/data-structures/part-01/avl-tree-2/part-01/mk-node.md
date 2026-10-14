@@ -12,7 +12,11 @@ Construct a node whose cached height is computed from its children.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Height](height.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ A complex multivariate polynomial is real stable if it is stable and has real co
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Stable](is-stable.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.MvPolynomial.Stable](../../../../../sources/v2/MathlibExt.md)

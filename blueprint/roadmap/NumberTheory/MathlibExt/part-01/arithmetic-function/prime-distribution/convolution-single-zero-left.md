@@ -13,7 +13,7 @@ A sequence supported only at the discarded index contributes no convolution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convolution](convolution.md)
 
 ## Sources
 

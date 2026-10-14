@@ -13,7 +13,14 @@ Under `Valid`, a stored key is found by `lookup`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Open Addressing](open-addressing.md)
+- [Stored](stored.md)
+- [Valid](valid.md)
+- [Lookup](lookup.md)
+
+## Proof depends on
+
+- [Lookup Aux](lookup-aux.md)
 
 ## Sources
 

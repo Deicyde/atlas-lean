@@ -16,6 +16,10 @@ residue `a` modulo `q`, measured against the inner-variable main term
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Psi Residue Class](../../../../../MathlibExt/part-02/prime-counting/part-02/residue-class-psi/psi-residue-class.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.PrimeCounting.BombieriVinogradovWanted](../../../../../../../sources/v2/WantedExt.md)

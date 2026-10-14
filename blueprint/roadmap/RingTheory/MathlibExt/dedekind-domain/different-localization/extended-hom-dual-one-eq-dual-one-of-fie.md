@@ -17,6 +17,10 @@ ideal commutes with localization at `S`. That is, extending `dual A K 1` from `B
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dual Localization](../../../../LinearAlgebra/MathlibExt/bilinear-form/dual-submodule-span-localization.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DedekindDomain.DifferentLocalization](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,13 @@ Two is an admissible threshold because no planar set has dimension strictly abov
 
 ## Depends on
 
-This node has no prerequisites.
+- [Admissible Planar Threshold](admissible-planar-threshold.md)
+
+## Proof depends on
+
+- [Dim H plane le two](dim-h-plane-le-two.md)
+- [Distance Set](distance-set.md)
+- [Planar Threshold Property](planar-threshold-property.md)
 
 ## Sources
 

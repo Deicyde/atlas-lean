@@ -17,6 +17,11 @@ that `0` is a regular value of `g`. No compactness is needed.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Critical Values](../sard/critical-values.md)
+- [Sard theorem](../sard/sard-theorem.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.ThomTransversality](../../../../../../sources/v2/MathlibExt.md)

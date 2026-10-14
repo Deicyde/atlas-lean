@@ -14,6 +14,10 @@ Kronecker symbol at a prime: mod-eight rule at two, Legendre elsewhere.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kronecker At Two](kronecker-at-two.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.DirichletCharacter.Quadratic](../../../../../../sources/v2/MathlibExt.md)

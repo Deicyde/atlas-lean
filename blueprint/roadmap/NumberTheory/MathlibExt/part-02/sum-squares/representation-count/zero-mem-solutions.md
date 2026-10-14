@@ -13,7 +13,7 @@ The zero vector has squared norm `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solutions](solutions.md)
 
 ## Sources
 

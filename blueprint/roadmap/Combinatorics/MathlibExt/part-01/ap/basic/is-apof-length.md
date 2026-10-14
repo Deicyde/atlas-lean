@@ -14,6 +14,10 @@ A set is an arithmetic progression of length `l` for some first term and differe
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is APOf Length With](is-apof-length-with.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.AP.Basic](../../../../../../sources/v2/MathlibExt.md)

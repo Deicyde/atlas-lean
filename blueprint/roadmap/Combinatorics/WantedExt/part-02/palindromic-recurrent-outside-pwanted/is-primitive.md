@@ -12,7 +12,12 @@ Primitivity: some power hits every letter from every letter.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Morphism](morphism.md)
+
+## Proof depends on
+
+- [Sigma](sigma.md)
+- [Extend Iter](extend-iter.md)
 
 ## Sources
 

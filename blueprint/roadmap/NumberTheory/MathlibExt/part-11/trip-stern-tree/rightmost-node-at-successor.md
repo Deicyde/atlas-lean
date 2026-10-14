@@ -15,7 +15,8 @@ right-most node at depth `n`. Source: Amburg et al., *TRIP-Stern Sequences*, JIS
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trip Stern Tree](trip-stern-tree.md)
+- [Rightmost Node](rightmost-node.md)
 
 ## Sources
 

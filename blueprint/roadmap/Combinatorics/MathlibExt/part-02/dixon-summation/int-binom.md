@@ -14,6 +14,11 @@ Integer binomial coefficient with the source zero conventions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ext Fact](ext-fact.md)
+- [Inv Fact](inv-fact.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.DixonSummation](../../../../../sources/v2/MathlibExt.md)

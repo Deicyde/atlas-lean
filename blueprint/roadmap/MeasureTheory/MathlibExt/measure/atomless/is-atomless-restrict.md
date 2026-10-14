@@ -13,7 +13,7 @@ Restriction of an atomless measure to a measurable set is atomless.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Atomless](is-atomless.md)
 
 ## Sources
 

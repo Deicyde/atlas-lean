@@ -15,6 +15,10 @@ between pairs of points.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Distance Set](distance-set.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Metric](../../../../sources/v2/MathlibExt.md)

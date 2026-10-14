@@ -14,6 +14,10 @@ A square root of `motzkinDiscriminant` on the branch with constant coefficient o
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Motzkin Discriminant](motzkin-discriminant.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MotzkinTriangle](../../../../../../../sources/v2/MathlibExt.md)

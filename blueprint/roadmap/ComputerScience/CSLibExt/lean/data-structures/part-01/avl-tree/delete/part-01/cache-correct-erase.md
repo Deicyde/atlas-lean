@@ -13,7 +13,14 @@ Deletion preserves correct cached heights.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Erase](erase.md)
+
+## Proof depends on
+
+- [Cache Correct erase Min](cache-correct-erase-min.md)
+- [Delete Min](delete-min.md)
+- [Erase Min](erase-min.md)
+- [Min D](min-d.md)
 
 ## Sources
 

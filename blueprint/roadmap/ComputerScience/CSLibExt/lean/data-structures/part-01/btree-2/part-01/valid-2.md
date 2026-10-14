@@ -13,7 +13,9 @@ A root-valid tree is valid for a suitable top-level minimum key count.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](btree.md)
+- [Valid](valid.md)
+- [Valid Root](valid-root.md)
 
 ## Sources
 

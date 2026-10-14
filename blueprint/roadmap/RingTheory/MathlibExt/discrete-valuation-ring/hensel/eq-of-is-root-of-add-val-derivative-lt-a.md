@@ -15,6 +15,10 @@ Two roots strictly closer to `a₀` than the derivative valuation coincide.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Add Val derivative eval eq of lt add Val sub](add-val-derivative-eval-eq-of-lt-add-val.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DiscreteValuationRing.Hensel](../../../../../sources/v2/MathlibExt.md)

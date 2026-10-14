@@ -13,7 +13,7 @@ The point count and Frobenius trace sum to `q + 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frobenius Trace](frobenius-trace.md)
 
 ## Sources
 

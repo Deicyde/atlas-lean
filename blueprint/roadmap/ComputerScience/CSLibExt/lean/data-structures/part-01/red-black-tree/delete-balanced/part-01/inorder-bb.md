@@ -12,7 +12,7 @@ The inorder traversal of a `BBTree`, ignoring the double-black mark.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BBTree](bbtree.md)
 
 ## Sources
 

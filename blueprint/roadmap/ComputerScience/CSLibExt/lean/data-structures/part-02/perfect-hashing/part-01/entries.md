@@ -14,7 +14,7 @@ slot, bucket by bucket. Stored bindings are exactly the members of this list
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](perfect-hashing.md)
 
 ## Sources
 

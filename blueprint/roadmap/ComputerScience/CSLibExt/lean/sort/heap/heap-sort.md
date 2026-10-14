@@ -15,6 +15,13 @@ min-heap.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Min Heap](../../data-structures/part-01/binary-heap-2/part-02/min-heap.md)
+- [Empty](../../data-structures/part-01/binary-heap-2/part-02/empty.md)
+- [Extract Min](../../data-structures/part-01/binary-heap-2/part-02/extract-min.md)
+- [Push](../../data-structures/part-01/binary-heap-2/part-02/push.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Sort.Heap](../../../../../../sources/v2/CSLibExt.md)

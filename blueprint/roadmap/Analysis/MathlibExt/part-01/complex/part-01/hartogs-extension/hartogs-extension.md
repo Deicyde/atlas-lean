@@ -23,6 +23,12 @@ cutoff and one-variable identity continuation.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bar Deriv](bar-deriv.md)
+- [Continuous On fderiv of differentiable On](continuous-on-fderiv-of-differentiable-o.md)
+- [Differentiable At of bar Deriv eq zero](differentiable-at-of-bar-deriv-eq-zero.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.HartogsExtension](../../../../../../../sources/v2/MathlibExt.md)

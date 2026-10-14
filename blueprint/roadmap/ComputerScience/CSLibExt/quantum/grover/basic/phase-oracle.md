@@ -12,7 +12,7 @@ The phase oracle negates exactly the marked amplitudes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amplitude](amplitude.md)
 
 ## Sources
 

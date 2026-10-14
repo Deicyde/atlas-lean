@@ -16,7 +16,7 @@ multiplication.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Cost](fft-cost.md)
 
 ## Sources
 

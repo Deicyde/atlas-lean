@@ -14,6 +14,10 @@ Predicate for `H^1`: empty or ends in `y`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Y Word](y-word.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.MultipleZeta.WordAlgebra](../../../../../../sources/v2/MathlibExt.md)

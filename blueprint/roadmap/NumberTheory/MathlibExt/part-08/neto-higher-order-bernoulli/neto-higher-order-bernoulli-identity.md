@@ -21,7 +21,11 @@ formula, and equality on all natural complex points finishes the polynomial argu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Higher Order Bernoulli Number](higher-order-bernoulli-number.md)
+
+## Proof depends on
+
+- [Higher Order Bernoulli Number nat](higher-order-bernoulli-number-nat.md)
 
 ## Sources
 

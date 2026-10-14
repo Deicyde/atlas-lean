@@ -16,6 +16,13 @@ Bielefeld Theorem 5: if `|C|` and `χ(1)` are coprime, then either
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Char eq zero of coprime of norm lt](char-eq-zero-of-coprime-of-norm-lt.md)
+- [Character eq sum roots](character-eq-sum-roots.md)
+- [Charpoly root norm eq one](charpoly-root-norm-eq-one.md)
+- [Charpoly roots card](charpoly-roots-card.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.KillingLemma](../../../../../../sources/v2/MathlibExt.md)

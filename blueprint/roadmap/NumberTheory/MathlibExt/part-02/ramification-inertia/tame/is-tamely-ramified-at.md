@@ -16,6 +16,10 @@ ramification index.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Residue Separable At](is-residue-separable-at.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.RamificationInertia.Tame](../../../../../../sources/v2/MathlibExt.md)

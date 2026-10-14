@@ -17,6 +17,10 @@ See the sources cited on `AreConsecutivePrimes` for occurrences of blocks
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Are Consecutive Primes](are-consecutive-primes.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ConsecutivePrime](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,17 @@ The outer-product circuit returns the actual product of its two scalar inputs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Evaluate](evaluate-3.md)
+- [Outer Product](outer-product.md)
+
+## Proof depends on
+
+- [Arithmetic Circuit](arithmetic-circuit.md)
+- [Evaluate Node](evaluate-node.md)
+- [Arithmetic Gate](arithmetic-gate.md)
+- [Evaluate](evaluate-2.md)
+- [Arithmetic Operand](arithmetic-operand.md)
+- [Evaluate](evaluate.md)
 
 ## Sources
 

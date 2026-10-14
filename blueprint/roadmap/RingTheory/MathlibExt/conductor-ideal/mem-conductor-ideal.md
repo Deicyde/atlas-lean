@@ -13,7 +13,7 @@ Membership in the conductor ideal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conductor Ideal](conductor-ideal.md)
 
 ## Sources
 

@@ -17,6 +17,13 @@ The known bounds `1 ≤ liminf n(r)/A(r) ≤ e` are not formalized here.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [A](a.md)
+- [Has Bounded Root Counts](has-bounded-root-counts.md)
+- [Is Nonconstant](is-nonconstant.md)
+- [N](n.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HaymanSphericalAreaRatioWanted](../../../../../sources/v2/WantedExt.md)

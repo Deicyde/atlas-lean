@@ -14,6 +14,10 @@ The diagonal graph Ramsey number `R(G, G)` for an arbitrary finite graph.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Graph Pair Ramsey](graph-pair-ramsey.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.Ramsey](../../../../../../../sources/v2/MathlibExt.md)

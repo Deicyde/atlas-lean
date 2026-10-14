@@ -14,7 +14,7 @@ three-step self-avoiding walks from a fixed honeycomb vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Walk Count](walk-count.md)
 
 ## Sources
 

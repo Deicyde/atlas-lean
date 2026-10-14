@@ -13,7 +13,11 @@ The kernel quotient as remainder plus pole part.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perron Remainder](perron-remainder.md)
+
+## Proof depends on
+
+- [Perron Remainder eq div](perron-remainder-eq-div.md)
 
 ## Sources
 

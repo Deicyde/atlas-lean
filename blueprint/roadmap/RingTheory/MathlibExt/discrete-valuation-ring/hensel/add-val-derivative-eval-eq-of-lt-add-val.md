@@ -15,6 +15,10 @@ A root sufficiently close to the approximation has the same derivative valuation
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Add Val sub le add Val eval sub](add-val-sub-le-add-val-eval-sub.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DiscreteValuationRing.Hensel](../../../../../sources/v2/MathlibExt.md)

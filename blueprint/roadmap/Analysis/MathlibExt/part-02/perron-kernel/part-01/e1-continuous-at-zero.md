@@ -13,7 +13,12 @@ lean: PerronKernel.E1_continuousAt_zero
 
 ## Depends on
 
-This node has no prerequisites.
+- [E1](e1.md)
+
+## Proof depends on
+
+- [E1 sub one le](e1-sub-one-le.md)
+- [E1 zero](e1-zero.md)
 
 ## Sources
 

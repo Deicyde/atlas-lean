@@ -15,6 +15,10 @@ The formal power series over `ℂ` whose `n`-th coefficient is
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Basic Hypergeometric Coefficient](basic-hypergeometric-coefficient.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.BasicHypergeometric](../../../../../../../sources/v2/MathlibExt.md)

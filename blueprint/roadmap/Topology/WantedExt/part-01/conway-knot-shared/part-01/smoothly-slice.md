@@ -12,7 +12,13 @@ lean: MathlibExt.Topology.ConwayKnotShared.KnotTheory.Knot.SmoothlySlice
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knot](knot.md)
+
+## Proof depends on
+
+- [R3](r3.md)
+- [Circle1](circle1.md)
+- [Disk2](disk2.md)
 
 ## Sources
 

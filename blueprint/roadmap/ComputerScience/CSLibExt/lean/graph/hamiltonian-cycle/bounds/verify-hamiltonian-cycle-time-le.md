@@ -13,7 +13,7 @@ The actual verifier's selected events are polynomially bounded for every input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Basic](../verify-hamiltonian-cycle.md)
 
 ## Sources
 

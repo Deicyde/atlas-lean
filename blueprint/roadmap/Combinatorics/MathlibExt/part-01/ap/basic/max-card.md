@@ -15,6 +15,10 @@ arithmetic progression.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is APOf Length Free](is-apof-length-free-2.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.AP.Basic](../../../../../../sources/v2/MathlibExt.md)

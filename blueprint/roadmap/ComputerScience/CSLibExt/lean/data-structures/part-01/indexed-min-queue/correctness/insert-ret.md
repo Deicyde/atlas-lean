@@ -13,7 +13,12 @@ Successful INSERT refines canonical push and preserves all other identities.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Min Queue](../basic/indexed-min-queue.md)
+- [Insert](../basic/insert.md)
+
+## Proof depends on
+
+- [Position eq none iff](position-eq-none-iff.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ Characteristic roots of `ρ g` have absolute value 1.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Charpoly root pow order Of](charpoly-root-pow-order-of.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.KillingLemma](../../../../../../sources/v2/MathlibExt.md)

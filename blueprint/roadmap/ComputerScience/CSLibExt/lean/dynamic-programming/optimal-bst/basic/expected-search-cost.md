@@ -12,7 +12,11 @@ CLRS search cost, including every successful key and every unsuccessful dummy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inorder](../../../data-structures/part-02/binary-search-tree/part-01/inorder.md)
+
+## Proof depends on
+
+- [Num Nodes eq length inorder](../../../data-structures/part-02/binary-search-tree/part-01/num-nodes-eq-length-inorder.md)
 
 ## Sources
 

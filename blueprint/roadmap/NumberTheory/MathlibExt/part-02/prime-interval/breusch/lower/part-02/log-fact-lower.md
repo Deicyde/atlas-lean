@@ -15,6 +15,10 @@ Log-factorial lower bound from Stirling.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Stirling lower](../part-01/stirling-lower.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Lower](../../../../../../../../sources/v2/MathlibExt.md)

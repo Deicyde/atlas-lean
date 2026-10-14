@@ -12,7 +12,7 @@ Interpret each Boolean entry as a real sign.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sign Matrix](sign-matrix.md)
 
 ## Sources
 

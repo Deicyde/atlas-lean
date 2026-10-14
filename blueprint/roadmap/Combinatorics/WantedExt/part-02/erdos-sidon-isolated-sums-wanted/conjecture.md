@@ -15,6 +15,12 @@ least `M` isolated sums in its sumset.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Sidon](is-sidon.md)
+- [Isolated Count](isolated-count.md)
+- [Sumset](sumset.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ErdosSidonIsolatedSumsWanted](../../../../../sources/v2/WantedExt.md)

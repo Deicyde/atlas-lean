@@ -14,7 +14,12 @@ The canonical factor map is surjective, by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residue Field Maximal Ideal Pow Quotient](residue-field-maximal-ideal-pow-quotient.md)
+- [Factor Residue Field Maximal Ideal Pow Quotient](factor-residue-field-maximal-ideal-pow-q.md)
+
+## Proof depends on
+
+- [Maximal Ideal Pow Quotient Ideal le](maximal-ideal-pow-quotient-ideal-le.md)
 
 ## Sources
 

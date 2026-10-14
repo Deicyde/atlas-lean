@@ -13,7 +13,8 @@ Canonical coordinates are genuinely independent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Standardized Law](is-standardized-law.md)
+- [Iid Law](iid-law.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ cubic surface is quadratic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cubic Surface](cubic-surface.md)
 
 ## Sources
 

@@ -15,6 +15,11 @@ Classical blocks as a specialization of the general construction
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Block](block.md)
+- [Classical Kappa](classical-kappa.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.GeneralizedThueMorseSequence](../../../../../../../sources/v2/MathlibExt.md)

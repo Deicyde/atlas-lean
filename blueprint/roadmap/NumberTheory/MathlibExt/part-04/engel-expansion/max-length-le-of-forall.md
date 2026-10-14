@@ -13,7 +13,8 @@ The length function is bounded by a uniform bound on all lengths.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Length](length.md)
+- [Max Length](max-length.md)
 
 ## Sources
 

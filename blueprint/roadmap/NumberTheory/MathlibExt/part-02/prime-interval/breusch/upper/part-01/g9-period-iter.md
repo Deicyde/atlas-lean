@@ -13,7 +13,11 @@ Iterated form of grid periodicity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G9](../../grid/part-01/g9.md)
+
+## Proof depends on
+
+- [G9 shift](g9-shift.md)
 
 ## Sources
 

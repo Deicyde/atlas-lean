@@ -13,7 +13,7 @@ A family bounded by `C` on an open set is locally uniformly bounded there.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Locally Uniformly Bounded On](is-locally-uniformly-bounded-on.md)
 
 ## Sources
 

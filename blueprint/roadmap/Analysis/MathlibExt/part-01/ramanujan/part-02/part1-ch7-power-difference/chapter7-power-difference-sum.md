@@ -14,6 +14,10 @@ The power-difference series `φ_r(x) = ∑_{j ≥ 0} ((j + 1)ʳ - (j + 1 + x)ʳ)
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter7 Power Difference Term](chapter7-power-difference-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch7PowerDifference](../../../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,7 @@ Looks up a key in its two possible slots: `table1[h1 key]` first, then `table2[h
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cuckoo Hashing](cuckoo-hashing.md)
 
 ## Sources
 

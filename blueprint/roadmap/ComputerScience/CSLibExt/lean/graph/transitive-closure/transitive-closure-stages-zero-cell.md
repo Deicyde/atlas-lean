@@ -13,7 +13,7 @@ Before any pivot, a cell is the diagonal test or the corresponding input edge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transitive Closure Stages](transitive-closure-stages.md)
 
 ## Sources
 

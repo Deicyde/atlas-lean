@@ -16,7 +16,11 @@ Uses `Rat.denseRange_cast (𝕜 := ℝ)` at infinity and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Place](place.md)
+- [Completed Field](completed-field.md)
+- [Completed Field Bundle](completed-field-bundle.md)
+- [Bundle](bundle.md)
+- [Embedding](embedding.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ The four distinct lowest nonzero modes of the source's lattice.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frequency](../../basic/frequency.md)
+
+## Proof depends on
+
+- [Axis Frequency](axis-frequency.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ Partial differentiation commutes with every mixed differential operator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mixed Differential](mixed-differential.md)
+
+## Proof depends on
+
+- [Mixed Differential cons](mixed-differential-cons.md)
+- [Pderiv comm](pderiv-comm.md)
 
 ## Sources
 

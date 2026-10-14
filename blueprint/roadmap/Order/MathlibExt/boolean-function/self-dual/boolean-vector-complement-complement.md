@@ -13,7 +13,7 @@ Complementing a Boolean vector twice returns the original vector.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boolean Vector Complement](boolean-vector-complement.md)
 
 ## Sources
 

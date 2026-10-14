@@ -13,7 +13,13 @@ The infimal operation exponent is at least two, including the infinite case.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectangular Circuit Exponent](rectangular-circuit-exponent.md)
+
+## Proof depends on
+
+- [Has Rectangular Circuit Exponent](has-rectangular-circuit-exponent.md)
+- [Two le](two-le.md)
+- [Le rectangular Circuit Exponent](le-rectangular-circuit-exponent.md)
 
 ## Sources
 

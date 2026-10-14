@@ -13,7 +13,8 @@ Interior is contained in the polygon.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Newton Polygon](newton-polygon.md)
+- [Newton Polygon Interior](newton-polygon-interior.md)
 
 ## Sources
 

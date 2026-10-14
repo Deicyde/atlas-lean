@@ -21,7 +21,11 @@ Verified computationally for `n = 0..63` over four integer pairs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bin Digit Sum](bin-digit-sum.md)
+
+## Proof depends on
+
+- [Digital binomial theorem general](digital-binomial-theorem-general.md)
 
 ## Sources
 

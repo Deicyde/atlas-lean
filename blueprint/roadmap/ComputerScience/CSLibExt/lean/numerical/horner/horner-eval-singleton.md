@@ -13,7 +13,12 @@ Zero initialization retains the two executed operations for a constant polynomia
 
 ## Depends on
 
-This node has no prerequisites.
+- [Horner Eval](horner-eval.md)
+
+## Proof depends on
+
+- [Horner Eval ret eq sum](horner-eval-ret-eq-sum.md)
+- [Horner Eval time](horner-eval-time.md)
 
 ## Sources
 

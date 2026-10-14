@@ -15,7 +15,12 @@ subgroup. The reverse inclusion is the generic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprime Primes](coprime-primes.md)
+- [Free Group To Coprime](free-group-to-coprime.md)
+
+## Proof depends on
+
+- [Free Group To Coprime ker le commutator](free-group-to-coprime-ker-le-commutator.md)
 
 ## Sources
 

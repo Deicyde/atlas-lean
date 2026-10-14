@@ -13,7 +13,7 @@ Unfolding lemma for `chapter5Entry30OddTerm`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter5 Entry30 Odd Term](../part-01/chapter5-entry30-odd-term.md)
 
 ## Sources
 

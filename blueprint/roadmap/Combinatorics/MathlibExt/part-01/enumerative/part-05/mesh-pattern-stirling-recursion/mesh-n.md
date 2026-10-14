@@ -15,6 +15,11 @@ Canonical mesh-pattern count statistic: number of `MatchPred` positions plus one
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Match Pred](match-pred.md)
+- [Zero Pred](zero-pred.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MeshPatternStirlingRecursion](../../../../../../../sources/v2/MathlibExt.md)

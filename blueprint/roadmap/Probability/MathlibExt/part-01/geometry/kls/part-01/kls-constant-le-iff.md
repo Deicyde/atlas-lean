@@ -13,7 +13,12 @@ The global constant is exactly the least bound for all positive dimensions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dimensional Kls Constant](dimensional-kls-constant.md)
+- [Kls Constant](kls-constant.md)
+
+## Proof depends on
+
+- [Dimensional Kls Constant le constant](dimensional-kls-constant-le-constant.md)
 
 ## Sources
 

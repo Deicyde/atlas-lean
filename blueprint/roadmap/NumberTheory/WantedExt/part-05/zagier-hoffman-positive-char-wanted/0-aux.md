@@ -15,6 +15,11 @@ weight `w`, with `1 ≤ s_i < q` for all `i`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ζ A](a.md)
+- [𝔖 w](w.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ZagierHoffmanPositiveCharWanted](../../../../../sources/v2/WantedExt.md)

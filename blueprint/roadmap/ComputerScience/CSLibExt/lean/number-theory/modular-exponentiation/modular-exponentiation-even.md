@@ -13,7 +13,7 @@ The positive even branch squares the result of the source `b / 2` recursion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Exponentiation](modular-exponentiation.md)
 
 ## Sources
 

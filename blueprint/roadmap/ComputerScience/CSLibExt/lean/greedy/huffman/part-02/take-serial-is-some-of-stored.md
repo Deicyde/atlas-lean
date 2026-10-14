@@ -13,7 +13,10 @@ A work item stored at its own serial can always be taken from the table.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Priority](huffman-priority.md)
+- [Huffman Tree](../part-01/huffman-tree.md)
+- [Huffman Work Item](huffman-work-item.md)
+- [Take Serial?](take-serial.md)
 
 ## Sources
 

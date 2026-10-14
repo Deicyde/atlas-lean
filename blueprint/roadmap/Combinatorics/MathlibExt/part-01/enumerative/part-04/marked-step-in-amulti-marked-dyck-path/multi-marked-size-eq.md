@@ -16,7 +16,19 @@ source statement `jis_54a13fcd4eb84116f24d6935`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multi Marked Dyck Path](multi-marked-dyck-path.md)
+- [Multi Marked Step](multi-marked-step.md)
+- [Multi Marked Count Plain N](multi-marked-count-plain-n.md)
+- [Multi Marked Index Sum](multi-marked-index-sum.md)
+- [Multi Marked Size](multi-marked-size.md)
+
+## Proof depends on
+
+- [Multi Marked Count E](multi-marked-count-e.md)
+- [Multi Marked Count Eq](multi-marked-count-eq.md)
+- [Multi Marked Count Vert](multi-marked-count-vert.md)
+- [Multi Marked Shifted Index Sum](multi-marked-shifted-index-sum.md)
+- [Multi Marked Vert Shifted eq](multi-marked-vert-shifted-eq.md)
 
 ## Sources
 

@@ -15,6 +15,11 @@ The mixed characteristic polynomial
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mixed Det Polynomial](mixed-det-polynomial.md)
+- [Mixed Differential](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.CStarAlgebra.KadisonSinger.MixedCharPoly](../../../../../../../sources/v2/MathlibExt.md)

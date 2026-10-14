@@ -13,7 +13,14 @@ A sign bracket admits nested bisection intervals with exact geometric length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bisection Sequence](is-bisection-sequence.md)
+
+## Proof depends on
+
+- [Invariants](invariants.md)
+- [Nested](nested.md)
+- [Sub eq](sub-eq.md)
+- [Exists is Bisection Sequence](exists-is-bisection-sequence.md)
 
 ## Sources
 

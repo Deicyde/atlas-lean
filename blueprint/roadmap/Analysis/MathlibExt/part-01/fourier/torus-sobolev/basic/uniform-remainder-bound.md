@@ -14,6 +14,13 @@ The primary inequality, quantified over actual functions and every point of the 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Zero Mean H2](is-zero-mean-h2.md)
+- [Torus](torus.md)
+- [Frequency Ratio](frequency-ratio.md)
+- [Gradient Energy](gradient-energy.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Fourier.TorusSobolev.Basic](../../../../../../../sources/v2/MathlibExt.md)

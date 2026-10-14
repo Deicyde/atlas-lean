@@ -13,7 +13,11 @@ A determinant polynomial is affine in a variable whose coefficient matrix has ra
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mixed Det Polynomial](mixed-det-polynomial.md)
+
+## Proof depends on
+
+- [Eval mixed Det Polynomial](eval-mixed-det-polynomial.md)
 
 ## Sources
 

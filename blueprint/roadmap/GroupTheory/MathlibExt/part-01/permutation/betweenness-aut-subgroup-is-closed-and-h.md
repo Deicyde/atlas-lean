@@ -14,7 +14,11 @@ highly homogeneous (one orbit on `k`-sets for all `k`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Betweenness Aut Subgroup](betweenness/betweenness-aut-subgroup.md)
+
+## Proof depends on
+
+- [Is Between](betweenness/is-between.md)
 
 ## Sources
 

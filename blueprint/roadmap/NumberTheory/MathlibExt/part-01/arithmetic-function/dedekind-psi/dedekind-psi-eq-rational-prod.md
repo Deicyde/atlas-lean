@@ -13,7 +13,11 @@ Rational product formula for the Dedekind psi function on nonzero inputs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dedekind Psi](dedekind-psi.md)
+
+## Proof depends on
+
+- [Dedekind Psi mul prod prime Factors](dedekind-psi-mul-prod-prime-factors.md)
 
 ## Sources
 

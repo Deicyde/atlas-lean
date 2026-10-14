@@ -12,7 +12,7 @@ The empty B-tree: a leaf with no keys.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](../part-01/btree.md)
 
 ## Sources
 

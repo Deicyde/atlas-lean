@@ -13,7 +13,14 @@ The raw remainder at `0` is `-γ` by junk values, not by classical analysis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E1 Asymptotic Remainder Raw](e1-asymptotic-remainder-raw.md)
+
+## Proof depends on
+
+- [E1 Asymptotic Partial Raw](e1-asymptotic-partial-raw.md)
+- [E1 Asymptotic Partial Raw zero](e1-asymptotic-partial-raw-zero.md)
+- [Principal Exponential Integral E1 Raw](principal-exponential-integral-e1-raw.md)
+- [Principal Exponential Integral E1 Raw zero](principal-exponential-integral-e1-raw-ze.md)
 
 ## Sources
 

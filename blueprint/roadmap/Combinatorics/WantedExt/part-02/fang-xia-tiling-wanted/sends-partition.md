@@ -12,7 +12,8 @@ A permutation sends an ordered set partition `P` to `Q` blockwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered Set Partition](ordered-set-partition.md)
+- [Partition Shape](partition-shape.md)
 
 ## Sources
 

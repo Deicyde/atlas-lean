@@ -13,7 +13,11 @@ Forgetting edge identities maps each edge to its unordered endpoint pair.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
+- [Indexed Walk](indexed-walk.md)
+- [Edges](edges.md)
+- [To Walk](to-walk.md)
+- [Underlying](underlying.md)
 
 ## Sources
 

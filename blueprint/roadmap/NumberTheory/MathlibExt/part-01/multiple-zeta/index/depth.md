@@ -13,7 +13,7 @@ Depth of an index: the number of entries. Source clause D4
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](index.md)
 
 ## Sources
 

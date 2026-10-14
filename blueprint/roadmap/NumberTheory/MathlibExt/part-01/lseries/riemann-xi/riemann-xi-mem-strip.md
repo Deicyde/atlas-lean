@@ -13,7 +13,12 @@ Every zero of `ξ` lies in the open critical strip `0 < s.re < 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Riemann Xi](riemann-xi.md)
+
+## Proof depends on
+
+- [Re lt one of riemann Xi eq zero](re-lt-one-of-riemann-xi-eq-zero.md)
+- [Re pos of riemann Xi eq zero](re-pos-of-riemann-xi-eq-zero.md)
 
 ## Sources
 

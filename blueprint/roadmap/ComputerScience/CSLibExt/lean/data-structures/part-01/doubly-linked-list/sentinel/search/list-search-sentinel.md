@@ -15,7 +15,7 @@ mismatch advances and final identity test, not physical storage/bit operations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circular Represents](../basic/circular-represents.md)
 
 ## Sources
 

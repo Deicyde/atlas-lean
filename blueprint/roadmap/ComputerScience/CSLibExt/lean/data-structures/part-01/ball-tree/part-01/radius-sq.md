@@ -16,6 +16,10 @@ is empty.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dist Sq](dist-sq.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BallTree](../../../../../../../../sources/v2/CSLibExt.md)

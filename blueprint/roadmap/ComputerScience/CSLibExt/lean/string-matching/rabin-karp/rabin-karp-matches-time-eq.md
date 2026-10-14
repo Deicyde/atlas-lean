@@ -13,7 +13,7 @@ Exact setup, hash tests, rolling work, borrow additions, and hit-verification co
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rabin Karp Matches](rabin-karp-matches.md)
 
 ## Sources
 

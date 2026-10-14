@@ -13,7 +13,12 @@ An unramified prime is tamely ramified.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Tamely Ramified At](is-tamely-ramified-at.md)
+
+## Proof depends on
+
+- [Is Residue Separable At](is-residue-separable-at.md)
+- [Is Residue Separable At of is Unramified At](is-residue-separable-at-of-is-unramified.md)
 
 ## Sources
 

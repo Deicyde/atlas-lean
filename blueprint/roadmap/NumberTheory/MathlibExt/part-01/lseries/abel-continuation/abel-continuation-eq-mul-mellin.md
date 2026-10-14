@@ -14,7 +14,16 @@ This is the bridge that transfers Mellin holomorphy to the continuation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abel Continuation](abel-continuation.md)
+- [Abel Partial Sum](abel-partial-sum.md)
+- [Abel Summatory](abel-summatory.md)
+
+## Proof depends on
+
+- [Abel Summatory eq zero of lt one](abel-summatory-eq-zero-of-lt-one.md)
+- [Is Big O abel Summatory at Top](is-big-o-abel-summatory-at-top.md)
+- [Is Big O abel Summatory nhds GT zero](is-big-o-abel-summatory-nhds-gt-zero.md)
+- [Locally Integrable On abel Summatory](locally-integrable-on-abel-summatory.md)
 
 ## Sources
 

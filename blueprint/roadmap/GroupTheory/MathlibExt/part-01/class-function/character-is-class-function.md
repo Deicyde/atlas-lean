@@ -13,7 +13,7 @@ Characters of finite-dimensional representations are class functions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Class Function](is-class-function.md)
 
 ## Sources
 

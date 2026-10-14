@@ -14,6 +14,10 @@ The trivial exact upper endpoint `C₃₁ₐ ≤ 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [C31a](c31a.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.BinaryChvatalSankoffWanted](../../../../../../sources/v2/WantedExt.md)

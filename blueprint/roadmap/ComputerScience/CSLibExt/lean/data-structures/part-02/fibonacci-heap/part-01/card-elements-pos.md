@@ -13,7 +13,8 @@ Every Fibonacci tree represents at least one element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Tree](fibonacci-tree.md)
+- [Elements](elements.md)
 
 ## Sources
 

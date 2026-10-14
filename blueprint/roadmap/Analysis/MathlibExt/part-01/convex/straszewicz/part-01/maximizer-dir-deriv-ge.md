@@ -13,7 +13,12 @@ A maximizer of a functional lower-bounds the directional derivative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dir Deriv](dir-deriv.md)
+- [Supp Func](supp-func.md)
+
+## Proof depends on
+
+- [Dir Quot](dir-quot.md)
 
 ## Sources
 

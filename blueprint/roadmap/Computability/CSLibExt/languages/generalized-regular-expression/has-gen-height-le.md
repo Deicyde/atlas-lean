@@ -14,6 +14,12 @@ A language has generalized star height at most `n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gen Reg Exp](gen-reg-exp.md)
+- [Denote](denote.md)
+- [Star Height](star-height.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.GeneralizedRegularExpression](../../../../../sources/v2/CSLibExt.md)

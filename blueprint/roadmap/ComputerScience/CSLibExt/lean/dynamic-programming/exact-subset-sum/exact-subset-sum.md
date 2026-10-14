@@ -14,6 +14,10 @@ Compute the largest feasible sum by scanning the sole traversal's actual result.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exact Subset Sum Sums](exact-subset-sum-sums.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.ExactSubsetSum](../../../../../../sources/v2/CSLibExt.md)

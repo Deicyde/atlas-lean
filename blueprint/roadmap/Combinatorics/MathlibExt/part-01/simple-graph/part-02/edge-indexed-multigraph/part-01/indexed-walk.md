@@ -12,7 +12,7 @@ A walk that records the identity of every traversed multiedge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
 
 ## Sources
 

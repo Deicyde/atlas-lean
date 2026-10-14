@@ -13,7 +13,15 @@ lean: MathlibExt.NumberTheory.BreuschWanted.Internal.U9_bridge
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log F9](../../lower/part-01/log-f9.md)
+- [Nu9](nu9.md)
+
+## Proof depends on
+
+- [U9 q expand](u9-q-expand.md)
+- [Nu9term](nu9term.md)
+- [Ratio9](../../lower/part-01/ratio9.md)
+- [W9](../../grid/part-01/w9.md)
 
 ## Sources
 

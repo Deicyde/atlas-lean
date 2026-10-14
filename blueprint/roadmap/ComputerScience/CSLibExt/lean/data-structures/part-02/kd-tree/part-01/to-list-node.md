@@ -14,7 +14,13 @@ accumulator definition this is a theorem, not a definitional unfolding.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kd Tree](kd-tree.md)
+- [To List](to-list.md)
+
+## Proof depends on
+
+- [To List Aux](to-list-aux.md)
+- [To List Aux eq](to-list-aux-eq.md)
 
 ## Sources
 

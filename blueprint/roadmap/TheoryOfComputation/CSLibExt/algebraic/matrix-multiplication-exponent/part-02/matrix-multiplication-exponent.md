@@ -15,6 +15,10 @@ admissible set gives `⊤`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Matrix Multiplication Rank Exponent](has-matrix-multiplication-rank-exponent.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Complexity.Algebraic.MatrixMultiplicationExponent](../../../../../../sources/v2/CSLibExt.md)

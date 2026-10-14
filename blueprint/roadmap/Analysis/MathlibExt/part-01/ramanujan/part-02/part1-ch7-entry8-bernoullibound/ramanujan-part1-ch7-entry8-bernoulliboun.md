@@ -14,7 +14,11 @@ Proves `Wanted` entry `ramanujan_part1_ch7_entry8_bernoullibound`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter7 Integer Phi](chapter7-integer-phi.md)
+
+## Proof depends on
+
+- [Part1 Ch7 Entry8](../ramanujan-part1-ch7-entry8.md)
 
 ## Sources
 

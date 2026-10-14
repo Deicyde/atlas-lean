@@ -15,6 +15,10 @@ Church–Bicknell Fibonacci binomial convolution.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cb key R](cb-key-r.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ChurchBicknellFibonacciConvolution](../../../../../sources/v2/MathlibExt.md)

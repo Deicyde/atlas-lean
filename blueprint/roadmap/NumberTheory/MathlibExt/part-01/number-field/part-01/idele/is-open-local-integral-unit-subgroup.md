@@ -13,7 +13,7 @@ The integral unit subgroup at a finite place is open in the local multiplicative
 
 ## Depends on
 
-This node has no prerequisites.
+- [Local Integral Unit Subgroup](local-integral-unit-subgroup.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ A simple (Jordan) polygon.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Adjacent](adjacent.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.PicksTheoremWanted](../../../../../sources/v2/WantedExt.md)

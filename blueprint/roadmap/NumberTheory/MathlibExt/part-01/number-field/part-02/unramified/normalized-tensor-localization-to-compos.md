@@ -21,7 +21,12 @@ and localization at `RingHom.ker g` is in general false.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Tensor Compositum Prime](normalized-tensor-compositum-prime.md)
+- [Normalized Tensor Compositum Prime is Prime](normalized-tensor-compositum-prime-is-pr.md)
+
+## Proof depends on
+
+- [Normalized Tensor To Compositum At Prime](normalized-tensor-to-compositum-at-prime.md)
 
 ## Sources
 

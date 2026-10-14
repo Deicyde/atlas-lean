@@ -13,7 +13,13 @@ The actual cube obstructs every universal interior-translate bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniform Interior Translate Bound](../covering/uniform-interior-translate-bound.md)
+
+## Proof depends on
+
+- [Coordinate Cube](coordinate-cube.md)
+- [Coordinate Cube covering Count ge two pow](coordinate-cube-covering-count-ge-two-po.md)
+- [Coordinate Cube is Convex Body](coordinate-cube-is-convex-body.md)
 
 ## Sources
 

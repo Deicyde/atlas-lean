@@ -13,7 +13,19 @@ Every principal idele has adelic norm one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Idele Group](../idele/finite-idele-group.md)
+- [Infinite Idele Group](../idele/infinite-idele-group.md)
+- [Topological Idele Group](../idele/topological-idele-group.md)
+- [Norm One Ideles](norm-one-ideles.md)
+- [Principal Ideles](../idele/principal-ideles.md)
+- [Local Integral Unit Subgroup](../idele/local-integral-unit-subgroup.md)
+
+## Proof depends on
+
+- [Adelic Norm](adelic-norm.md)
+- [Adelic Norm principal Embedding](adelic-norm-principal-embedding.md)
+- [Mem norm One Ideles](mem-norm-one-ideles.md)
+- [Principal Embedding](../idele/principal-embedding.md)
 
 ## Sources
 

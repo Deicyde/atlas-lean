@@ -16,7 +16,17 @@ ordering via `Tree.keyOrdered_lowOrdered`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Interval Tree](indexed-interval-tree.md)
+
+## Proof depends on
+
+- [Entry](../part-01/entry.md)
+- [Interval](../part-01/interval.md)
+- [Tree](../part-01/tree.md)
+- [Balanced Prop](../part-02/balanced-prop.md)
+- [Cache Invariant](../part-01/cache-invariant.md)
+- [Key Ordered](../part-03/key-ordered.md)
+- [Valid Invariant](../part-01/valid-invariant.md)
 
 ## Sources
 

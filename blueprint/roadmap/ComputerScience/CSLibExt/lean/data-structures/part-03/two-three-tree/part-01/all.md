@@ -12,7 +12,7 @@ lean: Cslib.Algorithms.Lean.TwoThreeTree.All
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
 
 ## Sources
 

@@ -21,6 +21,16 @@ field (see the module documentation).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cut Tree At](cut-tree-at.md)
+- [Cut Tree At elements](cut-tree-at-elements.md)
+- [Cut Tree At valid](cut-tree-at-valid.md)
+- [Decrease Root](decrease-root-2.md)
+- [Cut At](cut-at.md)
+- [Decrease Root](decrease-root.md)
+- [Elements decrease Root](elements-decrease-root.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.FibonacciHeap.DecreaseKey](../../../../../../../../../sources/v2/CSLibExt.md)

@@ -13,7 +13,13 @@ Variance one excludes a zero third absolute moment.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Standardized Law](is-standardized-law.md)
+- [Third Moment](third-moment.md)
+
+## Proof depends on
+
+- [Third Moment integrable](third-moment-integrable.md)
+- [Third Moment nonnegative](third-moment-nonnegative.md)
 
 ## Sources
 

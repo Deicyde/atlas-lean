@@ -13,7 +13,9 @@ A successful back pop returns the last element and a deque for the remaining pre
 
 ## Depends on
 
-This node has no prerequisites.
+- [Deque](deque.md)
+- [Contents](contents.md)
+- [Pop Back](pop-back.md)
 
 ## Sources
 

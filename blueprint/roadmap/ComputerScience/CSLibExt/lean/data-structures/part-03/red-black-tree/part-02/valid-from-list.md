@@ -13,7 +13,13 @@ Building a tree by insertion always produces a valid tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](../part-01/valid.md)
+- [From List](from-list.md)
+
+## Proof depends on
+
+- [Valid empty](valid-empty.md)
+- [Valid insert](valid-insert.md)
 
 ## Sources
 

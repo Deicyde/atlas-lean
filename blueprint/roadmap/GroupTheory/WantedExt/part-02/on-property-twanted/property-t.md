@@ -14,6 +14,11 @@ Kazhdan's Property (T), as defined in Equation (2) of the paper.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Laplacian](laplacian.md)
+- [Group Ring Involution](group-ring-involution.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.OnPropertyTWanted](../../../../../sources/v2/WantedExt.md)

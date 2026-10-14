@@ -13,7 +13,10 @@ The projection evaluated on a class representative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Group](../group/ray-class-group.md)
+- [Coprime Ideal Class Map](coprime-ideal-class-map.md)
+- [Ray Class Map](../group/ray-class-map.md)
+- [Ray Class To Class Group](ray-class-to-class-group.md)
 
 ## Sources
 

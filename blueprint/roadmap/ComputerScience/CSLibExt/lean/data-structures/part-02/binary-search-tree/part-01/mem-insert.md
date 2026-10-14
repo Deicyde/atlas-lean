@@ -13,7 +13,8 @@ Inserting a key adds exactly that key to structural membership.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](mem.md)
+- [Insert](insert.md)
 
 ## Sources
 

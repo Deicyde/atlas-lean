@@ -12,7 +12,12 @@ The affine dimension of `P`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convex Polytope](convex-polytope.md)
+
+## Proof depends on
+
+- [To Set](to-set.md)
+- [E](e.md)
 
 ## Sources
 

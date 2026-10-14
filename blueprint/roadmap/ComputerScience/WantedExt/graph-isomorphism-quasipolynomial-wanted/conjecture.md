@@ -15,6 +15,13 @@ isomorphism on all graph pairs in quasipolynomial time.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Graph Code](graph-code.md)
+- [Isomorphic](isomorphic.md)
+- [Encode Pair](encode-pair.md)
+- [Qp Time](qp-time.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.ComputerScience.GraphIsomorphismQuasipolynomialWanted](../../../../sources/v2/WantedExt.md)

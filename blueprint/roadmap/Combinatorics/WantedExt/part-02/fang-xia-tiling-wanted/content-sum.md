@@ -15,7 +15,11 @@ matching the paper's one-indexed `λ_i · (λ_i − 2i + 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Shape](partition-shape.md)
+
+## Proof depends on
+
+- [Content Sum Aux](content-sum-aux.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ Deleting the head drops the first represented identity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../part-01/node.md)
+- [Represents](../part-01/represents.md)
+- [Delete Head](delete-head.md)
+
+## Proof depends on
+
+- [Represents nil](../part-01/represents-nil.md)
 
 ## Sources
 

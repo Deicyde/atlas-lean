@@ -16,7 +16,19 @@ leaf, and `encodedLength` remains the structural path cost.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](../part-01/huffman-tree.md)
+- [Code?](../part-01/code.md)
+- [Encoded Length](../part-01/encoded-length.md)
+- [Symbols](../part-01/symbols.md)
+- [Weighted Leaves](../part-01/weighted-leaves.md)
+
+## Proof depends on
+
+- [Path Code?](../part-01/path-code.md)
+- [Path Code? eq none iff](path-code-eq-none-iff.md)
+- [Total Weight](../part-01/total-weight.md)
+- [Weighted Path Length](../part-01/weighted-path-length.md)
+- [Weighted Path Length eq sum path Lengths](weighted-path-length-eq-sum-path-lengths.md)
 
 ## Sources
 

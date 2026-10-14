@@ -13,7 +13,13 @@ A positive-length zero-start run costs strictly fewer than twice its length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run](run.md)
+
+## Proof depends on
+
+- [Increment](increment.md)
+- [Run time succ](run-time-succ.md)
+- [Run value](run-value.md)
 
 ## Sources
 

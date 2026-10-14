@@ -14,7 +14,14 @@ An infimum bound is exactly the epsilon-qualified rank-growth bound, not a stric
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Matrix Multiplication Rank Exponent](../part-02/has-matrix-multiplication-rank-exponent.md)
+- [Matrix Multiplication Exponent](../part-02/matrix-multiplication-exponent.md)
+
+## Proof depends on
+
+- [Has Matrix Multiplication Rank Exponent of inf lt](has-matrix-multiplication-rank-exponent.md)
+- [Matrix Multiplication Exponent le of admissible](../part-02/matrix-multiplication-exponent-le-of-adm.md)
+- [Matrix Multiplication Exponent ne top](matrix-multiplication-exponent-ne-top.md)
 
 ## Sources
 

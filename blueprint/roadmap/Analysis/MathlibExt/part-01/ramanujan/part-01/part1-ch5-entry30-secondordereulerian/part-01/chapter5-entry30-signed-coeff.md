@@ -14,6 +14,10 @@ lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry30Secondordereulerian.chapter5
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter5 Entry30 Coeff](chapter5-entry30-coeff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch5Entry30Secondordereulerian](../../../../../../../../sources/v2/MathlibExt.md)

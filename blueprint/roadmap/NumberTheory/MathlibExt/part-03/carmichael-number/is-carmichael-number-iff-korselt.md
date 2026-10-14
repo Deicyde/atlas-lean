@@ -14,7 +14,11 @@ squarefree and `p - 1 ∣ n - 1` for every prime divisor `p` of `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Carmichael Number](is-carmichael-number.md)
+
+## Proof depends on
+
+- [Is Carmichael Number iff zmod](is-carmichael-number-iff-zmod.md)
 
 ## Sources
 

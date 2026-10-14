@@ -16,6 +16,13 @@ bridge is requested, not inferred by replacing strict with non-strict events.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Standardized Law](../../../MathlibExt/part-01/berry-esseen-model/part-01/is-standardized-law.md)
+- [Kolmogorov Error](../../../MathlibExt/part-01/berry-esseen-model/part-01/kolmogorov-error.md)
+- [Normal CDF](../../../MathlibExt/part-01/berry-esseen-model/part-01/normal-cdf.md)
+- [Normalized Law](../../../MathlibExt/part-01/berry-esseen-model/part-01/normalized-law.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Probability.BerryEsseenConstantWanted](../../../../../sources/v2/WantedExt.md)

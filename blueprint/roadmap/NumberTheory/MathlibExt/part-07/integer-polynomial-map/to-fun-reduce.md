@@ -15,7 +15,7 @@ The definition allows an arbitrary natural modulus; the source applies it when `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integer Polynomial Map](integer-polynomial-map.md)
 
 ## Sources
 

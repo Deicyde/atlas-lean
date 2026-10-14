@@ -14,7 +14,12 @@ perturbations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [L1 Norm](../../../../../../Algebra/MathlibExt/polynomial/l1-norm/l1-norm.md)
+
+## Proof depends on
+
+- [Exists is Closest Conjugate root of l1 Norm sub lt](exists-is-closest-conjugate-root-of-l1-n.md)
+- [Degree Stability](../../../../../../Algebra/MathlibExt/polynomial/nat-degree-eq-of-monic-of-l1-norm-sub-lt.md)
 
 ## Sources
 

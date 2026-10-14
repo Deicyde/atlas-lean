@@ -17,7 +17,12 @@ step maintains.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balanced](balanced.md)
+- [Balance](balance.md)
+
+## Proof depends on
+
+- [Balanced node](balanced-node.md)
 
 ## Sources
 

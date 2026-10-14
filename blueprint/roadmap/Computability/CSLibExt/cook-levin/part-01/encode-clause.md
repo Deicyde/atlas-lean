@@ -12,7 +12,11 @@ Binary code of a clause: its literal count followed by the encoded literals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNFClause](cnfclause.md)
+
+## Proof depends on
+
+- [Encode Lit](encode-lit.md)
 
 ## Sources
 

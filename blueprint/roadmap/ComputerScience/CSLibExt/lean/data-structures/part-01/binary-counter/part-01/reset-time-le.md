@@ -13,7 +13,11 @@ Reset changes at most the fixed number of existing bits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reset](reset.md)
+
+## Proof depends on
+
+- [Reset time](reset-time.md)
 
 ## Sources
 

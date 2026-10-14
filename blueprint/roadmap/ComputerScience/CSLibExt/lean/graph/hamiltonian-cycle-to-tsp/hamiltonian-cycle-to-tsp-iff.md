@@ -14,7 +14,12 @@ has a nonpositive-cost strict tour.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hamiltonian Cycle To Tsp](hamiltonian-cycle-to-tsp.md)
+
+## Proof depends on
+
+- [Hamiltonian Cycle To Tsp forward](hamiltonian-cycle-to-tsp-forward.md)
+- [Hamiltonian Cycle To Tsp reverse](hamiltonian-cycle-to-tsp-reverse.md)
 
 ## Sources
 

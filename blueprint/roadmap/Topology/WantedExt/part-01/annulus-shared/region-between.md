@@ -13,7 +13,13 @@ The closed region between an outer flat sphere `f` and an inner flat sphere
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amb](amb.md)
+- [Flat Sphere](flat-sphere.md)
+
+## Proof depends on
+
+- [Sph](sph.md)
+- [Inside](inside.md)
 
 ## Sources
 

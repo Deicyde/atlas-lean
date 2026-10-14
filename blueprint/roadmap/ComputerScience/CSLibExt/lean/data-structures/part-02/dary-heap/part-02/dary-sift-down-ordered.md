@@ -14,7 +14,21 @@ the local `d`-ary heap-order invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Heap Ordered](../part-01/dary-heap-ordered.md)
+- [Dary Sift Down Ready](../part-01/dary-sift-down-ready.md)
+- [Dary Sift Down](dary-sift-down.md)
+
+## Proof depends on
+
+- [Dary Child](../part-01/dary-child.md)
+- [Dary Parent](../part-01/dary-parent.md)
+- [Dary Parent child](../part-01/dary-parent-child.md)
+- [Dary Parent lt](../part-01/dary-parent-lt.md)
+- [Dary Parent lt size](../part-01/dary-parent-lt-size.md)
+- [Dary Smallest Child](../part-01/dary-smallest-child.md)
+- [Dary Smallest Child From](../part-01/dary-smallest-child-from.md)
+- [Dary Smallest Child gt](dary-smallest-child-gt.md)
+- [Dary Smallest Child valid](../part-01/dary-smallest-child-valid.md)
 
 ## Sources
 

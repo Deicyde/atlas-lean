@@ -13,7 +13,14 @@ lean: Cslib.Algorithms.Lean.FenwickTree.valid_build
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](valid.md)
+- [Build](build.md)
+
+## Proof depends on
+
+- [Block Sum](block-sum.md)
+- [Block Sum Array](block-sum-array.md)
+- [Lowbit](lowbit.md)
 
 ## Sources
 

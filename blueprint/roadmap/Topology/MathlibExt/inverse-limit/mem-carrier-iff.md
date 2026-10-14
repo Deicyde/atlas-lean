@@ -13,7 +13,7 @@ Membership in the inverse limit is exactly the compatibility condition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Carrier](carrier.md)
 
 ## Sources
 

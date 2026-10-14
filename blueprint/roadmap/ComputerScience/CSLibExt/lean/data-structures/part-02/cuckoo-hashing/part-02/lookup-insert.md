@@ -15,7 +15,20 @@ Looking up a successfully inserted key returns the inserted value, for tables sa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cuckoo Hashing](../part-01/cuckoo-hashing.md)
+- [Key Det](../part-01/key-det.md)
+- [Valid](../part-01/valid.md)
+- [Insert](../part-01/insert.md)
+- [Lookup](../part-01/lookup.md)
+
+## Proof depends on
+
+- [Stored](../part-01/stored.md)
+- [Insert Aux](../part-01/insert-aux.md)
+- [Lookup eq some of stored](../part-01/lookup-eq-some-of-stored.md)
+- [Lookup eq some of table1](../part-01/lookup-eq-some-of-table1.md)
+- [Lookup eq some of table2](../part-01/lookup-eq-some-of-table2.md)
+- [Slot Has Key](../part-01/slot-has-key.md)
 
 ## Sources
 

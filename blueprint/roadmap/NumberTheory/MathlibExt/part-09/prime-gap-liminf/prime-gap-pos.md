@@ -13,7 +13,7 @@ Every actual consecutive-prime gap is positive, including the first gap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Gap](../prime-gap.md)
 
 ## Sources
 

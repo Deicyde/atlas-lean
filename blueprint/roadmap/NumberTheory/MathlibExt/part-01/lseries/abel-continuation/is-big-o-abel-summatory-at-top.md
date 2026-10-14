@@ -17,7 +17,8 @@ naturals (always true) rather than on `σ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abel Partial Sum](abel-partial-sum.md)
+- [Abel Summatory](abel-summatory.md)
 
 ## Sources
 

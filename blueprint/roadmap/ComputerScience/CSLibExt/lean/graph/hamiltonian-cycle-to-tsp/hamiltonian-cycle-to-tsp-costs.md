@@ -14,7 +14,11 @@ and symmetric cells.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hamiltonian Cycle To Tsp](hamiltonian-cycle-to-tsp.md)
+
+## Proof depends on
+
+- [Hamiltonian Cycle To Tsp get Elem?](hamiltonian-cycle-to-tsp-get-elem.md)
 
 ## Sources
 

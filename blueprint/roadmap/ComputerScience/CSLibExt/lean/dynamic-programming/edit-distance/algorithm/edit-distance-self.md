@@ -13,7 +13,7 @@ Every list has distance zero from itself.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edit Distance](edit-distance.md)
 
 ## Sources
 

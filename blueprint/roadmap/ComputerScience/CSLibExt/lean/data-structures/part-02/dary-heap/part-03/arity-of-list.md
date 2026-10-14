@@ -13,7 +13,8 @@ Building from a list uses the normalized requested arity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Of List](of-list.md)
+- [Normalized Arity](../part-01/normalized-arity.md)
 
 ## Sources
 

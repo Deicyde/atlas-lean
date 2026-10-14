@@ -13,7 +13,13 @@ Every invertible fractional ideal is prime to the top ideal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Units Prime To](units-prime-to.md)
+
+## Proof depends on
+
+- [Is Prime To](is-prime-to.md)
+- [Mem units Prime To iff](mem-units-prime-to-iff.md)
+- [Non Zero Divisors le comap algebra Map at Prime](non-zero-divisors-le-comap-algebra-map-a.md)
 
 ## Sources
 

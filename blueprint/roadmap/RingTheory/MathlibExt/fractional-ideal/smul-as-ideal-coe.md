@@ -15,6 +15,10 @@ The prime-spectrum action is the restriction of the fractional-ideal action.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Smul coe Ideal](group-action/smul-coe-ideal.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.FractionalIdeal.Spectrum](../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,12 @@ The strict sublevel set as a finset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonnegative Discrete Spectrum](nonnegative-discrete-spectrum.md)
+
+## Proof depends on
+
+- [Sublevel Set](sublevel-set.md)
+- [Sublevel Set finite](sublevel-set-finite.md)
 
 ## Sources
 

@@ -14,7 +14,15 @@ key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Is Empty Node](is-empty-node.md)
+- [Is Empty Node eq true iff](is-empty-node-eq-true-iff.md)
+- [Lookup set Child of ne](lookup-set-child-of-ne.md)
+- [Lookup set Child self](lookup-set-child-self.md)
+- [Set Child](set-child.md)
 
 ## Sources
 

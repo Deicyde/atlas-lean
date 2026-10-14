@@ -12,7 +12,7 @@ An amplitude vector constant on the marked and unmarked outcomes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amplitude](../basic/amplitude.md)
 
 ## Sources
 

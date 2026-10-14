@@ -13,7 +13,7 @@ Trivial `p ^ r`-torsion for every positive `r` implies supersingularity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Supersingular](is-supersingular.md)
 
 ## Sources
 

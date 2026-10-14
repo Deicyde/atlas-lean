@@ -13,7 +13,8 @@ Adjacency unfolds to symmetric-difference cardinality one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Simplex Vertex](simplex-vertex.md)
+- [Simplex Graph](simplex-graph.md)
 
 ## Sources
 

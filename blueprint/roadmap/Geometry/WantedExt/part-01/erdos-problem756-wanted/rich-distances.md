@@ -14,6 +14,11 @@ The distances determined by `A` occurring for at least `k` pairs.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Distance Multiplicity](../../../MathlibExt/metric/distance-multiplicity.md)
+- [Distance Set](../../../MathlibExt/metric/distance-set.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.ErdosProblem756Wanted](../../../../../sources/v2/WantedExt.md)

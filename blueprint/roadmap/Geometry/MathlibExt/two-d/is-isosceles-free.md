@@ -14,6 +14,10 @@ A set is isosceles-free if no three distinct points in it form an isosceles tria
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Triplewise](../../../Data/MathlibExt/set/triplewise.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.TwoD](../../../../sources/v2/MathlibExt.md)

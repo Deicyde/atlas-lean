@@ -13,7 +13,7 @@ The fee pair counts interviews and the actual chronological hiring history.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hire Assistant](hire-assistant.md)
 
 ## Sources
 

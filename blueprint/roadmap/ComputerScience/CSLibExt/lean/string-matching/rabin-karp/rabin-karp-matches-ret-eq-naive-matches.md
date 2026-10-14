@@ -13,7 +13,13 @@ Erasing cost gives the same all-occurrence result as canonical naive matching.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Naive Matches](../naive/naive-matches.md)
+- [Rabin Karp Matches](rabin-karp-matches.md)
+
+## Proof depends on
+
+- [Naive Matches nil pattern](../naive/naive-matches-nil-pattern.md)
+- [Naive Matches ret](../naive/naive-matches-ret.md)
 
 ## Sources
 

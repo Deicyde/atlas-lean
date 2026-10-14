@@ -13,7 +13,15 @@ Looking up any key in the empty table returns `none`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empty](empty.md)
+- [Lookup](lookup.md)
+
+## Proof depends on
+
+- [Stored](stored.md)
+- [Lookup eq none iff](lookup-eq-none-iff.md)
+- [Not stored empty](not-stored-empty.md)
+- [Valid empty](valid-empty.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ proposition `IsRademacherType X C p` holds.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Rademacher Type](is-rademacher-type.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.RademacherEnfloTypeWanted](../../../../../sources/v2/WantedExt.md)

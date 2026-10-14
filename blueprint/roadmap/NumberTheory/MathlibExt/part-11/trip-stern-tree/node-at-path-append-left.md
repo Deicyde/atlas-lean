@@ -15,7 +15,8 @@ Definition TRIPSternDef, lines 471-481.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trip Stern Tree](trip-stern-tree.md)
+- [Node At Path](node-at-path.md)
 
 ## Sources
 

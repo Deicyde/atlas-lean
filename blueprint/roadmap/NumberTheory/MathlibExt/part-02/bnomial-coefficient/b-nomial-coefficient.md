@@ -15,6 +15,10 @@ It is zero for negative `k`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [B Nomial Base](b-nomial-base.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.BNomialCoefficient](../../../../../sources/v2/MathlibExt.md)

@@ -14,6 +14,10 @@ The list-valued length-`k` factor of `u` at position `i`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Factor](factor.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.Factor](../../../../../../sources/v2/MathlibExt.md)

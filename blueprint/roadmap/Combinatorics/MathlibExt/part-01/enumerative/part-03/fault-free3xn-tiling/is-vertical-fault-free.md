@@ -13,7 +13,7 @@ crossed by a horizontal domino.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tiling Cell](tiling-cell.md)
 
 ## Sources
 

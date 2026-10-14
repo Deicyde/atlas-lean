@@ -13,7 +13,7 @@ The `k = 0` level set at `n = 0` is universal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solutions](solutions.md)
 
 ## Sources
 

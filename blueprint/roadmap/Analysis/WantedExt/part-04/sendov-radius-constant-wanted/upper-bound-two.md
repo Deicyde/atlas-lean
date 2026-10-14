@@ -14,6 +14,10 @@ The geometric bound from Gauss–Lucas gives the upper bound two.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sendov Radius](sendov-radius.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.SendovRadiusConstantWanted](../../../../../sources/v2/WantedExt.md)

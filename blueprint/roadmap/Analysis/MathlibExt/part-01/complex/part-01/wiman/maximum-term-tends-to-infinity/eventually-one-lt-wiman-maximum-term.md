@@ -15,6 +15,10 @@ Eventually the maximum Taylor term is greater than one.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tendsto wiman Maximum Term at Top](tendsto-wiman-maximum-term-at-top.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.Wiman.MaximumTermTendsToInfinity](../../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ A pattern longer than the text has no candidates and performs no symbol comparis
 
 ## Depends on
 
-This node has no prerequisites.
+- [Naive Matches](naive-matches.md)
 
 ## Sources
 

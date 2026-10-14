@@ -16,6 +16,10 @@ formally unramified.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Finite Unramified](is-finite-unramified.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.RamificationInertia.MaximalUnramified](../../../../../../sources/v2/MathlibExt.md)

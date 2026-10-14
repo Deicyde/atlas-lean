@@ -13,7 +13,7 @@ Rewrite `prefixSum` as a sum over `Fin k` when `k ≤ m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prefix Sum](prefix-sum.md)
 
 ## Sources
 

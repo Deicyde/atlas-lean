@@ -15,7 +15,14 @@ representative of `z` (no hypothesis on `y` is needed).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equivalent](equivalent.md)
+- [Forest](forest.md)
+- [Find](find.md)
+- [Union](union.md)
+
+## Proof depends on
+
+- [Find union](find-union.md)
 
 ## Sources
 

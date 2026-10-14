@@ -13,7 +13,7 @@ There exists a unique total real function satisfying the Dickman–de Bruijn cha
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dickman De Bruijn](dickman-de-bruijn/is-dickman-de-bruijn.md)
 
 ## Sources
 

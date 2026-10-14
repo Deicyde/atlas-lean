@@ -13,7 +13,8 @@ A strong square cycle consists of a Hamiltonian cycle with original edges at the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Strong Square Cycle](has-strong-square-cycle.md)
+- [Square](../square/square.md)
 
 ## Sources
 

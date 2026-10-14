@@ -14,7 +14,7 @@ derivative along the `i`-th then `j`-th coordinate axes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hessian Matrix](hessian-matrix.md)
 
 ## Sources
 

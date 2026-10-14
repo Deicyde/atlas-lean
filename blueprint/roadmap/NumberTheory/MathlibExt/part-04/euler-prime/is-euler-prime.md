@@ -15,6 +15,10 @@ No choice function is defined since existence of odd perfect numbers is open.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eulerian Form](eulerian-form.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.EulerPrime](../../../../../sources/v2/MathlibExt.md)

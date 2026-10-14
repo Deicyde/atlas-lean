@@ -13,7 +13,8 @@ With positive capacity, the binding stored by `put` is the most recent entry.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lru Cache](../part-01/lru-cache.md)
+- [Put](../part-01/put.md)
 
 ## Sources
 

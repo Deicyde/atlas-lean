@@ -13,7 +13,11 @@ The source and target of the completion tensor-product map have equal dimension.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Places Over](../finite-places-over/places-over.md)
+
+## Proof depends on
+
+- [Sum finrank adic Completion places Over](sum-finrank-adic-completion-places-over.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ Every finite Tribonacci-word approximant is longer than its index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Letter](tribonacci-letter.md)
+- [Tribonacci Word Approx](tribonacci-word-approx.md)
+
+## Proof depends on
+
+- [Tribonacci Word Approx length add three](tribonacci-word-approx-length-add-three.md)
 
 ## Sources
 

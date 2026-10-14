@@ -13,7 +13,11 @@ The cardinality of a set arithmetic progression is its declared length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is APOf Length](is-apof-length.md)
+
+## Proof depends on
+
+- [Is APOf Length With](is-apof-length-with.md)
 
 ## Sources
 

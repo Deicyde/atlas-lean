@@ -13,7 +13,7 @@ The exact sum of left-to-right comparison counts at every candidate alignment.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Naive Matches](naive-matches.md)
 
 ## Sources
 

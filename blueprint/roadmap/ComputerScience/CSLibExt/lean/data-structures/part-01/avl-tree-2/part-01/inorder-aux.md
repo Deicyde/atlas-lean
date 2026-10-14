@@ -13,7 +13,11 @@ time; inherited from `BinarySearchTree` through `toBinaryTree`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [To Binary Tree](to-binary-tree.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ The almost-sure BHH limit clause for a fixed realization and real candidate `β`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar Point](planar-point.md)
+
+## Proof depends on
+
+- [Normalized Tour Length](normalized-tour-length.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ A successfully selected key has rank equal to its selected index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ordered](../part-01/ordered.md)
+- [Rank](../part-01/rank.md)
+- [Select](../part-01/select.md)
+
+## Proof depends on
+
+- [Inorder](../part-01/inorder.md)
+- [Ordered inorder](../part-01/ordered-inorder.md)
 
 ## Sources
 

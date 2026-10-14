@@ -13,7 +13,11 @@ The powerful part divides the original number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Powerful Part](powerful-part.md)
+
+## Proof depends on
+
+- [Powerful Part factorization](powerful-part-factorization.md)
 
 ## Sources
 

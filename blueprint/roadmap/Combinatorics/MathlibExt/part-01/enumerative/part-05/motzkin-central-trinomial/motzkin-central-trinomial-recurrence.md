@@ -23,6 +23,10 @@ termwise binomial identity gives the recurrence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Trinomial Coefficient self eq sum](trinomial-coefficient-self-eq-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MotzkinCentralTrinomial](../../../../../../../sources/v2/MathlibExt.md)

@@ -16,6 +16,10 @@ residue-field minimal polynomial is separable.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Of is Unit aeval derivative of adjoin eq top](of-is-unit-aeval-derivative-of-adjoin-eq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.LocalRing.Etale](../../../../../sources/v2/MathlibExt.md)

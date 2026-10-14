@@ -13,7 +13,14 @@ Under validity, every representative is a stored key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [YFast Trie](yfast-trie.md)
+- [Valid](valid.md)
+- [Contents](contents.md)
+
+## Proof depends on
+
+- [Valid](../part-01/valid.md)
+- [Mem contents iff](mem-contents-iff.md)
 
 ## Sources
 

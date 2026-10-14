@@ -13,7 +13,9 @@ Prepending an indexed edge prepends its initial vertex to the support.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](edge-indexed-multigraph.md)
+- [Indexed Walk](indexed-walk.md)
+- [Support](support.md)
 
 ## Sources
 

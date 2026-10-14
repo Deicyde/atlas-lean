@@ -13,7 +13,7 @@ The induced forest number is bounded by the total number of vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Induced Forest Number](induced-forest-number.md)
 
 ## Sources
 

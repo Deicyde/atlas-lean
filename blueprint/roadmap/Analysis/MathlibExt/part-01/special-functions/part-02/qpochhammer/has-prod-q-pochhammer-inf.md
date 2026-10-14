@@ -20,7 +20,7 @@ zero-factor cases (product value `0`) are covered.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Pochhammer Inf](q-pochhammer-inf.md)
 
 ## Sources
 

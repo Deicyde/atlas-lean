@@ -17,7 +17,11 @@ identifier: concept `jis_sem_6d22b6520f5edbfe81e62b58`, statement
 
 ## Depends on
 
-This node has no prerequisites.
+- [PQPatalan Params](../pqpatalan-numbers/pqpatalan-params.md)
+
+## Proof depends on
+
+- [Patalan Generalized Binomial](../pqpatalan-numbers/patalan-generalized-binomial.md)
 
 ## Sources
 

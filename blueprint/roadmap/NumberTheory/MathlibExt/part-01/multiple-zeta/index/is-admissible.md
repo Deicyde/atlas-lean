@@ -13,7 +13,7 @@ Source clause D6 (`2307.09867:D01`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](index.md)
 
 ## Sources
 

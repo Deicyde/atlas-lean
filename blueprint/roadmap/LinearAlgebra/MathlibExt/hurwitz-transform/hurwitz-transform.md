@@ -14,6 +14,10 @@ The Hurwitz transform is the sequence of determinants of the Hurwitz matrices.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hurwitz Matrix](hurwitz-matrix.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.HurwitzTransform](../../../../sources/v2/MathlibExt.md)

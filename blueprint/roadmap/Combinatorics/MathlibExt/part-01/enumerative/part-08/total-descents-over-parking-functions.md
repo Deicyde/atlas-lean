@@ -17,7 +17,12 @@ formulation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Parking Function](../part-06/parking-function/is-parking-function.md)
+- [Is Partial Parking Function](../part-06/parking-function/is-partial-parking-function.md)
+
+## Proof depends on
+
+- [Is Parking Function iff card filter le](../part-06/parking-function/is-parking-function-iff-card-filter-le.md)
 
 ## Sources
 

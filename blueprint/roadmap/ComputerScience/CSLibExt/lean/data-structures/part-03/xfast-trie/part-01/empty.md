@@ -12,7 +12,7 @@ The empty x-fast trie: no keys, every level empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [XFast Trie](xfast-trie.md)
 
 ## Sources
 

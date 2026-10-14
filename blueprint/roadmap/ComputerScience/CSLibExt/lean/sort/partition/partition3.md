@@ -12,7 +12,7 @@ Stably partition a list around `pivot`, charging once per comparison.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Way Partition](three-way-partition.md)
 
 ## Sources
 

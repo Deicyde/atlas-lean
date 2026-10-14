@@ -13,7 +13,8 @@ The contragredient action evaluates by precomposition with the inverse action.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padic Pontryagin Dual](padic-pontryagin-dual.md)
+- [Padic Quotient Int](padic-quotient-int.md)
 
 ## Sources
 

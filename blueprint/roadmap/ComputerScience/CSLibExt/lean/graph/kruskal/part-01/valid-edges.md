@@ -12,7 +12,12 @@ Validate endpoints and attach original input ordinals; malformed edges are omitt
 
 ## Depends on
 
-This node has no prerequisites.
+- [Graph](graph.md)
+- [Weighted Edge](weighted-edge.md)
+
+## Proof depends on
+
+- [Valid Edges From](valid-edges-from.md)
 
 ## Sources
 

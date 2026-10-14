@@ -13,7 +13,14 @@ The least-bound characterization quantifies over actual laws, not supplied numer
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inverse Cheeger Constant](inverse-cheeger-constant.md)
+- [Kls Constant](kls-constant.md)
+
+## Proof depends on
+
+- [Dimensional Kls Constant](dimensional-kls-constant.md)
+- [Inverse Cheeger Constant le constant](inverse-cheeger-constant-le-constant.md)
+- [Kls Constant le iff](kls-constant-le-iff.md)
 
 ## Sources
 

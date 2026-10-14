@@ -13,7 +13,11 @@ Deleting a key with `delete` erases it from the inorder traversal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](../part-01/delete.md)
+
+## Proof depends on
+
+- [Inorder erase](../part-01/inorder-erase.md)
 
 ## Sources
 

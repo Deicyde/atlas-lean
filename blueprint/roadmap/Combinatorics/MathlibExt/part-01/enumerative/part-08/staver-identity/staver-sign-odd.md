@@ -15,6 +15,11 @@ For odd `n`, reflection flips the sign.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Staver sign mul](staver-sign-mul.md)
+- [Staver sign sq](staver-sign-sq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.StaverIdentity](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,12 @@ Interface theorem: cyclic labels lie in `1 .. 2 * n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclic Label](cyclic-label.md)
+
+## Proof depends on
+
+- [Cyclic Label le size](cyclic-label-le-size.md)
+- [Cyclic Label pos](cyclic-label-pos.md)
 
 ## Sources
 

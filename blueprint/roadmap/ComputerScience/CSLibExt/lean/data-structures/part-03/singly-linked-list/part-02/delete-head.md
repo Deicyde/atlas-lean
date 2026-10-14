@@ -12,7 +12,7 @@ Delete the head node: the pool is unchanged and the header follows its next poin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../part-01/node.md)
 
 ## Sources
 

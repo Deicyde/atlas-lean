@@ -22,6 +22,10 @@ directly computed semigroups at 504 tuples.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tripathi pseudo frobenius arithmetic progression general](tripathi-pseudo-frobenius-arithmetic-pro.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.TripathiPseudoFrobenius](../../../../../sources/v2/MathlibExt.md)

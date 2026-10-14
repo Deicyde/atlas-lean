@@ -12,7 +12,13 @@ Valid edges in stable nondecreasing weight order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Graph](graph.md)
+- [Weighted Edge](weighted-edge.md)
+
+## Proof depends on
+
+- [Sort Edges](sort-edges.md)
+- [Valid Edges](valid-edges.md)
 
 ## Sources
 

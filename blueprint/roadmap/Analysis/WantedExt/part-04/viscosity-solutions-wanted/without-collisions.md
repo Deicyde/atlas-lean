@@ -14,6 +14,10 @@ We say that a configuration `x : Eᴺ` is without collisions if `rᵢⱼ ≠ 0` 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [R](r.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.ViscositySolutionsWanted](../../../../../sources/v2/WantedExt.md)

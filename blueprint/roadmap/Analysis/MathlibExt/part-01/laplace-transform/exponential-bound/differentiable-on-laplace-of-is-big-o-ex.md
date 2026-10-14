@@ -22,7 +22,12 @@ suffice. This is not a literal proof of the under-specified source wording.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Laplace](../basic/laplace.md)
+
+## Proof depends on
+
+- [Laplace Convergent](../basic/laplace-convergent.md)
+- [Laplace Convergent of is Big O exp](laplace-convergent-of-is-big-o-exp.md)
 
 ## Sources
 

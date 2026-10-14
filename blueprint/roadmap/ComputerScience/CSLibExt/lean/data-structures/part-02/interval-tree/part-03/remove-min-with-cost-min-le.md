@@ -14,7 +14,18 @@ entry in a key-ordered tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../part-01/cost.md)
+- [Entry](../part-01/entry.md)
+- [Key](../part-01/key.md)
+- [Tree](../part-01/tree.md)
+- [Key Ordered](key-ordered.md)
+- [Remove Min With Cost](../part-02/remove-min-with-cost.md)
+- [Compare Key](../part-01/compare-key.md)
+
+## Proof depends on
+
+- [Mk Node](../part-01/mk-node.md)
+- [Rebalance With Cost](../part-02/rebalance-with-cost.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ Indices whose Hoffman words belong to the `H^0` word subalgebra.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Index](../index/index.md)
+- [Is HZero Index](is-hzero-index.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.MultipleZeta.WordAlgebra](../../../../../../sources/v2/MathlibExt.md)

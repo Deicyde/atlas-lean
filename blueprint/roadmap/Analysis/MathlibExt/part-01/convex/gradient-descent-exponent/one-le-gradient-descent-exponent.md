@@ -13,7 +13,12 @@ The actual optimization family is nonempty and C35 is at least one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gradient Descent Exponent](gradient-descent-exponent.md)
+
+## Proof depends on
+
+- [Gradient Descent Uniform Rate](gradient-descent-uniform-rate.md)
+- [Gradient Descent Uniform Rate one](gradient-descent-uniform-rate-one.md)
 
 ## Sources
 

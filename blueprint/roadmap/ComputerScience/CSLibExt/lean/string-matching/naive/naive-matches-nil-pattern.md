@@ -13,7 +13,12 @@ The empty pattern matches every text boundary without any symbol comparisons.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Naive Matches](naive-matches.md)
+
+## Proof depends on
+
+- [Naive Matches ret](naive-matches-ret.md)
+- [Naive Matches time eq](naive-matches-time-eq.md)
 
 ## Sources
 

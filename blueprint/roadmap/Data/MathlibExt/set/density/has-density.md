@@ -19,6 +19,10 @@ When `β = ℕ` this by default defines the natural density of a set
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Partial Density](partial-density.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Data.Set.Density](../../../../../sources/v2/MathlibExt.md)

@@ -15,7 +15,18 @@ Only the preferred edges are reset, as for every structural operation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Adjacent](../part-01/adjacent.md)
+- [State](../part-03/state.md)
+- [Cut Edge](cut-edge.md)
+
+## Proof depends on
+
+- [Children ind](../../euler-tour-tree/part-01/children-ind.md)
+- [Root](../../euler-tour-tree/part-01/root.md)
+- [Cut](cut.md)
+- [Make Root](make-root.md)
+- [Adjacent B](../part-01/adjacent-b.md)
 
 ## Sources
 

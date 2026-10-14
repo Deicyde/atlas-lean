@@ -12,7 +12,13 @@ The reciprocal product `(∏ i, mᵢ ^ kᵢ)⁻¹` attached to a weakly decreasi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
+- [Depth](../index/depth.md)
+- [Weakly Decreasing Tuple](weakly-decreasing-tuple.md)
+
+## Proof depends on
+
+- [Entry](entry.md)
 
 ## Sources
 

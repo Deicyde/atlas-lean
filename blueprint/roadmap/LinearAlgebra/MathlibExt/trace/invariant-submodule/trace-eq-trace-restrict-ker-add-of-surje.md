@@ -16,6 +16,10 @@ as the trace of the restriction to the kernel plus the trace on the target.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Trace eq trace restrict add trace map Q](trace-eq-trace-restrict-add-trace-map-q.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Trace.InvariantSubmodule](../../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,14 @@ with no ordering premise on the bounds.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build](build.md)
+- [Query](query.md)
+
+## Proof depends on
+
+- [Sparse Table](sparse-table.md)
+- [Build valid](build-valid.md)
+- [Query eq of valid](query-eq-of-valid.md)
 
 ## Sources
 

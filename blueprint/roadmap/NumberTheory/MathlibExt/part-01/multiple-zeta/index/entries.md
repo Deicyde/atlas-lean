@@ -13,7 +13,7 @@ Entries of an index in source order. Source clause D2
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](index.md)
 
 ## Sources
 

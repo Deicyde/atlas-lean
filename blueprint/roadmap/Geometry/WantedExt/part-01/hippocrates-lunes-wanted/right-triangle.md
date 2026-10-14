@@ -12,7 +12,13 @@ The right triangle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
+
+## Proof depends on
+
+- [A](a.md)
+- [B](b.md)
+- [C](c.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The **Mandelbrot set** `M = { c ∈ ℂ | T_c^n(0) stays bounded }`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tc](tc.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.MandelbrotWanted](../../../../../sources/v2/WantedExt.md)

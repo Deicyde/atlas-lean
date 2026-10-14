@@ -13,7 +13,14 @@ The size of a built tree is the number of input points.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build](build.md)
+- [Size](size.md)
+
+## Proof depends on
+
+- [Length to List](length-to-list.md)
+- [To List](to-list.md)
+- [To List build perm](to-list-build-perm.md)
 
 ## Sources
 

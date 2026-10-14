@@ -13,7 +13,11 @@ Resetting a reset counter preserves the complete returned vector.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reset](../part-01/reset.md)
+
+## Proof depends on
+
+- [Reset to List](../part-01/reset-to-list.md)
 
 ## Sources
 

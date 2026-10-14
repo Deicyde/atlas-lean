@@ -13,7 +13,11 @@ The denominators of a nondecreasing underapproximation are monotone.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Nondecreasing Underapproximation](is-nondecreasing-underapproximation.md)
+
+## Proof depends on
+
+- [Is Nondecreasing Egyptian](is-nondecreasing-egyptian-2.md)
 
 ## Sources
 

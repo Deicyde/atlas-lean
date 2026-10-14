@@ -14,6 +14,10 @@ Actual probability, density and isotropic first/second moment conditions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Log Concave Density](is-log-concave-density.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Geometry.ThinShell](../../../../../../sources/v2/MathlibExt.md)

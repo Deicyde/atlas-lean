@@ -13,7 +13,7 @@ The actual fold returns the complete coefficient/power sum in the source order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Horner Eval](horner-eval.md)
 
 ## Sources
 

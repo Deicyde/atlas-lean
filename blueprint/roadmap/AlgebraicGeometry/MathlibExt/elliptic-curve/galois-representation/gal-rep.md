@@ -13,7 +13,14 @@ linear equivalences.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torsion Pts](torsion-pts.md)
+
+## Proof depends on
+
+- [Gal Linear Equiv](gal-linear-equiv.md)
+- [Gal Linear Map](gal-linear-map.md)
+- [Gal Linear Map mul apply](gal-linear-map-mul-apply.md)
+- [Gal Linear Map one apply](gal-linear-map-one-apply.md)
 
 ## Sources
 

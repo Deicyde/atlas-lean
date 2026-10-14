@@ -13,7 +13,17 @@ Comparison search returns true exactly for structural membership in an ordered t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](../../binary-search-tree/part-01/mem.md)
+- [Ordered](../part-01/ordered.md)
+- [Tree](../part-01/tree.md)
+- [Contains](../part-01/contains.md)
+- [Erase](../part-01/erase.md)
+
+## Proof depends on
+
+- [Contains](../../binary-search-tree/part-01/contains.md)
+- [Contains eq true iff](../../binary-search-tree/part-01/contains-eq-true-iff.md)
+- [Entry](../part-01/entry.md)
 
 ## Sources
 

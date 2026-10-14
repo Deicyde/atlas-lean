@@ -13,7 +13,12 @@ The neighbor list has no duplicate vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adjacency Matrix](adjacency-matrix.md)
+- [Neighbors](neighbors.md)
+
+## Proof depends on
+
+- [Has Edge](has-edge.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ The sum of counted comparisons and swaps is at most twice the index depth.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sift Up](sift-up.md)
+
+## Proof depends on
+
+- [Comparisons sift Up le log2](comparisons-sift-up-le-log2.md)
+- [Swaps sift Up le log2](swaps-sift-up-le-log2.md)
 
 ## Sources
 

@@ -17,6 +17,10 @@ representatives are arbitrary lists.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sum NE](sum-ne.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Additive.BhSet](../../../../../../sources/v2/MathlibExt.md)

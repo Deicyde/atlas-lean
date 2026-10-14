@@ -13,7 +13,9 @@ Every heap returned by extraction satisfies local heap order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heap Ordered](../part-01/heap-ordered.md)
+- [Min Heap](../part-02/min-heap.md)
+- [Extract Min](../part-02/extract-min.md)
 
 ## Sources
 

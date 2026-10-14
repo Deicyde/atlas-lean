@@ -14,6 +14,10 @@ The worst inverse coefficient among actual isotropic log-concave laws in dimensi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inverse Cheeger Constant](inverse-cheeger-constant.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Geometry.KLS](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,13 @@ The zero function has Fourier degree at most every natural number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](bool-cube.md)
+- [Multilinear Degree LE](multilinear-degree-le.md)
+
+## Proof depends on
+
+- [Bool Fourier Coeff](bool-fourier-coeff.md)
+- [Bool Fourier Coeff zero](bool-fourier-coeff-zero.md)
 
 ## Sources
 

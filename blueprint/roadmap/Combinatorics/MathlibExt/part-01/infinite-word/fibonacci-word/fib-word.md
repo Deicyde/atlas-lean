@@ -16,6 +16,10 @@ Concept `jis_sem_f409ef3715730614fd194b4d`, source `jis_2ff564e576beedc024b95b9a
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fib Morph](fib-morph.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.FibonacciWord](../../../../../../sources/v2/MathlibExt.md)

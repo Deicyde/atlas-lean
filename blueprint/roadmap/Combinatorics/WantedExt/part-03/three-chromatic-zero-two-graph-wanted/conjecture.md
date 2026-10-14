@@ -14,6 +14,10 @@ There exists a finite `(0,2)`-graph with chromatic number exactly three.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Zero Two](is-zero-two.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ThreeChromaticZeroTwoGraphWanted](../../../../../sources/v2/WantedExt.md)

@@ -15,6 +15,11 @@ the minimum, so a fuel of at least the input length never runs out.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [List Min](list-min.md)
+- [Split At First](split-at-first.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.CartesianTree](../../../../../../../sources/v2/CSLibExt.md)

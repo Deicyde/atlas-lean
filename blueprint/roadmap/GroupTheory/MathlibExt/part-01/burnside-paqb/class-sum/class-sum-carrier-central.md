@@ -13,7 +13,13 @@ Carrier class sums commute with every group-algebra element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Class Sum](class-sum.md)
+
+## Proof depends on
+
+- [Carrier to Finset](carrier-to-finset.md)
+- [Class Rep](class-rep.md)
+- [Class Sum central'](class-sum-central-2.md)
 
 ## Sources
 

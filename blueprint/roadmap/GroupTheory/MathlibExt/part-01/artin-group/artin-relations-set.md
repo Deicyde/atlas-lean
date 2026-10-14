@@ -16,6 +16,10 @@ generators whose off-diagonal entry is finite (`M i j ≠ 0`, i.e. `m i j ≠ �
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Artin Relation](artin-relation.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.ArtinGroup](../../../../../sources/v2/MathlibExt.md)

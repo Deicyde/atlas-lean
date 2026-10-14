@@ -13,7 +13,9 @@ Generator computation for `freeGroupToGal`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Unramified Outside](is-unramified-outside.md)
+- [Free Group To Gal](free-group-to-gal.md)
+- [Frobenius At Coprime Prime](frobenius-at-coprime-prime.md)
 
 ## Sources
 

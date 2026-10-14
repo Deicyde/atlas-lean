@@ -15,6 +15,11 @@ Certified bound `log 10 < 2.4`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Log lt of exp gt](../part-02/log-lt-of-exp-gt.md)
+- [Lt exp of pow lt](../part-02/lt-exp-of-pow-lt.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Theta](../../../../../../../../sources/v2/MathlibExt.md)

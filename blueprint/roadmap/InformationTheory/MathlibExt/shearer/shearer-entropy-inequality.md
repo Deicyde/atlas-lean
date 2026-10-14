@@ -13,7 +13,12 @@ Finite Shearer: `k`-cover `C` gives `k * H(full) ≤ ∑_{S∈C} H(S)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shearer Full Entropy](shearer-full-entropy.md)
+- [Shearer Marginal Entropy](shearer-marginal-entropy.md)
+
+## Proof depends on
+
+- [Shearer entropy inequality general](shearer-entropy-inequality-general.md)
 
 ## Sources
 

@@ -15,7 +15,13 @@ kept explicit here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chvatal Sankoff Limit Exists](../part-01/chvatal-sankoff-limit-exists.md)
+- [Expected LCSLength](../part-01/expected-lcslength.md)
+
+## Proof depends on
+
+- [Expected LCSLength le](../part-01/expected-lcslength-le.md)
+- [Normalized Expected LCS](../part-01/normalized-expected-lcs.md)
 
 ## Sources
 

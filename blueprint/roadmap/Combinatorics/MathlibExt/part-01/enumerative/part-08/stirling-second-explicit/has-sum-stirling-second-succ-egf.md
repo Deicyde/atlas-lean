@@ -15,6 +15,10 @@ The exponential generating function for a shifted column of Stirling numbers of 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Stirling Second mul factorial eq sum](stirling-second-mul-factorial-eq-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.StirlingSecondExplicit](../../../../../../../sources/v2/MathlibExt.md)

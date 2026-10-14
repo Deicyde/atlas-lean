@@ -13,7 +13,11 @@ Source-facing consequence: for `2 ≤ k`, every `k`-full number is `2`-full.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KFull](is-kfull.md)
+
+## Proof depends on
+
+- [Is KFull mono](is-kfull-mono.md)
 
 ## Sources
 

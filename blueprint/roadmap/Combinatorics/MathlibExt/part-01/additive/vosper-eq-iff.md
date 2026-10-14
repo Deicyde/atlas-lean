@@ -18,7 +18,11 @@ for some `c : ZMod p` and `B` the complement of the image `c - A`, or
 
 ## Depends on
 
-This node has no prerequisites.
+- [Common Difference Progressions](are-finite-arithmetic-progressions-with.md)
+
+## Proof depends on
+
+- [Is APOf Length With](../ap/basic/is-apof-length-with.md)
 
 ## Sources
 

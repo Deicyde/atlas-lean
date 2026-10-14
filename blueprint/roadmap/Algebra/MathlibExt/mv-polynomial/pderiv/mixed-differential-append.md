@@ -13,7 +13,7 @@ Applying mixed differential operators to an appended list is function compositio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mixed Differential](mixed-differential.md)
 
 ## Sources
 

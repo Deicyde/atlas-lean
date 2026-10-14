@@ -14,7 +14,11 @@ was present, and leaves it unchanged otherwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Flatten delete](flatten-delete.md)
 
 ## Sources
 

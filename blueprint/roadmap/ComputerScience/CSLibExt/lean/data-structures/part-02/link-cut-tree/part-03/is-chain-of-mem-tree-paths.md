@@ -13,7 +13,14 @@ Every preferred path of a tree is a genuine path of the tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Adjacent](../part-01/adjacent.md)
+- [Tree Paths](tree-paths.md)
+
+## Proof depends on
+
+- [Decomp](decomp.md)
+- [Decomp is Chain](decomp-is-chain.md)
 
 ## Sources
 

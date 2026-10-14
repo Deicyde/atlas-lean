@@ -13,7 +13,13 @@ Characteristic node equation for `tour` (the former definition).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+- [Tour](tour.md)
+
+## Proof depends on
+
+- [Tour Aux](tour-aux.md)
+- [Tour Aux eq](tour-aux-eq.md)
 
 ## Sources
 

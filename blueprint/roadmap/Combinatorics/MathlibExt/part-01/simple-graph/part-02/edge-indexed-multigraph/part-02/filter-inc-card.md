@@ -13,7 +13,9 @@ The multigraph degree counts incident edge identities.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge Indexed Multigraph](../part-01/edge-indexed-multigraph.md)
+- [Inc](../part-01/inc.md)
+- [Degree](degree.md)
 
 ## Sources
 

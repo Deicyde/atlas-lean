@@ -15,6 +15,10 @@ as the simultaneous kernel for all `f ∈ I`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tangent Space Poly](tangent-space-poly.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.TangentSpace](../../../../sources/v2/MathlibExt.md)

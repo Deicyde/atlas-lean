@@ -14,6 +14,10 @@ Canonical restricted map between adic integer rings.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Adic Completion Map mem integers](adic-completion-map-mem-integers.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.Completion.FiniteLiesOverValuation](../../../../../../../../sources/v2/MathlibExt.md)

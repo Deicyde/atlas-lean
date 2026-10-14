@@ -14,7 +14,7 @@ the Bernoulli-polynomial expression `chapter7IntegerPhi r x`, by `hurwitzZeta_ne
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter7 Integer Phi](chapter7-integer-phi.md)
 
 ## Sources
 

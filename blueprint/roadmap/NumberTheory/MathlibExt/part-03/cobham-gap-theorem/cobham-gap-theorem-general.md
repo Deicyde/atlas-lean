@@ -14,7 +14,13 @@ already includes `2 ≤ k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Base Recognizable](../base-recognizable/is-base-recognizable.md)
+
+## Proof depends on
+
+- [Is Canonical Base Word](../base-recognizable/is-canonical-base-word.md)
+- [Base Digits](../base-recognizable/base-digits.md)
+- [Base Word Value](../base-recognizable/base-word-value.md)
 
 ## Sources
 

@@ -25,6 +25,10 @@ Proves `Wanted` entry `carnot_inradius_circumradius`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Carnot inradius circumradius general](carnot-inradius-circumradius-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.CarnotInradius](../../../../../../sources/v2/MathlibExt.md)

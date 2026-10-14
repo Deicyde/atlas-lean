@@ -14,7 +14,7 @@ condition), the flow value equals forward minus backward flow.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow Value](flow-value.md)
 
 ## Sources
 

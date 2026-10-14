@@ -14,7 +14,11 @@ is constant-time and construction is `O(n log n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fenwick Tree](fenwick-tree.md)
+
+## Proof depends on
+
+- [Block Sum Array](block-sum-array.md)
 
 ## Sources
 

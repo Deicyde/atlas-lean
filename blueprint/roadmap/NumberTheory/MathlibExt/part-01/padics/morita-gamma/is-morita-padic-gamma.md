@@ -14,6 +14,10 @@ A continuous, unit-valued extension of Morita's finite p-adic gamma values.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Morita Gamma Nat](morita-gamma-nat.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Padics.MoritaGamma](../../../../../../sources/v2/MathlibExt.md)

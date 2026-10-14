@@ -32,6 +32,11 @@ modulo `m`. The hypothesis `hm : 1 < m` preserves the source condition `m > 1`, 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fibonacci Prime Divisibility](fib-prime-dvd-fib-of-legendre-sub.md)
+- [Fibonacci Five Adic Valuation](../../../part-01/padics/lengyel-fibonacci-five-adic.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Recurrences.FultonMorrisPisanoFixedPoint](../../../../../../sources/v2/MathlibExt.md)

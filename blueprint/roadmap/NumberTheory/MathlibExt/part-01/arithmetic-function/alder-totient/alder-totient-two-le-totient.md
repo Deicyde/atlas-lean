@@ -13,7 +13,7 @@ Alder's totient is bounded by Euler's totient, by inclusion of filters.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alder Totient Two](alder-totient-two.md)
 
 ## Sources
 

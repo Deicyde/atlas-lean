@@ -13,7 +13,7 @@ The defining four-point characterization of `IsCAT0FourPoint`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is CAT0 Four Point](is-cat0-four-point.md)
 
 ## Sources
 

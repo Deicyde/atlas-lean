@@ -13,7 +13,11 @@ A C-finite sequence has a tail that is a solution of a `LinearRecurrence`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Integer CFinite Sequence](is-integer-cfinite-sequence.md)
+
+## Proof depends on
+
+- [Is Solution tail of c Finite Witness](is-solution-tail-of-c-finite-witness.md)
 
 ## Sources
 

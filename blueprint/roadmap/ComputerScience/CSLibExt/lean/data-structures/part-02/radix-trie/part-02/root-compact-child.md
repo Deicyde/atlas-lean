@@ -13,7 +13,9 @@ Every child subtree of a valid node is path-compressed at its root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Radix Trie](../part-01/radix-trie.md)
+- [Root Compact](../part-01/root-compact.md)
+- [Valid](../part-01/valid.md)
 
 ## Sources
 

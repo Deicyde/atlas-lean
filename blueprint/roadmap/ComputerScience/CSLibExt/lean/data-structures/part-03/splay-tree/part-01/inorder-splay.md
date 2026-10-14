@@ -14,7 +14,12 @@ a permutation of the original traversal).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inorder](../../../part-02/binary-search-tree/part-01/inorder.md)
+- [Splay](splay.md)
+
+## Proof depends on
+
+- [Inorder Aux](../../../part-02/binary-search-tree/part-01/inorder-aux.md)
 
 ## Sources
 

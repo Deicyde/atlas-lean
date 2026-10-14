@@ -13,7 +13,11 @@ Deletion, under the name `delete`, preserves the ordering invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](../part-01/delete.md)
+
+## Proof depends on
+
+- [Ordered erase](../part-01/ordered-erase.md)
 
 ## Sources
 

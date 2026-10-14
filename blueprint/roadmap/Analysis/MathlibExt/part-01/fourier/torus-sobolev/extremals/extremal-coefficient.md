@@ -12,7 +12,14 @@ The primary coefficients of the unscaled conditional family.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extremal Parameter](extremal-parameter.md)
+- [Frequency](../basic/frequency.md)
+- [Kernel Admissible](kernel-admissible.md)
+
+## Proof depends on
+
+- [Finite Extremal Parameter](finite-extremal-parameter.md)
+- [Frequency Weight](../basic/frequency-weight.md)
 
 ## Sources
 

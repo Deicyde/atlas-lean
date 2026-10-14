@@ -21,6 +21,10 @@ Then `r1 + r2 = r3 + r4`: the inradius sum is triangulation-independent.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Carnot inradius circumradius general](carnot-inradius/carnot-inradius-circumradius-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.JapaneseQuads](../../../../../sources/v2/MathlibExt.md)

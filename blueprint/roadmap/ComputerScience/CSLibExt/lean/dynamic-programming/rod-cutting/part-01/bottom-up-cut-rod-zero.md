@@ -13,7 +13,7 @@ Empty input needs no candidate evaluation and earns zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bottom Up Cut Rod](bottom-up-cut-rod.md)
 
 ## Sources
 

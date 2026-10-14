@@ -12,7 +12,11 @@ The out-neighbors of `i`, as a list of vertices in increasing order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adjacency Matrix](adjacency-matrix.md)
+
+## Proof depends on
+
+- [Has Edge](has-edge.md)
 
 ## Sources
 

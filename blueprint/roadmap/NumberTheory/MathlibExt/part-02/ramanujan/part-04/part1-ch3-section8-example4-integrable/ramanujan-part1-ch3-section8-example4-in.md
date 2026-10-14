@@ -15,7 +15,11 @@ Proves `Wanted` entry `ramanujan_part1_ch3_section8_example4_integrable`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [F](f.md)
+
+## Proof depends on
+
+- [Generalized Bell Generating](../part1-ch3-entry9-ii-generalizedbellgenerating-de/generalized-bell-generating.md)
 
 ## Sources
 

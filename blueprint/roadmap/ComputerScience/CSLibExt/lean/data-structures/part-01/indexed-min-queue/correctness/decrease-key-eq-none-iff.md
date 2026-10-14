@@ -13,7 +13,12 @@ DECREASE-KEY rejects absent identities and non-strict decreases.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Min Queue](../basic/indexed-min-queue.md)
+- [Decrease Key](../basic/decrease-key.md)
+
+## Proof depends on
+
+- [Position valid](position-valid.md)
 
 ## Sources
 

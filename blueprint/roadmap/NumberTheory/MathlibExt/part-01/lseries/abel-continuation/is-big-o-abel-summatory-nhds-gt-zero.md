@@ -13,7 +13,11 @@ The summatory function is eventually zero near `0`, hence `O` of anything.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abel Summatory](abel-summatory.md)
+
+## Proof depends on
+
+- [Abel Summatory eq zero of lt one](abel-summatory-eq-zero-of-lt-one.md)
 
 ## Sources
 

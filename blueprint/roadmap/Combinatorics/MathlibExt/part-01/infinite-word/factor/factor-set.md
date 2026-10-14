@@ -14,6 +14,10 @@ The set of length-`k` factors occurring in `u`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Factor](factor.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.Factor](../../../../../../sources/v2/MathlibExt.md)

@@ -15,6 +15,10 @@ explicit instead of relying on totalized `0 / 0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Expected LCSLength](expected-lcslength.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.BinaryChvatalSankoffWanted](../../../../../../sources/v2/WantedExt.md)

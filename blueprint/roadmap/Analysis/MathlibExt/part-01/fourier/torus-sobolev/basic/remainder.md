@@ -14,6 +14,10 @@ The global additive remainder expression from the primary.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theta](theta.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Fourier.TorusSobolev.Basic](../../../../../../../sources/v2/MathlibExt.md)

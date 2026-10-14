@@ -14,7 +14,7 @@ only when `E_j < Λ`, avoiding `0 ^ 0 = 1` at the cutoff.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonnegative Discrete Spectrum](nonnegative-discrete-spectrum.md)
 
 ## Sources
 

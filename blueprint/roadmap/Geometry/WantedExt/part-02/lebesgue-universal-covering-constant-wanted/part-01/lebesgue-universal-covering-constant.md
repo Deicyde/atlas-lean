@@ -15,6 +15,10 @@ minimal-cover existence is a separate requested result, not an assumption.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Admissible Cover Areas](admissible-cover-areas.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.LebesgueUniversalCoveringConstantWanted](../../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,12 @@ Every positive-exponent result has already been reduced modulo `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Exponentiation](modular-exponentiation.md)
+
+## Proof depends on
+
+- [Modular Exponentiation ret even](modular-exponentiation-ret-even.md)
+- [Modular Exponentiation ret odd](modular-exponentiation-ret-odd.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ Classical mixed partial derivative `D^m φ` for a multi-index `m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
+
+## Proof depends on
+
+- [Partial Deriv](partial-deriv.md)
 
 ## Sources
 

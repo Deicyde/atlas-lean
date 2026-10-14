@@ -15,6 +15,11 @@ adaptation.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Covers Every Unit Arc](../../../../MathlibExt/moser-worm-cover/part-01/covers-every-unit-arc.md)
+- [Wetzel Sector](../../../../MathlibExt/moser-worm-cover/part-02/wetzel-sector.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.MoserConvexWormCoverConstantWanted](../../../../../../sources/v2/WantedExt.md)

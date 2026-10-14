@@ -14,6 +14,10 @@ Every left key is smaller and every right key is larger, recursively.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [All](all.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BinarySearchTree](../../../../../../../../sources/v2/CSLibExt.md)

@@ -13,7 +13,13 @@ The empty pattern matches every bounded text boundary, with zero counted operati
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rabin Karp Matches](rabin-karp-matches.md)
+
+## Proof depends on
+
+- [Naive Matches](../naive/naive-matches.md)
+- [Naive Matches nil pattern](../naive/naive-matches-nil-pattern.md)
+- [Rabin Karp Matches ret eq naive Matches](rabin-karp-matches-ret-eq-naive-matches.md)
 
 ## Sources
 

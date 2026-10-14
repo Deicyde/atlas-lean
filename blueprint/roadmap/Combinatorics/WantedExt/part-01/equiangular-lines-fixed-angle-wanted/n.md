@@ -17,6 +17,10 @@ supremum in `ℕ` here. Note that the carrier sets `E.carrier` are bounded above
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Equiangular Lines](equiangular-lines.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.EquiangularLinesFixedAngleWanted](../../../../../sources/v2/WantedExt.md)

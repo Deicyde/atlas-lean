@@ -14,7 +14,11 @@ nonempty index set so the summed degree stays positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chi Square Measure](chi-square-measure.md)
+
+## Proof depends on
+
+- [Mgf chi Square Measure of lt](mgf-chi-square-measure-of-lt.md)
 
 ## Sources
 

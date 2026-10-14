@@ -12,7 +12,7 @@ The diagonal embedding of global units into the infinite ideles.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Infinite Idele Group](infinite-idele-group.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ Deletion from an ordered tree removes exactly the deleted key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Join](join.md)
+- [Mem delete of mem](mem-delete-of-mem.md)
+- [Mem join](mem-join.md)
+- [Not mem delete self](not-mem-delete-self.md)
 
 ## Sources
 

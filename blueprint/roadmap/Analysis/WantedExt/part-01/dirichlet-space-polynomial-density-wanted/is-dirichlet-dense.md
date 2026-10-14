@@ -14,7 +14,7 @@ Density in the Dirichlet norm: `S` is dense in `D` when every
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dirichlet Space](dirichlet-space.md)
 
 ## Sources
 

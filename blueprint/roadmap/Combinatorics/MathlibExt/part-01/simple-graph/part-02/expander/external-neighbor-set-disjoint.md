@@ -13,7 +13,7 @@ The external neighbourhood of `A` is disjoint from `A`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [External Neighbor Set](external-neighbor-set.md)
 
 ## Sources
 

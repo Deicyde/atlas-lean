@@ -13,7 +13,11 @@ differ by at most one, so the balance factor lies in `{-1, 0, 1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Height](height.md)
 
 ## Sources
 

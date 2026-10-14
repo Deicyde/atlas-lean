@@ -14,7 +14,12 @@ among all feasible subpermutations of the input. Strictly positive durations are
 
 ## Depends on
 
-This node has no prerequisites.
+- [Interval Compatible](interval-compatible.md)
+- [Interval Schedule](interval-schedule.md)
+
+## Proof depends on
+
+- [Symm](symm.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ The accumulator traversal appends the preorder list onto its accumulator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+- [Vertices](vertices.md)
+- [Vertices Aux](vertices-aux.md)
+
+## Proof depends on
+
+- [Children ind](children-ind.md)
 
 ## Sources
 

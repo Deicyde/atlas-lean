@@ -14,6 +14,10 @@ Max any-size triangles over `n`-point sets in `ℝ^d`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Any Size Equilateral Triangle Count](any-size-equilateral-triangle-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.ErdosProblem755Wanted](../../../../../sources/v2/WantedExt.md)

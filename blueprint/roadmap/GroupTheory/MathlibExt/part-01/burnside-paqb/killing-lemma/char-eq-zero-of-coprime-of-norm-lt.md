@@ -16,6 +16,18 @@ force `χ g = 0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Char Div Deg is Integral of coprime](char-div-deg-is-integral-of-coprime.md)
+- [Char mem cyc Subfield](char-mem-cyc-subfield.md)
+- [Charpoly root pow order Of](charpoly-root-pow-order-of.md)
+- [Charpoly roots card](charpoly-roots-card.md)
+- [Conj Root Elem](conj-root-elem.md)
+- [Cyc Subfield](../cyclotomic-field/cyc-subfield.md)
+- [Cyc Subfield zero](../cyclotomic-field/cyc-subfield-zero.md)
+- [Cyc is Splitting](../cyclotomic-field/cyc-is-splitting.md)
+- [Embedding char eq conj sum](embedding-char-eq-conj-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.KillingLemma](../../../../../../sources/v2/MathlibExt.md)

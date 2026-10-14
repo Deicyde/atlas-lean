@@ -16,6 +16,10 @@ extension of its fraction field is local.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Local Ring of is Integral of is Adic Complete maximal](is-local-ring-of-is-integral-of-is-adic.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DiscreteValuationRing.IntegralClosureComplete](../../../../../sources/v2/MathlibExt.md)

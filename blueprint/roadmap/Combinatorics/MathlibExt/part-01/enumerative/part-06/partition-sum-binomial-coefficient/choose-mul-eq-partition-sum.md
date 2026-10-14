@@ -20,6 +20,10 @@ Theorem (label thm:1.2), lines 329–336.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Choose mul eq partition sum unconditional](choose-mul-eq-partition-sum-unconditiona.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.PartitionSumBinomialCoefficient](../../../../../../../sources/v2/MathlibExt.md)

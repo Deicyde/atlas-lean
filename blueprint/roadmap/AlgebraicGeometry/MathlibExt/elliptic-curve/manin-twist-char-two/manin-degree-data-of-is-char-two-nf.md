@@ -13,7 +13,15 @@ Manin's degree computation in either characteristic-two normal form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Manin Degree Data](../manin-sequence/manin-degree-data.md)
+
+## Proof depends on
+
+- [Primitive Triple](../manin-projective-degree/primitive-triple.md)
+- [Primitive Triple of no common irreducible](../manin-projective-degree/primitive-triple-of-no-common-irreducibl.md)
+- [Projective first nat Degree](../manin-projective-degree/projective-first-nat-degree.md)
+- [Manin degree data of card eq four](manin-degree-data-of-card-eq-four.md)
+- [Manin degree data of card eq two](manin-degree-data-of-card-eq-two.md)
 
 ## Sources
 

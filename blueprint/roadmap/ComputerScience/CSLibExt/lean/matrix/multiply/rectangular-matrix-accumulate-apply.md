@@ -13,7 +13,7 @@ Every output entry is its incoming accumulator plus the canonical finite product
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectangular Matrix Accumulate](rectangular-matrix-accumulate.md)
 
 ## Sources
 

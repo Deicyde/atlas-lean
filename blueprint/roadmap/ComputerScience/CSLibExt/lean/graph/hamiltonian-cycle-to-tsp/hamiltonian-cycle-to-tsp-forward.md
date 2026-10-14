@@ -14,7 +14,11 @@ and zero actual cost.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hamiltonian Cycle To Tsp](hamiltonian-cycle-to-tsp.md)
+
+## Proof depends on
+
+- [Hamiltonian Cycle To Tsp costs](hamiltonian-cycle-to-tsp-costs.md)
 
 ## Sources
 

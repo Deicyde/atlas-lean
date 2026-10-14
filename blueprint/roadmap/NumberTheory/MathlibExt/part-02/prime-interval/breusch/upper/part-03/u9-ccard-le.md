@@ -15,6 +15,10 @@ Few small-square primes: count bounded by `√(2100 * n) / 3`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pi third](../../theta/part-03/pi-third.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Upper](../../../../../../../../sources/v2/MathlibExt.md)

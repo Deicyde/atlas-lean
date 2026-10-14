@@ -13,7 +13,12 @@ with nonzero coefficient is contained in `G`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectilinear Cycle](../part-01/rectilinear-cycle.md)
+
+## Proof depends on
+
+- [Rectilinear Rectangle](../part-01/rectilinear-rectangle.md)
+- [Carrier](../part-01/carrier.md)
 
 ## Sources
 

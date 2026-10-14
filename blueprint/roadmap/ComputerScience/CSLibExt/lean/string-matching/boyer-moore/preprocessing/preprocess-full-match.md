@@ -14,7 +14,11 @@ matcher stages may continue without discarding overlapping occurrences.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Preprocess](preprocess.md)
+
+## Proof depends on
+
+- [Preprocess good Suffix](preprocess-good-suffix.md)
 
 ## Sources
 

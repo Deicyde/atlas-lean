@@ -13,7 +13,14 @@ Source: common subsequences concatenate without changing their order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary String](../part-01/binary-string.md)
+- [Lcs Length](../part-01/lcs-length.md)
+
+## Proof depends on
+
+- [Is Common Subsequence](../part-01/is-common-subsequence.md)
+- [Common Subsequence Lengths](../part-01/common-subsequence-lengths.md)
+- [Lcs Length is Greatest](../part-01/lcs-length-is-greatest.md)
 
 ## Sources
 

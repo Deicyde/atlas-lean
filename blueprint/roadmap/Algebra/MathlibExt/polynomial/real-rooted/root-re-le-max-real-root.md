@@ -13,7 +13,7 @@ The real part of every root is at most `maxRealRoot`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Real Root](max-real-root.md)
 
 ## Sources
 

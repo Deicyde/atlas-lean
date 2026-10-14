@@ -13,7 +13,8 @@ A coprime ideal lying in the ray group evaluates to `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Character](ray-class-character.md)
+- [Pullback](pullback.md)
 
 ## Sources
 

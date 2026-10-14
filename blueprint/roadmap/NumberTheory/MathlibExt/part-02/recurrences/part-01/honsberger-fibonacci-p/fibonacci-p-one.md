@@ -13,7 +13,12 @@ The Fibonacci `1`-numbers are the ordinary Fibonacci numbers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci P](fibonacci-p.md)
+
+## Proof depends on
+
+- [Fibonacci P rec](fibonacci-p-rec.md)
+- [Fibonacci P zero](fibonacci-p-zero.md)
 
 ## Sources
 

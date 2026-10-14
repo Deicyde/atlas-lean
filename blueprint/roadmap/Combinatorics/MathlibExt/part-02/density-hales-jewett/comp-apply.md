@@ -13,7 +13,7 @@ Evaluating a composite subspace is function composition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp](comp.md)
 
 ## Sources
 

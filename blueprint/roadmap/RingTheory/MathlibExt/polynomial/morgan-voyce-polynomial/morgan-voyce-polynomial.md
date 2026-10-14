@@ -17,6 +17,10 @@ concept `jis_sem_455f7ec0e8ec92a0f271843b` (OEIS A085478).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Morgan Voyce Coeff](morgan-voyce-coeff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Polynomial.MorganVoycePolynomial](../../../../../sources/v2/MathlibExt.md)

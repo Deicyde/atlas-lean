@@ -13,7 +13,8 @@ Evaluation is `1` on the image of the ray group.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Character](ray-class-character.md)
+- [Eval Complex](eval-complex.md)
 
 ## Sources
 

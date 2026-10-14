@@ -13,7 +13,16 @@ The actual point value agrees with the primary four-mode example.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torus](../../basic/torus.md)
+- [Lowest Shell Witness](lowest-shell-witness.md)
+
+## Proof depends on
+
+- [Frequency](../../basic/frequency.md)
+- [Axis Frequency](axis-frequency.md)
+- [Lowest Shell Unit](lowest-shell-unit.md)
+- [Unit Rescaling](../../basic/unit-rescaling.md)
+- [Unit Rescaling zero](unit-rescaling-zero.md)
 
 ## Sources
 

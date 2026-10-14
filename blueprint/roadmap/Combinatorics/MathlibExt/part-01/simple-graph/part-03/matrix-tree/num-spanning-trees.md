@@ -14,6 +14,10 @@ Finite number of spanning trees using subgraph and `IsTree`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Spanning Tree](is-spanning-tree.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.MatrixTree](../../../../../../../sources/v2/MathlibExt.md)

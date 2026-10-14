@@ -13,7 +13,12 @@ The raw `tsum` takes its fallback value at the divergent parameters `(1, 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ramanujan Theta Raw](ramanujan-theta-raw.md)
+
+## Proof depends on
+
+- [Not summable ramanujan Theta Term one one](not-summable-ramanujan-theta-term-one-on.md)
+- [Ramanujan Theta Term](ramanujan-theta-term.md)
 
 ## Sources
 

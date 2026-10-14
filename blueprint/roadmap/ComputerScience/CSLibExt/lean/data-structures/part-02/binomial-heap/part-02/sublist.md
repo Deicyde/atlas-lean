@@ -13,7 +13,13 @@ Forest validity is preserved by sublists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](../part-01/valid-2.md)
+- [Binomial Tree](../part-01/binomial-tree.md)
+
+## Proof depends on
+
+- [Valid](../part-01/valid.md)
+- [Rank](../part-01/rank.md)
 
 ## Sources
 

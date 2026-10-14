@@ -13,7 +13,8 @@ Deletion leaves capacity unchanged except for halving on contraction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](../basic/part-01/table.md)
+- [Table Delete](table-delete.md)
 
 ## Sources
 

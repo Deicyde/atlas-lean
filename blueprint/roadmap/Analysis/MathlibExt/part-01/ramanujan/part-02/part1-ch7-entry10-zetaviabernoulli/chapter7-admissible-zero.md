@@ -13,7 +13,7 @@ Compatibility alias for the former `Entry10Zetaviabernoulli.chapter7Admissible_z
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter7 Admissible](chapter7-admissible.md)
 
 ## Sources
 

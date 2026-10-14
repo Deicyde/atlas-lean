@@ -13,7 +13,7 @@ The coupled execution charges exactly one tick for each candidate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Optimal BST](../basic/optimal-bst.md)
 
 ## Sources
 

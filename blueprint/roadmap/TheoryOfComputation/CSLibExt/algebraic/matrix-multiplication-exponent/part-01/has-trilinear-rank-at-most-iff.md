@@ -13,7 +13,14 @@ A rank bound is equivalent to the corresponding inequality for the genuine minim
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Trilinear Rank At Most](has-trilinear-rank-at-most.md)
+- [Trilinear Rank](trilinear-rank.md)
+
+## Proof depends on
+
+- [Mono](mono.md)
+- [Trilinear Rank le](trilinear-rank-le.md)
+- [Trilinear Rank spec](trilinear-rank-spec.md)
 
 ## Sources
 

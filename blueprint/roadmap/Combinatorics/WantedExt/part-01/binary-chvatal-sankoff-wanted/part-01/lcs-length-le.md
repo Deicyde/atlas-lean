@@ -13,7 +13,13 @@ No common subsequence is longer than either input string.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary String](binary-string.md)
+- [Lcs Length](lcs-length.md)
+
+## Proof depends on
+
+- [Is Common Subsequence](is-common-subsequence.md)
+- [Exists longest Common Subsequence](exists-longest-common-subsequence.md)
 
 ## Sources
 

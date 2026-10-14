@@ -18,6 +18,10 @@ Note: we allow non-coprime `(a, q)` and we explicitly rule out `q = 0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inequality 1 7](inequality-1-7.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.DuffinSchaefferConjectureWanted](../../../../../sources/v2/WantedExt.md)

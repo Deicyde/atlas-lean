@@ -14,7 +14,7 @@ per attempt and pattern-length shifts. Costs are the documented selected events.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Boyer Moore Matches](../basic/boyer-moore-matches.md)
 
 ## Sources
 

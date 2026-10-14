@@ -13,7 +13,8 @@ Every uniform rank bound is an upper bound for the infimal exponent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Matrix Multiplication Rank Exponent](has-matrix-multiplication-rank-exponent.md)
+- [Matrix Multiplication Exponent](matrix-multiplication-exponent.md)
 
 ## Sources
 

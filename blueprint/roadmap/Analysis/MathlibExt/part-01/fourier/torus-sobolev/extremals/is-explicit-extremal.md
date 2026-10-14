@@ -12,7 +12,16 @@ The actual Fourier family, including convergent infinite evaluation and normaliz
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torus](../basic/torus.md)
+
+## Proof depends on
+
+- [Extremal Parameter](extremal-parameter.md)
+- [Frequency](../basic/frequency.md)
+- [Kernel Admissible](kernel-admissible.md)
+- [Extremal Coefficient](extremal-coefficient.md)
+- [Fourier Coefficient](../basic/fourier-coefficient.md)
+- [Unit Rescaling](../basic/unit-rescaling.md)
 
 ## Sources
 

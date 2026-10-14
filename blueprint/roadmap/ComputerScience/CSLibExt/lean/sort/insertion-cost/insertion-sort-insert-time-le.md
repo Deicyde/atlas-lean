@@ -13,7 +13,11 @@ Inserting one element charges at most one comparison per existing element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Insertion Sort Insert](insertion-sort-insert.md)
+
+## Proof depends on
+
+- [Compare LE](compare-le.md)
 
 ## Sources
 

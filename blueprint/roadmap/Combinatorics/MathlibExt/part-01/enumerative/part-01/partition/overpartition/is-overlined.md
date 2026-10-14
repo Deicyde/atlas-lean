@@ -12,7 +12,7 @@ lean: Nat.Overpartition.IsOverlined
 
 ## Depends on
 
-This node has no prerequisites.
+- [Overpartition](overpartition.md)
 
 ## Sources
 

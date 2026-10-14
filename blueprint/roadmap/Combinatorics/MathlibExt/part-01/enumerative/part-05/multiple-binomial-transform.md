@@ -29,6 +29,10 @@ Concept `jis_term_c157679dc9eb88c4ba264101`; source statements
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Binomial Transform](../part-03/falling-kbinomial-transform/binomial-transform.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MultipleBinomialTransform](../../../../../../sources/v2/MathlibExt.md)

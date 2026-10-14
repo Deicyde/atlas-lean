@@ -16,7 +16,19 @@ of `insert`, in the form of `HashTable.lookup_insert_of_ne`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Open Addressing](../part-01/open-addressing.md)
+- [Valid](../part-01/valid.md)
+- [Insert](../part-01/insert.md)
+- [Lookup](../part-01/lookup.md)
+
+## Proof depends on
+
+- [Stored](../part-01/stored.md)
+- [Lookup eq none of not stored](../part-01/lookup-eq-none-of-not-stored.md)
+- [Lookup eq some iff](../part-01/lookup-eq-some-iff.md)
+- [Stored insert of ne](stored-insert-of-ne.md)
+- [Stored of lookup eq some](../part-01/stored-of-lookup-eq-some.md)
+- [Valid insert](../part-01/valid-insert.md)
 
 ## Sources
 

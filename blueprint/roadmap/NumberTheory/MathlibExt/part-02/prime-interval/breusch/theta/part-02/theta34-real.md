@@ -15,6 +15,10 @@ Real primorial bound `primorial ⌊x⌋₊ ≤ 3.4 ^ x`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theta34 nat](theta34-nat.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Theta](../../../../../../../../sources/v2/MathlibExt.md)

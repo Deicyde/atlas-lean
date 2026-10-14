@@ -16,7 +16,11 @@ quotient induction on a residue-field representative (both algebra maps send
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residue Field Maximal Ideal Pow Quotient](residue-field-maximal-ideal-pow-quotient.md)
+
+## Proof depends on
+
+- [Maximal Ideal Pow Quotient Ideal le](maximal-ideal-pow-quotient-ideal-le.md)
 
 ## Sources
 

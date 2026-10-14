@@ -14,6 +14,11 @@ Deterministic head-pivot quicksort with a stable three-way partition.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Three Way Partition](../partition/three-way-partition.md)
+- [Partition3](../partition/partition3.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Sort.Quick](../../../../../../sources/v2/CSLibExt.md)

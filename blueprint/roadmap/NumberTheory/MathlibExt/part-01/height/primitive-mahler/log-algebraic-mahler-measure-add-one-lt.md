@@ -13,7 +13,7 @@ Voutier's elementary bridge from logarithmic to multiplicative lower bounds, for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Algebraic Mahler Measure](algebraic-mahler-measure.md)
 
 ## Sources
 

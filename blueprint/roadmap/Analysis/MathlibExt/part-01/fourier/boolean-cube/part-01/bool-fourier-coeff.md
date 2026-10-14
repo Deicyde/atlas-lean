@@ -12,7 +12,11 @@ The normalized Fourier coefficient `f̂(S) = E_x[f(x) χ_S(x)]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](bool-cube.md)
+
+## Proof depends on
+
+- [Cube Chi](cube-chi.md)
 
 ## Sources
 

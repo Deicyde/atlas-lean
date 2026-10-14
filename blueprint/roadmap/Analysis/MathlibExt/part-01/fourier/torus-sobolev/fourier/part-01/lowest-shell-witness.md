@@ -12,7 +12,12 @@ An actual real continuous function on the period-`2π` torus.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torus](../../basic/torus.md)
+
+## Proof depends on
+
+- [Lowest Shell Unit](lowest-shell-unit.md)
+- [Unit Rescaling](../../basic/unit-rescaling.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ Composite is `¬ n.Prime` conjoined with the probable-prime `1 < n` clause.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Frobenius Probable Prime](is-frobenius-probable-prime.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.FrobeniusPseudoprime](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,12 @@ A selected child has a strictly larger index than its parent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Smallest Child](../part-01/dary-smallest-child.md)
+
+## Proof depends on
+
+- [Dary Child](../part-01/dary-child.md)
+- [Dary Smallest Child From](../part-01/dary-smallest-child-from.md)
 
 ## Sources
 

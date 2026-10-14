@@ -13,7 +13,11 @@ The generalized cdf inverse is measurable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cdf Quantile](cdf-quantile.md)
+
+## Proof depends on
+
+- [Cdf Quantile le iff](cdf-quantile-le-iff.md)
 
 ## Sources
 

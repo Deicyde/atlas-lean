@@ -14,6 +14,10 @@ The canonical equivalence induced by the bilinear pairing.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dual Submodule To Dual bijective](dual-submodule-to-dual-bijective.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.BilinearForm.DualLattice](../../../../../sources/v2/MathlibExt.md)

@@ -14,6 +14,11 @@ A social welfare function maps each unrestricted profile to a social strict tota
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Profile](profile.md)
+- [Strict Total Order](strict-total-order.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GameTheory.SocialChoice.Arrow](../../../../../sources/v2/MathlibExt.md)

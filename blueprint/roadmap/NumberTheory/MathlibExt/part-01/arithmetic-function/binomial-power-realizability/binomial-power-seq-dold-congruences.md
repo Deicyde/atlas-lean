@@ -14,7 +14,12 @@ Dold congruences for binomial-power sequences, factored out of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Power Seq](binomial-power-seq.md)
+
+## Proof depends on
+
+- [Binomial power sequence dold realizable](binomial-power-sequence-dold-realizable.md)
+- [Dold Realizable dvd](dold-realizable-dvd.md)
 
 ## Sources
 

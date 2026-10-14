@@ -13,7 +13,7 @@ There is one partition of `0`, the empty one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Function](partition-function.md)
 
 ## Sources
 

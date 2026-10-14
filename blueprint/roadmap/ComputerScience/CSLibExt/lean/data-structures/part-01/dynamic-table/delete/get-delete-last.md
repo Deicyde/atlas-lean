@@ -13,7 +13,14 @@ Lookup at the deleted position finds nothing after deletion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](../basic/part-01/table.md)
+- [Get?](get.md)
+- [Table Delete](table-delete.md)
+
+## Proof depends on
+
+- [Get? eq none of le](get-eq-none-of-le.md)
+- [Table Delete num](table-delete-num.md)
 
 ## Sources
 

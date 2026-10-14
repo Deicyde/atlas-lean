@@ -13,7 +13,11 @@ Inequality form of the normalization of a Dickman–de Bruijn function on `[0, 1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dickman De Bruijn](is-dickman-de-bruijn.md)
+
+## Proof depends on
+
+- [Eq one of mem Icc](eq-one-of-mem-icc.md)
 
 ## Sources
 

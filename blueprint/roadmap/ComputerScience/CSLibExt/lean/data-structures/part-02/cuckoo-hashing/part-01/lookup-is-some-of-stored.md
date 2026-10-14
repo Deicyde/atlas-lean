@@ -15,7 +15,15 @@ may differ from the given one if the key is stored with two values; see
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cuckoo Hashing](cuckoo-hashing.md)
+- [Stored](stored.md)
+- [Valid](valid.md)
+- [Lookup](lookup.md)
+
+## Proof depends on
+
+- [Lookup eq some of table1](lookup-eq-some-of-table1.md)
+- [Lookup eq some of table2](lookup-eq-some-of-table2.md)
 
 ## Sources
 

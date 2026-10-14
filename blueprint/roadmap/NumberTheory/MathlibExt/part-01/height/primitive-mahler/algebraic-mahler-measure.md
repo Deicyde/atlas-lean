@@ -14,6 +14,10 @@ The actual complex Mahler measure of the positive primitive integral minimal pol
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Positive Primitive Int Minpoly](positive-primitive-int-minpoly.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Height.PrimitiveMahler](../../../../../../sources/v2/MathlibExt.md)

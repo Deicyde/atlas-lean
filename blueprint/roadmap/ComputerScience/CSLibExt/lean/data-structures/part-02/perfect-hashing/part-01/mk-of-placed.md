@@ -13,7 +13,12 @@ A table satisfying the placement clause is valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](perfect-hashing.md)
+- [Valid](valid.md)
+
+## Proof depends on
+
+- [Injective of placed](injective-of-placed.md)
 
 ## Sources
 

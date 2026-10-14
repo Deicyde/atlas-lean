@@ -12,7 +12,7 @@ The empty Bloom filter for the given hash functions: every bit is unset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bloom Filter](bloom-filter.md)
 
 ## Sources
 

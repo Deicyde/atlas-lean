@@ -13,7 +13,7 @@ Usable membership characterization for `coprimePrimeUnits`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprime Prime Units](coprime-prime-units.md)
 
 ## Sources
 

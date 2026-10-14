@@ -13,7 +13,11 @@ The linear-time inorder traversal of a tree, inherited from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [To Binary Tree](to-binary-tree.md)
 
 ## Sources
 

@@ -20,6 +20,10 @@ trailing high-order zeros.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Base Word Value LSD](base-word-value-lsd.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Words.CobhamUniformMorphism](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,7 @@ Minimum extraction returns one minimum together with exactly the other input occ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extract Min](extract-min.md)
 
 ## Sources
 

@@ -13,7 +13,15 @@ Linking preserves the disjoint multiset union of both input trees.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Tree](fibonacci-tree.md)
+- [Elements](elements.md)
+- [Link](link.md)
+
+## Proof depends on
+
+- [Children](children.md)
+- [Degree](degree.md)
+- [Root](root.md)
 
 ## Sources
 

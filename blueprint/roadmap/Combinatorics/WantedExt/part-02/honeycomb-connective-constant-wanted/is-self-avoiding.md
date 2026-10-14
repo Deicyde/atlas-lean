@@ -14,6 +14,11 @@ A direction word is self-avoiding when its `n + 1` visited vertices are distinct
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Honeycomb Vertex](honeycomb-vertex.md)
+- [Visited Vertices](visited-vertices.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.HoneycombConnectiveConstantWanted](../../../../../sources/v2/WantedExt.md)

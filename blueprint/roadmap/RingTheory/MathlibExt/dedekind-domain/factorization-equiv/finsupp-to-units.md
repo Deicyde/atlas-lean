@@ -14,6 +14,10 @@ Reconstruction of a unit fractional ideal from prime exponents.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Finsupp Prod ne zero](finsupp-prod-ne-zero.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DedekindDomain.FactorizationEquiv](../../../../../sources/v2/MathlibExt.md)

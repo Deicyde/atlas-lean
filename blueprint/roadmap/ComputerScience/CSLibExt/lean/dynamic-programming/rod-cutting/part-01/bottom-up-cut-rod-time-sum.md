@@ -13,7 +13,7 @@ The executable evaluates exactly `j` candidates in row `j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bottom Up Cut Rod](bottom-up-cut-rod.md)
 
 ## Sources
 

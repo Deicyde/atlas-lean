@@ -13,7 +13,11 @@ Selection sort returns a nondecreasing permutation, preserving duplicate multipl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Selection Sort](selection-sort.md)
+
+## Proof depends on
+
+- [Extract Min](extract-min.md)
 
 ## Sources
 

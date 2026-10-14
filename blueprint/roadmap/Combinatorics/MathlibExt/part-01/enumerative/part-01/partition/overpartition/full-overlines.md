@@ -13,7 +13,7 @@ The overlined sizes of `full p` are the distinct parts of `p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Full](full.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ Membership in the Cartesian tree agrees with membership in the input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](../binary-search-tree/part-01/mem.md)
+- [Build](build.md)
+
+## Proof depends on
+
+- [Inorder](../binary-search-tree/part-01/inorder.md)
+- [Mem inorder](../binary-search-tree/part-01/mem-inorder.md)
+- [Inorder build](inorder-build.md)
 
 ## Sources
 

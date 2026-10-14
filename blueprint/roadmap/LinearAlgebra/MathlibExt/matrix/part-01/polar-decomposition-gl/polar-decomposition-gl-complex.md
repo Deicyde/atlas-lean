@@ -20,6 +20,10 @@ its unitary witness. The generic proof takes `P` to be the CFC square root of `A
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists unique unitary Group pos Def of is Unit det](../factorizations/polar/exists-unique-unitary-group-pos-def-of-i.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.PolarDecompositionGL](../../../../../../sources/v2/MathlibExt.md)

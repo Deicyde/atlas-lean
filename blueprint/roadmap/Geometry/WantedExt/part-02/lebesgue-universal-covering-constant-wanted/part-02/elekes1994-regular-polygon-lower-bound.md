@@ -14,6 +14,10 @@ Elekes's finite-decimal lower bound using regular `3^j`-gons as well.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lebesgue Universal Covering Constant](../part-01/lebesgue-universal-covering-constant.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.LebesgueUniversalCoveringConstantWanted](../../../../../../sources/v2/WantedExt.md)

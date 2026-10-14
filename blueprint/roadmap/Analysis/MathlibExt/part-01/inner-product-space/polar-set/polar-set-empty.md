@@ -13,7 +13,7 @@ The polar of the empty set is everything (the condition is vacuous).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polar Set](polar-set.md)
 
 ## Sources
 

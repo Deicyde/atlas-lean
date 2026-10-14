@@ -12,7 +12,7 @@ Executable overlap together with the number of endpoint relations evaluated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Interval](interval.md)
 
 ## Sources
 

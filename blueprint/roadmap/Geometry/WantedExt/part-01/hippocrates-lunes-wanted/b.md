@@ -12,7 +12,7 @@ The leg endpoint on the x-axis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
 
 ## Sources
 

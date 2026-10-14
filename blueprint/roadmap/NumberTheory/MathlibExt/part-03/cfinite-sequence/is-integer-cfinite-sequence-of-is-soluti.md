@@ -13,7 +13,7 @@ Every solution of a `LinearRecurrence` is C-finite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Integer CFinite Sequence](is-integer-cfinite-sequence.md)
 
 ## Sources
 

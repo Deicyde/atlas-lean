@@ -14,7 +14,12 @@ any directed edge, so no directed cycle exists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dichromatic Colorable](dichromatic-colorable.md)
+
+## Proof depends on
+
+- [Is Directed Cycle](is-directed-cycle.md)
+- [Is Orientation](is-orientation.md)
 
 ## Sources
 

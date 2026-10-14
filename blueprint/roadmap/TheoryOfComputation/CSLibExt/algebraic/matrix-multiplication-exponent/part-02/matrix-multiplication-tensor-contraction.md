@@ -15,6 +15,11 @@ Contract the full coefficient tensor against two input matrices at output coordi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Matrix Coordinate](../part-01/matrix-coordinate.md)
+- [Matrix Multiplication Tensor](../part-01/matrix-multiplication-tensor.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Complexity.Algebraic.MatrixMultiplicationExponent](../../../../../../sources/v2/CSLibExt.md)

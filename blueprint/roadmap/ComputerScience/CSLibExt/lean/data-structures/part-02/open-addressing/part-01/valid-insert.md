@@ -13,7 +13,13 @@ Insertion or replacement preserves the probe-closed invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Open Addressing](open-addressing.md)
+- [Valid](valid.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Insert Aux](insert-aux.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The empty tree: every summary and cluster bit is unset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](van-emde-boas.md)
 
 ## Sources
 

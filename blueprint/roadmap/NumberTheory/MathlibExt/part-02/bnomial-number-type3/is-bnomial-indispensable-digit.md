@@ -19,6 +19,10 @@ predicate agrees with all source-defined cases.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [B Nomial Digit At Or Zero](b-nomial-digit-at-or-zero.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.BNomialNumberType3](../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,13 @@ Combined residue-sign homomorphism on ray elements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residue Sign Target](residue-sign-target.md)
+- [Ray Elements](../ray-group/ray-elements.md)
+
+## Proof depends on
+
+- [Finite Residue Map](../../part-01/finite-congruence/finite-residue-map.md)
+- [Infinite Sign Map](../../part-01/infinite-sign/infinite-sign-map.md)
 
 ## Sources
 

@@ -17,6 +17,10 @@ Stated for `Set ℝ²` so that infinite collections are covered; a `Finset` argu
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Non Trilinear](non-trilinear.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.TwoD](../../../../sources/v2/MathlibExt.md)

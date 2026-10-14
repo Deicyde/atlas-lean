@@ -14,6 +14,10 @@ A CNF formula: a conjunction of clauses.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [CNFClause](cnfclause.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.CookLevin](../../../../../sources/v2/CSLibExt.md)

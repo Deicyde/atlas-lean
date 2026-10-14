@@ -14,7 +14,7 @@ is nonpositive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Upper Interlacing Point](has-upper-interlacing-point.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ Every height-indexed tree is balanced.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balanced](balanced.md)
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Height](height.md)
+- [Height eq](height-eq.md)
 
 ## Sources
 

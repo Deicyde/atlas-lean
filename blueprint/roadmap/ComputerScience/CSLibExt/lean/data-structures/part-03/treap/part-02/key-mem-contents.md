@@ -13,7 +13,13 @@ Inorder contents contain exactly the structurally present keys.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Contents](../part-01/contents.md)
+
+## Proof depends on
+
+- [Mem Key](../part-01/mem-key.md)
+- [Contents node](../part-01/contents-node.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ The reported length equals the witness length, and the witness is a longest comm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Longest Common Subsequence](longest-common-subsequence.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Two caches with the same entries are equal; the bundled invariant proofs are irr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lru Cache](lru-cache.md)
 
 ## Sources
 

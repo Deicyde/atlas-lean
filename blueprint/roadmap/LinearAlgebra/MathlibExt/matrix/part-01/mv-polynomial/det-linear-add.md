@@ -13,7 +13,7 @@ lean: Matrix.detLinear_add
 
 ## Depends on
 
-This node has no prerequisites.
+- [Det Linear](det-linear.md)
 
 ## Sources
 

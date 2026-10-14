@@ -17,6 +17,10 @@ see `realCyclotomicPolynomial_eq_minpoly_two_cos`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Real Cyclotomic Polynomial eq minpoly two cos](real-cyclotomic-polynomial-eq-minpoly-tw.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Cyclotomic.LehmerCoprimeIndexMinpoly](../../../../../../sources/v2/MathlibExt.md)

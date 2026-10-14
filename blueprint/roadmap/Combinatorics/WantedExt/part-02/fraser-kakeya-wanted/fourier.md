@@ -13,7 +13,11 @@ additive character.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Space](space.md)
+
+## Proof depends on
+
+- [Dot](dot.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Ordinary perfect numbers are exactly the `2`-perfect numbers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KPerfect](is-kperfect.md)
 
 ## Sources
 

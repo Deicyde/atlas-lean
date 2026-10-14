@@ -13,7 +13,7 @@ Membership unfolds to the scalar-action property.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Char Center](char-center.md)
 
 ## Sources
 

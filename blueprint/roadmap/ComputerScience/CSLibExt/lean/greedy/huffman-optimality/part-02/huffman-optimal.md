@@ -14,7 +14,15 @@ among full prefix-code trees with exactly the input's weighted symbols.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](../../huffman/part-01/huffman-tree.md)
+- [Admissible](admissible.md)
+- [Weighted Path Length](../../huffman/part-01/weighted-path-length.md)
+- [Huffman](../../huffman/part-03/huffman.md)
+
+## Proof depends on
+
+- [Huffman merge Trace](huffman-merge-trace.md)
+- [Huffman optimal of merge Trace](huffman-optimal-of-merge-trace.md)
 
 ## Sources
 

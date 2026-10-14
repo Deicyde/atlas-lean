@@ -15,6 +15,10 @@ progression (`d > 0`) of pairwise coprime powerful numbers.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is KFull](../../../MathlibExt/part-07/kfull/is-kfull.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem937Wanted](../../../../../sources/v2/WantedExt.md)

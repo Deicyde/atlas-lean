@@ -13,7 +13,12 @@ Evaluation of the degree-normalized absolute value at an infinite place.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Absolute Value](normalized-absolute-value-2.md)
+
+## Proof depends on
+
+- [Rpow](../../../../../../Analysis/MathlibExt/part-01/absolute-value/rpow/rpow.md)
+- [Rpow apply](../../../../../../Analysis/MathlibExt/part-01/absolute-value/rpow/rpow-apply.md)
 
 ## Sources
 

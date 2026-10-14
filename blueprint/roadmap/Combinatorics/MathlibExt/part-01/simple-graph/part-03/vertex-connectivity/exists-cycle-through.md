@@ -13,7 +13,12 @@ Every vertex of a finite 2-vertex-connected graph lies on a cycle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Vertex Connected](is-vertex-connected.md)
+
+## Proof depends on
+
+- [Connected compl singleton](connected-compl-singleton.md)
+- [Two le degree](two-le-degree.md)
 
 ## Sources
 

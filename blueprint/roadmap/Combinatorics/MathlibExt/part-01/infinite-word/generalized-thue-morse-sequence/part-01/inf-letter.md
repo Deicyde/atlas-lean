@@ -16,6 +16,12 @@ The infinite word `A_∞`: its `m`-th letter is read from the finite block
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Block](block.md)
+- [Block length](block-length.md)
+- [Lt pow succ self](lt-pow-succ-self.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.GeneralizedThueMorseSequence](../../../../../../../sources/v2/MathlibExt.md)

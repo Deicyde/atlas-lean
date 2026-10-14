@@ -19,6 +19,10 @@ no silent assumptions beyond the dimension bound and `p ≠ ⊥`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Maximal map of coprime clear Denom](is-maximal-map-of-coprime-clear-denom.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Ideal.PrimeExtension](../../../../../sources/v2/MathlibExt.md)

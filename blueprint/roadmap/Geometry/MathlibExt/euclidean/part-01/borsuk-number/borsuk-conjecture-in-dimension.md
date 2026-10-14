@@ -14,6 +14,10 @@ Borsuk's partition bound in one Euclidean dimension.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dimension Borsuk Number](dimension-borsuk-number.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.BorsukNumber](../../../../../../sources/v2/MathlibExt.md)

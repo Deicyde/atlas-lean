@@ -15,7 +15,12 @@ contribution that yields the Riemann-zeta local factor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Artin Local Datum](artin-local-datum.md)
+- [Artin Local Factor Raw](artin-local-factor-raw.md)
+
+## Proof depends on
+
+- [Artin Local Factor Raw of action eq id general](artin-local-factor-raw-of-action-eq-id-g.md)
 
 ## Sources
 

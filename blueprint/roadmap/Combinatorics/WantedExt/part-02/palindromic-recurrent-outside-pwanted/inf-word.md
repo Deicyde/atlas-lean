@@ -14,6 +14,10 @@ Infinite words.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sigma](sigma.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PalindromicRecurrentOutsidePWanted](../../../../../sources/v2/WantedExt.md)

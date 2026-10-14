@@ -16,6 +16,12 @@ that have a rational point:
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Solutions In](has-solutions-in.md)
+- [Height LE](height-le.md)
+- [𝕍](untitled-2.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.HassePrincipleRandomFanoWanted](../../../../../sources/v2/WantedExt.md)

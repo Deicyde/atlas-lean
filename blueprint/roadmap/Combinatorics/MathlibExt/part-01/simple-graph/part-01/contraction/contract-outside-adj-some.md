@@ -13,7 +13,13 @@ Adjacency between surviving vertices is unchanged by contraction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Contract Outside](contract-outside.md)
+
+## Proof depends on
+
+- [Collapse Outside](collapse-outside.md)
+- [Collapse Outside eq some iff](collapse-outside-eq-some-iff.md)
+- [Collapse Outside of mem](collapse-outside-of-mem.md)
 
 ## Sources
 

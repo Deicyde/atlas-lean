@@ -14,6 +14,10 @@ The outdegree of a vertex in the chosen orientation.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Oriented Tail](oriented-tail.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.JaegerModularOrientationWanted](../../../../../sources/v2/WantedExt.md)

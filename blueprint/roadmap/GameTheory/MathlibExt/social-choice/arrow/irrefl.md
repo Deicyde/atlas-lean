@@ -14,7 +14,8 @@ For new code, use `MathlibExt.Order.StrictTotalOrder.irrefl` directly.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strict Total Order](strict-total-order.md)
+- [Lt](lt.md)
 
 ## Sources
 

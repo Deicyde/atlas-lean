@@ -12,7 +12,7 @@ lean: MathlibExt.Algebra.Lie.PoissonBracket.IsPoissonIdeal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poisson Bracket](poisson-bracket.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ Examples, 5th ed., Probability and Measure
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empirical Count](empirical-count.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ Exact source-shaped boundedness packet needed by N324.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normalized Theta Error](../laplace-theta-continuation/normalized-theta-error.md)
+
+## Proof depends on
+
+- [Abs normalized Theta Error le](abs-normalized-theta-error-le.md)
 
 ## Sources
 

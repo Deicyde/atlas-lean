@@ -16,6 +16,10 @@ concept `jis_sem_c814202d5e6a0edd6fed8bb5`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hardy Littlewood Residue Count](hardy-littlewood-residue-count.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.HardyLittlewoodPrimeTuple](../../../../../sources/v2/MathlibExt.md)

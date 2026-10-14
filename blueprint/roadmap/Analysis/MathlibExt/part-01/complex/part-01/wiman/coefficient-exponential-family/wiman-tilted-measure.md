@@ -14,6 +14,10 @@ The coefficient measure tilted at logarithmic radius `x`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Wiman Coefficient Measure](wiman-coefficient-measure.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.Wiman.CoefficientExponentialFamily](../../../../../../../../sources/v2/MathlibExt.md)

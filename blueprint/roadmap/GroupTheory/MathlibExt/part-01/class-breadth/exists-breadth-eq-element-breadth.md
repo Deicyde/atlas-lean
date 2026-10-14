@@ -13,7 +13,8 @@ The group breadth is attained at some element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Breadth](breadth.md)
+- [Element Breadth](element-breadth.md)
 
 ## Sources
 

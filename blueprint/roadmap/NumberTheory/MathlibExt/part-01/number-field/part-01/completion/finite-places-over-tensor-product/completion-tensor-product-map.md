@@ -12,7 +12,11 @@ Canonical product map into places lying over `v`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Places Over](../finite-places-over/places-over.md)
+
+## Proof depends on
+
+- [Completion Tensor Product Component](completion-tensor-product-component.md)
 
 ## Sources
 

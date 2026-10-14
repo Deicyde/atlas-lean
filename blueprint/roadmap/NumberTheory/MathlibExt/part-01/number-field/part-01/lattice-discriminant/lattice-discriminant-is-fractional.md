@@ -13,7 +13,11 @@ The lattice discriminant is fractional for lattices in a basis span.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice Discriminant](lattice-discriminant.md)
+
+## Proof depends on
+
+- [Lattice Discriminant le span singleton](lattice-discriminant-le-span-singleton.md)
 
 ## Sources
 

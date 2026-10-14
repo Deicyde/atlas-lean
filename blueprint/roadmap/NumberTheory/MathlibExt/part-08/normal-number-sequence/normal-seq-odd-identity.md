@@ -18,7 +18,11 @@ statement `jis_225330004269597626fa0967`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Normal Seq Fib](normal-seq-fib.md)
+
+## Proof depends on
+
+- [Normal Seq Fib add](normal-seq-fib-add.md)
 
 ## Sources
 

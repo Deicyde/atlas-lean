@@ -13,7 +13,7 @@ The coefficient is the finite sum over positive factors whose product is `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convolution](convolution.md)
 
 ## Sources
 

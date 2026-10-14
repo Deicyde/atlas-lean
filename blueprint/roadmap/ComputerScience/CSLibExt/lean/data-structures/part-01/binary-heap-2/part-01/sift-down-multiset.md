@@ -13,7 +13,11 @@ Sifting down preserves the represented multiset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sift Down](sift-down.md)
+
+## Proof depends on
+
+- [Sift Down perm](sift-down-perm.md)
 
 ## Sources
 

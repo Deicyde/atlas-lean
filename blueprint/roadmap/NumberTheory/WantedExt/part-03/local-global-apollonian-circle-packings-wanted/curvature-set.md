@@ -12,7 +12,13 @@ The curvature set of a primitive Apollonian circle packing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Primitive Apollonian Circle Packing](primitive-apollonian-circle-packing.md)
+
+## Proof depends on
+
+- [Transformation Group](transformation-group.md)
+- [Transformation Group Action](transformation-group-action.md)
+- [Integral Primitive Descartes Quadruple](integral-primitive-descartes-quadruple.md)
 
 ## Sources
 

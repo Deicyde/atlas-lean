@@ -14,7 +14,11 @@ Euclidean norm.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Rational](is-rational.md)
+
+## Proof depends on
+
+- [Chosen Basis](chosen-basis.md)
 
 ## Sources
 

@@ -17,6 +17,10 @@ all `k`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cameron Circular Order Group](circular-order-aut-subgroup-is-closed-an.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.Permutation.CameronSeparationGroup](../../../../../sources/v2/MathlibExt.md)

@@ -16,6 +16,32 @@ root edges belong to the original graph.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Edge Indexed Multigraph](edge-indexed-multigraph/part-01/edge-indexed-multigraph.md)
+- [Inc](edge-indexed-multigraph/part-01/inc.md)
+- [Indexed Walk](edge-indexed-multigraph/part-01/indexed-walk.md)
+- [Is Eulerian](edge-indexed-multigraph/part-01/is-eulerian.md)
+- [Is Trail](edge-indexed-multigraph/part-01/is-trail.md)
+- [Edges](edge-indexed-multigraph/part-01/edges.md)
+- [Edges cons](edge-indexed-multigraph/part-01/edges-cons.md)
+- [Edges to Walk](edge-indexed-multigraph/part-01/edges-to-walk.md)
+- [Length to Walk](edge-indexed-multigraph/part-01/length-to-walk.md)
+- [To Walk](edge-indexed-multigraph/part-01/to-walk.md)
+- [Degree](edge-indexed-multigraph/part-02/degree.md)
+- [Disjoint Sum](edge-indexed-multigraph/part-02/disjoint-sum.md)
+- [Disjoint Sum degree](edge-indexed-multigraph/part-02/disjoint-sum-degree.md)
+- [Even sum degree](edge-indexed-multigraph/part-02/even-sum-degree.md)
+- [Exists indexed Eulerian](edge-indexed-multigraph/part-02/exists-indexed-eulerian.md)
+- [Inc iff](edge-indexed-multigraph/part-01/inc-iff.md)
+- [Underlying](edge-indexed-multigraph/part-01/underlying.md)
+- [Underlying adj](edge-indexed-multigraph/part-01/underlying-adj.md)
+- [Contract Outside](../part-01/contraction/contract-outside-2.md)
+- [Card contract Outside lt](../part-01/contraction/card-contract-outside-lt.md)
+- [Contract Outside](../part-01/contraction/contract-outside.md)
+- [Contract Outside adj none](../part-01/contraction/contract-outside-adj-none.md)
+- [Contract Outside adj some](../part-01/contraction/contract-outside-adj-some.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.FleischnerStrong](../../../../../../sources/v2/MathlibExt.md)

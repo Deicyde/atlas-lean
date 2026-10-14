@@ -13,7 +13,11 @@ Multiplication closure, forward direction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Rough](is-rough.md)
+
+## Proof depends on
+
+- [Is Rough mul](is-rough-mul.md)
 
 ## Sources
 

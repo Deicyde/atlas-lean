@@ -13,7 +13,15 @@ Expansion of a class function in the irrep-character basis (Zimmerman Prop 4 set
 
 ## Depends on
 
-This node has no prerequisites.
+- [Irr](irr.md)
+- [Char Fun](char-fun.md)
+- [Is Class Fun](is-class-fun.md)
+
+## Proof depends on
+
+- [Iso Setoid](iso-setoid.md)
+- [Char Inner orth](char-inner-orth.md)
+- [Classfun eq zero of orth](classfun-eq-zero-of-orth.md)
 
 ## Sources
 

@@ -14,7 +14,13 @@ root of its characteristic polynomial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Real Root](../../../../../Algebra/MathlibExt/polynomial/real-rooted/max-real-root.md)
+
+## Proof depends on
+
+- [Charpoly is Real Rooted](charpoly-is-real-rooted.md)
+- [Coe max Real Root mem roots](../../../../../Algebra/MathlibExt/polynomial/real-rooted/coe-max-real-root-mem-roots.md)
+- [Root re le max Real Root](../../../../../Algebra/MathlibExt/polynomial/real-rooted/root-re-le-max-real-root.md)
 
 ## Sources
 

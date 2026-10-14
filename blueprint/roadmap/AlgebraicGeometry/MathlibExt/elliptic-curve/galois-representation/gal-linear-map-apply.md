@@ -13,7 +13,10 @@ The linear map acts pointwise as the point action.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gal Linear Map](gal-linear-map.md)
+- [Gal Point Hom](gal-point-hom.md)
+- [Gal Point Hom mem](gal-point-hom-mem.md)
+- [Torsion Pts](torsion-pts.md)
 
 ## Sources
 

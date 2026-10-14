@@ -13,7 +13,7 @@ Both lists agree on their first `lcp x y` elements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lcp](lcp.md)
 
 ## Sources
 

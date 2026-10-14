@@ -14,6 +14,10 @@ The prime exponents of a unit fractional ideal, as a finitely supported function
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Units Support Finset](units-support-finset.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DedekindDomain.FactorizationEquiv](../../../../../sources/v2/MathlibExt.md)

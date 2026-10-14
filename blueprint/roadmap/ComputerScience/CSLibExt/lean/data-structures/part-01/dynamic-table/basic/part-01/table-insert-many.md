@@ -12,7 +12,11 @@ Insert each payload in its saved array order using the sole insertion executor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](table.md)
+
+## Proof depends on
+
+- [Table Insert](table-insert.md)
 
 ## Sources
 

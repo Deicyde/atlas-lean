@@ -14,6 +14,11 @@ One bound for every `n`-dimensional convex body, not a minimum over bodies.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Covered By Interior Translates](covered-by-interior-translates.md)
+- [Is Convex Body](is-convex-body.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Convex.Covering](../../../../../sources/v2/MathlibExt.md)

@@ -14,6 +14,10 @@ The Boolean signature, with no zero-input AND or OR gate.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Boolean Gate](boolean-gate.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Circuit.Boolean](../../../../../sources/v2/CSLibExt.md)

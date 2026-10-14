@@ -14,7 +14,11 @@ Each block prefixes its successor
 
 ## Depends on
 
-This node has no prerequisites.
+- [Block](block.md)
+
+## Proof depends on
+
+- [Shift Word](shift-word.md)
 
 ## Sources
 

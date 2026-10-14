@@ -14,6 +14,10 @@ Four rapidly decreasing complex sample sequences indexed from `k₀`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rapidly Decreasing Samples](rapidly-decreasing-samples.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.CKMRVInterpolationWanted](../../../../../sources/v2/WantedExt.md)

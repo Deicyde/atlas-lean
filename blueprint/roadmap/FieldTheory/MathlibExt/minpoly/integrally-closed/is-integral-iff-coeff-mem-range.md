@@ -16,6 +16,10 @@ of its `K`-minimal polynomial lies in the range of `algebraMap R K`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Integral iff mem lifts](is-integral-iff-mem-lifts.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.FieldTheory.Minpoly.IntegrallyClosed](../../../../../sources/v2/MathlibExt.md)

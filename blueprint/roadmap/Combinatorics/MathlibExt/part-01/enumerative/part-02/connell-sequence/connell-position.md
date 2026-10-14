@@ -14,6 +14,10 @@ The row and zero-based column of sequence index `n` in the Connell triangle.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Connell Next](connell-next.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.ConnellSequence](../../../../../../../sources/v2/MathlibExt.md)

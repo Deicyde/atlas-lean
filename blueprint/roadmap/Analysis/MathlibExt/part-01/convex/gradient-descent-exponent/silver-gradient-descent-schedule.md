@@ -15,6 +15,10 @@ negative exponent at even t, as in the primary construction.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gradient Descent Silver Ratio](gradient-descent-silver-ratio.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Convex.GradientDescentExponent](../../../../../../sources/v2/MathlibExt.md)

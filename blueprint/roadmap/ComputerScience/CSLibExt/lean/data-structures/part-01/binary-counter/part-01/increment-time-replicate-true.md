@@ -13,7 +13,7 @@ All-one input realizes the worst-case cost of one flip per existing bit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Increment](increment.md)
 
 ## Sources
 

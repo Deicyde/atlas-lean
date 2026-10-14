@@ -16,7 +16,11 @@ is claimed (see the module documentation).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete Rebuild](delete-rebuild.md)
+
+## Proof depends on
+
+- [Delete Rebuild](delete-rebuild-2.md)
 
 ## Sources
 

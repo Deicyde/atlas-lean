@@ -13,7 +13,13 @@ every right-subtree key is above it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+
+## Proof depends on
+
+- [Entry](../part-01/entry.md)
+- [Key](../part-01/key.md)
+- [Compare Key](../part-01/compare-key.md)
 
 ## Sources
 

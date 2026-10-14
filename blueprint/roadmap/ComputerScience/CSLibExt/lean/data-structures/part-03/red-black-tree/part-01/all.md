@@ -13,7 +13,12 @@ lean: Cslib.Algorithms.Lean.RedBlackTree.All
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [All](../../../part-02/binary-search-tree/part-01/all.md)
+- [Erase](erase.md)
 
 ## Sources
 

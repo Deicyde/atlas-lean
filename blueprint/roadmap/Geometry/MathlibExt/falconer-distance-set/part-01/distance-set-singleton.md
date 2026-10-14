@@ -13,7 +13,7 @@ A singleton determines exactly the distance zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distance Set](distance-set.md)
 
 ## Sources
 

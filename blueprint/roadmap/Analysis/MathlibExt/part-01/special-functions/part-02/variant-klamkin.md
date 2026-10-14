@@ -22,6 +22,10 @@ specialization of Gauss's formula (Abramowitz-Stegun 15.1.20), then simplify by 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Sum ordinary Hypergeometric Coefficient klamkin](../part-01/gauss-hypergeometric-summation-klamkin/has-sum-ordinary-hypergeometric-coeffici.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.KlamkinVariant](../../../../../../sources/v2/MathlibExt.md)

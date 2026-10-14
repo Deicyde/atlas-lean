@@ -13,7 +13,7 @@ Derivative of `E1` under the integral sign.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E1](e1.md)
 
 ## Sources
 

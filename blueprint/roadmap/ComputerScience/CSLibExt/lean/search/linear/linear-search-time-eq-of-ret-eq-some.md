@@ -13,7 +13,12 @@ A successful search at index `i` performs exactly `i + 1` predicate evaluations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Search](linear-search.md)
+
+## Proof depends on
+
+- [Linear Search time cons](linear-search-time-cons.md)
+- [Ret linear Search](ret-linear-search.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The affine line with base point `y` and direction `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Space](space.md)
 
 ## Sources
 

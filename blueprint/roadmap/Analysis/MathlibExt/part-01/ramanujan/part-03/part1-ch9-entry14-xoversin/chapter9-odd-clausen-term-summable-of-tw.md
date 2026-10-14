@@ -15,6 +15,10 @@ The odd Clausen series is summable for `2 ≤ m`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter9 Odd Clausen Term norm bound](chapter9-odd-clausen-term-norm-bound.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch9Entry14Xoversin](../../../../../../../sources/v2/MathlibExt.md)

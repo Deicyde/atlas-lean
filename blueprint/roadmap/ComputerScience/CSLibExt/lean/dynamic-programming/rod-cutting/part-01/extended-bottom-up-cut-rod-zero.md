@@ -13,7 +13,7 @@ Empty input returns its zero revenue row, no cut entries and no candidate events
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extended Bottom Up Cut Rod](extended-bottom-up-cut-rod.md)
 
 ## Sources
 

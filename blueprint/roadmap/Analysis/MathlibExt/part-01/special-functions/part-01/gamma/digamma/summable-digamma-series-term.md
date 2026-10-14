@@ -13,7 +13,11 @@ The complex digamma series terms are summable for `1 < s.re`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Digamma Series Term](digamma-series-term.md)
+
+## Proof depends on
+
+- [Summable one div add nat succ sq](summable-one-div-add-nat-succ-sq.md)
 
 ## Sources
 

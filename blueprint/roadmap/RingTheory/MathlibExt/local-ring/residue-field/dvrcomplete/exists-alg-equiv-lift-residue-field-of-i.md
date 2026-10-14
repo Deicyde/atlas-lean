@@ -14,7 +14,11 @@ extensions lifts to an algebra equivalence, compatibly in both directions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residue Field Map Alg Hom](../dvr/residue-field-map-alg-hom.md)
+
+## Proof depends on
+
+- [Exists alg Equiv lift residue Field](../dvrbijective/exists-alg-equiv-lift-residue-field.md)
 
 ## Sources
 

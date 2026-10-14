@@ -14,7 +14,13 @@ membership; inherited from `BinarySearchTree`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [All](all.md)
+- [Mem](mem.md)
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [To Binary Tree](to-binary-tree.md)
 
 ## Sources
 

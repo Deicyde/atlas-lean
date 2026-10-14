@@ -13,7 +13,12 @@ A positive integral leading coefficient makes the actual Mahler measure at least
 
 ## Depends on
 
-This node has no prerequisites.
+- [Algebraic Mahler Measure](algebraic-mahler-measure.md)
+
+## Proof depends on
+
+- [Positive Primitive Int Minpoly](positive-primitive-int-minpoly.md)
+- [Positive Primitive Int Minpoly leading Coeff pos](positive-primitive-int-minpoly-leading-c.md)
 
 ## Sources
 

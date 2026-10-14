@@ -15,6 +15,10 @@ Every Taylor term is bounded by the supremal maximum term.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bdd Above range wiman Term](bdd-above-range-wiman-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.Wiman.MaximumTermAttained](../../../../../../../../sources/v2/MathlibExt.md)

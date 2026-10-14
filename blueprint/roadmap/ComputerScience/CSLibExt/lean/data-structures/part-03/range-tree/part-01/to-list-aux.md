@@ -13,7 +13,7 @@ Accumulator leaf traversal: `toListAux t acc = toList t ++ acc`, so
 
 ## Depends on
 
-This node has no prerequisites.
+- [Range Tree](range-tree.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The maximal prime gap below `x`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prime Gap](../../../MathlibExt/part-09/prime-gap.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem1138Wanted](../../../../../sources/v2/WantedExt.md)

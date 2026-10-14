@@ -13,7 +13,8 @@ The LCM of the parts of any partition is bounded by the Landau function.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parts LCM](parts-lcm.md)
+- [Landau Function](landau-function.md)
 
 ## Sources
 

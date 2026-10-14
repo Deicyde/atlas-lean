@@ -13,7 +13,7 @@ Every stored inverse slot lies within the current heap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Min Queue](../basic/indexed-min-queue.md)
 
 ## Sources
 

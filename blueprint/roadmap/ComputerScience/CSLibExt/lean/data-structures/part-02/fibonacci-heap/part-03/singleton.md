@@ -12,7 +12,16 @@ A one-element Fibonacci heap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Heap](../part-02/fibonacci-heap.md)
+
+## Proof depends on
+
+- [Valid](../part-01/valid-2.md)
+- [Min Root](../part-02/min-root.md)
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
+- [Valid](../part-01/valid.md)
+- [Singleton](../part-01/singleton.md)
+- [Valid singleton](../part-01/valid-singleton.md)
 
 ## Sources
 

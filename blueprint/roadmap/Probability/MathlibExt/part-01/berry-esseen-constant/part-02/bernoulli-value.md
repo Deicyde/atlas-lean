@@ -14,6 +14,10 @@ The optimal Bernoulli-subclass coefficient.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Bernoulli Admissible](is-bernoulli-admissible.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.BerryEsseenConstant](../../../../../../sources/v2/MathlibExt.md)

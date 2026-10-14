@@ -12,7 +12,11 @@ All ordered pairs of length-`n` binary strings.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary String Pair](binary-string-pair.md)
+
+## Proof depends on
+
+- [Binary String](binary-string.md)
 
 ## Sources
 

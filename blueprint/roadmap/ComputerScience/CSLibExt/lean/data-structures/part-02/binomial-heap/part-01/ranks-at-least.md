@@ -12,7 +12,11 @@ Every tree in the forest has at least the given rank.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Tree](binomial-tree.md)
+
+## Proof depends on
+
+- [Rank](rank.md)
 
 ## Sources
 

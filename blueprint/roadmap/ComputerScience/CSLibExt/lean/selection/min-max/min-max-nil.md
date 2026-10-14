@@ -13,7 +13,7 @@ Empty input performs no element comparisons.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Max](min-max.md)
 
 ## Sources
 

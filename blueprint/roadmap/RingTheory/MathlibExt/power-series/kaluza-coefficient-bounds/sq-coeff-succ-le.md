@@ -13,7 +13,7 @@ The log-convexity inequality `aₙ₊₁² ≤ aₙ aₙ₊₂`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Positive Log Convex Coefficients](has-positive-log-convex-coefficients.md)
 
 ## Sources
 

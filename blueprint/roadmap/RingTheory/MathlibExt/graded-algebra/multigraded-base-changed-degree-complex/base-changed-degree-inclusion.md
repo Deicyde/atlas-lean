@@ -12,7 +12,7 @@ Inclusion of the degree-`α` complex into the base-changed complex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Base Changed Degree Complex](base-changed-degree-complex.md)
 
 ## Sources
 

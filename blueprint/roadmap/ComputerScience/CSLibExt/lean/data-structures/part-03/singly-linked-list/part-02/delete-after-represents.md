@@ -14,7 +14,14 @@ represented list (a no-op at the tail); the header is unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../part-01/node.md)
+- [Represents](../part-01/represents.md)
+- [Delete After](delete-after.md)
+
+## Proof depends on
+
+- [Delete After frame](delete-after-frame.md)
+- [Delete After get](delete-after-get.md)
 
 ## Sources
 

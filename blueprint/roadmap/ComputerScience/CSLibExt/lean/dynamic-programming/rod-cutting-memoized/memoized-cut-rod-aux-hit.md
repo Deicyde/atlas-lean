@@ -13,7 +13,7 @@ A known cache entry returns immediately without touching any saved cell.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Memoized Cut Rod Aux](memoized-cut-rod-aux.md)
 
 ## Sources
 

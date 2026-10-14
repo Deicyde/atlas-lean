@@ -13,7 +13,8 @@ The maximum number of edge-disjoint s-t paths equals the minimum size of an s-t 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Edge Disjoint STPaths](is-edge-disjoint-stpaths.md)
+- [Is STEdge Cut](is-stedge-cut.md)
 
 ## Sources
 

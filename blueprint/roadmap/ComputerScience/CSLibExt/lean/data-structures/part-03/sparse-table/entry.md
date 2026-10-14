@@ -13,7 +13,7 @@ array lookups.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sparse Table](sparse-table.md)
 
 ## Sources
 

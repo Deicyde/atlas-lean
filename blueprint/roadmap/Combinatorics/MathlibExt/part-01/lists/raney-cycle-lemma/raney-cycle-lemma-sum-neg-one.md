@@ -28,6 +28,10 @@ The lower bound `hlower` is not needed; see `raney_cycle_lemma_sum_neg_one_gener
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Raney cycle lemma sum neg one general](raney-cycle-lemma-sum-neg-one-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Lists.RaneyCycleLemma](../../../../../../sources/v2/MathlibExt.md)

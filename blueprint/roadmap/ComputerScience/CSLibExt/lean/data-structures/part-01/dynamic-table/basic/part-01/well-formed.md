@@ -12,7 +12,7 @@ Exactly the compact prefix is occupied; payload equality is not required.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](table.md)
 
 ## Sources
 

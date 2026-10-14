@@ -15,6 +15,10 @@ FormalConjectures (absent from Mathlib).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Decision Problem](decision-problem.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.Complexity](../../../../sources/v2/MathlibExt.md)

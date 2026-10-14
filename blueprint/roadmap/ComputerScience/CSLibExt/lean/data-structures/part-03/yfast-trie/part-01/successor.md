@@ -13,7 +13,12 @@ scan its group for the first key above `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grouped YFast Trie](grouped-yfast-trie.md)
+
+## Proof depends on
+
+- [Find Group](find-group.md)
+- [Successor](../../xfast-trie/part-01/successor.md)
 
 ## Sources
 

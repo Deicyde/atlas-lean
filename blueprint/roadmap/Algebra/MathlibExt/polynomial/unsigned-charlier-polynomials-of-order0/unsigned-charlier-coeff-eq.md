@@ -13,7 +13,8 @@ General coefficient equality for the natural rows.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unsigned Charlier Coeff](unsigned-charlier-coeff.md)
+- [Unsigned Charlier Order0](unsigned-charlier-order0.md)
 
 ## Sources
 

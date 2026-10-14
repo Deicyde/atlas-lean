@@ -13,7 +13,8 @@ Bridge from `Sym2` colorings to `EdgeLabeling`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Proper Edge Coloring](is-proper-edge-coloring.md)
+- [Is Proper Sym2 Coloring](is-proper-sym2-coloring.md)
 
 ## Sources
 

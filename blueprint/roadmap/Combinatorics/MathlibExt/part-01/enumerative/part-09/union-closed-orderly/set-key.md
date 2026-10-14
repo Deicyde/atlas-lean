@@ -16,6 +16,10 @@ the paper's set order.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bin Rep](bin-rep.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.UnionClosedOrderly](../../../../../../../sources/v2/MathlibExt.md)

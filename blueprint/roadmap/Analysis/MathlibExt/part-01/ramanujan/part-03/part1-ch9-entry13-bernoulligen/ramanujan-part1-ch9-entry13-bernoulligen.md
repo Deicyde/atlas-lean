@@ -17,6 +17,11 @@ Proves `Wanted` entry `ramanujan_part1_ch9_entry13_bernoulligen`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter9 Clausen Term norm bound](chapter9-clausen-term-norm-bound.md)
+- [Chapter9 Clausen Term summable of two le](chapter9-clausen-term-summable-of-two-le.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch9Entry13Bernoulligen](../../../../../../../sources/v2/MathlibExt.md)

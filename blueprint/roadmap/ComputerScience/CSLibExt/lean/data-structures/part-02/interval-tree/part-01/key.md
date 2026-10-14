@@ -12,7 +12,11 @@ Deterministic BST key: low endpoint first, stable identifier second.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Entry](entry.md)
+
+## Proof depends on
+
+- [Interval](interval.md)
 
 ## Sources
 

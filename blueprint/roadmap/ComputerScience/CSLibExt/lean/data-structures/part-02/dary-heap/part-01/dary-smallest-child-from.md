@@ -15,6 +15,10 @@ a smallest valid child of `i`, if one exists.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dary Child](dary-child.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.DaryHeap](../../../../../../../../sources/v2/CSLibExt.md)

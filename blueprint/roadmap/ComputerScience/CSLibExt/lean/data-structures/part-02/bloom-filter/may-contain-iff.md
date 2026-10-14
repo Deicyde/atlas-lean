@@ -13,7 +13,8 @@ lean: Cslib.Algorithms.Lean.BloomFilter.mayContain_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bloom Filter](bloom-filter.md)
+- [May Contain](may-contain.md)
 
 ## Sources
 

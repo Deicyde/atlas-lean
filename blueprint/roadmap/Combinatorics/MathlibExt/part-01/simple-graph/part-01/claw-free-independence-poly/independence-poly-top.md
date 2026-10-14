@@ -15,6 +15,10 @@ The independence polynomial of the complete graph is `1 + (card V) * X`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Independence Poly coeff](independence-poly-coeff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.ClawFreeIndependencePoly](../../../../../../../sources/v2/MathlibExt.md)

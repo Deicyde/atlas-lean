@@ -13,7 +13,12 @@ Uniform bound for the specified pointer-assignment/NIL-test event model.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
+- [List Prepend](list-prepend.md)
+
+## Proof depends on
+
+- [List Prepend time](list-prepend-time.md)
 
 ## Sources
 

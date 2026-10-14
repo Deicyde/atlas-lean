@@ -14,7 +14,13 @@ Under linear bounds for `s.nu` and the remainders, the level-weight error sum is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Level Weights](level-weights.md)
+
+## Proof depends on
+
+- [Level Weights nu mul abs le](level-weights-nu-mul-abs-le.md)
+- [Level Weights support](level-weights-support.md)
+- [Level Y](level-y.md)
 
 ## Sources
 

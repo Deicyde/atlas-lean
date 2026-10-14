@@ -13,7 +13,7 @@ List colorability is monotone in the number of colors required in each list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is List Colorable](is-list-colorable.md)
 
 ## Sources
 

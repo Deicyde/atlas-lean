@@ -13,7 +13,7 @@ Integer `G9r` values are bounded by their `toNat` cast.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G9r](../part-01/g9r.md)
 
 ## Sources
 

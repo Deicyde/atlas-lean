@@ -15,7 +15,7 @@ enters only in the size homomorphism.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arakelov Divisor](arakelov-divisor.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ The Lucas bracket sequence with initial values zero and one and recurrence
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Parameters](lucas-parameters.md)
+
+## Proof depends on
+
+- [Lucas Bracket Aux](lucas-bracket-aux.md)
 
 ## Sources
 

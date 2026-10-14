@@ -12,7 +12,7 @@ Looks up a key in its hash-selected bucket.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hash Table](hash-table.md)
 
 ## Sources
 

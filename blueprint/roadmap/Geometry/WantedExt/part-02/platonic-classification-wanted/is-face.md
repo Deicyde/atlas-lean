@@ -12,7 +12,12 @@ A **face** of `P` is a nonempty exposed subset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convex Polytope](convex-polytope.md)
+- [E](e.md)
+
+## Proof depends on
+
+- [To Set](to-set.md)
 
 ## Sources
 

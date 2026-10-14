@@ -13,7 +13,12 @@ The result of a deletion from a B-tree is a B-tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Delete valid Root](delete-valid-root.md)
+- [Flatten delete](flatten-delete.md)
 
 ## Sources
 

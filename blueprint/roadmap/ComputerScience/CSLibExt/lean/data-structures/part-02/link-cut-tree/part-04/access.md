@@ -21,7 +21,14 @@ unchanged. On a vertex outside the forest this is the identity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](../part-03/state.md)
+
+## Proof depends on
+
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Find Tree](../part-01/find-tree.md)
+- [Path Edges](../part-02/path-edges.md)
+- [Root Path](../part-02/root-path.md)
 
 ## Sources
 

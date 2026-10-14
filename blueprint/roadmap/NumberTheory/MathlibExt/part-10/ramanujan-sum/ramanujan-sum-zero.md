@@ -13,7 +13,7 @@ The Ramanujan sum at zero is Euler's totient function.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ramanujan Sum](ramanujan-sum.md)
 
 ## Sources
 

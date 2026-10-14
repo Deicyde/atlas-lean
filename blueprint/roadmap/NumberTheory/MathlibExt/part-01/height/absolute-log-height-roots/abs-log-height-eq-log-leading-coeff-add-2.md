@@ -13,7 +13,11 @@ Element-level version assuming `x` is algebraic over `ℚ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Absolute](../primitive-int-minpoly.md)
+
+## Proof depends on
+
+- [Abs Log Height₁ eq log leading Coeff add sum log roots of is Integral](abs-log-height-eq-log-leading-coeff-add.md)
 
 ## Sources
 

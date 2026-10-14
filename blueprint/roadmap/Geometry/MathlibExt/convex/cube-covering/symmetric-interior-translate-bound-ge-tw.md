@@ -13,7 +13,14 @@ The centrally symmetric class has the same actual cube obstruction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniform Symmetric Interior Translate Bound](../covering/uniform-symmetric-interior-translate-bou.md)
+
+## Proof depends on
+
+- [Coordinate Cube](coordinate-cube.md)
+- [Coordinate Cube covering Count ge two pow](coordinate-cube-covering-count-ge-two-po.md)
+- [Coordinate Cube is Centrally Symmetric](coordinate-cube-is-centrally-symmetric.md)
+- [Coordinate Cube is Convex Body](coordinate-cube-is-convex-body.md)
 
 ## Sources
 

@@ -14,7 +14,14 @@ condition holds at `m1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Group Ambient](ray-group-ambient.md)
+
+## Proof depends on
+
+- [Ray Group Ambient le to Ambient Subgroup](ray-group-ambient-le-to-ambient-subgroup.md)
+- [Change Modulus](change-modulus.md)
+- [Change Modulus is Equivalent](change-modulus-is-equivalent.md)
+- [Coprime Fractional Ideals le of dvd](coprime-fractional-ideals-le-of-dvd.md)
 
 ## Sources
 

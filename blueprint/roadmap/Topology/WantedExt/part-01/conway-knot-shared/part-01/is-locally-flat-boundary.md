@@ -16,7 +16,13 @@ disk image onto the model half-plane in the half-space.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R3](r3.md)
+
+## Proof depends on
+
+- [Disk2](disk2.md)
+- [Model Half Plane2](model-half-plane2.md)
+- [Upper Half](upper-half.md)
 
 ## Sources
 

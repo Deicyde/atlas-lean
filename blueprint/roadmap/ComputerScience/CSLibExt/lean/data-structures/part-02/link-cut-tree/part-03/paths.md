@@ -17,7 +17,12 @@ change under `access`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Tree Paths](tree-paths.md)
 
 ## Sources
 

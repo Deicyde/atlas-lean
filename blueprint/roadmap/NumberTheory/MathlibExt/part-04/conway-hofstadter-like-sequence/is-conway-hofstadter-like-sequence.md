@@ -18,6 +18,10 @@ For `n ≥ 3`, the two recursive indices add to `n`. The helper
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Conway Hofstadter Residue](conway-hofstadter-residue.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ConwayHofstadterLikeSequence](../../../../../sources/v2/MathlibExt.md)

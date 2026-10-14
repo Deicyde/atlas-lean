@@ -13,7 +13,12 @@ Containment in an arbitrary intermediate field is tested on qualifiers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Finite Unramified](is-finite-unramified.md)
+- [Maximal Unramified Subextension](maximal-unramified-subextension.md)
+
+## Proof depends on
+
+- [Le maximal Unramified Subextension](le-maximal-unramified-subextension.md)
 
 ## Sources
 

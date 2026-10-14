@@ -18,6 +18,10 @@ so `Set.ncard` of the range counts distinct factors rather than occurrences.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Factor Set](../factor/factor-set.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.WordFactorComplexity](../../../../../../sources/v2/MathlibExt.md)

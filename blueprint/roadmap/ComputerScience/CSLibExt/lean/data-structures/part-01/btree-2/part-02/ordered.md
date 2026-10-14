@@ -13,7 +13,13 @@ A B-tree is ordered.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](../part-01/btree.md)
+- [Is BTree](is-btree.md)
+- [Ordered](../part-01/ordered.md)
+
+## Proof depends on
+
+- [Valid Root](../part-01/valid-root.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ The modular-power equality and least-residue range for positive exponents.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Exponentiation](modular-exponentiation.md)
+
+## Proof depends on
+
+- [Modular Exponentiation correct](modular-exponentiation-correct.md)
+- [Modular Exponentiation lt](modular-exponentiation-lt.md)
 
 ## Sources
 

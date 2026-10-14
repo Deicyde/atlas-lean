@@ -12,7 +12,7 @@ Whether `x` is stored in the tree, checked in its own cluster.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](van-emde-boas.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Interior membership is strict in every coordinate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coordinate Cube](coordinate-cube.md)
 
 ## Sources
 

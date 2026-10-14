@@ -16,7 +16,12 @@ Retained API: the `a = 1` specialization of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Supported](../ray-group/finite-supported.md)
+
+## Proof depends on
+
+- [Exists ne zero with target and sign](exists-ne-zero-with-target-and-sign.md)
+- [Finite Exponent](../ray-group/finite-exponent.md)
 
 ## Sources
 

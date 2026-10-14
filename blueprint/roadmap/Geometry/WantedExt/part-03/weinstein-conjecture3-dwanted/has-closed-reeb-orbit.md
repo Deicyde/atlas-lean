@@ -14,6 +14,10 @@ A closed Reeb orbit: a nonconstant periodic integral curve.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Integral Curve](is-integral-curve.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.WeinsteinConjecture3DWanted](../../../../../sources/v2/WantedExt.md)

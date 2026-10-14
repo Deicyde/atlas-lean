@@ -14,7 +14,7 @@ Away from `s = 0` and `s = 1`, `ξ` agrees with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Riemann Xi](riemann-xi.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ Increasing an admissible operation exponent preserves every actual circuit witne
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Rectangular Circuit Exponent](has-rectangular-circuit-exponent.md)
+
+## Proof depends on
+
+- [Arithmetic Circuit](../../arithmetic-circuit/arithmetic-circuit.md)
+- [Is Matrix Multiplication](../../matrix-multiplication/is-matrix-multiplication.md)
+- [Matrix Arithmetic Circuit](../../matrix-multiplication/matrix-arithmetic-circuit.md)
+- [Rectangular Inner Dimension](../../matrix-multiplication-exponent/part-03/rectangular-inner-dimension.md)
 
 ## Sources
 

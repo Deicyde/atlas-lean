@@ -12,7 +12,13 @@ Every stored occurrence agrees with its identifier-index entry.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Interval Tree](indexed-interval-tree.md)
+
+## Proof depends on
+
+- [Entry](../part-01/entry.md)
+- [Interval](../part-01/interval.md)
+- [Tree](../part-01/tree.md)
 
 ## Sources
 

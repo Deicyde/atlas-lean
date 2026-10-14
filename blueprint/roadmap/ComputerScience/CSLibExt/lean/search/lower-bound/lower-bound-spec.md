@@ -13,7 +13,7 @@ On a sorted array, the returned index separates values below `key` from values a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Bound](lower-bound.md)
 
 ## Sources
 

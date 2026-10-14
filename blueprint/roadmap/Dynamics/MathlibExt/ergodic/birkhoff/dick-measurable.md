@@ -13,7 +13,7 @@ The maximal divergence set is measurable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dick Set](dick-set.md)
 
 ## Sources
 

@@ -18,6 +18,10 @@ Concept `jis_sem_f66a64ccd0402d409b050315`, source equation `e:JacobiStirling1` 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Jacobi Stirling First Poly](../jacobi-stirling-first-kind/jacobi-stirling-first-poly.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.LegendreStirlingFirstKind](../../../../../../../sources/v2/MathlibExt.md)

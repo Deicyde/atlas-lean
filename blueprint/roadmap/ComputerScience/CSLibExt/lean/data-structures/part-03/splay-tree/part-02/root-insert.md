@@ -13,7 +13,13 @@ The inserted key is the root of the result.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Insert](../part-01/insert.md)
+- [Root?](../part-01/root.md)
+
+## Proof depends on
+
+- [Splay](../part-01/splay.md)
+- [Split](../part-01/split.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ Arithmetic characterization of consecutive Farey fractions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Farey Neighbor](is-farey-neighbor.md)
+- [Farey Finset](farey-finset.md)
+
+## Proof depends on
+
+- [Det eq one](det-eq-one.md)
+- [Det one and sum gt imp neighbor](det-one-and-sum-gt-imp-neighbor.md)
+- [Neighbor den sum gt](neighbor-den-sum-gt.md)
 
 ## Sources
 

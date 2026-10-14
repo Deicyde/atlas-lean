@@ -12,7 +12,7 @@ We say that a hypergraph `𝓗` is linear if any two distinct edges share at mos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypergraph](hypergraph.md)
 
 ## Sources
 

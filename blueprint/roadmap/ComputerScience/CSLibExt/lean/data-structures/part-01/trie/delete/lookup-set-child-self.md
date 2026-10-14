@@ -14,7 +14,8 @@ when the child was pruned as an empty node.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Empty Node](is-empty-node.md)
+- [Set Child](set-child.md)
 
 ## Sources
 

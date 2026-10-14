@@ -15,6 +15,11 @@ Below, we define the set of multiple zeta values (MZVs) `ζ_A (s_1,..., s_r)` of
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ζ A](a.md)
+- [𝔖 w](w.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ZagierHoffmanPositiveCharWanted](../../../../../sources/v2/WantedExt.md)

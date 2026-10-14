@@ -13,7 +13,11 @@ lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry30Secondordereulerian.tsum_cha
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter5 Entry30 Squarefree Term](../part-01/chapter5-entry30-squarefree-term.md)
+
+## Proof depends on
+
+- [Chapter5 Entry30 Squarefree Term def](../part-01/chapter5-entry30-squarefree-term-def.md)
 
 ## Sources
 

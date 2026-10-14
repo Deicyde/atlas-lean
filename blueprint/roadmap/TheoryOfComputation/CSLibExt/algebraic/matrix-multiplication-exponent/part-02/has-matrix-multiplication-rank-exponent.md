@@ -15,6 +15,12 @@ coefficient and threshold uniform in `n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Trilinear Rank At Most](../part-01/has-trilinear-rank-at-most.md)
+- [Matrix Coordinate](../part-01/matrix-coordinate.md)
+- [Square Matrix Multiplication Tensor](square-matrix-multiplication-tensor.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Complexity.Algebraic.MatrixMultiplicationExponent](../../../../../../sources/v2/CSLibExt.md)

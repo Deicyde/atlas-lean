@@ -13,7 +13,7 @@ Squared distance is symmetric.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dist Sq](dist-sq.md)
 
 ## Sources
 

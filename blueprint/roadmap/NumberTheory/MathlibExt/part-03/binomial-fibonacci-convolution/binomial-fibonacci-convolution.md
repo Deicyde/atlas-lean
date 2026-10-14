@@ -16,6 +16,11 @@ binomial transform of `i ↦ fib (2n - i + k)` recovers `fib k`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Choose succ int](choose-succ-int.md)
+- [Fib conv step](fib-conv-step.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.BinomialFibonacciConvolution](../../../../../sources/v2/MathlibExt.md)

@@ -16,7 +16,11 @@ statement; the hypothesis `0 < k` is therefore omitted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jordan Totient](jordan-totient.md)
+
+## Proof depends on
+
+- [Jordan Totient mul prod prime Factors pow](jordan-totient-mul-prod-prime-factors-po.md)
 
 ## Sources
 

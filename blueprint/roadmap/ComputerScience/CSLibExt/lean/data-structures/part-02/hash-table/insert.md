@@ -12,7 +12,7 @@ Inserts a new binding or replaces the existing binding for the key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hash Table](hash-table.md)
 
 ## Sources
 

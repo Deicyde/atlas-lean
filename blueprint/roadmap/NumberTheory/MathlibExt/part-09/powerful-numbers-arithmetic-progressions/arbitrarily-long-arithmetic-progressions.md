@@ -15,7 +15,7 @@ source-shaped form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KFull](../../part-07/kfull/is-kfull.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ For a positive exponent, the raw result is the least residue of `a ^ b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Exponentiation](modular-exponentiation.md)
+
+## Proof depends on
+
+- [Modular Exponentiation ret is reduced](modular-exponentiation-ret-is-reduced.md)
+- [Modular Exponentiation ret mod](modular-exponentiation-ret-mod.md)
 
 ## Sources
 

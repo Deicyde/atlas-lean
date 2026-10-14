@@ -16,6 +16,10 @@ ramification index and inertia degree.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Finite Lies Over Inertia Degree](inertia-deg-adic-completion-integers-map.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.Completion.FiniteLiesOverLocalDegree](../../../../../../../sources/v2/MathlibExt.md)

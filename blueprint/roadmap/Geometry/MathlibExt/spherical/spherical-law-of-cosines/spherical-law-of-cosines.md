@@ -17,6 +17,10 @@ satisfies `cos c = cos a * cos b + sin a * sin b * cos C`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Spherical law of cosines general](spherical-law-of-cosines-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Spherical.SphericalLawOfCosines](../../../../../sources/v2/MathlibExt.md)

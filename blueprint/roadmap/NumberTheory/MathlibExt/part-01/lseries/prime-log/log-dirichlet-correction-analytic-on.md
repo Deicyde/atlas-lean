@@ -13,7 +13,11 @@ The correction series is analytic on `Re s > 1 / 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log Dirichlet Correction](log-dirichlet-correction.md)
+
+## Proof depends on
+
+- [Log Dirichlet Correction Term](log-dirichlet-correction-term.md)
 
 ## Sources
 

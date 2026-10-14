@@ -12,7 +12,12 @@ Nonempty convex covers of every nonempty convex planar unit-diameter set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
+
+## Proof depends on
+
+- [Covers Congruent Copy](covers-congruent-copy.md)
+- [Is Unit Diameter Convex Set](is-unit-diameter-convex-set.md)
 
 ## Sources
 

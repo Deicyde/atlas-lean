@@ -18,7 +18,8 @@ of the resulting orbit signatures.
 
 ## Depends on
 
-This node has no prerequisites.
+- [K](k.md)
+- [PGL](pgl.md)
 
 ## Sources
 

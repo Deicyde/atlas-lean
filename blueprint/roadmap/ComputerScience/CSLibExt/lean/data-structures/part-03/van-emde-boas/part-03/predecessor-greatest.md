@@ -13,7 +13,10 @@ In a valid tree, no member below `x` follows the returned predecessor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](../part-01/van-emde-boas.md)
+- [Valid](../part-01/valid.md)
+- [Member](../part-01/member.md)
+- [Predecessor](../part-02/predecessor.md)
 
 ## Sources
 

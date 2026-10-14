@@ -12,7 +12,7 @@ Height of the underlying full binary tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Weight Tree](huffman-weight-tree.md)
 
 ## Sources
 

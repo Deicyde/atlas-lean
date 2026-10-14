@@ -15,6 +15,10 @@ Quintuple nonexistence theorem from OPG-16555
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Diophantine Tuple](is-diophantine-tuple.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.DiophantineQuintupleConjectureQuestion1Wanted](../../../../../sources/v2/WantedExt.md)

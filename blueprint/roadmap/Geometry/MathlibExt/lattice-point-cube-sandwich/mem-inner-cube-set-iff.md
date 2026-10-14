@@ -13,7 +13,8 @@ Unfolding lemma for `innerCubeSet`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inner Cube Set](inner-cube-set.md)
+- [Integer Unit Cube](integer-unit-cube.md)
 
 ## Sources
 

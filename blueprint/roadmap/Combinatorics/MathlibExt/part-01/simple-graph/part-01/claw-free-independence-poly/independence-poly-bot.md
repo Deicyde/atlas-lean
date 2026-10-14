@@ -15,6 +15,10 @@ The independence polynomial of the empty graph is `(1 + X) ^ card V`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Independence Poly coeff](independence-poly-coeff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.ClawFreeIndependencePoly](../../../../../../../sources/v2/MathlibExt.md)

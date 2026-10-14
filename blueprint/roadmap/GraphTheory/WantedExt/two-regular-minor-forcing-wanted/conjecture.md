@@ -15,6 +15,10 @@ contains every 2-regular graph on `t` vertices as a minor.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Minor](has-minor.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.TwoRegularMinorForcingWanted](../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,11 @@ Finite Riesz mean `R_σ(Λ) = ∑_{E_j < Λ} (Λ - E_j)^σ` via `Real.rpow`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonnegative Discrete Spectrum](nonnegative-discrete-spectrum.md)
+
+## Proof depends on
+
+- [Sublevel Finset](sublevel-finset.md)
 
 ## Sources
 

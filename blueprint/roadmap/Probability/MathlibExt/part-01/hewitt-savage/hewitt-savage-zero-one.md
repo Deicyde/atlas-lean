@@ -22,6 +22,10 @@ It follows from `hewitt_savage_zero_one_general`; the instances `[PolishSpace S]
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hewitt savage zero one general](hewitt-savage-zero-one-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.HewittSavage](../../../../../sources/v2/MathlibExt.md)

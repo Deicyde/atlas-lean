@@ -14,7 +14,7 @@ the left has `a`-coordinate at most `s` and every point on the right has
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kd Tree](kd-tree.md)
 
 ## Sources
 

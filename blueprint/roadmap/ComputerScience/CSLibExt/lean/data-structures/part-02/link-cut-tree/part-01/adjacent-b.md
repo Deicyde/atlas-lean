@@ -14,7 +14,11 @@ Computable adjacency test: `adjacentB a b t = true` exactly when
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+
+## Proof depends on
+
+- [Root](../../euler-tour-tree/part-01/root.md)
 
 ## Sources
 

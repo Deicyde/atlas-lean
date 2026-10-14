@@ -17,6 +17,10 @@ Proves `Wanted` entry `ramanujan_part1_ch2_entry1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ramanujan part1 ch2 entry1 general](ramanujan-part1-ch2-entry1-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch2Entry1](../../../../../../../sources/v2/MathlibExt.md)

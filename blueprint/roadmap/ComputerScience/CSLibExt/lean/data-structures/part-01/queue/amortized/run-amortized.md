@@ -13,7 +13,16 @@ Potential changes telescope over a sequence of queue operations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Operation](operation.md)
+- [Potential](potential.md)
+- [Run](run.md)
+- [Total Charge](total-charge.md)
+
+## Proof depends on
+
+- [Charge](charge.md)
+- [Step](step.md)
+- [Step amortized](step-amortized.md)
 
 ## Sources
 

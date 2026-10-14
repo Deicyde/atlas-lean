@@ -15,7 +15,8 @@ bound on every induced finset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect](is-perfect.md)
+- [Perf Ineq](perf-ineq.md)
 
 ## Sources
 

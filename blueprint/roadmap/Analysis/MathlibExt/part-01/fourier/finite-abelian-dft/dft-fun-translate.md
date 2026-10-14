@@ -15,7 +15,7 @@ Proof: reindex the finite sum by `x ↦ x + t` and use character additivity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dft Fun](dft-fun.md)
 
 ## Sources
 

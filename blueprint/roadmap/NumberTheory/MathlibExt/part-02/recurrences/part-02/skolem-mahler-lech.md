@@ -23,6 +23,11 @@ An embedding theorem for fields, Bull. Austral. Math. Soc. 14 (1976), 193–198.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Strassmann](../../../part-01/padics/strassmann.md)
+- [Cassels Embedding](../../../part-01/padics/exists-injective-ring-hom-closure-padic.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Recurrences.SkolemMahlerLech](../../../../../../sources/v2/MathlibExt.md)

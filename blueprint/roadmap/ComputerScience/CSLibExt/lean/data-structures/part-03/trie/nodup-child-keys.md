@@ -13,7 +13,8 @@ A valid node has no duplicate child keys.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trie](trie.md)
+- [Valid](valid.md)
 
 ## Sources
 

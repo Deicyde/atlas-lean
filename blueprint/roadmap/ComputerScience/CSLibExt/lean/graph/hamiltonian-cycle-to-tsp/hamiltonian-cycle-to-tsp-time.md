@@ -13,7 +13,7 @@ The same execution charges one read and one write for every supplied bit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hamiltonian Cycle To Tsp](hamiltonian-cycle-to-tsp.md)
 
 ## Sources
 

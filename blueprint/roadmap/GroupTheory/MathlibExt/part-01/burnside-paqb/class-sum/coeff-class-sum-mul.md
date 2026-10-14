@@ -13,7 +13,8 @@ The product of class sums, evaluated at `u`, counts factorizations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Class Sum](class-sum.md)
+- [Struct Const](struct-const.md)
 
 ## Sources
 

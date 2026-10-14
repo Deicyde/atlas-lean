@@ -14,7 +14,13 @@ sums at every index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build](build.md)
+- [Prefix Sum](prefix-sum.md)
+
+## Proof depends on
+
+- [Prefix Sum eq take sum](prefix-sum-eq-take-sum.md)
+- [Valid build](valid-build.md)
 
 ## Sources
 

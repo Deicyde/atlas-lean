@@ -13,7 +13,7 @@ Any common coefficient is automatically nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible](is-admissible.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ The integrated arcsine series is continuous on the closed interval `[-1, 1]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arcsin Integral Series](arcsin-integral-series.md)
+
+## Proof depends on
+
+- [Central Binomial Coeff](central-binomial-coeff.md)
+- [Norm arcsin Integral Series term le](norm-arcsin-integral-series-term-le.md)
 
 ## Sources
 

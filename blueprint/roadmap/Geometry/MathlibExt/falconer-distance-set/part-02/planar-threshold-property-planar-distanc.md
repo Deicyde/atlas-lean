@@ -13,7 +13,13 @@ Strict dimension hypotheses make the infimum itself a sufficient threshold.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Planar Distance Threshold](../part-01/planar-distance-threshold.md)
+- [Planar Threshold Property](../part-01/planar-threshold-property.md)
+
+## Proof depends on
+
+- [Admissible Planar Threshold](../part-01/admissible-planar-threshold.md)
+- [Distance Set](../part-01/distance-set.md)
 
 ## Sources
 

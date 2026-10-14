@@ -13,7 +13,15 @@ Any sequence of `n` operations costs at most its initial potential plus `2 * n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Operation](operation.md)
+- [Potential](potential.md)
+- [Run](run.md)
+
+## Proof depends on
+
+- [Charge](charge.md)
+- [Run amortized](run-amortized.md)
+- [Total Charge](total-charge.md)
 
 ## Sources
 

@@ -19,7 +19,9 @@ admissibility cutoff, and the central Gaussian term and decaying tails are norma
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Hayman Admissible](is-hayman-admissible.md)
+- [Hayman Auxiliary A](hayman-auxiliary-a.md)
+- [Hayman Auxiliary B](hayman-auxiliary-b.md)
 
 ## Sources
 

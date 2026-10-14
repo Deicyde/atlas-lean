@@ -18,6 +18,10 @@ the quotient equivalence backed by lines 2607--2647.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ray Class To Class Group surjective](ray-class-to-class-group-surjective.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.ExactSequence](../../../../../../../../../sources/v2/MathlibExt.md)

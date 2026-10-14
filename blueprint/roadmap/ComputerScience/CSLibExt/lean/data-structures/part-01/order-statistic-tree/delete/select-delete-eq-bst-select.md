@@ -13,7 +13,11 @@ Cached select after deletion refines the traversal select of the erased result.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Cache Correct delete](cache-correct-delete.md)
 
 ## Sources
 

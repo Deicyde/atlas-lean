@@ -15,6 +15,11 @@ lean: AdjoinRoot.isLocalRing_of_isEisensteinAt
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Maximal span root](is-maximal-span-root.md)
+- [Root mem of is Maximal](root-mem-of-is-maximal.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Polynomial.Eisenstein.AdjoinRoot](../../../../../../sources/v2/MathlibExt.md)

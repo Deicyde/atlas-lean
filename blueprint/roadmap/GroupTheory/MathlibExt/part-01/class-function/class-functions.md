@@ -14,6 +14,10 @@ Class functions as a submodule of all functions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Class Function](is-class-function.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.ClassFunction](../../../../../sources/v2/MathlibExt.md)

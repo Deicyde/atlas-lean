@@ -13,7 +13,16 @@ Lookup completeness phrased against the list abstraction `entries`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](perfect-hashing.md)
+- [Valid](valid.md)
+- [Entries](entries.md)
+- [Lookup](lookup.md)
+
+## Proof depends on
+
+- [Stored](stored.md)
+- [Lookup eq some of stored](lookup-eq-some-of-stored.md)
+- [Mem entries iff](mem-entries-iff.md)
 
 ## Sources
 

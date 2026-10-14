@@ -13,7 +13,12 @@ First-step computation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Traj](traj.md)
+
+## Proof depends on
+
+- [Traj succ of ne zero](traj-succ-of-ne-zero.md)
+- [Traj zero](traj-zero.md)
 
 ## Sources
 

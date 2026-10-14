@@ -14,6 +14,10 @@ The conditional supremum, without an implicit finiteness assumption.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Conditional Point Values](conditional-point-values.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Fourier.TorusSobolev.Basic](../../../../../../../sources/v2/MathlibExt.md)

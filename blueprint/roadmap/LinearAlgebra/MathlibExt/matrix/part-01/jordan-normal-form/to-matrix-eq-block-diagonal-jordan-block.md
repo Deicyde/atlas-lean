@@ -13,7 +13,7 @@ The matrix of a basis partitioned into Jordan chains is block diagonal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jordan Block](jordan-block.md)
 
 ## Sources
 

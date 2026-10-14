@@ -16,6 +16,10 @@ over `Metric.ball 0 r`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Spherical Density](spherical-density.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HaymanSphericalAreaRatioWanted](../../../../../sources/v2/WantedExt.md)

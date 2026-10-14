@@ -16,7 +16,8 @@ three quarters of the weight of the node. This is the classical
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balanced](balanced.md)
+- [Weight](weight.md)
 
 ## Sources
 

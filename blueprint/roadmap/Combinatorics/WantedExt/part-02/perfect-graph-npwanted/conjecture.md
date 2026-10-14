@@ -17,6 +17,10 @@ Cites [AIM-COMBINATORICS-0270] Source item 4, notes[269], Section A.4, Contribut
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Perfect Graph Problem](perfect-graph-problem.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.PerfectGraphNPWanted](../../../../../sources/v2/WantedExt.md)

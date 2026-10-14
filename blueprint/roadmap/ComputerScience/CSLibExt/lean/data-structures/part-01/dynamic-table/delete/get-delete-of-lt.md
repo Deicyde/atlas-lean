@@ -13,7 +13,15 @@ Lookup below the deleted position is unchanged by deletion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](../basic/part-01/table.md)
+- [Well Formed](../basic/part-01/well-formed.md)
+- [Get?](get.md)
+- [Table Delete](table-delete.md)
+
+## Proof depends on
+
+- [Table Delete num](table-delete-num.md)
+- [Table Delete slots](table-delete-slots.md)
 
 ## Sources
 

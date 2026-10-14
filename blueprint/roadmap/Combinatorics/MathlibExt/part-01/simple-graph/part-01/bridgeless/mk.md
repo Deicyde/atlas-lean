@@ -13,7 +13,7 @@ Constructor for `IsBridgeless` from pointwise non-bridge data.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bridgeless](is-bridgeless.md)
 
 ## Sources
 

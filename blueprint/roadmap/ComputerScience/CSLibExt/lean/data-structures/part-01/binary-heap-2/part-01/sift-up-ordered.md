@@ -14,7 +14,14 @@ the local heap-order invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heap Ordered](heap-ordered.md)
+- [Sift Up Ready](sift-up-ready.md)
+- [Sift Up](sift-up.md)
+
+## Proof depends on
+
+- [Heap Parent](heap-parent.md)
+- [Heap Parent lt size](heap-parent-lt-size.md)
 
 ## Sources
 

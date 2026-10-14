@@ -12,7 +12,8 @@ Priorities represented by a work forest.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Priority](../../huffman/part-02/huffman-priority.md)
+- [Huffman Work Item](../../huffman/part-02/huffman-work-item.md)
 
 ## Sources
 

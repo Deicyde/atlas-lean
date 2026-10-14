@@ -14,6 +14,10 @@ Iso-classes of simple finite-dimensional complex representations.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Iso Setoid](iso-setoid.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.CharacterOrthogonality](../../../../../../../sources/v2/MathlibExt.md)

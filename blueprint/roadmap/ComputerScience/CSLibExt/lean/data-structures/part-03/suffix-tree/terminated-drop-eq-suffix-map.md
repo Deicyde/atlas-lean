@@ -13,7 +13,8 @@ Terminated suffixes are the `SuffixArray.suffix` suffixes, tagged and terminated
 
 ## Depends on
 
-This node has no prerequisites.
+- [Suffix](../suffix-array/suffix.md)
+- [Terminated](terminated.md)
 
 ## Sources
 

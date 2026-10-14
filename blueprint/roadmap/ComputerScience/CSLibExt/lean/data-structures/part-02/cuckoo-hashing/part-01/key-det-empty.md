@@ -13,7 +13,12 @@ No key is stored with two values in the empty table, vacuously.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Key Det](key-det.md)
+- [Empty](empty.md)
+
+## Proof depends on
+
+- [Stored](stored.md)
 
 ## Sources
 

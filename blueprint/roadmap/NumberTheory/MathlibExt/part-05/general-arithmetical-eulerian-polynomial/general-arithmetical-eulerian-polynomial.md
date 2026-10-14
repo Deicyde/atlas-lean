@@ -15,6 +15,10 @@ The general arithmetical Eulerian polynomial
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [General Arithmetical Eulerian Number](general-arithmetical-eulerian-number.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.GeneralArithmeticalEulerianPolynomial](../../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,10 @@ returns the corresponding Betti number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraded Base Change](../multigraded-betti/multigraded-base-change.md)
+- [Multigraded Free Resolution](../multigraded-free-resolution/multigraded-free-resolution.md)
+- [Multigraded Betti Number](../multigraded-betti/multigraded-betti-number.md)
+- [Multigraded Poincare Coefficients](multigraded-poincare-coefficients.md)
 
 ## Sources
 

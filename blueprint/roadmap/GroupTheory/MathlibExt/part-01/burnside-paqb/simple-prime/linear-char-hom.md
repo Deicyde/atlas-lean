@@ -14,6 +14,10 @@ The scalar character of a degree-1 representation, as a hom to units.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eq smul one of finrank one](eq-smul-one-of-finrank-one.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.SimplePrime](../../../../../../sources/v2/MathlibExt.md)

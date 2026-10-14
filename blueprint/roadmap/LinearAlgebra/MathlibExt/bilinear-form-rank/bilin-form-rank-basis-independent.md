@@ -16,7 +16,12 @@ multiplication inequalities give both rank inequalities, hence equality.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bilin Form Rank](bilin-form-rank.md)
+
+## Proof depends on
+
+- [Rank to Matrix eq rank to Matrix](rank-to-matrix-eq-rank-to-matrix.md)
+- [Bilin Form Rank eq matrix rank](bilin-form-rank-eq-matrix-rank.md)
 
 ## Sources
 

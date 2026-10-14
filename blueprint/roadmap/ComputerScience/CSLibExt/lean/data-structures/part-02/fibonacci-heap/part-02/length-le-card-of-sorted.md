@@ -14,7 +14,16 @@ every degree is smaller than the total count.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sorted Degrees](sorted-degrees.md)
+- [Valid](../part-01/valid-2.md)
+- [Elements](../part-01/elements-2.md)
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
+
+## Proof depends on
+
+- [Degree lt card](../part-01/degree-lt-card.md)
+- [Degree](../part-01/degree.md)
+- [Elements](../part-01/elements.md)
 
 ## Sources
 

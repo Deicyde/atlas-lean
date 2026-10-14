@@ -13,7 +13,7 @@ Every cyclic label lies within the prime-labeling range.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cyclic Label](cyclic-label.md)
 
 ## Sources
 

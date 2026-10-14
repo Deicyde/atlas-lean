@@ -16,7 +16,13 @@ corrected ATLAS N261 filtered-trace route, not a source theorem.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Ideal Graded Piece](../maximal-ideal-graded-piece/maximal-ideal-graded-piece.md)
+- [Residue Field Mul Maximal Ideal Graded Piece](residue-field-mul-maximal-ideal-graded-p.md)
+
+## Proof depends on
+
+- [Residue Field Linear Equiv Maximal Ideal Graded Piece](../maximal-ideal-graded-piece/residue-field-linear-equiv-maximal-ideal.md)
+- [Residue Field Linear Equiv Maximal Ideal Graded Piece conj lmul](residue-field-linear-equiv-maximal-ideal.md)
 
 ## Sources
 

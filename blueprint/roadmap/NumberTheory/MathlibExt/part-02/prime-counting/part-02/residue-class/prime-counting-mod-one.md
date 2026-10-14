@@ -14,7 +14,7 @@ reduces to the ordinary prime-counting function.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Counting Mod](prime-counting-mod.md)
 
 ## Sources
 

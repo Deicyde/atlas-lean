@@ -15,7 +15,7 @@ non-root valid tree of the same height.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](btree.md)
 
 ## Sources
 

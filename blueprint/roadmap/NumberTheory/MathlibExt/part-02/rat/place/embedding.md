@@ -15,7 +15,10 @@ At infinity this is `Rat.castHom ℝ`; at a finite prime it is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Place](place.md)
+- [Completed Field](completed-field.md)
+- [Completed Field Bundle](completed-field-bundle.md)
+- [Bundle](bundle.md)
 
 ## Sources
 

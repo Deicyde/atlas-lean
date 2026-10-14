@@ -13,7 +13,8 @@ The divisor sum of the level weights diagonalizes to the normalized `y`-coeffici
 
 ## Depends on
 
-This node has no prerequisites.
+- [Level Weights](level-weights.md)
+- [Level Y](level-y.md)
 
 ## Sources
 

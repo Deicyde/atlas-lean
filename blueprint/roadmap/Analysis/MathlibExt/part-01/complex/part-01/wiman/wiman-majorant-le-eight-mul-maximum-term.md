@@ -13,7 +13,15 @@ The corrected Rosenbloom concentration estimate, including the mandatory additiv
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Growth](coefficient-exponential-family/wiman-growth.md)
+
+## Proof depends on
+
+- [Is Probability Measure wiman Tilted Measure](coefficient-exponential-family/is-probability-measure-wiman-tilted-meas.md)
+- [Mem interior integrable Exp Set wiman Coefficient Measure](coefficient-exponential-family/mem-interior-integrable-exp-set-wiman-co.md)
+- [Wiman Coefficient Measure](coefficient-exponential-family/wiman-coefficient-measure.md)
+- [Wiman Tilted Measure](coefficient-exponential-family/wiman-tilted-measure.md)
+- [Wiman Tilted Measure singleton](coefficient-exponential-family/wiman-tilted-measure-singleton.md)
 
 ## Sources
 

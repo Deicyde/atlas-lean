@@ -12,7 +12,7 @@ Antichain-cardinality statistic: `f A = |A|` as a rational.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poset Antichain](poset-antichain.md)
 
 ## Sources
 

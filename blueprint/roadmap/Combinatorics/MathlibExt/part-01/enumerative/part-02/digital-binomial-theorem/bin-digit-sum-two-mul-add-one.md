@@ -13,7 +13,7 @@ lean: MetaMathlibExt.binDigitSum_two_mul_add_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bin Digit Sum](bin-digit-sum.md)
 
 ## Sources
 

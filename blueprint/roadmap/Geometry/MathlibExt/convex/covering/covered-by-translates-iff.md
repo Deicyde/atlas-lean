@@ -13,7 +13,7 @@ Membership in a translate cover, without unfolding indexed unions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covered By Translates](covered-by-translates.md)
 
 ## Sources
 

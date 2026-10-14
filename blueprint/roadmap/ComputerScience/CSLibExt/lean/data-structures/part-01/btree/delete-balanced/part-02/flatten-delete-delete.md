@@ -14,7 +14,12 @@ once.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](../part-01/delete.md)
+
+## Proof depends on
+
+- [Delete](../part-01/delete-2.md)
+- [Flatten delete](../part-01/flatten-delete.md)
 
 ## Sources
 

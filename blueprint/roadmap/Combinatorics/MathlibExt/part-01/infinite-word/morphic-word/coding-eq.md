@@ -16,7 +16,7 @@ Pointwise elimination for morphic words (concept
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Morphic](is-morphic.md)
 
 ## Sources
 

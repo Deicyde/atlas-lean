@@ -12,7 +12,11 @@ The orthogonal range report for the box `[lo, hi]`; see `reportAux`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kd Tree](kd-tree.md)
+
+## Proof depends on
+
+- [Report Aux](report-aux.md)
 
 ## Sources
 

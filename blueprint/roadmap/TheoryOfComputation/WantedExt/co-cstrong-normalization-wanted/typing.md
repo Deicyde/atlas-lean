@@ -12,7 +12,7 @@ The typing judgement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tm](tm.md)
 
 ## Sources
 

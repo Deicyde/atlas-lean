@@ -15,6 +15,10 @@ and `n` is divisible by the product of its nonzero base-`b` digits.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nonzero Digit Prod](nonzero-digit-prod.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ProdigiousNumber](../../../../../sources/v2/MathlibExt.md)

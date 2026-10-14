@@ -13,7 +13,7 @@ A queue reports that it is empty exactly when its FIFO contents are empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Contents](contents.md)
 
 ## Sources
 

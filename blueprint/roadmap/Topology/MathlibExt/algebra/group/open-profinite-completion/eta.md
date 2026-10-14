@@ -12,7 +12,12 @@ Canonical continuous monoid hom into the completion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Completion](completion.md)
+
+## Proof depends on
+
+- [Eta Fn](eta-fn.md)
+- [Eta Fn continuous](eta-fn-continuous.md)
 
 ## Sources
 

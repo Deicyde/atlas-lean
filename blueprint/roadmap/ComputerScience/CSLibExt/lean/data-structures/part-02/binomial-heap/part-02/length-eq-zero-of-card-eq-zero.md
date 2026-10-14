@@ -13,7 +13,16 @@ A valid forest with no represented elements has no roots.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](../part-01/valid-2.md)
+- [Elements](../part-01/elements-2.md)
+- [Binomial Tree](../part-01/binomial-tree.md)
+
+## Proof depends on
+
+- [Valid](../part-01/valid.md)
+- [Card elements](../part-01/card-elements.md)
+- [Elements](../part-01/elements.md)
+- [Rank](../part-01/rank.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ The supremum of the actual all-threshold CDF error.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Normal CDF](normal-cdf.md)
+- [Normalized Law](normalized-law.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.BerryEsseenModel](../../../../../../sources/v2/MathlibExt.md)

@@ -15,7 +15,11 @@ Stable source: https://en.wikipedia.org/wiki/Robertson%E2%80%93Seymour_theorem.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fin Graph](fin-graph.md)
+
+## Proof depends on
+
+- [Minor Step](minor-step.md)
 
 ## Sources
 

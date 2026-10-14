@@ -13,7 +13,7 @@ The mod-prime family has `p * (p - 1)` indices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mod Prime Index](../part-01/mod-prime-index.md)
 
 ## Sources
 

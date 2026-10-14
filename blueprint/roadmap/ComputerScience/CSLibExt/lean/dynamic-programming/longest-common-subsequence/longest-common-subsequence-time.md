@@ -13,7 +13,7 @@ The number of table and reconstruction transitions is at most `m*n + (m+n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Longest Common Subsequence](longest-common-subsequence.md)
 
 ## Sources
 

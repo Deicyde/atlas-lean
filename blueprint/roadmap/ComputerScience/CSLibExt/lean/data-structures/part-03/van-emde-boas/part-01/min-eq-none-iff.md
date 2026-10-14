@@ -13,7 +13,10 @@ In a valid tree, `min?` returns `none` exactly when nothing is stored.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](van-emde-boas.md)
+- [Valid](valid.md)
+- [Member](member.md)
+- [Min?](min.md)
 
 ## Sources
 

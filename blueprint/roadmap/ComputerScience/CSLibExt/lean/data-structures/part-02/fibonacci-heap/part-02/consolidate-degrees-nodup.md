@@ -13,7 +13,13 @@ A consolidated forest has distinct root degrees.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Consolidate](consolidate.md)
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
+- [Degree](../part-01/degree.md)
+
+## Proof depends on
+
+- [Consolidate sorted](consolidate-sorted.md)
 
 ## Sources
 

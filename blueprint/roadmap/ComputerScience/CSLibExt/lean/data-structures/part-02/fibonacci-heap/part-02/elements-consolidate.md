@@ -13,7 +13,17 @@ Consolidation preserves every occurrence in the forest.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Consolidate](consolidate.md)
+- [Elements](../part-01/elements-2.md)
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
+
+## Proof depends on
+
+- [Add Tree](add-tree.md)
+- [Degree](../part-01/degree.md)
+- [Elements](../part-01/elements.md)
+- [Elements link](../part-01/elements-link.md)
+- [Link](../part-01/link.md)
 
 ## Sources
 

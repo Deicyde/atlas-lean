@@ -13,7 +13,7 @@ Level `k` has one entry per start index whose length-`2 ^ k` interval fits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Level](level.md)
 
 ## Sources
 

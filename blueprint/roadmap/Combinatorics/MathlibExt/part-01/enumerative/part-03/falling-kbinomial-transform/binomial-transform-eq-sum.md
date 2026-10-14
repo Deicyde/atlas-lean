@@ -13,7 +13,7 @@ The `k = 1` falling `k`-binomial transform has the usual binomial sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Transform](binomial-transform.md)
 
 ## Sources
 

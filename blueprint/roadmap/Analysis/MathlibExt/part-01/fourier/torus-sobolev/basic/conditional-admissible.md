@@ -12,7 +12,13 @@ The source's conditional variational constraints on actual functions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Torus](torus.md)
+
+## Proof depends on
+
+- [Is Zero Mean H2](is-zero-mean-h2.md)
+- [Gradient Energy](gradient-energy.md)
+- [Laplace Energy](laplace-energy.md)
 
 ## Sources
 

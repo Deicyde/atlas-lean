@@ -12,7 +12,12 @@ The principal-divisor homomorphism from units of `K`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arakelov Divisor](arakelov-divisor.md)
+
+## Proof depends on
+
+- [Principal Arch](principal-arch.md)
+- [Principal Divisor](principal-divisor.md)
 
 ## Sources
 

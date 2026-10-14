@@ -14,7 +14,8 @@ distinct incident edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Degree Within](degree-within.md)
+- [Incident](incident.md)
 
 ## Sources
 

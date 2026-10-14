@@ -13,7 +13,12 @@ Every Engel trajectory hits `0` at some positive step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Traj](traj.md)
+
+## Proof depends on
+
+- [Exists traj eq zero](exists-traj-eq-zero.md)
+- [Neg Rem](neg-rem.md)
 
 ## Sources
 

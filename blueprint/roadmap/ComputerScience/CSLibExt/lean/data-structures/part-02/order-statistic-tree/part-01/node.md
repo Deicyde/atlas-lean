@@ -12,7 +12,12 @@ Construct a node whose cache is computed from its children.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Entry](entry.md)
+- [Cached Size](cached-size.md)
 
 ## Sources
 

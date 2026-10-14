@@ -13,7 +13,14 @@ The rank of a valid tree is bounded by the binary logarithm of its cardinality.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Tree](binomial-tree.md)
+- [Valid](valid.md)
+- [Elements](elements.md)
+- [Rank](rank.md)
+
+## Proof depends on
+
+- [Card elements](card-elements.md)
 
 ## Sources
 

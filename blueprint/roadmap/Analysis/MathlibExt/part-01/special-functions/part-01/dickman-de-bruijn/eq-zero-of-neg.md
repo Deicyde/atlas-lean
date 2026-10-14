@@ -13,7 +13,7 @@ A Dickman–de Bruijn function vanishes at negative arguments.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dickman De Bruijn](is-dickman-de-bruijn.md)
 
 ## Sources
 

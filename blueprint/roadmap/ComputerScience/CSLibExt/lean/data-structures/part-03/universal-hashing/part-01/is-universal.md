@@ -17,6 +17,10 @@ without division as `collisionCount H x y * m ≤ H.card`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Collision Count](collision-count.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.UniversalHashing](../../../../../../../../sources/v2/CSLibExt.md)

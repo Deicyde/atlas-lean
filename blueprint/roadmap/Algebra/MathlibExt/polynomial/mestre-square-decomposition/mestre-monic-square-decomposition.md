@@ -26,6 +26,10 @@ Proves `Wanted` entry `mestre_monic_square_decomposition`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mestre monic square decomposition general](mestre-monic-square-decomposition-genera.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Polynomial.MestreSquareDecomposition](../../../../../sources/v2/MathlibExt.md)

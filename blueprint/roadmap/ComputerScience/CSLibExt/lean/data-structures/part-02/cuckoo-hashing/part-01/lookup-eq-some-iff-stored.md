@@ -13,7 +13,16 @@ Under `Valid` and `KeyDet`, lookup agrees exactly with `Stored`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cuckoo Hashing](cuckoo-hashing.md)
+- [Key Det](key-det.md)
+- [Stored](stored.md)
+- [Valid](valid.md)
+- [Lookup](lookup.md)
+
+## Proof depends on
+
+- [Lookup eq some of stored](lookup-eq-some-of-stored.md)
+- [Lookup sound](lookup-sound.md)
 
 ## Sources
 

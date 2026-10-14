@@ -20,7 +20,11 @@ the prescribed content, which are counted by Möbius inversion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Free Lie Multihomogeneous Component](../free-lie-multihomogeneous-component/free-lie-multihomogeneous-component.md)
+
+## Proof depends on
+
+- [Finrank free Lie Multihomogeneous Component](finrank-free-lie-multihomogeneous-compon.md)
 
 ## Sources
 

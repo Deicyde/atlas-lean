@@ -13,7 +13,11 @@ recursively, so all leaves lie at the same depth.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Height](height.md)
 
 ## Sources
 

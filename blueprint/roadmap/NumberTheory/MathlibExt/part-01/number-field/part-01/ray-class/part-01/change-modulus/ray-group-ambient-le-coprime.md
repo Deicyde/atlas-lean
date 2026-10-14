@@ -13,7 +13,7 @@ The ambient ray group lies in the coprime fractional ideals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Group Ambient](ray-group-ambient.md)
 
 ## Sources
 

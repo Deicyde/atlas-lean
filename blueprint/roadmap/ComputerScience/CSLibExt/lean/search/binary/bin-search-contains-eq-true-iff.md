@@ -16,6 +16,10 @@ index between the inclusive raw bounds.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bin Search Contains eq is Some](bin-search-contains-eq-is-some.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Search.Binary](../../../../../../sources/v2/CSLibExt.md)

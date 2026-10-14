@@ -13,7 +13,18 @@ Extraction preserves the heap arity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Min Heap](../part-02/dary-min-heap.md)
+- [Extract Tail](extract-tail.md)
+
+## Proof depends on
+
+- [Dary Heap Ordered](../part-01/dary-heap-ordered.md)
+- [Dary Move Last To Root](../part-02/dary-move-last-to-root.md)
+- [Dary Move Last To Root sift Down Ready](../part-02/dary-move-last-to-root-sift-down-ready.md)
+- [Dary Parent](../part-01/dary-parent.md)
+- [Dary Parent lt size](../part-01/dary-parent-lt-size.md)
+- [Dary Sift Down](../part-02/dary-sift-down.md)
+- [Dary Sift Down ordered](../part-02/dary-sift-down-ordered.md)
 
 ## Sources
 

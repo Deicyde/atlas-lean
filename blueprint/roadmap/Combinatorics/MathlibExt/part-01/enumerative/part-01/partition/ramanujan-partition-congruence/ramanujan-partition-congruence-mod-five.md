@@ -18,6 +18,15 @@ Live source: https://cs.uwaterloo.ca/journals/JIS/VOL27/Bhatnagar/bhat4.tex
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Coeff jacobi Cube Series eq zero](coeff-jacobi-cube-series-eq-zero.md)
+- [Coeff jacobi Cube Series triangle](coeff-jacobi-cube-series-triangle.md)
+- [Dvd partition Function of dvd coeff pentagonal Series pow](dvd-partition-function-of-dvd-coeff-pent.md)
+- [Jacobi Cube Series](jacobi-cube-series.md)
+- [Pentagonal Series pow three](pentagonal-series-pow-three.md)
+- [Two mul choose two succ](two-mul-choose-two-succ.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.Partition.RamanujanPartitionCongruence](../../../../../../../../sources/v2/MathlibExt.md)

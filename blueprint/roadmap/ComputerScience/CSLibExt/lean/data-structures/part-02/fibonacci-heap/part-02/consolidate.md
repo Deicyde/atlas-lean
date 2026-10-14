@@ -13,7 +13,11 @@ distinct, as in the `consolidate` step of CLRS. The result is sorted by degree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
+
+## Proof depends on
+
+- [Add Tree](add-tree.md)
 
 ## Sources
 

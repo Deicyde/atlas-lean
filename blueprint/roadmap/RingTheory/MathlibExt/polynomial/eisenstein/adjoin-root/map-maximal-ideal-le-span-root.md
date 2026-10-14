@@ -16,6 +16,11 @@ polynomial of positive degree.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Algebra Map coeff zero mem span root](algebra-map-coeff-zero-mem-span-root.md)
+- [Maximal Ideal eq span coeff zero](maximal-ideal-eq-span-coeff-zero.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Polynomial.Eisenstein.AdjoinRoot](../../../../../../sources/v2/MathlibExt.md)

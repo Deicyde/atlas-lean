@@ -12,7 +12,8 @@ The diagonal embedding of global units into the finite ideles.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Idele Group](finite-idele-group.md)
+- [Local Integral Unit Subgroup](local-integral-unit-subgroup.md)
 
 ## Sources
 

@@ -15,7 +15,12 @@ binomial coefficients of `m` and `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [B Ary Binomial Coefficient](../bary-binomial-coefficient/b-ary-binomial-coefficient.md)
+
+## Proof depends on
+
+- [B Ary Binomial Coefficient eq prod div pow](../bary-binomial-symmetry-pascal/b-ary-binomial-coefficient-eq-prod-div-p.md)
+- [B Ary Binomial Coefficient generating function](../bary-binomial-generating-function/b-ary-binomial-coefficient-generating-fu.md)
 
 ## Sources
 

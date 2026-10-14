@@ -14,6 +14,10 @@ lean: MetaMathlibExt.IsUniquePisotRoot
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pisot Number](is-pisot-number.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PisotRoot](../../../../sources/v2/MathlibExt.md)

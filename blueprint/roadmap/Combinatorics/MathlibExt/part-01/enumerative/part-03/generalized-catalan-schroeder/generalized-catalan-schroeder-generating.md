@@ -27,6 +27,10 @@ uniqueness. This is a direct power-series derivation of Barry's cited propositio
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized Catalan Schroeder recurrence functional Equation](generalized-catalan-schroeder-recurrence.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.GeneralizedCatalanSchroeder](../../../../../../../sources/v2/MathlibExt.md)

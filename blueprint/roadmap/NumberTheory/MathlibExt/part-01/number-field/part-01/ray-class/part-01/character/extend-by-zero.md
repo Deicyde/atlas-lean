@@ -12,7 +12,7 @@ Extension by zero to all (unit) fractional ideals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Character](ray-class-character.md)
 
 ## Sources
 

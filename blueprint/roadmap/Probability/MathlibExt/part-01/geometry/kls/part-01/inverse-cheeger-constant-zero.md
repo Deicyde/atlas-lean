@@ -13,7 +13,12 @@ Inversion does not mistake the empty cut family for an admissible probability la
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inverse Cheeger Constant](inverse-cheeger-constant.md)
+
+## Proof depends on
+
+- [Cheeger Coefficient](cheeger-coefficient.md)
+- [Cheeger Coefficient zero](cheeger-coefficient-zero.md)
 
 ## Sources
 

@@ -14,7 +14,11 @@ its stored degree is corrected, and its root still bounds every remaining elemen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cut At](cut-at.md)
+
+## Proof depends on
+
+- [Cut At elements](cut-at-elements.md)
 
 ## Sources
 

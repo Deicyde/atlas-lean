@@ -13,7 +13,7 @@ Evaluating the determinant polynomial evaluates its scalar variables inside the 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mixed Det Polynomial](mixed-det-polynomial.md)
 
 ## Sources
 

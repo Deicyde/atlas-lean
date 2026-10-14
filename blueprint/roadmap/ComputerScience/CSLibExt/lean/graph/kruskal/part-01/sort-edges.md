@@ -12,7 +12,12 @@ Merge sort by `(weight, input ordinal)`; unique keys make the order deterministi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Edge](weighted-edge.md)
+
+## Proof depends on
+
+- [Key LE](key-le.md)
+- [Key](key.md)
 
 ## Sources
 

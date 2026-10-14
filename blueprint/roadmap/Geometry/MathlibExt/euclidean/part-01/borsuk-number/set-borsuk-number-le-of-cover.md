@@ -13,7 +13,8 @@ Every actual finite cover bounds the set's least partition number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Borsuk Cover](has-borsuk-cover.md)
+- [Set Borsuk Number](set-borsuk-number.md)
 
 ## Sources
 

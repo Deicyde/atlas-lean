@@ -12,7 +12,7 @@ Number of `k`-dimensional faces (faces with `k+1` vertices).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Simplicial Sphere](finite-simplicial-sphere.md)
 
 ## Sources
 

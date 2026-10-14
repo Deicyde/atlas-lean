@@ -13,7 +13,7 @@ The associated safe prime `2 * p + 1` of a Sophie Germain prime is prime.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sophie Germain Prime](is-sophie-germain-prime.md)
 
 ## Sources
 

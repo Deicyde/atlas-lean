@@ -13,7 +13,13 @@ Every lookup in the empty trie fails.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empty](empty.md)
+- [Lookup](lookup.md)
+
+## Proof depends on
+
+- [Radix Trie](radix-trie.md)
+- [Lookup node cons](lookup-node-cons.md)
 
 ## Sources
 

@@ -18,7 +18,26 @@ preferred paths off that root path are retained (`mem_preferred_access`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [State](../part-03/state.md)
+- [Mem](../part-03/mem.md)
+- [Valid](../part-03/valid.md)
+- [Access](access.md)
+- [Paths](../part-03/paths.md)
+- [Root Path](../part-02/root-path.md)
+
+## Proof depends on
+
+- [Children ind](../../euler-tour-tree/part-01/children-ind.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
+- [Vertices node](../../euler-tour-tree/part-01/vertices-node.md)
+- [Parent Child](../part-02/parent-child.md)
+- [Decomp](../part-03/decomp.md)
+- [Decomp fst eq root Path](../part-03/decomp-fst-eq-root-path.md)
+- [Find Tree](../part-01/find-tree.md)
+- [Get Last? root Path](../part-02/get-last-root-path.md)
+- [Path Edges](../part-02/path-edges.md)
+- [Tree Paths](../part-03/tree-paths.md)
 
 ## Sources
 

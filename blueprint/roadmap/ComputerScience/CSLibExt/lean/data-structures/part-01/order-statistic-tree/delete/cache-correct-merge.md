@@ -13,7 +13,7 @@ Merging preserves correct caches.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Merge](merge.md)
 
 ## Sources
 

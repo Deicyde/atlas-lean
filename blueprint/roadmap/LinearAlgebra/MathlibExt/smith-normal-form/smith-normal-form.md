@@ -17,6 +17,10 @@ Smith-form API.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists smith normal form dvd chain](exists-smith-normal-form-dvd-chain.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.SmithNormalForm](../../../../sources/v2/MathlibExt.md)

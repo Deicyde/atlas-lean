@@ -13,7 +13,12 @@ A degenerate graph is degenerate on every subset of its vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Degenerate](is-degenerate.md)
+- [Is Degenerate On](is-degenerate-on.md)
+
+## Proof depends on
+
+- [Of subset](of-subset.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ The generating function of `partitionFunction` is Mathlib's partition generating
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Function](partition-function.md)
 
 ## Sources
 

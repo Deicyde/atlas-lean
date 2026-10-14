@@ -13,7 +13,7 @@ and `W(n + 3) = W(n + 2) W(n + 1) W(n)`, where juxtaposition is concatenation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tribonacci Letter](tribonacci-letter.md)
 
 ## Sources
 

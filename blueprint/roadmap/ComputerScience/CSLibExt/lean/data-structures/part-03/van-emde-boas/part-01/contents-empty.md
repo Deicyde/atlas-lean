@@ -13,7 +13,15 @@ The empty tree abstracts to the empty finite set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Contents](contents.md)
+- [Empty](empty.md)
+
+## Proof depends on
+
+- [Van Emde Boas](van-emde-boas.md)
+- [Mem contents](mem-contents.md)
+- [Member](member.md)
+- [Member empty](member-empty.md)
 
 ## Sources
 

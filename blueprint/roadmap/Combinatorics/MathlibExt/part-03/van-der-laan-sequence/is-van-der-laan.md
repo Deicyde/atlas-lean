@@ -16,6 +16,10 @@ source lines 92-96: every window of four consecutive terms satisfies
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Van Der Laan Window](is-van-der-laan-window.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.VanDerLaanSequence](../../../../../sources/v2/MathlibExt.md)

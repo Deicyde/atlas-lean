@@ -15,7 +15,12 @@ the internal finset argument is obtained locally via `classical`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Perfect](is-perfect.md)
+
+## Proof depends on
+
+- [Perf Ineq](perf-ineq.md)
+- [Perfect implies ineq](perfect-implies-ineq.md)
 
 ## Sources
 

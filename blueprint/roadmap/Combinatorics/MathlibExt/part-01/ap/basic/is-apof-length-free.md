@@ -14,6 +14,10 @@ A set is free of nontrivial arithmetic progressions of length `l`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is APOf Length](is-apof-length.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.AP.Basic](../../../../../../sources/v2/MathlibExt.md)

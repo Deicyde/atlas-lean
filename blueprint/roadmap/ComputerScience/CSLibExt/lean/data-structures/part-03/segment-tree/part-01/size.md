@@ -14,7 +14,7 @@ cache is honest.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Segment Tree](segment-tree.md)
 
 ## Sources
 

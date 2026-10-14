@@ -13,7 +13,7 @@ Reconstruction of one step: digit times `p ^ n` is the approximation gap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padic Digit](padic-digit.md)
 
 ## Sources
 

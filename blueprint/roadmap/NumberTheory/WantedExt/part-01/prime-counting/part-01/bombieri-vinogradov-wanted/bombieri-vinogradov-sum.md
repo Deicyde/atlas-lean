@@ -17,6 +17,10 @@ theorem is eventual.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bombieri Vinogradov Max Up To Error](bombieri-vinogradov-max-up-to-error.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.PrimeCounting.BombieriVinogradovWanted](../../../../../../../sources/v2/WantedExt.md)

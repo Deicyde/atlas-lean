@@ -14,6 +14,10 @@ Max unit triangles over `n`-point sets in `ℝ^d`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unit Equilateral Triangle Count](unit-equilateral-triangle-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.ErdosProblem755Wanted](../../../../../sources/v2/WantedExt.md)

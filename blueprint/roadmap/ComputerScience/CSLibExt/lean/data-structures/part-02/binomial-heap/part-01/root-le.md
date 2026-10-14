@@ -13,7 +13,14 @@ The root of a valid tree is no greater than every represented element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Tree](binomial-tree.md)
+- [Valid](valid.md)
+- [Elements](elements.md)
+- [Root](root.md)
+
+## Proof depends on
+
+- [Rank](rank.md)
 
 ## Sources
 

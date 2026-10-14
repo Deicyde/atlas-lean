@@ -17,6 +17,12 @@ whereas the cited source also allows loops.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Independent Set Characteristic](independent-set-characteristic.md)
+- [Relation Pairing](relation-pairing.md)
+- [Zykov Zero Indicator](zykov-zero-indicator.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.TransferMatrixOfGRH](../../../../../../../sources/v2/MathlibExt.md)

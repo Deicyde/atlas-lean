@@ -13,7 +13,7 @@ A class function takes equal values on conjugate elements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Class Function](is-class-function.md)
 
 ## Sources
 

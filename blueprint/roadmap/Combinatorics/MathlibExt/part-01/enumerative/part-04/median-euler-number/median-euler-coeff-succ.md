@@ -13,7 +13,11 @@ Recurrence for the Euler coefficients from `E * cosh = 1 + sinh`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Median Euler Coeff](median-euler-coeff.md)
+
+## Proof depends on
+
+- [Median Euler Coefficients](median-euler-coefficients.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ The derivatives of the extension at the origin are the negated constants.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter6 Convergent Sum Extension](chapter6-convergent-sum-extension.md)
+- [Chapter6 Derived Series Constant](chapter6-derived-series-constant.md)
+- [Chapter6 Shifted Derived Series Term](chapter6-shifted-derived-series-term.md)
 
 ## Sources
 

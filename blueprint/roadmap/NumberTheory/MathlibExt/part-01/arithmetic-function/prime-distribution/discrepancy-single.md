@@ -13,7 +13,7 @@ A positive singleton contributes its residue value minus the coprime mean.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Discrepancy](discrepancy.md)
 
 ## Sources
 

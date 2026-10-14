@@ -12,7 +12,12 @@ The iso-class of the trivial representation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Irr](irr.md)
+
+## Proof depends on
+
+- [Iso Setoid](iso-setoid.md)
+- [Simple fdrep of irreducible](simple-fdrep-of-irreducible.md)
 
 ## Sources
 

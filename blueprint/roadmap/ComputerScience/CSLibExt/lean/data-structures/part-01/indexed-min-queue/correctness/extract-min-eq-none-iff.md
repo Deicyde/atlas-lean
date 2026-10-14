@@ -13,7 +13,8 @@ EXTRACT-MIN rejects exactly an empty heap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Min Queue](../basic/indexed-min-queue.md)
+- [Extract Min](../basic/extract-min.md)
 
 ## Sources
 

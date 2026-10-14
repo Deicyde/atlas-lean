@@ -14,6 +14,11 @@ Dual of a nonzero fractional ideal is its inverse submodule.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Coe inv eq mul dual Submodule](coe-inv-eq-mul-dual-submodule.md)
+- [Dual Equiv Mul Dual Submodule](dual-equiv-mul-dual-submodule.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.FractionalIdeal.Dual](../../../../../sources/v2/MathlibExt.md)

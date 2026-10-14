@@ -14,6 +14,10 @@ Common marked amplitude after one Grover step.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Oracle Mean](oracle-mean.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Quantum.Grover.Symmetry](../../../../../../sources/v2/CSLibExt.md)

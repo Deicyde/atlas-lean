@@ -17,7 +17,7 @@ division in `wilsonQuotient` is exact, so multiplying back recovers the numerato
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wilson Quotient](wilson-quotient.md)
 
 ## Sources
 

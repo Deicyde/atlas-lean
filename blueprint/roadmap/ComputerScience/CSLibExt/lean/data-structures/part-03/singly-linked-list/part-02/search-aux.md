@@ -13,7 +13,7 @@ whose payload equals `target`, if reached within `fuel` steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../part-01/node.md)
 
 ## Sources
 

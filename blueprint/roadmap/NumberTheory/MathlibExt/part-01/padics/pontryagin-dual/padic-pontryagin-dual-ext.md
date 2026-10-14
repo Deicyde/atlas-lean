@@ -13,7 +13,8 @@ Two p-adic Pontryagin-dual elements are equal when they agree pointwise.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padic Pontryagin Dual](padic-pontryagin-dual.md)
+- [Padic Quotient Int](padic-quotient-int.md)
 
 ## Sources
 

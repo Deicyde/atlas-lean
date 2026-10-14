@@ -14,6 +14,11 @@ The prime unit packaged as an element of `m.coprimeFractionalIdeals`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mem coprime Fractional Ideals prime Unit](mem-coprime-fractional-ideals-prime-unit.md)
+- [Prime Unit Fractional Ideal](prime-unit-fractional-ideal.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.PrimeGenerators](../../../../../../../../../sources/v2/MathlibExt.md)

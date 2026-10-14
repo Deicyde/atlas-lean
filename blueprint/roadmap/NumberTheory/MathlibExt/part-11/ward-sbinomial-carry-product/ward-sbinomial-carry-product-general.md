@@ -16,7 +16,11 @@ Ward's identity with hypotheses only on positive indices: if `f k = ∏_{d ∣ k
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ward Generalized Binomial Coefficient](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-09/ward-generalized-binomial/ward-generalized-binomial-coefficient.md)
+
+## Proof depends on
+
+- [Ward Generalized Binomial Coefficient eq prod Icc](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-09/ward-generalized-binomial/ward-generalized-binomial-coefficient-eq.md)
 
 ## Sources
 

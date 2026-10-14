@@ -14,7 +14,12 @@ original tree minus the deleted key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Delete](delete-2.md)
+- [Mem delete](mem-delete.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ At a Gateaux point of the support function, the maximizer is unique.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gateaux Pt](gateaux-pt.md)
+- [Supp Func](supp-func.md)
+
+## Proof depends on
+
+- [Dir Deriv](dir-deriv.md)
+- [Maximizer dir Deriv ge](maximizer-dir-deriv-ge.md)
 
 ## Sources
 

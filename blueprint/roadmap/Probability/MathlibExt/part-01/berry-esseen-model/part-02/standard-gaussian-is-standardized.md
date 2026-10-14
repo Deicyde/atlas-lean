@@ -13,7 +13,7 @@ A nondegenerate actual Gaussian belongs to the source domain.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Standardized Law](../part-01/is-standardized-law.md)
 
 ## Sources
 

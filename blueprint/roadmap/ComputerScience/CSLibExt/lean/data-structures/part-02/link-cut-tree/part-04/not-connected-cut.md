@@ -16,7 +16,22 @@ remainder (`mem_vertices_pruneAt`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
+- [State](../part-03/state.md)
+- [Connected](../part-03/connected.md)
+- [Cut](cut.md)
+- [Find Subtree](../part-01/find-subtree.md)
+- [Find Tree](../part-01/find-tree.md)
+
+## Proof depends on
+
+- [Children ind](../../euler-tour-tree/part-01/children-ind.md)
+- [Root](../../euler-tour-tree/part-01/root.md)
+- [Vertices node](../../euler-tour-tree/part-01/vertices-node.md)
+- [Mem vertices prune At](../part-02/mem-vertices-prune-at.md)
+- [Prune At](../part-02/prune-at.md)
+- [Remove Tree](../part-01/remove-tree.md)
 
 ## Sources
 

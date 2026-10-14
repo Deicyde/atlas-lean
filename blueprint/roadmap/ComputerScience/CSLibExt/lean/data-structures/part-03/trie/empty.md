@@ -12,7 +12,7 @@ The trie containing no key-value entries.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trie](trie.md)
 
 ## Sources
 

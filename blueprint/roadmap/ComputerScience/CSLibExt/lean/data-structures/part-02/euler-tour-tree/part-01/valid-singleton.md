@@ -13,7 +13,13 @@ A single-vertex tree is valid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+- [Valid](valid.md)
+
+## Proof depends on
+
+- [Vertices](vertices.md)
+- [Vertices node](vertices-node.md)
 
 ## Sources
 

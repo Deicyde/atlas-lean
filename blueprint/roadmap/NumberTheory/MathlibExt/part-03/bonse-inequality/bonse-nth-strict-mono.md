@@ -15,6 +15,10 @@ Strict monotonicity of prime indexing.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bonse primes infinite](bonse-primes-infinite.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.BonseInequality](../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,7 @@ Disjoint sum of two impartial games: move in exactly one component.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](impartial-game.md)
 
 ## Sources
 

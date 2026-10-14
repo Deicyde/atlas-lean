@@ -13,7 +13,11 @@ Every maximal-ideal graded piece of a DVR has residue-field finrank one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Ideal Graded Piece](maximal-ideal-graded-piece.md)
+
+## Proof depends on
+
+- [Residue Field Linear Equiv Maximal Ideal Graded Piece](residue-field-linear-equiv-maximal-ideal.md)
 
 ## Sources
 

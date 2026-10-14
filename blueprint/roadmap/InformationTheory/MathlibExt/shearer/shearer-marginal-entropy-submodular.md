@@ -13,7 +13,13 @@ Marginal entropy is submodular: `H(A ∪ B) + H(A ∩ B) ≤ H(A) + H(B)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shearer Marginal Entropy](shearer-marginal-entropy.md)
+
+## Proof depends on
+
+- [Shearer Marginal](shearer-marginal.md)
+- [Shearer Marginal nonneg](shearer-marginal-nonneg.md)
+- [Shearer Marginal sum](shearer-marginal-sum.md)
 
 ## Sources
 

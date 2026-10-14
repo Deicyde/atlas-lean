@@ -16,6 +16,12 @@ positive degree over a DVR.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Local Ring maximal Ideal eq span root](is-local-ring-maximal-ideal-eq-span-root.md)
+- [Is Local Ring of is Eisenstein At](is-local-ring-of-is-eisenstein-at.md)
+- [Root ne zero](root-ne-zero.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.Polynomial.Eisenstein.AdjoinRoot](../../../../../../sources/v2/MathlibExt.md)

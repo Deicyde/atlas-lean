@@ -14,6 +14,11 @@ Actual point values of admissible functions, embedded in the extended reals.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Conditional Admissible](conditional-admissible.md)
+- [Torus](torus.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Fourier.TorusSobolev.Basic](../../../../../../../sources/v2/MathlibExt.md)

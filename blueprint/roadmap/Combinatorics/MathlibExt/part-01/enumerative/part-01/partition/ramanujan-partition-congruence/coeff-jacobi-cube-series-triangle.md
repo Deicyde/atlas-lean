@@ -14,7 +14,11 @@ is `(-1) ^ t * (2 * t + 1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobi Cube Series](jacobi-cube-series.md)
+
+## Proof depends on
+
+- [Two mul choose two succ](two-mul-choose-two-succ.md)
 
 ## Sources
 

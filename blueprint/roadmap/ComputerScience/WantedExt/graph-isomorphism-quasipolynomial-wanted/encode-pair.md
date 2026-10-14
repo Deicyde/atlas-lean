@@ -12,7 +12,11 @@ Bit serialization of a graph pair: concatenation of the two codes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Graph Code](graph-code.md)
+
+## Proof depends on
+
+- [Encode](encode.md)
 
 ## Sources
 

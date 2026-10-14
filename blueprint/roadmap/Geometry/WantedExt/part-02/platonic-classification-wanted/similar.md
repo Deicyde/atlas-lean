@@ -13,7 +13,13 @@ affine isometry.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convex Polytope](convex-polytope.md)
+
+## Proof depends on
+
+- [Isom](isom.md)
+- [To Set](to-set.md)
+- [E](e.md)
 
 ## Sources
 

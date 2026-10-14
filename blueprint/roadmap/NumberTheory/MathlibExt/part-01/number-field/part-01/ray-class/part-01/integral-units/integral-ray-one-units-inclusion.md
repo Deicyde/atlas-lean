@@ -12,7 +12,7 @@ Inclusion of ray-one units into all integral units (ATLAS `exactSeq_map1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integral Ray One Units](integral-ray-one-units.md)
 
 ## Sources
 

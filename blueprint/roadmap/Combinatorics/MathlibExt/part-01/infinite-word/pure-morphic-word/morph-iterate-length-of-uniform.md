@@ -14,7 +14,11 @@ at each step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Morph Iterate](morph-iterate.md)
+
+## Proof depends on
+
+- [Morph Extend](morph-extend.md)
 
 ## Sources
 

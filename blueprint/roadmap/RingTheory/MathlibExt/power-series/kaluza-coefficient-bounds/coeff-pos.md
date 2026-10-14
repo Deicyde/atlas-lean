@@ -13,7 +13,7 @@ Every coefficient of a series with positive log-convex coefficients is positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Positive Log Convex Coefficients](has-positive-log-convex-coefficients.md)
 
 ## Sources
 

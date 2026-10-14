@@ -29,7 +29,7 @@ Provenance (independently verified):
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Partial Parking Function](parking-function/is-partial-parking-function.md)
 
 ## Sources
 

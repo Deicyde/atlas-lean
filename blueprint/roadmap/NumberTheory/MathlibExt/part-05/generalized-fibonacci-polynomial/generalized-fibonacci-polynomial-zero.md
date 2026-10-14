@@ -17,7 +17,7 @@ Concept `jis_sem_f9bc27c2fb50e959e168b460`; source statement
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Fibonacci Polynomial](generalized-fibonacci-polynomial.md)
 
 ## Sources
 

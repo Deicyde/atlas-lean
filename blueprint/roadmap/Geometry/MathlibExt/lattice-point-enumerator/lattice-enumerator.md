@@ -16,6 +16,10 @@ intersection can be infinite and `ncard` returns junk `0`; use
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lattice Point Set](lattice-point-set.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.LatticePointEnumerator](../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,12 @@ The difference equation `F(x) - F(x - 1) = f(x)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter6 Convergent Sum Extension](chapter6-convergent-sum-extension.md)
+- [Chapter6 Shifted Derived Series Term](chapter6-shifted-derived-series-term.md)
+
+## Proof depends on
+
+- [Chapter6 Derived Series Constant](chapter6-derived-series-constant.md)
 
 ## Sources
 

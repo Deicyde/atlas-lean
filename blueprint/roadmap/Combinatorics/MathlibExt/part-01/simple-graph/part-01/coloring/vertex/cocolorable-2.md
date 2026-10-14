@@ -14,7 +14,7 @@ Every proper coloring is a cocoloring: color classes inducing `⊥` also satisfy
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cocolorable](cocolorable.md)
 
 ## Sources
 

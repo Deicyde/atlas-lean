@@ -13,7 +13,8 @@ The key set after insertion is the key set with the new key inserted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [XFast Trie](xfast-trie.md)
+- [Insert](insert.md)
 
 ## Sources
 

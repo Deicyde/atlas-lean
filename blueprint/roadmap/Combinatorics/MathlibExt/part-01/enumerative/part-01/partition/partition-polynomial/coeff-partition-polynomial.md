@@ -15,7 +15,7 @@ Coefficients recover part multiplicities (concept
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Polynomial](partition-polynomial.md)
 
 ## Sources
 

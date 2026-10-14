@@ -13,7 +13,13 @@ At `r = 0`, `J_{0,F} = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Jordan Quotient](fibonacci-jordan-quotient.md)
+
+## Proof depends on
+
+- [Fibonacci Factorial](fibonacci-factorial.md)
+- [Fibonacci Factorial one](fibonacci-factorial-one.md)
+- [Fibonacci Factorial zero](fibonacci-factorial-zero.md)
 
 ## Sources
 

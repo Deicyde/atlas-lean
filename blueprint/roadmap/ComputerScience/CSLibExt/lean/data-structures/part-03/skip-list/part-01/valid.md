@@ -12,7 +12,11 @@ Keys are strictly increasing and every stored tower has positive height.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skip List](skip-list.md)
+
+## Proof depends on
+
+- [Entry](entry.md)
 
 ## Sources
 

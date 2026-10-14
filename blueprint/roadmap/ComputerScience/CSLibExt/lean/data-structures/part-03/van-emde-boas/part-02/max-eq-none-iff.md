@@ -13,7 +13,10 @@ In a valid tree, `max?` returns `none` exactly when nothing is stored.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Emde Boas](../part-01/van-emde-boas.md)
+- [Valid](../part-01/valid.md)
+- [Max?](max.md)
+- [Member](../part-01/member.md)
 
 ## Sources
 

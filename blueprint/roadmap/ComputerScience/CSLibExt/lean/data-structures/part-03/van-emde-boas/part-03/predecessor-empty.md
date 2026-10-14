@@ -13,7 +13,15 @@ The empty tree has no predecessor for any element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empty](../part-01/empty.md)
+- [Predecessor](../part-02/predecessor.md)
+
+## Proof depends on
+
+- [Member](../part-01/member.md)
+- [Member empty](../part-01/member-empty.md)
+- [Predecessor eq none iff](predecessor-eq-none-iff.md)
+- [Valid empty](../part-01/valid-empty.md)
 
 ## Sources
 

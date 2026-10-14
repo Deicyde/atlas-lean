@@ -18,6 +18,10 @@ identity holds unconditionally.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Filipponi binomial sum formula general](filipponi-binomial-sum-formula-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.FilipponiBinomialSum](../../../../../../../sources/v2/MathlibExt.md)

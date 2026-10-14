@@ -13,7 +13,14 @@ The root after splaying a present key is that key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
+- [Ordered](../../../part-02/binary-search-tree/part-01/ordered.md)
+- [Root?](root.md)
+- [Splay](splay.md)
+
+## Proof depends on
+
+- [Root splay of mem](root-splay-of-mem.md)
 
 ## Sources
 

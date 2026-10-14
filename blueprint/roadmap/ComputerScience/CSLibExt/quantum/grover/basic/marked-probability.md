@@ -12,7 +12,7 @@ Probability mass assigned by `ψ` to the marked outcomes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amplitude](amplitude.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Characterization of vertex connectivity by deletion of small vertex sets.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Vertex Connected](is-vertex-connected.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ The mass of a singleton under the coefficient measure is its coefficient norm.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Coefficient Measure](wiman-coefficient-measure.md)
 
 ## Sources
 

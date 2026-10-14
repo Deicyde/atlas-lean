@@ -12,7 +12,13 @@ Every reciprocal is used only under its nonzero-kernel qualification.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extremal Parameter](extremal-parameter.md)
+
+## Proof depends on
+
+- [Finite Extremal Parameter](finite-extremal-parameter.md)
+- [Frequency](../basic/frequency.md)
+- [Frequency Weight](../basic/frequency-weight.md)
 
 ## Sources
 

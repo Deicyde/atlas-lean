@@ -14,7 +14,10 @@ puts it in exactly the bucket and slot that lookup probes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Perfect Hashing](perfect-hashing.md)
+- [Stored](stored.md)
+- [Valid](valid.md)
+- [Lookup](lookup.md)
 
 ## Sources
 

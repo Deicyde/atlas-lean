@@ -13,7 +13,12 @@ Möbius reciprocal sum over `w9` equals `8 / 35`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [W9](../../grid/part-01/w9.md)
+
+## Proof depends on
+
+- [Map sum to Finset](../../grid/part-02/map-sum-to-finset.md)
+- [W9 nodup](../../grid/part-02/w9-nodup.md)
 
 ## Sources
 

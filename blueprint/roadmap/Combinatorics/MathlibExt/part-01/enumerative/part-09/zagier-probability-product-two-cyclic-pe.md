@@ -23,6 +23,12 @@ matching Stirling recurrence; descending induction on the cycle count finishes.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Card perm cycle Count eq stirling First](../part-08/stirling/card-perm-cycle-count-eq-stirling-first.md)
+- [Cycle Quotient Count](../part-08/stirling/cycle-quotient-count.md)
+- [Cycle Quotient Count eq](../part-08/stirling/cycle-quotient-count-eq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.ZagierCyclicPermutationProduct](../../../../../../sources/v2/MathlibExt.md)

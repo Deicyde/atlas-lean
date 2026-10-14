@@ -12,7 +12,7 @@ The finsupp for the monomial `x^n y^n z^n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vars](vars.md)
 
 ## Sources
 

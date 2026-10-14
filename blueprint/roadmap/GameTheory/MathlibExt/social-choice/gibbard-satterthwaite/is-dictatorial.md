@@ -12,7 +12,11 @@ Dictatorial SCF: some fixed voter always gets top choice.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Social Choice Function](social-choice-function.md)
+
+## Proof depends on
+
+- [Is Dictator](is-dictator.md)
 
 ## Sources
 

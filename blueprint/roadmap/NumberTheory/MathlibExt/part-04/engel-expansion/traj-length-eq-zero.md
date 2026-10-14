@@ -13,7 +13,12 @@ The Engel trajectory vanishes at the Engel length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Length](length.md)
+- [Traj](traj.md)
+
+## Proof depends on
+
+- [Exists traj eq zero pos](exists-traj-eq-zero-pos.md)
 
 ## Sources
 

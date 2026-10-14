@@ -15,7 +15,13 @@ shortest weights. This includes repeated walks and signed edge weights.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Edge Bounded Shortest Path Weight](is-edge-bounded-shortest-path-weight.md)
+
+## Proof depends on
+
+- [Is Weighted Path](../floyd-warshall/basic/is-weighted-path.md)
+- [Path Weight](../floyd-warshall/basic/path-weight.md)
+- [Matrix Accumulate min Plus apply](matrix-accumulate-min-plus-apply.md)
 
 ## Sources
 

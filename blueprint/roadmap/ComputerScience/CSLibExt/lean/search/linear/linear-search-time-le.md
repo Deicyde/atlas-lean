@@ -13,7 +13,11 @@ Linear search evaluates the predicate at most once for every list element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Search](linear-search.md)
+
+## Proof depends on
+
+- [Linear Search time cons](linear-search-time-cons.md)
 
 ## Sources
 

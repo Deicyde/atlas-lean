@@ -14,6 +14,10 @@ lean: MathlibExt.Combinatorics.ErdosProblem570Wanted.conjecture
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Graph Pair Ramsey](../../../MathlibExt/part-01/simple-graph/part-03/ramsey/graph-pair-ramsey.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ErdosProblem570Wanted](../../../../../sources/v2/WantedExt.md)

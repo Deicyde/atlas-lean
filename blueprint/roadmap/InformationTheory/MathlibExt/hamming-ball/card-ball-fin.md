@@ -13,7 +13,11 @@ The source's formula for words of positive length over an alphabet of size `q â‰
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ball](ball.md)
+
+## Proof depends on
+
+- [Card ball](card-ball.md)
 
 ## Sources
 

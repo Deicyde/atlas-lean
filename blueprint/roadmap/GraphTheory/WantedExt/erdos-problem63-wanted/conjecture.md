@@ -14,6 +14,10 @@ Infinite chromatic number forces `2^n` cycle lengths infinitely often.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cycle Lengths](../../../Combinatorics/MathlibExt/part-01/simple-graph/part-01/circumference/cycle-lengths.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GraphTheory.ErdosProblem63Wanted](../../../../sources/v2/WantedExt.md)

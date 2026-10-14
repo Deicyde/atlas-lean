@@ -14,6 +14,10 @@ Lebesgue function `Lₙ(t) = ∑_k |l_k(t)|`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eval Basis](eval-basis.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Polynomial.Lagrange](../../../../../../sources/v2/MathlibExt.md)

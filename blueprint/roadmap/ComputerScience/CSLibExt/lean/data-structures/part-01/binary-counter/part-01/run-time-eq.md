@@ -13,7 +13,13 @@ The actual zero-start run cost is the sum of its existing bits' exact flip count
 
 ## Depends on
 
-This node has no prerequisites.
+- [Run](run.md)
+
+## Proof depends on
+
+- [Increment](increment.md)
+- [Run time succ](run-time-succ.md)
+- [Run value](run-value.md)
 
 ## Sources
 

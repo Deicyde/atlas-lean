@@ -13,7 +13,8 @@ Equivalence of pairs is symmetric.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Congruence Subgroup Pair](congruence-subgroup-pair.md)
+- [Is Equivalent](is-equivalent.md)
 
 ## Sources
 

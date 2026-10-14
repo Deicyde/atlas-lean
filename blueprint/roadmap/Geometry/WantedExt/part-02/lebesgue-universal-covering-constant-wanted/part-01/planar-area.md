@@ -12,7 +12,7 @@ Planar Lebesgue area, retained in `ENNReal` to preserve infinite area.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
 
 ## Sources
 

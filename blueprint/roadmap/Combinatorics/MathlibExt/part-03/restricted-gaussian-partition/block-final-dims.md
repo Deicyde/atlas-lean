@@ -12,7 +12,13 @@ Realize block `i` and its optional branch independently of all other blocks.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Block](block.md)
+- [Branch Step](branch-step.md)
+
+## Proof depends on
+
+- [Apply Split](apply-split.md)
+- [Basic Count](basic-count.md)
 
 ## Sources
 

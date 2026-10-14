@@ -13,7 +13,12 @@ with its starting index, built by naive insertion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Radix Trie](../../part-02/radix-trie/part-01/radix-trie.md)
+
+## Proof depends on
+
+- [Build From](../../part-02/radix-trie/part-02/build-from.md)
+- [Suffix Entries](suffix-entries.md)
 
 ## Sources
 

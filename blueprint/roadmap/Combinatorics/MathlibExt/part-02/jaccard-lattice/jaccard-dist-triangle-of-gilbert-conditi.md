@@ -13,7 +13,14 @@ Triangle inequality for Jaccard distance under the Gilbert condition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gilbert Condition](gilbert-condition.md)
+- [Is Strictly Positive](is-strictly-positive.md)
+- [Jaccard Dist](jaccard-dist.md)
+
+## Proof depends on
+
+- [Is Modular Valuation](is-modular-valuation.md)
+- [Jaccard Dist eq div](jaccard-dist-eq-div.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ The polynomial valuation is at most the valuation of every nonzero coefficient.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Padic Valuation](padic-valuation.md)
 
 ## Sources
 

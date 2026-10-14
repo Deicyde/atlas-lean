@@ -14,7 +14,8 @@ some neighbourhood intersected with `S` carries normal convergence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Converges Locally Normally On](converges-locally-normally-on.md)
+- [Converges Normally On](converges-normally-on.md)
 
 ## Sources
 

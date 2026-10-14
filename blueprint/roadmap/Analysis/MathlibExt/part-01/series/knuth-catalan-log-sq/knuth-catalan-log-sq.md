@@ -15,6 +15,10 @@ Knuth's identity for central binomial coefficients and harmonic numbers.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Knuth catalan log sq canonical](knuth-catalan-log-sq-canonical.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Series.KnuthCatalanLogSq](../../../../../../sources/v2/MathlibExt.md)

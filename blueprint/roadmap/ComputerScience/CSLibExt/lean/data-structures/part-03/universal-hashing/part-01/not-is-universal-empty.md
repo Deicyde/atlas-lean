@@ -14,7 +14,11 @@ its meaning is a bound on the collision probability for a uniformly chosen membe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Universal](is-universal.md)
+
+## Proof depends on
+
+- [Collision Count](collision-count.md)
 
 ## Sources
 

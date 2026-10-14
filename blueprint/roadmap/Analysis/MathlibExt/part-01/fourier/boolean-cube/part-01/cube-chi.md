@@ -12,7 +12,11 @@ The Fourier character `χ_S(x) = ∏_{i ∈ S} x_i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](bool-cube.md)
+
+## Proof depends on
+
+- [Cube Val](cube-val.md)
 
 ## Sources
 

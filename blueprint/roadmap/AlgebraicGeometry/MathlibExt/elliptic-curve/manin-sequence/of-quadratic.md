@@ -13,7 +13,7 @@ values do not both vanish.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Manin Degree Data](manin-degree-data.md)
 
 ## Sources
 

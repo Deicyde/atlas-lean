@@ -13,7 +13,9 @@ Inspection returns an element stored in the heap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Min Heap](min-heap.md)
+- [Elements](elements.md)
+- [Min?](min.md)
 
 ## Sources
 

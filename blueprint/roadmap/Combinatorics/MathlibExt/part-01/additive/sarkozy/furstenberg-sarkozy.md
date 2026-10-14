@@ -17,7 +17,7 @@ arbitrarily large N.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Initial Segment Count](initial-segment-count.md)
 
 ## Sources
 

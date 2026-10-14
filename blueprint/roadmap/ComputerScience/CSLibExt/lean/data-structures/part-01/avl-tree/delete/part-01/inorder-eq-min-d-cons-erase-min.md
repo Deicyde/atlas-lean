@@ -13,7 +13,8 @@ The inorder traversal of a nonempty tree starts with its minimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Erase Min](erase-min.md)
+- [Min D](min-d.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The setoid whose classes are grand orbits of `f`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Grand Orbit Rel](grand-orbit-rel.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Dynamics.Preperiodic](../../../../sources/v2/MathlibExt.md)

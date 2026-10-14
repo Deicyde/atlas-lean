@@ -13,7 +13,8 @@ A position is a P-position iff every move from it leads to a position that is no
 
 ## Depends on
 
-This node has no prerequisites.
+- [Impartial Game](impartial-game.md)
+- [Is P](is-p.md)
 
 ## Sources
 

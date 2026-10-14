@@ -13,7 +13,9 @@ Peeking at the back returns the last element of the represented sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Deque](deque.md)
+- [Contents](contents.md)
+- [Peek Back](peek-back.md)
 
 ## Sources
 

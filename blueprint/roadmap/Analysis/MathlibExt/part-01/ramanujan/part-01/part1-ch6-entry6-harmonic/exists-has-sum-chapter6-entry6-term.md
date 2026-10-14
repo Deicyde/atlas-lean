@@ -13,7 +13,14 @@ Near the origin the extension is the sum of its Taylor series `∑ chapter6Entry
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter6 Convergent Sum Extension](chapter6-convergent-sum-extension.md)
+- [Chapter6 Entry6 Term](chapter6-entry6-term.md)
+- [Chapter6 Shifted Derived Series Term](chapter6-shifted-derived-series-term.md)
+
+## Proof depends on
+
+- [Chapter6 Derived Series Constant](chapter6-derived-series-constant.md)
+- [Iterated Deriv chapter6 Convergent Sum Extension apply zero](iterated-deriv-chapter6-convergent-sum-e.md)
 
 ## Sources
 

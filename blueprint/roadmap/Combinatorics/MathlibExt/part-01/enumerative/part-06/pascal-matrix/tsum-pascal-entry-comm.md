@@ -13,7 +13,7 @@ The absolutely convergent Pascal-matrix sum can be reversed and factored.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pascal Entry](pascal-entry.md)
 
 ## Sources
 

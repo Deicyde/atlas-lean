@@ -13,7 +13,11 @@ Reconstruction emits at most one operation per consumed or produced symbol.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edit Distance](edit-distance.md)
+
+## Proof depends on
+
+- [Edit Distance reconstruction Steps](edit-distance-reconstruction-steps.md)
 
 ## Sources
 

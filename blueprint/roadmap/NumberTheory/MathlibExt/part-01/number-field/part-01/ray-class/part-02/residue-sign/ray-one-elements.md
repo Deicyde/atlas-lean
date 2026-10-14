@@ -12,7 +12,12 @@ Ray-one subgroup: ray elements trivial at both coordinates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Elements](../ray-group/ray-elements.md)
+
+## Proof depends on
+
+- [Finite Ray One Elements](../../part-01/finite-congruence/finite-ray-one-elements.md)
+- [Positive Ray Elements](../../part-01/infinite-sign/positive-ray-elements.md)
 
 ## Sources
 

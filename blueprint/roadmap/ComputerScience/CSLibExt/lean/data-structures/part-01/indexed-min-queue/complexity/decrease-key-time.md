@@ -13,7 +13,8 @@ Each selected DECREASE-KEY coordinate has the frozen logarithmic bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Indexed Min Queue](../basic/indexed-min-queue.md)
+- [Decrease Key](../basic/decrease-key.md)
 
 ## Sources
 

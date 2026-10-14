@@ -12,7 +12,15 @@ Insert one value, repairing only its arity-dependent ancestor path.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dary Min Heap](dary-min-heap.md)
+
+## Proof depends on
+
+- [Dary Heap Ordered](../part-01/dary-heap-ordered.md)
+- [Dary Sift Up Ready](../part-01/dary-sift-up-ready.md)
+- [Dary Push sift Up Ready](../part-01/dary-push-sift-up-ready.md)
+- [Dary Sift Up](../part-01/dary-sift-up.md)
+- [Dary Sift Up ordered](../part-01/dary-sift-up-ordered.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ The left-most node at depth zero is the seed. Source: Amburg et al., *TRIP-Stern
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trip Stern Tree](trip-stern-tree.md)
+- [Leftmost Node](leftmost-node.md)
 
 ## Sources
 

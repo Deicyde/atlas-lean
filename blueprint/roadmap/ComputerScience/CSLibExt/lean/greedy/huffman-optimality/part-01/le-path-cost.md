@@ -14,7 +14,14 @@ weight multiset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Weight Tree](huffman-weight-tree.md)
+- [Merge Trace](merge-trace.md)
+- [Path Cost](path-cost.md)
+- [Weights](weights.md)
+
+## Proof depends on
+
+- [Contract Least Pair](contract-least-pair.md)
 
 ## Sources
 

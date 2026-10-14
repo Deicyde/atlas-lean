@@ -23,6 +23,12 @@ for all `ε > 0`, only finitely many `α` have `tr(α)/deg(α) < λ - ε`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Totally Positive](is-totally-positive.md)
+- [Degree](degree.md)
+- [Trace](trace.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.AlgebraicIntegersWanted](../../../../../sources/v2/WantedExt.md)

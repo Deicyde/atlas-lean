@@ -18,6 +18,11 @@ The source concept is `jis_sem_121d1b2b298abdf4f82cc1e3`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Multiset Permutation](is-multiset-permutation.md)
+- [Multiset Descent Number](multiset-descent-number.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MultisetEulerianNumber](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,16 @@ Deleting a key erases it from the inorder traversal of an ordered tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Del](del.md)
+- [Inorder join](inorder-join.md)
+- [Join](join.md)
+- [Mem join](mem-join.md)
+- [Ordered join](ordered-join.md)
+- [Rebalance](rebalance.md)
 
 ## Sources
 

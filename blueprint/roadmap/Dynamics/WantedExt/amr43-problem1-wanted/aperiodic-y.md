@@ -13,7 +13,12 @@ periodic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [YAmb](yamb.md)
+
+## Proof depends on
+
+- [Y](y.md)
+- [Unit Shift](../../MathlibExt/symbolic-dynamics/full-shift/unit-shift.md)
 
 ## Sources
 

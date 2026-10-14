@@ -14,6 +14,11 @@ Logarithm of the Möbius-weighted product `F_9(n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ratio9](ratio9.md)
+- [W9](../../grid/part-01/w9.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Lower](../../../../../../../../sources/v2/MathlibExt.md)

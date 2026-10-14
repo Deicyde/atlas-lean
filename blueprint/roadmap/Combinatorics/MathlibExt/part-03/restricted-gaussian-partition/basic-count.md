@@ -13,7 +13,7 @@ Computed basic Gaussian multiplicity of block `i`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Block](block.md)
 
 ## Sources
 

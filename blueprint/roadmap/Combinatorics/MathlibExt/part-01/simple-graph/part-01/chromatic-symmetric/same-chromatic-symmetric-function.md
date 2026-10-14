@@ -16,6 +16,10 @@ counts for every finite palette and multiplicity profile.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chromatic Profile Count](chromatic-profile-count.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.ChromaticSymmetric](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,12 @@ Vanishing when `M < k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gauss Binom](gauss-binom.md)
+
+## Proof depends on
+
+- [Gauss Binom succ succ](gauss-binom-succ-succ.md)
+- [Gauss Binom zero succ](gauss-binom-zero-succ.md)
 
 ## Sources
 

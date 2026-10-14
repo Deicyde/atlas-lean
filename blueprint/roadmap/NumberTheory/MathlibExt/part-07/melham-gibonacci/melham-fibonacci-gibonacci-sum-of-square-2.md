@@ -23,6 +23,10 @@ Proves `Wanted` entry `melham_fibonacci_gibonacci_sum_of_squares`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Melham fibonacci gibonacci sum of squares general](melham-fibonacci-gibonacci-sum-of-square.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.MelhamGibonacci](../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,11 @@ The stored keys of a radix trie, in stored sibling order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Radix Trie](../part-01/radix-trie.md)
+
+## Proof depends on
+
+- [Entries](entries.md)
 
 ## Sources
 

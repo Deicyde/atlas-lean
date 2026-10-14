@@ -13,7 +13,13 @@ The shifted witness agrees with the series where 0 < re s.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Log Dirichlet Series](../../../../part-01/lseries/prime-log/log-dirichlet-series.md)
+- [Shifted Log Dirichlet Continuation](shifted-log-dirichlet-continuation.md)
+
+## Proof depends on
+
+- [Log Dirichlet Continuation](../../../../part-01/lseries/prime-log/log-dirichlet-continuation.md)
+- [Log Dirichlet Continuation agree](../../../../part-01/lseries/prime-log/log-dirichlet-continuation-agree.md)
 
 ## Sources
 

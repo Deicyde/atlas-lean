@@ -13,7 +13,7 @@ The zeroth Lagrange-series coefficient is one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lagrange Series Coefficient](lagrange-series-coefficient.md)
 
 ## Sources
 

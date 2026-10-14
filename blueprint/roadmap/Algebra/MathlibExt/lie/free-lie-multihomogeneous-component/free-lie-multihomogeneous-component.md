@@ -18,6 +18,10 @@ distinguishes multidegrees, not only total bracket length.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Free Lie Monomial](is-free-lie-monomial.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Lie.FreeLieMultihomogeneousComponent](../../../../../sources/v2/MathlibExt.md)

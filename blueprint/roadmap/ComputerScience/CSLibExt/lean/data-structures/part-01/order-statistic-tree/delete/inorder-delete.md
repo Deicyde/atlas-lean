@@ -13,7 +13,11 @@ Traversal deletion removes exactly the deleted key from the inorder list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Delete](delete.md)
+
+## Proof depends on
+
+- [Merge](merge.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ lean: DVRResidue.adjoinRoot_isLocalRing_of_monic_of_irreducible_map
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Adjoin Root map maximal Ideal is Maximal](adjoin-root-map-maximal-ideal-is-maximal.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.LocalRing.ResidueField.AdjoinRootLift](../../../../../../sources/v2/MathlibExt.md)

@@ -14,6 +14,11 @@ Delete a key, leaving a valid red-black tree.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Del](del.md)
+- [Rebalance](rebalance.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.RedBlackTree.Delete](../../../../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,7 @@ All stored keys: the flattened groups.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Grouped YFast Trie](grouped-yfast-trie.md)
 
 ## Sources
 

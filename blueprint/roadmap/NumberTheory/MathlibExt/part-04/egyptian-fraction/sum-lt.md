@@ -13,7 +13,11 @@ The reciprocal sum of a nondecreasing underapproximation is below its target.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Nondecreasing Underapproximation](is-nondecreasing-underapproximation.md)
+
+## Proof depends on
+
+- [Is Nondecreasing Egyptian](is-nondecreasing-egyptian.md)
 
 ## Sources
 

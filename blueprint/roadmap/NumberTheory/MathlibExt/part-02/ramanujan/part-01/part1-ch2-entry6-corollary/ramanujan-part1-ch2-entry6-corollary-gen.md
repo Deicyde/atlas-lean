@@ -14,7 +14,11 @@ lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch2.Entry6Corollary.ramanujan_part1
 
 ## Depends on
 
-This node has no prerequisites.
+- [A](a.md)
+
+## Proof depends on
+
+- [A two mul add one](a-two-mul-add-one.md)
 
 ## Sources
 

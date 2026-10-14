@@ -12,7 +12,7 @@ The multiplicative homomorphism underlying evaluation of divisors against `f`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Curve Divisor](../divisor/curve-divisor.md)
 
 ## Sources
 

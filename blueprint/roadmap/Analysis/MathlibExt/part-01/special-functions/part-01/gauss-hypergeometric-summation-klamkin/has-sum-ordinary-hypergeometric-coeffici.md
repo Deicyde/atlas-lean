@@ -16,6 +16,10 @@ Gamma quotient as its sum.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gauss hypergeometric summation klamkin](gauss-hypergeometric-summation-klamkin.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.GaussHypergeometricSummationKlamkin](../../../../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,8 @@ all next/prev links and satellite payloads are unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circular Represents](../basic/circular-represents.md)
+- [List Search Sentinel](list-search-sentinel.md)
 
 ## Sources
 

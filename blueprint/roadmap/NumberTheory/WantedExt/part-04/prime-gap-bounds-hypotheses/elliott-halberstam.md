@@ -14,6 +14,10 @@ The complete dyadic EH assumption below its excluded endpoint one.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Elliott Halberstam At](elliott-halberstam-at.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.PrimeGapBoundsHypotheses](../../../../../sources/v2/WantedExt.md)

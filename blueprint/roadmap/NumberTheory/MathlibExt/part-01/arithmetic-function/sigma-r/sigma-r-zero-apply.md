@@ -13,7 +13,11 @@ At exponent zero, `sigmaR` counts the divisors of its input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma R](sigma-r.md)
+
+## Proof depends on
+
+- [Sigma R apply](sigma-r-apply.md)
 
 ## Sources
 

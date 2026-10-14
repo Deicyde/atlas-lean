@@ -14,7 +14,14 @@ to one (forward exactness input; ATLAS lines 1160--1175).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integral Units To Ray Elements](../integral-units/integral-units-to-ray-elements.md)
+- [Principal Ray Ideal Map](../principal-ideal/principal-ray-ideal-map.md)
+
+## Proof depends on
+
+- [Integral Units To Field Units](../integral-units/integral-units-to-field-units.md)
+- [Principal Ray Ideal Map apply](../principal-ideal/principal-ray-ideal-map-apply.md)
+- [To Principal Ideal eq iff exists integral Unit mul](../principal-ideal/to-principal-ideal-eq-iff-exists-integra.md)
 
 ## Sources
 

@@ -13,7 +13,11 @@ The normalized radial majorant is nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Majorant](wiman-majorant.md)
+
+## Proof depends on
+
+- [Wiman Term nonneg](wiman-term-nonneg.md)
 
 ## Sources
 

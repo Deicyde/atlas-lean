@@ -13,7 +13,8 @@ lean: MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry6Harmonic.hasSum_chapter6Deriv
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter6 Derived Series Constant](chapter6-derived-series-constant.md)
+- [Chapter6 Shifted Derived Series Term](chapter6-shifted-derived-series-term.md)
 
 ## Sources
 

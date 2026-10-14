@@ -13,7 +13,8 @@ Every key of a split part is a key of the original tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
+- [Split](split.md)
 
 ## Sources
 

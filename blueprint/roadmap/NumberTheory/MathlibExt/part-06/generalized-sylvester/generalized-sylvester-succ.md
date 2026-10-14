@@ -13,7 +13,7 @@ The recurrence for the generalized Sylvester sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Sylvester](generalized-sylvester.md)
 
 ## Sources
 

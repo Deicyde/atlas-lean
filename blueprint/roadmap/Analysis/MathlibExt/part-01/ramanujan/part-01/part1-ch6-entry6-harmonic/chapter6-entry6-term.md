@@ -15,6 +15,10 @@ The `j`-th term `-c_{j+1} x^{j+1} / (j+1)!` of the Taylor series of
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter6 Derived Series Constant](chapter6-derived-series-constant.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch6Entry6Harmonic](../../../../../../../sources/v2/MathlibExt.md)

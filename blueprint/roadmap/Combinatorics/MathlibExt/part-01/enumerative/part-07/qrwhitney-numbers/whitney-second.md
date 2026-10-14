@@ -18,6 +18,10 @@ Concept `jis_sem_1510537ed21edced61e4c308`; statements `jis_b6c9b8526668212b3d27
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Q Brack](q-brack.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.QRWhitneyNumbers](../../../../../../../sources/v2/MathlibExt.md)

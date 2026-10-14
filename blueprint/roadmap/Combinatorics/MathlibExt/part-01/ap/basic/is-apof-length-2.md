@@ -14,6 +14,10 @@ A list is an arithmetic progression of length `l` for some first term and differ
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is APOf Length With](is-apof-length-with-2.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.AP.Basic](../../../../../../sources/v2/MathlibExt.md)

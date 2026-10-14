@@ -13,7 +13,11 @@ The actual signed min-plus return is optimal among walks within the squared edge
 
 ## Depends on
 
-This node has no prerequisites.
+- [Faster APSP](../basic/faster-apsp.md)
+
+## Proof depends on
+
+- [Faster APSP ret](../basic/faster-apsp-ret.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ Joint sign of a ray element at the infinite places of the modulus.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sign At Real Place](sign-at-real-place.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.InfiniteSign](../../../../../../../../../sources/v2/MathlibExt.md)

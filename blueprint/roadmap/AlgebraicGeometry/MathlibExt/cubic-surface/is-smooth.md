@@ -13,7 +13,11 @@ defining cubic and its partial derivatives.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cubic Surface](cubic-surface.md)
+
+## Proof depends on
+
+- [Is Singular Point](is-singular-point.md)
 
 ## Sources
 

@@ -14,7 +14,14 @@ root tree and the addressed subtree instead of the cut remainder.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decrease Key](../part-01/decrease-key.md)
+- [Subtree At](../part-01/subtree-at.md)
+
+## Proof depends on
+
+- [Cut Tree At](../part-01/cut-tree-at.md)
+- [Cut Tree At of subtree At](../part-01/cut-tree-at-of-subtree-at.md)
+- [Decrease Key elements](decrease-key-elements.md)
 
 ## Sources
 

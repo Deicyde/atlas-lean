@@ -15,6 +15,11 @@ Horizontal side bound over `[c, U]`, exact value (no sign hypothesis on `L`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integral exp mul](../part-01/integral-exp-mul.md)
+- [Norm cpow of Real](../part-01/norm-cpow-of-real.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.PerronKernel](../../../../../../sources/v2/MathlibExt.md)

@@ -14,6 +14,10 @@ A profile assigns each voter a strict total order over alternatives.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Strict Total Order](strict-total-order.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GameTheory.SocialChoice.Arrow](../../../../../sources/v2/MathlibExt.md)

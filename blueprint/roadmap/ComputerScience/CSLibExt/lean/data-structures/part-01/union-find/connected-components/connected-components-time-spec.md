@@ -13,7 +13,11 @@ Actual MAKE-SET, FIND-SET and conditional UNION call counts, with conservation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Connected Components](connected-components.md)
+
+## Proof depends on
+
+- [Check Equiv spec](check-equiv-spec.md)
 
 ## Sources
 

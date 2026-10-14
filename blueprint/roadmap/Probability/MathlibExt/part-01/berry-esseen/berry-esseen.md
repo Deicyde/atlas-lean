@@ -15,6 +15,10 @@ Universal `C>0` with `sup_x |F_{Sₙ}(x)-Φ(x)| ≤ C ρ/(σ³√n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Berry esseen explicit](berry-esseen-explicit.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.BerryEsseen](../../../../../sources/v2/MathlibExt.md)

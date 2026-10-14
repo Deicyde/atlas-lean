@@ -13,7 +13,7 @@ A Dickman–de Bruijn function equals one on `[0, 1]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dickman De Bruijn](is-dickman-de-bruijn.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ A fixed fan-in bound gives a linear selected-event bound, including rejects.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Verify Boolean Certificate](verify-boolean-certificate.md)
+- [Boolean Signature](../../../../../Computability/CSLibExt/circuit/boolean/boolean-signature.md)
+
+## Proof depends on
+
+- [Verify Boolean Certificate time](verify-boolean-certificate-time.md)
 
 ## Sources
 

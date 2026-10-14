@@ -14,7 +14,8 @@ a prime. `noncomputable abbrev` so reduction exposes standard real and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Place](place.md)
+- [Completed Field Bundle](completed-field-bundle.md)
 
 ## Sources
 

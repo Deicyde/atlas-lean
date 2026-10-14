@@ -13,7 +13,14 @@ For `p ^ 2 > 10 * Q9 * n`, only `j = 1` contributes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G9r](../part-01/g9r.md)
+- [Q9](../../grid/part-01/q9.md)
+- [Nu9](nu9.md)
+
+## Proof depends on
+
+- [G9r vanish of](g9r-vanish-of.md)
+- [Nu9 eq sum G](nu9-eq-sum-g.md)
 
 ## Sources
 

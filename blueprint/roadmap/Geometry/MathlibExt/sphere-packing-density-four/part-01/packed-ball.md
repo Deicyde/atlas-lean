@@ -12,7 +12,8 @@ Source: CE2003, the packed closed ball at a center, including its boundary.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Packing](packing.md)
+- [Space](space.md)
 
 ## Sources
 

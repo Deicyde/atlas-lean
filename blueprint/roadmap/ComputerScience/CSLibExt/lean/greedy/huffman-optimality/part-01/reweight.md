@@ -13,7 +13,12 @@ Change one specified leaf occurrence and record its exact cost change.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Weight Tree](huffman-weight-tree.md)
+- [Contains At](contains-at.md)
+- [Height](height.md)
+- [Path Cost](path-cost.md)
+- [Total Weight](total-weight.md)
+- [Weights](weights.md)
 
 ## Sources
 

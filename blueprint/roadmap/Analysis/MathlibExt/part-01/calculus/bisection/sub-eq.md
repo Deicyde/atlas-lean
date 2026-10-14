@@ -13,7 +13,7 @@ The length of the `n`th bisection interval is the initial length divided by `2 ^
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bisection Sequence](is-bisection-sequence.md)
 
 ## Sources
 

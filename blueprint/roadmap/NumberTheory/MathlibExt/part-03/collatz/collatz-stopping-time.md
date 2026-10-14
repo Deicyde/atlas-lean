@@ -15,6 +15,10 @@ and for values not known to reach `1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Collatz Iterate](collatz-iterate.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Collatz](../../../../../sources/v2/MathlibExt.md)

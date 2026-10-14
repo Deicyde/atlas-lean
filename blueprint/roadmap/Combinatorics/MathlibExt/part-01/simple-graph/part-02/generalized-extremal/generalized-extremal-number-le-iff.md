@@ -14,7 +14,7 @@ if and only if every `H`-free host has at most `m` copies of `T`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Extremal Number](generalized-extremal-number.md)
 
 ## Sources
 

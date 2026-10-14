@@ -21,6 +21,10 @@ See https://en.wikipedia.org/wiki/Casey%27s_theorem.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Casey theorem cyclic order core](casey-theorem-cyclic-order-core.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.CaseyTheoremCyclicOrder](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,14 @@ Global bound `G9r x ≤ 3` for `x ≥ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [G9r](g9r.md)
+
+## Proof depends on
+
+- [G9](../../grid/part-01/g9.md)
+- [G9 eq mod](g9-eq-mod.md)
+- [G9r eq grid](g9r-eq-grid.md)
+- [M9 le](../../grid/part-01/m9-le.md)
 
 ## Sources
 

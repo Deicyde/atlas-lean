@@ -21,6 +21,13 @@ Strong complete-DVR Hensel endpoint: an approximate root with
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Add Val lt add Val add of mem maximal Ideal](add-val-lt-add-val-add-of-mem-maximal-id.md)
+- [Add Val derivative eval eq of lt add Val sub](add-val-derivative-eval-eq-of-lt-add-val.md)
+- [Eq of is Root of add Val derivative lt add Val sub](eq-of-is-root-of-add-val-derivative-lt-a.md)
+- [Exists is Root sub mem maximal Ideal of is Unit derivative](exists-is-root-sub-mem-maximal-ideal-of.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.DiscreteValuationRing.Hensel](../../../../../sources/v2/MathlibExt.md)

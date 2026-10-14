@@ -13,7 +13,7 @@ Increasing an admissible radius preserves admissibility.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Radius](is-admissible-radius.md)
 
 ## Sources
 

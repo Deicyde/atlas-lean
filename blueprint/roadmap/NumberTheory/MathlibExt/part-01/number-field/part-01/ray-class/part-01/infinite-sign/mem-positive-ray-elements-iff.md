@@ -13,7 +13,12 @@ Membership in `positiveRayElements` is positivity at infinity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Positive Ray Elements](positive-ray-elements.md)
+
+## Proof depends on
+
+- [Infinite Sign Map](infinite-sign-map.md)
+- [Infinite Sign Map eq one iff](infinite-sign-map-eq-one-iff.md)
 
 ## Sources
 

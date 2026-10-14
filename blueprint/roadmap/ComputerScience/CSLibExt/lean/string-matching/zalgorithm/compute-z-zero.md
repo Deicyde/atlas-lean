@@ -13,7 +13,7 @@ The source's undefined first entry is completed with the full input length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compute Z](compute-z.md)
 
 ## Sources
 

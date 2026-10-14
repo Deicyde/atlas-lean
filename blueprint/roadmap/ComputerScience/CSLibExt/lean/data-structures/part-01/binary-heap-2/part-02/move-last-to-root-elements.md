@@ -13,7 +13,7 @@ Last-to-root replacement removes exactly one occurrence of the old root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Move Last To Root](move-last-to-root.md)
 
 ## Sources
 

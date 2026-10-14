@@ -13,7 +13,16 @@ The inorder keys of an ordered tree are strictly increasing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Ordered](../part-01/ordered.md)
+- [Keys](keys.md)
+
+## Proof depends on
+
+- [All Nodes](../part-01/all-nodes.md)
+- [All Nodes key iff](all-nodes-key-iff.md)
+- [Keys node](keys-node.md)
+- [Mem keys](mem-keys.md)
 
 ## Sources
 

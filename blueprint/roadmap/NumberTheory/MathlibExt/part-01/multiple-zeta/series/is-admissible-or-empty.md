@@ -13,7 +13,12 @@ empty index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
+
+## Proof depends on
+
+- [Is Admissible](../index/is-admissible.md)
+- [Depth](../index/depth.md)
 
 ## Sources
 

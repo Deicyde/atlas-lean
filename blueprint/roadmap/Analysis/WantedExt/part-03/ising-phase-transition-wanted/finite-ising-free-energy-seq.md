@@ -14,6 +14,10 @@ Free energy along positive side lengths `n+1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Finite Ising Free Energy](finite-ising-free-energy.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.IsingPhaseTransitionWanted](../../../../../sources/v2/WantedExt.md)

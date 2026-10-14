@@ -15,7 +15,19 @@ Balance is automatic from the height index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ins Spec](ins-spec.md)
+- [Ordered](../part-01/ordered.md)
+- [Tree](../part-01/tree.md)
+- [Ins](../part-01/ins.md)
+
+## Proof depends on
+
+- [All](../part-01/all.md)
+- [Overflow](../part-01/overflow.md)
+- [All iff forall flatten](../part-01/all-iff-forall-flatten.md)
+- [Flatten](../part-01/flatten.md)
+- [Flatten Aux](../part-01/flatten-aux.md)
+- [Ordered Insert](../../../part-02/ordered-insert/ordered-insert.md)
 
 ## Sources
 

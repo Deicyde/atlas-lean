@@ -13,7 +13,13 @@ Removing the minimum preserves the AVL balance invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Erase Min](erase-min.md)
+
+## Proof depends on
+
+- [Cache Correct erase Min](cache-correct-erase-min.md)
+- [Height erase Min le](height-erase-min-le.md)
+- [Le height erase Min](le-height-erase-min.md)
 
 ## Sources
 

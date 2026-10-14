@@ -14,7 +14,7 @@ number of copies of `T`: `G.copyCount T ≤ generalizedExtremalNumber n T H`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Extremal Number](generalized-extremal-number.md)
 
 ## Sources
 

@@ -13,7 +13,15 @@ The inorder traversal of the Cartesian tree of `xs` is `xs` itself.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inorder](../binary-search-tree/part-01/inorder.md)
+- [Build](build.md)
+
+## Proof depends on
+
+- [Inorder Aux](../binary-search-tree/part-01/inorder-aux.md)
+- [Build Fuel](build-fuel.md)
+- [List Min](list-min.md)
+- [Split At First](split-at-first.md)
 
 ## Sources
 

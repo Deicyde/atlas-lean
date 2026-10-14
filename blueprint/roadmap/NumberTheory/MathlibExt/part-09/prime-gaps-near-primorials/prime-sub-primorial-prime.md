@@ -14,7 +14,11 @@ lean: MetaMathlibExt.AreConsecutivePrimes.prime_sub_primorial_prime
 
 ## Depends on
 
-This node has no prerequisites.
+- [Are Consecutive Primes](../../part-04/consecutive-prime/are-consecutive-primes.md)
+
+## Proof depends on
+
+- [Prime sub primorial prime of between consecutive primes general](prime-sub-primorial-prime-of-between-con.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ A chosen index `i : Fin (n+1)` with `p.rep i ≠ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proj Space](proj-space.md)
 
 ## Sources
 

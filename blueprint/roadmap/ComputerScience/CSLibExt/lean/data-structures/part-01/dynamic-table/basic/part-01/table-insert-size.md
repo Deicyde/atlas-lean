@@ -13,7 +13,8 @@ The actual first allocation and full-table doubling determine the returned capac
 
 ## Depends on
 
-This node has no prerequisites.
+- [Table](table.md)
+- [Table Insert](table-insert.md)
 
 ## Sources
 

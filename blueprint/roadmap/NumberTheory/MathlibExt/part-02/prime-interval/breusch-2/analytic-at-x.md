@@ -13,7 +13,12 @@ Analytic prime interval above `5600 * 4762 / 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper ineq](upper-ineq.md)
+
+## Proof depends on
+
+- [Main contra](main-contra.md)
+- [Overlap](overlap.md)
 
 ## Sources
 

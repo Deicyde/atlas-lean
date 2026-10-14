@@ -13,7 +13,7 @@ Unfolding of `IsBridgeless`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bridgeless](is-bridgeless.md)
 
 ## Sources
 

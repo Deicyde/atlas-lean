@@ -14,6 +14,10 @@ Marginal entropy `H(X_S) = -∑_y P_S(y) log P_S(y)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Shearer Marginal](shearer-marginal.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.InformationTheory.Shearer](../../../../sources/v2/MathlibExt.md)

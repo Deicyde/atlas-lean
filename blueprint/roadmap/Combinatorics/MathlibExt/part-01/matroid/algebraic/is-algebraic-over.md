@@ -17,6 +17,10 @@ required to live in `max u v`, holding both `K` and `E`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Algebraic Representation](algebraic-representation.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Matroid.Algebraic](../../../../../../sources/v2/MathlibExt.md)

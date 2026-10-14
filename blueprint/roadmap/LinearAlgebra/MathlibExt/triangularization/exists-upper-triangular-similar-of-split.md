@@ -19,6 +19,10 @@ conjugate by the change-of-basis matrix from the standard basis.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists basis upper Triangular to Matrix](exists-basis-upper-triangular-to-matrix.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Triangularization](../../../../sources/v2/MathlibExt.md)

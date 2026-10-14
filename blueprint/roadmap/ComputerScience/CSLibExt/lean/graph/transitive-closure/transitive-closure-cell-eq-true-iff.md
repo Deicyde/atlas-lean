@@ -13,7 +13,13 @@ The returned Boolean is true exactly for canonical reflexive-transitive reachabi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Transitive Closure](transitive-closure.md)
+
+## Proof depends on
+
+- [Internal Vertices Below](../shortest-path/floyd-warshall/basic/internal-vertices-below.md)
+- [Transitive Closure Stages](transitive-closure-stages.md)
+- [Transitive Closure Stages cell eq true iff](transitive-closure-stages-cell-eq-true-i.md)
 
 ## Sources
 

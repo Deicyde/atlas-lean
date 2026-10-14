@@ -13,7 +13,11 @@ A Dickman–de Bruijn function is nonnegative at nonnegative arguments.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dickman De Bruijn](is-dickman-de-bruijn.md)
+
+## Proof depends on
+
+- [Maps To Ici Icc](maps-to-ici-icc.md)
 
 ## Sources
 

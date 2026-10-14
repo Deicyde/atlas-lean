@@ -14,6 +14,11 @@ lean: MetaMathlibExt.upsilon₃
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dixon Bound](dixon-bound.md)
+- [Dixon Summand](dixon-summand.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.DixonSummation](../../../../../sources/v2/MathlibExt.md)

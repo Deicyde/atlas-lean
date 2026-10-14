@@ -18,6 +18,14 @@ Lehmer's arcsine series.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Part1 Ch9 Entry20 Piseries1](../ramanujan-part1-ch9-entry20-piseries1.md)
+- [Part1 Ch9 Entry21 Piseries2](../ramanujan-part1-ch9-entry21-piseries2.md)
+- [Chapter9 Chi3 At One eq entry21](chapter9-chi3-at-one-eq-entry21.md)
+- [Chapter9 Chi3 Term eq entry21](chapter9-chi3-term-eq-entry21.md)
+- [Chapter9 Entry23 Factorial Term eq entry20](chapter9-entry23-factorial-term-eq-entry.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch9Entry22Chudnovsky](../../../../../../../sources/v2/MathlibExt.md)

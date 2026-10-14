@@ -13,7 +13,12 @@ Deletion preserves the allocation status of every cell.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../basic/node.md)
+- [List Delete](list-delete.md)
+
+## Proof depends on
+
+- [List Delete get](list-delete-get.md)
 
 ## Sources
 

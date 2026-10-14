@@ -13,7 +13,7 @@ The third absolute moment is integrable, not a totalized nonintegrable integral.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Standardized Law](is-standardized-law.md)
 
 ## Sources
 

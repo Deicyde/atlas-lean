@@ -16,6 +16,10 @@ eventually in `N`, for every `ε > 0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Discrep](discrep.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosSequenceDiscrepancyWanted](../../../../../sources/v2/WantedExt.md)

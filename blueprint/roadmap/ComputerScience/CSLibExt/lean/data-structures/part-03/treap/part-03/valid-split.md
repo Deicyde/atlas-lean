@@ -13,7 +13,16 @@ Splitting a valid treap produces two valid treaps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../part-01/tree.md)
+- [Valid](../part-01/valid.md)
+- [Split](../part-01/split.md)
+
+## Proof depends on
+
+- [Heap Ordered](../part-01/heap-ordered.md)
+- [Ordered](../part-01/ordered.md)
+- [Heap Ordered split](heap-ordered-split.md)
+- [Ordered split](../part-02/ordered-split.md)
 
 ## Sources
 

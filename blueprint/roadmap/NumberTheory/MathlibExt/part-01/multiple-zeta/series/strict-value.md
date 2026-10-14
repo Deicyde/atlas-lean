@@ -12,7 +12,14 @@ The ordinary strict multiple-zeta series over decreasing tuples.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
+- [Is Admissible Or Empty](is-admissible-or-empty.md)
+
+## Proof depends on
+
+- [Depth](../index/depth.md)
+- [Strict Decreasing Tuple](strict-decreasing-tuple.md)
+- [Strict Summand](strict-summand.md)
 
 ## Sources
 

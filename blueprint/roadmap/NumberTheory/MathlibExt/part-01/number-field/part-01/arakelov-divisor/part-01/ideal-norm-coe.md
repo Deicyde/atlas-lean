@@ -13,7 +13,8 @@ Coercion of the ideal norm to the reals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Arakelov Divisor](arakelov-divisor.md)
+- [Ideal Norm](ideal-norm.md)
 
 ## Sources
 

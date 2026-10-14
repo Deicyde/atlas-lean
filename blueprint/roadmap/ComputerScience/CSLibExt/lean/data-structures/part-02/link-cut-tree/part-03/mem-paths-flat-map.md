@@ -15,7 +15,15 @@ holds for every state, with no validity hypothesis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Vertices](../../euler-tour-tree/part-01/vertices.md)
+- [State](state.md)
+- [Paths](paths.md)
+
+## Proof depends on
+
+- [Perm tree Paths flat Map](perm-tree-paths-flat-map.md)
+- [Tree Paths](tree-paths.md)
 
 ## Sources
 

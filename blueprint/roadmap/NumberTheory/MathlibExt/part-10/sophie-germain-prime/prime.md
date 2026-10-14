@@ -13,7 +13,7 @@ A Sophie Germain prime is prime.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sophie Germain Prime](is-sophie-germain-prime.md)
 
 ## Sources
 

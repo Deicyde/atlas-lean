@@ -14,6 +14,10 @@ Single summand of `upsilon_3`: `(-1)^k` times the three binomial factors.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Int Binom](int-binom.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.DixonSummation](../../../../../sources/v2/MathlibExt.md)

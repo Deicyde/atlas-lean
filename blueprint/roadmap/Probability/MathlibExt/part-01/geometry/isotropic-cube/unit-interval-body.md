@@ -12,7 +12,11 @@ The actual cube in dimension one, with endpoints included.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Full Dimensional Body](../isotropic-constant/full-dimensional-body.md)
+
+## Proof depends on
+
+- [Interval Body](interval-body.md)
 
 ## Sources
 

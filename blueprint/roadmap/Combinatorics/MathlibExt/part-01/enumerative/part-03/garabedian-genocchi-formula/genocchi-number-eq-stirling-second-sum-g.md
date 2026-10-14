@@ -17,6 +17,10 @@ Garabedian's explicit formula for the Genocchi numbers, for every `n : ℕ`:
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Garabedian genocchi formula general](../garabedian-bernoulli-stirling/garabedian-genocchi-formula-general.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.GarabedianGenocchiFormula](../../../../../../../sources/v2/MathlibExt.md)

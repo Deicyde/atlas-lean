@@ -14,6 +14,11 @@ The type of all number fields of degree `n` and discriminant `≤ H`, up to isom
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Number Field Of Bounded Discriminant](number-field-of-bounded-discriminant.md)
+- [Iso](iso.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.EnumeratingNumberFieldsWanted](../../../../../sources/v2/WantedExt.md)

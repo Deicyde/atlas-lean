@@ -16,7 +16,15 @@ validity hypothesis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../euler-tour-tree/part-01/tree.md)
+- [Adjacent](../part-01/adjacent.md)
+- [State](state.md)
+- [Paths](paths.md)
+
+## Proof depends on
+
+- [Is Chain of mem tree Paths](is-chain-of-mem-tree-paths.md)
+- [Tree Paths](tree-paths.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ Union preserves every occurrence from both heaps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Heap](../part-02/fibonacci-heap.md)
+- [Elements](elements.md)
+- [Union](union.md)
+
+## Proof depends on
+
+- [Elements meld](elements-meld.md)
 
 ## Sources
 

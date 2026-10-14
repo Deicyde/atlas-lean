@@ -13,7 +13,9 @@ Decoding is a left inverse of encoding.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bitstring Encoding](bitstring-encoding.md)
+- [Bit Decode](bit-decode.md)
+- [Bit Encode](bit-encode.md)
 
 ## Sources
 

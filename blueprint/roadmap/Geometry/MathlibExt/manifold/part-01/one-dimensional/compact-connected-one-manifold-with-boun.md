@@ -18,6 +18,10 @@ collar theorem; Lean states compact connected `𝓡∂ 1` with closed interval s
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Connected boundaryless one manifold classification](connected-boundaryless-one-manifold-clas.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.OneDimensional](../../../../../../sources/v2/MathlibExt.md)

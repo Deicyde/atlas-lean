@@ -12,7 +12,12 @@ Search tower levels from the greatest stored height down to the complete bottom 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skip List](skip-list.md)
+
+## Proof depends on
+
+- [Entry](entry.md)
+- [Search Window](search-window.md)
 
 ## Sources
 

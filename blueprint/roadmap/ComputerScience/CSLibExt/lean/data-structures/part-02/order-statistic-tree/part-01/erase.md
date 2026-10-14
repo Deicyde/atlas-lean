@@ -12,7 +12,11 @@ Remove cached sizes, yielding the underlying binary search tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
+
+## Proof depends on
+
+- [Entry](entry.md)
 
 ## Sources
 

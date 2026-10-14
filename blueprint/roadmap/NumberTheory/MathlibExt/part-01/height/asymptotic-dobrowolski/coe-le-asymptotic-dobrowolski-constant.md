@@ -13,7 +13,8 @@ Every admissible real coefficient is below the extended-real supremum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Asymptotic Dobrowolski Coefficient](is-asymptotic-dobrowolski-coefficient.md)
+- [Asymptotic Dobrowolski Constant](asymptotic-dobrowolski-constant.md)
 
 ## Sources
 

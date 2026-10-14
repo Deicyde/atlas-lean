@@ -14,7 +14,13 @@ all of its zeros lie in the open critical strip.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Riemann Xi](riemann-xi.md)
+
+## Proof depends on
+
+- [Differentiable riemann Xi](differentiable-riemann-xi.md)
+- [Riemann Xi mem strip](riemann-xi-mem-strip.md)
+- [Riemann Xi one sub](riemann-xi-one-sub.md)
 
 ## Sources
 

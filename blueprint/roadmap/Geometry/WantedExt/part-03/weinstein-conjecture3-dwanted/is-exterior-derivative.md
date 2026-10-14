@@ -13,7 +13,12 @@ coordinate-free identity uniquely tying `dα` to `α`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [One Form](one-form.md)
+- [Two Form](two-form.md)
+
+## Proof depends on
+
+- [Smooth Vector Field](smooth-vector-field.md)
 
 ## Sources
 

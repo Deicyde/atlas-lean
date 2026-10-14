@@ -13,7 +13,8 @@ Polynomial growth implies positive growth at every radius.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Polynomial Growth](has-polynomial-growth.md)
+- [Growth](growth.md)
 
 ## Sources
 

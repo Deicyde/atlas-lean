@@ -13,7 +13,7 @@ Unfolding equivalence for rewriting.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is GHarmonic](is-gharmonic.md)
 
 ## Sources
 

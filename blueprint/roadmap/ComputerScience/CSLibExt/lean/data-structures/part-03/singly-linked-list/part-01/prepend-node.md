@@ -13,7 +13,12 @@ The prepended cell keeps its payload and points at the old head.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](node.md)
+- [Prepend](prepend.md)
+
+## Proof depends on
+
+- [Prepend get](prepend-get.md)
 
 ## Sources
 

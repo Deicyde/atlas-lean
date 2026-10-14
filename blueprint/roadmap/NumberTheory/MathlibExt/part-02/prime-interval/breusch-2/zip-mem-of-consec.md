@@ -15,6 +15,10 @@ Consecutive list entries appear in the zip.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Zip cons mem](zip-cons-mem.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch](../../../../../../sources/v2/MathlibExt.md)

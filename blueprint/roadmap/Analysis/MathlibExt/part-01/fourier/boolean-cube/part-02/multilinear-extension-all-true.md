@@ -13,7 +13,13 @@ The all-true function has the product of all variables as its extension.
 
 ## Depends on
 
-This node has no prerequisites.
+- [All True Function](all-true-function.md)
+- [Multilinear Extension](../part-01/multilinear-extension.md)
+
+## Proof depends on
+
+- [Bool Cube](../part-01/bool-cube.md)
+- [Cube Basis](../part-01/cube-basis.md)
 
 ## Sources
 

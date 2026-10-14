@@ -13,7 +13,7 @@ The saved-list traversal returns strictly increasing values, with no duplicates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Subset Sum Sums](exact-subset-sum-sums.md)
 
 ## Sources
 

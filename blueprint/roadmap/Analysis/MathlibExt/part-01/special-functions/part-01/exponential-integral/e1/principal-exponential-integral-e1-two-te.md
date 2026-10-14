@@ -15,6 +15,13 @@ The `n = 2` outer-sector specialization of DLMF 6.12.1 and its remainder bound.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integrable On exp neg mul pow](basic/integrable-on-exp-neg-mul-pow.md)
+- [Integral exp neg mul pow Ioi](basic/integral-exp-neg-mul-pow-ioi.md)
+- [Integral remainder bound](basic/integral-remainder-bound.md)
+- [Two term kernel identity](basic/two-term-kernel-identity.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.ExponentialIntegral.E1.DLMF](../../../../../../../../sources/v2/MathlibExt.md)

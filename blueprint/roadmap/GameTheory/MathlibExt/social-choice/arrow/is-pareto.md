@@ -12,7 +12,12 @@ Pareto/unanimity: if every voter strictly prefers `a` to `b`, so does society.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Social Welfare Function](social-welfare-function.md)
+
+## Proof depends on
+
+- [Profile](profile.md)
+- [Lt](lt.md)
 
 ## Sources
 

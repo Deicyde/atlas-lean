@@ -14,7 +14,12 @@ sphere locally onto the model hyperplane.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amb](amb.md)
+- [Sph](sph.md)
+
+## Proof depends on
+
+- [Model Hyperplane](model-hyperplane.md)
 
 ## Sources
 

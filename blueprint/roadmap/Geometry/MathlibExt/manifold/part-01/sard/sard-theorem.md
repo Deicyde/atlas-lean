@@ -17,7 +17,11 @@ Guillemin-Pollack, Differential Topology; Lean states finite-dimensional manifol
 
 ## Depends on
 
-This node has no prerequisites.
+- [Critical Values](critical-values.md)
+
+## Proof depends on
+
+- [Critical Set](critical-set.md)
 
 ## Sources
 

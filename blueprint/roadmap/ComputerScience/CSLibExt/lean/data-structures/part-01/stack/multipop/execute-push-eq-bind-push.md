@@ -13,7 +13,9 @@ Sequence PUSH agrees with the standalone operation's result and event cost.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Operation](operation.md)
+- [Execute](execute.md)
+- [Push](../basic/push.md)
 
 ## Sources
 

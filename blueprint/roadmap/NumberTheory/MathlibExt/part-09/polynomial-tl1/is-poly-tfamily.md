@@ -20,6 +20,10 @@ i.e. `T_{l-1}(x) = (x ^ (-1/2) / 2) ∫ integrand dx`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [TIntegrand](tintegrand.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PolynomialTL1](../../../../../sources/v2/MathlibExt.md)

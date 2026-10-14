@@ -13,7 +13,11 @@ Transitivity of chromatic-symmetric-function equality.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Same Chromatic Symmetric Function](same-chromatic-symmetric-function.md)
+
+## Proof depends on
+
+- [Chromatic Profile Count](chromatic-profile-count.md)
 
 ## Sources
 

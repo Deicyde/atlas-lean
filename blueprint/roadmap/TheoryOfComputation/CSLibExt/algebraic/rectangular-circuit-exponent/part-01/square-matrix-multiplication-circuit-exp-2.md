@@ -13,7 +13,8 @@ The square operation exponent is definitionally the aspect-one rectangular expon
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectangular Circuit Exponent](rectangular-circuit-exponent.md)
+- [Square Matrix Multiplication Circuit Exponent](square-matrix-multiplication-circuit-exp.md)
 
 ## Sources
 

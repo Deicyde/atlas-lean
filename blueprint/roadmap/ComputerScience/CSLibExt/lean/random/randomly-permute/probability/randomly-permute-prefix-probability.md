@@ -15,7 +15,11 @@ empty and full prefixes are included, with no new probability-event wrapper.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Randomly Permute](../basic/randomly-permute.md)
+
+## Proof depends on
+
+- [Randomly Permute time](../basic/randomly-permute-time.md)
 
 ## Sources
 

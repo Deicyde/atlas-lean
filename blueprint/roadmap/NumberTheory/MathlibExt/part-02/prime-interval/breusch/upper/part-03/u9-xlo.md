@@ -13,7 +13,7 @@ Primes `≤ 1890 * n` give `n / p ≥ 1 / 1890`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q9](../../grid/part-01/q9.md)
 
 ## Sources
 

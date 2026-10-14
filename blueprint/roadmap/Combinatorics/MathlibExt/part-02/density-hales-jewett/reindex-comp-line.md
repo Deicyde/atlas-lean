@@ -13,7 +13,8 @@ Reindexing the ambient coordinates commutes with transporting a line.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reindex](reindex.md)
+- [Comp Line](comp-line.md)
 
 ## Sources
 

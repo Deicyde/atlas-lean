@@ -13,7 +13,11 @@ After the prime two, both endpoints are odd and every gap is at least two.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Gap](../prime-gap.md)
+
+## Proof depends on
+
+- [Prime Gap pos](prime-gap-pos.md)
 
 ## Sources
 

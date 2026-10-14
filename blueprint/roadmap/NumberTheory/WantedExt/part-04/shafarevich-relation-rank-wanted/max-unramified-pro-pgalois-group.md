@@ -15,6 +15,10 @@ extension.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Maximal Unramified Pro PF](maximal-unramified-pro-pf.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ShafarevichRelationRankWanted](../../../../../sources/v2/WantedExt.md)

@@ -15,6 +15,10 @@ Bridge (reverse): the underlying representation of a simple `FDRep` is irreducib
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Irreducible of simple fdrep aux](irreducible-of-simple-fdrep-aux.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.BurnsidePaqb.CharacterOrthogonality](../../../../../../../sources/v2/MathlibExt.md)

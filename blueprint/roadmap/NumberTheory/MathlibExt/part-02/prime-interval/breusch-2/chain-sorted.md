@@ -13,7 +13,7 @@ The chain is strictly increasing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain](chain.md)
 
 ## Sources
 

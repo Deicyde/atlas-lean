@@ -13,7 +13,7 @@ Projection of the diagonal clause (D3).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Poset Matrix](is-poset-matrix.md)
 
 ## Sources
 

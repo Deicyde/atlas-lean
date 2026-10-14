@@ -13,7 +13,7 @@ Removing the minimum preserves the search-tree ordering invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Erase Min](erase-min.md)
 
 ## Sources
 

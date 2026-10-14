@@ -13,7 +13,12 @@ The size of a built tree is the length of its input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Build](build.md)
+- [Size](size.md)
+
+## Proof depends on
+
+- [Block Sum Array](block-sum-array.md)
 
 ## Sources
 

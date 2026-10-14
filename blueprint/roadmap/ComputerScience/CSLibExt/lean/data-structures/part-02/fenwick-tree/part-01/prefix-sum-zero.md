@@ -13,7 +13,8 @@ The empty prefix sums to zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fenwick Tree](fenwick-tree.md)
+- [Prefix Sum](prefix-sum.md)
 
 ## Sources
 

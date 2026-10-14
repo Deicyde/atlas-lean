@@ -14,7 +14,8 @@ vertex. In particular, the coordinate model defines an undirected graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Honeycomb Vertex](honeycomb-vertex.md)
+- [Step](step.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ Terminal value: absence of any candidate digit
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Comma Candidate](is-comma-candidate.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.CommaSequence](../../../../../sources/v2/MathlibExt.md)

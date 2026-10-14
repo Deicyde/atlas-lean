@@ -15,6 +15,10 @@ cohomology with trivial `ZMod p` coefficients.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Trivial ZModp Rep](trivial-zmodp-rep.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ShafarevichRelationRankWanted](../../../../../sources/v2/WantedExt.md)

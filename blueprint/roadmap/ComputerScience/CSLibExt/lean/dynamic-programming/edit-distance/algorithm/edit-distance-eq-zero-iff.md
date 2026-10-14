@@ -13,7 +13,12 @@ Unit-cost edit distance is zero exactly for equal lists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edit Distance](edit-distance.md)
+
+## Proof depends on
+
+- [Edit Distance script cost](edit-distance-script-cost.md)
+- [Edit Distance self](edit-distance-self.md)
 
 ## Sources
 

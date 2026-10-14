@@ -12,7 +12,7 @@ Image of a congruence subgroup in the ray class group.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Congruence Subgroup](congruence-subgroup.md)
 
 ## Sources
 

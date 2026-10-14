@@ -12,7 +12,7 @@ The physical unit frequency in coordinate `i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frequency](../../basic/frequency.md)
 
 ## Sources
 

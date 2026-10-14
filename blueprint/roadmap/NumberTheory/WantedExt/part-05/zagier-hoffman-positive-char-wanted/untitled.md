@@ -15,6 +15,10 @@ spanned by the MZVs of weight `w`. Note that in the paper, `RatFunc F` is denote
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ζ A weight](a-weight.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ZagierHoffmanPositiveCharWanted](../../../../../sources/v2/WantedExt.md)

@@ -13,7 +13,13 @@ Insertion preserves the trie invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trie](trie.md)
+- [Valid](valid.md)
+- [Insert](insert.md)
+
+## Proof depends on
+
+- [Empty](empty.md)
 
 ## Sources
 

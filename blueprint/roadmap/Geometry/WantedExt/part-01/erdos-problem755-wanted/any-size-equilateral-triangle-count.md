@@ -14,6 +14,10 @@ Positive-side equilateral triangles spanned by a point set.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Any Size Equilateral Triangle](is-any-size-equilateral-triangle.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.ErdosProblem755Wanted](../../../../../sources/v2/WantedExt.md)

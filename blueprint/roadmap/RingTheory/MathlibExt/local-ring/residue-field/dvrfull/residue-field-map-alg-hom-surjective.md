@@ -14,7 +14,12 @@ Henselian local DVR extension lifts to an algebra homomorphism of the DVR extens
 
 ## Depends on
 
-This node has no prerequisites.
+- [Residue Field Map Alg Hom](../dvr/residue-field-map-alg-hom.md)
+
+## Proof depends on
+
+- [Is Local Hom of is Discrete Valuation Ring](../dvr/is-local-hom-of-is-discrete-valuation-ri.md)
+- [Exists root lift of adjoin eq top](exists-root-lift-of-adjoin-eq-top.md)
 
 ## Sources
 

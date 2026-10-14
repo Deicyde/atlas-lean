@@ -13,7 +13,8 @@ The first components of `w9` are exactly the divisors of `Q9`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q9](q9.md)
+- [W9](w9.md)
 
 ## Sources
 

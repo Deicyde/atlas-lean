@@ -15,7 +15,7 @@ principle is derived from `Tree.rec` and used with `induction … using`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](tree.md)
 
 ## Sources
 

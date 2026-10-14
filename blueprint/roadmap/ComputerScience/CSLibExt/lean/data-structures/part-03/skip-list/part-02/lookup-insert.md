@@ -13,7 +13,15 @@ Looking up an inserted key returns the replacement value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skip List](../part-01/skip-list.md)
+- [Insert](../part-01/insert.md)
+- [Lookup](../part-01/lookup.md)
+
+## Proof depends on
+
+- [Entry](../part-01/entry.md)
+- [Abstraction](../part-01/abstraction.md)
+- [Lookup eq abstraction](../part-01/lookup-eq-abstraction.md)
 
 ## Sources
 

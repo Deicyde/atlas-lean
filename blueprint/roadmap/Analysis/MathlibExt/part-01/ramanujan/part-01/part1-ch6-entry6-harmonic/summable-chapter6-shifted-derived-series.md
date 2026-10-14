@@ -13,7 +13,7 @@ At a natural shift `m` the shifted series is the `m`-th tail of the series at `0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter6 Shifted Derived Series Term](chapter6-shifted-derived-series-term.md)
 
 ## Sources
 

@@ -15,7 +15,11 @@ agreeing with `f` on `{0,1}^n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Cube](bool-cube.md)
+
+## Proof depends on
+
+- [Cube Basis](cube-basis.md)
 
 ## Sources
 

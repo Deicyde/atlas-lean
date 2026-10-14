@@ -14,6 +14,10 @@ lean: MathlibExt.NumberTheory.ConwaySchneebergerFifteenWanted.NumberTheory.Conwa
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Represents](represents.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ConwaySchneebergerFifteenWanted](../../../../../sources/v2/WantedExt.md)

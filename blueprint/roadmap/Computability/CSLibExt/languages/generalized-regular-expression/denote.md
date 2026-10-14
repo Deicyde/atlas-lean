@@ -12,7 +12,7 @@ Denotation of a generalized regular expression as a language.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Reg Exp](gen-reg-exp.md)
 
 ## Sources
 

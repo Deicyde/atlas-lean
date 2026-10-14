@@ -13,7 +13,14 @@ The quotient map evaluated on a class representative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Class Group](../group/ray-class-group.md)
+- [Ray Element Class Map](ray-element-class-map.md)
+- [Ray Quotient To Ray Class Group](ray-quotient-to-ray-class-group.md)
+
+## Proof depends on
+
+- [Principal Ray Ideal Map](../principal-ideal/principal-ray-ideal-map.md)
+- [Ray Class Map](../group/ray-class-map.md)
 
 ## Sources
 

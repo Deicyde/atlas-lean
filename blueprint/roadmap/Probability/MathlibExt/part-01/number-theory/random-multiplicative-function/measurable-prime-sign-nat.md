@@ -13,7 +13,12 @@ Every prime-sign evaluation is measurable for a Rademacher family.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Rademacher Family](is-rademacher-family.md)
+- [Prime Sign Nat](prime-sign-nat.md)
+
+## Proof depends on
+
+- [Rademacher Measure](rademacher-measure.md)
 
 ## Sources
 

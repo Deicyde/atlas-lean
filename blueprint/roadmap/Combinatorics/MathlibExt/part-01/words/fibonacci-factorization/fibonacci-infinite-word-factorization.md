@@ -15,6 +15,13 @@ The Fibonacci infinite word is obtained by concatenating `0` with the finite Fib
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fib Word](../../infinite-word/fibonacci-word/fib-word.md)
+- [Fib Word add two](fib-word-add-two.md)
+- [Fib Word factorization](fib-word-factorization.md)
+- [Fib Word length](../../infinite-word/fibonacci-word/fib-word-length.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Words.FibonacciFactorization](../../../../../../sources/v2/MathlibExt.md)

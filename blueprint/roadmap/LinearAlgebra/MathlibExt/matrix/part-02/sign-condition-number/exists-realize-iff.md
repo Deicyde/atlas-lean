@@ -13,7 +13,12 @@ The finite Boolean encoding covers exactly all real sign matrices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sign Matrix](sign-matrix.md)
+- [Realize](realize.md)
+
+## Proof depends on
+
+- [Realize entries](realize-entries.md)
 
 ## Sources
 

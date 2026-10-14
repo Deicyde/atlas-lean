@@ -15,6 +15,10 @@ A number `m` is an `s`-Cullen number for base `s` when `2 ≤ s` and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [S Cullen Number](s-cullen-number.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SCullenNumber](../../../../../sources/v2/MathlibExt.md)

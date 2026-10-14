@@ -12,7 +12,11 @@ Two vertices are equivalent when `find` returns the same representative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest](forest.md)
+
+## Proof depends on
+
+- [Find](find.md)
 
 ## Sources
 

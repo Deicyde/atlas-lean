@@ -12,7 +12,13 @@ The total code on the leaf-symbol subtype.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Huffman Tree](huffman-tree.md)
+- [Leaf Symbol](leaf-symbol.md)
+
+## Proof depends on
+
+- [Code?](code.md)
+- [Symbols](symbols.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Applying restriction is evaluation at the underlying index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Restrict](restrict.md)
 
 ## Sources
 

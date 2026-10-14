@@ -14,6 +14,11 @@ The group `P` defined in Theorem A of the paper.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generators](generators.md)
+- [Relations](relations.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.GroupTheory.UnitConjectureWanted](../../../../../sources/v2/WantedExt.md)

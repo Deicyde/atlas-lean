@@ -14,6 +14,10 @@ The filled Julia set `K_c = { z ∈ ℂ | T_c^n(z) stays bounded }`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tc](tc.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.FatouJuliaWanted](../../../../../sources/v2/WantedExt.md)

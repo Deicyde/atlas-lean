@@ -13,7 +13,7 @@ Boundary value at `n = 0` and `k = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Simsek Number](simsek-number.md)
 
 ## Sources
 

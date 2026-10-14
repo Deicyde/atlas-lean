@@ -13,7 +13,7 @@ The empty circle consists of an allocated self-linked sentinel.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circular Represents](circular-represents.md)
 
 ## Sources
 

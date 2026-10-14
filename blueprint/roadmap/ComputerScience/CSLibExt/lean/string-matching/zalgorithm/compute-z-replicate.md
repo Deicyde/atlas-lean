@@ -13,7 +13,11 @@ Repeated-symbol input returns the whole remaining suffix at every position.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Compute Z](compute-z.md)
+
+## Proof depends on
+
+- [Compute Z zero](compute-z-zero.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ The Farey sequence of order `n`, listed in increasing order.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Farey Finset](farey-finset.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Farey](../../../../../sources/v2/MathlibExt.md)

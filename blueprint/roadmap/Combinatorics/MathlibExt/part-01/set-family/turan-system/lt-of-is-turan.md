@@ -13,7 +13,7 @@ Strict-inequality projection from a Turan system.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Turan System](is-turan-system.md)
 
 ## Sources
 

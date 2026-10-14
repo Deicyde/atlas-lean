@@ -14,6 +14,10 @@ Words with prescribed content.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Witt Word Content](witt-word-content.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Words.LyndonWord](../../../../../../sources/v2/MathlibExt.md)

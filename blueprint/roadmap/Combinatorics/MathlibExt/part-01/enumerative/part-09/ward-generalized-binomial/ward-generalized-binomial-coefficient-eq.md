@@ -14,7 +14,12 @@ Ward's generalized binomial coefficient as a product over the bases `2, …, n +
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ward Generalized Binomial Coefficient](ward-generalized-binomial-coefficient.md)
+
+## Proof depends on
+
+- [Ward Units Carry](ward-units-carry.md)
+- [Ward Units Carry eq div](ward-units-carry-eq-div.md)
 
 ## Sources
 

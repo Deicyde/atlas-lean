@@ -18,7 +18,12 @@ The `D = 4 * m` family remains uncovered.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kronecker Sym](../quadratic/kronecker-sym.md)
+
+## Proof depends on
+
+- [Jacobi Sym nat Abs eq kronecker Sym of prime ne two of one mod four neg](jacobi-sym-nat-abs-eq-kronecker-sym-of-p.md)
+- [Quadratic Reciprocity Bridge](../jacobi-sym-nat-abs-eq-kronecker-sym-of-p.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Jaccard distance as a single ratio of join-minus-meet over join.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Strictly Positive](is-strictly-positive.md)
+- [Jaccard Dist](jaccard-dist.md)
 
 ## Sources
 

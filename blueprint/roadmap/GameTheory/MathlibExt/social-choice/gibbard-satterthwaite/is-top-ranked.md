@@ -12,7 +12,11 @@ lean: MathlibExt.GameTheory.SocialChoice.GibbardSatterthwaiteWanted.IsTopRanked
 
 ## Depends on
 
-This node has no prerequisites.
+- [Strict Total Order](strict-total-order.md)
+
+## Proof depends on
+
+- [Lt](lt.md)
 
 ## Sources
 

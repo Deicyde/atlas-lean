@@ -14,7 +14,7 @@ centered at `0` — is not an induced subgraph of `G`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Claw Free](is-claw-free.md)
 
 ## Sources
 

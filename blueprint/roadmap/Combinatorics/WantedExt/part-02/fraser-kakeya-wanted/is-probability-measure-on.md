@@ -13,7 +13,7 @@ whose support is contained in `K`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Space](space.md)
 
 ## Sources
 

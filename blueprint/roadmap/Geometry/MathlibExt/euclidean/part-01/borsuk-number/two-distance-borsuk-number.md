@@ -14,6 +14,11 @@ The dimensional Borsuk supremum restricted to two-distance sets.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Two Distance Set](is-two-distance-set.md)
+- [Set Borsuk Number](set-borsuk-number.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.BorsukNumber](../../../../../../sources/v2/MathlibExt.md)

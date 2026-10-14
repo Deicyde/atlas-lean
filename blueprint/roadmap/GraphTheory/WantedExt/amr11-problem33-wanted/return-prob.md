@@ -12,7 +12,11 @@ Simple random walk ever-return probability for [AMR-011-0033] Question 33.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Regular Cayley Graph](regular-cayley-graph.md)
+
+## Proof depends on
+
+- [First Return Prob](first-return-prob.md)
 
 ## Sources
 

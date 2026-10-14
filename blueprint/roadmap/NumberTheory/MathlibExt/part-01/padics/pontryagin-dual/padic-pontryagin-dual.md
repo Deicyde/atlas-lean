@@ -14,6 +14,10 @@ The algebraic `ℤ_p`-linear Pontryagin dual with values in `ℚ_p / ℤ_p`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Padic Quotient Int](padic-quotient-int.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Padics.PontryaginDual](../../../../../../sources/v2/MathlibExt.md)

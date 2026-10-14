@@ -14,7 +14,12 @@ Classical length law
 
 ## Depends on
 
-This node has no prerequisites.
+- [Classical Block](classical-block.md)
+
+## Proof depends on
+
+- [Block length](block-length.md)
+- [Classical Kappa](classical-kappa.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Exact unfolding of `IsImaginaryQuadraticDiscriminant`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Imaginary Quadratic Discriminant](is-imaginary-quadratic-discriminant.md)
 
 ## Sources
 

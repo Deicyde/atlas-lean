@@ -13,7 +13,7 @@ The odd branch first recurses at `b - 1`, then multiplies by the original base.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Modular Exponentiation](modular-exponentiation.md)
 
 ## Sources
 

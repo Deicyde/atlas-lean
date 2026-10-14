@@ -13,7 +13,11 @@ through the canonical `ComplexityTheory.IsPolyTime` predicate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decision Problem](../../../MathlibExt/complexity/decision-problem.md)
+
+## Proof depends on
+
+- [Is Poly Time](../../../MathlibExt/complexity/is-poly-time.md)
 
 ## Sources
 

@@ -15,7 +15,11 @@ primary Lean source.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Places Over](../finite-places-over/places-over.md)
+
+## Proof depends on
+
+- [Completion Tensor Product Alg Equiv](completion-tensor-product-alg-equiv.md)
 
 ## Sources
 
