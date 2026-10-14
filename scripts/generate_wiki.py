@@ -534,7 +534,8 @@ def load_library(library: str, index) -> tuple[list[Target], dict]:
             bold = BOLD_TITLE.match(statement_text)
             if bold:
                 named_by_docstring.add(len(targets))
-            title = bold.group("title").strip().rstrip(".") if bold else humanize(short) or first_words(statement_text)
+            # A bold name can wrap; a title must stay on its heading line.
+            title = " ".join(bold.group("title").split()).rstrip(".") if bold else humanize(short) or first_words(statement_text)
             subject = LIBRARIES[library][1].get(module[1], module[1])
             if subject not in SUBJECTS:
                 raise SystemExit(f"{relative}: no subject for directory {module[1]}")

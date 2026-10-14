@@ -6,8 +6,7 @@ statement: formalized
 lean: MathlibExt.Analysis.NyquistShannonWanted.Analysis.NyquistShannon.nyquist_shannon_sampling
 ---
 
-# Nyquist--Shannon sampling theorem / Whittaker--Shannon interpolation
-formula
+# Nyquist--Shannon sampling theorem / Whittaker--Shannon interpolation formula
 
 **Nyquist--Shannon sampling theorem / Whittaker--Shannon interpolation
 formula** for Schwartz functions with Fourier support in the mathlib-convention
