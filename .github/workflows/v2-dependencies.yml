@@ -113,7 +113,29 @@ jobs:
           done
           echo "dumping $(wc -l < v2-modules.txt) modules; $(wc -l < v2-unbuilt.txt) did not build:"
           cat v2-unbuilt.txt
-          lake env lean --run scripts/dump_v2_dependencies.lean v2-modules.txt > v2-dependencies.jsonl
+          # Importing every module at once fails when two of them declare the
+          # same name (an upstream copy of something Mathlib now has). Drop the
+          # ATLAS side of each collision and retry; v2-conflicts.txt lists them.
+          : > v2-conflicts.txt
+          dumped=
+          for attempt in $(seq 1 30); do
+            if lake env lean --run scripts/dump_v2_dependencies.lean v2-modules.txt > v2-dependencies.jsonl 2> dump.err; then
+              dumped=1
+              break
+            fi
+            cat dump.err
+            first=$(grep -oE "already contains '[^']+' from [A-Za-z0-9_.']+" dump.err | awk '{print $NF}' | head -1 || true)
+            second=$(grep -oE "import [A-Za-z0-9_.']+ failed" dump.err | awk '{print $2}' | head -1 || true)
+            if grep -qxF "$first" v2-modules.txt; then drop=$first
+            elif grep -qxF "$second" v2-modules.txt; then drop=$second
+            else exit 1
+            fi
+            echo "$drop (with $([ "$drop" = "$first" ] && echo "$second" || echo "$first"))" | tee -a v2-conflicts.txt
+            grep -vxF "$drop" v2-modules.txt > v2-modules.next && mv v2-modules.next v2-modules.txt
+          done
+          [ -n "$dumped" ] || exit 1
+          echo "collisions: $(wc -l < v2-conflicts.txt)"
+          cat v2-conflicts.txt
           wc -l < v2-dependencies.jsonl
           gzip -9 v2-dependencies.jsonl
 
@@ -123,5 +145,6 @@ jobs:
           path: |
             v2-dependencies.jsonl.gz
             v2-unbuilt.txt
+            v2-conflicts.txt
             build-failures.txt
           retention-days: 14
