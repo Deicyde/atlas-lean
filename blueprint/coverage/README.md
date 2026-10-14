@@ -11,7 +11,7 @@ developments are not decomposed yet.
 
 | Area | Coverage | Evidence |
 | --- | --- | --- |
-| v2 / MathlibExt | DECOMPOSED | [5722 documented public declarations](../roadmap/Algebra/MathlibExt/README.md) across 23 subjects; 136 instances and 1065 undocumented public declarations are not articles. |
+| v2 / MathlibExt | DECOMPOSED | [5712 documented public declarations](../roadmap/Algebra/MathlibExt/README.md) across 23 subjects; 136 instances and 1060 undocumented public declarations are not articles. |
 | v2 / CSLibExt | DECOMPOSED | [2448 documented public declarations](../roadmap/Computability/CSLibExt/README.md) across 3 subjects; 19 instances and 552 undocumented public declarations are not articles. |
 | v2 / WantedExt | DECOMPOSED | [1770 documented public declarations](../roadmap/Algebra/WantedExt/README.md) across 16 subjects; 44 instances and 96 undocumented public declarations are not articles. |
 | v1 / AlgebraNotes | DECOMPOSED | [176 source statements](../roadmap/Algebra/AlgebraNotes/README.md), 151 with a formalized statement. |
