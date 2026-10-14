@@ -80,7 +80,9 @@ jobs:
       # building, record the failures, and dump every module that compiled.
       - name: Build the v2 libraries
         run: |
-          set -uo pipefail
+          # The runner's shell has -e on; turn it off so a failed module still
+          # lets the dump step run.
+          set +e -uo pipefail
           lake build MathlibExt CSLibExt WantedExt 2>&1 | tee build.log
           echo "lake build exit: ${PIPESTATUS[0]}"
           grep -E '^(✖|error:)' build.log > build-failures.txt || true
