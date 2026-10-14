@@ -2,6 +2,8 @@
 article_id: af_ca6cdbb04f9857bc846b72a5
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.BinomialMidrangeDivisorWanted.conjecture_refuted
 ---
 
 # Conjecture refuted

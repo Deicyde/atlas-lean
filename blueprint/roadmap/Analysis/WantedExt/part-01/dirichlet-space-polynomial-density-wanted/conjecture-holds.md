@@ -2,6 +2,8 @@
 article_id: af_dd92c8d5c75856913359783b
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.DirichletSpacePolynomialDensityWanted.conjecture_holds
 ---
 
 # Conjecture holds

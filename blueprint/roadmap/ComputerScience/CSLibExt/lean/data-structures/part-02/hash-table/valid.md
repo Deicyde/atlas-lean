@@ -2,6 +2,8 @@
 article_id: af_d06193af68679b3ba98cf491
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.HashTable.Valid
 ---
 
 # Valid

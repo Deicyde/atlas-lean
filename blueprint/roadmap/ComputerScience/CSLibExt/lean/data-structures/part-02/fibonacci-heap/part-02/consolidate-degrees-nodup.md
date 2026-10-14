@@ -2,6 +2,9 @@
 article_id: af_b572ed66d2e8c8cdaf74136a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciForest.consolidate_degrees_nodup
 ---
 
 # Consolidate degrees nodup

@@ -2,6 +2,8 @@
 article_id: af_f6ffe0759087217f80360899
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.OptimalBST.optimalBST
 ---
 
 # Optimal BST

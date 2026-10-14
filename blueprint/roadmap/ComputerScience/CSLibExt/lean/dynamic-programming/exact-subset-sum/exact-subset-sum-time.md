@@ -2,6 +2,9 @@
 article_id: af_ba410e686de302294de5c5d3
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.ExactSubsetSum.exactSubsetSum_time
 ---
 
 # Exact Subset Sum time

@@ -2,6 +2,9 @@
 article_id: af_fdbfc9e7ccfd20f7f7189f7a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.inorder_erase
 ---
 
 # Inorder erase

@@ -2,6 +2,8 @@
 article_id: af_4676dde891d0b679be67beb2
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.pathEdges
 ---
 
 # Path Edges

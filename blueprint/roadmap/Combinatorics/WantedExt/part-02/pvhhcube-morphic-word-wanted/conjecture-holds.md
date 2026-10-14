@@ -2,6 +2,8 @@
 article_id: af_e3711dfac4b552ac6b3fd9ed
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.PVHHCubeMorphicWordWanted.conjecture_holds
 ---
 
 # Conjecture holds

@@ -2,6 +2,9 @@
 article_id: af_629a71e6c9830dc0d95a3703
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.LinearAlgebra.Matrix.VanDerWaerdenWanted.van_der_waerden_permanent
 ---
 
 # Van Der Waerden

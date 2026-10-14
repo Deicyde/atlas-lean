@@ -2,6 +2,9 @@
 article_id: af_6aedd7b54d1402bbb371e363
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.UnionFind.find_union_of_unrelated
 ---
 
 # Find union of unrelated

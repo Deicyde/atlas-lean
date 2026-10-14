@@ -2,6 +2,9 @@
 article_id: af_97ccc95cbd35380d15c4f60c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinaryCounter.reset_time_replicate_false
 ---
 
 # Reset time replicate false

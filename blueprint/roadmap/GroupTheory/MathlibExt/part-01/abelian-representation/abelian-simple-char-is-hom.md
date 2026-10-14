@@ -2,6 +2,9 @@
 article_id: af_1e49b8d72f9c489802a59007
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.GroupTheory.AbelianRepresentationWanted.abelian_simple_char_is_hom
 ---
 
 # Abelian simple char is hom

@@ -2,6 +2,9 @@
 article_id: af_4bfc138b9e9e325d3421c1db
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.catalan_constant_product_formulas
 ---
 
 # Catalan Constant Products

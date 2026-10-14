@@ -2,6 +2,8 @@
 article_id: af_4d1db85968bd59511db2e40f
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.UnitDistanceConjectureFalseWanted.Combinatorics.erdos_unit_distance_conjecture_false
 ---
 
 # Erdos unit distance conjecture false

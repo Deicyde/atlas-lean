@@ -2,6 +2,8 @@
 article_id: af_e18897594c7cf3d8dbcea655
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.KLS.kls_le_thinShell_variance_log_squared
 ---
 
 # Kls le thin Shell variance log squared

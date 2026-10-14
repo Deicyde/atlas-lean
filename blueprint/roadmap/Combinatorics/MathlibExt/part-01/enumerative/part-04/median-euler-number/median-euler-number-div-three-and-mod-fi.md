@@ -2,6 +2,9 @@
 article_id: af_a207813d0468ff98988e595f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.medianEulerNumber_div_three_and_modFive
 ---
 
 # Median Euler Number div three and mod Five

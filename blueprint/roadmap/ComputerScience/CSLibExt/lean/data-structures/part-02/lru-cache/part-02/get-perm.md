@@ -2,6 +2,9 @@
 article_id: af_d646b5e0467f7f50dbd5e13d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LruCache.get_perm
 ---
 
 # Get perm

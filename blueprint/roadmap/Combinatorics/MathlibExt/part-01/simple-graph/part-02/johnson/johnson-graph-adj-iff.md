@@ -2,6 +2,9 @@
 article_id: af_6f871cf3ded21d7b7489d7f6
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.johnsonGraph_adj_iff
 ---
 
 # Johnson Graph adj iff

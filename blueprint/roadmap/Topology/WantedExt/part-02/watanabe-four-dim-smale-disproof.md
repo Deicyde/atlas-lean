@@ -2,6 +2,8 @@
 article_id: af_9e682e09f6c2125d8fa834bb
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Topology.WatanabeSmaleDisproofWanted.Topology.watanabe_four_dim_smale_disproof
 ---
 
 # Watanabe Smale Disproof Wanted

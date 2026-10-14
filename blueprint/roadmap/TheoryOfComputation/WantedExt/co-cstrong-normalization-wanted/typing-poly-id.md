@@ -2,6 +2,8 @@
 article_id: af_cf1ba31706fd4a9485344f0f
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.typing_polyId
 ---
 
 # Typing poly Id

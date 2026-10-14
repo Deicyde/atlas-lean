@@ -2,6 +2,8 @@
 article_id: af_fb5aa4e350eaa939d2b7ea5e
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.RadialSymmetryWanted.Analysis.PDE.semilinear_poisson_radial_symmetry
 ---
 
 # Semilinear poisson radial symmetry

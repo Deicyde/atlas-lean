@@ -2,6 +2,8 @@
 article_id: af_805553939c44b4ae729884b7
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.ErdosProblem794Wanted.conjecture_refuted
 ---
 
 # Conjecture refuted

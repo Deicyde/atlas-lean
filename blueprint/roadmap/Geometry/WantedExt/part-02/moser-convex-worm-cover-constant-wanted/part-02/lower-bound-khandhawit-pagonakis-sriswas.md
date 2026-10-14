@@ -2,6 +2,8 @@
 article_id: af_ddf76083d7617eee2900a765
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MoserConvexWormCoverConstant.lowerBoundKhandhawitPagonakisSriswasdi2013_holds
 ---
 
 # Lower Bound Khandhawit Pagonakis Sriswasdi2013 holds

@@ -2,6 +2,8 @@
 article_id: af_460db7a6c95a879d876d3385
 declaration: inductive
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.Color
 ---
 
 # Color

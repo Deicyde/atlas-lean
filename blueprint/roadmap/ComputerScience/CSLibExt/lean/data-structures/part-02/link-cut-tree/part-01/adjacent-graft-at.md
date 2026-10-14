@@ -2,6 +2,9 @@
 article_id: af_56059bfc0feebb1d7db1b09d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.adjacent_graftAt
 ---
 
 # Adjacent graft At

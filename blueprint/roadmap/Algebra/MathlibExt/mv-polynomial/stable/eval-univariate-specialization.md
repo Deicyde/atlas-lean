@@ -2,6 +2,9 @@
 article_id: af_e7e878399342ef7915fdf28c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MvPolynomial.eval_univariateSpecialization
 ---
 
 # Eval univariate Specialization

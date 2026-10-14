@@ -2,6 +2,9 @@
 article_id: af_2a4e428cbb7cdb2c44ff85f9
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BTree.ValidRoot.valid
 ---
 
 # Valid

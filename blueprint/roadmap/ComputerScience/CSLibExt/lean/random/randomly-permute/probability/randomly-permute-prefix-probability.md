@@ -2,6 +2,9 @@
 article_id: af_3fbfb70fd1d45ee84c02873c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.randomlyPermute_prefix_probability
 ---
 
 # Randomly Permute prefix probability

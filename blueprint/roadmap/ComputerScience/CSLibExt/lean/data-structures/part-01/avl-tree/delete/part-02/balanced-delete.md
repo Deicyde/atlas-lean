@@ -2,6 +2,9 @@
 article_id: af_9cd9e3a3851c72953bff378c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.balanced_delete
 ---
 
 # Balanced delete

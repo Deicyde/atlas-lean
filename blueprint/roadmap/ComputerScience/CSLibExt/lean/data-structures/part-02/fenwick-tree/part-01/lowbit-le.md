@@ -2,6 +2,9 @@
 article_id: af_c59a02f51117f74f8bbf55d3
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FenwickTree.lowbit_le
 ---
 
 # Lowbit le

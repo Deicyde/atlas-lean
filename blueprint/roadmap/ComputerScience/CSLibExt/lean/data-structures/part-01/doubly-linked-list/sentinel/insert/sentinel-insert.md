@@ -2,6 +2,8 @@
 article_id: af_b6c62c8a370fa66f8381c0eb
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.sentinelInsert
 ---
 
 # Sentinel Insert

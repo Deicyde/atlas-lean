@@ -2,6 +2,9 @@
 article_id: af_12d6e1fda1014f3cfacbb7ac
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.boyerMooreMatches_time_replicate
 ---
 
 # Boyer Moore Matches time replicate

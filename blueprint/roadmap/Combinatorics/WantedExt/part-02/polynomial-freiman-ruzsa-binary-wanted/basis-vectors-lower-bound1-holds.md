@@ -2,6 +2,8 @@
 article_id: af_38c5b435c8ff46af11126765
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.PolynomialFreimanRuzsaBinaryWanted.basisVectorsLowerBound1_holds
 ---
 
 # Basis Vectors Lower Bound1 holds

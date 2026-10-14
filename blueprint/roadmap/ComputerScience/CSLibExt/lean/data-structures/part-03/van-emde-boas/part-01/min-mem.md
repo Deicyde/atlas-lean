@@ -2,6 +2,9 @@
 article_id: af_94a8099d0dbd7d1476bd97ac
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.VanEmdeBoas.min?_mem
 ---
 
 # Min? mem

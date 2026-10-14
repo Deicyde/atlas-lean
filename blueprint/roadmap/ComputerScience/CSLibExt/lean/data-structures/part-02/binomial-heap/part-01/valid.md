@@ -2,6 +2,8 @@
 article_id: af_b4d9bc95cc975c77b440b750
 declaration: inductive
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BinomialTree.Valid
 ---
 
 # Valid

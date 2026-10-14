@@ -2,6 +2,8 @@
 article_id: af_23aaa5123579e3ab5dd0df2b
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.ThinShell.klartagLehec2022_width_bound
 ---
 
 # Klartag Lehec2022 width bound

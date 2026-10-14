@@ -2,6 +2,9 @@
 article_id: af_903e6e720cbebc86a4d70b00
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.valid_insert_of_invariants
 ---
 
 # Valid insert of invariants

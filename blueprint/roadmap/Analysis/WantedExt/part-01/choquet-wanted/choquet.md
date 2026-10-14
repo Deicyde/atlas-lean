@@ -2,6 +2,8 @@
 article_id: af_fc0b27f1c6423ebbbc6205f7
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.ChoquetWanted.Analysis.choquet
 ---
 
 # Choquet

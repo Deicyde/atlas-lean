@@ -2,6 +2,8 @@
 article_id: af_0f8ccd1e0c19cee337fb0a6e
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.InfiniteTransversalsSpannedHyperplanesWanted.OWR1183Question_holds
 ---
 
 # OWR1183 Question holds

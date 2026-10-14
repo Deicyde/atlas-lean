@@ -2,6 +2,9 @@
 article_id: af_64bc9623d6f48fc839193db3
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.spectralNorm_le_one_iff_isIntegral
 ---
 
 # Spectral Norm le one iff is Integral

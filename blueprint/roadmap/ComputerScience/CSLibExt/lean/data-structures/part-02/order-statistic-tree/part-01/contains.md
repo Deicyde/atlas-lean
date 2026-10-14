@@ -2,6 +2,8 @@
 article_id: af_25acd7a3a1b447e979a76f1f
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.OrderStatisticTree.contains
 ---
 
 # Contains

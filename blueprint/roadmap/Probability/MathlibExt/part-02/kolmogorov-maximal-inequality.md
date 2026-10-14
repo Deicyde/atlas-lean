@@ -2,6 +2,9 @@
 article_id: af_45ac6f027dd04bf32fe957ae
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Probability.KolmogorovMaximal.kolmogorov_maximal_inequality
 ---
 
 # Kolmogorov Maximal

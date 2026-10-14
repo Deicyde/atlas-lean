@@ -2,6 +2,8 @@
 article_id: af_0989b850eb57ec945e093214
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.TwoThreeTree.Ordered
 ---
 
 # Ordered

@@ -2,6 +2,9 @@
 article_id: af_7d47093decb808dbc07375c9
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.Coding.SingletonBound.singleton_bound
 ---
 
 # Singleton Bound

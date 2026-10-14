@@ -2,6 +2,8 @@
 article_id: af_914e219757fafffcf56ef2f3
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Topology.AutFnFiniteIndexPropertyFAWanted.conjecture_holds
 ---
 
 # Conjecture holds

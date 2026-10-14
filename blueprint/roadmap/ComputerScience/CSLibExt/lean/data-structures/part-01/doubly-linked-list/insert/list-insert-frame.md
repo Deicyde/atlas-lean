@@ -2,6 +2,9 @@
 article_id: af_e5ff1c700355fa18e82d872b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.listInsert_frame
 ---
 
 # List Insert frame

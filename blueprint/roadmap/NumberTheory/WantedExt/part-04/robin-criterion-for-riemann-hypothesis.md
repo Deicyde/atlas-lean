@@ -2,6 +2,8 @@
 article_id: af_353fc3845441791571e28e51
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.robin_criterion_for_riemann_hypothesis
 ---
 
 # Robin Criterion Wanted

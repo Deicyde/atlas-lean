@@ -2,6 +2,8 @@
 article_id: af_a7b0cc76c86f7d3264868e81
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.FibonacciForest.minRoot
 ---
 
 # Min Root

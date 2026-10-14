@@ -2,6 +2,8 @@
 article_id: af_492af50fa7ad5b671b362411
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.OfflineCaching.cacheLTS
 ---
 
 # Cache LTS

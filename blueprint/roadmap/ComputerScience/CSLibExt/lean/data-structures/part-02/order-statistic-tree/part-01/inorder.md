@@ -2,6 +2,8 @@
 article_id: af_47b1007d03e066794d525f97
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.OrderStatisticTree.inorder
 ---
 
 # Inorder

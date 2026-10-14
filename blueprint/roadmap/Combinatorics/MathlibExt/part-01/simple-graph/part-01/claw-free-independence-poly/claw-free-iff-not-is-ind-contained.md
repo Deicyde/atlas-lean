@@ -2,6 +2,9 @@
 article_id: af_3af581cede0df77a41892a83
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.clawFree_iff_not_isIndContained
 ---
 
 # Claw Free iff not is Ind Contained

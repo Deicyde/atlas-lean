@@ -2,6 +2,9 @@
 article_id: af_1a44150c662f5ddd9f9ab8ec
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.bucketSort_time_expected_isTheta
 ---
 
 # Bucket Sort time expected is Theta

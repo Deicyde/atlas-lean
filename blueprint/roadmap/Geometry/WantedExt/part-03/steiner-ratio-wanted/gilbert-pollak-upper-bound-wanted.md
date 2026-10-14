@@ -2,6 +2,8 @@
 article_id: af_882a54b195b193dbd74cf44e
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.SteinerRatioWanted.gilbertPollakUpperBound_wanted
 ---
 
 # Gilbert Pollak Upper Bound wanted

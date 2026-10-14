@@ -2,6 +2,8 @@
 article_id: af_1a4c45332aadeeddb0b7133d
 declaration: def
 origin: cited
+statement: formalized
+lean: SimpleGraph.EdgeIndexedMultigraph.IndexedWalk.support
 ---
 
 # Support

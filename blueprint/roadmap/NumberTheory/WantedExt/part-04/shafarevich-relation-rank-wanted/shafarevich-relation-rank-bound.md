@@ -2,6 +2,8 @@
 article_id: af_a5026fc59a20a2dea70161c6
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.ShafarevichRelationRankWanted.NumberTheory.shafarevich_relation_rank_bound
 ---
 
 # Shafarevich relation rank bound

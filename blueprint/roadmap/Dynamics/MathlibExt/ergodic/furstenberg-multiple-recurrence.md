@@ -2,6 +2,9 @@
 article_id: af_60c3ff2061f6e44aff666f99
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Dynamics.Ergodic.MultipleRecurrenceWanted.furstenberg_multipleRecurrence
 ---
 
 # Multiple Recurrence

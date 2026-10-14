@@ -2,6 +2,9 @@
 article_id: af_da9c6b7baa511b1e9469797b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.bucketSort_time_integrable
 ---
 
 # Bucket Sort time integrable

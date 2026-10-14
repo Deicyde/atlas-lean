@@ -2,6 +2,9 @@
 article_id: af_16fe3026c26f5eb6c8170c17
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.compositions_parts_one_two_three_eq_tribonacci
 ---
 
 # Compositions parts one two three eq tribonacci

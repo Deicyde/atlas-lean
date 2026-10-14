@@ -2,6 +2,9 @@
 article_id: af_8d83df5cd8083d5efbe2afb7
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.isVertexConnected_two_iff
 ---
 
 # Is Vertex Connected two iff

@@ -2,6 +2,9 @@
 article_id: af_fed4b4e3ea07cb6cf86590f7
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: AbsoluteValue.inducedTopology_eq_iff_isEquiv
 ---
 
 # Induced Topology eq iff is Equiv

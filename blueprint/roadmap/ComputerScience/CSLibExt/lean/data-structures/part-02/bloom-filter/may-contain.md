@@ -2,6 +2,8 @@
 article_id: af_2685525f9c0ce229a131769d
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BloomFilter.mayContain
 ---
 
 # May Contain

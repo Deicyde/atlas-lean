@@ -2,6 +2,9 @@
 article_id: af_1ef249c2097b51854d95ed3c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.SimpleGraph.HajnalSzemerediWanted.exists_equitable_coloring_of_maxDegree_lt
 ---
 
 # Exists equitable coloring of max Degree lt

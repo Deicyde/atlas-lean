@@ -2,6 +2,8 @@
 article_id: af_30a10ae9b5967d636774b8cf
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Topology.MilnorExoticSphereSevenWanted.Topology.milnor_exotic_sphere_seven
 ---
 
 # Milnor Exotic Sphere Seven Wanted

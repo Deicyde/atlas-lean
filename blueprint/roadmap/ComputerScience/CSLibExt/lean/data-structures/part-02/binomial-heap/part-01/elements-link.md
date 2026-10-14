@@ -2,6 +2,9 @@
 article_id: af_09ba92d75926cb8652c1c5b9
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinomialTree.elements_link
 ---
 
 # Elements link

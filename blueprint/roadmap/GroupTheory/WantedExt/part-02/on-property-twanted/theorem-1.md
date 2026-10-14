@@ -2,6 +2,8 @@
 article_id: af_e2d09a658fe4538eb44e7843
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.OnPropertyTWanted.OnPropertyT.theorem_1
 ---
 
 # Theorem 1

@@ -2,6 +2,9 @@
 article_id: af_264b13ec228f34d0b8997ecb
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciTree.Valid.child_valid
 ---
 
 # Child valid

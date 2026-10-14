@@ -2,6 +2,8 @@
 article_id: af_0392aaf8bbbe8cd71bb3f42f
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GraphTheory.AMR11Problem33Wanted.returnProbUniformGap_holds
 ---
 
 # Return Prob Uniform Gap holds

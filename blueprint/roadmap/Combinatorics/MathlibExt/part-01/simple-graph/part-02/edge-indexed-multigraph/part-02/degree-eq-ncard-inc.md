@@ -2,6 +2,9 @@
 article_id: af_72e395d3d798a30ff04d80a1
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.EdgeIndexedMultigraph.degree_eq_ncard_inc
 ---
 
 # Degree eq ncard inc

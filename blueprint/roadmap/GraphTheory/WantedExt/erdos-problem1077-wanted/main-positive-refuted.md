@@ -2,6 +2,8 @@
 article_id: af_c7c3cfadd2971bbb42b6d13f
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GraphTheory.ErdosProblem1077Wanted.mainPositive_refuted
 ---
 
 # Main Positive refuted

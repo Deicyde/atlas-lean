@@ -2,6 +2,8 @@
 article_id: af_617ee70c5c4cf89582dbaf04
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.Balanced
 ---
 
 # Balanced

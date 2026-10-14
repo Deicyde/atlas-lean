@@ -2,6 +2,9 @@
 article_id: af_bdff7082a9c7c8f54fc6c5e9
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.PerfectHashing.stored_of_lookup_eq_some
 ---
 
 # Stored of lookup eq some

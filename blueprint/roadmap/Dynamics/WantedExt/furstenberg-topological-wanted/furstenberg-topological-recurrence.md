@@ -2,6 +2,8 @@
 article_id: af_b2348003bc18baa600630f1c
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Dynamics.FurstenbergTopologicalWanted.Dynamics.furstenberg_topological_recurrence
 ---
 
 # Furstenberg topological recurrence

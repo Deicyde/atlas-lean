@@ -2,6 +2,9 @@
 article_id: af_d1c8b4acb389bda91742e2f0
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.intBinom_of_lt
 ---
 
 # Int Binom of lt

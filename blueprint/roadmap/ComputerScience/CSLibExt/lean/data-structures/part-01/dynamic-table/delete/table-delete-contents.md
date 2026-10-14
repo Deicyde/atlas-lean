@@ -2,6 +2,9 @@
 article_id: af_674ac26fd01c3baa7c727b3b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.tableDelete_contents
 ---
 
 # Table Delete contents

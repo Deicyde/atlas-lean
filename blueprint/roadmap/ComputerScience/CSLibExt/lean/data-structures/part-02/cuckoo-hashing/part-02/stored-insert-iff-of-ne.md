@@ -2,6 +2,9 @@
 article_id: af_3047ebd305ce8efcaeda7a1f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.CuckooHashing.stored_insert_iff_of_ne
 ---
 
 # Stored insert iff of ne

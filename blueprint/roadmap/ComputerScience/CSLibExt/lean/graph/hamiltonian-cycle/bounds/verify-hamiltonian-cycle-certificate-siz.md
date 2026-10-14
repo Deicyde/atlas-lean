@@ -2,6 +2,9 @@
 article_id: af_7e2e1fa512fc86eed75c6ca0
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Graph.verifyHamiltonianCycle_certificate_size
 ---
 
 # Verify Hamiltonian Cycle certificate size

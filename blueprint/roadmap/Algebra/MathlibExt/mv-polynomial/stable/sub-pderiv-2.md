@@ -2,6 +2,9 @@
 article_id: af_d9d9be2e9dbcfce1c1e7324a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Algebra.MvPolynomialStable._root_.MvPolynomial.IsRealStable.sub_pderiv
 ---
 
 # Sub pderiv

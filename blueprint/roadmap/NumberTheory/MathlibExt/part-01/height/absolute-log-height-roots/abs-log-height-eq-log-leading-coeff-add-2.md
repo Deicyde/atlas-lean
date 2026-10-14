@@ -2,6 +2,9 @@
 article_id: af_1ae83fbf24249b90b3ff4ec1
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.Height.AbsoluteWanted.absLogHeight₁_eq_log_leadingCoeff_add_sum_log_roots_of_isAlgebraic
 ---
 
 # Abs Log Height₁ eq log leading Coeff add sum log roots of is Algebraic

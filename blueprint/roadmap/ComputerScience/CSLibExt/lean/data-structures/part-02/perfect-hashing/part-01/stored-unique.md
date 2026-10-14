@@ -2,6 +2,9 @@
 article_id: af_46d11fa9e77c4b1b0ddc6b71
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.PerfectHashing.stored_unique
 ---
 
 # Stored unique

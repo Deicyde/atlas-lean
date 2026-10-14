@@ -2,6 +2,9 @@
 article_id: af_2f189b5952fabbe4e9091fb8
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.LinearAlgebra.Matrix.HadamardDeterminant.hadamard_determinant_inequality
 ---
 
 # Hadamard Determinant

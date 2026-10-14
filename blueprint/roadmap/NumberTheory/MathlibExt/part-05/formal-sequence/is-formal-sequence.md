@@ -2,6 +2,8 @@
 article_id: af_7eb62e83fda0a30654ed2073
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsFormalSequence
 ---
 
 # Is Formal Sequence

@@ -2,6 +2,8 @@
 article_id: af_29d965177982891bd7388569
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.PrimeTwoAccessibilityWanted.conjecture_holds
 ---
 
 # Conjecture holds

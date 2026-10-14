@@ -2,6 +2,8 @@
 article_id: af_821940651173efbc6a33e609
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.nishioka_algebraic_kMahler_is_rational
 ---
 
 # Nishioka Mahler Rationality Wanted

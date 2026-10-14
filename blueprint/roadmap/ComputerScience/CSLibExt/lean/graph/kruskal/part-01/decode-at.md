@@ -2,6 +2,8 @@
 article_id: af_d67ce9aed5ef6cff4d731a1e
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Kruskal.decodeAt
 ---
 
 # Decode At

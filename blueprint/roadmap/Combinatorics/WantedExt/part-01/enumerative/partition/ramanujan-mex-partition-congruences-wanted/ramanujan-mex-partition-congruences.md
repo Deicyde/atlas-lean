@@ -2,6 +2,8 @@
 article_id: af_c07d994f5bbd3f66d031cab4
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.ramanujan_mex_partition_congruences
 ---
 
 # Ramanujan mex partition congruences

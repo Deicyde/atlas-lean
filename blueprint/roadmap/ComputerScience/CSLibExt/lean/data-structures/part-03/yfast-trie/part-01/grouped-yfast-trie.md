@@ -2,6 +2,8 @@
 article_id: af_526d8480c80e329d2081277e
 declaration: structure
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.GroupedYFastTrie
 ---
 
 # Grouped YFast Trie

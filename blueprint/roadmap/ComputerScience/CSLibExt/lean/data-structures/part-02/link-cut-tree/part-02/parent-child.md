@@ -2,6 +2,8 @@
 article_id: af_03201207b14e92c30daad517
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.ParentChild
 ---
 
 # Parent Child

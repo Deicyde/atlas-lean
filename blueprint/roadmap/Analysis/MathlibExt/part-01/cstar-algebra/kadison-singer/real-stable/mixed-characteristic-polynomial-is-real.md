@@ -2,6 +2,9 @@
 article_id: af_b88c3534d4df173c200e28f3
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.CStarAlgebra.KadisonSinger.mixedCharacteristicPolynomial_isRealRooted_of_posSemidef
 ---
 
 # Mixed Characteristic Polynomial is Real Rooted of pos Semidef

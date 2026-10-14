@@ -2,6 +2,8 @@
 article_id: af_bfe6bc07bd97efc7e8104bd9
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.MatrixChain.Parenthesization.cols
 ---
 
 # Cols

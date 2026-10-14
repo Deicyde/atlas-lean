@@ -2,6 +2,8 @@
 article_id: af_b7f6e84ab21b33b84b0aab9b
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.TwoThreeTree.ins
 ---
 
 # Ins

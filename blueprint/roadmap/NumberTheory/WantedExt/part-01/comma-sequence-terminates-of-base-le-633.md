@@ -2,6 +2,8 @@
 article_id: af_4b5c4bb595a0d35028b1aad8
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.commaSequence_terminates_of_base_le_633
 ---
 
 # Comma Sequence Wanted

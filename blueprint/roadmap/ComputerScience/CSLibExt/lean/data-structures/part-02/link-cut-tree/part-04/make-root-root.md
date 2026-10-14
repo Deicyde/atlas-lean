@@ -2,6 +2,9 @@
 article_id: af_6a50caf90b2947a11a3c8480
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.makeRoot_root
 ---
 
 # Make Root root

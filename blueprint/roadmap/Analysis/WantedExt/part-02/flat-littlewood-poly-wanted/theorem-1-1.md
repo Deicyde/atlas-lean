@@ -2,6 +2,8 @@
 article_id: af_f068b2cb2691111d15c3afc8
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.FlatLittlewoodPolyWanted.FlatLittlewoodPoly.theorem_1_1
 ---
 
 # Theorem 1 1

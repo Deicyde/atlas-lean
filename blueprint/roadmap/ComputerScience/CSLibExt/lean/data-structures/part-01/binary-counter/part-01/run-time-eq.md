@@ -2,6 +2,9 @@
 article_id: af_7a243eb4935fa6ba20d34003
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinaryCounter.run_time_eq
 ---
 
 # Run time eq

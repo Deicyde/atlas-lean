@@ -2,6 +2,8 @@
 article_id: af_371fb76738aad0dc94a32619
 declaration: theorem
 origin: cited
+statement: formalized
+lean: ConvexCovering.uniformDirectionalIlluminationInterpretation
 ---
 
 # Uniform Directional Illumination Interpretation

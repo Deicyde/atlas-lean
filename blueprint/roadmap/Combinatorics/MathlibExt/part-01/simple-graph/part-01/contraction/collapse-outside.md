@@ -2,6 +2,8 @@
 article_id: af_752800824e8bd668cd237983
 declaration: def
 origin: cited
+statement: formalized
+lean: SimpleGraph.collapseOutside
 ---
 
 # Collapse Outside

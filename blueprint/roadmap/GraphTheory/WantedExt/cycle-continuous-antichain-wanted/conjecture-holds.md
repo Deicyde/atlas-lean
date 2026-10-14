@@ -2,6 +2,8 @@
 article_id: af_7ac6b26164cec6cbc5a6608a
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GraphTheory.CycleContinuousAntichainWanted.conjecture_holds
 ---
 
 # Conjecture holds

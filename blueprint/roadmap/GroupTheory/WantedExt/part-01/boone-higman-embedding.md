@@ -2,6 +2,8 @@
 article_id: af_b0202bbb3af377b858a34195
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.BooneHigmanEmbeddingWanted.GroupTheory.BooneHigmanEmbedding.boone_higman_embedding
 ---
 
 # Boone Higman Embedding Wanted

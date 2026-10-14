@@ -2,6 +2,9 @@
 article_id: af_f920c3034e569e870980f970
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.GeneralizedThueMorse.length_flatten_eq
 ---
 
 # Length flatten eq

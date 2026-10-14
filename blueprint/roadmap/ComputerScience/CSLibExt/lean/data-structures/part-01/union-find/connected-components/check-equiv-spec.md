@@ -2,6 +2,9 @@
 article_id: af_20b36e0b17d3e93a1652cecd
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Batteries.UnionFind.checkEquiv_spec
 ---
 
 # Check Equiv spec

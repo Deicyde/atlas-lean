@@ -2,6 +2,9 @@
 article_id: af_d319cc7e02b9a63d13461efb
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.multigradedBettiNumber_eq_of_resolutionComparison
 ---
 
 # Multigraded Betti Number eq of resolution Comparison

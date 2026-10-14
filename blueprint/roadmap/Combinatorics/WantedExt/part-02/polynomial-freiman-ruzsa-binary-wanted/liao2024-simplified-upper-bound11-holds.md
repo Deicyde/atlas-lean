@@ -2,6 +2,8 @@
 article_id: af_31333843773f3177e4af43e2
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.PolynomialFreimanRuzsaBinaryWanted.liao2024SimplifiedUpperBound11_holds
 ---
 
 # Liao2024 Simplified Upper Bound11 holds

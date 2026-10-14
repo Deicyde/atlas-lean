@@ -2,6 +2,8 @@
 article_id: af_65e26648df010ab55b92362a
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.luekerLowerBound_wanted
 ---
 
 # Lueker Lower Bound wanted

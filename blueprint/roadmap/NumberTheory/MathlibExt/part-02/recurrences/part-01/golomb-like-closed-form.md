@@ -2,6 +2,9 @@
 article_id: af_8114e3e0e1cf662cc792083d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.golomb_like_closed_form
 ---
 
 # Golomb Like Sequence

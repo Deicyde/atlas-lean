@@ -2,6 +2,9 @@
 article_id: af_bf06e523a8691d4f1efbf0e0
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.FunctionalAnalysis.RosenthalL1Wanted.rosenthal_l1
 ---
 
 # Rosenthal l1

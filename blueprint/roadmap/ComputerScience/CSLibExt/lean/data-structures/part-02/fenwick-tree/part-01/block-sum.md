@@ -2,6 +2,8 @@
 article_id: af_89e1a32687b84132c46262c4
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.FenwickTree.blockSum
 ---
 
 # Block Sum

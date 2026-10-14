@@ -2,6 +2,9 @@
 article_id: af_e0193a629b38c9cef8b1e84c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Matrix.slowAPSP_distance_spec
 ---
 
 # Slow APSP distance spec

@@ -2,6 +2,9 @@
 article_id: af_024866e71a27fa6344b86632
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.UnionFind.find_isRoot
 ---
 
 # Find is Root

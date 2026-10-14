@@ -2,6 +2,8 @@
 article_id: af_5143843d59a81fc24b8a9a12
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.DirichletSubconvexity.dirichletSubconvexityExponent_le_threeSixteenths
 ---
 
 # Dirichlet Subconvexity Exponent le three Sixteenths

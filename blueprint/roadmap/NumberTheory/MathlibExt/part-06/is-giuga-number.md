@@ -2,6 +2,8 @@
 article_id: af_11c89bfc41443ca0f679b40e
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsGiugaNumber
 ---
 
 # Giuga Number

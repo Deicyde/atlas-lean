@@ -2,6 +2,9 @@
 article_id: af_15650cbd3264f0a466adc9f5
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.cutEdge_eq_cut_makeRoot_of_adjacent
 ---
 
 # Cut Edge eq cut make Root of adjacent

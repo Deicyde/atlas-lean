@@ -2,6 +2,8 @@
 article_id: af_7246de0a28b6c5e1f2db0719
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.FenwickTree.size
 ---
 
 # Size

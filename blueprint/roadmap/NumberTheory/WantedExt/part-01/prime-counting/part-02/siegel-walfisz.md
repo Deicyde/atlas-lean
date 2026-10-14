@@ -2,6 +2,8 @@
 article_id: af_3dac483f686a68627adb1771
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.PrimeCounting.SiegelWalfiszWanted.siegel_walfisz
 ---
 
 # Siegel Walfisz Wanted

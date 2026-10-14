@@ -2,6 +2,9 @@
 article_id: af_a3d69157c129f277dceceb83
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.mesh_partition_congruence_lift
 ---
 
 # Mex Partition Congruence Lift

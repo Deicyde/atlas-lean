@@ -2,6 +2,9 @@
 article_id: af_9a5326caaf5d144ea217633a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.lookupWithCost_le_size
 ---
 
 # Lookup With Cost le size

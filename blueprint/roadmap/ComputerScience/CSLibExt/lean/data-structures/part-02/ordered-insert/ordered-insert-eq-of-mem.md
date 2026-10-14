@@ -2,6 +2,9 @@
 article_id: af_c70bf8afdca25f70f4bc679f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.orderedInsert_eq_of_mem
 ---
 
 # Ordered Insert eq of mem

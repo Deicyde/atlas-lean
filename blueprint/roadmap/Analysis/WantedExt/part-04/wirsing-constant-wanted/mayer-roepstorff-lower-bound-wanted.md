@@ -2,6 +2,8 @@
 article_id: af_30b4db4e8194c71db92176e6
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.WirsingConstantWanted.mayerRoepstorffLowerBound_wanted
 ---
 
 # Mayer Roepstorff Lower Bound wanted

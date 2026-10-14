@@ -2,6 +2,8 @@
 article_id: af_62a7bb9359963a5becf47b7f
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.inorderAux
 ---
 
 # Inorder Aux

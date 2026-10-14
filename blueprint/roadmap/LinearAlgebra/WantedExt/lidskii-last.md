@@ -2,6 +2,8 @@
 article_id: af_f51e7240f6113c32c15062ea
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.LinearAlgebra.LidskiiWanted.LinearAlgebra.lidskii_last
 ---
 
 # Lidskii Wanted

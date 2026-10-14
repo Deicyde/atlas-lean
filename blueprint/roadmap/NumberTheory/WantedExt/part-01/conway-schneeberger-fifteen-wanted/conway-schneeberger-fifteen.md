@@ -2,6 +2,8 @@
 article_id: af_e35b3c597bb2e9e0d6f5106a
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.ConwaySchneebergerFifteenWanted.NumberTheory.ConwaySchneebergerFifteenProblem.conway_schneeberger_fifteen
 ---
 
 # Conway schneeberger fifteen

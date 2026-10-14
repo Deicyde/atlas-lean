@@ -2,6 +2,8 @@
 article_id: af_02df7d20c23e6841ee6e5439
 declaration: theorem
 origin: cited
+statement: formalized
+lean: Nat.threeSquareRepresentationCount_eq_twelve_mul_hurwitzClassNumber_four_n
 ---
 
 # Three Square Representation Count eq twelve mul hurwitz Class Number four n

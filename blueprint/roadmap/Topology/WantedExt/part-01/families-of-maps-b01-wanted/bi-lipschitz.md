@@ -2,6 +2,8 @@
 article_id: af_5de10e1b6dc3613593ec84ef
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Topology.FamiliesOfMapsB01Wanted.FamiliesOfMapsB01.biLipschitz
 ---
 
 # Bi Lipschitz

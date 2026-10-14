@@ -2,6 +2,9 @@
 article_id: af_3029011c5dc727efaaf7e644
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TwoThreeTree.flattenAux_eq
 ---
 
 # Flatten Aux eq

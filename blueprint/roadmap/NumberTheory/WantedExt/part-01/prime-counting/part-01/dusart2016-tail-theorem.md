@@ -2,6 +2,8 @@
 article_id: af_72a2715468742b4392cc4097
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.dusart2016_tail_theorem
 ---
 
 # Dusart2016 Tail Wanted

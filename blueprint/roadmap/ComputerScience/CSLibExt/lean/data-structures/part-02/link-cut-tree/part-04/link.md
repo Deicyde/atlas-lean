@@ -2,6 +2,8 @@
 article_id: af_48e817deab4c7d1f297bde9c
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.link
 ---
 
 # Link

@@ -2,6 +2,8 @@
 article_id: af_ef043e69c74db1d850aaf7fa
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Kruskal.State.step
 ---
 
 # Step

@@ -2,6 +2,8 @@
 article_id: af_5b88c130034a3206de6bbeff
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.QTSPPWanted.QTSPP.q_tspp
 ---
 
 # QTSPPWanted

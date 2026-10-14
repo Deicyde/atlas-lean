@@ -2,6 +2,8 @@
 article_id: af_bf9323a8d576a88f8019b528
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.robertson_seymour
 ---
 
 # Robertson Seymour Wanted

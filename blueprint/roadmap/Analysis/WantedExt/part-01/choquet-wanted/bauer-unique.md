@@ -2,6 +2,8 @@
 article_id: af_2cb37a14e199d41a1088b14d
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.ChoquetWanted.Analysis.bauer_unique
 ---
 
 # Bauer unique

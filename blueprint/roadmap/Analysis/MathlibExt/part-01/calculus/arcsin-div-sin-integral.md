@@ -2,6 +2,9 @@
 article_id: af_9f85571da5dedcad0c9a9046
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.arcsin_div_sin_integral
 ---
 
 # Arcsin Div Sin Integral

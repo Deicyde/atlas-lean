@@ -2,6 +2,9 @@
 article_id: af_a13cfecbfe10e6f2e333477a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Combinatorics.Subspace.comp_compLine
 ---
 
 # Comp comp Line

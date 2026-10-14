@@ -2,6 +2,8 @@
 article_id: af_94525d789818e40916b171de
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Topology.AutFnFiniteIndexPositiveBettiWanted.conjecture_refuted
 ---
 
 # Conjecture refuted

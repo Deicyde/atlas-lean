@@ -2,6 +2,9 @@
 article_id: af_92db8e849b0126e9a22b994f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.listInsert_payload
 ---
 
 # List Insert payload

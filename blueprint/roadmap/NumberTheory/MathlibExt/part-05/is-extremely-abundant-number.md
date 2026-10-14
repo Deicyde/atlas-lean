@@ -2,6 +2,8 @@
 article_id: af_42f987be29bcd68dbaf40f76
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsExtremelyAbundantNumber
 ---
 
 # Extremely Abundant Number

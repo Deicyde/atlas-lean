@@ -2,6 +2,8 @@
 article_id: af_ce324547463fabad7f8aef52
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.takagiNewdef
 ---
 
 # Takagi Newdef

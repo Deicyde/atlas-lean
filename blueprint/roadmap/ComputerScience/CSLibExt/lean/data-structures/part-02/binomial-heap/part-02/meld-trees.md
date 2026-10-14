@@ -2,6 +2,8 @@
 article_id: af_7d1633fe39a8bb40e63498d8
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BinomialForest.meldTrees
 ---
 
 # Meld Trees

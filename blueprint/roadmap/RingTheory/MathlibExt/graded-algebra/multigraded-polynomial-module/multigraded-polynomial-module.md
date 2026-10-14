@@ -2,6 +2,8 @@
 article_id: af_7a12ee9a515c8bfb1225002a
 declaration: structure
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.MultigradedPolynomialModule
 ---
 
 # Multigraded Polynomial Module

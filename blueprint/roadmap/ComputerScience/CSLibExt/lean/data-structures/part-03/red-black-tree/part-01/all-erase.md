@@ -2,6 +2,9 @@
 article_id: af_8fe392f9c842a1e12fad9675
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.all_erase
 ---
 
 # All erase

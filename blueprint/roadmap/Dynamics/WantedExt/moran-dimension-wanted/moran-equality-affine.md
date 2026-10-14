@@ -2,6 +2,8 @@
 article_id: af_ab36fa1e72f87dab6233179a
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Dynamics.MoranDimensionWanted.Dynamics.moran_equality_affine
 ---
 
 # Moran equality affine

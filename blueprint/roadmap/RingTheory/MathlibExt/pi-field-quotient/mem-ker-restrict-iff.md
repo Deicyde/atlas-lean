@@ -2,6 +2,9 @@
 article_id: af_ffff01ca5acab4814d4a3c8c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: PiFieldQuotient.mem_ker_restrict_iff
 ---
 
 # Mem ker restrict iff

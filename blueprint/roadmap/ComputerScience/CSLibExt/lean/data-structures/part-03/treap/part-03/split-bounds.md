@@ -2,6 +2,9 @@
 article_id: af_dbd958abaf69c9c577439ca6
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.split_bounds
 ---
 
 # Split bounds

@@ -2,6 +2,8 @@
 article_id: af_0d536368d9fd521bf772a603
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.KolmogorovArnoldWanted.Analysis.kolmogorov_arnold
 ---
 
 # Kolmogorov Arnold Wanted

@@ -2,6 +2,9 @@
 article_id: af_a99a017d88e0de991ce7b515
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MvPolynomial.map_star_univariateSpecialization
 ---
 
 # Map star univariate Specialization

@@ -2,6 +2,9 @@
 article_id: af_c0ef6287ba39640f2519900d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.hasCirculantCore_iff_circulant
 ---
 
 # Has Circulant Core iff circulant

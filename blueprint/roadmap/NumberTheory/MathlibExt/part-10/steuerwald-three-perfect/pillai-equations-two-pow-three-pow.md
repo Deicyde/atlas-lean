@@ -2,6 +2,9 @@
 article_id: af_1ff95f6797d2f6770568a6d6
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.pillai_equations_two_pow_three_pow
 ---
 
 # Pillai equations two pow three pow

@@ -2,6 +2,9 @@
 article_id: af_10cac143ac278f370378721a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.CartesianTree.root_build_cons_isSome
 ---
 
 # Root build cons is Some

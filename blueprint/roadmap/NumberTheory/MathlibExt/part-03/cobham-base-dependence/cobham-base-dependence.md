@@ -2,6 +2,9 @@
 article_id: af_5b00b159fec934406ab6fd44
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.cobham_base_dependence
 ---
 
 # Cobham base dependence

@@ -2,6 +2,8 @@
 article_id: af_8117ab003648f6b34a8d57ca
 declaration: structure
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.XFastTrie
 ---
 
 # XFast Trie

@@ -2,6 +2,8 @@
 article_id: af_ac4a1d38480fe747df249a1b
 declaration: theorem
 origin: cited
+statement: formalized
+lean: ConvexCovering.directionalExternalIlluminationNumbersEqual
 ---
 
 # Directional External Illumination Numbers Equal

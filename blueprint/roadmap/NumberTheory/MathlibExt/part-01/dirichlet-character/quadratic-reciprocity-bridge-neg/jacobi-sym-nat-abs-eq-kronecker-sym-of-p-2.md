@@ -2,6 +2,9 @@
 article_id: af_25b78d0d217f7bdf82ebb69d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.jacobiSym_natAbs_eq_kroneckerSym_of_prime_ne_two_of_one_mod_four
 ---
 
 # Jacobi Sym nat Abs eq kronecker Sym of prime ne two of one mod four

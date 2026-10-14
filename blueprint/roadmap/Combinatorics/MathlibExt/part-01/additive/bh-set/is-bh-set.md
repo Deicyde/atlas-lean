@@ -2,6 +2,8 @@
 article_id: af_fee51b52ad53214d355e0dd6
 declaration: def
 origin: cited
+statement: formalized
+lean: AdditiveCombinatorics.IsBhSet
 ---
 
 # Is Bh Set

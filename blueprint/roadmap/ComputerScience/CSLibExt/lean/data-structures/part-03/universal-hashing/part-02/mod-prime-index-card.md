@@ -2,6 +2,9 @@
 article_id: af_6f9011032df3e57ff55e9ac2
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.UniversalHashing.modPrimeIndex_card
 ---
 
 # Mod Prime Index card

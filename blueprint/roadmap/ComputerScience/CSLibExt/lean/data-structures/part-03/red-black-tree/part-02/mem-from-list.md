@@ -2,6 +2,9 @@
 article_id: af_5ec3aab5eee620831b751c26
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.mem_fromList
 ---
 
 # Mem from List

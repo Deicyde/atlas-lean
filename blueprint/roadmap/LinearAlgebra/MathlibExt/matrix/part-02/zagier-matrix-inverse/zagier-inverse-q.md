@@ -2,6 +2,8 @@
 article_id: af_e612429307672b7dfe8f4a75
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.zagierInverseQ
 ---
 
 # Zagier Inverse Q

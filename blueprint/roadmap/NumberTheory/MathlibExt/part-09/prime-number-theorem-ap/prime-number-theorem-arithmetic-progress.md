@@ -2,6 +2,9 @@
 article_id: af_9feade00b0f50dcd9d595a56
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.PrimeNumberTheoremAPWanted.prime_number_theorem_arithmetic_progression
 ---
 
 # Prime number theorem arithmetic progression

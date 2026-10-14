@@ -2,6 +2,9 @@
 article_id: af_335868ea1eadec2418711edd
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.DeleteBalanced.valid_deleteBal_of_invariants
 ---
 
 # Valid delete Bal of invariants

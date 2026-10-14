@@ -2,6 +2,9 @@
 article_id: af_a81f18108fcc00f63f62f5a0
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.SkipList.searchWindow_suffix
 ---
 
 # Search Window suffix

@@ -2,6 +2,8 @@
 article_id: af_c67e9ee53d6f53c07069e44f
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.AsymptoticDobrowolski.blanksbyMontgomery_degreeBound
 ---
 
 # Blanksby Montgomery degree Bound

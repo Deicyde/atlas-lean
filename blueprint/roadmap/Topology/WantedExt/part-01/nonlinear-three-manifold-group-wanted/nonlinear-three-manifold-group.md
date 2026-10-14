@@ -2,6 +2,8 @@
 article_id: af_c6688ad73ba52f392c550ab1
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Topology.NonlinearThreeManifoldGroupWanted.Topology.nonlinear_three_manifold_group
 ---
 
 # Nonlinear three manifold group

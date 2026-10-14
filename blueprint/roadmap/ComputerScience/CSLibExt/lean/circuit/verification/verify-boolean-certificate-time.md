@@ -2,6 +2,9 @@
 article_id: af_98a164a071012da1a6b732c0
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Circuits.Circuit.verifyBooleanCertificate_time
 ---
 
 # Verify Boolean Certificate time

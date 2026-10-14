@@ -2,6 +2,9 @@
 article_id: af_5553030d7216d3762d4f7079
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Probability.LawIteratedLogarithmWanted.law_of_the_iterated_logarithm_of_memLp
 ---
 
 # Law of the iterated logarithm of mem Lp

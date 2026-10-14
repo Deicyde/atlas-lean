@@ -2,6 +2,9 @@
 article_id: af_224854db52e00c76694f5094
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.multigradedBettiNumber_eq_of_baseChange
 ---
 
 # Multigraded Betti Invariance

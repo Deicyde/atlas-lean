@@ -2,6 +2,9 @@
 article_id: af_66ed9dfccf6c1ff4f7fa092c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.GroupTheory.ClassFunctionWanted.IsClassFunction.eq_of_isConj
 ---
 
 # Eq of is Conj

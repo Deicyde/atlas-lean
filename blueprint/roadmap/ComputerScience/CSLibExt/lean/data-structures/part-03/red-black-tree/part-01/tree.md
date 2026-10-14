@@ -2,6 +2,8 @@
 article_id: af_2edce20fcb8306afc0c797e6
 declaration: inductive
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.Tree
 ---
 
 # Tree

@@ -2,6 +2,8 @@
 article_id: af_97acedaddec8da9b7473d0f3
 declaration: theorem
 origin: cited
+statement: formalized
+lean: Cslib.Complexity.Algebraic.DualMatrixMultiplicationBoundsWanted.rectangularNaiveUpper
 ---
 
 # Rectangular Naive Upper

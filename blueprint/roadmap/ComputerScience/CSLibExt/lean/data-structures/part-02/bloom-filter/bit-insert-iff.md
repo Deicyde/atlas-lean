@@ -2,6 +2,9 @@
 article_id: af_c3654251854d8af552ba26db
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BloomFilter.bit_insert_iff
 ---
 
 # Bit insert iff

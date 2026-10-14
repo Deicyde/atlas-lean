@@ -2,6 +2,8 @@
 article_id: af_07b46829c57473809c1813aa
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.partitionPolynomial
 ---
 
 # Partition Polynomial

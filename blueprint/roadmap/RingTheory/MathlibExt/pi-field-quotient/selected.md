@@ -2,6 +2,8 @@
 article_id: af_523c4e892a244545f212525e
 declaration: def
 origin: cited
+statement: formalized
+lean: PiFieldQuotient.selected
 ---
 
 # Selected

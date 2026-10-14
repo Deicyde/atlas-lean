@@ -2,6 +2,9 @@
 article_id: af_8a61381e679ec5784e469651
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LruCache.mem_put_entries_iff_of_not_full
 ---
 
 # Mem put entries iff of not full

@@ -2,6 +2,8 @@
 article_id: af_65d940b22be04aa98aa4ec65
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MoserConvexWormCoverConstant.halfSemidiskCovers_holds
 ---
 
 # Half Semidisk Covers holds

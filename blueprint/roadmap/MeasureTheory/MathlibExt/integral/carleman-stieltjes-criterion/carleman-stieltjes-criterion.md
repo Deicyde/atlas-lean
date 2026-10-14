@@ -2,6 +2,9 @@
 article_id: af_701ed5db99bc6e41c0ee98e6
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.carleman_stieltjes_criterion
 ---
 
 # Carleman stieltjes criterion

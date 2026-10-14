@@ -2,6 +2,7 @@
 article_id: af_2ac9b8ffaea10dd441ba01a7
 declaration: theorem
 origin: cited
+lean: SphereHomology.sphere_not_homotopy_equiv
 ---
 
 # Corollary 10.5

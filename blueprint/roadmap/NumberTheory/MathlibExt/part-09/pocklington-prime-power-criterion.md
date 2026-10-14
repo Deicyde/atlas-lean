@@ -2,6 +2,9 @@
 article_id: af_b6599247a5fd448b9c9206ae
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.pocklington_prime_power_criterion
 ---
 
 # Pocklington Prime Power Criterion

@@ -2,6 +2,9 @@
 article_id: af_33a35cc7a62fdbc001672251
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciForest.minRoot_append
 ---
 
 # Min Root append

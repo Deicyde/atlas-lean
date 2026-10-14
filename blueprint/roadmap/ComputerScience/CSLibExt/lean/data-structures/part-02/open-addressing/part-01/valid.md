@@ -2,6 +2,8 @@
 article_id: af_e1997bfab3c0fb99ab914a56
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.OpenAddressing.Valid
 ---
 
 # Valid

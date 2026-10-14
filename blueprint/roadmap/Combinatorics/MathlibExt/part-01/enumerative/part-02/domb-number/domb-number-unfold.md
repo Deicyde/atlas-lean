@@ -2,6 +2,9 @@
 article_id: af_e77bde9cf5800ffbbbc7d980
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.dombNumber_unfold
 ---
 
 # Domb Number unfold

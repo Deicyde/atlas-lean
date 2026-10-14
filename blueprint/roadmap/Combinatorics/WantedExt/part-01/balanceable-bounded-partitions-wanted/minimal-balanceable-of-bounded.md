@@ -2,6 +2,8 @@
 article_id: af_ccf27c361c1620ed5ed67231
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.BalanceableBoundedPartitionsWanted.Combinatorics.minimal_balanceable_of_bounded
 ---
 
 # Minimal balanceable of bounded

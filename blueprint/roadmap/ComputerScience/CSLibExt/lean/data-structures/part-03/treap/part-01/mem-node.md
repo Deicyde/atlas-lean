@@ -2,6 +2,8 @@
 article_id: af_9e886c8c5b32283a3bc96bde
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.MemNode
 ---
 
 # Mem Node

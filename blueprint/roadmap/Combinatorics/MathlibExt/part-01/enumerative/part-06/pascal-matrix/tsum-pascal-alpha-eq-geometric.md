@@ -2,6 +2,9 @@
 article_id: af_de2420bb1ffa9aeb66596afc
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.tsum_pascalAlpha_eq_geometric
 ---
 
 # Tsum pascal Alpha eq geometric

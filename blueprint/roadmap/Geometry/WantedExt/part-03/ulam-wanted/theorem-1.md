@@ -2,6 +2,8 @@
 article_id: af_ed29911a6a533ba41586cd24
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.UlamWanted.Ulam.theorem_1
 ---
 
 # Theorem 1

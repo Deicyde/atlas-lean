@@ -2,6 +2,8 @@
 article_id: af_9e0f92fcb68c146428f2a9ac
 declaration: theorem
 origin: cited
+statement: formalized
+lean: Cslib.Complexity.Algebraic.DualMatrixMultiplicationBoundsWanted.upperBoundOne
 ---
 
 # Upper Bound One

@@ -2,6 +2,8 @@
 article_id: af_65c6ea879292153b90329436
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.PalindromicRecurrentOutsidePWanted.conjecture_holds
 ---
 
 # Conjecture holds

@@ -2,6 +2,8 @@
 article_id: af_854018baf4f4a7300eb372c9
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.EquiangularLinesFixedAngleWanted.EquiangularLinesFixedAngle.theorem_1_2
 ---
 
 # Theorem 1 2

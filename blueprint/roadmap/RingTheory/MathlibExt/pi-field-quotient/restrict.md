@@ -2,6 +2,8 @@
 article_id: af_78fa9c9c620cefaf032ec8d8
 declaration: def
 origin: cited
+statement: formalized
+lean: PiFieldQuotient.restrict
 ---
 
 # Restrict

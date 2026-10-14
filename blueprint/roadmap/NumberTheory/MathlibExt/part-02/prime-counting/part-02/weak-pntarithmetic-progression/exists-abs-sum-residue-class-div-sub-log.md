@@ -2,6 +2,9 @@
 article_id: af_b46d4252241e7b013d2255eb
 declaration: lemma
 origin: cited
+statement: formalized
+proof: formalized
+lean: Chebyshev.exists_abs_sum_residueClass_div_sub_log_le
 ---
 
 # Exists abs sum residue Class div sub log le

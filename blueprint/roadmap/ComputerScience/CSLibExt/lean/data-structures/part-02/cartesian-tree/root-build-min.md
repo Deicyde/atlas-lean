@@ -2,6 +2,9 @@
 article_id: af_e6afba7b886447f2445c9e74
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.CartesianTree.root_build_min
 ---
 
 # Root build min

@@ -2,6 +2,8 @@
 article_id: af_e246f7f64ac3cb770b59107c
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.PellConvergentWanted.NumberTheory.pell_solution_is_convergent
 ---
 
 # Pell Convergent Wanted

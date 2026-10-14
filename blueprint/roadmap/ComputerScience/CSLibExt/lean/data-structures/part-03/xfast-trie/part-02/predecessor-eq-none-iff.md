@@ -2,6 +2,9 @@
 article_id: af_57fa0492f1b949de972caa51
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.XFastTrie.predecessor_eq_none_iff
 ---
 
 # Predecessor eq none iff

@@ -2,6 +2,9 @@
 article_id: af_f6f714f1e4cdb1a92cce2e93
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Geometry.Manifold.MorseExistenceWanted.morse_function_exists
 ---
 
 # Morse Existence

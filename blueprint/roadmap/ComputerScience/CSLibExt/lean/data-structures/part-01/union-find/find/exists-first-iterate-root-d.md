@@ -2,6 +2,9 @@
 article_id: af_905c849e20c72e1d96c796ae
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Batteries.UnionFind.exists_first_iterate_rootD
 ---
 
 # Exists first iterate root D

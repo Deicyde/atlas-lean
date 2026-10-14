@@ -2,6 +2,8 @@
 article_id: af_439115e15d19b2346aded8dd
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.contains
 ---
 
 # Contains

@@ -2,6 +2,9 @@
 article_id: af_8e7cba2394cd3b9a8d571dc3
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Polynomial.eval_re_nonpos_of_upperInterlacing
 ---
 
 # Eval re nonpos of upper Interlacing

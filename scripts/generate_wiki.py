@@ -7,9 +7,9 @@
 ATLAS v2, the root Lake package, comes first: every public MathlibExt, CSLibExt
 and WantedExt declaration with a docstring becomes one article whose statement
 is that docstring. Theorems are proved and definitions defined unless their
-module contains `sorry`; `theorem_wanted` and `def_wanted` entries are stated
-results waiting for a proof, which Autoform's source index cannot see yet, so
-they carry no `lean:` link.
+module contains `sorry`; `theorem_wanted` entries are stated results waiting
+for a proof, and `def_wanted` entries stay unstated, because Autoform counts a
+stated definition as defined.
 
 Run it with a Python that has Autoform installed (see blueprint-pages.yml).
 
@@ -516,9 +516,15 @@ def load_library(library: str, index) -> tuple[list[Target], dict]:
             summary["documented"] += 1
             keyword, short = match.group("kw"), match.group("name").split(".")[-1]
             found = located.get((relative, number + 1))
-            if keyword in WANTED or found is None:
+            if found is None:
                 summary["wanted"] += keyword in WANTED
                 declaration, lean, statement, proof = WANTED.get(keyword, keyword), None, False, False
+            elif found.keyword in WANTED:
+                # Stated without a proof. A wanted definition stays unstated,
+                # because Autoform counts a stated definition as defined.
+                summary["wanted"] += 1
+                declaration, lean = WANTED[found.keyword], found.name
+                statement, proof = found.keyword == "theorem_wanted", False
             else:
                 declaration, lean = found.keyword, found.name
                 is_data = declaration in DEFINITION_DECLARATIONS
@@ -632,8 +638,9 @@ def render_library_source(library: str, summary: dict) -> str:
         lines += [
             "",
             f"{summary['wanted']} articles are `theorem_wanted` or `def_wanted` entries: their Lean",
-            "statements exist, but Autoform's source index does not recognize those",
-            "commands yet, so the articles carry no `lean:` link and show as not stated.",
+            "statements exist without proofs. A wanted theorem shows as stated and unproved;",
+            "a wanted definition shows as not stated, because a stated definition counts",
+            "as defined.",
         ]
     if summary.get("edges"):
         lines += [

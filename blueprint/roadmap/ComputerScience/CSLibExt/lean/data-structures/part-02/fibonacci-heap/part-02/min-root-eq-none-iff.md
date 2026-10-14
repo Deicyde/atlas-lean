@@ -2,6 +2,9 @@
 article_id: af_c61f0367574589a6f58ab6d9
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciForest.minRoot_eq_none_iff
 ---
 
 # Min Root eq none iff

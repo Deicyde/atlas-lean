@@ -2,6 +2,9 @@
 article_id: af_6bcf95a2c76be4e5577bb74e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.primePrimes_oneBased_ratio_tendsto_one
 ---
 
 # Prime Primes one Based ratio tendsto one

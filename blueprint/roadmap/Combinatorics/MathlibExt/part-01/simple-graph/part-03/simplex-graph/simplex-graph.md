@@ -2,6 +2,8 @@
 article_id: af_088d0494b0e106455430e385
 declaration: def
 origin: cited
+statement: formalized
+lean: SimpleGraph.simplexGraph
 ---
 
 # Simplex Graph

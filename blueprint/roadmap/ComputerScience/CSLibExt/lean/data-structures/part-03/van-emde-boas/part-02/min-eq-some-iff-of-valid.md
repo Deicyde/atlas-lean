@@ -2,6 +2,9 @@
 article_id: af_c08d145d27859b710fbfb222
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.VanEmdeBoas.min?_eq_some_iff_of_valid
 ---
 
 # Min? eq some iff of valid

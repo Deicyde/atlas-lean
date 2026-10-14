@@ -2,6 +2,9 @@
 article_id: af_e07f1314a70b08c6d88fc046
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.UniversalHashing.collisionCount_self
 ---
 
 # Collision Count self

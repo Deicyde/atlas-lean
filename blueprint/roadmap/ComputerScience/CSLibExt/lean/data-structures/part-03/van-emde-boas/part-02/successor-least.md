@@ -2,6 +2,9 @@
 article_id: af_644f216299fbcdd983792503
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.VanEmdeBoas.successor_least
 ---
 
 # Successor least

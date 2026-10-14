@@ -2,6 +2,9 @@
 article_id: af_169046c87214ec2df2319a26
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.listPrepend_time
 ---
 
 # List Prepend time

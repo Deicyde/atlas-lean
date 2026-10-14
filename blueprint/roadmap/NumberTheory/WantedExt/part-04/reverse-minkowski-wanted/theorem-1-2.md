@@ -2,6 +2,8 @@
 article_id: af_7062a9abaae0ad4c756e955b
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.ReverseMinkowskiWanted.ReverseMinkowski.theorem_1_2
 ---
 
 # Theorem 1 2

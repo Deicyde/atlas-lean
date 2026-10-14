@@ -2,6 +2,9 @@
 article_id: af_f91e2991d948f0bcfcb4f8a8
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.mem_vertices_graftAt
 ---
 
 # Mem vertices graft At

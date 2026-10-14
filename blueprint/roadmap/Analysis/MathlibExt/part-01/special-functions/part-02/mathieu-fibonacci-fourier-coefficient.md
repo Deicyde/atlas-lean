@@ -2,6 +2,8 @@
 article_id: af_b4e74ba7f9dfef6615c00f9a
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.mathieuFibonacciFourierCoefficient
 ---
 
 # Mathieu Fibonacci Fourier Coefficient

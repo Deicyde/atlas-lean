@@ -2,6 +2,9 @@
 article_id: af_6b9556c60f566a7e67341fdf
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.card_nontrivial_1234_3412_classes
 ---
 
 # Nontrivial1234 3412 Classes

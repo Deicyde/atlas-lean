@@ -2,6 +2,9 @@
 article_id: af_6c82feb9b039367a8bd2bfcd
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.stirlingSecond_mul_factorial_eq_sum
 ---
 
 # Stirling Second mul factorial eq sum

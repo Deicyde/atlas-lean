@@ -2,6 +2,9 @@
 article_id: af_ccd88a58827bf3a575e6bdc7
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: PiFieldQuotient.exists_indexEquiv_algEquiv
 ---
 
 # Pi Field Decomposition

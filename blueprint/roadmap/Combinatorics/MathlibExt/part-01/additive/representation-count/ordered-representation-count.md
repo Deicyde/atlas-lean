@@ -2,6 +2,8 @@
 article_id: af_81e0564a9440dabed18732a3
 declaration: def
 origin: cited
+statement: formalized
+lean: AdditiveCombinatorics.orderedRepresentationCount
 ---
 
 # Ordered Representation Count

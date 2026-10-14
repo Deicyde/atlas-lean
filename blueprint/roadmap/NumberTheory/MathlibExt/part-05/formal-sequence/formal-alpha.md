@@ -2,6 +2,8 @@
 article_id: af_d3f87129645217cff10211eb
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.formalAlpha
 ---
 
 # Formal Alpha

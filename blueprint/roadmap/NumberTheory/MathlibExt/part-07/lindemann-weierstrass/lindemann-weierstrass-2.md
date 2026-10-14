@@ -2,6 +2,9 @@
 article_id: af_734175a9554b09542c6cc2d8
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.LindemannWeierstrassWanted.lindemann_weierstrass
 ---
 
 # Lindemann weierstrass

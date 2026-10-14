@@ -2,6 +2,8 @@
 article_id: af_16637adf601bf6e8ed945858
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsOmegaLimit
 ---
 
 # Is Omega Limit

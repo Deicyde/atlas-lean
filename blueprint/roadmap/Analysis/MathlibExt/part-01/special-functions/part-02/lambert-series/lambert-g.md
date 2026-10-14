@@ -2,6 +2,8 @@
 article_id: af_35635d8f7b99f157b477e9dc
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.lambertG
 ---
 
 # Lambert G

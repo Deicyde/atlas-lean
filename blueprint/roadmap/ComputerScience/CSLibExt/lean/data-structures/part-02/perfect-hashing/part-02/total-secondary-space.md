@@ -2,6 +2,8 @@
 article_id: af_a8f286bea664c6b2bc5e2258
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.PerfectHashing.totalSecondarySpace
 ---
 
 # Total Secondary Space

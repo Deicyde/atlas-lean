@@ -2,6 +2,9 @@
 article_id: af_9ff20185c570e4024ebe3bbf
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.SkipList.valid_insert
 ---
 
 # Valid insert

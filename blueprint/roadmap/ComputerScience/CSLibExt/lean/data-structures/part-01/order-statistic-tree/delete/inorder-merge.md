@@ -2,6 +2,9 @@
 article_id: af_618b1c8558322420b0067847
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OrderStatisticTree.inorder_merge
 ---
 
 # Inorder merge

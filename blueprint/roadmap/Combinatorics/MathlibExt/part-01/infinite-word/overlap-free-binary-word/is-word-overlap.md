@@ -2,6 +2,8 @@
 article_id: af_d7814343786e51c15aaee57b
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsWordOverlap
 ---
 
 # Is Word Overlap

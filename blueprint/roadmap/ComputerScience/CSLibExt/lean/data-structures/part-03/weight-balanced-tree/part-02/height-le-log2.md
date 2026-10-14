@@ -2,6 +2,9 @@
 article_id: af_3ccdfd6963c992cf752eefc7
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.WeightBalancedTree.height_le_log2
 ---
 
 # Height le log2

@@ -2,6 +2,8 @@
 article_id: af_a3c226c8ea5d3ff756c29b07
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.SpreadOfAFiniteGroupWanted.SpreadOfAFiniteGroup.theorem_1
 ---
 
 # Theorem 1

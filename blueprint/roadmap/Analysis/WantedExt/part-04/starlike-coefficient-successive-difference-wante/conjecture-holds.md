@@ -2,6 +2,8 @@
 article_id: af_13a03c156570fc294ce895b1
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.StarlikeCoefficientSuccessiveDifferenceWanted.conjecture_holds
 ---
 
 # Conjecture holds

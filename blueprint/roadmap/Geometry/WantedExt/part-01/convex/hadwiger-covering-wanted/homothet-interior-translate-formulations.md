@@ -2,6 +2,8 @@
 article_id: af_90c3b76e7aa6646448676b17
 declaration: theorem
 origin: cited
+statement: formalized
+lean: ConvexCovering.homothetInteriorTranslateFormulationsEquivalent
 ---
 
 # Homothet Interior Translate Formulations Equivalent

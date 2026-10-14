@@ -2,6 +2,9 @@
 article_id: af_4d6c7ee9bbdab16ac8092529
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.takagiEll_one
 ---
 
 # Takagi Ell one

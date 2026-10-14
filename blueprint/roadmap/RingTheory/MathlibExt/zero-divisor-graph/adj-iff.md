@@ -2,6 +2,9 @@
 article_id: af_13e23e37f8144357f7df5796
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: ZeroDivisorGraph.adj_iff
 ---
 
 # Adj iff

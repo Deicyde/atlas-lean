@@ -2,6 +2,8 @@
 article_id: af_3e1e7ec1f0ffcd032a417d92
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsCommaCandidate
 ---
 
 # Is Comma Candidate

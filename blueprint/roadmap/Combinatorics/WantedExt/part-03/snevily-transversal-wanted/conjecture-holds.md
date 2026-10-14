@@ -2,6 +2,8 @@
 article_id: af_eeb1ecef20ec66ea46e4c255
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.SnevilyTransversalWanted.conjecture_holds
 ---
 
 # Conjecture holds

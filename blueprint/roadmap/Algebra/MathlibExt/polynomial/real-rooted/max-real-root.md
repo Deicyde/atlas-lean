@@ -2,6 +2,8 @@
 article_id: af_842694ea0b2e88894777ec74
 declaration: def
 origin: cited
+statement: formalized
+lean: Polynomial.maxRealRoot
 ---
 
 # Max Real Root

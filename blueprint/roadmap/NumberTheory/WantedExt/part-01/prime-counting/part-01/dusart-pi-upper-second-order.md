@@ -2,6 +2,8 @@
 article_id: af_d6718a265fd3555b5edc72cb
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.dusart_pi_upper_second_order
 ---
 
 # Dusart Pi Upper Second Order Wanted

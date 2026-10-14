@@ -2,6 +2,9 @@
 article_id: af_71d4230564b3df2ea5cb821e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.euler_product_mean_value
 ---
 
 # Euler Product Mean Value

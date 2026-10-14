@@ -2,6 +2,9 @@
 article_id: af_a5c56e3bcee6b211b0d651a0
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.GroupedYFastTrie.successor_ofSortedList_eq_some_iff
 ---
 
 # Successor of Sorted List eq some iff

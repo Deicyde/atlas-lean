@@ -2,6 +2,8 @@
 article_id: af_6a06700b25fb45840fca9c36
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsTernarySquareFreeLength
 ---
 
 # Is Ternary Square Free Length

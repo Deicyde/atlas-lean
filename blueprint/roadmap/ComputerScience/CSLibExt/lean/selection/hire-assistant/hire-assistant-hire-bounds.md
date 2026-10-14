@@ -2,6 +2,9 @@
 article_id: af_48f0e13ae5e71aa10b94531f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.hireAssistant_hire_bounds
 ---
 
 # Hire Assistant hire bounds

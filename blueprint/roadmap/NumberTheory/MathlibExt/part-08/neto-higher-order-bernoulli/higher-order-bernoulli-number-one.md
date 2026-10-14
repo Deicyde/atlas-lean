@@ -2,6 +2,9 @@
 article_id: af_85e4ac697a29edededed3cfd
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.higherOrderBernoulliNumber_one
 ---
 
 # Higher Order Bernoulli Number one

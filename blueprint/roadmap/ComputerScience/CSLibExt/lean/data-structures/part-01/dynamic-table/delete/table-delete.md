@@ -2,6 +2,8 @@
 article_id: af_de1542df12568e566632d9a7
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.tableDelete
 ---
 
 # Table Delete

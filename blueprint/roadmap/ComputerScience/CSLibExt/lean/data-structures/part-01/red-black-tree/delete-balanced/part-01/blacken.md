@@ -2,6 +2,8 @@
 article_id: af_9a3f297d9467c0505a63c76e
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.DeleteBalanced.blacken
 ---
 
 # Blacken

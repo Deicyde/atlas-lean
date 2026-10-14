@@ -2,6 +2,8 @@
 article_id: af_c818a3fde0de2f9327da732e
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BinarySearchTree.rank
 ---
 
 # Rank

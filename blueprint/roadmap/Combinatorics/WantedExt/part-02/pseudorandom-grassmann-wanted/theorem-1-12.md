@@ -2,6 +2,8 @@
 article_id: af_c38aec9988f9820bdb78bf6b
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.PseudorandomGrassmannWanted.PseudorandomGrassmann.theorem_1_12
 ---
 
 # Theorem 1 12

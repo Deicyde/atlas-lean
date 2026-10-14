@@ -2,6 +2,8 @@
 article_id: af_dc2b9a6d3685bb962b785739
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.GeneralizedThueMorse.infLetter
 ---
 
 # Inf Letter

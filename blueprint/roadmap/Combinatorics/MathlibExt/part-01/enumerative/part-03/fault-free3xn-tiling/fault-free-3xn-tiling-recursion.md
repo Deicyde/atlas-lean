@@ -2,6 +2,9 @@
 article_id: af_312ebd37227fb9c792e853ea
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.fault_free_3xn_tiling_recursion
 ---
 
 # Fault free 3xn tiling recursion

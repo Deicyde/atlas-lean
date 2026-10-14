@@ -2,6 +2,8 @@
 article_id: af_5b0ec435ae3d4c48819705c1
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Algebra.SturmWanted.Algebra.sturm
 ---
 
 # Sturm

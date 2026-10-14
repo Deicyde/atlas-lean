@@ -2,6 +2,9 @@
 article_id: af_ad5beeea1431d9a903e2676c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.IsNuLambdaPascalMatrix.skew
 ---
 
 # Skew

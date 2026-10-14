@@ -2,6 +2,9 @@
 article_id: af_75cb9589624b81156059813d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.valid_split
 ---
 
 # Valid split

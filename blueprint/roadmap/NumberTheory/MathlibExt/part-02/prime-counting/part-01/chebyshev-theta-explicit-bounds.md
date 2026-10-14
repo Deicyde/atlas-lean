@@ -2,6 +2,9 @@
 article_id: af_d8aafdd5b0107317e31b56e2
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.chebyshev_theta_explicit_bounds
 ---
 
 # Chebyshev Theta Bounds

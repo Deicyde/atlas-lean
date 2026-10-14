@@ -2,6 +2,9 @@
 article_id: af_fba4238049b2e603a63543c2
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.mem_erase_of_mem
 ---
 
 # Mem erase of mem

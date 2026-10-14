@@ -2,6 +2,9 @@
 article_id: af_59422b58a5032341dd098ae4
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.HashTable.abstraction_insert
 ---
 
 # Abstraction insert

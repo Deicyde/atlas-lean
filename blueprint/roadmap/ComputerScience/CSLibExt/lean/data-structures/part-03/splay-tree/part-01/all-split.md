@@ -2,6 +2,9 @@
 article_id: af_36b27cc579fda71f1a0075a7
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.SplayTree.all_split
 ---
 
 # All split

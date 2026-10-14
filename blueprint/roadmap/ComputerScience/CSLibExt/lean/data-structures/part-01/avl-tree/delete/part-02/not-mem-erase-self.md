@@ -2,6 +2,9 @@
 article_id: af_f172de6740b41f296de0ae50
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.not_mem_erase_self
 ---
 
 # Not mem erase self

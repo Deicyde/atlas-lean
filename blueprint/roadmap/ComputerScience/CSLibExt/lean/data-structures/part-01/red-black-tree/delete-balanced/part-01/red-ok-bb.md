@@ -2,6 +2,8 @@
 article_id: af_a69bf5ca0dd7cb31a66a3b99
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.DeleteBalanced.RedOkBB
 ---
 
 # Red Ok BB

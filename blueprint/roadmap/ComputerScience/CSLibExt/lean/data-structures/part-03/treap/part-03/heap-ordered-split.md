@@ -2,6 +2,9 @@
 article_id: af_dbe72875081af06fa9845075
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.heapOrdered_split
 ---
 
 # Heap Ordered split

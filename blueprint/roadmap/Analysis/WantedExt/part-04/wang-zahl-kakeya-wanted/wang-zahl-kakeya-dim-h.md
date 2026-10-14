@@ -2,6 +2,8 @@
 article_id: af_12cf45dd07f147c893365294
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.WangZahlKakeyaWanted.Analysis.WangZahlKakeya.wang_zahl_kakeya_dimH
 ---
 
 # Wang zahl kakeya dim H

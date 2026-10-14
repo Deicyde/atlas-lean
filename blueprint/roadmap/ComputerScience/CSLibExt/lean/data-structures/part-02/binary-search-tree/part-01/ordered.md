@@ -2,6 +2,8 @@
 article_id: af_6a0154b2ca9b2dcb27fdfeb7
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BinarySearchTree.Ordered
 ---
 
 # Ordered

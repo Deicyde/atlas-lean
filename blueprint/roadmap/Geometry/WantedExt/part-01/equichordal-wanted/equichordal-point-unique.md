@@ -2,6 +2,8 @@
 article_id: af_b1d1d42ecd19811b90405c73
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.EquichordalWanted.Geometry.Equichordal.equichordal_point_unique
 ---
 
 # Equichordal point unique

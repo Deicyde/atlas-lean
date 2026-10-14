@@ -2,6 +2,9 @@
 article_id: af_43631b5bfdec257b2b5aa049
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RodCutting.memoizedCutRodAux_preserves
 ---
 
 # Memoized Cut Rod Aux preserves

@@ -2,6 +2,9 @@
 article_id: af_5b79720f2ee0724e483012dc
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.listDelete_disjoint_represents
 ---
 
 # List Delete disjoint represents

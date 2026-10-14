@@ -2,6 +2,9 @@
 article_id: af_998de7b2364c8cb026a4ac21
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.weyl_criterion
 ---
 
 # Weyl Criterion

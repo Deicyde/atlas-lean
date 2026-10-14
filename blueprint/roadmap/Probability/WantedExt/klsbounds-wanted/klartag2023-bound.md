@@ -2,6 +2,8 @@
 article_id: af_09e43a4236dd7ca2628b9314
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.KLS.klartag2023_bound
 ---
 
 # Klartag2023 bound

@@ -2,6 +2,9 @@
 article_id: af_485a8cfce4d5aa638194fd91
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.motzkin_hump_peak_height_distribution
 ---
 
 # Motzkin Hump Peak Height

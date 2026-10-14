@@ -2,6 +2,9 @@
 article_id: af_efc9eb13582809fb436e61c7
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OrderStatisticTree.cacheCorrect_merge
 ---
 
 # Cache Correct merge

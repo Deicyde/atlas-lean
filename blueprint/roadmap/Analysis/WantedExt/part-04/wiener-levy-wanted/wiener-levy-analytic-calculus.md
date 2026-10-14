@@ -2,6 +2,8 @@
 article_id: af_d99181caad60e1394107f5fe
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.WienerLevyWanted.Analysis.WienerLevy.wiener_levy_analytic_calculus
 ---
 
 # Wiener levy analytic calculus

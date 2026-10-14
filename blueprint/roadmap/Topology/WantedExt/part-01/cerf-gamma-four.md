@@ -2,6 +2,8 @@
 article_id: af_a85e91bebf7809fd84b8138f
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Topology.CerfGammaFourWanted.Topology.cerf_gamma_four
 ---
 
 # Cerf Gamma Four Wanted

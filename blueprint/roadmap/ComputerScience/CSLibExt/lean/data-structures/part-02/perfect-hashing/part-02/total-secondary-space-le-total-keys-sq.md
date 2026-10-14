@@ -2,6 +2,9 @@
 article_id: af_7ca592092018b16b5ea81837
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.PerfectHashing.totalSecondarySpace_le_totalKeys_sq
 ---
 
 # Total Secondary Space le total Keys sq

@@ -2,6 +2,8 @@
 article_id: af_f57d084a557355b5a6d19878
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.Connected
 ---
 
 # Connected

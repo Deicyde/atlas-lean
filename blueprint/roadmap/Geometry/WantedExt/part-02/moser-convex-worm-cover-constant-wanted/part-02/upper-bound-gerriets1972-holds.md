@@ -2,6 +2,8 @@
 article_id: af_dd592f93d2332b17b6845c79
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MoserConvexWormCoverConstant.upperBoundGerriets1972_holds
 ---
 
 # Upper Bound Gerriets1972 holds

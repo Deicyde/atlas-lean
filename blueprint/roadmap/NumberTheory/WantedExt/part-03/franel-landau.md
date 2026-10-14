@@ -2,6 +2,8 @@
 article_id: af_596eba1178e014939f647881
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.franel_landau
 ---
 
 # Franel Landau Theorem Wanted

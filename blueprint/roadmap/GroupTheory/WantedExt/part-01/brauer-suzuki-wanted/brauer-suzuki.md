@@ -2,6 +2,8 @@
 article_id: af_f9930436cd10b7e4432ca8ce
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.BrauerSuzukiWanted.GroupTheory.brauer_suzuki
 ---
 
 # Brauer suzuki

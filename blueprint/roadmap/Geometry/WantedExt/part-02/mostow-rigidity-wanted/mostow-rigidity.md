@@ -2,6 +2,8 @@
 article_id: af_561c5705d4c73b1b8839a61c
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.MostowRigidityWanted.Geometry.MostowRigidity.mostow_rigidity
 ---
 
 # Mostow rigidity

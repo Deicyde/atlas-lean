@@ -2,6 +2,9 @@
 article_id: af_e759fb21be42c5fea0f72928
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: legendreSym.sum_linear_eq_zero
 ---
 
 # Linear Sum

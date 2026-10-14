@@ -2,6 +2,8 @@
 article_id: af_4956261e899dfafc028a8c90
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Algebra.CompleteLocalRingReconstructionWanted.conjecture_refuted
 ---
 
 # Conjecture refuted

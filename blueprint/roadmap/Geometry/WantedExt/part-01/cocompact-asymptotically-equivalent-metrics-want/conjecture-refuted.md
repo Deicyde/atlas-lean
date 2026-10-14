@@ -2,6 +2,8 @@
 article_id: af_4506bdb9cf9868bc7d962f5e
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.CocompactAsymptoticallyEquivalentMetricsWanted.conjecture_refuted
 ---
 
 # Conjecture refuted

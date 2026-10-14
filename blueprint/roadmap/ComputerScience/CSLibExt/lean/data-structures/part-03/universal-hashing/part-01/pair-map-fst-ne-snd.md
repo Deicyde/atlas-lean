@@ -2,6 +2,9 @@
 article_id: af_10952e84f9b32631f0cb74aa
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.UniversalHashing.pairMap_fst_ne_snd
 ---
 
 # Pair Map fst ne snd

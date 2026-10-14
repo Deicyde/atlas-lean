@@ -2,6 +2,9 @@
 article_id: af_24e24d1a2847da43cab641ff
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.steuerwald_three_perfect_exponents
 ---
 
 # Steuerwald three perfect exponents

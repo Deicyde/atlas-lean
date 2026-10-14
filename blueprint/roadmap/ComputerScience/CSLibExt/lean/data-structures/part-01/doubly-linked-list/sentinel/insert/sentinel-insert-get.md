@@ -2,6 +2,9 @@
 article_id: af_f9b5162a5e94bf33ca621111
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.sentinelInsert_get
 ---
 
 # Sentinel Insert get

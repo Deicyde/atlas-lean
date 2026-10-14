@@ -2,6 +2,9 @@
 article_id: af_b2c6f9ba52101ed911007fa8
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.GroupedYFastTrie.mem_contents_iff
 ---
 
 # Mem contents iff

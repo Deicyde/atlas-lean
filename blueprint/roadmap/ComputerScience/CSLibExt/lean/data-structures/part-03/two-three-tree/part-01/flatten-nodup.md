@@ -2,6 +2,9 @@
 article_id: af_adff8281af8caceb7448e5cd
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TwoThreeTree.flatten_nodup
 ---
 
 # Flatten nodup

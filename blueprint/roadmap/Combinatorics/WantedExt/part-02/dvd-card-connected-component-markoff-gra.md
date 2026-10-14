@@ -2,6 +2,8 @@
 article_id: af_ccb5fd1b1f7b236e1f5785da
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.MarkoffGraphWanted.Combinatorics.dvd_card_connectedComponent_markoffGraph
 ---
 
 # Markoff Graph Wanted

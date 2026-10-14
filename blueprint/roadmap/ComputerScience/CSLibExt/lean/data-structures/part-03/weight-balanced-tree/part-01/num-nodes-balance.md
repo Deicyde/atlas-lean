@@ -2,6 +2,9 @@
 article_id: af_b73fe7074fe7efeabc4cc5e9
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.WeightBalancedTree.numNodes_balance
 ---
 
 # Num Nodes balance

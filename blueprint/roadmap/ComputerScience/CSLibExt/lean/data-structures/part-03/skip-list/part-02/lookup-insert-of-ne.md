@@ -2,6 +2,9 @@
 article_id: af_71d9e1b1edc42ce9263b044f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.SkipList.lookup_insert_of_ne
 ---
 
 # Lookup insert of ne

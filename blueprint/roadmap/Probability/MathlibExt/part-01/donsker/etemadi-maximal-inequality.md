@@ -2,6 +2,9 @@
 article_id: af_8297e2de163062e5debdef64
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Probability.DonskerWanted.etemadi_maximal_inequality
 ---
 
 # Etemadi maximal inequality

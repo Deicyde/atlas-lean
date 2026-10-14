@@ -2,6 +2,9 @@
 article_id: af_f4b5fb93780d281aa99bfb21
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.UniversalHashing.pairMap_injective
 ---
 
 # Pair Map injective

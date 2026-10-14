@@ -2,6 +2,8 @@
 article_id: af_a94766617ec2bddf73003229
 declaration: structure
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BinomialHeap
 ---
 
 # Binomial Heap

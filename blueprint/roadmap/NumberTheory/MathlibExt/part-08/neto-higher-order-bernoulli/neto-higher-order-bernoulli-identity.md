@@ -2,6 +2,9 @@
 article_id: af_63bb9d55e8266485fce9816d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.neto_higher_order_bernoulli_identity
 ---
 
 # Neto higher order bernoulli identity

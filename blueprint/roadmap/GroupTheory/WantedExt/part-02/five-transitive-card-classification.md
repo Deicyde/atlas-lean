@@ -2,6 +2,8 @@
 article_id: af_a371261a2f98939c35b52859
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.MultiplyTransitiveWanted.GroupTheory.five_transitive_card_classification
 ---
 
 # Multiply Transitive Wanted

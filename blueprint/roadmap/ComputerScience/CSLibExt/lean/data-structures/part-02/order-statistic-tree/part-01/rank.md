@@ -2,6 +2,8 @@
 article_id: af_8b8e80f0d794b97094b9d48d
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.OrderStatisticTree.rank
 ---
 
 # Rank

@@ -3,7 +3,7 @@ article_id: af_6ed7b01f99fb04588b883f59
 declaration: structure
 origin: cited
 statement: formalized
-lean: MathlibExt.NumberTheory.EnumeratingNumberFieldsWanted.NumberFieldOfBoundedDiscriminant
+lean: MathlibExt.NumberTheory.EnumeratingNumberFieldsWanted.EnumeratingNumberFields.NumberFieldOfBoundedDiscriminant
 ---
 
 # Number Field Of Bounded Discriminant

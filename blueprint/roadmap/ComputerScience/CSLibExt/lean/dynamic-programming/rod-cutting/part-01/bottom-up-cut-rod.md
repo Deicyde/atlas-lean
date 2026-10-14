@@ -2,6 +2,8 @@
 article_id: af_ead53966085665a65a51e53b
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RodCutting.bottomUpCutRod
 ---
 
 # Bottom Up Cut Rod

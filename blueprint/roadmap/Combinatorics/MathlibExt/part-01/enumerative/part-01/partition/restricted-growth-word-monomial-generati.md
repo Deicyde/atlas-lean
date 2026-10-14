@@ -2,6 +2,9 @@
 article_id: af_3dbcf64bf9f60a3456108c98
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.restricted_growth_word_monomial_generating_function
 ---
 
 # Restricted Growth Word Generating Function

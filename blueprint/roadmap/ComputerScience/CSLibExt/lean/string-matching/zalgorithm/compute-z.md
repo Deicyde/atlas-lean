@@ -2,6 +2,8 @@
 article_id: af_5ddbb9be521aa0593b90eb04
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.StringMatching.computeZ
 ---
 
 # Compute Z

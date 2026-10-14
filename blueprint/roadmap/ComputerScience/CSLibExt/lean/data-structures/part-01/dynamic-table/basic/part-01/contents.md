@@ -2,6 +2,8 @@
 article_id: af_65e036c21cbe3d750c44c621
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.contents
 ---
 
 # Contents

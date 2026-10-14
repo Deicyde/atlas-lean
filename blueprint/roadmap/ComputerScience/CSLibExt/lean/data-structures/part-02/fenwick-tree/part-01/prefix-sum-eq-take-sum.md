@@ -2,6 +2,9 @@
 article_id: af_2252a5653363cf0ebd7239f3
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FenwickTree.prefixSum_eq_take_sum
 ---
 
 # Prefix Sum eq take sum

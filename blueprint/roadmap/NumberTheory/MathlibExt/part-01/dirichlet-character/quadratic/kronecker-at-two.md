@@ -2,6 +2,8 @@
 article_id: af_c868962b10d4271237881494
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.kroneckerAtTwo
 ---
 
 # Kronecker At Two

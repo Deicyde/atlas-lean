@@ -2,6 +2,8 @@
 article_id: af_2662f7c1894619e0d82ff6f4
 declaration: theorem
 origin: cited
+statement: formalized
+lean: WantedExt.NumberTheory.PrimeGapBounds.openai2026DHL
 ---
 
 # Openai2026 DHL

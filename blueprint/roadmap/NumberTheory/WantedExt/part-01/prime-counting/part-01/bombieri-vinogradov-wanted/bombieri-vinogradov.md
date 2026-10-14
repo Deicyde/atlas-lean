@@ -2,6 +2,8 @@
 article_id: af_3cffd9b4c337b3dca173140a
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.NumberTheory.PrimeCounting.bombieriVinogradov
 ---
 
 # Bombieri Vinogradov

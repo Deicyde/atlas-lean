@@ -2,6 +2,9 @@
 article_id: af_f467bb8ab87b8f4953f53124
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.sentinelDelete_payload
 ---
 
 # Sentinel Delete payload

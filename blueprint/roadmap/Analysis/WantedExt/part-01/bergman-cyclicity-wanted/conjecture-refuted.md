@@ -2,6 +2,8 @@
 article_id: af_a27016ad22ddcf8df2b6060f
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.BergmanCyclicityWanted.conjecture_refuted
 ---
 
 # Conjecture refuted

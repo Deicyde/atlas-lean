@@ -2,6 +2,9 @@
 article_id: af_187de33ac1d7ad7a29d239e2
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: ArithmeticFunction.jordanTotient_eq_rational_prod
 ---
 
 # Jordan Totient eq rational prod

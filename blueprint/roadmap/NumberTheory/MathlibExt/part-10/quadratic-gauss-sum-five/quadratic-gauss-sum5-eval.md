@@ -2,6 +2,9 @@
 article_id: af_03c749992fcfc2553b303bec
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.quadraticGaussSum5_eval
 ---
 
 # Quadratic Gauss Sum5 eval

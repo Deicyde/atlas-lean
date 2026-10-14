@@ -2,6 +2,8 @@
 article_id: af_28e66eefad8d3754f7f7adc7
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.mckay_irr_equicardinal
 ---
 
 # Mckay irr equicardinal

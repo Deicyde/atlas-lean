@@ -2,6 +2,8 @@
 article_id: af_6a857f916ba413f0bbeac3cd
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.minD
 ---
 
 # Min D

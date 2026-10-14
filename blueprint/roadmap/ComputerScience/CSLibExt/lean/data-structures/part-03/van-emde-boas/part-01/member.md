@@ -2,6 +2,8 @@
 article_id: af_63f145ec65182b49e89d97ef
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.VanEmdeBoas.member
 ---
 
 # Member

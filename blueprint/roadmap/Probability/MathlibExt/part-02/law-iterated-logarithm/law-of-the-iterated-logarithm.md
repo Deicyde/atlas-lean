@@ -2,6 +2,9 @@
 article_id: af_ca5013242dad3e2c98a9bbdc
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Probability.LawIteratedLogarithmWanted.law_of_the_iterated_logarithm
 ---
 
 # Law of the iterated logarithm

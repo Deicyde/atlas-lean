@@ -2,6 +2,8 @@
 article_id: af_fb1ac13d816881240f347571
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.FourierConvergenceWanted.Analysis.fejer
 ---
 
 # Fejer

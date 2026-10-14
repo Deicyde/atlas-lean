@@ -2,6 +2,8 @@
 article_id: af_e31d97283ee4dff2254c1c0b
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.SplayTree.root?
 ---
 
 # Root?

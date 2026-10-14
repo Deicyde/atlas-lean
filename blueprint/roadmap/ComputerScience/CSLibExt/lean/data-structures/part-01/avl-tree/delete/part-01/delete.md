@@ -2,6 +2,8 @@
 article_id: af_db7378e13b8389ef9a9204ff
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.delete
 ---
 
 # Delete

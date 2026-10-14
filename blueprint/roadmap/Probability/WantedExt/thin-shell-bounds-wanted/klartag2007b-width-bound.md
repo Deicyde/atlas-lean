@@ -2,6 +2,8 @@
 article_id: af_78d5b28a81a1fab6094a1ea9
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.ThinShell.klartag2007b_width_bound
 ---
 
 # Klartag2007b width bound

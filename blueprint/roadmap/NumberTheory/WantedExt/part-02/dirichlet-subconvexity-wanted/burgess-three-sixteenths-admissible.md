@@ -2,6 +2,8 @@
 article_id: af_07b22052c627621fa5e8e975
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.DirichletSubconvexity.burgessThreeSixteenths_admissible
 ---
 
 # Burgess Three Sixteenths admissible

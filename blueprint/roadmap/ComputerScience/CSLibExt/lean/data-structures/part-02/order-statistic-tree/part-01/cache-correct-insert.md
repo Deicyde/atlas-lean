@@ -2,6 +2,9 @@
 article_id: af_3ac59a6ca1cf16b96ba323ef
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OrderStatisticTree.cacheCorrect_insert
 ---
 
 # Cache Correct insert

@@ -2,6 +2,9 @@
 article_id: af_2e51019314ad77a1c63279e8
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BTree.not_mem_deleteRebuild
 ---
 
 # Not mem delete Rebuild

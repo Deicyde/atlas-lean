@@ -2,6 +2,8 @@
 article_id: af_fb701d04fcd25068ce98e56c
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.AlmostRedOk
 ---
 
 # Almost Red Ok

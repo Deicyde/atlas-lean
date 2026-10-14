@@ -2,6 +2,9 @@
 article_id: af_932f4f38b365f7e22fcb9b28
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.GroupedYFastTrie.contents_mkReps
 ---
 
 # Contents mk Reps

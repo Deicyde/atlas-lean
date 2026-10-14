@@ -2,6 +2,8 @@
 article_id: af_b0c76c4c3aa9ba72110094b9
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.isoperimetric_inequality
 ---
 
 # Isoperimetric Inequality Wanted

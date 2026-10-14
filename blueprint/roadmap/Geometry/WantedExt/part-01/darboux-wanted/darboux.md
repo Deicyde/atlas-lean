@@ -2,6 +2,8 @@
 article_id: af_9743aa735d3c1de30e73dbb5
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.DarbouxWanted.Geometry.Darboux.darboux
 ---
 
 # Darboux

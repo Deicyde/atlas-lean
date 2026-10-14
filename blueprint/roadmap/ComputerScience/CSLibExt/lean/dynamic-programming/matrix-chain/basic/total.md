@@ -2,6 +2,8 @@
 article_id: af_751e8fa689c812246f2e0421
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.MatrixChain.Cost.total
 ---
 
 # Total

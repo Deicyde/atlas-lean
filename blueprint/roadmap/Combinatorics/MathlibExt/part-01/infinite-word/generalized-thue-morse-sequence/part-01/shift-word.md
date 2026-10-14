@@ -2,6 +2,8 @@
 article_id: af_b2e13e42df4a4582e41f122a
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.GeneralizedThueMorse.shiftWord
 ---
 
 # Shift Word

@@ -2,6 +2,9 @@
 article_id: af_32400a0bf47907a6539bd4fd
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.GroupTheory.IrreducibleCharacterBasisWanted.linearIndependent_irrCharacters
 ---
 
 # Linear Independent irr Characters

@@ -2,6 +2,9 @@
 article_id: af_4a2336b74b4d9d93ad92c945
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BloomFilter.mayContain_insert_mono
 ---
 
 # May Contain insert mono

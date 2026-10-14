@@ -2,6 +2,9 @@
 article_id: af_ab6206a90532122679e5ca53
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.motzkin_central_trinomial_recurrence
 ---
 
 # Motzkin central trinomial recurrence

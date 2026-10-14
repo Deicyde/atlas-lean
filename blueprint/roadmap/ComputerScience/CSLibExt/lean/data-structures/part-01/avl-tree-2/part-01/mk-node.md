@@ -2,6 +2,8 @@
 article_id: af_89f16686440bc50442692512
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.mkNode
 ---
 
 # Mk Node

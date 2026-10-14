@@ -2,6 +2,8 @@
 article_id: af_30dc8fdde3925bcd5dbff62a
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsVanDerLaanWindow
 ---
 
 # Is Van Der Laan Window

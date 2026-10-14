@@ -2,6 +2,8 @@
 article_id: af_89a686114a3f18adb2a32a04
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.GeneralizedThueMorse.block
 ---
 
 # Block

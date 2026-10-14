@@ -2,6 +2,8 @@
 article_id: af_4284605c3a394ab1cde4195f
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.KLS.lehec_reported_bound_weaker_specialization
 ---
 
 # Lehec reported bound weaker specialization

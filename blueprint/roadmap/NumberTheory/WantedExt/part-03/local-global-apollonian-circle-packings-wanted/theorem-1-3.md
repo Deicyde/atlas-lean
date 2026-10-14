@@ -2,6 +2,8 @@
 article_id: af_33f77ab9ffe2386cd4579a56
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.LocalGlobalApollonianCirclePackingsWanted.LocalGlobalApollonianCirclePackings.theorem_1_3
 ---
 
 # Theorem 1 3

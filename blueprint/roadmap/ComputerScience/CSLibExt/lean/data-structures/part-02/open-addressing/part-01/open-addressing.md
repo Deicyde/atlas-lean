@@ -2,6 +2,8 @@
 article_id: af_97cc459ab291a1131c588036
 declaration: structure
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.OpenAddressing
 ---
 
 # Open Addressing

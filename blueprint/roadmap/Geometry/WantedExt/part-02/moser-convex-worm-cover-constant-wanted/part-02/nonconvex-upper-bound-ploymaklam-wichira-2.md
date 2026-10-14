@@ -2,6 +2,8 @@
 article_id: af_19158031b9fded91ab30be90
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MoserConvexWormCoverConstant.nonconvexUpperBoundPloymaklamWichiramala2018_holds
 ---
 
 # Nonconvex Upper Bound Ploymaklam Wichiramala2018 holds

@@ -2,6 +2,9 @@
 article_id: af_0c451f101de64367ce140ab7
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: NumberField.TopologicalIdeleGroup.normOne_mk_principalEmbedding
 ---
 
 # Norm One mk principal Embedding

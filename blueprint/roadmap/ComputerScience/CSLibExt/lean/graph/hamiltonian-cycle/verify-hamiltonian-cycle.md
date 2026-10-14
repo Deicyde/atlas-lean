@@ -2,6 +2,8 @@
 article_id: af_59fda84c7e191ee5de50bf68
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Graph.verifyHamiltonianCycle
 ---
 
 # Basic

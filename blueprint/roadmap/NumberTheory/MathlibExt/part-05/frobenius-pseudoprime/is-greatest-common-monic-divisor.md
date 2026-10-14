@@ -2,6 +2,8 @@
 article_id: af_1f8c668f540fadc495a737a2
 declaration: def
 origin: cited
+statement: formalized
+lean: Polynomial.IsGreatestCommonMonicDivisor
 ---
 
 # Is Greatest Common Monic Divisor

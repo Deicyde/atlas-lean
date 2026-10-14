@@ -2,6 +2,9 @@
 article_id: af_0bd9ffbb49f5b46d5b90e437
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Matrix.slowAPSP_time_isTheta
 ---
 
 # Slow APSP time is Theta

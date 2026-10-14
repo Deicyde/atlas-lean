@@ -2,6 +2,8 @@
 article_id: af_dbfb73c251595283b16b7afb
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Kruskal.kruskal
 ---
 
 # Kruskal

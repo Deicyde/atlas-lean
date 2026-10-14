@@ -2,6 +2,9 @@
 article_id: af_bcbcdc8afd650791f63323d6
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.perm_flatMap_removeTree
 ---
 
 # Perm flat Map remove Tree

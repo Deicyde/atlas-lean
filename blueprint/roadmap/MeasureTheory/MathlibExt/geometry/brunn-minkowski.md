@@ -2,6 +2,9 @@
 article_id: af_92523a6567b3205b0676b594
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.MeasureTheory.Geometry.BrunnMinkowskiWanted.brunn_minkowski
 ---
 
 # Brunn Minkowski

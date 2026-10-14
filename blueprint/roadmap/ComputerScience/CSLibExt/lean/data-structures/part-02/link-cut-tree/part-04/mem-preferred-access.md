@@ -2,6 +2,9 @@
 article_id: af_b1afed75a45dedf327e1cf5f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.mem_preferred_access
 ---
 
 # Mem preferred access

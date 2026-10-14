@@ -2,6 +2,9 @@
 article_id: af_c4b5551030084b71b4a4c56e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Polynomial.exists_maxRealRoot_le_weightedSum_of_commonUpperInterlacing
 ---
 
 # Exists max Real Root le weighted Sum of common Upper Interlacing

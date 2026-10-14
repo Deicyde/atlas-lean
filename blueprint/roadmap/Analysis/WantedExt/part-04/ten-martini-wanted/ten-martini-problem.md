@@ -2,6 +2,8 @@
 article_id: af_a043dc89d52ee915b1d3605c
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.TenMartiniWanted.Analysis.TenMartini.ten_martini_problem
 ---
 
 # Ten martini problem

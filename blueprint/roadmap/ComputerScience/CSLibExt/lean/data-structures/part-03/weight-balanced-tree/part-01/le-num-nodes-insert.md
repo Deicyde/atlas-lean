@@ -2,6 +2,9 @@
 article_id: af_90a2c5a3dacb6ec4e8a926da
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.WeightBalancedTree.le_numNodes_insert
 ---
 
 # Le num Nodes insert

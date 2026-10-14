@@ -2,6 +2,9 @@
 article_id: af_978aff9cb69d0c20393a6854
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.PerfectHashing.lookup_eq_some_of_mem_entries
 ---
 
 # Lookup eq some of mem entries

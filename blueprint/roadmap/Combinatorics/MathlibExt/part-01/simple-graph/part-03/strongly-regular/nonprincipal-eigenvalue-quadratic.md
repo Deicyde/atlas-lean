@@ -2,6 +2,9 @@
 article_id: af_f56320a4173ae61bcc6f8021
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.SimpleGraph.StronglyRegularWanted._root_.SimpleGraph.IsSRGWith.nonprincipal_eigenvalue_quadratic
 ---
 
 # Nonprincipal eigenvalue quadratic

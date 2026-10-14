@@ -2,6 +2,9 @@
 article_id: af_13562cef8aec49b321ea6be5
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.perm_treePaths_flatMap
 ---
 
 # Perm tree Paths flat Map

@@ -2,6 +2,8 @@
 article_id: af_c9c7ade092cc6f09f372242f
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.rootPath
 ---
 
 # Root Path

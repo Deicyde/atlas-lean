@@ -2,6 +2,8 @@
 article_id: af_7e3c9469e47f91236f964c86
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MoserConvexWormCoverConstant.upperBoundNorwoodPooleLaidacker1992_holds
 ---
 
 # Upper Bound Norwood Poole Laidacker1992 holds

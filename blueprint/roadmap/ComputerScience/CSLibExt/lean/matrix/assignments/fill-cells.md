@@ -2,6 +2,8 @@
 article_id: af_0d853134843c71e32123de7f
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Matrix.fillCells
 ---
 
 # Fill Cells

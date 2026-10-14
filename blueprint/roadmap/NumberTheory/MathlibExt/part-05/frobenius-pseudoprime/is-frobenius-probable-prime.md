@@ -2,6 +2,8 @@
 article_id: af_0f30bbd938b4a7380b68eb27
 declaration: def
 origin: cited
+statement: formalized
+lean: Nat.IsFrobeniusProbablePrime
 ---
 
 # Is Frobenius Probable Prime

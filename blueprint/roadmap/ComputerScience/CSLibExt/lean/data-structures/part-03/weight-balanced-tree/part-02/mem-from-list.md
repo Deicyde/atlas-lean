@@ -2,6 +2,9 @@
 article_id: af_af89392e0f9ac3892d97d6c1
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.WeightBalancedTree.mem_fromList
 ---
 
 # Mem from List

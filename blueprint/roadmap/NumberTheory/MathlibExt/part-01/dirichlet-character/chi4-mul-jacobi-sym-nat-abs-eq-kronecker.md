@@ -2,6 +2,9 @@
 article_id: af_13c63a858fe44c95dc8b23b5
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.chi4_mul_jacobiSym_natAbs_eq_kroneckerSym_of_odd_of_three_mod_four
 ---
 
 # Quadratic Reciprocity Three Odd

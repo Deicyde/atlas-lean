@@ -2,6 +2,8 @@
 article_id: af_f12ce957acaad3f08a54e880
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.rerootAt
 ---
 
 # Reroot At

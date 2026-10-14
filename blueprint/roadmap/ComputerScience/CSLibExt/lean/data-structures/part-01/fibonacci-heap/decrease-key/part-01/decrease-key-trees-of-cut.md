@@ -2,6 +2,9 @@
 article_id: af_959e198ba6e84ae8ad997410
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciHeap.decreaseKey_trees_of_cut
 ---
 
 # Decrease Key trees of cut

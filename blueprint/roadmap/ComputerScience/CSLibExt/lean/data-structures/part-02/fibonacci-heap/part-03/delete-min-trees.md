@@ -2,6 +2,8 @@
 article_id: af_136bede6f6ce1fa0242ff70f
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.FibonacciHeap.deleteMinTrees
 ---
 
 # Delete Min Trees

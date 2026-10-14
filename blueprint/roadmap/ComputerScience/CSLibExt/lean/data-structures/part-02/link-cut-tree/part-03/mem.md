@@ -2,6 +2,8 @@
 article_id: af_c0057bb85fbb7238b11306ab
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.Mem
 ---
 
 # Mem

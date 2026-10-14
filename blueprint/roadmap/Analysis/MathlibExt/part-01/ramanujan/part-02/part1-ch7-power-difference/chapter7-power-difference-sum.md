@@ -2,6 +2,8 @@
 article_id: af_30bf49054315cb3686e81a89
 declaration: def
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceSum
 ---
 
 # Chapter7 Power Difference Sum

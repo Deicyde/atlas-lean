@@ -2,6 +2,8 @@
 article_id: af_022aa81cc11f6a87f18f85e7
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.WienerAtomWanted.Analysis.wiener_atom_detection
 ---
 
 # Wiener atom detection

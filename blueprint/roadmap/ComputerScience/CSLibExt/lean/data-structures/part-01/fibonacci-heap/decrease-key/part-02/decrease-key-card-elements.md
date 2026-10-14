@@ -2,6 +2,9 @@
 article_id: af_94745389debe4795b1bca129
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciHeap.decreaseKey_card_elements
 ---
 
 # Decrease Key card elements

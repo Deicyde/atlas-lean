@@ -2,6 +2,9 @@
 article_id: af_9553b86c6297e78ee36fbab7
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.PrimeCounting.arithmeticLargeSieve_progression
 ---
 
 # Arithmetic Large Sieve

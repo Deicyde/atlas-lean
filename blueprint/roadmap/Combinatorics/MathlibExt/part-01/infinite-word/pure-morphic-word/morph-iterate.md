@@ -2,6 +2,8 @@
 article_id: af_04dba9e26663ae61bb556d1f
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.morphIterate
 ---
 
 # Morph Iterate

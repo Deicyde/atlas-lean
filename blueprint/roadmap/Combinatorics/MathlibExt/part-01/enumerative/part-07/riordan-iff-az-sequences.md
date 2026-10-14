@@ -2,6 +2,9 @@
 article_id: af_92166e030573050484491461
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.riordan_iff_AZ_sequences
 ---
 
 # Riordan AZSequences

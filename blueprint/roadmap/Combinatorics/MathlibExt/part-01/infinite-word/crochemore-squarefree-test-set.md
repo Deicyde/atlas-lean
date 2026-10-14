@@ -2,6 +2,9 @@
 article_id: af_27f992221a2362843592ae2e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.crochemore_squarefree_test_set
 ---
 
 # Crochemore Squarefree Criterion

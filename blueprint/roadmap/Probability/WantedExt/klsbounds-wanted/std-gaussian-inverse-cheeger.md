@@ -2,6 +2,8 @@
 article_id: af_854dfd683f5fa9bb6a7c4cbd
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.KLS.stdGaussian_inverseCheeger
 ---
 
 # Std Gaussian inverse Cheeger

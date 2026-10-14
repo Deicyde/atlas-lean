@@ -2,6 +2,9 @@
 article_id: af_c82d6b196a2168a6e383b311
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.IsHamiltonian.square_of_cyclic_list
 ---
 
 # Square of cyclic list

@@ -2,6 +2,8 @@
 article_id: af_e82a34083f2cd1025796c73a
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.GeneralizedThueMorse.classicalBlock
 ---
 
 # Classical Block

@@ -2,6 +2,8 @@
 article_id: af_95c8a916349c7226ab0e3104
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.FibonacciTree.cutAt
 ---
 
 # Cut At

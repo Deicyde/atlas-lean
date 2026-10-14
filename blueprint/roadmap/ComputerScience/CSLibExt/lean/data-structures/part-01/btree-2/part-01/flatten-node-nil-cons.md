@@ -2,6 +2,9 @@
 article_id: af_ad6c4adfe2a5fc9cf08cd1de
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BTree.flatten_node_nil_cons
 ---
 
 # Flatten node nil cons

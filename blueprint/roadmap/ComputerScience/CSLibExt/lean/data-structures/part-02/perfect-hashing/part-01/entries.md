@@ -2,6 +2,8 @@
 article_id: af_f2099aa5b3f7b8f06655fced
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.PerfectHashing.entries
 ---
 
 # Entries

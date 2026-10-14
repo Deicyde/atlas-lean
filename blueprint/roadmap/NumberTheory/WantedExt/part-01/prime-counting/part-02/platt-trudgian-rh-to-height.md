@@ -2,6 +2,8 @@
 article_id: af_ed7aaca2b35d3bc74311bc31
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.platt_trudgian_rh_to_height
 ---
 
 # Platt Trudgian Riemann Hypothesis Wanted

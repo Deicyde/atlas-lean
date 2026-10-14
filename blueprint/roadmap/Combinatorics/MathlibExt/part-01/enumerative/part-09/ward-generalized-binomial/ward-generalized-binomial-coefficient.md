@@ -2,6 +2,8 @@
 article_id: af_14e31b81e2d48d8f98518bef
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.wardGeneralizedBinomialCoefficient
 ---
 
 # Ward Generalized Binomial Coefficient

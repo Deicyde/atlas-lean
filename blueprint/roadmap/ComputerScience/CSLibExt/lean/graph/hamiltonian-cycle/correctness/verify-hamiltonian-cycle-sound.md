@@ -2,6 +2,9 @@
 article_id: af_739c3c1be8c6713eeb3f237e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Graph.verifyHamiltonianCycle_sound
 ---
 
 # Verify Hamiltonian Cycle sound

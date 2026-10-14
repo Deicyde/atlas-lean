@@ -2,6 +2,8 @@
 article_id: af_5125c2e8adb006c5e82f4390
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Topology.ManolescuTriangulationWanted.Topology.manolescu_triangulation_disproof
 ---
 
 # Manolescu triangulation disproof

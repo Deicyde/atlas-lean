@@ -2,6 +2,8 @@
 article_id: af_e14b2cc0adad98932647daa4
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.HausdorffMomentsWanted.Analysis.hausdorff_positivity
 ---
 
 # Hausdorff positivity

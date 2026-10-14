@@ -2,6 +2,8 @@
 article_id: af_ba9eff0d58f8b39ef0bb6869
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.GaussWantzelWanted.NumberTheory.GaussWantzel.gauss_wantzel_constructible_polygon
 ---
 
 # Gauss wantzel constructible polygon

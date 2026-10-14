@@ -2,6 +2,8 @@
 article_id: af_627c85ba51b6765da1669b2a
 declaration: theorem
 origin: cited
+statement: formalized
+lean: FalconerDistanceSetWanted.upperBound_Wolff1999_holds
 ---
 
 # Upper Bound Wolff1999 holds

@@ -2,6 +2,8 @@
 article_id: af_6f8a5ba500122e616b25baf5
 declaration: theorem
 origin: cited
+statement: formalized
+lean: FalconerDistanceSetWanted.upperBound_Falconer1985_holds
 ---
 
 # Upper Bound Falconer1985 holds

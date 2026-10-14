@@ -2,6 +2,8 @@
 article_id: af_8efb257bb2e06b4101d223d1
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.minimumRestrictedAdditiveBasisCard
 ---
 
 # Minimum Restricted Additive Basis Card

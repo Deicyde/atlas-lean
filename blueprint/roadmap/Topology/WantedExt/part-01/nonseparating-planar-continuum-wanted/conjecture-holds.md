@@ -2,6 +2,8 @@
 article_id: af_ecbe0da4e7657df6df6077b2
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Topology.NonseparatingPlanarContinuumWanted.conjecture_holds
 ---
 
 # Conjecture holds

@@ -2,6 +2,9 @@
 article_id: af_a595f20d11a3e9f26217c70f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.ExactSubsetSum.exactSubsetSum_ret
 ---
 
 # Exact Subset Sum ret

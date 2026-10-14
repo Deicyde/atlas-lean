@@ -2,6 +2,8 @@
 article_id: af_c68def4d2e4599c0584ffbd1
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.pansiot_factor_complexity_classification
 ---
 
 # Pansiot Factor Complexity Wanted

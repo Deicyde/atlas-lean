@@ -2,6 +2,9 @@
 article_id: af_ce46a5b6c7ce16a43adbe5cc
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.invFact_shift
 ---
 
 # Inv Fact shift

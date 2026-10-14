@@ -2,6 +2,8 @@
 article_id: af_5f1462ab9417169452a8f6e9
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Topology.Poincare3DSmoothWanted.Topology.poincare_3d_smooth
 ---
 
 # Poincare3 DSmooth Wanted

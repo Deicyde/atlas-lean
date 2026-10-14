@@ -2,6 +2,9 @@
 article_id: af_05397fc90ce944d19247ea35
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Kruskal.kruskal_edge_mem_valid
 ---
 
 # Kruskal edge mem valid

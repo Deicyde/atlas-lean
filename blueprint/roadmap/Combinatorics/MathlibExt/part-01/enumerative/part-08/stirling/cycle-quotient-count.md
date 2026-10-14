@@ -2,6 +2,8 @@
 article_id: af_de5b35881e6020fde6ced33e
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.cycleQuotientCount
 ---
 
 # Cycle Quotient Count

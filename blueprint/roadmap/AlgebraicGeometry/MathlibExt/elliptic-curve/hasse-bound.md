@@ -2,6 +2,9 @@
 article_id: af_deb4a60a0b9ebb0d391eebf8
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.AlgebraicGeometry.EllipticCurve.HasseBoundWanted.hasse_bound
 ---
 
 # Hasse Bound

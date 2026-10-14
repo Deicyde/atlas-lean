@@ -2,6 +2,9 @@
 article_id: af_b3ab72e4e9aae082e8b75426
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.listSearchSentinel_circular
 ---
 
 # List Search Sentinel circular

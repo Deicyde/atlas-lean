@@ -2,6 +2,9 @@
 article_id: af_891a01868419a8e299865951
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.GroupTheory.IrreducibleCharacterBasisWanted.mem_span_irrCharacters_of_isClassFunction
 ---
 
 # Mem span irr Characters of is Class Function

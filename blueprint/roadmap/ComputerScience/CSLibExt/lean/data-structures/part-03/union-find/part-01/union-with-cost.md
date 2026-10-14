@@ -2,6 +2,8 @@
 article_id: af_b3564ab990dc54c7717a4d11
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.UnionFind.unionWithCost
 ---
 
 # Union With Cost

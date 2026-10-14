@@ -2,6 +2,9 @@
 article_id: af_766c432515315b9337d99707
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.polyBernoulli_negative_symmetric_exponential_generating_function
 ---
 
 # Poly Bernoulli Symmetric Exponential Generating Function

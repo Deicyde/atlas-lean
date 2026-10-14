@@ -2,6 +2,9 @@
 article_id: af_5536c136ccf0bb4383565f50
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MvPolynomial.mixedDifferential_cons
 ---
 
 # Mixed Differential cons

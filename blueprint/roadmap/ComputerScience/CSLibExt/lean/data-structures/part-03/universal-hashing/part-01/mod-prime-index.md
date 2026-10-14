@@ -2,6 +2,8 @@
 article_id: af_477bf257a7eb177f1a570431
 declaration: abbrev
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.UniversalHashing.ModPrimeIndex
 ---
 
 # Mod Prime Index

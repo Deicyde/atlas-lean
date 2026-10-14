@@ -2,6 +2,9 @@
 article_id: af_6a0e8bbf441740a5bc7d868f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OpenAddressing.valid_insert
 ---
 
 # Valid insert

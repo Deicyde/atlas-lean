@@ -2,6 +2,9 @@
 article_id: af_a1f9fbbbf08aba77582c11ef
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.aeval_independencePoly
 ---
 
 # Aeval independence Poly

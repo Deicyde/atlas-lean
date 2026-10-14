@@ -2,6 +2,9 @@
 article_id: af_a5b323b070b75402368a7ff2
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: TuranSystem.uniform_of_isTuran
 ---
 
 # Uniform of is Turan

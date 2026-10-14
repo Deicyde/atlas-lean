@@ -2,6 +2,8 @@
 article_id: af_c1e3e97f378620af5e775ae0
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.PlatonicClassificationWanted.Geometry.PlatonicClassification.platonic_classification
 ---
 
 # Platonic classification

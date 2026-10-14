@@ -2,6 +2,9 @@
 article_id: af_6ecc21b2463ee16bef806061
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.copyCount_le_generalizedExtremalNumber
 ---
 
 # Copy Count le generalized Extremal Number

@@ -2,6 +2,8 @@
 article_id: af_d391809cc1cbc4c34f294f29
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.LinearAlgebra.TraceNewtonWanted.LinearAlgebra.TraceNewton.trace_cayley_hamilton_newton
 ---
 
 # Trace cayley hamilton newton

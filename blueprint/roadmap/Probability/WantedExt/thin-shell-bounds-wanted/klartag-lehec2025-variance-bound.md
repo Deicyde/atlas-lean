@@ -2,6 +2,8 @@
 article_id: af_49b32edf03c4213f6083a444
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.ThinShell.klartagLehec2025_variance_bound
 ---
 
 # Klartag Lehec2025 variance bound

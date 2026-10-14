@@ -2,6 +2,9 @@
 article_id: af_2ce1a7fc1158213fd8485996
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinarySearchTree.ordered_delete
 ---
 
 # Ordered delete

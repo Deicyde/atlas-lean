@@ -2,6 +2,9 @@
 article_id: af_d4e3d0ccea5142b73a2f1c61
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.multigradedPoincareCoefficients_eq_of_resolutionComparison
 ---
 
 # Multigraded Poincare Coefficients eq of resolution Comparison

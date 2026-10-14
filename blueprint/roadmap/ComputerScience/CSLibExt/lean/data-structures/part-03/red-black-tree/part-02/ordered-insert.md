@@ -2,6 +2,9 @@
 article_id: af_b4468cd83217b77ab75ec7a9
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.ordered_insert
 ---
 
 # Ordered insert

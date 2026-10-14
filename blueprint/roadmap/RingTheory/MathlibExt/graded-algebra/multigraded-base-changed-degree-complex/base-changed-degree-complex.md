@@ -2,6 +2,8 @@
 article_id: af_8360fce9fd8550d1c900e5a4
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.MultigradedFreeResolution.baseChangedDegreeComplex
 ---
 
 # Base Changed Degree Complex

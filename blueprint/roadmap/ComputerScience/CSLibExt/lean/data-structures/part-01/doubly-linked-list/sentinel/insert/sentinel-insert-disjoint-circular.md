@@ -2,6 +2,9 @@
 article_id: af_ff51cf8b46977505a12aaa67
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.sentinelInsert_disjoint_circular
 ---
 
 # Sentinel Insert disjoint circular

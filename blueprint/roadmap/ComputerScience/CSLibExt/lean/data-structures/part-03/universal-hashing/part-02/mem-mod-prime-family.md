@@ -2,6 +2,9 @@
 article_id: af_53bf86d46296acc7230f057c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.UniversalHashing.mem_modPrimeFamily
 ---
 
 # Mem mod Prime Family

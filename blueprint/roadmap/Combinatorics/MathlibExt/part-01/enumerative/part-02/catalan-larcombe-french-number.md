@@ -2,6 +2,8 @@
 article_id: af_b8eb64a2e7a359946e0cd80c
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.catalanLarcombeFrenchNumber
 ---
 
 # Catalan Larcombe French Number

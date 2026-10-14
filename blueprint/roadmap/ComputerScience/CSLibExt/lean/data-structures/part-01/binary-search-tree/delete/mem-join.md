@@ -2,6 +2,9 @@
 article_id: af_133389a0c918e35eb52a960a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinarySearchTree.mem_join
 ---
 
 # Mem join

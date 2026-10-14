@@ -2,6 +2,9 @@
 article_id: af_c3425d9e74ecbe296a7c6679
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.lagrange_quadratic_convergent
 ---
 
 # Lagrange Quadratic Convergent

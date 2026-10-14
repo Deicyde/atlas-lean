@@ -2,6 +2,9 @@
 article_id: af_a5d2e62c4989ce114bf542e0
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.GroupTheory.AbelianRepresentationWanted.abelian_simple_iso_of_char_eq
 ---
 
 # Abelian simple iso of char eq

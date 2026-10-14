@@ -2,6 +2,8 @@
 article_id: af_febb4ed34195b5b83052598c
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.oppermannAnalogForCyclicNumbers
 ---
 
 # Oppermann Analog For Cyclics Wanted

@@ -2,6 +2,8 @@
 article_id: af_46f3b8fe394084fffe1007e7
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.OfflineCaching.furthestInFuture
 ---
 
 # Furthest In Future

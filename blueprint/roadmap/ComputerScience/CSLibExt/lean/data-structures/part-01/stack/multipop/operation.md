@@ -2,6 +2,8 @@
 article_id: af_af037ef0b6d2ff19c785bfe7
 declaration: inductive
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Stack.Operation
 ---
 
 # Operation

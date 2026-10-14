@@ -2,6 +2,8 @@
 article_id: af_ec27657a1cab33157027c0c8
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.GroupedYFastTrie.findGroup
 ---
 
 # Find Group

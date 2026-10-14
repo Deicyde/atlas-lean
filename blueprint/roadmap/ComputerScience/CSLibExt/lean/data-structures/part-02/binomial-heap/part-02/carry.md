@@ -2,6 +2,8 @@
 article_id: af_ccf8fa6fffd66130c78ca153
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BinomialForest.carry
 ---
 
 # Carry

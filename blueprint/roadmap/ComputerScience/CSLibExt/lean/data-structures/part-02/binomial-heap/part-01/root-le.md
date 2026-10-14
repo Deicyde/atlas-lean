@@ -2,6 +2,9 @@
 article_id: af_4704b752d70887d4811a8808
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinomialTree.Valid.root_le
 ---
 
 # Root le

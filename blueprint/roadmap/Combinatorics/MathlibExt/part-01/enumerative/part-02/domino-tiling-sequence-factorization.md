@@ -2,6 +2,9 @@
 article_id: af_fa9724d4e158446cbf3ce799
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.domino_tiling_sequence_factorization
 ---
 
 # Domino Tiling Sequence Factorization

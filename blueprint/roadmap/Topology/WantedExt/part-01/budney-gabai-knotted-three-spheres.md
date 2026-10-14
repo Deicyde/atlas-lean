@@ -2,6 +2,8 @@
 article_id: af_0a3371316673b82045b0029b
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Topology.BudneyGabaiWanted.Topology.budney_gabai_knotted_three_spheres
 ---
 
 # Budney Gabai Wanted

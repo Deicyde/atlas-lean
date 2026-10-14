@@ -2,6 +2,8 @@
 article_id: af_cbdb56aaff29b98f3f2c23b1
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.chvatalSankoffStrictPositive_wanted
 ---
 
 # Chvatal Sankoff Strict Positive wanted

@@ -2,6 +2,8 @@
 article_id: af_f90294842140479d2805afdd
 declaration: theorem
 origin: cited
+statement: formalized
+lean: dusart_pi_upper
 ---
 
 # Dusart pi upper

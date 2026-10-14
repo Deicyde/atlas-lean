@@ -2,6 +2,9 @@
 article_id: af_1f510ef39e5a793f8a43af1d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Matrix.coeff_one_det_add_X_smul
 ---
 
 # Coeff one det add X smul

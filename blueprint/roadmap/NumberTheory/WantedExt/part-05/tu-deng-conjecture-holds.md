@@ -2,6 +2,8 @@
 article_id: af_3c0d5332306e01023821bda8
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.TuDengConjectureWanted.tuDengConjecture_holds
 ---
 
 # Tu Deng Conjecture Wanted

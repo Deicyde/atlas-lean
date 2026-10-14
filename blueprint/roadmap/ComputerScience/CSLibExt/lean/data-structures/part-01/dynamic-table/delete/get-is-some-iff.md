@@ -2,6 +2,9 @@
 article_id: af_936470dbd3dda5ae9bb8d413
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.get?_isSome_iff
 ---
 
 # Get? is Some iff

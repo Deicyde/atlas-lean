@@ -2,6 +2,8 @@
 article_id: af_998609b4590828ce15dbdf08
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.TwoThreeTree.Root.insert
 ---
 
 # Insert

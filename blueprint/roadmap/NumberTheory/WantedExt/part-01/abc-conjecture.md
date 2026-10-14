@@ -2,6 +2,8 @@
 article_id: af_f9f166f5e4f13416abd0d54e
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.abc_conjecture
 ---
 
 # Abc Conjecture Wanted

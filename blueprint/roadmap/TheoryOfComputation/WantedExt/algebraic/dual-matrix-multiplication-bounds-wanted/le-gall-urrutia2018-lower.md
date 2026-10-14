@@ -2,6 +2,8 @@
 article_id: af_347280c0f21dfa3502626f58
 declaration: theorem
 origin: cited
+statement: formalized
+lean: Cslib.Complexity.Algebraic.DualMatrixMultiplicationBoundsWanted.leGallUrrutia2018Lower
 ---
 
 # Le Gall Urrutia2018 Lower

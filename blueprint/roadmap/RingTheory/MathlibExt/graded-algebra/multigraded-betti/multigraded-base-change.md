@@ -2,6 +2,8 @@
 article_id: af_3665f3523250c6058bf7b3fc
 declaration: structure
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.MultigradedBaseChange
 ---
 
 # Multigraded Base Change

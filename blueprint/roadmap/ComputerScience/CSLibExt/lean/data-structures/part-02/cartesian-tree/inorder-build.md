@@ -2,6 +2,9 @@
 article_id: af_c27d57b17048b1529531b46b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.CartesianTree.inorder_build
 ---
 
 # Inorder build

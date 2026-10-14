@@ -2,6 +2,8 @@
 article_id: af_4f9b6e370994733b48137a55
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.dombNumber
 ---
 
 # Domb Number

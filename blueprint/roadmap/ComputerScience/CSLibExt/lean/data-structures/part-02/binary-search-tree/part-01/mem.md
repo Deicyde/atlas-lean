@@ -2,6 +2,8 @@
 article_id: af_24599b6aa946f87580f140bd
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BinarySearchTree.Mem
 ---
 
 # Mem

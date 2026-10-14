@@ -2,6 +2,9 @@
 article_id: af_45ac34ce17243bbc6c6c3e2f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.generalizedCatalanSchroeder_generatingFunction
 ---
 
 # Generalized Catalan Schroeder generating Function

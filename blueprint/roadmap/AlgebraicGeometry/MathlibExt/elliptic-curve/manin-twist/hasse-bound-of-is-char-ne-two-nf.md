@@ -2,6 +2,9 @@
 article_id: af_7847f2f9010fbcde62d7bbd1
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.AlgebraicGeometry.EllipticCurve.ManinTwist.hasse_bound_of_isCharNeTwoNF
 ---
 
 # Hasse bound of is Char Ne Two NF

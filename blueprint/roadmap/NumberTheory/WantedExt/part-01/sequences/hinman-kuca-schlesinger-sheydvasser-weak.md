@@ -2,6 +2,8 @@
 article_id: af_e99eb973e04a32bb0ad26d03
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.hinman_kuca_schlesinger_sheydvasser_weak_rigidity
 ---
 
 # Hkss Weak Rigidity Wanted

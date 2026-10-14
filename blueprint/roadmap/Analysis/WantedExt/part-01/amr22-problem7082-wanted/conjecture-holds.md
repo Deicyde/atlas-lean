@@ -2,6 +2,8 @@
 article_id: af_744cefaf13f79788d407a6e8
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.AMR22Problem7082Wanted.conjecture_holds
 ---
 
 # Conjecture holds

@@ -2,6 +2,9 @@
 article_id: af_c4fc240a262304e1bc0b82e9
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinaryCounter.run_zero
 ---
 
 # Run zero

@@ -2,6 +2,8 @@
 article_id: af_3aef84ec38459d9dbca94f91
 declaration: theorem
 origin: cited
+statement: formalized
+lean: WantedExt.NumberTheory.PrimeGapBounds.zhang2026UpperBound
 ---
 
 # Zhang2026 Upper Bound

@@ -2,6 +2,8 @@
 article_id: af_824200bcf53e02ffe07d4b34
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.DeleteBalanced.rootBlack
 ---
 
 # Root Black

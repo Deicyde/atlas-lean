@@ -2,6 +2,8 @@
 article_id: af_6265da723360b0794e69b4e4
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.Balanced
 ---
 
 # Balanced

@@ -2,6 +2,8 @@
 article_id: af_5325cb1ccffdceed2732c5c9
 declaration: structure
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Kruskal.Graph
 ---
 
 # Graph

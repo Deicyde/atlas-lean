@@ -2,6 +2,8 @@
 article_id: af_a266e28bf0be595af665e213
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.VanEmdeBoas.max?
 ---
 
 # Max?

@@ -2,6 +2,8 @@
 article_id: af_6a3eb52aa8d73540f532bc2f
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.PrimeNumberTheorem.prime_number_theorem_chebyshev_theta_error
 ---
 
 # Chebyshev Theta PNTError Wanted

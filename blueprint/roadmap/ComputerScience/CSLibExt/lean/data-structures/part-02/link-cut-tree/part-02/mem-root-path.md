@@ -2,6 +2,9 @@
 article_id: af_0a3835273a2618ad9f6c4574
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.mem_rootPath
 ---
 
 # Mem root Path

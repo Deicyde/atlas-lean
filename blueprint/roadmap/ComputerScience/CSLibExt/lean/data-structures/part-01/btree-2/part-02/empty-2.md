@@ -2,6 +2,9 @@
 article_id: af_ac87e3e44494c03301190884
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BTree.IsBTree.empty
 ---
 
 # Empty

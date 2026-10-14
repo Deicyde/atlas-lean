@@ -2,6 +2,9 @@
 article_id: af_673d9eb4b9e48237f8db6f86
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.listInsert_disjoint_represents
 ---
 
 # List Insert disjoint represents

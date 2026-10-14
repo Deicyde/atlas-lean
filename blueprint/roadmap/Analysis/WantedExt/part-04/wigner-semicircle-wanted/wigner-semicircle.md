@@ -2,6 +2,8 @@
 article_id: af_6e26ddf94f2d72620b843972
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.WignerSemicircleWanted.Analysis.WignerSemicircleProblem.wigner_semicircle
 ---
 
 # Wigner semicircle

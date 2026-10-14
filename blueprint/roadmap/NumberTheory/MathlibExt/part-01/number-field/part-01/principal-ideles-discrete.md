@@ -2,6 +2,9 @@
 article_id: af_008a548c104dd2025deaab66
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: NumberField.TopologicalIdeleGroup.principalIdeles_discrete
 ---
 
 # Principal Idele

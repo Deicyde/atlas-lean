@@ -2,6 +2,8 @@
 article_id: af_546c4dcb18d1217e139cae3d
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.FangXiaTilingWanted.Combinatorics.FangXiaTilingProblem.fang_xia_partition_transitive_of_tiling
 ---
 
 # Fang xia partition transitive of tiling

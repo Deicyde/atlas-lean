@@ -2,6 +2,9 @@
 article_id: af_b9debb281269bd0372d34cb3
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Topology.Continuum.HahnMazurkiewiczWanted.hahnMazurkiewicz
 ---
 
 # Hahn Mazurkiewicz

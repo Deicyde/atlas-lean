@@ -2,6 +2,9 @@
 article_id: af_48b58d17de1750b1bf73a1df
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OrderStatisticTree.cachedSize_eq_numNodes
 ---
 
 # Cached Size eq num Nodes

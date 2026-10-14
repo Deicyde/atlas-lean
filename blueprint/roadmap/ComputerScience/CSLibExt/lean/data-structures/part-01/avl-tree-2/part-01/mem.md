@@ -2,6 +2,8 @@
 article_id: af_01a31083799dd7e184fbeb93
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.Mem
 ---
 
 # Mem

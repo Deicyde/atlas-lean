@@ -2,6 +2,8 @@
 article_id: af_c71897fd6368ffe9c887315b
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsNthRamanujanPrime
 ---
 
 # Is Nth Ramanujan Prime

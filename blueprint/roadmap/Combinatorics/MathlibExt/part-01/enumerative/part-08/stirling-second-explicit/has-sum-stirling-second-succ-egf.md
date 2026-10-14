@@ -2,6 +2,9 @@
 article_id: af_aa12355fcb617c3ada5888fa
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.hasSum_stirlingSecond_succ_egf
 ---
 
 # Has Sum stirling Second succ egf

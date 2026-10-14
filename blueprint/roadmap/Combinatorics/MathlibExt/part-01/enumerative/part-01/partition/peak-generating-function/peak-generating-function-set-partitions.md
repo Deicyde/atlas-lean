@@ -2,6 +2,9 @@
 article_id: af_e031b826ed0a052bf117241f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.peak_generating_function_set_partitions
 ---
 
 # Peak generating function set partitions

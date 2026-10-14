@@ -2,6 +2,8 @@
 article_id: af_fa2615f4db45ffb9fcc5107c
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsPrefixPreserving
 ---
 
 # Is Prefix Preserving

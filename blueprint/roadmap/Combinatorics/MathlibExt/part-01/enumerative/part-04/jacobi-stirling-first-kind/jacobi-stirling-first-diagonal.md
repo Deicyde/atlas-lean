@@ -2,6 +2,9 @@
 article_id: af_ffaabcad50a0bd31523084c4
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.jacobiStirlingFirst_diagonal
 ---
 
 # Jacobi Stirling First diagonal

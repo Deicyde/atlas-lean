@@ -2,6 +2,8 @@
 article_id: af_2997a3bb88b30f4445171350
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.hardyLittlewoodPrimeTupleConjecture
 ---
 
 # Hardy Littlewood Prime Tuple Wanted

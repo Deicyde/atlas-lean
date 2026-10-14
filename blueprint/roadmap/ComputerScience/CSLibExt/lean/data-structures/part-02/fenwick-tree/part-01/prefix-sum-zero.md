@@ -2,6 +2,9 @@
 article_id: af_cf91a567b0a2528fcc8f7462
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FenwickTree.prefixSum_zero
 ---
 
 # Prefix Sum zero

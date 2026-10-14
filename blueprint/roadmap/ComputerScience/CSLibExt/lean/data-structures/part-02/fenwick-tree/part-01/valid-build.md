@@ -2,6 +2,9 @@
 article_id: af_cb602264de9aeb03721e086f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FenwickTree.valid_build
 ---
 
 # Valid build

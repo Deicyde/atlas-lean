@@ -2,6 +2,9 @@
 article_id: af_70e0322c0c9a76c2b99a42fd
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BTree.ordered_delete
 ---
 
 # Ordered delete

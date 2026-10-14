@@ -2,6 +2,8 @@
 article_id: af_36078161fb29d5398e75f71e
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.somer_eventually_has_primitive_prime_divisor
 ---
 
 # Somer Primitive Divisor Wanted

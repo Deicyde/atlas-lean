@@ -2,6 +2,8 @@
 article_id: af_96a52b71801511a8a93dfc71
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.rootPriority
 ---
 
 # Root Priority

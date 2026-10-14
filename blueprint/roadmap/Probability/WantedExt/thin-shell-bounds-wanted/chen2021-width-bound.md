@@ -2,6 +2,8 @@
 article_id: af_556e9e524613c03c5abb34e9
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.ThinShell.chen2021_width_bound
 ---
 
 # Chen2021 width bound

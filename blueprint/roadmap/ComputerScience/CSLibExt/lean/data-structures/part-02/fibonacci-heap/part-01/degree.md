@@ -2,6 +2,8 @@
 article_id: af_f4347636e23da1dc2e7ce4db
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.FibonacciTree.degree
 ---
 
 # Degree

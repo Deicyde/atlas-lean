@@ -2,6 +2,8 @@
 article_id: af_a871b0309d1207ed172f800a
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.XFastTrie.insert
 ---
 
 # Insert

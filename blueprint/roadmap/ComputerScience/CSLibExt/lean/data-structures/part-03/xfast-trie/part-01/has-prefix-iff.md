@@ -2,6 +2,9 @@
 article_id: af_4a2be8fd35dd93ba530ec840
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.XFastTrie.hasPrefix_iff
 ---
 
 # Has Prefix iff

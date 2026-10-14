@@ -2,6 +2,9 @@
 article_id: af_e1230a58e9122a94672ff8c8
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.GroupTheory.ClassFunctionWanted.isClassFunction_iff_factor_conjClasses
 ---
 
 # Is Class Function iff factor conj Classes

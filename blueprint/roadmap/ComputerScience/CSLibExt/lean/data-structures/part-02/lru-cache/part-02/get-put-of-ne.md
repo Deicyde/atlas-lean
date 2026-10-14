@@ -2,6 +2,9 @@
 article_id: af_ee06660fa8d86e7f0505864c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LruCache.get_put_of_ne
 ---
 
 # Get put of ne

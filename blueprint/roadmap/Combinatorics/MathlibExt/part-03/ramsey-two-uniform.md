@@ -2,6 +2,9 @@
 article_id: af_317b870d403d5eb05a949da1
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.Ramsey.ramsey_two_uniform
 ---
 
 # Ramsey

@@ -2,6 +2,8 @@
 article_id: af_0f3e8387580006a9d3fb0e4a
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.fermatSequence
 ---
 
 # Fermat Sequence

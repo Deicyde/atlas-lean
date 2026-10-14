@@ -2,6 +2,9 @@
 article_id: af_8d481410307b28804b85db96
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.SimpleGraph.StronglyRegularWanted._root_.SimpleGraph.IsSRGWith.adj_of_adj_of_adj_of_mu_zero
 ---
 
 # Adj of adj of adj of mu zero

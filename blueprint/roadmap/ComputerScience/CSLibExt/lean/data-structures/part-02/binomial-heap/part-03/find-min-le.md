@@ -2,6 +2,9 @@
 article_id: af_98906a87900a68feb6b9c862
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinomialHeap.findMin_le
 ---
 
 # Find Min le

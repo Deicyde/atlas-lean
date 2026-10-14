@@ -2,6 +2,9 @@
 article_id: af_ddd021198bd7b652e431e5d2
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.isChain_of_mem_paths
 ---
 
 # Is Chain of mem paths

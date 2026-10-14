@@ -2,6 +2,8 @@
 article_id: af_1b2a1194784c9ced753668d4
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.CacheCorrect
 ---
 
 # Cache Correct

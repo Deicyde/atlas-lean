@@ -2,6 +2,9 @@
 article_id: af_68fcf4a9921456ddb6aefe77
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.IsNuLambdaPascalMatrix.corner
 ---
 
 # Corner

@@ -2,6 +2,8 @@
 article_id: af_89c5fa7616150a7911d4db30
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.NeukirchUchidaWanted.NumberTheory.neukirch_uchida
 ---
 
 # Neukirch Uchida Wanted

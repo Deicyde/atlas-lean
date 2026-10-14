@@ -2,6 +2,8 @@
 article_id: af_4e617dc573d57bf23ad987ae
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.ChebyshevSignChangeWanted.NumberTheory.ChebyshevSignChangeProblem.chebyshev_sign_change
 ---
 
 # Chebyshev sign change

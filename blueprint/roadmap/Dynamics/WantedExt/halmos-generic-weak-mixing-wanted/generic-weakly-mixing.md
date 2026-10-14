@@ -2,6 +2,8 @@
 article_id: af_c369a9900c8464a6e06a8024
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Dynamics.HalmosGenericWeakMixingWanted.Dynamics.HalmosGenericWeakMixingProblem.generic_weakly_mixing
 ---
 
 # Generic weakly mixing

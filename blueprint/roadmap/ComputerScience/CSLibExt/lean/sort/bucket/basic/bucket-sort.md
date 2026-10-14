@@ -2,6 +2,8 @@
 article_id: af_f0792e97ef3e9b2b0d0eda3a
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.TimeM.bucketSort
 ---
 
 # Bucket Sort

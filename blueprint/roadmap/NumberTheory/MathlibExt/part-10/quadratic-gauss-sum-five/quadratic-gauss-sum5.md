@@ -2,6 +2,8 @@
 article_id: af_cd15b5524f2f22c8eb83607e
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.quadraticGaussSum5
 ---
 
 # Quadratic Gauss Sum5

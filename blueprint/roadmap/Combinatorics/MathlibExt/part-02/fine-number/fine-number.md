@@ -2,6 +2,8 @@
 article_id: af_f844a681fd5ba78aee633717
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.fineNumber
 ---
 
 # Fine Number

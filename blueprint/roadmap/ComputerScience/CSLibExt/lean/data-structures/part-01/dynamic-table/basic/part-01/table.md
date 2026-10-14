@@ -2,6 +2,8 @@
 article_id: af_f0d24b02e30c55527cfe6665
 declaration: structure
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.Table
 ---
 
 # Table

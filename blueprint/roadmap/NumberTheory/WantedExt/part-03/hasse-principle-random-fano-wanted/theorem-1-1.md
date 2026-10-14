@@ -2,6 +2,8 @@
 article_id: af_0aa1efadc20ace3d56ac7f90
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.HassePrincipleRandomFanoWanted.HassePrincipleRandomFano.theorem_1_1
 ---
 
 # Theorem 1 1

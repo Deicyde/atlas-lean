@@ -2,6 +2,9 @@
 article_id: af_6ec2745e87b0d9dd6474b2ec
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.decomp_fst_eq_rootPath
 ---
 
 # Decomp fst eq root Path

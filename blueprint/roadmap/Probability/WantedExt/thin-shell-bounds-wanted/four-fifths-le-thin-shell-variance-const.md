@@ -2,6 +2,8 @@
 article_id: af_5bac0f1ac5895090ed370fe8
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.ThinShell.fourFifths_le_thinShellVarianceConstant
 ---
 
 # Four Fifths le thin Shell Variance Constant

@@ -2,6 +2,9 @@
 article_id: af_139439bb6e1c1c96f983ace1
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: ArithmeticFunction.jordanTotient_zero
 ---
 
 # Jordan Totient zero

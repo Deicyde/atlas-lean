@@ -2,6 +2,9 @@
 article_id: af_fead139872e4f45a90849598
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OrderStatisticTree.ordered_insert
 ---
 
 # Ordered insert

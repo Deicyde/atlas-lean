@@ -2,6 +2,8 @@
 article_id: af_a206e43bc0d19364a7b51681
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BinomialHeap.deleteMinTrees
 ---
 
 # Delete Min Trees

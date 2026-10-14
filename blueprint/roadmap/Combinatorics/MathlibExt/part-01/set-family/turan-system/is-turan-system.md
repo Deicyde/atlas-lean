@@ -2,6 +2,8 @@
 article_id: af_a06afa59af4ef5c537a266a1
 declaration: def
 origin: cited
+statement: formalized
+lean: TuranSystem.IsTuranSystem
 ---
 
 # Is Turan System

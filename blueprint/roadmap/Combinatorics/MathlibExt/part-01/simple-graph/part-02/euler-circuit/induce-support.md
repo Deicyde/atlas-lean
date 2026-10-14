@@ -2,6 +2,9 @@
 article_id: af_f56725f0dff04747bb1309b8
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.Reachable.induce_support
 ---
 
 # Induce support

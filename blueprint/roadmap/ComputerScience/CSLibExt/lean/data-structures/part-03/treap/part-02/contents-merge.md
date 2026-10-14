@@ -2,6 +2,9 @@
 article_id: af_0a9f932ef3ef6d3da2137812
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.contents_merge
 ---
 
 # Contents merge

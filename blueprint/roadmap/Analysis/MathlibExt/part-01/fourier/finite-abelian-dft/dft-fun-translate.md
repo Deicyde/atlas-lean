@@ -2,6 +2,9 @@
 article_id: af_f5bb6796a907e1aefd41b859
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.Fourier.FiniteAbelianDFTWanted.dftFun_translate
 ---
 
 # Dft Fun translate

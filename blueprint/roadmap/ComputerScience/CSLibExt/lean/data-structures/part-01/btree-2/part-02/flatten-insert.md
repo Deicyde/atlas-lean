@@ -2,6 +2,9 @@
 article_id: af_dd62305477602fa6980eaa83
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BTree.flatten_insert
 ---
 
 # Flatten insert

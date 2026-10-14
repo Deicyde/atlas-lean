@@ -2,6 +2,9 @@
 article_id: af_3834e724aacdcd6385f1f966
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Algebra.MvPolynomialStable._root_.MvPolynomial.isRealRooted_univariateSpecialization_of_isRealStable
 ---
 
 # Is Real Rooted univariate Specialization of is Real Stable

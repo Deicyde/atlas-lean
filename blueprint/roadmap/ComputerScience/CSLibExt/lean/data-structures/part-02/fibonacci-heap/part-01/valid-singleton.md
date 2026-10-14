@@ -2,6 +2,9 @@
 article_id: af_aff97efcafc124f5f23f5f1b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciTree.valid_singleton
 ---
 
 # Valid singleton

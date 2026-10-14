@@ -2,6 +2,9 @@
 article_id: af_5a86907d1071fbd41af5a62c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.FunctionalAnalysis.MuntzSzaszWanted.muntz_szasz_nat
 ---
 
 # Muntz Szasz

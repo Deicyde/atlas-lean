@@ -2,6 +2,8 @@
 article_id: af_f188841d3439eef528a69821
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.BuchiSquareSequenceBoundWanted.conjecture_holds
 ---
 
 # Conjecture holds

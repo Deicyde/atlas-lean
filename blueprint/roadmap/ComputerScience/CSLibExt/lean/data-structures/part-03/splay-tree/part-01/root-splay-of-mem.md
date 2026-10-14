@@ -2,6 +2,9 @@
 article_id: af_7a91e13c176bea8148ee7cf9
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.SplayTree.root_splay_of_mem
 ---
 
 # Root splay of mem

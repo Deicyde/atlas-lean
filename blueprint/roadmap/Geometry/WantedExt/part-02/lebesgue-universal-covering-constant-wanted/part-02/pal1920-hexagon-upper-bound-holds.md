@@ -2,6 +2,8 @@
 article_id: af_16265c30fb4cee9e599179db
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.pal1920HexagonUpperBound_holds
 ---
 
 # Pal1920 Hexagon Upper Bound holds

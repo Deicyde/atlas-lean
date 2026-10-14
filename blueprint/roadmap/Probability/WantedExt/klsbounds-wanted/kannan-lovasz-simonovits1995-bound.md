@@ -2,6 +2,8 @@
 article_id: af_bd485e802fb613198f9e7d14
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.KLS.kannanLovaszSimonovits1995_bound
 ---
 
 # Kannan Lovasz Simonovits1995 bound

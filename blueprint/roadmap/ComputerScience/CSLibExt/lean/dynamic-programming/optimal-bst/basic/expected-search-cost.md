@@ -2,6 +2,8 @@
 article_id: af_3cf57f80b511ceeb267e631f
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.OptimalBST.expectedSearchCost
 ---
 
 # Expected Search Cost

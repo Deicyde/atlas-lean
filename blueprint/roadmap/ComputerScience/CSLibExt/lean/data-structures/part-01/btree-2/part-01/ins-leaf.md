@@ -2,6 +2,8 @@
 article_id: af_b773b59a652e5384cbb4574d
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BTree.insLeaf
 ---
 
 # Ins Leaf

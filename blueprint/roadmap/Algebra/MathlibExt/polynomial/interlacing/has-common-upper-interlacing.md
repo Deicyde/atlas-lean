@@ -2,6 +2,8 @@
 article_id: af_ebbd600b41c962d89f0eaadd
 declaration: def
 origin: cited
+statement: formalized
+lean: Polynomial.HasCommonUpperInterlacing
 ---
 
 # Has Common Upper Interlacing

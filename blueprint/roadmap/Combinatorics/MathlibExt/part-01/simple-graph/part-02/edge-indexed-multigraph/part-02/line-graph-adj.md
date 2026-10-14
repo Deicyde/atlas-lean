@@ -2,6 +2,9 @@
 article_id: af_e48b56bcc0e7817d8fda7001
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.EdgeIndexedMultigraph.lineGraph_adj
 ---
 
 # Line Graph adj

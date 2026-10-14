@@ -2,6 +2,8 @@
 article_id: af_afd8a23399add94b0a2f3a38
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.SchurWeylWanted.RepresentationTheory.glAction_range_eq_centralizer_symAction
 ---
 
 # Gl Action range eq centralizer sym Action

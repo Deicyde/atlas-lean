@@ -2,6 +2,9 @@
 article_id: af_ead906dde17d378f7719f89a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: ArithmeticFunction.jordanTotient_apply_one
 ---
 
 # Jordan Totient apply one

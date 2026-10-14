@@ -2,6 +2,9 @@
 article_id: af_a1700765ee92605f95f0c3c4
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.MultigradedPolynomialModule.exists_finset_homogeneous_generators
 ---
 
 # Finite Homogeneous Generators

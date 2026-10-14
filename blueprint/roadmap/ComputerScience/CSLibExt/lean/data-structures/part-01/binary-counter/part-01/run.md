@@ -2,6 +2,8 @@
 article_id: af_a3d47a29b5073308ec891c8b
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BinaryCounter.run
 ---
 
 # Run

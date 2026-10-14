@@ -2,6 +2,8 @@
 article_id: af_cf7fc3cd948f432340ddc4af
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.NumberTheory.PrimeCounting.bombieriVinogradovMaxResidueError
 ---
 
 # Bombieri Vinogradov Max Residue Error

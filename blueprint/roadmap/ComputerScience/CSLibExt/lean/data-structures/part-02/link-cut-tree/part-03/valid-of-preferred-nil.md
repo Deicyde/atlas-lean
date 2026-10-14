@@ -2,6 +2,9 @@
 article_id: af_91b4691c792d2aa49c477ebd
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.valid_of_preferred_nil
 ---
 
 # Valid of preferred nil

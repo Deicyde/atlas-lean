@@ -2,6 +2,8 @@
 article_id: af_774fb46a739b072d9d845bff
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.ford_totient_multiplicity
 ---
 
 # Ford Totient Multiplicity Wanted

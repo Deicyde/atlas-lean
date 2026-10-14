@@ -2,6 +2,8 @@
 article_id: af_ef2cdd5f436a55676c8144e4
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.eraseMin
 ---
 
 # Erase Min

@@ -2,6 +2,9 @@
 article_id: af_9075f2c59b80b21b3f637b2d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.zagier_probability_product_two_cyclic_permutations
 ---
 
 # Zagier Cyclic Permutation Product

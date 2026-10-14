@@ -2,6 +2,8 @@
 article_id: af_51c733a12e2914165c97080b
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.breuillard_green_tao_small_doubling
 ---
 
 # Breuillard Green Tao Small Doubling Wanted

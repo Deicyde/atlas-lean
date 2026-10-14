@@ -2,6 +2,8 @@
 article_id: af_fc5423388537ff11f8bbc4e0
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.TimeM.randomlyPermuteDistribution
 ---
 
 # Randomly Permute Distribution

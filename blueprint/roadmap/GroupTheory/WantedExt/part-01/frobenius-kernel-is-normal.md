@@ -2,6 +2,8 @@
 article_id: af_88655c582b9847776df92c67
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.FrobeniusWanted.GroupTheory.frobenius_kernel_isNormal
 ---
 
 # Frobenius Wanted

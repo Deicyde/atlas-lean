@@ -2,6 +2,9 @@
 article_id: af_0d62eb8bcb1ba795dee58da5
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.UniversalHashing.not_isUniversal_empty
 ---
 
 # Not is Universal empty

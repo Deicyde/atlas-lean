@@ -2,6 +2,9 @@
 article_id: af_7eb39c292e68788ca93a5d28
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.CStarAlgebra.KadisonSinger.andersonPaving_of_finiteMSS
 ---
 
 # Anderson Paving of finite MSS

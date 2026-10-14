@@ -2,6 +2,8 @@
 article_id: af_1682520625e1e0d91ccb9a59
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.isHadamardMatrix
 ---
 
 # Is Hadamard Matrix

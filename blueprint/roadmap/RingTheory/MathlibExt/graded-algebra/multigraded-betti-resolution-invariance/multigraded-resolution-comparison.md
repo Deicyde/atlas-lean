@@ -2,6 +2,8 @@
 article_id: af_5e9d7ed8b5184339f2069579
 declaration: structure
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.MultigradedResolutionComparison
 ---
 
 # Multigraded Resolution Comparison

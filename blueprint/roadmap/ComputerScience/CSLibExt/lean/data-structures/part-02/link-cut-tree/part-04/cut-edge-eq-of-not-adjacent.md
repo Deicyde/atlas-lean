@@ -2,6 +2,9 @@
 article_id: af_ef20303a510e1e648e474744
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.cutEdge_eq_of_not_adjacent
 ---
 
 # Cut Edge eq of not adjacent

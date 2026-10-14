@@ -2,6 +2,9 @@
 article_id: af_42716c07785da12b9106df74
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Matrix.fasterAPSP_time
 ---
 
 # Faster APSP time

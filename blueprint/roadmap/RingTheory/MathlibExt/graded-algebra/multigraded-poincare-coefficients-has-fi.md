@@ -2,6 +2,9 @@
 article_id: af_e2faea9366a9bc80c6c620dc
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.multigradedPoincareCoefficients_hasFiniteSupport_of_finiteResolution
 ---
 
 # Multigraded Poincare Finite Support

@@ -18,12 +18,12 @@ developments are not decomposed yet.
 | v1 / AlgebraicCombinatorics | DECOMPOSED | [39 source statements](../roadmap/Combinatorics/AlgebraicCombinatorics/README.md), 37 with a formalized statement. |
 | v1 / AlgebraicGeometryI | DECOMPOSED | [186 source statements](../roadmap/AlgebraicGeometry/AlgebraicGeometryI/README.md), 112 with a formalized statement. |
 | v1 / AlgebraicTopologyI | DECOMPOSED | [171 source statements](../roadmap/AlgebraicTopology/AlgebraicTopologyI/README.md), 104 with a formalized statement. |
-| v1 / AnAlgorithmistsToolkit | DECOMPOSED | [158 source statements](../roadmap/ComputerScience/AnAlgorithmistsToolkit/README.md), 130 with a formalized statement. |
+| v1 / AnAlgorithmistsToolkit | DECOMPOSED | [158 source statements](../roadmap/ComputerScience/AnAlgorithmistsToolkit/README.md), 131 with a formalized statement. |
 | v1 / ArithmeticGeometry | DECOMPOSED | [335 source statements](../roadmap/ArithmeticGeometry/ArithmeticGeometry/README.md), 247 with a formalized statement. |
 | v1 / BooleanFunctions | DECOMPOSED | [108 source statements](../roadmap/Combinatorics/BooleanFunctions/README.md), 43 with a formalized statement. |
 | v1 / Buildings | DECOMPOSED | [74 source statements](../roadmap/GroupTheory/Buildings/README.md), 44 with a formalized statement. |
 | v1 / CombinatorialOptimization | DECOMPOSED | [36 source statements](../roadmap/Combinatorics/CombinatorialOptimization/README.md), 22 with a formalized statement. |
-| v1 / ComplexVariables | DECOMPOSED | [38 source statements](../roadmap/Analysis/ComplexVariables/README.md), 36 with a formalized statement. |
+| v1 / ComplexVariables | DECOMPOSED | [38 source statements](../roadmap/Analysis/ComplexVariables/README.md), 37 with a formalized statement. |
 | v1 / DifferentialAnalysis | DECOMPOSED | [113 source statements](../roadmap/Analysis/DifferentialAnalysis/README.md), 88 with a formalized statement. |
 | v1 / DifferentialGeometry | DECOMPOSED | [147 source statements](../roadmap/Geometry/DifferentialGeometry/README.md), 112 with a formalized statement. |
 | v1 / EllipticCurves | DECOMPOSED | [360 source statements](../roadmap/NumberTheory/EllipticCurves/README.md), 194 with a formalized statement. |

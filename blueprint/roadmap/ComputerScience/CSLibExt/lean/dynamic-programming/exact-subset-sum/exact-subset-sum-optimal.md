@@ -2,6 +2,9 @@
 article_id: af_5e2a06804c6017c3c8298a00
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.ExactSubsetSum.exactSubsetSum_optimal
 ---
 
 # Exact Subset Sum optimal

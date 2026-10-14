@@ -2,6 +2,9 @@
 article_id: af_bf72685b944615bb2dca881c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.listInsert_time
 ---
 
 # List Insert time

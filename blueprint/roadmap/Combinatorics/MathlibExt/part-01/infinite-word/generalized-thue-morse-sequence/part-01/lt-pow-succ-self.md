@@ -2,6 +2,9 @@
 article_id: af_f4af2ee1ba00dc6fddf798fa
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.GeneralizedThueMorse.lt_pow_succ_self
 ---
 
 # Lt pow succ self

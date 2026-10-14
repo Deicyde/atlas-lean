@@ -2,6 +2,8 @@
 article_id: af_d8cc676c4fbe55866340f326
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Matrix.copyCells
 ---
 
 # Copy Cells

@@ -2,6 +2,9 @@
 article_id: af_d113ed670876702776717a1e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.GroupTheory.ClassFunctionWanted.character_isClassFunction
 ---
 
 # Character is Class Function

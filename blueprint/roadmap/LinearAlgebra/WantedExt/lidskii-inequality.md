@@ -2,6 +2,8 @@
 article_id: af_dd9536a074fd62a9a89931a7
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.LinearAlgebra.LidskiiInequalityWanted.LinearAlgebra.lidskii_inequality
 ---
 
 # Lidskii Inequality Wanted

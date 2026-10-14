@@ -2,6 +2,9 @@
 article_id: af_d9d096f42d4c4c34876502dc
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.cacheCorrect_eraseMin
 ---
 
 # Cache Correct erase Min

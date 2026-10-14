@@ -2,6 +2,8 @@
 article_id: af_fd2b6e4f60a5b6e5c1df7053
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.SpherePackingDensityFourWanted.lowerBound_dLOV2014_wanted
 ---
 
 # Lower Bound d LOV2014 wanted

@@ -2,6 +2,9 @@
 article_id: af_3d7b03caf0f2c118ebaeda03
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BTree.flatten_deleteRebuild_of_not_mem
 ---
 
 # Flatten delete Rebuild of not mem

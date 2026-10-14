@@ -2,6 +2,8 @@
 article_id: af_d620398a6ef2b8faed8f9f4e
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.meromorphicStirlingFirst
 ---
 
 # Meromorphic Stirling First

@@ -2,6 +2,8 @@
 article_id: af_a2707ee9beaee97d72ade985
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.BrauerFowlerWanted.GroupTheory.brauer_fowler
 ---
 
 # Brauer Fowler Wanted

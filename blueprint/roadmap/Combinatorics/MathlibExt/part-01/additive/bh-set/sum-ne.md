@@ -2,6 +2,8 @@
 article_id: af_64257600ce83416da1ee3e95
 declaration: def
 origin: cited
+statement: formalized
+lean: AdditiveCombinatorics.sumNE
 ---
 
 # Sum NE

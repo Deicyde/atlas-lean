@@ -2,6 +2,9 @@
 article_id: af_bd9b49d45dad53f5d4da3eb1
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.dresden_du_simplified_binet_of_initial_window
 ---
 
 # Dresden du simplified binet of initial window

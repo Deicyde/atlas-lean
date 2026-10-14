@@ -2,6 +2,8 @@
 article_id: af_937094e0c9ebc81682ea10fa
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.ckmrv_fourier_interpolation
 ---
 
 # Ckmrv fourier interpolation

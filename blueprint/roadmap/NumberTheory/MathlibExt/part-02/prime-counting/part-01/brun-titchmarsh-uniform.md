@@ -2,6 +2,9 @@
 article_id: af_49a60222284429c26a081878
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.PrimeCounting.BrunTitchmarshUniformWanted.brun_titchmarsh_uniform
 ---
 
 # Brun Titchmarsh Uniform

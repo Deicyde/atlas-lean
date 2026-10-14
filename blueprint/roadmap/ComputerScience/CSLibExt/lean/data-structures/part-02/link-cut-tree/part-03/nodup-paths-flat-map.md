@@ -2,6 +2,9 @@
 article_id: af_ed43ff57fd9ed84065731e96
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.nodup_paths_flatMap
 ---
 
 # Nodup paths flat Map

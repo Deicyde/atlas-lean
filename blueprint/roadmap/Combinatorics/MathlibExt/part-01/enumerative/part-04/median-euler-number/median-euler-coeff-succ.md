@@ -2,6 +2,9 @@
 article_id: af_ff2f4a44bc780527614d8cdb
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.medianEulerCoeff_succ
 ---
 
 # Median Euler Coeff succ

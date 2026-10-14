@@ -2,6 +2,9 @@
 article_id: af_720a917f58518d5b30a46fcb
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.rerootAt_eq_none_of_not_mem
 ---
 
 # Reroot At eq none of not mem

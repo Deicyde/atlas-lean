@@ -2,6 +2,9 @@
 article_id: af_e08810b458e980c496181c13
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.MeasureTheory.Geometry.BesicovitchKakeyaWanted.besicovitch_kakeya_compact_measure_zero
 ---
 
 # Besicovitch Kakeya

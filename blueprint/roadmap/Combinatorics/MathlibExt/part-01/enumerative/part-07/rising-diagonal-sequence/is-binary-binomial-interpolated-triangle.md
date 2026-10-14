@@ -2,6 +2,8 @@
 article_id: af_188f2134084dfe13107cfe5a
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsBinaryBinomialInterpolatedTriangle
 ---
 
 # Is Binary Binomial Interpolated Triangle

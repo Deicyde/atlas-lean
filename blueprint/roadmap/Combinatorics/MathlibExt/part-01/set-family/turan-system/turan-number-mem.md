@@ -2,6 +2,9 @@
 article_id: af_fb2a28de33371131d93f4048
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: TuranSystem.turanNumber_mem
 ---
 
 # Turan Number mem

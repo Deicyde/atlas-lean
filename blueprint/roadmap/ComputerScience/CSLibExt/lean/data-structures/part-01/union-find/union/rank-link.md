@@ -2,6 +2,9 @@
 article_id: af_7fbab431a0dec7c1d67f8779
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Batteries.UnionFind.rank_link
 ---
 
 # Rank link

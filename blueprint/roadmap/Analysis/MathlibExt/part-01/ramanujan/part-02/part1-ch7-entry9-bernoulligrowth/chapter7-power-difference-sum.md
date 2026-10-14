@@ -3,7 +3,7 @@ article_id: af_7220579b0ebaa5da350823ca
 declaration: abbrev
 origin: cited
 statement: formalized
-lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceSum
+lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry9Bernoulligrowth.chapter7PowerDifferenceSum
 ---
 
 # Chapter7 Power Difference Sum

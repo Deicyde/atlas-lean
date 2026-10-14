@@ -2,6 +2,8 @@
 article_id: af_17c6694fd8d4cdc864d71ec2
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BinarySearchTree.delete
 ---
 
 # Delete

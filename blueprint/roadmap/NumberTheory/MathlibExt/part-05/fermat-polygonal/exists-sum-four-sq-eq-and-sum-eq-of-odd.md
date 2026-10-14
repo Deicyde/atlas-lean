@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: exists_sum_four_sq_eq_and_sum_eq_of_odd
+lean: Nat.exists_sum_four_sq_eq_and_sum_eq_of_odd
 ---
 
 # Exists sum four sq eq and sum eq of odd

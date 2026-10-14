@@ -2,6 +2,8 @@
 article_id: af_60088a9cda8ace848cbd926a
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.HausdorffAbsoluteContinuityWanted.Analysis.HausdorffAbsoluteContinuity.hausdorff_absolute_continuity
 ---
 
 # Hausdorff absolute continuity

@@ -2,6 +2,8 @@
 article_id: af_0e3720b374c1e68306fe654e
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.inorder
 ---
 
 # Inorder

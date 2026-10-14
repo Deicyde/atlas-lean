@@ -2,6 +2,9 @@
 article_id: af_e7fd41ac94956193b137da0e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.isVanDerLaanWindow_ordered_iff
 ---
 
 # Is Van Der Laan Window ordered iff

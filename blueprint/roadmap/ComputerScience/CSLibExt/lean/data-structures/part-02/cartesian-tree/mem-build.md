@@ -2,6 +2,9 @@
 article_id: af_cd809cd46498381077cbbdbd
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.CartesianTree.mem_build
 ---
 
 # Mem build

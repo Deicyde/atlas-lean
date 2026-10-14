@@ -2,6 +2,9 @@
 article_id: af_23b8cbe20cfd4421b760fe47
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinarySearchTree.ordered_join
 ---
 
 # Ordered join

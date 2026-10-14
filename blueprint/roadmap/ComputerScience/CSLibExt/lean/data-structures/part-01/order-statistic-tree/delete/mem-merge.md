@@ -2,6 +2,9 @@
 article_id: af_f8122a6fd08213e68fc9ffc2
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OrderStatisticTree.mem_merge
 ---
 
 # Mem merge

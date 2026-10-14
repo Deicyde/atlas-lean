@@ -2,6 +2,9 @@
 article_id: af_2aa3d3e1730deba69c1926fd
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciForest.length_le_card_of_sorted
 ---
 
 # Length le card of sorted

@@ -2,6 +2,9 @@
 article_id: af_74351076c9d3afeefe290d83
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.landau_almostPrimeCounting_isEquivalent
 ---
 
 # Landau almost Prime Counting is Equivalent

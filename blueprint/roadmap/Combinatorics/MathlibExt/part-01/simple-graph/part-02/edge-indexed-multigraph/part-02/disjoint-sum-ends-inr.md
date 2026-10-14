@@ -2,6 +2,9 @@
 article_id: af_5992af77c428904cd8449a84
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.EdgeIndexedMultigraph.disjointSum_ends_inr
 ---
 
 # Disjoint Sum ends inr

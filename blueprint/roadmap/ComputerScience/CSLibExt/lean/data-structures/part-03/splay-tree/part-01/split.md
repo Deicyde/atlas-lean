@@ -2,6 +2,8 @@
 article_id: af_8e9b4797ffcdb870ca9ca3dd
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.SplayTree.split
 ---
 
 # Split

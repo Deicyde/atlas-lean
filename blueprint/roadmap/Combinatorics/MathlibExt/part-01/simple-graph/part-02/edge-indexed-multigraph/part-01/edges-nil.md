@@ -2,6 +2,9 @@
 article_id: af_2feebf8c67e65765a279edda
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.EdgeIndexedMultigraph.IndexedWalk.edges_nil
 ---
 
 # Edges nil

@@ -2,6 +2,8 @@
 article_id: af_509e4a04025f96e89d9aad2b
 declaration: theorem
 origin: cited
+statement: formalized
+lean: BerryEsseenWanted.xiaoLi2026UnverifiedUpperBound_holds
 ---
 
 # Xiao Li2026 Unverified Upper Bound holds

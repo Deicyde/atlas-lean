@@ -2,6 +2,9 @@
 article_id: af_dc332bd9c98643a3600cc04f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.CStarAlgebra.KadisonSinger.mixedCharacteristicPolynomial_natDegree
 ---
 
 # Mixed Characteristic Polynomial nat Degree

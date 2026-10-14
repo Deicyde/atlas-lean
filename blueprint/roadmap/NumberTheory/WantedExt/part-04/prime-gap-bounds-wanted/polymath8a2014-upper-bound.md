@@ -2,6 +2,8 @@
 article_id: af_b50cb10b056c687e107e3299
 declaration: theorem
 origin: cited
+statement: formalized
+lean: WantedExt.NumberTheory.PrimeGapBounds.polymath8a2014UpperBound
 ---
 
 # Polymath8a2014 Upper Bound

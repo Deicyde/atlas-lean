@@ -2,6 +2,8 @@
 article_id: af_b3b74b8c0b65987a7cec9f44
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.takagiEll
 ---
 
 # Takagi Ell

@@ -2,6 +2,9 @@
 article_id: af_2776787dc6f16e2dfcd9d23a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.get?_eq_none_of_le
 ---
 
 # Get? eq none of le

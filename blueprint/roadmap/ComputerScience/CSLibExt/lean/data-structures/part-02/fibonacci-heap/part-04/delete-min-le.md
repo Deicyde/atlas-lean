@@ -2,6 +2,9 @@
 article_id: af_ef84d0bcd35b4d3337c54f1f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciHeap.deleteMin_le
 ---
 
 # Delete Min le

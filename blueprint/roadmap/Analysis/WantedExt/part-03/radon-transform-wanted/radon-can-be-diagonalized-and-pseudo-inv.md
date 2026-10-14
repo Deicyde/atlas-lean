@@ -2,6 +2,8 @@
 article_id: af_628c14db0079e35f3c6528ff
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.RadonTransformWanted.Analysis.RadonTransform.radon_can_be_diagonalized_and_pseudo_inverted
 ---
 
 # Radon can be diagonalized and pseudo inverted

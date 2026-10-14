@@ -2,6 +2,8 @@
 article_id: af_f3b22b71210170ec413958da
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BinaryCounter.reset
 ---
 
 # Reset

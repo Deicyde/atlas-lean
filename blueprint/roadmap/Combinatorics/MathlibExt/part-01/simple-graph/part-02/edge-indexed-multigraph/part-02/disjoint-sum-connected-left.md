@@ -2,6 +2,9 @@
 article_id: af_2616c83b86d0caca13ee6978
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.EdgeIndexedMultigraph.disjointSum_connected_left
 ---
 
 # Disjoint Sum connected left

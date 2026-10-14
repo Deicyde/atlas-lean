@@ -2,6 +2,9 @@
 article_id: af_3b8840020e14b0aa72c92891
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.CartesianTree.splitAtFirst_not_mem_fst
 ---
 
 # Split At First not mem fst

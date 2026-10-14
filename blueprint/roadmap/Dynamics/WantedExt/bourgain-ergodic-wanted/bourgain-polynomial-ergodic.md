@@ -2,6 +2,8 @@
 article_id: af_5b268507f9e6155442ca6310
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Dynamics.BourgainErgodicWanted.Dynamics.BourgainErgodic.bourgain_polynomial_ergodic
 ---
 
 # Bourgain polynomial ergodic

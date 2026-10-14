@@ -2,6 +2,9 @@
 article_id: af_cfb468da925951cd691b8dc0
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.WeightBalancedTree.pow_height_le
 ---
 
 # Pow height le

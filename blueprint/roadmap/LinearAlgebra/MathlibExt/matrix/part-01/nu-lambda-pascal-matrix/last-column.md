@@ -2,6 +2,9 @@
 article_id: af_ac411397ad093b98b00579c2
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.IsNuLambdaPascalMatrix.last_column
 ---
 
 # Last column

@@ -2,6 +2,8 @@
 article_id: af_a7ebac4301abf56b039b44e2
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BTree.grownFlatten
 ---
 
 # Grown Flatten

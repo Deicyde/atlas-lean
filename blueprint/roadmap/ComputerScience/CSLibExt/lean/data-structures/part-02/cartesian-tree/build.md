@@ -2,6 +2,8 @@
 article_id: af_ae95131ef11aa293d9e36e7b
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.CartesianTree.build
 ---
 
 # Build

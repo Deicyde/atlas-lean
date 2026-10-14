@@ -2,6 +2,9 @@
 article_id: af_0ee7b89554523d9654a7ff23
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.existsUnique_lambertMap_preimage
 ---
 
 # Exists Unique lambert Map preimage

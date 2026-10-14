@@ -2,6 +2,9 @@
 article_id: af_0d0d328eecc7cd1beab5055f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.medianEulerCoeff_zero
 ---
 
 # Median Euler Coeff zero

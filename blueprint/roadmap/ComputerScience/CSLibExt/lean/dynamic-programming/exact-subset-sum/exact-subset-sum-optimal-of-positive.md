@@ -2,6 +2,9 @@
 article_id: af_ca575254ba191c3ffc6f1a6c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.ExactSubsetSum.exactSubsetSum_optimal_of_positive
 ---
 
 # Exact Subset Sum optimal of positive

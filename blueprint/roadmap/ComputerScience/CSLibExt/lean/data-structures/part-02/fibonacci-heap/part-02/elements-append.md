@@ -2,6 +2,9 @@
 article_id: af_a5e110bc5d0e2e43f63a1b1f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciForest.elements_append
 ---
 
 # Elements append

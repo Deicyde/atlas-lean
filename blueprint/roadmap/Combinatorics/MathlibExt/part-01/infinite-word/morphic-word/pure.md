@@ -2,6 +2,9 @@
 article_id: af_adb4c267ed5833d6f5a08515
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.IsMorphic.pure
 ---
 
 # Pure

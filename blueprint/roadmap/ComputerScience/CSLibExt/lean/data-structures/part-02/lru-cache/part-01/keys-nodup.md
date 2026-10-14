@@ -2,6 +2,9 @@
 article_id: af_9e78dad41d3245c21cf3ed55
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LruCache.keys_nodup
 ---
 
 # Keys nodup

@@ -2,6 +2,8 @@
 article_id: af_eb41bbe5cd3c9dbff4c3e7cc
 declaration: theorem
 origin: cited
+statement: formalized
+lean: FalconerDistanceSetWanted.wolff1999PlanarSufficiency_holds
 ---
 
 # Wolff1999 Planar Sufficiency holds

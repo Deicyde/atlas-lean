@@ -2,6 +2,8 @@
 article_id: af_39a952436b1aa1a81da00da1
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.permImage
 ---
 
 # Perm Image

@@ -2,6 +2,8 @@
 article_id: af_13eadec0a0d1a844ca2c68a6
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.PolynomialFreimanRuzsaBinaryWanted.leastCoverExponentClaim_holds
 ---
 
 # Least Cover Exponent Claim holds

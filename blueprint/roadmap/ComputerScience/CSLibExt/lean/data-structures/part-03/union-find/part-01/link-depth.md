@@ -2,6 +2,8 @@
 article_id: af_31fbc15bde6c1dc96da81f93
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.UnionFind.linkDepth
 ---
 
 # Link Depth

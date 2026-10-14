@@ -2,6 +2,9 @@
 article_id: af_d9202984a3c684eb41d6d18f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RodCutting.memoizedCutRod_time
 ---
 
 # Memoized Cut Rod time

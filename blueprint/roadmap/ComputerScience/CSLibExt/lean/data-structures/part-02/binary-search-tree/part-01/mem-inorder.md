@@ -2,6 +2,9 @@
 article_id: af_a2abe355610e0b7651518b0b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinarySearchTree.mem_inorder
 ---
 
 # Mem inorder

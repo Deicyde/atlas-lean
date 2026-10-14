@@ -2,6 +2,9 @@
 article_id: af_a9fabf334279cab187332c74
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.EdgeIndexedMultigraph.even_sum_degree
 ---
 
 # Even sum degree

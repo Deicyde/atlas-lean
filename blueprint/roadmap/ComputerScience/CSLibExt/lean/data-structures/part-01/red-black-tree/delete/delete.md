@@ -2,6 +2,8 @@
 article_id: af_ee6357c5815985b0e03908f3
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.delete
 ---
 
 # Delete

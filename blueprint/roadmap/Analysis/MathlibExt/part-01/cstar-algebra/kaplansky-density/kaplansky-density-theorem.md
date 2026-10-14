@@ -2,6 +2,9 @@
 article_id: af_1eb43bae48eefd757538883f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.CStarAlgebra.KaplanskyDensityWanted.kaplansky_density_theorem
 ---
 
 # Kaplansky density theorem

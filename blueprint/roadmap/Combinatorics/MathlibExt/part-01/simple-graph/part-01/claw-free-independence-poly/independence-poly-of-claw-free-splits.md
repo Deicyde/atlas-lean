@@ -2,6 +2,9 @@
 article_id: af_4972cb90a59582b275e8ab91
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.independence_poly_of_claw_free_splits
 ---
 
 # Independence poly of claw free splits

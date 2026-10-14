@@ -2,6 +2,8 @@
 article_id: af_fc06d148cc2faa7481b92714
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.JaegerModularOrientationWanted.conjecture_refuted
 ---
 
 # Conjecture refuted

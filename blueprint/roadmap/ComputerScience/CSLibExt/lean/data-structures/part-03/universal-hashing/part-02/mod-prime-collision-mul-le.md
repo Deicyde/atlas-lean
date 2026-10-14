@@ -2,6 +2,9 @@
 article_id: af_dc479f81ddcd9eeb7fdacc81
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.UniversalHashing.modPrime_collision_mul_le
 ---
 
 # Mod Prime collision mul le

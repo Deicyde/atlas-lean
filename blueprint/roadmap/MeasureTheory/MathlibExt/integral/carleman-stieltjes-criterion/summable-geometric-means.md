@@ -2,6 +2,9 @@
 article_id: af_697cac9792e2c23a9698dcb6
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.summable_geometric_means
 ---
 
 # Summable geometric means

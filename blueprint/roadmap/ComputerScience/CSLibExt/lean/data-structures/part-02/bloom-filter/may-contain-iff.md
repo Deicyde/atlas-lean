@@ -2,6 +2,9 @@
 article_id: af_bf015025f2d1f40b4edabdc3
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BloomFilter.mayContain_iff
 ---
 
 # May Contain iff

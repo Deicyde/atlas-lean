@@ -2,6 +2,9 @@
 article_id: af_21ed24c280cf0679b1d84b7c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Matrix.PosSemidef.l2_opNorm_eq_maxRealRoot_charpoly
 ---
 
 # L2 op Norm eq max Real Root charpoly

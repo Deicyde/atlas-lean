@@ -2,6 +2,8 @@
 article_id: af_cc19b947542b19c1cbda54eb
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.FibonacciTree.singleton
 ---
 
 # Singleton

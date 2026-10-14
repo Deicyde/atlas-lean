@@ -3,7 +3,7 @@ article_id: af_6d69138e226ef99852fc63ab
 declaration: def
 origin: cited
 statement: formalized
-lean: MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.SN
+lean: MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.SN
 ---
 
 # SN

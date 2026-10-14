@@ -2,6 +2,8 @@
 article_id: af_d488d0ef04cba7a22db10e75
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.AlgebraicIntegersWanted.AlgebraicIntegers.theorem_1_1
 ---
 
 # Theorem 1 1

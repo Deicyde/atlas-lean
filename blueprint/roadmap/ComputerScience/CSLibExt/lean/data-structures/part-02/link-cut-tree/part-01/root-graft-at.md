@@ -2,6 +2,9 @@
 article_id: af_feb33316964ccbdcbd76905b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.root_graftAt
 ---
 
 # Root graft At

@@ -2,6 +2,7 @@
 article_id: af_268d74112eb3a8f1c024c04c
 declaration: def
 origin: cited
+lean: MathlibExt.Geometry.BoseGasesWanted.BoseGases.η
 ---
 
 # Η

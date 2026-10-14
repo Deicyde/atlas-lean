@@ -2,6 +2,9 @@
 article_id: af_d7de534d0bd39a898cd5f3f7
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.meromorphicStirlingFirst_eq_besselNumberFirst
 ---
 
 # Meromorphic Stirling First eq bessel Number First

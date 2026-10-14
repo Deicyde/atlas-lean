@@ -2,6 +2,8 @@
 article_id: af_7557ecc356e4eeef74c63f0f
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.noncentralTannyDowlingPolynomial
 ---
 
 # Noncentral Tanny Dowling Polynomial

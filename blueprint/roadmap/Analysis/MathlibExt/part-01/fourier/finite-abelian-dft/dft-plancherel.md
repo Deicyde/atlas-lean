@@ -2,6 +2,9 @@
 article_id: af_f813beb51119e2e534e2b600
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.Fourier.FiniteAbelianDFTWanted.dft_plancherel
 ---
 
 # Dft plancherel

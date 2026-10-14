@@ -2,6 +2,8 @@
 article_id: af_97318884647b5f0e024b6c42
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Dynamics.EinsiedlerKatokLindenstraussWanted.Dynamics.EinsiedlerKatokLindenstrauss.einsiedler_katok_lindenstrauss
 ---
 
 # Einsiedler katok lindenstrauss

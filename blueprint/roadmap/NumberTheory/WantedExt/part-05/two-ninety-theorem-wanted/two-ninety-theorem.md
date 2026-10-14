@@ -2,6 +2,8 @@
 article_id: af_535cba9373d5a170258d1848
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.TwoNinetyTheoremWanted.NumberTheory.TwoNinety.two_ninety_theorem
 ---
 
 # Two ninety theorem

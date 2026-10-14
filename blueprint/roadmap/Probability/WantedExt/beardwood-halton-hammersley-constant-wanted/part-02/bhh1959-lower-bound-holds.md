@@ -2,6 +2,8 @@
 article_id: af_b49b8faf2c7666a6c26473c5
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.bhh1959LowerBound_holds
 ---
 
 # Bhh1959 Lower Bound holds

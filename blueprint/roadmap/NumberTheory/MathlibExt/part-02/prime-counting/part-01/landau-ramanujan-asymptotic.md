@@ -2,6 +2,9 @@
 article_id: af_f7e018721ddcba1d810e1887
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.landau_ramanujan_asymptotic
 ---
 
 # Landau Ramanujan

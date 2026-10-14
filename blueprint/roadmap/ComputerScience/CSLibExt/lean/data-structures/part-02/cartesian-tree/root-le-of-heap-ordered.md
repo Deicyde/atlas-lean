@@ -2,6 +2,9 @@
 article_id: af_f4283fb2bceb80b06e1ae1ae
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.CartesianTree.root_le_of_heapOrdered
 ---
 
 # Root le of heap Ordered

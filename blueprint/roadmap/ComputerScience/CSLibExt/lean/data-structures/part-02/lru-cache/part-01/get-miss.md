@@ -2,6 +2,9 @@
 article_id: af_0aed7403d67e4541fa117125
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LruCache.get_miss
 ---
 
 # Get miss

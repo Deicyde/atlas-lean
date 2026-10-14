@@ -2,6 +2,8 @@
 article_id: af_160ba2193302420508cb4a01
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.GroupedYFastTrie.ofGroups
 ---
 
 # Of Groups

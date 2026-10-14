@@ -2,6 +2,9 @@
 article_id: af_026db8102b2df3aa6c8a1378
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OptimalBST.optimalBST_minimal
 ---
 
 # Optimal BST minimal

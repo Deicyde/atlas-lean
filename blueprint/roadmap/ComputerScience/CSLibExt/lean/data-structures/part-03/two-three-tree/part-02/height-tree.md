@@ -2,6 +2,9 @@
 article_id: af_63bdd7283a40df99ce59419f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TwoThreeTree.Root.height_tree
 ---
 
 # Height tree

@@ -2,6 +2,9 @@
 article_id: af_99810a814fd2cc3d32537c09
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.IsLucasSequenceFirstKind.initialOne
 ---
 
 # Initial One

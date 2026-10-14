@@ -2,6 +2,9 @@
 article_id: af_1eb4a04b12ee77693caf04f1
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.WeightBalancedTree.balanced_node_iff_weight
 ---
 
 # Balanced node iff weight

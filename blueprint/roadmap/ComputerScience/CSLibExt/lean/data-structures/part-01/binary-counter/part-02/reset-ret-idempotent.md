@@ -2,6 +2,9 @@
 article_id: af_b44b71c2b102df327e41e035
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinaryCounter.reset_ret_idempotent
 ---
 
 # Reset ret idempotent

@@ -2,6 +2,9 @@
 article_id: af_8595b77370d47b9e262c01e8
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.heap_root_min
 ---
 
 # Heap root min

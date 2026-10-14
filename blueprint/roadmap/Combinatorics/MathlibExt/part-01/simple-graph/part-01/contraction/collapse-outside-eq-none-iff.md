@@ -2,6 +2,9 @@
 article_id: af_9e1d5e7f732ce85ef8a7135e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.collapseOutside_eq_none_iff
 ---
 
 # Collapse Outside eq none iff

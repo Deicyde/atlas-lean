@@ -2,6 +2,8 @@
 article_id: af_0fac48a2eaf100446db9bfb4
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.ContinuumLimsupConstantWanted.conjecture_holds
 ---
 
 # Conjecture holds

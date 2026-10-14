@@ -2,6 +2,8 @@
 article_id: af_37b286fcc53ca1dff8711387
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.ComplementaryPolynomialsWanted.ComplexAnalysis.exists_complementary_polynomial_on_unit_circle
 ---
 
 # Complementary Polynomials Wanted

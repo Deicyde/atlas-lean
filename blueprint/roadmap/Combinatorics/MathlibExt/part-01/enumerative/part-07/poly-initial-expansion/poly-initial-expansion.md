@@ -2,6 +2,9 @@
 article_id: af_9ce4b2bcb413e85de7cfc8ee
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.poly_initial_expansion
 ---
 
 # Poly initial expansion

@@ -2,6 +2,9 @@
 article_id: af_60852f2007771e7b11ba854e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.EdgeIndexedMultigraph.disjointSum_degree
 ---
 
 # Disjoint Sum degree

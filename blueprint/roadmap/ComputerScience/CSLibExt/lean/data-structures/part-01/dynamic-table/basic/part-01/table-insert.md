@@ -2,6 +2,8 @@
 article_id: af_7a8ec658e3a9ca9462489296
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.tableInsert
 ---
 
 # Table Insert

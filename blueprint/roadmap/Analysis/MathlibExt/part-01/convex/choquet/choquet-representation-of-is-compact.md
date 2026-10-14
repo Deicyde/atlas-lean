@@ -2,6 +2,9 @@
 article_id: af_af913fc23fce85f41b0e2fdf
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.Convex.ChoquetWanted.choquet_representation_of_isCompact
 ---
 
 # Choquet representation of is Compact

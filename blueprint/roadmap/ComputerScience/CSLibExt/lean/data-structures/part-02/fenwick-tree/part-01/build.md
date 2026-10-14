@@ -2,6 +2,8 @@
 article_id: af_9cf4719180bc3af6d44a3875
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.FenwickTree.build
 ---
 
 # Build

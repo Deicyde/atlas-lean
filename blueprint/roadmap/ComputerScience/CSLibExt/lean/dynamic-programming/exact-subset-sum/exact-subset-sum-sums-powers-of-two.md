@@ -2,6 +2,9 @@
 article_id: af_df2995538fb2e4d89ce2578c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.ExactSubsetSum.exactSubsetSumSums_powers_of_two
 ---
 
 # Exact Subset Sum Sums powers of two

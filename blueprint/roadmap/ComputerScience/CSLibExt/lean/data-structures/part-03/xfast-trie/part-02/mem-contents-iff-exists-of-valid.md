@@ -2,6 +2,9 @@
 article_id: af_0a815b43e019b49178408037
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.YFastTrie.mem_contents_iff_exists_of_valid
 ---
 
 # Mem contents iff exists of valid

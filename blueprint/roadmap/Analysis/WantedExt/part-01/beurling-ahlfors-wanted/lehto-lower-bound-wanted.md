@@ -2,6 +2,8 @@
 article_id: af_4152eaff326bde4351056ff2
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.BeurlingAhlforsWanted.lehtoLowerBound_wanted
 ---
 
 # Lehto Lower Bound wanted

@@ -2,6 +2,9 @@
 article_id: af_64ea20947250249b42ebc715
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.tableInsertMany_time_le
 ---
 
 # Table Insert Many time le

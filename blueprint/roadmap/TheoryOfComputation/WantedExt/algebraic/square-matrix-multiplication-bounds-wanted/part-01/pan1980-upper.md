@@ -2,6 +2,8 @@
 article_id: af_04aa9a6fa231b594f264b64b
 declaration: theorem
 origin: cited
+statement: formalized
+lean: Cslib.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted.pan1980Upper
 ---
 
 # Pan1980 Upper

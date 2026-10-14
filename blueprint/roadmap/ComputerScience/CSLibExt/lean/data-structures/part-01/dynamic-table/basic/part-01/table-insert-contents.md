@@ -2,6 +2,9 @@
 article_id: af_a5137e76d6afc8801a0aae70
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.tableInsert_contents
 ---
 
 # Table Insert contents

@@ -2,6 +2,9 @@
 article_id: af_a3f556c7edae05b2623e839d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.bucketSort_time_expected_lower
 ---
 
 # Bucket Sort time expected lower

@@ -2,6 +2,8 @@
 article_id: af_60dfefbf193f4d7a27565f66
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Dynamics.KAMWanted.Dynamics.kam_invariant_curve
 ---
 
 # Kam invariant curve

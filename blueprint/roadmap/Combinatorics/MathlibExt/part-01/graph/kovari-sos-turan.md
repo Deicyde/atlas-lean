@@ -2,6 +2,9 @@
 article_id: af_30fea6d968f17b64d6bdb657
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.kovari_sos_turan
 ---
 
 # Kovari Sos Turan

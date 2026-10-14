@@ -2,6 +2,9 @@
 article_id: af_6808d638fe38a74ccb57d92d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.invFact_of_neg
 ---
 
 # Inv Fact of neg

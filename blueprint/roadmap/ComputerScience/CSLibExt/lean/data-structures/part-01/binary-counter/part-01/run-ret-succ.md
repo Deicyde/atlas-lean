@@ -2,6 +2,9 @@
 article_id: af_0cd5d2c4c0ad9195d267e4aa
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinaryCounter.run_ret_succ
 ---
 
 # Run ret succ

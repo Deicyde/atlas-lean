@@ -2,6 +2,9 @@
 article_id: af_9e1c583832bc20360990b53b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MvPolynomial.mixedDifferential_nil
 ---
 
 # Mixed Differential nil

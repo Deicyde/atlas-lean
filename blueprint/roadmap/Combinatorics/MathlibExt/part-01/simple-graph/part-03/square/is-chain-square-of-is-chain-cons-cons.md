@@ -2,6 +2,9 @@
 article_id: af_a9375d7625a80cd1acd04477
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.isChain_square_of_isChain_cons_cons
 ---
 
 # Is Chain square of is Chain cons cons

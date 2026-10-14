@@ -2,6 +2,8 @@
 article_id: af_83a42752ecb93dbf53f2213b
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BTree.InsResult
 ---
 
 # Ins Result

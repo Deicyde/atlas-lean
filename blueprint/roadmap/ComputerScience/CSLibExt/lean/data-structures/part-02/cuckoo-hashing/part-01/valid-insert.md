@@ -2,6 +2,9 @@
 article_id: af_92e2ca44fb0ef77323bd89bc
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.CuckooHashing.valid_insert
 ---
 
 # Valid insert

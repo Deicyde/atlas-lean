@@ -2,6 +2,8 @@
 article_id: af_c0caa76eb54c24e73cca7c45
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.Ordered
 ---
 
 # Ordered

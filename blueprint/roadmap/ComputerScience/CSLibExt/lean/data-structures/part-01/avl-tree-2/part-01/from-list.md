@@ -2,6 +2,8 @@
 article_id: af_bc54ce67ec90fcb7d31d3d9d
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.fromList
 ---
 
 # From List

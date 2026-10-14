@@ -2,6 +2,8 @@
 article_id: af_b49baebf4b81ad845c2abad3
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.KLS.klartag2023_poincare_lower_bound
 ---
 
 # Klartag2023 poincare lower bound

@@ -2,6 +2,9 @@
 article_id: af_4ddb8585a3474989d5d435bf
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.CStarAlgebra.KadisonSinger.mixedCharacteristicPolynomial_update_sum
 ---
 
 # Mixed Characteristic Polynomial update sum

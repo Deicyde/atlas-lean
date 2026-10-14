@@ -2,6 +2,8 @@
 article_id: af_41369a753ba3f6ab4af73931
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.M23TensorSquareWanted.RepresentationTheory.m23_irrep_tensor_square_decomp
 ---
 
 # M23 Tensor Square Wanted

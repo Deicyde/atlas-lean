@@ -2,6 +2,9 @@
 article_id: af_24668a41dbed04bc9c3c9164
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.MatrixChain.matrixChainOrder_candidateEvaluations
 ---
 
 # Matrix Chain Order candidate Evaluations

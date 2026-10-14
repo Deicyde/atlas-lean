@@ -2,6 +2,9 @@
 article_id: af_0bea02d3895bf50353704958
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.Connected.square
 ---
 
 # Square

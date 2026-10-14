@@ -2,6 +2,9 @@
 article_id: af_c4d84ca6d4f0583c147f8637
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FenwickTree.rangeSum_eq
 ---
 
 # Range Sum eq

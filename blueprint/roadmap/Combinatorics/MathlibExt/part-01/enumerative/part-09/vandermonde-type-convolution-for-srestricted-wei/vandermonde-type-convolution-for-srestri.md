@@ -2,6 +2,9 @@
 article_id: af_fc8ca958014dd2693bc2e758
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.Enumerative.vandermondeTypeConvolutionForSRestrictedWeightedCompositions
 ---
 
 # Vandermonde Type Convolution For SRestricted Weighted Compositions

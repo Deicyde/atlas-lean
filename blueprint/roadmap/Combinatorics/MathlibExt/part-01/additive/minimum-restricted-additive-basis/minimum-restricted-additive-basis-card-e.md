@@ -2,6 +2,9 @@
 article_id: af_5bc957c541525ce737e003f1
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.minimumRestrictedAdditiveBasisCard_eq_none_iff
 ---
 
 # Minimum Restricted Additive Basis Card eq none iff

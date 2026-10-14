@@ -2,6 +2,8 @@
 article_id: af_ba6279537218aa90bb732321
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MoserConvexWormCoverConstant.upperBoundWang2006_holds
 ---
 
 # Upper Bound Wang2006 holds

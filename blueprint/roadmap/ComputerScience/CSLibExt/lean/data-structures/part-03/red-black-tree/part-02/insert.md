@@ -2,6 +2,8 @@
 article_id: af_52e2553f700f3642bed0c0ae
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.insert
 ---
 
 # Insert

@@ -2,6 +2,8 @@
 article_id: af_c3302bb9b22697135fa774f9
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.MorleyWanted.Geometry.Morley.morley_theorem
 ---
 
 # Morley theorem

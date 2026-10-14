@@ -2,6 +2,9 @@
 article_id: af_1062d1ada57e508938020de9
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.tableInsert_size
 ---
 
 # Table Insert size

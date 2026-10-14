@@ -2,6 +2,8 @@
 article_id: af_e4cbdca2c3d5f50e7ed2ab78
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Algebra.ExoticUnitsC2C2C2C6Wanted.conjecture_refuted
 ---
 
 # Conjecture refuted

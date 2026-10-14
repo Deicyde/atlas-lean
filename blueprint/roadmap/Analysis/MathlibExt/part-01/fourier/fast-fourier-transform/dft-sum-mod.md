@@ -2,6 +2,9 @@
 article_id: af_2474df8521a48a26363efe8b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.Fourier.FastFourierTransformWanted.dftSum_mod
 ---
 
 # Dft Sum mod

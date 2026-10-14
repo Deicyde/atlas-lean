@@ -2,6 +2,9 @@
 article_id: af_d56d5489ad3e225957334651
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OptimalBST.optimalBST_table_spec
 ---
 
 # Optimal BST table spec

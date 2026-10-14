@@ -2,6 +2,8 @@
 article_id: af_88c12daf8faac95cf071b473
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.MatrixChain.Parenthesization.IsValid
 ---
 
 # Is Valid

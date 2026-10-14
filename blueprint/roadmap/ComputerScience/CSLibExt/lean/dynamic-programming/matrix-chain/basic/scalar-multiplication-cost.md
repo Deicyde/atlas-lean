@@ -2,6 +2,8 @@
 article_id: af_05cb7eefc17c98bbc1bf93e9
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.MatrixChain.scalarMultiplicationCost
 ---
 
 # Scalar Multiplication Cost

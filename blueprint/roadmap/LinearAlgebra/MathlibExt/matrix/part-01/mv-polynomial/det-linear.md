@@ -2,6 +2,8 @@
 article_id: af_608b2bcb544b225bfaf3d1ac
 declaration: def
 origin: cited
+statement: formalized
+lean: Matrix.detLinear
 ---
 
 # Det Linear

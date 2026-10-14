@@ -2,6 +2,8 @@
 article_id: af_3f862aac54d0026f30dfa986
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.FibonacciTree.root
 ---
 
 # Root

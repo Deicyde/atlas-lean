@@ -2,6 +2,8 @@
 article_id: af_715a22bc04f54065b9b2f3fe
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsNonErasing
 ---
 
 # Is Non Erasing

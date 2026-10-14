@@ -2,6 +2,8 @@
 article_id: af_86c20276033b9e07f3127a2e
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.setKey
 ---
 
 # Set Key

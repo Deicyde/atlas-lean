@@ -2,6 +2,8 @@
 article_id: af_1747adec95ec93c07fa01b15
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.trivialUnitDiskLowerBound_holds
 ---
 
 # Trivial Unit Disk Lower Bound holds

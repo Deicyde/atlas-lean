@@ -2,6 +2,9 @@
 article_id: af_d3a189f12ff023ec05182039
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinomialTree.Valid.child_valid
 ---
 
 # Child valid

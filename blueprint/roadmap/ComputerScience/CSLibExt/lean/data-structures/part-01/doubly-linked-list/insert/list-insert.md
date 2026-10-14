@@ -2,6 +2,8 @@
 article_id: af_e44ccc5da6f24dd340b1ee3e
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.listInsert
 ---
 
 # List Insert

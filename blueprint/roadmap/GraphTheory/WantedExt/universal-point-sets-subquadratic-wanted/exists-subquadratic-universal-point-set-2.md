@@ -2,6 +2,8 @@
 article_id: af_847bf582b4be620ffc806eb1
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GraphTheory.UniversalPointSetsSubquadraticWanted.ExistsSubquadraticUniversalPointSet_holds
 ---
 
 # Exists Subquadratic Universal Point Set holds

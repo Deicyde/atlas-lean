@@ -2,6 +2,9 @@
 article_id: af_0f2dae29e0ae159412a823ba
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BloomFilter.mayContain_empty
 ---
 
 # May Contain empty

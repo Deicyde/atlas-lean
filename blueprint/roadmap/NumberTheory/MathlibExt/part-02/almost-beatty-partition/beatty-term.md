@@ -2,6 +2,8 @@
 article_id: af_9e927903b323471cc9c572c4
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.beattyTerm
 ---
 
 # Beatty Term

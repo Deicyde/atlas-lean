@@ -2,6 +2,8 @@
 article_id: af_3fd3b6d1d9aae73018f0d2ba
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.BoundedMultiplicativeFunctionsWanted.BoundedMultiplicativeFunctions.theorem_1_3
 ---
 
 # Theorem 1 3

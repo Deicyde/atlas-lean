@@ -2,6 +2,8 @@
 article_id: af_684b316c9ab1a1354cc473db
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.ordinaryMultinomialFactor
 ---
 
 # Ordinary Multinomial Factor

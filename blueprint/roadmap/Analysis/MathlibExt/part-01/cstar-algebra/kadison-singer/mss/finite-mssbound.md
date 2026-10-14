@@ -2,6 +2,9 @@
 article_id: af_d4961e0354f2acdd5be8db2a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.CStarAlgebra.KadisonSinger.finiteMSSBound
 ---
 
 # Finite MSSBound

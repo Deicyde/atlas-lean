@@ -2,6 +2,9 @@
 article_id: af_e8bd78fc51d69072e0d874c8
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.jacobiStirlingFirst_support
 ---
 
 # Jacobi Stirling First support

@@ -2,6 +2,8 @@
 article_id: af_88424eba7e02c5b9e83d2510
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.AbsoluteProfiniteRigidityWanted.AbsoluteProfiniteRigidity.theorem_7_1
 ---
 
 # Theorem 7 1

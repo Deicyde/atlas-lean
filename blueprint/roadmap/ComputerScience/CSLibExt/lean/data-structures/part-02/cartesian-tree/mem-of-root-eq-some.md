@@ -2,6 +2,9 @@
 article_id: af_8371f8a21deff0cafec5bd31
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.CartesianTree.mem_of_root_eq_some
 ---
 
 # Mem of root eq some

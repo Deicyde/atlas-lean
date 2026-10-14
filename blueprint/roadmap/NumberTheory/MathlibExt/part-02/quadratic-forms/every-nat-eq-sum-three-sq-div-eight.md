@@ -2,6 +2,9 @@
 article_id: af_6a783a6e4a1f5981d2add868
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.every_nat_eq_sum_three_sq_div_eight
 ---
 
 # Three Floor Square Sums

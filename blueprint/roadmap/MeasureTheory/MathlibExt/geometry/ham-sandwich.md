@@ -2,6 +2,9 @@
 article_id: af_6df5973ac9656036a1ba6c9f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.MeasureTheory.Geometry.HamSandwichWanted.ham_sandwich
 ---
 
 # Ham Sandwich

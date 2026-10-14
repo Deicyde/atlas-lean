@@ -2,6 +2,9 @@
 article_id: af_47172cdaa293783e53f670cf
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.EdgeIndexedMultigraph.filter_inc_card
 ---
 
 # Filter inc card

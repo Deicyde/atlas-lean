@@ -2,6 +2,9 @@
 article_id: af_3a8a9cb9e91449556abd929d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Polynomial.root_re_le_maxRealRoot
 ---
 
 # Root re le max Real Root

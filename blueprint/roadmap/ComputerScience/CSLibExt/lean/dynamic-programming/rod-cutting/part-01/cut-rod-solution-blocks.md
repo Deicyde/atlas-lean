@@ -2,6 +2,9 @@
 article_id: af_5bfde0be503c0aa25c9c0a65
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RodCutting.cutRodSolution_blocks
 ---
 
 # Cut Rod Solution blocks

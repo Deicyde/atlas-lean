@@ -2,6 +2,8 @@
 article_id: af_0eece0c75875f17963bb4b88
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.HopfRinowWanted.Geometry.hopf_rinow
 ---
 
 # Hopf rinow

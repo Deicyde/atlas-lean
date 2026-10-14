@@ -2,6 +2,9 @@
 article_id: af_38a19320864d66ca9287d38e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.allNodes_iff_forall_mem
 ---
 
 # All Nodes iff forall mem

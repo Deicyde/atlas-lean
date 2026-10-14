@@ -2,6 +2,8 @@
 article_id: af_f155d091d70d3f3e46b8b7e4
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.height
 ---
 
 # Height

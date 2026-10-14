@@ -2,6 +2,9 @@
 article_id: af_3e522a717281ebe486ff924d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.mem_balance
 ---
 
 # Mem balance

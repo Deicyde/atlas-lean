@@ -2,6 +2,9 @@
 article_id: af_9c1203713d851e908ab078ce
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.IsVertexConnected.two_le_degree
 ---
 
 # Two le degree

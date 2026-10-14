@@ -2,6 +2,9 @@
 article_id: af_8ead401a1291bd7366532219
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.CuckooHashing.lookup_insert_of_ne
 ---
 
 # Lookup insert of ne

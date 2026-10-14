@@ -2,6 +2,8 @@
 article_id: af_f37a2947c76d887af6583390
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.HaymanRobertson39Wanted.conjecture_holds
 ---
 
 # Conjecture holds

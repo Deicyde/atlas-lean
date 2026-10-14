@@ -2,6 +2,9 @@
 article_id: af_70a4b0ebf8dcf0f211cf0291
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LruCache.get_hit
 ---
 
 # Get hit

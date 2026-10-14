@@ -2,6 +2,9 @@
 article_id: af_4c7557ab43e42742eb2ca415
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Subring.exists_injective_ringHom_closure_padicInt
 ---
 
 # Cassels Embedding

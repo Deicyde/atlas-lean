@@ -2,6 +2,8 @@
 article_id: af_24772b2c944308b70a66d0b5
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.zeroEval
 ---
 
 # Zero Eval

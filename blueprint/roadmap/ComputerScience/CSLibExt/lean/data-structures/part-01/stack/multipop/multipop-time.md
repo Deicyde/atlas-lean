@@ -2,6 +2,9 @@
 article_id: af_22e887a34ab48a48894ea6f6
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Stack.multipop_time
 ---
 
 # Multipop time

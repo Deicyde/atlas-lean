@@ -2,6 +2,8 @@
 article_id: af_836a02b8b96f942b6970b3a6
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.fourColorTheorem
 ---
 
 # Four Color Theorem

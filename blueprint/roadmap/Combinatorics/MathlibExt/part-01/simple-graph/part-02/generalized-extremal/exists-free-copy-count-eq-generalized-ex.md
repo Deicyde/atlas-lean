@@ -2,6 +2,9 @@
 article_id: af_73cdd3076d0a68409e0acaff
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.exists_free_copyCount_eq_generalizedExtremalNumber
 ---
 
 # Exists free copy Count eq generalized Extremal Number

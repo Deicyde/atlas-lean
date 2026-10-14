@@ -2,6 +2,9 @@
 article_id: af_84dff86a7f784e5f663684ea
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.isChain_parentChild_rootPath
 ---
 
 # Is Chain parent Child root Path

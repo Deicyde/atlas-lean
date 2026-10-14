@@ -2,6 +2,8 @@
 article_id: af_a7643a179249e493b96dfa87
 declaration: theorem
 origin: cited
+statement: formalized
+lean: WantedExt.NumberTheory.PrimeGapBounds.maynard2015UpperBound
 ---
 
 # Maynard2015 Upper Bound

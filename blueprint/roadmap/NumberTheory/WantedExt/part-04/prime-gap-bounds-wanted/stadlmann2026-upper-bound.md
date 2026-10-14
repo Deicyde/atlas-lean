@@ -2,6 +2,8 @@
 article_id: af_b877fc4ebee9aa165fd2cdc2
 declaration: theorem
 origin: cited
+statement: formalized
+lean: WantedExt.NumberTheory.PrimeGapBounds.stadlmann2026UpperBound
 ---
 
 # Stadlmann2026 Upper Bound

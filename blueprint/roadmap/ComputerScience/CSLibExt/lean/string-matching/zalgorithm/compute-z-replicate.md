@@ -2,6 +2,9 @@
 article_id: af_d76765ac11f4a4634547466d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.StringMatching.computeZ_replicate
 ---
 
 # Compute Z replicate

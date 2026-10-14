@@ -2,6 +2,9 @@
 article_id: af_2a4b29ce71fc536e83ca6662
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.balanced_eraseMin
 ---
 
 # Balanced erase Min

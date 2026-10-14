@@ -2,6 +2,8 @@
 article_id: af_f8694c2598d79fc200670897
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.CuckooHashing.Stored
 ---
 
 # Stored

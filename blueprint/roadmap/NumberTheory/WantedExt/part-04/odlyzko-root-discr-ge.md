@@ -2,6 +2,8 @@
 article_id: af_9c56650d18558eebf9f91f98
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.odlyzko_root_discr_ge
 ---
 
 # Odlyzko Root Discriminant Wanted

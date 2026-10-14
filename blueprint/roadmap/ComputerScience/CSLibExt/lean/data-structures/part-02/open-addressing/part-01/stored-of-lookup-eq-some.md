@@ -2,6 +2,9 @@
 article_id: af_e8ccb2f7e8ee7f39ce436525
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OpenAddressing.stored_of_lookup_eq_some
 ---
 
 # Stored of lookup eq some

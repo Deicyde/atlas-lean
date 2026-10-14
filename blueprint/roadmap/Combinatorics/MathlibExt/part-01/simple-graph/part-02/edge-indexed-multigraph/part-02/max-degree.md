@@ -2,6 +2,8 @@
 article_id: af_3ae112e31f441333c0ae9167
 declaration: def
 origin: cited
+statement: formalized
+lean: SimpleGraph.EdgeIndexedMultigraph.maxDegree
 ---
 
 # Max Degree

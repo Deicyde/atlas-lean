@@ -2,6 +2,9 @@
 article_id: af_aa362ed2c4c7c7305f23b061
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinomialTree.Valid.rank_le_log2_card
 ---
 
 # Rank le log2 card

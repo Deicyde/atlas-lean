@@ -2,6 +2,8 @@
 article_id: af_cbd5eb616a0fd61611c0af5a
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.SkipList.advanceAtLevel
 ---
 
 # Advance At Level

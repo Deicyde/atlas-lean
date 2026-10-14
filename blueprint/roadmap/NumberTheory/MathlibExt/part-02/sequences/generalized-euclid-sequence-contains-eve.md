@@ -2,6 +2,9 @@
 article_id: af_c114a201599fe8e45d8bed49
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.generalized_euclid_sequence_contains_every_prime
 ---
 
 # Generalized Euclid Sequence

@@ -2,6 +2,9 @@
 article_id: af_36aa274a7dfd3ba109972420
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.square_mono
 ---
 
 # Square mono

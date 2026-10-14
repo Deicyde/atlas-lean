@@ -2,6 +2,8 @@
 article_id: af_97c1e9fe5b53422878fbce4c
 declaration: def
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7Admissible
 ---
 
 # Chapter7 Admissible

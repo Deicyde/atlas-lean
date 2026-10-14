@@ -2,6 +2,9 @@
 article_id: af_5809303cdb30e289992b620d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.tableDelete_num
 ---
 
 # Table Delete num

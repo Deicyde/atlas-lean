@@ -2,6 +2,8 @@
 article_id: af_5ed867807b64ae4592df2337
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.FiniteTimeSingularityWanted.FiniteTimeSingularity.theorem_1
 ---
 
 # Theorem 1

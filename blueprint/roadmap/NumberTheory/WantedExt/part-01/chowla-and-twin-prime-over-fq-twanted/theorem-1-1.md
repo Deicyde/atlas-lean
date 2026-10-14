@@ -2,6 +2,8 @@
 article_id: af_0d353cc2b237ea3a76e1fc7d
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.ChowlaAndTwinPrimeOverFqTWanted.ChowlaAndTwinPrimeOverFqT.theorem_1_1
 ---
 
 # Theorem 1 1

@@ -2,6 +2,9 @@
 article_id: af_6487bb1b185cc0849e65b025
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciHeap.decreaseKey_elements_of_subtreeAt
 ---
 
 # Decrease Key elements of subtree At

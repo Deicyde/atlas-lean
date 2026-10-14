@@ -2,6 +2,8 @@
 article_id: af_e1d5b4e19c20ec3a7e4562ad
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.RandomBernoulliMatricesWanted.RandomBernoulliMatrices.corollary_1
 ---
 
 # Corollary 1

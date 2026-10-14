@@ -2,6 +2,9 @@
 article_id: af_73aeec5cbf21dea1c6ee4f01
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.UniversalHashing.modPrime_isUniversalOn
 ---
 
 # Mod Prime is Universal On

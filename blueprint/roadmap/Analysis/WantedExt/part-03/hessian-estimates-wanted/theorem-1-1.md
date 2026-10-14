@@ -2,6 +2,8 @@
 article_id: af_275c5b42dd3d8983037d81c6
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.HessianEstimatesWanted.HessianEstimates.theorem_1_1
 ---
 
 # Theorem 1 1

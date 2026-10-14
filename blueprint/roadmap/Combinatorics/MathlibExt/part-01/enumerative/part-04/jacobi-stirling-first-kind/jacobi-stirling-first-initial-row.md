@@ -2,6 +2,9 @@
 article_id: af_18d59b4d4918b752abdc6a11
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.jacobiStirlingFirst_initial_row
 ---
 
 # Jacobi Stirling First initial row

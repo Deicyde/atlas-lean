@@ -2,6 +2,8 @@
 article_id: af_922ae2dfe8c244865428ae0f
 declaration: abbrev
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.OrderStatisticTree.Tree
 ---
 
 # Tree

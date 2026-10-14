@@ -2,6 +2,9 @@
 article_id: af_2fa8d727b75f5549c0862859
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.SimpleGraph.StronglyRegularWanted.srg_reachable_eq_or_adj_mu_zero
 ---
 
 # Srg reachable eq or adj mu zero

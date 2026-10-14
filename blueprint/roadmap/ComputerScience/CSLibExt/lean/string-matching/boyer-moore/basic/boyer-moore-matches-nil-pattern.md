@@ -2,6 +2,9 @@
 article_id: af_b5aba03d735c5b4802f647dc
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.boyerMooreMatches_nil_pattern
 ---
 
 # Boyer Moore Matches nil pattern

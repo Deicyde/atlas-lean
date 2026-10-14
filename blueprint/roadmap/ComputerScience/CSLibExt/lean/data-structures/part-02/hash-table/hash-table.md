@@ -2,6 +2,8 @@
 article_id: af_5fe7aa3e534049fd43607017
 declaration: structure
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.HashTable
 ---
 
 # Hash Table

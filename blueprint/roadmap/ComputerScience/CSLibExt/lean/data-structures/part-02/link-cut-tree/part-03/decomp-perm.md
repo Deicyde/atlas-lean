@@ -2,6 +2,9 @@
 article_id: af_e3c778f72ac8c79d166a632e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.decomp_perm
 ---
 
 # Decomp perm

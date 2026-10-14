@@ -2,6 +2,8 @@
 article_id: af_fd63c8076cfaf800c33c7ce6
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.SquareSummableComplexInequalityWanted.conjecture_holds
 ---
 
 # Square Summable Complex Inequality Wanted

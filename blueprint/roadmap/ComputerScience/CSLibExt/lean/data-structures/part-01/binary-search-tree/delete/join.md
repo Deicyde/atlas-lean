@@ -2,6 +2,8 @@
 article_id: af_828105804c9f1d659566554e
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BinarySearchTree.join
 ---
 
 # Join

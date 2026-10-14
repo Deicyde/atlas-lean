@@ -2,6 +2,8 @@
 article_id: af_7ce73c28f656dc101a5be4bc
 declaration: theorem
 origin: cited
+statement: formalized
+lean: ConvexCovering.directionalInteriorCoveringNumbersEqual
 ---
 
 # Directional Interior Covering Numbers Equal

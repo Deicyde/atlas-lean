@@ -2,6 +2,9 @@
 article_id: af_29cf444972fd30de8d4dc6fc
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.exists_isHadamard_with_circulant_core
 ---
 
 # Exists is Hadamard with circulant core

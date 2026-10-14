@@ -2,6 +2,8 @@
 article_id: af_a7e982d2951c71b29c5775a5
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.weinstein_conjecture_dim_three
 ---
 
 # Weinstein conjecture dim three

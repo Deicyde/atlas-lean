@@ -2,6 +2,9 @@
 article_id: af_86959da1d75086e3f3f33ec7
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: AbsoluteValue.eq_one_of_ne_zero_of_finite
 ---
 
 # Eq one of ne zero of finite

@@ -2,6 +2,8 @@
 article_id: af_b0e30b7f5c19aedcf2a80aa8
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BinarySearchTree.inorder
 ---
 
 # Inorder

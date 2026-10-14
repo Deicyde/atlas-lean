@@ -2,6 +2,9 @@
 article_id: af_e9b4c6fc5bd80799705f75ec
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OpenAddressing.lookup_insert_of_ne
 ---
 
 # Lookup insert of ne

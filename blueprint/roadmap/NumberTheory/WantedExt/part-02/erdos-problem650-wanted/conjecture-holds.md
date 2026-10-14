@@ -2,6 +2,8 @@
 article_id: af_e10d1281b1215c16fb1567ee
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.ErdosProblem650Wanted.conjecture_holds
 ---
 
 # Conjecture holds

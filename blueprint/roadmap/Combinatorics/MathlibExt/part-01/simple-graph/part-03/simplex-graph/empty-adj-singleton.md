@@ -2,6 +2,9 @@
 article_id: af_a308c252a2bb41dd0186738e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.empty_adj_singleton
 ---
 
 # Empty adj singleton

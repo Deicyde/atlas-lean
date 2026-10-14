@@ -2,6 +2,9 @@
 article_id: af_53e5a612a457793cf2469d2c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.SkipList.lookup_insert
 ---
 
 # Lookup insert

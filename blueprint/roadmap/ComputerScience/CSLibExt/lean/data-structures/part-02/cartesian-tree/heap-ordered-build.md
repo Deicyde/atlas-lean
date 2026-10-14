@@ -2,6 +2,9 @@
 article_id: af_792797f762d7b95216d9b966
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.CartesianTree.heapOrdered_build
 ---
 
 # Heap Ordered build

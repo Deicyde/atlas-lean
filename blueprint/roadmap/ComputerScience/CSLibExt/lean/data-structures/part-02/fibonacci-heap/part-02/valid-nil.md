@@ -2,6 +2,9 @@
 article_id: af_608b1433f9455c978427e780
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciForest.valid_nil
 ---
 
 # Valid nil

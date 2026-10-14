@@ -2,6 +2,9 @@
 article_id: af_af868f536a666aaa92d9a652
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RodCutting.extendedBottomUpCutRod_zero
 ---
 
 # Extended Bottom Up Cut Rod zero

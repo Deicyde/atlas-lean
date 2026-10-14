@@ -2,6 +2,8 @@
 article_id: af_e27e6811bf43baa79a3c5466
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.LogarithmicPotentialEquilibriumFreeWanted.conjecture_refuted
 ---
 
 # Conjecture refuted

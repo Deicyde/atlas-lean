@@ -2,6 +2,9 @@
 article_id: af_9a651592cb96e2c247e4e5bf
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.IsVertexConnected.card_gt
 ---
 
 # Card gt

@@ -2,6 +2,8 @@
 article_id: af_ad779cd98192de42fc96009b
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.merge
 ---
 
 # Merge

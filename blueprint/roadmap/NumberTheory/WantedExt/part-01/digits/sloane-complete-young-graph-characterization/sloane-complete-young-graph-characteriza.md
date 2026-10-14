@@ -2,6 +2,8 @@
 article_id: af_8e9803ce03dc36e97a796cdf
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.sloane_complete_young_graph_characterization
 ---
 
 # Sloane complete young graph characterization

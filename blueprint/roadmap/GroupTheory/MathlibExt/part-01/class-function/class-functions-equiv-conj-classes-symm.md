@@ -2,6 +2,9 @@
 article_id: af_38037ae9f41352b60ce93401
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.GroupTheory.ClassFunctionWanted.classFunctionsEquivConjClasses_symm_apply
 ---
 
 # Class Functions Equiv Conj Classes symm apply

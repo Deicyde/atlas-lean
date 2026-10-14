@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: Entry10Centralbinomialexpansion.summable_chapter6Entry14PlusTerm
+lean: MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry10Centralbinomialexpansion.summable_chapter6Entry14PlusTerm
 ---
 
 # Summable chapter6 Entry14 Plus Term

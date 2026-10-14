@@ -2,6 +2,9 @@
 article_id: af_117651969740289b6c7dc095
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.MeasureTheory.Geometry.BanachTarskiWanted.FinitelyEquidecomposableByIsometries.symm
 ---
 
 # Symm

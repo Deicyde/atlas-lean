@@ -2,6 +2,8 @@
 article_id: af_14162ef85fad6dadb099869d
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.theorem_2_25
 ---
 
 # Theorem 2 25

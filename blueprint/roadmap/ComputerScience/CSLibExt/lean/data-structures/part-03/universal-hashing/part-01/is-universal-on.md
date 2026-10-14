@@ -2,6 +2,8 @@
 article_id: af_1ef9899b500890be10401372
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.UniversalHashing.IsUniversalOn
 ---
 
 # Is Universal On

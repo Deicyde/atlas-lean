@@ -2,6 +2,9 @@
 article_id: af_5078dcf5cd6c389f42c568ff
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.GeneralizedThueMorse.infLetter_coherence
 ---
 
 # Inf Letter coherence

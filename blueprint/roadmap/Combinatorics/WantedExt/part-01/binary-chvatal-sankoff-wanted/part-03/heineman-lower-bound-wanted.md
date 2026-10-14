@@ -2,6 +2,8 @@
 article_id: af_692ea21f0ecd4773d1033869
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.heinemanLowerBound_wanted
 ---
 
 # Heineman Lower Bound wanted

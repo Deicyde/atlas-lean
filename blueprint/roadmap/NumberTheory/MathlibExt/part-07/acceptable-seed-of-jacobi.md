@@ -2,6 +2,9 @@
 article_id: af_e93dd6441540549b45bb1dfa
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.acceptableSeed_of_jacobi
 ---
 
 # Lucas Lehmer Acceptable Seed

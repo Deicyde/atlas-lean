@@ -2,6 +2,9 @@
 article_id: af_7d8547edb6aba18ec8e2c879
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.IsSquareFreeWord.of_isInfix
 ---
 
 # Of is Infix

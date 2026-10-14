@@ -2,6 +2,9 @@
 article_id: af_4bc41069ee0c05e9bd6cd861
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.height_erase_le
 ---
 
 # Height erase le

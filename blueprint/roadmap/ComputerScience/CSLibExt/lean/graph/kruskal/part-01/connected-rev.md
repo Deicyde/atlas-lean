@@ -2,6 +2,8 @@
 article_id: af_bd68f38857e30b9ee66b01bf
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Kruskal.ConnectedRev
 ---
 
 # Connected Rev

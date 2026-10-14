@@ -2,6 +2,9 @@
 article_id: af_e95e72fb3f849ca695006e87
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.favard_forward
 ---
 
 # Favard Forward

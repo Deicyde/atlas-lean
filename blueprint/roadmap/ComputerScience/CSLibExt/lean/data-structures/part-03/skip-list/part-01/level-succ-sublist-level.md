@@ -2,6 +2,9 @@
 article_id: af_eaf54efef12c43a1647eb8d1
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.SkipList.level_succ_sublist_level
 ---
 
 # Level succ sublist level

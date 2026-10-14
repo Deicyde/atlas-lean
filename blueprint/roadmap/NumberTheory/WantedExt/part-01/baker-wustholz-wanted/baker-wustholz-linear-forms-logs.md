@@ -2,6 +2,8 @@
 article_id: af_bca9dd31a776dbd16ec39aff
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.BakerWustholzWanted.bakerWustholz_linearForms_logs
 ---
 
 # Baker Wustholz linear Forms logs

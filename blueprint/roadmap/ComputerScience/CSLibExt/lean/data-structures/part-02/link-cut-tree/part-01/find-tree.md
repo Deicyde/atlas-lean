@@ -2,6 +2,8 @@
 article_id: af_8ff2b9f01ea1feeca6ccffdb
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.findTree
 ---
 
 # Find Tree

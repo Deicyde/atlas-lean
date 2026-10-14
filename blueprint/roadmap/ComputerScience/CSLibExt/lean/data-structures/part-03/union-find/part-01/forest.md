@@ -2,6 +2,8 @@
 article_id: af_36bb6a7bc5c180cdb058c567
 declaration: structure
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.UnionFind.Forest
 ---
 
 # Forest

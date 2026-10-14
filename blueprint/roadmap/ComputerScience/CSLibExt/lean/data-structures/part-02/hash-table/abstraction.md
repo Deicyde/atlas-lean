@@ -2,6 +2,8 @@
 article_id: af_0634749a1c0fa0ff08be59d0
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.HashTable.abstraction
 ---
 
 # Abstraction

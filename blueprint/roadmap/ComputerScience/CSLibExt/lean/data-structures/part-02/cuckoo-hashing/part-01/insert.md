@@ -2,6 +2,8 @@
 article_id: af_3d37060cbc93152e68ffa03b
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.CuckooHashing.insert
 ---
 
 # Insert

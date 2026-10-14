@@ -2,6 +2,9 @@
 article_id: af_854d9d916ee6619e87c457ed
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OptimalBST.optimalBST_empty
 ---
 
 # Optimal BST empty

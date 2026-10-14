@@ -2,6 +2,8 @@
 article_id: af_e021b506a910f0ef8e8981dc
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.deleteMin
 ---
 
 # Delete Min

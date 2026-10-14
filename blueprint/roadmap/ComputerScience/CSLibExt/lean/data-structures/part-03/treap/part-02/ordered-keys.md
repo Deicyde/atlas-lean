@@ -2,6 +2,9 @@
 article_id: af_cbc340c93c1c3c72922922b2
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.ordered_keys
 ---
 
 # Ordered keys

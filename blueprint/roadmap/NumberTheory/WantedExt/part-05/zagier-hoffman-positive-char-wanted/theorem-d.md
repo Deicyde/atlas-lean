@@ -2,6 +2,8 @@
 article_id: af_f18cc8a1a8e015bf78bbf85b
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.theorem_D
 ---
 
 # Theorem D

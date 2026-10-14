@@ -2,6 +2,8 @@
 article_id: af_3cb56d3daa6cae5976fc9fab
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.noncentralWhitneySecond
 ---
 
 # Noncentral Whitney Second

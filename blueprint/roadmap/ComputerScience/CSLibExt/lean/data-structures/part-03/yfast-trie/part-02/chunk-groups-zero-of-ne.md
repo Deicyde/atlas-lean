@@ -2,6 +2,9 @@
 article_id: af_b108acccb9b308fb103956d8
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.GroupedYFastTrie.chunkGroups_zero_of_ne
 ---
 
 # Chunk Groups zero of ne

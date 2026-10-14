@@ -2,6 +2,9 @@
 article_id: af_570a9089bc1931e8bab25b73
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.GroupedYFastTrie.member_iff
 ---
 
 # Member iff

@@ -2,6 +2,9 @@
 article_id: af_522aabd44f876144713fc4c5
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OrderStatisticTree.mem_fromList
 ---
 
 # Mem from List

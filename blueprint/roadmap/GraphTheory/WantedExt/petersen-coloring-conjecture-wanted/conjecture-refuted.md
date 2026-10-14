@@ -2,6 +2,8 @@
 article_id: af_3ec98b3cb215c8373ff8ecdf
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GraphTheory.PetersenColoringConjectureWanted.conjecture_refuted
 ---
 
 # Conjecture refuted

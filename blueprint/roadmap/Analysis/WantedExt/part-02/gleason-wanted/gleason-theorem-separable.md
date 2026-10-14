@@ -2,6 +2,8 @@
 article_id: af_cb4d882488701796a238129b
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.GleasonWanted.Analysis.gleason_theorem_separable
 ---
 
 # Gleason theorem separable

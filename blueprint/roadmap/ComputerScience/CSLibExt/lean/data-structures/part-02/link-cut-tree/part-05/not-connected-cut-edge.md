@@ -2,6 +2,9 @@
 article_id: af_d011e8f3bcc8953de519695d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.not_connected_cutEdge
 ---
 
 # Not connected cut Edge

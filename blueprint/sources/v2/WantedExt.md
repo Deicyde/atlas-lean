@@ -14,5 +14,6 @@ to the article's sources. Theorems are proved and definitions defined unless
 their module contains `sorry`.
 
 617 articles are `theorem_wanted` or `def_wanted` entries: their Lean
-statements exist, but Autoform's source index does not recognize those
-commands yet, so the articles carry no `lean:` link and show as not stated.
+statements exist without proofs. A wanted theorem shows as stated and unproved;
+a wanted definition shows as not stated, because a stated definition counts
+as defined.

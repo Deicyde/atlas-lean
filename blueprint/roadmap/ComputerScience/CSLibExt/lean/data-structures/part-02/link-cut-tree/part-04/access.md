@@ -2,6 +2,8 @@
 article_id: af_473362bd894353c5fb392108
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.access
 ---
 
 # Access

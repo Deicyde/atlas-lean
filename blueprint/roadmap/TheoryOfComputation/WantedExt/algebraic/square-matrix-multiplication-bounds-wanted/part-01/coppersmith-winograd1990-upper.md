@@ -2,6 +2,8 @@
 article_id: af_0d2d78f6d060d102d4023f88
 declaration: theorem
 origin: cited
+statement: formalized
+lean: Cslib.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted.coppersmithWinograd1990Upper
 ---
 
 # Coppersmith Winograd1990 Upper

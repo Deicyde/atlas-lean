@@ -2,6 +2,9 @@
 article_id: af_c2abe4c4cfadabff50f2bb91
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.IsFrobeniusPseudoprime.composite
 ---
 
 # Composite

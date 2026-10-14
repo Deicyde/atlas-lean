@@ -2,6 +2,9 @@
 article_id: af_9694deec03213f263ba11163
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Stack.multipopSigned_of_nonpos
 ---
 
 # Multipop Signed of nonpos

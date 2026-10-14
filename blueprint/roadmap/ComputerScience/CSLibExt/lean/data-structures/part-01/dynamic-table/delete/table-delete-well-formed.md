@@ -2,6 +2,9 @@
 article_id: af_285e8e0f13ff6b0bb4b60f3c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.tableDelete_wellFormed
 ---
 
 # Table Delete well Formed

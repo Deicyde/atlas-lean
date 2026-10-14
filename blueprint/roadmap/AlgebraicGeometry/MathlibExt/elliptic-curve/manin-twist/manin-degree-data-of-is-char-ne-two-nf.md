@@ -2,6 +2,9 @@
 article_id: af_e97a4d5441eba79f95c2a599
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.AlgebraicGeometry.EllipticCurve.ManinTwist.manin_degree_data_of_isCharNeTwoNF
 ---
 
 # Manin degree data of is Char Ne Two NF

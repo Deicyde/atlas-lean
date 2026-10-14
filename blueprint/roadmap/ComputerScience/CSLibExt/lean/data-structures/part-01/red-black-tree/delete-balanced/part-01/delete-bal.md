@@ -2,6 +2,8 @@
 article_id: af_baaf5ec4cc6bf4b966a98d87
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.DeleteBalanced.deleteBal
 ---
 
 # Delete Bal

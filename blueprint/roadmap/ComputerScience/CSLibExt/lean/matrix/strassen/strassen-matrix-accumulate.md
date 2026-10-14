@@ -2,6 +2,8 @@
 article_id: af_d64f03c909b2ec056c9ea064
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Matrix.strassenMatrixAccumulate
 ---
 
 # Basic

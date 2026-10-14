@@ -2,6 +2,9 @@
 article_id: af_387fc270e39b3029dbd3e606
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.eulerSeidelMatrix_eq_sum
 ---
 
 # Euler Seidel Matrix eq sum

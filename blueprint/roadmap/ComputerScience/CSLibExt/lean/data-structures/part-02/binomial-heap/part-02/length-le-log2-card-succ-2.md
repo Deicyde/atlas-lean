@@ -2,6 +2,9 @@
 article_id: af_500e6805db648471bd1fe70e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinomialHeap.length_le_log2_card_succ
 ---
 
 # Length le log2 card succ

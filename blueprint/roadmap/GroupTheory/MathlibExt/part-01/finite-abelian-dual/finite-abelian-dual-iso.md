@@ -2,6 +2,9 @@
 article_id: af_6ead723d11e402387d95834a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.GroupTheory.FiniteAbelianDualWanted.finite_abelian_dual_iso
 ---
 
 # Finite abelian dual iso

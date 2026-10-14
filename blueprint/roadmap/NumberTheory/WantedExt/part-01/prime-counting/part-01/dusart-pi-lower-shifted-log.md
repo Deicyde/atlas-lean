@@ -2,6 +2,8 @@
 article_id: af_ca565ba498e4356a52546390
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.dusart_pi_lower_shifted_log
 ---
 
 # Dusart Pi Lower Shifted Log Wanted

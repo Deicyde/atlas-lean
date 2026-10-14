@@ -2,6 +2,8 @@
 article_id: af_3d804d258f0dc1045782c015
 declaration: theorem
 origin: cited
+statement: formalized
+lean: Cslib.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted.strassen1987Upper
 ---
 
 # Strassen1987 Upper

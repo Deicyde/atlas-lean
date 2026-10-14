@@ -2,6 +2,9 @@
 article_id: af_77d6798c7863460048f6d12d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciTree.cutAt_eq_self
 ---
 
 # Cut At eq self

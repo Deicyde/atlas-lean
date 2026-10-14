@@ -2,6 +2,9 @@
 article_id: af_58a944edd87675ec6ae0fcdc
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciForest.minRoot_spec
 ---
 
 # Min Root spec

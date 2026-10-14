@@ -2,6 +2,8 @@
 article_id: af_e9ac36c1b70e5188dd351c86
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.dixonBound
 ---
 
 # Dixon Bound

@@ -2,6 +2,9 @@
 article_id: af_fc4762bb254817d0db4f85e7
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: PathSpectrum.pathGraph_lapMatrix_eigenvector
 ---
 
 # Lemma 17 (Path graph)

@@ -2,6 +2,9 @@
 article_id: af_e32f4a0a54234e585c525382
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.isUltimatelyPeriodicSet_iff_isUltimatelyPeriodic
 ---
 
 # Is Ultimately Periodic Set iff is Ultimately Periodic

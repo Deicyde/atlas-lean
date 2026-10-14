@@ -2,6 +2,8 @@
 article_id: af_fcede559c91179d0f253c345
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.HeatKernelWanted.Analysis.ODE.heat_kernel_solves_heat_equation
 ---
 
 # Heat kernel solves heat equation

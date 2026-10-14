@@ -2,6 +2,8 @@
 article_id: af_274ce7328085e11a7ff8c083
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Dynamics.RokhlinLemmaWanted.Dynamics.rokhlin_lemma
 ---
 
 # Rokhlin lemma

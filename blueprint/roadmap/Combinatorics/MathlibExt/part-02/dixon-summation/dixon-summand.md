@@ -2,6 +2,8 @@
 article_id: af_bf8306767b4bdf3461f7d490
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.dixonSummand
 ---
 
 # Dixon Summand

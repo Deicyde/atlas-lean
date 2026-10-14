@@ -2,6 +2,9 @@
 article_id: af_038ce3999eff7b87d2ab1b3a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Batteries.UnionFind.connectedComponents_time_spec
 ---
 
 # Connected Components time spec

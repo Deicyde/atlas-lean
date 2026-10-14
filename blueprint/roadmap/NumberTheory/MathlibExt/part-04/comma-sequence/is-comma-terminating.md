@@ -2,6 +2,8 @@
 article_id: af_1ca7877f9e53f2a1a07ea0b9
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsCommaTerminating
 ---
 
 # Is Comma Terminating

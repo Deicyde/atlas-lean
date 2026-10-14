@@ -2,6 +2,8 @@
 article_id: af_d2736de13213109022c83862
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.dancikPatersonUpperBound_wanted
 ---
 
 # Dancik Paterson Upper Bound wanted

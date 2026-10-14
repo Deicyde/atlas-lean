@@ -2,6 +2,9 @@
 article_id: af_7c1b372540c6c17b8e18f871
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.randomlyPermuteDistribution_apply
 ---
 
 # Randomly Permute Distribution apply

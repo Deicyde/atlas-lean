@@ -2,6 +2,8 @@
 article_id: af_18bd5a040741d2a7edecbf55
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.keys
 ---
 
 # Keys

@@ -2,6 +2,8 @@
 article_id: af_b18acf63e642e28be9d1c4c4
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.ReversePermute.rpRelation
 ---
 
 # Rp Relation

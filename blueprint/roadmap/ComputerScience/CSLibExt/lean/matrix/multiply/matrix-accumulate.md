@@ -2,6 +2,8 @@
 article_id: af_f5b9691acffd13725cc07a18
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Matrix.matrixAccumulate
 ---
 
 # Matrix Accumulate

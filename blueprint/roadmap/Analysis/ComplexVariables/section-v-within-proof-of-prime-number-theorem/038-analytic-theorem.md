@@ -2,6 +2,8 @@
 article_id: af_397a5b0711f35abe1122445a
 declaration: theorem
 origin: cited
+statement: formalized
+lean: Newman.newman_analytic_theorem
 ---
 
 # Theorem 1 (Analytic Theorem)

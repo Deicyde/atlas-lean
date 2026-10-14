@@ -2,6 +2,9 @@
 article_id: af_01c2bb7a174841d317725bd9
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.SimpleGraph.HajnalSzemerediWanted.hajnal_szemeredi_equitable_coloring
 ---
 
 # Hajnal szemeredi equitable coloring

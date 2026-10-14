@@ -2,6 +2,9 @@
 article_id: af_4b3b637bba04dbdae8ba825d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciHeap.elements_empty
 ---
 
 # Elements empty

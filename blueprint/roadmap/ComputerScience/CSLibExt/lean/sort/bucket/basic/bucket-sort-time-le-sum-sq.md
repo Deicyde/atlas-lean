@@ -2,6 +2,9 @@
 article_id: af_bc6673dc41f10e523e14cc8f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.bucketSort_time_le_sum_sq
 ---
 
 # Bucket Sort time le sum sq

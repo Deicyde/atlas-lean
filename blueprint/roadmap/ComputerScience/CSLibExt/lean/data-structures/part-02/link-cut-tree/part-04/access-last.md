@@ -2,6 +2,9 @@
 article_id: af_0788bf570bcbce8bf481f7b3
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.access_last
 ---
 
 # Access last

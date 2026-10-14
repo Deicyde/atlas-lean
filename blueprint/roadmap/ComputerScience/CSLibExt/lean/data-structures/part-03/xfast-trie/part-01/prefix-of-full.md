@@ -2,6 +2,9 @@
 article_id: af_0c489f26a72cc0b93b630aca
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.XFastTrie.prefixOf_full
 ---
 
 # Prefix Of full

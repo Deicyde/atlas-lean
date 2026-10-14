@@ -2,6 +2,8 @@
 article_id: af_cde65ba38a62b298e1ff0bdc
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.TwoThreeTree.Root.fromList
 ---
 
 # From List

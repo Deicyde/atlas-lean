@@ -2,6 +2,9 @@
 article_id: af_c81ae954966050a07e2edddc
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt._root_.tendsto_pow_mul_log_catalan_sub_bernoulli_sum
 ---
 
 # Tendsto pow mul log catalan sub bernoulli sum

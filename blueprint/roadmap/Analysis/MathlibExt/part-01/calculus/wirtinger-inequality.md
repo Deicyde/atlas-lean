@@ -2,6 +2,9 @@
 article_id: af_cf3ebc47c35f098d6c5aefa1
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.wirtinger_inequality
 ---
 
 # Wirtinger

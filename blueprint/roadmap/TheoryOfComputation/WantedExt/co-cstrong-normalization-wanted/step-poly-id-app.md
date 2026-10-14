@@ -2,6 +2,8 @@
 article_id: af_d61be972022b1476cb09c9d9
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.step_polyId_app
 ---
 
 # Step poly Id app

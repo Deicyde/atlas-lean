@@ -2,6 +2,9 @@
 article_id: af_75a71b29120483ba01fa4fd8
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.VanEmdeBoas.successor_mem
 ---
 
 # Successor mem

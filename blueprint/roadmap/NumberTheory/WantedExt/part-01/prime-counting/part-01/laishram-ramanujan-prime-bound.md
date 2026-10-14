@@ -2,6 +2,8 @@
 article_id: af_295b15e8d8fd93f9a9b21fe5
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.laishram_ramanujan_prime_bound
 ---
 
 # Laishram Ramanujan Prime Bound Wanted

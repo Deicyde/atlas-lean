@@ -2,6 +2,9 @@
 article_id: af_bdb5b5f68cc4ec893a4a7dc3
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciTree.Valid.decreaseRoot
 ---
 
 # Decrease Root

@@ -3,7 +3,7 @@ article_id: af_c8bbc4d12b126bf0d0a41afa
 declaration: abbrev
 origin: cited
 statement: formalized
-lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceTerm
+lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zeta2.chapter7PowerDifferenceTerm
 ---
 
 # Chapter7 Power Difference Term

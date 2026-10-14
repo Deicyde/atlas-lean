@@ -2,6 +2,9 @@
 article_id: af_e912ae399600e7ffe8512a1e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.EdgeIndexedMultigraph.IndexedWalk.isTrail_iff
 ---
 
 # Is Trail iff

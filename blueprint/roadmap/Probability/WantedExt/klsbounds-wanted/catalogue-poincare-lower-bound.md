@@ -2,6 +2,8 @@
 article_id: af_fa911575c36365b4b81dd08d
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.KLS.catalogue_poincare_lower_bound
 ---
 
 # Catalogue poincare lower bound

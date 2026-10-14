@@ -2,6 +2,9 @@
 article_id: af_b40a7d18e1d3724f6605eb87
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.singer_cyclic_difference_set_exists
 ---
 
 # Singer Difference Set

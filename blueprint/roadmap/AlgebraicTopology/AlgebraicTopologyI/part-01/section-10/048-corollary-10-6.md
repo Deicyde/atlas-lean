@@ -2,6 +2,7 @@
 article_id: af_446d1003fa5de60eaefd8c1a
 declaration: theorem
 origin: cited
+lean: SphereHomology.euclidean_not_homeomorph
 ---
 
 # Corollary 10.6

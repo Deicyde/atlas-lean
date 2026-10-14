@@ -2,6 +2,8 @@
 article_id: af_dca79ee0c2a41a73b666ca8b
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.WienerOneOverFWanted.Analysis.WienerOneOverF.wiener_inverse_closed
 ---
 
 # Wiener inverse closed

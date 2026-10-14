@@ -2,6 +2,8 @@
 article_id: af_e6f96479a0157b7d5b9a28be
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsLucasSequenceFirstKind
 ---
 
 # Is Lucas Sequence First Kind

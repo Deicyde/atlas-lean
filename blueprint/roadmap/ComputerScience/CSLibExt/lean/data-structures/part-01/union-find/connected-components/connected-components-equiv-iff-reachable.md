@@ -2,6 +2,9 @@
 article_id: af_fe935bf028299730aef3d107
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Batteries.UnionFind.connectedComponents_equiv_iff_reachable
 ---
 
 # Connected Components equiv iff reachable

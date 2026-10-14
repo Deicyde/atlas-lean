@@ -2,6 +2,9 @@
 article_id: af_e2253db6fe15caa963ad3f2a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciTree.cutAt_remainder_valid
 ---
 
 # Cut At remainder valid

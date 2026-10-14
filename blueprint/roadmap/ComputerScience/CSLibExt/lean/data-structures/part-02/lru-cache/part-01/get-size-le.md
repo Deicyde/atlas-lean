@@ -2,6 +2,9 @@
 article_id: af_de655a35b6b503f45f3b3510
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LruCache.get_size_le
 ---
 
 # Get size le

@@ -2,6 +2,9 @@
 article_id: af_2297dd3382df0b5cf6108008
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BTree.Ordered.node_keys_pairwise
 ---
 
 # Node keys pairwise

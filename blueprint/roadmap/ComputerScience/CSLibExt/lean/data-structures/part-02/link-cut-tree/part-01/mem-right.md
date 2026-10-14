@@ -2,6 +2,9 @@
 article_id: af_7feb28b04475a035f3a770f4
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.Adjacent.mem_right
 ---
 
 # Mem right

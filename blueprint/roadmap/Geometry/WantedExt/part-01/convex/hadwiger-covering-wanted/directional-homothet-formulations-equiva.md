@@ -2,6 +2,8 @@
 article_id: af_a7844607fedc34884402fc1b
 declaration: theorem
 origin: cited
+statement: formalized
+lean: ConvexCovering.directionalHomothetFormulationsEquivalent
 ---
 
 # Directional Homothet Formulations Equivalent

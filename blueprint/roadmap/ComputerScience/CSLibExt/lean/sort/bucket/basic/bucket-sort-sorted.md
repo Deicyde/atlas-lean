@@ -2,6 +2,9 @@
 article_id: af_01b4e759fa6b69e8395a926d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.bucketSort_sorted
 ---
 
 # Bucket Sort sorted

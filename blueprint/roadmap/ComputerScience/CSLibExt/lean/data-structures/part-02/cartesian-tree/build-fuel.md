@@ -2,6 +2,8 @@
 article_id: af_d516bc8e5bc2fa35ecbdbe2e
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.CartesianTree.buildFuel
 ---
 
 # Build Fuel

@@ -2,6 +2,8 @@
 article_id: af_6f8434942ecec90b2a9e8827
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.ErdosProblem1Wanted.conjecture_refuted
 ---
 
 # Erdos Problem1 Wanted

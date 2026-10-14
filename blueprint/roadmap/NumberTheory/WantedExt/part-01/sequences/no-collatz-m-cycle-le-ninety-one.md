@@ -2,6 +2,8 @@
 article_id: af_fa3667da163a74c29bd8895d
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.no_collatz_m_cycle_le_ninety_one
 ---
 
 # No Collatz MCycle Wanted

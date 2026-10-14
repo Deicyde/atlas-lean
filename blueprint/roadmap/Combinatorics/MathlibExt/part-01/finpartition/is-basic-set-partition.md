@@ -2,6 +2,8 @@
 article_id: af_f85d3ac7edd40dd64ef9ccd5
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsBasicSetPartition
 ---
 
 # Basic Set Partition

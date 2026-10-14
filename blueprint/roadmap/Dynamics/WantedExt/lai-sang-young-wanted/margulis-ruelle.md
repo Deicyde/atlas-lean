@@ -2,6 +2,8 @@
 article_id: af_911b10a3ae3e51c6a033f682
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.margulis_ruelle
 ---
 
 # Margulis ruelle

@@ -2,6 +2,9 @@
 article_id: af_7487645a3f81aff065d9ea5f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Graph.verifyHamiltonianCycle_language_iff
 ---
 
 # Verify Hamiltonian Cycle language iff

@@ -2,6 +2,9 @@
 article_id: af_419f77f392253db3ab8d4a12
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.FunctionalAnalysis.BanachLimit.banach_limit
 ---
 
 # Banach Limit

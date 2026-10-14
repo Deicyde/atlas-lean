@@ -2,6 +2,9 @@
 article_id: af_182e7e04dc3a8c0b261cfec0
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.DensityHalesJewettWanted.density_hales_jewett
 ---
 
 # Density hales jewett

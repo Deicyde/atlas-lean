@@ -2,6 +2,8 @@
 article_id: af_ac5a6102f1cd3fc7f35607f4
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BTree.delete
 ---
 
 # Delete

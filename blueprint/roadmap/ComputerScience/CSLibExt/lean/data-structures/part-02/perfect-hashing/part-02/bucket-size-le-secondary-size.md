@@ -2,6 +2,9 @@
 article_id: af_b5642f08bbf80409a66cfade
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.PerfectHashing.bucketSize_le_secondarySize
 ---
 
 # Bucket Size le secondary Size

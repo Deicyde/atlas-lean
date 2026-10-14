@@ -2,6 +2,8 @@
 article_id: af_3a9ac42de67f90bb0177209b
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsComplementaryDeterminedByParametrizedSumEquation
 ---
 
 # Is Complementary Determined By Parametrized Sum Equation

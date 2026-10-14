@@ -2,6 +2,8 @@
 article_id: af_db2bfc92ee7b56f67a600572
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.OptimalMoebiusWanted.OptimalMoebius.theorem_1_1
 ---
 
 # Theorem 1 1

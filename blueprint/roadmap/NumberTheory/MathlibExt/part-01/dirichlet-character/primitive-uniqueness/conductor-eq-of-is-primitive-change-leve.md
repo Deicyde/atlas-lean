@@ -2,6 +2,9 @@
 article_id: af_0b85c8a4c91ff822de628878
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: DirichletCharacter.conductor_eq_of_isPrimitive_changeLevel
 ---
 
 # Conductor eq of is Primitive change Level

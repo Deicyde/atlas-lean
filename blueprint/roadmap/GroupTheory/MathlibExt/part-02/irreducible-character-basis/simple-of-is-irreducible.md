@@ -2,6 +2,9 @@
 article_id: af_870041c7610da9b408e863ce
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: FDRep.simple_of_isIrreducible
 ---
 
 # Simple of is Irreducible

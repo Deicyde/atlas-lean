@@ -2,6 +2,9 @@
 article_id: af_96bf448d23f49520a58dac5a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.GeneralizedThueMorse.classical_A0
 ---
 
 # Classical A0

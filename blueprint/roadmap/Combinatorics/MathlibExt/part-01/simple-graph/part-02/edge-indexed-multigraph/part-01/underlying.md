@@ -2,6 +2,8 @@
 article_id: af_d201bf0837e1f85e3a24add1
 declaration: def
 origin: cited
+statement: formalized
+lean: SimpleGraph.EdgeIndexedMultigraph.underlying
 ---
 
 # Underlying

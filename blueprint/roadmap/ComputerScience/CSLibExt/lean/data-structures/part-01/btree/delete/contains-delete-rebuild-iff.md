@@ -2,6 +2,9 @@
 article_id: af_c8e759baae705a58892056a3
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BTree.contains_deleteRebuild_iff
 ---
 
 # Contains delete Rebuild iff

@@ -2,6 +2,9 @@
 article_id: af_883d6b4195abbeb80c01fd38
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.Additive.SzemerediWanted.szemeredi
 ---
 
 # Szemeredi

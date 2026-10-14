@@ -2,6 +2,9 @@
 article_id: af_776837fb959ad45784317659
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.listDelete_time
 ---
 
 # List Delete time

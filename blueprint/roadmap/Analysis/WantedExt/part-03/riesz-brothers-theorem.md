@@ -2,6 +2,8 @@
 article_id: af_dca8275e795ce93483ed2e28
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.RieszBrothersWanted.Analysis.riesz_brothers_theorem
 ---
 
 # Riesz Brothers Wanted

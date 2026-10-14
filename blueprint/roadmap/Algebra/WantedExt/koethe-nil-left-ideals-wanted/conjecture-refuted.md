@@ -2,6 +2,8 @@
 article_id: af_9eb3d4c1dcbc9237e7640f15
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Algebra.KoetheNilLeftIdealsWanted.conjecture_refuted
 ---
 
 # Conjecture refuted

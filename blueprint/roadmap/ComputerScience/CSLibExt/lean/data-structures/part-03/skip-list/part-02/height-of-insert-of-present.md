@@ -2,6 +2,9 @@
 article_id: af_1226f1120697d85e08ffbcc0
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.SkipList.heightOf_insert_of_present
 ---
 
 # Height Of insert of present

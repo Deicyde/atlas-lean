@@ -2,6 +2,9 @@
 article_id: af_388ffc7fd6f912dbb8722add
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BTree.deleteRebuild_validRoot
 ---
 
 # Delete Rebuild valid Root

@@ -2,6 +2,9 @@
 article_id: af_61b9176f094d5940b1afb906
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Algebra.Lie.LandmarkWanted.levi_decomposition
 ---
 
 # Levi decomposition

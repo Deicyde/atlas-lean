@@ -2,6 +2,8 @@
 article_id: af_f72329d3eac667440f79aaae
 declaration: structure
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.MatrixChain.Result
 ---
 
 # Result

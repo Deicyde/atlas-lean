@@ -2,6 +2,8 @@
 article_id: af_4f36772a0cac0a7ce880e0b3
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.FibonacciForest.minOption
 ---
 
 # Min Option

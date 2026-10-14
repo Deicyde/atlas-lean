@@ -2,6 +2,8 @@
 article_id: af_17d8df4f3d27f9f16de11704
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsHsuShiueFamily
 ---
 
 # Is Hsu Shiue Family

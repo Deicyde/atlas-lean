@@ -2,6 +2,8 @@
 article_id: af_3dbc6268df9c81b838d249c2
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.Polynomial.IsFormallyOrthogonal
 ---
 
 # Formal Orthogonality

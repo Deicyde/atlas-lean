@@ -2,6 +2,8 @@
 article_id: af_0f97364d4428549e58df641c
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.dusart_pi_asymptotic_expansion
 ---
 
 # Dusart Pi Asymptotic Expansion Wanted

@@ -2,6 +2,8 @@
 article_id: af_e9f7e8da5c50bcf69780ac23
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.DirichletEigenvaluesWanted.Analysis.ODE.dirichlet_eigenvalues_eq_nat_sq
 ---
 
 # Dirichlet Eigenvalues Wanted

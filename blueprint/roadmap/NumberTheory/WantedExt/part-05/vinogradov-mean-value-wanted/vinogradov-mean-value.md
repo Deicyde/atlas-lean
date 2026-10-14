@@ -2,6 +2,8 @@
 article_id: af_9955b9814f83dc009de89381
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.VinogradovMeanValueWanted.NumberTheory.VinogradovMeanValue.vinogradov_mean_value
 ---
 
 # Vinogradov mean value

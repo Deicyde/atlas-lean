@@ -2,6 +2,9 @@
 article_id: af_b218d682af12db0a1b7e2645
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Circuits.Circuit.verifyBooleanCertificate_satisfiable_iff
 ---
 
 # Verify Boolean Certificate satisfiable iff

@@ -2,6 +2,9 @@
 article_id: af_e24660b3a21ca44c67897294
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.PrimeCounting.moebiusSq_div_totient_sum_gt_log
 ---
 
 # Squarefree Totient

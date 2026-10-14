@@ -2,6 +2,9 @@
 article_id: af_53300cf7eb6e16d43baeb1c0
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.listInsert_represents
 ---
 
 # List Insert represents

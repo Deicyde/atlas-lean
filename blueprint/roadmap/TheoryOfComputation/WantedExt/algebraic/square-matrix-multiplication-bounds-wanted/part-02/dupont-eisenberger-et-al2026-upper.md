@@ -2,6 +2,8 @@
 article_id: af_d0a453fde0f95bd44ca8777d
 declaration: theorem
 origin: cited
+statement: formalized
+lean: Cslib.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted.dupontEisenbergerEtAl2026Upper
 ---
 
 # Dupont Eisenberger Et Al2026 Upper

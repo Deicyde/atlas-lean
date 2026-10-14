@@ -2,6 +2,8 @@
 article_id: af_da7c90f68ff24bcf00fe2572
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsThreeAbelianSquare
 ---
 
 # Is Three Abelian Square

@@ -2,6 +2,8 @@
 article_id: af_08d23cb136cce024a73420b9
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.HippocratesLunesWanted.Geometry.HippocratesLunes.hippocrates_lunes
 ---
 
 # Hippocrates lunes

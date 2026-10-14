@@ -2,6 +2,8 @@
 article_id: af_560d54bb5918cf4aebb49f78
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.OptimalTransportWanted.Analysis.monge_kantorovich_exists
 ---
 
 # Monge kantorovich exists

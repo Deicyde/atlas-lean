@@ -2,6 +2,9 @@
 article_id: af_88db45ca2578aa80b55bda59
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.Valid.cutEdge
 ---
 
 # Cut Edge

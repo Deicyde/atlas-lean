@@ -2,6 +2,9 @@
 article_id: af_ffe646681abae09e6de34fe4
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.contents_eq
 ---
 
 # Contents eq

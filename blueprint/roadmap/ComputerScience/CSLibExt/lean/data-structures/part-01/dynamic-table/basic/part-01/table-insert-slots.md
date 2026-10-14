@@ -2,6 +2,9 @@
 article_id: af_0884e218524de34ec6647940
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.tableInsert_slots
 ---
 
 # Table Insert slots

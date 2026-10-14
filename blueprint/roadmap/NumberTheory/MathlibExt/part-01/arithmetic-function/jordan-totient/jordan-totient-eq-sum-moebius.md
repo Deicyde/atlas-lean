@@ -2,6 +2,9 @@
 article_id: af_331456d4571ef1ec188e2af3
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: ArithmeticFunction.jordanTotient_eq_sum_moebius
 ---
 
 # Jordan Totient eq sum moebius

@@ -2,6 +2,9 @@
 article_id: af_75beb324e541d34a38e358e8
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Circuits.Circuit.verifyBooleanCertificate_sound
 ---
 
 # Verify Boolean Certificate sound

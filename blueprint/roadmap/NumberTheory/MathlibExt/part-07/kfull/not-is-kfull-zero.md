@@ -2,6 +2,9 @@
 article_id: af_671ca94cd805f6223d6f6dc2
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.not_isKFull_zero
 ---
 
 # Not is KFull zero

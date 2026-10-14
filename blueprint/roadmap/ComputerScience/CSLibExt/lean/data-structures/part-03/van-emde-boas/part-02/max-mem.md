@@ -2,6 +2,9 @@
 article_id: af_b5daadf98a24b5d61842ceea
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.VanEmdeBoas.max?_mem
 ---
 
 # Max? mem

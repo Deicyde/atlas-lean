@@ -2,6 +2,8 @@
 article_id: af_33adb62ea90d112c16f645e2
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.tableInsertMany
 ---
 
 # Table Insert Many

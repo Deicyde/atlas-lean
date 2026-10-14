@@ -2,6 +2,9 @@
 article_id: af_39b3440708c0bb85d3a1f061
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.SkipList.heightOf_insert_of_absent
 ---
 
 # Height Of insert of absent

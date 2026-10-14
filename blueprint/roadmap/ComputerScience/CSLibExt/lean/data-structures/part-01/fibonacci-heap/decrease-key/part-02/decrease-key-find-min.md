@@ -2,6 +2,9 @@
 article_id: af_6d1b52140c25178d189e5e0a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciHeap.decreaseKey_findMin
 ---
 
 # Decrease Key find Min

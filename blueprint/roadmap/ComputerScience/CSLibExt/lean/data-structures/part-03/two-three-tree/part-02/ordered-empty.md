@@ -2,6 +2,9 @@
 article_id: af_feb50e32e701163fa5f2c265
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TwoThreeTree.Root.ordered_empty
 ---
 
 # Ordered empty

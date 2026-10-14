@@ -2,6 +2,9 @@
 article_id: af_afa715cd8cdf5f8b1eba400f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.kGeneralizedLucas_neg_eq_zero
 ---
 
 # K Generalized Lucas neg eq zero

@@ -2,6 +2,9 @@
 article_id: af_f6f7707ba4e03dd2d7e01afa
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.IsMorphic.coding_eq
 ---
 
 # Coding eq

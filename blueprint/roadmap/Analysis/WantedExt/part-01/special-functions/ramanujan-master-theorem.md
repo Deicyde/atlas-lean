@@ -2,6 +2,8 @@
 article_id: af_57810831618ab86ed232f4a6
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.Ramanujan_master_theorem
 ---
 
 # Ramanujan Master Theorem Wanted

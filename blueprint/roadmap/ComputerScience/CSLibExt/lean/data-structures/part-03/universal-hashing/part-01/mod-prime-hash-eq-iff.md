@@ -2,6 +2,9 @@
 article_id: af_5aab61bb8b96a52d3f9db97a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.UniversalHashing.modPrimeHash_eq_iff
 ---
 
 # Mod Prime Hash eq iff

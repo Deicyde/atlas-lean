@@ -2,6 +2,8 @@
 article_id: af_2a82a175cd9612bb4fc41317
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.ThinShell.stdGaussian_isotropic_variance
 ---
 
 # Std Gaussian isotropic variance

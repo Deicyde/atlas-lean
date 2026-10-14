@@ -2,6 +2,9 @@
 article_id: af_18c4d4de6579d215bcde77b7
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.GroupTheory.ClassFunctionWanted.finrank_classFunctions_eq_card_conjClasses
 ---
 
 # Finrank class Functions eq card conj Classes

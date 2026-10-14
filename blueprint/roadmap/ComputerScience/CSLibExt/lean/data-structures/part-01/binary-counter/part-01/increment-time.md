@@ -2,6 +2,9 @@
 article_id: af_c6a7b13c0a3355c0bd582502
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinaryCounter.increment_time
 ---
 
 # Increment time

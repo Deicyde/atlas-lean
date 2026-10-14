@@ -2,6 +2,9 @@
 article_id: af_a206d6136bfb6bd75c9dab71
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Probability.DonskerWanted.continuousMap_measure_ext_of_finset_eval
 ---
 
 # Continuous Map measure ext of finset eval

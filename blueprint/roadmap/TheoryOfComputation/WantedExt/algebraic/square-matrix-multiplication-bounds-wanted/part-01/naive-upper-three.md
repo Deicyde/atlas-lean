@@ -2,6 +2,8 @@
 article_id: af_8820fbe216174479ddbd8cbf
 declaration: theorem
 origin: cited
+statement: formalized
+lean: Cslib.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted.naiveUpperThree
 ---
 
 # Naive Upper Three

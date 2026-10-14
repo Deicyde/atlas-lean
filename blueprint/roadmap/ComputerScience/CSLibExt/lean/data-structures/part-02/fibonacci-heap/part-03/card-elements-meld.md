@@ -2,6 +2,9 @@
 article_id: af_18f108b6c6c68549159b3b8f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciHeap.card_elements_meld
 ---
 
 # Card elements meld

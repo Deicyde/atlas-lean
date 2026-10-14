@@ -2,6 +2,9 @@
 article_id: af_c3ad82a6a01bca5e4ed1cf08
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.lookup_erase_eq_none
 ---
 
 # Lookup erase eq none

@@ -2,6 +2,8 @@
 article_id: af_80ef5f7f26f274c70c0561ea
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsPRecursiveSequence
 ---
 
 # PRecursive Sequence

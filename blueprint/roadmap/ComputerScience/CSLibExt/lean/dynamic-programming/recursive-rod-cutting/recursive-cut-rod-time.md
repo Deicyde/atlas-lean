@@ -2,6 +2,9 @@
 article_id: af_51cc17ef578cb89e110ba020
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RodCutting.recursiveCutRod_time
 ---
 
 # Recursive Cut Rod time

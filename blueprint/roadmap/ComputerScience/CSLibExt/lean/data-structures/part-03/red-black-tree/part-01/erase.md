@@ -2,6 +2,8 @@
 article_id: af_d096844d98bfa4d3741d11af
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.erase
 ---
 
 # Erase

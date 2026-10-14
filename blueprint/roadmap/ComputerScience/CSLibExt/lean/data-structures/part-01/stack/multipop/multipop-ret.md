@@ -2,6 +2,9 @@
 article_id: af_8aa70ae15afb3a677a31b877
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Stack.multipop_ret
 ---
 
 # Multipop ret

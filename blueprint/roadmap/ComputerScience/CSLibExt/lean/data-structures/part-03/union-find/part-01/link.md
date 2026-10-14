@@ -2,6 +2,8 @@
 article_id: af_028392065330e23eda233a01
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.UnionFind.link
 ---
 
 # Link

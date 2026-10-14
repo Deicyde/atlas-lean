@@ -2,6 +2,8 @@
 article_id: af_e14490cb9d972978518ed859
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.morphExtend
 ---
 
 # Morph Extend

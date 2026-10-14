@@ -2,6 +2,9 @@
 article_id: af_3a176288c5970295a68ca5de
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.CartesianTree.all_iff_forall_inorder
 ---
 
 # All iff forall inorder

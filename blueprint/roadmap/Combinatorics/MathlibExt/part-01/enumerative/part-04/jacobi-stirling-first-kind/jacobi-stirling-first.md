@@ -2,6 +2,8 @@
 article_id: af_a257f5a04facce965287a908
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.jacobiStirlingFirst
 ---
 
 # Jacobi Stirling First

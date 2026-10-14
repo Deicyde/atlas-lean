@@ -2,6 +2,9 @@
 article_id: af_0de3ec4cf1dee87ad663e376
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BloomFilter.mayContain_insert_self
 ---
 
 # May Contain insert self

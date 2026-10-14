@@ -2,6 +2,8 @@
 article_id: af_80184630cb7da97be8d2e0a3
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.MazurTorsionWanted.NumberTheory.MazurTorsion.mazur_torsion
 ---
 
 # Mazur torsion

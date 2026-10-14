@@ -2,6 +2,8 @@
 article_id: af_ec3fbf77f3bd187d2ea29ac4
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.binaryrec_realizable_subspace_dim
 ---
 
 # Binary Recurrence Realizable Dimension Wanted

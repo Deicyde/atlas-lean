@@ -2,6 +2,8 @@
 article_id: af_4fa083586290d11080de30ee
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.UnitDistanceUpperBoundWanted.Combinatorics.unit_distance_upper_bound
 ---
 
 # Unit distance upper bound

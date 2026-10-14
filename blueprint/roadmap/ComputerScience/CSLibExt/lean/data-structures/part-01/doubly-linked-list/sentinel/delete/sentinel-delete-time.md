@@ -2,6 +2,9 @@
 article_id: af_1c04e854953cb9c007c52e23
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.sentinelDelete_time
 ---
 
 # Sentinel Delete time

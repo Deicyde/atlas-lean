@@ -2,6 +2,9 @@
 article_id: af_ec167a90f23618dbadc865ae
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MvPolynomial.pderiv_mixedDifferential
 ---
 
 # Pderiv mixed Differential

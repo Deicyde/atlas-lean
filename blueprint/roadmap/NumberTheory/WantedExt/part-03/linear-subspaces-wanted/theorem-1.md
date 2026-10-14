@@ -2,6 +2,8 @@
 article_id: af_eab7bd16507bf498b085d031
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.theorem_1
 ---
 
 # Theorem 1

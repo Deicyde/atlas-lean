@@ -2,6 +2,8 @@
 article_id: af_89fc44d9e7237743b52fe6a0
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsKAbelianSquareFree
 ---
 
 # Is KAbelian Square Free

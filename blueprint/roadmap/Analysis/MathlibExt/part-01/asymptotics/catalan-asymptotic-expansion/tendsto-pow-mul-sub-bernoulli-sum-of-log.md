@@ -2,6 +2,9 @@
 article_id: af_1361a98ab73fe166b1e2d2c9
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt._root_.Real.tendsto_pow_mul_sub_bernoulli_sum_of_log_diff
 ---
 
 # Tendsto pow mul sub bernoulli sum of log diff

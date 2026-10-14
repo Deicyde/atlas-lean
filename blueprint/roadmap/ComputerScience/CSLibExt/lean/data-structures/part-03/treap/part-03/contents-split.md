@@ -2,6 +2,9 @@
 article_id: af_3ea3b3f79dccad810d1a928d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.contents_split
 ---
 
 # Contents split

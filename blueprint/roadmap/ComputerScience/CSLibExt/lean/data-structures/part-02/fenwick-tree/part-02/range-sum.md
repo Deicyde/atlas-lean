@@ -2,6 +2,8 @@
 article_id: af_3ed54c561004c975dbc00b98
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.FenwickTree.rangeSum
 ---
 
 # Range Sum

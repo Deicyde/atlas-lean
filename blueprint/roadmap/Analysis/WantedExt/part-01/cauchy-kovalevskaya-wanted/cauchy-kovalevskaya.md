@@ -2,6 +2,8 @@
 article_id: af_fde7315c49101955f4cb840e
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.CauchyKovalevskayaWanted.Analysis.cauchy_kovalevskaya
 ---
 
 # Cauchy kovalevskaya

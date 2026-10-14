@@ -2,6 +2,8 @@
 article_id: af_986886bf14660792c497e860
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.SplayTree.insert
 ---
 
 # Insert

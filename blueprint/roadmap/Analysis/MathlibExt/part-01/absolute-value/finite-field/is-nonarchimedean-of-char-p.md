@@ -2,6 +2,9 @@
 article_id: af_6360aea5550a96265565d11a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: AbsoluteValue.isNonarchimedean_of_charP
 ---
 
 # Is Nonarchimedean of char P

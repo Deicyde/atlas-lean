@@ -2,6 +2,9 @@
 article_id: af_ea3cd4741f95be898b3d2e63
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.SplayTree.root?_insert
 ---
 
 # Root? insert

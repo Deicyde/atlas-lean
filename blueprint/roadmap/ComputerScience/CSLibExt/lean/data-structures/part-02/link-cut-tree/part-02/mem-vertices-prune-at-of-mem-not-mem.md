@@ -2,6 +2,9 @@
 article_id: af_d2db6d6000492cf6ea3d6e4a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.mem_vertices_pruneAt_of_mem_not_mem
 ---
 
 # Mem vertices prune At of mem not mem

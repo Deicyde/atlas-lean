@@ -2,6 +2,8 @@
 article_id: af_4689ccc9822e68e29a2f3361
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.risingDiagonal
 ---
 
 # Rising Diagonal

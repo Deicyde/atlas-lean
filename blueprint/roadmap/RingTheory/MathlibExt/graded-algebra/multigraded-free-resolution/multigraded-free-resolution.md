@@ -2,6 +2,8 @@
 article_id: af_ea61f4d6fbc663e75fd2d434
 declaration: structure
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.MultigradedFreeResolution
 ---
 
 # Multigraded Free Resolution

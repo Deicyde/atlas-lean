@@ -2,6 +2,9 @@
 article_id: af_ad840d0220e4efe693ad661b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.Fourier.FastFourierTransformWanted.fftCost_recurrence
 ---
 
 # Fft Cost recurrence

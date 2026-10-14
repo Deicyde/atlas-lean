@@ -2,6 +2,8 @@
 article_id: af_75813a1b7abf456369108ee5
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.GroupedYFastTrie.Valid
 ---
 
 # Valid

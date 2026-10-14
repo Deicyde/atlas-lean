@@ -2,6 +2,8 @@
 article_id: af_d13c65612203ec6adf8d4b6e
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.SobolevMorreyWanted.Analysis.SobolevMorreyProblem.sobolev_embedding
 ---
 
 # Sobolev embedding

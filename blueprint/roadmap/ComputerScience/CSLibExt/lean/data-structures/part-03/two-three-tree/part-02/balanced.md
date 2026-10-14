@@ -2,6 +2,9 @@
 article_id: af_f17e691b9311a82013b06fc1
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TwoThreeTree.Root.balanced
 ---
 
 # Balanced

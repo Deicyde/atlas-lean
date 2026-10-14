@@ -2,6 +2,9 @@
 article_id: af_9ac07e95c172526e6366289c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.get?_delete_last
 ---
 
 # Get? delete last

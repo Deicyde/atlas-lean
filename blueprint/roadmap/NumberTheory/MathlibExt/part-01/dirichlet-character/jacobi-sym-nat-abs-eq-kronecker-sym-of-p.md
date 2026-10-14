@@ -2,6 +2,9 @@
 article_id: af_b4672ad78ded83b6cbb65217
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.jacobiSym_natAbs_eq_kroneckerSym_of_prime_ne_two_of_one_mod_four_pos
 ---
 
 # Quadratic Reciprocity Bridge

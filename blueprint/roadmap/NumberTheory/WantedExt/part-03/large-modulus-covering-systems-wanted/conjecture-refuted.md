@@ -2,6 +2,8 @@
 article_id: af_fffb076f507b37122b326f02
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.LargeModulusCoveringSystemsWanted.conjecture_refuted
 ---
 
 # Conjecture refuted

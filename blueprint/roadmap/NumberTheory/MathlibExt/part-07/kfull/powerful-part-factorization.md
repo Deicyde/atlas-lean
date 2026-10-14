@@ -2,6 +2,9 @@
 article_id: af_a587cf9c2738f4caabab8416
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.powerfulPart_factorization
 ---
 
 # Powerful Part factorization

@@ -2,6 +2,9 @@
 article_id: af_aeec9b483e2e569bde37b5bf
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.EdgeIndexedMultigraph.IndexedWalk.edges_cons
 ---
 
 # Edges cons

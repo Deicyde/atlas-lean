@@ -2,6 +2,9 @@
 article_id: af_cf3d4c0d878a7591414f627c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.contents_insert
 ---
 
 # Contents insert

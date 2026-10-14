@@ -2,6 +2,8 @@
 article_id: af_1cdf86d234659b1aa18cfa66
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.spine
 ---
 
 # Spine

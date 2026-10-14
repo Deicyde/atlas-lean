@@ -2,6 +2,8 @@
 article_id: af_a7a2094222030989081d4210
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.RademacherLILConstantWanted.conjecture_refuted
 ---
 
 # Conjecture refuted

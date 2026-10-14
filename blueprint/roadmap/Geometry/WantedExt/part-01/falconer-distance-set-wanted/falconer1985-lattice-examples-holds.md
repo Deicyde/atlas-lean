@@ -2,6 +2,8 @@
 article_id: af_227690a85603baff0f60e13e
 declaration: theorem
 origin: cited
+statement: formalized
+lean: FalconerDistanceSetWanted.falconer1985LatticeExamples_holds
 ---
 
 # Falconer1985 Lattice Examples holds

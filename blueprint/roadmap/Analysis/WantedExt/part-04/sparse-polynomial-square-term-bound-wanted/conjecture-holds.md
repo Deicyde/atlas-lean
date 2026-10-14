@@ -2,6 +2,8 @@
 article_id: af_09f912c176ddf59614bc02e5
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.SparsePolynomialSquareTermBoundWanted.conjecture_holds
 ---
 
 # Conjecture holds

@@ -2,6 +2,8 @@
 article_id: af_7f6ba79e8241f346e84c7ca4
 declaration: inductive
 origin: cited
+statement: formalized
+lean: Cslib.Complexity.Algebraic.ArithmeticOperand
 ---
 
 # Arithmetic Operand

@@ -2,6 +2,9 @@
 article_id: af_d289d79fdcd04bd13af66038
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.SkipList.level_pairwise
 ---
 
 # Level pairwise

@@ -2,6 +2,9 @@
 article_id: af_2606227bc0d23a00bef6df82
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.eulerianPolynomial_hankelDeterminant
 ---
 
 # Eulerian Polynomial Hankel

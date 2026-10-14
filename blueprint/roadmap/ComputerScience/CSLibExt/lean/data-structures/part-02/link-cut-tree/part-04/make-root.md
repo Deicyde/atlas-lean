@@ -2,6 +2,8 @@
 article_id: af_aa50a89c5f2c6def5aaf59fd
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.makeRoot
 ---
 
 # Make Root

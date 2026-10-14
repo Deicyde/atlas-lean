@@ -2,6 +2,9 @@
 article_id: af_ff00e5985aee6b221ba0be5d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.bucketSort_time_measurable
 ---
 
 # Bucket Sort time measurable

@@ -2,6 +2,9 @@
 article_id: af_073dd0fbf190dd05baa9e27d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.lookup_insert_eq
 ---
 
 # Lookup insert eq

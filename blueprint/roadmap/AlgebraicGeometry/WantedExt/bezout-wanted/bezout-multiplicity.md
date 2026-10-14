@@ -2,6 +2,8 @@
 article_id: af_e2725e09dd9ed767f7b86d68
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.bezout_multiplicity
 ---
 
 # Bezout multiplicity

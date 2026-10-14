@@ -2,6 +2,8 @@
 article_id: af_bc27dbe1b67957f087af4af2
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.dancikLowerBound_wanted
 ---
 
 # Dancik Lower Bound wanted

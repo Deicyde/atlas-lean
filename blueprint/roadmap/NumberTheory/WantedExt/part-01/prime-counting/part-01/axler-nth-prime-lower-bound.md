@@ -2,6 +2,8 @@
 article_id: af_cfa46bfb9a9f3076e3222cc1
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.axler_nth_prime_lower_bound
 ---
 
 # Axler Nth Prime Lower Bound Wanted

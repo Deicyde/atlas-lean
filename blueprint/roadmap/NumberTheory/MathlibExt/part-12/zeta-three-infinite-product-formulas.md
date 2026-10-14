@@ -2,6 +2,9 @@
 article_id: af_dac15947ed6f91784f95e07b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.zeta_three_infinite_product_formulas
 ---
 
 # Zeta Three Product Formulas

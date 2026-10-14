@@ -2,6 +2,8 @@
 article_id: af_a0ff3070f8fbdcda59641d19
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsKAbelianEquivalent
 ---
 
 # Is KAbelian Equivalent

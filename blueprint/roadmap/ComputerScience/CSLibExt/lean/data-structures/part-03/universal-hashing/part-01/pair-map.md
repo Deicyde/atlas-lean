@@ -2,6 +2,8 @@
 article_id: af_4294244ba608c6244cee294b
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.UniversalHashing.pairMap
 ---
 
 # Pair Map

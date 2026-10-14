@@ -2,6 +2,8 @@
 article_id: af_aa906fc5fef4ac0621ef7680
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.MandelbarWanted.ComplexAnalysis.mandelbar_not_path_connected
 ---
 
 # Mandelbar not path connected

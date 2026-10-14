@@ -2,6 +2,9 @@
 article_id: af_a0335de8fd01be572f9cab14
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.QuantumInformation.Finite.NoCloning.no_cloning_two_state
 ---
 
 # No Cloning

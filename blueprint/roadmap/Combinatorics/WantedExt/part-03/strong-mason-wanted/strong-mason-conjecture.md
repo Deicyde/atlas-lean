@@ -2,6 +2,8 @@
 article_id: af_e5950f9e5f5df5b359f3ade8
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.StrongMasonWanted.Combinatorics.StrongMason.strong_mason_conjecture
 ---
 
 # Strong mason conjecture

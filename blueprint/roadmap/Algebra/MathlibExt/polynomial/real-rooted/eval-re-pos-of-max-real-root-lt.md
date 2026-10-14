@@ -2,6 +2,9 @@
 article_id: af_0f9b39a03da5307c7805be2e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Polynomial.eval_re_pos_of_maxRealRoot_lt
 ---
 
 # Eval re pos of max Real Root lt

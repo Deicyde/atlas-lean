@@ -2,6 +2,9 @@
 article_id: af_f93a7099adc1602fa3290f2d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.UnionFind.unionWithCost_time_le_depth
 ---
 
 # Union With Cost time le depth

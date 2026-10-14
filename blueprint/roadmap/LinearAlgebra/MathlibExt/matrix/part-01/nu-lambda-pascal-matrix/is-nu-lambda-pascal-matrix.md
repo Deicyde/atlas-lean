@@ -2,6 +2,8 @@
 article_id: af_6f4376a25c97d62887d2c740
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsNuLambdaPascalMatrix
 ---
 
 # Is Nu Lambda Pascal Matrix

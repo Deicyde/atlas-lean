@@ -2,6 +2,9 @@
 article_id: af_5899f81552035ca55919a9bb
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.IsVertexConnected.connected_compl_singleton
 ---
 
 # Connected compl singleton

@@ -2,6 +2,8 @@
 article_id: af_5e94a316e968f1a9b21f7441
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.decomp
 ---
 
 # Decomp

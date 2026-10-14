@@ -2,6 +2,8 @@
 article_id: af_81607a7ae31bb0d93ffbe1a8
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.zagierInverseP
 ---
 
 # Zagier Inverse P

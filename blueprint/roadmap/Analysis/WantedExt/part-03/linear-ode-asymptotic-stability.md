@@ -2,6 +2,8 @@
 article_id: af_5a1e9750b2bc9a69170dd6d4
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.LinearStabilityWanted.Analysis.ODE.linear_ode_asymptotic_stability
 ---
 
 # Linear Stability Wanted

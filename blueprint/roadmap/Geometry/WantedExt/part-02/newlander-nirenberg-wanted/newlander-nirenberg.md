@@ -2,6 +2,8 @@
 article_id: af_2e8153dad6cdb026afbec2ce
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.NewlanderNirenbergWanted.Geometry.NewlanderNirenberg.newlander_nirenberg
 ---
 
 # Newlander nirenberg

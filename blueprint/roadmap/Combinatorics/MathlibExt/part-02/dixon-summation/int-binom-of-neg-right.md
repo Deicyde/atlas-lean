@@ -2,6 +2,9 @@
 article_id: af_6869fb5499c88f81b335512b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.intBinom_of_neg_right
 ---
 
 # Int Binom of neg right

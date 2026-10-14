@@ -2,6 +2,8 @@
 article_id: af_c4607ceec0e86c46414e2bd1
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.KLS.jambulapatiLeeVempala2022_bound
 ---
 
 # Jambulapati Lee Vempala2022 bound

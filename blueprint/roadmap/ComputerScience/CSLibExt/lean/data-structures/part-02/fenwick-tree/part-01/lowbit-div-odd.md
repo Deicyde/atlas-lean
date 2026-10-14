@@ -2,6 +2,9 @@
 article_id: af_c926814a6617308d5704f3f3
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FenwickTree.lowbit_div_odd
 ---
 
 # Lowbit div odd

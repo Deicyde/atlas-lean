@@ -2,6 +2,9 @@
 article_id: af_d830c305a7e1957edbb13dba
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.XFastTrie.predecessor_eq_some_iff
 ---
 
 # Predecessor eq some iff

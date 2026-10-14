@@ -2,6 +2,8 @@
 article_id: af_226abf93fed48874784a830d
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Kruskal.validEdges
 ---
 
 # Valid Edges

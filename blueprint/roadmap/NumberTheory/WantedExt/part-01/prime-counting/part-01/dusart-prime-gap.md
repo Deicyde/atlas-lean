@@ -2,6 +2,8 @@
 article_id: af_2c1b5aba7ef6ca0bb58b16cc
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.dusart_prime_gap
 ---
 
 # Dusart Prime Gap Wanted

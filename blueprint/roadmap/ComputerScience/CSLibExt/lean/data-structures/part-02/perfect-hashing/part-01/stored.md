@@ -2,6 +2,8 @@
 article_id: af_5440cbfa87e8aad6802c1dac
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.PerfectHashing.Stored
 ---
 
 # Stored

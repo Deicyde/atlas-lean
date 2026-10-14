@@ -2,6 +2,8 @@
 article_id: af_1ed47cda28b30dc7ed4bf965
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Kruskal.HasGreedyCutProperty
 ---
 
 # Has Greedy Cut Property

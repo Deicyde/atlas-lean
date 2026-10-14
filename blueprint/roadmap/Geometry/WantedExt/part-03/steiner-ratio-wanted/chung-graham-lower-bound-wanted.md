@@ -2,6 +2,8 @@
 article_id: af_0ee7dada32676a06d666f935
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.SteinerRatioWanted.chungGrahamLowerBound_wanted
 ---
 
 # Chung Graham Lower Bound wanted

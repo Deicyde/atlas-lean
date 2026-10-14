@@ -2,6 +2,9 @@
 article_id: af_b093cb943bb285f7722634bb
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.InformationTheory.KraftMcMillan.kraft_mcmillan_lengths
 ---
 
 # Kraft Mc Millan

@@ -2,6 +2,9 @@
 article_id: af_c760d0af4f5b1b5dfd3f7e19
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.DeleteBalanced.colorOf_deleteBal
 ---
 
 # Color Of delete Bal

@@ -2,6 +2,9 @@
 article_id: af_ecca88e1fc83df221483ee7e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.isVanDerLaanWindow_const_iff
 ---
 
 # Is Van Der Laan Window const iff

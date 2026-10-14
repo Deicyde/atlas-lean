@@ -2,6 +2,9 @@
 article_id: af_80e4361526100b08ba6fadf6
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.UnionFind.find_in_class
 ---
 
 # Find in class

@@ -2,6 +2,8 @@
 article_id: af_0381c9d21a5203baee7dfdb7
 declaration: def
 origin: cited
+statement: formalized
+lean: SimpleGraph.square
 ---
 
 # Square

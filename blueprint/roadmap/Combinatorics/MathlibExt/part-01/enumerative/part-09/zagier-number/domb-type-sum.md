@@ -2,6 +2,8 @@
 article_id: af_718c1c71b71bb0091948af02
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.dombTypeSum
 ---
 
 # Domb Type Sum

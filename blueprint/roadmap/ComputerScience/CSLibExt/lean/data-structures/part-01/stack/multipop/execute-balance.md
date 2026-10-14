@@ -2,6 +2,9 @@
 article_id: af_65f727d13768775c705573cf
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Stack.execute_balance
 ---
 
 # Execute balance

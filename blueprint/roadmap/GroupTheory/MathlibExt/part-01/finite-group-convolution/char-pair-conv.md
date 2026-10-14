@@ -2,6 +2,9 @@
 article_id: af_1c72fbb28850da65253ed718
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.GroupTheory.FiniteGroupConvolutionWanted.charPair_conv
 ---
 
 # Char Pair conv

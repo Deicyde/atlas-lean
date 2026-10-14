@@ -2,6 +2,9 @@
 article_id: af_cf6e72431f9932f04335b8e7
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinomialHeap.deleteMin_cons_elements
 ---
 
 # Delete Min cons elements

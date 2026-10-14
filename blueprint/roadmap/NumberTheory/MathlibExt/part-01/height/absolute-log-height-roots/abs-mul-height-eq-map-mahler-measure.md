@@ -2,6 +2,9 @@
 article_id: af_73c4424e3bc2298c5a612aaa
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.Height.AbsoluteWanted.absMulHeight₁_eq_mapMahlerMeasure
 ---
 
 # Abs Mul Height₁ eq map Mahler Measure

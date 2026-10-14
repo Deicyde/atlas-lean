@@ -2,6 +2,8 @@
 article_id: af_a383ae3d9f6c9f894cdadacd
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.bAryMultinomialBound
 ---
 
 # B Ary Multinomial Bound

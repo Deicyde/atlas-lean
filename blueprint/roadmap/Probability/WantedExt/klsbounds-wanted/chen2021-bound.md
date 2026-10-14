@@ -2,6 +2,8 @@
 article_id: af_1156864555431fdee416ed8b
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.KLS.chen2021_bound
 ---
 
 # Chen2021 bound

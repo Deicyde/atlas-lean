@@ -2,6 +2,8 @@
 article_id: af_8054ada9a5b367726f0a87a1
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RodCutting.memoizedCutRodAux
 ---
 
 # Memoized Cut Rod Aux

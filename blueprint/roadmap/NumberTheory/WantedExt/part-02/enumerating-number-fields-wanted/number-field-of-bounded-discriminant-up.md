@@ -3,7 +3,7 @@ article_id: af_029a547e340268800da95881
 declaration: def
 origin: cited
 statement: formalized
-lean: MathlibExt.NumberTheory.EnumeratingNumberFieldsWanted.NumberFieldOfBoundedDiscriminantUpToIsomorphism
+lean: MathlibExt.NumberTheory.EnumeratingNumberFieldsWanted.EnumeratingNumberFields.NumberFieldOfBoundedDiscriminantUpToIsomorphism
 ---
 
 # Number Field Of Bounded Discriminant Up To Isomorphism

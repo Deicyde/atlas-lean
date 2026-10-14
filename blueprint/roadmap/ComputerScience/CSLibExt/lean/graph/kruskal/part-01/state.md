@@ -2,6 +2,8 @@
 article_id: af_458d7531e1f011f4e202bfeb
 declaration: structure
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Kruskal.State
 ---
 
 # State

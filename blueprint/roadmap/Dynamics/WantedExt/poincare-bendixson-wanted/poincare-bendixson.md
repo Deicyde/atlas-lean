@@ -2,6 +2,8 @@
 article_id: af_741bc12b754bab192d3c11e4
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Dynamics.PoincareBendixsonWanted.Dynamics.poincare_bendixson
 ---
 
 # Poincare bendixson

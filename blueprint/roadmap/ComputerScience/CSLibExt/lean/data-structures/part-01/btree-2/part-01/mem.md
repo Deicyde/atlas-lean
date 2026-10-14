@@ -2,6 +2,8 @@
 article_id: af_8ded4658dc9f9dfb20eddef5
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BTree.Mem
 ---
 
 # Mem

@@ -2,6 +2,9 @@
 article_id: af_6aef949c04ad6e9d58c88b54
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.SimpleGraph.StronglyRegularWanted.srg_connected_mu_zero_complete
 ---
 
 # Srg connected mu zero complete

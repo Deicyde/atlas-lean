@@ -2,6 +2,8 @@
 article_id: af_8aa29bc3bd1ee9ac0cf55494
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.VonNeumannDoubleCommutantWanted.Analysis.vonNeumann_doubleCommutant_tfae
 ---
 
 # Von Neumann Double Commutant Wanted

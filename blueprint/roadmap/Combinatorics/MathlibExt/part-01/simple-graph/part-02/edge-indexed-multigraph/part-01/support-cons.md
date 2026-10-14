@@ -2,6 +2,9 @@
 article_id: af_502c5c80bbf93ccf3eaca516
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.EdgeIndexedMultigraph.IndexedWalk.support_cons
 ---
 
 # Support cons

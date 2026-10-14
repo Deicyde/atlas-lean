@@ -2,6 +2,9 @@
 article_id: af_a74943bed42fd351ae127cf2
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.higherOrderBernoulliNumber_nat
 ---
 
 # Higher Order Bernoulli Number nat

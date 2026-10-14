@@ -2,6 +2,8 @@
 article_id: af_83c8cddd61ee8e78970664fb
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.DuffinSchaefferConjectureWanted.DuffinSchaefferConjecture.corollary_3
 ---
 
 # Corollary 3

@@ -2,6 +2,9 @@
 article_id: af_b88320f2749c71baf8b6dd43
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.colorOf_delete
 ---
 
 # Color Of delete

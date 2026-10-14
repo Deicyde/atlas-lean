@@ -2,6 +2,8 @@
 article_id: af_924e8fb1eb63481e4b5ce4c1
 declaration: def
 origin: cited
+statement: formalized
+lean: Nat.powerfulPart
 ---
 
 # Powerful Part

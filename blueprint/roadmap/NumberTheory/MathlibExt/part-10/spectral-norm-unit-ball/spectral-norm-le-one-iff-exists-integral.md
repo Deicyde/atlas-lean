@@ -2,6 +2,9 @@
 article_id: af_f836574200139ffc1946df66
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.spectralNorm_le_one_iff_exists_integralClosure
 ---
 
 # Spectral Norm le one iff exists integral Closure

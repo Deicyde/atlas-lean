@@ -2,6 +2,8 @@
 article_id: af_57df28cb83d26faed70652d3
 declaration: theorem
 origin: cited
+statement: formalized
+lean: ConvexCovering.prymak2023UpperBound
 ---
 
 # Prymak2023 Upper Bound

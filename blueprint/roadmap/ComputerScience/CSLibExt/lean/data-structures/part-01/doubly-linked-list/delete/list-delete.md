@@ -2,6 +2,8 @@
 article_id: af_f18e8c69a26006e590f464c3
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.listDelete
 ---
 
 # List Delete

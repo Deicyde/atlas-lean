@@ -2,6 +2,8 @@
 article_id: af_108599345f1d7b2d365162e5
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.intBinom
 ---
 
 # Int Binom

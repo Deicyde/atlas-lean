@@ -2,6 +2,9 @@
 article_id: af_3e8acd147ce07a67ba620f05
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.lookup_eq_some_iff
 ---
 
 # Lookup eq some iff

@@ -2,6 +2,9 @@
 article_id: af_e55e646e960e21e63529149c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.VanEmdeBoas.max?_empty
 ---
 
 # Max? empty

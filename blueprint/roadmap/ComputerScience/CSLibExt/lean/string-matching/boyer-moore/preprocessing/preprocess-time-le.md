@@ -2,6 +2,9 @@
 article_id: af_6ab0ceaaa4a4184c9acf6ef5
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.StringMatching.BoyerMoore.preprocess_time_le
 ---
 
 # Preprocess time le

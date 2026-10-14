@@ -2,6 +2,8 @@
 article_id: af_f407ce162088a44b76ae68b9
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.bAryBinomialCoefficient
 ---
 
 # B Ary Binomial Coefficient

@@ -2,6 +2,9 @@
 article_id: af_9025e0120cacaee555ed2bfd
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.cameron_symmetricGroup_closed_highlyHomogeneous
 ---
 
 # Cameron Symmetric Group

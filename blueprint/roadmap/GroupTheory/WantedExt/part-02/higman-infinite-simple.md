@@ -2,6 +2,8 @@
 article_id: af_f84c36c735f67019b8865d4b
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.HigmanInfiniteSimpleWanted.GroupTheory.HigmanInfiniteSimpleProblem.higman_infinite_simple
 ---
 
 # Higman Infinite Simple Wanted

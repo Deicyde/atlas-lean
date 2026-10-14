@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7Admissible_zero
+lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7Admissible_zero
 ---
 
 # Chapter7 Admissible zero

@@ -2,6 +2,9 @@
 article_id: af_7667711358e15bd35884d42b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciHeap.deleteMin_sortedDegrees
 ---
 
 # Delete Min sorted Degrees

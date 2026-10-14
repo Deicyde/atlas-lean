@@ -2,6 +2,8 @@
 article_id: af_242c96258f4912ef5b77c102
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.AllNodes
 ---
 
 # All Nodes

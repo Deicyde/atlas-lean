@@ -2,6 +2,9 @@
 article_id: af_1951e1bc5fcee306fca95d73
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LruCache.mem_get_entries_iff
 ---
 
 # Mem get entries iff

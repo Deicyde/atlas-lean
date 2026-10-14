@@ -2,6 +2,8 @@
 article_id: af_d4dbfb111397bb8d9ff7d4f1
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Algebra.SolvableByRadicalsWanted.Algebra.solvable_iff_solvableByRad
 ---
 
 # Solvable extensions ↔ solvable groups

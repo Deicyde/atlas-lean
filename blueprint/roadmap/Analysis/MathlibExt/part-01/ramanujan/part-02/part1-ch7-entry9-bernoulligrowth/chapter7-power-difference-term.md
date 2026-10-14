@@ -2,6 +2,8 @@
 article_id: af_cd6581285900dff6218aa722
 declaration: abbrev
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry9Bernoulligrowth.chapter7PowerDifferenceTerm
 ---
 
 # Chapter7 Power Difference Term

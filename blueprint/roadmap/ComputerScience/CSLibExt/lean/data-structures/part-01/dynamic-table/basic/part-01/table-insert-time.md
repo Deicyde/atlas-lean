@@ -2,6 +2,9 @@
 article_id: af_edaa3f1a0871591ba6287725
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.tableInsert_time
 ---
 
 # Table Insert time

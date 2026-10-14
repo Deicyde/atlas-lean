@@ -2,6 +2,8 @@
 article_id: af_5a7da5dd5b7444e71395b058
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RodCutting.recursiveCutRod
 ---
 
 # Recursive Cut Rod

@@ -2,6 +2,8 @@
 article_id: af_a903f7ba5d048ec2cfc7a825
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GraphTheory.TwoRegularMinorForcingWanted.conjecture_holds
 ---
 
 # Conjecture holds

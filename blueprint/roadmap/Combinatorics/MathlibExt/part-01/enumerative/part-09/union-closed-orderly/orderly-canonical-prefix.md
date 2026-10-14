@@ -2,6 +2,9 @@
 article_id: af_91d1e811e85d8e3484790168
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.orderly_canonical_prefix
 ---
 
 # Orderly canonical prefix

@@ -2,6 +2,8 @@
 article_id: af_a59d6bc00c4ef542836836ef
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.SturmSeparationWanted.Analysis.ODE.sturm_separation
 ---
 
 # Sturm Separation Wanted

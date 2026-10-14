@@ -2,6 +2,8 @@
 article_id: af_36ecfae9bebf1213f71a3e87
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.HoneycombConnectiveConstantWanted.Combinatorics.HoneycombConnectiveConstant.honeycomb_connective_constant
 ---
 
 # Honeycomb connective constant

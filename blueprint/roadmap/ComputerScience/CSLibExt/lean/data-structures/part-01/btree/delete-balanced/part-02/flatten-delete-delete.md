@@ -2,6 +2,9 @@
 article_id: af_544f3b09f20a548db05ef117
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BTree.flatten_delete_delete
 ---
 
 # Flatten delete delete

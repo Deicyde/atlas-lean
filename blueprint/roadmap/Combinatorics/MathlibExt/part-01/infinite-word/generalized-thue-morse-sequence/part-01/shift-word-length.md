@@ -2,6 +2,9 @@
 article_id: af_2d2408a149f0856fd54708f6
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.GeneralizedThueMorse.shiftWord_length
 ---
 
 # Shift Word length

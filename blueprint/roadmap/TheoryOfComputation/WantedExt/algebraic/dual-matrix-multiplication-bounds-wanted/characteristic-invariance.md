@@ -2,6 +2,8 @@
 article_id: af_a2db30b77d63a1affb56909b
 declaration: theorem
 origin: cited
+statement: formalized
+lean: Cslib.Complexity.Algebraic.DualMatrixMultiplicationBoundsWanted.characteristicInvariance
 ---
 
 # Characteristic Invariance

@@ -2,6 +2,9 @@
 article_id: af_0b85c1a505103b2e88b9b5d7
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.randomlyPermute_singleton
 ---
 
 # Randomly Permute singleton

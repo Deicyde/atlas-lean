@@ -2,6 +2,8 @@
 article_id: af_a84fd27fe4fcb459412fdf83
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.BrauerSplittingFieldWanted.RepresentationTheory.brauer_splitting_field
 ---
 
 # Brauer Splitting Field Wanted

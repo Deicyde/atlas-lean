@@ -2,6 +2,9 @@
 article_id: af_95ba92c1cf62d2c598a9ea47
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.skolemMahlerLech
 ---
 
 # Skolem Mahler Lech

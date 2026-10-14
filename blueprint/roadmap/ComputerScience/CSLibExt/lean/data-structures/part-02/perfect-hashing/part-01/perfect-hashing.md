@@ -2,6 +2,8 @@
 article_id: af_4c7e11ca47bdbcbb884b4b7a
 declaration: structure
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.PerfectHashing
 ---
 
 # Perfect Hashing

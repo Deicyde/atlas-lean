@@ -2,6 +2,9 @@
 article_id: af_fb8890e1198bae6a66768ff1
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BTree.delete_validRoot_exists
 ---
 
 # Delete valid Root exists

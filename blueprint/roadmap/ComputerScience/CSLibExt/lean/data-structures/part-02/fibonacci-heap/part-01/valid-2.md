@@ -2,6 +2,8 @@
 article_id: af_38a0c6360e680ab91b52ebd8
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.FibonacciForest.Valid
 ---
 
 # Valid

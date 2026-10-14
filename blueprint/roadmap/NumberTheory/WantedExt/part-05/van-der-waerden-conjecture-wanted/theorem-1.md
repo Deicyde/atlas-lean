@@ -2,6 +2,8 @@
 article_id: af_ed6cad9756edf77b21e41892
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.VanDerWaerdenConjectureWanted.vanDerWaerdenConjecture.theorem_1
 ---
 
 # Theorem 1

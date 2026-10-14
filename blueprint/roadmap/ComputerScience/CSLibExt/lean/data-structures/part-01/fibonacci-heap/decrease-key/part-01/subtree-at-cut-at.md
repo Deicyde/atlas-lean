@@ -2,6 +2,9 @@
 article_id: af_d023d36e01db79dfaee6c53e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciTree.subtreeAt_cutAt
 ---
 
 # Subtree At cut At

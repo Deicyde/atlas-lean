@@ -2,6 +2,8 @@
 article_id: af_35162e5f307587352aeb907e
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.pesin_formula
 ---
 
 # Pesin formula

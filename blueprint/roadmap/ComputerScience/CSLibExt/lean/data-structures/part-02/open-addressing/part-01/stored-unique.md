@@ -2,6 +2,9 @@
 article_id: af_67c79c84b1f852af4f302e8a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OpenAddressing.stored_unique
 ---
 
 # Stored unique

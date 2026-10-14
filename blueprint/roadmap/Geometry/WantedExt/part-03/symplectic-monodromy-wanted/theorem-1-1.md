@@ -2,6 +2,8 @@
 article_id: af_a885919330f27ad8fab8a2fb
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.SymplecticMonodromyWanted.SymplecticMonodromy.theorem_1_1
 ---
 
 # Theorem 1 1

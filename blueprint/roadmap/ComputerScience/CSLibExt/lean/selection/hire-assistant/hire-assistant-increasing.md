@@ -2,6 +2,9 @@
 article_id: af_35e9afdca1859e6f1766568b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.hireAssistant_increasing
 ---
 
 # Hire Assistant increasing

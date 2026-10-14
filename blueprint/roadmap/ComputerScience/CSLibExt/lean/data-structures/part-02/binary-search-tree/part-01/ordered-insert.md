@@ -2,6 +2,9 @@
 article_id: af_68570229c5d56779b6a469eb
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinarySearchTree.ordered_insert
 ---
 
 # Ordered insert

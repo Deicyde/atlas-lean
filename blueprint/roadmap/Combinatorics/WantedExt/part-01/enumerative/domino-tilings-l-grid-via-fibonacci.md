@@ -2,6 +2,8 @@
 article_id: af_cb29c4c97789b524bbbbf068
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.domino_tilings_L_grid_via_fibonacci
 ---
 
 # LGrid Domino Tilings Wanted

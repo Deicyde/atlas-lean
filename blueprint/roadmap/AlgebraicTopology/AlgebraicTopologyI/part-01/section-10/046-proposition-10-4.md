@@ -2,6 +2,7 @@
 article_id: af_ed353f4f23c69b173f67efef
 declaration: theorem
 origin: cited
+lean: SphereHomology.sphereAndDiskHomology
 ---
 
 # Proposition 10.4

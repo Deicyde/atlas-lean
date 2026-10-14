@@ -2,6 +2,8 @@
 article_id: af_cc4f3acedd4f1236790610ff
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.FourierConvergenceWanted.Analysis.dirichlet_pointwise
 ---
 
 # Dirichlet pointwise

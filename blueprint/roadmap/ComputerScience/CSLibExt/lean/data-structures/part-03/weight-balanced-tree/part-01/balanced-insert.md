@@ -2,6 +2,9 @@
 article_id: af_bf8eebecbef1ef8595044215
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.WeightBalancedTree.balanced_insert
 ---
 
 # Balanced insert

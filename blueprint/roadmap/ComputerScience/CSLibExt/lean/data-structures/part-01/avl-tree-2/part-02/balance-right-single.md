@@ -2,6 +2,9 @@
 article_id: af_98b039e9da7943788d374d8d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.balance_right_single
 ---
 
 # Balance right single

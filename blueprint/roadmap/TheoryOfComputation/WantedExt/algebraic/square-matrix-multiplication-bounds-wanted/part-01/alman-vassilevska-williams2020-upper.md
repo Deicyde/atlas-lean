@@ -2,6 +2,8 @@
 article_id: af_01a36ed5a7f845fb51870d30
 declaration: theorem
 origin: cited
+statement: formalized
+lean: Cslib.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted.almanVassilevskaWilliams2020Upper
 ---
 
 # Alman Vassilevska Williams2020 Upper

@@ -2,6 +2,9 @@
 article_id: af_7d071b4edb26209e6793e4c9
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: NumberField.TopologicalIdeleGroup.adelicNorm_apply
 ---
 
 # Adelic Norm apply

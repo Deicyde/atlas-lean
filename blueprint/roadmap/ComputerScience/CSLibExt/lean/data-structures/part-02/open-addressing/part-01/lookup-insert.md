@@ -2,6 +2,9 @@
 article_id: af_e31fcf1ada066b745d38d842
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OpenAddressing.lookup_insert
 ---
 
 # Lookup insert

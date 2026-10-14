@@ -2,6 +2,8 @@
 article_id: af_341290a6e82970982c63eeba
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsUnionClosed
 ---
 
 # Is Union Closed

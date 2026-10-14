@@ -2,6 +2,9 @@
 article_id: af_f85eba74d3e390035ef9487f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.orderly_canonical_prefix_of_sorted
 ---
 
 # Orderly canonical prefix of sorted

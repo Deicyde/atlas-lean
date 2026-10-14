@@ -2,6 +2,8 @@
 article_id: af_152e729cde2515bcffc500eb
 declaration: def
 origin: cited
+statement: formalized
+lean: Nat.IsKFull
 ---
 
 # Is KFull

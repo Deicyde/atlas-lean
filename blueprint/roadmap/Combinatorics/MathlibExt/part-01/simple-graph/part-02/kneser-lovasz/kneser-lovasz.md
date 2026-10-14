@@ -2,6 +2,9 @@
 article_id: af_cb5ebc4541fb9b05c90fc0fc
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.SimpleGraph.KneserLovaszWanted.kneser_lovasz
 ---
 
 # Kneser lovasz

@@ -2,6 +2,9 @@
 article_id: af_4bafa40427fe9338d07b9178
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.WeightBalancedTree.balanced_balance
 ---
 
 # Balanced balance

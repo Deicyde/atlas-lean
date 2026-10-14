@@ -2,6 +2,8 @@
 article_id: af_0137acacfc36bf2c660c7d8b
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.product_theorem_special_linear
 ---
 
 # Product Theorem Special Linear Wanted

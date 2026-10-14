@@ -2,6 +2,8 @@
 article_id: af_db30d886d3673e76e119d117
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Dynamics.SimplicityConjectureWanted.SimplicityConjecture.theorem_1_2
 ---
 
 # Theorem 1 2

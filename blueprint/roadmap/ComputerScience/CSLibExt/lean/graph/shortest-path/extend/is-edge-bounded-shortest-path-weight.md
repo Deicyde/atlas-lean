@@ -2,6 +2,8 @@
 article_id: af_d8d4fb95eae0562d036818ff
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.FloydWarshall.IsEdgeBoundedShortestPathWeight
 ---
 
 # Is Edge Bounded Shortest Path Weight

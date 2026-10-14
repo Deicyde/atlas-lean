@@ -2,6 +2,8 @@
 article_id: af_e7a55beff6787eafb8e0521a
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BinomialForest.removeMinTree
 ---
 
 # Remove Min Tree

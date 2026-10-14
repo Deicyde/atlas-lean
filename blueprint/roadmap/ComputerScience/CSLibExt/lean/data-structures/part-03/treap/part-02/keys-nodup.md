@@ -2,6 +2,9 @@
 article_id: af_4800ccf723e990bdc5ea7f9c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.keys_nodup
 ---
 
 # Keys nodup

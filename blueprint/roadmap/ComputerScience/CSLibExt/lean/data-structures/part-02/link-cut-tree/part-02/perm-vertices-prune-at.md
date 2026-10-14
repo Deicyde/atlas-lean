@@ -2,6 +2,9 @@
 article_id: af_831b8220edbc29026c453382
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.perm_vertices_pruneAt
 ---
 
 # Perm vertices prune At

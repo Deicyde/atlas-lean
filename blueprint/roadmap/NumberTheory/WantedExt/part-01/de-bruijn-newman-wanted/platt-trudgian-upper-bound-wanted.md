@@ -2,6 +2,8 @@
 article_id: af_1afc91eb6a6c534c459062d7
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.DeBruijnNewmanWanted.plattTrudgianUpperBound_wanted
 ---
 
 # Platt Trudgian Upper Bound wanted

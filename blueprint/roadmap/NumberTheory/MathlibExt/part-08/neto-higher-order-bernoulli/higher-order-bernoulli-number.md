@@ -2,6 +2,8 @@
 article_id: af_48c61b22ab1a408210a964c6
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.higherOrderBernoulliNumber
 ---
 
 # Higher Order Bernoulli Number

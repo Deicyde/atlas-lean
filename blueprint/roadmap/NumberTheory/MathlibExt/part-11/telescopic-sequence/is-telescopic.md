@@ -2,6 +2,8 @@
 article_id: af_63bdc21f7b948e6ebd76a4df
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsTelescopic
 ---
 
 # Is Telescopic

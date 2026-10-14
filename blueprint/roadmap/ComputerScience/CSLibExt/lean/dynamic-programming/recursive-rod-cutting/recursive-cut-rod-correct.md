@@ -2,6 +2,9 @@
 article_id: af_31591b2bdfa5b8d6c7b277e1
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RodCutting.recursiveCutRod_correct
 ---
 
 # Recursive Cut Rod correct

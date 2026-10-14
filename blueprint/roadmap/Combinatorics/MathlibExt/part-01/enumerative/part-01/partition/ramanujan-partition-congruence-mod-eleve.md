@@ -2,6 +2,9 @@
 article_id: af_7e431999a5d92c0891eeb237
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.ramanujan_partition_congruence_mod_eleven
 ---
 
 # Ramanujan Partition Congruence Mod Eleven

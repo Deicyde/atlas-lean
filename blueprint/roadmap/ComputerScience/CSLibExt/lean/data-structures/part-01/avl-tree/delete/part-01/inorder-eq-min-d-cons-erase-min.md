@@ -2,6 +2,9 @@
 article_id: af_b0cdcbcc30bd6d4b36e7296e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.inorder_eq_minD_cons_eraseMin
 ---
 
 # Inorder eq min D cons erase Min

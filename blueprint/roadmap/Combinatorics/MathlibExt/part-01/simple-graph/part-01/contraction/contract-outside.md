@@ -2,6 +2,8 @@
 article_id: af_d2b54a371e0fccb747429f61
 declaration: def
 origin: cited
+statement: formalized
+lean: SimpleGraph.contractOutside
 ---
 
 # Contract Outside

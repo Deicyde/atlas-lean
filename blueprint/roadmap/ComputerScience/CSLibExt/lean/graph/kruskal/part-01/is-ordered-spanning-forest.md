@@ -2,6 +2,8 @@
 article_id: af_2b0ade7e28dc6fd7604950bb
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Kruskal.IsOrderedSpanningForest
 ---
 
 # Is Ordered Spanning Forest

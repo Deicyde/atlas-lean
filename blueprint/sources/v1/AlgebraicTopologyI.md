@@ -18,15 +18,3 @@ the Lean code; each is recorded with its evidence in
 
 32 dependencies point to a statement placed later in this
 wiki and are not drawn as roadmap edges, which keeps every chapter acyclic.
-
-## Targets without a linked Lean declaration
-
-These targets have no `lean:` link: v1 matched no declaration, the
-matched name is not found by Autoform's lexical scan, or another v1 book
-or a root library declares the same name.
-
-| Target | v1 match |
-| --- | --- |
-| Proposition 10.4 | `SphereHomology.sphereAndDiskHomology` |
-| Corollary 10.5 | `SphereHomology.sphere_not_homotopy_equiv` |
-| Corollary 10.6 | `SphereHomology.euclidean_not_homeomorph` |

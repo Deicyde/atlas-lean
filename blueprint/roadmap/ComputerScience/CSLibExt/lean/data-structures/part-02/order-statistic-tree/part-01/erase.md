@@ -2,6 +2,8 @@
 article_id: af_9b486b6c2a1a7dc201ea9e56
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.OrderStatisticTree.erase
 ---
 
 # Erase

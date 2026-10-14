@@ -2,6 +2,9 @@
 article_id: af_01838c17ec1c11f1ebbccc21
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.StringMatching.computeZ_replicate_push_time
 ---
 
 # Compute Z replicate push time

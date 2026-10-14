@@ -2,6 +2,9 @@
 article_id: af_c41e46d4b3c1dc2496b52b75
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.VanEmdeBoas.successor_eq_some_iff_of_valid
 ---
 
 # Successor eq some iff of valid

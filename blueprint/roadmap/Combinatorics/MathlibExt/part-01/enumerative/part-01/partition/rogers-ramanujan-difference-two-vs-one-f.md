@@ -2,6 +2,9 @@
 article_id: af_b7bc4e364afb628c626de783
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.Enumerative.Partition.RogersRamanujanWanted.rogers_ramanujan_difference_two_vs_one_four
 ---
 
 # Rogers Ramanujan

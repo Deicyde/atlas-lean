@@ -2,6 +2,9 @@
 article_id: af_44a02f1f299193e7fbc9a08e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OrderStatisticTree.rank_delete_eq_bstRank
 ---
 
 # Rank delete eq bst Rank

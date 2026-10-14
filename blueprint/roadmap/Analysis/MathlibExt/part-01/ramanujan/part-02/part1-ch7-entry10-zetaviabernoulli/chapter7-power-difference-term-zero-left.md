@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceTerm_zero_left
+lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7PowerDifferenceTerm_zero_left
 ---
 
 # Chapter7 Power Difference Term zero left

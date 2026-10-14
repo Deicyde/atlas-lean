@@ -2,6 +2,8 @@
 article_id: af_5e7171ffd4c69fd82669575f
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.TwoThreeTree.Overflow.toRoot
 ---
 
 # To Root

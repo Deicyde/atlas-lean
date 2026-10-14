@@ -2,6 +2,8 @@
 article_id: af_8363dc317a338bed5cdea920
 declaration: def
 origin: cited
+statement: formalized
+lean: Int.IsExactCoverOf
 ---
 
 # Is Exact Cover Of

@@ -2,6 +2,8 @@
 article_id: af_387977e350ce7590a91a8293
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.SkipList.empty
 ---
 
 # Empty

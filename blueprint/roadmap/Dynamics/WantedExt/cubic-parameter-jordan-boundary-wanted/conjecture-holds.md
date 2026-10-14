@@ -2,6 +2,8 @@
 article_id: af_243484d74e0593981b8a0807
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.conjecture_holds
 ---
 
 # Conjecture holds

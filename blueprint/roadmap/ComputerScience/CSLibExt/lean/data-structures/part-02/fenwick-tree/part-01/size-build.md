@@ -2,6 +2,9 @@
 article_id: af_08b8928796d57ce16a7c1798
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FenwickTree.size_build
 ---
 
 # Size build

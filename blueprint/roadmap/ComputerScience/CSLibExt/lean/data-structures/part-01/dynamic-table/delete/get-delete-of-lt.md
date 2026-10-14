@@ -2,6 +2,9 @@
 article_id: af_49327cd59c328bc956f4bf5b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.get?_delete_of_lt
 ---
 
 # Get? delete of lt

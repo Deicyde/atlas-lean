@@ -2,6 +2,8 @@
 article_id: af_8f2d431c4028256489d91825
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.WeightBalancedTree.balance
 ---
 
 # Balance

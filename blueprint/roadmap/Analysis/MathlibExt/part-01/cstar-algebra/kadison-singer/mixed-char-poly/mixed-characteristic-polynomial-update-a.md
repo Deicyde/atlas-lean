@@ -2,6 +2,9 @@
 article_id: af_2666ea2d95349ad6b932ccf4
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.CStarAlgebra.KadisonSinger.mixedCharacteristicPolynomial_update_affine
 ---
 
 # Mixed Characteristic Polynomial update affine

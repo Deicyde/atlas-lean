@@ -2,6 +2,8 @@
 article_id: af_ab3a07cdfd36c98dbc5af350
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.lambertMap
 ---
 
 # Lambert Map

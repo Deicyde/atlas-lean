@@ -2,6 +2,9 @@
 article_id: af_edfd586384951dd238fac905
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Kruskal.kruskal_spans
 ---
 
 # Kruskal spans

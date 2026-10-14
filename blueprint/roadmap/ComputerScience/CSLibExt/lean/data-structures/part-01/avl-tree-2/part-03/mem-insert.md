@@ -2,6 +2,9 @@
 article_id: af_ebc64d10912101bbf3d82040
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.mem_insert
 ---
 
 # Mem insert

@@ -2,6 +2,8 @@
 article_id: af_6dd810d04aabc29e13cbd779
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.TimeM.minMax
 ---
 
 # Min Max

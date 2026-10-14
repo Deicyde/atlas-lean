@@ -2,6 +2,8 @@
 article_id: af_22e94292a7a1f3ceeeeb2be8
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsKAbelianSquare
 ---
 
 # Is KAbelian Square

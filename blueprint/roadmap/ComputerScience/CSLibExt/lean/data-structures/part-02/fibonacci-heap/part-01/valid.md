@@ -2,6 +2,8 @@
 article_id: af_c32e8d94b4195573771ec7fc
 declaration: inductive
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.FibonacciTree.Valid
 ---
 
 # Valid

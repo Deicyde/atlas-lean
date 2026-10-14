@@ -2,6 +2,9 @@
 article_id: af_818ec6568bb2ebf2d40bd69e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.ordered_join
 ---
 
 # Ordered join

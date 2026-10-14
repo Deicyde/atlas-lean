@@ -2,6 +2,9 @@
 article_id: af_422196500e864e5da01b99e7
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: FDRep.linearIndependent_character
 ---
 
 # Linear Independent character

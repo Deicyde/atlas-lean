@@ -2,6 +2,9 @@
 article_id: af_84cac60a5f72e4a4ab51da04
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OpenAddressing.lookup_isSome_iff
 ---
 
 # Lookup is Some iff

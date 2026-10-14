@@ -2,6 +2,9 @@
 article_id: af_b56622f6ebba122f21298168
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.not_mem_delete_self
 ---
 
 # Not mem delete self

@@ -2,6 +2,8 @@
 article_id: af_b14ed52552180f7501a33dcb
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.ErdosFaberLovaszConjectureWanted.ErdosFaberLovaszConjecture.theorem_1_1
 ---
 
 # Theorem 1 1

@@ -2,6 +2,8 @@
 article_id: af_28c3a20fb944732376afa5da
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.PlanarGraphPrismHamiltonicityWanted.conjecture_refuted
 ---
 
 # Conjecture refuted

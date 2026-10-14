@@ -2,6 +2,8 @@
 article_id: af_66e288334088884b362454c3
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.hyperbolic_has_shadowing
 ---
 
 # Hyperbolic has shadowing

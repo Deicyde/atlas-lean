@@ -2,6 +2,8 @@
 article_id: af_c1a26c84dad99a0c6901a5a7
 declaration: def
 origin: cited
+statement: formalized
+lean: SimpleGraph.IsVertexConnected
 ---
 
 # Is Vertex Connected

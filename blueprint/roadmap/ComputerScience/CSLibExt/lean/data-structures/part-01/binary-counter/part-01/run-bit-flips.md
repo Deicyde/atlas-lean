@@ -2,6 +2,9 @@
 article_id: af_baf3905e82300a7748eb2a84
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinaryCounter.run_bit_flips
 ---
 
 # Run bit flips

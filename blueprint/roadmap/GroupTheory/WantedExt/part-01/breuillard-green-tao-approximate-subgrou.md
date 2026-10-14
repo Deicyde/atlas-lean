@@ -2,6 +2,8 @@
 article_id: af_eef734a6042bca58a2c0b376
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.breuillard_green_tao_approximate_subgroup
 ---
 
 # Approximate Subgroup Structure Wanted

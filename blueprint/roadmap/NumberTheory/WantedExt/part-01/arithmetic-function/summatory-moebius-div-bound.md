@@ -2,6 +2,8 @@
 article_id: af_17e0869d3185e3573fddf4b4
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.summatory_moebius_div_bound
 ---
 
 # Explicit Mertens Bound Wanted

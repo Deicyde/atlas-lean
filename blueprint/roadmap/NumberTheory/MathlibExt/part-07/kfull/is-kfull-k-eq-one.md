@@ -2,6 +2,9 @@
 article_id: af_fde84d07aeb8fdc06529f6ef
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.isKFull_k_eq_one
 ---
 
 # Is KFull k eq one

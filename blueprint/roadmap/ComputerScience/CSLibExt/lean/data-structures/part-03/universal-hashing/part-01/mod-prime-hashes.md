@@ -2,6 +2,8 @@
 article_id: af_3dd29924ccf5b111ba5312d3
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.UniversalHashing.modPrimeHashes
 ---
 
 # Mod Prime Hashes

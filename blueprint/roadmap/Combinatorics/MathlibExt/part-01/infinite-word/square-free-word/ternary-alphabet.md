@@ -2,6 +2,8 @@
 article_id: af_28b549343483855bda6047c2
 declaration: abbrev
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.TernaryAlphabet
 ---
 
 # Ternary Alphabet

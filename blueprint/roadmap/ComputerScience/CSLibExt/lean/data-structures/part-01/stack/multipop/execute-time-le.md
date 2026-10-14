@@ -2,6 +2,9 @@
 article_id: af_3e13e75a9e8697487b8c628b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Stack.execute_time_le
 ---
 
 # Execute time le

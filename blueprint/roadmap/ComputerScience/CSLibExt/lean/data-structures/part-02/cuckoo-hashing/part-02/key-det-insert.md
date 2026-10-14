@@ -2,6 +2,9 @@
 article_id: af_8906db622e90a75084f82255
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.CuckooHashing.keyDet_insert
 ---
 
 # Key Det insert

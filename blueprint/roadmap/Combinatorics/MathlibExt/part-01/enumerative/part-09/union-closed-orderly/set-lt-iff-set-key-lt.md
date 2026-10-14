@@ -2,6 +2,9 @@
 article_id: af_98c67fd99a1f144823de4486
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.setLT_iff_setKey_lt
 ---
 
 # Set LT iff set Key lt

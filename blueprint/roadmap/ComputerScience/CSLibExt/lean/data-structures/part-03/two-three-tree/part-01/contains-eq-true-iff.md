@@ -2,6 +2,9 @@
 article_id: af_fbf1016a219cc682119e8995
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TwoThreeTree.contains_eq_true_iff
 ---
 
 # Contains eq true iff

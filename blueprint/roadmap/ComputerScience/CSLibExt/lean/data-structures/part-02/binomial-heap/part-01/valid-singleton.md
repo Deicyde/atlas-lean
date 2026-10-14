@@ -2,6 +2,9 @@
 article_id: af_2b5f9fbcde773cac36fbc94b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinomialTree.valid_singleton
 ---
 
 # Valid singleton

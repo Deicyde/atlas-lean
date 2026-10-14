@@ -2,6 +2,9 @@
 article_id: af_6547cc94235dcdedf22efaa3
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.Coding.HammingSpherePacking.hamming_sphere_packing_bound
 ---
 
 # Hamming Sphere Packing

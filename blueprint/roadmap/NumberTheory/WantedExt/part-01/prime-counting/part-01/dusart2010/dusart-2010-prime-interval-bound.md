@@ -2,6 +2,8 @@
 article_id: af_6c1d56c8957a5539bdb6d323
 declaration: theorem
 origin: cited
+statement: formalized
+lean: dusart_2010_prime_interval_bound
 ---
 
 # Dusart 2010 prime interval bound

@@ -2,6 +2,8 @@
 article_id: af_618812adf84521b08ab8e828
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.cubicResidueSymbol
 ---
 
 # Cubic Residue Symbol

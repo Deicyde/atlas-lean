@@ -2,6 +2,8 @@
 article_id: af_f15748ba8caab458acaeb920
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.ThinShell.uniformCube_isotropic_variance
 ---
 
 # Uniform Cube isotropic variance

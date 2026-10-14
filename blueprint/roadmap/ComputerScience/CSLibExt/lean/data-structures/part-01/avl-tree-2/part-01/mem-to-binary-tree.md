@@ -2,6 +2,9 @@
 article_id: af_1b8fc042ab307ec4f6507366
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.mem_toBinaryTree
 ---
 
 # Mem to Binary Tree

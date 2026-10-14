@@ -2,6 +2,8 @@
 article_id: af_0d966ff0b653ead46211519f
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.AsymptoticDobrowolski.stewart_degreeBound
 ---
 
 # Stewart degree Bound

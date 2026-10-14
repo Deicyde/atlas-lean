@@ -2,6 +2,9 @@
 article_id: af_caaa66643695a07721aeb52b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinarySearchTree.contains_eq_true_iff
 ---
 
 # Contains eq true iff

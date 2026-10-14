@@ -2,6 +2,9 @@
 article_id: af_f5c3d19d8d6b9de02b8a42c2
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.bucketSort_time_expected_one
 ---
 
 # Bucket Sort time expected one

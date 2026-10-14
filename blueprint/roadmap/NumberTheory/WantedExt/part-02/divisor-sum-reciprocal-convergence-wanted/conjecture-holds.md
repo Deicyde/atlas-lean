@@ -2,6 +2,8 @@
 article_id: af_47e65f168d91b26776ba0966
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.DivisorSumReciprocalConvergenceWanted.conjecture_holds
 ---
 
 # Conjecture holds

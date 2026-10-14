@@ -2,6 +2,9 @@
 article_id: af_840033064dcc4109705eb32b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Matrix.fasterAPSP_edgeBounded
 ---
 
 # Faster APSP edge Bounded

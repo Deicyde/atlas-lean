@@ -2,6 +2,9 @@
 article_id: af_daa0be229ceb6b0d2349d899
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.CuckooHashing.lookup_empty
 ---
 
 # Lookup empty

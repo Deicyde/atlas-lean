@@ -2,6 +2,9 @@
 article_id: af_a323779edb88f5666eeb8318
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciHeap.card_elements_insert
 ---
 
 # Card elements insert

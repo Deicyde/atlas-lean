@@ -2,6 +2,9 @@
 article_id: af_236af88cf122a2f78ae2d271
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LruCache.get_put
 ---
 
 # Get put

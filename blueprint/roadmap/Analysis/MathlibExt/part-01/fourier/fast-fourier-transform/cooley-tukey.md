@@ -2,6 +2,9 @@
 article_id: af_07aa174a8eadb79356ba5d51
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.Fourier.FastFourierTransformWanted.cooley_tukey
 ---
 
 # Cooley tukey

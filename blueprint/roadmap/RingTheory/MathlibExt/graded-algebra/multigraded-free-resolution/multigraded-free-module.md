@@ -2,6 +2,8 @@
 article_id: af_ae344355a2d2ec67544db930
 declaration: structure
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.MultigradedFreeModule
 ---
 
 # Multigraded Free Module

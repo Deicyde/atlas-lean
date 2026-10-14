@@ -2,6 +2,8 @@
 article_id: af_5b90d7270e4526cb9f29a2e7
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.PartialListColoringProportionalBoundWanted.conjecture_refuted
 ---
 
 # Conjecture refuted

@@ -2,6 +2,8 @@
 article_id: af_c35af48dd9f8f284cffe6a4d
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.ModelTheory.MorleyCategoricityWanted.ModelTheory.morley_categoricity_theorem
 ---
 
 # Morley Categoricity Wanted

@@ -2,6 +2,8 @@
 article_id: af_f17d7dcd7b519aea9ac46629
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.FatouJuliaWanted.ComplexAnalysis.FatouJuliaProblem.julia_cantor_dichotomy
 ---
 
 # Julia cantor dichotomy

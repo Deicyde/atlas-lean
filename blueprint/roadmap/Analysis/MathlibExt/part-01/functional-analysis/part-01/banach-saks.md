@@ -2,6 +2,9 @@
 article_id: af_e48fd1af4145d6fd950cad7a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.FunctionalAnalysis.BanachSaksWanted.banach_saks
 ---
 
 # Banach Saks

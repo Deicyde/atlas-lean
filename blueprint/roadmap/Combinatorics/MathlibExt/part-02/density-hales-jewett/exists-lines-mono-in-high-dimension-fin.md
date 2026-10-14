@@ -2,6 +2,9 @@
 article_id: af_3ecbb8cf7531b1c5badb0471
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.DensityHalesJewettWanted._root_.Combinatorics.Subspace.exists_lines_mono_in_high_dimension_fin
 ---
 
 # Exists lines mono in high dimension fin

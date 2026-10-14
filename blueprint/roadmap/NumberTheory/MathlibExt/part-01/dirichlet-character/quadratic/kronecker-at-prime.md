@@ -2,6 +2,8 @@
 article_id: af_f067b214381dd70eb8781d46
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.kroneckerAtPrime
 ---
 
 # Kronecker At Prime

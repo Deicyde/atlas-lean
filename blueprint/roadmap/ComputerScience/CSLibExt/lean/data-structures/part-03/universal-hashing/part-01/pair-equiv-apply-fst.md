@@ -2,6 +2,9 @@
 article_id: af_da34fa3732b5cef3aba4f27f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.UniversalHashing.pairEquiv_apply_fst
 ---
 
 # Pair Equiv apply fst

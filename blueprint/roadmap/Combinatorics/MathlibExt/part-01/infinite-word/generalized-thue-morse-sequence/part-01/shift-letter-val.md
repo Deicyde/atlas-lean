@@ -2,6 +2,9 @@
 article_id: af_95331ce0b563e5dc1dc566df
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.GeneralizedThueMorse.shiftLetter_val
 ---
 
 # Shift Letter val

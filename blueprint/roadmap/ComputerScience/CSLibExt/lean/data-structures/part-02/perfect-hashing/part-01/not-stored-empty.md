@@ -2,6 +2,9 @@
 article_id: af_a1b7544b99e096375658ba10
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.PerfectHashing.not_stored_empty
 ---
 
 # Not stored empty

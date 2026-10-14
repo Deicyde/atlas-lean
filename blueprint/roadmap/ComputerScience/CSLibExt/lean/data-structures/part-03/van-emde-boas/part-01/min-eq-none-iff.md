@@ -2,6 +2,9 @@
 article_id: af_9c5e21da018014175ee43029
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.VanEmdeBoas.min?_eq_none_iff
 ---
 
 # Min? eq none iff

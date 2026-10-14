@@ -2,6 +2,8 @@
 article_id: af_598ad555a7bb0180f3fae78f
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.VanEmdeBoas.predecessor
 ---
 
 # Predecessor

@@ -2,6 +2,9 @@
 article_id: af_06ced4de22335f59a8bc45f8
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.PerfectHashing.Valid.injective_of_placed
 ---
 
 # Injective of placed

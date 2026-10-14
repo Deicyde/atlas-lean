@@ -2,6 +2,8 @@
 article_id: af_283abf585988ef5f21a81562
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.PerfectGraphNPWanted.conjecture_holds
 ---
 
 # Conjecture holds

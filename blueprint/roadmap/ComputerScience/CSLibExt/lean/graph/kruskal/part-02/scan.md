@@ -2,6 +2,8 @@
 article_id: af_86469b3d9083ef255b28ba65
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Kruskal.scan
 ---
 
 # Scan

@@ -2,6 +2,8 @@
 article_id: af_bbb97820803a71a256e5be4a
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.TimeM.kmpSearch
 ---
 
 # Kmp Search

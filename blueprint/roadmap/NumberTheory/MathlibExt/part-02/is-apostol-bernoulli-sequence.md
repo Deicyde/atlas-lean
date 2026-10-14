@@ -2,6 +2,8 @@
 article_id: af_9a277a866cf67972ab2fed6f
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsApostolBernoulliSequence
 ---
 
 # Apostol Bernoulli Number

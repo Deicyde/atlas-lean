@@ -2,6 +2,8 @@
 article_id: af_7f36aa237568ea6d730a4394
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsInfiniteTernarySquareFreeWord
 ---
 
 # Is Infinite Ternary Square Free Word

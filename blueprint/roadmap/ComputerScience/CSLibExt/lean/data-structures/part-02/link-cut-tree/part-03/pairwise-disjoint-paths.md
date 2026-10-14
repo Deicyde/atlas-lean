@@ -2,6 +2,9 @@
 article_id: af_7671d828ebd8a8f32f392071
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.pairwise_disjoint_paths
 ---
 
 # Pairwise disjoint paths

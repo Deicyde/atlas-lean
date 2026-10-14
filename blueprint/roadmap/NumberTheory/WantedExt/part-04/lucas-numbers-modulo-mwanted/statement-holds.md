@@ -2,6 +2,8 @@
 article_id: af_fb79264a8f919ecadec9dfef
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.LucasNumbersModuloMWanted.Statement_holds
 ---
 
 # Statement holds

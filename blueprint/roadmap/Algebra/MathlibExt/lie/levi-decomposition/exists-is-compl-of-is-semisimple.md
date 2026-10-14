@@ -2,6 +2,9 @@
 article_id: af_e819e5e23b18e5f278800415
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Algebra.Lie.LandmarkWanted._root_.LieModule.exists_isCompl_of_isSemisimple
 ---
 
 # Exists is Compl of is Semisimple

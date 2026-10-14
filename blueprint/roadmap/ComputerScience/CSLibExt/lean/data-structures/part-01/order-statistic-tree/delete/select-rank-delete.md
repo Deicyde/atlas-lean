@@ -2,6 +2,9 @@
 article_id: af_7fcf3ede4ae3b951c6f53ad1
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OrderStatisticTree.select_rank_delete
 ---
 
 # Select rank delete

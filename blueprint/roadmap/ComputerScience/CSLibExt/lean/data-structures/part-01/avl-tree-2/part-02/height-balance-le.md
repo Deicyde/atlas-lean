@@ -2,6 +2,9 @@
 article_id: af_ca553dcdd3d844809bd22446
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.height_balance_le
 ---
 
 # Height balance le

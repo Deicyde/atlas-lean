@@ -2,6 +2,9 @@
 article_id: af_3b71e6c6c734a74a48e06c21
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.catalan_stirling_asymptotic_expansions
 ---
 
 # Catalan stirling asymptotic expansions

@@ -2,6 +2,8 @@
 article_id: af_fd96cd472f3fe8a7d00fa118
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.ThinShell.two_le_thinShellVarianceConstant
 ---
 
 # Two le thin Shell Variance Constant

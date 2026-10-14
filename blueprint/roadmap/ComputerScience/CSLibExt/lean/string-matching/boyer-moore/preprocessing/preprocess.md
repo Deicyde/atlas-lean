@@ -2,6 +2,8 @@
 article_id: af_b6dc07dd0dba8e1c65e5d151
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.StringMatching.BoyerMoore.preprocess
 ---
 
 # Preprocess

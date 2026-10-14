@@ -2,6 +2,9 @@
 article_id: af_e9298bf057504ac0ea6bcb95
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SetFamily.isUniform_iff
 ---
 
 # Is Uniform iff

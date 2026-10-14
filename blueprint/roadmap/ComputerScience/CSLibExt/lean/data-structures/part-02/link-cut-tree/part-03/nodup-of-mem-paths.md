@@ -2,6 +2,9 @@
 article_id: af_c215e22903a948089fa6ed07
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.nodup_of_mem_paths
 ---
 
 # Nodup of mem paths

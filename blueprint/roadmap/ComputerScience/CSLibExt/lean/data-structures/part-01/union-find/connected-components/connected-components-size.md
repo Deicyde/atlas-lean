@@ -2,6 +2,9 @@
 article_id: af_eb33d772068a773a414cd70d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Batteries.UnionFind.connectedComponents_size
 ---
 
 # Connected Components size

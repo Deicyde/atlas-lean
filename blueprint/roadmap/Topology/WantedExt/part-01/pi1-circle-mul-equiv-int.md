@@ -2,6 +2,8 @@
 article_id: af_bd119afd83c5031be299b42f
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Topology.HomotopyGroupsWanted.Topology.pi1_circle_mulEquiv_int
 ---
 
 # Homotopy Groups Wanted

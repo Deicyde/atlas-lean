@@ -2,6 +2,8 @@
 article_id: af_8b030bcafdb8dad201c8c0f2
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BinomialTree.children
 ---
 
 # Children

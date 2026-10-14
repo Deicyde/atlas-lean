@@ -2,6 +2,8 @@
 article_id: af_bf205c9216391341ca223b60
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.HopfUmlaufsatzWanted.Geometry.HopfUmlaufsatz.hopf_umlaufsatz
 ---
 
 # Hopf umlaufsatz

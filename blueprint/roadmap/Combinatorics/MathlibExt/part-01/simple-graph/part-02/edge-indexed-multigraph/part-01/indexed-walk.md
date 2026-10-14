@@ -2,6 +2,8 @@
 article_id: af_2a4c9a1d919f60f0424ef37c
 declaration: inductive
 origin: cited
+statement: formalized
+lean: SimpleGraph.EdgeIndexedMultigraph.IndexedWalk
 ---
 
 # Indexed Walk

@@ -2,6 +2,8 @@
 article_id: af_cb97499a1e02e3d647559b4a
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.ThinShell.guedonMilman2011_width_bound
 ---
 
 # Guedon Milman2011 width bound

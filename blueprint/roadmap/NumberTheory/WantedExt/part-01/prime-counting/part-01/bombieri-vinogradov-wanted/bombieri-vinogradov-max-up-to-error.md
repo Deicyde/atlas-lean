@@ -2,6 +2,8 @@
 article_id: af_1cd38355abc5b4d064afbb69
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.NumberTheory.PrimeCounting.bombieriVinogradovMaxUpToError
 ---
 
 # Bombieri Vinogradov Max Up To Error

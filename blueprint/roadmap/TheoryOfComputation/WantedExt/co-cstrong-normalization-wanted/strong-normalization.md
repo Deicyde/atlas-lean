@@ -2,6 +2,8 @@
 article_id: af_58cdc8a38955c5b126e074a4
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.strong_normalization
 ---
 
 # Strong normalization

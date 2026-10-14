@@ -2,6 +2,8 @@
 article_id: af_32e0e78d21ff3b4ec705f236
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.SkipList.Valid
 ---
 
 # Valid

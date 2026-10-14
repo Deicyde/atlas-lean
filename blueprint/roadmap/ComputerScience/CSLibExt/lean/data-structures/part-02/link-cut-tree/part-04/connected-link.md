@@ -2,6 +2,9 @@
 article_id: af_e2538916a6a61f9f17cf1bc5
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.connected_link
 ---
 
 # Connected link

@@ -2,6 +2,9 @@
 article_id: af_c9f695563b5565473cf03e5c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.XFastTrie.member_insert_self
 ---
 
 # Member insert self

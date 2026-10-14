@@ -2,6 +2,8 @@
 article_id: af_eda201602ac19cd4403ed7b7
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.dejean_repetition_threshold
 ---
 
 # Dejean Repetition Threshold Wanted

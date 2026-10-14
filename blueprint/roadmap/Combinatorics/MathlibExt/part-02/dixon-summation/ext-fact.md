@@ -2,6 +2,8 @@
 article_id: af_b9afbfb9cf241302b3f13683
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.extFact
 ---
 
 # Ext Fact

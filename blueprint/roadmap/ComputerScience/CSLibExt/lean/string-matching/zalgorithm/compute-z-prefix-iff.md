@@ -2,6 +2,9 @@
 article_id: af_ada719e79ec00e5bbfd382f2
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.StringMatching.computeZ_prefix_iff
 ---
 
 # Compute Z prefix iff

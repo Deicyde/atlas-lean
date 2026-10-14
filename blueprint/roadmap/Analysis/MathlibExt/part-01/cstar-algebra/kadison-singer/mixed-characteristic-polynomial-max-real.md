@@ -2,6 +2,9 @@
 article_id: af_a8a56207b01f4e70ae698901
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Analysis.CStarAlgebra.KadisonSinger.mixedCharacteristicPolynomial_maxRealRoot_le
 ---
 
 # Barrier

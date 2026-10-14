@@ -2,6 +2,8 @@
 article_id: af_e729c43f1af89d504cbd2a62
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BTree.keyCount
 ---
 
 # Key Count

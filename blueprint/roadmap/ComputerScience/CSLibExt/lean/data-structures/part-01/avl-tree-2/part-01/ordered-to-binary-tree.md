@@ -2,6 +2,9 @@
 article_id: af_e75d48b6c28c382f13d542d7
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.ordered_toBinaryTree
 ---
 
 # Ordered to Binary Tree

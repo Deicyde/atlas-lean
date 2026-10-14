@@ -2,6 +2,9 @@
 article_id: af_76f7df2202e477a9395ecbf2
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Padic.strassmann
 ---
 
 # Strassmann

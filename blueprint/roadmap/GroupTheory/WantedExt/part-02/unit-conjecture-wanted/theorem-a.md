@@ -2,6 +2,8 @@
 article_id: af_76feaaa83caf6266c6a8cb29
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.UnitConjectureWanted.UnitConjecture.theorem_A
 ---
 
 # Theorem A

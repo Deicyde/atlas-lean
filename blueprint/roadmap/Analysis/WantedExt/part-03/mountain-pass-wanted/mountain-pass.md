@@ -2,6 +2,8 @@
 article_id: af_c99ab082e54c678fa90d50d3
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.MountainPassWanted.Analysis.MountainPassProblem.mountain_pass
 ---
 
 # Mountain pass

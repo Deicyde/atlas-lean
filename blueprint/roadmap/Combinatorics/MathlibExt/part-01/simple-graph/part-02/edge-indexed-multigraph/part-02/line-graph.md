@@ -2,6 +2,8 @@
 article_id: af_1d492a5ac5bfcc3886397422
 declaration: def
 origin: cited
+statement: formalized
+lean: SimpleGraph.EdgeIndexedMultigraph.lineGraph
 ---
 
 # Line Graph

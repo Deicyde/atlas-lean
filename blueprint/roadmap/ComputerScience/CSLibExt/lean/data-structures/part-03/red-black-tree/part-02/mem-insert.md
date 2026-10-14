@@ -2,6 +2,9 @@
 article_id: af_997999694219feb3fcd80b09
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.mem_insert
 ---
 
 # Mem insert

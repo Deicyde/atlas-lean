@@ -2,6 +2,8 @@
 article_id: af_6c27841f70fbdd150c4be0ba
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Topology.KirkNormalStructureWanted.Topology.KirkNormalStructure.kirk_normal_structure
 ---
 
 # Kirk normal structure

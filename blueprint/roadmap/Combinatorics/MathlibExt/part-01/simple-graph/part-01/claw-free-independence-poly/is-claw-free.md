@@ -2,6 +2,8 @@
 article_id: af_17ef7acc6d9db86f762ea42e
 declaration: def
 origin: cited
+statement: formalized
+lean: SimpleGraph.IsClawFree
 ---
 
 # Is Claw Free

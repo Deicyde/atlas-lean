@@ -2,6 +2,8 @@
 article_id: af_f3a8b06e65a22a1f27f9cd40
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.steinerberger2015ImprovedUpperBound_holds
 ---
 
 # Steinerberger2015 Improved Upper Bound holds

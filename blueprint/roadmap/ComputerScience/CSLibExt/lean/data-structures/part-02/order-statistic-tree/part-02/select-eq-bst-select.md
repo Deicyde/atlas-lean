@@ -2,6 +2,9 @@
 article_id: af_af0f6323c97af6531e278ed4
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OrderStatisticTree.select_eq_bstSelect
 ---
 
 # Select eq bst Select

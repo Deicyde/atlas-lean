@@ -2,6 +2,8 @@
 article_id: af_c8164f57d3e2c218364effaa
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.DirichletSubconvexity.petrowYoungCubeFreeOneSixth_admissible
 ---
 
 # Petrow Young Cube Free One Sixth admissible

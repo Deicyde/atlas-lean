@@ -2,6 +2,8 @@
 article_id: af_641f9d86744f92cd4cdf5ac4
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsMorphic
 ---
 
 # Is Morphic

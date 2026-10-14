@@ -2,6 +2,8 @@
 article_id: af_c982a42131c04afbd383823f
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.weightedAffinePowerSum
 ---
 
 # Weighted Affine Power Sum

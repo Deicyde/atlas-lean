@@ -2,6 +2,9 @@
 article_id: af_dd3b4f847cc76a88c5b107a9
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.bucketSort_occupancy_mean
 ---
 
 # Bucket Sort occupancy mean

@@ -2,6 +2,8 @@
 article_id: af_15fa7b4446e757a8d5865723
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.RoucheWanted.ComplexAnalysis.rouche_zero_count_eq
 ---
 
 # Rouche Wanted

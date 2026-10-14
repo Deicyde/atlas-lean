@@ -2,6 +2,8 @@
 article_id: af_75105947106a6fe9d3a7989c
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.dusart_log_prime_sum
 ---
 
 # Dusart log prime sum

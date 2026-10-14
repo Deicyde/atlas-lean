@@ -2,6 +2,9 @@
 article_id: af_98ce0bbae78eddf6ce50c914
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Topology.Homotopy.BorsukUlamWanted.borsukUlam
 ---
 
 # Borsuk Ulam

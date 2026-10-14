@@ -2,6 +2,9 @@
 article_id: af_47336b25dddc1e787edf1da8
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.root_pruneAt
 ---
 
 # Root prune At

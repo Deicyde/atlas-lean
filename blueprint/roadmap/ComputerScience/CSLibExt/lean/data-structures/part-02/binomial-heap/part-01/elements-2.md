@@ -2,6 +2,8 @@
 article_id: af_0aabac346ec5c41f4c9a25eb
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BinomialForest.elements
 ---
 
 # Elements

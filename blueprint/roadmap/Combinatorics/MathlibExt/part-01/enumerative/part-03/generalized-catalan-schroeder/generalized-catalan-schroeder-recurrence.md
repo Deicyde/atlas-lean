@@ -2,6 +2,9 @@
 article_id: af_1e18997298815ed11bd95df1
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.generalizedCatalanSchroeder_recurrence_functionalEquation
 ---
 
 # Generalized Catalan Schroeder recurrence functional Equation

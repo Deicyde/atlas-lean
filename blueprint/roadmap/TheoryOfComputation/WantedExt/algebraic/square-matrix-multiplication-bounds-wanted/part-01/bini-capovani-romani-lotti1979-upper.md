@@ -2,6 +2,8 @@
 article_id: af_25bde8da1791fd401e46ada9
 declaration: theorem
 origin: cited
+statement: formalized
+lean: Cslib.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted.biniCapovaniRomaniLotti1979Upper
 ---
 
 # Bini Capovani Romani Lotti1979 Upper

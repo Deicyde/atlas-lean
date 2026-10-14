@@ -2,6 +2,9 @@
 article_id: af_c52daca6c11ea93d5b36cd4d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.collapseOutside_of_mem
 ---
 
 # Collapse Outside of mem

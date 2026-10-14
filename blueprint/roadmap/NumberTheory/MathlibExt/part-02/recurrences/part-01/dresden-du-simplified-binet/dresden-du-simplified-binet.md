@@ -2,6 +2,9 @@
 article_id: af_1ba73da99fe846113af58e56
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.dresden_du_simplified_binet
 ---
 
 # Dresden du simplified binet

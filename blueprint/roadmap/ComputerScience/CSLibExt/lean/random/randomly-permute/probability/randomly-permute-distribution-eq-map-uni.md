@@ -2,6 +2,9 @@
 article_id: af_e2a29e1b5ef67d08966daa39
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.randomlyPermuteDistribution_eq_map_uniform
 ---
 
 # Randomly Permute Distribution eq map uniform

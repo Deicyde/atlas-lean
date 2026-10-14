@@ -2,6 +2,9 @@
 article_id: af_1b31a7129fef84f6116faefd
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.simsekNumber_eq_sum
 ---
 
 # Simsek Number eq sum

@@ -2,6 +2,9 @@
 article_id: af_4f9a11dfc920f6aa43aeaf87
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.VanEmdeBoas.predecessor_empty
 ---
 
 # Predecessor empty

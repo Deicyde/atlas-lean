@@ -2,6 +2,8 @@
 article_id: af_40a1d4e591cc98ddffa26738
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.MartinetTotallyRealTowersWanted.NumberTheory.exists_totallyReal_discr_le
 ---
 
 # Martinet Totally Real Towers Wanted

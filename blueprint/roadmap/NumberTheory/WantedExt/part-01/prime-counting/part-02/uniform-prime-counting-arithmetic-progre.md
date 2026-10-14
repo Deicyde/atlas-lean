@@ -2,6 +2,8 @@
 article_id: af_d7c57fb7d0c270f648aa0b3a
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.PrimeCounting.UniformPrimeCountingWanted.uniform_prime_counting_arithmetic_progression
 ---
 
 # Uniform Prime Counting Wanted

@@ -2,6 +2,9 @@
 article_id: af_6647d5eb404725d7c1afb310
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.redOk_delete
 ---
 
 # Red Ok delete

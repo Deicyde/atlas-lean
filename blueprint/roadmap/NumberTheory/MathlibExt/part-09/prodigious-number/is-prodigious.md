@@ -2,6 +2,8 @@
 article_id: af_c5a41f49af684ca6675e9670
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsProdigious
 ---
 
 # Is Prodigious

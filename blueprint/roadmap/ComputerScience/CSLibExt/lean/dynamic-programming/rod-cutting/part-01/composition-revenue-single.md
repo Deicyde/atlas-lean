@@ -2,6 +2,9 @@
 article_id: af_856eab59420e636e17cc10b4
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RodCutting.compositionRevenue_single
 ---
 
 # Composition Revenue single

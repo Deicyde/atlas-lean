@@ -2,6 +2,9 @@
 article_id: af_266c4e28be8894493ac8c637
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.CuckooHashing.lookup_eq_some_iff_stored
 ---
 
 # Lookup eq some iff stored

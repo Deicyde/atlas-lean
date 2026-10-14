@@ -2,6 +2,8 @@
 article_id: af_756654e5bbc53718e472f55c
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.watson_inverse_factorial_series
 ---
 
 # Watson Inverse Factorial

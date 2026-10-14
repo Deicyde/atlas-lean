@@ -2,6 +2,8 @@
 article_id: af_fe558cce6e7b85e7a36e8f48
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsTaylorAdmissibleSequence
 ---
 
 # Taylor Admissible Sequence

@@ -2,6 +2,9 @@
 article_id: af_7cb545e4e7744cdd5f47292d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.kGeneralizedLucas_one
 ---
 
 # K Generalized Lucas one

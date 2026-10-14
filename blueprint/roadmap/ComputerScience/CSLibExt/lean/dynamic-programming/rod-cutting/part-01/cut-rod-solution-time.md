@@ -2,6 +2,9 @@
 article_id: af_6c22637c9b7b7842dc2461af
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RodCutting.cutRodSolution_time
 ---
 
 # Cut Rod Solution time

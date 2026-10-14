@@ -2,6 +2,9 @@
 article_id: af_9fe570bc975687732630b5d5
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.contractOutside_adj_none
 ---
 
 # Contract Outside adj none

@@ -2,6 +2,8 @@
 article_id: af_f7b8d6c2c841fb9703579796
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Matrix.rectangularMatrixAccumulate
 ---
 
 # Rectangular Matrix Accumulate

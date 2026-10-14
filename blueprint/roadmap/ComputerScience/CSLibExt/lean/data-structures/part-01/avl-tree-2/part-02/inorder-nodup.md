@@ -2,6 +2,9 @@
 article_id: af_3b70ff854338effca35b9b7e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.inorder_nodup
 ---
 
 # Inorder nodup

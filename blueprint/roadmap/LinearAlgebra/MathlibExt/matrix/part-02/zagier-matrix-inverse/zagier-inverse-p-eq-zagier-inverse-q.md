@@ -2,6 +2,9 @@
 article_id: af_47d202cb42a528c8244ea62c
 declaration: lemma
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.zagierInverseP_eq_zagierInverseQ
 ---
 
 # Zagier Inverse P eq zagier Inverse Q

@@ -2,6 +2,8 @@
 article_id: af_9b52c177c54485db1626b7bc
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.LruCache.put
 ---
 
 # Put

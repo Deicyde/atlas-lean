@@ -2,6 +2,9 @@
 article_id: af_017f6f28d65f52fd5c706997
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.SplayTree.mem_split_of_mem
 ---
 
 # Mem split of mem

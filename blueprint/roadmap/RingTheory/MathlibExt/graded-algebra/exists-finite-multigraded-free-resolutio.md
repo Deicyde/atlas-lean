@@ -2,6 +2,9 @@
 article_id: af_d3eccaba041ab4962576bcc8
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.exists_finite_multigraded_free_resolution
 ---
 
 # Multigraded Hilbert Syzygy

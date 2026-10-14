@@ -2,6 +2,9 @@
 article_id: af_031a2006d30de638422674dc
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Algebra.MvPolynomialStable._root_.MvPolynomial.IsStable.roots_im_nonpos_univariateSpecialization
 ---
 
 # Roots im nonpos univariate Specialization

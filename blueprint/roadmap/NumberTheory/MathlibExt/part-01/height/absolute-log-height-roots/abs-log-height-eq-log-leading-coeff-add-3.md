@@ -2,6 +2,9 @@
 article_id: af_4e05af141b49797c7c785c86
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.Height.AbsoluteWanted.absLogHeight₁_eq_log_leadingCoeff_add_sum_log_roots
 ---
 
 # Abs Log Height₁ eq log leading Coeff add sum log roots

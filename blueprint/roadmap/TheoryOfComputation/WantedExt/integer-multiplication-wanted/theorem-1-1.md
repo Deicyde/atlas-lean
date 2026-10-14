@@ -2,6 +2,8 @@
 article_id: af_a2a3542bdbab24eecdc9806c
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.TheoryOfComputation.IntegerMultiplicationWanted.IntegerMultiplication.theorem_1_1
 ---
 
 # Theorem 1 1

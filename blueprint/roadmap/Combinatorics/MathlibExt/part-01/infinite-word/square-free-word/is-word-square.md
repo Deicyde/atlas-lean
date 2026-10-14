@@ -2,6 +2,8 @@
 article_id: af_7c1b6b9e8f11b236a5eea544
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsWordSquare
 ---
 
 # Is Word Square

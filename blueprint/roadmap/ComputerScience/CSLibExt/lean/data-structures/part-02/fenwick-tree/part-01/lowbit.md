@@ -2,6 +2,8 @@
 article_id: af_641f869d9948c05dc908eae3
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.FenwickTree.lowbit
 ---
 
 # Lowbit

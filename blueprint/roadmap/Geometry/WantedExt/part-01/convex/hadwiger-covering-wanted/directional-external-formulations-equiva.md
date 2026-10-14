@@ -2,6 +2,8 @@
 article_id: af_c49f99329fd4243ec16e48ff
 declaration: theorem
 origin: cited
+statement: formalized
+lean: ConvexCovering.directionalExternalFormulationsEquivalent
 ---
 
 # Directional External Formulations Equivalent

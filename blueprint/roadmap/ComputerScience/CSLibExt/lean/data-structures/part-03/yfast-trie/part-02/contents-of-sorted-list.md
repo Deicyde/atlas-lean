@@ -2,6 +2,9 @@
 article_id: af_7fedc2e9a2473896efeb5db8
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.GroupedYFastTrie.contents_ofSortedList
 ---
 
 # Contents of Sorted List

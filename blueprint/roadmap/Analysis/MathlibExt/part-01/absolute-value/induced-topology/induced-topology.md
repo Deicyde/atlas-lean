@@ -2,6 +2,8 @@
 article_id: af_9a10d0af32896c75e1703ee4
 declaration: def
 origin: cited
+statement: formalized
+lean: AbsoluteValue.inducedTopology
 ---
 
 # Induced Topology

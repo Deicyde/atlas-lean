@@ -2,6 +2,9 @@
 article_id: af_45c0a07e96b5ae925c1e0edf
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciHeap.decreaseKey_eq_self_of_cut_none
 ---
 
 # Decrease Key eq self of cut none

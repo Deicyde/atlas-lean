@@ -2,6 +2,8 @@
 article_id: af_cf06650dc90e45ccdb5cb6df
 declaration: inductive
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.TwoThreeTree.Overflow
 ---
 
 # Overflow

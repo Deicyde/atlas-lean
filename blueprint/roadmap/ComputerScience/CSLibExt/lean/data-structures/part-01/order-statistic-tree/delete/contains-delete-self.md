@@ -2,6 +2,9 @@
 article_id: af_123cded0186d2927b14bea6f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OrderStatisticTree.contains_delete_self
 ---
 
 # Contains delete self

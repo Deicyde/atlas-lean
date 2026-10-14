@@ -2,6 +2,8 @@
 article_id: af_71ec0ef4d2fb181134a8fbf0
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.PrimeCounting.brunConstant_lower_bound
 ---
 
 # Brun Constant lower bound

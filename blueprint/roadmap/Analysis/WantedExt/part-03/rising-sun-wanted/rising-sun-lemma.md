@@ -2,6 +2,8 @@
 article_id: af_8201ddb1efd16cea729b2229
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.RisingSunWanted.Analysis.RisingSun.rising_sun_lemma
 ---
 
 # Rising sun lemma

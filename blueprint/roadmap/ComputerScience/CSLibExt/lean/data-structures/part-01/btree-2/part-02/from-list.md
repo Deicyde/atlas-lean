@@ -2,6 +2,8 @@
 article_id: af_c97eaf5e6edbef92ec809449
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BTree.fromList
 ---
 
 # From List

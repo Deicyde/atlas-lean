@@ -2,6 +2,8 @@
 article_id: af_fe6811ec0c9fa868b760348c
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.K5FreeTriangleFreeSubsetWanted.conjecture_refuted
 ---
 
 # Conjecture refuted

@@ -2,6 +2,8 @@
 article_id: af_0ecea5ebfdd1f6f7a248be4c
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.axler_nth_prime_upper_bound
 ---
 
 # Axler Nth Prime Upper Bound Wanted

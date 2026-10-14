@@ -2,6 +2,9 @@
 article_id: af_84c9ba66df69c561e661e681
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: AdditiveCombinatorics.orderedRepresentationCount_pos_iff
 ---
 
 # Ordered Representation Count pos iff

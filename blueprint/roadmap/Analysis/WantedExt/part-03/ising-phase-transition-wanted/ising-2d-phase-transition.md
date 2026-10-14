@@ -2,6 +2,8 @@
 article_id: af_c337285408936ecfaa30cd75
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.IsingPhaseTransitionWanted.Analysis.IsingPhaseTransition.ising_2d_phase_transition
 ---
 
 # Ising 2d phase transition

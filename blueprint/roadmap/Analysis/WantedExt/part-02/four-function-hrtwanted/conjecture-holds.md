@@ -2,6 +2,8 @@
 article_id: af_f5b21ea44752bf22b0273acb
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.FourFunctionHRTWanted.conjecture_holds
 ---
 
 # Conjecture holds

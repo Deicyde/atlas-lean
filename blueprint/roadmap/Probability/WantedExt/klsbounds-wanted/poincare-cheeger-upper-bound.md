@@ -2,6 +2,8 @@
 article_id: af_565d9dd126dc6b63e8b8cf30
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.KLS.poincare_cheeger_upper_bound
 ---
 
 # Poincare cheeger upper bound

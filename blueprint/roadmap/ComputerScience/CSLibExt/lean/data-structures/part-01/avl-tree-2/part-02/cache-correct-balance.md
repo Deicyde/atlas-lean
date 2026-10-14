@@ -2,6 +2,9 @@
 article_id: af_c40caa84b9f87567ef2e9afc
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.cacheCorrect_balance
 ---
 
 # Cache Correct balance

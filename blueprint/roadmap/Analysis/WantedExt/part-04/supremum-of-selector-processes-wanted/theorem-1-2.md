@@ -2,6 +2,8 @@
 article_id: af_064346dcd445c57f211b85fe
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.SupremumOfSelectorProcessesWanted.SupremumOfSelectorProcesses.theorem_1_2
 ---
 
 # Theorem 1 2

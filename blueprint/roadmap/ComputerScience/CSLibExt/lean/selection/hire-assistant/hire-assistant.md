@@ -2,6 +2,8 @@
 article_id: af_354ffe21bda46084ecd356ed
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.TimeM.hireAssistant
 ---
 
 # Hire Assistant

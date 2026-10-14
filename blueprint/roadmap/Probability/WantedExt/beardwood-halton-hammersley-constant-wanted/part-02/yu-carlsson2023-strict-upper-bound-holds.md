@@ -2,6 +2,8 @@
 article_id: af_6d4e9772349941fc64914c39
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.BeardwoodHaltonHammersleyConstantWanted.yuCarlsson2023StrictUpperBound_holds
 ---
 
 # Yu Carlsson2023 Strict Upper Bound holds

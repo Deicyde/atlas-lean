@@ -2,6 +2,8 @@
 article_id: af_a112679f8a302fe77e49e64c
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.squares_aaabb_classification
 ---
 
 # Squares Aaabb Classification Wanted

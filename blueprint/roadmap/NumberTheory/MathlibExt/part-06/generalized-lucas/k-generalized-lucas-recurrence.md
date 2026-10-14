@@ -2,6 +2,9 @@
 article_id: af_d10705da73e437ad3a582d78
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.kGeneralizedLucas_recurrence
 ---
 
 # K Generalized Lucas recurrence

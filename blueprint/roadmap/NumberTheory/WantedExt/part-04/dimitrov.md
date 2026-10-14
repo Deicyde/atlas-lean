@@ -2,6 +2,8 @@
 article_id: af_2b81724412d5d66c545afefe
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.SchinzelZassenhausWanted.NumberTheory.dimitrov
 ---
 
 # Schinzel Zassenhaus Wanted

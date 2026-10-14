@@ -2,6 +2,9 @@
 article_id: af_d6c7f8e8649e1dc9007c32c4
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.takagiNewdef_eq
 ---
 
 # Takagi Newdef eq

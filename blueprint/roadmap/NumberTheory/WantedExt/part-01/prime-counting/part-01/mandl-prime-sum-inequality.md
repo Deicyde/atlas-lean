@@ -2,6 +2,8 @@
 article_id: af_428d9e2e569349ce9a2c8105
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.mandl_prime_sum_inequality
 ---
 
 # Mandl Prime Sum Wanted

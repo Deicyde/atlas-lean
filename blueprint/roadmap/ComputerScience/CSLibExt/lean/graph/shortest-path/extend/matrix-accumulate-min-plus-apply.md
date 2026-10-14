@@ -2,6 +2,9 @@
 article_id: af_fb21619b4966c52b5424d038
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Matrix.matrixAccumulate_minPlus_apply
 ---
 
 # Matrix Accumulate min Plus apply

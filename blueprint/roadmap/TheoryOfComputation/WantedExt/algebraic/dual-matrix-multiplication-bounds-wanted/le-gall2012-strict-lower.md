@@ -2,6 +2,8 @@
 article_id: af_ad0ebb778b1fc3c1dbafd7da
 declaration: theorem
 origin: cited
+statement: formalized
+lean: Cslib.Complexity.Algebraic.DualMatrixMultiplicationBoundsWanted.leGall2012StrictLower
 ---
 
 # Le Gall2012 Strict Lower

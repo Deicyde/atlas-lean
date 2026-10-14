@@ -2,6 +2,9 @@
 article_id: af_39604126005f00c8af9be812
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Polynomial.exists_maxRealRoot_le_weightedSum_of_segment_realRooted
 ---
 
 # Exists max Real Root le weighted Sum of segment real Rooted

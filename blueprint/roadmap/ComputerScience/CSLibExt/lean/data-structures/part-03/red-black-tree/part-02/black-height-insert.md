@@ -2,6 +2,9 @@
 article_id: af_addeea399f57945cdbbbf8e3
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.blackHeight_insert
 ---
 
 # Black Height insert

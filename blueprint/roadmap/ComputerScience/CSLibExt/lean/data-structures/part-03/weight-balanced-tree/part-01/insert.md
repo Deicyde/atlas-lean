@@ -2,6 +2,8 @@
 article_id: af_ade2b2dbaecdf23c592749ae
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.WeightBalancedTree.insert
 ---
 
 # Insert

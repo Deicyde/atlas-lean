@@ -2,6 +2,9 @@
 article_id: af_16796b2f014f3792274e45cb
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BTree.IsBTree.two_le
 ---
 
 # Two le

@@ -2,6 +2,8 @@
 article_id: af_b194e3672388e81d3693b428
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Topology.Poincare3DTopologicalWanted.Topology.poincare_3d_topological
 ---
 
 # Poincare3 DTopological Wanted

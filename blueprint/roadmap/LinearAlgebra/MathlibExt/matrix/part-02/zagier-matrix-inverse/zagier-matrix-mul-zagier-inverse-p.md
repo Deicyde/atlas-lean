@@ -2,6 +2,9 @@
 article_id: af_8c373b17a18e2bfd4db52af5
 declaration: lemma
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.zagierMatrix_mul_zagierInverseP
 ---
 
 # Zagier Matrix mul zagier Inverse P

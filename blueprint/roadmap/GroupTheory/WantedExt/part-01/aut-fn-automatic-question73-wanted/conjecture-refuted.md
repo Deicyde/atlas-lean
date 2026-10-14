@@ -2,6 +2,8 @@
 article_id: af_5292e976458d40b8d8dbbd27
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.AutFnAutomaticQuestion73Wanted.conjecture_refuted
 ---
 
 # Conjecture refuted

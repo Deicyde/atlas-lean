@@ -2,6 +2,9 @@
 article_id: af_396359106d749853d9cf0db3
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.hireAssistant_hires
 ---
 
 # Hire Assistant hires

@@ -2,6 +2,9 @@
 article_id: af_7c476b5858ee7682a0686822
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.listPrepend_disjoint_represents
 ---
 
 # List Prepend disjoint represents

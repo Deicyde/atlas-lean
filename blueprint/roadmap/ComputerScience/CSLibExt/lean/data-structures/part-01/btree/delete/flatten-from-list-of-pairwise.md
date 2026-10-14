@@ -2,6 +2,9 @@
 article_id: af_c9486f6e64aa26956e05cb9e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BTree.flatten_fromList_of_pairwise
 ---
 
 # Flatten from List of pairwise

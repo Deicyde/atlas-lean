@@ -2,6 +2,8 @@
 article_id: af_46f0ecdfbd03cfd005729bba
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.orderedInsert
 ---
 
 # Ordered Insert

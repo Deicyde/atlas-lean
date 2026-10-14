@@ -2,6 +2,8 @@
 article_id: af_6466ae527c6431bd95b49358
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Kruskal.Acyclic
 ---
 
 # Acyclic

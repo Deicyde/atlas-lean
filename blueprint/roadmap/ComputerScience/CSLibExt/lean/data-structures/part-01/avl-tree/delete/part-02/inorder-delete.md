@@ -2,6 +2,9 @@
 article_id: af_86afaf7ec90794190776bf18
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.inorder_delete
 ---
 
 # Inorder delete

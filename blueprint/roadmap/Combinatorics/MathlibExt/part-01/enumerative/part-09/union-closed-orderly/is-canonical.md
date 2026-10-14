@@ -2,6 +2,8 @@
 article_id: af_4bf43f2459578c4298440df4
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsCanonical
 ---
 
 # Is Canonical

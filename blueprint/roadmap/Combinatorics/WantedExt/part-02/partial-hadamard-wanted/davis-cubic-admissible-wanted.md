@@ -2,6 +2,8 @@
 article_id: af_a957928cc27167b8bccd576e
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.PartialHadamardWanted.davisCubicAdmissible_wanted
 ---
 
 # Davis Cubic Admissible wanted

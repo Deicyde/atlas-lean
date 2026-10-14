@@ -2,6 +2,9 @@
 article_id: af_e59568c5902fb9515ef75411
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.GroupedYFastTrie.successor_eq_some_iff
 ---
 
 # Successor eq some iff

@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: Entry10Centralbinomialfull.chapter6Entry14MinusSum_error_le
+lean: MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry10Centralbinomialfull.chapter6Entry14MinusSum_error_le
 ---
 
 # Chapter6 Entry14 Minus Sum error le

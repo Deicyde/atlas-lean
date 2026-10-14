@@ -2,6 +2,8 @@
 article_id: af_c6646768d1aa025518b7ddf3
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Topology.PiSixSphereThreeWanted.Topology.PiSixSphereThree.pi6_sphere_three_mulEquiv_zmod_twelve
 ---
 
 # Pi Six Sphere Three Wanted

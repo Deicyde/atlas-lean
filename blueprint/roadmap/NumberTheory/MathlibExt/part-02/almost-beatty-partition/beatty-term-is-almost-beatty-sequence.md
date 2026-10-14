@@ -2,6 +2,9 @@
 article_id: af_acb0decd654233ea10df24ad
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.beattyTerm_isAlmostBeattySequence
 ---
 
 # Beatty Term is Almost Beatty Sequence

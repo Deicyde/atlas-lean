@@ -2,6 +2,8 @@
 article_id: af_a16df4a532c1af4b9d1fe669
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.ComputerScience.GraphIsomorphismQuasipolynomialWanted.conjecture_holds
 ---
 
 # Conjecture holds

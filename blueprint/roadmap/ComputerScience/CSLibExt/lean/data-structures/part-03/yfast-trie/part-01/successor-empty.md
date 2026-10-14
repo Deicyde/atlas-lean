@@ -2,6 +2,9 @@
 article_id: af_f091a5ec1ff852659d44091a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.GroupedYFastTrie.successor_empty
 ---
 
 # Successor empty

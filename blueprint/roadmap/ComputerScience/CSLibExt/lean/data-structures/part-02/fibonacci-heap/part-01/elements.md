@@ -2,6 +2,8 @@
 article_id: af_0718cf89fa4d395c6f44ccdc
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.FibonacciTree.elements
 ---
 
 # Elements

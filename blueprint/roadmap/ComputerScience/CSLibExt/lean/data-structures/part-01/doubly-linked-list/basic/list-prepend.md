@@ -2,6 +2,8 @@
 article_id: af_a62a90c746e4c2fb638eda38
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.listPrepend
 ---
 
 # List Prepend

@@ -2,6 +2,9 @@
 article_id: af_5eb98016e6adc84cd916ff24
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.nodup_rootPath
 ---
 
 # Nodup root Path

@@ -2,6 +2,8 @@
 article_id: af_e741fb7fa2bbaf786cfa4acf
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.MatrixChain.Parenthesization.matrixIndices
 ---
 
 # Matrix Indices

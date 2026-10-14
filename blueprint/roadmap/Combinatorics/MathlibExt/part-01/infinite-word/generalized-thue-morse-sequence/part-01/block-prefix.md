@@ -2,6 +2,9 @@
 article_id: af_e22851a0216693c3b30c9203
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.GeneralizedThueMorse.block_prefix
 ---
 
 # Block prefix

@@ -2,6 +2,8 @@
 article_id: af_b06677d0bf06675c57648620
 declaration: theorem
 origin: cited
+statement: formalized
+lean: BerryEsseenWanted.vanBeek1972UpperBound_holds
 ---
 
 # Van Beek1972 Upper Bound holds

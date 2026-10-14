@@ -2,6 +2,8 @@
 article_id: af_c1e2e8da045d7430f63588e1
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.FrobeniusDeterminantWanted.RepresentationTheory.FrobeniusDeterminant.frobenius_group_determinant
 ---
 
 # Frobenius determinant theorem

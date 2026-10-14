@@ -2,6 +2,9 @@
 article_id: af_1dc4866b0ffac911e73849aa
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.VanEmdeBoas.predecessor_eq_none_iff
 ---
 
 # Predecessor eq none iff

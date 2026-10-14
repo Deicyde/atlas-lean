@@ -2,6 +2,8 @@
 article_id: af_09fc0c5f1328bc1ca2624936
 declaration: def
 origin: cited
+statement: formalized
+lean: SimpleGraph.Walk.IsLongestCycle
 ---
 
 # Longest Cycle

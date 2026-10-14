@@ -2,6 +2,8 @@
 article_id: af_69feeafb117278a68076a5d2
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.SpherePackingDensityFourWanted.upperBound_CE2003_Rogers_wanted
 ---
 
 # Upper Bound CE2003 Rogers wanted

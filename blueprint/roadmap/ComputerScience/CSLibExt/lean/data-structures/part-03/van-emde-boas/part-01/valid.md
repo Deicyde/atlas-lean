@@ -2,6 +2,8 @@
 article_id: af_2b55f0234a30a46bae4e7c94
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.VanEmdeBoas.Valid
 ---
 
 # Valid

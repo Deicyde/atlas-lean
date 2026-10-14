@@ -2,6 +2,8 @@
 article_id: af_2a2d92a946fd57bb81715f5f
 declaration: def
 origin: cited
+statement: formalized
+lean: MvPolynomial.IsRealStable
 ---
 
 # Is Real Stable

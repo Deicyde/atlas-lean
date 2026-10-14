@@ -2,6 +2,9 @@
 article_id: af_36c929cd717683456ae3b0bb
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.Connected.exists_isEulerian
 ---
 
 # Exists is Eulerian

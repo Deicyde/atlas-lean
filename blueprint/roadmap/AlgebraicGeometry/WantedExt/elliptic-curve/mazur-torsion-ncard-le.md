@@ -2,6 +2,8 @@
 article_id: af_c4a75c381de2cc43d0345e9e
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.mazur_torsion_ncard_le
 ---
 
 # Mazur's torsion theorem

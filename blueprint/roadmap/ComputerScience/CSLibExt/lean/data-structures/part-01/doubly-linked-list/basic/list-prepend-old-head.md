@@ -2,6 +2,9 @@
 article_id: af_363097fdc2a75f8bb41ef0e1
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.listPrepend_oldHead
 ---
 
 # List Prepend old Head

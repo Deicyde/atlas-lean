@@ -2,6 +2,8 @@
 article_id: af_384bc52f5ac52d263ec0b5aa
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.pascalEntry
 ---
 
 # Pascal Entry

@@ -2,6 +2,8 @@
 article_id: af_3c114147abdad0ccaf22d8c8
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Topology.AsphericalHomologySphereWanted.Topology.aspherical_integer_homology_four_sphere
 ---
 
 # Aspherical integer homology four sphere

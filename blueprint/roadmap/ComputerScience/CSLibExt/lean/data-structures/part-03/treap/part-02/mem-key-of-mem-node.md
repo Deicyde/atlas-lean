@@ -2,6 +2,9 @@
 article_id: af_5d5a5173da6d86e3644b684e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.memKey_of_memNode
 ---
 
 # Mem Key of mem Node

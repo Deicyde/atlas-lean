@@ -2,6 +2,9 @@
 article_id: af_f103790e6f741659be7c952e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.SplayTree.numNodes_splay
 ---
 
 # Num Nodes splay

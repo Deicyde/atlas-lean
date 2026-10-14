@@ -2,6 +2,8 @@
 article_id: af_1d567485e904de59ad0c9482
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.GoodLTCodesWanted.GoodLTC.theorem_1_2
 ---
 
 # Theorem 1 2

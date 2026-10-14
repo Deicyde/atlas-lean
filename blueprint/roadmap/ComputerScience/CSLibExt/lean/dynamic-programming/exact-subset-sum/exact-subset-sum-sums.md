@@ -2,6 +2,8 @@
 article_id: af_e716f3d5611cb290e7a36225
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.ExactSubsetSum.exactSubsetSumSums
 ---
 
 # Exact Subset Sum Sums

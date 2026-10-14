@@ -2,6 +2,8 @@
 article_id: af_1655b0c816e8a3e85acf2b1b
 declaration: structure
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.SkipList
 ---
 
 # Skip List

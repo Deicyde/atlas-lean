@@ -2,6 +2,9 @@
 article_id: af_9a1f77ccd924a298cfcc2c17
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.EdgeIndexedMultigraph.exists_indexedEulerian
 ---
 
 # Exists indexed Eulerian

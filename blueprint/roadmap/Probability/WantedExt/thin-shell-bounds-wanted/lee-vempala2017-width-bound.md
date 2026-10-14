@@ -2,6 +2,8 @@
 article_id: af_bcc1120d017dc3ecb5a85dc7
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Probability.ThinShell.leeVempala2017_width_bound
 ---
 
 # Lee Vempala2017 width bound

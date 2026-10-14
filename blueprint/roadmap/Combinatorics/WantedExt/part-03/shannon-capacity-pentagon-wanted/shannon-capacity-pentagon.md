@@ -2,6 +2,8 @@
 article_id: af_bb4ac1aba9cdfa6578b03a67
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.ShannonCapacityPentagonWanted.Combinatorics.ShannonCapacityPentagon.shannon_capacity_pentagon
 ---
 
 # Shannon capacity pentagon

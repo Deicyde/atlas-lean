@@ -2,6 +2,8 @@
 article_id: af_9a7230642b402e576eb4ab56
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.cook_levin_SAT_np_complete
 ---
 
 # Cook Levin SATWanted

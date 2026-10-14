@@ -2,6 +2,8 @@
 article_id: af_5b837ecc2caad8ed5057af77
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsAlmostBeattyPartition
 ---
 
 # Is Almost Beatty Partition

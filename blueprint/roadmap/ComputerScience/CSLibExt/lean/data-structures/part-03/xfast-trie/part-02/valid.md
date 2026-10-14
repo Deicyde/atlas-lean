@@ -2,6 +2,8 @@
 article_id: af_3802ca5bae1e9026ca3b465f
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.YFastTrie.Valid
 ---
 
 # Valid

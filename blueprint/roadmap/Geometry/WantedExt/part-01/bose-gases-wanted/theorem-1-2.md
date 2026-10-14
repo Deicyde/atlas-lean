@@ -2,6 +2,8 @@
 article_id: af_a8bbf9a17d66c7a52348182d
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.BoseGasesWanted.BoseGases.theorem_1_2
 ---
 
 # Theorem 1 2

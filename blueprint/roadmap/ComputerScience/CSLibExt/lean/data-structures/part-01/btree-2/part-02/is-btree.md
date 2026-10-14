@@ -2,6 +2,8 @@
 article_id: af_2eba28d9da2c07fa0d150ff6
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BTree.IsBTree
 ---
 
 # Is BTree

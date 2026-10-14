@@ -2,6 +2,8 @@
 article_id: af_8ba276792db72d34463d6c1d
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.OpenAddressing.doubleHashProbe
 ---
 
 # Double Hash Probe

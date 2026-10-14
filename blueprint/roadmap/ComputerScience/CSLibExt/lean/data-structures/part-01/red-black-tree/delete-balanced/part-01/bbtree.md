@@ -2,6 +2,8 @@
 article_id: af_7e11bb161fe330a1f6cf31ba
 declaration: inductive
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.DeleteBalanced.BBTree
 ---
 
 # BBTree

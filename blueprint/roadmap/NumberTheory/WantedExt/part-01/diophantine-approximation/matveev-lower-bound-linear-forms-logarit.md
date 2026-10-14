@@ -2,6 +2,8 @@
 article_id: af_637bfec33e285dc4bed4bbef
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.matveev_lower_bound_linear_forms_logarithms
 ---
 
 # Matveev Linear Forms Wanted

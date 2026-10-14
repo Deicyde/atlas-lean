@@ -2,6 +2,8 @@
 article_id: af_f90f738fa79f48de823bdfb7
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.DeleteBalanced.incrBlack
 ---
 
 # Incr Black

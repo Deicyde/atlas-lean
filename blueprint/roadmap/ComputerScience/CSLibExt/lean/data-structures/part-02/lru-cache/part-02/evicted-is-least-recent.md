@@ -2,6 +2,9 @@
 article_id: af_ffc50e5378668a57c2f5193a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LruCache.evicted_is_least_recent
 ---
 
 # Evicted is least recent

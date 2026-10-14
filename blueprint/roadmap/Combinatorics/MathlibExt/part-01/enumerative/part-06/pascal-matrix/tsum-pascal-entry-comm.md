@@ -2,6 +2,9 @@
 article_id: af_93eac10bcc41ab1e486ba871
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.tsum_pascalEntry_comm
 ---
 
 # Tsum pascal Entry comm

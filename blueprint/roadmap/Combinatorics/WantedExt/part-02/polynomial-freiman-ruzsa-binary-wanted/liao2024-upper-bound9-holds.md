@@ -2,6 +2,8 @@
 article_id: af_2946fb63bebb9d5a4735663d
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.PolynomialFreimanRuzsaBinaryWanted.liao2024UpperBound9_holds
 ---
 
 # Liao2024 Upper Bound9 holds

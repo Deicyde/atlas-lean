@@ -2,6 +2,8 @@
 article_id: af_1958a776a87727422e2ec015
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.SchmidtSubspaceWanted.NumberTheory.SchmidtSubspace.schmidt_subspace
 ---
 
 # Schmidt Subspace Wanted

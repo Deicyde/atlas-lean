@@ -2,6 +2,7 @@
 article_id: af_6b982c98d402698ce11ba3f9
 declaration: def
 origin: cited
+lean: MathlibExt.Geometry.BoseGasesWanted.BoseGases.𝓒
 ---
 
 # 𝓒

@@ -2,6 +2,8 @@
 article_id: af_3712dbc36d4708231eab44b9
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.theorem_1_17_ii
 ---
 
 # Theorem 1 17 ii

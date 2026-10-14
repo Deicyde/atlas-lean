@@ -2,6 +2,9 @@
 article_id: af_c7ebb1b1f0bd4dea11073f12
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Kruskal.kruskal_pairwise_key_le
 ---
 
 # Kruskal pairwise key le

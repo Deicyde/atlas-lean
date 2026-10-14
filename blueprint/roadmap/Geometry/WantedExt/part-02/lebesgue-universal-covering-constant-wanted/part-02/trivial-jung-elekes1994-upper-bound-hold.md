@@ -2,6 +2,8 @@
 article_id: af_2653c89fbf6cf9a7f83ac23c
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.trivialJungElekes1994UpperBound_holds
 ---
 
 # Trivial Jung Elekes1994 Upper Bound holds

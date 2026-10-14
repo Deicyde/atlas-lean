@@ -2,6 +2,8 @@
 article_id: af_90474d62cc1d0fdc43fa7a3a
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Topology.HopfInvariantOneWanted.Topology.HopfInvariantOne.hSpace_sphere_iff
 ---
 
 # Hopf Invariant One Wanted

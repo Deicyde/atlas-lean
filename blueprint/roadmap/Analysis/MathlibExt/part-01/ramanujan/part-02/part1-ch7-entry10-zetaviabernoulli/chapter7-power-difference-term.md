@@ -2,6 +2,8 @@
 article_id: af_d8719b96c590b38c3b9170fb
 declaration: abbrev
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7PowerDifferenceTerm
 ---
 
 # Chapter7 Power Difference Term

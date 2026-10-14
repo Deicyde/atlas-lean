@@ -2,6 +2,8 @@
 article_id: af_78d6918571f94243aa830a6e
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.treePaths
 ---
 
 # Tree Paths

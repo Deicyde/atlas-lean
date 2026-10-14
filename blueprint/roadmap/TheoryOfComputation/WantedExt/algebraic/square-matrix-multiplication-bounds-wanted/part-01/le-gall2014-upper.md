@@ -2,6 +2,8 @@
 article_id: af_5686ece404f0950398ef14aa
 declaration: theorem
 origin: cited
+statement: formalized
+lean: Cslib.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted.leGall2014Upper
 ---
 
 # Le Gall2014 Upper

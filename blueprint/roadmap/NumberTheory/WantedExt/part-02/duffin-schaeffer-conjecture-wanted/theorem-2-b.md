@@ -2,6 +2,8 @@
 article_id: af_47b0bb3c196095787f9ba41a
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.DuffinSchaefferConjectureWanted.DuffinSchaefferConjecture.theorem_2_b
 ---
 
 # Theorem 2 b

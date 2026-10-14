@@ -2,6 +2,8 @@
 article_id: af_98cf2e26a2cfe0afa794891d
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.BrauerCharacterInCyclotomicWanted.RepresentationTheory.brauer_character_in_cyclotomic
 ---
 
 # Brauer Character In Cyclotomic Wanted

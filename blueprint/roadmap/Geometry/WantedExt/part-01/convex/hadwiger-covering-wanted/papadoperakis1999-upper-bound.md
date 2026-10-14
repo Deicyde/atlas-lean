@@ -2,6 +2,8 @@
 article_id: af_10358fb0d1d970a23039b43a
 declaration: theorem
 origin: cited
+statement: formalized
+lean: ConvexCovering.papadoperakis1999UpperBound
 ---
 
 # Papadoperakis1999 Upper Bound

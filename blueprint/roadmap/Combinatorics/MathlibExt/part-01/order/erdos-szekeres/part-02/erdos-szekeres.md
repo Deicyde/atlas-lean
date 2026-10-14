@@ -2,6 +2,9 @@
 article_id: af_94828fb026d13a50087bbd20
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.erdos_szekeres
 ---
 
 # Erdős–Szekeres

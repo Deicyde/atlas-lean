@@ -2,6 +2,8 @@
 article_id: af_5d9dbc82ddeff78cd4bd0ef3
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.BeurlingAhlforsWanted.banuelosJanakiramanUpperBound_wanted
 ---
 
 # Banuelos Janakiraman Upper Bound wanted

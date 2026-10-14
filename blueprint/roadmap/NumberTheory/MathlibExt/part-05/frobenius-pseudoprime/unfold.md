@@ -2,6 +2,9 @@
 article_id: af_07364f65d340434bfb058363
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Polynomial.IsGreatestCommonMonicDivisor.unfold
 ---
 
 # Unfold

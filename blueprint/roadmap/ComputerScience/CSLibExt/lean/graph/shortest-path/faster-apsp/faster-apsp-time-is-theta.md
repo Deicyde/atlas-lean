@@ -2,6 +2,9 @@
 article_id: af_80d85772b6d21c8df7d67b1f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Matrix.fasterAPSP_time_isTheta
 ---
 
 # Complexity

@@ -2,6 +2,9 @@
 article_id: af_1d3562a4eb75864b2c215d1a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.generalizedExtremalNumber_eq_sup
 ---
 
 # Generalized Extremal Number eq sup

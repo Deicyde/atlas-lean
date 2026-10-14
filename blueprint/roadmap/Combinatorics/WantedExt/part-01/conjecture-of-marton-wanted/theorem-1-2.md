@@ -2,6 +2,8 @@
 article_id: af_731ab71428b2349dd892b072
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.ConjectureOfMartonWanted.ConjectureOfMarton.theorem_1_2
 ---
 
 # Theorem 1 2

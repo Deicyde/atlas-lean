@@ -2,6 +2,9 @@
 article_id: af_4c1fc0d025fe121d2aebd751
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinomialHeap.deleteMin_eq_none_iff
 ---
 
 # Delete Min eq none iff

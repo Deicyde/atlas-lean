@@ -2,6 +2,8 @@
 article_id: af_ef9537d7d85d6fb2d0b0263d
 declaration: def
 origin: cited
+statement: formalized
+lean: SimpleGraph.EdgeIndexedMultigraph.IndexedWalk.IsEulerian
 ---
 
 # Is Eulerian

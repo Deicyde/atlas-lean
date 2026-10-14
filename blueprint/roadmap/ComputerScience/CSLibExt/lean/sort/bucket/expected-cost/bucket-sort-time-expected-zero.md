@@ -2,6 +2,9 @@
 article_id: af_431ddff8776be2c38afc09a9
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.bucketSort_time_expected_zero
 ---
 
 # Bucket Sort time expected zero

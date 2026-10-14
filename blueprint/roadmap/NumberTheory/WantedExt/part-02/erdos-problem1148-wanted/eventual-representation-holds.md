@@ -2,6 +2,8 @@
 article_id: af_012218adc317a429ced6a733
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.ErdosProblem1148Wanted.eventualRepresentation_holds
 ---
 
 # Eventual Representation holds

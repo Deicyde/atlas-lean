@@ -2,6 +2,8 @@
 article_id: af_2f795341b2461ff98bd3a658
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Analysis.FractalUncertaintyWanted.FractalUncertainty.theorem_1_1
 ---
 
 # Theorem 1 1

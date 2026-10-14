@@ -2,6 +2,9 @@
 article_id: af_d42f06910551fe6e1e57fe48
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciTree.degree_link_of_eq
 ---
 
 # Degree link of eq

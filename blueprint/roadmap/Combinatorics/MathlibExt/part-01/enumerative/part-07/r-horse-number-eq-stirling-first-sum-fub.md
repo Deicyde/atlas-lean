@@ -2,6 +2,9 @@
 article_id: af_0c08b38e6d40bc4decb0ff5b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.rHorseNumber_eq_stirlingFirst_sum_fubini
 ---
 
 # RHorse Number Fubini

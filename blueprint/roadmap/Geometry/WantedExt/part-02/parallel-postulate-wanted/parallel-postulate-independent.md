@@ -2,6 +2,8 @@
 article_id: af_31fcd593d85fa2d0ada121da
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.ParallelPostulateWanted.Geometry.parallel_postulate_independent
 ---
 
 # Parallel postulate independent

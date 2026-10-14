@@ -2,6 +2,9 @@
 article_id: af_c10999534c0a3376916ca463
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.GroupTheory.JordanLinearGroupsWanted.jordan_linear_groups
 ---
 
 # Jordan Linear Groups

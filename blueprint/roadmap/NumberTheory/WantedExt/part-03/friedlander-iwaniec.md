@@ -2,6 +2,8 @@
 article_id: af_a26e678eaaefef80656f152c
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.FriedlanderIwaniecWanted.NumberTheory.FriedlanderIwaniec.friedlander_iwaniec
 ---
 
 # Friedlander Iwaniec Wanted

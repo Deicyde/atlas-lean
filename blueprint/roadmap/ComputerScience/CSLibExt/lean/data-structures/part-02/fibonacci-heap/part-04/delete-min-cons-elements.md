@@ -2,6 +2,9 @@
 article_id: af_26aff08c4eaf50ccae20dc85
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciHeap.deleteMin_cons_elements
 ---
 
 # Delete Min cons elements

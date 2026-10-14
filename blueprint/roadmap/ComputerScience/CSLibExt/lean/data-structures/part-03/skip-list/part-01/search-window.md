@@ -2,6 +2,8 @@
 article_id: af_b363b7a0a3db97aa431b2601
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.SkipList.searchWindow
 ---
 
 # Search Window

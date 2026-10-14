@@ -2,6 +2,9 @@
 article_id: af_c3d818eb2d056ce839ef2d95
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: TuranSystem.le_of_isTuran
 ---
 
 # Le of is Turan

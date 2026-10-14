@@ -2,6 +2,9 @@
 article_id: af_dd453993ef9b44185e3296f3
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.NumberTheory.PrimeCounting.weightedLargeSieve
 ---
 
 # Weighted Large Sieve

@@ -2,6 +2,8 @@
 article_id: af_8ecd8ed05fb15536aca24a45
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.greens_theorem
 ---
 
 # Greens Theorem Wanted

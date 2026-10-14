@@ -2,6 +2,8 @@
 article_id: af_a31dfb666ec749f3fbad3092
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.FibonacciForest.SortedDegrees
 ---
 
 # Sorted Degrees

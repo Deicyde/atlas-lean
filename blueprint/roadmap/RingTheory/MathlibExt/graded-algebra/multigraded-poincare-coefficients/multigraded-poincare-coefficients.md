@@ -2,6 +2,8 @@
 article_id: af_be6e8b0f8179cd43484cd345
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.multigradedPoincareCoefficients
 ---
 
 # Multigraded Poincare Coefficients

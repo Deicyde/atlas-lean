@@ -2,6 +2,8 @@
 article_id: af_29bf8043d5b88dbd98ee8d7f
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.PeriodicTilingConjectureWanted.PeriodicTilingConjecture.corollary_1_7
 ---
 
 # Corollary 1 7

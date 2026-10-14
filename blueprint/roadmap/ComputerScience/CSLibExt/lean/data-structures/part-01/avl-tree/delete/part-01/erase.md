@@ -2,6 +2,8 @@
 article_id: af_ae92e9f9b5310531b7e80bfa
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.erase
 ---
 
 # Erase

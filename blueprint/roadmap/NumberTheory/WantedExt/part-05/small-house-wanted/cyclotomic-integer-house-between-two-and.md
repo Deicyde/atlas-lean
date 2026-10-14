@@ -2,6 +2,8 @@
 article_id: af_406f8097c2db7abd96564d7c
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.SmallHouseWanted.NumberTheory.cyclotomic_integer_house_between_two_and_76_33
 ---
 
 # Cyclotomic integer house between two and 76 33

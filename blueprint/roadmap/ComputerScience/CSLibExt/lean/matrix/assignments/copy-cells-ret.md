@@ -2,6 +2,9 @@
 article_id: af_902937e423751f14d08d743e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Matrix.copyCells_ret
 ---
 
 # Copy Cells ret

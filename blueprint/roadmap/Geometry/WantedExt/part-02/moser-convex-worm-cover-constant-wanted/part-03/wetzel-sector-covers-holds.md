@@ -2,6 +2,8 @@
 article_id: af_4616c3323175e5a1ea9f5c16
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MoserConvexWormCoverConstant.wetzelSectorCovers_holds
 ---
 
 # Wetzel Sector Covers holds

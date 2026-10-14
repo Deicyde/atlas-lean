@@ -2,6 +2,9 @@
 article_id: af_953ab80bc19acfc91ae53820
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.all_iff_forall_mem
 ---
 
 # All iff forall mem

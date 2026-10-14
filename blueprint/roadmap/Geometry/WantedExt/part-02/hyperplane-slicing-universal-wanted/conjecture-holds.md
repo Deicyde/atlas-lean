@@ -2,6 +2,8 @@
 article_id: af_f8c541c9621dfb9221dcd098
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.HyperplaneSlicingUniversalWanted.conjecture_holds
 ---
 
 # Conjecture holds

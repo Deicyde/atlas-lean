@@ -2,6 +2,9 @@
 article_id: af_55e6464e69679c37376edee4
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.isClawFree_iff_not_isIndContained
 ---
 
 # Is Claw Free iff not is Ind Contained

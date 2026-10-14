@@ -2,6 +2,9 @@
 article_id: af_b814141d188ae038099b957d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Matrix.strassenMatrixAccumulate_ret
 ---
 
 # Strassen Matrix Accumulate ret

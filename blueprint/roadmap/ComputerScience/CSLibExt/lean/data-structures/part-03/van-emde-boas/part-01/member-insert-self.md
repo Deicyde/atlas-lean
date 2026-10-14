@@ -2,6 +2,9 @@
 article_id: af_dfe219678b703eaccd7c680d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.VanEmdeBoas.member_insert_self
 ---
 
 # Member insert self

@@ -2,6 +2,8 @@
 article_id: af_af3d0211c98d0e0a0b96a852
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.split
 ---
 
 # Split

@@ -2,6 +2,8 @@
 article_id: af_dfa28b89c0e94121b6406ab9
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.SkipList.heightOf
 ---
 
 # Height Of

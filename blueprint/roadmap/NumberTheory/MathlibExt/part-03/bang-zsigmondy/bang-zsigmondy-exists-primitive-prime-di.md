@@ -2,6 +2,9 @@
 article_id: af_4775c8954043429db8e64f74
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.bangZsigmondy_exists_primitivePrimeDivisor
 ---
 
 # Bang Zsigmondy exists primitive Prime Divisor

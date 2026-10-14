@@ -2,6 +2,9 @@
 article_id: af_5717ec048456af7490338190
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.adjacent_pruneAt_of_mem_mem
 ---
 
 # Adjacent prune At of mem mem

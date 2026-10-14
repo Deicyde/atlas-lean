@@ -2,6 +2,8 @@
 article_id: af_12fa7925dd797ff7a0b41c14
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.OpenAddressing.linearProbe
 ---
 
 # Linear Probe

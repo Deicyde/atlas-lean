@@ -2,6 +2,9 @@
 article_id: af_e45104b890bb5e6b29eed498
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.TimeM.bucketSort_time_expected_upper
 ---
 
 # Bucket Sort time expected upper

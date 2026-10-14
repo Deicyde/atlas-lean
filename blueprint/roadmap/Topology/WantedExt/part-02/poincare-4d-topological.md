@@ -2,6 +2,8 @@
 article_id: af_56592326a00d040784fe747e
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Topology.Poincare4DTopologicalWanted.Topology.poincare_4d_topological
 ---
 
 # Poincare4 DTopological Wanted

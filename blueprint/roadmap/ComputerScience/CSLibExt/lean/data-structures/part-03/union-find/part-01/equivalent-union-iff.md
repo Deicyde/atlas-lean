@@ -2,6 +2,9 @@
 article_id: af_414e2ec9f103f87e6355a49e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.UnionFind.equivalent_union_iff
 ---
 
 # Equivalent union iff

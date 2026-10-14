@@ -2,6 +2,9 @@
 article_id: af_79489920046e3a33ff2b46bd
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinarySearchTree.mem_delete_of_mem
 ---
 
 # Mem delete of mem

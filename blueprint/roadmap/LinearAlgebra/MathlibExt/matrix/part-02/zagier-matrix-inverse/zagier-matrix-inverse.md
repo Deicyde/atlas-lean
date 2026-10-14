@@ -2,6 +2,9 @@
 article_id: af_e403d564b587bf4ae8f82f0d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.zagier_matrix_inverse
 ---
 
 # Zagier matrix inverse

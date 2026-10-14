@@ -2,6 +2,8 @@
 article_id: af_c0897355c43982e4a8b4ba8b
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.euler_polyhedron_formula
 ---
 
 # Euler Polyhedron Formula Wanted

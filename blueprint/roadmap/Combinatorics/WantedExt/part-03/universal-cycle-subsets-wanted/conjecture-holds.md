@@ -2,6 +2,8 @@
 article_id: af_9b6481036899178edf51b1b3
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.UniversalCycleSubsetsWanted.conjecture_holds
 ---
 
 # Conjecture holds

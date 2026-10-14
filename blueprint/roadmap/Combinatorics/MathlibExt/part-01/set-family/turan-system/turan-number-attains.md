@@ -2,6 +2,9 @@
 article_id: af_84ac6517ec93ae8b39cd3671
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: TuranSystem.turanNumber_attains
 ---
 
 # Turan Number attains

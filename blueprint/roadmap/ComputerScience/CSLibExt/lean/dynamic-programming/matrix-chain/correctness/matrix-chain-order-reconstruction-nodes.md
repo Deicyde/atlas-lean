@@ -2,6 +2,9 @@
 article_id: af_6613ef84c739cd986ea0179d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.MatrixChain.matrixChainOrder_reconstructionNodes
 ---
 
 # Matrix Chain Order reconstruction Nodes

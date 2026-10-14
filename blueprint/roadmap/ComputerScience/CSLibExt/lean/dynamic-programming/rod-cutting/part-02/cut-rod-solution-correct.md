@@ -2,6 +2,9 @@
 article_id: af_d28010d1a0bb1f38dc73fc57
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.RodCutting.cutRodSolution_correct
 ---
 
 # Cut Rod Solution correct

@@ -2,6 +2,9 @@
 article_id: af_71f935786ed20e485aebcb1c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.sentinelInsert_circular
 ---
 
 # Sentinel Insert circular

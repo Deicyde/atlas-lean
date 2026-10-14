@@ -2,6 +2,9 @@
 article_id: af_5c877ddf7dca7d8112352532
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.GroupTheory.FiniteGroupConvolutionWanted.conv_comm_of_comm
 ---
 
 # Conv comm of comm

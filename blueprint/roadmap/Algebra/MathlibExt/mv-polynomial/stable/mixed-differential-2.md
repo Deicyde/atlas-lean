@@ -2,6 +2,9 @@
 article_id: af_9175626a2d4a3cb091f452ea
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.Algebra.MvPolynomialStable._root_.MvPolynomial.IsRealStable.mixedDifferential
 ---
 
 # Mixed Differential

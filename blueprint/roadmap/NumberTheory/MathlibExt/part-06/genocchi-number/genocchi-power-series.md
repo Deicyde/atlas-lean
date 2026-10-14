@@ -2,6 +2,8 @@
 article_id: af_2135760803f8578ce9478ff7
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.genocchiPowerSeries
 ---
 
 # Genocchi Power Series

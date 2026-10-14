@@ -2,6 +2,8 @@
 article_id: af_c19c9267849b5c26de0aaf50
 declaration: theorem
 origin: cited
+statement: formalized
+lean: BerryEsseenWanted.leftRightCDFErrorEquivalence_holds
 ---
 
 # Left Right CDFError Equivalence holds

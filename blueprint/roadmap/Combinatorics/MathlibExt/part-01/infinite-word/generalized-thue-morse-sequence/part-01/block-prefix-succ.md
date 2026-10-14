@@ -2,6 +2,9 @@
 article_id: af_13088153c238309e459821a0
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.GeneralizedThueMorse.block_prefix_succ
 ---
 
 # Block prefix succ

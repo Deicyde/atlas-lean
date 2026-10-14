@@ -2,6 +2,8 @@
 article_id: af_e60c198bc130b35383b686c0
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Topology.ClassificationOfSurfacesWanted.Topology.ClassificationOfSurfaces.classification_of_surfaces
 ---
 
 # Classification of surfaces

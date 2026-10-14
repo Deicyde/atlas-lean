@@ -2,6 +2,9 @@
 article_id: af_804a4082fe6c00f167a0c6c0
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.josephus_succ
 ---
 
 # Josephus succ

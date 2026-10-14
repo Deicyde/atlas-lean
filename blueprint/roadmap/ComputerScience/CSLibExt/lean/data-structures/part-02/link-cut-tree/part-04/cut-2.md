@@ -2,6 +2,9 @@
 article_id: af_c606e2a6b6d448bccae0f00e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.Valid.cut
 ---
 
 # Cut

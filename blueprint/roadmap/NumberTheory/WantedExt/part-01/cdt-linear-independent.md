@@ -2,6 +2,8 @@
 article_id: af_eae4ef0ece257d26f51e84d2
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.CalegariDimitrovTangLinearIndependentWanted.NumberTheory.CalegariDimitrovTangLinearIndependent.cdt_linearIndependent
 ---
 
 # Calegari Dimitrov Tang Linear Independent Wanted

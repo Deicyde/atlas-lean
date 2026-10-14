@@ -2,6 +2,8 @@
 article_id: af_77b35220e7de92b6752991ed
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.PerfectHashing.bucketSize
 ---
 
 # Bucket Size

@@ -2,6 +2,9 @@
 article_id: af_fb3c0faef68713691ccd4a82
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.GroupedYFastTrie.not_valid_ofSortedList_zero
 ---
 
 # Not valid of Sorted List zero

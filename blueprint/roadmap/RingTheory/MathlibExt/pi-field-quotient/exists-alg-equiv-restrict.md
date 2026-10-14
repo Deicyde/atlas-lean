@@ -2,6 +2,9 @@
 article_id: af_cce13107659cee39c5eeb7d6
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: PiFieldQuotient.exists_algEquiv_restrict
 ---
 
 # Exists alg Equiv restrict

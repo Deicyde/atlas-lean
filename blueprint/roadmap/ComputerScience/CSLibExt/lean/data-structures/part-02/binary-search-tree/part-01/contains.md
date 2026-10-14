@@ -2,6 +2,8 @@
 article_id: af_6a594da2c0bfaa32bd1a9c11
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BinarySearchTree.contains
 ---
 
 # Contains

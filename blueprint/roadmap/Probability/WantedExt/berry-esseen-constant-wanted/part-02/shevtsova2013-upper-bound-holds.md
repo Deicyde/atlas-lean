@@ -2,6 +2,8 @@
 article_id: af_ee69baf154a79422fd45e3fc
 declaration: theorem
 origin: cited
+statement: formalized
+lean: BerryEsseenWanted.shevtsova2013UpperBound_holds
 ---
 
 # Shevtsova2013 Upper Bound holds

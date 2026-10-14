@@ -2,6 +2,9 @@
 article_id: af_3e1f9d0c05ab10b9b5f15d7f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.balance_left_single
 ---
 
 # Balance left single

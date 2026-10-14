@@ -2,6 +2,8 @@
 article_id: af_af7dc1d0ae54b60f000b3bd8
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.LagariasWanted.NumberTheory.riemann_hypothesis_iff_lagarias_elementary_criterion
 ---
 
 # Lagarias Wanted

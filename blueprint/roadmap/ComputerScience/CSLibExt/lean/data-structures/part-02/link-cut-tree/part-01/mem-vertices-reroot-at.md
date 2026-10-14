@@ -2,6 +2,9 @@
 article_id: af_d0c9a3108d5a6ae502f04d63
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.mem_vertices_rerootAt
 ---
 
 # Mem vertices reroot At

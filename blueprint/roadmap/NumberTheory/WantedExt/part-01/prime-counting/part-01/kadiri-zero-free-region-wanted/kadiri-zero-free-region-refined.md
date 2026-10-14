@@ -2,6 +2,8 @@
 article_id: af_25a6a2ee980a96949c608c7b
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.kadiri_zero_free_region_refined
 ---
 
 # Kadiri zero free region refined

@@ -2,6 +2,9 @@
 article_id: af_c15805b12526669eda96bba2
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.morphIterate_length_of_uniform
 ---
 
 # Morph Iterate length of uniform

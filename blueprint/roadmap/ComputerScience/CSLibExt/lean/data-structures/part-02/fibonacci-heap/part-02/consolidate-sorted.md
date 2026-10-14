@@ -2,6 +2,9 @@
 article_id: af_d83c48052bb058988ff61891
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciForest.consolidate_sorted
 ---
 
 # Consolidate sorted

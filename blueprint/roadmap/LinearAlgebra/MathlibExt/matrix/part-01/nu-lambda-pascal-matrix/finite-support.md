@@ -2,6 +2,9 @@
 article_id: af_8a466ddaf5441ccfa75326e4
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.IsNuLambdaPascalMatrix.finite_support
 ---
 
 # Finite support

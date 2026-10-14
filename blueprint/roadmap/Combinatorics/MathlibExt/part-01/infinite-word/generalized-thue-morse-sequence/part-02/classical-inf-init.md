@@ -2,6 +2,9 @@
 article_id: af_7e446375fd9fe0b64f10784f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.GeneralizedThueMorse.classical_inf_init
 ---
 
 # Classical inf init

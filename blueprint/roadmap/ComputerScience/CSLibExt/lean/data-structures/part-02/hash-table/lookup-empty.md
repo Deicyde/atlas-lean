@@ -2,6 +2,9 @@
 article_id: af_e4a5a92b81fc78fe62cd1d4a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.HashTable.lookup_empty
 ---
 
 # Lookup empty

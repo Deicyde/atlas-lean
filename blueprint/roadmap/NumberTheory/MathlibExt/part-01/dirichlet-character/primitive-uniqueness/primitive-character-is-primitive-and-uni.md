@@ -2,6 +2,9 @@
 article_id: af_31cf75e58d7a60a65dfc2789
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: DirichletCharacter.primitiveCharacter_isPrimitive_and_unique
 ---
 
 # Primitive Character is Primitive and unique

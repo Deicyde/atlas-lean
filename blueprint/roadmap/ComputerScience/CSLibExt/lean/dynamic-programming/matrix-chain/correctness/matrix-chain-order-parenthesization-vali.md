@@ -2,6 +2,9 @@
 article_id: af_3fcff39d44fe95abbee7f612
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.MatrixChain.matrixChainOrder_parenthesization_valid
 ---
 
 # Matrix Chain Order parenthesization valid

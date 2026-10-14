@@ -2,6 +2,9 @@
 article_id: af_f960c03dddddea44283f078c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: FDRep.eq_zero_of_isClassFunction_of_orthogonal
 ---
 
 # Eq zero of is Class Function of orthogonal

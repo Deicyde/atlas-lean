@@ -2,6 +2,8 @@
 article_id: af_5d3037718c79a637009c975e
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.RedBlackTree.DeleteBalanced.inorderBB
 ---
 
 # Inorder BB

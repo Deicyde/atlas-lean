@@ -2,6 +2,9 @@
 article_id: af_20c85a4a04665fcf8a19685c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.isHadamardMatrix_iff_isHadamard
 ---
 
 # Is Hadamard Matrix iff is Hadamard

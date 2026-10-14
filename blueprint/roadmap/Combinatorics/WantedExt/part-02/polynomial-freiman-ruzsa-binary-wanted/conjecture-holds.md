@@ -2,6 +2,8 @@
 article_id: af_28ea6fd254ab667ccdab1faf
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.PolynomialFreimanRuzsaBinaryWanted.conjecture_holds
 ---
 
 # Conjecture holds

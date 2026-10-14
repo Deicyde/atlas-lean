@@ -2,6 +2,9 @@
 article_id: af_4379dac32ea7fafe050adf6e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciHeap.findMin_eq_none_iff
 ---
 
 # Find Min eq none iff

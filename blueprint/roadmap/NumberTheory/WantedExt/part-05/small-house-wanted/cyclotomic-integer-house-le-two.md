@@ -2,6 +2,8 @@
 article_id: af_2c917d3789218c12690858f6
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.SmallHouseWanted.NumberTheory.cyclotomic_integer_house_le_two
 ---
 
 # Cyclotomic integer house le two

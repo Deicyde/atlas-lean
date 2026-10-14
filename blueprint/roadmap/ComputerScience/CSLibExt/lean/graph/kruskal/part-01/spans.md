@@ -2,6 +2,8 @@
 article_id: af_69a60e01b47d1bb72ee7286f
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.Kruskal.Spans
 ---
 
 # Spans

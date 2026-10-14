@@ -2,6 +2,9 @@
 article_id: af_189a66dabb7d1a1323f80077
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciHeap.deleteMin_length_le_card
 ---
 
 # Delete Min length le card

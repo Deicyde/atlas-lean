@@ -2,6 +2,9 @@
 article_id: af_802dce12c31d2486d28542a2
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciTree.Valid.degree_lt_card
 ---
 
 # Degree lt card

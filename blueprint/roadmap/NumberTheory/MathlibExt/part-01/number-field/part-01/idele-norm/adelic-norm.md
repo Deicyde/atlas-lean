@@ -2,6 +2,8 @@
 article_id: af_9924448a99a001e605f47746
 declaration: def
 origin: cited
+statement: formalized
+lean: NumberField.TopologicalIdeleGroup.adelicNorm
 ---
 
 # Adelic Norm

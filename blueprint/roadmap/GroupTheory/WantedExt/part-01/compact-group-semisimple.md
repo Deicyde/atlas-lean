@@ -2,6 +2,8 @@
 article_id: af_5df8d70f46a7eb176b10ad25
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GroupTheory.CompactGroupSemisimpleWanted.RepresentationTheory.CompactGroupSemisimple.compact_group_semisimple
 ---
 
 # Compact Group Semisimple Wanted

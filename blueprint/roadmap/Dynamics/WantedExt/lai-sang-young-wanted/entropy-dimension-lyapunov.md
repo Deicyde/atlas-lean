@@ -2,6 +2,8 @@
 article_id: af_aac3bf4d0782118fb801428a
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.entropy_dimension_lyapunov
 ---
 
 # Entropy dimension lyapunov

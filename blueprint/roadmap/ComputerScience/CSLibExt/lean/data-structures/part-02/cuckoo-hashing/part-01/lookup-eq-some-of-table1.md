@@ -2,6 +2,9 @@
 article_id: af_d6d896bebc3a2f371619682a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.CuckooHashing.lookup_eq_some_of_table1
 ---
 
 # Lookup eq some of table1

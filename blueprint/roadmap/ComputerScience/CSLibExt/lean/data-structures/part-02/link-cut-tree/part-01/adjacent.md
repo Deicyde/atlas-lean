@@ -2,6 +2,8 @@
 article_id: af_62da863fcbbbffe533c3749d
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.Adjacent
 ---
 
 # Adjacent

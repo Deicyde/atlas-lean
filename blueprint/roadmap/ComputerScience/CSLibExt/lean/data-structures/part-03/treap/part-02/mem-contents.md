@@ -2,6 +2,9 @@
 article_id: af_13e424cd59c7bdd5a12f4e71
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.mem_contents
 ---
 
 # Mem contents

@@ -2,6 +2,8 @@
 article_id: af_00a0e840b1013db0834cc819
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsLensCurvatureRecurrence
 ---
 
 # Lens Curvature Recurrence

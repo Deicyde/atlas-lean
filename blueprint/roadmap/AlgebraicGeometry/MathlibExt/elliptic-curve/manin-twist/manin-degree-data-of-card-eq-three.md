@@ -2,6 +2,9 @@
 article_id: af_0b785d1f573efa440ea98845
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MathlibExt.AlgebraicGeometry.EllipticCurve.ManinTwist.manin_degree_data_of_card_eq_three
 ---
 
 # Manin degree data of card eq three

@@ -2,6 +2,9 @@
 article_id: af_bf4f3692acb4a49becbf1a6b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BinomialForest.removeMinTree_spec
 ---
 
 # Remove Min Tree spec

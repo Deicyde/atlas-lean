@@ -2,6 +2,8 @@
 article_id: af_e6dad5d3fed57386215c2427
 declaration: theorem
 origin: cited
+statement: formalized
+lean: FalconerDistanceSetWanted.guthIosevichOuWang2018PlanarSufficiency_holds
 ---
 
 # Guth Iosevich Ou Wang2018 Planar Sufficiency holds

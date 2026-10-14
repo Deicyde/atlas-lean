@@ -2,6 +2,8 @@
 article_id: af_281c9ebbfe94e98888032315
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.IsBangZsigmondyExceptional
 ---
 
 # Is Bang Zsigmondy Exceptional

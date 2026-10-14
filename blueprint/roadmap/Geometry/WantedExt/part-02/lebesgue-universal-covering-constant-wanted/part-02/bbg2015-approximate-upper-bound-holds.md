@@ -2,6 +2,8 @@
 article_id: af_0412b2a8ff150b6fd7cf2914
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Geometry.LebesgueUniversalCoveringConstantWanted.bbg2015ApproximateUpperBound_holds
 ---
 
 # Bbg2015 Approximate Upper Bound holds

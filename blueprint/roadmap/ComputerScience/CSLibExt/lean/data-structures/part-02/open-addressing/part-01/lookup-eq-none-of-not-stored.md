@@ -2,6 +2,9 @@
 article_id: af_9665d0127120629d579babfd
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.OpenAddressing.lookup_eq_none_of_not_stored
 ---
 
 # Lookup eq none of not stored

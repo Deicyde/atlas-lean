@@ -2,6 +2,9 @@
 article_id: af_ce68202d2d0c93b7d67f8ccb
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DoublyLinkedList.sentinelDelete_disjoint_circular
 ---
 
 # Sentinel Delete disjoint circular

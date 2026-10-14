@@ -2,6 +2,8 @@
 article_id: af_10223ed2aa19b597f41f5419
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.stirling_edgeworth_expansion
 ---
 
 # Stirling Edgeworth Expansion Wanted

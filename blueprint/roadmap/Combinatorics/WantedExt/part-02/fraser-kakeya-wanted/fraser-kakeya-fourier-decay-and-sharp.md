@@ -2,6 +2,8 @@
 article_id: af_74acfbdfa9157fe521a9a992
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.FraserKakeyaWanted.Combinatorics.FraserKakeyaProblem.fraser_kakeya_fourier_decay_and_sharp
 ---
 
 # Fraser kakeya fourier decay and sharp

@@ -2,6 +2,9 @@
 article_id: af_ee80fdc62893354563deeb5b
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.GroupedYFastTrie.chunkGroups_spec
 ---
 
 # Chunk Groups spec

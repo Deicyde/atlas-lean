@@ -2,6 +2,9 @@
 article_id: af_bbfeb68b7650507b98336639
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.AvlTree.ordered_insert
 ---
 
 # Ordered insert

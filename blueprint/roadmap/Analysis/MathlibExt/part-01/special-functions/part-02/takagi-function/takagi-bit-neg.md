@@ -2,6 +2,9 @@
 article_id: af_9dae78e4e0189592ee40dbec
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.takagiBit_neg
 ---
 
 # Takagi Bit neg

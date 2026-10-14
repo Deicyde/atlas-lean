@@ -2,6 +2,9 @@
 article_id: af_c02e0f6d14d6be0ddd6f9303
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.IsVertexConnected.connected
 ---
 
 # Connected

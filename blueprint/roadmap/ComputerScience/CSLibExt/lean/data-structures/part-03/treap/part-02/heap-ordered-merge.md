@@ -2,6 +2,9 @@
 article_id: af_27d3438d9ba18936094bf0f5
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Treap.Tree.heapOrdered_merge
 ---
 
 # Heap Ordered merge

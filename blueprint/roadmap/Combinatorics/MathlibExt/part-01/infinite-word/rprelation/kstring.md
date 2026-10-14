@@ -2,6 +2,8 @@
 article_id: af_52a674a57b62dd6eb284230c
 declaration: abbrev
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.ReversePermute.KString
 ---
 
 # KString

@@ -2,6 +2,9 @@
 article_id: af_d29c7d5c575fd6b9127a77b3
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Polynomial.roots_ne_zero_of_natDegree_pos
 ---
 
 # Roots ne zero of nat Degree pos

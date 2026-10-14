@@ -2,6 +2,8 @@
 article_id: af_666883f15cc776fd81f765bf
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.SimpleGraph.DaviesWheelFreeChromaticWanted.largeChromaticTriangleFreeWheelFree_holds
 ---
 
 # Large Chromatic Triangle Free Wheel Free holds

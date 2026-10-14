@@ -2,6 +2,9 @@
 article_id: af_c638b58574429dfee1a6e844
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.FibonacciHeap.deleteMin_eq_none_iff
 ---
 
 # Delete Min eq none iff

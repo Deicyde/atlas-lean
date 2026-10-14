@@ -2,6 +2,9 @@
 article_id: af_5be3bf1504940d076bf87511
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.medianEulerCoeff_egf
 ---
 
 # Median Euler Coeff egf

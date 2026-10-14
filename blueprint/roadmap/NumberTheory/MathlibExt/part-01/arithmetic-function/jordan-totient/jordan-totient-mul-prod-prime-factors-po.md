@@ -2,6 +2,9 @@
 article_id: af_aa93578994c4637f92653e32
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: ArithmeticFunction.jordanTotient_mul_prod_primeFactors_pow
 ---
 
 # Jordan Totient mul prod prime Factors pow

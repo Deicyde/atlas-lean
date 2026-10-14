@@ -2,6 +2,9 @@
 article_id: af_43df45fb2cc4fb4444bf5fa4
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Matrix.fillCells_time
 ---
 
 # Fill Cells time

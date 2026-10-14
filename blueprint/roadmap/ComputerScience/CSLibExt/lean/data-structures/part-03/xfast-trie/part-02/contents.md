@@ -2,6 +2,8 @@
 article_id: af_99767731cb627ea0ac40ec49
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.YFastTrie.contents
 ---
 
 # Contents

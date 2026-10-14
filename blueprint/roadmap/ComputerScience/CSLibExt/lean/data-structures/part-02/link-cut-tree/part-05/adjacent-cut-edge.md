@@ -2,6 +2,9 @@
 article_id: af_6515203632d853d2792d1ff5
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.LinkCutTree.State.adjacent_cutEdge
 ---
 
 # Adjacent cut Edge

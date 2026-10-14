@@ -2,6 +2,8 @@
 article_id: af_cc9d5bdb58dce584d1a11be6
 declaration: def
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.SatisfiesParametrizedSumEquation
 ---
 
 # Satisfies Parametrized Sum Equation

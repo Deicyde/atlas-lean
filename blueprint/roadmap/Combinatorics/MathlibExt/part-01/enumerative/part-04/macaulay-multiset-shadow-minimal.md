@@ -2,6 +2,9 @@
 article_id: af_7fb39375800ed5376c1f7dd1
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.macaulay_multiset_shadow_minimal
 ---
 
 # Macaulay Monomial Shadow

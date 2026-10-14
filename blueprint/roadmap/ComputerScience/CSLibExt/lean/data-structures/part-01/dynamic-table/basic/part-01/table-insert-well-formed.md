@@ -2,6 +2,9 @@
 article_id: af_c7c20d906394a5c1b8960305
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.DynamicTable.tableInsert_wellFormed
 ---
 
 # Table Insert well Formed

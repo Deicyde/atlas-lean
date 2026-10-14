@@ -2,6 +2,9 @@
 article_id: af_e82be1d460bcca87c5cebb6e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.isSquareFreeWord_iff_inits_tails
 ---
 
 # Is Square Free Word iff inits tails

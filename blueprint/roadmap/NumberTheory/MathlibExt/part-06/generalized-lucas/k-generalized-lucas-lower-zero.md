@@ -2,6 +2,9 @@
 article_id: af_e4518532a25fa29fffd08790
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.kGeneralizedLucas_lower_zero
 ---
 
 # K Generalized Lucas lower zero

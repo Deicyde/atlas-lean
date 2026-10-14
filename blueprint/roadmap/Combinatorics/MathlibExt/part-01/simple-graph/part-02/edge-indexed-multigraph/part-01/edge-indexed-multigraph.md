@@ -2,6 +2,8 @@
 article_id: af_d83701b770fdad7e9d2c08d2
 declaration: structure
 origin: cited
+statement: formalized
+lean: SimpleGraph.EdgeIndexedMultigraph
 ---
 
 # Edge Indexed Multigraph

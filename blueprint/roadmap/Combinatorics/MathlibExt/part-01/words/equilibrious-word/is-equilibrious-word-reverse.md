@@ -2,6 +2,9 @@
 article_id: af_530dcdbdadbad9fd28a608ae
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.isEquilibriousWord_reverse
 ---
 
 # Is Equilibrious Word reverse

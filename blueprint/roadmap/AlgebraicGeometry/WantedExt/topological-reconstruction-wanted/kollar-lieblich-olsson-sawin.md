@@ -2,6 +2,8 @@
 article_id: af_3c50fe677450d2a913d3d216
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.AlgebraicGeometry.TopologicalReconstructionWanted.AlgebraicGeometry.TopologicalReconstruction.kollar_lieblich_olsson_sawin
 ---
 
 # Kollar lieblich olsson sawin

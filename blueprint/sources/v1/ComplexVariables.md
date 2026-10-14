@@ -18,13 +18,3 @@ the Lean code; each is recorded with its evidence in
 
 5 dependencies point to a statement placed later in this
 wiki and are not drawn as roadmap edges, which keeps every chapter acyclic.
-
-## Targets without a linked Lean declaration
-
-These targets have no `lean:` link: v1 matched no declaration, the
-matched name is not found by Autoform's lexical scan, or another v1 book
-or a root library declares the same name.
-
-| Target | v1 match |
-| --- | --- |
-| Theorem 1 (Analytic Theorem) | `Newman.newman_analytic_theorem` |

@@ -2,6 +2,8 @@
 article_id: af_9357df5c52ecf3360171dcb0
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.PerfectHashing.SquareSized
 ---
 
 # Square Sized

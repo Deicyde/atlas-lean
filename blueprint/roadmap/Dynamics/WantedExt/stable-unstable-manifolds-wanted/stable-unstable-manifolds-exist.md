@@ -2,6 +2,8 @@
 article_id: af_11cdbe54708f4f63d35b60f4
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.Dynamics.StableUnstableManifoldsWanted.Dynamics.StableUnstableManifoldsProblem.stable_unstable_manifolds_exist
 ---
 
 # Stable unstable manifolds exist

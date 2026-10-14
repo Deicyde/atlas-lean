@@ -2,6 +2,9 @@
 article_id: af_bd997bbb156359972eb400a7
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.VanEmdeBoas.max?_greatest
 ---
 
 # Max? greatest

@@ -2,6 +2,8 @@
 article_id: af_357609c21d34fe31c8e50063
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.WieferichNineCubesWanted.NumberTheory.wieferich_g_three
 ---
 
 # Wieferich g three

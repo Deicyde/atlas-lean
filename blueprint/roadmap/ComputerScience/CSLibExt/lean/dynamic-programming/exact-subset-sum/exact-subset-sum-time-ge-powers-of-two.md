@@ -2,6 +2,9 @@
 article_id: af_13bcc9bc624205df9b70ffcd
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.ExactSubsetSum.exactSubsetSum_time_ge_powers_of_two
 ---
 
 # Exact Subset Sum time ge powers of two

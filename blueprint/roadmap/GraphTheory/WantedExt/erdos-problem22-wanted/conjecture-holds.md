@@ -2,6 +2,8 @@
 article_id: af_d953e5c4be0d9457b09f10f2
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MathlibExt.GraphTheory.ErdosProblem22Wanted.conjecture_holds
 ---
 
 # Conjecture holds

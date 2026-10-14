@@ -2,6 +2,9 @@
 article_id: af_2d150f892c9989785c4c9a6d
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: SimpleGraph.IsVertexConnected.exists_cycle_bound_vertex
 ---
 
 # Exists cycle bound vertex

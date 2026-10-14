@@ -2,6 +2,8 @@
 article_id: af_b065b1c88ab1ffe68066d156
 declaration: def
 origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BinomialHeap.meld
 ---
 
 # Meld

@@ -2,6 +2,9 @@
 article_id: af_067815100cc6774be6594e3f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.Matrix.fasterAPSP_distance_spec
 ---
 
 # Faster APSP distance spec

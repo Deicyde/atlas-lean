@@ -2,6 +2,9 @@
 article_id: af_73bcf6663d5fcd0b3999340c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.SplayTree.inorder_splay
 ---
 
 # Inorder splay
