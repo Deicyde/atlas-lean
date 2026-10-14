@@ -48,7 +48,9 @@ jobs:
           REF: ${{ matrix.ref }}
           PROFILE: ${{ matrix.profile && 'true' || '' }}
         run: |
-          set -uo pipefail
+          # Keep going when render fails (as --require-declarations does on a
+          # missing declaration) so the measurements are still written.
+          set +e -uo pipefail
           mkdir -p out
           uv venv --quiet /tmp/venv
           uv pip install --quiet --python /tmp/venv "git+https://github.com/facebookresearch/autoform-bot.git@$REF"
