@@ -1,0 +1,105 @@
+name: Autoform index
+
+# Publishes the search index AutoformBot reads, for one commit of main.
+# The index goes in a tagged commit on top of that commit; main never changes.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+env:
+  # The bytes of an index depend on the Autoform revision that writes it.
+  AUTOFORM_REV: feec945b81669827a9d066f7b432714d482f8c1b
+
+jobs:
+  index:
+    # Index only what main holds.
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Free disk space for Lean caches
+        run: |
+          set -euo pipefail
+          sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc
+          df -h /
+
+      - name: Add swap for cold Lean builds
+        run: |
+          set -euo pipefail
+          sudo fallocate -l 16G /mnt/lean-swap
+          sudo chmod 600 /mnt/lean-swap
+          sudo mkswap /mnt/lean-swap
+          sudo swapon /mnt/lean-swap
+
+      - name: Install elan v4.2.4
+        run: |
+          set -euo pipefail
+          installer_dir="${RUNNER_TEMP}/elan-installer"
+          archive="${installer_dir}/elan-x86_64-unknown-linux-gnu.tar.gz"
+          mkdir -p "$installer_dir"
+          curl --fail --silent --show-error --location \
+            --proto '=https' --tlsv1.2 \
+            https://github.com/leanprover/elan/releases/download/v4.2.4/elan-x86_64-unknown-linux-gnu.tar.gz \
+            --output "$archive"
+          echo "42b94d4244e8353142c456ec0e4ca6528fd898a6c604d4059f494e706e431f63  $archive" \
+            | sha256sum --check --strict
+          tar xzf "$archive" -C "$installer_dir"
+          "$installer_dir/elan-init" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Fetch Mathlib cache
+        run: lake exe cache get
+
+      - name: Restore local build
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .lake/build
+          key: lake-build-${{ runner.os }}-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-${{ github.sha }}
+          restore-keys: |
+            lake-build-${{ runner.os }}-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-
+
+      - name: Build the indexed libraries
+        run: lake build MathlibExt CSLibExt WantedExt
+
+      - name: Install Autoform
+        run: |
+          set -euo pipefail
+          python3 -m venv "${RUNNER_TEMP}/autoform"
+          "${RUNNER_TEMP}/autoform/bin/pip" install --quiet \
+            "autoform @ git+https://github.com/facebookresearch/autoform-bot@${AUTOFORM_REV}"
+          echo "${RUNNER_TEMP}/autoform/bin" >> "$GITHUB_PATH"
+
+      - name: Write the index
+        run: autoform library index . --lib MathlibExt --lib CSLibExt --lib WantedExt --timeout 3600
+
+      - name: Tag a commit that adds the index
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          tag="autoform-index/${GITHUB_SHA::12}"
+          remote="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          if git ls-remote --exit-code --tags "$remote" "refs/tags/$tag" >/dev/null; then
+            echo "$tag already exists"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git add autoform-library-index.jsonl
+          git commit --quiet -m "Add the Autoform library index for ${GITHUB_SHA::12}" \
+            -m "Written by autoform-bot ${AUTOFORM_REV}."
+          git tag "$tag"
+          git push "$remote" "refs/tags/$tag"
+          echo "Published $tag at $(git rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
