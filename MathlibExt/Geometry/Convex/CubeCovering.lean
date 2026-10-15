@@ -31,6 +31,12 @@ namespace ConvexCovering
 def coordinateCube (n : ℕ) : Set (EuclideanSpace ℝ (Fin n)) :=
   {x | ∀ i, x i ∈ Set.Icc (-1 : ℝ) 1}
 
+/-- The coordinate cube is the `|x i| ≤ 1` box. -/
+theorem coordinateCube_eq_absSet (n : ℕ) :
+    coordinateCube n = {x : EuclideanSpace ℝ (Fin n) | ∀ i, |x i| ≤ 1} := by
+  ext x
+  simp only [coordinateCube, Set.mem_setOf_eq, Set.mem_Icc, abs_le]
+
 /-- An affine cube is the image under a genuinely invertible affine map. -/
 def IsAffineCube {n : ℕ} (K : Set (EuclideanSpace ℝ (Fin n))) : Prop :=
   ∃ e : EuclideanSpace ℝ (Fin n) ≃ᵃ[ℝ] EuclideanSpace ℝ (Fin n),
