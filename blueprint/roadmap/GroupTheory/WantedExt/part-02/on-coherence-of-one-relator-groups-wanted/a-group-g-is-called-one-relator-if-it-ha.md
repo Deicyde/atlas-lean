@@ -3,7 +3,7 @@ article_id: af_14854cd96fef91959610b8b0
 declaration: def
 origin: cited
 statement: formalized
-lean: MathlibExt.GroupTheory.OnCoherenceOfOneRelatorGroupsWanted.Group.OneRelator.
+lean: MathlibExt.GroupTheory.OnCoherenceOfOneRelatorGroupsWanted.Group.OneRelator
 ---
 
 # A group `G` is called one-relator if it has a presentation...

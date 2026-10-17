@@ -13,6 +13,6 @@ roadmap articles whose statement is that docstring, with its citations moved
 to the article's sources. Theorems are proved and definitions defined unless
 their module contains `sorry`.
 
-9562 roadmap edges come from the compiled Lean: the articles each
+9564 roadmap edges come from the compiled Lean: the articles each
 article's statement or proof reaches, through private helpers and undocumented
 declarations if need be ([`lean-dependencies.json`](lean-dependencies.json)).

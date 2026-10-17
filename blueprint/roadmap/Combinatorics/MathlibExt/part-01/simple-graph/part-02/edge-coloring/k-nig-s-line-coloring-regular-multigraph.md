@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Combinatorics.SimpleGraph.EdgeColoringWanted.multigraph_regular_color.
+lean: MathlibExt.Combinatorics.SimpleGraph.EdgeColoringWanted.multigraph_regular_color
 ---
 
 # König's line coloring, regular multigraph case: a...

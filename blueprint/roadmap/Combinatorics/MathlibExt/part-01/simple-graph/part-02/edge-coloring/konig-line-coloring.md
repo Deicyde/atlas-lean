@@ -15,6 +15,10 @@ Every finite bipartite graph has edge chromatic number equal to its maximum degr
 
 - [Is Proper Edge Coloring](is-proper-edge-coloring.md)
 
+## Proof depends on
+
+- [König's line coloring, bounded-degree multigraph case: a...](k-nig-s-line-coloring-bounded-degree-mul.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.EdgeColoring](../../../../../../../sources/v2/MathlibExt.md)

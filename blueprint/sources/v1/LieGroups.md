@@ -30,5 +30,4 @@ or a root library declares the same name.
 | --- | --- |
 | Theorem 6.6 (Elliptic regularity) | `elliptic_regularity` |
 | Definition 25.1 | `not_found` |
-| Definition 25.2 | `TwoSidedIdeal.IsPrimitive` |
 | Theorem 25.4 | `not_found` |

@@ -33,7 +33,7 @@ cover only the decomposed rows below; they are not repository-wide coverage.
 | v1 / HighDimensionalStatistics | DECOMPOSED | [73 source statements](../roadmap/Probability/HighDimensionalStatistics/README.md), 65 with a formalized statement. |
 | v1 / IntroductionToFunctionalAnalysis | DECOMPOSED | [72 source statements](../roadmap/Analysis/IntroductionToFunctionalAnalysis/README.md), 67 with a formalized statement. |
 | v1 / IntroductionToPartialDifferentialEquations | DECOMPOSED | [105 source statements](../roadmap/Analysis/IntroductionToPartialDifferentialEquations/README.md), 86 with a formalized statement. |
-| v1 / LieGroups | DECOMPOSED | [185 source statements](../roadmap/RepresentationTheory/LieGroups/README.md), 72 with a formalized statement. |
+| v1 / LieGroups | DECOMPOSED | [185 source statements](../roadmap/RepresentationTheory/LieGroups/README.md), 73 with a formalized statement. |
 | v1 / NumberTheoryI | DECOMPOSED | [576 source statements](../roadmap/NumberTheory/NumberTheoryI/README.md), 436 with a formalized statement. |
 | v1 / ProbabilisticMethodsInCombinatorics | DECOMPOSED | [210 source statements](../roadmap/Combinatorics/ProbabilisticMethodsInCombinatorics/README.md), 109 with a formalized statement. |
 | v1 / ProjectionTheory | DECOMPOSED | [111 source statements](../roadmap/Analysis/ProjectionTheory/README.md), 72 with a formalized statement. |

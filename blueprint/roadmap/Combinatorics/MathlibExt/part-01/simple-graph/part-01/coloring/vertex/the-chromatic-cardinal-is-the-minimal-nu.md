@@ -3,7 +3,7 @@ article_id: af_85734aed3b691d61d41667c0
 declaration: def
 origin: cited
 statement: formalized
-lean: SimpleGraph.chromaticCardinal.
+lean: SimpleGraph.chromaticCardinal
 ---
 
 # The chromatic cardinal is the minimal number of colors need...

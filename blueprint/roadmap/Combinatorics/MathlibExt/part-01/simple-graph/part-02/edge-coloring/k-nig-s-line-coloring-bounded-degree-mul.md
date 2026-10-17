@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Combinatorics.SimpleGraph.EdgeColoringWanted.multigraph_bounded_color.
+lean: MathlibExt.Combinatorics.SimpleGraph.EdgeColoringWanted.multigraph_bounded_color
 ---
 
 # König's line coloring, bounded-degree multigraph case: a...
@@ -17,6 +17,10 @@ used by the multigraph Galvin development.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [König's line coloring, regular multigraph case: a...](k-nig-s-line-coloring-regular-multigraph.md)
 
 ## Sources
 
