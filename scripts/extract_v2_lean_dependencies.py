@@ -37,10 +37,10 @@ def read_dump(path: Path) -> dict[str, dict]:
         return {row["name"]: row for row in map(json.loads, handle) if row}
 
 
-def article_names() -> set[str]:
-    """The compiled names the generated v2 roadmap actually publishes."""
+def article_manifest() -> dict[str, str]:
+    """The compiled names the generated v2 roadmap publishes, and their libraries."""
 
-    names: set[str] = set()
+    names: dict[str, str] = {}
     for path in ROADMAP.rglob("*.md"):
         relative = path.relative_to(ROADMAP)
         if len(relative.parts) < 2 or relative.parts[1] not in LIBRARIES:
@@ -51,7 +51,9 @@ def article_names() -> set[str]:
         frontmatter = text.split("---\n", 2)[1]
         match = LEAN.search(frontmatter)
         if match is not None:
-            names.update(name.strip() for name in match.group(1).split(",") if name.strip())
+            for name in (name.strip() for name in match.group(1).split(",")):
+                if name:
+                    names[name] = relative.parts[1]
     return names
 
 
@@ -92,14 +94,13 @@ def main() -> int:
         print(__doc__.strip(), file=sys.stderr)
         return 2
     rows = read_dump(Path(sys.argv[1]))
-    articles = article_names()
-    missing = sorted(articles - rows.keys())
+    manifest = article_manifest()
+    missing = sorted(manifest.keys() - rows.keys())
     if missing:
-        for name in missing[:50]:
-            print(f"roadmap Lean target is absent from the compiled dependency dump: {name}", file=sys.stderr)
-        if len(missing) > 50:
-            print(f"and {len(missing) - 50} more missing roadmap targets", file=sys.stderr)
-        return 1
+        for name in missing[:20]:
+            print(f"warning: roadmap Lean target is absent from the compiled dependency dump: {name}", file=sys.stderr)
+        print(f"warning: {len(missing)} roadmap targets have no compiled dependency row", file=sys.stderr)
+    articles = manifest.keys() & rows.keys()
     reach = frontiers(rows, articles)
 
     def collapse(name: str, uses: list[str]) -> set[str]:
@@ -120,9 +121,18 @@ def main() -> int:
             "proof": sorted(proof),
         }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    missing_by_library = {
+        library: [name for name in missing if manifest[name] == library]
+        for library in sorted(LIBRARIES)
+    }
     OUTPUT.write_text(
         json.dumps(
-            {"source": sys.argv[2], "article_manifest": "blueprint/roadmap lean targets", "articles": result},
+            {
+                "source": sys.argv[2],
+                "article_manifest": "blueprint/roadmap lean targets",
+                "missing_articles": missing_by_library,
+                "articles": result,
+            },
             indent=1,
             ensure_ascii=False,
             sort_keys=True,
@@ -130,7 +140,10 @@ def main() -> int:
         + "\n"
     )
     edges = sum(len(entry["statement"]) + len(entry["proof"]) for entry in result.values())
-    print(f"{len(rows)} constants, {len(articles)} articles, {edges} article edges -> {OUTPUT.relative_to(ROOT)}")
+    print(
+        f"{len(rows)} constants, {len(articles)} compiled articles, {len(missing)} without a compiled row, "
+        f"{edges} article edges -> {OUTPUT.relative_to(ROOT)}"
+    )
     return 0
 
 

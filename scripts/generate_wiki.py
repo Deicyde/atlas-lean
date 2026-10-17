@@ -729,6 +729,13 @@ def render_library_source(library: str, summary: dict) -> str:
             "article's statement or proof reaches, through private helpers and undocumented",
             "declarations if need be ([`lean-dependencies.json`](lean-dependencies.json)).",
         ]
+    if summary.get("dependency_missing"):
+        lines += [
+            "",
+            f"{summary['dependency_missing']} roadmap articles have no row in the compiled",
+            "dependency dump (for example a wanted placeholder or a module excluded by a",
+            "compiled-name collision), so no dependency edges are asserted for them.",
+        ]
     return "\n".join(lines) + "\n"
 
 
@@ -962,10 +969,12 @@ def generate(selected: list[str]) -> dict[Path, str]:
             assign_paths(tree, ROADMAP / subject / library)
             v2_by_subject[subject].append(tree)
     dependency_file = SOURCES / "v2" / "lean-dependencies.json"
+    dependency_data = None
     if dependency_file.is_file():
+        dependency_data = json.loads(dependency_file.read_text())
         link_v2(
             [target for targets, _ in v2_loaded.values() for target in targets],
-            json.loads(dependency_file.read_text())["articles"],
+            dependency_data["articles"],
         )
     every_v2 = Container("v2", "v2", [tree for subject in sorted(v2_by_subject) for tree in v2_by_subject[subject]])
     for node in walk(every_v2):
@@ -974,6 +983,7 @@ def generate(selected: list[str]) -> dict[Path, str]:
             files[node.path] = render(node, previous(node.path))
     for library, (targets, summary) in v2_loaded.items():
         summary["edges"] = sum(len(target.depends) + len(target.proof_depends) for target in targets)
+        summary["dependency_missing"] = len((dependency_data or {}).get("missing_articles", {}).get(library, ()))
         files[SOURCES / "v2" / f"{library}.md"] = render_library_source(library, summary)
         first = sorted(summary["subjects"])[0]
         v2_coverage.append(
