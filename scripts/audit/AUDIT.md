@@ -2,9 +2,17 @@
 
 One audit judges one wiki article (a node of the roadmap graph) against the Lean
 declaration it renders. The pipeline is lint, packet, audit, verify, apply,
-regenerate. Lint and packets are deterministic scripts in this directory; audit
-and verify are agent stages; apply writes fixes back to their sources so they
-survive regeneration.
+regenerate. Lint, packets and batches are deterministic scripts in this
+directory; `run_audit.py` runs the audit and verify agents (Claude Code in
+print mode, read-only tools); `apply_fixes.py` writes verified fixes back to
+their sources so they survive regeneration.
+
+    python scripts/audit/lint_articles.py blueprint/roadmap --json /tmp/all.jsonl
+    python scripts/audit/lint_articles.py blueprint/roadmap --subject S --json /tmp/s.jsonl
+    python scripts/audit/build_packets.py . /tmp/s.jsonl /tmp/packets.jsonl /tmp/all.jsonl
+    python scripts/audit/make_batches.py /tmp/packets.jsonl /tmp/batches.json
+    python scripts/audit/run_audit.py . /tmp/batches.json /tmp/run
+    python scripts/audit/apply_fixes.py . /tmp/packets.jsonl /tmp/run/results.json LEDGER STAMP
 
 ## Where an article's content comes from
 
