@@ -120,7 +120,7 @@ jobs:
           # ATLAS side of each collision and retry; v2-conflicts.txt lists them.
           : > v2-conflicts.txt
           dumped=
-          for attempt in $(seq 1 30); do
+          for _attempt in $(seq 1 30); do
             if lake env lean --run scripts/dump_v2_dependencies.lean v2-modules.txt > v2-dependencies.jsonl 2> dump.err; then
               dumped=1
               break
