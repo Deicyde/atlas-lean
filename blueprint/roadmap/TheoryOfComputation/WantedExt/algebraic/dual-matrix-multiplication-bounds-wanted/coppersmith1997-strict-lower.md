@@ -6,9 +6,11 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.DualMatrixMultiplicationBoundsWanted.coppersmith1997StrictLower
 ---
 
-# Coppersmith1997 Strict Lower
+# Coppersmith's 1997 bound on the dual exponent
 
-Source: C15b/LG2012 abstract, the previous Coppersmith 1997 record is strict.
+**Coppersmith's 1997 bound on the dual exponent.** For every field $F$, the dual matrix
+multiplication exponent $\alpha(F)$ of the arithmetic-circuit model satisfies
+$\alpha(F) > 0.29462$.
 
 ## Depends on
 
@@ -17,3 +19,4 @@ Source: C15b/LG2012 abstract, the previous Coppersmith 1997 record is strict.
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.Algebraic.DualMatrixMultiplicationBoundsWanted](../../../../../sources/v2/WantedExt.md)
+- C15b/LG2012 abstract, the previous Coppersmith 1997 record is strict.

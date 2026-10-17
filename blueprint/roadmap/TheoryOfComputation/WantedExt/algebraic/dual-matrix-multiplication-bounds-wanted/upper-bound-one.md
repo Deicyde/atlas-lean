@@ -6,9 +6,10 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.DualMatrixMultiplicationBoundsWanted.upperBoundOne
 ---
 
-# Upper Bound One
+# Dual exponent at most one
 
-Source: C15b, CLLZ2025 Figure 2, the general upper bound, not a method-specific barrier.
+**Dual exponent at most one.** For every field $F$, the dual matrix multiplication
+exponent $\alpha(F)$ of the arithmetic-circuit model satisfies $\alpha(F) \le 1$.
 
 ## Depends on
 
@@ -17,3 +18,4 @@ Source: C15b, CLLZ2025 Figure 2, the general upper bound, not a method-specific 
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.Algebraic.DualMatrixMultiplicationBoundsWanted](../../../../../sources/v2/WantedExt.md)
+- C15b, CLLZ2025 Figure 2, the general upper bound, not a method-specific barrier.
