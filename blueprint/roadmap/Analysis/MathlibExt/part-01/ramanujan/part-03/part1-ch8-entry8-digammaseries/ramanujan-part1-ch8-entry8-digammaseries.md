@@ -17,6 +17,10 @@ follows from this by `chapter8Digamma_eq_Complex_digamma`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Analytic At digamma](../../../special-functions/part-01/gamma/digamma/analytic-at-digamma.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch8Entry8Digammaseries](../../../../../../../sources/v2/MathlibExt.md)

@@ -18,6 +18,7 @@ There exists an absolute constant $C > 0$, such that for any $f \colon \{-1, 1\}
 - [Claim 2.2 (Lecture 1, Section 2.1)](../lecture-1/002-claim-2-2.md)
 - [Definition 2.1 (Discrete derivatives)](../lecture-4/006-discrete-derivatives.md)
 - [Corollary 5.2](../lecture-4/023-corollary-5-2.md)
+- [Lemma 2.2](../lecture-6/042-lemma-2-2.md)
 
 ## Sources
 

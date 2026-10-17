@@ -20,6 +20,7 @@ Carrier class sums commute with every group-algebra element.
 - [Carrier to Finset](carrier-to-finset.md)
 - [Class Rep](class-rep.md)
 - [Class Sum central'](class-sum-central-2.md)
+- [Conj Class](../../burnside-paqb-reduction/conj-class.md)
 
 ## Sources
 

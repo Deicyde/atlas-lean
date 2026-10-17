@@ -20,6 +20,9 @@ The subclass is nonvacuous, so its common coefficients are nonnegative.
 - [Symmetric Bernoulli Law](../part-01/symmetric-bernoulli-law.md)
 - [Symmetric Bernoulli is Bernoulli](symmetric-bernoulli-is-bernoulli.md)
 - [Symmetric Bernoulli third Moment](symmetric-bernoulli-third-moment.md)
+- [Kolmogorov Error](../../berry-esseen-model/part-01/kolmogorov-error.md)
+- [Kolmogorov Error nonnegative](../../berry-esseen-model/part-02/kolmogorov-error-nonnegative.md)
+- [Third Moment](../../berry-esseen-model/part-01/third-moment.md)
 
 ## Sources
 

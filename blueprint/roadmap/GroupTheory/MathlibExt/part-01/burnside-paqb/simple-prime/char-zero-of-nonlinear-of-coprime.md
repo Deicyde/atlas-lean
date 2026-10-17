@@ -14,7 +14,7 @@ element with `g ≠ 1` is killed by the character.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conj Class](../../burnside-paqb-reduction/conj-class.md)
 
 ## Proof depends on
 

@@ -14,7 +14,8 @@ continued fraction forces real quadratic irrationality.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Continued Fraction Eventually Periodic](../lagrange-periodic/continued-fraction-eventually-periodic.md)
+- [Is Real Quadratic Irrational](../lagrange-periodic/is-real-quadratic-irrational.md)
 
 ## Proof depends on
 

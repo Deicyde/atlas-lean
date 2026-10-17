@@ -15,6 +15,11 @@ Suppose $A_1, A_2, \ldots$ are pairwise independent and $\sum P(A_n) = \infty$, 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chebyshev's inequality](../lecture-8/018-chebyshev-s-inequality.md)
+- [First Borel-Cantelli lemma](021-first-borel-cantelli-lemma.md)
+
 ## Sources
 
 - [MIT 18.175 Theory of Probability (Spring 2014), Lecture 9](../../../../../sources/v1/TheoryOfProbability.md)

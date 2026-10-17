@@ -21,6 +21,7 @@ Let $G$ be a finite group where $|G| = n = p^em$ and $\gcd(p, m) = 1$. The three
 - [Definition (Group Actions, The Counting Formula)](../../part-01/group-actions/036-definition.md)
 - [Corollary (Counting Formula for Orbits)](../../part-01/group-actions/039-counting-formula-for-orbits.md)
 - [Theorem (Sylow II)](../../part-01/the-sylow-theorems/050-sylow-ii.md)
+- [Lemma (Proofs and Applications of the Sylow Theorems, Proof of Sylow Theorems)](055-lemma.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ consecutive estimate forces `k ≤ n ^ 2`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Consecutive of quadratic start](../conditional/consecutive-of-quadratic-start.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.BlockReductions](../../../../../../sources/v2/MathlibExt.md)

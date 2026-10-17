@@ -2,8 +2,9 @@
 article_id: af_a7f21d2906361d89fa8d4b21
 ---
 
-# Part 8 of 9
+# Signed Robbins Number to Twin Powers
 
+- [Signed Robbins Number](signed-robbins-number/README.md)
 - [Signed Stirling First](signed-stirling-first.md)
 - [Smarandache Permutation Sequence](smarandache-permutation-sequence/README.md)
 - [Spivey Bell Number Addition](spivey-bell-number-addition/README.md)
@@ -23,4 +24,3 @@ article_id: af_a7f21d2906361d89fa8d4b21
 - [Triangular Strip Tilings](quarter-period-factorizations.md)
 - [Triple Factorization](triple-factorization-of-dot-diagram.md)
 - [Twin Powers](twin-powers.md)
-- [ULDMotzkin Number Of Rank R](uldmotzkin-number-of-rank-r/README.md)

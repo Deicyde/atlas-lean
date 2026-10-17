@@ -14,6 +14,11 @@ Largest congruence subgroup, given by the full group.
 
 - [Congruence Subgroup](congruence-subgroup.md)
 
+## Proof depends on
+
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Ray Group](../../part-02/ray-group/ray-group.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.CongruenceSubgroup](../../../../../../../../../sources/v2/MathlibExt.md)

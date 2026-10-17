@@ -18,6 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Definition (Section: Fields and Vector Spaces, Bases and Dimension subsection)](../fields-and-vector-spaces/014-definition.md)
+- [Lemma (Section on spanning, linear independence, and bases)](../section-on-spanning/018-lemma.md)
 
 ## Sources
 

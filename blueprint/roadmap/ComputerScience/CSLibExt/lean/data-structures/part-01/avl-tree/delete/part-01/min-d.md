@@ -14,7 +14,7 @@ nonempty tree the result does not depend on the default: see
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../../avl-tree-2/part-01/tree.md)
 
 ## Sources
 

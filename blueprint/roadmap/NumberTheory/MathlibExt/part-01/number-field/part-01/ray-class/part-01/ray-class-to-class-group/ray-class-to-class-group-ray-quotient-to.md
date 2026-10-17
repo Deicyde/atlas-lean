@@ -14,9 +14,13 @@ Composition of the projection with the quotient map on generators.
 ## Depends on
 
 - [Ray Class Group](../group/ray-class-group.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 - [Coprime Ideal Class Map](coprime-ideal-class-map.md)
 - [Principal Ray Ideal Map](../principal-ideal/principal-ray-ideal-map.md)
 - [Ray Class To Class Group](ray-class-to-class-group.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+- [Ray Group](../../part-02/ray-group/ray-group.md)
+- [Ray One Elements](../../part-02/residue-sign/ray-one-elements.md)
 - [Ray Quotient To Ray Class Group](../quotient-to-ray-class/ray-quotient-to-ray-class-group.md)
 
 ## Proof depends on

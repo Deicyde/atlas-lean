@@ -14,7 +14,7 @@ a parallelogram of half the area.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Oriented Triangle Area](../../two-d/oriented-triangle-area.md)
 
 ## Sources
 

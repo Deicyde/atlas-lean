@@ -18,6 +18,7 @@ injectively by its cell and an offset in `Fin (2 * L + 3) ^ n`.
 ## Depends on
 
 - [Integer Cube Set](integer-cube-set.md)
+- [Unit Cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
 
 ## Proof depends on
 

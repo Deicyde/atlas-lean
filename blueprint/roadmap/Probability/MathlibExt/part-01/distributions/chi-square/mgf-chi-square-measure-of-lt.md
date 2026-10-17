@@ -15,6 +15,10 @@ MGF of a chi-square law below `1/2`.
 
 - [Chi Square Measure](chi-square-measure.md)
 
+## Proof depends on
+
+- [Mgf gamma Measure of lt](../gamma/mgf-gamma-measure-of-lt.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.ChiSquare](../../../../../../sources/v2/MathlibExt.md)

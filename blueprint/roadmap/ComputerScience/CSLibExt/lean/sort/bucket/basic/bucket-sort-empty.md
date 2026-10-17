@@ -15,6 +15,10 @@ The empty saved-bucket computation returns the empty array with zero cost.
 
 - [Bucket Sort](bucket-sort.md)
 
+## Proof depends on
+
+- [Insertion Sort](../../insertion-cost/insertion-sort.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Sort.Bucket.Basic](../../../../../../../sources/v2/CSLibExt.md)

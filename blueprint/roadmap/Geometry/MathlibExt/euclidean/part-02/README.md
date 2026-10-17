@@ -14,6 +14,7 @@ article_id: af_05ed6178914ac806537189e1
 - [Pascal Theorem](pascal-theorem.md)
 - [Pizza Theorem](pizza-theorem.md)
 - [Pompeiu](pompeiu/README.md)
+- [Ropelength](ropelength/README.md)
 - [Routh's theorem](routh.md)
 - [Sylvester Gallai](sylvester-gallai.md)
 - [Van Aubel](van-aubel/README.md)

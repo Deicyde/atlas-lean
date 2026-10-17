@@ -14,6 +14,10 @@ Primes outside the finite support of `m`, indexing the free-group generators.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.PrimeGeneration](../../../../../../../../../sources/v2/MathlibExt.md)

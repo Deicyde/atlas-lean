@@ -13,7 +13,7 @@ If $X_n$ is a submartingale with $\sup E[X_n^+] < \infty$ then as $n \to \infty$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Martingale, supermartingale, submartingale)](../lecture-29/091-martingale-supermartingale-submartingale.md)
 
 ## Sources
 

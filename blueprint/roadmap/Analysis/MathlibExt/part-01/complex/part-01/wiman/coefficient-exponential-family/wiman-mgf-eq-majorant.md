@@ -14,6 +14,7 @@ The MGF of the coefficient measure is the radial Taylor majorant.
 ## Depends on
 
 - [Wiman Coefficient Measure](wiman-coefficient-measure.md)
+- [Wiman Majorant](../radial-majorant/wiman-majorant.md)
 
 ## Proof depends on
 

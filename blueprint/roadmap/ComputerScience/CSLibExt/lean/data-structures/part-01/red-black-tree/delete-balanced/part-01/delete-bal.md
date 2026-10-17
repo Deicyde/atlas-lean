@@ -17,7 +17,7 @@ specifications `inorder_deleteBal` and `mem_deleteBal` require only
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../../../part-03/red-black-tree/part-01/tree.md)
 
 ## Proof depends on
 

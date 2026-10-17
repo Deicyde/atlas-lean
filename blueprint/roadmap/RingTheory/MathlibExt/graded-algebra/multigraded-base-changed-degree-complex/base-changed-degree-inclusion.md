@@ -12,7 +12,15 @@ Inclusion of the degree-`α` complex into the base-changed complex.
 
 ## Depends on
 
+- [Multigraded Free Resolution](../multigraded-free-resolution/multigraded-free-resolution.md)
 - [Base Changed Degree Complex](base-changed-degree-complex.md)
+- [Multigraded Polynomial Module](../multigraded-polynomial-module/multigraded-polynomial-module.md)
+- [Base Changed Complex](../multigraded-betti/base-changed-complex.md)
+
+## Proof depends on
+
+- [Multigraded Base Changed Differential](../base-changed-differential-preserves-degr.md)
+- [Base Changed Degree Piece](../multigraded-betti/base-changed-degree-piece.md)
 
 ## Sources
 

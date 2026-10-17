@@ -15,6 +15,11 @@ Given a Hermitian space $V$, for any normal linear operator $T$, there exists an
 
 - [Definition (Section: Euclidean and Hermitian Spaces, Subsection: Complex Linear Operators)](../euclidean-and-hermitian-spaces/060-definition.md)
 
+## Proof depends on
+
+- [Lemma 1](067-lemma-1.md)
+- [Lemma 2](069-lemma-2.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Section: The Spectral Theorem, Subsection: The Spectral Theorem](../../../../../sources/v1/AlgebraNotes.md)

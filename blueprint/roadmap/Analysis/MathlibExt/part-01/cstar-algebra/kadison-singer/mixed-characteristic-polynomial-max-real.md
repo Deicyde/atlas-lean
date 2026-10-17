@@ -14,12 +14,23 @@ whose sum is the identity is bounded by the Marcus--Spielman--Srivastava barrier
 
 ## Depends on
 
+- [Mixed Characteristic Polynomial](mixed-char-poly/mixed-characteristic-polynomial.md)
 - [Max Real Root](../../../../../Algebra/MathlibExt/polynomial/real-rooted/max-real-root.md)
 
 ## Proof depends on
 
+- [Eval mixed Det Polynomial](mixed-char-poly/eval-mixed-det-polynomial.md)
+- [Mixed Characteristic Polynomial is Real Rooted of pos Semidef](real-stable/mixed-characteristic-polynomial-is-real.md)
+- [Mixed Characteristic Polynomial monic](real-stable/mixed-characteristic-polynomial-monic.md)
+- [Mixed Characteristic Polynomial nat Degree](real-stable/mixed-characteristic-polynomial-nat-degr.md)
+- [Mixed Det Polynomial](mixed-char-poly/mixed-det-polynomial.md)
+- [Mixed Det Polynomial is Real Stable of pos Semidef](real-stable/mixed-det-polynomial-is-real-stable-of-p.md)
+- [Coeff one det add X smul](../../../../../LinearAlgebra/MathlibExt/matrix/part-01/mv-polynomial/coeff-one-det-add-x-smul.md)
+- [Det Linear](../../../../../LinearAlgebra/MathlibExt/matrix/part-01/mv-polynomial/det-linear.md)
 - [Is Real Stable](../../../../../Algebra/MathlibExt/mv-polynomial/stable/is-real-stable.md)
+- [Sub pderiv](../../../../../Algebra/MathlibExt/mv-polynomial/stable/sub-pderiv-2.md)
 - [Is Stable](../../../../../Algebra/MathlibExt/mv-polynomial/stable/is-stable.md)
+- [Roots im nonpos univariate Specialization](../../../../../Algebra/MathlibExt/mv-polynomial/stable/roots-im-nonpos-univariate-specializatio.md)
 - [Derivative univariate Specialization](../../../../../Algebra/MathlibExt/mv-polynomial/stable/derivative-univariate-specialization.md)
 - [Eval univariate Specialization](../../../../../Algebra/MathlibExt/mv-polynomial/stable/eval-univariate-specialization.md)
 - [Map star univariate Specialization](../../../../../Algebra/MathlibExt/mv-polynomial/stable/map-star-univariate-specialization.md)

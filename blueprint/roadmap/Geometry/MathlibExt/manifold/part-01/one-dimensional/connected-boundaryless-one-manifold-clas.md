@@ -17,6 +17,10 @@ either `Circle` or `EuclideanSpace ℝ (Fin 1)`. Source: Classification of conne
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Riemannian Metric Existence](../riemannian-metric-existence.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.OneDimensional](../../../../../../sources/v2/MathlibExt.md)

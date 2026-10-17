@@ -2,9 +2,6 @@
 article_id: af_582f7c9b5556a56f62a5639b
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
-lean: latticeDiscriminant_isFractional_and_ne_bot
 ---
 
 # Lattice Discriminant is Fractional and ne bot

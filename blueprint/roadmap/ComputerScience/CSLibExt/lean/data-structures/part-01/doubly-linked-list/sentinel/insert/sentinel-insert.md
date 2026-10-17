@@ -12,7 +12,7 @@ The four assignments of LIST-INSERT-prime, without a NIL branch.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../../basic/node.md)
 
 ## Sources
 

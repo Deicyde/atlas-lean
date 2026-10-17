@@ -14,7 +14,7 @@ this is the height index of `Valid`/`ValidRoot`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](../../../btree-2/part-01/btree.md)
 
 ## Sources
 

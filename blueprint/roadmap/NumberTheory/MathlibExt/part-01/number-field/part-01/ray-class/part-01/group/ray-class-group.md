@@ -14,6 +14,11 @@ Ray class group of a modulus: coprime ideals modulo the ray group.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Ray Group](../../part-02/ray-group/ray-group.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.Group](../../../../../../../../../sources/v2/MathlibExt.md)

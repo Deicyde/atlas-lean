@@ -8,7 +8,7 @@ lean: OrderedSetsFields.IsOrderedSet
 
 # Definition (Ordered set) (Ordered Sets & Fields section)
 
-An ordered set is a set $S$ with a relation $<$ called an "ordering" such that (1) $\forall x,y\in S$ either $x<y$, $y<x$, or $x=y$. (2) If $x<y$ and $y<z$ then $x<z$.
+An ordered set is a set $S$ with a relation $<$ called an "ordering" such that (1) $\forall x,y\in S$ either $x\lt y$, $y\lt x$, or $x=y$. (2) If $x\lt y$ and $y\lt z$ then $x\lt z$.
 
 ## Depends on
 

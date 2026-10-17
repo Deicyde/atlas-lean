@@ -14,6 +14,7 @@ when the child was pruned as an empty node.
 
 ## Depends on
 
+- [Trie](../../../part-03/trie/trie.md)
 - [Is Empty Node](is-empty-node.md)
 - [Set Child](set-child.md)
 

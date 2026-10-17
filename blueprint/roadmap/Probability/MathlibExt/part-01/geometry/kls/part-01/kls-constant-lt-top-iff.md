@@ -15,6 +15,7 @@ The KLS conjecture is equivalent to a finite real simultaneous bound.
 
 - [Inverse Cheeger Constant](inverse-cheeger-constant.md)
 - [Kls Constant](kls-constant.md)
+- [Is Isotropic Log Concave](../../thin-shell/is-isotropic-log-concave.md)
 
 ## Proof depends on
 

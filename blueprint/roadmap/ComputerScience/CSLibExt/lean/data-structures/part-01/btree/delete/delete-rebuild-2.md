@@ -16,7 +16,14 @@ built by `fromList`.
 
 ## Depends on
 
+- [BTree](../../btree-2/part-01/btree.md)
+- [Is BTree](../../btree-2/part-02/is-btree.md)
 - [Delete Rebuild](delete-rebuild.md)
+
+## Proof depends on
+
+- [From List](../../btree-2/part-02/from-list-2.md)
+- [Flatten](../../btree-2/part-01/flatten.md)
 
 ## Sources
 

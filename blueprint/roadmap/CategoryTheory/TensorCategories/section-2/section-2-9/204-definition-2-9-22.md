@@ -1,9 +1,7 @@
 ---
 article_id: af_95381686b8dc9b53853a40c9
-declaration: abbrev
+declaration: def
 origin: cited
-statement: formalized
-lean: CategoryTheory.Definition_2_9_22
 ---
 
 # Definition 2.9.22

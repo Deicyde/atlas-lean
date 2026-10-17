@@ -15,6 +15,7 @@ Let $\mathcal{O}$ be an imaginary quadratic order with discriminant $D$. The
 
 ## Depends on
 
+- [Definition 21.3](277-definition-21-3.md)
 - [Definition 12.21](../../part-01/section-12/154-definition-12-21.md)
 - [Definition 12.22](../../part-01/section-12/155-definition-12-22.md)
 - [Definition 13.11](../../part-01/section-13/166-definition-13-11.md)

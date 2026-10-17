@@ -14,7 +14,7 @@ force `χ g = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conj Class](../../burnside-paqb-reduction/conj-class.md)
 
 ## Proof depends on
 

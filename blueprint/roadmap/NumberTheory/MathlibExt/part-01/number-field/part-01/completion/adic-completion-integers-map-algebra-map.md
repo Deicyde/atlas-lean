@@ -13,7 +13,7 @@ Naturality of the adic integer map with respect to ring-of-integers maps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adic Completion Integers Map](finite-lies-over-valuation/adic-completion-integers-map.md)
 
 ## Sources
 

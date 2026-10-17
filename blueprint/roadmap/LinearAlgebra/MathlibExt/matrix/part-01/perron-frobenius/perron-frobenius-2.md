@@ -17,6 +17,10 @@ The nonzero hypothesis is not needed; see `Matrix.IsIrreducible.perron_frobenius
 
 - [To Complex Matrix](to-complex-matrix.md)
 
+## Proof depends on
+
+- [Perron frobenius](perron-frobenius.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.PerronFrobenius](../../../../../../sources/v2/MathlibExt.md)

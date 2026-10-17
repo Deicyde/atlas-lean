@@ -13,7 +13,8 @@ The actual affine span of a uniform full-dimensional body law is the whole space
 
 ## Depends on
 
-This node has no prerequisites.
+- [Full Dimensional Body](../isotropic-constant/full-dimensional-body.md)
+- [Body Law](../isotropic-constant/body-law.md)
 
 ## Sources
 

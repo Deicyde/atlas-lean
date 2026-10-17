@@ -15,6 +15,10 @@ Let $Z$ be an abelian group and $A, B \subset Z$ with $|A + B| \leq K|A|$. Then 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Ruzsa)](../ruzsa-triangle-inequality/056-ruzsa.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section: Plunnecke inequality](../../../../../sources/v1/ProjectionTheory.md)

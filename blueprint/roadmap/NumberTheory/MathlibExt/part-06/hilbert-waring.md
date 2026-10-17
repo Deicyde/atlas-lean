@@ -22,6 +22,10 @@ basis of finite order by Schnirelmann's inequality.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists additive basis of pos schnirelmann Density](../../../Combinatorics/MathlibExt/part-03/schnirelmann/exists-additive-basis-of-pos-schnirelman.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.HilbertWaring](../../../../sources/v2/MathlibExt.md)

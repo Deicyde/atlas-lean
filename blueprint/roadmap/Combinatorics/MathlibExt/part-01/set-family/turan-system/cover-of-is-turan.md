@@ -15,6 +15,10 @@ Covering projection: every `s`-set contains an edge of `H`.
 
 - [Is Turan System](is-turan-system.md)
 
+## Proof depends on
+
+- [Is Uniform](../uniform-hypergraph/is-uniform.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SetFamily.TuranSystem](../../../../../../sources/v2/MathlibExt.md)

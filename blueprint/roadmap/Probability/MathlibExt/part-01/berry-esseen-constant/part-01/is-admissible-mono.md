@@ -15,6 +15,13 @@ Larger coefficients remain admissible.
 
 - [Is Admissible](is-admissible.md)
 
+## Proof depends on
+
+- [Is Standardized Law](../../berry-esseen-model/part-01/is-standardized-law.md)
+- [Kolmogorov Error](../../berry-esseen-model/part-01/kolmogorov-error.md)
+- [Third Moment](../../berry-esseen-model/part-01/third-moment.md)
+- [Third Moment nonnegative](../../berry-esseen-model/part-01/third-moment-nonnegative.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.BerryEsseenConstant](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,12 @@ The inorder traversal of a splice appends the two traversals.
 
 ## Depends on
 
+- [Inorder](../../../part-02/binary-search-tree/part-01/inorder.md)
 - [Join](join.md)
+
+## Proof depends on
+
+- [Inorder Aux](../../../part-02/binary-search-tree/part-01/inorder-aux.md)
 
 ## Sources
 

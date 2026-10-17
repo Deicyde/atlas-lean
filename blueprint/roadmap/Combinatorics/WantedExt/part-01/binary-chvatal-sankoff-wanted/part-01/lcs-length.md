@@ -15,6 +15,10 @@ dynamic-programming implementation.
 
 - [Binary String](binary-string.md)
 
+## Proof depends on
+
+- [Longest Common Subsequence](../../../../../ComputerScience/CSLibExt/lean/dynamic-programming/longest-common-subsequence/longest-common-subsequence.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.BinaryChvatalSankoffWanted](../../../../../../sources/v2/WantedExt.md)

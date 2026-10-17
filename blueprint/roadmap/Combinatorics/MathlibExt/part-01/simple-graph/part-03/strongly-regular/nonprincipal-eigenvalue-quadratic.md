@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Combinatorics.SimpleGraph.StronglyRegularWanted._root_.SimpleGraph.IsSRGWith.nonprincipal_eigenvalue_quadratic
+lean: SimpleGraph.IsSRGWith.nonprincipal_eigenvalue_quadratic
 ---
 
 # Nonprincipal eigenvalue quadratic

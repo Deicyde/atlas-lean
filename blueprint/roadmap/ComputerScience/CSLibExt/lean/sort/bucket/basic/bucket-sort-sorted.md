@@ -15,6 +15,12 @@ Sorting the saved buckets yields a globally nondecreasing array.
 
 - [Bucket Sort](bucket-sort.md)
 
+## Proof depends on
+
+- [Insertion Sort](../../insertion-cost/insertion-sort.md)
+- [Insertion Sort perm](../../insertion-cost/insertion-sort-perm.md)
+- [Insertion Sort sorted](../../insertion-cost/insertion-sort-sorted.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Sort.Bucket.Basic](../../../../../../../sources/v2/CSLibExt.md)

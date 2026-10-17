@@ -12,7 +12,7 @@ Allocated circular sentinel and exact links at every ordered data-node split.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../../basic/node.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ Let $f$ be holomorphic in an open set $\Omega$. Then $$n(\gamma, z)\, f(z) = \fr
 
 - [Definition 1 (Lecture 13: The General Cauchy Theorem)](014-definition-1.md)
 
+## Proof depends on
+
+- [Claim 1](018-claim-1.md)
+
 ## Sources
 
 - [MIT 18.112 Functions of a Complex Variable (Fall 2008), Lecture 13: The General Cauchy Theorem](../../../../sources/v1/ComplexVariables.md)

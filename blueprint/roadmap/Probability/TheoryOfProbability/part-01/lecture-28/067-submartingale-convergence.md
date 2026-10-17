@@ -14,10 +14,12 @@ The following are equivalent for a submartingale: (1) It is uniformly integrable
 ## Depends on
 
 - [Definition (Uniform integrability)](066-uniform-integrability.md)
+- [Definition (Martingale, supermartingale, submartingale)](../../part-02/lecture-29/091-martingale-supermartingale-submartingale.md)
 
 ## Proof depends on
 
 - [Theorem (Lecture 28)](061-theorem.md)
+- [Theorem (Martingale convergence) (Lecture 27)](../../part-02/lecture-27/069-martingale-convergence.md)
 
 ## Sources
 

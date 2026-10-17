@@ -23,6 +23,10 @@ through the derived ideal of the radical.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists is Compl of is Semisimple](exists-is-compl-of-is-semisimple.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Lie.LeviDecomposition](../../../../../sources/v2/MathlibExt.md)

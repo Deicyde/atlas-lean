@@ -16,6 +16,8 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Lemma (Section: The large sieve, Subsection: Proof of Linnik's Large Sieve inequality)](023-lemma.md)
+- [Lemma (Dictionary) (Section: The large sieve, Subsection: Proof of Linnik's Large Sieve inequality)](029-dictionary.md)
+- [Lemma (previous)](../subsection-proof-of-linnik-s-large-sieve-inequal/031-previous.md)
 
 ## Sources
 

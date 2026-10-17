@@ -19,7 +19,17 @@ optimized weights and a harmonic lower bound for the diagonal sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Counting Mod](../part-02/residue-class/prime-counting-mod.md)
+
+## Proof depends on
+
+- [Level Set](../../../part-10/selberg-sieve/level-set.md)
+- [Level Sum](../../../part-10/selberg-sieve/level-sum.md)
+- [Level Weights](../../../part-10/selberg-sieve/level-weights.md)
+- [Level Weights err Sum le](../../../part-10/selberg-sieve/level-weights-err-sum-le.md)
+- [Level Weights main Sum](../../../part-10/selberg-sieve/level-weights-main-sum.md)
+- [Level Weights one](../../../part-10/selberg-sieve/level-weights-one.md)
+- [Prime Counting Mod eq card filter range](../part-02/residue-class/prime-counting-mod-eq-card-filter-range.md)
 
 ## Sources
 

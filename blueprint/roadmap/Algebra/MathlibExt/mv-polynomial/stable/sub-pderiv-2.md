@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Algebra.MvPolynomialStable._root_.MvPolynomial.IsRealStable.sub_pderiv
+lean: MvPolynomial.IsRealStable.sub_pderiv
 ---
 
 # Sub pderiv
@@ -13,7 +13,12 @@ The operator `1 - ∂ᵢ` preserves real stability.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Real Stable](is-real-stable.md)
+
+## Proof depends on
+
+- [Is Stable](is-stable.md)
+- [Sub pderiv](sub-pderiv.md)
 
 ## Sources
 

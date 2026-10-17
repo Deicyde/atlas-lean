@@ -13,11 +13,18 @@ Deletion preserves black-height balance.
 
 ## Depends on
 
+- [Balanced](../../../../part-03/red-black-tree/part-01/balanced.md)
 - [Delete Bal](../part-01/delete-bal.md)
+- [Tree](../../../../part-03/red-black-tree/part-01/tree.md)
+- [Valid](../../../../part-03/red-black-tree/part-01/valid.md)
 
 ## Proof depends on
 
+- [Color](../../../../part-03/red-black-tree/part-01/color.md)
 - [Valid delete Bal](valid-delete-bal.md)
+- [Ordered](../../../../part-03/red-black-tree/part-01/ordered.md)
+- [Red Ok](../../../../part-03/red-black-tree/part-01/red-ok.md)
+- [Color Of](../../../../part-03/red-black-tree/part-01/color-of.md)
 
 ## Sources
 

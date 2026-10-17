@@ -15,6 +15,10 @@ Compatibility alias for the former `Entry10Zetaviabernoulli.chapter7Admissible_z
 
 - [Chapter7 Admissible](chapter7-admissible.md)
 
+## Proof depends on
+
+- [Chapter7 Admissible](../part1-ch7-power-difference/chapter7-admissible.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch7Entry10Zetaviabernoulli](../../../../../../../sources/v2/MathlibExt.md)

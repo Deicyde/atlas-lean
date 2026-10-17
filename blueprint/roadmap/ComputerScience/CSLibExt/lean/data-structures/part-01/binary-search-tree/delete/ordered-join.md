@@ -14,10 +14,14 @@ smaller than every key of the right tree.
 
 ## Depends on
 
+- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
+- [Ordered](../../../part-02/binary-search-tree/part-01/ordered.md)
 - [Join](join.md)
 
 ## Proof depends on
 
+- [All](../../../part-02/binary-search-tree/part-01/all.md)
+- [All iff forall mem](../../../part-02/binary-search-tree/part-01/all-iff-forall-mem.md)
 - [Mem join](mem-join.md)
 
 ## Sources

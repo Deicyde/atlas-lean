@@ -14,7 +14,10 @@ was present, and leaves it unchanged otherwise.
 
 ## Depends on
 
+- [BTree](../../../btree-2/part-01/btree.md)
+- [Is BTree](../../../btree-2/part-02/is-btree.md)
 - [Delete](delete.md)
+- [Flatten](../../../btree-2/part-01/flatten.md)
 
 ## Proof depends on
 

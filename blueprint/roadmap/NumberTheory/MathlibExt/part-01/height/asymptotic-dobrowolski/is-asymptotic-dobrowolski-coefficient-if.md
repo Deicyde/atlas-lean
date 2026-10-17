@@ -22,6 +22,7 @@ it is below the extended-real supremum. This also covers an unbounded admissible
 - [Coe le asymptotic Dobrowolski Constant](coe-le-asymptotic-dobrowolski-constant.md)
 - [Dobrowolski Scale](dobrowolski-scale.md)
 - [Dobrowolski Scale pos](dobrowolski-scale-pos.md)
+- [Algebraic Mahler Measure](../primitive-mahler/algebraic-mahler-measure.md)
 
 ## Sources
 

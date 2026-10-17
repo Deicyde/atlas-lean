@@ -10,7 +10,7 @@ The **discriminant** of a polynomial $P(z) = z^n + a_{n-1}z^{n-1} + \cdots + a_0
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem (Fundamental Theorem of Symmetric Polynomials)](171-fundamental-theorem-of-symmetric-polynom.md)
 
 ## Sources
 

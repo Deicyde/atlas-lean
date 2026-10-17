@@ -13,6 +13,7 @@ Fix $n \geq 2$. Assume that the linear model (2.2) holds where $\varepsilon \sim
 
 ## Depends on
 
+- [Assumption INC(k)](../section-2/036-k.md)
 - [Definition 1.2](../chapter-1/002-definition-1-2.md)
 - [Definition 2.12](029-definition-2-12.md)
 

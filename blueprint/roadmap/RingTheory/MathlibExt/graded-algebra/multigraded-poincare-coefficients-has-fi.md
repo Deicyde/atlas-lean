@@ -17,6 +17,7 @@ basis index type is finite, and those types are empty above `bound`.
 
 - [Multigraded Base Change](multigraded-betti/multigraded-base-change.md)
 - [Multigraded Free Resolution](multigraded-free-resolution/multigraded-free-resolution.md)
+- [Multigraded Polynomial Module](multigraded-polynomial-module/multigraded-polynomial-module.md)
 - [Multigraded Poincare Coefficients](multigraded-poincare-coefficients/multigraded-poincare-coefficients.md)
 
 ## Proof depends on

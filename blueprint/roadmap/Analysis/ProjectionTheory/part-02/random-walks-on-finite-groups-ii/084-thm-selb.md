@@ -17,6 +17,8 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Lemma (Section: Random walks on finite groups II)](080-lemma.md)
+- [Lemma (lem-B_T)](088-lem-b-t.md)
+- [Lemma (lem-Gamma_pcap B_T)](089-lem-gamma-pcap-b-t.md)
 
 ## Sources
 

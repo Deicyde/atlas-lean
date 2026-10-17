@@ -14,7 +14,17 @@ tree valid: the new root is still no greater than every represented element.
 
 ## Depends on
 
+- [Fibonacci Tree](../../../../part-02/fibonacci-heap/part-01/fibonacci-tree.md)
+- [Valid](../../../../part-02/fibonacci-heap/part-01/valid.md)
 - [Decrease Root](decrease-root.md)
+- [Root](../../../../part-02/fibonacci-heap/part-01/root.md)
+
+## Proof depends on
+
+- [Child valid](../../../../part-02/fibonacci-heap/part-01/child-valid.md)
+- [Degree eq](../../../../part-02/fibonacci-heap/part-01/degree-eq.md)
+- [Root le](../../../../part-02/fibonacci-heap/part-01/root-le.md)
+- [Elements](../../../../part-02/fibonacci-heap/part-01/elements.md)
 
 ## Sources
 

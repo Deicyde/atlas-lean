@@ -14,6 +14,7 @@ The maximal ideals in $\mathbb{C}[x_1, \cdots, x_n]/(P_1, \cdots, P_m)$ are in b
 ## Depends on
 
 - [Proposition (Quotient Ring)](../lecture-8/105-quotient-ring.md)
+- [Definition (Maximal Ideals)](../lecture-10/109-maximal-ideals.md)
 
 ## Proof depends on
 

@@ -1,8 +1,7 @@
 ---
 article_id: af_4fb6ac25472591a2f7d89252
-declaration: def
+declaration: theorem
 origin: cited
-lean: CategoryTheory.corollary_2_10_5_part1
 ---
 
 # Corollary 2.10.5

@@ -13,6 +13,10 @@ lean: ProjectionTheory.szemeredi_trotter_proj
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Szemeredi-Trotter) (Section 'The Szemeredi-Trotter theorem')](../section-the-szemeredi-trotter-theorem/046-szemeredi-trotter.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section 1, Subsection 1.1](../../../../../sources/v1/ProjectionTheory.md)

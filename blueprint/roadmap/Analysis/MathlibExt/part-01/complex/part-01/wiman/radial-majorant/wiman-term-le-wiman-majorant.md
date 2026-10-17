@@ -14,6 +14,7 @@ Each Taylor term is bounded by the radial majorant.
 ## Depends on
 
 - [Wiman Majorant](wiman-majorant.md)
+- [Wiman Term](../../../part-02/wiman/wiman-term.md)
 
 ## Proof depends on
 

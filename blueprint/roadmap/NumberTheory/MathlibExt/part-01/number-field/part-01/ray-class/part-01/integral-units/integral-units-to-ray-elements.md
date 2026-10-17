@@ -13,10 +13,11 @@ ATLAS `valuation_algebraMap_unit_eq_one` is discharged inline below).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
 - [Integral Units To Field Units](integral-units-to-field-units.md)
 - [Mem ray Elements of valuation eq one](../finite-congruence/mem-ray-elements-of-valuation-eq-one.md)
 

@@ -17,6 +17,7 @@ This node has no prerequisites.
 
 - [Proposition 9.8](../section-9/069-proposition-9-8.md)
 - [Theorem 10.1 (Sobolev embedding)](070-sobolev-embedding.md)
+- [Lemma 10.6](075-lemma-10-6.md)
 
 ## Sources
 

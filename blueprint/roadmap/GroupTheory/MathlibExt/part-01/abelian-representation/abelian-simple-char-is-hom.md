@@ -21,6 +21,11 @@ endomorphisms are scalars, and their traces give the multiplicative character.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Character Monoid Hom](character-monoid-hom.md)
+- [Coe character Monoid Hom](coe-character-monoid-hom.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.AbelianRepresentation](../../../../../sources/v2/MathlibExt.md)

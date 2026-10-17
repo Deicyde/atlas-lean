@@ -14,7 +14,7 @@ from its parent. Deleting an absent key leaves every lookup unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trie](../../../part-03/trie/trie.md)
 
 ## Proof depends on
 

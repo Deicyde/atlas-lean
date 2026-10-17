@@ -12,7 +12,7 @@ The Minkowski functional of an origin symmetric convex body $C$ is the map $p_C 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2 (Lecture 10, Section 2)](../lecture-10/093-definition-2.md)
 
 ## Sources
 

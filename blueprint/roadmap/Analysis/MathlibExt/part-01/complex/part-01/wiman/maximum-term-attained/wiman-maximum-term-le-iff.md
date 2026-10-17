@@ -13,7 +13,8 @@ The maximum term is below a bound exactly when every Taylor term is.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Maximum Term](../../../part-02/wiman/wiman-maximum-term.md)
+- [Wiman Term](../../../part-02/wiman/wiman-term.md)
 
 ## Proof depends on
 

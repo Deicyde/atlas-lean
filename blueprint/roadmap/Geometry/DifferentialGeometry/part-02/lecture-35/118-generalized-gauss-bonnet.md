@@ -15,6 +15,10 @@ In the same situation as above, $\kappa_{\text{gauss}}^{\text{tot}} = \chi(M) \o
 - [Theorem 34.4 (no proof)](../lecture-34/113-no-proof.md)
 - [Theorem 35.1 (Hopf; no proof)](117-hopf-no-proof.md)
 
+## Proof depends on
+
+- [Theorem 35.4 (combinatorial Gauss-Bonnet; sketch proof)](120-combinatorial-gauss-bonnet-sketch-proof.md)
+
 ## Sources
 
 - [MIT 18.950 Differential Geometry (Fall 2008), Lecture 35](../../../../../sources/v1/DifferentialGeometry.md)

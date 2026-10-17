@@ -15,6 +15,10 @@ If $P$ is irreducible and $P \mid QS$, then $P \mid Q$ or $P \mid S$.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition (Maximal Ideals)](../lecture-10/109-maximal-ideals.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Lecture 11, Section: Factorization](../../../../../sources/v1/AlgebraNotes.md)

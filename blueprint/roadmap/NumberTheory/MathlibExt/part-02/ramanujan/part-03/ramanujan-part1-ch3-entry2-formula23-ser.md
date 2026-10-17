@@ -19,6 +19,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Ramanujan part1 ch3 entry2](part1-ch3-entry2/ramanujan-part1-ch3-entry2.md)
+- [Part1 Ch3 Entry2 Rightsummable](ramanujan-part1-ch3-entry2-rightsummable.md)
 
 ## Sources
 

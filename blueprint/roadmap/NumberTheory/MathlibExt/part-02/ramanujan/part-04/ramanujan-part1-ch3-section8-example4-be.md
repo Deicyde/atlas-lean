@@ -15,7 +15,7 @@ Proves `Wanted` entry `ramanujan_part1_ch3_section8_example4_bernoulli_integral`
 
 ## Depends on
 
-This node has no prerequisites.
+- [F](part1-ch3-section8-example4-integrable/f.md)
 
 ## Proof depends on
 

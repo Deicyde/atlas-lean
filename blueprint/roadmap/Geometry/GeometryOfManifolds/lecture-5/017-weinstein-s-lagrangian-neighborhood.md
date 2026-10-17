@@ -11,7 +11,8 @@ Let $(M, \omega)$ be a symplectic manifold, $i \colon X \hookrightarrow M$ a clo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../lecture-2/011-definition-7.md)
+- [Definition 8](../lecture-2/012-definition-8.md)
 
 ## Proof depends on
 

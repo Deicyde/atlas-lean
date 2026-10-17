@@ -15,6 +15,7 @@ Every admissible law contributes its inverse coefficient to the dimensional supr
 
 - [Dimensional Kls Constant](dimensional-kls-constant.md)
 - [Inverse Cheeger Constant](inverse-cheeger-constant.md)
+- [Is Isotropic Log Concave](../../thin-shell/is-isotropic-log-concave.md)
 
 ## Sources
 

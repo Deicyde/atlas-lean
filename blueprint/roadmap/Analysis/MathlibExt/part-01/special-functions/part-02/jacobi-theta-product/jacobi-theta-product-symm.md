@@ -15,6 +15,10 @@ Involutive parameter symmetry: `j(q / x; q) = j(x; q)` when `q ≠ 0`.
 
 - [Jacobi Theta Product](jacobi-theta-product.md)
 
+## Proof depends on
+
+- [Q Pochhammer Inf](../qpochhammer/q-pochhammer-inf.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.JacobiThetaProduct](../../../../../../../sources/v2/MathlibExt.md)

@@ -17,6 +17,10 @@ Let $f$ be a nonzero element of a function field $F/k$. The divisor of $f$ is $\
 - [Definition 18.9](../section-18/193-definition-18-9.md)
 - [Definition 19.1](199-definition-19-1.md)
 
+## Proof depends on
+
+- [Theorem 19.12](208-theorem-19-12.md)
+
 ## Sources
 
 - [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 19.2](../../../../../sources/v1/ArithmeticGeometry.md)

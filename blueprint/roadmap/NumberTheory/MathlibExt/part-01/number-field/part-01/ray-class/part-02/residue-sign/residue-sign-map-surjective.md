@@ -19,6 +19,7 @@ Surjectivity of the combined residue-sign map.
 
 ## Proof depends on
 
+- [Exists ne zero with target and sign](../weak-approximation/exists-ne-zero-with-target-and-sign.md)
 - [Finite Exponent](../ray-group/finite-exponent.md)
 - [Finite Residue Map](../../part-01/finite-congruence/finite-residue-map.md)
 - [Finite Residue Map apply of div eq](../../part-01/finite-congruence/finite-residue-map-apply-of-div-eq.md)

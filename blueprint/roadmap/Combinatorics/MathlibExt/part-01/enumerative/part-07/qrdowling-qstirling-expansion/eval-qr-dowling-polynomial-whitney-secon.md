@@ -16,7 +16,9 @@ qStirlingSecond k j * x ^ j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Brack](../qrwhitney-numbers/q-brack.md)
+- [Whitney Second](../qrwhitney-numbers/whitney-second.md)
+- [Qr Dowling Polynomial](../../../../../../NumberTheory/MathlibExt/part-10/qrdowling-polynomial/qr-dowling-polynomial.md)
 
 ## Proof depends on
 

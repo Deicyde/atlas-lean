@@ -6,6 +6,6 @@ article_id: af_2e4a806dc21e57a50ca367c4
 
 Reusable, fully proved extensions to Mathlib.
 
-- [AP to Associated Stirling Eulerian](part-01/README.md)
-- [Associated Stirling Second to Jaccard Lattice](part-02/README.md)
-- [KCyclic Partition to Von Szily Super Catalan](part-03/README.md)
+- [AP to Alternating Binomial Partial Sum](part-01/README.md)
+- [Associated Stirling Eulerian to Isolation Lemma](part-02/README.md)
+- [Jaccard Lattice to Von Szily Super Catalan](part-03/README.md)

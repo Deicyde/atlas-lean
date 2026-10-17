@@ -11,11 +11,12 @@ Let $K$ be an origin-symmetric convex body. Then $K$ contains a unique ellipsoid
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2 (Lecture 10, Section 2)](../lecture-10/093-definition-2.md)
 
 ## Proof depends on
 
 - [Definition 1 (Lecture 11, Section 3)](094-definition-1.md)
+- [Theorem 3 (Separating Hyperplane Theorem)](099-separating-hyperplane-theorem.md)
 
 ## Sources
 

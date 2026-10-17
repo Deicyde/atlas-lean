@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Geometry.Manifold.SubmersionCompWanted._root_.Manifold.IsSubmersionOfComplement.comp
+lean: Manifold.IsSubmersionOfComplement.comp
 ---
 
 # Comp
@@ -15,6 +15,10 @@ product complement.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Comp](comp.md)
 
 ## Sources
 

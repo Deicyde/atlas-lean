@@ -13,7 +13,12 @@ The below block counts exactly the original occurrences below the pivot.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Way Partition](../../sort/partition/three-way-partition.md)
+- [Partition3](../../sort/partition/partition3.md)
+
+## Proof depends on
+
+- [Partition3 correct](../../sort/partition/partition3-correct.md)
 
 ## Sources
 

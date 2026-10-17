@@ -13,7 +13,20 @@ Cyclic sum formula for multiple zeta-star values.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](index/index.md)
+- [Is Admissible Or Empty](series/is-admissible-or-empty.md)
+- [Entries](index/entries.md)
+- [Star Value](series/star-value.md)
+- [Strict Value](series/strict-value.md)
+
+## Proof depends on
+
+- [Depth](index/depth.md)
+- [Entry](series/entry.md)
+- [Strict Decreasing Tuple](series/strict-decreasing-tuple.md)
+- [Weakly Decreasing Tuple](series/weakly-decreasing-tuple.md)
+- [Star Summand](series/star-summand.md)
+- [Strict Summand](series/strict-summand.md)
 
 ## Sources
 

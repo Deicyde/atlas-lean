@@ -12,7 +12,7 @@ $\sum x_n$ converges absolutely if $\sum |x_n|$ converges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Series section)](097-definition.md)
 
 ## Sources
 

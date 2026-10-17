@@ -14,7 +14,8 @@ root edges belong to the original graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Strong Square Cycle](../part-03/strong-square-cycle/has-strong-square-cycle.md)
+- [Is Vertex Connected](../part-04/vertex-connectivity/is-vertex-connected.md)
 
 ## Proof depends on
 
@@ -36,11 +37,18 @@ This node has no prerequisites.
 - [Inc iff](edge-indexed-multigraph/part-01/inc-iff.md)
 - [Underlying](edge-indexed-multigraph/part-01/underlying.md)
 - [Underlying adj](edge-indexed-multigraph/part-01/underlying-adj.md)
+- [Card gt](../part-04/vertex-connectivity/card-gt.md)
 - [Contract Outside](../part-01/contraction/contract-outside-2.md)
+- [Exists cycle bound vertex](../part-03/riha/exists-cycle-bound-vertex.md)
+- [Exists cycle through](../part-04/vertex-connectivity/exists-cycle-through.md)
+- [Two le degree](../part-04/vertex-connectivity/two-le-degree.md)
+- [Is Bound Vertex](../part-03/riha/is-bound-vertex.md)
 - [Card contract Outside lt](../part-01/contraction/card-contract-outside-lt.md)
 - [Contract Outside](../part-01/contraction/contract-outside.md)
 - [Contract Outside adj none](../part-01/contraction/contract-outside-adj-none.md)
 - [Contract Outside adj some](../part-01/contraction/contract-outside-adj-some.md)
+- [Square](../part-03/square/square.md)
+- [Square adj](../part-03/square/square-adj.md)
 
 ## Sources
 

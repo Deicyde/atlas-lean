@@ -17,6 +17,7 @@ tree, by definition.
 - [Ordered](ordered.md)
 - [Tree](tree.md)
 - [To Binary Tree](to-binary-tree.md)
+- [Ordered](../../../part-02/binary-search-tree/part-01/ordered.md)
 
 ## Sources
 

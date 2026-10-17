@@ -2,6 +2,8 @@
 article_id: af_91ac869f75b8c373621ff4f7
 declaration: theorem
 origin: cited
+statement: formalized
+lean: MetaMathlibExt.noncrossingLinearKChordDiagram_shortChords_asymptoticallyNormal
 ---
 
 # Noncrossing Chord Diagram Normal Limit Wanted

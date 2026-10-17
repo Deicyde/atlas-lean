@@ -13,12 +13,21 @@ The tree produced by deletion has a black root.
 
 ## Depends on
 
+- [Color](../../../part-03/red-black-tree/part-01/color.md)
+- [Tree](../../../part-03/red-black-tree/part-01/tree.md)
+- [Color Of](../../../part-03/red-black-tree/part-01/color-of.md)
 - [Delete](delete.md)
 
 ## Proof depends on
 
+- [Balanced](../../../part-03/red-black-tree/part-01/balanced.md)
+- [Ordered](../../../part-03/red-black-tree/part-01/ordered.md)
+- [Red Ok](../../../part-03/red-black-tree/part-01/red-ok.md)
+- [Valid](../../../part-03/red-black-tree/part-01/valid.md)
 - [Del](del.md)
+- [Inorder](../../../part-03/red-black-tree/part-01/inorder.md)
 - [Rebalance](rebalance.md)
+- [Valid from List](../../../part-03/red-black-tree/part-02/valid-from-list.md)
 
 ## Sources
 

@@ -21,6 +21,11 @@ invertibility as in (3.88)-(3.89).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Det of mul](det-of-mul.md)
+- [Exists Unique has Deriv At eq continuous Linear Map](exists-unique-has-deriv-at-eq-continuous.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.ODE.LinearSystemFundamentalMatrix](../../../../../../sources/v2/MathlibExt.md)

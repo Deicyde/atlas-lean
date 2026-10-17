@@ -19,6 +19,10 @@ The actual conditional saved-bucket executor time is measurable, with no caller 
 
 - [Bucket Sort empty](../basic/bucket-sort-empty.md)
 - [Bucket Sort time](../basic/bucket-sort-time.md)
+- [Compare LE](../../insertion-cost/compare-le.md)
+- [Insertion Sort](../../insertion-cost/insertion-sort.md)
+- [Insertion Sort eq insertion Sort M](../../insertion-cost/insertion-sort-eq-insertion-sort-m.md)
+- [Insertion Sort perm](../../insertion-cost/insertion-sort-perm.md)
 
 ## Sources
 

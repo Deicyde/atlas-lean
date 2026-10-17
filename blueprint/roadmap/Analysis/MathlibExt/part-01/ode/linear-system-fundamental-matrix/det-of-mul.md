@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Analysis.ODE.LinearSystemFundamentalMatrixWanted._root_.HasDerivAt.det_of_mul
+lean: HasDerivAt.det_of_mul
 ---
 
 # Det of mul

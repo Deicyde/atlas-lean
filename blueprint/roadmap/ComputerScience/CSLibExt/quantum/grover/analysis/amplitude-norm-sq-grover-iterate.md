@@ -13,7 +13,16 @@ Every finite sequence of Grover steps preserves squared norm.
 
 ## Depends on
 
+- [Amplitude](../basic/amplitude.md)
+- [Amplitude Norm Sq](../basic/amplitude-norm-sq.md)
 - [Grover Iterate](grover-iterate.md)
+
+## Proof depends on
+
+- [Diffusion](../diffusion/diffusion.md)
+- [Grover Step](../diffusion/grover-step.md)
+- [Mean Amplitude](../diffusion/mean-amplitude.md)
+- [Phase Oracle](../basic/phase-oracle.md)
 
 ## Sources
 

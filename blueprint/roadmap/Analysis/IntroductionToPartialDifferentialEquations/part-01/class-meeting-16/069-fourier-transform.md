@@ -8,7 +8,7 @@ lean: FourierAnalysis.fourierTransformND
 
 # Definition 1.0.1 (Fourier Transform)
 
-Let $f \in L^{1}(\mathbb{R}^{n})$, i.e., $\int_{\mathbb{R}^{n}}|f(x)| d^{n} x<\infty$. The Fourier transform of $f$ is denoted by $\hat{f}$, and it is a new function of the frequency variable $\xi \in \mathbb{R}^{n}$. It is defined for each frequency $\xi$ as follows: $\hat{f}(\xi) \coloneqq \int_{\mathbb{R}^{n}} f(x) e^{-2 \pi i \xi \cdot x} d^{n} x$ where $\cdot$ denotes the Euclidean dot product, i.e., if $x=(x^{1}, \cdots, x^{n})$ and $\xi=(\xi^{1}, \cdots, \xi^{n})$, then $\xi \cdot x \coloneqq \sum_{j=1}^{n} \xi^{j} x^{j}$. In the above formula, recall that if $r$ is a real number, then $e^{ir}=\sin r+i \cos r$.
+Let $f \in L^{1}(\mathbb{R}^{n})$, i.e., $\int_{\mathbb{R}^{n}}|f(x)| d^{n} x\lt \infty$. The Fourier transform of $f$ is denoted by $\hat{f}$, and it is a new function of the frequency variable $\xi \in \mathbb{R}^{n}$. It is defined for each frequency $\xi$ as follows: $\hat{f}(\xi) \coloneqq \int_{\mathbb{R}^{n}} f(x) e^{-2 \pi i \xi \cdot x} d^{n} x$ where $\cdot$ denotes the Euclidean dot product, i.e., if $x=(x^{1}, \cdots, x^{n})$ and $\xi=(\xi^{1}, \cdots, \xi^{n})$, then $\xi \cdot x \coloneqq \sum_{j=1}^{n} \xi^{j} x^{j}$. In the above formula, recall that if $r$ is a real number, then $e^{ir}=\sin r+i \cos r$.
 
 ## Depends on
 

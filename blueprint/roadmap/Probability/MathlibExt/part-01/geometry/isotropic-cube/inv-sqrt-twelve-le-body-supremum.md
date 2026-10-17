@@ -23,6 +23,9 @@ The single actual cube already witnesses the source's global lower bound.
 - [Covariance Matrix](../isotropic-constant/covariance-matrix.md)
 - [Dimension Body Supremum](../isotropic-constant/dimension-body-supremum.md)
 - [Unit Interval Body](unit-interval-body.md)
+- [Line Isometry](../uniform-interval/line-isometry.md)
+- [Symmetric Interval](../uniform-interval/symmetric-interval.md)
+- [Uniform Interval](../uniform-interval/uniform-interval.md)
 
 ## Sources
 

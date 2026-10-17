@@ -11,7 +11,7 @@ $i^{*} \colon H^{*}(U_{1}, \mathbb{R}) \rightarrow H^{*}(X, \mathbb{R})$ is an i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem 3 (Lecture 5, Section 1 (Tubular Neighborhoods))](015-theorem-3.md)
 
 ## Sources
 

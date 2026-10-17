@@ -15,7 +15,7 @@ finite component of the quotient isomorphism.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 

@@ -15,10 +15,12 @@ no stronger reduced-quadratic criterion are asserted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Continued Fraction Eventually Periodic](../lagrange-periodic/continued-fraction-eventually-periodic.md)
+- [Is Real Quadratic Irrational](../lagrange-periodic/is-real-quadratic-irrational.md)
 
 ## Proof depends on
 
+- [Continued Fraction Eventually Periodic of is Real Quadratic Irrational](../lagrange-periodic/continued-fraction-eventually-periodic-o.md)
 - [Is Real Quadratic Irrational of continued Fraction Eventually Periodic](is-real-quadratic-irrational-of-continue.md)
 
 ## Sources

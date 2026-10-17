@@ -13,6 +13,10 @@ Let $Y$ be a set of chambers in a thick building $X$. If $Y$ is strongly isometr
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma (Section 15.5)](056-lemma.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 15.5](../../../../sources/v1/Buildings.md)

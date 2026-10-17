@@ -2,8 +2,9 @@
 article_id: af_fbabc58a05058f5653b972c3
 ---
 
-# Hyperbolic Group to Two Power Rank
+# Part 2 of 2
 
+- [HNNEmbedding](higman-neumann-neumann-embedding.md)
 - [Hyperbolic Group](hyperbolic-group/README.md)
 - [Irreducible Character Basis](irreducible-character-basis/README.md)
 - [Jordan Linear Groups](jordan-linear-groups.md)

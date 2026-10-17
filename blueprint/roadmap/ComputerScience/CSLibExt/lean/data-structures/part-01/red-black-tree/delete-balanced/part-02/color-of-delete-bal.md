@@ -13,7 +13,10 @@ The tree produced by deletion has a black root.
 
 ## Depends on
 
+- [Color](../../../../part-03/red-black-tree/part-01/color.md)
 - [Delete Bal](../part-01/delete-bal.md)
+- [Tree](../../../../part-03/red-black-tree/part-01/tree.md)
+- [Color Of](../../../../part-03/red-black-tree/part-01/color-of.md)
 
 ## Proof depends on
 

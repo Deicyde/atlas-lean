@@ -13,6 +13,9 @@ Deletion, under the name `delete`, preserves the balance invariant.
 
 ## Depends on
 
+- [Balanced](../../../avl-tree-2/part-01/balanced.md)
+- [Cache Correct](../../../avl-tree-2/part-01/cache-correct.md)
+- [Tree](../../../avl-tree-2/part-01/tree.md)
 - [Delete](../part-01/delete.md)
 
 ## Proof depends on

@@ -15,6 +15,7 @@ four fixed events. An absent query scans the complete data circle.
 ## Depends on
 
 - [Circular Represents](../basic/circular-represents.md)
+- [Node](../../basic/node.md)
 - [List Search Sentinel](list-search-sentinel.md)
 
 ## Sources

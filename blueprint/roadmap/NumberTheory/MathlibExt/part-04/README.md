@@ -2,7 +2,7 @@
 article_id: af_fb96664290a4545dfbfa57b1
 ---
 
-# Comma Sequence to Exponential Pascal Matrix
+# Comma Sequence to Even Perfect Numbers
 
 - [Comma Sequence](comma-sequence/README.md)
 - [Complementary Sequence Determined By Subsequence Sum Equation](complementary-sequence-determined-by-subsequence/README.md)
@@ -20,7 +20,7 @@ article_id: af_fb96664290a4545dfbfa57b1
 - [EKGSequence](is-ekgsequence.md)
 - [Egyptian Fraction](egyptian-fraction/README.md)
 - [Engel Expansion](engel-expansion/README.md)
+- [Erdos Minimum Overlap Constant](erdos-minimum-overlap-constant/README.md)
 - [Euler Fermat Prime Power](euler-fermat-prime-power/README.md)
 - [Euler Prime](euler-prime/README.md)
 - [Even Perfect Numbers](euler-characterization-of-even-perfect-n.md)
-- [Exponential Pascal Matrix](exponential-pascal-matrix/README.md)

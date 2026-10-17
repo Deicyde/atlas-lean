@@ -13,7 +13,7 @@ Suppose for all $n\in \mathbb{N}$ $0\leq x_n \leq y_n$. Then, (1) if $\sum y_n$ 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Series section)](../series/097-definition.md)
 
 ## Sources
 

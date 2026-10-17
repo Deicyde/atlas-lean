@@ -15,6 +15,11 @@ double black.
 ## Depends on
 
 - [BBTree](bbtree.md)
+- [Tree](../../../../part-03/red-black-tree/part-01/tree.md)
+
+## Proof depends on
+
+- [Color](../../../../part-03/red-black-tree/part-01/color.md)
 
 ## Sources
 

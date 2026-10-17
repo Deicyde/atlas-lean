@@ -14,6 +14,10 @@ Prepend into saved floor buckets, insertion-sort each bucket, then concatenate t
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Insertion Sort](../../insertion-cost/insertion-sort.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Sort.Bucket.Basic](../../../../../../../sources/v2/CSLibExt.md)

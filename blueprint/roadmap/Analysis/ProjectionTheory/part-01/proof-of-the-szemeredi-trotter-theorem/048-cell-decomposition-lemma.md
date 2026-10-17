@@ -13,6 +13,10 @@ Let $X$ be a set of points in $\mathbb{R}^2$ and pick an integer $s \geq 1$. The
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma (Ham Sandwich theorem for finite sets)](052-ham-sandwich-theorem-for-finite-sets.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Proof of the Szemeredi-Trotter theorem](../../../../../sources/v1/ProjectionTheory.md)

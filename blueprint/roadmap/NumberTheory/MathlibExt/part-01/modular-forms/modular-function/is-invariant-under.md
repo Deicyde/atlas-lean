@@ -2,8 +2,6 @@
 article_id: af_502fbc871a37511d52303999
 declaration: def
 origin: cited
-statement: formalized
-lean: ModularFunction.IsInvariantUnder
 ---
 
 # Is Invariant Under

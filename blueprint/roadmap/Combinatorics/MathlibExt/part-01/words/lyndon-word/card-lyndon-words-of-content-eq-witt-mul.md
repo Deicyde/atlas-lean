@@ -22,6 +22,7 @@ The number of Lyndon words with prescribed positive content is Witt's multigrade
 
 ## Proof depends on
 
+- [Primitive Word](../is-primitive-word.md)
 - [Primitive Words Of Content](primitive-words-of-content.md)
 - [Card words Of Content eq multinomial](card-words-of-content-eq-multinomial.md)
 - [Is Primitive Word iff nodup cyclic Permutations](is-primitive-word-iff-nodup-cyclic-permu.md)

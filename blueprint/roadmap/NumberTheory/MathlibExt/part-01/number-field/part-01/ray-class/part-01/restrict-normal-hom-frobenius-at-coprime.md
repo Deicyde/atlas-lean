@@ -15,12 +15,15 @@ only to trivialize conjugation of the lower Frobenius value.
 
 ## Depends on
 
+- [Coprime Primes](prime-generation/coprime-primes.md)
 - [Is Unramified Outside](frobenius-generators/is-unramified-outside.md)
 - [Frobenius At Coprime Prime](frobenius-generators/frobenius-at-coprime-prime.md)
 
 ## Proof depends on
 
+- [Finite Supported](../part-02/ray-group/finite-supported.md)
 - [Frobenius At Coprime Prime spec](frobenius-generators/frobenius-at-coprime-prime-spec.md)
+- [Restriction](../../../../../../../RingTheory/MathlibExt/frobenius/restrict-normal-hom-eq-of-is-arith-frob.md)
 
 ## Sources
 

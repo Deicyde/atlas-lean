@@ -16,6 +16,10 @@ Proves `Wanted` entry `ramanujan_part1_ch7_entry10_zeta4`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Riemann Zeta](../../../../../NumberTheory/MathlibExt/part-01/lseries/meromorphic-on-riemann-zeta.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch7Entry10Zeta4](../../../../../../sources/v2/MathlibExt.md)

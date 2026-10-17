@@ -14,10 +14,13 @@ parameter `k` equals `(k - 1)!` times the corresponding `r`-Stirling number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Stirling First](../../part-07/rstirling-first-alternating-expansion/r-stirling-first.md)
 
 ## Proof depends on
 
+- [Match Pred](../mesh-pattern-stirling-recursion/match-pred.md)
+- [Zero Pred](../mesh-pattern-stirling-recursion/zero-pred.md)
+- [Mesh N](../mesh-pattern-stirling-recursion/mesh-n.md)
 - [Mesh Pattern Count eq factorial mul r Stirling Number general](mesh-pattern-count-eq-factorial-mul-r-st.md)
 
 ## Sources

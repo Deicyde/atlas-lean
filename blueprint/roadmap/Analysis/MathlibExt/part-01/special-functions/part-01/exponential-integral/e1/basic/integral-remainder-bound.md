@@ -14,7 +14,7 @@ times the outer-sector cosecant factor.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E1 Asymptotic Term](../../e1-2/e1-asymptotic-term.md)
 
 ## Proof depends on
 

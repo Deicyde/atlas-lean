@@ -23,6 +23,7 @@ Inserting a key adds exactly that key to structural membership.
 - [Mem balance](../part-02/mem-balance.md)
 - [Mk Node](../part-01/mk-node.md)
 - [To Binary Tree](../part-01/to-binary-tree.md)
+- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
 
 ## Sources
 

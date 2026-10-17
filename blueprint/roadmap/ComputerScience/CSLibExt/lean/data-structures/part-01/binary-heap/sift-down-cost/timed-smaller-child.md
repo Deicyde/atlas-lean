@@ -14,6 +14,11 @@ Canonical child selection, charging one comparison when both children exist.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Heap Left](../../../part-02/binary-heap/part-01/heap-left.md)
+- [Heap Right](../../../part-02/binary-heap/part-01/heap-right.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BinaryHeap.SiftDownCost](../../../../../../../../sources/v2/CSLibExt.md)

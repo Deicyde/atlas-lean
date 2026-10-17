@@ -22,11 +22,17 @@ builds the ATLAS retraction to the abelianization through
 ## Depends on
 
 - [Coprime Primes](coprime-primes.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 - [Free Group To Coprime](free-group-to-coprime.md)
 
 ## Proof depends on
 
+- [Factorization Mul Equiv](../../../../../../../../RingTheory/MathlibExt/dedekind-domain/factorization-equiv/factorization-mul-equiv.md)
+- [Factorization Mul Equiv prime Unit Fractional Ideal](../prime-generators/factorization-mul-equiv-prime-unit-fract.md)
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
 - [Free Group To Coprime of](free-group-to-coprime-of.md)
+- [Prime Coprime Unit](../prime-generators/prime-coprime-unit.md)
+- [Prime Unit Fractional Ideal](../prime-generators/prime-unit-fractional-ideal.md)
 
 ## Sources
 

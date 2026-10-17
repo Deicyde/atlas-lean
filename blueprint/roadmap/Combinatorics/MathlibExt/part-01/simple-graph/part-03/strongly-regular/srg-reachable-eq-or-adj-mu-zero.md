@@ -22,6 +22,10 @@ result: `μ = 0` makes the graph a disjoint union of complete graphs.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Adj of adj of adj of mu zero](adj-of-adj-of-adj-of-mu-zero.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.StronglyRegular](../../../../../../../sources/v2/MathlibExt.md)

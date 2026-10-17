@@ -13,7 +13,7 @@ If $1 \leq p \leq \infty$ and $\frac{1}{p} + \frac{1}{q} = 1$, and $f, g: E \to 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition ($L^p$ norm and $L^\infty$ norm)](043-l-p-norm-and-l-infty-norm.md)
 
 ## Sources
 

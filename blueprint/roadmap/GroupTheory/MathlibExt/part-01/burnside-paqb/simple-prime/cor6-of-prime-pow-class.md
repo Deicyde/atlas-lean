@@ -16,7 +16,7 @@ with `β` an algebraic integer.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conj Class](../../burnside-paqb-reduction/conj-class.md)
 
 ## Proof depends on
 

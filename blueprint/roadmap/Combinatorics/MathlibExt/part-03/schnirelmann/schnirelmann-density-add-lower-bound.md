@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Combinatorics.Schnirelmann._root_.schnirelmannDensity_add_lower_bound
+lean: schnirelmannDensity_add_lower_bound
 ---
 
 # Schnirelmann Density add lower bound

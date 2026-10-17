@@ -16,7 +16,8 @@ and `hx_coprime`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 

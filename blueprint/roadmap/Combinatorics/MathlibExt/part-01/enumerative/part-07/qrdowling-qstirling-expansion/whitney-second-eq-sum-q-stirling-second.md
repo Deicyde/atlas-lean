@@ -15,7 +15,15 @@ Closed form of the `(q, r)`-Whitney numbers of the second kind through any famil
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Brack](../qrwhitney-numbers/q-brack.md)
+- [Whitney Second](../qrwhitney-numbers/whitney-second.md)
+
+## Proof depends on
+
+- [Whitney Second succ succ](../qrwhitney-numbers/whitney-second-succ-succ.md)
+- [Whitney Second succ zero](../qrwhitney-numbers/whitney-second-succ-zero.md)
+- [Whitney Second zero succ](../qrwhitney-numbers/whitney-second-zero-succ.md)
+- [Whitney Second zero zero](../qrwhitney-numbers/whitney-second-zero-zero.md)
 
 ## Sources
 

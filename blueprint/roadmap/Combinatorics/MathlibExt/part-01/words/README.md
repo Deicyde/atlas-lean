@@ -4,6 +4,7 @@ article_id: af_b4141296fc86e1f6fefbabd1
 
 # Words
 
+- [Automatic](automatic/README.md)
 - [Cobham Uniform Morphism](cobham-uniform-morphism/README.md)
 - [Equilibrious Word](equilibrious-word/README.md)
 - [Fibonacci Factorization](fibonacci-factorization/README.md)

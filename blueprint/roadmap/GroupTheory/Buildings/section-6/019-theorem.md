@@ -15,6 +15,10 @@ Given a Coxeter system $(W, S)$ and structure constants $a_s, b_s$, there is exa
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma (Section 6.1)](026-lemma.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 6.1](../../../../sources/v1/Buildings.md)

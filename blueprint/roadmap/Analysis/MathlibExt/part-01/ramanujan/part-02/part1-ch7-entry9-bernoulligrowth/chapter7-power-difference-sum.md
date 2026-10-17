@@ -17,6 +17,10 @@ directly.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter7 Power Difference Sum](../part1-ch7-power-difference/chapter7-power-difference-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch7Entry9Bernoulligrowth](../../../../../../../sources/v2/MathlibExt.md)

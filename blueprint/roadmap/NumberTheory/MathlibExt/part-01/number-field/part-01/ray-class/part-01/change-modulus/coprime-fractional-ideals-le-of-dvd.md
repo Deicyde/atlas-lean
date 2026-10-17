@@ -13,7 +13,11 @@ Coprime fractional ideals are antitone under modulus divisibility.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+
+## Proof depends on
+
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
 
 ## Sources
 

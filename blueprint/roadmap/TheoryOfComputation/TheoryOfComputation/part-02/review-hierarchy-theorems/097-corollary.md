@@ -20,6 +20,7 @@ $\mathsf{NL} \subsetneq \mathsf{PSPACE}$.
 - [Theorem (NL ⊆ SPACE(log² n))](../../part-01/lecture-19/085-log-n.md)
 - [Definition (SPACE and NSPACE)](../../part-01/lecture-18/086-space-and-nspace.md)
 - [Definition (SPACE complexity)](../../part-01/lecture-17/064-space-complexity.md)
+- [Theorem (Space Hierarchy Theorem)](../space-hierarchy-theorem-1-2/099-space-hierarchy-theorem.md)
 - [Definition: Turing Machine](../../part-01/lecture-5/022-definition-turing-machine.md)
 - [Definition: Decider](../../part-01/lecture-5/024-definition-decider.md)
 

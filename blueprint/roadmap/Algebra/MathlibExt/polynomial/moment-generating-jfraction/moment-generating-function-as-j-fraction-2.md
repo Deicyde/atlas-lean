@@ -26,6 +26,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Has Jacobi Fraction](../../../../NumberTheory/MathlibExt/part-06/hankel-transform/has-jacobi-fraction.md)
 - [Moment generating function as J fraction general](moment-generating-function-as-j-fraction.md)
 
 ## Sources

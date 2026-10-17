@@ -15,6 +15,10 @@ The previous algorithm finds a matching of $S$ and $T$ in $O(\log n)$ steps.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 6 (Section 3.2)](072-lemma-6.md)
+
 ## Sources
 
 - [MIT 18.409 An Algorithmist's Toolkit (Fall 2009), Section 3.2](../../../../../sources/v1/AnAlgorithmistsToolkit.md)

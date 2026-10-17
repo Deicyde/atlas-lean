@@ -38,6 +38,12 @@ Controlling source: Labib Haddad and Charles Helou,
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists abs sum residue Class div sub log le](../part-02/weak-pntarithmetic-progression/exists-abs-sum-residue-class-div-sub-log.md)
+- [Psi Residue Class](../part-02/residue-class-psi/psi-residue-class.md)
+- [Tendsto psi Residue Class div self](../part-02/weak-pntarithmetic-progression/tendsto-psi-residue-class-div-self.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.LandauRamanujan](../../../../../../sources/v2/MathlibExt.md)

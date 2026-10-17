@@ -30,6 +30,11 @@ DOI 10.1002/j.1538-7305.1950.tb00463.x.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ball](../../../../InformationTheory/MathlibExt/hamming-ball/ball.md)
+- [Card ball](../../../../InformationTheory/MathlibExt/hamming-ball/card-ball.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Coding.HammingSpherePacking](../../../../../sources/v2/MathlibExt.md)

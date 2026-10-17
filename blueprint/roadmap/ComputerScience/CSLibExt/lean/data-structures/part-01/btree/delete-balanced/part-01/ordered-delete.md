@@ -13,11 +13,15 @@ Deletion preserves orderedness of the result.
 
 ## Depends on
 
+- [BTree](../../../btree-2/part-01/btree.md)
+- [Is BTree](../../../btree-2/part-02/is-btree.md)
+- [Ordered](../../../btree-2/part-01/ordered.md)
 - [Delete](delete.md)
 
 ## Proof depends on
 
 - [Delete](delete-2.md)
+- [Ordered](../../../btree-2/part-02/ordered.md)
 
 ## Sources
 

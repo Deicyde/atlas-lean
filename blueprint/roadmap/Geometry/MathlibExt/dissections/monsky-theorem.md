@@ -20,6 +20,11 @@ count supplies a rainbow triangle whose area valuation rules out an odd number o
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [To Real volume convex Hull triangle](../../../MeasureTheory/MathlibExt/measure/lebesgue/triangle-area/to-real-volume-convex-hull-triangle.md)
+- [Volume unit Square](../../../MeasureTheory/MathlibExt/measure/lebesgue/triangle-area/volume-unit-square.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Dissections.Monsky](../../../../sources/v2/MathlibExt.md)

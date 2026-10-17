@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MetaMathlibExt._root_.intervalIntegral.integral_norm_deriv_eq_integral_norm_derivWithin_Icc
+lean: intervalIntegral.integral_norm_deriv_eq_integral_norm_derivWithin_Icc
 ---
 
 # Integral norm deriv eq integral norm deriv Within Icc

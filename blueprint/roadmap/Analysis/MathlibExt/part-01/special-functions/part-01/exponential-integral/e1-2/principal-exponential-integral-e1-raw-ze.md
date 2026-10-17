@@ -16,6 +16,11 @@ The raw kernel at `0` is `-γ` by junk values (`ein 0 = 0`,
 
 - [Principal Exponential Integral E1 Raw](principal-exponential-integral-e1-raw.md)
 
+## Proof depends on
+
+- [Ein](../../entire-exponential-integral/ein.md)
+- [Ein Term](../../entire-exponential-integral/ein-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.ExponentialIntegral.E1](../../../../../../../../sources/v2/MathlibExt.md)

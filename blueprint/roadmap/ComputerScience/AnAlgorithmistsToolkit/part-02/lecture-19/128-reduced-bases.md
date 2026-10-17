@@ -12,7 +12,7 @@ Let $\{b_1, \ldots, b_n\}$ be a basis for a lattice $L$ and let $M$ be its Gram-
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lattice)](../lecture-18/130-lattice.md)
 
 ## Sources
 

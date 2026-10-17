@@ -13,7 +13,8 @@ Normal convergence makes the real-valued sequence of sup norms summable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Converges Normally On](../../../normed/series/normal-convergence/converges-normally-on.md)
+- [Sup Norm On](../../../normed/series/normal-convergence/sup-norm-on.md)
 
 ## Sources
 

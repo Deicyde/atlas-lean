@@ -20,10 +20,18 @@ canonical strict multiple-zeta API (`MetaMathlibExt.MultipleZeta.strictValue`).
 - [Left Index is Admissible Or Empty](left-index-is-admissible-or-empty.md)
 - [Right Index](right-index.md)
 - [Right Index is Admissible Or Empty](right-index-is-admissible-or-empty.md)
+- [Strict Value](../series/strict-value.md)
 
 ## Proof depends on
 
 - [To Index](to-index.md)
+- [Index](../index/index.md)
+- [Is Admissible](../index/is-admissible.md)
+- [Is Admissible Or Empty](../series/is-admissible-or-empty.md)
+- [Depth](../index/depth.md)
+- [Entry](../series/entry.md)
+- [Strict Decreasing Tuple](../series/strict-decreasing-tuple.md)
+- [Strict Summand](../series/strict-summand.md)
 - [Convergence](../summable-strict-summand.md)
 
 ## Sources

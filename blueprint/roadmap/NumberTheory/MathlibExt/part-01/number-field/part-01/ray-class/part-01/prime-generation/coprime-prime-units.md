@@ -12,7 +12,12 @@ Prime fractional ideals coprime to `m`, as a set of coprime units.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+
+## Proof depends on
+
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
+- [Prime Coprime Unit](../prime-generators/prime-coprime-unit.md)
 
 ## Sources
 

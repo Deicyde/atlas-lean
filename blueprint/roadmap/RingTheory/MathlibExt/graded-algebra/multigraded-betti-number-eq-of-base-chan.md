@@ -17,6 +17,8 @@ in every multidegree `α` and homological index `i`.
 ## Depends on
 
 - [Multigraded Base Change](multigraded-betti/multigraded-base-change.md)
+- [Multigraded Free Resolution](multigraded-free-resolution/multigraded-free-resolution.md)
+- [Multigraded Polynomial Module](multigraded-polynomial-module/multigraded-polynomial-module.md)
 - [Multigraded Betti Number](multigraded-betti/multigraded-betti-number.md)
 
 ## Proof depends on

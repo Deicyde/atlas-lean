@@ -13,10 +13,14 @@ Deleting the same key twice has the same flattening as deleting it once.
 
 ## Depends on
 
+- [BTree](../../btree-2/part-01/btree.md)
+- [Ordered](../../btree-2/part-01/ordered.md)
 - [Delete Rebuild](delete-rebuild.md)
+- [Flatten](../../btree-2/part-01/flatten.md)
 
 ## Proof depends on
 
+- [Flatten nodup](../../btree-2/part-01/flatten-nodup.md)
 - [Flatten delete Rebuild](flatten-delete-rebuild.md)
 - [Ordered delete Rebuild](ordered-delete-rebuild.md)
 

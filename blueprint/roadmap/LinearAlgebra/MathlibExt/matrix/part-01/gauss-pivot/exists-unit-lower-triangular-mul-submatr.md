@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.LinearAlgebra.Matrix.GaussPivotWanted._root_.Matrix.exists_unitLowerTriangular_mul_submatrix_isRowEchelon
+lean: Matrix.exists_unitLowerTriangular_mul_submatrix_isRowEchelon
 ---
 
 # Exists unit Lower Triangular mul submatrix is Row Echelon

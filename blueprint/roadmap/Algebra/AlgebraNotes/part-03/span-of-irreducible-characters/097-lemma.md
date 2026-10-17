@@ -13,6 +13,7 @@ If $f$ is a class function, then $\rho(f) \in \operatorname{End}_G(\rho)$.
 
 ## Depends on
 
+- [Definition (Section: Span of Irreducible Characters)](099-definition.md)
 - [Definition (Lecture 4, Section: The Main Theorem)](../../part-02/lecture-4/090-definition.md)
 - [Definition (Section: Characters and Schur's Lemma, Subsection: Schur's Lemma)](../../part-02/characters-and-schur-s-lemma/092-definition.md)
 

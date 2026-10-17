@@ -2,7 +2,7 @@
 article_id: af_758d089851f89b0479749e59
 ---
 
-# Catalan Harmonic Generating Function to Eulerian Polynomial Hankel
+# Catalan Harmonic Generating Function to Euler Seidel Matrix
 
 - [Catalan Harmonic Generating Function](catalan-harmonic-generating-function/README.md)
 - [Catalan Larcombe French Number](catalan-larcombe-french-number.md)
@@ -13,6 +13,7 @@ article_id: af_758d089851f89b0479749e59
 - [Central Trinomial Recurrence](central-trinomial-coeff-three-term-recur.md)
 - [Chu Vandermonde Terminating Specialization](chu-vandermonde-terminating-specializati.md)
 - [Column Weight](column-weight.md)
+- [Composition Index Sets](composition-index-sets/README.md)
 - [Compositions Tribonacci](compositions-tribonacci/README.md)
 - [Connell Sequence](connell-sequence/README.md)
 - [Cubic Lattice Colored Motzkin](cubic-lattice-colored-motzkin/README.md)
@@ -23,4 +24,3 @@ article_id: af_758d089851f89b0479749e59
 - [Double Binomial Sum Reduction](double-binomial-sum-eq-single-binomial-s.md)
 - [Engel Bell Log Convexity](engel-bell-log-convexity.md)
 - [Euler Seidel Matrix](euler-seidel-matrix/README.md)
-- [Eulerian Polynomial Hankel](eulerian-polynomial-hankel-determinant.md)

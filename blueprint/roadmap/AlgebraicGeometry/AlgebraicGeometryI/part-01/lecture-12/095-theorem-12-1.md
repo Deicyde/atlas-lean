@@ -17,6 +17,7 @@ Let $X = \operatorname{Spec}(A)$ be an affine variety. Then there is an equivale
 ## Proof depends on
 
 - [Proposition 16](092-proposition-16.md)
+- [Lemma 26](../lecture-13/102-lemma-26.md)
 
 ## Sources
 

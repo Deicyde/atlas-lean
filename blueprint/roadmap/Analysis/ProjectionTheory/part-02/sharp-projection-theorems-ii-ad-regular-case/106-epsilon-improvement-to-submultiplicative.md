@@ -16,6 +16,7 @@ Fix $s, t$. For every $\alpha > 0$ there is some $\epsilon > 0$ so that either $
 ## Proof depends on
 
 - [Theorem (Plunnecke)](../../part-01/plunnecke-inequality/058-plunnecke.md)
+- [Theorem (ABC sum product theorem, Orponen-Shmerkin)](107-abc-sum-product-theorem-orponen-shmerkin.md)
 
 ## Sources
 

@@ -17,6 +17,7 @@ Let $c$ be a simple closed curve. Then $\kappa^{\text{tot}}(c) = \pm 2\pi$.
 
 ## Proof depends on
 
+- [Theorem 9.5 (Whitney)](035-whitney.md)
 - [Definition 1.2](../chapter-1-lecture-1/002-definition-1-2.md)
 
 ## Sources

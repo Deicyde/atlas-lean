@@ -13,6 +13,10 @@ $\mathrm{EQ}_{\mathrm{ROBP}} \in \mathsf{BPP}$
 
 - [Definition (The Class BPP)](../the-class-bpp/098-definition.md)
 
+## Proof depends on
+
+- [Claim (Lecture 24, section on $EQ_{ROBP} \in BPP$)](../lecture-24/110-claim.md)
+
 ## Sources
 
 - [MIT 18.404J Theory of Computation (Fall 2020), Lecture 23, Read-once Branching Programs](../../../../../sources/v1/TheoryOfComputation.md)

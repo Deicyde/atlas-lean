@@ -13,7 +13,7 @@ For all $1 \leq p \leq \infty$, $L^p(E)$ is a Banach space.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition ($L^p$ space)](045-l-p-space.md)
 
 ## Proof depends on
 

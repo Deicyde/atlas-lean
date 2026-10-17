@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.GroupTheory.AbelianRepresentationWanted._root_.FDRep.ofMonoidHom_character
+lean: FDRep.ofMonoidHom_character
 ---
 
 # Of Monoid Hom character
@@ -13,7 +13,7 @@ The character of `FDRep.ofMonoidHom φ` is `φ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Of Monoid Hom](of-monoid-hom.md)
 
 ## Sources
 

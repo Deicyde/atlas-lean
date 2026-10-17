@@ -18,7 +18,7 @@ insertion), and the terminal `huffmanTableForest` scan.
 - [Huffman Priority](../part-02/huffman-priority.md)
 - [Huffman Tree](../part-01/huffman-tree.md)
 - [Huffman Work Item](../part-02/huffman-work-item.md)
-- [Min Heap](../../../data-structures/part-01/binary-heap-2/part-02/min-heap.md)
+- [Min Heap](../../../data-structures/part-02/binary-heap/part-02/min-heap.md)
 
 ## Proof depends on
 

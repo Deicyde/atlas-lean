@@ -2,8 +2,6 @@
 article_id: af_5d4fce8cfbfbef737388ec96
 declaration: def
 origin: cited
-statement: formalized
-lean: extensionDiscriminant
 ---
 
 # Extension Discriminant
@@ -18,6 +16,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Image Of B](image-of-b.md)
+- [Lattice Discriminant](../lattice-discriminant/lattice-discriminant.md)
 
 ## Sources
 

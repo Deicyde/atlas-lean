@@ -13,10 +13,14 @@ Insertion neither allocates nor deallocates a cell, even with aliased targets.
 
 ## Depends on
 
+- [Node](../../basic/node.md)
 - [Sentinel Insert](sentinel-insert.md)
 
 ## Proof depends on
 
+- [List Insert](../../insert/list-insert.md)
+- [List Insert allocated](../../insert/list-insert-allocated.md)
+- [List Insert ret](../../insert/list-insert-ret.md)
 - [Sentinel Insert ret](sentinel-insert-ret.md)
 
 ## Sources

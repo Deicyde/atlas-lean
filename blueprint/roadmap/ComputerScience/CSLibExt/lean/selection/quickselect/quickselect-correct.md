@@ -15,6 +15,13 @@ A successful selection returns the value occupying rank `k`, including duplicate
 
 - [Quickselect](quickselect.md)
 
+## Proof depends on
+
+- [Three Way Partition](../../sort/partition/three-way-partition.md)
+- [Partition3](../../sort/partition/partition3.md)
+- [Partition3 correct](../../sort/partition/partition3-correct.md)
+- [Partition3 length](../../sort/partition/partition3-length.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Selection.Quickselect](../../../../../../sources/v2/CSLibExt.md)

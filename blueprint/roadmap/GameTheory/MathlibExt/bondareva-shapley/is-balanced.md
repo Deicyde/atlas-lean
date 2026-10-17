@@ -12,7 +12,7 @@ Balanced game via Bondareva-Shapley weights.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coop Game](../shapley-value/coop-game.md)
 
 ## Sources
 

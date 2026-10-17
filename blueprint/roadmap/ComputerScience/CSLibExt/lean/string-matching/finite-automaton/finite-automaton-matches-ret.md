@@ -14,6 +14,7 @@ The complete increasing list of zero-based shifts, including overlaps and empty 
 ## Depends on
 
 - [Finite Automaton Matches](finite-automaton-matches.md)
+- [Naive Matches](../naive/naive-matches.md)
 
 ## Proof depends on
 
@@ -22,6 +23,8 @@ The complete increasing list of zero-based shifts, including overlaps and empty 
 - [Compute Transition spec](compute-transition-spec.md)
 - [Pattern Automaton](pattern-automaton.md)
 - [Pattern Automaton state](pattern-automaton-state.md)
+- [Mem naive Matches iff](../naive/mem-naive-matches-iff.md)
+- [Naive Matches pairwise](../naive/naive-matches-pairwise.md)
 
 ## Sources
 

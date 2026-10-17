@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Keys](../../part-02/radix-trie/part-02/keys.md)
+- [Keys](../radix-trie/part-02/keys.md)
 - [Suffix Tree](suffix-tree.md)
 
 ## Sources

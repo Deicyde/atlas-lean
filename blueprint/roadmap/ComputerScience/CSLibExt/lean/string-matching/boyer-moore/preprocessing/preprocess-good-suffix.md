@@ -16,6 +16,11 @@ and, when its predecessor overlaps, a different predecessor symbol.
 
 - [Preprocess](preprocess.md)
 
+## Proof depends on
+
+- [Compute Z](../../zalgorithm/compute-z.md)
+- [Compute Z prefix iff](../../zalgorithm/compute-z-prefix-iff.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.StringMatching.BoyerMoore.Preprocessing](../../../../../../../sources/v2/CSLibExt.md)

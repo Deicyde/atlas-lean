@@ -15,6 +15,10 @@ If $R$ is Noetherian, then $R[x]$ is Noetherian.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Proposition (\ref{noetheriansubmodules})](../lecture-23/144-ref-noetheriansubmodules.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Subsection: Noetherian Rings](../../../../../sources/v1/AlgebraNotes.md)

@@ -18,6 +18,10 @@ Concept `jis_sem_8aa01797a09c6951299c4a2d`; source statements
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Pure Morphic](../pure-morphic-word/is-pure-morphic.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.MorphicWord](../../../../../../sources/v2/MathlibExt.md)

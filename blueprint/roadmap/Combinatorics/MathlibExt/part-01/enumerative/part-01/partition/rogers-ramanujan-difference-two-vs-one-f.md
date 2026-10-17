@@ -30,6 +30,16 @@ Retrieved TeX SHA-256:
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gauss Binom](../../part-03/gaussian-binomial/gauss-binom.md)
+- [Gauss Binom eq zero of lt](../../part-03/gaussian-binomial/gauss-binom-eq-zero-of-lt.md)
+- [Gauss Binom mul q Poch Fin mul q Poch Fin](../../part-03/gaussian-binomial/gauss-binom-mul-q-poch-fin-mul-q-poch-fi.md)
+- [Gauss Binom self](../../part-03/gaussian-binomial/gauss-binom-self.md)
+- [Gauss Binom succ succ](../../part-03/gaussian-binomial/gauss-binom-succ-succ.md)
+- [Gauss Binom zero right](../../part-03/gaussian-binomial/gauss-binom-zero-right.md)
+- [Q Poch Fin](../../part-03/gaussian-binomial/q-poch-fin.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.Partition.RogersRamanujan](../../../../../../../sources/v2/MathlibExt.md)

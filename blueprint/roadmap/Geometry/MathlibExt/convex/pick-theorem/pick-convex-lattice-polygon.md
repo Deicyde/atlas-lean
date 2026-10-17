@@ -23,6 +23,10 @@ full-dimensional lattice polygons, allowing strong induction on the vertex set.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [To Real volume convex Hull lattice triangle](to-real-volume-convex-hull-lattice-trian.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Convex.PickTheorem](../../../../../sources/v2/MathlibExt.md)

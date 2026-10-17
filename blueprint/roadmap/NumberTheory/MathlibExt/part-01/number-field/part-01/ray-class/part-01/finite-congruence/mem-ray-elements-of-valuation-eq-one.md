@@ -19,7 +19,12 @@ It is a reusable bridge toward N406, not itself the full source theorem.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+
+## Proof depends on
+
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 
 ## Sources
 

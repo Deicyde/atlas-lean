@@ -14,11 +14,14 @@ Deletion preserves orderedness of the result, in the form recorded by
 
 ## Depends on
 
+- [BTree](../../btree-2/part-01/btree.md)
+- [Ordered](../../btree-2/part-01/ordered.md)
 - [Delete Rebuild](delete-rebuild.md)
 
 ## Proof depends on
 
 - [Delete Rebuild](delete-rebuild-2.md)
+- [Ordered](../../btree-2/part-02/ordered.md)
 
 ## Sources
 

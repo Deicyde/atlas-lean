@@ -15,6 +15,8 @@ The solution $u$ to (2.0.16) can be represented as $u(x)=-\int_{\Omega} f(y) G(x
 
 ## Proof depends on
 
+- [Definition 1.0.1 (Class Meeting #7, Section 1 (The Fundamental Solution for $\Delta$ in $\mathbb{R}^{n}$))](../class-meeting-7/032-definition-1-0-1.md)
+- [Lemma 1.0.1 (Class Meeting #7, Section 1 (The Fundamental Solution for $\Delta$ in $\mathbb{R}^{n}$))](../class-meeting-7/033-lemma-1-0-1.md)
 - [Proposition 2.0.2 (Section 2)](037-proposition-2-0-2.md)
 - [Proposition 2.0.3 (Representation formula for $u$)](038-representation-formula-for-u.md)
 

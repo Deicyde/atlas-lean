@@ -17,6 +17,7 @@ Every successfully constructed Huffman tree supplies prefix-free codewords.
 - [Leaf Symbol](../part-01/leaf-symbol.md)
 - [Code Of Leaf](../part-01/code-of-leaf.md)
 - [Huffman](huffman.md)
+- [Is Prefix Free](../../../../../../InformationTheory/MathlibExt/prefix-free/is-prefix-free.md)
 
 ## Proof depends on
 

@@ -13,7 +13,13 @@ The selected child lies exactly one binary-tree level below its parent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Smaller Child](../../../part-02/binary-heap/part-01/smaller-child.md)
+
+## Proof depends on
+
+- [Heap Left](../../../part-02/binary-heap/part-01/heap-left.md)
+- [Heap Right](../../../part-02/binary-heap/part-01/heap-right.md)
+- [Smaller Child gt](../../../part-02/binary-heap/part-01/smaller-child-gt.md)
 
 ## Sources
 

@@ -2,7 +2,7 @@
 article_id: af_55225835c36be3e7e6360cdf
 ---
 
-# Completion to Units
+# Completion to Principal Idele
 
 - [Completion](completion/README.md)
 - [Cyclotomic](cyclotomic/README.md)
@@ -21,6 +21,6 @@ article_id: af_55225835c36be3e7e6360cdf
 - [Normalized Place](normalized-place/README.md)
 - [Order](order/README.md)
 - [Partial Dedekind Zeta](partial-dedekind-zeta.md)
+- [Place](place/README.md)
 - [Polar Density](polar-density/README.md)
 - [Principal Idele](principal-ideles-discrete.md)
-- [Units](finite-index-closure-range-of-lt-one-off.md)

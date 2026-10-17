@@ -1,10 +1,7 @@
 ---
 article_id: af_d0ca54e819f421104a213bf5
-declaration: theorem
+declaration: def
 origin: cited
-statement: formalized
-proof: formalized
-lean: mem_separableClosure_iff_isSeparable
 ---
 
 # Definition 4.17

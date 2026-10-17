@@ -16,6 +16,11 @@ initialization. This is not a word-RAM or bit-cost bound.
 
 - [Preprocess](preprocess.md)
 
+## Proof depends on
+
+- [Compute Z](../../zalgorithm/compute-z.md)
+- [Compute Z time le](../../zalgorithm/compute-z-time-le.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.StringMatching.BoyerMoore.Preprocessing](../../../../../../../sources/v2/CSLibExt.md)

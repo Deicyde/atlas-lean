@@ -16,10 +16,12 @@ cube index lies in an explicit finite box.
 ## Depends on
 
 - [Integer Cube Set](integer-cube-set.md)
+- [Unit Cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
 
 ## Proof depends on
 
 - [Mem integer Cube Set iff](mem-integer-cube-set-iff.md)
+- [Unit Cube zero mem](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube-zero-mem.md)
 
 ## Sources
 

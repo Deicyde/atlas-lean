@@ -15,6 +15,10 @@ lean: MathlibExt.Geometry.Manifold.ReebSphereWanted.IsMorseFunction
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Morse Quadratic](morse-theory/morse-quadratic.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.MorseFunction](../../../../../sources/v2/MathlibExt.md)

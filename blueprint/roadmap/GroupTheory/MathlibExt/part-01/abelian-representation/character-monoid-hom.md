@@ -3,7 +3,7 @@ article_id: af_db327d1b54779c51dc9232d1
 declaration: def
 origin: cited
 statement: formalized
-lean: MathlibExt.GroupTheory.AbelianRepresentationWanted._root_.FDRep.characterMonoidHom
+lean: FDRep.characterMonoidHom
 ---
 
 # Character Monoid Hom
@@ -14,6 +14,11 @@ a monoid homomorphism.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Character mul of simple](character-mul-of-simple.md)
+- [Finrank eq one of is Mul Commutative](finrank-eq-one-of-is-mul-commutative.md)
 
 ## Sources
 

@@ -32,6 +32,10 @@ S-adic integrality step supplied by valuation divisibility and a finite pigeonho
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Roth Auxiliary](finite-of-divisible-approximations.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.RidoutPadicRoth](../../../../sources/v2/MathlibExt.md)

@@ -13,8 +13,18 @@ The inorder traversal of a nonempty tree starts with its minimum.
 
 ## Depends on
 
+- [Tree](../../../avl-tree-2/part-01/tree.md)
 - [Erase Min](erase-min.md)
+- [Inorder](../../../avl-tree-2/part-01/inorder.md)
 - [Min D](min-d.md)
+
+## Proof depends on
+
+- [Balance](../../../avl-tree-2/part-01/balance.md)
+- [Inorder balance](../../../avl-tree-2/part-02/inorder-balance.md)
+- [To Binary Tree](../../../avl-tree-2/part-01/to-binary-tree.md)
+- [Inorder](../../../../part-02/binary-search-tree/part-01/inorder.md)
+- [Inorder Aux](../../../../part-02/binary-search-tree/part-01/inorder-aux.md)
 
 ## Sources
 

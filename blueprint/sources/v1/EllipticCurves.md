@@ -12,12 +12,13 @@ ATLAS v1 selected 360 statements from this source in
 matched to each in [`report.json`](https://github.com/facebookresearch/atlas-lean/blob/main/v1/Atlas/EllipticCurves/report.json). Each roadmap article
 reproduces one target's statement and the source location it names.
 
-705 roadmap edges come from the source text rather than
+706 roadmap edges come from the source text rather than
 the Lean code; each is recorded with its evidence in
 [`book-dependencies/EllipticCurves.json`](book-dependencies/EllipticCurves.json).
 
-14 dependencies point to a statement placed later in this
-wiki and are not drawn as roadmap edges, which keeps every chapter acyclic.
+2 candidate dependencies are not drawn because adding
+them would create a cycle between source statements. Every other verified
+dependency is retained, including relations in both directions between chapters.
 
 ## Targets without a linked Lean declaration
 
@@ -33,9 +34,10 @@ or a root library declares the same name.
 | Definition 4.44 | `isNoetherianRing_iff_every_ideal_fg` |
 | Theorem 4.45 (Hilbert basis theorem) | `hilbert_basis_theorem` |
 | Theorem 4.50 (weak Nullstellensatz) | `weak_nullstellensatz` |
+| Definition 12.22 | `IsOrder` |
+| Theorem 14.30 (Liouville's Theorem) | `liouville_theorem` |
 | Definition 17.17 | `ImaginaryQuadraticDiscriminant.IsImaginaryQuadraticDiscriminant` |
 | Definition 19.1 | `ModularFunction.IsMeromorphicAtCusps` |
 | Definition 19.2 | `IsModularFunction` |
-| Corollary 19.10 | `ModularFunctionField.corollary_19_10` |
 | Definition 22.10 | `IsogenyVolcano` |
 | Definition 23.4 | `DiscreteValuation` |

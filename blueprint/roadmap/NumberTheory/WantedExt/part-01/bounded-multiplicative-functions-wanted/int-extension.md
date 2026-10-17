@@ -3,7 +3,7 @@ article_id: af_3b95d0360d539c14eb91b785
 declaration: def
 origin: cited
 statement: formalized
-lean: MathlibExt.NumberTheory.BoundedMultiplicativeFunctionsWanted.BoundedMultiplicativeFunctions._root_.ArithmeticFunction.intExtension
+lean: ArithmeticFunction.intExtension
 ---
 
 # Int Extension

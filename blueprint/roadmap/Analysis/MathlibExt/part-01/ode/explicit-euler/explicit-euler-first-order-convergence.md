@@ -20,6 +20,11 @@ above and Mathlib's discrete Grönwall inequality then give the first-order glob
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ode global exists of global lipschitz](../maximal-solution/ode-global-exists-of-global-lipschitz.md)
+- [Exists explicit Euler local Truncation Error le](exists-explicit-euler-local-truncation-e.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.ODE.ExplicitEuler](../../../../../../sources/v2/MathlibExt.md)

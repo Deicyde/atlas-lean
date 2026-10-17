@@ -20,6 +20,10 @@ decomposition and combines the resulting radical representation with the adjoint
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Levi decomposition](levi-decomposition/levi-decomposition.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Lie.Ado](../../../../sources/v2/MathlibExt.md)

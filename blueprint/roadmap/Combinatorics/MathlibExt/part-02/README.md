@@ -2,8 +2,9 @@
 article_id: af_4b7f57d2d1b1257f1b5c82fe
 ---
 
-# Associated Stirling Second to Jaccard Lattice
+# Associated Stirling Eulerian to Isolation Lemma
 
+- [Associated Stirling Eulerian](associated-stirling-eulerian/README.md)
 - [Associated Stirling Second](associated-stirling-second/README.md)
 - [Baranyai](baranyai-theorem.md)
 - [Bell Permutations Second Kind](bell-perm-second-kind-weak-excedance-eq.md)
@@ -23,4 +24,3 @@ article_id: af_4b7f57d2d1b1257f1b5c82fe
 - [Howard Potential Polynomial](howard-potential-polynomial/README.md)
 - [Isogeny Volcano](isogeny-volcano/README.md)
 - [Isolation Lemma](isolation-lemma.md)
-- [Jaccard Lattice](jaccard-lattice/README.md)

@@ -13,7 +13,7 @@ A positive constant density on a measurable convex set is log-concave.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Log Concave Density](../thin-shell/is-log-concave-density.md)
 
 ## Sources
 

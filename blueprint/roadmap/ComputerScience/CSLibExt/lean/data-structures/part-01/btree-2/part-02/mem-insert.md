@@ -22,6 +22,8 @@ Inserting a key adds exactly that key to membership.
 
 - [Flatten](../part-01/flatten.md)
 - [Flatten insert](flatten-insert.md)
+- [Mem ordered Insert](../../../part-02/ordered-insert/mem-ordered-insert.md)
+- [Ordered Insert](../../../part-02/ordered-insert/ordered-insert.md)
 
 ## Sources
 

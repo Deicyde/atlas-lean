@@ -27,6 +27,8 @@ Insertion preserves the strict search-tree invariant.
 - [Mem insert](mem-insert.md)
 - [Ordered balance](../part-02/ordered-balance.md)
 - [To Binary Tree](../part-01/to-binary-tree.md)
+- [All](../../../part-02/binary-search-tree/part-01/all.md)
+- [Ordered](../../../part-02/binary-search-tree/part-01/ordered.md)
 
 ## Sources
 

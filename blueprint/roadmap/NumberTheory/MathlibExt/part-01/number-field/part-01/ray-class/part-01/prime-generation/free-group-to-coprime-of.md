@@ -14,7 +14,10 @@ Generator computation for `freeGroupToCoprime`.
 ## Depends on
 
 - [Coprime Primes](coprime-primes.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
 - [Free Group To Coprime](free-group-to-coprime.md)
+- [Prime Coprime Unit](../prime-generators/prime-coprime-unit.md)
 
 ## Sources
 

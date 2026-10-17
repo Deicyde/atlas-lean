@@ -13,7 +13,12 @@ Structure constants are constant on conjugacy classes.
 
 ## Depends on
 
+- [Conj Class](../../burnside-paqb-reduction/conj-class.md)
 - [Struct Const](struct-const.md)
+
+## Proof depends on
+
+- [Conj mem conj Class](../../burnside-paqb-reduction/conj-mem-conj-class.md)
 
 ## Sources
 

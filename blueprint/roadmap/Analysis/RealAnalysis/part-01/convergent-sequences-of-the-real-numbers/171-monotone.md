@@ -11,7 +11,7 @@ A sequence $\{x_n\}$ is monotone increasing if $\forall n\in \mathbb{N}$, $x_{n}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sequence of Reals) (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/021-sequence-of-reals.md)
 
 ## Sources
 

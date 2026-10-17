@@ -13,8 +13,10 @@ Unfolding of `IsEquivalent` to the intersection formula.
 
 ## Depends on
 
+- [To Ambient Subgroup](../congruence-subgroup/to-ambient-subgroup.md)
 - [Congruence Subgroup Pair](congruence-subgroup-pair.md)
 - [Is Equivalent](is-equivalent.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 
 ## Sources
 

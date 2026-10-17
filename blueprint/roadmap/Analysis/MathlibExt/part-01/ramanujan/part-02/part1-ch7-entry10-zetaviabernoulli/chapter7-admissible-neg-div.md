@@ -13,7 +13,7 @@ The points `-k/n`, `1 ≤ k ≤ n - 1`, at which the left side evaluates `φ`, a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter7 Admissible](../part1-ch7-power-difference/chapter7-admissible.md)
 
 ## Sources
 

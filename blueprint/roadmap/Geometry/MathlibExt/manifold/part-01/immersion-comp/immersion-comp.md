@@ -20,6 +20,10 @@ complements, then package the resulting fixed-complement immersion.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Comp](comp-4.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.ImmersionComp](../../../../../../sources/v2/MathlibExt.md)

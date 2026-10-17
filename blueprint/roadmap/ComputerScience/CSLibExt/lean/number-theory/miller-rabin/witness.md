@@ -1,0 +1,20 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.MillerRabin.witness
+---
+
+# Witness
+
+CLRS `WITNESS(a, n)`. For a base with `0 < a < n`, `true` proves `n` composite
+(`not_prime_of_witness`); outside that range the answer carries no such guarantee (for example
+`witness 2 2 = true`), as in CLRS, whose bases are drawn from `1, …, n - 1`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.NumberTheory.MillerRabin](../../../../../../sources/v2/CSLibExt.md)

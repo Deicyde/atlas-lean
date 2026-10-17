@@ -13,7 +13,8 @@ Eventually the maximum Taylor term is greater than one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Transcendental](../../../part-02/wiman/is-transcendental.md)
+- [Wiman Maximum Term](../../../part-02/wiman/wiman-maximum-term.md)
 
 ## Proof depends on
 

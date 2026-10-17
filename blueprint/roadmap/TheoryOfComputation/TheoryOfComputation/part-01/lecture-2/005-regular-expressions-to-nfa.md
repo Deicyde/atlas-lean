@@ -21,6 +21,7 @@ This node has no prerequisites.
 - [Theorem (Closure under star)](003-closure-under-star.md)
 - [Theorem (Closure under union)](../lecture-1/001-closure-under-union.md)
 - [Theorem (NFA to DFA conversion)](004-nfa-to-dfa-conversion.md)
+- [Definition (Nondeterministic Finite Automaton)](009-nondeterministic-finite-automaton.md)
 
 ## Sources
 

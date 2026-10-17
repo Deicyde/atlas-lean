@@ -21,6 +21,10 @@ Section 9.1.3.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nonprincipal eigenvalue quadratic](nonprincipal-eigenvalue-quadratic.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SimpleGraph.StronglyRegular](../../../../../../../sources/v2/MathlibExt.md)

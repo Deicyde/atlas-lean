@@ -19,12 +19,14 @@ finite remainder.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polygonal Number](../../part-09/polygonal-number/polygonal-number.md)
 
 ## Proof depends on
 
 - [Exists eq add add triangular](exists-eq-add-add-triangular.md)
 - [Exists sum four sq eq and sum eq of odd](exists-sum-four-sq-eq-and-sum-eq-of-odd.md)
+- [Polygonal Number four](../../part-09/polygonal-number/polygonal-number-four.md)
+- [Polygonal Number one](../../part-09/polygonal-number/polygonal-number-one.md)
 
 ## Sources
 

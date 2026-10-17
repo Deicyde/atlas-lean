@@ -2,9 +2,6 @@
 article_id: af_ab96709dddfc7749a9f1dd5b
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
-lean: Polynomial.IsPrimitivePolynomial.irreducible
 ---
 
 # Irreducible

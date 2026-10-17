@@ -12,7 +12,7 @@ Let $K$ and $L$ be two convex bodies. The Banach--Mazur distance $d(K, L)$ is th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2 (Lecture 10, Section 2)](../lecture-10/093-definition-2.md)
 
 ## Sources
 

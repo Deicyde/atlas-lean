@@ -14,6 +14,7 @@ An identity is absent exactly when no heap entry carries it.
 ## Depends on
 
 - [Indexed Min Queue](../basic/indexed-min-queue.md)
+- [Min Heap](../../../part-02/binary-heap/part-02/min-heap.md)
 
 ## Sources
 

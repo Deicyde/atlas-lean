@@ -13,7 +13,7 @@ If $f \in L^2(\mathbb{R}) \cap L^1(\mathbb{R})$, then the definition by continui
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corollary 2 (Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$)](011-corollary-2.md)
 
 ## Sources
 

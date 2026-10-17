@@ -14,10 +14,17 @@ root of the mixed characteristic polynomial of the covariance matrices.
 
 ## Depends on
 
+- [Mixed Characteristic Polynomial](../mixed-char-poly/mixed-characteristic-polynomial.md)
 - [Max Real Root](../../../../../../Algebra/MathlibExt/polynomial/real-rooted/max-real-root.md)
 
 ## Proof depends on
 
+- [Mixed Characteristic Polynomial eq charpoly sum of eq vec Mul Vec](../mixed-char-poly/mixed-characteristic-polynomial-eq-charp.md)
+- [Mixed Characteristic Polynomial is Real Rooted of pos Semidef](../real-stable/mixed-characteristic-polynomial-is-real.md)
+- [Mixed Characteristic Polynomial monic](../real-stable/mixed-characteristic-polynomial-monic.md)
+- [Mixed Characteristic Polynomial nat Degree](../real-stable/mixed-characteristic-polynomial-nat-degr.md)
+- [Mixed Characteristic Polynomial update affine](../mixed-char-poly/mixed-characteristic-polynomial-update-a.md)
+- [Mixed Characteristic Polynomial update sum](../mixed-char-poly/mixed-characteristic-polynomial-update-s.md)
 - [Is Real Rooted](../../../../../../Algebra/MathlibExt/polynomial/real-rooted/is-real-rooted.md)
 - [Exists max Real Root le weighted Sum of segment real Rooted](../../../../../../Algebra/MathlibExt/polynomial/interlacing/exists-max-real-root-le-weighted-sum-of-2.md)
 

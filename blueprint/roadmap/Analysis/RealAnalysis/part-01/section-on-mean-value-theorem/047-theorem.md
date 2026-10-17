@@ -13,7 +13,8 @@ If $f:[a,b]\to \mathbb{R}$ has a relative max or min at $c\in (a,b)$ and $f$ is 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section on Derivative)](../section-on-derivative/050-definition.md)
+- [Definition (Relative Maximum/Minimum) (Section on Mean Value Theorem)](056-relative-maximum-minimum.md)
 
 ## Sources
 

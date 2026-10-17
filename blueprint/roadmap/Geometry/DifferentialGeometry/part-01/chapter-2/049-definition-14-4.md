@@ -8,7 +8,7 @@ lean: meanCurvature
 
 # Definition 14.4
 
-Let $\lambda_{1}, \ldots, \lambda_{n}$ be the principal curvatures of $f$ at $x$. The mean curvature is $\kappa_{\text{mean}} = \lambda_{1} + \cdots + \lambda_{n} = \operatorname{trace}(L)$. The Gauss curvature is $\kappa_{\text{gauss}} = \lambda_{1} \cdots \lambda_{n} = \operatorname{det}(L) = \operatorname{det}(H) / \operatorname{det}(G)$. The scalar curvature is $\kappa_{\text{scalar}} = \sum_{i<j} \lambda_{i} \lambda_{j} = \frac{1}{2}\left(\operatorname{trace}(L)^{2} - \operatorname{trace}(L^{2})\right)$.
+Let $\lambda_{1}, \ldots, \lambda_{n}$ be the principal curvatures of $f$ at $x$. The mean curvature is $\kappa_{\text{mean}} = \lambda_{1} + \cdots + \lambda_{n} = \operatorname{trace}(L)$. The Gauss curvature is $\kappa_{\text{gauss}} = \lambda_{1} \cdots \lambda_{n} = \operatorname{det}(L) = \operatorname{det}(H) / \operatorname{det}(G)$. The scalar curvature is $\kappa_{\text{scalar}} = \sum_{i\lt j} \lambda_{i} \lambda_{j} = \frac{1}{2}\left(\operatorname{trace}(L)^{2} - \operatorname{trace}(L^{2})\right)$.
 
 ## Depends on
 

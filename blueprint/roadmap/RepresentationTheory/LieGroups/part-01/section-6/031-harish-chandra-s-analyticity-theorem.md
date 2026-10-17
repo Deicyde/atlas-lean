@@ -18,7 +18,9 @@ If $V$ is an admissible representation of a semisimple Lie group $G$ with maxima
 ## Proof depends on
 
 - [Definition 2.1](../section-2/005-definition-2-1.md)
+- [Definition 6.4](032-definition-6-4.md)
 - [Proposition 5.4](../section-5/025-proposition-5-4.md)
+- [Corollary 6.7](034-corollary-6-7.md)
 - [Proposition 4.13](../section-4/022-proposition-4-13.md)
 
 ## Sources

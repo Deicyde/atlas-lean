@@ -13,6 +13,10 @@ Let $A$ and $B$ be subsets of an abelian group and suppose $X \subset A \times B
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma (Key Lemma)](070-key-lemma.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section: Proof of the Balog-Szemeredi-Gowers Theorem](../../../../../sources/v1/ProjectionTheory.md)

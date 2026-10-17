@@ -14,7 +14,12 @@ via `Equiv.ofBijective` on the coordinatewise cast map.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice Point Set](../lattice-point-enumerator/lattice-point-set.md)
+
+## Proof depends on
+
+- [Mem std Lattice iff](../lattice-point-enumerator/mem-std-lattice-iff.md)
+- [Std Lattice](../lattice-point-enumerator/std-lattice.md)
 
 ## Sources
 

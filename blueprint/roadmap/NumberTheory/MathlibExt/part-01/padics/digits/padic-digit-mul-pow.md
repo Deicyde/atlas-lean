@@ -2,9 +2,6 @@
 article_id: af_7473351f174597c01625a81b
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
-lean: PadicInt.padicDigit_mul_pow
 ---
 
 # Padic Digit mul pow

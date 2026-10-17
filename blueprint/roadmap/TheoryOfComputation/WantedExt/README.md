@@ -11,4 +11,5 @@ Established results whose Lean implementation or proof is deferred.
 - [Cook Levin SATWanted](cook-levin-sat-np-complete.md)
 - [Integer Multiplication Wanted](integer-multiplication-wanted/README.md)
 - [Permute To Unimodal Wanted](permute-to-unimodal-wanted/README.md)
+- [Real Closed Field QEWanted](real-closed-field-qewanted/README.md)
 - [Turing Recursive Wanted](turing-recursive-equiv.md)

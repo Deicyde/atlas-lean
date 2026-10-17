@@ -14,7 +14,12 @@ at every finite prime supported by `m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+
+## Proof depends on
+
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 
 ## Sources
 

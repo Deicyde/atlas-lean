@@ -15,6 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Proposition 20.7](400-proposition-20-7.md)
 - [Corollary 10.17](../section-10/215-corollary-10-17.md)
 - [Corollary 10.18](../section-10/216-corollary-10-18.md)
 

@@ -22,6 +22,7 @@ Reusable, fully proved extensions to Mathlib.
 - [Lipschitz Image Cube Count](lipschitz-image-cube-count/README.md)
 - [Metric](metric/README.md)
 - [Moser Worm Cover](moser-worm-cover/README.md)
+- [Moving Sofa](moving-sofa/README.md)
 - [Sphere Packing Density Four](sphere-packing-density-four/README.md)
 - [Steiner Ratio](steiner-ratio/README.md)
 - [Two D](two-d/README.md)

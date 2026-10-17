@@ -20,11 +20,13 @@ bounds for the squarefree-totient sum and the choice
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Counting Mod](../part-02/residue-class/prime-counting-mod.md)
 
 ## Proof depends on
 
 - [Arithmetic Large Sieve](arithmetic-large-sieve-progression.md)
+- [Squarefree Totient Weighted](../part-02/squarefree-totient-weighted-lower.md)
+- [Prime Counting Mod eq card filter range](../part-02/residue-class/prime-counting-mod-eq-card-filter-range.md)
 
 ## Sources
 

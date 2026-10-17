@@ -17,6 +17,7 @@ This node has no prerequisites.
 
 - [Theorem (Kolmogorov zero-one law)](../lecture-10/024-kolmogorov-zero-one-law.md)
 - [Definition (tail σ-algebra)](../lecture-10/033-tail-algebra.md)
+- [Theorem (Hewitt-Savage 0-1 law)](056-hewitt-savage-0-1-law.md)
 
 ## Sources
 

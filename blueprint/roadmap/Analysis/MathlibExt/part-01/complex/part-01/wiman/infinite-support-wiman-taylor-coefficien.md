@@ -13,7 +13,12 @@ A transcendental entire function has infinitely many nonzero Taylor coefficients
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Transcendental](../../part-02/wiman/is-transcendental.md)
+- [Wiman Taylor Coefficient](../../part-02/wiman/wiman-taylor-coefficient.md)
+
+## Proof depends on
+
+- [Taylor Expansion](has-sum-wiman-taylor-coefficient-mul-pow.md)
 
 ## Sources
 

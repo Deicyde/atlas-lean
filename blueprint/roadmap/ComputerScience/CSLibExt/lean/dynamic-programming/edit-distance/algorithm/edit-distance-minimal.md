@@ -13,7 +13,18 @@ No valid edit script costs less than the reported distance.
 
 ## Depends on
 
+- [Edit Distance Cost](../script/edit-distance-cost.md)
+- [Edit Distance Result](../script/edit-distance-result.md)
+- [Edit Script](../script/edit-script.md)
+- [Transforms](../script/transforms.md)
+- [Cost](../script/cost-2.md)
 - [Edit Distance](edit-distance.md)
+
+## Proof depends on
+
+- [Apply?](../script/apply.md)
+- [Edit Step](../script/edit-step.md)
+- [Cost](../script/cost.md)
 
 ## Sources
 

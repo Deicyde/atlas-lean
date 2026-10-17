@@ -15,6 +15,10 @@ The arithmetic large sieve for primes in one progression.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Weighted Large Sieve](../part-02/weighted-large-sieve.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.ArithmeticLargeSieve](../../../../../../sources/v2/MathlibExt.md)

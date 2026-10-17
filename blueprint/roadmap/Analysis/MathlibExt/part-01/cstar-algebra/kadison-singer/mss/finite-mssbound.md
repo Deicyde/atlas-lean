@@ -13,12 +13,14 @@ Finite-support Marcus--Spielman--Srivastava bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite MSSBound](../paving/finite-mssbound.md)
 
 ## Proof depends on
 
 - [Exists outcome max Real Root le mixed Characteristic Polynomial](exists-outcome-max-real-root-le-mixed-ch.md)
+- [Mixed Characteristic Polynomial](../mixed-char-poly/mixed-characteristic-polynomial.md)
 - [Barrier](../mixed-characteristic-polynomial-max-real.md)
+- [L2 op Norm eq max Real Root charpoly](../../../matrix/spectrum/l2-op-norm-eq-max-real-root-charpoly.md)
 - [Max Real Root](../../../../../../Algebra/MathlibExt/polynomial/real-rooted/max-real-root.md)
 
 ## Sources

@@ -13,6 +13,10 @@ Let $X_1 \in \Omega_1, \ldots, X_n \in \Omega_n$ be independent random variables
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 9.2.9 (Azuma's inequality for Doob martingales)](../chapter-9-section-9-2/129-azuma-s-inequality-for-doob-martingales.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 9, Section 9.1](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

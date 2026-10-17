@@ -15,6 +15,7 @@ If $P(D)$ is hypoelliptic then $\operatorname{sing\,supp}(u) = \operatorname{sin
 
 ## Proof depends on
 
+- [Lemma 11.10](085-lemma-11-10.md)
 - [Theorem 11.6 (Hörmander, Theorem 4.1.1)](../section-11/081-h-rmander-theorem-4-1-1.md)
 
 ## Sources

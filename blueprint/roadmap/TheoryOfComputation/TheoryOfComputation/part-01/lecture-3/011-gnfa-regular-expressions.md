@@ -13,7 +13,7 @@ Every GNFA $G$ has an equivalent regular expression $R$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Generalized Nondeterministic Finite Automaton)](012-generalized-nondeterministic-finite-auto.md)
 
 ## Sources
 

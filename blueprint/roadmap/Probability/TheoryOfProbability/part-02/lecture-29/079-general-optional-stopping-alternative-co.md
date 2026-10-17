@@ -12,6 +12,7 @@ Let $X_n$ be a uniformly integrable submartingale. If $E|X_n| < \infty$ and $X_n
 ## Depends on
 
 - [Definition (Uniform integrability)](../../part-01/lecture-28/066-uniform-integrability.md)
+- [Definition (Martingale, supermartingale, submartingale)](091-martingale-supermartingale-submartingale.md)
 
 ## Sources
 

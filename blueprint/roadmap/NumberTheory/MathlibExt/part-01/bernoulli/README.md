@@ -6,6 +6,7 @@ article_id: af_3cd57d69da617cbcbfc0969d
 
 - [Abel Bernoulli Sums](abel-bernoulli-sum.md)
 - [Abel Hurwitz Bernoulli](abel-hurwitz-bernoulli-multinomial.md)
+- [Bernoulli Second Kind](bernoulli-second-kind/README.md)
 - [Bernoulli Second Kind Asymptotic](bernoulli-second-kind-asymptotic.md)
 - [Carlitz Identity](carlitz-bernoulli-sum-symm.md)
 - [Euler Bernoulli Convolution](euler-bernoulli-convolution.md)

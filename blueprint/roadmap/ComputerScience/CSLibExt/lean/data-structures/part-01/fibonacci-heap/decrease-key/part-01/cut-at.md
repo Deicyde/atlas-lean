@@ -14,7 +14,7 @@ remainder of the tree with ancestors rebuilt and degrees corrected. The remainde
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Tree](../../../../part-02/fibonacci-heap/part-01/fibonacci-tree.md)
 
 ## Sources
 

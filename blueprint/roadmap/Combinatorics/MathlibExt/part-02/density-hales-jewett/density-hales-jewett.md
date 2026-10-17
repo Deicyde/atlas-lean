@@ -31,6 +31,7 @@ This node has no prerequisites.
 - [Comp Line apply](comp-line-apply.md)
 - [Comp apply](comp-apply.md)
 - [Comp comp Line](comp-comp-line.md)
+- [Exists lines mono in high dimension fin](exists-lines-mono-in-high-dimension-fin.md)
 
 ## Sources
 

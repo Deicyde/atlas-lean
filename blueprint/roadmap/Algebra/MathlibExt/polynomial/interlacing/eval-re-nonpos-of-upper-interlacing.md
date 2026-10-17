@@ -15,6 +15,12 @@ is nonpositive.
 ## Depends on
 
 - [Has Upper Interlacing Point](has-upper-interlacing-point.md)
+- [Is Real Rooted](../real-rooted/is-real-rooted.md)
+- [Max Real Root](../real-rooted/max-real-root.md)
+
+## Proof depends on
+
+- [Coe max Real Root mem roots](../real-rooted/coe-max-real-root-mem-roots.md)
 
 ## Sources
 

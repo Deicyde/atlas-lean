@@ -15,6 +15,10 @@ If $A$ is a regular language, so is $A^*$ (the class of regular languages is clo
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition (Nondeterministic Finite Automaton)](009-nondeterministic-finite-automaton.md)
+
 ## Sources
 
 - [MIT 18.404J Theory of Computation (Fall 2020), Lecture 2, Closure under * (star)](../../../../../sources/v1/TheoryOfComputation.md)

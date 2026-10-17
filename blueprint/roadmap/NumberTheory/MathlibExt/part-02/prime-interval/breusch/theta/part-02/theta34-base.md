@@ -15,6 +15,10 @@ Primorial base cases below `133`, reduced to checked interval endpoints.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theta Base Cases](../../theta34-of-interval.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeInterval.Breusch.Theta](../../../../../../../../sources/v2/MathlibExt.md)

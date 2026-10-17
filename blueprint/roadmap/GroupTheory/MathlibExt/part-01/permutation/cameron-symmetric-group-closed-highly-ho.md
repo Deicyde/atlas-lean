@@ -30,7 +30,12 @@ infinite carrier. The topology on `Equiv.Perm ℚ` is `Equiv.Perm.pointwiseTopol
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pointwise Topology](pointwise-topology.md)
+- [Is Highly Homogeneous](highly-homogeneous/is-highly-homogeneous.md)
+
+## Proof depends on
+
+- [Is Highly Homogeneous top](highly-homogeneous/is-highly-homogeneous-top.md)
 
 ## Sources
 

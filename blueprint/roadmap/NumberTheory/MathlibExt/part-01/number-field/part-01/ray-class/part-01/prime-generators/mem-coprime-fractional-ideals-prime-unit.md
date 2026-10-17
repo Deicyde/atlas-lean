@@ -13,7 +13,14 @@ A prime outside the finite support of `m` gives a unit in `m.coprimeFractionalId
 
 ## Depends on
 
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
 - [Prime Unit Fractional Ideal](prime-unit-fractional-ideal.md)
+
+## Proof depends on
+
+- [Factorization Mul Equiv](../../../../../../../../RingTheory/MathlibExt/dedekind-domain/factorization-equiv/factorization-mul-equiv.md)
+- [Factorization Mul Equiv prime Unit Fractional Ideal](factorization-mul-equiv-prime-unit-fract.md)
 
 ## Sources
 

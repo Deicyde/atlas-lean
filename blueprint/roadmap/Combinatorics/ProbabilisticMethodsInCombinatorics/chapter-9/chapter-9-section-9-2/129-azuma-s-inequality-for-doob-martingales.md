@@ -16,6 +16,7 @@ Consider a Doob martingale $Z_i = \mathbb{E}[f(X_1, \ldots, X_n) \mid X_1, \ldot
 ## Proof depends on
 
 - [Theorem 3.3.1 (Markov's inequality)](../../chapter-3/033-markov-s-inequality.md)
+- [Lemma 9.2.12 (Hoeffding's lemma)](130-hoeffding-s-lemma.md)
 
 ## Sources
 

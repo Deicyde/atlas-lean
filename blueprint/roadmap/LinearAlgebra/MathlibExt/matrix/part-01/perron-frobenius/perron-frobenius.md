@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.LinearAlgebra.Matrix.PerronFrobeniusWanted._root_.Matrix.IsIrreducible.perron_frobenius
+lean: Matrix.IsIrreducible.perron_frobenius
 ---
 
 # Perron frobenius
@@ -15,6 +15,10 @@ with a positive eigenvector, and `r` bounds the modulus of every complex eigenva
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [To Complex Matrix](to-complex-matrix.md)
 
 ## Sources
 

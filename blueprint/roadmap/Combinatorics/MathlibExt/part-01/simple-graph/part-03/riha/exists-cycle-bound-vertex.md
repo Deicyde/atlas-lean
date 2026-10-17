@@ -14,7 +14,14 @@ different vertex whose neighbors all lie on the cycle.
 
 ## Depends on
 
+- [Is Vertex Connected](../../part-04/vertex-connectivity/is-vertex-connected.md)
 - [Is Bound Vertex](is-bound-vertex.md)
+
+## Proof depends on
+
+- [Connected](../../part-04/vertex-connectivity/connected.md)
+- [Connected compl singleton](../../part-04/vertex-connectivity/connected-compl-singleton.md)
+- [Exists cycle through](../../part-04/vertex-connectivity/exists-cycle-through.md)
 
 ## Sources
 

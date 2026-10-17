@@ -13,7 +13,7 @@ Let $v \leq w$ and take $s \in S$. Then either $vs \leq w$ or $vs \leq ws$ or bo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section 1.8)](005-definition.md)
 
 ## Sources
 

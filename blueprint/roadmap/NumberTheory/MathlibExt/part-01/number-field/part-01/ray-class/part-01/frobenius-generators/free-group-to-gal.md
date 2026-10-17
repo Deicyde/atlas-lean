@@ -13,6 +13,7 @@ unramified Frobenius values.
 
 ## Depends on
 
+- [Coprime Primes](../prime-generation/coprime-primes.md)
 - [Is Unramified Outside](is-unramified-outside.md)
 
 ## Proof depends on

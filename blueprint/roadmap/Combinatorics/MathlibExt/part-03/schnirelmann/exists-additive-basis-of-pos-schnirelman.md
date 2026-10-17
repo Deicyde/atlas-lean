@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Combinatorics.Schnirelmann._root_.exists_additive_basis_of_pos_schnirelmannDensity
+lean: exists_additive_basis_of_pos_schnirelmannDensity
 ---
 
 # Exists additive basis of pos schnirelmann Density
@@ -15,6 +15,10 @@ order, as in Lemma 1 of Tim Jameson's notes on Linnik's proof of the Waring-Hilb
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Schnirelmann Density add lower bound](schnirelmann-density-add-lower-bound.md)
 
 ## Sources
 

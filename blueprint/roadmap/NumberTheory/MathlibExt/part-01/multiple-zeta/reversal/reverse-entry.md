@@ -16,6 +16,7 @@ the other end.
 
 - [Index](../index/index.md)
 - [Depth](../index/depth.md)
+- [Entry](../series/entry.md)
 - [Reverse](reverse.md)
 
 ## Sources

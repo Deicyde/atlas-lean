@@ -15,7 +15,9 @@ double-root formula is read modulo the characteristic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../../../part-07/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../../part-07/lucas-sequence/lucas-u.md)
+- [Lucas V](../../../../part-07/lucas-sequence/lucas-v.md)
 
 ## Sources
 

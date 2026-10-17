@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Geometry.Manifold.LocalGraphWanted._root_.ContDiff.exists_localGraph_of_surjective_fderiv
+lean: ContDiff.exists_localGraph_of_surjective_fderiv
 ---
 
 # Exists local Graph of surjective fderiv

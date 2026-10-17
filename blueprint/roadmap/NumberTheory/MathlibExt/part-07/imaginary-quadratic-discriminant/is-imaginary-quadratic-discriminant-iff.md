@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: ImaginaryQuadraticDiscriminant.isImaginaryQuadraticDiscriminant_iff
+---
+
+# Is Imaginary Quadratic Discriminant iff
+
+Exact unfolding of `IsImaginaryQuadraticDiscriminant`.
+
+## Depends on
+
+- [Is Imaginary Quadratic Discriminant](is-imaginary-quadratic-discriminant.md)
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.ImaginaryQuadraticDiscriminant](../../../../../sources/v2/MathlibExt.md)

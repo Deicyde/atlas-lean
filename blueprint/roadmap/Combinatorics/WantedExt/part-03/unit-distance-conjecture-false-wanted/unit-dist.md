@@ -20,6 +20,10 @@ unit-distance pair.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unit Dist Num](../../../../Geometry/MathlibExt/metric/unit-dist-num.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.UnitDistanceConjectureFalseWanted](../../../../../sources/v2/WantedExt.md)

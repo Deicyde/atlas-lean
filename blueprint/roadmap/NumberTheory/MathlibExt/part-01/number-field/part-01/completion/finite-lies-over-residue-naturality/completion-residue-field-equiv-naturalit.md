@@ -14,12 +14,17 @@ Naturality of the residue-field equivalences with explicit quotient maps.
 ## Depends on
 
 - [Adic Completion Residue Quotient Map](adic-completion-residue-quotient-map.md)
+- [Completion Residue Field Equiv](../../../../../../../RingTheory/MathlibExt/dedekind-domain/adic-completion-residue-field/completion-residue-field-equiv.md)
 - [Ring Of Integers Residue Quotient Map](ring-of-integers-residue-quotient-map.md)
 
 ## Proof depends on
 
+- [Adic Completion Integers Map](../finite-lies-over-valuation/adic-completion-integers-map.md)
 - [Finite Lies Over Residue Field](../adic-completion-integers-map-algebra-map.md)
 - [Finite Lies Over Maximal Ideal](../comap-maximal-ideal-adic-completion-inte.md)
+- [Completion Residue Map](../../../../../../../RingTheory/MathlibExt/dedekind-domain/adic-completion-residue-field/completion-residue-map.md)
+- [Ker completion Residue Map](../../../../../../../RingTheory/MathlibExt/dedekind-domain/adic-completion-residue-field/ker-completion-residue-map.md)
+- [Surjective completion Residue Map](../../../../../../../RingTheory/MathlibExt/dedekind-domain/adic-completion-residue-field/surjective-completion-residue-map.md)
 
 ## Sources
 

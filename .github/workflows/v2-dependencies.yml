@@ -10,6 +10,8 @@ on:
     paths:
       - ".github/workflows/v2-dependencies.yml"
       - "scripts/dump_v2_dependencies.lean"
+      - "scripts/extract_v2_lean_dependencies.py"
+      - "blueprint/roadmap/**"
       - "MathlibExt/**"
       - "CSLibExt/**"
       - "WantedExt/**"
@@ -139,6 +141,12 @@ jobs:
           wc -l < v2-dependencies.jsonl
           gzip -9 v2-dependencies.jsonl
 
+      - name: Collapse dependencies onto the exact roadmap article manifest
+        run: >-
+          python scripts/extract_v2_lean_dependencies.py
+          v2-dependencies.jsonl.gz
+          "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: v2-dependencies
@@ -147,4 +155,5 @@ jobs:
             v2-unbuilt.txt
             v2-conflicts.txt
             build-failures.txt
+            blueprint/sources/v2/lean-dependencies.json
           retention-days: 14

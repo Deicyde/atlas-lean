@@ -13,10 +13,11 @@ A locally normally convergent series converges locally uniformly to its pointwis
 
 ## Depends on
 
-This node has no prerequisites.
+- [Converges Locally Normally On](../../../normed/series/normal-convergence/converges-locally-normally-on.md)
 
 ## Proof depends on
 
+- [Converges Normally On](../../../normed/series/normal-convergence/converges-normally-on.md)
 - [Tendsto Uniformly On tsum nat](tendsto-uniformly-on-tsum-nat.md)
 
 ## Sources

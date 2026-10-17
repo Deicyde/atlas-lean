@@ -2,9 +2,6 @@
 article_id: af_a6875df81ff09832273b45be
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
-lean: Polynomial.IsPrimitivePolynomial.root_orderOf
 ---
 
 # Root order Of

@@ -2,8 +2,6 @@
 article_id: af_0d8bf919f2c402e7885dc225
 declaration: def
 origin: cited
-statement: formalized
-lean: MetaMathlibExt.kKernel
 ---
 
 # K Kernel

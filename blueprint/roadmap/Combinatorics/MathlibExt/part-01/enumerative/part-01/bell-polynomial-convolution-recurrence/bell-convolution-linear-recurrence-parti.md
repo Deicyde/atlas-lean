@@ -14,7 +14,7 @@ lean: MetaMathlibExt.bell_convolution_linear_recurrence_partialBellPolynomial
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partial Bell Polynomial](../../part-06/partial-bell-polynomial.md)
 
 ## Proof depends on
 

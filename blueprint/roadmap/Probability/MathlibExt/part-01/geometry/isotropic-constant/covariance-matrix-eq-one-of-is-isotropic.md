@@ -14,6 +14,11 @@ The shared probabilistic isotropy convention gives the actual identity covarianc
 ## Depends on
 
 - [Covariance Matrix](covariance-matrix.md)
+- [Is Isotropic Log Concave](../thin-shell/is-isotropic-log-concave.md)
+
+## Proof depends on
+
+- [Is Log Concave Density](../thin-shell/is-log-concave-density.md)
 
 ## Sources
 

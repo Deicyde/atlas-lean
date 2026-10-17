@@ -14,7 +14,10 @@ multiset by the new key.
 
 ## Depends on
 
+- [Fibonacci Tree](../../../../part-02/fibonacci-heap/part-01/fibonacci-tree.md)
 - [Decrease Root](decrease-root.md)
+- [Elements](../../../../part-02/fibonacci-heap/part-01/elements.md)
+- [Root](../../../../part-02/fibonacci-heap/part-01/root.md)
 
 ## Sources
 

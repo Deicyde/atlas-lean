@@ -14,7 +14,7 @@ Bielefeld Theorem 5: if `|C|` and `χ(1)` are coprime, then either
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conj Class](../../burnside-paqb-reduction/conj-class.md)
 
 ## Proof depends on
 

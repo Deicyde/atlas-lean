@@ -16,6 +16,10 @@ If a prime `n < r` divides `k + j` for some `j < n`, then it divides
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prime dvd choose of dvd consecutive](../bridge/prime-dvd-choose-of-dvd-consecutive.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.SylvesterSchur.BlockReductions](../../../../../../sources/v2/MathlibExt.md)

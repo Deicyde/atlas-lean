@@ -1,0 +1,18 @@
+---
+declaration: abbrev
+origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.Coding.CycleGraphCode.CycleCode
+---
+
+# Cycle Code
+
+A finite independent code in the modular strong-power model.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.Coding.CycleCode](../../../../../../sources/v2/MathlibExt.md)

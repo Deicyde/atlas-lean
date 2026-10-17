@@ -19,6 +19,7 @@ Established results whose Lean implementation or proof is deferred.
 - [Lax Approximation Wanted](lax-approximation-wanted/README.md)
 - [Mandelbrot Boundary Wanted](mandelbrot-boundary-wanted/README.md)
 - [Moran Dimension Wanted](moran-dimension-wanted/README.md)
+- [Mult Structure Recurrence Wanted](mult-structure-recurrence-wanted/README.md)
 - [Ornstein Weiss Wanted](ornstein-weiss-wanted/README.md)
 - [Poincare Bendixson Wanted](poincare-bendixson-wanted/README.md)
 - [Pointwise Ergodic Theorems Wanted](pointwise-ergodic-theorems-wanted/README.md)

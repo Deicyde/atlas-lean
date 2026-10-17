@@ -21,6 +21,7 @@ the prescribed content, which are counted by Möbius inversion.
 ## Depends on
 
 - [Free Lie Multihomogeneous Component](../free-lie-multihomogeneous-component/free-lie-multihomogeneous-component.md)
+- [Witt Multigraded Value](../witt-multigraded-value.md)
 
 ## Proof depends on
 

@@ -22,6 +22,10 @@ The paper's `[x^n] (1/x) u(x)` is rendered as `coeff (n+1) u`, and
 - [Bell Matrix](../../../NumberTheory/MathlibExt/part-03/bell-matrix/bell-matrix.md)
 - [Entry](../../../NumberTheory/MathlibExt/part-03/bell-matrix/entry.md)
 
+## Proof depends on
+
+- [Fps lagrange burmann coeff'](lagrange-burmann-coefficient/fps-lagrange-burmann-coeff.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.PowerSeries.BellRiordanCentralCoefficient](../../../../sources/v2/MathlibExt.md)

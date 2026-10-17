@@ -2,8 +2,6 @@
 article_id: af_945893c83c21dbeb65331cec
 declaration: def
 origin: cited
-statement: formalized
-lean: Multigraph.degree
 ---
 
 # Degree

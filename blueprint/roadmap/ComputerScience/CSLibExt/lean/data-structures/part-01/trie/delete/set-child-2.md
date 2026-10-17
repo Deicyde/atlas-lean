@@ -14,6 +14,8 @@ keeps the node valid.
 
 ## Depends on
 
+- [Trie](../../../part-03/trie/trie.md)
+- [Valid](../../../part-03/trie/valid.md)
 - [Set Child](set-child.md)
 
 ## Proof depends on

@@ -17,7 +17,8 @@ in Janjić's *Binomial Coefficients and Enumeration of Restricted Words*.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Octagonal Pyramidal Compositions](octagonal-pyramidal-number/octagonal-pyramidal-compositions.md)
+- [Octagonal Pyramidal Number](octagonal-pyramidal-number/octagonal-pyramidal-number.md)
 
 ## Sources
 

@@ -16,6 +16,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Theorem 4.4.3 (Two-point concentration for clique number)](../section-4/section-4-4/057-two-point-concentration-for-clique-numbe.md)
+- [Lemma 8.3.3](123-lemma-8-3-3.md)
 
 ## Sources
 

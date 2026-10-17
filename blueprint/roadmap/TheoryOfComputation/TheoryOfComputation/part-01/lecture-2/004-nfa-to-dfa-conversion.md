@@ -13,7 +13,7 @@ If an NFA recognizes $A$ then $A$ is regular.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Nondeterministic Finite Automaton)](009-nondeterministic-finite-automaton.md)
 
 ## Sources
 

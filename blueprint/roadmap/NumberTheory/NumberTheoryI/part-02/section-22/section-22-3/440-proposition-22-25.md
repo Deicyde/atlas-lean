@@ -20,6 +20,7 @@ Let $L/K$ be a finite abelian extension of local or global fields. For each prim
 ## Proof depends on
 
 - [Definition 22.3](../section-22-1/421-definition-22-3.md)
+- [Definition 22.27](../section-22-4/442-definition-22-27.md)
 - [Proposition 22.6](../section-22-1/424-proposition-22-6.md)
 
 ## Sources

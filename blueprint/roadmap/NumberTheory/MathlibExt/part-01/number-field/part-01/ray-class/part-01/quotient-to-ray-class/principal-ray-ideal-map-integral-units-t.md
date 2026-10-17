@@ -14,8 +14,10 @@ to one (forward exactness input; ATLAS lines 1160--1175).
 
 ## Depends on
 
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 - [Integral Units To Ray Elements](../integral-units/integral-units-to-ray-elements.md)
 - [Principal Ray Ideal Map](../principal-ideal/principal-ray-ideal-map.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 

@@ -17,6 +17,7 @@ for the finite component.
 ## Depends on
 
 - [Finite Residue Map](finite-residue-map.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 

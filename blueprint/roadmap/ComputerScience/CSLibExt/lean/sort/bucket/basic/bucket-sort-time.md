@@ -14,6 +14,13 @@ Exact cost of the accepted saved-bucket executor on every valid array.
 ## Depends on
 
 - [Bucket Sort](bucket-sort.md)
+- [Insertion Sort](../../insertion-cost/insertion-sort.md)
+
+## Proof depends on
+
+- [Compare LE](../../insertion-cost/compare-le.md)
+- [Insertion Sort eq insertion Sort M](../../insertion-cost/insertion-sort-eq-insertion-sort-m.md)
+- [Insertion Sort perm](../../insertion-cost/insertion-sort-perm.md)
 
 ## Sources
 

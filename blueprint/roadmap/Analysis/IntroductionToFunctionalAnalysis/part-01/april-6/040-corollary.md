@@ -13,7 +13,12 @@ If $f: \mathbb{R} \to \mathbb{C}$ is a measurable function, and there exists som
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition ($L^p$ space)](045-l-p-space.md)
+
+## Proof depends on
+
+- [Theorem (Riemann and Lebesgue integrals agree for continuous functions)](../integration/041-riemann-and-lebesgue-integrals-agree-for.md)
+- [Proposition (Characterization of $L^p$ membership)](047-characterization-of-l-p-membership.md)
 
 ## Sources
 

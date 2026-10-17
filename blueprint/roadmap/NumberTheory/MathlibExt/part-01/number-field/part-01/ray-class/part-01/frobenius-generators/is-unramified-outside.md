@@ -16,6 +16,10 @@ sense of Mathlib's `Algebra.IsUnramifiedIn`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.FrobeniusGenerators](../../../../../../../../../sources/v2/MathlibExt.md)

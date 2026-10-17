@@ -11,12 +11,15 @@ For $(g, \mu)$ generic, $\mathcal{M}$ (if nonempty) is a smooth, compact, orient
 
 ## Depends on
 
+- [Definition 3 (Lecture 24, Section 3 (Dirac Operator))](../lecture-24/066-definition-3.md)
 - [Definition 1 (Symplectic Geometry, Lecture 10, Section 2 (Complex Vector Bundles and Chern Classes))](../symplectic-geometry/symplectic-geometry-lecture-10-section-2-complex/021-definition-1.md)
+- [Definition 2 (Lecture 25, Section 2 (Seiberg-Witten Equations))](065-definition-2.md)
 
 ## Proof depends on
 
 - [Corollary 1 (Lecture 16)](../lecture-16/032-corollary-1.md)
 - [Theorem 2 (Lecture 16)](../lecture-16/033-theorem-2.md)
+- [Definition 1 (Lecture 25, Section 2 (Seiberg-Witten Equations))](064-definition-1.md)
 
 ## Sources
 

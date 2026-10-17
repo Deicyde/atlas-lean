@@ -12,12 +12,13 @@ ATLAS v1 selected 576 statements from this source in
 matched to each in [`report.json`](https://github.com/facebookresearch/atlas-lean/blob/main/v1/Atlas/NumberTheoryI/report.json). Each roadmap article
 reproduces one target's statement and the source location it names.
 
-1487 roadmap edges come from the source text rather than
+1500 roadmap edges come from the source text rather than
 the Lean code; each is recorded with its evidence in
 [`book-dependencies/NumberTheoryI.json`](book-dependencies/NumberTheoryI.json).
 
-30 dependencies point to a statement placed later in this
-wiki and are not drawn as roadmap edges, which keeps every chapter acyclic.
+3 candidate dependencies are not drawn because adding
+them would create a cycle between source statements. Every other verified
+dependency is retained, including relations in both directions between chapters.
 
 ## Targets without a linked Lean declaration
 
@@ -29,6 +30,7 @@ or a root library declares the same name.
 | --- | --- |
 | Definition 1.10 | `DiscreteValuation` |
 | Corollary 3.17 (Finite approximation) | `Ideal.exists_elem_eq_valuation_at_primes` |
+| Definition 4.17 | `mem_separableClosure_iff_isSeparable` |
 | Definition 4.22 | `EtaleAlgebras.isPurelyInseparable_iff_finSepDegree` |
 | Definition 6.5 | `idealNorm` |
 | Definition 6.16 | `Subalgebra.conductorIdeal` |
@@ -39,11 +41,6 @@ or a root library declares the same name.
 | Proposition 12.11 | `latticeDiscriminant_isFractional_and_ne_bot` |
 | Definition 12.12 | `extensionDiscriminant` |
 | Definition 13.1 | `Place` |
-| Proposition 14.16 | `GeometryOfNumbers.covol_ring_of_integers` |
-| Corollary 14.17 | `GeometryOfNumbers.covol_fractional_ideal` |
-| Lemma 14.19 | `GeometryOfNumbers.convex_body_volume` |
-| Corollary 14.26 | `GeometryOfNumbers.discr_lower_bound` |
-| Theorem 14.28 | `GeometryOfNumbers.finite_numberfields_of_bounded_discr` |
 | Definition 16.18 | `ConvergesLocallyNormallyOn` |
 | Theorem 16.27 (Liouville's theorem) | `liouville_theorem` |
 | Definition 23.38 | `TateCohomology.herbrandQuotient` |

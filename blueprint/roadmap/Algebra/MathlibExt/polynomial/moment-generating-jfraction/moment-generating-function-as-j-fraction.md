@@ -17,7 +17,7 @@ satisfies the three-term recurrence with coefficients `α` and `β`, `μ k = L (
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Jacobi Fraction](../../../../NumberTheory/MathlibExt/part-06/hankel-transform/has-jacobi-fraction.md)
 
 ## Sources
 

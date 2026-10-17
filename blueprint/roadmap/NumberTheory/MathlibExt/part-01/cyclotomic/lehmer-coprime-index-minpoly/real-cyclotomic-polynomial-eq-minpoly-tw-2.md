@@ -15,7 +15,7 @@ see `realCyclotomicPolynomial_eq_minpoly_two_cos`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Real Cyclotomic Polynomial](../real-cyclotomic-polynomial.md)
 
 ## Proof depends on
 

@@ -11,6 +11,8 @@ Established results whose Lean implementation or proof is deferred.
 - [Complete Local Ring Reconstruction Wanted](complete-local-ring-reconstruction-wanted/README.md)
 - [Exotic Units C2 C2 C2 C6 Wanted](exotic-units-c2-c2-c2-c6-wanted/README.md)
 - [Koethe Nil Left Ideals Wanted](koethe-nil-left-ideals-wanted/README.md)
+- [Palindromic Zero One Wanted](palindromic-zero-one-wanted/README.md)
+- [Permutation Polynomials Wanted](permutation-polynomials-wanted/README.md)
 - [Real Zeros Parity Change Bound Wanted](real-zeros-parity-change-bound-wanted/README.md)
 - [Solvable extensions ↔ solvable groups](solvable-iff-solvable-by-rad.md)
 - [Sturm Wanted](sturm-wanted/README.md)

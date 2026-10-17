@@ -19,6 +19,15 @@ multipliable, and the sum equals the product
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gauss Binom](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom.md)
+- [Gauss Binom eq zero of lt](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom-eq-zero-of-lt.md)
+- [Gauss Binom mul q Poch Fin mul q Poch Fin](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom-mul-q-poch-fin-mul-q-poch-fi.md)
+- [Gauss Binom succ succ](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom-succ-succ.md)
+- [Gauss Binom zero right](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom-zero-right.md)
+- [Q Poch Fin](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-03/gaussian-binomial/q-poch-fin.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.JacobiTripleProduct](../../../../../../sources/v2/MathlibExt.md)

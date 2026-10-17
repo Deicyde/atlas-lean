@@ -20,6 +20,11 @@ in Banach Spaces; Lean gives uniformly convex real Banach specialization with ex
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eberlein Smulian](eberlein-smulian.md)
+- [Milman Pettis](milman-pettis.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.BanachSaks](../../../../../../sources/v2/MathlibExt.md)

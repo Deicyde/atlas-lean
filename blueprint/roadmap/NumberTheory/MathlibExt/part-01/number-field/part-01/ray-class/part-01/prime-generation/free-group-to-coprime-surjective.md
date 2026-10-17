@@ -14,6 +14,7 @@ The free-group map surjects onto the coprime ideals.
 ## Depends on
 
 - [Coprime Primes](coprime-primes.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 - [Free Group To Coprime](free-group-to-coprime.md)
 
 ## Proof depends on
@@ -21,6 +22,8 @@ The free-group map surjects onto the coprime ideals.
 - [Closure coprime Prime Units eq top](closure-coprime-prime-units-eq-top.md)
 - [Coprime Prime Units](coprime-prime-units.md)
 - [Coprime Prime Units eq range](coprime-prime-units-eq-range.md)
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
+- [Prime Coprime Unit](../prime-generators/prime-coprime-unit.md)
 
 ## Sources
 

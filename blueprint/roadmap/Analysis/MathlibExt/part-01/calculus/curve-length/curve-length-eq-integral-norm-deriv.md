@@ -20,6 +20,11 @@ within derivatives agree almost everywhere on the interval.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [E Variation On Icc eq of Real integral norm deriv Within](e-variation-on-icc-eq-of-real-integral-n.md)
+- [Integral norm deriv eq integral norm deriv Within Icc](integral-norm-deriv-eq-integral-norm-der.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Calculus.CurveLength](../../../../../../sources/v2/MathlibExt.md)

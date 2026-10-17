@@ -29,6 +29,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Fibonacci Prime Divisibility](../../../part-02/recurrences/part-01/fib-prime-dvd-fib-of-legendre-sub.md)
 - [Padic Val Nat fib mul](padic-val-nat-fib-mul.md)
 
 ## Sources

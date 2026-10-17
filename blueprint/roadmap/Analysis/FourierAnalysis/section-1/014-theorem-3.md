@@ -16,6 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Theorem 4 (Approximate identity)](016-approximate-identity.md)
 - [Proposition 2 (Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$)](009-proposition-2.md)
 - [Theorem 2 (Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$)](010-theorem-2.md)
 - [Corollary 4 (Fourier inversion on $L^2$)](013-fourier-inversion-on-l-2.md)

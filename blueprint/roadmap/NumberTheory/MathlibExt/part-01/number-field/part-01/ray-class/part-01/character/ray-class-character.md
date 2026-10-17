@@ -14,6 +14,12 @@ A ray class character: homomorphism from the ray class group to `Circle`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ray Class Group](../group/ray-class-group.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Ray Group](../../part-02/ray-group/ray-group.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.Character](../../../../../../../../../sources/v2/MathlibExt.md)

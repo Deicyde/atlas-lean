@@ -1,8 +1,7 @@
 ---
 article_id: af_dbc6d3cf0c56ac4ae92fcc2b
-declaration: abbrev
+declaration: def
 origin: cited
-lean: CategoryTheory.Definition_2_5_4
 ---
 
 # Definition 2.5.4

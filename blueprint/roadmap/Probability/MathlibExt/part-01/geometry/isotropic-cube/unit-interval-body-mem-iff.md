@@ -16,6 +16,10 @@ The literal source endpoints agree with the orthonormal interval construction.
 - [Full Dimensional Body](../isotropic-constant/full-dimensional-body.md)
 - [Unit Interval Body](unit-interval-body.md)
 
+## Proof depends on
+
+- [Line Isometry](../uniform-interval/line-isometry.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Geometry.IsotropicCube](../../../../../../sources/v2/MathlibExt.md)

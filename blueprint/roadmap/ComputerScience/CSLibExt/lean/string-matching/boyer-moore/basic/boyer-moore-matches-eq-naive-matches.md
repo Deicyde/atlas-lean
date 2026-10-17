@@ -15,11 +15,15 @@ This is a result specification bridge, not a naive execution path.
 ## Depends on
 
 - [Boyer Moore Matches](boyer-moore-matches.md)
+- [Naive Matches](../../naive/naive-matches.md)
 
 ## Proof depends on
 
+- [Match At](../../basic/match-at.md)
 - [Boyer Moore Matches pairwise](boyer-moore-matches-pairwise.md)
 - [Mem boyer Moore Matches iff](mem-boyer-moore-matches-iff.md)
+- [Mem naive Matches iff](../../naive/mem-naive-matches-iff.md)
+- [Naive Matches pairwise](../../naive/naive-matches-pairwise.md)
 
 ## Sources
 

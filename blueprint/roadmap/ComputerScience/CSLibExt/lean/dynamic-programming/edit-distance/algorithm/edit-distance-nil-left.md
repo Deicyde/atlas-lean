@@ -13,6 +13,8 @@ Distance from the empty list is the target length.
 
 ## Depends on
 
+- [Edit Distance Cost](../script/edit-distance-cost.md)
+- [Edit Distance Result](../script/edit-distance-result.md)
 - [Edit Distance](edit-distance.md)
 
 ## Sources

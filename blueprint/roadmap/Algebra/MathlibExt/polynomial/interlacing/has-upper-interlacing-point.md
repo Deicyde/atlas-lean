@@ -15,6 +15,10 @@ and every remaining root lies below `a`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Max Real Root](../real-rooted/max-real-root.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Polynomial.Interlacing](../../../../../sources/v2/MathlibExt.md)

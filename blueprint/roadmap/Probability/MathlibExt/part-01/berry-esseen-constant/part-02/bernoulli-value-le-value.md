@@ -22,6 +22,7 @@ Restricting to Bernoulli laws cannot increase the optimized coefficient.
 - [Is Bernoulli Law](../part-01/is-bernoulli-law.md)
 - [Bernoulli Admissible bdd Below](bernoulli-admissible-bdd-below.md)
 - [Value is Admissible](../part-01/value-is-admissible.md)
+- [Is Standardized Law](../../berry-esseen-model/part-01/is-standardized-law.md)
 
 ## Sources
 

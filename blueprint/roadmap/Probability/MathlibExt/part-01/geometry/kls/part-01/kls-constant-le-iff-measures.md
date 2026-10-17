@@ -15,6 +15,7 @@ The least-bound characterization quantifies over actual laws, not supplied numer
 
 - [Inverse Cheeger Constant](inverse-cheeger-constant.md)
 - [Kls Constant](kls-constant.md)
+- [Is Isotropic Log Concave](../../thin-shell/is-isotropic-log-concave.md)
 
 ## Proof depends on
 

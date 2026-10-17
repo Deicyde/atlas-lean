@@ -11,7 +11,7 @@ Let $\Phi$ be the fundamental solution for $\Delta$ in $\mathbb{R}^{n}$, and let
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.0.1 (Class Meeting #7, Section 1 (The Fundamental Solution for $\Delta$ in $\mathbb{R}^{n}$))](../class-meeting-7/032-definition-1-0-1.md)
 
 ## Sources
 

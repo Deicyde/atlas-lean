@@ -24,6 +24,8 @@ absent key increases it by one.
 - [Ordered](../part-01/ordered.md)
 - [Valid Root](../part-01/valid-root.md)
 - [Flatten insert](flatten-insert.md)
+- [Ordered Insert](../../../part-02/ordered-insert/ordered-insert.md)
+- [Ordered Insert eq of mem](../../../part-02/ordered-insert/ordered-insert-eq-of-mem.md)
 
 ## Sources
 

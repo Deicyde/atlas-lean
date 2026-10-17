@@ -13,7 +13,12 @@ Suppose that $f, g: \mathbb{R}^{n} \rightarrow \mathbb{C}$ are continuous functi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.0.5 (Inner product for complex-valued functions)](../class-meeting-16/073-inner-product-for-complex-valued-functio.md)
+- [Definition 1.0.1 (Fourier Transform)](../class-meeting-16/069-fourier-transform.md)
+
+## Proof depends on
+
+- [Definition 1.0.2 (Inverse Fourier transform)](../class-meeting-16/070-inverse-fourier-transform.md)
 
 ## Sources
 

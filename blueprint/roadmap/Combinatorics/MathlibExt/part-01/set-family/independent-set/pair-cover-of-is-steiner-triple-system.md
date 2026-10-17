@@ -15,6 +15,10 @@ Unique pair coverage from a Steiner triple system.
 
 - [Is Steiner Triple System](is-steiner-triple-system.md)
 
+## Proof depends on
+
+- [Is Uniform](../uniform-hypergraph/is-uniform.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SetFamily.IndependentSet](../../../../../../sources/v2/MathlibExt.md)

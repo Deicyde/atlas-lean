@@ -14,6 +14,7 @@ Sentinel search preserves the same canonical represented circle.
 ## Depends on
 
 - [Circular Represents](../basic/circular-represents.md)
+- [Node](../../basic/node.md)
 - [List Search Sentinel](list-search-sentinel.md)
 
 ## Sources

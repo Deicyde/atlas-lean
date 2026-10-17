@@ -24,6 +24,7 @@ $\mathrm{GG}$ is $\mathsf{PSPACE}$-complete.
 - [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
 - [Definition: Decider](../lecture-5/024-definition-decider.md)
 - [Theorem (TQBF is PSPACE-complete)](../lecture-18/079-tqbf-is-pspace-complete.md)
+- [Claim (Formula Game and TQBF)](082-formula-game-and-tqbf.md)
 
 ## Sources
 

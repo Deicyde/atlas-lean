@@ -13,6 +13,7 @@ Uniformity projection from a Turan system.
 
 ## Depends on
 
+- [Is Uniform](../uniform-hypergraph/is-uniform.md)
 - [Is Turan System](is-turan-system.md)
 
 ## Sources

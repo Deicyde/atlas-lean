@@ -11,7 +11,7 @@ In the case of $\mathbb{Z}[\sqrt{-5}] \subset \mathbb{Q}[\sqrt{-5}]$, the class 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section: Similarity Classes of Ideals)](../similarity-classes-of-ideals/129-definition.md)
 
 ## Sources
 

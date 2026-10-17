@@ -14,6 +14,9 @@ Ray-element class map: principal ideal followed by the class projection
 ## Depends on
 
 - [Ray Class Group](../group/ray-class-group.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+- [Ray Group](../../part-02/ray-group/ray-group.md)
 
 ## Proof depends on
 

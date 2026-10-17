@@ -12,6 +12,11 @@ Assuming UGC, for all $\varepsilon > 0$, given a graph $G = (V, E)$ it is NP-har
 
 - [Conjecture 3.6 (The Unique-Games Conjecture)](../lecture-15/095-the-unique-games-conjecture.md)
 
+## Proof depends on
+
+- [Theorem 1.5](106-theorem-1-5.md)
+- [Lemma 2.1](107-lemma-2-1.md)
+
 ## Sources
 
 - [MIT 18.218 Analysis of Boolean Functions (Spring 2021), Lecture 17, Section 1.1](../../../../sources/v1/BooleanFunctions.md)

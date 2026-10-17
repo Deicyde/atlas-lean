@@ -13,7 +13,7 @@ $S_n$ is not solvable for $n \geq 5$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 32, Solvable Groups)](../lecture-32/162-definition.md)
 
 ## Sources
 

@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Geometry.Manifold.ImmersionCompWanted._root_.Manifold.IsImmersion.comp
+lean: Manifold.IsImmersion.comp
 ---
 
 # Comp
@@ -15,6 +15,10 @@ boundaryless.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Comp](comp-3.md)
 
 ## Sources
 

@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Algebra.Lie.LandmarkWanted._root_.LieModule.exists_isCompl_of_isSemisimple
+lean: LieModule.exists_isCompl_of_isSemisimple
 ---
 
 # Exists is Compl of is Semisimple

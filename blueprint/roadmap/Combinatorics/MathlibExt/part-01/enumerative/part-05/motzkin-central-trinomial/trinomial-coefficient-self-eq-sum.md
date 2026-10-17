@@ -13,7 +13,7 @@ The central trinomial coefficient as a Catalan-free binomial sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-11/trinomial-coefficient.md)
 
 ## Sources
 

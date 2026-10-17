@@ -15,7 +15,8 @@ base-changed complex, homology existence, and coefficientwise finiteness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraded Free Resolution](../multigraded-free-resolution/multigraded-free-resolution.md)
+- [Multigraded Polynomial Module](../multigraded-polynomial-module/multigraded-polynomial-module.md)
 
 ## Sources
 

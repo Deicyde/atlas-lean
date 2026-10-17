@@ -2,8 +2,6 @@
 article_id: af_d9b6fcb7797bfe2ea0bc0673
 declaration: def
 origin: cited
-statement: formalized
-lean: IsogenyVolcano.IsAscendingEdge
 ---
 
 # Is Ascending Edge

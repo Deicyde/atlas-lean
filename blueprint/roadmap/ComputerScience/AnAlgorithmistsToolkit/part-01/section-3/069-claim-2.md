@@ -18,6 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Definition 1 (Section 3.2)](057-definition-1.md)
+- [Theorem 3 (Hall)](070-hall.md)
 
 ## Sources
 

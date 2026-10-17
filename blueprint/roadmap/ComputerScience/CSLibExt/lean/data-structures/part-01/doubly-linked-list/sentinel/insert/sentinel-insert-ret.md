@@ -13,6 +13,7 @@ Complete carried-store characteristic, without freshness.
 
 ## Depends on
 
+- [Node](../../basic/node.md)
 - [Sentinel Insert](sentinel-insert.md)
 
 ## Sources

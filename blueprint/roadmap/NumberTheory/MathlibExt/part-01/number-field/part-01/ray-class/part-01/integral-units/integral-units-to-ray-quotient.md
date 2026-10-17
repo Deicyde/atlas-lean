@@ -12,7 +12,8 @@ The quotient endpoint map (ATLAS `exactSeq_map2`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+- [Ray One Elements](../../part-02/residue-sign/ray-one-elements.md)
 
 ## Proof depends on
 

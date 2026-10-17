@@ -13,6 +13,10 @@ Every finite abelian extension of $\mathbb{Q}$ lies in a cyclotomic field $\math
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 20.2](395-theorem-20-2.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 20.1](../../../../../sources/v1/NumberTheoryI.md)

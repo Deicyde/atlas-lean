@@ -13,7 +13,7 @@ Consider a sequence of random variables $X_n$ on some probability space. Write $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (tail σ-algebra)](033-tail-algebra.md)
 
 ## Sources
 

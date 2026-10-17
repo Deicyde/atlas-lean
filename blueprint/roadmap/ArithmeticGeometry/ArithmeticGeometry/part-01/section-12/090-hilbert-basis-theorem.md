@@ -2,9 +2,6 @@
 article_id: af_20e4795d83e1b46bd1df0523
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
-lean: hilbert_basis_theorem
 ---
 
 # Theorem 12.11 (Hilbert basis theorem)

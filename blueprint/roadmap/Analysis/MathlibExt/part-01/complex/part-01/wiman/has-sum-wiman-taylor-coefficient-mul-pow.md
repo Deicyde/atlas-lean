@@ -13,7 +13,7 @@ An entire function is the sum of the Taylor coefficients used by the Wiman defin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Taylor Coefficient](../../part-02/wiman/wiman-taylor-coefficient.md)
 
 ## Sources
 

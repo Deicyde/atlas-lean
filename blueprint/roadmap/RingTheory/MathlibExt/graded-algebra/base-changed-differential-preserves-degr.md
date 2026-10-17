@@ -16,7 +16,15 @@ base-changed differential maps the degree-`α` piece to itself.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraded Free Resolution](multigraded-free-resolution/multigraded-free-resolution.md)
+- [Multigraded Polynomial Module](multigraded-polynomial-module/multigraded-polynomial-module.md)
+- [Base Changed Complex](multigraded-betti/base-changed-complex.md)
+- [Base Changed Degree Piece](multigraded-betti/base-changed-degree-piece.md)
+
+## Proof depends on
+
+- [Multigraded Zero Eval Base Change](base-change-mem-degree-span.md)
+- [Zero Eval](multigraded-betti/zero-eval.md)
 
 ## Sources
 

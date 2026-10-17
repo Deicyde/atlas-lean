@@ -12,9 +12,20 @@ ATLAS v1 selected 36 statements from this source in
 matched to each in [`report.json`](https://github.com/facebookresearch/atlas-lean/blob/main/v1/Atlas/CombinatorialOptimization/report.json). Each roadmap article
 reproduces one target's statement and the source location it names.
 
-7 roadmap edges come from the source text rather than
+12 roadmap edges come from the source text rather than
 the Lean code; each is recorded with its evidence in
 [`book-dependencies/CombinatorialOptimization.json`](book-dependencies/CombinatorialOptimization.json).
 
-10 dependencies point to a statement placed later in this
-wiki and are not drawn as roadmap edges, which keeps every chapter acyclic.
+1 candidate dependencies are not drawn because adding
+them would create a cycle between source statements. Every other verified
+dependency is retained, including relations in both directions between chapters.
+
+## Targets without a linked Lean declaration
+
+These targets have no `lean:` link: v1 matched no declaration, the
+matched name is not found by Autoform's lexical scan, or another v1 book
+or a root library declares the same name.
+
+| Target | v1 match |
+| --- | --- |
+| Claim 2 (decomposition into perfect matchings) | `SimpleGraph.tight_oddset_pm_decomposition` |

@@ -13,7 +13,9 @@ The joint sign map is trivial iff the element is positive at infinity.
 
 ## Depends on
 
+- [Positive At Infinite Part](../../part-02/ray-group/positive-at-infinite-part.md)
 - [Infinite Sign Map](infinite-sign-map.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 

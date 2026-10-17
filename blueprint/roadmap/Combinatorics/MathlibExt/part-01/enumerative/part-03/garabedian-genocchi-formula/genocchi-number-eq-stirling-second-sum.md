@@ -25,7 +25,7 @@ hypothesis `hn` is unused and keeps the source's shape.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Genocchi Number](../../../../../../NumberTheory/MathlibExt/part-06/genocchi-number/genocchi-number.md)
 
 ## Proof depends on
 

@@ -15,10 +15,13 @@ Surjectivity of the ideal-class map on coprime fractional ideals
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Coprime Ideal Class Map](../ray-class-to-class-group/coprime-ideal-class-map.md)
 
 ## Proof depends on
 
+- [Exists mk0 eq and is Coprime](../../../../../../../../RingTheory/MathlibExt/class-group/coprime-representative/exists-mk0-eq-and-is-coprime.md)
+- [Coprime Ideal Class Map apply](../ray-class-to-class-group/coprime-ideal-class-map-apply.md)
 - [Fractional Ideal Mk0 mem coprime Fractional Ideals](fractional-ideal-mk0-mem-coprime-fractio.md)
 
 ## Sources

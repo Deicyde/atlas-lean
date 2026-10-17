@@ -25,6 +25,8 @@ Dedekind, fraction-ring, integrally-closed, or separability hypotheses are used.
 - [Discr mem extension Discriminant](extension-discriminant/discr-mem-extension-discriminant.md)
 - [Extension Discriminant eq](extension-discriminant/extension-discriminant-eq.md)
 - [Image Of B](extension-discriminant/image-of-b.md)
+- [Lattice Discriminant](lattice-discriminant/lattice-discriminant.md)
+- [Lattice Discriminant Set](lattice-discriminant/lattice-discriminant-set.md)
 - [Mem image Of B](extension-discriminant/mem-image-of-b.md)
 
 ## Sources

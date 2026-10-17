@@ -13,10 +13,14 @@ The source-ordered update at every cell, including aliased write targets.
 
 ## Depends on
 
+- [Node](../../basic/node.md)
 - [Sentinel Insert](sentinel-insert.md)
 
 ## Proof depends on
 
+- [List Insert](../../insert/list-insert.md)
+- [List Insert get](../../insert/list-insert-get.md)
+- [List Insert ret](../../insert/list-insert-ret.md)
 - [Sentinel Insert ret](sentinel-insert-ret.md)
 
 ## Sources

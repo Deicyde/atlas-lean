@@ -2,8 +2,9 @@
 article_id: af_c35165b83cdbbea5bcfd4623
 ---
 
-# KCyclic Partition to Von Szily Super Catalan
+# Jaccard Lattice to Von Szily Super Catalan
 
+- [Jaccard Lattice](jaccard-lattice/README.md)
 - [KCyclic Partition](kcyclic-partition/README.md)
 - [Linear Partition](linear-partition.md)
 - [Paris Harrington](paris-harrington.md)

@@ -15,6 +15,10 @@ Sard's theorem for a map that is smooth on an open subset of a finite-dimensiona
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Image Null](../../../../../MeasureTheory/MathlibExt/measure/measure-image-null-of-locally-null.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.Sard](../../../../../../sources/v2/MathlibExt.md)

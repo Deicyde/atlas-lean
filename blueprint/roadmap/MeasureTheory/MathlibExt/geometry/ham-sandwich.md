@@ -19,6 +19,10 @@ Euclidean specialization with `μ i ≪ volume` making the bisecting hyperplane 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Borsuk Ulam](../../../Topology/MathlibExt/homotopy/borsuk-ulam.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.MeasureTheory.Geometry.HamSandwich](../../../../sources/v2/MathlibExt.md)

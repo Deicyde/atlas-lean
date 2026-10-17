@@ -1,9 +1,7 @@
 ---
 article_id: af_7ef562df8f68faa2ac76356c
-declaration: abbrev
+declaration: def
 origin: cited
-statement: formalized
-lean: IsHarmonic
 ---
 
 # Definition 1 (Lecture 16: Harmonic Functions)

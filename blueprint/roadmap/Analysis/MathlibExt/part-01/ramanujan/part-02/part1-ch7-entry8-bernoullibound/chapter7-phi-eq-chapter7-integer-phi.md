@@ -14,7 +14,9 @@ the Bernoulli-polynomial expression `chapter7IntegerPhi r x`, by `hurwitzZeta_ne
 
 ## Depends on
 
+- [Chapter7 Phi Argument](../part1-ch7-phi/chapter7-phi-argument.md)
 - [Chapter7 Integer Phi](chapter7-integer-phi.md)
+- [Chapter7 Phi](../part1-ch7-phi/chapter7-phi.md)
 
 ## Sources
 

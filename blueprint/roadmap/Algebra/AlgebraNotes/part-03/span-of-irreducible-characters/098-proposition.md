@@ -19,6 +19,7 @@ If $f$ is a class function and $\langle f, \chi_k \rangle = 0$ for all $k$, then
 - [Theorem (Maschke's Theorem)](../../part-02/lecture-2/088-maschke-s-theorem.md)
 - [Theorem (Schur's Lemma)](../orthonormality-of-characters/095-schur-s-lemma.md)
 - [Lemma (Section: Span of Irreducible Characters)](097-lemma.md)
+- [Definition (Section: Span of Irreducible Characters)](099-definition.md)
 
 ## Sources
 

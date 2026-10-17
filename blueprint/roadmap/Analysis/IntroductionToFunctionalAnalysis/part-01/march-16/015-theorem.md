@@ -13,7 +13,12 @@ The collection $\mathcal{M}$ of measurable sets is a $\sigma$-algebra.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (March 11, 2021)](../march-11/016-definition.md)
+
+## Proof depends on
+
+- [Lemma (March 16, 2021)](017-lemma.md)
+- [Corollary (March 11, 2021)](../march-11/019-corollary.md)
 
 ## Sources
 

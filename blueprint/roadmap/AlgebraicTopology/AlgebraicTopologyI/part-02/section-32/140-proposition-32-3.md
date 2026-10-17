@@ -19,6 +19,8 @@ Let $A_{1} \supseteq A_{2} \supseteq \cdots$ be a decreasing sequence of compact
 
 - [Lemma 23.11](../../part-01/section-23/092-lemma-23-11.md)
 - [Theorem 31.5 (Unique path lifting)](../section-31/132-unique-path-lifting.md)
+- [Lemma 32.4](141-lemma-32-4.md)
+- [Lemma 32.5](142-lemma-32-5.md)
 
 ## Sources
 

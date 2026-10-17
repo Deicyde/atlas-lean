@@ -19,7 +19,7 @@ paper's `b > 2` setting.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonzero Digit Prod](../../part-10/prodigious-number/nonzero-digit-prod.md)
 
 ## Sources
 

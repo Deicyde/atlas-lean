@@ -13,7 +13,7 @@ may prune it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trie](../../../part-03/trie/trie.md)
 
 ## Sources
 

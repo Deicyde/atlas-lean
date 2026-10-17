@@ -29,6 +29,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Is Alg Closed rat](is-alg-closed-rat.md)
+- [Exists monic coprime factorization of is Adic Complete nat Degree](../../../NumberTheory/MathlibExt/part-06/hensel-factorization/exists-monic-coprime-factorization-of-is-2.md)
 
 ## Sources
 

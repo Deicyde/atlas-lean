@@ -16,6 +16,10 @@ For new code, use `MathlibExt.Order.StrictTotalOrder.mk` directly.
 
 - [Strict Total Order](strict-total-order.md)
 
+## Proof depends on
+
+- [Strict Total Order](../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Matching.GaleShapley](../../../../../../sources/v2/MathlibExt.md)

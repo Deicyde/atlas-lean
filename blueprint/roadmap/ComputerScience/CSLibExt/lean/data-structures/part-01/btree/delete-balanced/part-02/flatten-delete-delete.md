@@ -14,11 +14,16 @@ once.
 
 ## Depends on
 
+- [BTree](../../../btree-2/part-01/btree.md)
+- [Is BTree](../../../btree-2/part-02/is-btree.md)
 - [Delete](../part-01/delete.md)
+- [Flatten](../../../btree-2/part-01/flatten.md)
 
 ## Proof depends on
 
 - [Delete](../part-01/delete-2.md)
+- [Ordered](../../../btree-2/part-02/ordered.md)
+- [Flatten nodup](../../../btree-2/part-01/flatten-nodup.md)
 - [Flatten delete](../part-01/flatten-delete.md)
 
 ## Sources

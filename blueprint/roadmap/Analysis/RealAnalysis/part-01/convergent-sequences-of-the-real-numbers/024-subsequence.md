@@ -12,7 +12,7 @@ Let $\{x_n\}$ be a sequence and let $\{n_k\}$ be a strictly increasing sequence 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sequence of Reals) (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/021-sequence-of-reals.md)
 
 ## Sources
 

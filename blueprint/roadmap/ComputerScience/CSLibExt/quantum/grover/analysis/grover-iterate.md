@@ -12,7 +12,11 @@ Apply the Grover step `k` times.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amplitude](../basic/amplitude.md)
+
+## Proof depends on
+
+- [Grover Step](../diffusion/grover-step.md)
 
 ## Sources
 

@@ -12,12 +12,15 @@ Finite ray-one subgroup: ray elements congruent to `1` at finite places.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 
+- [Congruent One At Finite Part](../../part-02/ray-group/congruent-one-at-finite-part.md)
 - [Inv](inv.md)
 - [Mul](mul.md)
+- [Finite Exponent](../../part-02/ray-group/finite-exponent.md)
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
 
 ## Sources
 

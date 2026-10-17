@@ -22,6 +22,10 @@ diagonalization", with the eigenbasis scaling in place of a Cholesky factor.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists is Unit transpose mul mul eq one](exists-is-unit-transpose-mul-mul-eq-one.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.SimultaneousDiagonalization](../../../../../../sources/v2/MathlibExt.md)

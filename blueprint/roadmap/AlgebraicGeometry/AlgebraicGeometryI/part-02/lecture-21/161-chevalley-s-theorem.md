@@ -19,6 +19,7 @@ Let $f \colon X \to Y$ be a morphism of varieties. Then: $\operatorname{im}(f)$ 
 
 - [Lemma 1 (Noether Normalization)](../../part-01/lecture-2/007-noether-normalization.md)
 - [Theorem 5.4](../../part-01/lecture-5/053-theorem-5-4.md)
+- [Lemma 33](162-lemma-33.md)
 
 ## Sources
 

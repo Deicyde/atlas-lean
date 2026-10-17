@@ -13,7 +13,7 @@ The right-hand index of the cyclic sum formula, bundled as a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
 
 ## Proof depends on
 

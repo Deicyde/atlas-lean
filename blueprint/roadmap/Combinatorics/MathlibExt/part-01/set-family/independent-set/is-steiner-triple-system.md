@@ -16,6 +16,10 @@ in exactly one edge of `H`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Uniform](../uniform-hypergraph/is-uniform.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SetFamily.IndependentSet](../../../../../../sources/v2/MathlibExt.md)

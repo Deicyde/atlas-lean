@@ -13,6 +13,8 @@ lean: Cslib.Algorithms.Lean.AvlTree.cacheCorrect_deleteMin
 
 ## Depends on
 
+- [Cache Correct](../../../avl-tree-2/part-01/cache-correct.md)
+- [Tree](../../../avl-tree-2/part-01/tree.md)
 - [Delete Min](../part-01/delete-min.md)
 
 ## Proof depends on

@@ -16,6 +16,10 @@ it does not count machine instructions or unbounded-integer bit operations.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Compute Z](../../zalgorithm/compute-z.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.StringMatching.BoyerMoore.Preprocessing](../../../../../../../sources/v2/CSLibExt.md)

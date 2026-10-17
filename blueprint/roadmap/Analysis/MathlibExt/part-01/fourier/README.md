@@ -13,3 +13,4 @@ article_id: af_95126640a0aa4ed4b5f84bf1
 - [Fourier Laplace](fourier-laplace/README.md)
 - [Scaling](scaling/README.md)
 - [Wiener Tauberian](wiener-tauberian-l1.md)
+- [ZMod Convolution](inv-dft-mul-dft.md)

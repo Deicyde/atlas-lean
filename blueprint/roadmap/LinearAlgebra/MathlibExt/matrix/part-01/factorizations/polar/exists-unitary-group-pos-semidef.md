@@ -16,6 +16,10 @@ Polar decomposition: every square complex matrix is `U * P` for some
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [SVD](../exists-unitary-group-diagonal-nonneg.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.Factorizations.Polar](../../../../../../../sources/v2/MathlibExt.md)

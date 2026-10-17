@@ -1,9 +1,7 @@
 ---
 article_id: af_1d67d571ea0f456d70dd7ed2
-declaration: class
+declaration: def
 origin: cited
-statement: formalized
-lean: CategoryTheory.ModuleSubcategory
 ---
 
 # Definition 2.1.6

@@ -14,6 +14,11 @@ Let $K$ be a convex body. Then $K^{**} = K$.
 ## Depends on
 
 - [Definition 1 (Lecture 11, Section 3)](094-definition-1.md)
+- [Definition 2 (Lecture 10, Section 2)](../lecture-10/093-definition-2.md)
+
+## Proof depends on
+
+- [Theorem 3 (Separating Hyperplane Theorem)](099-separating-hyperplane-theorem.md)
 
 ## Sources
 

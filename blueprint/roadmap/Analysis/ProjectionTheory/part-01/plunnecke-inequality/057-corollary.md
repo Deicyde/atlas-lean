@@ -11,7 +11,7 @@ If $0 < s < t < 1$, then there exists $K = K(s, t)$ such that for all $A \subset
 
 ## Depends on
 
-This node has no prerequisites.
+- [Notation (Section: Plunnecke inequality)](062-notation.md)
 
 ## Proof depends on
 

@@ -2,8 +2,11 @@
 article_id: af_8a498d0807a41e6a651ae06f
 ---
 
-# QRDowling Polynomial to Sylvester Coin Theorem
+# Primitive Divisor to Steuerwald Three Perfect
 
+- [Primitive Divisor](primitive-divisor/README.md)
+- [Prodigious Number](prodigious-number/README.md)
+- [Proth Theorem](proth-theorem.md)
 - [QRDowling Polynomial](qrdowling-polynomial/README.md)
 - [Quadratic Gauss Sum Five](quadratic-gauss-sum-five/README.md)
 - [Ramanujan Sum](ramanujan-sum/README.md)
@@ -21,6 +24,3 @@ article_id: af_8a498d0807a41e6a651ae06f
 - [Spectral Norm Unit Ball](spectral-norm-unit-ball/README.md)
 - [Stern Sequence](stern-sequence/README.md)
 - [Steuerwald Three Perfect](steuerwald-three-perfect/README.md)
-- [Stormer](stormer-theorem.md)
-- [Sylvester Coin Distinct Odd Primes](sylvester-coin-distinct-odd-primes.md)
-- [Sylvester Coin Theorem](sylvester-coin-theorem.md)

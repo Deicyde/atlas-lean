@@ -11,6 +11,7 @@ $\mathrm{SAT}$ is $\mathsf{NP}$-complete. Proof: (1) $\mathrm{SAT} \in \mathsf{N
 
 ## Depends on
 
+- [Definition (NP-complete)](../lecture-15/061-np-complete.md)
 - [Definition (SAT)](../lecture-14/054-sat.md)
 
 ## Proof depends on

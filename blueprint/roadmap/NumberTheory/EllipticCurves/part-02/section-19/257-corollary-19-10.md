@@ -1,7 +1,8 @@
 ---
 article_id: af_ac7716e9ae15cef10324fc5c
-declaration: theorem
+declaration: alias
 origin: cited
+lean: ModularFunctionField.corollary_19_10
 ---
 
 # Corollary 19.10

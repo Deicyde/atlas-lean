@@ -13,10 +13,13 @@ Congruence at the finite part is closed under inversion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Congruent One At Finite Part](../../part-02/ray-group/congruent-one-at-finite-part.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 
+- [Finite Exponent](../../part-02/ray-group/finite-exponent.md)
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
 - [Ray Element count span Singleton eq zero](ray-element-count-span-singleton-eq-zero.md)
 
 ## Sources

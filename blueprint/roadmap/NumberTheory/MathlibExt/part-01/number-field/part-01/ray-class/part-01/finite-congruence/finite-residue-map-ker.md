@@ -17,9 +17,11 @@ Source (N406 §21.3): the finite kernel component used in the
 
 - [Finite Ray One Elements](finite-ray-one-elements.md)
 - [Finite Residue Map](finite-residue-map.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 
+- [Congruent One At Finite Part](../../part-02/ray-group/congruent-one-at-finite-part.md)
 - [Finite Residue Map eq one iff](finite-residue-map-eq-one-iff.md)
 
 ## Sources

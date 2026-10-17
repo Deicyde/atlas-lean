@@ -16,6 +16,7 @@ shortest weights. This includes repeated walks and signed edge weights.
 ## Depends on
 
 - [Is Edge Bounded Shortest Path Weight](is-edge-bounded-shortest-path-weight.md)
+- [Matrix Accumulate](../../../matrix/multiply/matrix-accumulate.md)
 
 ## Proof depends on
 

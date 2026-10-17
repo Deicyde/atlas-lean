@@ -13,10 +13,14 @@ Both writes preserve the allocation status at every address.
 
 ## Depends on
 
+- [Node](../../basic/node.md)
 - [Sentinel Delete](sentinel-delete.md)
 
 ## Proof depends on
 
+- [List Delete](../../delete/list-delete.md)
+- [List Delete allocated](../../delete/list-delete-allocated.md)
+- [List Delete ret](../../delete/list-delete-ret.md)
 - [Sentinel Delete ret](sentinel-delete-ret.md)
 
 ## Sources

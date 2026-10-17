@@ -13,11 +13,12 @@ A normally convergent series converges uniformly to its pointwise sum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Converges Normally On](../../../normed/series/normal-convergence/converges-normally-on.md)
 
 ## Proof depends on
 
 - [Summable to Real sup Norm On](summable-to-real-sup-norm-on.md)
+- [Sup Norm On](../../../normed/series/normal-convergence/sup-norm-on.md)
 
 ## Sources
 

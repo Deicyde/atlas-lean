@@ -14,11 +14,15 @@ The real infimum satisfies the actual source inequality.
 ## Depends on
 
 - [Value](value.md)
+- [Is Standardized Law](../../berry-esseen-model/part-01/is-standardized-law.md)
+- [Kolmogorov Error](../../berry-esseen-model/part-01/kolmogorov-error.md)
+- [Third Moment](../../berry-esseen-model/part-01/third-moment.md)
 
 ## Proof depends on
 
 - [Is Admissible](is-admissible.md)
 - [Admissible nonempty](admissible-nonempty.md)
+- [Third Moment positive](../../berry-esseen-model/part-01/third-moment-positive.md)
 
 ## Sources
 

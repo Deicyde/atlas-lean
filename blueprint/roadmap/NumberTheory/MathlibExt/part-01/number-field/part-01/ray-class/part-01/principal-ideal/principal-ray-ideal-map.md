@@ -12,7 +12,8 @@ Principal-ideal map out of ray elements, landing in ideals coprime to `m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
 
 ## Sources
 

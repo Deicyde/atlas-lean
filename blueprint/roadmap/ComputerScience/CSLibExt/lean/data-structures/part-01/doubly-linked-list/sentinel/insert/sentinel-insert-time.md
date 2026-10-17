@@ -13,6 +13,7 @@ Same-run logical pointer assignments, not full RAM cost.
 
 ## Depends on
 
+- [Node](../../basic/node.md)
 - [Sentinel Insert](sentinel-insert.md)
 
 ## Sources

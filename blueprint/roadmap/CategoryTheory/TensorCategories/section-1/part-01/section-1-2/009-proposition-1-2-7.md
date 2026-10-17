@@ -2,9 +2,6 @@
 article_id: af_3e785885a80920c669e5bfbf
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
-lean: TensorCategories.Proposition_1_2_7
 ---
 
 # Proposition 1.2.7

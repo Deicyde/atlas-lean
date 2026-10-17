@@ -1,7 +1,8 @@
 ---
 article_id: af_10c5e839f79253fa53fb5381
-declaration: theorem
+declaration: alias
 origin: cited
+lean: GeometryOfNumbers.discr_lower_bound
 ---
 
 # Corollary 14.26

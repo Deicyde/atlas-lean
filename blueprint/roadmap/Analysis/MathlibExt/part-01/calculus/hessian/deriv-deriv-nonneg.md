@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MetaMathlibExt._root_.IsLocalMin.deriv_deriv_nonneg
+lean: IsLocalMin.deriv_deriv_nonneg
 ---
 
 # Deriv deriv nonneg

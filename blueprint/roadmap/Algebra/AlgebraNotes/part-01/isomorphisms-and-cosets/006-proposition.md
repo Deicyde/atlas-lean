@@ -15,6 +15,10 @@ Cosets of $H$ form a **partition** of the group $G$.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma (Isomorphisms and Cosets, Cosets)](009-lemma.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Isomorphisms and Cosets, Cosets](../../../../../sources/v1/AlgebraNotes.md)

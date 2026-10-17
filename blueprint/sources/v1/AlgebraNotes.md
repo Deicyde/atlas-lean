@@ -12,12 +12,13 @@ ATLAS v1 selected 176 statements from this source in
 matched to each in [`report.json`](https://github.com/facebookresearch/atlas-lean/blob/main/v1/Atlas/AlgebraNotes/report.json). Each roadmap article
 reproduces one target's statement and the source location it names.
 
-184 roadmap edges come from the source text rather than
+218 roadmap edges come from the source text rather than
 the Lean code; each is recorded with its evidence in
 [`book-dependencies/AlgebraNotes.json`](book-dependencies/AlgebraNotes.json).
 
-40 dependencies point to a statement placed later in this
-wiki and are not drawn as roadmap edges, which keeps every chapter acyclic.
+1 candidate dependencies are not drawn because adding
+them would create a cycle between source statements. Every other verified
+dependency is retained, including relations in both directions between chapters.
 
 ## Targets without a linked Lean declaration
 

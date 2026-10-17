@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Geometry.Manifold.SubmersionCompWanted._root_.Manifold.IsSubmersion.comp
+lean: Manifold.IsSubmersion.comp
 ---
 
 # Comp
@@ -14,6 +14,10 @@ The composition of two submersions is a submersion.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Comp](comp-3.md)
 
 ## Sources
 

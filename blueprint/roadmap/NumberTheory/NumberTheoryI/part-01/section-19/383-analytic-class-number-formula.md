@@ -18,6 +18,11 @@ Let $K$ be a number field of degree $n$. The Dedekind zeta function $\zeta_{K}(z
 - [Corollary 15.8](../section-15/307-corollary-15-8.md)
 - [Definition 15.16](../section-15/312-definition-15-16.md)
 
+## Proof depends on
+
+- [Theorem 19.8](388-theorem-19-8.md)
+- [Lemma 19.11](390-lemma-19-11.md)
+
 ## Sources
 
 - [MIT 18.785 Number Theory I (Fall 2021), Section 19](../../../../../sources/v1/NumberTheoryI.md)

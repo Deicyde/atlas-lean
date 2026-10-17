@@ -14,6 +14,7 @@ Unfolding lemma for `integerCubeSet`.
 ## Depends on
 
 - [Integer Cube Set](integer-cube-set.md)
+- [Unit Cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
 
 ## Sources
 

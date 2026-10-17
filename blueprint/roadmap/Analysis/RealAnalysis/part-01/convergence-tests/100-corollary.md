@@ -13,7 +13,8 @@ We already showed that $\sum \frac{(-1)^n}{n}$ does not absolutely converge. How
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Series) (1)](../series/032-definition.md)
+- [Definition (Series section)](../series/097-definition.md)
 
 ## Proof depends on
 

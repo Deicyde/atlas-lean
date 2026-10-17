@@ -14,6 +14,7 @@ Deleting a data identity preserves the circle with exactly that identity erased.
 ## Depends on
 
 - [Circular Represents](../basic/circular-represents.md)
+- [Node](../../basic/node.md)
 - [Sentinel Delete](sentinel-delete.md)
 
 ## Proof depends on

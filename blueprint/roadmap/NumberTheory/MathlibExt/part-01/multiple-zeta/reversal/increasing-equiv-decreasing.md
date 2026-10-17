@@ -16,6 +16,7 @@ decreasing tuples for its reversed index.
 - [Index](../index/index.md)
 - [Depth](../index/depth.md)
 - [Reverse](reverse.md)
+- [Strict Decreasing Tuple](../series/strict-decreasing-tuple.md)
 - [Strict Increasing Tuple](strict-increasing-tuple.md)
 
 ## Sources

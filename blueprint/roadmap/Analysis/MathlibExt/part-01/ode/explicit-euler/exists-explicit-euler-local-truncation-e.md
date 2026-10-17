@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Analysis.ODE.ExplicitEulerWanted._root_.ODE.exists_explicitEuler_localTruncationError_le
+lean: ODE.exists_explicitEuler_localTruncationError_le
 ---
 
 # Exists explicit Euler local Truncation Error le

@@ -14,6 +14,7 @@ Uniformity projection from a Steiner triple system.
 ## Depends on
 
 - [Is Steiner Triple System](is-steiner-triple-system.md)
+- [Is Uniform](../uniform-hypergraph/is-uniform.md)
 
 ## Sources
 

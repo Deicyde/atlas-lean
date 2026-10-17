@@ -14,6 +14,10 @@ Every red/blue colouring of `K_{ω^ω²}` has a red `K_α` or a blue `K₃`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Simple Graph](../../../../SetTheory/MathlibExt/cardinal/ordinal-cardinal-ramsey.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ErdosProblem591Wanted](../../../../../sources/v2/WantedExt.md)

@@ -14,10 +14,12 @@ extension as a closest root of an irreducible separable polynomial.
 
 ## Depends on
 
+- [Is Closest Conjugate](../is-closest-conjugate/is-closest-conjugate.md)
 - [L1 Norm](../../../../../../Algebra/MathlibExt/polynomial/l1-norm/l1-norm.md)
 
 ## Proof depends on
 
+- [Adjoin le](../is-closest-conjugate/adjoin-le.md)
 - [Root Bound](../../../../../../Algebra/MathlibExt/polynomial/aeval-lt-l1-norm-of-monic-of-aeval-eq-ze.md)
 - [L1 Norm def](../../../../../../Algebra/MathlibExt/polynomial/l1-norm/l1-norm-def.md)
 - [L1 Norm nonneg](../../../../../../Algebra/MathlibExt/polynomial/l1-norm/l1-norm-nonneg.md)

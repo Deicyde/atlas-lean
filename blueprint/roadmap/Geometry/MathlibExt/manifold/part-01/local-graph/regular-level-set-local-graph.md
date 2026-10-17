@@ -22,6 +22,10 @@ product-space implicit function theorem then identifies the level set with a loc
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists local Graph of surjective fderiv](exists-local-graph-of-surjective-fderiv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.LocalGraph](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,8 @@ Suppose that $f: \mathbb{R}^{n} \rightarrow \mathbb{C}$ is a continuous function
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1.0.1 (Fourier Transform)](../class-meeting-16/069-fourier-transform.md)
+- [Definition 1.0.2 (Inverse Fourier transform)](../class-meeting-16/070-inverse-fourier-transform.md)
 
 ## Sources
 

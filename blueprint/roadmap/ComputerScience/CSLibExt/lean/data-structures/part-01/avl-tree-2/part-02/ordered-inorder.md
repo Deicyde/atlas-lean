@@ -21,6 +21,7 @@ inherited from `BinarySearchTree`.
 ## Proof depends on
 
 - [To Binary Tree](../part-01/to-binary-tree.md)
+- [Ordered inorder](../../../part-02/binary-search-tree/part-01/ordered-inorder.md)
 
 ## Sources
 

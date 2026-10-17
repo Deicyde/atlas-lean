@@ -15,6 +15,10 @@ If $R$ is a UFD, then $R[x]$ is also a UFD.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary (Corollary \ref{primitive})](../lecture-13/121-corollary-ref-primitive.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Lecture 12, Section on Polynomial Rings](../../../../../sources/v1/AlgebraNotes.md)

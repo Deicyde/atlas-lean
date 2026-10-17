@@ -13,11 +13,13 @@ The actual signed min-plus return is optimal among walks within the squared edge
 
 ## Depends on
 
+- [Is Edge Bounded Shortest Path Weight](../../extend/is-edge-bounded-shortest-path-weight.md)
 - [Faster APSP](../basic/faster-apsp.md)
 
 ## Proof depends on
 
 - [Faster APSP ret](../basic/faster-apsp-ret.md)
+- [Matrix Power](../../matrix-pow-edge-bounded.md)
 
 ## Sources
 

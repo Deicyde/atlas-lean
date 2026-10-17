@@ -13,7 +13,12 @@ The canonical change of modulus is equivalent to the original pair.
 
 ## Depends on
 
+- [Congruence Subgroup](../congruence-subgroup/congruence-subgroup.md)
+- [To Ambient Subgroup](../congruence-subgroup/to-ambient-subgroup.md)
+- [Congruence Subgroup Pair](../congruence-equivalence/congruence-subgroup-pair.md)
+- [Is Equivalent](../congruence-equivalence/is-equivalent.md)
 - [Change Modulus](change-modulus.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 - [Ray Group Ambient](ray-group-ambient.md)
 
 ## Proof depends on

@@ -15,6 +15,10 @@ For any computable function $f \colon \Sigma^* \to \Sigma^*$, there is a TM $R$ 
 
 - [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
 
+## Proof depends on
+
+- [Theorem (Recursion Theorem)](../lecture-11/045-recursion-theorem.md)
+
 ## Sources
 
 - [MIT 18.404J Theory of Computation (Fall 2020), Ex 2: Fixed-point Theorem](../../../../../sources/v1/TheoryOfComputation.md)

@@ -2,9 +2,6 @@
 article_id: af_85d4546a48d77f20a1545e9b
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
-lean: elementDifferent_of_adjoin_ne_top
 ---
 
 # Element Different of adjoin ne top

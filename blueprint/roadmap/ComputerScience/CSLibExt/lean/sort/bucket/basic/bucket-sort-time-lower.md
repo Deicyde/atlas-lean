@@ -18,6 +18,7 @@ Every valid array pays the five mandatory saved-bucket phase events per input.
 ## Proof depends on
 
 - [Bucket Sort time](bucket-sort-time.md)
+- [Insertion Sort](../../insertion-cost/insertion-sort.md)
 
 ## Sources
 

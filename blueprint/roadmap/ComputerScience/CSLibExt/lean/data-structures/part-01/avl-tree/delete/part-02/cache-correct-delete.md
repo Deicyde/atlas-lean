@@ -13,6 +13,8 @@ Deletion, under the name `delete`, preserves correct cached heights.
 
 ## Depends on
 
+- [Cache Correct](../../../avl-tree-2/part-01/cache-correct.md)
+- [Tree](../../../avl-tree-2/part-01/tree.md)
 - [Delete](../part-01/delete.md)
 
 ## Proof depends on

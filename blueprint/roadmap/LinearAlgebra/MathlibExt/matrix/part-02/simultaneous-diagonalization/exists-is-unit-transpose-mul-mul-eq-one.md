@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.LinearAlgebra.Matrix.SimultaneousDiagonalizationWanted._root_.Matrix.PosDef.exists_isUnit_transpose_mul_mul_eq_one
+lean: Matrix.PosDef.exists_isUnit_transpose_mul_mul_eq_one
 ---
 
 # Exists is Unit transpose mul mul eq one

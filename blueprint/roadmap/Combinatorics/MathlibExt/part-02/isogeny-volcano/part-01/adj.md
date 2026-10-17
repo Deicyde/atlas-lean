@@ -2,8 +2,6 @@
 article_id: af_9e073de8e15bb27f165a92b1
 declaration: def
 origin: cited
-statement: formalized
-lean: Multigraph.Adj
 ---
 
 # Adj

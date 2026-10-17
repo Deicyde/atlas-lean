@@ -2,8 +2,9 @@
 article_id: af_bd5c8c5b85a1b6bf901df2d3
 ---
 
-# Edge Coloring to Longest Cycle
+# Domination to List Coloring
 
+- [Domination](domination/README.md)
 - [Edge Coloring](edge-coloring/README.md)
 - [Edge Graceful](edge-graceful/README.md)
 - [Edge Indexed Multigraph](edge-indexed-multigraph/README.md)
@@ -23,4 +24,3 @@ article_id: af_bd5c8c5b85a1b6bf901df2d3
 - [Kneser Lovasz](kneser-lovasz/README.md)
 - [Konig Matching Cover](konig-matching-cover/README.md)
 - [List Coloring](list-coloring/README.md)
-- [Longest Cycle](is-longest-cycle.md)

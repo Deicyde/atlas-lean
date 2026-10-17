@@ -19,6 +19,7 @@ $\mathrm{ALL}_{\mathrm{CFG}}$ is undecidable, where $\mathrm{ALL}_{\mathrm{CFG}}
 ## Proof depends on
 
 - [Definition (Pushdown Automaton)](../lecture-4/015-pushdown-automaton.md)
+- [Theorem (A_TM is undecidable - new proof)](../lecture-11/046-a-tm-is-undecidable-new-proof.md)
 
 ## Sources
 

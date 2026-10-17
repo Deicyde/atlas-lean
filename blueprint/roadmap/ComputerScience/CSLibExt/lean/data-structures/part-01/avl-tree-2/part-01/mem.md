@@ -18,6 +18,7 @@ Structural membership, inherited from `BinarySearchTree` through
 ## Proof depends on
 
 - [To Binary Tree](to-binary-tree.md)
+- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
 
 ## Sources
 

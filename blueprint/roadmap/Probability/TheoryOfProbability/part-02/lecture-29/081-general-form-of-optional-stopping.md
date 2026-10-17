@@ -16,6 +16,7 @@ If $L \leq M$ are stopping times and $Y_{M \wedge n}$ is a uniformly integrable 
 - [Definition (Stopping time)](../../part-01/lecture-23/051-stopping-time.md)
 - [Definition (Conditional expectation)](../../part-01/lecture-25/053-conditional-expectation.md)
 - [Definition (Uniform integrability)](../../part-01/lecture-28/066-uniform-integrability.md)
+- [Definition (Martingale, supermartingale, submartingale)](091-martingale-supermartingale-submartingale.md)
 
 ## Sources
 

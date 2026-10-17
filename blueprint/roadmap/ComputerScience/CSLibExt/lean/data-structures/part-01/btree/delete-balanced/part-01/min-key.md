@@ -14,7 +14,7 @@ characterization as the first key of the flattening is
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](../../../btree-2/part-01/btree.md)
 
 ## Sources
 

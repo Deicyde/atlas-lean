@@ -15,6 +15,10 @@ contains an edge of `H`, with `0 < r ∧ r < s ∧ s ≤ n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Uniform](../uniform-hypergraph/is-uniform.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.SetFamily.TuranSystem](../../../../../../sources/v2/MathlibExt.md)

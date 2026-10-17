@@ -14,7 +14,11 @@ and every ordered candidate from the two unchanged input matrices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matrix Accumulate](../../../matrix/multiply/matrix-accumulate.md)
+
+## Proof depends on
+
+- [Matrix Accumulate ret](../../../matrix/multiply/matrix-accumulate-ret.md)
 
 ## Sources
 

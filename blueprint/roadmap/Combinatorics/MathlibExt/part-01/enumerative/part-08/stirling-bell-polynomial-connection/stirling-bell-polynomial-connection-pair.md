@@ -23,6 +23,10 @@ where `B_j(x) = ∑_l S(j,l) x^l` and
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Stirling Second mul factorial eq sum](../stirling-second-explicit/stirling-second-mul-factorial-eq-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.StirlingBellPolynomialConnection](../../../../../../../sources/v2/MathlibExt.md)

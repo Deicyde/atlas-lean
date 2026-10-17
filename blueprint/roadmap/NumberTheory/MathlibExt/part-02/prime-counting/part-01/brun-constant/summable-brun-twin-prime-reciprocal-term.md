@@ -15,6 +15,10 @@ The twin-prime reciprocal terms are summable.
 
 - [Brun Twin Prime Reciprocal Term](brun-twin-prime-reciprocal-term.md)
 
+## Proof depends on
+
+- [Brun Twin Prime Reciprocals](../brun-twin-prime-reciprocal-series-summab.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.BrunConstant](../../../../../../../sources/v2/MathlibExt.md)

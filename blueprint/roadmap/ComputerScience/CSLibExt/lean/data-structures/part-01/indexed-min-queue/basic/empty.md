@@ -14,6 +14,11 @@ The empty indexed queue has the canonical empty heap and no present identity.
 
 - [Indexed Min Queue](indexed-min-queue.md)
 
+## Proof depends on
+
+- [Min Heap](../../../part-02/binary-heap/part-02/min-heap.md)
+- [Empty](../../../part-02/binary-heap/part-02/empty.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.IndexedMinQueue.Basic](../../../../../../../../sources/v2/CSLibExt.md)

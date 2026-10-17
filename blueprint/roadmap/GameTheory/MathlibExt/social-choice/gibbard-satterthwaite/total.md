@@ -18,6 +18,10 @@ For new code, use `MathlibExt.Order.StrictTotalOrder.total` directly.
 - [Strict Total Order](strict-total-order.md)
 - [Lt](lt.md)
 
+## Proof depends on
+
+- [Strict Total Order](../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GameTheory.SocialChoice.GibbardSatterthwaite](../../../../../sources/v2/MathlibExt.md)

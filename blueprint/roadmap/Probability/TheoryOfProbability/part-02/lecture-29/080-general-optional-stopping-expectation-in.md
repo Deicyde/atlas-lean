@@ -14,6 +14,7 @@ Let $X_n$ be a uniformly integrable submartingale. For any stopping time $N \leq
 
 - [Definition (Stopping time)](../../part-01/lecture-23/051-stopping-time.md)
 - [Definition (Uniform integrability)](../../part-01/lecture-28/066-uniform-integrability.md)
+- [Definition (Martingale, supermartingale, submartingale)](091-martingale-supermartingale-submartingale.md)
 
 ## Sources
 

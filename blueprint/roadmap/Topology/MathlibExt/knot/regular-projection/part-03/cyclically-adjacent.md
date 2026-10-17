@@ -1,0 +1,20 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.Topology.Knot.Euclidean.ParametrizedLink.CyclicallyAdjacent
+---
+
+# Cyclically Adjacent
+
+Two crossing preimages on one component are cyclically adjacent
+when no other crossing preimage of that component lies in the open
+arc from the first to the second.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Topology.Knot.RegularProjection](../../../../../../sources/v2/MathlibExt.md)

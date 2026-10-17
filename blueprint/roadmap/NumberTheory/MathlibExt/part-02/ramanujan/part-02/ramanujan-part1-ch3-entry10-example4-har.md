@@ -18,6 +18,10 @@ Proves `Wanted` entry `ramanujan_part1_ch3_entry10_example4_harmonic_poisson_asy
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Part1 Ch3 Entry10 Example4 Summable](ramanujan-part1-ch3-entry10-example4-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry10Example4HarmonicPoissonAsymptotic](../../../../../../sources/v2/MathlibExt.md)

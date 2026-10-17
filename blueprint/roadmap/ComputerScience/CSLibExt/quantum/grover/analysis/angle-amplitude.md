@@ -13,7 +13,11 @@ Symmetric state whose total marked and unmarked coordinates are
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amplitude](../basic/amplitude.md)
+
+## Proof depends on
+
+- [Symmetric Amplitude](../symmetry/symmetric-amplitude.md)
 
 ## Sources
 

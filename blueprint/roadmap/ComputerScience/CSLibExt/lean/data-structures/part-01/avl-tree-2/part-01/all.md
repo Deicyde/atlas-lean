@@ -18,6 +18,7 @@ lean: Cslib.Algorithms.Lean.AvlTree.All
 ## Proof depends on
 
 - [To Binary Tree](to-binary-tree.md)
+- [All](../../../part-02/binary-search-tree/part-01/all.md)
 
 ## Sources
 

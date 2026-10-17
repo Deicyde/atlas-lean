@@ -30,6 +30,8 @@ Rebalancing preserves the search-tree ordering invariant.
 - [Height](../part-01/height.md)
 - [Mk Node](../part-01/mk-node.md)
 - [To Binary Tree](../part-01/to-binary-tree.md)
+- [All](../../../part-02/binary-search-tree/part-01/all.md)
+- [Ordered](../../../part-02/binary-search-tree/part-01/ordered.md)
 
 ## Sources
 

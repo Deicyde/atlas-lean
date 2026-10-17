@@ -12,7 +12,8 @@ Let $X \hookrightarrow (M, \omega)$ be a Lagrangian submanifold. Then $NX \xrigh
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 5 (Lecture 2, Section 2 (Symplectic Vector Spaces))](../lecture-2/009-definition-5.md)
+- [Definition 7](../lecture-2/011-definition-7.md)
 
 ## Sources
 

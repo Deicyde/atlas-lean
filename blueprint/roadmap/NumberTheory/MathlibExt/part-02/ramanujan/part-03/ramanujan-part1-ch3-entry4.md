@@ -16,7 +16,11 @@ Proves `Wanted` entry `ramanujan_part1_ch3_entry4`. The source's
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Bell Generating](../part-04/part1-ch3-entry9-ii-generalizedbellgenerating-de/generalized-bell-generating.md)
+
+## Proof depends on
+
+- [Part1 Ch3 Entry4 Inner Summable](../part-04/ramanujan-part1-ch3-entry4-inner-summabl.md)
 
 ## Sources
 

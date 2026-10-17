@@ -23,6 +23,12 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Is Motzkin Path](../../part-09/uldmotzkin-number-of-rank-r/is-motzkin-path.md)
+- [ULDMotzkin Step](../../part-09/uldmotzkin-number-of-rank-r/uldmotzkin-step.md)
+- [Path Height](../../part-09/uldmotzkin-number-of-rank-r/path-height.md)
+- [Step Height](../../part-09/uldmotzkin-number-of-rank-r/step-height.md)
+- [Uld Motzkin Number](../../part-09/uldmotzkin-number-of-rank-r/uld-motzkin-number.md)
+- [Uld Motzkin Number eq card](../../part-09/uldmotzkin-number-of-rank-r/uld-motzkin-number-eq-card.md)
 - [Cube lattice paths card eq uld Motzkin Number](cube-lattice-paths-card-eq-uld-motzkin-n.md)
 
 ## Sources

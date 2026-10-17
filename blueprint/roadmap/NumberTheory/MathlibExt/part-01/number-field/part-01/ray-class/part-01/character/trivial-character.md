@@ -14,6 +14,12 @@ The trivial ray class character.
 
 - [Ray Class Character](ray-class-character.md)
 
+## Proof depends on
+
+- [Ray Class Group](../group/ray-class-group.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Ray Group](../../part-02/ray-group/ray-group.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.Character](../../../../../../../../../sources/v2/MathlibExt.md)

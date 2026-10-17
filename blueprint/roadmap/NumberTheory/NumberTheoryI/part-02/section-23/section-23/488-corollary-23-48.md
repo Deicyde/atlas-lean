@@ -11,7 +11,13 @@ Let $G$ be a finite cyclic group and let $A$ be a $G$-module containing a sub-$G
 
 ## Depends on
 
+- [Definition 23.38](../section-23-6/480-definition-23-38.md)
 - [Definition 23.1](../section-23-1/446-definition-23-1.md)
+
+## Proof depends on
+
+- [Lemma 23.47](../section-23-6/487-lemma-23-47.md)
+- [Definition 23.29](../section-23-5/472-definition-23-29.md)
 
 ## Sources
 

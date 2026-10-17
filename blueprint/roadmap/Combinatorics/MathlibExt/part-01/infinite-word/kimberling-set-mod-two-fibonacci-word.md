@@ -32,6 +32,7 @@ This node has no prerequisites.
 - [Fib Morph](fibonacci-word/fib-morph.md)
 - [Fib Morph append](fibonacci-word/fib-morph-append.md)
 - [Fib Word](fibonacci-word/fib-word.md)
+- [Fib Word add two](../words/fibonacci-factorization/fib-word-add-two.md)
 - [Fib Word nested succ](fibonacci-word/fib-word-nested-succ.md)
 - [Fib Word prefix](fibonacci-word/fib-word-prefix.md)
 

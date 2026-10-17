@@ -2,8 +2,6 @@
 article_id: af_42e1ffb78888944a4ba170ff
 declaration: def
 origin: cited
-statement: formalized
-lean: HilbertSymbol.unitZpToQp
 ---
 
 # Unit Zp To Qp

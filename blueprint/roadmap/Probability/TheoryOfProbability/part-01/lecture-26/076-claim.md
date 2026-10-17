@@ -13,7 +13,7 @@ If $X_n$ is a martingale w.r.t. $\mathcal{F}_n$ and $\varphi$ is convex with $E|
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Martingale, supermartingale, submartingale)](../../part-02/lecture-29/091-martingale-supermartingale-submartingale.md)
 
 ## Sources
 

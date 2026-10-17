@@ -19,6 +19,7 @@ A homotopy $h \colon f_{0} \simeq f_{1} \colon X \rightarrow Y$ determines a nat
 ## Proof depends on
 
 - [Definition 1.2](../chapter-1-section-1/002-definition-1-2.md)
+- [Theorem 6.2](031-theorem-6-2.md)
 - [Proposition 5.13](../chapter-1-section-5/029-proposition-5-13.md)
 
 ## Sources

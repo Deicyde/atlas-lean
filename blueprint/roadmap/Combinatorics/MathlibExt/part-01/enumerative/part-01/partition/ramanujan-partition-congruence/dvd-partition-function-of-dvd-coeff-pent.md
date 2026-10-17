@@ -16,6 +16,11 @@ coefficients forces the partition congruence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mk partition Function mul pentagonal Series](../../../part-06/pentagonal-number/mk-partition-function-mul-pentagonal-ser.md)
+- [Partition Function](../../../part-06/pentagonal-number/partition-function.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.Partition.RamanujanPartitionCongruence](../../../../../../../../sources/v2/MathlibExt.md)

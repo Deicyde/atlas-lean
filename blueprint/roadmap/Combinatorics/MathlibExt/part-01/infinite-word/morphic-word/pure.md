@@ -17,6 +17,7 @@ Left projection for morphic words (concept
 ## Depends on
 
 - [Is Morphic](is-morphic.md)
+- [Is Pure Morphic](../pure-morphic-word/is-pure-morphic.md)
 
 ## Sources
 

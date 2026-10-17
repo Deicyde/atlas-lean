@@ -12,6 +12,8 @@ If $X_n$ is a martingale with $E[X_n^2] < \infty$ for all $n$, and $A_n = \sum_{
 ## Depends on
 
 - [Definition (Conditional expectation)](../lecture-25/053-conditional-expectation.md)
+- [Theorem (Doob's decomposition)](../../part-02/lecture-27/064-doob-s-decomposition.md)
+- [Definition (Martingale, supermartingale, submartingale)](../../part-02/lecture-29/091-martingale-supermartingale-submartingale.md)
 
 ## Proof depends on
 

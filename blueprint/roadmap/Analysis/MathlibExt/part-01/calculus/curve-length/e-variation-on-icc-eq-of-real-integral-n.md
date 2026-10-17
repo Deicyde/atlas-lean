@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MetaMathlibExt._root_.ContDiffOn.eVariationOn_Icc_eq_ofReal_integral_norm_derivWithin
+lean: ContDiffOn.eVariationOn_Icc_eq_ofReal_integral_norm_derivWithin
 ---
 
 # E Variation On Icc eq of Real integral norm deriv Within

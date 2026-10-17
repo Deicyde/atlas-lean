@@ -14,7 +14,7 @@ pointwise equality, not an unconstrained certificate field.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonnegative Discrete Spectrum](../discrete-spectrum/nonnegative-discrete-spectrum.md)
 
 ## Proof depends on
 

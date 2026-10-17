@@ -14,6 +14,7 @@ Let $f:[a,b]\to \mathbb{R}$ be continuous and differentiable on $(a,b)$. If $f(a
 ## Depends on
 
 - [Definition (Continuous Functions) (1)](../continuous-functions/043-continuous-functions.md)
+- [Definition (Section on Derivative)](../section-on-derivative/050-definition.md)
 
 ## Proof depends on
 

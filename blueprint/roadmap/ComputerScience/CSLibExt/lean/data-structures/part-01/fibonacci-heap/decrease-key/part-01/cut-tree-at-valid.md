@@ -13,7 +13,10 @@ Both parts of a forest cut from a valid forest are valid.
 
 ## Depends on
 
+- [Valid](../../../../part-02/fibonacci-heap/part-01/valid-2.md)
 - [Cut Tree At](cut-tree-at.md)
+- [Fibonacci Tree](../../../../part-02/fibonacci-heap/part-01/fibonacci-tree.md)
+- [Valid](../../../../part-02/fibonacci-heap/part-01/valid.md)
 
 ## Proof depends on
 

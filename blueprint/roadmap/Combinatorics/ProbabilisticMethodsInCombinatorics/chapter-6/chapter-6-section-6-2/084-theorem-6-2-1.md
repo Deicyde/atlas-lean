@@ -15,6 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Theorem 6.2.6](087-theorem-6-2-6.md)
 - [Theorem 6.1.7 (Lovász local lemma; symmetric form)](../chapter-6-section-6-1/081-lov-sz-local-lemma-symmetric-form.md)
 
 ## Sources

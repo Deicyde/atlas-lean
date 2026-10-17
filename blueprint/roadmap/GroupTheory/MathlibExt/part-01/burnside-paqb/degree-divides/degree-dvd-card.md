@@ -19,6 +19,7 @@ This node has no prerequisites.
 
 - [Central Scalar](../central-character/central-scalar.md)
 - [Central Scalar is Integral](../central-character/central-scalar-is-integral.md)
+- [Character is Integral](../killing-lemma/character-is-integral.md)
 - [Class Rep](../class-sum/class-rep.md)
 - [Class inner sum](class-inner-sum.md)
 - [Self pair sum](self-pair-sum.md)

@@ -19,6 +19,7 @@ $\overline{A_{\mathrm{TM}}}$ is Turing-unrecognizable.
 
 - [Definition: Turing-decidable](../lecture-5/025-definition-turing-decidable.md)
 - [Theorem (Lecture 8)](027-theorem.md)
+- [Theorem (A_TM is undecidable - new proof)](../lecture-11/046-a-tm-is-undecidable-new-proof.md)
 
 ## Sources
 

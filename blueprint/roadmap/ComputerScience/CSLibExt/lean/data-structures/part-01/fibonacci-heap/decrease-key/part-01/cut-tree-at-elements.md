@@ -15,6 +15,9 @@ remaining forest and the extracted subtree.
 ## Depends on
 
 - [Cut Tree At](cut-tree-at.md)
+- [Elements](../../../../part-02/fibonacci-heap/part-01/elements-2.md)
+- [Fibonacci Tree](../../../../part-02/fibonacci-heap/part-01/fibonacci-tree.md)
+- [Elements](../../../../part-02/fibonacci-heap/part-01/elements.md)
 
 ## Proof depends on
 

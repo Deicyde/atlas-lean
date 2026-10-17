@@ -1,9 +1,7 @@
 ---
 article_id: af_aa97026017b5823b426dc4ac
-declaration: abbrev
+declaration: def
 origin: cited
-statement: formalized
-lean: idealNorm
 ---
 
 # Definition 7.3

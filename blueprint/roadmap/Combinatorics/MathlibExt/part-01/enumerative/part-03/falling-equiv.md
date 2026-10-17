@@ -19,7 +19,8 @@ the Hankel Transform", Journal of Integer Sequences 9 (2006), Article 06.1.1, Th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Falling KBinomial Transform](falling-kbinomial-transform/falling-kbinomial-transform.md)
+- [Multiple Binomial Transform](../part-05/multiple-binomial-transform.md)
 
 ## Sources
 

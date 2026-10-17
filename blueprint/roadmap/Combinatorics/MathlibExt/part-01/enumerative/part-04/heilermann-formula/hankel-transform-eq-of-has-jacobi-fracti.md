@@ -14,7 +14,8 @@ and `beta` have the same Hankel transform, whatever their `alpha` coefficients.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Jacobi Fraction](../../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/has-jacobi-fraction.md)
+- [Hankel Transform](../../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/hankel-transform.md)
 
 ## Proof depends on
 

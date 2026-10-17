@@ -2,8 +2,10 @@
 article_id: af_b70403e27ddf7438dc4ee97c
 ---
 
-# Range Tree to YFast Trie
+# Perfect Hashing to YFast Trie
 
+- [Perfect Hashing](perfect-hashing/README.md)
+- [Radix Trie](radix-trie/README.md)
 - [Range Tree](range-tree/README.md)
 - [Red Black Tree](red-black-tree/README.md)
 - [Segment Tree](segment-tree/README.md)

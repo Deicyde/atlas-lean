@@ -21,6 +21,10 @@ with the product of their complements.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Comp](comp-2.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.ImmersionComp](../../../../../../sources/v2/MathlibExt.md)

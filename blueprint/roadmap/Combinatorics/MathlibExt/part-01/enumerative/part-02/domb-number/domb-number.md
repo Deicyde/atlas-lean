@@ -14,6 +14,10 @@ The Domb numbers `Domb(n) = D(n,2,1,1)` (OEIS A002895).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Domb Type Sum](../../part-09/zagier-number/domb-type-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.DombNumber](../../../../../../../sources/v2/MathlibExt.md)

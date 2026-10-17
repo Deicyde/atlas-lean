@@ -4,6 +4,9 @@ article_id: af_3255b8db5852dc86793463a7
 
 # Part 9 of 12
 
+- [Pentanacci Number](pentanacci-number.md)
+- [Perrin Sequence](perrin-sequence.md)
+- [Pierce Expansion](pierce-expansion/README.md)
 - [Pisot Number](is-pisot-number.md)
 - [Pisot Root](is-unique-pisot-root.md)
 - [Pocklington Prime Power Criterion](pocklington-prime-power-criterion.md)
@@ -21,6 +24,3 @@ article_id: af_3255b8db5852dc86793463a7
 - [Prime Power Factorization Sum](prime-power-factorization-sum-eq-iff.md)
 - [Prime Power Lifting](prime-power-lifting/README.md)
 - [Prime Support](same-prime-support.md)
-- [Primitive Divisor](primitive-divisor/README.md)
-- [Prodigious Number](prodigious-number/README.md)
-- [Proth Theorem](proth-theorem.md)

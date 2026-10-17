@@ -16,6 +16,10 @@ Taylor's formula for the complex exponential then give the stated coefficients a
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Deriv Gamma of Real](../../special-functions/part-01/gamma/digamma/deriv-gamma-of-real.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch8Entry15Doublegamma](../../../../../../sources/v2/MathlibExt.md)

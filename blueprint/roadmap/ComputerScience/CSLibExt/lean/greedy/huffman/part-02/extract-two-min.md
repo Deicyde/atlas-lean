@@ -14,11 +14,11 @@ Extract two priorities in increasing lexicographic order.
 
 - [Huffman Priority](huffman-priority.md)
 - [Huffman Two Min](huffman-two-min.md)
-- [Min Heap](../../../data-structures/part-01/binary-heap-2/part-02/min-heap.md)
+- [Min Heap](../../../data-structures/part-02/binary-heap/part-02/min-heap.md)
 
 ## Proof depends on
 
-- [Extract Min](../../../data-structures/part-01/binary-heap-2/part-02/extract-min.md)
+- [Extract Min](../../../data-structures/part-02/binary-heap/part-02/extract-min.md)
 
 ## Sources
 

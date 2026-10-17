@@ -17,6 +17,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Definition (Conditional expectation)](../../part-01/lecture-25/053-conditional-expectation.md)
+- [Expectation equivalence theorem](../lecture-38/098-expectation-equivalence-theorem.md)
 
 ## Sources
 

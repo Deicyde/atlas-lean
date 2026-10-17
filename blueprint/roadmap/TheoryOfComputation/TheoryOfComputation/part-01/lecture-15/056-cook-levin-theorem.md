@@ -11,6 +11,7 @@ $\mathrm{SAT} \in \mathsf{P} \Rightarrow \mathsf{P} = \mathsf{NP}$.
 
 ## Depends on
 
+- [Definition (NP-complete)](061-np-complete.md)
 - [Definition (SAT)](../lecture-14/054-sat.md)
 
 ## Proof depends on

@@ -13,7 +13,7 @@ If $1 \leq p \leq \infty$ and $f, g: E \to \mathbb{C}$ are two measurable functi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition ($L^p$ norm and $L^\infty$ norm)](043-l-p-norm-and-l-infty-norm.md)
 
 ## Proof depends on
 

@@ -15,6 +15,8 @@ The quotient map evaluated on an integral unit.
 
 - [Integral Units To Ray Elements](integral-units-to-ray-elements.md)
 - [Integral Units To Ray Quotient](integral-units-to-ray-quotient.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+- [Ray One Elements](../../part-02/residue-sign/ray-one-elements.md)
 
 ## Sources
 

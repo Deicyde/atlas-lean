@@ -15,7 +15,15 @@ rank `1` with one up color, `2 * n` level colors, and one down color.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uld Motzkin Number](../../part-09/uldmotzkin-number-of-rank-r/uld-motzkin-number.md)
+
+## Proof depends on
+
+- [Is Motzkin Path](../../part-09/uldmotzkin-number-of-rank-r/is-motzkin-path.md)
+- [ULDMotzkin Step](../../part-09/uldmotzkin-number-of-rank-r/uldmotzkin-step.md)
+- [Path Height](../../part-09/uldmotzkin-number-of-rank-r/path-height.md)
+- [Step Height](../../part-09/uldmotzkin-number-of-rank-r/step-height.md)
+- [Uld Motzkin Number eq card](../../part-09/uldmotzkin-number-of-rank-r/uld-motzkin-number-eq-card.md)
 
 ## Sources
 

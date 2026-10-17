@@ -18,6 +18,8 @@ A character at `m2` induced by one at `m1` via level change.
 
 - [Ray Class Group](../group/ray-class-group.md)
 - [Map Of Dvd](map-of-dvd.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Ray Group](../../part-02/ray-group/ray-group.md)
 
 ## Sources
 

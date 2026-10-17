@@ -18,6 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Definition (Section 3, Subsection 3.2 (Homomorphisms))](001-definition.md)
+- [Definition (Group)](../section-1/002-group.md)
 
 ## Sources
 

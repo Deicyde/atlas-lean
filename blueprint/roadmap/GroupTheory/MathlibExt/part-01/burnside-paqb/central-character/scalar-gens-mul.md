@@ -19,6 +19,9 @@ Generator-generator products stay in the span.
 
 - [Central Scalar](central-scalar.md)
 - [Central Scalar mul](central-scalar-mul.md)
+- [Class Rep](../class-sum/class-rep.md)
+- [Conj Class](../../burnside-paqb-reduction/conj-class.md)
+- [Struct Const](../class-sum/struct-const.md)
 
 ## Sources
 

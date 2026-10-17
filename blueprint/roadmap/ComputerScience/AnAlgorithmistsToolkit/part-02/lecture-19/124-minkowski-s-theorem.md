@@ -14,6 +14,8 @@ If $L$ is a full rank lattice, and $S$ any centrally-symmetric convex set of vol
 ## Depends on
 
 - [Definition 2 (Lecture 10, Section 2)](../../part-01/lecture-10/093-definition-2.md)
+- [Definition (Lattice)](../lecture-18/130-lattice.md)
+- [Definition (Determinant of lattice)](../lecture-18/137-determinant-of-lattice.md)
 
 ## Proof depends on
 

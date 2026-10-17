@@ -12,7 +12,8 @@ $L$ elliptic, self-adjoint $\Longrightarrow \exists H_{L}, G_{L} \colon C^{\inft
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2 (Lecture 15, Section 1, Hodge Theory)](../lecture-15/035-definition-2.md)
+- [Definition 5 (Lecture 15, Section 1, Hodge Theory)](../lecture-15/043-definition-5.md)
 
 ## Sources
 

@@ -17,6 +17,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Dobrowolski Scale](dobrowolski-scale.md)
+- [Algebraic Mahler Measure](../primitive-mahler/algebraic-mahler-measure.md)
 
 ## Sources
 

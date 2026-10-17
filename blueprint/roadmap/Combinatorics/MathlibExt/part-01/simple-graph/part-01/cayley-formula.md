@@ -13,7 +13,11 @@ The complete graph on `n` vertices has `n^(n-2)` spanning trees.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Num Spanning Trees](../part-03/matrix-tree/num-spanning-trees.md)
+
+## Proof depends on
+
+- [Is Spanning Tree](../part-03/matrix-tree/is-spanning-tree.md)
 
 ## Sources
 

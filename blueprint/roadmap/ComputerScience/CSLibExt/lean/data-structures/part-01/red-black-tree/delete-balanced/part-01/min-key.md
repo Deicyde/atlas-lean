@@ -13,7 +13,11 @@ invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../../../part-03/red-black-tree/part-01/tree.md)
+
+## Proof depends on
+
+- [Color](../../../../part-03/red-black-tree/part-01/color.md)
 
 ## Sources
 

@@ -2,8 +2,6 @@
 article_id: af_194e491c55ceadbafd083a41
 declaration: def
 origin: cited
-statement: formalized
-lean: Multigraph.Connected
 ---
 
 # Connected

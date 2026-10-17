@@ -17,7 +17,12 @@ source SHA-256 `ca51d34e717a237b02bca4bfa28c57dfc15c81f1276c7634d5abe998d1c48b89
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Parameters](../../part-07/lucas-polytopic-number/lucas-parameters.md)
+
+## Proof depends on
+
+- [Lucas Bracket](../../part-07/lucas-polytopic-number/lucas-bracket.md)
+- [Lucasnomial](../../part-07/lucas-polytopic-number/lucasnomial.md)
 
 ## Sources
 

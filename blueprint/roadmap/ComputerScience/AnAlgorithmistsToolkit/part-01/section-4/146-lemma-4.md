@@ -12,7 +12,7 @@ Let $b_1, \ldots, b_n$ be any basis for $L$ with $\|b_1\|^2 \leq \cdots \leq \|b
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lattice)](../../part-02/lecture-18/130-lattice.md)
 
 ## Sources
 

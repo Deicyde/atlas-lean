@@ -14,7 +14,13 @@ The formula also includes conversions, preprocessing and the other selected even
 
 ## Depends on
 
+- [Preprocess](../preprocessing/preprocess.md)
 - [Boyer Moore Matches](../basic/boyer-moore-matches.md)
+
+## Proof depends on
+
+- [Preprocess full Match](../preprocessing/preprocess-full-match.md)
+- [Preprocess good Suffix](../preprocessing/preprocess-good-suffix.md)
 
 ## Sources
 

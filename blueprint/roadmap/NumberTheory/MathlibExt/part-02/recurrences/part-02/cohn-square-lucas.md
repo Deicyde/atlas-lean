@@ -14,7 +14,7 @@ claim): for `0 < n`, `Lₙ = x²` forces `n ∈ {1, 3}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Number](../../../part-07/lucas-sequence/lucas-number.md)
 
 ## Sources
 

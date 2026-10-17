@@ -14,6 +14,8 @@ Let $\sum x_n$ be a series and suppose that $L = \lim_{n\to \infty} |x_n|^{1/n}$
 ## Depends on
 
 - [Definition (Sequence Convergence of Reals) (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/022-sequence-convergence-of-reals.md)
+- [Definition (Series) (1)](../series/032-definition.md)
+- [Definition (Series section)](../series/097-definition.md)
 
 ## Sources
 

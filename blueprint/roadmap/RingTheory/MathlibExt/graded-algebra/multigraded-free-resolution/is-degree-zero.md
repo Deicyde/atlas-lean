@@ -14,7 +14,7 @@ target grading.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraded Polynomial Module](../multigraded-polynomial-module/multigraded-polynomial-module.md)
 
 ## Sources
 

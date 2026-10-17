@@ -13,7 +13,7 @@ Every $p$-group has non-trivial center.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section: Group Actions on $G$, Subsection: $p$-groups)](042-definition.md)
 
 ## Proof depends on
 

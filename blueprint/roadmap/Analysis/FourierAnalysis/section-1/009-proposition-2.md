@@ -13,7 +13,8 @@ If $h \in L^1(\mathbb{R}) \cap L^2(\mathbb{R})$, then the inverse Fourier transf
 
 ## Depends on
 
-This node has no prerequisites.
+- [Corollary 2 (Section 1: Fourier Integrals on $L^2(\mathbb{R})$ and $L^1(\mathbb{R})$)](011-corollary-2.md)
+- [Corollary 4 (Fourier inversion on $L^2$)](013-fourier-inversion-on-l-2.md)
 
 ## Sources
 

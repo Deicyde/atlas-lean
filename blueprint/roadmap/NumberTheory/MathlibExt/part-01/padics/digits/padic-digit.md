@@ -2,8 +2,6 @@
 article_id: af_eb9a228bd0c7c1ed8724d2ef
 declaration: def
 origin: cited
-statement: formalized
-lean: PadicInt.padicDigit
 ---
 
 # Padic Digit

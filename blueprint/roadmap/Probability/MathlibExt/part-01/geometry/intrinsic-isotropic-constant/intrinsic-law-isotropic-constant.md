@@ -14,6 +14,11 @@ Entropy and covariance are computed relative to the intrinsic affine span.
 
 - [Intrinsic Log Concave Law](intrinsic-log-concave-law.md)
 
+## Proof depends on
+
+- [Log Concave Law](../isotropic-constant/log-concave-law.md)
+- [Law Isotropic Constant](../isotropic-constant/law-isotropic-constant.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Geometry.IntrinsicIsotropicConstant](../../../../../../sources/v2/MathlibExt.md)

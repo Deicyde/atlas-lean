@@ -16,6 +16,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Class Sum](../class-sum/class-sum.md)
+- [Class Sum carrier central](../class-sum/class-sum-carrier-central.md)
 - [Exists scalar of central](exists-scalar-of-central.md)
 
 ## Sources

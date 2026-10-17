@@ -15,7 +15,7 @@ multiplying the evaluation of the real cyclotomic polynomial at `x + x⁻¹` by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Real Cyclotomic Polynomial](../real-cyclotomic-polynomial.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ as the last key of the flattening is `exists_maxKey_flatten` below.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](../../../btree-2/part-01/btree.md)
 
 ## Proof depends on
 

@@ -14,7 +14,7 @@ fourth claim): for `0 < n`, `Lₙ = 2x²` forces `n = 6`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Number](../../../part-07/lucas-sequence/lucas-number.md)
 
 ## Sources
 

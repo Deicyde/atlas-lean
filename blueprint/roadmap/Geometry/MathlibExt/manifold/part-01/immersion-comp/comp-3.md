@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Geometry.Manifold.ImmersionCompWanted._root_.Manifold.IsImmersionOfComplement.comp
+lean: Manifold.IsImmersionOfComplement.comp
 ---
 
 # Comp
@@ -15,6 +15,10 @@ and target models are boundaryless, with the product of the two complements.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Comp](comp.md)
 
 ## Sources
 

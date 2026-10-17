@@ -14,6 +14,10 @@ $j_* j^* \mathcal{F} = \varinjlim(f^{-n}\mathcal{F})$, where $j \colon U \hookri
 - [Definition 23](../lecture-10/086-definition-23.md)
 - [Definition 24](../lecture-10/087-definition-24.md)
 
+## Proof depends on
+
+- [Lemma 22](096-lemma-22.md)
+
 ## Sources
 
 - [MIT 18.725 Algebraic Geometry (Fall 2015), Lecture 12: Quasi-coherent and Coherent Sheaves](../../../../../sources/v1/AlgebraicGeometryI.md)

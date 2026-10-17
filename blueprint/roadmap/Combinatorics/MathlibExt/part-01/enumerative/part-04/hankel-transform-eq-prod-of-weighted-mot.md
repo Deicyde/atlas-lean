@@ -21,7 +21,7 @@ No nonzero `beta` hypothesis is needed.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hankel Transform](../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/hankel-transform.md)
 
 ## Sources
 

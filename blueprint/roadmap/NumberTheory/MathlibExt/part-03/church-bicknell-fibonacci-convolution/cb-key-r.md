@@ -13,7 +13,7 @@ The real-valued binomial convolution identity, before descending to `ℚ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Number](../../part-07/lucas-sequence/lucas-number.md)
 
 ## Proof depends on
 

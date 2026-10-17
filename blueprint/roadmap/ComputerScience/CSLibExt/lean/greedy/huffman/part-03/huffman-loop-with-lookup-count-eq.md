@@ -17,15 +17,15 @@ indexed payload reads per merge followed by one final indexed read.
 - [Huffman Priority](../part-02/huffman-priority.md)
 - [Huffman Tree](../part-01/huffman-tree.md)
 - [Huffman Work Item](../part-02/huffman-work-item.md)
-- [Min Heap](../../../data-structures/part-01/binary-heap-2/part-02/min-heap.md)
+- [Min Heap](../../../data-structures/part-02/binary-heap/part-02/min-heap.md)
 - [Huffman Loop](huffman-loop.md)
 - [Huffman Loop With Lookup Count](huffman-loop-with-lookup-count.md)
 
 ## Proof depends on
 
 - [Huffman Two Min](../part-02/huffman-two-min.md)
-- [Extract Min](../../../data-structures/part-01/binary-heap-2/part-02/extract-min.md)
-- [Push](../../../data-structures/part-01/binary-heap-2/part-02/push.md)
+- [Extract Min](../../../data-structures/part-02/binary-heap/part-02/extract-min.md)
+- [Push](../../../data-structures/part-02/binary-heap/part-02/push.md)
 - [Extract Two Min?](../part-02/extract-two-min.md)
 - [Huffman Loop With Lookup Count Aux](huffman-loop-with-lookup-count-aux.md)
 - [Huffman Table Forest](../part-02/huffman-table-forest.md)

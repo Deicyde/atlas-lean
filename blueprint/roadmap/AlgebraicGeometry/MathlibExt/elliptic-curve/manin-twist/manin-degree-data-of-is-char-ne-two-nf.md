@@ -22,6 +22,7 @@ and zero separation needed for the Hasse bound.
 - [Primitive Triple of no common irreducible](../manin-projective-degree/primitive-triple-of-no-common-irreducibl.md)
 - [Projective first nat Degree](../manin-projective-degree/projective-first-nat-degree.md)
 - [Manin degree data of card eq three](manin-degree-data-of-card-eq-three.md)
+- [Nat Card point eq nat Card affine Solutions add one](../point-count/nat-card-point-eq-nat-card-affine-soluti.md)
 
 ## Sources
 

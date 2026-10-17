@@ -12,7 +12,7 @@ The polar of a convex body $C$ is given by $C^* = \{x \in \mathbb{R}^n \mid x \c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2 (Lecture 10, Section 2)](../lecture-10/093-definition-2.md)
 
 ## Sources
 

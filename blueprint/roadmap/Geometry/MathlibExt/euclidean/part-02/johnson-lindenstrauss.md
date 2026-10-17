@@ -48,6 +48,11 @@ Probability, American Mathematical Society (1984), 189--206, DOI 10.1090/conm/02
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Integrable exp mul sq std Gaussian](../../../../Probability/MathlibExt/part-01/distributions/chi-square/integrable-exp-mul-sq-std-gaussian.md)
+- [Mgf sq std Gaussian](../../../../Probability/MathlibExt/part-01/distributions/chi-square/mgf-sq-std-gaussian.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Euclidean.JohnsonLindenstrauss](../../../../../sources/v2/MathlibExt.md)

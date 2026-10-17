@@ -36,6 +36,9 @@ Insertion preserves the B-tree invariant: the result is again ordered and root-v
 - [Ins Leaf](../part-01/ins-leaf.md)
 - [Mk Node](mk-node.md)
 - [Split Node](split-node.md)
+- [Mem ordered Insert](../../../part-02/ordered-insert/mem-ordered-insert.md)
+- [Ordered Insert](../../../part-02/ordered-insert/ordered-insert.md)
+- [Ordered Insert eq of mem](../../../part-02/ordered-insert/ordered-insert-eq-of-mem.md)
 
 ## Sources
 

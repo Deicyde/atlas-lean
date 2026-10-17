@@ -18,6 +18,9 @@ This does not assert linear all-match comparison complexity or machine runtime.
 
 ## Proof depends on
 
+- [Preprocess](../preprocessing/preprocess.md)
+- [Preprocess good Suffix](../preprocessing/preprocess-good-suffix.md)
+- [Preprocess time le](../preprocessing/preprocess-time-le.md)
 - [Boyer Moore Matches nil pattern](boyer-moore-matches-nil-pattern.md)
 - [Boyer Moore Matches of length lt](boyer-moore-matches-of-length-lt.md)
 

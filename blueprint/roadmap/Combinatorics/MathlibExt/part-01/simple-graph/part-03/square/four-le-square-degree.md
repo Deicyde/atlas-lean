@@ -14,7 +14,13 @@ neighbors in the graph square.
 
 ## Depends on
 
+- [Is Vertex Connected](../../part-04/vertex-connectivity/is-vertex-connected.md)
 - [Square](square.md)
+
+## Proof depends on
+
+- [Connected induce compl](../../part-04/vertex-connectivity/connected-induce-compl.md)
+- [Two le degree](../../part-04/vertex-connectivity/two-le-degree.md)
 
 ## Sources
 

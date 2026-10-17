@@ -14,7 +14,11 @@ root tree and the addressed subtree instead of the cut remainder.
 
 ## Depends on
 
+- [Fibonacci Heap](../../../../part-02/fibonacci-heap/part-02/fibonacci-heap.md)
 - [Decrease Key](../part-01/decrease-key.md)
+- [Elements](../../../../part-02/fibonacci-heap/part-03/elements.md)
+- [Fibonacci Tree](../../../../part-02/fibonacci-heap/part-01/fibonacci-tree.md)
+- [Root](../../../../part-02/fibonacci-heap/part-01/root.md)
 - [Subtree At](../part-01/subtree-at.md)
 
 ## Proof depends on

@@ -11,7 +11,13 @@ Let $u$ be a $C^{1}$ solution to (3.0.15), and let $(t,x)$ be a spacetime point.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2.0.1 (Class Meeting #24, Section 2 (Burger's Equation))](102-definition-2-0-1.md)
+
+## Proof depends on
+
+- [Proposition 1.0.1 (Connection between transport equations and ODEs)](100-connection-between-transport-equations-a.md)
+- [Proposition 2.0.2 (Burger solutions are constant along characteristics)](103-burger-solutions-are-constant-along-char.md)
+- [Proposition 2.0.3 (Burger characteristics are straight lines)](104-burger-characteristics-are-straight-line.md)
 
 ## Sources
 

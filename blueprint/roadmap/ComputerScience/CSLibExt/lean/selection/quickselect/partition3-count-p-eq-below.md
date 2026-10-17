@@ -13,7 +13,12 @@ Predicate counts survive partitioning when both other parts contribute zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Way Partition](../../sort/partition/three-way-partition.md)
+- [Partition3](../../sort/partition/partition3.md)
+
+## Proof depends on
+
+- [Partition3 correct](../../sort/partition/partition3-correct.md)
 
 ## Sources
 

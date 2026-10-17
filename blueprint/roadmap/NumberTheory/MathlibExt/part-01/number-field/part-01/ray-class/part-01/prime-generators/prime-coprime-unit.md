@@ -12,7 +12,8 @@ The prime unit packaged as an element of `m.coprimeFractionalIdeals`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
 
 ## Proof depends on
 

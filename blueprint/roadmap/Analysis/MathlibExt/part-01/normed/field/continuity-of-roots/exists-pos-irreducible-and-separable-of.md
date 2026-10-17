@@ -18,6 +18,7 @@ perturbations.
 
 ## Proof depends on
 
+- [Is Closest Conjugate](../is-closest-conjugate/is-closest-conjugate.md)
 - [Exists is Closest Conjugate root of l1 Norm sub lt](exists-is-closest-conjugate-root-of-l1-n.md)
 - [Degree Stability](../../../../../../Algebra/MathlibExt/polynomial/nat-degree-eq-of-monic-of-l1-norm-sub-lt.md)
 

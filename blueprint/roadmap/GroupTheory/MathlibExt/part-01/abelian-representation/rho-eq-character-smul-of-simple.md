@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.GroupTheory.AbelianRepresentationWanted._root_.FDRep.rho_eq_character_smul_of_simple
+lean: FDRep.rho_eq_character_smul_of_simple
 ---
 
 # Rho eq character smul of simple
@@ -15,6 +15,10 @@ scalar multiplication by its character value.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Finrank eq one of is Mul Commutative](finrank-eq-one-of-is-mul-commutative.md)
 
 ## Sources
 

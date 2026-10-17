@@ -17,6 +17,11 @@ Proves `Wanted` entry `ramanujan_part1_ch9_entry17_sec`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Part1 Ch9 Entry21 Piseries2](../part-04/ramanujan-part1-ch9-entry21-piseries2.md)
+- [Part1 Ch9 Entry32 Lambertdivisor](../part-04/ramanujan-part1-ch9-entry32-lambertdivis.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch9Entry17Sec](../../../../../../sources/v2/MathlibExt.md)

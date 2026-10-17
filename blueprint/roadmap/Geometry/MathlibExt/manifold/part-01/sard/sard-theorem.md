@@ -22,6 +22,7 @@ Guillemin-Pollack, Differential Topology; Lean states finite-dimensional manifol
 ## Proof depends on
 
 - [Critical Set](critical-set.md)
+- [Image Null](../../../../../MeasureTheory/MathlibExt/measure/measure-image-null-of-locally-null.md)
 
 ## Sources
 

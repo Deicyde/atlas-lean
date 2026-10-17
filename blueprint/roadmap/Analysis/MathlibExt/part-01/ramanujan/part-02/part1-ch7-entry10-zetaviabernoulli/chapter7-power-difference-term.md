@@ -17,6 +17,10 @@ directly.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter7 Power Difference Term](../part1-ch7-power-difference/chapter7-power-difference-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch7Entry10Zetaviabernoulli](../../../../../../../sources/v2/MathlibExt.md)

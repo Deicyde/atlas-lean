@@ -13,6 +13,10 @@ Let $X$ be a set of points in $\mathbb{R}^2$ and $D$ a set of directions in $S^1
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Szemeredi-Trotter) (Section 'The Szemeredi-Trotter theorem')](../section-the-szemeredi-trotter-theorem/046-szemeredi-trotter.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section 'The Szemeredi-Trotter projection theorem'](../../../../../sources/v1/ProjectionTheory.md)

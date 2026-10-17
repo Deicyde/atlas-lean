@@ -12,7 +12,8 @@ For a reduced basis $b_1, \ldots, b_n$ ordered as above, $\prod_{i=1}^{n} \|b_i\
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6 (Reduced bases)](../../part-02/lecture-19/128-reduced-bases.md)
+- [Definition (Determinant of lattice)](../../part-02/lecture-18/137-determinant-of-lattice.md)
 
 ## Sources
 

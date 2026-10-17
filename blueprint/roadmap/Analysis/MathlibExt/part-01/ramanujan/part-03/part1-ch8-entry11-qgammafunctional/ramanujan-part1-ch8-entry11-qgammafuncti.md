@@ -15,6 +15,13 @@ Canonical `Complex.digamma` form of Entry 11's functional equation.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Analytic At digamma](../../../special-functions/part-01/gamma/digamma/analytic-at-digamma.md)
+- [Deriv Gamma of Real](../../../special-functions/part-01/gamma/digamma/deriv-gamma-of-real.md)
+- [Deriv log Gamma](../../../special-functions/part-01/gamma/digamma/deriv-log-gamma.md)
+- [Has Sum digamma series](../../../special-functions/part-01/gamma/digamma/has-sum-digamma-series.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch8Entry11Qgammafunctional](../../../../../../../sources/v2/MathlibExt.md)

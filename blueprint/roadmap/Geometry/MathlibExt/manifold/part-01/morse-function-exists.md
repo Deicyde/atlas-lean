@@ -16,7 +16,13 @@ boundaryless finite-dimensional second-countable specialization.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Morse Function](is-morse-function.md)
+
+## Proof depends on
+
+- [Morse Lemma](morse-lemma.md)
+- [Morse Quadratic](morse-theory/morse-quadratic.md)
+- [Sard euclidean open](sard/sard-euclidean-open.md)
 
 ## Sources
 

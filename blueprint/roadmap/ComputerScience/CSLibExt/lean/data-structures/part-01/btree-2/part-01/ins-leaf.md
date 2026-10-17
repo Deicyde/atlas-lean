@@ -18,6 +18,7 @@ inserted list exceeds `2 * t - 1` keys.
 ## Proof depends on
 
 - [BTree](btree.md)
+- [Ordered Insert](../../../part-02/ordered-insert/ordered-insert.md)
 
 ## Sources
 

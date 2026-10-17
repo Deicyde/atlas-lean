@@ -13,7 +13,7 @@ Count of three-square representations as the cardinality of solutions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Three Square Representation Count](../../../../../../../NumberTheory/MathlibExt/part-02/quadratic-forms/three-squares/three-square-representation-count.md)
 
 ## Sources
 

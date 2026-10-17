@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Geometry.Manifold.ImmersionCompWanted._root_.Manifold.IsImmersionAt.comp
+lean: Manifold.IsImmersionAt.comp
 ---
 
 # Comp
@@ -15,6 +15,10 @@ intermediate and target models are boundaryless.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Comp](comp.md)
 
 ## Sources
 

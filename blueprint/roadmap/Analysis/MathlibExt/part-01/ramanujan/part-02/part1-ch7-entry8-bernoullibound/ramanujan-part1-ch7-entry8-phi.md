@@ -14,7 +14,8 @@ Source: Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 8, for 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter7 Phi Argument](../part1-ch7-phi/chapter7-phi-argument.md)
+- [Chapter7 Phi](../part1-ch7-phi/chapter7-phi.md)
 
 ## Proof depends on
 

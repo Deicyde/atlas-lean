@@ -2,8 +2,6 @@
 article_id: af_7379b7f2e8a843ff6d707542
 declaration: def
 origin: cited
-statement: formalized
-lean: NewtonPolygon.edgeRestriction
 ---
 
 # Edge Restriction

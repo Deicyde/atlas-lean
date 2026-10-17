@@ -14,12 +14,15 @@ key.
 
 ## Depends on
 
+- [Trie](../../../part-03/trie/trie.md)
 - [Delete](delete.md)
+- [Lookup](../../../part-03/trie/lookup.md)
 
 ## Proof depends on
 
 - [Is Empty Node](is-empty-node.md)
 - [Is Empty Node eq true iff](is-empty-node-eq-true-iff.md)
+- [Lookup empty](../../../part-03/trie/lookup-empty.md)
 - [Lookup set Child of ne](lookup-set-child-of-ne.md)
 - [Lookup set Child self](lookup-set-child-self.md)
 - [Set Child](set-child.md)

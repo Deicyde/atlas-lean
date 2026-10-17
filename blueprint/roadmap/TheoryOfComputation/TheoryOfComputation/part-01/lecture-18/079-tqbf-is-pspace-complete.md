@@ -15,6 +15,8 @@ $\mathrm{TQBF}$ is $\mathsf{PSPACE}$-complete.
 
 ## Proof depends on
 
+- [Definition (PSPACE and NPSPACE)](087-pspace-and-npspace.md)
+- [Definition (SPACE and NSPACE)](086-space-and-nspace.md)
 - [Definition (SPACE complexity)](../lecture-17/064-space-complexity.md)
 - [Definition (Quantified Boolean Formula and TQBF)](../lecture-17/069-quantified-boolean-formula-and-tqbf.md)
 - [Theorem ($TQBF \in PSPACE$)](../lecture-17/070-tqbf-in-pspace.md)

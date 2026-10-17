@@ -13,7 +13,7 @@ For any nonzero $b \in L(B)$, $\|b\| \geq \min_i \|b_i^{\star}\|$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lattice)](../lecture-18/130-lattice.md)
 
 ## Sources
 

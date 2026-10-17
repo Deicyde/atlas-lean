@@ -18,7 +18,9 @@ Cameron groups.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pointwise Topology](pointwise-topology.md)
+- [Is Highly Homogeneous](highly-homogeneous/is-highly-homogeneous.md)
+- [Order](order-aut-subgroup.md)
 
 ## Sources
 

@@ -17,7 +17,14 @@ lines 862–867, `https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraded Free Resolution](multigraded-free-resolution/multigraded-free-resolution.md)
+- [Multigraded Polynomial Module](multigraded-polynomial-module/multigraded-polynomial-module.md)
+- [Base Changed Complex](multigraded-betti/base-changed-complex.md)
+- [Base Changed Degree Piece](multigraded-betti/base-changed-degree-piece.md)
+
+## Proof depends on
+
+- [Zero Eval](multigraded-betti/zero-eval.md)
 
 ## Sources
 

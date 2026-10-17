@@ -15,6 +15,7 @@ Product of class sums as a combination of class sums (structure constants).
 
 - [Class Rep](class-rep.md)
 - [Class Sum](class-sum.md)
+- [Conj Class](../../burnside-paqb-reduction/conj-class.md)
 - [Struct Const](struct-const.md)
 
 ## Proof depends on

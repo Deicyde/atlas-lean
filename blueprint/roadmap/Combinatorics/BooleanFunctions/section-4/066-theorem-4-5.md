@@ -17,6 +17,7 @@ There exists an absolute constant $C > 0$, such that for all $k \in \mathbb{N}$,
 
 - [Definition 1.1](../lecture-4/018-definition-1-1.md)
 - [Theorem 3.6](../lecture-5/037-theorem-3-6.md)
+- [Claim 6.1](../section-6/068-claim-6-1.md)
 
 ## Sources
 

@@ -2,8 +2,6 @@
 article_id: af_106c38587caa6e1808280b5b
 declaration: structure
 origin: cited
-statement: formalized
-lean: IsogenyVolcano
 ---
 
 # Isogeny Volcano

@@ -13,6 +13,9 @@ The deleted key is absent from the result.
 
 ## Depends on
 
+- [BTree](../../../btree-2/part-01/btree.md)
+- [Is BTree](../../../btree-2/part-02/is-btree.md)
+- [Mem](../../../btree-2/part-01/mem.md)
 - [Delete](delete.md)
 
 ## Proof depends on

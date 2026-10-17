@@ -17,6 +17,10 @@ Proves `Wanted` entry `ramanujan_part1_ch3_entry2`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Part1 Ch3 Entry2 Rightsummable](../ramanujan-part1-ch3-entry2-rightsummable.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Ramanujan.Part1Ch3Entry2](../../../../../../../sources/v2/MathlibExt.md)

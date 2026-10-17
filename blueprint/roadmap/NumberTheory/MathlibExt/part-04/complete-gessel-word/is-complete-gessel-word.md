@@ -13,7 +13,13 @@ barred occurrence counts agree for every letter.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gessel Alphabet](../../part-06/gessel-word/gessel-alphabet.md)
+
+## Proof depends on
+
+- [Is Gessel Word](../../part-06/gessel-word/is-gessel-word.md)
+- [Gessel Barred Count](../../part-06/gessel-word/gessel-barred-count.md)
+- [Gessel Unbarred Count](../../part-06/gessel-word/gessel-unbarred-count.md)
 
 ## Sources
 

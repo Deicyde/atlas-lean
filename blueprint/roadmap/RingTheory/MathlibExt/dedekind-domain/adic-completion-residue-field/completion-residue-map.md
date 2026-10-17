@@ -2,8 +2,6 @@
 article_id: af_d554f52bcc58160c95a1edad
 declaration: def
 origin: cited
-statement: formalized
-lean: IsDedekindDomain.HeightOneSpectrum.completionResidueMap
 ---
 
 # Completion Residue Map

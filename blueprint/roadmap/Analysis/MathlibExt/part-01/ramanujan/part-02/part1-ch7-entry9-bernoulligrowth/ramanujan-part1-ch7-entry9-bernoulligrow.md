@@ -15,7 +15,9 @@ Proves `Wanted` entry `ramanujan_part1_ch7_entry9_bernoulligrowth`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter7 Admissible](../part1-ch7-power-difference/chapter7-admissible.md)
+- [Chapter7 Power Difference Sum](../part1-ch7-power-difference/chapter7-power-difference-sum.md)
+- [Chapter7 Power Difference Term](../part1-ch7-power-difference/chapter7-power-difference-term.md)
 
 ## Sources
 

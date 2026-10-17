@@ -13,6 +13,7 @@ The Bernoulli-formula representation `genocchiNumberViaBernoulli` is `genocchiNu
 
 ## Depends on
 
+- [Genocchi Number](../genocchi-number/genocchi-number.md)
 - [Genocchi Number Via Bernoulli](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-05/median-genocchi-number/genocchi-number-via-bernoulli.md)
 
 ## Proof depends on

@@ -15,6 +15,10 @@ $\beta \in \Omega^{\ell}(U)$, $d\beta = 0$, $i^{*}\beta = \beta|_{X} = 0 \Longri
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 3 (Lecture 5, Section 1 (Tubular Neighborhoods))](015-theorem-3.md)
+
 ## Sources
 
 - [MIT 18.966 Geometry of Manifolds (Spring 2007), Lecture 5, Section 1 (Tubular Neighborhoods)](../../../../sources/v1/GeometryOfManifolds.md)

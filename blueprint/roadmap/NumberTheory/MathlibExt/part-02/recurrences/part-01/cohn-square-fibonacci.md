@@ -16,6 +16,12 @@ claim): for `0 < n`, `Fₙ = x²` forces `n ∈ {1, 2, 12}`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Square Fibonacci Lucas](../part-02/cohn-square-lucas.md)
+- [Cohn Twice Square Lucas](cohn-twice-square-lucas.md)
+- [Lucas Number](../../../part-07/lucas-sequence/lucas-number.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Recurrences.CohnSquareFibonacci](../../../../../../sources/v2/MathlibExt.md)

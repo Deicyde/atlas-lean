@@ -11,10 +11,11 @@ $\mathsf{NP} \subseteq \mathsf{PSPACE}$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (PSPACE and NPSPACE)](../lecture-18/087-pspace-and-npspace.md)
 
 ## Proof depends on
 
+- [Definition (SPACE and NSPACE)](../lecture-18/086-space-and-nspace.md)
 - [Definition (Lecture 14, section on Polynomial Time Reducibility)](../lecture-14/053-definition.md)
 - [Definition (SAT)](../lecture-14/054-sat.md)
 

@@ -14,6 +14,10 @@ Ambient subgroup of all units via the subtype inclusion.
 
 - [Congruence Subgroup](congruence-subgroup.md)
 
+## Proof depends on
+
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.CongruenceSubgroup](../../../../../../../../../sources/v2/MathlibExt.md)

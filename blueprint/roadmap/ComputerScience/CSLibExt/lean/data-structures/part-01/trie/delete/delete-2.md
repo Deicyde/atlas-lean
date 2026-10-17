@@ -13,6 +13,8 @@ Deletion preserves the trie invariant.
 
 ## Depends on
 
+- [Trie](../../../part-03/trie/trie.md)
+- [Valid](../../../part-03/trie/valid.md)
 - [Delete](delete.md)
 
 ## Proof depends on

@@ -18,5 +18,7 @@ Established results whose Lean implementation or proof is deferred.
 - [Odd Distance Graph Infinite Chromatic Wanted](odd-distance-graph-infinite-chromatic-wanted/README.md)
 - [Partial List Coloring Wanted](partial-list-coloring-wanted/README.md)
 - [Petersen Coloring Conjecture Wanted](petersen-coloring-conjecture-wanted/README.md)
+- [Rook Domination Polynomial Wanted](rook-domination-polynomial-wanted/README.md)
+- [Tournament Score Sequence Wanted](tournament-score-sequence-wanted/README.md)
 - [Two Regular Minor Forcing Wanted](two-regular-minor-forcing-wanted/README.md)
 - [Universal Point Sets Subquadratic Wanted](universal-point-sets-subquadratic-wanted/README.md)

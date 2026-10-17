@@ -17,6 +17,11 @@ zero index. `generalized_biperiodic_fibonacci_zero_indices` is the source-shaped
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lucas Sequence Params](../../../../part-07/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../../part-07/lucas-sequence/lucas-u.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Recurrences.GeneralizedBiPeriodicFibonacciZeroIndices](../../../../../../../sources/v2/MathlibExt.md)

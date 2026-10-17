@@ -14,6 +14,7 @@ The Bernoulli benchmark has the source's actual mean and variance.
 ## Depends on
 
 - [Symmetric Bernoulli Law](../part-01/symmetric-bernoulli-law.md)
+- [Is Standardized Law](../../berry-esseen-model/part-01/is-standardized-law.md)
 
 ## Proof depends on
 

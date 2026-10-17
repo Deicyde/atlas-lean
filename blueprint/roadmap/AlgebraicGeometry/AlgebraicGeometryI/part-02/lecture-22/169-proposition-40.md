@@ -18,6 +18,7 @@ $\delta$ is a well-defined homomorphism, where $\delta \colon K^0(\mathbf{Coh}(X
 ## Proof depends on
 
 - [Definition 40](166-definition-40.md)
+- [Lemma 34](170-lemma-34.md)
 
 ## Sources
 

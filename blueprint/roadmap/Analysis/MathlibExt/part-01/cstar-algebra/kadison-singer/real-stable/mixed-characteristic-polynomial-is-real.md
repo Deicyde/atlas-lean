@@ -21,6 +21,8 @@ The mixed characteristic polynomial of positive semidefinite matrices is real-ro
 - [Mixed Det Polynomial](../mixed-char-poly/mixed-det-polynomial.md)
 - [Mixed Det Polynomial is Real Stable of pos Semidef](mixed-det-polynomial-is-real-stable-of-p.md)
 - [Is Real Stable](../../../../../../Algebra/MathlibExt/mv-polynomial/stable/is-real-stable.md)
+- [Mixed Differential](../../../../../../Algebra/MathlibExt/mv-polynomial/stable/mixed-differential-2.md)
+- [Is Real Rooted univariate Specialization of is Real Stable](../../../../../../Algebra/MathlibExt/mv-polynomial/stable/is-real-rooted-univariate-specialization.md)
 - [Mixed Differential](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential.md)
 - [Mixed Differential cons](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential-cons.md)
 - [Univariate Specialization](../../../../../../Algebra/MathlibExt/mv-polynomial/stable/univariate-specialization.md)

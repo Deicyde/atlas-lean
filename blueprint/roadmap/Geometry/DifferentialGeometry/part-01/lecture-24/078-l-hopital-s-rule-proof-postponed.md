@@ -14,6 +14,11 @@ Let $\psi \colon V \rightarrow \mathbb{R}$ be a local defining function for $M$,
 
 - [Definition 24.1](077-definition-24-1.md)
 
+## Proof depends on
+
+- [Corollary 27.3 (Implicit function theorem, special case)](../lecture-27/086-implicit-function-theorem-special-case.md)
+- [Lemma 29.2](../lecture-29/089-lemma-29-2.md)
+
 ## Sources
 
 - [MIT 18.950 Differential Geometry (Fall 2008), Lecture 24](../../../../../sources/v1/DifferentialGeometry.md)

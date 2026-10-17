@@ -13,7 +13,11 @@ If $A_1, A_2$ are regular languages, so is $A_1 \cup A_2$ (the class of regular 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Regular language)](008-regular-language.md)
+
+## Proof depends on
+
+- [Definition (Nondeterministic Finite Automaton)](../lecture-2/009-nondeterministic-finite-automaton.md)
 
 ## Sources
 

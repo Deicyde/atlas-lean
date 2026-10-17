@@ -2,8 +2,6 @@
 article_id: af_fba6db6405c72358d4a2c5a7
 declaration: def
 origin: cited
-statement: formalized
-lean: FractionalIdeal.IsPrimeTo
 ---
 
 # Is Prime To

@@ -19,6 +19,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Choose eq prod small prime powers of no large](../choose-factorization/choose-eq-prod-small-prime-powers-of-no.md)
+- [Exists large prime dvd choose of upper lt lower](../prime-counting/exists-large-prime-dvd-choose-of-upper-l.md)
 
 ## Sources
 

@@ -18,6 +18,7 @@ Let $c$ be a closed curve of period $T$. Then $\int_{0}^{T} |\kappa(t)| \left\|c
 - [Proposition 8.5](../chapter-1-lecture-8/029-proposition-8-5.md)
 - [Definition 8.3](../chapter-1-lecture-8/027-definition-8-3.md)
 - [Definition 7.2](../chapter-1-lecture-7/022-definition-7-2.md)
+- [Theorem 32.5 (No proof)](../../lecture-32/105-no-proof.md)
 - [Definition 1.2](../chapter-1-lecture-1/002-definition-1-2.md)
 
 ## Sources

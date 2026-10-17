@@ -14,7 +14,10 @@ Exactness at the residue-sign target as `MulExact`.
 ## Depends on
 
 - [Ray Class Group](../group/ray-class-group.md)
+- [Residue Sign Target](../../part-02/residue-sign/residue-sign-target.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 - [Integral Units To Residue Sign](../integral-units/integral-units-to-residue-sign.md)
+- [Ray Group](../../part-02/ray-group/ray-group.md)
 - [Residue Sign To Ray Class Group](residue-sign-to-ray-class-group.md)
 
 ## Proof depends on

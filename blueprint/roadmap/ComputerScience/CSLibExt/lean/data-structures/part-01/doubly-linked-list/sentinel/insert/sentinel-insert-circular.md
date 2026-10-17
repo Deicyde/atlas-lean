@@ -14,6 +14,7 @@ Inserting a fresh allocated identity preserves the exact circular list represent
 ## Depends on
 
 - [Circular Represents](../basic/circular-represents.md)
+- [Node](../../basic/node.md)
 - [Sentinel Insert](sentinel-insert.md)
 
 ## Proof depends on

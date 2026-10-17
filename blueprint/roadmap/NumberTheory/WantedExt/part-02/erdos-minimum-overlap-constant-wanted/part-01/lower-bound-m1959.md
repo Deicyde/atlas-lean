@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.lowerBound_M1959
+---
+
+# Lower Bound M1959
+
+Source-reported lower bound `√(4-√15) ≤ C₁ᵦ`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.NumberTheory.ErdosMinimumOverlapConstantWanted](../../../../../../sources/v2/WantedExt.md)
+- Moser 1959; Optimization Problems, Constant 1b.

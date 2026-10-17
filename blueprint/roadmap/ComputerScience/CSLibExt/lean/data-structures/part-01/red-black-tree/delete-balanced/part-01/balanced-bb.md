@@ -15,6 +15,12 @@ a genuine tree, and balance of the two children for a double-black node.
 
 - [BBTree](bbtree.md)
 
+## Proof depends on
+
+- [Balanced](../../../../part-03/red-black-tree/part-01/balanced.md)
+- [Tree](../../../../part-03/red-black-tree/part-01/tree.md)
+- [Black Height](../../../../part-03/red-black-tree/part-01/black-height.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.RedBlackTree.DeleteBalanced](../../../../../../../../../sources/v2/CSLibExt.md)

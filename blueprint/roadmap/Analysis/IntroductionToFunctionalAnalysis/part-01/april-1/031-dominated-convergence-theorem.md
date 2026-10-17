@@ -19,6 +19,7 @@ Let $g: E \to [0, \infty)$ be a nonnegative integrable function, and let $\{f_n\
 
 - [Corollary (March 18, 2021)](../march-18/024-corollary.md)
 - [Proposition (April 1, 2021)](027-proposition.md)
+- [Theorem (Fatou's lemma)](../march-30/030-fatou-s-lemma.md)
 
 ## Sources
 

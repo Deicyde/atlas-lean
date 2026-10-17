@@ -28,7 +28,7 @@ coefficientwise bridge for the displayed fraction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Jacobi Fraction](../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/has-jacobi-fraction.md)
 
 ## Sources
 

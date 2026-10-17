@@ -13,6 +13,13 @@ Pullback of a ray class character to coprime fractional ideals.
 ## Depends on
 
 - [Ray Class Character](ray-class-character.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+
+## Proof depends on
+
+- [Ray Class Group](../group/ray-class-group.md)
+- [Ray Class Map](../group/ray-class-map.md)
+- [Ray Group](../../part-02/ray-group/ray-group.md)
 
 ## Sources
 

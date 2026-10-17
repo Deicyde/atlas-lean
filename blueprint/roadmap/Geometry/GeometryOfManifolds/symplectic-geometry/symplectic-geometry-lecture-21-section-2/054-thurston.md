@@ -11,6 +11,7 @@ Let $f \colon M \rightarrow B$ be a compact, locally trivial symplectic fibratio
 
 ## Depends on
 
+- [Definition 1 (Symplectic Geometry, Lecture 21, Section 2)](056-definition-1.md)
 - [Definition 7](../../lecture-2/011-definition-7.md)
 
 ## Sources

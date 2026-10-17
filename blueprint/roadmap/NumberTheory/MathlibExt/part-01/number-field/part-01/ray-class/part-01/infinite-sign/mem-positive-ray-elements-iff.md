@@ -13,7 +13,9 @@ Membership in `positiveRayElements` is positivity at infinity.
 
 ## Depends on
 
+- [Positive At Infinite Part](../../part-02/ray-group/positive-at-infinite-part.md)
 - [Positive Ray Elements](positive-ray-elements.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 

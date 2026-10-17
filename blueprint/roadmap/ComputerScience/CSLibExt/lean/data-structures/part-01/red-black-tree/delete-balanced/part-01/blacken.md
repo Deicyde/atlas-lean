@@ -14,9 +14,11 @@ a genuine tree. This touches only the root.
 ## Depends on
 
 - [BBTree](bbtree.md)
+- [Tree](../../../../part-03/red-black-tree/part-01/tree.md)
 
 ## Proof depends on
 
+- [Color](../../../../part-03/red-black-tree/part-01/color.md)
 - [Root Black](root-black.md)
 
 ## Sources

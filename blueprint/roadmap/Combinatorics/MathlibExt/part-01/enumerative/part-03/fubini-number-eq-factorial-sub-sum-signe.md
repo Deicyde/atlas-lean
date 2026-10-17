@@ -18,10 +18,12 @@ This recurrence is distinct from the same paper's r-horse-number theorem
 ## Depends on
 
 - [Fubini Number](fubini-number/fubini-number.md)
+- [Signed Stirling First](../part-08/signed-stirling-first.md)
 
 ## Proof depends on
 
 - [Fubini Number eq sum](fubini-number/fubini-number-eq-sum.md)
+- [Sum signed Stirling First mul stirling Second](../part-08/stirling-matrices/sum-signed-stirling-first-mul-stirling-s.md)
 
 ## Sources
 

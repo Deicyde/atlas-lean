@@ -21,6 +21,7 @@ Let $f \colon \{-1,1\}^n \to \{-1,1\}$ be a function such that $I[f] \leqslant K
 - [Claim 5.1](../lecture-4/022-claim-5-1.md)
 - [Definition 2.1 (Discrete derivatives)](../lecture-4/006-discrete-derivatives.md)
 - [Corollary 5.3](../lecture-4/024-corollary-5-3.md)
+- [Lemma 2.2](../lecture-6/042-lemma-2-2.md)
 
 ## Sources
 

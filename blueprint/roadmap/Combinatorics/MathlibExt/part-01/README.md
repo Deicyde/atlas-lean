@@ -2,11 +2,12 @@
 article_id: af_115d0e3c9d497dc5e2f8bf7c
 ---
 
-# AP to Associated Stirling Eulerian
+# AP to Alternating Binomial Partial Sum
 
 - [AP](ap/README.md)
 - [Additive](additive/README.md)
 - [Coding](coding/README.md)
+- [Digraph](digraph/README.md)
 - [Enumerative](enumerative/README.md)
 - [Finpartition](finpartition/README.md)
 - [Graph](graph/README.md)
@@ -23,4 +24,3 @@ article_id: af_115d0e3c9d497dc5e2f8bf7c
 - [Simple Graph](simple-graph/README.md)
 - [Words](words/README.md)
 - [Alternating Binomial Partial Sum](alternating-binomial-partial-sum.md)
-- [Associated Stirling Eulerian](associated-stirling-eulerian/README.md)

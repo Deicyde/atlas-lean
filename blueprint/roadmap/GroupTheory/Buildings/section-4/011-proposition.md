@@ -13,6 +13,10 @@ The link of a simplex in a thick building is itself a thick building.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition (Section 4.4)](017-definition.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 4.4](../../../../sources/v1/Buildings.md)

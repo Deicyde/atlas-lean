@@ -2,7 +2,6 @@
 article_id: af_c76702219ad4941a657fc89c
 declaration: theorem
 origin: cited
-lean: BorsukUlam.borsuk_ulam
 ---
 
 # Theorem 38.11 (Borsuk-Ulam)

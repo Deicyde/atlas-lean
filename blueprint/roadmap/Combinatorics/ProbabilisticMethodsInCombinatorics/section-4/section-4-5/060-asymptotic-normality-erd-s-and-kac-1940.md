@@ -16,6 +16,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Theorem 4.5.2 (Central limit theorem for sums of independent Bernoullis)](059-central-limit-theorem-for-sums-of-indepe.md)
+- [Theorem 4.5.4 (Method of moments)](061-method-of-moments.md)
 
 ## Sources
 

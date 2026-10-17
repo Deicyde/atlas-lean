@@ -13,7 +13,11 @@ Maximal ideal lies over maximal ideal along the adic integer map.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adic Completion Integers Map](finite-lies-over-valuation/adic-completion-integers-map.md)
+
+## Proof depends on
+
+- [Valuation adic Completion Map](finite-lies-over-valuation/valuation-adic-completion-map.md)
 
 ## Sources
 

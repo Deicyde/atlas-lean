@@ -13,6 +13,10 @@ $|A + A \cdot A| \geq p^{s_A + \epsilon}$.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 12.1](../../part-02/section-on-contagious-structure-in-projection-th/072-theorem-12-1.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section: Contagious Structure Lemma](../../../../../sources/v1/ProjectionTheory.md)

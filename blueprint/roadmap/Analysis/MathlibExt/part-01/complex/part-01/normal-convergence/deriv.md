@@ -13,7 +13,13 @@ The derivative series of a locally normally convergent holomorphic series is loc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Converges Locally Normally On](../../../normed/series/normal-convergence/converges-locally-normally-on.md)
+
+## Proof depends on
+
+- [Converges Normally On](../../../normed/series/normal-convergence/converges-normally-on.md)
+- [Sup Norm On](../../../normed/series/normal-convergence/sup-norm-on.md)
+- [Sup Norm On mono](../../../normed/series/normal-convergence/sup-norm-on-mono.md)
 
 ## Sources
 

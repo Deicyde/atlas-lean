@@ -14,11 +14,15 @@ the input or one less (see `delete_validRoot`).
 
 ## Depends on
 
+- [BTree](../../../btree-2/part-01/btree.md)
+- [Is BTree](../../../btree-2/part-02/is-btree.md)
+- [Valid Root](../../../btree-2/part-01/valid-root.md)
 - [Delete](delete.md)
 
 ## Proof depends on
 
 - [Delete](delete-2.md)
+- [Exists valid Root](../../../btree-2/part-02/exists-valid-root.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ There exists a constant $C > 0$ so that the following holds. Let $\varepsilon > 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 9.4.24 (Random projection)](149-random-projection.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 9, Section 9.4](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

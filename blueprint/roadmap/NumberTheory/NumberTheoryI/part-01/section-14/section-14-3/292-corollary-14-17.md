@@ -1,7 +1,10 @@
 ---
 article_id: af_28b5d04009a174a6a9647086
-declaration: theorem
+declaration: alias
 origin: cited
+statement: formalized
+proof: formalized
+lean: GeometryOfNumbers.covol_fractional_ideal
 ---
 
 # Corollary 14.17

@@ -16,6 +16,9 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Claim 1 (matching characterization)](../polyhedral-combinatorics/001-matching-characterization.md)
+- [Observation 2 (integrality of vertex solutions)](004-integrality-of-vertex-solutions.md)
+- [Definition 3 (totally unimodular matrix)](005-totally-unimodular-matrix.md)
+- [Lemma 4 (constraint matrix is totally unimodular)](006-constraint-matrix-is-totally-unimodular.md)
 
 ## Sources
 

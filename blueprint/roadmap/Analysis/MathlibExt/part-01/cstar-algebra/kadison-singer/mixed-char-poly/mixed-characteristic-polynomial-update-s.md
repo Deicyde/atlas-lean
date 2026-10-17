@@ -19,6 +19,10 @@ The mixed characteristic polynomial is affine in each matrix coordinate.
 
 - [Eval mixed Det Polynomial](eval-mixed-det-polynomial.md)
 - [Mixed Det Polynomial](mixed-det-polynomial.md)
+- [Coeff one det add X smul](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/mv-polynomial/coeff-one-det-add-x-smul.md)
+- [Det Linear](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/mv-polynomial/det-linear.md)
+- [Det Linear add](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/mv-polynomial/det-linear-add.md)
+- [Det Linear smul](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/mv-polynomial/det-linear-smul.md)
 - [Mixed Differential](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential.md)
 - [Mixed Differential cons](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential-cons.md)
 - [Mixed Differential eq of perm](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential-eq-of-perm.md)

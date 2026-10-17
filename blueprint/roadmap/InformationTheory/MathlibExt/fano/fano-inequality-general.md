@@ -16,6 +16,10 @@ Fano's inequality without a `DecidableEq` instance on the observation type `β`;
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Log-sum inequality](../sum-mul-log-sum-div-sum-le-sum-mul-log-d.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.InformationTheory.Fano](../../../../sources/v2/MathlibExt.md)

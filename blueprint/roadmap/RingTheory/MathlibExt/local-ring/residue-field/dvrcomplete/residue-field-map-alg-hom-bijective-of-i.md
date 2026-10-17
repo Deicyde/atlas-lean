@@ -19,6 +19,7 @@ maximal-adically complete local DVR lifts uniquely.
 ## Proof depends on
 
 - [Residue Field Map Alg Hom bijective](../dvrbijective/residue-field-map-alg-hom-bijective.md)
+- [Henselian](../../of-is-adic-complete-maximal-ideal.md)
 
 ## Sources
 

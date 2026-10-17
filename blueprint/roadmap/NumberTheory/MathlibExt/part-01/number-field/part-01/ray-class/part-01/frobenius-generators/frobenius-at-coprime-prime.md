@@ -17,7 +17,12 @@ choice-independence stage.
 
 ## Depends on
 
+- [Coprime Primes](../prime-generation/coprime-primes.md)
 - [Is Unramified Outside](is-unramified-outside.md)
+
+## Proof depends on
+
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
 
 ## Sources
 

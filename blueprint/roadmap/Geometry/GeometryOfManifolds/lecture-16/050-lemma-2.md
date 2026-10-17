@@ -11,6 +11,7 @@ $\overline{\partial^{*}}$ is $L^{2}$-adjoint to $\bar{\partial}$, and $\partial^
 
 ## Depends on
 
+- [Definition 2 (Lecture 15, Section 1, Hodge Theory)](../lecture-15/035-definition-2.md)
 - [Definition 7](../lecture-2/011-definition-7.md)
 
 ## Sources

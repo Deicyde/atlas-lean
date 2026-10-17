@@ -29,6 +29,10 @@ so they converge to the same value.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Wintner Mean Value](wintner-mean-value.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ArithmeticFunction.EulerProductMeanValue](../../../../../sources/v2/MathlibExt.md)

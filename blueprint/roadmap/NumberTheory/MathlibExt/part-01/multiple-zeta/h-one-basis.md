@@ -13,7 +13,21 @@ Hoffman monomials, including the empty word, form a rational basis of `H^1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](index/index.md)
+- [H One](word-algebra/h-one.md)
+- [Z Monomial](word-algebra/z-monomial.md)
+
+## Proof depends on
+
+- [Entries](index/entries.md)
+- [Pnat Entries](word-algebra/pnat-entries.md)
+- [Is HOne Word](word-algebra/is-hone-word.md)
+- [Hoffman Block](index/hoffman-block.md)
+- [To List hoffman Block](index/to-list-hoffman-block.md)
+- [Word Submonoid HOne](word-algebra/word-submonoid-hone.md)
+- [Y Word](word-algebra/y-word.md)
+- [Z Word](word-algebra/z-word.md)
+- [Z Word PNat](word-algebra/z-word-pnat.md)
 
 ## Sources
 

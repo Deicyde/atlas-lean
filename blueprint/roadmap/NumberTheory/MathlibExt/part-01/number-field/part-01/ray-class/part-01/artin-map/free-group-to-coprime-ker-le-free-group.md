@@ -15,7 +15,15 @@ which dies in the abelian Galois target.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprime Primes](../prime-generation/coprime-primes.md)
+- [Is Unramified Outside](../frobenius-generators/is-unramified-outside.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Free Group To Coprime](../prime-generation/free-group-to-coprime.md)
+- [Free Group To Gal](../frobenius-generators/free-group-to-gal.md)
+
+## Proof depends on
+
+- [Free Group To Coprime ker le commutator](../prime-generation/free-group-to-coprime-ker-le-commutator.md)
 
 ## Sources
 

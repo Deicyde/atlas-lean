@@ -18,6 +18,9 @@ Let $R$ be the ring of algebraic integers in a number field. Then every nonzero 
 ## Proof depends on
 
 - [Definition (Maximal Ideals)](../lecture-10/109-maximal-ideals.md)
+- [Definition (Section: Uniqueness of Ideal Factorization, Subsection: Properties of Ideal Multiplication)](../uniqueness-of-ideal-factorization/125-definition.md)
+- [Lemma (Section: Uniqueness of Ideal Factorization, Subsection: Properties of Ideal Multiplication)](../uniqueness-of-ideal-factorization/126-lemma.md)
+- [Proposition (Section: Uniqueness of Ideal Factorization, Subsection: Properties of Ideal Multiplication)](../uniqueness-of-ideal-factorization/127-proposition.md)
 
 ## Sources
 

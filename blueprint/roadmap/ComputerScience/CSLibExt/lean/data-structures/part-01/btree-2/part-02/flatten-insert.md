@@ -18,6 +18,7 @@ original tree.
 - [Is BTree](is-btree.md)
 - [Flatten](../part-01/flatten.md)
 - [Insert](insert.md)
+- [Ordered Insert](../../../part-02/ordered-insert/ordered-insert.md)
 
 ## Proof depends on
 
@@ -36,6 +37,7 @@ original tree.
 - [Ins Leaf](../part-01/ins-leaf.md)
 - [Mk Node](mk-node.md)
 - [Split Node](split-node.md)
+- [Ordered Insert eq of mem](../../../part-02/ordered-insert/ordered-insert-eq-of-mem.md)
 
 ## Sources
 

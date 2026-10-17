@@ -16,7 +16,14 @@ Integer Sequences 23 (2020), lines 864–867,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Multigraded Free Resolution](../multigraded-free-resolution/multigraded-free-resolution.md)
+- [Multigraded Polynomial Module](../multigraded-polynomial-module/multigraded-polynomial-module.md)
+
+## Proof depends on
+
+- [Multigraded Base Changed Differential](../base-changed-differential-preserves-degr.md)
+- [Base Changed Complex](../multigraded-betti/base-changed-complex.md)
+- [Base Changed Degree Piece](../multigraded-betti/base-changed-degree-piece.md)
 
 ## Sources
 

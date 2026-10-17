@@ -16,7 +16,7 @@ of unity `ζ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Real Cyclotomic Polynomial](real-cyclotomic-polynomial.md)
 
 ## Sources
 

@@ -19,7 +19,12 @@ Source-order repeated INSERT has the frozen summed event bound.
 
 ## Proof depends on
 
+- [Insert ret](../correctness/insert-ret.md)
 - [Insert time](insert-time.md)
+- [Min Heap](../../../part-02/binary-heap/part-02/min-heap.md)
+- [Push](../../../part-02/binary-heap/part-02/push.md)
+- [Sift Up](../../../part-02/binary-heap/part-01/sift-up.md)
+- [Sift Up perm](../../../part-02/binary-heap/part-01/sift-up-perm.md)
 
 ## Sources
 

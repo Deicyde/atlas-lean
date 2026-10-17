@@ -13,7 +13,9 @@ For any full-rank lattice $L$, $\lambda_1(L) \leq \sqrt{n} \cdot (\det L)^{1/n}$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lattice)](../lecture-18/130-lattice.md)
+- [Definition (Determinant of lattice)](../lecture-18/137-determinant-of-lattice.md)
+- [Definition (Successive minima)](../lecture-18/140-successive-minima.md)
 
 ## Proof depends on
 

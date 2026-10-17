@@ -13,7 +13,11 @@ The radial Taylor terms of an entire function are absolutely summable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Term](../../../part-02/wiman/wiman-term.md)
+
+## Proof depends on
+
+- [Wiman Taylor Coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
 
 ## Sources
 

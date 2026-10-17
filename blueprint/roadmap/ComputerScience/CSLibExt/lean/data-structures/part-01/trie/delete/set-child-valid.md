@@ -14,6 +14,8 @@ keys stay duplicate-free and every surviving child stays valid.
 
 ## Depends on
 
+- [Trie](../../../part-03/trie/trie.md)
+- [Valid](../../../part-03/trie/valid.md)
 - [Set Child](set-child.md)
 
 ## Proof depends on

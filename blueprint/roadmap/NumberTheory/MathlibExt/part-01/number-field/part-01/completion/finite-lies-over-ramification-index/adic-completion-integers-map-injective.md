@@ -13,7 +13,7 @@ The restricted canonical map on completion integer rings is injective.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adic Completion Integers Map](../finite-lies-over-valuation/adic-completion-integers-map.md)
 
 ## Sources
 

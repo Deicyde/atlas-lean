@@ -13,6 +13,7 @@ An elliptic curve $E$ for which $\operatorname{End}(E) \not\simeq \mathbb{Z}$
 
 ## Depends on
 
+- [Definition 14.1](../section-14/section-14-1/174-definition-14-1.md)
 - [Definition 6.13](../section-6/098-definition-6-13.md)
 
 ## Sources

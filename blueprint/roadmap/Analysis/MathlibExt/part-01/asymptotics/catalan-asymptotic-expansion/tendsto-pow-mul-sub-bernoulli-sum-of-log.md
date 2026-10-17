@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MetaMathlibExt._root_.Real.tendsto_pow_mul_sub_bernoulli_sum_of_log_diff
+lean: Real.tendsto_pow_mul_sub_bernoulli_sum_of_log_diff
 ---
 
 # Tendsto pow mul sub bernoulli sum of log diff

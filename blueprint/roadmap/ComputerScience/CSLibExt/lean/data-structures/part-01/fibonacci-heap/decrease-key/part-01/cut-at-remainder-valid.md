@@ -14,11 +14,17 @@ its stored degree is corrected, and its root still bounds every remaining elemen
 
 ## Depends on
 
+- [Fibonacci Tree](../../../../part-02/fibonacci-heap/part-01/fibonacci-tree.md)
+- [Valid](../../../../part-02/fibonacci-heap/part-01/valid.md)
 - [Cut At](cut-at.md)
 
 ## Proof depends on
 
+- [Child valid](../../../../part-02/fibonacci-heap/part-01/child-valid.md)
+- [Root le](../../../../part-02/fibonacci-heap/part-01/root-le.md)
+- [Children](../../../../part-02/fibonacci-heap/part-01/children.md)
 - [Cut At elements](cut-at-elements.md)
+- [Elements](../../../../part-02/fibonacci-heap/part-01/elements.md)
 
 ## Sources
 

@@ -14,6 +14,7 @@ If $X_n$ is a martingale with $E[X_n^2] < \infty$ for all $n$ then $E[(X_n - X_m
 ## Depends on
 
 - [Definition (Conditional expectation)](../lecture-25/053-conditional-expectation.md)
+- [Definition (Martingale, supermartingale, submartingale)](../../part-02/lecture-29/091-martingale-supermartingale-submartingale.md)
 
 ## Sources
 

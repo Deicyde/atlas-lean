@@ -21,6 +21,11 @@ closure characterization.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eberlein Smulian](eberlein-smulian.md)
+- [Milman Pettis](milman-pettis.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.DunfordPettis](../../../../../../sources/v2/MathlibExt.md)

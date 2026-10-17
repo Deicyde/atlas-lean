@@ -11,11 +11,14 @@ $\mathrm{3SAT}$ is $\mathsf{NP}$-complete.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (NP-complete)](../lecture-15/061-np-complete.md)
+- [Definition (3SAT)](../lecture-15/058-3sat.md)
 
 ## Proof depends on
 
 - [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+- [Definition (Conjunctive Normal Form)](../lecture-15/057-conjunctive-normal-form.md)
+- [Cook-Levin Theorem (NP-completeness of SAT)](../lecture-15/071-np-completeness-of-sat.md)
 
 ## Sources
 

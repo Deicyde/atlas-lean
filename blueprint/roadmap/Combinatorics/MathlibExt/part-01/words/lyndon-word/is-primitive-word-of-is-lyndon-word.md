@@ -14,6 +14,7 @@ Every Lyndon word is primitive.
 ## Depends on
 
 - [Is Lyndon Word](is-lyndon-word.md)
+- [Primitive Word](../is-primitive-word.md)
 
 ## Proof depends on
 

@@ -13,7 +13,7 @@ A nonempty finite word is primitive if and only if its cyclic permutations are d
 
 ## Depends on
 
-This node has no prerequisites.
+- [Primitive Word](../is-primitive-word.md)
 
 ## Sources
 

@@ -2,9 +2,6 @@
 article_id: af_252fc0aa8fe17fef16fddf8c
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
-lean: MetaMathlibExt.natDegree_realCyclotomicPolynomial
 ---
 
 # Nat Degree real Cyclotomic Polynomial
@@ -16,7 +13,7 @@ division.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Real Cyclotomic Polynomial](../real-cyclotomic-polynomial.md)
 
 ## Sources
 

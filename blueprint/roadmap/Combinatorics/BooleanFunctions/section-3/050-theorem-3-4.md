@@ -11,7 +11,7 @@ For all $f \colon \{-1, 1\}^n \to \{-1, 1\}$, $\mathbb{E}_{x}\left[\sqrt{s_{f}(x
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.1 (Noise Sensitivity)](060-noise-sensitivity.md)
 
 ## Sources
 

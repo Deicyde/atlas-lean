@@ -14,6 +14,7 @@ Class sums commute with every group-algebra element.
 ## Depends on
 
 - [Class Sum](class-sum.md)
+- [Conj Class](../../burnside-paqb-reduction/conj-class.md)
 
 ## Proof depends on
 

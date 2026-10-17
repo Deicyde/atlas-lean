@@ -12,7 +12,8 @@ $L$ elliptic, $\tau \in (\operatorname{Ker} L^{*})^{\perp} = \operatorname{Im} L
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2 (Lecture 15, Section 1, Hodge Theory)](../lecture-15/035-definition-2.md)
+- [Definition 5 (Lecture 15, Section 1, Hodge Theory)](../lecture-15/043-definition-5.md)
 
 ## Sources
 

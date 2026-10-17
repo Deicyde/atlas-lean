@@ -13,7 +13,14 @@ Ambient ray is contained in every congruence ambient subgroup.
 
 ## Depends on
 
+- [Congruence Subgroup](../congruence-subgroup/congruence-subgroup.md)
+- [To Ambient Subgroup](../congruence-subgroup/to-ambient-subgroup.md)
 - [Ray Group Ambient](ray-group-ambient.md)
+
+## Proof depends on
+
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Ray Group](../../part-02/ray-group/ray-group.md)
 
 ## Sources
 

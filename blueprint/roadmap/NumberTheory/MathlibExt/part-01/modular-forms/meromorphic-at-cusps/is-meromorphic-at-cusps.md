@@ -2,8 +2,6 @@
 article_id: af_c55c837b6f59c577ab412892
 declaration: def
 origin: cited
-statement: formalized
-lean: ModularFunction.IsMeromorphicAtCusps
 ---
 
 # Is Meromorphic At Cusps

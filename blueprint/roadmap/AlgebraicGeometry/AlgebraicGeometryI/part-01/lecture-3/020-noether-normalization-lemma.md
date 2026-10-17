@@ -18,6 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Lemma 1 (Noether Normalization)](../lecture-2/007-noether-normalization.md)
+- [Lemma 3](021-lemma-3.md)
 
 ## Sources
 

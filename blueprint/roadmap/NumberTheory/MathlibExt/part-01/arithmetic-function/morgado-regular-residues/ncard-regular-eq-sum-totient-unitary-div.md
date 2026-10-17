@@ -15,7 +15,7 @@ Morgado's formula over `Nat.unitaryDivisors`: for `0 < n`, the number of regular
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unitary Divisors](../../../part-11/unitary-divisor/unitary-divisors.md)
 
 ## Sources
 

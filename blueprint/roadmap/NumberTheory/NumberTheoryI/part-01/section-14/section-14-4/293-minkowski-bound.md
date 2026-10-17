@@ -23,6 +23,7 @@ Let $K$ be a number field of degree $n$ with $s$ complex places. Define the Mink
 
 - [Theorem 14.13 (Minkowski's Lattice Point Theorem)](../section-14-1/290-minkowski-s-lattice-point-theorem.md)
 - [Corollary 14.17](../section-14-3/292-corollary-14-17.md)
+- [Lemma 14.19](294-lemma-14-19.md)
 
 ## Sources
 

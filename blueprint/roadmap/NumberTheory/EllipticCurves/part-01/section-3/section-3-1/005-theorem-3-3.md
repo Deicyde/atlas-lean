@@ -15,7 +15,7 @@ The ring $\mathbb{F}_{p}$ is a field, and every field of characteristic $p$
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 3.2](006-definition-3-2.md)
 
 ## Sources
 

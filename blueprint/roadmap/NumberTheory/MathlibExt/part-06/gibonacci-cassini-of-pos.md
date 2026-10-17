@@ -14,7 +14,7 @@ Generalized Cassini identity for Gibonacci numbers: for `n ≥ 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gibonacci Number](gibonacci-number/gibonacci-number.md)
 
 ## Sources
 

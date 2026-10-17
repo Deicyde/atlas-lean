@@ -11,11 +11,13 @@ $\mathrm{TQBF} \in \mathsf{PSPACE}$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (PSPACE and NPSPACE)](../lecture-18/087-pspace-and-npspace.md)
 
 ## Proof depends on
 
+- [Definition (SPACE and NSPACE)](../lecture-18/086-space-and-nspace.md)
 - [Definition (Quantified Boolean Formula and TQBF)](069-quantified-boolean-formula-and-tqbf.md)
+- [Savitch's Theorem](../lecture-18/088-savitch-s-theorem.md)
 
 ## Sources
 

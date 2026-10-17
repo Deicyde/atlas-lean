@@ -18,6 +18,7 @@ Every left key is smaller and every right key is larger, recursively; it is
 ## Proof depends on
 
 - [To Binary Tree](to-binary-tree.md)
+- [Ordered](../../../part-02/binary-search-tree/part-01/ordered.md)
 
 ## Sources
 

@@ -2,8 +2,9 @@
 article_id: af_ed6262e345033125e279e7c9
 ---
 
-# Even Table Weight to Generalized Stirling Numbers
+# Part 3 of 9
 
+- [Eulerian Polynomial Hankel](eulerian-polynomial-hankel-determinant.md)
 - [Even Table Weight](even-table-weight/README.md)
 - [Falling Binomial Transform](falling-equiv.md)
 - [Falling KBinomial Transform](falling-kbinomial-transform/README.md)
@@ -23,4 +24,3 @@ article_id: af_ed6262e345033125e279e7c9
 - [Generalized Catalan Schroeder](generalized-catalan-schroeder/README.md)
 - [Generalized Rascal Triangle](is-generalized-rascal-triangle.md)
 - [Generalized Stirling Matrix Factorization](generalized-stirling-matrix-factorizatio.md)
-- [Generalized Stirling Numbers](generalized-stirling-numbers/README.md)

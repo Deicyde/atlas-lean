@@ -20,7 +20,9 @@ parent; the three subcases mirror the black-sibling cases).
 
 ## Depends on
 
+- [Color](../../../../part-03/red-black-tree/part-01/color.md)
 - [BBTree](bbtree.md)
+- [Tree](../../../../part-03/red-black-tree/part-01/tree.md)
 
 ## Sources
 

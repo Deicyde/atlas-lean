@@ -16,6 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Primitive Word](../is-primitive-word.md)
 - [Words Of Content](words-of-content.md)
 - [Witt Word Content](witt-word-content.md)
 

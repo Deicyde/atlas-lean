@@ -12,7 +12,7 @@ Both sentinel deletion assignments, with dereference validity only.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Node](../../basic/node.md)
 
 ## Sources
 

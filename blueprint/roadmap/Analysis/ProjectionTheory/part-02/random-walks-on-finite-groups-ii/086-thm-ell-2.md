@@ -13,6 +13,10 @@ There exists a universal constant $C > 0$ such that $\sigma_1(T_\mu)^2 \leq C p^
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma (lem-rep)](087-lem-rep.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section: Random walks on finite groups II](../../../../../sources/v1/ProjectionTheory.md)

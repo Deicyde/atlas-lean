@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MetaMathlibExt._root_.MeasureTheory.volume_unitSquare
+lean: MeasureTheory.volume_unitSquare
 ---
 
 # Volume unit Square

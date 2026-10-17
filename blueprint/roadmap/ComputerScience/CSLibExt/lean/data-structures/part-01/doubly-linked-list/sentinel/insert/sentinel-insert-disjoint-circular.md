@@ -14,6 +14,7 @@ Insertion preserves a disjoint represented circle that excludes the inserted ide
 ## Depends on
 
 - [Circular Represents](../basic/circular-represents.md)
+- [Node](../../basic/node.md)
 - [Sentinel Insert](sentinel-insert.md)
 
 ## Proof depends on

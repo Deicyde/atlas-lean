@@ -12,6 +12,7 @@ Let $(s, \omega) \mapsto Y_s(\omega)$ be bounded and $\mathcal{R} \times \mathca
 ## Depends on
 
 - [Definition (Conditional expectation)](../../part-01/lecture-25/053-conditional-expectation.md)
+- [Stopping time](100-stopping-time.md)
 
 ## Proof depends on
 

@@ -15,9 +15,11 @@ successor, the minimum key of its right subtree.
 ## Depends on
 
 - [BBTree](bbtree.md)
+- [Tree](../../../../part-03/red-black-tree/part-01/tree.md)
 
 ## Proof depends on
 
+- [Color](../../../../part-03/red-black-tree/part-01/color.md)
 - [Bal Left](bal-left.md)
 - [Bal Right](bal-right.md)
 - [Incr Black](incr-black.md)

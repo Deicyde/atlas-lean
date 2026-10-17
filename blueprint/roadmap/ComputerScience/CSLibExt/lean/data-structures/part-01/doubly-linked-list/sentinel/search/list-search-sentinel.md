@@ -16,6 +16,7 @@ mismatch advances and final identity test, not physical storage/bit operations.
 ## Depends on
 
 - [Circular Represents](../basic/circular-represents.md)
+- [Node](../../basic/node.md)
 
 ## Sources
 

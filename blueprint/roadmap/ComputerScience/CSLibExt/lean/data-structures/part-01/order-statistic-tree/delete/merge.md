@@ -14,7 +14,12 @@ separation does not hold.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../../part-02/order-statistic-tree/part-01/tree.md)
+
+## Proof depends on
+
+- [Entry](../../../part-02/order-statistic-tree/part-01/entry.md)
+- [Node](../../../part-02/order-statistic-tree/part-01/node.md)
 
 ## Sources
 

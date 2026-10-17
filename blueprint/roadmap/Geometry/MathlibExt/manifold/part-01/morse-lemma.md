@@ -19,7 +19,7 @@ specialization with corrected nondegeneracy grouping `(∀ w, (fderiv (fderiv f)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Morse Quadratic](morse-theory/morse-quadratic.md)
 
 ## Sources
 

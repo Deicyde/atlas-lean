@@ -19,6 +19,7 @@ Let $M$ be an $n$-manifold and $K \supseteq L$ a pair of compact subsets. Assume
 
 ## Proof depends on
 
+- [Lemma 37.2](161-lemma-37-2.md)
 - [Proposition 9.4 (Five lemma)](../../part-01/section-9/040-five-lemma.md)
 - [Lemma 32.4](../section-32/141-lemma-32-4.md)
 - [Proposition 34.1](../section-34/146-proposition-34-1.md)

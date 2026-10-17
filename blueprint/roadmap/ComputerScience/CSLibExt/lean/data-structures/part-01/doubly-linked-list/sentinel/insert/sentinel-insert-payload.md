@@ -13,10 +13,14 @@ Every payload, including keys and satellite data, is preserved.
 
 ## Depends on
 
+- [Node](../../basic/node.md)
 - [Sentinel Insert](sentinel-insert.md)
 
 ## Proof depends on
 
+- [List Insert](../../insert/list-insert.md)
+- [List Insert payload](../../insert/list-insert-payload.md)
+- [List Insert ret](../../insert/list-insert-ret.md)
 - [Sentinel Insert ret](sentinel-insert-ret.md)
 
 ## Sources

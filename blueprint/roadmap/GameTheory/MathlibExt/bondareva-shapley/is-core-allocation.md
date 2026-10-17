@@ -12,7 +12,7 @@ Core allocation: efficiency and coalitional rationality.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coop Game](../shapley-value/coop-game.md)
 
 ## Sources
 

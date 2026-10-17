@@ -18,6 +18,7 @@ A determinant polynomial is affine in a variable whose coefficient matrix has ra
 ## Proof depends on
 
 - [Eval mixed Det Polynomial](eval-mixed-det-polynomial.md)
+- [Det add smul vec Mul Vec](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/mv-polynomial/det-add-smul-vec-mul-vec.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ Binet form of a solution of `W (k + 2) = p * W (k + 1) + W k`, with the roots
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Binet Closed Form](../../../../part-03/binet-closed-form-second-order.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Recurrences.GeneralizedFibonacciIdentities](../../../../../../../sources/v2/MathlibExt.md)

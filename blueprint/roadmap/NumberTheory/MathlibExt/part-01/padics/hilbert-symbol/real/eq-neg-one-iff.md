@@ -2,9 +2,6 @@
 article_id: af_4975d11e40fba00c61d047c7
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
-lean: realHilbertSymbol.eq_neg_one_iff
 ---
 
 # Eq neg one iff
@@ -15,6 +12,11 @@ solvable.
 ## Depends on
 
 - [Real Hilbert Symbol](real-hilbert-symbol.md)
+
+## Proof depends on
+
+- [Is Solvable](../../hilbert-symbol-2/is-solvable.md)
+- [Hilbert Symbol](../../hilbert-symbol-2/hilbert-symbol.md)
 
 ## Sources
 

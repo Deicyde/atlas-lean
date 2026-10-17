@@ -13,6 +13,7 @@ There is a map $\times \colon H_{p}(X) \times H_{q}(Y) \rightarrow H_{p+q}(X \ti
 ## Depends on
 
 - [Definition 1.3](../chapter-1/chapter-1-section-1/003-definition-1-3.md)
+- [Definition 8.1](../section-8/034-definition-8-1.md)
 - [Lemma 7.1](032-lemma-7-1.md)
 - [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
 

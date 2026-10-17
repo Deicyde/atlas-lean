@@ -20,7 +20,14 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Q Brack](../qrwhitney-numbers/q-brack.md)
+- [Whitney Second](../qrwhitney-numbers/whitney-second.md)
+- [Whitney Second succ succ](../qrwhitney-numbers/whitney-second-succ-succ.md)
+- [Whitney Second succ zero](../qrwhitney-numbers/whitney-second-succ-zero.md)
+- [Whitney Second zero succ](../qrwhitney-numbers/whitney-second-zero-succ.md)
+- [Whitney Second zero zero](../qrwhitney-numbers/whitney-second-zero-zero.md)
 - [Eval qr Dowling Polynomial whitney Second](eval-qr-dowling-polynomial-whitney-secon.md)
+- [Qr Dowling Polynomial](../../../../../../NumberTheory/MathlibExt/part-10/qrdowling-polynomial/qr-dowling-polynomial.md)
 
 ## Sources
 

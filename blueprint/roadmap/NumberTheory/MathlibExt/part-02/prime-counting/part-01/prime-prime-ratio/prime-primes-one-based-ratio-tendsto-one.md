@@ -19,6 +19,10 @@ sequence `p_{p_n + 1}`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prime Number Theorem](../../../../part-09/prime-number-theorem.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.PrimeCounting.PrimePrimeRatio](../../../../../../../sources/v2/MathlibExt.md)

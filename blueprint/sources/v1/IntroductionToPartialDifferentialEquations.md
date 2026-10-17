@@ -12,9 +12,10 @@ ATLAS v1 selected 105 statements from this source in
 matched to each in [`report.json`](https://github.com/facebookresearch/atlas-lean/blob/main/v1/Atlas/IntroductionToPartialDifferentialEquations/report.json). Each roadmap article
 reproduces one target's statement and the source location it names.
 
-45 roadmap edges come from the source text rather than
+49 roadmap edges come from the source text rather than
 the Lean code; each is recorded with its evidence in
 [`book-dependencies/IntroductionToPartialDifferentialEquations.json`](book-dependencies/IntroductionToPartialDifferentialEquations.json).
 
-20 dependencies point to a statement placed later in this
-wiki and are not drawn as roadmap edges, which keeps every chapter acyclic.
+1 candidate dependencies are not drawn because adding
+them would create a cycle between source statements. Every other verified
+dependency is retained, including relations in both directions between chapters.

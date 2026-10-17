@@ -16,10 +16,11 @@ admissible integral numerator/denominator representation with both residues unit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
 - [Ray Element valuation eq one](ray-element-valuation-eq-one.md)
 
 ## Sources

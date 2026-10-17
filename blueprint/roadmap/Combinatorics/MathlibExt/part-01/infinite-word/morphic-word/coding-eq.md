@@ -18,6 +18,10 @@ Pointwise elimination for morphic words (concept
 
 - [Is Morphic](is-morphic.md)
 
+## Proof depends on
+
+- [Is Pure Morphic](../pure-morphic-word/is-pure-morphic.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.MorphicWord](../../../../../../sources/v2/MathlibExt.md)

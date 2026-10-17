@@ -24,6 +24,7 @@ negative just right of the critical point, so the function decreases there.
 
 ## Proof depends on
 
+- [Deriv deriv nonneg](deriv-deriv-nonneg.md)
 - [Hessian Matrix eq fderiv fderiv](hessian-matrix-eq-fderiv-fderiv.md)
 
 ## Sources

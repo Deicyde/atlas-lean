@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.GroupTheory.AbelianRepresentationWanted._root_.FDRep.character_mul_of_simple
+lean: FDRep.character_mul_of_simple
 ---
 
 # Character mul of simple
@@ -15,6 +15,11 @@ multiplicative.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Finrank eq one of is Mul Commutative](finrank-eq-one-of-is-mul-commutative.md)
+- [Rho eq character smul of simple](rho-eq-character-smul-of-simple.md)
 
 ## Sources
 

@@ -17,6 +17,10 @@ Cassini-type identity `W n W (n + 2) - W (n + 1) ^ 2 = (-1) ^ n Δ` with
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Horadam Generalized Catalan Identity](../horadam-generalized-catalan-identity.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Recurrences.GeneralizedFibonacciIdentities](../../../../../../../sources/v2/MathlibExt.md)

@@ -13,6 +13,10 @@ Total charged events are all table cells plus all reconstructed operations.
 
 ## Depends on
 
+- [Edit Distance Cost](../script/edit-distance-cost.md)
+- [Total](../script/total.md)
+- [Edit Distance Result](../script/edit-distance-result.md)
+- [Edit Step](../script/edit-step.md)
 - [Edit Distance](edit-distance.md)
 
 ## Proof depends on

@@ -14,11 +14,12 @@ Cardinal equality between the raw integer count and the canonical
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lattice Enumerator](../lattice-point-enumerator/lattice-enumerator.md)
 
 ## Proof depends on
 
 - [Raw Subtype Equiv Canonical Point Set](raw-subtype-equiv-canonical-point-set.md)
+- [Lattice Point Set](../lattice-point-enumerator/lattice-point-set.md)
 
 ## Sources
 

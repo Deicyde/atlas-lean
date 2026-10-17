@@ -13,7 +13,7 @@ lean: MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry3.fCoeff_eq_generalizedBel
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Bell Generating](../../part-04/part1-ch3-entry9-ii-generalizedbellgenerating-de/generalized-bell-generating.md)
 
 ## Sources
 

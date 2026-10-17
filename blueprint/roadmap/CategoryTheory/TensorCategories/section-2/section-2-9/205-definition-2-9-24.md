@@ -1,9 +1,7 @@
 ---
 article_id: af_7faea3b93756f46395add61c
-declaration: abbrev
+declaration: def
 origin: cited
-statement: formalized
-lean: CategoryTheory.Definition_2_9_24_Bimodule
 ---
 
 # Definition 2.9.24

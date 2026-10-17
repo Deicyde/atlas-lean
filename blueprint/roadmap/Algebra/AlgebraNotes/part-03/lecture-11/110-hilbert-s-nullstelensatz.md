@@ -14,6 +14,7 @@ The maximal ideals in $\mathbb{C}[x_1, \cdots, x_n]$ are exactly the kernels of 
 ## Depends on
 
 - [Definition (Lecture 9: Building New Rings, Section 'Polynomial Rings')](../lecture-9/100-definition.md)
+- [Definition (Maximal Ideals)](../lecture-10/109-maximal-ideals.md)
 
 ## Sources
 

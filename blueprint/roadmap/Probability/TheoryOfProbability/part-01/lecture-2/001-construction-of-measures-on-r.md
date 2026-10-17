@@ -15,6 +15,10 @@ For each right-continuous, non-decreasing function $F$, tending to $0$ at $-\inf
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Caratheéodory Extension Theorem](003-carathe-odory-extension-theorem.md)
+
 ## Sources
 
 - [MIT 18.175 Theory of Probability (Spring 2014), Lecture 2, section 'How do we produce measures on R?'](../../../../../sources/v1/TheoryOfProbability.md)

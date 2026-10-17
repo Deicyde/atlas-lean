@@ -16,7 +16,7 @@ The central coefficient in row `m` is the canonical
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Coefficient](../../../../../NumberTheory/MathlibExt/part-11/trinomial-coefficient.md)
 
 ## Sources
 

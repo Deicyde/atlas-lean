@@ -13,7 +13,12 @@ Finite prefix-code lengths iff the Kraft sum is at most one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Prefix Free](prefix-free/is-prefix-free.md)
+
+## Proof depends on
+
+- [Eq of mem nil](prefix-free/eq-of-mem-nil.md)
+- [Injective](prefix-free/injective.md)
 
 ## Sources
 

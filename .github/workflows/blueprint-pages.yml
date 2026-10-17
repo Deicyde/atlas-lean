@@ -31,7 +31,7 @@ permissions:
 
 env:
   AUTOFORM_SOURCE: "https://github.com/facebookresearch/autoform-bot.git"
-  AUTOFORM_REF: "6cdbde368fe30c03d94bee857c52283cf5647872"
+  AUTOFORM_REF: "8db9d38e610cd5a3e4cd278fd8cdf1ce32af2cc9"
 
 concurrency:
   group: blueprint-pages
@@ -80,6 +80,9 @@ jobs:
           --with mkdocs-literate-nav==0.6.2
           --with pymdown-extensions==10.21.3
           mkdocs build --strict
+
+      - name: Check published routes, anchors, and article cards
+        run: python scripts/check_blueprint_site.py site-src site
 
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/wiki/'))

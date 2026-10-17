@@ -12,6 +12,7 @@ Suppose $R$ is a PID and $H_{*}(X; R)$ is free over $R$. Then $H_{*}(X; R)$ has 
 ## Depends on
 
 - [Definition 1.7](../chapter-1/chapter-1-section-1/007-definition-1-7.md)
+- [Definition 26.1](109-definition-26-1.md)
 
 ## Proof depends on
 

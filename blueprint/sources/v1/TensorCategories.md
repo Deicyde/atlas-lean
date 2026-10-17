@@ -12,12 +12,9 @@ ATLAS v1 selected 229 statements from this source in
 matched to each in [`report.json`](https://github.com/facebookresearch/atlas-lean/blob/main/v1/Atlas/TensorCategories/report.json). Each roadmap article
 reproduces one target's statement and the source location it names.
 
-588 roadmap edges come from the source text rather than
+592 roadmap edges come from the source text rather than
 the Lean code; each is recorded with its evidence in
 [`book-dependencies/TensorCategories.json`](book-dependencies/TensorCategories.json).
-
-5 dependencies point to a statement placed later in this
-wiki and are not drawn as roadmap edges, which keeps every chapter acyclic.
 
 ## Targets without a linked Lean declaration
 
@@ -27,4 +24,17 @@ or a root library declares the same name.
 
 | Target | v1 match |
 | --- | --- |
+| Proposition 1.2.2 | `TensorCategories.prop_1_2_2_left` |
+| Proposition 1.2.7 | `TensorCategories.Proposition_1_2_7` |
+| Definition 1.22.13 | `IsGrouplike` |
 | Definition 1.26.1 | `qAnalog` |
+| Theorem 1.27.4 | `TensorCategories.ext1Vanishes_unit_unit_of_charZero` |
+| Corollary 1.50.4 | `corollary_1_50_4` |
+| Proposition 1.52.5 | `Proposition_1_52_5` |
+| Theorem 1.53.1 | `Theorem_1_53_1` |
+| Definition 2.1.6 | `CategoryTheory.ModuleSubcategory` |
+| Definition 2.5.4 | `CategoryTheory.Definition_2_5_4` |
+| Definition 2.9.21 | `CategoryTheory.IsExactAlgebra` |
+| Definition 2.9.22 | `CategoryTheory.Definition_2_9_22` |
+| Definition 2.9.24 | `CategoryTheory.Definition_2_9_24_Bimodule` |
+| Corollary 2.10.5 | `CategoryTheory.corollary_2_10_5_part1` |

@@ -17,6 +17,10 @@ uses: if `ε = ‖μq‖ - M‖κq‖` is positive, no `r ≤ M` and `w ≥ log 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Baker Davenport Nearest Integer Core](../nearest-integer-reduction-core.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.DiophantineApproximation.BakerDavenportAbsolute](../../../../../../sources/v2/MathlibExt.md)

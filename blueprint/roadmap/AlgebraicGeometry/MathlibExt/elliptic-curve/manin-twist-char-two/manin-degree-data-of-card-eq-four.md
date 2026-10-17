@@ -19,6 +19,7 @@ data for every Weierstrass equation.
 ## Proof depends on
 
 - [Of Quadratic](../manin-sequence/of-quadratic.md)
+- [Nat Card point le two mul nat Card add one](../point-count/nat-card-point-le-two-mul-nat-card-add-o.md)
 
 ## Sources
 

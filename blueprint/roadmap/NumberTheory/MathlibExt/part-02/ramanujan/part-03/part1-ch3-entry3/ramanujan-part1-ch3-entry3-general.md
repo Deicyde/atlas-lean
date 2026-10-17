@@ -21,6 +21,9 @@ This node has no prerequisites.
 
 - [F Coeff eq generalized Bell Generating](f-coeff-eq-generalized-bell-generating.md)
 - [Psi eq entry9 P](psi-eq-entry9-p.md)
+- [Generalized Bell Generating](../../part-04/part1-ch3-entry9-ii-generalizedbellgenerating-de/generalized-bell-generating.md)
+- [Entry9 P](../../part-04/part1-ch3-entry9-odd/entry9-p.md)
+- [Ramanujan part1 ch3 entry9 odd](../../part-04/part1-ch3-entry9-odd/ramanujan-part1-ch3-entry9-odd.md)
 
 ## Sources
 

@@ -1,0 +1,22 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.BipartiteMatching.mul_card_sub_le
+---
+
+# The deficit is at most `b / d`
+
+**The deficit is at most `b / d`** (the counting step of Hopcroft and Karp's bound): if no
+unmatched right vertex is reached in the first `d` rounds, then `d` times the deficit of the
+current matching against any matching is at most the number of right vertices reached by round
+`d`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.Graph.BipartiteMatching](../../../../../../../sources/v2/CSLibExt.md)

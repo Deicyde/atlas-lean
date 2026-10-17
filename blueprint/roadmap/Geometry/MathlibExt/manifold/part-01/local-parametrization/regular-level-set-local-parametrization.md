@@ -21,6 +21,10 @@ to extend the local graphing function globally. A shear chart makes its graph ma
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists local Graph of surjective fderiv](../local-graph/exists-local-graph-of-surjective-fderiv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.LocalParametrization](../../../../../../sources/v2/MathlibExt.md)

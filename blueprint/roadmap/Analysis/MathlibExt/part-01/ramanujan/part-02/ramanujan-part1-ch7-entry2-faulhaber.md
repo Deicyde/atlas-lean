@@ -17,6 +17,10 @@ Proves `Wanted` entry `ramanujan_part1_ch7_entry2_faulhaber`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Riemann Zeta](../../../../../NumberTheory/MathlibExt/part-01/lseries/meromorphic-on-riemann-zeta.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch7Entry2Faulhaber](../../../../../../sources/v2/MathlibExt.md)

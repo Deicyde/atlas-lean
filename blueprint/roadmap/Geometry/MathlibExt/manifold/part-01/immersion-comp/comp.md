@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Geometry.Manifold.ImmersionCompWanted._root_.Manifold.IsImmersionAtOfComplement.comp
+lean: Manifold.IsImmersionAtOfComplement.comp
 ---
 
 # Comp

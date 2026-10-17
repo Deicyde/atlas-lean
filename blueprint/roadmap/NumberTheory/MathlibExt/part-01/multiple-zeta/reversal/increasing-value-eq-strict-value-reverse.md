@@ -21,13 +21,16 @@ the exponent index.
 - [Is Increasing Admissible iff reverse is Admissible](is-increasing-admissible-iff-reverse-is.md)
 - [Reverse](reverse.md)
 - [Increasing Value](increasing-value.md)
+- [Strict Value](../series/strict-value.md)
 
 ## Proof depends on
 
+- [Strict Decreasing Tuple](../series/strict-decreasing-tuple.md)
 - [Strict Increasing Tuple](strict-increasing-tuple.md)
 - [Increasing Equiv Decreasing](increasing-equiv-decreasing.md)
 - [Increasing Summand](increasing-summand.md)
 - [Increasing Summand eq strict Summand reverse](increasing-summand-eq-strict-summand-rev.md)
+- [Strict Summand](../series/strict-summand.md)
 
 ## Sources
 

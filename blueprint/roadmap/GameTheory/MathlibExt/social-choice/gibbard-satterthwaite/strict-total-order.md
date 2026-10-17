@@ -14,6 +14,10 @@ Strict total order for strict preference, reused from the shared order module.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Strict Total Order](../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GameTheory.SocialChoice.GibbardSatterthwaite](../../../../../sources/v2/MathlibExt.md)

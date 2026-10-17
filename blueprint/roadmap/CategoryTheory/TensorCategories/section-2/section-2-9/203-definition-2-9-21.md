@@ -2,8 +2,6 @@
 article_id: af_b66e174f4c908c92bf37f3b5
 declaration: def
 origin: cited
-statement: formalized
-lean: CategoryTheory.IsExactAlgebra
 ---
 
 # Definition 2.9.21

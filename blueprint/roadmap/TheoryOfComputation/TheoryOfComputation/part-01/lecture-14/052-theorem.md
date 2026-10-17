@@ -12,7 +12,7 @@ If $A \leq_P B$ and $B \in \mathsf{P}$ then $A \in \mathsf{P}$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lecture 14, section on Polynomial Time Reducibility)](053-definition.md)
 
 ## Proof depends on
 

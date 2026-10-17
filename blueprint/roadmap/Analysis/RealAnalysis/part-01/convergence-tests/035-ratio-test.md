@@ -14,6 +14,8 @@ Suppose $x_n \neq 0$ for all $n$ and $L = \lim_{n\to \infty} \frac{|x_{n+1}|}{|x
 ## Depends on
 
 - [Definition (Sequence Convergence of Reals) (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/022-sequence-convergence-of-reals.md)
+- [Definition (Series) (1)](../series/032-definition.md)
+- [Definition (Series section)](../series/097-definition.md)
 
 ## Sources
 

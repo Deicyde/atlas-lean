@@ -16,6 +16,10 @@ Let $A_1, \ldots, A_n$ be events, with $\mathbb{P}[A_i] \leq p$ for all $i$. Sup
 - [Definition 6.1.2 (Dependency (di)graph)](080-di.md)
 - [Definition 6.1.1 (Independence from a set of events)](079-independence-from-a-set-of-events.md)
 
+## Proof depends on
+
+- [Theorem 6.1.9 (Lovász local lemma; general form)](082-lov-sz-local-lemma-general-form.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 6, Section 6.1](../../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

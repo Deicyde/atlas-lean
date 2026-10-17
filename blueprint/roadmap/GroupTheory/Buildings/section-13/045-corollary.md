@@ -13,6 +13,10 @@ Let $(W, S)$, $(W'', S'')$ be affine Coxeter systems. Let $\phi \colon \Sigma(W,
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Section 13.7)](046-theorem.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 13.7](../../../../sources/v1/Buildings.md)

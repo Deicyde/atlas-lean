@@ -13,6 +13,7 @@ A cut with no remainder extracted the whole tree.
 
 ## Depends on
 
+- [Fibonacci Tree](../../../../part-02/fibonacci-heap/part-01/fibonacci-tree.md)
 - [Cut At](cut-at.md)
 
 ## Sources

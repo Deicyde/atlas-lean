@@ -14,7 +14,7 @@ nonnegatively-sized circle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Maximum Modulus](../../part-02/wiman/wiman-maximum-modulus.md)
 
 ## Sources
 

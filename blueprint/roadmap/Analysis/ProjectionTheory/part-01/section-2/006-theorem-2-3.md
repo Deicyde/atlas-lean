@@ -15,6 +15,10 @@ lean: FourierBound.fourier_bound_finite_field
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 2.4](007-lemma-2-4.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section 2](../../../../../sources/v1/ProjectionTheory.md)

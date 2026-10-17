@@ -15,6 +15,10 @@ Unfolded sum for the Domb numbers, with the powers of one simplified.
 
 - [Domb Number](domb-number.md)
 
+## Proof depends on
+
+- [Domb Type Sum](../../part-09/zagier-number/domb-type-sum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.DombNumber](../../../../../../../sources/v2/MathlibExt.md)

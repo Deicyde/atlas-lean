@@ -28,7 +28,13 @@ method to a shortest square occurrence and its shortest source-word cover.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Square Free Word](square-free-word/is-square-free-word.md)
+- [Ternary Alphabet](square-free-word/ternary-alphabet.md)
+
+## Proof depends on
+
+- [Of is Infix](square-free-word/of-is-infix.md)
+- [Is Word Square](square-free-word/is-word-square.md)
 
 ## Sources
 

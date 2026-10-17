@@ -5,6 +5,7 @@ article_id: af_d0a148b2d0168277017d5d4e
 # Cube Covering
 
 - [Coordinate Cube](coordinate-cube.md)
+- [Coordinate Cube eq abs Set](coordinate-cube-eq-abs-set.md)
 - [Is Affine Cube](is-affine-cube.md)
 - [Coordinate Cube interior iff](coordinate-cube-interior-iff.md)
 - [Coordinate Cube is Convex Body](coordinate-cube-is-convex-body.md)

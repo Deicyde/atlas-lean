@@ -15,6 +15,7 @@ Induction holds iff pullbacks agree on all ideals coprime to `m2`.
 
 - [Ray Class Character](../character/ray-class-character.md)
 - [Is Induced By](is-induced-by.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 - [Coprime Inclusion](coprime-inclusion.md)
 - [Pullback](../character/pullback.md)
 
@@ -24,6 +25,7 @@ Induction holds iff pullbacks agree on all ideals coprime to `m2`.
 - [Map Of Dvd](map-of-dvd.md)
 - [Map Of Dvd ray Class Map](map-of-dvd-ray-class-map.md)
 - [Ray Class Map](../group/ray-class-map.md)
+- [Ray Group](../../part-02/ray-group/ray-group.md)
 
 ## Sources
 

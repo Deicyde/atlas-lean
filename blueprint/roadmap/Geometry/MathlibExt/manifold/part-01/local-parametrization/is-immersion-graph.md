@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Geometry.Manifold.LocalParametrizationWanted._root_.ContDiff.isImmersion_graph
+lean: ContDiff.isImmersion_graph
 ---
 
 # Is Immersion graph

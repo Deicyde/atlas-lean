@@ -15,12 +15,16 @@ Source (N406 §21.3): helper
 
 ## Depends on
 
+- [Congruent One At Finite Part](../../part-02/ray-group/congruent-one-at-finite-part.md)
 - [Finite Residue Map](finite-residue-map.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 
 - [Exists is Unit mod finite Part div eq](exists-is-unit-mod-finite-part-div-eq.md)
+- [Finite Exponent](../../part-02/ray-group/finite-exponent.md)
 - [Finite Residue Map apply of div eq](finite-residue-map-apply-of-div-eq.md)
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
 
 ## Sources
 

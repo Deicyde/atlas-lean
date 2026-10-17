@@ -13,6 +13,12 @@ A directed graph $G = (V, E)$ admits $k$ edge-disjoint paths from a source $s$ t
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 2 (flow bounded by cut capacity)](013-flow-bounded-by-cut-capacity.md)
+- [Theorem 3 (max-flow no augmenting path)](014-max-flow-no-augmenting-path.md)
+- [Theorem 4 (Max Flow-Min Cut)](015-max-flow-min-cut.md)
+
 ## Sources
 
 - [MIT 18.433 Combinatorial Optimization (Fall 2003), Flow Duality and algorithms, Sept 25-30 (Introduction)](../../../../sources/v1/CombinatorialOptimization.md)

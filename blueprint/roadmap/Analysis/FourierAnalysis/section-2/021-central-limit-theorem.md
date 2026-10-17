@@ -20,6 +20,7 @@ This node has no prerequisites.
 - [Proposition 1 (Section 1, Fourier Integrals of finite measures)](../section-1/017-proposition-1.md)
 - [Proposition 2 (Section 1, Fourier Integrals of finite measures)](../section-1/019-proposition-2.md)
 - [Proposition 3](../section-1/020-proposition-3.md)
+- [Lemma 1 (Section 2, An application to the central limit theorem)](022-lemma-1.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ Change of modulus by pullback joined with the ray group.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Congruence Subgroup](../congruence-subgroup/congruence-subgroup.md)
+
+## Proof depends on
+
+- [To Ambient Subgroup](../congruence-subgroup/to-ambient-subgroup.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+- [Ray Group](../../part-02/ray-group/ray-group.md)
 
 ## Sources
 

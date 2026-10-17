@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Combinatorics.DensityHalesJewettWanted._root_.Combinatorics.Subspace.exists_lines_mono_in_high_dimension_fin
+lean: Combinatorics.Subspace.exists_lines_mono_in_high_dimension_fin
 ---
 
 # Exists lines mono in high dimension fin
@@ -14,7 +14,14 @@ sufficiently high-dimensional finite cube is constant on all lines of an `m`-dim
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp Line](comp-line.md)
+
+## Proof depends on
+
+- [Reindex](reindex.md)
+- [Comp](comp.md)
+- [Comp comp Line](comp-comp-line.md)
+- [Reindex comp Line](reindex-comp-line.md)
 
 ## Sources
 

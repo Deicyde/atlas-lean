@@ -13,6 +13,7 @@ The following are equivalent for a martingale: (1) It is uniformly integrable. (
 
 - [Definition (Conditional expectation)](../../part-01/lecture-25/053-conditional-expectation.md)
 - [Definition (Uniform integrability)](../../part-01/lecture-28/066-uniform-integrability.md)
+- [Definition (Martingale, supermartingale, submartingale)](091-martingale-supermartingale-submartingale.md)
 
 ## Sources
 

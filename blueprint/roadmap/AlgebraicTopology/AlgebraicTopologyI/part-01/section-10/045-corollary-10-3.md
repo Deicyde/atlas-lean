@@ -11,6 +11,7 @@ Assume that there is a subspace $B$ of $X$ such that (1) $\bar{A} \subseteq \ope
 
 ## Depends on
 
+- [Definition 11.1](../section-11/051-definition-11-1.md)
 - [Definition 8.6](../section-8/038-definition-8-6.md)
 
 ## Proof depends on

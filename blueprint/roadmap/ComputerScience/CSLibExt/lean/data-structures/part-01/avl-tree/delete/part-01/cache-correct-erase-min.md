@@ -13,7 +13,15 @@ Removing the minimum preserves correct cached heights.
 
 ## Depends on
 
+- [Cache Correct](../../../avl-tree-2/part-01/cache-correct.md)
+- [Tree](../../../avl-tree-2/part-01/tree.md)
 - [Erase Min](erase-min.md)
+
+## Proof depends on
+
+- [Balance](../../../avl-tree-2/part-01/balance.md)
+- [Cache Correct balance](../../../avl-tree-2/part-02/cache-correct-balance.md)
+- [Height](../../../avl-tree-2/part-01/height.md)
 
 ## Sources
 

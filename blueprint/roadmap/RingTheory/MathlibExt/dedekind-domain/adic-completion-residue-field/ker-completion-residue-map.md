@@ -2,9 +2,6 @@
 article_id: af_53b7c002e72ffe009dee8c56
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
-lean: IsDedekindDomain.HeightOneSpectrum.ker_completionResidueMap
 ---
 
 # Ker completion Residue Map

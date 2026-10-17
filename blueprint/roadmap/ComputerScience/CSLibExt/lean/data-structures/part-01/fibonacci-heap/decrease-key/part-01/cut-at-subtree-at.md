@@ -13,6 +13,7 @@ Cutting at a path extracts exactly the subtree that the path addresses.
 
 ## Depends on
 
+- [Fibonacci Tree](../../../../part-02/fibonacci-heap/part-01/fibonacci-tree.md)
 - [Cut At](cut-at.md)
 - [Subtree At](subtree-at.md)
 

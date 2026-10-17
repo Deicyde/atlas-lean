@@ -19,6 +19,8 @@ This node has no prerequisites.
 - [Definition 2.6](../lecture-2/010-definition-2-6.md)
 - [Definition 1.1 (Noise Stability)](../section-1/052-noise-stability.md)
 - [Claim 1.3](../section-1/054-claim-1-3.md)
+- [Claim 2.2 (Section 2.2, Preliminary facts)](057-claim-2-2.md)
+- [Definition 2.3](058-definition-2-3.md)
 
 ## Sources
 

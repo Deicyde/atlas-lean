@@ -18,6 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Prime dvd seq implies choose](prime-dvd-seq-implies-choose.md)
+- [Consecutive of factorial mul prod erdos layers lt start pow](../conditional/consecutive-of-factorial-mul-prod-erdos.md)
 
 ## Sources
 

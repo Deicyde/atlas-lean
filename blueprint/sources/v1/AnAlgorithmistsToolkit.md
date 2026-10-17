@@ -12,9 +12,16 @@ ATLAS v1 selected 158 statements from this source in
 matched to each in [`report.json`](https://github.com/facebookresearch/atlas-lean/blob/main/v1/Atlas/AnAlgorithmistsToolkit/report.json). Each roadmap article
 reproduces one target's statement and the source location it names.
 
-118 roadmap edges come from the source text rather than
+163 roadmap edges come from the source text rather than
 the Lean code; each is recorded with its evidence in
 [`book-dependencies/AnAlgorithmistsToolkit.json`](book-dependencies/AnAlgorithmistsToolkit.json).
 
-48 dependencies point to a statement placed later in this
-wiki and are not drawn as roadmap edges, which keeps every chapter acyclic.
+## Targets without a linked Lean declaration
+
+These targets have no `lean:` link: v1 matched no declaration, the
+matched name is not found by Autoform's lexical scan, or another v1 book
+or a root library declares the same name.
+
+| Target | v1 match |
+| --- | --- |
+| Theorem 1 (Chernoff bound / Concentration of Measure) | `Concentration.hoeffding_bound` |

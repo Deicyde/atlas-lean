@@ -16,6 +16,7 @@ Codewords of distinct leaf symbols are prefix-free.
 - [Huffman Tree](huffman-tree.md)
 - [Leaf Symbol](leaf-symbol.md)
 - [Code Of Leaf](code-of-leaf.md)
+- [Is Prefix Free](../../../../../../InformationTheory/MathlibExt/prefix-free/is-prefix-free.md)
 
 ## Proof depends on
 

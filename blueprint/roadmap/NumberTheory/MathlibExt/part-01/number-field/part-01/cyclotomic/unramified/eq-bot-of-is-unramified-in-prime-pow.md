@@ -25,6 +25,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Is Unramified In of not dvd](is-unramified-in-of-not-dvd.md)
+- [Is Unramified In mono](../../../part-02/unramified/is-unramified-in-mono.md)
 
 ## Sources
 

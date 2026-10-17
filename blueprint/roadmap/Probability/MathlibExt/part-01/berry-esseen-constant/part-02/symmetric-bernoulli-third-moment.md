@@ -14,6 +14,7 @@ Its third absolute moment is exactly one.
 ## Depends on
 
 - [Symmetric Bernoulli Law](../part-01/symmetric-bernoulli-law.md)
+- [Third Moment](../../berry-esseen-model/part-01/third-moment.md)
 
 ## Proof depends on
 

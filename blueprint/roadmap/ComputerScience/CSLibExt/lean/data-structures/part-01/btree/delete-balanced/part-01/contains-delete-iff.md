@@ -14,11 +14,16 @@ original tree minus the deleted key.
 
 ## Depends on
 
+- [BTree](../../../btree-2/part-01/btree.md)
+- [Is BTree](../../../btree-2/part-02/is-btree.md)
+- [Mem](../../../btree-2/part-01/mem.md)
+- [Contains](../../../btree-2/part-01/contains.md)
 - [Delete](delete.md)
 
 ## Proof depends on
 
 - [Delete](delete-2.md)
+- [Contains eq true iff](../../../btree-2/part-02/contains-eq-true-iff.md)
 - [Mem delete](mem-delete.md)
 
 ## Sources

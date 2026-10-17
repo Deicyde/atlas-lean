@@ -1,8 +1,7 @@
 ---
 article_id: af_07a66e6192d16d47cb47c9a8
-declaration: lemma
+declaration: theorem
 origin: cited
-lean: SimpleGraph.tight_oddset_pm_decomposition
 ---
 
 # Claim 2 (decomposition into perfect matchings)

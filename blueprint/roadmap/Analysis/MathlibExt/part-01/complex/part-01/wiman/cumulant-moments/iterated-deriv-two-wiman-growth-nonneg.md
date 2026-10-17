@@ -14,6 +14,7 @@ The logarithmic radial majorant has nonnegative second derivative.
 ## Depends on
 
 - [Wiman Growth](../coefficient-exponential-family/wiman-growth.md)
+- [Wiman Taylor Coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
 
 ## Proof depends on
 

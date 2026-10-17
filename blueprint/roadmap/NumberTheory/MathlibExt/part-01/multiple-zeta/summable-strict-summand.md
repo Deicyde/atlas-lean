@@ -14,7 +14,15 @@ variables are strictly decreasing, so admissibility requires the first exponent 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](index/index.md)
+- [Is Admissible](index/is-admissible.md)
+- [Depth](index/depth.md)
+- [Strict Decreasing Tuple](series/strict-decreasing-tuple.md)
+- [Strict Summand](series/strict-summand.md)
+
+## Proof depends on
+
+- [Entry](series/entry.md)
 
 ## Sources
 

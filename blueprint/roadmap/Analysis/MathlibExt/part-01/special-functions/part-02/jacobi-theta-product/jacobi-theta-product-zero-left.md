@@ -14,6 +14,11 @@ At `x = 0`, the first two q-Pochhammer factors are one.
 ## Depends on
 
 - [Jacobi Theta Product](jacobi-theta-product.md)
+- [Q Pochhammer Inf](../qpochhammer/q-pochhammer-inf.md)
+
+## Proof depends on
+
+- [Q Pochhammer Inf zero left](../qpochhammer/q-pochhammer-inf-zero-left.md)
 
 ## Sources
 

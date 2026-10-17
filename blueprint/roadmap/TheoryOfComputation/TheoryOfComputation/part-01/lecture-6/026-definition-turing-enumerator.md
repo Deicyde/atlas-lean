@@ -12,7 +12,7 @@ A Turing Enumerator is a deterministic TM with a printer. It starts on a blank t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
 
 ## Sources
 

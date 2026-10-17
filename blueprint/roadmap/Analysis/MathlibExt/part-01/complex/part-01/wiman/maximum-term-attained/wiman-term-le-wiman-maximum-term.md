@@ -13,7 +13,8 @@ Every Taylor term is bounded by the supremal maximum term.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Maximum Term](../../../part-02/wiman/wiman-maximum-term.md)
+- [Wiman Term](../../../part-02/wiman/wiman-term.md)
 
 ## Proof depends on
 

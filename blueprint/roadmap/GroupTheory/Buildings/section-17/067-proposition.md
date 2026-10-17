@@ -13,7 +13,7 @@ Let $Y$ be a subset of $X$ which is contained in the union of finitely-many simp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section 17.7)](068-definition.md)
 
 ## Sources
 

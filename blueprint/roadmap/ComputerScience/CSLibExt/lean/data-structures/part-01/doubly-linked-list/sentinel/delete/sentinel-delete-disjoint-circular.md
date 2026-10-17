@@ -14,6 +14,7 @@ Deletion preserves any disjoint represented circle, including its sentinel.
 ## Depends on
 
 - [Circular Represents](../basic/circular-represents.md)
+- [Node](../../basic/node.md)
 - [Sentinel Delete](sentinel-delete.md)
 
 ## Proof depends on

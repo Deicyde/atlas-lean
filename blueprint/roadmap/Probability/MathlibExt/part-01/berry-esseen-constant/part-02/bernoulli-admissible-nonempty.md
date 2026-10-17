@@ -19,6 +19,7 @@ The coefficient 42 applies to the actual subclass too.
 
 - [Is Bernoulli Law](../part-01/is-bernoulli-law.md)
 - [Is Admissible forty Two](../part-01/is-admissible-forty-two.md)
+- [Is Standardized Law](../../berry-esseen-model/part-01/is-standardized-law.md)
 
 ## Sources
 

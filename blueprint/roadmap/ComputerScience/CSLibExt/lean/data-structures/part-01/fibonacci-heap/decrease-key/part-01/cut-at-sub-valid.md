@@ -13,6 +13,8 @@ The subtree extracted by a cut from a valid tree is valid.
 
 ## Depends on
 
+- [Fibonacci Tree](../../../../part-02/fibonacci-heap/part-01/fibonacci-tree.md)
+- [Valid](../../../../part-02/fibonacci-heap/part-01/valid.md)
 - [Cut At](cut-at.md)
 
 ## Proof depends on

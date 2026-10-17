@@ -16,6 +16,10 @@ rightmost occurrence before that position, or the pattern length if absent.
 
 - [Preprocess](preprocess.md)
 
+## Proof depends on
+
+- [Compute Z](../../zalgorithm/compute-z.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.StringMatching.BoyerMoore.Preprocessing](../../../../../../../sources/v2/CSLibExt.md)

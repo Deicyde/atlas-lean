@@ -9,6 +9,8 @@ fully proved results, and WantedExt states established results whose proofs
 are deferred. Each subject below leads with those libraries. The 26
 textbooks and lecture notes formalized by the archived ATLAS v1 release follow
 as source tracks whose articles reproduce the source statements in order.
+Standalone developments under `Atlas/` remain outside these roadmap and progress
+counts until their `MAPPED` coverage rows are decomposed.
 
 ## Subjects
 

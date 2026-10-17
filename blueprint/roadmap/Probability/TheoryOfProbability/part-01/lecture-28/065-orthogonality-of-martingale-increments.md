@@ -13,7 +13,7 @@ Let $X_n$ be a martingale with $E[X_n^2] < \infty$ for all $n$. If $m \leq n$ an
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Martingale, supermartingale, submartingale)](../../part-02/lecture-29/091-martingale-supermartingale-submartingale.md)
 
 ## Proof depends on
 

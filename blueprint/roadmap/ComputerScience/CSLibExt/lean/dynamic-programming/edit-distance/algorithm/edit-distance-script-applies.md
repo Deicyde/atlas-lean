@@ -13,7 +13,18 @@ The returned script executes on the source and produces the target.
 
 ## Depends on
 
+- [Edit Distance Cost](../script/edit-distance-cost.md)
+- [Edit Distance Result](../script/edit-distance-result.md)
+- [Transforms](../script/transforms.md)
 - [Edit Distance](edit-distance.md)
+
+## Proof depends on
+
+- [Edit Script](../script/edit-script.md)
+- [Apply?](../script/apply.md)
+- [Cost](../script/cost-2.md)
+- [Edit Step](../script/edit-step.md)
+- [Cost](../script/cost.md)
 
 ## Sources
 

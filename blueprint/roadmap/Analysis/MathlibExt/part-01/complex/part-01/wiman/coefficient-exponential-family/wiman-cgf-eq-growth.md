@@ -18,6 +18,7 @@ The coefficient-measure cumulant-generating function is the logarithmic majorant
 
 ## Proof depends on
 
+- [Wiman Majorant](../radial-majorant/wiman-majorant.md)
 - [Wiman mgf eq majorant](wiman-mgf-eq-majorant.md)
 
 ## Sources

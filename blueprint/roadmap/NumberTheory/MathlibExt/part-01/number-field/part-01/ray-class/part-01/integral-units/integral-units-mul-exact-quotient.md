@@ -16,6 +16,8 @@ Exactness at integral units, quotient form (ATLAS `exactSeq_exact_at_units`).
 - [Integral Ray One Units](integral-ray-one-units.md)
 - [Integral Ray One Units Inclusion](integral-ray-one-units-inclusion.md)
 - [Integral Units To Ray Quotient](integral-units-to-ray-quotient.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+- [Ray One Elements](../../part-02/residue-sign/ray-one-elements.md)
 
 ## Proof depends on
 

@@ -13,6 +13,7 @@ The two carried record updates determine the complete returned store.
 
 ## Depends on
 
+- [Node](../../basic/node.md)
 - [Sentinel Delete](sentinel-delete.md)
 
 ## Sources

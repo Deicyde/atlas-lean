@@ -13,7 +13,8 @@ Suppose $\sum x_n$ converges absolutely and $\sum x_n = x$. Let $\sigma: \mathbb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Series) (1)](../series/032-definition.md)
+- [Definition (Series section)](../series/097-definition.md)
 
 ## Sources
 

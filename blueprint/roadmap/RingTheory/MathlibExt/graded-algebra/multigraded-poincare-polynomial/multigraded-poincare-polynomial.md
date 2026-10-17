@@ -22,6 +22,7 @@ mathematics.
 
 - [Multigraded Base Change](../multigraded-betti/multigraded-base-change.md)
 - [Multigraded Free Resolution](../multigraded-free-resolution/multigraded-free-resolution.md)
+- [Multigraded Polynomial Module](../multigraded-polynomial-module/multigraded-polynomial-module.md)
 
 ## Proof depends on
 

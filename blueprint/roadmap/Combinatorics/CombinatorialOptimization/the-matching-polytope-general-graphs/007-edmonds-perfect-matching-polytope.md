@@ -13,6 +13,10 @@ Let $G = (V, E)$ be any graph (not necessarily bipartite) with $|V|$ even, and l
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Claim 2 (decomposition into perfect matchings)](008-decomposition-into-perfect-matchings.md)
+
 ## Sources
 
 - [MIT 18.433 Combinatorial Optimization (Fall 2003), The Matching Polytope - General graphs, Sept 23](../../../../sources/v1/CombinatorialOptimization.md)

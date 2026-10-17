@@ -15,6 +15,8 @@ If $f_n:[a,b]\to \mathbb{R}$ is continuously differentiable, $f:[a,b]\to \mathbb
 
 - [Definition (Continuous Functions) (1)](../../part-01/continuous-functions/043-continuous-functions.md)
 - [Definition (Section on Derivative)](../../part-01/section-on-derivative/050-definition.md)
+- [Definition (Pointwise Convergence) (Sequences of Function, Pointwise and Uniform Convergence) (1)](087-pointwise-convergence.md)
+- [Definition (Uniform Convergence) (Sequences of Function, Pointwise and Uniform Convergence) (1)](088-uniform-convergence.md)
 
 ## Proof depends on
 

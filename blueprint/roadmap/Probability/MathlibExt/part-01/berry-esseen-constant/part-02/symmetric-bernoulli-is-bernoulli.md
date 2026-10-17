@@ -19,6 +19,7 @@ The Bernoulli witness is supported on the two distinct actual points.
 ## Proof depends on
 
 - [Symmetric Bernoulli is Standardized](symmetric-bernoulli-is-standardized.md)
+- [Is Standardized Law](../../berry-esseen-model/part-01/is-standardized-law.md)
 
 ## Sources
 

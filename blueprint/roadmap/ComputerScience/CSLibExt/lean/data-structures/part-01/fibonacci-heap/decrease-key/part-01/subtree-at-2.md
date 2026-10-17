@@ -13,7 +13,14 @@ Every subtree addressed by a path in a valid tree is valid.
 
 ## Depends on
 
+- [Fibonacci Tree](../../../../part-02/fibonacci-heap/part-01/fibonacci-tree.md)
+- [Valid](../../../../part-02/fibonacci-heap/part-01/valid.md)
 - [Subtree At](subtree-at.md)
+
+## Proof depends on
+
+- [Child valid](../../../../part-02/fibonacci-heap/part-01/child-valid.md)
+- [Children](../../../../part-02/fibonacci-heap/part-01/children.md)
 
 ## Sources
 

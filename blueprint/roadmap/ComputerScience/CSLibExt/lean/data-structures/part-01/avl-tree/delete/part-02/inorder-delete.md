@@ -13,7 +13,10 @@ Deleting a key with `delete` erases it from the inorder traversal.
 
 ## Depends on
 
+- [Ordered](../../../avl-tree-2/part-01/ordered.md)
+- [Tree](../../../avl-tree-2/part-01/tree.md)
 - [Delete](../part-01/delete.md)
+- [Inorder](../../../avl-tree-2/part-01/inorder.md)
 
 ## Proof depends on
 

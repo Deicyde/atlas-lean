@@ -17,6 +17,7 @@ This node has no prerequisites.
 
 - [Corollary (Section: Plunnecke inequality)](../../part-01/plunnecke-inequality/057-corollary.md)
 - [Lemma (Double Counting)](../../part-01/contagious-structure-lemma/063-double-counting.md)
+- [Lemma (Contagious Structure)](../section-on-contagious-structure-in-projection-th-2/073-contagious-structure.md)
 
 ## Sources
 

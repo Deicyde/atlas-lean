@@ -22,6 +22,10 @@ https://en.wikipedia.org/wiki/Implicit_function_theorem).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists level Set curve](exists-level-set-curve.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Calculus.TangentSpaceLevelSet](../../../../../../sources/v2/MathlibExt.md)

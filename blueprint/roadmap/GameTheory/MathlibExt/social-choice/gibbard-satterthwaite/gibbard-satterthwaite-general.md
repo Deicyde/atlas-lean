@@ -37,6 +37,7 @@ General form assuming only `Finite`; `gibbard_satterthwaite` is the source-shape
 - [Lt](lt.md)
 - [Total](total.md)
 - [Trans](trans.md)
+- [Strict Total Order](../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 
 ## Sources
 

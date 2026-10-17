@@ -29,6 +29,7 @@ voter type is dictatorial, with `Finite` hypotheses.
 - [Lt](lt.md)
 - [Total](total.md)
 - [Trans](trans.md)
+- [Strict Total Order](../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 
 ## Sources
 

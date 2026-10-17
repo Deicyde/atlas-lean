@@ -12,7 +12,7 @@ Bundle a positive list as a multiple-zeta index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Index](../index/index.md)
 
 ## Sources
 

@@ -23,6 +23,10 @@ fields.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Goldstine finite](goldstine-finite.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Module.JamesReflexivity](../../../../../../../sources/v2/MathlibExt.md)

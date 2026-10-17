@@ -18,6 +18,7 @@ Let $\rho : G \to \operatorname{GL}(V)$ be any representation of $G$. Then if $f
 ## Proof depends on
 
 - [Definition (Appendix: Dimensions of Irreducible Characters)](173-definition.md)
+- [Lemma (Appendix: Dimensions of Irreducible Characters)](175-lemma.md)
 
 ## Sources
 

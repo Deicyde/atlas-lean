@@ -15,10 +15,13 @@ statement proved from this one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mesh N](../mesh-pattern-stirling-recursion/mesh-n.md)
+- [R Stirling First](../../part-07/rstirling-first-alternating-expansion/r-stirling-first.md)
 
 ## Proof depends on
 
+- [Poly N](../mesh-pattern-stirling-recursion/poly-n.md)
+- [Mesh Pattern Count stirling Recursion](../mesh-pattern-stirling-recursion/mesh-pattern-count-stirling-recursion.md)
 - [Mesh Pattern Generating Function eq factorial mul prod general](../mesh-pattern-generating-function/mesh-pattern-generating-function-eq-fact.md)
 
 ## Sources

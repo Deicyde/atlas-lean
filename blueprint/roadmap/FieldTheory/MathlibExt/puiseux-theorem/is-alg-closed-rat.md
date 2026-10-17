@@ -16,6 +16,10 @@ characteristic zero form an algebraically closed field.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists monic coprime factorization of is Adic Complete nat Degree](../../../NumberTheory/MathlibExt/part-06/hensel-factorization/exists-monic-coprime-factorization-of-is-2.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.FieldTheory.PuiseuxTheorem](../../../../sources/v2/MathlibExt.md)

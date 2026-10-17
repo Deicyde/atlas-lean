@@ -15,7 +15,7 @@ needed, since the cosine depends only on `k` modulo `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Real Cyclotomic Polynomial](../real-cyclotomic-polynomial.md)
 
 ## Sources
 

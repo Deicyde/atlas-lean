@@ -18,6 +18,7 @@ An invalid index incurs no sift-down events.
 ## Proof depends on
 
 - [Time sift Down of heap Left ge](time-sift-down-of-heap-left-ge.md)
+- [Heap Left](../../../part-02/binary-heap/part-01/heap-left.md)
 
 ## Sources
 

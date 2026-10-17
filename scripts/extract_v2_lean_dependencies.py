@@ -5,11 +5,13 @@
 
 The dump (from scripts/dump_v2_dependencies.lean, run by the v2-dependencies
 workflow) lists, for every constant in the v2 modules, the v2 constants its
-type and value use. Articles are the public, documented, non-instance
-declarations. An article's statement dependencies are the articles its type
-reaches through non-article constants (private helpers, auxiliary
-declarations, undocumented definitions); its proof dependencies are those its
-value reaches the same way, minus the statement ones. Writes
+type and value use. Articles are exactly the resolved `lean:` targets in the
+generated v2 roadmap, so source-level commands and compiled constants cannot
+disagree about projections, wrappers, wanted declarations, or docstrings. An
+article's statement dependencies are the articles its type reaches through
+non-article constants (private helpers, auxiliary declarations, undocumented
+definitions); its proof dependencies are those its value reaches the same way,
+minus the statement ones. Writes
 blueprint/sources/v2/lean-dependencies.json, which scripts/generate_wiki.py
 reads.
 """
@@ -18,18 +20,39 @@ from __future__ import annotations
 
 import gzip
 import json
+import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "blueprint" / "sources" / "v2" / "lean-dependencies.json"
-ARTICLE_KINDS = {"theorem", "def", "axiom", "opaque", "inductive"}
+ROADMAP = ROOT / "blueprint" / "roadmap"
+LIBRARIES = frozenset({"MathlibExt", "CSLibExt", "WantedExt"})
+LEAN = re.compile(r"^lean:\s*(.+?)\s*$", re.MULTILINE)
 
 
 def read_dump(path: Path) -> dict[str, dict]:
     opener = gzip.open if path.suffix == ".gz" else open
     with opener(path, "rt", encoding="utf-8") as handle:
         return {row["name"]: row for row in map(json.loads, handle) if row}
+
+
+def article_names() -> set[str]:
+    """The compiled names the generated v2 roadmap actually publishes."""
+
+    names: set[str] = set()
+    for path in ROADMAP.rglob("*.md"):
+        relative = path.relative_to(ROADMAP)
+        if len(relative.parts) < 2 or relative.parts[1] not in LIBRARIES:
+            continue
+        text = path.read_text(encoding="utf-8")
+        if not text.startswith("---\n"):
+            continue
+        frontmatter = text.split("---\n", 2)[1]
+        match = LEAN.search(frontmatter)
+        if match is not None:
+            names.update(name.strip() for name in match.group(1).split(",") if name.strip())
+    return names
 
 
 def frontiers(rows: dict[str, dict], articles: set[str]) -> dict[str, frozenset[str]]:
@@ -69,11 +92,14 @@ def main() -> int:
         print(__doc__.strip(), file=sys.stderr)
         return 2
     rows = read_dump(Path(sys.argv[1]))
-    articles = {
-        name
-        for name, row in rows.items()
-        if row["doc"] and not row["private"] and not row["instance"] and row["kind"] in ARTICLE_KINDS
-    }
+    articles = article_names()
+    missing = sorted(articles - rows.keys())
+    if missing:
+        for name in missing[:50]:
+            print(f"roadmap Lean target is absent from the compiled dependency dump: {name}", file=sys.stderr)
+        if len(missing) > 50:
+            print(f"and {len(missing) - 50} more missing roadmap targets", file=sys.stderr)
+        return 1
     reach = frontiers(rows, articles)
 
     def collapse(name: str, uses: list[str]) -> set[str]:
@@ -95,7 +121,13 @@ def main() -> int:
         }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(
-        json.dumps({"source": sys.argv[2], "articles": result}, indent=1, ensure_ascii=False, sort_keys=True) + "\n"
+        json.dumps(
+            {"source": sys.argv[2], "article_manifest": "blueprint/roadmap lean targets", "articles": result},
+            indent=1,
+            ensure_ascii=False,
+            sort_keys=True,
+        )
+        + "\n"
     )
     edges = sum(len(entry["statement"]) + len(entry["proof"]) for entry in result.values())
     print(f"{len(rows)} constants, {len(articles)} articles, {edges} article edges -> {OUTPUT.relative_to(ROOT)}")

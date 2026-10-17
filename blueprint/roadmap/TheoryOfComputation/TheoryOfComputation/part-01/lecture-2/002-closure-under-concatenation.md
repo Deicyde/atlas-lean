@@ -15,6 +15,10 @@ If $A_1, A_2$ are regular languages, so is $A_1 A_2$ (the class of regular langu
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition (Nondeterministic Finite Automaton)](009-nondeterministic-finite-automaton.md)
+
 ## Sources
 
 - [MIT 18.404J Theory of Computation (Fall 2020), Lecture 2, Closure under ∘ (concatenation)](../../../../../sources/v1/TheoryOfComputation.md)

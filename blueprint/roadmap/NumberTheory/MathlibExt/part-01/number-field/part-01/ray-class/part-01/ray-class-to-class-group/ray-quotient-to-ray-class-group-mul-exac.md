@@ -15,7 +15,11 @@ Exactness at the ray class group as `MulExact`, raw quotient form
 ## Depends on
 
 - [Ray Class Group](../group/ray-class-group.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 - [Ray Class To Class Group](ray-class-to-class-group.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+- [Ray Group](../../part-02/ray-group/ray-group.md)
+- [Ray One Elements](../../part-02/residue-sign/ray-one-elements.md)
 - [Ray Quotient To Ray Class Group](../quotient-to-ray-class/ray-quotient-to-ray-class-group.md)
 
 ## Proof depends on

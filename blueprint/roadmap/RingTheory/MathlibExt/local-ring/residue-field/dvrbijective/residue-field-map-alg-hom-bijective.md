@@ -20,6 +20,7 @@ Henselian.
 ## Proof depends on
 
 - [Residue Field Map Alg Hom injective](../dvr/residue-field-map-alg-hom-injective.md)
+- [Residue Field Map Alg Hom surjective](../dvrfull/residue-field-map-alg-hom-surjective.md)
 
 ## Sources
 

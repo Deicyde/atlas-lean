@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Algebra.MvPolynomialStable._root_.MvPolynomial.IsStable.roots_im_nonpos_univariateSpecialization
+lean: MvPolynomial.IsStable.roots_im_nonpos_univariateSpecialization
 ---
 
 # Roots im nonpos univariate Specialization
@@ -14,7 +14,12 @@ leaves every root of a nonzero specialization in the closed lower half-plane.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Stable](is-stable.md)
+- [Univariate Specialization](univariate-specialization.md)
+
+## Proof depends on
+
+- [Eval univariate Specialization](eval-univariate-specialization.md)
 
 ## Sources
 

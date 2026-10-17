@@ -17,6 +17,10 @@ A Noetherian topological space $X$ is a finite union of its components (i.e.\ ma
 - [Definition 7](../lecture-3/025-definition-7.md)
 - [Definition 8](../lecture-3/027-definition-8.md)
 
+## Proof depends on
+
+- [Lemma 5](032-lemma-5.md)
+
 ## Sources
 
 - [MIT 18.725 Algebraic Geometry (Fall 2015), Lecture 4](../../../../../sources/v1/AlgebraicGeometryI.md)

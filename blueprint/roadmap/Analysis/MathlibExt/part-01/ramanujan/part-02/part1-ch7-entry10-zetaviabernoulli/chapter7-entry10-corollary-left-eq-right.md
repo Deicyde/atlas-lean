@@ -15,6 +15,8 @@ For `re r < -1` the two sides of the corollary agree.
 
 - [Chapter7 Entry10 Corollary Left](chapter7-entry10-corollary-left.md)
 - [Chapter7 Entry10 Corollary Right](chapter7-entry10-corollary-right.md)
+- [Chapter7 Admissible](../part1-ch7-power-difference/chapter7-admissible.md)
+- [Chapter7 Power Difference Term](../part1-ch7-power-difference/chapter7-power-difference-term.md)
 
 ## Proof depends on
 

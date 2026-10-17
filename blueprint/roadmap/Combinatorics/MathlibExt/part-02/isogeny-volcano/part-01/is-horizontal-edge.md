@@ -2,8 +2,6 @@
 article_id: af_4f79fab7c8eaa099b6feca88
 declaration: def
 origin: cited
-statement: formalized
-lean: IsogenyVolcano.IsHorizontalEdge
 ---
 
 # Is Horizontal Edge

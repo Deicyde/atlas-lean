@@ -12,7 +12,7 @@ If $B$ is compact and open in $G$, then any apartment system $\mathcal{A}$ stabl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section 17.7)](068-definition.md)
 
 ## Sources
 

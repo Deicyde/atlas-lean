@@ -12,12 +12,13 @@ ATLAS v1 selected 335 statements from this source in
 matched to each in [`report.json`](https://github.com/facebookresearch/atlas-lean/blob/main/v1/Atlas/ArithmeticGeometry/report.json). Each roadmap article
 reproduces one target's statement and the source location it names.
 
-784 roadmap edges come from the source text rather than
+791 roadmap edges come from the source text rather than
 the Lean code; each is recorded with its evidence in
 [`book-dependencies/ArithmeticGeometry.json`](book-dependencies/ArithmeticGeometry.json).
 
-17 dependencies point to a statement placed later in this
-wiki and are not drawn as roadmap edges, which keeps every chapter acyclic.
+2 candidate dependencies are not drawn because adding
+them would create a cycle between source statements. Every other verified
+dependency is retained, including relations in both directions between chapters.
 
 ## Targets without a linked Lean declaration
 
@@ -29,10 +30,15 @@ or a root library declares the same name.
 | --- | --- |
 | Theorem (Hasse 1933) | `not_found` |
 | Definition 4.5 | `PadicInt.padicExpansion` |
+| Definition 4.12 | `DiscreteValuation` |
+| Definition 7.3 | `idealNorm` |
 | Definition 10.1 | `padicHilbertSymbol` |
 | Theorem 10.4 | `realHilbertSymbol.eq_neg_one_iff_both_neg` |
 | Lemma 10.5 | `HilbertSymbol.hilbert_symbol_units_eq_one_of_odd` |
+| Theorem 12.11 (Hilbert basis theorem) | `hilbert_basis_theorem` |
 | Theorem 12.16 (weak Nullstellensatz) | `weak_nullstellensatz` |
+| Definition 13.3 | `IsAffineVariety` |
+| Definition 14.3 | `zariskiTopology` |
 | Definition 16.27 | `localRingAtPoint` |
 | Definition 19.6 | `CurveDivisor` |
 | Definition 19.7 | `CurveDivisor` |

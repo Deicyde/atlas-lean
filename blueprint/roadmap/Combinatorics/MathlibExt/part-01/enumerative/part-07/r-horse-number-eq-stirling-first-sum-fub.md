@@ -24,6 +24,8 @@ image decomposition and binomial inversion, rather than by shift operators.
 ## Proof depends on
 
 - [Fubini Number eq sum](../part-03/fubini-number/fubini-number-eq-sum.md)
+- [Signed Stirling First](../part-08/signed-stirling-first.md)
+- [Sum signed Stirling First mul stirling Second](../part-08/stirling-matrices/sum-signed-stirling-first-mul-stirling-s.md)
 
 ## Sources
 

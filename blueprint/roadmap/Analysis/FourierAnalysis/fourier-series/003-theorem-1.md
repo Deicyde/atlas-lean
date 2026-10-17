@@ -17,6 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Lemma 1 (Approximate Identity Lemma)](../fourier-series-2/002-approximate-identity-lemma.md)
 - [Proposition 1 (Fourier Series, Continued (part 3))](001-proposition-1.md)
 
 ## Sources

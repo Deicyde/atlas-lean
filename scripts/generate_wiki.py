@@ -233,10 +233,16 @@ SUBJECTS = {
 
 # Library -> (description, top-level directory -> subject when the names differ).
 LIBRARIES = {
-    "MathlibExt": ("Reusable, fully proved extensions to Mathlib.", {}),
+    "MathlibExt": ("Reusable, fully proved extensions to Mathlib.", {"ModelTheory": "Logic"}),
     "CSLibExt": (
         "Reusable, fully proved computer-science developments built on MathlibExt.",
-        {"Algorithms": "ComputerScience", "Complexity": "TheoryOfComputation"},
+        {
+            "Algorithms": "ComputerScience",
+            "Complexity": "TheoryOfComputation",
+            "Foundations": "ComputerScience",
+            "Languages": "ComputerScience",
+            "Logics": "Logic",
+        },
     ),
     "WantedExt": (
         "Established results whose Lean implementation or proof is deferred.",
@@ -255,6 +261,9 @@ KIND_DECLARATION = {"definition": "def", "construction": "def", "axiom": "axiom"
 NUMBERED_HEAD = re.compile(r"(?i)^(section|chapter|lecture|class meeting\s*#?|part)\s*(\d+)")
 ARTICLE_ID = re.compile(r"^article_id: (af_[0-9a-f]{24})$", re.M)
 BARE_NAME = re.compile(r"(?i)[a-z]+\.?")
+MATH_SPAN = re.compile(
+    r"(?s)(?<!\\)(?P<dollars>\${1,2}).*?(?<!\\)(?P=dollars)|\\\(.*?\\\)|\\\[.*?\\\]"
+)
 
 
 @dataclass
@@ -359,6 +368,15 @@ def disambiguate(targets: list[Target], rename) -> None:
                 target.title = f"{target.title} ({ordinals[target.title]})"
 
 
+def safe_math_markdown(text: str) -> str:
+    """Keep TeX comparisons from opening raw-HTML tags inside site cards."""
+
+    return MATH_SPAN.sub(
+        lambda span: re.sub(r"<(?=[A-Za-z_\\])", r"\\lt ", span.group()),
+        text,
+    )
+
+
 def load_book(book: str, index, lean_dependencies: dict) -> tuple[list[Target], dict]:
     report = json.loads((V1 / "Atlas" / book / "report.json").read_text())
     details = sorted(report["statements"]["details"], key=lambda item: item["idx"])
@@ -367,8 +385,8 @@ def load_book(book: str, index, lean_dependencies: dict) -> tuple[list[Target], 
     for item in details:
         names = [name.strip() for name in (item.get("lean_declaration") or "").split(",") if name.strip()]
         found = [index.find(name) for name in names]
-        # Unqualified names such as `Place` recur across v1 books, and the
-        # index keeps one; link only a declaration from this book.
+        # Unqualified names such as `Place` recur across v1 books. Resolve the
+        # name only when the global index selects this book's occurrence.
         resolved = bool(names) and all(item and item.path.parts[:3] == ("v1", "Atlas", book) for item in found)
         if names and not resolved:
             unresolved.append(item)
@@ -397,7 +415,7 @@ def load_book(book: str, index, lean_dependencies: dict) -> tuple[list[Target], 
                 title=title,
                 slug=f"{item['idx'] + 1:03d}-{slugify(label.group(1) if label else name, 40)}",
                 location=item["location"].strip(),
-                description=item["description"].strip(),
+                description=safe_math_markdown(item["description"].strip()),
                 declaration=declaration,
                 lean=", ".join(names) if resolved else None,
                 statement=statement,
@@ -550,7 +568,7 @@ def load_library(library: str, index) -> tuple[list[Target], dict]:
                     title=title.replace("[", "(").replace("]", ")"),
                     slug=slugify(humanize(short) or title, 40),
                     location=subject,
-                    description=body,
+                    description=safe_math_markdown(body),
                     declaration=declaration,
                     lean=lean,
                     statement=statement,
@@ -616,6 +634,67 @@ def link_v2(targets: list[Target], dependencies: dict) -> None:
                 if other is not None and other is not target and id(other) not in seen:
                     bucket.append(other)
                     seen.add(id(other))
+
+
+def drop_cycle_closing_edges(tree: Container) -> int:
+    """Keep a deterministic maximal acyclic subset of one v1 source graph.
+
+    Edges to earlier source statements are always acyclic together and form
+    the starting graph. A later-statement dependency is then retained unless
+    the edges already kept provide a path back to its target. This discards
+    only a feedback edge, never every dependency merely because its source
+    happens to appear later in the book or wiki.
+    """
+
+    targets = [node for node in walk(tree) if isinstance(node, Target)]
+    position = {id(target): number for number, target in enumerate(targets)}
+    original = {
+        (id(target), kind): list(bucket)
+        for target in targets
+        for kind, bucket in (("statement", target.depends), ("proof", target.proof_depends))
+    }
+    adjacency: dict[int, set[int]] = {id(target): set() for target in targets}
+    kept: set[tuple[int, str, int]] = set()
+    candidates: list[tuple[Target, str, int, Target]] = []
+    for target in targets:
+        for kind, bucket in (("statement", target.depends), ("proof", target.proof_depends)):
+            for index, dependency in enumerate(bucket):
+                edge = (id(target), kind, index)
+                if position[id(dependency)] < position[id(target)]:
+                    adjacency[id(target)].add(id(dependency))
+                    kept.add(edge)
+                else:
+                    candidates.append((target, kind, index, dependency))
+
+    def reaches(start: int, goal: int) -> bool:
+        pending = [start]
+        seen: set[int] = set()
+        while pending:
+            node = pending.pop()
+            if node == goal:
+                return True
+            if node in seen:
+                continue
+            seen.add(node)
+            pending.extend(adjacency[node] - seen)
+        return False
+
+    dropped = 0
+    for target, kind, index, dependency in candidates:
+        if reaches(id(dependency), id(target)):
+            dropped += 1
+            continue
+        adjacency[id(target)].add(id(dependency))
+        kept.add((id(target), kind, index))
+
+    for target in targets:
+        for kind, bucket in (("statement", target.depends), ("proof", target.proof_depends)):
+            bucket[:] = [
+                dependency
+                for index, dependency in enumerate(original[id(target), kind])
+                if (id(target), kind, index) in kept
+            ]
+    return dropped
 
 
 def render_library_source(library: str, summary: dict) -> str:
@@ -686,23 +765,6 @@ def rel(source: Path, target: Path) -> str:
         common += 1
     up = len(source.parent.parts) - common
     return "/".join([".."] * up + list(target.parts[common:]))
-
-
-def drop_forward_edges(tree: Container) -> int:
-    """Keep only edges to earlier pages, so every rolled-up level is acyclic.
-
-    Lean sometimes proves a later result first and reuses it earlier; drawn as
-    an edge, that becomes a cycle between the two chapters.
-    """
-    position = {id(node): number for number, node in enumerate(walk(tree))}
-    dropped = 0
-    for node in walk(tree):
-        if isinstance(node, Target):
-            for bucket in (node.depends, node.proof_depends):
-                kept = [other for other in bucket if position[id(other)] < position[id(node)]]
-                dropped += len(bucket) - len(kept)
-                bucket[:] = kept
-    return dropped
 
 
 def frontmatter(fields: list[tuple[str, str]], previous: str | None) -> str:
@@ -790,11 +852,12 @@ def render_source(book: str, url: str, summary: dict) -> str:
             f"the Lean code; each is recorded with its evidence in",
             f"[`book-dependencies/{book}.json`](book-dependencies/{book}.json).",
         ]
-    if summary["forward"]:
+    if summary["cycle_edges"]:
         lines += [
             "",
-            f"{summary['forward']} dependencies point to a statement placed later in this",
-            "wiki and are not drawn as roadmap edges, which keeps every chapter acyclic.",
+            f"{summary['cycle_edges']} candidate dependencies are not drawn because adding",
+            "them would create a cycle between source statements. Every other verified",
+            "dependency is retained, including relations in both directions between chapters.",
         ]
     missing = summary["unmatched"] + summary["unresolved"]
     if missing:
@@ -826,7 +889,8 @@ def render_coverage(rows: list[tuple[str, str, str]]) -> str:
         "",
         "Every documented public declaration of the ATLAS v2 libraries and every",
         "ATLAS v1 textbook target has one roadmap article. The standalone `Atlas/`",
-        "developments are not decomposed yet.",
+        "developments are not decomposed yet. Progress percentages and target counts",
+        "cover only the decomposed rows below; they are not repository-wide coverage.",
         "",
         "| Area | Coverage | Evidence |",
         "| --- | --- | --- |",
@@ -844,6 +908,8 @@ def render_roadmap_root(subjects: list[str], previous: str | None) -> str:
         "are deferred. Each subject below leads with those libraries. The 26",
         "textbooks and lecture notes formalized by the archived ATLAS v1 release follow",
         "as source tracks whose articles reproduce the source statements in order.",
+        "Standalone developments under `Atlas/` remain outside these roadmap and progress",
+        "counts until their `MAPPED` coverage rows are decomposed.",
         "",
         "## Subjects",
         "",
@@ -865,7 +931,7 @@ def generate(selected: list[str]) -> dict[Path, str]:
         subject = BOOKS[book][0]
         tree = book_tree(book, targets)
         assign_paths(tree, ROADMAP / subject / book)
-        summary["forward"] = drop_forward_edges(tree)
+        summary["cycle_edges"] = drop_cycle_closing_edges(tree)
         summary["book_edges"] = sum(
             (target.idx, other.idx) in summary["book_pairs"]
             for target in targets
@@ -902,14 +968,12 @@ def generate(selected: list[str]) -> dict[Path, str]:
             json.loads(dependency_file.read_text())["articles"],
         )
     every_v2 = Container("v2", "v2", [tree for subject in sorted(v2_by_subject) for tree in v2_by_subject[subject]])
-    v2_forward = drop_forward_edges(every_v2)
     for node in walk(every_v2):
         if node is not every_v2:
             render = render_container if isinstance(node, Container) else render_target
             files[node.path] = render(node, previous(node.path))
     for library, (targets, summary) in v2_loaded.items():
         summary["edges"] = sum(len(target.depends) + len(target.proof_depends) for target in targets)
-        summary["forward"] = v2_forward
         files[SOURCES / "v2" / f"{library}.md"] = render_library_source(library, summary)
         first = sorted(summary["subjects"])[0]
         v2_coverage.append(
@@ -922,10 +986,16 @@ def generate(selected: list[str]) -> dict[Path, str]:
                 "declarations are not articles.",
             )
         )
+    statistical_mechanics_files = sum(1 for _ in (ROOT / "Atlas" / "StatisticalMechanics").rglob("*.lean"))
+    fc_files = sum(1 for _ in (ROOT / "Atlas" / "FC").rglob("*.lean"))
     coverage = v2_coverage + coverage + [
         ("v2 tests (MathlibExtTest, CSLibExtTest)", "OUT", "Tests and diagnostics rather than mathematical results."),
-        ("Atlas/StatisticalMechanics", "MAPPED", "Standalone development; no roadmap articles yet."),
-        ("Atlas/FC", "MAPPED", "Nine standalone solution files; no roadmap articles yet."),
+        (
+            "Atlas/StatisticalMechanics",
+            "MAPPED",
+            f"{statistical_mechanics_files} standalone Lean files; no roadmap articles yet.",
+        ),
+        ("Atlas/FC", "MAPPED", f"{fc_files} standalone Lean files; no roadmap articles yet."),
         ("Atlas/CPythonListsort", "OUT", "Maintained as its own Autoform blueprint inside Atlas/CPythonListsort."),
     ]
     subjects = sorted(set(by_subject) | set(v2_by_subject))

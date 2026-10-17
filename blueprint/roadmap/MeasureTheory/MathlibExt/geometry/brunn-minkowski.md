@@ -15,6 +15,10 @@ Brunn–Minkowski: for `n > 0` and nonempty compact `vol(A+B)^(1/n) ≥ vol(A)^(
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prekopa Leindler](../integral/prekopa-leindler.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.MeasureTheory.Geometry.BrunnMinkowski](../../../../sources/v2/MathlibExt.md)

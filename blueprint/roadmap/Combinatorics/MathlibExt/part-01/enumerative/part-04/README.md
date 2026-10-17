@@ -2,8 +2,9 @@
 article_id: af_4d4d2836b6dd733e2e9033c4
 ---
 
-# Heilermann Formula to Median Euler Number
+# Generalized Stirling Numbers to Marked Step In AMulti Marked Dyck Path
 
+- [Generalized Stirling Numbers](generalized-stirling-numbers/README.md)
 - [Heilermann Formula](heilermann-formula/README.md)
 - [Heilermann Weighted Motzkin](exists-weighted-motzkin-coefficients-of.md)
 - [Heilermann Weighted Motzkin Determinant](hankel-transform-eq-prod-of-weighted-mot.md)
@@ -23,4 +24,3 @@ article_id: af_4d4d2836b6dd733e2e9033c4
 - [Macaulay Monomial Shadow](macaulay-multiset-shadow-minimal.md)
 - [Marked Step In AMarked Dyck Path](marked-step-in-amarked-dyck-path/README.md)
 - [Marked Step In AMulti Marked Dyck Path](marked-step-in-amulti-marked-dyck-path/README.md)
-- [Median Euler Number](median-euler-number/README.md)

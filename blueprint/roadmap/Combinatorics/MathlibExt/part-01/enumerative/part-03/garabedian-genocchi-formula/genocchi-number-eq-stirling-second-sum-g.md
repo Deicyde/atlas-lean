@@ -15,11 +15,12 @@ Garabedian's explicit formula for the Genocchi numbers, for every `n : ℕ`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Genocchi Number](../../../../../../NumberTheory/MathlibExt/part-06/genocchi-number/genocchi-number.md)
 
 ## Proof depends on
 
 - [Garabedian genocchi formula general](../garabedian-bernoulli-stirling/garabedian-genocchi-formula-general.md)
+- [Genocchi Number eq bernoulli](../../../../../../NumberTheory/MathlibExt/part-06/genocchi-bernoulli/genocchi-number-eq-bernoulli.md)
 
 ## Sources
 

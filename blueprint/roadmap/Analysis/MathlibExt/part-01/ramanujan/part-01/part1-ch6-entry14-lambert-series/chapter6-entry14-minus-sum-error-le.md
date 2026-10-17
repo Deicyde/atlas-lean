@@ -20,6 +20,7 @@ This node has no prerequisites.
 
 - [Summable chapter6 Entry14 Minus Term](summable-chapter6-entry14-minus-term.md)
 - [Euler Maclaurin Formula](../../../calculus/euler-maclaurin-formula.md)
+- [One div exp sub one eq tsum](../../../special-functions/part-01/exp-sub-one-mittag-leffler/one-div-exp-sub-one-eq-tsum.md)
 
 ## Sources
 

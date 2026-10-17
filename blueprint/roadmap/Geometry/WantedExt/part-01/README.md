@@ -2,10 +2,11 @@
 article_id: af_6946a127895a949822d8ce74
 ---
 
-# Convex to Hopf Umlaufsatz Wanted
+# Convex to Hopf Rinow Wanted
 
 - [Convex](convex/README.md)
 - [Polyhedra](polyhedra/README.md)
+- [Ambidextrous Sofa Wanted](ambidextrous-sofa-wanted/README.md)
 - [Bose Gases Wanted](bose-gases-wanted/README.md)
 - [Cocompact Asymptotically Equivalent Metrics Wanted](cocompact-asymptotically-equivalent-metrics-want/README.md)
 - [Crystallographic Shared](e.md)
@@ -23,4 +24,3 @@ article_id: af_6946a127895a949822d8ce74
 - [Hadwiger Wanted](hadwiger-wanted/README.md)
 - [Hippocrates Lunes Wanted](hippocrates-lunes-wanted/README.md)
 - [Hopf Rinow Wanted](hopf-rinow-wanted/README.md)
-- [Hopf Umlaufsatz Wanted](hopf-umlaufsatz-wanted/README.md)

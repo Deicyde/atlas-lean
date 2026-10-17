@@ -2,9 +2,6 @@
 article_id: af_35078171a4671da1f5334ba1
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
-lean: elementDifferent_of_adjoin_eq_top
 ---
 
 # Element Different of adjoin eq top

@@ -13,10 +13,14 @@ Unlinking retains the complete selected record.
 
 ## Depends on
 
+- [Node](../../basic/node.md)
 - [Sentinel Delete](sentinel-delete.md)
 
 ## Proof depends on
 
+- [List Delete](../../delete/list-delete.md)
+- [List Delete deleted record](../../delete/list-delete-deleted-record.md)
+- [List Delete ret](../../delete/list-delete-ret.md)
 - [Sentinel Delete ret](sentinel-delete-ret.md)
 
 ## Sources

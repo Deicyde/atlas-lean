@@ -12,7 +12,12 @@ $A$ is Turing-recognizable if and only if $A = L(E)$ for some Turing-enumerator 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition: Turing-recognizable](../lecture-5/023-definition-turing-recognizable.md)
+
+## Proof depends on
+
+- [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
+- [Definition: Turing Enumerator](026-definition-turing-enumerator.md)
 
 ## Sources
 

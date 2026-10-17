@@ -16,6 +16,7 @@ For every CFL $A$, there is a $p$ such that if $s \in A$ and $|s| \geq p$ then $
 
 ## Proof depends on
 
+- [Lemma 1](../lecture-7/028-lemma-1.md)
 - [Definition (Context Free Grammar)](../lecture-4/013-context-free-grammar.md)
 
 ## Sources

@@ -23,6 +23,12 @@ neighboring-degree recurrence, as in Chahal--Soomro--Top, *Rocky Mountain J. Mat
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hasse bound of is Char Ne Two NF](manin-twist/hasse-bound-of-is-char-ne-two-nf.md)
+- [Hasse bound of is Char Two NF](manin-twist-char-two/hasse-bound-of-is-char-two-nf.md)
+- [Nat Card point eq](variable-change-point/nat-card-point-eq.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.AlgebraicGeometry.EllipticCurve.HasseBound](../../../../sources/v2/MathlibExt.md)

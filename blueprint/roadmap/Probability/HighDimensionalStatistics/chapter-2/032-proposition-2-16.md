@@ -13,7 +13,7 @@ Let $\mathbb{X} \in \mathbb{R}^{n \times d}$ be a random matrix with entries $X_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Assumption INC(k)](../section-2/036-k.md)
 
 ## Proof depends on
 

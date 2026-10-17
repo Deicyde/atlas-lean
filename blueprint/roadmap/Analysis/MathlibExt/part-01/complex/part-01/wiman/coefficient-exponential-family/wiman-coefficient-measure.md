@@ -14,6 +14,10 @@ The atomic measure whose mass at `n` is the norm of the `n`th Taylor coefficient
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Wiman Taylor Coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.Wiman.CoefficientExponentialFamily](../../../../../../../../sources/v2/MathlibExt.md)

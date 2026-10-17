@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.GroupTheory.AbelianRepresentationWanted._root_.FDRep.finrank_eq_one_of_isMulCommutative
+lean: FDRep.finrank_eq_one_of_isMulCommutative
 ---
 
 # Finrank eq one of is Mul Commutative
@@ -15,6 +15,10 @@ field is one-dimensional.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Is Irreducible of simple](is-irreducible-of-simple.md)
 
 ## Sources
 

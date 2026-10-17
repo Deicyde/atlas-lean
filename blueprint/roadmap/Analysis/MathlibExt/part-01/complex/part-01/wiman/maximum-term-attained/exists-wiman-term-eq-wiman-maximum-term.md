@@ -13,12 +13,15 @@ A summable nonnegative Taylor-term sequence realizes its supremum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Maximum Term](../../../part-02/wiman/wiman-maximum-term.md)
+- [Wiman Term](../../../part-02/wiman/wiman-term.md)
 
 ## Proof depends on
 
+- [Summable wiman Term](../radial-majorant/summable-wiman-term.md)
 - [Wiman Maximum Term le iff](wiman-maximum-term-le-iff.md)
 - [Wiman Term le wiman Maximum Term](wiman-term-le-wiman-maximum-term.md)
+- [Wiman Term nonneg](../radial-majorant/wiman-term-nonneg.md)
 
 ## Sources
 

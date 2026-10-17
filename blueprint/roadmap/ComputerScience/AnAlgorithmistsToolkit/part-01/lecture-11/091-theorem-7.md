@@ -11,7 +11,12 @@ For any $n$-dimensional, origin-symmetric convex body $K$, $d(K, B_2^n) \leq \sq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6 (Lecture 11, Section 5)](097-definition-6.md)
+- [Definition 2 (Lecture 10, Section 2)](../lecture-10/093-definition-2.md)
+
+## Proof depends on
+
+- [Theorem 8](098-theorem-8.md)
 
 ## Sources
 

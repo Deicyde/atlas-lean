@@ -15,6 +15,10 @@ Suppose $f, g: E \to \mathbb{R}$ are measurable functions. Then we have the foll
 
 - [Definition (April 1, 2021)](025-definition.md)
 
+## Proof depends on
+
+- [Corollary (March 30, 2021)](../march-30/029-corollary.md)
+
 ## Sources
 
 - [MIT 18.102 Introduction to Functional Analysis (Spring 2021), April 1, 2021](../../../../../sources/v1/IntroductionToFunctionalAnalysis.md)

@@ -14,10 +14,11 @@ deletes that minimum with `eraseMin`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../../avl-tree-2/part-01/tree.md)
 
 ## Proof depends on
 
+- [Balance](../../../avl-tree-2/part-01/balance.md)
 - [Delete Min](delete-min.md)
 - [Min D](min-d.md)
 

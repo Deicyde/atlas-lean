@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Algebra.MvPolynomialStable._root_.MvPolynomial.IsRealStable.mixedDifferential
+lean: MvPolynomial.IsRealStable.mixedDifferential
 ---
 
 # Mixed Differential
@@ -13,7 +13,14 @@ Any finite composition of the operators `1 - ∂ᵢ` preserves real stability.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Real Stable](is-real-stable.md)
+- [Mixed Differential](../pderiv/mixed-differential.md)
+
+## Proof depends on
+
+- [Sub pderiv](sub-pderiv-2.md)
+- [Mixed Differential cons](../pderiv/mixed-differential-cons.md)
+- [Mixed Differential nil](../pderiv/mixed-differential-nil.md)
 
 ## Sources
 

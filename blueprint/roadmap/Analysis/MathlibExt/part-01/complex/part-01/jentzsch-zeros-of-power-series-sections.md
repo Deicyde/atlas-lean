@@ -26,6 +26,12 @@ Truncation convention: the nth partial sum `∑ k = 0 ^ n, a k * z ^ k` is
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Locally Uniformly Bounded On](normal-families/is-locally-uniformly-bounded-on.md)
+- [Is Locally Uniformly Bounded On of forall norm le](normal-families/is-locally-uniformly-bounded-on-of-foral.md)
+- [Montel](normal-families/montel.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.JentzschPowerSeries](../../../../../../sources/v2/MathlibExt.md)

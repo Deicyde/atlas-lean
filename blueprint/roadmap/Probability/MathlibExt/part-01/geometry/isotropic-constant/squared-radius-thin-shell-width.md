@@ -15,6 +15,11 @@ This is not the radius-fluctuation width used elsewhere in the catalogue.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Isotropic Log Concave](../thin-shell/is-isotropic-log-concave.md)
+- [Normalized Radius Variance](../thin-shell/normalized-radius-variance.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Geometry.IsotropicConstant](../../../../../../sources/v2/MathlibExt.md)

@@ -16,6 +16,10 @@ A trivial (subsingleton) group is word-hyperbolic, witnessed by the empty genera
 
 - [Is Hyperbolic](is-hyperbolic.md)
 
+## Proof depends on
+
+- [Is Delta Hyperbolic](../../../../Topology/MathlibExt/metric-space/gromov-hyperbolic/is-delta-hyperbolic.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.HyperbolicGroup](../../../../../sources/v2/MathlibExt.md)

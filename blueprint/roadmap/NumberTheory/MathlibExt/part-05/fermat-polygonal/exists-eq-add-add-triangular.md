@@ -13,11 +13,12 @@ Gauss's Eureka theorem: every natural number is a sum of three triangular number
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polygonal Number](../../part-09/polygonal-number/polygonal-number.md)
 
 ## Proof depends on
 
 - [Legendre Three Square](../../part-02/quadratic-forms/exists-three-squares-of-not-four-pow-mul.md)
+- [Polygonal Number three](../../part-09/polygonal-number/polygonal-number-three.md)
 
 ## Sources
 

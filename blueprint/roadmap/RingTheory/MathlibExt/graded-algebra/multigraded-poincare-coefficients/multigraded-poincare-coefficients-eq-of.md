@@ -17,6 +17,7 @@ functions to be equal.
 
 - [Multigraded Base Change](../multigraded-betti/multigraded-base-change.md)
 - [Multigraded Free Resolution](../multigraded-free-resolution/multigraded-free-resolution.md)
+- [Multigraded Polynomial Module](../multigraded-polynomial-module/multigraded-polynomial-module.md)
 - [Multigraded Resolution Comparison](../multigraded-betti-resolution-invariance/multigraded-resolution-comparison.md)
 - [Multigraded Poincare Coefficients](multigraded-poincare-coefficients.md)
 

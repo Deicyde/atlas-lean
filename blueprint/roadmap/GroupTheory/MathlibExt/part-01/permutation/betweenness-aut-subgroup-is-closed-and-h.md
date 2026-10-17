@@ -14,6 +14,8 @@ highly homogeneous (one orbit on `k`-sets for all `k`).
 
 ## Depends on
 
+- [Pointwise Topology](pointwise-topology.md)
+- [Is Highly Homogeneous](highly-homogeneous/is-highly-homogeneous.md)
 - [Betweenness Aut Subgroup](betweenness/betweenness-aut-subgroup.md)
 
 ## Proof depends on

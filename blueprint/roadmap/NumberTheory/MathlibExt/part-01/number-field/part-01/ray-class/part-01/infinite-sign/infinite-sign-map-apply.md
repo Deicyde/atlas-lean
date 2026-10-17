@@ -14,6 +14,7 @@ Pointwise evaluation of the joint sign map.
 ## Depends on
 
 - [Infinite Sign Map](infinite-sign-map.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
 - [Sign At Real Place](sign-at-real-place.md)
 
 ## Sources

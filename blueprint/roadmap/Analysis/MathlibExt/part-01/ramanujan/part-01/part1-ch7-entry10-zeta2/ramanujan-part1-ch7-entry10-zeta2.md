@@ -14,7 +14,11 @@ Proves `Wanted` entry `ramanujan_part1_ch7_entry10_zeta2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter7 Power Difference Term](../../part-02/part1-ch7-power-difference/chapter7-power-difference-term.md)
+
+## Proof depends on
+
+- [Riemann Zeta](../../../../../../NumberTheory/MathlibExt/part-01/lseries/meromorphic-on-riemann-zeta.md)
 
 ## Sources
 

@@ -15,6 +15,7 @@ Coercion of the ray-element image back to field units.
 
 - [Integral Units To Field Units](integral-units-to-field-units.md)
 - [Integral Units To Ray Elements](integral-units-to-ray-elements.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
 
 ## Sources
 

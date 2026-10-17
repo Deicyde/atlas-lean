@@ -13,6 +13,8 @@ lean: Cslib.Algorithms.Lean.AvlTree.ordered_deleteMin
 
 ## Depends on
 
+- [Ordered](../../../avl-tree-2/part-01/ordered.md)
+- [Tree](../../../avl-tree-2/part-01/tree.md)
 - [Delete Min](../part-01/delete-min.md)
 
 ## Proof depends on

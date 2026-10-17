@@ -12,7 +12,7 @@ Given $0 < t < 2$, $0 < s \leq 1$, there exist $\varepsilon, \eta > 0$ such that
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section: Sharp Projection Theorems I: Introduction and Beck's Theorem)](../sharp-projection-theorems-i-introduction-and-bec/097-definition.md)
 
 ## Sources
 

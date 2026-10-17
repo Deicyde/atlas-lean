@@ -13,6 +13,10 @@ For apartments $A$, $A'$ in a given apartment system with a chamber in common, t
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma (Section 4.1)](013-lemma.md)
+
 ## Sources
 
 - [Paul Garrett, Buildings and Classical Groups, Section 4.4](../../../../sources/v1/Buildings.md)

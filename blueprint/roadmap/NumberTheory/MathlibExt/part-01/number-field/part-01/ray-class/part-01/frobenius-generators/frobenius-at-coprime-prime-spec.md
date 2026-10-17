@@ -16,7 +16,9 @@ at a prime above `p` with finite residue field, and that prime is unramified
 
 ## Depends on
 
+- [Coprime Primes](../prime-generation/coprime-primes.md)
 - [Is Unramified Outside](is-unramified-outside.md)
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
 - [Frobenius At Coprime Prime](frobenius-at-coprime-prime.md)
 
 ## Sources

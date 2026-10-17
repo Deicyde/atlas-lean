@@ -19,6 +19,7 @@ $S\mathfrak{g}$ is a free $(S\mathfrak{g})^{\mathfrak{g}}$-module. Moreover, for
 - [Theorem 10.6 (Chevalley-Shephard-Todd theorem, part I)](../section-10/060-chevalley-shephard-todd-theorem-part-i.md)
 - [Theorem 12.2 (Chevalley-Shephard-Todd theorem, part II)](../section-12/066-chevalley-shephard-todd-theorem-part-ii.md)
 - [Lemma 12.3](../section-12/067-lemma-12-3.md)
+- [Lemma 13.2](076-lemma-13-2.md)
 
 ## Sources
 

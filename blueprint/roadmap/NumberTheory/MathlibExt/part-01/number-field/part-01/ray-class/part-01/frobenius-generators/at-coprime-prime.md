@@ -13,7 +13,9 @@ Elimination of `IsUnramifiedOutside` at a prime coprime to `m`.
 
 ## Depends on
 
+- [Coprime Primes](../prime-generation/coprime-primes.md)
 - [Is Unramified Outside](is-unramified-outside.md)
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
 
 ## Sources
 

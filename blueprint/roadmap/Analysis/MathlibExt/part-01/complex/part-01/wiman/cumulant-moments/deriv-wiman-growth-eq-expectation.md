@@ -15,6 +15,7 @@ coefficient distribution.
 ## Depends on
 
 - [Wiman Growth](../coefficient-exponential-family/wiman-growth.md)
+- [Wiman Taylor Coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
 - [Wiman Tilted Measure](../coefficient-exponential-family/wiman-tilted-measure.md)
 
 ## Proof depends on

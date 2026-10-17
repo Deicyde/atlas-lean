@@ -14,12 +14,15 @@ positive-radius circle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Maximum Modulus](../../part-02/wiman/wiman-maximum-modulus.md)
+- [Wiman Maximum Term](../../part-02/wiman/wiman-maximum-term.md)
 
 ## Proof depends on
 
 - [Maximum Modulus Attained](exists-mem-sphere-eq-wiman-maximum-modul.md)
 - [Wiman Maximum Term le iff](maximum-term-attained/wiman-maximum-term-le-iff.md)
+- [Wiman Taylor Coefficient](../../part-02/wiman/wiman-taylor-coefficient.md)
+- [Wiman Term](../../part-02/wiman/wiman-term.md)
 
 ## Sources
 

@@ -16,6 +16,7 @@ Assume $AKLB$ and let $\mathfrak{p}$ be a prime of $A$. For every $\alpha \in L$
 
 ## Proof depends on
 
+- [Theorem 13.5](../section-13/266-theorem-13-5.md)
 - [Lemma 4.49](../section-4/section-4-3/092-lemma-4-49.md)
 - [Theorem 11.23](237-theorem-11-23.md)
 

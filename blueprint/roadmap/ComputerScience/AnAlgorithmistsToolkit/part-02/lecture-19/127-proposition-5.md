@@ -13,7 +13,8 @@ A reduced basis for a $2$-dimensional lattice contains the first two successive 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lattice)](../lecture-18/130-lattice.md)
+- [Definition (Successive minima)](../lecture-18/140-successive-minima.md)
 
 ## Sources
 

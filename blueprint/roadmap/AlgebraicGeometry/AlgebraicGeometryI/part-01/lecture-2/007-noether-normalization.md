@@ -15,6 +15,10 @@ Given $A$ a finitely-generated $k$-algebra, there exist some algebraically indep
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 3](../lecture-3/021-lemma-3.md)
+
 ## Sources
 
 - [MIT 18.725 Algebraic Geometry (Fall 2015), Lecture 2](../../../../../sources/v1/AlgebraicGeometryI.md)

@@ -15,6 +15,10 @@ For the standard primal-dual pair (P) $\max\{c^\top x \mid Ax \leq b,\; x \geq 0
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem 4 (Strong duality)](../the-simplex-algorithm/035-strong-duality.md)
+
 ## Sources
 
 - [MIT 18.433 Combinatorial Optimization (Fall 2003), The Primal-dual Algorithm, Oct 28](../../../../sources/v1/CombinatorialOptimization.md)

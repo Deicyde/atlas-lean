@@ -18,6 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Definition (Ideal)](../../part-03/lecture-8/103-ideal.md)
+- [Lemma (\ref{noetherianhomomorphisms})](146-ref-noetherianhomomorphisms.md)
 
 ## Sources
 

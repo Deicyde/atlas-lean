@@ -19,6 +19,10 @@ domain-safe API.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ein](../../entire-exponential-integral/ein.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.ExponentialIntegral.E1](../../../../../../../../sources/v2/MathlibExt.md)

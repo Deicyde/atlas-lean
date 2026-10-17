@@ -14,6 +14,11 @@ Return the element at zero-based rank `k`, or `none` when `k` is out of range.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Three Way Partition](../../sort/partition/three-way-partition.md)
+- [Partition3](../../sort/partition/partition3.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Selection.Quickselect](../../../../../../sources/v2/CSLibExt.md)

@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Geometry.Manifold.SubmersionCompWanted._root_.Manifold.IsSubmersionAtOfComplement.exists_domChart_of_codChart
+lean: Manifold.IsSubmersionAtOfComplement.exists_domChart_of_codChart
 ---
 
 # Exists dom Chart of cod Chart

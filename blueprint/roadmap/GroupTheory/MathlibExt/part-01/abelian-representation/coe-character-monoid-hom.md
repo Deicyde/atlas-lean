@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.GroupTheory.AbelianRepresentationWanted._root_.FDRep.coe_characterMonoidHom
+lean: FDRep.coe_characterMonoidHom
 ---
 
 # Coe character Monoid Hom
@@ -13,7 +13,7 @@ The monoid homomorphism underlying `FDRep.characterMonoidHom` is the character.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Character Monoid Hom](character-monoid-hom.md)
 
 ## Sources
 

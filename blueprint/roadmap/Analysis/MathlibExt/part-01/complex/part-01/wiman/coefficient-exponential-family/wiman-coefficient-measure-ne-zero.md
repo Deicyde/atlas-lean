@@ -14,6 +14,7 @@ A nonzero Taylor coefficient gives nonzero mass to the coefficient measure.
 ## Depends on
 
 - [Wiman Coefficient Measure](wiman-coefficient-measure.md)
+- [Wiman Taylor Coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
 
 ## Proof depends on
 

@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Analysis.ODE.LinearSystemFundamentalMatrixWanted._root_.ODE.existsUnique_hasDerivAt_eq_continuousLinearMap
+lean: ODE.existsUnique_hasDerivAt_eq_continuousLinearMap
 ---
 
 # Exists Unique has Deriv At eq continuous Linear Map
@@ -15,6 +15,10 @@ has a unique global integral curve through every initial point.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Ode global exists of global lipschitz](../maximal-solution/ode-global-exists-of-global-lipschitz.md)
 
 ## Sources
 

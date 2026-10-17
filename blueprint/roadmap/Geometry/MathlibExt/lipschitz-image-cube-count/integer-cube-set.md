@@ -14,7 +14,7 @@ the half-open cube `[vᵢ, vᵢ + 1)` in every coordinate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit Cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
 
 ## Sources
 

@@ -15,6 +15,7 @@ all next/prev links and satellite payloads are unchanged.
 ## Depends on
 
 - [Circular Represents](../basic/circular-represents.md)
+- [Node](../../basic/node.md)
 - [List Search Sentinel](list-search-sentinel.md)
 
 ## Sources

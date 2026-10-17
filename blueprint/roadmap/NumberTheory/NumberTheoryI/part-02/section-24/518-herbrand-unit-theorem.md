@@ -15,6 +15,7 @@ Let $L / K$ be a Galois extension of number fields. Let $w_{1}, \ldots, w_{r+s}$
 
 ## Proof depends on
 
+- [Lemma 24.7](519-lemma-24-7.md)
 - [Theorem 13.21 (Product Formula)](../../part-01/section-13/278-product-formula.md)
 - [Theorem 15.12 (Dirichlet's Unit Theorem)](../../part-01/section-15/310-dirichlet-s-unit-theorem.md)
 - [Definition 24.4](516-definition-24-4.md)

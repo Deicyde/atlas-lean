@@ -11,7 +11,7 @@ Any submartingale $X_n$ can be written in a unique way as $X_n = M_n + A_n$ wher
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Martingale, supermartingale, submartingale)](../lecture-29/091-martingale-supermartingale-submartingale.md)
 
 ## Proof depends on
 

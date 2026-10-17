@@ -13,6 +13,7 @@ Lookup at any other key is unchanged by `setChild`.
 
 ## Depends on
 
+- [Trie](../../../part-03/trie/trie.md)
 - [Set Child](set-child.md)
 
 ## Proof depends on

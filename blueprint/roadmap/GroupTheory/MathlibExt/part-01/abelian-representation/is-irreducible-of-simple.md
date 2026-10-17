@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.GroupTheory.AbelianRepresentationWanted._root_.FDRep.isIrreducible_of_simple
+lean: FDRep.isIrreducible_of_simple
 ---
 
 # Is Irreducible of simple

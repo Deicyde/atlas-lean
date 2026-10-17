@@ -12,7 +12,7 @@ Two forms $\omega_{0}, \omega_{1}$ are deformation equivalent if $\exists (\omeg
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../lecture-2/011-definition-7.md)
 
 ## Sources
 

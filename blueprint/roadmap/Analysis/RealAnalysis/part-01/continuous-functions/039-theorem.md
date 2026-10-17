@@ -13,7 +13,8 @@ If $f:[a,b]\to \mathbb{R}$ is continuous then $f$ is bounded.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Continuous Functions) (1)](043-continuous-functions.md)
+- [Definition (Bounded Functions) (Continuous Functions) (1)](044-bounded-functions.md)
 
 ## Proof depends on
 

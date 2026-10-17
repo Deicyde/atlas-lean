@@ -15,6 +15,11 @@ If $K/k$ is a field extension, and $K$ is a finitely generated $k$-algebra, then
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 1 (Noether Normalization)](../lecture-2/007-noether-normalization.md)
+- [Lemma 4 (Nakayama lemma)](../lecture-3/023-nakayama-lemma.md)
+
 ## Sources
 
 - [MIT 18.725 Algebraic Geometry (Fall 2015), Lecture 1](../../../../../sources/v1/AlgebraicGeometryI.md)

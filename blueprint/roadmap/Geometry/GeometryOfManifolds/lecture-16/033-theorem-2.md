@@ -12,6 +12,7 @@ $L$ elliptic $\Longrightarrow L_{s}$ is Fredholm, i.e.\ $\operatorname{Ker} L_{s
 ## Depends on
 
 - [Definition 7](../lecture-2/011-definition-7.md)
+- [Definition 5 (Lecture 15, Section 1, Hodge Theory)](../lecture-15/043-definition-5.md)
 
 ## Proof depends on
 

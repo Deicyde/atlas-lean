@@ -17,6 +17,7 @@ The normalized radial majorant is nonnegative.
 
 ## Proof depends on
 
+- [Wiman Term](../../../part-02/wiman/wiman-term.md)
 - [Wiman Term nonneg](wiman-term-nonneg.md)
 
 ## Sources

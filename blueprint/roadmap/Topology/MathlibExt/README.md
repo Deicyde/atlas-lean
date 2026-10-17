@@ -11,6 +11,7 @@ Reusable, fully proved extensions to Mathlib.
 - [Continuum](continuum/README.md)
 - [Descriptive Set Theory](descriptive-set-theory/README.md)
 - [Homotopy](homotopy/README.md)
+- [Knot](knot/README.md)
 - [Metric Space](metric-space/README.md)
 - [Countably Monolithic](countably-monolithic/README.md)
 - [Homogeneous Space](homogeneous-space.md)

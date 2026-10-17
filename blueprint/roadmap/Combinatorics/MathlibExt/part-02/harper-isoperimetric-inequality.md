@@ -33,7 +33,13 @@ Report entry (lines 3800--3826):
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Ball](../../../InformationTheory/MathlibExt/hamming-expansion/is-ball.md)
+- [Expansion](../../../InformationTheory/MathlibExt/hamming-expansion/expansion.md)
+
+## Proof depends on
+
+- [Ball](../../../InformationTheory/MathlibExt/hamming-ball/ball.md)
+- [Card ball](../../../InformationTheory/MathlibExt/hamming-ball/card-ball.md)
 
 ## Sources
 

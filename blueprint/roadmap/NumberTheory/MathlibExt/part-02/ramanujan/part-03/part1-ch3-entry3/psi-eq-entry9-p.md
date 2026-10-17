@@ -14,7 +14,7 @@ complex division by zero is already zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Entry9 P](../../part-04/part1-ch3-entry9-odd/entry9-p.md)
 
 ## Sources
 

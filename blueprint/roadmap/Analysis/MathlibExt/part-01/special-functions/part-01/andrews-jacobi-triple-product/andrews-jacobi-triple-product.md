@@ -20,6 +20,10 @@ zero factor while the series side does not vanish).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Jacobi Triple Product](../../part-02/jacobi-triple-product.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.AndrewsJacobiTripleProduct](../../../../../../../sources/v2/MathlibExt.md)

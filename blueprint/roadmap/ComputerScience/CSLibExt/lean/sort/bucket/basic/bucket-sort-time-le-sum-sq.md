@@ -18,6 +18,8 @@ Squared actual bucket occupancies bound the cost for arbitrary valid arrays.
 ## Proof depends on
 
 - [Bucket Sort time](bucket-sort-time.md)
+- [Insertion Sort](../../insertion-cost/insertion-sort.md)
+- [Insertion Sort time](../../insertion-cost/insertion-sort-time.md)
 
 ## Sources
 

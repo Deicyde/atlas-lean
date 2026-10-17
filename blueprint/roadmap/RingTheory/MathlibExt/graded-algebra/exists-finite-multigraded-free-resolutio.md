@@ -24,11 +24,14 @@ dimension shifting, and Hilbert's syzygy theorem.
 ## Depends on
 
 - [Multigraded Free Resolution](multigraded-free-resolution/multigraded-free-resolution.md)
+- [Multigraded Polynomial Module](multigraded-polynomial-module/multigraded-polynomial-module.md)
 
 ## Proof depends on
 
+- [Hilbert Syzygy](../polynomial/hilbert-syzygy.md)
 - [Is Degree Zero](multigraded-free-resolution/is-degree-zero.md)
 - [Multigraded Free Module](multigraded-free-resolution/multigraded-free-module.md)
+- [Nat Degree To Int](multigraded-polynomial-module/nat-degree-to-int.md)
 
 ## Sources
 

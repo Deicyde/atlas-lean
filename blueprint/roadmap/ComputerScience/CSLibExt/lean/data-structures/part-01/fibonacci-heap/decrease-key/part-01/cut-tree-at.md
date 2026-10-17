@@ -14,7 +14,7 @@ remainder (or removed when the whole tree was extracted).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Tree](../../../../part-02/fibonacci-heap/part-01/fibonacci-tree.md)
 
 ## Proof depends on
 

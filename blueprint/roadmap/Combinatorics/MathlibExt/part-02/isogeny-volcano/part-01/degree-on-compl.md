@@ -2,9 +2,6 @@
 article_id: af_22085dc206b2710f56ea5245
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
-lean: Multigraph.degreeOn_compl
 ---
 
 # Degree On compl

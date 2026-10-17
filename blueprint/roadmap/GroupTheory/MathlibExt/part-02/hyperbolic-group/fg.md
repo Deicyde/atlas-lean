@@ -15,6 +15,10 @@ A word-hyperbolic group is finitely generated.
 
 - [Is Hyperbolic](is-hyperbolic.md)
 
+## Proof depends on
+
+- [Is Delta Hyperbolic](../../../../Topology/MathlibExt/metric-space/gromov-hyperbolic/is-delta-hyperbolic.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.HyperbolicGroup](../../../../../sources/v2/MathlibExt.md)

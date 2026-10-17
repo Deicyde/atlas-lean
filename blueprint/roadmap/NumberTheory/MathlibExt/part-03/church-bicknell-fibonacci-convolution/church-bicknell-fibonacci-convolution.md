@@ -13,7 +13,7 @@ Church–Bicknell Fibonacci binomial convolution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Number](../../part-07/lucas-sequence/lucas-number.md)
 
 ## Proof depends on
 

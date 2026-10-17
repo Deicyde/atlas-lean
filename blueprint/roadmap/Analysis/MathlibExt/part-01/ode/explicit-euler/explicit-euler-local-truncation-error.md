@@ -19,6 +19,10 @@ interval, and apply the mean value inequality twice.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists explicit Euler local Truncation Error le](exists-explicit-euler-local-truncation-e.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.ODE.ExplicitEuler](../../../../../../sources/v2/MathlibExt.md)

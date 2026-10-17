@@ -13,7 +13,9 @@ Looking up a deleted key fails.
 
 ## Depends on
 
+- [Trie](../../../part-03/trie/trie.md)
 - [Delete](delete.md)
+- [Lookup](../../../part-03/trie/lookup.md)
 
 ## Proof depends on
 

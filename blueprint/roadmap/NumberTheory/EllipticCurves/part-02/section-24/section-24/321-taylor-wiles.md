@@ -12,7 +12,11 @@ Every semistable elliptic curve $E / \mathbb{Q}$ is modular.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 24.32](../section-24-8/344-definition-24-32.md)
+
+## Proof depends on
+
+- [Theorem 25.8 (Wiles)](../../section-25/359-wiles.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ $c_{1}^{2} \cdot [M] = 2\chi(M) + 3\sigma(M)$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2 (Symplectic Geometry, Lecture 10, Section 2 (Complex Vector Bundles and Chern Classes))](../symplectic-geometry-lecture-10-section-2-complex/023-definition-2.md)
 
 ## Proof depends on
 

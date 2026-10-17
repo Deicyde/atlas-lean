@@ -13,6 +13,8 @@ Deletion, under the name `delete`, preserves the ordering invariant.
 
 ## Depends on
 
+- [Ordered](../../../avl-tree-2/part-01/ordered.md)
+- [Tree](../../../avl-tree-2/part-01/tree.md)
 - [Delete](../part-01/delete.md)
 
 ## Proof depends on

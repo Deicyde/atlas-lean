@@ -11,7 +11,7 @@ Let $X \hookrightarrow M$ be a submanifold, $\omega_{0}, \omega_{1}$ symplectic 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../lecture-2/011-definition-7.md)
 
 ## Proof depends on
 

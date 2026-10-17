@@ -18,6 +18,7 @@ The linear-time inorder traversal of a tree, inherited from
 ## Proof depends on
 
 - [To Binary Tree](to-binary-tree.md)
+- [Inorder](../../../part-02/binary-search-tree/part-01/inorder.md)
 
 ## Sources
 

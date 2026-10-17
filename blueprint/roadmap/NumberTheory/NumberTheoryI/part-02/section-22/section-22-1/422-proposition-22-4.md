@@ -17,6 +17,7 @@ Let $K$ be a number field. The relation $(\mathcal{C}_{1}, \mathfrak{m}_{1}) \si
 
 ## Proof depends on
 
+- [Proposition 22.6](424-proposition-22-6.md)
 - [Theorem 8.5 (Weak Approximation)](../../../part-01/section-8/176-weak-approximation.md)
 - [Lemma 21.7](../../section-21/406-lemma-21-7.md)
 

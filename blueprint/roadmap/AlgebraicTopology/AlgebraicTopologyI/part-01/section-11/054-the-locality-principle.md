@@ -20,7 +20,10 @@ The inclusion $S_{*}^{\mathcal{A}}(X) \subseteq S_{*}(X)$ induces an isomorphism
 - [Definition 11.3](053-definition-11-3.md)
 - [Definition 1.3](../chapter-1/chapter-1-section-1/003-definition-1-3.md)
 - [Definition 1.2](../chapter-1/chapter-1-section-1/002-definition-1-2.md)
+- [Lemma 13.2](../section-13/059-lemma-13-2.md)
 - [Definition 1.4](../chapter-1/chapter-1-section-1/004-definition-1-4.md)
+- [Proposition 12.1](../section-12/057-proposition-12-1.md)
+- [Lemma 13.4](../section-13/061-lemma-13-4.md)
 
 ## Sources
 

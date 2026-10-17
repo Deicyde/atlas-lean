@@ -13,6 +13,7 @@ Pointwise evaluation of the coprime ideal-class map.
 
 ## Depends on
 
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 - [Coprime Ideal Class Map](coprime-ideal-class-map.md)
 
 ## Sources

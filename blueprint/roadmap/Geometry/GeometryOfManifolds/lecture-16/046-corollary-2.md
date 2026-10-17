@@ -12,7 +12,9 @@ $\exists G \colon \Omega^{k} \rightarrow \Omega^{k}$ and $H \colon \Omega^{k} \r
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2 (Lecture 15, Section 1, Hodge Theory)](../lecture-15/035-definition-2.md)
+- [Definition 3 (Lecture 15, Section 1, Hodge Theory)](../lecture-15/036-definition-3.md)
+- [Definition 4 (Lecture 15, Section 1, Hodge Theory)](../lecture-15/042-definition-4.md)
 
 ## Proof depends on
 

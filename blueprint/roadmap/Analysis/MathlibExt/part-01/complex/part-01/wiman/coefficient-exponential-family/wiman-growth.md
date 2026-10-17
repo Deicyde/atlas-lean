@@ -14,6 +14,10 @@ The logarithm of the radial Taylor majorant at logarithmic radius `x`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Wiman Majorant](../radial-majorant/wiman-majorant.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.Wiman.CoefficientExponentialFamily](../../../../../../../../sources/v2/MathlibExt.md)

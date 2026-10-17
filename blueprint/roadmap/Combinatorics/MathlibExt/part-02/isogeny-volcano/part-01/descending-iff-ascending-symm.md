@@ -2,9 +2,6 @@
 article_id: af_36974420aff71d286f97a448
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
-lean: IsogenyVolcano.descending_iff_ascending_symm
 ---
 
 # Descending iff ascending symm

@@ -15,6 +15,10 @@ If $V$ is Euclidean or Hermitian, then there exists an orthonormal basis $\{v_1,
 
 - [Definition (Section: Fields and Vector Spaces, Bases and Dimension subsection)](../../part-01/fields-and-vector-spaces/014-definition.md)
 
+## Proof depends on
+
+- [Corollary (Section: The Projection Formula, Subsection: Orthogonal Bases)](../the-projection-formula/063-corollary.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Section: Euclidean and Hermitian Spaces, Subsection: Euclidean and Hermitian Spaces](../../../../../sources/v1/AlgebraNotes.md)

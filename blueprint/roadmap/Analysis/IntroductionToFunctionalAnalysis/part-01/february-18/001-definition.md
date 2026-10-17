@@ -14,6 +14,10 @@ Let $V$ be a normed vector space (over $\mathbb{K}$). Then $V' = \mathcal{B}(V, 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (February 18, 2021)](003-theorem.md)
+
 ## Sources
 
 - [MIT 18.102 Introduction to Functional Analysis (Spring 2021), February 18, 2021](../../../../../sources/v1/IntroductionToFunctionalAnalysis.md)

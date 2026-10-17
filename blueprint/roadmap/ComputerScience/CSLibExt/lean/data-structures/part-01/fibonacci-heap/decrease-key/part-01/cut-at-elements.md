@@ -14,7 +14,9 @@ subtree.
 
 ## Depends on
 
+- [Fibonacci Tree](../../../../part-02/fibonacci-heap/part-01/fibonacci-tree.md)
 - [Cut At](cut-at.md)
+- [Elements](../../../../part-02/fibonacci-heap/part-01/elements.md)
 
 ## Proof depends on
 

@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MetaMathlibExt._root_.HasStrictFDerivAt.exists_levelSet_curve
+lean: HasStrictFDerivAt.exists_levelSet_curve
 ---
 
 # Exists level Set curve

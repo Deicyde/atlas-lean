@@ -18,6 +18,7 @@ Let $V$ be a normed vector space, and let $M \subset V$ be a subspace. If $u: M 
 ## Proof depends on
 
 - [Proposition (Zorn's lemma)](../february-25/012-zorn-s-lemma.md)
+- [Lemma (March 2, 2021 lecture)](014-lemma.md)
 
 ## Sources
 

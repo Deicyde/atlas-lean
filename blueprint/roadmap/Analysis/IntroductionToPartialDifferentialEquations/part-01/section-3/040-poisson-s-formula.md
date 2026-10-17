@@ -16,6 +16,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Theorem 2.2 (Representation formula for solutions to the boundary value Poisson equation)](../section-2/039-representation-formula-for-solutions-to.md)
+- [Lemma 2.0.1](../class-meeting-9/043-lemma-2-0-1.md)
 
 ## Sources
 

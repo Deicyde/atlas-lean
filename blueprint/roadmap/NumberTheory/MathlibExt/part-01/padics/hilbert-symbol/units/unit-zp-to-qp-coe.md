@@ -2,9 +2,6 @@
 article_id: af_e960be995e422093ca04f488
 declaration: lemma
 origin: cited
-statement: formalized
-proof: formalized
-lean: HilbertSymbol.unitZpToQp_coe
 ---
 
 # Unit Zp To Qp coe

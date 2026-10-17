@@ -28,6 +28,10 @@ Telescoping its Bernoulli-polynomial expansion yields both all-orders formulas.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tendsto pow mul log catalan sub bernoulli sum](tendsto-pow-mul-log-catalan-sub-bernoull.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Asymptotics.CatalanAsymptoticExpansion](../../../../../../sources/v2/MathlibExt.md)

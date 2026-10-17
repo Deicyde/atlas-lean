@@ -22,6 +22,8 @@ inherited from `BinarySearchTree` through `toBinaryTree`.
 ## Proof depends on
 
 - [To Binary Tree](../part-01/to-binary-tree.md)
+- [Contains](../../../part-02/binary-search-tree/part-01/contains.md)
+- [Contains eq true iff](../../../part-02/binary-search-tree/part-01/contains-eq-true-iff.md)
 
 ## Sources
 

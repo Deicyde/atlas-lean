@@ -15,6 +15,10 @@ An accepted certificate has the exact fixed-word size and is no longer than the 
 
 - [Basic](../verify-hamiltonian-cycle.md)
 
+## Proof depends on
+
+- [Verify Hamiltonian Cycle iff](../correctness/verify-hamiltonian-cycle-iff.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Graph.HamiltonianCycle.Bounds](../../../../../../../sources/v2/CSLibExt.md)

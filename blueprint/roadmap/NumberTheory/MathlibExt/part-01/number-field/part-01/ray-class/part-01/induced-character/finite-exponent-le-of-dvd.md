@@ -13,7 +13,7 @@ Finite exponents are monotone under modulus divisibility.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Exponent](../../part-02/ray-group/finite-exponent.md)
 
 ## Sources
 

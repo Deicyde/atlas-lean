@@ -17,6 +17,7 @@ cache-erased tree, by definition.
 - [Mem](mem.md)
 - [Tree](tree.md)
 - [To Binary Tree](to-binary-tree.md)
+- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
 
 ## Sources
 

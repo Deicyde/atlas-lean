@@ -1,9 +1,7 @@
 ---
 article_id: af_3c83bd6ff04a6196a723bb81
-declaration: class
+declaration: def
 origin: cited
-statement: formalized
-lean: HilbertSpace.IsHilbertSpace
 ---
 
 # Definition 5.1

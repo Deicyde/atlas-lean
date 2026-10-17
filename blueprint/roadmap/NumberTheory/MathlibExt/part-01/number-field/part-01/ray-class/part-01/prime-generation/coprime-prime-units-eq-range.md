@@ -15,7 +15,10 @@ the direct native counterpart of ATLAS `primesCoprime_eq_range`.
 ## Depends on
 
 - [Coprime Primes](coprime-primes.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 - [Coprime Prime Units](coprime-prime-units.md)
+- [Finite Supported](../../part-02/ray-group/finite-supported.md)
+- [Prime Coprime Unit](../prime-generators/prime-coprime-unit.md)
 
 ## Proof depends on
 

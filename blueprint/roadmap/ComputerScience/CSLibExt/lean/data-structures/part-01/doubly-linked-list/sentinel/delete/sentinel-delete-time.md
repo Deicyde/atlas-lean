@@ -13,6 +13,7 @@ Exactly two pointer assignments, including access-valid alias cases.
 
 ## Depends on
 
+- [Node](../../basic/node.md)
 - [Sentinel Delete](sentinel-delete.md)
 
 ## Sources

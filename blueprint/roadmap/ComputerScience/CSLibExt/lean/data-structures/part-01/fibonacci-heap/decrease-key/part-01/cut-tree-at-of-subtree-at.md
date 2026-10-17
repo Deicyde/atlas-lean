@@ -15,6 +15,7 @@ be cut out of the forest.
 ## Depends on
 
 - [Cut Tree At](cut-tree-at.md)
+- [Fibonacci Tree](../../../../part-02/fibonacci-heap/part-01/fibonacci-tree.md)
 - [Subtree At](subtree-at.md)
 
 ## Proof depends on

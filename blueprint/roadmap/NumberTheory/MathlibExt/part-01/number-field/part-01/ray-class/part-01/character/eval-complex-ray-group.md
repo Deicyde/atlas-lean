@@ -14,7 +14,11 @@ Evaluation is `1` on the image of the ray group.
 ## Depends on
 
 - [Ray Class Character](ray-class-character.md)
+- [Ray Class Group](../group/ray-class-group.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 - [Eval Complex](eval-complex.md)
+- [Ray Class Map](../group/ray-class-map.md)
+- [Ray Group](../../part-02/ray-group/ray-group.md)
 
 ## Sources
 

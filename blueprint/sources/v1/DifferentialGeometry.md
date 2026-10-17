@@ -12,12 +12,9 @@ ATLAS v1 selected 147 statements from this source in
 matched to each in [`report.json`](https://github.com/facebookresearch/atlas-lean/blob/main/v1/Atlas/DifferentialGeometry/report.json). Each roadmap article
 reproduces one target's statement and the source location it names.
 
-128 roadmap edges come from the source text rather than
+130 roadmap edges come from the source text rather than
 the Lean code; each is recorded with its evidence in
 [`book-dependencies/DifferentialGeometry.json`](book-dependencies/DifferentialGeometry.json).
-
-8 dependencies point to a statement placed later in this
-wiki and are not drawn as roadmap edges, which keeps every chapter acyclic.
 
 ## Targets without a linked Lean declaration
 

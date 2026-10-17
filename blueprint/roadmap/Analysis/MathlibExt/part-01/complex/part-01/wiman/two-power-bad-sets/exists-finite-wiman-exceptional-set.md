@@ -14,6 +14,7 @@ is controlled by the composed exponent `(9 / 8) ^ 2 = 81 / 64`.
 
 ## Depends on
 
+- [Is Transcendental](../../../part-02/wiman/is-transcendental.md)
 - [Wiman Exceptional Set](wiman-exceptional-set.md)
 - [Wiman Growth](../coefficient-exponential-family/wiman-growth.md)
 

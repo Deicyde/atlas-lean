@@ -18,6 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Smul coe Ideal](group-action/smul-coe-ideal.md)
+- [Group Action](../spectrum/prime/smul-as-ideal.md)
 
 ## Sources
 

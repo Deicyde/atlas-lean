@@ -17,7 +17,12 @@ the CLRS 18.3 algorithm.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](../../btree-2/part-01/btree.md)
+
+## Proof depends on
+
+- [Flatten](../../btree-2/part-01/flatten.md)
+- [From List](../../btree-2/part-02/from-list.md)
 
 ## Sources
 

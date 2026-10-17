@@ -2,8 +2,6 @@
 article_id: af_74f7d2adbd9cf77a14ae4aca
 declaration: def
 origin: cited
-statement: formalized
-lean: NewtonPolygon.newtonPolygonBoundary
 ---
 
 # Newton Polygon Boundary

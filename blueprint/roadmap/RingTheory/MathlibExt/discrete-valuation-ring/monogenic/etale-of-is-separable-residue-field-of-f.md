@@ -17,6 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Etale iff exists adjoin eq top and separable map minpoly](../../local-ring/etale/etale-iff-exists-adjoin-eq-top-and-separ.md)
 - [Exists adjoin eq top of separable residue Field](exists-adjoin-eq-top-of-separable-residu.md)
 
 ## Sources

@@ -14,12 +14,12 @@ Insert all priorities from a forest into a fresh binary heap.
 
 - [Huffman Priority](../part-02/huffman-priority.md)
 - [Huffman Work Item](../part-02/huffman-work-item.md)
-- [Min Heap](../../../data-structures/part-01/binary-heap-2/part-02/min-heap.md)
+- [Min Heap](../../../data-structures/part-02/binary-heap/part-02/min-heap.md)
 
 ## Proof depends on
 
-- [Empty](../../../data-structures/part-01/binary-heap-2/part-02/empty.md)
-- [Push](../../../data-structures/part-01/binary-heap-2/part-02/push.md)
+- [Empty](../../../data-structures/part-02/binary-heap/part-02/empty.md)
+- [Push](../../../data-structures/part-02/binary-heap/part-02/push.md)
 
 ## Sources
 

@@ -28,6 +28,8 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Banach Limit](banach-limit.md)
+- [Has Uniform L1 Lower Bound](../part-02/rosenthal-l1/has-uniform-l1-lower-bound.md)
+- [Rosenthal l1](../part-02/rosenthal-l1/rosenthal-l1.md)
 
 ## Sources
 

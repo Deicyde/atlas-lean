@@ -13,7 +13,13 @@ $\Delta_{C} = J^{-1}\Delta J = d_{C}d_{C}^{*} + d_{C}^{*}d_{C} = \Delta$.
 
 ## Depends on
 
+- [Definition 2 (Lecture 15, Section 1, Hodge Theory)](../lecture-15/035-definition-2.md)
 - [Definition 7](../lecture-2/011-definition-7.md)
+- [Definition 3 (Lecture 15, Section 1, Hodge Theory)](../lecture-15/036-definition-3.md)
+
+## Proof depends on
+
+- [Lemma 1 (Lecture 16)](049-lemma-1.md)
 
 ## Sources
 

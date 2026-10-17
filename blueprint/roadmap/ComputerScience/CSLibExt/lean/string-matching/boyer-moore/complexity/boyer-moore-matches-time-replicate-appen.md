@@ -14,7 +14,13 @@ per attempt and pattern-length shifts. Costs are the documented selected events.
 
 ## Depends on
 
+- [Preprocess](../preprocessing/preprocess.md)
 - [Boyer Moore Matches](../basic/boyer-moore-matches.md)
+
+## Proof depends on
+
+- [Preprocess bad Character](../preprocessing/preprocess-bad-character.md)
+- [Preprocess good Suffix](../preprocessing/preprocess-good-suffix.md)
 
 ## Sources
 

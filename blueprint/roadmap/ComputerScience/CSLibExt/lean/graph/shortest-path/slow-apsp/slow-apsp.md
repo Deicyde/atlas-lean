@@ -15,6 +15,12 @@ Accumulator vector updates in `matrixAccumulate` are outside these assignment ch
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Copy Cells](../../../matrix/assignments/copy-cells.md)
+- [Fill Cells](../../../matrix/assignments/fill-cells.md)
+- [Matrix Accumulate](../../../matrix/multiply/matrix-accumulate.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Graph.ShortestPath.SlowAPSP](../../../../../../../sources/v2/CSLibExt.md)

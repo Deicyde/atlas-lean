@@ -13,6 +13,8 @@ The tilted measure has the atomic mass representation of normalized Taylor terms
 
 ## Depends on
 
+- [Wiman Majorant](../radial-majorant/wiman-majorant.md)
+- [Wiman Term](../../../part-02/wiman/wiman-term.md)
 - [Wiman Tilted Measure](wiman-tilted-measure.md)
 
 ## Proof depends on

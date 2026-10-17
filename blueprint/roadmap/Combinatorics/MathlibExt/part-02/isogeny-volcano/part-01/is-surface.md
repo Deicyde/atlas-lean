@@ -2,8 +2,6 @@
 article_id: af_30156d6c10b964b4d8f30ef2
 declaration: def
 origin: cited
-statement: formalized
-lean: IsogenyVolcano.isSurface
 ---
 
 # Is Surface

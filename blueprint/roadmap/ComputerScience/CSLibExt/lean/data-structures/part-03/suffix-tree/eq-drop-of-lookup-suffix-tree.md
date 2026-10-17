@@ -13,13 +13,13 @@ Everything found by lookup in the suffix tree is a terminated suffix.
 
 ## Depends on
 
-- [Lookup](../../part-02/radix-trie/part-01/lookup.md)
+- [Lookup](../radix-trie/part-01/lookup.md)
 - [Suffix Tree](suffix-tree.md)
 - [Terminated](terminated.md)
 
 ## Proof depends on
 
-- [Mem of lookup build From](../../part-02/radix-trie/part-02/mem-of-lookup-build-from.md)
+- [Mem of lookup build From](../radix-trie/part-02/mem-of-lookup-build-from.md)
 - [Suffix Entries](suffix-entries.md)
 
 ## Sources

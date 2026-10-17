@@ -2,7 +2,7 @@
 article_id: af_0831816659da0baffa7c8916
 ---
 
-# Coloring to Domination
+# Coloring to Dirac
 
 - [Coloring](coloring/README.md)
 - [Balanced](is-balanced.md)
@@ -20,7 +20,7 @@ article_id: af_0831816659da0baffa7c8916
 - [Contraction](contraction/README.md)
 - [Cycle Cover](cycle-cover/README.md)
 - [Degeneracy](degeneracy/README.md)
+- [Degeneracy Coloring](degeneracy-coloring/README.md)
 - [Deza](deza/README.md)
 - [Dichromatic](dichromatic/README.md)
 - [Dirac](dirac.md)
-- [Domination](domination/README.md)

@@ -16,9 +16,11 @@ Let $\{x_n\}$ be a bounded sequence. Then, $\{x_n\}$ converges if and only if $\
 - [Definition (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/017-definition.md)
 - [Definition (Sequence of Reals) (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/021-sequence-of-reals.md)
 - [Definition (Sequence Convergence of Reals) (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/022-sequence-convergence-of-reals.md)
+- [Definition (Limsup/Liminf) (Limsup/Liminf section)](028-limsup-liminf.md)
 
 ## Proof depends on
 
+- [Theorem (Squeeze Theorem) (Lecture 8, Facts About Limits)](../lecture-8/026-squeeze-theorem.md)
 - [Theorem (Convergent Sequences of the Real Numbers section) (2)](../convergent-sequences-of-the-real-numbers/164-theorem.md)
 
 ## Sources

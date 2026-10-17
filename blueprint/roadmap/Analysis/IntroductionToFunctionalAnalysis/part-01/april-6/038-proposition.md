@@ -12,7 +12,8 @@ Let $a < b$ and $1 \leq p < \infty$ so that $f \in L^p([a, b])$, and take some $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition ($L^p$ norm and $L^\infty$ norm)](043-l-p-norm-and-l-infty-norm.md)
+- [Definition ($L^p$ space)](045-l-p-space.md)
 
 ## Sources
 

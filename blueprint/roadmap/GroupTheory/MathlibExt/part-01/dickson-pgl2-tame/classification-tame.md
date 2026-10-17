@@ -21,6 +21,10 @@ of the resulting orbit signatures.
 - [K](k.md)
 - [PGL](pgl.md)
 
+## Proof depends on
+
+- [Uniform Fixed Points](../group-action/card-add-mul-card-sub-one-eq-card-orbits.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.DicksonPGL2Tame](../../../../../sources/v2/MathlibExt.md)

@@ -13,13 +13,21 @@ The `n = 2` outer-sector specialization of DLMF 6.12.1 and its remainder bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E1 Asymptotic Remainder](../e1-2/e1-asymptotic-remainder.md)
+- [E1 Asymptotic Term](../e1-2/e1-asymptotic-term.md)
 
 ## Proof depends on
 
+- [Differentiable ein](../../entire-exponential-integral/differentiable-ein.md)
+- [E1 Asymptotic Partial](../e1-2/e1-asymptotic-partial.md)
+- [Ein](../../entire-exponential-integral/ein.md)
+- [Ein Term](../../entire-exponential-integral/ein-term.md)
 - [Integrable On exp neg mul pow](basic/integrable-on-exp-neg-mul-pow.md)
 - [Integral exp neg mul pow Ioi](basic/integral-exp-neg-mul-pow-ioi.md)
 - [Integral remainder bound](basic/integral-remainder-bound.md)
+- [Mul deriv ein](../../entire-exponential-integral/mul-deriv-ein.md)
+- [Principal Exponential Integral E1](../e1-2/principal-exponential-integral-e1.md)
+- [Principal Exponential Integral E1 Raw](../e1-2/principal-exponential-integral-e1-raw.md)
 - [Two term kernel identity](basic/two-term-kernel-identity.md)
 
 ## Sources

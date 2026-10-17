@@ -14,6 +14,7 @@ The carrier finset of a class is the conjugacy class of its representative.
 ## Depends on
 
 - [Class Rep](class-rep.md)
+- [Conj Class](../../burnside-paqb-reduction/conj-class.md)
 
 ## Sources
 

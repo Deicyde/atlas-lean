@@ -11,7 +11,12 @@ If $b_1, \ldots, b_n$ is a reduced basis, then $\|b_1\| \leq 2^{\frac{n-1}{2}} \
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 6 (Reduced bases)](../../part-02/lecture-19/128-reduced-bases.md)
+- [Definition (Successive minima)](../../part-02/lecture-18/140-successive-minima.md)
+
+## Proof depends on
+
+- [Lemma 4 (Lecture 19, Section 4.1)](../../part-02/lecture-19/126-lemma-4.md)
 
 ## Sources
 

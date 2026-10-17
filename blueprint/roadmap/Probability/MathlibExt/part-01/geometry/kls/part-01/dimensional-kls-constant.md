@@ -17,6 +17,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Inverse Cheeger Constant](inverse-cheeger-constant.md)
+- [Is Isotropic Log Concave](../../thin-shell/is-isotropic-log-concave.md)
 
 ## Sources
 

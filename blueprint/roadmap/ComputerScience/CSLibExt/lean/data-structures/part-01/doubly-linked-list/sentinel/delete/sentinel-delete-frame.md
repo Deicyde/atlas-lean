@@ -13,10 +13,14 @@ Every complete cell outside the two updated neighbors is unchanged.
 
 ## Depends on
 
+- [Node](../../basic/node.md)
 - [Sentinel Delete](sentinel-delete.md)
 
 ## Proof depends on
 
+- [List Delete](../../delete/list-delete.md)
+- [List Delete frame](../../delete/list-delete-frame.md)
+- [List Delete ret](../../delete/list-delete-ret.md)
 - [Sentinel Delete ret](sentinel-delete-ret.md)
 
 ## Sources

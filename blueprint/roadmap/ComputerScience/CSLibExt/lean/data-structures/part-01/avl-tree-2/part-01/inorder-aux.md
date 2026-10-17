@@ -18,6 +18,7 @@ time; inherited from `BinarySearchTree` through `toBinaryTree`.
 ## Proof depends on
 
 - [To Binary Tree](to-binary-tree.md)
+- [Inorder Aux](../../../part-02/binary-search-tree/part-01/inorder-aux.md)
 
 ## Sources
 

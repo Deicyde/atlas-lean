@@ -13,6 +13,10 @@ Let $X$ be a set of points in $\mathbb{R}^2$ and $L$ a set of lines in $\mathbb{
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma (Cell decomposition lemma)](../proof-of-the-szemeredi-trotter-theorem/048-cell-decomposition-lemma.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section 'The Szemeredi-Trotter theorem'](../../../../../sources/v1/ProjectionTheory.md)

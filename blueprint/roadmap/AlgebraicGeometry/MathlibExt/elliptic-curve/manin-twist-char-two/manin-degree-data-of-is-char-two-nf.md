@@ -22,6 +22,7 @@ Manin's degree computation in either characteristic-two normal form.
 - [Projective first nat Degree](../manin-projective-degree/projective-first-nat-degree.md)
 - [Manin degree data of card eq four](manin-degree-data-of-card-eq-four.md)
 - [Manin degree data of card eq two](manin-degree-data-of-card-eq-two.md)
+- [Nat Card point eq nat Card affine Solutions add one](../point-count/nat-card-point-eq-nat-card-affine-soluti.md)
 
 ## Sources
 

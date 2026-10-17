@@ -15,6 +15,10 @@ If $H$ is an infinite-dimensional separable Hilbert space, then $H$ is isometric
 
 - [Definition (April 8, 2021 section)](../april-8/039-definition.md)
 
+## Proof depends on
+
+- [Theorem (Parseval's identity)](055-parseval-s-identity.md)
+
 ## Sources
 
 - [MIT 18.102 Introduction to Functional Analysis (Spring 2021), April 13, 2021](../../../../../sources/v1/IntroductionToFunctionalAnalysis.md)

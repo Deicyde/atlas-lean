@@ -15,6 +15,10 @@ Let $x_1, \ldots, x_N$ be independent random variables. Let $B_1, \ldots, B_m \s
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary 6.5.2 (Lopsided local lemma; symmetric version)](../chapter-6/chapter-6-section-6-5/098-lopsided-local-lemma-symmetric-version.md)
+
 ## Sources
 
 - [MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022), Chapter 1, Section 1.1](../../../../sources/v1/ProbabilisticMethodsInCombinatorics.md)

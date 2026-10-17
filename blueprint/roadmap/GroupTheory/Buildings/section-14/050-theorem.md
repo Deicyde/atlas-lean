@@ -16,6 +16,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Proposition (Section 14.7)](049-proposition.md)
+- [Proposition (Negative Curvature Inequality)](051-negative-curvature-inequality.md)
 
 ## Sources
 

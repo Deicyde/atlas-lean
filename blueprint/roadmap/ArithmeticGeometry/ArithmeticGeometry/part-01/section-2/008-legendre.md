@@ -13,6 +13,12 @@ Let $a, b, c$ be square-free integers that are pairwise coprime and whose signs 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary 11.2](../section-11/077-corollary-11-2.md)
+- [Theorem 11.1](../section-11/076-theorem-11-1.md)
+- [Corollary 10.10](../section-10/074-corollary-10-10.md)
+
 ## Sources
 
 - [MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013), Section 2.3](../../../../../sources/v1/ArithmeticGeometry.md)

@@ -16,7 +16,15 @@ Fleischner's theorem (https://en.wikipedia.org/wiki/Fleischner%27s_theorem):
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Vertex Connected](../part-04/vertex-connectivity/is-vertex-connected.md)
+
+## Proof depends on
+
+- [Has Strong Square Cycle](../part-03/strong-square-cycle/has-strong-square-cycle.md)
+- [Card gt](../part-04/vertex-connectivity/card-gt.md)
+- [Fleischner Strong](has-strong-square-cycle.md)
+- [Eq square iff](../part-03/square/eq-square-iff.md)
+- [Square](../part-03/square/square.md)
 
 ## Sources
 

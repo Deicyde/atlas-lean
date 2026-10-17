@@ -14,6 +14,10 @@ Let $f \colon \{-1,1\}^n \to \mathbb{R}$, and $\varepsilon > 0$. The noise sensi
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Definition 1.1 (Noise Stability)](../section-1/052-noise-stability.md)
+
 ## Sources
 
 - [MIT 18.218 Analysis of Boolean Functions (Spring 2021), Section 3, Noise sensitivity](../../../../sources/v1/BooleanFunctions.md)

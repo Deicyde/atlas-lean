@@ -2,8 +2,6 @@
 article_id: af_b9ff933531694d16ab64ab74
 declaration: def
 origin: cited
-statement: formalized
-lean: IsGrouplike
 ---
 
 # Definition 1.22.13

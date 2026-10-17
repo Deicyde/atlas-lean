@@ -18,6 +18,7 @@ Every sequence of nontrivial monotone properties has a threshold.
 ## Proof depends on
 
 - [Theorem 4.3.5 (Monotonicity of satisfying probability)](049-monotonicity-of-satisfying-probability.md)
+- [Lemma 4.3.7 (Multiple round exposure)](051-multiple-round-exposure.md)
 
 ## Sources
 

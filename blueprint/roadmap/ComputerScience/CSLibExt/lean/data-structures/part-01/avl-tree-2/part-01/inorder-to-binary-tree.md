@@ -17,6 +17,7 @@ traversal of its cache-erased tree, by definition.
 - [Tree](tree.md)
 - [Inorder](inorder.md)
 - [To Binary Tree](to-binary-tree.md)
+- [Inorder](../../../part-02/binary-search-tree/part-01/inorder.md)
 
 ## Sources
 

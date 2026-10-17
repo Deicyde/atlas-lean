@@ -16,6 +16,10 @@ Let $R$ be a PID and $N$ an $R$-module, and let $C_{*}$ be a chain-complex of fr
 - [Definition 3.5](../chapter-1/chapter-1-section-3/011-definition-3-5.md)
 - [Definition 8.3](../section-8/035-definition-8-3.md)
 
+## Proof depends on
+
+- [Definition 27.2](115-definition-27-2.md)
+
 ## Sources
 
 - [MIT 18.905 Algebraic Topology I (Fall 2016), Section 27](../../../../../sources/v1/AlgebraicTopologyI.md)

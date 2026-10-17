@@ -14,8 +14,15 @@ with the ambient ray group.
 
 ## Depends on
 
+- [Congruence Subgroup](../congruence-subgroup/congruence-subgroup.md)
+- [To Ambient Subgroup](../congruence-subgroup/to-ambient-subgroup.md)
 - [Change Modulus](change-modulus.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 - [Ray Group Ambient](ray-group-ambient.md)
+
+## Proof depends on
+
+- [Ray Group](../../part-02/ray-group/ray-group.md)
 
 ## Sources
 

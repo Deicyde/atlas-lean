@@ -13,6 +13,11 @@ Let $\Phi$ be the fundamental solution for $\Delta$ in $\mathbb{R}^{n}$, and let
 ## Depends on
 
 - [Definition 2.0.2 (Section 2) (2)](036-definition-2-0-2.md)
+- [Definition 1.0.1 (Class Meeting #7, Section 1 (The Fundamental Solution for $\Delta$ in $\mathbb{R}^{n}$))](../class-meeting-7/032-definition-1-0-1.md)
+
+## Proof depends on
+
+- [Lemma 1.0.1 (Class Meeting #7, Section 1 (The Fundamental Solution for $\Delta$ in $\mathbb{R}^{n}$))](../class-meeting-7/033-lemma-1-0-1.md)
 
 ## Sources
 

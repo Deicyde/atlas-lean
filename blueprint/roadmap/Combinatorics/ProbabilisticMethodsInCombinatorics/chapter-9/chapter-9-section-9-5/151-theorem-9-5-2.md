@@ -17,6 +17,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Definition 9.4.17 (Sub-Gaussian distribution)](../chapter-9-section-9-4/146-sub-gaussian-distribution.md)
+- [Corollary 9.5.8 (Talagrand)](154-talagrand.md)
 
 ## Sources
 

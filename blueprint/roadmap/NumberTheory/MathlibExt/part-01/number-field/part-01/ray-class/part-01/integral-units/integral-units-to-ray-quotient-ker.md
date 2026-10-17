@@ -15,6 +15,8 @@ Kernel of the quotient endpoint is the ray-one unit subgroup.
 
 - [Integral Ray One Units](integral-ray-one-units.md)
 - [Integral Units To Ray Quotient](integral-units-to-ray-quotient.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+- [Ray One Elements](../../part-02/residue-sign/ray-one-elements.md)
 
 ## Proof depends on
 

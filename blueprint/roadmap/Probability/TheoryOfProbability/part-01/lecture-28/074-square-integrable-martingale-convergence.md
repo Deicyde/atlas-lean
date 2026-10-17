@@ -12,7 +12,8 @@ Suppose $X_n$ is a martingale with $E[X_n^2] < \infty$ for all $n$. Then $\lim_{
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem (Doob's decomposition)](../../part-02/lecture-27/064-doob-s-decomposition.md)
+- [Definition (Martingale, supermartingale, submartingale)](../../part-02/lecture-29/091-martingale-supermartingale-submartingale.md)
 
 ## Proof depends on
 

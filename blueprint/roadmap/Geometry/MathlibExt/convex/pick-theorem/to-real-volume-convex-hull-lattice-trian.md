@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MetaMathlibExt._root_.MeasureTheory.toReal_volume_convexHull_lattice_triangle
+lean: MeasureTheory.toReal_volume_convexHull_lattice_triangle
 ---
 
 # To Real volume convex Hull lattice triangle

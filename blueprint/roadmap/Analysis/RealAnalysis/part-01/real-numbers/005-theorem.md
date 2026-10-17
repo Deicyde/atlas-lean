@@ -14,6 +14,8 @@ There exists a unique ordered field, labeled $\mathbb{R}$, such that $\mathbb{Q}
 ## Depends on
 
 - [Definition (Set Relations) (Basic Set Theory) (1)](../basic-set-theory/001-set-relations.md)
+- [Definition (Least Upper Bound Property) (Real Numbers, Ordered Sets & Fields)](013-least-upper-bound-property.md)
+- [Definition (Ordered field) (Real Numbers, Ordered Sets & Fields)](015-ordered-field.md)
 
 ## Sources
 

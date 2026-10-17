@@ -14,6 +14,10 @@ If the setup holds then we can decompose $f$ as $f = \sum_{\substack{1 \leq r \l
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma (Orthogonality)](../fourier-method/019-orthogonality.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section: The Fourier method in Euclidean space](../../../../../sources/v1/ProjectionTheory.md)

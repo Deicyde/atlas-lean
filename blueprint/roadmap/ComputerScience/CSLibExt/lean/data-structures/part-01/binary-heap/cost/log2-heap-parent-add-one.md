@@ -13,7 +13,7 @@ Moving a nonroot index to its parent lowers its binary-tree depth by one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heap Parent](../../../part-02/binary-heap/part-01/heap-parent.md)
 
 ## Sources
 

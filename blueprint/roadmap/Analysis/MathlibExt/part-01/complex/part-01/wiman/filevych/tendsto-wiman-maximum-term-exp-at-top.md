@@ -13,7 +13,12 @@ The maximum Taylor term still tends to infinity along logarithmic radii.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Transcendental](../../../part-02/wiman/is-transcendental.md)
+- [Wiman Maximum Term](../../../part-02/wiman/wiman-maximum-term.md)
+
+## Proof depends on
+
+- [Tendsto wiman Maximum Term at Top](../maximum-term-tends-to-infinity/tendsto-wiman-maximum-term-at-top.md)
 
 ## Sources
 

@@ -12,12 +12,9 @@ ATLAS v1 selected 100 statements from this source in
 matched to each in [`report.json`](https://github.com/facebookresearch/atlas-lean/blob/main/v1/Atlas/TheoryOfProbability/report.json). Each roadmap article
 reproduces one target's statement and the source location it names.
 
-80 roadmap edges come from the source text rather than
+115 roadmap edges come from the source text rather than
 the Lean code; each is recorded with its evidence in
 [`book-dependencies/TheoryOfProbability.json`](book-dependencies/TheoryOfProbability.json).
-
-37 dependencies point to a statement placed later in this
-wiki and are not drawn as roadmap edges, which keeps every chapter acyclic.
 
 ## Targets without a linked Lean declaration
 

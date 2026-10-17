@@ -14,6 +14,10 @@ Suppose $f \colon \{-1,1\}^n \to \mathbb{R}$ is a function of degree at most $d$
 
 - [Definition 0.1](027-definition-0-1.md)
 
+## Proof depends on
+
+- [Lemma 3.9](039-lemma-3-9.md)
+
 ## Sources
 
 - [MIT 18.218 Analysis of Boolean Functions (Spring 2021), Lecture 5, Section 3.3](../../../../sources/v1/BooleanFunctions.md)

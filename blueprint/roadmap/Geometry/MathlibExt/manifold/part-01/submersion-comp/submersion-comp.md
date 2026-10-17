@@ -20,6 +20,10 @@ complements, then package their product as the complement of the composite.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Comp](comp-4.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.Manifold.SubmersionComp](../../../../../../sources/v2/MathlibExt.md)

@@ -15,6 +15,7 @@ Let $\mathcal{C}$ and $\mathcal{D}$ be multiring categories and $F: \mathcal{C} 
 
 - [Definition 1.13.3](../section-1-13/031-definition-1-13-3.md)
 - [Definition 1.14.1](../section-1-14/036-definition-1-14-1.md)
+- [Lemma 1.16.1](044-lemma-1-16-1.md)
 
 ## Sources
 

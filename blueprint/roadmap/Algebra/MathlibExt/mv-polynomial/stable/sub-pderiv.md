@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Algebra.MvPolynomialStable._root_.MvPolynomial.IsStable.sub_pderiv
+lean: MvPolynomial.IsStable.sub_pderiv
 ---
 
 # Sub pderiv
@@ -13,7 +13,13 @@ The operator `1 - ∂ᵢ` preserves stability.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Stable](is-stable.md)
+
+## Proof depends on
+
+- [Derivative univariate Specialization](derivative-univariate-specialization.md)
+- [Eval univariate Specialization](eval-univariate-specialization.md)
+- [Univariate Specialization](univariate-specialization.md)
 
 ## Sources
 

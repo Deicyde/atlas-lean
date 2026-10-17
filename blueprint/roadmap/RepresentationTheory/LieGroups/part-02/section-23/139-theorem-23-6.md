@@ -27,6 +27,7 @@ For any $\xi \in \Xi$ there exists an indecomposable projective functor $F_{\xi}
 - [Corollary 16.5](../../part-01/section-16/094-corollary-16-5.md)
 - [Theorem 23.2](136-theorem-23-2.md)
 - [Corollary 22.6](../section-22/133-corollary-22-6.md)
+- [Lemma 23.7](140-lemma-23-7.md)
 
 ## Sources
 

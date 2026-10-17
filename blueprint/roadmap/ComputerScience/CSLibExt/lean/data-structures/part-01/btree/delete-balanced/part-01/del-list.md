@@ -20,7 +20,7 @@ sibling and separator are in hand.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BTree](../../../btree-2/part-01/btree.md)
 
 ## Proof depends on
 

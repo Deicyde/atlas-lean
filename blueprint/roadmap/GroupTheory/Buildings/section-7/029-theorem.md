@@ -19,6 +19,7 @@ This node has no prerequisites.
 
 - [Proposition (Section 7.2, Bilinear and hermitian forms)](027-proposition.md)
 - [Corollary (Section 7.2, Bilinear and hermitian forms)](028-corollary.md)
+- [Lemma (Section 7.3, Extending isometries)](030-lemma.md)
 
 ## Sources
 

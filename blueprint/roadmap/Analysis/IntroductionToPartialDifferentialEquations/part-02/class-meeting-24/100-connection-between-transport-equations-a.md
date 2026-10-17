@@ -11,6 +11,7 @@ If $u$ solves the transport equation (1.0.1), then $u$ is constant along the int
 
 ## Depends on
 
+- [Definition 2.0.1 (Class Meeting #24, Section 2 (Burger's Equation))](102-definition-2-0-1.md)
 - [Definition 7.2.1 (Vectorfield)](../../part-01/class-meeting-1/009-vectorfield.md)
 
 ## Sources

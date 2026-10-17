@@ -15,6 +15,10 @@ The chi-square-one gamma MGF agrees with the Gaussian-square MGF below `1/2`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mgf gamma Measure of lt](../gamma/mgf-gamma-measure-of-lt.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.ChiSquare](../../../../../../sources/v2/MathlibExt.md)

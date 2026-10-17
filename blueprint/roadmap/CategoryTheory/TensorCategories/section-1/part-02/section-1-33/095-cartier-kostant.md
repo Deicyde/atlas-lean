@@ -18,6 +18,7 @@ Any cocommutative Hopf algebra $H$ over an algebraically closed field of charact
 - [Definition 1.20.1](../../part-01/section-1-20/049-definition-1-20-1.md)
 - [Definition 1.24.2](../section-1-24/065-definition-1-24-2.md)
 - [Corollary 1.29.7](../section-1-29/084-corollary-1-29-7.md)
+- [Lemma 1.33.2](096-lemma-1-33-2.md)
 
 ## Sources
 

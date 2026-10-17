@@ -17,7 +17,7 @@ here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formal Orthogonality](is-formally-orthogonal.md)
 
 ## Proof depends on
 

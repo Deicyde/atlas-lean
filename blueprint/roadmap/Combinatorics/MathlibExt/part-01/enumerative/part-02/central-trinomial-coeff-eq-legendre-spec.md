@@ -23,7 +23,11 @@ Proof: Bonnet's recurrence `(n+1) P_{n+1}(x) = (2n+1) x P_n(x) - n P_{n-1}(x)`, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trinomial Coefficient](../../../../../NumberTheory/MathlibExt/part-11/trinomial-coefficient.md)
+
+## Proof depends on
+
+- [Central Trinomial Recurrence](central-trinomial-coeff-three-term-recur.md)
 
 ## Sources
 

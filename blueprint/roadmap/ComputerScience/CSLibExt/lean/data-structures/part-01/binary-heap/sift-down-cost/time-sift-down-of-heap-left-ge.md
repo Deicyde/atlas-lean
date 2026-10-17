@@ -14,10 +14,13 @@ Leaves, including invalid indices, incur no sift-down events.
 ## Depends on
 
 - [Sift Down](sift-down.md)
+- [Heap Left](../../../part-02/binary-heap/part-01/heap-left.md)
 
 ## Proof depends on
 
 - [Time sift Down of smaller Child none](time-sift-down-of-smaller-child-none.md)
+- [Heap Right](../../../part-02/binary-heap/part-01/heap-right.md)
+- [Smaller Child](../../../part-02/binary-heap/part-01/smaller-child.md)
 
 ## Sources
 

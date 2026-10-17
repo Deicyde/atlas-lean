@@ -21,8 +21,12 @@ Sift-down makes at most two value comparisons per remaining binary-tree level.
 - [Time timed Smaller Child](time-timed-smaller-child.md)
 - [Time timed Smaller Child of none](time-timed-smaller-child-of-none.md)
 - [Timed Smaller Child](timed-smaller-child.md)
+- [Heap Right](../../../part-02/binary-heap/part-01/heap-right.md)
 - [Log2 smaller Child add one](log2-smaller-child-add-one.md)
 - [Log2 smaller Child le size](log2-smaller-child-le-size.md)
+- [Smaller Child](../../../part-02/binary-heap/part-01/smaller-child.md)
+- [Smaller Child gt](../../../part-02/binary-heap/part-01/smaller-child-gt.md)
+- [Smaller Child valid](../../../part-02/binary-heap/part-01/smaller-child-valid.md)
 
 ## Sources
 

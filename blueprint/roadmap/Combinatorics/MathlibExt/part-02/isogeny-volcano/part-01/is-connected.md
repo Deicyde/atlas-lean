@@ -2,8 +2,6 @@
 article_id: af_325580ede63aa748a5f055ee
 declaration: def
 origin: cited
-statement: formalized
-lean: Multigraph.IsConnected
 ---
 
 # Is Connected

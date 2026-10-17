@@ -25,7 +25,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Hankel Transform](../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/hankel-transform.md)
 - [Heilermann Weighted Motzkin Determinant](../part-04/hankel-transform-eq-prod-of-weighted-mot.md)
+- [Stirling Second mul factorial eq sum](../part-08/stirling-second-explicit/stirling-second-mul-factorial-eq-sum.md)
 
 ## Sources
 

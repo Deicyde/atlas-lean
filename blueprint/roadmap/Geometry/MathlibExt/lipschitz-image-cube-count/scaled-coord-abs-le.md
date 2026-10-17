@@ -15,7 +15,7 @@ Stated for the unit-cube subtype domain so it applies directly below.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit Cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
 
 ## Sources
 

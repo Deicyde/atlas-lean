@@ -14,6 +14,7 @@ The mass of a singleton under the coefficient measure is its coefficient norm.
 ## Depends on
 
 - [Wiman Coefficient Measure](wiman-coefficient-measure.md)
+- [Wiman Taylor Coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
 
 ## Sources
 

@@ -16,6 +16,7 @@ Assume $AKLB$, let $\mathfrak{p}$ be a prime of $A$. - $L/K$ is totally ramified
 - [Definition 2.10](../../section-2/027-definition-2-10.md)
 - [Definition 4.3](../../section-4/section-4-1/part-01/058-definition-4-3.md)
 - [Definition 4.29](../../section-4/section-4-2/082-definition-4-29.md)
+- [Definition 5.29](../section-5-3/118-definition-5-29.md)
 
 ## Sources
 

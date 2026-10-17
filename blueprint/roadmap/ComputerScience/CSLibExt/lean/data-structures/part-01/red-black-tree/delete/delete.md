@@ -12,7 +12,7 @@ Delete a key, leaving a valid red-black tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../../part-03/red-black-tree/part-01/tree.md)
 
 ## Proof depends on
 

@@ -14,6 +14,7 @@ node.
 
 ## Depends on
 
+- [Trie](../../../part-03/trie/trie.md)
 - [Is Empty Node](is-empty-node.md)
 
 ## Sources

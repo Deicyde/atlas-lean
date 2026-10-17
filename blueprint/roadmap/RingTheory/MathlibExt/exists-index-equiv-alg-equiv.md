@@ -22,6 +22,10 @@ ATLAS N83, Corollary 4.33.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists alg Equiv restrict](pi-field-quotient/exists-alg-equiv-restrict.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.PiFieldDecomposition](../../../sources/v2/MathlibExt.md)

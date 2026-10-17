@@ -17,12 +17,15 @@ summand.
 - [Index](../index/index.md)
 - [Depth](../index/depth.md)
 - [Reverse](reverse.md)
+- [Strict Decreasing Tuple](../series/strict-decreasing-tuple.md)
 - [Strict Increasing Tuple](strict-increasing-tuple.md)
 - [Increasing Equiv Decreasing](increasing-equiv-decreasing.md)
 - [Increasing Summand](increasing-summand.md)
+- [Strict Summand](../series/strict-summand.md)
 
 ## Proof depends on
 
+- [Entry](../series/entry.md)
 - [Reverse entry](reverse-entry.md)
 
 ## Sources

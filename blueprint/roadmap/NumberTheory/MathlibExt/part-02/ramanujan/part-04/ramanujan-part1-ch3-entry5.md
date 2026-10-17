@@ -15,7 +15,11 @@ Proves `Wanted` entry `ramanujan_part1_ch3_entry5`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Bell Generating](part1-ch3-entry9-ii-generalizedbellgenerating-de/generalized-bell-generating.md)
+
+## Proof depends on
+
+- [Ramanujan part1 ch3 entry9 ii generalizedbellgenerating defining](part1-ch3-entry9-ii-generalizedbellgenerating-de/ramanujan-part1-ch3-entry9-ii-generalize.md)
 
 ## Sources
 

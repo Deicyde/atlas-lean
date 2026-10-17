@@ -9,7 +9,7 @@ lean: Integration.integral_additivity
 
 # Theorem (Additivity) (Properties of the Riemann Integral section)
 
-If $f\in C([a,b])$ and $a<c<b$, then $\int_a^b f = \int_a^c f + \int_c^b f.$
+If $f\in C([a,b])$ and $a\lt c\lt b$, then $\int_a^b f = \int_a^c f + \int_c^b f.$
 
 ## Depends on
 

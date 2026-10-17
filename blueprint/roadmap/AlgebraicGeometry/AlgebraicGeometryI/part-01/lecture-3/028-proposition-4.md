@@ -17,6 +17,10 @@ A Noetherian topological space is the union of its components (finite in number)
 - [Definition 7](025-definition-7.md)
 - [Definition 8](027-definition-8.md)
 
+## Proof depends on
+
+- [Lemma 5](../lecture-4/032-lemma-5.md)
+
 ## Sources
 
 - [MIT 18.725 Algebraic Geometry (Fall 2015), Lecture 3](../../../../../sources/v1/AlgebraicGeometryI.md)

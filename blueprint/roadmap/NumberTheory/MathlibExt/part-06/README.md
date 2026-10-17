@@ -2,8 +2,10 @@
 article_id: af_773179ec77d2940daca86350
 ---
 
-# Generalized Lucas to Imaginary Quadratic Discriminant
+# Generalized Fibonacci Polynomial to Hurwitz Quaternion Waring
 
+- [Generalized Fibonacci Polynomial](generalized-fibonacci-polynomial/README.md)
+- [Generalized Fuss Catalan Numbers FMNK](generalized-fuss-catalan-numbers-fmnk/README.md)
 - [Generalized Lucas](generalized-lucas/README.md)
 - [Generalized Lucasnomial Fuss Catalan](generalized-lucasnomial-fuss-catalan/README.md)
 - [Generalized Lucasnomial Fuss Catalan Number](generalized-lucasnomial-fuss-catalan-number/README.md)
@@ -22,5 +24,3 @@ article_id: af_773179ec77d2940daca86350
 - [Highly Composite](highly-composite/README.md)
 - [Hilbert Waring](hilbert-waring.md)
 - [Hurwitz Quaternion Waring](hurwitz-quaternion-waring-bound.md)
-- [Hyperfactorial Partition](hyperfactorial-partition/README.md)
-- [Imaginary Quadratic Discriminant](imaginary-quadratic-discriminant/README.md)

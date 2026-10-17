@@ -12,7 +12,7 @@ A **Lie algebra** (over $\mathbb{R}$) is a vector space $V$ with a Lie bracket $
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lie Bracket)](075-lie-bracket.md)
 
 ## Sources
 

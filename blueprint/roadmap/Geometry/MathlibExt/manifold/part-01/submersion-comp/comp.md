@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MathlibExt.Geometry.Manifold.SubmersionCompWanted._root_.Manifold.IsSubmersionAtOfComplement.comp
+lean: Manifold.IsSubmersionAtOfComplement.comp
 ---
 
 # Comp
@@ -15,6 +15,10 @@ whose complement is the product of the two chosen complements.
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Exists dom Chart of cod Chart](exists-dom-chart-of-cod-chart.md)
 
 ## Sources
 

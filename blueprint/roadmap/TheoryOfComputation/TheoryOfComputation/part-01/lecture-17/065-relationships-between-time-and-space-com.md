@@ -13,7 +13,7 @@ For $t(n) \geq n$: (1) $\mathsf{TIME}(t(n)) \subseteq \mathsf{SPACE}(t(n))$; (2)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (SPACE and NSPACE)](../lecture-18/086-space-and-nspace.md)
 
 ## Proof depends on
 

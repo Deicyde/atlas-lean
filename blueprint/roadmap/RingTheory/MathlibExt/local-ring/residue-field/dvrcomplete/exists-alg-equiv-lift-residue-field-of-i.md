@@ -19,6 +19,7 @@ extensions lifts to an algebra equivalence, compatibly in both directions.
 ## Proof depends on
 
 - [Exists alg Equiv lift residue Field](../dvrbijective/exists-alg-equiv-lift-residue-field.md)
+- [Henselian](../../of-is-adic-complete-maximal-ideal.md)
 
 ## Sources
 

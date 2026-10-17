@@ -2,8 +2,6 @@
 article_id: af_4ab91b82369faffad32aab49
 declaration: theorem
 origin: cited
-statement: formalized
-lean: Concentration.hoeffding_bound
 ---
 
 # Theorem 1 (Chernoff bound / Concentration of Measure)

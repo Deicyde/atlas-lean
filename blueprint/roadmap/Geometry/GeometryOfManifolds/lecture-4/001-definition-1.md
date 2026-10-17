@@ -12,7 +12,7 @@ $X$ is a symplectic vector field if $L_{X} \omega = 0$, i.e.\ $i_{X} \omega$ is 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 7](../lecture-2/011-definition-7.md)
 
 ## Sources
 

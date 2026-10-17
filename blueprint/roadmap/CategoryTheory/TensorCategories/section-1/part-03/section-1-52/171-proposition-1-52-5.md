@@ -2,7 +2,6 @@
 article_id: af_cb28427adc9a1b38399aedac
 declaration: theorem
 origin: cited
-lean: Proposition_1_52_5
 ---
 
 # Proposition 1.52.5

@@ -2,9 +2,6 @@
 article_id: af_9585c4c5fcee57cd692f4210
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
-lean: Polynomial.comap_mapRingHom_bot_eq_map_C_ker
 ---
 
 # Comap map Ring Hom bot eq map C ker

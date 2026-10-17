@@ -18,6 +18,7 @@ The complete `r`-graph is a Turan system under the parameter bounds.
 
 ## Proof depends on
 
+- [Is Uniform](../uniform-hypergraph/is-uniform.md)
 - [Complete Graph uniform](complete-graph-uniform.md)
 
 ## Sources

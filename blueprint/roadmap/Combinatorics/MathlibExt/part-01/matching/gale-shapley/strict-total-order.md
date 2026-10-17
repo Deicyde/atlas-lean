@@ -14,6 +14,10 @@ Strict total order modelling strict preference, reusing the shared `MathlibExt.O
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Strict Total Order](../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Matching.GaleShapley](../../../../../../sources/v2/MathlibExt.md)

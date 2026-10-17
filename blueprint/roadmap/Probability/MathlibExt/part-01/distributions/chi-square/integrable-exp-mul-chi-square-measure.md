@@ -15,6 +15,10 @@ Exponential moments of a chi-square law exist below `1/2`.
 
 - [Chi Square Measure](chi-square-measure.md)
 
+## Proof depends on
+
+- [Integrable exp mul gamma Measure](../gamma/integrable-exp-mul-gamma-measure.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.Distributions.ChiSquare](../../../../../../sources/v2/MathlibExt.md)

@@ -20,6 +20,12 @@ the irreducible characters of an abelian group are its homomorphisms to `ℂˣ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Of Monoid Hom](of-monoid-hom.md)
+- [Of Monoid Hom character](of-monoid-hom-character.md)
+- [Of Monoid Hom simple](of-monoid-hom-simple.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.GroupTheory.AbelianRepresentation](../../../../../sources/v2/MathlibExt.md)

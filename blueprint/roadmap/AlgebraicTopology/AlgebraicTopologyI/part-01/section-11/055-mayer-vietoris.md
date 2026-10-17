@@ -23,6 +23,7 @@ Assume that $\mathcal{A} = \{A, B\}$ is a cover of $X$. There are natural maps $
 - [Theorem 9.1 (The homology long exact sequence)](../section-9/039-the-homology-long-exact-sequence.md)
 - [Theorem 10.2](../section-10/044-theorem-10-2.md)
 - [Theorem 11.4 (The locality principle)](054-the-locality-principle.md)
+- [Lemma 11.6](056-lemma-11-6.md)
 
 ## Sources
 

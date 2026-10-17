@@ -16,6 +16,7 @@ Real `O(t ^ d)` consequence (source lines 283–311): with
 ## Depends on
 
 - [Integer Cube Set](integer-cube-set.md)
+- [Unit Cube](../../../Topology/MathlibExt/metric-space/lipschitz-parametrizable/unit-cube.md)
 
 ## Proof depends on
 

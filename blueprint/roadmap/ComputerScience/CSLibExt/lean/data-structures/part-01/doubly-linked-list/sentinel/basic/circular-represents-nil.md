@@ -14,6 +14,7 @@ The empty circle consists of an allocated self-linked sentinel.
 ## Depends on
 
 - [Circular Represents](circular-represents.md)
+- [Node](../../basic/node.md)
 
 ## Sources
 

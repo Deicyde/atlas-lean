@@ -21,6 +21,7 @@ Let $X$ be an irreducible complete (or smooth) curve. Then $\chi(\mathcal{F}) = 
 ## Proof depends on
 
 - [Definition 42](../lecture-22/168-definition-42.md)
+- [Lemma 35](180-lemma-35.md)
 
 ## Sources
 

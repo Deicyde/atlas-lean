@@ -12,7 +12,7 @@ Given groups $G$ and $G'$, a homomorphism between them is a map $f: G \to G'$ su
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Group)](../section-1/002-group.md)
 
 ## Sources
 

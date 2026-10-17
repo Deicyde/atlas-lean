@@ -17,6 +17,7 @@ $L_n$ is $O(\sqrt{\log n})$-subGaussian about its mean. That is, $\mathbb{P}(|L_
 
 - [Theorem 9.2.8 (Azuma's inequality)](../chapter-9-section-9-2/128-azuma-s-inequality.md)
 - [Definition 9.4.7 (Lipschitz functions)](../chapter-9-section-9-4/138-lipschitz-functions.md)
+- [Lemma 9.6.2](165-lemma-9-6-2.md)
 
 ## Sources
 

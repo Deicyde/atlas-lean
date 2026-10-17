@@ -15,6 +15,7 @@ Bondareva-Shapley: cooperative game has nonempty core iff balanced.
 
 - [Is Balanced](is-balanced.md)
 - [Is Core Allocation](is-core-allocation.md)
+- [Coop Game](../shapley-value/coop-game.md)
 
 ## Sources
 

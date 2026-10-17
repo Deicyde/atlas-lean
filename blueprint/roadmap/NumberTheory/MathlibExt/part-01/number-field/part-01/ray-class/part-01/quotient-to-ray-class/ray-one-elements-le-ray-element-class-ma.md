@@ -14,7 +14,11 @@ Ray-one elements lie in the kernel of the ray-element class map.
 ## Depends on
 
 - [Ray Class Group](../group/ray-class-group.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 - [Ray Element Class Map](ray-element-class-map.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
+- [Ray Group](../../part-02/ray-group/ray-group.md)
+- [Ray One Elements](../../part-02/residue-sign/ray-one-elements.md)
 
 ## Proof depends on
 

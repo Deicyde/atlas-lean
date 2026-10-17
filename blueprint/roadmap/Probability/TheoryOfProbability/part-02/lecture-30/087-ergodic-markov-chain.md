@@ -12,7 +12,7 @@ Say a Markov chain is ergodic if some power of the transition matrix has all non
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Markov chain, finite state)](090-markov-chain-finite-state.md)
 
 ## Sources
 

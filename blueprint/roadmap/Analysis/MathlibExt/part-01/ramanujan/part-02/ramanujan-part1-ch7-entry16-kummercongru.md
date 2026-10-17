@@ -15,7 +15,16 @@ Proves `Wanted` entry `ramanujan_part1_ch7_entry16_kummercongruence`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter7 Phi Argument](part1-ch7-phi/chapter7-phi-argument.md)
+- [Chapter7 Phi](part1-ch7-phi/chapter7-phi.md)
+
+## Proof depends on
+
+- [Abel Continuation](../../../../../NumberTheory/MathlibExt/part-01/lseries/abel-continuation/abel-continuation.md)
+- [Abel Continuation eq LSeries](../../../../../NumberTheory/MathlibExt/part-01/lseries/abel-continuation/abel-continuation-eq-lseries.md)
+- [Abel Partial Sum](../../../../../NumberTheory/MathlibExt/part-01/lseries/abel-continuation/abel-partial-sum.md)
+- [Analytic On abel Continuation](../../../../../NumberTheory/MathlibExt/part-01/lseries/abel-continuation/analytic-on-abel-continuation.md)
+- [Tendsto abel Continuation Icc](../../../../../NumberTheory/MathlibExt/part-01/lseries/abel-continuation/tendsto-abel-continuation-icc.md)
 
 ## Sources
 

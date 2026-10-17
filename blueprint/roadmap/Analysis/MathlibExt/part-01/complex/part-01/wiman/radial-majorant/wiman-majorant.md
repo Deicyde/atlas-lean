@@ -15,6 +15,10 @@ The positive radial majorant formed from the norms of the Taylor coefficients at
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Wiman Term](../../../part-02/wiman/wiman-term.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.Wiman.RadialMajorant](../../../../../../../../sources/v2/MathlibExt.md)

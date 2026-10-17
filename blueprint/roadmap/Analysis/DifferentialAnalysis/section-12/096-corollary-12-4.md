@@ -17,6 +17,7 @@ If $u \in \mathcal{S}'(\mathbb{R}^{n})$ then $\operatorname{Css}(u) = \emptyset$
 
 ## Proof depends on
 
+- [Lemma 12.7](099-lemma-12-7.md)
 - [Proposition 8.7](../section-8/056-proposition-8-7.md)
 - [Lemma 12.3](095-lemma-12-3.md)
 

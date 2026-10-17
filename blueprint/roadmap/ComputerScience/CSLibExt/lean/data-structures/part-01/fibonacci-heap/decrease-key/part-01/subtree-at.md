@@ -13,7 +13,7 @@ leaves the tree. The empty path addresses the whole tree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Tree](../../../../part-02/fibonacci-heap/part-01/fibonacci-tree.md)
 
 ## Sources
 

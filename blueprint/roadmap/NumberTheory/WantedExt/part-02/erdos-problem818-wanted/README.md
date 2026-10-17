@@ -1,8 +1,0 @@
----
-article_id: af_778bfb11d4c80eb68942d897
----
-
-# Erdos Problem818 Wanted
-
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)

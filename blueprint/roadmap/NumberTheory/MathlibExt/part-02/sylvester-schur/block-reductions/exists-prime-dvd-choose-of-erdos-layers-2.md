@@ -18,6 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Exists prime dvd choose of erdos layers bound](exists-prime-dvd-choose-of-erdos-layers.md)
+- [Erdos layers le four pow](../erdos-power-bounds/erdos-layers-le-four-pow.md)
 
 ## Sources
 

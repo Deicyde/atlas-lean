@@ -13,7 +13,7 @@ A primitive word is changed by every nontrivial rotation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Primitive Word](../is-primitive-word.md)
 
 ## Proof depends on
 

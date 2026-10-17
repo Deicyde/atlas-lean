@@ -24,6 +24,7 @@ inverse-array equivalence from the `linvOf` Stieltjes production construction.
 ## Depends on
 
 - [Formal Orthogonality](is-formally-orthogonal.md)
+- [Stieltjes Matrix](../../../LinearAlgebra/MathlibExt/matrix/part-02/stieltjes-matrix/stieltjes-matrix.md)
 
 ## Proof depends on
 

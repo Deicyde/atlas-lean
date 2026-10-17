@@ -31,6 +31,7 @@ grounded task `jis_grounded_16fbee6379089c6cf50650f2`.
 ## Depends on
 
 - [Binomial Transform](../part-03/falling-kbinomial-transform/binomial-transform.md)
+- [Hankel Transform](../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/hankel-transform.md)
 
 ## Proof depends on
 

@@ -22,6 +22,10 @@ Proves `Wanted` entry `jacobsthal_closedForm`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Binet Closed Form](../../../part-03/binet-closed-form-second-order.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Recurrences.JacobsthalClosedForm](../../../../../../sources/v2/MathlibExt.md)

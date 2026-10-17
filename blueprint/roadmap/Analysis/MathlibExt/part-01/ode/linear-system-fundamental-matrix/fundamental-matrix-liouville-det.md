@@ -19,6 +19,10 @@ gives Teschl, Lemma 3.11, formula (3.91).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Det of mul](det-of-mul.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.ODE.LinearSystemFundamentalMatrix](../../../../../../sources/v2/MathlibExt.md)

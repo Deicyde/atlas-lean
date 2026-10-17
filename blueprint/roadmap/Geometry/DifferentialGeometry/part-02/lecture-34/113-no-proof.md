@@ -14,6 +14,10 @@ Moving frames with singularities always exist. Moreover, for any choice of such 
 - [Definition 33.4](../../part-01/lecture-33/108-definition-33-4.md)
 - [Definition 34.3](112-definition-34-3.md)
 
+## Proof depends on
+
+- [Theorem 35.4 (combinatorial Gauss-Bonnet; sketch proof)](../lecture-35/120-combinatorial-gauss-bonnet-sketch-proof.md)
+
 ## Sources
 
 - [MIT 18.950 Differential Geometry (Fall 2008), Lecture 34](../../../../../sources/v1/DifferentialGeometry.md)

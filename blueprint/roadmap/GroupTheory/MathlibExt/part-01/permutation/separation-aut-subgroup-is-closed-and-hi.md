@@ -15,11 +15,15 @@ all `k`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pointwise Topology](pointwise-topology.md)
+- [Is Highly Homogeneous](highly-homogeneous/is-highly-homogeneous.md)
+- [Separation Aut Subgroup](separation/separation-aut-subgroup.md)
 
 ## Proof depends on
 
 - [Cameron Circular Order Group](circular-order-aut-subgroup-is-closed-an.md)
+- [Circular Order](circular-order-aut-subgroup.md)
+- [Circular Separates](separation/circular-separates.md)
 
 ## Sources
 

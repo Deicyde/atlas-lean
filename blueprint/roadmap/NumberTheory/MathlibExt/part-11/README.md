@@ -4,6 +4,9 @@ article_id: af_7a0b68b4ac6ea2f931a02bb6
 
 # Part 11 of 12
 
+- [Stormer](stormer-theorem.md)
+- [Sylvester Coin Distinct Odd Primes](sylvester-coin-distinct-odd-primes.md)
+- [Sylvester Coin Theorem](sylvester-coin-theorem.md)
 - [Sylvester Schur](exists-prime-gt-and-dvd-asc-factorial.md)
 - [Taxicab Seed](generalized-taxicab-seed-exists.md)
 - [Telescopic Sequence](telescopic-sequence/README.md)
@@ -21,6 +24,3 @@ article_id: af_7a0b68b4ac6ea2f931a02bb6
 - [Vaughan Identity](vaughan-identity/README.md)
 - [Ward SBinomial Carry Product](ward-sbinomial-carry-product/README.md)
 - [Wieferich Prime](wieferich-prime/README.md)
-- [Wilson Quotient](wilson-quotient/README.md)
-- [Wolstenholme](wolstenholme.md)
-- [Wolstenholme Power Sums](wolstenholme-harmonic-power-sum.md)

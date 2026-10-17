@@ -13,6 +13,8 @@ Decrease-key preserves local heap order.
 
 ## Depends on
 
+- [Heap Ordered](../../../part-02/binary-heap/part-01/heap-ordered.md)
+- [Min Heap](../../../part-02/binary-heap/part-02/min-heap.md)
 - [Decrease Key](decrease-key.md)
 
 ## Sources

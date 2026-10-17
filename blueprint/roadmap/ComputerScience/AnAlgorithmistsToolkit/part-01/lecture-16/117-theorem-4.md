@@ -16,6 +16,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Theorem 1 (Lecture 13, Section 2)](../lecture-13/101-theorem-1.md)
+- [Definition 5 (Modulus of Convexity)](118-modulus-of-convexity.md)
 
 ## Sources
 

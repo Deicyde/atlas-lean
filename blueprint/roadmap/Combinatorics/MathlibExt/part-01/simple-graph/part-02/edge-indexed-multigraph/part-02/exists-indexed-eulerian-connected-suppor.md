@@ -22,11 +22,14 @@ an edge-distinguishing Euler circuit.
 
 ## Proof depends on
 
+- [Exists is Eulerian](../../euler-circuit/exists-is-eulerian-2.md)
 - [Inc](../part-01/inc.md)
 - [Is Trail](../part-01/is-trail.md)
 - [Edges](../part-01/edges.md)
 - [Inc iff](../part-01/inc-iff.md)
 - [Underlying adj](../part-01/underlying-adj.md)
+- [Induce support](../../euler-circuit/induce-support.md)
+- [Count P edges eq degree](../../euler-circuit/count-p-edges-eq-degree.md)
 
 ## Sources
 

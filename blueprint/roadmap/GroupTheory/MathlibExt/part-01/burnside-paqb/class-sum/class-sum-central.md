@@ -14,6 +14,11 @@ Class sums are central in the group algebra.
 ## Depends on
 
 - [Class Sum](class-sum.md)
+- [Conj Class](../../burnside-paqb-reduction/conj-class.md)
+
+## Proof depends on
+
+- [Conj mem conj Class](../../burnside-paqb-reduction/conj-mem-conj-class.md)
 
 ## Sources
 

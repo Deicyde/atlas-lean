@@ -19,6 +19,8 @@ Coefficient zero witnesses nonemptiness using the actual integral-polynomial mod
 
 - [Dobrowolski Scale](dobrowolski-scale.md)
 - [Dobrowolski Scale pos](dobrowolski-scale-pos.md)
+- [Algebraic Mahler Measure](../primitive-mahler/algebraic-mahler-measure.md)
+- [One le algebraic Mahler Measure](../primitive-mahler/one-le-algebraic-mahler-measure.md)
 
 ## Sources
 

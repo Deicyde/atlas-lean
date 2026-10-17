@@ -13,6 +13,7 @@ If $\{x_n\}$ converges to $x$, then any subsequence of $x_n$ will converge to $x
 
 ## Depends on
 
+- [Definition (Sequence Convergence of Reals) (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/022-sequence-convergence-of-reals.md)
 - [Definition (Subsequence) (Convergent Sequences of the Real Numbers section) (1)](024-subsequence.md)
 
 ## Sources

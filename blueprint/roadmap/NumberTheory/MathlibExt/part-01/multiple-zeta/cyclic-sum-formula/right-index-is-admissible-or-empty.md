@@ -14,10 +14,16 @@ The right-hand index is always admissible or empty.
 ## Depends on
 
 - [Right Index](right-index.md)
+- [Is Admissible Or Empty](../series/is-admissible-or-empty.md)
 
 ## Proof depends on
 
 - [To Index](to-index.md)
+- [Is Admissible](../index/is-admissible.md)
+- [Depth](../index/depth.md)
+- [Entries](../index/entries.md)
+- [Is Admissible iff](../index/is-admissible-iff.md)
+- [Is Admissible](../index/is-admissible-2.md)
 
 ## Sources
 

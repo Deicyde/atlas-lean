@@ -13,6 +13,7 @@ Generator computation for `freeGroupToGal`.
 
 ## Depends on
 
+- [Coprime Primes](../prime-generation/coprime-primes.md)
 - [Is Unramified Outside](is-unramified-outside.md)
 - [Free Group To Gal](free-group-to-gal.md)
 - [Frobenius At Coprime Prime](frobenius-at-coprime-prime.md)

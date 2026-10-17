@@ -13,7 +13,7 @@ The set of elements with finite order is called the **torsion subgroup** $A_f$, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Theorem (Section: Decomposition of Modules, Subsection: Classification of Abelian Groups)](136-theorem.md)
 
 ## Sources
 

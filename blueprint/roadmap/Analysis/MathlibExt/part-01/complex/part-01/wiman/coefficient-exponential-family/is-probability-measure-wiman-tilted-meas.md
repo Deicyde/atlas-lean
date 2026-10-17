@@ -13,6 +13,7 @@ With nonzero coefficient mass, the tilted coefficient measure is a probability m
 
 ## Depends on
 
+- [Wiman Taylor Coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
 - [Wiman Tilted Measure](wiman-tilted-measure.md)
 
 ## Proof depends on

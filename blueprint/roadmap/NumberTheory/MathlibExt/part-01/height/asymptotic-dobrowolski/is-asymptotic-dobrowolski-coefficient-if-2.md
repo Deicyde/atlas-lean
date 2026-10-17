@@ -16,6 +16,7 @@ the non-strict convention in the coefficient definition.
 
 - [Is Asymptotic Dobrowolski Coefficient](is-asymptotic-dobrowolski-coefficient.md)
 - [Dobrowolski Scale](dobrowolski-scale.md)
+- [Algebraic Mahler Measure](../primitive-mahler/algebraic-mahler-measure.md)
 
 ## Proof depends on
 

@@ -12,7 +12,11 @@ If $X_n$ is a martingale with $\sup E|X_n|^p < \infty$ where $p > 1$ then $X_n \
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Martingale, supermartingale, submartingale)](../../part-02/lecture-29/091-martingale-supermartingale-submartingale.md)
+
+## Proof depends on
+
+- [Theorem (Martingale convergence) (Lecture 27)](../../part-02/lecture-27/069-martingale-convergence.md)
 
 ## Sources
 

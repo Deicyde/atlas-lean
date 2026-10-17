@@ -8,7 +8,7 @@ lean: FourierAnalysis.SchwartzSpace
 
 # Definition 17.1
 
-A Schwartz function on $\mathbb{R}$ is a complex-valued $C^{\infty}$ function $f: \mathbb{R} \rightarrow \mathbb{C}$ that decays rapidly to zero: for all $m, n \in \mathbb{Z}_{\geq 0}$ we have $$\sup_{x \in \mathbb{R}}\left|x^{m} f^{(n)}(x)\right|<\infty$$ where $f^{(n)}$ denotes the $n$th derivative of $f$. The Schwartz space $\mathcal{S}(\mathbb{R})$ of all Schwartz functions on $\mathbb{R}$ is a (non-unital) $\mathbb{C}$-algebra of infinite dimension.
+A Schwartz function on $\mathbb{R}$ is a complex-valued $C^{\infty}$ function $f: \mathbb{R} \rightarrow \mathbb{C}$ that decays rapidly to zero: for all $m, n \in \mathbb{Z}_{\geq 0}$ we have $$\sup_{x \in \mathbb{R}}\left|x^{m} f^{(n)}(x)\right|\lt \infty$$ where $f^{(n)}$ denotes the $n$th derivative of $f$. The Schwartz space $\mathcal{S}(\mathbb{R})$ of all Schwartz functions on $\mathbb{R}$ is a (non-unital) $\mathbb{C}$-algebra of infinite dimension.
 
 ## Depends on
 

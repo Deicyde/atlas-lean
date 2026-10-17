@@ -13,7 +13,7 @@ Let $\mathcal{A}$ be an algebra, and let $\{E_n\}$ be a countable collection of 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (March 11, 2021)](../march-11/016-definition.md)
 
 ## Sources
 

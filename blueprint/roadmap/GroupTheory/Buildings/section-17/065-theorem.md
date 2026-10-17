@@ -13,7 +13,11 @@ With the hypothesis that $B$ is compact and open in $G$, the group $G^o$ of type
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Section 17.7)](068-definition.md)
+
+## Proof depends on
+
+- [Proposition (Section 17.7)](067-proposition.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ subgroup inclusion (ATLAS `exactSeq_map4` before the quotient lift).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 
 ## Sources
 

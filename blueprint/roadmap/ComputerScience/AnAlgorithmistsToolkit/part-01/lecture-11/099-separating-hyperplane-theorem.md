@@ -13,7 +13,7 @@ If $K$ is a convex body and $p$ is a point not contained in $K$, then there exis
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 2 (Lecture 10, Section 2)](../lecture-10/093-definition-2.md)
 
 ## Sources
 

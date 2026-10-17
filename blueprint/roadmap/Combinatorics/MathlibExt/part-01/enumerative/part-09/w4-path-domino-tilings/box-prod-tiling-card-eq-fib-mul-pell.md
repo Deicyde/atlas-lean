@@ -26,6 +26,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Box Prod tiling card eq fib mul pell Number](box-prod-tiling-card-eq-fib-mul-pell-num.md)
+- [Pell Number Sequence](../../../../../../NumberTheory/MathlibExt/part-08/pell-number.md)
 
 ## Sources
 

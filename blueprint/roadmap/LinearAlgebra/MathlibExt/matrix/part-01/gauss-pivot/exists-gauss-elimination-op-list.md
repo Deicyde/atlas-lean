@@ -22,6 +22,10 @@ https://en.wikipedia.org/wiki/Gaussian_elimination).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists unit Lower Triangular mul submatrix is Row Echelon](exists-unit-lower-triangular-mul-submatr.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.LinearAlgebra.Matrix.GaussPivot](../../../../../../sources/v2/MathlibExt.md)

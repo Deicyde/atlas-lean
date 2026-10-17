@@ -15,6 +15,10 @@ The residue field of the adic completion integers is finite.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Completion Residue Field Equiv](../../../../../../RingTheory/MathlibExt/dedekind-domain/adic-completion-residue-field/completion-residue-field-equiv.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.AdeleLocallyCompact](../../../../../../../sources/v2/MathlibExt.md)

@@ -14,7 +14,12 @@ General Bang–Zsigmondy existence of a primitive prime divisor of
 
 ## Depends on
 
+- [Is Primitive Prime Divisor](../../part-10/primitive-divisor/is-primitive-prime-divisor.md)
 - [Is Bang Zsigmondy Exceptional](is-bang-zsigmondy-exceptional.md)
+
+## Proof depends on
+
+- [Is Primitive Divisor](../../part-10/primitive-divisor/is-primitive-divisor.md)
 
 ## Sources
 

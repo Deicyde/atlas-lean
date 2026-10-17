@@ -2,9 +2,6 @@
 article_id: af_87c61562358b2eb14dc0a446
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
-lean: liouville_theorem
 ---
 
 # Theorem 14.30 (Liouville's Theorem)

@@ -22,6 +22,7 @@ If $\rho : G \to \operatorname{GL}(V)$ is an irreducible representation of dimen
 - [Proposition (Lecture 4, Section: More on Characters)](../../part-02/lecture-4/089-proposition.md)
 - [Theorem (Main Theorem)](../../part-02/lecture-4/091-main-theorem.md)
 - [Theorem (Schur's Lemma)](../../part-03/orthonormality-of-characters/095-schur-s-lemma.md)
+- [Proposition (Appendix: Dimensions of Irreducible Characters)](174-proposition.md)
 
 ## Sources
 

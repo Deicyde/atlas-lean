@@ -16,6 +16,7 @@ $B$ is $\mathsf{PSPACE}$-complete if (1) $B \in \mathsf{PSPACE}$, and (2) for al
 
 ## Proof depends on
 
+- [Definition (PSPACE and NPSPACE)](087-pspace-and-npspace.md)
 - [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
 
 ## Sources

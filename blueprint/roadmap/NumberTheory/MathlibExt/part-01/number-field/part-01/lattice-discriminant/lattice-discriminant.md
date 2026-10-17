@@ -2,8 +2,6 @@
 article_id: af_7545ef510cfd78da6da66f3c
 declaration: def
 origin: cited
-statement: formalized
-lean: latticeDiscriminant
 ---
 
 # Lattice Discriminant

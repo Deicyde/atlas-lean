@@ -18,6 +18,10 @@ this forwards.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ramanujan part1 ch5 entry8 eulerianformula](part1-ch5-entry8-eulerianformula/ramanujan-part1-ch5-entry8-eulerianformu.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch5Entry3Eulerianformula](../../../../../../sources/v2/MathlibExt.md)

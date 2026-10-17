@@ -14,6 +14,13 @@ For any $G$, $\delta \leq \frac{\ln(n)}{\lambda}$ where $\delta$ is the diameter
 ## Depends on
 
 - [Definition 1 (Lecture 1, Section 2)](../lecture-1/001-definition-1.md)
+- [Definition 1 (Section 1 (Diameters and Eigenvalues), Lecture 6)](045-definition-1.md)
+- [Definition 3 (Section 1 (Diameters and Eigenvalues), Lecture 6)](047-definition-3.md)
+
+## Proof depends on
+
+- [Theorem 6](../section-5/042-theorem-6.md)
+- [Assumption 2](056-assumption-2.md)
 
 ## Sources
 

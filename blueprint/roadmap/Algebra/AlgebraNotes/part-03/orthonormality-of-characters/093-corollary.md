@@ -17,6 +17,7 @@ Let $\rho: G \to \operatorname{GL}(V)$ be a representation. Let $\rho_1$, \ldots
 ## Proof depends on
 
 - [Theorem (Maschke's Theorem)](../../part-02/lecture-2/088-maschke-s-theorem.md)
+- [Theorem (Schur's Lemma)](095-schur-s-lemma.md)
 
 ## Sources
 

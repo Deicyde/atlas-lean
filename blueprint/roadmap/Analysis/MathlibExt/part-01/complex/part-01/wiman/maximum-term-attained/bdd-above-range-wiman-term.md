@@ -13,7 +13,12 @@ The radial Taylor terms are bounded above by their summable majorant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Term](../../../part-02/wiman/wiman-term.md)
+
+## Proof depends on
+
+- [Wiman Majorant](../radial-majorant/wiman-majorant.md)
+- [Wiman Term le wiman Majorant](../radial-majorant/wiman-term-le-wiman-majorant.md)
 
 ## Sources
 

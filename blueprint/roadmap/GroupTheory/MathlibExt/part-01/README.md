@@ -2,11 +2,12 @@
 article_id: af_b1385140a5dce86848f6c5ce
 ---
 
-# Burnside Paqb to HNNEmbedding
+# Burnside Paqb to Group Growth
 
 - [Burnside Paqb](burnside-paqb/README.md)
 - [Group Action](group-action/README.md)
 - [Permutation](permutation/README.md)
+- [Specific Groups](specific-groups/README.md)
 - [Abelian Representation](abelian-representation/README.md)
 - [Amenable Group](amenable-group/README.md)
 - [Artin Group](artin-group/README.md)
@@ -23,4 +24,3 @@ article_id: af_b1385140a5dce86848f6c5ce
 - [GHarmonic](gharmonic/README.md)
 - [General Linear Group Exponent](general-linear-group-exponent-eq-lcm-eq.md)
 - [Group Growth](group-growth/README.md)
-- [HNNEmbedding](higman-neumann-neumann-embedding.md)

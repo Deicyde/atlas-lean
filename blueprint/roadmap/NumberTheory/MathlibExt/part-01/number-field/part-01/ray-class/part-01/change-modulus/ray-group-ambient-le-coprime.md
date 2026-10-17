@@ -13,7 +13,12 @@ The ambient ray group lies in the coprime fractional ideals.
 
 ## Depends on
 
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 - [Ray Group Ambient](ray-group-ambient.md)
+
+## Proof depends on
+
+- [Ray Group](../../part-02/ray-group/ray-group.md)
 
 ## Sources
 

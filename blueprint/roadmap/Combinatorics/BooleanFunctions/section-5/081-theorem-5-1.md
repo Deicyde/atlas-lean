@@ -19,6 +19,7 @@ This node has no prerequisites.
 - [Claim 5.1](../lecture-4/022-claim-5-1.md)
 - [Theorem 1.1 (Section 1 (Motivation and statement))](../section-1/076-theorem-1-1.md)
 - [Corollary 5.3](../lecture-4/024-corollary-5-3.md)
+- [Theorem 5.2](082-theorem-5-2.md)
 
 ## Sources
 

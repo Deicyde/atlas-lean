@@ -16,6 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Adic Completion Integers Map](../finite-lies-over-valuation/adic-completion-integers-map.md)
 - [Finite Lies Over Maximal Ideal](../comap-maximal-ideal-adic-completion-inte.md)
 
 ## Sources

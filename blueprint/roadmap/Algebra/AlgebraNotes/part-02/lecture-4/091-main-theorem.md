@@ -17,8 +17,12 @@ Let $G$ be a finite group. Then: (a) The characters of irreducible representatio
 
 ## Proof depends on
 
+- [Proposition (Section: Span of Irreducible Characters)](../../part-03/span-of-irreducible-characters/098-proposition.md)
+- [Definition (Section: Span of Irreducible Characters)](../../part-03/span-of-irreducible-characters/099-definition.md)
+- [Lemma (Section: Span of Irreducible Characters)](../../part-03/span-of-irreducible-characters/097-lemma.md)
 - [Theorem (Maschke's Theorem)](../lecture-2/088-maschke-s-theorem.md)
 - [Proposition (Lecture 4, Section: More on Characters)](089-proposition.md)
+- [Theorem (Schur's Lemma)](../../part-03/orthonormality-of-characters/095-schur-s-lemma.md)
 
 ## Sources
 

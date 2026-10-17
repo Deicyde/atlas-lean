@@ -13,7 +13,7 @@ The functions $e^{inx}$, $n \in \mathbb{Z}$, form an orthonormal basis for $L^2(
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1](../orthonormal-bases/025-definition-1.md)
 
 ## Sources
 

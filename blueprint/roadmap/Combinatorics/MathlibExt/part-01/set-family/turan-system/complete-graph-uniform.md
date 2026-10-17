@@ -13,6 +13,7 @@ The complete `r`-graph is `r`-uniform.
 
 ## Depends on
 
+- [Is Uniform](../uniform-hypergraph/is-uniform.md)
 - [Complete Graph](complete-graph.md)
 
 ## Sources

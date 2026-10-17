@@ -14,6 +14,10 @@ A centered, variance-one two-point law is the normalized Bernoulli subclass.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Standardized Law](../../berry-esseen-model/part-01/is-standardized-law.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.BerryEsseenConstant](../../../../../../sources/v2/MathlibExt.md)

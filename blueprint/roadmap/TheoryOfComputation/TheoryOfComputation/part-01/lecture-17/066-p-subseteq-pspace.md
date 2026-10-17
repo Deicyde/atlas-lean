@@ -13,10 +13,11 @@ $\mathsf{P} \subseteq \mathsf{PSPACE}$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (PSPACE and NPSPACE)](../lecture-18/087-pspace-and-npspace.md)
 
 ## Proof depends on
 
+- [Definition (SPACE and NSPACE)](../lecture-18/086-space-and-nspace.md)
 - [Definition (SPACE complexity)](064-space-complexity.md)
 - [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
 - [Definition: Decider](../lecture-5/024-definition-decider.md)

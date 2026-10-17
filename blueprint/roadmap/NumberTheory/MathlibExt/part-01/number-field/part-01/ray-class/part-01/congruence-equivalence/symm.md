@@ -16,6 +16,11 @@ Equivalence of pairs is symmetric.
 - [Congruence Subgroup Pair](congruence-subgroup-pair.md)
 - [Is Equivalent](is-equivalent.md)
 
+## Proof depends on
+
+- [To Ambient Subgroup](../congruence-subgroup/to-ambient-subgroup.md)
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.RayClass.CongruenceEquivalence](../../../../../../../../../sources/v2/MathlibExt.md)

@@ -15,7 +15,7 @@ Given a monic polynomial $f \in \mathbb{F}_{q}[x]$, output an element $r \in \ma
 4. While $\operatorname{deg} g>1$:
    a. Pick a random $\delta \in \mathbb{F}_{q}$.
    b. Compute $h=\operatorname{gcd}\left(g,(x+\delta)^{s}-1\right)$.
-   c. If $0<\operatorname{deg} h<\operatorname{deg} g$ then replace $g$ by $h$ or $g/h$, whichever has lower degree.
+   c. If $0\lt \operatorname{deg} h\lt \operatorname{deg} g$ then replace $g$ by $h$ or $g/h$, whichever has lower degree.
 5. Return $r$, where $g(x)=x-r$.
 
 ## Depends on

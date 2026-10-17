@@ -12,7 +12,13 @@ Compute unit-cost edit distance and one deterministic minimum-cost script.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edit Distance Cost](../script/edit-distance-cost.md)
+- [Edit Distance Result](../script/edit-distance-result.md)
+
+## Proof depends on
+
+- [Edit Script](../script/edit-script.md)
+- [Edit Step](../script/edit-step.md)
 
 ## Sources
 

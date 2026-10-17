@@ -14,6 +14,7 @@ Consider the linear regression model (2.2) under the assumption ORT or, equivale
 ## Depends on
 
 - [Definition 2.10](027-definition-2-10.md)
+- [Assumption ORT](../section-2/035-assumption-ort.md)
 
 ## Proof depends on
 

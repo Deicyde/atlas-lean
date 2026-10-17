@@ -20,7 +20,7 @@ Proof: Following Dil, Kurt, and Cenkci, Proposition 5, the proof is induction on
 
 ## Depends on
 
-- [Generalized Stirling Second](../../part-03/generalized-stirling-numbers/generalized-stirling-second.md)
+- [Generalized Stirling Second](../../part-04/generalized-stirling-numbers/generalized-stirling-second.md)
 
 ## Proof depends on
 

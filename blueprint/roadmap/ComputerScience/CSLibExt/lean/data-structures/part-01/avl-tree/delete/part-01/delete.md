@@ -12,7 +12,7 @@ lean: Cslib.Algorithms.Lean.AvlTree.delete
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../../avl-tree-2/part-01/tree.md)
 
 ## Proof depends on
 

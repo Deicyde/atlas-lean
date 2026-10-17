@@ -27,6 +27,8 @@ Rebalancing preserves the inorder traversal.
 - [Height](../part-01/height.md)
 - [Mk Node](../part-01/mk-node.md)
 - [To Binary Tree](../part-01/to-binary-tree.md)
+- [Inorder](../../../part-02/binary-search-tree/part-01/inorder.md)
+- [Inorder Aux](../../../part-02/binary-search-tree/part-01/inorder-aux.md)
 
 ## Sources
 

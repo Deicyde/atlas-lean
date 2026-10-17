@@ -15,6 +15,10 @@ If $R$ is a unique factorization domain, then $R[x]$ is also a unique factorizat
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary (Corollary \ref{primitive})](121-corollary-ref-primitive.md)
+
 ## Sources
 
 - [MIT RES.18-011 Algebra I Student Notes (Fall 2021), Lecture 13, Section on Factoring Integer Polynomials](../../../../../sources/v1/AlgebraNotes.md)

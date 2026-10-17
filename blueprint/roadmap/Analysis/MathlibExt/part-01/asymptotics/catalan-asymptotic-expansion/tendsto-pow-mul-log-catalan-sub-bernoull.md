@@ -4,7 +4,7 @@ declaration: theorem
 origin: cited
 statement: formalized
 proof: formalized
-lean: MetaMathlibExt._root_.tendsto_pow_mul_log_catalan_sub_bernoulli_sum
+lean: tendsto_pow_mul_log_catalan_sub_bernoulli_sum
 ---
 
 # Tendsto pow mul log catalan sub bernoulli sum
@@ -15,6 +15,10 @@ arbitrary real shift, with coefficients given by differences of Bernoulli polyno
 ## Depends on
 
 This node has no prerequisites.
+
+## Proof depends on
+
+- [Tendsto pow mul sub bernoulli sum of log diff](tendsto-pow-mul-sub-bernoulli-sum-of-log.md)
 
 ## Sources
 

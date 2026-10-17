@@ -12,6 +12,7 @@ For $M$ compact, Kahler, $H_{\bar{\partial}}^{p,q}(M) = \mathcal{H}_{\bar{\squar
 
 ## Depends on
 
+- [Definition 2 (Lecture 15, Section 1, Hodge Theory)](../lecture-15/035-definition-2.md)
 - [Definition 7](../lecture-2/011-definition-7.md)
 
 ## Sources

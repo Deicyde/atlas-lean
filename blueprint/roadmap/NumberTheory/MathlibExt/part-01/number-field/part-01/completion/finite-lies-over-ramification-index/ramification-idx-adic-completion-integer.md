@@ -13,12 +13,14 @@ The canonical map on finite-place completion integer rings preserves ramificatio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adic Completion Integers Map](../finite-lies-over-valuation/adic-completion-integers-map.md)
 
 ## Proof depends on
 
 - [Adic Completion Integers Map injective](adic-completion-integers-map-injective.md)
 - [Finite Lies Over Maximal Ideal](../comap-maximal-ideal-adic-completion-inte.md)
+- [Valuation adic Completion Map](../finite-lies-over-valuation/valuation-adic-completion-map.md)
+- [Add Val algebra Map eq ramification Idx mul](../../../../../../../RingTheory/MathlibExt/ramification-inertia/valuation/add-val-algebra-map-eq-ramification-idx.md)
 
 ## Sources
 

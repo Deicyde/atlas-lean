@@ -12,7 +12,8 @@ Every elliptic operator has a pseudoinverse.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition 1 (Lecture 16)](034-definition-1.md)
+- [Definition 5 (Lecture 15, Section 1, Hodge Theory)](../lecture-15/043-definition-5.md)
 
 ## Sources
 

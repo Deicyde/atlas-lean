@@ -21,6 +21,7 @@ membership; inherited from `BinarySearchTree`.
 ## Proof depends on
 
 - [To Binary Tree](to-binary-tree.md)
+- [All iff forall mem](../../../part-02/binary-search-tree/part-01/all-iff-forall-mem.md)
 
 ## Sources
 

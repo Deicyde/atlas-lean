@@ -13,6 +13,10 @@ If $A \subseteq [N]$ then $$\operatorname{Avg}_{p \in P_{N^{1/2}}} \operatorname
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Corollary 4](027-corollary-4.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section: The large sieve, Subsection: The Large Sieve](../../../../../sources/v1/ProjectionTheory.md)

@@ -17,6 +17,7 @@ Every pure morphic word is morphic via the identity coding (concept
 ## Depends on
 
 - [Is Morphic](is-morphic.md)
+- [Is Pure Morphic](../pure-morphic-word/is-pure-morphic.md)
 
 ## Sources
 

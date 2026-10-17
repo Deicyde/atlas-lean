@@ -2,8 +2,6 @@
 article_id: af_a063c47e45f8b873d5a87b33
 declaration: def
 origin: cited
-statement: formalized
-lean: IsogenyVolcano.volcanoDepth
 ---
 
 # Volcano Depth

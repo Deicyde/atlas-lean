@@ -15,6 +15,10 @@ Let $B_1, B_2$ be two Banach spaces, and let $T \in \mathcal{B}(B_1, B_2)$ be a 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Theorem (Baire Category Theorem)](../february-23/007-baire-category-theorem.md)
+
 ## Sources
 
 - [MIT 18.102 Introduction to Functional Analysis (Spring 2021), February 25, 2021 lecture](../../../../../sources/v1/IntroductionToFunctionalAnalysis.md)

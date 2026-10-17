@@ -14,7 +14,8 @@ Proves `Wanted` entry `ramanujan_part1_ch7_entry20_generalizedbernoullisum`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chapter7 Phi Argument](part1-ch7-phi/chapter7-phi-argument.md)
+- [Chapter7 Phi](part1-ch7-phi/chapter7-phi.md)
 
 ## Sources
 

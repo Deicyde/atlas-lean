@@ -13,7 +13,9 @@ $\Delta = 2\square = 2\bar{\square}$.
 
 ## Depends on
 
+- [Definition 2 (Lecture 15, Section 1, Hodge Theory)](../lecture-15/035-definition-2.md)
 - [Definition 7](../lecture-2/011-definition-7.md)
+- [Definition 3 (Lecture 15, Section 1, Hodge Theory)](../lecture-15/036-definition-3.md)
 
 ## Proof depends on
 

@@ -11,11 +11,12 @@ $\mathrm{LADDER}_{\mathrm{DFA}} \in \mathsf{NPSPACE}$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (PSPACE and NPSPACE)](../lecture-18/087-pspace-and-npspace.md)
 
 ## Proof depends on
 
 - [Definition ($LADDER_{DFA}$)](073-ladder-dfa.md)
+- [Theorem (LADDER_DFA ∈ NSPACE(n))](090-n.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ Remove the leftmost key of a tree, rebalancing on the way back up.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tree](../../../avl-tree-2/part-01/tree.md)
+
+## Proof depends on
+
+- [Balance](../../../avl-tree-2/part-01/balance.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ Let $\{x_n\}$ be a monotone decreasing function. Then, $\{x_n\}$ is convergent i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/017-definition.md)
+- [Definition (Sequence Convergence of Reals) (Sequences and Series, Sequences and Limits) (1)](../sequences-and-series/022-sequence-convergence-of-reals.md)
+- [Definition (Monotone) (Convergent Sequences of the Real Numbers section) (1)](023-monotone.md)
 
 ## Sources
 

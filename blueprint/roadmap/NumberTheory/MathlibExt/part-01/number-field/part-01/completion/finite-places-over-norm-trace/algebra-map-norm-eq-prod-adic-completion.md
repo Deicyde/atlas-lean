@@ -16,6 +16,11 @@ norm part).
 
 - [Places Over](../finite-places-over/places-over.md)
 
+## Proof depends on
+
+- [Completion Tensor Product Right Alg Equiv](../finite-places-over-tensor-product-equiv/completion-tensor-product-right-alg-equi.md)
+- [Completion Tensor Product Right Alg Equiv tmul one](../finite-places-over-tensor-product-equiv/completion-tensor-product-right-alg-equi-2.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.Completion.FinitePlacesOverNormTrace](../../../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,11 @@ Every normalized radial Taylor term is nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wiman Term](../../../part-02/wiman/wiman-term.md)
+
+## Proof depends on
+
+- [Wiman Taylor Coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
 
 ## Sources
 

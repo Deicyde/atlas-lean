@@ -12,9 +12,6 @@ ATLAS v1 selected 186 statements from this source in
 matched to each in [`report.json`](https://github.com/facebookresearch/atlas-lean/blob/main/v1/Atlas/AlgebraicGeometryI/report.json). Each roadmap article
 reproduces one target's statement and the source location it names.
 
-380 roadmap edges come from the source text rather than
+402 roadmap edges come from the source text rather than
 the Lean code; each is recorded with its evidence in
 [`book-dependencies/AlgebraicGeometryI.json`](book-dependencies/AlgebraicGeometryI.json).
-
-22 dependencies point to a statement placed later in this
-wiki and are not drawn as roadmap edges, which keeps every chapter acyclic.

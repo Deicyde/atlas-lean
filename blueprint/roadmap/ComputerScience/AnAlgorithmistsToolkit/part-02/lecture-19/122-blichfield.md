@@ -13,7 +13,12 @@ For any full rank lattice $L$ and measurable set $S \subseteq \mathbb{R}^n$ with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Definition (Lattice)](../lecture-18/130-lattice.md)
+- [Definition (Determinant of lattice)](../lecture-18/137-determinant-of-lattice.md)
+
+## Proof depends on
+
+- [Definition (Fundamental parallelepiped)](../lecture-18/131-fundamental-parallelepiped.md)
 
 ## Sources
 

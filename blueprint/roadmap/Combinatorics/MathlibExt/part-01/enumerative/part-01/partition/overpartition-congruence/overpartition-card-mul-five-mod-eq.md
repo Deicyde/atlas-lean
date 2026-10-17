@@ -14,6 +14,7 @@ Canonical API form of the overpartition congruence.
 ## Depends on
 
 - [Overpartition](../overpartition/overpartition.md)
+- [Three Square Representation Count](../../../../../../../NumberTheory/MathlibExt/part-02/quadratic-forms/three-squares/three-square-representation-count.md)
 
 ## Proof depends on
 

@@ -21,7 +21,7 @@ forms αⁿ±βⁿ*, Ann. of Math. (2) 15 (1913), 30–70).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Primitive Divisor](../part-02/is-primitive-divisor.md)
 
 ## Proof depends on
 

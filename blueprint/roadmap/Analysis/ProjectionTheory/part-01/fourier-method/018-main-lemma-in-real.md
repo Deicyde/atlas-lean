@@ -14,6 +14,10 @@ Let $\mathcal{T}$ be a set of $1 \times R$ rectangles in $\mathbb{R}^2$. Let $f 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma (Orthogonality)](019-orthogonality.md)
+
 ## Sources
 
 - [MIT 18.156 Projection Theory (Spring 2025), Section: Fourier Method](../../../../../sources/v1/ProjectionTheory.md)

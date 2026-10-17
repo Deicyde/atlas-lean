@@ -15,6 +15,7 @@ Suppose $A$ and $B$ are closed subsets of a normal space, or compact subsets of 
 
 ## Proof depends on
 
+- [Lemma 35.8](156-lemma-35-8.md)
 - [Definition 26.8](../../part-01/section-26/113-definition-26-8.md)
 
 ## Sources

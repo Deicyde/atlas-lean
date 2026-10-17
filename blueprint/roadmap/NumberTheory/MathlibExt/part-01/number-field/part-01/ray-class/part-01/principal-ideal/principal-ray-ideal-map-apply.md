@@ -13,7 +13,9 @@ Pointwise evaluation of the principal-ideal map on ray elements.
 
 ## Depends on
 
+- [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 - [Principal Ray Ideal Map](principal-ray-ideal-map.md)
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
 
 ## Sources
 

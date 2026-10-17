@@ -17,6 +17,8 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Is Bernoulli Law](../part-01/is-bernoulli-law.md)
+- [Kolmogorov Error](../../berry-esseen-model/part-01/kolmogorov-error.md)
+- [Third Moment](../../berry-esseen-model/part-01/third-moment.md)
 
 ## Sources
 

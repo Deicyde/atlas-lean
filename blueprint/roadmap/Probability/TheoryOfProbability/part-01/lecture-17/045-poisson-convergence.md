@@ -13,6 +13,7 @@ Let $X_{n,m}$ be independent $\{0,1\}$-valued random variables with $P(X_{n,m} =
 ## Depends on
 
 - [Definition (weak convergence)](../lecture-12/031-weak-convergence.md)
+- [Definition (Poisson random variable)](047-poisson-random-variable.md)
 
 ## Proof depends on
 

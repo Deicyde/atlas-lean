@@ -11,7 +11,12 @@ Assuming the Unique-Games Conjecture, for all $\rho \in (0,1)$ and $\varepsilon 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture 3.6 (The Unique-Games Conjecture)](../lecture-15/095-the-unique-games-conjecture.md)
+
+## Proof depends on
+
+- [Definition 3.5 (Lecture 15, Section 3.2)](../lecture-15/094-definition-3-5.md)
+- [Lemma 2.4](099-lemma-2-4.md)
 
 ## Sources
 

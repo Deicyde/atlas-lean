@@ -1,7 +1,10 @@
 ---
 article_id: af_b4a1f8250fb2b357412a7d91
-declaration: theorem
+declaration: alias
 origin: cited
+statement: formalized
+proof: formalized
+lean: GeometryOfNumbers.covol_ring_of_integers
 ---
 
 # Proposition 14.16

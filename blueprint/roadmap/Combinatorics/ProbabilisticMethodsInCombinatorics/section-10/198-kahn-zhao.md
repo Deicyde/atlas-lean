@@ -20,6 +20,7 @@ This node has no prerequisites.
 - [Lemma 10.1.10 (Dropping conditioning)](../chapter-10/177-dropping-conditioning.md)
 - [Theorem 10.4.1 (Shearer's lemma, special case)](191-shearer-s-lemma-special-case.md)
 - [Theorem 10.4.5 (Shearer's lemma)](194-shearer-s-lemma.md)
+- [Lemma 10.4.13](199-lemma-10-4-13.md)
 
 ## Sources
 

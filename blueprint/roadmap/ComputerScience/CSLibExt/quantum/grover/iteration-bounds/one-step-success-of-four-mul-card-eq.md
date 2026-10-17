@@ -22,8 +22,12 @@ succeeds with probability one.
 
 - [Amplitude](../basic/amplitude.md)
 - [Grover Step](../diffusion/grover-step.md)
+- [Marked Amplitude Next](../symmetry/marked-amplitude-next.md)
 - [Mean Amplitude](../diffusion/mean-amplitude.md)
+- [Oracle Mean](../symmetry/oracle-mean.md)
 - [Phase Oracle](../basic/phase-oracle.md)
+- [Symmetric Amplitude](../symmetry/symmetric-amplitude.md)
+- [Unmarked Amplitude Next](../symmetry/unmarked-amplitude-next.md)
 
 ## Sources
 

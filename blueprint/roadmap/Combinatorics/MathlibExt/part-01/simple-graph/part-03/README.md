@@ -2,8 +2,9 @@
 article_id: af_b5f2dd5ee5b8f297d963edf0
 ---
 
-# Matrix Tree to Vertex Transitive
+# Part 3 of 4
 
+- [Longest Cycle](is-longest-cycle.md)
 - [Matrix Tree](matrix-tree/README.md)
 - [Menger Edge](menger-edge/README.md)
 - [Nash Williams](nash-williams/README.md)
@@ -14,6 +15,7 @@ article_id: af_b5f2dd5ee5b8f297d963edf0
 - [Planarity](planarity/README.md)
 - [Ramsey](ramsey/README.md)
 - [Riha](riha/README.md)
+- [Rook Graph](rook-graph/README.md)
 - [Saturating Nonedge](saturating-nonedge/README.md)
 - [Saturation](saturation/README.md)
 - [Simplex Graph](simplex-graph/README.md)
@@ -22,5 +24,3 @@ article_id: af_b5f2dd5ee5b8f297d963edf0
 - [Strongly Regular](strongly-regular/README.md)
 - [Subgraph Isomorphism](subgraph-isomorphism/README.md)
 - [Transfer Matrix Of GRH](transfer-matrix-of-grh/README.md)
-- [Vertex Connectivity](vertex-connectivity/README.md)
-- [Vertex Transitive](is-vertex-transitive.md)

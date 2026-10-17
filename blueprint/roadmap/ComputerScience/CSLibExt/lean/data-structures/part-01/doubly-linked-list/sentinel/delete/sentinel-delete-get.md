@@ -13,10 +13,14 @@ Every returned cell follows the predecessor write and then the carried successor
 
 ## Depends on
 
+- [Node](../../basic/node.md)
 - [Sentinel Delete](sentinel-delete.md)
 
 ## Proof depends on
 
+- [List Delete](../../delete/list-delete.md)
+- [List Delete get](../../delete/list-delete-get.md)
+- [List Delete ret](../../delete/list-delete-ret.md)
 - [Sentinel Delete ret](sentinel-delete-ret.md)
 
 ## Sources

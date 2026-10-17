@@ -30,6 +30,10 @@ following Elezović.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Tendsto pow mul log catalan sub bernoulli sum](catalan-asymptotic-expansion/tendsto-pow-mul-log-catalan-sub-bernoull.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Asymptotics.CatalanOddTermsShift](../../../../../sources/v2/MathlibExt.md)

@@ -13,6 +13,10 @@ Let $k$ be a field of characteristic zero. Then the tensor product of two simple
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lemma 1.30.2](086-lemma-1-30-2.md)
+
 ## Sources
 
 - [MIT 18.769 Topics in Lie Theory: Tensor Categories (Spring 2009), Section 1.30](../../../../../../sources/v1/TensorCategories.md)

@@ -13,7 +13,7 @@ We have $\|f\|^2_{L^2} \lesssim |\mathcal{L}| q + |\mathcal{L}|^2$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lemma (Main lemma in finite field)](../fourier-method/017-main-lemma-in-finite-field.md)
 
 ## Sources
 

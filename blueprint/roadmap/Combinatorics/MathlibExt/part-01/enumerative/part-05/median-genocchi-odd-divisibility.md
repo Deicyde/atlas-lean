@@ -25,12 +25,18 @@ instead of his continued fraction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Median Genocchi Odd](median-genocchi-number/median-genocchi-odd.md)
 
 ## Proof depends on
 
 - [Euler Seidel Matrix](../part-02/euler-seidel-matrix/euler-seidel-matrix.md)
 - [Euler Seidel Matrix eq sum](../part-02/euler-seidel-matrix/euler-seidel-matrix-eq-sum.md)
+- [Genocchi Number](../../../../../NumberTheory/MathlibExt/part-06/genocchi-number/genocchi-number.md)
+- [Genocchi Number Via Bernoulli](median-genocchi-number/genocchi-number-via-bernoulli.md)
+- [Genocchi Number Via Bernoulli eq genocchi Number](../../../../../NumberTheory/MathlibExt/part-06/genocchi-bernoulli/genocchi-number-via-bernoulli-eq-genocch.md)
+- [Genocchi Number eq](../../../../../NumberTheory/MathlibExt/part-06/genocchi-number/genocchi-number-eq.md)
+- [Genocchi Power Series](../../../../../NumberTheory/MathlibExt/part-06/genocchi-number/genocchi-power-series.md)
+- [Genocchi Power Series eq](../../../../../NumberTheory/MathlibExt/part-06/genocchi-number/genocchi-power-series-eq.md)
 
 ## Sources
 

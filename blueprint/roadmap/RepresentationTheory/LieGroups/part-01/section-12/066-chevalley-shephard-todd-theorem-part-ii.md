@@ -15,8 +15,11 @@ If $G$ is a complex reflection group then for any irreducible representation $\r
 
 ## Proof depends on
 
+- [Proposition 12.9](073-proposition-12-9.md)
 - [Theorem 10.6 (Chevalley-Shephard-Todd theorem, part I)](../section-10/060-chevalley-shephard-todd-theorem-part-i.md)
 - [Proposition 12.1 (Hilbert-Noether theorem)](065-hilbert-noether-theorem.md)
+- [Lemma 12.3](067-lemma-12-3.md)
+- [Proposition 12.10](074-proposition-12-10.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Ray elements positive at all infinite places of the modulus.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ray Elements](../../part-02/ray-group/ray-elements.md)
 
 ## Proof depends on
 
