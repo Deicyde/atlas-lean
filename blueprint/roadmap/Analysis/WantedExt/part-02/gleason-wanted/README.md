@@ -2,7 +2,7 @@
 article_id: af_c81af1ae83d03a3cfd1b87d0
 ---
 
-# Gleason Wanted
+# Gleason
 
 - [Is Orth Proj](is-orth-proj.md)
 - [Frame Function](frame-function.md)

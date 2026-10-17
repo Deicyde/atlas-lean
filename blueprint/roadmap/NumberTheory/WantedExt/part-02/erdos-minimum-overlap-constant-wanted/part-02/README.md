@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 2 of 2
 
 - [Upper Bound Erdos unpublished four Ninths holds](upper-bound-erdos-unpublished-four-ninth.md)

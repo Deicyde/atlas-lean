@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 2 of 2
 
 - [Selberg Constant le of dominates Selberg](selberg-constant-le-of-dominates-selberg.md)

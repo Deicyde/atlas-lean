@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 1 of 2
 
 - [Ne nil of forall output ne nil](ne-nil-of-forall-output-ne-nil.md)

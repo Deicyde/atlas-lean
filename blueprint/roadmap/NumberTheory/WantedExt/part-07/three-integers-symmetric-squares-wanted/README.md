@@ -1,4 +1,4 @@
-# Three Integers Symmetric Squares Wanted
+# Three Integers Symmetric Squares
 
 - [Has Square Elementary Symmetric Functions](has-square-elementary-symmetric-function.md)
 - [Has Square Elementary Symmetric Functionsℚ](has-square-elementary-symmetric-function-2.md)

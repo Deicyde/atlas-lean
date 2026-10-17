@@ -1,4 +1,4 @@
-# Motivic Invariants Wanted
+# Motivic Invariants
 
 - [Birational Map](birational-map.md)
 - [Refl](refl.md)

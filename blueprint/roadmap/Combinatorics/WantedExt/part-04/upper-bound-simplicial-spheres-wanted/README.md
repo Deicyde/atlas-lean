@@ -1,4 +1,4 @@
-# Upper Bound Simplicial Spheres Wanted
+# Upper Bound Simplicial Spheres
 
 - [E](e.md)
 - [Cyclic H](cyclic-h.md)

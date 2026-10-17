@@ -1,4 +1,4 @@
-# Reverse Divisor Wanted
+# Reverse Divisor
 
 - [Is Reverse Divisor](is-reverse-divisor.md)
 - [Is Reverse Divisor iff](is-reverse-divisor-iff.md)

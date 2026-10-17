@@ -1,4 +1,4 @@
-# Delannoy Triangle Wanted
+# Delannoy Triangle
 
 - [Harmonic Mod](harmonic-mod.md)
 - [Harmonic2 Mod](harmonic2-mod.md)

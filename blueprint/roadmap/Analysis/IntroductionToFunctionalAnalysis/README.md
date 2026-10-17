@@ -1,5 +1,6 @@
 ---
 article_id: af_3fa9e6b3ab619b10aaf84a55
+navigation: source
 ---
 
 # MIT 18.102 Introduction to Functional Analysis (Spring 2021)

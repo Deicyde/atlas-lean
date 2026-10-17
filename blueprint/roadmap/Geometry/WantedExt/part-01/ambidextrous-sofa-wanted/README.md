@@ -1,4 +1,4 @@
-# Ambidextrous Sofa Wanted
+# Ambidextrous Sofa
 
 - [Hammersley upper](hammersley-upper.md)
 - [Baek upper](baek-upper.md)

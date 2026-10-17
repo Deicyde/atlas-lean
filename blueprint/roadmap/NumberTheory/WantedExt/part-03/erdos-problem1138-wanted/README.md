@@ -1,4 +1,4 @@
-# Erdos Problem1138 Wanted
+# Erdos Problem1138
 
 - [Sup prime Gap](sup-prime-gap.md)
 - [Snd gt half fst](snd-gt-half-fst.md)

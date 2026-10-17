@@ -1,4 +1,4 @@
-# Prime Two Accessibility Wanted
+# Prime Two Accessibility
 
 - [Is Monochromatic](is-monochromatic.md)
 - [Is SDiff Sequence](is-sdiff-sequence.md)

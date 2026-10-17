@@ -1,4 +1,4 @@
-# Oeis A002897 Wanted
+# Oeis A002897
 
 - [A](a.md)
 - [Vars](vars.md)

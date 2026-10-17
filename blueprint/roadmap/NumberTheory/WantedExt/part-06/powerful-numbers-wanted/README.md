@@ -1,4 +1,4 @@
-# Powerful Numbers Wanted
+# Powerful Numbers
 
 - [Lemma 1](int-sq-sub-int-sq-ne-two.md)
 - [Lemma 2](three-exact-dvd-sq-add-self-add-one.md)

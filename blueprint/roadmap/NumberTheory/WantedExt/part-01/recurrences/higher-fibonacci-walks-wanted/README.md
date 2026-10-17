@@ -1,4 +1,4 @@
-# Higher Fibonacci Walks Wanted
+# Higher Fibonacci Walks
 
 - [Is Higher Fib Recurrence](is-higher-fib-recurrence.md)
 - [Is Standard Higher Fib](is-standard-higher-fib.md)

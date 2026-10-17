@@ -2,7 +2,7 @@
 article_id: af_bfd02cd1f87f264fa910cd83
 ---
 
-# Duffin Schaeffer Conjecture Wanted
+# Duffin Schaeffer Conjecture
 
 - [Inequality 1 7](inequality-1-7.md)
 - [𝒜](untitled.md)

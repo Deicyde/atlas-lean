@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 1 of 4
 
 - [Dart Diagram](dart-diagram.md)

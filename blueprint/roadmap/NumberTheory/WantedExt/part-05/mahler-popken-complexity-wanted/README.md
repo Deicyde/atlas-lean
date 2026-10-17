@@ -1,4 +1,4 @@
-# Mahler Popken Complexity Wanted
+# Mahler Popken Complexity
 
 - [Mahler Popken Expr](mahler-popken-expr.md)
 - [Eval](eval.md)

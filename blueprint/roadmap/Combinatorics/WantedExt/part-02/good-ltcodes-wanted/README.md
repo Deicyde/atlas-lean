@@ -2,7 +2,7 @@
 article_id: af_58b93865d3a7062d5e0dc774
 ---
 
-# Good LTCodes Wanted
+# Good LTCodes
 
 - [Binary Code](binary-code.md)
 - [Dim](dim.md)

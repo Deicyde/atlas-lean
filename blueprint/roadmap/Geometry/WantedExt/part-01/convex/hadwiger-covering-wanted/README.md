@@ -2,7 +2,7 @@
 article_id: af_bb85ad678cca97af5ba37b6e
 ---
 
-# Hadwiger Covering Wanted
+# Hadwiger Covering
 
 - [Homothet Interior Translate Formulations Equivalent](homothet-interior-translate-formulations.md)
 - [Papadoperakis1999 Upper Bound](papadoperakis1999-upper-bound.md)

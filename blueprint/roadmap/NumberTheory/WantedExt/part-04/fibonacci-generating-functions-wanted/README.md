@@ -1,4 +1,4 @@
-# Fibonacci Generating Functions Wanted
+# Fibonacci Generating Functions
 
 - [Gibonacci Generating Value](gibonacci-generating-value.md)
 - [Gibonacci Generating Value zero](gibonacci-generating-value-zero.md)

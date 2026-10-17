@@ -1,4 +1,4 @@
-# Binary Quadratic Arithmetic Progressions Wanted
+# Binary Quadratic Arithmetic Progressions
 
 - [Exists int representations of rat arithmetic progression](exists-int-representations-of-rat-arithm.md)
 - [Exists representation nine term diagonal quadratic](exists-representation-nine-term-diagonal.md)

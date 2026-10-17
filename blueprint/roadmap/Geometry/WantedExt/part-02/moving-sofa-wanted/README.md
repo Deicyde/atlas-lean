@@ -1,4 +1,4 @@
-# Moving Sofa Wanted
+# Moving Sofa
 
 - [Hammersley upper](hammersley-upper.md)
 - [Kallus romik upper](kallus-romik-upper.md)

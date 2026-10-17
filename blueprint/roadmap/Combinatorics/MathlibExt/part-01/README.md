@@ -1,5 +1,6 @@
 ---
 article_id: af_115d0e3c9d497dc5e2f8bf7c
+navigation: transparent
 ---
 
 # AP to Alternating Binomial Partial Sum

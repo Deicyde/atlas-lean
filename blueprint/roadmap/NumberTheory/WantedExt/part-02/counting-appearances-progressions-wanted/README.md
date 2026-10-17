@@ -1,4 +1,4 @@
-# Counting Appearances Progressions Wanted
+# Counting Appearances Progressions
 
 - [Ones Diag Det](ones-diag-det.md)
 - [Bordered Ones Diag](bordered-ones-diag.md)

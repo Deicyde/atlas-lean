@@ -1,4 +1,4 @@
-# Nonseparating Planar Continuum Wanted
+# Nonseparating Planar Continuum
 
 - [Has Fixed Point Property](has-fixed-point-property.md)
 - [Conjecture](conjecture.md)

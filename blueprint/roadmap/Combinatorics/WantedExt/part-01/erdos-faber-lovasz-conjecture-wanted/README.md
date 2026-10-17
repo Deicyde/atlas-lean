@@ -2,7 +2,7 @@
 article_id: af_fc4018f0338b1cc033dd2668
 ---
 
-# Erdos Faber Lovasz Conjecture Wanted
+# Erdos Faber Lovasz Conjecture
 
 - [Hypergraph](hypergraph.md)
 - [Coloring](coloring.md)

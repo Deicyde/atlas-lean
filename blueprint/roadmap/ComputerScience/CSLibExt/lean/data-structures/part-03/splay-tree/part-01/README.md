@@ -1,5 +1,6 @@
 ---
 article_id: af_40fd5b717c2c73a4eb84c2bb
+navigation: transparent
 ---
 
 # Part 1 of 2

@@ -1,4 +1,4 @@
-# Sums Of Powers A304330 Wanted
+# Sums Of Powers A304330
 
 - [Power Sum](power-sum.md)
 - [Array R](array-r.md)

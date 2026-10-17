@@ -1,5 +1,6 @@
 ---
 article_id: af_c52d6cfbfd9cfdd7301aecd1
+navigation: transparent
 ---
 
 # Lecture 25 to Appendix: Dimensions of Irreducible Characters

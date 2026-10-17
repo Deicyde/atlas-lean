@@ -1,4 +1,4 @@
-# Local Global Apollonian Circle Packings Wanted
+# Local Global Apollonian Circle Packings
 
 - [General Linear Group Action](general-linear-group-action.md)
 - [Descartes Matrix](descartes-matrix.md)

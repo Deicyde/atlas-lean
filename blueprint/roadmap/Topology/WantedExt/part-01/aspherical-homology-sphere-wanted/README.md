@@ -2,7 +2,7 @@
 article_id: af_da7ff3bf210458cc2f184db2
 ---
 
-# Aspherical Homology Sphere Wanted
+# Aspherical Homology Sphere
 
 - [Closed4 Manifold](closed4-manifold.md)
 - [Int Homology](int-homology.md)

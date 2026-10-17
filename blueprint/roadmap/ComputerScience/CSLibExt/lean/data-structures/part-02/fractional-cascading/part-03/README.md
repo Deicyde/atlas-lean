@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 3 of 3
 
 - [Search All nil](search-all-nil.md)

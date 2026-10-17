@@ -1,4 +1,4 @@
-# Gauss Primitive Roots Wanted
+# Gauss Primitive Roots
 
 - [Mul Ord Mod](mul-ord-mod.md)
 - [Unit Reduce Sq](unit-reduce-sq.md)

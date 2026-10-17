@@ -2,7 +2,7 @@
 article_id: af_084d85083eb78b0483342ca3
 ---
 
-# Binary Chvatal Sankoff Wanted
+# Binary Chvatal Sankoff
 
 - [Part 1 of 3](part-01/README.md)
 - [Part 2 of 3](part-02/README.md)

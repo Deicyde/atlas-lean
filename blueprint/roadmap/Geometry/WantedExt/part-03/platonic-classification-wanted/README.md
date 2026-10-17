@@ -1,4 +1,4 @@
-# Platonic Classification Wanted
+# Platonic Classification
 
 - [E](e.md)
 - [Convex Polytope](convex-polytope.md)

@@ -1,4 +1,4 @@
-# On Approximation Of Reals Wanted
+# On Approximation Of Reals
 
 - [Height](height.md)
 - [Algebraic Deg LE](algebraic-deg-le.md)

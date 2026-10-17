@@ -1,5 +1,6 @@
 ---
 article_id: af_016fa0858773dcd9ca416368
+navigation: source
 ---
 
 # MIT 18.769 Topics in Lie Theory: Tensor Categories (Spring 2009)

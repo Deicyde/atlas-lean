@@ -1,4 +1,4 @@
-# Real Closed Field QEWanted
+# Real Closed Field QE
 
 - [Term](term.md)
 - [Formula](formula.md)

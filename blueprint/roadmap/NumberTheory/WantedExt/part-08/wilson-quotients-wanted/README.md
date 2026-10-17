@@ -1,4 +1,4 @@
-# Wilson Quotients Wanted
+# Wilson Quotients
 
 - [Wilson Quotient M](wilson-quotient-m.md)
 - [Wilson Quotient MPlus](wilson-quotient-mplus.md)

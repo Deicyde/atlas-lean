@@ -1,5 +1,6 @@
 ---
 article_id: af_14c5222ca94ea218c79d528d
+navigation: source
 ---
 
 # MIT 18.100A Real Analysis (Fall 2020)

@@ -1,4 +1,4 @@
-# Ramanujan Harmonic Identity Wanted
+# Ramanujan Harmonic Identity
 
 - [Corollary 1](sum-choose-sub-choose-mul-harmonic-succ.md)
 - [Corollary 2](sum-choose-sub-choose-mul-harmonic-eq-ad.md)

@@ -1,4 +1,4 @@
-# Sury Identity Extensions Wanted
+# Sury Identity Extensions
 
 - [Fib At Int](fib-at-int.md)
 - [Lucas At Int](lucas-at-int.md)

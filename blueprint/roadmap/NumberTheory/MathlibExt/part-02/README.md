@@ -1,5 +1,6 @@
 ---
 article_id: af_d8b3797cb53a42ed7ef31e83
+navigation: transparent
 ---
 
 # Polynomial to BNomial Number Type3

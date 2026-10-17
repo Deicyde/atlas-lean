@@ -2,7 +2,7 @@
 article_id: af_7cd97dd1031af9890fa2809e
 ---
 
-# AMR43 Problem1 Wanted
+# AMR43 Problem1
 
 - [X](x.md)
 - [YAmb](yamb.md)

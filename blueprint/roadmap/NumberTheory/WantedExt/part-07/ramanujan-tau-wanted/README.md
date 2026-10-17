@@ -1,4 +1,4 @@
-# Ramanujan Tau Wanted
+# Ramanujan Tau
 
 - [Τ](untitled.md)
 - [Τ one](one.md)

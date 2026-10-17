@@ -1,5 +1,6 @@
 ---
 article_id: af_5517ead5dfb0d07ce228943f
+navigation: transparent
 ---
 
 # Oracles and P versus NP to Lecture 26

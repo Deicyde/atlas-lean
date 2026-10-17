@@ -1,5 +1,6 @@
 ---
 article_id: af_35a6147d6a1a21263c8ca0de
+navigation: transparent
 ---
 
 # Vertex Connectivity to Vizing

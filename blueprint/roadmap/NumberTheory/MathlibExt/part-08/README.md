@@ -1,5 +1,6 @@
 ---
 article_id: af_4e355660d065f13671180c60
+navigation: transparent
 ---
 
 # Melham Gibonacci to Pell Number Sequence

@@ -1,5 +1,6 @@
 ---
 article_id: af_104485bdfa4d465284775cf8
+navigation: source
 ---
 
 # MIT 18.218 Analysis of Boolean Functions (Spring 2021)

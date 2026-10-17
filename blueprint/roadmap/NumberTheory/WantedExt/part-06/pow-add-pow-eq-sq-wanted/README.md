@@ -1,4 +1,4 @@
-# Pow Add Pow Eq Sq Wanted
+# Pow Add Pow Eq Sq
 
 - [Lemma 1](two-pow-add-one-eq-sq.md)
 - [Lemma 1](pow-add-one-eq-sq.md)

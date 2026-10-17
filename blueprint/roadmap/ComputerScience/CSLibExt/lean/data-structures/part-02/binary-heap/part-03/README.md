@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 3 of 3
 
 - [Extract Min le](extract-min-le.md)

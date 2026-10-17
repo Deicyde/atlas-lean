@@ -1,4 +1,4 @@
-# Cycle Shannon Bounds Wanted
+# Cycle Shannon Bounds
 
 - [Part 1 of 4](part-01/README.md)
 - [Part 2 of 4](part-02/README.md)

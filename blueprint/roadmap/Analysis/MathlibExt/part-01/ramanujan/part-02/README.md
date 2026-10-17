@@ -1,5 +1,6 @@
 ---
 article_id: af_27d9ed730b3e4184e4838817
+navigation: transparent
 ---
 
 # Part1 Ch7 Entry10 Zetaviabernoulli to Part1 Ch8 Entry10 Qgammalimit

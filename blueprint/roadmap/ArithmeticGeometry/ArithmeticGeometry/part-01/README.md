@@ -1,5 +1,6 @@
 ---
 article_id: af_38af53cc8f5ebce738fae2a7
+navigation: transparent
 ---
 
 # Newton polygon to Section 17

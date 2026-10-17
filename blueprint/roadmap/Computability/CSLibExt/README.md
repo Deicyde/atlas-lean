@@ -1,5 +1,6 @@
 ---
 article_id: af_d54e30a367a1edadc9a691ab
+navigation: collection
 ---
 
 # CSLibExt

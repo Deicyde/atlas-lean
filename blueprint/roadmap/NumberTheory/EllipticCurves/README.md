@@ -1,5 +1,6 @@
 ---
 article_id: af_0dd0d3385c198da801d66aa3
+navigation: source
 ---
 
 # MIT 18.783 Elliptic Curves (Spring 2021)

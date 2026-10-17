@@ -2,7 +2,7 @@
 article_id: af_f55788ca98b0bf50711476b4
 ---
 
-# Optimal Transport Wanted
+# Optimal Transport
 
 - [Couplings](couplings.md)
 - [Kantorovich Cost](kantorovich-cost.md)

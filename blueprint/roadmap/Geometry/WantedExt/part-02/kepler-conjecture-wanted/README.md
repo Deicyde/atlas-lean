@@ -2,7 +2,7 @@
 article_id: af_1fbb2ea927869c2a1330b5a4
 ---
 
-# Kepler Conjecture Wanted
+# Kepler Conjecture
 
 - [E](e.md)
 - [Is Packing](is-packing.md)

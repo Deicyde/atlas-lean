@@ -2,7 +2,7 @@
 article_id: af_658b8c56cacb9769dbea4f0d
 ---
 
-# Davies Wheel Free Chromatic Wanted
+# Davies Wheel Free Chromatic
 
 - [Has Induced Wheel](has-induced-wheel.md)
 - [Wheel Free](wheel-free.md)

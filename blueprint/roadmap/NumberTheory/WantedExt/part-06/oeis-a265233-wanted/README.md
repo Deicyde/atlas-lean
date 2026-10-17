@@ -1,4 +1,4 @@
-# Oeis A265233 Wanted
+# Oeis A265233
 
 - [A265233](a265233.md)
 - [Theorem 1](a265233-eq-sum-franel.md)

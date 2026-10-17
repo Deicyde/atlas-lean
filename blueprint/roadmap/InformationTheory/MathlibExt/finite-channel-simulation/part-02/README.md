@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 2 of 2
 
 - [Conditional Entropy eq zero of output subsingleton](conditional-entropy-eq-zero-of-output-su.md)

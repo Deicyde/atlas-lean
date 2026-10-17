@@ -2,7 +2,7 @@
 article_id: af_2858a9b0514ed3598809a96e
 ---
 
-# Erdos Problem652 Wanted
+# Erdos Problem652
 
 - [Plane](plane.md)
 - [Count Small Points](count-small-points.md)

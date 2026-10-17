@@ -1,5 +1,6 @@
 ---
 article_id: af_818483daa17b2d09b5f86aea
+navigation: transparent
 ---
 
 # Section 1 to Contagious Structure Lemma

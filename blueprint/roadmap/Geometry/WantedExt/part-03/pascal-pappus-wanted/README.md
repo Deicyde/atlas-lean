@@ -1,4 +1,4 @@
-# Pascal Pappus Wanted
+# Pascal Pappus
 
 - [Same Point](same-point.md)
 - [On Conic](on-conic.md)

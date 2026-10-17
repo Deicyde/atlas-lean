@@ -1,4 +1,4 @@
-# Sphere Packing Density Four Wanted
+# Sphere Packing Density Four
 
 - [Periodic Approximation](periodic-approximation.md)
 - [Upper Bound CE2003 Rogers](upper-bound-ce2003-rogers.md)

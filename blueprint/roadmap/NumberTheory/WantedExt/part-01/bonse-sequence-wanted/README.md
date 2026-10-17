@@ -1,4 +1,4 @@
-# Bonse Sequence Wanted
+# Bonse Sequence
 
 - [Prime Nth](prime-nth.md)
 - [Is Bonse Seq](is-bonse-seq.md)

@@ -2,7 +2,7 @@
 article_id: af_49648d775b711dc3b99eaa28
 ---
 
-# Single Set Sum Difference Exponent Wanted
+# Single Set Sum Difference Exponent
 
 - [Is Admissible Exponent](is-admissible-exponent.md)
 - [Single Set Sum Difference Exponent](single-set-sum-difference-exponent.md)

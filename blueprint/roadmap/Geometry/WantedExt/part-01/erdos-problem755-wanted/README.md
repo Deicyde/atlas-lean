@@ -2,7 +2,7 @@
 article_id: af_49a60d15cecc34cf1400bb16
 ---
 
-# Erdos Problem755 Wanted
+# Erdos Problem755
 
 - [Is Equilateral Triangle](is-equilateral-triangle.md)
 - [Is Unit Equilateral Triangle](is-unit-equilateral-triangle.md)

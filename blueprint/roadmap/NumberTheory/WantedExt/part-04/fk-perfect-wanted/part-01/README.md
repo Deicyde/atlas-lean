@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 1 of 2
 
 - [KLDeficient Perfect With](kldeficient-perfect-with.md)

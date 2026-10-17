@@ -294,6 +294,7 @@ class Container:
     children: list[Container | Target]
     prose: str = ""
     path: Path = Path()
+    navigation: str | None = None
 
 
 def slugify(text: str, limit: int = 48) -> str:
@@ -340,7 +341,9 @@ def chunk(title: str, slug: str, children: list) -> Container:
             name = f"{part[0].title} to {part[-1].title}"
         else:
             name = f"Part {number} of {len(parts)}"
-        nested.append(chunk(name, f"part-{number:02d}", part))
+        page = chunk(name, f"part-{number:02d}", part)
+        page.navigation = "transparent"
+        nested.append(page)
     return Container(title, slug, nested)
 
 
@@ -483,6 +486,11 @@ def humanize(name: str) -> str:
     return text[:1].upper() + text[1:]
 
 
+def topic_title(name: str) -> str:
+    """Implementation workflow suffixes are provenance, not mathematical titles."""
+    return humanize(name.removesuffix("Wanted"))
+
+
 def split_docstring(doc: str) -> tuple[str, list[str]]:
     """Separate the mathematical statement from its citations and Lean-side notes."""
     statement, citations = [], []
@@ -601,15 +609,16 @@ def library_tree(library: str, targets: list[Target]) -> Container:
 
     def build(title: str, slug: str, node: dict) -> Container:
         children: list = [
-            build(humanize(name), slugify(humanize(name)), node["dirs"][name]) for name in sorted(node["dirs"])
+            build(topic_title(name), slugify(humanize(name)), node["dirs"][name]) for name in sorted(node["dirs"])
         ]
         for name in sorted(node["modules"]):
             items = node["modules"][name]
-            children.append(items[0] if len(items) == 1 else chunk(humanize(name), slugify(humanize(name)), items))
+            children.append(items[0] if len(items) == 1 else chunk(topic_title(name), slugify(humanize(name)), items))
         return chunk(title, slug, children)
 
     tree = build(library, library, root)
     tree.prose = LIBRARIES[library][0]
+    tree.navigation = "collection"
     return tree
 
 
@@ -742,6 +751,7 @@ def render_library_source(library: str, summary: dict) -> str:
 def book_tree(book: str, targets: list[Target]) -> Container:
     chapters = [chapter(title, items) for title, items in groups(targets, lambda target: chapter_of(target.location))]
     tree = chunk(BOOKS[book][1], book, chapters)
+    tree.navigation = "source"
     tree.prose = (
         f"Statements selected from [{link_text(BOOKS[book][1])}](SOURCES/v1/{book}.md) by ATLAS v1, in source order."
     )
@@ -787,10 +797,27 @@ def render_container(node: Container, previous: str | None, extra: str = "") -> 
         lines += [node.prose.replace("SOURCES/", rel(vault_path, Path("sources")) + "/"), ""]
     if extra:
         lines += [extra, ""]
+    # Mathematical introductions and region labels are authored curation.
+    # Regenerating the inventory must not erase them or infer them from paths.
+    introduction = re.search(r"(?ms)^## Mathematical overview\n(.*?)(?=^## |\Z)", previous or "")
+    if introduction:
+        heading = re.search(r"(?m)^# (.+)$", previous or "")
+        if heading:
+            lines[0] = "# " + heading.group(1)
+        text = introduction.group(1).strip()
+        if text:
+            lines += ["## Mathematical overview", "", text, ""]
+        lines += ["## Contents", ""]
     for child in node.children:
         target = child.path.relative_to(VAULT)
         lines.append(f"- [{link_text(child.title)}]({rel(vault_path, target)})")
-    return frontmatter([], previous) + "\n".join(lines) + "\n"
+    fields = [("navigation", node.navigation)] if node.navigation else []
+    header = (previous or "").split("---", 2)
+    if len(header) == 3 and not header[0].strip():
+        area = re.search(r"(?m)^area:\s*(.+)$", header[1])
+        if area:
+            fields.append(("area", area.group(1).strip()))
+    return frontmatter(fields, previous) + "\n".join(lines) + "\n"
 
 
 def render_target(target: Target, previous: str | None) -> str:
@@ -1036,14 +1063,46 @@ def owned(selected: list[str]) -> set[Path]:
     return paths
 
 
+def navigation_updates(selected: list[str]) -> dict[Path, str]:
+    """Annotate existing generated containers without indexing or changing Lean.
+
+    This adapter knows which roots are books/libraries and which parts were
+    produced by ``chunk``. The shared explorer never guesses these roles from
+    paths. Mathematical regions and introductions remain authored curation.
+    """
+    roots = [(ROADMAP / BOOKS[book][0] / book, "source") for book in selected]
+    roots += [(directory, "collection") for library in LIBRARIES for directory in ROADMAP.glob(f"*/{library}")]
+    files: dict[Path, str] = {}
+    for directory, root_role in roots:
+        if not directory.is_dir():
+            continue
+        for page in directory.rglob("README.md"):
+            role = root_role if page.parent == directory else "transparent" if re.fullmatch(r"part-\d{2}", page.parent.name) else None
+            if role is None:
+                continue
+            text = page.read_text(encoding="utf-8")
+            header = re.match(r"\A---\n(.*?)\n---(?:\n|\Z)", text, re.S)
+            if header:
+                fields = header.group(1)
+                if re.search(r"(?m)^declaration:", fields):
+                    raise ValueError(f"navigation migration refuses declaration article: {page}")
+                fields = re.sub(r"(?m)^navigation:.*\n?", "", fields).rstrip()
+                prefix = (fields + "\n" if fields else "") + f"navigation: {role}"
+                files[page] = "---\n" + prefix + "\n---\n" + text[header.end():]
+            else:
+                files[page] = f"---\nnavigation: {role}\n---\n\n" + text
+    return files
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument("--check", action="store_true", help="fail if any generated page is stale")
     parser.add_argument("--book", action="append", choices=sorted(BOOKS), help="limit to one v1 book (repeatable)")
+    parser.add_argument("--navigation-only", action="store_true", help="annotate existing source/collection/pagination containers without indexing Lean")
     args = parser.parse_args()
     selected = args.book or sorted(BOOKS)
-    files = generate(selected)
-    stale = sorted(owned(selected) - set(files))
+    files = navigation_updates(selected) if args.navigation_only else generate(selected)
+    stale = [] if args.navigation_only else sorted(owned(selected) - set(files))
     changed = sorted(path for path, text in files.items() if not path.is_file() or path.read_text() != text)
     if args.check:
         for path in changed + stale:

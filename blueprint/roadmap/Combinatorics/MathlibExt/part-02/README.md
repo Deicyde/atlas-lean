@@ -1,5 +1,6 @@
 ---
 article_id: af_4b7f57d2d1b1257f1b5c82fe
+navigation: transparent
 ---
 
 # Associated Stirling Eulerian to Isolation Lemma

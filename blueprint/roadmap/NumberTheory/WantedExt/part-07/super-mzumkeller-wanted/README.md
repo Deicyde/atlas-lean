@@ -1,4 +1,4 @@
-# Super MZumkeller Wanted
+# Super MZumkeller
 
 - [Divisor Prod](divisor-prod.md)
 - [Is Super MZumkeller](is-super-mzumkeller.md)

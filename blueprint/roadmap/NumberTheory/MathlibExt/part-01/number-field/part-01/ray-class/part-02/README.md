@@ -1,5 +1,6 @@
 ---
 article_id: af_7b96028f40b10783d35703e2
+navigation: transparent
 ---
 
 # Ray Group to Weak Approximation

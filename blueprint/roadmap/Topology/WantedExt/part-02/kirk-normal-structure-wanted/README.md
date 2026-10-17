@@ -1,4 +1,4 @@
-# Kirk Normal Structure Wanted
+# Kirk Normal Structure
 
 - [Metric Diameter](metric-diameter.md)
 - [Point Radius In](point-radius-in.md)

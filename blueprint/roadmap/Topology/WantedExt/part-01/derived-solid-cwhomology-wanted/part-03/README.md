@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 3 of 3
 
 - [Derived Solidification free CW derived Nat Iso](derived-solidification-free-cw-derived-n.md)

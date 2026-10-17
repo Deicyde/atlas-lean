@@ -1,4 +1,4 @@
-# Manolescu Triangulation Wanted
+# Manolescu Triangulation
 
 - [Closed Top Manifold](closed-top-manifold.md)
 - [Triangulable](triangulable.md)

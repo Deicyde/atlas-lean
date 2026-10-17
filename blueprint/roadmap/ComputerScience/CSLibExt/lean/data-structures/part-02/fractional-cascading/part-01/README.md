@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 1 of 3
 
 - [Sample Aux](sample-aux.md)

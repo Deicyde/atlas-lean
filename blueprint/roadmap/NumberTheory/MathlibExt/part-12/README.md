@@ -1,5 +1,6 @@
 ---
 article_id: af_95b626c69523fcdd89108b41
+navigation: transparent
 ---
 
 # Wilson Quotient to Zeta Three Product Formulas

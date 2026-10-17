@@ -2,7 +2,7 @@
 article_id: af_40f2ce154806c734c4a6f6cf
 ---
 
-# Hyperbolic Shadowing Wanted
+# Hyperbolic Shadowing
 
 - [E](e.md)
 - [Hyperbolic Structure](hyperbolic-structure.md)

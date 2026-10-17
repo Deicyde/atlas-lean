@@ -2,7 +2,7 @@
 article_id: af_28ff42033f66cd71ad42eeb9
 ---
 
-# Finite Time Singularity Wanted
+# Finite Time Singularity
 
 - [Is Bounded Fun On](is-bounded-fun-on.md)
 - [Is Bounded Fun](is-bounded-fun.md)

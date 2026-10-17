@@ -1,4 +1,4 @@
-# Primitive Nondeficient Wanted
+# Primitive Nondeficient
 
 - [Is Nondeficient](is-nondeficient.md)
 - [Is Primitive Nondeficient](is-primitive-nondeficient.md)

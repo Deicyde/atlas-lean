@@ -1,4 +1,4 @@
-# Macias Coprime Topology Wanted
+# Macias Coprime Topology
 
 - [Coprime Set](coprime-set.md)
 - [Macias Basis](macias-basis.md)

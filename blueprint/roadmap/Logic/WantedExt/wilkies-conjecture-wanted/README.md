@@ -1,4 +1,4 @@
-# Wilkies Conjecture Wanted
+# Wilkies Conjecture
 
 - [Exp Func](exp-func.md)
 - [Exp](exp.md)

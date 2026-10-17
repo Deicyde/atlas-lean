@@ -1,5 +1,6 @@
 ---
 article_id: af_c35165b83cdbbea5bcfd4623
+navigation: transparent
 ---
 
 # Jaccard Lattice to Von Szily Super Catalan

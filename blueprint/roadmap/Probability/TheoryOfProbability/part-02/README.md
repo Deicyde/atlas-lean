@@ -1,5 +1,6 @@
 ---
 article_id: af_0b666355bfc44f86e38a9ea5
+navigation: transparent
 ---
 
 # Lecture 27 to Lecture 39

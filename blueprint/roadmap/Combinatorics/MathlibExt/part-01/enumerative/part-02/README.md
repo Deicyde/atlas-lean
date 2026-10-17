@@ -1,5 +1,6 @@
 ---
 article_id: af_758d089851f89b0479749e59
+navigation: transparent
 ---
 
 # Catalan Harmonic Generating Function to Euler Seidel Matrix

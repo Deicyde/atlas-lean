@@ -1,5 +1,6 @@
 ---
 article_id: af_6efa5995c7b52873a6f9c008
+navigation: source
 ---
 
 # MIT 18.966 Geometry of Manifolds (Spring 2007)

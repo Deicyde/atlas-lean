@@ -2,7 +2,7 @@
 article_id: af_4af4e70aea3faa59e25fd1a3
 ---
 
-# Ising Phase Transition Wanted
+# Ising Phase Transition
 
 - [Ising Site](ising-site.md)
 - [Spin Value](spin-value.md)

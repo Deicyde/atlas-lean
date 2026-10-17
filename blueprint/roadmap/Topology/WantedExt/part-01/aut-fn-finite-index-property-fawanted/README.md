@@ -2,7 +2,7 @@
 article_id: af_987725bdfaa0a2d1a823ccc5
 ---
 
-# Aut Fn Finite Index Property FAWanted
+# Aut Fn Finite Index Property FA
 
 - [Has Property FA](has-property-fa.md)
 - [Conjecture](conjecture.md)

@@ -1,4 +1,4 @@
-# Rademacher LILConstant Wanted
+# Rademacher LILConstant
 
 - [Partial Sum](partial-sum.md)
 - [Conjecture](conjecture.md)

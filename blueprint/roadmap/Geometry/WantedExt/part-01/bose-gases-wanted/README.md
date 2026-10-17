@@ -2,7 +2,7 @@
 article_id: af_490335113633fb3ef678afd0
 ---
 
-# Bose Gases Wanted
+# Bose Gases
 
 - [Box](box.md)
 - [CInfty0 Box](cinfty0-box.md)

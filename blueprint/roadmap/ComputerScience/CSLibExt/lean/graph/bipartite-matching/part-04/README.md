@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 4 of 5
 
 - [Search Path length le](search-path-length-le.md)

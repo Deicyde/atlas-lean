@@ -1,5 +1,6 @@
 ---
 article_id: af_8f2c2994cfc7bb98e03155da
+navigation: transparent
 ---
 
 # Absolute Value to Specific Limits

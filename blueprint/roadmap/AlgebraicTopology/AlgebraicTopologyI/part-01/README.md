@@ -1,5 +1,6 @@
 ---
 article_id: af_2d534f5350bb75eaee703ff0
+navigation: transparent
 ---
 
 # Chapter 1 to Section 28

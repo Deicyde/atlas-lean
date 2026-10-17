@@ -1,4 +1,4 @@
-# Bernoulli Second Kind Wanted
+# Bernoulli Second Kind
 
 - [Theorem 1](bernoulli-poly-eq.md)
 - [Corollary 2](bernoulli-eq-neg-sum.md)

@@ -1,4 +1,4 @@
-# Sylvester Sequence Wanted
+# Sylvester Sequence
 
 - [Sylvester Number](sylvester-number.md)
 - [Proposition 1, divisibility](sylvester-sub-dvd.md)

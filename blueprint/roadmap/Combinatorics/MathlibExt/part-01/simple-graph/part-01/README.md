@@ -1,5 +1,6 @@
 ---
 article_id: af_0831816659da0baffa7c8916
+navigation: transparent
 ---
 
 # Coloring to Dirac

@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 1 of 2
 
 - [Free Var Finset instantiate subset](free-var-finset-instantiate-subset.md)

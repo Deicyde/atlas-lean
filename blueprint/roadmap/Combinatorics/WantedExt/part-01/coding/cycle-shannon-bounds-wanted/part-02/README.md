@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 2 of 4
 
 - [Bpz C7 Pi10](bpz-c7-pi10.md)

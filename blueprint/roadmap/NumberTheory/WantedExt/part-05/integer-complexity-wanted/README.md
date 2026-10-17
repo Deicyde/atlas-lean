@@ -1,4 +1,4 @@
-# Integer Complexity Wanted
+# Integer Complexity
 
 - [Cx](cx.md)
 - [Complexity Lower Bound G](complexity-lower-bound-g.md)

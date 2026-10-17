@@ -2,7 +2,7 @@
 article_id: af_1e83f2dfc02606ef4a8b3d42
 ---
 
-# Equiangular Lines Fixed Angle Wanted
+# Equiangular Lines Fixed Angle
 
 - [Equiangular Lines](equiangular-lines.md)
 - [N](n.md)

@@ -1,4 +1,4 @@
-# Smooth Consecutive Integers Wanted
+# Smooth Consecutive Integers
 
 - [Conjecture](conjecture.md)
 - [Conjecture holds](conjecture-holds.md)

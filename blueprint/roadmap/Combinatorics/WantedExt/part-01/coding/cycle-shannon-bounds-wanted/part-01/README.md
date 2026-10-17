@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 1 of 4
 
 - [Polak Schrijver Lower Bound](polak-schrijver-lower-bound.md)

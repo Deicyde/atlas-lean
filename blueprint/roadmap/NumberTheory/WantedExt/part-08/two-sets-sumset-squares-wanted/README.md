@@ -1,4 +1,4 @@
-# Two Sets Sumset Squares Wanted
+# Two Sets Sumset Squares
 
 - [Pairwise Sums Squares](pairwise-sums-squares.md)
 - [Is Semi Magic Roots](is-semi-magic-roots.md)

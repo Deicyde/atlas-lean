@@ -1,4 +1,4 @@
-# Planar Graph Prism Hamiltonicity Wanted
+# Planar Graph Prism Hamiltonicity
 
 - [Conjecture](conjecture.md)
 - [Conjecture refuted](conjecture-refuted.md)

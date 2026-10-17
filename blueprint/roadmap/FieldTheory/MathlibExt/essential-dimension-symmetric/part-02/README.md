@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 2 of 2
 
 - [Root mem general Polynomial roots](root-mem-general-polynomial-roots.md)

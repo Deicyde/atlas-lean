@@ -1,4 +1,4 @@
-# Essential Dimension Symmetric Wanted
+# Essential Dimension Symmetric
 
 - [Buhler Reichstein1997 Upper Bound wanted](buhler-reichstein1997-upper-bound-wanted.md)
 - [Buhler Reichstein Duncan Lower Bound wanted](buhler-reichstein-duncan-lower-bound-wan.md)

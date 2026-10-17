@@ -1,5 +1,6 @@
 ---
 article_id: af_f2f150fbfc956463292a21e4
+navigation: transparent
 ---
 
 # Wiman to Schwarz Pick

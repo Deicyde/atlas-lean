@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 4 of 4
 
 - [Admits Alternating Diagram](admits-alternating-diagram.md)

@@ -2,7 +2,15 @@
 article_id: af_552d72acfa5aa88cbe29bff1
 ---
 
-# Lattice Point Enumerator
+# Counting lattice points
+
+## Mathematical overview
+
+Lattice-point enumerators count points of the standard integer lattice lying in a set, with translated versions for shifted counting regions. This section introduces the counting sets and functions, then states the finiteness lemmas on which later counting arguments depend.
+
+Begin with [the standard lattice](std-lattice.md), [lattice-point sets](lattice-point-set.md), and [the enumerator](lattice-enumerator.md).
+
+## Contents
 
 - [Std Lattice](std-lattice.md)
 - [Mem std Lattice iff](mem-std-lattice-iff.md)

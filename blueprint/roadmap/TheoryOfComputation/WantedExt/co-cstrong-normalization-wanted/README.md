@@ -2,7 +2,7 @@
 article_id: af_ad5f9812476c292c249e5c68
 ---
 
-# Co CStrong Normalization Wanted
+# Co CStrong Normalization
 
 - [Srt](srt.md)
 - [Tm](tm.md)

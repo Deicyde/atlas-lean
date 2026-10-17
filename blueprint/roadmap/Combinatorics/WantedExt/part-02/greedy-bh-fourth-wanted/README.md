@@ -1,4 +1,4 @@
-# Greedy Bh Fourth Wanted
+# Greedy Bh Fourth
 
 - [Is Next Greedy Bh](is-next-greedy-bh.md)
 - [Is Fourth Greedy Bh](is-fourth-greedy-bh.md)

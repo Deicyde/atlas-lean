@@ -2,7 +2,7 @@
 article_id: af_d1016ebbdec1e2d84d8e773a
 ---
 
-# Dual Matrix Multiplication Bounds Wanted
+# Dual Matrix Multiplication Bounds
 
 - [Upper Bound One](upper-bound-one.md)
 - [Coppersmith1982 Exponent](coppersmith1982-exponent.md)

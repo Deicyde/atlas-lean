@@ -1,5 +1,6 @@
 ---
 article_id: af_f53b207b985ddba566a87ccf
+navigation: source
 ---
 
 # MIT 18.155 Differential Analysis (Fall 2004)

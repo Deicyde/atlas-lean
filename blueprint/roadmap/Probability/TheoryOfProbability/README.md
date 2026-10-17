@@ -1,5 +1,6 @@
 ---
 article_id: af_898230d0d0ab067dff558570
+navigation: source
 ---
 
 # MIT 18.175 Theory of Probability (Spring 2014)

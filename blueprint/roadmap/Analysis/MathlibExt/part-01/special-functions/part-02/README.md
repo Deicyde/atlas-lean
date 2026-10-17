@@ -1,5 +1,6 @@
 ---
 article_id: af_d9b38069ac4367fe750a1087
+navigation: transparent
 ---
 
 # Generalized Hypergeometric to Takagi Function

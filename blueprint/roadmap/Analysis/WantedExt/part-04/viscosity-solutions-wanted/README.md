@@ -2,7 +2,7 @@
 article_id: af_1921352865e3564efb6c3d0b
 ---
 
-# Viscosity Solutions Wanted
+# Viscosity Solutions
 
 - [R](r.md)
 - [Without Collisions](without-collisions.md)

@@ -1,4 +1,4 @@
-# Erdos Problem1148 Wanted
+# Erdos Problem1148
 
 - [Erdos1148 Prop](erdos1148-prop.md)
 - [Weaker prop](weaker-prop.md)

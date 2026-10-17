@@ -1,5 +1,6 @@
 ---
 article_id: af_2915a9e47e926b3864834d2a
+navigation: transparent
 ---
 
 # Section 18 to Section 26

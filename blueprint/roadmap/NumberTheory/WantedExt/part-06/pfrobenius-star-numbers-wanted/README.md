@@ -1,4 +1,4 @@
-# PFrobenius Star Numbers Wanted
+# PFrobenius Star Numbers
 
 - [Star](star.md)
 - [Star Rep Count](star-rep-count.md)

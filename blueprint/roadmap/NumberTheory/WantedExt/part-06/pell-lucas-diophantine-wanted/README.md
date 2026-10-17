@@ -1,4 +1,4 @@
-# Pell Lucas Diophantine Wanted
+# Pell Lucas Diophantine
 
 - [Lemma 2](pell-lucas-sequence-is-square-iff.md)
 - [Lemma 3](gcd-pell-number-pell-lucas-sequence.md)

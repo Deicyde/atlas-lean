@@ -2,7 +2,7 @@
 article_id: af_638d7c57bd19b230208b8ae5
 ---
 
-# Radon Transform Wanted
+# Radon Transform
 
 - [Radon](radon.md)
 - [Fourier1](fourier1.md)

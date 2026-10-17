@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 3 of 4
 
 - [Under Point ne over Point](under-point-ne-over-point.md)

@@ -1,4 +1,4 @@
-# Seshadri Constant Wanted
+# Seshadri Constant
 
 - [Nagata Conjecture10](nagata-conjecture10.md)
 - [Eckl2008 Lower Bound wanted](eckl2008-lower-bound-wanted.md)

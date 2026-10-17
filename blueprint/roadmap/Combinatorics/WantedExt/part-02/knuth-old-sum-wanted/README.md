@@ -1,4 +1,4 @@
-# Knuth Old Sum Wanted
+# Knuth Old Sum
 
 - [Knuth Old Sum Weight](knuth-old-sum-weight.md)
 - [Lemma 1](card-even-acount-words.md)

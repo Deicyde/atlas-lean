@@ -1,4 +1,4 @@
-# Hopf Umlaufsatz Wanted
+# Hopf Umlaufsatz
 
 - [Plane](plane.md)
 - [Period](period.md)

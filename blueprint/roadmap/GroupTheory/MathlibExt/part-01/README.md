@@ -1,5 +1,6 @@
 ---
 article_id: af_b1385140a5dce86848f6c5ce
+navigation: transparent
 ---
 
 # Burnside Paqb to Group Growth

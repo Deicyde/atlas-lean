@@ -1,4 +1,4 @@
-# Erdos Problem997 Wanted
+# Erdos Problem997
 
 - [Well Distributed](well-distributed.md)
 - [Prime Fract](prime-fract.md)

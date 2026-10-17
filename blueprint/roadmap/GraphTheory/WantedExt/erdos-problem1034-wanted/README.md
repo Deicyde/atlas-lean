@@ -2,7 +2,7 @@
 article_id: af_e5bfed62c1cab70c2b8262c2
 ---
 
-# Erdos Problem1034 Wanted
+# Erdos Problem1034
 
 - [Joined To Two](joined-to-two.md)
 - [Conjecture](conjecture.md)

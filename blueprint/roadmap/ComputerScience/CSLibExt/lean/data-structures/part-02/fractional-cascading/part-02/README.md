@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 2 of 3
 
 - [Augment One](augment-one.md)

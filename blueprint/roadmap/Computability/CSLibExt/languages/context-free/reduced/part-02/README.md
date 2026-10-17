@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 2 of 2
 
 - [Unit Grammar output of mem](unit-grammar-output-of-mem.md)

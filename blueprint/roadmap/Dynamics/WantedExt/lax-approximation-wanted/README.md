@@ -2,7 +2,7 @@
 article_id: af_b502c84720096b3259fd6afb
 ---
 
-# Lax Approximation Wanted
+# Lax Approximation
 
 - [Torus](torus.md)
 - [Volume Preserving Equiv](volume-preserving-equiv.md)

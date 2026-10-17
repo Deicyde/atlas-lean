@@ -1,4 +1,4 @@
-# Erdos Problem650 Wanted
+# Erdos Problem650
 
 - [F](f.md)
 - [Conjecture](conjecture.md)

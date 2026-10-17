@@ -1,5 +1,6 @@
 ---
 article_id: af_75466152abc5b403c79f9d20
+navigation: source
 ---
 
 # MIT 18.S997 High-Dimensional Statistics (Spring 2015)

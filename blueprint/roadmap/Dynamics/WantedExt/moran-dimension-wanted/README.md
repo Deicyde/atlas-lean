@@ -2,7 +2,7 @@
 article_id: af_f378767d96a8be4064b34465
 ---
 
-# Moran Dimension Wanted
+# Moran Dimension
 
 - [Is Attractor](is-attractor.md)
 - [Is Affine Symmetric IFS](is-affine-symmetric-ifs.md)

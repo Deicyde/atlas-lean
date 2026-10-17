@@ -1,4 +1,4 @@
-# Palindromic Zero One Wanted
+# Palindromic Zero One
 
 - [Is Reciprocal Poly](is-reciprocal-poly.md)
 - [Is Reciprocal Poly iff](is-reciprocal-poly-iff.md)

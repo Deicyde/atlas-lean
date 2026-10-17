@@ -1,4 +1,4 @@
-# Quadrisecant Wanted
+# Quadrisecant
 
 - [Period](period.md)
 - [Standard Circle](standard-circle.md)

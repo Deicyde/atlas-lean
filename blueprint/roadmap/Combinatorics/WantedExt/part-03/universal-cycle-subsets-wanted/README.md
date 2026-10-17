@@ -2,7 +2,7 @@
 article_id: af_5094375b0639b7e7002fbad9
 ---
 
-# Universal Cycle Subsets Wanted
+# Universal Cycle Subsets
 
 - [Is Universal Cycle](is-universal-cycle.md)
 - [Conjecture](conjecture.md)

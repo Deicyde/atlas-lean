@@ -1,4 +1,4 @@
-# ABFibonacci Identities Wanted
+# ABFibonacci Identities
 
 - [Fib AB](fib-ab.md)
 - [Fib AB zero](fib-ab-zero.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_40032b6246442fa266d3627e
+navigation: transparent
 ---
 
 # Section 21 to Section 31

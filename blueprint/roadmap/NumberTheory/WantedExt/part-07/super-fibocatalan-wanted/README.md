@@ -1,4 +1,4 @@
-# Super Fibocatalan Wanted
+# Super Fibocatalan
 
 - [Fibo Catalan](fibo-catalan.md)
 - [Fibonomial](fibonomial.md)

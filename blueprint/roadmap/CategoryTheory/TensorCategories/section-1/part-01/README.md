@@ -1,5 +1,6 @@
 ---
 article_id: af_510d7dcedc3e4d06a7ed9b3e
+navigation: transparent
 ---
 
 # Section 1.1 to Section 1.22

@@ -1,4 +1,4 @@
-# Gauss Wantzel Wanted
+# Gauss Wantzel
 
 - [Is Constructible](is-constructible.md)
 - [Gauss Wantzel Number](gauss-wantzel-number.md)

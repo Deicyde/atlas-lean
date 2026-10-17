@@ -1,5 +1,6 @@
 ---
 article_id: af_3f8af38530249e4d0b2b660b
+navigation: source
 ---
 
 # MIT 18.226 Probabilistic Methods in Combinatorics (Fall 2022)

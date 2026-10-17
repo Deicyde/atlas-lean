@@ -1,5 +1,6 @@
 ---
 article_id: af_5018a3b948e308863c3cde33
+navigation: source
 ---
 
 # MIT 18.725 Algebraic Geometry (Fall 2015)

@@ -1,4 +1,4 @@
-# Odd Fibonacci Wanted
+# Odd Fibonacci
 
 - [Has Pattern](has-pattern.md)
 - [Pat321](pat321.md)

@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 3 of 3
 
 - [Theorem 31](fib-step-gf-quadruple-consecutive.md)

@@ -1,4 +1,4 @@
-# Permutation Polynomials Wanted
+# Permutation Polynomials
 
 - [Sum zmod pow eq ite](sum-zmod-pow-eq-ite.md)
 - [Bijective sum pow mul pow zmod](bijective-sum-pow-mul-pow-zmod.md)
