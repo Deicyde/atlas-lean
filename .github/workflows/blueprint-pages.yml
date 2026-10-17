@@ -63,6 +63,14 @@ jobs:
           uvx --from "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
           autoform check blueprint --lean-root .
 
+      # Audit findings are quality debt rather than publication syntax errors.
+      # Keep them visible on every build without hiding a usable in-progress wiki.
+      - name: Report roadmap quality findings
+        continue-on-error: true
+        run: >-
+          uvx --from "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
+          autoform audit blueprint --lean-root .
+
       # Writes site-src/: statement boxes, derived statuses, the Mermaid graph,
       # and permalinks into the Lean code at this exact commit.
       - name: Render the blueprint
