@@ -14,7 +14,7 @@ number of the form `p₁^a p₂^b` (distinct odd primes,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Deficient Fk Perfect](../part-01/is-deficient-fk-perfect.md)
 
 ## Sources
 

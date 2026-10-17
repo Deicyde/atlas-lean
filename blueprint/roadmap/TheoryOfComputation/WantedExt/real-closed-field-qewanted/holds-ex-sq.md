@@ -12,7 +12,11 @@ exactly when it is nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formula](formula.md)
+- [Holds](holds.md)
+- [Ex](ex.md)
+- [Not](not.md)
+- [Term](term.md)
 
 ## Sources
 

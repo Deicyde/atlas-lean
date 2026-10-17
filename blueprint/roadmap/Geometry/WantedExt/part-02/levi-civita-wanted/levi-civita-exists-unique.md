@@ -11,7 +11,8 @@ Source: T. Levi-Civita, Nozione di parallelismo in una varietà qualunque, Rend.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Same On Smooth](same-on-smooth.md)
+- [Metric Compatibility Shared](../is-metric-compatible.md)
 
 ## Sources
 

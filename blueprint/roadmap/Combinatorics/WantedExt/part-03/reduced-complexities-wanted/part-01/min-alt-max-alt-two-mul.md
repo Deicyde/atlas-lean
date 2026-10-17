@@ -13,7 +13,8 @@ lean: MathlibExt.Combinatorics.ReducedComplexitiesWanted.minAlt_maxAlt_two_mul
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Alt](max-alt.md)
+- [Min Alt](min-alt.md)
 
 ## Sources
 

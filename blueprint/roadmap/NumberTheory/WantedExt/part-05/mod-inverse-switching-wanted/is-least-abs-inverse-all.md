@@ -12,7 +12,8 @@ lean: MathlibExt.NumberTheory.ModInverseSwitchingWanted.isLeastAbsInverse_all
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Euclid Switch Seq](is-euclid-switch-seq.md)
+- [Is Least Abs Inverse](is-least-abs-inverse.md)
 
 ## Sources
 

@@ -17,7 +17,8 @@ printed is false (at `k = n = 1, r = 0` the first odd identity reads
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Leonardo](gen-leonardo.md)
+- [Gen Leonardo Companion](gen-leonardo-companion.md)
 
 ## Sources
 

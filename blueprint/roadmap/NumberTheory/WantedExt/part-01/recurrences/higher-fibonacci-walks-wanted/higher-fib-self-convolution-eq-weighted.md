@@ -16,7 +16,10 @@ unrestricted display.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Standard Higher Fib](is-standard-higher-fib.md)
+- [Higher Fib Walk](higher-fib-walk.md)
+- [Weighted Higher Fib Moment Sum](weighted-higher-fib-moment-sum.md)
+- [Weighted Higher Fib Sum](weighted-higher-fib-sum.md)
 
 ## Sources
 

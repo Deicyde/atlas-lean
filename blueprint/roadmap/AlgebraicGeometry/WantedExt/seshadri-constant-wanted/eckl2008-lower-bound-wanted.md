@@ -11,7 +11,7 @@ Source: Eckl (2008), asymptotic Dumnicki method, catalogue lower bound `4/13`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seshadri Constant10](../../MathlibExt/seshadri-constant/seshadri-constant10.md)
 
 ## Sources
 

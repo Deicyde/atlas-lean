@@ -16,7 +16,7 @@ with degree `n` and discriminant `≤ H` is `≤ n^(Q n log^3 n) H^(Q log^3 n)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number Field Of Bounded Discriminant Up To Isomorphism](number-field-of-bounded-discriminant-up.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Source: van Handel (2025), historical one-dimensional finiteness consequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comparison Constant](../../MathlibExt/part-01/convex-sub-gaussian-comparison/comparison-constant.md)
 
 ## Sources
 

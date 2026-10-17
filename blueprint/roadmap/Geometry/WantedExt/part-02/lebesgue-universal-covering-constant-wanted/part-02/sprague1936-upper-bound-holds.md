@@ -12,7 +12,7 @@ Source: Sprague, Über ein elementares Variationsproblem (1936).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sprague1936 Upper Bound](../part-01/sprague1936-upper-bound.md)
 
 ## Sources
 

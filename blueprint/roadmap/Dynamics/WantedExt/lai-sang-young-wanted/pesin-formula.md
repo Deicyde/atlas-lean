@@ -12,7 +12,11 @@ Source: Ya. B. Pesin, *Characteristic Lyapunov exponents and smooth ergodic theo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euc Plane](euc-plane.md)
+- [Dim Measure](dim-measure.md)
+- [Kolmogorov–Sinai entropy](kolmogorov-sinai-entropy.md)
+- [Lower Lyapunov exponent](lyapunov-lower-at.md)
+- [Upper Lyapunov exponent](lyapunov-upper-at.md)
 
 ## Sources
 

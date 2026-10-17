@@ -12,7 +12,7 @@ Source: the general submaximal upper bound `ε ≤ √(D²/r)` for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seshadri Constant10](../../MathlibExt/seshadri-constant/seshadri-constant10.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ Moved from `OpenConjectures/NumberTheory/SmoothConsecutiveIntegers`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

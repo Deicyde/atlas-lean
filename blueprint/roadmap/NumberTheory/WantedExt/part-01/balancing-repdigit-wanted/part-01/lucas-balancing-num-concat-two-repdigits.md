@@ -11,7 +11,8 @@ The only Lucas-balancing numbers that are concatenations of two repdigits are `1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Concat Two Repdigits](is-concat-two-repdigits.md)
+- [Lucas Balancing Num](lucas-balancing-num.md)
 
 ## Sources
 

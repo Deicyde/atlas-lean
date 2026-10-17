@@ -11,7 +11,7 @@ Source: Erdős, unpublished, recorded by Optimization Problems 1b.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Bound Erdos unpublished four Ninths](../part-01/upper-bound-erdos-unpublished-four-ninth.md)
 
 ## Sources
 

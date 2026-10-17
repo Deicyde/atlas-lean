@@ -12,7 +12,7 @@ Source: catalogue C19a, Tyu2009 upper row.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tyurin2009 Upper Bound](../part-01/tyurin2009-upper-bound.md)
 
 ## Sources
 

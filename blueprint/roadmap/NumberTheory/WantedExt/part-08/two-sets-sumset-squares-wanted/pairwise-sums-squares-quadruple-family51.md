@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_qua
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pairwise Sums Squares](pairwise-sums-squares.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ the second spot is lucky is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q](q.md)
 
 ## Sources
 

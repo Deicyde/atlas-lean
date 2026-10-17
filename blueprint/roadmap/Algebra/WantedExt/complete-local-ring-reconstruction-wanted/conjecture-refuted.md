@@ -17,7 +17,7 @@ Math. Soc. 136 (2008), 3435-3448, https://doi.org/10.1090/S0002-9939-08-09401-X.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Source: catalogue line 21, Hammersley (1968). Construction not retained.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Optimal Area](../../../MathlibExt/moving-sofa/part-01/optimal-area.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ Erdős, L. J. Mordell, and David F. Barrow, Problem 3740, American Mathematical 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

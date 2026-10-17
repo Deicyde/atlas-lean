@@ -19,7 +19,9 @@ Note: We require `X` and `Y` to be measurable to make the statement more natural
 
 ## Depends on
 
-This node has no prerequisites.
+- [Porous On Balls](porous-on-balls.md)
+- [Porous On Lines](porous-on-lines.md)
+- [Cube](cube.md)
 
 ## Sources
 

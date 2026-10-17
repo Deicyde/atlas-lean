@@ -24,7 +24,8 @@ then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Int Extension](int-extension.md)
+- [Is One Bounded](is-one-bounded.md)
 
 ## Sources
 

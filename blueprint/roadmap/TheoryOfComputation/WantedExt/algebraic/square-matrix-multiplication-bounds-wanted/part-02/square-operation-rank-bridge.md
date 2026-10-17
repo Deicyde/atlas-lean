@@ -13,7 +13,8 @@ exponent agrees with the tensor-rank exponent. This bridge is not proved.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matrix Multiplication Exponent](../../../../CSLibExt/algebraic/matrix-multiplication-exponent/part-02/matrix-multiplication-exponent.md)
+- [Square Matrix Multiplication Circuit Exponent](../../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/square-matrix-multiplication-circuit-exp.md)
 
 ## Sources
 

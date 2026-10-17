@@ -12,7 +12,8 @@ Source: A. Baker, G. Wüstholz, Logarithmic forms and group varieties, J. reine 
 
 ## Depends on
 
-This node has no prerequisites.
+- [C](c.md)
+- [Modified Height](modified-height.md)
 
 ## Sources
 

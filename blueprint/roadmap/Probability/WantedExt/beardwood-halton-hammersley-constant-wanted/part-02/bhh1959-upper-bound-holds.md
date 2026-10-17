@@ -12,7 +12,7 @@ Source: Beardwood, Halton and Hammersley (1959), catalogue upper-bound row.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bhh1959 Upper Bound](bhh1959-upper-bound.md)
 
 ## Sources
 

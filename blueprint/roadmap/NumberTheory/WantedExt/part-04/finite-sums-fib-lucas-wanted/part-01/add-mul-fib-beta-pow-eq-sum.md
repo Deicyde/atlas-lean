@@ -17,7 +17,7 @@ the identity fails, e.g. at `q = 2`, `x = √5`, `m = 2`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Beta](fib-beta.md)
 
 ## Sources
 

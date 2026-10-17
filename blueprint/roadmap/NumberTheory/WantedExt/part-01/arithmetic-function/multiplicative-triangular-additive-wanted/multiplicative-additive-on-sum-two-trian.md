@@ -13,7 +13,7 @@ Park's Theorem 1: a multiplicative function additive on pairs from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sum Two Positive Triangular](is-sum-two-positive-triangular.md)
 
 ## Sources
 

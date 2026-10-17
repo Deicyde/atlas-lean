@@ -13,7 +13,8 @@ lean: MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.pow_mul_pow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Power Sum](power-sum.md)
+- [Thm Q](thm-q.md)
 
 ## Sources
 

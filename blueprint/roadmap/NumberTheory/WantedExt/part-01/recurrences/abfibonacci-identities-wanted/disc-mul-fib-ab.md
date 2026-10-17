@@ -13,7 +13,8 @@ lean: MathlibExt.NumberTheory.Recurrences.ABFibonacciIdentitiesWanted.disc_mul_f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib AB](fib-ab.md)
+- [Lucas AB](lucas-ab.md)
 
 ## Sources
 

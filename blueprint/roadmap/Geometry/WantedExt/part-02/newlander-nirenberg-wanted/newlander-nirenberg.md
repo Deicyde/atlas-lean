@@ -12,7 +12,9 @@ Source: A. Newlander and L. Nirenberg, `Complex analytic coordinates in almost c
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
+- [Is Almost Complex On](is-almost-complex-on.md)
+- [Nijenhuis Vanishes On](nijenhuis-vanishes-on.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Lucas numbers with offset `k` sum to `F_{j(n+1)}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib At Int](fib-at-int.md)
+- [Lucas At Int](lucas-at-int.md)
 
 ## Sources
 

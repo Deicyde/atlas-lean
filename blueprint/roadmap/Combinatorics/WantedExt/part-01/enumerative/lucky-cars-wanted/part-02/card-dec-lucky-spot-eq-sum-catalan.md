@@ -13,7 +13,7 @@ functions in which the `j`-th spot is lucky is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Dec](../part-01/q-dec.md)
 
 ## Sources
 

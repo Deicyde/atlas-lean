@@ -12,7 +12,7 @@ Source: Optimization Problems, constant 13a, closed claim `upperBoundPiOverTwelv
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Bound Pi Over Twelve](../part-01/upper-bound-pi-over-twelve.md)
 
 ## Sources
 

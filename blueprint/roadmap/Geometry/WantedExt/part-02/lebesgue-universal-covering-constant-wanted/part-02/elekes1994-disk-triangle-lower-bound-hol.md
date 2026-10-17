@@ -12,7 +12,7 @@ Source: Elekes (1994), disk and equilateral triangle lower bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elekes1994 Disk Triangle Lower Bound](../part-01/elekes1994-disk-triangle-lower-bound.md)
 
 ## Sources
 

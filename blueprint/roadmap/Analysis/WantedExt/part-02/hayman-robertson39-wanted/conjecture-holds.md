@@ -16,7 +16,7 @@ conjecture, Acta Math. 154 (1985), 137-152, https://doi.org/10.1007/BF02392821. 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

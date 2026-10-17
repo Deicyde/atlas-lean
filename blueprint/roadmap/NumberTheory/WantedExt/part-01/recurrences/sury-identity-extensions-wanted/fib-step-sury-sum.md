@@ -12,7 +12,8 @@ lean: MathlibExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted.fib_step_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib At Int](fib-at-int.md)
+- [Lucas At Int](lucas-at-int.md)
 
 ## Sources
 

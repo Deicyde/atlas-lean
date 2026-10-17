@@ -15,7 +15,7 @@ polynomial `P(z)` of degree `n` with `δ√n ≤ |P (z)| ≤ ∆√n` for all `z
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Littlewood Polynomial](is-littlewood-polynomial.md)
 
 ## Sources
 

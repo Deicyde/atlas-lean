@@ -11,7 +11,7 @@ GGMT's quantitative coset-cover theorem gives exponent `7 + √17`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ggmt2025 Upper Bound7 Sqrt17](ggmt2025-upper-bound7-sqrt17.md)
 
 ## Sources
 

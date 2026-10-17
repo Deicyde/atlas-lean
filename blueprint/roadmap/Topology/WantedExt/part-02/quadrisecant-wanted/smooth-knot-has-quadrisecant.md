@@ -11,7 +11,9 @@ Source: E. Pannwitz (1933); G. Kuperberg, *Quadrisecants of knots and links*, J.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knot](../../part-01/conway-knot-shared/part-01/knot.md)
+- [Has Quadrisecant](has-quadrisecant.md)
+- [Is Unknotted](is-unknotted.md)
 
 ## Sources
 

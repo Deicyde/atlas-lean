@@ -13,7 +13,8 @@ length `n` with exactly `k` ones and at most one ascent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rascal Gen Z](rascal-gen-z.md)
+- [Rascal Z](rascal-z.md)
 
 ## Sources
 

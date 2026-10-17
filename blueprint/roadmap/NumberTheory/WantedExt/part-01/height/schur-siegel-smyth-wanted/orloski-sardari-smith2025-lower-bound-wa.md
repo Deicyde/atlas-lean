@@ -12,7 +12,7 @@ Source: Orloski--Sardari--Smith (2025), best known lower bound
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schur Siegel Smyth Constant](../../../../MathlibExt/part-01/height/schur-siegel-smyth/schur-siegel-smyth-constant.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ Newtonian potentials, J. London Math. Soc. (2) 47 (1993), 309-320. Moved from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

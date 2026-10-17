@@ -12,7 +12,9 @@ every choice of residue classes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Available Count](available-count.md)
+- [First Primes](first-primes.md)
+- [Free Count](free-count.md)
 
 ## Sources
 

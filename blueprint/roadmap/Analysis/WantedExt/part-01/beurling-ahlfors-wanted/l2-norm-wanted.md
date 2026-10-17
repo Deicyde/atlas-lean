@@ -14,7 +14,7 @@ proof is not supplied here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Beurling Norm](../../../MathlibExt/part-02/beurling-ahlfors/beurling-norm.md)
 
 ## Sources
 

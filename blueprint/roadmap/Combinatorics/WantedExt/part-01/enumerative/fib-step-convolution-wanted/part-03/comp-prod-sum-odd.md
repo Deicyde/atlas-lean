@@ -15,7 +15,8 @@ F^{(m+2j)}_{k_{j+1}})`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp Prod Sum](../part-01/comp-prod-sum.md)
+- [Fib Step](../part-01/fib-step.md)
 
 ## Sources
 

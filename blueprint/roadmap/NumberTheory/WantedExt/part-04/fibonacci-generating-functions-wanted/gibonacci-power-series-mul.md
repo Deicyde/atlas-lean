@@ -14,7 +14,7 @@ This is the product form of the paper's displayed quotient
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gibonacci Number](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
 
 ## Sources
 

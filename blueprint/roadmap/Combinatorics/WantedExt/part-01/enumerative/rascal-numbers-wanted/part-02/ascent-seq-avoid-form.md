@@ -13,7 +13,10 @@ has the form `0 1 ⋯ (k-1) k^{n-k}`, or
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ascent Seq Avoid](../part-01/ascent-seq-avoid.md)
+- [Avoids001210](../part-01/avoids001210.md)
+- [Is Ascent Seq](../part-01/is-ascent-seq.md)
+- [Word Ascents](../part-01/word-ascents.md)
 
 ## Sources
 

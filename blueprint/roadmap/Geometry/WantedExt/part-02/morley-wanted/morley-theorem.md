@@ -12,7 +12,9 @@ Source: F. Morley (c. 1899). Knill, §162. Via leanprover/lean-eval@38361be, pro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Equilateral Triple](is-equilateral-triple.md)
+- [Is Morley Configuration](is-morley-configuration.md)
+- [Plane](plane.md)
 
 ## Sources
 

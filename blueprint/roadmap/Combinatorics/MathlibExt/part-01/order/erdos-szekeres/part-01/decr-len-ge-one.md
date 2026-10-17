@@ -13,7 +13,14 @@ Lengths are positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decr Len](decr-len.md)
+
+## Proof depends on
+
+- [Is Decr Subseq](is-decr-subseq.md)
+- [Le decr Len](le-decr-len.md)
+- [Singleton decr](singleton-decr.md)
+- [Sub one lt of pos](sub-one-lt-of-pos.md)
 
 ## Sources
 

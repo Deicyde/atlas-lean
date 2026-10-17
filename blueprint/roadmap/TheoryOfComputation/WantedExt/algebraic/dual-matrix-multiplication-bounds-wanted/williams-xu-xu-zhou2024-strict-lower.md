@@ -12,7 +12,7 @@ Source: C15b/WXXZ2024 introduction, the best displayed lower bound is strict.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dual Circuit Exponent](../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/dual-circuit-exponent.md)
 
 ## Sources
 

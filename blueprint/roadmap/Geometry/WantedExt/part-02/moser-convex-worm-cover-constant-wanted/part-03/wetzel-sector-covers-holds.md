@@ -12,7 +12,7 @@ Source: Optimization Problems, constant 13a, closed claim `wetzelSectorCovers`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wetzel Sector Covers](../part-01/wetzel-sector-covers.md)
 
 ## Sources
 

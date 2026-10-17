@@ -19,7 +19,7 @@ https://arxiv.org/abs/1609.08230. Moved from `OpenConjectures/Analysis/FourFunct
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

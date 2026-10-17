@@ -14,7 +14,7 @@ supplied here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wirsing Constant](../../../MathlibExt/part-02/wirsing-constant/wirsing-constant.md)
 
 ## Sources
 

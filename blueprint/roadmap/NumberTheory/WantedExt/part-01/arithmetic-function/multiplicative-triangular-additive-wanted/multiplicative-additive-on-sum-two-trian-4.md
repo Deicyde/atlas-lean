@@ -12,7 +12,7 @@ Park's Lemma 4: under the same hypotheses, if `f 2 = 0` and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sum Two Positive Triangular](is-sum-two-positive-triangular.md)
 
 ## Sources
 

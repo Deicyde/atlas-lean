@@ -13,7 +13,9 @@ integers in `[1, P_k]` is `a_k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Available Count](available-count.md)
+- [First Primes](first-primes.md)
+- [Ones Diag Det](ones-diag-det.md)
 
 ## Sources
 

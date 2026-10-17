@@ -13,7 +13,8 @@ and Pell–Lucas numbers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pell Lucas Sequence](../../../MathlibExt/part-08/pell-lucas-sequence/pell-lucas-sequence.md)
+- [Pell Number Sequence](../../../MathlibExt/part-08/pell-number.md)
 
 ## Sources
 

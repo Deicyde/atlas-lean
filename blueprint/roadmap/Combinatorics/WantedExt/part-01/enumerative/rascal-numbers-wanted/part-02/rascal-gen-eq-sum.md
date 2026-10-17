@@ -14,7 +14,7 @@ lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.rascalGen_eq_sum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rascal Gen](../part-01/rascal-gen.md)
 
 ## Sources
 

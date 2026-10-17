@@ -12,7 +12,8 @@ Source: D. Gorenstein, R. Lyons, and R. Solomon, The classification of the finit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Simple Bender Group](is-simple-bender-group.md)
+- [Is Strongly Embedded](is-strongly-embedded.md)
 
 ## Sources
 

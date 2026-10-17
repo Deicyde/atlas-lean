@@ -11,7 +11,7 @@ Source: Polak--Schrijver, arXiv:1808.07438, exact fifth-root rate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shannon Capacity Cycle](../../../../../MathlibExt/part-01/coding/cycle-code/shannon-capacity-cycle.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ maximum is the authoritative inner-variable term `y / φ(q)`, not an
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bombieri Vinogradov Sum](bombieri-vinogradov-sum.md)
 
 ## Sources
 

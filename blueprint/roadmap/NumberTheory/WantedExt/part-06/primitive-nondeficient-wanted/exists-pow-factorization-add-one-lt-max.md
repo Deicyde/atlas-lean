@@ -16,7 +16,8 @@ of `p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Nondeficient](is-primitive-nondeficient.md)
+- [Abundancy Sup](abundancy-sup.md)
 
 ## Sources
 

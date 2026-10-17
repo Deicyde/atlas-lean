@@ -15,7 +15,7 @@ number `2` of Corollary 1).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KLDeficient Perfect](is-kldeficient-perfect.md)
 
 ## Sources
 

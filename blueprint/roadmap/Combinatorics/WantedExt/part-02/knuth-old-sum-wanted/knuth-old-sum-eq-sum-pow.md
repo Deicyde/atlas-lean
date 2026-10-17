@@ -15,7 +15,7 @@ lean: MathlibExt.Combinatorics.KnuthOldSumWanted.knuthOldSum_eq_sum_pow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knuth Old Sum Weight](knuth-old-sum-weight.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ three consecutive star numbers, for `n ≥ 6`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [P Sylvester Star Count](p-sylvester-star-count.md)
 
 ## Sources
 

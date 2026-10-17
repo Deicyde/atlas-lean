@@ -13,7 +13,7 @@ lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.factorial_sq_mul_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rascal Z](../part-01/rascal-z.md)
 
 ## Sources
 

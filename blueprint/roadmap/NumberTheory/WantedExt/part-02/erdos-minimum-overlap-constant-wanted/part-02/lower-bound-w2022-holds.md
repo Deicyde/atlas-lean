@@ -11,7 +11,7 @@ Source: White 2022 and Optimization Problems 1b.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Bound W2022](../part-01/lower-bound-w2022.md)
 
 ## Sources
 

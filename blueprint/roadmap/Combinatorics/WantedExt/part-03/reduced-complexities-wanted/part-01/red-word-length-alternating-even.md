@@ -14,7 +14,7 @@ factors of the paperfolding word.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Red Word](red-word.md)
 
 ## Sources
 

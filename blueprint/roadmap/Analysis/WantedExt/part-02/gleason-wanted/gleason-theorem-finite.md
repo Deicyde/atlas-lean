@@ -12,7 +12,9 @@ Source: A. M. Gleason, Measures on the closed subspaces of a Hilbert space, J. M
 
 ## Depends on
 
-This node has no prerequisites.
+- [Frame Function](frame-function.md)
+- [Is Orth Proj](is-orth-proj.md)
+- [Re Tr](re-tr.md)
 
 ## Sources
 

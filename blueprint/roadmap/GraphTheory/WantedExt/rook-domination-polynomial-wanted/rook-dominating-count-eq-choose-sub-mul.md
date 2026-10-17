@@ -12,7 +12,7 @@ the dominating count.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rook Dominating Count](rook-dominating-count.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Source: J. Spencer, E. Szemerédi, W. T. Trotter Jr., *Unit distances in the Euc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit Dist](unit-dist.md)
 
 ## Sources
 

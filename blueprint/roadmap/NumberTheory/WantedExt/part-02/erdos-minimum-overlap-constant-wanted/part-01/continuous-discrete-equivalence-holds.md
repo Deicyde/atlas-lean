@@ -11,7 +11,7 @@ Source: Haugland 2016 and Optimization Problems 1b.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Continuous Discrete Equivalence](continuous-discrete-equivalence.md)
 
 ## Sources
 

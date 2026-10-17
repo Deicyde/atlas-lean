@@ -12,7 +12,7 @@ odd prime `p` (and `ℓ ≥ 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KLNear Perfect](is-klnear-perfect.md)
 
 ## Sources
 

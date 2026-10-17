@@ -13,7 +13,7 @@ degree, then `f(x^4)` is reducible if and only if
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Zero One Poly](is-zero-one-poly.md)
 
 ## Sources
 

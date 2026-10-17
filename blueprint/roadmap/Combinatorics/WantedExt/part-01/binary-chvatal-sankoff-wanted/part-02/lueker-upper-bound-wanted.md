@@ -13,7 +13,7 @@ Known literature result; its proof and certificate are not supplied here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lueker Upper Bound](lueker-upper-bound.md)
 
 ## Sources
 

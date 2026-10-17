@@ -16,7 +16,8 @@ statement was verified computationally for `k ≤ 9`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Repdigit Diff](is-repdigit-diff.md)
+- [Balancing Num](balancing-num.md)
 
 ## Sources
 

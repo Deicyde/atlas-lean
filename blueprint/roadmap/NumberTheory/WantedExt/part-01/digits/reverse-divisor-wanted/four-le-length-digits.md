@@ -12,7 +12,7 @@ fewer than four digits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Reverse Divisor](is-reverse-divisor.md)
 
 ## Sources
 

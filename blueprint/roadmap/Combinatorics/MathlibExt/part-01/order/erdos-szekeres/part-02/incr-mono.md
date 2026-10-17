@@ -13,7 +13,16 @@ lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.incrMono
 
 ## Depends on
 
-This node has no prerequisites.
+- [Incr Len](../part-01/incr-len.md)
+
+## Proof depends on
+
+- [Is Incr End](../part-01/is-incr-end.md)
+- [Is Incr Subseq](../part-01/is-incr-subseq.md)
+- [Incr Extend](incr-extend.md)
+- [Incr Len is End](../part-01/incr-len-is-end.md)
+- [Le incr Len](../part-01/le-incr-len.md)
+- [Sub one lt of pos](../part-01/sub-one-lt-of-pos.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ Bézout pairs (stated through squared distances).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Euclid Switch Seq](is-euclid-switch-seq.md)
 
 ## Sources
 

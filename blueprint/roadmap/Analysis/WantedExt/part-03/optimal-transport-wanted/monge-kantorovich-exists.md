@@ -12,7 +12,8 @@ Source: L. V. Kantorovich (1942), after G. Monge (1781). Listed as §73 in O. Kn
 
 ## Depends on
 
-This node has no prerequisites.
+- [Couplings](couplings.md)
+- [Kantorovich Cost](kantorovich-cost.md)
 
 ## Sources
 

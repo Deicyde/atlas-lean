@@ -12,7 +12,7 @@ Source: LG2012 Section 1, characteristic dependence; this circuit-model transfer
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectangular Circuit Exponent](../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/rectangular-circuit-exponent.md)
 
 ## Sources
 

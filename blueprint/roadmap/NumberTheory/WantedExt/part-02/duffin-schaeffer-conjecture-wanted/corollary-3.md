@@ -15,7 +15,8 @@ the Hausdorff dimension of `𝒜` is the minimum of `s` and `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [S inf](s-inf.md)
+- [𝒜](untitled.md)
 
 ## Sources
 

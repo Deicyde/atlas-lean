@@ -16,7 +16,9 @@ For any `r > 2` and `Λ > 1`, there exists a constant `C ≥ 0` such that for an
 
 ## Depends on
 
-This node has no prerequisites.
+- [A](a.md)
+- [Lacunary](lacunary.md)
+- [Variational Norm](variational-norm.md)
 
 ## Sources
 

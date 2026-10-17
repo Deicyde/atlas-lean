@@ -11,7 +11,8 @@ Source: C. F. Gauss, Disquisitiones Arithmeticae (1801), §365-366; P. L. Wantze
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gauss Wantzel Number](gauss-wantzel-number.md)
+- [Is Constructible](is-constructible.md)
 
 ## Sources
 

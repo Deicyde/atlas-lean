@@ -12,7 +12,9 @@ Source: J. G. Darboux, Sur le problème de Pfaff, Bull. Sci. Math. 6 (1882), 14-
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
+- [Is Darboux Normal](is-darboux-normal.md)
+- [Is Symplectic On](is-symplectic-on.md)
 
 ## Sources
 

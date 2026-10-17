@@ -13,7 +13,7 @@ is one, for `ℓ = 1` with `d = 3`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KLNear Perfect](../part-01/is-klnear-perfect.md)
 
 ## Sources
 

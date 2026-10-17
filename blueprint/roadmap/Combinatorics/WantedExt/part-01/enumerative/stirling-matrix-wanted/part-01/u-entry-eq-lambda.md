@@ -12,7 +12,8 @@ lean: MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.uEntry_eq_lambda
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lambda](lambda.md)
+- [U Entry](u-entry.md)
 
 ## Sources
 

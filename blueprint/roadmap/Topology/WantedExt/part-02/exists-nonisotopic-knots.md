@@ -11,7 +11,8 @@ Source: Classical; see https://en.wikipedia.org/wiki/Knot_invariant. Via leanpro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knot](../part-01/conway-knot-shared/part-01/knot.md)
+- [Isotopic](../part-01/conway-knot-shared/part-01/isotopic.md)
 
 ## Sources
 

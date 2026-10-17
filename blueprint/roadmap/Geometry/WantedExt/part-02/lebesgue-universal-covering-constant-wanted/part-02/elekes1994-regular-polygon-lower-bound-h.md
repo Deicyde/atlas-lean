@@ -12,7 +12,7 @@ Source: Elekes (1994), additional regular polygon lower bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elekes1994 Regular Polygon Lower Bound](elekes1994-regular-polygon-lower-bound.md)
 
 ## Sources
 

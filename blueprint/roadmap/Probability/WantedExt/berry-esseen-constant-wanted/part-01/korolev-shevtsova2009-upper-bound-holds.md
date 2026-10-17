@@ -12,7 +12,7 @@ Source: catalogue C19a, KS2009 upper row; retained Shevtsova2011 quotation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Korolev Shevtsova2009 Upper Bound](korolev-shevtsova2009-upper-bound.md)
 
 ## Sources
 

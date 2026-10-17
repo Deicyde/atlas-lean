@@ -18,7 +18,10 @@ then `‖D² u 0‖_F ≤ C(‖u‖_{C¹})`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [H](h.md)
+- [E C1 Norm On](e-c1-norm-on.md)
+- [Frobenius Norm](frobenius-norm.md)
+- [Σ₂](untitled.md)
 
 ## Sources
 

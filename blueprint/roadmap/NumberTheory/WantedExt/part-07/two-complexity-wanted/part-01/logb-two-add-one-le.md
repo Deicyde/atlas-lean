@@ -13,7 +13,7 @@ one or two distinct powers of `2`, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complexity L](complexity-l.md)
 
 ## Sources
 

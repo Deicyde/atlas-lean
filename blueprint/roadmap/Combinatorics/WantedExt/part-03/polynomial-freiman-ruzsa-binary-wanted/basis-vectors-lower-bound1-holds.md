@@ -11,7 +11,7 @@ Basis vectors force the asymptotic exponent to be at least one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Basis Vectors Lower Bound1](basis-vectors-lower-bound1.md)
 
 ## Sources
 

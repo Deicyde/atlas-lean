@@ -13,6 +13,11 @@ The `c0` coordinates of solutions to the actual equation system.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Davis Power Solution](davis-power-solution.md)
+- [Is Valid](is-valid.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Probability.ConvexSubGaussianComparisonWanted](../../../../sources/v2/WantedExt.md)

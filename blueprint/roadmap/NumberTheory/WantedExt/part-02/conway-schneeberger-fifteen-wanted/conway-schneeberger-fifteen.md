@@ -11,7 +11,8 @@ Source: Conway–Schneeberger 1993 (unpublished, communicated by Conway in lectu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Universal](is-universal.md)
+- [Represents](represents.md)
 
 ## Sources
 

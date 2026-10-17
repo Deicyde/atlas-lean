@@ -11,7 +11,7 @@ Source: Mathew--Östergård (2017), exact rate row; no unprinted code is supplie
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shannon Capacity Cycle](../../../../../MathlibExt/part-01/coding/cycle-code/shannon-capacity-cycle.md)
 
 ## Sources
 

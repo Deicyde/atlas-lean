@@ -14,7 +14,9 @@ with `σ(1) = 1` and with `σ(2) = 1` (1-based) both equal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Pattern](has-pattern.md)
+- [Pat321](pat321.md)
+- [Pat3412](pat3412.md)
 
 ## Sources
 

@@ -21,7 +21,7 @@ for unrelated reasons (every term below `2` is nonrepresentable).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sum Of Two Prime Powers](is-sum-of-two-prime-powers.md)
 
 ## Sources
 

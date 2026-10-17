@@ -16,7 +16,7 @@ even `n` (e.g. `B_2(2) - B_2(1) - B_2(-1) = -1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seq BZ](seq-bz.md)
 
 ## Sources
 

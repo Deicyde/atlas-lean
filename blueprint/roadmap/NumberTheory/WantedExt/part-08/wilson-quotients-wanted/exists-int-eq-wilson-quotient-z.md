@@ -11,7 +11,7 @@ Morozov's Theorem 1: `Z(n)` is an integer for positive `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wilson Quotient Z](wilson-quotient-z.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Source: Optimization Problems, constant 13a, closed claim
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonconvex Upper Bound Ploymaklam Wichiramala2018](../part-01/nonconvex-upper-bound-ploymaklam-wichira.md)
 
 ## Sources
 

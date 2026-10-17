@@ -13,7 +13,8 @@ recurrence, provided `q^(m+1) - 2*q + 1 ≠ 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Higher Fib Recurrence](is-higher-fib-recurrence.md)
+- [Weighted Higher Fib Sum](weighted-higher-fib-sum.md)
 
 ## Sources
 

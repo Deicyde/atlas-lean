@@ -12,7 +12,7 @@ Source: catalogue C19a, Z1967 upper row.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zolotarev1967 Upper Bound](zolotarev1967-upper-bound.md)
 
 ## Sources
 

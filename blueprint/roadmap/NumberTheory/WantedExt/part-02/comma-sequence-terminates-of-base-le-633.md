@@ -16,7 +16,7 @@ Dougherty, *Comma Sequences*, JIS 28, with the sequence semantics defined in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Comma Terminating](../../MathlibExt/part-04/comma-sequence/is-comma-terminating.md)
 
 ## Sources
 

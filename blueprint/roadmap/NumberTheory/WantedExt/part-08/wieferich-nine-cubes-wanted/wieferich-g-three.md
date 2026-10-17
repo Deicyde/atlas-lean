@@ -11,7 +11,7 @@ Source: A. Wieferich, *Beweis des Satzes, daß sich eine jede ganze Zahl als Sum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sum Of Cubes](is-sum-of-cubes.md)
 
 ## Sources
 

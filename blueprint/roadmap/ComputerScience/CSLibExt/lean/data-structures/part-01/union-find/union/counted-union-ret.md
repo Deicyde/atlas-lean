@@ -13,7 +13,15 @@ Full array erasure is the direct canonical UNION result, not a detached class or
 
 ## Depends on
 
-This node has no prerequisites.
+- [Counted Union](counted-union.md)
+
+## Proof depends on
+
+- [Counted Find](../find/counted-find.md)
+- [Counted Find ret](../find/counted-find-ret.md)
+- [Counted Link Aux](counted-link-aux.md)
+- [Counted Link Aux ret](counted-link-aux-ret.md)
+- [Union carried](union-carried.md)
 
 ## Sources
 

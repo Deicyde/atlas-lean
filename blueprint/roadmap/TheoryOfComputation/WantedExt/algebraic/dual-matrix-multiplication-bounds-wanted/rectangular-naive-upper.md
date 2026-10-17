@@ -12,7 +12,7 @@ Source: CLLZ rectangular naive upper bound; a general finite circuit constructio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectangular Circuit Exponent](../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/rectangular-circuit-exponent.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Source: Motzkin--Ralston--Selfridge 1956 and Optimization Problems 1b.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Bound MRS1956 five Twelfths](../part-01/upper-bound-mrs1956-five-twelfths.md)
 
 ## Sources
 

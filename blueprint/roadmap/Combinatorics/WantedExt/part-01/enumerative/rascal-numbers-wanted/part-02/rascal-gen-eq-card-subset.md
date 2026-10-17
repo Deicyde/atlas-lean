@@ -15,7 +15,7 @@ subsets of `Fin n` with at most `j` elements `< n - k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rascal Gen](../part-01/rascal-gen.md)
 
 ## Sources
 

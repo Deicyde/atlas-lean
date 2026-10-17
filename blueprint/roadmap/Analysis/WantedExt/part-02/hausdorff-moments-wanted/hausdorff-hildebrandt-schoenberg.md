@@ -12,7 +12,8 @@ Source: F. Hausdorff (1921, 1923); T. H. Hildebrandt and I. J. Schoenberg, *On l
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hausdorff Bounded](hausdorff-bounded.md)
+- [Is Moment Configuration](is-moment-configuration.md)
 
 ## Sources
 

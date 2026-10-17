@@ -12,7 +12,7 @@ the form `2^a p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Near FPerfect](../part-01/is-near-fperfect.md)
 
 ## Sources
 

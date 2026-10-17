@@ -12,7 +12,7 @@ Source: GIOW, arXiv:1808.09346v1, Theorem 1.1, lines 80-81.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Guth Iosevich Ou Wang2018 Planar Sufficiency](guth-iosevich-ou-wang2018-planar-suffici.md)
 
 ## Sources
 

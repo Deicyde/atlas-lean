@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.not_hasPropertyPStar_b
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Property PStar](has-property-pstar.md)
 
 ## Sources
 

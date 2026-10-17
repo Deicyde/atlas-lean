@@ -14,7 +14,9 @@ The group `Γ = PSL(2, Z[ω])` is profinitely rigid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bianchi Group](bianchi-group.md)
+- [Profinitely Rigid](profinitely-rigid.md)
+- [Ring Of Integers](ring-of-integers.md)
 
 ## Sources
 

@@ -18,7 +18,7 @@ Moved from `OpenConjectures/Geometry/ErdosProblem756`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

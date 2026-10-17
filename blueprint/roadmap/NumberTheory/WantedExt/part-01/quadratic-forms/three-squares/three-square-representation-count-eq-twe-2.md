@@ -14,7 +14,8 @@ Gauss formula, residue 3 mod 8: `r₃(n) = 24 * H(n)`. Source:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hurwitz Class Number](hurwitz-class-number.md)
+- [Three Square Representation Count](../../../../MathlibExt/part-02/quadratic-forms/three-squares/three-square-representation-count.md)
 
 ## Sources
 

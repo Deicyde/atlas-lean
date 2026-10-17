@@ -17,7 +17,7 @@ Bertini's theorem (2017), arXiv:1412.4548, https://arxiv.org/abs/1412.4548. Move
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

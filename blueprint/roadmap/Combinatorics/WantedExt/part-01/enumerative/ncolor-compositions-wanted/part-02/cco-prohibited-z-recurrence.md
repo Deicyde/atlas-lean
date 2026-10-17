@@ -15,7 +15,7 @@ range; the identity fails at `n ≤ 2`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cco Prohibited Z](../part-01/cco-prohibited-z.md)
 
 ## Sources
 

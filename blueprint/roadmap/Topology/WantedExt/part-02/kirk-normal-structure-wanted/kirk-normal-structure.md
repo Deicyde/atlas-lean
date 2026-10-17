@@ -11,7 +11,8 @@ Source: W. A. Kirk, A fixed point theorem for mappings which do not increase dis
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Normal Structure](has-normal-structure.md)
+- [Is Nonexpansive Self Map](is-nonexpansive-self-map.md)
 
 ## Sources
 

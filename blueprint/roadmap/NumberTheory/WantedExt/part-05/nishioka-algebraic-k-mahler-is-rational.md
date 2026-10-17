@@ -20,7 +20,7 @@ Transcendence", Lecture Notes in Mathematics 1294, Theorem 5.1.7.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KMahler Function](../../MathlibExt/part-07/kmahler-function/is-kmahler-function.md)
 
 ## Sources
 

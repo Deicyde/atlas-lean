@@ -16,7 +16,7 @@ Mathematical Society (2024), e12987, https://doi.org/10.1112/jlms.12987. Moved f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

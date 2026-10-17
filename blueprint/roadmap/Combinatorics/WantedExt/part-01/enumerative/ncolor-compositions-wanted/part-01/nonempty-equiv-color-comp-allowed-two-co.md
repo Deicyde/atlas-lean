@@ -13,7 +13,7 @@ of `n` with all parts `≡ 1, 2 (mod 3)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Color Comp Allowed](color-comp-allowed.md)
 
 ## Sources
 

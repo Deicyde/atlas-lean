@@ -12,7 +12,7 @@ Bellotti–Wong first estimate (upper half), sharper for `T ≥ exp 447.981`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeta Zero Count](zeta-zero-count.md)
 
 ## Sources
 

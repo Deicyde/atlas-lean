@@ -12,7 +12,9 @@ C(n,k) C(m,n) Eₖ L_{n-k} = 2αᵐ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Sec Number](euler-sec-number.md)
+- [Fib Alpha](fib-alpha.md)
+- [Lucas Number](../../../../MathlibExt/part-07/lucas-sequence/lucas-number.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ infinitely many fixed points.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 
 ## Sources
 

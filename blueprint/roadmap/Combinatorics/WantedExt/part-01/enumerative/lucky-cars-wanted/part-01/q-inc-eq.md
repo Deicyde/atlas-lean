@@ -13,7 +13,7 @@ lean: MathlibExt.Combinatorics.Enumerative.LuckyCarsWanted.qInc_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Inc](q-inc.md)
 
 ## Sources
 

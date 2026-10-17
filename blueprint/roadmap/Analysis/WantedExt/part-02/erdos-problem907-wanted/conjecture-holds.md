@@ -12,7 +12,7 @@ Resolved true: Answered yes by de Bruijn; a proof is available in an external Le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

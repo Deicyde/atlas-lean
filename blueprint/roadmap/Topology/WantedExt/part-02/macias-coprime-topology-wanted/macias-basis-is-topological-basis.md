@@ -12,7 +12,8 @@ namely a topological basis of the topology it generates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Macias Basis](macias-basis.md)
+- [Macias Topology](macias-topology.md)
 
 ## Sources
 

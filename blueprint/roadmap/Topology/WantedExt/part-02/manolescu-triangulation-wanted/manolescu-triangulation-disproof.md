@@ -11,7 +11,8 @@ Source: C. Manolescu, *Pin(2)-equivariant Seiberg–Witten Floer homology and th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closed Top Manifold](closed-top-manifold.md)
+- [Triangulable](triangulable.md)
 
 ## Sources
 

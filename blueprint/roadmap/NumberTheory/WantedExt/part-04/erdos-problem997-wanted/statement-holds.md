@@ -15,7 +15,7 @@ theory, arXiv:2603.29961 (2026), https://arxiv.org/abs/2603.29961. Moved from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Statement](statement.md)
 
 ## Sources
 

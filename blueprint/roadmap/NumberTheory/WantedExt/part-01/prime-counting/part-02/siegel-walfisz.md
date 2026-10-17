@@ -15,7 +15,7 @@ The constants may depend on `N`, but not on `x`, `q`, or `a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Psi Residue Class](../../../../MathlibExt/part-02/prime-counting/part-02/residue-class-psi/psi-residue-class.md)
 
 ## Sources
 

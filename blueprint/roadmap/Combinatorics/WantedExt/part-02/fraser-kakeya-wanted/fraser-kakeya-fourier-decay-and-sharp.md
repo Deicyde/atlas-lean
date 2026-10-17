@@ -12,7 +12,10 @@ Source: J.M. Fraser, 'Fourier analytic properties of Kakeya sets in finite field
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Kakeya](is-kakeya.md)
+- [Is Probability Measure On](is-probability-measure-on.md)
+- [Space](space.md)
+- [Fourier](fourier.md)
 
 ## Sources
 

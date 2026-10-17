@@ -14,7 +14,7 @@ its proof and certificate are not supplied here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heineman Lower Bound](../part-02/heineman-lower-bound.md)
 
 ## Sources
 

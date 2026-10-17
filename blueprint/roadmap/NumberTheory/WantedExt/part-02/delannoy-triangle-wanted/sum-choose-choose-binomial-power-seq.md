@@ -14,7 +14,7 @@ the multiplied-out form over `ℤ`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binomial Power Seq](../../../MathlibExt/part-01/arithmetic-function/binomial-power-realizability/binomial-power-seq.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ then adjoining `a₄ = f₁₃²` and `a₅ = f₃₁²` to the triple from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Semi Magic Roots](is-semi-magic-roots.md)
+- [Pairwise Sums Squares](pairwise-sums-squares.md)
 
 ## Sources
 

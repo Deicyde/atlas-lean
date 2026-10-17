@@ -12,7 +12,7 @@ The variance constant is finite, rather than an unresolved boundedness conjectur
 
 ## Depends on
 
-This node has no prerequisites.
+- [Thin Shell Variance Constant](../../MathlibExt/part-01/geometry/thin-shell/thin-shell-variance-constant.md)
 
 ## Sources
 

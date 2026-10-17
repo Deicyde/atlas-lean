@@ -16,7 +16,8 @@ For any `p ∈ [1,2]`, and Banach space `X`
 
 ## Depends on
 
-This node has no prerequisites.
+- [TE](te.md)
+- [TR](tr.md)
 
 ## Sources
 

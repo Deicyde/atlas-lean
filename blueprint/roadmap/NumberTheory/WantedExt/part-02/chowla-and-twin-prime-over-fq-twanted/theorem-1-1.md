@@ -18,7 +18,9 @@ Moreover, we have a power saving (depending on q) in the asymptotic above.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Primes](primes.md)
+- [Ring Norm](ring-norm.md)
+- [𝔖 q](q.md)
 
 ## Sources
 

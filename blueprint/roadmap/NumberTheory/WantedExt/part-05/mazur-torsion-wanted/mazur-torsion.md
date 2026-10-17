@@ -11,7 +11,7 @@ Source: B. Mazur, *Modular curves and the Eisenstein ideal*, Publ. IHÉS 47 (197
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is In Mazur Class](is-in-mazur-class.md)
 
 ## Sources
 

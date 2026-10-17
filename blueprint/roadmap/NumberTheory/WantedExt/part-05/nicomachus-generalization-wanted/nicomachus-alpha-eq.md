@@ -12,7 +12,8 @@ lean: MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusAlpha_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nicomachus Alpha](nicomachus-alpha.md)
+- [Nicomachus U](nicomachus-u.md)
 
 ## Sources
 

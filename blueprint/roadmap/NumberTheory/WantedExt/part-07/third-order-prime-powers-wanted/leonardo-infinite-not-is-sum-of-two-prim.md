@@ -16,7 +16,8 @@ reason as in the Tribonacci statement.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sum Of Two Prime Powers](is-sum-of-two-prime-powers.md)
+- [Gen Leonardo](../../part-04/gen-leonardo-wanted/gen-leonardo.md)
 
 ## Sources
 

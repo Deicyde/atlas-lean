@@ -12,7 +12,7 @@ Source: catalogue C19a, She2011 upper row; retained primary Corollary 1.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shevtsova2011 Upper Bound](../part-01/shevtsova2011-upper-bound.md)
 
 ## Sources
 

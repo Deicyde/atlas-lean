@@ -15,7 +15,7 @@ computationally with exact rational arithmetic for `n ≤ 16`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Binary Digit Sum](weighted-binary-digit-sum.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ lean: MathlibExt.NumberTheory.TwoComplexityWanted.logb_two_add_two_le_of_five_po
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complexity L](complexity-l.md)
 
 ## Sources
 

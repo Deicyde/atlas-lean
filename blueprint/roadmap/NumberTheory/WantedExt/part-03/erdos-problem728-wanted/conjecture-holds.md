@@ -15,7 +15,7 @@ arXiv:2601.07421 (2026), https://arxiv.org/abs/2601.07421. Moved from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

@@ -15,7 +15,8 @@ lean: MathlibExt.Combinatorics.Enumerative.NColorCompositionsWanted.nonempty_equ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Color Comp Allowed](color-comp-allowed.md)
+- [Ternary Admissible](ternary-admissible.md)
 
 ## Sources
 

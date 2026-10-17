@@ -12,7 +12,7 @@ Source: C15b/LGU2018 Section 1.1, Coppersmith's 1982 exponent equality.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectangular Circuit Exponent](../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/rectangular-circuit-exponent.md)
 
 ## Sources
 

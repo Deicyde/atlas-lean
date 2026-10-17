@@ -12,7 +12,9 @@ The at-most homothet formulation and fixed-count interior formulation agree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covered By Smaller Positive Homothets](../../../../MathlibExt/convex/covering/covered-by-smaller-positive-homothets.md)
+- [Is Convex Body](../../../../MathlibExt/convex/covering/is-convex-body.md)
+- [Uniform Interior Translate Bound](../../../../MathlibExt/convex/covering/uniform-interior-translate-bound.md)
 
 ## Sources
 

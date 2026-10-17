@@ -12,7 +12,8 @@ Source: P.R. Halmos, 'In general a measure-preserving transformation is mixing',
 
 ## Depends on
 
-This node has no prerequisites.
+- [Automorphism](automorphism.md)
+- [Is Weakly Mixing](is-weakly-mixing.md)
 
 ## Sources
 

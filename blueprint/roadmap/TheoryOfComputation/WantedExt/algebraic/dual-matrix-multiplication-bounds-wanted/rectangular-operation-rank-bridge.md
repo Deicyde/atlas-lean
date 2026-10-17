@@ -12,7 +12,8 @@ Source: LG2012 exact bilinear-rank characterization; the operation/rank transfer
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rectangular Matrix Multiplication Exponent](../../../CSLibExt/algebraic/matrix-multiplication-exponent/part-03/rectangular-matrix-multiplication-expone.md)
+- [Rectangular Circuit Exponent](../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/rectangular-circuit-exponent.md)
 
 ## Sources
 

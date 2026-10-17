@@ -14,7 +14,7 @@ We have `λ_SSS < 1.89831`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lambda SSS](lambda-sss.md)
 
 ## Sources
 

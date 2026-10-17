@@ -11,7 +11,7 @@ Liao's quantitative coset-cover theorem gives exponent `9`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Liao2024 Upper Bound9](liao2024-upper-bound9.md)
 
 ## Sources
 

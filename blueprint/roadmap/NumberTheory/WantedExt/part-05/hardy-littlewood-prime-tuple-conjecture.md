@@ -13,7 +13,9 @@ has the predicted asymptotic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Hardy Littlewood Admissible](../../MathlibExt/part-06/hardy-littlewood-prime-tuple/is-hardy-littlewood-admissible.md)
+- [Hardy Littlewood Prime Tuple Count](../../MathlibExt/part-06/hardy-littlewood-prime-tuple/hardy-littlewood-prime-tuple-count.md)
+- [Hardy Littlewood Singular Series](../../MathlibExt/part-06/hardy-littlewood-prime-tuple/hardy-littlewood-singular-series.md)
 
 ## Sources
 

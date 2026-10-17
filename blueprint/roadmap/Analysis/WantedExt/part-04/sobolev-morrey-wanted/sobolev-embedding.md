@@ -12,7 +12,9 @@ Source: C.B. Morrey, 'Functions of several variables and absolute continuity, II
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
+- [Mem Holder](mem-holder.md)
+- [Mem Sobolev Wk](mem-sobolev-wk.md)
 
 ## Sources
 

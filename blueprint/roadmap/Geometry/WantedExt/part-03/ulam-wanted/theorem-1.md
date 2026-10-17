@@ -15,7 +15,11 @@ that floats in equilibrium in every orientation at the level `vol(K)/2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Body Of Revolution](body-of-revolution.md)
+- [Body](body.md)
+- [Floats In Equilibrium In Every Orientation At Level](floats-in-equilibrium-in-every-orientati.md)
+- [Is Centrally Symmetric](is-centrally-symmetric.md)
+- [Is Strictly Convex Body](is-strictly-convex-body.md)
 
 ## Sources
 

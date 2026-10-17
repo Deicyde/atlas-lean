@@ -15,6 +15,13 @@ The first original-parent-chain root occurs strictly before the allocated size.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Counted Aux](counted-aux.md)
+- [Counted Aux time root](counted-aux-time-root.md)
+- [Counted Aux time step](counted-aux-time-step.md)
+- [Counted Find](counted-find.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.UnionFind.Find](../../../../../../../../sources/v2/CSLibExt.md)

@@ -11,7 +11,8 @@ Source: M. Berger; W. Klingenberg; H. E. Rauch (topological sphere theorem, 1951
 
 ## Depends on
 
-This node has no prerequisites.
+- [Metric Compatibility Shared](../../part-02/is-metric-compatible.md)
+- [Quarter Pinched](quarter-pinched.md)
 
 ## Sources
 

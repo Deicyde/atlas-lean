@@ -16,7 +16,7 @@ and `δ_{1h}` is `1` if
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Numerator Count](farey-numerator-count.md)
 
 ## Sources
 

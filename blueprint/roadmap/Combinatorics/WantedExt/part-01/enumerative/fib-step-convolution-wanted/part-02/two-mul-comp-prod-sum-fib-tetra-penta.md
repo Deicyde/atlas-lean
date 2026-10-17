@@ -14,7 +14,8 @@ lean: MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.two_mul_comp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp Prod Sum](../part-01/comp-prod-sum.md)
+- [Fib Step](../part-01/fib-step.md)
 
 ## Sources
 

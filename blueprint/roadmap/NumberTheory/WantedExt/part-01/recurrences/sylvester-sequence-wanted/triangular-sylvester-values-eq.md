@@ -13,7 +13,7 @@ sequence are exactly `3`.  Triangular is encoded without division by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sylvester Number](sylvester-number.md)
 
 ## Sources
 

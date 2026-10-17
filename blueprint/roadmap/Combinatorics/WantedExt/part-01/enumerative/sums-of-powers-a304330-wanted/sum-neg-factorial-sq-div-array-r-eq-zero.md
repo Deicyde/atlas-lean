@@ -12,7 +12,7 @@ lean: MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.sum_neg_fac
 
 ## Depends on
 
-This node has no prerequisites.
+- [Array R](array-r.md)
 
 ## Sources
 

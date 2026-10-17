@@ -14,7 +14,7 @@ measure such that `σ` forms an aperiodic continuous tiling equation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Aperiodic Continuous Tiling Equation](is-aperiodic-continuous-tiling-equation.md)
 
 ## Sources
 

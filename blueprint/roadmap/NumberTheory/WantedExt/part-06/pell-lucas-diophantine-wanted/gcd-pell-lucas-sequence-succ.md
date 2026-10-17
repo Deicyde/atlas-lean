@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.PellLucasDiophantineWanted.gcd_pellLucasSequence_s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pell Lucas Sequence](../../../MathlibExt/part-08/pell-lucas-sequence/pell-lucas-sequence.md)
 
 ## Sources
 

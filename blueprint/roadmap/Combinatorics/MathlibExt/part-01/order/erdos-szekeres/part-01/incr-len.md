@@ -14,6 +14,13 @@ Length of the longest increasing subsequence ending at `p`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Incr End](is-incr-end.md)
+- [Is Incr Subseq](is-incr-subseq.md)
+- [Singleton incr](singleton-incr.md)
+- [Sub one lt of pos](sub-one-lt-of-pos.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Order.ErdosSzekeres](../../../../../../../sources/v2/MathlibExt.md)

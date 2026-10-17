@@ -11,7 +11,7 @@ Source: Erdős 1955 and Optimization Problems 1b.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Bound E1955 quarter](../part-01/lower-bound-e1955-quarter.md)
 
 ## Sources
 

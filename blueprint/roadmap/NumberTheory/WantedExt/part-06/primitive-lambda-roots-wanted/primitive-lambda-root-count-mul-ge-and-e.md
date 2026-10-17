@@ -13,7 +13,7 @@ lean: MathlibExt.NumberTheory.PrimitiveLambdaRootsWanted.primitiveLambdaRootCoun
 
 ## Depends on
 
-This node has no prerequisites.
+- [Primitive Lambda Root Count](primitive-lambda-root-count.md)
 
 ## Sources
 

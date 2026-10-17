@@ -14,7 +14,7 @@ common convergence domain.
 
 ## Depends on
 
-This node has no prerequisites.
+- [A265233](a265233.md)
 
 ## Sources
 

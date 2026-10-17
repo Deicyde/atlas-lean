@@ -13,7 +13,8 @@ for `h ≥ 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Fourth Greedy Bh](is-fourth-greedy-bh.md)
+- [Fourth Value](fourth-value.md)
 
 ## Sources
 

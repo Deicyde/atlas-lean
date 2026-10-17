@@ -12,7 +12,7 @@ Source: M. Shishikura, The Hausdorff dimension of the boundary of the Mandelbrot
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mandelbrot](mandelbrot.md)
 
 ## Sources
 

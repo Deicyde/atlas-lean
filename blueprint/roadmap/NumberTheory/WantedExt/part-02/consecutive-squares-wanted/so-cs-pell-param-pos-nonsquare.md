@@ -13,7 +13,7 @@ positive and is not a square.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is So CSSolution](is-so-cssolution.md)
 
 ## Sources
 

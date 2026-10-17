@@ -12,7 +12,7 @@ Source: catalogue C19a, Bernoulli/binomial comment, Schulz2016.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Schulz2016 Bernoulli Optimum](../part-01/schulz2016-bernoulli-optimum.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ exact decimal endpoint `22195 / 10000`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ambidextrous Optimal Area](../../../MathlibExt/moving-sofa/part-02/ambidextrous-optimal-area.md)
 
 ## Sources
 

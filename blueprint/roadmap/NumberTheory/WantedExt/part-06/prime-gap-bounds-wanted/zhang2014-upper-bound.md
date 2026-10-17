@@ -11,7 +11,7 @@ Zhang's first explicit consecutive-prime-gap bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Gap Liminf](../../../MathlibExt/part-09/prime-gap-liminf/prime-gap-liminf.md)
 
 ## Sources
 

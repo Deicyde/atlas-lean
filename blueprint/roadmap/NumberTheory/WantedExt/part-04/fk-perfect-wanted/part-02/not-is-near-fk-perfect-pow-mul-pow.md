@@ -14,7 +14,7 @@ odd.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Near Fk Perfect](../part-01/is-near-fk-perfect.md)
 
 ## Sources
 

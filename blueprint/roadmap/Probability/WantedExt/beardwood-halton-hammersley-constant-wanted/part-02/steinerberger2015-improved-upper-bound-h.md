@@ -12,7 +12,7 @@ Source: Steinerberger, New Bounds for the Traveling Salesman Constant (2015).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Steinerberger2015 Improved Upper Bound](steinerberger2015-improved-upper-bound.md)
 
 ## Sources
 

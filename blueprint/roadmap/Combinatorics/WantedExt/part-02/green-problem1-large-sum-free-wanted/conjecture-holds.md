@@ -13,7 +13,7 @@ contains a sum-free subset of size at least n/3 + c log log n for an absolute co
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

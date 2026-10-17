@@ -13,7 +13,7 @@ Koksma's inequality D(N) is then not O(√N (log N)^ε) for ε<1/2, so the Lean 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

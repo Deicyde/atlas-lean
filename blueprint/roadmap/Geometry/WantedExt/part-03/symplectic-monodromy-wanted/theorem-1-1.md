@@ -25,7 +25,7 @@ need this assumption, consider `fₜ = z + t`: The Milnor number is `0` for all 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Milnor Number](milnor-number.md)
 
 ## Sources
 

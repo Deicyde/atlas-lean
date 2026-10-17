@@ -12,7 +12,7 @@ Source: N. Wiener, The Fourier Integral and Certain of its Applications (1933). 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fourier Coeff Measure](fourier-coeff-measure.md)
 
 ## Sources
 

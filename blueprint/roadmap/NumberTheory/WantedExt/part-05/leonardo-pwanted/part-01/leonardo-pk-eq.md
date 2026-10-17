@@ -11,7 +11,8 @@ lean: MathlibExt.NumberTheory.LeonardoPWanted.leonardoPK_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Leonardo PK](leonardo-pk.md)
+- [Fibonacci P](../../../../MathlibExt/part-02/recurrences/part-01/honsberger-fibonacci-p/fibonacci-p.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ The lower comparison coefficient explicitly present in the retained primary.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inverse Cheeger Constant](../../MathlibExt/part-01/geometry/kls/part-01/inverse-cheeger-constant.md)
+- [Smooth Poincare Constant](../../MathlibExt/part-01/geometry/kls/part-01/smooth-poincare-constant.md)
+- [Is Isotropic Log Concave](../../MathlibExt/part-01/geometry/thin-shell/is-isotropic-log-concave.md)
 
 ## Sources
 

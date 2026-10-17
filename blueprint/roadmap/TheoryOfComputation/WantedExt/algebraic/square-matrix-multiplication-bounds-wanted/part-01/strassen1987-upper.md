@@ -12,7 +12,7 @@ Source: C15a [S1987], Strassen's laser-method bound `2.4785`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Matrix Multiplication Circuit Exponent](../../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/square-matrix-multiplication-circuit-exp.md)
 
 ## Sources
 

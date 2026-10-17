@@ -13,7 +13,7 @@ Known literature result; its proof is not supplied here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dancik Paterson Upper Bound](dancik-paterson-upper-bound.md)
 
 ## Sources
 

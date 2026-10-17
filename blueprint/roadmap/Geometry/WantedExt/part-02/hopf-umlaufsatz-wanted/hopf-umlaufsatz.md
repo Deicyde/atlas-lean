@@ -11,7 +11,10 @@ Source: H. Hopf, *Über die Drehung der Tangenten...*, Compositio Math. 2 (1935)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Positive Simple Closed Unit Speed Curve](is-positive-simple-closed-unit-speed-cur.md)
+- [Is Tangent Angle Lift](is-tangent-angle-lift.md)
+- [Plane](plane.md)
+- [Total Curvature](total-curvature.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ from `OpenConjectures/NumberTheory/DiophantineQuintupleConjectureQuestion1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Statement](statement.md)
 
 ## Sources
 

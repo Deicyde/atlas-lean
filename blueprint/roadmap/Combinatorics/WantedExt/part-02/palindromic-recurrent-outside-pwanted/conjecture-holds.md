@@ -16,7 +16,7 @@ Simon, Electron. J. Combin. 21 (2014) #P3.11, https://doi.org/10.37236/3758. Mov
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

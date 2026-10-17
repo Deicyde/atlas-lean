@@ -14,7 +14,7 @@ lean: MathlibExt.NumberTheory.DucciWanted.ducciCoeff_vanish_mod
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ducci Coeff](ducci-coeff.md)
 
 ## Sources
 

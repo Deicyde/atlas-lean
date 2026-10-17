@@ -12,7 +12,7 @@ Source: catalogue C19a, E1956 lower row; retained 2011 exact benchmark.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Esseen1956 Lower Bound](../part-01/esseen1956-lower-bound.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Source: Optimization Problems, constant 13a, closed claim `nonconvexCoverNorwood
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonconvex Cover Norwood Poole2003](../part-01/nonconvex-cover-norwood-poole2003.md)
 
 ## Sources
 

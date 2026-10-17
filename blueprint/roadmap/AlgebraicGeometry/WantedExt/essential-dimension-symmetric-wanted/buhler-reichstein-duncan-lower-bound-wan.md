@@ -12,7 +12,7 @@ Source: Buhler--Reichstein (1997) and Duncan, the lower bound
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ed Sn](../../../FieldTheory/MathlibExt/essential-dimension-symmetric/part-02/ed-sn.md)
 
 ## Sources
 

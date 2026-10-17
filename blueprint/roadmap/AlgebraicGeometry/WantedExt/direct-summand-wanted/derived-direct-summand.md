@@ -11,7 +11,7 @@ Source: see manifest Via leanprover/lean-eval@38361be, problem `direct_summand`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single Functor Plus Iso Comp Qh](single-functor-plus-iso-comp-qh.md)
 
 ## Sources
 

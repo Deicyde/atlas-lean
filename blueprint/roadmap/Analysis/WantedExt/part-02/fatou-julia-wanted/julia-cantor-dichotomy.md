@@ -12,7 +12,8 @@ Source: P. Fatou, *Sur les équations fonctionnelles*, Bull. Soc. Math. France 4
 
 ## Depends on
 
-This node has no prerequisites.
+- [Filled Julia](filled-julia.md)
+- [Mandelbrot](mandelbrot.md)
 
 ## Sources
 

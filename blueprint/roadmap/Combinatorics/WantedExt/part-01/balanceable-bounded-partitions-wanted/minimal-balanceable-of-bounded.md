@@ -13,7 +13,8 @@ also balanceable is given by `2 * lcm(1, ..., k)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balanceable](balanceable.md)
+- [Bounded](bounded.md)
 
 ## Sources
 

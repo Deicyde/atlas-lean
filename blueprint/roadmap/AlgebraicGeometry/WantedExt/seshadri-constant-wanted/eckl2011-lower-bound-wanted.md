@@ -11,7 +11,7 @@ Source: Eckl (2011), improved catalogue lower bound `117/370`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seshadri Constant10](../../MathlibExt/seshadri-constant/seshadri-constant10.md)
 
 ## Sources
 

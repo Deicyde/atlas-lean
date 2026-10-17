@@ -12,7 +12,7 @@ Chen's subpolynomial bound, with no hidden multiplier inside the exponential.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Thin Shell Width](../../MathlibExt/part-01/geometry/thin-shell/thin-shell-width.md)
 
 ## Sources
 

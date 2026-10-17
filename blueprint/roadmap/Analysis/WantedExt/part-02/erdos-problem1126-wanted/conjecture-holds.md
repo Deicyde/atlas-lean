@@ -15,7 +15,7 @@ erdosproblems.com/1126, https://www.erdosproblems.com/1126. Moved from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

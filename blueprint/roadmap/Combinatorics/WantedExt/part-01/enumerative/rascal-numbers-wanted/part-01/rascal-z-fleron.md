@@ -14,7 +14,7 @@ side equals `2` while `R_{n,k} = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rascal Z](rascal-z.md)
 
 ## Sources
 

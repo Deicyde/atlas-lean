@@ -12,7 +12,7 @@ Source: Hansen (1992), corrected in Baez, Bagdasaryan and Gibbs (2015).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hansen1992 Corrected BBG2015 Upper Bound](../part-01/hansen1992-corrected-bbg2015-upper-bound.md)
 
 ## Sources
 

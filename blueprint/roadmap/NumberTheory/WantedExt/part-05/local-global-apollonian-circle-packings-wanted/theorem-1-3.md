@@ -13,7 +13,8 @@ There exist infinitely many `A` for which the number of missing curvatures up to
 
 ## Depends on
 
-This node has no prerequisites.
+- [Primitive Apollonian Circle Packing](primitive-apollonian-circle-packing.md)
+- [Missing Curvatures](missing-curvatures.md)
 
 ## Sources
 

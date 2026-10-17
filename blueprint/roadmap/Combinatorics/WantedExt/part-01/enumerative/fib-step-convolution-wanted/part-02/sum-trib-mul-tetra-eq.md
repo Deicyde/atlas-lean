@@ -16,7 +16,7 @@ fails at `n = 0`, giving `0` for `1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Step](../part-01/fib-step.md)
 
 ## Sources
 

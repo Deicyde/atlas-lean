@@ -11,7 +11,8 @@ The only balancing number that is a concatenation of two repdigits is `35`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Concat Two Repdigits](is-concat-two-repdigits.md)
+- [Balancing Num](balancing-num.md)
 
 ## Sources
 

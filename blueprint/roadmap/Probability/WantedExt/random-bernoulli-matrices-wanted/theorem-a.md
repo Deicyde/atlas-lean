@@ -17,7 +17,7 @@ For every `p ∈ (0, 1/2]` and `ε > 0` there exists `N, C > 0` such that for an
 
 ## Depends on
 
-This node has no prerequisites.
+- [Σ min](min.md)
 
 ## Sources
 

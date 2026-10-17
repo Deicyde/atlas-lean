@@ -15,7 +15,7 @@ Moved from `OpenConjectures/GraphTheory/ErdosProblem57`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

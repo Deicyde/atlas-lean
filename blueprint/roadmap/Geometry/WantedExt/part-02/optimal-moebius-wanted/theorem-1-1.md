@@ -14,7 +14,7 @@ A smooth embedded paper Moebius band has aspect ratio greater than `√3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Moebius Embedding](is-moebius-embedding.md)
 
 ## Sources
 

@@ -14,7 +14,8 @@ tournament if and only if `∑_{i=1}^k s_i ≥ C(k, 2)` for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Tournament](is-tournament.md)
+- [Score](score.md)
 
 ## Sources
 

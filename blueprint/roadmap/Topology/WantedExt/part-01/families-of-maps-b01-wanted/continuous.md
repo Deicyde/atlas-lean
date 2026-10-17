@@ -12,7 +12,12 @@ Source: S. Morrison and K. Walker, *The Blob Complex*, arXiv:1009.5025, Appendix
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adapted To](adapted-to.md)
+- [Is Boundary Subpolyhedron](is-boundary-subpolyhedron.md)
+- [Is Polyhedron](is-polyhedron.md)
+- [Subdivision](subdivision.md)
+- [Supported](supported.md)
+- [Closed Cell](closed-cell.md)
 
 ## Sources
 

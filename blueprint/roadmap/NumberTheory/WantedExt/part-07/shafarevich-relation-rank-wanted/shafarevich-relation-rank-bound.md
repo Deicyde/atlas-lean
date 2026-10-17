@@ -11,7 +11,11 @@ Source: D. C. Mayer, *New number fields with known p-class tower*, Tatra Mt. Mat
 
 ## Depends on
 
-This node has no prerequisites.
+- [H2 Finite](h2-finite.md)
+- [Max Unramified Pro PGalois Group](max-unramified-pro-pgalois-group.md)
+- [Generator Rank](generator-rank.md)
+- [Maximal Unramified Pro PF](maximal-unramified-pro-pf.md)
+- [Relation Rank](relation-rank.md)
 
 ## Sources
 

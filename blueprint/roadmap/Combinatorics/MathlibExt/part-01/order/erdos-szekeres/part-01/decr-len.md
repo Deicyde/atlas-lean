@@ -14,6 +14,13 @@ Length of the longest decreasing subsequence ending at `p`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Decr End](is-decr-end.md)
+- [Is Decr Subseq](is-decr-subseq.md)
+- [Singleton decr](singleton-decr.md)
+- [Sub one lt of pos](sub-one-lt-of-pos.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Order.ErdosSzekeres](../../../../../../../sources/v2/MathlibExt.md)

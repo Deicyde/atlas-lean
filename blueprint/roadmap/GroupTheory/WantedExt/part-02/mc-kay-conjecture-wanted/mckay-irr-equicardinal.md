@@ -15,7 +15,7 @@ equinumerous with those of the normalizer of `P` in `G`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [P Prime Characters](p-prime-characters.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ has the property `P*`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Property PStar](has-property-pstar.md)
+- [Reverse](../../../../../Data/MathlibExt/nat/digits/reverse-digits.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ triangular: `U_{i,j} = 0` for `j < i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [U Entry](u-entry.md)
 
 ## Sources
 

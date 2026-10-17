@@ -12,7 +12,7 @@ Source: Pál, Über ein elementares Variationsproblem (1920), hexagon bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pal1920 Hexagon Upper Bound](../part-01/pal1920-hexagon-upper-bound.md)
 
 ## Sources
 

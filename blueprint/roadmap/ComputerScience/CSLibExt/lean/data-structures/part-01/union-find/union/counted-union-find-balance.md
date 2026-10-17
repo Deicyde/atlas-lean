@@ -13,7 +13,12 @@ Exactly two FIND root tests remain after subtracting their actual carried writes
 
 ## Depends on
 
-This node has no prerequisites.
+- [Counted Union](counted-union.md)
+
+## Proof depends on
+
+- [Counted Aux time balance](../find/counted-aux-time-balance.md)
+- [Counted Find](../find/counted-find.md)
 
 ## Sources
 

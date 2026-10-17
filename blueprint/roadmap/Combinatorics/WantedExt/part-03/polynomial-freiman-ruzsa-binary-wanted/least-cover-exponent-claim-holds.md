@@ -11,7 +11,7 @@ The asymptotic exponent has the source's asserted least-element property.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Least Cover Exponent Claim](least-cover-exponent-claim.md)
 
 ## Sources
 

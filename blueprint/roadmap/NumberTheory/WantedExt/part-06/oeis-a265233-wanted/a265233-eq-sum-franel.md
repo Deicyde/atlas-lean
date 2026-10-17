@@ -14,7 +14,8 @@ lean: MathlibExt.NumberTheory.OeisA265233Wanted.a265233_eq_sum_franel
 
 ## Depends on
 
-This node has no prerequisites.
+- [A265233](a265233.md)
+- [Binomial Power Seq](../../../MathlibExt/part-01/arithmetic-function/binomial-power-realizability/binomial-power-seq.md)
 
 ## Sources
 

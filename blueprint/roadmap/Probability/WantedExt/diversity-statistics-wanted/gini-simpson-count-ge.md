@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.DiversityStatisticsWanted.giniSimpsonCount_ge
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gini Simpson Count](gini-simpson-count.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ Source: L. Euler (1744) and J.-L. Lagrange (1755). Listed as §44 in O. Knill, S
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Variational Extremum](is-variational-extremum.md)
+- [Lagrangian Partial V](lagrangian-partial-v.md)
+- [Lagrangian Partial X](lagrangian-partial-x.md)
 
 ## Sources
 

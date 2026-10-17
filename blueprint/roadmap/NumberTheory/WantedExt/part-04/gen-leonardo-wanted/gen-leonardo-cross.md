@@ -12,7 +12,8 @@ The cross-product identity `L_{k,n} * M_{k,n+1} - L_{k,n+1} * M_{k,n-1}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Leonardo](gen-leonardo.md)
+- [Gen Leonardo Companion](gen-leonardo-companion.md)
 
 ## Sources
 

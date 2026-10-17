@@ -11,7 +11,8 @@ lean: MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.stirlingLikeMatr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Omega](omega.md)
+- [Stirling Like Matrix](stirling-like-matrix.md)
 
 ## Sources
 

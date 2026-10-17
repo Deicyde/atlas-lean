@@ -12,7 +12,8 @@ lean: MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.pow_mul_pow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Array R](array-r.md)
+- [Power Sum](power-sum.md)
 
 ## Sources
 

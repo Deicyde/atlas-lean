@@ -15,7 +15,7 @@ holds iff for every
 
 ## Depends on
 
-This node has no prerequisites.
+- [Farey Seq](../../MathlibExt/part-05/farey/farey-seq.md)
 
 ## Sources
 

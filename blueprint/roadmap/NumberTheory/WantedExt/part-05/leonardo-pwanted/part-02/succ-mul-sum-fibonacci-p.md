@@ -12,7 +12,8 @@ lean: MathlibExt.NumberTheory.LeonardoPWanted.succ_mul_sum_fibonacciP
 
 ## Depends on
 
-This node has no prerequisites.
+- [Leonardo PK](../part-01/leonardo-pk.md)
+- [Fibonacci P](../../../../MathlibExt/part-02/recurrences/part-01/honsberger-fibonacci-p/fibonacci-p.md)
 
 ## Sources
 

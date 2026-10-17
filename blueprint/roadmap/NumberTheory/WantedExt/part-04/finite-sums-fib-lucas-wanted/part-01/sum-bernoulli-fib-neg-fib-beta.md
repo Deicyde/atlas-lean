@@ -14,7 +14,7 @@ the double sum is `0` for `m ≥ 1`; as printed (factor
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Beta](fib-beta.md)
 
 ## Sources
 

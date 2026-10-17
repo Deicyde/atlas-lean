@@ -17,7 +17,7 @@ would read `0 = 1` at `n = 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Avoid ZZ1 Z](avoid-zz1-z.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ property `P*`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Property PStar](has-property-pstar.md)
+- [Is Reverse Divisor](is-reverse-divisor.md)
 
 ## Sources
 

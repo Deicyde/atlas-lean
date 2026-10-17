@@ -17,7 +17,7 @@ Mathematical Society 365 (2013). Moved from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

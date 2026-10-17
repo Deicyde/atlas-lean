@@ -15,7 +15,7 @@ https://arxiv.org/abs/2601.10238. Moved from `OpenConjectures/Combinatorics/Erdo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

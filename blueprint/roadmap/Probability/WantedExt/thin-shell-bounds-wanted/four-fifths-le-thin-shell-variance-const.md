@@ -12,7 +12,7 @@ The cube's exact lower bound for the universal variance constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Thin Shell Variance Constant](../../MathlibExt/part-01/geometry/thin-shell/thin-shell-variance-constant.md)
 
 ## Sources
 

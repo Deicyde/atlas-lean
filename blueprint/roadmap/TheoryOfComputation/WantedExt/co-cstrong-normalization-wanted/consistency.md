@@ -12,7 +12,9 @@ Source: Coquand and Huet, 'The calculus of constructions' (1988); Zhaohui Luo, '
 
 ## Depends on
 
-This node has no prerequisites.
+- [Srt](srt.md)
+- [Tm](tm.md)
+- [Typing](typing.md)
 
 ## Sources
 

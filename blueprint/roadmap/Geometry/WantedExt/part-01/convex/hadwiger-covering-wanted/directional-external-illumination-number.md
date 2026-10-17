@@ -12,7 +12,9 @@ The two illumination numbers have the same minimum over actual finite families.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Convex Body](../../../../MathlibExt/convex/covering/is-convex-body.md)
+- [Directional Illumination Number](../../../../MathlibExt/convex/illumination/directional-illumination-number.md)
+- [External Point Illumination Number](../../../../MathlibExt/convex/illumination/external-point-illumination-number.md)
 
 ## Sources
 

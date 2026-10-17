@@ -11,7 +11,7 @@ Source: Euclid, Elements, Book XIII (~300 BC, p_3 = 5); L. Schläfli, Theorie de
 
 ## Depends on
 
-This node has no prerequisites.
+- [Platonic Count](platonic-count.md)
 
 ## Sources
 

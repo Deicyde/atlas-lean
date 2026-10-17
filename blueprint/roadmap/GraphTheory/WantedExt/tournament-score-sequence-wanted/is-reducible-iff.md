@@ -14,7 +14,9 @@ sequence `s_1 ≤ ⋯ ≤ s_n` is reducible if and only if
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Reducible](is-reducible.md)
+- [Is Tournament](is-tournament.md)
+- [Score](score.md)
 
 ## Sources
 

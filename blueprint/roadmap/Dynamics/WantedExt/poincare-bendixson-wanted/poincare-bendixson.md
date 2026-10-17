@@ -12,7 +12,7 @@ Source: H. Poincaré, *Mémoire sur les courbes définies par une équation diff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
 
 ## Sources
 

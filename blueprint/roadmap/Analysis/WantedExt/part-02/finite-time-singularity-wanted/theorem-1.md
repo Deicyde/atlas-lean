@@ -21,7 +21,12 @@ was already known, so the formal statement only asks for existence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Local Euler Equation Solution](is-local-euler-equation-solution.md)
+- [Is Odd](is-odd.md)
+- [Div](div.md)
+- [Vorticity](vorticity.md)
+- [Is Cont Diff Holder](is-cont-diff-holder.md)
+- [Is Cont Diff Holder On](is-cont-diff-holder-on.md)
 
 ## Sources
 

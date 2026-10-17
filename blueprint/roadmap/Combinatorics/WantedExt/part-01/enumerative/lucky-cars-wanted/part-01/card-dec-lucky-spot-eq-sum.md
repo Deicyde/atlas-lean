@@ -14,7 +14,7 @@ Lemma 22 values over `i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Dec](q-dec.md)
 
 ## Sources
 

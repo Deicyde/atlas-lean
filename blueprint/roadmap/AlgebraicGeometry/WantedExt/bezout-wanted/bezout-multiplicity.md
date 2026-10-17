@@ -12,7 +12,9 @@ Source: É. Bézout, *Théorie générale des équations algébriques*, Paris, 1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Proj Space](proj-space.md)
+- [Intersection Multiplicity](intersection-multiplicity.md)
+- [Vanishing Set](vanishing-set.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ of the form `2^a p^b` with `b` even.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Near FPerfect](../part-01/is-near-fperfect.md)
 
 ## Sources
 

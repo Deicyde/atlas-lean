@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.MahlerPopkenComplexityWanted.logb_two_le_mahlerPop
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mahler Popken Complexity](mahler-popken-complexity.md)
 
 ## Sources
 

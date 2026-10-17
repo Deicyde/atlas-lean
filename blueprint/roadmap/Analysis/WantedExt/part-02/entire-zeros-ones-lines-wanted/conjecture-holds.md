@@ -18,7 +18,7 @@ functions with two radially distributed values, Math. Proc. Cambridge Philos. So
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

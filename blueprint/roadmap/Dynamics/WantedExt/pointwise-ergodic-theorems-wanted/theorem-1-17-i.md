@@ -14,7 +14,7 @@ The averages `A T N X P f g` converge as `N → ∞` in `Lᵖ(X)` norm.
 
 ## Depends on
 
-This node has no prerequisites.
+- [A](a.md)
 
 ## Sources
 

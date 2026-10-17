@@ -16,7 +16,8 @@ residue class depends on it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sum Of Two Prime Powers](is-sum-of-two-prime-powers.md)
+- [Tribonacci Sequence With Initial Values001](../../../MathlibExt/part-11/tribonacci.md)
 
 ## Sources
 

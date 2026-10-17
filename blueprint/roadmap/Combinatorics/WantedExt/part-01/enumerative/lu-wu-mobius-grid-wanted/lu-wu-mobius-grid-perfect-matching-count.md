@@ -12,7 +12,7 @@ Unweighted odd-column Lu-Wu perfect-matching formula for the Mobius grid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mobius Grid Perfect Matching Count](mobius-grid-perfect-matching-count.md)
 
 ## Sources
 

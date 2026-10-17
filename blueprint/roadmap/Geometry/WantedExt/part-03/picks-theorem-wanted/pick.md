@@ -11,7 +11,11 @@ Source: G. Pick, *Geometrisches zur Zahlenlehre* (1899). Knill, *Some fundamenta
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Simple](is-simple.md)
+- [Area](area.md)
+- [Boundary Pts](boundary-pts.md)
+- [Interior Pts](interior-pts.md)
+- [Lat Poly](lat-poly.md)
 
 ## Sources
 

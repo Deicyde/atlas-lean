@@ -12,7 +12,7 @@ Source: C15a [AV2020], Alman--Vassilevska Williams bound `2.3728596`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Matrix Multiplication Circuit Exponent](../../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/square-matrix-multiplication-circuit-exp.md)
 
 ## Sources
 

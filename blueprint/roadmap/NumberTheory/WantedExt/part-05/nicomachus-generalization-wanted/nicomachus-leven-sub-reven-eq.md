@@ -12,7 +12,9 @@ x·P_{m,e}(x) - x² + x³` for `m ≥ 2` (Equation (8)).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nicomachus LEven](nicomachus-leven.md)
+- [Nicomachus PEven](nicomachus-peven.md)
+- [Nicomachus REven](nicomachus-reven.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Maynard's unconditional bound, also obtained independently by Tao.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Gap Liminf](../../../MathlibExt/part-09/prime-gap-liminf/prime-gap-liminf.md)
 
 ## Sources
 

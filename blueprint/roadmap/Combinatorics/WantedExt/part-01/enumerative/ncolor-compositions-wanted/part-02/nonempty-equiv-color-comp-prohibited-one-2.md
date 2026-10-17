@@ -14,7 +14,7 @@ odd number of parts (for `n ≥ 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Color Comp Prohibited](../part-01/color-comp-prohibited.md)
 
 ## Sources
 

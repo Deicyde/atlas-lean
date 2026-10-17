@@ -13,7 +13,8 @@ symmetric functions are squares.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Square Elementary Symmetric Functions](has-square-elementary-symmetric-function.md)
+- [Is Sum Two Nonzero Squaresℤ](is-sum-two-nonzero-squares.md)
 
 ## Sources
 

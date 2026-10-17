@@ -21,7 +21,8 @@ and satisfy
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is NBody Solution](is-nbody-solution.md)
+- [Without Collisions](without-collisions.md)
 
 ## Sources
 

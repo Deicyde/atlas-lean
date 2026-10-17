@@ -25,7 +25,13 @@ Note: Since `v` is in `L¹(ℝ³)`, we interpret `v ≠ 0` to mean that `v` is n
 
 ## Depends on
 
-This node has no prerequisites.
+- [CInfty0 Box](cinfty0-box.md)
+- [Is Radial](is-radial.md)
+- [A](a.md)
+- [Box](box.md)
+- [Η](untitled-2.md)
+- [𝓒](untitled-3.md)
+- [𝓡](untitled.md)
 
 ## Sources
 

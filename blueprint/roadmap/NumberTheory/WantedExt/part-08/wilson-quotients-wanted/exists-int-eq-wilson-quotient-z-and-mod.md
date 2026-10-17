@@ -13,7 +13,7 @@ or prime.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wilson Quotient Z](wilson-quotient-z.md)
 
 ## Sources
 

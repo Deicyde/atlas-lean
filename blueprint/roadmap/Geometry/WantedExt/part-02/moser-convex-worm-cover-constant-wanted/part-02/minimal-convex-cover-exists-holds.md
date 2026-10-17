@@ -12,7 +12,7 @@ Source: Optimization Problems, constant 13a, closed claim `minimalConvexCoverExi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Minimal Convex Cover Exists](../part-01/minimal-convex-cover-exists.md)
 
 ## Sources
 

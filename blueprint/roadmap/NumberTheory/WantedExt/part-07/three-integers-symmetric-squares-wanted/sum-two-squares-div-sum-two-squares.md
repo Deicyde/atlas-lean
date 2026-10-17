@@ -12,7 +12,7 @@ of two rational squares.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sum Two Squaresℚ](is-sum-two-squares.md)
 
 ## Sources
 

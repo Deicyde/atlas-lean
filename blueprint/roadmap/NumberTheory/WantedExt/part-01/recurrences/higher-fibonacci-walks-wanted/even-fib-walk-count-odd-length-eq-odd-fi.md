@@ -12,7 +12,8 @@ even-position and odd-position walk counts are equal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even Fib Walk Count](even-fib-walk-count.md)
+- [Odd Fib Walk Count](odd-fib-walk-count.md)
 
 ## Sources
 

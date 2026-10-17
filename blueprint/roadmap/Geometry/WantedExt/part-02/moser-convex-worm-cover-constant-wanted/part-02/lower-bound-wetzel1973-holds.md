@@ -12,7 +12,7 @@ Source: Optimization Problems, constant 13a, closed claim `lowerBoundWetzel1973`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Bound Wetzel1973](../part-01/lower-bound-wetzel1973.md)
 
 ## Sources
 

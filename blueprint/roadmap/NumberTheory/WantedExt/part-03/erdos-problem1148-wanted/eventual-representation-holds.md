@@ -14,7 +14,7 @@ x^2+y^2-z^2, arXiv:2603.18087 (2026), https://arxiv.org/abs/2603.18087. Moved fr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eventual Representation](eventual-representation.md)
 
 ## Sources
 

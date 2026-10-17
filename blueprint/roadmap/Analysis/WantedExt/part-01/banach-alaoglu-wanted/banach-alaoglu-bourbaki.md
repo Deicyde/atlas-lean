@@ -12,7 +12,7 @@ Source: N. Bourbaki, Espaces vectoriels topologiques; the normed case is L. Alao
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weak Star Polar](weak-star-polar.md)
 
 ## Sources
 

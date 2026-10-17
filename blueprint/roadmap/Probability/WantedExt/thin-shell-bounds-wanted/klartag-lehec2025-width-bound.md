@@ -12,7 +12,7 @@ The dimension-independent constant-width consequence of the 2025 variance bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Thin Shell Width](../../MathlibExt/part-01/geometry/thin-shell/thin-shell-width.md)
 
 ## Sources
 

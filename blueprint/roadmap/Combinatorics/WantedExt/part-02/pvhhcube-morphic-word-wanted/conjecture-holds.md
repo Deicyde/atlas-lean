@@ -17,7 +17,7 @@ https://arxiv.org/abs/1106.5204. Moved from `OpenConjectures/Combinatorics/PVHHC
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

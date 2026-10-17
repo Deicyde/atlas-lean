@@ -17,7 +17,7 @@ Subgroups of PL+I which do not embed into Thompson's group F, Groups, Geometry, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

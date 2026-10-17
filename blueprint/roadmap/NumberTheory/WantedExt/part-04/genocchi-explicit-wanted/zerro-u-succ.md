@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.GenocchiExplicitWanted.zerroU_succ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zerro U](zerro-u.md)
 
 ## Sources
 

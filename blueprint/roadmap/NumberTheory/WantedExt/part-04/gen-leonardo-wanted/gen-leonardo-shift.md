@@ -18,7 +18,7 @@ extension.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Leonardo](gen-leonardo.md)
 
 ## Sources
 

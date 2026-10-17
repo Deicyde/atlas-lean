@@ -13,7 +13,7 @@ if and only if `r₀ - r₁ = 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Euclid Switch Seq](is-euclid-switch-seq.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Source: C15a [S1969], Strassen's `log₂ 7` bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Matrix Multiplication Circuit Exponent](../../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/square-matrix-multiplication-circuit-exp.md)
 
 ## Sources
 

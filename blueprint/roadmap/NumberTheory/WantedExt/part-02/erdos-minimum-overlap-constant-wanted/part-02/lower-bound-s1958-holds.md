@@ -11,7 +11,7 @@ Source: Swierczkowski 1958 and Optimization Problems 1b.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Bound S1958](../part-01/lower-bound-s1958.md)
 
 ## Sources
 

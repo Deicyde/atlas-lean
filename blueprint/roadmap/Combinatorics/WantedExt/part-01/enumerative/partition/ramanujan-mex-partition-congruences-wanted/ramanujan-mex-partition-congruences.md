@@ -13,7 +13,8 @@ Source corollary (Barman–Singh, JIS 24 (2021), Art. 21.6.3): six congruences f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mex Partition Number](mex-partition-number.md)
+- [Ramanujan Delta](ramanujan-delta.md)
 
 ## Sources
 

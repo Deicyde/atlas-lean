@@ -12,7 +12,7 @@ for `a ∈ {0, 1, 2}` and all `b`, other than `a = b = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cx](cx.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Kim--Ramakrishnan (2003): no eigenvalue of a congruence subgroup lies in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Congruence Subgroup](../../../MathlibExt/part-01/modular-forms/selberg-spectral-gap/part-01/is-congruence-subgroup.md)
+- [Is Eigenvalue](../../../MathlibExt/part-01/modular-forms/selberg-spectral-gap/part-01/is-eigenvalue.md)
 
 ## Sources
 

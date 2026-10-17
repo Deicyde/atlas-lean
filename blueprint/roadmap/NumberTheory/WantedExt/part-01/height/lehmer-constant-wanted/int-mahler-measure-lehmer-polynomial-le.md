@@ -13,7 +13,8 @@ for the degree-ten example is formalized here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Int Mahler Measure](../../../../MathlibExt/part-01/height/lehmer-constant/int-mahler-measure.md)
+- [Lehmer Polynomial](../../../../MathlibExt/part-01/height/lehmer-constant/lehmer-polynomial.md)
 
 ## Sources
 

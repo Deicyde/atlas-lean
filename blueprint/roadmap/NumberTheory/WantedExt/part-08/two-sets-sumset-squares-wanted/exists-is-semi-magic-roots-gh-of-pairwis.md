@@ -14,7 +14,8 @@ sixteen sums squares arise from semi-magic `G` and `H` satisfying
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Semi Magic Roots](is-semi-magic-roots.md)
+- [Pairwise Sums Squares](pairwise-sums-squares.md)
 
 ## Sources
 

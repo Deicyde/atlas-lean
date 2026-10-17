@@ -12,7 +12,7 @@ Source: L. Onsager, *Crystal statistics I*, Phys. Rev. 65 (1944). Knill, §158. 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Ising Free Energy Seq](finite-ising-free-energy-seq.md)
 
 ## Sources
 

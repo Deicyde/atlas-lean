@@ -12,7 +12,7 @@ Source: catalogue C19a, She2013 upper row; the primary correction is unresolved.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shevtsova2013 Upper Bound](../part-01/shevtsova2013-upper-bound.md)
 
 ## Sources
 

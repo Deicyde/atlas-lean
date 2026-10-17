@@ -12,7 +12,7 @@ only if `n` is even or `1` or prime.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wilson Quotient ZPlus](wilson-quotient-zplus.md)
 
 ## Sources
 

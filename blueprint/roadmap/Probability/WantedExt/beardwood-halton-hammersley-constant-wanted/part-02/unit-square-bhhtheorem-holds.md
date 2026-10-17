@@ -12,7 +12,7 @@ Source: Beardwood, Halton and Hammersley (1959), quoted in Steinerberger (2015).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit Square BHHTheorem](../part-01/unit-square-bhhtheorem.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ The universal covering predicate has the directional illumination interpretation
 
 ## Depends on
 
-This node has no prerequisites.
+- [Illuminated By Directions](../../../../MathlibExt/convex/illumination/illuminated-by-directions.md)
+- [Is Convex Body](../../../../MathlibExt/convex/covering/is-convex-body.md)
+- [Uniform Interior Translate Bound](../../../../MathlibExt/convex/covering/uniform-interior-translate-bound.md)
 
 ## Sources
 

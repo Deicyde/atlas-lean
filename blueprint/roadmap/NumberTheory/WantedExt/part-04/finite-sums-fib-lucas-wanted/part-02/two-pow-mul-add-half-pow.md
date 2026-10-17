@@ -15,7 +15,8 @@ E_{ℓ₁}⋯E_{ℓ_q} · L_{j₁}⋯L_{j_q} · x^{m-n}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Sec Number](../part-01/euler-sec-number.md)
+- [Lucas Number](../../../../MathlibExt/part-07/lucas-sequence/lucas-number.md)
 
 ## Sources
 

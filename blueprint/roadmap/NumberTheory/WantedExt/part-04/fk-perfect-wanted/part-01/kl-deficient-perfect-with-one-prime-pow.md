@@ -13,7 +13,7 @@ lean: MathlibExt.NumberTheory.FkPerfectWanted.klDeficientPerfectWith_one_prime_p
 
 ## Depends on
 
-This node has no prerequisites.
+- [KLDeficient Perfect With](kldeficient-perfect-with.md)
 
 ## Sources
 

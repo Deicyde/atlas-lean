@@ -12,7 +12,8 @@ Source: J. Bourgain, *Pointwise ergodic theorems for arithmetic sets*, Publ. Mat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Integer Polynomial Sequence](is-integer-polynomial-sequence.md)
+- [Polynomial Ergodic Average](polynomial-ergodic-average.md)
 
 ## Sources
 

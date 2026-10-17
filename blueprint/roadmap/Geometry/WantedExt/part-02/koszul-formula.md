@@ -11,7 +11,7 @@ Source: J.-L. Koszul (course notes, 1950s); cf. do Carmo, Riemannian Geometry. L
 
 ## Depends on
 
-This node has no prerequisites.
+- [Metric Compatibility Shared](is-metric-compatible.md)
 
 ## Sources
 

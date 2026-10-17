@@ -18,7 +18,11 @@ Then `p + qa + rb + sab` is a non-trivial unit in the group ring `𝔽₂[P]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [P](p.md)
+- [R](r.md)
+- [Generators](generators.md)
+- [Relations](relations.md)
+- [U](u.md)
 
 ## Sources
 

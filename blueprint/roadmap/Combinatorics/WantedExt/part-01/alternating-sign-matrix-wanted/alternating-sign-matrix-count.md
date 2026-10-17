@@ -12,7 +12,8 @@ Source: D. Zeilberger (1996); G. Kuperberg (1996). Knill, §168. Via leanprover/
 
 ## Depends on
 
-This node has no prerequisites.
+- [ASMatrix](asmatrix.md)
+- [Robbins Product](robbins-product.md)
 
 ## Sources
 

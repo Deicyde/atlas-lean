@@ -12,7 +12,7 @@ Lee--Vempala's exponent `1/4`, first published in FOCS 2017.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dimensional Kls Constant](../../MathlibExt/part-01/geometry/kls/part-01/dimensional-kls-constant.md)
 
 ## Sources
 

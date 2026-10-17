@@ -12,7 +12,7 @@ Source: Kepler conjecture 1611 (J. Kepler, *Strena seu de Nive Sexangula*); proo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Δ](untitled.md)
 
 ## Sources
 

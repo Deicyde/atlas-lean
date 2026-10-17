@@ -12,7 +12,8 @@ lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.refinedSchreie
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Min Part Gap Count](../part-01/partition-min-part-gap-count.md)
+- [Refined Schreier Card Min Count](refined-schreier-card-min-count.md)
 
 ## Sources
 

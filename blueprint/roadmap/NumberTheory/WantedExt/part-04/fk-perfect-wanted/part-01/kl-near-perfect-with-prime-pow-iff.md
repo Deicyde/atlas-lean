@@ -19,7 +19,7 @@ form is the case `a = k` of the identity
 
 ## Depends on
 
-This node has no prerequisites.
+- [KLNear Perfect With](klnear-perfect-with.md)
 
 ## Sources
 

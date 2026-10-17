@@ -12,7 +12,7 @@ Source: R. Brauer and M. Suzuki, On finite groups of even order whose 2-Sylow gr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Core](odd-core.md)
 
 ## Sources
 

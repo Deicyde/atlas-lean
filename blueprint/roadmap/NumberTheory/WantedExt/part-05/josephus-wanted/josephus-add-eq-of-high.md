@@ -14,7 +14,8 @@ extremal point and `j := J_k(n_e + 1)`, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is High Extremal](is-high-extremal.md)
+- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 
 ## Sources
 

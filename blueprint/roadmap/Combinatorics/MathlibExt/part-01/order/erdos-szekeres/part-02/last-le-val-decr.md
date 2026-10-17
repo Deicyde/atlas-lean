@@ -14,7 +14,7 @@ subsequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sub one lt of pos](../part-01/sub-one-lt-of-pos.md)
 
 ## Sources
 

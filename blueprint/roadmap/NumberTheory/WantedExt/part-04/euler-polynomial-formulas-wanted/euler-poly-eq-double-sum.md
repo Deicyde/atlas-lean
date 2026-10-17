@@ -14,7 +14,8 @@ lean: MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPoly_eq_double_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Poly](euler-poly.md)
+- [Gen Stirling Poly](gen-stirling-poly.md)
 
 ## Sources
 

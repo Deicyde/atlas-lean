@@ -12,7 +12,7 @@ five colors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Planar](../../../MathlibExt/part-01/simple-graph/part-03/planarity/is-planar.md)
 
 ## Sources
 

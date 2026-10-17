@@ -16,7 +16,10 @@ Note: We require `w ≥ 2`, as the paper assumes `log log w > 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [C](c.md)
+- [Lower Bound](lower-bound.md)
+- [Is Sunflower](is-sunflower.md)
+- [Is System](is-system.md)
 
 ## Sources
 

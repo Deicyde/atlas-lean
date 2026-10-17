@@ -19,7 +19,7 @@ https://arxiv.org/abs/2608.21354. Moved from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

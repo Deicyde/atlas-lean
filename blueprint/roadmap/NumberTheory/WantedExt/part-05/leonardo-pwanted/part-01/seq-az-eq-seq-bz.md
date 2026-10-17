@@ -12,7 +12,8 @@ lean: MathlibExt.NumberTheory.LeonardoPWanted.seqAZ_eq_seqBZ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seq AZ](seq-az.md)
+- [Seq BZ](seq-bz.md)
 
 ## Sources
 

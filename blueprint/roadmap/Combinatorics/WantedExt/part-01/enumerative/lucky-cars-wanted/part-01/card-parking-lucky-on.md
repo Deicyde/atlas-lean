@@ -15,7 +15,8 @@ cars in `U` are not is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Lucky Car](is-lucky-car.md)
+- [Is Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
 
 ## Sources
 

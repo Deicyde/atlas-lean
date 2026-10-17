@@ -13,7 +13,7 @@ divisor `d` if and only if `a = 2`, `ℓ = 1`, and `d = 1`
 
 ## Depends on
 
-This node has no prerequisites.
+- [KLNear Perfect With](klnear-perfect-with.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ Moved from `OpenConjectures/Analysis/RubelHInfinityCoherence`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rubel Problem524](rubel-problem524.md)
 
 ## Sources
 

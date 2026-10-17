@@ -12,7 +12,7 @@ number and `2^a` exactly divides `n`, then `2^(a+1) < R`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Nondeficient](is-primitive-nondeficient.md)
 
 ## Sources
 

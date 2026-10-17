@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.order_add_mul_prime_eq_o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mul Ord Mod](mul-ord-mod.md)
 
 ## Sources
 

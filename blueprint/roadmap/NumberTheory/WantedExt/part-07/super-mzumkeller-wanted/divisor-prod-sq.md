@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.SuperMZumkellerWanted.divisorProd_sq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Divisor Prod](divisor-prod.md)
 
 ## Sources
 

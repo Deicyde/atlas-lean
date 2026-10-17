@@ -11,7 +11,7 @@ Source: P.S. Novikov, 'On the algorithmic unsolvability of the word problem in g
 
 ## Depends on
 
-This node has no prerequisites.
+- [Word Problem Solvable Shared](word-problem-solvable.md)
 
 ## Sources
 

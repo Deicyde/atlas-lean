@@ -12,7 +12,7 @@ Source: Stewart (1978), the strict degree-dependent bound quoted by Voutier.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Algebraic Mahler Measure](../../../../MathlibExt/part-01/height/primitive-mahler/algebraic-mahler-measure.md)
 
 ## Sources
 

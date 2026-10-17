@@ -12,7 +12,7 @@ The unconditional lower bound on Brun's constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Brun Constant](../../../../../MathlibExt/part-02/prime-counting/part-01/brun-constant/brun-constant.md)
 
 ## Sources
 

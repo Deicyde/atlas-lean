@@ -12,7 +12,7 @@ by the Sylvester sequence are exactly `3` and `7`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sylvester Number](sylvester-number.md)
 
 ## Sources
 

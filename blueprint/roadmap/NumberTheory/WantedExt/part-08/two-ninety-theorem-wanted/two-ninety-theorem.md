@@ -11,7 +11,10 @@ Source: M. Bhargava, J. Hanke, Universal quadratic forms and the 290-theorem, pr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integral](integral.md)
+- [Is Universal](is-universal.md)
+- [Represents](represents.md)
+- [Critical Numbers](critical-numbers.md)
 
 ## Sources
 

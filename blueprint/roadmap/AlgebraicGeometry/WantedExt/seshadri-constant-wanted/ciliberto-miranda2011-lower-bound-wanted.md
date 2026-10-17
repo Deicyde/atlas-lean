@@ -11,7 +11,7 @@ Source: Ciliberto--Miranda (2011), degeneration bound `55/174`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seshadri Constant10](../../MathlibExt/seshadri-constant/seshadri-constant10.md)
 
 ## Sources
 

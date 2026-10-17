@@ -13,7 +13,7 @@ where `↓` is the descending factorial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rascal Z](../part-01/rascal-z.md)
 
 ## Sources
 

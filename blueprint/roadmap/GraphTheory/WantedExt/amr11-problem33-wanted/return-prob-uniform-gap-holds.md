@@ -18,7 +18,7 @@ volume growth, isoperimetry and escape probability in vertex-transitive graphs, 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Return Prob Uniform Gap](return-prob-uniform-gap.md)
 
 ## Sources
 

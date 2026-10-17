@@ -11,7 +11,9 @@ Source: E. Fedorov, 'Симметрія правильныхъ системъ ф
 
 ## Depends on
 
-This node has no prerequisites.
+- [Crystallographic Shared](../../part-01/e.md)
+- [Crystallographic Count OP](crystallographic-count-op.md)
+- [Crystallographic Count OPOnly](crystallographic-count-oponly.md)
 
 ## Sources
 

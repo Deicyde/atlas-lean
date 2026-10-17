@@ -11,7 +11,7 @@ Source: dLOV2014 Table 1. Known literature bound; no Lean proof supplied.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Bound d LOV2014](lower-bound-d-lov2014.md)
 
 ## Sources
 

@@ -15,7 +15,8 @@ either `y = 0` or `d = 0` or `l ≤ exp(10 ^ k)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solution](solution.md)
+- [K₀](k.md)
 
 ## Sources
 

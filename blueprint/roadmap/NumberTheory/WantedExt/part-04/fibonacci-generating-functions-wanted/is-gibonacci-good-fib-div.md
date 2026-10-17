@@ -13,7 +13,7 @@ two-sided Fibonacci extension; this statement covers `n ∈ ℕ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gibonacci Good](is-gibonacci-good.md)
 
 ## Sources
 

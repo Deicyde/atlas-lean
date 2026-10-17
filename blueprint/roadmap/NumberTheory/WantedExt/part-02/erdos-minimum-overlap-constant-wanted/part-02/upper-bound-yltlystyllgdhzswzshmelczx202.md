@@ -11,7 +11,7 @@ Source: Ye et al. 2026 and Optimization Problems 1b.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Bound YLTLYSTYLLGDHZSWZSHMELCZX2026 Simple TES](../part-01/upper-bound-yltlystyllgdhzswzshmelczx202.md)
 
 ## Sources
 

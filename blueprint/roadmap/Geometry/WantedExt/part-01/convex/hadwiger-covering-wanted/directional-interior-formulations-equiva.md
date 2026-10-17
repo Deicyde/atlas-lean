@@ -12,7 +12,9 @@ Finite illumination and actual interior-translate covering counts agree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covered By Interior Translates](../../../../MathlibExt/convex/covering/covered-by-interior-translates.md)
+- [Illuminated By Directions](../../../../MathlibExt/convex/illumination/illuminated-by-directions.md)
+- [Is Convex Body](../../../../MathlibExt/convex/covering/is-convex-body.md)
 
 ## Sources
 

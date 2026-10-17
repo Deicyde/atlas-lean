@@ -13,7 +13,7 @@ of the partitions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pairwise Products](pairwise-products.md)
 
 ## Sources
 

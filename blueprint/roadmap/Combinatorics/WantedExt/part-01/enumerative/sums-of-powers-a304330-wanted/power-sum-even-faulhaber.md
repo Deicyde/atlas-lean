@@ -13,7 +13,8 @@ lean: MathlibExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted.powerSum_ev
 
 ## Depends on
 
-This node has no prerequisites.
+- [Faulhaber B](faulhaber-b.md)
+- [Power Sum](power-sum.md)
 
 ## Sources
 

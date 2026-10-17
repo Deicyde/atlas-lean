@@ -15,7 +15,8 @@ lean: MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPolyGen_recurre
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Poly](euler-poly.md)
+- [Euler Poly Gen](euler-poly-gen.md)
 
 ## Sources
 

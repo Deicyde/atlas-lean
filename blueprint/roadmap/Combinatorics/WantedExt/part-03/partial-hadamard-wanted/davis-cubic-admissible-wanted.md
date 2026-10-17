@@ -14,7 +14,7 @@ proof is not supplied here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Leading Admissible](../../../MathlibExt/part-03/partial-hadamard/is-leading-admissible.md)
 
 ## Sources
 

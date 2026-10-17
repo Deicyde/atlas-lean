@@ -12,7 +12,8 @@ Source: H. Hadwiger (1937). Listed as §31 in O. Knill, Some Fundamental Theorem
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
+- [Valuations](valuations.md)
 
 ## Sources
 

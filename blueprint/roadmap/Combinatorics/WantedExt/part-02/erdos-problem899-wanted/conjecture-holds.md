@@ -11,7 +11,7 @@ Resolved true: Resolved true by Ruzsa; a proof is available in an external Lean 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

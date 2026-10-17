@@ -14,6 +14,11 @@ There is a decreasing subsequence of length `k` ending exactly at `p`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Decr Subseq](is-decr-subseq.md)
+- [Sub one lt of pos](sub-one-lt-of-pos.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Order.ErdosSzekeres](../../../../../../../sources/v2/MathlibExt.md)

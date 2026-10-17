@@ -11,7 +11,8 @@ Source: S. Brendle & R. Schoen, *Manifolds with 1/4-pinched curvature are space 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Metric Compatibility Shared](../../part-02/is-metric-compatible.md)
+- [Quarter Pinched](quarter-pinched.md)
 
 ## Sources
 

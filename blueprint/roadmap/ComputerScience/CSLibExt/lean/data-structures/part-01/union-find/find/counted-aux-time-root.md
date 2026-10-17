@@ -13,7 +13,7 @@ A root still executes one source conditional and performs no parent assignment.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Counted Aux](counted-aux.md)
 
 ## Sources
 

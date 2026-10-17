@@ -13,7 +13,8 @@ literature result; its proof is not supplied here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Beurling Norm](../../../MathlibExt/part-02/beurling-ahlfors/beurling-norm.md)
+- [Pstar](../../../MathlibExt/part-02/beurling-ahlfors/pstar.md)
 
 ## Sources
 

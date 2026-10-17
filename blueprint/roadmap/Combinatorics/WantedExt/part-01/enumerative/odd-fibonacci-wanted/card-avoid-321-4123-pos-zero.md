@@ -15,7 +15,9 @@ values 1-based in the paper; here the position is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Pattern](has-pattern.md)
+- [Pat321](pat321.md)
+- [Pat4123](pat4123.md)
 
 ## Sources
 

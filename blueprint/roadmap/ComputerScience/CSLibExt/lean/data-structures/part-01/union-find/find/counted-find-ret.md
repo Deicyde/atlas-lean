@@ -13,7 +13,12 @@ Full dependent result equality includes the saved store and returned valid repre
 
 ## Depends on
 
-This node has no prerequisites.
+- [Counted Find](counted-find.md)
+
+## Proof depends on
+
+- [Counted Aux](counted-aux.md)
+- [Counted Aux ret](counted-aux-ret.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Source: Moser 1959 and Optimization Problems 1b.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Bound M1959](../part-01/lower-bound-m1959.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ group-object structure, not an arbitrary commutative-group structure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobian](jacobian.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Burgess's conductor-aspect central-value bound makes `3/16` admissible.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dirichlet Subconvexity Exponent](../../../MathlibExt/part-01/lseries/dirichlet-subconvexity/is-dirichlet-subconvexity-exponent.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ Then the Lebesgue measure of `X` is at least `1/3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [X](x.md)
 
 ## Sources
 

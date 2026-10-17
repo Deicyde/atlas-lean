@@ -13,7 +13,7 @@ Source: Optimization Problems, constant 13a, closed claim
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Bound Norwood Poole Laidacker1992](../part-01/upper-bound-norwood-poole-laidacker1992.md)
 
 ## Sources
 

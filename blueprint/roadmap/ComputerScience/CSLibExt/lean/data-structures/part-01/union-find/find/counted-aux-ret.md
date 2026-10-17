@@ -13,7 +13,7 @@ Erasing the actual visit/write events recovers the canonical recursive result.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Counted Aux](counted-aux.md)
 
 ## Sources
 

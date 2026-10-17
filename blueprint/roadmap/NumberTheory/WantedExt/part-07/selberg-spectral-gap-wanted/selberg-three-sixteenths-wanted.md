@@ -14,7 +14,8 @@ excluded or at least `3/16`; stated here as the absence of eigenvalues in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Congruence Subgroup](../../../MathlibExt/part-01/modular-forms/selberg-spectral-gap/part-01/is-congruence-subgroup.md)
+- [Is Eigenvalue](../../../MathlibExt/part-01/modular-forms/selberg-spectral-gap/part-01/is-eigenvalue.md)
 
 ## Sources
 

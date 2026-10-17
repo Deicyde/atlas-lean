@@ -11,7 +11,9 @@ Source: BPZ, arXiv:2607.29681, fifteen-cycle construction in dimension 4096.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Cycle Code](../../../../../MathlibExt/part-01/coding/cycle-code/is-cycle-code.md)
+- [BPZProfile](../part-01/bpzprofile.md)
+- [Bpz C15 Pi1024](bpz-c15-pi1024.md)
 
 ## Sources
 

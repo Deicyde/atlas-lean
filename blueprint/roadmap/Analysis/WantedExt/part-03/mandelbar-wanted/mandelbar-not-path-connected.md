@@ -12,7 +12,7 @@ Source: John H. Hubbard and Dierk Schleicher, *Multicorns are not Path Connected
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mandelbar](mandelbar.md)
 
 ## Sources
 

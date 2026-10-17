@@ -12,7 +12,9 @@ Finite directional and actual exterior-point illumination counts agree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Illuminated By Directions](../../../../MathlibExt/convex/illumination/illuminated-by-directions.md)
+- [Illuminated By External Points](../../../../MathlibExt/convex/illumination/illuminated-by-external-points.md)
+- [Is Convex Body](../../../../MathlibExt/convex/covering/is-convex-body.md)
 
 ## Sources
 

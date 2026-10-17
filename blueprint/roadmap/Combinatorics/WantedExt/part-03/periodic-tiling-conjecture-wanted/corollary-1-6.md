@@ -14,7 +14,7 @@ For all sufficiently large `d`, there exists a finite non-empty `F ⊆ ℤᵈ` s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Aperiodic Tiling Equation](is-aperiodic-tiling-equation.md)
 
 ## Sources
 

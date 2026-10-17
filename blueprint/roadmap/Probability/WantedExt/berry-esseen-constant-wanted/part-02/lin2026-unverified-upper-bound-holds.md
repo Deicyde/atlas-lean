@@ -12,7 +12,7 @@ Source: catalogue C19a, explicitly unverified Lin2026 row.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lin2026 Unverified Upper Bound](../part-01/lin2026-unverified-upper-bound.md)
 
 ## Sources
 

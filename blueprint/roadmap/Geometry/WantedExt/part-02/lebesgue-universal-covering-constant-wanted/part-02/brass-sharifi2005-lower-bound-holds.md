@@ -12,7 +12,7 @@ Source: Brass and Sharifi, A lower bound for Lebesgue's universal cover problem 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Brass Sharifi2005 Lower Bound](brass-sharifi2005-lower-bound.md)
 
 ## Sources
 

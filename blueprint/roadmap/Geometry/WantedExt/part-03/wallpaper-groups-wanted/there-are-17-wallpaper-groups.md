@@ -11,7 +11,7 @@ Source: G. Pólya, 'Über die Analogie der Kristallsymmetrie in der Ebene', Z. K
 
 ## Depends on
 
-This node has no prerequisites.
+- [Crystallographic Shared](../../part-01/e.md)
 
 ## Sources
 

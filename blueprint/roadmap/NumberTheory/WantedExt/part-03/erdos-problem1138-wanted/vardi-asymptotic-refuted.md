@@ -19,7 +19,7 @@ Moved from `OpenConjectures/NumberTheory/ErdosProblem1138`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vardi Asymptotic](vardi-asymptotic.md)
 
 ## Sources
 

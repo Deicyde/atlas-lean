@@ -14,7 +14,7 @@ if and only if `v n = ∑_{k=0}^n S(n,k) u k` for all `n`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Stirling First](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
 
 ## Sources
 

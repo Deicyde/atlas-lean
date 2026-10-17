@@ -11,7 +11,7 @@ Source: Haugland 2016 and the uniform partition clause of Optimization Problems 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Continuous Discrete Asymptotic Characterization](continuous-discrete-asymptotic-character.md)
 
 ## Sources
 

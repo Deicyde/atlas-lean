@@ -12,7 +12,7 @@ Source: H. Cohn, A. Kumar, S. D. Miller, D. Radchenko, and M. Viazovska, 'Univer
 
 ## Depends on
 
-This node has no prerequisites.
+- [CKMRV](ckmrv.md)
 
 ## Sources
 

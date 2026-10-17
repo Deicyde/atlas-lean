@@ -13,7 +13,7 @@ with non-negative integer coefficients, for `k ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas KDiv Factorial](lucas-kdiv-factorial.md)
 
 ## Sources
 

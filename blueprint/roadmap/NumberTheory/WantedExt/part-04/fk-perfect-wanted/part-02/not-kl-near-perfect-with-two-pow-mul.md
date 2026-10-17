@@ -13,7 +13,7 @@ or `d = p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [KLNear Perfect With](../part-01/klnear-perfect-with.md)
 
 ## Sources
 

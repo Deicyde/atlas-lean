@@ -12,7 +12,7 @@ Source: C15a [ADVXXZ2024], bound `2.371339`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Matrix Multiplication Circuit Exponent](../../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/square-matrix-multiplication-circuit-exp.md)
 
 ## Sources
 

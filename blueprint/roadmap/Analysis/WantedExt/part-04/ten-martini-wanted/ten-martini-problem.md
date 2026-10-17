@@ -12,7 +12,8 @@ Source: A. Avila and S. Jitomirskaya, 'The Ten Martini Problem', Ann. of Math. 1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ell Two](ell-two.md)
+- [Is Almost Mathieu Operator](is-almost-mathieu-operator.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ There exists a constant `C ≥ 0` such that for any `f ∈ Lᵖ₁(X)` and `g �
 
 ## Depends on
 
-This node has no prerequisites.
+- [A](a.md)
 
 ## Sources
 

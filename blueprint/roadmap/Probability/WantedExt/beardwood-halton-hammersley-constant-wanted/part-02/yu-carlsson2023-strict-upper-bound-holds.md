@@ -12,7 +12,7 @@ Source: Yu and Carlsson (2023), strict upper-bound row in the frozen catalogue.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Yu Carlsson2023 Strict Upper Bound](yu-carlsson2023-strict-upper-bound.md)
 
 ## Sources
 

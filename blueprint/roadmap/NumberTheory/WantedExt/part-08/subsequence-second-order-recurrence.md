@@ -25,7 +25,9 @@ characteristic roots as `α ^ t` and `β ^ t` is not formalized.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](../../MathlibExt/part-07/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../MathlibExt/part-07/lucas-sequence/lucas-u.md)
+- [Lucas V](../../MathlibExt/part-07/lucas-sequence/lucas-v.md)
 
 ## Sources
 

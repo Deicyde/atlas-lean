@@ -11,7 +11,9 @@ Source: https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobian](jacobian.md)
+- [Pullback](pullback.md)
+- [Genus](genus.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.trib_sub_fib
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Step](fib-step.md)
 
 ## Sources
 

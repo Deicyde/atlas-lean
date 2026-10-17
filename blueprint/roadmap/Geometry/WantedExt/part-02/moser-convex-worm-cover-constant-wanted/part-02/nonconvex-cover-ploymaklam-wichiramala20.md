@@ -13,7 +13,7 @@ Source: Optimization Problems, constant 13a, closed claim
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonconvex Cover Ploymaklam Wichiramala2018](../part-01/nonconvex-cover-ploymaklam-wichiramala20.md)
 
 ## Sources
 

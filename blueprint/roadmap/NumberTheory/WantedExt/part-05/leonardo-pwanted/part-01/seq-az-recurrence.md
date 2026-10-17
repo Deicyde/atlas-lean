@@ -13,7 +13,7 @@ else `A_p(n-1) + A_p(n-p-1)` (fails at `p = 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seq AZ](seq-az.md)
 
 ## Sources
 

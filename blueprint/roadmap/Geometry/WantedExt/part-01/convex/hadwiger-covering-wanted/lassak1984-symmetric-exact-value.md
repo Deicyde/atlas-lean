@@ -12,7 +12,7 @@ Eight is the least uniform count over all centrally symmetric three-dimensional 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniform Symmetric Interior Translate Bound](../../../../MathlibExt/convex/covering/uniform-symmetric-interior-translate-bou.md)
 
 ## Sources
 

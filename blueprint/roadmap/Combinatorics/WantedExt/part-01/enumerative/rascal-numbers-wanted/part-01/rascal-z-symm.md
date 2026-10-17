@@ -12,7 +12,7 @@ lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.rascalZ_symm
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rascal Z](rascal-z.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ Source: V. I. Arnold, *Mathematical Methods of Classical Mechanics* (2nd ed., 19
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
+- [Is Liouville Integrable](is-liouville-integrable.md)
+- [Level Set](level-set.md)
 
 ## Sources
 

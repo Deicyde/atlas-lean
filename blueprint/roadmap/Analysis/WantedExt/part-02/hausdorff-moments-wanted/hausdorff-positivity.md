@@ -12,7 +12,8 @@ Source: F. Hausdorff, *Summationsmethoden und Momentfolgen I, II*, Math. Z. 9 (1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Positive Moment Configuration](is-positive-moment-configuration.md)
+- [Diff](diff.md)
 
 ## Sources
 

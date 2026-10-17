@@ -13,7 +13,8 @@ lean: MathlibExt.NumberTheory.LeonardoPWanted.rMatrix_mul_companionQ_pow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Companion Q](companion-q.md)
+- [R Matrix](r-matrix.md)
 
 ## Sources
 

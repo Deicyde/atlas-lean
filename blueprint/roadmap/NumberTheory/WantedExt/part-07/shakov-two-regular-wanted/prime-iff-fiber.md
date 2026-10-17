@@ -12,7 +12,7 @@ if `{m : s(m) = n} = {2^n, 2^(n+1) - 1}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shakov Seq](shakov-seq.md)
 
 ## Sources
 

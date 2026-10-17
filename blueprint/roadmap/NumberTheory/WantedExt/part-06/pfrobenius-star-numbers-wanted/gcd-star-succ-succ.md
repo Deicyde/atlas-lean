@@ -12,7 +12,7 @@ consecutive star numbers are relatively prime.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Star](star.md)
 
 ## Sources
 

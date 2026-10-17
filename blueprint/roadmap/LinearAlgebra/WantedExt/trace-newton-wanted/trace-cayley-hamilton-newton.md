@@ -12,7 +12,7 @@ Source: Knill, *Some fundamental theorems in mathematics*, §220. Via leanprover
 
 ## Depends on
 
-This node has no prerequisites.
+- [Charpoly Descending Coeff](charpoly-descending-coeff.md)
 
 ## Sources
 

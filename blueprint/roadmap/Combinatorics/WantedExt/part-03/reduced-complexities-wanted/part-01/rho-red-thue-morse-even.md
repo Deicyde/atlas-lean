@@ -12,7 +12,8 @@ lean: MathlibExt.Combinatorics.ReducedComplexitiesWanted.rhoRed_thueMorse_even
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rho Red](rho-red.md)
+- [Thue Morse](../../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
 
 ## Sources
 

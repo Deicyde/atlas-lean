@@ -12,7 +12,7 @@ of the form `2p^a` is `6` (and `6` is one, with `d = 2`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Deficient FPerfect](../part-01/is-deficient-fperfect.md)
 
 ## Sources
 

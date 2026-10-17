@@ -12,7 +12,8 @@ lean: MathlibExt.Combinatorics.Enumerative.NColorCompositionsWanted.ccoProhibite
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cco Prohibit2](../part-01/cco-prohibit2.md)
+- [Cco Prohibited](../part-01/cco-prohibited.md)
 
 ## Sources
 

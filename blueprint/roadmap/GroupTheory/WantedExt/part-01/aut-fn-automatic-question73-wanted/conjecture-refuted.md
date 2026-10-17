@@ -17,7 +17,7 @@ Moved from `OpenConjectures/GroupTheory/AutFnAutomaticQuestion73`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

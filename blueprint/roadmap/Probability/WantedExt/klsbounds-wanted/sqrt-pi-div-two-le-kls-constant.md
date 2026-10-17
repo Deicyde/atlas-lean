@@ -12,7 +12,7 @@ The actual Gaussian law gives the exact lower bound for the global constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kls Constant](../../MathlibExt/part-01/geometry/kls/part-01/kls-constant.md)
 
 ## Sources
 

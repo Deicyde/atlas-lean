@@ -14,7 +14,7 @@ case `β = 0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Signed Pow Two Sum](is-signed-pow-two-sum.md)
 
 ## Sources
 

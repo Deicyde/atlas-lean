@@ -13,7 +13,7 @@ nonzero normal vector, some SoCS solution lies outside all of them.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is So CSSolution](is-so-cssolution.md)
 
 ## Sources
 

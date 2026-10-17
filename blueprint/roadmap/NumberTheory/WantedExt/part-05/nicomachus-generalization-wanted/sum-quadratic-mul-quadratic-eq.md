@@ -14,7 +14,9 @@ and `(d, e, f) = (-a, -c, -b)` as in (17),
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nicomachus Alpha](nicomachus-alpha.md)
+- [Nicomachus Triangular](nicomachus-triangular.md)
+- [Nicomachus U](nicomachus-u.md)
 
 ## Sources
 

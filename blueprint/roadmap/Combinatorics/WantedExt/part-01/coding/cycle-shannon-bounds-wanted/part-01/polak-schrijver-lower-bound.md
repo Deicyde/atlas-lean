@@ -11,7 +11,7 @@ Source: Polak--Schrijver, arXiv:1808.07438, the fifth-power 367-word constructio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Cycle Code](../../../../../MathlibExt/part-01/coding/cycle-code/is-cycle-code.md)
 
 ## Sources
 

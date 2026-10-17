@@ -11,7 +11,7 @@ Source: Yuksekgonul et al. 2026 and Optimization Problems 1b.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Bound YKLBMWKCZGS2026 TTTDiscover](../part-01/upper-bound-yklbmwkczgs2026-tttdiscover.md)
 
 ## Sources
 

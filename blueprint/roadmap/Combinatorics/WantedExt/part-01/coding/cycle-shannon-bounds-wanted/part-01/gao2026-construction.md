@@ -11,7 +11,8 @@ Source: Gao, arXiv:2607.27869, exact dimension-200 construction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Cycle Code](../../../../../MathlibExt/part-01/coding/cycle-code/is-cycle-code.md)
+- [Gao2026 M40](gao2026-m40.md)
 
 ## Sources
 

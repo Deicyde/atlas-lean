@@ -11,7 +11,7 @@ Source: J. Bourgain, C. Demeter, and L. Guth, `Proof of the main conjecture in V
 
 ## Depends on
 
-This node has no prerequisites.
+- [J](j.md)
 
 ## Sources
 

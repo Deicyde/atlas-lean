@@ -13,7 +13,7 @@ construction is not supplied upstream, so this remains a proof request.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Square Matrix Multiplication Circuit Exponent](../../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/square-matrix-multiplication-circuit-exp.md)
 
 ## Sources
 

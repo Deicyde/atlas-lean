@@ -15,6 +15,11 @@ Each phase executes once and the second FIND reads the first phase's saved store
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Counted Find](../find/counted-find.md)
+- [Counted Link Aux](counted-link-aux.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.UnionFind.Union](../../../../../../../../sources/v2/CSLibExt.md)

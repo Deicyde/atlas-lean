@@ -13,7 +13,10 @@ entries are integer sums of two squares.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Square Elementary Symmetric Functions](has-square-elementary-symmetric-function.md)
+- [Has Square Elementary Symmetric Functionsℚ](has-square-elementary-symmetric-function-2.md)
+- [Is Sum Two Squaresℚ](is-sum-two-squares.md)
+- [Is Sum Two Squaresℤ](is-sum-two-squares-2.md)
 
 ## Sources
 

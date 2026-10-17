@@ -16,7 +16,7 @@ Wouter van Doorn and Anneroos R. F. Everts, Smooth sums with small spacings, arX
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

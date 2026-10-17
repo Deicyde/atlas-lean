@@ -10,7 +10,8 @@ Source: https://github.com/dagurtomas/LeanCondensed (LeanCondensed/Projects/Deri
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solid](solid.md)
+- [Is Solid](is-solid.md)
 
 ## Sources
 

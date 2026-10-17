@@ -11,7 +11,7 @@ Source: A.V. Kuznetsov, 'Algorithms as operations in algebraic systems', Uspekhi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Word Problem Solvable Shared](../part-02/word-problem-solvable.md)
 
 ## Sources
 

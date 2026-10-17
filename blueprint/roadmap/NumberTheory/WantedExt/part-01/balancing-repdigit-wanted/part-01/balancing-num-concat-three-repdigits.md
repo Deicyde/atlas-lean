@@ -11,7 +11,8 @@ The only balancing numbers that are concatenations of three repdigits are `204` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Concat Three Repdigits](is-concat-three-repdigits.md)
+- [Balancing Num](balancing-num.md)
 
 ## Sources
 

@@ -37,6 +37,35 @@ def read_dump(path: Path) -> dict[str, dict]:
         return {row["name"]: row for row in map(json.loads, handle) if row}
 
 
+def publish_private_targets(rows: dict[str, dict], manifest: dict[str, str]) -> dict[str, dict]:
+    """Key private constants that the roadmap publishes by their source names.
+
+    In a `module` file a declaration outside `public section` without
+    `public` is private, and Batteries elaborates `theorem_wanted` and
+    `def_wanted` to private placeholders. The dump lists such constants as
+    `_private.<module>.0.<name>` while the roadmap names them `<name>`;
+    unmatched, every wanted article had no dependencies.
+    """
+
+    renamed: dict[str, str] = {}
+    for name, row in rows.items():
+        prefix = f"_private.{row['module']}.0."
+        if row.get("private") and name.startswith(prefix):
+            public = name[len(prefix) :]
+            if public in manifest and public not in rows:
+                renamed[name] = public
+    if not renamed:
+        return rows
+    return {
+        renamed.get(name, name): {
+            **row,
+            "type": [renamed.get(use, use) for use in row["type"]],
+            "value": [renamed.get(use, use) for use in row["value"]],
+        }
+        for name, row in rows.items()
+    }
+
+
 def article_manifest() -> dict[str, str]:
     """The compiled names the generated v2 roadmap publishes, and their libraries."""
 
@@ -93,8 +122,8 @@ def main() -> int:
     if len(sys.argv) != 3:
         print(__doc__.strip(), file=sys.stderr)
         return 2
-    rows = read_dump(Path(sys.argv[1]))
     manifest = article_manifest()
+    rows = publish_private_targets(read_dump(Path(sys.argv[1])), manifest)
     missing = sorted(manifest.keys() - rows.keys())
     if missing:
         for name in missing[:20]:

@@ -14,7 +14,7 @@ lean: MathlibExt.NumberTheory.Recurrences.ABFibonacciIdentitiesWanted.sum_c_pow_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib AB](fib-ab.md)
 
 ## Sources
 

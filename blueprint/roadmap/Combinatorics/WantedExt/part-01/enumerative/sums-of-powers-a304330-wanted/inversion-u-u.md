@@ -13,7 +13,8 @@ b_k = Σ_{m=1}^k U(k, m)·a_m` for real sequences.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Array U](array-u.md)
+- [Jacobi Stirling First](../../../../MathlibExt/part-01/enumerative/part-04/jacobi-stirling-first-kind/jacobi-stirling-first.md)
 
 ## Sources
 

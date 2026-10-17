@@ -11,7 +11,7 @@ Source: M. Morse, The Calculus of Variations in the Large, AMS Colloq. Publ. 18 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternating Partial Sum](alternating-partial-sum.md)
 
 ## Sources
 

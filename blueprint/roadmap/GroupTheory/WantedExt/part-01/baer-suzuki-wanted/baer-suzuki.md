@@ -12,7 +12,7 @@ Source: R. Baer, Engelsche Elemente Noetherscher Gruppen, Math. Ann. 133 (1957),
 
 ## Depends on
 
-This node has no prerequisites.
+- [P Core](p-core.md)
 
 ## Sources
 

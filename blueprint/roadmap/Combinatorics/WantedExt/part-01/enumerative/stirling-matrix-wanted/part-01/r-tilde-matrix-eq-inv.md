@@ -12,7 +12,9 @@ lean: MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.rTildeMatrix_eq_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Omega](omega.md)
+- [R Matrix](r-matrix.md)
+- [R Tilde Matrix](r-tilde-matrix.md)
 
 ## Sources
 

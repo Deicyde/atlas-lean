@@ -12,7 +12,9 @@ Source: G. B. Dantzig (1947), simplex algorithm. Listed as §101 in O. Knill, So
 
 ## Depends on
 
-This node has no prerequisites.
+- [Linear Program](linear-program.md)
+- [Feasible](feasible.md)
+- [Objective](objective.md)
 
 ## Sources
 

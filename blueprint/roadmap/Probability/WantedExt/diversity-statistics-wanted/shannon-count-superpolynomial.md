@@ -13,7 +13,7 @@ polynomial: for every (nonzero) polynomial `q`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shannon Count](shannon-count.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ odd primes)` is super-m-Zumkeller for every `k` (the proof's
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Super MZumkeller](is-super-mzumkeller.md)
 
 ## Sources
 

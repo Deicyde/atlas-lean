@@ -17,7 +17,8 @@ cardinal series, rather than relying only on Lean's total `tsum`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fourier Supported In Nyquist](fourier-supported-in-nyquist.md)
+- [Sinc](sinc.md)
 
 ## Sources
 

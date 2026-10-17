@@ -12,7 +12,8 @@ only if the set of primes is dense in `X`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Macias Topology](macias-topology.md)
+- [Prime Set](prime-set.md)
 
 ## Sources
 

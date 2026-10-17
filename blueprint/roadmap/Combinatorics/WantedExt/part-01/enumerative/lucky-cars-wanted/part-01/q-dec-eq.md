@@ -14,7 +14,7 @@ C(n-j+i-1, i)`, and `0` else.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q Dec](q-dec.md)
 
 ## Sources
 

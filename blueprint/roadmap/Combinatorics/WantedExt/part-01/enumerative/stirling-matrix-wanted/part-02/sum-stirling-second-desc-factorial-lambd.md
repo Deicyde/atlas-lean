@@ -13,7 +13,8 @@ lean: MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_stirlingSeco
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lambda](../part-01/lambda.md)
+- [Omega](../part-01/omega.md)
 
 ## Sources
 

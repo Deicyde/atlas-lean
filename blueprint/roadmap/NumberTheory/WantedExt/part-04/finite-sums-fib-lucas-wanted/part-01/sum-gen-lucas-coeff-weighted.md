@@ -17,7 +17,7 @@ G_{n+1}/(n+1)`. The printed form holds only for odd `m`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Lucas Coeff](gen-lucas-coeff.md)
 
 ## Sources
 

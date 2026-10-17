@@ -12,7 +12,8 @@ Source: H. Wang and J. Zahl, 'Volume estimates for unions of convex sets, and th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Kakeya](is-kakeya.md)
+- [Space](space.md)
 
 ## Sources
 

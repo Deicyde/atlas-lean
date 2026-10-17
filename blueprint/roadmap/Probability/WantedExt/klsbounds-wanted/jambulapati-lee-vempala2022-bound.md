@@ -12,7 +12,7 @@ The exact algebraic Jambulapati--Lee--Vempala exponent, not a rounded decimal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dimensional Kls Constant](../../MathlibExt/part-01/geometry/kls/part-01/dimensional-kls-constant.md)
 
 ## Sources
 

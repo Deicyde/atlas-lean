@@ -12,7 +12,9 @@ Source: D.V. Anosov, 'Geodesic flows on closed Riemannian manifolds with negativ
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
+- [Has Shadowing](has-shadowing.md)
+- [Is Hyperbolic](is-hyperbolic.md)
 
 ## Sources
 

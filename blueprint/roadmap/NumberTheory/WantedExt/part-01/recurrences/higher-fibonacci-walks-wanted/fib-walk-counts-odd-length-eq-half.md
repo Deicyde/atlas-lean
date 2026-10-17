@@ -13,7 +13,9 @@ odd-position walk counts at board length `2*k - 1` are
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even Fib Walk Count](even-fib-walk-count.md)
+- [Fib Walk Count](fib-walk-count.md)
+- [Odd Fib Walk Count](odd-fib-walk-count.md)
 
 ## Sources
 

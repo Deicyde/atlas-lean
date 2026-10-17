@@ -12,7 +12,7 @@ Source: Gaudio and Jaillet (2020), correction of Steinerberger's lower coefficie
 
 ## Depends on
 
-This node has no prerequisites.
+- [Steinerberger2015 Corrected Symbolic Lower Bound](steinerberger2015-corrected-symbolic-low.md)
 
 ## Sources
 

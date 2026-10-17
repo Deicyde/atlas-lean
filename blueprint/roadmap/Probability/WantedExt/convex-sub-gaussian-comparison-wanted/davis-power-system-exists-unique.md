@@ -11,7 +11,8 @@ Source: Davis–Power (2026), equations (3)–(6), existence and uniqueness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Davis Power Solution](davis-power-solution.md)
+- [Is Valid](is-valid.md)
 
 ## Sources
 

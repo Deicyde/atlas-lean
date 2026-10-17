@@ -15,7 +15,8 @@ measure `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ψ star](star.md)
+- [𝒦](untitled-2.md)
 
 ## Sources
 

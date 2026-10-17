@@ -12,7 +12,7 @@ Source: GIOW, arXiv:1808.09346v1, endpoint-inclusive lattice report, line 76.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Falconer1985 Lattice Examples](falconer1985-lattice-examples.md)
 
 ## Sources
 

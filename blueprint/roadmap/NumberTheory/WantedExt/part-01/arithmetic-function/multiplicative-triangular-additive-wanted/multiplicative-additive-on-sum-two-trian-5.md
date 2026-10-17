@@ -12,7 +12,7 @@ Park's Lemma 5: under the same hypotheses, if
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sum Two Positive Triangular](is-sum-two-positive-triangular.md)
 
 ## Sources
 

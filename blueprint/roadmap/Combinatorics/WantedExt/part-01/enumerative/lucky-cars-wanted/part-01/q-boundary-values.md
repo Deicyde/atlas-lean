@@ -16,7 +16,7 @@ indices and in `ℚ` for the possibly negative exponents.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q](q.md)
 
 ## Sources
 

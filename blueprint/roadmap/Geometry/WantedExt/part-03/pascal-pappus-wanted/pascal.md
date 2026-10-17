@@ -11,7 +11,10 @@ Source: B. Pascal, *Essay pour les coniques* (1640). Knill, *Some fundamental th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Collinear3](collinear3.md)
+- [On Conic](on-conic.md)
+- [Same Point](same-point.md)
+- [Meet](meet.md)
 
 ## Sources
 

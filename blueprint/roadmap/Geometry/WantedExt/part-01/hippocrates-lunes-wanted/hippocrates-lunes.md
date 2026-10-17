@@ -12,7 +12,10 @@ Source: Hippocrates of Chios (c. 440 BC). Knill, §166. Via leanprover/lean-eval
 
 ## Depends on
 
-This node has no prerequisites.
+- [Plane](plane.md)
+- [Horizontal Lune](horizontal-lune.md)
+- [Right Triangle](right-triangle.md)
+- [Vertical Lune](vertical-lune.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ witnesses `u` and `v`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gibonacci Good](is-gibonacci-good.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ The degree restriction is necessary: the theorem is false as stated for `n = 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
 
 ## Sources
 

@@ -14,6 +14,11 @@ There is an increasing subsequence of length `k` ending exactly at `p`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Incr Subseq](is-incr-subseq.md)
+- [Sub one lt of pos](sub-one-lt-of-pos.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Order.ErdosSzekeres](../../../../../../../sources/v2/MathlibExt.md)
