@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import json
 import sys
 from functools import lru_cache
 from html.parser import HTMLParser
@@ -67,6 +68,20 @@ def resolve_link(page: Path, href: str, site: Path) -> tuple[Path, str, bool] | 
     return target, unquote(split.fragment), True
 
 
+def json_urls(value: object):
+    """Yield URL fields from one generated dependency payload."""
+
+    if isinstance(value, dict):
+        for key, item in value.items():
+            if key == "url" and isinstance(item, str):
+                yield item
+            else:
+                yield from json_urls(item)
+    elif isinstance(value, list):
+        for item in value:
+            yield from json_urls(item)
+
+
 def main() -> int:
     docs = Path(sys.argv[1] if len(sys.argv) > 1 else "site-src").resolve()
     site = Path(sys.argv[2] if len(sys.argv) > 2 else "site").resolve()
@@ -120,6 +135,31 @@ def main() -> int:
                 and fragment not in ids(target)
             ):
                 issues.append(f"{page.relative_to(site)}: {href!r} targets missing fragment in {shown}")
+
+    for payload in sorted((site / "dependencies").rglob("*.json")):
+        try:
+            value = json.loads(payload.read_text(encoding="utf-8"))
+        except (OSError, UnicodeError, ValueError) as error:
+            issues.append(f"{payload.relative_to(site)}: invalid dependency payload: {error}")
+            continue
+        for href in json_urls(value):
+            resolved = resolve_link(payload, href, site)
+            if resolved is None:
+                continue
+            links += 1
+            target, fragment, within_site = resolved
+            shown = target.relative_to(site).as_posix() if within_site else str(target)
+            if not within_site:
+                issues.append(f"{payload.relative_to(site)}: {href!r} escapes the published site to {shown}")
+            elif not target.is_file():
+                issues.append(f"{payload.relative_to(site)}: {href!r} targets missing {shown}")
+            elif (
+                fragment
+                and not fragment.startswith("node=")
+                and target.suffix.casefold() == ".html"
+                and fragment not in ids(target)
+            ):
+                issues.append(f"{payload.relative_to(site)}: {href!r} targets missing fragment in {shown}")
 
     if issues:
         for issue in issues[:100]:
