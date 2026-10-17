@@ -13,7 +13,16 @@ equal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](bdd.md)
+- [Ordered From](ordered-from.md)
+- [Reduced](reduced.md)
+- [Eval](eval.md)
+
+## Proof depends on
+
+- [Eval update node](eval-update-node.md)
+- [Eval update of lt](eval-update-of-lt.md)
+- [Size](size.md)
 
 ## Sources
 

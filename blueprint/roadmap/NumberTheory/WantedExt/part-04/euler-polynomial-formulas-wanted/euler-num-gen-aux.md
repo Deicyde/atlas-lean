@@ -16,6 +16,10 @@ agrees with the intended numbers whenever `n ≤ fuel`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Euler Poly](euler-poly.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.EulerPolynomialFormulasWanted](../../../../../sources/v2/WantedExt.md)

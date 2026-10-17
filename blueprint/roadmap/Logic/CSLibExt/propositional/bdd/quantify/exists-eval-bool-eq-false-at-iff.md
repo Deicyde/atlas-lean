@@ -15,7 +15,24 @@ satisfied by the all-true valuation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](../basic/bdd.md)
+- [Of Proposition](../basic/of-proposition.md)
+- [Restrict](restrict.md)
+- [Eval Bool](../../natural-deduction/semantics/eval-bool.md)
+
+## Proof depends on
+
+- [Is ROBDD](../basic/is-robdd.md)
+- [Ordered From](../basic/ordered-from.md)
+- [Reduced](../basic/reduced.md)
+- [Apply](../basic/apply.md)
+- [Eq leaf false iff](../basic/eq-leaf-false-iff.md)
+- [Eval](../basic/eval.md)
+- [Eval apply](../basic/eval-apply.md)
+- [Is ROBDD restrict](is-robdd-restrict.md)
+- [Mk](../basic/mk.md)
+- [Ordered From apply](../basic/ordered-from-apply.md)
+- [Reduced apply](../basic/reduced-apply.md)
 
 ## Sources
 

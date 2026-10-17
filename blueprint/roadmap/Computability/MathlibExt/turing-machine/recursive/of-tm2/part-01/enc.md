@@ -11,7 +11,11 @@ Code a configuration.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coded Cfg](coded-cfg.md)
+
+## Proof depends on
+
+- [Enc Stk](enc-stk.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ The square's Z motion at separation one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motion](../part-01/motion.md)
+
+## Proof depends on
+
+- [Square Motion ZAt](square-motion-zat.md)
 
 ## Sources
 

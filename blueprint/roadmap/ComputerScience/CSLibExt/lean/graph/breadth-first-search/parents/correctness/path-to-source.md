@@ -12,7 +12,12 @@ The saved-parent walker returns the singleton source path, including at zero fue
 
 ## Depends on
 
-This node has no prerequisites.
+- [BFSForest](../internal/bfsforest.md)
+- [Path To?](../internal/path-to.md)
+
+## Proof depends on
+
+- [BFSResult](../../../breadth-first-search-2/bfsresult.md)
 
 ## Sources
 

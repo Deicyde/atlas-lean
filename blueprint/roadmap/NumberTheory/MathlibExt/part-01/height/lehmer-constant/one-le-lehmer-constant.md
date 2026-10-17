@@ -12,7 +12,13 @@ Catalogue lower bound: `1 ≤ C₄₀ₐ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lehmer's constant](lehmer-constant.md)
+
+## Proof depends on
+
+- [Int Mahler Measure](int-mahler-measure.md)
+- [Int Mahler Measure X sub two](int-mahler-measure-x-sub-two.md)
+- [Mahler Measures Above One](mahler-measures-above-one.md)
 
 ## Sources
 

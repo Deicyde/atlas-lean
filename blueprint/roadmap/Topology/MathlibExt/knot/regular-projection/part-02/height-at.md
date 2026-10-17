@@ -11,7 +11,13 @@ Height of a parameter point in the standard frame.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](../../euclidean-link/part-01/parametrized-link.md)
+- [Param Point](param-point.md)
+
+## Proof depends on
+
+- [Point](point.md)
+- [Height](height.md)
 
 ## Sources
 

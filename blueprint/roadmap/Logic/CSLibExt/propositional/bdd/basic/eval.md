@@ -11,7 +11,7 @@ The value of a diagram under an assignment of the variables.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](bdd.md)
 
 ## Sources
 

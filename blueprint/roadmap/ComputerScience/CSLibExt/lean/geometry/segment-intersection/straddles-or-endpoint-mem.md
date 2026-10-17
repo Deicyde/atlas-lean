@@ -12,7 +12,13 @@ If the segments meet, either they cross properly or an endpoint of one lies on t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Straddles](straddles.md)
+- [Direction](direction.md)
+
+## Proof depends on
+
+- [Endpoint mem of collinear](endpoint-mem-of-collinear.md)
+- [Straddles of combo](straddles-of-combo.md)
 
 ## Sources
 

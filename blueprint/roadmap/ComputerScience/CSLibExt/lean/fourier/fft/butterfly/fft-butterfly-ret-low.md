@@ -12,7 +12,7 @@ The actual butterfly writes the sum into its lower output position.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Butterfly](../../fft-2/fft-butterfly.md)
 
 ## Sources
 

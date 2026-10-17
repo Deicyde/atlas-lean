@@ -11,7 +11,13 @@ Vertices reachable from the source in the residual graph of a flow.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](../part-01/flow.md)
+
+## Proof depends on
+
+- [BFSResult](../../breadth-first-search-2/bfsresult.md)
+- [Bfs](../../breadth-first-search-2/bfs.md)
+- [Residual Graph](../part-01/residual-graph.md)
 
 ## Sources
 

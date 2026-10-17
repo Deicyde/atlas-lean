@@ -12,7 +12,11 @@ There is one search position per catalog.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Search All](../part-02/search-all.md)
+
+## Proof depends on
+
+- [Count LT](../part-01/count-lt.md)
 
 ## Sources
 

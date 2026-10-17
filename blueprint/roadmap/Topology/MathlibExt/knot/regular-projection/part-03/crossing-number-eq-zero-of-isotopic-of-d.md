@@ -13,7 +13,18 @@ double points, the crossing number of the type is zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](../../euclidean-link/part-01/parametrized-link.md)
+- [Is Regular Projection](../part-02/is-regular-projection.md)
+- [Isotopic](../../euclidean-link/part-01/isotopic-2.md)
+- [Crossing Number](crossing-number.md)
+- [Double Point Set](../part-02/double-point-set.md)
+- [R2](../part-01/r2.md)
+
+## Proof depends on
+
+- [Crossing Count](../part-02/crossing-count.md)
+- [Crossing Count eq zero of double Point Set eq empty](crossing-count-eq-zero-of-double-point-s.md)
+- [Crossing Number le of isotopic of is Regular Projection](crossing-number-le-of-isotopic-of-is-reg.md)
 
 ## Sources
 

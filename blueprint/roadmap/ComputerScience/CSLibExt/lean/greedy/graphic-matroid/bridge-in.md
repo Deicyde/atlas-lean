@@ -13,6 +13,10 @@ lean: Cslib.Algorithms.Lean.GraphicMatroid.bridgeIn
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chosen](chosen.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Greedy.GraphicMatroid](../../../../../../sources/v2/CSLibExt.md)

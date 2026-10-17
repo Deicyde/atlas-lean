@@ -13,6 +13,10 @@ All symbols on the stacks are relevant.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Relevant](relevant.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.TuringMachine.Recursive.OfTM2](../../../../../../../sources/v2/MathlibExt.md)

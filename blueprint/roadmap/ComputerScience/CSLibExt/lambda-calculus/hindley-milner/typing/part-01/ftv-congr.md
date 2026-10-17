@@ -12,7 +12,15 @@ Contexts with the same lookups have the same free type variables.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ctx](ctx.md)
+- [Ftv](ftv.md)
+- [Lookup](lookup.md)
+- [Scheme](scheme.md)
+
+## Proof depends on
+
+- [Visible Vars](visible-vars.md)
+- [Vars](../../../../unification/basic/part-01/vars.md)
 
 ## Sources
 

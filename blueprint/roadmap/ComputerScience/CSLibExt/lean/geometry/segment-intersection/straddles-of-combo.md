@@ -12,7 +12,7 @@ Two nonzero values whose convex combination vanishes have opposite signs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Straddles](straddles.md)
 
 ## Sources
 

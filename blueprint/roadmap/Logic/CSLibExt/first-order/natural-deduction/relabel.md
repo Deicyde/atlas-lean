@@ -13,7 +13,13 @@ Derivations survive an injective relabeling of free variables (Mathlib's
 
 ## Depends on
 
-This node has no prerequisites.
+- [Natural deduction](derivable.md)
+
+## Proof depends on
+
+- [Rename](rename.md)
+- [Formula relabel eq rename](../syntax/formula-relabel-eq-rename.md)
+- [Rename](../syntax/rename.md)
 
 ## Sources
 

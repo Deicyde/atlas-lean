@@ -11,7 +11,8 @@ Construct a map out of `P` from a map out of `ℤ[ℕ∪{∞}]` annihilating `�
 
 ## Depends on
 
-This node has no prerequisites.
+- [P](p.md)
+- [P map](p-map.md)
 
 ## Sources
 

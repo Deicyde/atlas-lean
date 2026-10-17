@@ -13,7 +13,12 @@ over the CNF built so far, whatever the nesting.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+
+## Proof depends on
+
+- [Disj](disj.md)
+- [CNFClause](../basic/cnfclause.md)
 
 ## Sources
 

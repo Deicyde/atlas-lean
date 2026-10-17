@@ -13,7 +13,7 @@ The squaring loop reports no witness only if its start is `1` or one of its valu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Witness Loop](../miller-rabin/witness-loop.md)
 
 ## Sources
 

@@ -17,6 +17,7 @@ validity field of the resulting heap, exposed as a theorem for convenience.
 - [Valid](../../../../part-02/fibonacci-heap/part-01/valid-2.md)
 - [Fibonacci Heap](../../../../part-02/fibonacci-heap/part-02/fibonacci-heap.md)
 - [Decrease Key](../part-01/decrease-key.md)
+- [Fibonacci Tree](../../../../part-02/fibonacci-heap/part-01/fibonacci-tree.md)
 
 ## Sources
 

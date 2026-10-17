@@ -13,7 +13,7 @@ The inverse is then automatically an `S`-map too; see the instance below.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Birational Map](birational-map.md)
 
 ## Sources
 

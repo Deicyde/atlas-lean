@@ -12,7 +12,8 @@ generation. The executable `bfs` below remains the expected-linear-time implemen
 
 ## Depends on
 
-This node has no prerequisites.
+- [BFSResult](bfsresult.md)
+- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
 
 ## Sources
 

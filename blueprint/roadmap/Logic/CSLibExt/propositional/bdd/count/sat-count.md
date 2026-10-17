@@ -11,7 +11,11 @@ The number of assignments to the variables `0, …, m - 1` that make `t` true.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](../basic/bdd.md)
+
+## Proof depends on
+
+- [Sat Count From](sat-count-from.md)
 
 ## Sources
 

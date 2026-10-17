@@ -12,7 +12,7 @@ lean: Cslib.Logic.PL.BDD.countModels_congr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Count Models](count-models.md)
 
 ## Sources
 

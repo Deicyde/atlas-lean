@@ -12,7 +12,14 @@ that are defined over the base scheme `S`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Birational Map](birational-map.md)
+- [Refl](refl.md)
+- [Symm](symm.md)
+- [Trans](trans.md)
+
+## Proof depends on
+
+- [Is Over](is-over.md)
 
 ## Sources
 

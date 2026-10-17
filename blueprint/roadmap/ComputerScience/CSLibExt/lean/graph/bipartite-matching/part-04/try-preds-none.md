@@ -13,7 +13,11 @@ search failed with a dead set contained in the final one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Try Preds](../part-02/try-preds.md)
+
+## Proof depends on
+
+- [Try Preds mono](../part-02/try-preds-mono.md)
 
 ## Sources
 

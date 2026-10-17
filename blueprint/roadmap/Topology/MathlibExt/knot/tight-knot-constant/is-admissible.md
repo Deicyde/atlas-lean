@@ -19,6 +19,12 @@ that case out, is not proved here.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Parametrized Link](../euclidean-link/part-01/parametrized-link.md)
+- [Crossing Number](../regular-projection/part-03/crossing-number.md)
+- [Ropelength](../euclidean-link/part-01/ropelength.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Topology.Knot.TightKnotConstant](../../../../../sources/v2/MathlibExt.md)

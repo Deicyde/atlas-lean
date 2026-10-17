@@ -12,7 +12,14 @@ Evaluation of a shifted term under one more binding.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tm](tm.md)
+- [Eval](eval.md)
+- [Shift](shift.md)
+- [Value](value.md)
+
+## Proof depends on
+
+- [Rename](rename-2.md)
 
 ## Sources
 

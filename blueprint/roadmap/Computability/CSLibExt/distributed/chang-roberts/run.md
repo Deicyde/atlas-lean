@@ -11,7 +11,11 @@ Deliver a sequence of messages, failing on an empty channel.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [Deliver](deliver.md)
 
 ## Sources
 

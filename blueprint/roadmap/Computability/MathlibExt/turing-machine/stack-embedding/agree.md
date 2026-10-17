@@ -11,7 +11,7 @@ The host's stacks hold the sub-machine's stacks on the image of `e`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [SEmb](semb.md)
 
 ## Sources
 

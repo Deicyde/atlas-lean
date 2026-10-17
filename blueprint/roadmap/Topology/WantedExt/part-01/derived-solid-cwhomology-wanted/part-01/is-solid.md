@@ -14,6 +14,11 @@ isomorphism on internal homs into `A`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [P](p.md)
+- [One Minus Shift](one-minus-shift-2.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Topology.DerivedSolidCWHomologyWanted](../../../../../../sources/v2/WantedExt.md)

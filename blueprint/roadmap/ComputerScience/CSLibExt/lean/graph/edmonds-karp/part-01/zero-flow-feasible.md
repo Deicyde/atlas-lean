@@ -12,7 +12,12 @@ The zero skew-flow is feasible for every natural capacity matrix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Feasible](is-feasible.md)
+- [Zero Flow](zero-flow.md)
+
+## Proof depends on
+
+- [Flow Value](flow-value.md)
 
 ## Sources
 

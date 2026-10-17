@@ -21,6 +21,7 @@ BST lookup returns a value exactly when the matching key-value node exists.
 ## Proof depends on
 
 - [All Nodes](../part-01/all-nodes.md)
+- [Mem Key](../part-01/mem-key.md)
 - [All Nodes key iff](all-nodes-key-iff.md)
 - [Mem Key of mem Node](mem-key-of-mem-node.md)
 

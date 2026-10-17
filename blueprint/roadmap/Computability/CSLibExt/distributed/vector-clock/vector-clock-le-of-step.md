@@ -12,7 +12,18 @@ One step of happened-before does not decrease any entry.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](../lamport-clock/event.md)
+- [Step](../lamport-clock/step.md)
+- [Timestamps](timestamps.md)
+
+## Proof depends on
+
+- [Clock Step](clock-step.md)
+- [Run](run.md)
+- [Run get D](run-get-d.md)
+- [Stamp](stamp.md)
+- [Timestamp le vector](timestamp-le-vector.md)
+- [Timestamps get D eq stamp](timestamps-get-d-eq-stamp.md)
 
 ## Sources
 

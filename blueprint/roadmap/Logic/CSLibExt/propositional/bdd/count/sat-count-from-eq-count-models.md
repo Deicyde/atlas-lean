@@ -12,7 +12,16 @@ Enumerating the variables `n, …, m - 1` counts what `satCountFrom` computes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](../basic/bdd.md)
+- [Ordered From](../basic/ordered-from.md)
+- [Vars LT](vars-lt.md)
+- [Count Models](count-models.md)
+- [Eval](../basic/eval.md)
+- [Sat Count From](sat-count-from.md)
+
+## Proof depends on
+
+- [Count Models congr](count-models-congr.md)
 
 ## Sources
 

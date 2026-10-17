@@ -14,6 +14,10 @@ for `m` in the polynomial expansion of `P_{m,o}(x)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nicomachus PClosed](nicomachus-pclosed.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.NicomachusGeneralizationWanted](../../../../../sources/v2/WantedExt.md)

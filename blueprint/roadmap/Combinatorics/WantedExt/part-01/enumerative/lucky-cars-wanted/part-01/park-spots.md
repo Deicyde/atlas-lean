@@ -14,6 +14,10 @@ ends in.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Park Spots From](park-spots-from.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.LuckyCarsWanted](../../../../../../../sources/v2/WantedExt.md)

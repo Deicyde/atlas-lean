@@ -10,11 +10,7 @@ The lattice discriminant is nontrivial for lattices containing a basis.
 
 ## Depends on
 
-- [Lattice Discriminant](lattice-discriminant.md)
-
-## Proof depends on
-
-- [Lattice Discriminant Set](lattice-discriminant-set.md)
+This node has no prerequisites.
 
 ## Sources
 

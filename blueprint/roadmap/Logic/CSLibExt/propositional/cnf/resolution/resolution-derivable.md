@@ -11,7 +11,8 @@ lean: Cslib.Logic.PL.CNF.ResolutionDerivable
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+- [CNFClause](../basic/cnfclause.md)
 
 ## Sources
 

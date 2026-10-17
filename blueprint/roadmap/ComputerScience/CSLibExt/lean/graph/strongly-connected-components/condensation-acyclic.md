@@ -11,7 +11,11 @@ Condensation acyclicity, stated as antisymmetry of component reachability.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Component Reaches](component-reaches.md)
 
 ## Sources
 

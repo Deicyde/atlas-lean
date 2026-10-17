@@ -13,7 +13,13 @@ from copies of `l` at all.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Can Build](can-build.md)
+- [Complexity L](complexity-l.md)
+
+## Proof depends on
+
+- [One le](one-le.md)
+- [Complexity L spec](complexity-l-spec.md)
 
 ## Sources
 

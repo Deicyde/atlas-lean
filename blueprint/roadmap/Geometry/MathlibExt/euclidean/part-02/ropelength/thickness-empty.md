@@ -13,7 +13,12 @@ The empty set has infinite thickness, as an empty infimum in
 
 ## Depends on
 
-This node has no prerequisites.
+- [R3](r3.md)
+- [Thickness](thickness.md)
+
+## Proof depends on
+
+- [Circumradius ENN](circumradius-enn.md)
 
 ## Sources
 

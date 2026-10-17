@@ -13,7 +13,6 @@ Evaluation sends integer scaling of a divisor to the corresponding power.
 
 ## Depends on
 
-- [Curve Divisor](../divisor/curve-divisor.md)
 - [Eval](eval.md)
 
 ## Proof depends on

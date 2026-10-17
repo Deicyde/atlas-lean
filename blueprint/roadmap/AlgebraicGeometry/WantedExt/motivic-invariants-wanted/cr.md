@@ -14,6 +14,15 @@ automorphisms of affine `n`-space over `𝕜`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Birational Map](birational-map.md)
+- [Refl](refl.md)
+- [Symm](symm.md)
+- [Trans](trans.md)
+- [Birational Aut Over](birational-aut-over.md)
+- [Variety](variety.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.AlgebraicGeometry.MotivicInvariantsWanted](../../../../sources/v2/WantedExt.md)

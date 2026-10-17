@@ -13,7 +13,14 @@ cardinal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Roots Field](roots-field.md)
+
+## Proof depends on
+
+- [Algebraic Independent root](algebraic-independent-root.md)
+- [Is Algebraic adjoin roots](is-algebraic-adjoin-roots.md)
+- [Root](root.md)
+- [Root injective](root-injective.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Darts of a diagram: one incident half-edge at one crossing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dart Diagram](dart-diagram.md)
 
 ## Sources
 

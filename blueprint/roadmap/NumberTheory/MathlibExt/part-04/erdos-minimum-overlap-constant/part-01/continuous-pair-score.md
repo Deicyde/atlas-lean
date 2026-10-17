@@ -13,6 +13,10 @@ The source supremum over translations.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Continuous Overlap Values](continuous-overlap-values.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ErdosMinimumOverlapConstant](../../../../../../sources/v2/MathlibExt.md)

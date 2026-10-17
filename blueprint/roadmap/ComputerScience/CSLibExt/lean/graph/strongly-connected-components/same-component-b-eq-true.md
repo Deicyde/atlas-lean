@@ -12,7 +12,16 @@ The executable test reflects declarative strong connectivity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Strongly Connected](strongly-connected.md)
+- [Same Component B](same-component-b.md)
+
+## Proof depends on
+
+- [Traversal](../depth-first-search/part-01/traversal.md)
+- [Dfs](../depth-first-search/part-01/dfs.md)
+- [Mem preorder iff reachable](../depth-first-search/part-01/mem-preorder-iff-reachable.md)
+- [Reachable](../directed-adjacency-2/part-01/reachable.md)
 
 ## Sources
 

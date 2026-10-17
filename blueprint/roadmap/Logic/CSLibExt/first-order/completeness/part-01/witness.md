@@ -14,6 +14,10 @@ variables are even, and above the free variables of `φ₀, …, φₖ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Witness Base](witness-base.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Logics.FirstOrder.Completeness](../../../../../../sources/v2/CSLibExt.md)

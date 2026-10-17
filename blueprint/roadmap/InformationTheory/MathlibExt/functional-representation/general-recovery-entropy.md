@@ -13,6 +13,11 @@ Actual Shannon conditional entropy H(Y|X,S), preserving infinite values.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Conditional Shannon Entropy](../conditional-entropy/conditional-shannon-entropy.md)
+- [Input Auxiliary Conditioning](input-auxiliary-conditioning.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.InformationTheory.FunctionalRepresentation](../../../../sources/v2/MathlibExt.md)

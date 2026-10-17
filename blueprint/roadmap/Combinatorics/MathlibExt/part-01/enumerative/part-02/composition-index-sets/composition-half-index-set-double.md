@@ -12,7 +12,13 @@ The doubling identity `S(2m, 2n, 2q) = T(m, n, q)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composition Half Index Set](composition-half-index-set.md)
+- [Composition Index Set](composition-index-set.md)
+
+## Proof depends on
+
+- [Mem composition Half Index Set](mem-composition-half-index-set.md)
+- [Mem composition Index Set](mem-composition-index-set.md)
 
 ## Sources
 

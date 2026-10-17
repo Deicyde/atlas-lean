@@ -18,7 +18,7 @@ def longestIncreasingSubsequence (xs : List α) : TimeM ℕ (List α) := do
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Above](max-above.md)
 
 ## Sources
 

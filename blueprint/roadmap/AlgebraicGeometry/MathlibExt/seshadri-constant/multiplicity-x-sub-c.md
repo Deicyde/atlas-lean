@@ -12,7 +12,14 @@ A coordinate line through a point has multiplicity one there.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Affine Point](affine-point.md)
+- [Plane Polynomial](plane-polynomial.md)
+- [Multiplicity](multiplicity.md)
+
+## Proof depends on
+
+- [Monomial Degree](monomial-degree.md)
+- [Shifted](shifted.md)
 
 ## Sources
 

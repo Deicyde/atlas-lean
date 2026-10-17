@@ -14,6 +14,10 @@ list. The first element seeds both accumulators.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kadane Scan](kadane-scan.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.MaximumSubarray](../../../../../../sources/v2/CSLibExt.md)

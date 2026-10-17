@@ -12,7 +12,8 @@ Disjointness of heaps is symmetric.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heap](heap.md)
+- [Disjoint](disjoint.md)
 
 ## Sources
 

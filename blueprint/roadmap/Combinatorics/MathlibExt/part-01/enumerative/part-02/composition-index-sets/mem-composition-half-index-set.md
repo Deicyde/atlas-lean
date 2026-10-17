@@ -12,7 +12,7 @@ Membership in `S(m, n, q)` unfolded.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composition Half Index Set](composition-half-index-set.md)
 
 ## Sources
 

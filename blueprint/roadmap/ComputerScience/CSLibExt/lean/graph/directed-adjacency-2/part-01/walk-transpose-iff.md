@@ -12,7 +12,14 @@ Transposition reverses exact walks without changing their length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](directed-adjacency.md)
+- [Walk](walk.md)
+- [Transpose](transpose.md)
+
+## Proof depends on
+
+- [Edge](edge.md)
+- [Edge transpose](edge-transpose.md)
 
 ## Sources
 

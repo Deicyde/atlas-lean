@@ -13,6 +13,7 @@ The action on invertible fractional ideals agrees with the ambient action.
 
 ## Depends on
 
+- [Ring Equiv Of Ring Equiv Hom](ring-equiv-of-ring-equiv-hom.md)
 - [Units Mul Distrib Mul Action](units-mul-distrib-mul-action.md)
 
 ## Sources

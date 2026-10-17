@@ -13,10 +13,6 @@ A product of fractional ideals prime to J is prime to J.
 
 ## Depends on
 
-- [Is Prime To](is-prime-to.md)
-
-## Proof depends on
-
 - [Non Zero Divisors le comap algebra Map at Prime](non-zero-divisors-le-comap-algebra-map-a.md)
 
 ## Sources

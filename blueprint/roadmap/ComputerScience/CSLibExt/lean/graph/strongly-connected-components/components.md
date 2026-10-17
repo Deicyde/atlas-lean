@@ -12,7 +12,12 @@ from whole-graph decreasing DFS finish order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Decreasing Finish All](../depth-first-search/part-02/decreasing-finish-all.md)
+- [Same Component B](same-component-b.md)
 
 ## Sources
 

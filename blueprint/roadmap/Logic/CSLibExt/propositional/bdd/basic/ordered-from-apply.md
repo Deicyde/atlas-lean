@@ -12,7 +12,13 @@ lean: Cslib.Logic.PL.BDD.orderedFrom_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](bdd.md)
+- [Ordered From](ordered-from.md)
+- [Apply](apply.md)
+
+## Proof depends on
+
+- [Mk](mk.md)
 
 ## Sources
 

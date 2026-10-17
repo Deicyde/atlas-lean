@@ -17,7 +17,12 @@ across the bridge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lfp Fin](lfp-fin.md)
+
+## Proof depends on
+
+- [Lfp Fin fixed](lfp-fin-fixed.md)
+- [Mem finset iterate iff](mem-finset-iterate-iff.md)
 
 ## Sources
 

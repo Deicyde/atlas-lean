@@ -13,6 +13,7 @@ The overlined sizes of `ofPartition p` are empty.
 
 ## Depends on
 
+- [Overpartition](overpartition.md)
 - [Of Partition](of-partition.md)
 
 ## Sources

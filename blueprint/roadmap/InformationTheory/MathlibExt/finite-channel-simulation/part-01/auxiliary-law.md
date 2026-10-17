@@ -11,7 +11,8 @@ The actual S marginal of a finite extension.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Extension](finite-extension.md)
+- [Finite Joint Law](finite-joint-law.md)
 
 ## Sources
 

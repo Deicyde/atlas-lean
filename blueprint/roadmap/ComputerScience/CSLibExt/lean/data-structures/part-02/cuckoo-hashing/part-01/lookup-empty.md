@@ -16,6 +16,10 @@ Looking up any key in the empty table returns `none`.
 - [Empty](empty.md)
 - [Lookup](lookup.md)
 
+## Proof depends on
+
+- [Cuckoo Hashing](cuckoo-hashing.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.CuckooHashing](../../../../../../../../sources/v2/CSLibExt.md)

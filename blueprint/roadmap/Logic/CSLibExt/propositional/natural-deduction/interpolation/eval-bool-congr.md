@@ -12,7 +12,8 @@ The truth value of `A` depends only on the valuation of its atoms.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Atoms](atoms.md)
+- [Eval Bool](../semantics/eval-bool.md)
 
 ## Sources
 

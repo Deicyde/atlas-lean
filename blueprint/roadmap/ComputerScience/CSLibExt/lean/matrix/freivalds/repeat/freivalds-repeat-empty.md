@@ -12,7 +12,13 @@ Empty matrices accept every history and perform no arithmetic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Repeat](freivalds-repeat.md)
+
+## Proof depends on
+
+- [Freivalds Matrix](../basic/freivalds-matrix.md)
+- [Freivalds Repeat complete](freivalds-repeat-complete.md)
+- [Freivalds Repeat time](freivalds-repeat-time.md)
 
 ## Sources
 

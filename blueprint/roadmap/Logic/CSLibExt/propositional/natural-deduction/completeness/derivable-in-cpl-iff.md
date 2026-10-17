@@ -13,7 +13,12 @@ logic `CPL` iff it is a tautology, reading `⊥` as false.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eval Bool](../semantics/eval-bool.md)
+
+## Proof depends on
+
+- [Derivable In iff forall eval Bool](derivable-in-iff-forall-eval-bool.md)
+- [Eval Bool of mem cpl](../semantics/eval-bool-of-mem-cpl.md)
 
 ## Sources
 

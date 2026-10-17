@@ -12,7 +12,9 @@ Boolean edge lookup agrees with `DirectedAdjacency.Edge`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../part-01/directed-adjacency.md)
+- [Edge](../part-01/edge.md)
+- [Has Edge](has-edge.md)
 
 ## Sources
 

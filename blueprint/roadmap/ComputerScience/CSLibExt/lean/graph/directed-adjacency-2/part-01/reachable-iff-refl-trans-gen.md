@@ -12,7 +12,9 @@ Reachability agrees with Mathlib's reflexive-transitive closure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](directed-adjacency.md)
+- [Edge](edge.md)
+- [Reachable](reachable.md)
 
 ## Sources
 

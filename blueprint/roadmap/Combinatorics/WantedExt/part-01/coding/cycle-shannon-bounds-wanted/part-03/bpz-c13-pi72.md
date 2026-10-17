@@ -11,7 +11,12 @@ BPZ's final seventy-two-block thirteen-cycle profile.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BPZProfile](../part-01/bpzprofile.md)
+
+## Proof depends on
+
+- [Bpz C13 Pi9](bpz-c13-pi9.md)
+- [Bpz Profile Square Iter](../part-01/bpz-profile-square-iter.md)
 
 ## Sources
 

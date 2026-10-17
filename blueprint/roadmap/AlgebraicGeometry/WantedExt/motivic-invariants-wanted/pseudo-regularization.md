@@ -11,7 +11,8 @@ Auxiliary structure for `IsPseudoRegularizable`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Birational Map](birational-map.md)
+- [Variety](variety.md)
 
 ## Sources
 

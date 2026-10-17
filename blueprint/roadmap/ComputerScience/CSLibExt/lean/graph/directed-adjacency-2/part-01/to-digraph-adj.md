@@ -12,7 +12,9 @@ Adjacency in the Mathlib graph is exactly directed adjacency-list membership.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](directed-adjacency.md)
+- [Edge](edge.md)
+- [To Digraph](to-digraph.md)
 
 ## Sources
 

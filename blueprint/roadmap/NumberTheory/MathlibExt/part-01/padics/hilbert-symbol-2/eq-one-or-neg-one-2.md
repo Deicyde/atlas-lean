@@ -10,12 +10,7 @@ The `p`-adic Hilbert symbol takes only the values one and negative one.
 
 ## Depends on
 
-- [Hilbert Symbol](hilbert-symbol.md)
-- [Padic Hilbert Symbol](padic-hilbert-symbol.md)
-
-## Proof depends on
-
-- [Is Solvable](is-solvable.md)
+This node has no prerequisites.
 
 ## Sources
 

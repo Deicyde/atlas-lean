@@ -11,7 +11,13 @@ Satisfaction of a formula in `ℝ` under an environment.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formula](formula.md)
+
+## Proof depends on
+
+- [Term](term.md)
+- [Eval](eval.md)
+- [Cons](cons.md)
 
 ## Sources
 

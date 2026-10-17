@@ -12,7 +12,11 @@ The complete circular executor has an `n*log2 n + n` bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Circular](../convolution/fft-circular.md)
+
+## Proof depends on
+
+- [Fft Circular time add two](fft-circular-time-add-two.md)
 
 ## Sources
 

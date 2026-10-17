@@ -12,7 +12,16 @@ A renaming followed by a substitution is a substitution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](../syntax/term.md)
+- [Rename](../syntax/rename.md)
+- [Subst](../syntax/subst.md)
+
+## Proof depends on
+
+- [Lift Ren](../syntax/lift-ren.md)
+- [Lift Sub](../syntax/lift-sub.md)
+- [Subst congr](subst-congr.md)
+- [Ty](../syntax/ty.md)
 
 ## Sources
 

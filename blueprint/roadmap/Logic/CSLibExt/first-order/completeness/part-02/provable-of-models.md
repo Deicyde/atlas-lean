@@ -13,7 +13,11 @@ universe `max u v`), it is provable from the sentences of `T`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Provable](../../natural-deduction/provable.md)
+
+## Proof depends on
+
+- [Strong completeness](provable-of-entails.md)
 
 ## Sources
 

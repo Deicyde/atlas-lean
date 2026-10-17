@@ -12,7 +12,13 @@ The chain turns strictly left at every inner vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cross](../segment-intersection/cross.md)
+- [Lower Hull](lower-hull.md)
+
+## Proof depends on
+
+- [Chain Scan](chain-scan.md)
+- [Pop Non Left](pop-non-left.md)
 
 ## Sources
 

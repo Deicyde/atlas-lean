@@ -14,6 +14,10 @@ The manifold is **strictly quarter-pinched**: every sectional curvature
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Curv](curv.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.SphereTheoremWanted](../../../../../sources/v2/WantedExt.md)

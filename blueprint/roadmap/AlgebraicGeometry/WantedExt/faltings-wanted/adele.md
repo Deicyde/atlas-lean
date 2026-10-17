@@ -13,6 +13,10 @@ lean: MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.Ade
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Place](place.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.AlgebraicGeometry.FaltingsWanted](../../../../sources/v2/WantedExt.md)

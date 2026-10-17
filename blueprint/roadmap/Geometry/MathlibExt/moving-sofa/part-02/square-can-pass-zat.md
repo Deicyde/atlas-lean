@@ -13,7 +13,17 @@ separation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Can Pass ZAt](can-pass-zat.md)
+- [Unit Square](../part-01/unit-square.md)
+
+## Proof depends on
+
+- [Motion](../part-01/motion.md)
+- [Position](../part-01/position.md)
+- [Corridor Z](corridor-z.md)
+- [Entrance Z](entrance-z.md)
+- [Exit Z](exit-z.md)
+- [Square Motion ZAt](square-motion-zat.md)
 
 ## Sources
 

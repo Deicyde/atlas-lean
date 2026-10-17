@@ -12,7 +12,21 @@ The four steps from the knot into the cycle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Body₀](body-2.md)
+- [C₁](c.md)
+- [Id U](id-u.md)
+- [Knot](knot.md)
+- [Loop A](loop-a.md)
+- [Step](../semantics/step.md)
+- [Term](../syntax/term.md)
+- [Ty](../syntax/ty.md)
+
+## Proof depends on
+
+- [Body](body.md)
+- [Store](../semantics/store.md)
+- [Value](../syntax/value.md)
+- [Instantiate](../syntax/instantiate.md)
 
 ## Sources
 

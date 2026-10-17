@@ -14,6 +14,10 @@ weight is used up.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pricing Scan](pricing-scan.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Approximation.WeightedVertexCover](../../../../../../sources/v2/CSLibExt.md)

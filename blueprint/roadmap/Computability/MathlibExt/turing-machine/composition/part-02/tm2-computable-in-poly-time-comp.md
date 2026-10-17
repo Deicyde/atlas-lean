@@ -15,6 +15,10 @@ TM2-computable. Mathlib PR #44441 states the same result as `TM2ComputableInPoly
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Comp Computable](comp-computable.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.TuringMachine.Composition](../../../../../../sources/v2/MathlibExt.md)

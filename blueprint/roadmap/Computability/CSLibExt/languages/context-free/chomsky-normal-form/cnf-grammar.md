@@ -22,6 +22,12 @@ nor Chomsky normal form is preserved. The theorems
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cnf Head](cnf-head.md)
+- [Grammar Terminals](grammar-terminals.md)
+- [To Cnf NT](to-cnf-nt.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.ChomskyNormalForm](../../../../../../sources/v2/CSLibExt.md)

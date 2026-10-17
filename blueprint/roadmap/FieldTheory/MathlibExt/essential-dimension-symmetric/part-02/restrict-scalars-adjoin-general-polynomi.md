@@ -14,7 +14,15 @@ generate it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [General Base Field](../part-01/general-base-field.md)
+- [General Polynomial](../part-01/general-polynomial.md)
+- [Roots Field](../part-01/roots-field.md)
+
+## Proof depends on
+
+- [Adjoin roots eq top](../part-01/adjoin-roots-eq-top.md)
+- [Root](../part-01/root.md)
+- [Root mem general Polynomial roots](root-mem-general-polynomial-roots.md)
 
 ## Sources
 

@@ -11,7 +11,20 @@ Martelli-Montanari unification of a list of equations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equations](../part-01/equations.md)
+- [Subst](../part-01/subst.md)
+
+## Proof depends on
+
+- [Comp](../part-01/comp.md)
+- [Single](../part-01/single.md)
+- [Term](../part-01/term.md)
+- [Size](../part-01/size.md)
+- [Vars](../part-01/vars.md)
+- [Card eq Vars elim lt](card-eq-vars-elim-lt.md)
+- [Eq Size](../part-01/eq-size.md)
+- [Eq Vars](../part-01/eq-vars.md)
+- [Subst Eqs](../part-01/subst-eqs.md)
 
 ## Sources
 

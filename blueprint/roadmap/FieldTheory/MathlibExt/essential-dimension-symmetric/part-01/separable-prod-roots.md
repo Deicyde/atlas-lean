@@ -12,7 +12,13 @@ The product of the distinct linear factors is separable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Root](root.md)
+- [Roots Field](roots-field.md)
+
+## Proof depends on
+
+- [Is Coprime X sub C of ne](is-coprime-x-sub-c-of-ne.md)
+- [Root injective](root-injective.md)
 
 ## Sources
 

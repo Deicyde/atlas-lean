@@ -11,7 +11,7 @@ The physical position of a point under a direct planar rigid motion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motion](motion.md)
 
 ## Sources
 

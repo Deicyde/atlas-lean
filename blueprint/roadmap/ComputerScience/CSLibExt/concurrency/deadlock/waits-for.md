@@ -11,7 +11,7 @@ lean: Cslib.Algorithms.Concurrency.Deadlock.AllocState.WaitsFor
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alloc State](alloc-state.md)
 
 ## Sources
 

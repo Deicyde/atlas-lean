@@ -12,7 +12,10 @@ Every concrete code rate is at most its modular cycle capacity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cycle Code](cycle-code.md)
+- [Positive Nat](positive-nat.md)
+- [Cycle Code Rate](cycle-code-rate.md)
+- [Shannon Capacity Cycle](shannon-capacity-cycle.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ A non-witness passes Fermat's test, hence is a unit modulo `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Witness](../miller-rabin/witness.md)
+
+## Proof depends on
+
+- [Witness of pow ne one](../miller-rabin/witness-of-pow-ne-one.md)
 
 ## Sources
 

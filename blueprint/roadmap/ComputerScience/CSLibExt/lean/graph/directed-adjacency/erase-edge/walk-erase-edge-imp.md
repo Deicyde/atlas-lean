@@ -12,7 +12,14 @@ Every exact-length walk after erasure was already a walk in the original graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Walk](../../directed-adjacency-2/part-01/walk.md)
+- [Erase Edge](erase-edge.md)
+
+## Proof depends on
+
+- [Edge](../../directed-adjacency-2/part-01/edge.md)
+- [Edge erase Edge](edge-erase-edge.md)
 
 ## Sources
 

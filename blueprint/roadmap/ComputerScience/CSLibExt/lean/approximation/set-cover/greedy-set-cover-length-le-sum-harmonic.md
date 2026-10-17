@@ -13,7 +13,13 @@ The potential bound: for every cover `C*` of `U` drawn from `F`, the greedy cove
 
 ## Depends on
 
-This node has no prerequisites.
+- [Greedy Set Cover](greedy-set-cover.md)
+
+## Proof depends on
+
+- [Best Set](best-set.md)
+- [Card le sum card inter](card-le-sum-card-inter.md)
+- [Div le harmonic sub](div-le-harmonic-sub.md)
 
 ## Sources
 

@@ -13,7 +13,15 @@ returns `true`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Witness](witness.md)
+
+## Proof depends on
+
+- [Two Adic Split](two-adic-split.md)
+- [Witness Loop](witness-loop.md)
+- [Witness Loop eq true](witness-loop-eq-true.md)
+- [Modular Exponentiation](../modular-exponentiation/modular-exponentiation.md)
+- [Modular Exponentiation correct](../modular-exponentiation/modular-exponentiation-correct.md)
 
 ## Sources
 

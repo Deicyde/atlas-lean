@@ -13,6 +13,10 @@ The paper's `[k,ℓ]`-near-perfect numbers.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [KLNear Perfect With](klnear-perfect-with.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.FkPerfectWanted](../../../../../../sources/v2/WantedExt.md)

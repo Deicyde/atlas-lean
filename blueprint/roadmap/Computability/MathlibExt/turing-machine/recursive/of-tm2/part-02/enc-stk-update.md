@@ -54,7 +54,8 @@ theorem primrec_stepC : Primrec (stepC tm) := by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Code](../part-01/code.md)
+- [Enc Stk](../part-01/enc-stk.md)
 
 ## Sources
 

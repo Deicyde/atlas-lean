@@ -12,7 +12,13 @@ Karatsuba multiplication of `n ≥ 1` digit numbers costs at most `9 * n^(log₂
 
 ## Depends on
 
-This node has no prerequisites.
+- [Karatsuba](karatsuba.md)
+
+## Proof depends on
+
+- [Karatsuba Cost](karatsuba-cost.md)
+- [Karatsuba Cost le rpow](karatsuba-cost-le-rpow.md)
+- [Karatsuba time](karatsuba-time.md)
 
 ## Sources
 

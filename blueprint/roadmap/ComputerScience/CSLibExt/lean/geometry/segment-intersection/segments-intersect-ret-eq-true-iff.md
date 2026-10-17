@@ -13,7 +13,19 @@ closed segments `p₁p₂` and `p₃p₄` have a common point.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Segments Intersect](segments-intersect.md)
+
+## Proof depends on
+
+- [Straddles](straddles.md)
+- [Direction](direction.md)
+- [Direction eq zero of mem](direction-eq-zero-of-mem.md)
+- [Inter nonempty of straddles](inter-nonempty-of-straddles.md)
+- [Mem segment of direction eq zero](mem-segment-of-direction-eq-zero.md)
+- [On Segment](on-segment.md)
+- [On Segment of mem](on-segment-of-mem.md)
+- [Segments Intersect ret](segments-intersect-ret.md)
+- [Straddles or endpoint mem](straddles-or-endpoint-mem.md)
 
 ## Sources
 

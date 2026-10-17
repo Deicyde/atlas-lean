@@ -13,7 +13,17 @@ form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Chomsky Normal Form](is-chomsky-normal-form.md)
+- [Is Reduced](../reduced/part-02/is-reduced.md)
+- [Cnf Grammar](cnf-grammar.md)
+
+## Proof depends on
+
+- [Is Unit Output](../reduced/part-01/is-unit-output.md)
+- [Cnf Grammar output ne nil](cnf-grammar-output-ne-nil.md)
+- [Cnf Head](cnf-head.md)
+- [Grammar Terminals](grammar-terminals.md)
+- [To Cnf NT](to-cnf-nt.md)
 
 ## Sources
 

@@ -15,6 +15,12 @@ nonterminal.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Valuation](../part-01/is-valuation.md)
+- [Eval Form](../part-01/eval-form.md)
+- [Language le of valuation](../part-01/language-le-of-valuation.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.Basic](../../../../../../../sources/v2/CSLibExt.md)

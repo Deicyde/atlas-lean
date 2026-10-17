@@ -12,7 +12,11 @@ Renamings that agree on the free variables agree on the formula.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rename](../../syntax/rename.md)
+
+## Proof depends on
+
+- [Rename Term](../../syntax/rename-term.md)
 
 ## Sources
 

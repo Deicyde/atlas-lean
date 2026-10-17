@@ -12,7 +12,13 @@ lean: Cslib.Algorithms.Concurrency.Deadlock.AllocState.not_circularWait_of_order
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alloc State](alloc-state.md)
+- [Circular Wait](circular-wait.md)
+- [Ordered](ordered.md)
+
+## Proof depends on
+
+- [Waits For](waits-for.md)
 
 ## Sources
 

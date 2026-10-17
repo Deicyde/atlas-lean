@@ -13,7 +13,7 @@ The prime-spectrum action is the restriction of the fractional-ideal action.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ring Equiv Of Ring Equiv Hom](group-action/ring-equiv-of-ring-equiv-hom.md)
 
 ## Proof depends on
 

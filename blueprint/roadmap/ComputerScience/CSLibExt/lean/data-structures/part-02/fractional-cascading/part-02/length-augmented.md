@@ -12,7 +12,7 @@ There is one augmented catalog per catalog.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Augmented](augmented.md)
 
 ## Sources
 

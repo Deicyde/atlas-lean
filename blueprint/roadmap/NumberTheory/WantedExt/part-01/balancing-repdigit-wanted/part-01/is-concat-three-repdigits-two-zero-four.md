@@ -13,7 +13,7 @@ repdigits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Concat Three Repdigits](is-concat-three-repdigits.md)
 
 ## Sources
 

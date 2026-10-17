@@ -13,6 +13,10 @@ The paper's subspace topology `τ₁` on `ℕ ∖ {1}`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Macias Topology](macias-topology.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Topology.MaciasCoprimeTopologyWanted](../../../../../sources/v2/WantedExt.md)

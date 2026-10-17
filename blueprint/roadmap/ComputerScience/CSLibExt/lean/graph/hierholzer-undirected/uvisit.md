@@ -15,6 +15,10 @@ remove it, recurse at its other endpoint, then continue at `v`; emit `v` when no
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Other End](other-end.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Graph.HierholzerUndirected](../../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,7 @@ The length-one actual call returns its input vector.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft](../../fft-2/fft.md)
 
 ## Sources
 

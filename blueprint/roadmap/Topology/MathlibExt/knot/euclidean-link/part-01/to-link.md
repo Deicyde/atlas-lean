@@ -11,7 +11,12 @@ A parametrized knot as a one-component parametrized link.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Knot](parametrized-knot.md)
+- [Parametrized Link](parametrized-link.md)
+
+## Proof depends on
+
+- [R3](../../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
 
 ## Sources
 

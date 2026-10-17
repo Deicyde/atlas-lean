@@ -13,7 +13,14 @@ finite subsets is.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Satisfiable](bool-satisfiable.md)
+
+## Proof depends on
+
+- [Eval Bool of cpl](../semantics/eval-bool-of-cpl.md)
+- [Eval Bool](../semantics/eval-bool.md)
+- [Consistent With](consistent-with.md)
+- [Model existence](bool-satisfiable-2.md)
 
 ## Sources
 

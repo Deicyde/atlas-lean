@@ -11,7 +11,12 @@ The dart opposite `d` at the same crossing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dart Diagram](dart-diagram.md)
+- [Dart](dart.md)
+
+## Proof depends on
+
+- [Rot](rot.md)
 
 ## Sources
 

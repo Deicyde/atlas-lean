@@ -12,7 +12,13 @@ A frequently attained linear lower bound gives a limsup lower bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ihara Constant Of](ihara-constant-of.md)
+
+## Proof depends on
+
+- [Ihara Ratio](ihara-ratio.md)
+- [Le ihara Constant Of of frequently ratio le](le-ihara-constant-of-of-frequently-ratio.md)
+- [Le ihara Ratio of mul le](le-ihara-ratio-of-mul-le.md)
 
 ## Sources
 

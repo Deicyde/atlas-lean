@@ -12,7 +12,8 @@ independence proof.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R3](r3.md)
+- [Triple Points](triple-points.md)
 
 ## Sources
 

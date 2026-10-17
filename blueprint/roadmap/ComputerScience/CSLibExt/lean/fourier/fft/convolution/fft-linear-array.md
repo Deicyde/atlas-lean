@@ -13,6 +13,10 @@ Reject unequal or inadmissible input lengths before zero-padded execution.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fft Linear](fft-linear.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Fourier.FFT.Convolution](../../../../../../../sources/v2/CSLibExt.md)

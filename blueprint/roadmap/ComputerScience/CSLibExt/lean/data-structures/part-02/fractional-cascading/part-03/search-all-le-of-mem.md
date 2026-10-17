@@ -12,7 +12,13 @@ Every reported position is a boundary index of its catalog.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Bound](../part-01/lower-bound.md)
+- [Search All](../part-02/search-all.md)
+
+## Proof depends on
+
+- [Get Elem? search All](get-elem-search-all.md)
+- [Lower Bound le length](../part-01/lower-bound-le-length.md)
 
 ## Sources
 

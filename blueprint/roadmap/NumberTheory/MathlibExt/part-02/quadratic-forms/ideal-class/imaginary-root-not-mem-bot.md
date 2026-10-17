@@ -12,7 +12,7 @@ A positive radicand gives a nonreal root, hence a root outside the rational subf
 
 ## Depends on
 
-This node has no prerequisites.
+- [Imaginary Root](imaginary-root.md)
 
 ## Sources
 

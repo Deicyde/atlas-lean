@@ -12,7 +12,22 @@ Type ropelength depends only on the ambient-isotopy type.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](parametrized-link.md)
+- [Isotopic](isotopic-2.md)
+- [Ropelength](ropelength.md)
+
+## Proof depends on
+
+- [R3](../../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Ambient Isotopy](ambient-isotopy.md)
+- [Comp](comp.md)
+- [Symm](symm.md)
+- [Circle Reparam](circle-reparam.md)
+- [Comp](comp-2.md)
+- [Symm](symm-2.md)
+- [Parametrized Knot](parametrized-knot.md)
+- [Ropelength Ratio](ropelength-ratio.md)
+- [Ropelength le ratio of isotopic](ropelength-le-ratio-of-isotopic.md)
 
 ## Sources
 

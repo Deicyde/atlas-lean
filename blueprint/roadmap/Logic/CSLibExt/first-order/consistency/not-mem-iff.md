@@ -12,7 +12,17 @@ Exactly one of `φ`, `¬φ` lies in a maximal consistent set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Consistent](maximal-consistent.md)
+
+## Proof depends on
+
+- [Consistent](consistent.md)
+- [Natural deduction](../natural-deduction/derivable.md)
+- [Mem of consistent insert](mem-of-consistent-insert.md)
+- [Mem of provable](mem-of-provable.md)
+- [Provable](../natural-deduction/provable.md)
+- [Mp](mp.md)
+- [Provable not iff not consistent insert](provable-not-iff-not-consistent-insert.md)
 
 ## Sources
 

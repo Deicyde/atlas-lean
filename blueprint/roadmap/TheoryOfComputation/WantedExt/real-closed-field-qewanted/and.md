@@ -11,7 +11,11 @@ Conjunction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formula](formula.md)
+
+## Proof depends on
+
+- [Not](not.md)
 
 ## Sources
 

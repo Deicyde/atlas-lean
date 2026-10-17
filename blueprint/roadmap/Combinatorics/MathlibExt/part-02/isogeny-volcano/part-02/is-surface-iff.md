@@ -13,8 +13,7 @@ Surface means level value zero.
 
 ## Depends on
 
-- [Isogeny Volcano](../part-01/isogeny-volcano.md)
-- [Is Surface](../part-01/is-surface.md)
+This node has no prerequisites.
 
 ## Sources
 

@@ -12,7 +12,8 @@ Linear array admission returns the same actual twice-sized padded execution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Linear](../convolution/fft-linear.md)
+- [Fft Linear Array](../convolution/fft-linear-array.md)
 
 ## Sources
 

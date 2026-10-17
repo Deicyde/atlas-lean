@@ -11,7 +11,11 @@ The CNF of a disjunction: `(⋀ Cᵢ) ∨ (⋀ Dⱼ)` is `⋀ (Cᵢ ∨ Dⱼ)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+
+## Proof depends on
+
+- [CNFClause](../basic/cnfclause.md)
 
 ## Sources
 

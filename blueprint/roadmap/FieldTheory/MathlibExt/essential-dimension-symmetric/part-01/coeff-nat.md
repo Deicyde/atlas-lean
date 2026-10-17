@@ -12,7 +12,12 @@ A coefficient of the general polynomial indexed by a natural number:
 
 ## Depends on
 
-This node has no prerequisites.
+- [General Base Field](general-base-field.md)
+- [Roots Field](roots-field.md)
+
+## Proof depends on
+
+- [Coeff Elem](coeff-elem.md)
 
 ## Sources
 

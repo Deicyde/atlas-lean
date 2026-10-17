@@ -13,6 +13,12 @@ CLRS `SEGMENTS-INTERSECT(p₁, p₂, p₃, p₄)`: whether segment `p₁p₂` me
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Straddles](straddles.md)
+- [Collinear Branch](collinear-branch.md)
+- [Direction](direction.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Geometry.SegmentIntersection](../../../../../../sources/v2/CSLibExt.md)

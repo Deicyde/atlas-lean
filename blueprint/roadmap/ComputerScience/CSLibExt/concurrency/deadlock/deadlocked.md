@@ -12,7 +12,11 @@ resource held by a member.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alloc State](alloc-state.md)
+
+## Proof depends on
+
+- [Waits For](waits-for.md)
 
 ## Sources
 

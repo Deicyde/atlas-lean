@@ -12,7 +12,12 @@ The result covers every listed edge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pricing Vertex Cover](pricing-vertex-cover.md)
+
+## Proof depends on
+
+- [Pricing Scan](pricing-scan.md)
+- [Pricing Scan covers](pricing-scan-covers.md)
 
 ## Sources
 

@@ -15,6 +15,7 @@ The regular character vanishes off the identity (column orthogonality).
 
 - [Irr](../part-01/irr.md)
 - [Char Fun](../part-01/char-fun.md)
+- [Card Bound](../part-01/card-bound.md)
 
 ## Proof depends on
 

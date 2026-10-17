@@ -14,6 +14,10 @@ The number of available integers in `[1, ∏ i, p i]`
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Residue Hit Count](residue-hit-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.CountingAppearancesProgressionsWanted](../../../../../sources/v2/WantedExt.md)

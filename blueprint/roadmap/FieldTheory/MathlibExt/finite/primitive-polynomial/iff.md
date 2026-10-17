@@ -13,7 +13,7 @@ Restatement of the defining conjunction.
 
 ## Depends on
 
-- [Is Primitive Polynomial](is-primitive-polynomial.md)
+This node has no prerequisites.
 
 ## Sources
 

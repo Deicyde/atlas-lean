@@ -11,7 +11,11 @@ The integral singular chain complex of a topological space as a derived object.
 
 ## Depends on
 
-This node has no prerequisites.
+- [DLight Cond Ab](../part-01/dlight-cond-ab.md)
+
+## Proof depends on
+
+- [Singular Chains Light Cond Ab Derived Functor](singular-chains-light-cond-ab-derived-fu.md)
 
 ## Sources
 

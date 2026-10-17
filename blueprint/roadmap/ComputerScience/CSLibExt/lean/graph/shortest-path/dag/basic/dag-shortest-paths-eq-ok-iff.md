@@ -12,7 +12,20 @@ A successful validated-wrapper output is exactly the actual pass in its certifie
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distances](../../bellman-ford/basic/distances.md)
+- [Edge](../../bellman-ford/basic/edge.md)
+- [To Directed Adjacency](../../bellman-ford/basic/to-directed-adjacency.md)
+- [Cost](cost.md)
+- [Dag Shortest Paths](dag-shortest-paths.md)
+- [Run](run.md)
+- [Is Topological Order](../../../topological-sort/is-topological-order.md)
+- [Result](../../../topological-sort/result.md)
+- [Sort](../../../topological-sort/sort.md)
+
+## Proof depends on
+
+- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Success is Topological Order](../../../topological-sort/success-is-topological-order.md)
 
 ## Sources
 

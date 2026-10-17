@@ -14,6 +14,10 @@ range `0 < a + 1 < b < c`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [So CSEq](so-cseq.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ConsecutiveSquaresWanted](../../../../../sources/v2/WantedExt.md)

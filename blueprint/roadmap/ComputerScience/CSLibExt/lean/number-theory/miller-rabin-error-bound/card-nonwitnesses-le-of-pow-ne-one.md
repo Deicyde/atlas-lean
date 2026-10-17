@@ -13,7 +13,12 @@ If some unit `x` has `x^(n-1) ≢ 1`, the non-witnesses lie in the proper subgro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonwitnesses](nonwitnesses.md)
+
+## Proof depends on
+
+- [Coprime of witness eq false](coprime-of-witness-eq-false.md)
+- [Witness](../miller-rabin/witness.md)
 
 ## Sources
 

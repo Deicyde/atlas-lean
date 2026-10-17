@@ -13,7 +13,17 @@ the survival probabilities of pairwise distinct cuts add up to at most `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distinct On](distinct-on.md)
+- [State](../part-01/state.md)
+- [Valid](../part-01/valid.md)
+- [Survive Prob](survive-prob.md)
+
+## Proof depends on
+
+- [Is Cut](../part-01/is-cut.md)
+- [Contract](../part-01/contract.md)
+- [Rename](../part-01/rename.md)
+- [Valid contract](../part-01/valid-contract.md)
 
 ## Sources
 

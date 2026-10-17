@@ -12,7 +12,13 @@ The chain is a sublist of the input: its vertices are input points, in input ord
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Hull](lower-hull.md)
+
+## Proof depends on
+
+- [Chain Scan](chain-scan.md)
+- [Cross](../segment-intersection/cross.md)
+- [Pop Non Left](pop-non-left.md)
 
 ## Sources
 

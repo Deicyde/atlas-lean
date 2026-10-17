@@ -11,7 +11,7 @@ Boolean reflection of canonical directed-adjacency edge membership.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../part-01/directed-adjacency.md)
 
 ## Sources
 

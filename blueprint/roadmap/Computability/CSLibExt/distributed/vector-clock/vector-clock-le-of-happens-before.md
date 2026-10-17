@@ -12,7 +12,14 @@ Happened-before does not decrease any entry.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](../lamport-clock/event.md)
+- [Happens Before](../lamport-clock/happens-before.md)
+- [Timestamps](timestamps.md)
+
+## Proof depends on
+
+- [Step](../lamport-clock/step.md)
+- [Vector Clock le of step](vector-clock-le-of-step.md)
 
 ## Sources
 

@@ -11,7 +11,12 @@ The coded version of `TM2.stepAux`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coded Cfg](coded-cfg.md)
+
+## Proof depends on
+
+- [Code](code.md)
+- [Read Top](read-top.md)
 
 ## Sources
 

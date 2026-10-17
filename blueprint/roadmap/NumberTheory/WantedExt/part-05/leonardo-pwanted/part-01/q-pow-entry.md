@@ -15,6 +15,11 @@ remaining rows `-A_p`, indices decreasing along rows.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Seq AZ](seq-az.md)
+- [Seq BZ](seq-bz.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LeonardoPWanted](../../../../../../sources/v2/WantedExt.md)

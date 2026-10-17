@@ -12,7 +12,7 @@ The sharpness inputs really have an incorrect matrix product.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Matrix](../basic/freivalds-matrix.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ Twice the sample length is at most the catalog length plus one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sample](sample.md)
+
+## Proof depends on
+
+- [Sample Aux](sample-aux.md)
 
 ## Sources
 

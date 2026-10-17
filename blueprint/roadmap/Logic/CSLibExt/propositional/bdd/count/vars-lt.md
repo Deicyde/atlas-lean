@@ -11,7 +11,7 @@ Every variable tested in the diagram is below `m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](../basic/bdd.md)
 
 ## Sources
 

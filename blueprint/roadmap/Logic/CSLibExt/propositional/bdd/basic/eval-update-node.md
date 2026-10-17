@@ -12,7 +12,13 @@ Fixing the top variable of an ordered node selects a child.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](bdd.md)
+- [Ordered From](ordered-from.md)
+- [Eval](eval.md)
+
+## Proof depends on
+
+- [Eval update of lt](eval-update-of-lt.md)
 
 ## Sources
 

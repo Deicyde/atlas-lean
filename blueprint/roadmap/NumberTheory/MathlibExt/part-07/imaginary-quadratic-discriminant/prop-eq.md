@@ -12,7 +12,7 @@ The defining discriminant equation stored by a decomposition.
 
 ## Depends on
 
-- [Imaginary Quadratic Discriminant Decomposition](imaginary-quadratic-discriminant-decompo.md)
+This node has no prerequisites.
 
 ## Sources
 

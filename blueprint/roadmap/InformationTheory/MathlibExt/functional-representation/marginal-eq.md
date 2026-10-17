@@ -12,7 +12,12 @@ A representation has the exact specified input/output marginal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is General Representation](is-general-representation.md)
+
+## Proof depends on
+
+- [General Recovery Entropy](general-recovery-entropy.md)
+- [Measure Mutual Information](../conditional-entropy/measure-mutual-information.md)
 
 ## Sources
 

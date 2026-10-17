@@ -15,7 +15,21 @@ comparison), `emitL` (prepend). `ifZero` is unreachable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flag](../part-01/flag.md)
+- [Run](../part-01/run.md)
+- [Cmp Step](../part-01/cmp-step.md)
+- [Cnt](../part-01/cnt.md)
+- [Decr](../part-01/decr.md)
+- [Emit R](emit-r.md)
+- [Rep](rep.md)
+- [Xfer](../part-01/xfer.md)
+
+## Proof depends on
+
+- [Single](../part-01/single.md)
+- [Cmp run](../part-01/cmp-run.md)
+- [Emit](../part-01/emit.md)
+- [Push List](../part-01/push-list.md)
 
 ## Sources
 

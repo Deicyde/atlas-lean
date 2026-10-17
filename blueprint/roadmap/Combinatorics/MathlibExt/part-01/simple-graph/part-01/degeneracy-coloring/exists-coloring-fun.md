@@ -14,7 +14,12 @@ from its neighborhood.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Degenerate On](../degeneracy/is-degenerate-on.md)
+
+## Proof depends on
+
+- [Exists small vertex](exists-small-vertex.md)
+- [Of subset](../degeneracy/of-subset.md)
 
 ## Sources
 

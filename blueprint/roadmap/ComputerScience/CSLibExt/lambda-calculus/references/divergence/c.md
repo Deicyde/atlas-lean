@@ -11,7 +11,12 @@ The configurations on the way into the cycle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](../syntax/term.md)
+
+## Proof depends on
+
+- [Body](body.md)
+- [Ty](../syntax/ty.md)
 
 ## Sources
 

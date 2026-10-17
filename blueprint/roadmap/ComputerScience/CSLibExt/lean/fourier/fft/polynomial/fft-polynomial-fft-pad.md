@@ -12,7 +12,14 @@ Materialized prefix-preserving zero padding represents the same polynomial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Pad](../convolution/fft-pad.md)
+- [Fft Polynomial](fft-polynomial.md)
+
+## Proof depends on
+
+- [Fft Pad ret high](../convolution-characteristic/fft-pad-ret-high.md)
+- [Fft Pad ret low](../convolution-characteristic/fft-pad-ret-low.md)
+- [Fft Polynomial coeff](fft-polynomial-coeff.md)
 
 ## Sources
 

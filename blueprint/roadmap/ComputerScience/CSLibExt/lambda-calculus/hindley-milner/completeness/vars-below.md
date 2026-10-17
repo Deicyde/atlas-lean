@@ -11,7 +11,11 @@ Every variable of the term is below `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](../../../unification/basic/part-01/term.md)
+
+## Proof depends on
+
+- [Vars](../../../unification/basic/part-01/vars.md)
 
 ## Sources
 

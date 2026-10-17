@@ -19,6 +19,7 @@ strictly sorted; and the groups are ordered.
 ## Proof depends on
 
 - [Group Ordered](group-ordered.md)
+- [XFast Trie](../../xfast-trie/part-01/xfast-trie.md)
 - [Valid](../../xfast-trie/part-01/valid.md)
 
 ## Sources

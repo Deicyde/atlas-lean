@@ -11,7 +11,11 @@ The Mathlib directed graph obtained by forgetting traversal orders and multiplic
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](directed-adjacency.md)
+
+## Proof depends on
+
+- [Edge](edge.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ change until the first candidate that passes `ok`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Try Preds](try-preds.md)
 
 ## Sources
 

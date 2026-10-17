@@ -13,7 +13,16 @@ when the target has infinitely many variables: each eigenvariable is sent to a f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Natural deduction](../../natural-deduction/derivable.md)
+
+## Proof depends on
+
+- [Formula relabel eq rename](../../syntax/formula-relabel-eq-rename.md)
+- [Instantiate](../../syntax/instantiate.md)
+- [Instantiate Term](../../syntax/instantiate-term.md)
+- [Rename](../../syntax/rename.md)
+- [Rename Term](../../syntax/rename-term.md)
+- [Rename congr of eq On](rename-congr-of-eq-on.md)
 
 ## Sources
 

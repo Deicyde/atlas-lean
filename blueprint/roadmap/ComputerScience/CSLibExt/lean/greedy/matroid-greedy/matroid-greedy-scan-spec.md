@@ -13,7 +13,7 @@ independence of the final kept set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matroid Greedy Scan](matroid-greedy-scan.md)
 
 ## Sources
 

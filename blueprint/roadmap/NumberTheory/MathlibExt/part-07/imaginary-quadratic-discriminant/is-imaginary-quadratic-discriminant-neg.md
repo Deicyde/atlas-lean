@@ -12,7 +12,7 @@ An imaginary quadratic discriminant is negative.
 
 ## Depends on
 
-- [Is Imaginary Quadratic Discriminant](is-imaginary-quadratic-discriminant.md)
+This node has no prerequisites.
 
 ## Sources
 

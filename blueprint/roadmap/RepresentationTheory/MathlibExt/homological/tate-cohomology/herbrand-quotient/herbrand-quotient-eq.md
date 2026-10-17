@@ -14,7 +14,6 @@ Unfolding of the Herbrand quotient as a ratio of `Nat.card`s.
 ## Depends on
 
 - [Herbrand Finite](herbrand-finite.md)
-- [Herbrand Quotient](herbrand-quotient.md)
 
 ## Sources
 

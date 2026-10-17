@@ -12,7 +12,17 @@ The result is a matching.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Matching](../part-01/is-matching.md)
+- [Max Matching](max-matching.md)
+- [Pairs](../part-01/pairs.md)
+
+## Proof depends on
+
+- [Valid](../part-01/valid.md)
+- [Is Matching pairs](is-matching-pairs.md)
+- [Matched](../part-01/matched.md)
+- [Max Matching Aux](../part-01/max-matching-aux.md)
+- [Max Matching Aux spec](max-matching-aux-spec.md)
 
 ## Sources
 

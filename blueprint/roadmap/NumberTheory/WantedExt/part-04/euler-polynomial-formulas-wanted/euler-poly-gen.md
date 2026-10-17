@@ -14,6 +14,10 @@ The order-`α` Euler polynomial
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Euler Num Gen](euler-num-gen.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.EulerPolynomialFormulasWanted](../../../../../sources/v2/WantedExt.md)

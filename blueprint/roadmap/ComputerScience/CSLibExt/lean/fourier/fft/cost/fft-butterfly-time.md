@@ -12,7 +12,7 @@ The actual butterfly charges its two reads, four scalar operations and two write
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Butterfly](../../fft-2/fft-butterfly.md)
 
 ## Sources
 

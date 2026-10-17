@@ -11,7 +11,7 @@ Reverse every edge, ordering each new adjacency list by the vertex enumeration.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](directed-adjacency.md)
 
 ## Sources
 

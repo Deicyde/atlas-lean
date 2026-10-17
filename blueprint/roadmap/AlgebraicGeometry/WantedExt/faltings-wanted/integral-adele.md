@@ -11,7 +11,8 @@ The $K$-subspace $\mathcal{A}_F(0)$, see [Stichtenoth, Definition 1.5.3].
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adele](adele.md)
+- [Place](place.md)
 
 ## Sources
 

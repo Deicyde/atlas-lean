@@ -13,7 +13,14 @@ family's Ramanujan exponent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible](is-admissible.md)
+- [Local Exponent Family](local-exponent-family.md)
+- [Ramanujan Exponent Of](ramanujan-exponent-of.md)
+
+## Proof depends on
+
+- [Exponent le ramanujan Exponent Of](exponent-le-ramanujan-exponent-of.md)
+- [Ramanujan Exponent Of le of is Admissible](ramanujan-exponent-of-le-of-is-admissibl.md)
 
 ## Sources
 

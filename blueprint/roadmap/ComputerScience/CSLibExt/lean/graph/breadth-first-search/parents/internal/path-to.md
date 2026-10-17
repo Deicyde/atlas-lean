@@ -13,7 +13,11 @@ parent reads and actual vertex cons operations, not IO printing latency.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BFSForest](bfsforest.md)
+
+## Proof depends on
+
+- [BFSResult](../../../breadth-first-search-2/bfsresult.md)
 
 ## Sources
 

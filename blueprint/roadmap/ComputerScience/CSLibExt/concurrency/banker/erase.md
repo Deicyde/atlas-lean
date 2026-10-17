@@ -13,7 +13,12 @@ sequence safe. This is why the greedy safety check is complete.
 
 ## Depends on
 
-This node has no prerequisites.
+- [System](system.md)
+- [Safe Seq](safe-seq.md)
+
+## Proof depends on
+
+- [Need](need.md)
 
 ## Sources
 

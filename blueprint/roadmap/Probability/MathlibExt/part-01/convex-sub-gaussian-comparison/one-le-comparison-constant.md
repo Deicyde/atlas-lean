@@ -12,7 +12,12 @@ The Gaussian lower bound also holds if the comparator family is empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comparison Constant](comparison-constant.md)
+
+## Proof depends on
+
+- [Is Admissible Constant](is-admissible-constant.md)
+- [One le of is Admissible Constant](one-le-of-is-admissible-constant.md)
 
 ## Sources
 

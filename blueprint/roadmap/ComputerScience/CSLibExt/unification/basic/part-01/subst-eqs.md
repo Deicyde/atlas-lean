@@ -11,7 +11,13 @@ Apply a substitution to both sides of every equation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equations](equations.md)
+- [Subst](subst.md)
+
+## Proof depends on
+
+- [Term](term.md)
+- [Subst](subst-2.md)
 
 ## Sources
 

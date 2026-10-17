@@ -13,10 +13,6 @@ The real Hilbert symbol, defined by solvability of
 
 This node has no prerequisites.
 
-## Proof depends on
-
-- [Hilbert Symbol](../../hilbert-symbol-2/hilbert-symbol.md)
-
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Padics.HilbertSymbol.Real](../../../../../../../sources/v2/MathlibExt.md)

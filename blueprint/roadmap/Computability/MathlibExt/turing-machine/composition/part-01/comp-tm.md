@@ -11,7 +11,15 @@ The composite machine.
 
 ## Depends on
 
-This node has no prerequisites.
+- [X](x.md)
+
+## Proof depends on
+
+- [CK](ck.md)
+- [CΓ](c.md)
+- [CΛ](c-2.md)
+- [Cσ](c-3.md)
+- [Prog](prog.md)
 
 ## Sources
 

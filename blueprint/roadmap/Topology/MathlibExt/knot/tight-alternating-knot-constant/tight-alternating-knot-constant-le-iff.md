@@ -16,7 +16,12 @@ supremum definition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Alternating](is-admissible-alternating.md)
+- [Tight Alternating Knot Constant](tight-alternating-knot-constant.md)
+
+## Proof depends on
+
+- [Le tight Alternating Knot Constant](le-tight-alternating-knot-constant.md)
 
 ## Sources
 

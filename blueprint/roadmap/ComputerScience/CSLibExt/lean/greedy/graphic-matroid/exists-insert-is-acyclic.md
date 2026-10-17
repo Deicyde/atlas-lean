@@ -15,6 +15,10 @@ forest.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ncard edge Set add card connected Component](ncard-edge-set-add-card-connected-compon.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Greedy.GraphicMatroid](../../../../../../sources/v2/CSLibExt.md)

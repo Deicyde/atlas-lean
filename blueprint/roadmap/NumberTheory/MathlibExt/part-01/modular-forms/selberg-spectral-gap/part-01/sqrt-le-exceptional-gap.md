@@ -12,7 +12,12 @@ An exceptional eigenvalue contributes its square-root gap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Eigenvalue](is-eigenvalue.md)
+- [Exceptional Gap](exceptional-gap.md)
+
+## Proof depends on
+
+- [Exceptional Gaps](exceptional-gaps.md)
 
 ## Sources
 

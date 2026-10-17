@@ -11,7 +11,12 @@ Set the state of one participant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Part State](part-state.md)
+- [State](state.md)
+
+## Proof depends on
+
+- [Coord State](coord-state.md)
 
 ## Sources
 

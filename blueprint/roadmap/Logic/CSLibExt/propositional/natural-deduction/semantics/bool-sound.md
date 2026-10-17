@@ -13,7 +13,11 @@ the theory, the conclusion of a derivation is true whenever its context is.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Entails](bool-entails.md)
+
+## Proof depends on
+
+- [Eval Bool](eval-bool.md)
 
 ## Sources
 

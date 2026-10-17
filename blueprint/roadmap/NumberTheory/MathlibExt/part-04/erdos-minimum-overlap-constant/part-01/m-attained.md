@@ -12,7 +12,12 @@ lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.M_attained
 
 ## Depends on
 
-This node has no prerequisites.
+- [M](m.md)
+- [Max Overlap](max-overlap.md)
+
+## Proof depends on
+
+- [Balanced Partition nonempty](balanced-partition-nonempty.md)
 
 ## Sources
 

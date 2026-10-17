@@ -12,7 +12,15 @@ In decreasing finish order a parent precedes every child it discovered.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Before](../part-01/before.md)
+- [Traversal](../part-01/traversal.md)
+- [Decreasing Finish](decreasing-finish.md)
+- [Dfs](../part-01/dfs.md)
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Child before parent postorder](child-before-parent-postorder.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Decode a complete CNF formula, rejecting missing or trailing bits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 

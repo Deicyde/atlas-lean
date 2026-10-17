@@ -12,7 +12,12 @@ An actual finite construction yields its corresponding root-rate lower bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Cycle Code](is-cycle-code.md)
+- [Shannon Capacity Cycle](shannon-capacity-cycle.md)
+
+## Proof depends on
+
+- [Cycle Code Rate le shannon Capacity](cycle-code-rate-le-shannon-capacity.md)
 
 ## Sources
 

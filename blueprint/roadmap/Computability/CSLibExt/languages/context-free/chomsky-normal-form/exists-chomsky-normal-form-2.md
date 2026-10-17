@@ -13,7 +13,11 @@ Chomsky normal form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Chomsky Normal Form](is-chomsky-normal-form.md)
+
+## Proof depends on
+
+- [Exists chomsky Normal Form](exists-chomsky-normal-form.md)
 
 ## Sources
 

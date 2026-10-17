@@ -17,7 +17,7 @@ def uhierholzer (E : List (V × V)) (s : V) : TimeM ℕ (List V) := do
 
 ## Depends on
 
-This node has no prerequisites.
+- [Udeg](udeg.md)
 
 ## Sources
 

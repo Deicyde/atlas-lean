@@ -12,7 +12,14 @@ The dynamic program inspects exactly `n * (n + 1) / 2` table entries.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Longest Increasing Subsequence](longest-increasing-subsequence.md)
+
+## Proof depends on
+
+- [Lis Table](lis-table.md)
+- [Max Above](max-above.md)
+- [Max Above time](max-above-time.md)
+- [Max Entry](max-entry.md)
 
 ## Sources
 

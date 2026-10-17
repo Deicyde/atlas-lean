@@ -13,7 +13,14 @@ the graphic matroid).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest Oracle](forest-oracle.md)
+- [Graphic Matroid](graphic-matroid.md)
+- [Matroid Greedy](../matroid-greedy/matroid-greedy.md)
+
+## Proof depends on
+
+- [Forest Oracle iff](forest-oracle-iff.md)
+- [Matroid Greedy is Base](../matroid-greedy/matroid-greedy-is-base.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Sum the integer weights of concrete edge occurrences.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge](edge.md)
 
 ## Sources
 

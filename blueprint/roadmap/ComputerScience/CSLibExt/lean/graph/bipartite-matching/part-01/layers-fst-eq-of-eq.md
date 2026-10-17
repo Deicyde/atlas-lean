@@ -12,7 +12,7 @@ Once two consecutive left layers agree, the layers stop growing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layers](layers.md)
 
 ## Sources
 

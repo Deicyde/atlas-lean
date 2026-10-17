@@ -12,7 +12,10 @@ The constructed singleton auxiliary has its actual deterministic law.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Extension](finite-extension.md)
+- [Auxiliary Law](auxiliary-law.md)
+- [Trivial](trivial.md)
+- [Finite Joint Law](finite-joint-law.md)
 
 ## Sources
 

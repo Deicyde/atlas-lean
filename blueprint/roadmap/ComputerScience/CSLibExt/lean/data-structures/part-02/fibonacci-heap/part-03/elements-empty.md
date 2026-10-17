@@ -18,6 +18,7 @@ The empty heap represents the empty multiset.
 
 ## Proof depends on
 
+- [Fibonacci Heap](../part-02/fibonacci-heap.md)
 - [Fibonacci Tree](../part-01/fibonacci-tree.md)
 - [Elements](../part-01/elements.md)
 

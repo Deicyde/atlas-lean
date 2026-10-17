@@ -13,7 +13,13 @@ variable preserves satisfaction by an assignment extending `literal`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNFClause](../basic/cnfclause.md)
+- [Satisfies](../semantics/satisfies-2.md)
+- [Restrict](restrict.md)
+
+## Proof depends on
+
+- [Satisfies](../semantics/satisfies.md)
 
 ## Sources
 

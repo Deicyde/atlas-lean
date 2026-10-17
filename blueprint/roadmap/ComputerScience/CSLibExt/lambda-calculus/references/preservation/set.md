@@ -13,7 +13,12 @@ typing assigns to it keeps the store well typed (TAPL Lemma 13.5.5).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Type](../typing/has-type.md)
+- [Store](../semantics/store.md)
+- [Store Typed](../typing/store-typed.md)
+- [Term](../syntax/term.md)
+- [Value](../syntax/value.md)
+- [Ty](../syntax/ty.md)
 
 ## Sources
 

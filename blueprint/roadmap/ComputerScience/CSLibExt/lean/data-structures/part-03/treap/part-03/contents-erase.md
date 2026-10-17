@@ -14,6 +14,7 @@ Erased contents are exactly the two non-pivot split sides.
 ## Depends on
 
 - [Tree](../part-01/tree.md)
+- [Split Result](../part-01/split-result.md)
 - [Contents](../part-01/contents.md)
 - [Erase](../part-01/erase.md)
 - [Split](../part-01/split.md)

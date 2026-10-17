@@ -11,7 +11,11 @@ The cofactor `t[x := b]`: every test of `x` takes the `b` branch.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](../basic/bdd.md)
+
+## Proof depends on
+
+- [Mk](../basic/mk.md)
 
 ## Sources
 

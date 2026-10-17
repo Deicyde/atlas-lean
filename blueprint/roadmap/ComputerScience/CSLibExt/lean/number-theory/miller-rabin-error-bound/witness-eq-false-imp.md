@@ -13,7 +13,15 @@ CLRS's description of a non-witness: with `n - 1 = 2^t u`, either `a^u ≡ 1` or
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two Adic Split](../miller-rabin/two-adic-split.md)
+- [Witness](../miller-rabin/witness.md)
+
+## Proof depends on
+
+- [Witness Loop](../miller-rabin/witness-loop.md)
+- [Witness Loop eq false imp](witness-loop-eq-false-imp.md)
+- [Modular Exponentiation](../modular-exponentiation/modular-exponentiation.md)
+- [Modular Exponentiation correct](../modular-exponentiation/modular-exponentiation-correct.md)
 
 ## Sources
 

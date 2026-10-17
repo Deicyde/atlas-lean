@@ -13,7 +13,13 @@ timestamp than the send.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
+- [Well Formed](well-formed.md)
+- [Timestamps](timestamps.md)
+
+## Proof depends on
+
+- [Step lt](step-lt.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ Equations between terms.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Term](term.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Foundations.Unification.Basic](../../../../../../sources/v2/CSLibExt.md)

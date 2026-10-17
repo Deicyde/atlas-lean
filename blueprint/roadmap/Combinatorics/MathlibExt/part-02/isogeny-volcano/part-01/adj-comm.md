@@ -13,8 +13,7 @@ Adjacency is symmetric.
 
 ## Depends on
 
-- [Multigraph](multigraph.md)
-- [Adj](adj.md)
+This node has no prerequisites.
 
 ## Sources
 

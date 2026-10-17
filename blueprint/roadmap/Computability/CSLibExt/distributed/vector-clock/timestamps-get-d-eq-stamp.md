@@ -13,7 +13,14 @@ state before it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](../lamport-clock/event.md)
+- [Run](run.md)
+- [Stamp](stamp.md)
+- [Timestamps](timestamps.md)
+
+## Proof depends on
+
+- [Clock Step](clock-step.md)
 
 ## Sources
 

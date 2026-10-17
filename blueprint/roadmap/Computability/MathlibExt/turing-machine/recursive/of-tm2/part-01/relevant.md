@@ -14,6 +14,10 @@ pushed by the program.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pushes](pushes.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.TuringMachine.Recursive.OfTM2](../../../../../../../sources/v2/MathlibExt.md)

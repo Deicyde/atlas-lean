@@ -13,7 +13,14 @@ processes is left over by the algorithm.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Reduces](reduces.md)
+- [Reduce Aux](reduce-aux.md)
+
+## Proof depends on
+
+- [Eq nil](eq-nil.md)
+- [Erase](erase.md)
 
 ## Sources
 

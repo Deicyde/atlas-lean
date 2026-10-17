@@ -11,7 +11,7 @@ Follow predecessors for at most `n` steps, returning source-to-target order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dijkstra Result](dijkstra-result.md)
 
 ## Sources
 

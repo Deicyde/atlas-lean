@@ -11,7 +11,14 @@ Iterate bottleneck augmentation, stopping for equal endpoints or no residual pat
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](../part-01/flow.md)
+
+## Proof depends on
+
+- [Augment](augment.md)
+- [Path Bottleneck](../part-01/path-bottleneck.md)
+- [Residual Graph](../part-01/residual-graph.md)
+- [Shortest Path](../part-01/shortest-path.md)
 
 ## Sources
 

@@ -13,7 +13,17 @@ run from the empty store, never gets stuck.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Type](../typing/has-type.md)
+- [Step](../semantics/step.md)
+- [Steps](../semantics/steps.md)
+- [Store](../semantics/store.md)
+- [Term](../syntax/term.md)
+- [Value](../syntax/value.md)
+- [Ty](../syntax/ty.md)
+
+## Proof depends on
+
+- [Type Safety](type-safety.md)
 
 ## Sources
 

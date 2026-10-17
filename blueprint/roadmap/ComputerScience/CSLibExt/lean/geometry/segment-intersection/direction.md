@@ -14,6 +14,10 @@ CLRS `DIRECTION(pᵢ, pⱼ, pₖ) = (pₖ - pᵢ) × (pⱼ - pᵢ)`: positive wh
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cross](cross.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Geometry.SegmentIntersection](../../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,18 @@ Successful runs perform no negative-cycle reconstruction steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../basic/cost.md)
+- [Distances](../basic/distances.md)
+- [Edge](../basic/edge.md)
+- [Result](../basic/result.md)
+- [Bellman Ford](../correctness/bellman-ford.md)
+
+## Proof depends on
+
+- [Is Weighted Path](../basic/is-weighted-path.md)
+- [Reachable Negative Cycle](../basic/reachable-negative-cycle.md)
+- [Path Vertices](../basic/path-vertices.md)
+- [Path Weight](../basic/path-weight.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ All repetitions contribute their actual trial arithmetic counts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Repeat](freivalds-repeat.md)
+
+## Proof depends on
+
+- [Freivalds Trial](../basic/freivalds-trial.md)
+- [Freivalds Trial time](../basic/freivalds-trial-time.md)
 
 ## Sources
 

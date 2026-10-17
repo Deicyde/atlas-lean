@@ -11,7 +11,7 @@ A partial isomorphism gives rise to a birational map.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Birational Map](birational-map.md)
 
 ## Sources
 

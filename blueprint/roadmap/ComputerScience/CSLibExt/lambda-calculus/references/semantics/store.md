@@ -13,6 +13,10 @@ A store maps each location `l < μ.length` to the term `μ[l]`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Term](../syntax/term.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Languages.LambdaCalculus.References.Semantics](../../../../../../sources/v2/CSLibExt.md)

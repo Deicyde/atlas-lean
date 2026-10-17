@@ -12,7 +12,9 @@ Transposition reverses directed edge membership.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](directed-adjacency.md)
+- [Edge](edge.md)
+- [Transpose](transpose.md)
 
 ## Sources
 

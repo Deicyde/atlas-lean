@@ -12,7 +12,9 @@ Successful distance-guided reconstruction produces a path of the labelled length
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Edge](../../directed-adjacency-2/part-01/edge.md)
+- [Path From Distances](path-from-distances.md)
 
 ## Sources
 

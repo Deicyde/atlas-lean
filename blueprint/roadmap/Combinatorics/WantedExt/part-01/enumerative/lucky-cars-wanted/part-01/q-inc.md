@@ -14,6 +14,11 @@ functions in which car `i` prefers spot `j` and is lucky.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Lucky Car](is-lucky-car.md)
+- [Is Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.LuckyCarsWanted](../../../../../../../sources/v2/WantedExt.md)

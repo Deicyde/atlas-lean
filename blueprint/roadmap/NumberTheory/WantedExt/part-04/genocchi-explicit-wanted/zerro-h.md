@@ -14,6 +14,10 @@ The paper's auxiliary sum
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Zerro U](zerro-u.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GenocchiExplicitWanted](../../../../../sources/v2/WantedExt.md)

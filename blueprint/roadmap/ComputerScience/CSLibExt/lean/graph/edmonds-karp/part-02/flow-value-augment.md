@@ -12,7 +12,14 @@ Augmentation raises source flow value by exactly the supplied amount.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](../part-01/flow.md)
+- [Augment](augment.md)
+- [Flow Value](../part-01/flow-value.md)
+
+## Proof depends on
+
+- [Edge Delta](../part-01/edge-delta.md)
+- [Local Delta](../part-01/local-delta.md)
 
 ## Sources
 

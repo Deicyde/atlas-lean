@@ -13,7 +13,13 @@ resolvent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNFClause](../basic/cnfclause.md)
+- [Satisfies](../semantics/satisfies-2.md)
+- [Resolvent](resolvent.md)
+
+## Proof depends on
+
+- [Satisfies](../semantics/satisfies.md)
 
 ## Sources
 

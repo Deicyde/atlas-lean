@@ -13,7 +13,8 @@ lies on the segment.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Direction](direction.md)
+- [On Segment](on-segment.md)
 
 ## Sources
 

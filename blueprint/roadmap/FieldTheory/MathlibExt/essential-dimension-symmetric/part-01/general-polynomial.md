@@ -12,7 +12,12 @@ coefficient field, written in the Vieta sum form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [General Base Field](general-base-field.md)
+- [Roots Field](roots-field.md)
+
+## Proof depends on
+
+- [Coeff Nat](coeff-nat.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ resource it holds.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alloc State](alloc-state.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ endpoint lies on the other segment.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Direction](direction.md)
+
+## Proof depends on
+
+- [Straddles](straddles.md)
+- [Param mem](param-mem.md)
+- [Sub ne zero](sub-ne-zero.md)
+- [Eq param of direction eq zero](eq-param-of-direction-eq-zero.md)
 
 ## Sources
 

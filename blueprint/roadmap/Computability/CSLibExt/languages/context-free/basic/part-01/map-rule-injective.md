@@ -13,7 +13,12 @@ productions, so renamed rule sets can be formed with `Finset.map`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Map Rule](map-rule.md)
+
+## Proof depends on
+
+- [Map Symbol](map-symbol.md)
+- [Map Symbol injective](map-symbol-injective.md)
 
 ## Sources
 

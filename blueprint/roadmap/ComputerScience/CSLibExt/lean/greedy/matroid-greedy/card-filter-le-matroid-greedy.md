@@ -13,7 +13,13 @@ independent set drawn from the input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matroid Greedy](matroid-greedy.md)
+
+## Proof depends on
+
+- [Matroid Greedy Scan](matroid-greedy-scan.md)
+- [Matroid Greedy Scan append](matroid-greedy-scan-append.md)
+- [Matroid Greedy Scan spec](matroid-greedy-scan-spec.md)
 
 ## Sources
 

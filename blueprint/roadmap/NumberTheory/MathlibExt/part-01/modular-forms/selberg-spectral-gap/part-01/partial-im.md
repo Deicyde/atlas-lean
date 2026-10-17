@@ -14,6 +14,10 @@ Fréchet derivative of the zero extension applied to the vector `I`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ext](ext.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ModularForms.SelbergSpectralGap](../../../../../../../sources/v2/MathlibExt.md)

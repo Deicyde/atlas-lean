@@ -12,7 +12,11 @@ Membership in a grammar's language, through yields.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Yields](yields.md)
+
+## Proof depends on
+
+- [Yields iff derives](yields-iff-derives.md)
 
 ## Sources
 

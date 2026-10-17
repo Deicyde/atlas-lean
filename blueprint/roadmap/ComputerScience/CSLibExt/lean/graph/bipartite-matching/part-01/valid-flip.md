@@ -12,7 +12,13 @@ Flipping an alternating path from `pathTo` gives a matching.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alt Path](alt-path.md)
+- [Valid](valid.md)
+- [Flip](flip.md)
+
+## Proof depends on
+
+- [Free](free.md)
 
 ## Sources
 

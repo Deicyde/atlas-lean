@@ -13,6 +13,7 @@ The underlying partition of `ofPartition p` is `p`.
 
 ## Depends on
 
+- [Overpartition](overpartition.md)
 - [Of Partition](of-partition.md)
 
 ## Sources

@@ -12,7 +12,13 @@ Karatsuba's cost on `n` digits is at most `3^(⌈log₂ n⌉ + 1)`, for every in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Karatsuba](karatsuba.md)
+
+## Proof depends on
+
+- [Karatsuba Cost](karatsuba-cost.md)
+- [Karatsuba Cost le](karatsuba-cost-le.md)
+- [Karatsuba time](karatsuba-time.md)
 
 ## Sources
 

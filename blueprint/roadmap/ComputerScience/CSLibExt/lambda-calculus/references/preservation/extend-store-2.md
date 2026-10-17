@@ -13,7 +13,16 @@ an extended store typing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Type](../typing/has-type.md)
+- [Store](../semantics/store.md)
+- [Store Typed](../typing/store-typed.md)
+- [Term](../syntax/term.md)
+- [Value](../syntax/value.md)
+- [Ty](../syntax/ty.md)
+
+## Proof depends on
+
+- [Extend Store](extend-store.md)
 
 ## Sources
 

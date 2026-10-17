@@ -13,7 +13,7 @@ two forms.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Yields](yields.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ The complete padded executor has an `n*log2 n + n` bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Linear](../convolution/fft-linear.md)
+
+## Proof depends on
+
+- [Fft Linear time add two](fft-linear-time-add-two.md)
 
 ## Sources
 

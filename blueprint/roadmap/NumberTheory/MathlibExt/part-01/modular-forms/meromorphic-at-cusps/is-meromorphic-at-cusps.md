@@ -13,10 +13,6 @@ infinity.
 
 This node has no prerequisites.
 
-## Proof depends on
-
-- [Is Meromorphic At Infty](is-meromorphic-at-infty.md)
-
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ModularForms.MeromorphicAtCusps](../../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,15 @@ unit-labelled LTS.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](directed-adjacency.md)
+- [Reachable](reachable.md)
+- [To LTS](to-lts.md)
+
+## Proof depends on
+
+- [Edge](edge.md)
+- [Walk](walk.md)
+- [Reachable iff exists walk](reachable-iff-exists-walk.md)
 
 ## Sources
 

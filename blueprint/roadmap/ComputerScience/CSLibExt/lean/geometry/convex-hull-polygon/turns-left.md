@@ -13,6 +13,10 @@ Every consecutive triple turns strictly left.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cross](../segment-intersection/cross.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Geometry.ConvexHullPolygon](../../../../../../sources/v2/CSLibExt.md)

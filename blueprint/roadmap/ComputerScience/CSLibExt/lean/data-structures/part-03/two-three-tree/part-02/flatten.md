@@ -16,6 +16,7 @@ The inorder traversal of a root's tree.
 
 ## Proof depends on
 
+- [Tree](../part-01/tree.md)
 - [Flatten](../part-01/flatten.md)
 
 ## Sources

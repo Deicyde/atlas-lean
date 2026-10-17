@@ -14,6 +14,10 @@ A run halts iff some iterate is a configuration without a successor.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists iterate eq of reaches](../to-tm2/part-02/exists-iterate-eq-of-reaches.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.TuringMachine.Recursive.Halts](../../../../../../sources/v2/MathlibExt.md)

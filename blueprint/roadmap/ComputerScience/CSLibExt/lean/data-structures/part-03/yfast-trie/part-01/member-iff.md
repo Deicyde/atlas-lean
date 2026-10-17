@@ -25,6 +25,7 @@ Under `Valid`, representative lookup plus group scan decides membership in
 - [Find Group](find-group.md)
 - [Mem contents iff](mem-contents-iff.md)
 - [Rep Ge](rep-ge.md)
+- [XFast Trie](../../xfast-trie/part-01/xfast-trie.md)
 - [Valid](../../xfast-trie/part-01/valid.md)
 - [Member](../../xfast-trie/part-01/member.md)
 - [Member iff](../../xfast-trie/part-01/member-iff.md)

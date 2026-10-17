@@ -12,7 +12,12 @@ The language `a^n b^n` is context-free.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eq Pow Lang](eq-pow-lang.md)
+
+## Proof depends on
+
+- [Eq Pow Grammar](eq-pow-grammar.md)
+- [Eq Pow Grammar language](eq-pow-grammar-language.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ first entry `≥ x`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lower Bound](../../search/lower-bound/lower-bound.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.PatienceSorting](../../../../../../sources/v2/CSLibExt.md)

@@ -13,11 +13,10 @@ The lattice discriminant of a full lattice witnessed by a basis is principal.
 
 ## Depends on
 
-- [Lattice Discriminant](lattice-discriminant.md)
+- [Lattice Discriminant Set](lattice-discriminant-set.md)
 
 ## Proof depends on
 
-- [Lattice Discriminant Set](lattice-discriminant-set.md)
 - [Lattice Discriminant le span singleton](lattice-discriminant-le-span-singleton.md)
 
 ## Sources

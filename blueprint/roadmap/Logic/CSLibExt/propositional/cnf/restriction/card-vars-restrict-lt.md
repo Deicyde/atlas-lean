@@ -12,7 +12,13 @@ Restricting an occurring variable strictly decreases the number of variables.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+- [Restrict](restrict-2.md)
+- [Vars](vars-2.md)
+
+## Proof depends on
+
+- [Vars restrict ssubset](vars-restrict-ssubset.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ symbols.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Map Symbol](map-symbol.md)
 
 ## Sources
 

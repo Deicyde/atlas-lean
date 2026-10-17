@@ -13,6 +13,11 @@ The source-reported equivalence between the continuous constant and Erdős Probl
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [C₁ᵦ](../../../../MathlibExt/part-04/erdos-minimum-overlap-constant/part-01/c.md)
+- [Min Overlap Quotient](../../../../MathlibExt/part-04/erdos-minimum-overlap-constant/part-01/min-overlap-quotient.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosMinimumOverlapConstantWanted](../../../../../../sources/v2/WantedExt.md)

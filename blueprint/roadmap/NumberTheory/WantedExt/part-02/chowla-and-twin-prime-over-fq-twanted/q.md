@@ -18,6 +18,7 @@ This node has no prerequisites.
 
 - [Indicator](indicator.md)
 - [Primes](primes.md)
+- [Ring Norm](ring-norm.md)
 
 ## Sources
 

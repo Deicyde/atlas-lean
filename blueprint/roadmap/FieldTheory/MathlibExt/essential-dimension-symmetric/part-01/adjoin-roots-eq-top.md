@@ -12,7 +12,12 @@ The roots generate the function field over `ℂ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Root](root.md)
+- [Roots Field](roots-field.md)
+
+## Proof depends on
+
+- [Algebra Map mem adjoin roots](algebra-map-mem-adjoin-roots.md)
 
 ## Sources
 

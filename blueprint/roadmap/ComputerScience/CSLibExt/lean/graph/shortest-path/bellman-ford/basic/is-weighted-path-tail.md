@@ -12,7 +12,8 @@ Removing the first edge leaves a weighted path from that edge's target.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge](edge.md)
+- [Is Weighted Path](is-weighted-path.md)
 
 ## Sources
 

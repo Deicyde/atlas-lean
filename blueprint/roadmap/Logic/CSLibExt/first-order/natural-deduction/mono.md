@@ -12,7 +12,16 @@ lean: Cslib.Logic.FOL.Derivable.mono
 
 ## Depends on
 
-This node has no prerequisites.
+- [Natural deduction](derivable.md)
+
+## Proof depends on
+
+- [Rename](rename.md)
+- [Instantiate](../syntax/instantiate.md)
+- [Instantiate Term](../syntax/instantiate-term.md)
+- [Rename](../syntax/rename.md)
+- [Rename Term](../syntax/rename-term.md)
+- [Rename congr](../syntax/rename-congr.md)
 
 ## Sources
 

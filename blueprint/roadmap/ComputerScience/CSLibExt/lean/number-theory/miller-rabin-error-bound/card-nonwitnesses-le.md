@@ -13,7 +13,12 @@ bases `1, …, n - 1`, that is, at least `(n - 1) / 2` witnesses.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonwitnesses](nonwitnesses.md)
+
+## Proof depends on
+
+- [Card nonwitnesses le of carmichael](card-nonwitnesses-le-of-carmichael.md)
+- [Card nonwitnesses le of pow ne one](card-nonwitnesses-le-of-pow-ne-one.md)
 
 ## Sources
 

@@ -13,9 +13,7 @@ Subtracting the pole part from the zero part recovers the divisor.
 
 ## Depends on
 
-- [Curve Divisor](../divisor/curve-divisor.md)
-- [Div Poles](div-poles.md)
-- [Div Zeros](div-zeros.md)
+This node has no prerequisites.
 
 ## Sources
 

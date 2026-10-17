@@ -12,7 +12,14 @@ lean: Cslib.Unification.Subst.subst_single_of_not_mem
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single](single.md)
+- [Term](term.md)
+- [Subst](subst-2.md)
+- [Vars](vars.md)
+
+## Proof depends on
+
+- [Subst congr](subst-congr.md)
 
 ## Sources
 

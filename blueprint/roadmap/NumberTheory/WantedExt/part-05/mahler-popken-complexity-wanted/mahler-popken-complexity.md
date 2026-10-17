@@ -17,6 +17,12 @@ the infimum is attained.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mahler Popken Expr](mahler-popken-expr.md)
+- [Count](count.md)
+- [Eval](eval.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.MahlerPopkenComplexityWanted](../../../../../sources/v2/WantedExt.md)

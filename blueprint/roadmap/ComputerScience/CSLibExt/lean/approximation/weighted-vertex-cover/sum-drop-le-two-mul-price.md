@@ -13,7 +13,7 @@ its two endpoints.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pricing Scan](pricing-scan.md)
 
 ## Sources
 

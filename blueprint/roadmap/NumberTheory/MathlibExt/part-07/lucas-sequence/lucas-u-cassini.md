@@ -13,7 +13,12 @@ Cassini's identity for `lucasU`:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Sequence Params](lucas-sequence-params.md)
+- [Lucas U](lucas-u.md)
+
+## Proof depends on
+
+- [Lucas U add two](lucas-u-add-two.md)
 
 ## Sources
 

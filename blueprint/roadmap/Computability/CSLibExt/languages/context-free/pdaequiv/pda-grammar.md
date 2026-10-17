@@ -14,7 +14,12 @@ in `T₀` (plus `ε`-transitions).
 
 ## Depends on
 
-This node has no prerequisites.
+- [PDA](../../../automata/pda/basic/pda.md)
+
+## Proof depends on
+
+- [State Lists](state-lists.md)
+- [Step Rule](step-rule.md)
 
 ## Sources
 

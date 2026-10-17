@@ -16,6 +16,10 @@ CLRS's `RANDOM(1, n - 1)` does; only then is a *composite* answer guaranteed cor
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Witness](witness.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.NumberTheory.MillerRabin](../../../../../../sources/v2/CSLibExt.md)

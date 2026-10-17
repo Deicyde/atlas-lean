@@ -13,6 +13,10 @@ The infimum of positive finite comparator variance factors; an empty family give
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Admissible Constant](is-admissible-constant.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.ConvexSubGaussianComparison](../../../../../sources/v2/MathlibExt.md)

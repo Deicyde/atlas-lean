@@ -12,7 +12,7 @@ The other bound variables shift down by one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Instantiate Term](instantiate-term.md)
 
 ## Sources
 

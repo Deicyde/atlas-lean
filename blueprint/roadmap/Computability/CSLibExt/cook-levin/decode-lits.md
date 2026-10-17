@@ -11,7 +11,7 @@ Decode exactly `n` literals and return the unconsumed suffix.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Proof depends on
 

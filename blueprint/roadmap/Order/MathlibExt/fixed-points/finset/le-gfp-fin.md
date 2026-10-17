@@ -13,7 +13,7 @@ contained in every iterate from `Finset.univ`, by induction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gfp Fin](gfp-fin.md)
 
 ## Sources
 

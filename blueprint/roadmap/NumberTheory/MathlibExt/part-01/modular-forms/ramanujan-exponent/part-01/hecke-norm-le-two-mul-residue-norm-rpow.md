@@ -13,7 +13,12 @@ The Satake Hecke bound at an actual finite place, with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Satake Pair](is-satake-pair.md)
+- [Residue Norm](../../../number-field/part-01/place/residue-norm.md)
+
+## Proof depends on
+
+- [Hecke norm le two mul rpow of is Satake Pair](hecke-norm-le-two-mul-rpow-of-is-satake.md)
 
 ## Sources
 

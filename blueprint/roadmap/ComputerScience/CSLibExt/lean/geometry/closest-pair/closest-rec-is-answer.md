@@ -25,7 +25,19 @@ theorem stripScan_lower (δ : 𝕜) (ys : List (𝕜 × 𝕜)) (hs : ys.Pairwise
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Answer](is-answer.md)
+- [Closest Rec](closest-rec.md)
+
+## Proof depends on
+
+- [Brute Min](brute-min.md)
+- [Dist2](dist2.md)
+- [Min Dist From](min-dist-from.md)
+- [Min Dist From spec](min-dist-from-spec.md)
+- [Scan From](scan-from.md)
+- [Strip Scan](strip-scan.md)
+- [Strip Scan lower](strip-scan-lower.md)
+- [Omin](../../data-structures/part-03/sparse-table/omin.md)
 
 ## Sources
 

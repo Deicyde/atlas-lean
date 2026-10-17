@@ -11,7 +11,11 @@ The projection `ℤ[ℕ∪{∞}] ⟶ P`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [P](p.md)
+
+## Proof depends on
+
+- [P map](p-map.md)
 
 ## Sources
 

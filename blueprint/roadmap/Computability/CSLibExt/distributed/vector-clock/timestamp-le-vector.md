@@ -12,7 +12,14 @@ Each process's vector dominates the timestamps of its earlier events.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](../lamport-clock/event.md)
+- [Run](run.md)
+- [Timestamps](timestamps.md)
+
+## Proof depends on
+
+- [Clock Step](clock-step.md)
+- [Stamp](stamp.md)
 
 ## Sources
 

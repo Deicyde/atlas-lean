@@ -15,7 +15,17 @@ longest one: after `c` the two blocks have no common next bit). The bits of `c` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distinct4](distinct4.md)
+- [Ends Bit Block](ends-bit-block.md)
+- [Flag](../program/part-01/flag.md)
+- [Is Bit Block](is-bit-block.md)
+- [Run](../program/part-01/run.md)
+- [Cmp B](cmp-b.md)
+
+## Proof depends on
+
+- [Cmp B last](cmp-b-last.md)
+- [Cmp B prefix](cmp-b-prefix.md)
 
 ## Sources
 

@@ -12,7 +12,15 @@ Elementary upper bound from the definition: `C₆₁ ≤ 1/2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Selberg Constant](selberg-constant.md)
+
+## Proof depends on
+
+- [Is Congruence Subgroup](is-congruence-subgroup.md)
+- [Is Eigenvalue](is-eigenvalue.md)
+- [Exceptional Gap](exceptional-gap.md)
+- [Exceptional Gaps](exceptional-gaps.md)
+- [Is Congruence Subgroup top](is-congruence-subgroup-top.md)
 
 ## Sources
 

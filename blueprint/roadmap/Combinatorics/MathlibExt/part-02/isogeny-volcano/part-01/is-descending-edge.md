@@ -10,7 +10,7 @@ Descending edge from `v` down to `w`.
 
 ## Depends on
 
-- [Isogeny Volcano](isogeny-volcano.md)
+This node has no prerequisites.
 
 ## Sources
 

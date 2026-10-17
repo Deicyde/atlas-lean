@@ -12,7 +12,15 @@ Reachability after erasure implies reachability in the original graph.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Reachable](../../directed-adjacency-2/part-01/reachable.md)
+- [Erase Edge](erase-edge.md)
+
+## Proof depends on
+
+- [Walk](../../directed-adjacency-2/part-01/walk.md)
+- [Reachable iff exists walk](../../directed-adjacency-2/part-01/reachable-iff-exists-walk.md)
+- [Walk erase Edge imp](walk-erase-edge-imp.md)
 
 ## Sources
 

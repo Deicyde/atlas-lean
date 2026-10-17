@@ -15,6 +15,10 @@ with the least cost per newly covered element, remove it from `U`, repeat; stop 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Best Ratio Set](best-ratio-set.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Approximation.WeightedSetCover](../../../../../../sources/v2/CSLibExt.md)

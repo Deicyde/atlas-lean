@@ -12,7 +12,15 @@ The exponent of a family vanishes exactly in the tempered case.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generalized Ramanujan For](generalized-ramanujan-for.md)
+- [Local Exponent Family](local-exponent-family.md)
+- [Ramanujan Exponent Of](ramanujan-exponent-of.md)
+
+## Proof depends on
+
+- [Exponent Set](exponent-set.md)
+- [Exponent le ramanujan Exponent Of](exponent-le-ramanujan-exponent-of.md)
+- [Ramanujan Exponent Of le of is Admissible](ramanujan-exponent-of-le-of-is-admissibl.md)
 
 ## Sources
 

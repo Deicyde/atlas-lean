@@ -18,6 +18,7 @@ splits. Insertion ignores an already-present key.
 ## Proof depends on
 
 - [To Root](to-root.md)
+- [Tree](../part-01/tree.md)
 - [Ins](../part-01/ins.md)
 
 ## Sources

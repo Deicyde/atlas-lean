@@ -13,7 +13,13 @@ alternating by the empty condition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dart Diagram](dart-diagram.md)
+
+## Proof depends on
+
+- [Dart](dart.md)
+- [Is Over](is-over.md)
+- [Next](next.md)
 
 ## Sources
 

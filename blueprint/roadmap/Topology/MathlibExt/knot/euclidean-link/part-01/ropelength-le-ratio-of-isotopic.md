@@ -13,7 +13,10 @@ ropelength.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](parametrized-link.md)
+- [Isotopic](isotopic-2.md)
+- [Ropelength](ropelength.md)
+- [Ropelength Ratio](ropelength-ratio.md)
 
 ## Sources
 

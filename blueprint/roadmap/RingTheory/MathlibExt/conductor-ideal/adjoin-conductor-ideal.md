@@ -14,7 +14,7 @@ conductor.
 
 ## Depends on
 
-- [Conductor Ideal](conductor-ideal.md)
+This node has no prerequisites.
 
 ## Sources
 

@@ -16,7 +16,18 @@ are disjoint.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distinct On](distinct-on.md)
+- [Is Cut](../part-01/is-cut.md)
+- [Is Min Cut](../part-01/is-min-cut.md)
+- [State](../part-01/state.md)
+- [Valid](../part-01/valid.md)
+- [Cut Size](../part-01/cut-size.md)
+
+## Proof depends on
+
+- [The survival events of distinct cuts are disjoint](sum-survive-prob-le-one.md)
+- [Survive Prob](survive-prob.md)
+- [Each minimum cut survives with probability at least `2 / (n (n - 1))`](survive-prob-ge.md)
 
 ## Sources
 

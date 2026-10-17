@@ -12,7 +12,13 @@ The brute force computes all `n (n - 1) / 2` distances.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Brute Min](brute-min.md)
+
+## Proof depends on
+
+- [Dist2](dist2.md)
+- [Min Dist From](min-dist-from.md)
+- [Omin](../../data-structures/part-03/sparse-table/omin.md)
 
 ## Sources
 

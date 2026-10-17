@@ -15,7 +15,12 @@ definition of one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Local Exponent Family](local-exponent-family.md)
+
+## Proof depends on
+
+- [Selberg Witness](selberg-witness.md)
+- [Selberg Gap](selberg-gap.md)
 
 ## Sources
 

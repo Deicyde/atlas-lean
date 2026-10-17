@@ -15,6 +15,7 @@ Every root's tree is balanced.
 
 - [Balanced](../part-01/balanced.md)
 - [Root](root.md)
+- [Tree](../part-01/tree.md)
 
 ## Proof depends on
 

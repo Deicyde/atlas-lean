@@ -18,6 +18,7 @@ Looking up any key in the empty table returns `none`.
 
 ## Proof depends on
 
+- [Open Addressing](open-addressing.md)
 - [Lookup Aux](lookup-aux.md)
 
 ## Sources

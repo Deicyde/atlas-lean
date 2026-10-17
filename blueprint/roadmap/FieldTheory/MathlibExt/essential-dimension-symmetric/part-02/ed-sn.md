@@ -15,6 +15,12 @@ of a descent parameter field.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Descent](is-descent.md)
+- [Roots Field](../part-01/roots-field.md)
+- [Trans Deg Nat](../part-01/trans-deg-nat.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.FieldTheory.EssentialDimensionSymmetric](../../../../../sources/v2/MathlibExt.md)

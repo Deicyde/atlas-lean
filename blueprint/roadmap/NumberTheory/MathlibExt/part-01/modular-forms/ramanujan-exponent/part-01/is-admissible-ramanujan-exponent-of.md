@@ -12,7 +12,13 @@ The family's Ramanujan exponent is itself admissible.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible](is-admissible.md)
+- [Local Exponent Family](local-exponent-family.md)
+- [Ramanujan Exponent Of](ramanujan-exponent-of.md)
+
+## Proof depends on
+
+- [Exponent le ramanujan Exponent Of](exponent-le-ramanujan-exponent-of.md)
 
 ## Sources
 

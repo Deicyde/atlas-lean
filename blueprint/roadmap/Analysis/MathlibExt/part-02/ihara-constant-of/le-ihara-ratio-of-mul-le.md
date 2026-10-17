@@ -12,7 +12,7 @@ A pointwise multiplicative lower bound controls one normalized ratio.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ihara Ratio](ihara-ratio.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ orientation-preserving reparametrization of the source circle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Knot](parametrized-knot.md)
+
+## Proof depends on
+
+- [R3](../../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Ambient Isotopy](ambient-isotopy.md)
+- [Circle Reparam](circle-reparam.md)
 
 ## Sources
 

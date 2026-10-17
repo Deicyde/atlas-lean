@@ -11,7 +11,12 @@ Evaluate a scheme: free variable `x` becomes `f x` and bound variable `i` become
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scheme](scheme.md)
+- [Ty](ty.md)
+
+## Proof depends on
+
+- [Term](../../../../unification/basic/part-01/term.md)
 
 ## Sources
 

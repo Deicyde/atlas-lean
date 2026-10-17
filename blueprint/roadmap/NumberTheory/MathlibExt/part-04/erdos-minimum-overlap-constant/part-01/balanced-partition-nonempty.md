@@ -12,7 +12,7 @@ Balanced partitions exist at every size: split `Icc 1 (2n)` in half.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Overlap](max-overlap.md)
 
 ## Sources
 

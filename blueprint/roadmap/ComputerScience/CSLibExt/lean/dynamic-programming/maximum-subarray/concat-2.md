@@ -13,7 +13,12 @@ run ending at `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Max Subarray Sum](is-max-subarray-sum.md)
+- [Is Max Suffix Sum](is-max-suffix-sum.md)
+
+## Proof depends on
+
+- [Concat](concat.md)
 
 ## Sources
 

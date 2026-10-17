@@ -12,7 +12,14 @@ Each process's vector is `0` or the timestamp of one of its events.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](../lamport-clock/event.md)
+- [Run](run.md)
+- [Timestamps](timestamps.md)
+
+## Proof depends on
+
+- [Clock Step](clock-step.md)
+- [Stamp](stamp.md)
 
 ## Sources
 

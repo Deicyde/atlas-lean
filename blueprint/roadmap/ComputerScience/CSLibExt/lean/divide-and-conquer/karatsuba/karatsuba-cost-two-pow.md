@@ -13,7 +13,7 @@ At `n = 2^k` digits the cost is exactly `3^(k+1) - 2^(k+1)`, that is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Karatsuba Cost](karatsuba-cost.md)
 
 ## Sources
 

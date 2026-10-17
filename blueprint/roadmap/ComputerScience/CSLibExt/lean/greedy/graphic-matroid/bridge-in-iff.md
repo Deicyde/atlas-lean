@@ -12,7 +12,11 @@ What `bridgeIn` tests.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bridge In](bridge-in.md)
+
+## Proof depends on
+
+- [Chosen](chosen.md)
 
 ## Sources
 

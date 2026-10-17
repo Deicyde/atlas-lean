@@ -14,6 +14,10 @@ with exactly `k` ones and at most `j` ascents.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Word Ascents](word-ascents.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.RascalNumbersWanted](../../../../../../../sources/v2/WantedExt.md)

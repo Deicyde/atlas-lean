@@ -13,6 +13,11 @@ Flip all the paths of a phase at once; `none` if the phase found none.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Flip](../part-01/flip.md)
+- [Phase](phase.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Graph.BipartiteMatching](../../../../../../../sources/v2/CSLibExt.md)

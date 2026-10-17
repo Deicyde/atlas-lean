@@ -13,7 +13,7 @@ a pivot or precedes some pivot.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Young Retained](is-young-retained.md)
 
 ## Sources
 

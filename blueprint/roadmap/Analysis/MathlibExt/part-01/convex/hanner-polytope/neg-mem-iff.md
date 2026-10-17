@@ -12,7 +12,11 @@ Membership in a Hanner polytope is invariant under negation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Hanner Polytope](is-hanner-polytope.md)
+
+## Proof depends on
+
+- [Neg eq self](neg-eq-self.md)
 
 ## Sources
 

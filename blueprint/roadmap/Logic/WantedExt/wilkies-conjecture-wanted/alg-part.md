@@ -15,6 +15,10 @@ instead of positive-dimensional, which is equivalent in this setting.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Semialgebraic](is-semialgebraic.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.ModelTheory.WilkiesConjectureWanted](../../../../sources/v2/WantedExt.md)

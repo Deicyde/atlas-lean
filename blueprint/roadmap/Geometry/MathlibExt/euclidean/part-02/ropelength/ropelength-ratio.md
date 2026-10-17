@@ -14,7 +14,12 @@ over representatives of the type and is not defined here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R3](r3.md)
+
+## Proof depends on
+
+- [Contour Length](contour-length.md)
+- [Thickness](thickness.md)
 
 ## Sources
 

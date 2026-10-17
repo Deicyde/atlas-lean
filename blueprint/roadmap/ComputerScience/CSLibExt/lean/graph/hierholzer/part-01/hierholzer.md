@@ -12,7 +12,12 @@ exists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Edge List](edge-list.md)
+- [Visit](visit.md)
 
 ## Sources
 

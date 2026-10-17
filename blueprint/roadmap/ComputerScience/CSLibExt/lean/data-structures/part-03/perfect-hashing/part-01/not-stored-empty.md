@@ -15,6 +15,10 @@ Nothing is stored in the empty table.
 - [Stored](stored.md)
 - [Empty](empty.md)
 
+## Proof depends on
+
+- [Perfect Hashing](perfect-hashing.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.PerfectHashing](../../../../../../../../sources/v2/CSLibExt.md)

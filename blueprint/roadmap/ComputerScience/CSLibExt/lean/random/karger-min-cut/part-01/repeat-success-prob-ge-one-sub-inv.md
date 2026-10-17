@@ -14,7 +14,14 @@ runs).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Min Cut](is-min-cut.md)
+- [State](state.md)
+- [Valid](valid.md)
+- [Repeat Success Prob](repeat-success-prob.md)
+
+## Proof depends on
+
+- [Amplification with high probability](repeat-success-prob-ge.md)
 
 ## Sources
 

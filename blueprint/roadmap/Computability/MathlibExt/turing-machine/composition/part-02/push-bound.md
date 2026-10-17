@@ -13,6 +13,10 @@ Per-step push budget of a machine.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pushes](pushes.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.TuringMachine.Composition](../../../../../../sources/v2/MathlibExt.md)

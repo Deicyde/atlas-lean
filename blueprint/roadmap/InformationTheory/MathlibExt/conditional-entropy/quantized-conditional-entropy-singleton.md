@@ -12,7 +12,7 @@ A singleton observation has zero conditional entropy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Quantized Conditional Entropy](quantized-conditional-entropy.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ straight through the next crossing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dart Diagram](dart-diagram.md)
+- [Dart](dart.md)
+
+## Proof depends on
+
+- [Opposite](opposite.md)
 
 ## Sources
 

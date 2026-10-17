@@ -13,6 +13,10 @@ lean: Cslib.Logic.FOL.Provable
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Natural deduction](derivable.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Logics.FirstOrder.NaturalDeduction](../../../../../sources/v2/CSLibExt.md)

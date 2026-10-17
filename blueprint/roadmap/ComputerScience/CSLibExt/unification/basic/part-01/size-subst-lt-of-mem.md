@@ -14,7 +14,11 @@ substituted copy of the variable, so `var x = t` has no unifier when `x` occurs 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subst](subst.md)
+- [Term](term.md)
+- [Size](size.md)
+- [Subst](subst-2.md)
+- [Vars](vars.md)
 
 ## Sources
 

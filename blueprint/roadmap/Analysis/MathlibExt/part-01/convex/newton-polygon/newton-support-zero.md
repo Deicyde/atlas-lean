@@ -13,11 +13,7 @@ Newton support of zero is empty.
 
 ## Depends on
 
-- [Newton Support](newton-support.md)
-
-## Proof depends on
-
-- [Exponent To Real](exponent-to-real.md)
+This node has no prerequisites.
 
 ## Sources
 

@@ -13,6 +13,11 @@ The source's uniform `o(1)` partition statement and largest-constant assertion.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [C₁ᵦ](../../../../MathlibExt/part-04/erdos-minimum-overlap-constant/part-01/c.md)
+- [Discrete Universal Lower Bound](../../../../MathlibExt/part-04/erdos-minimum-overlap-constant/part-01/discrete-universal-lower-bound.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosMinimumOverlapConstantWanted](../../../../../../sources/v2/WantedExt.md)

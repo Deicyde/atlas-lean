@@ -13,7 +13,8 @@ built using exactly `complexityL l n` copies.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Can Build](can-build.md)
+- [Complexity L](complexity-l.md)
 
 ## Sources
 

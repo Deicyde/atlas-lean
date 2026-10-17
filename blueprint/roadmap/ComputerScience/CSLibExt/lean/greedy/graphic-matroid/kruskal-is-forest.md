@@ -13,7 +13,15 @@ graphic matroid returns a forest of `G`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Forest Set](is-forest-set.md)
+- [Forest Oracle](forest-oracle.md)
+- [Matroid Greedy](../matroid-greedy/matroid-greedy.md)
+
+## Proof depends on
+
+- [Forest Oracle iff](forest-oracle-iff.md)
+- [Graphic Matroid](graphic-matroid.md)
+- [Matroid Greedy indep](../matroid-greedy/matroid-greedy-indep.md)
 
 ## Sources
 

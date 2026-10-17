@@ -13,7 +13,9 @@ timestamps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](../lamport-clock/event.md)
+- [Run](run.md)
+- [Timestamps](timestamps.md)
 
 ## Sources
 

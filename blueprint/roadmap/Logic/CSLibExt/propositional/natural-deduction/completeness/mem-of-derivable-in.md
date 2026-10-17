@@ -12,7 +12,11 @@ A maximal consistent set is closed under `T`-derivability from its finite subset
 
 ## Depends on
 
-This node has no prerequisites.
+- [Consistent With](consistent-with.md)
+
+## Proof depends on
+
+- [Exists refutation](exists-refutation.md)
 
 ## Sources
 

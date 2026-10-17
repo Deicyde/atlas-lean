@@ -16,7 +16,15 @@ noncomputable def stepC (c : CodedCfg tm) : Option (CodedCfg tm) :=
 
 ## Depends on
 
-This node has no prerequisites.
+- [Primcodable Arrow](../part-01/primcodable-arrow.md)
+- [Primcodableσ](../part-01/primcodable-2.md)
+- [Read Top](../part-01/read-top.md)
+
+## Proof depends on
+
+- [Decode](../part-01/decode.md)
+- [Primrec₂ of eventually const](../part-01/primrec-of-eventually-const-2.md)
+- [Sym List](../part-01/sym-list.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Every admissible real bound is below the extended-real constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible](is-admissible.md)
+- [Schur Siegel Smyth Constant](schur-siegel-smyth-constant.md)
 
 ## Sources
 

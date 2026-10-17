@@ -13,7 +13,7 @@ division.
 
 ## Depends on
 
-- [Real Cyclotomic Polynomial](../real-cyclotomic-polynomial.md)
+This node has no prerequisites.
 
 ## Sources
 

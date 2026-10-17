@@ -12,7 +12,8 @@ The label of a restricted edge is its ambient label.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Labeled Digraph](labeled-digraph.md)
+- [Restrict](restrict.md)
 
 ## Sources
 

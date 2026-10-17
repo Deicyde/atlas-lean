@@ -12,7 +12,16 @@ variable `inr α`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ctx](ctx.md)
+- [Scheme](scheme.md)
+- [Ty](ty.md)
+
+## Proof depends on
+
+- [Ftv](ftv.md)
+- [To Scheme](to-scheme.md)
+- [Term](../../../../unification/basic/part-01/term.md)
+- [Subst](../../../../unification/basic/part-01/subst-2.md)
 
 ## Sources
 

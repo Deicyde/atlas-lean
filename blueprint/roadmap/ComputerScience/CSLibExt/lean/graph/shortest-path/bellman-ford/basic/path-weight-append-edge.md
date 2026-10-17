@@ -12,7 +12,8 @@ Appending one edge adds exactly its integer weight.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge](edge.md)
+- [Path Weight](path-weight.md)
 
 ## Sources
 

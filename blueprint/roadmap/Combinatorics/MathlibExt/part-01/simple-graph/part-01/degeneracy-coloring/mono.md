@@ -12,7 +12,11 @@ Increasing the degree bound preserves degeneracy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Degenerate](../degeneracy/is-degenerate.md)
+
+## Proof depends on
+
+- [Mono](../degeneracy/mono.md)
 
 ## Sources
 

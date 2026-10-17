@@ -14,6 +14,10 @@ repdigits and `a ≥ n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Repdigit](is-repdigit.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.BalancingRepdigitWanted](../../../../../../sources/v2/WantedExt.md)

@@ -17,6 +17,11 @@ recorded model scope.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Congruence Subgroup](../../selberg-spectral-gap/part-01/is-congruence-subgroup.md)
+- [Is Eigenvalue](../../selberg-spectral-gap/part-01/is-eigenvalue.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ModularForms.RamanujanExponent](../../../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,11 @@ At most `|U| + 1` searches, each costing `|F|` plus the total size of the family
 
 ## Depends on
 
-This node has no prerequisites.
+- [Greedy Set Cover](greedy-set-cover.md)
+
+## Proof depends on
+
+- [Best Set](best-set.md)
 
 ## Sources
 

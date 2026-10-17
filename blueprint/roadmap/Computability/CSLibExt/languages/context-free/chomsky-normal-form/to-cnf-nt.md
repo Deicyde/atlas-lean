@@ -14,6 +14,10 @@ grammar: a terminal becomes its index in `grammarTerminals g`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Grammar Terminals](grammar-terminals.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.ChomskyNormalForm](../../../../../../sources/v2/CSLibExt.md)

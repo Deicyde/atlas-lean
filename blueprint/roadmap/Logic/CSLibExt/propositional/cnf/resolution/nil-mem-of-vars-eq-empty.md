@@ -12,7 +12,14 @@ A formula without variables is satisfiable unless it contains the empty clause.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+- [Vars](../restriction/vars-2.md)
+- [CNFClause](../basic/cnfclause.md)
+- [CNFSat](../basic/cnfsat.md)
+
+## Proof depends on
+
+- [Vars](../restriction/vars.md)
 
 ## Sources
 

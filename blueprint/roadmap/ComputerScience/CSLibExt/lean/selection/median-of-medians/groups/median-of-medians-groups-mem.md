@@ -12,7 +12,12 @@ Every returned group median is an occurrence from the original input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Median Of Medians Groups](median-of-medians-groups.md)
+
+## Proof depends on
+
+- [Insertion Sort](../../../sort/insertion-cost/insertion-sort.md)
+- [Insertion Sort perm](../../../sort/insertion-cost/insertion-sort-perm.md)
 
 ## Sources
 

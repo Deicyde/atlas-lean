@@ -12,7 +12,7 @@ send of a message received by the later event.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
 
 ## Sources
 

@@ -12,7 +12,15 @@ Transposition reverses reachability.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](directed-adjacency.md)
+- [Reachable](reachable.md)
+- [Transpose](transpose.md)
+
+## Proof depends on
+
+- [Walk](walk.md)
+- [Reachable iff exists walk](reachable-iff-exists-walk.md)
+- [Walk transpose iff](walk-transpose-iff.md)
 
 ## Sources
 

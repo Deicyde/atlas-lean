@@ -12,7 +12,8 @@ Searching a head catalog and the rest splits over the cons.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Count LT](../part-01/count-lt.md)
+- [Search All](../part-02/search-all.md)
 
 ## Sources
 

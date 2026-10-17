@@ -12,7 +12,12 @@ The lower median uses rank `(length - 1) / 2`, including even input lengths.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Median Of Medians](median-of-medians.md)
+
+## Proof depends on
+
+- [Median Of Medians correct](median-of-medians-correct.md)
+- [Median Of Medians exists](median-of-medians-exists.md)
 
 ## Sources
 

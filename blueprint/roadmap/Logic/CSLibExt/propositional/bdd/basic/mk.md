@@ -11,7 +11,7 @@ The node constructor that removes a redundant test.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](bdd.md)
 
 ## Sources
 

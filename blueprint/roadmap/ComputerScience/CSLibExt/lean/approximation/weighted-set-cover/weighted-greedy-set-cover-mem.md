@@ -26,7 +26,11 @@ decreasing_by exact card_sdiff_lt (bestRatioSet_spec _h).2.1
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Greedy Set Cover](weighted-greedy-set-cover.md)
+
+## Proof depends on
+
+- [Best Ratio Set](best-ratio-set.md)
 
 ## Sources
 

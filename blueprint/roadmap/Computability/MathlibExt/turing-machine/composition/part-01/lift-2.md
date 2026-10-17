@@ -11,7 +11,14 @@ Lift a statement of `M₂`; halting halts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CK](ck.md)
+- [CΓ](c.md)
+- [CΛ](c-2.md)
+- [Cσ](c-3.md)
+
+## Proof depends on
+
+- [X](x.md)
 
 ## Sources
 

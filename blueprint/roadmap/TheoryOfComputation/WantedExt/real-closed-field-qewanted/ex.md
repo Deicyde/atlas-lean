@@ -11,7 +11,11 @@ Existential quantification; binds de Bruijn index `0` in the body.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formula](formula.md)
+
+## Proof depends on
+
+- [Not](not.md)
 
 ## Sources
 

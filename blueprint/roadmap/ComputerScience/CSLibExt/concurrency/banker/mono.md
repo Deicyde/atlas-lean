@@ -12,7 +12,12 @@ More free resources keep a sequence safe.
 
 ## Depends on
 
-This node has no prerequisites.
+- [System](system.md)
+- [Safe Seq](safe-seq.md)
+
+## Proof depends on
+
+- [Need](need.md)
 
 ## Sources
 

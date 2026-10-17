@@ -13,6 +13,11 @@ The least-fixed-point operator as a continuous map.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lfp](lfp.md)
+- [Lfp ωScott Continuous](lfp-scott-continuous.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Order.OmegaCompletePartialOrder.ContinuousHom](../../../../../sources/v2/MathlibExt.md)

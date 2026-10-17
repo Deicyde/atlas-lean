@@ -12,7 +12,14 @@ Four directions and at most four `ON-SEGMENT` tests.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Segments Intersect](segments-intersect.md)
+
+## Proof depends on
+
+- [Straddles](straddles.md)
+- [Collinear Branch](collinear-branch.md)
+- [Direction](direction.md)
+- [On Segment](on-segment.md)
 
 ## Sources
 

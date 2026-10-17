@@ -11,7 +11,13 @@ The Euclidean point represented by a parameter point.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R3](../../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Parametrized Link](../../euclidean-link/part-01/parametrized-link.md)
+- [Param Point](param-point.md)
+
+## Proof depends on
+
+- [Parametrized Knot](../../euclidean-link/part-01/parametrized-knot.md)
 
 ## Sources
 

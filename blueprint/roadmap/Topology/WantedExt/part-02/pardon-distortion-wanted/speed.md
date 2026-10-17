@@ -11,7 +11,11 @@ The speed of a smooth knot with its given parametrization.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knot](../../part-01/conway-knot-shared/part-01/knot.md)
+
+## Proof depends on
+
+- [R3](../../part-01/conway-knot-shared/part-01/r3.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Append an input edge whose source is the endpoint of a weighted path.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge](edge.md)
+- [Is Weighted Path](is-weighted-path.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ nonterminal is reachable or productive.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Unit Output](../part-01/is-unit-output.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.Reduced](../../../../../../../sources/v2/CSLibExt.md)

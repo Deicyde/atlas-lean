@@ -12,7 +12,17 @@ Augmenting within every path-edge residual bound preserves feasibility.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](../part-01/flow.md)
+- [Is Feasible](../part-01/is-feasible.md)
+- [Augment](augment.md)
+- [Path Edges](../part-01/path-edges.md)
+- [Residual Amount](../part-01/residual-amount.md)
+
+## Proof depends on
+
+- [Edge Delta](../part-01/edge-delta.md)
+- [Flow Value](../part-01/flow-value.md)
+- [Local Delta](../part-01/local-delta.md)
 
 ## Sources
 

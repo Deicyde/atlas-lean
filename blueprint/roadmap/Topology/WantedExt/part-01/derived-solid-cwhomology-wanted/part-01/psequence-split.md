@@ -11,7 +11,14 @@ The short exact sequence `ℤ[∞] ⟶ ℤ[ℕ∪{∞}] ⟶ P` splits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PSequence](psequence.md)
+
+## Proof depends on
+
+- [PSequence exact](psequence-exact.md)
+- [P map](p-map.md)
+- [Ι](untitled.md)
+- [Ι split](split.md)
 
 ## Sources
 

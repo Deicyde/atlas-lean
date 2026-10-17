@@ -10,7 +10,7 @@ Every adèle lies in the selected valuation subring at all but finitely many pla
 
 ## Depends on
 
-- [Function Field Adele Ring](function-field-adele-ring.md)
+This node has no prerequisites.
 
 ## Sources
 

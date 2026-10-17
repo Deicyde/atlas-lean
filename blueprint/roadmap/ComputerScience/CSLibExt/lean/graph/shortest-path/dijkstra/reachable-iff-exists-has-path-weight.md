@@ -12,7 +12,16 @@ Reachability is equivalent to having a concrete path of some natural weight.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Has Path Weight](has-path-weight.md)
+- [Reachable](../../directed-adjacency-2/part-01/reachable.md)
+
+## Proof depends on
+
+- [Edge](../../directed-adjacency-2/part-01/edge.md)
+- [Walk](../../directed-adjacency-2/part-01/walk.md)
+- [Path Weight](path-weight.md)
+- [Reachable iff exists walk](../../directed-adjacency-2/part-01/reachable-iff-exists-walk.md)
 
 ## Sources
 

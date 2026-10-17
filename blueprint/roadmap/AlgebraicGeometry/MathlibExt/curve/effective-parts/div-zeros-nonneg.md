@@ -10,8 +10,7 @@ The zero part of a divisor is effective.
 
 ## Depends on
 
-- [Curve Divisor](../divisor/curve-divisor.md)
-- [Div Zeros](div-zeros.md)
+This node has no prerequisites.
 
 ## Sources
 

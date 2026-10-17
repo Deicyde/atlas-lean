@@ -12,7 +12,16 @@ The actual grouping returns one duplicate-safe lower median for each column.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Median Of Medians Groups](median-of-medians-groups.md)
+
+## Proof depends on
+
+- [Insertion Sort](../../../sort/insertion-cost/insertion-sort.md)
+- [Insertion Sort perm](../../../sort/insertion-cost/insertion-sort-perm.md)
+- [Quickselect](../../quickselect/quickselect.md)
+- [Quickselect correct](../../quickselect/quickselect-correct.md)
+- [Quickselect eq get Elem? insertion Sort](../../quickselect/quickselect-eq-get-elem-insertion-sort.md)
+- [Ret insertion Sort](../../../sort/insertion-cost/ret-insertion-sort.md)
 
 ## Sources
 

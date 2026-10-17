@@ -11,7 +11,11 @@ Stack alphabets of the composite machine.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CK](ck.md)
+
+## Proof depends on
+
+- [X](x.md)
 
 ## Sources
 

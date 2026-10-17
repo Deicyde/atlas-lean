@@ -17,7 +17,11 @@ theorem patienceLength_eq_length_longestIncreasingSubsequence (xs : List α) :
 
 ## Depends on
 
-This node has no prerequisites.
+- [Patience Step](patience-step.md)
+
+## Proof depends on
+
+- [Lower Bound](../../search/lower-bound/lower-bound.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ Stacks of computations starting in a closed set stay in it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PDA](pda.md)
+- [Closed Under](closed-under.md)
+- [Config](config.md)
+- [Derives](derives.md)
+
+## Proof depends on
+
+- [Step](step.md)
 
 ## Sources
 

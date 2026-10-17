@@ -11,7 +11,7 @@ A sub-machine statement acting on the embedded stacks and renamed labels.
 
 ## Depends on
 
-This node has no prerequisites.
+- [SEmb](semb.md)
 
 ## Sources
 

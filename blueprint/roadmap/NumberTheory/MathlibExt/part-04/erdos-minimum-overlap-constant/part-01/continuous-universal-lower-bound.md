@@ -13,6 +13,11 @@ A constant lower-bounds the score of every source-admissible pair.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Continuous Admissible](continuous-admissible.md)
+- [Continuous Pair Score](continuous-pair-score.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ErdosMinimumOverlapConstant](../../../../../../sources/v2/MathlibExt.md)

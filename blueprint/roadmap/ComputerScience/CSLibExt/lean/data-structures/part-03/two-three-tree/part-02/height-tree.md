@@ -14,6 +14,7 @@ The computed height of a root's tree agrees with its stored height.
 ## Depends on
 
 - [Root](root.md)
+- [Tree](../part-01/tree.md)
 - [Height](../part-01/height.md)
 
 ## Proof depends on

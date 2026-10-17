@@ -12,7 +12,14 @@ The complete polynomial represented by the actual MIT/CLRS-sign return is the pr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Linear](../convolution/fft-linear.md)
+- [Fft Polynomial](../polynomial/fft-polynomial.md)
+
+## Proof depends on
+
+- [Fft Linear std Add Char one coeff](fft-linear-std-add-char-one-coeff.md)
+- [Fft Polynomial coeff](../polynomial/fft-polynomial-coeff.md)
+- [Fft Polynomial mul coeff eq zero of two mul le](../polynomial/fft-polynomial-mul-coeff-eq-zero-of-two.md)
 
 ## Sources
 

@@ -14,7 +14,16 @@ alternating vacuously.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](../../euclidean-link/part-01/parametrized-link.md)
+- [Is Regular Projection](../part-02/is-regular-projection.md)
+
+## Proof depends on
+
+- [Cyclically Adjacent](cyclically-adjacent.md)
+- [Is Crossing Preimage](is-crossing-preimage.md)
+- [Is Over At](is-over-at.md)
+- [In Open Arc](in-open-arc.md)
+- [Param Point](../part-02/param-point.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ when `1 ≤ m` (a sum of ones).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mahler Popken Expr](mahler-popken-expr.md)
+- [Eval](eval.md)
 
 ## Sources
 

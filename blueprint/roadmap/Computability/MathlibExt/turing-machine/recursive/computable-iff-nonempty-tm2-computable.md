@@ -15,6 +15,11 @@ finite multi-stack machine (`FinTM2`) computes it under `encodeNat`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Turing-computable functions are recursive](of-tm2/part-02/computable-of-tm2-computable.md)
+- [Recursive functions are Turing-computable](to-tm2/part-02/tm2-computable-of-computable.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.TuringMachine.Recursive.Equiv](../../../../../sources/v2/MathlibExt.md)

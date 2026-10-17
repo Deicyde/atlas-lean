@@ -11,7 +11,7 @@ The inverse of a circle reparametrization.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circle Reparam](circle-reparam.md)
 
 ## Sources
 

@@ -14,7 +14,17 @@ on or left of each edge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cross](../segment-intersection/cross.md)
+- [Lower Hull Of Points](lower-hull-of-points.md)
+
+## Proof depends on
+
+- [Lower Hull](lower-hull.md)
+- [Lower Hull get Last?](lower-hull-get-last.md)
+- [Lower Hull head?](lower-hull-head.md)
+- [Lower Hull left of edges](lower-hull-left-of-edges.md)
+- [Lower Hull sublist](lower-hull-sublist.md)
+- [Lower Hull turn left](lower-hull-turn-left.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ type `S` assigns to it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](../syntax/term.md)
+- [Ty](../syntax/ty.md)
+
+## Proof depends on
+
+- [Has Type](has-type.md)
+- [Value](../syntax/value.md)
 
 ## Sources
 

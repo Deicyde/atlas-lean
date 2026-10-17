@@ -12,7 +12,12 @@ Every listed edge has an endpoint in the returned cover.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Approx Vertex Cover](approx-vertex-cover.md)
+
+## Proof depends on
+
+- [Subset vertex Cover Scan](subset-vertex-cover-scan.md)
+- [Vertex Cover Scan](vertex-cover-scan.md)
 
 ## Sources
 

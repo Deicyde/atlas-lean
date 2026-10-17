@@ -13,6 +13,11 @@ Statements of the wrapped machine.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [FΓ](f.md)
+- [FΛ](f-2.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.TuringMachine.Recursive.ToTM2](../../../../../../../sources/v2/MathlibExt.md)

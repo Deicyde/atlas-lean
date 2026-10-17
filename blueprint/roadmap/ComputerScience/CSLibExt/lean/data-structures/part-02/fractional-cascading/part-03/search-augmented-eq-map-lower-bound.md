@@ -12,7 +12,14 @@ Augmented search computes the lower bound in every augmented catalog.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Augmented](../part-02/augmented.md)
+- [Lower Bound](../part-01/lower-bound.md)
+- [Search Augmented](search-augmented.md)
+
+## Proof depends on
+
+- [Count LT](../part-01/count-lt.md)
+- [Count LT eq lower Bound](../part-01/count-lt-eq-lower-bound.md)
 
 ## Sources
 

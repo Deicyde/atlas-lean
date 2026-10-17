@@ -19,7 +19,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Is Motzkin Path](is-motzkin-path.md)
 - [ULDMotzkin Path](uldmotzkin-path.md)
+- [ULDMotzkin Step](uldmotzkin-step.md)
+- [Path Height](path-height.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ occurrences of nullable nonterminals.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nullable](nullable.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.Reduced](../../../../../../../sources/v2/CSLibExt.md)

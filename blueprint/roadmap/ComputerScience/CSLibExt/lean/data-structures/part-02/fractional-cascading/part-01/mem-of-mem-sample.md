@@ -12,7 +12,11 @@ Membership in a sample implies membership in the sampled catalog.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sample](sample.md)
+
+## Proof depends on
+
+- [Sample sublist](sample-sublist.md)
 
 ## Sources
 

@@ -15,6 +15,12 @@ each.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [First Free Round](first-free-round.md)
+- [Layers](../part-01/layers.md)
+- [Phase Aux](phase-aux.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Graph.BipartiteMatching](../../../../../../../sources/v2/CSLibExt.md)

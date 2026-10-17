@@ -12,7 +12,7 @@ On a prime, the loop finds no witness if the final value `x^(2^k)` is `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Witness Loop](witness-loop.md)
 
 ## Sources
 

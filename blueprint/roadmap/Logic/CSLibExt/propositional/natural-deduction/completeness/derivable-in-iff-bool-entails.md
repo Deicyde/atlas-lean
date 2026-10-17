@@ -13,7 +13,12 @@ Soundness and completeness for classical theories, against all valuations satisf
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Entails](../semantics/bool-entails.md)
+
+## Proof depends on
+
+- [Bool Sound](../semantics/bool-sound-2.md)
+- [Strong completeness](derivable-in-of-forall-eval-bool.md)
 
 ## Sources
 

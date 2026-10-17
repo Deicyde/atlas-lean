@@ -12,7 +12,12 @@ to edges whose source and target are both retained.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Labeled Digraph](../../../../../Combinatorics/MathlibExt/part-01/digraph/labeled-digraph/labeled-digraph.md)
+- [Is Young Retained](is-young-retained.md)
+
+## Proof depends on
+
+- [Restrict](../../../../../Combinatorics/MathlibExt/part-01/digraph/labeled-digraph/restrict.md)
 
 ## Sources
 

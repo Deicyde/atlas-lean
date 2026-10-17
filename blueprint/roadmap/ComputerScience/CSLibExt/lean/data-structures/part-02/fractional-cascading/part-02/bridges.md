@@ -13,6 +13,10 @@ The bridge pointers of every entry of one catalog into the next.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bridge Ptr](bridge-ptr.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.FractionalCascading](../../../../../../../../sources/v2/CSLibExt.md)

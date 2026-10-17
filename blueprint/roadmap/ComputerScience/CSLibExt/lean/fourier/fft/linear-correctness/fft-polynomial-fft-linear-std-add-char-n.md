@@ -12,7 +12,14 @@ The complete polynomial represented by the actual Princeton-sign return is the p
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Linear](../convolution/fft-linear.md)
+- [Fft Polynomial](../polynomial/fft-polynomial.md)
+
+## Proof depends on
+
+- [Fft Linear std Add Char neg one coeff](fft-linear-std-add-char-neg-one-coeff.md)
+- [Fft Polynomial coeff](../polynomial/fft-polynomial-coeff.md)
+- [Fft Polynomial mul coeff eq zero of two mul le](../polynomial/fft-polynomial-mul-coeff-eq-zero-of-two.md)
 
 ## Sources
 

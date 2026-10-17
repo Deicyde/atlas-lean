@@ -13,6 +13,10 @@ The infimum of uniformly admissible real outer constants, preserving infinity.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Has Uniform Outer Constant](has-uniform-outer-constant.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.InformationTheory.FiniteChannelSimulation](../../../../../sources/v2/MathlibExt.md)

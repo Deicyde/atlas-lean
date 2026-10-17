@@ -12,7 +12,11 @@ Polynomial-time computability under explicit encodings is closed under compositi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Poly Time With Encoding](../../../complexity/is-poly-time-with-encoding.md)
+
+## Proof depends on
+
+- [Tm2 Computable In Poly Time comp](tm2-computable-in-poly-time-comp.md)
 
 ## Sources
 

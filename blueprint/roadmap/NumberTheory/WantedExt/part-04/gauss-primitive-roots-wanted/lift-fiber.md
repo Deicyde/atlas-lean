@@ -13,6 +13,10 @@ The paper's fiber `P_a = {x ∈ (ℤ/p²ℤ)* : x ≡ a (mod p)}`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Unit Reduce Sq](unit-reduce-sq.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GaussPrimitiveRootsWanted](../../../../../sources/v2/WantedExt.md)

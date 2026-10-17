@@ -12,7 +12,13 @@ Flipping vertex-disjoint alternating paths at once gives a matching.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alt Path](../part-01/alt-path.md)
+- [Valid](../part-01/valid.md)
+- [Flip](../part-01/flip.md)
+
+## Proof depends on
+
+- [Free](../part-01/free.md)
 
 ## Sources
 

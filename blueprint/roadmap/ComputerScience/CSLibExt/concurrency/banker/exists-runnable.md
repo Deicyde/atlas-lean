@@ -13,7 +13,13 @@ can be given its whole remaining need.
 
 ## Depends on
 
-This node has no prerequisites.
+- [System](system.md)
+- [Safe](safe.md)
+- [Need](need.md)
+
+## Proof depends on
+
+- [Safe Seq](safe-seq.md)
 
 ## Sources
 

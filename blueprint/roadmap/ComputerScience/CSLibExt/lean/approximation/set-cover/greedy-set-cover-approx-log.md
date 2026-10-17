@@ -13,7 +13,11 @@ CLRS Corollary 35.5: greedy set cover is an `(ln |U| + 1)`-approximation, via Ma
 
 ## Depends on
 
-This node has no prerequisites.
+- [Greedy Set Cover](greedy-set-cover.md)
+
+## Proof depends on
+
+- [Greedy Set Cover approx card](greedy-set-cover-approx-card.md)
 
 ## Sources
 

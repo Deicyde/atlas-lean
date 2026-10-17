@@ -12,7 +12,13 @@ Elementary upper bound from the witness `X - 2`: `C₄₀ₐ ≤ 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lehmer's constant](lehmer-constant.md)
+
+## Proof depends on
+
+- [Int Mahler Measure](int-mahler-measure.md)
+- [Int Mahler Measure X sub two](int-mahler-measure-x-sub-two.md)
+- [Lehmer Constant le int Mahler Measure](lehmer-constant-le-int-mahler-measure.md)
 
 ## Sources
 

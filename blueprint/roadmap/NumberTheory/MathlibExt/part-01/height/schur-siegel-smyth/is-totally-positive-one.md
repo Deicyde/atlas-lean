@@ -13,7 +13,12 @@ lean: MathlibExt.NumberTheory.SchurSiegelSmyth.isTotallyPositive_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Totally Positive](is-totally-positive.md)
+
+## Proof depends on
+
+- [Conjugates](conjugates.md)
+- [Minpoly rat one eq](minpoly-rat-one-eq.md)
 
 ## Sources
 

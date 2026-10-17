@@ -12,7 +12,15 @@ Edge-equivalent graphs have the same directed reachability.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../part-01/directed-adjacency.md)
+- [Reachable](../part-01/reachable.md)
+- [Semantically Equivalent](../part-01/semantically-equivalent.md)
+
+## Proof depends on
+
+- [Walk iff](walk-iff.md)
+- [Walk](../part-01/walk.md)
+- [Reachable iff exists walk](../part-01/reachable-iff-exists-walk.md)
 
 ## Sources
 

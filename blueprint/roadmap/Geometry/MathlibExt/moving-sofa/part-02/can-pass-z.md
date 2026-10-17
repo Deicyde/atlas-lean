@@ -18,6 +18,10 @@ corridor, but a Z passage couples both turns in one motion.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Can Pass ZAt](can-pass-zat.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.MovingSofa](../../../../../sources/v2/MathlibExt.md)

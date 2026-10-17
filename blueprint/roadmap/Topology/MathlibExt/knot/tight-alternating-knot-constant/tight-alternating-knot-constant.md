@@ -16,6 +16,10 @@ supremum is attained.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Admissible Alternating](is-admissible-alternating.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Topology.Knot.TightAlternatingKnotConstant](../../../../../sources/v2/MathlibExt.md)

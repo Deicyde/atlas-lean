@@ -11,7 +11,11 @@ There is a negative cycle reachable from the chosen source.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge](edge.md)
+
+## Proof depends on
+
+- [Reachable Negative Cycle](reachable-negative-cycle.md)
 
 ## Sources
 

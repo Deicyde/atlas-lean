@@ -12,7 +12,7 @@ Characteristic value `L_{k,2} = 2 + k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Leonardo](gen-leonardo.md)
 
 ## Sources
 

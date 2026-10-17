@@ -11,7 +11,7 @@ Total abstract events charged by the Bellman-Ford cost model.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](cost.md)
 
 ## Sources
 

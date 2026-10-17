@@ -14,7 +14,17 @@ stacks exactly as before**, in `3 · min m n + 3 + [m ≠ n]` steps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flag](flag.md)
+- [Run](run.md)
+- [Cmp Step](cmp-step.md)
+- [Cnt](cnt.md)
+- [Xfer](xfer.md)
+
+## Proof depends on
+
+- [Add U](add-u.md)
+- [Cmp Loop run](cmp-loop-run.md)
+- [Xfer run](xfer-run.md)
 
 ## Sources
 

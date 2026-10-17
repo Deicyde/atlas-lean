@@ -13,7 +13,15 @@ typing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Type](../typing/has-type.md)
+- [Knot](knot.md)
+- [Ty](../syntax/ty.md)
+
+## Proof depends on
+
+- [Body](body.md)
+- [Id U](id-u.md)
+- [Term](../syntax/term.md)
 
 ## Sources
 

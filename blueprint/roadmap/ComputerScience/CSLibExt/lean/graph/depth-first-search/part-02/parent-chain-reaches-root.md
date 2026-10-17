@@ -13,7 +13,18 @@ parentless root of the DFS forest.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parent Rel](../part-01/parent-rel.md)
+- [Traversal](../part-01/traversal.md)
+- [Forest Roots](../part-01/forest-roots.md)
+- [Dfs](../part-01/dfs.md)
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Before](../part-01/before.md)
+- [Mem forest Roots or exists Unique parent](../part-01/mem-forest-roots-or-exists-unique-parent.md)
+- [Parent before child](parent-before-child.md)
+- [Preorder nodup](../part-01/preorder-nodup.md)
 
 ## Sources
 

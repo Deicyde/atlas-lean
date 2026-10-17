@@ -17,6 +17,7 @@ The multiset represented by a Fibonacci heap.
 ## Proof depends on
 
 - [Elements](../part-01/elements-2.md)
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
 
 ## Sources
 

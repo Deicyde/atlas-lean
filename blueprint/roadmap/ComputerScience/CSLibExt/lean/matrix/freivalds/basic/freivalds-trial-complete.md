@@ -12,7 +12,12 @@ Correct products accept for every complete seed, including dimension zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Matrix](freivalds-matrix.md)
+- [Freivalds Trial](freivalds-trial.md)
+
+## Proof depends on
+
+- [Freivalds Trial accept discrepancy iff](freivalds-trial-accept-discrepancy-iff.md)
 
 ## Sources
 

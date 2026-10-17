@@ -15,7 +15,11 @@ Kronecker delta at `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Second Power Series](bernoulli-second-power-series.md)
+
+## Proof depends on
+
+- [Bernoulli Second Power Series mul mk](bernoulli-second-power-series-mul-mk.md)
 
 ## Sources
 

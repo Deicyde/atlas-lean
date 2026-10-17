@@ -12,7 +12,9 @@ A valid partner array describes a matching.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Matching](../part-01/is-matching.md)
+- [Valid](../part-01/valid.md)
+- [Pairs](../part-01/pairs.md)
 
 ## Sources
 

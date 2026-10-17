@@ -12,7 +12,16 @@ Substitutions that agree on the free variables of a scheme act on it alike.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scheme](scheme.md)
+- [Subst Ty](subst-ty.md)
+- [Subst](../../../../unification/basic/part-01/subst.md)
+- [Term](../../../../unification/basic/part-01/term.md)
+- [Vars](../../../../unification/basic/part-01/vars.md)
+
+## Proof depends on
+
+- [To Scheme](to-scheme.md)
+- [Subst congr](../../../../unification/basic/part-01/subst-congr.md)
 
 ## Sources
 

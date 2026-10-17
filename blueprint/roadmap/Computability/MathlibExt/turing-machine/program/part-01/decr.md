@@ -11,7 +11,7 @@ Pop stack `k`; go to `ifPos` if a symbol was popped, to `ifZero` if it was empty
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flag](flag.md)
 
 ## Sources
 

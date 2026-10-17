@@ -17,7 +17,11 @@ function field, where they say the roots are distinct and all present.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Roots Field](../part-01/roots-field.md)
+
+## Proof depends on
+
+- [General Base Field](../part-01/general-base-field.md)
 
 ## Sources
 

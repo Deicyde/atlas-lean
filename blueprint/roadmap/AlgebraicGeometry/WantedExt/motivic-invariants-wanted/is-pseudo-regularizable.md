@@ -14,7 +14,12 @@ Definition 4.1: A birational automorphism `φ` is pseudo-regularizable if
 
 ## Depends on
 
-This node has no prerequisites.
+- [Birational Map](birational-map.md)
+- [Variety](variety.md)
+
+## Proof depends on
+
+- [Pseudo Regularization](pseudo-regularization.md)
 
 ## Sources
 

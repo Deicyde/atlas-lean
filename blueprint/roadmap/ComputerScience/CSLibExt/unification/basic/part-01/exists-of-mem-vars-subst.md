@@ -12,7 +12,10 @@ A variable of `t.subst s` is a variable of `s y` for a variable `y` of `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subst](subst.md)
+- [Term](term.md)
+- [Subst](subst-2.md)
+- [Vars](vars.md)
 
 ## Sources
 

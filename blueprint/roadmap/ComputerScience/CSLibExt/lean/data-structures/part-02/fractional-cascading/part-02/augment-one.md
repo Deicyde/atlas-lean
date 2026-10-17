@@ -14,6 +14,11 @@ augmented catalog.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Sample](../part-01/sample.md)
+- [Sorted Merge](../part-01/sorted-merge.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.FractionalCascading](../../../../../../../../sources/v2/CSLibExt.md)

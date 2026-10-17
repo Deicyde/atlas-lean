@@ -12,7 +12,15 @@ The assignment read off a satisfying path makes an ordered diagram true.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](../basic/bdd.md)
+- [Ordered From](../basic/ordered-from.md)
+- [Eval](../basic/eval.md)
+- [Of Path](of-path.md)
+- [Sat Path](sat-path.md)
+
+## Proof depends on
+
+- [Eval update of lt](../basic/eval-update-of-lt.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ An incorrect product is accepted with probability at most two to the minus k.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Matrix](../basic/freivalds-matrix.md)
+- [Freivalds Repeat Law](freivalds-repeat-law.md)
+
+## Proof depends on
+
+- [Freivalds Repeat Law acceptance power](freivalds-repeat-law-acceptance-power.md)
+- [Freivalds Trial Law](../probability/freivalds-trial-law.md)
+- [Freivalds Trial Law sound](../probability/freivalds-trial-law-sound.md)
 
 ## Sources
 

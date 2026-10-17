@@ -12,7 +12,14 @@ Equations with the same unifiers have the same specification.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equations](../part-01/equations.md)
+- [Subst](../part-01/subst.md)
+- [Unifies](../part-01/unifies.md)
+- [Unify Spec](unify-spec.md)
+
+## Proof depends on
+
+- [Comp](../part-01/comp.md)
 
 ## Sources
 

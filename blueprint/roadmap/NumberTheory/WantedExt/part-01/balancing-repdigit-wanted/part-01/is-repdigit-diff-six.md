@@ -12,7 +12,13 @@ Characteristic example: `6 = 11 - 5` is a difference of two repdigits.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Repdigit Diff](is-repdigit-diff.md)
+
+## Proof depends on
+
+- [Is Repdigit](is-repdigit.md)
+- [Is Repdigit eleven](is-repdigit-eleven.md)
+- [Is Repdigit of le](is-repdigit-of-le.md)
 
 ## Sources
 

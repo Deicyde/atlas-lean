@@ -16,6 +16,11 @@ the right half, and recurse on the next axis.
 
 - [Kd Tree](kd-tree.md)
 
+## Proof depends on
+
+- [Head Coord](head-coord.md)
+- [Next Axis](next-axis.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.KdTree](../../../../../../../../sources/v2/CSLibExt.md)

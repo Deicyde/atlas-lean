@@ -13,7 +13,12 @@ truth table, on valuations with `⊥` false, of some proposition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eval Bool](../semantics/eval-bool.md)
+
+## Proof depends on
+
+- [Eval Bool shannon](eval-bool-shannon.md)
+- [Shannon](shannon.md)
 
 ## Sources
 

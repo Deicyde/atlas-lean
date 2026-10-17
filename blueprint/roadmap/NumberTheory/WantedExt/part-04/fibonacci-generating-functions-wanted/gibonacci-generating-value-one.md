@@ -12,7 +12,7 @@ Characteristic value at `x = 1`: `G^{(a,b)}(1) = -b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gibonacci Generating Value](gibonacci-generating-value.md)
 
 ## Sources
 

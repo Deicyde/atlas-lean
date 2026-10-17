@@ -12,7 +12,11 @@ the real infimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Affine Point](affine-point.md)
+
+## Proof depends on
+
+- [Seshadri Ratios](seshadri-ratios.md)
 
 ## Sources
 

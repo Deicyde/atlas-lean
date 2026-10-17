@@ -12,7 +12,12 @@ For a form of discriminant `-D`, the second generator is an algebraic integer.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Imaginary Quadratic Field](imaginary-quadratic-field.md)
+
+## Proof depends on
+
+- [Imaginary Root](imaginary-root.md)
+- [Imaginary Root is Integral](imaginary-root-is-integral.md)
 
 ## Sources
 

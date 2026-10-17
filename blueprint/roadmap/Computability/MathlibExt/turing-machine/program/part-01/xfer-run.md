@@ -12,7 +12,16 @@ lean: MetaMathlibExt.TM2Program.xfer_run
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flag](flag.md)
+- [Run](run.md)
+- [Add U](add-u.md)
+- [Cnt](cnt.md)
+- [Xfer](xfer.md)
+
+## Proof depends on
+
+- [Single](single.md)
+- [Push All](push-all.md)
 
 ## Sources
 

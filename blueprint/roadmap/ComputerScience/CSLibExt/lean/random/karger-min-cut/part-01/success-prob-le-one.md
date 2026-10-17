@@ -12,7 +12,12 @@ lean: Cslib.Algorithms.Lean.Karger.successProb_le_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Success Prob](success-prob.md)
+
+## Proof depends on
+
+- [Contract](contract.md)
 
 ## Sources
 

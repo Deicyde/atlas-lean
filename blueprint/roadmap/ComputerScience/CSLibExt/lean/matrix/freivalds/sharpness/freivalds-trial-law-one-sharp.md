@@ -12,7 +12,13 @@ The actual wrong-product trial attains the one-half error bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Trial Law](../probability/freivalds-trial-law.md)
+
+## Proof depends on
+
+- [Freivalds Trial](../basic/freivalds-trial.md)
+- [Freivalds Trial Law acceptance](../probability/freivalds-trial-law-acceptance.md)
+- [Freivalds Trial one acceptance Card](freivalds-trial-one-acceptance-card.md)
 
 ## Sources
 

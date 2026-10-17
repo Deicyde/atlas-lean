@@ -13,7 +13,7 @@ iterate from `∅` is, by induction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lfp Fin](lfp-fin.md)
 
 ## Sources
 

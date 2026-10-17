@@ -11,7 +11,15 @@ Mutual information between X and S in the actual extension.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Extension](finite-extension.md)
+- [Finite Joint Law](finite-joint-law.md)
+
+## Proof depends on
+
+- [Auxiliary Law](auxiliary-law.md)
+- [Input Auxiliary Law](input-auxiliary-law.md)
+- [Input Law](input-law.md)
+- [Shannon Entropy](../../finite-entropy/shannon-entropy.md)
 
 ## Sources
 

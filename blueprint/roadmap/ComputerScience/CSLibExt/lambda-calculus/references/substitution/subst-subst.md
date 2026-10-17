@@ -12,7 +12,17 @@ Composition of substitutions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](../syntax/term.md)
+- [Subst](../syntax/subst.md)
+
+## Proof depends on
+
+- [Lift Sub](../syntax/lift-sub.md)
+- [Rename](../syntax/rename.md)
+- [Rename subst](rename-subst.md)
+- [Subst congr](subst-congr.md)
+- [Subst rename](subst-rename.md)
+- [Ty](../syntax/ty.md)
 
 ## Sources
 

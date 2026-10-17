@@ -11,7 +11,7 @@ lean: Cslib.Algorithms.Lean.Karger.IsCut
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
 
 ## Sources
 

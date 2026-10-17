@@ -12,7 +12,7 @@ first left into the vertical arm, then upward.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motion](../part-01/motion.md)
 
 ## Sources
 

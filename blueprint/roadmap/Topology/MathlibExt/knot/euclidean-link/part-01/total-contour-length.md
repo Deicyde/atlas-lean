@@ -12,7 +12,13 @@ period `[0, 2π]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](parametrized-link.md)
+
+## Proof depends on
+
+- [R3](../../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Contour Length](../../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/contour-length.md)
+- [Parametrized Knot](parametrized-knot.md)
 
 ## Sources
 

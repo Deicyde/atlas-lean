@@ -12,7 +12,7 @@ Mahler measure of a linear factor `X - a` over the integers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Int Mahler Measure](int-mahler-measure.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Composition of circle reparametrizations: first `σ`, then `τ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circle Reparam](circle-reparam.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ iff it is unsatisfiable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+- [Resolution Derivable](resolution-derivable.md)
+- [CNFSat](../basic/cnfsat.md)
+
+## Proof depends on
+
+- [Not cnf Sat of resolution Derivable nil](not-cnf-sat-of-resolution-derivable-nil.md)
+- [Refutation completeness](resolution-derivable-nil-of-not-cnf-sat.md)
 
 ## Sources
 

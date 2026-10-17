@@ -12,7 +12,15 @@ The selector returns exactly the requested entry of the canonical sorted permuta
 
 ## Depends on
 
-This node has no prerequisites.
+- [Median Of Medians](median-of-medians.md)
+
+## Proof depends on
+
+- [Median Of Medians correct](median-of-medians-correct.md)
+- [Median Of Medians eq none iff](median-of-medians-eq-none-iff.md)
+- [Quickselect](../quickselect/quickselect.md)
+- [Quickselect eq get Elem? insertion Sort](../quickselect/quickselect-eq-get-elem-insertion-sort.md)
+- [Quickselect eq some of count rank](../quickselect/quickselect-eq-some-of-count-rank.md)
 
 ## Sources
 

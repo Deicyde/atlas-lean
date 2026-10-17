@@ -12,7 +12,14 @@ isotopy and one circle reparametrization per component.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](parametrized-link.md)
+
+## Proof depends on
+
+- [R3](../../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [Ambient Isotopy](ambient-isotopy.md)
+- [Circle Reparam](circle-reparam.md)
+- [Parametrized Knot](parametrized-knot.md)
 
 ## Sources
 

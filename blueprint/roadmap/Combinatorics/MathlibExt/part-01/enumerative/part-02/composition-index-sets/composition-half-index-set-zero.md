@@ -12,7 +12,11 @@ Boundary characteristic: `S(m, 0, q)` is empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composition Half Index Set](composition-half-index-set.md)
+
+## Proof depends on
+
+- [Mem composition Half Index Set](mem-composition-half-index-set.md)
 
 ## Sources
 

@@ -15,6 +15,11 @@ and backward lists above.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [H Seq Backward](h-seq-backward.md)
+- [H Seq Forward](h-seq-forward.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LeonardoPWanted](../../../../../../sources/v2/WantedExt.md)

@@ -12,7 +12,13 @@ CLRS's packing bound: at most seven strip points follow `p` within `y` gap `âˆšÎ
 
 ## Depends on
 
-This node has no prerequisites.
+- [In Strip](in-strip.md)
+- [Same Side Far](same-side-far.md)
+- [Tagged](tagged.md)
+
+## Proof depends on
+
+- [Dist2](../closest-pair/dist2.md)
 
 ## Sources
 

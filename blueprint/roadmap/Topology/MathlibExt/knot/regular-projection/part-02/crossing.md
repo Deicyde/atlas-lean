@@ -12,7 +12,12 @@ double-point set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](../../euclidean-link/part-01/parametrized-link.md)
+
+## Proof depends on
+
+- [Double Point Set](double-point-set.md)
+- [R2](../part-01/r2.md)
 
 ## Sources
 

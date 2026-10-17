@@ -12,7 +12,12 @@ The standard Gaussian's quadratic test forces every comparator to be at least on
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Constant](is-admissible-constant.md)
+
+## Proof depends on
+
+- [Convex Dominated](convex-dominated.md)
+- [Is One Sub Gaussian Tail](is-one-sub-gaussian-tail.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ No node has two equal children.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](bdd.md)
 
 ## Sources
 

@@ -18,7 +18,7 @@ many stack symbols, and respond to finitely many input letters.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PDA](pda.md)
 
 ## Sources
 

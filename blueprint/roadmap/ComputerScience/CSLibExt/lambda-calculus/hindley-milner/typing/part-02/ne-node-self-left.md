@@ -12,7 +12,12 @@ No monotype is an arrow from itself.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ty](../part-01/ty.md)
+- [Term](../../../../unification/basic/part-01/term.md)
+
+## Proof depends on
+
+- [Size](../../../../unification/basic/part-01/size.md)
 
 ## Sources
 

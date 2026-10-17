@@ -13,7 +13,14 @@ cover `C*` of the listed edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pricing Vertex Cover](pricing-vertex-cover.md)
+
+## Proof depends on
+
+- [Price le sum drop](price-le-sum-drop.md)
+- [Pricing Scan](pricing-scan.md)
+- [Pricing Scan residual](pricing-scan-residual.md)
+- [Sum drop le two mul price](sum-drop-le-two-mul-price.md)
 
 ## Sources
 

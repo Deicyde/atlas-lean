@@ -12,7 +12,11 @@ Translating a positive source rank `i` to index `i - 1` recovers set rank `i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Median Of Medians](median-of-medians.md)
+
+## Proof depends on
+
+- [Median Of Medians set rank](median-of-medians-set-rank.md)
 
 ## Sources
 

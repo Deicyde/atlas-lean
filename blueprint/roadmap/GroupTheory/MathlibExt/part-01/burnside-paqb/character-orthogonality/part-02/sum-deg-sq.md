@@ -15,6 +15,7 @@ The sum of squared degrees equals the group order.
 
 - [Irr](../part-01/irr.md)
 - [Char Fun](../part-01/char-fun.md)
+- [Card Bound](../part-01/card-bound.md)
 
 ## Proof depends on
 

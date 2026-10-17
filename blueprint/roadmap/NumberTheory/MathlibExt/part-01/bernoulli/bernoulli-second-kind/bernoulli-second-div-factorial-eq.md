@@ -15,7 +15,13 @@ from `sum_antidiagonal_bernoulliSecondPowerSeries_coeff` with the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Second](bernoulli-second.md)
+
+## Proof depends on
+
+- [Bernoulli Second Power Series](bernoulli-second-power-series.md)
+- [Bernoulli Second eq](bernoulli-second-eq.md)
+- [Sum antidiagonal bernoulli Second Power Series coeff](sum-antidiagonal-bernoulli-second-power.md)
 
 ## Sources
 

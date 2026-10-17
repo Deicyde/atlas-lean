@@ -16,6 +16,8 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Encode CNF](encode-cnf.md)
+- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
+- [CNFSat](../../../Logic/CSLibExt/propositional/cnf/basic/cnfsat.md)
 
 ## Sources
 

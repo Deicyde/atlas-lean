@@ -17,6 +17,10 @@ body, hence the `nolint`.)
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Matroid Greedy](../matroid-greedy/matroid-greedy.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Greedy.GreedyMatroidCharacterization](../../../../../../sources/v2/CSLibExt.md)

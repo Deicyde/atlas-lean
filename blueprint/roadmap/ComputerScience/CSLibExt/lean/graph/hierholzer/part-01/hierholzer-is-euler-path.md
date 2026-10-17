@@ -13,7 +13,21 @@ Euler paths: on a semi-balanced graph whose edges all start at vertices reachabl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Edge](../../directed-adjacency-2/part-01/edge.md)
+- [Reachable](../../directed-adjacency-2/part-01/reachable.md)
+- [Is Euler Path](is-euler-path.md)
+- [Is Semi Balanced](is-semi-balanced.md)
+- [Hierholzer](hierholzer.md)
+
+## Proof depends on
+
+- [Balanced Edges](balanced-edges.md)
+- [Edge List](edge-list.md)
+- [Edge List Of](edge-list-of.md)
+- [Visit](visit.md)
+- [Visit spec](visit-spec.md)
+- [Walk Edges](walk-edges.md)
 
 ## Sources
 

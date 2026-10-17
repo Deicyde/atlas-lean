@@ -12,7 +12,7 @@ Direct padding preserves every original input entry in its original order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Pad](../convolution/fft-pad.md)
 
 ## Sources
 

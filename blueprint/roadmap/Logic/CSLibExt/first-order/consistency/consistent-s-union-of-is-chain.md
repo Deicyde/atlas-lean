@@ -14,7 +14,12 @@ many hypotheses, which lie in one member (Mathlib's
 
 ## Depends on
 
-This node has no prerequisites.
+- [Consistent](consistent.md)
+
+## Proof depends on
+
+- [Natural deduction](../natural-deduction/derivable.md)
+- [Provable](../natural-deduction/provable.md)
 
 ## Sources
 

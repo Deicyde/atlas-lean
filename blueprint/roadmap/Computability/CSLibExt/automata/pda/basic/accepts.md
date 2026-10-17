@@ -12,7 +12,13 @@ configuration consumes the whole input and empties the stack.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PDA](pda.md)
+
+## Proof depends on
+
+- [Config](config.md)
+- [Derives](derives.md)
+- [Init Config](init-config.md)
 
 ## Sources
 

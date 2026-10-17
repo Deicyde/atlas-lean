@@ -12,7 +12,13 @@ Contraction keeps the state valid and removes one vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Valid](valid.md)
+- [Contract](contract.md)
+
+## Proof depends on
+
+- [Rename](rename.md)
 
 ## Sources
 

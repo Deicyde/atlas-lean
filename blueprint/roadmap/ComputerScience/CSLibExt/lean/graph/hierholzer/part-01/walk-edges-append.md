@@ -12,7 +12,7 @@ The steps of a concatenated walk: those of each part and the step joining them.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Walk Edges](walk-edges.md)
 
 ## Sources
 

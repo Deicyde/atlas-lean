@@ -14,6 +14,11 @@ affine equivalence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Crystallographic Shared](../../part-01/e.md)
+- [Aff OPEquivalent](aff-opequivalent.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Geometry.SpaceGroupsWanted](../../../../../sources/v2/WantedExt.md)

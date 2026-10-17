@@ -13,7 +13,13 @@ following wait-for edges inside the set must revisit a process.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alloc State](alloc-state.md)
+- [Circular Wait](circular-wait.md)
+- [Deadlocked](deadlocked.md)
+
+## Proof depends on
+
+- [Waits For](waits-for.md)
 
 ## Sources
 

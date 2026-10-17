@@ -13,7 +13,15 @@ supported one-state pushdown automaton, the standard finite model.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PDA](../../../automata/pda/basic/pda.md)
+- [Finitely Supported](../../../automata/pda/basic/finitely-supported.md)
+- [Accepts](../../../automata/pda/basic/accepts.md)
+
+## Proof depends on
+
+- [Cfg PDA accepts](cfg-pda-accepts.md)
+- [Cfg PDA finitely Supported](cfg-pda-finitely-supported.md)
+- [Cfg PDA](cfg-pda.md)
 
 ## Sources
 

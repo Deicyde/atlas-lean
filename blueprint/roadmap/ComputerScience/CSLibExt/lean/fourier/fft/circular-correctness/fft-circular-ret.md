@@ -12,7 +12,10 @@ The executed return uses precisely the two stored transforms and their stored pr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft](../../fft-2/fft.md)
+- [Fft Circular](../convolution/fft-circular.md)
+- [Fft Pointwise](../convolution/fft-pointwise.md)
+- [Ifft](../inverse/ifft.md)
 
 ## Sources
 

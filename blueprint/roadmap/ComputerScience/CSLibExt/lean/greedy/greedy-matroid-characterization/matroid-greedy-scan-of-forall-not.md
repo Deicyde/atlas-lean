@@ -12,7 +12,7 @@ Scanning elements none of which extends `S` leaves `S` unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matroid Greedy Scan](../matroid-greedy/matroid-greedy-scan.md)
 
 ## Sources
 

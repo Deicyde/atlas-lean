@@ -17,6 +17,7 @@ The multiset represented by a binomial heap.
 ## Proof depends on
 
 - [Elements](../part-01/elements-2.md)
+- [Binomial Tree](../part-01/binomial-tree.md)
 
 ## Sources
 

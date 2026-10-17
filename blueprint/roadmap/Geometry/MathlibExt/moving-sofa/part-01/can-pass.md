@@ -13,6 +13,14 @@ A continuous path starts before the corner and ends beyond it.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Motion](motion.md)
+- [Position](position.md)
+- [Corridor](corridor.md)
+- [Entrance](entrance.md)
+- [Exit](exit.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.MovingSofa](../../../../../sources/v2/MathlibExt.md)

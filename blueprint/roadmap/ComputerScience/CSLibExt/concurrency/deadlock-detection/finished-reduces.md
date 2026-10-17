@@ -12,7 +12,13 @@ The processes that the algorithm lets finish do finish, in that order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Reduces](reduces.md)
+- [Finished](finished.md)
+
+## Proof depends on
+
+- [Reduce Aux](reduce-aux.md)
 
 ## Sources
 

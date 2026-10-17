@@ -12,7 +12,7 @@ A sorted merge is a permutation of the concatenation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sorted Merge](sorted-merge.md)
 
 ## Sources
 

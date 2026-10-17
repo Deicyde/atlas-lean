@@ -13,6 +13,10 @@ Sum of skew unit-flow contributions along a path.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Local Delta](local-delta.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Graph.EdmondsKarp](../../../../../../../sources/v2/CSLibExt.md)

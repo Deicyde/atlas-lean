@@ -16,6 +16,10 @@ With at least one hash function, the empty filter reports every element absent.
 - [Empty](empty.md)
 - [May Contain](may-contain.md)
 
+## Proof depends on
+
+- [Bloom Filter](bloom-filter.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BloomFilter](../../../../../../../sources/v2/CSLibExt.md)

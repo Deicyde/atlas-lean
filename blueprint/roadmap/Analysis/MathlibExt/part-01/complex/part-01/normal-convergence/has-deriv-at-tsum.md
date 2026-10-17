@@ -13,7 +13,7 @@ A locally normally convergent holomorphic series may be differentiated termwise.
 
 ## Depends on
 
-- [Converges Locally Normally On](../../../normed/series/normal-convergence/converges-locally-normally-on.md)
+- [Sup Norm On](../../../normed/series/normal-convergence/sup-norm-on.md)
 
 ## Proof depends on
 

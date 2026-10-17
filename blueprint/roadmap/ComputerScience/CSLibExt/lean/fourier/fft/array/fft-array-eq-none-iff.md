@@ -12,7 +12,11 @@ Admission fails exactly for lengths outside the positive powers of two.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Array](fft-array.md)
+
+## Proof depends on
+
+- [Fft](../../fft-2/fft.md)
 
 ## Sources
 

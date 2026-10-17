@@ -19,6 +19,7 @@ Injectivity of the completion tensor-product map.
 ## Proof depends on
 
 - [Finrank completion Tensor Product eq pi](finrank-completion-tensor-product-eq-pi.md)
+- [Places Over Equiv Primes Over](../finite-places-over/places-over-equiv-primes-over.md)
 
 ## Sources
 

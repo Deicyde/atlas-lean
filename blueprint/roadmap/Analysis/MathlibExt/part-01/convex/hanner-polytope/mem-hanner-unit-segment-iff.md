@@ -12,7 +12,7 @@ Membership in the one-dimensional Hanner leaf is the coordinate bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hanner Unit Segment](hanner-unit-segment.md)
 
 ## Sources
 

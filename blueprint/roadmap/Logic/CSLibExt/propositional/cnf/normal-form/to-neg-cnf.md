@@ -13,7 +13,11 @@ A CNF of the Boolean complement of `A`: it holds exactly when `A` is false
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+
+## Proof depends on
+
+- [Cnf Of](cnf-of.md)
 
 ## Sources
 

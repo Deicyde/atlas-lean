@@ -11,7 +11,12 @@ Many-step computation, the reflexive transitive closure of `Step`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PDA](pda.md)
+- [Config](config.md)
+
+## Proof depends on
+
+- [Step](step.md)
 
 ## Sources
 

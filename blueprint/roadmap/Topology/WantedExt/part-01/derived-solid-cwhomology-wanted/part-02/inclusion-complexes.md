@@ -11,7 +11,8 @@ The inclusion of solid abelian groups, applied degreewise to cochain complexes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solid](../part-01/solid.md)
+- [Is Solid](../part-01/is-solid.md)
 
 ## Sources
 

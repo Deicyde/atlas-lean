@@ -14,7 +14,13 @@ allocations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [The detection algorithm](detect.md)
+- [Finished](finished.md)
+
+## Proof depends on
+
+- [Reduce Aux](reduce-aux.md)
 
 ## Sources
 

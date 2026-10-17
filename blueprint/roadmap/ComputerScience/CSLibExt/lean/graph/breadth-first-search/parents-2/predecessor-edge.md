@@ -12,7 +12,16 @@ Every saved predecessor is an actual directed input edge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BFSForest](../parents/internal/bfsforest.md)
+- [Bfs With Parents](../parents/internal/bfs-with-parents.md)
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Edge](../../directed-adjacency-2/part-01/edge.md)
+
+## Proof depends on
+
+- [Contents](../../../data-structures/part-01/queue/semantics/contents.md)
+- [Contents enqueue](../../../data-structures/part-01/queue/semantics/contents-enqueue.md)
+- [Contents eq cons of dequeue? eq some](../../../data-structures/part-01/queue/semantics/contents-eq-cons-of-dequeue-eq-some.md)
 
 ## Sources
 

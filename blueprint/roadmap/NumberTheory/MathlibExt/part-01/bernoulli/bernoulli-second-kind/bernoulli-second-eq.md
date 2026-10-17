@@ -12,7 +12,8 @@ Interface restatement of `bernoulliSecond`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Second](bernoulli-second.md)
+- [Bernoulli Second Power Series](bernoulli-second-power-series.md)
 
 ## Sources
 

@@ -14,7 +14,12 @@ collinear points determine a circle of infinite radius.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R3](r3.md)
+
+## Proof depends on
+
+- [Triangle Of](triangle-of.md)
+- [Triple Points](triple-points.md)
 
 ## Sources
 

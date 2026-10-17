@@ -12,7 +12,11 @@ Boundary characteristic: `T(m, 0, q)` is empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composition Index Set](composition-index-set.md)
+
+## Proof depends on
+
+- [Mem composition Index Set](mem-composition-index-set.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ lean: Cslib.Logic.PL.BoolSatisfiable
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eval Bool](../semantics/eval-bool.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Logics.Propositional.NaturalDeduction.Completeness](../../../../../../sources/v2/CSLibExt.md)

@@ -14,7 +14,7 @@ equals `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Second Power Series](bernoulli-second-power-series.md)
 
 ## Sources
 

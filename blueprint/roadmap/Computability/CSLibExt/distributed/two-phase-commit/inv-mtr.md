@@ -12,7 +12,17 @@ Multistep transitions preserve the invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Action](action.md)
+- [Inv](inv.md)
+- [State](state.md)
+- [Lts](lts.md)
+
+## Proof depends on
+
+- [Coord State](coord-state.md)
+- [Part State](part-state.md)
+- [Set Part](set-part.md)
+- [Step](step.md)
 
 ## Sources
 

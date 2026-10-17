@@ -12,7 +12,16 @@ The saved-parent relation has no nonempty directed cycle.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BFSForest](../internal/bfsforest.md)
+- [Bfs With Parents](../internal/bfs-with-parents.md)
+- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Edge](../../../directed-adjacency-2/part-01/edge.md)
+- [Contents](../../../../data-structures/part-01/queue/semantics/contents.md)
+- [Contents enqueue](../../../../data-structures/part-01/queue/semantics/contents-enqueue.md)
+- [Contents eq cons of dequeue? eq some](../../../../data-structures/part-01/queue/semantics/contents-eq-cons-of-dequeue-eq-some.md)
 
 ## Sources
 

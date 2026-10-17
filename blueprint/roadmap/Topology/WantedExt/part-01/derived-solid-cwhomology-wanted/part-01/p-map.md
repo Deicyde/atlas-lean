@@ -13,6 +13,10 @@ The map `ℤ[∞] ⟶ ℤ[ℕ∪{∞}]` of free light condensed abelian groups i
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ι](untitled.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Topology.DerivedSolidCWHomologyWanted](../../../../../../sources/v2/WantedExt.md)

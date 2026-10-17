@@ -14,7 +14,7 @@ completion.
 
 ## Depends on
 
-- [Completion Residue Map](completion-residue-map.md)
+This node has no prerequisites.
 
 ## Sources
 

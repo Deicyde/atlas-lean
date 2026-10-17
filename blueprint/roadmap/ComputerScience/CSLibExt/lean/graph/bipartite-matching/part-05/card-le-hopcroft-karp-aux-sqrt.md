@@ -15,7 +15,22 @@ path has more than `⌊√b⌋` pairs (`firstFreeRound_hopcroftKarpAux`), so the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Matching](../part-01/is-matching.md)
+- [Hopcroft Karp Aux](../part-03/hopcroft-karp-aux.md)
+- [Pairs](../part-01/pairs.md)
+
+## Proof depends on
+
+- [Valid](../part-01/valid.md)
+- [Card le hopcroft Karp Aux of le](card-le-hopcroft-karp-aux-of-le.md)
+- [Kőnig's certificate](../part-02/card-le-of-no-free.md)
+- [First Free Round](../part-03/first-free-round.md)
+- [First Free Round eq none](../part-03/first-free-round-eq-none.md)
+- [First Free Round eq some](../part-03/first-free-round-eq-some.md)
+- [Each phase lengthens the shortest augmenting paths](first-free-round-hopcroft-karp-aux.md)
+- [Hopcroft Karp Aux add](hopcroft-karp-aux-add.md)
+- [Layers](../part-01/layers.md)
+- [The deficit is at most `b / d`](mul-card-sub-le.md)
 
 ## Sources
 

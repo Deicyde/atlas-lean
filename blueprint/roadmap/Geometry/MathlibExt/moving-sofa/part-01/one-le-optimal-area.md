@@ -12,7 +12,14 @@ The actual square witness bounds the global area supremum from below.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Optimal Area](optimal-area.md)
+
+## Proof depends on
+
+- [Is Sofa](is-sofa.md)
+- [Square area](square-area.md)
+- [Square is Sofa](square-is-sofa.md)
+- [Unit Square](unit-square.md)
 
 ## Sources
 

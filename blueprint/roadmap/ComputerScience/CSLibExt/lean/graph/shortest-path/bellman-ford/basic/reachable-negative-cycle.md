@@ -11,7 +11,7 @@ A concrete simple negative cycle plus a concrete path from the source to its bas
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge](edge.md)
 
 ## Sources
 

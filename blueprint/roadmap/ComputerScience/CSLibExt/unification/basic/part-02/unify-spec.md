@@ -12,7 +12,13 @@ unifier `s'` factors as `s ≫ s'`, and failure means there is no unifier.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equations](../part-01/equations.md)
+- [Subst](../part-01/subst.md)
+
+## Proof depends on
+
+- [Comp](../part-01/comp.md)
+- [Unifies](../part-01/unifies.md)
 
 ## Sources
 

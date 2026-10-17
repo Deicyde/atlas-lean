@@ -12,7 +12,8 @@ Every overlap count is bounded by the maximum overlap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Overlap](max-overlap.md)
+- [Overlap](overlap.md)
 
 ## Sources
 

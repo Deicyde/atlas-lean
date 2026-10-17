@@ -12,7 +12,7 @@ The lower bound of a catalog is at most its length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Bound](lower-bound.md)
 
 ## Sources
 

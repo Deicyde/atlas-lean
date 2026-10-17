@@ -12,7 +12,11 @@ After the scan, every listed edge has an endpoint with nothing left.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pricing Scan](pricing-scan.md)
+
+## Proof depends on
+
+- [Pricing Scan residual](pricing-scan-residual.md)
 
 ## Sources
 

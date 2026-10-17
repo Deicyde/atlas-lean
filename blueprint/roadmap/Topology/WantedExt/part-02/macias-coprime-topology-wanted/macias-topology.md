@@ -14,6 +14,10 @@ by `β`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Macias Basis](macias-basis.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Topology.MaciasCoprimeTopologyWanted](../../../../../sources/v2/WantedExt.md)

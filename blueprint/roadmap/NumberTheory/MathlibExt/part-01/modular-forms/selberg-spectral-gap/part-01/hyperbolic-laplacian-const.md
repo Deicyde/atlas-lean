@@ -12,7 +12,13 @@ The hyperbolic Laplacian kills constant functions, as it should.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hyperbolic Laplacian](hyperbolic-laplacian.md)
+
+## Proof depends on
+
+- [Ext](ext.md)
+- [Partial Im](partial-im.md)
+- [Partial Re](partial-re.md)
 
 ## Sources
 

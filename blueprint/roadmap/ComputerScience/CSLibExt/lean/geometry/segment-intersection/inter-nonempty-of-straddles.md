@@ -12,7 +12,13 @@ Proper crossing: if each segment straddles the line through the other, they meet
 
 ## Depends on
 
-This node has no prerequisites.
+- [Straddles](straddles.md)
+- [Direction](direction.md)
+
+## Proof depends on
+
+- [Param mem](param-mem.md)
+- [Sub ne zero](sub-ne-zero.md)
 
 ## Sources
 

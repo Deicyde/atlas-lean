@@ -12,7 +12,12 @@ The tight knot constant is nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tight Knot Constant](tight-knot-constant.md)
+
+## Proof depends on
+
+- [Is Admissible zero](is-admissible-zero.md)
+- [Le tight Knot Constant](le-tight-knot-constant.md)
 
 ## Sources
 

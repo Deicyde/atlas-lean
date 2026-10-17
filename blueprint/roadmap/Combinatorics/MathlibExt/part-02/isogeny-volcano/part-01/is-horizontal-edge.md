@@ -10,7 +10,7 @@ Horizontal edge on the surface.
 
 ## Depends on
 
-- [Isogeny Volcano](isogeny-volcano.md)
+This node has no prerequisites.
 
 ## Sources
 

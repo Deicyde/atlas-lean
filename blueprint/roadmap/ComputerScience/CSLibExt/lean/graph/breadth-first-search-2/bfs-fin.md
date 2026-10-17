@@ -11,7 +11,12 @@ Run BFS on the original `Fin n → List (Fin n)` adjacency-list interface.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BFSResult](bfsresult.md)
+
+## Proof depends on
+
+- [Bfs](bfs.md)
+- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
 
 ## Sources
 

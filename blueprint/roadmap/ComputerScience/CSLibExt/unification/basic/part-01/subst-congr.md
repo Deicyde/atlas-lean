@@ -12,7 +12,10 @@ Substitutions that agree on the variables of a term act on it alike.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subst](subst.md)
+- [Term](term.md)
+- [Subst](subst-2.md)
+- [Vars](vars.md)
 
 ## Sources
 

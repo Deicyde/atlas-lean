@@ -12,7 +12,11 @@ the smaller top variable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](bdd.md)
+
+## Proof depends on
+
+- [Mk](mk.md)
 
 ## Sources
 

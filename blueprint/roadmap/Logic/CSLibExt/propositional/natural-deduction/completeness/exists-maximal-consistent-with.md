@@ -12,7 +12,7 @@ lean: Cslib.Logic.PL.Theory.exists_maximal_consistentWith
 
 ## Depends on
 
-This node has no prerequisites.
+- [Consistent With](consistent-with.md)
 
 ## Sources
 

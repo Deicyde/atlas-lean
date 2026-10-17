@@ -12,7 +12,12 @@ A sentential form yields a word iff it derives that word as terminals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Yields](yields.md)
+
+## Proof depends on
+
+- [Derives of yields](derives-of-yields.md)
+- [Yields of derives](yields-of-derives.md)
 
 ## Sources
 

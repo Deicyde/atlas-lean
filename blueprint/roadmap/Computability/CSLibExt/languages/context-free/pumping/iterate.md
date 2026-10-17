@@ -12,7 +12,8 @@ Iterating a self-context pumps the surrounding words.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Yields](../yields/yields.md)
+- [Yields Context](yields-context.md)
 
 ## Sources
 

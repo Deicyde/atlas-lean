@@ -12,7 +12,20 @@ Substitutions agreeing on the free variables of a context give the same lookups.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ctx](ctx.md)
+- [Ftv](ftv.md)
+- [Lookup](lookup.md)
+- [Subst](subst.md)
+- [Scheme](scheme.md)
+- [Subst](../../../../unification/basic/part-01/subst.md)
+- [Term](../../../../unification/basic/part-01/term.md)
+
+## Proof depends on
+
+- [Visible Vars](visible-vars.md)
+- [Subst Ty](subst-ty.md)
+- [Subst Ty congr](subst-ty-congr.md)
+- [Vars](../../../../unification/basic/part-01/vars.md)
 
 ## Sources
 

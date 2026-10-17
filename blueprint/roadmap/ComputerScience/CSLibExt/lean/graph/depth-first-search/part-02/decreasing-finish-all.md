@@ -11,7 +11,11 @@ Vertices of a whole-graph traversal, ordered from latest finish to earliest fini
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Decreasing Finish](decreasing-finish.md)
 
 ## Sources
 

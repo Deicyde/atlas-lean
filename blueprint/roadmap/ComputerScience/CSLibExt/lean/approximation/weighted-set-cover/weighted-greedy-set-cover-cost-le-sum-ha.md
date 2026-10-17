@@ -13,7 +13,14 @@ the greedy cover costs at most `∑_{S ∈ C*} w S · H(|S ∩ U|)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Total Cost](total-cost.md)
+- [Weighted Greedy Set Cover](weighted-greedy-set-cover.md)
+
+## Proof depends on
+
+- [Best Ratio Set](best-ratio-set.md)
+- [Card le sum card inter](../set-cover/card-le-sum-card-inter.md)
+- [Div le harmonic sub](../set-cover/div-le-harmonic-sub.md)
 
 ## Sources
 

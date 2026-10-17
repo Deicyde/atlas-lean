@@ -12,7 +12,12 @@ Every local exponent is bounded by the family's Ramanujan exponent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Local Exponent Family](local-exponent-family.md)
+- [Ramanujan Exponent Of](ramanujan-exponent-of.md)
+
+## Proof depends on
+
+- [Exponent Set](exponent-set.md)
 
 ## Sources
 

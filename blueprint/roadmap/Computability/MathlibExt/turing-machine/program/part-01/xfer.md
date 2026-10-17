@@ -12,7 +12,11 @@ Loop: pop stack `k` until empty; for each popped symbol push one unit on every t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flag](flag.md)
+
+## Proof depends on
+
+- [Push All](push-all.md)
 
 ## Sources
 

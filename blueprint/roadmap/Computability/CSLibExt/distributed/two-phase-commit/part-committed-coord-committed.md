@@ -13,7 +13,15 @@ has a committed coordinator.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coord State](coord-state.md)
+- [Part State](part-state.md)
+- [Reachable](reachable.md)
+- [State](state.md)
+
+## Proof depends on
+
+- [Inv](inv.md)
+- [Inv reachable](inv-reachable.md)
 
 ## Sources
 

@@ -13,7 +13,17 @@ back.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Consistent](../../consistency/consistent.md)
+
+## Proof depends on
+
+- [Natural deduction](../../natural-deduction/derivable.md)
+- [Relabel of infinite](relabel-of-infinite.md)
+- [Provable](../../natural-deduction/provable.md)
+- [Formula relabel eq rename](../../syntax/formula-relabel-eq-rename.md)
+- [Rename](../../syntax/rename.md)
+- [Rename Term](../../syntax/rename-term.md)
+- [Rename congr](../../syntax/rename-congr.md)
 
 ## Sources
 

@@ -14,7 +14,15 @@ exceed `r`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Odd Greedy Choice](is-odd-greedy-choice.md)
+
+## Proof depends on
+
+- [Inv le](inv-le.md)
+- [Min](min.md)
+- [Odd](odd.md)
+- [Pos d](pos-d.md)
+- [Pos r](pos-r.md)
 
 ## Sources
 

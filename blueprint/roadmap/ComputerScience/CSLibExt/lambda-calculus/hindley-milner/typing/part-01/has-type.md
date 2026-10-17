@@ -11,7 +11,9 @@ The syntax-directed Damas-Milner typing relation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ctx](ctx.md)
+- [Expr](expr.md)
+- [Ty](ty.md)
 
 ## Sources
 

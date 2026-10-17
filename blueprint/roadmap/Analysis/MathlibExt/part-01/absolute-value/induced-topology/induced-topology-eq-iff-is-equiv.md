@@ -17,7 +17,7 @@ on many elements while inducing different topologies.
 
 ## Depends on
 
-- [Induced Topology](induced-topology.md)
+This node has no prerequisites.
 
 ## Sources
 

@@ -13,7 +13,16 @@ satisfying the formula.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+- [Resolution Derivable](resolution-derivable.md)
+- [Satisfies](../semantics/satisfies-3.md)
+- [CNFClause](../basic/cnfclause.md)
+- [Satisfies](../semantics/satisfies-2.md)
+
+## Proof depends on
+
+- [Resolvent](resolvent.md)
+- [Resolution rule soundness](satisfies-resolvent.md)
 
 ## Sources
 

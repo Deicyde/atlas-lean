@@ -12,7 +12,12 @@ Acceptance is exactly a zero image under the actual product discrepancy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Matrix](freivalds-matrix.md)
+- [Freivalds Trial](freivalds-trial.md)
+
+## Proof depends on
+
+- [Freivalds Trial accept iff](freivalds-trial-accept-iff.md)
 
 ## Sources
 

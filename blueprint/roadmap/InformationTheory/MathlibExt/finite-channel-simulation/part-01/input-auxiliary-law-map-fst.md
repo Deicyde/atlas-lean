@@ -12,7 +12,10 @@ The XS marginal has precisely the specified X law.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Extension](finite-extension.md)
+- [Input Auxiliary Law](input-auxiliary-law.md)
+- [Finite Joint Law](finite-joint-law.md)
+- [Input Law](input-law.md)
 
 ## Sources
 

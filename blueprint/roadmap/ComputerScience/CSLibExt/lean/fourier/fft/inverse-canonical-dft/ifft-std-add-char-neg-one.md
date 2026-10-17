@@ -12,7 +12,12 @@ Actual negative-sign source inverse coefficients equal canonical inverse DFT.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ifft](../inverse/ifft.md)
+
+## Proof depends on
+
+- [Ifft correct](../inverse-correctness/ifft-correct.md)
+- [Dft Sum](../../../../../../Analysis/MathlibExt/part-01/fourier/fast-fourier-transform/dft-sum.md)
 
 ## Sources
 

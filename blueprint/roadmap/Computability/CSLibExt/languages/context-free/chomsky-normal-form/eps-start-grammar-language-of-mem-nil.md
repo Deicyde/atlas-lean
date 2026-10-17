@@ -13,7 +13,11 @@ construction does not change the language.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eps Start Grammar](eps-start-grammar.md)
+
+## Proof depends on
+
+- [Eps Start Grammar language](eps-start-grammar-language.md)
 
 ## Sources
 

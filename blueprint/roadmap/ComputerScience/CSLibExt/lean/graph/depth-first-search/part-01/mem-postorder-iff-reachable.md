@@ -12,7 +12,15 @@ Finish order contains exactly the vertices reachable from the roots.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Traversal](traversal.md)
+- [Dfs](dfs.md)
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Reachable](../../directed-adjacency-2/part-01/reachable.md)
+
+## Proof depends on
+
+- [Steps](steps.md)
+- [Mem preorder iff reachable](mem-preorder-iff-reachable.md)
 
 ## Sources
 

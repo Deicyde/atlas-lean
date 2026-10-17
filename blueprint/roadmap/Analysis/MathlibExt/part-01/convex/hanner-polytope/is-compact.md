@@ -12,7 +12,15 @@ Every Hanner polytope is compact.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Hanner Polytope](is-hanner-polytope.md)
+
+## Proof depends on
+
+- [Convex](convex.md)
+- [Zero mem](zero-mem.md)
+- [Hanner Infinity Sum](hanner-infinity-sum.md)
+- [Hanner One Sum](hanner-one-sum.md)
+- [Hanner Unit Segment](hanner-unit-segment.md)
 
 ## Sources
 

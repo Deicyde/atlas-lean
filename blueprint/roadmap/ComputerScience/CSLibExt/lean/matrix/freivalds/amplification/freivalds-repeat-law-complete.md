@@ -12,7 +12,14 @@ A correct product is accepted with probability one for every number of trials.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Matrix](../basic/freivalds-matrix.md)
+- [Freivalds Repeat Law](freivalds-repeat-law.md)
+
+## Proof depends on
+
+- [Freivalds Repeat Law acceptance power](freivalds-repeat-law-acceptance-power.md)
+- [Freivalds Trial Law](../probability/freivalds-trial-law.md)
+- [Freivalds Trial Law complete](../probability/freivalds-trial-law-complete.md)
 
 ## Sources
 

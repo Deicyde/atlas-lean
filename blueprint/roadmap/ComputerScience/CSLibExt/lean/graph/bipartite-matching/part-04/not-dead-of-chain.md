@@ -13,7 +13,14 @@ on earlier paths or have no escape contains no right vertex of the chain.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Level](exact-level.md)
+- [Is Chain From](is-chain-from.md)
+- [No Escape](no-escape.md)
+
+## Proof depends on
+
+- [Tail](tail.md)
+- [Free](../part-01/free.md)
 
 ## Sources
 

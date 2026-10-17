@@ -12,7 +12,7 @@ Points of a segment are collinear with its endpoints.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Direction](direction.md)
 
 ## Sources
 

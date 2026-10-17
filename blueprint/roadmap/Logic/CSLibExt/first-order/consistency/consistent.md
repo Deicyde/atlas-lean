@@ -13,6 +13,10 @@ A set of formulas is consistent when it does not prove `⊥`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Provable](../natural-deduction/provable.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Logics.FirstOrder.Consistency](../../../../../sources/v2/CSLibExt.md)

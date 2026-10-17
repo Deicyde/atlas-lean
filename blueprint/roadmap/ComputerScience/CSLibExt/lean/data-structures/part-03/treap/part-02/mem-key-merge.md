@@ -14,6 +14,7 @@ Merging preserves exactly the union of structural key membership.
 ## Depends on
 
 - [Tree](../part-01/tree.md)
+- [Mem Key](../part-01/mem-key.md)
 - [Merge](../part-01/merge.md)
 
 ## Proof depends on

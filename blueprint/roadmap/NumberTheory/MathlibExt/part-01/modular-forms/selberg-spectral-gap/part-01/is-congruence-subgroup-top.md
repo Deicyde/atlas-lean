@@ -12,7 +12,7 @@ The full modular group is a congruence subgroup (level `1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Congruence Subgroup](is-congruence-subgroup.md)
 
 ## Sources
 

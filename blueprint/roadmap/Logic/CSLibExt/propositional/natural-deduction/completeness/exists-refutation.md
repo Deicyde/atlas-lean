@@ -12,7 +12,7 @@ A proposition outside a maximal consistent set is refuted by a finite part of it
 
 ## Depends on
 
-This node has no prerequisites.
+- [Consistent With](consistent-with.md)
 
 ## Sources
 

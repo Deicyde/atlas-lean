@@ -12,7 +12,14 @@ A graph with an Euler path from `s` to `t` is semi-balanced.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Is Euler Path](is-euler-path.md)
+- [Is Semi Balanced](is-semi-balanced.md)
+
+## Proof depends on
+
+- [Edge List](edge-list.md)
+- [Walk Edges](walk-edges.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ The three materialized maps and shared normalization add `9*n + 1` operations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ifft](../inverse/ifft.md)
+
+## Proof depends on
+
+- [Fft](../../fft-2/fft.md)
+- [Fft Conjugate](../inverse/fft-conjugate.md)
+- [Fft time add one](../cost/fft-time-add-one.md)
 
 ## Sources
 

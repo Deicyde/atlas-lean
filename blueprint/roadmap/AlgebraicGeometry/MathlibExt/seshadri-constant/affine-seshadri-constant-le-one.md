@@ -13,7 +13,17 @@ configuration's Seshadri constant by one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Affine Point](affine-point.md)
+- [Affine Seshadri Constant](affine-seshadri-constant.md)
+
+## Proof depends on
+
+- [Plane Polynomial](plane-polynomial.md)
+- [Monomial Degree](monomial-degree.md)
+- [Multiplicity](multiplicity.md)
+- [Multiplicity X sub C](multiplicity-x-sub-c.md)
+- [Seshadri Ratios](seshadri-ratios.md)
+- [Shifted](shifted.md)
 
 ## Sources
 

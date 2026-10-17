@@ -12,7 +12,12 @@ The deduction theorem for sets.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Provable](../natural-deduction/provable.md)
+
+## Proof depends on
+
+- [Natural deduction](../natural-deduction/derivable.md)
+- [Weakening](../natural-deduction/mono.md)
 
 ## Sources
 

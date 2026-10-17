@@ -13,7 +13,17 @@ Completeness of `epsGrammar`: every yield of `g` is a yield of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Yields](../../yields/yields.md)
+- [Eps Grammar](eps-grammar.md)
+- [Nullable Deletions](nullable-deletions.md)
+
+## Proof depends on
+
+- [Nullable](nullable.md)
+- [Language From](../../basic/part-01/language-from.md)
+- [Mem eps Grammar rules](mem-eps-grammar-rules.md)
+- [Yields iff derives](../../yields/yields-iff-derives.md)
+- [Yields of rule](../../yields/yields-of-rule.md)
 
 ## Sources
 

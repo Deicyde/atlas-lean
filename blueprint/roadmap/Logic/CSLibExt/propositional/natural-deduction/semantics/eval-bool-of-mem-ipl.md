@@ -12,7 +12,7 @@ Every instance of ex falso is true when `⊥` is false.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eval Bool](eval-bool.md)
 
 ## Sources
 

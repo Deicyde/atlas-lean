@@ -12,7 +12,9 @@ A successor-length walk is an initial edge followed by the remaining walk.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](directed-adjacency.md)
+- [Edge](edge.md)
+- [Walk](walk.md)
 
 ## Sources
 

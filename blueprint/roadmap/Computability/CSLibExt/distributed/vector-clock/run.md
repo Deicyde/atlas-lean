@@ -11,7 +11,11 @@ The vector clock algorithm over an execution, from all vectors `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](../lamport-clock/event.md)
+
+## Proof depends on
+
+- [Clock Step](clock-step.md)
 
 ## Sources
 

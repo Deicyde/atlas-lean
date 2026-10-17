@@ -12,7 +12,11 @@ Every successful raw circular output has exactly the source input length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Circular Array](../convolution/fft-circular-array.md)
+
+## Proof depends on
+
+- [Fft Circular](../convolution/fft-circular.md)
 
 ## Sources
 

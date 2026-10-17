@@ -30,7 +30,12 @@ theorem card_mul_le_two_mul_edges {st : State V} (hv : st.Valid) {k : ℕ} (hmin
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Success Prob](success-prob.md)
+
+## Proof depends on
+
+- [Contract](contract.md)
 
 ## Sources
 

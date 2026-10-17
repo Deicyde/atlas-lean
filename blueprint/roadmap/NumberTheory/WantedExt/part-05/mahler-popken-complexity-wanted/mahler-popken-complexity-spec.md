@@ -13,7 +13,14 @@ attained by an optimal expression.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mahler Popken Expr](mahler-popken-expr.md)
+- [Count](count.md)
+- [Eval](eval.md)
+- [Mahler Popken Complexity](mahler-popken-complexity.md)
+
+## Proof depends on
+
+- [Exists mahler Popken Expr eval](exists-mahler-popken-expr-eval.md)
 
 ## Sources
 

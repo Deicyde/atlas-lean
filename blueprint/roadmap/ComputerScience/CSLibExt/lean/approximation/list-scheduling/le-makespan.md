@@ -12,7 +12,8 @@ Every job is at most the makespan of any schedule containing it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Schedule Of](is-schedule-of.md)
+- [Makespan](makespan.md)
 
 ## Sources
 

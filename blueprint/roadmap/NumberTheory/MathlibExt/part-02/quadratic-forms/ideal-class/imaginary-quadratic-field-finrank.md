@@ -12,7 +12,14 @@ A positive radicand gives a degree-two extension of `ℚ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Imaginary Quadratic Field](imaginary-quadratic-field.md)
+
+## Proof depends on
+
+- [Imaginary Root](imaginary-root.md)
+- [Imaginary Root is Integral](imaginary-root-is-integral.md)
+- [Imaginary Root not mem bot](imaginary-root-not-mem-bot.md)
+- [Imaginary Root sq](imaginary-root-sq.md)
 
 ## Sources
 

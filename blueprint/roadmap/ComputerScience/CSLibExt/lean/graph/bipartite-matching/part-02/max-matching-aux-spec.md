@@ -12,7 +12,18 @@ With more fuel than unmatched right vertices, the loop ends with a maximum match
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Matching](../part-01/is-matching.md)
+- [Valid](../part-01/valid.md)
+- [Matched](../part-01/matched.md)
+- [Max Matching Aux](../part-01/max-matching-aux.md)
+- [Pairs](../part-01/pairs.md)
+
+## Proof depends on
+
+- [Augment](../part-01/augment.md)
+- [Augment none](augment-none.md)
+- [Augment some](augment-some.md)
+- [Kőnig's certificate](card-le-of-no-free.md)
 
 ## Sources
 

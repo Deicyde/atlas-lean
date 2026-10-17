@@ -11,7 +11,11 @@ Composition: first `s`, then `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subst](subst.md)
+
+## Proof depends on
+
+- [Subst](subst-2.md)
 
 ## Sources
 

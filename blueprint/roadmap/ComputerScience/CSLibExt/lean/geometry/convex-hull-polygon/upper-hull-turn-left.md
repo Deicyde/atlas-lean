@@ -12,7 +12,14 @@ The upper chain turns strictly left at every inner vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cross](../segment-intersection/cross.md)
+- [Upper Hull](upper-hull.md)
+
+## Proof depends on
+
+- [Lower Hull](../convex-hull/lower-hull.md)
+- [Lower Hull turn left](../convex-hull/lower-hull-turn-left.md)
+- [Upper Hull eq](upper-hull-eq.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ from the last point back to the first.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lower Hull](../convex-hull/lower-hull.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Geometry.ConvexHullPolygon](../../../../../../sources/v2/CSLibExt.md)

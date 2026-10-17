@@ -13,6 +13,10 @@ CLRS `APPROX-VERTEX-COVER` over an edge list, starting from the empty cover.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Vertex Cover Scan](vertex-cover-scan.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Approximation.VertexCover](../../../../../../sources/v2/CSLibExt.md)

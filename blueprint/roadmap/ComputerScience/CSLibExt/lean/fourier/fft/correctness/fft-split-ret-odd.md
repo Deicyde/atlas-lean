@@ -12,7 +12,7 @@ The materialized odd subsequence preserves the ordered odd input entries.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Split](../../fft-2/fft-split.md)
 
 ## Sources
 

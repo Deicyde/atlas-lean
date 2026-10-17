@@ -13,7 +13,16 @@ some order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Reduces](reduces.md)
+- [The detection algorithm](detect.md)
+
+## Proof depends on
+
+- [Finished](finished.md)
+- [Finished reduces](finished-reduces.md)
+- [Correctness of deadlock detection](mem-detect-iff.md)
+- [Reduce Aux](reduce-aux.md)
 
 ## Sources
 

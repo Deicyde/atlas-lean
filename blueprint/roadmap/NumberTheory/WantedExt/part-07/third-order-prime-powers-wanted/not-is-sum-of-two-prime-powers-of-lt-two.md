@@ -13,7 +13,7 @@ since each prime power is at least `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sum Of Two Prime Powers](is-sum-of-two-prime-powers.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ The set of all even pseudoprimes.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Even Pseudoprime](is-even-pseudoprime.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.EvenPseudoprime](../../../../../sources/v2/MathlibExt.md)

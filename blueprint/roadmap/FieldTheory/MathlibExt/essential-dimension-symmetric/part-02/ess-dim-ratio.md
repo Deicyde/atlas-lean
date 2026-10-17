@@ -15,6 +15,10 @@ sense of this file.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ed Sn](ed-sn.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.FieldTheory.EssentialDimensionSymmetric](../../../../../sources/v2/MathlibExt.md)

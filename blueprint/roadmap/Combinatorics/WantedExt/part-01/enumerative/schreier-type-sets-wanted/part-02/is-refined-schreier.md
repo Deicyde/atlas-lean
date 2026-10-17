@@ -16,6 +16,11 @@ largest elements `a_{p-1} < a_p` below `n + 1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Sparse](../part-01/is-sparse.md)
+- [Is Strong Schreier](../part-01/is-strong-schreier.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.SchreierTypeSetsWanted](../../../../../../../sources/v2/WantedExt.md)

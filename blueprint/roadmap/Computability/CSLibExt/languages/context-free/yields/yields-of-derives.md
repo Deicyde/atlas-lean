@@ -13,7 +13,16 @@ the valuation argument: yields languages form a valuation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Yields](yields.md)
+
+## Proof depends on
+
+- [Is Valuation](../basic/part-01/is-valuation.md)
+- [Eval Form](../basic/part-01/eval-form.md)
+- [Eval Form le of derives](../basic/part-01/eval-form-le-of-derives.md)
+- [Eval Form map terminal](../basic/part-01/eval-form-map-terminal.md)
+- [Eval Symbol](../basic/part-01/eval-symbol.md)
+- [Yields of rule](yields-of-rule.md)
 
 ## Sources
 

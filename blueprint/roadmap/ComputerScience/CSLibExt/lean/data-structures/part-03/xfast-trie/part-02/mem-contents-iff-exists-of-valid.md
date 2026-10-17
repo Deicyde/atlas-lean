@@ -20,6 +20,7 @@ Under validity, a key is stored exactly when it lies in some bucket
 
 ## Proof depends on
 
+- [XFast Trie](../part-01/xfast-trie.md)
 - [Valid](../part-01/valid.md)
 - [Mem contents iff](mem-contents-iff.md)
 

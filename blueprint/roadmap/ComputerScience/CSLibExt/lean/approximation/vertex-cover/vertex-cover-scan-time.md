@@ -16,7 +16,7 @@ def approxVertexCover (edges : List (V × V)) : TimeM ℕ (Finset V) :=
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertex Cover Scan](vertex-cover-scan.md)
 
 ## Sources
 

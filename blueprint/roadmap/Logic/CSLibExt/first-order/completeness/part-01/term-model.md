@@ -11,7 +11,11 @@ The term model of a maximal consistent set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Consistent](../../consistency/maximal-consistent.md)
+
+## Proof depends on
+
+- [Term Setoid](term-setoid.md)
 
 ## Sources
 

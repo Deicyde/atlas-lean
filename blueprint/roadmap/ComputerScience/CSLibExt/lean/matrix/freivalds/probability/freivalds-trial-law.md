@@ -14,6 +14,10 @@ This law supplies no PRNG implementation or assumed error oracle.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Freivalds Trial](../basic/freivalds-trial.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Matrix.Freivalds.Probability](../../../../../../../sources/v2/CSLibExt.md)

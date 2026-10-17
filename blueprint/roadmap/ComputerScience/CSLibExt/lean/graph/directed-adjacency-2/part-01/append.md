@@ -12,7 +12,12 @@ Exact walks concatenate and their lengths add.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](directed-adjacency.md)
+- [Walk](walk.md)
+
+## Proof depends on
+
+- [Edge](edge.md)
 
 ## Sources
 

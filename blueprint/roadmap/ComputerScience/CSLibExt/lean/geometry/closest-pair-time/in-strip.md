@@ -11,7 +11,7 @@ A strip point: within squared distance `δ` of the line `x = xmid`, on its own s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tagged](tagged.md)
 
 ## Sources
 

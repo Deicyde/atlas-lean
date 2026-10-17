@@ -12,7 +12,12 @@ with two vertices that `X` separates: the run "outputs" the cut `X`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](../part-01/state.md)
+
+## Proof depends on
+
+- [Is Cut](../part-01/is-cut.md)
+- [Contract](../part-01/contract.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The vertices visited by a path represented by forward edge occurrences.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge](edge.md)
 
 ## Sources
 

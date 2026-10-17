@@ -12,7 +12,12 @@ Symmetry of equality.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Natural deduction](derivable.md)
+
+## Proof depends on
+
+- [Instantiate](../syntax/instantiate.md)
+- [Instantiate Term](../syntax/instantiate-term.md)
 
 ## Sources
 

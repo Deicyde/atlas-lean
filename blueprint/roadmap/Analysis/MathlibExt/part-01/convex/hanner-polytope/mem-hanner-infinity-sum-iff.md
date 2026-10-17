@@ -13,7 +13,7 @@ Euclidean coordinate decomposition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hanner Infinity Sum](hanner-infinity-sum.md)
 
 ## Sources
 

@@ -16,6 +16,10 @@ inputs (excluded for reduced grammars) get the empty output.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Grammar Terminals](grammar-terminals.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.ChomskyNormalForm](../../../../../../sources/v2/CSLibExt.md)

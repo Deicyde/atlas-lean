@@ -13,10 +13,7 @@ Every positive edge has a direction.
 
 ## Depends on
 
-- [Isogeny Volcano](../part-01/isogeny-volcano.md)
-- [Is Ascending Edge](../part-01/is-ascending-edge.md)
-- [Is Descending Edge](../part-01/is-descending-edge.md)
-- [Is Horizontal Edge](../part-01/is-horizontal-edge.md)
+This node has no prerequisites.
 
 ## Sources
 

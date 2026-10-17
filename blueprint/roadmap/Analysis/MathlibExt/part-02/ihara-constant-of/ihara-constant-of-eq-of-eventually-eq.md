@@ -12,7 +12,11 @@ Agreement from some index onward determines the abstract constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ihara Constant Of](ihara-constant-of.md)
+
+## Proof depends on
+
+- [Ihara Constant Of congr](ihara-constant-of-congr.md)
 
 ## Sources
 

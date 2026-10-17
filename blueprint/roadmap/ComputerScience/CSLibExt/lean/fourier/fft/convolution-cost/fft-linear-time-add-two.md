@@ -12,7 +12,13 @@ Both direct padding calls and circular convolution at twice the input length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Linear](../convolution/fft-linear.md)
+
+## Proof depends on
+
+- [Fft Circular](../convolution/fft-circular.md)
+- [Fft Circular time add two](fft-circular-time-add-two.md)
+- [Fft Pad](../convolution/fft-pad.md)
 
 ## Sources
 

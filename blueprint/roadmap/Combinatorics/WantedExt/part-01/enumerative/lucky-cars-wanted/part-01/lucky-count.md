@@ -13,6 +13,10 @@ The number of lucky cars of `f`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Park Spots](park-spots.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.LuckyCarsWanted](../../../../../../../sources/v2/WantedExt.md)

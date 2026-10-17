@@ -17,6 +17,12 @@ internal node with no value.
 
 - [Radix Trie](radix-trie.md)
 
+## Proof depends on
+
+- [Common Prefix](common-prefix.md)
+- [Find Edge](find-edge.md)
+- [Replace Edge](replace-edge.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.RadixTrie](../../../../../../../../sources/v2/CSLibExt.md)

@@ -19,6 +19,7 @@ corresponding oriented component of the second.
 ## Proof depends on
 
 - [Ambient Isotopy](ambient-isotopy.md)
+- [Knot](knot.md)
 - [R3](r3.md)
 
 ## Sources

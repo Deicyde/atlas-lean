@@ -12,7 +12,12 @@ lean: MetaMathlibExt.ComplexityTheory.IsPolyTime.comp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bitstring Encoding](../../../complexity/bitstring-encoding.md)
+- [Is Poly Time](../../../complexity/is-poly-time.md)
+
+## Proof depends on
+
+- [Comp](comp.md)
 
 ## Sources
 

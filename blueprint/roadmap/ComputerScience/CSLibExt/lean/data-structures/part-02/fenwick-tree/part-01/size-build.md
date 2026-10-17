@@ -18,6 +18,7 @@ The size of a built tree is the length of its input.
 
 ## Proof depends on
 
+- [Fenwick Tree](fenwick-tree.md)
 - [Block Sum Array](block-sum-array.md)
 
 ## Sources

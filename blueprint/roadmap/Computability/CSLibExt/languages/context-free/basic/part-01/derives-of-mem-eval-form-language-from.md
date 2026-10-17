@@ -13,7 +13,13 @@ canonical assignment `languageFrom`, is really derivable from that form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eval Form](eval-form.md)
+- [Language From](language-from.md)
+
+## Proof depends on
+
+- [Derives append](derives-append.md)
+- [Eval Symbol](eval-symbol.md)
 
 ## Sources
 

@@ -14,7 +14,15 @@ which is Mathlib's `Formula.relabel` on formulas by `formula_relabel_eq_rename`;
 
 ## Depends on
 
-This node has no prerequisites.
+- [Natural deduction](derivable.md)
+- [Rename](../syntax/rename.md)
+
+## Proof depends on
+
+- [Free Var Finset rename](../syntax/free-var-finset-rename.md)
+- [Instantiate](../syntax/instantiate.md)
+- [Instantiate Term](../syntax/instantiate-term.md)
+- [Rename Term](../syntax/rename-term.md)
 
 ## Sources
 

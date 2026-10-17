@@ -13,7 +13,12 @@ CLRS Section 33.4: the closest-pair algorithm computes `O(n lg n)` distances, at
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closest Pair](../closest-pair/closest-pair.md)
+
+## Proof depends on
+
+- [Closest Rec](../closest-pair/closest-rec.md)
+- [Closest Rec time le](closest-rec-time-le.md)
 
 ## Sources
 

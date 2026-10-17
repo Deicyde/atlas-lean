@@ -12,7 +12,7 @@ The two configurations of the cycle: `(!l₀) unit` and `body₀ unit`, with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](../syntax/term.md)
 
 ## Sources
 

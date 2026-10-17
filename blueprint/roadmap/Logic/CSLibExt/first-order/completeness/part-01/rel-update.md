@@ -12,7 +12,13 @@ Replacing one argument of a relation symbol by an equal term preserves membershi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Consistent](../../consistency/maximal-consistent.md)
+
+## Proof depends on
+
+- [Instantiate mem of equal](../../consistency/instantiate-mem-of-equal.md)
+- [Instantiate](../../syntax/instantiate.md)
+- [Instantiate Term](../../syntax/instantiate-term.md)
 
 ## Sources
 

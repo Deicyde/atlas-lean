@@ -13,7 +13,18 @@ satisfiable iff `A` has a model with `⊥` false.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNFClause](../basic/cnfclause.md)
+- [CNFSat](../basic/cnfsat.md)
+- [Eval Bool](../../natural-deduction/semantics/eval-bool.md)
+- [To CNF](to-cnf.md)
+
+## Proof depends on
+
+- [CNF](../basic/cnf.md)
+- [Satisfies](../semantics/satisfies-3.md)
+- [Satisfies](../semantics/satisfies-2.md)
+- [Equivalent CNF](satisfies-to-cnf-iff.md)
+- [Cnf Sat iff exists satisfies](../semantics/cnf-sat-iff-exists-satisfies.md)
 
 ## Sources
 

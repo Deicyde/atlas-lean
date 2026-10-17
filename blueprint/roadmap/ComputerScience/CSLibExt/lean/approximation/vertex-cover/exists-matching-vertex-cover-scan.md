@@ -13,7 +13,8 @@ edges whose endpoints are new, pairwise disjoint, and exactly the vertices it ad
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertex Disjoint](vertex-disjoint.md)
+- [Vertex Cover Scan](vertex-cover-scan.md)
 
 ## Sources
 

@@ -17,6 +17,7 @@ increasing.
 - [Sorted Degrees](../part-02/sorted-degrees.md)
 - [Fibonacci Heap](../part-02/fibonacci-heap.md)
 - [Delete Min](../part-03/delete-min.md)
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
 
 ## Proof depends on
 
@@ -30,7 +31,6 @@ increasing.
 - [Remove Min Tree spec](../part-02/remove-min-tree-spec.md)
 - [Valid append](../part-02/valid-append.md)
 - [Valid consolidate](../part-02/valid-consolidate.md)
-- [Fibonacci Tree](../part-01/fibonacci-tree.md)
 - [Valid](../part-01/valid.md)
 - [Child valid](../part-01/child-valid.md)
 - [Children](../part-01/children.md)

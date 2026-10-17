@@ -13,7 +13,12 @@ consequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Provable](../../natural-deduction/provable.md)
+
+## Proof depends on
+
+- [Soundness for theories](../../natural-deduction/models.md)
+- [Completeness](provable-of-models.md)
 
 ## Sources
 

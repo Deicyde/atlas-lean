@@ -13,7 +13,12 @@ vertex cover of `G`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Approx Vertex Cover](approx-vertex-cover.md)
+
+## Proof depends on
+
+- [Card vertex Cover Scan le](card-vertex-cover-scan-le.md)
+- [Vertex Cover Scan](vertex-cover-scan.md)
 
 ## Sources
 

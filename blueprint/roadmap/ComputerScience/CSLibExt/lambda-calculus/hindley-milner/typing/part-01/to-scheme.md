@@ -11,7 +11,12 @@ A monotype as a scheme with no bound variables.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scheme](scheme.md)
+- [Ty](ty.md)
+
+## Proof depends on
+
+- [Term](../../../../unification/basic/part-01/term.md)
 
 ## Sources
 

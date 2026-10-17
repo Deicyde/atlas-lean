@@ -14,7 +14,15 @@ yes (it is prepared or committed); the coordinator decided commit by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Part State](part-state.md)
+- [Reachable](reachable.md)
+- [State](state.md)
+
+## Proof depends on
+
+- [Coord State](coord-state.md)
+- [Inv](inv.md)
+- [Inv reachable](inv-reachable.md)
 
 ## Sources
 

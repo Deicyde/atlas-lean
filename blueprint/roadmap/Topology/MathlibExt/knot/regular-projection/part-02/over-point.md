@@ -12,7 +12,15 @@ proved unique specification.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](../../euclidean-link/part-01/parametrized-link.md)
+- [Crossing](crossing.md)
+- [Is Regular Projection](is-regular-projection.md)
+- [Param Point](param-point.md)
+
+## Proof depends on
+
+- [Is Over Point](is-over-point.md)
+- [Exists Unique is Over Point](exists-unique-is-over-point.md)
 
 ## Sources
 

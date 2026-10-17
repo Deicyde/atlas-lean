@@ -12,7 +12,12 @@ A greedy-optimal independence system is the independence predicate of a matroid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Greedy Optimal](greedy-optimal.md)
+- [Is Indep System](is-indep-system.md)
+
+## Proof depends on
+
+- [Augment of greedy Optimal](augment-of-greedy-optimal.md)
 
 ## Sources
 

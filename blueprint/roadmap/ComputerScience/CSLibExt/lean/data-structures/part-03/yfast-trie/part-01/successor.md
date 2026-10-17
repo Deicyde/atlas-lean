@@ -18,6 +18,7 @@ scan its group for the first key above `x`.
 ## Proof depends on
 
 - [Find Group](find-group.md)
+- [XFast Trie](../../xfast-trie/part-01/xfast-trie.md)
 - [Successor](../../xfast-trie/part-01/successor.md)
 
 ## Sources

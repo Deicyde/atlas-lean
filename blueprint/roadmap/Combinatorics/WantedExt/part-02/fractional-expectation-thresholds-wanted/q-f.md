@@ -14,6 +14,10 @@ Given a collection `𝓕` of subsets of `X`, we define the `fractional expectati
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Weakly Small](is-weakly-small.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.FractionalExpectationThresholdsWanted](../../../../../sources/v2/WantedExt.md)

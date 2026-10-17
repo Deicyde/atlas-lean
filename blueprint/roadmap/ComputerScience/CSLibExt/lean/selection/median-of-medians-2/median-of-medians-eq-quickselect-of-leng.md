@@ -12,7 +12,14 @@ Inputs in the fixed base range use the canonical timed quickselect exactly.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Median Of Medians](median-of-medians.md)
+- [Quickselect](../quickselect/quickselect.md)
+
+## Proof depends on
+
+- [Three Way Partition](../../sort/partition/three-way-partition.md)
+- [Median Of Medians Groups](../median-of-medians/groups/median-of-medians-groups.md)
+- [Partition3](../../sort/partition/partition3.md)
 
 ## Sources
 

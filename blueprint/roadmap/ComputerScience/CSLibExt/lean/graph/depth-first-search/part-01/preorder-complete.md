@@ -12,7 +12,15 @@ Every directed-reachable vertex occurs in DFS preorder.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Traversal](traversal.md)
+- [Dfs](dfs.md)
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Reachable](../../directed-adjacency-2/part-01/reachable.md)
+
+## Proof depends on
+
+- [Steps](steps.md)
+- [Edge](../../directed-adjacency-2/part-01/edge.md)
 
 ## Sources
 

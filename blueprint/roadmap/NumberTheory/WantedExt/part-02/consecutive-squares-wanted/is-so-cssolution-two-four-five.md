@@ -13,7 +13,11 @@ Characteristic example: `(2, 4, 5)` is a SoCS solution, since
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is So CSSolution](is-so-cssolution.md)
+
+## Proof depends on
+
+- [So CSEq](so-cseq.md)
 
 ## Sources
 

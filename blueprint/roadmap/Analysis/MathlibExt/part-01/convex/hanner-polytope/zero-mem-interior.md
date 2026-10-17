@@ -12,7 +12,13 @@ The origin is an interior point of every Hanner polytope.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Hanner Polytope](is-hanner-polytope.md)
+
+## Proof depends on
+
+- [Hanner Infinity Sum](hanner-infinity-sum.md)
+- [Hanner One Sum](hanner-one-sum.md)
+- [Hanner Unit Segment](hanner-unit-segment.md)
 
 ## Sources
 

@@ -11,7 +11,13 @@ BPZ's three-block eleven-cycle profile.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BPZProfile](../part-01/bpzprofile.md)
+
+## Proof depends on
+
+- [Star](../part-01/star.md)
+- [Bpz C11 Pi1](bpz-c11-pi1.md)
+- [Bpz C11 Pi2](bpz-c11-pi2.md)
 
 ## Sources
 

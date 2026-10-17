@@ -12,7 +12,13 @@ The chain ends at the last input point.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Hull](lower-hull.md)
+
+## Proof depends on
+
+- [Chain Scan](chain-scan.md)
+- [Cross](../segment-intersection/cross.md)
+- [Pop Non Left](pop-non-left.md)
 
 ## Sources
 

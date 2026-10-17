@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.Recurrences.ABFibonacciIdentitiesWanted.lucasAB_on
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas AB](lucas-ab.md)
 
 ## Sources
 

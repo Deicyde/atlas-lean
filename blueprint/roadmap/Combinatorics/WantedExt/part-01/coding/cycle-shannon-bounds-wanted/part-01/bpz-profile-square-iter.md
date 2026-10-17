@@ -11,7 +11,11 @@ Repeated exact BPZ profile squaring.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BPZProfile](bpzprofile.md)
+
+## Proof depends on
+
+- [Star](star.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Both non-empty: repeat (`self`); otherwise go to `lt`, `eq` or `gt`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flag](flag.md)
 
 ## Sources
 

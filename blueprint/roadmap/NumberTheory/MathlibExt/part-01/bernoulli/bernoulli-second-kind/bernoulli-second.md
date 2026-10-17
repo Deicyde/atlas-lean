@@ -17,6 +17,10 @@ exponential-generating-function normalization of
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bernoulli Second Power Series](bernoulli-second-power-series.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Bernoulli.BernoulliSecondKind](../../../../../../sources/v2/MathlibExt.md)

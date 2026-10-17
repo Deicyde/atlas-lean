@@ -12,7 +12,13 @@ A singleton has infinite thickness: its only triple is degenerate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R3](r3.md)
+- [Thickness](thickness.md)
+
+## Proof depends on
+
+- [Circumradius ENN](circumradius-enn.md)
+- [Circumradius ENN eq top of eq left](circumradius-enn-eq-top-of-eq-left.md)
 
 ## Sources
 

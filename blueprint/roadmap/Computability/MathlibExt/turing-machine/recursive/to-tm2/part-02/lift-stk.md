@@ -11,7 +11,11 @@ lean: MetaMathlibExt.TM2Recursive.liftStk
 
 ## Depends on
 
-This node has no prerequisites.
+- [FΓ](../part-01/f.md)
+
+## Proof depends on
+
+- [Mk Stk](../part-01/mk-stk.md)
 
 ## Sources
 

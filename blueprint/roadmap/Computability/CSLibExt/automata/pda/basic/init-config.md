@@ -11,7 +11,8 @@ The initial configuration for input `w`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PDA](pda.md)
+- [Config](config.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ the paper's closed form.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Psi](psi.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.StirlingMatrixWanted](../../../../../../../sources/v2/WantedExt.md)

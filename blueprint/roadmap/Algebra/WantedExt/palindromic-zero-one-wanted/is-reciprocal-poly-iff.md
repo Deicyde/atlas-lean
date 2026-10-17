@@ -12,7 +12,7 @@ Characterization of `IsReciprocalPoly`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Reciprocal Poly](is-reciprocal-poly.md)
 
 ## Sources
 

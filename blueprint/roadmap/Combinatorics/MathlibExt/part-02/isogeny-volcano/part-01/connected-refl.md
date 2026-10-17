@@ -13,12 +13,7 @@ Every vertex connects to itself.
 
 ## Depends on
 
-- [Multigraph](multigraph.md)
-- [Connected](connected.md)
-
-## Proof depends on
-
-- [Adj](adj.md)
+This node has no prerequisites.
 
 ## Sources
 

@@ -12,7 +12,13 @@ The upper chain is a sublist of the reversed input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Hull](upper-hull.md)
+
+## Proof depends on
+
+- [Lower Hull](../convex-hull/lower-hull.md)
+- [Lower Hull sublist](../convex-hull/lower-hull-sublist.md)
+- [Upper Hull eq](upper-hull-eq.md)
 
 ## Sources
 

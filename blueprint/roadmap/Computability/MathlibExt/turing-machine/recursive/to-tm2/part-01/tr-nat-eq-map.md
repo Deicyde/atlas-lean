@@ -12,7 +12,7 @@ lean: MetaMathlibExt.TM2Recursive.trNat_eq_map
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool ToΓ'](bool-to.md)
 
 ## Sources
 

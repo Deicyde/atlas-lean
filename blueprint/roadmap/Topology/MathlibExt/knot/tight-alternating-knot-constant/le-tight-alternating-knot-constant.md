@@ -13,7 +13,8 @@ alternating knot constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible Alternating](is-admissible-alternating.md)
+- [Tight Alternating Knot Constant](tight-alternating-knot-constant.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ A substitution that already sends `x` to `t.subst s` absorbs `single x t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subst](subst.md)
+- [Comp](comp.md)
+- [Single](single.md)
+- [Term](term.md)
+- [Subst](subst-2.md)
 
 ## Sources
 

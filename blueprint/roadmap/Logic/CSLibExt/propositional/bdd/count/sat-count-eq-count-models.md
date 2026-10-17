@@ -13,7 +13,17 @@ lean: Cslib.Logic.PL.BDD.satCount_eq_countModels
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](../basic/bdd.md)
+- [Ordered From](../basic/ordered-from.md)
+- [Vars LT](vars-lt.md)
+- [Count Models](count-models.md)
+- [Eval](../basic/eval.md)
+- [Sat Count](sat-count.md)
+
+## Proof depends on
+
+- [Sat Count From](sat-count-from.md)
+- [Sat Count From eq count Models](sat-count-from-eq-count-models.md)
 
 ## Sources
 

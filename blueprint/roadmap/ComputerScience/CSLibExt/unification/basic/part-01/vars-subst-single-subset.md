@@ -13,7 +13,9 @@ variables of `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](term.md)
+- [Subst](subst-2.md)
+- [Vars](vars.md)
 
 ## Sources
 

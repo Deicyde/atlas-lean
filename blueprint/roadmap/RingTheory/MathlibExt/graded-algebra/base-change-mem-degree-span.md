@@ -20,6 +20,7 @@ graded free resolution and take the degree-`α` component after tensoring with `
 ## Depends on
 
 - [Multigraded Free Module](multigraded-free-resolution/multigraded-free-module.md)
+- [Multigraded Polynomial Module](multigraded-polynomial-module/multigraded-polynomial-module.md)
 - [Zero Eval](multigraded-betti/zero-eval.md)
 
 ## Proof depends on

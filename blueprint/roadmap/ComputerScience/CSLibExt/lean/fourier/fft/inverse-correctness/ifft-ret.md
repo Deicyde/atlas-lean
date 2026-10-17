@@ -12,7 +12,13 @@ The actual inverse returns the normalized actual FFT at the conjugated root.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft](../../fft-2/fft.md)
+- [Ifft](../inverse/ifft.md)
+
+## Proof depends on
+
+- [Fft Conjugate](../inverse/fft-conjugate.md)
+- [Fft conjugate ret](fft-conjugate-ret.md)
 
 ## Sources
 

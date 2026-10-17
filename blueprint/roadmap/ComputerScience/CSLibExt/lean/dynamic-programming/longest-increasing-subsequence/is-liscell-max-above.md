@@ -13,7 +13,13 @@ its cell.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LISCell](is-liscell.md)
+- [LISTable Spec](listable-spec.md)
+- [Max Above](max-above.md)
+
+## Proof depends on
+
+- [Exists suffix of cons sublist](exists-suffix-of-cons-sublist.md)
 
 ## Sources
 

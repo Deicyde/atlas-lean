@@ -12,7 +12,13 @@ Zero is admissible.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible](is-admissible.md)
+
+## Proof depends on
+
+- [Parametrized Link](../euclidean-link/part-01/parametrized-link.md)
+- [Crossing Number](../regular-projection/part-03/crossing-number.md)
+- [Ropelength](../euclidean-link/part-01/ropelength.md)
 
 ## Sources
 

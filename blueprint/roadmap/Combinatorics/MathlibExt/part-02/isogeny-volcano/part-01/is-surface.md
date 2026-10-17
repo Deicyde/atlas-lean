@@ -10,7 +10,7 @@ Surface vertices.
 
 ## Depends on
 
-- [Isogeny Volcano](isogeny-volcano.md)
+This node has no prerequisites.
 
 ## Sources
 

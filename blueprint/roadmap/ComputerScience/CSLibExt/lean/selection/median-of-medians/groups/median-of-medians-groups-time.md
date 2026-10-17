@@ -12,7 +12,13 @@ Group sorting spends at most two comparisons per input occurrence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Median Of Medians Groups](median-of-medians-groups.md)
+
+## Proof depends on
+
+- [Insertion Sort](../../../sort/insertion-cost/insertion-sort.md)
+- [Insertion Sort time](../../../sort/insertion-cost/insertion-sort-time.md)
+- [To Chunks](../../../../../../Data/MathlibExt/list/length-le-of-mem-to-chunks.md)
 
 ## Sources
 

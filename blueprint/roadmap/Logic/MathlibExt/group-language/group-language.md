@@ -13,6 +13,10 @@ The first-order language of groups.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Group Function](group-function.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.ModelTheory.GroupLanguage](../../../../sources/v2/MathlibExt.md)

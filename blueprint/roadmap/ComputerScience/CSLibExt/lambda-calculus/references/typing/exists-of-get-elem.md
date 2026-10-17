@@ -12,7 +12,11 @@ Every location the store typing knows holds a value of the right type.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Type](has-type.md)
+- [Store Typed](store-typed.md)
+- [Term](../syntax/term.md)
+- [Value](../syntax/value.md)
+- [Ty](../syntax/ty.md)
 
 ## Sources
 

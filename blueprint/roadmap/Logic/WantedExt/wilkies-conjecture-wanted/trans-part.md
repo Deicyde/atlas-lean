@@ -13,6 +13,10 @@ If `X ⊆ ℝⁿ` then we denote `Xᵗʳᵃⁿˢ := X \ Xᵃˡᵍ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Alg Part](alg-part.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.ModelTheory.WilkiesConjectureWanted](../../../../sources/v2/WantedExt.md)

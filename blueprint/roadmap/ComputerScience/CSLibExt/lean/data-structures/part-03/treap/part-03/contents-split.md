@@ -14,12 +14,12 @@ Splitting decomposes inorder contents around the optional pivot entry.
 ## Depends on
 
 - [Tree](../part-01/tree.md)
+- [Split Result](../part-01/split-result.md)
 - [Contents](../part-01/contents.md)
 - [Split](../part-01/split.md)
 
 ## Proof depends on
 
-- [Split Result](../part-01/split-result.md)
 - [Contents Aux](../part-01/contents-aux.md)
 - [Contents node](../part-01/contents-node.md)
 

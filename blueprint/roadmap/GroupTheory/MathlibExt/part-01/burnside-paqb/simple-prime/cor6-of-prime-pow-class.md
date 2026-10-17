@@ -28,6 +28,7 @@ with `β` an algebraic integer.
 - [Char Fun triv](../character-orthogonality/part-01/char-fun-triv.md)
 - [Rep Bundle](../character-orthogonality/part-01/rep-bundle.md)
 - [Triv](../character-orthogonality/part-01/triv.md)
+- [Card Bound](../character-orthogonality/part-01/card-bound.md)
 - [Card eq prime of nontrivial linear](card-eq-prime-of-nontrivial-linear.md)
 - [Char zero of nonlinear of coprime](char-zero-of-nonlinear-of-coprime.md)
 - [Character is Integral](../killing-lemma/character-is-integral.md)

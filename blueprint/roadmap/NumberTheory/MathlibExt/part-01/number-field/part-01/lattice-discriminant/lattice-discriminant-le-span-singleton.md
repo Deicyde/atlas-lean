@@ -13,10 +13,6 @@ Upper bound for the lattice discriminant from a containing basis lattice.
 
 ## Depends on
 
-- [Lattice Discriminant](lattice-discriminant.md)
-
-## Proof depends on
-
 - [Lattice Discriminant Set](lattice-discriminant-set.md)
 
 ## Sources

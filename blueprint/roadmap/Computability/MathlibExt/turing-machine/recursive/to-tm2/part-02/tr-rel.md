@@ -11,7 +11,14 @@ A configuration of `tr` and the corresponding configuration of the wrapped machi
 
 ## Depends on
 
-This node has no prerequisites.
+- [FCfg](../part-01/fcfg.md)
+
+## Proof depends on
+
+- [FΓ](../part-01/f.md)
+- [FΛ](../part-01/f-2.md)
+- [Label Rel](label-rel.md)
+- [Lift Stk](lift-stk.md)
 
 ## Sources
 

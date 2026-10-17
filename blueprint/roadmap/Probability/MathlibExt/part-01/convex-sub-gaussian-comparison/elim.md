@@ -14,7 +14,9 @@ variable forward to a probability measure on `ℝ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convex Dominated](convex-dominated.md)
+- [Is Admissible Constant](is-admissible-constant.md)
+- [Is One Sub Gaussian Tail](is-one-sub-gaussian-tail.md)
 
 ## Sources
 

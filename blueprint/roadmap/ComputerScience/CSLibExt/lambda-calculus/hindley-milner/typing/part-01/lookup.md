@@ -11,7 +11,8 @@ The visible scheme of a name.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ctx](ctx.md)
+- [Scheme](scheme.md)
 
 ## Sources
 

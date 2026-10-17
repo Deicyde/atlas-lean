@@ -18,7 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Disc](disc.md)
 - [HInfinity](hinfinity.md)
+- [HInfinity Subring](hinfinity-subring.md)
 
 ## Sources
 

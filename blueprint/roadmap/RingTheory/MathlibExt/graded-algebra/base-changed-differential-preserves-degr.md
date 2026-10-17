@@ -23,6 +23,8 @@ base-changed differential maps the degree-`α` piece to itself.
 
 ## Proof depends on
 
+- [Is Degree Zero](multigraded-free-resolution/is-degree-zero.md)
+- [Multigraded Free Module](multigraded-free-resolution/multigraded-free-module.md)
 - [Multigraded Zero Eval Base Change](base-change-mem-degree-span.md)
 - [Zero Eval](multigraded-betti/zero-eval.md)
 

@@ -12,7 +12,12 @@ The tight alternating knot constant is nonnegative.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tight Alternating Knot Constant](tight-alternating-knot-constant.md)
+
+## Proof depends on
+
+- [Is Admissible Alternating zero](is-admissible-alternating-zero.md)
+- [Le tight Alternating Knot Constant](le-tight-alternating-knot-constant.md)
 
 ## Sources
 

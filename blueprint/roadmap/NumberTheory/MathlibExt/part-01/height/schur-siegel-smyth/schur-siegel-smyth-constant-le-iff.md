@@ -13,7 +13,12 @@ admissible coefficients.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible](is-admissible.md)
+- [Schur Siegel Smyth Constant](schur-siegel-smyth-constant.md)
+
+## Proof depends on
+
+- [Coe le schur Siegel Smyth Constant](coe-le-schur-siegel-smyth-constant.md)
 
 ## Sources
 

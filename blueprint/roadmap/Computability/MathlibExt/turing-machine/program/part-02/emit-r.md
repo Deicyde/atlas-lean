@@ -13,6 +13,10 @@ Prepend `ys` to stack `k` (so `ys` reads top-down): `emit` of the reversed list.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Emit](../part-01/emit.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.TuringMachine.Program](../../../../../../sources/v2/MathlibExt.md)

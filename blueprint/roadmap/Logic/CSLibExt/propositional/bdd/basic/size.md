@@ -11,7 +11,7 @@ The number of leaves and nodes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](bdd.md)
 
 ## Sources
 

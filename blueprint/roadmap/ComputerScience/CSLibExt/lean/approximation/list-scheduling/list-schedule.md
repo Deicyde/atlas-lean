@@ -13,6 +13,10 @@ Graham's list scheduling: each job, in the given order, goes to a least-loaded m
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [List Schedule Scan](list-schedule-scan.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Approximation.ListScheduling](../../../../../../sources/v2/CSLibExt.md)

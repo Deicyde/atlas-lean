@@ -14,7 +14,15 @@ when `s = t`), and then `uhierholzer E s` finds one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even Except](even-except.md)
+- [Is UEuler Path](is-ueuler-path.md)
+- [UReach](ureach.md)
+
+## Proof depends on
+
+- [Even Except of is UEuler Path](even-except-of-is-ueuler-path.md)
+- [Uhierholzer](uhierholzer.md)
+- [Euler paths](uhierholzer-is-ueuler-path.md)
 
 ## Sources
 

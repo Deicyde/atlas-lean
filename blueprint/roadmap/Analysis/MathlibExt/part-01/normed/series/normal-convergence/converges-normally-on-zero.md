@@ -13,11 +13,10 @@ The zero series converges normally on every set.
 
 ## Depends on
 
-- [Converges Normally On](converges-normally-on.md)
+- [Sup Norm On](sup-norm-on.md)
 
 ## Proof depends on
 
-- [Sup Norm On](sup-norm-on.md)
 - [Sup Norm On zero](sup-norm-on-zero.md)
 
 ## Sources

@@ -12,7 +12,13 @@ A universal formula in a maximal consistent set has all its instances there.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Consistent](maximal-consistent.md)
+- [Instantiate](../syntax/instantiate.md)
+
+## Proof depends on
+
+- [Natural deduction](../natural-deduction/derivable.md)
+- [Mem of provable](mem-of-provable.md)
 
 ## Sources
 

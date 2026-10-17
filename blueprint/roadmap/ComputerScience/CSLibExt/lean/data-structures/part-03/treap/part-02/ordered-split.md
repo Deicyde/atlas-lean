@@ -15,12 +15,12 @@ Splitting preserves strict BST ordering in both output trees.
 
 - [Tree](../part-01/tree.md)
 - [Ordered](../part-01/ordered.md)
+- [Split Result](../part-01/split-result.md)
 - [Split](../part-01/split.md)
 
 ## Proof depends on
 
 - [All Nodes](../part-01/all-nodes.md)
-- [Split Result](../part-01/split-result.md)
 
 ## Sources
 

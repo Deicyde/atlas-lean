@@ -14,6 +14,10 @@ Strong induction bounds a function with the BFPRT recursive child sizes.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Median Of Medians combine time](median-of-medians-combine-time.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Selection.MedianOfMedians](../../../../../../sources/v2/CSLibExt.md)

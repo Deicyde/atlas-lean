@@ -14,7 +14,11 @@ triples.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R3](r3.md)
+
+## Proof depends on
+
+- [Circumradius ENN](circumradius-enn.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ The source of a restricted edge: the ambient source, in the subtype.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Labeled Digraph](labeled-digraph.md)
+- [Restrict](restrict.md)
 
 ## Sources
 

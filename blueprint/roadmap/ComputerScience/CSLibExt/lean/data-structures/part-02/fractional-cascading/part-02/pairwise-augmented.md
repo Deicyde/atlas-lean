@@ -12,7 +12,13 @@ Every augmented catalog of sorted catalogs is sorted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Augmented](augmented.md)
+
+## Proof depends on
+
+- [Augment Head](augment-head.md)
+- [Augment One](augment-one.md)
+- [Pairwise augment One](pairwise-augment-one.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Constructor for an imaginary quadratic discriminant.
 
 ## Depends on
 
-- [Is Imaginary Quadratic Discriminant](is-imaginary-quadratic-discriminant.md)
+This node has no prerequisites.
 
 ## Sources
 

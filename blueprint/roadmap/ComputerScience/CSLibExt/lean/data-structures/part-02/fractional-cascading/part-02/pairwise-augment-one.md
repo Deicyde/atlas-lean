@@ -12,7 +12,12 @@ An augmented catalog is sorted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Augment One](augment-one.md)
+
+## Proof depends on
+
+- [Pairwise sorted Merge](../part-01/pairwise-sorted-merge.md)
+- [Sample](../part-01/sample.md)
 
 ## Sources
 

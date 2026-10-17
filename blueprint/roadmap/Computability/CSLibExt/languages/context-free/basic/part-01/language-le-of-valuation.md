@@ -13,7 +13,13 @@ any valuation assigns to its initial nonterminal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Valuation](is-valuation.md)
+
+## Proof depends on
+
+- [Eval Form](eval-form.md)
+- [Eval Form le of derives](eval-form-le-of-derives.md)
+- [Eval Form map terminal](eval-form-map-terminal.md)
 
 ## Sources
 

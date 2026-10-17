@@ -12,7 +12,11 @@ The chosen root is integral over the rational numbers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Imaginary Root](imaginary-root.md)
+
+## Proof depends on
+
+- [Imaginary Root sq](imaginary-root-sq.md)
 
 ## Sources
 

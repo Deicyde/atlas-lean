@@ -12,7 +12,8 @@ The function symbols of the group language are `GroupFunction`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Group Function](group-function.md)
+- [Group Language](group-language.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ The comparison loop: `min m n + 1` steps; afterwards `a` has lost `min m (n+1)` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flag](flag.md)
+- [Run](run.md)
+- [Cmp Step](cmp-step.md)
+- [Cnt](cnt.md)
+
+## Proof depends on
+
+- [Single](single.md)
 
 ## Sources
 

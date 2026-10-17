@@ -12,7 +12,14 @@ The executable traversal conforms to the ordered relational DFS specification.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Left First DFS](is-left-first-dfs.md)
+- [Dfs](dfs.md)
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Steps](steps.md)
+- [Traversal](traversal.md)
 
 ## Sources
 

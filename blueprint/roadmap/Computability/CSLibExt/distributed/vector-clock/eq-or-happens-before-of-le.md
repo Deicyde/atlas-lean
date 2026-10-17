@@ -14,7 +14,21 @@ happened before `b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](../lamport-clock/event.md)
+- [Happens Before](../lamport-clock/happens-before.md)
+- [Timestamps](timestamps.md)
+
+## Proof depends on
+
+- [Step](../lamport-clock/step.md)
+- [Clock Step](clock-step.md)
+- [One le own](one-le-own.md)
+- [Run](run.md)
+- [Run get D](run-get-d.md)
+- [Stamp](stamp.md)
+- [Timestamp le vector](timestamp-le-vector.md)
+- [Timestamps get D eq stamp](timestamps-get-d-eq-stamp.md)
+- [Vector eq](vector-eq.md)
 
 ## Sources
 

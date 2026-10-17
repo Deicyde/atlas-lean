@@ -12,7 +12,14 @@ An event's own entry is positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](../lamport-clock/event.md)
+- [Timestamps](timestamps.md)
+
+## Proof depends on
+
+- [Run](run.md)
+- [Stamp](stamp.md)
+- [Timestamps get D eq stamp](timestamps-get-d-eq-stamp.md)
 
 ## Sources
 

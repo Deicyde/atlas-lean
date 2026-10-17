@@ -11,7 +11,7 @@ The number of `var`, `const`, and `node` symbols.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](term.md)
 
 ## Sources
 

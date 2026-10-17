@@ -11,7 +11,11 @@ Extend a substitution under one binder.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](term.md)
+
+## Proof depends on
+
+- [Rename](rename.md)
 
 ## Sources
 

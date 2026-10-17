@@ -11,7 +11,7 @@ An infinite place, viewed as a place.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Place](place.md)
 
 ## Sources
 

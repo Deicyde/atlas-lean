@@ -14,7 +14,30 @@ for Henkin witnesses.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Consistent](../../consistency/consistent.md)
+
+## Proof depends on
+
+- [Relabel double](../part-01/relabel-double.md)
+- [Natural deduction](../../natural-deduction/derivable.md)
+- [Symm](../../natural-deduction/symm.md)
+- [Trans](../../natural-deduction/trans.md)
+- [Maximal Consistent](../../consistency/maximal-consistent.md)
+- [Func update](../part-01/func-update.md)
+- [Mem of provable](../../consistency/mem-of-provable.md)
+- [Rel update](../part-01/rel-update.md)
+- [Provable](../../natural-deduction/provable.md)
+- [Term Model](../part-01/term-model.md)
+- [Exists maximal Consistent henkin](exists-maximal-consistent-henkin.md)
+- [Formula relabel eq rename](../../syntax/formula-relabel-eq-rename.md)
+- [Free Var Finset rename](../../syntax/free-var-finset-rename.md)
+- [Instantiate](../../syntax/instantiate.md)
+- [Truth lemma](../part-01/realize-term-model-iff.md)
+- [Rename](../../syntax/rename.md)
+- [Term Assignment](../part-01/term-assignment.md)
+- [Term Setoid](../part-01/term-setoid.md)
+- [Term Structure](../part-01/term-structure.md)
+- [Update chain](../part-01/update-chain.md)
 
 ## Sources
 

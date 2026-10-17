@@ -12,7 +12,15 @@ Decreasing finish order contains exactly the rooted reachable vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decreasing Finish](decreasing-finish.md)
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Reachable](../../directed-adjacency-2/part-01/reachable.md)
+
+## Proof depends on
+
+- [Traversal](../part-01/traversal.md)
+- [Dfs](../part-01/dfs.md)
+- [Mem postorder iff reachable](../part-01/mem-postorder-iff-reachable.md)
 
 ## Sources
 

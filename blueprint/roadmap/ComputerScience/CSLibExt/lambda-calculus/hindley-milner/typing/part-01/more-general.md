@@ -12,7 +12,13 @@ other free variables.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scheme](scheme.md)
+
+## Proof depends on
+
+- [Inst](inst.md)
+- [Ty](ty.md)
+- [Vars](../../../../unification/basic/part-01/vars.md)
 
 ## Sources
 

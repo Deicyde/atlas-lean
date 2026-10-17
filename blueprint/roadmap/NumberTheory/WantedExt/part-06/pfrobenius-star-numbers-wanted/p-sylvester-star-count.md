@@ -16,6 +16,10 @@ generators are relatively prime, so this set is finite.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Star Rep Count](star-rep-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.PFrobeniusStarNumbersWanted](../../../../../sources/v2/WantedExt.md)

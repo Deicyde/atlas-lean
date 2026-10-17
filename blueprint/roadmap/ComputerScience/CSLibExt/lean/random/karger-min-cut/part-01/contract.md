@@ -11,7 +11,11 @@ Contract the edge `e`: merge `e.2` into `e.1` and delete the resulting self-loop
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [Rename](rename.md)
 
 ## Sources
 

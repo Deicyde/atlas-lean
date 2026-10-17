@@ -12,7 +12,15 @@ Patience sorting uses at most `n * ⌈log₂ (n + 1)⌉` comparisons.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Patience Length](patience-length.md)
+
+## Proof depends on
+
+- [Lower Bound](../../search/lower-bound/lower-bound.md)
+- [Lower Bound time le](../../search/lower-bound/lower-bound-time-le.md)
+- [Patience Scan](patience-scan.md)
+- [Patience Step](patience-step.md)
+- [Patience Step size le](patience-step-size-le.md)
 
 ## Sources
 

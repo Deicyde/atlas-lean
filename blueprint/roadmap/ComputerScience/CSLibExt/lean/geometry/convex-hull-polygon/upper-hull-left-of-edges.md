@@ -12,7 +12,14 @@ Every input point is on or left of every edge of the upper chain.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cross](../segment-intersection/cross.md)
+- [Upper Hull](upper-hull.md)
+
+## Proof depends on
+
+- [Lower Hull](../convex-hull/lower-hull.md)
+- [Lower Hull left of edges](../convex-hull/lower-hull-left-of-edges.md)
+- [Upper Hull eq](upper-hull-eq.md)
 
 ## Sources
 

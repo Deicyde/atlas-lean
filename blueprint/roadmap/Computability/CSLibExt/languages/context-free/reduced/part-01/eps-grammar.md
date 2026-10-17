@@ -15,6 +15,10 @@ output and discarding the empty output.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nullable Deletions](nullable-deletions.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.Reduced](../../../../../../../sources/v2/CSLibExt.md)

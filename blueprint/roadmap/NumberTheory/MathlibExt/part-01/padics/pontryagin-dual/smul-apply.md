@@ -14,7 +14,9 @@ The contragredient action evaluates by precomposition with the inverse action.
 ## Depends on
 
 - [Padic Pontryagin Dual](padic-pontryagin-dual.md)
+- [Padic Pontryagin Dual ext](padic-pontryagin-dual-ext.md)
 - [Padic Quotient Int](padic-quotient-int.md)
+- [Contragredient SMul](contragredient-smul.md)
 
 ## Sources
 

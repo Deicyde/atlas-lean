@@ -12,7 +12,14 @@ The dead set of `searchPath` only grows.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Search Path](search-path.md)
+
+## Proof depends on
+
+- [Layers](../part-01/layers.md)
+- [Partner Of](partner-of.md)
+- [Try Preds](try-preds.md)
+- [Try Preds mono](try-preds-mono.md)
 
 ## Sources
 

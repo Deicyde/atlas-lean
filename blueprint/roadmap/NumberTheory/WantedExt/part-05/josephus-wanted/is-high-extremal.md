@@ -14,6 +14,10 @@ a low extremal point.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Low Extremal](is-low-extremal.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.JosephusWanted](../../../../../sources/v2/WantedExt.md)

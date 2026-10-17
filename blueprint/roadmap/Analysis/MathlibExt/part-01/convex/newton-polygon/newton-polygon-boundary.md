@@ -12,10 +12,6 @@ Boundary of the Newton polygon, via the frontier.
 
 This node has no prerequisites.
 
-## Proof depends on
-
-- [Newton Polygon](newton-polygon.md)
-
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Convex.NewtonPolygon](../../../../../../sources/v2/MathlibExt.md)

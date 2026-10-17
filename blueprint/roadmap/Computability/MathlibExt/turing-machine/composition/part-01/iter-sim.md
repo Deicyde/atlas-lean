@@ -15,6 +15,10 @@ intermediate configuration of a run that ends in `some d` is live.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Iter none](../../program/part-01/iter-none.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.TuringMachine.Composition](../../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,7 @@ Searching no catalogs gives no positions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Search All](../part-02/search-all.md)
 
 ## Sources
 

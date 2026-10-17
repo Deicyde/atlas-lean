@@ -12,7 +12,11 @@ The returned median list has the actual ceiling of the number of columns.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Median Of Medians Groups](median-of-medians-groups.md)
+
+## Proof depends on
+
+- [Median Of Medians Groups correct](median-of-medians-groups-correct.md)
 
 ## Sources
 

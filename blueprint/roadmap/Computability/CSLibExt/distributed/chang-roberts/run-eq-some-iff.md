@@ -12,7 +12,13 @@ Running a schedule is exactly a multistep transition along it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Lts](lts.md)
+- [Run](run.md)
+
+## Proof depends on
+
+- [Deliver](deliver.md)
 
 ## Sources
 

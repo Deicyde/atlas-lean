@@ -14,6 +14,10 @@ direction is zero.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [On Segment](on-segment.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Geometry.SegmentIntersection](../../../../../../sources/v2/CSLibExt.md)

@@ -13,7 +13,13 @@ with `mk`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](../basic/bdd.md)
+- [Reduced](../basic/reduced.md)
+- [Restrict](restrict.md)
+
+## Proof depends on
+
+- [Mk](../basic/mk.md)
 
 ## Sources
 

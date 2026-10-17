@@ -12,7 +12,12 @@ Timestamps are determined by the prefix up to the event.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
+- [Timestamps](timestamps.md)
+
+## Proof depends on
+
+- [Timestamps append](timestamps-append.md)
 
 ## Sources
 

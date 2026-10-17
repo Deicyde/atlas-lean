@@ -17,6 +17,7 @@ The source and target of the completion tensor-product map have equal dimension.
 
 ## Proof depends on
 
+- [Places Over Equiv Primes Over](../finite-places-over/places-over-equiv-primes-over.md)
 - [Sum finrank adic Completion places Over](sum-finrank-adic-completion-places-over.md)
 
 ## Sources

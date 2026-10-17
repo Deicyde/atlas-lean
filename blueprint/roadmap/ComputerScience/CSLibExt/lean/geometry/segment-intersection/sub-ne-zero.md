@@ -65,7 +65,7 @@ theorem mem_segment_of_direction_eq_zero {p q r : 𝕜 × 𝕜} (hd : direction 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Straddles](straddles.md)
 
 ## Sources
 

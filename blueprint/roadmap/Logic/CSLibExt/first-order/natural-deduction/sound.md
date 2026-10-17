@@ -13,7 +13,14 @@ structure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Natural deduction](derivable.md)
+
+## Proof depends on
+
+- [Instantiate](../syntax/instantiate.md)
+- [Realize all formula](../syntax/realize-all-formula.md)
+- [Realize congr](../syntax/realize-congr.md)
+- [Realize instantiate formula](../syntax/realize-instantiate-formula.md)
 
 ## Sources
 

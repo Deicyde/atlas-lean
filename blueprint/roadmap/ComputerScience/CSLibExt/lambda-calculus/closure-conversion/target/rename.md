@@ -12,7 +12,11 @@ unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tm](tm.md)
+
+## Proof depends on
+
+- [Lift Ren](lift-ren.md)
 
 ## Sources
 

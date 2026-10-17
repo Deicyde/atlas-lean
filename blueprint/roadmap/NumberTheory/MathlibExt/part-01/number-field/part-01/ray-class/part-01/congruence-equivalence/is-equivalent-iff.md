@@ -13,6 +13,7 @@ Unfolding of `IsEquivalent` to the intersection formula.
 
 ## Depends on
 
+- [Congruence Subgroup](../congruence-subgroup/congruence-subgroup.md)
 - [To Ambient Subgroup](../congruence-subgroup/to-ambient-subgroup.md)
 - [Congruence Subgroup Pair](congruence-subgroup-pair.md)
 - [Is Equivalent](is-equivalent.md)

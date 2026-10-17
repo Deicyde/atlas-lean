@@ -15,7 +15,12 @@ cycles of `nextPerm` are not themselves the components.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dart Diagram](dart-diagram.md)
+- [Dart](dart.md)
+
+## Proof depends on
+
+- [Opposite](opposite.md)
 
 ## Sources
 

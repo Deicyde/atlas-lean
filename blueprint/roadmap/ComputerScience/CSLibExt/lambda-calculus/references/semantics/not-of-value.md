@@ -12,7 +12,15 @@ Values are normal forms.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Step](step.md)
+- [Store](store.md)
+- [Term](../syntax/term.md)
+- [Value](../syntax/value.md)
+
+## Proof depends on
+
+- [Instantiate](../syntax/instantiate.md)
+- [Ty](../syntax/ty.md)
 
 ## Sources
 

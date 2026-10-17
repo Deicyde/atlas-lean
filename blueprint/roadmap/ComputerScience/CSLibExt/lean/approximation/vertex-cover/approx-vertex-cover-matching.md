@@ -14,7 +14,14 @@ them, the returned cover is exactly their endpoints, and it has `2 * A.length` v
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertex Disjoint](vertex-disjoint.md)
+- [Approx Vertex Cover](approx-vertex-cover.md)
+
+## Proof depends on
+
+- [Approx Vertex Cover covers](approx-vertex-cover-covers.md)
+- [Exists matching vertex Cover Scan](exists-matching-vertex-cover-scan.md)
+- [Vertex Cover Scan](vertex-cover-scan.md)
 
 ## Sources
 

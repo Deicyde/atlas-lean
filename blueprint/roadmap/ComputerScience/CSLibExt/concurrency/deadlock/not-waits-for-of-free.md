@@ -12,7 +12,8 @@ A request for a free resource creates no wait-for edge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alloc State](alloc-state.md)
+- [Waits For](waits-for.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ in its output.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Yields](../yields/yields.md)
+- [Yields Context](yields-context.md)
+
+## Proof depends on
+
+- [Append](../yields/append.md)
+- [Yields of rule](../yields/yields-of-rule.md)
 
 ## Sources
 

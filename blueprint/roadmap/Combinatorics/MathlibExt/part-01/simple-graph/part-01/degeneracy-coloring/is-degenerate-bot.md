@@ -12,7 +12,7 @@ The edgeless graph is `k`-degenerate for every `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Degenerate](../degeneracy/is-degenerate.md)
 
 ## Sources
 

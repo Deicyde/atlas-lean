@@ -12,7 +12,14 @@ Transposition preserves semantic graph equivalence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../part-01/directed-adjacency.md)
+- [Semantically Equivalent](../part-01/semantically-equivalent.md)
+- [Transpose](../part-01/transpose.md)
+
+## Proof depends on
+
+- [Edge](../part-01/edge.md)
+- [Edge transpose](../part-01/edge-transpose.md)
 
 ## Sources
 

@@ -13,7 +13,12 @@ accumulator; disjunction-like nodes go through `cnfOr`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+
+## Proof depends on
+
+- [Disj](disj.md)
+- [CNFClause](../basic/cnfclause.md)
 
 ## Sources
 

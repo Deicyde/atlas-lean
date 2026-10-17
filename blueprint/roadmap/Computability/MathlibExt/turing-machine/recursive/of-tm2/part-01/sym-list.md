@@ -13,6 +13,11 @@ The relevant symbols of stack `k`, listed.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Pushes](pushes.md)
+- [Relevant](relevant.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.TuringMachine.Recursive.OfTM2](../../../../../../../sources/v2/MathlibExt.md)

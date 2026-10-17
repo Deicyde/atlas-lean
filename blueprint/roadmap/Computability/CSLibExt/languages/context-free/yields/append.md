@@ -12,7 +12,7 @@ Yields over an append of sentential forms concatenates contributions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Yields](yields.md)
 
 ## Sources
 

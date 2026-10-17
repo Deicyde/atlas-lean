@@ -11,7 +11,11 @@ The processes that the detection algorithm lets finish, in order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [Reduce Aux](reduce-aux.md)
 
 ## Sources
 

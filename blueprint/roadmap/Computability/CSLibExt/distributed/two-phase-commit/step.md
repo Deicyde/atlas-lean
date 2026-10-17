@@ -11,7 +11,8 @@ The transitions of the protocol.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Action](action.md)
+- [State](state.md)
 
 ## Sources
 

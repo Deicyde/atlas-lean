@@ -13,6 +13,10 @@ The language of rings plus exponentials contains function symbols `(+,*,-,0,1,ex
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exp](exp.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.ModelTheory.WilkiesConjectureWanted](../../../../sources/v2/WantedExt.md)

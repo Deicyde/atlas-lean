@@ -14,6 +14,10 @@ It is not asserted.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Seshadri Constant10](../../MathlibExt/seshadri-constant/seshadri-constant10.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.AlgebraicGeometry.SeshadriConstantWanted](../../../../sources/v2/WantedExt.md)

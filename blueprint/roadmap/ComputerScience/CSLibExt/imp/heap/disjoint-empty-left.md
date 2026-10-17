@@ -12,7 +12,8 @@ The empty heap is disjoint from every heap on the left.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heap](heap.md)
+- [Disjoint](disjoint.md)
 
 ## Sources
 

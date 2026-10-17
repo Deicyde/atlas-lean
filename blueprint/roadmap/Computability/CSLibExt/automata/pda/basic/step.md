@@ -12,7 +12,8 @@ input letter, move to the chosen state, and push the chosen list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PDA](pda.md)
+- [Config](config.md)
 
 ## Sources
 

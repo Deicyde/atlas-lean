@@ -11,7 +11,11 @@ Reversing an ambient isotopy by using its inverse family.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ambient Isotopy](ambient-isotopy.md)
+
+## Proof depends on
+
+- [R3](../../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
 
 ## Sources
 

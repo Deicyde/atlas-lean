@@ -13,7 +13,17 @@ lean: MetaMathlibExt.TM2Program.mul_run
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flag](../part-01/flag.md)
+- [Run](../part-01/run.md)
+- [Cnt](../part-01/cnt.md)
+- [For Head](../part-01/for-head.md)
+- [Xfer](../part-01/xfer.md)
+
+## Proof depends on
+
+- [Copy run](copy-run.md)
+- [For Loop run](../part-01/for-loop-run.md)
+- [Sum From](../part-01/sum-from.md)
 
 ## Sources
 

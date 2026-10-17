@@ -15,7 +15,12 @@ characteristic elimination rule for proving upper bounds on
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible](is-admissible.md)
+- [Tight Knot Constant](tight-knot-constant.md)
+
+## Proof depends on
+
+- [Le tight Knot Constant](le-tight-knot-constant.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ Whole-graph decreasing finish order contains no duplicate vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decreasing Finish All](decreasing-finish-all.md)
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Decreasing Finish nodup](decreasing-finish-nodup.md)
 
 ## Sources
 

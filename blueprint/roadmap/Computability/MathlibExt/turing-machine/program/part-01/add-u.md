@@ -15,6 +15,10 @@ the first entry is the only one.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cnt](cnt.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.TuringMachine.Program](../../../../../../sources/v2/MathlibExt.md)

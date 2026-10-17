@@ -13,7 +13,10 @@ abstraction with parameter type `T₁`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Type](has-type.md)
+- [Term](../syntax/term.md)
+- [Value](../syntax/value.md)
+- [Ty](../syntax/ty.md)
 
 ## Sources
 

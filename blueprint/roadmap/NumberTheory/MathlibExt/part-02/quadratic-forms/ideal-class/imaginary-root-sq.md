@@ -12,7 +12,7 @@ The concrete chosen root squares to the requested negative radicand.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Imaginary Root](imaginary-root.md)
 
 ## Sources
 

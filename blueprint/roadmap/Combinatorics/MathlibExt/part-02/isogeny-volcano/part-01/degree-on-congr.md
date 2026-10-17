@@ -10,8 +10,7 @@ origin: cited
 
 ## Depends on
 
-- [Multigraph](multigraph.md)
-- [Degree On](degree-on.md)
+This node has no prerequisites.
 
 ## Sources
 

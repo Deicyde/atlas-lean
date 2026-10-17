@@ -11,7 +11,11 @@ Shift every free variable up by one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tm](tm.md)
+
+## Proof depends on
+
+- [Rename](rename.md)
 
 ## Sources
 

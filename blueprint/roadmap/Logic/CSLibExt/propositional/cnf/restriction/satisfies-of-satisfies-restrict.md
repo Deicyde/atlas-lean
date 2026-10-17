@@ -13,7 +13,16 @@ restricted variable to satisfy the original formula.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+- [Satisfies](../semantics/satisfies-3.md)
+- [Restrict](restrict-2.md)
+
+## Proof depends on
+
+- [Not mem vars restrict](not-mem-vars-restrict.md)
+- [Satisfies congr](satisfies-congr.md)
+- [Satisfies restrict iff](satisfies-restrict-iff-2.md)
+- [Vars](vars-2.md)
 
 ## Sources
 

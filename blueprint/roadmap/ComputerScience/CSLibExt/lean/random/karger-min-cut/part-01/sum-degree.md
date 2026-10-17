@@ -12,7 +12,9 @@ Handshake lemma: the singleton cuts count every edge twice.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Valid](valid.md)
+- [Cut Size](cut-size.md)
 
 ## Sources
 

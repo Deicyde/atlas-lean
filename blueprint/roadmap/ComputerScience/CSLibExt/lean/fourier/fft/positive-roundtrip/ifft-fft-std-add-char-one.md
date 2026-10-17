@@ -12,7 +12,13 @@ Execute positive-sign forward and source inverse on every admitted vector.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft](../../fft-2/fft.md)
+- [Ifft](../inverse/ifft.md)
+
+## Proof depends on
+
+- [Fft std Add Char one normalized](../canonical-dft/fft-std-add-char-one-normalized.md)
+- [Ifft std Add Char one](../inverse-canonical-dft/ifft-std-add-char-one.md)
 
 ## Sources
 

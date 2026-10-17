@@ -12,7 +12,16 @@ Restricting an ordered diagram gives a reduced ordered one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](../basic/bdd.md)
+- [Is ROBDD](../basic/is-robdd.md)
+- [Ordered From](../basic/ordered-from.md)
+- [Restrict](restrict.md)
+
+## Proof depends on
+
+- [Reduced](../basic/reduced.md)
+- [Mk](../basic/mk.md)
+- [Reduced restrict](reduced-restrict.md)
 
 ## Sources
 

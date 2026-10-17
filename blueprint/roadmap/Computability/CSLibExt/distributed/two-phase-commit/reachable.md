@@ -12,7 +12,13 @@ The states reachable from the initial state, by upstream `LTS.CanReach`
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [Action](action.md)
+- [Initial](initial.md)
+- [Lts](lts.md)
 
 ## Sources
 

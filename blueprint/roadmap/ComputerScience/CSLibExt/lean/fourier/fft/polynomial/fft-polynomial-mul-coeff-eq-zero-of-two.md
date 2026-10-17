@@ -12,7 +12,11 @@ Every coefficient past the twice-sized output range is zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Polynomial](fft-polynomial.md)
+
+## Proof depends on
+
+- [Fft Polynomial mul coeff](fft-polynomial-mul-coeff.md)
 
 ## Sources
 

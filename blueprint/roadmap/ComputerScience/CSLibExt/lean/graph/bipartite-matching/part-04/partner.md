@@ -13,7 +13,14 @@ first reached in round `k + 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Level](exact-level.md)
+- [Valid](../part-01/valid.md)
+- [Layers](../part-01/layers.md)
+
+## Proof depends on
+
+- [Free](../part-01/free.md)
+- [Exists mate of mem layers](../part-01/exists-mate-of-mem-layers.md)
 
 ## Sources
 

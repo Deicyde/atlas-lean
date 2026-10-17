@@ -13,7 +13,15 @@ discovered vertices, and scanned adjacency entries, including repetitions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Traversal](../depth-first-search/part-01/traversal.md)
+- [Dfs](../depth-first-search/part-01/dfs.md)
+- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Steps](../depth-first-search/part-01/steps.md)
+- [Is Left First DFS](../depth-first-search/part-01/is-left-first-dfs.md)
+- [Dfs is left first](../depth-first-search/part-01/dfs-is-left-first.md)
 
 ## Sources
 

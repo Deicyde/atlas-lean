@@ -14,6 +14,10 @@ other bound variables down by one.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Instantiate Term](instantiate-term.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Logics.FirstOrder.Syntax](../../../../../sources/v2/CSLibExt.md)

@@ -11,7 +11,7 @@ The square follows a two-segment translation through the corner.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motion](motion.md)
 
 ## Sources
 

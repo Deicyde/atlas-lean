@@ -12,7 +12,7 @@ Renaming nonterminals does not change a form of pure terminals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Map Symbol](map-symbol.md)
 
 ## Sources
 

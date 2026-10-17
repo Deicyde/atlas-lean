@@ -11,7 +11,11 @@ The number of incoming edges to `v` whose sources lie in `remaining`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Has Edge](../directed-adjacency-2/part-02/has-edge.md)
 
 ## Sources
 

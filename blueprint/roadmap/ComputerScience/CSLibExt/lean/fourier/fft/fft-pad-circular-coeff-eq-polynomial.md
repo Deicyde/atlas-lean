@@ -12,7 +12,14 @@ Actual stored zero padding makes every cyclic coefficient a linear product coeff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Pad](convolution/fft-pad.md)
+- [Fft Polynomial](polynomial/fft-polynomial.md)
+
+## Proof depends on
+
+- [Fft Polynomial coeff](polynomial/fft-polynomial-coeff.md)
+- [Fft Polynomial fft Pad](polynomial/fft-polynomial-fft-pad.md)
+- [Fft Polynomial mul coeff](polynomial/fft-polynomial-mul-coeff.md)
 
 ## Sources
 

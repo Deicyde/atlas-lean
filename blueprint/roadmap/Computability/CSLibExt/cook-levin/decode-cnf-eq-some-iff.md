@@ -14,6 +14,7 @@ A complete CNF decoder succeeds exactly on the canonical encoding of its result.
 
 - [Decode CNF](decode-cnf.md)
 - [Encode CNF](encode-cnf.md)
+- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
@@ -28,6 +29,7 @@ A complete CNF decoder succeeds exactly on the canonical encoding of its result.
 - [Encode Nat Prefix](encode-nat-prefix.md)
 - [Read Unary Length](read-unary-length.md)
 - [Undelimit eq some iff](undelimit-eq-some-iff.md)
+- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 - [Delimit](../../MathlibExt/complexity/delimit.md)
 - [Undelimit](../../MathlibExt/complexity/undelimit.md)
 

@@ -14,6 +14,10 @@ larger than `1`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Int Mahler Measure](int-mahler-measure.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Height.LehmerConstant](../../../../../../sources/v2/MathlibExt.md)

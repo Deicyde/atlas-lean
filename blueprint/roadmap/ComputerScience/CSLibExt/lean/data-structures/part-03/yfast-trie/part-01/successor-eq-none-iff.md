@@ -23,6 +23,7 @@ The successor is `none` exactly when no stored key is greater than `x`.
 - [Group Ordered](group-ordered.md)
 - [Find Group](find-group.md)
 - [Mem contents iff](mem-contents-iff.md)
+- [XFast Trie](../../xfast-trie/part-01/xfast-trie.md)
 - [Valid](../../xfast-trie/part-01/valid.md)
 - [Successor](../../xfast-trie/part-01/successor.md)
 - [Successor eq none iff](../../xfast-trie/part-01/successor-eq-none-iff.md)

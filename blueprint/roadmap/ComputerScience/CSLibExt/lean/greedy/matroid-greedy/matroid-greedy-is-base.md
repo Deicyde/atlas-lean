@@ -12,7 +12,12 @@ If `es` lists exactly the ground set, the result is a base.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matroid Greedy](matroid-greedy.md)
+
+## Proof depends on
+
+- [Matroid Greedy Scan](matroid-greedy-scan.md)
+- [Matroid Greedy Scan spec](matroid-greedy-scan-spec.md)
 
 ## Sources
 

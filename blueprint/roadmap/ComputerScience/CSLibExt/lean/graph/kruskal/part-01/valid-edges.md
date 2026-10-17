@@ -17,6 +17,7 @@ Validate endpoints and attach original input ordinals; malformed edges are omitt
 
 ## Proof depends on
 
+- [Raw Edge](raw-edge.md)
 - [Valid Edges From](valid-edges-from.md)
 
 ## Sources

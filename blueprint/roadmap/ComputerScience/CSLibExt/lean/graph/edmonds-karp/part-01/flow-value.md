@@ -11,7 +11,7 @@ Net flow leaving a vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](flow.md)
 
 ## Sources
 

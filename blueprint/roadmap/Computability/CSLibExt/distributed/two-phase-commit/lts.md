@@ -11,7 +11,12 @@ Two-phase commit as a labelled transition system.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Action](action.md)
+- [State](state.md)
+
+## Proof depends on
+
+- [Step](step.md)
 
 ## Sources
 

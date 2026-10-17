@@ -12,7 +12,8 @@ Kernel-checked first coordinate of the exact BPZ seven-cycle recursion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BPZProfile](../part-01/bpzprofile.md)
+- [Bpz C7 Pi40](bpz-c7-pi40.md)
 
 ## Sources
 

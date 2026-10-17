@@ -12,7 +12,13 @@ A matched right vertex is reached in the same round as its partner.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](../part-01/valid.md)
+- [Layers](../part-01/layers.md)
+
+## Proof depends on
+
+- [Free](../part-01/free.md)
+- [Exists mate of mem layers](../part-01/exists-mate-of-mem-layers.md)
 
 ## Sources
 

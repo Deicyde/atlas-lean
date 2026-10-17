@@ -12,7 +12,7 @@ Every symbol of a chain form is a nonterminal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chain Form](chain-form.md)
 
 ## Sources
 

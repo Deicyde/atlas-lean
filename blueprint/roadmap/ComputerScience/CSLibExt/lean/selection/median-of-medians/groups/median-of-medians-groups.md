@@ -13,6 +13,10 @@ Sort five-element groups and collect each group's lower median.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Insertion Sort](../../../sort/insertion-cost/insertion-sort.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Selection.MedianOfMedians.Groups](../../../../../../../sources/v2/CSLibExt.md)

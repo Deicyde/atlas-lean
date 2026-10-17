@@ -14,7 +14,12 @@ Convergence for greatest fixed points: under the bridge hypothesis,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gfp Fin](gfp-fin.md)
+
+## Proof depends on
+
+- [Gfp Fin fixed](gfp-fin-fixed.md)
+- [Mem finset iterate univ iff](mem-finset-iterate-univ-iff.md)
 
 ## Sources
 

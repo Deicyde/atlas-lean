@@ -12,7 +12,7 @@ Every heap leaves some address unallocated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heap](heap.md)
 
 ## Sources
 

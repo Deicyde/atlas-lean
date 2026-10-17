@@ -12,7 +12,11 @@ lean: Cslib.Algorithms.Lean.TimeM.pricingVertexCover_time
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pricing Vertex Cover](pricing-vertex-cover.md)
+
+## Proof depends on
+
+- [Pricing Scan](pricing-scan.md)
 
 ## Sources
 

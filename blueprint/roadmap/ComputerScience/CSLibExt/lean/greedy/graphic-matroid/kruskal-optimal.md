@@ -13,7 +13,15 @@ than the result (CLRS Theorem 16.11 on the graphic matroid).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Forest Set](is-forest-set.md)
+- [Forest Oracle](forest-oracle.md)
+- [Matroid Greedy](../matroid-greedy/matroid-greedy.md)
+
+## Proof depends on
+
+- [Forest Oracle iff](forest-oracle-iff.md)
+- [Graphic Matroid](graphic-matroid.md)
+- [Matroid Greedy optimal](../matroid-greedy/matroid-greedy-optimal.md)
 
 ## Sources
 

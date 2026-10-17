@@ -14,7 +14,12 @@ under every assignment.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Provable](provable.md)
+
+## Proof depends on
+
+- [Natural deduction](derivable.md)
+- [Soundness](sound.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Height in the fixed standard projection frame.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R3](../../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
 
 ## Sources
 

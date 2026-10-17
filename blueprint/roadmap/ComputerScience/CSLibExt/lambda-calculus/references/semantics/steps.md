@@ -12,7 +12,12 @@ Evaluation in any number of steps: the reflexive-transitive closure of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Store](store.md)
+- [Term](../syntax/term.md)
+
+## Proof depends on
+
+- [Step](step.md)
 
 ## Sources
 

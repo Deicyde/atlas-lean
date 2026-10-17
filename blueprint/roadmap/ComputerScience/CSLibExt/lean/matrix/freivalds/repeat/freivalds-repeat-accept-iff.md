@@ -12,7 +12,8 @@ The repeated executor accepts exactly when every supplied trial accepts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Repeat](freivalds-repeat.md)
+- [Freivalds Trial](../basic/freivalds-trial.md)
 
 ## Sources
 

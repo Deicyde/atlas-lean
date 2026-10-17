@@ -14,6 +14,10 @@ The spots taken by greedily parking the preference list
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Next Free Spot](next-free-spot.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.LuckyCarsWanted](../../../../../../../sources/v2/WantedExt.md)

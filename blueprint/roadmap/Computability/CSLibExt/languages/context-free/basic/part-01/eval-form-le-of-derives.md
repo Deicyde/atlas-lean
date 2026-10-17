@@ -13,7 +13,12 @@ under a valuation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Valuation](is-valuation.md)
+- [Eval Form](eval-form.md)
+
+## Proof depends on
+
+- [Eval Form le of produces](eval-form-le-of-produces.md)
 
 ## Sources
 

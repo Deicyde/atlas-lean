@@ -12,7 +12,14 @@ Every discovered vertex is either an actual root or has a unique parent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Traversal](traversal.md)
+- [Forest Roots](forest-roots.md)
+- [Dfs](dfs.md)
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Parent children nodup](parent-children-nodup.md)
 
 ## Sources
 

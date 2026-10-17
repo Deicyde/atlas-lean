@@ -15,7 +15,13 @@ supported stack symbol are terminals occurring in production outputs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finitely Supported](../../../automata/pda/basic/finitely-supported.md)
+- [Cfg PDA](cfg-pda.md)
+
+## Proof depends on
+
+- [PDA](../../../automata/pda/basic/pda.md)
+- [Cfg Step](cfg-step.md)
 
 ## Sources
 

@@ -12,7 +12,15 @@ CLRS Section 31.8: a prime `n` has no witnesses `a` with `0 < a < n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Witness](witness.md)
+
+## Proof depends on
+
+- [Two Adic Split](two-adic-split.md)
+- [Witness Loop](witness-loop.md)
+- [Witness Loop eq false](witness-loop-eq-false.md)
+- [Modular Exponentiation](../modular-exponentiation/modular-exponentiation.md)
+- [Modular Exponentiation correct](../modular-exponentiation/modular-exponentiation-correct.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ lean: Cslib.Distributed.ChangRoberts.leader_unique
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reachable](reachable.md)
+- [State](state.md)
+
+## Proof depends on
+
+- [Only the maximum is elected](leader-max.md)
 
 ## Sources
 

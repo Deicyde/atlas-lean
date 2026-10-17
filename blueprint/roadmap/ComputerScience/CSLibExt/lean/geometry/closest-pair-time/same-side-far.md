@@ -11,7 +11,11 @@ Two points of the same side are at squared distance at least `δ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tagged](tagged.md)
+
+## Proof depends on
+
+- [Dist2](../closest-pair/dist2.md)
 
 ## Sources
 

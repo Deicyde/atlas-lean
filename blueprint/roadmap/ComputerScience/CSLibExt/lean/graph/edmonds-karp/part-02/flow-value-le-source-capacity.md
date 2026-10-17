@@ -12,7 +12,10 @@ Every feasible flow is bounded by total capacity leaving the source.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](../part-01/flow.md)
+- [Is Feasible](../part-01/is-feasible.md)
+- [Flow Value](../part-01/flow-value.md)
+- [Source Capacity](source-capacity.md)
 
 ## Sources
 

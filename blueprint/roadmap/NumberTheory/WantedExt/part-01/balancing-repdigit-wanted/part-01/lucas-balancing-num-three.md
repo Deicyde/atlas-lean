@@ -12,7 +12,7 @@ Characteristic value `C_3 = 17`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Balancing Num](lucas-balancing-num.md)
 
 ## Sources
 

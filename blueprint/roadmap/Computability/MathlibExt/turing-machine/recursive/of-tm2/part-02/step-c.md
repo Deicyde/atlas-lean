@@ -11,7 +11,11 @@ The coded step.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coded Cfg](../part-01/coded-cfg.md)
+
+## Proof depends on
+
+- [Step Aux C](../part-01/step-aux-c.md)
 
 ## Sources
 

@@ -17,6 +17,7 @@ The ordering invariant for a root's tree.
 ## Proof depends on
 
 - [Ordered](../part-01/ordered.md)
+- [Tree](../part-01/tree.md)
 
 ## Sources
 

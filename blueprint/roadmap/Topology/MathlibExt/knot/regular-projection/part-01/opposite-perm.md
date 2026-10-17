@@ -11,7 +11,12 @@ Straight-through motion at a crossing as a permutation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dart Diagram](dart-diagram.md)
+- [Dart](dart.md)
+
+## Proof depends on
+
+- [Rot Perm](rot-perm.md)
 
 ## Sources
 

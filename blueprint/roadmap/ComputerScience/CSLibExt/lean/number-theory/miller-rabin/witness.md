@@ -15,6 +15,12 @@ CLRS `WITNESS(a, n)`. For a base with `0 < a < n`, `true` proves `n` composite
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Two Adic Split](two-adic-split.md)
+- [Witness Loop](witness-loop.md)
+- [Modular Exponentiation](../modular-exponentiation/modular-exponentiation.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.NumberTheory.MillerRabin](../../../../../../sources/v2/CSLibExt.md)

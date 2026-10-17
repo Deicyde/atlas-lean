@@ -13,7 +13,15 @@ strictly positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Totally Positive](is-totally-positive.md)
+- [Absolute Trace](absolute-trace.md)
+
+## Proof depends on
+
+- [Conjugates](conjugates.md)
+- [Degree](degree.md)
+- [Trace](trace.md)
+- [Trace pos re](trace-pos-re.md)
 
 ## Sources
 

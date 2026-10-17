@@ -12,7 +12,11 @@ A positive leading coefficient and negative discriminant give a positive definit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Of Coefficients](of-coefficients.md)
+
+## Proof depends on
+
+- [Of Coefficients apply](of-coefficients-apply.md)
 
 ## Sources
 

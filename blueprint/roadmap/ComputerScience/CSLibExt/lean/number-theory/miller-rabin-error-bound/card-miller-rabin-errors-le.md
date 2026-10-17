@@ -14,7 +14,14 @@ CLRS Theorem 31.39 in counting form: of the `(n - 1)^s` lists of `s` bases from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Miller Rabin](../miller-rabin/miller-rabin.md)
+
+## Proof depends on
+
+- [Card nonwitnesses le](card-nonwitnesses-le.md)
+- [Miller Rabin eq true iff](miller-rabin-eq-true-iff.md)
+- [Nonwitnesses](nonwitnesses.md)
+- [Witness](../miller-rabin/witness.md)
 
 ## Sources
 

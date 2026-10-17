@@ -12,7 +12,14 @@ The actual loop writes every butterfly pair with its iteratively advanced twiddl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Butterflies](../../fft-2/fft-butterflies.md)
+
+## Proof depends on
+
+- [Fft Butterfly](../../fft-2/fft-butterfly.md)
+- [Fft Butterfly ret high](fft-butterfly-ret-high.md)
+- [Fft Butterfly ret low](fft-butterfly-ret-low.md)
+- [Fft Butterfly ret other](fft-butterfly-ret-other.md)
 
 ## Sources
 

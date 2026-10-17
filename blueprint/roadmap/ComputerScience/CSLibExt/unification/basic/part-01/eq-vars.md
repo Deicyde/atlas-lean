@@ -11,7 +11,12 @@ The variables of a list of equations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equations](equations.md)
+
+## Proof depends on
+
+- [Term](term.md)
+- [Vars](vars.md)
 
 ## Sources
 

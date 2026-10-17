@@ -13,7 +13,12 @@ above.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Int Mahler Measure](int-mahler-measure.md)
+- [Lehmer's constant](lehmer-constant.md)
+
+## Proof depends on
+
+- [Mahler Measures Above One](mahler-measures-above-one.md)
 
 ## Sources
 

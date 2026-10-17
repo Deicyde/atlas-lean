@@ -13,7 +13,12 @@ parametrized representatives.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](parametrized-link.md)
+
+## Proof depends on
+
+- [Isotopic](isotopic-2.md)
+- [Ropelength Ratio](ropelength-ratio.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ function field.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coeff](coeff.md)
+- [Roots Field](roots-field.md)
+
+## Proof depends on
+
+- [Algebraic Independent esymm](algebraic-independent-esymm.md)
+- [Algebraic Independent map](algebraic-independent-map.md)
 
 ## Sources
 

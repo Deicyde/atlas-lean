@@ -12,7 +12,15 @@ A step from a reachable state reaches a reachable state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Action](action.md)
+- [Reachable](reachable.md)
+- [State](state.md)
+- [Step](step.md)
+
+## Proof depends on
+
+- [Initial](initial.md)
+- [Lts](lts.md)
 
 ## Sources
 

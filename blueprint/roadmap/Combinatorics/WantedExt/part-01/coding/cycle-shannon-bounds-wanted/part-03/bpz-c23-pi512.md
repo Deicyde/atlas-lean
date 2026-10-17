@@ -11,7 +11,12 @@ BPZ's final twenty-three-cycle profile after nine squarings.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BPZProfile](../part-01/bpzprofile.md)
+
+## Proof depends on
+
+- [Bpz C23 Pi1](bpz-c23-pi1.md)
+- [Bpz Profile Square Iter](../part-01/bpz-profile-square-iter.md)
 
 ## Sources
 

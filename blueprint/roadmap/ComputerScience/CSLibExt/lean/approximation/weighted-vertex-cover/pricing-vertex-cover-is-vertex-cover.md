@@ -13,7 +13,11 @@ cover.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pricing Vertex Cover](pricing-vertex-cover.md)
+
+## Proof depends on
+
+- [Pricing Vertex Cover covers](pricing-vertex-cover-covers.md)
 
 ## Sources
 

@@ -13,7 +13,13 @@ separations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Can Pass Z](can-pass-z.md)
+- [Unit Square](../part-01/unit-square.md)
+
+## Proof depends on
+
+- [Can Pass ZAt](can-pass-zat.md)
+- [Square can Pass ZAt](square-can-pass-zat.md)
 
 ## Sources
 

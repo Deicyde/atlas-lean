@@ -13,7 +13,7 @@ edge has an endpoint in `C*`, which pays its price.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pricing Scan](pricing-scan.md)
 
 ## Sources
 

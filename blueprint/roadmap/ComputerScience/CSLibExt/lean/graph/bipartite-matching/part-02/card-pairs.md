@@ -12,7 +12,8 @@ The matched pairs correspond to the matched right vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matched](../part-01/matched.md)
+- [Pairs](../part-01/pairs.md)
 
 ## Sources
 

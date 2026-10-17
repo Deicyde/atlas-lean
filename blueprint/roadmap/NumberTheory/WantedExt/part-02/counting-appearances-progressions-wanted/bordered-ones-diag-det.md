@@ -13,6 +13,10 @@ lean: MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.borderedOnes
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Bordered Ones Diag](bordered-ones-diag.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.CountingAppearancesProgressionsWanted](../../../../../sources/v2/WantedExt.md)

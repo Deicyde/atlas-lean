@@ -14,7 +14,12 @@ number.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Approx Vertex Cover](approx-vertex-cover.md)
+
+## Proof depends on
+
+- [Approx Vertex Cover is Vertex Cover](approx-vertex-cover-is-vertex-cover.md)
+- [Card approx Vertex Cover le two mul](card-approx-vertex-cover-le-two-mul.md)
 
 ## Sources
 

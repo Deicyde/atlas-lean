@@ -14,6 +14,10 @@ proper divisor deficient.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Nondeficient](is-nondeficient.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.PrimitiveNondeficientWanted](../../../../../sources/v2/WantedExt.md)

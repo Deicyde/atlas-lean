@@ -12,7 +12,9 @@ Edge membership after erasure is original membership excluding the ordered pair.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Edge](../../directed-adjacency-2/part-01/edge.md)
+- [Erase Edge](erase-edge.md)
 
 ## Sources
 

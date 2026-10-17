@@ -20,8 +20,10 @@ in `Valid`. Use `0 < B` (see `valid_ofSortedList`).
 
 ## Proof depends on
 
+- [Grouped YFast Trie](../part-01/grouped-yfast-trie.md)
 - [Group Ordered](../part-01/group-ordered.md)
 - [Chunk Groups zero of ne](chunk-groups-zero-of-ne.md)
+- [XFast Trie](../../xfast-trie/part-01/xfast-trie.md)
 - [Valid](../../xfast-trie/part-01/valid.md)
 
 ## Sources

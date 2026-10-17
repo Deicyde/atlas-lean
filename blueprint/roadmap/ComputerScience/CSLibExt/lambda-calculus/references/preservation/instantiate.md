@@ -12,7 +12,15 @@ Substitution for the innermost variable (TAPL Lemma 13.5.4).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Type](../typing/has-type.md)
+- [Term](../syntax/term.md)
+- [Instantiate](../syntax/instantiate.md)
+- [Ty](../syntax/ty.md)
+
+## Proof depends on
+
+- [Subst](subst.md)
+- [Single Sub](../syntax/single-sub.md)
 
 ## Sources
 

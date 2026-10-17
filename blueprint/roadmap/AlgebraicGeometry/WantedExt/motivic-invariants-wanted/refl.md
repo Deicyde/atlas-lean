@@ -11,7 +11,7 @@ The identity birational map on `X`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Birational Map](birational-map.md)
 
 ## Sources
 

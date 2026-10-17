@@ -17,6 +17,10 @@ in the wanted file.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Admissible](is-admissible.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Height.SchurSiegelSmyth](../../../../../../sources/v2/MathlibExt.md)

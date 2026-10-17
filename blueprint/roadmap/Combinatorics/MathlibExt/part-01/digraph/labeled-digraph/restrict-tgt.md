@@ -12,7 +12,8 @@ The target of a restricted edge: the ambient target, in the subtype.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Labeled Digraph](labeled-digraph.md)
+- [Restrict](restrict.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ The probability that at least one of `t` independent runs returns `k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [Success Prob](success-prob.md)
 
 ## Sources
 

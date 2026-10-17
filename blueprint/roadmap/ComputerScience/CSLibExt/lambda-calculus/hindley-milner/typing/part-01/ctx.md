@@ -13,6 +13,10 @@ Typing contexts: the first binding of a name is the visible one.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Scheme](scheme.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Languages.LambdaCalculus.HindleyMilner.Typing](../../../../../../../sources/v2/CSLibExt.md)

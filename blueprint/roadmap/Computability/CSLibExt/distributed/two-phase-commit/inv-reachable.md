@@ -12,7 +12,18 @@ The invariant holds in every reachable state.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv](inv.md)
+- [Reachable](reachable.md)
+- [State](state.md)
+
+## Proof depends on
+
+- [Action](action.md)
+- [Coord State](coord-state.md)
+- [Part State](part-state.md)
+- [Initial](initial.md)
+- [Inv mtr](inv-mtr.md)
+- [Lts](lts.md)
 
 ## Sources
 

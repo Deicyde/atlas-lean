@@ -16,6 +16,7 @@ Expansion of a class function in the irrep-character basis (Zimmerman Prop 4 set
 - [Irr](irr.md)
 - [Char Fun](char-fun.md)
 - [Is Class Fun](is-class-fun.md)
+- [Card Bound](card-bound.md)
 
 ## Proof depends on
 

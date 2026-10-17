@@ -12,7 +12,12 @@ Membership in an augmented catalog is membership in one of its parts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Augment One](augment-one.md)
+- [Sample](../part-01/sample.md)
+
+## Proof depends on
+
+- [Mem sorted Merge iff](../part-01/mem-sorted-merge-iff.md)
 
 ## Sources
 

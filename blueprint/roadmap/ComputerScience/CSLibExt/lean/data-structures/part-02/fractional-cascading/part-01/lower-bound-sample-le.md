@@ -12,7 +12,12 @@ A lower-bound search in a sample counts no more than in the catalog.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Bound](lower-bound.md)
+- [Sample](sample.md)
+
+## Proof depends on
+
+- [Sample sublist](sample-sublist.md)
 
 ## Sources
 

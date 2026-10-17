@@ -12,7 +12,7 @@ The canonical polynomial's coefficients are exactly the stored zero extension.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Polynomial](fft-polynomial.md)
 
 ## Sources
 

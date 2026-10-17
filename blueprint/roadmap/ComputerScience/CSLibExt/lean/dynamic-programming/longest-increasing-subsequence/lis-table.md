@@ -13,6 +13,10 @@ The table `(xs[i], L i, tail)` for every position `i`, built from the right.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Max Above](max-above.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.LongestIncreasingSubsequence](../../../../../../sources/v2/CSLibExt.md)

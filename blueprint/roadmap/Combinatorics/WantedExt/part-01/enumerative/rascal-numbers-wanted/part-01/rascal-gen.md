@@ -13,6 +13,10 @@ The paper's generalized Rascal numbers `R_{n,k}^{(j)}`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rascal Word](rascal-word.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.RascalNumbersWanted](../../../../../../../sources/v2/WantedExt.md)

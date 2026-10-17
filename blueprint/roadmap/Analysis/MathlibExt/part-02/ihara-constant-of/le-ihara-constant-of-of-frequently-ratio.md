@@ -12,7 +12,8 @@ A frequently attained lower bound on the ratios bounds the limsup below.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ihara Constant Of](ihara-constant-of.md)
+- [Ihara Ratio](ihara-ratio.md)
 
 ## Sources
 

@@ -12,7 +12,18 @@ A returned finite distance is no larger than every competing path weight.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../basic/cost.md)
+- [Distances](../basic/distances.md)
+- [Edge](../basic/edge.md)
+- [Is Weighted Path](../basic/is-weighted-path.md)
+- [Result](../basic/result.md)
+- [Bellman Ford](bellman-ford.md)
+- [Path Weight](../basic/path-weight.md)
+
+## Proof depends on
+
+- [Reachable Negative Cycle](../basic/reachable-negative-cycle.md)
+- [Path Vertices](../basic/path-vertices.md)
 
 ## Sources
 

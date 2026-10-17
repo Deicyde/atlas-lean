@@ -13,7 +13,7 @@ yields only nonempty words.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Yields](../../yields/yields.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ The quantization supremum of an actual constant output is zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conditional Shannon Entropy](conditional-shannon-entropy.md)
+
+## Proof depends on
+
+- [Quantized Conditional Entropy](quantized-conditional-entropy.md)
+- [Quantized Conditional Entropy const](quantized-conditional-entropy-const.md)
 
 ## Sources
 

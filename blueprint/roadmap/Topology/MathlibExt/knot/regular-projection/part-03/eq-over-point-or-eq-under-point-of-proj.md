@@ -14,7 +14,22 @@ points are exactly the two that occur.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](../../euclidean-link/part-01/parametrized-link.md)
+- [Crossing](../part-02/crossing.md)
+- [Is Regular Projection](../part-02/is-regular-projection.md)
+- [Double Point Set](../part-02/double-point-set.md)
+- [Over Point](../part-02/over-point.md)
+- [Proj Point](../part-02/proj-point.md)
+- [Under Point](../part-02/under-point.md)
+- [Param Point](../part-02/param-point.md)
+- [R2](../part-01/r2.md)
+
+## Proof depends on
+
+- [Exists pair of mem double Point Set](../part-02/exists-pair-of-mem-double-point-set.md)
+- [Proj Point over Point](proj-point-over-point.md)
+- [Proj Point under Point](proj-point-under-point.md)
+- [Under Point ne over Point](under-point-ne-over-point.md)
 
 ## Sources
 

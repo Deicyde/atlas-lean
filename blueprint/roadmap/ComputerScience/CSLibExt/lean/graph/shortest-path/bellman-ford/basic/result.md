@@ -11,7 +11,7 @@ Distances when no reachable negative cycle exists, otherwise a validated witness
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge](edge.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ trial law, including empty matrices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Matrix](../basic/freivalds-matrix.md)
+- [Freivalds Trial Law](freivalds-trial-law.md)
+
+## Proof depends on
+
+- [Freivalds Trial](../basic/freivalds-trial.md)
+- [Freivalds Trial Law acceptance](freivalds-trial-law-acceptance.md)
+- [Freivalds Trial complete](../basic/freivalds-trial-complete.md)
 
 ## Sources
 

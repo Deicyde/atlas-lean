@@ -11,7 +11,13 @@ Mutual information in bits, using the exact finite entropy identity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Joint Law](finite-joint-law.md)
+
+## Proof depends on
+
+- [Input Law](input-law.md)
+- [Output Law](output-law.md)
+- [Shannon Entropy](../../finite-entropy/shannon-entropy.md)
 
 ## Sources
 

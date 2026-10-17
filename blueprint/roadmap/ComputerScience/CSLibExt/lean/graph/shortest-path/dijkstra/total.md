@@ -11,7 +11,7 @@ Total charged events in the dense Dijkstra cost model.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dijkstra Cost](dijkstra-cost.md)
 
 ## Sources
 

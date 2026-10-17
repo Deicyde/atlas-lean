@@ -14,8 +14,7 @@ some neighbourhood intersected with `S` carries normal convergence.
 
 ## Depends on
 
-- [Converges Locally Normally On](converges-locally-normally-on.md)
-- [Converges Normally On](converges-normally-on.md)
+- [Sup Norm On](sup-norm-on.md)
 
 ## Sources
 

@@ -22,7 +22,7 @@ def millerRabin (n : ℕ) : List ℕ → TimeM ℕ Bool
 
 ## Depends on
 
-This node has no prerequisites.
+- [Witness Loop](witness-loop.md)
 
 ## Sources
 

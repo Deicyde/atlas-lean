@@ -13,11 +13,7 @@ Bundled-expansion form of finite reconstruction.
 
 ## Depends on
 
-- [Padic Expansion](padic-expansion.md)
-
-## Proof depends on
-
-- [Appr eq sum padic Digit](appr-eq-sum-padic-digit.md)
+This node has no prerequisites.
 
 ## Sources
 

@@ -11,7 +11,7 @@ Full declarative partition contract for a list of SCC blocks.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
 
 ## Sources
 

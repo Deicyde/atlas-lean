@@ -12,7 +12,17 @@ A formula with a resolution refutation is unsatisfiable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+- [Resolution Derivable](resolution-derivable.md)
+- [CNFSat](../basic/cnfsat.md)
+
+## Proof depends on
+
+- [Soundness](satisfies.md)
+- [Satisfies](../semantics/satisfies-3.md)
+- [CNFClause](../basic/cnfclause.md)
+- [Satisfies](../semantics/satisfies-2.md)
+- [Cnf Sat iff exists satisfies](../semantics/cnf-sat-iff-exists-satisfies.md)
 
 ## Sources
 

@@ -12,11 +12,6 @@ The `n`-th digit bundled as an element of `Fin p`.
 
 This node has no prerequisites.
 
-## Proof depends on
-
-- [Padic Digit](padic-digit.md)
-- [Padic Digit lt](padic-digit-lt.md)
-
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Padics.Digits](../../../../../../sources/v2/MathlibExt.md)

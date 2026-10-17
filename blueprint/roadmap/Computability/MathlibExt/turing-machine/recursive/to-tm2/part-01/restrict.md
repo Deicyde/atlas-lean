@@ -12,7 +12,14 @@ inside `supp c` (by `hq`), and `halt` jumps to the post-phase.
 
 ## Depends on
 
-This node has no prerequisites.
+- [FStmt](fstmt.md)
+- [Supp](supp.md)
+
+## Proof depends on
+
+- [FΓ](f.md)
+- [FΛ](f-2.md)
+- [Phase](phase.md)
 
 ## Sources
 

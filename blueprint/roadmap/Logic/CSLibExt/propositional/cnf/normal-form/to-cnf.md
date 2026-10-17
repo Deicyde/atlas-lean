@@ -11,7 +11,11 @@ A CNF equivalent to `A`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+
+## Proof depends on
+
+- [Cnf Of](cnf-of.md)
 
 ## Sources
 

@@ -13,7 +13,16 @@ derived from `φ` whose literals are among the original ones and `(x, !b)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+- [Resolution Derivable](resolution-derivable.md)
+- [Restrict](../restriction/restrict-2.md)
+- [CNFClause](../basic/cnfclause.md)
+
+## Proof depends on
+
+- [Mem restrict iff](mem-restrict-iff.md)
+- [Resolvent](resolvent.md)
+- [Restrict](../restriction/restrict.md)
 
 ## Sources
 

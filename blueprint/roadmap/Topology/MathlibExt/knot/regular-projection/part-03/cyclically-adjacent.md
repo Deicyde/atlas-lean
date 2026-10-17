@@ -13,7 +13,13 @@ arc from the first to the second.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](../../euclidean-link/part-01/parametrized-link.md)
+- [Param Point](../part-02/param-point.md)
+
+## Proof depends on
+
+- [Is Crossing Preimage](is-crossing-preimage.md)
+- [In Open Arc](in-open-arc.md)
 
 ## Sources
 

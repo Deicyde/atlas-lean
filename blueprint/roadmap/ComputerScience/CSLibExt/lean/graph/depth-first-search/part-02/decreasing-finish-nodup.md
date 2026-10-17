@@ -12,7 +12,14 @@ Decreasing finish order has no duplicate vertices.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Decreasing Finish](decreasing-finish.md)
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Traversal](../part-01/traversal.md)
+- [Dfs](../part-01/dfs.md)
+- [Postorder nodup](../part-01/postorder-nodup.md)
 
 ## Sources
 

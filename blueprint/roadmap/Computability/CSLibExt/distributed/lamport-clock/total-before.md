@@ -12,7 +12,11 @@ and break ties by the order on processes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
+
+## Proof depends on
+
+- [Timestamps](timestamps.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Circular array admission preserves all actually executed charges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Circular](../convolution/fft-circular.md)
+- [Fft Circular Array](../convolution/fft-circular-array.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The represented form is exactly `a*x² + b*x*y + c*y²`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Of Coefficients](of-coefficients.md)
 
 ## Sources
 

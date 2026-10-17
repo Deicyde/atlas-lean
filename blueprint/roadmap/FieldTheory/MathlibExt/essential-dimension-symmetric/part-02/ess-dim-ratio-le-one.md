@@ -12,7 +12,12 @@ The proved elementary upper bound `C₇₉ ≤ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ess Dim Ratio](ess-dim-ratio.md)
+
+## Proof depends on
+
+- [Ed Sn](ed-sn.md)
+- [Ed Sn le](ed-sn-le.md)
 
 ## Sources
 

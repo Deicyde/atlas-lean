@@ -16,7 +16,7 @@ def matroidGreedy (indep : Finset α → Bool) (es : List α) : TimeM ℕ (Finse
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matroid Greedy Scan](matroid-greedy-scan.md)
 
 ## Sources
 

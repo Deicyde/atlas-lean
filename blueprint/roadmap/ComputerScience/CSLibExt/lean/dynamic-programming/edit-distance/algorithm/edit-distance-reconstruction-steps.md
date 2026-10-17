@@ -15,12 +15,12 @@ Reconstruction charges exactly one step per emitted operation.
 
 - [Edit Distance Cost](../script/edit-distance-cost.md)
 - [Edit Distance Result](../script/edit-distance-result.md)
+- [Edit Script](../script/edit-script.md)
 - [Edit Step](../script/edit-step.md)
 - [Edit Distance](edit-distance.md)
 
 ## Proof depends on
 
-- [Edit Script](../script/edit-script.md)
 - [Cost](../script/cost-2.md)
 - [Cost](../script/cost.md)
 

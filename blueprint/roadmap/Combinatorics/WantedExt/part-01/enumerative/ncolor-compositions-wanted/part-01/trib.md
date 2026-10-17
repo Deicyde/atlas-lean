@@ -14,6 +14,10 @@ The paper's `t(n)` on `ℤ`, extended by `t(n) = 0` for
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Trib Nat](trib-nat.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.NColorCompositionsWanted](../../../../../../../sources/v2/WantedExt.md)

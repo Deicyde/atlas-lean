@@ -11,7 +11,11 @@ Two ordered graphs are semantically equivalent when they have the same edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](directed-adjacency.md)
+
+## Proof depends on
+
+- [Edge](edge.md)
 
 ## Sources
 

@@ -12,7 +12,10 @@ One block of statements: the host's result is the sub-machine's, embedded.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Agree](agree.md)
+- [Frame](frame.md)
+- [SEmb](semb.md)
+- [Map S](map-s.md)
 
 ## Sources
 

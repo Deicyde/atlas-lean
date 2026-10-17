@@ -12,7 +12,7 @@ Every build uses at least one copy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Can Build](can-build.md)
 
 ## Sources
 

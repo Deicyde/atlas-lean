@@ -13,7 +13,17 @@ lean: MetaMathlibExt.TM2Program.moveB_run
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ends Bit Block](ends-bit-block.md)
+- [Flag](../program/part-01/flag.md)
+- [Is Bit Block](is-bit-block.md)
+- [Run](../program/part-01/run.md)
+- [Move B](move-b.md)
+
+## Proof depends on
+
+- [Single](../program/part-01/single.md)
+- [Bit Of](bit-of.md)
+- [Is Bit](is-bit.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ An accepted history chooses an accepted seed independently at every position.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Repeat](../repeat/freivalds-repeat.md)
+- [Freivalds Trial](../basic/freivalds-trial.md)
+
+## Proof depends on
+
+- [Freivalds Repeat accept iff](../repeat/freivalds-repeat-accept-iff.md)
 
 ## Sources
 

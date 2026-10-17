@@ -11,7 +11,11 @@ The number of graph edges entering `v`; duplicate adjacency entries count once.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Indegree Within](indegree-within.md)
 
 ## Sources
 

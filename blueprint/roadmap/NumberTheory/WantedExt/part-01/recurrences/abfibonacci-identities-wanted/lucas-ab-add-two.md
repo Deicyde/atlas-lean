@@ -12,7 +12,7 @@ The two-step recurrence for the `(a, b)`-Lucas numbers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas AB](lucas-ab.md)
 
 ## Sources
 

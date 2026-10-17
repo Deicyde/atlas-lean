@@ -17,7 +17,13 @@ requester that is not pending, or a pending list with repetitions).
 
 ## Depends on
 
-This node has no prerequisites.
+- [System](system.md)
+
+## Proof depends on
+
+- [Grant](grant.md)
+- [Need](need.md)
+- [Safety Check](safety-check.md)
 
 ## Sources
 

@@ -13,6 +13,7 @@ The underlying partition of `full p` is `p`.
 
 ## Depends on
 
+- [Overpartition](overpartition.md)
 - [Full](full.md)
 
 ## Sources

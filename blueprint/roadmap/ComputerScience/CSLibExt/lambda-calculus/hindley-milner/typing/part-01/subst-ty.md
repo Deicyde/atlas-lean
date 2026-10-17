@@ -11,7 +11,13 @@ Apply a type substitution to the free variables of a scheme.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scheme](scheme.md)
+- [Subst](../../../../unification/basic/part-01/subst.md)
+
+## Proof depends on
+
+- [To Scheme](to-scheme.md)
+- [Subst](../../../../unification/basic/part-01/subst-2.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ A global degree bound implies degeneracy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Degenerate](../degeneracy/is-degenerate.md)
 
 ## Sources
 

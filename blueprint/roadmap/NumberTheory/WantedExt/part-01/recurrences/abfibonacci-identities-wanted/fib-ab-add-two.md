@@ -12,7 +12,7 @@ The two-step recurrence for the `(a, b)`-Fibonacci numbers.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib AB](fib-ab.md)
 
 ## Sources
 

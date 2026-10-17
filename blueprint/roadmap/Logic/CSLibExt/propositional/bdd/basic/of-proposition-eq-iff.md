@@ -13,7 +13,21 @@ truth-table equivalence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](bdd.md)
+- [Of Proposition](of-proposition.md)
+- [Eval Bool](../../natural-deduction/semantics/eval-bool.md)
+
+## Proof depends on
+
+- [Is ROBDD](is-robdd.md)
+- [Ordered From](ordered-from.md)
+- [Reduced](reduced.md)
+- [Apply](apply.md)
+- [Eq iff eval eq](eq-iff-eval-eq.md)
+- [Eval](eval.md)
+- [Eval apply](eval-apply.md)
+- [Ordered From apply](ordered-from-apply.md)
+- [Reduced apply](reduced-apply.md)
 
 ## Sources
 

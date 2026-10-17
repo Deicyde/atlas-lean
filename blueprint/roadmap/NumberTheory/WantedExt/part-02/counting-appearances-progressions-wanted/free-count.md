@@ -14,6 +14,10 @@ the paper's `free(k)` for the first `k` primes.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Residue Hit Count](residue-hit-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.CountingAppearancesProgressionsWanted](../../../../../sources/v2/WantedExt.md)

@@ -11,7 +11,11 @@ The one-state PDA simulating derivations of `g` on its stack.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PDA](../../../automata/pda/basic/pda.md)
+
+## Proof depends on
+
+- [Cfg Step](cfg-step.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Linear array admission preserves both padding and actual convolution charges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Linear](../convolution/fft-linear.md)
+- [Fft Linear Array](../convolution/fft-linear-array.md)
 
 ## Sources
 

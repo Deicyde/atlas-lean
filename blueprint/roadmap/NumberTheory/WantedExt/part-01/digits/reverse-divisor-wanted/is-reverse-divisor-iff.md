@@ -13,7 +13,8 @@ defining existential.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Reverse Divisor](is-reverse-divisor.md)
+- [Reverse](../../../../../Data/MathlibExt/nat/digits/reverse-digits.md)
 
 ## Sources
 

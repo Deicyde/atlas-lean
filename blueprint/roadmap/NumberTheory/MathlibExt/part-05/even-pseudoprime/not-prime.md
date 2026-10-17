@@ -13,7 +13,12 @@ even pseudoprime is strictly greater than `2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Even Pseudoprime](is-even-pseudoprime.md)
+
+## Proof depends on
+
+- [Even](even.md)
+- [Two lt](two-lt.md)
 
 ## Sources
 

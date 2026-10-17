@@ -11,7 +11,7 @@ Directed edge membership in an ordered adjacency list.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](directed-adjacency.md)
 
 ## Sources
 

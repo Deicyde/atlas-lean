@@ -13,6 +13,10 @@ Car `i` is lucky: it parks in its preferred spot.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Park Spots](park-spots.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.LuckyCarsWanted](../../../../../../../sources/v2/WantedExt.md)

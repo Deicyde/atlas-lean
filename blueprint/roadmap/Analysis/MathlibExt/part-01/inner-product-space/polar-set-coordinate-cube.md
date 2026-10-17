@@ -12,7 +12,12 @@ The one-sided inner-product polar of the coordinate cube is the coordinate ℓ¹
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coordinate Cube](../../../../Geometry/MathlibExt/convex/cube-covering/coordinate-cube.md)
+- [Polar Set](polar-set/polar-set.md)
+
+## Proof depends on
+
+- [Coordinate Cube eq abs Set](../../../../Geometry/MathlibExt/convex/cube-covering/coordinate-cube-eq-abs-set.md)
 
 ## Sources
 

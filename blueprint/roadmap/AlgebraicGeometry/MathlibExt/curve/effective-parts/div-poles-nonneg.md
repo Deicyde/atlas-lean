@@ -10,8 +10,7 @@ The pole part of a divisor is effective.
 
 ## Depends on
 
-- [Curve Divisor](../divisor/curve-divisor.md)
-- [Div Poles](div-poles.md)
+This node has no prerequisites.
 
 ## Sources
 

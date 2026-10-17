@@ -13,7 +13,13 @@ original grammar; in particular empty outputs are not created.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit Grammar](../part-01/unit-grammar.md)
+
+## Proof depends on
+
+- [Is Unit Output](../part-01/is-unit-output.md)
+- [Unit Steps](../part-01/unit-steps.md)
+- [Cases of mem unit Grammar rules](../part-01/cases-of-mem-unit-grammar-rules.md)
 
 ## Sources
 

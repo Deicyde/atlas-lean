@@ -13,6 +13,10 @@ The paper's deficient `F_k`-perfect numbers (`ℓ = 3`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is KLDeficient Perfect](is-kldeficient-perfect.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.FkPerfectWanted](../../../../../../sources/v2/WantedExt.md)

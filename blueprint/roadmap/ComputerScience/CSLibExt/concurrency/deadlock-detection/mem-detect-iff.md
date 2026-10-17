@@ -13,7 +13,16 @@ exactly when no reduction sequence of pending processes finishes it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Reduces](reduces.md)
+- [The detection algorithm](detect.md)
+
+## Proof depends on
+
+- [Finished](finished.md)
+- [Finished reduces](finished-reduces.md)
+- [Reduce Aux](reduce-aux.md)
+- [Reduce Aux disjoint](reduce-aux-disjoint.md)
 
 ## Sources
 

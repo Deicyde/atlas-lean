@@ -12,7 +12,7 @@ Characteristic value `B_3 = 35`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balancing Num](balancing-num.md)
 
 ## Sources
 

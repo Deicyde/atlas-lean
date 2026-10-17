@@ -11,7 +11,11 @@ Remove the stored entry for a key, retaining every surviving tower unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skip List](../../../part-03/skip-list/part-01/skip-list.md)
+
+## Proof depends on
+
+- [Entry](../../../part-03/skip-list/part-01/entry.md)
 
 ## Sources
 

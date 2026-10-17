@@ -14,7 +14,14 @@ probability is at most `4^(-s)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Miller Rabin](../miller-rabin/miller-rabin.md)
+
+## Proof depends on
+
+- [The `1/4` bound](card-nonwitnesses-le-quarter.md)
+- [Miller Rabin eq true iff](miller-rabin-eq-true-iff.md)
+- [Nonwitnesses](nonwitnesses.md)
+- [Witness](../miller-rabin/witness.md)
 
 ## Sources
 

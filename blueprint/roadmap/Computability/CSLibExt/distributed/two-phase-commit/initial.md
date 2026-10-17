@@ -11,7 +11,12 @@ The initial state: the coordinator waits, every participant works.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [Coord State](coord-state.md)
+- [Part State](part-state.md)
 
 ## Sources
 

@@ -10,11 +10,7 @@ A multigraph is connected when all pairs connect.
 
 ## Depends on
 
-- [Multigraph](multigraph.md)
-
-## Proof depends on
-
-- [Connected](connected.md)
+This node has no prerequisites.
 
 ## Sources
 

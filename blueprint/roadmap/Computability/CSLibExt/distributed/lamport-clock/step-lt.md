@@ -12,7 +12,16 @@ One step of happened-before raises the timestamp.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
+- [Step](step.md)
+- [Timestamps](timestamps.md)
+
+## Proof depends on
+
+- [Clock Step](clock-step.md)
+- [Run](run.md)
+- [Timestamp le clock](timestamp-le-clock.md)
+- [Timestamps get D take](timestamps-get-d-take.md)
 
 ## Sources
 

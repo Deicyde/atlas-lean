@@ -16,6 +16,10 @@ grammar only ever mentions terminals from the original productions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Inf dfa accepts](inf-dfa-accepts.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.InterRegular](../../../../../../sources/v2/CSLibExt.md)

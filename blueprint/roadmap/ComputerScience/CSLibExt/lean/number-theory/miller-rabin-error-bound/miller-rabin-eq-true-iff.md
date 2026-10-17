@@ -12,7 +12,8 @@ lean: Cslib.Algorithms.Lean.MillerRabin.millerRabin_eq_true_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Miller Rabin](../miller-rabin/miller-rabin.md)
+- [Witness](../miller-rabin/witness.md)
 
 ## Sources
 

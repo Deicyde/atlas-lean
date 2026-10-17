@@ -11,7 +11,12 @@ Apply a parallel substitution to a term. Locations are unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](term.md)
+
+## Proof depends on
+
+- [Lift Sub](lift-sub.md)
+- [Ty](ty.md)
 
 ## Sources
 

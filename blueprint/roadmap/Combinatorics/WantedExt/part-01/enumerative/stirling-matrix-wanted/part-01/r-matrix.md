@@ -13,6 +13,10 @@ The finite matrix `R_α(n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [R Entry](r-entry.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.StirlingMatrixWanted](../../../../../../../sources/v2/WantedExt.md)

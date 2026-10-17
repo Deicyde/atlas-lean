@@ -13,8 +13,7 @@ Support is contained in its convex hull polygon.
 
 ## Depends on
 
-- [Newton Polygon](newton-polygon.md)
-- [Newton Support](newton-support.md)
+This node has no prerequisites.
 
 ## Sources
 

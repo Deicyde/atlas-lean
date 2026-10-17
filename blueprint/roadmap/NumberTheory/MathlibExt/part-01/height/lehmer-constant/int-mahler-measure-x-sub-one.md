@@ -13,7 +13,11 @@ from Lehmer's infimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Int Mahler Measure](int-mahler-measure.md)
+
+## Proof depends on
+
+- [Int Mahler Measure X sub C](int-mahler-measure-x-sub-c.md)
 
 ## Sources
 

@@ -13,7 +13,30 @@ The renaming step of the substitution lemma: after renaming the generalized vari
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ctx](../part-01/ctx.md)
+- [Ftv](../part-01/ftv.md)
+- [Subst](../part-01/subst.md)
+- [More General](../part-01/more-general.md)
+- [Subst Ty](../part-01/subst-ty.md)
+- [Ty](../part-01/ty.md)
+- [Above](above.md)
+- [Gen](../part-01/gen.md)
+- [Subst](../../../../unification/basic/part-01/subst.md)
+- [Term](../../../../unification/basic/part-01/term.md)
+- [Subst](../../../../unification/basic/part-01/subst-2.md)
+
+## Proof depends on
+
+- [Lookup](../part-01/lookup.md)
+- [Visible Vars](../part-01/visible-vars.md)
+- [Scheme](../part-01/scheme.md)
+- [Eval](../part-01/eval.md)
+- [Inst](../part-01/inst.md)
+- [To Scheme](../part-01/to-scheme.md)
+- [Exists of mem vars subst](../../../../unification/basic/part-01/exists-of-mem-vars-subst.md)
+- [Subst congr](../../../../unification/basic/part-01/subst-congr.md)
+- [Vars](../../../../unification/basic/part-01/vars.md)
+- [Vars subset vars subst](../../../../unification/basic/part-01/vars-subset-vars-subst.md)
 
 ## Sources
 

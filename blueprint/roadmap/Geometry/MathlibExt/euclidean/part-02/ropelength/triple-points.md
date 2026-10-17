@@ -11,7 +11,7 @@ The ordered triple `(p, q, r)` as a `Fin 3`-indexed family.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R3](r3.md)
 
 ## Sources
 

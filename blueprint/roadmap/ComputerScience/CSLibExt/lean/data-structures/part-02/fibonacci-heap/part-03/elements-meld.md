@@ -20,6 +20,7 @@ Meld preserves every occurrence from both heaps.
 ## Proof depends on
 
 - [Elements append](../part-02/elements-append.md)
+- [Fibonacci Tree](../part-01/fibonacci-tree.md)
 
 ## Sources
 

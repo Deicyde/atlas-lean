@@ -22,7 +22,9 @@ Looking up an erased key returns no value.
 
 - [All Nodes](../part-01/all-nodes.md)
 - [Heap Ordered](../part-01/heap-ordered.md)
+- [Mem Key](../part-01/mem-key.md)
 - [Ordered](../part-01/ordered.md)
+- [Split Result](../part-01/split-result.md)
 - [All Nodes key iff](../part-02/all-nodes-key-iff.md)
 - [Contents](../part-01/contents.md)
 - [Contents erase](contents-erase.md)

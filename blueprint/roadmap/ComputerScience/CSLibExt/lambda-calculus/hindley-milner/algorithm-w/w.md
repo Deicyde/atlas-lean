@@ -13,7 +13,24 @@ variable, or `none` when unification fails or a variable is unbound. Type variab
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ctx](../typing/part-01/ctx.md)
+- [Expr](../typing/part-01/expr.md)
+- [Ty](../typing/part-01/ty.md)
+- [Subst](../../../unification/basic/part-01/subst.md)
+
+## Proof depends on
+
+- [Lookup](../typing/part-01/lookup.md)
+- [Subst](../typing/part-01/subst.md)
+- [Scheme](../typing/part-01/scheme.md)
+- [Bound Sup](bound-sup.md)
+- [Inst](../typing/part-01/inst.md)
+- [Gen](../typing/part-01/gen.md)
+- [To Scheme](../typing/part-01/to-scheme.md)
+- [Comp](../../../unification/basic/part-01/comp.md)
+- [Term](../../../unification/basic/part-01/term.md)
+- [Subst](../../../unification/basic/part-01/subst-2.md)
+- [Unify](../../../unification/basic/part-02/unify.md)
 
 ## Sources
 

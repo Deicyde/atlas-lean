@@ -12,7 +12,10 @@ Weak duality for every feasible skew flow and source-sink cut.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](../part-01/flow.md)
+- [Is Feasible](../part-01/is-feasible.md)
+- [Cut Capacity](cut-capacity.md)
+- [Flow Value](../part-01/flow-value.md)
 
 ## Sources
 

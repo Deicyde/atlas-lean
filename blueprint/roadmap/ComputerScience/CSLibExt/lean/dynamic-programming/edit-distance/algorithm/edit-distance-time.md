@@ -16,6 +16,7 @@ Total charged events are all table cells plus all reconstructed operations.
 - [Edit Distance Cost](../script/edit-distance-cost.md)
 - [Total](../script/total.md)
 - [Edit Distance Result](../script/edit-distance-result.md)
+- [Edit Script](../script/edit-script.md)
 - [Edit Step](../script/edit-step.md)
 - [Edit Distance](edit-distance.md)
 

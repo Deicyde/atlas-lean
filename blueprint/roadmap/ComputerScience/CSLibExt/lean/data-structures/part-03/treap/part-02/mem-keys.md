@@ -14,6 +14,7 @@ The key list contains exactly the structurally present keys.
 ## Depends on
 
 - [Tree](../part-01/tree.md)
+- [Mem Key](../part-01/mem-key.md)
 - [Keys](keys.md)
 
 ## Proof depends on

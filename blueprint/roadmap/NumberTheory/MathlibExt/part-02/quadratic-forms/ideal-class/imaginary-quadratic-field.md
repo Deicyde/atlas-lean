@@ -13,6 +13,10 @@ The canonical subfield `ℚ(√(-D))` of the complex numbers.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Imaginary Root](imaginary-root.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.QuadraticForms.IdealClass](../../../../../../sources/v2/MathlibExt.md)

@@ -14,6 +14,10 @@ nonterminal, all production inputs, and all nonterminals in outputs.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Form NTs](form-nts.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.Reduced](../../../../../../../sources/v2/CSLibExt.md)

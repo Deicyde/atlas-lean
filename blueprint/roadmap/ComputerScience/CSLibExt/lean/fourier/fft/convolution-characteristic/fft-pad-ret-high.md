@@ -12,7 +12,7 @@ Every entry in the materialized padding suffix is zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Pad](../convolution/fft-pad.md)
 
 ## Sources
 

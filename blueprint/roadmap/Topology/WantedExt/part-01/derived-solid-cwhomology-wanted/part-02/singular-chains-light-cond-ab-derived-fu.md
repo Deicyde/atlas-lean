@@ -12,7 +12,11 @@ of light condensed abelian groups.
 
 ## Depends on
 
-This node has no prerequisites.
+- [DLight Cond Ab](../part-01/dlight-cond-ab.md)
+
+## Proof depends on
+
+- [Singular Chains Light Cond Ab Complex Functor](singular-chains-light-cond-ab-complex-fu.md)
 
 ## Sources
 

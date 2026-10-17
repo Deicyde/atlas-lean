@@ -72,7 +72,12 @@ theorem IsAnswer.isMinPairDist2 {ps : List (𝕜 × 𝕜)} {δ : 𝕜} (h : IsAn
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dist2](dist2.md)
+- [Min Dist From](min-dist-from.md)
+
+## Proof depends on
+
+- [Omin](../../data-structures/part-03/sparse-table/omin.md)
 
 ## Sources
 

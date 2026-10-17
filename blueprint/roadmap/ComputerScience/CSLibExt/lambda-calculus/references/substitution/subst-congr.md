@@ -12,7 +12,14 @@ Substitutions that agree pointwise act identically.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](../syntax/term.md)
+- [Subst](../syntax/subst.md)
+
+## Proof depends on
+
+- [Lift Sub](../syntax/lift-sub.md)
+- [Rename](../syntax/rename.md)
+- [Ty](../syntax/ty.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ cell shares its row or its column with a cell of the finset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Dominating](../../part-02/domination/is-dominating.md)
+- [Rook Graph](rook-graph.md)
 
 ## Sources
 

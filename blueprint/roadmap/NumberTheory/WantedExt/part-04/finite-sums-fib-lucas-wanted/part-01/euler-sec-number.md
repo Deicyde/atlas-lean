@@ -16,6 +16,10 @@ MathlibExt's `chapter5EulerEven` at even indices
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Chapter5 Euler Even](../../../../../Analysis/MathlibExt/part-01/ramanujan/part-01/part1-ch5-entry10b-euleriansymmetry/chapter5-euler-even.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.FiniteSumsFibLucasWanted](../../../../../../sources/v2/WantedExt.md)

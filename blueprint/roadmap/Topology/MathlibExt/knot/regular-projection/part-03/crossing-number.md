@@ -19,7 +19,13 @@ proved here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](../../euclidean-link/part-01/parametrized-link.md)
+
+## Proof depends on
+
+- [Is Regular Projection](../part-02/is-regular-projection.md)
+- [Isotopic](../../euclidean-link/part-01/isotopic-2.md)
+- [Crossing Count](../part-02/crossing-count.md)
 
 ## Sources
 

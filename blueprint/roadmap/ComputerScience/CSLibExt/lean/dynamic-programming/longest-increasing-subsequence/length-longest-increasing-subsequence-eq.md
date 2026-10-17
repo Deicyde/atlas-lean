@@ -12,7 +12,13 @@ The returned subsequence has length `k` exactly when `k` is the optimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LISLength](is-lislength.md)
+- [Longest Increasing Subsequence](longest-increasing-subsequence.md)
+
+## Proof depends on
+
+- [Unique](unique.md)
+- [Is LISLength longest Increasing Subsequence](is-lislength-longest-increasing-subseque.md)
 
 ## Sources
 

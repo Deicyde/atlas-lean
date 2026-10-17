@@ -12,7 +12,11 @@ Linear admission fails exactly when its tested input size conditions fail.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Linear Array](../convolution/fft-linear-array.md)
+
+## Proof depends on
+
+- [Fft Linear](../convolution/fft-linear.md)
 
 ## Sources
 

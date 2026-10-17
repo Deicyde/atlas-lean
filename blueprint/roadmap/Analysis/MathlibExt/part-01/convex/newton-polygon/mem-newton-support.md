@@ -13,8 +13,7 @@ Membership characterization for the Newton support.
 
 ## Depends on
 
-- [Exponent To Real](exponent-to-real.md)
-- [Newton Support](newton-support.md)
+This node has no prerequisites.
 
 ## Sources
 

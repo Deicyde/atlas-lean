@@ -13,7 +13,20 @@ of a matching `M`, then `f` more phases reach at least `M`'s size.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Matching](../part-01/is-matching.md)
+- [Valid](../part-01/valid.md)
+- [Hopcroft Karp Aux](../part-03/hopcroft-karp-aux.md)
+- [Pairs](../part-01/pairs.md)
+
+## Proof depends on
+
+- [Kőnig's certificate](../part-02/card-le-of-no-free.md)
+- [Card pairs](../part-02/card-pairs.md)
+- [Hk Step](../part-03/hk-step.md)
+- [Hk Step none](../part-03/hk-step-none.md)
+- [Hk Step some](../part-03/hk-step-some.md)
+- [Hopcroft Karp Aux of hk Step none](hopcroft-karp-aux-of-hk-step-none.md)
+- [Matched](../part-01/matched.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ best suffix of `L` followed by a best prefix of `R`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Max Prefix Sum](is-max-prefix-sum.md)
+- [Is Max Subarray Sum](../../dynamic-programming/maximum-subarray/is-max-subarray-sum.md)
+- [Is Max Suffix Sum](../../dynamic-programming/maximum-subarray/is-max-suffix-sum.md)
 
 ## Sources
 

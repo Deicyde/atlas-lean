@@ -14,7 +14,22 @@ before.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](../part-01/valid.md)
+- [First Free Round](../part-03/first-free-round.md)
+- [Flip](../part-01/flip.md)
+- [Layers](../part-01/layers.md)
+- [Phase](../part-03/phase.md)
+
+## Proof depends on
+
+- [Exact Level](exact-level.md)
+- [Free](../part-01/free.md)
+- [Is Augmenting Path](../part-01/is-augmenting-path.md)
+- [Free of free flip](free-of-free-flip.md)
+- [Mem layers snd of mate](mem-layers-snd-of-mate.md)
+- [Pair levels of mem phase](pair-levels-of-mem-phase.md)
+- [Phase Aux](../part-03/phase-aux.md)
+- [Phase Aux spec](../part-03/phase-aux-spec.md)
 
 ## Sources
 

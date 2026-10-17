@@ -15,7 +15,18 @@ Total: `Σ_{i<n} (cost i + 1) + n + 2` steps, and afterwards `c = n`, `cd = []` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flag](flag.md)
+- [Run](run.md)
+- [Cnt](cnt.md)
+- [For Head](for-head.md)
+- [Sum From](sum-from.md)
+- [Xfer](xfer.md)
+
+## Proof depends on
+
+- [Single](single.md)
+- [Add U](add-u.md)
+- [Xfer run](xfer-run.md)
 
 ## Sources
 

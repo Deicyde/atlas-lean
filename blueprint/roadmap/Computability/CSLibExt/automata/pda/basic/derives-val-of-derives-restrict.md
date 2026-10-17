@@ -12,7 +12,16 @@ Computations of the restricted PDA map to computations of `M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PDA](pda.md)
+- [Closed Under](closed-under.md)
+- [Config](config.md)
+- [Derives](derives.md)
+- [Restrict](restrict.md)
+
+## Proof depends on
+
+- [Step](step.md)
+- [Mem restrict step](mem-restrict-step.md)
 
 ## Sources
 

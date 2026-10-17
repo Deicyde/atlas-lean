@@ -12,7 +12,7 @@ The actual split reads and writes each even/odd pair.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Split](../../fft-2/fft-split.md)
 
 ## Sources
 

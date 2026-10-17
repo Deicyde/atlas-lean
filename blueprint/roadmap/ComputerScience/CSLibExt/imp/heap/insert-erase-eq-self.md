@@ -12,7 +12,7 @@ Reinserting the stored value after erasure restores the heap.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heap](heap.md)
 
 ## Sources
 

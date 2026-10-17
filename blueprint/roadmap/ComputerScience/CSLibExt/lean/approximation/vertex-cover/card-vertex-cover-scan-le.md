@@ -13,7 +13,7 @@ the scan has chosen, because each taken edge adds two new vertices, at least one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertex Cover Scan](vertex-cover-scan.md)
 
 ## Sources
 

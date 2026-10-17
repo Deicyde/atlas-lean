@@ -14,7 +14,11 @@ distortion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knot](../../part-01/conway-knot-shared/part-01/knot.md)
+
+## Proof depends on
+
+- [Distortion Ratio](distortion-ratio.md)
 
 ## Sources
 

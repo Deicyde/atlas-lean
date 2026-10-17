@@ -12,7 +12,13 @@ Isolated crossingless components are counted in the total.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dart Diagram](dart-diagram.md)
+- [Component Count](component-count.md)
+
+## Proof depends on
+
+- [Dart](dart.md)
+- [Component Setoid](component-setoid.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ A lower-bound search in a sorted merge splits over the two inputs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Bound](lower-bound.md)
+- [Sorted Merge](sorted-merge.md)
+
+## Proof depends on
+
+- [Perm sorted Merge](perm-sorted-merge.md)
 
 ## Sources
 

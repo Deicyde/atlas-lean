@@ -13,7 +13,16 @@ of every schedule `τ` of the same jobs, i.e. `C ≤ (4/3 - 1/(3m)) M`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Schedule Of](is-schedule-of.md)
+- [Lpt](lpt.md)
+- [Makespan](makespan.md)
+
+## Proof depends on
+
+- [Scan Inv](scan-inv.md)
+- [Is Schedule Of nil](is-schedule-of-nil.md)
+- [List Schedule Scan bound](list-schedule-scan-bound.md)
+- [Lpt step le](lpt-step-le.md)
 
 ## Sources
 

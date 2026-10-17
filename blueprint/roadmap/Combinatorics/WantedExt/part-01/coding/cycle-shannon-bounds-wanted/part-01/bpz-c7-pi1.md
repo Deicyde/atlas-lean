@@ -11,7 +11,7 @@ BPZ's one-block five-dimensional seven-cycle profile.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BPZProfile](bpzprofile.md)
 
 ## Sources
 

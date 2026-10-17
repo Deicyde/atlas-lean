@@ -12,7 +12,11 @@ makes this independent of the order of the endpoints.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knot](../../part-01/conway-knot-shared/part-01/knot.md)
+
+## Proof depends on
+
+- [Speed](speed.md)
 
 ## Sources
 

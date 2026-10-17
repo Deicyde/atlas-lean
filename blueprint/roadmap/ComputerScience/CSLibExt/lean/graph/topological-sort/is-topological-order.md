@@ -11,7 +11,11 @@ A duplicate-free complete vertex list in which every directed edge points forwar
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Edge](../directed-adjacency-2/part-01/edge.md)
 
 ## Sources
 

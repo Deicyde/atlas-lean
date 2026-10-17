@@ -12,7 +12,14 @@ Weakening by one variable type at the front of the context.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Type](../typing/has-type.md)
+- [Term](../syntax/term.md)
+- [Rename](../syntax/rename.md)
+- [Ty](../syntax/ty.md)
+
+## Proof depends on
+
+- [Rename](rename.md)
 
 ## Sources
 

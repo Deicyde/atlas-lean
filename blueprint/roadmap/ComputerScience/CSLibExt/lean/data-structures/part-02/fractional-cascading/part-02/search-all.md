@@ -14,6 +14,10 @@ catalog, computed by a direct scan of each catalog.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Count LT](../part-01/count-lt.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.FractionalCascading](../../../../../../../../sources/v2/CSLibExt.md)

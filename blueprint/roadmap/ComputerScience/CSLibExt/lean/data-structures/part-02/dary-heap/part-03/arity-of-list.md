@@ -13,6 +13,7 @@ Building from a list uses the normalized requested arity.
 
 ## Depends on
 
+- [Dary Min Heap](../part-02/dary-min-heap.md)
 - [Of List](of-list.md)
 - [Normalized Arity](../part-01/normalized-arity.md)
 

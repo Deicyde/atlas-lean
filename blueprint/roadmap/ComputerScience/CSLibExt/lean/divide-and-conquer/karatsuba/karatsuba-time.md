@@ -28,7 +28,8 @@ theorem karatsuba_operands_lt {B n x : ℕ} (hB : 0 < B) (hx : x < B ^ n) :
 
 ## Depends on
 
-This node has no prerequisites.
+- [Karatsuba](karatsuba.md)
+- [Karatsuba Cost](karatsuba-cost.md)
 
 ## Sources
 

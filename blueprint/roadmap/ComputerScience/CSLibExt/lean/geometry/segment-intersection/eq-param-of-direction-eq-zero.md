@@ -13,7 +13,7 @@ product.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Direction](direction.md)
 
 ## Sources
 

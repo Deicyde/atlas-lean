@@ -13,7 +13,14 @@ The bound follows from the executor's finite seed pairing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Matrix](../basic/freivalds-matrix.md)
+- [Freivalds Trial Law](freivalds-trial-law.md)
+
+## Proof depends on
+
+- [Freivalds Trial](../basic/freivalds-trial.md)
+- [Freivalds Trial Law acceptance](freivalds-trial-law-acceptance.md)
+- [Counting](../freivalds-trial-acceptance-card-bound.md)
 
 ## Sources
 

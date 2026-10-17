@@ -11,7 +11,8 @@ Forget weights while preserving edge-list order and multiplicity.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge](edge.md)
+- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
 
 ## Sources
 

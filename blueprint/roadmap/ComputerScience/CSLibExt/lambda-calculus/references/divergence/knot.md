@@ -11,7 +11,13 @@ Landin's knot.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](../syntax/term.md)
+
+## Proof depends on
+
+- [Body](body.md)
+- [Id U](id-u.md)
+- [Ty](../syntax/ty.md)
 
 ## Sources
 

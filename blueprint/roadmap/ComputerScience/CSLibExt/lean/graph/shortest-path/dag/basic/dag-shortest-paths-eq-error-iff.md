@@ -12,7 +12,17 @@ The wrapper relays exactly the sorter's processed/remainder failure data.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distances](../../bellman-ford/basic/distances.md)
+- [Edge](../../bellman-ford/basic/edge.md)
+- [To Directed Adjacency](../../bellman-ford/basic/to-directed-adjacency.md)
+- [Cost](cost.md)
+- [Dag Shortest Paths](dag-shortest-paths.md)
+- [Result](../../../topological-sort/result.md)
+- [Sort](../../../topological-sort/sort.md)
+
+## Proof depends on
+
+- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ context-free intersection.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exists is Context Free inf not is Context Free](exists-is-context-free-inf-not-is-contex.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.NonClosure](../../../../../../sources/v2/CSLibExt.md)

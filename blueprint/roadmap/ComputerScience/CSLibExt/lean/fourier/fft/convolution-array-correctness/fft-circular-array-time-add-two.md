@@ -12,7 +12,13 @@ Circular array admission has the exact actual FFT/product/IFFT charge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Circular Array](../convolution/fft-circular-array.md)
+
+## Proof depends on
+
+- [Fft Circular](../convolution/fft-circular.md)
+- [Fft Circular Array time of vector](fft-circular-array-time-of-vector.md)
+- [Fft Circular time add two](../convolution-cost/fft-circular-time-add-two.md)
 
 ## Sources
 

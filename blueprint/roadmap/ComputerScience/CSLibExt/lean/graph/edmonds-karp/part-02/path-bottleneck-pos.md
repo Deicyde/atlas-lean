@@ -12,7 +12,18 @@ A residual source-to-sink path has a positive integral bottleneck.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](../part-01/flow.md)
+- [Is Path](../part-01/is-path.md)
+- [Path Bottleneck](../part-01/path-bottleneck.md)
+- [Residual Graph](../part-01/residual-graph.md)
+
+## Proof depends on
+
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Edge](../../directed-adjacency-2/part-01/edge.md)
+- [Path Edges](../part-01/path-edges.md)
+- [Residual Amount](../part-01/residual-amount.md)
+- [Residual Graph edge iff](../part-01/residual-graph-edge-iff.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ No production of `unitGrammar` is a unit production.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Unit Output](is-unit-output.md)
+- [Unit Grammar](unit-grammar.md)
+
+## Proof depends on
+
+- [Unit Steps](unit-steps.md)
+- [Cases of mem unit Grammar rules](cases-of-mem-unit-grammar-rules.md)
 
 ## Sources
 

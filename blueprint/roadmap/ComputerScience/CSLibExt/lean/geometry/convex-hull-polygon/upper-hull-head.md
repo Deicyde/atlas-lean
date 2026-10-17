@@ -12,7 +12,13 @@ The upper chain starts at the last input point.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Hull](upper-hull.md)
+
+## Proof depends on
+
+- [Lower Hull](../convex-hull/lower-hull.md)
+- [Lower Hull head?](../convex-hull/lower-hull-head.md)
+- [Upper Hull eq](upper-hull-eq.md)
 
 ## Sources
 

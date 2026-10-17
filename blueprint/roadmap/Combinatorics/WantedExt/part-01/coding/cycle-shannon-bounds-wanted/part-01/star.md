@@ -11,7 +11,7 @@ Exact BPZ profile multiplication, without an independent-set certificate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BPZProfile](bpzprofile.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ Karatsuba multiplication returns the product, for every base, digit count and in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Karatsuba](karatsuba.md)
+
+## Proof depends on
+
+- [Karatsuba middle](karatsuba-middle.md)
 
 ## Sources
 

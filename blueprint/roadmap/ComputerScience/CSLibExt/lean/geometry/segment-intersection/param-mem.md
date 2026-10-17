@@ -12,7 +12,7 @@ Where the sign changes between `d` and `e`: `d / (d - e) ∈ [0, 1]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Straddles](straddles.md)
 
 ## Sources
 

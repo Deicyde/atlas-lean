@@ -13,6 +13,10 @@ The Fibonacci `m`-step numbers `F⁽ᵐ⁾ₙ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fib Step Seq](fib-step-seq.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.FibStepConvolutionWanted](../../../../../../../sources/v2/WantedExt.md)

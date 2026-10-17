@@ -16,6 +16,7 @@ Search a root's tree by separator comparisons.
 
 ## Proof depends on
 
+- [Tree](../part-01/tree.md)
 - [Contains](../part-01/contains.md)
 
 ## Sources

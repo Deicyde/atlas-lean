@@ -13,7 +13,9 @@ Flipping an alternating path from `j` matches `j` in addition to the matched rig
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alt Path](alt-path.md)
+- [Flip](flip.md)
+- [Matched](matched.md)
 
 ## Sources
 

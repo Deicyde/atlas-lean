@@ -14,7 +14,20 @@ archimedean comparison `C₆₁ ≤ δ₂`; it is not an equality of constants.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dominates Selberg](../part-01/dominates-selberg.md)
+- [Local Exponent Family](../part-01/local-exponent-family.md)
+- [Ramanujan Exponent Of](../part-01/ramanujan-exponent-of.md)
+- [Selberg Constant](../../selberg-spectral-gap/part-01/selberg-constant.md)
+
+## Proof depends on
+
+- [Exponent Set](../part-01/exponent-set.md)
+- [Sqrt le ramanujan Exponent Of of dominates Selberg](../part-01/sqrt-le-ramanujan-exponent-of-of-dominat.md)
+- [Is Congruence Subgroup](../../selberg-spectral-gap/part-01/is-congruence-subgroup.md)
+- [Is Eigenvalue](../../selberg-spectral-gap/part-01/is-eigenvalue.md)
+- [Exceptional Gap](../../selberg-spectral-gap/part-01/exceptional-gap.md)
+- [Exceptional Gaps](../../selberg-spectral-gap/part-01/exceptional-gaps.md)
+- [Is Congruence Subgroup top](../../selberg-spectral-gap/part-01/is-congruence-subgroup-top.md)
 
 ## Sources
 

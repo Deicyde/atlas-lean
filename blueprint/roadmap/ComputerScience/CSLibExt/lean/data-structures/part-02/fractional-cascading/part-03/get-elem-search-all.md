@@ -12,7 +12,12 @@ The position at every index is that catalog's lower bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Bound](../part-01/lower-bound.md)
+- [Search All](../part-02/search-all.md)
+
+## Proof depends on
+
+- [Search All eq map lower Bound](search-all-eq-map-lower-bound.md)
 
 ## Sources
 

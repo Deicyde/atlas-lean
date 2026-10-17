@@ -12,7 +12,7 @@ Evaluate a divisor by multiplying the corresponding integer powers of `f`.
 
 ## Depends on
 
-- [Curve Divisor](../divisor/curve-divisor.md)
+This node has no prerequisites.
 
 ## Proof depends on
 

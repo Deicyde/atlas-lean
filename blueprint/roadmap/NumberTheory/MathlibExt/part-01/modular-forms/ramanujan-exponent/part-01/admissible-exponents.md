@@ -11,7 +11,11 @@ The admissible nonnegative exponents for a family.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Local Exponent Family](local-exponent-family.md)
+
+## Proof depends on
+
+- [Is Admissible](is-admissible.md)
 
 ## Sources
 

@@ -12,7 +12,15 @@ The named CNF semantics coincides with the pre-existing satisfiability predicate
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+- [Satisfies](satisfies-3.md)
+- [CNFSat](../basic/cnfsat.md)
+
+## Proof depends on
+
+- [CNFClause](../basic/cnfclause.md)
+- [Satisfies](satisfies-2.md)
+- [Satisfies](satisfies.md)
 
 ## Sources
 

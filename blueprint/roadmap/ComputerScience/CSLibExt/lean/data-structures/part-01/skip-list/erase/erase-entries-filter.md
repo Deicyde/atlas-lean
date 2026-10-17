@@ -12,7 +12,10 @@ On valid lists, erasure is precisely filtering out the requested key.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skip List](../../../part-03/skip-list/part-01/skip-list.md)
+- [Entry](../../../part-03/skip-list/part-01/entry.md)
+- [Valid](../../../part-03/skip-list/part-01/valid.md)
+- [Erase](erase.md)
 
 ## Sources
 

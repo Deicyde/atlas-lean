@@ -12,7 +12,9 @@ Erasure removes the matching head entry and returns its existing tail.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Skip List](../../../part-03/skip-list/part-01/skip-list.md)
+- [Entry](../../../part-03/skip-list/part-01/entry.md)
+- [Erase](erase.md)
 
 ## Sources
 

@@ -13,10 +13,6 @@ upstairs together with the base maximal ideal. No integrality hypothesis.
 
 This node has no prerequisites.
 
-## Proof depends on
-
-- [Comap map Ring Hom bot eq map C ker](comap-map-ring-hom-bot-eq-map-c-ker.md)
-
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.AdjoinRoot.LocalMaximal](../../../../../sources/v2/MathlibExt.md)

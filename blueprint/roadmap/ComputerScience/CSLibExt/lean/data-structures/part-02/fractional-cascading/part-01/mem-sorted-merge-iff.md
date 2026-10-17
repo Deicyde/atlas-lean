@@ -12,7 +12,11 @@ Membership in a sorted merge is membership in one of the inputs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sorted Merge](sorted-merge.md)
+
+## Proof depends on
+
+- [Perm sorted Merge](perm-sorted-merge.md)
 
 ## Sources
 

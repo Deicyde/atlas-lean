@@ -12,7 +12,7 @@ Residual weights stay nonnegative and only decrease.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pricing Scan](pricing-scan.md)
 
 ## Sources
 

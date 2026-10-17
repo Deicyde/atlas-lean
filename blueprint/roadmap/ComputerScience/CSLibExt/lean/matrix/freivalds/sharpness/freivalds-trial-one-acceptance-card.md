@@ -12,7 +12,11 @@ Exactly one complete one-dimensional seed is accepted by the wrong-product trial
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Trial](../basic/freivalds-trial.md)
+
+## Proof depends on
+
+- [Freivalds Trial one accept iff](freivalds-trial-one-accept-iff.md)
 
 ## Sources
 

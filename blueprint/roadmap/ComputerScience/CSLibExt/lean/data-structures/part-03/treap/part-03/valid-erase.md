@@ -21,6 +21,7 @@ Deletion preserves strict key ordering and min-heap priority ordering.
 
 - [All Nodes](../part-01/all-nodes.md)
 - [Heap Ordered](../part-01/heap-ordered.md)
+- [Mem Key](../part-01/mem-key.md)
 - [Ordered](../part-01/ordered.md)
 - [Separated](../part-02/separated.md)
 - [Split Result](../part-01/split-result.md)

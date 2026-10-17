@@ -13,7 +13,16 @@ and the free resources.**
 
 ## Depends on
 
-This node has no prerequisites.
+- [System](system.md)
+- [Safe](safe.md)
+- [Grant](grant.md)
+- [Need](need.md)
+- [Request](request.md)
+
+## Proof depends on
+
+- [Safety Check](safety-check.md)
+- [Correctness of the safety algorithm](safety-check-iff.md)
 
 ## Sources
 

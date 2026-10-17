@@ -10,9 +10,7 @@ Degree splits over a predicate and its complement.
 
 ## Depends on
 
-- [Multigraph](multigraph.md)
-- [Degree](degree.md)
-- [Degree On](degree-on.md)
+This node has no prerequisites.
 
 ## Sources
 

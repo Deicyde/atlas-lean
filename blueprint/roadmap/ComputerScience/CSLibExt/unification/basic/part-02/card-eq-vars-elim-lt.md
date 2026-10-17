@@ -12,7 +12,17 @@ Eliminating `x = t` (with `x` not in `t`) from `(x, t) :: E` lowers the variable
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equations](../part-01/equations.md)
+- [Single](../part-01/single.md)
+- [Term](../part-01/term.md)
+- [Vars](../part-01/vars.md)
+- [Eq Vars](../part-01/eq-vars.md)
+- [Subst Eqs](../part-01/subst-eqs.md)
+
+## Proof depends on
+
+- [Subst](../part-01/subst-2.md)
+- [Vars subst single subset](../part-01/vars-subst-single-subset.md)
 
 ## Sources
 

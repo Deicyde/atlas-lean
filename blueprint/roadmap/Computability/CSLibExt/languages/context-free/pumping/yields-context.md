@@ -18,6 +18,10 @@ contexts from actual productions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Yields](../yields/yields.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.Pumping](../../../../../../sources/v2/CSLibExt.md)

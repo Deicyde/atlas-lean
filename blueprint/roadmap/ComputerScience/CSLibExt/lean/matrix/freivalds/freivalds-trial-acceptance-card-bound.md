@@ -13,7 +13,12 @@ product is incorrect. Acceptance is the actual charged trial's return value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Matrix](basic/freivalds-matrix.md)
+- [Freivalds Trial](basic/freivalds-trial.md)
+
+## Proof depends on
+
+- [Freivalds Trial accept discrepancy iff](basic/freivalds-trial-accept-discrepancy-iff.md)
 
 ## Sources
 

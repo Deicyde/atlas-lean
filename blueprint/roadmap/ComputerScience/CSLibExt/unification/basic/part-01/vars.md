@@ -11,7 +11,7 @@ The variables of a term.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](term.md)
 
 ## Sources
 

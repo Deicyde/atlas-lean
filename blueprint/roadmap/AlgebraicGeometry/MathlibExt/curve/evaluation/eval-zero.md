@@ -13,7 +13,6 @@ The zero divisor evaluates to one.
 
 ## Depends on
 
-- [Curve Divisor](../divisor/curve-divisor.md)
 - [Eval](eval.md)
 
 ## Proof depends on

@@ -13,7 +13,13 @@ pushdown automaton whose stack alphabet is the grammar's symbols.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PDA](../../../automata/pda/basic/pda.md)
+- [Accepts](../../../automata/pda/basic/accepts.md)
+
+## Proof depends on
+
+- [Cfg PDA accepts](cfg-pda-accepts.md)
+- [Cfg PDA](cfg-pda.md)
 
 ## Sources
 

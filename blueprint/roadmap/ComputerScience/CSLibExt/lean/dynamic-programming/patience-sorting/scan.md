@@ -98,7 +98,14 @@ private theorem PatienceInv.step {P t : List α} (h : PatienceInv P t) (x : α) 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Patience Inv](patience-inv.md)
+- [Patience Scan](patience-scan.md)
+
+## Proof depends on
+
+- [Lower Bound](../../search/lower-bound/lower-bound.md)
+- [Lower Bound spec](../../search/lower-bound/lower-bound-spec.md)
+- [Patience Step](patience-step.md)
 
 ## Sources
 

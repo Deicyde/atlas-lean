@@ -14,7 +14,16 @@ twice.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even Except](even-except.md)
+- [Uhierholzer](uhierholzer.md)
+- [Usym](usym.md)
+- [Walk Edges](../hierholzer/part-01/walk-edges.md)
+
+## Proof depends on
+
+- [Udeg](udeg.md)
+- [Uvisit](uvisit.md)
+- [Uvisit spec](uvisit-spec.md)
 
 ## Sources
 

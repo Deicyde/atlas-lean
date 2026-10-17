@@ -11,7 +11,11 @@ The coefficient field `ℂ(a₁, …, aₙ)` of the general polynomial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Roots Field](roots-field.md)
+
+## Proof depends on
+
+- [Coeff](coeff.md)
 
 ## Sources
 

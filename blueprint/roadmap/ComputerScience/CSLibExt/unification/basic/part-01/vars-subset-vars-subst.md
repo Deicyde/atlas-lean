@@ -12,7 +12,10 @@ The variables of `s y` occur in `t.subst s` when `y` occurs in `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subst](subst.md)
+- [Term](term.md)
+- [Subst](subst-2.md)
+- [Vars](vars.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ There is one augmented search position per catalog.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Search Augmented](search-augmented.md)
+
+## Proof depends on
+
+- [Augmented](../part-02/augmented.md)
+- [Count LT](../part-01/count-lt.md)
+- [Length augmented](../part-02/length-augmented.md)
 
 ## Sources
 

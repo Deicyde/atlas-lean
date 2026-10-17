@@ -12,7 +12,12 @@ Every recorded bridge pointer is a boundary index of the next catalog.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bridges](bridges.md)
+
+## Proof depends on
+
+- [Bridge Ptr](bridge-ptr.md)
+- [Bridge Ptr le length](bridge-ptr-le-length.md)
 
 ## Sources
 

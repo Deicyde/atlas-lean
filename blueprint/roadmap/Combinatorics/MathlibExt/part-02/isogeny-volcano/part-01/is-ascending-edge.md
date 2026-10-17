@@ -10,7 +10,7 @@ An ascending edge from `v` to `w`, where `w` lies one level above `v`.
 
 ## Depends on
 
-- [Isogeny Volcano](isogeny-volcano.md)
+This node has no prerequisites.
 
 ## Sources
 

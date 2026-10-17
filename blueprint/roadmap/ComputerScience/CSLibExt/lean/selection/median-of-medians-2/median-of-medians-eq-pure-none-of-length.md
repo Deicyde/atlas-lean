@@ -12,7 +12,14 @@ An out-of-range rank returns immediately with zero comparison charges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Median Of Medians](median-of-medians.md)
+
+## Proof depends on
+
+- [Three Way Partition](../../sort/partition/three-way-partition.md)
+- [Median Of Medians Groups](../median-of-medians/groups/median-of-medians-groups.md)
+- [Partition3](../../sort/partition/partition3.md)
+- [Quickselect](../quickselect/quickselect.md)
 
 ## Sources
 

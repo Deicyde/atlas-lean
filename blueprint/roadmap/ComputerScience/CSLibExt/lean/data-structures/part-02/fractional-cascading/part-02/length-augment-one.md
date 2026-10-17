@@ -12,7 +12,12 @@ The length of an augmented catalog splits over its two parts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Augment One](augment-one.md)
+- [Sample](../part-01/sample.md)
+
+## Proof depends on
+
+- [Length sorted Merge](../part-01/length-sorted-merge.md)
 
 ## Sources
 

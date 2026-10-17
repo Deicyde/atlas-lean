@@ -13,7 +13,12 @@ Characteristic example: `1` is good for every `(a, b)`, with value
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gibonacci Good](is-gibonacci-good.md)
+
+## Proof depends on
+
+- [Gibonacci Generating Value](gibonacci-generating-value.md)
+- [Gibonacci Generating Value one](gibonacci-generating-value-one.md)
 
 ## Sources
 

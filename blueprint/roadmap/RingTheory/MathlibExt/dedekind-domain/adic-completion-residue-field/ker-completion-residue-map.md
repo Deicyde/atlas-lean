@@ -10,7 +10,7 @@ The kernel of the residue-field map starting at `A` is `𝔭.asIdeal`.
 
 ## Depends on
 
-- [Completion Residue Map](completion-residue-map.md)
+This node has no prerequisites.
 
 ## Sources
 

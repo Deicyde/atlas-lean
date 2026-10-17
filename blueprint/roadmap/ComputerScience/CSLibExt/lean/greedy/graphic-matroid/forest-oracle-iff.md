@@ -12,7 +12,14 @@ The oracle decides independence in the graphic matroid.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest Oracle](forest-oracle.md)
+- [Graphic Matroid](graphic-matroid.md)
+
+## Proof depends on
+
+- [Is Forest Set](is-forest-set.md)
+- [Bridge In](bridge-in.md)
+- [Chosen](chosen.md)
 
 ## Sources
 

@@ -12,7 +12,15 @@ Fewer than two points have no pair.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closest Pair](closest-pair.md)
+
+## Proof depends on
+
+- [Is Answer](is-answer.md)
+- [Is Min Pair Dist2](is-min-pair-dist2.md)
+- [Closest Pair is Answer](closest-pair-is-answer.md)
+- [Closest Pair spec](closest-pair-spec.md)
+- [Dist2](dist2.md)
 
 ## Sources
 

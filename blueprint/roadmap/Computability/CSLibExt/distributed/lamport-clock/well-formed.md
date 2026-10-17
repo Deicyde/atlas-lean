@@ -11,7 +11,7 @@ Every receipt names an earlier event.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
 
 ## Sources
 

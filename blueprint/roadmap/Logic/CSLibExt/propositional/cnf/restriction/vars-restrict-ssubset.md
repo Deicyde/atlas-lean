@@ -12,7 +12,14 @@ If the assigned variable occurred, restriction strictly decreases the variable s
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+- [Restrict](restrict-2.md)
+- [Vars](vars-2.md)
+
+## Proof depends on
+
+- [Not mem vars restrict](not-mem-vars-restrict.md)
+- [Vars restrict subset](vars-restrict-subset.md)
 
 ## Sources
 

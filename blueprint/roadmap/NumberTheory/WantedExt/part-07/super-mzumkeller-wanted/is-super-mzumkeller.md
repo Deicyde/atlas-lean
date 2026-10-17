@@ -15,6 +15,10 @@ equal products.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Divisor Prod](divisor-prod.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.SuperMZumkellerWanted](../../../../../sources/v2/WantedExt.md)

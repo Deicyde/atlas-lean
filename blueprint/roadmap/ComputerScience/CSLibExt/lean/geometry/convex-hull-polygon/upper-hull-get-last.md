@@ -12,7 +12,13 @@ The upper chain ends at the first input point.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Hull](upper-hull.md)
+
+## Proof depends on
+
+- [Lower Hull](../convex-hull/lower-hull.md)
+- [Lower Hull get Last?](../convex-hull/lower-hull-get-last.md)
+- [Upper Hull eq](upper-hull-eq.md)
 
 ## Sources
 

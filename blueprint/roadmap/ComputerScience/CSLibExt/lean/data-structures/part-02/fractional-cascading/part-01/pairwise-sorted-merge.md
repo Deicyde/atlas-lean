@@ -12,7 +12,7 @@ A sorted merge is sorted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sorted Merge](sorted-merge.md)
 
 ## Sources
 

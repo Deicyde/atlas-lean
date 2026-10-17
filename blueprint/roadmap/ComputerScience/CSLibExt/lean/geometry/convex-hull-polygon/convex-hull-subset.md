@@ -12,7 +12,14 @@ The hull's vertices are input points.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convex Hull](convex-hull.md)
+
+## Proof depends on
+
+- [Lower Hull](../convex-hull/lower-hull.md)
+- [Lower Hull sublist](../convex-hull/lower-hull-sublist.md)
+- [Upper Hull](upper-hull.md)
+- [Upper Hull sublist](upper-hull-sublist.md)
 
 ## Sources
 

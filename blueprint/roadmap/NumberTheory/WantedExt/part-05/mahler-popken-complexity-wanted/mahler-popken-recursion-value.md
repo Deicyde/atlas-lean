@@ -15,6 +15,10 @@ and of `∥η∥ₘ + ∥n - η∥ₘ` over `0 < η < n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mahler Popken Complexity](mahler-popken-complexity.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.MahlerPopkenComplexityWanted](../../../../../sources/v2/WantedExt.md)

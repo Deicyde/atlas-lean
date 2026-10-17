@@ -11,7 +11,11 @@ A clause is satisfied when at least one of its literals is satisfied.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNFClause](../basic/cnfclause.md)
+
+## Proof depends on
+
+- [Satisfies](satisfies.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Each actual butterfly preserves all positions outside its two writes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Butterfly](../../fft-2/fft-butterfly.md)
 
 ## Sources
 

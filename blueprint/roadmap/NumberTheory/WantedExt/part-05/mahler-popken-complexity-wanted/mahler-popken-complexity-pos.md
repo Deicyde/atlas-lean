@@ -12,7 +12,14 @@ The complexity of a positive natural is positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mahler Popken Complexity](mahler-popken-complexity.md)
+
+## Proof depends on
+
+- [Mahler Popken Expr](mahler-popken-expr.md)
+- [Count](count.md)
+- [Eval](eval.md)
+- [Mahler Popken Complexity spec](mahler-popken-complexity-spec.md)
 
 ## Sources
 

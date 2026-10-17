@@ -11,7 +11,12 @@ A reduced ordered binary decision diagram, for the natural order on variables.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](bdd.md)
+
+## Proof depends on
+
+- [Ordered From](ordered-from.md)
+- [Reduced](reduced.md)
 
 ## Sources
 

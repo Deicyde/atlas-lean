@@ -12,7 +12,15 @@ lean: Cslib.Algorithms.Lean.BipartiteMatching.pathTo_isAugmentingPath
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Augmenting Path](is-augmenting-path.md)
+- [Valid](valid.md)
+- [Layers](layers.md)
+- [Path To](path-to.md)
+
+## Proof depends on
+
+- [Alt Path](alt-path.md)
+- [Path To spec](path-to-spec.md)
 
 ## Sources
 

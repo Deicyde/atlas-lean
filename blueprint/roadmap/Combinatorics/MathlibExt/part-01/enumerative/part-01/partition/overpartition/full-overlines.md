@@ -13,6 +13,7 @@ The overlined sizes of `full p` are the distinct parts of `p`.
 
 ## Depends on
 
+- [Overpartition](overpartition.md)
 - [Full](full.md)
 
 ## Sources

@@ -12,7 +12,12 @@ On a prime, `MILLER-RABIN` answers *prime* for every list of bases in `1, …, n
 
 ## Depends on
 
-This node has no prerequisites.
+- [Miller Rabin](miller-rabin.md)
+
+## Proof depends on
+
+- [Witness](witness.md)
+- [Witness eq false of prime](witness-eq-false-of-prime.md)
 
 ## Sources
 

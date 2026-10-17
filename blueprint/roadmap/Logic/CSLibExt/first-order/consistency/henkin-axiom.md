@@ -13,6 +13,10 @@ The Henkin axiom for `∀' φ` with witness `c`: `¬∀' φ ⟹ ¬φ(c)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Instantiate](../syntax/instantiate.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Logics.FirstOrder.Consistency](../../../../../sources/v2/CSLibExt.md)

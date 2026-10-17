@@ -11,7 +11,8 @@ The substitution replacing `x` by `t` and fixing every other variable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subst](subst.md)
+- [Term](term.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ value there.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gibonacci Generating Value](gibonacci-generating-value.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.FibonacciGeneratingFunctionsWanted](../../../../../sources/v2/WantedExt.md)

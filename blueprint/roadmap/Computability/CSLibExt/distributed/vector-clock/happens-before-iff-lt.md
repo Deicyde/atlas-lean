@@ -14,7 +14,15 @@ execution, `a` happened before `b` exactly when `a`'s timestamp is smaller than
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](../lamport-clock/event.md)
+- [Happens Before](../lamport-clock/happens-before.md)
+- [Timestamps](timestamps.md)
+
+## Proof depends on
+
+- [Lt](../lamport-clock/lt.md)
+- [The converse direction](eq-or-happens-before-of-le.md)
+- [Vector Clock le of happens Before](vector-clock-le-of-happens-before.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The actual roots of the DFS forest, in discovery order.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Traversal](traversal.md)
 
 ## Sources
 

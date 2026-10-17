@@ -13,7 +13,12 @@ sentential form under a valuation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Valuation](is-valuation.md)
+- [Eval Form](eval-form.md)
+
+## Proof depends on
+
+- [Eval Form append](eval-form-append.md)
 
 ## Sources
 

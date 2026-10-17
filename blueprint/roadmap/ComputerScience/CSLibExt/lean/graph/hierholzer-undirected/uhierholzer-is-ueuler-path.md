@@ -13,7 +13,18 @@ starts at a vertex reachable from `s`, the result is an Euler path from `s` to `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even Except](even-except.md)
+- [Is UEuler Path](is-ueuler-path.md)
+- [UReach](ureach.md)
+- [Uhierholzer](uhierholzer.md)
+
+## Proof depends on
+
+- [Udeg](udeg.md)
+- [Usym](usym.md)
+- [Uvisit](uvisit.md)
+- [Uvisit spec](uvisit-spec.md)
+- [Walk Edges](../hierholzer/part-01/walk-edges.md)
 
 ## Sources
 

@@ -13,7 +13,6 @@ Evaluation sends addition of divisors to multiplication.
 
 ## Depends on
 
-- [Curve Divisor](../divisor/curve-divisor.md)
 - [Eval](eval.md)
 
 ## Proof depends on

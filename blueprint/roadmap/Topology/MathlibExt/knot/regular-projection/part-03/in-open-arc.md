@@ -12,7 +12,7 @@ on the common parameter circle `[0, 2π)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Param Point](../part-02/param-point.md)
 
 ## Sources
 

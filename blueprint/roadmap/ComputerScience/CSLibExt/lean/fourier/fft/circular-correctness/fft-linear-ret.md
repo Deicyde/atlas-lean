@@ -12,7 +12,9 @@ The executed linear return calls circular convolution on both actual padded arra
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Circular](../convolution/fft-circular.md)
+- [Fft Linear](../convolution/fft-linear.md)
+- [Fft Pad](../convolution/fft-pad.md)
 
 ## Sources
 

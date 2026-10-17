@@ -12,7 +12,13 @@ Unit steps shrink the canonical interpreted languages.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit Steps](../part-01/unit-steps.md)
+- [Language From](../../basic/part-01/language-from.md)
+
+## Proof depends on
+
+- [Eval Form](../../basic/part-01/eval-form.md)
+- [Is Valuation language From](../../basic/part-01/is-valuation-language-from.md)
 
 ## Sources
 

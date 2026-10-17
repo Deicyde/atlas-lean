@@ -13,6 +13,10 @@ Code the stacks.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Code](code.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.TuringMachine.Recursive.OfTM2](../../../../../../../sources/v2/MathlibExt.md)

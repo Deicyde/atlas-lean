@@ -18,6 +18,14 @@ accepted. Inlined from FormalConjectures (absent from Mathlib).
 
 ## Proof depends on
 
+- [Bitstring Encoding](bitstring-encoding.md)
+- [Bit Decode](bit-decode.md)
+- [Bit Decode bit Encode](bit-decode-bit-encode.md)
+- [Bit Encode](bit-encode.md)
+- [Delimit](delimit.md)
+- [Undelimit](undelimit.md)
+- [Undelimit Blocks](undelimit-blocks.md)
+- [Undelimit Blocks Aux](undelimit-blocks-aux.md)
 - [Decision Problem](decision-problem.md)
 - [Is Poly Time](is-poly-time.md)
 

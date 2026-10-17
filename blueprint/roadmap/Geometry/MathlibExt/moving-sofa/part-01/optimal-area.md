@@ -13,6 +13,10 @@ Actual Lebesgue areas are optimized in the extended nonnegative reals.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Sofa](is-sofa.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.MovingSofa](../../../../../sources/v2/MathlibExt.md)

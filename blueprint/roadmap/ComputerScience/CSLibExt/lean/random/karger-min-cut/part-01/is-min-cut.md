@@ -11,7 +11,12 @@ lean: Cslib.Algorithms.Lean.Karger.IsMinCut
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+
+## Proof depends on
+
+- [Is Cut](is-cut.md)
+- [Cut Size](cut-size.md)
 
 ## Sources
 

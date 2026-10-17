@@ -17,6 +17,11 @@ scope in the module docstring.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Coset Cover](is-coset-cover.md)
+- [Fundamental Domain](fundamental-domain.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ModularForms.SelbergSpectralGap](../../../../../../../sources/v2/MathlibExt.md)

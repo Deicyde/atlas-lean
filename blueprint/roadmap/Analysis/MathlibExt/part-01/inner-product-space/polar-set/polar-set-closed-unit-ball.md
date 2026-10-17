@@ -12,7 +12,7 @@ The one-sided real inner-product polar of the closed unit ball is itself.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polar Set](polar-set.md)
 
 ## Sources
 

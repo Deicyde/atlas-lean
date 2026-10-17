@@ -15,6 +15,11 @@ Proposition 12.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Array R](array-r.md)
+- [Legendre Stirling First](../../../../MathlibExt/part-01/enumerative/part-04/legendre-stirling-first-kind/legendre-stirling-first.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted](../../../../../../sources/v2/WantedExt.md)

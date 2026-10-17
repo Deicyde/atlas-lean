@@ -13,7 +13,14 @@ squared distance between two of them.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Min Pair Dist2](is-min-pair-dist2.md)
+- [Closest Pair](closest-pair.md)
+
+## Proof depends on
+
+- [Is Answer](is-answer.md)
+- [Closest Pair is Answer](closest-pair-is-answer.md)
+- [Dist2](dist2.md)
 
 ## Sources
 

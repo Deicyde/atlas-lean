@@ -12,7 +12,14 @@ Because a source exists, the exact number of relaxation checks is `n * |edges|`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../basic/cost.md)
+- [Edge](../basic/edge.md)
+- [Result](../basic/result.md)
+- [Bellman Ford](../correctness/bellman-ford.md)
+
+## Proof depends on
+
+- [Bellman Ford relaxation Checks](bellman-ford-relaxation-checks.md)
 
 ## Sources
 

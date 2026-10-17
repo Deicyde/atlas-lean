@@ -13,11 +13,10 @@ The zero series converges locally normally on every set.
 
 ## Depends on
 
-- [Converges Locally Normally On](converges-locally-normally-on.md)
+- [Sup Norm On](sup-norm-on.md)
 
 ## Proof depends on
 
-- [Converges Normally On](converges-normally-on.md)
 - [Converges Normally On zero](converges-normally-on-zero.md)
 
 ## Sources

@@ -15,7 +15,17 @@ edges, only shortens adjacency lists, and costs one unit per removed edge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Balanced Edges](balanced-edges.md)
+- [Semi Balanced Edges](semi-balanced-edges.md)
+- [Edge List Of](edge-list-of.md)
+- [Visit](visit.md)
+- [Walk Edges](walk-edges.md)
+
+## Proof depends on
+
+- [Perm splice](perm-splice.md)
+- [Walk Edges append](walk-edges-append.md)
 
 ## Sources
 

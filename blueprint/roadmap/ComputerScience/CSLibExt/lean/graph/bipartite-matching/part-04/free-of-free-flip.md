@@ -14,7 +14,19 @@ vertex as partner, which the phase rematches.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Free](../part-01/free.md)
+- [Valid](../part-01/valid.md)
+- [First Free Round](../part-03/first-free-round.md)
+- [Flip](../part-01/flip.md)
+- [Phase](../part-03/phase.md)
+
+## Proof depends on
+
+- [Alt Path](../part-01/alt-path.md)
+- [Is Augmenting Path](../part-01/is-augmenting-path.md)
+- [Layers](../part-01/layers.md)
+- [Phase Aux](../part-03/phase-aux.md)
+- [Phase Aux spec](../part-03/phase-aux-spec.md)
 
 ## Sources
 

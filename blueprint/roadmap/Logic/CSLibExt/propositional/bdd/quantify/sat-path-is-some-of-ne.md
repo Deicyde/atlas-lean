@@ -12,7 +12,9 @@ A reduced diagram other than `leaf false` has a satisfying path.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](../basic/bdd.md)
+- [Reduced](../basic/reduced.md)
+- [Sat Path](sat-path.md)
 
 ## Sources
 

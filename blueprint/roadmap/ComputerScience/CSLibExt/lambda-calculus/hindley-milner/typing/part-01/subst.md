@@ -11,7 +11,13 @@ Apply a type substitution to every scheme of a context.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ctx](ctx.md)
+- [Subst](../../../../unification/basic/part-01/subst.md)
+
+## Proof depends on
+
+- [Scheme](scheme.md)
+- [Subst Ty](subst-ty.md)
 
 ## Sources
 

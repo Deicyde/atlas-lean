@@ -12,7 +12,7 @@ The normalized ratio is monotone in the underlying counting sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ihara Ratio](ihara-ratio.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ The ROBDD of an upstream CSLib proposition over `Nat` atoms, built bottom-up wit
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](bdd.md)
+
+## Proof depends on
+
+- [Apply](apply.md)
 
 ## Sources
 

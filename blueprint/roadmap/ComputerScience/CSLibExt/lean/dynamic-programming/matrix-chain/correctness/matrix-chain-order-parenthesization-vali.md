@@ -14,13 +14,13 @@ The returned parenthesization uses every matrix once in order and is dimension-v
 ## Depends on
 
 - [Cost](../basic/cost.md)
+- [Parenthesization](../basic/parenthesization.md)
 - [Is Valid](../basic/is-valid.md)
 - [Result](../basic/result.md)
 - [Matrix Chain Order](matrix-chain-order.md)
 
 ## Proof depends on
 
-- [Parenthesization](../basic/parenthesization.md)
 - [Dimension Compatible](../basic/dimension-compatible.md)
 - [Cols](../basic/cols.md)
 - [Matrix Indices](../basic/matrix-indices.md)

@@ -12,7 +12,12 @@ The averaging step: a least-loaded machine has at most the average load.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scan Inv](scan-inv.md)
+- [Least Loaded](least-loaded.md)
+
+## Proof depends on
+
+- [Is Schedule Of](is-schedule-of.md)
 
 ## Sources
 

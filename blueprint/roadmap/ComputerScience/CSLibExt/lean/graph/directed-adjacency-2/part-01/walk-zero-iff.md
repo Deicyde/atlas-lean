@@ -12,7 +12,12 @@ A zero-length walk exists exactly when its endpoints coincide.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](directed-adjacency.md)
+- [Walk](walk.md)
+
+## Proof depends on
+
+- [Edge](edge.md)
 
 ## Sources
 

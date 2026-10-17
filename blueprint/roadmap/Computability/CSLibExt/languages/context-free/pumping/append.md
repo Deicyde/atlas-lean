@@ -12,7 +12,11 @@ Height-bounded yields concatenate at the maximum height.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Yields H](yields-h.md)
+
+## Proof depends on
+
+- [Mono](mono.md)
 
 ## Sources
 

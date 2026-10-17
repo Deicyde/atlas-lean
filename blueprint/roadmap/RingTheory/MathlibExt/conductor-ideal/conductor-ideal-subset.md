@@ -13,7 +13,7 @@ The conductor ideal is contained in the subalgebra.
 
 ## Depends on
 
-- [Conductor Ideal](conductor-ideal.md)
+This node has no prerequisites.
 
 ## Proof depends on
 

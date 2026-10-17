@@ -13,6 +13,12 @@ A set `X ⊆ ℝⁿ` is definable in `ℝₑₓₚ` if it is definable in the la
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exp](exp.md)
+- [Exp Func](exp-func.md)
+- [Exp Ring](exp-ring.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.ModelTheory.WilkiesConjectureWanted](../../../../sources/v2/WantedExt.md)

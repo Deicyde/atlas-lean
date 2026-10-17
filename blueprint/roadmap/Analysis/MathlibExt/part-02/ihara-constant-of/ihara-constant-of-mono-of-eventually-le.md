@@ -12,7 +12,12 @@ The abstract Ihara constant is monotone under eventual domination.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ihara Constant Of](ihara-constant-of.md)
+
+## Proof depends on
+
+- [Ihara Ratio](ihara-ratio.md)
+- [Ihara Ratio mono](ihara-ratio-mono.md)
 
 ## Sources
 

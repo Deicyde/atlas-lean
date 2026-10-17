@@ -12,7 +12,7 @@ The conductor stored by a decomposition is at least one.
 
 ## Depends on
 
-- [Imaginary Quadratic Discriminant Decomposition](imaginary-quadratic-discriminant-decompo.md)
+This node has no prerequisites.
 
 ## Sources
 

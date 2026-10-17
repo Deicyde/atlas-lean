@@ -11,7 +11,7 @@ A finite auxiliary extension with exactly the specified XY marginal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Joint Law](finite-joint-law.md)
 
 ## Sources
 

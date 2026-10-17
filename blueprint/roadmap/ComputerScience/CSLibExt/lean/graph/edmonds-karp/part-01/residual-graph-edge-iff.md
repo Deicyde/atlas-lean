@@ -12,7 +12,9 @@ Residual adjacency is exactly strict slack in the directed capacity bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Edge](../../directed-adjacency-2/part-01/edge.md)
+- [Flow](flow.md)
+- [Residual Graph](residual-graph.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The coordinate cube is the `|x i| ≤ 1` box.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coordinate Cube](coordinate-cube.md)
 
 ## Sources
 

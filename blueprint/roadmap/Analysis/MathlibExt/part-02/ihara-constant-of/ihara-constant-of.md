@@ -13,6 +13,10 @@ The limsup of the normalized ratios associated with `N`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ihara Ratio](ihara-ratio.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.IharaConstantOf](../../../../../sources/v2/MathlibExt.md)

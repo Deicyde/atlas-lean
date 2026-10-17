@@ -11,7 +11,11 @@ A component reaches another when some vertex of the first reaches some vertex of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Reachable](../directed-adjacency-2/part-01/reachable.md)
 
 ## Sources
 

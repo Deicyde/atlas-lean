@@ -11,7 +11,7 @@ The composition of two birational maps.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Birational Map](birational-map.md)
 
 ## Sources
 

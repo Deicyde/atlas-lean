@@ -17,6 +17,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Is BNomial Indispensable Digit](is-bnomial-indispensable-digit.md)
+- [B Nomial Digit At Or Zero](b-nomial-digit-at-or-zero.md)
 
 ## Sources
 

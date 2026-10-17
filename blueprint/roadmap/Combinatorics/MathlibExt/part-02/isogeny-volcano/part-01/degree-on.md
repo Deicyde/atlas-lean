@@ -10,7 +10,7 @@ Degree restricted to vertices satisfying `P`.
 
 ## Depends on
 
-- [Multigraph](multigraph.md)
+This node has no prerequisites.
 
 ## Sources
 

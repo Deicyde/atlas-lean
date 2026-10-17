@@ -13,7 +13,7 @@ corridor at separation `d`: east into the middle channel, north by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motion](../part-01/motion.md)
 
 ## Sources
 

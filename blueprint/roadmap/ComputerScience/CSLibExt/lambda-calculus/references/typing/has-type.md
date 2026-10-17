@@ -11,7 +11,8 @@ The typing judgment `Γ | S ⊢ t : T` (TAPL Figure 13-1).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](../syntax/term.md)
+- [Ty](../syntax/ty.md)
 
 ## Sources
 

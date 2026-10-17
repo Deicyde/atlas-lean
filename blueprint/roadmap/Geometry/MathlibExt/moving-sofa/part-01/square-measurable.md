@@ -12,7 +12,7 @@ The square is measurable for the canonical planar Borel structure.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit Square](unit-square.md)
 
 ## Sources
 

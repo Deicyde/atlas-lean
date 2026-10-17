@@ -12,7 +12,12 @@ LPT costs at most `n * ⌈log₂ n⌉` sorting comparisons plus `n * m` load ins
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lpt](lpt.md)
+
+## Proof depends on
+
+- [List Schedule](list-schedule.md)
+- [List Schedule time](list-schedule-time.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ The sample of a catalog is a sublist of that catalog.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sample](sample.md)
+
+## Proof depends on
+
+- [Sample Aux sublist](sample-aux-sublist.md)
 
 ## Sources
 

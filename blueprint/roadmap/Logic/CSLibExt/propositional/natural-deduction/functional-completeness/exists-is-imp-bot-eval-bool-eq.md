@@ -14,7 +14,15 @@ finite list is the truth table, on valuations with `⊥` false, of a proposition
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Imp Bot](is-imp-bot.md)
+- [Eval Bool](../semantics/eval-bool.md)
+
+## Proof depends on
+
+- [Eval Bool shannon](eval-bool-shannon.md)
+- [Eval Bool to Imp Bot](eval-bool-to-imp-bot.md)
+- [Shannon](shannon.md)
+- [To Imp Bot](to-imp-bot.md)
 
 ## Sources
 

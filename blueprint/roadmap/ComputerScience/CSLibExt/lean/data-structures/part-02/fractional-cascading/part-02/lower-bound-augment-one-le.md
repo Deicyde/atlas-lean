@@ -12,7 +12,14 @@ The augmented search counts no more than the two separate searches.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Augment One](augment-one.md)
+- [Lower Bound](../part-01/lower-bound.md)
+
+## Proof depends on
+
+- [Lower Bound augment One](lower-bound-augment-one.md)
+- [Lower Bound sample le](../part-01/lower-bound-sample-le.md)
+- [Sample](../part-01/sample.md)
 
 ## Sources
 

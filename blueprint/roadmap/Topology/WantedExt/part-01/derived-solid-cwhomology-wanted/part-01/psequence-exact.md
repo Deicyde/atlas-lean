@@ -12,7 +12,15 @@ The short complex `ℤ[∞] ⟶ ℤ[ℕ∪{∞}] ⟶ P` is a short exact sequenc
 
 ## Depends on
 
-This node has no prerequisites.
+- [PSequence](psequence.md)
+
+## Proof depends on
+
+- [P](p.md)
+- [P map](p-map.md)
+- [P proj](p-proj.md)
+- [Ι](untitled.md)
+- [Ι split](split.md)
 
 ## Sources
 

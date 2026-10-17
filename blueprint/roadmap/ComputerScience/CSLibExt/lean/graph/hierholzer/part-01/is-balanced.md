@@ -11,7 +11,11 @@ Every vertex is the source of as many edge occurrences as it is the target of.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Edge List](edge-list.md)
 
 ## Sources
 

@@ -15,7 +15,16 @@ to give back the symbols of `a`'s block (`hga`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ends Bit Block](ends-bit-block.md)
+- [Flag](../program/part-01/flag.md)
+- [Is Bit Block](is-bit-block.md)
+- [Run](../program/part-01/run.md)
+- [Move B](move-b.md)
+
+## Proof depends on
+
+- [Take eq map](take-eq-map.md)
+- [Move B run](move-b-run.md)
 
 ## Sources
 

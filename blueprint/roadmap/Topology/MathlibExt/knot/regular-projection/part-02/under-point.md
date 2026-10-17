@@ -11,7 +11,15 @@ The under-strand preimage at a regular crossing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](../../euclidean-link/part-01/parametrized-link.md)
+- [Crossing](crossing.md)
+- [Is Regular Projection](is-regular-projection.md)
+- [Param Point](param-point.md)
+
+## Proof depends on
+
+- [Is Under Point](is-under-point.md)
+- [Exists Unique is Under Point](exists-unique-is-under-point.md)
 
 ## Sources
 

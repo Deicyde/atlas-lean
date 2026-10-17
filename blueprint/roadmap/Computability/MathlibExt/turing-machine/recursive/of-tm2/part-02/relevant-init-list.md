@@ -30,7 +30,12 @@ theorem optStepC_iterate (j : ℕ) {o : Option tm.Cfg} (ho : ∀ c ∈ o, Releva
 
 ## Depends on
 
-This node has no prerequisites.
+- [Relevant](../part-01/relevant-2.md)
+
+## Proof depends on
+
+- [Pushes](../part-01/pushes.md)
+- [Relevant](../part-01/relevant.md)
 
 ## Sources
 

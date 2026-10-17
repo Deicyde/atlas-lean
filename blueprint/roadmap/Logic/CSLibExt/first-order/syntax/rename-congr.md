@@ -12,7 +12,11 @@ A renaming that fixes every free variable leaves the formula unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rename](rename.md)
+
+## Proof depends on
+
+- [Rename Term](rename-term.md)
 
 ## Sources
 

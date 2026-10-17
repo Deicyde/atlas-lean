@@ -14,7 +14,13 @@ is `I` over the atoms common to `A` and `B` (and `‚ä•`) with `CPL` deriving `A ‚
 
 ## Depends on
 
-This node has no prerequisites.
+- [Atoms](atoms.md)
+
+## Proof depends on
+
+- [Eval Bool](../semantics/eval-bool.md)
+- [Completeness for truth tables](../completeness/derivable-in-cpl-iff.md)
+- [Craig interpolation](exists-interpolant.md)
 
 ## Sources
 

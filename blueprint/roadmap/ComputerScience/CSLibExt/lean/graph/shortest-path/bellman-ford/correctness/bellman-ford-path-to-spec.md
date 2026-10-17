@@ -12,7 +12,19 @@ Every reconstructed predecessor path is simple, valid, and realizes its distance
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cost](../basic/cost.md)
+- [Distances](../basic/distances.md)
+- [Path To?](../basic/path-to.md)
+- [Edge](../basic/edge.md)
+- [Is Weighted Path](../basic/is-weighted-path.md)
+- [Result](../basic/result.md)
+- [Bellman Ford](bellman-ford.md)
+- [Path Vertices](../basic/path-vertices.md)
+- [Path Weight](../basic/path-weight.md)
+
+## Proof depends on
+
+- [Reachable Negative Cycle](../basic/reachable-negative-cycle.md)
 
 ## Sources
 

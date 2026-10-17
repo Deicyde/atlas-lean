@@ -10,11 +10,7 @@ The real Hilbert symbol is negative one exactly when both entries are negative.
 
 ## Depends on
 
-- [Real Hilbert Symbol](real-hilbert-symbol.md)
-
-## Proof depends on
-
-- [Eq neg one iff](eq-neg-one-iff.md)
+This node has no prerequisites.
 
 ## Sources
 

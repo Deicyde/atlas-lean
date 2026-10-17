@@ -11,7 +11,8 @@ Whether a dart lies on the over-strand at its crossing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dart Diagram](dart-diagram.md)
+- [Dart](dart.md)
 
 ## Sources
 

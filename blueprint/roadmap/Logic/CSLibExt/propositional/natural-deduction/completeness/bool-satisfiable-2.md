@@ -13,7 +13,15 @@ is satisfiable together with `T`, by a valuation with `⊥` false.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Satisfiable](bool-satisfiable.md)
+- [Consistent With](consistent-with.md)
+
+## Proof depends on
+
+- [Truth lemma](eval-bool-eq-true-iff.md)
+- [Subset theory](subset-theory.md)
+- [Eval Bool](../semantics/eval-bool.md)
+- [Lindenbaum's lemma](exists-maximal-consistent-with.md)
 
 ## Sources
 

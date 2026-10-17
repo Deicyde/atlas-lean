@@ -13,6 +13,10 @@ The generalized Leonardo `p`-numbers `ℒ_{p,k}(n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Leonardo PKSeq](leonardo-pkseq.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LeonardoPWanted](../../../../../../sources/v2/WantedExt.md)

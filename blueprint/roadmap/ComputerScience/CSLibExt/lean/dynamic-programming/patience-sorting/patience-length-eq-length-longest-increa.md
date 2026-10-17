@@ -12,7 +12,14 @@ Patience sorting agrees with the quadratic dynamic program.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Longest Increasing Subsequence](../longest-increasing-subsequence/longest-increasing-subsequence.md)
+- [Patience Length](patience-length.md)
+
+## Proof depends on
+
+- [Is LISLength](../longest-increasing-subsequence/is-lislength.md)
+- [Length longest Increasing Subsequence eq iff](../longest-increasing-subsequence/length-longest-increasing-subsequence-eq.md)
+- [Patience Length spec](patience-length-spec.md)
 
 ## Sources
 

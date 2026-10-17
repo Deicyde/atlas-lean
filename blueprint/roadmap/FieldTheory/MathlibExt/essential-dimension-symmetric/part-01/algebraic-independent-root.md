@@ -12,7 +12,12 @@ The roots are algebraically independent in the function field.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Root](root.md)
+- [Roots Field](roots-field.md)
+
+## Proof depends on
+
+- [Algebraic Independent map](algebraic-independent-map.md)
 
 ## Sources
 

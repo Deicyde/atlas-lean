@@ -19,7 +19,8 @@ theorem eval_update_node {n v : Nat} {lo hi : BDD} (h : OrderedFrom n (node v lo
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](bdd.md)
+- [Size](size.md)
 
 ## Sources
 

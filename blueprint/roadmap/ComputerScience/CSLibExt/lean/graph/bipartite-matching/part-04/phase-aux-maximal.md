@@ -14,7 +14,25 @@ a candidate or dead.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exact Level](exact-level.md)
+- [Is Chain From](is-chain-from.md)
+- [No Escape](no-escape.md)
+- [Valid](../part-01/valid.md)
+- [Phase Aux](../part-03/phase-aux.md)
+
+## Proof depends on
+
+- [Alt Path](../part-01/alt-path.md)
+- [Free](../part-01/free.md)
+- [Layers](../part-01/layers.md)
+- [Mark L](../part-02/mark-l.md)
+- [Mark R](../part-03/mark-r.md)
+- [Not dead of chain](not-dead-of-chain.md)
+- [Search Path](../part-02/search-path.md)
+- [Dead vertices have no escape](search-path-dead.md)
+- [Search Path mono](../part-02/search-path-mono.md)
+- [Search Path none marks](search-path-none-marks.md)
+- [Search Path spec](../part-02/search-path-spec.md)
 
 ## Sources
 

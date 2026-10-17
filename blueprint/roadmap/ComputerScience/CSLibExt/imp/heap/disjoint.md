@@ -11,7 +11,7 @@ Two heaps are disjoint when no address is allocated in both.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heap](heap.md)
 
 ## Sources
 

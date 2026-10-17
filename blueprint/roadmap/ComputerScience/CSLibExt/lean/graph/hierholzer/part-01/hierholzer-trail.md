@@ -13,7 +13,18 @@ at most once (closed when `s = t`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Is Semi Balanced](is-semi-balanced.md)
+- [Edge List](edge-list.md)
+- [Hierholzer](hierholzer.md)
+- [Walk Edges](walk-edges.md)
+
+## Proof depends on
+
+- [Balanced Edges](balanced-edges.md)
+- [Edge List Of](edge-list-of.md)
+- [Visit](visit.md)
+- [Visit spec](visit-spec.md)
 
 ## Sources
 

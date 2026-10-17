@@ -12,7 +12,7 @@ local exponent is zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Local Exponent Family](local-exponent-family.md)
 
 ## Sources
 

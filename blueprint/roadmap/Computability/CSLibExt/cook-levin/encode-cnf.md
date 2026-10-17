@@ -11,11 +11,12 @@ Binary code of a CNF formula: its clause count followed by the encoded clauses.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
 - [Encode Clause](encode-clause.md)
+- [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources
 

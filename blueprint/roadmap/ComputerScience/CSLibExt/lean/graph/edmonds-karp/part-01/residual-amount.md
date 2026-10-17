@@ -11,7 +11,7 @@ Residual capacity of an ordered pair in the skew-flow representation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](flow.md)
 
 ## Sources
 

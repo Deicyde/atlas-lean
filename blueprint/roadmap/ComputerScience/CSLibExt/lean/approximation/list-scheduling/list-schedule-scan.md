@@ -13,6 +13,10 @@ List scheduling of the remaining jobs from the current loads and machine lists.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Least Loaded](least-loaded.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Approximation.ListScheduling](../../../../../../sources/v2/CSLibExt.md)

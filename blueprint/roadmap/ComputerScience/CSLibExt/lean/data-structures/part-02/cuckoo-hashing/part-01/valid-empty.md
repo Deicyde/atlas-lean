@@ -16,6 +16,10 @@ The empty table satisfies the placement invariant.
 - [Valid](valid.md)
 - [Empty](empty.md)
 
+## Proof depends on
+
+- [Cuckoo Hashing](cuckoo-hashing.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.CuckooHashing](../../../../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,13 @@ lean: Cslib.Logic.FOL.Derivable.exI
 
 ## Depends on
 
-This node has no prerequisites.
+- [Natural deduction](derivable.md)
+- [Instantiate](../syntax/instantiate.md)
+
+## Proof depends on
+
+- [Cut](cut.md)
+- [Instantiate Term](../syntax/instantiate-term.md)
 
 ## Sources
 

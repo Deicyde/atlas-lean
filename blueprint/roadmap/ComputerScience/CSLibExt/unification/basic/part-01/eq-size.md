@@ -11,7 +11,12 @@ The total size of a list of equations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equations](equations.md)
+
+## Proof depends on
+
+- [Term](term.md)
+- [Size](size.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ Drain counter `k`, prepending `ys` to stack `o` once per unit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flag](../part-01/flag.md)
+
+## Proof depends on
+
+- [Push List](../part-01/push-list.md)
 
 ## Sources
 

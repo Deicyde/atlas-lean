@@ -14,7 +14,16 @@ them is matched, to distinct matching edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Matching](../part-01/is-matching.md)
+- [Valid](../part-01/valid.md)
+- [Layers](../part-01/layers.md)
+- [Pairs](../part-01/pairs.md)
+
+## Proof depends on
+
+- [Free](../part-01/free.md)
+- [Exists mate of mem layers](../part-01/exists-mate-of-mem-layers.md)
+- [Layers fst stable](../part-01/layers-fst-stable.md)
 
 ## Sources
 

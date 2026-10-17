@@ -12,7 +12,7 @@ keeping exactly the edges whose source and target both satisfy `p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Labeled Digraph](labeled-digraph.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ def lpt (m : ℕ) [NeZero m] (ps : List ℕ) : TimeM ℕ (Fin m → List ℕ) :=
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Schedule Of](is-schedule-of.md)
 
 ## Sources
 

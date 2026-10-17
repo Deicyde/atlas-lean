@@ -10,9 +10,7 @@ Ascending is descending with swapped endpoints.
 
 ## Depends on
 
-- [Isogeny Volcano](isogeny-volcano.md)
-- [Is Ascending Edge](is-ascending-edge.md)
-- [Is Descending Edge](is-descending-edge.md)
+This node has no prerequisites.
 
 ## Sources
 

@@ -12,7 +12,11 @@ array, for constant-time append and lookup.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](../lamport-clock/event.md)
+
+## Proof depends on
+
+- [Stamp](stamp.md)
 
 ## Sources
 

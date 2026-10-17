@@ -11,7 +11,12 @@ The degree-over-multiplicity ratios tested by one ten-point configuration.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Affine Point](affine-point.md)
+
+## Proof depends on
+
+- [Plane Polynomial](plane-polynomial.md)
+- [Multiplicity](multiplicity.md)
 
 ## Sources
 

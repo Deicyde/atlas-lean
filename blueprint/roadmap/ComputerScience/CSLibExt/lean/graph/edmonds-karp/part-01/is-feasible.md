@@ -11,7 +11,11 @@ Feasibility for the skew-symmetric integral-flow representation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](flow.md)
+
+## Proof depends on
+
+- [Flow Value](flow-value.md)
 
 ## Sources
 

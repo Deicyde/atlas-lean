@@ -12,7 +12,7 @@ Bounding a cost sum termwise over the index range `[i, i + j)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sum From](sum-from.md)
 
 ## Sources
 

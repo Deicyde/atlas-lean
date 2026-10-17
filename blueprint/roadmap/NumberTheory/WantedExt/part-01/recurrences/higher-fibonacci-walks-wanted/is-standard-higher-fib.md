@@ -14,6 +14,10 @@ sequence, together with the `m`-step recurrence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Higher Fib Recurrence](is-higher-fib-recurrence.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted](../../../../../../sources/v2/WantedExt.md)

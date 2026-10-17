@@ -13,7 +13,15 @@ vertex.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alt Path](alt-path.md)
+- [Valid](valid.md)
+- [Layers](layers.md)
+- [Path To](path-to.md)
+
+## Proof depends on
+
+- [Free](free.md)
+- [Exists mate of mem layers](exists-mate-of-mem-layers.md)
 
 ## Sources
 

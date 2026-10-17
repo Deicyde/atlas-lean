@@ -12,7 +12,11 @@ If every element of `U` lies in some set of `F`, the greedy result covers `U`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Greedy Set Cover](greedy-set-cover.md)
+
+## Proof depends on
+
+- [Best Set](best-set.md)
 
 ## Sources
 

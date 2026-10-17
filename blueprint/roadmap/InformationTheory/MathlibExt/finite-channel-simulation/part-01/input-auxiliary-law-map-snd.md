@@ -12,7 +12,10 @@ The two pair marginals have the same actual auxiliary law.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Extension](finite-extension.md)
+- [Auxiliary Law](auxiliary-law.md)
+- [Input Auxiliary Law](input-auxiliary-law.md)
+- [Finite Joint Law](finite-joint-law.md)
 
 ## Sources
 

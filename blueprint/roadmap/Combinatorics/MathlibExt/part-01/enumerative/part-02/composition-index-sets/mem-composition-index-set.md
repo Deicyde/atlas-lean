@@ -12,7 +12,7 @@ Membership in `T(m, n, q)` unfolded.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composition Index Set](composition-index-set.md)
 
 ## Sources
 

@@ -12,7 +12,16 @@ lean: Cslib.Algorithms.Lean.BipartiteMatching.card_le_hopcroftKarp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Matching](../part-01/is-matching.md)
+- [Hopcroft–Karp](hopcroft-karp.md)
+- [Pairs](../part-01/pairs.md)
+
+## Proof depends on
+
+- [Valid](../part-01/valid.md)
+- [Hopcroft Karp Aux](hopcroft-karp-aux.md)
+- [Hopcroft Karp Aux spec](hopcroft-karp-aux-spec.md)
+- [Matched](../part-01/matched.md)
 
 ## Sources
 

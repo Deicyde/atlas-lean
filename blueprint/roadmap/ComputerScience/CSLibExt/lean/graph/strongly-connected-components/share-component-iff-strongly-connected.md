@@ -12,7 +12,19 @@ Two vertices share a returned component exactly when they are mutually reachable
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Strongly Connected](strongly-connected.md)
+- [Components](components.md)
+
+## Proof depends on
+
+- [Decreasing Finish All](../depth-first-search/part-02/decreasing-finish-all.md)
+- [Mem decreasing Finish All](../depth-first-search/part-02/mem-decreasing-finish-all.md)
+- [Symm](symm.md)
+- [Trans](trans.md)
+- [Same Component B](same-component-b.md)
+- [Same Component B eq true](same-component-b-eq-true.md)
+- [Strongly Connected refl](strongly-connected-refl.md)
 
 ## Sources
 

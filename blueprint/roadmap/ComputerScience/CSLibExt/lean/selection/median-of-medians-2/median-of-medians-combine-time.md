@@ -14,6 +14,10 @@ The child bounds and linear local work fit the same comparison-cost budget.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Median Of Medians child size budget](median-of-medians-child-size-budget.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Selection.MedianOfMedians](../../../../../../sources/v2/CSLibExt.md)

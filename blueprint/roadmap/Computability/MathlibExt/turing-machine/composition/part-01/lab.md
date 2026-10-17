@@ -11,7 +11,12 @@ Composite label of a (possibly halted) `M₁` label: halting becomes the first c
 
 ## Depends on
 
-This node has no prerequisites.
+- [CΛ](c-2.md)
+
+## Proof depends on
+
+- [X](x.md)
+- [Pop1](pop1.md)
 
 ## Sources
 

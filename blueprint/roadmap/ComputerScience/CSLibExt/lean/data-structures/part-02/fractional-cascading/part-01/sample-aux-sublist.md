@@ -12,7 +12,7 @@ The elements kept by `sampleAux` form a sublist of the input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sample Aux](sample-aux.md)
 
 ## Sources
 

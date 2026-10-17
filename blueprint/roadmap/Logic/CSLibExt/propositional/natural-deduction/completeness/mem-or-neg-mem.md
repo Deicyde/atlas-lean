@@ -12,7 +12,12 @@ A maximal consistent set contains each proposition or its negation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Consistent With](consistent-with.md)
+
+## Proof depends on
+
+- [Exists refutation](exists-refutation.md)
+- [Mem of derivable In](mem-of-derivable-in.md)
 
 ## Sources
 

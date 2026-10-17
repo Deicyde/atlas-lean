@@ -12,7 +12,11 @@ A height-bounded yield over an append splits at the same height.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Yields H](yields-h.md)
+
+## Proof depends on
+
+- [Mono](mono.md)
 
 ## Sources
 

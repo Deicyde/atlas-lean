@@ -11,7 +11,11 @@ The canonical `groupLanguage`-structure on a group.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Group Language](group-language.md)
+
+## Proof depends on
+
+- [Group Function](group-function.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ then at most one round per pending process.
 
 ## Depends on
 
-This node has no prerequisites.
+- [System](system.md)
+
+## Proof depends on
+
+- [Safety Check Aux](safety-check-aux.md)
 
 ## Sources
 

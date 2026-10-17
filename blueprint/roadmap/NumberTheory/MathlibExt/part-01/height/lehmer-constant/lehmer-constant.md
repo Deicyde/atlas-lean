@@ -14,6 +14,10 @@ strictly larger than `1` among integer polynomials.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mahler Measures Above One](mahler-measures-above-one.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Height.LehmerConstant](../../../../../../sources/v2/MathlibExt.md)

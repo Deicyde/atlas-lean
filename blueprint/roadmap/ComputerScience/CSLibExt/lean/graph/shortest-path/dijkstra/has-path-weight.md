@@ -11,7 +11,12 @@ A concrete source-to-target graph path with its stated endpoint weight.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Edge](../../directed-adjacency-2/part-01/edge.md)
+- [Path Weight](path-weight.md)
 
 ## Sources
 

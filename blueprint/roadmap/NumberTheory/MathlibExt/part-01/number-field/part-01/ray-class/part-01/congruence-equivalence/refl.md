@@ -18,6 +18,7 @@ Equivalence of pairs is reflexive.
 
 ## Proof depends on
 
+- [Congruence Subgroup](../congruence-subgroup/congruence-subgroup.md)
 - [To Ambient Subgroup](../congruence-subgroup/to-ambient-subgroup.md)
 - [Coprime Fractional Ideals](../../part-02/ray-group/coprime-fractional-ideals.md)
 

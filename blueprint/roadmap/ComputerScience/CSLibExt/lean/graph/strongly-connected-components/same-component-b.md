@@ -11,7 +11,12 @@ Executable mutual-reachability test, implemented only through the verified DFS A
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Traversal](../depth-first-search/part-01/traversal.md)
+- [Dfs](../depth-first-search/part-01/dfs.md)
 
 ## Sources
 

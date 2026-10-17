@@ -11,7 +11,7 @@ The identity circle reparametrization.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circle Reparam](circle-reparam.md)
 
 ## Sources
 

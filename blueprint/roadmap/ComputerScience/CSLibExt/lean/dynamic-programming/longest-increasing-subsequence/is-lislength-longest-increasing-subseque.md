@@ -12,7 +12,12 @@ The length of the returned subsequence is the optimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LISLength](is-lislength.md)
+- [Longest Increasing Subsequence](longest-increasing-subsequence.md)
+
+## Proof depends on
+
+- [Longest Increasing Subsequence spec](longest-increasing-subsequence-spec.md)
 
 ## Sources
 

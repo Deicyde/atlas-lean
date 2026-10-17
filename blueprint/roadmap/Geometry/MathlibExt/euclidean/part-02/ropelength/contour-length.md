@@ -13,7 +13,7 @@ extended variation. For `C¹` curves this is the integral of speed by
 
 ## Depends on
 
-This node has no prerequisites.
+- [R3](r3.md)
 
 ## Sources
 

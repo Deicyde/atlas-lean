@@ -12,7 +12,13 @@ Timestamps of a prefix are not changed by later events.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
+- [Timestamps](timestamps.md)
+
+## Proof depends on
+
+- [Clock Step](clock-step.md)
+- [Run](run.md)
 
 ## Sources
 

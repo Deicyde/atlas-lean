@@ -11,7 +11,15 @@ Composite configuration while running `M₂` (all other stacks empty).
 
 ## Depends on
 
-This node has no prerequisites.
+- [CK](ck.md)
+- [CΓ](c.md)
+- [CΛ](c-2.md)
+- [Cσ](c-3.md)
+
+## Proof depends on
+
+- [X](x.md)
+- [Mk Stk](mk-stk.md)
 
 ## Sources
 

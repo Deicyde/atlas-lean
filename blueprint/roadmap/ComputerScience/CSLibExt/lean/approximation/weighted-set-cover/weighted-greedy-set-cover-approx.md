@@ -13,7 +13,12 @@ greedy cover of `U` costs at most `H(d)` times any cover of `U` drawn from `F`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Total Cost](total-cost.md)
+- [Weighted Greedy Set Cover](weighted-greedy-set-cover.md)
+
+## Proof depends on
+
+- [The potential bound](weighted-greedy-set-cover-cost-le-sum-ha.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ the stack `a :: b :: rest` loses `a` when `cross (a - b) (p - b) ≤ 0`. One uni
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cross](../segment-intersection/cross.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Geometry.ConvexHull](../../../../../../sources/v2/CSLibExt.md)

@@ -13,7 +13,11 @@ error `d`, gives the corresponding limsup bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ihara Constant Of](ihara-constant-of.md)
+
+## Proof depends on
+
+- [Ihara Constant Of le of eventually le](ihara-constant-of-le-of-eventually-le.md)
 
 ## Sources
 

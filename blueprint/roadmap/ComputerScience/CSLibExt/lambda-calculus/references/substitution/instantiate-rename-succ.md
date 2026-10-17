@@ -12,7 +12,17 @@ Instantiating a weakened term gives back the term.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](../syntax/term.md)
+- [Instantiate](../syntax/instantiate.md)
+- [Rename](../syntax/rename.md)
+
+## Proof depends on
+
+- [Single Sub](../syntax/single-sub.md)
+- [Subst](../syntax/subst.md)
+- [Subst congr](subst-congr.md)
+- [Subst id](subst-id.md)
+- [Subst rename](subst-rename.md)
 
 ## Sources
 

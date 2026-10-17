@@ -10,11 +10,7 @@ The real Hilbert symbol takes only the values one and negative one.
 
 ## Depends on
 
-- [Real Hilbert Symbol](real-hilbert-symbol.md)
-
-## Proof depends on
-
-- [Eq one or neg one](../../hilbert-symbol-2/eq-one-or-neg-one-2.md)
+This node has no prerequisites.
 
 ## Sources
 

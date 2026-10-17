@@ -13,7 +13,16 @@ An Euler path from `s` to `t` forces the degree condition: exactly `s` and `t` h
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even Except](even-except.md)
+- [Is UEuler Path](is-ueuler-path.md)
+
+## Proof depends on
+
+- [Even Except walk Edges](even-except-walk-edges.md)
+- [Udeg](udeg.md)
+- [Udeg eq of perm](udeg-eq-of-perm.md)
+- [Usym](usym.md)
+- [Walk Edges](../hierholzer/part-01/walk-edges.md)
 
 ## Sources
 

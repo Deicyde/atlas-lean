@@ -11,7 +11,7 @@ The actual X marginal of the joint law.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Joint Law](finite-joint-law.md)
 
 ## Sources
 

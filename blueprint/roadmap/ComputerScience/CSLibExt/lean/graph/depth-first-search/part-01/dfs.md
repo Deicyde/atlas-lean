@@ -11,7 +11,8 @@ Execute left-to-right depth-first search from an ordered list of roots.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Traversal](traversal.md)
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
 
 ## Sources
 

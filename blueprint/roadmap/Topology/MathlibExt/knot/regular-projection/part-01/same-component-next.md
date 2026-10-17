@@ -12,7 +12,14 @@ One oriented traversal step stays in the same component.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dart Diagram](dart-diagram.md)
+- [Dart](dart.md)
+- [Same Component](same-component.md)
+- [Next](next.md)
+
+## Proof depends on
+
+- [Opposite](opposite.md)
 
 ## Sources
 

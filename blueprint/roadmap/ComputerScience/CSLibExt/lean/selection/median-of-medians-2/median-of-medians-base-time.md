@@ -12,7 +12,13 @@ The fixed base range fits the final eighty-comparisons-per-occurrence budget.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Median Of Medians](median-of-medians.md)
+
+## Proof depends on
+
+- [Median Of Medians eq quickselect of length le](median-of-medians-eq-quickselect-of-leng.md)
+- [Quickselect](../quickselect/quickselect.md)
+- [Quickselect time](../quickselect/quickselect-time.md)
 
 ## Sources
 

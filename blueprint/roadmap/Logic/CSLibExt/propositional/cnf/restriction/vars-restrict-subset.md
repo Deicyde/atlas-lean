@@ -12,7 +12,15 @@ Restriction can only remove variables.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+- [Restrict](restrict-2.md)
+- [Vars](vars-2.md)
+
+## Proof depends on
+
+- [CNFClause](../basic/cnfclause.md)
+- [Restrict](restrict.md)
+- [Vars](vars.md)
 
 ## Sources
 

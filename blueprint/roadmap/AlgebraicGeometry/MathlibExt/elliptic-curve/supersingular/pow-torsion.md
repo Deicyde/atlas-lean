@@ -13,7 +13,7 @@ A supersingular elliptic curve has trivial `p ^ r`-torsion for every positive `r
 
 ## Depends on
 
-- [Is Supersingular](is-supersingular.md)
+This node has no prerequisites.
 
 ## Sources
 

@@ -18,6 +18,7 @@ No key is stored with two values in the empty table, vacuously.
 
 ## Proof depends on
 
+- [Cuckoo Hashing](cuckoo-hashing.md)
 - [Stored](stored.md)
 
 ## Sources

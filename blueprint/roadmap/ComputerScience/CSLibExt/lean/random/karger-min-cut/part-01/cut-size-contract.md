@@ -13,7 +13,10 @@ contraction counts the same edges as `Y ∘ rename` on the original.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
+- [Contract](contract.md)
+- [Cut Size](cut-size.md)
+- [Rename](rename.md)
 
 ## Sources
 

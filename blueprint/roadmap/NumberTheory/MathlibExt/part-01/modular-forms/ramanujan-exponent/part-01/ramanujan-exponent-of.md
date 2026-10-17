@@ -15,7 +15,11 @@ identification.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Local Exponent Family](local-exponent-family.md)
+
+## Proof depends on
+
+- [Exponent Set](exponent-set.md)
 
 ## Sources
 

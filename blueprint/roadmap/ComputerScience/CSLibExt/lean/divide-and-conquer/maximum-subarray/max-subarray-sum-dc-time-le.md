@@ -13,7 +13,14 @@ On a nonempty list of length `n` the divide-and-conquer algorithm uses at most
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Subarray Sum DC](max-subarray-sum-dc.md)
+
+## Proof depends on
+
+- [Max Subarray DC](max-subarray-dc.md)
+- [Max Subarray DCCost](max-subarray-dccost.md)
+- [Prefix Scan](prefix-scan.md)
+- [Suffix Scan](suffix-scan.md)
 
 ## Sources
 

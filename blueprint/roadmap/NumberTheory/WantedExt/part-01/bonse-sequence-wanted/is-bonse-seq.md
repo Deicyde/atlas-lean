@@ -15,6 +15,10 @@ module docstring).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Prime Nth](prime-nth.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.BonseSequenceWanted](../../../../../sources/v2/WantedExt.md)

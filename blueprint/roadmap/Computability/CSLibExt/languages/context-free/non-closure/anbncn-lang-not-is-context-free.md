@@ -15,7 +15,11 @@ short factor misses `a` or `c`, forcing the factor to be empty.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Anbncn Lang](anbncn-lang.md)
+
+## Proof depends on
+
+- [Pumping](../pumping/pumping.md)
 
 ## Sources
 

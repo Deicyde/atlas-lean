@@ -12,7 +12,18 @@ With more fuel than unmatched right vertices, the phases end with a maximum matc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Matching](../part-01/is-matching.md)
+- [Valid](../part-01/valid.md)
+- [Hopcroft Karp Aux](hopcroft-karp-aux.md)
+- [Matched](../part-01/matched.md)
+- [Pairs](../part-01/pairs.md)
+
+## Proof depends on
+
+- [Kőnig's certificate](../part-02/card-le-of-no-free.md)
+- [Hk Step](hk-step.md)
+- [Hk Step none](hk-step-none.md)
+- [Hk Step some](hk-step-some.md)
 
 ## Sources
 

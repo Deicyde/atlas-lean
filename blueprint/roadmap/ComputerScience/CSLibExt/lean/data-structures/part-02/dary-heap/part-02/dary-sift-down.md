@@ -15,6 +15,12 @@ child is smaller.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dary Smallest Child](../part-01/dary-smallest-child.md)
+- [Dary Smallest Child gt](dary-smallest-child-gt.md)
+- [Dary Smallest Child valid](../part-01/dary-smallest-child-valid.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.DaryHeap](../../../../../../../../sources/v2/CSLibExt.md)

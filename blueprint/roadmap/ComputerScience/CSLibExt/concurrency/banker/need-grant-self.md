@@ -12,7 +12,9 @@ Granting `req` lowers the remaining need by `req`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [System](system.md)
+- [Grant](grant.md)
+- [Need](need.md)
 
 ## Sources
 

@@ -12,7 +12,20 @@ lean: Cslib.Logic.PL.Proposition.satisfies_toCNF_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Satisfies](../semantics/satisfies-3.md)
+- [Eval Bool](../../natural-deduction/semantics/eval-bool.md)
+- [To CNF](to-cnf.md)
+
+## Proof depends on
+
+- [CNF](../basic/cnf.md)
+- [Disj](disj.md)
+- [CNFClause](../basic/cnfclause.md)
+- [Satisfies](../semantics/satisfies-2.md)
+- [Satisfies](../semantics/satisfies.md)
+- [Cnf Acc](cnf-acc.md)
+- [Cnf Of](cnf-of.md)
+- [Cnf Or](cnf-or.md)
 
 ## Sources
 

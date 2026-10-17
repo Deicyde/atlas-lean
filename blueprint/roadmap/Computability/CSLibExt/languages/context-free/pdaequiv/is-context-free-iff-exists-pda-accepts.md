@@ -14,7 +14,19 @@ transitions consume letters from a finite set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PDA](../../../automata/pda/basic/pda.md)
+- [Accepts](../../../automata/pda/basic/accepts.md)
+
+## Proof depends on
+
+- [Closed Under](../../../automata/pda/basic/closed-under.md)
+- [Accepts restrict](../../../automata/pda/basic/accepts-restrict.md)
+- [Mem restrict step](../../../automata/pda/basic/mem-restrict-step.md)
+- [Restrict](../../../automata/pda/basic/restrict.md)
+- [Cfg PDA accepts](../pda/cfg-pda-accepts.md)
+- [Is Context Free accepts](is-context-free-accepts.md)
+- [Cfg PDA](../pda/cfg-pda.md)
+- [Cfg Step](../pda/cfg-step.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Every motion position preserves the distance between two points.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Motion](motion.md)
+- [Position](position.md)
 
 ## Sources
 

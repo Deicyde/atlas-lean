@@ -12,7 +12,11 @@ Appending a deterministic singleton coordinate preserves finite entropy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shannon Entropy](shannon-entropy.md)
+
+## Proof depends on
+
+- [Shannon Entropy map equiv](shannon-entropy-map-equiv.md)
 
 ## Sources
 

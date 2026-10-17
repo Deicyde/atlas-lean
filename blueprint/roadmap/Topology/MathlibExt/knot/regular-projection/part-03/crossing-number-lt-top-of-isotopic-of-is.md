@@ -13,7 +13,15 @@ crossing number of the type is finite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](../../euclidean-link/part-01/parametrized-link.md)
+- [Is Regular Projection](../part-02/is-regular-projection.md)
+- [Isotopic](../../euclidean-link/part-01/isotopic-2.md)
+- [Crossing Number](crossing-number.md)
+
+## Proof depends on
+
+- [Crossing Count](../part-02/crossing-count.md)
+- [Crossing Number le of isotopic of is Regular Projection](crossing-number-le-of-isotopic-of-is-reg.md)
 
 ## Sources
 

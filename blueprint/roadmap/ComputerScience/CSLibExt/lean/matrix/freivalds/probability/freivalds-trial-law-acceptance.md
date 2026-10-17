@@ -13,7 +13,8 @@ executor. Canonical outer-measure pushforward supplies the fiber count.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Trial](../basic/freivalds-trial.md)
+- [Freivalds Trial Law](freivalds-trial-law.md)
 
 ## Sources
 

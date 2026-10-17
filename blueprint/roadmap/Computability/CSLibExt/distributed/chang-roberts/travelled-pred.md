@@ -12,7 +12,12 @@ The initial message at `k` has travelled one link.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pred](pred.md)
+- [Travelled](travelled.md)
+
+## Proof depends on
+
+- [Gap](gap.md)
 
 ## Sources
 

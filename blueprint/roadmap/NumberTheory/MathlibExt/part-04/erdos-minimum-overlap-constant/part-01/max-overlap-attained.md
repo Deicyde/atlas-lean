@@ -12,7 +12,8 @@ The maximum overlap is attained at some difference.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Overlap](max-overlap.md)
+- [Overlap](overlap.md)
 
 ## Sources
 

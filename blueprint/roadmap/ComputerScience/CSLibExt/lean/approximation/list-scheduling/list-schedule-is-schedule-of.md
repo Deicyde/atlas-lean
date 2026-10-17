@@ -29,7 +29,15 @@ theorem lpt_approx [NeZero m] (ps : List ℕ) (τ : Fin m → List ℕ) (hτ : I
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Schedule Of](is-schedule-of.md)
+- [List Schedule](list-schedule.md)
+
+## Proof depends on
+
+- [Scan Inv](scan-inv.md)
+- [Is Schedule Of nil](is-schedule-of-nil.md)
+- [Least Loaded](least-loaded.md)
+- [List Schedule Scan](list-schedule-scan.md)
 
 ## Sources
 

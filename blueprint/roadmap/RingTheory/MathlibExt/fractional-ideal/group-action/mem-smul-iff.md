@@ -14,7 +14,7 @@ fraction-field automorphism.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ring Equiv Of Ring Equiv Hom](ring-equiv-of-ring-equiv-hom.md)
 
 ## Proof depends on
 

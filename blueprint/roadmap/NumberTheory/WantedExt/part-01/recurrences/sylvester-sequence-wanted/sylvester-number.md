@@ -14,6 +14,10 @@ parameter-`1` case of MathlibExt's generalized Sylvester sequence.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Generalized Sylvester](../../../../MathlibExt/part-06/generalized-sylvester/generalized-sylvester.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Recurrences.SylvesterSequenceWanted](../../../../../../sources/v2/WantedExt.md)

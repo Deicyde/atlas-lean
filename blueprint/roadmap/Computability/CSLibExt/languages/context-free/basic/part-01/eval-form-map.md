@@ -12,7 +12,8 @@ Renaming nonterminals commutes with interpreting a sentential form.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eval Form](eval-form.md)
+- [Map Symbol](map-symbol.md)
 
 ## Sources
 

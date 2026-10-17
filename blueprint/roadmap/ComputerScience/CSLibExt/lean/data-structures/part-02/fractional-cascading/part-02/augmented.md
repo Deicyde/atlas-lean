@@ -14,6 +14,10 @@ catalog is augmented with the sample of the next augmented catalog.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Augment Head](augment-head.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.FractionalCascading](../../../../../../../../sources/v2/CSLibExt.md)

@@ -13,7 +13,8 @@ the elementary symmetric function of the root multiset.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Root](root.md)
+- [Roots Field](roots-field.md)
 
 ## Sources
 

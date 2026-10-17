@@ -11,7 +11,8 @@ Follow successful predecessors for at most `n` edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distances](distances.md)
+- [Edge](edge.md)
 
 ## Sources
 

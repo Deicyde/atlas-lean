@@ -12,7 +12,15 @@ For reduced ordered diagrams, equality is equality of functions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](bdd.md)
+- [Is ROBDD](is-robdd.md)
+- [Eval](eval.md)
+
+## Proof depends on
+
+- [Ordered From](ordered-from.md)
+- [Reduced](reduced.md)
+- [Canonicity](eq-of-eval-eq.md)
 
 ## Sources
 

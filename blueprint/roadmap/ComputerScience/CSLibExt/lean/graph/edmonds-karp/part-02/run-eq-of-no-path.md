@@ -12,7 +12,15 @@ The iteration stops immediately when no augmenting path exists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](../part-01/flow.md)
+- [Residual Graph](../part-01/residual-graph.md)
+- [Run](run.md)
+- [Shortest Path](../part-01/shortest-path.md)
+
+## Proof depends on
+
+- [Augment](augment.md)
+- [Path Bottleneck](../part-01/path-bottleneck.md)
 
 ## Sources
 

@@ -20,9 +20,11 @@ valid trie.
 
 ## Proof depends on
 
+- [Grouped YFast Trie](../part-01/grouped-yfast-trie.md)
 - [Contents mk Reps](../part-01/contents-mk-reps.md)
 - [Mk Reps](../part-01/mk-reps.md)
 - [Valid mk Reps](../part-01/valid-mk-reps.md)
+- [XFast Trie](../../xfast-trie/part-01/xfast-trie.md)
 - [Valid](../../xfast-trie/part-01/valid.md)
 
 ## Sources

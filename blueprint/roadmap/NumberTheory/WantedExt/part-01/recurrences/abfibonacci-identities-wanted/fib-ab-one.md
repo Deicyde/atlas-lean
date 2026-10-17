@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.Recurrences.ABFibonacciIdentitiesWanted.fibAB_one
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib AB](fib-ab.md)
 
 ## Sources
 

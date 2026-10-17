@@ -14,6 +14,10 @@ The paper's near `F`-perfect numbers (`k = 2`,
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is KLNear Perfect](is-klnear-perfect.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.FkPerfectWanted](../../../../../../sources/v2/WantedExt.md)

@@ -11,7 +11,13 @@ The executable bottleneck-augmentation flow, or zero when the endpoints coincide
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](../part-01/flow.md)
+
+## Proof depends on
+
+- [Run](run.md)
+- [Source Capacity](source-capacity.md)
+- [Zero Flow](../part-01/zero-flow.md)
 
 ## Sources
 

@@ -12,7 +12,11 @@ lean: Cslib.Logic.FOL.not_derivable_nil_bot
 
 ## Depends on
 
-This node has no prerequisites.
+- [Natural deduction](derivable.md)
+
+## Proof depends on
+
+- [Soundness](sound.md)
 
 ## Sources
 

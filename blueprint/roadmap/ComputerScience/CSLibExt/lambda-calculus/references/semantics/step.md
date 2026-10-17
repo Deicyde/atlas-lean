@@ -12,7 +12,8 @@ Figure 13-1 with fresh locations allocated at `μ.length`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Store](store.md)
+- [Term](../syntax/term.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ Currying of continuous maps out of a product.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [ΩScott Continuous of apply](scott-continuous-of-apply.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Order.OmegaCompletePartialOrder.ContinuousHom](../../../../../sources/v2/MathlibExt.md)

@@ -11,7 +11,12 @@ lean: MathlibExt.Topology.DerivedSolidCWHomologyWanted.LightCondensed.P_retract
 
 ## Depends on
 
-This node has no prerequisites.
+- [P](p.md)
+
+## Proof depends on
+
+- [PSequence](psequence.md)
+- [PSequence split](psequence-split.md)
 
 ## Sources
 

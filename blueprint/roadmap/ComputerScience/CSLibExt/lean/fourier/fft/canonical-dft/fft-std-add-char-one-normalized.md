@@ -12,7 +12,12 @@ The actual positive-sign source FFT, explicitly normalized, is canonical inverse
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft](../../fft-2/fft.md)
+
+## Proof depends on
+
+- [DFTCorrectness](../fft-correct.md)
+- [Dft Sum](../../../../../../Analysis/MathlibExt/part-01/fourier/fast-fourier-transform/dft-sum.md)
 
 ## Sources
 

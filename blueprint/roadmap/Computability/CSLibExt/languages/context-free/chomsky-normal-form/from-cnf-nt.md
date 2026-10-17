@@ -15,6 +15,10 @@ grammar symbols) decode to the initial nonterminal.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Grammar Terminals](grammar-terminals.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.ChomskyNormalForm](../../../../../../sources/v2/CSLibExt.md)

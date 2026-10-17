@@ -13,7 +13,16 @@ in the formula.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+- [Satisfies](../semantics/satisfies-3.md)
+- [Vars](vars-2.md)
+
+## Proof depends on
+
+- [CNFClause](../basic/cnfclause.md)
+- [Satisfies](../semantics/satisfies-2.md)
+- [Vars](vars.md)
+- [Satisfies](../semantics/satisfies.md)
 
 ## Sources
 

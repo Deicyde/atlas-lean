@@ -12,7 +12,16 @@ Greedy optimality implies the augmentation axiom.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Greedy Optimal](greedy-optimal.md)
+- [Is Indep System](is-indep-system.md)
+
+## Proof depends on
+
+- [Matroid Greedy](../matroid-greedy/matroid-greedy.md)
+- [Matroid Greedy Scan](../matroid-greedy/matroid-greedy-scan.md)
+- [Matroid Greedy Scan append](../matroid-greedy/matroid-greedy-scan-append.md)
+- [Matroid Greedy Scan of forall not](matroid-greedy-scan-of-forall-not.md)
+- [Matroid Greedy Scan of subset](matroid-greedy-scan-of-subset.md)
 
 ## Sources
 

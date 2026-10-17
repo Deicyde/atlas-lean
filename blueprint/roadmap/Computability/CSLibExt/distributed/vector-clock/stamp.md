@@ -12,7 +12,7 @@ current vectors of the processes and the timestamps assigned so far.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](../lamport-clock/event.md)
 
 ## Sources
 

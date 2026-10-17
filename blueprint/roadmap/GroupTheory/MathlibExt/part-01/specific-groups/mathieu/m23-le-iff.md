@@ -12,7 +12,9 @@ A subgroup contains `M23` exactly when it contains the two standard generators.
 
 ## Depends on
 
-This node has no prerequisites.
+- [M23](m23.md)
+- [M23 Cycle](m23-cycle.md)
+- [M23 Five Cycles](m23-five-cycles.md)
 
 ## Sources
 

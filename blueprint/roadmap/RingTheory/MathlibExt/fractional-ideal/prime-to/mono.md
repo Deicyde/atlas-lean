@@ -13,7 +13,7 @@ Being prime to an ideal implies being prime to every larger ideal.
 
 ## Depends on
 
-- [Is Prime To](is-prime-to.md)
+- [Non Zero Divisors le comap algebra Map at Prime](non-zero-divisors-le-comap-algebra-map-a.md)
 
 ## Sources
 

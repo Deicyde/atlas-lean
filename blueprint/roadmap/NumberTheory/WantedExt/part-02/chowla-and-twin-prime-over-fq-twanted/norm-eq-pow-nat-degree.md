@@ -12,7 +12,7 @@ The norm of a nonzero `f ∈ F[T]` is `|F| ^ deg(f)`; see Equation (1.1) in the 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ring Norm](ring-norm.md)
 
 ## Proof depends on
 

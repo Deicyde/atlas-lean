@@ -12,7 +12,15 @@ Every vertex has degree at least the minimum cut size, so `n k ≤ 2 |E|`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Min Cut](is-min-cut.md)
+- [State](state.md)
+- [Valid](valid.md)
+
+## Proof depends on
+
+- [Is Cut](is-cut.md)
+- [Cut Size](cut-size.md)
+- [Sum degree](sum-degree.md)
 
 ## Sources
 

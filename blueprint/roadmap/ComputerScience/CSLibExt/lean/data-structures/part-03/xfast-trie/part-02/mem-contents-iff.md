@@ -13,6 +13,7 @@ A key is stored exactly when it lies in some representative's bucket.
 
 ## Depends on
 
+- [XFast Trie](../part-01/xfast-trie.md)
 - [YFast Trie](yfast-trie.md)
 - [Contents](contents.md)
 

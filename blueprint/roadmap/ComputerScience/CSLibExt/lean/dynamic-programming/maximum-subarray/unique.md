@@ -12,7 +12,7 @@ The maximum subarray sum is unique.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Max Subarray Sum](is-max-subarray-sum.md)
 
 ## Sources
 

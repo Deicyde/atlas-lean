@@ -18,6 +18,7 @@ The empty trie satisfies the level invariant.
 
 ## Proof depends on
 
+- [XFast Trie](xfast-trie.md)
 - [Prefix Of](prefix-of.md)
 
 ## Sources

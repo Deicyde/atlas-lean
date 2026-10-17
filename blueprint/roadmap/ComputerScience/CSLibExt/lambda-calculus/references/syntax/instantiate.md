@@ -11,7 +11,12 @@ Substitute `s` for variable `0` in `t`, written `[0 ↦ s] t` in TAPL.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](term.md)
+
+## Proof depends on
+
+- [Single Sub](single-sub.md)
+- [Subst](subst.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ The finite Stirling-like matrix `S_α(n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Stirling Like Entry](stirling-like-entry.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.StirlingMatrixWanted](../../../../../../../sources/v2/WantedExt.md)

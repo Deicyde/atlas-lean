@@ -11,7 +11,11 @@ Lamport's happened-before relation on the positions of an execution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
+
+## Proof depends on
+
+- [Step](step.md)
 
 ## Sources
 

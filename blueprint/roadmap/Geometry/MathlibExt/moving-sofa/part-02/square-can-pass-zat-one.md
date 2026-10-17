@@ -12,7 +12,12 @@ The unit square passes the Z corridor at separation one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Can Pass ZAt](can-pass-zat.md)
+- [Unit Square](../part-01/unit-square.md)
+
+## Proof depends on
+
+- [Square can Pass ZAt](square-can-pass-zat.md)
 
 ## Sources
 

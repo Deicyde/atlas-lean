@@ -22,6 +22,7 @@ at `r`) is deferred, so this is the y-fast skeleton only.
 
 ## Proof depends on
 
+- [XFast Trie](../part-01/xfast-trie.md)
 - [Valid](../part-01/valid.md)
 
 ## Sources

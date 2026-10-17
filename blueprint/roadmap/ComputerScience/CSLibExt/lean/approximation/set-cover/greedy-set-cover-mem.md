@@ -47,7 +47,11 @@ theorem card_sdiff_lt {U S : Finset α} (hS : (S ∩ U).card ≠ 0) : (U \ S).ca
 
 ## Depends on
 
-This node has no prerequisites.
+- [Greedy Set Cover](greedy-set-cover.md)
+
+## Proof depends on
+
+- [Best Set](best-set.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ target, and label maps are equal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Labeled Digraph](labeled-digraph.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ Conjugate the input, execute FFT and conjugate its returned coefficients.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft](../../fft-2/fft.md)
+- [Fft Conjugate](../inverse/fft-conjugate.md)
+
+## Proof depends on
+
+- [DFTCorrectness](../fft-correct.md)
+- [Dft Sum](../../../../../../Analysis/MathlibExt/part-01/fourier/fast-fourier-transform/dft-sum.md)
 
 ## Sources
 

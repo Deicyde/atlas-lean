@@ -12,7 +12,8 @@ An eventual bound on the normalized ratios bounds their limsup.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ihara Constant Of](ihara-constant-of.md)
+- [Ihara Ratio](ihara-ratio.md)
 
 ## Sources
 

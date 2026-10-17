@@ -11,7 +11,7 @@ The system after granting `req` to `p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [System](system.md)
 
 ## Sources
 

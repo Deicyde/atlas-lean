@@ -12,7 +12,11 @@ The sample of a sorted catalog is sorted.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sample](sample.md)
+
+## Proof depends on
+
+- [Sample sublist](sample-sublist.md)
 
 ## Sources
 

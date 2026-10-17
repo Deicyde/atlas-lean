@@ -13,6 +13,11 @@ The overlap at translation `x`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Continuous Overlap Integrand](continuous-overlap-integrand.md)
+- [Continuous Support Interval](continuous-support-interval.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ErdosMinimumOverlapConstant](../../../../../../sources/v2/MathlibExt.md)

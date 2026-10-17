@@ -12,7 +12,14 @@ The identity substitution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](../syntax/term.md)
+- [Subst](../syntax/subst.md)
+
+## Proof depends on
+
+- [Lift Sub](../syntax/lift-sub.md)
+- [Subst congr](subst-congr.md)
+- [Ty](../syntax/ty.md)
 
 ## Sources
 

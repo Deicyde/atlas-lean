@@ -12,7 +12,9 @@ Inversion in the canonical structure is group inversion.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Group Function](group-function.md)
+- [Group Language](group-language.md)
+- [Group Language Structure](group-language-structure.md)
 
 ## Sources
 

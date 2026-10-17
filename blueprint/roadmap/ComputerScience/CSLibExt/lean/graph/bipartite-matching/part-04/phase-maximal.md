@@ -15,7 +15,23 @@ Karp require.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Augmenting Path](../part-01/is-augmenting-path.md)
+- [Valid](../part-01/valid.md)
+- [First Free Round](../part-03/first-free-round.md)
+- [Phase](../part-03/phase.md)
+
+## Proof depends on
+
+- [Alt Path](../part-01/alt-path.md)
+- [Exact Level](exact-level.md)
+- [Free](../part-01/free.md)
+- [Is Chain From](is-chain-from.md)
+- [No Escape](no-escape.md)
+- [First Free Round eq some](../part-03/first-free-round-eq-some.md)
+- [Layers](../part-01/layers.md)
+- [Mem layers length](../part-03/mem-layers-length.md)
+- [Phase Aux](../part-03/phase-aux.md)
+- [Phase Aux maximal](phase-aux-maximal.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ lean: Cslib.Algorithms.Lean.FractionalCascading.searchAll_eq_map_lowerBound
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Bound](../part-01/lower-bound.md)
+- [Search All](../part-02/search-all.md)
+
+## Proof depends on
+
+- [Count LT](../part-01/count-lt.md)
+- [Count LT eq lower Bound](../part-01/count-lt-eq-lower-bound.md)
 
 ## Sources
 

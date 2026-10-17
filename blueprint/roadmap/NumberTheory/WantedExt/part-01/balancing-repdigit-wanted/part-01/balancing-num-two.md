@@ -12,7 +12,7 @@ Characteristic value `B_2 = 6`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Balancing Num](balancing-num.md)
 
 ## Sources
 

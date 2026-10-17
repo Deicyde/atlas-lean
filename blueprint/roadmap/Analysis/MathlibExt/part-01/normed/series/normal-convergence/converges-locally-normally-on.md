@@ -13,10 +13,6 @@ has a neighbourhood whose intersection with `S` carries normal convergence.
 
 This node has no prerequisites.
 
-## Proof depends on
-
-- [Converges Normally On](converges-normally-on.md)
-
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Normed.Series.NormalConvergence](../../../../../../../sources/v2/MathlibExt.md)

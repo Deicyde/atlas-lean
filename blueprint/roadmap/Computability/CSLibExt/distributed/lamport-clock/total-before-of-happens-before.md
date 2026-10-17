@@ -12,7 +12,15 @@ lean: Cslib.Distributed.LamportClock.totalBefore_of_happensBefore
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
+- [Happens Before](happens-before.md)
+- [Total Before](total-before.md)
+
+## Proof depends on
+
+- [Exists events](exists-events.md)
+- [The clock condition](clock-condition.md)
+- [Timestamps](timestamps.md)
 
 ## Sources
 

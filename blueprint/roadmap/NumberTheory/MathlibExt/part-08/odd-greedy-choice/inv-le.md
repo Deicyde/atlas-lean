@@ -13,7 +13,7 @@ exceed the remainder.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Odd Greedy Choice](is-odd-greedy-choice.md)
 
 ## Sources
 

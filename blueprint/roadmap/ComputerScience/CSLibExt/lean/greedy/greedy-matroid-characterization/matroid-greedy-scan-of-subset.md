@@ -12,7 +12,8 @@ Scanning elements whose additions all stay inside one independent set keeps them
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Indep System](is-indep-system.md)
+- [Matroid Greedy Scan](../matroid-greedy/matroid-greedy-scan.md)
 
 ## Sources
 

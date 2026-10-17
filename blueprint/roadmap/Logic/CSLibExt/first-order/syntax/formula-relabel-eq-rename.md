@@ -12,7 +12,11 @@ On formulas, Mathlib's `Formula.relabel` is `rename`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rename](rename.md)
+
+## Proof depends on
+
+- [Relabel inl comp eq cast LE rename](relabel-inl-comp-eq-cast-le-rename.md)
 
 ## Sources
 

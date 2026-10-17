@@ -12,7 +12,7 @@ The norm of `f ∈ F[T]` is `|F[T]/(f)|`; see Equation (1.1) in the paper.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ring Norm](ring-norm.md)
 
 ## Sources
 

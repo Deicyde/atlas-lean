@@ -16,6 +16,10 @@ are positive, so this representation set is finite.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Star](star.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.PFrobeniusStarNumbersWanted](../../../../../sources/v2/WantedExt.md)

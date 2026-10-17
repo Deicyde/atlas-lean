@@ -13,7 +13,14 @@ placement creates a load within it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scan Inv](scan-inv.md)
+- [Least Loaded](least-loaded.md)
+- [List Schedule Scan](list-schedule-scan.md)
+- [Makespan](makespan.md)
+
+## Proof depends on
+
+- [Is Schedule Of](is-schedule-of.md)
 
 ## Sources
 

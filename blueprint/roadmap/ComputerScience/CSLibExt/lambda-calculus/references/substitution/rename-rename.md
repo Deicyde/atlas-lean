@@ -12,7 +12,14 @@ Composition of renamings.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](../syntax/term.md)
+- [Rename](../syntax/rename.md)
+
+## Proof depends on
+
+- [Lift Ren](../syntax/lift-ren.md)
+- [Rename congr](rename-congr.md)
+- [Ty](../syntax/ty.md)
 
 ## Sources
 

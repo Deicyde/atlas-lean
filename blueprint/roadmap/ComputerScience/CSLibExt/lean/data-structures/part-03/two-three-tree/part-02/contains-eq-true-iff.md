@@ -20,6 +20,7 @@ Search at the root succeeds exactly on keys of the flattening.
 
 ## Proof depends on
 
+- [Tree](../part-01/tree.md)
 - [Contains eq true iff](../part-01/contains-eq-true-iff.md)
 
 ## Sources

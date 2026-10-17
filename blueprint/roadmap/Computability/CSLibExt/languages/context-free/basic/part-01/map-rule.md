@@ -13,6 +13,10 @@ Rename the nonterminals in a production.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Map Symbol](map-symbol.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.Basic](../../../../../../../sources/v2/CSLibExt.md)

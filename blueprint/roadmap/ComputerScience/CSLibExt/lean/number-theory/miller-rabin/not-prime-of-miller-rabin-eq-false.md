@@ -12,7 +12,11 @@ A *composite* answer from `MILLER-RABIN` is always correct.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Miller Rabin](miller-rabin.md)
+
+## Proof depends on
+
+- [Miller Rabin of prime](miller-rabin-of-prime.md)
 
 ## Sources
 

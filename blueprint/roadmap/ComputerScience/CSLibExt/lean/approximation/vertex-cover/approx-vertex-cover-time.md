@@ -12,7 +12,11 @@ One unit per listed edge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Approx Vertex Cover](approx-vertex-cover.md)
+
+## Proof depends on
+
+- [Vertex Cover Scan time](vertex-cover-scan-time.md)
 
 ## Sources
 

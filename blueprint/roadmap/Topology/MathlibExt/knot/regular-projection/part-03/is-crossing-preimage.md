@@ -12,7 +12,14 @@ projection.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](../../euclidean-link/part-01/parametrized-link.md)
+- [Param Point](../part-02/param-point.md)
+
+## Proof depends on
+
+- [Double Point Set](../part-02/double-point-set.md)
+- [Proj Point](../part-02/proj-point.md)
+- [R2](../part-01/r2.md)
 
 ## Sources
 

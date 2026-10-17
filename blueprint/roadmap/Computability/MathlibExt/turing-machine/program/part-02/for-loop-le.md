@@ -13,7 +13,18 @@ the loop takes at most `n (B + 1) + n + 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flag](../part-01/flag.md)
+- [Run Le](run-le.md)
+- [Cnt](../part-01/cnt.md)
+- [For Head](../part-01/for-head.md)
+- [Xfer](../part-01/xfer.md)
+
+## Proof depends on
+
+- [Run](../part-01/run.md)
+- [Single](../part-01/single.md)
+- [Add U](../part-01/add-u.md)
+- [Xfer run](../part-01/xfer-run.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ The identity ambient isotopy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ambient Isotopy](ambient-isotopy.md)
+
+## Proof depends on
+
+- [R3](../../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
 
 ## Sources
 

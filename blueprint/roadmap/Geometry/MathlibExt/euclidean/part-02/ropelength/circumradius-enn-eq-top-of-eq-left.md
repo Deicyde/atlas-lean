@@ -12,7 +12,13 @@ Coincident triples are degenerate, not radius zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R3](r3.md)
+- [Circumradius ENN](circumradius-enn.md)
+
+## Proof depends on
+
+- [Triangle Of](triangle-of.md)
+- [Triple Points](triple-points.md)
 
 ## Sources
 

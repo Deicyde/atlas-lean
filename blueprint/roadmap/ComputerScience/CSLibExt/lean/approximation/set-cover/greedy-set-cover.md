@@ -14,6 +14,10 @@ remove it from `U`, repeat; stop when no set meets `U`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Best Set](best-set.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Approximation.SetCover](../../../../../../sources/v2/CSLibExt.md)

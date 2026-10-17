@@ -13,11 +13,7 @@ Restriction to the universal set recovers `f`.
 
 ## Depends on
 
-- [Edge Restriction](edge-restriction.md)
-
-## Proof depends on
-
-- [Exponent To Real](exponent-to-real.md)
+This node has no prerequisites.
 
 ## Sources
 

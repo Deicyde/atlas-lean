@@ -13,7 +13,13 @@ stack lifts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PDA](pda.md)
+- [Closed Under](closed-under.md)
+- [Restrict](restrict.md)
+
+## Proof depends on
+
+- [Lift Stack](lift-stack.md)
 
 ## Sources
 

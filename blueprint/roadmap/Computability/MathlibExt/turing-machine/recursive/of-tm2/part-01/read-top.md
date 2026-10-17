@@ -13,6 +13,10 @@ Read the top of a coded stack.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Decode](decode.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.TuringMachine.Recursive.OfTM2](../../../../../../../sources/v2/MathlibExt.md)

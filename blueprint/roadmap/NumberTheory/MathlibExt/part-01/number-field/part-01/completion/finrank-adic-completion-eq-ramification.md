@@ -21,6 +21,7 @@ This node has no prerequisites.
 - [Adic Completion Integers Map](finite-lies-over-valuation/adic-completion-integers-map.md)
 - [Adic Completion Integers Map injective](finite-lies-over-ramification-index/adic-completion-integers-map-injective.md)
 - [Finite Lies Over Maximal Ideal](comap-maximal-ideal-adic-completion-inte.md)
+- [Finite residue Field](../adele-locally-compact/finite-residue-field.md)
 - [Finite Lies Over Inertia Degree](inertia-deg-adic-completion-integers-map.md)
 - [Ramification Idx adic Completion Integers Map](finite-lies-over-ramification-index/ramification-idx-adic-completion-integer.md)
 - [Module finite integer of is Adic Complete](../../../../../../RingTheory/MathlibExt/discrete-valuation-ring/integral-closure-complete/module-finite-integer-of-is-adic-complet.md)

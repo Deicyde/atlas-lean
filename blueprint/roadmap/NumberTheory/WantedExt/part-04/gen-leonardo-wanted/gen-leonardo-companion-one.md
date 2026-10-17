@@ -12,7 +12,12 @@ Characteristic value `M_{k,1} = 3 + k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Leonardo Companion](gen-leonardo-companion.md)
+
+## Proof depends on
+
+- [Gen Leonardo](gen-leonardo.md)
+- [Gen Leonardo two](gen-leonardo-two.md)
 
 ## Sources
 

@@ -17,6 +17,7 @@ finds it among the representatives, otherwise the representative successor.
 
 ## Proof depends on
 
+- [XFast Trie](../../xfast-trie/part-01/xfast-trie.md)
 - [Member](../../xfast-trie/part-01/member.md)
 - [Successor](../../xfast-trie/part-01/successor.md)
 

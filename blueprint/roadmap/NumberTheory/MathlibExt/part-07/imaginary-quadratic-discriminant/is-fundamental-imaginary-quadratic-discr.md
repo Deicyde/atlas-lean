@@ -12,10 +12,6 @@ fundamental-discriminant predicate `MetaMathlibExt.IsFundamentalDiscriminant`.
 
 This node has no prerequisites.
 
-## Proof depends on
-
-- [Is Fundamental Discriminant](../../part-01/dirichlet-character/quadratic/is-fundamental-discriminant.md)
-
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ImaginaryQuadraticDiscriminant](../../../../../sources/v2/MathlibExt.md)

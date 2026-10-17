@@ -12,7 +12,13 @@ The augmented length is the catalog plus the rounded-up half of the next.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Augment One](augment-one.md)
+
+## Proof depends on
+
+- [Length augment One](length-augment-one.md)
+- [Length sample le](../part-01/length-sample-le.md)
+- [Sample](../part-01/sample.md)
 
 ## Sources
 

@@ -14,7 +14,12 @@ initial stack symbol. The restricted PDA is over the subtype, hence has a
 
 ## Depends on
 
-This node has no prerequisites.
+- [PDA](pda.md)
+- [Closed Under](closed-under.md)
+
+## Proof depends on
+
+- [Lift Stack](lift-stack.md)
 
 ## Sources
 

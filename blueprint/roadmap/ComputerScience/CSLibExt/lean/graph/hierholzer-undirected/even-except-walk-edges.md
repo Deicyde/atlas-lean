@@ -12,7 +12,12 @@ In the steps of a walk from `s` to `t`, every degree is even except at `s` and `
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even Except](even-except.md)
+- [Walk Edges](../hierholzer/part-01/walk-edges.md)
+
+## Proof depends on
+
+- [Udeg](udeg.md)
 
 ## Sources
 

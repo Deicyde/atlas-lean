@@ -12,7 +12,16 @@ Lehmer's question is equivalent to Lehmer's constant being `1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lehmer Question](lehmer-question.md)
+- [Lehmer's constant](lehmer-constant.md)
+
+## Proof depends on
+
+- [Int Mahler Measure](int-mahler-measure.md)
+- [Int Mahler Measure X sub two](int-mahler-measure-x-sub-two.md)
+- [Lehmer Constant le int Mahler Measure](lehmer-constant-le-int-mahler-measure.md)
+- [Mahler Measures Above One](mahler-measures-above-one.md)
+- [One le lehmer Constant](one-le-lehmer-constant.md)
 
 ## Sources
 

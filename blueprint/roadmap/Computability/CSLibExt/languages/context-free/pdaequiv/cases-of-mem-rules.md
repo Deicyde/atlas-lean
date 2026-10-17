@@ -13,7 +13,13 @@ from a transition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PDA](../../../automata/pda/basic/pda.md)
+- [Pda Grammar](pda-grammar.md)
+- [Step Rule](step-rule.md)
+
+## Proof depends on
+
+- [State Lists](state-lists.md)
 
 ## Sources
 

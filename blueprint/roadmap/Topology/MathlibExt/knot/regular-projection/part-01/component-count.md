@@ -12,7 +12,12 @@ darts plus the recorded isolated crossingless components.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dart Diagram](dart-diagram.md)
+
+## Proof depends on
+
+- [Dart](dart.md)
+- [Component Setoid](component-setoid.md)
 
 ## Sources
 

@@ -13,7 +13,15 @@ zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](../../euclidean-link/part-01/parametrized-link.md)
+- [Is Regular Projection](../part-02/is-regular-projection.md)
+- [Crossing Count](../part-02/crossing-count.md)
+- [Double Point Set](../part-02/double-point-set.md)
+- [R2](../part-01/r2.md)
+
+## Proof depends on
+
+- [Crossing](../part-02/crossing.md)
 
 ## Sources
 

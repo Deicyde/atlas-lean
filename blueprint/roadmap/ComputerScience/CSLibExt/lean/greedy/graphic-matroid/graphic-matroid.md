@@ -14,6 +14,11 @@ forests of `G`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Forest Set](is-forest-set.md)
+- [Exists insert is Acyclic](exists-insert-is-acyclic.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Greedy.GraphicMatroid](../../../../../../sources/v2/CSLibExt.md)

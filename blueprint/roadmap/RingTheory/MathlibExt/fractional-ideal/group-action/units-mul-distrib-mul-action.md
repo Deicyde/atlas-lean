@@ -16,6 +16,10 @@ This is scoped to avoid the instance diamond documented for `Units.mulAction'`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ring Equiv Of Ring Equiv Hom](ring-equiv-of-ring-equiv-hom.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.RingTheory.FractionalIdeal.GroupAction](../../../../../sources/v2/MathlibExt.md)

@@ -13,7 +13,14 @@ to the same value.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Tm](tm.md)
+- [Eval](eval.md)
+- [Rename](rename.md)
+- [Value](value.md)
+
+## Proof depends on
+
+- [Lift Ren](lift-ren.md)
 
 ## Sources
 

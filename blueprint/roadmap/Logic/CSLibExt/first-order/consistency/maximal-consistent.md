@@ -14,6 +14,10 @@ used with dot notation.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Consistent](consistent.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Logics.FirstOrder.Consistency](../../../../../sources/v2/CSLibExt.md)

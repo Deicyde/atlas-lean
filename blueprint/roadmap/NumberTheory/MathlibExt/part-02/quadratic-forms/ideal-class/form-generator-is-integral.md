@@ -12,7 +12,12 @@ The second ideal generator is integral when the triple has discriminant `-D`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Imaginary Quadratic Field](imaginary-quadratic-field.md)
+- [Imaginary Root](imaginary-root.md)
+
+## Proof depends on
+
+- [Imaginary Root sq](imaginary-root-sq.md)
 
 ## Sources
 

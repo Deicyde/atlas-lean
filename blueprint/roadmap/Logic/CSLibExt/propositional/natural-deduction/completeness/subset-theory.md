@@ -12,7 +12,11 @@ Every axiom of `T` belongs to a maximal `T`-consistent set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Consistent With](consistent-with.md)
+
+## Proof depends on
+
+- [Mem of derivable In](mem-of-derivable-in.md)
 
 ## Sources
 

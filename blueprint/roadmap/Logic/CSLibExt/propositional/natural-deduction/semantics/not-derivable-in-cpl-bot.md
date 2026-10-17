@@ -14,6 +14,11 @@ Classical logic is consistent: it does not derive falsum.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eval Bool of cpl](eval-bool-of-cpl.md)
+- [Eval Bool](eval-bool.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Logics.Propositional.NaturalDeduction.Semantics](../../../../../../sources/v2/CSLibExt.md)

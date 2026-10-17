@@ -12,7 +12,7 @@ Canonical planar Lebesgue measure assigns the square area one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit Square](unit-square.md)
 
 ## Sources
 

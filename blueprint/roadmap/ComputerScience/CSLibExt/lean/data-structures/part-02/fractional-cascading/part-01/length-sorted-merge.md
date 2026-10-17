@@ -12,7 +12,7 @@ The length of a sorted merge is the sum of the input lengths.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sorted Merge](sorted-merge.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ The continuous Erdős minimum-overlap constant from Optimization Problem 1b.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Continuous Universal Lower Bound](continuous-universal-lower-bound.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ErdosMinimumOverlapConstant](../../../../../../sources/v2/MathlibExt.md)

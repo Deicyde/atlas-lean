@@ -13,6 +13,10 @@ Morozov's sum `Z(n) = ∑ k ∈ [0,n), M_k(n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Wilson Quotient M](wilson-quotient-m.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.WilsonQuotientsWanted](../../../../../sources/v2/WantedExt.md)

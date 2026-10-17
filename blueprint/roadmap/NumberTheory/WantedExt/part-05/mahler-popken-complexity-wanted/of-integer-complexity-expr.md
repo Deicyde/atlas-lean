@@ -12,7 +12,8 @@ Translation of classical integer-complexity expressions to
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expr](../../../MathlibExt/part-07/integer-complexity/expr.md)
+- [Mahler Popken Expr](mahler-popken-expr.md)
 
 ## Sources
 

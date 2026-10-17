@@ -12,7 +12,11 @@ The final slot of the twice-sized output polynomial is zero.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Polynomial](fft-polynomial.md)
+
+## Proof depends on
+
+- [Fft Polynomial mul coeff](fft-polynomial-mul-coeff.md)
 
 ## Sources
 

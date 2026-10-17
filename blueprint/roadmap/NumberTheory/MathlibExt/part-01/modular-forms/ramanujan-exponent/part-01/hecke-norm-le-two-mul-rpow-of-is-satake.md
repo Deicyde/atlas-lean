@@ -14,7 +14,7 @@ here is its displayed consequence `2N^δ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Satake Pair](is-satake-pair.md)
 
 ## Sources
 

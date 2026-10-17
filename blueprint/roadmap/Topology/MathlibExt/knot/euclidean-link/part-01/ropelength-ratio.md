@@ -12,7 +12,13 @@ contour length divided by the thickness of its whole trace.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](parametrized-link.md)
+
+## Proof depends on
+
+- [Thickness](../../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/thickness.md)
+- [Total Contour Length](total-contour-length.md)
+- [Trace](trace.md)
 
 ## Sources
 

@@ -12,7 +12,14 @@ The upper chain is the reflected lower chain of the reflected, reversed input.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Hull](../convex-hull/lower-hull.md)
+- [Upper Hull](upper-hull.md)
+
+## Proof depends on
+
+- [Chain Scan](../convex-hull/chain-scan.md)
+- [Cross](../segment-intersection/cross.md)
+- [Pop Non Left](../convex-hull/pop-non-left.md)
 
 ## Sources
 

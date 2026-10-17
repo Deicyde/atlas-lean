@@ -11,7 +11,13 @@ The free type variables of the visible scheme of a name.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ctx](ctx.md)
+
+## Proof depends on
+
+- [Lookup](lookup.md)
+- [Scheme](scheme.md)
+- [Vars](../../../../unification/basic/part-01/vars.md)
 
 ## Sources
 

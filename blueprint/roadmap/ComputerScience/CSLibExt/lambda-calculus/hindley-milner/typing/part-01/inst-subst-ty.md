@@ -12,7 +12,18 @@ Instantiation commutes with substitution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scheme](scheme.md)
+- [Inst](inst.md)
+- [Subst Ty](subst-ty.md)
+- [Ty](ty.md)
+- [Subst](../../../../unification/basic/part-01/subst.md)
+- [Subst](../../../../unification/basic/part-01/subst-2.md)
+
+## Proof depends on
+
+- [Eval](eval.md)
+- [To Scheme](to-scheme.md)
+- [Term](../../../../unification/basic/part-01/term.md)
 
 ## Sources
 

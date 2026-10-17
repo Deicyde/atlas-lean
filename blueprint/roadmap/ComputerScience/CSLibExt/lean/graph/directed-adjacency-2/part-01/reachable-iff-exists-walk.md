@@ -12,7 +12,13 @@ Reachability is equivalent to the existence of an exact-length walk.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](directed-adjacency.md)
+- [Reachable](reachable.md)
+- [Walk](walk.md)
+
+## Proof depends on
+
+- [Edge](edge.md)
 
 ## Sources
 

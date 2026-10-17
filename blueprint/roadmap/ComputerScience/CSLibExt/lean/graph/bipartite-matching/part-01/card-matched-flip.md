@@ -12,7 +12,14 @@ Flipping an augmenting path grows the matching by one edge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Augmenting Path](is-augmenting-path.md)
+- [Flip](flip.md)
+- [Matched](matched.md)
+
+## Proof depends on
+
+- [Alt Path](alt-path.md)
+- [Matched flip](matched-flip.md)
 
 ## Sources
 

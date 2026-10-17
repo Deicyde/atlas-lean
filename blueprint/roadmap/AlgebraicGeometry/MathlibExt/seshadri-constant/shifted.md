@@ -11,7 +11,8 @@ Translate a polynomial so that the point `a` moves to the origin.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Affine Point](affine-point.md)
+- [Plane Polynomial](plane-polynomial.md)
 
 ## Sources
 

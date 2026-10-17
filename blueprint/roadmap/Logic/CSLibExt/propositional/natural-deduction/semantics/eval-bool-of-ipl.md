@@ -12,7 +12,12 @@ A sequent derivable in intuitionistic logic `IPL` is a tautology, reading `⊥` 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eval Bool](eval-bool.md)
+
+## Proof depends on
+
+- [Bool Sound](bool-sound-2.md)
+- [Eval Bool of mem ipl](eval-bool-of-mem-ipl.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ post-phase.
 
 ## Depends on
 
-This node has no prerequisites.
+- [FΛ](../part-01/f-2.md)
+
+## Proof depends on
+
+- [Phase](../part-01/phase.md)
+- [Supp](../part-01/supp.md)
 
 ## Sources
 

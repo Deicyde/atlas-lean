@@ -12,7 +12,7 @@ The augmented list of a single catalog is that catalog.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Augmented](augmented.md)
 
 ## Sources
 

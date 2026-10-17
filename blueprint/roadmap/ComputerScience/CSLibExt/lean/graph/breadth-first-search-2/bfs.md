@@ -11,7 +11,8 @@ Executable expected-linear-time FIFO breadth-first search from `s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BFSResult](bfsresult.md)
+- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
 
 ## Sources
 

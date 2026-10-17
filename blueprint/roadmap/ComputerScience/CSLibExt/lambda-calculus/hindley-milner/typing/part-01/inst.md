@@ -11,7 +11,13 @@ Instantiate the bound variable `i` of a scheme by `ts i`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scheme](scheme.md)
+- [Ty](ty.md)
+
+## Proof depends on
+
+- [Eval](eval.md)
+- [Term](../../../../unification/basic/part-01/term.md)
 
 ## Sources
 

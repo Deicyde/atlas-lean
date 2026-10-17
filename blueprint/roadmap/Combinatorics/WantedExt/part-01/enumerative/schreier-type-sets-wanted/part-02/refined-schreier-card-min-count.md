@@ -14,6 +14,12 @@ is `q`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Refined Schreier](is-refined-schreier.md)
+- [Is Sparse](../part-01/is-sparse.md)
+- [Is Strong Schreier](../part-01/is-strong-schreier.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.SchreierTypeSetsWanted](../../../../../../../sources/v2/WantedExt.md)

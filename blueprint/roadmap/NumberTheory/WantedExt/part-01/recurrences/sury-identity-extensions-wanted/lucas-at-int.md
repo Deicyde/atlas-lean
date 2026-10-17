@@ -14,6 +14,10 @@ The Lucas numbers extended to integer indices by
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lucas Number](../../../../MathlibExt/part-07/lucas-sequence/lucas-number.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Recurrences.SuryIdentityExtensionsWanted](../../../../../../sources/v2/WantedExt.md)

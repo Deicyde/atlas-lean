@@ -12,7 +12,13 @@ The admitted array's actual execution satisfies the same exact count.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Array](../array/fft-array.md)
+
+## Proof depends on
+
+- [Fft](../../fft-2/fft.md)
+- [Fft Array time of vector](fft-array-time-of-vector.md)
+- [Fft time add one](../cost/fft-time-add-one.md)
 
 ## Sources
 

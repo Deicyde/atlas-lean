@@ -13,7 +13,15 @@ actual extension.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Extension](finite-extension.md)
+- [Output Given Input Auxiliary Entropy](output-given-input-auxiliary-entropy.md)
+- [Finite Joint Law](finite-joint-law.md)
+
+## Proof depends on
+
+- [Input Auxiliary Law](input-auxiliary-law.md)
+- [Shannon Entropy](../../finite-entropy/shannon-entropy.md)
+- [Shannon Entropy map equiv](../../finite-entropy/shannon-entropy-map-equiv.md)
 
 ## Sources
 

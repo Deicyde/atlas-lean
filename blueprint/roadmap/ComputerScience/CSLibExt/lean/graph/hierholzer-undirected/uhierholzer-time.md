@@ -12,7 +12,17 @@ lean: Cslib.Algorithms.Lean.Hierholzer.uhierholzer_time
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even Except](even-except.md)
+- [UReach](ureach.md)
+- [Uhierholzer](uhierholzer.md)
+
+## Proof depends on
+
+- [Udeg](udeg.md)
+- [Usym](usym.md)
+- [Uvisit](uvisit.md)
+- [Uvisit spec](uvisit-spec.md)
+- [Walk Edges](../hierholzer/part-01/walk-edges.md)
 
 ## Sources
 

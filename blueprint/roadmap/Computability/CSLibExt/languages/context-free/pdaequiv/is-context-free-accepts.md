@@ -13,7 +13,13 @@ consuming letters from a finite set) are context-free.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PDA](../../../automata/pda/basic/pda.md)
+- [Accepts](../../../automata/pda/basic/accepts.md)
+
+## Proof depends on
+
+- [Pda Grammar language](pda-grammar-language.md)
+- [Pda Grammar](pda-grammar.md)
 
 ## Sources
 

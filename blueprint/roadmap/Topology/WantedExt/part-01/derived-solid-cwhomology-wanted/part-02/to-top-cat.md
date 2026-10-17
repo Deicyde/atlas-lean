@@ -11,7 +11,8 @@ The inclusion of CW spaces into topological spaces.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CWTop Cat](cwtop-cat.md)
+- [Is CWTop Cat](is-cwtop-cat.md)
 
 ## Sources
 

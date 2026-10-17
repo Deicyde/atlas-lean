@@ -12,7 +12,14 @@ The productions of `unitGrammar`, forward direction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Unit Output](is-unit-output.md)
+- [Unit Steps](unit-steps.md)
+- [Grammar NTs](grammar-nts.md)
+- [Unit Grammar](unit-grammar.md)
+
+## Proof depends on
+
+- [Form NTs](form-nts.md)
 
 ## Sources
 

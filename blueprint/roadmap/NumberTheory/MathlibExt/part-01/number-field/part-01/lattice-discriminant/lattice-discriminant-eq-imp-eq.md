@@ -10,11 +10,7 @@ Rigidity for full lattices (Lemma 12.10): equal discriminants force equal lattic
 
 ## Depends on
 
-- [Lattice Discriminant](lattice-discriminant.md)
-
-## Proof depends on
-
-- [Lattice Discriminant eq span singleton](lattice-discriminant-eq-span-singleton.md)
+This node has no prerequisites.
 
 ## Sources
 

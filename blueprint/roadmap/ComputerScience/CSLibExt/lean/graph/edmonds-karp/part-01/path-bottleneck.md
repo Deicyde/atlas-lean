@@ -11,7 +11,11 @@ Minimum residual capacity along a nontrivial path, and zero on shorter lists.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](flow.md)
+
+## Proof depends on
+
+- [Residual Amount](residual-amount.md)
 
 ## Sources
 

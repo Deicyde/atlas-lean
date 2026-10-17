@@ -13,7 +13,11 @@ distances as input-edge paths of fewer than `n` edges.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distances](../basic/distances.md)
+- [Path To?](../basic/path-to.md)
+- [Edge](../basic/edge.md)
+- [Is Weighted Path](../basic/is-weighted-path.md)
+- [Path Weight](../basic/path-weight.md)
 
 ## Sources
 

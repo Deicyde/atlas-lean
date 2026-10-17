@@ -23,6 +23,7 @@ The successor is `some y` exactly when `y` is the least stored key above `x`.
 - [Group Ordered](group-ordered.md)
 - [Find Group](find-group.md)
 - [Mem contents iff](mem-contents-iff.md)
+- [XFast Trie](../../xfast-trie/part-01/xfast-trie.md)
 - [Valid](../../xfast-trie/part-01/valid.md)
 - [Successor](../../xfast-trie/part-01/successor.md)
 - [Successor eq none iff](../../xfast-trie/part-01/successor-eq-none-iff.md)

@@ -13,6 +13,10 @@ The worst-case one-shot conditional-prefix asymptotic constant term.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Worst Case Optimum](worst-case-optimum.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.InformationTheory.FiniteChannelSimulation](../../../../../sources/v2/MathlibExt.md)

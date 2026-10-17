@@ -12,7 +12,8 @@ Every admissible constant is at most the tight knot constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Admissible](is-admissible.md)
+- [Tight Knot Constant](tight-knot-constant.md)
 
 ## Sources
 

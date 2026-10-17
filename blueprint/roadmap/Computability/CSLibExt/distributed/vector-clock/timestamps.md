@@ -11,7 +11,11 @@ The vector timestamps of the events of an execution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](../lamport-clock/event.md)
+
+## Proof depends on
+
+- [Run](run.md)
 
 ## Sources
 

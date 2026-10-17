@@ -13,7 +13,12 @@ A CNF of `A` (if `pos`) or of its Boolean complement (if not), with atom `a` as 
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+
+## Proof depends on
+
+- [CNFClause](../basic/cnfclause.md)
+- [Cnf Acc](cnf-acc.md)
 
 ## Sources
 

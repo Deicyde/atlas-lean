@@ -19,6 +19,10 @@ fuel-bounded `eulerNumGenAux`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Euler Num Gen Aux](euler-num-gen-aux.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.EulerPolynomialFormulasWanted](../../../../../sources/v2/WantedExt.md)

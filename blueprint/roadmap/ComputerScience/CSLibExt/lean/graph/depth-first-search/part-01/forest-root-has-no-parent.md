@@ -12,7 +12,10 @@ An actual forest root has no recorded discovering parent.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Traversal](traversal.md)
+- [Forest Roots](forest-roots.md)
+- [Dfs](dfs.md)
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
 
 ## Sources
 

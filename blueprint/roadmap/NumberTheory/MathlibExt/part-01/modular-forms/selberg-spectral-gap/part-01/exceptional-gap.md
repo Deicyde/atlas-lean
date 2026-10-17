@@ -13,6 +13,10 @@ The gap parameter `θ(Γ)`: the supremum of the gap contributions.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Exceptional Gaps](exceptional-gaps.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ModularForms.SelbergSpectralGap](../../../../../../../sources/v2/MathlibExt.md)

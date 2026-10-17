@@ -15,7 +15,14 @@ non-witnesses.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonwitnesses](nonwitnesses.md)
+
+## Proof depends on
+
+- [Coprime of witness eq false](coprime-of-witness-eq-false.md)
+- [Two Adic Split](../miller-rabin/two-adic-split.md)
+- [Witness](../miller-rabin/witness.md)
+- [Witness eq false imp](witness-eq-false-imp.md)
 
 ## Sources
 

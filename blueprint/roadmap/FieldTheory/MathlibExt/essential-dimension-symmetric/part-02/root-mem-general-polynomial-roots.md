@@ -12,7 +12,17 @@ Each root is a root of the general polynomial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [General Base Field](../part-01/general-base-field.md)
+- [General Polynomial](../part-01/general-polynomial.md)
+- [Root](../part-01/root.md)
+- [Roots Field](../part-01/roots-field.md)
+
+## Proof depends on
+
+- [Algebra Map esymm](../part-01/algebra-map-esymm.md)
+- [Coeff](../part-01/coeff.md)
+- [Coeff Elem](../part-01/coeff-elem.md)
+- [Coeff Nat](../part-01/coeff-nat.md)
 
 ## Sources
 

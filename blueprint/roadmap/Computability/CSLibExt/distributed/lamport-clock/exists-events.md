@@ -12,7 +12,12 @@ The endpoints of happened-before are events of the execution.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
+- [Happens Before](happens-before.md)
+
+## Proof depends on
+
+- [Step](step.md)
 
 ## Sources
 

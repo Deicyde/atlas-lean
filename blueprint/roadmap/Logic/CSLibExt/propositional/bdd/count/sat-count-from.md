@@ -12,7 +12,7 @@ ordered from `n` with variables below `m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](../basic/bdd.md)
 
 ## Sources
 

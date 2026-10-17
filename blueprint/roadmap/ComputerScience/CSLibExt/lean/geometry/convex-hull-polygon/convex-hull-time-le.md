@@ -12,7 +12,14 @@ The hull costs at most `4 n` orientation tests.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Convex Hull](convex-hull.md)
+
+## Proof depends on
+
+- [Lower Hull](../convex-hull/lower-hull.md)
+- [Lower Hull time le](../convex-hull/lower-hull-time-le.md)
+- [Upper Hull](upper-hull.md)
+- [Upper Hull time le](upper-hull-time-le.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ lean: Cslib.Algorithms.Lean.Geometry.IsMinPairDist2
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dist2](dist2.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Geometry.ClosestPair](../../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,7 @@ A bridge pointer is a valid boundary index of the next catalog.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bridge Ptr](bridge-ptr.md)
 
 ## Sources
 

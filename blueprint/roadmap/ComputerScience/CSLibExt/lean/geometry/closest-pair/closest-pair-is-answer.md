@@ -146,7 +146,14 @@ theorem closestRec_isAnswer (xs : List (𝕜 × 𝕜)) (hs : xs.Pairwise fun a b
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Answer](is-answer.md)
+- [Closest Pair](closest-pair.md)
+
+## Proof depends on
+
+- [Closest Rec](closest-rec.md)
+- [Closest Rec is Answer](closest-rec-is-answer.md)
+- [Dist2](dist2.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ Time bound of the composite machine: `p₁ + 4·(X + c·p₁) + 2 + p₂ ∘ (X 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Mid Poly](mid-poly.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Computability.TuringMachine.Composition](../../../../../../sources/v2/MathlibExt.md)

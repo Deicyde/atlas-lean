@@ -12,7 +12,11 @@ A constant observation has zero entropy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shannon Entropy](shannon-entropy.md)
+
+## Proof depends on
+
+- [Shannon Entropy pure](shannon-entropy-pure.md)
 
 ## Sources
 

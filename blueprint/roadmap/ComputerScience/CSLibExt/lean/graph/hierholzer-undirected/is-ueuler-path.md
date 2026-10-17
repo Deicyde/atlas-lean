@@ -14,6 +14,11 @@ edges of `E`, each traversed once in one direction.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Usym](usym.md)
+- [Walk Edges](../hierholzer/part-01/walk-edges.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Graph.HierholzerUndirected](../../../../../../sources/v2/CSLibExt.md)

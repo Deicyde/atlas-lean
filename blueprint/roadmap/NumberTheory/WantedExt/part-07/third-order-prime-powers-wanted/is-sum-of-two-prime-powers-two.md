@@ -12,7 +12,7 @@ Characteristic example: `2 = 2 ^ 0 + 2 ^ 0` is representable.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Sum Of Two Prime Powers](is-sum-of-two-prime-powers.md)
 
 ## Sources
 

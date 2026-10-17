@@ -11,7 +11,13 @@ A canonical ambient isotopy as a trusted lean-eval one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ambient Isotopy](../conway-knot-shared/part-01/ambient-isotopy.md)
+- [Ambient Isotopy](../../../MathlibExt/knot/euclidean-link/part-01/ambient-isotopy.md)
+
+## Proof depends on
+
+- [R3](../../../../Geometry/MathlibExt/euclidean/part-02/ropelength/r3.md)
+- [R3](../conway-knot-shared/part-01/r3.md)
 
 ## Sources
 

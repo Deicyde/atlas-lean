@@ -12,7 +12,13 @@ Renamings that agree pointwise act identically.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](../syntax/term.md)
+- [Rename](../syntax/rename.md)
+
+## Proof depends on
+
+- [Lift Ren](../syntax/lift-ren.md)
+- [Ty](../syntax/ty.md)
 
 ## Sources
 

@@ -13,7 +13,24 @@ further step, so its evaluation runs forever.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knot](knot.md)
+- [Step](../semantics/step.md)
+- [Steps](../semantics/steps.md)
+- [Store](../semantics/store.md)
+- [Term](../syntax/term.md)
+
+## Proof depends on
+
+- [Body](body.md)
+- [Body₀](body-2.md)
+- [C₁](c.md)
+- [Id U](id-u.md)
+- [Loop A](loop-a.md)
+- [Reachable](reachable.md)
+- [Deterministic](../semantics/deterministic.md)
+- [Value](../syntax/value.md)
+- [Instantiate](../syntax/instantiate.md)
+- [Ty](../syntax/ty.md)
 
 ## Sources
 

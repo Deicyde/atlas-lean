@@ -14,6 +14,10 @@ lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.rascalGenZ
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rascal Gen](rascal-gen.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.RascalNumbersWanted](../../../../../../../sources/v2/WantedExt.md)

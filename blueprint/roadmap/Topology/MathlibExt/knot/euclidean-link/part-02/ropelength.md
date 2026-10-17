@@ -12,7 +12,12 @@ parametrized knot, through its one-component link.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Knot](../part-01/parametrized-knot.md)
+
+## Proof depends on
+
+- [To Link](../part-01/to-link.md)
+- [Ropelength](../part-01/ropelength.md)
 
 ## Sources
 

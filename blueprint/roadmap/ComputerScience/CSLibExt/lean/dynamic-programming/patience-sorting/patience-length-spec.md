@@ -12,7 +12,14 @@ Patience sorting computes the length of a longest strictly increasing subsequenc
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LISLength](../longest-increasing-subsequence/is-lislength.md)
+- [Patience Length](patience-length.md)
+
+## Proof depends on
+
+- [Patience Inv](patience-inv.md)
+- [Scan](scan.md)
+- [Patience Scan](patience-scan.md)
 
 ## Sources
 

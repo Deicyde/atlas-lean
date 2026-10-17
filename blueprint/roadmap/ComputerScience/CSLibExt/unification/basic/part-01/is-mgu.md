@@ -11,7 +11,13 @@ A most general unifier: a unifier through which every unifier factors.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Equations](equations.md)
+- [Subst](subst.md)
+
+## Proof depends on
+
+- [Comp](comp.md)
+- [Unifies](unifies.md)
 
 ## Sources
 

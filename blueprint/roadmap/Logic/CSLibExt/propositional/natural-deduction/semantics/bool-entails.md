@@ -13,6 +13,10 @@ lean: Cslib.Logic.PL.Theory.BoolEntails
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Eval Bool](eval-bool.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Logics.Propositional.NaturalDeduction.Semantics](../../../../../../sources/v2/CSLibExt.md)

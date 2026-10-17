@@ -14,6 +14,11 @@ lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.schreierSparse
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Schreier](is-schreier.md)
+- [Is Sparse](is-sparse.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.SchreierTypeSetsWanted](../../../../../../../sources/v2/WantedExt.md)

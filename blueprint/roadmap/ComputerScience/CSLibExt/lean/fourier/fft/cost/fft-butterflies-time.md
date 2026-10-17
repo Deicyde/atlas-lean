@@ -12,7 +12,12 @@ Combining the stored child vectors performs exactly one butterfly per half-index
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Butterflies](../../fft-2/fft-butterflies.md)
+
+## Proof depends on
+
+- [Fft Butterfly](../../fft-2/fft-butterfly.md)
+- [Fft Butterfly time](fft-butterfly-time.md)
 
 ## Sources
 

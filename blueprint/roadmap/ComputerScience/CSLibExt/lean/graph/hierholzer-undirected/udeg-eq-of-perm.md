@@ -12,7 +12,12 @@ Degrees depend only on the edges as unordered pairs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Udeg](udeg.md)
+- [Usym](usym.md)
+
+## Proof depends on
+
+- [Ends At](ends-at.md)
 
 ## Sources
 

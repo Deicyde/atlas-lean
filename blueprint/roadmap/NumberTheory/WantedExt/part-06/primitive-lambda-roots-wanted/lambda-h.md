@@ -13,6 +13,10 @@ The paper's local factor `h_q(n)`, as a rational number.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lambda Delta](lambda-delta.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.PrimitiveLambdaRootsWanted](../../../../../sources/v2/WantedExt.md)

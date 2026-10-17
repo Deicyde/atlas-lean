@@ -11,7 +11,12 @@ Apply a variable renaming to a term. Locations are unchanged.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](term.md)
+
+## Proof depends on
+
+- [Lift Ren](lift-ren.md)
+- [Ty](ty.md)
 
 ## Sources
 

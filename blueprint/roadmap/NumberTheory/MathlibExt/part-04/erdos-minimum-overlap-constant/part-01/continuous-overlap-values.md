@@ -13,6 +13,11 @@ Overlap values over all source translations.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Continuous Overlap](continuous-overlap.md)
+- [Continuous Translation Interval](continuous-translation-interval.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ErdosMinimumOverlapConstant](../../../../../../sources/v2/MathlibExt.md)

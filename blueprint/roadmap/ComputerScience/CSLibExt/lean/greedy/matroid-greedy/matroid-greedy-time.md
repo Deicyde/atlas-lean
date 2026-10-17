@@ -12,7 +12,11 @@ One oracle query per element.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matroid Greedy](matroid-greedy.md)
+
+## Proof depends on
+
+- [Matroid Greedy Scan time](matroid-greedy-scan-time.md)
 
 ## Sources
 

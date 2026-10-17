@@ -13,7 +13,11 @@ This is the cube-volume identity in optimizationproblems `constants/25a.md`, lin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coordinate Cube](../../../Geometry/MathlibExt/convex/cube-covering/coordinate-cube.md)
+
+## Proof depends on
+
+- [Coordinate Cube eq abs Set](../../../Geometry/MathlibExt/convex/cube-covering/coordinate-cube-eq-abs-set.md)
 
 ## Sources
 

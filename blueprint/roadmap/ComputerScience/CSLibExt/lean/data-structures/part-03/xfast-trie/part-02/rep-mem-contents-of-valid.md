@@ -13,6 +13,7 @@ Under validity, every representative is a stored key.
 
 ## Depends on
 
+- [XFast Trie](../part-01/xfast-trie.md)
 - [YFast Trie](yfast-trie.md)
 - [Valid](valid.md)
 - [Contents](contents.md)

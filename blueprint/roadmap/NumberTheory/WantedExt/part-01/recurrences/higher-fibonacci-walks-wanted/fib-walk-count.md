@@ -14,6 +14,10 @@ The number of Fibonacci tiling walks encoded algebraically as
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fib Q](fib-q.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Recurrences.HigherFibonacciWalksWanted](../../../../../../sources/v2/WantedExt.md)

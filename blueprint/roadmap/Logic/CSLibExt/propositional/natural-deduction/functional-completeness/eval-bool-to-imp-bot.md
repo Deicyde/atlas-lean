@@ -12,7 +12,8 @@ The translation keeps every truth value when `⊥` is false.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eval Bool](../semantics/eval-bool.md)
+- [To Imp Bot](to-imp-bot.md)
 
 ## Sources
 

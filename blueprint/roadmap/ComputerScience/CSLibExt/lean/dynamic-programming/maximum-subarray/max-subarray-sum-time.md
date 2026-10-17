@@ -12,7 +12,11 @@ Kadane's scan performs exactly three operations per element after the first.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Max Subarray Sum](max-subarray-sum.md)
+
+## Proof depends on
+
+- [Kadane Scan time](kadane-scan-time.md)
 
 ## Sources
 

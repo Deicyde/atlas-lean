@@ -12,7 +12,8 @@ Admission preserves the charge of the actual FFT on each valid vector.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft](../../fft-2/fft.md)
+- [Fft Array](../array/fft-array.md)
 
 ## Sources
 

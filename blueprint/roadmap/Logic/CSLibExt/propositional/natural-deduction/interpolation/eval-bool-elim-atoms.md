@@ -12,7 +12,13 @@ lean: Cslib.Logic.PL.Proposition.evalBool_elimAtoms
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elim Atoms](elim-atoms.md)
+- [Eval Bool](../semantics/eval-bool.md)
+
+## Proof depends on
+
+- [Elim Atom](elim-atom.md)
+- [Fix Atom](fix-atom.md)
 
 ## Sources
 

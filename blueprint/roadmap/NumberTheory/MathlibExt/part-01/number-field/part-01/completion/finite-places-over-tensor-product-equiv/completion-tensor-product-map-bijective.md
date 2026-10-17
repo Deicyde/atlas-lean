@@ -19,6 +19,7 @@ Bijectivity of the completion tensor-product map.
 ## Proof depends on
 
 - [Completion Tensor Product Map injective](completion-tensor-product-map-injective.md)
+- [Places Over Equiv Primes Over](../finite-places-over/places-over-equiv-primes-over.md)
 
 ## Sources
 

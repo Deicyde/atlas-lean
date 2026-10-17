@@ -15,6 +15,10 @@ module note), not by a restriction in the cited source.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rectangular Matrix Accumulate](../../multiply/rectangular-matrix-accumulate.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Matrix.Freivalds.Basic](../../../../../../../sources/v2/CSLibExt.md)

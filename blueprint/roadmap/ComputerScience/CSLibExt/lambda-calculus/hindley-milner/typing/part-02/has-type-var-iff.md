@@ -40,7 +40,19 @@ theorem HasType.subst {Γ : Ctx B} {e : Expr} {τ : Ty B} (hτ : HasType Γ e τ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ctx](../part-01/ctx.md)
+- [Lookup](../part-01/lookup.md)
+- [Expr](../part-01/expr.md)
+- [Has Type](../part-01/has-type.md)
+- [Scheme](../part-01/scheme.md)
+- [Inst](../part-01/inst.md)
+- [Ty](../part-01/ty.md)
+
+## Proof depends on
+
+- [Gen](../part-01/gen.md)
+- [To Scheme](../part-01/to-scheme.md)
+- [Term](../../../../unification/basic/part-01/term.md)
 
 ## Sources
 

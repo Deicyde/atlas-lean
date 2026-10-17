@@ -13,7 +13,14 @@ timestamp of `a` is smaller than the timestamp of `b`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
+- [Happens Before](happens-before.md)
+- [Timestamps](timestamps.md)
+
+## Proof depends on
+
+- [Step](step.md)
+- [Step lt](step-lt.md)
 
 ## Sources
 

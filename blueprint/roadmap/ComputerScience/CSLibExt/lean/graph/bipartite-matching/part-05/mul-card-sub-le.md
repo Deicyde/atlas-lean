@@ -15,7 +15,14 @@ current matching against any matching is at most the number of right vertices re
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Matching](../part-01/is-matching.md)
+- [Valid](../part-01/valid.md)
+- [Layers](../part-01/layers.md)
+- [Pairs](../part-01/pairs.md)
+
+## Proof depends on
+
+- [One round of the layered search bounds the deficit](card-le-card-pairs-add.md)
 
 ## Sources
 

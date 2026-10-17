@@ -18,6 +18,11 @@ ordinary sofa condition.)
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Can Pass Z](can-pass-z.md)
+- [Is Sofa](../part-01/is-sofa.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Geometry.MovingSofa](../../../../../sources/v2/MathlibExt.md)

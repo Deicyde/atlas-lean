@@ -14,6 +14,12 @@ Repeatedly swap a value with its `d`-ary parent while it is smaller.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Dary Parent](dary-parent.md)
+- [Dary Parent lt](dary-parent-lt.md)
+- [Dary Parent lt size](dary-parent-lt-size.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.DaryHeap](../../../../../../../../sources/v2/CSLibExt.md)

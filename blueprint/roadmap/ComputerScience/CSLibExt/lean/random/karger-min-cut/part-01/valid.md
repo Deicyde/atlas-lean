@@ -11,7 +11,7 @@ Duplicate-free vertices, and every edge joins two distinct vertices of the state
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
 
 ## Sources
 

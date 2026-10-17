@@ -12,7 +12,7 @@ gets its request, finishes, and releases its allocation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [State](state.md)
 
 ## Sources
 

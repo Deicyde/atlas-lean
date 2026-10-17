@@ -14,6 +14,10 @@ of every multiple of `n`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Reverse](../../../../../Data/MathlibExt/nat/digits/reverse-digits.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.Digits.ReverseDivisorWanted](../../../../../../sources/v2/WantedExt.md)

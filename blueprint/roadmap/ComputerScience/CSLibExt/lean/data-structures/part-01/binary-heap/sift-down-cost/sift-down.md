@@ -16,6 +16,14 @@ The child-selection comparison is charged only when both children exist.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Ret timed Smaller Child](ret-timed-smaller-child.md)
+- [Timed Smaller Child](timed-smaller-child.md)
+- [Smaller Child](../../../part-02/binary-heap/part-01/smaller-child.md)
+- [Smaller Child gt](../../../part-02/binary-heap/part-01/smaller-child-gt.md)
+- [Smaller Child valid](../../../part-02/binary-heap/part-01/smaller-child-valid.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BinaryHeap.SiftDownCost](../../../../../../../../sources/v2/CSLibExt.md)

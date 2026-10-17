@@ -24,6 +24,7 @@ lines 862–867, `https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex`.
 
 ## Proof depends on
 
+- [Multigraded Free Module](multigraded-free-resolution/multigraded-free-module.md)
 - [Zero Eval](multigraded-betti/zero-eval.md)
 
 ## Sources

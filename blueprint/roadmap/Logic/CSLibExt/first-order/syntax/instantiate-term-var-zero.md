@@ -12,7 +12,7 @@ The outermost bound variable becomes `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Instantiate Term](instantiate-term.md)
 
 ## Sources
 

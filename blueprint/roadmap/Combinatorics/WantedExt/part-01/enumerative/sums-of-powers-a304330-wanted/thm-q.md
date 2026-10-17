@@ -16,6 +16,10 @@ The polynomial values `Q_{k,m}(n)` of Theorem 10:
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Array R](array-r.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.SumsOfPowersA304330Wanted](../../../../../../sources/v2/WantedExt.md)

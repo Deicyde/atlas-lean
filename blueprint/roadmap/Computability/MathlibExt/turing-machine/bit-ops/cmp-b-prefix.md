@@ -13,7 +13,16 @@ Common leading bits: if both blocks start with the bits `p`, `cmpB` pops them in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Distinct4](distinct4.md)
+- [Flag](../program/part-01/flag.md)
+- [Is Bit Block](is-bit-block.md)
+- [Run](../program/part-01/run.md)
+- [Cmp B](cmp-b.md)
+
+## Proof depends on
+
+- [Bit Of](bit-of.md)
+- [Is Bit](is-bit.md)
 
 ## Sources
 

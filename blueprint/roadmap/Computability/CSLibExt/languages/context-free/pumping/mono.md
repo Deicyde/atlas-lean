@@ -12,7 +12,7 @@ Height bounds can be increased.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Yields H](yields-h.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ The coded step on optional configurations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coded Cfg](../part-01/coded-cfg.md)
+
+## Proof depends on
+
+- [Step C](step-c.md)
 
 ## Sources
 

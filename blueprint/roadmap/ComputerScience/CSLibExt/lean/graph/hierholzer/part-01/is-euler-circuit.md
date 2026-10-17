@@ -11,7 +11,11 @@ lean: Cslib.Algorithms.Lean.Hierholzer.IsEulerCircuit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Is Euler Path](is-euler-path.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ Add `amount` along each path edge and subtract it on reverse entries.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](../part-01/flow.md)
+
+## Proof depends on
+
+- [Edge Delta](../part-01/edge-delta.md)
 
 ## Sources
 

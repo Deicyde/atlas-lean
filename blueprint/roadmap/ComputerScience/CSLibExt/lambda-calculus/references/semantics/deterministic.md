@@ -14,7 +14,16 @@ of fresh location only the result up to renaming of locations is unique.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Step](step.md)
+- [Store](store.md)
+- [Term](../syntax/term.md)
+
+## Proof depends on
+
+- [Not of value](not-of-value.md)
+- [Value](../syntax/value.md)
+- [Instantiate](../syntax/instantiate.md)
+- [Ty](../syntax/ty.md)
 
 ## Sources
 

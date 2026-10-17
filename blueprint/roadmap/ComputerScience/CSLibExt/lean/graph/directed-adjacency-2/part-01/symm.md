@@ -12,7 +12,12 @@ Semantic graph equivalence is symmetric.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](directed-adjacency.md)
+- [Semantically Equivalent](semantically-equivalent.md)
+
+## Proof depends on
+
+- [Edge](edge.md)
 
 ## Sources
 

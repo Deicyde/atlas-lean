@@ -14,7 +14,7 @@ point is proved below from injectivity and disjointness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](../../euclidean-link/part-01/parametrized-link.md)
 
 ## Sources
 

@@ -13,7 +13,14 @@ squaring.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Two Adic Split](two-adic-split.md)
+- [Witness](witness.md)
+- [Modular Exponentiation](../modular-exponentiation/modular-exponentiation.md)
+
+## Proof depends on
+
+- [Witness Loop](witness-loop.md)
+- [Witness Loop time le](witness-loop-time-le.md)
 
 ## Sources
 

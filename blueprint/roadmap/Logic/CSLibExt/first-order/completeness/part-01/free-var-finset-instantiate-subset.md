@@ -12,7 +12,11 @@ Instantiation adds at most the variables of the term.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Instantiate](../../syntax/instantiate.md)
+
+## Proof depends on
+
+- [Instantiate Term](../../syntax/instantiate-term.md)
 
 ## Sources
 

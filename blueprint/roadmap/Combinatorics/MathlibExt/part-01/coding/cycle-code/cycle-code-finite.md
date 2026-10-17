@@ -12,7 +12,11 @@ For a nonzero modulus, the code type at each fixed length is finite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cycle Code](cycle-code.md)
+
+## Proof depends on
+
+- [Is Cycle Code](is-cycle-code.md)
 
 ## Sources
 

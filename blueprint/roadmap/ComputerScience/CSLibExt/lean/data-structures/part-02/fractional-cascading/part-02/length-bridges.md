@@ -12,7 +12,11 @@ There is one bridge pointer per entry of the current catalog.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bridges](bridges.md)
+
+## Proof depends on
+
+- [Bridge Ptr](bridge-ptr.md)
 
 ## Sources
 

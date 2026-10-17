@@ -13,7 +13,13 @@ logic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [To Imp Bot](to-imp-bot.md)
+
+## Proof depends on
+
+- [Eval Bool](../semantics/eval-bool.md)
+- [Eval Bool to Imp Bot](eval-bool-to-imp-bot.md)
+- [Completeness for truth tables](../completeness/derivable-in-cpl-iff.md)
 
 ## Sources
 

@@ -22,6 +22,7 @@ Looking up an inserted key returns its replacement value.
 
 - [Heap Ordered](../part-01/heap-ordered.md)
 - [Ordered](../part-01/ordered.md)
+- [Split Result](../part-01/split-result.md)
 - [Contents](../part-01/contents.md)
 - [Contents insert](contents-insert.md)
 - [Lookup contents](../part-02/lookup-contents.md)

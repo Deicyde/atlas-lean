@@ -12,7 +12,11 @@ Canonical polynomial multiplication gives the full source linear coefficient sum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Polynomial](fft-polynomial.md)
+
+## Proof depends on
+
+- [Fft Polynomial coeff](fft-polynomial-coeff.md)
 
 ## Sources
 

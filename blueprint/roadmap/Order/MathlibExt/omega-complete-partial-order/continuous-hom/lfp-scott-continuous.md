@@ -12,7 +12,12 @@ The least-fixed-point operator is itself continuous.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lfp](lfp.md)
+
+## Proof depends on
+
+- [Lfp eq](lfp-eq.md)
+- [Lfp le](lfp-le.md)
 
 ## Sources
 

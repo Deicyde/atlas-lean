@@ -11,7 +11,12 @@ The finite set of variables occurring anywhere in a CNF formula.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+
+## Proof depends on
+
+- [CNFClause](../basic/cnfclause.md)
+- [Vars](vars.md)
 
 ## Sources
 

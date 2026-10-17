@@ -18,7 +18,7 @@ theorem matroidGreedy_time (indep : Finset α → Bool) (es : List α) :
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matroid Greedy Scan](matroid-greedy-scan.md)
 
 ## Sources
 

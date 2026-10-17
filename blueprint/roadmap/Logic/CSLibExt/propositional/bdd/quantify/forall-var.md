@@ -11,7 +11,12 @@ Universal quantification over `x`: `t[x := false] ∧ t[x := true]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](../basic/bdd.md)
+
+## Proof depends on
+
+- [Apply](../basic/apply.md)
+- [Restrict](restrict.md)
 
 ## Sources
 

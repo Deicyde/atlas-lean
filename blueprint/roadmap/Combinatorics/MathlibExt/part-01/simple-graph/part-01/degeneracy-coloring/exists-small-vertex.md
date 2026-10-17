@@ -13,7 +13,7 @@ small degree inside that set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Degenerate On](../degeneracy/is-degenerate-on.md)
 
 ## Sources
 

@@ -15,6 +15,11 @@ least `ρ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Totally Positive](is-totally-positive.md)
+- [Absolute Trace](absolute-trace.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Height.SchurSiegelSmyth](../../../../../../sources/v2/MathlibExt.md)

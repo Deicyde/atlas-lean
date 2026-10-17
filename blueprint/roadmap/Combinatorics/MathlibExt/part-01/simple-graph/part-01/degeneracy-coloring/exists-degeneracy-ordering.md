@@ -12,7 +12,14 @@ Every `k`-degenerate finite graph has a degeneracy ordering.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Degeneracy Ordering](is-degeneracy-ordering.md)
+- [Is Degenerate](../degeneracy/is-degenerate.md)
+
+## Proof depends on
+
+- [Is Degenerate On](../degeneracy/is-degenerate-on-2.md)
+- [Is Degenerate On](../degeneracy/is-degenerate-on.md)
+- [Exists inj On ordering](exists-inj-on-ordering.md)
 
 ## Sources
 

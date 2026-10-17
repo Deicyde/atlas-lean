@@ -12,7 +12,7 @@ An even pseudoprime satisfies the base-two Fermat congruence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Even Pseudoprime](is-even-pseudoprime.md)
 
 ## Sources
 

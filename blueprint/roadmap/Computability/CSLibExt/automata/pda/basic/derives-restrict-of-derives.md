@@ -13,7 +13,18 @@ PDA.
 
 ## Depends on
 
-This node has no prerequisites.
+- [PDA](pda.md)
+- [Closed Under](closed-under.md)
+- [Config](config.md)
+- [Derives](derives.md)
+- [Lift Stack](lift-stack.md)
+- [Restrict](restrict.md)
+- [Stack subset of derives](stack-subset-of-derives.md)
+
+## Proof depends on
+
+- [Step](step.md)
+- [Mem restrict step](mem-restrict-step.md)
 
 ## Sources
 

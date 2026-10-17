@@ -18,6 +18,12 @@ dead set.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Layers](../part-01/layers.md)
+- [Partner Of](partner-of.md)
+- [Try Preds](try-preds.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Graph.BipartiteMatching](../../../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,11 @@ Proof-irrelevant soundness: derivability implies truth-table consequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool Entails](bool-entails.md)
+
+## Proof depends on
+
+- [Soundness](bool-sound.md)
 
 ## Sources
 

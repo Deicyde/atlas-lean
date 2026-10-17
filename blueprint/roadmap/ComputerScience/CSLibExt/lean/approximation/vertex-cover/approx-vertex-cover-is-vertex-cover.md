@@ -12,7 +12,11 @@ If every edge of `G` is listed, in either orientation, the result is a vertex co
 
 ## Depends on
 
-This node has no prerequisites.
+- [Approx Vertex Cover](approx-vertex-cover.md)
+
+## Proof depends on
+
+- [Approx Vertex Cover covers](approx-vertex-cover-covers.md)
 
 ## Sources
 

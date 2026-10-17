@@ -13,6 +13,10 @@ LPT: sort the jobs into nonincreasing order with CSLib's `mergeSort`, then list-
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [List Schedule](list-schedule.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Approximation.ListScheduling](../../../../../../sources/v2/CSLibExt.md)

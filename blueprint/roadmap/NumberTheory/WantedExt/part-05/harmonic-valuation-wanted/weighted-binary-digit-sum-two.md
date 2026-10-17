@@ -12,7 +12,7 @@ Characteristic value `a(2) = 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Weighted Binary Digit Sum](weighted-binary-digit-sum.md)
 
 ## Sources
 

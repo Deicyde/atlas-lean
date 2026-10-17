@@ -15,6 +15,10 @@ The adic completion integers are compact as a subset of the completion.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Finite residue Field](finite-residue-field.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.NumberField.AdeleLocallyCompact](../../../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,13 @@ Execute the actual negative forward and inverse procedures on every admitted vec
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft](../../fft-2/fft.md)
+- [Ifft](../inverse/ifft.md)
+
+## Proof depends on
+
+- [Fft std Add Char neg one](../canonical-dft/fft-std-add-char-neg-one.md)
+- [Ifft std Add Char neg one](ifft-std-add-char-neg-one.md)
 
 ## Sources
 

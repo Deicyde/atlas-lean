@@ -13,6 +13,10 @@ A maximum matching, as a partner array: augment from the empty matching.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Max Matching Aux](../part-01/max-matching-aux.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Graph.BipartiteMatching](../../../../../../../sources/v2/CSLibExt.md)

@@ -13,7 +13,13 @@ lean: Cslib.Logic.FOL.provable_of_entails
 
 ## Depends on
 
-This node has no prerequisites.
+- [Provable](../../natural-deduction/provable.md)
+
+## Proof depends on
+
+- [Consistent](../../consistency/consistent.md)
+- [Model existence](exists-model-of-consistent.md)
+- [Provable iff not consistent insert not](../../consistency/provable-iff-not-consistent-insert-not.md)
 
 ## Sources
 

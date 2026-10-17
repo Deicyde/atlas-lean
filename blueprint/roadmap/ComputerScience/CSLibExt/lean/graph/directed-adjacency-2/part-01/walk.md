@@ -11,7 +11,11 @@ Exact-length directed walks, using CSLib's canonical exact-step relation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](directed-adjacency.md)
+
+## Proof depends on
+
+- [Edge](edge.md)
 
 ## Sources
 

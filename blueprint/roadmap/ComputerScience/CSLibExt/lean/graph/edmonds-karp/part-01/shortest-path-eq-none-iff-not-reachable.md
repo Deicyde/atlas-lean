@@ -12,7 +12,13 @@ No returned path is equivalent to absence of residual reachability.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Reachable](../../directed-adjacency-2/part-01/reachable.md)
+- [Shortest Path](shortest-path.md)
+
+## Proof depends on
+
+- [Shortest Path present iff reachable](shortest-path-present-iff-reachable.md)
 
 ## Sources
 

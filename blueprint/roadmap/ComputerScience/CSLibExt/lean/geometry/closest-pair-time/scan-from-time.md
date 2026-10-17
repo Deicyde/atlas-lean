@@ -63,7 +63,12 @@ theorem length_le_seven {δ xmid : ℝ} (p : Tagged) (Z : List Tagged)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Scan From](../closest-pair/scan-from.md)
+
+## Proof depends on
+
+- [Dist2](../closest-pair/dist2.md)
+- [Omin](../../data-structures/part-03/sparse-table/omin.md)
 
 ## Sources
 

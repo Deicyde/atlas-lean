@@ -33,7 +33,11 @@ theorem main_phase {f : ℕ → ℕ} (hc : ∀ n, c.eval [n] = pure [f n]) (n : 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bool ToΓ'](../part-01/bool-to.md)
+
+## Proof depends on
+
+- [Tr Nat eq map](../part-01/tr-nat-eq-map.md)
 
 ## Sources
 

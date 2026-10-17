@@ -12,7 +12,14 @@ Actual forest roots contain no duplicates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Forest Roots](forest-roots.md)
+- [Dfs](dfs.md)
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+
+## Proof depends on
+
+- [Traversal](traversal.md)
+- [Preorder nodup](preorder-nodup.md)
 
 ## Sources
 

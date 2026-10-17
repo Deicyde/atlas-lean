@@ -13,7 +13,14 @@ most the ordinary moving-sofa supremum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ambidextrous Optimal Area](ambidextrous-optimal-area.md)
+- [Optimal Area](../part-01/optimal-area.md)
+
+## Proof depends on
+
+- [Can Pass Z](can-pass-z.md)
+- [Is Ambidextrous Sofa](is-ambidextrous-sofa.md)
+- [Is Sofa](../part-01/is-sofa.md)
 
 ## Sources
 

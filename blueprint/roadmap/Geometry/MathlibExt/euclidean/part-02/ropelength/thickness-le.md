@@ -13,7 +13,9 @@ the set.
 
 ## Depends on
 
-This node has no prerequisites.
+- [R3](r3.md)
+- [Circumradius ENN](circumradius-enn.md)
+- [Thickness](thickness.md)
 
 ## Sources
 

@@ -14,6 +14,10 @@ empty list.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Max Subarray DC](max-subarray-dc.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DivideAndConquer.MaximumSubarray](../../../../../../sources/v2/CSLibExt.md)

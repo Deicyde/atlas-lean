@@ -13,7 +13,10 @@ containing the literal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+- [Restrict](../restriction/restrict-2.md)
+- [CNFClause](../basic/cnfclause.md)
+- [Restrict](../restriction/restrict.md)
 
 ## Sources
 

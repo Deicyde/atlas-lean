@@ -12,7 +12,8 @@ A singleton heap is disjoint from a heap iff its address is unallocated.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heap](heap.md)
+- [Disjoint](disjoint.md)
 
 ## Sources
 

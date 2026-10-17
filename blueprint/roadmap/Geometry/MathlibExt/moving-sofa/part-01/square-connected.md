@@ -12,7 +12,7 @@ The square is connected, including its nonemptiness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit Square](unit-square.md)
 
 ## Sources
 

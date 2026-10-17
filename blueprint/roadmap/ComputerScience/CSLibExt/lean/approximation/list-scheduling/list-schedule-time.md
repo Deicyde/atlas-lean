@@ -12,7 +12,12 @@ List scheduling inspects `m` loads per job.
 
 ## Depends on
 
-This node has no prerequisites.
+- [List Schedule](list-schedule.md)
+
+## Proof depends on
+
+- [Least Loaded](least-loaded.md)
+- [List Schedule Scan](list-schedule-scan.md)
 
 ## Sources
 

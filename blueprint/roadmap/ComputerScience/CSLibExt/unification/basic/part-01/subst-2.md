@@ -11,7 +11,8 @@ Apply a substitution to every variable of a term.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Subst](subst.md)
+- [Term](term.md)
 
 ## Sources
 

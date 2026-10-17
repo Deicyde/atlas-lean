@@ -13,7 +13,16 @@ The next phase's paths are at least as long: if `firstFreeRound` is `d` before a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Valid](../part-01/valid.md)
+- [First Free Round](../part-03/first-free-round.md)
+- [Flip](../part-01/flip.md)
+- [Phase](../part-03/phase.md)
+
+## Proof depends on
+
+- [First Free Round eq some](../part-03/first-free-round-eq-some.md)
+- [Layers](../part-01/layers.md)
+- [Distances do not decrease across a phase](../part-04/layers-flip-phase-subset.md)
 
 ## Sources
 

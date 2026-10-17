@@ -11,7 +11,7 @@ BPZ's one-block four-dimensional nineteen-cycle profile.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BPZProfile](../part-01/bpzprofile.md)
 
 ## Sources
 

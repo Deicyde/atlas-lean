@@ -13,7 +13,17 @@ as soon as all its instances do.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Consistent](maximal-consistent.md)
+- [Henkin Axiom](henkin-axiom.md)
+- [Instantiate](../syntax/instantiate.md)
+
+## Proof depends on
+
+- [Natural deduction](../natural-deduction/derivable.md)
+- [Mem of provable](mem-of-provable.md)
+- [Not mem iff](not-mem-iff.md)
+- [Provable](../natural-deduction/provable.md)
+- [Mp](mp.md)
 
 ## Sources
 

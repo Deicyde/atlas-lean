@@ -12,7 +12,7 @@ With `⊥` false, negation evaluates to Boolean negation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eval Bool](eval-bool.md)
 
 ## Sources
 

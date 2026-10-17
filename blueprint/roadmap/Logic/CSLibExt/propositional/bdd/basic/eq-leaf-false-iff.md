@@ -12,7 +12,15 @@ A reduced ordered diagram is unsatisfiable iff it is the leaf `false`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](bdd.md)
+- [Is ROBDD](is-robdd.md)
+- [Eval](eval.md)
+
+## Proof depends on
+
+- [Ordered From](ordered-from.md)
+- [Reduced](reduced.md)
+- [Eq iff eval eq](eq-iff-eval-eq.md)
 
 ## Sources
 

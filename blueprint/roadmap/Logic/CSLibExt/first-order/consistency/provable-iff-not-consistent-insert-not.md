@@ -12,7 +12,15 @@ lean: Cslib.Logic.FOL.provable_iff_not_consistent_insert_not
 
 ## Depends on
 
-This node has no prerequisites.
+- [Consistent](consistent.md)
+- [Provable](../natural-deduction/provable.md)
+
+## Proof depends on
+
+- [Natural deduction](../natural-deduction/derivable.md)
+- [Weakening](../natural-deduction/mono.md)
+- [Imp of insert](imp-of-insert.md)
+- [Mp](mp.md)
 
 ## Sources
 

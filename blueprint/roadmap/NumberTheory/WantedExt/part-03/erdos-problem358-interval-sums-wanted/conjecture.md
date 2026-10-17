@@ -14,6 +14,10 @@ integers whose interval-sum representation count tends to infinity.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rep Count](rep-count.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.ErdosProblem358IntervalSumsWanted](../../../../../sources/v2/WantedExt.md)

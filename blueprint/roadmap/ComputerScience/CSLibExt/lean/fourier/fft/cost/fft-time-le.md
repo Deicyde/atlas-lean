@@ -12,7 +12,11 @@ The actual FFT performs at most eight charged operations per entry per recursion
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft](../../fft-2/fft.md)
+
+## Proof depends on
+
+- [Fft time add one](fft-time-add-one.md)
 
 ## Sources
 

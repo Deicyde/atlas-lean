@@ -15,7 +15,15 @@ by round `k + 1` cover every edge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Matching](../part-01/is-matching.md)
+- [Valid](../part-01/valid.md)
+- [Layers](../part-01/layers.md)
+- [Pairs](../part-01/pairs.md)
+
+## Proof depends on
+
+- [Free](../part-01/free.md)
+- [Mem layers snd of mate](../part-04/mem-layers-snd-of-mate.md)
 
 ## Sources
 

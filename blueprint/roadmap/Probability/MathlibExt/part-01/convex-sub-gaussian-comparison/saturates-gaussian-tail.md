@@ -13,6 +13,10 @@ Saturation of the actual strict-tail event at every nonnegative threshold.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gaussian Tail Envelope](gaussian-tail-envelope.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Probability.ConvexSubGaussianComparison](../../../../../sources/v2/MathlibExt.md)

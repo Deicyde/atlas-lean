@@ -11,7 +11,7 @@ Symbol translation from `M₁`'s output alphabet to `M₂`'s input alphabet.
 
 ## Depends on
 
-This node has no prerequisites.
+- [X](../part-01/x.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ The zero-free segments of a ternary string, in order.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Split Zeros Aux](split-zeros-aux.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.NColorCompositionsWanted](../../../../../../../sources/v2/WantedExt.md)

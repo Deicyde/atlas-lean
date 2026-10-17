@@ -13,7 +13,7 @@ The action on a fractional ideal is induced by the corresponding base-ring autom
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ring Equiv Of Ring Equiv Hom](ring-equiv-of-ring-equiv-hom.md)
 
 ## Sources
 

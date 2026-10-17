@@ -12,7 +12,7 @@ If the final value `x^(2^k)` is not `1`, the loop reports a witness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Witness Loop](witness-loop.md)
 
 ## Sources
 

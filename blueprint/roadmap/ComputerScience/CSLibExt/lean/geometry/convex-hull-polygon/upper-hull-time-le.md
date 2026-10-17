@@ -12,7 +12,13 @@ The upper chain makes at most `2 n` orientation tests.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Hull](upper-hull.md)
+
+## Proof depends on
+
+- [Lower Hull](../convex-hull/lower-hull.md)
+- [Lower Hull time le](../convex-hull/lower-hull-time-le.md)
+- [Upper Hull eq](upper-hull-eq.md)
 
 ## Sources
 

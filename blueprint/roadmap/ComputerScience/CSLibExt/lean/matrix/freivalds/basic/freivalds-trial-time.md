@@ -13,7 +13,12 @@ acceptance Boolean, including all zero-initialized accumulator updates.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Trial](freivalds-trial.md)
+
+## Proof depends on
+
+- [Rectangular Matrix Accumulate](../../multiply/rectangular-matrix-accumulate.md)
+- [Rectangular Matrix Accumulate time](../../multiply/rectangular-matrix-accumulate-time.md)
 
 ## Sources
 

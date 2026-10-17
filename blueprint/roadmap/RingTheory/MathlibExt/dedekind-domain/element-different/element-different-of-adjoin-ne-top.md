@@ -11,7 +11,7 @@ the element different is `0`.
 
 ## Depends on
 
-- [Element Different](element-different.md)
+This node has no prerequisites.
 
 ## Sources
 

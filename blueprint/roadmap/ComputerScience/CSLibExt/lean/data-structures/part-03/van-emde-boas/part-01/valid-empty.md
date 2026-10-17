@@ -16,6 +16,10 @@ The empty tree satisfies the summary invariant.
 - [Valid](valid.md)
 - [Empty](empty.md)
 
+## Proof depends on
+
+- [Van Emde Boas](van-emde-boas.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.VanEmdeBoas](../../../../../../../../sources/v2/CSLibExt.md)

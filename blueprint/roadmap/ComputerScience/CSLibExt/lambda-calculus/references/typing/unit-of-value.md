@@ -12,7 +12,10 @@ Canonical forms for `Unit`: the only value of type `Unit` is `unit`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Type](has-type.md)
+- [Term](../syntax/term.md)
+- [Value](../syntax/value.md)
+- [Ty](../syntax/ty.md)
 
 ## Sources
 

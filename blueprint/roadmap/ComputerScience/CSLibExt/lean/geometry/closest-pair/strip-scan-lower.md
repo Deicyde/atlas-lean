@@ -12,7 +12,13 @@ On a strip sorted by `y`, every pair whose squared `y` gap is below `δ` is comp
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dist2](dist2.md)
+- [Strip Scan](strip-scan.md)
+
+## Proof depends on
+
+- [Scan From](scan-from.md)
+- [Omin](../../data-structures/part-03/sparse-table/omin.md)
 
 ## Sources
 

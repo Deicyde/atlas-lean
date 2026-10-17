@@ -12,7 +12,7 @@ Each materialized pointwise entry multiplies the two stored input entries.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Pointwise](../convolution/fft-pointwise.md)
 
 ## Sources
 

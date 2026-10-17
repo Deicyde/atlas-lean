@@ -15,6 +15,11 @@ formula at every interior point.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Partial Im](partial-im.md)
+- [Partial Re](partial-re.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ModularForms.SelbergSpectralGap](../../../../../../../sources/v2/MathlibExt.md)

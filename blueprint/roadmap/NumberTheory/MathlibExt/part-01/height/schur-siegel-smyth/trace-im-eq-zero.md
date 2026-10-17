@@ -13,7 +13,12 @@ part.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Totally Positive](is-totally-positive.md)
+- [Trace](trace.md)
+
+## Proof depends on
+
+- [Conjugates](conjugates.md)
 
 ## Sources
 

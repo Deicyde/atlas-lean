@@ -13,7 +13,8 @@ consistently be extended by.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Consistent](consistent.md)
+- [Maximal Consistent](maximal-consistent.md)
 
 ## Sources
 

@@ -16,7 +16,19 @@ removed edge.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even Except](even-except.md)
+- [Udeg](udeg.md)
+- [Usym](usym.md)
+- [Uvisit](uvisit.md)
+- [Walk Edges](../hierholzer/part-01/walk-edges.md)
+
+## Proof depends on
+
+- [Other End](other-end.md)
+- [Perm splice](../hierholzer/part-01/perm-splice.md)
+- [Udeg erase](udeg-erase.md)
+- [Usym eq other End](usym-eq-other-end.md)
+- [Walk Edges append](../hierholzer/part-01/walk-edges-append.md)
 
 ## Sources
 

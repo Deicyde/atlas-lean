@@ -12,7 +12,13 @@ Zero trials accept every supplied product and perform no arithmetic.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Repeat](freivalds-repeat.md)
+
+## Proof depends on
+
+- [Freivalds Repeat accept iff](freivalds-repeat-accept-iff.md)
+- [Freivalds Repeat time](freivalds-repeat-time.md)
+- [Freivalds Trial](../basic/freivalds-trial.md)
 
 ## Sources
 

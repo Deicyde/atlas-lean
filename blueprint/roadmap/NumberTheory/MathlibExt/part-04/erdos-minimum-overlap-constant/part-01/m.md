@@ -13,6 +13,10 @@ lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.M
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Max Overlap](max-overlap.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ErdosMinimumOverlapConstant](../../../../../../sources/v2/MathlibExt.md)

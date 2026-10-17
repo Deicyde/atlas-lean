@@ -12,7 +12,11 @@ The cost is at most `3^(⌈log₂ n⌉ + 1)`: pad `n` up to the next power of tw
 
 ## Depends on
 
-This node has no prerequisites.
+- [Karatsuba Cost](karatsuba-cost.md)
+
+## Proof depends on
+
+- [Karatsuba Cost two pow](karatsuba-cost-two-pow.md)
 
 ## Sources
 

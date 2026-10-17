@@ -12,7 +12,14 @@ lean: MetaMathlibExt.TM2Program.add_run
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flag](../part-01/flag.md)
+- [Run](../part-01/run.md)
+- [Cnt](../part-01/cnt.md)
+- [Xfer](../part-01/xfer.md)
+
+## Proof depends on
+
+- [Copy run](copy-run.md)
 
 ## Sources
 

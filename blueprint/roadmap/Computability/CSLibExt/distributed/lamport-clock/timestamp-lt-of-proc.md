@@ -13,7 +13,12 @@ timestamp.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
+- [Timestamps](timestamps.md)
+
+## Proof depends on
+
+- [Step lt](step-lt.md)
 
 ## Sources
 

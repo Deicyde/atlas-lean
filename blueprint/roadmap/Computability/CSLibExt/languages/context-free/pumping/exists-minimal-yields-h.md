@@ -12,7 +12,12 @@ Every yield has a derivation forest of minimal height.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Yields](../yields/yields.md)
+- [Yields H](yields-h.md)
+
+## Proof depends on
+
+- [Of yields](of-yields.md)
 
 ## Sources
 

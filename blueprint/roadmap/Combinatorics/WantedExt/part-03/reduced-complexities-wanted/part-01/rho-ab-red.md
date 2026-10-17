@@ -15,6 +15,11 @@ number of `0`s.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Factor Set](../../../../MathlibExt/part-01/infinite-word/factor/factor-set.md)
+- [Red Word](red-word.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.ReducedComplexitiesWanted](../../../../../../sources/v2/WantedExt.md)

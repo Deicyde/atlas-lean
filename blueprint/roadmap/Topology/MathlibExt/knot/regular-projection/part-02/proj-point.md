@@ -11,7 +11,14 @@ The projected point represented by a parameter point.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](../../euclidean-link/part-01/parametrized-link.md)
+- [Param Point](param-point.md)
+- [R2](../part-01/r2.md)
+
+## Proof depends on
+
+- [Point](point.md)
+- [Plane](plane.md)
 
 ## Sources
 

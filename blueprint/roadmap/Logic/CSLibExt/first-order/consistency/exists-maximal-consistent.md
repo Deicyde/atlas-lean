@@ -12,7 +12,12 @@ lean: Cslib.Logic.FOL.exists_maximalConsistent
 
 ## Depends on
 
-This node has no prerequisites.
+- [Consistent](consistent.md)
+- [Maximal Consistent](maximal-consistent.md)
+
+## Proof depends on
+
+- [Consistent s Union of is Chain](consistent-s-union-of-is-chain.md)
 
 ## Sources
 

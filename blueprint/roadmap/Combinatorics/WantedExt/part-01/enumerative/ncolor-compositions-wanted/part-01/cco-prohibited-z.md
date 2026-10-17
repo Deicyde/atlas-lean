@@ -14,6 +14,10 @@ arguments.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Cco Prohibited](cco-prohibited.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.NColorCompositionsWanted](../../../../../../../sources/v2/WantedExt.md)

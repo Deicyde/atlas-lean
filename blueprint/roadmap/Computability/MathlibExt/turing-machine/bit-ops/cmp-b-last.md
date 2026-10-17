@@ -13,7 +13,14 @@ to `eqL` if both blocks have ended and to `neL` otherwise, changing no stack.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flag](../program/part-01/flag.md)
+- [Run](../program/part-01/run.md)
+- [Cmp B](cmp-b.md)
+
+## Proof depends on
+
+- [Single](../program/part-01/single.md)
+- [Bit Of](bit-of.md)
 
 ## Sources
 

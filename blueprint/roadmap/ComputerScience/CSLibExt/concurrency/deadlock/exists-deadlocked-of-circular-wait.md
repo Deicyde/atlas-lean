@@ -12,7 +12,13 @@ Circular wait gives a deadlocked set: the processes on a cycle through `p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alloc State](alloc-state.md)
+- [Circular Wait](circular-wait.md)
+- [Deadlocked](deadlocked.md)
+
+## Proof depends on
+
+- [Waits For](waits-for.md)
 
 ## Sources
 

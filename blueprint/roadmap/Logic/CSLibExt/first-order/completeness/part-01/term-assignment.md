@@ -11,7 +11,12 @@ The canonical assignment `x ↦ [x]`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Maximal Consistent](../../consistency/maximal-consistent.md)
+- [Term Model](term-model.md)
+
+## Proof depends on
+
+- [Term Setoid](term-setoid.md)
 
 ## Sources
 

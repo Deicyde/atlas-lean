@@ -13,7 +13,6 @@ Evaluation is the finite product over the support of the divisor.
 
 ## Depends on
 
-- [Curve Divisor](../divisor/curve-divisor.md)
 - [Eval](eval.md)
 
 ## Sources

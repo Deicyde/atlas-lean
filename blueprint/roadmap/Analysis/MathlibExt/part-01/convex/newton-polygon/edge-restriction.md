@@ -12,10 +12,6 @@ Restriction of `f` to monomials whose exponents lie in `gamma`.
 
 This node has no prerequisites.
 
-## Proof depends on
-
-- [Exponent To Real](exponent-to-real.md)
-
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Convex.NewtonPolygon](../../../../../../sources/v2/MathlibExt.md)

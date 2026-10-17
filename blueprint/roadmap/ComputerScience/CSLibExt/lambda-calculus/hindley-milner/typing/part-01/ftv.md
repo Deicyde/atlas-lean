@@ -12,7 +12,12 @@ by an earlier one with the same name does not count, so `Γ.ftv` depends only on
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ctx](ctx.md)
+
+## Proof depends on
+
+- [Visible Vars](visible-vars.md)
+- [Scheme](scheme.md)
 
 ## Sources
 

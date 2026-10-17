@@ -12,7 +12,7 @@ Every proposition over atoms alone is true under the all-true valuation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eval Bool](../../natural-deduction/semantics/eval-bool.md)
 
 ## Sources
 

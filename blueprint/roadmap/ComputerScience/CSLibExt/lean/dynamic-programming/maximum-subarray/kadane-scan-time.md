@@ -18,7 +18,7 @@ def maxSubarraySum : List α → TimeM ℕ (Option α)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Kadane Scan](kadane-scan.md)
 
 ## Sources
 

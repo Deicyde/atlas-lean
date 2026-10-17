@@ -12,7 +12,11 @@ Changing finitely many values of `N` does not change the limsup.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ihara Constant Of](ihara-constant-of.md)
+
+## Proof depends on
+
+- [Ihara Ratio](ihara-ratio.md)
 
 ## Sources
 

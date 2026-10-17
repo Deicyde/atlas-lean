@@ -13,6 +13,10 @@ The paper's count `cco_{\widehat{b,b+1}}(n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Color Comp Prohibited](color-comp-prohibited.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.NColorCompositionsWanted](../../../../../../../sources/v2/WantedExt.md)

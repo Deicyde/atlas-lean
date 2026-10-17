@@ -15,7 +15,7 @@ bounded by `Fintype.card α`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lfp Fin](lfp-fin.md)
 
 ## Sources
 

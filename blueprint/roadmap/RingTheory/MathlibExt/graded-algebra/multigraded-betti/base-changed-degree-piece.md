@@ -19,6 +19,7 @@ actual base-changed basis vectors whose recorded edge-2 degree equals `α`.
 
 ## Proof depends on
 
+- [Multigraded Free Module](../multigraded-free-resolution/multigraded-free-module.md)
 - [Zero Eval](zero-eval.md)
 
 ## Sources

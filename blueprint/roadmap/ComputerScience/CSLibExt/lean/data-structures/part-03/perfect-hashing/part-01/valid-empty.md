@@ -17,6 +17,7 @@ The empty table is valid: no slot is occupied, so both clauses are vacuous.
 
 ## Proof depends on
 
+- [Perfect Hashing](perfect-hashing.md)
 - [Mk of placed](mk-of-placed.md)
 
 ## Sources

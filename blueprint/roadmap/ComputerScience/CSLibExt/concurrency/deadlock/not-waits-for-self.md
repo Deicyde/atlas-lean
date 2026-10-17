@@ -12,7 +12,8 @@ No process waits for itself directly.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alloc State](alloc-state.md)
+- [Waits For](waits-for.md)
 
 ## Sources
 

@@ -12,7 +12,12 @@ if `λ = 1/4 - θ²`, this is `θ = √(1/4 - λ)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Selberg Witness](selberg-witness.md)
+
+## Proof depends on
+
+- [Is Congruence Subgroup](../../selberg-spectral-gap/part-01/is-congruence-subgroup.md)
+- [Is Eigenvalue](../../selberg-spectral-gap/part-01/is-eigenvalue.md)
 
 ## Sources
 

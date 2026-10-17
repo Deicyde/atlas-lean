@@ -14,7 +14,7 @@ leading coefficient is a nonzero integer, and every root factor
 
 ## Depends on
 
-This node has no prerequisites.
+- [Int Mahler Measure](int-mahler-measure.md)
 
 ## Sources
 

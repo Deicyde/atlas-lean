@@ -12,7 +12,11 @@ The `O(n^(log₂ 3))` bound: for `n ≥ 1` digits the cost is at most `9 * n^(lo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Karatsuba Cost](karatsuba-cost.md)
+
+## Proof depends on
+
+- [Karatsuba Cost le](karatsuba-cost-le.md)
 
 ## Sources
 

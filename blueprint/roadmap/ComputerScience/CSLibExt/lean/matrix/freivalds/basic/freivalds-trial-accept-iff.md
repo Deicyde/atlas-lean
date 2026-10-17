@@ -12,7 +12,13 @@ Acceptance refines the source's literal matrix-vector equality.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Matrix](freivalds-matrix.md)
+- [Freivalds Trial](freivalds-trial.md)
+
+## Proof depends on
+
+- [Rectangular Matrix Accumulate](../../multiply/rectangular-matrix-accumulate.md)
+- [Rectangular Matrix Accumulate apply](../../multiply/rectangular-matrix-accumulate-apply.md)
 
 ## Sources
 

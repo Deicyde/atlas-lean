@@ -12,7 +12,13 @@ lean: Cslib.Logic.PL.BDD.eval_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](bdd.md)
+- [Apply](apply.md)
+- [Eval](eval.md)
+
+## Proof depends on
+
+- [Mk](mk.md)
 
 ## Sources
 

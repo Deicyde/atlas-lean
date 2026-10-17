@@ -14,7 +14,7 @@ all scheduled jobs are at least `p`, each machine holds two jobs or one job long
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Schedule Of](is-schedule-of.md)
 
 ## Sources
 

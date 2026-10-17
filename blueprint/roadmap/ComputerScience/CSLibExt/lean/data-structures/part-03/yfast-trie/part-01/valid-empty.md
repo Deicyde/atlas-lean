@@ -18,7 +18,9 @@ The empty trie is valid.
 
 ## Proof depends on
 
+- [Grouped YFast Trie](grouped-yfast-trie.md)
 - [Group Ordered](group-ordered.md)
+- [XFast Trie](../../xfast-trie/part-01/xfast-trie.md)
 - [Valid](../../xfast-trie/part-01/valid.md)
 - [Valid empty](../../xfast-trie/part-01/valid-empty.md)
 

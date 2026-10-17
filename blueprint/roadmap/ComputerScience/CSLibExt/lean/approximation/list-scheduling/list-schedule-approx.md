@@ -13,7 +13,19 @@ Graham (1966): list scheduling in any order has makespan `C` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Schedule Of](is-schedule-of.md)
+- [List Schedule](list-schedule.md)
+- [Makespan](makespan.md)
+
+## Proof depends on
+
+- [Le makespan](le-makespan.md)
+- [Sum le](sum-le.md)
+- [Scan Inv](scan-inv.md)
+- [Is Schedule Of nil](is-schedule-of-nil.md)
+- [Least Loaded](least-loaded.md)
+- [List Schedule Scan bound](list-schedule-scan-bound.md)
+- [Mul least Loaded le](mul-least-loaded-le.md)
 
 ## Sources
 

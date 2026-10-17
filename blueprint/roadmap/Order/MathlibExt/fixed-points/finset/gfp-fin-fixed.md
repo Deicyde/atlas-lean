@@ -14,7 +14,7 @@ until it stabilizes each step strictly decreases the cardinality.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gfp Fin](gfp-fin.md)
 
 ## Sources
 

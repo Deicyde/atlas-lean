@@ -12,7 +12,17 @@ Multistep transitions preserve the invariant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Inv](inv.md)
+- [State](state.md)
+- [Lts](lts.md)
+
+## Proof depends on
+
+- [Deliver](deliver.md)
+- [Gap](gap.md)
+- [Succ](succ.md)
+- [Travelled](travelled.md)
+- [Travelled succ](travelled-succ.md)
 
 ## Sources
 

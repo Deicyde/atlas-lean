@@ -13,7 +13,7 @@ This is the set-theoretic transformation used by the Mahler volume product.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Polar Set](polar-set/polar-set.md)
 
 ## Sources
 

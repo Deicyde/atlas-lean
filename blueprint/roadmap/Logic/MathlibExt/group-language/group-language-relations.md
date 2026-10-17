@@ -12,7 +12,7 @@ The group language has no relation symbols.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Group Language](group-language.md)
 
 ## Sources
 

@@ -11,7 +11,11 @@ The clock algorithm over an execution, from all counters `0`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
+
+## Proof depends on
+
+- [Clock Step](clock-step.md)
 
 ## Sources
 

@@ -13,10 +13,6 @@ The `p`-adic Hilbert symbol, defined by solvability of
 
 This node has no prerequisites.
 
-## Proof depends on
-
-- [Hilbert Symbol](hilbert-symbol.md)
-
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.Padics.HilbertSymbol](../../../../../../sources/v2/MathlibExt.md)

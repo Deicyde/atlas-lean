@@ -13,7 +13,13 @@ assignment giving nullable nonterminals the empty word.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nullable](nullable.md)
+- [Eval Form](../../basic/part-01/eval-form.md)
+- [Nullable Deletions](nullable-deletions.md)
+
+## Proof depends on
+
+- [Eval Symbol](../../basic/part-01/eval-symbol.md)
 
 ## Sources
 

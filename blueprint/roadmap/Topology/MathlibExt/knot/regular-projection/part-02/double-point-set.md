@@ -12,7 +12,13 @@ points.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](../../euclidean-link/part-01/parametrized-link.md)
+- [R2](../part-01/r2.md)
+
+## Proof depends on
+
+- [Proj Point](proj-point.md)
+- [Param Point](param-point.md)
 
 ## Sources
 

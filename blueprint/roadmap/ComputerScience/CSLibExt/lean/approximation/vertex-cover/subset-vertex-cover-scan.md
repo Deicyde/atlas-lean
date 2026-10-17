@@ -18,7 +18,7 @@ theorem approxVertexCover_time (edges : List (V × V)) :
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vertex Cover Scan](vertex-cover-scan.md)
 
 ## Sources
 

@@ -12,7 +12,15 @@ Every augmented catalog is at most the total input size.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Augmented](augmented.md)
+
+## Proof depends on
+
+- [Augment Head](augment-head.md)
+- [Augment One](augment-one.md)
+- [Length augment One](length-augment-one.md)
+- [Length sample le length](../part-01/length-sample-le-length.md)
+- [Sample](../part-01/sample.md)
 
 ## Sources
 

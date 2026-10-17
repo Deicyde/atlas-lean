@@ -14,6 +14,10 @@ cell in the table.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is LISCell](is-liscell.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.LongestIncreasingSubsequence](../../../../../../sources/v2/CSLibExt.md)

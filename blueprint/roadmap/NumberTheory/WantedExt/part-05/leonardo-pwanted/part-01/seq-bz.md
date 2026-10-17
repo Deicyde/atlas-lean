@@ -16,6 +16,10 @@ The paper's sequence `B_p` on `ℤ`: the element of
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [H Seq Z](h-seq-z.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.LeonardoPWanted](../../../../../../sources/v2/WantedExt.md)

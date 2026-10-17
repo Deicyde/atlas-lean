@@ -12,7 +12,7 @@ Constructor from the `0` modulo `4` case.
 
 ## Depends on
 
-- [Is Imaginary Quadratic Discriminant](is-imaginary-quadratic-discriminant.md)
+This node has no prerequisites.
 
 ## Sources
 

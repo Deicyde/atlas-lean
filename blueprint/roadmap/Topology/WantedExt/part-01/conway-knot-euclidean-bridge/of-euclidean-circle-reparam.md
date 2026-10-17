@@ -11,7 +11,7 @@ A canonical circle reparametrization as a trusted lean-eval one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Circle Reparam](../../../MathlibExt/knot/euclidean-link/part-01/circle-reparam.md)
 
 ## Sources
 

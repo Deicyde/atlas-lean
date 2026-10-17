@@ -12,7 +12,7 @@ Erasing an address absent from the right component erases on the left.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heap](heap.md)
 
 ## Sources
 

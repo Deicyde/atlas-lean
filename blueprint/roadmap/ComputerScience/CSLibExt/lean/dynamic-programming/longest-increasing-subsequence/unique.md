@@ -12,7 +12,7 @@ The longest increasing subsequence length is unique.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is LISLength](is-lislength.md)
 
 ## Sources
 

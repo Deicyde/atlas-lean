@@ -12,7 +12,8 @@ An edge at `v` joins `v` and its other endpoint.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Other End](other-end.md)
+- [Usym](usym.md)
 
 ## Sources
 

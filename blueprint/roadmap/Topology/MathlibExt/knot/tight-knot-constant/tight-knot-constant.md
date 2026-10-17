@@ -15,6 +15,10 @@ crossing number, without assuming that the supremum is attained.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Admissible](is-admissible.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.Topology.Knot.TightKnotConstant](../../../../../sources/v2/MathlibExt.md)

@@ -12,7 +12,13 @@ Empty matrices accept at zero arithmetic cost in the same trial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Trial](freivalds-trial.md)
+
+## Proof depends on
+
+- [Freivalds Matrix](freivalds-matrix.md)
+- [Freivalds Trial complete](freivalds-trial-complete.md)
+- [Freivalds Trial time](freivalds-trial-time.md)
 
 ## Sources
 

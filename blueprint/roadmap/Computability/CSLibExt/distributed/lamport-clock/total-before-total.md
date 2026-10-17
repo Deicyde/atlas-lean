@@ -14,7 +14,13 @@ between different processes, which the process order breaks.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Event](event.md)
+- [Total Before](total-before.md)
+
+## Proof depends on
+
+- [Timestamp lt of proc](timestamp-lt-of-proc.md)
+- [Timestamps](timestamps.md)
 
 ## Sources
 

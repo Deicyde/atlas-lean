@@ -12,7 +12,13 @@ scheme. Only lookups matter, so shadowed bindings play no role.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ctx](ctx.md)
+
+## Proof depends on
+
+- [Lookup](lookup.md)
+- [Scheme](scheme.md)
+- [More General](more-general.md)
 
 ## Sources
 

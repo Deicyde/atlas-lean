@@ -14,7 +14,13 @@ path.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Augmenting Path](../part-01/is-augmenting-path.md)
+- [Flip](../part-01/flip.md)
+- [Matched](../part-01/matched.md)
+
+## Proof depends on
+
+- [Alt Path](../part-01/alt-path.md)
 
 ## Sources
 

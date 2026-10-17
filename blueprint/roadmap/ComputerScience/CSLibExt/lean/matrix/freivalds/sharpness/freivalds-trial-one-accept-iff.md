@@ -12,7 +12,12 @@ The actual one-by-one incorrect-product trial accepts exactly the zero bit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Trial](../basic/freivalds-trial.md)
+
+## Proof depends on
+
+- [Freivalds Matrix](../basic/freivalds-matrix.md)
+- [Freivalds Trial accept iff](../basic/freivalds-trial-accept-iff.md)
 
 ## Sources
 

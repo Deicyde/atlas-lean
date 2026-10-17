@@ -12,7 +12,12 @@ A sequent derivable in classical logic `CPL` is a tautology, reading `⊥` as fa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eval Bool](eval-bool.md)
+
+## Proof depends on
+
+- [Bool Sound](bool-sound-2.md)
+- [Eval Bool of mem cpl](eval-bool-of-mem-cpl.md)
 
 ## Sources
 

@@ -12,7 +12,13 @@ lean: Cslib.Logic.PL.BDD.reduced_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](bdd.md)
+- [Reduced](reduced.md)
+- [Apply](apply.md)
+
+## Proof depends on
+
+- [Mk](mk.md)
 
 ## Sources
 

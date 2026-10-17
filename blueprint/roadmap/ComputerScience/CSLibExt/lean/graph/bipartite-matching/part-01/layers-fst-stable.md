@@ -12,7 +12,11 @@ The left layers are stable after `a` rounds.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Layers](layers.md)
+
+## Proof depends on
+
+- [Layers fst eq of eq](layers-fst-eq-of-eq.md)
 
 ## Sources
 

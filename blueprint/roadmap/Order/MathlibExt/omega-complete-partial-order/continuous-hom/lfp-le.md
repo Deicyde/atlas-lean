@@ -12,7 +12,7 @@ lean: OmegaCompletePartialOrder.ContinuousHom.lfp_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lfp](lfp.md)
 
 ## Sources
 

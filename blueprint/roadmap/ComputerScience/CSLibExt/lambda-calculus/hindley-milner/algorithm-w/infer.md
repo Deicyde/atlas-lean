@@ -11,7 +11,14 @@ Type inference for closed expressions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expr](../typing/part-01/expr.md)
+- [Ty](../typing/part-01/ty.md)
+
+## Proof depends on
+
+- [Scheme](../typing/part-01/scheme.md)
+- [W](w.md)
+- [Subst](../../../unification/basic/part-01/subst.md)
 
 ## Sources
 

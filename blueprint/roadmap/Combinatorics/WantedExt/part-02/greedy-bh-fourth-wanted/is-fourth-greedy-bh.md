@@ -15,6 +15,10 @@ spelled out.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Next Greedy Bh](is-next-greedy-bh.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.GreedyBhFourthWanted](../../../../../sources/v2/WantedExt.md)

@@ -14,6 +14,11 @@ of `θ(Γ)` over all congruence subgroups `Γ` of `SL(2, ℤ)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Congruence Subgroup](is-congruence-subgroup.md)
+- [Exceptional Gap](exceptional-gap.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ModularForms.SelbergSpectralGap](../../../../../../../sources/v2/MathlibExt.md)

@@ -14,6 +14,17 @@ Context-free languages are not closed under intersection.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Kstar](../closure/kstar.md)
+- [Mul](../closure/mul.md)
+- [Singleton word](../basic/part-02/singleton-word.md)
+- [Anbncn Lang](anbncn-lang.md)
+- [Anbncn Lang not is Context Free](anbncn-lang-not-is-context-free.md)
+- [Eq Pow Lang](eq-pow-lang.md)
+- [Eq Pow Lang is Context Free](eq-pow-lang-is-context-free.md)
+- [Mem kstar singleton](mem-kstar-singleton.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.NonClosure](../../../../../../sources/v2/CSLibExt.md)

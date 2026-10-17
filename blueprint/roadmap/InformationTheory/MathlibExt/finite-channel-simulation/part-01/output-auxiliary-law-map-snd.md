@@ -12,7 +12,10 @@ The output/auxiliary pair has the actual auxiliary marginal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Extension](finite-extension.md)
+- [Auxiliary Law](auxiliary-law.md)
+- [Output Auxiliary Law](output-auxiliary-law.md)
+- [Finite Joint Law](finite-joint-law.md)
 
 ## Sources
 

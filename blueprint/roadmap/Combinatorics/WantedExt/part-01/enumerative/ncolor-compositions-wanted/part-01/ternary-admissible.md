@@ -16,6 +16,10 @@ and zero-separation conditions in segment form).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Split Zeros](split-zeros.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.NColorCompositionsWanted](../../../../../../../sources/v2/WantedExt.md)

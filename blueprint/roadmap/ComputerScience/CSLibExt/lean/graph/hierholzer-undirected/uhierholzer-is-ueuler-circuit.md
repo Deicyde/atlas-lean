@@ -13,7 +13,14 @@ lean: Cslib.Algorithms.Lean.Hierholzer.uhierholzer_isUEulerCircuit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is UEuler Path](is-ueuler-path.md)
+- [UReach](ureach.md)
+- [Udeg](udeg.md)
+- [Uhierholzer](uhierholzer.md)
+
+## Proof depends on
+
+- [Euler paths](uhierholzer-is-ueuler-path.md)
 
 ## Sources
 

@@ -13,6 +13,10 @@ Source notation `C₁ᵦ`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Continuous Minimum Overlap Constant](continuous-minimum-overlap-constant.md)
+
 ## Sources
 
 - [MathlibExt, MathlibExt.NumberTheory.ErdosMinimumOverlapConstant](../../../../../../sources/v2/MathlibExt.md)

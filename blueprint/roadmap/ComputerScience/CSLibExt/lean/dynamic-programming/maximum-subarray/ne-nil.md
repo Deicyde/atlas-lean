@@ -20,7 +20,7 @@ theorem maxSubarraySum_time (xs : List α) :
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Max Subarray Sum](is-max-subarray-sum.md)
 
 ## Sources
 

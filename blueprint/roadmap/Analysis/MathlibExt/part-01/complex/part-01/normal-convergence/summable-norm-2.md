@@ -13,11 +13,10 @@ Local normal convergence implies pointwise absolute convergence on the domain.
 
 ## Depends on
 
-- [Converges Locally Normally On](../../../normed/series/normal-convergence/converges-locally-normally-on.md)
+- [Sup Norm On](../../../normed/series/normal-convergence/sup-norm-on.md)
 
 ## Proof depends on
 
-- [Converges Normally On](../../../normed/series/normal-convergence/converges-normally-on.md)
 - [Summable norm](summable-norm.md)
 
 ## Sources

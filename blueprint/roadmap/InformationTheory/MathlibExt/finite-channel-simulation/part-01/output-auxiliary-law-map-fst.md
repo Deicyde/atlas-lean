@@ -12,7 +12,10 @@ The YS marginal has precisely the specified Y law.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Extension](finite-extension.md)
+- [Output Auxiliary Law](output-auxiliary-law.md)
+- [Finite Joint Law](finite-joint-law.md)
+- [Output Law](output-law.md)
 
 ## Sources
 

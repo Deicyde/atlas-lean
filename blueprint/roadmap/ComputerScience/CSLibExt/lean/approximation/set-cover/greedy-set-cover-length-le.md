@@ -31,7 +31,11 @@ theorem greedySetCover_covers (F : List (Finset α)) (U : Finset α)
 
 ## Depends on
 
-This node has no prerequisites.
+- [Greedy Set Cover](greedy-set-cover.md)
+
+## Proof depends on
+
+- [Best Set](best-set.md)
 
 ## Sources
 

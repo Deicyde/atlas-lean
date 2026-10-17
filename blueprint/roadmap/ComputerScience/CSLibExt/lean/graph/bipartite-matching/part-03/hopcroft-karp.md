@@ -13,6 +13,10 @@ lean: Cslib.Algorithms.Lean.BipartiteMatching.hopcroftKarp
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Hopcroft Karp Aux](hopcroft-karp-aux.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Graph.BipartiteMatching](../../../../../../../sources/v2/CSLibExt.md)

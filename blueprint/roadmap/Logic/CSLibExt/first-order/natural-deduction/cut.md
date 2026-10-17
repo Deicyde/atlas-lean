@@ -12,7 +12,7 @@ Cut: a derived formula may be used as a hypothesis.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Natural deduction](derivable.md)
 
 ## Sources
 

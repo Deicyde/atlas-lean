@@ -13,7 +13,12 @@ value proof-independent by definition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](../../euclidean-link/part-01/parametrized-link.md)
+- [Is Regular Projection](is-regular-projection.md)
+
+## Proof depends on
+
+- [Crossing](crossing.md)
 
 ## Sources
 

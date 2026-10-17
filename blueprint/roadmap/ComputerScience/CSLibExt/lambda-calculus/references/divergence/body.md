@@ -11,7 +11,11 @@ lean: Cslib.Languages.LambdaCalculus.References.Knot.body
 
 ## Depends on
 
-This node has no prerequisites.
+- [Term](../syntax/term.md)
+
+## Proof depends on
+
+- [Ty](../syntax/ty.md)
 
 ## Sources
 

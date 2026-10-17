@@ -13,7 +13,11 @@ set to the value of `t`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Instantiate](instantiate.md)
+
+## Proof depends on
+
+- [Instantiate Term](instantiate-term.md)
 
 ## Sources
 

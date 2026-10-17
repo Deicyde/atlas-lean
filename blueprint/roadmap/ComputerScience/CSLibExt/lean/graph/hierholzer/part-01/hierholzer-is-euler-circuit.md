@@ -13,7 +13,18 @@ at vertices reachable from `s`, `hierholzer graph s` is an Euler circuit from `s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Edge](../../directed-adjacency-2/part-01/edge.md)
+- [Reachable](../../directed-adjacency-2/part-01/reachable.md)
+- [Is Balanced](is-balanced.md)
+- [Is Euler Circuit](is-euler-circuit.md)
+- [Hierholzer](hierholzer.md)
+
+## Proof depends on
+
+- [Is Semi Balanced](is-semi-balanced.md)
+- [Edge List](edge-list.md)
+- [Hierholzer is Euler Path](hierholzer-is-euler-path.md)
 
 ## Sources
 

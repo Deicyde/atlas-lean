@@ -13,6 +13,10 @@ The class expressing that a light condensed abelian group is solid.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Solid](is-solid.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Topology.DerivedSolidCWHomologyWanted](../../../../../../sources/v2/WantedExt.md)

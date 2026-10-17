@@ -13,7 +13,11 @@ many sets as any cover of `U` drawn from `F`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Greedy Set Cover](greedy-set-cover.md)
+
+## Proof depends on
+
+- [Greedy Set Cover length le sum harmonic](greedy-set-cover-length-le-sum-harmonic.md)
 
 ## Sources
 

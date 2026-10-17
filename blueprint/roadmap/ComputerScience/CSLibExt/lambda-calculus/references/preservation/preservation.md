@@ -14,7 +14,22 @@ extension of the store typing.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Type](../typing/has-type.md)
+- [Step](../semantics/step.md)
+- [Store](../semantics/store.md)
+- [Store Typed](../typing/store-typed.md)
+- [Term](../syntax/term.md)
+- [Ty](../syntax/ty.md)
+
+## Proof depends on
+
+- [Extend Store](extend-store.md)
+- [Instantiate](instantiate.md)
+- [Append](append.md)
+- [Exists of get Elem?](../typing/exists-of-get-elem.md)
+- [Set](set.md)
+- [Value](../syntax/value.md)
+- [Instantiate](../syntax/instantiate.md)
 
 ## Sources
 

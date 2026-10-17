@@ -13,7 +13,13 @@ searches in the original catalog and in the sample of the next catalog.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Augment One](augment-one.md)
+- [Lower Bound](../part-01/lower-bound.md)
+- [Sample](../part-01/sample.md)
+
+## Proof depends on
+
+- [Lower Bound sorted Merge](../part-01/lower-bound-sorted-merge.md)
 
 ## Sources
 

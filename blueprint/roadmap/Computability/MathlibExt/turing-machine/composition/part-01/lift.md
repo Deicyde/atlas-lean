@@ -11,7 +11,15 @@ Lift a statement of `M₁`; halting jumps to the first copy loop instead.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CK](ck.md)
+- [CΓ](c.md)
+- [CΛ](c-2.md)
+- [Cσ](c-3.md)
+
+## Proof depends on
+
+- [X](x.md)
+- [Pop1](pop1.md)
 
 ## Sources
 

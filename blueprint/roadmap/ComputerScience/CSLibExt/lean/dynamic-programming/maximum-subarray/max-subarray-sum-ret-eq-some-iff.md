@@ -13,7 +13,16 @@ maximum sum of a nonempty contiguous run.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Max Subarray Sum](is-max-subarray-sum.md)
+- [Max Subarray Sum](max-subarray-sum.md)
+
+## Proof depends on
+
+- [Ne nil](ne-nil.md)
+- [Unique](unique.md)
+- [Is Max Suffix Sum](is-max-suffix-sum.md)
+- [Kadane Scan](kadane-scan.md)
+- [Kadane Scan ret](kadane-scan-ret.md)
 
 ## Sources
 

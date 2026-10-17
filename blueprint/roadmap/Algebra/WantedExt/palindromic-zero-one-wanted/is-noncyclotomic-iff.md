@@ -12,7 +12,7 @@ Characterization of `IsNoncyclotomic`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Noncyclotomic](is-noncyclotomic.md)
 
 ## Sources
 

@@ -13,7 +13,15 @@ Non-destructive `c += a` through the empty scratch stack `t`: `xfer a → [c, t]
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flag](../part-01/flag.md)
+- [Run](../part-01/run.md)
+- [Cnt](../part-01/cnt.md)
+- [Xfer](../part-01/xfer.md)
+
+## Proof depends on
+
+- [Add U](../part-01/add-u.md)
+- [Xfer run](../part-01/xfer-run.md)
 
 ## Sources
 

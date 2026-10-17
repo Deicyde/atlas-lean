@@ -11,7 +11,8 @@ The edge-pairing involution as a permutation of darts.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dart Diagram](dart-diagram.md)
+- [Dart](dart.md)
 
 ## Sources
 

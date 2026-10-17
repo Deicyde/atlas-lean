@@ -13,14 +13,11 @@ Surface regularity via surface predicates.
 
 ## Depends on
 
-- [Isogeny Volcano](../part-01/isogeny-volcano.md)
-- [Is Surface](../part-01/is-surface.md)
-- [Degree On](../part-01/degree-on.md)
+This node has no prerequisites.
 
 ## Proof depends on
 
 - [Is Surface iff](is-surface-iff.md)
-- [Degree On congr](../part-01/degree-on-congr.md)
 
 ## Sources
 

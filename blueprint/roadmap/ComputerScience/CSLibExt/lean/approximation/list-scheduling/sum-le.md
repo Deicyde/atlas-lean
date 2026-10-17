@@ -12,7 +12,8 @@ The total work is at most `m` times the makespan.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Schedule Of](is-schedule-of.md)
+- [Makespan](makespan.md)
 
 ## Sources
 

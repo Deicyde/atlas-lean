@@ -11,7 +11,9 @@ Assemble composite stacks from `M₁`'s stacks, `M₂`'s stacks and the scratch 
 
 ## Depends on
 
-This node has no prerequisites.
+- [CK](ck.md)
+- [CΓ](c.md)
+- [X](x.md)
 
 ## Sources
 

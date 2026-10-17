@@ -12,7 +12,7 @@ components. It is alternating by convention and by the definition.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dart Diagram](dart-diagram.md)
 
 ## Sources
 

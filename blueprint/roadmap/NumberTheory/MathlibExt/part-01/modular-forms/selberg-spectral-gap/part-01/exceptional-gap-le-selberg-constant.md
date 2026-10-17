@@ -12,7 +12,14 @@ The gap of any congruence subgroup is at most Selberg's constant.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Congruence Subgroup](is-congruence-subgroup.md)
+- [Exceptional Gap](exceptional-gap.md)
+- [Selberg Constant](selberg-constant.md)
+
+## Proof depends on
+
+- [Is Eigenvalue](is-eigenvalue.md)
+- [Exceptional Gaps](exceptional-gaps.md)
 
 ## Sources
 

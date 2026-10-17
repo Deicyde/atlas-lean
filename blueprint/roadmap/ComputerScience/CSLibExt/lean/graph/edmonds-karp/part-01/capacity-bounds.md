@@ -12,7 +12,12 @@ Both directed capacity bounds follow from skew symmetry.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flow](flow.md)
+- [Is Feasible](is-feasible.md)
+
+## Proof depends on
+
+- [Flow Value](flow-value.md)
 
 ## Sources
 

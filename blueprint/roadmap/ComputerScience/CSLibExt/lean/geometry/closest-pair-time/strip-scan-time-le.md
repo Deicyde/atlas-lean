@@ -12,7 +12,17 @@ A strip sorted by `y` whose same-side points are `δ` apart costs at most `7` pe
 
 ## Depends on
 
-This node has no prerequisites.
+- [In Strip](in-strip.md)
+- [Same Side Far](same-side-far.md)
+- [Tagged](tagged.md)
+- [Strip Scan](../closest-pair/strip-scan.md)
+
+## Proof depends on
+
+- [Length le seven](length-le-seven.md)
+- [Scan From](../closest-pair/scan-from.md)
+- [Scan From time](scan-from-time.md)
+- [Omin](../../data-structures/part-03/sparse-table/omin.md)
 
 ## Sources
 

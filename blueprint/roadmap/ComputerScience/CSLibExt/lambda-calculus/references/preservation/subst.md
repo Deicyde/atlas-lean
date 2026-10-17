@@ -13,7 +13,15 @@ its type.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Type](../typing/has-type.md)
+- [Term](../syntax/term.md)
+- [Subst](../syntax/subst.md)
+- [Ty](../syntax/ty.md)
+
+## Proof depends on
+
+- [Weaken](weaken.md)
+- [Lift Sub](../syntax/lift-sub.md)
 
 ## Sources
 

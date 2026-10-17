@@ -14,6 +14,7 @@ Splitting a valid treap produces two valid treaps.
 ## Depends on
 
 - [Tree](../part-01/tree.md)
+- [Split Result](../part-01/split-result.md)
 - [Valid](../part-01/valid.md)
 - [Split](../part-01/split.md)
 

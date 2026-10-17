@@ -15,6 +15,11 @@ chain nonterminal yields what its decoded form yields.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Yields](../yields/yields.md)
+- [From Cnf NT](from-cnf-nt.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Computability.Languages.ContextFree.ChomskyNormalForm](../../../../../../sources/v2/CSLibExt.md)

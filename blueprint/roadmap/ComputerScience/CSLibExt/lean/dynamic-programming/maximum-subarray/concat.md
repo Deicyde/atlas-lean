@@ -13,7 +13,7 @@ run is `[x]` alone, or it extends a best run ending just before `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Max Suffix Sum](is-max-suffix-sum.md)
 
 ## Sources
 

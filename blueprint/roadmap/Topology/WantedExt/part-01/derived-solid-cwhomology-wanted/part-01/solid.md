@@ -14,6 +14,10 @@ condensed abelian groups.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Is Solid](is-solid.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Topology.DerivedSolidCWHomologyWanted](../../../../../../sources/v2/WantedExt.md)

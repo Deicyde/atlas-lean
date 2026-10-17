@@ -11,7 +11,7 @@ The scratch stack index.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CK](ck.md)
 
 ## Sources
 

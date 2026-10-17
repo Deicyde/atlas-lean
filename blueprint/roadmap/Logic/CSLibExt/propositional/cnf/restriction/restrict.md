@@ -11,7 +11,7 @@ Remove every occurrence of the assigned variable from a clause.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNFClause](../basic/cnfclause.md)
 
 ## Sources
 

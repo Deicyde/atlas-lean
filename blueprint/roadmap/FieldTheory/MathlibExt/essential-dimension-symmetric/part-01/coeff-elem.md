@@ -11,7 +11,12 @@ The coefficient `aₖ₊₁` as an element of the coefficient field.
 
 ## Depends on
 
-This node has no prerequisites.
+- [General Base Field](general-base-field.md)
+- [Roots Field](roots-field.md)
+
+## Proof depends on
+
+- [Coeff](coeff.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ A deterministic finite law has zero entropy.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shannon Entropy](shannon-entropy.md)
 
 ## Sources
 

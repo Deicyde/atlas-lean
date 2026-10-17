@@ -11,7 +11,7 @@ The finite set of variables occurring in a clause.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNFClause](../basic/cnfclause.md)
 
 ## Sources
 

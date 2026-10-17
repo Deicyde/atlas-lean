@@ -12,7 +12,8 @@ A height-bounded derivation forest is a yield.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Yields](../yields/yields.md)
+- [Yields H](yields-h.md)
 
 ## Sources
 

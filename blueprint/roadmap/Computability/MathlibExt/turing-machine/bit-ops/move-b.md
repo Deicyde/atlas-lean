@@ -12,7 +12,12 @@ marker or an empty stack go to `next`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Flag](../program/part-01/flag.md)
+
+## Proof depends on
+
+- [Bit Of](bit-of.md)
+- [Is Bit](is-bit.md)
 
 ## Sources
 

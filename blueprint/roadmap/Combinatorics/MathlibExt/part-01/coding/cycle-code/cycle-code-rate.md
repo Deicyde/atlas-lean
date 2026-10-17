@@ -11,7 +11,12 @@ The rate supplied by a concrete independent code.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cycle Code](cycle-code.md)
+- [Positive Nat](positive-nat.md)
+
+## Proof depends on
+
+- [Is Cycle Code](is-cycle-code.md)
 
 ## Sources
 

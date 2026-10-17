@@ -13,7 +13,7 @@ Characteristic example: with `m = 3`, `s = 0`, `t = 1`, the value
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Signed Pow Two Sum](is-signed-pow-two-sum.md)
 
 ## Sources
 

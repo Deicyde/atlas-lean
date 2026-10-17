@@ -13,7 +13,13 @@ of the fresh-start grammar.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eps Start Grammar](eps-start-grammar.md)
+
+## Proof depends on
+
+- [Map Rule](../basic/part-01/map-rule.md)
+- [Map Rule injective](../basic/part-01/map-rule-injective.md)
+- [Map Symbol](../basic/part-01/map-symbol.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ The action on an integral ideal agrees with the induced fractional-ideal action.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ring Equiv Of Ring Equiv Hom](ring-equiv-of-ring-equiv-hom.md)
 
 ## Proof depends on
 

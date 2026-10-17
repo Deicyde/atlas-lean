@@ -12,7 +12,15 @@ Two actual forward calls, product materialization and the actual inverse.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fft Circular](../convolution/fft-circular.md)
+
+## Proof depends on
+
+- [Fft](../../fft-2/fft.md)
+- [Fft Pointwise](../convolution/fft-pointwise.md)
+- [Fft time add one](../cost/fft-time-add-one.md)
+- [Ifft](../inverse/ifft.md)
+- [Ifft time add one](../inverse-cost/ifft-time-add-one.md)
 
 ## Sources
 

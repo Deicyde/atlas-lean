@@ -14,6 +14,10 @@ The paper's `k`-divisible Lucas factorial
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Lucas Poly](lucas-poly.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.SuperFibocatalanWanted](../../../../../sources/v2/WantedExt.md)

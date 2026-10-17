@@ -12,7 +12,8 @@ The direct scan computes the lower-bound specification.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Count LT](count-lt.md)
+- [Lower Bound](lower-bound.md)
 
 ## Sources
 

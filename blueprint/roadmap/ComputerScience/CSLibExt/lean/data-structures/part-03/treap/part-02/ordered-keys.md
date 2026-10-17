@@ -20,6 +20,7 @@ The inorder keys of an ordered tree are strictly increasing.
 ## Proof depends on
 
 - [All Nodes](../part-01/all-nodes.md)
+- [Mem Key](../part-01/mem-key.md)
 - [All Nodes key iff](all-nodes-key-iff.md)
 - [Keys node](keys-node.md)
 - [Mem keys](mem-keys.md)

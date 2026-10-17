@@ -13,7 +13,12 @@ at least as much as every independent set drawn from them.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Matroid Greedy](matroid-greedy.md)
+
+## Proof depends on
+
+- [Card filter le matroid Greedy](card-filter-le-matroid-greedy.md)
+- [Matroid Greedy indep](matroid-greedy-indep.md)
 
 ## Sources
 

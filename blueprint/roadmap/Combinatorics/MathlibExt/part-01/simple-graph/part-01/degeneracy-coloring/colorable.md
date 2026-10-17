@@ -12,7 +12,13 @@ Every `k`-degenerate finite graph is `(k + 1)`-colorable (Diestel, §5.1–5.2).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Degenerate](../degeneracy/is-degenerate.md)
+
+## Proof depends on
+
+- [Is Degenerate On](../degeneracy/is-degenerate-on-2.md)
+- [Is Degenerate On](../degeneracy/is-degenerate-on.md)
+- [Exists coloring Fun](exists-coloring-fun.md)
 
 ## Sources
 

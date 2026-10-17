@@ -12,7 +12,18 @@ lean: Cslib.HindleyMilner.infer_isSome_iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Expr](../typing/part-01/expr.md)
+- [Has Type](../typing/part-01/has-type.md)
+- [Scheme](../typing/part-01/scheme.md)
+- [Ty](../typing/part-01/ty.md)
+- [Infer](../algorithm-w/infer.md)
+
+## Proof depends on
+
+- [Has Type of infer eq some](../algorithm-w/has-type-of-infer-eq-some.md)
+- [Infer complete](infer-complete.md)
+- [Subst](../../../unification/basic/part-01/subst.md)
+- [Subst](../../../unification/basic/part-01/subst-2.md)
 
 ## Sources
 

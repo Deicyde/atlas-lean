@@ -16,6 +16,10 @@ universe against an existential over all potential owners.
 
 - [YFast Trie](yfast-trie.md)
 
+## Proof depends on
+
+- [XFast Trie](../part-01/xfast-trie.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.XFastTrie](../../../../../../../../sources/v2/CSLibExt.md)

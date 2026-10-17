@@ -13,11 +13,7 @@ Every element mapped from B belongs to imageOfB.
 
 ## Depends on
 
-- [Image Of B](image-of-b.md)
-
-## Proof depends on
-
-- [Mem image Of B](mem-image-of-b.md)
+This node has no prerequisites.
 
 ## Sources
 

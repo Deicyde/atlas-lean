@@ -15,6 +15,11 @@ twiddle. Root assumptions are needed for correctness, not for execution.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fft Butterflies](fft-butterflies.md)
+- [Fft Split](fft-split.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.Fourier.FFT](../../../../../../sources/v2/CSLibExt.md)

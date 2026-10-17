@@ -14,6 +14,10 @@ Fibonacci `m`-step numbers.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Fib Step](fib-step.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.FibStepConvolutionWanted](../../../../../../../sources/v2/WantedExt.md)

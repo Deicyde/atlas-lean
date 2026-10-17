@@ -16,6 +16,10 @@ The empty table satisfies the probe-closed invariant.
 - [Valid](valid.md)
 - [Empty](empty.md)
 
+## Proof depends on
+
+- [Open Addressing](open-addressing.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.OpenAddressing](../../../../../../../../sources/v2/CSLibExt.md)

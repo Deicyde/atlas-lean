@@ -11,7 +11,11 @@ Reflexive-transitive directed reachability.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Directed Adjacency](directed-adjacency.md)
+
+## Proof depends on
+
+- [Edge](edge.md)
 
 ## Sources
 

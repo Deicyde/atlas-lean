@@ -14,7 +14,15 @@ lean: Cslib.Logic.PL.exists_interpolant
 
 ## Depends on
 
-This node has no prerequisites.
+- [Atoms](atoms.md)
+- [Eval Bool](../semantics/eval-bool.md)
+
+## Proof depends on
+
+- [Elim Atoms](elim-atoms.md)
+- [Eval Bool congr](eval-bool-congr.md)
+- [Eval Bool elim Atoms](eval-bool-elim-atoms.md)
+- [Fix Atom](fix-atom.md)
 
 ## Sources
 

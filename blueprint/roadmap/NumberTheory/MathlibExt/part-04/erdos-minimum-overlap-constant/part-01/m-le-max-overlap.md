@@ -12,7 +12,8 @@ lean: MathlibExt.NumberTheory.ErdosMinimumOverlapConstantWanted.M_le_MaxOverlap
 
 ## Depends on
 
-This node has no prerequisites.
+- [M](m.md)
+- [Max Overlap](max-overlap.md)
 
 ## Sources
 

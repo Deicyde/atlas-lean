@@ -12,7 +12,11 @@ A witness proves compositeness.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Witness](witness.md)
+
+## Proof depends on
+
+- [Witness eq false of prime](witness-eq-false-of-prime.md)
 
 ## Sources
 

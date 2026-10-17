@@ -12,7 +12,13 @@ Rado–Edmonds: an independence system is greedy-optimal exactly when it is a ma
 
 ## Depends on
 
-This node has no prerequisites.
+- [Greedy Optimal](greedy-optimal.md)
+- [Is Indep System](is-indep-system.md)
+
+## Proof depends on
+
+- [Exists matroid of greedy Optimal](exists-matroid-of-greedy-optimal.md)
+- [Matroid Greedy optimal](../matroid-greedy/matroid-greedy-optimal.md)
 
 ## Sources
 

@@ -12,7 +12,15 @@ Granted requests lead to safe states.
 
 ## Depends on
 
-This node has no prerequisites.
+- [System](system.md)
+- [Safe](safe.md)
+- [Request](request.md)
+
+## Proof depends on
+
+- [Grant](grant.md)
+- [Need](need.md)
+- [The request algorithm grants exactly the safe requests within the claim and the free resources](request-eq-some-iff.md)
 
 ## Sources
 

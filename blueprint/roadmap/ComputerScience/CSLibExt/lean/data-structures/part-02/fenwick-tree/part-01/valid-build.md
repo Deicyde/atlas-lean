@@ -18,6 +18,7 @@ lean: Cslib.Algorithms.Lean.FenwickTree.valid_build
 
 ## Proof depends on
 
+- [Fenwick Tree](fenwick-tree.md)
 - [Block Sum](block-sum.md)
 - [Block Sum Array](block-sum-array.md)
 - [Lowbit](lowbit.md)

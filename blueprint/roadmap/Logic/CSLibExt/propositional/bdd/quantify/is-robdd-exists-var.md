@@ -12,7 +12,19 @@ Quantifying an ordered diagram gives a reduced ordered one.
 
 ## Depends on
 
-This node has no prerequisites.
+- [BDD](../basic/bdd.md)
+- [Is ROBDD](../basic/is-robdd.md)
+- [Ordered From](../basic/ordered-from.md)
+- [Exists Var](exists-var.md)
+
+## Proof depends on
+
+- [Reduced](../basic/reduced.md)
+- [Apply](../basic/apply.md)
+- [Is ROBDD restrict](is-robdd-restrict.md)
+- [Ordered From apply](../basic/ordered-from-apply.md)
+- [Reduced apply](../basic/reduced-apply.md)
+- [Restrict](restrict.md)
 
 ## Sources
 

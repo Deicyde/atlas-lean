@@ -13,7 +13,12 @@ other clause.
 
 ## Depends on
 
-This node has no prerequisites.
+- [CNF](../basic/cnf.md)
+
+## Proof depends on
+
+- [CNFClause](../basic/cnfclause.md)
+- [Restrict](restrict.md)
 
 ## Sources
 

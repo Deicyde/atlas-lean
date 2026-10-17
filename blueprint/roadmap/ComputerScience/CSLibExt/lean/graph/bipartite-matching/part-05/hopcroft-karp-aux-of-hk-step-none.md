@@ -12,7 +12,8 @@ With no phase to run, the matching is maximum and `hopcroftKarpAux` returns it.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hk Step](../part-03/hk-step.md)
+- [Hopcroft Karp Aux](../part-03/hopcroft-karp-aux.md)
 
 ## Sources
 

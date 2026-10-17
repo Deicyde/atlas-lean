@@ -12,7 +12,7 @@ Characteristic example: every nonzero single digit is a repdigit.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Repdigit](is-repdigit.md)
 
 ## Sources
 

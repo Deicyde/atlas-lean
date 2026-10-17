@@ -13,7 +13,15 @@ acceptance probability under the uniform complete-history law.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Freivalds Repeat Law](freivalds-repeat-law.md)
+- [Freivalds Trial Law](../probability/freivalds-trial-law.md)
+
+## Proof depends on
+
+- [Freivalds Repeat](../repeat/freivalds-repeat.md)
+- [Freivalds Repeat acceptance Card](freivalds-repeat-acceptance-card.md)
+- [Freivalds Trial](../basic/freivalds-trial.md)
+- [Freivalds Trial Law acceptance](../probability/freivalds-trial-law-acceptance.md)
 
 ## Sources
 

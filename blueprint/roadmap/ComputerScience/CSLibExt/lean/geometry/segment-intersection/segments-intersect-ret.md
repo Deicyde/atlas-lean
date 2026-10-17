@@ -12,7 +12,14 @@ The test as a Boolean formula.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Straddles](straddles.md)
+- [Direction](direction.md)
+- [On Segment](on-segment.md)
+- [Segments Intersect](segments-intersect.md)
+
+## Proof depends on
+
+- [Collinear Branch](collinear-branch.md)
 
 ## Sources
 

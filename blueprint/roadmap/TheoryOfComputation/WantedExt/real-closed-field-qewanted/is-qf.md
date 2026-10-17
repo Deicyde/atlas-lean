@@ -11,7 +11,11 @@ A formula is quantifier free if it contains no `Formula.all`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formula](formula.md)
+
+## Proof depends on
+
+- [Term](term.md)
 
 ## Sources
 

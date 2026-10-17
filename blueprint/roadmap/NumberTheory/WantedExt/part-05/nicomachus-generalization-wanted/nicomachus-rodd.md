@@ -13,6 +13,10 @@ lean: MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusROdd
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Nicomachus Triangular](nicomachus-triangular.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.NicomachusGeneralizationWanted](../../../../../sources/v2/WantedExt.md)

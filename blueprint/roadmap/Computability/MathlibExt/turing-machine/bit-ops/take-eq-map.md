@@ -12,7 +12,7 @@ The symbols of a bit block are recovered from its bits by `g`, if `g` inverts th
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bit Block](is-bit-block.md)
 
 ## Sources
 

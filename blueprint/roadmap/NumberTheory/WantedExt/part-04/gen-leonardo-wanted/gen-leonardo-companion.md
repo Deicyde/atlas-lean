@@ -18,6 +18,10 @@ with the paper's value table (checked for `k = 1` to `n = 14`).
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Gen Leonardo](gen-leonardo.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.GenLeonardoWanted](../../../../../sources/v2/WantedExt.md)

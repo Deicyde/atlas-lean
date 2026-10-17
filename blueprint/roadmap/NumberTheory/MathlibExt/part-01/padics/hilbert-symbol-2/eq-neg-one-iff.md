@@ -11,12 +11,7 @@ solvable.
 
 ## Depends on
 
-- [Padic Hilbert Symbol](padic-hilbert-symbol.md)
-
-## Proof depends on
-
-- [Is Solvable](is-solvable.md)
-- [Hilbert Symbol](hilbert-symbol.md)
+This node has no prerequisites.
 
 ## Sources
 

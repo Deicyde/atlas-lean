@@ -13,6 +13,10 @@ The finite matrix `U_α(n)`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [U Entry](u-entry.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Combinatorics.Enumerative.StirlingMatrixWanted](../../../../../../../sources/v2/WantedExt.md)

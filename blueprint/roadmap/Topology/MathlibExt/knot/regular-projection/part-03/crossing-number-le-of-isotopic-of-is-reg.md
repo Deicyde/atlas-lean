@@ -13,7 +13,11 @@ crossing number of the type.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Parametrized Link](../../euclidean-link/part-01/parametrized-link.md)
+- [Is Regular Projection](../part-02/is-regular-projection.md)
+- [Isotopic](../../euclidean-link/part-01/isotopic-2.md)
+- [Crossing Count](../part-02/crossing-count.md)
+- [Crossing Number](crossing-number.md)
 
 ## Sources
 

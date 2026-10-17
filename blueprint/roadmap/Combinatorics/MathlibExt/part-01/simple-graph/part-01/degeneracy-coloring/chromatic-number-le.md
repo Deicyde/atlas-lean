@@ -12,7 +12,11 @@ The chromatic number of a `k`-degenerate finite graph is at most `k + 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Degenerate](../degeneracy/is-degenerate.md)
+
+## Proof depends on
+
+- [Colorable](colorable.md)
 
 ## Sources
 

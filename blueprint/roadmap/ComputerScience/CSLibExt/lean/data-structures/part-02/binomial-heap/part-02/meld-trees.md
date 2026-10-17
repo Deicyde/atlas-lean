@@ -14,6 +14,12 @@ Merge two increasing-rank forests, linking equal-rank trees and propagating carr
 
 - [Binomial Tree](../part-01/binomial-tree.md)
 
+## Proof depends on
+
+- [Carry](carry.md)
+- [Link](../part-01/link.md)
+- [Rank](../part-01/rank.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BinomialHeap](../../../../../../../../sources/v2/CSLibExt.md)

@@ -13,7 +13,14 @@ under every valuation that reads `⊥` as false and satisfies `T` is `T`-derivab
 
 ## Depends on
 
-This node has no prerequisites.
+- [Eval Bool](../semantics/eval-bool.md)
+
+## Proof depends on
+
+- [Bool Satisfiable](bool-satisfiable.md)
+- [Eval Bool neg](../semantics/eval-bool-neg.md)
+- [Consistent With](consistent-with.md)
+- [Model existence](bool-satisfiable-2.md)
 
 ## Sources
 

@@ -14,7 +14,13 @@ bases `1, …, n - 1`, so one uniformly random base fails to expose `n` with pro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonwitnesses](nonwitnesses.md)
+
+## Proof depends on
+
+- [Card nonwitnesses le quarter of carmichael](card-nonwitnesses-le-quarter-of-carmicha.md)
+- [Card nonwitnesses le quarter of pow ne one](card-nonwitnesses-le-quarter-of-pow-ne-o.md)
+- [Card nonwitnesses le quarter of prime pow](card-nonwitnesses-le-quarter-of-prime-po.md)
 
 ## Sources
 

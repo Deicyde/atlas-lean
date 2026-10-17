@@ -12,10 +12,6 @@ Newton polygon: convex hull of the Newton support.
 
 This node has no prerequisites.
 
-## Proof depends on
-
-- [Newton Support](newton-support.md)
-
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Convex.NewtonPolygon](../../../../../../sources/v2/MathlibExt.md)

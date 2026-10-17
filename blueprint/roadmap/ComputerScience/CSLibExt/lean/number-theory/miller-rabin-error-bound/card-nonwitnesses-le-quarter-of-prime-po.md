@@ -15,7 +15,12 @@ coprime exponents.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonwitnesses](nonwitnesses.md)
+
+## Proof depends on
+
+- [Coprime of witness eq false](coprime-of-witness-eq-false.md)
+- [Witness](../miller-rabin/witness.md)
 
 ## Sources
 

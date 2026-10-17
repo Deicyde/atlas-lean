@@ -15,6 +15,10 @@ and `0` at `n = 0`.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Complexity](../../../MathlibExt/part-07/integer-complexity/complexity.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.NumberTheory.IntegerComplexityWanted](../../../../../sources/v2/WantedExt.md)
