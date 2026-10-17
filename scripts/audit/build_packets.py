@@ -101,12 +101,15 @@ def mark_statement_edges(packets: list[dict], index_path: Path) -> None:
     for packet in packets:
         header = packet.get("signature", "").split(":=", 1)[0]
         own = {part.strip() for part in packet["lean"].split(",")}
+        # The signature starts with the declaration's own name, which can
+        # coincide with an unrelated article's short name.
+        own_short = {name.rsplit(".", 1)[-1] for name in own}
         linked = {item["path"] for item in packet["depends_on"] + packet["proof_depends_on"]}
         mentioned = {}
         for token in set(IDENTIFIER.findall(header)):
             token = token.strip(".")
             # Short tokens are almost always bound variables or universes.
-            if len(token.rsplit(".", 1)[-1]) < 4:
+            if len(token.rsplit(".", 1)[-1]) < 4 or token.rsplit(".", 1)[-1] in own_short:
                 continue
             for candidate in by_last.get(token.rsplit(".", 1)[-1], []):
                 if candidate["lean"] in own:

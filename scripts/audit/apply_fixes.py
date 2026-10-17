@@ -60,6 +60,7 @@ def main() -> int:
     ledger, skipped = [], []
     for result in results:
         fixes = accepted(result)
+        claims = {c["article_id"]: c for c in (result.get("claims") or {}).get("claims", [])}
         for node in (result.get("audit") or {}).get("nodes", []):
             packet = packets.get(node["article_id"])
             if packet is None:
@@ -91,6 +92,7 @@ def main() -> int:
                     "status_ok": node["status_ok"],
                     "fix_kind": node["fix"]["kind"],
                     "applied": applied,
+                    "claim_confirmed": claims.get(node["article_id"], {}).get("confirmed"),
                     "findings": node["findings"],
                 }
             )

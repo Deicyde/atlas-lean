@@ -5,7 +5,9 @@
 
 For every batch from make_batches.py, one agent audits the articles against
 AUDIT.md, an independent agent tries to refute each proposed fix, and fixes
-the verifier corrected get a second verification. Agents may only read: the
+the verifier corrected get a second verification. Claims that a Lean
+statement is defective or that a status overstates Lean get their own
+checker, because they turn into upstream issues and status changes. Agents may only read: the
 tool list has no editor, and Bash is limited to read-only commands. Each step
 writes OUT_DIR/<batch>.<step>.json, so a rerun resumes where the last one
 stopped; OUT_DIR/results.json collects every batch for apply_fixes.py.
@@ -150,6 +152,51 @@ Proposed fixes:
 {json.dumps(fixes, indent=1, ensure_ascii=False)}"""
 
 
+CLAIMS_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "claims": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "article_id": {"type": "string"},
+                    "confirmed": {"type": "boolean"},
+                    "reason": {"type": "string"},
+                },
+                "required": ["article_id", "confirmed", "reason"],
+            },
+        }
+    },
+    "required": ["claims"],
+}
+
+
+def claims_prompt(repo: Path, batch: dict, nodes: list[dict]) -> str:
+    ids = {node["article_id"] for node in nodes}
+    packets = [packet for packet in batch["packets"] if packet["article_id"] in ids]
+    claims = [
+        {"article_id": node["article_id"], "article": node["article"], "lean_says": node["lean_says"],
+         "status_ok": node["status_ok"], "fix": node["fix"], "findings": node["findings"]}
+        for node in nodes
+    ]
+    return f"""You are an independent checker of claims that Lean declarations behind Atlas wiki articles are defective. The Lean library is in {repo}.
+Read {AUDIT_DIR}/AUDIT.md first.
+
+{RESOURCE_LIMITS}
+
+Additional rules: do not try to modify any file, and do not run lean, lake or pytest at all.
+
+An earlier auditor claimed, for each article below, that the Lean statement does not say what the article or its source says (fix kind needs-lean-change), or that the article's formalized status overstates what Lean proves (status_ok false). Such claims become upstream issues and status changes, so a wrong one is costly. Try to refute each claim: read the declaration (lean_file:lean_line), every definition and structure it depends on, and the cited source statement, and check every step of the auditor's argument (for an "uninhabited hypothesis" claim, check that the construction really typechecks against the actual structure fields). Confirm a claim only when you have checked it against the Lean source yourself; if you cannot confirm it, set confirmed to false and say why.
+Return one entry per claim, with its article_id.
+
+Articles and their packets:
+{json.dumps(packets, indent=1, ensure_ascii=False)}
+
+Claims:
+{json.dumps(claims, indent=1, ensure_ascii=False)}"""
+
+
 def run_agent(prompt: str, schema: dict, log: Path, model: str, effort: str, check=None) -> dict:
     """One `claude -p` agent with structured output; a failed parse or check is retried once."""
     command = [
@@ -248,6 +295,15 @@ def run_batch(repo: Path, out: Path, batch: dict, model: str, effort: str, lock:
             say(f"re-verifying {len(corrected)} corrected fixes")
             record["reverify"] = step(out, name, "reverify", lambda path: run_agent(
                 verify_prompt(repo, batch, corrected, True), VERIFY_SCHEMA, path, model, effort))
+    disputed = [
+        node for node in audit["nodes"]
+        if node.get("fix", {}).get("kind") == "needs-lean-change" or not node.get("status_ok", True)
+    ]
+    record["claims"] = None
+    if disputed:
+        say(f"checking {len(disputed)} defect claims")
+        record["claims"] = step(out, name, "claims", lambda path: run_agent(
+            claims_prompt(repo, batch, disputed), CLAIMS_SCHEMA, path, model, effort))
     say("done")
     return record
 
