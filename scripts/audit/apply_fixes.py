@@ -40,8 +40,11 @@ def accepted(result: dict) -> dict[str, dict]:
 def docstring_problem(text: str) -> str | None:
     if not text.startswith("/--") or not text.rstrip().endswith("-/"):
         return "not a /-- ... -/ docstring"
-    if "-/" in text.rstrip()[:-2]:
+    body = text.rstrip()[3:-2]
+    if "-/" in body:
         return "contains -/ before the end"
+    if "/-" in body:
+        return "contains /-, which opens a nested comment"
     if any(len(line) > MAX_COLUMNS for line in text.splitlines()):
         return f"a line exceeds {MAX_COLUMNS} columns"
     return None

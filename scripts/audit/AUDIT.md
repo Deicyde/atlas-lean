@@ -62,6 +62,9 @@ at least 4, status passes, and source fidelity is not 2 or below.
 
 ## Fixes
 
+A clean node gets `none`. Do not rewrite text that already passes every check;
+a wording preference is not a defect, and every rewrite costs an upstream review.
+
 - **v2 docstring.** Propose the complete replacement docstring:
   1. Start with `**Title.**` and continue with the statement in the same
      paragraph.
@@ -73,8 +76,9 @@ at least 4, status passes, and source fidelity is not 2 or below.
   4. A mathematical remark the old statement carried (for example "checked on
      actual values, not as a polynomial identity") may stay as its own
      paragraph.
-  5. No `-/` inside, lines at most 100 columns, `/--` and `-/` placement as in
-     the surrounding file.
+  5. No `-/` or `/-` inside (Lean comments nest, so a stray `/-` swallows the
+     rest of the file), lines at most 100 columns, `/--` and `-/` placement as
+     in the surrounding file.
 - **v1 override.** `{title, statement}` for the article; the statement changes
   only to fix TeX or an error against the textbook passage the report quotes.
 - **needs-lean-change.** Lean does not match its source. Do not edit Lean;
