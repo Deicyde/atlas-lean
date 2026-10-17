@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, "ci-probe/**"]
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review, converted_to_draft]
   merge_group:
@@ -104,6 +104,28 @@ jobs:
 
       - name: Build extension libraries
         run: scripts/check.sh build
+
+      # Fork-only probe: import every module together, dropping each module that
+      # collides, so one run lists every collision instead of only the first.
+      - name: Probe every import collision
+        if: always()
+        run: |
+          set +e
+          check=$(mktemp --suffix=.lean)
+          for library in CSLibExt CSLibExtTest MathlibExt MathlibExtTest WantedExt; do
+            find "$library" -type f -name '*.lean' | LC_ALL=C sort |
+              sed 's/\.lean$//; s#/#.#g; s/^/import /'
+          done > "$check"
+          echo "importing $(wc -l < "$check") modules"
+          for attempt in $(seq 1 40); do
+            out=$(lake env lean "$check" 2>&1)
+            if [ $? -eq 0 ]; then echo "PROBE: every remaining module imports together"; break; fi
+            line=$(printf '%s\n' "$out" | grep -m1 'already contains')
+            if [ -z "$line" ]; then printf '%s\n' "$out" | head -20; break; fi
+            echo "PROBE COLLISION: $line"
+            module=$(printf '%s\n' "$line" | grep -oE "import [A-Za-z0-9_.']+ failed" | awk '{print $2}')
+            grep -vxF "import $module" "$check" > "$check.next" && mv "$check.next" "$check"
+          done
 
       - name: Save local build from main
         if: success() && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main' && steps.local-build-cache.outputs.cache-hit != 'true'
