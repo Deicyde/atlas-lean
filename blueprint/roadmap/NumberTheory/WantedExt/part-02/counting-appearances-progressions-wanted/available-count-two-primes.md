@@ -13,7 +13,8 @@ any residue classes, the number of available integers in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Available Count](available-count.md)
+- [Ones Diag Det](ones-diag-det.md)
 
 ## Sources
 

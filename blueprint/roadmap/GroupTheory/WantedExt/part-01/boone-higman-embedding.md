@@ -12,7 +12,7 @@ Source: W. W. Boone & G. Higman, *An algebraic characterization of groups with s
 
 ## Depends on
 
-This node has no prerequisites.
+- [Word Problem Solvable Shared](../part-02/word-problem-solvable.md)
 
 ## Sources
 

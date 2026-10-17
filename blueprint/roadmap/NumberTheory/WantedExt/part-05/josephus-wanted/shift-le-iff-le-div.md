@@ -15,7 +15,7 @@ least `1` when `n ≥ k - 2 + j`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 
 ## Sources
 

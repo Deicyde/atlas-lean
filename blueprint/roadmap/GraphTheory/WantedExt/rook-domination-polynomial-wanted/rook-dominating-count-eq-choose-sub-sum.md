@@ -13,7 +13,8 @@ and columns form a smaller covered board.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rook Cover Count](rook-cover-count.md)
+- [Rook Dominating Count](rook-dominating-count.md)
 
 ## Sources
 

@@ -16,7 +16,7 @@ dimensions, arXiv:2507.19841 (2025), https://arxiv.org/abs/2507.19841. Moved fro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

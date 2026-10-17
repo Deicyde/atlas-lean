@@ -12,7 +12,8 @@ Source: D. Harvey and J. van der Hoeven, `Integer multiplication in time O(n log
 
 ## Depends on
 
-This node has no prerequisites.
+- [Encode Nat Binary](encode-nat-binary.md)
+- [Encode Prod](encode-prod.md)
 
 ## Sources
 

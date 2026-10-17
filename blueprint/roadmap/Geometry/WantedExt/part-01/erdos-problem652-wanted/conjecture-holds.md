@@ -17,7 +17,7 @@ https://arxiv.org/abs/1912.01883. Moved from `OpenConjectures/Geometry/ErdosProb
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

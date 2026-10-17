@@ -14,7 +14,7 @@ F_{n+1}` (printed with a factor `1/5`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Step](../part-01/fib-step.md)
 
 ## Sources
 

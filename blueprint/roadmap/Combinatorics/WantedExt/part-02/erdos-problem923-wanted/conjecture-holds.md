@@ -14,7 +14,7 @@ Moved from `OpenConjectures/Combinatorics/ErdosProblem923`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

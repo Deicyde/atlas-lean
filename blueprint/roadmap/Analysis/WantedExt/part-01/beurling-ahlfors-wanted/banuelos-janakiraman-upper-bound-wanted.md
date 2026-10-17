@@ -19,7 +19,8 @@ Known literature result; its proof is not supplied here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bound](../../../MathlibExt/part-02/beurling-ahlfors/is-bound.md)
+- [Pstar](../../../MathlibExt/part-02/beurling-ahlfors/pstar.md)
 
 ## Sources
 

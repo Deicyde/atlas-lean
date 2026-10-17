@@ -6,14 +6,17 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.DualMatrixMultiplicationBoundsWanted.williamsXuXuZhou2024StrictLower
 ---
 
-# Williams Xu Xu Zhou2024 Strict Lower
+# Williams–Xu–Xu–Zhou bound on the dual exponent
 
-Source: C15b/WXXZ2024 introduction, the best displayed lower bound is strict.
+**Williams–Xu–Xu–Zhou bound on the dual exponent.** For every field $F$, the dual matrix
+multiplication exponent $\alpha(F)$ of the arithmetic-circuit model satisfies
+$\alpha(F) > 0.321334$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dual Circuit Exponent](../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/dual-circuit-exponent.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.Algebraic.DualMatrixMultiplicationBoundsWanted](../../../../../sources/v2/WantedExt.md)
+- C15b/WXXZ2024 introduction, the best displayed lower bound is strict.

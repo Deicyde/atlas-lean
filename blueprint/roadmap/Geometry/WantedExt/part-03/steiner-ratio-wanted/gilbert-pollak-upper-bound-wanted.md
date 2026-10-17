@@ -14,7 +14,7 @@ result; the triangle computation is not supplied here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Steiner Ratio Constant](../../../MathlibExt/steiner-ratio/steiner-ratio-constant.md)
 
 ## Sources
 

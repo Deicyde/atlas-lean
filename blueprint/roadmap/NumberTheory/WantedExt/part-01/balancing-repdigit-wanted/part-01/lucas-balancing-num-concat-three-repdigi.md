@@ -11,7 +11,8 @@ The only Lucas-balancing number that is a concatenation of three repdigits is `3
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Concat Three Repdigits](is-concat-three-repdigits.md)
+- [Lucas Balancing Num](lucas-balancing-num.md)
 
 ## Sources
 

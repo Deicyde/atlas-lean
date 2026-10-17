@@ -11,7 +11,10 @@ Source: https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobian](jacobian.md)
+- [Degree](degree.md)
+- [Pullback](pullback.md)
+- [Pushforward](pushforward.md)
 
 ## Sources
 

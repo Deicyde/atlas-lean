@@ -12,7 +12,7 @@ lean: MathlibExt.Combinatorics.Enumerative.NColorCompositionsWanted.trib_eq_add_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trib](../part-01/trib.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ https://doi.org/10.1002/jgt.3190180406. Moved from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

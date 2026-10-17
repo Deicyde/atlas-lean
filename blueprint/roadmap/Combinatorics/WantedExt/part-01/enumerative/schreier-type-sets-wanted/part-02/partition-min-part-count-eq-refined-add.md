@@ -12,7 +12,8 @@ lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.partitionMinPa
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Min Part Count](../part-01/partition-min-part-count.md)
+- [Refined Schreier Count](refined-schreier-count.md)
 
 ## Sources
 

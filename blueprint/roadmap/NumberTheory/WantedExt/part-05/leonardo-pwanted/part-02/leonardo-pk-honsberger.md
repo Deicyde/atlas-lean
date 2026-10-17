@@ -20,7 +20,8 @@ where the paper's values at negative arguments in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Leonardo PK](../part-01/leonardo-pk.md)
+- [Leonardo PKZ](leonardo-pkz.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Source: catalogue C19a, the asymptotic normalized Bernoulli lower-row clause.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Esseen Bernoulli Asymptotic Lower Bound](../part-01/esseen-bernoulli-asymptotic-lower-bound.md)
 
 ## Sources
 

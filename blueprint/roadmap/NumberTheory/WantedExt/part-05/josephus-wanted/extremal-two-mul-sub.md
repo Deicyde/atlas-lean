@@ -15,7 +15,9 @@ point and `2k - 1` is low extremal.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is High Extremal](is-high-extremal.md)
+- [Is Low Extremal](is-low-extremal.md)
+- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 
 ## Sources
 

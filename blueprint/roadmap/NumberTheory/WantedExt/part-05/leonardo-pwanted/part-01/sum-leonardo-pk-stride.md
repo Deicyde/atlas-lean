@@ -14,7 +14,7 @@ lean: MathlibExt.NumberTheory.LeonardoPWanted.sum_leonardoPK_stride
 
 ## Depends on
 
-This node has no prerequisites.
+- [Leonardo PK](leonardo-pk.md)
 
 ## Sources
 

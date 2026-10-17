@@ -13,7 +13,11 @@ Singletons are increasing subsequences.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Incr Subseq](is-incr-subseq.md)
+
+## Proof depends on
+
+- [Fin1 false](fin1-false.md)
 
 ## Sources
 

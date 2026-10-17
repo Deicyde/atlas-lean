@@ -13,7 +13,7 @@ An increasing subsequence truncates to any shorter length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Incr Subseq](../part-01/is-incr-subseq.md)
 
 ## Sources
 

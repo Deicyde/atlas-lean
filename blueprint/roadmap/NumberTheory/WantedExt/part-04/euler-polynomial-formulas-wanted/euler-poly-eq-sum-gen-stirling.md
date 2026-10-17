@@ -12,7 +12,9 @@ lean: MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPoly_eq_sum_gen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Alpha](euler-alpha.md)
+- [Euler Poly](euler-poly.md)
+- [Gen Stirling Poly](gen-stirling-poly.md)
 
 ## Sources
 

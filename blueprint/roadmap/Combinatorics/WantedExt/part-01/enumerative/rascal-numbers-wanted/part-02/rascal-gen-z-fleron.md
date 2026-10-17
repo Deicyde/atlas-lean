@@ -15,7 +15,7 @@ of range handling the boundary values.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rascal Gen Z](../part-01/rascal-gen-z.md)
 
 ## Sources
 

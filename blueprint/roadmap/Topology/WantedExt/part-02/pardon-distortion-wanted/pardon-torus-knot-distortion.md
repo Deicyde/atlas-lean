@@ -11,7 +11,11 @@ Source: John Pardon, 'On the distortion of knots on embedded surfaces', Annals o
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ambient Isotopy](../../part-01/conway-knot-shared/part-01/ambient-isotopy.md)
+- [Knot](../../part-01/conway-knot-shared/part-01/knot.md)
+- [R3](../../part-01/conway-knot-shared/part-01/r3.md)
+- [Distortion](distortion.md)
+- [Standard Torus Curve](standard-torus-curve.md)
 
 ## Sources
 

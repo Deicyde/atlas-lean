@@ -12,7 +12,11 @@ Source: T. Fang and B. Xia, 'Tiling the symmetric group by transpositions', Bull
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Partition Transitive](is-partition-transitive.md)
+- [Is Tiling](is-tiling.md)
+- [Partition Shape](partition-shape.md)
+- [Content Sum](content-sum.md)
+- [Transpositions With One](transpositions-with-one.md)
 
 ## Sources
 

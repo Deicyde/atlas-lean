@@ -13,7 +13,7 @@ Nonroots execute the recursive source call, then one carried-record parent assig
 
 ## Depends on
 
-This node has no prerequisites.
+- [Counted Aux](counted-aux.md)
 
 ## Sources
 

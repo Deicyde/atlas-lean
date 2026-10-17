@@ -12,7 +12,7 @@ Source: Optimization Problems, constant 13a, closed claim `upperBoundGerriets197
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Bound Gerriets1972](../part-01/upper-bound-gerriets1972.md)
 
 ## Sources
 

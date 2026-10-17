@@ -15,7 +15,9 @@ Then `G` is a coherent group and the group algebra `K[G]` is a coherent ring.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Coherent](coherent.md)
+- [A group `G` is called one-relator if it has a presentation...](a-group-g-is-called-one-relator-if-it-ha.md)
+- [Coherent](coherent-2.md)
 
 ## Sources
 

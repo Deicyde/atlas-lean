@@ -12,7 +12,7 @@ Source: A. N. Kolmogorov (1954); V. I. Arnold (1963); J. Moser, *On invariant cu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Diophantine](is-diophantine.md)
 
 ## Sources
 

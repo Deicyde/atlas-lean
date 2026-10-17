@@ -13,7 +13,7 @@ with `0 ≤ r ≤ m`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gini Simpson Count](gini-simpson-count.md)
 
 ## Sources
 

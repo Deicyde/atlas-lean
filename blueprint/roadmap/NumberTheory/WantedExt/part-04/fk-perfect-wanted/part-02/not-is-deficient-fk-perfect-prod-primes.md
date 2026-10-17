@@ -12,7 +12,7 @@ deficient `F_k`-perfect (for `k > 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Deficient Fk Perfect](../part-01/is-deficient-fk-perfect.md)
 
 ## Sources
 

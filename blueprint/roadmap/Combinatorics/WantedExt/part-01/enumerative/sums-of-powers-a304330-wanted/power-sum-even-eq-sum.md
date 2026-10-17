@@ -13,7 +13,8 @@ for `k ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Array R](array-r.md)
+- [Power Sum](power-sum.md)
 
 ## Sources
 

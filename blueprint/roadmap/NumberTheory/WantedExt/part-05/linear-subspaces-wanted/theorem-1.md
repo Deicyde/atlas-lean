@@ -14,7 +14,7 @@ For all `l`-dimensional subspaces `x ≤ ℝᵈ` and all `k ∈ {1,...,l}`, we h
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diophantine Exponent](diophantine-exponent.md)
 
 ## Sources
 

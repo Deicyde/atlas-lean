@@ -13,7 +13,12 @@ A finite per-call rank-gap bound, not a logarithmic or amortized alpha bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Counted Aux](counted-aux.md)
+
+## Proof depends on
+
+- [Counted Aux time root](counted-aux-time-root.md)
+- [Counted Aux time step](counted-aux-time-step.md)
 
 ## Sources
 

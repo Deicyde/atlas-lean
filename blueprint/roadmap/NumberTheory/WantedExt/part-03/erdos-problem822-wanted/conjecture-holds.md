@@ -14,7 +14,7 @@ Gabdullin, V. V. Iudelevich, and F. Luca, Numbers of the form k + f(k), Journal 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ prime divisor congruent to `3` modulo `4`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sylvester Number](sylvester-number.md)
 
 ## Sources
 

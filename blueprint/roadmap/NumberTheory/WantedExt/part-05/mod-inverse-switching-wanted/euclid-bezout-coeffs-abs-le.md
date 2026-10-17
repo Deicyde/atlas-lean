@@ -13,7 +13,7 @@ coefficient least in absolute value among all Bézout pairs.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Euclid Switch Seq](is-euclid-switch-seq.md)
 
 ## Sources
 

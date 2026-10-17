@@ -13,7 +13,7 @@ Source: Optimization Problems, constant 13a, closed claim
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Bound Khandhawit Sriswasdi2009](../part-01/lower-bound-khandhawit-sriswasdi2009.md)
 
 ## Sources
 

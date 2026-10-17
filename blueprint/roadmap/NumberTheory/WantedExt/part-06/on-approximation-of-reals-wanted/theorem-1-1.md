@@ -14,7 +14,7 @@ Let `n` be an integer such that `n â‰¥ 2`. For any transcendental real number `Î
 
 ## Depends on
 
-This node has no prerequisites.
+- [Classical Exponent](classical-exponent.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ Source: V. A. Rokhlin, *A general measure-preserving transformation is not mixin
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Aperiodic](is-aperiodic.md)
+- [Is Rokhlin Tower](is-rokhlin-tower.md)
+- [Tower Union](tower-union.md)
 
 ## Sources
 

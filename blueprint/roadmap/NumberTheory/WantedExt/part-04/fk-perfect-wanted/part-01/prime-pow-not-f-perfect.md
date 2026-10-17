@@ -12,7 +12,8 @@ lean: MathlibExt.NumberTheory.FkPerfectWanted.prime_pow_not_fPerfect
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Deficient FPerfect](is-deficient-fperfect.md)
+- [Is Near FPerfect](is-near-fperfect.md)
 
 ## Sources
 

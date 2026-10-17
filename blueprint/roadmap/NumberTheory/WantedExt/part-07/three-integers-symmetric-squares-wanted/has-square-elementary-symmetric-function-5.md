@@ -11,7 +11,7 @@ lean: MathlibExt.NumberTheory.ThreeIntegersSymmetricSquaresWanted.hasSquareEleme
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Square Elementary Symmetric Functions](has-square-elementary-symmetric-function.md)
 
 ## Sources
 

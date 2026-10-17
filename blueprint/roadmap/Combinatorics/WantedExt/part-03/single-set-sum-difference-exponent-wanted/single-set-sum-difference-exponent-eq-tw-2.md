@@ -17,7 +17,7 @@ https://arxiv.org/abs/2607.27199v1. Moved from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Single Set Sum Difference Exponent eq two](single-set-sum-difference-exponent-eq-tw.md)
 
 ## Sources
 

@@ -6,14 +6,17 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.DualMatrixMultiplicationBoundsWanted.leGall2012StrictLower
 ---
 
-# Le Gall2012 Strict Lower
+# Le Gall's 2012 bound on the dual exponent
 
-Source: C15b/LG2012 abstract, Le Gall's 2012 improvement is strict.
+**Le Gall's 2012 bound on the dual exponent.** For every field $F$, the dual matrix
+multiplication exponent $\alpha(F)$ of the arithmetic-circuit model satisfies
+$\alpha(F) > 0.30298$.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dual Circuit Exponent](../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/dual-circuit-exponent.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.Algebraic.DualMatrixMultiplicationBoundsWanted](../../../../../sources/v2/WantedExt.md)
+- C15b/LG2012 abstract, Le Gall's 2012 improvement is strict.

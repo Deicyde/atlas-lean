@@ -17,7 +17,8 @@ The maximum number `N_α(d)` of equiangular lines in `ℝᵈ` with common angle 
 
 ## Depends on
 
-This node has no prerequisites.
+- [N](n.md)
+- [Spectral Radius Order](spectral-radius-order.md)
 
 ## Sources
 

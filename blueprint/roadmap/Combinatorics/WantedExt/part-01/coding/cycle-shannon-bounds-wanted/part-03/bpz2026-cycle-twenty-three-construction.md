@@ -11,7 +11,9 @@ Source: BPZ, arXiv:2607.29681, twenty-three-cycle construction in dimension 2048
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Cycle Code](../../../../../MathlibExt/part-01/coding/cycle-code/is-cycle-code.md)
+- [BPZProfile](../part-01/bpzprofile.md)
+- [Bpz C23 Pi512](bpz-c23-pi512.md)
 
 ## Sources
 

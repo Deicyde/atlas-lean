@@ -12,7 +12,7 @@ Source: Radius-half disk lower-bound row, optimization catalogue constant 13b.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trivial Unit Disk Lower Bound](../part-01/trivial-unit-disk-lower-bound.md)
 
 ## Sources
 

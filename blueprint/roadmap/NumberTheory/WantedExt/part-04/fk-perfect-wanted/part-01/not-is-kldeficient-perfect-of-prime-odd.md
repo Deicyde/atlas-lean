@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.FkPerfectWanted.not_isKLDeficientPerfect_of_prime_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KLDeficient Perfect](is-kldeficient-perfect.md)
 
 ## Sources
 

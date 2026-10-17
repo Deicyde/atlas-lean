@@ -12,7 +12,9 @@ Source: Jean Gallier & Dianna Xu, *A Guide to the Classification Theorem for Com
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closed Unit Disc](closed-unit-disc.md)
+- [Non Orientable Rel](non-orientable-rel.md)
+- [Orientable Rel](orientable-rel.md)
 
 ## Sources
 

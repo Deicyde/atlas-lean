@@ -12,7 +12,7 @@ always super-m-Zumkeller.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Super MZumkeller](is-super-mzumkeller.md)
 
 ## Sources
 

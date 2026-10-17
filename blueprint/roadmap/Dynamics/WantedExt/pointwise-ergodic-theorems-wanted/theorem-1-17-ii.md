@@ -14,7 +14,7 @@ The averages `A T N X P f g` converge as `N → ∞` pointwise almost everywhere
 
 ## Depends on
 
-This node has no prerequisites.
+- [A](a.md)
 
 ## Sources
 

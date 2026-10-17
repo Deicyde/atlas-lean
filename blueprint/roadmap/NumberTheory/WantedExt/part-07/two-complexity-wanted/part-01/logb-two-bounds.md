@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.TwoComplexityWanted.logb_two_bounds
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complexity L](complexity-l.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ a product of irreducible polynomials, each appearing to the power of its own
 
 ## Depends on
 
-This node has no prerequisites.
+- [Group Determinant](group-determinant.md)
 
 ## Sources
 

@@ -12,7 +12,9 @@ Directional illumination equals covering by actual translates of the interior.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Convex Body](../../../../MathlibExt/convex/covering/is-convex-body.md)
+- [Directional Illumination Number](../../../../MathlibExt/convex/illumination/directional-illumination-number.md)
+- [Translate Covering Number](../../../../MathlibExt/convex/covering/translate-covering-number.md)
 
 ## Sources
 

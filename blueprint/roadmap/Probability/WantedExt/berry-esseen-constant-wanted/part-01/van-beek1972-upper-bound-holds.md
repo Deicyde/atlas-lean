@@ -12,7 +12,7 @@ Source: catalogue C19a, vB1972 upper row.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Van Beek1972 Upper Bound](van-beek1972-upper-bound.md)
 
 ## Sources
 

@@ -11,7 +11,8 @@ lean: MathlibExt.Topology.MaciasCoprimeTopologyWanted.dense_primeSet₁
 
 ## Depends on
 
-This node has no prerequisites.
+- [Macias Topology₁](macias-topology-2.md)
+- [Prime Set₁](prime-set-2.md)
 
 ## Sources
 

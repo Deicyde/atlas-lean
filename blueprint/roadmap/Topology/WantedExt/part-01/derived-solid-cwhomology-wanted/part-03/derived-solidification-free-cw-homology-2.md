@@ -11,7 +11,16 @@ Source: https://github.com/dagurtomas/LeanCondensed (LeanCondensed/Projects/Deri
 
 ## Depends on
 
-This node has no prerequisites.
+- [P](../part-01/p.md)
+- [P retract](../part-01/p-retract.md)
+- [Solid](../part-01/solid.md)
+- [DLight Cond Ab](../part-01/dlight-cond-ab.md)
+- [DSolid](../part-01/dsolid.md)
+- [Derived Solidification](../part-02/derived-solidification.md)
+- [Free Light Cond Ab Of Top](../part-02/free-light-cond-ab-of-top.md)
+- [Singular Homology Light Cond Ab](../part-02/singular-homology-light-cond-ab.md)
+- [Is Solid](../part-01/is-solid.md)
+- [One Minus Shift](../part-01/one-minus-shift-2.md)
 
 ## Sources
 

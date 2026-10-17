@@ -13,7 +13,7 @@ Known literature result; its proof and certificate are not supplied here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lueker Lower Bound](../part-02/lueker-lower-bound.md)
 
 ## Sources
 

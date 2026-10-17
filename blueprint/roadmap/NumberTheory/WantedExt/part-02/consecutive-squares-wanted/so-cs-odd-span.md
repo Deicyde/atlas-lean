@@ -16,7 +16,7 @@ plane is unique for each `N`; that uniqueness clause is not encoded here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is So CSSolution](is-so-cssolution.md)
 
 ## Sources
 

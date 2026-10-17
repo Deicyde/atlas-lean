@@ -12,7 +12,7 @@ Source: W. Hurewicz (1935); see Hatcher, *Algebraic Topology*, Theorem 2A.1. Kni
 
 ## Depends on
 
-This node has no prerequisites.
+- [Integral Homology](integral-homology.md)
 
 ## Sources
 

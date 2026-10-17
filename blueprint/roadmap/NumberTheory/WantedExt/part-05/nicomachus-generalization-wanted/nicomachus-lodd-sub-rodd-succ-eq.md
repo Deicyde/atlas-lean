@@ -12,7 +12,9 @@ x·P_{m,o}(x) - x² + x³` for `m ≥ 2` (Equation (7)).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nicomachus LOdd](nicomachus-lodd.md)
+- [Nicomachus POdd](nicomachus-podd.md)
+- [Nicomachus ROdd](nicomachus-rodd.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ Source: H. Weyl, The Classical Groups, 1939; I. Schur, Über die rationalen Dars
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gl Action](gl-action.md)
+- [Sym Action](sym-action.md)
 
 ## Sources
 

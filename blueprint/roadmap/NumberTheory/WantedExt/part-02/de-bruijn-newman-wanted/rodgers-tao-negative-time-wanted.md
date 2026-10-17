@@ -14,7 +14,7 @@ not supplied here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeros All Real](../../../MathlibExt/part-04/de-bruijn-newman/zeros-all-real.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.FkPerfectWanted.not_isKLNearPerfect_two_two_pow_mu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KLNear Perfect](../part-01/is-klnear-perfect.md)
 
 ## Sources
 

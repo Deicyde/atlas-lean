@@ -12,7 +12,7 @@ Source: P. Lévy, Sur la convergence absolue des séries de Fourier, Compositio 
 
 ## Depends on
 
-This node has no prerequisites.
+- [In Wiener Algebra](in-wiener-algebra.md)
 
 ## Sources
 

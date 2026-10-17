@@ -12,7 +12,9 @@ Finite illumination and smaller positive homothet covering counts agree.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Covered By Smaller Positive Homothets](../../../../MathlibExt/convex/covering/covered-by-smaller-positive-homothets.md)
+- [Illuminated By Directions](../../../../MathlibExt/convex/illumination/illuminated-by-directions.md)
+- [Is Convex Body](../../../../MathlibExt/convex/covering/is-convex-body.md)
 
 ## Sources
 

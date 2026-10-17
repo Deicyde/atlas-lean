@@ -13,7 +13,7 @@ Lemma B.1 (an epsilon-light subset of size at least eps*n/42 exists in every wei
 
 ## Depends on
 
-This node has no prerequisites.
+- [Epsilon Light Subset Exists](epsilon-light-subset-exists.md)
 
 ## Sources
 

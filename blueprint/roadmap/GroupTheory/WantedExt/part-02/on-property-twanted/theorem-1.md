@@ -14,7 +14,7 @@ Statement of Theorem 1:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Property T](property-t.md)
 
 ## Sources
 

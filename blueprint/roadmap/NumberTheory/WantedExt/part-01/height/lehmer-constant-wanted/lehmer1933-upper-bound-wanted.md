@@ -13,7 +13,7 @@ decimal place.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lehmer's constant](../../../../MathlibExt/part-01/height/lehmer-constant/lehmer-constant.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ Here `False` is encoded as `Π (P : Prop). P`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Srt](srt.md)
+- [Tm](tm.md)
+- [Typing](typing.md)
 
 ## Sources
 

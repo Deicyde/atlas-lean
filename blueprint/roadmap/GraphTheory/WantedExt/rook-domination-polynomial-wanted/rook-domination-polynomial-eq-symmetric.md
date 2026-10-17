@@ -12,7 +12,7 @@ domination polynomial.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rook Domination Polynomial](rook-domination-polynomial.md)
 
 ## Sources
 

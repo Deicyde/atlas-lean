@@ -13,7 +13,8 @@ is `F_k(p_1, …, p_k)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bordered Ones Diag Det](bordered-ones-diag-det.md)
+- [Free Count](free-count.md)
 
 ## Sources
 

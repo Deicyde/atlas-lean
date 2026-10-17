@@ -11,7 +11,7 @@ Liao's simplified argument gives exponent `11`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Liao2024 Simplified Upper Bound11](liao2024-simplified-upper-bound11.md)
 
 ## Sources
 

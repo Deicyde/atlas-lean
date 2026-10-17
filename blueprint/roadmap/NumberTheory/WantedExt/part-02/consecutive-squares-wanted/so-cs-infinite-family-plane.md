@@ -13,7 +13,8 @@ integer solutions of the SoCS equation, all lying in the plane
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is So CSSolution](is-so-cssolution.md)
+- [So CSEq](so-cseq.md)
 
 ## Sources
 

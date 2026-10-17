@@ -12,7 +12,7 @@ Source: Optimization Problems, constant 13a, closed claim `halfSemidiskCovers`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Half Semidisk Covers](../part-01/half-semidisk-covers.md)
 
 ## Sources
 

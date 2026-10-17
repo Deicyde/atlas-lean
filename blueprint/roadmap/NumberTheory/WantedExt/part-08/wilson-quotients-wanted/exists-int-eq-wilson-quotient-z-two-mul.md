@@ -12,7 +12,7 @@ Morozov's Theorem 4: the integer value of `Z(2n - 1)` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wilson Quotient Z](wilson-quotient-z.md)
 
 ## Sources
 

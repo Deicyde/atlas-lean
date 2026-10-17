@@ -12,7 +12,7 @@ Klartag's first bound, in the weaker form tabulated by the optimization catalogu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Thin Shell Width](../../MathlibExt/part-01/geometry/thin-shell/thin-shell-width.md)
 
 ## Sources
 

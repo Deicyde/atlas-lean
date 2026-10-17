@@ -11,7 +11,7 @@ Source: Baumert--McEliece--Rodemich--Rumsey--Stanley--Taylor (1971), exact rate 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shannon Capacity Cycle](../../../../../MathlibExt/part-01/coding/cycle-code/shannon-capacity-cycle.md)
 
 ## Sources
 

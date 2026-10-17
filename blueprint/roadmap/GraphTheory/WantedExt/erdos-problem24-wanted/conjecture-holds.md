@@ -18,7 +18,7 @@ https://arxiv.org/abs/1102.1634v4. Moved from `OpenConjectures/GraphTheory/Erdos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

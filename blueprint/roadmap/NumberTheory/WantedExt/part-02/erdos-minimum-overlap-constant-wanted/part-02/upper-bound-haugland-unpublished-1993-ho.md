@@ -11,7 +11,7 @@ Source: Haugland, unpublished 1993, recorded by Optimization Problems 1b.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Bound Haugland unpublished 1993](../part-01/upper-bound-haugland-unpublished-1993.md)
 
 ## Sources
 

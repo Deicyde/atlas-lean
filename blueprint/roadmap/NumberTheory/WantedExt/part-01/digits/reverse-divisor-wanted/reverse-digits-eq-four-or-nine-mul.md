@@ -12,7 +12,8 @@ of a reverse divisor is either `4` or `9`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Reverse Divisor](is-reverse-divisor.md)
+- [Reverse](../../../../../Data/MathlibExt/nat/digits/reverse-digits.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.TwoComplexityWanted.complexityL_pow_add_pow
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complexity L](complexity-l.md)
 
 ## Sources
 

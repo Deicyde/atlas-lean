@@ -18,7 +18,8 @@ Stable source: https://en.wikipedia.org/wiki/Robertson%E2%80%93Seymour_theorem.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fin Graph](../../../MathlibExt/part-01/graph/graph-minor/fin-graph.md)
+- [Is Minor](../../../MathlibExt/part-01/graph/graph-minor/is-minor.md)
 
 ## Sources
 

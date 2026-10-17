@@ -13,7 +13,7 @@ prime `p`, `2^a * p` is primitive non-deficient iff
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Primitive Nondeficient](is-primitive-nondeficient.md)
 
 ## Sources
 

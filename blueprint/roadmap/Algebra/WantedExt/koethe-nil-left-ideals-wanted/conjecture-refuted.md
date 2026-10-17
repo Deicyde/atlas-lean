@@ -19,7 +19,7 @@ https://arxiv.org/abs/2609.15080. Moved from `OpenConjectures/Algebra/KoetheNilL
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

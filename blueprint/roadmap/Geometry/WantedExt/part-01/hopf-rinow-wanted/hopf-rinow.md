@@ -12,7 +12,7 @@ Source: H. Hopf and W. Rinow, *Ueber den Begriff der vollständigen differential
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Geodesically Complete](is-geodesically-complete.md)
 
 ## Sources
 

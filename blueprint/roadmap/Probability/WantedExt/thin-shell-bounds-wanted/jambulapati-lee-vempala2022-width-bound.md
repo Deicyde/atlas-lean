@@ -16,7 +16,7 @@ width bounds this radius width by the proved radius-to-variance inequality.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Thin Shell Width](../../MathlibExt/part-01/geometry/thin-shell/thin-shell-width.md)
 
 ## Sources
 

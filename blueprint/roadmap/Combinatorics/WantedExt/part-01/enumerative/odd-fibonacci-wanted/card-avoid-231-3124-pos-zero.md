@@ -13,7 +13,9 @@ with `σ(k) = 1` is `k * |S_{n-k}(231, 3124)|`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Pattern](has-pattern.md)
+- [Pat231](pat231.md)
+- [Pat3124](pat3124.md)
 
 ## Sources
 

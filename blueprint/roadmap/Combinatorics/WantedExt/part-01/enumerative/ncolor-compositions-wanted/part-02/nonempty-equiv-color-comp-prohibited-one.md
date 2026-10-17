@@ -14,7 +14,7 @@ compositions of `n` with parts `≡ 1, 2 (mod 4)` (for
 
 ## Depends on
 
-This node has no prerequisites.
+- [Color Comp Prohibited](../part-01/color-comp-prohibited.md)
 
 ## Sources
 

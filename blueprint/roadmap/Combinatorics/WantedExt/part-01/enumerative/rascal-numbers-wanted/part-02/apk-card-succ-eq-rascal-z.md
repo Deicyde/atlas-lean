@@ -12,7 +12,8 @@ R_{n,k}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Apk Card](../part-01/apk-card.md)
+- [Rascal Z](../part-01/rascal-z.md)
 
 ## Sources
 

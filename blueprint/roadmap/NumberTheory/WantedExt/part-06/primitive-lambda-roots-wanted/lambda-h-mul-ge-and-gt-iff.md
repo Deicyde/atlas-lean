@@ -13,7 +13,8 @@ inequality exactly under the three displayed `Δ_q` conditions.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lambda Delta](lambda-delta.md)
+- [Lambda H](lambda-h.md)
 
 ## Sources
 

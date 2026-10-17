@@ -15,7 +15,7 @@ the identity is written cross-multiplied by `(m)↓_s`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Beta](fib-beta.md)
 
 ## Sources
 

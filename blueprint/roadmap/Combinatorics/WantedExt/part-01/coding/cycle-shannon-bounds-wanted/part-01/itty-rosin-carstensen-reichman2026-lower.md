@@ -11,7 +11,7 @@ Source: Itty--Rosin--Carstensen--Reichman, arXiv:2607.21517, exact tenth-root ra
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shannon Capacity Cycle](../../../../../MathlibExt/part-01/coding/cycle-code/shannon-capacity-cycle.md)
 
 ## Sources
 

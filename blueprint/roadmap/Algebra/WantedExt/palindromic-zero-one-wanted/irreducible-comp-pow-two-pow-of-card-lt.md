@@ -13,7 +13,9 @@ non-cyclotomic, and has fewer than `15` terms, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Noncyclotomic](is-noncyclotomic.md)
+- [Is Reciprocal Poly](is-reciprocal-poly.md)
+- [Is Zero One Poly](is-zero-one-poly.md)
 
 ## Sources
 

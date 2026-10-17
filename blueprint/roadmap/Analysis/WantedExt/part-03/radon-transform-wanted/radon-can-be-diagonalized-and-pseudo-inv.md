@@ -12,7 +12,9 @@ Source: J. Radon (1917); R. N. Bracewell (Fourier slice theorem, 1956). Knill, *
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fourier1](fourier1.md)
+- [Fourier2](fourier2.md)
+- [Radon](radon.md)
 
 ## Sources
 

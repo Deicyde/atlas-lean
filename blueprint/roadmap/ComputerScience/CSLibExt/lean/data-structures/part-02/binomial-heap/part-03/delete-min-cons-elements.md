@@ -22,8 +22,8 @@ Successful deletion partitions the original multiset into its minimum and remain
 - [Ranks At Least](../part-01/ranks-at-least.md)
 - [Valid](../part-01/valid-2.md)
 - [Sublist](../part-02/sublist.md)
-- [Carry](../part-02/carry.md)
 - [Elements](../part-01/elements-2.md)
+- [Elements meld Trees](../part-02/elements-meld-trees.md)
 - [Meld Trees](../part-02/meld-trees.md)
 - [Meld Trees correct](../part-02/meld-trees-correct.md)
 - [Remove Min Tree](../part-02/remove-min-tree.md)
@@ -33,8 +33,6 @@ Successful deletion partitions the original multiset into its minimum and remain
 - [Valid](../part-01/valid.md)
 - [Children](../part-01/children.md)
 - [Elements](../part-01/elements.md)
-- [Elements link](../part-01/elements-link.md)
-- [Link](../part-01/link.md)
 - [Rank](../part-01/rank.md)
 - [Root](../part-01/root.md)
 

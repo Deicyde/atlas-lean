@@ -12,7 +12,7 @@ Source: H. Furstenberg and B. Weiss, *Topological dynamics and combinatorial num
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Multiply Recurrent](is-multiply-recurrent.md)
 
 ## Sources
 

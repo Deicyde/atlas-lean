@@ -12,7 +12,10 @@ The symmetric universal covering predicate has the exterior-point illumination i
 
 ## Depends on
 
-This node has no prerequisites.
+- [Illuminated By External Points](../../../../MathlibExt/convex/illumination/illuminated-by-external-points.md)
+- [Is Centrally Symmetric](../../../../MathlibExt/convex/covering/is-centrally-symmetric.md)
+- [Is Convex Body](../../../../MathlibExt/convex/covering/is-convex-body.md)
+- [Uniform Symmetric Interior Translate Bound](../../../../MathlibExt/convex/covering/uniform-symmetric-interior-translate-bou.md)
 
 ## Sources
 

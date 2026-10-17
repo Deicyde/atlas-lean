@@ -14,7 +14,8 @@ In other words, `Jacobian C` is the Albanese variety of `C`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobian](jacobian.md)
+- [Of Curve](of-curve.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ number has the form `a^m ± 1` with `a ≥ 2` and `m ≥ 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sylvester Number](sylvester-number.md)
 
 ## Sources
 

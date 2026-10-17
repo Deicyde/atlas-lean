@@ -13,7 +13,14 @@ Lengths are positive.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Incr Len](incr-len.md)
+
+## Proof depends on
+
+- [Is Incr Subseq](is-incr-subseq.md)
+- [Le incr Len](le-incr-len.md)
+- [Singleton incr](singleton-incr.md)
+- [Sub one lt of pos](sub-one-lt-of-pos.md)
 
 ## Sources
 

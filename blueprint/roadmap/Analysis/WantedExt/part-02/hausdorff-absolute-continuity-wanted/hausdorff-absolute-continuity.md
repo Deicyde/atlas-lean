@@ -12,7 +12,10 @@ Source: F. Hausdorff (1921–1923); see Shohat–Tamarkin, *The Problem of Momen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniformly Absolutely Continuous](uniformly-absolutely-continuous.md)
+- [Cube](cube.md)
+- [Diff](diff.md)
+- [Moment Of](moment-of.md)
 
 ## Sources
 

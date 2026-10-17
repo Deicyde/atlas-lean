@@ -12,7 +12,7 @@ integer triples with all pairwise sums squares.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pairwise Sums Squares](pairwise-sums-squares.md)
 
 ## Sources
 

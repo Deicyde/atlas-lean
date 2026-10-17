@@ -12,7 +12,7 @@ Source: Elekes, Generalized breadths, circular Cantor sets, and the least area U
 
 ## Depends on
 
-This node has no prerequisites.
+- [Elekes1994 Minimal Cover Exists](../part-01/elekes1994-minimal-cover-exists.md)
 
 ## Sources
 

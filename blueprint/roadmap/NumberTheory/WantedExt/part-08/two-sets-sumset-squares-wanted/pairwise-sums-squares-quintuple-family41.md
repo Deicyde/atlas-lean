@@ -12,7 +12,7 @@ family (4.1) with all fifteen pairwise sums squares of rationals.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pairwise Sums Squares](pairwise-sums-squares.md)
 
 ## Sources
 

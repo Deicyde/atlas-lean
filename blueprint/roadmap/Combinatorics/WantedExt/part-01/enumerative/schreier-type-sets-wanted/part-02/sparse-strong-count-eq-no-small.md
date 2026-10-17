@@ -13,7 +13,8 @@ the identity fails at `ℓ = 0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition No Small Part Count](../part-01/partition-no-small-part-count.md)
+- [Sparse Strong Count](../part-01/sparse-strong-count.md)
 
 ## Sources
 

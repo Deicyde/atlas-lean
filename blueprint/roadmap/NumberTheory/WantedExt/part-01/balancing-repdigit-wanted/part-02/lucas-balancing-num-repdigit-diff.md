@@ -14,7 +14,8 @@ The hypothesis `2 ≤ k` excludes `C_1 = 1 = 2 - 1`, as in Theorem 2.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Repdigit Diff](../part-01/is-repdigit-diff.md)
+- [Lucas Balancing Num](../part-01/lucas-balancing-num.md)
 
 ## Sources
 

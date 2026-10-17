@@ -12,7 +12,7 @@ any `a`, `f '' P_a ⊆ P_{f a}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lift Fiber](lift-fiber.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ at `n = 1` the identity fails, e.g. `cco_{1,2}(1) = 1 ≠ 2`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cco Allowed Z](cco-allowed-z.md)
 
 ## Sources
 

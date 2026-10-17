@@ -15,7 +15,7 @@ Moved from `OpenConjectures/NumberTheory/OeisA002897`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [A eq coeff](a-eq-coeff.md)
 
 ## Sources
 

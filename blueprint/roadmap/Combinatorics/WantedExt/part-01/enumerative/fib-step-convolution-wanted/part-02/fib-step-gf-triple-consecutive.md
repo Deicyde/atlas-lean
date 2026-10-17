@@ -13,7 +13,7 @@ X^m F^{(m)} F^{(m+2)} - F^{(m+1)} + F^{(m)}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Step GF](../part-01/fib-step-gf.md)
 
 ## Sources
 

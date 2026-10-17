@@ -17,7 +17,7 @@ s=3. Source: Jonathan A. Noel, The Partial List Colouring Conjecture is False, a
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ The first 2026 bound 240, retaining its distinct author and date.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Gap Liminf](../../../MathlibExt/part-09/prime-gap-liminf/prime-gap-liminf.md)
 
 ## Sources
 

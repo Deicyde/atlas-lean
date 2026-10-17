@@ -12,7 +12,7 @@ Source: catalogue C19a, Shi1986 upper row.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shiganov1986 Upper Bound](shiganov1986-upper-bound.md)
 
 ## Sources
 

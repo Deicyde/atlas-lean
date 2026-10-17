@@ -13,7 +13,8 @@ The last element of the appended map is `p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extend Map](../part-01/extend-map.md)
+- [Sub one lt of pos](../part-01/sub-one-lt-of-pos.md)
 
 ## Sources
 

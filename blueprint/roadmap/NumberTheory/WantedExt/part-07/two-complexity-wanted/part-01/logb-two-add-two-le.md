@@ -14,7 +14,8 @@ distinct powers of `2` nor of one of the four forms in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complexity L](complexity-l.md)
+- [Two Complexity Add Two Form](two-complexity-add-two-form.md)
 
 ## Sources
 

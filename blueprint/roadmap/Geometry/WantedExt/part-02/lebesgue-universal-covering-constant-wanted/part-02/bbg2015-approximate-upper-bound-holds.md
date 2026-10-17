@@ -12,7 +12,7 @@ Source: Baez, Bagdasaryan and Gibbs, The Lebesgue universal covering problem (20
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bbg2015 Approximate Upper Bound](../part-01/bbg2015-approximate-upper-bound.md)
 
 ## Sources
 

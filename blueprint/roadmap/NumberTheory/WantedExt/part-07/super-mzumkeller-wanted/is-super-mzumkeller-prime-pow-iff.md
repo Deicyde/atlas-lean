@@ -13,7 +13,7 @@ super-m-Zumkeller if and only if
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Super MZumkeller](is-super-mzumkeller.md)
 
 ## Sources
 

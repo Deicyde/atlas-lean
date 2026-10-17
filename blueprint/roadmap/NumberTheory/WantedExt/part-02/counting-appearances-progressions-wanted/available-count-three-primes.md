@@ -13,7 +13,8 @@ classes, the number of available integers in `[1, p·q·s]` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Available Count](available-count.md)
+- [Ones Diag Det](ones-diag-det.md)
 
 ## Sources
 

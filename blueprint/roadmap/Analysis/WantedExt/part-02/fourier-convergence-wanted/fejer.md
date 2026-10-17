@@ -12,7 +12,7 @@ Source: P. G. L. Dirichlet (1829) and L. Fejér (1900). Listed as §46 in O. Kni
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fourier Cesaro Mean](fourier-cesaro-mean.md)
 
 ## Sources
 

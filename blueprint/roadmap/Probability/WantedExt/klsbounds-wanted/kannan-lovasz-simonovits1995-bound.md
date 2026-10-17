@@ -12,7 +12,7 @@ The first polynomial bound, with one multiplier for every sufficiently large dim
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dimensional Kls Constant](../../MathlibExt/part-01/geometry/kls/part-01/dimensional-kls-constant.md)
 
 ## Sources
 

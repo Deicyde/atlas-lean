@@ -14,7 +14,8 @@ lean: MathlibExt.NumberTheory.LeonardoPWanted.h_add_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seq AZ](../part-01/seq-az.md)
+- [Seq BZ](../part-01/seq-bz.md)
 
 ## Sources
 

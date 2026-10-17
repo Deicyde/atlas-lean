@@ -12,7 +12,7 @@ The power-law bound with its vanishing exponent expressed by every positive epsi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Thin Shell Width](../../MathlibExt/part-01/geometry/thin-shell/thin-shell-width.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Source: J. O. Button, *Aspherical 3-manifold groups not in GL(4, k) for any fiel
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closed3 Manifold](closed3-manifold.md)
 
 ## Sources
 

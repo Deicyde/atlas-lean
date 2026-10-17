@@ -13,7 +13,8 @@ super-m-Zumkeller but is not `k`-m-perfect for any `k ≥ 2`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KMPerfect](is-kmperfect.md)
+- [Is Super MZumkeller](is-super-mzumkeller.md)
 
 ## Sources
 

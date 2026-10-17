@@ -13,7 +13,8 @@ nonzero rational integer.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Totally Positive](../../../../MathlibExt/part-01/height/schur-siegel-smyth/is-totally-positive.md)
+- [Absolute Trace](../../../../MathlibExt/part-01/height/schur-siegel-smyth/absolute-trace.md)
 
 ## Sources
 

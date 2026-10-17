@@ -12,7 +12,7 @@ period of `Nat.fib n` divides `2 * n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pisano Period](pisano-period.md)
 
 ## Sources
 

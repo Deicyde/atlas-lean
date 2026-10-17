@@ -14,7 +14,8 @@ For any lattice `ℒ ⊆ ℝ^n` with determinant greater or equal to `1` for all
 
 ## Depends on
 
-This node has no prerequisites.
+- [Determinant](determinant.md)
+- [Ρ](untitled.md)
 
 ## Sources
 

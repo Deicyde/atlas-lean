@@ -12,7 +12,7 @@ Source: N. Wiener, Tauberian theorems, Ann. of Math. 33 (1932), 1-100. Listed as
 
 ## Depends on
 
-This node has no prerequisites.
+- [In Wiener Algebra](in-wiener-algebra.md)
 
 ## Sources
 

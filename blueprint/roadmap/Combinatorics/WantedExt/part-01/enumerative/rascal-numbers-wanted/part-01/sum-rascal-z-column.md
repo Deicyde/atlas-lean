@@ -12,7 +12,7 @@ lean: MathlibExt.Combinatorics.Enumerative.RascalNumbersWanted.sum_rascalZ_colum
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rascal Z](rascal-z.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ Moved from `OpenConjectures/NumberTheory/OeisA022030`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

@@ -17,7 +17,10 @@ for all sufficiently large integers `k`, the following holds. Let `S ⊆ Grₖ�
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gr](gr.md)
+- [Gr Vertex](gr-vertex.md)
+- [Sub Gr](sub-gr.md)
+- [Φ](untitled.md)
 
 ## Sources
 

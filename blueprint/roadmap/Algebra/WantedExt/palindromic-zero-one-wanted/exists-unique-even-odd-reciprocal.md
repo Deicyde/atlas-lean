@@ -17,7 +17,7 @@ integer `ℓ` such that `deg h_e = k`, `deg h_o = k - ℓ`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Reciprocal Poly](is-reciprocal-poly.md)
 
 ## Sources
 

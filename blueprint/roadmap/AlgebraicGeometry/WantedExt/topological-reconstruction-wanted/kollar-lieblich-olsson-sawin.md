@@ -12,7 +12,8 @@ Source: János Kollár, Max Lieblich, Martin Olsson, and Will Sawin. The Zariski
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Normal Scheme](is-normal-scheme.md)
+- [Is Projective Hom](is-projective-hom.md)
 
 ## Sources
 

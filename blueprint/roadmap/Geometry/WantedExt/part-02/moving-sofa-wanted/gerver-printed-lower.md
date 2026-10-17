@@ -11,7 +11,7 @@ Source: catalogue line 22, printed Gerver lower target, not an exact area formul
 
 ## Depends on
 
-This node has no prerequisites.
+- [Optimal Area](../../../MathlibExt/moving-sofa/part-01/optimal-area.md)
 
 ## Sources
 

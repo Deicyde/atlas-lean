@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.SuperMZumkellerWanted.three_le_card_divisors_of_is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Super MZumkeller](is-super-mzumkeller.md)
 
 ## Sources
 

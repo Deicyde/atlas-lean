@@ -13,7 +13,9 @@ at least `ℓ` ones and end with at least `u` zeros.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rascal Word](rascal-word.md)
+- [Rascal Z](rascal-z.md)
+- [Word Ascents](word-ascents.md)
 
 ## Sources
 

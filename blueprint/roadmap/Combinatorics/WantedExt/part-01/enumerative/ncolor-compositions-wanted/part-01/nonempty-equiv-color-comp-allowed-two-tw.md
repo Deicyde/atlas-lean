@@ -14,7 +14,8 @@ compositions of `n` with parts `2` and two types of parts
 
 ## Depends on
 
-This node has no prerequisites.
+- [Color Comp Allowed](color-comp-allowed.md)
+- [Two Type Comp](two-type-comp.md)
 
 ## Sources
 

@@ -12,7 +12,10 @@ is dense in `X`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Macias Topology](macias-topology.md)
+- [Macias Topology₁](macias-topology-2.md)
+- [Prime Set](prime-set.md)
+- [Prime Set₁](prime-set-2.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ https://www.erdosproblems.com/426. Moved from `OpenConjectures/GraphTheory/Erdos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

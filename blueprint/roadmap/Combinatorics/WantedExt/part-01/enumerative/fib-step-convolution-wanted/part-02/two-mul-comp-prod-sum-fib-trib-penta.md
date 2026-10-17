@@ -14,7 +14,8 @@ P_n - P_{n-1} + P_{n-2} - T_n - T_{n-2} + F_{n-1}`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp Prod Sum](../part-01/comp-prod-sum.md)
+- [Fib Step](../part-01/fib-step.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The `H_3 <= 14` covering construction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Uniform Interior Translate Bound](../../../../MathlibExt/convex/covering/uniform-interior-translate-bound.md)
 
 ## Sources
 

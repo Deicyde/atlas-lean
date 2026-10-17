@@ -15,7 +15,7 @@ where `M` is the Theorem 5.7 constant. The sum ranges over
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mertens Constant](mertens-constant.md)
 
 ## Sources
 

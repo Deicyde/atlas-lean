@@ -12,7 +12,7 @@ Source: GIOW, arXiv:1808.09346v1, line 76, reporting Falconer (1985).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Falconer1985 General Sufficiency](falconer1985-general-sufficiency.md)
 
 ## Sources
 

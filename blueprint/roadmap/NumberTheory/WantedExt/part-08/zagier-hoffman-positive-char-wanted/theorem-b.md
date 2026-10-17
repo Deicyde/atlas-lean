@@ -14,7 +14,8 @@ Let `w ∈ ℕ`, where `ℕ := {1,2,...}`. MZVs of weight `w` in `𝒯0 w` are a
 
 ## Depends on
 
-This node has no prerequisites.
+- [𝒯0](0.md)
+- [𝒵](untitled.md)
 
 ## Sources
 

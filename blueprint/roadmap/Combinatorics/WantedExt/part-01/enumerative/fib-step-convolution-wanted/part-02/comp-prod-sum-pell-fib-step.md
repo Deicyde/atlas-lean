@@ -15,7 +15,9 @@ for `n ≥ 1`, `m ≥ 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp Prod Sum](../part-01/comp-prod-sum.md)
+- [Fib Step](../part-01/fib-step.md)
+- [Pell Number Sequence](../../../../../../NumberTheory/MathlibExt/part-08/pell-number.md)
 
 ## Sources
 

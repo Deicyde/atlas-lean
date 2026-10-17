@@ -12,7 +12,9 @@ Source: P. A. P. Moran, *Additive functions of intervals and Hausdorff measure*,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Affine Symmetric IFS](is-affine-symmetric-ifs.md)
+- [Is Attractor](is-attractor.md)
+- [Open Set Condition](open-set-condition.md)
 
 ## Sources
 

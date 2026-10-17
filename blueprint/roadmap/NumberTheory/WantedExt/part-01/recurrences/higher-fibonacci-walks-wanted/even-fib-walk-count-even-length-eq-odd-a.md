@@ -13,7 +13,9 @@ even-position walk count exceeds the odd-position count by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even Fib Walk Count](even-fib-walk-count.md)
+- [Fib Q](fib-q.md)
+- [Odd Fib Walk Count](odd-fib-walk-count.md)
 
 ## Sources
 

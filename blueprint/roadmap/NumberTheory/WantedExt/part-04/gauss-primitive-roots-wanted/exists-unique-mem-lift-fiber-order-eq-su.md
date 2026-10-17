@@ -13,7 +13,7 @@ odd prime `p`, then there exists a unique `x ∈ P_g` such that
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lift Fiber](lift-fiber.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ Anti-vacuity guard: the polymorphic identity `λ (A : Prop). λ (x : A). x` has 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Srt](srt.md)
+- [Tm](tm.md)
+- [Typing](typing.md)
 
 ## Sources
 

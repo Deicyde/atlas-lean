@@ -12,7 +12,10 @@ Source: I. Fáry, 'Sur la courbure totale d'une courbe gauche faisant un nœud',
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Smooth Knot](is-smooth-knot.md)
+- [Is Unknotted](is-unknotted.md)
+- [Space](space.md)
+- [Total Curvature](total-curvature.md)
 
 ## Sources
 

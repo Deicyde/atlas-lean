@@ -14,7 +14,7 @@ Liu–Montgomery [LiMo20], per erdosproblems.com/63, https://www.erdosproblems.c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

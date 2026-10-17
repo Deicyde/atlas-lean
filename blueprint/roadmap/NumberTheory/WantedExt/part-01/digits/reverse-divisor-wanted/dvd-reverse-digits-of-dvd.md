@@ -14,7 +14,7 @@ multiples.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Reverse](../../../../../Data/MathlibExt/nat/digits/reverse-digits.md)
 
 ## Sources
 

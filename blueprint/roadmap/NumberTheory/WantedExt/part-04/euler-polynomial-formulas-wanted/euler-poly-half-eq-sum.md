@@ -14,7 +14,9 @@ where `α_k` are the coefficients of Lemma 2.2 and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Alpha](euler-alpha.md)
+- [Euler Poly](euler-poly.md)
+- [Gen Stirling Poly](gen-stirling-poly.md)
 
 ## Sources
 

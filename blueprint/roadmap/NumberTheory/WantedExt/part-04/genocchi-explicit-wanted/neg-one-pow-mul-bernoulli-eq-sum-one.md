@@ -14,7 +14,7 @@ S(r,j)) Δᵏ1^{n-1-r}/2^{k+1+r}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diff Pow Eval](diff-pow-eval.md)
 
 ## Sources
 

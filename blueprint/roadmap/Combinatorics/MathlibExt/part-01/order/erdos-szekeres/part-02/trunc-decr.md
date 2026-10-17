@@ -13,7 +13,7 @@ A decreasing subsequence truncates to any shorter length.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Decr Subseq](../part-01/is-decr-subseq.md)
 
 ## Sources
 

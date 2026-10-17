@@ -13,7 +13,8 @@ turn `arr` into a unimodal permutation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unimodal](unimodal.md)
+- [Differences](differences.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Known literature result; its proof and certificate are not supplied here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dancik Lower Bound](dancik-lower-bound.md)
 
 ## Sources
 

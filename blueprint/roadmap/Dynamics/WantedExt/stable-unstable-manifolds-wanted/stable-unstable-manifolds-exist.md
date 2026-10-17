@@ -12,7 +12,8 @@ Source: J. Hadamard, 'Sur l'itération et les solutions asymptotiques des équat
 
 ## Depends on
 
-This node has no prerequisites.
+- [E](e.md)
+- [Is Hyperbolic Linear](is-hyperbolic-linear.md)
 
 ## Sources
 

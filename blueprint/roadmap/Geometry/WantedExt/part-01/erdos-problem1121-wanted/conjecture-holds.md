@@ -15,7 +15,7 @@ Moved from `OpenConjectures/Geometry/ErdosProblem1121`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ Let `d ≥ 2` and `n ≥ d` with `(d, n) ≠ (3, 3)`. Then we have `lim_{A → �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ρ](untitled-3.md)
+- [ΡLoc](loc-2.md)
 
 ## Sources
 

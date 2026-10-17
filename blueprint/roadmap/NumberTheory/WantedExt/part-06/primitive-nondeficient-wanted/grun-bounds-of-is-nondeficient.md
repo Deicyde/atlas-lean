@@ -13,7 +13,7 @@ factor `p₁` and `k` distinct prime factors, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Nondeficient](is-nondeficient.md)
 
 ## Sources
 

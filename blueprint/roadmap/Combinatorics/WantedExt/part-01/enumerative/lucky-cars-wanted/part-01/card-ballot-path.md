@@ -13,7 +13,7 @@ from `(0,0)` to `(k, ℓ)` staying on or above `y = x` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ballot Path](ballot-path.md)
 
 ## Sources
 

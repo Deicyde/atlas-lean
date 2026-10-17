@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.GenocchiExplicitWanted.zerroH_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zerro H](zerro-h.md)
 
 ## Sources
 

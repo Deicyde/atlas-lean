@@ -12,7 +12,7 @@ then `h(n)/h(n/p) ≤ 1 + 1/p^a`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Abundancy Index](abundancy-index.md)
 
 ## Sources
 

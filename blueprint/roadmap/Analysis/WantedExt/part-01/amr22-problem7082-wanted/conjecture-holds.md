@@ -16,7 +16,7 @@ Society 111 (1991), 347–355, https://doi.org/10.2307/2048323. Moved from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

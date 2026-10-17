@@ -13,7 +13,10 @@ odd-position count is `(v_{2k} - F_{2k+2}) / 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even Fib Walk Count](even-fib-walk-count.md)
+- [Fib Q](fib-q.md)
+- [Fib Walk Count](fib-walk-count.md)
+- [Odd Fib Walk Count](odd-fib-walk-count.md)
 
 ## Sources
 

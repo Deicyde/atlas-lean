@@ -17,7 +17,7 @@ arXiv:2507.01928 (2025), https://arxiv.org/abs/2507.01928; Erdős Problems, Prob
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

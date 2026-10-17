@@ -12,7 +12,8 @@ lean: MathlibExt.NumberTheory.CountingAppearancesProgressionsWanted.borderedOnes
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bordered Ones Diag Det](bordered-ones-diag-det.md)
+- [First Primes](first-primes.md)
 
 ## Sources
 

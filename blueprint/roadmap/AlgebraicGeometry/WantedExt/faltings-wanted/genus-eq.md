@@ -11,7 +11,10 @@ Source: see manifest Via leanprover/lean-eval@38361be, problem `faltings`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adele](adele.md)
+- [Place](place.md)
+- [Genus](genus.md)
+- [Integral Adele](integral-adele.md)
 
 ## Sources
 

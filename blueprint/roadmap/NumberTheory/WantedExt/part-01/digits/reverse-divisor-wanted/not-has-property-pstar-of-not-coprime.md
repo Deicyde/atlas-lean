@@ -13,7 +13,7 @@ coprime with `10`, then it does not have the property
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Property PStar](has-property-pstar.md)
 
 ## Sources
 

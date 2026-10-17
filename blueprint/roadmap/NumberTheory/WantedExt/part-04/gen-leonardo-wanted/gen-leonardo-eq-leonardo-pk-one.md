@@ -15,7 +15,8 @@ intentional extension beyond the paper's positive-`k` domain.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Leonardo PK](../../part-05/leonardo-pwanted/part-01/leonardo-pk.md)
+- [Gen Leonardo](gen-leonardo.md)
 
 ## Sources
 

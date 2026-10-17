@@ -13,7 +13,7 @@ F^{(p)} F^{(m+1)} - F^{(p)} F^{(m)}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Step GF](../part-01/fib-step-gf.md)
 
 ## Sources
 

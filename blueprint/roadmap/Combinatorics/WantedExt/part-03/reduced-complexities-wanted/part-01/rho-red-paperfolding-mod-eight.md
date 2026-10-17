@@ -13,7 +13,8 @@ lean: MathlibExt.Combinatorics.ReducedComplexitiesWanted.rhoRed_paperfolding_mod
 
 ## Depends on
 
-This node has no prerequisites.
+- [Paperfolding Seq](paperfolding-seq.md)
+- [Rho Red](rho-red.md)
 
 ## Sources
 

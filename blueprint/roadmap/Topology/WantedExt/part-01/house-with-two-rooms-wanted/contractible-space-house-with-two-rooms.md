@@ -12,7 +12,7 @@ Source: Allen Hatcher, *Algebraic Topology*. Via leanprover/lean-eval@38361be, p
 
 ## Depends on
 
-This node has no prerequisites.
+- [House With Two Rooms](house-with-two-rooms.md)
 
 ## Sources
 

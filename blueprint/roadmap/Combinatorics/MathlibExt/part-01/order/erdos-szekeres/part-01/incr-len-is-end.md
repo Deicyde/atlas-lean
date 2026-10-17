@@ -13,7 +13,14 @@ Witness for `incrLen`: a subsequence of that length ends at `p`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Incr End](is-incr-end.md)
+- [Incr Len](incr-len.md)
+
+## Proof depends on
+
+- [Is Incr Subseq](is-incr-subseq.md)
+- [Singleton incr](singleton-incr.md)
+- [Sub one lt of pos](sub-one-lt-of-pos.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Bₖ^*` for `n ≥ 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bernoulli Second](../../../MathlibExt/part-01/bernoulli/bernoulli-second-kind/bernoulli-second.md)
 
 ## Sources
 

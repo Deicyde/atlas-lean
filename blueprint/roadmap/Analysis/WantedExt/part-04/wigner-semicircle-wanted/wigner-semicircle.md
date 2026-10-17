@@ -12,7 +12,10 @@ Source: E. Wigner, 'Characteristic vectors of bordered matrices with infinite di
 
 ## Depends on
 
-This node has no prerequisites.
+- [Empirical Spectral Measure Herm](empirical-spectral-measure-herm.md)
+- [Semicircle Law](semicircle-law.md)
+- [Wigner Matrix](wigner-matrix.md)
+- [Wigner Matrix is Hermitian](wigner-matrix-is-hermitian.md)
 
 ## Sources
 

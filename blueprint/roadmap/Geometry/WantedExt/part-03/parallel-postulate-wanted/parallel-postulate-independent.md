@@ -11,7 +11,8 @@ Source: Independence of Euclid's parallel postulate; the hyperbolic-plane models
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euclidean](euclidean.md)
+- [Tarski Absolute](tarski-absolute.md)
 
 ## Sources
 

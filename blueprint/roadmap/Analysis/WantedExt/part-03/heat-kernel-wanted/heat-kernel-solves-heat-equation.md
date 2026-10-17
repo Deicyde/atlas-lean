@@ -12,7 +12,7 @@ Source: Classical heat-equation theory. Via leanprover/lean-eval@38361be, proble
 
 ## Depends on
 
-This node has no prerequisites.
+- [Heat Solution](heat-solution.md)
 
 ## Sources
 

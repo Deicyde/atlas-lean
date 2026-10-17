@@ -12,7 +12,8 @@ for `n > 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Paperfolding Seq](../part-01/paperfolding-seq.md)
+- [Rho Ab Red](../part-01/rho-ab-red.md)
 
 ## Sources
 

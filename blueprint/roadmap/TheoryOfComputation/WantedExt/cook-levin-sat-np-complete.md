@@ -15,7 +15,11 @@ completeness for the same NP class used by the P-vs-NP statements.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Poly Many One Red](../../Computability/CSLibExt/cook-levin/poly-many-one-red.md)
+- [Sat Dec](../../Computability/CSLibExt/cook-levin/sat-dec.md)
+- [Decision Complexity Class](../../Computability/MathlibExt/complexity/decision-complexity-class.md)
+- [Decision Problem](../../Computability/MathlibExt/complexity/decision-problem.md)
+- [NP](../../Computability/MathlibExt/complexity/np.md)
 
 ## Sources
 

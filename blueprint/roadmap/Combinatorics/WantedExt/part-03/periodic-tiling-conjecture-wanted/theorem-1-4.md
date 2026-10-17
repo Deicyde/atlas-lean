@@ -14,7 +14,7 @@ There exists a finite abelian group `G₀` and a finite non-empty `F ⊆ ℤ² �
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Aperiodic Tiling Equation](is-aperiodic-tiling-equation.md)
 
 ## Sources
 

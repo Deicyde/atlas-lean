@@ -19,7 +19,7 @@ duality, arXiv:2009.05134v3 (2022), https://arxiv.org/abs/2009.05134. Moved from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

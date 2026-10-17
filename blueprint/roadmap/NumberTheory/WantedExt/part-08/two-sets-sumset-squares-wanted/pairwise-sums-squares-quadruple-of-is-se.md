@@ -14,7 +14,8 @@ gives all sixteen pairwise sums squares.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Semi Magic Roots](is-semi-magic-roots.md)
+- [Pairwise Sums Squares](pairwise-sums-squares.md)
 
 ## Sources
 

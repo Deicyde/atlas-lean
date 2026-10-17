@@ -12,7 +12,11 @@ lean: MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.stirlingLikeMatr
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Matrix](r-matrix.md)
+- [Stirling Like Matrix](stirling-like-matrix.md)
+- [Stirling Matrix2](stirling-matrix2.md)
+- [U Matrix](u-matrix.md)
+- [Vandermonde Matrix](vandermonde-matrix.md)
 
 ## Sources
 

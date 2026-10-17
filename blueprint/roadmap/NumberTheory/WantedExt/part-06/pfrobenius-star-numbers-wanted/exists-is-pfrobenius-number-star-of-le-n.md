@@ -13,7 +13,8 @@ The `6 ≤ n ≤ 9` case of Theorem 1: for `p = 0, 1, 2`, the
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is PFrobenius Star Number](is-pfrobenius-star-number.md)
+- [Star](star.md)
 
 ## Sources
 

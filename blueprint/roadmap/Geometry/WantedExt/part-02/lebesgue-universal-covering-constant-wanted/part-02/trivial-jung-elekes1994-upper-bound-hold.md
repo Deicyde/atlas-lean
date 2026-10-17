@@ -12,7 +12,7 @@ Source: Jung's theorem, quoted in Elekes (1994), catalogue constant 13b.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Trivial Jung Elekes1994 Upper Bound](../part-01/trivial-jung-elekes1994-upper-bound.md)
 
 ## Sources
 

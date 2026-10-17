@@ -11,7 +11,8 @@ Source: Classical; see https://en.wikipedia.org/wiki/Chirality_(mathematics) and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Knot](conway-knot-shared/part-01/knot.md)
+- [Chiral](conway-knot-shared/part-01/chiral.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Source: B. Gidas, W. M. Ni, and L. Nirenberg, Symmetry and related properties vi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Solves Semilinear Poisson](solves-semilinear-poisson.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ lean: MathlibExt.NumberTheory.SuperFibocatalanWanted.fiboCatalan_identity
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibo Catalan](fibo-catalan.md)
+- [Fibonacci Factorial](../../../MathlibExt/part-05/generalized-fibocatalan-number/fibonacci-factorial.md)
 
 ## Sources
 

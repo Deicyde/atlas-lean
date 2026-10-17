@@ -15,7 +15,7 @@ do not contribute an empty infimum.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pisano Period](pisano-period.md)
 
 ## Sources
 

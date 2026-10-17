@@ -18,7 +18,7 @@ witnesses a descent over the original field in the sense of this file
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ed Sn](../../../FieldTheory/MathlibExt/essential-dimension-symmetric/part-02/ed-sn.md)
 
 ## Sources
 

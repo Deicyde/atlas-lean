@@ -13,7 +13,7 @@ ones in the base-2 expansion of `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mahler Popken Complexity](mahler-popken-complexity.md)
 
 ## Sources
 

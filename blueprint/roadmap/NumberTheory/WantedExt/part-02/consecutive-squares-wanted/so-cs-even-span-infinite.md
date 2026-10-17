@@ -11,7 +11,7 @@ There are infinitely many SoCS solutions with `c - a` even.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is So CSSolution](is-so-cssolution.md)
 
 ## Sources
 

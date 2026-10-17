@@ -12,7 +12,7 @@ Source: Optimization Problems, constant 13a, closed claim `upperBoundWang2006`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Bound Wang2006](../part-01/upper-bound-wang2006.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Source: Optimization Problems, constant 13a, closed claim `nonconvexStrictPositi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonconvex Strict Positivity](../part-01/nonconvex-strict-positivity.md)
 
 ## Sources
 

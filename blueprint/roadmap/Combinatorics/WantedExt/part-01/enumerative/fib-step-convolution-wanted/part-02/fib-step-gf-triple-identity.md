@@ -15,7 +15,7 @@ X^m (1-X)(1-X^p) F^{(m)} F^{(m+p+q)} -
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Step GF](../part-01/fib-step-gf.md)
 
 ## Sources
 

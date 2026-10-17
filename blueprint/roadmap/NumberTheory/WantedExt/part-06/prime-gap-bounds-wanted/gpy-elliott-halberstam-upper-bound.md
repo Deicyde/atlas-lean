@@ -11,7 +11,8 @@ GPY's older, separately recorded conditional bound.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Gap Liminf](../../../MathlibExt/part-09/prime-gap-liminf/prime-gap-liminf.md)
+- [Elliott Halberstam](../prime-gap-bounds-hypotheses/elliott-halberstam.md)
 
 ## Sources
 

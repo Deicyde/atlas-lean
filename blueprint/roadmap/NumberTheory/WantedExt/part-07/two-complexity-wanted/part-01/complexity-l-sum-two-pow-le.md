@@ -13,7 +13,7 @@ exponents at least `1` is at most `m₁ + k - 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complexity L](complexity-l.md)
 
 ## Sources
 

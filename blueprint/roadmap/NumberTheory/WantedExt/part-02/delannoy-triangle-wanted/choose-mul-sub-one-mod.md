@@ -16,7 +16,8 @@ the binomial coefficient is written as
 
 ## Depends on
 
-This node has no prerequisites.
+- [Harmonic2 Mod](harmonic2-mod.md)
+- [Harmonic Mod](harmonic-mod.md)
 
 ## Sources
 

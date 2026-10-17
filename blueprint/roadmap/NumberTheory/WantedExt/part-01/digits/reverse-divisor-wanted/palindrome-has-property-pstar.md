@@ -12,7 +12,8 @@ lean: MathlibExt.NumberTheory.Digits.ReverseDivisorWanted.palindrome_hasProperty
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Property PStar](has-property-pstar.md)
+- [Reverse](../../../../../Data/MathlibExt/nat/digits/reverse-digits.md)
 
 ## Sources
 

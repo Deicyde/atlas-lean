@@ -15,7 +15,8 @@ first); this statement covers `n ∈ ℕ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Gibonacci Good](is-gibonacci-good.md)
+- [Gibonacci Number](../../../MathlibExt/part-06/gibonacci-number/gibonacci-number.md)
 
 ## Sources
 

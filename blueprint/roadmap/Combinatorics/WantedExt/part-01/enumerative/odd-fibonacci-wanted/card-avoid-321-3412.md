@@ -11,7 +11,9 @@ lean: MathlibExt.Combinatorics.Enumerative.OddFibonacciWanted.card_avoid_321_341
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Pattern](has-pattern.md)
+- [Pat321](pat321.md)
+- [Pat3412](pat3412.md)
 
 ## Sources
 

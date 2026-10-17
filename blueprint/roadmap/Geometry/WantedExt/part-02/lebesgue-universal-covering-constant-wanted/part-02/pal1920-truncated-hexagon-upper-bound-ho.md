@@ -12,7 +12,7 @@ Source: Pál, Über ein elementares Variationsproblem (1920), truncated hexagon 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pal1920 Truncated Hexagon Upper Bound](../part-01/pal1920-truncated-hexagon-upper-bound.md)
 
 ## Sources
 

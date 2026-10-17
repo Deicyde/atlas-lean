@@ -12,7 +12,8 @@ lean: MathlibExt.NumberTheory.LeonardoPWanted.companionQ_pow_apply
 
 ## Depends on
 
-This node has no prerequisites.
+- [Companion Q](companion-q.md)
+- [Q Pow Entry](q-pow-entry.md)
 
 ## Sources
 

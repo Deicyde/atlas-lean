@@ -12,7 +12,7 @@ The catalogue's weaker form of Chen's subpolynomial estimate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dimensional Kls Constant](../../MathlibExt/part-01/geometry/kls/part-01/dimensional-kls-constant.md)
 
 ## Sources
 

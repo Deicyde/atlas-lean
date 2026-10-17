@@ -12,7 +12,7 @@ Source: OpenAI, *Planar Point Sets with Many Unit Distances*, 2026. https://cdn.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Unit Dist](unit-dist.md)
 
 ## Sources
 

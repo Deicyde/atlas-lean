@@ -13,7 +13,7 @@ divisors of `99`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Property PStar](has-property-pstar.md)
 
 ## Sources
 

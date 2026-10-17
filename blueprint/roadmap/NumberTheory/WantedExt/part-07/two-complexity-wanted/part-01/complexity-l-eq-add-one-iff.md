@@ -14,7 +14,7 @@ if and only if `n = 2^m + 2^t` for some `1 ≤ t ≤ m`
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complexity L](complexity-l.md)
 
 ## Sources
 

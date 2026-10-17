@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.SuperFibocatalanWanted.lucasPoly_mul_sub_mul
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Poly](lucas-poly.md)
 
 ## Sources
 

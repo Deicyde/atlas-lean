@@ -11,7 +11,8 @@ The GEH bound from the retained original v4, not an assumed theorem.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Gap Liminf](../../../MathlibExt/part-09/prime-gap-liminf/prime-gap-liminf.md)
+- [Generalized Elliott Halberstam](../prime-gap-bounds-hypotheses/generalized-elliott-halberstam.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Source: Scherk, unpublished 1955, recorded by Optimization Problems 1b.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lower Bound Scherk unpublished 1955](../part-01/lower-bound-scherk-unpublished-1955.md)
 
 ## Sources
 

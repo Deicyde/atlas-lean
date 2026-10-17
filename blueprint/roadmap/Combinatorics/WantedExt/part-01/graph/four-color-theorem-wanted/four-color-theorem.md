@@ -18,7 +18,7 @@ Cites stable source https://en.wikipedia.org/wiki/Four_color_theorem (statement 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Planar](is-planar.md)
 
 ## Sources
 

@@ -11,7 +11,9 @@ The algebra map of the adele algebra is the principal embedding.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adele](adele.md)
+- [Principal](principal.md)
+- [Place](place.md)
 
 ## Sources
 

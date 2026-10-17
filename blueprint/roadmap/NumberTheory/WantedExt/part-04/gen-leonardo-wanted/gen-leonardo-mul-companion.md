@@ -12,7 +12,8 @@ k * L_{k,n+3} + k * (2k+1)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Leonardo](gen-leonardo.md)
+- [Gen Leonardo Companion](gen-leonardo-companion.md)
 
 ## Sources
 

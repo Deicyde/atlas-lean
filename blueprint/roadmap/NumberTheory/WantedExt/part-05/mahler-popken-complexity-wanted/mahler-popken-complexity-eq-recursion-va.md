@@ -12,7 +12,8 @@ lean: MathlibExt.NumberTheory.MahlerPopkenComplexityWanted.mahlerPopkenComplexit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mahler Popken Complexity](mahler-popken-complexity.md)
+- [Mahler Popken Recursion Value](mahler-popken-recursion-value.md)
 
 ## Sources
 

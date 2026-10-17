@@ -12,7 +12,7 @@ multiple of `l`, `log_l n ≤ ‖n‖_l ≤ l * log_l n - 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complexity L](complexity-l.md)
 
 ## Sources
 

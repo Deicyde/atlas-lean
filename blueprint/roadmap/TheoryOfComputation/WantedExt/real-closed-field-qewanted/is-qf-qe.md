@@ -11,7 +11,9 @@ Source: Tarski, 'A Decision Method for Elementary Algebra and Geometry' (1951); 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Formula](formula.md)
+- [Is QF](is-qf.md)
+- [Qe](qe.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ F^{(m)} F^{(m+3)}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Step GF](../part-01/fib-step-gf.md)
 
 ## Sources
 

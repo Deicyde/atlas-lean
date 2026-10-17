@@ -13,6 +13,10 @@ Equation (3): half the envelope integral.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Davis Power A](davis-power-a.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Probability.ConvexSubGaussianComparisonWanted](../../../../sources/v2/WantedExt.md)

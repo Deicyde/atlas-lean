@@ -13,7 +13,14 @@ lean: MathlibExt.Combinatorics.Order.ErdosSzekeres.le_decrLen
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Decr End](is-decr-end.md)
+- [Decr Len](decr-len.md)
+
+## Proof depends on
+
+- [Is Decr Subseq](is-decr-subseq.md)
+- [Sub one lt of pos](sub-one-lt-of-pos.md)
+- [Subseq Len le](subseq-len-le.md)
 
 ## Sources
 

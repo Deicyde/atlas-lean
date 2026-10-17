@@ -12,7 +12,7 @@ Source: C. L. Siegel, *Iteration of analytic functions*, Annals of Math. 43 (194
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Diophantine](is-diophantine.md)
 
 ## Sources
 

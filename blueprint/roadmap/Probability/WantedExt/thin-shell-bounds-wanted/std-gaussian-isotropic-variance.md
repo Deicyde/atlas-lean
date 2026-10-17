@@ -12,7 +12,8 @@ The actual standard Gaussian witnesses normalized squared-radius variance `2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Isotropic Log Concave](../../MathlibExt/part-01/geometry/thin-shell/is-isotropic-log-concave.md)
+- [Normalized Radius Variance](../../MathlibExt/part-01/geometry/thin-shell/normalized-radius-variance.md)
 
 ## Sources
 

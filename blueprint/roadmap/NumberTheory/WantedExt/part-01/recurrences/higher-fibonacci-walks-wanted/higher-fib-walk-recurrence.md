@@ -13,7 +13,8 @@ the shifted self-convolution `wₙ⁽ᵐ⁾` satisfies
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Standard Higher Fib](is-standard-higher-fib.md)
+- [Higher Fib Walk](higher-fib-walk.md)
 
 ## Sources
 

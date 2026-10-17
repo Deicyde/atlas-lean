@@ -13,7 +13,7 @@ lean: MathlibExt.NumberTheory.ShakovTwoRegularWanted.block_average
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shakov Seq](shakov-seq.md)
 
 ## Sources
 

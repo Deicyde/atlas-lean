@@ -13,7 +13,8 @@ lean: MathlibExt.NumberTheory.TwoComplexityWanted.complexityL_eq_add_two_of_form
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complexity L](complexity-l.md)
+- [Two Complexity Add Two Form](two-complexity-add-two-form.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ The catalogue's exact upper bound `C62b ≤ 3/16`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dirichlet Subconvexity Exponent](../../../MathlibExt/part-01/lseries/dirichlet-subconvexity/dirichlet-subconvexity-exponent.md)
 
 ## Sources
 

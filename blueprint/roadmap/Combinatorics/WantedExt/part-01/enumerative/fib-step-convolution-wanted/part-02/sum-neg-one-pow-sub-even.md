@@ -14,7 +14,7 @@ defined) and `n ≥ 2m - 1`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Step](../part-01/fib-step.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ written multiplied through by `m - 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Step](fib-step.md)
 
 ## Sources
 

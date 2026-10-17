@@ -15,7 +15,7 @@ https://mathscinet.ams.org/mathscinet-getitem?mr=4688726. Moved from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

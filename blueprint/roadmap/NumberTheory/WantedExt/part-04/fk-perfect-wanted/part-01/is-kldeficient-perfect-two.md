@@ -12,7 +12,7 @@ every `k` (with `d = 1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KLDeficient Perfect](is-kldeficient-perfect.md)
 
 ## Sources
 

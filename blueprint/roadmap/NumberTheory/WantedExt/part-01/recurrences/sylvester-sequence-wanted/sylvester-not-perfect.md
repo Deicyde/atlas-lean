@@ -11,7 +11,7 @@ lean: MathlibExt.NumberTheory.Recurrences.SylvesterSequenceWanted.sylvester_not_
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sylvester Number](sylvester-number.md)
 
 ## Sources
 

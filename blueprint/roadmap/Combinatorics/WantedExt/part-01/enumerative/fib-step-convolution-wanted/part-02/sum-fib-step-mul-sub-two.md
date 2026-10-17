@@ -13,7 +13,8 @@ J_{n-1} + ∑_{j=0}^{n-2} J_j (F⁽ᵐ⁻²⁾_{n-j} - F⁽ᵐ⁾_{n-2-j})`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Step](../part-01/fib-step.md)
+- [Jacobsthal Seq](../part-01/jacobsthal-seq.md)
 
 ## Sources
 

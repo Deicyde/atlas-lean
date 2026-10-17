@@ -13,7 +13,7 @@ lean: MathlibExt.NumberTheory.EulerPolynomialFormulasWanted.eulerPoly_eq_binomia
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Poly](euler-poly.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Source: catalogue C19a right CDF and Shevtsova2011's explicit left convention.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Left Right CDFError Equivalence](../part-01/left-right-cdferror-equivalence.md)
 
 ## Sources
 

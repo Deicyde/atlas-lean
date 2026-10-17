@@ -14,7 +14,7 @@ Conjecture, arXiv:2608.14821 (2026), https://arxiv.org/abs/2608.14821. Moved fro
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bin Digit Sum](../../../Combinatorics/MathlibExt/part-01/enumerative/part-02/digital-binomial-theorem/bin-digit-sum.md)
 
 ## Sources
 

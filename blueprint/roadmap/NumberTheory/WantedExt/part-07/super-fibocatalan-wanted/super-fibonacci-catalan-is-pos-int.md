@@ -15,7 +15,7 @@ integers (the generalized half is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonacci Factorial](../../../MathlibExt/part-05/generalized-fibocatalan-number/fibonacci-factorial.md)
 
 ## Sources
 

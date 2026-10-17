@@ -14,7 +14,9 @@ choice of residue classes (paper form
 
 ## Depends on
 
-This node has no prerequisites.
+- [First Primes](first-primes.md)
+- [Free Count](free-count.md)
+- [Occupied Count](occupied-count.md)
 
 ## Sources
 

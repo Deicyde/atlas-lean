@@ -19,7 +19,10 @@ by `(n δ) ^ (Q log n)` such that the (smooth and zero-dimensional affine) schem
 
 ## Depends on
 
-This node has no prerequisites.
+- [Number Field Of Degree](number-field-of-degree.md)
+- [Jacobian](jacobian.md)
+- [Nonsingular Open](nonsingular-open.md)
+- [Quotient Ring](quotient-ring.md)
 
 ## Sources
 

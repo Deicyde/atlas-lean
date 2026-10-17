@@ -17,7 +17,9 @@ only need to show that `𝒯 w` are linearly independent in `𝒵 w`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [D](d.md)
+- [𝒯](untitled-2.md)
+- [𝒵](untitled.md)
 
 ## Sources
 

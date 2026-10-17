@@ -12,7 +12,7 @@ Source: GIOW, arXiv:1808.09346v1, line 78, reporting Wolff (1999).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wolff1999 Planar Sufficiency](wolff1999-planar-sufficiency.md)
 
 ## Sources
 

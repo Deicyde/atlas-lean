@@ -15,7 +15,7 @@ not a Bonse sequence.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Bonse Seq](is-bonse-seq.md)
 
 ## Sources
 

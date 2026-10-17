@@ -12,7 +12,7 @@ Source: A. M. Gleason, Measures on the closed subspaces of a Hilbert space, J. M
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sphere Frame Function](sphere-frame-function.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ lean: MathlibExt.NumberTheory.SuperFibocatalanWanted.fib_mul_factorialQuotient_e
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fibonomial](fibonomial.md)
+- [Fibonacci Factorial](../../../MathlibExt/part-05/generalized-fibocatalan-number/fibonacci-factorial.md)
 
 ## Sources
 

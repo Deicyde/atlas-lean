@@ -11,7 +11,7 @@ Source: Buhler--Reichstein (1997), exact value `ed_ℂ(S₄) = 2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ed Sn](../../../FieldTheory/MathlibExt/essential-dimension-symmetric/part-02/ed-sn.md)
 
 ## Sources
 

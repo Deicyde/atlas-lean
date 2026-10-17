@@ -18,10 +18,6 @@ statements exist without proofs. A wanted theorem shows as stated and unproved;
 a wanted definition shows as not stated, because a stated definition counts
 as defined.
 
-1885 roadmap edges come from the compiled Lean: the articles each
+3847 roadmap edges come from the compiled Lean: the articles each
 article's statement or proof reaches, through private helpers and undocumented
 declarations if need be ([`lean-dependencies.json`](lean-dependencies.json)).
-
-1459 roadmap articles have no row in the compiled
-dependency dump (for example a wanted placeholder or a module excluded by a
-compiled-name collision), so no dependency edges are asserted for them.

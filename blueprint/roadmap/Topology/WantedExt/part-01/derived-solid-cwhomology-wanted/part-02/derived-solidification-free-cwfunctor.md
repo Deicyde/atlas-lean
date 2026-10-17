@@ -10,7 +10,9 @@ Source: https://github.com/dagurtomas/LeanCondensed (LeanCondensed/Projects/Deri
 
 ## Depends on
 
-This node has no prerequisites.
+- [CWTop Cat](cwtop-cat.md)
+- [DLight Cond Ab](../part-01/dlight-cond-ab.md)
+- [Is CWTop Cat](is-cwtop-cat.md)
 
 ## Sources
 

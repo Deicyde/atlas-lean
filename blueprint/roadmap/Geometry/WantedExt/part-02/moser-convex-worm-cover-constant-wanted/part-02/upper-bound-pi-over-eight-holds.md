@@ -12,7 +12,7 @@ Source: Optimization Problems, constant 13a, closed claim `upperBoundPiOverEight
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Bound Pi Over Eight](../part-01/upper-bound-pi-over-eight.md)
 
 ## Sources
 

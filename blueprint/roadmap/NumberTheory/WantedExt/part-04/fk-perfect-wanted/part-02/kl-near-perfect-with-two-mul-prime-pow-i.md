@@ -13,7 +13,7 @@ is `[k,ℓ]`-near-perfect with divisor `d` and `k > 1`, then
 
 ## Depends on
 
-This node has no prerequisites.
+- [KLNear Perfect With](../part-01/klnear-perfect-with.md)
 
 ## Sources
 

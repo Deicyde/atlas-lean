@@ -13,7 +13,7 @@ requested here. This theorem request does not supply or assume that proof.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Large Chromatic Triangle Free Wheel Free](large-chromatic-triangle-free-wheel-free.md)
 
 ## Sources
 

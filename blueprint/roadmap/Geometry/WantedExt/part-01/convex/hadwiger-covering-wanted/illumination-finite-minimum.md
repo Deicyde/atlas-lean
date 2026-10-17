@@ -12,7 +12,8 @@ A finite least illuminating family exists for every positive-dimensional convex 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Illuminated By Directions](../../../../MathlibExt/convex/illumination/illuminated-by-directions.md)
+- [Is Convex Body](../../../../MathlibExt/convex/covering/is-convex-body.md)
 
 ## Sources
 

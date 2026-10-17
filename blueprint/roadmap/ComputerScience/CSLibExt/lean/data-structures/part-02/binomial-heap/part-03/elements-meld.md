@@ -19,14 +19,8 @@ Meld preserves every occurrence from both heaps.
 
 ## Proof depends on
 
-- [Carry](../part-02/carry.md)
-- [Elements](../part-01/elements-2.md)
-- [Meld Trees](../part-02/meld-trees.md)
+- [Elements meld Trees](../part-02/elements-meld-trees.md)
 - [Binomial Tree](../part-01/binomial-tree.md)
-- [Elements](../part-01/elements.md)
-- [Elements link](../part-01/elements-link.md)
-- [Link](../part-01/link.md)
-- [Rank](../part-01/rank.md)
 
 ## Sources
 

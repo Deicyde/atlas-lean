@@ -12,7 +12,7 @@ For each `N > 1` there are at most `2 * (N - 1)` SoCS solutions with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is So CSSolution](is-so-cssolution.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Source: optimization catalogue C34a, GIOW (2018) upper row.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Bound GIOW2018](upper-bound-giow2018.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ coefficientwise: for every `m`, the fiber
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shakov Seq](shakov-seq.md)
 
 ## Sources
 

@@ -27,7 +27,7 @@ and the collections `𝓒` produced by the proof are indeed finite.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Z](z.md)
 
 ## Sources
 

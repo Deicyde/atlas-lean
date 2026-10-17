@@ -12,7 +12,7 @@ Source: catalogue C19a, KS2009 structural comment; retained 2011 equation.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Korolev Shevtsova2009 Structural](../part-01/korolev-shevtsova2009-structural.md)
 
 ## Sources
 

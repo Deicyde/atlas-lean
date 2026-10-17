@@ -13,7 +13,9 @@ in `[1, P_k]` is `f_k`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bordered Ones Diag Det](bordered-ones-diag-det.md)
+- [First Primes](first-primes.md)
+- [Free Count](free-count.md)
 
 ## Sources
 

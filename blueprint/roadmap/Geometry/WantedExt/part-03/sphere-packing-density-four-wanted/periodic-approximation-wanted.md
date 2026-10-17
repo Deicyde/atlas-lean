@@ -12,7 +12,7 @@ no Lean proof supplied and no exact optimum-attainment claim.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Periodic Approximation](periodic-approximation.md)
 
 ## Sources
 

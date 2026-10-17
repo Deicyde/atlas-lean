@@ -13,7 +13,8 @@ positive `n`, for the lower-bound function `g` given by
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complexity Lower Bound G](complexity-lower-bound-g.md)
+- [Cx](cx.md)
 
 ## Sources
 

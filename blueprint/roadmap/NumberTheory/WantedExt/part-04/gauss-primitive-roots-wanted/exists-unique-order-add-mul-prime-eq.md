@@ -13,7 +13,7 @@ exists a unique `m` modulo `p` such that
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mul Ord Mod](mul-ord-mod.md)
 
 ## Sources
 

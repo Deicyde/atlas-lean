@@ -12,7 +12,7 @@ Source: F. W. Lawvere & M. Tierney (elementary topos, 1970); see S. Mac Lane & I
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Topos](is-topos.md)
 
 ## Sources
 

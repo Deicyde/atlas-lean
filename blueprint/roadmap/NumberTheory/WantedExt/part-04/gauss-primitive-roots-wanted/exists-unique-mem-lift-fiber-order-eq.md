@@ -12,7 +12,8 @@ unique `x ∈ P_a` such that `ord_{p²}(x) = ord_p(x)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lift Fiber](lift-fiber.md)
+- [Unit Reduce Sq](unit-reduce-sq.md)
 
 ## Sources
 

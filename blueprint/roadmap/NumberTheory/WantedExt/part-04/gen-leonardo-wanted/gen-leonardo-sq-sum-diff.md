@@ -21,7 +21,7 @@ was verified computationally for `k ∈ {0,1,2,3}`, `m ≤ 11`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Leonardo](gen-leonardo.md)
 
 ## Sources
 

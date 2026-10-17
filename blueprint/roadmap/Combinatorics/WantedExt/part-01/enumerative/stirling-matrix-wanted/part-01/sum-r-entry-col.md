@@ -12,7 +12,7 @@ lean: MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_rEntry_col
 
 ## Depends on
 
-This node has no prerequisites.
+- [R Entry](r-entry.md)
 
 ## Sources
 

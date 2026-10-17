@@ -14,7 +14,7 @@ contribute `0`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cco Allowed](cco-allowed.md)
 
 ## Sources
 

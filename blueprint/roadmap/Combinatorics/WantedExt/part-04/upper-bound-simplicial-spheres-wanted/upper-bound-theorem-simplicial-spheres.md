@@ -11,7 +11,9 @@ Source: R.P. Stanley, 'The upper bound conjecture and Cohen–Macaulay rings', S
 
 ## Depends on
 
-This node has no prerequisites.
+- [Finite Simplicial Sphere](../../part-03/simplicial-sphere-shared/finite-simplicial-sphere.md)
+- [Face Count](../../part-03/simplicial-sphere-shared/face-count.md)
+- [Cyclic Polytope Face Count](cyclic-polytope-face-count.md)
 
 ## Sources
 

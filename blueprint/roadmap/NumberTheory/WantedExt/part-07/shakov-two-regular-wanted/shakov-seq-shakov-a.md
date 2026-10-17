@@ -14,7 +14,8 @@ positive integer, written `Int.toNat` here).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shakov A](shakov-a.md)
+- [Shakov Seq](shakov-seq.md)
 
 ## Sources
 

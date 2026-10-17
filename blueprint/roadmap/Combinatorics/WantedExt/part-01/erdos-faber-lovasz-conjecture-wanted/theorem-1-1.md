@@ -15,7 +15,9 @@ at most `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Hypergraph](hypergraph.md)
+- [Is Linear](is-linear.md)
+- [Chromatic Index](chromatic-index.md)
 
 ## Sources
 

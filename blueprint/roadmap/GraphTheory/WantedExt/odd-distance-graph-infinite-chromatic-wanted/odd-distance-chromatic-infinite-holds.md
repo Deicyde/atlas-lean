@@ -18,7 +18,7 @@ https://arxiv.org/abs/2209.15598. Moved from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Odd Distance Chromatic Infinite](odd-distance-chromatic-infinite.md)
 
 ## Sources
 

@@ -12,7 +12,8 @@ lean: MathlibExt.NumberTheory.SuperMZumkellerWanted.isSuperMZumkeller_of_isKMPer
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is KMPerfect](is-kmperfect.md)
+- [Is Super MZumkeller](is-super-mzumkeller.md)
 
 ## Sources
 

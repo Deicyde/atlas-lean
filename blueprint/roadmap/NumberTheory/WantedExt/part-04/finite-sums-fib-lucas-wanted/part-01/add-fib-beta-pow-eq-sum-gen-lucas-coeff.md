@@ -16,7 +16,8 @@ already fails at `m = 0`, giving `0` for `1`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Beta](fib-beta.md)
+- [Gen Lucas Coeff](gen-lucas-coeff.md)
 
 ## Sources
 

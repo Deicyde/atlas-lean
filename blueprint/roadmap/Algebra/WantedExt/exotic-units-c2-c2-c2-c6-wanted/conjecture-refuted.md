@@ -17,7 +17,7 @@ https://arxiv.org/abs/1701.04347. Moved from `OpenConjectures/Algebra/ExoticUnit
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

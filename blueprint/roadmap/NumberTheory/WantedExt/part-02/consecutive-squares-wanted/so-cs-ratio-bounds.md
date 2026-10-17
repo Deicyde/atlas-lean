@@ -12,7 +12,7 @@ Bounds on the ratio `(b - a) / (c - b)` for SoCS solutions:
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is So CSSolution](is-so-cssolution.md)
 
 ## Sources
 

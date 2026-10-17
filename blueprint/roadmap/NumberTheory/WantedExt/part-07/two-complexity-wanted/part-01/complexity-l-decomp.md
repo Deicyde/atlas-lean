@@ -14,7 +14,7 @@ positive multiple of `l^2` and `0 ≤ a ≤ l - 1`, one has
 
 ## Depends on
 
-This node has no prerequisites.
+- [Complexity L](complexity-l.md)
 
 ## Sources
 

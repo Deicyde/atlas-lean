@@ -14,7 +14,9 @@ lean: MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_signed_psi_e
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lambda](../part-01/lambda.md)
+- [Psi](../part-01/psi.md)
+- [Signed Stirling First](../../../../../MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
 
 ## Sources
 

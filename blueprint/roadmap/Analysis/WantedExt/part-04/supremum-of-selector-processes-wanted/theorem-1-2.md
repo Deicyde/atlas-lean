@@ -22,7 +22,8 @@ but used in the last step of the proof where `𝔼 ≥ (L/L') * 𝔼` is a contr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Small](is-small.md)
+- [Binomial Set Distribution](binomial-set-distribution.md)
 
 ## Sources
 

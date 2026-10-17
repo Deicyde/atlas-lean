@@ -11,7 +11,7 @@ Source: Georgiev--Gómez-Serrano--Tao--Wagner 2025 and Optimization Problems 1b.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Bound GGSWT2025 Alpha Evolve](../part-01/upper-bound-ggswt2025-alpha-evolve.md)
 
 ## Sources
 

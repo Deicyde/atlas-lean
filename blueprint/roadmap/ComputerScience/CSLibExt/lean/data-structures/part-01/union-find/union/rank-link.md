@@ -15,6 +15,10 @@ Canonical LINK changes no rank except the distinct tied second root.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Rank D link Aux](rank-d-link-aux.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.UnionFind.Union](../../../../../../../../sources/v2/CSLibExt.md)

@@ -12,7 +12,11 @@ Source: P. D. Lax, *Approximation of measure preserving transformations*, Comm. 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Cyclic Cube Exchange](is-cyclic-cube-exchange.md)
+- [Toral Dynamical System](toral-dynamical-system.md)
+- [To Volume Preserving Equiv](to-volume-preserving-equiv.md)
+- [Volume Preserving Equiv](volume-preserving-equiv.md)
+- [Delta Dist](delta-dist.md)
 
 ## Sources
 

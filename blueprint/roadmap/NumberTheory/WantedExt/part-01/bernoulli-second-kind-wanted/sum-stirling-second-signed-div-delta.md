@@ -12,7 +12,7 @@ C(n,k) B_{n-k} + δ_{n-1,k}` for `1 ≤ k ≤ n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Stirling First](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
 
 ## Sources
 

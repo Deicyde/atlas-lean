@@ -13,7 +13,12 @@ The appended map is index-strict.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Extend Map](../part-01/extend-map.md)
+- [Sub one lt of pos](../part-01/sub-one-lt-of-pos.md)
+
+## Proof depends on
+
+- [Idx le last](../part-01/idx-le-last.md)
 
 ## Sources
 

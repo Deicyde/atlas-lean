@@ -18,7 +18,7 @@ arbitrary index, arXiv:math/0304318 (2003), https://arxiv.org/abs/math/0304318. 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

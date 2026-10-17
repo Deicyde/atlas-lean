@@ -11,7 +11,7 @@ Source: CE2003 Table 3. Known literature bound; no Lean proof supplied.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Bound CE2003 new](upper-bound-ce2003-new.md)
 
 ## Sources
 

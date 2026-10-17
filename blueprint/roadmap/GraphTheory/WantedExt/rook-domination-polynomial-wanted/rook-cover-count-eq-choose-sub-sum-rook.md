@@ -12,7 +12,7 @@ count, with the `(0,0)` summand excluded.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rook Cover Count](rook-cover-count.md)
 
 ## Sources
 

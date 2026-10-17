@@ -17,7 +17,8 @@ correction terms) the identity fails already at `q = 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Beta](../part-01/fib-beta.md)
+- [Gen Lucas Coeff](../part-01/gen-lucas-coeff.md)
 
 ## Sources
 

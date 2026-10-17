@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.NicomachusGeneralizationWanted.nicomachusU_eq_clos
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nicomachus U](nicomachus-u.md)
 
 ## Sources
 

@@ -15,6 +15,10 @@ This proposition is not asserted.
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Square Matrix Multiplication Circuit Exponent](../../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/square-matrix-multiplication-circuit-exp.md)
+
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted](../../../../../../sources/v2/WantedExt.md)

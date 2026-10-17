@@ -14,7 +14,7 @@ integer coefficients.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Factorial](lucas-factorial.md)
 
 ## Sources
 

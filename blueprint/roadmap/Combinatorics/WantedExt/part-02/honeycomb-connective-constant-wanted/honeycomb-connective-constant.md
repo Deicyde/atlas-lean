@@ -12,7 +12,7 @@ Source: H. Duminil-Copin and S. Smirnov, 'The connective constant of the honeyco
 
 ## Depends on
 
-This node has no prerequisites.
+- [Walk Count](walk-count.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ linear function of `n`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rascal Z](../part-01/rascal-z.md)
 
 ## Sources
 

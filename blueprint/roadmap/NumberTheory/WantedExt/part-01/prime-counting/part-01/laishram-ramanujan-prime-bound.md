@@ -16,7 +16,7 @@ then `R < p_{3n}` (one-indexed), stated with zero-indexed
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Nth Ramanujan Prime](../../../../MathlibExt/part-02/prime-counting/part-01/ramanujan-prime/is-nth-ramanujan-prime.md)
 
 ## Sources
 

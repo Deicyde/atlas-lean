@@ -19,7 +19,7 @@ Point Sets, arXiv:1308.0403, https://arxiv.org/abs/1308.0403. Moved from
 
 ## Depends on
 
-This node has no prerequisites.
+- [Exists Subquadratic Universal Point Set](exists-subquadratic-universal-point-set.md)
 
 ## Sources
 

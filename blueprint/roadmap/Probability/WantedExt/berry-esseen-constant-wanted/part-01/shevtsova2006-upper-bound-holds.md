@@ -12,7 +12,7 @@ Source: catalogue C19a, She2006 upper row.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shevtsova2006 Upper Bound](shevtsova2006-upper-bound.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Entries strictly before the end sit weakly below the end position.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sub one lt of pos](sub-one-lt-of-pos.md)
 
 ## Sources
 

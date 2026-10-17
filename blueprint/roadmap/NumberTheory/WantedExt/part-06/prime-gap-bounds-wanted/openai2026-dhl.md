@@ -12,7 +12,7 @@ The source's DHL[40,2] claim for actual distinct admissible integer tuples.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Hardy Littlewood Admissible](../../../MathlibExt/part-06/hardy-littlewood-prime-tuple/is-hardy-littlewood-admissible.md)
 
 ## Sources
 

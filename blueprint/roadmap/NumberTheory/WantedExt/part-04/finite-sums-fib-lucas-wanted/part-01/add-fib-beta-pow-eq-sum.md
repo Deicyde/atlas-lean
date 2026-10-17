@@ -13,7 +13,7 @@ real `x`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Beta](fib-beta.md)
 
 ## Sources
 

@@ -35,7 +35,7 @@ some node other than `[0, 0]` (proof of Theorem `thm:0iso`), while a graph in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Complete Young Graph](is-complete-young-graph.md)
 
 ## Sources
 

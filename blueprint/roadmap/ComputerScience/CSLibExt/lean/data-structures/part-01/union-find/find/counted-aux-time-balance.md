@@ -13,7 +13,12 @@ Every actual execution has exactly one more source test than parent writes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Counted Aux](counted-aux.md)
+
+## Proof depends on
+
+- [Counted Aux time root](counted-aux-time-root.md)
+- [Counted Aux time step](counted-aux-time-step.md)
 
 ## Sources
 

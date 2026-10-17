@@ -15,7 +15,8 @@ through by `{n+2}! {n}!`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Lucas Factorial](lucas-factorial.md)
+- [Lucas Poly](lucas-poly.md)
 
 ## Sources
 

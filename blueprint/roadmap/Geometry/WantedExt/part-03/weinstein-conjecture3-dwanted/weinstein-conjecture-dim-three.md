@@ -12,7 +12,11 @@ Source: C.H. Taubes, 'The Seiberg–Witten equations and the Weinstein conjectur
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Closed Reeb Orbit](has-closed-reeb-orbit.md)
+- [Is Contact Form3](is-contact-form3.md)
+- [Is Reeb Vector Field](is-reeb-vector-field.md)
+- [One Form](one-form.md)
+- [Two Form](two-form.md)
 
 ## Sources
 

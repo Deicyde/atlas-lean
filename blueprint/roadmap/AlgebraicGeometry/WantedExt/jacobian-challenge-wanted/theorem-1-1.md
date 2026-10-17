@@ -11,7 +11,9 @@ Source: V. Dimitrov, Z. Gao, and P. Habegger, `Uniformity in Mordell–Lang for 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Jacobian](jacobian.md)
+- [Genus](genus.md)
+- [C](c.md)
 
 ## Sources
 

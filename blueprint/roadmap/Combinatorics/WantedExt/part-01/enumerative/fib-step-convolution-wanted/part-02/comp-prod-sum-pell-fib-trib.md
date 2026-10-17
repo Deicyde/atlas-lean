@@ -13,7 +13,9 @@ T_{n+3} - ∑_{j=0}^n 𝒫_j T_{n-j}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp Prod Sum](../part-01/comp-prod-sum.md)
+- [Fib Step](../part-01/fib-step.md)
+- [Pell Number Sequence](../../../../../../NumberTheory/MathlibExt/part-08/pell-number.md)
 
 ## Sources
 

@@ -17,6 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
+- [Rank find](rank-find.md)
 - [Rank link](rank-link.md)
 
 ## Sources

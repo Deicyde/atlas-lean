@@ -17,7 +17,7 @@ Moved from `OpenConjectures/Geometry/EllipticBilliard602`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

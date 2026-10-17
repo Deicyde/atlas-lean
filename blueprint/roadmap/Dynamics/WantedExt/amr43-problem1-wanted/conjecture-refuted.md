@@ -17,7 +17,7 @@ https://arxiv.org/abs/2104.09860. Moved from `OpenConjectures/Dynamics/AMR43Prob
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

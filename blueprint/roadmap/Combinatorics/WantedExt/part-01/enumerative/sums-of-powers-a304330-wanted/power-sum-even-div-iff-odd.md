@@ -16,7 +16,7 @@ holds if and only if
 
 ## Depends on
 
-This node has no prerequisites.
+- [Power Sum](power-sum.md)
 
 ## Sources
 

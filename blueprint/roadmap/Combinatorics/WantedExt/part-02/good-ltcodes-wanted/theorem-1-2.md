@@ -14,7 +14,10 @@ There exist good locally testable codes (the source's explicitness is not formal
 
 ## Depends on
 
-This node has no prerequisites.
+- [Binary Code](binary-code.md)
+- [Is Good](is-good.md)
+- [LTC](ltc.md)
+- [Rate](rate.md)
 
 ## Sources
 

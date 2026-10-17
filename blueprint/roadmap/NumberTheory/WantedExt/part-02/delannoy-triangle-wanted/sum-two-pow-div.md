@@ -13,7 +13,7 @@ lean: MathlibExt.NumberTheory.DelannoyTriangleWanted.sum_two_pow_div
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fermat Quotient](../../../MathlibExt/part-05/fermat-quotient/fermat-quotient.md)
 
 ## Sources
 

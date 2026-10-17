@@ -12,7 +12,7 @@ lean: MathlibExt.Topology.MaciasCoprimeTopologyWanted.closure_singleton_prime_eq
 
 ## Depends on
 
-This node has no prerequisites.
+- [Macias Topology](macias-topology.md)
 
 ## Sources
 

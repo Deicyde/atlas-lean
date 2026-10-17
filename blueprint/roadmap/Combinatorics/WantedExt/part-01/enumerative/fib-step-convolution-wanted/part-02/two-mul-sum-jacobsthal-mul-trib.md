@@ -14,7 +14,8 @@ right side).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Step](../part-01/fib-step.md)
+- [Jacobsthal Seq](../part-01/jacobsthal-seq.md)
 
 ## Sources
 

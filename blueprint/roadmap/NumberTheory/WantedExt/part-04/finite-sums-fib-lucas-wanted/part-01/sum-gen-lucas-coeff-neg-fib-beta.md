@@ -15,7 +15,8 @@ printed (with `β^{m-n}` and without the correction term in
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Beta](fib-beta.md)
+- [Gen Lucas Coeff](gen-lucas-coeff.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ Known literature result; its proof is not supplied here.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Chvatal Sankoff Strict Positive](chvatal-sankoff-strict-positive.md)
 
 ## Sources
 

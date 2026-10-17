@@ -12,7 +12,7 @@ Source: J. C. F. Sturm (1829). Listed as §97 in O. Knill, Some Fundamental Theo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sigma](sigma.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Source: Cantor--Straus (1982), as reported by Voutier, coefficient `2`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Asymptotic Dobrowolski Constant](../../../../MathlibExt/part-01/height/asymptotic-dobrowolski/asymptotic-dobrowolski-constant.md)
 
 ## Sources
 

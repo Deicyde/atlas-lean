@@ -11,7 +11,11 @@ Source: R. C. Kirby, *Stable homeomorphisms and the annulus conjecture*, Ann. of
 
 ## Depends on
 
-This node has no prerequisites.
+- [Amb](annulus-shared/amb.md)
+- [Flat Sphere](annulus-shared/flat-sphere.md)
+- [Sph](annulus-shared/sph.md)
+- [Inside](annulus-shared/inside.md)
+- [Region Between](annulus-shared/region-between.md)
 
 ## Sources
 

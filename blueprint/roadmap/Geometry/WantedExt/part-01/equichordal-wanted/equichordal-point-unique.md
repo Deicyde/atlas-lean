@@ -12,7 +12,8 @@ Source: M. R. Rychlik, A complete solution to the equichordal point problem of F
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Equichordal Point](is-equichordal-point.md)
+- [Plane](plane.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Bellotti–Wong second estimate (upper half), sharper for smaller `T`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Zeta Zero Count](zeta-zero-count.md)
 
 ## Sources
 

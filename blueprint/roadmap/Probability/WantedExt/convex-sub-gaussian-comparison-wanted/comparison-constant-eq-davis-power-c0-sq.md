@@ -11,7 +11,8 @@ Source: Davis–Power (2026), the exact solved one-dimensional catalogue constan
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comparison Constant](../../MathlibExt/part-01/convex-sub-gaussian-comparison/comparison-constant.md)
+- [Davis Power C0](davis-power-c0.md)
 
 ## Sources
 

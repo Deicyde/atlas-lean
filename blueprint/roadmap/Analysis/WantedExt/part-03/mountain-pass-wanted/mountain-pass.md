@@ -12,7 +12,10 @@ Source: A. Ambrosetti and P.H. Rabinowitz, 'Dual variational methods in critical
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Critical Point](is-critical-point.md)
+- [Mountain Range](mountain-range.md)
+- [Palais Smale](palais-smale.md)
+- [Mountain Pass Level](mountain-pass-level.md)
 
 ## Sources
 

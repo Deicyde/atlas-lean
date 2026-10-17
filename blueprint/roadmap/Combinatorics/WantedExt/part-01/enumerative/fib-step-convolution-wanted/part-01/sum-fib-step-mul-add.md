@@ -13,7 +13,7 @@ F⁽ᵐ⁺²⁾_{n-m-j-1}) = F⁽ᵐ⁺²⁾ₙ - F⁽ᵐ⁾ₙ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Step](fib-step.md)
 
 ## Sources
 

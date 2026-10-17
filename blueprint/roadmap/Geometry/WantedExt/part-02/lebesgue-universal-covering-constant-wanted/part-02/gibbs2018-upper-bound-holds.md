@@ -12,7 +12,7 @@ Source: Gibbs, An Upper Bound for Lebesgue's Covering Problem (2018).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gibbs2018 Upper Bound](../part-01/gibbs2018-upper-bound.md)
 
 ## Sources
 

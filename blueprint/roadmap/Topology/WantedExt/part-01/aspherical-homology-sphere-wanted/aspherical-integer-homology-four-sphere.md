@@ -12,7 +12,9 @@ Source: J. G. Ratcliffe and S. T. Tschantz, *Some examples of aspherical 4-manif
 
 ## Depends on
 
-This node has no prerequisites.
+- [Closed4 Manifold](closed4-manifold.md)
+- [Is Aspherical](is-aspherical.md)
+- [Is Integer Homology Sphere](is-integer-homology-sphere.md)
 
 ## Sources
 

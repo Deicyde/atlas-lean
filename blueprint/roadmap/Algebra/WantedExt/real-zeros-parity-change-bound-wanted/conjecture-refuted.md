@@ -17,7 +17,7 @@ inequalities, arXiv:2403.12200 (2024), https://arxiv.org/abs/2403.12200. Moved f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

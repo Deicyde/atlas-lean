@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.FkPerfectWanted.not_klDeficientPerfectWith_two_pow
 
 ## Depends on
 
-This node has no prerequisites.
+- [KLDeficient Perfect With](../part-01/kldeficient-perfect-with.md)
 
 ## Sources
 

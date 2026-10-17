@@ -13,7 +13,8 @@ Q_{n+4} + Q_{n+2} - T_{n+5} + F_{n+3}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Comp Prod Sum](../part-01/comp-prod-sum.md)
+- [Fib Step](../part-01/fib-step.md)
 
 ## Sources
 

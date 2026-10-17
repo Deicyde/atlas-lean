@@ -11,7 +11,7 @@ Source: catalogue line 14, Kallus-Romik (2018). Numerical certificate not retain
 
 ## Depends on
 
-This node has no prerequisites.
+- [Optimal Area](../../../MathlibExt/moving-sofa/part-01/optimal-area.md)
 
 ## Sources
 

@@ -13,7 +13,9 @@ Let `X` be definable in `ℝₑₓₚ`. Then `#Xᵗʳᵃⁿˢ(g,H) ≤ poly_X (g
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is RExp Definable](is-rexp-definable.md)
+- [Degree Height LE](degree-height-le.md)
+- [Trans Part](trans-part.md)
 
 ## Sources
 

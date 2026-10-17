@@ -17,7 +17,7 @@ Moved from `OpenConjectures/GraphTheory/ErdosProblem1077`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Main Positive](main-positive.md)
 
 ## Sources
 

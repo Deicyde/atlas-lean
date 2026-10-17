@@ -12,7 +12,8 @@ lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.sparseStrongCo
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Min Part Count](../part-01/partition-min-part-count.md)
+- [Sparse Strong Count](../part-01/sparse-strong-count.md)
 
 ## Sources
 

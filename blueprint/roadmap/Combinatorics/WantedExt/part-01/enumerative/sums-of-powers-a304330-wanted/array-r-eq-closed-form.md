@@ -16,7 +16,7 @@ sum).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Array R](array-r.md)
 
 ## Sources
 

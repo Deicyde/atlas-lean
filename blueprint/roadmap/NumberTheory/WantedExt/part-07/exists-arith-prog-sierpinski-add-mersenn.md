@@ -15,7 +15,7 @@ for every `j ≤ t` and every nonnegative `n`, where
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Composite](../../MathlibExt/part-04/composite/is-composite.md)
 
 ## Sources
 

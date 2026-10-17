@@ -14,6 +14,11 @@ This packages the same carried array and root; it does not run canonical FIND a 
 
 This node has no prerequisites.
 
+## Proof depends on
+
+- [Counted Aux](counted-aux.md)
+- [Counted Aux ret](counted-aux-ret.md)
+
 ## Sources
 
 - [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.UnionFind.Find](../../../../../../../../sources/v2/CSLibExt.md)

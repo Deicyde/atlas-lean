@@ -13,7 +13,8 @@ of `n`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Super MZumkeller](is-super-mzumkeller.md)
+- [Divisor Prod](divisor-prod.md)
 
 ## Sources
 

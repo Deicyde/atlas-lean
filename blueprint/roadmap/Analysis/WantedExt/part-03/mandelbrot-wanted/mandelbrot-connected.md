@@ -12,7 +12,7 @@ Source: A. Douady and J. H. Hubbard, *Étude dynamique des polynômes complexes 
 
 ## Depends on
 
-This node has no prerequisites.
+- [Mandelbrot](mandelbrot.md)
 
 ## Sources
 

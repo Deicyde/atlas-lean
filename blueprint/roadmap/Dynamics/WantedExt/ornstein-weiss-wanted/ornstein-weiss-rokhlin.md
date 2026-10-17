@@ -12,7 +12,8 @@ Source: D. S. Ornstein and B. Weiss, *Entropy and isomorphism theorems for actio
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Free Action](is-free-action.md)
+- [Box Shape](box-shape.md)
 
 ## Sources
 

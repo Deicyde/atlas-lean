@@ -11,7 +11,8 @@ Source: https://arxiv.org/abs/1808.02923 Via leanprover/lean-eval@38361be, probl
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Simple](../../part-01/conway-knot-shared/part-02/is-simple.md)
+- [Conway Knot](../../part-01/conway-knot-shared/part-02/conway-knot.md)
 
 ## Sources
 

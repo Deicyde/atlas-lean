@@ -11,7 +11,8 @@ lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.schreierSparse
 
 ## Depends on
 
-This node has no prerequisites.
+- [Partition Exact Count](../part-01/partition-exact-count.md)
+- [Schreier Sparse Min Count](../part-01/schreier-sparse-min-count.md)
 
 ## Sources
 

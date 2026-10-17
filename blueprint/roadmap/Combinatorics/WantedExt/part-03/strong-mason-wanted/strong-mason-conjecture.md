@@ -12,7 +12,7 @@ Source: P. Branden and J. Huh, 'Lorentzian polynomials', Ann. of Math. 192 (2020
 
 ## Depends on
 
-This node has no prerequisites.
+- [Independent Set Count](independent-set-count.md)
 
 ## Sources
 

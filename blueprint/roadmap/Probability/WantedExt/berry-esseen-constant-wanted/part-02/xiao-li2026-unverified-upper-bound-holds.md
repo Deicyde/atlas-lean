@@ -12,7 +12,7 @@ Source: catalogue C19a, explicitly unverified XL2026 row.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Xiao Li2026 Unverified Upper Bound](../part-01/xiao-li2026-unverified-upper-bound.md)
 
 ## Sources
 

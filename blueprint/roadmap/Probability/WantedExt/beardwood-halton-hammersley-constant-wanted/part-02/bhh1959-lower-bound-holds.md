@@ -12,7 +12,7 @@ Source: Beardwood, Halton and Hammersley (1959), catalogue lower-bound row.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bhh1959 Lower Bound](bhh1959-lower-bound.md)
 
 ## Sources
 

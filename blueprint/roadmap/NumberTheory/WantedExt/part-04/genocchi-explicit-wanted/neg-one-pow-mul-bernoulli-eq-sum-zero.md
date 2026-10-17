@@ -14,7 +14,7 @@ with `n ≥ r + 1`, `(-1)ⁿ Bₙ = (n/(2ⁿ-1)) ∑_{k=1}^{n-r}
 
 ## Depends on
 
-This node has no prerequisites.
+- [Diff Pow Eval](diff-pow-eval.md)
 
 ## Sources
 

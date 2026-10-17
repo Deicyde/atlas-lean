@@ -11,7 +11,9 @@ Source: see manifest Via leanprover/lean-eval@38361be, problem `faltings`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Adele](adele.md)
+- [Principal](principal.md)
+- [Place](place.md)
 
 ## Sources
 

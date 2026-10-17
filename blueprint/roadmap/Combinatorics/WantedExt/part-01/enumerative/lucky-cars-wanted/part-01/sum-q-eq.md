@@ -13,7 +13,7 @@ which the `i`-th car is lucky is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Q](q.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Resolved false: Disproved by Ma and Tang (formalized in Lean), per erdosproblems
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

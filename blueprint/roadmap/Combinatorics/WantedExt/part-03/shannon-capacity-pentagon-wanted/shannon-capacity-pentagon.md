@@ -12,7 +12,7 @@ Source: Knill, *Some fundamental theorems in mathematics*, §238. Via leanprover
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Shannon Capacity](has-shannon-capacity.md)
 
 ## Sources
 

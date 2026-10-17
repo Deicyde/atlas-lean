@@ -13,7 +13,7 @@ prime.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Deficient Fk Perfect](../part-01/is-deficient-fk-perfect.md)
 
 ## Sources
 

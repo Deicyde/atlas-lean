@@ -15,7 +15,7 @@ maximal in both parts multisets.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pairwise Products](pairwise-products.md)
 
 ## Sources
 

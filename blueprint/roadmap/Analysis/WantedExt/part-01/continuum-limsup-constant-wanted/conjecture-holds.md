@@ -19,7 +19,7 @@ and Eleanor F. Lingham, Research Problems in Function Theory (New Edition), arXi
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

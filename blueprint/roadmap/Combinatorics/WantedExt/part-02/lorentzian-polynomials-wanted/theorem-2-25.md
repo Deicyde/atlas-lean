@@ -19,7 +19,9 @@ contains the zero polynomial since the zero polynomial is homogeneous of degree 
 
 ## Depends on
 
-This node has no prerequisites.
+- [H](h.md)
+- [L](l.md)
+- [Ŀ](untitled.md)
 
 ## Sources
 

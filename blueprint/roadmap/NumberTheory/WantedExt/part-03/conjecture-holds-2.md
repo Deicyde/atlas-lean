@@ -14,7 +14,7 @@ from `OpenConjectures/NumberTheory/ErdosProblem6`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Gap](../../MathlibExt/part-09/prime-gap.md)
 
 ## Sources
 

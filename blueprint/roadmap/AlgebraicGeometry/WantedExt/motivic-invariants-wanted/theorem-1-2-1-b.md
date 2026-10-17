@@ -16,7 +16,8 @@ Here by a function field, we mean a function field of a positive-dimensional `ğ
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen By Pseudo Regularizable](gen-by-pseudo-regularizable.md)
+- [Variety](variety.md)
 
 ## Sources
 

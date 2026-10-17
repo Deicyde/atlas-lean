@@ -16,7 +16,9 @@ gives `1` against `2β = 1 - √5`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Beta](fib-beta.md)
+- [Genocchi Number](../../../../MathlibExt/part-06/genocchi-number/genocchi-number.md)
+- [Lucas Number](../../../../MathlibExt/part-07/lucas-sequence/lucas-number.md)
 
 ## Sources
 

@@ -18,7 +18,7 @@ harmonic sum to `H_{p-1} / 2` is false already at `p = 3`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wilson Quotient ZPlus](wilson-quotient-zplus.md)
 
 ## Sources
 

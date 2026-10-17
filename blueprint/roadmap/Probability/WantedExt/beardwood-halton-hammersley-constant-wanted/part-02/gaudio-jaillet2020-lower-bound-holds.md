@@ -12,7 +12,7 @@ Source: Gaudio and Jaillet, An improved lower bound for the Traveling Salesman c
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gaudio Jaillet2020 Lower Bound](gaudio-jaillet2020-lower-bound.md)
 
 ## Sources
 

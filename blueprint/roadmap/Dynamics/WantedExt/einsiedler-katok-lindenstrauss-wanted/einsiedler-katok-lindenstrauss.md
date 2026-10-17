@@ -12,7 +12,7 @@ Source: see manifest Via leanprover/lean-eval@38361be, problem `einsiedler_katok
 
 ## Depends on
 
-This node has no prerequisites.
+- [Dist To Nearest Int](dist-to-nearest-int.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ Source: Vrećica, A note on sets of constant width (1981).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Vrecica1981 Constant Width One Suffices](../part-01/vrecica1981-constant-width-one-suffices.md)
 
 ## Sources
 

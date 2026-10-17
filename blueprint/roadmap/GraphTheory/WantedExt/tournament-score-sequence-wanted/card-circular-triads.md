@@ -13,7 +13,9 @@ in a tournament with scores `s_1, …, s_n` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Circular Triad](is-circular-triad.md)
+- [Is Tournament](is-tournament.md)
+- [Score](score.md)
 
 ## Sources
 

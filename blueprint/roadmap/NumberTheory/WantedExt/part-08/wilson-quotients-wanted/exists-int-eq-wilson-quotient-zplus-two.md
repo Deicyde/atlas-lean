@@ -13,7 +13,7 @@ it is `0 [ZMOD 2n]` when `n = 2` or `n` is composite, and
 
 ## Depends on
 
-This node has no prerequisites.
+- [Wilson Quotient ZPlus](wilson-quotient-zplus.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Source: Harbourne--Roé (2009), nef divisor bound `177/560`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Seshadri Constant10](../../MathlibExt/seshadri-constant/seshadri-constant10.md)
 
 ## Sources
 

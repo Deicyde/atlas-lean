@@ -13,7 +13,11 @@ Singletons are decreasing subsequences.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Decr Subseq](is-decr-subseq.md)
+
+## Proof depends on
+
+- [Fin1 false](fin1-false.md)
 
 ## Sources
 

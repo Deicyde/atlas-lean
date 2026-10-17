@@ -12,7 +12,7 @@ lean: MathlibExt.Probability.DiversityStatisticsWanted.shannonCount_le
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shannon Count](shannon-count.md)
 
 ## Sources
 

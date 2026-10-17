@@ -15,7 +15,7 @@ we have `∑ (f ∈ 𝔽_q[T]⁺, |f| ≤ X), μ(f + h₁) μ(f + h₂) ... μ(f
 
 ## Depends on
 
-This node has no prerequisites.
+- [Monic Bounded](monic-bounded.md)
 
 ## Sources
 

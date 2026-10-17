@@ -18,7 +18,8 @@ computationally, consistent with parts (ii) of Theorems 3.1–3.3).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Leonardo](gen-leonardo.md)
+- [Gen Leonardo Companion](gen-leonardo-companion.md)
 
 ## Sources
 

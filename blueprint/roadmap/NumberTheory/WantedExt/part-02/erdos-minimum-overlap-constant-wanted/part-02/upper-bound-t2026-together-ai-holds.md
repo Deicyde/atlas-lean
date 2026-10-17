@@ -11,7 +11,7 @@ Source: Together AI 2026 and Optimization Problems 1b.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Upper Bound T2026 Together AI](../part-01/upper-bound-t2026-together-ai.md)
 
 ## Sources
 

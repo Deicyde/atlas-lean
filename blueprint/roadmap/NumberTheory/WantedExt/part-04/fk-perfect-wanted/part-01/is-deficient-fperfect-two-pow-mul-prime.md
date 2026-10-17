@@ -13,7 +13,7 @@ of the form `2^a p` has `p = 3` and `a = 1` (the number
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Deficient FPerfect](is-deficient-fperfect.md)
 
 ## Sources
 

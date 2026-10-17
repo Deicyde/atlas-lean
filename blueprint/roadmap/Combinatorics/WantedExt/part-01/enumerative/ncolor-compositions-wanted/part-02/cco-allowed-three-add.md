@@ -12,7 +12,7 @@ lean: MathlibExt.Combinatorics.Enumerative.NColorCompositionsWanted.ccoAllowed_t
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cco Allowed](../part-01/cco-allowed.md)
 
 ## Sources
 

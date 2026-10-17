@@ -11,7 +11,7 @@ The Polymath8b bound from the retained original v4; erratum applicability is unr
 
 ## Depends on
 
-This node has no prerequisites.
+- [Prime Gap Liminf](../../../MathlibExt/part-09/prime-gap-liminf/prime-gap-liminf.md)
 
 ## Sources
 

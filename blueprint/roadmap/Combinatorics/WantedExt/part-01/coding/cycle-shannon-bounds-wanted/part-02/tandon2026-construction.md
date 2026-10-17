@@ -11,7 +11,8 @@ Source: Tandon, arXiv:2608.30273, exact dimension-500 construction.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Cycle Code](../../../../../MathlibExt/part-01/coding/cycle-code/is-cycle-code.md)
+- [Tandon2026 Mstar](tandon2026-mstar.md)
 
 ## Sources
 

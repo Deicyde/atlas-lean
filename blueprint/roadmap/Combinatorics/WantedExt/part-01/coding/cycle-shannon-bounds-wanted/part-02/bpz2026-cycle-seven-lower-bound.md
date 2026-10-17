@@ -11,7 +11,9 @@ Source: BPZ, arXiv:2607.29681, the exact dimension-200 root rate.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Shannon Capacity Cycle](../../../../../MathlibExt/part-01/coding/cycle-code/shannon-capacity-cycle.md)
+- [BPZProfile](../part-01/bpzprofile.md)
+- [Bpz C7 Pi40](bpz-c7-pi40.md)
 
 ## Sources
 

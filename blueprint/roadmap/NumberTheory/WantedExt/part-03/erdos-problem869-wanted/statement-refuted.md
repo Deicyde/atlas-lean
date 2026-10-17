@@ -18,7 +18,7 @@ Moved from `OpenConjectures/NumberTheory/ErdosProblem869`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Statement](statement.md)
 
 ## Sources
 

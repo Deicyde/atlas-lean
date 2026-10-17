@@ -12,7 +12,7 @@ Source: Selberg's theorem `λ₁(Γ) ≥ 3/16`, catalogue upper row
 
 ## Depends on
 
-This node has no prerequisites.
+- [Selberg Constant](../../../MathlibExt/part-01/modular-forms/selberg-spectral-gap/part-01/selberg-constant.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ Verified by brute-force enumeration for `m ∈ {1, 2, 3, 5}`, `s ≤ 2`,
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Signed Pow Two Sum](is-signed-pow-two-sum.md)
 
 ## Sources
 

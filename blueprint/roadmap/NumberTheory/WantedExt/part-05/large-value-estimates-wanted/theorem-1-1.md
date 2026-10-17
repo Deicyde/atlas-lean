@@ -22,7 +22,7 @@ Note: The inequality may be false at `T = 1`, so we must impose `T > 1`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bound](bound.md)
 
 ## Sources
 

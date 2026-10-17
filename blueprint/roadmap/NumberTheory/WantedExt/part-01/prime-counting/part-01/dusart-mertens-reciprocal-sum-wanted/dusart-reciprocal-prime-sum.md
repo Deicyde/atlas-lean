@@ -15,7 +15,7 @@ where `B` is the Meissel–Mertens constant. The sum ranges over
 
 ## Depends on
 
-This node has no prerequisites.
+- [Meissel Mertens Constant](meissel-mertens-constant.md)
 
 ## Sources
 

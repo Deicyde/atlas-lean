@@ -13,7 +13,7 @@ composite for `k ≥ 4`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Composite](../../../MathlibExt/part-04/composite/is-composite.md)
 
 ## Sources
 

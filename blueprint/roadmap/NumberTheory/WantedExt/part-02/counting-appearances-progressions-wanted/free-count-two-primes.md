@@ -13,7 +13,8 @@ residue classes, the number of free integers in `[1, p·q]` is
 
 ## Depends on
 
-This node has no prerequisites.
+- [Bordered Ones Diag Det](bordered-ones-diag-det.md)
+- [Free Count](free-count.md)
 
 ## Sources
 

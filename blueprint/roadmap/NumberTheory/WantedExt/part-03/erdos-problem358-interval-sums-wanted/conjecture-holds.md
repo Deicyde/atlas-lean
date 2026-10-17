@@ -12,7 +12,7 @@ f(n) >> log n for all large n, hence f(n) -> infinity (Erdos Problems record 358
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

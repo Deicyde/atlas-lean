@@ -11,7 +11,8 @@ Source: NSW (J. Neukirch, A. Schmidt, K. Wingberg, *Cohomology of Number Fields*
 
 ## Depends on
 
-This node has no prerequisites.
+- [Generator Rank](generator-rank.md)
+- [Relation Rank](relation-rank.md)
 
 ## Sources
 

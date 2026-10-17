@@ -12,7 +12,8 @@ L_{n-k} = 2^{1-n}`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Euler Sec Number](euler-sec-number.md)
+- [Lucas Number](../../../../MathlibExt/part-07/lucas-sequence/lucas-number.md)
 
 ## Sources
 

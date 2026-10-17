@@ -12,7 +12,7 @@ Source: D. J. Newman, 'The nonexistence of projections from L^1 to H^1', Proc. A
 
 ## Depends on
 
-This node has no prerequisites.
+- [H1](h1.md)
 
 ## Sources
 

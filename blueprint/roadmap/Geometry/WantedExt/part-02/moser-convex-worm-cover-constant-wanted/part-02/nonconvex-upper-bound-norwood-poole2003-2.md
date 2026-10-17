@@ -13,7 +13,7 @@ Source: Optimization Problems, constant 13a, closed claim
 
 ## Depends on
 
-This node has no prerequisites.
+- [Nonconvex Upper Bound Norwood Poole2003](../part-01/nonconvex-upper-bound-norwood-poole2003.md)
 
 ## Sources
 

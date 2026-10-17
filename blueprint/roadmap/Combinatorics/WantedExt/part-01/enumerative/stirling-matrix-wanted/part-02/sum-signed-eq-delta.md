@@ -13,7 +13,7 @@ lean: MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_signed_eq_de
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Stirling First](../../../../../MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
 
 ## Sources
 

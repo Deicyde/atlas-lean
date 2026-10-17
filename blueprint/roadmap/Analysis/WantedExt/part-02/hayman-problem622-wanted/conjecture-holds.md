@@ -17,7 +17,7 @@ S. Biswas, Radius of convexity of certain classes of functions defined by convol
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

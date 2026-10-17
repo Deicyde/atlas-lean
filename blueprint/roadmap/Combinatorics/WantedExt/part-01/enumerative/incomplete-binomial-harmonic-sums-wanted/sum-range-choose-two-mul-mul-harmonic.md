@@ -13,7 +13,8 @@ and the auxiliary sums `C` and `D`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Central Binom Weighted Sum](central-binom-weighted-sum.md)
+- [Inv Pow Two Sum](inv-pow-two-sum.md)
 
 ## Sources
 

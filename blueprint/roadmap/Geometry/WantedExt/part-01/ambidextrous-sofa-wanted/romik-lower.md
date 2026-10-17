@@ -12,7 +12,7 @@ Source: catalogue lower row, Romik (2016), exact decimal endpoint
 
 ## Depends on
 
-This node has no prerequisites.
+- [Ambidextrous Optimal Area](../../../MathlibExt/moving-sofa/part-02/ambidextrous-optimal-area.md)
 
 ## Sources
 

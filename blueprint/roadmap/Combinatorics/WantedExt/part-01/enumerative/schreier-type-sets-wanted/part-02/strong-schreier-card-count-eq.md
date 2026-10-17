@@ -12,7 +12,8 @@ lean: MathlibExt.Combinatorics.Enumerative.SchreierTypeSetsWanted.strongSchreier
 
 ## Depends on
 
-This node has no prerequisites.
+- [Composition Min Part Exact Count](../part-01/composition-min-part-exact-count.md)
+- [Strong Schreier Card Count](../part-01/strong-schreier-card-count.md)
 
 ## Sources
 

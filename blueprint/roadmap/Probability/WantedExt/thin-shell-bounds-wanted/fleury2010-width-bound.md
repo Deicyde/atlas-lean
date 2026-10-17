@@ -12,7 +12,7 @@ Fleury's thin-shell exponent `3/8`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Thin Shell Width](../../MathlibExt/part-01/geometry/thin-shell/thin-shell-width.md)
 
 ## Sources
 

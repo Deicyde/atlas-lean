@@ -12,7 +12,7 @@ Source: F. Riesz (1932). Knill, §163. Via leanprover/lean-eval@38361be, problem
 
 ## Depends on
 
-This node has no prerequisites.
+- [Has Rising Sun Property](has-rising-sun-property.md)
 
 ## Sources
 

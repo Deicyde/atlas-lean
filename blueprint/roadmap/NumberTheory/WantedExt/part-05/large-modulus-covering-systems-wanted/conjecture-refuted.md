@@ -11,7 +11,7 @@ Resolved false: Disproved by Hough: the least modulus of a distinct covering sys
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

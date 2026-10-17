@@ -15,7 +15,7 @@ Boris Arsovski, A proof of Snevily's conjecture, Israel J. Math. 182 (2011), 505
 
 ## Depends on
 
-This node has no prerequisites.
+- [Conjecture](conjecture.md)
 
 ## Sources
 

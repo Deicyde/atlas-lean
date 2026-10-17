@@ -14,7 +14,8 @@ over `ℤ`).
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is PFrobenius Star Number](is-pfrobenius-star-number.md)
+- [Star](star.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ and `0.0059`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Even Pseudoprimes](../../../MathlibExt/part-05/even-pseudoprime/even-pseudoprimes.md)
 
 ## Sources
 

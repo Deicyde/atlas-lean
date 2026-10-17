@@ -14,7 +14,7 @@ nonnegative integers `(n, x, y) = (1, 1, 2)`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Pell Lucas Sequence](../../../MathlibExt/part-08/pell-lucas-sequence/pell-lucas-sequence.md)
 
 ## Sources
 

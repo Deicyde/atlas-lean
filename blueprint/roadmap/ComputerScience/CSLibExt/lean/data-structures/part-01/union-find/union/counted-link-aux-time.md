@@ -13,7 +13,7 @@ Branch counts concern the same saved-array execution that produced ret.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Counted Link Aux](counted-link-aux.md)
 
 ## Sources
 

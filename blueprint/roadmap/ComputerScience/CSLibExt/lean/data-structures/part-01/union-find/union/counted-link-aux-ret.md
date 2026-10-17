@@ -13,7 +13,7 @@ The saved array is exactly canonical linkAux's result, not a reference-only resu
 
 ## Depends on
 
-This node has no prerequisites.
+- [Counted Link Aux](counted-link-aux.md)
 
 ## Sources
 

@@ -15,7 +15,8 @@ The alternating binomial identities
 
 ## Depends on
 
-This node has no prerequisites.
+- [Gen Leonardo](gen-leonardo.md)
+- [Gen Leonardo Companion](gen-leonardo-companion.md)
 
 ## Sources
 

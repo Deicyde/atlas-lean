@@ -12,7 +12,8 @@ lean: MathlibExt.Combinatorics.Enumerative.FibStepConvolutionWanted.sum_pell_mul
 
 ## Depends on
 
-This node has no prerequisites.
+- [Fib Step](../part-01/fib-step.md)
+- [Pell Number Sequence](../../../../../../NumberTheory/MathlibExt/part-08/pell-number.md)
 
 ## Sources
 

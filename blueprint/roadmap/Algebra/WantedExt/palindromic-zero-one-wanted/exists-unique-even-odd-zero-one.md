@@ -17,7 +17,8 @@ unique positive odd integer `ℓ` such that
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Reciprocal Poly](is-reciprocal-poly.md)
+- [Is Zero One Poly](is-zero-one-poly.md)
 
 ## Sources
 

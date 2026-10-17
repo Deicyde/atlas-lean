@@ -25,7 +25,8 @@ with the same complexity up to `Θ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Is Eventually Periodic](../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
+- [Word Factor Complexity](../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
 
 ## Sources
 

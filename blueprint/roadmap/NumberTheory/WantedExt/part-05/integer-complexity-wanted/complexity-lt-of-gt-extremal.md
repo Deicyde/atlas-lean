@@ -15,7 +15,7 @@ the number `2^a * 3^b` is the greatest `m` with
 
 ## Depends on
 
-This node has no prerequisites.
+- [Cx](cx.md)
 
 ## Sources
 

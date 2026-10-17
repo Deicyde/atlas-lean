@@ -19,7 +19,7 @@ Moved from `OpenConjectures/Analysis/SendovRadiusConstant`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Sendov Conjecture](sendov-conjecture.md)
 
 ## Sources
 

@@ -13,7 +13,8 @@ classes.
 
 ## Depends on
 
-This node has no prerequisites.
+- [First Primes](first-primes.md)
+- [Free Count](free-count.md)
 
 ## Sources
 

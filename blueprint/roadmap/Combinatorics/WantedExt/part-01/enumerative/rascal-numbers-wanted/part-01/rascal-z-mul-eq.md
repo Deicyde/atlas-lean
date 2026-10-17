@@ -13,7 +13,7 @@ written cross-multiplied to stay in `ℤ`.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Rascal Z](rascal-z.md)
 
 ## Sources
 

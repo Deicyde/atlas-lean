@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.BernoulliSecondKindWanted.sum_stirlingSecond_signe
 
 ## Depends on
 
-This node has no prerequisites.
+- [Signed Stirling First](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
 
 ## Sources
 

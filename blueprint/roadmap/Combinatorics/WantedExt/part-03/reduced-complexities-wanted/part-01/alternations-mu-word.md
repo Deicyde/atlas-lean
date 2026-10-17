@@ -13,7 +13,8 @@ alternations.
 
 ## Depends on
 
-This node has no prerequisites.
+- [Alternations](alternations.md)
+- [Mu Word](mu-word.md)
 
 ## Sources
 
