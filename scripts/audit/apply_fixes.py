@@ -7,9 +7,11 @@ RESULTS_JSON is the audit workflow's return value. A fix is applied only when
 a verifier accepted it: the original fix if the first round accepted it, else
 the corrected fix if the second round did. Docstring fixes replace the
 docstring lines recorded in the packet, after checking that the file still
-holds that exact docstring. v1 overrides go to v1-overrides.json next to the
-ledger until the generator reads them. Every audited article gets a ledger
-line with the hash of the packet it was judged on.
+holds that exact docstring. v1 title overrides, and withdrawals of v1's
+"formalized" verdict where a checker confirmed that the Lean does not state
+the textbook result, go to v1-overrides.json next to the ledger, which
+scripts/generate_wiki.py reads. Every audited article gets a ledger line with
+the hash of the packet it was judged on.
 """
 
 from __future__ import annotations
@@ -37,7 +39,12 @@ def accepted(result: dict) -> dict[str, dict]:
     return out
 
 
-def docstring_problem(text: str) -> str | None:
+def bare(line: str) -> str:
+    """A docstring line without the comment delimiters."""
+    return line.removeprefix("/--").removesuffix("-/").strip()
+
+
+def docstring_problem(text: str, original: str = "") -> str | None:
     if not text.startswith("/--") or not text.rstrip().endswith("-/"):
         return "not a /-- ... -/ docstring"
     body = text.rstrip()[3:-2]
@@ -45,8 +52,10 @@ def docstring_problem(text: str) -> str | None:
         return "contains -/ before the end"
     if "/-" in body:
         return "contains /-, which opens a nested comment"
-    if any(len(line) > MAX_COLUMNS for line in text.splitlines()):
-        return f"a line exceeds {MAX_COLUMNS} columns"
+    # A Source paragraph is kept byte for byte, so a long line it already had may stay.
+    kept = {bare(line) for line in original.splitlines()}
+    if any(len(line) > MAX_COLUMNS and bare(line) not in kept for line in text.splitlines()):
+        return f"a new line exceeds {MAX_COLUMNS} columns"
     return None
 
 
@@ -69,7 +78,7 @@ def main() -> int:
             fix = fixes.get(node["article_id"])
             applied = None
             if fix and fix["kind"] == "docstring":
-                problem = docstring_problem(fix.get("docstring") or "")
+                problem = docstring_problem(fix.get("docstring") or "", packet.get("docstring") or "")
                 if problem or "docstring_lines" not in packet:
                     skipped.append((node["article"], problem or "packet has no docstring span"))
                 else:
@@ -77,10 +86,17 @@ def main() -> int:
                     applied = "docstring"
             elif fix and fix["kind"] == "v1-override":
                 v1 = packet["v1"]
-                overrides[f"{v1['report']}#{v1['idx']}"] = {
-                    key: fix[key] for key in ("title", "statement") if fix.get(key)
-                }
+                overrides.setdefault(f"{v1['report']}#{v1['idx']}", {}).update(
+                    {key: fix[key] for key in ("title", "statement") if fix.get(key)}
+                )
                 applied = "v1-override"
+            claim = claims.get(node["article_id"], {})
+            if packet["track"] == "v1" and claim.get("confirmed") and packet.get("statement_status") == "formalized":
+                # A checked claim that the matched Lean does not formalize the
+                # textbook statement withdraws v1's own "formalized" verdict.
+                v1 = packet["v1"]
+                overrides.setdefault(f"{v1['report']}#{v1['idx']}", {})["withdrawn"] = claim["reason"]
+                applied = (applied + "+withdrawn") if applied else "withdrawn"
             ledger.append(
                 {
                     "article_id": node["article_id"],
