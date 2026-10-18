@@ -132,7 +132,8 @@ def main() -> int:
         parts = sections(text)
         packet = {
             "article": f"blueprint/roadmap/{row['path']}",
-            "article_id": row["article_id"],
+            # Recently generated articles have no article_id yet; key them by path.
+            "article_id": row["article_id"] or f"path:{row['path']}",
             "track": row["track"],
             "subject": row["subject"],
             "title": row["title"],
