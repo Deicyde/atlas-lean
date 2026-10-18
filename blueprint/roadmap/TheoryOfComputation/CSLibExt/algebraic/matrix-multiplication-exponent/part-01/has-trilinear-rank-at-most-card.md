@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.hasTrilinearRankAtMost_card
 ---
 
-# Has Trilinear Rank At Most card
+# Trivial upper bound on trilinear rank
 
-Every finite coefficient tensor has an actual coordinate-basis decomposition.
+**Trivial upper bound on trilinear rank.** Let $F$ be a semiring and $A$, $B$, $C$ finite
+types. Every array $T : A \to B \to C \to F$ has trilinear rank at most
+$|A| \cdot |B| \cdot |C|$.
 
 ## Depends on
 
-- [Has Trilinear Rank At Most](has-trilinear-rank-at-most.md)
+- [Trilinear rank at most $r$](has-trilinear-rank-at-most.md)
 
 ## Proof depends on
 
-- [Rank One Trilinear Term](rank-one-trilinear-term.md)
-- [Eval](eval.md)
+- [Rank-one trilinear term](rank-one-trilinear-term.md)
+- [Value of a rank-one trilinear term](eval.md)
 
 ## Sources
 

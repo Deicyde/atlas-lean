@@ -7,21 +7,25 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.matrixMultiplicationTensor_rank_le_product
 ---
 
-# Matrix Multiplication Tensor rank le product
+# Direct rank bound for the matrix multiplication tensor
 
-The direct algorithm expresses the rectangular tensor as at most `m * n * p` elementary
-tensors.
+**Direct rank bound for the matrix multiplication tensor.** For every field $F$ and natural
+numbers $m, n, p$, the coefficient tensor of multiplying an $m \times n$ matrix by an $n \times p$
+matrix over $F$ is a sum of at most $mnp$ rank-one trilinear terms.
+
+The decomposition is the direct algorithm, with one term for each triple $(i, j, k)$ with
+$i < m$, $j < n$ and $k < p$.
 
 ## Depends on
 
-- [Has Trilinear Rank At Most](../part-01/has-trilinear-rank-at-most.md)
-- [Matrix Coordinate](../part-01/matrix-coordinate.md)
-- [Matrix Multiplication Tensor](../part-01/matrix-multiplication-tensor.md)
+- [Trilinear rank at most $r$](../part-01/has-trilinear-rank-at-most.md)
+- [Matrix coordinates](../part-01/matrix-coordinate.md)
+- [Matrix multiplication tensor](../part-01/matrix-multiplication-tensor.md)
 
 ## Proof depends on
 
-- [Rank One Trilinear Term](../part-01/rank-one-trilinear-term.md)
-- [Eval](../part-01/eval.md)
+- [Rank-one trilinear term](../part-01/rank-one-trilinear-term.md)
+- [Value of a rank-one trilinear term](../part-01/eval.md)
 
 ## Sources
 

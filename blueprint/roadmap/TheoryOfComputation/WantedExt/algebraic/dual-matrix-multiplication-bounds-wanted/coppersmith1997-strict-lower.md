@@ -14,7 +14,7 @@ $\alpha(F) > 0.29462$.
 
 ## Depends on
 
-- [Dual Circuit Exponent](../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/dual-circuit-exponent.md)
+- [Dual matrix multiplication exponent (arithmetic circuits)](../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/dual-circuit-exponent.md)
 
 ## Sources
 

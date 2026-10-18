@@ -7,9 +7,9 @@ proof: formalized
 lean: ChomskyNormalForm.cnf_derivation_length
 ---
 
-# Lemma 2
+# Lemma 2 (CNF derivations of a nonempty string $w$ have $2|w| - 1$ steps)
 
-If $H$ is in CNF and $w \in L(H)$ then every derivation of $w$ has $2|w| - 1$ steps.
+If $H$ is in CNF and $w \in L(H)$ with $w \neq \varepsilon$, then every derivation of $w$ has $2|w| - 1$ steps.
 
 ## Depends on
 

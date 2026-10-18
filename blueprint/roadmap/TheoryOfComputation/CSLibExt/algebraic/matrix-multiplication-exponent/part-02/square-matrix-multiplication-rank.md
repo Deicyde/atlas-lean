@@ -6,9 +6,12 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.squareMatrixMultiplicationRank
 ---
 
-# Square Matrix Multiplication Rank
+# Square matrix multiplication rank
 
-The genuine minimum pure-tensor rank of the square multiplication structure tensor.
+**Square matrix multiplication rank.** For a field $F$ and a natural number $n$, the square
+matrix multiplication rank of $F$ at $n$ is the tensor rank of the structure tensor of
+multiplying two $n \times n$ matrices over $F$: the least number of pure tensors whose sum is that
+structure tensor.
 
 ## Depends on
 
@@ -16,9 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Matrix Coordinate](../part-01/matrix-coordinate.md)
-- [Matrix Multiplication Structure Tensor](matrix-multiplication-structure-tensor.md)
-- [Tensor Rank](../part-01/tensor-rank.md)
+- [Matrix coordinates](../part-01/matrix-coordinate.md)
+- [Matrix multiplication structure tensor](matrix-multiplication-structure-tensor.md)
+- [Tensor rank](../part-01/tensor-rank.md)
 
 ## Sources
 

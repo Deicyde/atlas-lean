@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.matrixMultiplicationExponent_le_of_admissible
 ---
 
-# Matrix Multiplication Exponent le of admissible
+# Rank exponents bound the matrix multiplication exponent
 
-Every uniform rank bound is an upper bound for the infimal exponent.
+**Rank exponents bound the matrix multiplication exponent.** If a real number $w$ is a matrix
+multiplication rank exponent over a field $F$, then the matrix multiplication exponent
+$\omega(F)$ of $F$ satisfies $\omega(F) \le w$.
 
 ## Depends on
 
-- [Has Matrix Multiplication Rank Exponent](has-matrix-multiplication-rank-exponent.md)
-- [Matrix Multiplication Exponent](matrix-multiplication-exponent.md)
+- [Matrix multiplication rank exponent](has-matrix-multiplication-rank-exponent.md)
+- [Matrix multiplication exponent](matrix-multiplication-exponent.md)
 
 ## Sources
 

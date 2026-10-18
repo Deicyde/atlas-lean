@@ -2,8 +2,6 @@
 article_id: af_6804a12d8c4efa72462df6fe
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
 lean: TuringMachine.HALT_TM_not_decidable
 ---
 
@@ -19,7 +17,7 @@ $\mathrm{HALT}_{\mathrm{TM}}$ is undecidable.
 
 ## Proof depends on
 
-- [Theorem (A_TM is undecidable - new proof)](../lecture-11/046-a-tm-is-undecidable-new-proof.md)
+- [Theorem ($A_{\mathrm{TM}}$ is undecidable, via the Recursion Theorem)](../lecture-11/046-a-tm-is-undecidable-new-proof.md)
 
 ## Sources
 

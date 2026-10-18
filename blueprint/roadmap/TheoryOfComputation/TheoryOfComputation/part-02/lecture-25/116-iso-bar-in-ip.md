@@ -2,8 +2,6 @@
 article_id: af_fb574360b0fa6df411e5c067
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
 lean: ISO_bar_in_IP
 ---
 
@@ -17,7 +15,7 @@ $\overline{\mathrm{ISO}} \in \mathsf{IP}$.
 
 ## Proof depends on
 
-- [Defn (Lecture 25, Interactive Proofs – Introduction)](104-defn.md)
+- [Definition (The graph isomorphism language ISO)](104-defn.md)
 - [Definition (Interactive Proof acceptance probability)](115-interactive-proof-acceptance-probability.md)
 
 ## Sources

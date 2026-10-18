@@ -15,7 +15,7 @@ $\mathrm{EQ}_{\mathrm{ROBP}} \in \mathsf{BPP}$
 
 ## Proof depends on
 
-- [Claim (Lecture 24, section on $EQ_{ROBP} \in BPP$)](../lecture-24/110-claim.md)
+- [Claim (Agreement probability of arithmetized branching programs)](../lecture-24/110-claim.md)
 
 ## Sources
 

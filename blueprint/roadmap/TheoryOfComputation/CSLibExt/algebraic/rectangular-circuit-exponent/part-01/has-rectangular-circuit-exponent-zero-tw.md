@@ -13,17 +13,17 @@ The actual outer-product circuit gives an essentially quadratic zero-aspect algo
 
 ## Depends on
 
-- [Has Rectangular Circuit Exponent](has-rectangular-circuit-exponent.md)
+- [Admissible rectangular circuit exponents](has-rectangular-circuit-exponent.md)
 
 ## Proof depends on
 
-- [Arithmetic Circuit](../../arithmetic-circuit/arithmetic-circuit.md)
-- [Is Matrix Multiplication](../../matrix-multiplication/is-matrix-multiplication.md)
-- [Matrix Arithmetic Circuit](../../matrix-multiplication/matrix-arithmetic-circuit.md)
-- [Rectangular Inner Dimension](../../matrix-multiplication-exponent/part-03/rectangular-inner-dimension.md)
-- [Rectangular Inner Dimension zero](../../matrix-multiplication-exponent/part-03/rectangular-inner-dimension-zero.md)
-- [Outer Matrix Circuit](../../matrix-multiplication/outer-matrix-circuit.md)
-- [Outer Matrix Circuit correct](../../matrix-multiplication/outer-matrix-circuit-correct.md)
+- [Arithmetic circuit](../../arithmetic-circuit/arithmetic-circuit.md)
+- [Circuits that compute the matrix product](../../matrix-multiplication/is-matrix-multiplication.md)
+- [Matrix arithmetic circuit](../../matrix-multiplication/matrix-arithmetic-circuit.md)
+- [Rectangular inner dimension](../../matrix-multiplication-exponent/part-03/rectangular-inner-dimension.md)
+- [Rectangular inner dimension at aspect zero](../../matrix-multiplication-exponent/part-03/rectangular-inner-dimension-zero.md)
+- [Outer-product matrix circuit](../../matrix-multiplication/outer-matrix-circuit.md)
+- [The outer-product matrix circuit computes the matrix product](../../matrix-multiplication/outer-matrix-circuit-correct.md)
 
 ## Sources
 

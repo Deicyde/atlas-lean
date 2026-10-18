@@ -2,7 +2,6 @@
 article_id: af_85f184bc406586a6bb3daf38
 declaration: theorem
 origin: cited
-statement: formalized
 lean: TuringMachine.isTuringRecognizable_iff_isTuringEnumerable
 ---
 

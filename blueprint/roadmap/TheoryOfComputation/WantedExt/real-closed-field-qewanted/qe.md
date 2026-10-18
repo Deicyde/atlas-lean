@@ -4,14 +4,19 @@ origin: cited
 lean: MathlibExt.TheoryOfComputation.RealClosedFieldQEWanted.ProgramVerification.RealClosedFieldQE.qe
 ---
 
-# Qe
+# Quantifier elimination over the reals
 
-Quantifier elimination: `qe φ` is a quantifier-free formula equivalent to `φ` over `ℝ` in
-every environment. Its syntax may mention additional variables vacuously.
+**Quantifier elimination over the reals.** Quantifier elimination is a map sending each formula
+$\varphi$ of the language of ordered rings to a formula $\operatorname{qe}(\varphi)$, subject to
+two requirements: $\operatorname{qe}(\varphi)$ is quantifier free, and for every environment
+$e : \mathbb{N} \to \mathbb{R}$ assigning a real number to each variable,
+$\operatorname{qe}(\varphi)$ holds in $\mathbb{R}$ under $e$ if and only if $\varphi$ does.
+
+The formula $\operatorname{qe}(\varphi)$ may mention additional variables, but only vacuously.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Formulas of the language of ordered rings](formula.md)
 
 ## Sources
 

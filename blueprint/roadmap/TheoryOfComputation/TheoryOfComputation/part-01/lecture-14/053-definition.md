@@ -2,7 +2,6 @@
 article_id: af_ced3bba597f98ec4b30d7c67
 declaration: abbrev
 origin: cited
-statement: formalized
 lean: PolyTimeReducible
 ---
 

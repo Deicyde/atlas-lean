@@ -7,7 +7,7 @@ proof: formalized
 lean: Decidability.some_language_not_decidable
 ---
 
-# Corollary 2 (Lecture 8)
+# Corollary 2 (Some language is not decidable)
 
 Some language is not decidable.
 
@@ -19,7 +19,7 @@ Some language is not decidable.
 
 - [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
 - [Definition: Decider](../lecture-5/024-definition-decider.md)
-- [Corollary 1 (Lecture 8)](031-corollary-1.md)
+- [Corollary 1 (The set of all languages is uncountable)](031-corollary-1.md)
 
 ## Sources
 

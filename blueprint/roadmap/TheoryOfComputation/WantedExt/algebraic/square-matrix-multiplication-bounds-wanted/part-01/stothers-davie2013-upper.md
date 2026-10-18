@@ -6,14 +6,17 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted.stothersDavie2013Upper
 ---
 
-# Stothers Davie2013 Upper
+# Stothers–Davie bound on the matrix multiplication exponent
 
-Source: C15a [S2010, DS2013], bound `2.373689703`.
+**Stothers–Davie bound on the matrix multiplication exponent.** For every field $F$, the
+square matrix multiplication exponent $\omega(F)$ of the arithmetic-circuit model satisfies
+$\omega(F) \le 2.373689703$.
 
 ## Depends on
 
-- [Square Matrix Multiplication Circuit Exponent](../../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/square-matrix-multiplication-circuit-exp.md)
+- [Square matrix multiplication circuit exponent](../../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/square-matrix-multiplication-circuit-exp.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted](../../../../../../sources/v2/WantedExt.md)
+- C15a [S2010, DS2013], bound `2.373689703`.

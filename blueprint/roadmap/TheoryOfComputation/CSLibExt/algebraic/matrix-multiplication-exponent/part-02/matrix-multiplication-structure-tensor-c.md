@@ -7,21 +7,27 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.matrixMultiplicationStructureTensor_coefficients
 ---
 
-# Matrix Multiplication Structure Tensor coefficients
+# Coefficients of the matrix multiplication structure tensor
 
-The actual structure tensor has precisely the matrix-multiplication coefficients.
+**Coefficients of the matrix multiplication structure tensor.** Let $F$ be a field, let
+$m, n, p$ be natural numbers, and write $e_x$ for the standard basis vector with index $x$. The
+coordinates of the structure tensor
+$\sum_{i < m,\, j < n,\, k < p} e_{(i,j)} \otimes e_{(j,k)} \otimes e_{(k,i)}$ in
+$F^{m \times n} \otimes F^{n \times p} \otimes F^{p \times m}$ are the matrix multiplication
+coefficients: the coordinate at $((i, j), (j', k), (k', i'))$ is $1$ if $j = j'$, $k = k'$ and
+$i = i'$, and $0$ otherwise.
 
 ## Depends on
 
-- [Matrix Coordinate](../part-01/matrix-coordinate.md)
-- [Trilinear Tensor](../part-01/trilinear-tensor.md)
-- [Matrix Multiplication Structure Tensor](matrix-multiplication-structure-tensor.md)
-- [Matrix Multiplication Tensor](../part-01/matrix-multiplication-tensor.md)
-- [Trilinear Tensor Coefficients](../part-01/trilinear-tensor-coefficients.md)
+- [Matrix coordinates](../part-01/matrix-coordinate.md)
+- [Trilinear tensors](../part-01/trilinear-tensor.md)
+- [Matrix multiplication structure tensor](matrix-multiplication-structure-tensor.md)
+- [Matrix multiplication tensor](../part-01/matrix-multiplication-tensor.md)
+- [Coefficient array of a trilinear tensor](../part-01/trilinear-tensor-coefficients.md)
 
 ## Proof depends on
 
-- [Trilinear Tensor Coefficients tmul](../part-01/trilinear-tensor-coefficients-tmul.md)
+- [Coefficients of a pure tensor](../part-01/trilinear-tensor-coefficients-tmul.md)
 
 ## Sources
 

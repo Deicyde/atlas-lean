@@ -7,9 +7,12 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.matrixMultiplicationTensorContraction_eq_mul
 ---
 
-# Matrix Multiplication Tensor Contraction eq mul
+# Contracting the matrix multiplication tensor gives the matrix product
 
-The concrete coefficient tensor contracts to ordinary matrix multiplication.
+**Contracting the matrix multiplication tensor gives the matrix product.** For a field $F$,
+matrices $A \in F^{m \times n}$ and $B \in F^{n \times p}$, and indices $i < m$ and $k < p$, the
+contraction of the matrix multiplication tensor against $A$ and $B$ at output coordinate
+$(i, k)$ equals the entry $(AB)_{ik}$ of the matrix product.
 
 ## Depends on
 
@@ -17,8 +20,8 @@ The concrete coefficient tensor contracts to ordinary matrix multiplication.
 
 ## Proof depends on
 
-- [Matrix Coordinate](../part-01/matrix-coordinate.md)
-- [Matrix Multiplication Tensor](../part-01/matrix-multiplication-tensor.md)
+- [Matrix coordinates](../part-01/matrix-coordinate.md)
+- [Matrix multiplication tensor](../part-01/matrix-multiplication-tensor.md)
 
 ## Sources
 

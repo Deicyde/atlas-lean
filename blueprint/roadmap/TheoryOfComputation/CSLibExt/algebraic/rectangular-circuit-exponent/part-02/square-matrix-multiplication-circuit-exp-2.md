@@ -7,18 +7,23 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.squareMatrixMultiplicationCircuitExponent_endpoint
 ---
 
-# Square Matrix Multiplication Circuit Exponent endpoint
+# The square matrix multiplication circuit exponent is attained
 
-When finite, the square exponent itself is admissible in the every-epsilon sense.
+**The square matrix multiplication circuit exponent is attained.** Let $F$ be a field whose
+square matrix multiplication circuit exponent $\omega(F)$ is finite. Then $F$ has rectangular
+circuit exponent $\omega(F)$ at aspect $1$: for every $\varepsilon > 0$ there are a real $C > 0$
+and a natural number $N \ge 1$ such that for every $n \ge N$ some arithmetic circuit over $F$ with
+at most $C n^{\omega(F) + \varepsilon}$ gates computes the product of every pair of $n \times n$
+matrices over $F$.
 
 ## Depends on
 
-- [Has Rectangular Circuit Exponent](../part-01/has-rectangular-circuit-exponent.md)
-- [Square Matrix Multiplication Circuit Exponent](../part-01/square-matrix-multiplication-circuit-exp.md)
+- [Admissible rectangular circuit exponents](../part-01/has-rectangular-circuit-exponent.md)
+- [Square matrix multiplication circuit exponent](../part-01/square-matrix-multiplication-circuit-exp.md)
 
 ## Proof depends on
 
-- [Rectangular Circuit Exponent endpoint](../part-01/rectangular-circuit-exponent-endpoint.md)
+- [A finite rectangular circuit exponent is attained](../part-01/rectangular-circuit-exponent-endpoint.md)
 
 ## Sources
 

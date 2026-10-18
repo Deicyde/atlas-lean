@@ -6,7 +6,7 @@ statement: formalized
 lean: NLStrictPSPACE.nl_ssubset_pspace
 ---
 
-# Corollary (Review: Hierarchy Theorems)
+# Corollary (NL ⊊ PSPACE)
 
 $\mathsf{NL} \subsetneq \mathsf{PSPACE}$.
 

@@ -11,7 +11,7 @@ Some $\mathsf{NL}$-machine computes $c_{d+1}$ from $c_d$.
 
 ## Depends on
 
-- [Definition (Lecture 20, NL = coNL (part 1/4))](092-definition.md)
+- [Definition (Nondeterministic Turing machine computing a function)](092-definition.md)
 
 ## Sources
 

@@ -5,9 +5,9 @@ origin: cited
 lean: NLSubsetP.nl_subset_p
 ---
 
-# Theorem (Lecture 20, Review: NL ⊆ P)
+# Theorem (NL ⊆ P)
 
-$\mathsf{NL} \subseteq \mathsf{P}$
+$\mathsf{NL} \subseteq \mathsf{P}$.
 
 ## Depends on
 

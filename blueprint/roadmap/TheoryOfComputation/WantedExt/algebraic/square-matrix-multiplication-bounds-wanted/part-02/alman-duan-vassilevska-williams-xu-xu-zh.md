@@ -6,14 +6,17 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted.almanDuanVassilevskaWilliamsXuXuZhou2024Upper
 ---
 
-# Alman Duan Vassilevska Williams Xu Xu Zhou2024 Upper
+# Alman–Duan–Vassilevska Williams–Xu–Xu–Zhou upper bound for matrix multiplication
 
-Source: C15a [ADVXXZ2024], bound `2.371339`.
+**Alman–Duan–Vassilevska Williams–Xu–Xu–Zhou upper bound for matrix multiplication.** For
+every field $F$, the square matrix multiplication exponent of $F$ in the arithmetic-circuit
+model is at most $2.371339$.
 
 ## Depends on
 
-- [Square Matrix Multiplication Circuit Exponent](../../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/square-matrix-multiplication-circuit-exp.md)
+- [Square matrix multiplication circuit exponent](../../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/square-matrix-multiplication-circuit-exp.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted](../../../../../../sources/v2/WantedExt.md)
+- C15a [ADVXXZ2024], bound `2.371339`.

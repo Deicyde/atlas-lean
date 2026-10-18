@@ -15,7 +15,7 @@ $n^{2 + o(1)}$ arithmetic operations.
 
 ## Depends on
 
-- [Rectangular Circuit Exponent](../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/rectangular-circuit-exponent.md)
+- [Rectangular circuit exponent](../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/rectangular-circuit-exponent.md)
 
 ## Sources
 

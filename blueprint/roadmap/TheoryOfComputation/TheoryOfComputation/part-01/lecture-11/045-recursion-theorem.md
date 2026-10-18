@@ -2,8 +2,6 @@
 article_id: af_a400f6d850a8db9e6add059e
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
 lean: RecursionTheorem.recursion_theorem
 ---
 

@@ -15,7 +15,7 @@ $\mathrm{GG}$ is $\mathsf{PSPACE}$-complete.
 
 ## Proof depends on
 
-- [Definition (GG)](080-gg.md)
+- [Definition (GG, the Generalized Geography language)](080-gg.md)
 - [Definition (PSPACE and NPSPACE)](../lecture-18/087-pspace-and-npspace.md)
 - [Definition (SPACE and NSPACE)](../lecture-18/086-space-and-nspace.md)
 - [Definition (SPACE complexity)](../lecture-17/064-space-complexity.md)

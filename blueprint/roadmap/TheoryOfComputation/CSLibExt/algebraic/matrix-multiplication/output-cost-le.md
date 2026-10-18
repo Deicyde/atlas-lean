@@ -7,24 +7,28 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.IsMatrixMultiplication.output_cost_le
 ---
 
-# Output cost le
+# Lower bound for matrix multiplication circuits
 
-Distinct matrix entries require distinct charged nodes, over every field.
+**Lower bound for matrix multiplication circuits.** Let $F$ be a field and let $c$ be a
+circuit over $F$ that computes the product of an $m \times r$ matrix and an $r \times n$ matrix,
+where $r \ge 1$. Then $c$ has at least $mn$ gates.
+
+Distinct entries of the product require distinct gates, over every field.
 
 ## Depends on
 
-- [Arithmetic Circuit](../arithmetic-circuit/arithmetic-circuit.md)
-- [Is Matrix Multiplication](is-matrix-multiplication.md)
-- [Matrix Arithmetic Circuit](matrix-arithmetic-circuit.md)
+- [Arithmetic circuit](../arithmetic-circuit/arithmetic-circuit.md)
+- [Circuits that compute the matrix product](is-matrix-multiplication.md)
+- [Matrix arithmetic circuit](matrix-arithmetic-circuit.md)
 
 ## Proof depends on
 
-- [Evaluate](../arithmetic-circuit/evaluate-3.md)
-- [Evaluate Node](../arithmetic-circuit/evaluate-node.md)
-- [Arithmetic Operand](../arithmetic-circuit/arithmetic-operand.md)
-- [Evaluate](../arithmetic-circuit/evaluate.md)
-- [Output is node](output-is-node.md)
-- [Matrix Input](matrix-input.md)
+- [Circuit evaluation](../arithmetic-circuit/evaluate-3.md)
+- [Value of a gate in a circuit](../arithmetic-circuit/evaluate-node.md)
+- [Arithmetic operand](../arithmetic-circuit/arithmetic-operand.md)
+- [Operand evaluation](../arithmetic-circuit/evaluate.md)
+- [Outputs of a matrix multiplication circuit are gates](output-is-node.md)
+- [Matrix input assignment](matrix-input.md)
 
 ## Sources
 

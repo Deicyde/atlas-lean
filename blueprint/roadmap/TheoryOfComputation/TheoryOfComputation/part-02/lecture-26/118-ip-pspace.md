@@ -2,7 +2,6 @@
 article_id: af_640ec7da978ef8090ac62f6b
 declaration: theorem
 origin: cited
-statement: formalized
 lean: ip_eq_pspace
 ---
 

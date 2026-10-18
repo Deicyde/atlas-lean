@@ -17,7 +17,7 @@ PCP is undecidable, where $\mathrm{PCP} = \{\langle P \rangle \mid P \text{ has 
 
 ## Proof depends on
 
-- [Theorem (A_TM is undecidable - new proof)](../lecture-11/046-a-tm-is-undecidable-new-proof.md)
+- [Theorem ($A_{\mathrm{TM}}$ is undecidable, via the Recursion Theorem)](../lecture-11/046-a-tm-is-undecidable-new-proof.md)
 
 ## Sources
 

@@ -7,20 +7,23 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.hasTrilinearRankAtMost_iff
 ---
 
-# Has Trilinear Rank At Most iff
+# Rank bounds via the trilinear rank
 
-A rank bound is equivalent to the corresponding inequality for the genuine minimum.
+**Rank bounds via the trilinear rank.** Let $F$ be a semiring and $A$, $B$, $C$ finite types.
+For every array $T : A \to B \to C \to F$ and every natural number $r$, $T$ has trilinear rank at
+most $r$ if and only if the trilinear rank of $T$ (the least length of a decomposition of $T$
+into rank-one arrays) is at most $r$.
 
 ## Depends on
 
-- [Has Trilinear Rank At Most](has-trilinear-rank-at-most.md)
-- [Trilinear Rank](trilinear-rank.md)
+- [Trilinear rank at most $r$](has-trilinear-rank-at-most.md)
+- [Trilinear rank](trilinear-rank.md)
 
 ## Proof depends on
 
-- [Mono](mono.md)
-- [Trilinear Rank le](trilinear-rank-le.md)
-- [Trilinear Rank spec](trilinear-rank-spec.md)
+- [Monotonicity of trilinear rank bounds](mono.md)
+- [Decompositions bound the trilinear rank](trilinear-rank-le.md)
+- [The trilinear rank is attained](trilinear-rank-spec.md)
 
 ## Sources
 

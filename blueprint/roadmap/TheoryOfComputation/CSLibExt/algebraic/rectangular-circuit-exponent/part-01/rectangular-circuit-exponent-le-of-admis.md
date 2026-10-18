@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.rectangularCircuitExponent_le_of_admissible
 ---
 
-# Rectangular Circuit Exponent le of admissible
+# Admissible exponents bound the rectangular circuit exponent
 
-Every admissible operation exponent bounds its infimum.
+**Admissible exponents bound the rectangular circuit exponent.** Let $F$ be a field and let
+$k$ and $w$ be reals. If $w$ is an admissible rectangular circuit exponent for $F$ at aspect $k$,
+then the rectangular circuit exponent of $F$ at aspect $k$ is at most $w$.
 
 ## Depends on
 
-- [Has Rectangular Circuit Exponent](has-rectangular-circuit-exponent.md)
-- [Rectangular Circuit Exponent](rectangular-circuit-exponent.md)
+- [Admissible rectangular circuit exponents](has-rectangular-circuit-exponent.md)
+- [Rectangular circuit exponent](rectangular-circuit-exponent.md)
 
 ## Sources
 

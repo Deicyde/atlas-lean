@@ -6,7 +6,7 @@ statement: formalized
 lean: TuringMachine.LBA
 ---
 
-# Defn (Lecture 10, Linearly Bounded Automata)
+# Definition: Linearly Bounded Automaton
 
 A linearly bounded automaton (LBA) is a 1-tape TM that cannot move its head off the input portion of the tape.
 

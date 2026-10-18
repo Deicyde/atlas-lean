@@ -7,25 +7,27 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.outerMatrixCircuit_correct
 ---
 
-# Outer Matrix Circuit correct
+# The outer-product matrix circuit computes the matrix product
 
-The direct outer-product matrix circuit is correct for every field input.
+**The outer-product matrix circuit computes the matrix product.** For every field $F$ and all
+$m, n \in \mathbb{N}$, the outer-product matrix circuit over $F$ computes the product of an
+$m \times 1$ matrix and a $1 \times n$ matrix.
 
 ## Depends on
 
-- [Is Matrix Multiplication](is-matrix-multiplication.md)
-- [Outer Matrix Circuit](outer-matrix-circuit.md)
+- [Circuits that compute the matrix product](is-matrix-multiplication.md)
+- [Outer-product matrix circuit](outer-matrix-circuit.md)
 
 ## Proof depends on
 
-- [Arithmetic Circuit](../arithmetic-circuit/arithmetic-circuit.md)
-- [Evaluate](../arithmetic-circuit/evaluate-3.md)
-- [Evaluate Node](../arithmetic-circuit/evaluate-node.md)
-- [Arithmetic Gate](../arithmetic-circuit/arithmetic-gate.md)
+- [Arithmetic circuit](../arithmetic-circuit/arithmetic-circuit.md)
+- [Circuit evaluation](../arithmetic-circuit/evaluate-3.md)
+- [Value of a gate in a circuit](../arithmetic-circuit/evaluate-node.md)
+- [Arithmetic gate](../arithmetic-circuit/arithmetic-gate.md)
 - [Evaluate](../arithmetic-circuit/evaluate-2.md)
-- [Arithmetic Operand](../arithmetic-circuit/arithmetic-operand.md)
-- [Evaluate](../arithmetic-circuit/evaluate.md)
-- [Matrix Input](matrix-input.md)
+- [Arithmetic operand](../arithmetic-circuit/arithmetic-operand.md)
+- [Operand evaluation](../arithmetic-circuit/evaluate.md)
+- [Matrix input assignment](matrix-input.md)
 
 ## Sources
 

@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.hasRectangularCircuitExponent_of_inf_lt
 ---
 
-# Has Rectangular Circuit Exponent of inf lt
+# Exponents above the circuit exponent are admissible
 
-Every positive exponent above the infimum has actual epsilon-qualified circuit witnesses.
+**Exponents above the circuit exponent are admissible.** Let $F$ be a field and $k, w$ real
+numbers with $w > 0$. If the rectangular matrix multiplication exponent of the arithmetic-circuit
+model over $F$ at aspect $k$ is less than $w$, then $w$ is an admissible exponent at aspect $k$
+over $F$.
 
 ## Depends on
 
-- [Has Rectangular Circuit Exponent](has-rectangular-circuit-exponent.md)
-- [Rectangular Circuit Exponent](rectangular-circuit-exponent.md)
+- [Admissible rectangular circuit exponents](has-rectangular-circuit-exponent.md)
+- [Rectangular circuit exponent](rectangular-circuit-exponent.md)
 
 ## Proof depends on
 
-- [Mono](mono.md)
+- [Admissible circuit exponents are upward closed](mono.md)
 
 ## Sources
 

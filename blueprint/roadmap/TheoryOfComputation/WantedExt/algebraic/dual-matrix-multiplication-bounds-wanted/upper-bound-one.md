@@ -13,7 +13,7 @@ exponent $\alpha(F)$ of the arithmetic-circuit model satisfies $\alpha(F) \le 1$
 
 ## Depends on
 
-- [Dual Circuit Exponent](../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/dual-circuit-exponent.md)
+- [Dual matrix multiplication exponent (arithmetic circuits)](../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/dual-circuit-exponent.md)
 
 ## Sources
 

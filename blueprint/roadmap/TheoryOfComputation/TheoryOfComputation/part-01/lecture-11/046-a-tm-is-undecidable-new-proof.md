@@ -7,7 +7,7 @@ proof: formalized
 lean: TuringMachine.A_TM_not_decidable_via_recursion_theorem
 ---
 
-# Theorem (A_TM is undecidable - new proof)
+# Theorem ($A_{\mathrm{TM}}$ is undecidable, via the Recursion Theorem)
 
 $A_{\mathrm{TM}}$ is not decidable.
 

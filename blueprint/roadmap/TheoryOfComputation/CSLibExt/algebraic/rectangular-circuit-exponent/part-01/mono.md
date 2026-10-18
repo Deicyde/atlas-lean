@@ -7,20 +7,22 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.HasRectangularCircuitExponent.mono
 ---
 
-# Mono
+# Admissible circuit exponents are upward closed
 
-Increasing an admissible operation exponent preserves every actual circuit witness.
+**Admissible circuit exponents are upward closed.** Let $F$ be a field and $k, w, w'$ real
+numbers with $w \le w'$. If $w$ is an admissible exponent at aspect $k$ over $F$, then so is
+$w'$.
 
 ## Depends on
 
-- [Has Rectangular Circuit Exponent](has-rectangular-circuit-exponent.md)
+- [Admissible rectangular circuit exponents](has-rectangular-circuit-exponent.md)
 
 ## Proof depends on
 
-- [Arithmetic Circuit](../../arithmetic-circuit/arithmetic-circuit.md)
-- [Is Matrix Multiplication](../../matrix-multiplication/is-matrix-multiplication.md)
-- [Matrix Arithmetic Circuit](../../matrix-multiplication/matrix-arithmetic-circuit.md)
-- [Rectangular Inner Dimension](../../matrix-multiplication-exponent/part-03/rectangular-inner-dimension.md)
+- [Arithmetic circuit](../../arithmetic-circuit/arithmetic-circuit.md)
+- [Circuits that compute the matrix product](../../matrix-multiplication/is-matrix-multiplication.md)
+- [Matrix arithmetic circuit](../../matrix-multiplication/matrix-arithmetic-circuit.md)
+- [Rectangular inner dimension](../../matrix-multiplication-exponent/part-03/rectangular-inner-dimension.md)
 
 ## Sources
 

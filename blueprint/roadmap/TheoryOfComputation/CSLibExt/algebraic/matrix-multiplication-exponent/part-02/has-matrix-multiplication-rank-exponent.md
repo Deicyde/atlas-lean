@@ -6,10 +6,12 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.HasMatrixMultiplicationRankExponent
 ---
 
-# Has Matrix Multiplication Rank Exponent
+# Matrix multiplication rank exponent
 
-The ranks of the concrete square matrix-multiplication tensors are `O(n^w)`, with one
-coefficient and threshold uniform in `n`.
+**Matrix multiplication rank exponent.** A real number $w$ is a matrix multiplication rank
+exponent over a field $F$ when $w \ge 0$ and there are a real $C > 0$ and a natural number
+$N_0 \ge 1$ such that for every $n \ge N_0$ the $n \times n$ matrix multiplication coefficient
+tensor over $F$ is a sum of at most $C n^w$ rank-one trilinear terms.
 
 ## Depends on
 
@@ -17,9 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Trilinear Rank At Most](../part-01/has-trilinear-rank-at-most.md)
-- [Matrix Coordinate](../part-01/matrix-coordinate.md)
-- [Square Matrix Multiplication Tensor](square-matrix-multiplication-tensor.md)
+- [Trilinear rank at most $r$](../part-01/has-trilinear-rank-at-most.md)
+- [Matrix coordinates](../part-01/matrix-coordinate.md)
+- [Square matrix multiplication tensor](square-matrix-multiplication-tensor.md)
 
 ## Sources
 

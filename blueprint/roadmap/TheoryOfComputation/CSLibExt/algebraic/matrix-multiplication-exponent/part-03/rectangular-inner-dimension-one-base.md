@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.rectangularInnerDimension_one_base
 ---
 
-# Rectangular Inner Dimension one base
+# Rectangular inner dimension at dimension one
 
-Dimension one has inner dimension one at every aspect.
+**Rectangular inner dimension at dimension one.** For every real aspect $k$, the rectangular
+inner dimension at dimension $1$ and aspect $k$, namely $\lceil 1^k \rceil$, equals $1$.
 
 ## Depends on
 
-- [Rectangular Inner Dimension](rectangular-inner-dimension.md)
+- [Rectangular inner dimension](rectangular-inner-dimension.md)
 
 ## Sources
 

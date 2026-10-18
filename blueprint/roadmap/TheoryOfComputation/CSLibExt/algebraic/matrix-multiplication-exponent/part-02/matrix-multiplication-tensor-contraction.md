@@ -17,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Matrix Coordinate](../part-01/matrix-coordinate.md)
-- [Matrix Multiplication Tensor](../part-01/matrix-multiplication-tensor.md)
+- [Matrix coordinates](../part-01/matrix-coordinate.md)
+- [Matrix multiplication tensor](../part-01/matrix-multiplication-tensor.md)
 
 ## Sources
 

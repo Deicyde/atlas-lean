@@ -7,7 +7,7 @@ proof: formalized
 lean: Probabilistic.poly_root_prob_le
 ---
 
-# Corollary 2 (Lecture 24, Roots of Polynomials)
+# Corollary 2 (A nonzero polynomial of degree at most d vanishes at a random point with probability at most d/q)
 
 If $p(x) \neq 0$ has degree $\leq d$ and we pick a random $r \in \mathbb{F}_q$, then $\Pr[p(r) = 0] \leq \frac{d}{q}$.
 

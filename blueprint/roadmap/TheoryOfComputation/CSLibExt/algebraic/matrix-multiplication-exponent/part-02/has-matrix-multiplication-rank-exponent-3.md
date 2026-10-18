@@ -7,20 +7,24 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.hasMatrixMultiplicationRankExponent_three
 ---
 
-# Has Matrix Multiplication Rank Exponent three
+# Exponent three for matrix multiplication rank
 
-The direct cubic decomposition gives rank-growth exponent three.
+**Exponent three for matrix multiplication rank.** For every field $F$, the number $3$ is a
+matrix multiplication rank exponent over $F$.
+
+It is witnessed by the direct decomposition of the $n \times n$ matrix multiplication tensor into
+$n^3$ rank-one terms.
 
 ## Depends on
 
-- [Has Matrix Multiplication Rank Exponent](has-matrix-multiplication-rank-exponent.md)
+- [Matrix multiplication rank exponent](has-matrix-multiplication-rank-exponent.md)
 
 ## Proof depends on
 
-- [Has Trilinear Rank At Most](../part-01/has-trilinear-rank-at-most.md)
-- [Matrix Coordinate](../part-01/matrix-coordinate.md)
-- [Square Matrix Multiplication Tensor](square-matrix-multiplication-tensor.md)
-- [Square Matrix Multiplication Tensor rank le cube](square-matrix-multiplication-tensor-rank-2.md)
+- [Trilinear rank at most $r$](../part-01/has-trilinear-rank-at-most.md)
+- [Matrix coordinates](../part-01/matrix-coordinate.md)
+- [Square matrix multiplication tensor](square-matrix-multiplication-tensor.md)
+- [Direct rank bound for the square matrix multiplication tensor](square-matrix-multiplication-tensor-rank-2.md)
 
 ## Sources
 

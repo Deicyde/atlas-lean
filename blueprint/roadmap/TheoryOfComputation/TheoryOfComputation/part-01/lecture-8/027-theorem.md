@@ -5,7 +5,7 @@ origin: cited
 lean: TuringMachine.recognizable_complement_decidable
 ---
 
-# Theorem (Lecture 8)
+# Theorem (If $A$ and $\overline{A}$ are Turing-recognizable, then $A$ is decidable)
 
 If $A$ and $\overline{A}$ are Turing-recognizable then $A$ is decidable.
 

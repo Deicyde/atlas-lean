@@ -7,14 +7,15 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.ArithmeticCircuit.outerProduct_size
 ---
 
-# Outer Product size
+# Size of the outer-product circuit
 
-The exact arithmetic-operation count of the finite outer-product circuit.
+**Size of the outer-product circuit.** For every $F$ and all $m, n \in \mathbb{N}$, the
+outer-product circuit over $F$ for $m \times n$ outer products has exactly $mn$ gates.
 
 ## Depends on
 
-- [Arithmetic Circuit](arithmetic-circuit.md)
-- [Outer Product](outer-product.md)
+- [Arithmetic circuit](arithmetic-circuit.md)
+- [Outer-product circuit](outer-product.md)
 
 ## Sources
 

@@ -6,14 +6,17 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted.almanVassilevskaWilliams2020Upper
 ---
 
-# Alman Vassilevska Williams2020 Upper
+# Alman–Vassilevska Williams 2020 bound on the square exponent
 
-Source: C15a [AV2020], Alman--Vassilevska Williams bound `2.3728596`.
+**Alman–Vassilevska Williams 2020 bound on the square exponent.** For every field $F$, the
+square matrix multiplication exponent $\omega(F)$ of the arithmetic-circuit model satisfies
+$\omega(F) \le 2.3728596$.
 
 ## Depends on
 
-- [Square Matrix Multiplication Circuit Exponent](../../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/square-matrix-multiplication-circuit-exp.md)
+- [Square matrix multiplication circuit exponent](../../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/square-matrix-multiplication-circuit-exp.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted](../../../../../../sources/v2/WantedExt.md)
+- C15a [AV2020], Alman--Vassilevska Williams bound `2.3728596`.

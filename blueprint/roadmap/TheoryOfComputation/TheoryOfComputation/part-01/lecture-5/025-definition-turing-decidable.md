@@ -2,7 +2,6 @@
 article_id: af_d482afa3644493c34c468e8e
 declaration: def
 origin: cited
-statement: formalized
 lean: TuringMachine.IsTuringDecidable
 ---
 

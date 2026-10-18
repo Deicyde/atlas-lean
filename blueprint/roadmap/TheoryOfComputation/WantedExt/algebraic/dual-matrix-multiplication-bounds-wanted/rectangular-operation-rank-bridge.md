@@ -14,8 +14,8 @@ by arithmetic-circuit size equals the one defined by tensor rank.
 
 ## Depends on
 
-- [Rectangular Matrix Multiplication Exponent](../../../CSLibExt/algebraic/matrix-multiplication-exponent/part-03/rectangular-matrix-multiplication-expone.md)
-- [Rectangular Circuit Exponent](../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/rectangular-circuit-exponent.md)
+- [Rectangular matrix multiplication exponent](../../../CSLibExt/algebraic/matrix-multiplication-exponent/part-03/rectangular-matrix-multiplication-expone.md)
+- [Rectangular circuit exponent](../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/rectangular-circuit-exponent.md)
 
 ## Sources
 

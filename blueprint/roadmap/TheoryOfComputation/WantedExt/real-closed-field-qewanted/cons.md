@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.TheoryOfComputation.RealClosedFieldQEWanted.ProgramVerification.RealClosedFieldQE.cons
 ---
 
-# Cons
+# Extending an environment
 
-Extend an environment, binding de Bruijn index `0` to `x`.
+**Extending an environment.** An environment is a map $e : \mathbb{N} \to \mathbb{R}$ that
+assigns a real number to each de Bruijn index. For $x \in \mathbb{R}$, the extension of $e$ by $x$
+sends index $0$ to $x$ and index $i + 1$ to $e(i)$ for every $i \in \mathbb{N}$.
 
 ## Depends on
 

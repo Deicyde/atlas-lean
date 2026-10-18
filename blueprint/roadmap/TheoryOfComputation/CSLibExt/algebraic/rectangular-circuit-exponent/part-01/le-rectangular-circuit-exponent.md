@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.le_rectangularCircuitExponent
 ---
 
-# Le rectangular Circuit Exponent
+# Lower bounds for the rectangular circuit exponent
 
-Uniform lower bounds on admissible operation exponents pass to the infimum.
+**Lower bounds for the rectangular circuit exponent.** Let $F$ be a field, $k$ a real number
+and $W \in [0, \infty]$. If $W \le w$ for every real $w$ that is an admissible exponent at aspect
+$k$ over $F$, then $W$ is at most the rectangular matrix multiplication exponent of the
+arithmetic-circuit model over $F$ at aspect $k$.
 
 ## Depends on
 
-- [Has Rectangular Circuit Exponent](has-rectangular-circuit-exponent.md)
-- [Rectangular Circuit Exponent](rectangular-circuit-exponent.md)
+- [Admissible rectangular circuit exponents](has-rectangular-circuit-exponent.md)
+- [Rectangular circuit exponent](rectangular-circuit-exponent.md)
 
 ## Sources
 

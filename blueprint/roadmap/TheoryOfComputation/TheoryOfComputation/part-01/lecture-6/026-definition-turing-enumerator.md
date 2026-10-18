@@ -2,7 +2,6 @@
 article_id: af_3cf66f9a480a77b06bf6945f
 declaration: structure
 origin: cited
-statement: formalized
 lean: TuringMachine.TuringEnumerator
 ---
 

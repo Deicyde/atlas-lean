@@ -6,13 +6,16 @@ statement: formalized
 lean: MathlibExt.TheoryOfComputation.IntegerMultiplicationWanted.IntegerMultiplication.encodeNatBinary
 ---
 
-# Encode Nat Binary
+# Binary encoding of natural numbers
 
-Binary encoding of a natural number: its base-2 digits, least
-significant first. Its length is `Θ(log n)`, unlike Mathlib's unary
-`Computability.encodeNat`; this is the size model of the cited
-bit-complexity theorem, and using the unary encoding would make the
-stated `O(n log n)` bound uninhabitable. This replaces the upstream unary encoding and is recorded as a Lean variant.
+**Binary encoding of natural numbers.** The binary encoding of a natural number $n$ is the
+list of its base-$2$ digits, least significant first, with the digit $1$ written as the Boolean
+value true and the digit $0$ as false. The list has no trailing zero digit, so $0$ is encoded by
+the empty list.
+
+Unlike the unary encoding, this encoding of $n > 0$ has length $\lfloor \log_2 n \rfloor + 1$,
+which is the size model of the bit-complexity bound $O(n \log n)$ for integer multiplication;
+with the unary encoding that bound could not hold.
 
 ## Depends on
 
@@ -21,3 +24,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.TheoryOfComputation.IntegerMultiplicationWanted](../../../../sources/v2/WantedExt.md)
+- Lean variant; this replaces the upstream unary encoding `Computability.encodeNat`.

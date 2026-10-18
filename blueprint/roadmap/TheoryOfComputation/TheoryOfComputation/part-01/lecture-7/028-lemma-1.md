@@ -6,7 +6,7 @@ statement: formalized
 lean: ChomskyNormalForm.cfg_to_cnf
 ---
 
-# Lemma 1
+# Lemma 1 (Every CFG has an equivalent grammar in Chomsky Normal Form)
 
 Can convert every CFG into Chomsky Normal Form (CNF).
 

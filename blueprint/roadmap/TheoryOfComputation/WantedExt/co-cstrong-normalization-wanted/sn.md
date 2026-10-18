@@ -6,17 +6,20 @@ statement: formalized
 lean: MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.SN
 ---
 
-# SN
+# Strongly normalizing terms
 
-`t` is strongly normalizing: there is no infinite chain of `Step`s out of `t`.
+**Strongly normalizing terms.** The strongly normalizing terms are defined inductively: a term
+$t$ is strongly normalizing when every term to which $t$ reduces in one beta step is strongly
+normalizing. Equivalently, classically, there is no infinite chain of one-step beta reductions
+starting from $t$.
 
 ## Depends on
 
-- [Tm](tm.md)
+- [Terms of the calculus of constructions](tm.md)
 
 ## Proof depends on
 
-- [Step](step.md)
+- [One-step beta reduction](step.md)
 
 ## Sources
 

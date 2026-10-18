@@ -6,17 +6,21 @@ statement: formalized
 lean: MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.lift
 ---
 
-# Lift
+# Shifting de Bruijn indices
 
-`lift d c t` adds `d` to every free variable of `t` at index `c` or above.
+**Shifting de Bruijn indices.** For natural numbers $d$ and $c$, shifting a term $t$ by $d$
+above the cutoff $c$ adds $d$ to every variable index $i \ge c$ and leaves every index $i < c$
+unchanged. The cutoff goes up by one under each binder, that is, in the body of a $\lambda$ and
+in the codomain of a $\Pi$ (not in the type annotation or the domain), and sorts are unchanged.
+Thus the free variables of $t$ with index at least $c$ are increased by $d$.
 
 ## Depends on
 
-- [Tm](tm.md)
+- [Terms of the calculus of constructions](tm.md)
 
 ## Proof depends on
 
-- [Srt](srt.md)
+- [Sorts of CCω](srt.md)
 
 ## Sources
 

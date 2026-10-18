@@ -7,14 +7,15 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.outerMatrixCircuit_size
 ---
 
-# Outer Matrix Circuit size
+# Size of the outer-product matrix circuit
 
-The exact charged cost of the matrix outer-product circuit.
+**Size of the outer-product matrix circuit.** For every type $F$ of scalars and all
+$m, n \in \mathbb{N}$, the outer-product matrix circuit over $F$ has exactly $mn$ gates.
 
 ## Depends on
 
-- [Arithmetic Circuit](../arithmetic-circuit/arithmetic-circuit.md)
-- [Outer Matrix Circuit](outer-matrix-circuit.md)
+- [Arithmetic circuit](../arithmetic-circuit/arithmetic-circuit.md)
+- [Outer-product matrix circuit](outer-matrix-circuit.md)
 
 ## Sources
 

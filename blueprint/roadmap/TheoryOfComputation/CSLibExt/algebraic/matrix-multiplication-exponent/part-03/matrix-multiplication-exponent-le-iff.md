@@ -7,21 +7,27 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.matrixMultiplicationExponent_le_iff
 ---
 
-# Matrix Multiplication Exponent le iff
+# Upper bounds on the matrix multiplication exponent
 
-An infimum bound is exactly the epsilon-qualified rank-growth bound, not a strict endpoint
-`O(n^w)` assertion.
+**Upper bounds on the matrix multiplication exponent.** Let $F$ be a field, let $\omega(F)$
+be its matrix multiplication exponent and let $w \ge 0$ be real. Then $\omega(F) \le w$ if and
+only if for every real $\varepsilon > 0$ there are $C > 0$ and $N_0 \ge 1$ such that for every
+$n \ge N_0$ the $n \times n$ matrix multiplication tensor over $F$ has rank at most
+$C n^{w + \varepsilon}$.
+
+The right-hand side bounds the rank by $C n^{w + \varepsilon}$ for each $\varepsilon > 0$;
+it is not an $O(n^w)$ rank bound.
 
 ## Depends on
 
-- [Has Matrix Multiplication Rank Exponent](../part-02/has-matrix-multiplication-rank-exponent.md)
-- [Matrix Multiplication Exponent](../part-02/matrix-multiplication-exponent.md)
+- [Matrix multiplication rank exponent](../part-02/has-matrix-multiplication-rank-exponent.md)
+- [Matrix multiplication exponent](../part-02/matrix-multiplication-exponent.md)
 
 ## Proof depends on
 
-- [Has Matrix Multiplication Rank Exponent of inf lt](has-matrix-multiplication-rank-exponent.md)
-- [Matrix Multiplication Exponent le of admissible](../part-02/matrix-multiplication-exponent-le-of-adm.md)
-- [Matrix Multiplication Exponent ne top](matrix-multiplication-exponent-ne-top.md)
+- [Exponents above the matrix multiplication exponent admit rank bounds](has-matrix-multiplication-rank-exponent.md)
+- [Rank exponents bound the matrix multiplication exponent](../part-02/matrix-multiplication-exponent-le-of-adm.md)
+- [The matrix multiplication exponent is finite](matrix-multiplication-exponent-ne-top.md)
 
 ## Sources
 

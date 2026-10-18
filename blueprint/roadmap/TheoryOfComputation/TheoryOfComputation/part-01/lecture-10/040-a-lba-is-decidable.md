@@ -12,7 +12,7 @@ $A_{\mathrm{LBA}}$ is decidable, where $A_{\mathrm{LBA}} = \{\langle B, w \rangl
 ## Depends on
 
 - [Definition: Turing-decidable](../lecture-5/025-definition-turing-decidable.md)
-- [Defn (Lecture 10, Linearly Bounded Automata)](036-defn.md)
+- [Definition: Linearly Bounded Automaton](036-defn.md)
 
 ## Proof depends on
 

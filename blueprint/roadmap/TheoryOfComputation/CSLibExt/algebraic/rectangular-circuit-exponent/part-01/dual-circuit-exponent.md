@@ -6,9 +6,12 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.dualCircuitExponent
 ---
 
-# Dual Circuit Exponent
+# Dual matrix multiplication exponent (arithmetic circuits)
 
-The supremum of nonnegative aspects having operation exponent exactly two.
+**Dual matrix multiplication exponent (arithmetic circuits).** For a field $F$, the dual
+matrix multiplication exponent $\alpha(F) \in [0, \infty]$ of the arithmetic-circuit model is the
+supremum of all real $k \ge 0$ at which the rectangular matrix multiplication exponent of the
+arithmetic-circuit model over $F$ equals $2$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Rectangular Circuit Exponent](rectangular-circuit-exponent.md)
+- [Rectangular circuit exponent](rectangular-circuit-exponent.md)
 
 ## Sources
 

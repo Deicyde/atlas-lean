@@ -7,18 +7,20 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.HasTrilinearRankAtMost.mono
 ---
 
-# Mono
+# Monotonicity of trilinear rank bounds
 
-A decomposition with at most `r` summands is also one with at most `s ≥ r` summands.
+**Monotonicity of trilinear rank bounds.** Let $F$ be a semiring and $T : A \to B \to C \to F$
+an array. If $T$ has trilinear rank at most $r$ and $r \le s$, then $T$ has trilinear rank at
+most $s$.
 
 ## Depends on
 
-- [Has Trilinear Rank At Most](has-trilinear-rank-at-most.md)
+- [Trilinear rank at most $r$](has-trilinear-rank-at-most.md)
 
 ## Proof depends on
 
-- [Rank One Trilinear Term](rank-one-trilinear-term.md)
-- [Eval](eval.md)
+- [Rank-one trilinear term](rank-one-trilinear-term.md)
+- [Value of a rank-one trilinear term](eval.md)
 
 ## Sources
 

@@ -2,7 +2,6 @@
 article_id: af_d1b2d20ad0d4d317a13e24fa
 declaration: theorem
 origin: cited
-statement: formalized
 lean: CFGPDAEquiv.cfl_iff_pda_recognizes
 ---
 

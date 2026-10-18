@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.hasMatrixMultiplicationRankExponent_of_inf_lt
 ---
 
-# Has Matrix Multiplication Rank Exponent of inf lt
+# Exponents above the matrix multiplication exponent admit rank bounds
 
-Every positive exponent strictly above the infimum admits an actual uniform rank bound.
+**Exponents above the matrix multiplication exponent admit rank bounds.** Let $F$ be a field,
+let $\omega(F)$ be its matrix multiplication exponent and let $w > 0$ be real. If
+$\omega(F) < w$, then there are $C > 0$ and $N_0 \ge 1$ such that for every $n \ge N_0$ the
+$n \times n$ matrix multiplication tensor over $F$ has rank at most $C n^w$.
 
 ## Depends on
 
-- [Has Matrix Multiplication Rank Exponent](../part-02/has-matrix-multiplication-rank-exponent.md)
-- [Matrix Multiplication Exponent](../part-02/matrix-multiplication-exponent.md)
+- [Matrix multiplication rank exponent](../part-02/has-matrix-multiplication-rank-exponent.md)
+- [Matrix multiplication exponent](../part-02/matrix-multiplication-exponent.md)
 
 ## Proof depends on
 
-- [Mono](../part-02/mono.md)
+- [Monotonicity of matrix multiplication rank exponents](../part-02/mono.md)
 
 ## Sources
 

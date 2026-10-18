@@ -5,17 +5,18 @@ statement: formalized
 lean: MathlibExt.TheoryOfComputation.RealClosedFieldQEWanted.ProgramVerification.RealClosedFieldQE.Formula.IsQF
 ---
 
-# Is QF
+# Quantifier-free formulas
 
-A formula is quantifier free if it contains no `Formula.all`.
+**Quantifier-free formulas.** A formula is quantifier free if it contains no universal
+quantifier $\forall$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Formulas of the language of ordered rings](formula.md)
 
 ## Proof depends on
 
-- [Term](term.md)
+- [Terms of the language of ordered rings](term.md)
 
 ## Sources
 

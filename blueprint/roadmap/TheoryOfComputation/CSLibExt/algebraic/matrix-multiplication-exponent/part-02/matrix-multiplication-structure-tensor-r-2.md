@@ -7,25 +7,29 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.matrixMultiplicationStructureTensor_rank_le_seven
 ---
 
-# Matrix Multiplication Structure Tensor rank le seven
+# Strassen's decomposition of the structure tensor
 
-The same seven summands form an actual tensor-product decomposition.
+**Strassen's decomposition of the structure tensor.** Let $F$ be a field and write $e_x$ for
+the standard basis vector with index $x$. The $2 \times 2$ matrix multiplication structure tensor
+$\sum_{i, j, k < 2} e_{(i,j)} \otimes e_{(j,k)} \otimes e_{(k,i)}$ in
+$F^{2 \times 2} \otimes F^{2 \times 2} \otimes F^{2 \times 2}$ is a sum of at most $7$ pure
+tensors $u \otimes v \otimes w$.
 
 ## Depends on
 
-- [Has Tensor Rank At Most](../part-01/has-tensor-rank-at-most.md)
-- [Matrix Coordinate](../part-01/matrix-coordinate.md)
-- [Matrix Multiplication Structure Tensor](matrix-multiplication-structure-tensor.md)
+- [Tensor rank at most $r$](../part-01/has-tensor-rank-at-most.md)
+- [Matrix coordinates](../part-01/matrix-coordinate.md)
+- [Matrix multiplication structure tensor](matrix-multiplication-structure-tensor.md)
 
 ## Proof depends on
 
-- [Has Trilinear Rank At Most](../part-01/has-trilinear-rank-at-most.md)
-- [Trilinear Tensor](../part-01/trilinear-tensor.md)
-- [Has Tensor Rank At Most iff](../part-01/has-tensor-rank-at-most-iff.md)
-- [Matrix Multiplication Structure Tensor coefficients](matrix-multiplication-structure-tensor-c.md)
-- [Matrix Multiplication Tensor](../part-01/matrix-multiplication-tensor.md)
-- [Square Matrix Multiplication Tensor rank le seven](square-matrix-multiplication-tensor-rank.md)
-- [Trilinear Tensor Coefficients](../part-01/trilinear-tensor-coefficients.md)
+- [Trilinear rank at most $r$](../part-01/has-trilinear-rank-at-most.md)
+- [Trilinear tensors](../part-01/trilinear-tensor.md)
+- [Tensor rank bounds agree with coefficient rank bounds](../part-01/has-tensor-rank-at-most-iff.md)
+- [Coefficients of the matrix multiplication structure tensor](matrix-multiplication-structure-tensor-c.md)
+- [Matrix multiplication tensor](../part-01/matrix-multiplication-tensor.md)
+- [Strassen's rank bound for $2 \times 2$ matrix multiplication](square-matrix-multiplication-tensor-rank.md)
+- [Coefficient array of a trilinear tensor](../part-01/trilinear-tensor-coefficients.md)
 
 ## Sources
 

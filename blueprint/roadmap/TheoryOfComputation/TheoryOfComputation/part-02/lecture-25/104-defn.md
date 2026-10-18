@@ -6,7 +6,7 @@ statement: formalized
 lean: Probabilistic.ISO
 ---
 
-# Defn (Lecture 25, Interactive Proofs – Introduction)
+# Definition (The graph isomorphism language ISO)
 
 $\mathrm{ISO} = \{\langle G, H \rangle \mid G \text{ and } H \text{ are isomorphic graphs}\}$
 

@@ -6,13 +6,17 @@ statement: formalized
 lean: MathlibExt.TheoryOfComputation.CoCStrongNormalizationWanted.ProgramVerification.CoCStrongNormalization.Wf
 ---
 
-# Wf
+# Well-formed contexts
 
-Well-formedness of a context; the head of the list is the most recent binding.
+**Well-formed contexts.** A context is a list of terms whose head is the most recent binding.
+Well-formedness of contexts is defined together with the typing judgement
+$\Gamma \vdash t : A$ as the least predicate such that the empty context is well formed, and
+if $\Gamma$ is well formed and $\Gamma \vdash A : s$ for some sort $s$, then the context
+obtained from $\Gamma$ by adding $A$ at the head is well formed.
 
 ## Depends on
 
-- [Tm](tm.md)
+- [Terms of the calculus of constructions](tm.md)
 
 ## Sources
 

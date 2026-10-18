@@ -6,9 +6,12 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.MatrixArithmeticCircuit
 ---
 
-# Matrix Arithmetic Circuit
+# Matrix arithmetic circuit
 
-A circuit whose inputs and outputs are actual rectangular matrix entries.
+**Matrix arithmetic circuit.** For a type $F$ of scalars and $m, r, n \in \mathbb{N}$, a matrix
+arithmetic circuit is an arithmetic circuit over $F$ whose inputs are indexed by the entries
+$(i, k)$ of an $m \times r$ matrix together with the entries $(k, j)$ of an $r \times n$ matrix,
+and whose outputs are indexed by the entries $(i, j)$ of an $m \times n$ matrix.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Arithmetic Circuit](../arithmetic-circuit/arithmetic-circuit.md)
+- [Arithmetic circuit](../arithmetic-circuit/arithmetic-circuit.md)
 
 ## Sources
 

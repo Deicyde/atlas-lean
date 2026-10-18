@@ -7,18 +7,19 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.matrixMultiplicationExponent_le_three
 ---
 
-# Matrix Multiplication Exponent le three
+# The matrix multiplication exponent is at most three
 
-The concrete square matrix-multiplication exponent is at most three.
+**The matrix multiplication exponent is at most three.** For every field $F$, the matrix
+multiplication exponent $\omega(F)$ of $F$ satisfies $\omega(F) \le 3$.
 
 ## Depends on
 
-- [Matrix Multiplication Exponent](matrix-multiplication-exponent.md)
+- [Matrix multiplication exponent](matrix-multiplication-exponent.md)
 
 ## Proof depends on
 
-- [Has Matrix Multiplication Rank Exponent](has-matrix-multiplication-rank-exponent.md)
-- [Has Matrix Multiplication Rank Exponent three](has-matrix-multiplication-rank-exponent-3.md)
+- [Matrix multiplication rank exponent](has-matrix-multiplication-rank-exponent.md)
+- [Exponent three for matrix multiplication rank](has-matrix-multiplication-rank-exponent-3.md)
 
 ## Sources
 

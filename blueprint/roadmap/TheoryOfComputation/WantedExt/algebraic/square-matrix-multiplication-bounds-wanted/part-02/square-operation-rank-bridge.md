@@ -6,16 +6,18 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted.squareOperationRankBridge
 ---
 
-# Square Operation Rank Bridge
+# Circuit size and tensor rank give the same square exponent
 
-Source: C15a additional comments and [B2013]: the arithmetic-operation
-exponent agrees with the tensor-rank exponent. This bridge is not proved.
+**Circuit size and tensor rank give the same square exponent.** For every field $F$, the
+square matrix multiplication exponent of $F$ defined by arithmetic-circuit size equals the
+matrix multiplication exponent of $F$ defined by tensor rank.
 
 ## Depends on
 
-- [Matrix Multiplication Exponent](../../../../CSLibExt/algebraic/matrix-multiplication-exponent/part-02/matrix-multiplication-exponent.md)
-- [Square Matrix Multiplication Circuit Exponent](../../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/square-matrix-multiplication-circuit-exp.md)
+- [Matrix multiplication exponent](../../../../CSLibExt/algebraic/matrix-multiplication-exponent/part-02/matrix-multiplication-exponent.md)
+- [Square matrix multiplication circuit exponent](../../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/square-matrix-multiplication-circuit-exp.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted](../../../../../../sources/v2/WantedExt.md)
+- C15a additional comments and [B2013]: the arithmetic-operation exponent agrees with the tensor-rank exponent. This bridge is not proved.

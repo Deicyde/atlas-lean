@@ -7,14 +7,16 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.squareMatrixMultiplicationCircuitExponent_def
 ---
 
-# Square Matrix Multiplication Circuit Exponent def
+# The square circuit exponent is the aspect-one rectangular exponent
 
-The square operation exponent is definitionally the aspect-one rectangular exponent.
+**The square circuit exponent is the aspect-one rectangular exponent.** For every field $F$,
+the square matrix multiplication circuit exponent of $F$ equals the rectangular circuit exponent
+of $F$ at aspect $1$.
 
 ## Depends on
 
-- [Rectangular Circuit Exponent](rectangular-circuit-exponent.md)
-- [Square Matrix Multiplication Circuit Exponent](square-matrix-multiplication-circuit-exp.md)
+- [Rectangular circuit exponent](rectangular-circuit-exponent.md)
+- [Square matrix multiplication circuit exponent](square-matrix-multiplication-circuit-exp.md)
 
 ## Sources
 

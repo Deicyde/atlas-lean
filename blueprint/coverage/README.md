@@ -13,7 +13,7 @@ cover only the decomposed rows below; they are not repository-wide coverage.
 | Area | Coverage | Evidence |
 | --- | --- | --- |
 | v2 / MathlibExt | DECOMPOSED | [6378 documented public declarations](../roadmap/Algebra/MathlibExt/README.md) across 23 subjects; 145 instances and 1310 undocumented public declarations are not articles. |
-| v2 / CSLibExt | DECOMPOSED | [3919 documented public declarations](../roadmap/Computability/CSLibExt/README.md) across 4 subjects; 39 instances and 1134 undocumented public declarations are not articles. |
+| v2 / CSLibExt | DECOMPOSED | [3919 documented public declarations](../roadmap/Computability/CSLibExt/README.md) across 4 subjects; 39 instances and 1136 undocumented public declarations are not articles. |
 | v2 / WantedExt | DECOMPOSED | [3096 documented public declarations](../roadmap/Algebra/WantedExt/README.md) across 16 subjects; 87 instances and 142 undocumented public declarations are not articles. |
 | v1 / AlgebraNotes | DECOMPOSED | [176 source statements](../roadmap/Algebra/AlgebraNotes/README.md), 151 with a formalized statement. |
 | v1 / AlgebraicCombinatorics | DECOMPOSED | [39 source statements](../roadmap/Combinatorics/AlgebraicCombinatorics/README.md), 37 with a formalized statement. |
@@ -39,7 +39,7 @@ cover only the decomposed rows below; they are not repository-wide coverage.
 | v1 / ProjectionTheory | DECOMPOSED | [111 source statements](../roadmap/Analysis/ProjectionTheory/README.md), 72 with a formalized statement. |
 | v1 / RealAnalysis | DECOMPOSED | [177 source statements](../roadmap/Analysis/RealAnalysis/README.md), 175 with a formalized statement. |
 | v1 / TensorCategories | DECOMPOSED | [229 source statements](../roadmap/CategoryTheory/TensorCategories/README.md), 113 with a formalized statement. |
-| v1 / TheoryOfComputation | DECOMPOSED | [118 source statements](../roadmap/TheoryOfComputation/TheoryOfComputation/README.md), 84 with a formalized statement. |
+| v1 / TheoryOfComputation | DECOMPOSED | [118 source statements](../roadmap/TheoryOfComputation/TheoryOfComputation/README.md), 56 with a formalized statement. |
 | v1 / TheoryOfProbability | DECOMPOSED | [100 source statements](../roadmap/Probability/TheoryOfProbability/README.md), 83 with a formalized statement. |
 | v2 tests (MathlibExtTest, CSLibExtTest) | OUT | Tests and diagnostics rather than mathematical results. |
 | Atlas/StatisticalMechanics | MAPPED | 6971 standalone Lean files; no roadmap articles yet. |

@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.TheoryOfComputation.RealClosedFieldQEWanted.ProgramVerification.RealClosedFieldQE.Formula
 ---
 
-# Formula
+# Formulas of the language of ordered rings
 
-Formulas in the language of ordered rings. The connectives are the minimal set
-`⊥`, `→`, `∀`; the usual derived connectives are provided as abbreviations below.
+**Formulas of the language of ordered rings.** Formulas are built from the atomic formulas
+$s < t$ and $s = t$, for terms $s$ and $t$, and falsity $\bot$, by implication $\varphi \to \psi$
+and universal quantification $\forall \varphi$, which binds de Bruijn index $0$ in $\varphi$.
+Negation, truth, disjunction, conjunction and existential quantification are defined from these.
 
 ## Depends on
 

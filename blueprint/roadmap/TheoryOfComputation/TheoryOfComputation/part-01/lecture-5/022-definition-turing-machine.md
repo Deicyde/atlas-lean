@@ -2,7 +2,6 @@
 article_id: af_b8846ac6b0b3bf21b86260dd
 declaration: structure
 origin: cited
-statement: formalized
 lean: TuringMachine.TM
 ---
 

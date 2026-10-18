@@ -15,7 +15,7 @@ $\mathsf{NL} = \mathsf{coNL}$
 
 ## Proof depends on
 
-- [Definition (Lecture 20, NL = coNL (part 1/4))](092-definition.md)
+- [Definition (Nondeterministic Turing machine computing a function)](092-definition.md)
 - [Corollary (Lecture 20, NL = coNL (part 4/4))](094-corollary.md)
 
 ## Sources

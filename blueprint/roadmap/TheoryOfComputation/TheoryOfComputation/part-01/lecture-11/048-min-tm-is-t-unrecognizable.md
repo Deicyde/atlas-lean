@@ -2,8 +2,6 @@
 article_id: af_832a701c1fbf60272ca58eb4
 declaration: theorem
 origin: cited
-statement: formalized
-proof: formalized
 lean: TuringMachine.MIN_TM_not_recognizable
 ---
 

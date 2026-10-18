@@ -7,14 +7,17 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.le_dualCircuitExponent
 ---
 
-# Le dual Circuit Exponent
+# Aspects with circuit exponent two bound the dual exponent
 
-An actually quadratic aspect is a lower bound on the dual exponent.
+**Aspects with circuit exponent two bound the dual exponent.** Let $F$ be a field and $k \ge 0$
+a real number. If the rectangular matrix multiplication exponent of the arithmetic-circuit model
+over $F$ at aspect $k$ equals $2$, then $k \le \alpha(F)$, where $\alpha(F)$ is the dual matrix
+multiplication exponent of the arithmetic-circuit model.
 
 ## Depends on
 
-- [Dual Circuit Exponent](dual-circuit-exponent.md)
-- [Rectangular Circuit Exponent](rectangular-circuit-exponent.md)
+- [Dual matrix multiplication exponent (arithmetic circuits)](dual-circuit-exponent.md)
+- [Rectangular circuit exponent](rectangular-circuit-exponent.md)
 
 ## Sources
 

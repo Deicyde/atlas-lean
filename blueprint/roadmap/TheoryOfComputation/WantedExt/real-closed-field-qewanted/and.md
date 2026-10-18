@@ -5,17 +5,18 @@ statement: formalized
 lean: MathlibExt.TheoryOfComputation.RealClosedFieldQEWanted.ProgramVerification.RealClosedFieldQE.Formula.and
 ---
 
-# And
+# Conjunction of formulas
 
-Conjunction.
+**Conjunction of formulas.** For formulas $\varphi$ and $\psi$, the conjunction
+$\varphi \wedge \psi$ is the formula $\neg(\varphi \to \neg\psi)$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Formulas of the language of ordered rings](formula.md)
 
 ## Proof depends on
 
-- [Not](not.md)
+- [Negation of a formula](not.md)
 
 ## Sources
 

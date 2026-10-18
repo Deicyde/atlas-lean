@@ -5,17 +5,18 @@ statement: formalized
 lean: MathlibExt.TheoryOfComputation.RealClosedFieldQEWanted.ProgramVerification.RealClosedFieldQE.Formula.or
 ---
 
-# Or
+# Disjunction of formulas
 
-Disjunction.
+**Disjunction of formulas.** The disjunction $\varphi \lor \psi$ of formulas $\varphi$ and
+$\psi$ is the formula $\neg\varphi \to \psi$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Formulas of the language of ordered rings](formula.md)
 
 ## Proof depends on
 
-- [Not](not.md)
+- [Negation of a formula](not.md)
 
 ## Sources
 

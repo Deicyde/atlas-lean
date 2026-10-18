@@ -2,7 +2,6 @@
 article_id: af_d5093fe6c5690e629ea98274
 declaration: theorem
 origin: cited
-statement: formalized
 lean: CliqueReduction.inP_ThreeSAT_of_inP_CLIQUE
 ---
 

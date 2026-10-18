@@ -2,7 +2,6 @@
 article_id: af_050290cd57c6e231abbbaf0f
 declaration: theorem
 origin: cited
-statement: formalized
 lean: SpaceComplexity.space_hierarchy_theorem
 ---
 

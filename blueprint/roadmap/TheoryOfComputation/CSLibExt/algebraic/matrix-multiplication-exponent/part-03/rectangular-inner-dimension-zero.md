@@ -7,13 +7,16 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.rectangularInnerDimension_zero
 ---
 
-# Rectangular Inner Dimension zero
+# Rectangular inner dimension at aspect zero
 
-Zero aspect is the inner dimension of an outer product.
+**Rectangular inner dimension at aspect zero.** For every natural number $n$, including
+$n = 0$, the rectangular inner dimension at dimension $n$ and aspect $0$, namely
+$\lceil n^0 \rceil$, equals $1$, so aspect $0$ is the outer product of an $n \times 1$ matrix
+and a $1 \times n$ matrix.
 
 ## Depends on
 
-- [Rectangular Inner Dimension](rectangular-inner-dimension.md)
+- [Rectangular inner dimension](rectangular-inner-dimension.md)
 
 ## Sources
 

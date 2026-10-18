@@ -12,13 +12,13 @@ $E_{\mathrm{LBA}}$ is undecidable.
 ## Depends on
 
 - [Definition: Turing-decidable](../lecture-5/025-definition-turing-decidable.md)
-- [Defn (Lecture 10, Linearly Bounded Automata)](036-defn.md)
+- [Definition: Linearly Bounded Automaton](036-defn.md)
 - [Definition: Turing Machine](../lecture-5/022-definition-turing-machine.md)
 - [Definition: Decider](../lecture-5/024-definition-decider.md)
 
 ## Proof depends on
 
-- [Theorem (A_TM is undecidable - new proof)](../lecture-11/046-a-tm-is-undecidable-new-proof.md)
+- [Theorem ($A_{\mathrm{TM}}$ is undecidable, via the Recursion Theorem)](../lecture-11/046-a-tm-is-undecidable-new-proof.md)
 
 ## Sources
 

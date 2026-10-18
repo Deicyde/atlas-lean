@@ -12,12 +12,12 @@ Evaluate the charged operation on its two actual operands.
 
 ## Depends on
 
-- [Arithmetic Gate](arithmetic-gate.md)
+- [Arithmetic gate](arithmetic-gate.md)
 
 ## Proof depends on
 
-- [Arithmetic Operand](arithmetic-operand.md)
-- [Evaluate](evaluate.md)
+- [Arithmetic operand](arithmetic-operand.md)
+- [Operand evaluation](evaluate.md)
 
 ## Sources
 

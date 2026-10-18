@@ -5,17 +5,18 @@ statement: formalized
 lean: MathlibExt.TheoryOfComputation.RealClosedFieldQEWanted.ProgramVerification.RealClosedFieldQE.Formula.tru
 ---
 
-# Tru
+# The true formula
 
-Truth.
+**The true formula.** The formula $\top$ is the negation $\neg\bot$ of falsity, that is, the
+formula $\bot \to \bot$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Formulas of the language of ordered rings](formula.md)
 
 ## Proof depends on
 
-- [Not](not.md)
+- [Negation of a formula](not.md)
 
 ## Sources
 

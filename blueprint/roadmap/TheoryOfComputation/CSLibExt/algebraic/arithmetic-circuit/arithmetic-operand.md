@@ -6,9 +6,10 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.ArithmeticOperand
 ---
 
-# Arithmetic Operand
+# Arithmetic operand
 
-A scalar literal, an input coordinate, or a previously computed node.
+**Arithmetic operand.** An arithmetic operand over $F$ with inputs indexed by $A$ and $n$
+nodes is a constant $x \in F$, an input $a \in A$, or a reference to a node $i < n$.
 
 ## Depends on
 

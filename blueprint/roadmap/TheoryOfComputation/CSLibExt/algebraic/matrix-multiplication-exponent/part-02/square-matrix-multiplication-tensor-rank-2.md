@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.squareMatrixMultiplicationTensor_rank_le_cube
 ---
 
-# Square Matrix Multiplication Tensor rank le cube
+# Direct rank bound for the square matrix multiplication tensor
 
-The square tensor has the direct cubic decomposition.
+**Direct rank bound for the square matrix multiplication tensor.** For every field $F$ and
+natural number $n$, the square $n \times n$ matrix multiplication tensor over $F$ is a sum of at
+most $n^3$ rank-one trilinear terms.
 
 ## Depends on
 
-- [Has Trilinear Rank At Most](../part-01/has-trilinear-rank-at-most.md)
-- [Matrix Coordinate](../part-01/matrix-coordinate.md)
-- [Square Matrix Multiplication Tensor](square-matrix-multiplication-tensor.md)
+- [Trilinear rank at most $r$](../part-01/has-trilinear-rank-at-most.md)
+- [Matrix coordinates](../part-01/matrix-coordinate.md)
+- [Square matrix multiplication tensor](square-matrix-multiplication-tensor.md)
 
 ## Proof depends on
 
-- [Matrix Multiplication Tensor rank le product](matrix-multiplication-tensor-rank-le-pro.md)
+- [Direct rank bound for the matrix multiplication tensor](matrix-multiplication-tensor-rank-le-pro.md)
 
 ## Sources
 

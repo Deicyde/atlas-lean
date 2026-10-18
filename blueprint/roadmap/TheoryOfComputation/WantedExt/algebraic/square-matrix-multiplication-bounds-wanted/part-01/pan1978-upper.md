@@ -6,14 +6,17 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted.pan1978Upper
 ---
 
-# Pan1978 Upper
+# Pan's 1978 bound on the square exponent
 
-Source: C15a [P1978], Pan's `log₇₀ 143640` bound.
+**Pan's 1978 bound on the square exponent.** For every field $F$, the square matrix
+multiplication exponent $\omega(F)$ of the arithmetic-circuit model satisfies
+$\omega(F) \le \log_{70} 143640$.
 
 ## Depends on
 
-- [Square Matrix Multiplication Circuit Exponent](../../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/square-matrix-multiplication-circuit-exp.md)
+- [Square matrix multiplication circuit exponent](../../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/square-matrix-multiplication-circuit-exp.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted](../../../../../../sources/v2/WantedExt.md)
+- C15a [P1978], Pan's `log₇₀ 143640` bound.

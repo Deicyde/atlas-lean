@@ -6,7 +6,7 @@ statement: formalized
 lean: cfl_inter_regular
 ---
 
-# Corollary 2 (Lecture 5, Equivalence of CFGs and PDAs, Corollaries)
+# Corollary 2 (The intersection of a context-free language and a regular language is context-free)
 
 If $A$ is a CFL and $B$ is regular then $A \cap B$ is a CFL.
 

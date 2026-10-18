@@ -6,10 +6,11 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.matrixMultiplicationExponent
 ---
 
-# Matrix Multiplication Exponent
+# Matrix multiplication exponent
 
-The square matrix-multiplication exponent in its concrete tensor-rank formulation. An empty
-admissible set gives `⊤`.
+**Matrix multiplication exponent.** The matrix multiplication exponent $\omega(F)$ of a field
+$F$ is the infimum, taken in $[0, \infty]$, of the real numbers $w$ that are matrix multiplication
+rank exponents over $F$; it is $\infty$ when there is no such $w$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Matrix Multiplication Rank Exponent](has-matrix-multiplication-rank-exponent.md)
+- [Matrix multiplication rank exponent](has-matrix-multiplication-rank-exponent.md)
 
 ## Sources
 

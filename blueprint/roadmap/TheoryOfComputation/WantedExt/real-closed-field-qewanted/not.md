@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.TheoryOfComputation.RealClosedFieldQEWanted.ProgramVerification.RealClosedFieldQE.Formula.not
 ---
 
-# Not
+# Negation of a formula
 
-Negation.
+**Negation of a formula.** The negation $\neg\varphi$ of a formula $\varphi$ is the formula
+$\varphi \to \bot$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Formulas of the language of ordered rings](formula.md)
 
 ## Sources
 

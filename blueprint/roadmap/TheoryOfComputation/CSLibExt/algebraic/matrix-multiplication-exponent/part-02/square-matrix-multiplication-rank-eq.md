@@ -7,24 +7,26 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.squareMatrixMultiplicationRank_eq
 ---
 
-# Square Matrix Multiplication Rank eq
+# Square matrix multiplication rank equals the coefficient tensor rank
 
-The coefficient-rank minimum equals the actual tensor-product rank minimum.
+**Square matrix multiplication rank equals the coefficient tensor rank.** For every field $F$
+and natural number $n$, the square matrix multiplication rank of $F$ at $n$ equals the trilinear
+rank of the square $n \times n$ matrix multiplication tensor over $F$.
 
 ## Depends on
 
-- [Matrix Coordinate](../part-01/matrix-coordinate.md)
-- [Square Matrix Multiplication Rank](square-matrix-multiplication-rank.md)
-- [Square Matrix Multiplication Tensor](square-matrix-multiplication-tensor.md)
-- [Trilinear Rank](../part-01/trilinear-rank.md)
+- [Matrix coordinates](../part-01/matrix-coordinate.md)
+- [Square matrix multiplication rank](square-matrix-multiplication-rank.md)
+- [Square matrix multiplication tensor](square-matrix-multiplication-tensor.md)
+- [Trilinear rank](../part-01/trilinear-rank.md)
 
 ## Proof depends on
 
-- [Trilinear Tensor](../part-01/trilinear-tensor.md)
-- [Matrix Multiplication Structure Tensor](matrix-multiplication-structure-tensor.md)
-- [Matrix Multiplication Structure Tensor coefficients](matrix-multiplication-structure-tensor-c.md)
-- [Matrix Multiplication Tensor](../part-01/matrix-multiplication-tensor.md)
-- [Trilinear Tensor Coefficients](../part-01/trilinear-tensor-coefficients.md)
+- [Trilinear tensors](../part-01/trilinear-tensor.md)
+- [Matrix multiplication structure tensor](matrix-multiplication-structure-tensor.md)
+- [Coefficients of the matrix multiplication structure tensor](matrix-multiplication-structure-tensor-c.md)
+- [Matrix multiplication tensor](../part-01/matrix-multiplication-tensor.md)
+- [Coefficient array of a trilinear tensor](../part-01/trilinear-tensor-coefficients.md)
 
 ## Sources
 

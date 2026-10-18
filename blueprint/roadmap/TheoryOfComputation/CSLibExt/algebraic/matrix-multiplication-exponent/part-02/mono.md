@@ -7,19 +7,21 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.HasMatrixMultiplicationRankExponent.mono
 ---
 
-# Mono
+# Monotonicity of matrix multiplication rank exponents
 
-An admissible growth exponent remains admissible when it is increased.
+**Monotonicity of matrix multiplication rank exponents.** Let $F$ be a field and let
+$w \le w'$ be real numbers. If $w$ is a matrix multiplication rank exponent for $F$, then so
+is $w'$.
 
 ## Depends on
 
-- [Has Matrix Multiplication Rank Exponent](has-matrix-multiplication-rank-exponent.md)
+- [Matrix multiplication rank exponent](has-matrix-multiplication-rank-exponent.md)
 
 ## Proof depends on
 
-- [Has Trilinear Rank At Most](../part-01/has-trilinear-rank-at-most.md)
-- [Matrix Coordinate](../part-01/matrix-coordinate.md)
-- [Square Matrix Multiplication Tensor](square-matrix-multiplication-tensor.md)
+- [Trilinear rank at most $r$](../part-01/has-trilinear-rank-at-most.md)
+- [Matrix coordinates](../part-01/matrix-coordinate.md)
+- [Square matrix multiplication tensor](square-matrix-multiplication-tensor.md)
 
 ## Sources
 

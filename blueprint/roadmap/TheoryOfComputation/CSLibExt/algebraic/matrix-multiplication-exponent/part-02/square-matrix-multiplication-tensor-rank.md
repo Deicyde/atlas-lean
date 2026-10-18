@@ -7,20 +7,24 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.squareMatrixMultiplicationTensor_rank_le_seven
 ---
 
-# Square Matrix Multiplication Tensor rank le seven
+# Strassen's rank bound for $2 \times 2$ matrix multiplication
 
-Strassen's seven actual pure summands compute the `2 × 2` tensor in every characteristic.
+**Strassen's rank bound for $2 \times 2$ matrix multiplication.** For every field $F$, the
+square $2 \times 2$ matrix multiplication tensor over $F$ is a sum of at most $7$ rank-one
+trilinear terms.
+
+The seven terms are Strassen's, and the decomposition holds in every characteristic.
 
 ## Depends on
 
-- [Has Trilinear Rank At Most](../part-01/has-trilinear-rank-at-most.md)
-- [Matrix Coordinate](../part-01/matrix-coordinate.md)
-- [Square Matrix Multiplication Tensor](square-matrix-multiplication-tensor.md)
+- [Trilinear rank at most $r$](../part-01/has-trilinear-rank-at-most.md)
+- [Matrix coordinates](../part-01/matrix-coordinate.md)
+- [Square matrix multiplication tensor](square-matrix-multiplication-tensor.md)
 
 ## Proof depends on
 
-- [Rank One Trilinear Term](../part-01/rank-one-trilinear-term.md)
-- [Eval](../part-01/eval.md)
+- [Rank-one trilinear term](../part-01/rank-one-trilinear-term.md)
+- [Value of a rank-one trilinear term](../part-01/eval.md)
 
 ## Sources
 

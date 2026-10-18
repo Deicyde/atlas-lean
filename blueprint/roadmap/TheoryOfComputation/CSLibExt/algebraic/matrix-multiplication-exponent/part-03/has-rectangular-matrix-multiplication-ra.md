@@ -6,10 +6,16 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.HasRectangularMatrixMultiplicationRankExponent
 ---
 
-# Has Rectangular Matrix Multiplication Rank Exponent
+# Rank exponents for rectangular matrix multiplication
 
-An essentially `n^w` rank bound for rectangular matrix products. The coefficient and
-dimension threshold may depend on epsilon, but not on the dimension.
+**Rank exponents for rectangular matrix multiplication.** Let $F$ be a field and let $k, w$ be
+real. Then $w$ is a rank exponent for rectangular matrix multiplication over $F$ at aspect $k$
+when $k \ge 0$, $w \ge 0$, and for every $\varepsilon > 0$ there are $C > 0$ and $N_0 \ge 1$
+such that for every $n \ge N_0$ the tensor of multiplying an $n \times \lceil n^k \rceil$
+matrix by a $\lceil n^k \rceil \times n$ matrix over $F$ has rank at most
+$C n^{w + \varepsilon}$.
+
+The coefficient $C$ and the threshold $N_0$ may depend on $\varepsilon$, but not on $n$.
 
 ## Depends on
 
@@ -17,10 +23,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Trilinear Rank At Most](../part-01/has-trilinear-rank-at-most.md)
-- [Matrix Coordinate](../part-01/matrix-coordinate.md)
-- [Matrix Multiplication Tensor](../part-01/matrix-multiplication-tensor.md)
-- [Rectangular Inner Dimension](rectangular-inner-dimension.md)
+- [Trilinear rank at most $r$](../part-01/has-trilinear-rank-at-most.md)
+- [Matrix coordinates](../part-01/matrix-coordinate.md)
+- [Matrix multiplication tensor](../part-01/matrix-multiplication-tensor.md)
+- [Rectangular inner dimension](rectangular-inner-dimension.md)
 
 ## Sources
 

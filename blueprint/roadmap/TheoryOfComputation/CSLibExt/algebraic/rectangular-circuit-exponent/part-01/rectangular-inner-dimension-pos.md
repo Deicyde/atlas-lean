@@ -7,13 +7,14 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.rectangularInnerDimension_pos
 ---
 
-# Rectangular Inner Dimension pos
+# The rounded inner dimension is positive
 
-A positive outer dimension gives a positive rounded inner dimension.
+**The rounded inner dimension is positive.** For every natural number $n \ge 1$ and every real
+$k$, the rounded inner dimension $\lceil n^k \rceil$ is positive.
 
 ## Depends on
 
-- [Rectangular Inner Dimension](../../matrix-multiplication-exponent/part-03/rectangular-inner-dimension.md)
+- [Rectangular inner dimension](../../matrix-multiplication-exponent/part-03/rectangular-inner-dimension.md)
 
 ## Sources
 

@@ -7,18 +7,21 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.rectangularCircuitExponent_endpoint
 ---
 
-# Rectangular Circuit Exponent endpoint
+# A finite rectangular circuit exponent is attained
 
-When finite, the infimal exponent itself is the minimum in the every-epsilon sense.
+**A finite rectangular circuit exponent is attained.** Let $F$ be a field and $k \ge 0$ a real
+number. If the rectangular matrix multiplication exponent $\omega$ of the arithmetic-circuit model
+over $F$ at aspect $k$ is finite, then $\omega$ is itself an admissible exponent at aspect $k$
+over $F$.
 
 ## Depends on
 
-- [Has Rectangular Circuit Exponent](has-rectangular-circuit-exponent.md)
-- [Rectangular Circuit Exponent](rectangular-circuit-exponent.md)
+- [Admissible rectangular circuit exponents](has-rectangular-circuit-exponent.md)
+- [Rectangular circuit exponent](rectangular-circuit-exponent.md)
 
 ## Proof depends on
 
-- [Rectangular Circuit Exponent le iff](rectangular-circuit-exponent-le-iff.md)
+- [Upper bounds on the rectangular circuit exponent](rectangular-circuit-exponent-le-iff.md)
 
 ## Sources
 

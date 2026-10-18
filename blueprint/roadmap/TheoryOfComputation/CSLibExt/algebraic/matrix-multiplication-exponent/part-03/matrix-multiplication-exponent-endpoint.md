@@ -7,19 +7,23 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.matrixMultiplicationExponent_endpoint
 ---
 
-# Matrix Multiplication Exponent endpoint
+# Rank bounds just above the matrix multiplication exponent
 
-The infimal tensor exponent itself permits `n^(omega + o(1))` rank growth.
+**Rank bounds just above the matrix multiplication exponent.** Let $F$ be a field and let
+$\omega(F)$ be its matrix multiplication exponent, a finite real number. For every real
+$\varepsilon > 0$ there are $C > 0$ and $N_0 \ge 1$ such that for every $n \ge N_0$ the
+$n \times n$ matrix multiplication tensor over $F$ has rank at most
+$C n^{\omega(F) + \varepsilon}$.
 
 ## Depends on
 
-- [Has Matrix Multiplication Rank Exponent](../part-02/has-matrix-multiplication-rank-exponent.md)
-- [Matrix Multiplication Exponent](../part-02/matrix-multiplication-exponent.md)
+- [Matrix multiplication rank exponent](../part-02/has-matrix-multiplication-rank-exponent.md)
+- [Matrix multiplication exponent](../part-02/matrix-multiplication-exponent.md)
 
 ## Proof depends on
 
-- [Matrix Multiplication Exponent le iff](matrix-multiplication-exponent-le-iff.md)
-- [Matrix Multiplication Exponent ne top](matrix-multiplication-exponent-ne-top.md)
+- [Upper bounds on the matrix multiplication exponent](matrix-multiplication-exponent-le-iff.md)
+- [The matrix multiplication exponent is finite](matrix-multiplication-exponent-ne-top.md)
 
 ## Sources
 

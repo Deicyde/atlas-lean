@@ -6,9 +6,12 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.dualMatrixMultiplicationExponent
 ---
 
-# Dual Matrix Multiplication Exponent
+# Dual matrix multiplication exponent
 
-The supremum of nonnegative aspects whose rectangular exponent equals two.
+**Dual matrix multiplication exponent.** For a field $F$, the dual matrix multiplication
+exponent of $F$ is the supremum, taken in the extended nonnegative reals $[0, \infty]$, of the
+set of real aspects $k \ge 0$ for which the rectangular matrix multiplication exponent of $F$ at
+aspect $k$ equals $2$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Rectangular Matrix Multiplication Exponent](rectangular-matrix-multiplication-expone.md)
+- [Rectangular matrix multiplication exponent](rectangular-matrix-multiplication-expone.md)
 
 ## Sources
 

@@ -5,17 +5,18 @@ statement: formalized
 lean: MathlibExt.TheoryOfComputation.RealClosedFieldQEWanted.ProgramVerification.RealClosedFieldQE.Formula.ex
 ---
 
-# Ex
+# Existential quantification of formulas
 
-Existential quantification; binds de Bruijn index `0` in the body.
+**Existential quantification of formulas.** For a formula $\varphi$, the formula
+$\exists \varphi$ is $\neg \forall \neg \varphi$; it binds de Bruijn index $0$ in $\varphi$.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Formulas of the language of ordered rings](formula.md)
 
 ## Proof depends on
 
-- [Not](not.md)
+- [Negation of a formula](not.md)
 
 ## Sources
 

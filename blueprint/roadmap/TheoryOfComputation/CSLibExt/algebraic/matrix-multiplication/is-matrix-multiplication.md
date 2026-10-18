@@ -6,18 +6,23 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.IsMatrixMultiplication
 ---
 
-# Is Matrix Multiplication
+# Circuits that compute the matrix product
 
-Correctness on all actual inputs, without a formal-polynomial identity restriction.
+**Circuits that compute the matrix product.** A circuit $c$ over a field $F$ whose inputs are
+the entries of an $m \times r$ matrix and an $r \times n$ matrix computes matrix multiplication
+when, for all matrices $A \in F^{m \times r}$ and $B \in F^{r \times n}$ and all $i < m$, $j < n$,
+its output at $(i, j)$ on the entries of $A$ and $B$ equals $(AB)_{ij}$.
+
+Correctness is required on actual values in $F$, not as an identity of formal polynomials.
 
 ## Depends on
 
-- [Matrix Arithmetic Circuit](matrix-arithmetic-circuit.md)
+- [Matrix arithmetic circuit](matrix-arithmetic-circuit.md)
 
 ## Proof depends on
 
-- [Evaluate](../arithmetic-circuit/evaluate-3.md)
-- [Matrix Input](matrix-input.md)
+- [Circuit evaluation](../arithmetic-circuit/evaluate-3.md)
+- [Matrix input assignment](matrix-input.md)
 
 ## Sources
 

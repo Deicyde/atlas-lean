@@ -7,17 +7,21 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.two_le_squareMatrixMultiplicationCircuitExponent
 ---
 
-# Two le square Matrix Multiplication Circuit Exponent
+# The square circuit exponent is at least two
 
-Actual output costs give the trivial lower bound two for the square exponent.
+**The square circuit exponent is at least two.** For every field $F$, the square matrix
+multiplication circuit exponent of $F$ is at least $2$.
+
+This trivial bound holds because a circuit computing the product of two $n \times n$ matrices has
+a separate gate for each of the $n^2$ output entries.
 
 ## Depends on
 
-- [Square Matrix Multiplication Circuit Exponent](square-matrix-multiplication-circuit-exp.md)
+- [Square matrix multiplication circuit exponent](square-matrix-multiplication-circuit-exp.md)
 
 ## Proof depends on
 
-- [Two le rectangular Circuit Exponent](two-le-rectangular-circuit-exponent.md)
+- [The rectangular circuit exponent is at least two](two-le-rectangular-circuit-exponent.md)
 
 ## Sources
 

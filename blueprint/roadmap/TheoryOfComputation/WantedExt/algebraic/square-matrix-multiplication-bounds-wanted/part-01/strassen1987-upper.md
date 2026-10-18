@@ -6,14 +6,17 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted.strassen1987Upper
 ---
 
-# Strassen1987 Upper
+# Strassen's 1987 bound on the matrix multiplication exponent
 
-Source: C15a [S1987], Strassen's laser-method bound `2.4785`.
+**Strassen's 1987 bound on the matrix multiplication exponent.** For every field $F$, the
+square matrix multiplication exponent $\omega(F)$ of the arithmetic-circuit model satisfies
+$\omega(F) \le 2.4785$.
 
 ## Depends on
 
-- [Square Matrix Multiplication Circuit Exponent](../../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/square-matrix-multiplication-circuit-exp.md)
+- [Square matrix multiplication circuit exponent](../../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/square-matrix-multiplication-circuit-exp.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Complexity.Algebraic.SquareMatrixMultiplicationBoundsWanted](../../../../../../sources/v2/WantedExt.md)
+- C15a [S1987], Strassen's laser-method bound `2.4785`.

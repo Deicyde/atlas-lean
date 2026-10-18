@@ -5,7 +5,7 @@ origin: cited
 lean: TuringMachine.not_isTuringRecognizable_of_mappingReducible
 ---
 
-# Corollary (Lecture 9, Mapping Reductions - properties)
+# Corollary (Turing-unrecognizability transfers along mapping reductions)
 
 If $A \leq_{\mathrm{m}} B$ and $A$ is Turing-unrecognizable then so is $B$.
 

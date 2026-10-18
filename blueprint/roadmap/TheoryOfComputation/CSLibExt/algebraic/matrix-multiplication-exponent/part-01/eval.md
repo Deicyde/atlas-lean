@@ -6,13 +6,15 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.MatrixMultiplicationExponent.RankOneTrilinearTerm.eval
 ---
 
-# Eval
+# Value of a rank-one trilinear term
 
-Evaluate a rank-one trilinear summand.
+**Value of a rank-one trilinear term.** For a rank-one trilinear term over a semigroup $F$
+with factors $u : A \to F$, $v : B \to F$ and $w : C \to F$, its value at $a \in A$, $b \in B$,
+$c \in C$ is the product $u(a)\,v(b)\,w(c)$.
 
 ## Depends on
 
-- [Rank One Trilinear Term](rank-one-trilinear-term.md)
+- [Rank-one trilinear term](rank-one-trilinear-term.md)
 
 ## Sources
 

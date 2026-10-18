@@ -7,17 +7,20 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.dualCircuitExponent_family_nonempty
 ---
 
-# Dual Circuit Exponent family nonempty
+# Some aspect has rectangular circuit exponent two
 
-The family defining the dual exponent contains an actual quadratic endpoint.
+**Some aspect has rectangular circuit exponent two.** For every field $F$, there is a real
+$k \ge 0$ at which the rectangular matrix multiplication exponent of the arithmetic-circuit model
+over $F$ equals $2$. Hence the set of such $k$, viewed in $[0, \infty]$, whose supremum is the dual
+matrix multiplication exponent, is nonempty.
 
 ## Depends on
 
-- [Rectangular Circuit Exponent](rectangular-circuit-exponent.md)
+- [Rectangular circuit exponent](rectangular-circuit-exponent.md)
 
 ## Proof depends on
 
-- [Rectangular Circuit Exponent zero](rectangular-circuit-exponent-zero.md)
+- [The rectangular circuit exponent at aspect zero is two](rectangular-circuit-exponent-zero.md)
 
 ## Sources
 

@@ -6,20 +6,24 @@ statement: formalized
 lean: Cslib.Complexity.Algebraic.outerMatrixCircuit
 ---
 
-# Outer Matrix Circuit
+# Outer-product matrix circuit
 
-One multiplication per output computes the inner-dimension-one matrix product.
+**Outer-product matrix circuit.** For a type $F$ of scalars and $m, n \in \mathbb{N}$, the
+outer-product matrix circuit is the matrix arithmetic circuit for an $m \times 1$ matrix times a
+$1 \times n$ matrix with exactly $mn$ gates: for $i < m$ and $j < n$, the gate for $(i, j)$
+multiplies the input at entry $(i, 0)$ of the first matrix by the input at entry $(0, j)$ of
+the second, and the output at $(i, j)$ is that gate.
 
 ## Depends on
 
-- [Matrix Arithmetic Circuit](matrix-arithmetic-circuit.md)
+- [Matrix arithmetic circuit](matrix-arithmetic-circuit.md)
 
 ## Proof depends on
 
-- [Arithmetic Circuit](../arithmetic-circuit/arithmetic-circuit.md)
-- [Outer Product](../arithmetic-circuit/outer-product.md)
-- [Arithmetic Gate](../arithmetic-circuit/arithmetic-gate.md)
-- [Arithmetic Operand](../arithmetic-circuit/arithmetic-operand.md)
+- [Arithmetic circuit](../arithmetic-circuit/arithmetic-circuit.md)
+- [Outer-product circuit](../arithmetic-circuit/outer-product.md)
+- [Arithmetic gate](../arithmetic-circuit/arithmetic-gate.md)
+- [Arithmetic operand](../arithmetic-circuit/arithmetic-operand.md)
 
 ## Sources
 

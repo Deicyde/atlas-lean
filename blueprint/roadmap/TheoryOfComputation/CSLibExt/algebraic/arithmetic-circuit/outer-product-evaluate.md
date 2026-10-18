@@ -7,23 +7,26 @@ proof: formalized
 lean: Cslib.Complexity.Algebraic.ArithmeticCircuit.outerProduct_evaluate
 ---
 
-# Outer Product evaluate
+# Correctness of the outer-product circuit
 
-The outer-product circuit returns the actual product of its two scalar inputs.
+**Correctness of the outer-product circuit.** Let $F$ be a type with addition, subtraction and
+multiplication. For all $m, n \in \mathbb{N}$, $a \in F^m$, $b \in F^n$, $i < m$ and $j < n$, the
+outer-product circuit over $F$ evaluated on the inputs $a$ and $b$ has value $a_i b_j$ at the
+output $(i, j)$.
 
 ## Depends on
 
-- [Evaluate](evaluate-3.md)
-- [Outer Product](outer-product.md)
+- [Circuit evaluation](evaluate-3.md)
+- [Outer-product circuit](outer-product.md)
 
 ## Proof depends on
 
-- [Arithmetic Circuit](arithmetic-circuit.md)
-- [Evaluate Node](evaluate-node.md)
-- [Arithmetic Gate](arithmetic-gate.md)
+- [Arithmetic circuit](arithmetic-circuit.md)
+- [Value of a gate in a circuit](evaluate-node.md)
+- [Arithmetic gate](arithmetic-gate.md)
 - [Evaluate](evaluate-2.md)
-- [Arithmetic Operand](arithmetic-operand.md)
-- [Evaluate](evaluate.md)
+- [Arithmetic operand](arithmetic-operand.md)
+- [Operand evaluation](evaluate.md)
 
 ## Sources
 

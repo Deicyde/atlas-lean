@@ -6,7 +6,7 @@ statement: formalized
 lean: Decidability.IsCountable
 ---
 
-# Definition (Lecture 8)
+# Definition (Countable set)
 
 A set is countable if it is finite or it has the same size as $\mathbb{N}$.
 
