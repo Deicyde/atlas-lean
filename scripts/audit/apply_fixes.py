@@ -16,11 +16,12 @@ the hash of the packet it was judged on.
 
 from __future__ import annotations
 
-import hashlib
 import json
 import sys
 from collections import defaultdict
 from pathlib import Path
+
+from select_work import digest
 
 MAX_COLUMNS = 100
 
@@ -101,7 +102,7 @@ def main() -> int:
                 {
                     "article_id": node["article_id"],
                     "article": packet["article"],
-                    "packet_sha256": hashlib.sha256(json.dumps(packet, sort_keys=True).encode()).hexdigest(),
+                    "packet_sha256": digest(packet),
                     "audited": str(stamp),
                     "role": node["role"],
                     "scores": {k: node.get(k) for k in ("readback", "source_fidelity", "presentation", "edges")},
