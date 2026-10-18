@@ -20,7 +20,10 @@ declaration that ATLAS v1 matched to it. Lean names and declaration keywords
 come from Autoform's own source index, so `autoform check --lean-root .`
 accepts exactly what this script asserts.
 
-Status follows v1's own evaluation. A target that passed review is
+Status follows v1's own evaluation, except where the wiki audit withdrew it
+(blueprint/audit/v1-overrides.json, written by scripts/audit/apply_fixes.py
+after a checker confirmed that the matched Lean does not state the textbook
+result; the same file can retitle a target). A target that passed review is
 `statement: formalized`; a theorem whose dependency chain is also sorry-free
 (per `sorry_deps`) and rests only on Lean's standard axioms (per `#print axioms`;
 so no sorryAx and no native_decide) is `proof: formalized`. Definitions need a sorry-free chain to be marked at all,
@@ -50,6 +53,7 @@ V1 = ROOT / "v1"
 VAULT = ROOT / "blueprint"
 ROADMAP = VAULT / "roadmap"
 SOURCES = VAULT / "sources"
+V1_OVERRIDES = VAULT / "audit" / "v1-overrides.json"
 REPOSITORY_URL = "https://github.com/facebookresearch/atlas-lean"
 MAX_CHILDREN = 20  # `autoform audit` reports containers above 24.
 
@@ -377,8 +381,21 @@ def safe_math_markdown(text: str) -> str:
     )
 
 
+def v1_overrides(book: str) -> dict[int, dict]:
+    """Audit corrections to this book's targets, by target index."""
+    if not V1_OVERRIDES.is_file():
+        return {}
+    prefix = f"v1/Atlas/{book}/report.json#"
+    return {
+        int(key.removeprefix(prefix)): value
+        for key, value in json.loads(V1_OVERRIDES.read_text()).items()
+        if key.startswith(prefix)
+    }
+
+
 def load_book(book: str, index, lean_dependencies: dict) -> tuple[list[Target], dict]:
     report = json.loads((V1 / "Atlas" / book / "report.json").read_text())
+    overrides = v1_overrides(book)
     details = sorted(report["statements"]["details"], key=lambda item: item["idx"])
     unresolved = []
     targets = []
@@ -401,12 +418,15 @@ def load_book(book: str, index, lean_dependencies: dict) -> tuple[list[Target], 
         # count as kernel-checked, so native_decide proofs are not proved here.
         axioms = {name.strip() for name in (item.get("axioms") or "").split(",") if name.strip()}
         sorry_free = (item.get("sorry_deps") or "").startswith("None") and axioms <= KERNEL_AXIOMS
-        statement = resolved and item["passed"] and (sorry_free or not is_data)
+        override = overrides.get(item["idx"], {})
+        statement = resolved and item["passed"] and (sorry_free or not is_data) and not override.get("withdrawn")
         name = " ".join(item["name"].split())
         # Brackets in link text stop `autoform render` placing the leaf.
         title = name.replace("[", "(").replace("]", ")")
         if BARE_NAME.fullmatch(name):
             title = f"{title} ({item['location'].strip()})"
+        if override.get("title"):
+            title = " ".join(override["title"].split()).replace("[", "(").replace("]", ")")
         label = re.search(r"\(([^()]+)\)", name)
         targets.append(
             Target(
@@ -415,7 +435,7 @@ def load_book(book: str, index, lean_dependencies: dict) -> tuple[list[Target], 
                 title=title,
                 slug=f"{item['idx'] + 1:03d}-{slugify(label.group(1) if label else name, 40)}",
                 location=item["location"].strip(),
-                description=safe_math_markdown(item["description"].strip()),
+                description=safe_math_markdown((override.get("statement") or item["description"]).strip()),
                 declaration=declaration,
                 lean=", ".join(names) if resolved else None,
                 statement=statement,
