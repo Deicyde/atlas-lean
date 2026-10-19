@@ -1,5 +1,6 @@
 ---
 article_id: af_68420f47a5e79f1dcc2ef9dd
+navigation: transparent
 ---
 
 # Bang Zsigmondy to Collatz

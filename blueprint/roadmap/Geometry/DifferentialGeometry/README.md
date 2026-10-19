@@ -1,5 +1,6 @@
 ---
 article_id: af_82cb66fb8a5beddbedccdc8a
+navigation: source
 ---
 
 # MIT 18.950 Differential Geometry (Fall 2008)

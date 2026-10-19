@@ -2,7 +2,7 @@
 article_id: af_a5a2a8e1d44a03718838d651
 ---
 
-# Families Of Maps B01 Wanted
+# Families Of Maps B01
 
 - [Supported](supported.md)
 - [Adapted To](adapted-to.md)

@@ -1,4 +1,4 @@
-# Signed Binary Sum Wanted
+# Signed Binary Sum
 
 - [Is Signed Pow Two Sum](is-signed-pow-two-sum.md)
 - [Is Signed Pow Two Sum one](is-signed-pow-two-sum-one.md)

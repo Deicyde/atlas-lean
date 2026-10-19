@@ -2,7 +2,7 @@
 article_id: af_d1a40254b9e71dd321f02135
 ---
 
-# PVHHCube Morphic Word Wanted
+# PVHHCube Morphic Word
 
 - [Letter](letter.md)
 - [Substitution](substitution.md)

@@ -1,4 +1,4 @@
-# Josephus Wanted
+# Josephus
 
 - [Is Low Extremal](is-low-extremal.md)
 - [Is High Extremal](is-high-extremal.md)

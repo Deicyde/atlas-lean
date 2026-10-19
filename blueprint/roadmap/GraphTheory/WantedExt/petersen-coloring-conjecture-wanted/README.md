@@ -2,7 +2,7 @@
 article_id: af_d1fe47af7a9aee429f8bc771
 ---
 
-# Petersen Coloring Conjecture Wanted
+# Petersen Coloring Conjecture
 
 - [PVertex](pvertex.md)
 - [Petersen Edge Set](petersen-edge-set.md)

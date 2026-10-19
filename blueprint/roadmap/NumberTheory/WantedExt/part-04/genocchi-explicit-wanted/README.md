@@ -1,4 +1,4 @@
-# Genocchi Explicit Wanted
+# Genocchi Explicit
 
 - [Diff Pow Eval](diff-pow-eval.md)
 - [Zerro U](zerro-u.md)

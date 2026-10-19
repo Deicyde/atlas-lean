@@ -1,4 +1,4 @@
-# Erdos Supersingular Primes Wanted
+# Erdos Supersingular Primes
 
 - [Solution](solution.md)
 - [K₀](k.md)

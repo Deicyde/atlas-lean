@@ -1,4 +1,8 @@
-# Upper Bound Simplicial Spheres Wanted to Valid Ordering Wanted
+---
+navigation: transparent
+---
 
-- [Upper Bound Simplicial Spheres Wanted](upper-bound-simplicial-spheres-wanted/README.md)
-- [Valid Ordering Wanted](valid-ordering-wanted/README.md)
+# Upper Bound Simplicial Spheres to Valid Ordering
+
+- [Upper Bound Simplicial Spheres](upper-bound-simplicial-spheres-wanted/README.md)
+- [Valid Ordering](valid-ordering-wanted/README.md)

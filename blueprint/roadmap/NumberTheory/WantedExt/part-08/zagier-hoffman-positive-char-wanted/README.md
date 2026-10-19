@@ -1,4 +1,4 @@
-# Zagier Hoffman Positive Char Wanted
+# Zagier Hoffman Positive Char
 
 - [Monic Strict Anti Nat Degree](monic-strict-anti-nat-degree.md)
 - [Ζ A](a.md)

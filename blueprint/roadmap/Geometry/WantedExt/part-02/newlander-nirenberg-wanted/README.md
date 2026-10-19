@@ -2,7 +2,7 @@
 article_id: af_01b89047737fe074766e5d34
 ---
 
-# Newlander Nirenberg Wanted
+# Newlander Nirenberg
 
 - [E](e.md)
 - [Nijenhuis](nijenhuis.md)

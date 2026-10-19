@@ -1,5 +1,6 @@
 ---
 article_id: af_faa15abadd3555314c013f80
+navigation: transparent
 ---
 
 # Simple Bounds About $P_K(a to Sharp Projection Theorems III

@@ -39,6 +39,81 @@
       "GameTheory",
       "GraphTheory",
       "TheoryOfComputation"
+    ],
+    "Classical & Euclidean geometry": [
+      "Geometry/MathlibExt/dissections",
+      "Geometry/MathlibExt/euclidean",
+      "Geometry/MathlibExt/spherical",
+      "Geometry/MathlibExt/two-d",
+      "Geometry/WantedExt/part-01/equichordal-wanted",
+      "Geometry/WantedExt/part-01/hippocrates-lunes-wanted",
+      "Geometry/WantedExt/part-02/hopf-umlaufsatz-wanted",
+      "Geometry/WantedExt/part-02/inscribed-rectangles-wanted",
+      "Geometry/WantedExt/part-02/morley-wanted",
+      "Geometry/WantedExt/part-03/parallel-postulate-wanted",
+      "Geometry/WantedExt/part-03/pascal-pappus-wanted",
+      "Geometry/WantedExt/part-03/platonic-classification-wanted",
+      "Geometry/WantedExt/part-03/rectangular-peg-problem-wanted"
+    ],
+    "Convexity & comparison geometry": [
+      "Geometry/MathlibExt/convex",
+      "Geometry/MathlibExt/polyhedra",
+      "Geometry/MathlibExt/cat0",
+      "Geometry/WantedExt/part-01/convex",
+      "Geometry/WantedExt/part-01/polyhedra",
+      "Geometry/WantedExt/part-01/cocompact-asymptotically-equivalent-metrics-want",
+      "Geometry/WantedExt/part-01/hadwiger-wanted",
+      "Geometry/WantedExt/part-02/hyperplane-slicing-universal-wanted",
+      "Geometry/WantedExt/part-02/linear-programming-wanted"
+    ],
+    "Differential geometry & manifolds": [
+      "Geometry/MathlibExt/manifold",
+      "Geometry/WantedExt/part-01/hopf-rinow-wanted",
+      "Geometry/WantedExt/part-02/jacobian-challenge-wanted",
+      "Geometry/WantedExt/part-02/levi-civita-wanted",
+      "Geometry/WantedExt/part-02/morse-inequalities-wanted",
+      "Geometry/WantedExt/part-02/mostow-rigidity-wanted",
+      "Geometry/WantedExt/part-02/newlander-nirenberg-wanted",
+      "Geometry/WantedExt/part-03/sphere-theorem-wanted"
+    ],
+    "Distances & incidence": [
+      "Geometry/MathlibExt/metric",
+      "Geometry/MathlibExt/falconer-distance-set",
+      "Geometry/WantedExt/part-01/falconer-distance-set-wanted",
+      "Geometry/WantedExt/part-02/infinite-transversals-spanned-hyperplanes-wanted"
+    ],
+    "Lattice points & packings": [
+      "Geometry/MathlibExt/lattice-point-asymptotics",
+      "Geometry/MathlibExt/lattice-point-boundary-cubes",
+      "Geometry/MathlibExt/lattice-point-cube-sandwich",
+      "Geometry/MathlibExt/lattice-point-enumerator",
+      "Geometry/MathlibExt/lipschitz-image-cube-count",
+      "Geometry/MathlibExt/sphere-packing-density-four",
+      "Geometry/WantedExt/part-02/kepler-conjecture-wanted",
+      "Geometry/WantedExt/part-03/picks-theorem-wanted",
+      "Geometry/WantedExt/part-03/sphere-packing-density-four-wanted"
+    ],
+    "Geometric optimization & covering": [
+      "Geometry/MathlibExt/moser-worm-cover",
+      "Geometry/MathlibExt/moving-sofa",
+      "Geometry/MathlibExt/steiner-ratio",
+      "Geometry/WantedExt/part-01/ambidextrous-sofa-wanted",
+      "Geometry/WantedExt/part-02/lebesgue-universal-covering-constant-wanted",
+      "Geometry/WantedExt/part-02/moser-convex-worm-cover-constant-wanted",
+      "Geometry/WantedExt/part-02/moving-sofa-wanted",
+      "Geometry/WantedExt/part-02/optimal-moebius-wanted",
+      "Geometry/WantedExt/part-03/steiner-ratio-wanted"
+    ],
+    "Symmetry & geometric topology": [
+      "Geometry/WantedExt/part-01/fary-milnor-wanted",
+      "Geometry/WantedExt/part-03/space-groups-wanted",
+      "Geometry/WantedExt/part-03/wallpaper-groups-wanted"
+    ],
+    "Hamiltonian & symplectic geometry": [
+      "Geometry/WantedExt/part-01/darboux-wanted",
+      "Geometry/WantedExt/part-02/liouville-arnold-wanted",
+      "Geometry/WantedExt/part-03/symplectic-monodromy-wanted",
+      "Geometry/WantedExt/part-03/weinstein-conjecture3-dwanted"
     ]
   }
 }

@@ -1,5 +1,6 @@
 ---
 article_id: af_bda8e67e1660e7e291c7b36d
+navigation: transparent
 ---
 
 # Variational to Wirsing Constant

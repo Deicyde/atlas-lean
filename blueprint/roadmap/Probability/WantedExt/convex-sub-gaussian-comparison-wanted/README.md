@@ -1,4 +1,4 @@
-# Convex Sub Gaussian Comparison Wanted
+# Convex Sub Gaussian Comparison
 
 - [Standard Normal Tail](standard-normal-tail.md)
 - [Davis Power T0](davis-power-t0.md)

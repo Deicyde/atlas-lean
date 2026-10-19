@@ -1,4 +1,4 @@
-# Erdos Problem923 Wanted
+# Erdos Problem923
 
 - [Conjecture](conjecture.md)
 - [Conjecture holds](conjecture-holds.md)

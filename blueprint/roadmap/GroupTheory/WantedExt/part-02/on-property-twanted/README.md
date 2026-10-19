@@ -2,7 +2,7 @@
 article_id: af_991c3241e41e58dfe7c73117
 ---
 
-# On Property TWanted
+# On Property T
 
 - [Laplacian](laplacian.md)
 - [Group Ring Involution](group-ring-involution.md)

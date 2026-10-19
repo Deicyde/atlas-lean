@@ -1,5 +1,6 @@
 ---
 article_id: af_8f1f1c521735e705bf67e11d
+navigation: source
 ---
 
 # MIT RES.18-011 Algebra I Student Notes (Fall 2021)

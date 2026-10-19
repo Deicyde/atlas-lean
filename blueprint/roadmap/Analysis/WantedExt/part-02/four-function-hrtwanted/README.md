@@ -2,7 +2,7 @@
 article_id: af_12e7da17e7b9468fc619d9b5
 ---
 
-# Four Function HRTWanted
+# Four Function HRT
 
 - [Modulation One](modulation-one.md)
 - [Conjecture](conjecture.md)

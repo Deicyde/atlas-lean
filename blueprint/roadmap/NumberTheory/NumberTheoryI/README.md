@@ -1,5 +1,6 @@
 ---
 article_id: af_7b02a73efbe7b0a4e67c058b
+navigation: source
 ---
 
 # MIT 18.785 Number Theory I (Fall 2021)

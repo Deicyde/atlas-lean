@@ -1,4 +1,4 @@
-# Pardon Distortion Wanted
+# Pardon Distortion
 
 - [Speed](speed.md)
 - [Parameter Arc Length](parameter-arc-length.md)

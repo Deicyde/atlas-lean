@@ -1,5 +1,6 @@
 ---
 article_id: af_4a2d2f21b4b07c3488d3a86f
+navigation: transparent
 ---
 
 # Part1 Ch3 Entry13 Corollary Schroder to Part1 Ch3 Entry4

@@ -1,4 +1,4 @@
-# Rook Domination Polynomial Wanted
+# Rook Domination Polynomial
 
 - [Rook Cover Count](rook-cover-count.md)
 - [Rook Dominating Count](rook-dominating-count.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_5f142cc4b8c51654a0ee084d
+navigation: transparent
 ---
 
 # Hyperfactorial Partition to Lucas Special Prime

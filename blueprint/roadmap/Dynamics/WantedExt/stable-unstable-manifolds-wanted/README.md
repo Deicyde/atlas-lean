@@ -2,7 +2,7 @@
 article_id: af_ea8c2b031fe72fae0a721662
 ---
 
-# Stable Unstable Manifolds Wanted
+# Stable Unstable Manifolds
 
 - [E](e.md)
 - [Complex Eigenvalues](complex-eigenvalues.md)

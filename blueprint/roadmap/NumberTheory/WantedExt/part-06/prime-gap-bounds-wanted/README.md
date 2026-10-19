@@ -1,4 +1,4 @@
-# Prime Gap Bounds Wanted
+# Prime Gap Bounds
 
 - [Zhang2014 Upper Bound](zhang2014-upper-bound.md)
 - [Polymath8a2014 Upper Bound](polymath8a2014-upper-bound.md)

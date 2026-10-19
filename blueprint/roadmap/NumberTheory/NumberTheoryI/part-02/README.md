@@ -1,5 +1,6 @@
 ---
 article_id: af_3fab7be5f9cc2a7ed2dbc1f9
+navigation: transparent
 ---
 
 # Section 21 to Section 28

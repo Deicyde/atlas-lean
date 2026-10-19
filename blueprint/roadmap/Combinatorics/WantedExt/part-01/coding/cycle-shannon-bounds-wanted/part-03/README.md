@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 3 of 4
 
 - [Bpz C13 Pi2](bpz-c13-pi2.md)

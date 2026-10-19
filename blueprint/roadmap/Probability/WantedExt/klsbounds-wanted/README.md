@@ -2,7 +2,7 @@
 article_id: af_29edb838cffda575526c2c80
 ---
 
-# KLSBounds Wanted
+# KLSBounds
 
 - [Kannan Lovasz Simonovits1995 bound](kannan-lovasz-simonovits1995-bound.md)
 - [Lee Vempala2024 bound](lee-vempala2024-bound.md)

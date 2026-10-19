@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 3 of 5
 
 - [Mark R](mark-r.md)

@@ -1,4 +1,4 @@
-# Erdos Problem937 Wanted
+# Erdos Problem937
 
 - [Is Coprime Powerful AP4](is-coprime-powerful-ap4.md)
 - [Conjecture](conjecture.md)

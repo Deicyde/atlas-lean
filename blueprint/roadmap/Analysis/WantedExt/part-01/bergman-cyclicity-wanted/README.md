@@ -2,7 +2,7 @@
 article_id: af_546bce1123dc6c2c47cfce1c
 ---
 
-# Bergman Cyclicity Wanted
+# Bergman Cyclicity
 
 - [Disc](disc.md)
 - [Bergman](bergman.md)

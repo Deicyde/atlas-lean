@@ -1,4 +1,4 @@
-# Schur Siegel Smyth Wanted
+# Schur Siegel Smyth
 
 - [Absolute Trace one le wanted](absolute-trace-one-le-wanted.md)
 - [Schur1918 Lower Bound wanted](schur1918-lower-bound-wanted.md)

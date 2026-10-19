@@ -1,4 +1,4 @@
-# Shafarevich Relation Rank Wanted
+# Shafarevich Relation Rank
 
 - [Is Everywhere Unramified](is-everywhere-unramified.md)
 - [Maximal Unramified Pro PF](maximal-unramified-pro-pf.md)

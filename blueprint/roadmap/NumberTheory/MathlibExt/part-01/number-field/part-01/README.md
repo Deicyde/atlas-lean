@@ -1,5 +1,6 @@
 ---
 article_id: af_55225835c36be3e7e6360cdf
+navigation: transparent
 ---
 
 # Completion to Principal Idele

@@ -1,4 +1,4 @@
-# Consecutive Squares Wanted
+# Consecutive Squares
 
 - [So CSEq](so-cseq.md)
 - [Is So CSSolution](is-so-cssolution.md)

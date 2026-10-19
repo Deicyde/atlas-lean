@@ -1,4 +1,4 @@
-# Perfect Graph NPWanted
+# Perfect Graph NP
 
 - [Perfect Graph Instance](perfect-graph-instance.md)
 - [Valid](valid.md)

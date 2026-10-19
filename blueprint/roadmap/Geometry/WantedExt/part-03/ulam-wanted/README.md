@@ -2,7 +2,7 @@
 article_id: af_d77142e36b204fda0626fd93
 ---
 
-# Ulam Wanted
+# Ulam
 
 - [S](s.md)
 - [Is Origin Symmetric](is-origin-symmetric.md)

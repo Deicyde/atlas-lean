@@ -1,4 +1,4 @@
-# Tribonacci Tetranacci Sums Of Squares Wanted
+# Tribonacci Tetranacci Sums Of Squares
 
 - [Four mul sum tribonacci mul sub two](four-mul-sum-tribonacci-mul-sub-two.md)
 - [Four mul sum tribonacci sq](four-mul-sum-tribonacci-sq.md)

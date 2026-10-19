@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 2 of 2
 
 - [Copy₂](copy.md)

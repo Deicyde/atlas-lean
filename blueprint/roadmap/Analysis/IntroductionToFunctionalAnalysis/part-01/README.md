@@ -1,5 +1,6 @@
 ---
 article_id: af_f3849338b8e18dc8e2924f4d
+navigation: transparent
 ---
 
 # February 18 to April 27

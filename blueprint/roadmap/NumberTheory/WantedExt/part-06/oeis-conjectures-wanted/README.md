@@ -1,4 +1,4 @@
-# Oeis Conjectures Wanted
+# Oeis Conjectures
 
 - [Avoid ZZ1 Z](avoid-zz1-z.md)
 - [Theorem 3](avoid-zz1-z-spec.md)

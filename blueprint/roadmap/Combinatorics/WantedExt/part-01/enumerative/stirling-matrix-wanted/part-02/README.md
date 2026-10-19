@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 2 of 2
 
 - [Proposition 8](sum-stirling-second-desc-factorial-lambd.md)

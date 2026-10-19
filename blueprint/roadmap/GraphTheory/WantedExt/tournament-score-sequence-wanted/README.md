@@ -1,4 +1,4 @@
-# Tournament Score Sequence Wanted
+# Tournament Score Sequence
 
 - [Is Tournament](is-tournament.md)
 - [Score](score.md)

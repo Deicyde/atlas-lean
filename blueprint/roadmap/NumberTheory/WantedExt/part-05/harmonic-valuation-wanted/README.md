@@ -1,4 +1,4 @@
-# Harmonic Valuation Wanted
+# Harmonic Valuation
 
 - [Weighted Binary Digit Sum](weighted-binary-digit-sum.md)
 - [Weighted Binary Digit Sum two](weighted-binary-digit-sum-two.md)

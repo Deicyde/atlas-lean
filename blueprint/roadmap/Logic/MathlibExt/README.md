@@ -1,5 +1,6 @@
 ---
 article_id: af_01bf2efa4d9676c3392aee7b
+navigation: collection
 ---
 
 # MathlibExt

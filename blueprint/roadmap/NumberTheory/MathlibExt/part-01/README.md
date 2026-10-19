@@ -1,5 +1,6 @@
 ---
 article_id: af_1829de628a6a2f244a697e84
+navigation: transparent
 ---
 
 # Arithmetic Function to Padics

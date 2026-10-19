@@ -2,7 +2,7 @@
 article_id: af_7a2518af7463db7cc7939324
 ---
 
-# Lai Sang Young Wanted
+# Lai Sang Young
 
 - [Euc Plane](euc-plane.md)
 - [Dim Measure](dim-measure.md)

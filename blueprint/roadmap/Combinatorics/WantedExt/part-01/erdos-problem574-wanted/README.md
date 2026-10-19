@@ -2,7 +2,7 @@
 article_id: af_0454a281ec18cdb0f0be06c2
 ---
 
-# Erdos Problem574 Wanted
+# Erdos Problem574
 
 - [Is Free Of574 Cycles](is-free-of574-cycles.md)
 - [Extremal Number](extremal-number.md)

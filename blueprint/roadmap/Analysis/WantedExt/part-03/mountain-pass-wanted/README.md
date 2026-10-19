@@ -2,7 +2,7 @@
 article_id: af_b726a4ca2587ee802f564c05
 ---
 
-# Mountain Pass Wanted
+# Mountain Pass
 
 - [Is Critical Point](is-critical-point.md)
 - [Palais Smale](palais-smale.md)

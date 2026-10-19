@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 1 of 2
 
 - [Is Congruence Subgroup](is-congruence-subgroup.md)

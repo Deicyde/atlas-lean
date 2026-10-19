@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 1 of 5
 
 - [Is Matching](is-matching.md)

@@ -1,4 +1,4 @@
-# Multiset Reconstruction Pairwise Products Wanted
+# Multiset Reconstruction Pairwise Products
 
 - [Pairwise Products](pairwise-products.md)
 - [Partition eq of pairwise Products eq of max eq](partition-eq-of-pairwise-products-eq-of.md)

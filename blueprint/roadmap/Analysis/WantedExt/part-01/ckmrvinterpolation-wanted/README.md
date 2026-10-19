@@ -2,7 +2,7 @@
 article_id: af_56d5c209f44a71515020ce75
 ---
 
-# CKMRVInterpolation Wanted
+# CKMRVInterpolation
 
 - [Radial](radial.md)
 - [Real Incl](real-incl.md)

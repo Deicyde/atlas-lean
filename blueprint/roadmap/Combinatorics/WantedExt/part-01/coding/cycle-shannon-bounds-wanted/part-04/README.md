@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 4 of 4
 
 - [Bpz2026 Cycle Eleven Lower Bound](bpz2026-cycle-eleven-lower-bound.md)

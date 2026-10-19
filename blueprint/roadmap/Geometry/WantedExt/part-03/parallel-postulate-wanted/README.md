@@ -1,4 +1,4 @@
-# Parallel Postulate Wanted
+# Parallel Postulate
 
 - [Tarski Absolute](tarski-absolute.md)
 - [Euclidean](euclidean.md)

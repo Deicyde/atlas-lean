@@ -1,4 +1,4 @@
-# Fibonacci Sum Divisibility Wanted
+# Fibonacci Sum Divisibility
 
 - [Pisano Period](pisano-period.md)
 - [Pisano Period fib dvd two mul](pisano-period-fib-dvd-two-mul.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_773179ec77d2940daca86350
+navigation: transparent
 ---
 
 # Generalized Fibonacci Polynomial to Hurwitz Quaternion Waring

@@ -1,4 +1,4 @@
-# Mod Inverse Switching Wanted
+# Mod Inverse Switching
 
 - [Is Least Abs Inverse](is-least-abs-inverse.md)
 - [Is Euclid Switch Seq](is-euclid-switch-seq.md)

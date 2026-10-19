@@ -1,4 +1,4 @@
-# Valid Ordering Wanted
+# Valid Ordering
 
 - [Theorem 2](exists-distinct-partial-sums-ordering.md)
 - [Theorem 3](exists-freiman-iso-to-int.md)

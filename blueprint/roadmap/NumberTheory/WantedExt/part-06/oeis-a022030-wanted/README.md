@@ -1,4 +1,4 @@
-# Oeis A022030 Wanted
+# Oeis A022030
 
 - [A](a.md)
 - [Conjecture](conjecture.md)

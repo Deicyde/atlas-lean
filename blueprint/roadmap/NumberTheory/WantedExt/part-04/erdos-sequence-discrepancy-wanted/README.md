@@ -1,4 +1,4 @@
-# Erdos Sequence Discrepancy Wanted
+# Erdos Sequence Discrepancy
 
 - [Count Q](count-q.md)
 - [Discrep](discrep.md)

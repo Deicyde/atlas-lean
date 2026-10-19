@@ -1,4 +1,4 @@
-# Improved Bounds Sunflower Lemma Wanted
+# Improved Bounds Sunflower Lemma
 
 - [Is Sunflower](is-sunflower.md)
 - [Is System](is-system.md)

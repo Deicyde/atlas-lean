@@ -1,5 +1,6 @@
 ---
 article_id: af_8b2cb9952851337b1b20e834
+navigation: source
 ---
 
 # MIT 18.112 Functions of a Complex Variable (Fall 2008)

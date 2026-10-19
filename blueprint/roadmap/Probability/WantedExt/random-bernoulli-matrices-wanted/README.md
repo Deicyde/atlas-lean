@@ -2,7 +2,7 @@
 article_id: af_43a36c659f4c33bef6e5b32c
 ---
 
-# Random Bernoulli Matrices Wanted
+# Random Bernoulli Matrices
 
 - [Σ min](min.md)
 - [Rademacher Measure](rademacher-measure.md)

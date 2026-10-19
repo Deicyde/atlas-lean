@@ -1,4 +1,4 @@
-# Sphere Theorem Wanted
+# Sphere Theorem
 
 - [Curv](curv.md)
 - [Quarter Pinched](quarter-pinched.md)

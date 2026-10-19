@@ -1,5 +1,6 @@
 ---
 article_id: af_17a295c0bc3dced05ad1574d
+navigation: transparent
 ---
 
 # Part1 Ch8 Entry11 Qgammafunctional to Part1 Ch9 Entry1 Logratio

@@ -2,7 +2,7 @@
 article_id: af_c5e71ae81f188d7666f324be
 ---
 
-# Graph Isomorphism Quasipolynomial Wanted
+# Graph Isomorphism Quasipolynomial
 
 - [Graph Code](graph-code.md)
 - [Nat Bits](nat-bits.md)

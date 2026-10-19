@@ -2,7 +2,7 @@
 article_id: af_28222b088e9e94a264957686
 ---
 
-# Absolute Profinite Rigidity Wanted
+# Absolute Profinite Rigidity
 
 - [Profinite Completion](profinite-completion.md)
 - [Profinitely Rigid](profinitely-rigid.md)

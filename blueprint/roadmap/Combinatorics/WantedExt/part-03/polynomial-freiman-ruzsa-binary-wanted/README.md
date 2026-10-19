@@ -1,4 +1,4 @@
-# Polynomial Freiman Ruzsa Binary Wanted
+# Polynomial Freiman Ruzsa Binary
 
 - [Conjecture](conjecture.md)
 - [Conjecture holds](conjecture-holds.md)

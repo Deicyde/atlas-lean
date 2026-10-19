@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 2 of 2
 
 - [Exists is Euler Path iff](exists-is-euler-path-iff.md)

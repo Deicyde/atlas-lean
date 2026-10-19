@@ -1,4 +1,4 @@
-# Third Order Prime Powers Wanted
+# Third Order Prime Powers
 
 - [Is Sum Of Two Prime Powers](is-sum-of-two-prime-powers.md)
 - [Is Sum Of Two Prime Powers two](is-sum-of-two-prime-powers-two.md)

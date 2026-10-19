@@ -1,5 +1,6 @@
 ---
 article_id: af_2a26f5c85d49151b6b6b1ded
+navigation: source
 ---
 
 # MIT 18.782 Introduction to Arithmetic Geometry (Fall 2013)

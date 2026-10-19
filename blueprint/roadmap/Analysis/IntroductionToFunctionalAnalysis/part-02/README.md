@@ -1,5 +1,6 @@
 ---
 article_id: af_48cbc4e01831b849d824f96c
+navigation: transparent
 ---
 
 # May 4 to Section on solving the Dirichlet problem

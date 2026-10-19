@@ -1,5 +1,6 @@
 ---
 article_id: af_cfd2040e10b56714ee5a7818
+navigation: transparent
 ---
 
 # Basic Set Theory to Taylor's Theorem

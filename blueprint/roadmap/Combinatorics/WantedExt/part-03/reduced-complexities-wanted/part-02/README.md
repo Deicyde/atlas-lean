@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 2 of 2
 
 - [Theorem 3](rho-ab-red-paperfolding-even.md)

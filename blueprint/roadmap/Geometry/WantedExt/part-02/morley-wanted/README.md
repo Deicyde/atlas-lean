@@ -2,7 +2,7 @@
 article_id: af_e5cb453a370c7db7108f5990
 ---
 
-# Morley Wanted
+# Morley
 
 - [Plane](plane.md)
 - [Is Equilateral Triple](is-equilateral-triple.md)

@@ -1,4 +1,4 @@
-# Euler Polynomial Formulas Wanted
+# Euler Polynomial Formulas
 
 - [Euler Poly](euler-poly.md)
 - [Gen Stirling Poly](gen-stirling-poly.md)

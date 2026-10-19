@@ -2,7 +2,7 @@
 article_id: af_ad72887f3b03d594026ba48f
 ---
 
-# Erdos Problem869 Wanted
+# Erdos Problem869
 
 - [Add Sumset](add-sumset.md)
 - [Is Additive Basis Order2](is-additive-basis-order2.md)

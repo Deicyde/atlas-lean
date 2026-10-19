@@ -1,5 +1,6 @@
 ---
 article_id: af_d40077dfe9471c692d6564d4
+navigation: transparent
 ---
 
 # Binary Heap to Ordered Insert

@@ -2,7 +2,7 @@
 article_id: af_d7d9b259674e42f88fc3aae5
 ---
 
-# Unit Conjecture Wanted
+# Unit Conjecture
 
 - [Generators](generators.md)
 - [A](a.md)

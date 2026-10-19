@@ -1,4 +1,4 @@
-# Erdos Problem690 Wanted
+# Erdos Problem690
 
 - [Is Kth Smallest Prime Factor](is-kth-smallest-prime-factor.md)
 - [Kth Prime Factor Density](kth-prime-factor-density.md)

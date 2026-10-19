@@ -1,5 +1,6 @@
 ---
 article_id: af_f1f7d0d1f0b2a773a37df127
+navigation: transparent
 ---
 
 # Angle Bisector to Japanese Quads

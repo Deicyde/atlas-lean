@@ -1,5 +1,6 @@
 ---
 article_id: af_ca712cced8571a830b7e0f35
+navigation: source
 ---
 
 # Paul Garrett, Buildings and Classical Groups

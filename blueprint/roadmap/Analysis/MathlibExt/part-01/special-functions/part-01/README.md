@@ -1,5 +1,6 @@
 ---
 article_id: af_21c2ad23a55b1566d8fc7d42
+navigation: transparent
 ---
 
 # Elliptic to Gauss Hypergeometric Summation Klamkin

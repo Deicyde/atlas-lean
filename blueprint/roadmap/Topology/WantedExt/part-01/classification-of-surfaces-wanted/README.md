@@ -2,7 +2,7 @@
 article_id: af_79cc9076af7271bd64debe7f
 ---
 
-# Classification Of Surfaces Wanted
+# Classification Of Surfaces
 
 - [Closed Unit Disc](closed-unit-disc.md)
 - [Bdy Pt Of Real](bdy-pt-of-real.md)

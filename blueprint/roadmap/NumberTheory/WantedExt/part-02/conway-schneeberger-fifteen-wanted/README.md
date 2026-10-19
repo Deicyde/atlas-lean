@@ -1,4 +1,4 @@
-# Conway Schneeberger Fifteen Wanted
+# Conway Schneeberger Fifteen
 
 - [Eval Q](eval-q.md)
 - [Represents](represents.md)

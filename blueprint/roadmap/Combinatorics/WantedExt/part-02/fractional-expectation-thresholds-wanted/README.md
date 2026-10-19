@@ -1,4 +1,4 @@
-# Fractional Expectation Thresholds Wanted
+# Fractional Expectation Thresholds
 
 - [Is Weakly Small](is-weakly-small.md)
 - [P c](p-c.md)

@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 5 of 5
 
 - [Le first Free Round flip phase](le-first-free-round-flip-phase.md)

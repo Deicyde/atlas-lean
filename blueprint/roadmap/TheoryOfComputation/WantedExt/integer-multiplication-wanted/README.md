@@ -2,7 +2,7 @@
 article_id: af_a574a6dd4777716bbf5befff
 ---
 
-# Integer Multiplication Wanted
+# Integer Multiplication
 
 - [Encoding of pairs](encode-prod.md)
 - [Binary encoding of natural numbers](encode-nat-binary.md)

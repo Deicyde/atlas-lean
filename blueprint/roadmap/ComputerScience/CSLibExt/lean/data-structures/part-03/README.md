@@ -1,5 +1,6 @@
 ---
 article_id: af_b70403e27ddf7438dc4ee97c
+navigation: transparent
 ---
 
 # Perfect Hashing to YFast Trie

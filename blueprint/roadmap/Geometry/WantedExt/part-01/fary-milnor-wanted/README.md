@@ -2,7 +2,7 @@
 article_id: af_2da5cda2170ce3022cdb3522
 ---
 
-# Fary Milnor Wanted
+# Fary Milnor
 
 - [Space](space.md)
 - [Period](period.md)

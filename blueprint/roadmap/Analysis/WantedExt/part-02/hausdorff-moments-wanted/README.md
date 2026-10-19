@@ -2,7 +2,7 @@
 article_id: af_368a5731a9191d1140828456
 ---
 
-# Hausdorff Moments Wanted
+# Hausdorff Moments
 
 - [Cube](cube.md)
 - [Monomial](monomial.md)

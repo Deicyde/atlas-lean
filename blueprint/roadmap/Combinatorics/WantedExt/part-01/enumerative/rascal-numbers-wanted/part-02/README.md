@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 2 of 2
 
 - [Theorem 12](sum-neg-one-pow-choose-rascal-z.md)

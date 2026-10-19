@@ -2,7 +2,7 @@
 article_id: af_5cec25952b0979697cc98de4
 ---
 
-# Mandelbar Wanted
+# Mandelbar
 
 - [Tantibar](tantibar.md)
 - [Mandelbar](mandelbar.md)

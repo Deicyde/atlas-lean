@@ -1,4 +1,4 @@
-# Primitive Lambda Roots Wanted
+# Primitive Lambda Roots
 
 - [Lambda Delta](lambda-delta.md)
 - [Lambda H](lambda-h.md)

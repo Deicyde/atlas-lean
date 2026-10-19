@@ -1,5 +1,6 @@
 ---
 article_id: af_bd0f60802a6e25c66fdaa7f3
+navigation: source
 ---
 
 # MIT 18.318 Topics in Algebraic Combinatorics (Spring 2006)

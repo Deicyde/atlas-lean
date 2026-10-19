@@ -1,4 +1,4 @@
-# Erdos Problem539 Wanted
+# Erdos Problem539
 
 - [Is Cofactor Lower Bound](is-cofactor-lower-bound.md)
 - [Cofactor Threshold](cofactor-threshold.md)

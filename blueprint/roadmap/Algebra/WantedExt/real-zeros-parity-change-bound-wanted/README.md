@@ -2,7 +2,7 @@
 article_id: af_6f9c9b79e3080a220bc2ea87
 ---
 
-# Real Zeros Parity Change Bound Wanted
+# Real Zeros Parity Change Bound
 
 - [C Tilde](c-tilde.md)
 - [Pos Indices](pos-indices.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_33837175230911e8ec76cde3
+navigation: transparent
 ---
 
 # Factorizations to Real SVD

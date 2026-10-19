@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 2 of 2
 
 - [Corollary 17](sum-bernoulli-fib-two-eq-one.md)

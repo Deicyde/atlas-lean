@@ -2,7 +2,7 @@
 article_id: af_f9f933ff5a694b79affb7ec1
 ---
 
-# Weinstein Conjecture3 DWanted
+# Weinstein Conjecture3 D
 
 - [One Form](one-form.md)
 - [Two Form](two-form.md)

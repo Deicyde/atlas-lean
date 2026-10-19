@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 2 of 2
 
 - [Proposition 5](complexity-l-two-pow-mul-six-pow-eq.md)

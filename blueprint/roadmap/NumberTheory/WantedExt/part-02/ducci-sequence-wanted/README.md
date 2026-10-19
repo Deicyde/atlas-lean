@@ -1,4 +1,4 @@
-# Ducci Sequence Wanted
+# Ducci Sequence
 
 - [Ducci Coeff](ducci-coeff.md)
 - [Lemma 1](choose-prime-pow-sub-one-mod.md)

@@ -2,7 +2,7 @@
 article_id: af_f2a6415b2b5991de7063a4ea
 ---
 
-# Cubic Parameter Jordan Boundary Wanted
+# Cubic Parameter Jordan Boundary
 
 - [Cubic Family](cubic-family.md)
 - [Is Critical Point](is-critical-point.md)

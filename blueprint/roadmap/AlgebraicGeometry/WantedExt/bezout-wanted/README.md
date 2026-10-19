@@ -2,7 +2,7 @@
 article_id: af_2a0fe4a1af7627e3291574e0
 ---
 
-# Bezout Wanted
+# Bezout
 
 - [Proj Space](proj-space.md)
 - [Vanishing Set](vanishing-set.md)

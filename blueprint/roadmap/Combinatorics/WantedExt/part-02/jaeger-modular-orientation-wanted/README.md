@@ -2,7 +2,7 @@
 article_id: af_56df4389cc5318fffef43c8b
 ---
 
-# Jaeger Modular Orientation Wanted
+# Jaeger Modular Orientation
 
 - [Crosses Cut](crosses-cut.md)
 - [Cut Size](cut-size.md)

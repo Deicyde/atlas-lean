@@ -2,7 +2,7 @@
 article_id: af_9d51b01dbee966926e0c32ed
 ---
 
-# AMR22 Problem7082 Wanted
+# AMR22 Problem7082
 
 - [Unit Disc](unit-disc.md)
 - [Is Injective In Param](is-injective-in-param.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_cb91fb29f9f5348d935e5e34
+navigation: transparent
 ---
 
 # ULDMotzkin Number Of Rank R to Zagier Number

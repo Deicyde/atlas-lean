@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 2 of 3
 
 - [Theorem 12](sum-fib-step-pred-mul.md)

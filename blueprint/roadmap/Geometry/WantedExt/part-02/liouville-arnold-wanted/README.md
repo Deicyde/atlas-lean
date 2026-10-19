@@ -2,7 +2,7 @@
 article_id: af_dec9395787e7d2b5c01dbcab
 ---
 
-# Liouville Arnold Wanted
+# Liouville Arnold
 
 - [E](e.md)
 - [Idx P](idx-p.md)

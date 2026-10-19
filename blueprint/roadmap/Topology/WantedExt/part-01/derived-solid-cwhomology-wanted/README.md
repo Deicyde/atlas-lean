@@ -1,4 +1,4 @@
-# Derived Solid CWHomology Wanted
+# Derived Solid CWHomology
 
 - [Part 1 of 3](part-01/README.md)
 - [Part 2 of 3](part-02/README.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_a7f21d2906361d89fa8d4b21
+navigation: transparent
 ---
 
 # Signed Robbins Number to Twin Powers

@@ -1,4 +1,4 @@
-# Gen Leonardo Wanted
+# Gen Leonardo
 
 - [Gen Leonardo](gen-leonardo.md)
 - [Gen Leonardo two](gen-leonardo-two.md)

@@ -1,4 +1,4 @@
-# Picks Theorem Wanted
+# Picks Theorem
 
 - [To Plane](to-plane.md)
 - [Lat Poly](lat-poly.md)

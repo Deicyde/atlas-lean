@@ -1,5 +1,6 @@
 ---
 article_id: af_4d4d2836b6dd733e2e9033c4
+navigation: transparent
 ---
 
 # Generalized Stirling Numbers to Marked Step In AMulti Marked Dyck Path

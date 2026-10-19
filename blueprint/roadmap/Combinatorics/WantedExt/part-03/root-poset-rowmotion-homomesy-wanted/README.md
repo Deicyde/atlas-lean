@@ -2,7 +2,7 @@
 article_id: af_6a5a873c290757eb00560272
 ---
 
-# Root Poset Rowmotion Homomesy Wanted
+# Root Poset Rowmotion Homomesy
 
 - [Is Homomesic](is-homomesic.md)
 - [Poset Antichain](poset-antichain.md)

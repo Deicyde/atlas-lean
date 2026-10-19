@@ -1,5 +1,6 @@
 ---
 article_id: af_6cf216a7d3c5d381fcb8b40d
+navigation: transparent
 ---
 
 # Median Euler Number to Narayana Sequence

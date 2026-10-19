@@ -1,4 +1,4 @@
-# Linear Subspaces Wanted
+# Linear Subspaces
 
 - [Dist Lines](dist-lines.md)
 - [Dist Line Subspace](dist-line-subspace.md)

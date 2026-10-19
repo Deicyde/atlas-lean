@@ -1,4 +1,4 @@
-# Primitive Pythagorean Forms Wanted
+# Primitive Pythagorean Forms
 
 - [Primitive pythagorean sides sum two squares infinite](primitive-pythagorean-sides-sum-two-squa.md)
 - [Primitive pythagorean sides square middle infinite](primitive-pythagorean-sides-square-middl.md)

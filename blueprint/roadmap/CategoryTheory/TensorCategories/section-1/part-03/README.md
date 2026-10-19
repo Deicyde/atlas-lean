@@ -1,5 +1,6 @@
 ---
 article_id: af_bbe2a8670265f0470e63b82b
+navigation: transparent
 ---
 
 # Section 1.44 to Section 1.53

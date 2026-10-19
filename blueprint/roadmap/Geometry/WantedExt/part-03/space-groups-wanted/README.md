@@ -1,4 +1,4 @@
-# Space Groups Wanted
+# Space Groups
 
 - [E](e.md)
 - [Is Orientation Preserving Isom](is-orientation-preserving-isom.md)

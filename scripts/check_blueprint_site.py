@@ -73,7 +73,7 @@ def json_urls(value: object):
 
     if isinstance(value, dict):
         for key, item in value.items():
-            if key == "url" and isinstance(item, str):
+            if key in {"url", "data_url", "article_url", "book"} and isinstance(item, str):
                 yield item
             else:
                 yield from json_urls(item)
@@ -136,7 +136,10 @@ def main() -> int:
             ):
                 issues.append(f"{page.relative_to(site)}: {href!r} targets missing fragment in {shown}")
 
-    for payload in sorted((site / "dependencies").rglob("*.json")):
+    payloads = sorted((site / "dependencies").rglob("*.json"))
+    if (docs / "dependencies.json").is_file():
+        payloads.insert(0, site / "dependencies.json")
+    for payload in payloads:
         try:
             value = json.loads(payload.read_text(encoding="utf-8"))
         except (OSError, UnicodeError, ValueError) as error:

@@ -2,7 +2,7 @@
 article_id: af_5ebf95ade30636a51c6688ee
 ---
 
-# Universal Point Sets Subquadratic Wanted
+# Universal Point Sets Subquadratic
 
 - [Is Straight Line Planar Embedding](is-straight-line-planar-embedding.md)
 - [Is Universal Point Set](is-universal-point-set.md)

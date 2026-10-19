@@ -1,4 +1,4 @@
-# Hasse Principle Random Fano Wanted
+# Hasse Principle Random Fano
 
 - [𝔸](untitled.md)
 - [Height](height.md)

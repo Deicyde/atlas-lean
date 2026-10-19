@@ -1,5 +1,6 @@
 ---
 article_id: af_7a52b05aa625c54efc31819a
+navigation: transparent
 ---
 
 # Partition to Catalan Generating Function

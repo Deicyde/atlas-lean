@@ -2,7 +2,7 @@
 article_id: af_191851aff0b629acd6469114
 ---
 
-# Fang Xia Tiling Wanted
+# Fang Xia Tiling
 
 - [Is Tiling](is-tiling.md)
 - [Transpositions With One](transpositions-with-one.md)

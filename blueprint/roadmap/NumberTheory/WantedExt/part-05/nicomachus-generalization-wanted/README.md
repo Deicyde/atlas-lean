@@ -1,4 +1,4 @@
-# Nicomachus Generalization Wanted
+# Nicomachus Generalization
 
 - [Nicomachus Triangular](nicomachus-triangular.md)
 - [Nicomachus LOdd](nicomachus-lodd.md)

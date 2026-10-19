@@ -2,7 +2,7 @@
 article_id: af_c80a3ad8f5e410e080d83b53
 ---
 
-# Hadamard Product Circle Bound Wanted
+# Hadamard Product Circle Bound
 
 - [Class S](class-s.md)
 - [Hadamard Product](hadamard-product.md)

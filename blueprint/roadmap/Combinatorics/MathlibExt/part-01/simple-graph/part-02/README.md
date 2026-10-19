@@ -1,5 +1,6 @@
 ---
 article_id: af_bd5c8c5b85a1b6bf901df2d3
+navigation: transparent
 ---
 
 # Domination to List Coloring

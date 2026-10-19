@@ -1,5 +1,6 @@
 ---
 article_id: af_60478d674873995279e371d6
+navigation: transparent
 ---
 
 # Chapter 1 to Lecture 33

@@ -1,4 +1,4 @@
-# Multiplicative Triangular Additive Wanted
+# Multiplicative Triangular Additive
 
 - [Is Sum Two Positive Triangular](is-sum-two-positive-triangular.md)
 - [Multiplicative additive on sum two triangular classification](multiplicative-additive-on-sum-two-trian.md)

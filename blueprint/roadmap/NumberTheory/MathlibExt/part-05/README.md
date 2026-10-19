@@ -1,5 +1,6 @@
 ---
 article_id: af_361ab9a75ac8234c824c47ad
+navigation: transparent
 ---
 
 # Even Pseudoprime to Generalized Fibocatalan Number

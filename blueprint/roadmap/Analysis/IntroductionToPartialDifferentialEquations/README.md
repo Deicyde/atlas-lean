@@ -1,5 +1,6 @@
 ---
 article_id: af_63049d8ddbc269f915108caa
+navigation: source
 ---
 
 # MIT 18.152 Introduction to Partial Differential Equations (Fall 2011)

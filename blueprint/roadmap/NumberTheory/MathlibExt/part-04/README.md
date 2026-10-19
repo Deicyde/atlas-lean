@@ -1,5 +1,6 @@
 ---
 article_id: af_fb96664290a4545dfbfa57b1
+navigation: transparent
 ---
 
 # Comma Sequence to Even Perfect Numbers

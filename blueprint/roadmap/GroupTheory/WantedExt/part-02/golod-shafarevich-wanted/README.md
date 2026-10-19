@@ -1,4 +1,4 @@
-# Golod Shafarevich Wanted
+# Golod Shafarevich
 
 - [Generator Rank](generator-rank.md)
 - [Trivial ZModp Rep](trivial-zmodp-rep.md)

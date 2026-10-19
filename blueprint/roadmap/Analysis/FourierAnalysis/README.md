@@ -1,5 +1,6 @@
 ---
 article_id: af_30f17486c57c15a1d29b3525
+navigation: source
 ---
 
 # MIT 18.103 Fourier Analysis (Fall 2013)

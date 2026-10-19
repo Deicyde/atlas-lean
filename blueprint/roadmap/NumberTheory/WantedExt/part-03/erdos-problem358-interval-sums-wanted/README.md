@@ -1,4 +1,4 @@
-# Erdos Problem358 Interval Sums Wanted
+# Erdos Problem358 Interval Sums
 
 - [Rep Count](rep-count.md)
 - [Conjecture](conjecture.md)

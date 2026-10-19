@@ -1,4 +1,4 @@
-# Real Closed Field QEWanted
+# Real Closed Field QE
 
 - [Terms of the language of ordered rings](term.md)
 - [Formulas of the language of ordered rings](formula.md)

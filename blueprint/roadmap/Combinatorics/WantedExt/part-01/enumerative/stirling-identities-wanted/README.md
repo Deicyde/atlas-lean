@@ -1,4 +1,4 @@
-# Stirling Identities Wanted
+# Stirling Identities
 
 - [Stirling First succ eq sum choose pow](stirling-first-succ-eq-sum-choose-pow.md)
 - [Stirling Second eq sum choose pow](stirling-second-eq-sum-choose-pow.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_715da8be04c093ea2c972ce0
+navigation: transparent
 ---
 
 # Section 3 to The Sylow Theorems

@@ -1,4 +1,4 @@
-# Reverse Minkowski Wanted
+# Reverse Minkowski
 
 - [Ρ](untitled.md)
 - [B](b.md)

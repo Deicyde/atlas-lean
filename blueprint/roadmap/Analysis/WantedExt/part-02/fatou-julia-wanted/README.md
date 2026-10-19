@@ -2,7 +2,7 @@
 article_id: af_aa9eed863e1f7104eeaece61
 ---
 
-# Fatou Julia Wanted
+# Fatou Julia
 
 - [Tc](tc.md)
 - [Mandelbrot](mandelbrot.md)

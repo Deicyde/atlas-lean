@@ -1,4 +1,4 @@
-# Pseudorandom Grassmann Wanted
+# Pseudorandom Grassmann
 
 - [Gr Vertex](gr-vertex.md)
 - [Gr](gr.md)

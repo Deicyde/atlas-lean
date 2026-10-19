@@ -1,4 +1,4 @@
-# Faltings Wanted
+# Faltings
 
 - [Place](place.md)
 - [Finite set Of place not Mem](finite-set-of-place-not-mem.md)

@@ -2,7 +2,7 @@
 article_id: af_de84e050e87ad76460ab0146
 ---
 
-# Honeycomb Connective Constant Wanted
+# Honeycomb Connective Constant
 
 - [Honeycomb Vertex](honeycomb-vertex.md)
 - [Step](step.md)

@@ -1,4 +1,4 @@
-# Two Ninety Theorem Wanted
+# Two Ninety Theorem
 
 - [Eval Q](eval-q.md)
 - [Represents](represents.md)

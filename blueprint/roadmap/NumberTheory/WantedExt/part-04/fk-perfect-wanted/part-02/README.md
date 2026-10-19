@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 2 of 2
 
 - [Theorem 8](not-kl-deficient-perfect-with-two-pow-mu.md)

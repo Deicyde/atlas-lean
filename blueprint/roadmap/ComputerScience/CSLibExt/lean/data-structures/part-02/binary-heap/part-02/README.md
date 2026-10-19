@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 2 of 3
 
 - [Min Heap](min-heap.md)

@@ -2,7 +2,7 @@
 article_id: af_c0cad808a51459d61fbbd1ac
 ---
 
-# Supremum Of Selector Processes Wanted
+# Supremum Of Selector Processes
 
 - [Binomial Set Distribution](binomial-set-distribution.md)
 - [Is Small](is-small.md)

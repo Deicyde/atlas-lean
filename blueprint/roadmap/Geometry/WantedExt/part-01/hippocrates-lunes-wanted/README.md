@@ -2,7 +2,7 @@
 article_id: af_3bd25ce45338143f5f80ac5b
 ---
 
-# Hippocrates Lunes Wanted
+# Hippocrates Lunes
 
 - [Plane](plane.md)
 - [Det2](det2.md)

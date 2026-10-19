@@ -1,5 +1,6 @@
 ---
 article_id: af_d06330fcd549bff503edc912
+navigation: transparent
 ---
 
 # Orthonormality of Characters to Lecture 24

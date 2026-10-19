@@ -1,4 +1,4 @@
-# Jacobian Challenge Wanted
+# Jacobian Challenge
 
 - [Genus](genus.md)
 - [Jacobian](jacobian.md)

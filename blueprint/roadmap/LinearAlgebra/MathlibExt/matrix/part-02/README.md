@@ -1,5 +1,6 @@
 ---
 article_id: af_9b52d10e906c6608ee5707e4
+navigation: transparent
 ---
 
 # Reduced Row Echelon to Zagier Matrix Inverse

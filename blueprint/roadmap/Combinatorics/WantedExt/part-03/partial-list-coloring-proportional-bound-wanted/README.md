@@ -1,4 +1,4 @@
-# Partial List Coloring Proportional Bound Wanted
+# Partial List Coloring Proportional Bound
 
 - [Is Partial List Coloring](is-partial-list-coloring.md)
 - [Conjecture](conjecture.md)

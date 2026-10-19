@@ -1,5 +1,6 @@
 ---
 article_id: af_4aa2dd86738af4346c1c38bf
+navigation: transparent
 ---
 
 # Combinatorics to Hoeffding Binomial Lower Tail

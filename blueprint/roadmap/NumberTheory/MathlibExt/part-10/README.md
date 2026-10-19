@@ -1,5 +1,6 @@
 ---
 article_id: af_8a498d0807a41e6a651ae06f
+navigation: transparent
 ---
 
 # Primitive Divisor to Steuerwald Three Perfect

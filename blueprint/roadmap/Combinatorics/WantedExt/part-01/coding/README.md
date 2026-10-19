@@ -1,3 +1,3 @@
 # Coding
 
-- [Cycle Shannon Bounds Wanted](cycle-shannon-bounds-wanted/README.md)
+- [Cycle Shannon Bounds](cycle-shannon-bounds-wanted/README.md)

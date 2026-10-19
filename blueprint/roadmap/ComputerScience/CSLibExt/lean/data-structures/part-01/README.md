@@ -1,5 +1,6 @@
 ---
 article_id: af_cb4d43fbefc33425d98a7747
+navigation: transparent
 ---
 
 # Avl Tree to Binary Counter

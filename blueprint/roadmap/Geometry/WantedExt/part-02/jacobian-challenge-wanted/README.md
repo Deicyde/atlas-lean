@@ -1,4 +1,4 @@
-# Jacobian Challenge Wanted
+# Jacobian Challenge
 
 - [Genus](genus.md)
 - [Genus eq zero iff homeo](genus-eq-zero-iff-homeo.md)

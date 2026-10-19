@@ -1,4 +1,4 @@
-# Incomplete Binomial Harmonic Sums Wanted
+# Incomplete Binomial Harmonic Sums
 
 - [Inv Pow Two Sum](inv-pow-two-sum.md)
 - [Central Binom Weighted Sum](central-binom-weighted-sum.md)

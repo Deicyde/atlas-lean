@@ -1,4 +1,4 @@
-# Shakov Two Regular Wanted
+# Shakov Two Regular
 
 - [Shakov Seq](shakov-seq.md)
 - [Shakov A](shakov-a.md)

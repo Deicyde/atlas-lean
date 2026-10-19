@@ -1,4 +1,4 @@
-# Periodic Tiling Conjecture Wanted
+# Periodic Tiling Conjecture
 
 - [Is Tiling](is-tiling.md)
 - [Is Periodic Tiling Set](is-periodic-tiling-set.md)

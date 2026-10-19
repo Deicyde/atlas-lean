@@ -2,7 +2,7 @@
 article_id: af_aca453edfe594e17f7f6d8ec
 ---
 
-# Balanceable Bounded Partitions Wanted
+# Balanceable Bounded Partitions
 
 - [Bounded](bounded.md)
 - [Balanceable](balanceable.md)

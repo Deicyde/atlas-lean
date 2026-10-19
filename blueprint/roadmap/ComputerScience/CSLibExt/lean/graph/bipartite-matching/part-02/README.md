@@ -1,3 +1,7 @@
+---
+navigation: transparent
+---
+
 # Part 2 of 5
 
 - [Max Matching](max-matching.md)

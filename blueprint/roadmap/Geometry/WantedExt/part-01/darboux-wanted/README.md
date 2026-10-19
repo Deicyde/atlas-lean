@@ -2,7 +2,7 @@
 article_id: af_3ced016c14e95fb07c406eef
 ---
 
-# Darboux Wanted
+# Darboux
 
 - [E](e.md)
 - [Idx P](idx-p.md)

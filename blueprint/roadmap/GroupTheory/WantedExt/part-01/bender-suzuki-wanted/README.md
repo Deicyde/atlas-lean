@@ -2,7 +2,7 @@
 article_id: af_b73cd4571c23e6348c5110ba
 ---
 
-# Bender Suzuki Wanted
+# Bender Suzuki
 
 - [Is Strongly Embedded](is-strongly-embedded.md)
 - [PSL2 Model](psl2-model.md)

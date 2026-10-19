@@ -2,7 +2,7 @@
 article_id: af_a406e3daafec8ed5640a0077
 ---
 
-# Logarithmic Potential Equilibrium Free Wanted
+# Logarithmic Potential Equilibrium Free
 
 - [Charge Seq](charge-seq.md)
 - [Points Distinct](points-distinct.md)

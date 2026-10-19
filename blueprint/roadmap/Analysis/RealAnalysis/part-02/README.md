@@ -1,5 +1,6 @@
 ---
 article_id: af_0fe4c1641a34a82cb33beeda
+navigation: transparent
 ---
 
 # The Riemann Integral to Lecture 9
