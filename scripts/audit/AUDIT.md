@@ -24,7 +24,6 @@ commits and pushes.
 | Track | Title | Statement | Edges | Fix goes to |
 |---|---|---|---|---|
 | v2 (MathlibExt, CSLibExt, WantedExt) | leading `**Name.**` of the docstring, else the humanized Lean name, else the module name for single-article modules | the docstring minus `Source:` paragraphs | compiled Lean dependencies (`blueprint/sources/v2/lean-dependencies.json`) | the Lean docstring (fork, then upstream PR) |
-| v1 (26 archived books) | the report's `name`, plus `(location)` when the name is a bare label | the report's `description` (the textbook statement) | v1 Lean dependencies plus book edges | a wiki-side override file (generator hook, not built yet) |
 
 atlas-lean receives v2 code from fairinternal/formal-math byte for byte, so a
 docstring fix that lands only in atlas-lean can be overwritten by the next
@@ -34,8 +33,8 @@ import. Upstream fixes go to both, or through formal-math.
 
 `build_packets.py` writes one JSON object per article: the article path and
 frontmatter, the lint flags, the linked dependencies, the Lean file, line,
-signature and docstring (v2), the v1 report entry with v1's own review scores
-(v1), and `signature_mentions` (articles whose names occur in the signature).
+signature and docstring, and `signature_mentions` (articles whose names occur
+in the signature).
 
 ## Checks and scores
 
@@ -49,11 +48,10 @@ vacuous.
    weak inequalities, domains and conclusion, nothing dropped and nothing
    added. For a definition, the text defines the same object. A citation or a
    process note in place of a statement scores 0.
-2. **Source fidelity** (Lean vs source). v1: the report's textbook statement
-   against the Lean. v2: only when the docstring cites a precise result the
-   auditor can state with confidence; otherwise `null` with "insufficient
-   evidence". A deliberate, documented weakening is reported, never fixed by
-   editing the statement away from Lean.
+2. **Source fidelity** (Lean vs source). Scored only when the docstring cites
+   a precise result the auditor can state with confidence; otherwise `null`
+   with "insufficient evidence". A deliberate, documented weakening is
+   reported, never fixed by editing the statement away from Lean.
 3. **Presentation.** The title names the result the way a mathematician would
    and is unique within its subject. The statement is complete sentences, self
    contained (every symbol is introduced or is the subject of a linked
@@ -64,8 +62,7 @@ vacuous.
    depends on` holds proof-only ones. Report a missing article for a project
    notion the statement uses, and spurious or misfiled edges.
 5. **Status.** Frontmatter matches Lean: `theorem_wanted` is stated without a
-   proof, `def_wanted` is unstated, a module with `sorry` proves nothing, a v1
-   target that failed review is not formalized.
+   proof, `def_wanted` is unstated, and a module with `sorry` proves nothing.
 6. **Role.** `main-result`, `definition`, `supporting` (a lemma or construction
    a main result uses) or `plumbing` (an implementation detail that probably
    should not be a wiki node; reported, not removed).
@@ -92,8 +89,6 @@ a wording preference is not a defect, and every rewrite costs an upstream review
   5. No `-/` or `/-` inside (Lean comments nest, so a stray `/-` swallows the
      rest of the file), lines at most 100 columns, `/--` and `-/` placement as
      in the surrounding file.
-- **v1 override.** `{title, statement}` for the article; the statement changes
-  only to fix TeX or an error against the textbook passage the report quotes.
 - **needs-lean-change.** Lean does not match its source. Do not edit Lean;
   describe the mismatch for an upstream issue.
 - **generator.** The defect comes from the pipeline (title collisions from
@@ -156,8 +151,3 @@ Correctness is required on actual values in $F$, not as an identity of formal po
 $b$ is the value of the operand that $b$ refers to, where each gate is evaluated from the values
 of the gates before it. -/
 ```
-
-**v1, TheoryOfComputation idx 30** ("Corollary 1 (Lecture 8)", Lean
-`Decidability.languages_uncountable`). Statement and Lean agree (readback 5,
-source fidelity 4); the title is a bare label. Override title:
-"Corollary 1 (The set of all languages is uncountable)".

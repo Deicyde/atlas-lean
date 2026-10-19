@@ -53,7 +53,7 @@ This section studies the distances determined by finite point configurations.
             article.write_text("---\ndeclaration: theorem\n---\n# Unchanged statement\n")
             original = article.read_bytes()
             with patch.object(wiki, "ROADMAP", roadmap):
-                updates = wiki.navigation_updates([])
+                updates = wiki.navigation_updates()
             self.assertEqual(set(updates), {root / "README.md", part / "README.md"})
             self.assertTrue(updates[root / "README.md"].endswith(body))
             self.assertIn("navigation: collection", updates[root / "README.md"])

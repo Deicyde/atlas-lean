@@ -7,10 +7,7 @@ RESULTS_JSON is the audit workflow's return value. A fix is applied only when
 a verifier accepted it: the original fix if the first round accepted it, else
 the corrected fix if the second round did. Docstring fixes replace the
 docstring lines recorded in the packet, after checking that the file still
-holds that exact docstring. v1 title overrides, and withdrawals of v1's
-"formalized" verdict where a checker confirmed that the Lean does not state
-the textbook result, go to v1-overrides.json next to the ledger, which
-scripts/generate_wiki.py reads. Every audited article gets a ledger line with
+holds that exact docstring. Every audited article gets a ledger line with
 the hash of the packet it was judged on.
 """
 
@@ -66,7 +63,6 @@ def main() -> int:
     packets = {p["article_id"]: p for p in map(json.loads, packets_path.read_text().splitlines())}
     results = json.loads(results_path.read_text())
     by_file: dict[str, list[tuple[dict, str]]] = defaultdict(list)
-    overrides: dict[str, dict] = {}
     ledger, skipped = [], []
     for result in results:
         fixes = accepted(result)
@@ -85,19 +81,6 @@ def main() -> int:
                 else:
                     by_file[packet["lean_file"]].append((packet, fix["docstring"]))
                     applied = "docstring"
-            elif fix and fix["kind"] == "v1-override":
-                v1 = packet["v1"]
-                overrides.setdefault(f"{v1['report']}#{v1['idx']}", {}).update(
-                    {key: fix[key] for key in ("title", "statement") if fix.get(key)}
-                )
-                applied = "v1-override"
-            claim = claims.get(node["article_id"], {})
-            if packet["track"] == "v1" and claim.get("confirmed") and packet.get("statement_status") == "formalized":
-                # A checked claim that the matched Lean does not formalize the
-                # textbook statement withdraws v1's own "formalized" verdict.
-                v1 = packet["v1"]
-                overrides.setdefault(f"{v1['report']}#{v1['idx']}", {})["withdrawn"] = claim["reason"]
-                applied = (applied + "+withdrawn") if applied else "withdrawn"
             ledger.append(
                 {
                     "article_id": node["article_id"],
@@ -130,13 +113,8 @@ def main() -> int:
     if not dry:
         with ledger_path.open("a") as handle:
             handle.writelines(json.dumps(row) + "\n" for row in ledger)
-        if overrides:
-            target = ledger_path.parent / "v1-overrides.json"
-            merged = json.loads(target.read_text()) if target.exists() else {}
-            merged.update(overrides)
-            target.write_text(json.dumps(merged, indent=1, ensure_ascii=False, sort_keys=True) + "\n")
     print(f"{len(ledger)} audited, {changed} docstrings replaced in {len(by_file)} files, "
-          f"{len(overrides)} v1 overrides, {len(skipped)} skipped")
+          f"{len(skipped)} skipped")
     for article, reason in skipped[:30]:
         print(f"  skipped {article}: {reason}")
     return 0

@@ -10,7 +10,6 @@
     "Algebra & Number Theory": [
       "Algebra",
       "AlgebraicGeometry",
-      "ArithmeticGeometry",
       "FieldTheory",
       "GroupTheory",
       "LinearAlgebra",
@@ -19,7 +18,6 @@
       "RingTheory"
     ],
     "Geometry & Topology": [
-      "AlgebraicTopology",
       "Geometry",
       "Topology"
     ],

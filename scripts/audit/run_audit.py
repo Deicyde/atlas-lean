@@ -66,11 +66,9 @@ AUDIT_SCHEMA = {
                         "properties": {
                             "kind": {
                                 "type": "string",
-                                "enum": ["docstring", "v1-override", "none", "needs-lean-change", "generator"],
+                                "enum": ["docstring", "none", "needs-lean-change", "generator"],
                             },
                             "docstring": {"type": "string"},
-                            "title": {"type": "string"},
-                            "statement": {"type": "string"},
                             "rationale": {"type": "string"},
                         },
                         "required": ["kind", "rationale"],
@@ -98,8 +96,6 @@ VERIFY_SCHEMA = {
                     "accept": {"type": "boolean"},
                     "problems": {"type": "array", "items": {"type": "string"}},
                     "corrected_docstring": {"type": "string"},
-                    "corrected_title": {"type": "string"},
-                    "corrected_statement": {"type": "string"},
                 },
                 "required": ["article_id", "accept", "problems"],
             },
@@ -120,9 +116,8 @@ Additional rules: this audit is read-only. Do not try to modify any file, and do
 Audit each of the {len(batch["packets"])} articles below. For each one:
 1. Read the article (path relative to {repo}).
 2. Read the Lean declaration at lean_file:lean_line with its docstring, and the definitions of every project notion its statement uses (find them with grep under {repo}; read their docstrings and bodies).
-3. For v1 articles, the packet's v1 field is the textbook statement and v1's own review; compare it with the Lean.
-4. Score readback, source fidelity, presentation and edges, check status, assign a role, and record findings.
-5. Propose a fix by the rules in AUDIT.md. A docstring fix must state exactly what the Lean states.
+3. Score readback, source fidelity, presentation and edges, check status, assign a role, and record findings.
+4. Propose a fix by the rules in AUDIT.md. A docstring fix must state exactly what the Lean states.
 
 Return one record per article, in the order given, with article_id and article copied from its packet.
 
@@ -142,7 +137,7 @@ Read {AUDIT_DIR}/AUDIT.md (sections "Fixes" and "Verification") first.
 Additional rules: do not try to modify any file, and do not run lean, lake or pytest at all.
 
 Your job is to refute each proposed fix. For each one, read the Lean declaration (lean_file:lean_line) and every definition it uses, then compare the proposed text with the Lean statement term by term: quantifiers and their order, every hypothesis, strict against weak inequalities, the domain and codomain (for example ℝ against ℝ≥0∞, ℕ against ℤ), typeclass assumptions (Field against CommRing), and the conclusion. Check that every symbol is introduced before use, the TeX is valid inside $...$, the title claims no more than the statement, every original Source: paragraph is preserved byte for byte as the last paragraph, nothing contains -/ or /- inside the docstring, and no line exceeds 100 columns.
-Accept only when you find no difference. When you reject, list each problem concretely; if the fix is repairable, also return the corrected text (corrected_docstring for docstring fixes; corrected_title / corrected_statement for v1 overrides).{again}
+Accept only when you find no difference. When you reject, list each problem concretely; if the fix is repairable, also return the corrected docstring as corrected_docstring.{again}
 Return one verdict per proposed fix, with its article_id.
 
 Articles and their packets:
@@ -237,10 +232,10 @@ def fixes_of(nodes: list[dict]) -> list[dict]:
             "article_id": node["article_id"],
             "article": node["article"],
             "kind": node["fix"]["kind"],
-            **{key: node["fix"][key] for key in ("docstring", "title", "statement") if node["fix"].get(key)},
+            **({"docstring": node["fix"]["docstring"]} if node["fix"].get("docstring") else {}),
         }
         for node in nodes
-        if node.get("fix", {}).get("kind") in ("docstring", "v1-override")
+        if node.get("fix", {}).get("kind") == "docstring"
     ]
 
 
@@ -283,13 +278,8 @@ def run_batch(repo: Path, out: Path, batch: dict, model: str, effort: str, lock:
             original = next((fix for fix in fixes if fix["article_id"] == verdict["article_id"]), None)
             if original is None or verdict["accept"]:
                 continue
-            repaired = {
-                "docstring": verdict.get("corrected_docstring"),
-                "title": verdict.get("corrected_title"),
-                "statement": verdict.get("corrected_statement"),
-            }
-            if any(repaired.values()):
-                corrected.append({**original, **{key: value for key, value in repaired.items() if value}})
+            if verdict.get("corrected_docstring"):
+                corrected.append({**original, "docstring": verdict["corrected_docstring"]})
         record.update(verify=verify, corrected=corrected)
         if corrected:
             say(f"re-verifying {len(corrected)} corrected fixes")

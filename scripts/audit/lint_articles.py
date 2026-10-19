@@ -20,10 +20,6 @@ from pathlib import Path
 
 LINK = re.compile(r"\[([^\]]*)\]\(([^)\s]+)\)")
 V2_LIBRARIES = ("MathlibExt", "CSLibExt", "WantedExt")
-GENERIC_TITLE = re.compile(
-    r"(?i)^(theorem|lemma|corollary|proposition|definition|example|exercise|remark|claim|fact|problem|construction|notation|axiom)"
-    r"( [0-9A-Za-z.\-]+)?( \((lecture|section|chapter|part|class meeting|page|§)[^)]*\))?$"
-)
 
 
 def humanize(name: str) -> str:
@@ -53,11 +49,12 @@ def parse(path: Path) -> dict | None:
     return {"front": front, "title": title_match.group(1).strip(), "statement": statement, "sections": sections}
 
 
-def track(relative: Path) -> str:
+def track(relative: Path) -> str | None:
+    """The v2 library an article belongs to; None for a file outside them, which is not an article."""
     for library in V2_LIBRARIES:
         if library in relative.parts:
             return library
-    return "v1"
+    return None
 
 
 def lint(roadmap: Path, subject: str | None) -> list[dict]:
@@ -68,11 +65,11 @@ def lint(roadmap: Path, subject: str | None) -> list[dict]:
         relative = path.relative_to(roadmap)
         if subject and relative.parts[0] != subject:
             continue
+        kind = track(relative)
         article = parse(path)
-        if article is None:
+        if kind is None or article is None:
             continue
         front, title, statement = article["front"], article["title"], article["statement"]
-        kind = track(relative)
         lean = front.get("lean", "")
         short = lean.rsplit(".", 1)[-1] if lean else ""
         flags = []
@@ -85,13 +82,11 @@ def lint(roadmap: Path, subject: str | None) -> list[dict]:
             flags.append("statement-short")
         if plain.count("$") % 2:
             flags.append("math-unbalanced-dollar")
-        if kind != "v1" and re.search(r"`[A-Za-z_][\w']*(\.[\w']+)+`", plain):
+        if re.search(r"`[A-Za-z_][\w']*(\.[\w']+)+`", plain):
             flags.append("statement-lean-identifier")
-        if kind != "v1" and short and title in {humanize(short), humanize(short).rstrip(".")}:
+        if short and title in {humanize(short), humanize(short).rstrip(".")}:
             flags.append("title-from-lean-name")
-        if kind == "v1" and GENERIC_TITLE.match(title):
-            flags.append("title-generic")
-        if kind != "v1" and re.search(r"(?i)\bwanted\b", title):
+        if re.search(r"(?i)\bwanted\b", title):
             flags.append("title-mentions-wanted")
         for section in ("Depends on", "Proof depends on", "Sources"):
             for _, target in LINK.findall(article["sections"].get(section, "")):

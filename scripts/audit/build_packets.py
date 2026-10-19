@@ -8,7 +8,7 @@ from lint_articles.py and fixes the article list; INDEX_JSONL (a lint of the
 whole roadmap, default LINT_JSONL) resolves the names a signature mentions,
 which can belong to other subjects. Each packet records where the
 article's statement comes from, so a fix can be written back to that source:
-the declaration's docstring for v2, the v1 report entry for v1.
+the declaration's docstring.
 """
 
 from __future__ import annotations
@@ -124,7 +124,6 @@ def mark_statement_edges(packets: list[dict], index_path: Path) -> None:
 def main() -> int:
     repo, lint_path, out_path = Path(sys.argv[1]), Path(sys.argv[2]), Path(sys.argv[3])
     roadmap = repo / "blueprint" / "roadmap"
-    reports: dict[str, dict] = {}
     packets, missing = [], []
     for row in map(json.loads, lint_path.read_text().splitlines()):
         article = roadmap / row["path"]
@@ -145,52 +144,21 @@ def main() -> int:
             "depends_on": links(parts.get("Depends on", ""), article, roadmap),
             "proof_depends_on": links(parts.get("Proof depends on", ""), article, roadmap),
         }
-        if row["track"] == "v1":
-            book = Path(row["path"]).parts[1]
-            if book not in reports:
-                details = json.loads((repo / "v1" / "Atlas" / book / "report.json").read_text())["statements"]["details"]
-                reports[book] = {item["idx"]: item for item in details}
-            idx = int(article.name.split("-", 1)[0]) - 1
-            entry = reports[book][idx]
-            packet["v1"] = {
-                "report": f"v1/Atlas/{book}/report.json",
-                "idx": idx,
-                "name": entry["name"],
-                "kind": entry["kind"],
-                "location": entry["location"],
-                "description": entry["description"],
-                "passed": entry["passed"],
-                "scores": entry.get("scores"),
-                "lean_declaration": entry.get("lean_declaration"),
-            }
-            lean_file = entry.get("lean_file")
-            names = [name.strip() for name in (entry.get("lean_declaration") or "").split(",") if name.strip()]
-            if lean_file and names:
-                path = repo / "v1" / lean_file
-                number = locate(path, names[0]) if path.is_file() else None
-                if number is not None:
-                    lines = path.read_text().splitlines()
-                    packet["lean_file"] = str(path.relative_to(repo))
-                    packet["lean_line"] = number + 1
-                    packet["signature"] = signature(lines, number)
-            if "lean_file" not in packet:
-                missing.append(row["path"])
+        source = SOURCE_LINK.search(parts.get("Sources", ""))
+        short = row["lean"].rsplit(".", 1)[-1] if row["lean"] else ""
+        path = repo / Path(*source.group("module").split(".")).with_suffix(".lean") if source else None
+        number = locate(path, row["lean"]) if path and path.is_file() and short else None
+        if number is None:
+            missing.append(row["path"])
         else:
-            source = SOURCE_LINK.search(parts.get("Sources", ""))
-            short = row["lean"].rsplit(".", 1)[-1] if row["lean"] else ""
-            path = repo / Path(*source.group("module").split(".")).with_suffix(".lean") if source else None
-            number = locate(path, row["lean"]) if path and path.is_file() and short else None
-            if number is None:
-                missing.append(row["path"])
-            else:
-                lines = path.read_text().splitlines()
-                span = docstring_span(lines, number)
-                packet["lean_file"] = str(path.relative_to(repo))
-                packet["lean_line"] = number + 1
-                packet["signature"] = signature(lines, number)
-                if span:
-                    packet["docstring_lines"] = [span[0] + 1, span[1] + 1]
-                    packet["docstring"] = "\n".join(lines[span[0] : span[1] + 1])
+            lines = path.read_text().splitlines()
+            span = docstring_span(lines, number)
+            packet["lean_file"] = str(path.relative_to(repo))
+            packet["lean_line"] = number + 1
+            packet["signature"] = signature(lines, number)
+            if span:
+                packet["docstring_lines"] = [span[0] + 1, span[1] + 1]
+                packet["docstring"] = "\n".join(lines[span[0] : span[1] + 1])
         packets.append(packet)
     mark_statement_edges(packets, Path(sys.argv[4]) if len(sys.argv) > 4 else lint_path)
     out_path.write_text("".join(json.dumps(packet) + "\n" for packet in packets))
