@@ -21,7 +21,7 @@ import json
 import re
 import sys
 import textwrap
-from collections import defaultdict
+from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -34,6 +34,10 @@ ROADMAP = VAULT / "roadmap"
 SOURCES = VAULT / "sources"
 REPOSITORY_URL = "https://github.com/facebookresearch/atlas-lean"
 MAX_CHILDREN = 20  # `autoform audit` reports containers above 24.
+# A `navigation: module` page may hold as many articles as the explorer maps.
+MAX_MODULE_CHILDREN = 120
+# Headings with a meaning on Autoform pages; a module section never takes one.
+RESERVED_HEADINGS = {"contents", "depends on", "mathematical overview", "proof depends on", "sources"}
 
 SUBJECTS = {
     "Computability": (
@@ -214,6 +218,8 @@ class Target:
     source: tuple[str, Path] | None = None
     citations: list[str] = field(default_factory=list)
     module: tuple[str, ...] = ()
+    # The doc heading, named section and namespace the declaration sits under.
+    sections: tuple[str, str, str] = ("", "", "")
     path: Path = Path()
     depends: list[Target] = field(default_factory=list)
     proof_depends: list[Target] = field(default_factory=list)
@@ -227,6 +233,8 @@ class Container:
     prose: str = ""
     path: Path = Path()
     navigation: str | None = None
+    # One section title per child, for a module page whose source has sections.
+    groups: list[str] | None = None
 
 
 def slugify(text: str, limit: int = 48) -> str:
@@ -248,7 +256,7 @@ def chunk(title: str, slug: str, children: list) -> Container:
     parts = [children[start : start + size] for start in range(0, len(children), size)]
     nested = []
     for number, part in enumerate(parts, 1):
-        if isinstance(part[0], Container) and len(part) > 1:
+        if len(part) > 1:
             name = f"{part[0].title} to {part[-1].title}"
         else:
             name = f"Part {number} of {len(parts)}"
@@ -318,6 +326,57 @@ def first_words(text: str, limit: int = 60) -> str:
     return sentence if len(sentence) <= limit else sentence[:limit].rsplit(" ", 1)[0] + "..."
 
 
+def section_labels(lines: list[str]) -> list[tuple[str, str, str]]:
+    """The doc heading, named section and namespace in force at each line.
+
+    The first `/-!` block is the module docstring, which describes the whole
+    file, so its headings do not divide the declarations below it.
+    """
+    heading, sections, namespaces, labels = "", [], [], []
+    in_doc = header = False
+    seen_doc = False
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("/-!"):
+            in_doc, header, seen_doc = True, not seen_doc, True
+        if in_doc and not header:
+            match = re.match(r"(?:/-!\s*)?#{1,3}\s+(.+?)\s*(?:-/)?$", stripped)
+            if match:
+                heading = match.group(1)
+        if in_doc and stripped.endswith("-/"):
+            in_doc = False
+        opened = re.match(r"(section|namespace)(?:\s+(\S+))?\s*$", line)
+        if opened:
+            (sections if opened.group(1) == "section" else namespaces).append(opened.group(2) or "")
+        closed = re.match(r"end(?:\s+(\S+))?\s*$", line)
+        if closed:
+            name = closed.group(1) or ""
+            if sections and sections[-1] == name:
+                sections.pop()
+            elif namespaces and namespaces[-1] == name:
+                namespaces.pop()
+        labels.append((heading, sections[-1] if sections else "", namespaces[-1] if namespaces else ""))
+    return labels
+
+
+def module_groups(items: list[Target]) -> list[str] | None:
+    """Section titles for a module page: doc headings, else named sections, else namespaces."""
+    for position in range(3):
+        values = [item.sections[position] for item in items]
+        if len({value for value in values if value}) < 2:
+            continue
+        # An unlabeled declaration after a labeled one would read as part of
+        # the section above it; only a leading run may be unlabeled.
+        first = next(index for index, value in enumerate(values) if value)
+        if not all(values[first:]):
+            continue
+        titles = [value if position == 0 else humanize(value.split(".")[-1]) if value else "" for value in values]
+        if any(title.lower() in RESERVED_HEADINGS for title in titles):
+            return None
+        return titles
+    return None
+
+
 def load_library(library: str, index) -> tuple[list[Target], dict]:
     located = {
         (declaration.path, declaration.line): declaration
@@ -333,6 +392,7 @@ def load_library(library: str, index) -> tuple[list[Target], dict]:
         lines = text.splitlines()
         has_sorry = re.search(r"\bsorry\b", without_comments(text)) is not None
         module = relative.with_suffix("").parts
+        labels = section_labels(lines)
         summary["modules"] += 1
         for number, line in enumerate(lines):
             match = V2_DECLARATION.match(line)
@@ -391,6 +451,7 @@ def load_library(library: str, index) -> tuple[list[Target], dict]:
                     source=(f"{library}, {'.'.join(module)}", Path("sources") / "v2" / f"{library}.md"),
                     citations=citations,
                     module=module,
+                    sections=labels[number],
                 )
             )
     # A module with one article is usually named after its result.
@@ -419,7 +480,16 @@ def library_tree(library: str, targets: list[Target]) -> Container:
         ]
         for name in sorted(node["modules"]):
             items = node["modules"][name]
-            children.append(items[0] if len(items) == 1 else chunk(topic_title(name), slugify(humanize(name)), items))
+            if len(items) == 1:
+                children.append(items[0])
+                continue
+            # A module is one page of its declarations, in source order.
+            if len(items) <= MAX_MODULE_CHILDREN:
+                page = Container(topic_title(name), slugify(humanize(name)), items, groups=module_groups(items))
+            else:
+                page = chunk(topic_title(name), slugify(humanize(name)), items)
+            page.navigation = "module"
+            children.append(page)
         return chunk(title, slug, children)
 
     tree = build(library, library, root)
@@ -542,9 +612,27 @@ def render_container(node: Container, previous: str | None, extra: str = "") -> 
         if text:
             lines += ["## Mathematical overview", "", text, ""]
         lines += ["## Contents", ""]
-    for child in node.children:
-        target = child.path.relative_to(VAULT)
-        lines.append(f"- [{link_text(child.title)}]({rel(vault_path, target)})")
+    level = "###" if introduction else "##"
+
+    def link(child: Container | Target) -> str:
+        return f"- [{link_text(child.title)}]({rel(vault_path, child.path.relative_to(VAULT))})"
+
+    if node.children and all(isinstance(child, Container) and child.navigation == "transparent" for child in node.children):
+        # Pagination parts read as sections of this page, not as pages to open.
+        for part in node.children:
+            lines += [f"{level} {part.title}", "", *(link(child) for child in part.children), ""]
+        lines.pop()
+    elif node.groups:
+        current = None
+        for group, child in zip(node.groups, node.children):
+            if group and group != current:
+                if lines[-1] != "":
+                    lines.append("")
+                lines += [f"{level} {group}", ""]
+            current = group or current
+            lines.append(link(child))
+    else:
+        lines += [link(child) for child in node.children]
     fields = [("navigation", node.navigation)] if node.navigation else []
     header = (previous or "").split("---", 2)
     if len(header) == 3 and not header[0].strip():
@@ -620,10 +708,25 @@ def render_roadmap_root(subjects: list[str], previous: str | None) -> str:
     return frontmatter([], previous) + "\n".join(lines) + "\n"
 
 
+def ids_by_lean() -> dict[str, str]:
+    """Article ids of the current pages by Lean name, so a page that moves keeps its id."""
+    found: dict[str, set[str]] = defaultdict(set)
+    for path in owned():
+        header = path.read_text().split("---", 2)
+        if len(header) != 3 or header[0].strip():
+            continue
+        article = ARTICLE_ID.search(header[1])
+        lean = re.search(r"(?m)^lean: (\S+)$", header[1])
+        if article and lean:
+            found[lean.group(1)].add(article.group(1))
+    return {name: next(iter(ids)) for name, ids in found.items() if len(ids) == 1}
+
+
 def generate() -> dict[Path, str]:
     index = index_project(ROOT)
     files: dict[Path, str] = {}
     previous = lambda path: path.read_text() if path.is_file() else None  # noqa: E731
+    known_ids = ids_by_lean()
     v2_coverage = []
     v2_by_subject: dict[str, list[Container]] = defaultdict(list)
     v2_loaded = {library: load_library(library, index) for library in LIBRARIES}
@@ -641,10 +744,14 @@ def generate() -> dict[Path, str]:
             dependency_data["articles"],
         )
     every_v2 = Container("v2", "v2", [tree for subject in sorted(v2_by_subject) for tree in v2_by_subject[subject]])
+    lean_counts = Counter(node.lean for node in walk(every_v2) if isinstance(node, Target) and node.lean)
     for node in walk(every_v2):
         if node is not every_v2:
             render = render_container if isinstance(node, Container) else render_target
-            files[node.path] = render(node, previous(node.path))
+            prior = previous(node.path)
+            if prior is None and isinstance(node, Target) and lean_counts[node.lean] == 1 and node.lean in known_ids:
+                prior = f"article_id: {known_ids[node.lean]}\n"
+            files[node.path] = render(node, prior)
     for library, (targets, summary) in v2_loaded.items():
         summary["edges"] = sum(len(target.depends) + len(target.proof_depends) for target in targets)
         summary["dependency_missing"] = len((dependency_data or {}).get("missing_articles", {}).get(library, ()))
