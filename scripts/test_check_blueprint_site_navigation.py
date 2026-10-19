@@ -11,7 +11,10 @@ from contextlib import redirect_stderr, redirect_stdout
 from pathlib import Path
 from unittest.mock import patch
 
-import check_blueprint_site as checker
+if __package__:
+    from . import check_blueprint_site as checker
+else:
+    import check_blueprint_site as checker
 
 
 class NavigationPayloadTests(unittest.TestCase):
