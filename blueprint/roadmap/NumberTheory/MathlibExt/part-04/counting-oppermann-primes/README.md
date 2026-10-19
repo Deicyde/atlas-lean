@@ -1,5 +1,6 @@
 ---
 article_id: af_514eeff17593f7c75c935be7
+navigation: module
 ---
 
 # Counting Oppermann Primes

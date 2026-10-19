@@ -1,5 +1,6 @@
 ---
 article_id: af_f482fbd923878d185e555cf3
+navigation: module
 ---
 
 # Cobham Uniform Morphism

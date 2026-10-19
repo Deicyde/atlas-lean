@@ -1,5 +1,6 @@
 ---
 article_id: af_677df78a69303bed4877058c
+navigation: module
 ---
 
 # Immersion Of Injective MFDeriv

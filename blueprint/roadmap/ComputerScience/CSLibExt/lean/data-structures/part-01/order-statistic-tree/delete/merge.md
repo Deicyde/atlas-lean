@@ -14,12 +14,12 @@ separation does not hold.
 
 ## Depends on
 
-- [Tree](../../../part-02/order-statistic-tree/part-01/tree.md)
+- [Tree](../../../part-02/order-statistic-tree/tree.md)
 
 ## Proof depends on
 
-- [Entry](../../../part-02/order-statistic-tree/part-01/entry.md)
-- [Node](../../../part-02/order-statistic-tree/part-01/node.md)
+- [Entry](../../../part-02/order-statistic-tree/entry.md)
+- [Node](../../../part-02/order-statistic-tree/node.md)
 
 ## Sources
 

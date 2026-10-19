@@ -1,5 +1,6 @@
 ---
 article_id: af_7df0f61c86df964356eadbe0
+navigation: module
 ---
 
 # Basic Hypergeometric

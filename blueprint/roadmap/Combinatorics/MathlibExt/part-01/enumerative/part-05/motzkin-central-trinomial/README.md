@@ -1,5 +1,6 @@
 ---
 article_id: af_8325d343d24e2b0eb760d355
+navigation: module
 ---
 
 # Motzkin Central Trinomial

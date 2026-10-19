@@ -1,5 +1,6 @@
 ---
 article_id: af_4c8027c988add2d40aabb3e0
+navigation: module
 ---
 
 # Gale Ryser

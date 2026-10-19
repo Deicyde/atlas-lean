@@ -12,8 +12,8 @@ Exposes nonemptiness, simplicity, path edges, closing edge, and containment.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
-- [Edge](../directed-adjacency-2/part-01/edge.md)
+- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Edge](../directed-adjacency-2/edge.md)
 - [Directed Cycle In](directed-cycle-in.md)
 
 ## Sources

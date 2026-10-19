@@ -1,5 +1,6 @@
 ---
 article_id: af_f83b121b5baa8d9849809514
+navigation: module
 ---
 
 # Exceptional Lie Tensor Square

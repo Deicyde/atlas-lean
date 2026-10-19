@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Powerful Numbers
 
 - [Lemma 1](int-sq-sub-int-sq-ne-two.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_25f47c8621280f98ca9e51ce
+navigation: module
 ---
 
 # Simultaneous Diagonalization

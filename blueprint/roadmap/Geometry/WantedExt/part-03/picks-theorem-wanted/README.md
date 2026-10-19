@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Picks Theorem
 
 - [To Plane](to-plane.md)

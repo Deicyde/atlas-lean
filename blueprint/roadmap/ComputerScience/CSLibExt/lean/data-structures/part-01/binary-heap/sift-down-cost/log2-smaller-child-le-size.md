@@ -13,11 +13,11 @@ A selected child's depth cannot exceed the maximal depth allowed by array size.
 
 ## Depends on
 
-- [Smaller Child](../../../part-02/binary-heap/part-01/smaller-child.md)
+- [Smaller Child](../../../part-02/binary-heap/smaller-child.md)
 
 ## Proof depends on
 
-- [Smaller Child valid](../../../part-02/binary-heap/part-01/smaller-child-valid.md)
+- [Smaller Child valid](../../../part-02/binary-heap/smaller-child-valid.md)
 
 ## Sources
 

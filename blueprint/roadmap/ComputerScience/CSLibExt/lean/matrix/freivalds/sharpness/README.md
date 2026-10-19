@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Sharpness
 
 - [Freivalds one wrong](freivalds-one-wrong.md)

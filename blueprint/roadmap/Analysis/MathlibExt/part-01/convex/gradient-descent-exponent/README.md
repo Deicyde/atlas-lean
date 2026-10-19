@@ -1,5 +1,6 @@
 ---
 article_id: af_6efd8e538d9ed481ded51c39
+navigation: module
 ---
 
 # Gradient Descent Exponent

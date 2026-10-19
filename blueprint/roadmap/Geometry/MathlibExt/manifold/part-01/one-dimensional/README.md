@@ -1,5 +1,6 @@
 ---
 article_id: af_e8e9847260fb86d249951bc2
+navigation: module
 ---
 
 # One Dimensional

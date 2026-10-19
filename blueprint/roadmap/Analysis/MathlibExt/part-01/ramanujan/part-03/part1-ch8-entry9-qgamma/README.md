@@ -1,5 +1,6 @@
 ---
 article_id: af_582c47ef61443196bc6deb6a
+navigation: module
 ---
 
 # Part1 Ch8 Entry9 Qgamma

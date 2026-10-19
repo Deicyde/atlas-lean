@@ -1,4 +1,10 @@
+---
+navigation: module
+---
+
 # Interpolation
+
+## Proposition
 
 - [Atoms](atoms.md)
 - [Eval Bool congr](eval-bool-congr.md)
@@ -6,5 +12,8 @@
 - [Elim Atom](elim-atom.md)
 - [Elim Atoms](elim-atoms.md)
 - [Eval Bool elim Atoms](eval-bool-elim-atoms.md)
+
+## PL
+
 - [Craig interpolation](exists-interpolant.md)
 - [Craig interpolation](exists-interpolant-cpl.md)

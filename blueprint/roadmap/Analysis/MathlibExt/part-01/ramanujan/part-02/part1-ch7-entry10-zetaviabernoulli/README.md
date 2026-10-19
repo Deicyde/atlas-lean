@@ -1,5 +1,6 @@
 ---
 article_id: af_71da438b6eb1c5541685eb6d
+navigation: module
 ---
 
 # Part1 Ch7 Entry10 Zetaviabernoulli

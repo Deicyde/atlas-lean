@@ -16,8 +16,8 @@ The empty indexed queue has the canonical empty heap and no present identity.
 
 ## Proof depends on
 
-- [Min Heap](../../../part-02/binary-heap/part-02/min-heap.md)
-- [Empty](../../../part-02/binary-heap/part-02/empty.md)
+- [Min Heap](../../../part-02/binary-heap/min-heap.md)
+- [Empty](../../../part-02/binary-heap/empty.md)
 
 ## Sources
 

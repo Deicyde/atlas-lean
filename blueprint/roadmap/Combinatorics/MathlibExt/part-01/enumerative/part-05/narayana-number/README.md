@@ -1,5 +1,6 @@
 ---
 article_id: af_fdcdbd9e88668e758e87d88d
+navigation: module
 ---
 
 # Narayana Number

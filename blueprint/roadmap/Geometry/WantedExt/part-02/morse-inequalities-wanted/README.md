@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Morse Inequalities
 
 - [Alternating Partial Sum](alternating-partial-sum.md)

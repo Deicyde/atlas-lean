@@ -32,8 +32,8 @@ An extracted path is a concrete shortest input path with at most n-1 edges.
 - [Run predecessor spec](../basic/run-predecessor-spec.md)
 - [Run source](../basic/run-source.md)
 - [Run source distance](../basic/run-source-distance.md)
-- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
-- [Edge](../../../directed-adjacency-2/part-01/edge.md)
+- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
+- [Edge](../../../directed-adjacency-2/edge.md)
 
 ## Sources
 

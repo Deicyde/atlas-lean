@@ -1,5 +1,6 @@
 ---
 article_id: af_07b25017f6c7aca3a9cdac81
+navigation: module
 ---
 
 # Catalan Asymptotic Expansion

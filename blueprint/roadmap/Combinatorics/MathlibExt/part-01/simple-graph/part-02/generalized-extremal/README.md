@@ -1,5 +1,6 @@
 ---
 article_id: af_57d6d22adf345e23ad1a9805
+navigation: module
 ---
 
 # Generalized Extremal

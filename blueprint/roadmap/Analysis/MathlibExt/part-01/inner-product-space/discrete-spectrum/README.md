@@ -1,5 +1,6 @@
 ---
 article_id: af_2b57188ade172f654b2cb8ad
+navigation: module
 ---
 
 # Discrete Spectrum

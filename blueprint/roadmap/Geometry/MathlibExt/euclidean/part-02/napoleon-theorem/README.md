@@ -1,5 +1,6 @@
 ---
 article_id: af_03b6319d5962e34da8515d2d
+navigation: module
 ---
 
 # Napoleon Theorem

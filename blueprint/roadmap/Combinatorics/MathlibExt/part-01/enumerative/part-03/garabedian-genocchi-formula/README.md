@@ -1,5 +1,6 @@
 ---
 article_id: af_7ccc9cc0d61c868db1a0d035
+navigation: module
 ---
 
 # Garabedian Genocchi Formula

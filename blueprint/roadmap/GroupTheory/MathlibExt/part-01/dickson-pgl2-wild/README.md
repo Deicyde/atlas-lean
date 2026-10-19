@@ -1,5 +1,6 @@
 ---
 article_id: af_430869c4cb9a021c594121b3
+navigation: module
 ---
 
 # Dickson PGL2 Wild

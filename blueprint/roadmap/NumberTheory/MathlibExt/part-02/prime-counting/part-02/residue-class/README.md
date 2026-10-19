@@ -1,5 +1,6 @@
 ---
 article_id: af_bfab701fb0d0bf4b361c3788
+navigation: module
 ---
 
 # Residue Class

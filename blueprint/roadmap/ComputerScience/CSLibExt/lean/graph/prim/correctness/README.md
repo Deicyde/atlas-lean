@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Correctness
 
 - [Prim root](prim-root.md)

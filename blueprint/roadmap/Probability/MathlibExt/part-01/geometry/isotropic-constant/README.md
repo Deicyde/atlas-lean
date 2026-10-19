@@ -1,5 +1,6 @@
 ---
 article_id: af_7bf97e3d33ec23bad6c1c74d
+navigation: module
 ---
 
 # Isotropic Constant

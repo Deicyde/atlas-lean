@@ -1,5 +1,6 @@
 ---
 article_id: af_18b30c90f2797fa29bca8af6
+navigation: module
 ---
 
 # Inverse Limit

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Probability
 
 - [Freivalds Trial Law](freivalds-trial-law.md)

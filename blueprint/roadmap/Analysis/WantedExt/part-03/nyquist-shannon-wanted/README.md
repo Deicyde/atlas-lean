@@ -1,5 +1,6 @@
 ---
 article_id: af_4442f2d779d56e35f2755c7a
+navigation: module
 ---
 
 # Nyquist Shannon

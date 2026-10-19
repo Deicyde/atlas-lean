@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Distinct Eisenstein Primes
 
 - [Lemma 2](exists-prime-mod-eq-five-between.md)

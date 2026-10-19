@@ -1,5 +1,6 @@
 ---
 article_id: af_68ff50e5b555622bac382af8
+navigation: module
 ---
 
 # Lu Wu Mobius Grid

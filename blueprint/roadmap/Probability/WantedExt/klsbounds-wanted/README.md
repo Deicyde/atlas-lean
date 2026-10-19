@@ -1,5 +1,6 @@
 ---
 article_id: af_29edb838cffda575526c2c80
+navigation: module
 ---
 
 # KLSBounds

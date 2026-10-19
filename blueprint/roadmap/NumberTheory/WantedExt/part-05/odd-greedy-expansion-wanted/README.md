@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Odd Greedy Expansion
 
 - [Proposition 1](even-num-of-even-sum-unit-fractions.md)

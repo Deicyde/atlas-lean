@@ -1,5 +1,6 @@
 ---
 article_id: af_0836f99c2f12f4b22c56b8a9
+navigation: module
 ---
 
 # Part1 Ch3 Entry1 Series Transformation

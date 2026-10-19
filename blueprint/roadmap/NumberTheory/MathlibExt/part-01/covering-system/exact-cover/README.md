@@ -1,5 +1,6 @@
 ---
 article_id: af_fa4df7c2bffc93d0033a9110
+navigation: module
 ---
 
 # Exact Cover

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Super Fibocatalan
 
 - [Fibo Catalan](fibo-catalan.md)

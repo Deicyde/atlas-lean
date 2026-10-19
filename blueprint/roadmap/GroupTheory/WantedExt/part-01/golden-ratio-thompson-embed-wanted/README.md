@@ -1,5 +1,6 @@
 ---
 article_id: af_d93428262656205e9cda5d87
+navigation: module
 ---
 
 # Golden Ratio Thompson Embed

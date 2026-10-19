@@ -19,9 +19,9 @@ The grammar `S → a S b | ε` generates `a^n b^n`.
 
 - [Yields](../yields/yields.md)
 - [Append](../yields/append.md)
-- [Eval Form](../basic/part-01/eval-form.md)
-- [Eval Symbol](../basic/part-01/eval-symbol.md)
-- [Language le of valuation](../basic/part-01/language-le-of-valuation.md)
+- [Eval Form](../basic/eval-form.md)
+- [Eval Symbol](../basic/eval-symbol.md)
+- [Language le of valuation](../basic/language-le-of-valuation.md)
 - [Mem language iff yields](../yields/mem-language-iff-yields.md)
 - [Yields of rule](../yields/yields-of-rule.md)
 

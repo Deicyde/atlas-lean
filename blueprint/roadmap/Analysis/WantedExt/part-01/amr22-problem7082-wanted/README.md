@@ -1,5 +1,6 @@
 ---
 article_id: af_9d51b01dbee966926e0c32ed
+navigation: module
 ---
 
 # AMR22 Problem7082

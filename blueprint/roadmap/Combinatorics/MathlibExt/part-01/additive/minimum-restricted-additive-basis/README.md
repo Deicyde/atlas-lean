@@ -1,5 +1,6 @@
 ---
 article_id: af_bfba3f2719bdeb4aed5fd5bb
+navigation: module
 ---
 
 # Minimum Restricted Additive Basis

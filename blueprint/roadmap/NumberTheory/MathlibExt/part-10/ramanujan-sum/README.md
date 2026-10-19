@@ -1,5 +1,6 @@
 ---
 article_id: af_f354ff7cec0507a8d0498af2
+navigation: module
 ---
 
 # Ramanujan Sum

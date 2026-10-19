@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Inverse Cost
 
 - [Ifft time add one](ifft-time-add-one.md)

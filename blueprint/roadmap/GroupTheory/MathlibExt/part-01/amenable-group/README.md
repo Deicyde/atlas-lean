@@ -1,5 +1,6 @@
 ---
 article_id: af_496d85a320e978fc807a03fd
+navigation: module
 ---
 
 # Amenable Group

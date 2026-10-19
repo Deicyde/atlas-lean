@@ -1,5 +1,6 @@
 ---
 article_id: af_9c8151367beca7df3bc5185f
+navigation: module
 ---
 
 # Palindromic Recurrent Outside P

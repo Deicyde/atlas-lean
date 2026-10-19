@@ -1,5 +1,6 @@
 ---
 article_id: af_9576572061cf6d6c879d2179
+navigation: module
 ---
 
 # Wang Zahl Kakeya

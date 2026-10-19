@@ -1,10 +1,16 @@
 ---
 article_id: af_f59606d9980263b7ab2614e1
+navigation: module
 ---
 
 # Hash Table
 
+## Lean
+
 - [Hash Table](hash-table.md)
+
+## Hash Table
+
 - [Empty](empty.md)
 - [Lookup](lookup.md)
 - [Insert](insert.md)

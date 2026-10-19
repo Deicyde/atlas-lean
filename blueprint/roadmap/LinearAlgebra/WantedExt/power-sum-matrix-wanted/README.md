@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Power Sum Matrix
 
 - [Theorem 1](trace-pow-two.md)

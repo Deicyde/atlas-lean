@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Large Modulus Covering Systems
 
 - [Conjecture](conjecture.md)

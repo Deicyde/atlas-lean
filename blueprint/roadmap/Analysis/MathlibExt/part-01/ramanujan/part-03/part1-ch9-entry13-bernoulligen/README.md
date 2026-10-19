@@ -1,5 +1,6 @@
 ---
 article_id: af_2c578faf4c1afd5fc2426dfc
+navigation: module
 ---
 
 # Part1 Ch9 Entry13 Bernoulligen

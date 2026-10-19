@@ -1,5 +1,6 @@
 ---
 article_id: af_b13c33b1998b6d32f7f3ecd6
+navigation: module
 ---
 
 # Lindemann Weierstrass

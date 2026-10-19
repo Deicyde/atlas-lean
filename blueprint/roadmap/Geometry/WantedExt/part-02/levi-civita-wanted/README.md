@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Levi Civita
 
 - [Same On Smooth](same-on-smooth.md)

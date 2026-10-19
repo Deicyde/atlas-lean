@@ -1,5 +1,6 @@
 ---
 article_id: af_5cec25952b0979697cc98de4
+navigation: module
 ---
 
 # Mandelbar

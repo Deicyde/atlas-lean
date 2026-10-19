@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Mod Inverse Switching
 
 - [Is Least Abs Inverse](is-least-abs-inverse.md)

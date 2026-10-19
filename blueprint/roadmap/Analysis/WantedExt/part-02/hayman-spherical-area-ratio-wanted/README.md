@@ -1,5 +1,6 @@
 ---
 article_id: af_7576efdcca55b2b3b3a11c0e
+navigation: module
 ---
 
 # Hayman Spherical Area Ratio

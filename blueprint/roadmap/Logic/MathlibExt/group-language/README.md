@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Group Language
 
 - [Group Function](group-function.md)

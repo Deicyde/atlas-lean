@@ -1,5 +1,6 @@
 ---
 article_id: af_abcaa4d636ae05f436af3220
+navigation: module
 ---
 
 # Probability

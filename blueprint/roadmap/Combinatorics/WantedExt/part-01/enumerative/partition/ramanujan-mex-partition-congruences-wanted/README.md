@@ -1,5 +1,6 @@
 ---
 article_id: af_217c0ba2412b2417329f3396
+navigation: module
 ---
 
 # Ramanujan Mex Partition Congruences

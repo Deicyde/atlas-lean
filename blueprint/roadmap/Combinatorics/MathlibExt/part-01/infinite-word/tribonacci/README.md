@@ -1,5 +1,6 @@
 ---
 article_id: af_8eca66bd6773bfb1f88477b0
+navigation: module
 ---
 
 # Tribonacci

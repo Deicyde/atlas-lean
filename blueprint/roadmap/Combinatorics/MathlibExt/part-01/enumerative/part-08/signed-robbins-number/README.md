@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Signed Robbins Number
 
 - [Robbins Number](robbins-number.md)

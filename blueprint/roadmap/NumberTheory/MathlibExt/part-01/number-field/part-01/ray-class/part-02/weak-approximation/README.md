@@ -1,5 +1,6 @@
 ---
 article_id: af_5320cb2dbe885f10dc6801a0
+navigation: module
 ---
 
 # Weak Approximation

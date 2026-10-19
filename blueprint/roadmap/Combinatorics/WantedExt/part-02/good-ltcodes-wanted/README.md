@@ -1,5 +1,6 @@
 ---
 article_id: af_58b93865d3a7062d5e0dc774
+navigation: module
 ---
 
 # Good LTCodes

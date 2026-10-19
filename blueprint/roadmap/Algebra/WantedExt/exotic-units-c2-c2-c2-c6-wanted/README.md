@@ -1,5 +1,6 @@
 ---
 article_id: af_18d0edf93694e6255818f9d3
+navigation: module
 ---
 
 # Exotic Units C2 C2 C2 C6

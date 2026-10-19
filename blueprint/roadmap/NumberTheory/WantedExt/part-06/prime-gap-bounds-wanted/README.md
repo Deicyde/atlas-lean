@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Prime Gap Bounds
 
 - [Zhang2014 Upper Bound](zhang2014-upper-bound.md)

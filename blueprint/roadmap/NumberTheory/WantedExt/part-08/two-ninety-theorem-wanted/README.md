@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Two Ninety Theorem
 
 - [Eval Q](eval-q.md)

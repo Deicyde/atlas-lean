@@ -1,5 +1,6 @@
 ---
 article_id: af_a9efa390d9ec751f39fa4cb8
+navigation: module
 ---
 
 # QRDowling QStirling Expansion

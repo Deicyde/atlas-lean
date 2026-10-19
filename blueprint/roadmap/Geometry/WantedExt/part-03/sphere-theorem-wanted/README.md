@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Sphere Theorem
 
 - [Curv](curv.md)

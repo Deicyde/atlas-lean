@@ -1,5 +1,6 @@
 ---
 article_id: af_1bbccb7767a6f16b5de78541
+navigation: module
 ---
 
 # Centered Coloring

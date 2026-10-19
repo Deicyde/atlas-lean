@@ -1,4 +1,35 @@
+---
+navigation: module
+---
+
 # Finite Channel Simulation
 
-- [Part 1 of 2](part-01/README.md)
-- [Part 2 of 2](part-02/README.md)
+- [Finite Joint Law](finite-joint-law.md)
+- [Input Law](input-law.md)
+- [Output Law](output-law.md)
+- [Mutual Information](mutual-information.md)
+- [Finite Extension](finite-extension.md)
+- [Trivial](trivial.md)
+- [Auxiliary Law](auxiliary-law.md)
+- [Input Auxiliary Law](input-auxiliary-law.md)
+- [Output Auxiliary Law](output-auxiliary-law.md)
+- [Auxiliary Information](auxiliary-information.md)
+- [Conditional Entropy](conditional-entropy.md)
+- [Output Given Input Auxiliary Entropy](output-given-input-auxiliary-entropy.md)
+- [Output Given Input Auxiliary Entropy eq zero of output subsingleton](output-given-input-auxiliary-entropy-eq.md)
+- [Trivial auxiliary Law](trivial-auxiliary-law.md)
+- [Trivial auxiliary Information](trivial-auxiliary-information.md)
+- [Trivial conditional Entropy](trivial-conditional-entropy.md)
+- [Input Auxiliary Law map fst](input-auxiliary-law-map-fst.md)
+- [Output Auxiliary Law map fst](output-auxiliary-law-map-fst.md)
+- [Input Auxiliary Law map snd](input-auxiliary-law-map-snd.md)
+- [Output Auxiliary Law map snd](output-auxiliary-law-map-snd.md)
+- [Conditional Entropy eq zero of output subsingleton](conditional-entropy-eq-zero-of-output-su.md)
+- [Conditional Prefix Optimum](conditional-prefix-optimum.md)
+- [Worst Case Optimum](worst-case-optimum.md)
+- [Channel Simulation Constant](channel-simulation-constant.md)
+- [Has Uniform Outer Constant](has-uniform-outer-constant.md)
+- [Uniform Outer Constant Infimum](uniform-outer-constant-infimum.md)
+- [Conditional Prefix Optimum le](conditional-prefix-optimum-le.md)
+- [Conditional Prefix Optimum eq zero of output subsingleton](conditional-prefix-optimum-eq-zero-of-ou.md)
+- [Conditional Prefix Optimum le worst Case Optimum](conditional-prefix-optimum-le-worst-case.md)

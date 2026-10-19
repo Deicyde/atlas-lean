@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Periodic Tiling Conjecture
 
 - [Is Tiling](is-tiling.md)

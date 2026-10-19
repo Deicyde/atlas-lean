@@ -11,7 +11,7 @@ Source: catalogue upper row, Hammersley (1968), adapted from C41a.
 
 ## Depends on
 
-- [Ambidextrous Optimal Area](../../../MathlibExt/moving-sofa/part-02/ambidextrous-optimal-area.md)
+- [Ambidextrous Optimal Area](../../../MathlibExt/moving-sofa/ambidextrous-optimal-area.md)
 
 ## Sources
 

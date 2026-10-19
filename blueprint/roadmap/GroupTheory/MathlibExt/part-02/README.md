@@ -3,7 +3,7 @@ article_id: af_fbabc58a05058f5653b972c3
 navigation: transparent
 ---
 
-# Part 2 of 2
+# HNNEmbedding to Two Power Rank
 
 - [HNNEmbedding](higman-neumann-neumann-embedding.md)
 - [Hyperbolic Group](hyperbolic-group/README.md)

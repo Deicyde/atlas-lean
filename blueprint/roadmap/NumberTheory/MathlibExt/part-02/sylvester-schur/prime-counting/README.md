@@ -1,5 +1,6 @@
 ---
 article_id: af_9321fc8e5a218418612b6a49
+navigation: module
 ---
 
 # Prime Counting

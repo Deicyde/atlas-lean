@@ -1,8 +1,11 @@
 ---
 article_id: af_e95c264b25067eefa3424caf
+navigation: module
 ---
 
 # Find
+
+## Internal
 
 - [Counted Aux](counted-aux.md)
 - [Counted Aux ret](counted-aux-ret.md)
@@ -12,6 +15,9 @@ article_id: af_e95c264b25067eefa3424caf
 - [Counted Find](counted-find.md)
 - [Counted Find ret](counted-find-ret.md)
 - [Counted Aux writes rank](counted-aux-writes-rank.md)
+
+## Union Find
+
 - [Find parent eq ite iterate](find-parent-eq-ite-iterate.md)
 - [Get Elem find](get-elem-find.md)
 - [Exists first iterate root D](exists-first-iterate-root-d.md)

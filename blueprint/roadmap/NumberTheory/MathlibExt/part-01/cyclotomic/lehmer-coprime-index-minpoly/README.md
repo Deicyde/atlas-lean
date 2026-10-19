@@ -1,5 +1,6 @@
 ---
 article_id: af_d4560fb229a14e3bed528617
+navigation: module
 ---
 
 # Lehmer Coprime Index Minpoly

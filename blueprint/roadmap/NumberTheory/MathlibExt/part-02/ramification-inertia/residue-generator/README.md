@@ -1,5 +1,6 @@
 ---
 article_id: af_b6b9df3b0dd6060104d97344
+navigation: module
 ---
 
 # Residue Generator

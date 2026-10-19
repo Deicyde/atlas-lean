@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Breadth First Search
 
 - [BFSResult](bfsresult.md)

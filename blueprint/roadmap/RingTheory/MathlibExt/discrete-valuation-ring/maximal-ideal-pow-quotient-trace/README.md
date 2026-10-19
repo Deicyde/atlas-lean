@@ -1,5 +1,6 @@
 ---
 article_id: af_15bdefbd8e1a965e40619a83
+navigation: module
 ---
 
 # Maximal Ideal Pow Quotient Trace

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Internal
 
 - [BFSForest](bfsforest.md)

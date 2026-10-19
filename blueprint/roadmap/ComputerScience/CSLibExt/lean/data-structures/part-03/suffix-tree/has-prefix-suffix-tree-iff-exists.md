@@ -14,17 +14,17 @@ suffix of `s`.
 
 ## Depends on
 
-- [Has Prefix](../radix-trie/part-02/has-prefix.md)
+- [Has Prefix](../radix-trie/has-prefix.md)
 - [Suffix Tree](suffix-tree.md)
 
 ## Proof depends on
 
-- [Valid](../radix-trie/part-01/valid.md)
-- [Empty](../radix-trie/part-02/empty.md)
-- [Insert](../radix-trie/part-02/insert.md)
-- [Build From](../radix-trie/part-02/build-from.md)
-- [Has Prefix eq true iff](../radix-trie/part-02/has-prefix-eq-true-iff.md)
-- [Keys](../radix-trie/part-02/keys.md)
+- [Valid](../radix-trie/valid.md)
+- [Empty](../radix-trie/empty-2.md)
+- [Insert](../radix-trie/insert-2.md)
+- [Build From](../radix-trie/build-from.md)
+- [Has Prefix eq true iff](../radix-trie/has-prefix-eq-true-iff.md)
+- [Keys](../radix-trie/keys.md)
 - [Is Prefix of map some prefix append none](is-prefix-of-map-some-prefix-append-none.md)
 - [Mem suffix Tree keys](mem-suffix-tree-keys.md)
 - [Suffix Entries](suffix-entries.md)

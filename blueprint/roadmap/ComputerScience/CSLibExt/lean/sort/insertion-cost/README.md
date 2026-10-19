@@ -1,5 +1,6 @@
 ---
 article_id: af_b518e084f1d01f4086903e9a
+navigation: module
 ---
 
 # Insertion Cost

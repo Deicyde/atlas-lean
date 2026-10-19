@@ -1,5 +1,6 @@
 ---
 article_id: af_3bfaebc7841c35545dd43439
+navigation: module
 ---
 
 # Wiener Atom

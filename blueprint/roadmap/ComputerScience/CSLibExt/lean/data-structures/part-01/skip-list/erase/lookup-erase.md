@@ -12,17 +12,17 @@ Lookup of an erased key returns no value.
 
 ## Depends on
 
-- [Skip List](../../../part-03/skip-list/part-01/skip-list.md)
-- [Valid](../../../part-03/skip-list/part-01/valid.md)
+- [Skip List](../../../part-03/skip-list/skip-list.md)
+- [Valid](../../../part-03/skip-list/valid.md)
 - [Erase](erase.md)
-- [Lookup](../../../part-03/skip-list/part-01/lookup.md)
+- [Lookup](../../../part-03/skip-list/lookup.md)
 
 ## Proof depends on
 
-- [Entry](../../../part-03/skip-list/part-01/entry.md)
-- [Abstraction](../../../part-03/skip-list/part-01/abstraction.md)
+- [Entry](../../../part-03/skip-list/entry.md)
+- [Abstraction](../../../part-03/skip-list/abstraction.md)
 - [Erase entries filter](erase-entries-filter.md)
-- [Lookup eq abstraction](../../../part-03/skip-list/part-01/lookup-eq-abstraction.md)
+- [Lookup eq abstraction](../../../part-03/skip-list/lookup-eq-abstraction.md)
 
 ## Sources
 

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Manolescu Triangulation
 
 - [Closed Top Manifold](closed-top-manifold.md)

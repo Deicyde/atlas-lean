@@ -18,7 +18,7 @@ A returned distance is infinite exactly at unreachable vertices.
 - [Result](../basic/result.md)
 - [Bellman Ford](bellman-ford.md)
 - [To Directed Adjacency](../basic/to-directed-adjacency.md)
-- [Reachable](../../../directed-adjacency-2/part-01/reachable.md)
+- [Reachable](../../../directed-adjacency-2/reachable.md)
 
 ## Proof depends on
 

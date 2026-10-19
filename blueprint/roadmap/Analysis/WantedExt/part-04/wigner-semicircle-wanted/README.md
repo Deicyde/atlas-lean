@@ -1,5 +1,6 @@
 ---
 article_id: af_ddb40013dbd4323a54a6471d
+navigation: module
 ---
 
 # Wigner Semicircle

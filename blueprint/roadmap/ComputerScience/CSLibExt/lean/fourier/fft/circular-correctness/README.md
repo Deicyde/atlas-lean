@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Circular Correctness
 
 - [Fft Circular ret](fft-circular-ret.md)

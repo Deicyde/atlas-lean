@@ -1,5 +1,6 @@
 ---
 article_id: af_9ff4986a160334ab51104c18
+navigation: module
 ---
 
 # Dirichlet Spectrum

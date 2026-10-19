@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Continuous Hom
 
 - [ΩScott Continuous of apply](scott-continuous-of-apply.md)

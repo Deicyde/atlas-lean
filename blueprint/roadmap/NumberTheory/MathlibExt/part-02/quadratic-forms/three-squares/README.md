@@ -1,5 +1,6 @@
 ---
 article_id: af_2b8bf5da05a8e296a8db3019
+navigation: module
 ---
 
 # Three Squares

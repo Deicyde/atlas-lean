@@ -17,10 +17,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Min Heap](../../data-structures/part-02/binary-heap/part-02/min-heap.md)
-- [Empty](../../data-structures/part-02/binary-heap/part-02/empty.md)
-- [Extract Min](../../data-structures/part-02/binary-heap/part-02/extract-min.md)
-- [Push](../../data-structures/part-02/binary-heap/part-02/push.md)
+- [Min Heap](../../data-structures/part-02/binary-heap/min-heap.md)
+- [Empty](../../data-structures/part-02/binary-heap/empty.md)
+- [Extract Min](../../data-structures/part-02/binary-heap/extract-min.md)
+- [Push](../../data-structures/part-02/binary-heap/push.md)
 
 ## Sources
 

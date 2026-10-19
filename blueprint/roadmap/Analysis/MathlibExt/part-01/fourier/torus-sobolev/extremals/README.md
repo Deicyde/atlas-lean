@@ -1,5 +1,6 @@
 ---
 article_id: af_e16e7d680e911dc09783f4c1
+navigation: module
 ---
 
 # Extremals

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Ducci Sequence
 
 - [Ducci Coeff](ducci-coeff.md)

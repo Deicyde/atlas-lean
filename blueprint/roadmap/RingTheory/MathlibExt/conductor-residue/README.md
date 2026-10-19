@@ -1,5 +1,6 @@
 ---
 article_id: af_14d3af2079f956c193a3d71e
+navigation: module
 ---
 
 # Conductor Residue

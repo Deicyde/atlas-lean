@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Zagier Hoffman Positive Char
 
 - [Monic Strict Anti Nat Degree](monic-strict-anti-nat-degree.md)

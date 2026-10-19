@@ -1,5 +1,6 @@
 ---
 article_id: af_6373bdcd3d0baca13a607bef
+navigation: module
 ---
 
 # Selberg Sieve

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Tight Alternating Knot Constant
 
 - [Is Admissible Alternating](is-admissible-alternating.md)

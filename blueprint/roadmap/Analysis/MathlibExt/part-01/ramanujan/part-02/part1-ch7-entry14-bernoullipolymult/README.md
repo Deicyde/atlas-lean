@@ -1,5 +1,6 @@
 ---
 article_id: af_dc9df11ecdaed37f09fd4abb
+navigation: module
 ---
 
 # Part1 Ch7 Entry14 Bernoullipolymult

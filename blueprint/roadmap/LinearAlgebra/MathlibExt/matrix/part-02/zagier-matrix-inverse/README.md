@@ -1,5 +1,6 @@
 ---
 article_id: af_df2b31f07f4e6cb81d312970
+navigation: module
 ---
 
 # Zagier Matrix Inverse

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Topological Sort
 
 - [Indegree Within](indegree-within.md)

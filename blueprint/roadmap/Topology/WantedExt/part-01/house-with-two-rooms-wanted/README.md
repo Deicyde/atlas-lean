@@ -1,5 +1,6 @@
 ---
 article_id: af_e6ef7ed416883316a2058622
+navigation: module
 ---
 
 # House With Two Rooms

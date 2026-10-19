@@ -1,5 +1,6 @@
 ---
 article_id: af_d0a148b2d0168277017d5d4e
+navigation: module
 ---
 
 # Cube Covering

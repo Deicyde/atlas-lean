@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Generalized Fibonacci Polynomial
 
 - [Generalized Fibonacci Polynomial](generalized-fibonacci-polynomial.md)

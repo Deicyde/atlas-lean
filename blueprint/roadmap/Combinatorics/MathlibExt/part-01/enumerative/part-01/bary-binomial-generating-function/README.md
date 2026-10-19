@@ -1,5 +1,6 @@
 ---
 article_id: af_f5a801b89cca20cf0077ca01
+navigation: module
 ---
 
 # BAry Binomial Generating Function

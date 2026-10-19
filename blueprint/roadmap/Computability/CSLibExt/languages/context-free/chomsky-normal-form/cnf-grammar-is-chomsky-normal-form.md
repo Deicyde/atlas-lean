@@ -14,12 +14,12 @@ form.
 ## Depends on
 
 - [Is Chomsky Normal Form](is-chomsky-normal-form.md)
-- [Is Reduced](../reduced/part-02/is-reduced.md)
+- [Is Reduced](../reduced/is-reduced.md)
 - [Cnf Grammar](cnf-grammar.md)
 
 ## Proof depends on
 
-- [Is Unit Output](../reduced/part-01/is-unit-output.md)
+- [Is Unit Output](../reduced/is-unit-output.md)
 - [Cnf Grammar output ne nil](cnf-grammar-output-ne-nil.md)
 - [Cnf Head](cnf-head.md)
 - [Grammar Terminals](grammar-terminals.md)

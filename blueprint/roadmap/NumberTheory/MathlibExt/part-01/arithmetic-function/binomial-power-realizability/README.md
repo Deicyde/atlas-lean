@@ -1,5 +1,6 @@
 ---
 article_id: af_5aa936d404f174124fdf2839
+navigation: module
 ---
 
 # Binomial Power Realizability

@@ -14,15 +14,15 @@ Erasing events recovers canonical sift-down for every array and index.
 ## Depends on
 
 - [Sift Down](sift-down.md)
-- [Sift Down](../../../part-02/binary-heap/part-01/sift-down.md)
+- [Sift Down](../../../part-02/binary-heap/sift-down.md)
 
 ## Proof depends on
 
 - [Ret timed Smaller Child](ret-timed-smaller-child.md)
 - [Timed Smaller Child](timed-smaller-child.md)
-- [Smaller Child](../../../part-02/binary-heap/part-01/smaller-child.md)
-- [Smaller Child gt](../../../part-02/binary-heap/part-01/smaller-child-gt.md)
-- [Smaller Child valid](../../../part-02/binary-heap/part-01/smaller-child-valid.md)
+- [Smaller Child](../../../part-02/binary-heap/smaller-child.md)
+- [Smaller Child gt](../../../part-02/binary-heap/smaller-child-gt.md)
+- [Smaller Child valid](../../../part-02/binary-heap/smaller-child-valid.md)
 
 ## Sources
 

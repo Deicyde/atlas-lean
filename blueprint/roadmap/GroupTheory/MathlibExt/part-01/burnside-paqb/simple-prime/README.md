@@ -1,5 +1,6 @@
 ---
 article_id: af_ac2ad1b9f1853acc32640426
+navigation: module
 ---
 
 # Simple Prime

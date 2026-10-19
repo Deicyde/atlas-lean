@@ -1,5 +1,6 @@
 ---
 article_id: af_14eabf0a27223e2945ee7a53
+navigation: module
 ---
 
 # Spectral Norm Unit Ball

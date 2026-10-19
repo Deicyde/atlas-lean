@@ -1,5 +1,6 @@
 ---
 article_id: af_e7d7e6d597b62557d21985b8
+navigation: module
 ---
 
 # W4 Path Domino Tilings

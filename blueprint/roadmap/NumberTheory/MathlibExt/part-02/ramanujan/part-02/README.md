@@ -3,7 +3,7 @@ article_id: af_7d415443bb0a499d7a20151e
 navigation: transparent
 ---
 
-# Part 2 of 4
+# Part1 Ch2 Entry7 Example4 to Part1 Ch3 Entry13
 
 - [Part1 Ch2 Entry7 Example4](ramanujan-part1-ch2-entry7-example4.md)
 - [Part1 Ch2 Entry7 Example5 Alternating](ramanujan-part1-ch2-entry7-example5-alte.md)

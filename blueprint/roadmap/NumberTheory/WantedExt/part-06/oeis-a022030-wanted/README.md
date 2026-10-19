@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Oeis A022030
 
 - [A](a.md)

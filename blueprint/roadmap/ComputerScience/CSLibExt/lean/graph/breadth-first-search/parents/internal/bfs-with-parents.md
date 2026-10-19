@@ -12,7 +12,7 @@ Run the existing FIFO BFS schedule with first-discovery parents and selected eve
 ## Depends on
 
 - [BFSForest](bfsforest.md)
-- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 

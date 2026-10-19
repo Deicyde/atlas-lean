@@ -1,5 +1,6 @@
 ---
 article_id: af_d1016ebbdec1e2d84d8e773a
+navigation: module
 ---
 
 # Dual Matrix Multiplication Bounds

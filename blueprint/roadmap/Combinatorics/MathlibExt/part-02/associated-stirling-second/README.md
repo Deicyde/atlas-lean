@@ -1,5 +1,6 @@
 ---
 article_id: af_384a26d1d1e6adac218707e4
+navigation: module
 ---
 
 # Associated Stirling Second

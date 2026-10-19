@@ -29,7 +29,7 @@ Johnson reports failure exactly when an original source can reach a negative cyc
 - [Is Weighted Path tail](../../bellman-ford/basic/is-weighted-path-tail.md)
 - [Path Vertices](../../bellman-ford/basic/path-vertices.md)
 - [Path Weight](../../bellman-ford/basic/path-weight.md)
-- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
 - [Dijkstra Cost](../../dijkstra/dijkstra-cost.md)
 - [Total](../../dijkstra/total.md)
 - [Dijkstra Result](../../dijkstra/dijkstra-result.md)

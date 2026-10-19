@@ -1,5 +1,6 @@
 ---
 article_id: af_59578686f7e37247606a9aa4
+navigation: module
 ---
 
 # Four Color Theorem

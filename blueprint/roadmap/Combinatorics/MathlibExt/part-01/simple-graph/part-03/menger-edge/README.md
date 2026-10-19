@@ -1,5 +1,6 @@
 ---
 article_id: af_d35645099234961011207040
+navigation: module
 ---
 
 # Menger Edge

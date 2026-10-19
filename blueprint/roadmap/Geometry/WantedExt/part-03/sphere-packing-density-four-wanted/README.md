@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Sphere Packing Density Four
 
 - [Periodic Approximation](periodic-approximation.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_a2b6a5094ce691b58d599f21
+navigation: module
 ---
 
 # Sophie Germain Prime

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Generalized Fuss Catalan Numbers FMNK
 
 - [Generalized Fuss Catalan Number](generalized-fuss-catalan-number.md)

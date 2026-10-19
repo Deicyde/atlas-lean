@@ -1,5 +1,6 @@
 ---
 article_id: af_a8fab74fe9511da6e460f592
+navigation: module
 ---
 
 # Part1 Ch3 Entry11 Corollary Newton Girard

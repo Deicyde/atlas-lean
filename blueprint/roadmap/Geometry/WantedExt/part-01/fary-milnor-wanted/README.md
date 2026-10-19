@@ -1,5 +1,6 @@
 ---
 article_id: af_2da5cda2170ce3022cdb3522
+navigation: module
 ---
 
 # Fary Milnor

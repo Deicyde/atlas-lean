@@ -1,5 +1,6 @@
 ---
 article_id: af_32ef975cb1165b307a48990c
+navigation: module
 ---
 
 # Maximum Term Tends To Infinity

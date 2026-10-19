@@ -1,5 +1,6 @@
 ---
 article_id: af_eaa4158557706cb1d97d5530
+navigation: module
 ---
 
 # Brun Constant Bounds

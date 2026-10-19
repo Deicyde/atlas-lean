@@ -1,4 +1,10 @@
+---
+navigation: module
+---
+
 # Syntax
+
+## Instantiating the outermost bound variable
 
 - [Instantiate Term](instantiate-term.md)
 - [Instantiate](instantiate.md)
@@ -8,6 +14,9 @@
 - [Realize instantiate formula](realize-instantiate-formula.md)
 - [Realize all formula](realize-all-formula.md)
 - [Realize congr](realize-congr.md)
+
+## Renaming free variables
+
 - [Rename Term](rename-term.md)
 - [Rename](rename.md)
 - [Realize rename](realize-rename.md)

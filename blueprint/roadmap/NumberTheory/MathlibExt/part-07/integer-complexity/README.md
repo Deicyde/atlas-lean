@@ -1,12 +1,21 @@
 ---
 article_id: af_4ae5b2a0483ec1fd2bf66f6e
+navigation: module
 ---
 
 # Integer Complexity
 
+## Integer Complexity
+
 - [Expr](expr.md)
+
+## Expr
+
 - [Eval](eval.md)
 - [Count](count.md)
+
+## Integer Complexity
+
 - [Exists expr of pos](exists-expr-of-pos.md)
 - [Pred](pred.md)
 - [Complexity](complexity.md)

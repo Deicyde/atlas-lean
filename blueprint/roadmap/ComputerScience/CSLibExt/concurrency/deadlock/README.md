@@ -1,6 +1,15 @@
+---
+navigation: module
+---
+
 # Deadlock
 
+## Deadlock
+
 - [Alloc State](alloc-state.md)
+
+## Alloc State
+
 - [Waits For](waits-for.md)
 - [Deadlocked](deadlocked.md)
 - [Circular Wait](circular-wait.md)

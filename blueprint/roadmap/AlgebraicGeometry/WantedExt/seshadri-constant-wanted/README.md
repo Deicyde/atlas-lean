@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Seshadri Constant
 
 - [Nagata Conjecture10](nagata-conjecture10.md)

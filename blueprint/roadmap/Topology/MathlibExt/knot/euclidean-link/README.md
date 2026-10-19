@@ -1,4 +1,28 @@
+---
+navigation: module
+---
+
 # Euclidean Link
 
-- [Part 1 of 2](part-01/README.md)
-- [Part 2 of 2](part-02/README.md)
+- [Parametrized Knot](parametrized-knot.md)
+- [Parametrized Link](parametrized-link.md)
+- [Ambient Isotopy](ambient-isotopy.md)
+- [Id](id.md)
+- [Symm](symm.md)
+- [Comp](comp.md)
+- [Circle Reparam](circle-reparam.md)
+- [Id](id-2.md)
+- [Symm](symm-2.md)
+- [Comp](comp-2.md)
+- [Isotopic](isotopic.md)
+- [Isotopic](isotopic-2.md)
+- [Trace](trace.md)
+- [Total Contour Length](total-contour-length.md)
+- [Ropelength Ratio](ropelength-ratio.md)
+- [Ropelength](ropelength.md)
+- [Ropelength le ratio of isotopic](ropelength-le-ratio-of-isotopic.md)
+- [Ropelength le ratio self](ropelength-le-ratio-self.md)
+- [Ropelength eq of isotopic](ropelength-eq-of-isotopic.md)
+- [To Link](to-link.md)
+- [To Link](to-link-2.md)
+- [Ropelength](ropelength-2.md)

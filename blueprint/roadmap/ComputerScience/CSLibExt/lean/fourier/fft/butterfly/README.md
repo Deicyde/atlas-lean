@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Butterfly
 
 - [Fft Butterfly ret low](fft-butterfly-ret-low.md)

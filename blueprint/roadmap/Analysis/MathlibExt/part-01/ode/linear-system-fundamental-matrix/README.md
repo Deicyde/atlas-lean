@@ -1,5 +1,6 @@
 ---
 article_id: af_5ce4e408c4821fbb7d581d4d
+navigation: module
 ---
 
 # Linear System Fundamental Matrix

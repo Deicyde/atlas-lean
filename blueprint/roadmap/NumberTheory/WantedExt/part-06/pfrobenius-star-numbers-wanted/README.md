@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # PFrobenius Star Numbers
 
 - [Star](star.md)

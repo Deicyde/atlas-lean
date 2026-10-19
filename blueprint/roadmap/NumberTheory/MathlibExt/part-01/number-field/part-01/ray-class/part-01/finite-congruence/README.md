@@ -1,5 +1,6 @@
 ---
 article_id: af_19ca8305c38ee68a8881f05f
+navigation: module
 ---
 
 # Finite Congruence

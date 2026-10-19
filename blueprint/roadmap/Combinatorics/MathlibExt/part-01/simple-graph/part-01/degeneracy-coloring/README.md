@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Degeneracy Coloring
 
 - [Exists small vertex](exists-small-vertex.md)

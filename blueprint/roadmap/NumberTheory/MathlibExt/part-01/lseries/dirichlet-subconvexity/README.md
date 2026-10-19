@@ -1,5 +1,6 @@
 ---
 article_id: af_8a87ff429f0ec6300289ae81
+navigation: module
 ---
 
 # Dirichlet Subconvexity

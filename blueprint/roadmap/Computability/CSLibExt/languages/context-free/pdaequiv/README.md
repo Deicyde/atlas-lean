@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # PDAEquiv
 
 - [Chain Form](chain-form.md)

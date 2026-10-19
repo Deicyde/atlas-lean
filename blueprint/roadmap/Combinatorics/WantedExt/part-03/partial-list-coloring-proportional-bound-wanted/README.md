@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Partial List Coloring Proportional Bound
 
 - [Is Partial List Coloring](is-partial-list-coloring.md)

@@ -11,7 +11,7 @@ Source: catalogue line 13, attributed to Hammersley (1968). Primary not retained
 
 ## Depends on
 
-- [Optimal Area](../../../MathlibExt/moving-sofa/part-01/optimal-area.md)
+- [Optimal Area](../../../MathlibExt/moving-sofa/optimal-area.md)
 
 ## Sources
 

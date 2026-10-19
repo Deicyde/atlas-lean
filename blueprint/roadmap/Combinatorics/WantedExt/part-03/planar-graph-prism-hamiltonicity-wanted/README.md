@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Planar Graph Prism Hamiltonicity
 
 - [Conjecture](conjecture.md)

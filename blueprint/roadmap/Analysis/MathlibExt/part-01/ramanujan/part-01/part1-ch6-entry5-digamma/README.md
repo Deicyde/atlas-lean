@@ -1,5 +1,6 @@
 ---
 article_id: af_be46a6b38406ed021fac984b
+navigation: module
 ---
 
 # Part1 Ch6 Entry5 Digamma

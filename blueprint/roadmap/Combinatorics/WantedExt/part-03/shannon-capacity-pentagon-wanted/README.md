@@ -1,5 +1,6 @@
 ---
 article_id: af_3ccde70c0ef47e37ccbe7adf
+navigation: module
 ---
 
 # Shannon Capacity Pentagon

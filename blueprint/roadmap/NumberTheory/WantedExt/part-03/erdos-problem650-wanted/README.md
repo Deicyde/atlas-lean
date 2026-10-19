@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Erdos Problem650
 
 - [F](f.md)

@@ -1,8 +1,11 @@
 ---
 article_id: af_28ff42033f66cd71ad42eeb9
+navigation: module
 ---
 
 # Finite Time Singularity
+
+## Finite Time Singularity Wanted
 
 - [Is Bounded Fun On](is-bounded-fun-on.md)
 - [Is Bounded Fun](is-bounded-fun.md)
@@ -10,6 +13,9 @@ article_id: af_28ff42033f66cd71ad42eeb9
 - [Holder On](holder-on.md)
 - [Is Cont Diff Holder](is-cont-diff-holder.md)
 - [Is Cont Diff Holder On](is-cont-diff-holder-on.md)
+
+## Finite Time Singularity
+
 - [Directional Deriv](directional-deriv.md)
 - [Time Deriv](time-deriv.md)
 - [Space Grad](space-grad.md)

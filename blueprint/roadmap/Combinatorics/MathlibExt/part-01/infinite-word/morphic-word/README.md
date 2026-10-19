@@ -1,5 +1,6 @@
 ---
 article_id: af_b53dca5b6d3e678320c6ff9c
+navigation: module
 ---
 
 # Morphic Word

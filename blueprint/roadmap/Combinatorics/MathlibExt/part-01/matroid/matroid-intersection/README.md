@@ -1,5 +1,6 @@
 ---
 article_id: af_30f63f8700a5ad5e0a62ffca
+navigation: module
 ---
 
 # Matroid Intersection

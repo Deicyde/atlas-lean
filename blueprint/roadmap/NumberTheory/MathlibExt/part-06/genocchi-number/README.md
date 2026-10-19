@@ -1,5 +1,6 @@
 ---
 article_id: af_4473f83f3a89c6b7db4177fe
+navigation: module
 ---
 
 # Genocchi Number

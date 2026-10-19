@@ -1,5 +1,6 @@
 ---
 article_id: af_b680e07db47bfb9d5db8bb05
+navigation: module
 ---
 
 # Word Algebra

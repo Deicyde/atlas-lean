@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Polynomial
 
 - [Fft Polynomial](fft-polynomial.md)

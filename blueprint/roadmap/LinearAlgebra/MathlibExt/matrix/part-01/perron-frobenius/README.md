@@ -1,5 +1,6 @@
 ---
 article_id: af_dcb6e2bc88ecdacac89e38d2
+navigation: module
 ---
 
 # Perron Frobenius

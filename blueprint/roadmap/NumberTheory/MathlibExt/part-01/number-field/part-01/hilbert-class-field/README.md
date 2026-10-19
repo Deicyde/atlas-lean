@@ -1,5 +1,6 @@
 ---
 article_id: af_447c7b5b6f3f8ba79d458592
+navigation: module
 ---
 
 # Hilbert Class Field

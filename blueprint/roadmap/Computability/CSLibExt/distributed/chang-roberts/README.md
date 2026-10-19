@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Chang Roberts
 
 - [State](state.md)

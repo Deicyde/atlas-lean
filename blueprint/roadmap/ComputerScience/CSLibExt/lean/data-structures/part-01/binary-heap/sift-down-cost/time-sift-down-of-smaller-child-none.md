@@ -14,15 +14,15 @@ A position with no child incurs no sift-down events.
 ## Depends on
 
 - [Sift Down](sift-down.md)
-- [Smaller Child](../../../part-02/binary-heap/part-01/smaller-child.md)
+- [Smaller Child](../../../part-02/binary-heap/smaller-child.md)
 
 ## Proof depends on
 
 - [Ret timed Smaller Child](ret-timed-smaller-child.md)
 - [Time timed Smaller Child of none](time-timed-smaller-child-of-none.md)
 - [Timed Smaller Child](timed-smaller-child.md)
-- [Smaller Child gt](../../../part-02/binary-heap/part-01/smaller-child-gt.md)
-- [Smaller Child valid](../../../part-02/binary-heap/part-01/smaller-child-valid.md)
+- [Smaller Child gt](../../../part-02/binary-heap/smaller-child-gt.md)
+- [Smaller Child valid](../../../part-02/binary-heap/smaller-child-valid.md)
 
 ## Sources
 

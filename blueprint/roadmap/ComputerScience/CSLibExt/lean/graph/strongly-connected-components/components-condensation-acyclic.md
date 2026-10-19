@@ -13,15 +13,15 @@ equivalently, the condensation relation has no nontrivial directed cycle.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
 - [Condensation Acyclic](condensation-acyclic.md)
 - [Components](components.md)
 
 ## Proof depends on
 
-- [Decreasing Finish All](../depth-first-search/part-02/decreasing-finish-all.md)
-- [Edge](../directed-adjacency-2/part-01/edge.md)
-- [Reachable](../directed-adjacency-2/part-01/reachable.md)
+- [Decreasing Finish All](../depth-first-search/decreasing-finish-all.md)
+- [Edge](../directed-adjacency-2/edge.md)
+- [Reachable](../directed-adjacency-2/reachable.md)
 - [Component Reaches](component-reaches.md)
 - [Strongly Connected](strongly-connected.md)
 - [Symm](symm.md)

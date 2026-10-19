@@ -1,5 +1,6 @@
 ---
 article_id: af_14d078c30367c7df932298d6
+navigation: module
 ---
 
 # Induced Topology

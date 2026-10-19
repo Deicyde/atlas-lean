@@ -1,5 +1,6 @@
 ---
 article_id: af_262f64e46da966b3c5dfb8fb
+navigation: module
 ---
 
 # Kernels Lemma

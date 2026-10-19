@@ -3,7 +3,7 @@ article_id: af_2892a87157eac283f6f66f21
 navigation: transparent
 ---
 
-# Part 2 of 2
+# Schwarz Reflection to Wiman
 
 - [Schwarz Reflection](schwarz-reflection.md)
 - [Weierstrass Factorization](weierstrass-factorization.md)

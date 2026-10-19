@@ -12,7 +12,7 @@ Delete a key, leaving a valid red-black tree.
 
 ## Depends on
 
-- [Tree](../../../part-03/red-black-tree/part-01/tree.md)
+- [Tree](../../../part-03/red-black-tree/tree.md)
 
 ## Proof depends on
 

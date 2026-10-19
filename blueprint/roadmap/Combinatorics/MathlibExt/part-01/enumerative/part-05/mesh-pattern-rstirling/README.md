@@ -1,5 +1,6 @@
 ---
 article_id: af_7accec3cbaca8be9c93a1638
+navigation: module
 ---
 
 # Mesh Pattern RStirling

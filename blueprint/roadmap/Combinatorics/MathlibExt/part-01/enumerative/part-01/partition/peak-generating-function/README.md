@@ -1,5 +1,6 @@
 ---
 article_id: af_52020781abdac67c3e7fce99
+navigation: module
 ---
 
 # Peak Generating Function

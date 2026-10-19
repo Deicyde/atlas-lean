@@ -1,5 +1,6 @@
 ---
 article_id: af_ea211d592c63192d1729ce54
+navigation: module
 ---
 
 # Bounded Multiplicative Functions

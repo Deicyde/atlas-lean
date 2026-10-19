@@ -1,5 +1,6 @@
 ---
 article_id: af_0fa4a386d13fdecfbd3d7279
+navigation: module
 ---
 
 # Complementary Sequence Determined By Subsequence Sum Equation

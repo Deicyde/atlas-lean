@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Moving Sofa
 
 - [Hammersley upper](hammersley-upper.md)

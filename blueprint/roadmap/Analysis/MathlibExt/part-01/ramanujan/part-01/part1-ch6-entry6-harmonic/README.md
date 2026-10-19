@@ -1,5 +1,6 @@
 ---
 article_id: af_7aa0cf9720ee8dcbcfde303e
+navigation: module
 ---
 
 # Part1 Ch6 Entry6 Harmonic

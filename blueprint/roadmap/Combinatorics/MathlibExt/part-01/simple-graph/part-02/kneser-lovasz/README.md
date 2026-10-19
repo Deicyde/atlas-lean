@@ -1,5 +1,6 @@
 ---
 article_id: af_b482259d96e7e11d363000bc
+navigation: module
 ---
 
 # Kneser Lovasz

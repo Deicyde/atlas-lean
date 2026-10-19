@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Chebyshev Sign Change
 
 - [Chebyshev Lead](chebyshev-lead.md)

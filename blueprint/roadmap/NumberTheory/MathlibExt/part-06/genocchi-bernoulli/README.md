@@ -1,5 +1,6 @@
 ---
 article_id: af_29cc68dd5cd2fb193dd82222
+navigation: module
 ---
 
 # Genocchi Bernoulli

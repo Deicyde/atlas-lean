@@ -1,5 +1,6 @@
 ---
 article_id: af_f675c562c59e0378fbc820b6
+navigation: module
 ---
 
 # Choquet

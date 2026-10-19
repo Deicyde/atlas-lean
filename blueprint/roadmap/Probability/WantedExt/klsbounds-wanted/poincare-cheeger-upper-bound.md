@@ -12,8 +12,8 @@ The upper Poincare comparison shared by the catalogue and retained primary.
 
 ## Depends on
 
-- [Inverse Cheeger Constant](../../MathlibExt/part-01/geometry/kls/part-01/inverse-cheeger-constant.md)
-- [Smooth Poincare Constant](../../MathlibExt/part-01/geometry/kls/part-01/smooth-poincare-constant.md)
+- [Inverse Cheeger Constant](../../MathlibExt/part-01/geometry/kls/inverse-cheeger-constant.md)
+- [Smooth Poincare Constant](../../MathlibExt/part-01/geometry/kls/smooth-poincare-constant.md)
 - [Is Isotropic Log Concave](../../MathlibExt/part-01/geometry/thin-shell/is-isotropic-log-concave.md)
 
 ## Sources

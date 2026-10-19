@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Correctness
 
 - [Bellman Ford](bellman-ford.md)

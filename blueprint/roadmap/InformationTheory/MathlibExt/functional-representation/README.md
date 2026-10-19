@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Functional Representation
 
 - [Auxiliary Conditioning](auxiliary-conditioning.md)

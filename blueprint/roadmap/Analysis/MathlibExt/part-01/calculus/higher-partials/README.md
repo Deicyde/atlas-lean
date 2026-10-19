@@ -1,5 +1,6 @@
 ---
 article_id: af_af245af73b68a37ad0bb5bfb
+navigation: module
 ---
 
 # Higher Partials

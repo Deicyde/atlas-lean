@@ -1,5 +1,6 @@
 ---
 article_id: af_7a4a8dcc18d46e4fd213dff8
+navigation: module
 ---
 
 # Rod Cutting Memoized

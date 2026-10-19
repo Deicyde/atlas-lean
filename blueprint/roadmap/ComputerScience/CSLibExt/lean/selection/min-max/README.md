@@ -1,5 +1,6 @@
 ---
 article_id: af_e5550627ad88ec0afc9261c6
+navigation: module
 ---
 
 # Min Max

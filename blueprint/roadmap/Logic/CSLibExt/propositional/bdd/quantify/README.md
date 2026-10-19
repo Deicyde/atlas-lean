@@ -1,11 +1,23 @@
+---
+navigation: module
+---
+
 # Quantify
+
+## Restriction
 
 - [Restrict](restrict.md)
 - [Reduced restrict](reduced-restrict.md)
 - [Is ROBDD restrict](is-robdd-restrict.md)
+
+## Quantification
+
 - [Exists Var](exists-var.md)
 - [Forall Var](forall-var.md)
 - [Is ROBDD exists Var](is-robdd-exists-var.md)
+
+## Satisfying paths
+
 - [Sat Path](sat-path.md)
 - [Of Path](of-path.md)
 - [Eval of Path sat Path](eval-of-path-sat-path.md)

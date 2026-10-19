@@ -1,5 +1,6 @@
 ---
 article_id: af_68a2020d93b9edd2d1529bc9
+navigation: module
 ---
 
 # Morita Gamma

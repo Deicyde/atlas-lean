@@ -12,7 +12,7 @@ The standard Gaussian has the exact inverse Cheeger coefficient `sqrt(pi/2)`.
 
 ## Depends on
 
-- [Inverse Cheeger Constant](../../MathlibExt/part-01/geometry/kls/part-01/inverse-cheeger-constant.md)
+- [Inverse Cheeger Constant](../../MathlibExt/part-01/geometry/kls/inverse-cheeger-constant.md)
 
 ## Sources
 

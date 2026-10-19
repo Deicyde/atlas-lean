@@ -1,0 +1,18 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MathlibExt.Combinatorics.Coding.CycleShannonBoundsWanted.polakSchrijverLowerBound
+---
+
+# Polak Schrijver Lower Bound
+
+Source: Polak--Schrijver, arXiv:1808.07438, the fifth-power 367-word construction.
+
+## Depends on
+
+- [Is Cycle Code](../../../../MathlibExt/part-01/coding/cycle-code/is-cycle-code.md)
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.Coding.CycleShannonBoundsWanted](../../../../../../sources/v2/WantedExt.md)

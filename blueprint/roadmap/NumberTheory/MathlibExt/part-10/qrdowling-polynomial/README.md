@@ -1,5 +1,6 @@
 ---
 article_id: af_9c1829779e123f109f1bcea0
+navigation: module
 ---
 
 # QRDowling Polynomial

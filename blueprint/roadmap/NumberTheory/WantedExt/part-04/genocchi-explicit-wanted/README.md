@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Genocchi Explicit
 
 - [Diff Pow Eval](diff-pow-eval.md)

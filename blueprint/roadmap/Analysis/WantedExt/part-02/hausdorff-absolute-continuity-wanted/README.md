@@ -1,5 +1,6 @@
 ---
 article_id: af_b4ca72dc940bd4c846507f8d
+navigation: module
 ---
 
 # Hausdorff Absolute Continuity

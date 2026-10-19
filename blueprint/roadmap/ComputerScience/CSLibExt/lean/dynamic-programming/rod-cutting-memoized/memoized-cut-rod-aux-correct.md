@@ -13,14 +13,14 @@ A valid supplied cache yields an attained optimum and remains valid after the ca
 
 ## Depends on
 
-- [Composition Revenue](../rod-cutting/part-01/composition-revenue.md)
+- [Composition Revenue](../rod-cutting/composition-revenue.md)
 - [Memoized Cut Rod Aux](memoized-cut-rod-aux.md)
 
 ## Proof depends on
 
-- [Composition Revenue append](../rod-cutting/part-01/composition-revenue-append.md)
-- [Composition Revenue single](../rod-cutting/part-01/composition-revenue-single.md)
-- [Composition Revenue zero](../rod-cutting/part-01/composition-revenue-zero.md)
+- [Composition Revenue append](../rod-cutting/composition-revenue-append.md)
+- [Composition Revenue single](../rod-cutting/composition-revenue-single.md)
+- [Composition Revenue zero](../rod-cutting/composition-revenue-zero.md)
 - [Memoized Cut Rod Aux hit](memoized-cut-rod-aux-hit.md)
 
 ## Sources

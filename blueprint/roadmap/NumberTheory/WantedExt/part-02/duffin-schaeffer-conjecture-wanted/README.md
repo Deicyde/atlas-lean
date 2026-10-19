@@ -1,5 +1,6 @@
 ---
 article_id: af_bfd02cd1f87f264fa910cd83
+navigation: module
 ---
 
 # Duffin Schaeffer Conjecture

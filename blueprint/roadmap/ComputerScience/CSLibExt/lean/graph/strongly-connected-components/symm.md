@@ -12,12 +12,12 @@ Strong connectivity is symmetric.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
 - [Strongly Connected](strongly-connected.md)
 
 ## Proof depends on
 
-- [Reachable](../directed-adjacency-2/part-01/reachable.md)
+- [Reachable](../directed-adjacency-2/reachable.md)
 
 ## Sources
 

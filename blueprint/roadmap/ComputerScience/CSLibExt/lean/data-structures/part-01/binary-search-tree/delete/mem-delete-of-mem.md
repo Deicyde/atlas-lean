@@ -13,7 +13,7 @@ Deletion keeps every key other than the deleted one, ordered or not.
 
 ## Depends on
 
-- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
+- [Mem](../../../part-02/binary-search-tree/mem.md)
 - [Delete](delete.md)
 
 ## Proof depends on

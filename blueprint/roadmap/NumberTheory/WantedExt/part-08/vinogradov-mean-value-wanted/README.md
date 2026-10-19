@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Vinogradov Mean Value
 
 - [J](j.md)

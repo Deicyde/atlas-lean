@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Piccirillo
 
 - [Conway Knot is Simple](conway-knot-is-simple.md)

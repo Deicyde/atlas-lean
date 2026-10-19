@@ -3,7 +3,7 @@ article_id: af_ed6262e345033125e279e7c9
 navigation: transparent
 ---
 
-# Part 3 of 9
+# Eulerian Polynomial Hankel to Generalized Stirling Matrix Factorization
 
 - [Eulerian Polynomial Hankel](eulerian-polynomial-hankel-determinant.md)
 - [Even Table Weight](even-table-weight/README.md)

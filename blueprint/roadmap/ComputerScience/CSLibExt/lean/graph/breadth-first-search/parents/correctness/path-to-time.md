@@ -17,7 +17,7 @@ Reachable parent reconstruction has exactly the selected comparison/read/cons co
 - [BFSResult](../../../breadth-first-search-2/bfsresult.md)
 - [Bfs](../../../breadth-first-search-2/bfs.md)
 - [Bfs With Parents](../internal/bfs-with-parents.md)
-- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
@@ -25,8 +25,8 @@ Reachable parent reconstruction has exactly the selected comparison/read/cons co
 - [Order mem iff reachable](../../../breadth-first-search-2/order-mem-iff-reachable.md)
 - [Predecessor chain nodup](predecessor-chain-nodup.md)
 - [Predecessor edge](../../parents-2/predecessor-edge.md)
-- [Edge](../../../directed-adjacency-2/part-01/edge.md)
-- [Reachable](../../../directed-adjacency-2/part-01/reachable.md)
+- [Edge](../../../directed-adjacency-2/edge.md)
+- [Reachable](../../../directed-adjacency-2/reachable.md)
 - [Contents](../../../../data-structures/part-01/queue/semantics/contents.md)
 - [Contents enqueue](../../../../data-structures/part-01/queue/semantics/contents-enqueue.md)
 - [Contents eq cons of dequeue? eq some](../../../../data-structures/part-01/queue/semantics/contents-eq-cons-of-dequeue-eq-some.md)

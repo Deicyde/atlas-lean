@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Nonseparating Planar Continuum
 
 - [Has Fixed Point Property](has-fixed-point-property.md)

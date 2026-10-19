@@ -1,0 +1,26 @@
+---
+article_id: af_a206e43bc0d19364a7b51681
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.BinomialHeap.deleteMinTrees
+---
+
+# Delete Min Trees
+
+The computational forest projection of minimum deletion.
+
+## Depends on
+
+- [Binomial Tree](binomial-tree.md)
+
+## Proof depends on
+
+- [Meld Trees](meld-trees.md)
+- [Remove Min Tree](remove-min-tree.md)
+- [Children](children.md)
+- [Root](root.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.BinomialHeap](../../../../../../../sources/v2/CSLibExt.md)

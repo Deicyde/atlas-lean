@@ -1,12 +1,27 @@
+---
+navigation: module
+---
+
 # Motivic Invariants
 
+## Scheme
+
 - [Birational Map](birational-map.md)
+
+## Birational Map
+
 - [Refl](refl.md)
 - [Symm](symm.md)
 - [Trans](trans.md)
 - [Is Over](is-over.md)
+
+## Scheme
+
 - [Birational Aut Over](birational-aut-over.md)
 - [To Birational Map](to-birational-map.md)
+
+## Motivic Invariants
+
 - [Variety](variety.md)
 - [Is Pseudo Iso](is-pseudo-iso.md)
 - [Pseudo Regularization](pseudo-regularization.md)

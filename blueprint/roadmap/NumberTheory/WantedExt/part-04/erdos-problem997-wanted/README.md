@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Erdos Problem997
 
 - [Well Distributed](well-distributed.md)

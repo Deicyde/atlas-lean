@@ -12,12 +12,12 @@ Rebuild a valid red-black tree holding exactly the keys of a tree.
 
 ## Depends on
 
-- [Tree](../../../part-03/red-black-tree/part-01/tree.md)
+- [Tree](../../../part-03/red-black-tree/tree.md)
 
 ## Proof depends on
 
-- [From List](../../../part-03/red-black-tree/part-02/from-list.md)
-- [Inorder](../../../part-03/red-black-tree/part-01/inorder.md)
+- [From List](../../../part-03/red-black-tree/from-list.md)
+- [Inorder](../../../part-03/red-black-tree/inorder.md)
 
 ## Sources
 

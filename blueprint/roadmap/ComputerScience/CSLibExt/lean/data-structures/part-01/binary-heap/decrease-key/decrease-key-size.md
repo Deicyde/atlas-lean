@@ -13,14 +13,14 @@ Decrease-key preserves the number of stored entries.
 
 ## Depends on
 
-- [Min Heap](../../../part-02/binary-heap/part-02/min-heap.md)
+- [Min Heap](../../../part-02/binary-heap/min-heap.md)
 - [Decrease Key](decrease-key.md)
 
 ## Proof depends on
 
 - [Decrease Key data](decrease-key-data.md)
-- [Sift Up](../../../part-02/binary-heap/part-01/sift-up.md)
-- [Sift Up perm](../../../part-02/binary-heap/part-01/sift-up-perm.md)
+- [Sift Up](../../../part-02/binary-heap/sift-up.md)
+- [Sift Up perm](../../../part-02/binary-heap/sift-up-perm.md)
 
 ## Sources
 

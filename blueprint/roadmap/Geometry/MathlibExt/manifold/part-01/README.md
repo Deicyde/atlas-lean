@@ -3,7 +3,7 @@ article_id: af_1de1baacf417921dad26c4b5
 navigation: transparent
 ---
 
-# Part 1 of 2
+# Collar Neighborhood to Thom Transversality
 
 - [Collar Neighborhood](topological-collar-neighborhood-of-smoot.md)
 - [Hadamard Global Inverse](hadamard-caccioppoli-global-inverse.md)

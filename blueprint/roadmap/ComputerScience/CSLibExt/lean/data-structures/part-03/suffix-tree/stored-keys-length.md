@@ -18,11 +18,11 @@ suffix.
 
 ## Proof depends on
 
-- [Valid](../radix-trie/part-01/valid.md)
-- [Empty](../radix-trie/part-02/empty.md)
-- [Insert](../radix-trie/part-02/insert.md)
-- [Keys nodup](../radix-trie/part-02/keys-nodup.md)
-- [Build From](../radix-trie/part-02/build-from.md)
+- [Valid](../radix-trie/valid.md)
+- [Empty](../radix-trie/empty-2.md)
+- [Insert](../radix-trie/insert-2.md)
+- [Keys nodup](../radix-trie/keys-nodup.md)
+- [Build From](../radix-trie/build-from.md)
 - [Mem suffix Tree keys](mem-suffix-tree-keys.md)
 - [Nodup terminated drops](nodup-terminated-drops.md)
 - [Suffix Entries](suffix-entries.md)

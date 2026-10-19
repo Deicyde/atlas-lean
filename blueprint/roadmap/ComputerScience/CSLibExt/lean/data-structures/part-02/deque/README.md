@@ -1,10 +1,16 @@
 ---
 article_id: af_2eaf452f030d931698233c38
+navigation: module
 ---
 
 # Deque
 
+## Lean
+
 - [Deque](deque.md)
+
+## Deque
+
 - [Contents](contents.md)
 - [Empty](empty.md)
 - [Is Empty](is-empty.md)

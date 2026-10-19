@@ -20,9 +20,9 @@ This node has no prerequisites.
 
 - [Ret timed Smaller Child](ret-timed-smaller-child.md)
 - [Timed Smaller Child](timed-smaller-child.md)
-- [Smaller Child](../../../part-02/binary-heap/part-01/smaller-child.md)
-- [Smaller Child gt](../../../part-02/binary-heap/part-01/smaller-child-gt.md)
-- [Smaller Child valid](../../../part-02/binary-heap/part-01/smaller-child-valid.md)
+- [Smaller Child](../../../part-02/binary-heap/smaller-child.md)
+- [Smaller Child gt](../../../part-02/binary-heap/smaller-child-gt.md)
+- [Smaller Child valid](../../../part-02/binary-heap/smaller-child-valid.md)
 
 ## Sources
 

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Polynomial Freiman Ruzsa Binary
 
 - [Conjecture](conjecture.md)

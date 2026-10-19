@@ -1,5 +1,6 @@
 ---
 article_id: af_79c23f7ef395944ca0c68a2a
+navigation: module
 ---
 
 # Fraser Kakeya

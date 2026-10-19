@@ -1,5 +1,6 @@
 ---
 article_id: af_dabd4953ff9c4925069dc95b
+navigation: module
 ---
 
 # Monogenic

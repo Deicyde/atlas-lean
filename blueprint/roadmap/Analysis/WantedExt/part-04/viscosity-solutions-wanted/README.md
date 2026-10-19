@@ -1,5 +1,6 @@
 ---
 article_id: af_1921352865e3564efb6c3d0b
+navigation: module
 ---
 
 # Viscosity Solutions

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Labeled Digraph
 
 - [Labeled Digraph](labeled-digraph.md)

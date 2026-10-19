@@ -1,5 +1,6 @@
 ---
 article_id: af_82a0fd868d5e3b72d8f4cf83
+navigation: module
 ---
 
 # Rising Diagonal Sequence

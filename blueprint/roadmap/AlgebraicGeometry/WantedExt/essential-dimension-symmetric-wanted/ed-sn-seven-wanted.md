@@ -13,7 +13,7 @@ only `3 ≤ ed_ℂ(S₇) ≤ 4` here.
 
 ## Depends on
 
-- [Ed Sn](../../../FieldTheory/MathlibExt/essential-dimension-symmetric/part-02/ed-sn.md)
+- [Ed Sn](../../../FieldTheory/MathlibExt/essential-dimension-symmetric/ed-sn.md)
 
 ## Sources
 

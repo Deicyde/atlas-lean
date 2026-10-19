@@ -3,7 +3,7 @@ article_id: af_0e4f37a6566a5d9b2c80d17c
 navigation: transparent
 ---
 
-# Part 1 of 2
+# Axler Nth Prime Lower Bound Wanted to Mandl Prime Sum Wanted
 
 - [Axler Nth Prime Lower Bound Wanted](axler-nth-prime-lower-bound.md)
 - [Axler Nth Prime Upper Bound Wanted](axler-nth-prime-upper-bound.md)

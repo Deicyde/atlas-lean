@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Convolution Array Correctness
 
 - [Fft Circular Array ret of vector](fft-circular-array-ret-of-vector.md)

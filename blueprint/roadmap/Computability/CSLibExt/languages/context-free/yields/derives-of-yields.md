@@ -16,7 +16,7 @@ Everything a form yields, it derives in Mathlib's sense.
 
 ## Proof depends on
 
-- [Derives append](../basic/part-01/derives-append.md)
+- [Derives append](../basic/derives-append.md)
 
 ## Sources
 

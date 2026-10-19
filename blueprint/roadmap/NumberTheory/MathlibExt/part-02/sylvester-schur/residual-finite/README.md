@@ -1,5 +1,6 @@
 ---
 article_id: af_eb9d03b405a43a148ce71edf
+navigation: module
 ---
 
 # Residual Finite

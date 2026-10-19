@@ -1,5 +1,6 @@
 ---
 article_id: af_b4db032813de4fdba1adc94e
+navigation: module
 ---
 
 # Pure Morphic Word

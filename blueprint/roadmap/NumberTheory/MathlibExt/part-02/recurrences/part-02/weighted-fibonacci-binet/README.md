@@ -1,5 +1,6 @@
 ---
 article_id: af_566cc787ffabb792011b6c36
+navigation: module
 ---
 
 # Weighted Fibonacci Binet

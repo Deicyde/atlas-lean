@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Van Der Waerden Conjecture
 
 - [E](e.md)

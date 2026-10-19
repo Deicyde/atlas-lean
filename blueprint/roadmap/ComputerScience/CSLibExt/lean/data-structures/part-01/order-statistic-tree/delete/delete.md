@@ -12,13 +12,13 @@ Delete a key, leaving the tree unchanged in membership when it is absent.
 
 ## Depends on
 
-- [Tree](../../../part-02/order-statistic-tree/part-01/tree.md)
+- [Tree](../../../part-02/order-statistic-tree/tree.md)
 
 ## Proof depends on
 
-- [Entry](../../../part-02/order-statistic-tree/part-01/entry.md)
+- [Entry](../../../part-02/order-statistic-tree/entry.md)
 - [Merge](merge.md)
-- [Node](../../../part-02/order-statistic-tree/part-01/node.md)
+- [Node](../../../part-02/order-statistic-tree/node.md)
 
 ## Sources
 

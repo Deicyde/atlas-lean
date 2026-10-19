@@ -1,5 +1,6 @@
 ---
 article_id: af_2dc68a1cbf13abadfb7aca8b
+navigation: module
 ---
 
 # Cook Levin

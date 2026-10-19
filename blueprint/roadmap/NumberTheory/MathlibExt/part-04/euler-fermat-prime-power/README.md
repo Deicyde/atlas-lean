@@ -1,5 +1,6 @@
 ---
 article_id: af_25a3826c0cfd3a42b82c6253
+navigation: module
 ---
 
 # Euler Fermat Prime Power

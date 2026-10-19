@@ -3,7 +3,7 @@ article_id: af_99abed47dbde4ecdaed1ccbe
 navigation: transparent
 ---
 
-# Part 4 of 4
+# Part1 Ch3 Entry4 Inner Summable to Part1 Ch3 Section8 Example4 Integrable
 
 - [Part1 Ch3 Entry4 Inner Summable](ramanujan-part1-ch3-entry4-inner-summabl.md)
 - [Part1 Ch3 Entry5](ramanujan-part1-ch3-entry5.md)

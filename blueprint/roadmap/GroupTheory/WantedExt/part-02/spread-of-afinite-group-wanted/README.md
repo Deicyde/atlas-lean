@@ -1,5 +1,6 @@
 ---
 article_id: af_93f927da7ad865c8e4c22f9b
+navigation: module
 ---
 
 # Spread Of AFinite Group

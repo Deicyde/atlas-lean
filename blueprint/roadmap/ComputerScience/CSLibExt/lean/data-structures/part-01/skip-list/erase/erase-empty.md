@@ -12,8 +12,8 @@ Erasing from the empty skip list is a no-op.
 
 ## Depends on
 
-- [Skip List](../../../part-03/skip-list/part-01/skip-list.md)
-- [Empty](../../../part-03/skip-list/part-01/empty.md)
+- [Skip List](../../../part-03/skip-list/skip-list.md)
+- [Empty](../../../part-03/skip-list/empty.md)
 - [Erase](erase.md)
 
 ## Sources

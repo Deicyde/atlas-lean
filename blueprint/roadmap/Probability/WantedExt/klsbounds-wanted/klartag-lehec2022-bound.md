@@ -12,7 +12,7 @@ The first polylogarithmic KLS bound.
 
 ## Depends on
 
-- [Dimensional Kls Constant](../../MathlibExt/part-01/geometry/kls/part-01/dimensional-kls-constant.md)
+- [Dimensional Kls Constant](../../MathlibExt/part-01/geometry/kls/dimensional-kls-constant.md)
 
 ## Sources
 

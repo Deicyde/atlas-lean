@@ -1,5 +1,6 @@
 ---
 article_id: af_bf67f6b1806d383f26ec5250
+navigation: module
 ---
 
 # Solvable Induction

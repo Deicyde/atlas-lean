@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Stirling Identities
 
 - [Stirling First succ eq sum choose pow](stirling-first-succ-eq-sum-choose-pow.md)

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Prodigious Number
 
 - [Nonzero Digit Prod](nonzero-digit-prod.md)

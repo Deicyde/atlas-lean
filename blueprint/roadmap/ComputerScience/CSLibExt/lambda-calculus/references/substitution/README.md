@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Substitution
 
 - [Rename congr](rename-congr.md)

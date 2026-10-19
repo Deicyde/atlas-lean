@@ -17,14 +17,14 @@ Heap sort returns its output in nondecreasing order.
 
 ## Proof depends on
 
-- [Min Heap](../../data-structures/part-02/binary-heap/part-02/min-heap.md)
-- [Elements](../../data-structures/part-02/binary-heap/part-02/elements.md)
-- [Empty](../../data-structures/part-02/binary-heap/part-02/empty.md)
-- [Extract Min](../../data-structures/part-02/binary-heap/part-02/extract-min.md)
-- [Extract Min cons elements](../../data-structures/part-02/binary-heap/part-03/extract-min-cons-elements.md)
-- [Extract Min eq none iff](../../data-structures/part-02/binary-heap/part-02/extract-min-eq-none-iff.md)
-- [Extract Min le](../../data-structures/part-02/binary-heap/part-03/extract-min-le.md)
-- [Push](../../data-structures/part-02/binary-heap/part-02/push.md)
+- [Min Heap](../../data-structures/part-02/binary-heap/min-heap.md)
+- [Elements](../../data-structures/part-02/binary-heap/elements.md)
+- [Empty](../../data-structures/part-02/binary-heap/empty.md)
+- [Extract Min](../../data-structures/part-02/binary-heap/extract-min.md)
+- [Extract Min cons elements](../../data-structures/part-02/binary-heap/extract-min-cons-elements.md)
+- [Extract Min eq none iff](../../data-structures/part-02/binary-heap/extract-min-eq-none-iff.md)
+- [Extract Min le](../../data-structures/part-02/binary-heap/extract-min-le.md)
+- [Push](../../data-structures/part-02/binary-heap/push.md)
 
 ## Sources
 

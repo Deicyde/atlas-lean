@@ -1,5 +1,6 @@
 ---
 article_id: af_6d089d25de9d06c33057ef1c
+navigation: module
 ---
 
 # Mandelbrot Boundary

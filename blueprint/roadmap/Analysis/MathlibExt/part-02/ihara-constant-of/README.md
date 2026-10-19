@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Ihara Constant Of
 
 - [Ihara Ratio](ihara-ratio.md)

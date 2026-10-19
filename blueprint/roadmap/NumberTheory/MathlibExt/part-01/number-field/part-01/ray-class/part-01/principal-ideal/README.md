@@ -1,5 +1,6 @@
 ---
 article_id: af_dfbbc445c2cf204dab566c48
+navigation: module
 ---
 
 # Principal Ideal

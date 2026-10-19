@@ -1,7 +1,16 @@
+---
+navigation: module
+---
+
 # Target
+
+## Target
 
 - [Tm](tm.md)
 - [Value](value.md)
+
+## Tm
+
 - [Eval](eval.md)
 - [Lift Ren](lift-ren.md)
 - [Rename](rename.md)

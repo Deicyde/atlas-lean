@@ -1,5 +1,6 @@
 ---
 article_id: af_50542dcab8ad149c49e2812c
+navigation: module
 ---
 
 # Baire Space Characterization

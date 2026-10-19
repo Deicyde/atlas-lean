@@ -1,5 +1,6 @@
 ---
 article_id: af_4a15ea8aece3c3e0e6782f13
+navigation: module
 ---
 
 # Burnside Paqb

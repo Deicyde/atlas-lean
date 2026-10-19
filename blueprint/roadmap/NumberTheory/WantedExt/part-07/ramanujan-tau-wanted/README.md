@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Ramanujan Tau
 
 - [Τ](untitled.md)

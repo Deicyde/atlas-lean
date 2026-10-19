@@ -1,5 +1,6 @@
 ---
 article_id: af_4af4e70aea3faa59e25fd1a3
+navigation: module
 ---
 
 # Ising Phase Transition

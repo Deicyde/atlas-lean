@@ -1,5 +1,6 @@
 ---
 article_id: af_74308ea511c380164cd6c19d
+navigation: module
 ---
 
 # Hyperplane Slicing Universal

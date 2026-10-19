@@ -13,15 +13,15 @@ The stored keys of the suffix tree are exactly the terminated suffixes.
 
 ## Depends on
 
-- [Keys](../radix-trie/part-02/keys.md)
+- [Keys](../radix-trie/keys.md)
 - [Suffix Tree](suffix-tree.md)
 - [Terminated](terminated.md)
 
 ## Proof depends on
 
-- [Radix Trie](../radix-trie/part-01/radix-trie.md)
-- [Build From](../radix-trie/part-02/build-from.md)
-- [Mem keys build From](../radix-trie/part-02/mem-keys-build-from.md)
+- [Radix Trie](../radix-trie/radix-trie.md)
+- [Build From](../radix-trie/build-from.md)
+- [Mem keys build From](../radix-trie/mem-keys-build-from.md)
 - [Suffix Entries](suffix-entries.md)
 
 ## Sources

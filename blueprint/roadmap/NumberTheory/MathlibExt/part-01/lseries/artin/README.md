@@ -1,5 +1,6 @@
 ---
 article_id: af_7c6009bac11b048689be5062
+navigation: module
 ---
 
 # Artin

@@ -1,5 +1,6 @@
 ---
 article_id: af_45a90960d25d0334c5615b23
+navigation: module
 ---
 
 # Halmos Generic Weak Mixing

@@ -1,5 +1,6 @@
 ---
 article_id: af_a2948f8e24be42eaa2aea352
+navigation: module
 ---
 
 # Basic

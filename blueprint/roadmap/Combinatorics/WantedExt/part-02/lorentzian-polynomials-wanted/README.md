@@ -1,5 +1,6 @@
 ---
 article_id: af_c6ffac41caf60d3c9acbc517
+navigation: module
 ---
 
 # Lorentzian Polynomials

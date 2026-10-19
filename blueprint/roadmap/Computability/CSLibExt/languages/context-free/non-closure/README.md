@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Non Closure
 
 - [Mem kstar singleton](mem-kstar-singleton.md)

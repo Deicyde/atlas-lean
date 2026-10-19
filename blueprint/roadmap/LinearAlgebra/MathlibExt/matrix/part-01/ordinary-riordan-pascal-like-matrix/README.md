@@ -1,5 +1,6 @@
 ---
 article_id: af_cd13a0c46513eb17743e1560
+navigation: module
 ---
 
 # Ordinary Riordan Pascal Like Matrix

@@ -1,5 +1,6 @@
 ---
 article_id: af_455f912cb36cb27fba2c984d
+navigation: module
 ---
 
 # Perfect Graph

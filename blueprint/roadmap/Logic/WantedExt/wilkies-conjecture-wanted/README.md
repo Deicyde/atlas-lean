@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Wilkies Conjecture
 
 - [Exp Func](exp-func.md)

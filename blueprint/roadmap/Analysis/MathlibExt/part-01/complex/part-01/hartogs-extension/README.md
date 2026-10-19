@@ -1,5 +1,6 @@
 ---
 article_id: af_e99a36a7ba47c87771d58423
+navigation: module
 ---
 
 # Hartogs Extension

@@ -1,5 +1,6 @@
 ---
 article_id: af_dc21081f1301e17c96b0ef7c
+navigation: module
 ---
 
 # Conjecture Of Marton

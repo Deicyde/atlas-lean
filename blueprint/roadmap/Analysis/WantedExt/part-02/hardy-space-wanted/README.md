@@ -1,5 +1,6 @@
 ---
 article_id: af_12dc5fb6d310c1b19c352ac2
+navigation: module
 ---
 
 # Hardy Space

@@ -29,9 +29,9 @@ The computed estimate is no greater than the weight of any concrete input path.
 - [Is Weighted Path walk](../../bellman-ford/basic/is-weighted-path-walk.md)
 - [Path Weight append edge](../../bellman-ford/basic/path-weight-append-edge.md)
 - [Run source distance](run-source-distance.md)
-- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
-- [Edge](../../../directed-adjacency-2/part-01/edge.md)
-- [Walk](../../../directed-adjacency-2/part-01/walk.md)
+- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
+- [Edge](../../../directed-adjacency-2/edge.md)
+- [Walk](../../../directed-adjacency-2/walk.md)
 
 ## Sources
 

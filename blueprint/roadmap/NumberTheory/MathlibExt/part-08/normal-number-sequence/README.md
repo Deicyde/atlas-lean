@@ -1,5 +1,6 @@
 ---
 article_id: af_b373641500b99201a247e4be
+navigation: module
 ---
 
 # Normal Number Sequence

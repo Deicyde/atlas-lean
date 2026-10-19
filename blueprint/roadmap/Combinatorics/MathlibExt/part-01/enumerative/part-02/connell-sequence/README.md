@@ -1,5 +1,6 @@
 ---
 article_id: af_a4ee95dfec3b21be57a7942f
+navigation: module
 ---
 
 # Connell Sequence

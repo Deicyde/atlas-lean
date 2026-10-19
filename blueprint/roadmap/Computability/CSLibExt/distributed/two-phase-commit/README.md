@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Two Phase Commit
 
 - [Coord State](coord-state.md)

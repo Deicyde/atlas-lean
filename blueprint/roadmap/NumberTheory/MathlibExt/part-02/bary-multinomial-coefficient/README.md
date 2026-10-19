@@ -1,5 +1,6 @@
 ---
 article_id: af_f36f774a2917d6563ed0904a
+navigation: module
 ---
 
 # BAry Multinomial Coefficient

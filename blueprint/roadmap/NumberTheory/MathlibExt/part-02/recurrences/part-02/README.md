@@ -3,7 +3,7 @@ article_id: af_5150255aa762f0a9afe7660e
 navigation: transparent
 ---
 
-# Part 2 of 2
+# Jacobsthal Closed Form to Weighted Fibonacci Binet
 
 - [Jacobsthal Closed Form](jacobsthal-closed-form.md)
 - [Lucas Binet Formula](lucas-binet-formula/README.md)

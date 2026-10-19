@@ -1,5 +1,6 @@
 ---
 article_id: af_997ccabe5de1ba48358346f9
+navigation: module
 ---
 
 # Fibonacci Factorization

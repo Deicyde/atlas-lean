@@ -1,5 +1,6 @@
 ---
 article_id: af_6a5a873c290757eb00560272
+navigation: module
 ---
 
 # Root Poset Rowmotion Homomesy

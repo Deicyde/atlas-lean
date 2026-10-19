@@ -1,5 +1,6 @@
 ---
 article_id: af_a6ba65117f246943c1dcdbb1
+navigation: module
 ---
 
 # Independent Set

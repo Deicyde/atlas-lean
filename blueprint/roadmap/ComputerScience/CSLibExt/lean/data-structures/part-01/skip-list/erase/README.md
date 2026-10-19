@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Erase
 
 - [Erase](erase.md)

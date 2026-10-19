@@ -1,5 +1,6 @@
 ---
 article_id: af_6eb0a9702c3c2d5003f4f689
+navigation: module
 ---
 
 # Part1 Ch3 Entry10 Poisson Asymptotic

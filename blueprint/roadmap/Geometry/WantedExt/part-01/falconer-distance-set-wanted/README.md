@@ -1,5 +1,6 @@
 ---
 article_id: af_0b6cf8931d663f3c99c6e9fc
+navigation: module
 ---
 
 # Falconer Distance Set

@@ -1,5 +1,6 @@
 ---
 article_id: af_e9da11fcd9d27cd2fc414376
+navigation: module
 ---
 
 # Lucas Binet Formula

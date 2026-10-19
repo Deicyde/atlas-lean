@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Strongly Connected Components
 
 - [Strongly Connected](strongly-connected.md)

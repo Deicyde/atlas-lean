@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # On Approximation Of Reals
 
 - [Height](height.md)

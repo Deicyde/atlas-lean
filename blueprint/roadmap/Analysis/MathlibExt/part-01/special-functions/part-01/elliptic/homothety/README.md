@@ -1,5 +1,6 @@
 ---
 article_id: af_e862d45b3e9634e06c910624
+navigation: module
 ---
 
 # Homothety

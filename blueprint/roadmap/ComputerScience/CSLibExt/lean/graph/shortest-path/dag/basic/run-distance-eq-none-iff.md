@@ -17,7 +17,7 @@ Infinity is exactly absence of a path in the canonical weight-forgetting graph.
 - [To Directed Adjacency](../../bellman-ford/basic/to-directed-adjacency.md)
 - [Cost](cost.md)
 - [Run](run.md)
-- [Reachable](../../../directed-adjacency-2/part-01/reachable.md)
+- [Reachable](../../../directed-adjacency-2/reachable.md)
 - [Is Topological Order](../../../topological-sort/is-topological-order.md)
 
 ## Proof depends on
@@ -32,9 +32,9 @@ Infinity is exactly absence of a path in the canonical weight-forgetting graph.
 - [Reachable iff exists is Weighted Path](../../bellman-ford/basic/reachable-iff-exists-is-weighted-path.md)
 - [Run distance realized](run-distance-realized.md)
 - [Run source distance](run-source-distance.md)
-- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
-- [Edge](../../../directed-adjacency-2/part-01/edge.md)
-- [Walk](../../../directed-adjacency-2/part-01/walk.md)
+- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
+- [Edge](../../../directed-adjacency-2/edge.md)
+- [Walk](../../../directed-adjacency-2/walk.md)
 
 ## Sources
 

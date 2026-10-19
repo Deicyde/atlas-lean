@@ -21,9 +21,9 @@ old initial nonterminal, not the fresh one, on the left.
 ## Proof depends on
 
 - [Eps Start Grammar initial not mem output](eps-start-grammar-initial-not-mem-output.md)
-- [Map Rule](../basic/part-01/map-rule.md)
-- [Map Rule injective](../basic/part-01/map-rule-injective.md)
-- [Map Symbol](../basic/part-01/map-symbol.md)
+- [Map Rule](../basic/map-rule.md)
+- [Map Rule injective](../basic/map-rule-injective.md)
+- [Map Symbol](../basic/map-symbol.md)
 
 ## Sources
 

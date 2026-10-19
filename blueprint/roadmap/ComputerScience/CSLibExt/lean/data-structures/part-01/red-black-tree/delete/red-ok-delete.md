@@ -14,21 +14,21 @@ Deletion always produces a tree satisfying the red invariant
 
 ## Depends on
 
-- [Red Ok](../../../part-03/red-black-tree/part-01/red-ok.md)
-- [Tree](../../../part-03/red-black-tree/part-01/tree.md)
+- [Red Ok](../../../part-03/red-black-tree/red-ok.md)
+- [Tree](../../../part-03/red-black-tree/tree.md)
 - [Delete](delete.md)
 
 ## Proof depends on
 
-- [Balanced](../../../part-03/red-black-tree/part-01/balanced.md)
-- [Color](../../../part-03/red-black-tree/part-01/color.md)
-- [Ordered](../../../part-03/red-black-tree/part-01/ordered.md)
-- [Valid](../../../part-03/red-black-tree/part-01/valid.md)
-- [Color Of](../../../part-03/red-black-tree/part-01/color-of.md)
+- [Balanced](../../../part-03/red-black-tree/balanced.md)
+- [Color](../../../part-03/red-black-tree/color.md)
+- [Ordered](../../../part-03/red-black-tree/ordered.md)
+- [Valid](../../../part-03/red-black-tree/valid.md)
+- [Color Of](../../../part-03/red-black-tree/color-of.md)
 - [Del](del.md)
-- [Inorder](../../../part-03/red-black-tree/part-01/inorder.md)
+- [Inorder](../../../part-03/red-black-tree/inorder.md)
 - [Rebalance](rebalance.md)
-- [Valid from List](../../../part-03/red-black-tree/part-02/valid-from-list.md)
+- [Valid from List](../../../part-03/red-black-tree/valid-from-list.md)
 
 ## Sources
 

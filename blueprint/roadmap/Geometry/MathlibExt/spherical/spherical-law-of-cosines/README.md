@@ -1,5 +1,6 @@
 ---
 article_id: af_20406ccd2ef0f5c8e79d682c
+navigation: module
 ---
 
 # Spherical Law Of Cosines

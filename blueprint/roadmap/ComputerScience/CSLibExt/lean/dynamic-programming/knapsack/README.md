@@ -1,5 +1,6 @@
 ---
 article_id: af_970dd0a8f916a0b41ce09e74
+navigation: module
 ---
 
 # Knapsack

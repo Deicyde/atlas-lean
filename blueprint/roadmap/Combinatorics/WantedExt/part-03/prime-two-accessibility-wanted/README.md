@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Prime Two Accessibility
 
 - [Is Monochromatic](is-monochromatic.md)

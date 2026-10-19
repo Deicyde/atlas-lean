@@ -1,5 +1,6 @@
 ---
 article_id: af_e29d7c41da7c5eac8cdd1e24
+navigation: module
 ---
 
 # Polynomially Recursive MCFinite

@@ -1,5 +1,6 @@
 ---
 article_id: af_58b1b44f675a039dc6832d92
+navigation: module
 ---
 
 # Distances in finite configurations

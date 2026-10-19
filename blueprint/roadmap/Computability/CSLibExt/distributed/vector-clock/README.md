@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Vector Clock
 
 - [Stamp](stamp.md)

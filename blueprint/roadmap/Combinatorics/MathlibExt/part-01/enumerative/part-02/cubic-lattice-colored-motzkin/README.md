@@ -1,5 +1,6 @@
 ---
 article_id: af_9e190ac3ca7561ea06ff54e7
+navigation: module
 ---
 
 # Cubic Lattice Colored Motzkin

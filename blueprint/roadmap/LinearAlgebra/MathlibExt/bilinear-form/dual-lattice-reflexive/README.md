@@ -1,5 +1,6 @@
 ---
 article_id: af_e00f727c653988989b72505c
+navigation: module
 ---
 
 # Dual Lattice Reflexive

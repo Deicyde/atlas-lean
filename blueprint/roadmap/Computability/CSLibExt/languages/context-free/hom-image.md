@@ -17,14 +17,14 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Valuation](basic/part-01/is-valuation.md)
-- [Eval Form](basic/part-01/eval-form.md)
-- [Eval Form append](basic/part-01/eval-form-append.md)
-- [Eval Form map terminal](basic/part-01/eval-form-map-terminal.md)
-- [Eval Symbol](basic/part-01/eval-symbol.md)
-- [Is Valuation language From](basic/part-01/is-valuation-language-from.md)
-- [Language From](basic/part-01/language-from.md)
-- [Language le of valuation](basic/part-01/language-le-of-valuation.md)
+- [Is Valuation](basic/is-valuation.md)
+- [Eval Form](basic/eval-form.md)
+- [Eval Form append](basic/eval-form-append.md)
+- [Eval Form map terminal](basic/eval-form-map-terminal.md)
+- [Eval Symbol](basic/eval-symbol.md)
+- [Is Valuation language From](basic/is-valuation-language-from.md)
+- [Language From](basic/language-from.md)
+- [Language le of valuation](basic/language-le-of-valuation.md)
 
 ## Sources
 

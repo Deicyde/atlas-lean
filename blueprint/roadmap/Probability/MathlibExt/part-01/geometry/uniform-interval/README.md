@@ -1,5 +1,6 @@
 ---
 article_id: af_85c706bc24a3a8e31f1e7372
+navigation: module
 ---
 
 # Uniform Interval

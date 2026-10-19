@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Inverse Canonical DFT
 
 - [Ifft std Add Char neg one](ifft-std-add-char-neg-one.md)

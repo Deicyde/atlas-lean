@@ -1,5 +1,6 @@
 ---
 article_id: af_2bd7759ea6f38de5566dab30
+navigation: module
 ---
 
 # Stirling Second Explicit

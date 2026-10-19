@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Young Graph
 
 - [Is Young Retained](is-young-retained.md)

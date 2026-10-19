@@ -1,5 +1,6 @@
 ---
 article_id: af_dbd9aeef75421f3240f5ccc3
+navigation: module
 ---
 
 # Diagonalization

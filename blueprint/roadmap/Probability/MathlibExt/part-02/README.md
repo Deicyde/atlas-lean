@@ -3,7 +3,7 @@ article_id: af_b2badf9e6e3fe4112edb6ec8
 navigation: transparent
 ---
 
-# Part 2 of 2
+# Khintchine Inequality to Strassen Coupling
 
 - [Khintchine Inequality](khintchine-inequality.md)
 - [Kolmogorov Extension](kolmogorov-extension.md)

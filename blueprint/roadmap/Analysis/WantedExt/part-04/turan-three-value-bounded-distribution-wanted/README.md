@@ -1,5 +1,6 @@
 ---
 article_id: af_2dabf7e9e13767a09bed13e7
+navigation: module
 ---
 
 # Turan Three Value Bounded Distribution

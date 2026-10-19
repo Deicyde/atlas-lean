@@ -1,5 +1,6 @@
 ---
 article_id: af_c0699fb18297e1de2a786bdd
+navigation: module
 ---
 
 # Bell Polynomial Convolution Recurrence

@@ -1,5 +1,6 @@
 ---
 article_id: af_4c64c67457e39d0fc2d3a14c
+navigation: module
 ---
 
 # Inscribed Rectangles

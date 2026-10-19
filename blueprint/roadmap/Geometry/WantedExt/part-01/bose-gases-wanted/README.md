@@ -1,5 +1,6 @@
 ---
 article_id: af_490335113633fb3ef678afd0
+navigation: module
 ---
 
 # Bose Gases

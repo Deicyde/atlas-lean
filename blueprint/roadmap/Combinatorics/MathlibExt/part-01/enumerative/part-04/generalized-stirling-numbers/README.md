@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Generalized Stirling Numbers
 
 - [Generalized Stirling First](generalized-stirling-first.md)

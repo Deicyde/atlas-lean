@@ -1,5 +1,6 @@
 ---
 article_id: af_1e5fde256dced88f5e849542
+navigation: module
 ---
 
 # Artin Map

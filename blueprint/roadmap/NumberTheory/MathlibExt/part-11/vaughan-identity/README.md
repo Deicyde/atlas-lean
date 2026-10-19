@@ -1,5 +1,6 @@
 ---
 article_id: af_bfd00216e16be887492adeeb
+navigation: module
 ---
 
 # Vaughan Identity

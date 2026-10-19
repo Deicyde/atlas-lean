@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Shafarevich Relation Rank
 
 - [Is Everywhere Unramified](is-everywhere-unramified.md)

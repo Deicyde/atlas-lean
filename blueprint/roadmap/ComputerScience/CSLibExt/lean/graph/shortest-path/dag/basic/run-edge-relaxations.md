@@ -21,8 +21,8 @@ The executed pass checks every original edge occurrence once, including identica
 
 ## Proof depends on
 
-- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
-- [Edge](../../../directed-adjacency-2/part-01/edge.md)
+- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
+- [Edge](../../../directed-adjacency-2/edge.md)
 
 ## Sources
 

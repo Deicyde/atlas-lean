@@ -1,5 +1,6 @@
 ---
 article_id: af_29ace87fedd45b632c3b47ac
+navigation: module
 ---
 
 # Lucas Polytopic Number

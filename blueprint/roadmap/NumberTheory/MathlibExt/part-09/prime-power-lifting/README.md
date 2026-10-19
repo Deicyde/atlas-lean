@@ -1,5 +1,6 @@
 ---
 article_id: af_ee5d451c968523e076308901
+navigation: module
 ---
 
 # Prime Power Lifting

@@ -1,5 +1,6 @@
 ---
 article_id: af_850eef103df180ba5c43a1be
+navigation: module
 ---
 
 # Normal Families

@@ -1,5 +1,6 @@
 ---
 article_id: af_2489420079c6419a4bbccf47
+navigation: module
 ---
 
 # Spivey Bell Number Addition

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # ULDMotzkin Number Of Rank R
 
 - [ULDMotzkin Step](uldmotzkin-step.md)

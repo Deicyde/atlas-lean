@@ -1,5 +1,6 @@
 ---
 article_id: af_71b097e9b79d77717b1bc4c0
+navigation: module
 ---
 
 # Character

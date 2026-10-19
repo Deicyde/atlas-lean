@@ -1,5 +1,6 @@
 ---
 article_id: af_627674fbac71794b756dbe10
+navigation: module
 ---
 
 # Church Bicknell Fibonacci Convolution

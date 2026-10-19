@@ -1,5 +1,6 @@
 ---
 article_id: af_5aee04e090e2ddbf97f31e1a
+navigation: module
 ---
 
 # Lipschitz Image Cube Count

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Basic
 
 - [Cost](cost.md)

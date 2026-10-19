@@ -1,5 +1,6 @@
 ---
 article_id: af_fc810bc4cb0ea13d3b81b2ec
+navigation: module
 ---
 
 # Product Bond Percolation

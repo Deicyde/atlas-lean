@@ -1,5 +1,6 @@
 ---
 article_id: af_e47669b8bdbd6885b85e84ec
+navigation: module
 ---
 
 # Open Profinite Completion

@@ -1,5 +1,6 @@
 ---
 article_id: af_75b3b407824d7afdb17bd040
+navigation: module
 ---
 
 # Bell Matrix

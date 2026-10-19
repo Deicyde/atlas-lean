@@ -3,7 +3,7 @@ article_id: af_d3cae758c6d57e0cb6a0c185
 navigation: transparent
 ---
 
-# Part 1 of 4
+# Part1 Ch5 Entry1 to Part1 Ch7 Entry10 Zeta4
 
 - [Part1 Ch5 Entry1](ramanujan-part1-ch5-entry1.md)
 - [Part1 Ch5 Entry10b Euleriansymmetry](part1-ch5-entry10b-euleriansymmetry/README.md)

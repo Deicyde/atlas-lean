@@ -1,5 +1,6 @@
 ---
 article_id: af_78f6cbb72113117d4cb48dd4
+navigation: module
 ---
 
 # QPochhammer

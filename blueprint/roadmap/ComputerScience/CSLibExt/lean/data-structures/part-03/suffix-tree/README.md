@@ -1,5 +1,6 @@
 ---
 article_id: af_cc3964ac3a83c6e5e7b92ae1
+navigation: module
 ---
 
 # Suffix Tree

@@ -1,5 +1,6 @@
 ---
 article_id: af_73491d18958eec2277eca49f
+navigation: module
 ---
 
 # Ab Generalized Fibonacci Sequence

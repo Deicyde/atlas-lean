@@ -1,5 +1,6 @@
 ---
 article_id: af_debd4625a39f7de118273a44
+navigation: module
 ---
 
 # Einsiedler Katok Lindenstrauss

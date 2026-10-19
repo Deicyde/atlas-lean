@@ -13,13 +13,13 @@ every type of it is an instance of the inferred one.
 
 ## Depends on
 
-- [Expr](../typing/part-01/expr.md)
-- [Has Type](../typing/part-01/has-type.md)
-- [Scheme](../typing/part-01/scheme.md)
-- [Ty](../typing/part-01/ty.md)
+- [Expr](../typing/expr.md)
+- [Has Type](../typing/has-type.md)
+- [Scheme](../typing/scheme.md)
+- [Ty](../typing/ty.md)
 - [Infer](../algorithm-w/infer.md)
-- [Subst](../../../unification/basic/part-01/subst.md)
-- [Subst](../../../unification/basic/part-01/subst-2.md)
+- [Subst](../../../unification/basic/subst.md)
+- [Subst](../../../unification/basic/subst-2.md)
 
 ## Proof depends on
 

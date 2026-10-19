@@ -3,7 +3,7 @@ article_id: af_05ed6178914ac806537189e1
 navigation: transparent
 ---
 
-# Part 2 of 2
+# Johnson–Lindenstrauss lemma to Viviani
 
 - [Johnson–Lindenstrauss lemma](johnson-lindenstrauss.md)
 - [Jung](jung.md)

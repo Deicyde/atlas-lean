@@ -1,5 +1,6 @@
 ---
 article_id: af_8153dd781f2528bd1b1311d0
+navigation: module
 ---
 
 # Riordan Array Inverse

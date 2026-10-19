@@ -1,5 +1,6 @@
 ---
 article_id: af_b17ad327e3d721809614f11f
+navigation: module
 ---
 
 # Erdos Layers

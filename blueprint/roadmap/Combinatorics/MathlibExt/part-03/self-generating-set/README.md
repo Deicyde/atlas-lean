@@ -1,5 +1,6 @@
 ---
 article_id: af_cd14f8b02ff71f909e743684
+navigation: module
 ---
 
 # Self Generating Set

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Primitive Divisor
 
 - [Is Primitive Divisor](is-primitive-divisor.md)

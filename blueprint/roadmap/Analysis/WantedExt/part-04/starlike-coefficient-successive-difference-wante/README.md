@@ -1,5 +1,6 @@
 ---
 article_id: af_c74610166c67eb54eca4dac6
+navigation: module
 ---
 
 # Starlike Coefficient Successive Difference

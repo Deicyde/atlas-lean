@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Three Integers Symmetric Squares
 
 - [Has Square Elementary Symmetric Functions](has-square-elementary-symmetric-function.md)

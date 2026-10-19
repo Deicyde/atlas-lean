@@ -14,20 +14,20 @@ smaller than every key of the right tree.
 
 ## Depends on
 
-- [Mem](../../../part-03/red-black-tree/part-01/mem.md)
-- [Ordered](../../../part-03/red-black-tree/part-01/ordered.md)
-- [Tree](../../../part-03/red-black-tree/part-01/tree.md)
+- [Mem](../../../part-03/red-black-tree/mem.md)
+- [Ordered](../../../part-03/red-black-tree/ordered.md)
+- [Tree](../../../part-03/red-black-tree/tree.md)
 - [Join](join.md)
 
 ## Proof depends on
 
-- [All](../../../part-02/binary-search-tree/part-01/all.md)
-- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
-- [Ordered](../../../part-02/binary-search-tree/part-01/ordered.md)
-- [All](../../../part-03/red-black-tree/part-01/all.md)
-- [Color](../../../part-03/red-black-tree/part-01/color.md)
-- [All iff forall mem](../../../part-03/red-black-tree/part-02/all-iff-forall-mem.md)
-- [Erase](../../../part-03/red-black-tree/part-01/erase.md)
+- [All](../../../part-02/binary-search-tree/all.md)
+- [Mem](../../../part-02/binary-search-tree/mem.md)
+- [Ordered](../../../part-02/binary-search-tree/ordered.md)
+- [All](../../../part-03/red-black-tree/all.md)
+- [Color](../../../part-03/red-black-tree/color.md)
+- [All iff forall mem](../../../part-03/red-black-tree/all-iff-forall-mem.md)
+- [Erase](../../../part-03/red-black-tree/erase.md)
 - [Mem join](mem-join.md)
 
 ## Sources

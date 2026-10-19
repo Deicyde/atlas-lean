@@ -1,5 +1,6 @@
 ---
 article_id: af_6eaedf04abd4b29e8b4078ea
+navigation: module
 ---
 
 # Ward Generalized Binomial

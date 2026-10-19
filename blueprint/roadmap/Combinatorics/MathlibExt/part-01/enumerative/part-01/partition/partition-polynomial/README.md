@@ -1,5 +1,6 @@
 ---
 article_id: af_6c9240e9ad421dec44b70ee5
+navigation: module
 ---
 
 # Partition Polynomial

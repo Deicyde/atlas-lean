@@ -1,5 +1,6 @@
 ---
 article_id: af_159bc4401b05f538a1f1c558
+navigation: module
 ---
 
 # Thin Shell Bounds

@@ -1,5 +1,6 @@
 ---
 article_id: af_a81681f41c3124d07ff2c5bf
+navigation: module
 ---
 
 # Lower Bound

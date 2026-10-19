@@ -11,7 +11,7 @@ Number of adjacency-list entries, including duplicates and self-loops.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
 
 ## Sources
 

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Jaccard Lattice
 
 - [Is Modular Valuation](is-modular-valuation.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_49648d775b711dc3b99eaa28
+navigation: module
 ---
 
 # Single Set Sum Difference Exponent

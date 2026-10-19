@@ -18,7 +18,7 @@ The root of the Cartesian tree is a minimum of the input list.
 
 ## Proof depends on
 
-- [Mem](../binary-search-tree/part-01/mem.md)
+- [Mem](../binary-search-tree/mem.md)
 - [Heap Ordered build](heap-ordered-build.md)
 - [Mem build](mem-build.md)
 - [Mem of root eq some](mem-of-root-eq-some.md)

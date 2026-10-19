@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Pascal Pappus
 
 - [Same Point](same-point.md)

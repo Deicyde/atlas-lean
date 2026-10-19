@@ -13,7 +13,7 @@ variance constant. No numerical thin-shell parameter is supplied by the caller.
 
 ## Depends on
 
-- [Dimensional Kls Constant](../../MathlibExt/part-01/geometry/kls/part-01/dimensional-kls-constant.md)
+- [Dimensional Kls Constant](../../MathlibExt/part-01/geometry/kls/dimensional-kls-constant.md)
 - [Thin Shell Variance Constant](../../MathlibExt/part-01/geometry/thin-shell/thin-shell-variance-constant.md)
 
 ## Sources

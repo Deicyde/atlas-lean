@@ -1,5 +1,6 @@
 ---
 article_id: af_6d2186d799d0c5d67abe2100
+navigation: module
 ---
 
 # Rabin Karp

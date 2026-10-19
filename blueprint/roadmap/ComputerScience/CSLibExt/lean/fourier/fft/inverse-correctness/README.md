@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Inverse Correctness
 
 - [Fft conjugate ret](fft-conjugate-ret.md)

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Cycle Code
 
 - [Positive Nat](positive-nat.md)

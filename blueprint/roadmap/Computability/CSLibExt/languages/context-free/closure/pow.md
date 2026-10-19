@@ -17,7 +17,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Mul](mul.md)
-- [One](../basic/part-02/one.md)
+- [One](../basic/one.md)
 
 ## Sources
 

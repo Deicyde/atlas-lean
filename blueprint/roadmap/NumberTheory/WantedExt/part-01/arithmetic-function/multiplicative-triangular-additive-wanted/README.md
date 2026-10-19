@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Multiplicative Triangular Additive
 
 - [Is Sum Two Positive Triangular](is-sum-two-positive-triangular.md)

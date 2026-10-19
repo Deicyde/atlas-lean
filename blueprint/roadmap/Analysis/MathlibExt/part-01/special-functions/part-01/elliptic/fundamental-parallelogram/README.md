@@ -1,5 +1,6 @@
 ---
 article_id: af_86c8c5235b66a787dfbd82c5
+navigation: module
 ---
 
 # Fundamental Parallelogram

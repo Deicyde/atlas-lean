@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Josephus
 
 - [Is Low Extremal](is-low-extremal.md)

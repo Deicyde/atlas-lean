@@ -27,9 +27,9 @@ In a DAG the empty source path stays at zero, even with incoming negative edges.
 - [Is Weighted Path walk](../../bellman-ford/basic/is-weighted-path-walk.md)
 - [Path Weight](../../bellman-ford/basic/path-weight.md)
 - [Path Weight append edge](../../bellman-ford/basic/path-weight-append-edge.md)
-- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
-- [Edge](../../../directed-adjacency-2/part-01/edge.md)
-- [Walk](../../../directed-adjacency-2/part-01/walk.md)
+- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
+- [Edge](../../../directed-adjacency-2/edge.md)
+- [Walk](../../../directed-adjacency-2/walk.md)
 
 ## Sources
 

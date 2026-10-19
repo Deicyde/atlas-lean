@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Third Order Prime Powers
 
 - [Is Sum Of Two Prime Powers](is-sum-of-two-prime-powers.md)

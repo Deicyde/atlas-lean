@@ -1,5 +1,6 @@
 ---
 article_id: af_77d4bc0868e2ddbe923a64aa
+navigation: module
 ---
 
 # De Bruijn Newman

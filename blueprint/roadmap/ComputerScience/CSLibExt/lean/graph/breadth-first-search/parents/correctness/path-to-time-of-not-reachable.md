@@ -15,8 +15,8 @@ An unreachable target incurs one source comparison and one missing parent lookup
 - [BFSForest](../internal/bfsforest.md)
 - [Path To?](../internal/path-to.md)
 - [Bfs With Parents](../internal/bfs-with-parents.md)
-- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
-- [Reachable](../../../directed-adjacency-2/part-01/reachable.md)
+- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
+- [Reachable](../../../directed-adjacency-2/reachable.md)
 
 ## Proof depends on
 
@@ -25,7 +25,7 @@ An unreachable target incurs one source comparison and one missing parent lookup
 - [Bfs With Parents ret](../../parents-2/bfs-with-parents-ret.md)
 - [Order mem iff reachable](../../../breadth-first-search-2/order-mem-iff-reachable.md)
 - [Predecessor eq none iff](../../parents-2/predecessor-eq-none-iff.md)
-- [Edge](../../../directed-adjacency-2/part-01/edge.md)
+- [Edge](../../../directed-adjacency-2/edge.md)
 
 ## Sources
 

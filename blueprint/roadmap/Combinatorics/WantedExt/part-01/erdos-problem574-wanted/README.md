@@ -1,5 +1,6 @@
 ---
 article_id: af_0454a281ec18cdb0f0be06c2
+navigation: module
 ---
 
 # Erdos Problem574

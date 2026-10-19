@@ -1,5 +1,6 @@
 ---
 article_id: af_21aab5ca51de61bc778a6fbd
+navigation: module
 ---
 
 # Weak PNTArithmetic Progression

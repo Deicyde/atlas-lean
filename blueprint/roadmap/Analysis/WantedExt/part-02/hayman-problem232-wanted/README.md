@@ -1,5 +1,6 @@
 ---
 article_id: af_015cd0b32bb9a621fe5490bd
+navigation: module
 ---
 
 # Hayman Problem232

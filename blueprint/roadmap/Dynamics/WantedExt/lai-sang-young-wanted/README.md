@@ -1,5 +1,6 @@
 ---
 article_id: af_7a2518af7463db7cc7939324
+navigation: module
 ---
 
 # Lai Sang Young

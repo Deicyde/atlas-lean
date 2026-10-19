@@ -1,5 +1,6 @@
 ---
 article_id: af_7f5e7a95d793a1ba7e714778
+navigation: module
 ---
 
 # Divisor Sum Reciprocal Convergence

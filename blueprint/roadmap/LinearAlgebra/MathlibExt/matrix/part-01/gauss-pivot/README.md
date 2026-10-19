@@ -1,5 +1,6 @@
 ---
 article_id: af_19de346a857588f7a6063cc1
+navigation: module
 ---
 
 # Gauss Pivot

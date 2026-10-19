@@ -1,5 +1,6 @@
 ---
 article_id: af_602da3ff1d96abfb2087e593
+navigation: module
 ---
 
 # Hamiltonian Cycle To Tsp

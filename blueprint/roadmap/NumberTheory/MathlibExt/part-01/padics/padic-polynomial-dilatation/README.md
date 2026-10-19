@@ -1,5 +1,6 @@
 ---
 article_id: af_78b9d3d3da521a3552d0366e
+navigation: module
 ---
 
 # Padic Polynomial Dilatation

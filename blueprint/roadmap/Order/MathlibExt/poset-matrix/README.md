@@ -1,5 +1,6 @@
 ---
 article_id: af_e033d4107960500b30ec868b
+navigation: module
 ---
 
 # Poset Matrix

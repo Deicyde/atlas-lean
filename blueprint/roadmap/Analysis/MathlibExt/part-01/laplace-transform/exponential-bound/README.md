@@ -1,5 +1,6 @@
 ---
 article_id: af_a800defb7b30fa8a40fb93f6
+navigation: module
 ---
 
 # Exponential Bound

@@ -1,5 +1,6 @@
 ---
 article_id: af_9dc36caf320e92cc9053d106
+navigation: module
 ---
 
 # Mesh Pattern Stirling Recursion

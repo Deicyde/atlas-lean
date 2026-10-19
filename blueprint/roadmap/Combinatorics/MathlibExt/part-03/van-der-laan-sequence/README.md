@@ -1,5 +1,6 @@
 ---
 article_id: af_fff417fb2c1a0b9df1f2dadc
+navigation: module
 ---
 
 # Van Der Laan Sequence

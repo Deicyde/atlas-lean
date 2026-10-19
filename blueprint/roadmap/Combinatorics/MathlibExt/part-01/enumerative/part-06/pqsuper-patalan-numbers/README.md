@@ -1,5 +1,6 @@
 ---
 article_id: af_d73180c256da8068a8d4a6e0
+navigation: module
 ---
 
 # PQSuper Patalan Numbers

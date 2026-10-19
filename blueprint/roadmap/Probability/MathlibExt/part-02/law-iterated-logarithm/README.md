@@ -1,5 +1,6 @@
 ---
 article_id: af_4f4bc51e4ce31f48519f18cc
+navigation: module
 ---
 
 # Law Iterated Logarithm

@@ -1,5 +1,6 @@
 ---
 article_id: af_5dd97fce29a956b4afdd881d
+navigation: module
 ---
 
 # Tangent Space

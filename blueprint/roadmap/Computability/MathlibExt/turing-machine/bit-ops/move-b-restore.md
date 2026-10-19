@@ -16,9 +16,9 @@ to give back the symbols of `a`'s block (`hga`).
 ## Depends on
 
 - [Ends Bit Block](ends-bit-block.md)
-- [Flag](../program/part-01/flag.md)
+- [Flag](../program/flag.md)
 - [Is Bit Block](is-bit-block.md)
-- [Run](../program/part-01/run.md)
+- [Run](../program/run.md)
 - [Move B](move-b.md)
 
 ## Proof depends on

@@ -1,5 +1,6 @@
 ---
 article_id: af_dd593877cefcc65fedd9498d
+navigation: module
 ---
 
 # Hensel

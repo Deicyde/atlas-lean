@@ -1,5 +1,6 @@
 ---
 article_id: af_a066d69fe599fddc21bf9d98
+navigation: module
 ---
 
 # Lucas Special Prime

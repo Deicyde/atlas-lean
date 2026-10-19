@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Hasse Principle Random Fano
 
 - [𝔸](untitled.md)

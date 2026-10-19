@@ -1,5 +1,6 @@
 ---
 article_id: af_462ce6a685bae50e859a646f
+navigation: module
 ---
 
 # Riemann Xi

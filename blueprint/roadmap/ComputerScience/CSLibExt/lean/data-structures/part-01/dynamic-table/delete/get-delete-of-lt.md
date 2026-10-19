@@ -13,8 +13,8 @@ Lookup below the deleted position is unchanged by deletion.
 
 ## Depends on
 
-- [Table](../basic/part-01/table.md)
-- [Well Formed](../basic/part-01/well-formed.md)
+- [Table](../basic/table.md)
+- [Well Formed](../basic/well-formed.md)
 - [Get?](get.md)
 - [Table Delete](table-delete.md)
 

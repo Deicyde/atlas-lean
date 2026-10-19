@@ -1,5 +1,6 @@
 ---
 article_id: af_8e55b74738c171a387d05119
+navigation: module
 ---
 
 # Part1 Ch2 Entry6 Corollary

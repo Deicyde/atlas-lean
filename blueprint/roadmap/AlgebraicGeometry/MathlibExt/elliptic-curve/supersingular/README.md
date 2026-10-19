@@ -1,5 +1,6 @@
 ---
 article_id: af_95e774a9371eaafa87066bb7
+navigation: module
 ---
 
 # Supersingular

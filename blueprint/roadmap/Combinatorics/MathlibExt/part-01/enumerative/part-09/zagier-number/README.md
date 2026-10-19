@@ -1,5 +1,6 @@
 ---
 article_id: af_05cfb79637f63bdf154bda77
+navigation: module
 ---
 
 # Zagier Number

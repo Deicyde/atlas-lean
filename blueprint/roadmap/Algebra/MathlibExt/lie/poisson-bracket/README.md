@@ -1,5 +1,6 @@
 ---
 article_id: af_0538bd2a0d94a1ac8f708c9d
+navigation: module
 ---
 
 # Poisson Bracket

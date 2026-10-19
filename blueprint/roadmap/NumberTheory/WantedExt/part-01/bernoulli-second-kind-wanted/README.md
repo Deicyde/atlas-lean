@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Bernoulli Second Kind
 
 - [Theorem 1](bernoulli-poly-eq.md)

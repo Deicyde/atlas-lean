@@ -1,5 +1,6 @@
 ---
 article_id: af_ad7b839f5f037e1275c19746
+navigation: module
 ---
 
 # Edge Coloring

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Nicomachus Generalization
 
 - [Nicomachus Triangular](nicomachus-triangular.md)

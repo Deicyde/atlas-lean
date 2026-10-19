@@ -1,5 +1,6 @@
 ---
 article_id: af_ad5f9812476c292c249e5c68
+navigation: module
 ---
 
 # Co CStrong Normalization

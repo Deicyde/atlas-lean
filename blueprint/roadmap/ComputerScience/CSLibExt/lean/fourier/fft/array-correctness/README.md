@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Array Correctness
 
 - [Fft Array ret of vector](fft-array-ret-of-vector.md)

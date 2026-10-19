@@ -16,14 +16,14 @@ is claimed (see the module documentation).
 
 ## Depends on
 
-- [BTree](../../btree-2/part-01/btree.md)
-- [Valid Root](../../btree-2/part-01/valid-root.md)
+- [BTree](../../btree-2/btree.md)
+- [Valid Root](../../btree-2/valid-root.md)
 - [Delete Rebuild](delete-rebuild.md)
 
 ## Proof depends on
 
 - [Delete Rebuild](delete-rebuild-2.md)
-- [Exists valid Root](../../btree-2/part-02/exists-valid-root.md)
+- [Exists valid Root](../../btree-2/exists-valid-root.md)
 
 ## Sources
 

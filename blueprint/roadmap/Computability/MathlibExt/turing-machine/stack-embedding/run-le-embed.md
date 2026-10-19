@@ -16,12 +16,12 @@ lean: MetaMathlibExt.TM2Embedding.runLe_embed
 - [Embeds](embeds.md)
 - [Frame](frame.md)
 - [SEmb](semb.md)
-- [Run Le](../program/part-02/run-le.md)
+- [Run Le](../program/run-le.md)
 
 ## Proof depends on
 
 - [Run embedding](run-embed.md)
-- [Run](../program/part-01/run.md)
+- [Run](../program/run.md)
 
 ## Sources
 

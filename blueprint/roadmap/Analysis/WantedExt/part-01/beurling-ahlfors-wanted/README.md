@@ -1,5 +1,6 @@
 ---
 article_id: af_d8e9f17ef39ea83d15677d41
+navigation: module
 ---
 
 # Beurling Ahlfors

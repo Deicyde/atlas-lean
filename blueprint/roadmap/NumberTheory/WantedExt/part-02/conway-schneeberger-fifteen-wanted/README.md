@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Conway Schneeberger Fifteen
 
 - [Eval Q](eval-q.md)

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Reverse Minkowski
 
 - [Ρ](untitled.md)

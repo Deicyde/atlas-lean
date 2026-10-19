@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Lehmer Constant
 
 - [Int Mahler Measure lehmer Polynomial le](int-mahler-measure-lehmer-polynomial-le.md)

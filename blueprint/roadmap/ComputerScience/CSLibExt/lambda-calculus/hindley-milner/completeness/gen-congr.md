@@ -12,17 +12,17 @@ lean: Cslib.HindleyMilner.gen_congr
 
 ## Depends on
 
-- [Ctx](../typing/part-01/ctx.md)
-- [Ftv](../typing/part-01/ftv.md)
-- [Scheme](../typing/part-01/scheme.md)
-- [Ty](../typing/part-01/ty.md)
-- [Gen](../typing/part-01/gen.md)
+- [Ctx](../typing/ctx.md)
+- [Ftv](../typing/ftv.md)
+- [Scheme](../typing/scheme.md)
+- [Ty](../typing/ty.md)
+- [Gen](../typing/gen.md)
 
 ## Proof depends on
 
-- [To Scheme](../typing/part-01/to-scheme.md)
-- [Term](../../../unification/basic/part-01/term.md)
-- [Subst](../../../unification/basic/part-01/subst-2.md)
+- [To Scheme](../typing/to-scheme.md)
+- [Term](../../../unification/basic/term.md)
+- [Subst](../../../unification/basic/subst-2.md)
 
 ## Sources
 

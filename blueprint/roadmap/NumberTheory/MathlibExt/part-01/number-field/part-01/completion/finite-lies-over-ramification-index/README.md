@@ -1,5 +1,6 @@
 ---
 article_id: af_703ab7f029bf05802cfe7599
+navigation: module
 ---
 
 # Finite Lies Over Ramification Index

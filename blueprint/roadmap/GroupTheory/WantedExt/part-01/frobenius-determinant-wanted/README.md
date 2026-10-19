@@ -1,5 +1,6 @@
 ---
 article_id: af_0b433088dd1f840c296dec0b
+navigation: module
 ---
 
 # Frobenius Determinant

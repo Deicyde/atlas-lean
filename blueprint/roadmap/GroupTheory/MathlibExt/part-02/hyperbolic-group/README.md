@@ -1,5 +1,6 @@
 ---
 article_id: af_5db135305fd5e582af0c9661
+navigation: module
 ---
 
 # Hyperbolic Group

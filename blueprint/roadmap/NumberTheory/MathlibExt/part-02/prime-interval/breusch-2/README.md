@@ -1,8 +1,11 @@
 ---
 article_id: af_0331bb6e0f1e1527a3c9096d
+navigation: module
 ---
 
 # Breusch
+
+## Internal
 
 - [Upper ineq](upper-ineq.md)
 - [Chain](chain.md)
@@ -18,4 +21,7 @@ article_id: af_0331bb6e0f1e1527a3c9096d
 - [Main contra](main-contra.md)
 - [Analytic at X](analytic-at-x.md)
 - [Breusch prime interval of upper](breusch-prime-interval-of-upper.md)
+
+## Breusch Wanted
+
 - [Breusch prime interval](breusch-prime-interval.md)

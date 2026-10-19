@@ -1,5 +1,6 @@
 ---
 article_id: af_5d0a67c1598054151079c8a5
+navigation: module
 ---
 
 # Entire Exponential Integral

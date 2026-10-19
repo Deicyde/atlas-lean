@@ -1,5 +1,6 @@
 ---
 article_id: af_648fa62842acf15e4392dcb2
+navigation: module
 ---
 
 # Trudi Brioschi Determinant

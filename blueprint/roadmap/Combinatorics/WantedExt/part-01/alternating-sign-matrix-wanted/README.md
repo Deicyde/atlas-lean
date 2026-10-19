@@ -1,5 +1,6 @@
 ---
 article_id: af_b0248baba96489a3b3023ff5
+navigation: module
 ---
 
 # Alternating Sign Matrix

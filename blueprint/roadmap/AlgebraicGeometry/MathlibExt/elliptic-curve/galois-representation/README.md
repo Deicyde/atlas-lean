@@ -1,5 +1,6 @@
 ---
 article_id: af_90393de899f4cf70d0a6317e
+navigation: module
 ---
 
 # Galois Representation

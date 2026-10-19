@@ -17,18 +17,18 @@ Heap sort preserves every input occurrence, including duplicates.
 
 ## Proof depends on
 
-- [Heap Ordered](../../data-structures/part-02/binary-heap/part-01/heap-ordered.md)
-- [Min Heap](../../data-structures/part-02/binary-heap/part-02/min-heap.md)
-- [Elements](../../data-structures/part-02/binary-heap/part-02/elements.md)
-- [Elements push](../../data-structures/part-02/binary-heap/part-02/elements-push.md)
-- [Empty](../../data-structures/part-02/binary-heap/part-02/empty.md)
-- [Extract Min](../../data-structures/part-02/binary-heap/part-02/extract-min.md)
-- [Extract Min cons elements](../../data-structures/part-02/binary-heap/part-03/extract-min-cons-elements.md)
-- [Extract Min eq none iff](../../data-structures/part-02/binary-heap/part-02/extract-min-eq-none-iff.md)
-- [Extract Min le](../../data-structures/part-02/binary-heap/part-03/extract-min-le.md)
-- [Push](../../data-structures/part-02/binary-heap/part-02/push.md)
-- [Heap Parent](../../data-structures/part-02/binary-heap/part-01/heap-parent.md)
-- [Heap Parent lt size](../../data-structures/part-02/binary-heap/part-01/heap-parent-lt-size.md)
+- [Heap Ordered](../../data-structures/part-02/binary-heap/heap-ordered.md)
+- [Min Heap](../../data-structures/part-02/binary-heap/min-heap.md)
+- [Elements](../../data-structures/part-02/binary-heap/elements.md)
+- [Elements push](../../data-structures/part-02/binary-heap/elements-push.md)
+- [Empty](../../data-structures/part-02/binary-heap/empty.md)
+- [Extract Min](../../data-structures/part-02/binary-heap/extract-min.md)
+- [Extract Min cons elements](../../data-structures/part-02/binary-heap/extract-min-cons-elements.md)
+- [Extract Min eq none iff](../../data-structures/part-02/binary-heap/extract-min-eq-none-iff.md)
+- [Extract Min le](../../data-structures/part-02/binary-heap/extract-min-le.md)
+- [Push](../../data-structures/part-02/binary-heap/push.md)
+- [Heap Parent](../../data-structures/part-02/binary-heap/heap-parent.md)
+- [Heap Parent lt size](../../data-structures/part-02/binary-heap/heap-parent-lt-size.md)
 
 ## Sources
 

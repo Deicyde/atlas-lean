@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Higher Fibonacci Walks
 
 - [Is Higher Fib Recurrence](is-higher-fib-recurrence.md)

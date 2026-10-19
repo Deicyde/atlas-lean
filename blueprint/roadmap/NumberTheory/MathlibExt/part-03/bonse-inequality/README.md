@@ -1,5 +1,6 @@
 ---
 article_id: af_037aa81508074450df3a6da3
+navigation: module
 ---
 
 # Bonse Inequality

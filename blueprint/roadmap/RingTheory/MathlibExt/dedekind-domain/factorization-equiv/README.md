@@ -1,5 +1,6 @@
 ---
 article_id: af_1c905929df76dc6aa2033851
+navigation: module
 ---
 
 # Factorization Equiv

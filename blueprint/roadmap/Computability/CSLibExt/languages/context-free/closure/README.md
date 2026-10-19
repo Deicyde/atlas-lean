@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Closure
 
 - [Add](add.md)

@@ -20,7 +20,7 @@ This node has no prerequisites.
 - [Add](../closure/add.md)
 - [Kstar](../closure/kstar.md)
 - [Mul](../closure/mul.md)
-- [Singleton word](../basic/part-02/singleton-word.md)
+- [Singleton word](../basic/singleton-word.md)
 - [Anbncn Lang](anbncn-lang.md)
 - [Anbncn Lang not is Context Free](anbncn-lang-not-is-context-free.md)
 - [Eq Pow Lang](eq-pow-lang.md)

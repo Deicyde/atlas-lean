@@ -1,4 +1,10 @@
+---
+navigation: module
+---
+
 # Convex Sub Gaussian Comparison
+
+## Convex Sub Gaussian Comparison Wanted Davis
 
 - [Standard Normal Tail](standard-normal-tail.md)
 - [Davis Power T0](davis-power-t0.md)
@@ -9,6 +15,9 @@
 - [Is Valid](is-valid.md)
 - [Davis Power C0 Values](davis-power-c0-values.md)
 - [Davis Power C0](davis-power-c0.md)
+
+## Convex Sub Gaussian Comparison Wanted
+
 - [Davis Power System exists Unique](davis-power-system-exists-unique.md)
 - [Historical Finiteness Upper Bound](historical-finiteness-upper-bound.md)
 - [Davis Power Sharp Upper](davis-power-sharp-upper.md)

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Perfect Graph NP
 
 - [Perfect Graph Instance](perfect-graph-instance.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_7624cf47a37ff1af49a0cd19
+navigation: module
 ---
 
 # Lagrange

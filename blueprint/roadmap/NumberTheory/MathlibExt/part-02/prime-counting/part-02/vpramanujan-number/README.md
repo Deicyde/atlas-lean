@@ -1,5 +1,6 @@
 ---
 article_id: af_6f53fb4b9b68b37c62256ff1
+navigation: module
 ---
 
 # VPRamanujan Number

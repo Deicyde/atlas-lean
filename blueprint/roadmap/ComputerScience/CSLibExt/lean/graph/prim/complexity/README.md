@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Complexity
 
 - [Prim inspections](prim-inspections.md)

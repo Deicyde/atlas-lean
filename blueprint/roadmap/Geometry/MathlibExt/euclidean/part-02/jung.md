@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Convex Hull of compact](../../../../Analysis/MathlibExt/part-01/convex/straszewicz/part-01/convex-hull-of-compact.md)
+- [Convex Hull of compact](../../../../Analysis/MathlibExt/part-01/convex/straszewicz/convex-hull-of-compact.md)
 
 ## Sources
 

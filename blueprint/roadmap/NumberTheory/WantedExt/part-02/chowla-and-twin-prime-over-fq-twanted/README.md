@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Chowla And Twin Prime Over Fq T
 
 - [Card Quot span eq pow nat Degree](card-quot-span-eq-pow-nat-degree.md)

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Bonse Sequence
 
 - [Prime Nth](prime-nth.md)

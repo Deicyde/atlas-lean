@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Greedy Bh Fourth
 
 - [Is Next Greedy Bh](is-next-greedy-bh.md)

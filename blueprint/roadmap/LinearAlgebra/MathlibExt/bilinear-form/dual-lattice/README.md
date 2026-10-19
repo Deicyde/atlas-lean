@@ -1,5 +1,6 @@
 ---
 article_id: af_fc66cd3a8a27dac4dd967ca9
+navigation: module
 ---
 
 # Dual Lattice

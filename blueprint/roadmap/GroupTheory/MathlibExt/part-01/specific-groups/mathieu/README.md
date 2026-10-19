@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Mathieu
 
 - [M23 Cycle](m23-cycle.md)

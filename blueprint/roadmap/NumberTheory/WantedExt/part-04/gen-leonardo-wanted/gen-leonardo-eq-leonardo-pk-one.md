@@ -15,7 +15,7 @@ intentional extension beyond the paper's positive-`k` domain.
 
 ## Depends on
 
-- [Leonardo PK](../../part-05/leonardo-pwanted/part-01/leonardo-pk.md)
+- [Leonardo PK](../../part-05/leonardo-pwanted/leonardo-pk.md)
 - [Gen Leonardo](gen-leonardo.md)
 
 ## Sources

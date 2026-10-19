@@ -1,5 +1,6 @@
 ---
 article_id: af_7d324192e76ac1b5e5599d7c
+navigation: module
 ---
 
 # List Coloring

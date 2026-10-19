@@ -13,14 +13,14 @@ The full saved cost is attained and bounds every canonical ordered competitor.
 
 ## Depends on
 
-- [Inorder](../../../data-structures/part-02/binary-search-tree/part-01/inorder.md)
+- [Inorder](../../../data-structures/part-02/binary-search-tree/inorder.md)
 - [Expected Search Cost](../basic/expected-search-cost.md)
 - [Optimal BST](../basic/optimal-bst.md)
 
 ## Proof depends on
 
-- [Inorder Aux](../../../data-structures/part-02/binary-search-tree/part-01/inorder-aux.md)
-- [Num Nodes eq length inorder](../../../data-structures/part-02/binary-search-tree/part-01/num-nodes-eq-length-inorder.md)
+- [Inorder Aux](../../../data-structures/part-02/binary-search-tree/inorder-aux.md)
+- [Num Nodes eq length inorder](../../../data-structures/part-02/binary-search-tree/num-nodes-eq-length-inorder.md)
 
 ## Sources
 

@@ -1,5 +1,6 @@
 ---
 article_id: af_b4e718e00501839aa212e9f5
+navigation: module
 ---
 
 # Quadratic Gauss Sum Five

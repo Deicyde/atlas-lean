@@ -1,5 +1,6 @@
 ---
 article_id: af_85d7459c07f1e059d28d1ec2
+navigation: module
 ---
 
 # Totienomial Coefficient

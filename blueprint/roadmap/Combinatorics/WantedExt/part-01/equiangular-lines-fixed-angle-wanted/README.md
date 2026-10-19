@@ -1,5 +1,6 @@
 ---
 article_id: af_1e83f2dfc02606ef4a8b3d42
+navigation: module
 ---
 
 # Equiangular Lines Fixed Angle

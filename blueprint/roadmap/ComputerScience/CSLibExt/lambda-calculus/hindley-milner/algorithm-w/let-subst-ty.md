@@ -14,30 +14,30 @@ is bound to the substituted generalization of `τ₁` in `s Γ`, then `let x = e
 
 ## Depends on
 
-- [Ctx](../typing/part-01/ctx.md)
-- [Subst](../typing/part-01/subst.md)
-- [Expr](../typing/part-01/expr.md)
-- [Has Type](../typing/part-01/has-type.md)
-- [Scheme](../typing/part-01/scheme.md)
-- [Subst Ty](../typing/part-01/subst-ty.md)
-- [Ty](../typing/part-01/ty.md)
-- [Gen](../typing/part-01/gen.md)
-- [Subst](../../../unification/basic/part-01/subst.md)
+- [Ctx](../typing/ctx.md)
+- [Subst](../typing/subst.md)
+- [Expr](../typing/expr.md)
+- [Has Type](../typing/has-type.md)
+- [Scheme](../typing/scheme.md)
+- [Subst Ty](../typing/subst-ty.md)
+- [Ty](../typing/ty.md)
+- [Gen](../typing/gen.md)
+- [Subst](../../../unification/basic/subst.md)
 
 ## Proof depends on
 
-- [More General](../typing/part-01/more-general-2.md)
-- [Cons](../typing/part-02/cons.md)
-- [Of lookup eq](../typing/part-02/of-lookup-eq.md)
-- [Ftv](../typing/part-01/ftv.md)
-- [Lookup](../typing/part-01/lookup.md)
-- [Lookup subst congr](../typing/part-01/lookup-subst-congr.md)
-- [Generality](../typing/part-02/mono.md)
-- [Substitution lemma](../typing/part-02/subst.md)
-- [Above](../typing/part-02/above.md)
-- [Gen subst more General](../typing/part-02/gen-subst-more-general.md)
-- [Term](../../../unification/basic/part-01/term.md)
-- [Subst](../../../unification/basic/part-01/subst-2.md)
+- [More General](../typing/more-general-2.md)
+- [Cons](../typing/cons.md)
+- [Of lookup eq](../typing/of-lookup-eq.md)
+- [Ftv](../typing/ftv.md)
+- [Lookup](../typing/lookup.md)
+- [Lookup subst congr](../typing/lookup-subst-congr.md)
+- [Generality](../typing/mono.md)
+- [Substitution lemma](../typing/subst-2.md)
+- [Above](../typing/above.md)
+- [Gen subst more General](../typing/gen-subst-more-general.md)
+- [Term](../../../unification/basic/term.md)
+- [Subst](../../../unification/basic/subst-2.md)
 
 ## Sources
 

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Inverse
 
 - [Fft Conjugate](fft-conjugate.md)

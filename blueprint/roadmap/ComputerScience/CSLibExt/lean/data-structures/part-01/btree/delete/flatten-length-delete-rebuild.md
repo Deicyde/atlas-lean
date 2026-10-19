@@ -14,10 +14,10 @@ present, and leaves it unchanged otherwise.
 
 ## Depends on
 
-- [BTree](../../btree-2/part-01/btree.md)
-- [Ordered](../../btree-2/part-01/ordered.md)
+- [BTree](../../btree-2/btree.md)
+- [Ordered](../../btree-2/ordered.md)
 - [Delete Rebuild](delete-rebuild.md)
-- [Flatten](../../btree-2/part-01/flatten.md)
+- [Flatten](../../btree-2/flatten.md)
 
 ## Proof depends on
 

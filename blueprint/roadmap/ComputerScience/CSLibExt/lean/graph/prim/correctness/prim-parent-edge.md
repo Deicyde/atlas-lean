@@ -12,7 +12,7 @@ Every returned parent is an inspected graph neighbor.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
 - [Basic](../prim.md)
 
 ## Proof depends on
@@ -26,7 +26,7 @@ Every returned parent is an inspected graph neighbor.
 - [Member](../../../data-structures/part-01/indexed-min-queue/basic/member.md)
 - [Member ret](../../../data-structures/part-01/indexed-min-queue/correctness/member-ret.md)
 - [Position valid](../../../data-structures/part-01/indexed-min-queue/correctness/position-valid.md)
-- [Min Heap](../../../data-structures/part-02/binary-heap/part-02/min-heap.md)
+- [Min Heap](../../../data-structures/part-02/binary-heap/min-heap.md)
 
 ## Sources
 

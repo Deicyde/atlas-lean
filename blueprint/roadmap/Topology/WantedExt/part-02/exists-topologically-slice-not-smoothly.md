@@ -11,9 +11,9 @@ Source: Casson, 1980s (unpublished); Akbulut-Matveyev, *A convex decomposition t
 
 ## Depends on
 
-- [PLKnot](../part-01/conway-knot-shared/part-02/plknot.md)
-- [Smoothly slice (PL knot version)](../part-01/conway-knot-shared/part-02/smoothly-slice.md)
-- [Topologically slice (PL knot version)](../part-01/conway-knot-shared/part-02/topologically-slice.md)
+- [PLKnot](../part-01/conway-knot-shared/plknot.md)
+- [Smoothly slice (PL knot version)](../part-01/conway-knot-shared/smoothly-slice-2.md)
+- [Topologically slice (PL knot version)](../part-01/conway-knot-shared/topologically-slice-2.md)
 
 ## Sources
 

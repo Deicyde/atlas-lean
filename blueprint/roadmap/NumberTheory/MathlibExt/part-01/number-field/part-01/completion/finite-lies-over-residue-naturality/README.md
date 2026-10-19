@@ -1,5 +1,6 @@
 ---
 article_id: af_6928a62f8fbf455f90d443a1
+navigation: module
 ---
 
 # Finite Lies Over Residue Naturality

@@ -1,5 +1,6 @@
 ---
 article_id: af_cf9d07c673d9eef8f19389f0
+navigation: module
 ---
 
 # Pick Theorem

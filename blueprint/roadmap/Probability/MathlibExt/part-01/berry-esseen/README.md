@@ -1,5 +1,6 @@
 ---
 article_id: af_6c8f8419deedc7f7837440f2
+navigation: module
 ---
 
 # Berry Esseen

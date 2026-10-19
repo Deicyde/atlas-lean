@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Gauss Primitive Roots
 
 - [Mul Ord Mod](mul-ord-mod.md)

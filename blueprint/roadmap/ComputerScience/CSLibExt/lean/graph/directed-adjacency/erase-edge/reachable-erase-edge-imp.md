@@ -12,14 +12,14 @@ Reachability after erasure implies reachability in the original graph.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
-- [Reachable](../../directed-adjacency-2/part-01/reachable.md)
+- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
+- [Reachable](../../directed-adjacency-2/reachable.md)
 - [Erase Edge](erase-edge.md)
 
 ## Proof depends on
 
-- [Walk](../../directed-adjacency-2/part-01/walk.md)
-- [Reachable iff exists walk](../../directed-adjacency-2/part-01/reachable-iff-exists-walk.md)
+- [Walk](../../directed-adjacency-2/walk.md)
+- [Reachable iff exists walk](../../directed-adjacency-2/reachable-iff-exists-walk.md)
 - [Walk erase Edge imp](walk-erase-edge-imp.md)
 
 ## Sources

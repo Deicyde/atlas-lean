@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Upper Bound Simplicial Spheres
 
 - [E](e.md)

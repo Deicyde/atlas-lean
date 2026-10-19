@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Delannoy Triangle
 
 - [Harmonic Mod](harmonic-mod.md)

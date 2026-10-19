@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Erdos Problem358 Interval Sums
 
 - [Rep Count](rep-count.md)

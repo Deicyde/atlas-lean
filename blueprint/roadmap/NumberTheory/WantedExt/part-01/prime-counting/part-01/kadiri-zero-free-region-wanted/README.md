@@ -1,5 +1,6 @@
 ---
 article_id: af_95cc8f46ca29375e54cfdaa7
+navigation: module
 ---
 
 # Kadiri Zero Free Region

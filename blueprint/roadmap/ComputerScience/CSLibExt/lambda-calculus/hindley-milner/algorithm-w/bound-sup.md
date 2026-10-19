@@ -11,11 +11,11 @@ One more than the largest bound-variable index of a scheme (`0` if it has none).
 
 ## Depends on
 
-- [Scheme](../typing/part-01/scheme.md)
+- [Scheme](../typing/scheme.md)
 
 ## Proof depends on
 
-- [Term](../../../unification/basic/part-01/term.md)
+- [Term](../../../unification/basic/term.md)
 
 ## Sources
 

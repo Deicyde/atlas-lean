@@ -1,5 +1,6 @@
 ---
 article_id: af_51c68767ee6e50ef7af37fe8
+navigation: module
 ---
 
 # Part1 Ch8 Entry8 Digammaseries

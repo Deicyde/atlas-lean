@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Rook Domination Polynomial
 
 - [Rook Cover Count](rook-cover-count.md)

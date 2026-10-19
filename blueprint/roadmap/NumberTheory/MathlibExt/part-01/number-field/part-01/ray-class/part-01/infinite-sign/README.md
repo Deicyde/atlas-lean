@@ -1,5 +1,6 @@
 ---
 article_id: af_1168ce3f2b1fce70d169e10e
+navigation: module
 ---
 
 # Infinite Sign

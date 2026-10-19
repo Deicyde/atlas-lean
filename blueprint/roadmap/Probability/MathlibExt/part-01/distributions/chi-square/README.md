@@ -1,5 +1,6 @@
 ---
 article_id: af_97286e8194bbc26c35a053c3
+navigation: module
 ---
 
 # Chi Square

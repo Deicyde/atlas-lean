@@ -1,5 +1,6 @@
 ---
 article_id: af_c03ca17fc09a2b2bcab72cdb
+navigation: module
 ---
 
 # Schur Weyl

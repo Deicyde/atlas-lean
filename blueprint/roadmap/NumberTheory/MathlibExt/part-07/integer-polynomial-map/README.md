@@ -1,5 +1,6 @@
 ---
 article_id: af_41e3b5fab1401944b464ce86
+navigation: module
 ---
 
 # Integer Polynomial Map

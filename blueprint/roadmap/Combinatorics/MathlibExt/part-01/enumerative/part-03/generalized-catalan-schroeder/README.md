@@ -1,5 +1,6 @@
 ---
 article_id: af_6feb6b9b706d63b3e48a0626
+navigation: module
 ---
 
 # Generalized Catalan Schroeder

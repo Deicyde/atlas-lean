@@ -1,5 +1,6 @@
 ---
 article_id: af_6dce9a5b919d8e1eceb29a3e
+navigation: module
 ---
 
 # Polygonal Number

@@ -1,5 +1,6 @@
 ---
 article_id: af_997cd61d62ca7c4ae70d0914
+navigation: module
 ---
 
 # Generalized Fibonacci Identities

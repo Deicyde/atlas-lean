@@ -1,5 +1,6 @@
 ---
 article_id: af_6152fb305a7327069cd27fc4
+navigation: module
 ---
 
 # Search

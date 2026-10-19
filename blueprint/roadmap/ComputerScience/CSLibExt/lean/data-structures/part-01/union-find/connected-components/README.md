@@ -1,5 +1,6 @@
 ---
 article_id: af_bc3cbb8cf93498d8e1041372
+navigation: module
 ---
 
 # Connected Components

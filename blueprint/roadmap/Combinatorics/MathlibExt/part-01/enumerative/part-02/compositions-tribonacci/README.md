@@ -1,5 +1,6 @@
 ---
 article_id: af_e5c3ddf2870fe309365d56da
+navigation: module
 ---
 
 # Compositions Tribonacci

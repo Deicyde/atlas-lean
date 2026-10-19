@@ -18,7 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Breusch prime interval of upper](breusch-prime-interval-of-upper.md)
-- [Log F9 upper](../breusch/upper/part-03/log-f9-upper.md)
+- [Log F9 upper](../breusch/upper/log-f9-upper.md)
 
 ## Sources
 

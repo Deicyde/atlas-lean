@@ -1,5 +1,6 @@
 ---
 article_id: af_0484e1bb40b99d49cdfa525a
+navigation: module
 ---
 
 # KPerfect

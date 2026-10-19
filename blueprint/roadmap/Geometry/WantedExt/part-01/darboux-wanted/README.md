@@ -1,5 +1,6 @@
 ---
 article_id: af_3ced016c14e95fb07c406eef
+navigation: module
 ---
 
 # Darboux

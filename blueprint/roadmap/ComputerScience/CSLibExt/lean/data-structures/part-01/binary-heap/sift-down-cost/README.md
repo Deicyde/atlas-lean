@@ -1,11 +1,17 @@
 ---
 article_id: af_da750efe855df9251f39fae5
+navigation: module
 ---
 
 # Sift Down Cost
 
+## Lean
+
 - [Log2 smaller Child add one](log2-smaller-child-add-one.md)
 - [Log2 smaller Child le size](log2-smaller-child-le-size.md)
+
+## Time M
+
 - [Timed Smaller Child](timed-smaller-child.md)
 - [Ret timed Smaller Child](ret-timed-smaller-child.md)
 - [Sift Down](sift-down.md)

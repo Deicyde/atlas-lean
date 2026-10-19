@@ -12,7 +12,7 @@ Forget weights while preserving edge-list order and multiplicity.
 ## Depends on
 
 - [Edge](edge.md)
-- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
 
 ## Sources
 

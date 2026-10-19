@@ -13,13 +13,13 @@ A key is in a splice exactly when it is in one of the two parts.
 
 ## Depends on
 
-- [Mem](../../../part-03/red-black-tree/part-01/mem.md)
-- [Tree](../../../part-03/red-black-tree/part-01/tree.md)
+- [Mem](../../../part-03/red-black-tree/mem.md)
+- [Tree](../../../part-03/red-black-tree/tree.md)
 - [Join](join.md)
 
 ## Proof depends on
 
-- [Color](../../../part-03/red-black-tree/part-01/color.md)
+- [Color](../../../part-03/red-black-tree/color.md)
 
 ## Sources
 

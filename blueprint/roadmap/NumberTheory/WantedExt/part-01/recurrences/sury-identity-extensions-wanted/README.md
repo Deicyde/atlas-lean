@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Sury Identity Extensions
 
 - [Fib At Int](fib-at-int.md)

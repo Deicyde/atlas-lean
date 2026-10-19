@@ -1,5 +1,6 @@
 ---
 article_id: af_907e5e47bc74adcb27664c73
+navigation: module
 ---
 
 # Finite Automaton

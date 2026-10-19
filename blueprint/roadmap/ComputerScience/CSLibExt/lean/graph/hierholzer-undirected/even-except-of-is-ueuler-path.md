@@ -22,7 +22,7 @@ An Euler path from `s` to `t` forces the degree condition: exactly `s` and `t` h
 - [Udeg](udeg.md)
 - [Udeg eq of perm](udeg-eq-of-perm.md)
 - [Usym](usym.md)
-- [Walk Edges](../hierholzer/part-01/walk-edges.md)
+- [Walk Edges](../hierholzer/walk-edges.md)
 
 ## Sources
 

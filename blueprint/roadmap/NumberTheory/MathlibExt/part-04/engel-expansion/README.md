@@ -1,5 +1,6 @@
 ---
 article_id: af_83fdf445abb44ff7ca5998a5
+navigation: module
 ---
 
 # Engel Expansion

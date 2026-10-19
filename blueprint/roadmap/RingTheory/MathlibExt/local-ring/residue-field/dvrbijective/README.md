@@ -1,5 +1,6 @@
 ---
 article_id: af_5464b4ec9d75e220775efc50
+navigation: module
 ---
 
 # DVRBijective

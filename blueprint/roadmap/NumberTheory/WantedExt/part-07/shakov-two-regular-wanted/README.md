@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Shakov Two Regular
 
 - [Shakov Seq](shakov-seq.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_ca237b4120f6818c1e62341a
+navigation: module
 ---
 
 # Hessian Estimates

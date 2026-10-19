@@ -1,5 +1,6 @@
 ---
 article_id: af_c238369fe89649a8530880cc
+navigation: module
 ---
 
 # Meromorphic Stirling Number

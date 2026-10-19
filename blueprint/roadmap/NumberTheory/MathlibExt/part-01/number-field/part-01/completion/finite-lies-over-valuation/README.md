@@ -1,5 +1,6 @@
 ---
 article_id: af_f6d101eace8f1da7ca70418b
+navigation: module
 ---
 
 # Finite Lies Over Valuation

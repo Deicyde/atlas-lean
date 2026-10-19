@@ -1,5 +1,6 @@
 ---
 article_id: af_fc75a4730ae7fcfc3fe99567
+navigation: module
 ---
 
 # Burnside Paqb Reduction

@@ -1,5 +1,6 @@
 ---
 article_id: af_8bf130b567b67059ccddd8c5
+navigation: module
 ---
 
 # Partition Polynomial Derivatives

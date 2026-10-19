@@ -1,5 +1,6 @@
 ---
 article_id: af_d176dda1f06b19058ac143c6
+navigation: module
 ---
 
 # Primitive Mahler

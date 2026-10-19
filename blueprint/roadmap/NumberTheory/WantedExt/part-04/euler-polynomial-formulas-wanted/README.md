@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Euler Polynomial Formulas
 
 - [Euler Poly](euler-poly.md)

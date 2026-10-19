@@ -1,5 +1,6 @@
 ---
 article_id: af_594b2cc22868b0856337b0fd
+navigation: module
 ---
 
 # Trip Stern Tree

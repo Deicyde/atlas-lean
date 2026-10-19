@@ -1,5 +1,6 @@
 ---
 article_id: af_333e74418bc1361efb5bb05c
+navigation: module
 ---
 
 # Almost Beatty Partition

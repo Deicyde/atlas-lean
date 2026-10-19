@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Integer Complexity
 
 - [Cx](cx.md)

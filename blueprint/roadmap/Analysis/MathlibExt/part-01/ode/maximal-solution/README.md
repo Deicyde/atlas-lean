@@ -1,5 +1,6 @@
 ---
 article_id: af_fa06c02cdc254dfc40003253
+navigation: module
 ---
 
 # Maximal Solution

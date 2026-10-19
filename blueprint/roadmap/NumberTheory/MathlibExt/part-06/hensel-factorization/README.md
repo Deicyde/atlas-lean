@@ -1,5 +1,6 @@
 ---
 article_id: af_5feab1801c53e1174ebb9930
+navigation: module
 ---
 
 # Hensel Factorization

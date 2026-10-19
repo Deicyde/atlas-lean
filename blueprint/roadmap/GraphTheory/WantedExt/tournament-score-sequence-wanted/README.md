@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Tournament Score Sequence
 
 - [Is Tournament](is-tournament.md)

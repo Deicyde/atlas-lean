@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Erdos Problem690
 
 - [Is Kth Smallest Prime Factor](is-kth-smallest-prime-factor.md)

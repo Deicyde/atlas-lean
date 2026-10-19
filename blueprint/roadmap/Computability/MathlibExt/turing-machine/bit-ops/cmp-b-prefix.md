@@ -14,9 +14,9 @@ Common leading bits: if both blocks start with the bits `p`, `cmpB` pops them in
 ## Depends on
 
 - [Distinct4](distinct4.md)
-- [Flag](../program/part-01/flag.md)
+- [Flag](../program/flag.md)
 - [Is Bit Block](is-bit-block.md)
-- [Run](../program/part-01/run.md)
+- [Run](../program/run.md)
 - [Cmp B](cmp-b.md)
 
 ## Proof depends on

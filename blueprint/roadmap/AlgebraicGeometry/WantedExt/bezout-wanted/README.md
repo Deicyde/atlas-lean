@@ -1,5 +1,6 @@
 ---
 article_id: af_2a0fe4a1af7627e3291574e0
+navigation: module
 ---
 
 # Bezout

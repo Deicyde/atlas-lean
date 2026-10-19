@@ -13,8 +13,8 @@ Deletion from an ordered tree removes exactly the deleted key.
 
 ## Depends on
 
-- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
-- [Ordered](../../../part-02/binary-search-tree/part-01/ordered.md)
+- [Mem](../../../part-02/binary-search-tree/mem.md)
+- [Ordered](../../../part-02/binary-search-tree/ordered.md)
 - [Delete](delete.md)
 
 ## Proof depends on

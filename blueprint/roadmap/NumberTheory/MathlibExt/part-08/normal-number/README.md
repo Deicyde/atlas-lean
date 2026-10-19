@@ -1,5 +1,6 @@
 ---
 article_id: af_f7aa62ca92724686cf9061fe
+navigation: module
 ---
 
 # Normal Number

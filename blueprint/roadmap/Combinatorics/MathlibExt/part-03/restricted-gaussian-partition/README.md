@@ -1,5 +1,6 @@
 ---
 article_id: af_77c11e0ec843320e9e9c6a13
+navigation: module
 ---
 
 # Restricted Gaussian Partition

@@ -1,5 +1,6 @@
 ---
 article_id: af_18ee39bb47d3d211bb9edf2a
+navigation: module
 ---
 
 # Birkhoff

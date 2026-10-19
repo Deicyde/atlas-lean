@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Odd Fibonacci
 
 - [Has Pattern](has-pattern.md)

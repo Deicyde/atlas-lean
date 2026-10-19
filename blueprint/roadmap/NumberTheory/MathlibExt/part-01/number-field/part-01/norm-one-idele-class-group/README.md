@@ -1,5 +1,6 @@
 ---
 article_id: af_b955e09a9fcd4d45d3f99e90
+navigation: module
 ---
 
 # Norm One Idele Class Group

@@ -1,5 +1,6 @@
 ---
 article_id: af_14d646971d4b99249b68691b
+navigation: module
 ---
 
 # Kantorovich

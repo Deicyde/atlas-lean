@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Log F9](../breusch/lower/part-01/log-f9.md)
+- [Log F9](../breusch/lower/log-f9.md)
 
 ## Sources
 

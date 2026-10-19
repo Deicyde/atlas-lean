@@ -15,8 +15,8 @@ Parent reconstruction returns no path exactly for unreachable targets.
 - [BFSForest](../internal/bfsforest.md)
 - [Path To?](../internal/path-to.md)
 - [Bfs With Parents](../internal/bfs-with-parents.md)
-- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
-- [Reachable](../../../directed-adjacency-2/part-01/reachable.md)
+- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
+- [Reachable](../../../directed-adjacency-2/reachable.md)
 
 ## Proof depends on
 
@@ -28,7 +28,7 @@ Parent reconstruction returns no path exactly for unreachable targets.
 - [Predecessor chain nodup](predecessor-chain-nodup.md)
 - [Predecessor edge](../../parents-2/predecessor-edge.md)
 - [Predecessor eq none iff](../../parents-2/predecessor-eq-none-iff.md)
-- [Edge](../../../directed-adjacency-2/part-01/edge.md)
+- [Edge](../../../directed-adjacency-2/edge.md)
 - [Contents](../../../../data-structures/part-01/queue/semantics/contents.md)
 - [Contents enqueue](../../../../data-structures/part-01/queue/semantics/contents-enqueue.md)
 - [Contents eq cons of dequeue? eq some](../../../../data-structures/part-01/queue/semantics/contents-eq-cons-of-dequeue-eq-some.md)

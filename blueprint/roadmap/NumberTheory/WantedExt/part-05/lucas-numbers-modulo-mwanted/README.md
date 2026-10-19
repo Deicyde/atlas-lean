@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Lucas Numbers Modulo M
 
 - [Statement](statement.md)

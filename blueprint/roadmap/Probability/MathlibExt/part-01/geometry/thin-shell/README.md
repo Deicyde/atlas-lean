@@ -1,5 +1,6 @@
 ---
 article_id: af_065dd40d114415ce2d8f1554
+navigation: module
 ---
 
 # Thin Shell

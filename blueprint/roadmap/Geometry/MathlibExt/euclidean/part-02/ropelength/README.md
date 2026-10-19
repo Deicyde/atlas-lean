@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Ropelength
 
 - [R3](r3.md)

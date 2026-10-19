@@ -13,15 +13,15 @@ Merging preserves correct caches.
 
 ## Depends on
 
-- [Cache Correct](../../../part-02/order-statistic-tree/part-01/cache-correct.md)
-- [Tree](../../../part-02/order-statistic-tree/part-01/tree.md)
+- [Cache Correct](../../../part-02/order-statistic-tree/cache-correct.md)
+- [Tree](../../../part-02/order-statistic-tree/tree.md)
 - [Merge](merge.md)
 
 ## Proof depends on
 
-- [Entry](../../../part-02/order-statistic-tree/part-01/entry.md)
-- [Cache Correct node](../../../part-02/order-statistic-tree/part-01/cache-correct-node.md)
-- [Node](../../../part-02/order-statistic-tree/part-01/node.md)
+- [Entry](../../../part-02/order-statistic-tree/entry.md)
+- [Cache Correct node](../../../part-02/order-statistic-tree/cache-correct-node.md)
+- [Node](../../../part-02/order-statistic-tree/node.md)
 
 ## Sources
 

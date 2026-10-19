@@ -1,5 +1,6 @@
 ---
 article_id: af_38c80d68b62793de311ea961
+navigation: module
 ---
 
 # Completely Multiplicative

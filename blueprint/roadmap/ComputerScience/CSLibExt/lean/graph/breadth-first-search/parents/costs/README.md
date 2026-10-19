@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Costs
 
 - [Bfs With Parents time](bfs-with-parents-time.md)

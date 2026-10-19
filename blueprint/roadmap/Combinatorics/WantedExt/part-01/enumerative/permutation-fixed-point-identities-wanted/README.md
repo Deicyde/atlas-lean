@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Permutation Fixed Point Identities
 
 - [Sum perm sign falling fixed Points mul pow](sum-perm-sign-falling-fixed-points-mul-p.md)

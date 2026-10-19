@@ -1,5 +1,6 @@
 ---
 article_id: af_2783fbf397350bb5ff495bb5
+navigation: module
 ---
 
 # Generalized Sylvester

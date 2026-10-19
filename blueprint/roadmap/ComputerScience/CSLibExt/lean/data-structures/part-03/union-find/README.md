@@ -1,8 +1,28 @@
 ---
 article_id: af_91751e2f8814aa26505e8025
+navigation: module
 ---
 
 # Union Find
 
-- [Part 1 of 2](part-01/README.md)
-- [Part 2 of 2](part-02/README.md)
+- [Forest](forest.md)
+- [Find](find.md)
+- [Path Length](path-length.md)
+- [Find With Cost](find-with-cost.md)
+- [Equivalent](equivalent.md)
+- [Find is Root](find-is-root.md)
+- [Find parent](find-parent.md)
+- [Find in class](find-in-class.md)
+- [Find With Cost time](find-with-cost-time.md)
+- [Find With Cost time le depth](find-with-cost-time-le-depth.md)
+- [Link Parent](link-parent.md)
+- [Link Depth](link-depth.md)
+- [Link](link.md)
+- [Union](union.md)
+- [Find union](find-union.md)
+- [Union equivalent](union-equivalent.md)
+- [Union eq self of equivalent](union-eq-self-of-equivalent.md)
+- [Equivalent union iff](equivalent-union-iff.md)
+- [Find union of unrelated](find-union-of-unrelated.md)
+- [Union With Cost](union-with-cost.md)
+- [Union With Cost time le depth](union-with-cost-time-le-depth.md)

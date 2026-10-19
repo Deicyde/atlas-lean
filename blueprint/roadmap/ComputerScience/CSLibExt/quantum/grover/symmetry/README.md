@@ -1,5 +1,6 @@
 ---
 article_id: af_90dabb3ca6bbdace515490cf
+navigation: module
 ---
 
 # Symmetry

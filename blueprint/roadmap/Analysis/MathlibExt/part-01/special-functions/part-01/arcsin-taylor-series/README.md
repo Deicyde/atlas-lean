@@ -1,5 +1,6 @@
 ---
 article_id: af_ae84dd5b23489c91283dfd9a
+navigation: module
 ---
 
 # Arcsin Taylor Series

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Tight Knot Constant
 
 - [Is Admissible](is-admissible.md)

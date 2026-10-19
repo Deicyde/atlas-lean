@@ -1,5 +1,6 @@
 ---
 article_id: af_e171ae9470eb1c5aec6f3de6
+navigation: module
 ---
 
 # Log Concave Uniform

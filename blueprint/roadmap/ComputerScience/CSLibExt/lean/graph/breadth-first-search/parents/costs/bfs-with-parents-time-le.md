@@ -14,7 +14,7 @@ The selected event count is bounded by three vertex passes plus all adjacency en
 
 - [BFSForest](../internal/bfsforest.md)
 - [Bfs With Parents](../internal/bfs-with-parents.md)
-- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 

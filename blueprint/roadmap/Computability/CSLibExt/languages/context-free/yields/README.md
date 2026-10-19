@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Yields
 
 - [Yields](yields.md)

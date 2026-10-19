@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Fractional Expectation Thresholds
 
 - [Is Weakly Small](is-weakly-small.md)

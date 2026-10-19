@@ -1,5 +1,6 @@
 ---
 article_id: af_0477eef7b4d2360f5e03017b
+navigation: module
 ---
 
 # Jacobi Stirling First Kind

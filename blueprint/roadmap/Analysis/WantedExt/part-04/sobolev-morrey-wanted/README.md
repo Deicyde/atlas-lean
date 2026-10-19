@@ -1,5 +1,6 @@
 ---
 article_id: af_bd69e1f9b12a954002a0a2b3
+navigation: module
 ---
 
 # Sobolev Morrey

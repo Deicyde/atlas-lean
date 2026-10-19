@@ -1,5 +1,6 @@
 ---
 article_id: af_11987e67a2a4112ebc8c4869
+navigation: module
 ---
 
 # Degeneracy

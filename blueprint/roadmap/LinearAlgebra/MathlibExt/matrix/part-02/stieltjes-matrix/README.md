@@ -1,5 +1,6 @@
 ---
 article_id: af_811120a454ec31fde374443a
+navigation: module
 ---
 
 # Stieltjes Matrix

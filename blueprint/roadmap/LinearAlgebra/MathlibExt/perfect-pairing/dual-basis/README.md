@@ -1,5 +1,6 @@
 ---
 article_id: af_a57d9eb5a8f0020c2c139fe0
+navigation: module
 ---
 
 # Dual Basis

@@ -1,5 +1,6 @@
 ---
 article_id: af_eaa6e809fa9e93666d726668
+navigation: module
 ---
 
 # Subgraph Isomorphism

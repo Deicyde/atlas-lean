@@ -1,5 +1,6 @@
 ---
 article_id: af_fd8b54ced3919ec73275540c
+navigation: module
 ---
 
 # Linear Extension

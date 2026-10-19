@@ -1,5 +1,6 @@
 ---
 article_id: af_2bee0c92dc13cca3d88b3538
+navigation: module
 ---
 
 # Lagrange Periodic

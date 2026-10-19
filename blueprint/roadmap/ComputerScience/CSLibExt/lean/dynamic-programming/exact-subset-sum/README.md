@@ -1,5 +1,6 @@
 ---
 article_id: af_d8bd327ba0e906ba4bd567c1
+navigation: module
 ---
 
 # Exact Subset Sum

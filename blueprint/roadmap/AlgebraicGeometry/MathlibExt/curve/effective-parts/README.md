@@ -1,5 +1,6 @@
 ---
 article_id: af_fe6fb7b3383553199a963271
+navigation: module
 ---
 
 # Effective Parts

@@ -1,5 +1,6 @@
 ---
 article_id: af_f2a3b22635df3cc3584c08fe
+navigation: module
 ---
 
 # Dual

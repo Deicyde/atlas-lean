@@ -1,5 +1,6 @@
 ---
 article_id: af_64e1fdd54dc168e067eaf4b0
+navigation: module
 ---
 
 # Bondareva Shapley

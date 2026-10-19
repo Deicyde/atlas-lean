@@ -1,5 +1,6 @@
 ---
 article_id: af_3e534edfcb111e601486b8c9
+navigation: module
 ---
 
 # Different Localization

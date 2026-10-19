@@ -1,5 +1,6 @@
 ---
 article_id: af_113952b2bb432d94cea48836
+navigation: module
 ---
 
 # Conductor Ideal

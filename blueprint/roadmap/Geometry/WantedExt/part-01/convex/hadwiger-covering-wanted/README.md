@@ -1,5 +1,6 @@
 ---
 article_id: af_bb85ad678cca97af5ba37b6e
+navigation: module
 ---
 
 # Hadwiger Covering

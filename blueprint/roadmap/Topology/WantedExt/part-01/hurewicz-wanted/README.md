@@ -1,5 +1,6 @@
 ---
 article_id: af_5ac9b6b31bade41be1c4ede9
+navigation: module
 ---
 
 # Hurewicz

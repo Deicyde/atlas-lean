@@ -1,5 +1,6 @@
 ---
 article_id: af_1d6301e9826167c96830906d
+navigation: module
 ---
 
 # Part1 Ch8 Entry11 Qgammafunctional

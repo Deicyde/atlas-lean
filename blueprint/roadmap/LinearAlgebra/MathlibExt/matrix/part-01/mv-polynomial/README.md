@@ -1,5 +1,6 @@
 ---
 article_id: af_b051b94b8926d5ebb5aa48f9
+navigation: module
 ---
 
 # Mv Polynomial

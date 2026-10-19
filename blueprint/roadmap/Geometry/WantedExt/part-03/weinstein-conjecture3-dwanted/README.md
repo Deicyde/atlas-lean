@@ -1,5 +1,6 @@
 ---
 article_id: af_f9f933ff5a694b79affb7ec1
+navigation: module
 ---
 
 # Weinstein Conjecture3 D

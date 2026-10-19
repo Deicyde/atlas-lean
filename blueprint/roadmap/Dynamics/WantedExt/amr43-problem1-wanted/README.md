@@ -1,5 +1,6 @@
 ---
 article_id: af_7cd97dd1031af9890fa2809e
+navigation: module
 ---
 
 # AMR43 Problem1

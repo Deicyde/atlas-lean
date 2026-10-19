@@ -1,8 +1,20 @@
+---
+navigation: module
+---
+
 # Mahler Popken Complexity
 
+## Mahler Popken Complexity Wanted
+
 - [Mahler Popken Expr](mahler-popken-expr.md)
+
+## Mahler Popken Expr
+
 - [Eval](eval.md)
 - [Count](count.md)
+
+## Mahler Popken Complexity Wanted
+
 - [Mahler Popken Complexity](mahler-popken-complexity.md)
 - [Exists mahler Popken Expr eval](exists-mahler-popken-expr-eval.md)
 - [Mahler Popken Complexity spec](mahler-popken-complexity-spec.md)

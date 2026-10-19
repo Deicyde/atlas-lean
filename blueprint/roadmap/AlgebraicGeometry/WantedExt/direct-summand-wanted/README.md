@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Direct Summand
 
 - [Single Functor Plus Iso Comp Qh](single-functor-plus-iso-comp-qh.md)

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Christol
 
 - [Christol theorem](christol-theorem.md)

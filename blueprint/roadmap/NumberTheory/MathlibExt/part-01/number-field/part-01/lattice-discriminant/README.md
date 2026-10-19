@@ -1,5 +1,6 @@
 ---
 article_id: af_39aad9dac617685800111093
+navigation: module
 ---
 
 # Lattice Discriminant

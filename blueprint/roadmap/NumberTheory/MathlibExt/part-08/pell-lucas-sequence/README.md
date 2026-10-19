@@ -1,5 +1,6 @@
 ---
 article_id: af_811358dafd4877ad3a8c92bc
+navigation: module
 ---
 
 # Pell Lucas Sequence

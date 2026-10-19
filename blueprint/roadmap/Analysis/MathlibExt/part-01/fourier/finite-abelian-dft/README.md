@@ -1,5 +1,6 @@
 ---
 article_id: af_ac62e43a241b61e0d3a4ef2d
+navigation: module
 ---
 
 # Finite Abelian DFT

@@ -1,5 +1,6 @@
 ---
 article_id: af_b726a4ca2587ee802f564c05
+navigation: module
 ---
 
 # Mountain Pass

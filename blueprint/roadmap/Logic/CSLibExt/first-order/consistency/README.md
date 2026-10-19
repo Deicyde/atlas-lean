@@ -1,12 +1,24 @@
+---
+navigation: module
+---
+
 # Consistency
+
+## Provability from sets
 
 - [Mp](mp.md)
 - [Of bot](of-bot.md)
 - [Imp of insert](imp-of-insert.md)
+
+## Consistency
+
 - [Consistent](consistent.md)
 - [Provable iff not consistent insert not](provable-iff-not-consistent-insert-not.md)
 - [Provable not iff not consistent insert](provable-not-iff-not-consistent-insert.md)
 - [Consistent s Union of is Chain](consistent-s-union-of-is-chain.md)
+
+## Maximal consistent sets
+
 - [Maximal Consistent](maximal-consistent.md)
 - [Mem of consistent insert](mem-of-consistent-insert.md)
 - [Lindenbaum's lemma](exists-maximal-consistent.md)
@@ -14,6 +26,9 @@
 - [Not mem iff](not-mem-iff.md)
 - [Instantiate mem of all mem](instantiate-mem-of-all-mem.md)
 - [Instantiate mem of equal](instantiate-mem-of-equal.md)
+
+## Henkin witnesses
+
 - [Henkin Axiom](henkin-axiom.md)
 - [Insert henkin Axiom](insert-henkin-axiom.md)
 - [All mem of henkin](all-mem-of-henkin.md)

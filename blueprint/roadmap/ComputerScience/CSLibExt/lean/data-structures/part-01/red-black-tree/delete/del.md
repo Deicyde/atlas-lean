@@ -14,11 +14,11 @@ deleted node together with `join`. Colors are kept, but `RedOk` and
 
 ## Depends on
 
-- [Tree](../../../part-03/red-black-tree/part-01/tree.md)
+- [Tree](../../../part-03/red-black-tree/tree.md)
 
 ## Proof depends on
 
-- [Color](../../../part-03/red-black-tree/part-01/color.md)
+- [Color](../../../part-03/red-black-tree/color.md)
 - [Join](join.md)
 
 ## Sources

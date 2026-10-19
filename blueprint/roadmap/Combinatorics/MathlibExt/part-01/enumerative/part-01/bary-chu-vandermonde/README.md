@@ -1,5 +1,6 @@
 ---
 article_id: af_4c632e59f6aaf02c3bda4c6c
+navigation: module
 ---
 
 # BAry Chu Vandermonde

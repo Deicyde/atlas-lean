@@ -1,5 +1,6 @@
 ---
 article_id: af_caff4918106b649a1d70c989
+navigation: module
 ---
 
 # Lehmer Laurent Identity

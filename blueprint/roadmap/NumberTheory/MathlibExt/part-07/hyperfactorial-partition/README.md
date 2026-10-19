@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Hyperfactorial Partition
 
 - [Hyperfactorial Digits Normalized](hyperfactorial-digits-normalized.md)

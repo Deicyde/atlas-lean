@@ -1,5 +1,6 @@
 ---
 article_id: af_c148e2a38d4d104b55e9623d
+navigation: module
 ---
 
 # Prime Number Theorem AP

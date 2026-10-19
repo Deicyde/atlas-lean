@@ -1,5 +1,6 @@
 ---
 article_id: af_ccca3057611ef331c8329fa3
+navigation: module
 ---
 
 # Tangent Space Level Set

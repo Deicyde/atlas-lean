@@ -12,13 +12,13 @@ Erasure preserves strict key ordering and positive tower heights.
 
 ## Depends on
 
-- [Skip List](../../../part-03/skip-list/part-01/skip-list.md)
-- [Valid](../../../part-03/skip-list/part-01/valid.md)
+- [Skip List](../../../part-03/skip-list/skip-list.md)
+- [Valid](../../../part-03/skip-list/valid.md)
 - [Erase](erase.md)
 
 ## Proof depends on
 
-- [Entry](../../../part-03/skip-list/part-01/entry.md)
+- [Entry](../../../part-03/skip-list/entry.md)
 - [Erase entries filter](erase-entries-filter.md)
 
 ## Sources

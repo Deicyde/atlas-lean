@@ -1,8 +1,38 @@
 ---
 article_id: af_8b229770d611c1e8263cc5bd
+navigation: module
 ---
 
 # Boolean Cube
 
-- [Part 1 of 2](part-01/README.md)
-- [Part 2 of 2](part-02/README.md)
+- [Bool Cube](bool-cube.md)
+- [Cube Val](cube-val.md)
+- [Cube Chi](cube-chi.md)
+- [Bool Fourier Coeff](bool-fourier-coeff.md)
+- [Multilinear Degree LE](multilinear-degree-le.md)
+- [Cube Val true](cube-val-true.md)
+- [Cube Val false](cube-val-false.md)
+- [Cube Val mul self](cube-val-mul-self.md)
+- [Cube Chi empty](cube-chi-empty.md)
+- [Cube Chi singleton](cube-chi-singleton.md)
+- [Cube Chi mul self](cube-chi-mul-self.md)
+- [Bool Fourier Coeff empty](bool-fourier-coeff-empty.md)
+- [Bool Fourier Coeff zero](bool-fourier-coeff-zero.md)
+- [Bool Fourier Coeff cube Chi self](bool-fourier-coeff-cube-chi-self.md)
+- [Bool Fourier Coeff const empty](bool-fourier-coeff-const-empty.md)
+- [Multilinear Degree LE zero](multilinear-degree-le-zero.md)
+- [Mono](mono.md)
+- [Multilinear Degree LE of dimension le](multilinear-degree-le-of-dimension-le.md)
+- [Cube Basis](cube-basis.md)
+- [Multilinear Extension](multilinear-extension.md)
+- [Eval cube Basis](eval-cube-basis.md)
+- [Eval multilinear Extension](eval-multilinear-extension.md)
+- [Multilinear Extension const](multilinear-extension-const.md)
+- [Multilinear Extension projection](multilinear-extension-projection.md)
+- [Boolean Degree](boolean-degree.md)
+- [Boolean Degree const](boolean-degree-const.md)
+- [Boolean Degree projection](boolean-degree-projection.md)
+- [All True Function](all-true-function.md)
+- [Multilinear Extension all True](multilinear-extension-all-true.md)
+- [Boolean Degree all True two](boolean-degree-all-true-two.md)
+- [Multilinear Degree LE indicator](multilinear-degree-le-indicator.md)

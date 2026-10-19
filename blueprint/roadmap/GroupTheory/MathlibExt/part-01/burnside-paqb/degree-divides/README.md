@@ -1,5 +1,6 @@
 ---
 article_id: af_c5877294b08dfde3e19b1fc1
+navigation: module
 ---
 
 # Degree Divides

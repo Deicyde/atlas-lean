@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Composition Index Sets
 
 - [Composition Half Index Set](composition-half-index-set.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_2ea6ee48f226b99abb2ded86
+navigation: module
 ---
 
 # Bang Zsigmondy

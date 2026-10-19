@@ -1,5 +1,6 @@
 ---
 article_id: af_3bbfbb8db7b447024f5ef29a
+navigation: module
 ---
 
 # Lattice Point Boundary Cubes

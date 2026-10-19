@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Fibonacci Sum Divisibility
 
 - [Pisano Period](pisano-period.md)

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Inter Regular
 
 - [Inf dfa accepts](inf-dfa-accepts.md)

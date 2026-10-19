@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Harmonic Valuation
 
 - [Weighted Binary Digit Sum](weighted-binary-digit-sum.md)

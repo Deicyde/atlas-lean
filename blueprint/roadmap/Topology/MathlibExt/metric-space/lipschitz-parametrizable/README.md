@@ -1,5 +1,6 @@
 ---
 article_id: af_f5f77c7a3b31e1d9af7acaac
+navigation: module
 ---
 
 # Lipschitz Parametrizable

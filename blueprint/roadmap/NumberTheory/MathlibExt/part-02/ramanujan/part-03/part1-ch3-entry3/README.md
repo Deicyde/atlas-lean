@@ -1,5 +1,6 @@
 ---
 article_id: af_7161c684bd6cd9e59d1260da
+navigation: module
 ---
 
 # Part1 Ch3 Entry3

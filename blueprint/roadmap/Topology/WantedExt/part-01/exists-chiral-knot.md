@@ -11,8 +11,8 @@ Source: Classical; see https://en.wikipedia.org/wiki/Chirality_(mathematics) and
 
 ## Depends on
 
-- [Knot](conway-knot-shared/part-01/knot.md)
-- [Chiral](conway-knot-shared/part-01/chiral.md)
+- [Knot](conway-knot-shared/knot.md)
+- [Chiral](conway-knot-shared/chiral.md)
 
 ## Sources
 

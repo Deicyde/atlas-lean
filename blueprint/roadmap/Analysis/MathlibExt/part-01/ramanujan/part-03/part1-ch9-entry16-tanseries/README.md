@@ -1,5 +1,6 @@
 ---
 article_id: af_980bbd264dfa751f8225efef
+navigation: module
 ---
 
 # Part1 Ch9 Entry16 Tanseries

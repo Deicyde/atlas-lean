@@ -1,5 +1,6 @@
 ---
 article_id: af_0863b57ad2f934d1e1dcda8a
+navigation: module
 ---
 
 # Hausdorff Dimension Function

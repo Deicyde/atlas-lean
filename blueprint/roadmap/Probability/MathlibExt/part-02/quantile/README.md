@@ -1,5 +1,6 @@
 ---
 article_id: af_5e0a21ffc4e62784f62bbb97
+navigation: module
 ---
 
 # Quantile

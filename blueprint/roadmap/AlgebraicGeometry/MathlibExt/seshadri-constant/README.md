@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Seshadri Constant
 
 - [Plane Polynomial](plane-polynomial.md)

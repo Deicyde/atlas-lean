@@ -1,5 +1,6 @@
 ---
 article_id: af_a7bedb3503ebbf64a3ed1616
+navigation: module
 ---
 
 # Large Prime Criteria

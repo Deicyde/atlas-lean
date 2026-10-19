@@ -1,5 +1,6 @@
 ---
 article_id: af_1b672e130eaeaadf10b5956b
+navigation: module
 ---
 
 # Two Power Rank

@@ -11,8 +11,8 @@ Source: https://arxiv.org/abs/1808.02923 Via leanprover/lean-eval@38361be, probl
 
 ## Depends on
 
-- [Smoothly slice (PL knot version)](../../part-01/conway-knot-shared/part-02/smoothly-slice.md)
-- [Conway Knot](../../part-01/conway-knot-shared/part-02/conway-knot.md)
+- [Smoothly slice (PL knot version)](../../part-01/conway-knot-shared/smoothly-slice-2.md)
+- [Conway Knot](../../part-01/conway-knot-shared/conway-knot.md)
 
 ## Sources
 

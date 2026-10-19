@@ -1,5 +1,6 @@
 ---
 article_id: af_b357417e84a653ed5d1ce6a8
+navigation: module
 ---
 
 # Thue Morse

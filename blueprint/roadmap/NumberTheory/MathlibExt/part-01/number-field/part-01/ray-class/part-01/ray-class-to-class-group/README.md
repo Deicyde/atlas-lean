@@ -1,5 +1,6 @@
 ---
 article_id: af_6f4f444dad253a84e435ac9f
+navigation: module
 ---
 
 # Ray Class To Class Group

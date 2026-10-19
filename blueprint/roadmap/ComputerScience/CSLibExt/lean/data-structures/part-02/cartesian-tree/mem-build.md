@@ -13,13 +13,13 @@ Membership in the Cartesian tree agrees with membership in the input.
 
 ## Depends on
 
-- [Mem](../binary-search-tree/part-01/mem.md)
+- [Mem](../binary-search-tree/mem.md)
 - [Build](build.md)
 
 ## Proof depends on
 
-- [Inorder](../binary-search-tree/part-01/inorder.md)
-- [Mem inorder](../binary-search-tree/part-01/mem-inorder.md)
+- [Inorder](../binary-search-tree/inorder.md)
+- [Mem inorder](../binary-search-tree/mem-inorder.md)
 - [Inorder build](inorder-build.md)
 
 ## Sources

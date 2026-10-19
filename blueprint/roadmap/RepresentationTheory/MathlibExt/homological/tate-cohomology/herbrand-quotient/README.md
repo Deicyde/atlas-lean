@@ -1,5 +1,6 @@
 ---
 article_id: af_3665982d10332d5eb74ac8fd
+navigation: module
 ---
 
 # Herbrand Quotient

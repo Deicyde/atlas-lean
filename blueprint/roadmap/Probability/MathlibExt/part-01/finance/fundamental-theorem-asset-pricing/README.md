@@ -1,5 +1,6 @@
 ---
 article_id: af_ef480c70ceee99744545b33b
+navigation: module
 ---
 
 # Fundamental Theorem Asset Pricing

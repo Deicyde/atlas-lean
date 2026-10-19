@@ -1,5 +1,6 @@
 ---
 article_id: af_67895431f145bebc4f90b190
+navigation: module
 ---
 
 # Integrally Closed

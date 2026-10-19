@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Groups
 
 - [Median Of Medians Groups](median-of-medians-groups.md)

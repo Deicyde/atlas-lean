@@ -1,5 +1,6 @@
 ---
 article_id: af_368a5731a9191d1140828456
+navigation: module
 ---
 
 # Hausdorff Moments

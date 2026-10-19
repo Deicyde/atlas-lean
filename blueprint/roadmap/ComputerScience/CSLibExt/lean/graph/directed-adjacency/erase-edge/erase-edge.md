@@ -11,7 +11,7 @@ Remove every occurrence of the ordered edge `source → target`.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
 
 ## Sources
 

@@ -1,10 +1,16 @@
 ---
 article_id: af_16b2d1f384d8666be30b8b72
+navigation: module
 ---
 
 # Bloom Filter
 
+## Lean
+
 - [Bloom Filter](bloom-filter.md)
+
+## Bloom Filter
+
 - [Empty](empty.md)
 - [Insert](insert.md)
 - [May Contain](may-contain.md)

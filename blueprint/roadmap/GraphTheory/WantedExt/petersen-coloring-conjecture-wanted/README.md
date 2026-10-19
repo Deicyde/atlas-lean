@@ -1,5 +1,6 @@
 ---
 article_id: af_d1fe47af7a9aee429f8bc771
+navigation: module
 ---
 
 # Petersen Coloring Conjecture

@@ -1,5 +1,6 @@
 ---
 article_id: af_a6399f3a84a3d89941ece4eb
+navigation: module
 ---
 
 # Maximal Ideal Graded Piece Mul

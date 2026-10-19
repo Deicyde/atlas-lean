@@ -1,5 +1,6 @@
 ---
 article_id: af_4a8c490cffad2c535eebb4ac
+navigation: module
 ---
 
 # Wieferich Prime

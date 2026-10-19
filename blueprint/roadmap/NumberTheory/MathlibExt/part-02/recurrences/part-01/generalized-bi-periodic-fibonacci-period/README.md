@@ -1,5 +1,6 @@
 ---
 article_id: af_6ce1aa7599229cd3d125e7e0
+navigation: module
 ---
 
 # Generalized Bi Periodic Fibonacci Period

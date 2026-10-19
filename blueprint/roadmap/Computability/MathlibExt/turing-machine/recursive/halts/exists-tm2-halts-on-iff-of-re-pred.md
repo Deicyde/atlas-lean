@@ -16,7 +16,7 @@ lean: MetaMathlibExt.TM2Recursive.exists_tm2HaltsOn_iff_of_rePred
 
 ## Proof depends on
 
-- [Fwd TM](../to-tm2/part-01/fwd-tm.md)
+- [Fwd TM](../to-tm2/fwd-tm.md)
 - [Tm2 Halts On fwd TM iff](tm2-halts-on-fwd-tm-iff.md)
 
 ## Sources

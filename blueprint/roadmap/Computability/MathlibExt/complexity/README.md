@@ -1,10 +1,16 @@
 ---
 article_id: af_3b96315143e29041dcb3ce90
+navigation: module
 ---
 
 # Complexity
 
+## Meta Mathlib Ext
+
 - [Bitstring Encoding](bitstring-encoding.md)
+
+## Bitstring Encoding
+
 - [Bit Encode](bit-encode.md)
 - [Bit Decode](bit-decode.md)
 - [Bit Decode bit Encode](bit-decode-bit-encode.md)
@@ -12,6 +18,9 @@ article_id: af_3b96315143e29041dcb3ce90
 - [Undelimit](undelimit.md)
 - [Undelimit Blocks Aux](undelimit-blocks-aux.md)
 - [Undelimit Blocks](undelimit-blocks.md)
+
+## Complexity Theory
+
 - [Decision Problem](decision-problem.md)
 - [Decision Complexity Class](decision-complexity-class.md)
 - [Is Poly Time With Encoding](is-poly-time-with-encoding.md)

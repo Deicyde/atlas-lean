@@ -1,5 +1,6 @@
 ---
 article_id: af_48a9453bbb1003c88424e4b4
+navigation: module
 ---
 
 # Pascal Matrix

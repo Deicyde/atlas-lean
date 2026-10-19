@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Basic
 
 - [Freivalds Trial](freivalds-trial.md)

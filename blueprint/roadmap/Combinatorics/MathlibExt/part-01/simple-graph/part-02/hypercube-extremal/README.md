@@ -1,5 +1,6 @@
 ---
 article_id: af_610ba2c5587eb18c321abaa3
+navigation: module
 ---
 
 # Hypercube Extremal

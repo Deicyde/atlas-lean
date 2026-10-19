@@ -1,5 +1,6 @@
 ---
 article_id: af_0fa8551ee85775636f320813
+navigation: module
 ---
 
 # Induced Character

@@ -1,4 +1,29 @@
+---
+navigation: module
+---
+
 # Stirling Matrix
 
-- [Part 1 of 2](part-01/README.md)
-- [Part 2 of 2](part-02/README.md)
+- [Stirling Like Entry](stirling-like-entry.md)
+- [U Entry](u-entry.md)
+- [Psi](psi.md)
+- [Omega](omega.md)
+- [Lambda](lambda.md)
+- [R Entry](r-entry.md)
+- [R Tilde Entry](r-tilde-entry.md)
+- [Stirling Like Matrix](stirling-like-matrix.md)
+- [U Matrix](u-matrix.md)
+- [R Matrix](r-matrix.md)
+- [R Tilde Matrix](r-tilde-matrix.md)
+- [Stirling Matrix2](stirling-matrix2.md)
+- [Vandermonde Matrix](vandermonde-matrix.md)
+- [Lemma 1](u-entry-eq-lambda.md)
+- [Lemma 1](u-entry-eq-zero-of-lt.md)
+- [Lemma 2](sum-r-entry-col.md)
+- [Theorem 3](stirling-like-matrix-decomp.md)
+- [Theorem 4](stirling-like-matrix-det.md)
+- [Proposition 5](sum-stirling-second-lambda.md)
+- [Lemma 7](r-tilde-matrix-eq-inv.md)
+- [Proposition 8](sum-stirling-second-desc-factorial-lambd.md)
+- [Proposition 9](sum-signed-psi-eq.md)
+- [Corollary 10](sum-signed-eq-delta.md)

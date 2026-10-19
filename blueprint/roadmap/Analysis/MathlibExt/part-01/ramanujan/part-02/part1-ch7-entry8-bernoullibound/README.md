@@ -1,5 +1,6 @@
 ---
 article_id: af_93baeda931dc265751d674af
+navigation: module
 ---
 
 # Part1 Ch7 Entry8 Bernoullibound

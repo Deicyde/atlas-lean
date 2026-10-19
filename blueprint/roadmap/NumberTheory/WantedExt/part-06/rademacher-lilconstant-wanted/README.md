@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Rademacher LILConstant
 
 - [Partial Sum](partial-sum.md)

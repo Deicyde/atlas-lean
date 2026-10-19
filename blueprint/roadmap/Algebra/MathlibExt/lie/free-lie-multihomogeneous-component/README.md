@@ -1,5 +1,6 @@
 ---
 article_id: af_9a1aa77d7369a54201b22a2f
+navigation: module
 ---
 
 # Free Lie Multihomogeneous Component

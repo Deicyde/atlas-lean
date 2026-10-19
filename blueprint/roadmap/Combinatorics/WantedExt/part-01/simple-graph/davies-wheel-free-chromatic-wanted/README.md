@@ -1,5 +1,6 @@
 ---
 article_id: af_658b8c56cacb9769dbea4f0d
+navigation: module
 ---
 
 # Davies Wheel Free Chromatic

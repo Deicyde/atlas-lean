@@ -1,4 +1,31 @@
+---
+navigation: module
+---
+
 # Finite Sums Fib Lucas
 
-- [Part 1 of 2](part-01/README.md)
-- [Part 2 of 2](part-02/README.md)
+- [Sqrt5](sqrt5.md)
+- [Fib Alpha](fib-alpha.md)
+- [Fib Beta](fib-beta.md)
+- [Euler Sec Number](euler-sec-number.md)
+- [Gen Lucas Coeff](gen-lucas-coeff.md)
+- [Theorem 1](add-fib-beta-pow-eq-sum.md)
+- [Corollary 2](sum-bernoulli-fib-neg-fib-beta.md)
+- [Corollary 3](sum-neg-two-pow-bernoulli-fib.md)
+- [Corollary 4](desc-factorial-mul-add-fib-beta-pow.md)
+- [Theorem 5](add-half-pow-eq-sum.md)
+- [Corollary 6](sum-neg-one-pow-euler-sec-lucas.md)
+- [Corollary 7](sum-euler-sec-lucas.md)
+- [Corollary 8](sum-euler-sec-lucas-eq-two-fib-alpha-pow.md)
+- [Corollary 9](sum-euler-sec-lucas-eq-two-fib-beta-pow.md)
+- [Corollary 10](sum-choose-euler-sec-lucas.md)
+- [Theorem 11](add-fib-beta-pow-eq-sum-gen-lucas-coeff.md)
+- [Corollary 12](sum-gen-lucas-coeff-neg-fib-beta.md)
+- [Corollary 13](sum-gen-lucas-coeff-weighted.md)
+- [Corollary 14](sum-genocchi-lucas-add.md)
+- [Theorem 15](add-mul-fib-beta-pow-eq-sum.md)
+- [Corollary 17](sum-bernoulli-fib-two-eq-one.md)
+- [Theorem 18](two-pow-mul-add-half-pow.md)
+- [Theorem 20](two-sqrt5-pow-mul-add.md)
+- [Lemma 21](iterate-forward-diff-pow-eq-sum.md)
+- [Theorem 22](genocchi-number-div-eq-sum.md)

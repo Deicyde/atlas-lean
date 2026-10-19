@@ -1,8 +1,17 @@
+---
+navigation: module
+---
+
 # Restriction
+
+## CNFClause
 
 - [Vars](vars.md)
 - [Restrict](restrict.md)
 - [Satisfies restrict iff](satisfies-restrict-iff.md)
+
+## CNF
+
 - [Vars](vars-2.md)
 - [Restrict](restrict-2.md)
 - [Vars restrict subset](vars-restrict-subset.md)

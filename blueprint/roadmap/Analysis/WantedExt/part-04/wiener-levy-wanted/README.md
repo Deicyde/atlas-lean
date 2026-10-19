@@ -1,5 +1,6 @@
 ---
 article_id: af_7202cca00034e4ab5cc1f12c
+navigation: module
 ---
 
 # Wiener Levy

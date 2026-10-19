@@ -13,7 +13,7 @@ Prefix lookup in the suffix tree succeeds exactly when the pattern occurs in `s`
 
 ## Depends on
 
-- [Has Prefix](../radix-trie/part-02/has-prefix.md)
+- [Has Prefix](../radix-trie/has-prefix.md)
 - [Suffix Tree](suffix-tree.md)
 
 ## Proof depends on

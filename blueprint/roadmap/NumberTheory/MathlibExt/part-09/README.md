@@ -3,7 +3,7 @@ article_id: af_3255b8db5852dc86793463a7
 navigation: transparent
 ---
 
-# Part 9 of 12
+# Pentanacci Number to Prime Support
 
 - [Pentanacci Number](pentanacci-number.md)
 - [Perrin Sequence](perrin-sequence.md)

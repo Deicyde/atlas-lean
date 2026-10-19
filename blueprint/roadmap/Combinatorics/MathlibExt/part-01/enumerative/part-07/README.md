@@ -3,7 +3,7 @@ article_id: af_44508550c9ac2dfd9bb2f971
 navigation: transparent
 ---
 
-# Part 7 of 9
+# Pollak Partial Parking Functions to Shifted Riordan Array Row Sums
 
 - [Pollak Partial Parking Functions](pollak-partial-parking-functions-card.md)
 - [Poly Initial Expansion](poly-initial-expansion/README.md)

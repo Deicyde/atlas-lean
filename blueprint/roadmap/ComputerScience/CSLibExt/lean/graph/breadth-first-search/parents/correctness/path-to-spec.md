@@ -17,8 +17,8 @@ A returned path follows saved parents and graph edges, is simple and has minimal
 - [BFSResult](../../../breadth-first-search-2/bfsresult.md)
 - [Bfs](../../../breadth-first-search-2/bfs.md)
 - [Bfs With Parents](../internal/bfs-with-parents.md)
-- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
-- [Edge](../../../directed-adjacency-2/part-01/edge.md)
+- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
+- [Edge](../../../directed-adjacency-2/edge.md)
 
 ## Proof depends on
 
@@ -29,8 +29,8 @@ A returned path follows saved parents and graph edges, is simple and has minimal
 - [Order mem iff reachable](../../../breadth-first-search-2/order-mem-iff-reachable.md)
 - [Predecessor chain nodup](predecessor-chain-nodup.md)
 - [Predecessor edge](../../parents-2/predecessor-edge.md)
-- [Reachable](../../../directed-adjacency-2/part-01/reachable.md)
-- [Walk](../../../directed-adjacency-2/part-01/walk.md)
+- [Reachable](../../../directed-adjacency-2/reachable.md)
+- [Walk](../../../directed-adjacency-2/walk.md)
 - [Contents](../../../../data-structures/part-01/queue/semantics/contents.md)
 - [Contents enqueue](../../../../data-structures/part-01/queue/semantics/contents-enqueue.md)
 - [Contents eq cons of dequeue? eq some](../../../../data-structures/part-01/queue/semantics/contents-eq-cons-of-dequeue-eq-some.md)

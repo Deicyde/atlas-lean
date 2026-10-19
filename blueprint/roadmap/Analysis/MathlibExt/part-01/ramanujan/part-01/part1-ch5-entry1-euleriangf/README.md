@@ -1,5 +1,6 @@
 ---
 article_id: af_bb18ba83048c8ec68f745ff5
+navigation: module
 ---
 
 # Part1 Ch5 Entry1 Euleriangf

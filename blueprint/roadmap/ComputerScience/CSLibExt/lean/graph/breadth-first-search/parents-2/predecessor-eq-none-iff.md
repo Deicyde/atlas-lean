@@ -14,8 +14,8 @@ A vertex lacks a saved parent exactly when it is the source or unreachable.
 
 - [BFSForest](../parents/internal/bfsforest.md)
 - [Bfs With Parents](../parents/internal/bfs-with-parents.md)
-- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
-- [Reachable](../../directed-adjacency-2/part-01/reachable.md)
+- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
+- [Reachable](../../directed-adjacency-2/reachable.md)
 
 ## Proof depends on
 
@@ -23,7 +23,7 @@ A vertex lacks a saved parent exactly when it is the source or unreachable.
 - [Bfs](../../breadth-first-search-2/bfs.md)
 - [Bfs With Parents ret](bfs-with-parents-ret.md)
 - [Distance present iff reachable](../../breadth-first-search-2/distance-present-iff-reachable.md)
-- [Edge](../../directed-adjacency-2/part-01/edge.md)
+- [Edge](../../directed-adjacency-2/edge.md)
 - [Contents](../../../data-structures/part-01/queue/semantics/contents.md)
 - [Contents enqueue](../../../data-structures/part-01/queue/semantics/contents-enqueue.md)
 - [Contents eq cons of dequeue? eq some](../../../data-structures/part-01/queue/semantics/contents-eq-cons-of-dequeue-eq-some.md)

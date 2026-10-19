@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Parallel Postulate
 
 - [Tarski Absolute](tarski-absolute.md)

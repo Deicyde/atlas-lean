@@ -14,7 +14,7 @@ aspect $k$ is at most $2 + k$.
 
 ## Depends on
 
-- [Rectangular circuit exponent](../../../CSLibExt/algebraic/rectangular-circuit-exponent/part-01/rectangular-circuit-exponent.md)
+- [Rectangular circuit exponent](../../../CSLibExt/algebraic/rectangular-circuit-exponent/rectangular-circuit-exponent.md)
 
 ## Sources
 

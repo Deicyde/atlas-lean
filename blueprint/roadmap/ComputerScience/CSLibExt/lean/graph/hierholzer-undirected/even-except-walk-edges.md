@@ -13,7 +13,7 @@ In the steps of a walk from `s` to `t`, every degree is even except at `s` and `
 ## Depends on
 
 - [Even Except](even-except.md)
-- [Walk Edges](../hierholzer/part-01/walk-edges.md)
+- [Walk Edges](../hierholzer/walk-edges.md)
 
 ## Proof depends on
 

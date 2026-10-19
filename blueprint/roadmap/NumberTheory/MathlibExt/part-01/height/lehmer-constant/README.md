@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Lehmer Constant
 
 - [Int Mahler Measure](int-mahler-measure.md)

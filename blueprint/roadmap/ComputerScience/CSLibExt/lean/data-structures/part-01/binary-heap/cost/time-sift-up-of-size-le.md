@@ -17,8 +17,8 @@ An invalid index performs no comparisons or swaps.
 
 ## Proof depends on
 
-- [Heap Parent](../../../part-02/binary-heap/part-01/heap-parent.md)
-- [Heap Parent lt size](../../../part-02/binary-heap/part-01/heap-parent-lt-size.md)
+- [Heap Parent](../../../part-02/binary-heap/heap-parent.md)
+- [Heap Parent lt size](../../../part-02/binary-heap/heap-parent-lt-size.md)
 
 ## Sources
 

@@ -1,10 +1,16 @@
 ---
 article_id: af_2ca8c2341478f956223d3d76
+navigation: module
 ---
 
 # Trie
 
+## Lean
+
 - [Trie](trie.md)
+
+## Trie
+
 - [Empty](empty.md)
 - [Lookup](lookup.md)
 - [Insert](insert.md)

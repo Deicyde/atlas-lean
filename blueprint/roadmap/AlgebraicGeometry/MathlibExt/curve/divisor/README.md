@@ -1,5 +1,6 @@
 ---
 article_id: af_c17319cec062cd70d1bfddb4
+navigation: module
 ---
 
 # Divisor

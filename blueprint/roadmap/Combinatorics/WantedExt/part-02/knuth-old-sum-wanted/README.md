@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Knuth Old Sum
 
 - [Knuth Old Sum Weight](knuth-old-sum-weight.md)

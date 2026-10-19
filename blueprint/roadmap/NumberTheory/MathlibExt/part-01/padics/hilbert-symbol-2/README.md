@@ -1,5 +1,6 @@
 ---
 article_id: af_42a094f485acce4084728093
+navigation: module
 ---
 
 # Hilbert Symbol

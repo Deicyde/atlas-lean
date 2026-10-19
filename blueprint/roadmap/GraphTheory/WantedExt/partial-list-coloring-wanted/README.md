@@ -1,5 +1,6 @@
 ---
 article_id: af_f510538082c6ef70b4fb60ed
+navigation: module
 ---
 
 # Partial List Coloring

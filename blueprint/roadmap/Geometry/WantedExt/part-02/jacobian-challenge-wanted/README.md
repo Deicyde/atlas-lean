@@ -1,8 +1,17 @@
+---
+navigation: module
+---
+
 # Jacobian Challenge
+
+## Jacobian Challenge
 
 - [Genus](genus.md)
 - [Genus eq zero iff homeo](genus-eq-zero-iff-homeo.md)
 - [Jacobian](jacobian.md)
+
+## Jacobian
+
 - [Of Curve](of-curve.md)
 - [Of Curve cont MDiff](of-curve-cont-mdiff.md)
 - [Of Curve self](of-curve-self.md)

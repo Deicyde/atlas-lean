@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Schur Siegel Smyth
 
 - [Conjugates](conjugates.md)

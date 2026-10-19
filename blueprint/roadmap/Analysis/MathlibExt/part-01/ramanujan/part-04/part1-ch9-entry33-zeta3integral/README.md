@@ -1,5 +1,6 @@
 ---
 article_id: af_affed3aabf1d0751c3be70d7
+navigation: module
 ---
 
 # Part1 Ch9 Entry33 Zeta3integral

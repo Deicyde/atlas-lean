@@ -15,7 +15,7 @@ Disconnected inputs still extract all vertices and return a parent forest.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
@@ -26,7 +26,7 @@ Disconnected inputs still extract all vertices and return a parent forest.
 - [Insert](../../data-structures/part-01/indexed-min-queue/basic/insert.md)
 - [Member](../../data-structures/part-01/indexed-min-queue/basic/member.md)
 - [Position valid](../../data-structures/part-01/indexed-min-queue/correctness/position-valid.md)
-- [Min Heap](../../data-structures/part-02/binary-heap/part-02/min-heap.md)
+- [Min Heap](../../data-structures/part-02/binary-heap/min-heap.md)
 
 ## Sources
 

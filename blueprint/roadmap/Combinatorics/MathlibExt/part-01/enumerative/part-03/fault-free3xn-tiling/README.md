@@ -1,5 +1,6 @@
 ---
 article_id: af_7091cbcdf76342db1a8202f8
+navigation: module
 ---
 
 # Fault Free3xn Tiling

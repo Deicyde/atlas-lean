@@ -1,5 +1,6 @@
 ---
 article_id: af_fb13c7af4a686799736dfeff
+navigation: module
 ---
 
 # Real Stable

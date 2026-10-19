@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Polynomial Cubes
 
 - [Int sum four polynomial cubes of cube form](int-sum-four-polynomial-cubes-of-cube-fo.md)

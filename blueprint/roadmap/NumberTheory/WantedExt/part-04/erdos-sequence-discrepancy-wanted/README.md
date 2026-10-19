@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Erdos Sequence Discrepancy
 
 - [Count Q](count-q.md)

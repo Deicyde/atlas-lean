@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Wallpaper Groups
 
 - [E](e.md)

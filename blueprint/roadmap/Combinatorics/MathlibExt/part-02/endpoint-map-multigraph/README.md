@@ -1,5 +1,6 @@
 ---
 article_id: af_6e550dae9a369716e1e8db92
+navigation: module
 ---
 
 # Endpoint Map Multigraph

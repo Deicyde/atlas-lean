@@ -1,6 +1,15 @@
+---
+navigation: module
+---
+
 # Heap
 
+## IMP
+
 - [Heap](heap.md)
+
+## Heap
+
 - [Disjoint](disjoint.md)
 - [Symm](symm.md)
 - [Disjoint empty left](disjoint-empty-left.md)

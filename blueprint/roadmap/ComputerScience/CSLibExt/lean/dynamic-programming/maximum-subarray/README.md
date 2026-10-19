@@ -1,15 +1,28 @@
+---
+navigation: module
+---
+
 # Maximum Subarray
 
 - [Is Max Subarray Sum](is-max-subarray-sum.md)
 - [Is Max Suffix Sum](is-max-suffix-sum.md)
 - [Kadane Scan](kadane-scan.md)
 - [Max Subarray Sum](max-subarray-sum.md)
+
+## Cost
+
 - [Kadane Scan time](kadane-scan-time.md)
 - [Max Subarray Sum time](max-subarray-sum-time.md)
+
+## The specification
+
 - [Ne nil](ne-nil.md)
 - [Unique](unique.md)
 - [Concat](concat.md)
 - [Concat](concat-2.md)
+
+## Correctness
+
 - [Kadane Scan ret](kadane-scan-ret.md)
 - [Max Subarray Sum ret eq some iff](max-subarray-sum-ret-eq-some-iff.md)
 - [Sum le of max Subarray Sum](sum-le-of-max-subarray-sum.md)

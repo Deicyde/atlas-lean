@@ -1,5 +1,6 @@
 ---
 article_id: af_dd7964ffc66e45c794e62cba
+navigation: module
 ---
 
 # Wiener One Over F

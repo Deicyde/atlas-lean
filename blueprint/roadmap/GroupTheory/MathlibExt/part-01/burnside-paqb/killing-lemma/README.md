@@ -1,5 +1,6 @@
 ---
 article_id: af_e5e1820450e201aded3c3415
+navigation: module
 ---
 
 # Killing Lemma

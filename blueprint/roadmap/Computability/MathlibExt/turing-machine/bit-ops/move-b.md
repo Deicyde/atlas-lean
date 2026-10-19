@@ -12,7 +12,7 @@ marker or an empty stack go to `next`.
 
 ## Depends on
 
-- [Flag](../program/part-01/flag.md)
+- [Flag](../program/flag.md)
 
 ## Proof depends on
 

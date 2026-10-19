@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Median Euler Number
 
 - [Median Euler Coefficients](median-euler-coefficients.md)

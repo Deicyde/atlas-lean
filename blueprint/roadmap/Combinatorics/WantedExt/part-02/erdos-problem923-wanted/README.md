@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Erdos Problem923
 
 - [Conjecture](conjecture.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_c3e8e3887556a3dfdea6dee0
+navigation: module
 ---
 
 # Odd Independent

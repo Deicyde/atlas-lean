@@ -1,5 +1,6 @@
 ---
 article_id: af_b5b13246819dac6b57b703df
+navigation: module
 ---
 
 # L1 Norm

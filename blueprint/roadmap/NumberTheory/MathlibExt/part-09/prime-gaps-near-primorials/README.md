@@ -1,5 +1,6 @@
 ---
 article_id: af_00a02336f7824422209f60d7
+navigation: module
 ---
 
 # Prime Gaps Near Primorials

@@ -1,5 +1,6 @@
 ---
 article_id: af_28159e109f0826a733bcd29e
+navigation: module
 ---
 
 # Invariant Submodule

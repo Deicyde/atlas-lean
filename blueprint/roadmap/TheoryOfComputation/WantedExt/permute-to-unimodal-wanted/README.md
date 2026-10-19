@@ -1,5 +1,6 @@
 ---
 article_id: af_59949b5e527e5a890534d204
+navigation: module
 ---
 
 # Permute To Unimodal

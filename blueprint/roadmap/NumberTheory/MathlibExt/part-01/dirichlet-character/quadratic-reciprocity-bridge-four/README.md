@@ -1,5 +1,6 @@
 ---
 article_id: af_dc182bfecf2f6363fb5a126b
+navigation: module
 ---
 
 # Quadratic Reciprocity Bridge Four

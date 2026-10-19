@@ -1,5 +1,6 @@
 ---
 article_id: af_ed84756a4edfe28ecbe2964c
+navigation: module
 ---
 
 # Ward SBinomial Carry Product

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Selberg Spectral Gap
 
 - [Selberg three Sixteenths wanted](selberg-three-sixteenths-wanted.md)

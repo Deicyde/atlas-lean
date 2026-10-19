@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # List Scheduling
 
 - [Is Schedule Of](is-schedule-of.md)
@@ -6,17 +10,32 @@
 - [List Schedule Scan](list-schedule-scan.md)
 - [List Schedule](list-schedule.md)
 - [Lpt](lpt.md)
+
+## Schedules
+
 - [Is Schedule Of nil](is-schedule-of-nil.md)
 - [Le makespan](le-makespan.md)
 - [Sum le](sum-le.md)
+
+## The scan invariant
+
 - [Scan Inv](scan-inv.md)
 - [List Schedule Scan bound](list-schedule-scan-bound.md)
 - [Mul least Loaded le](mul-least-loaded-le.md)
+
+## Graham's bound for list scheduling
+
 - [List Schedule approx](list-schedule-approx.md)
+
+## Graham's bound for LPT
+
 - [Two mul le of loads gt](two-mul-le-of-loads-gt.md)
 - [Count P add count P le](count-p-add-count-p-le.md)
 - [Lpt step le](lpt-step-le.md)
 - [Lpt approx](lpt-approx.md)
+
+## Validity and cost
+
 - [List Schedule is Schedule Of](list-schedule-is-schedule-of.md)
 - [List Schedule time](list-schedule-time.md)
 - [Lpt time le](lpt-time-le.md)

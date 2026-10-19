@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Wilson Quotients
 
 - [Wilson Quotient M](wilson-quotient-m.md)

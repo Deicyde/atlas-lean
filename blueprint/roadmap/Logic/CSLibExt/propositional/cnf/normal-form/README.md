@@ -1,6 +1,15 @@
+---
+navigation: module
+---
+
 # Normal Form
 
+## CNF
+
 - [Disj](disj.md)
+
+## Proposition
+
 - [Cnf Acc](cnf-acc.md)
 - [Cnf Or](cnf-or.md)
 - [Cnf Of](cnf-of.md)

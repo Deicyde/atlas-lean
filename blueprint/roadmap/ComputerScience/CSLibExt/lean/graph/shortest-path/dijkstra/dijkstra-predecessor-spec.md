@@ -12,16 +12,16 @@ Every predecessor is an edge realizing the final distance equation.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
 - [Dijkstra Cost](dijkstra-cost.md)
 - [Dijkstra Result](dijkstra-result.md)
-- [Edge](../../directed-adjacency-2/part-01/edge.md)
+- [Edge](../../directed-adjacency-2/edge.md)
 - [Dijkstra](dijkstra.md)
 
 ## Proof depends on
 
 - [Has Path Weight](has-path-weight.md)
-- [Reachable](../../directed-adjacency-2/part-01/reachable.md)
+- [Reachable](../../directed-adjacency-2/reachable.md)
 - [Path Weight](path-weight.md)
 - [Reachable iff exists has Path Weight](reachable-iff-exists-has-path-weight.md)
 

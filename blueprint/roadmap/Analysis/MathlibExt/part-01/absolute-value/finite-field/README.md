@@ -1,5 +1,6 @@
 ---
 article_id: af_5ae7817b56bf02eef673bc08
+navigation: module
 ---
 
 # Finite Field

@@ -1,5 +1,6 @@
 ---
 article_id: af_08318cdd0e3ef3f96b09dabb
+navigation: module
 ---
 
 # Octagonal Pyramidal Number

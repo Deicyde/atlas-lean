@@ -1,5 +1,6 @@
 ---
 article_id: af_946921a63675ee8417781b3c
+navigation: module
 ---
 
 # Matrix Exp Det Trace

@@ -1,5 +1,6 @@
 ---
 article_id: af_872f81aa82a97ffb6b9c30e3
+navigation: module
 ---
 
 # Frobenius Generators

@@ -1,5 +1,6 @@
 ---
 article_id: af_e624e0d93a07f6deb21e759f
+navigation: module
 ---
 
 # Maximal Ideal Pow Factor

@@ -1,5 +1,6 @@
 ---
 article_id: af_84a4332afcf50ebf9c070b38
+navigation: module
 ---
 
 # Erdos Divisibility Family Growth

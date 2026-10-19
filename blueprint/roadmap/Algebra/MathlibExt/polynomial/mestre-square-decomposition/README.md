@@ -1,5 +1,6 @@
 ---
 article_id: af_a2e98d5e301e07cf15019f56
+navigation: module
 ---
 
 # Mestre Square Decomposition

@@ -1,5 +1,6 @@
 ---
 article_id: af_43ebb8528ad2a7611b5dc7aa
+navigation: module
 ---
 
 # Bridge

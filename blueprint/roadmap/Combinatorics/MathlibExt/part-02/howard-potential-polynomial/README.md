@@ -1,5 +1,6 @@
 ---
 article_id: af_a0f0b27edf4fb56a09052ad0
+navigation: module
 ---
 
 # Howard Potential Polynomial

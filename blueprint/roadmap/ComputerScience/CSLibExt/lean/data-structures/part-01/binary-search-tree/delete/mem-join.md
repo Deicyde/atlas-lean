@@ -13,7 +13,7 @@ A key is in a splice exactly when it is in one of the two parts.
 
 ## Depends on
 
-- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
+- [Mem](../../../part-02/binary-search-tree/mem.md)
 - [Join](join.md)
 
 ## Sources

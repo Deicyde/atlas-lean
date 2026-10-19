@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Vertex Connectivity
 
 - [Is Vertex Connected](is-vertex-connected.md)

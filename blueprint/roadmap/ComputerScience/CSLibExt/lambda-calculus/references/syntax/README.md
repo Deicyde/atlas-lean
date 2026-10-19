@@ -1,7 +1,16 @@
+---
+navigation: module
+---
+
 # Syntax
+
+## References
 
 - [Ty](ty.md)
 - [Term](term.md)
+
+## Term
+
 - [Value](value.md)
 - [Lift Ren](lift-ren.md)
 - [Rename](rename.md)

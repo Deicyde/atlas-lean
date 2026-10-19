@@ -14,9 +14,9 @@ of the converted knots in the canonical sense.
 ## Depends on
 
 - [To Parametrized Knot](to-parametrized-knot.md)
-- [Knot](../conway-knot-shared/part-01/knot.md)
-- [Isotopic](../conway-knot-shared/part-01/isotopic.md)
-- [Isotopic](../../../MathlibExt/knot/euclidean-link/part-01/isotopic.md)
+- [Knot](../conway-knot-shared/knot.md)
+- [Isotopic](../conway-knot-shared/isotopic.md)
+- [Isotopic](../../../MathlibExt/knot/euclidean-link/isotopic.md)
 
 ## Proof depends on
 
@@ -25,11 +25,11 @@ of the converted knots in the canonical sense.
 - [Of Euclidean Circle Reparam](of-euclidean-circle-reparam.md)
 - [To Euclidean Ambient Isotopy](to-euclidean-ambient-isotopy.md)
 - [To Euclidean Circle Reparam](to-euclidean-circle-reparam.md)
-- [Ambient Isotopy](../conway-knot-shared/part-01/ambient-isotopy.md)
-- [R3](../conway-knot-shared/part-01/r3.md)
-- [Ambient Isotopy](../../../MathlibExt/knot/euclidean-link/part-01/ambient-isotopy.md)
-- [Circle Reparam](../../../MathlibExt/knot/euclidean-link/part-01/circle-reparam.md)
-- [Parametrized Knot](../../../MathlibExt/knot/euclidean-link/part-01/parametrized-knot.md)
+- [Ambient Isotopy](../conway-knot-shared/ambient-isotopy.md)
+- [R3](../conway-knot-shared/r3.md)
+- [Ambient Isotopy](../../../MathlibExt/knot/euclidean-link/ambient-isotopy.md)
+- [Circle Reparam](../../../MathlibExt/knot/euclidean-link/circle-reparam.md)
+- [Parametrized Knot](../../../MathlibExt/knot/euclidean-link/parametrized-knot.md)
 
 ## Sources
 

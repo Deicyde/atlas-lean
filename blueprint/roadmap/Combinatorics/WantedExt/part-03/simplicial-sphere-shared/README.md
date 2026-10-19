@@ -1,5 +1,6 @@
 ---
 article_id: af_3dabe1629774781a36609c1b
+navigation: module
 ---
 
 # Simplicial Sphere Shared

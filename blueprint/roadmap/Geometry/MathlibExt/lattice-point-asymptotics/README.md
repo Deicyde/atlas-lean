@@ -1,5 +1,6 @@
 ---
 article_id: af_e17752a5f8bf1782c806210e
+navigation: module
 ---
 
 # Lattice Point Asymptotics

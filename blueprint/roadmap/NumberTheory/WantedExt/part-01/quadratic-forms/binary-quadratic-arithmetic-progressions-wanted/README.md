@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Binary Quadratic Arithmetic Progressions
 
 - [Exists int representations of rat arithmetic progression](exists-int-representations-of-rat-arithm.md)

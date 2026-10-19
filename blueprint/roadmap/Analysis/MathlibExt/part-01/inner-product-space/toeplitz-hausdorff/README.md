@@ -1,5 +1,6 @@
 ---
 article_id: af_0143ea81583501b098af7a89
+navigation: module
 ---
 
 # Toeplitz Hausdorff

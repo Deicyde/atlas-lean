@@ -13,7 +13,7 @@ Lookup outside the logical range always returns `none`.
 
 ## Depends on
 
-- [Table](../basic/part-01/table.md)
+- [Table](../basic/table.md)
 - [Get?](get.md)
 
 ## Sources

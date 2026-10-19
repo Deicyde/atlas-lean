@@ -11,11 +11,11 @@ Remove the stored entry for a key, retaining every surviving tower unchanged.
 
 ## Depends on
 
-- [Skip List](../../../part-03/skip-list/part-01/skip-list.md)
+- [Skip List](../../../part-03/skip-list/skip-list.md)
 
 ## Proof depends on
 
-- [Entry](../../../part-03/skip-list/part-01/entry.md)
+- [Entry](../../../part-03/skip-list/entry.md)
 
 ## Sources
 

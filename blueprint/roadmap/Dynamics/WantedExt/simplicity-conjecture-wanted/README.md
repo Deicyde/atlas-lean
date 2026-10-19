@@ -1,5 +1,6 @@
 ---
 article_id: af_41e64c77aaf93fd8d49d864a
+navigation: module
 ---
 
 # Simplicity Conjecture

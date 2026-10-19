@@ -1,5 +1,6 @@
 ---
 article_id: af_fa8e331f8d58536b97050d80
+navigation: module
 ---
 
 # Part1 Ch3 Entry2 Corollary2 Harmonic Series

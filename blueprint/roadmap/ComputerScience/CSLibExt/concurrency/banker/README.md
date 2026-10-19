@@ -1,6 +1,15 @@
+---
+navigation: module
+---
+
 # Banker
 
+## Banker
+
 - [System](system.md)
+
+## System
+
 - [Need](need.md)
 - [Safe Seq](safe-seq.md)
 - [Safe](safe.md)

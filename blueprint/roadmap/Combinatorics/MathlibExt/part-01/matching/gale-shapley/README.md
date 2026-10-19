@@ -1,16 +1,25 @@
 ---
 article_id: af_3e139b704cdaebb74ab995c0
+navigation: module
 ---
 
 # Gale Shapley
 
+## Gale Shapley
+
 - [Strict Total Order](strict-total-order.md)
+
+## Strict Total Order
+
 - [Mk](mk.md)
 - [Lt](lt.md)
 - [Irrefl](irrefl.md)
 - [Trans](trans.md)
 - [Total](total.md)
 - [Ext](ext.md)
+
+## Gale Shapley
+
 - [MPrefs](mprefs.md)
 - [WPrefs](wprefs.md)
 - [Perfect Matching](perfect-matching.md)

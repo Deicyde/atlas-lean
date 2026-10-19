@@ -12,7 +12,7 @@ catalogue best upper row `C₆₁ ≤ 7/64`.
 
 ## Depends on
 
-- [Selberg Constant](../../../MathlibExt/part-01/modular-forms/selberg-spectral-gap/part-01/selberg-constant.md)
+- [Selberg Constant](../../../MathlibExt/part-01/modular-forms/selberg-spectral-gap/selberg-constant.md)
 
 ## Sources
 

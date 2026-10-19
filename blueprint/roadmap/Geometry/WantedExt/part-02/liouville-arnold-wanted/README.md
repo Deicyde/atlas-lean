@@ -1,5 +1,6 @@
 ---
 article_id: af_dec9395787e7d2b5c01dbcab
+navigation: module
 ---
 
 # Liouville Arnold

@@ -1,5 +1,6 @@
 ---
 article_id: af_bb638023d8ed4d5db997f41f
+navigation: module
 ---
 
 # Dixon Summation

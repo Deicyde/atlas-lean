@@ -1,5 +1,6 @@
 ---
 article_id: af_42641863f895258a31238dd8
+navigation: module
 ---
 
 # Recursive Rod Cutting

@@ -12,7 +12,7 @@ Erasing an edge leaves every other adjacency row exactly unchanged.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
 - [Erase Edge](erase-edge.md)
 
 ## Sources

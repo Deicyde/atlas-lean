@@ -1,5 +1,6 @@
 ---
 article_id: af_71a0eaa171426126f3b8d8e7
+navigation: module
 ---
 
 # Strongly Regular

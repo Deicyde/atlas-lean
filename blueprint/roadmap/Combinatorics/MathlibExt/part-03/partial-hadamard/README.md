@@ -1,5 +1,6 @@
 ---
 article_id: af_8fdede5e9082861a9dfb9d49
+navigation: module
 ---
 
 # Partial Hadamard

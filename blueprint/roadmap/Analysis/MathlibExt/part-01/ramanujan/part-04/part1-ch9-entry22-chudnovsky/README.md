@@ -1,5 +1,6 @@
 ---
 article_id: af_e9cb566998d348ea15b2b8fb
+navigation: module
 ---
 
 # Part1 Ch9 Entry22 Chudnovsky

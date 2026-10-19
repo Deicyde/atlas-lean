@@ -1,5 +1,6 @@
 ---
 article_id: af_2f65fee26951169992dfae18
+navigation: module
 ---
 
 # Rosenthal L1

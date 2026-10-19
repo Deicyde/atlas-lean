@@ -1,5 +1,6 @@
 ---
 article_id: af_2bd62639423962bf29ecdcb1
+navigation: module
 ---
 
 # Erdos Sidon Isolated Sums

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Conway Knot Euclidean Bridge
 
 - [To Parametrized Knot](to-parametrized-knot.md)

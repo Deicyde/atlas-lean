@@ -1,5 +1,6 @@
 ---
 article_id: af_5dedc9b5e1fffe027f05caa5
+navigation: module
 ---
 
 # Normalized Theta Error

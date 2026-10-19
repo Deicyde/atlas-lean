@@ -1,5 +1,6 @@
 ---
 article_id: af_e5871811dee197d459f26cad
+navigation: module
 ---
 
 # Ten Martini

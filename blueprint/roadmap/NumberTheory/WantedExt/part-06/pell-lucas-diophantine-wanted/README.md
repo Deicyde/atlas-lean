@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Pell Lucas Diophantine
 
 - [Lemma 2](pell-lucas-sequence-is-square-iff.md)

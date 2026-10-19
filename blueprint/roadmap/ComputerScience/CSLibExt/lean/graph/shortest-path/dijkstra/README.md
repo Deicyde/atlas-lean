@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Dijkstra
 
 - [Path Weight](path-weight.md)

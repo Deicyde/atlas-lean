@@ -1,5 +1,6 @@
 ---
 article_id: af_e1e070fb710a5d6f9f990353
+navigation: module
 ---
 
 # Ramanujan Partition Congruence

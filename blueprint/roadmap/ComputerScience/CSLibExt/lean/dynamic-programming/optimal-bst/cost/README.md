@@ -1,5 +1,6 @@
 ---
 article_id: af_7b48b5f1e597e8c7fd4da793
+navigation: module
 ---
 
 # Cost

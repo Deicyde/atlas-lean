@@ -1,5 +1,6 @@
 ---
 article_id: af_253c41005f50ec80a7ee76bb
+navigation: module
 ---
 
 # Hartogs Separate Analyticity

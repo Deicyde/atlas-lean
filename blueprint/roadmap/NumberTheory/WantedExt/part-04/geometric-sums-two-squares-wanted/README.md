@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Geometric Sums Two Squares
 
 - [Phi4p X1](phi4p-x1.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_3d80c4442cd7fda7b3676e3d
+navigation: module
 ---
 
 # Oppermann Cyclic Numbers

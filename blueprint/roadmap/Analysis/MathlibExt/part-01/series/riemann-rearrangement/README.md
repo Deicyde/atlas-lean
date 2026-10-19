@@ -1,5 +1,6 @@
 ---
 article_id: af_7ce52b51aaa9b79f947a4f60
+navigation: module
 ---
 
 # Riemann Rearrangement

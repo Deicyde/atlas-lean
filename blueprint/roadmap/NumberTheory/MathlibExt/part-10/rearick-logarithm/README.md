@@ -1,5 +1,6 @@
 ---
 article_id: af_8ac99e7d1bd8d7e5ef7920fa
+navigation: module
 ---
 
 # Rearick Logarithm

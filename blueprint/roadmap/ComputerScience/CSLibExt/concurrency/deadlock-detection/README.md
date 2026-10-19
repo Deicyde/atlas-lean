@@ -1,6 +1,15 @@
+---
+navigation: module
+---
+
 # Deadlock Detection
 
+## Deadlock Detection
+
 - [State](state.md)
+
+## State
+
 - [Reduces](reduces.md)
 - [Erase](erase.md)
 - [Eq nil](eq-nil.md)

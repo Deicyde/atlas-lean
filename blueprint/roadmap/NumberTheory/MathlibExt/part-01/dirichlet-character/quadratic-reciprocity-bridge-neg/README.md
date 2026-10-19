@@ -1,5 +1,6 @@
 ---
 article_id: af_b42e986ec9ecf4a5576adfe4
+navigation: module
 ---
 
 # Quadratic Reciprocity Bridge Neg

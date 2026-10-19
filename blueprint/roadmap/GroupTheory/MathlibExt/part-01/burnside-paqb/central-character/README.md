@@ -1,5 +1,6 @@
 ---
 article_id: af_93bf1a507ddbf0cfc5ab31fd
+navigation: module
 ---
 
 # Central Character

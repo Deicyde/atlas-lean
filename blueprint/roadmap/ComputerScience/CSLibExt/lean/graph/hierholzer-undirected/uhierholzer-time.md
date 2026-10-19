@@ -22,7 +22,7 @@ lean: Cslib.Algorithms.Lean.Hierholzer.uhierholzer_time
 - [Usym](usym.md)
 - [Uvisit](uvisit.md)
 - [Uvisit spec](uvisit-spec.md)
-- [Walk Edges](../hierholzer/part-01/walk-edges.md)
+- [Walk Edges](../hierholzer/walk-edges.md)
 
 ## Sources
 

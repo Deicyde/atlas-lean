@@ -1,5 +1,6 @@
 ---
 article_id: af_54f7f8f45a07e691b0381507
+navigation: module
 ---
 
 # Part1 Ch6 Entry16 Finite Sum

@@ -1,11 +1,21 @@
+---
+navigation: module
+---
+
 # Miller Rabin
 
 - [Two Adic Split](two-adic-split.md)
 - [Witness Loop](witness-loop.md)
 - [Witness](witness.md)
 - [Miller Rabin](miller-rabin.md)
+
+## Cost
+
 - [Witness Loop time le](witness-loop-time-le.md)
 - [Witness time le](witness-time-le.md)
+
+## Correctness
+
 - [Witness Loop eq false](witness-loop-eq-false.md)
 - [Witness eq false of prime](witness-eq-false-of-prime.md)
 - [Not prime of witness](not-prime-of-witness.md)

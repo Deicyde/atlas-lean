@@ -1,5 +1,6 @@
 ---
 article_id: af_3233c76188ae76226e40f027
+navigation: module
 ---
 
 # Is Closest Conjugate

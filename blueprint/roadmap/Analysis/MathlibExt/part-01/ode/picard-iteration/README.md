@@ -1,5 +1,6 @@
 ---
 article_id: af_4d766ed490a3f9e23b7c642c
+navigation: module
 ---
 
 # Picard Iteration

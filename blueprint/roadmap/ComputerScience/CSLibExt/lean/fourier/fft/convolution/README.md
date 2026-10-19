@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Convolution
 
 - [Fft Pointwise](fft-pointwise.md)

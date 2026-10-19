@@ -1,5 +1,6 @@
 ---
 article_id: af_fb95ce1558ad84d71ba48135
+navigation: module
 ---
 
 # Prime Prime Ratio

@@ -1,5 +1,6 @@
 ---
 article_id: af_9389ab288c3d288c1ed29bf3
+navigation: module
 ---
 
 # Word Factor Complexity

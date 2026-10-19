@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Longest Increasing Subsequence
 
 - [Is LISLength](is-lislength.md)
@@ -6,8 +10,14 @@
 - [Lis Table](lis-table.md)
 - [Max Entry](max-entry.md)
 - [Longest Increasing Subsequence](longest-increasing-subsequence.md)
+
+## Cost
+
 - [Max Above time](max-above-time.md)
 - [Longest Increasing Subsequence time](longest-increasing-subsequence-time.md)
+
+## Correctness
+
 - [Exists suffix of cons sublist](exists-suffix-of-cons-sublist.md)
 - [LISTable Spec](listable-spec.md)
 - [Is LISCell max Above](is-liscell-max-above.md)

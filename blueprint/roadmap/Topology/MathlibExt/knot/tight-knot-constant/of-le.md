@@ -16,9 +16,9 @@ Admissible constants are downward closed above zero.
 
 ## Proof depends on
 
-- [Parametrized Link](../euclidean-link/part-01/parametrized-link.md)
-- [Crossing Number](../regular-projection/part-03/crossing-number.md)
-- [Ropelength](../euclidean-link/part-01/ropelength.md)
+- [Parametrized Link](../euclidean-link/parametrized-link.md)
+- [Crossing Number](../regular-projection/crossing-number.md)
+- [Ropelength](../euclidean-link/ropelength.md)
 
 ## Sources
 

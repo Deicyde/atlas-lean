@@ -1,5 +1,6 @@
 ---
 article_id: af_7f8eb2b454a3955492069c0f
+navigation: module
 ---
 
 # Turan System

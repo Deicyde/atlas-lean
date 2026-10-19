@@ -1,4 +1,28 @@
+---
+navigation: module
+---
+
 # Lucky Cars
 
-- [Part 1 of 2](part-01/README.md)
-- [Part 2 of 2](part-02/README.md)
+- [Next Free Spot](next-free-spot.md)
+- [Park Spots From](park-spots-from.md)
+- [Park Spots](park-spots.md)
+- [Is Lucky Car](is-lucky-car.md)
+- [Lucky Count](lucky-count.md)
+- [Q](q.md)
+- [Q Inc](q-inc.md)
+- [Q Dec](q-dec.md)
+- [Lucky Gen Poly](lucky-gen-poly.md)
+- [Theorem 4](card-parking-lucky-on.md)
+- [Corollary 5](lucky-gen-poly-eq-sum.md)
+- [Proposition 6](expected-desc-factorial-lucky-count.md)
+- [Lemma 9](q-boundary-values.md)
+- [Corollary 10](sum-q-eq.md)
+- [Theorem 12](sum-q-second-spot.md)
+- [Lemma 18](q-inc-eq.md)
+- [Ballot Path](ballot-path.md)
+- [Lemma 21](card-ballot-path.md)
+- [Lemma 22](q-dec-eq.md)
+- [Corollary 23](card-dec-lucky-spot-eq-sum.md)
+- [Theorem 24](card-dec-lucky-spot-eq-sum-catalan.md)
+- [Theorem 25](expected-lucky-dec.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_981f62245af778d952e09b1b
+navigation: module
 ---
 
 # Scalar Center

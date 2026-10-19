@@ -12,9 +12,9 @@ Boolean lookup reports that the erased ordered edge is absent.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
 - [Erase Edge](erase-edge.md)
-- [Has Edge](../../directed-adjacency-2/part-02/has-edge.md)
+- [Has Edge](../../directed-adjacency-2/has-edge.md)
 
 ## Sources
 

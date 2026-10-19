@@ -1,5 +1,6 @@
 ---
 article_id: af_c613928fcce084f69564b58d
+navigation: module
 ---
 
 # Shannon Source Coding

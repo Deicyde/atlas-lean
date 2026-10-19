@@ -1,5 +1,6 @@
 ---
 article_id: af_cb8fa2cbff060ee16eff7708
+navigation: module
 ---
 
 # BAry Binomial Coefficient

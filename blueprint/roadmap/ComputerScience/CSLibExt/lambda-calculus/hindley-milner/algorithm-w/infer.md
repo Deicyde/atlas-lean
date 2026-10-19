@@ -11,14 +11,14 @@ Type inference for closed expressions.
 
 ## Depends on
 
-- [Expr](../typing/part-01/expr.md)
-- [Ty](../typing/part-01/ty.md)
+- [Expr](../typing/expr.md)
+- [Ty](../typing/ty.md)
 
 ## Proof depends on
 
-- [Scheme](../typing/part-01/scheme.md)
+- [Scheme](../typing/scheme.md)
 - [W](w.md)
-- [Subst](../../../unification/basic/part-01/subst.md)
+- [Subst](../../../unification/basic/subst.md)
 
 ## Sources
 

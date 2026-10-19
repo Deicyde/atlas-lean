@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Correctness
 
 - [Predecessor chain unique](predecessor-chain-unique.md)

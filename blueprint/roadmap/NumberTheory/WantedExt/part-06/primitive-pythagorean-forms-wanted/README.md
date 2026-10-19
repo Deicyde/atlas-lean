@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Primitive Pythagorean Forms
 
 - [Primitive pythagorean sides sum two squares infinite](primitive-pythagorean-sides-sum-two-squa.md)

@@ -1,11 +1,21 @@
+---
+navigation: module
+---
+
 # Bit Ops
 
 - [Is Bit](is-bit.md)
 - [Bit Of](bit-of.md)
 - [Is Bit Block](is-bit-block.md)
 - [Ends Bit Block](ends-bit-block.md)
+
+## Moving a bit block
+
 - [Move B](move-b.md)
 - [Move B run](move-b-run.md)
+
+## Comparing two bit blocks
+
 - [Cmp B](cmp-b.md)
 - [Distinct4](distinct4.md)
 - [Cmp B prefix](cmp-b-prefix.md)

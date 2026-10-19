@@ -17,8 +17,8 @@ Every sift-up executes at most one swap per level above its index.
 
 ## Proof depends on
 
-- [Heap Parent](../../../part-02/binary-heap/part-01/heap-parent.md)
-- [Heap Parent lt size](../../../part-02/binary-heap/part-01/heap-parent-lt-size.md)
+- [Heap Parent](../../../part-02/binary-heap/heap-parent.md)
+- [Heap Parent lt size](../../../part-02/binary-heap/heap-parent-lt-size.md)
 - [Log2 heap Parent add one](log2-heap-parent-add-one.md)
 
 ## Sources

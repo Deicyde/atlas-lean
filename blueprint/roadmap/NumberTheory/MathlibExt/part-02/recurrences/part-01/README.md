@@ -3,7 +3,7 @@ article_id: af_15e1384173b7096a71103afa
 navigation: transparent
 ---
 
-# Part 1 of 2
+# Alfred Fibonacci Determinant to Horadam Generalized Catalan Identity
 
 - [Alfred Fibonacci Determinant](alfred-consecutive-fibonacci-powers-dete.md)
 - [Brousseau Fibonacci Reciprocal](brousseau-fibonacci-reciprocal-sum.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_1fd5595c523e13e38d413eae
+navigation: module
 ---
 
 # Polynomial

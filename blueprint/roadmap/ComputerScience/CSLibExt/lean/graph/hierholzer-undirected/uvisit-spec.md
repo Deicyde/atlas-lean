@@ -20,15 +20,15 @@ removed edge.
 - [Udeg](udeg.md)
 - [Usym](usym.md)
 - [Uvisit](uvisit.md)
-- [Walk Edges](../hierholzer/part-01/walk-edges.md)
+- [Walk Edges](../hierholzer/walk-edges.md)
 
 ## Proof depends on
 
 - [Other End](other-end.md)
-- [Perm splice](../hierholzer/part-01/perm-splice.md)
+- [Perm splice](../hierholzer/perm-splice.md)
 - [Udeg erase](udeg-erase.md)
 - [Usym eq other End](usym-eq-other-end.md)
-- [Walk Edges append](../hierholzer/part-01/walk-edges-append.md)
+- [Walk Edges append](../hierholzer/walk-edges-append.md)
 
 ## Sources
 

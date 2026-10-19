@@ -1,5 +1,6 @@
 ---
 article_id: af_787b90ebe2ee0c7a449ff3ef
+navigation: module
 ---
 
 # Buchi Square Sequence Bound

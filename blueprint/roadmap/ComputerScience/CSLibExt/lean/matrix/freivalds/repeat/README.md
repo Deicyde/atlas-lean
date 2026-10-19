@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Repeat
 
 - [Freivalds Repeat](freivalds-repeat.md)

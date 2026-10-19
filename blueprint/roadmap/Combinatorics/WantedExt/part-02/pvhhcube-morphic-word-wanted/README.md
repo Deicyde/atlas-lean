@@ -1,5 +1,6 @@
 ---
 article_id: af_d1a40254b9e71dd321f02135
+navigation: module
 ---
 
 # PVHHCube Morphic Word

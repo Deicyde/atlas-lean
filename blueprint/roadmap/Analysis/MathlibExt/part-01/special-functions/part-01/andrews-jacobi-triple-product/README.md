@@ -1,5 +1,6 @@
 ---
 article_id: af_975a685510f366cf8134e624
+navigation: module
 ---
 
 # Andrews Jacobi Triple Product

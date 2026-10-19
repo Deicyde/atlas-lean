@@ -1,5 +1,6 @@
 ---
 article_id: af_d4af0276b441808b405387cf
+navigation: module
 ---
 
 # Part1 Ch3 Entry14 Lagrange Series

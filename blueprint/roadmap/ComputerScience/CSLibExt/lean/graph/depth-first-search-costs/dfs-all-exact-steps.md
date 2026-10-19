@@ -13,16 +13,16 @@ including repeated entries and self-loops.
 
 ## Depends on
 
-- [Traversal](../depth-first-search/part-01/traversal.md)
-- [Dfs All](../depth-first-search/part-02/dfs-all.md)
-- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Traversal](../depth-first-search/traversal.md)
+- [Dfs All](../depth-first-search/dfs-all.md)
+- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
-- [Dfs](../depth-first-search/part-01/dfs.md)
+- [Dfs](../depth-first-search/dfs.md)
 - [Dfs exact steps](dfs-exact-steps.md)
-- [Mem dfs All preorder](../depth-first-search/part-02/mem-dfs-all-preorder.md)
-- [Preorder nodup](../depth-first-search/part-01/preorder-nodup.md)
+- [Mem dfs All preorder](../depth-first-search/mem-dfs-all-preorder.md)
+- [Preorder nodup](../depth-first-search/preorder-nodup.md)
 
 ## Sources
 

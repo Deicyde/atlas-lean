@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Schur Siegel Smyth
 
 - [Absolute Trace one le wanted](absolute-trace-one-le-wanted.md)

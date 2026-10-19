@@ -1,4 +1,30 @@
+---
+navigation: module
+---
+
 # Leonardo P
 
-- [Part 1 of 2](part-01/README.md)
-- [Part 2 of 2](part-02/README.md)
+- [Leonardo PKSeq](leonardo-pkseq.md)
+- [Leonardo PK](leonardo-pk.md)
+- [H Seq Forward](h-seq-forward.md)
+- [H Seq Backward](h-seq-backward.md)
+- [H Seq Z](h-seq-z.md)
+- [Seq AZ](seq-az.md)
+- [Seq BZ](seq-bz.md)
+- [Companion Q](companion-q.md)
+- [Q Pow Entry](q-pow-entry.md)
+- [R Matrix](r-matrix.md)
+- [Theorem 2](leonardo-pk-eq.md)
+- [Theorem 3](sum-leonardo-pk.md)
+- [Theorem 4](sum-leonardo-pk-stride.md)
+- [Theorem 5](fibonacci-p-eq-seq-az-sub.md)
+- [Corollary 6](seq-az-eq-sum-fibonacci-p.md)
+- [Proposition 7](seq-az-recurrence.md)
+- [Proposition 7](seq-bz-recurrence.md)
+- [Proposition 8](seq-az-eq-seq-bz.md)
+- [Theorem 9](companion-q-pow-apply.md)
+- [Theorem 10](r-matrix-mul-companion-q-pow.md)
+- [Corollary 11](h-add-eq.md)
+- [Lemma 12](succ-mul-sum-fibonacci-p.md)
+- [Leonardo PKZ](leonardo-pkz.md)
+- [Theorem 13](leonardo-pk-honsberger.md)

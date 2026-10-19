@@ -1,5 +1,6 @@
 ---
 article_id: af_4b5230dbad708e91d81f8f6c
+navigation: module
 ---
 
 # Aronson Transform

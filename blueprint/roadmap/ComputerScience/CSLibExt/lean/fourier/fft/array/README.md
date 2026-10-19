@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Array
 
 - [Fft Array](fft-array.md)

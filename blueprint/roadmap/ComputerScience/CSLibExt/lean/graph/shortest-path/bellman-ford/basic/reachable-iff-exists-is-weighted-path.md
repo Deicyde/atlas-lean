@@ -15,15 +15,15 @@ Weighted edge-list paths characterize reachability in the weight-forgetting grap
 - [Edge](edge.md)
 - [Is Weighted Path](is-weighted-path.md)
 - [To Directed Adjacency](to-directed-adjacency.md)
-- [Reachable](../../../directed-adjacency-2/part-01/reachable.md)
+- [Reachable](../../../directed-adjacency-2/reachable.md)
 
 ## Proof depends on
 
 - [Edge to Directed Adjacency iff](edge-to-directed-adjacency-iff.md)
 - [Is Weighted Path walk](is-weighted-path-walk.md)
-- [Edge](../../../directed-adjacency-2/part-01/edge.md)
-- [Walk](../../../directed-adjacency-2/part-01/walk.md)
-- [Reachable iff exists walk](../../../directed-adjacency-2/part-01/reachable-iff-exists-walk.md)
+- [Edge](../../../directed-adjacency-2/edge.md)
+- [Walk](../../../directed-adjacency-2/walk.md)
+- [Reachable iff exists walk](../../../directed-adjacency-2/reachable-iff-exists-walk.md)
 
 ## Sources
 

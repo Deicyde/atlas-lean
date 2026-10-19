@@ -1,5 +1,6 @@
 ---
 article_id: af_9a89c7d24a90721941e67907
+navigation: module
 ---
 
 # Coprime Representative

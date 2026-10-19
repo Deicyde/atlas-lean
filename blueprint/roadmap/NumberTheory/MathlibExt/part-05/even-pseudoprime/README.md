@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Even Pseudoprime
 
 - [Is Even Pseudoprime](is-even-pseudoprime.md)

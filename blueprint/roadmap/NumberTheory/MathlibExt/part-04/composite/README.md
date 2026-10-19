@@ -1,5 +1,6 @@
 ---
 article_id: af_4fbb1ecd86eb86449672e533
+navigation: module
 ---
 
 # Composite

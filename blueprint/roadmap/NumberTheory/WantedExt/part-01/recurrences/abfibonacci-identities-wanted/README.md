@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # ABFibonacci Identities
 
 - [Fib AB](fib-ab.md)

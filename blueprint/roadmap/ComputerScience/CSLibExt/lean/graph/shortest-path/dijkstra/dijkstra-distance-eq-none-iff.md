@@ -12,15 +12,15 @@ An infinite output distance is equivalent to graph unreachability.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
 - [Dijkstra Cost](dijkstra-cost.md)
 - [Dijkstra Result](dijkstra-result.md)
-- [Reachable](../../directed-adjacency-2/part-01/reachable.md)
+- [Reachable](../../directed-adjacency-2/reachable.md)
 - [Dijkstra](dijkstra.md)
 
 ## Proof depends on
 
-- [Edge](../../directed-adjacency-2/part-01/edge.md)
+- [Edge](../../directed-adjacency-2/edge.md)
 - [Has Path Weight](has-path-weight.md)
 - [Path Weight](path-weight.md)
 - [Reachable iff exists has Path Weight](reachable-iff-exists-has-path-weight.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_470eb20515b0c91e29b83bf5
+navigation: module
 ---
 
 # Three Chromatic Zero Two Graph

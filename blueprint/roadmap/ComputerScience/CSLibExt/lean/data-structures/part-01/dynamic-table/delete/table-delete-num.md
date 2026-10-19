@@ -13,7 +13,7 @@ Deletion decrements the item count, with an empty table left at zero.
 
 ## Depends on
 
-- [Table](../basic/part-01/table.md)
+- [Table](../basic/table.md)
 - [Table Delete](table-delete.md)
 
 ## Sources

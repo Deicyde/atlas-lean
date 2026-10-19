@@ -1,5 +1,6 @@
 ---
 article_id: af_f32efc3357c359b3dee05b42
+navigation: module
 ---
 
 # Hardy Littlewood Prime Tuple

@@ -13,9 +13,9 @@ The deleted key is absent after deletion from an ordered tree.
 
 ## Depends on
 
-- [Mem](../../../part-03/red-black-tree/part-01/mem.md)
-- [Ordered](../../../part-03/red-black-tree/part-01/ordered.md)
-- [Tree](../../../part-03/red-black-tree/part-01/tree.md)
+- [Mem](../../../part-03/red-black-tree/mem.md)
+- [Ordered](../../../part-03/red-black-tree/ordered.md)
+- [Tree](../../../part-03/red-black-tree/tree.md)
 - [Delete](delete.md)
 
 ## Proof depends on

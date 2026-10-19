@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Distance Set](../../../MathlibExt/falconer-distance-set/part-01/distance-set.md)
+- [Distance Set](../../../MathlibExt/falconer-distance-set/distance-set.md)
 
 ## Sources
 

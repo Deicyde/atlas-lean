@@ -12,7 +12,7 @@ The total abstract event count is exactly `n * n` plus all adjacency entries.
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
 - [Dijkstra Cost](dijkstra-cost.md)
 - [Total](total.md)
 - [Dijkstra Result](dijkstra-result.md)

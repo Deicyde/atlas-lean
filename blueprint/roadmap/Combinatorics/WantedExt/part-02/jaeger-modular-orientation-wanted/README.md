@@ -1,5 +1,6 @@
 ---
 article_id: af_56df4389cc5318fffef43c8b
+navigation: module
 ---
 
 # Jaeger Modular Orientation

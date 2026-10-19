@@ -1,5 +1,6 @@
 ---
 article_id: af_937401125fd0ccfe004b8614
+navigation: module
 ---
 
 # Jacobi Theta Product

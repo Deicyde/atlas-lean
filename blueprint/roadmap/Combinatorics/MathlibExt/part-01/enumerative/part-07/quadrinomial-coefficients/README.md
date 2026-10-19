@@ -1,5 +1,6 @@
 ---
 article_id: af_39464df69486845f83a723d3
+navigation: module
 ---
 
 # Quadrinomial Coefficients

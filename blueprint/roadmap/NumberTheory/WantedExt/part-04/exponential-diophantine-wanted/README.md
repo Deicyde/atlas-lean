@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Exponential Diophantine
 
 - [Theorem 6](pow-add-pow-eq-sq.md)

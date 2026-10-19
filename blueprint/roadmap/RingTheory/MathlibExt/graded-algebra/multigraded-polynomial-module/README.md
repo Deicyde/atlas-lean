@@ -1,5 +1,6 @@
 ---
 article_id: af_987341c5165ce20681ee1274
+navigation: module
 ---
 
 # Multigraded Polynomial Module

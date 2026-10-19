@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Hanner Polytope
 
 - [Hanner Unit Segment](hanner-unit-segment.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_56969e5219ed93ba20e50cc7
+navigation: module
 ---
 
 # Finite Places Over

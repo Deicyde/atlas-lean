@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Basic
 
 - [CNFClause](cnfclause.md)

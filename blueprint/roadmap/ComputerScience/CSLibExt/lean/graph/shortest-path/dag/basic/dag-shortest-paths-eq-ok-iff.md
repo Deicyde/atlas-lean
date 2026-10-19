@@ -24,7 +24,7 @@ A successful validated-wrapper output is exactly the actual pass in its certifie
 
 ## Proof depends on
 
-- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
 - [Success is Topological Order](../../../topological-sort/success-is-topological-order.md)
 
 ## Sources

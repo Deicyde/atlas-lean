@@ -24,7 +24,7 @@ starts at a vertex reachable from `s`, the result is an Euler path from `s` to `
 - [Usym](usym.md)
 - [Uvisit](uvisit.md)
 - [Uvisit spec](uvisit-spec.md)
-- [Walk Edges](../hierholzer/part-01/walk-edges.md)
+- [Walk Edges](../hierholzer/walk-edges.md)
 
 ## Sources
 

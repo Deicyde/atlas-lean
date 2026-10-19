@@ -1,5 +1,6 @@
 ---
 article_id: af_795f9a7ea1ac05ad948d1907
+navigation: module
 ---
 
 # Curve Length

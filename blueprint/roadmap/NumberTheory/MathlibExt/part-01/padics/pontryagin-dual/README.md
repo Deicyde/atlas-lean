@@ -1,5 +1,6 @@
 ---
 article_id: af_fc3d92283065ba9476148976
+navigation: module
 ---
 
 # Pontryagin Dual

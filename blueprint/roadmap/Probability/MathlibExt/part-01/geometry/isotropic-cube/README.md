@@ -1,5 +1,6 @@
 ---
 article_id: af_ccf83e1a27c8a245a8a79e5b
+navigation: module
 ---
 
 # Isotropic Cube

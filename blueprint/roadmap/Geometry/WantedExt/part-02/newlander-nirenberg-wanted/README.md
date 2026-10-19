@@ -1,5 +1,6 @@
 ---
 article_id: af_01b89047737fe074766e5d34
+navigation: module
 ---
 
 # Newlander Nirenberg

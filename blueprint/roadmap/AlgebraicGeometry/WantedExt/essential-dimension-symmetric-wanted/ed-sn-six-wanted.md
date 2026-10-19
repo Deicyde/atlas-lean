@@ -11,7 +11,7 @@ Source: Buhler--Reichstein (1997), exact value `ed_ℂ(S₆) = 3`.
 
 ## Depends on
 
-- [Ed Sn](../../../FieldTheory/MathlibExt/essential-dimension-symmetric/part-02/ed-sn.md)
+- [Ed Sn](../../../FieldTheory/MathlibExt/essential-dimension-symmetric/ed-sn.md)
 
 ## Sources
 

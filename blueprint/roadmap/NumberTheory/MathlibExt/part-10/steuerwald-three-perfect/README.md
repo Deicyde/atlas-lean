@@ -1,5 +1,6 @@
 ---
 article_id: af_e8f91d81e7993e44962f5ba5
+navigation: module
 ---
 
 # Steuerwald Three Perfect

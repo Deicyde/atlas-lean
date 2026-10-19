@@ -1,5 +1,6 @@
 ---
 article_id: af_f01c93ca975ad1650d5fea24
+navigation: module
 ---
 
 # Manin Twist Char Two

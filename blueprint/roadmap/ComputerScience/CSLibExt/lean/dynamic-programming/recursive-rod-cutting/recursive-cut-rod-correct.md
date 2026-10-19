@@ -14,14 +14,14 @@ compositions. Negative prices do not create a discard option.
 
 ## Depends on
 
-- [Composition Revenue](../rod-cutting/part-01/composition-revenue.md)
+- [Composition Revenue](../rod-cutting/composition-revenue.md)
 - [Recursive Cut Rod](recursive-cut-rod.md)
 
 ## Proof depends on
 
-- [Composition Revenue append](../rod-cutting/part-01/composition-revenue-append.md)
-- [Composition Revenue single](../rod-cutting/part-01/composition-revenue-single.md)
-- [Composition Revenue zero](../rod-cutting/part-01/composition-revenue-zero.md)
+- [Composition Revenue append](../rod-cutting/composition-revenue-append.md)
+- [Composition Revenue single](../rod-cutting/composition-revenue-single.md)
+- [Composition Revenue zero](../rod-cutting/composition-revenue-zero.md)
 
 ## Sources
 

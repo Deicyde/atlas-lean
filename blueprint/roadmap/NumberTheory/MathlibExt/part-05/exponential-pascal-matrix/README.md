@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Exponential Pascal Matrix
 
 - [Exponential Pascal Type Series](exponential-pascal-type-series.md)

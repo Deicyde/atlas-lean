@@ -1,5 +1,6 @@
 ---
 article_id: af_8e77cd5b48d2b63025a5476f
+navigation: module
 ---
 
 # Staver Identity

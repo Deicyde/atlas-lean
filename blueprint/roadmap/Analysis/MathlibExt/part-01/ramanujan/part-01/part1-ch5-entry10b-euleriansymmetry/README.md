@@ -1,5 +1,6 @@
 ---
 article_id: af_bd0b655bd978eeb9379f12f5
+navigation: module
 ---
 
 # Part1 Ch5 Entry10b Euleriansymmetry

@@ -1,5 +1,6 @@
 ---
 article_id: af_03aaec1613179d2cf63745c7
+navigation: module
 ---
 
 # Curtis Hedlund Lyndon

@@ -1,5 +1,6 @@
 ---
 article_id: af_f3796eb2e328fe1605904651
+navigation: module
 ---
 
 # Triangle Area

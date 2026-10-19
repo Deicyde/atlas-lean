@@ -14,16 +14,16 @@ tree and is not the deleted key.
 
 ## Depends on
 
-- [BTree](../../btree-2/part-01/btree.md)
-- [Is BTree](../../btree-2/part-02/is-btree.md)
-- [Mem](../../btree-2/part-01/mem.md)
+- [BTree](../../btree-2/btree.md)
+- [Is BTree](../../btree-2/is-btree.md)
+- [Mem](../../btree-2/mem.md)
 - [Delete Rebuild](delete-rebuild.md)
 
 ## Proof depends on
 
-- [Ordered](../../btree-2/part-02/ordered.md)
-- [Flatten nodup](../../btree-2/part-01/flatten-nodup.md)
-- [Flatten](../../btree-2/part-01/flatten.md)
+- [Ordered](../../btree-2/ordered-2.md)
+- [Flatten nodup](../../btree-2/flatten-nodup.md)
+- [Flatten](../../btree-2/flatten.md)
 - [Flatten delete Rebuild](flatten-delete-rebuild.md)
 
 ## Sources

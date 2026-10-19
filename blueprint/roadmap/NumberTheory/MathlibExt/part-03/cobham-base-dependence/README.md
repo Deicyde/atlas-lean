@@ -1,5 +1,6 @@
 ---
 article_id: af_e0717542577499cd00b49f05
+navigation: module
 ---
 
 # Cobham Base Dependence

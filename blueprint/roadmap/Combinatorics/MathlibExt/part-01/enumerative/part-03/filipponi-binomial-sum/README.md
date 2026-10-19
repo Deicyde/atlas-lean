@@ -1,5 +1,6 @@
 ---
 article_id: af_2307273e5d9ba66b38643bba
+navigation: module
 ---
 
 # Filipponi Binomial Sum

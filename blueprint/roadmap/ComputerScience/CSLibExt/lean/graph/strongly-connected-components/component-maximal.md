@@ -12,13 +12,13 @@ Each returned block is the maximal mutual-reachability class of any one of its m
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
 - [Strongly Connected](strongly-connected.md)
 - [Components](components.md)
 
 ## Proof depends on
 
-- [Decreasing Finish All](../depth-first-search/part-02/decreasing-finish-all.md)
+- [Decreasing Finish All](../depth-first-search/decreasing-finish-all.md)
 - [Symm](symm.md)
 - [Trans](trans.md)
 - [Components pairwise disjoint](components-pairwise-disjoint.md)

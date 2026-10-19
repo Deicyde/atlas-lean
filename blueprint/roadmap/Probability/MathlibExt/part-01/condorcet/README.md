@@ -1,5 +1,6 @@
 ---
 article_id: af_3531a06439aafdc916212c09
+navigation: module
 ---
 
 # Condorcet

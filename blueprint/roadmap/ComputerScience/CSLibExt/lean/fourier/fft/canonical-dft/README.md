@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Canonical DFT
 
 - [Fft std Add Char neg one](fft-std-add-char-neg-one.md)

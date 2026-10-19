@@ -13,32 +13,32 @@ lean: Cslib.HindleyMilner.hasType_of_W_eq_some
 
 ## Depends on
 
-- [Ctx](../typing/part-01/ctx.md)
-- [Subst](../typing/part-01/subst.md)
-- [Expr](../typing/part-01/expr.md)
-- [Has Type](../typing/part-01/has-type.md)
-- [Ty](../typing/part-01/ty.md)
+- [Ctx](../typing/ctx.md)
+- [Subst](../typing/subst.md)
+- [Expr](../typing/expr.md)
+- [Has Type](../typing/has-type.md)
+- [Ty](../typing/ty.md)
 - [W](w.md)
-- [Subst](../../../unification/basic/part-01/subst.md)
+- [Subst](../../../unification/basic/subst.md)
 
 ## Proof depends on
 
-- [Lookup](../typing/part-01/lookup.md)
+- [Lookup](../typing/lookup.md)
 - [Let subst Ty](let-subst-ty.md)
-- [Substitution lemma](../typing/part-02/subst.md)
-- [Scheme](../typing/part-01/scheme.md)
+- [Substitution lemma](../typing/subst-2.md)
+- [Scheme](../typing/scheme.md)
 - [Bound Sup](bound-sup.md)
-- [Inst](../typing/part-01/inst.md)
-- [Subst Ty](../typing/part-01/subst-ty.md)
-- [Gen](../typing/part-01/gen.md)
-- [To Scheme](../typing/part-01/to-scheme.md)
-- [Equations](../../../unification/basic/part-01/equations.md)
-- [Comp](../../../unification/basic/part-01/comp.md)
-- [Term](../../../unification/basic/part-01/term.md)
-- [Subst](../../../unification/basic/part-01/subst-2.md)
-- [Unifies](../../../unification/basic/part-01/unifies.md)
-- [Soundness](../../../unification/basic/part-02/unifies-unify.md)
-- [Unify](../../../unification/basic/part-02/unify.md)
+- [Inst](../typing/inst.md)
+- [Subst Ty](../typing/subst-ty.md)
+- [Gen](../typing/gen.md)
+- [To Scheme](../typing/to-scheme.md)
+- [Equations](../../../unification/basic/equations.md)
+- [Comp](../../../unification/basic/comp.md)
+- [Term](../../../unification/basic/term.md)
+- [Subst](../../../unification/basic/subst-2.md)
+- [Unifies](../../../unification/basic/unifies.md)
+- [Soundness](../../../unification/basic/unifies-unify.md)
+- [Unify](../../../unification/basic/unify.md)
 
 ## Sources
 

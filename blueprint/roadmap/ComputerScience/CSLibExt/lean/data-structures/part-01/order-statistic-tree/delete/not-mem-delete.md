@@ -13,11 +13,11 @@ The deleted key is absent from the result.
 
 ## Depends on
 
-- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
-- [Ordered](../../../part-02/order-statistic-tree/part-01/ordered.md)
-- [Tree](../../../part-02/order-statistic-tree/part-01/tree.md)
+- [Mem](../../../part-02/binary-search-tree/mem.md)
+- [Ordered](../../../part-02/order-statistic-tree/ordered.md)
+- [Tree](../../../part-02/order-statistic-tree/tree.md)
 - [Delete](delete.md)
-- [Erase](../../../part-02/order-statistic-tree/part-01/erase.md)
+- [Erase](../../../part-02/order-statistic-tree/erase.md)
 
 ## Proof depends on
 

@@ -1,5 +1,6 @@
 ---
 article_id: af_7efcd4bb73a8f154b2d51ff7
+navigation: module
 ---
 
 # Artin Map Restriction

@@ -1,5 +1,6 @@
 ---
 article_id: af_27bacbfc83e8b05dfac2d169
+navigation: module
 ---
 
 # Quadratic

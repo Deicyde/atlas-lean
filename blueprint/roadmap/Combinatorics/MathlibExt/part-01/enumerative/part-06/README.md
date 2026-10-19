@@ -3,7 +3,7 @@ article_id: af_9ca22494844e5cb046f69ca7
 navigation: transparent
 ---
 
-# Part 6 of 9
+# Nontrivial1234 3412 Classes to Perfect Compositions
 
 - [Nontrivial1234 3412 Classes](card-nontrivial-1234-3412-classes.md)
 - [Octagonal Pyramidal Composition](octagonal-pyramidal-number-eq-compositio.md)

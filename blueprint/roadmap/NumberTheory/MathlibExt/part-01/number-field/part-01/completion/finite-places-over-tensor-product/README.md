@@ -1,5 +1,6 @@
 ---
 article_id: af_def2d0ad07e0c2b4867356bb
+navigation: module
 ---
 
 # Finite Places Over Tensor Product

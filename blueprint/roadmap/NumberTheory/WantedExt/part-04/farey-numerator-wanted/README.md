@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Farey Numerator
 
 - [Farey Numerator Count](farey-numerator-count.md)

@@ -16,11 +16,11 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Valuation](basic/part-01/is-valuation.md)
-- [Eval Form](basic/part-01/eval-form.md)
-- [Is Valuation language From](basic/part-01/is-valuation-language-from.md)
-- [Language From](basic/part-01/language-from.md)
-- [Language le of valuation](basic/part-01/language-le-of-valuation.md)
+- [Is Valuation](basic/is-valuation.md)
+- [Eval Form](basic/eval-form.md)
+- [Is Valuation language From](basic/is-valuation-language-from.md)
+- [Language From](basic/language-from.md)
+- [Language le of valuation](basic/language-le-of-valuation.md)
 
 ## Sources
 

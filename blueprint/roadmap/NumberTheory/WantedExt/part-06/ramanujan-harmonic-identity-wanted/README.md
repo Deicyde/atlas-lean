@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Ramanujan Harmonic Identity
 
 - [Corollary 1](sum-choose-sub-choose-mul-harmonic-succ.md)

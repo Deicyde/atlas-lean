@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # FFT
 
 - [Fft Split](fft-split.md)

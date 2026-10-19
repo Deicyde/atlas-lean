@@ -17,8 +17,8 @@ form.
 
 ## Proof depends on
 
-- [Is Reduced](../reduced/part-02/is-reduced.md)
-- [Is Unit Output](../reduced/part-01/is-unit-output.md)
+- [Is Reduced](../reduced/is-reduced.md)
+- [Is Unit Output](../reduced/is-unit-output.md)
 - [Cnf Grammar](cnf-grammar.md)
 - [Cnf Grammar is Chomsky Normal Form](cnf-grammar-is-chomsky-normal-form.md)
 - [Cnf Grammar language of reduced](cnf-grammar-language-of-reduced.md)
@@ -26,7 +26,7 @@ form.
 - [Eps Start Grammar](eps-start-grammar.md)
 - [Eps Start Grammar is Chomsky Normal Form](eps-start-grammar-is-chomsky-normal-form.md)
 - [Eps Start Grammar language](eps-start-grammar-language.md)
-- [Exists reduced grammar](../reduced/part-02/exists-reduced-grammar.md)
+- [Exists reduced grammar](../reduced/exists-reduced-grammar.md)
 
 ## Sources
 

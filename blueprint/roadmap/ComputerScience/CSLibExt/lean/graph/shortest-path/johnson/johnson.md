@@ -23,7 +23,7 @@ construction, scan, relaxation and decoding actions, not full RAM or bit complex
 - [Reachable Negative Cycle](../bellman-ford/basic/reachable-negative-cycle.md)
 - [Result](../bellman-ford/basic/result.md)
 - [Bellman Ford](../bellman-ford/correctness/bellman-ford.md)
-- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
 - [Dijkstra Cost](../dijkstra/dijkstra-cost.md)
 - [Total](../dijkstra/total.md)
 - [Dijkstra Result](../dijkstra/dijkstra-result.md)

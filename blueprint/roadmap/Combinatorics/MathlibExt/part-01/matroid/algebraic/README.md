@@ -1,5 +1,6 @@
 ---
 article_id: af_fb1b55332e5079be11dcb9c3
+navigation: module
 ---
 
 # Algebraic

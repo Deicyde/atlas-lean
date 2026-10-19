@@ -1,5 +1,6 @@
 ---
 article_id: af_bffa7a339466e5e7314e18e1
+navigation: module
 ---
 
 # BNomial Number Type3

@@ -1,5 +1,6 @@
 ---
 article_id: af_b864cd40068017f076eddd44
+navigation: module
 ---
 
 # Honsberger Fibonacci P

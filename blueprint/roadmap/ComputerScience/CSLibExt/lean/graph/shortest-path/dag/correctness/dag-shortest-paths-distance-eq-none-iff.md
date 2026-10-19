@@ -17,7 +17,7 @@ Successful-wrapper infinity denotes precisely canonical unreachability.
 - [To Directed Adjacency](../../bellman-ford/basic/to-directed-adjacency.md)
 - [Cost](../basic/cost.md)
 - [Dag Shortest Paths](../basic/dag-shortest-paths.md)
-- [Reachable](../../../directed-adjacency-2/part-01/reachable.md)
+- [Reachable](../../../directed-adjacency-2/reachable.md)
 
 ## Proof depends on
 

@@ -1,5 +1,6 @@
 ---
 article_id: af_71e59bc70da6cce9114dbebe
+navigation: module
 ---
 
 # Knuth Catalan Log Sq

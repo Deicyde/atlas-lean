@@ -1,5 +1,6 @@
 ---
 article_id: af_470dcd66ade1d9586436ef5e
+navigation: module
 ---
 
 # Intrinsic Isotropic Constant

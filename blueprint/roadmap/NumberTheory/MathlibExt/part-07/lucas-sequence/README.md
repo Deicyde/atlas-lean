@@ -1,5 +1,6 @@
 ---
 article_id: af_dc7b7a30bc3d9aeeb60c85fa
+navigation: module
 ---
 
 # Lucas Sequence

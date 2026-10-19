@@ -1,5 +1,6 @@
 ---
 article_id: af_187f5bccd11c2e35fe87a260
+navigation: module
 ---
 
 # Expected Cost

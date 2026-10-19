@@ -1,5 +1,6 @@
 ---
 article_id: af_ec8d50947ca3cb9564bbe4be
+navigation: module
 ---
 
 # Fubini Number

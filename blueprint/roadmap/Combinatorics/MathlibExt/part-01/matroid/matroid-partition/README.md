@@ -1,5 +1,6 @@
 ---
 article_id: af_9da9775c9b5cf871a82832df
+navigation: module
 ---
 
 # Matroid Partition

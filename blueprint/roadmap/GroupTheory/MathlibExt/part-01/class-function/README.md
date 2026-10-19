@@ -1,5 +1,6 @@
 ---
 article_id: af_90c76ee7e01b6ee4391b6719
+navigation: module
 ---
 
 # Class Function

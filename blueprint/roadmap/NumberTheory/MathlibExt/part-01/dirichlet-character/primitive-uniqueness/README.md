@@ -1,5 +1,6 @@
 ---
 article_id: af_b90c72f53ad2cf1bcc5281af
+navigation: module
 ---
 
 # Primitive Uniqueness

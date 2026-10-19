@@ -13,15 +13,15 @@ Decrease-key replaces exactly the selected occurrence in the represented multise
 
 ## Depends on
 
-- [Min Heap](../../../part-02/binary-heap/part-02/min-heap.md)
+- [Min Heap](../../../part-02/binary-heap/min-heap.md)
 - [Decrease Key](decrease-key.md)
-- [Elements](../../../part-02/binary-heap/part-02/elements.md)
+- [Elements](../../../part-02/binary-heap/elements.md)
 
 ## Proof depends on
 
 - [Decrease Key data](decrease-key-data.md)
-- [Sift Up](../../../part-02/binary-heap/part-01/sift-up.md)
-- [Sift Up multiset](../../../part-02/binary-heap/part-01/sift-up-multiset.md)
+- [Sift Up](../../../part-02/binary-heap/sift-up.md)
+- [Sift Up multiset](../../../part-02/binary-heap/sift-up-multiset.md)
 
 ## Sources
 

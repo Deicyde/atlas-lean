@@ -1,5 +1,6 @@
 ---
 article_id: af_7b00eff6fc264e2a323e91bb
+navigation: module
 ---
 
 # Multigraded Betti Resolution Invariance

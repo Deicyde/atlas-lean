@@ -1,5 +1,6 @@
 ---
 article_id: af_0741b3cca96423f874c00025
+navigation: module
 ---
 
 # Self Dual

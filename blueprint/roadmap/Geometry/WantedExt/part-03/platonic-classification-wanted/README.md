@@ -1,7 +1,16 @@
+---
+navigation: module
+---
+
 # Platonic Classification
+
+## Platonic Classification
 
 - [E](e.md)
 - [Convex Polytope](convex-polytope.md)
+
+## Convex Polytope
+
 - [To Set](to-set.md)
 - [Dim](dim.md)
 - [Is Full Dim](is-full-dim.md)
@@ -12,6 +21,9 @@
 - [Is Symmetry](is-symmetry.md)
 - [Is Regular](is-regular.md)
 - [Similar](similar.md)
+
+## Platonic Classification
+
 - [Regular Polytopes](regular-polytopes.md)
 - [Regular Similar](regular-similar.md)
 - [Platonic Count](platonic-count.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_d3812d418862dbfc23fe8fe8
+navigation: module
 ---
 
 # Sturm

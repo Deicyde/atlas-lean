@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Fibonacci Generating Functions
 
 - [Gibonacci Generating Value](gibonacci-generating-value.md)

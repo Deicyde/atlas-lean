@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Golod Shafarevich
 
 - [Generator Rank](generator-rank.md)

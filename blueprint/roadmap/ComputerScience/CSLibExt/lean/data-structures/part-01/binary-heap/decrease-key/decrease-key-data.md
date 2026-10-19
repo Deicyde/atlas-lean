@@ -13,9 +13,9 @@ The backing array is the selected replacement followed by canonical sift-up.
 
 ## Depends on
 
-- [Min Heap](../../../part-02/binary-heap/part-02/min-heap.md)
+- [Min Heap](../../../part-02/binary-heap/min-heap.md)
 - [Decrease Key](decrease-key.md)
-- [Sift Up](../../../part-02/binary-heap/part-01/sift-up.md)
+- [Sift Up](../../../part-02/binary-heap/sift-up.md)
 
 ## Sources
 

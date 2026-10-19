@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Counting Appearances Progressions
 
 - [Ones Diag Det](ones-diag-det.md)

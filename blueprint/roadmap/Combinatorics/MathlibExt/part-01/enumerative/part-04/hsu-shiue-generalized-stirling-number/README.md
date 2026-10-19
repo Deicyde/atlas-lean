@@ -1,5 +1,6 @@
 ---
 article_id: af_6ff2a0fb5fd7e65b52105673
+navigation: module
 ---
 
 # Hsu Shiue Generalized Stirling Number

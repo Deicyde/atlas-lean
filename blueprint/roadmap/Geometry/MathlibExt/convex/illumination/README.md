@@ -1,5 +1,6 @@
 ---
 article_id: af_0e686bbaab4d4d4e8437e707
+navigation: module
 ---
 
 # Illumination

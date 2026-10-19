@@ -1,5 +1,6 @@
 ---
 article_id: af_b9c9ad82657c707c706cc1fc
+navigation: module
 ---
 
 # Poly Bernoulli Duality

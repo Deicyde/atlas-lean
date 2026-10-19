@@ -1,5 +1,6 @@
 ---
 article_id: af_09956593d91be514335fa84f
+navigation: module
 ---
 
 # Landau Almost Prime Asymptotic

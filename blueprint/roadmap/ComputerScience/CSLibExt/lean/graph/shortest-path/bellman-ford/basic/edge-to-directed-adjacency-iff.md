@@ -14,7 +14,7 @@ The weight-forgetting graph contains exactly the endpoint pairs of input edges.
 
 - [Edge](edge.md)
 - [To Directed Adjacency](to-directed-adjacency.md)
-- [Edge](../../../directed-adjacency-2/part-01/edge.md)
+- [Edge](../../../directed-adjacency-2/edge.md)
 
 ## Sources
 

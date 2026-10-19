@@ -1,5 +1,6 @@
 ---
 article_id: af_6bb8049c949bf5798bb0c437
+navigation: module
 ---
 
 # Bender Product Coefficient

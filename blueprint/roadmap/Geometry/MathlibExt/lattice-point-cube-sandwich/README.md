@@ -1,5 +1,6 @@
 ---
 article_id: af_5314eab8ef315896eb2eec5c
+navigation: module
 ---
 
 # Lattice Point Cube Sandwich

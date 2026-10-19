@@ -1,5 +1,6 @@
 ---
 article_id: af_0a290c78348d72fe0ddf6ea2
+navigation: module
 ---
 
 # Brun Constant

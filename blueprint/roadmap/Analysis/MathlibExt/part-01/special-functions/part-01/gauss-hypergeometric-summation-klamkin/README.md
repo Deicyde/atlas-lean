@@ -1,5 +1,6 @@
 ---
 article_id: af_bc728d8becf56c2bd613d62f
+navigation: module
 ---
 
 # Gauss Hypergeometric Summation Klamkin

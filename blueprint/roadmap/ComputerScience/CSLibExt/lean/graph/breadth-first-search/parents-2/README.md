@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Parents
 
 - [Bfs With Parents ret](bfs-with-parents-ret.md)

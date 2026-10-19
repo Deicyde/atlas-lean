@@ -1,5 +1,6 @@
 ---
 article_id: af_0db544fd86dc26d98ba2ed1c
+navigation: module
 ---
 
 # Euler Lagrange

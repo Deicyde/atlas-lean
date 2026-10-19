@@ -1,5 +1,6 @@
 ---
 article_id: af_97160d64484df224d84672e9
+navigation: module
 ---
 
 # Steiner Ratio

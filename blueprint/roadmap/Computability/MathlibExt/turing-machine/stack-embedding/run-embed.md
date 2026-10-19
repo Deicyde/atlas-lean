@@ -18,13 +18,13 @@ the sub-machine on the image of `e` and is unchanged outside it.
 - [Embeds](embeds.md)
 - [Frame](frame.md)
 - [SEmb](semb.md)
-- [Run](../program/part-01/run.md)
+- [Run](../program/run.md)
 
 ## Proof depends on
 
 - [Map S](map-s.md)
 - [Step Aux map S](step-aux-map-s.md)
-- [Iter none](../program/part-01/iter-none.md)
+- [Iter none](../program/iter-none.md)
 
 ## Sources
 

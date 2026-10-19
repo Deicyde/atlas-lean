@@ -1,5 +1,6 @@
 ---
 article_id: af_a6069623e1cb6e48326fb4df
+navigation: module
 ---
 
 # Binomial Transform Generating Function

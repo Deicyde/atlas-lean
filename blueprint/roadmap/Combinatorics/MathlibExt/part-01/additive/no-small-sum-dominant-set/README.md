@@ -1,5 +1,6 @@
 ---
 article_id: af_3e9d03ba8bda8b14f6e78d6b
+navigation: module
 ---
 
 # No Small Sum Dominant Set

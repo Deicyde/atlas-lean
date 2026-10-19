@@ -1,5 +1,6 @@
 ---
 article_id: af_3ca1f9b2cb9ad76182da12ba
+navigation: module
 ---
 
 # Epsilon Light Subset

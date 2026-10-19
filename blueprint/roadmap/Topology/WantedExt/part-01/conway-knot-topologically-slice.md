@@ -11,8 +11,8 @@ Source: Freedman, *The topology of four-dimensional manifolds*, J. Diff. Geom. 1
 
 ## Depends on
 
-- [Topologically slice (PL knot version)](conway-knot-shared/part-02/topologically-slice.md)
-- [Conway Knot](conway-knot-shared/part-02/conway-knot.md)
+- [Topologically slice (PL knot version)](conway-knot-shared/topologically-slice-2.md)
+- [Conway Knot](conway-knot-shared/conway-knot.md)
 
 ## Sources
 

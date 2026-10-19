@@ -3,7 +3,7 @@ article_id: af_bff817f99d72170c6d2dd42c
 navigation: transparent
 ---
 
-# Part 4 of 4
+# Part1 Ch9 Entry2 to Part1 Ch9 Entry8 Arcsin
 
 - [Part1 Ch9 Entry2](ramanujan-part1-ch9-entry2.md)
 - [Part1 Ch9 Entry20 Piseries1](ramanujan-part1-ch9-entry20-piseries1.md)

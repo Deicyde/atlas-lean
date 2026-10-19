@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Rectangular Peg Problem
 
 - [R](r.md)

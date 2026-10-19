@@ -3,7 +3,7 @@ article_id: af_1833778b0d8b00331b0c2228
 navigation: transparent
 ---
 
-# Part 5 of 8
+# Hardy Littlewood Prime Tuple Wanted to Odd Greedy Expansion
 
 - [Hardy Littlewood Prime Tuple Wanted](hardy-littlewood-prime-tuple-conjecture.md)
 - [Harmonic Valuation](harmonic-valuation-wanted/README.md)

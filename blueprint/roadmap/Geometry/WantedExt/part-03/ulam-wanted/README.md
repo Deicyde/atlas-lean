@@ -1,5 +1,6 @@
 ---
 article_id: af_d77142e36b204fda0626fd93
+navigation: module
 ---
 
 # Ulam

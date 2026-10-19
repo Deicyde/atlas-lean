@@ -1,5 +1,6 @@
 ---
 article_id: af_10fbf5adacf682d6491282e1
+navigation: module
 ---
 
 # Riordan Number

@@ -1,5 +1,6 @@
 ---
 article_id: af_d9040b974246a896f22cba9a
+navigation: module
 ---
 
 # Telescopic Sequence

@@ -1,5 +1,6 @@
 ---
 article_id: af_e5aabf4485a3bc5b797bb039
+navigation: module
 ---
 
 # Residue Class Psi

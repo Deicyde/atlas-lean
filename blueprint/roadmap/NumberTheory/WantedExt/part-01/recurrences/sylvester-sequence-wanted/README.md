@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Sylvester Sequence
 
 - [Sylvester Number](sylvester-number.md)

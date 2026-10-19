@@ -1,5 +1,6 @@
 ---
 article_id: af_fb83a53ffdcb97af752bd14b
+navigation: module
 ---
 
 # Optimal Moebius

@@ -1,5 +1,6 @@
 ---
 article_id: af_d35ac84f7217fad7b2e21cfc
+navigation: module
 ---
 
 # Part1 Ch7 Entry10 Zeta2

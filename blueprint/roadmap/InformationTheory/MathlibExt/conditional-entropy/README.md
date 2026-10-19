@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Conditional Entropy
 
 - [Quantized Conditional Entropy](quantized-conditional-entropy.md)

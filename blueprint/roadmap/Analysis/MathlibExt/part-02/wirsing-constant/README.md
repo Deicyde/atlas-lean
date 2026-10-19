@@ -1,5 +1,6 @@
 ---
 article_id: af_4cd6d7f501d8f970e7bfad40
+navigation: module
 ---
 
 # Wirsing Constant

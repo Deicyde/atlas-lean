@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Local Global Apollonian Circle Packings
 
 - [General Linear Group Action](general-linear-group-action.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_f9c361cf18ef3055ed272afd
+navigation: module
 ---
 
 # Factorial Ratio

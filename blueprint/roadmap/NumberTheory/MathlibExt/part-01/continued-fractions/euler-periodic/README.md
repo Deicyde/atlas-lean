@@ -1,5 +1,6 @@
 ---
 article_id: af_cf6dd814176d8416e9b4dede
+navigation: module
 ---
 
 # Euler Periodic

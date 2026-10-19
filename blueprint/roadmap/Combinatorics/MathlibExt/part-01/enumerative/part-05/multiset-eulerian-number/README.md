@@ -1,5 +1,6 @@
 ---
 article_id: af_8343b36b91954e60fd038262
+navigation: module
 ---
 
 # Multiset Eulerian Number

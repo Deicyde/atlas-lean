@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Bernoulli Second Kind
 
 - [Bernoulli Second Power Series](bernoulli-second-power-series.md)

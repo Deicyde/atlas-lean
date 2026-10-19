@@ -1,5 +1,6 @@
 ---
 article_id: af_20d907479aee702ceeacf5cc
+navigation: module
 ---
 
 # Lyndon Word

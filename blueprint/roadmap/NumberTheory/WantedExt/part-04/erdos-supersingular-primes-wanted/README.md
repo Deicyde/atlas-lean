@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Erdos Supersingular Primes
 
 - [Solution](solution.md)

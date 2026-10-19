@@ -1,5 +1,6 @@
 ---
 article_id: af_93605b02ab835bfc3ae86320
+navigation: module
 ---
 
 # Quotient To Ray Class

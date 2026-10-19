@@ -1,5 +1,6 @@
 ---
 article_id: af_dcc05c072a40a19739b9df42
+navigation: module
 ---
 
 # Part1 Ch3 Section8 Example1 Summable

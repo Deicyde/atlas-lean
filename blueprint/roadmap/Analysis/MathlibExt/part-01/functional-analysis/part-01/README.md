@@ -3,7 +3,7 @@ article_id: af_60862719f608e4d4fa84bd65
 navigation: transparent
 ---
 
-# Part 1 of 2
+# Banach Limit to Milman Pettis
 
 - [Banach Limit](banach-limit.md)
 - [Banach Saks](banach-saks.md)

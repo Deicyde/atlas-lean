@@ -15,12 +15,12 @@ A concrete weighted path gives the canonical walk of the same edge length.
 - [Edge](edge.md)
 - [Is Weighted Path](is-weighted-path.md)
 - [To Directed Adjacency](to-directed-adjacency.md)
-- [Walk](../../../directed-adjacency-2/part-01/walk.md)
+- [Walk](../../../directed-adjacency-2/walk.md)
 
 ## Proof depends on
 
 - [Edge to Directed Adjacency iff](edge-to-directed-adjacency-iff.md)
-- [Edge](../../../directed-adjacency-2/part-01/edge.md)
+- [Edge](../../../directed-adjacency-2/edge.md)
 
 ## Sources
 

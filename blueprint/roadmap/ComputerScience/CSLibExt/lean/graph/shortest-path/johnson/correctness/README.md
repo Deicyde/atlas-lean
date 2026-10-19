@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Correctness
 
 - [Johnson eq none iff](johnson-eq-none-iff.md)

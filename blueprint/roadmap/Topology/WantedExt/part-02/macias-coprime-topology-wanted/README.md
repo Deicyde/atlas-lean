@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Macias Coprime Topology
 
 - [Coprime Set](coprime-set.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_4ddeb9725eac34c101b895ea
+navigation: module
 ---
 
 # QRWhitney Numbers

@@ -1,5 +1,6 @@
 ---
 article_id: af_aa9eed863e1f7104eeaece61
+navigation: module
 ---
 
 # Fatou Julia

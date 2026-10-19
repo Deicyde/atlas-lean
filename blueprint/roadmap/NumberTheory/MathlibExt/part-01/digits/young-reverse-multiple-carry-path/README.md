@@ -1,5 +1,6 @@
 ---
 article_id: af_10f2721885ab0e295a6b743b
+navigation: module
 ---
 
 # Young Reverse Multiple Carry Path

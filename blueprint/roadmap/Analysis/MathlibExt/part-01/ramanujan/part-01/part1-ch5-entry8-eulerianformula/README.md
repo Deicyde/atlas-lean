@@ -1,5 +1,6 @@
 ---
 article_id: af_b743905d5209a593c22192a2
+navigation: module
 ---
 
 # Part1 Ch5 Entry8 Eulerianformula

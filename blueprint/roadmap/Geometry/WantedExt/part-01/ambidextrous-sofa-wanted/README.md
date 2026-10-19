@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Ambidextrous Sofa
 
 - [Hammersley upper](hammersley-upper.md)

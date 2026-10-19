@@ -1,5 +1,6 @@
 ---
 article_id: af_a2d37bb0b1fb6ed37196cf80
+navigation: module
 ---
 
 # Continuum Limsup Constant

@@ -1,5 +1,6 @@
 ---
 article_id: af_ce5af656d39b72e08a35704c
+navigation: module
 ---
 
 # Cubic Recurrence Discriminant

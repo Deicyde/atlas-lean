@@ -1,5 +1,6 @@
 ---
 article_id: af_5423cc4f4f47ab2eb92de070
+navigation: module
 ---
 
 # Cubic Residue Symbol

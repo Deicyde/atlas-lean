@@ -1,5 +1,6 @@
 ---
 article_id: af_93e78a0fc66f0ee37c750a54
+navigation: module
 ---
 
 # Expander

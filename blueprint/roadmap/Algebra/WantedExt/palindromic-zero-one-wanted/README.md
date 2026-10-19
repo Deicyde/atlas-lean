@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Palindromic Zero One
 
 - [Is Reciprocal Poly](is-reciprocal-poly.md)

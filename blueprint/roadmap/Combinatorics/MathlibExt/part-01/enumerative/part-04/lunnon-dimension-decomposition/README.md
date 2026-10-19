@@ -1,5 +1,6 @@
 ---
 article_id: af_f0a4307c4dfd90f0c3546bbe
+navigation: module
 ---
 
 # Lunnon Dimension Decomposition

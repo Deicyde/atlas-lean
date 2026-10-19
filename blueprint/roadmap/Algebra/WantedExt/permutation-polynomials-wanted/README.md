@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Permutation Polynomials
 
 - [Sum zmod pow eq ite](sum-zmod-pow-eq-ite.md)

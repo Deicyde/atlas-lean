@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Cost
 
 - [Fft Split time](fft-split-time.md)

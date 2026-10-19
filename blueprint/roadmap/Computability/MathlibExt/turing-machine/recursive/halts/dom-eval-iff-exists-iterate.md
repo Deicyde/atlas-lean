@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists iterate eq of reaches](../to-tm2/part-02/exists-iterate-eq-of-reaches.md)
+- [Exists iterate eq of reaches](../to-tm2/exists-iterate-eq-of-reaches.md)
 
 ## Sources
 

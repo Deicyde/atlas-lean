@@ -1,5 +1,6 @@
 ---
 article_id: af_76ab3bc85f64e0e06ce761fa
+navigation: module
 ---
 
 # Radial Majorant

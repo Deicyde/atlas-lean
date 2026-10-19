@@ -1,5 +1,6 @@
 ---
 article_id: af_b5927b51614899ad924d9c43
+navigation: module
 ---
 
 # Gamma

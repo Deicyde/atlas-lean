@@ -1,5 +1,6 @@
 ---
 article_id: af_8d20a0a6f632b4430ef3253f
+navigation: module
 ---
 
 # Bounded Self Adjoint Spectral

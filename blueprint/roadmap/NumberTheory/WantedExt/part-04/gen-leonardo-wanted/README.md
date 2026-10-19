@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Gen Leonardo
 
 - [Gen Leonardo](gen-leonardo.md)

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Erase Edge
 
 - [Erase Edge](erase-edge.md)

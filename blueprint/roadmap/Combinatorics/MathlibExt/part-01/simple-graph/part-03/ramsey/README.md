@@ -1,5 +1,6 @@
 ---
 article_id: af_039b7076eb7d31bc878bfe3c
+navigation: module
 ---
 
 # Ramsey

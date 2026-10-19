@@ -1,5 +1,6 @@
 ---
 article_id: af_39a02fe9cc828e4d02800084
+navigation: module
 ---
 
 # Maximal Unramified

@@ -1,5 +1,6 @@
 ---
 article_id: af_9ba0a6ff6b2a11d423a6b195
+navigation: module
 ---
 
 # Konig Matching Cover

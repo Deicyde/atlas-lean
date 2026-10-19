@@ -1,10 +1,16 @@
 ---
 article_id: af_fd92390b825a1688edfa22a5
+navigation: module
 ---
 
 # Overpartition
 
+## Nat
+
 - [Overpartition](overpartition.md)
+
+## Overpartition
+
 - [Is Overlined](is-overlined.md)
 - [Is Overlined iff](is-overlined-iff.md)
 - [Is Overlined mem parts](is-overlined-mem-parts.md)

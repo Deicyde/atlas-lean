@@ -1,5 +1,6 @@
 ---
 article_id: af_f600cd9057a0c178515d1209
+navigation: module
 ---
 
 # Newton Method

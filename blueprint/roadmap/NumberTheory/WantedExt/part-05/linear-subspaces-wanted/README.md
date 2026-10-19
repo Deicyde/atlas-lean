@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Linear Subspaces
 
 - [Dist Lines](dist-lines.md)

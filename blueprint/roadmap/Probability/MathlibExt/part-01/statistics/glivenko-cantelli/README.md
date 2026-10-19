@@ -1,5 +1,6 @@
 ---
 article_id: af_469f95cd85d62eab5eb35a1f
+navigation: module
 ---
 
 # Glivenko Cantelli

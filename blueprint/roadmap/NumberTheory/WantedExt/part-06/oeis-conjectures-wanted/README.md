@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Oeis Conjectures
 
 - [Avoid ZZ1 Z](avoid-zz1-z.md)

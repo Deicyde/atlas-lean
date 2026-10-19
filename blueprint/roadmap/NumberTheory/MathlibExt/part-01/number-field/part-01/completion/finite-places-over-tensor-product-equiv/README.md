@@ -1,5 +1,6 @@
 ---
 article_id: af_900437be9936ce867e275aec
+navigation: module
 ---
 
 # Finite Places Over Tensor Product Equiv

@@ -25,7 +25,7 @@ Successful Johnson executions have exactly the selected construction, scan and d
 - [Bellman Ford](../../bellman-ford/correctness/bellman-ford.md)
 - [Bellman Ford cycle Witness Steps eq zero](../../bellman-ford/costs/bellman-ford-cycle-witness-steps-eq-zero.md)
 - [Bellman Ford relaxation Checks eq mul](../../bellman-ford/costs/bellman-ford-relaxation-checks-eq-mul.md)
-- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
 - [Dijkstra Cost](../../dijkstra/dijkstra-cost.md)
 - [Total](../../dijkstra/total.md)
 - [Dijkstra Result](../../dijkstra/dijkstra-result.md)

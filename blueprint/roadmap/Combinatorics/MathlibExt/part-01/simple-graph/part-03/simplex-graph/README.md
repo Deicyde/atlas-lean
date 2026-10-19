@@ -1,5 +1,6 @@
 ---
 article_id: af_71f9738dd79da8b8dab210e9
+navigation: module
 ---
 
 # Simplex Graph

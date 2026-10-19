@@ -14,11 +14,11 @@ Child selection compares values exactly when the right child exists.
 ## Depends on
 
 - [Timed Smaller Child](timed-smaller-child.md)
-- [Heap Right](../../../part-02/binary-heap/part-01/heap-right.md)
+- [Heap Right](../../../part-02/binary-heap/heap-right.md)
 
 ## Proof depends on
 
-- [Heap Left](../../../part-02/binary-heap/part-01/heap-left.md)
+- [Heap Left](../../../part-02/binary-heap/heap-left.md)
 
 ## Sources
 

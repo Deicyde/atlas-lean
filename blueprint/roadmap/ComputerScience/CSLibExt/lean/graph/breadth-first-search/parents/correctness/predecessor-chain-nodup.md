@@ -14,7 +14,7 @@ Every source-to-target chain in the saved predecessor relation is simple.
 
 - [BFSForest](../internal/bfsforest.md)
 - [Bfs With Parents](../internal/bfs-with-parents.md)
-- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
 
 ## Proof depends on
 
@@ -23,8 +23,8 @@ Every source-to-target chain in the saved predecessor relation is simple.
 - [Bfs With Parents ret](../../parents-2/bfs-with-parents-ret.md)
 - [Distance present iff reachable](../../../breadth-first-search-2/distance-present-iff-reachable.md)
 - [Predecessor edge](../../parents-2/predecessor-edge.md)
-- [Edge](../../../directed-adjacency-2/part-01/edge.md)
-- [Reachable](../../../directed-adjacency-2/part-01/reachable.md)
+- [Edge](../../../directed-adjacency-2/edge.md)
+- [Reachable](../../../directed-adjacency-2/reachable.md)
 - [Contents](../../../../data-structures/part-01/queue/semantics/contents.md)
 - [Contents enqueue](../../../../data-structures/part-01/queue/semantics/contents-enqueue.md)
 - [Contents eq cons of dequeue? eq some](../../../../data-structures/part-01/queue/semantics/contents-eq-cons-of-dequeue-eq-some.md)

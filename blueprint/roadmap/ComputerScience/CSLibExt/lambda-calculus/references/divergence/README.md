@@ -1,4 +1,10 @@
+---
+navigation: module
+---
+
 # Divergence
+
+## Knot
 
 - [Id U](id-u.md)
 - [Body](body.md)
@@ -9,6 +15,9 @@
 - [Knot prefix](knot-prefix.md)
 - [Knot cycle](knot-cycle.md)
 - [Reachable](reachable.md)
+
+## References
+
 - [Knot has Type](knot-has-type.md)
 - [Knot diverges](knot-diverges.md)
 - [Knot runs forever](knot-runs-forever.md)

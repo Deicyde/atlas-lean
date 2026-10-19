@@ -1,4 +1,10 @@
+---
+navigation: module
+---
+
 # Imaginary Quadratic Discriminant
+
+## Imaginary Quadratic Discriminant
 
 - [Is Imaginary Quadratic Discriminant](is-imaginary-quadratic-discriminant.md)
 - [Is Fundamental Imaginary Quadratic Discriminant](is-fundamental-imaginary-quadratic-discr.md)
@@ -15,6 +21,9 @@
 - [Is Fundamental Imaginary Quadratic Discriminant mk](is-fundamental-imaginary-quadratic-discr-3.md)
 - [Is Fundamental Imaginary Quadratic Discriminant is Fundamental Discriminant](is-fundamental-imaginary-quadratic-discr-4.md)
 - [Is Fundamental Imaginary Quadratic Discriminant is Imaginary](is-fundamental-imaginary-quadratic-discr-5.md)
+
+## Imaginary Quadratic Discriminant Decomposition
+
 - [Is Fundamental](is-fundamental.md)
 - [U ge one](u-ge-one.md)
 - [Prop eq](prop-eq.md)

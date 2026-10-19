@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Signed Binary Sum
 
 - [Is Signed Pow Two Sum](is-signed-pow-two-sum.md)

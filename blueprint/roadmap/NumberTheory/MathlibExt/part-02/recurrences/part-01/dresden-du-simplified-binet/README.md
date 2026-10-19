@@ -1,5 +1,6 @@
 ---
 article_id: af_9f5d50c3e8ef5617e9b78dfa
+navigation: module
 ---
 
 # Dresden Du Simplified Binet

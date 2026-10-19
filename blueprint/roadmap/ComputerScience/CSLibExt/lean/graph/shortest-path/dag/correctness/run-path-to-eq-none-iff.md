@@ -30,8 +30,8 @@ Predecessor extraction fails exactly at infinite estimates.
 - [Run predecessor spec](../basic/run-predecessor-spec.md)
 - [Run source](../basic/run-source.md)
 - [Run source distance](../basic/run-source-distance.md)
-- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
-- [Edge](../../../directed-adjacency-2/part-01/edge.md)
+- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
+- [Edge](../../../directed-adjacency-2/edge.md)
 
 ## Sources
 

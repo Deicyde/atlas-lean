@@ -1,5 +1,6 @@
 ---
 article_id: af_dc7bfdfdeb161015d118a0bf
+navigation: module
 ---
 
 # Choose Factorization

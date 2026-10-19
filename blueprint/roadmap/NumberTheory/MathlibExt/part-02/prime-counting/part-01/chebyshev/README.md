@@ -1,5 +1,6 @@
 ---
 article_id: af_a0b481a68ae9925e89ea5f47
+navigation: module
 ---
 
 # Chebyshev

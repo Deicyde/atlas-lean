@@ -1,5 +1,6 @@
 ---
 article_id: af_0e73bf40821faabb4df8eae5
+navigation: module
 ---
 
 # Partition Number Array

@@ -1,5 +1,6 @@
 ---
 article_id: af_552d72acfa5aa88cbe29bff1
+navigation: module
 ---
 
 # Counting lattice points

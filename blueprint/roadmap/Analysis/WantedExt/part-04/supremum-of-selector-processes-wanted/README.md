@@ -1,5 +1,6 @@
 ---
 article_id: af_c0cad808a51459d61fbbd1ac
+navigation: module
 ---
 
 # Supremum Of Selector Processes

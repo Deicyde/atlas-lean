@@ -1,5 +1,6 @@
 ---
 article_id: af_cb392067ef5503958a74a7e5
+navigation: module
 ---
 
 # Interval Scheduling

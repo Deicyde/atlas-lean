@@ -1,5 +1,6 @@
 ---
 article_id: af_51f4c5db94ffa07c703a61b7
+navigation: module
 ---
 
 # Part1 Ch3 Entry1 Corollary1 Binomial Series

@@ -1,5 +1,6 @@
 ---
 article_id: af_d933b8ed7bc887c362d0cbec
+navigation: module
 ---
 
 # Triangularization

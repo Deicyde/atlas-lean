@@ -1,5 +1,6 @@
 ---
 article_id: af_f81b3a2b8c43c10564f60739
+navigation: module
 ---
 
 # Banach Alaoglu

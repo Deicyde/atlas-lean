@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Domination
 
 - [Is Dominating](is-dominating.md)

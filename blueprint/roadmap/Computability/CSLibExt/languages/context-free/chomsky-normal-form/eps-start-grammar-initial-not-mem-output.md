@@ -17,9 +17,9 @@ of the fresh-start grammar.
 
 ## Proof depends on
 
-- [Map Rule](../basic/part-01/map-rule.md)
-- [Map Rule injective](../basic/part-01/map-rule-injective.md)
-- [Map Symbol](../basic/part-01/map-symbol.md)
+- [Map Rule](../basic/map-rule.md)
+- [Map Rule injective](../basic/map-rule-injective.md)
+- [Map Symbol](../basic/map-symbol.md)
 
 ## Sources
 

@@ -1,4 +1,35 @@
+---
+navigation: module
+---
+
 # Essential Dimension Symmetric
 
-- [Part 1 of 2](part-01/README.md)
-- [Part 2 of 2](part-02/README.md)
+- [Roots Field](roots-field.md)
+- [Root](root.md)
+- [Coeff](coeff.md)
+- [General Base Field](general-base-field.md)
+- [Coeff Elem](coeff-elem.md)
+- [Root injective](root-injective.md)
+- [Algebraic Independent esymm](algebraic-independent-esymm.md)
+- [Algebraic Independent map](algebraic-independent-map.md)
+- [Algebraic Independent coeff](algebraic-independent-coeff.md)
+- [Algebraic Independent root](algebraic-independent-root.md)
+- [Algebra Map mem adjoin roots](algebra-map-mem-adjoin-roots.md)
+- [Is Algebraic adjoin roots](is-algebraic-adjoin-roots.md)
+- [Trdeg roots Field](trdeg-roots-field.md)
+- [Trans Deg Nat](trans-deg-nat.md)
+- [Algebra Map esymm](algebra-map-esymm.md)
+- [Coeff Nat](coeff-nat.md)
+- [General Polynomial](general-polynomial.md)
+- [Is Coprime X sub C of ne](is-coprime-x-sub-c-of-ne.md)
+- [Separable prod roots](separable-prod-roots.md)
+- [Adjoin roots eq top](adjoin-roots-eq-top.md)
+- [Root mem general Polynomial roots](root-mem-general-polynomial-roots.md)
+- [Trans Deg Nat general Base Field](trans-deg-nat-general-base-field.md)
+- [Is Descent](is-descent.md)
+- [Restrict Scalars adjoin general Polynomial](restrict-scalars-adjoin-general-polynomi.md)
+- [Is Descent general Base Field](is-descent-general-base-field.md)
+- [Ed Sn](ed-sn.md)
+- [Ed Sn le](ed-sn-le.md)
+- [Ess Dim Ratio](ess-dim-ratio.md)
+- [Ess Dim Ratio le one](ess-dim-ratio-le-one.md)

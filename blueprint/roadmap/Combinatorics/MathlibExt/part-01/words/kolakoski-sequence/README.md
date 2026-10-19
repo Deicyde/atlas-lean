@@ -1,5 +1,6 @@
 ---
 article_id: af_8b38ed5cad62555881b22932
+navigation: module
 ---
 
 # Kolakoski Sequence

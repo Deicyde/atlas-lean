@@ -1,5 +1,6 @@
 ---
 article_id: af_3f0a44b7b76de7a87970a93e
+navigation: module
 ---
 
 # Colorful Caratheodory

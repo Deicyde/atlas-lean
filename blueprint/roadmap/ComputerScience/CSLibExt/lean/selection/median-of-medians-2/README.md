@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Median Of Medians
 
 - [Median Of Medians](median-of-medians.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_49cf8821aa8f90fbd3782f87
+navigation: module
 ---
 
 # BAry Binomial Symmetry Pascal

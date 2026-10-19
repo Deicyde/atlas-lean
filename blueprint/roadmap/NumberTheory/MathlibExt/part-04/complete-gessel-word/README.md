@@ -1,5 +1,6 @@
 ---
 article_id: af_d8a5e3b3585c0d39ab7183a3
+navigation: module
 ---
 
 # Complete Gessel Word

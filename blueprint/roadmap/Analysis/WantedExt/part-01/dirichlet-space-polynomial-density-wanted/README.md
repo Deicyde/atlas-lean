@@ -1,5 +1,6 @@
 ---
 article_id: af_8fe76eecd359cf20e0a471bc
+navigation: module
 ---
 
 # Dirichlet Space Polynomial Density

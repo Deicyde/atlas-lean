@@ -1,5 +1,6 @@
 ---
 article_id: af_82430e5688fa2eb25b3d84f0
+navigation: module
 ---
 
 # Part1 Ch7 Entry9 Bernoulligrowth

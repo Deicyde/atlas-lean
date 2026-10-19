@@ -1,5 +1,6 @@
 ---
 article_id: af_f904c64c725f5afa7156de22
+navigation: module
 ---
 
 # Fourier Laplace

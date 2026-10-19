@@ -1,5 +1,6 @@
 ---
 article_id: af_eeb15875b41d625b520f065c
+navigation: module
 ---
 
 # Schnirelmann

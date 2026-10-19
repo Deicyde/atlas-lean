@@ -1,5 +1,6 @@
 ---
 article_id: af_9f12b3255b62476f271416a1
+navigation: module
 ---
 
 # Hamming Ball

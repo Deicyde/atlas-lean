@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Gauss Wantzel
 
 - [Is Constructible](is-constructible.md)

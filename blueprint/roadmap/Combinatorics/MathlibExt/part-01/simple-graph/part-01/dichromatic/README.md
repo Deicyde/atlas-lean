@@ -1,5 +1,6 @@
 ---
 article_id: af_49ed3e541549120e538d0af3
+navigation: module
 ---
 
 # Dichromatic

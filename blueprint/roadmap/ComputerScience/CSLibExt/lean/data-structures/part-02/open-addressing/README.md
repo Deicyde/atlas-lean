@@ -1,8 +1,35 @@
 ---
 article_id: af_4b2028f7cda841e391a4349c
+navigation: module
 ---
 
 # Open Addressing
 
-- [Part 1 of 2](part-01/README.md)
-- [Part 2 of 2](part-02/README.md)
+## Lean
+
+- [Open Addressing](open-addressing.md)
+
+## Open Addressing
+
+- [Linear Probe](linear-probe.md)
+- [Double Hash Probe](double-hash-probe.md)
+- [Empty](empty.md)
+- [Lookup Aux](lookup-aux.md)
+- [Lookup](lookup.md)
+- [Insert Aux](insert-aux.md)
+- [Insert](insert.md)
+- [Valid](valid.md)
+- [Stored](stored.md)
+- [Valid empty](valid-empty.md)
+- [Lookup empty](lookup-empty.md)
+- [Lookup insert](lookup-insert.md)
+- [Valid insert](valid-insert.md)
+- [Stored of lookup eq some](stored-of-lookup-eq-some.md)
+- [Lookup eq none of not stored](lookup-eq-none-of-not-stored.md)
+- [Lookup is Some of stored](lookup-is-some-of-stored.md)
+- [Lookup is Some iff](lookup-is-some-iff.md)
+- [Stored unique](stored-unique.md)
+- [Lookup eq some iff](lookup-eq-some-iff.md)
+- [Stored insert of ne](stored-insert-of-ne.md)
+- [Lookup insert of ne](lookup-insert-of-ne.md)
+- [Occupied of insert eq none](occupied-of-insert-eq-none.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_d95ab5ef4d758c0611c5bad1
+navigation: module
 ---
 
 # Trinomial Transform Sequence

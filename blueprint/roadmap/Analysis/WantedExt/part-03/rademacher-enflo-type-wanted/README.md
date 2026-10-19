@@ -1,5 +1,6 @@
 ---
 article_id: af_298c7d887ddcd111e481fe1c
+navigation: module
 ---
 
 # Rademacher Enflo Type

@@ -13,11 +13,11 @@ with its starting index, built by naive insertion.
 
 ## Depends on
 
-- [Radix Trie](../radix-trie/part-01/radix-trie.md)
+- [Radix Trie](../radix-trie/radix-trie.md)
 
 ## Proof depends on
 
-- [Build From](../radix-trie/part-02/build-from.md)
+- [Build From](../radix-trie/build-from.md)
 - [Suffix Entries](suffix-entries.md)
 
 ## Sources

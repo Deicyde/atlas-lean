@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Amplification
 
 - [Freivalds Repeat Law](freivalds-repeat-law.md)

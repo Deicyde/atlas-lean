@@ -1,5 +1,6 @@
 ---
 article_id: af_57eb624add55588173c16a13
+navigation: module
 ---
 
 # Boolean

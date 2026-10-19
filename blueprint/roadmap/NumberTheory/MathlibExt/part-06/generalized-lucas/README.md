@@ -1,5 +1,6 @@
 ---
 article_id: af_aef6c7950715071e73b88c60
+navigation: module
 ---
 
 # Generalized Lucas

@@ -1,5 +1,6 @@
 ---
 article_id: af_0edcb913600b8503f946e9d2
+navigation: module
 ---
 
 # Generalized Hypergeometric

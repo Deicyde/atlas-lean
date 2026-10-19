@@ -1,5 +1,6 @@
 ---
 article_id: af_541eb344f4eb5c427aafc6f4
+navigation: module
 ---
 
 # Matrix Multiplication

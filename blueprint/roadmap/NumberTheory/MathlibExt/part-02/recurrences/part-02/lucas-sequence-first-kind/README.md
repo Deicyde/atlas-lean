@@ -1,5 +1,6 @@
 ---
 article_id: af_5d34278a3b0d189f5bd76dde
+navigation: module
 ---
 
 # Lucas Sequence First Kind

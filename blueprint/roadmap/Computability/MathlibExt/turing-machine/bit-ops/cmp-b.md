@@ -13,7 +13,7 @@ to `eqL`; on a mismatch (different bits, or one block ending first) go to `neL` 
 
 ## Depends on
 
-- [Flag](../program/part-01/flag.md)
+- [Flag](../program/flag.md)
 
 ## Proof depends on
 

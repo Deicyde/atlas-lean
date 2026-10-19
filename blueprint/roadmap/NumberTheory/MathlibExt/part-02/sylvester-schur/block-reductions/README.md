@@ -1,14 +1,21 @@
 ---
 article_id: af_7e93003a63b9c6dc52689f4d
+navigation: module
 ---
 
 # Block Reductions
 
 - [Bertrand base](bertrand-base.md)
+
+## From block divisibility to binomial divisibility
+
 - [Prime dvd seq implies choose](prime-dvd-seq-implies-choose.md)
 - [Prime dvd choose of mem interval](prime-dvd-choose-of-mem-interval.md)
 - [Exists prime dvd choose of large prime dvd block](exists-prime-dvd-choose-of-large-prime-d.md)
 - [Exists dvd block of succ succ prime not dvd pred](exists-dvd-block-of-succ-succ-prime-not.md)
+
+## Binomial criteria from block estimates
+
 - [Exists prime dvd choose of large start](exists-prime-dvd-choose-of-large-start.md)
 - [Exists prime dvd choose of half bound](exists-prime-dvd-choose-of-half-bound.md)
 - [Start le quadratic of no large prime dvd block](start-le-quadratic-of-no-large-prime-dvd.md)

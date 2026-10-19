@@ -1,5 +1,6 @@
 ---
 article_id: af_0401a906587ba4f0393b1fa7
+navigation: module
 ---
 
 # Raney Cycle Lemma

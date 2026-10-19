@@ -1,5 +1,6 @@
 ---
 article_id: af_dc1eeef74f5f0d6b5d8a5c10
+navigation: module
 ---
 
 # Stirling

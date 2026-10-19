@@ -1,5 +1,6 @@
 ---
 article_id: af_849890e500916277d0ddf50f
+navigation: module
 ---
 
 # Sendov Radius Constant

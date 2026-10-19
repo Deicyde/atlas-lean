@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Kirk Normal Structure
 
 - [Metric Diameter](metric-diameter.md)

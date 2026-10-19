@@ -1,5 +1,6 @@
 ---
 article_id: af_45463ec45b503b123b3bb3df
+navigation: module
 ---
 
 # Mc Diarmid

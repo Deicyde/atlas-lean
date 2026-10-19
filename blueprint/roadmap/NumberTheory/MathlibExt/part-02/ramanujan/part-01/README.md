@@ -3,7 +3,7 @@ article_id: af_5ef7a6dbaf6ff721b40321d3
 navigation: transparent
 ---
 
-# Part 1 of 4
+# Part1 Ch1 Entry1 to Part1 Ch2 Entry7 Example3
 
 - [Part1 Ch1 Entry1](ramanujan-part1-ch1-entry1-magicsquare3.md)
 - [Part1 Ch2](ramanujan-part1-ch2-entry3-infinite-eval.md)

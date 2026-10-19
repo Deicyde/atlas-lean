@@ -1,5 +1,6 @@
 ---
 article_id: af_d05846ba01aa7dcdc42161c9
+navigation: module
 ---
 
 # Generalized Bell Polynomial

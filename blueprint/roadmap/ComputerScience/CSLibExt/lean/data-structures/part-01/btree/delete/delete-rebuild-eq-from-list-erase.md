@@ -13,10 +13,10 @@ Deletion is, by definition, erase-and-rebuild through the proved builder.
 
 ## Depends on
 
-- [BTree](../../btree-2/part-01/btree.md)
+- [BTree](../../btree-2/btree.md)
 - [Delete Rebuild](delete-rebuild.md)
-- [Flatten](../../btree-2/part-01/flatten.md)
-- [From List](../../btree-2/part-02/from-list.md)
+- [Flatten](../../btree-2/flatten.md)
+- [From List](../../btree-2/from-list.md)
 
 ## Sources
 

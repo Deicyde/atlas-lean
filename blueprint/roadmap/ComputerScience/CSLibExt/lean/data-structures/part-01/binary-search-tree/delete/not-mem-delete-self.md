@@ -13,14 +13,14 @@ The deleted key is absent after deletion from an ordered tree.
 
 ## Depends on
 
-- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
-- [Ordered](../../../part-02/binary-search-tree/part-01/ordered.md)
+- [Mem](../../../part-02/binary-search-tree/mem.md)
+- [Ordered](../../../part-02/binary-search-tree/ordered.md)
 - [Delete](delete.md)
 
 ## Proof depends on
 
-- [All](../../../part-02/binary-search-tree/part-01/all.md)
-- [All iff forall mem](../../../part-02/binary-search-tree/part-01/all-iff-forall-mem.md)
+- [All](../../../part-02/binary-search-tree/all.md)
+- [All iff forall mem](../../../part-02/binary-search-tree/all-iff-forall-mem.md)
 - [Join](join.md)
 - [Mem join](mem-join.md)
 

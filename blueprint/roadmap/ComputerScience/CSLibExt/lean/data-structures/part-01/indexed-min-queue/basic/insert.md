@@ -16,13 +16,13 @@ Insert one absent identity, rejecting an identity already in the queue.
 
 ## Proof depends on
 
-- [Heap Ordered](../../../part-02/binary-heap/part-01/heap-ordered.md)
-- [Min Heap](../../../part-02/binary-heap/part-02/min-heap.md)
-- [Push](../../../part-02/binary-heap/part-02/push.md)
-- [Heap Parent](../../../part-02/binary-heap/part-01/heap-parent.md)
-- [Heap Parent lt size](../../../part-02/binary-heap/part-01/heap-parent-lt-size.md)
-- [Sift Up](../../../part-02/binary-heap/part-01/sift-up.md)
-- [Sift Up perm](../../../part-02/binary-heap/part-01/sift-up-perm.md)
+- [Heap Ordered](../../../part-02/binary-heap/heap-ordered.md)
+- [Min Heap](../../../part-02/binary-heap/min-heap.md)
+- [Push](../../../part-02/binary-heap/push.md)
+- [Heap Parent](../../../part-02/binary-heap/heap-parent.md)
+- [Heap Parent lt size](../../../part-02/binary-heap/heap-parent-lt-size.md)
+- [Sift Up](../../../part-02/binary-heap/sift-up.md)
+- [Sift Up perm](../../../part-02/binary-heap/sift-up-perm.md)
 
 ## Sources
 

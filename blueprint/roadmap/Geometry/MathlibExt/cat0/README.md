@@ -1,5 +1,6 @@
 ---
 article_id: af_eaceb863703236564fe2b528
+navigation: module
 ---
 
 # CAT(0) comparison geometry

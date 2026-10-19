@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Erdos Problem818
 
 - [Conjecture](conjecture.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_1625733627f188dc5f43b33e
+navigation: module
 ---
 
 # Hire Assistant

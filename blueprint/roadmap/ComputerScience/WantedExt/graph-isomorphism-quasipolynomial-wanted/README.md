@@ -1,5 +1,6 @@
 ---
 article_id: af_c5e71ae81f188d7666f324be
+navigation: module
 ---
 
 # Graph Isomorphism Quasipolynomial

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Pumping
 
 - [Yields H](yields-h.md)

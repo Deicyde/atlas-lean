@@ -1,4 +1,27 @@
+---
+navigation: module
+---
+
 # Erdos Minimum Overlap Constant
 
-- [Part 1 of 2](part-01/README.md)
-- [Part 2 of 2](part-02/README.md)
+- [Overlap](overlap.md)
+- [Max Overlap](max-overlap.md)
+- [M](m.md)
+- [Overlap le Max Overlap](overlap-le-max-overlap.md)
+- [Max Overlap attained](max-overlap-attained.md)
+- [Balanced Partition nonempty](balanced-partition-nonempty.md)
+- [M attained](m-attained.md)
+- [M le Max Overlap](m-le-max-overlap.md)
+- [Min Overlap Quotient](min-overlap-quotient.md)
+- [Discrete Universal Lower Bound](discrete-universal-lower-bound.md)
+- [Continuous Support Interval](continuous-support-interval.md)
+- [Continuous Translation Interval](continuous-translation-interval.md)
+- [Continuous Overlap Integrand](continuous-overlap-integrand.md)
+- [Continuous Overlap](continuous-overlap.md)
+- [Continuous Overlap Values](continuous-overlap-values.md)
+- [Continuous Admissible](continuous-admissible.md)
+- [Continuous Pair Score](continuous-pair-score.md)
+- [Continuous Universal Lower Bound](continuous-universal-lower-bound.md)
+- [Continuous Minimum Overlap Constant](continuous-minimum-overlap-constant.md)
+- [C₁ᵦ](c.md)
+- [Continuous Minimum Overlap Constant le half](continuous-minimum-overlap-constant-le-h.md)

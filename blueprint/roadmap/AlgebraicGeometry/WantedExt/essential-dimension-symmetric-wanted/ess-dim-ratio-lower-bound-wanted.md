@@ -12,7 +12,7 @@ bound: `1/2 ≤ C₇₉`.
 
 ## Depends on
 
-- [Ess Dim Ratio](../../../FieldTheory/MathlibExt/essential-dimension-symmetric/part-02/ess-dim-ratio.md)
+- [Ess Dim Ratio](../../../FieldTheory/MathlibExt/essential-dimension-symmetric/ess-dim-ratio.md)
 
 ## Sources
 

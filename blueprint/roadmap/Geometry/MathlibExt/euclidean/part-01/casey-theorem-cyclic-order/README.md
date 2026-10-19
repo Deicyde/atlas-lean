@@ -1,5 +1,6 @@
 ---
 article_id: af_de2a70ac0a31910a13093d5e
+navigation: module
 ---
 
 # Casey Theorem Cyclic Order

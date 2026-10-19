@@ -1,5 +1,6 @@
 ---
 article_id: af_076a768cf5d65d9e26a9e3ea
+navigation: module
 ---
 
 # Modular Linear Equation

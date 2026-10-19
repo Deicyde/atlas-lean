@@ -1,5 +1,6 @@
 ---
 article_id: af_625bf7dccc986d4ada100589
+navigation: module
 ---
 
 # Countably Monolithic

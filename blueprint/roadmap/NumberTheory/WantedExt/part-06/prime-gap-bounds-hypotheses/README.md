@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Prime Gap Bounds Hypotheses
 
 - [Subpower Bound](subpower-bound.md)

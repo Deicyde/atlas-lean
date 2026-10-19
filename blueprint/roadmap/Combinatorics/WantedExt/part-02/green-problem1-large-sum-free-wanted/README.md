@@ -1,5 +1,6 @@
 ---
 article_id: af_72ebe7d196ef11a4d703f28d
+navigation: module
 ---
 
 # Green Problem1 Large Sum Free

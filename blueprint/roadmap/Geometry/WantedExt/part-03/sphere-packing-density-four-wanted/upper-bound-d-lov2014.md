@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sphere Packing Density4](../../../MathlibExt/sphere-packing-density-four/part-01/sphere-packing-density4.md)
+- [Sphere Packing Density4](../../../MathlibExt/sphere-packing-density-four/sphere-packing-density4.md)
 
 ## Sources
 

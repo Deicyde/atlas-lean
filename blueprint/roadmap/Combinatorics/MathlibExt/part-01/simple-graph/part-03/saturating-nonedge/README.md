@@ -1,5 +1,6 @@
 ---
 article_id: af_1cbd3c0b633bc15fc6b5a3e0
+navigation: module
 ---
 
 # Saturating Nonedge

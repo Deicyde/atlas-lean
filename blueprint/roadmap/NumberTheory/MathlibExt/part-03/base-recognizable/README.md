@@ -1,5 +1,6 @@
 ---
 article_id: af_e060dcfa0ff280ac78e5efea
+navigation: module
 ---
 
 # Base Recognizable

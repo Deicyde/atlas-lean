@@ -1,5 +1,6 @@
 ---
 article_id: af_abff005cacc429e1c8c5e17d
+navigation: module
 ---
 
 # Ornstein Weiss

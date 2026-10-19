@@ -13,7 +13,7 @@ Lookup at the deleted position finds nothing after deletion.
 
 ## Depends on
 
-- [Table](../basic/part-01/table.md)
+- [Table](../basic/table.md)
 - [Get?](get.md)
 - [Table Delete](table-delete.md)
 

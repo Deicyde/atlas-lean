@@ -1,5 +1,6 @@
 ---
 article_id: af_15e5c3201e871dda4c52d0ea
+navigation: module
 ---
 
 # Bessel Polynomial

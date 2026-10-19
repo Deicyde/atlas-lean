@@ -1,5 +1,6 @@
 ---
 article_id: af_3c71cf68ec1b8d0d94497a96
+navigation: module
 ---
 
 # Pointwise Ergodic Theorems

@@ -1,5 +1,6 @@
 ---
 article_id: af_e903d891bb061b805fcddc12
+navigation: module
 ---
 
 # Power Bounds

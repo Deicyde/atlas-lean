@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Costs
 
 - [Bellman Ford relaxation Checks](bellman-ford-relaxation-checks.md)

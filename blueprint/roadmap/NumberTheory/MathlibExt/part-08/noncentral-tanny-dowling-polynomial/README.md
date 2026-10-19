@@ -1,5 +1,6 @@
 ---
 article_id: af_6adc161d2f6f80fc72fb7f65
+navigation: module
 ---
 
 # Noncentral Tanny Dowling Polynomial

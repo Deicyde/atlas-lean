@@ -1,5 +1,6 @@
 ---
 article_id: af_e7e11cdfd0621c3626cec222
+navigation: module
 ---
 
 # CRecursive Exponential Growth

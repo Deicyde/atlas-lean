@@ -1,5 +1,6 @@
 ---
 article_id: af_f93d386a64615f17f24402f3
+navigation: module
 ---
 
 # Dedekind Psi

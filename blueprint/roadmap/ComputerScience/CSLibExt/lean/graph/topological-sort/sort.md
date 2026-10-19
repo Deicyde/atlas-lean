@@ -15,12 +15,12 @@ adjacency occurrence.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
 - [Result](result.md)
 
 ## Proof depends on
 
-- [Has Edge](../directed-adjacency-2/part-02/has-edge.md)
+- [Has Edge](../directed-adjacency-2/has-edge.md)
 - [Indegree Within](indegree-within.md)
 
 ## Sources

@@ -1,5 +1,6 @@
 ---
 article_id: af_76248d77451ceb45948cc9bc
+navigation: module
 ---
 
 # DVRComplete

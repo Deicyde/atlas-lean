@@ -1,5 +1,6 @@
 ---
 article_id: af_27530f10e60e854e77d4a1c3
+navigation: module
 ---
 
 # Normal Convergence

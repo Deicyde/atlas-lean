@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Incomplete Binomial Harmonic Sums
 
 - [Inv Pow Two Sum](inv-pow-two-sum.md)

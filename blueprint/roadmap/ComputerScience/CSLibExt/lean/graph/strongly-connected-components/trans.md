@@ -12,13 +12,13 @@ Strong connectivity is transitive.
 
 ## Depends on
 
-- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
 - [Strongly Connected](strongly-connected.md)
 
 ## Proof depends on
 
-- [Edge](../directed-adjacency-2/part-01/edge.md)
-- [Reachable](../directed-adjacency-2/part-01/reachable.md)
+- [Edge](../directed-adjacency-2/edge.md)
+- [Reachable](../directed-adjacency-2/reachable.md)
 
 ## Sources
 

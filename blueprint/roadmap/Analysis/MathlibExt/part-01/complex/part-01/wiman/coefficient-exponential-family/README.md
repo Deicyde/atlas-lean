@@ -1,5 +1,6 @@
 ---
 article_id: af_cdac994ec22b5f4c556a9a93
+navigation: module
 ---
 
 # Coefficient Exponential Family

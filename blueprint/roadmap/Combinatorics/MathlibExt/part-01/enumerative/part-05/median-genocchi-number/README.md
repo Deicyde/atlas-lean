@@ -1,5 +1,6 @@
 ---
 article_id: af_92f90c31bd9d569ff8cd5d5e
+navigation: module
 ---
 
 # Median Genocchi Number

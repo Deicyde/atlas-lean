@@ -13,16 +13,16 @@ Comparison search does not find the deleted key in the result.
 
 ## Depends on
 
-- [Ordered](../../../part-02/order-statistic-tree/part-01/ordered.md)
-- [Tree](../../../part-02/order-statistic-tree/part-01/tree.md)
-- [Contains](../../../part-02/order-statistic-tree/part-01/contains.md)
+- [Ordered](../../../part-02/order-statistic-tree/ordered.md)
+- [Tree](../../../part-02/order-statistic-tree/tree.md)
+- [Contains](../../../part-02/order-statistic-tree/contains.md)
 - [Delete](delete.md)
 
 ## Proof depends on
 
-- [Mem](../../../part-02/binary-search-tree/part-01/mem.md)
-- [Contains eq true iff](../../../part-02/order-statistic-tree/part-02/contains-eq-true-iff.md)
-- [Erase](../../../part-02/order-statistic-tree/part-01/erase.md)
+- [Mem](../../../part-02/binary-search-tree/mem.md)
+- [Contains eq true iff](../../../part-02/order-statistic-tree/contains-eq-true-iff.md)
+- [Erase](../../../part-02/order-statistic-tree/erase.md)
 - [Not mem delete](not-mem-delete.md)
 - [Ordered delete](ordered-delete.md)
 

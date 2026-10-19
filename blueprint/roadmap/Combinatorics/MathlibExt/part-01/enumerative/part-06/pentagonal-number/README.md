@@ -1,5 +1,6 @@
 ---
 article_id: af_647cd49ea3408b4ac9330403
+navigation: module
 ---
 
 # Pentagonal Number

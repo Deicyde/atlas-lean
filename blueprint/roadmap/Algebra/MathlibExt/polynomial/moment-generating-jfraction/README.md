@@ -1,5 +1,6 @@
 ---
 article_id: af_f2b3e77f286d99689351e529
+navigation: module
 ---
 
 # Moment Generating JFraction

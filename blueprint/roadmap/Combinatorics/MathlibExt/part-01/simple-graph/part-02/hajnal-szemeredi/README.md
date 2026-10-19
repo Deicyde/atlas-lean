@@ -1,5 +1,6 @@
 ---
 article_id: af_1c7fa2c1e8ba403837cecfa1
+navigation: module
 ---
 
 # Hajnal Szemeredi

@@ -1,5 +1,6 @@
 ---
 article_id: af_33824b2092862ad5bc69c832
+navigation: module
 ---
 
 # Nu Lambda Pascal Matrix

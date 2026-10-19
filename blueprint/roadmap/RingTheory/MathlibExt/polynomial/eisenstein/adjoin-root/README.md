@@ -1,11 +1,20 @@
 ---
 article_id: af_15375e84797a1ef98bb9dcf3
+navigation: module
 ---
 
 # Adjoin Root
 
+## Adjoin Root
+
 - [Algebra Map coeff zero mem span root](algebra-map-coeff-zero-mem-span-root.md)
+
+## Is Eisenstein At
+
 - [Maximal Ideal eq span coeff zero](maximal-ideal-eq-span-coeff-zero.md)
+
+## Adjoin Root
+
 - [Map maximal Ideal le span root](map-maximal-ideal-le-span-root.md)
 - [Root ne zero](root-ne-zero.md)
 - [Is Maximal span root](is-maximal-span-root.md)

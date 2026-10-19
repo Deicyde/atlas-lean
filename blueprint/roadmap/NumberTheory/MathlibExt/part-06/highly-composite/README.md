@@ -1,5 +1,6 @@
 ---
 article_id: af_026d2cab395a740f6b25e92b
+navigation: module
 ---
 
 # Highly Composite

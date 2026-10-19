@@ -1,5 +1,6 @@
 ---
 article_id: af_a4dce93b30fa0a009874d0cf
+navigation: module
 ---
 
 # Binomial Fibonacci Convolution

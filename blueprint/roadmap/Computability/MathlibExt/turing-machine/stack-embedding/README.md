@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Stack Embedding
 
 - [SEmb](semb.md)

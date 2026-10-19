@@ -16,8 +16,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Heap Left](../../../part-02/binary-heap/part-01/heap-left.md)
-- [Heap Right](../../../part-02/binary-heap/part-01/heap-right.md)
+- [Heap Left](../../../part-02/binary-heap/heap-left.md)
+- [Heap Right](../../../part-02/binary-heap/heap-right.md)
 
 ## Sources
 

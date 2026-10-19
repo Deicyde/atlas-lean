@@ -1,4 +1,10 @@
+---
+navigation: module
+---
+
 # Finset
+
+## Finite Iteration
 
 - [Lfp Fin](lfp-fin.md)
 - [Gfp Fin](gfp-fin.md)
@@ -6,6 +12,9 @@
 - [Gfp Fin fixed](gfp-fin-fixed.md)
 - [Lfp Fin le](lfp-fin-le.md)
 - [Le gfp Fin](le-gfp-fin.md)
+
+## Bridge
+
 - [Mem finset iterate iff](mem-finset-iterate-iff.md)
 - [Mem finset iterate univ iff](mem-finset-iterate-univ-iff.md)
 - [Mem lfp Fin iff lfp](mem-lfp-fin-iff-lfp.md)

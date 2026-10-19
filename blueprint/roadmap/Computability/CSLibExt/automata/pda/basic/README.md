@@ -1,6 +1,15 @@
+---
+navigation: module
+---
+
 # Basic
 
+## Automata
+
 - [PDA](pda.md)
+
+## PDA
+
 - [Config](config.md)
 - [Step](step.md)
 - [Derives](derives.md)

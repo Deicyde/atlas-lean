@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Essential Dimension Symmetric
 
 - [Buhler Reichstein1997 Upper Bound wanted](buhler-reichstein1997-upper-bound-wanted.md)

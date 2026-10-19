@@ -1,5 +1,6 @@
 ---
 article_id: af_97710d1059d09ffbcb751157
+navigation: module
 ---
 
 # Fenchel Moreau

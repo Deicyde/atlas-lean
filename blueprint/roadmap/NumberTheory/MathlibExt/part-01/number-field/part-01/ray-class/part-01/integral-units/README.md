@@ -1,5 +1,6 @@
 ---
 article_id: af_ee161eb9a12ff00ffda1efe5
+navigation: module
 ---
 
 # Integral Units

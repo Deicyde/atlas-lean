@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Convolution Cost
 
 - [Fft Circular time add two](fft-circular-time-add-two.md)

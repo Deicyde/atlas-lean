@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Mazur Torsion
 
 - [Is In Mazur Class](is-in-mazur-class.md)

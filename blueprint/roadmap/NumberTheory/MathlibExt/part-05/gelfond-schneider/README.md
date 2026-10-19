@@ -1,5 +1,6 @@
 ---
 article_id: af_629b24a453b272960710b0c3
+navigation: module
 ---
 
 # Gelfond Schneider

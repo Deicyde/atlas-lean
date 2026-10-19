@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Primitive Lambda Roots
 
 - [Lambda Delta](lambda-delta.md)

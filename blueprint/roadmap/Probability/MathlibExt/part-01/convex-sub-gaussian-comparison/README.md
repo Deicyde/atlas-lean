@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Convex Sub Gaussian Comparison
 
 - [Is One Sub Gaussian Tail](is-one-sub-gaussian-tail.md)

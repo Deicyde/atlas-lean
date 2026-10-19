@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Even Pseudoprimes
 
 - [Beeger's theorem](even-pseudoprimes-infinite.md)

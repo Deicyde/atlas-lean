@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Partial Hadamard
 
 - [Davis Cubic Admissible wanted](davis-cubic-admissible-wanted.md)

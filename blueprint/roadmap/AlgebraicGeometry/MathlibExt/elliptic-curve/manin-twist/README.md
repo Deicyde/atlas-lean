@@ -1,5 +1,6 @@
 ---
 article_id: af_42cfd42a4e563dc4b7cde47d
+navigation: module
 ---
 
 # Manin Twist

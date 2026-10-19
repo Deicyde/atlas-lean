@@ -12,8 +12,8 @@ Erasure stops when the requested key precedes the first entry.
 
 ## Depends on
 
-- [Skip List](../../../part-03/skip-list/part-01/skip-list.md)
-- [Entry](../../../part-03/skip-list/part-01/entry.md)
+- [Skip List](../../../part-03/skip-list/skip-list.md)
+- [Entry](../../../part-03/skip-list/entry.md)
 - [Erase](erase.md)
 
 ## Sources

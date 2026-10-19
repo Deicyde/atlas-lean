@@ -15,16 +15,16 @@ valid.
 
 ## Depends on
 
-- [Tree](../../../part-03/red-black-tree/part-01/tree.md)
-- [Valid](../../../part-03/red-black-tree/part-01/valid.md)
+- [Tree](../../../part-03/red-black-tree/tree.md)
+- [Valid](../../../part-03/red-black-tree/valid.md)
 - [Delete](delete.md)
 
 ## Proof depends on
 
 - [Del](del.md)
-- [Inorder](../../../part-03/red-black-tree/part-01/inorder.md)
+- [Inorder](../../../part-03/red-black-tree/inorder.md)
 - [Rebalance](rebalance.md)
-- [Valid from List](../../../part-03/red-black-tree/part-02/valid-from-list.md)
+- [Valid from List](../../../part-03/red-black-tree/valid-from-list.md)
 
 ## Sources
 

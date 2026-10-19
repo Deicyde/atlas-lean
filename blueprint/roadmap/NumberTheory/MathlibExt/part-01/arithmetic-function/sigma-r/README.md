@@ -1,5 +1,6 @@
 ---
 article_id: af_1467d3e0eef53b4a851185c5
+navigation: module
 ---
 
 # Sigma R

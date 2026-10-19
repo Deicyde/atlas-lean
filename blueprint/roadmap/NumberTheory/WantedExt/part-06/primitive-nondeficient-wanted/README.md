@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Primitive Nondeficient
 
 - [Is Nondeficient](is-nondeficient.md)

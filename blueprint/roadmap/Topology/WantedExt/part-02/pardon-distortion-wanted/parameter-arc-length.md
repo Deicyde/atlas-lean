@@ -12,7 +12,7 @@ makes this independent of the order of the endpoints.
 
 ## Depends on
 
-- [Knot](../../part-01/conway-knot-shared/part-01/knot.md)
+- [Knot](../../part-01/conway-knot-shared/knot.md)
 
 ## Proof depends on
 

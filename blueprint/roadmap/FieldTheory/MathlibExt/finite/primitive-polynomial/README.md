@@ -1,5 +1,6 @@
 ---
 article_id: af_e34cbff8a3fabde58c6d715f
+navigation: module
 ---
 
 # Primitive Polynomial

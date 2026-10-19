@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Amicable
 
 - [Lemma 1](tendsto-density-not-dvd-sigma.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_17410f2149ac1ed0074112a4
+navigation: module
 ---
 
 # Robbins Theorem

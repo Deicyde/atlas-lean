@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Costs
 
 - [Johnson time of success](johnson-time-of-success.md)

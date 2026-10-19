@@ -1,5 +1,6 @@
 ---
 article_id: af_43a36c659f4c33bef6e5b32c
+navigation: module
 ---
 
 # Random Bernoulli Matrices

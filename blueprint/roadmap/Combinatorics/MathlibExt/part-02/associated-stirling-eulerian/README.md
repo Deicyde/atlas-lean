@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Associated Stirling Eulerian
 
 - [Excedance Count](excedance-count.md)

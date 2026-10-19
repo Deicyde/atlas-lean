@@ -1,5 +1,6 @@
 ---
 article_id: af_d80420a70f40da454af9dd55
+navigation: module
 ---
 
 # Neto Higher Order Bernoulli

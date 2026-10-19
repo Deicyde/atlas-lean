@@ -1,5 +1,6 @@
 ---
 article_id: af_a4a651ef4e51feec20137627
+navigation: module
 ---
 
 # Continuity Of Roots

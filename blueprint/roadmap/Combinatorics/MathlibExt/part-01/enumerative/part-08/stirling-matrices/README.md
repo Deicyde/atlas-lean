@@ -1,5 +1,6 @@
 ---
 article_id: af_be646a3d9fac960adada0b6a
+navigation: module
 ---
 
 # Stirling Matrices

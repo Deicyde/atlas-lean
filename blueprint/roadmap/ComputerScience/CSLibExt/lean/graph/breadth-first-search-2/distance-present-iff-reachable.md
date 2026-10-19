@@ -14,14 +14,14 @@ A reported distance is present exactly for the reachable vertices.
 
 - [BFSResult](bfsresult.md)
 - [Bfs](bfs.md)
-- [Directed Adjacency](../directed-adjacency-2/part-01/directed-adjacency.md)
-- [Reachable](../directed-adjacency-2/part-01/reachable.md)
+- [Directed Adjacency](../directed-adjacency-2/directed-adjacency.md)
+- [Reachable](../directed-adjacency-2/reachable.md)
 
 ## Proof depends on
 
-- [Edge](../directed-adjacency-2/part-01/edge.md)
-- [Walk](../directed-adjacency-2/part-01/walk.md)
-- [Reachable iff exists walk](../directed-adjacency-2/part-01/reachable-iff-exists-walk.md)
+- [Edge](../directed-adjacency-2/edge.md)
+- [Walk](../directed-adjacency-2/walk.md)
+- [Reachable iff exists walk](../directed-adjacency-2/reachable-iff-exists-walk.md)
 - [Contents](../../data-structures/part-01/queue/semantics/contents.md)
 - [Contents enqueue](../../data-structures/part-01/queue/semantics/contents-enqueue.md)
 - [Contents eq cons of dequeue? eq some](../../data-structures/part-01/queue/semantics/contents-eq-cons-of-dequeue-eq-some.md)

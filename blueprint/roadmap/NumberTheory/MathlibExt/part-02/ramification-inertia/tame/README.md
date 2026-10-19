@@ -1,5 +1,6 @@
 ---
 article_id: af_5783d31f911b1ab74731fc0a
+navigation: module
 ---
 
 # Tame

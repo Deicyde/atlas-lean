@@ -1,5 +1,6 @@
 ---
 article_id: af_7943c70a91bd817d902defbe
+navigation: module
 ---
 
 # Marked Step In AMarked Dyck Path

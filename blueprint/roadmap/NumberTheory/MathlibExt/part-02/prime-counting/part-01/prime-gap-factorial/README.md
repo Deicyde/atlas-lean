@@ -1,5 +1,6 @@
 ---
 article_id: af_5439444e0d9df0b3627e2905
+navigation: module
 ---
 
 # Prime Gap Factorial

@@ -1,5 +1,6 @@
 ---
 article_id: af_560adff4a5291f01bc40fda2
+navigation: module
 ---
 
 # Two Power Bad Sets

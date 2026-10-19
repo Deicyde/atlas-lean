@@ -1,5 +1,6 @@
 ---
 article_id: af_7db85df001fea3a5be0e27f1
+navigation: module
 ---
 
 # Domb Number

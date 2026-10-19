@@ -1,5 +1,6 @@
 ---
 article_id: af_a544327ab5360109c46d3357
+navigation: module
 ---
 
 # Falling KBinomial Transform

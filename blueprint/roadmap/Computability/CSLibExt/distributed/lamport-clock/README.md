@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Lamport Clock
 
 - [Event](event.md)

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Multiset Reconstruction Pairwise Products
 
 - [Pairwise Products](pairwise-products.md)

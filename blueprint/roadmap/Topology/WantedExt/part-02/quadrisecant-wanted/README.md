@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Quadrisecant
 
 - [Period](period.md)

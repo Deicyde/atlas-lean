@@ -1,5 +1,6 @@
 ---
 article_id: af_8fa56db1555f5d46cf13f169
+navigation: module
 ---
 
 # Square Free Word

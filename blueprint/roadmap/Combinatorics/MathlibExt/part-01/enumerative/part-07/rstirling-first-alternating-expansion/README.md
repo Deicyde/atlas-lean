@@ -1,5 +1,6 @@
 ---
 article_id: af_7d94addec93ef540564f5684
+navigation: module
 ---
 
 # RStirling First Alternating Expansion

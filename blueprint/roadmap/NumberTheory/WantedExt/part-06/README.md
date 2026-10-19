@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Part 6 of 8
+# Odlyzko Root Discriminant Wanted to Ramanujan Harmonic Identity
 
 - [Odlyzko Root Discriminant Wanted](odlyzko-root-discr-ge.md)
 - [Oeis A002897](oeis-a002897-wanted/README.md)

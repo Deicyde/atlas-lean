@@ -1,5 +1,6 @@
 ---
 article_id: af_c91cc7a789db29a0ed3f9d00
+navigation: module
 ---
 
 # Shapley Value

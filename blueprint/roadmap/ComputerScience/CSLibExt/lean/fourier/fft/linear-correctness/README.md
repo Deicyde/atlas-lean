@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Linear Correctness
 
 - [Fft Linear std Add Char neg one coeff](fft-linear-std-add-char-neg-one-coeff.md)

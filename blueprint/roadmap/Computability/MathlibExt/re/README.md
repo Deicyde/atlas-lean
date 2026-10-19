@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # RE
 
 - [And](and.md)

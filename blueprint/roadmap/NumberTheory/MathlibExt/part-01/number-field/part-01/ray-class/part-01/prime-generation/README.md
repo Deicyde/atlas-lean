@@ -1,5 +1,6 @@
 ---
 article_id: af_cd5f63e0ea48aad515754948
+navigation: module
 ---
 
 # Prime Generation

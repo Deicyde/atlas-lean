@@ -18,7 +18,7 @@ Failure preserves the sorter's processed and remaining lists; it does not return
 
 ## Proof depends on
 
-- [Directed Adjacency](../../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../../../directed-adjacency-2/directed-adjacency.md)
 - [Result](../../../topological-sort/result.md)
 - [Sort](../../../topological-sort/sort.md)
 

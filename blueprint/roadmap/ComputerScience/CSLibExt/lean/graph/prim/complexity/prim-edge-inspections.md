@@ -12,7 +12,7 @@ Exact duplicate-free undirected adjacency gives exactly two inspections per edge
 
 ## Depends on
 
-- [Directed Adjacency](../../directed-adjacency-2/part-01/directed-adjacency.md)
+- [Directed Adjacency](../../directed-adjacency-2/directed-adjacency.md)
 - [Basic](../prim.md)
 
 ## Proof depends on
@@ -33,15 +33,15 @@ Exact duplicate-free undirected adjacency gives exactly two inspections per edge
 - [Member ret](../../../data-structures/part-01/indexed-min-queue/correctness/member-ret.md)
 - [Position eq none iff](../../../data-structures/part-01/indexed-min-queue/correctness/position-eq-none-iff.md)
 - [Position valid](../../../data-structures/part-01/indexed-min-queue/correctness/position-valid.md)
-- [Min Heap](../../../data-structures/part-02/binary-heap/part-02/min-heap.md)
-- [Elements](../../../data-structures/part-02/binary-heap/part-02/elements.md)
-- [Elements push](../../../data-structures/part-02/binary-heap/part-02/elements-push.md)
-- [Extract Min](../../../data-structures/part-02/binary-heap/part-02/extract-min.md)
-- [Extract Min cons elements](../../../data-structures/part-02/binary-heap/part-03/extract-min-cons-elements.md)
-- [Extract Min mem](../../../data-structures/part-02/binary-heap/part-02/extract-min-mem.md)
-- [Push](../../../data-structures/part-02/binary-heap/part-02/push.md)
-- [Sift Up](../../../data-structures/part-02/binary-heap/part-01/sift-up.md)
-- [Sift Up perm](../../../data-structures/part-02/binary-heap/part-01/sift-up-perm.md)
+- [Min Heap](../../../data-structures/part-02/binary-heap/min-heap.md)
+- [Elements](../../../data-structures/part-02/binary-heap/elements.md)
+- [Elements push](../../../data-structures/part-02/binary-heap/elements-push.md)
+- [Extract Min](../../../data-structures/part-02/binary-heap/extract-min.md)
+- [Extract Min cons elements](../../../data-structures/part-02/binary-heap/extract-min-cons-elements.md)
+- [Extract Min mem](../../../data-structures/part-02/binary-heap/extract-min-mem.md)
+- [Push](../../../data-structures/part-02/binary-heap/push.md)
+- [Sift Up](../../../data-structures/part-02/binary-heap/sift-up.md)
+- [Sift Up perm](../../../data-structures/part-02/binary-heap/sift-up-perm.md)
 
 ## Sources
 

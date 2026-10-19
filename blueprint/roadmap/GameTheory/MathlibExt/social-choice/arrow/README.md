@@ -1,15 +1,24 @@
 ---
 article_id: af_8d7a43d0d033ced621a85ca1
+navigation: module
 ---
 
 # Arrow
 
+## Arrow Wanted
+
 - [Strict Total Order](strict-total-order.md)
+
+## Strict Total Order
+
 - [Mk](mk.md)
 - [Lt](lt.md)
 - [Irrefl](irrefl.md)
 - [Trans](trans.md)
 - [Total](total.md)
+
+## Arrow Wanted
+
 - [Profile](profile.md)
 - [Social Welfare Function](social-welfare-function.md)
 - [Is Pareto](is-pareto.md)

@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Super MZumkeller
 
 - [Divisor Prod](divisor-prod.md)

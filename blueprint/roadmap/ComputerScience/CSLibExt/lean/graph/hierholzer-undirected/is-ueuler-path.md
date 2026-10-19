@@ -17,7 +17,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Usym](usym.md)
-- [Walk Edges](../hierholzer/part-01/walk-edges.md)
+- [Walk Edges](../hierholzer/walk-edges.md)
 
 ## Sources
 

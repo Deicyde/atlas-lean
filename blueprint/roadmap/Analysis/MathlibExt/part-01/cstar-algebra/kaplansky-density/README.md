@@ -1,5 +1,6 @@
 ---
 article_id: af_037b4c885e59577f15ce8e0e
+navigation: module
 ---
 
 # Kaplansky Density

@@ -1,5 +1,6 @@
 ---
 article_id: af_475ced3c1ff0e16903473c81
+navigation: module
 ---
 
 # Abel Continuation

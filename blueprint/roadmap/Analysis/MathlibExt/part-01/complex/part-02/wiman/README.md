@@ -1,5 +1,6 @@
 ---
 article_id: af_7a71cc96bc039a9de3bf0ac8
+navigation: module
 ---
 
 # Wiman

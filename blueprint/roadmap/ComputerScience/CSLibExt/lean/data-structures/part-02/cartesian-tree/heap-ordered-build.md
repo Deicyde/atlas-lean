@@ -18,9 +18,9 @@ The Cartesian tree of a list is heap-ordered.
 
 ## Proof depends on
 
-- [All](../binary-search-tree/part-01/all.md)
-- [Inorder](../binary-search-tree/part-01/inorder.md)
-- [Inorder Aux](../binary-search-tree/part-01/inorder-aux.md)
+- [All](../binary-search-tree/all.md)
+- [Inorder](../binary-search-tree/inorder.md)
+- [Inorder Aux](../binary-search-tree/inorder-aux.md)
 - [All iff forall inorder](all-iff-forall-inorder.md)
 - [Build Fuel](build-fuel.md)
 - [List Min](list-min.md)

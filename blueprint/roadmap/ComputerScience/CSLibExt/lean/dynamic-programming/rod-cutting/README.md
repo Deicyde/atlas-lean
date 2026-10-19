@@ -1,8 +1,36 @@
 ---
 article_id: af_6ebd90ae380a724295933dd6
+navigation: module
 ---
 
 # Rod Cutting
 
-- [Part 1 of 2](part-01/README.md)
-- [Part 2 of 2](part-02/README.md)
+- [Composition Revenue](composition-revenue.md)
+- [Composition Revenue zero](composition-revenue-zero.md)
+- [Composition Revenue single](composition-revenue-single.md)
+- [Composition Revenue append](composition-revenue-append.md)
+- [Bottom Up Cut Rod](bottom-up-cut-rod.md)
+- [Bottom Up Cut Rod correct](bottom-up-cut-rod-correct.md)
+- [Bottom Up Cut Rod zero](bottom-up-cut-rod-zero.md)
+- [Bottom Up Cut Rod time sum](bottom-up-cut-rod-time-sum.md)
+- [Bottom Up Cut Rod time twice](bottom-up-cut-rod-time-twice.md)
+- [Bottom Up Cut Rod time](bottom-up-cut-rod-time.md)
+- [Bottom Up Cut Rod time bounds](bottom-up-cut-rod-time-bounds.md)
+
+## Saved first cuts
+
+- [Extended Bottom Up Cut Rod](extended-bottom-up-cut-rod.md)
+- [Extended Bottom Up Cut Rod correct](extended-bottom-up-cut-rod-correct.md)
+- [Extended Bottom Up Cut Rod revenue eq](extended-bottom-up-cut-rod-revenue-eq.md)
+- [Extended Bottom Up Cut Rod time](extended-bottom-up-cut-rod-time.md)
+- [Extended Bottom Up Cut Rod zero](extended-bottom-up-cut-rod-zero.md)
+- [Extended Bottom Up Cut Rod first Cut](extended-bottom-up-cut-rod-first-cut.md)
+
+## Following the saved first cuts
+
+- [Cut Rod Solution](cut-rod-solution.md)
+- [Cut Rod Solution time](cut-rod-solution-time.md)
+- [Cut Rod Solution blocks](cut-rod-solution-blocks.md)
+- [Cut Rod Solution revenue](cut-rod-solution-revenue.md)
+- [Cut Rod Solution correct](cut-rod-solution-correct.md)
+- [Cut Rod Solution zero](cut-rod-solution-zero.md)

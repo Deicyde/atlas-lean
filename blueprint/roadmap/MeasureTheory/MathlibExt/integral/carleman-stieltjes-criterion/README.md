@@ -1,5 +1,6 @@
 ---
 article_id: af_2884e0822d7ae72543743448
+navigation: module
 ---
 
 # Carleman Stieltjes Criterion

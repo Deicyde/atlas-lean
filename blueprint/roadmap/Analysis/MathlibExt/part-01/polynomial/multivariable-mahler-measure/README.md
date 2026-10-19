@@ -1,5 +1,6 @@
 ---
 article_id: af_1600529d0bcc3526a598c06a
+navigation: module
 ---
 
 # Multivariable Mahler Measure

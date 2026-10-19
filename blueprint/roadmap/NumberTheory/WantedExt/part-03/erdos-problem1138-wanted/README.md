@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Erdos Problem1138
 
 - [Sup prime Gap](sup-prime-gap.md)

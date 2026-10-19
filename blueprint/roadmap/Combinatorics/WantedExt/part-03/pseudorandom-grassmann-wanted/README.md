@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Pseudorandom Grassmann
 
 - [Gr Vertex](gr-vertex.md)

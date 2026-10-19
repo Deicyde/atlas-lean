@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Oeis A265233
 
 - [A265233](a265233.md)

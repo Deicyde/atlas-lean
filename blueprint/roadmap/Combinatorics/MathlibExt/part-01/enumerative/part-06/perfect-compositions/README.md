@@ -1,5 +1,6 @@
 ---
 article_id: af_a6f7392c1cae1e48cfb900b1
+navigation: module
 ---
 
 # Perfect Compositions

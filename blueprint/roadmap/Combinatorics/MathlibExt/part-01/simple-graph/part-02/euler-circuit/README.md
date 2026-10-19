@@ -1,5 +1,6 @@
 ---
 article_id: af_fef8dcafa901fe2aebf31f5b
+navigation: module
 ---
 
 # Euler Circuit

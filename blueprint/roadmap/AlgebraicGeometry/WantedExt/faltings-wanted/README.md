@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Faltings
 
 - [Place](place.md)

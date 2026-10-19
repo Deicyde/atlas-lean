@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Hopf Umlaufsatz
 
 - [Plane](plane.md)

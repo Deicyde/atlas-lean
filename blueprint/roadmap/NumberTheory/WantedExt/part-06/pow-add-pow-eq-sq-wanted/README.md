@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Pow Add Pow Eq Sq
 
 - [Lemma 1](two-pow-add-one-eq-sq.md)

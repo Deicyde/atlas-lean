@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Consecutive Squares
 
 - [So CSEq](so-cseq.md)

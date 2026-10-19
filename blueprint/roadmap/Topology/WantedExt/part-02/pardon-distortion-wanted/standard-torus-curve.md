@@ -13,7 +13,7 @@ torus and `q` times around a meridian.
 
 ## Depends on
 
-- [R3](../../part-01/conway-knot-shared/part-01/r3.md)
+- [R3](../../part-01/conway-knot-shared/r3.md)
 
 ## Sources
 

@@ -1,5 +1,6 @@
 ---
 article_id: af_51c531d8fb72f8d0afe7a1cd
+navigation: module
 ---
 
 # Dusart Mertens Reciprocal Sum

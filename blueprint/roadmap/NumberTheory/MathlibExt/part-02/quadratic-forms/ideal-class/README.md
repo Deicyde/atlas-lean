@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Ideal Class
 
 - [Of Coefficients](of-coefficients.md)

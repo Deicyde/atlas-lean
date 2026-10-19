@@ -1,5 +1,6 @@
 ---
 article_id: af_76f96c7ca29ee8c2fd5c607a
+navigation: module
 ---
 
 # Power Growth Bad Set

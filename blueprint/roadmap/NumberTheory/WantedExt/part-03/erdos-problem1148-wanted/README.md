@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Erdos Problem1148
 
 - [Erdos1148 Prop](erdos1148-prop.md)

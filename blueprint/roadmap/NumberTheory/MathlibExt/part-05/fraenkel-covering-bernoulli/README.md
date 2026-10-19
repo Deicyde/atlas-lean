@@ -1,5 +1,6 @@
 ---
 article_id: af_067045e651ded020a3327f69
+navigation: module
 ---
 
 # Fraenkel Covering Bernoulli

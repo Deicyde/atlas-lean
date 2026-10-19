@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Pierce Expansion
 
 - [Traj](traj.md)

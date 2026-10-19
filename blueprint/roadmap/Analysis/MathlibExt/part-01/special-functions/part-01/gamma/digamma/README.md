@@ -1,14 +1,20 @@
 ---
 article_id: af_c2b684be2ceaf2e82fae9192
+navigation: module
 ---
 
 # Digamma
+
+## Real
 
 - [Summable one div add nat succ sq](summable-one-div-add-nat-succ-sq.md)
 - [Has Sum digamma series](has-sum-digamma-series.md)
 - [Has Deriv At tsum digamma series](has-deriv-at-tsum-digamma-series.md)
 - [Deriv deriv log Gamma add one](deriv-deriv-log-gamma-add-one.md)
 - [Deriv log Gamma](deriv-log-gamma.md)
+
+## Complex
+
 - [Analytic At Gamma](analytic-at-gamma.md)
 - [Analytic At digamma](analytic-at-digamma.md)
 - [Deriv Gamma of Real](deriv-gamma-of-real.md)

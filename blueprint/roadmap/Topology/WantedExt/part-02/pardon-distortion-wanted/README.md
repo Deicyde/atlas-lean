@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Pardon Distortion
 
 - [Speed](speed.md)

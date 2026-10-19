@@ -1,5 +1,6 @@
 ---
 article_id: af_3ccecda778adb3474407962a
+navigation: module
 ---
 
 # Simsek Number

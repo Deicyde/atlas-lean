@@ -1,5 +1,6 @@
 ---
 article_id: af_5e0cbeee760bbbfd4aa98ba3
+navigation: module
 ---
 
 # Graph Minor

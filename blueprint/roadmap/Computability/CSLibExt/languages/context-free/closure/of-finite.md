@@ -17,8 +17,8 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Add](add.md)
-- [Singleton word](../basic/part-02/singleton-word.md)
-- [Zero](../basic/part-01/zero.md)
+- [Singleton word](../basic/singleton-word.md)
+- [Zero](../basic/zero.md)
 
 ## Sources
 

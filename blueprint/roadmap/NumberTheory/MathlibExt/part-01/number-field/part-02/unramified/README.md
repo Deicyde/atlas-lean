@@ -1,14 +1,23 @@
 ---
 article_id: af_b973598358b9009148803591
+navigation: module
 ---
 
 # Unramified
 
+## Number Field
+
 - [Is Unramified In mono](is-unramified-in-mono.md)
 - [Etale localization](etale-localization.md)
 - [Tensor Product Localization Equiv Integral Closure](tensor-product-localization-equiv-integr.md)
+
+## Localization
+
 - [Semilocalization To At Prime](semilocalization-to-at-prime.md)
 - [Semilocalization To At Prime mk' eq iff](semilocalization-to-at-prime-mk-eq-iff.md)
+
+## Is Unramified In
+
 - [Normalized Tensor To Compositum At Prime](normalized-tensor-to-compositum-at-prime.md)
 - [Normalized Tensor To Compositum At Prime equiv tmul](normalized-tensor-to-compositum-at-prime-2.md)
 - [Normalized Tensor To Compositum At Prime ker is Prime](normalized-tensor-to-compositum-at-prime-3.md)

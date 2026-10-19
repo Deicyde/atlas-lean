@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Diversity Statistics
 
 - [Gini Simpson Count](gini-simpson-count.md)

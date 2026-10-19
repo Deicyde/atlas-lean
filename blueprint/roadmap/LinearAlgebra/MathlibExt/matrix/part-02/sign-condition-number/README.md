@@ -1,5 +1,6 @@
 ---
 article_id: af_f0af04f40043c2da248b80b9
+navigation: module
 ---
 
 # Sign Condition Number

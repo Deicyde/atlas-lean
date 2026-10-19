@@ -1,10 +1,16 @@
 ---
 article_id: af_c6804fd9100ad73c87ad74d0
+navigation: module
 ---
 
 # Sparse Table
 
+## Lean
+
 - [Sparse Table](sparse-table.md)
+
+## Sparse Table
+
 - [Omin](omin.md)
 - [Omin self](omin-self.md)
 - [Level](level.md)

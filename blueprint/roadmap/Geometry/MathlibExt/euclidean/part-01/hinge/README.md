@@ -1,5 +1,6 @@
 ---
 article_id: af_96e5b869a1400bce55b0ea08
+navigation: module
 ---
 
 # Hinge

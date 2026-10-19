@@ -11,11 +11,11 @@ Every variable of the term is below `n`.
 
 ## Depends on
 
-- [Term](../../../unification/basic/part-01/term.md)
+- [Term](../../../unification/basic/term.md)
 
 ## Proof depends on
 
-- [Vars](../../../unification/basic/part-01/vars.md)
+- [Vars](../../../unification/basic/vars.md)
 
 ## Sources
 

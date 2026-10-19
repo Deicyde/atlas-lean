@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Odd Greedy Choice
 
 - [Is Odd Greedy Choice](is-odd-greedy-choice.md)

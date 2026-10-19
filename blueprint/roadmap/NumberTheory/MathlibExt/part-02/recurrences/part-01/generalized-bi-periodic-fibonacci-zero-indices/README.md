@@ -1,5 +1,6 @@
 ---
 article_id: af_b7a97ee2807791bd236ffeda
+navigation: module
 ---
 
 # Generalized Bi Periodic Fibonacci Zero Indices

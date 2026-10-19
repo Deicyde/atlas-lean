@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Chomsky Normal Form
 
 - [Is Chomsky Normal Form](is-chomsky-normal-form.md)

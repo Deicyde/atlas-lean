@@ -1,5 +1,6 @@
 ---
 article_id: af_59f47c414689531f16734e32
+navigation: module
 ---
 
 # Angle Bisector

@@ -1,5 +1,6 @@
 ---
 article_id: af_6ffa8bb91b91a1219112791a
+navigation: module
 ---
 
 # Gaussian Binomial

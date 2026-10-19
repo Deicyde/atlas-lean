@@ -1,5 +1,6 @@
 ---
 article_id: af_6251bbe81aac9ac4f0f62b5e
+navigation: module
 ---
 
 # Witt Multigraded Dimension

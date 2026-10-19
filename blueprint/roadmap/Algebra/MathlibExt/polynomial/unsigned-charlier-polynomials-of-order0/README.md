@@ -1,5 +1,6 @@
 ---
 article_id: af_aaa3bac4d69400fe27c26c53
+navigation: module
 ---
 
 # Unsigned Charlier Polynomials Of Order0

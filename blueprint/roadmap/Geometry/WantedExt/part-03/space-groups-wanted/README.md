@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Space Groups
 
 - [E](e.md)

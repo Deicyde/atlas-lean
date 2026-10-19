@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Tribonacci Tetranacci Sums Of Squares
 
 - [Four mul sum tribonacci mul sub two](four-mul-sum-tribonacci-mul-sub-two.md)

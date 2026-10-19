@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Reverse Divisor
 
 - [Is Reverse Divisor](is-reverse-divisor.md)

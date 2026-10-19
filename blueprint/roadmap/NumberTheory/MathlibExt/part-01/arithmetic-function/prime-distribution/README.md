@@ -1,5 +1,6 @@
 ---
 article_id: af_e732ae636b36beebb2959d76
+navigation: module
 ---
 
 # Prime Distribution

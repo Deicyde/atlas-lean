@@ -1,5 +1,6 @@
 ---
 article_id: af_a3ce6494cc3429f0294f4ace
+navigation: module
 ---
 
 # Fractal Sequence

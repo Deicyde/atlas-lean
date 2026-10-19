@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Erdos Problem1196
 
 - [Is Primitive](is-primitive.md)

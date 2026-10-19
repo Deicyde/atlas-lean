@@ -1,5 +1,6 @@
 ---
 article_id: af_f52401960a2477d8177f953a
+navigation: module
 ---
 
 # Conjugacy Class

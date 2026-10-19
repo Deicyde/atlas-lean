@@ -1,5 +1,6 @@
 ---
 article_id: af_a574a6dd4777716bbf5befff
+navigation: module
 ---
 
 # Integer Multiplication

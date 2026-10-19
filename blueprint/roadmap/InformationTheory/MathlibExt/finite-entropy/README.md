@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Finite Entropy
 
 - [Shannon Entropy](shannon-entropy.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_a406e3daafec8ed5640a0077
+navigation: module
 ---
 
 # Logarithmic Potential Equilibrium Free

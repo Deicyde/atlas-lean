@@ -1,5 +1,6 @@
 ---
 article_id: af_87ac89b5f4b42013a43758f9
+navigation: module
 ---
 
 # Carmichael Number

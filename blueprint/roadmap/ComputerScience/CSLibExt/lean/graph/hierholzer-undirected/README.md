@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Hierholzer Undirected
 
 - [Usym](usym.md)
@@ -8,13 +12,25 @@
 - [Other End](other-end.md)
 - [Uvisit](uvisit.md)
 - [Uhierholzer](uhierholzer.md)
+
+## Degrees
+
 - [Udeg erase](udeg-erase.md)
 - [Usym eq other End](usym-eq-other-end.md)
+
+## The recursion
+
 - [Uvisit spec](uvisit-spec.md)
+
+## Correctness
+
 - [Uhierholzer trail](uhierholzer-trail.md)
 - [Euler paths](uhierholzer-is-ueuler-path.md)
 - [Euler circuits](uhierholzer-is-ueuler-circuit.md)
 - [Cost](uhierholzer-time.md)
+
+## The converse: degrees of an Euler path
+
 - [Ends At](ends-at.md)
 - [Udeg eq of perm](udeg-eq-of-perm.md)
 - [Even Except walk Edges](even-except-walk-edges.md)

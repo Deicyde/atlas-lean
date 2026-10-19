@@ -1,5 +1,6 @@
 ---
 article_id: af_f59690954f40bd5a30356c25
+navigation: module
 ---
 
 # Spectrum

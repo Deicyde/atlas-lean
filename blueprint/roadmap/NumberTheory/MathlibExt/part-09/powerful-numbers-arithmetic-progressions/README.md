@@ -1,5 +1,6 @@
 ---
 article_id: af_3fbc8616e7d46d0262741845
+navigation: module
 ---
 
 # Powerful Numbers Arithmetic Progressions

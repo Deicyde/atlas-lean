@@ -1,5 +1,6 @@
 ---
 article_id: af_7e04a9fe3b0438f01e85611c
+navigation: module
 ---
 
 # Adic Completion Residue Field

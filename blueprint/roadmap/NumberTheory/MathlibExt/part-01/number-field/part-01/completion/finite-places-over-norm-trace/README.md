@@ -1,5 +1,6 @@
 ---
 article_id: af_54fd53b308e92aad8856818d
+navigation: module
 ---
 
 # Finite Places Over Norm Trace

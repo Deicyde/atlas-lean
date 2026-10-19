@@ -1,10 +1,16 @@
 ---
 article_id: af_9d18bb65cc7a48a278cfb38c
+navigation: module
 ---
 
 # Local Maximal
 
+## Polynomial
+
 - [Comap map Ring Hom bot eq map C ker](comap-map-ring-hom-bot-eq-map-c-ker.md)
+
+## Adjoin Root
+
 - [Exists irreducible factor of is maximal](exists-irreducible-factor-of-is-maximal.md)
 - [Is maximal of irreducible factor](is-maximal-of-irreducible-factor.md)
 - [Is maximal iff irreducible factor](is-maximal-iff-irreducible-factor.md)

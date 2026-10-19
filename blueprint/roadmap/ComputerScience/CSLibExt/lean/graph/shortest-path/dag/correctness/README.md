@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Correctness
 
 - [Run path To? eq none iff](run-path-to-eq-none-iff.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_d7f706b5552f380a04ead7fb
+navigation: module
 ---
 
 # LUDecomposition

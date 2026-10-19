@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Small House
 
 - [Cyclotomic integer house le two](cyclotomic-integer-house-le-two.md)

@@ -17,7 +17,7 @@ twice.
 - [Even Except](even-except.md)
 - [Uhierholzer](uhierholzer.md)
 - [Usym](usym.md)
-- [Walk Edges](../hierholzer/part-01/walk-edges.md)
+- [Walk Edges](../hierholzer/walk-edges.md)
 
 ## Proof depends on
 

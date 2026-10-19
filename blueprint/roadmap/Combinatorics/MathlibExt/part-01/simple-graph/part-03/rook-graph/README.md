@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Rook Graph
 
 - [Rook Graph](rook-graph.md)

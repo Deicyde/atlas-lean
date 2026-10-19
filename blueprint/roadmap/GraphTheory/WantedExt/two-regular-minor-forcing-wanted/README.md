@@ -1,5 +1,6 @@
 ---
 article_id: af_1de75684b50e34be66d0b1aa
+navigation: module
 ---
 
 # Two Regular Minor Forcing

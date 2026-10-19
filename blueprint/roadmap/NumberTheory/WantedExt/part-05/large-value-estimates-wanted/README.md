@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Large Value Estimates
 
 - [Bound](bound.md)

@@ -1,5 +1,6 @@
 ---
 article_id: af_ff147454d8b0255289410113
+navigation: module
 ---
 
 # Sturmian Word

@@ -1,5 +1,6 @@
 ---
 article_id: af_c19e3801dbacd525817fa06d
+navigation: module
 ---
 
 # Legendre Stirling First Kind

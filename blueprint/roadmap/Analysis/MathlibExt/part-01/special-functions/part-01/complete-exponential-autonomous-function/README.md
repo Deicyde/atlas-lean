@@ -1,5 +1,6 @@
 ---
 article_id: af_cdda8e119aba87c4c2f7c8af
+navigation: module
 ---
 
 # Complete Exponential Autonomous Function

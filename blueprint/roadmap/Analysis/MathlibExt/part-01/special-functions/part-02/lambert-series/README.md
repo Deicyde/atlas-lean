@@ -1,5 +1,6 @@
 ---
 article_id: af_654a581cc3d28a3c991e3fed
+navigation: module
 ---
 
 # Lambert Series

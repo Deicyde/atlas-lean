@@ -1,5 +1,6 @@
 ---
 article_id: af_d7a7f62ccc5ace5ce1222736
+navigation: module
 ---
 
 # Alder Totient

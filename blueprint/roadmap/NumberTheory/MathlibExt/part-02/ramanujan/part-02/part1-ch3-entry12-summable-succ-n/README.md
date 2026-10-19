@@ -1,5 +1,6 @@
 ---
 article_id: af_db913d0d781bb5e096b1f2b0
+navigation: module
 ---
 
 # Part1 Ch3 Entry12 Summable Succ N

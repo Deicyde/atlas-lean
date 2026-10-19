@@ -1,5 +1,6 @@
 ---
 article_id: af_72bf734e0236a5287e8d66a3
+navigation: module
 ---
 
 # Max Flow Min Cut

@@ -1,5 +1,6 @@
 ---
 article_id: af_9ec9aaeeb3020ec6a3312db6
+navigation: module
 ---
 
 # Generalized Lucasnomial Fuss Catalan

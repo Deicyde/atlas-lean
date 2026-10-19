@@ -1,5 +1,6 @@
 ---
 article_id: af_76286d3136180b93604cab69
+navigation: module
 ---
 
 # Consecutive Cyclic Prime Labeling

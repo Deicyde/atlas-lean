@@ -1,10 +1,16 @@
 ---
 article_id: af_54b8d957b0bb350986b36e33
+navigation: module
 ---
 
 # Cost
 
+## Lean
+
 - [Log2 heap Parent add one](log2-heap-parent-add-one.md)
+
+## Time M
+
 - [Sift Up](sift-up.md)
 - [Ret sift Up](ret-sift-up.md)
 - [Comparisons sift Up le log2](comparisons-sift-up-le-log2.md)

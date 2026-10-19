@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Sums Of Powers A304330
 
 - [Power Sum](power-sum.md)

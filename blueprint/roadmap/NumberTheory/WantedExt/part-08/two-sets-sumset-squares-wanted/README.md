@@ -1,3 +1,7 @@
+---
+navigation: module
+---
+
 # Two Sets Sumset Squares
 
 - [Pairwise Sums Squares](pairwise-sums-squares.md)
