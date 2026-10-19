@@ -6,9 +6,7 @@ article_id: af_87c922701f5064b1818e8bde
 
 ATLAS v2 is the root Lake package: MathlibExt and CSLibExt hold reusable,
 fully proved results, and WantedExt states established results whose proofs
-are deferred. Each subject below leads with those libraries. The 26
-textbooks and lecture notes formalized by the archived ATLAS v1 release follow
-as source tracks whose articles reproduce the source statements in order.
+are deferred. Each subject below collects those libraries' articles.
 Standalone developments under `Atlas/` remain outside these roadmap and progress
 counts until their `MAPPED` coverage rows are decomposed.
 
@@ -16,9 +14,7 @@ counts until their `MAPPED` coverage rows are decomposed.
 
 - [Algebra](Algebra/README.md)
 - [Algebraic Geometry](AlgebraicGeometry/README.md)
-- [Algebraic Topology](AlgebraicTopology/README.md)
 - [Analysis](Analysis/README.md)
-- [Arithmetic Geometry](ArithmeticGeometry/README.md)
 - [Category Theory](CategoryTheory/README.md)
 - [Combinatorics](Combinatorics/README.md)
 - [Computability](Computability/README.md)

@@ -8,4 +8,3 @@ Algebraic geometry studies spaces cut out by polynomial equations and translates
 
 - [MathlibExt](MathlibExt/README.md)
 - [WantedExt](WantedExt/README.md)
-- [MIT 18.725 Algebraic Geometry (Fall 2015)](AlgebraicGeometryI/README.md)
