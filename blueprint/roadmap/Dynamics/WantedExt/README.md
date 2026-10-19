@@ -5,8 +5,6 @@ navigation: collection
 
 # WantedExt
 
-Established results whose Lean implementation or proof is deferred.
-
 - [Periodic](periodic/README.md)
 - [AMR43 Problem1](amr43-problem1-wanted/README.md)
 - [Bourgain Ergodic](bourgain-ergodic-wanted/README.md)

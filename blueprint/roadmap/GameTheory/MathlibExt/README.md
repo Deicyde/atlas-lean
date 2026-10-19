@@ -5,8 +5,6 @@ navigation: collection
 
 # MathlibExt
 
-Reusable, fully proved extensions to Mathlib.
-
 - [Social Choice](social-choice/README.md)
 - [Bondareva Shapley](bondareva-shapley/README.md)
 - [Bouton Nim](bouton-nim-p-positions.md)

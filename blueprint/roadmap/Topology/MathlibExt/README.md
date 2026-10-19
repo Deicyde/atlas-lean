@@ -5,8 +5,6 @@ navigation: collection
 
 # MathlibExt
 
-Reusable, fully proved extensions to Mathlib.
-
 - [Algebra](algebra/README.md)
 - [Connected](connected/README.md)
 - [Continuum](continuum/README.md)

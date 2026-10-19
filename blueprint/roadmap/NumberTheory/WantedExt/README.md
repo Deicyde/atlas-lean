@@ -5,8 +5,6 @@ navigation: collection
 
 # WantedExt
 
-Established results whose Lean implementation or proof is deferred.
-
 - [Arithmetic Function to Calegari Dimitrov Tang Linear Independent Wanted](part-01/README.md)
 - [Chebyshev Sign Change to Erdos Minimum Overlap Constant](part-02/README.md)
 - [Erdos Problem1138 to Erdos Problem871](part-03/README.md)

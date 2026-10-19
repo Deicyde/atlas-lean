@@ -5,8 +5,6 @@ navigation: collection
 
 # WantedExt
 
-Established results whose Lean implementation or proof is deferred.
-
 - [AMR11 Problem33](amr11-problem33-wanted/README.md)
 - [Cycle Continuous Antichain](cycle-continuous-antichain-wanted/README.md)
 - [Erdos Problem1034](erdos-problem1034-wanted/README.md)

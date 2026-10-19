@@ -5,8 +5,6 @@ navigation: collection
 
 # MathlibExt
 
-Reusable, fully proved extensions to Mathlib.
-
 - [Bilinear Form](bilinear-form/README.md)
 - [Matrix](matrix/README.md)
 - [Perfect Pairing](perfect-pairing/README.md)

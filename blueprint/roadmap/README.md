@@ -4,12 +4,6 @@ article_id: af_87c922701f5064b1818e8bde
 
 # ATLAS roadmap
 
-ATLAS v2 is the root Lake package: MathlibExt and CSLibExt hold reusable,
-fully proved results, and WantedExt states established results whose proofs
-are deferred. Each subject below collects those libraries' articles.
-Standalone developments under `Atlas/` remain outside these roadmap and progress
-counts until their `MAPPED` coverage rows are decomposed.
-
 ## Subjects
 
 - [Algebra](Algebra/README.md)

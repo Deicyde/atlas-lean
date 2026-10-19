@@ -423,7 +423,6 @@ def library_tree(library: str, targets: list[Target]) -> Container:
         return chunk(title, slug, children)
 
     tree = build(library, library, root)
-    tree.prose = LIBRARIES[library][0]
     tree.navigation = "collection"
     return tree
 
@@ -613,12 +612,6 @@ def render_coverage(rows: list[tuple[str, str, str]]) -> str:
 def render_roadmap_root(subjects: list[str], previous: str | None) -> str:
     lines = [
         "# ATLAS roadmap",
-        "",
-        "ATLAS v2 is the root Lake package: MathlibExt and CSLibExt hold reusable,",
-        "fully proved results, and WantedExt states established results whose proofs",
-        "are deferred. Each subject below collects those libraries' articles.",
-        "Standalone developments under `Atlas/` remain outside these roadmap and progress",
-        "counts until their `MAPPED` coverage rows are decomposed.",
         "",
         "## Subjects",
         "",

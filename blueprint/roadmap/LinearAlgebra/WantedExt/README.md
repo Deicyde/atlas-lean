@@ -5,8 +5,6 @@ navigation: collection
 
 # WantedExt
 
-Established results whose Lean implementation or proof is deferred.
-
 - [Matrix](matrix/README.md)
 - [Lidskii Inequality Wanted](lidskii-inequality.md)
 - [Lidskii Wanted](lidskii-last.md)

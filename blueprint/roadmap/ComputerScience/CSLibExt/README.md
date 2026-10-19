@@ -5,8 +5,6 @@ navigation: collection
 
 # CSLibExt
 
-Reusable, fully proved computer-science developments built on MathlibExt.
-
 - [Concurrency](concurrency/README.md)
 - [IMP](imp/README.md)
 - [Lambda Calculus](lambda-calculus/README.md)

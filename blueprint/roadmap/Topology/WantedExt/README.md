@@ -5,7 +5,5 @@ navigation: collection
 
 # WantedExt
 
-Established results whose Lean implementation or proof is deferred.
-
 - [Annulus Shared to Hurewicz](part-01/README.md)
 - [Kirk Normal Structure to Watanabe Smale Disproof Wanted](part-02/README.md)

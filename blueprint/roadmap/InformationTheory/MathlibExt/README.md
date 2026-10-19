@@ -5,8 +5,6 @@ navigation: collection
 
 # MathlibExt
 
-Reusable, fully proved extensions to Mathlib.
-
 - [Conditional Entropy](conditional-entropy/README.md)
 - [Fano](fano/README.md)
 - [Finite Channel Simulation](finite-channel-simulation/README.md)

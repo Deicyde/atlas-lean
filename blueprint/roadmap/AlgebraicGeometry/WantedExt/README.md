@@ -5,8 +5,6 @@ navigation: collection
 
 # WantedExt
 
-Established results whose Lean implementation or proof is deferred.
-
 - [Elliptic Curve](elliptic-curve/README.md)
 - [Bezout](bezout-wanted/README.md)
 - [Direct Summand](direct-summand-wanted/README.md)

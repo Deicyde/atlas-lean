@@ -5,8 +5,6 @@ navigation: collection
 
 # MathlibExt
 
-Reusable, fully proved extensions to Mathlib.
-
 - [Boolean Algebra](boolean-algebra/README.md)
 - [Boolean Function](boolean-function/README.md)
 - [Fixed Points](fixed-points/README.md)

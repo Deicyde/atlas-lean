@@ -5,8 +5,6 @@ navigation: collection
 
 # MathlibExt
 
-Reusable, fully proved extensions to Mathlib.
-
 - [Finite](finite/README.md)
 - [Galois](galois/README.md)
 - [Minpoly](minpoly/README.md)

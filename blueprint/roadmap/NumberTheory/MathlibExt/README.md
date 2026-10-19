@@ -5,8 +5,6 @@ navigation: collection
 
 # MathlibExt
 
-Reusable, fully proved extensions to Mathlib.
-
 - [Arithmetic Function to Padics](part-01/README.md)
 - [Polynomial to BNomial Number Type3](part-02/README.md)
 - [Bang Zsigmondy to Collatz](part-03/README.md)

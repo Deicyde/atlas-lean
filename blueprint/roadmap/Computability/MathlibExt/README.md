@@ -5,8 +5,6 @@ navigation: collection
 
 # MathlibExt
 
-Reusable, fully proved extensions to Mathlib.
-
 - [Turing Machine](turing-machine/README.md)
 - [Complexity](complexity/README.md)
 - [Parametrized s-m-n](exists-computable-code.md)

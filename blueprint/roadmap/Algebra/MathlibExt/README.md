@@ -5,8 +5,6 @@ navigation: collection
 
 # MathlibExt
 
-Reusable, fully proved extensions to Mathlib.
-
 - [Algebra](algebra/README.md)
 - [Central](central/README.md)
 - [Commutative Algebra](commutative-algebra/README.md)

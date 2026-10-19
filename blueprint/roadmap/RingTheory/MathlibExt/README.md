@@ -5,8 +5,6 @@ navigation: collection
 
 # MathlibExt
 
-Reusable, fully proved extensions to Mathlib.
-
 - [Adjoin Root](adjoin-root/README.md)
 - [Class Group](class-group/README.md)
 - [Dedekind Domain](dedekind-domain/README.md)

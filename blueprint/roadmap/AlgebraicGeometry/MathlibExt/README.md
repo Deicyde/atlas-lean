@@ -5,8 +5,6 @@ navigation: collection
 
 # MathlibExt
 
-Reusable, fully proved extensions to Mathlib.
-
 - [Affine](affine/README.md)
 - [Curve](curve/README.md)
 - [Elliptic Curve](elliptic-curve/README.md)

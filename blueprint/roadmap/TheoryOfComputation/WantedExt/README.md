@@ -5,8 +5,6 @@ navigation: collection
 
 # WantedExt
 
-Established results whose Lean implementation or proof is deferred.
-
 - [Algebraic](algebraic/README.md)
 - [Co CStrong Normalization](co-cstrong-normalization-wanted/README.md)
 - [Cook–Levin theorem: SAT is NP-complete](cook-levin-sat-np-complete.md)

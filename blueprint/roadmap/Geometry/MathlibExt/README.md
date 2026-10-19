@@ -5,8 +5,6 @@ navigation: collection
 
 # MathlibExt
 
-Reusable, fully proved extensions to Mathlib.
-
 - [Convex](convex/README.md)
 - [Dissections](dissections/README.md)
 - [Euclidean](euclidean/README.md)

@@ -5,6 +5,4 @@ navigation: collection
 
 # WantedExt
 
-Established results whose Lean implementation or proof is deferred.
-
 - [Graph Isomorphism Quasipolynomial](graph-isomorphism-quasipolynomial-wanted/README.md)

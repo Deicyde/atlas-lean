@@ -5,8 +5,6 @@ navigation: collection
 
 # CSLibExt
 
-Reusable, fully proved computer-science developments built on MathlibExt.
-
 - [Automata](automata/README.md)
 - [Circuit](circuit/README.md)
 - [Distributed](distributed/README.md)

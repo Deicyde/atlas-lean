@@ -31,7 +31,7 @@ permissions:
 
 env:
   AUTOFORM_SOURCE: "https://github.com/facebookresearch/autoform-bot.git"
-  AUTOFORM_REF: "1c92cee634596f30b3469913f5610acbc8dde1e3"
+  AUTOFORM_REF: "eed1e61570a98d796ebfc4ae3a6a44326f0b9303"
 
 concurrency:
   group: blueprint-pages
@@ -49,7 +49,7 @@ jobs:
         with:
           version: "0.12.1"
 
-      # The roadmap is generated from the v2 sources and v1/Atlas/*/report.json;
+      # The roadmap is generated from the v2 library sources;
       # fail if the committed pages differ from what the generator writes.
       - name: Check the generated pages
         run: >-

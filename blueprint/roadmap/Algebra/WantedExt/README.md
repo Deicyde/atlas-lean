@@ -5,8 +5,6 @@ navigation: collection
 
 # WantedExt
 
-Established results whose Lean implementation or proof is deferred.
-
 - [Power Series](power-series/README.md)
 - [Abel–Ruffini theorem](abel-ruffini.md)
 - [Complete Local Ring Reconstruction](complete-local-ring-reconstruction-wanted/README.md)

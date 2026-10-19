@@ -5,8 +5,6 @@ navigation: collection
 
 # WantedExt
 
-Established results whose Lean implementation or proof is deferred.
-
 - [Beardwood Halton Hammersley Constant](beardwood-halton-hammersley-constant-wanted/README.md)
 - [Berry Esseen Constant](berry-esseen-constant-wanted/README.md)
 - [Convex Sub Gaussian Comparison](convex-sub-gaussian-comparison-wanted/README.md)

@@ -11,6 +11,37 @@ from scripts import generate_wiki as wiki
 
 
 class NavigationTests(unittest.TestCase):
+    def test_roadmap_root_has_no_repository_preamble(self):
+        previous = "---\narticle_id: af_000000000000000000000001\n---\n# ATLAS roadmap\n"
+        rendered = wiki.render_roadmap_root(["Geometry", "Algebra"], previous)
+        self.assertEqual(
+            rendered,
+            "---\narticle_id: af_000000000000000000000001\n---\n\n"
+            "# ATLAS roadmap\n\n## Subjects\n\n"
+            "- [Geometry](Geometry/README.md)\n- [Algebra](Algebra/README.md)\n",
+        )
+
+    def test_library_navigation_omits_implementation_preamble(self):
+        for library in wiki.LIBRARIES:
+            with self.subTest(library=library):
+                tree = wiki.library_tree(library, [])
+                self.assertEqual(tree.navigation, "collection")
+                self.assertEqual(tree.prose, "")
+                wiki.assign_paths(tree, wiki.ROADMAP / "Geometry" / library)
+                self.assertEqual(
+                    wiki.render_container(tree, None),
+                    f"---\nnavigation: collection\n---\n\n# {library}\n\n",
+                )
+
+    def test_landing_page_is_navigation_not_generation_instructions(self):
+        landing = (wiki.VAULT / "README.md").read_text(encoding="utf-8")
+        self.assertIn("# ATLAS\n", landing)
+        self.assertIn("(roadmap/README.md)", landing)
+        self.assertIn("(coverage/README.md)", landing)
+        for boilerplate in ("scripts/generate_wiki.py", "progress percentages", "docstring", "archived ATLAS v1"):
+            with self.subTest(boilerplate=boilerplate):
+                self.assertNotIn(boilerplate, landing)
+
     def test_chunk_marks_only_its_pagination_ranges_transparent(self):
         children = [wiki.Container(f"Topic {index}", str(index), []) for index in range(41)]
         root = wiki.chunk("Geometry", "geometry", children)
