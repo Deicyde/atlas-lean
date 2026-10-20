@@ -619,8 +619,11 @@ def render_container(node: Container, previous: str | None, extra: str = "") -> 
 
     if node.children and all(isinstance(child, Container) and child.navigation == "transparent" for child in node.children):
         # Pagination parts read as sections of this page, not as pages to open.
+        # Each heading still links its part, which keeps the part, and so the
+        # depth of its children, in the site navigation built from these links.
         for part in node.children:
-            lines += [f"{level} {part.title}", "", *(link(child) for child in part.children), ""]
+            heading = f"[{link_text(part.title)}]({rel(vault_path, part.path.relative_to(VAULT))})"
+            lines += [f"{level} {heading}", "", *(link(child) for child in part.children), ""]
         lines.pop()
     elif node.groups:
         current = None

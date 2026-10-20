@@ -4,7 +4,7 @@ article_id: af_3174cd3b6011c755b36923df
 
 # Prime Counting
 
-## Arithmetic Large Sieve to Ramanujan Prime
+## [Arithmetic Large Sieve to Ramanujan Prime](part-01/README.md)
 
 - [Arithmetic Large Sieve](part-01/arithmetic-large-sieve-progression.md)
 - [Average Omega HFree](part-01/average-card-factors-over-h-free.md)
@@ -27,7 +27,7 @@ article_id: af_3174cd3b6011c755b36923df
 - [Prime Prime Ratio](part-01/prime-prime-ratio/README.md)
 - [Ramanujan Prime](part-01/ramanujan-prime/README.md)
 
-## Residue Class to Weighted Large Sieve
+## [Residue Class to Weighted Large Sieve](part-02/README.md)
 
 - [Residue Class](part-02/residue-class/README.md)
 - [Residue Class Psi](part-02/residue-class-psi/README.md)

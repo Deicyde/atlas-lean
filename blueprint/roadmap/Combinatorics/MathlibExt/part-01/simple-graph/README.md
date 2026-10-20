@@ -4,7 +4,7 @@ article_id: af_63aa421def40b4e8edafc126
 
 # Simple Graph
 
-## Coloring to Dirac
+## [Coloring to Dirac](part-01/README.md)
 
 - [Coloring](part-01/coloring/README.md)
 - [Balanced](part-01/is-balanced.md)
@@ -27,7 +27,7 @@ article_id: af_63aa421def40b4e8edafc126
 - [Dichromatic](part-01/dichromatic/README.md)
 - [Dirac](part-01/dirac.md)
 
-## Domination to List Coloring
+## [Domination to List Coloring](part-02/README.md)
 
 - [Domination](part-02/domination/README.md)
 - [Edge Coloring](part-02/edge-coloring/README.md)
@@ -50,7 +50,7 @@ article_id: af_63aa421def40b4e8edafc126
 - [Konig Matching Cover](part-02/konig-matching-cover/README.md)
 - [List Coloring](part-02/list-coloring/README.md)
 
-## Longest Cycle to Transfer Matrix Of GRH
+## [Longest Cycle to Transfer Matrix Of GRH](part-03/README.md)
 
 - [Longest Cycle](part-03/is-longest-cycle.md)
 - [Matrix Tree](part-03/matrix-tree/README.md)
@@ -73,7 +73,7 @@ article_id: af_63aa421def40b4e8edafc126
 - [Subgraph Isomorphism](part-03/subgraph-isomorphism/README.md)
 - [Transfer Matrix Of GRH](part-03/transfer-matrix-of-grh/README.md)
 
-## Vertex Connectivity to Vizing
+## [Vertex Connectivity to Vizing](part-04/README.md)
 
 - [Vertex Connectivity](part-04/vertex-connectivity/README.md)
 - [Vertex Transitive](part-04/is-vertex-transitive.md)

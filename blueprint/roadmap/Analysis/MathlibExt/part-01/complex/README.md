@@ -4,7 +4,7 @@ article_id: af_b439f328febf446b8a0b8a85
 
 # Complex
 
-## Wiman to Schwarz Pick
+## [Wiman to Schwarz Pick](part-01/README.md)
 
 - [Wiman](part-01/wiman/README.md)
 - [Argument Principle](part-01/argument-principle/README.md)
@@ -27,7 +27,7 @@ article_id: af_b439f328febf446b8a0b8a85
 - [Rouche](part-01/rouche-closed-ball.md)
 - [Schwarz Pick](part-01/schwarz-pick.md)
 
-## Schwarz Reflection to Wiman
+## [Schwarz Reflection to Wiman](part-02/README.md)
 
 - [Schwarz Reflection](part-02/schwarz-reflection.md)
 - [Weierstrass Factorization](part-02/weierstrass-factorization.md)

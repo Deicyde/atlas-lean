@@ -5,7 +5,7 @@ navigation: collection
 
 # MathlibExt
 
-## Arithmetic Function to Padics
+## [Arithmetic Function to Padics](part-01/README.md)
 
 - [Arithmetic Function](part-01/arithmetic-function/README.md)
 - [Beatty](part-01/beatty/README.md)
@@ -28,7 +28,7 @@ navigation: collection
 - [Number Field](part-01/number-field/README.md)
 - [Padics](part-01/padics/README.md)
 
-## Polynomial to BNomial Number Type3
+## [Polynomial to BNomial Number Type3](part-02/README.md)
 
 - [Polynomial](part-02/polynomial/README.md)
 - [Prime Counting](part-02/prime-counting/README.md)
@@ -51,7 +51,7 @@ navigation: collection
 - [BNomial Coefficient](part-02/bnomial-coefficient/README.md)
 - [BNomial Number Type3](part-02/bnomial-number-type3/README.md)
 
-## Bang Zsigmondy to Collatz
+## [Bang Zsigmondy to Collatz](part-03/README.md)
 
 - [Bang Zsigmondy](part-03/bang-zsigmondy/README.md)
 - [Base Recognizable](part-03/base-recognizable/README.md)
@@ -74,7 +74,7 @@ navigation: collection
 - [Cobham Gap Theorem](part-03/cobham-gap-theorem/README.md)
 - [Collatz](part-03/collatz/README.md)
 
-## Comma Sequence to Even Perfect Numbers
+## [Comma Sequence to Even Perfect Numbers](part-04/README.md)
 
 - [Comma Sequence](part-04/comma-sequence/README.md)
 - [Complementary Sequence Determined By Subsequence Sum Equation](part-04/complementary-sequence-determined-by-subsequence/README.md)
@@ -97,7 +97,7 @@ navigation: collection
 - [Euler Prime](part-04/euler-prime/README.md)
 - [Even Perfect Numbers](part-04/euler-characterization-of-even-perfect-n.md)
 
-## Even Pseudoprime to Generalized Fibocatalan Number
+## [Even Pseudoprime to Generalized Fibocatalan Number](part-05/README.md)
 
 - [Even Pseudoprime](part-05/even-pseudoprime/README.md)
 - [Exponential Pascal Matrix](part-05/exponential-pascal-matrix/README.md)
@@ -120,7 +120,7 @@ navigation: collection
 - [Generalized Fermat Number](part-05/generalized-fermat-number.md)
 - [Generalized Fibocatalan Number](part-05/generalized-fibocatalan-number/README.md)
 
-## Generalized Fibonacci Polynomial to Hurwitz Quaternion Waring
+## [Generalized Fibonacci Polynomial to Hurwitz Quaternion Waring](part-06/README.md)
 
 - [Generalized Fibonacci Polynomial](part-06/generalized-fibonacci-polynomial/README.md)
 - [Generalized Fuss Catalan Numbers FMNK](part-06/generalized-fuss-catalan-numbers-fmnk/README.md)
@@ -143,7 +143,7 @@ navigation: collection
 - [Hilbert Waring](part-06/hilbert-waring.md)
 - [Hurwitz Quaternion Waring](part-06/hurwitz-quaternion-waring-bound.md)
 
-## Hyperfactorial Partition to Lucas Special Prime
+## [Hyperfactorial Partition to Lucas Special Prime](part-07/README.md)
 
 - [Hyperfactorial Partition](part-07/hyperfactorial-partition/README.md)
 - [Imaginary Quadratic Discriminant](part-07/imaginary-quadratic-discriminant/README.md)
@@ -166,7 +166,7 @@ navigation: collection
 - [Lucas Sequence](part-07/lucas-sequence/README.md)
 - [Lucas Special Prime](part-07/lucas-special-prime/README.md)
 
-## Melham Gibonacci to Pell Number Sequence
+## [Melham Gibonacci to Pell Number Sequence](part-08/README.md)
 
 - [Melham Gibonacci](part-08/melham-gibonacci/README.md)
 - [Multiple Counting Jacobsthal Sequence](part-08/multiple-counting-jacobsthal-sequence.md)
@@ -189,7 +189,7 @@ navigation: collection
 - [Pell Lucas Sequence](part-08/pell-lucas-sequence/README.md)
 - [Pell Number Sequence](part-08/pell-number.md)
 
-## Pentanacci Number to Prime Support
+## [Pentanacci Number to Prime Support](part-09/README.md)
 
 - [Pentanacci Number](part-09/pentanacci-number.md)
 - [Perrin Sequence](part-09/perrin-sequence.md)
@@ -212,7 +212,7 @@ navigation: collection
 - [Prime Power Lifting](part-09/prime-power-lifting/README.md)
 - [Prime Support](part-09/same-prime-support.md)
 
-## Primitive Divisor to Steuerwald Three Perfect
+## [Primitive Divisor to Steuerwald Three Perfect](part-10/README.md)
 
 - [Primitive Divisor](part-10/primitive-divisor/README.md)
 - [Prodigious Number](part-10/prodigious-number/README.md)
@@ -235,7 +235,7 @@ navigation: collection
 - [Stern Sequence](part-10/stern-sequence/README.md)
 - [Steuerwald Three Perfect](part-10/steuerwald-three-perfect/README.md)
 
-## Stormer to Wieferich Prime
+## [Stormer to Wieferich Prime](part-11/README.md)
 
 - [Stormer](part-11/stormer-theorem.md)
 - [Sylvester Coin Distinct Odd Primes](part-11/sylvester-coin-distinct-odd-primes.md)
@@ -258,7 +258,7 @@ navigation: collection
 - [Ward SBinomial Carry Product](part-11/ward-sbinomial-carry-product/README.md)
 - [Wieferich Prime](part-11/wieferich-prime/README.md)
 
-## Wilson Quotient to Zeta Three Product Formulas
+## [Wilson Quotient to Zeta Three Product Formulas](part-12/README.md)
 
 - [Wilson Quotient](part-12/wilson-quotient/README.md)
 - [Wolstenholme](part-12/wolstenholme.md)

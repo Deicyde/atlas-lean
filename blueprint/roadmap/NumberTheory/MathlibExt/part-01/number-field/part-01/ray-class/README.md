@@ -4,7 +4,7 @@ article_id: af_a8eb0fff024c28f696119c0f
 
 # Ray Class
 
-## Artin Map to Ray Class To Class Group
+## [Artin Map to Ray Class To Class Group](part-01/README.md)
 
 - [Artin Map](part-01/artin-map/README.md)
 - [Artin Map Restriction](part-01/artin-map-restriction/README.md)
@@ -27,7 +27,7 @@ article_id: af_a8eb0fff024c28f696119c0f
 - [Quotient To Ray Class](part-01/quotient-to-ray-class/README.md)
 - [Ray Class To Class Group](part-01/ray-class-to-class-group/README.md)
 
-## Ray Group to Weak Approximation
+## [Ray Group to Weak Approximation](part-02/README.md)
 
 - [Ray Group](part-02/ray-group/README.md)
 - [Residue Sign](part-02/residue-sign/README.md)

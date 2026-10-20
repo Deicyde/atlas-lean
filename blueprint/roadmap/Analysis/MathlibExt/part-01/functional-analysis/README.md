@@ -4,7 +4,7 @@ article_id: af_66e9bf23ab0fd64f3674bb66
 
 # Functional Analysis
 
-## Banach Limit to Milman Pettis
+## [Banach Limit to Milman Pettis](part-01/README.md)
 
 - [Banach Limit](part-01/banach-limit.md)
 - [Banach Saks](part-01/banach-saks.md)
@@ -27,7 +27,7 @@ article_id: af_66e9bf23ab0fd64f3674bb66
 - [Markov Kakutani](part-01/markov-kakutani-common-fixed-point.md)
 - [Milman Pettis](part-01/milman-pettis.md)
 
-## Muntz Szasz to Rosenthal L1
+## [Muntz Szasz to Rosenthal L1](part-02/README.md)
 
 - [Muntz Szasz](part-02/muntz-szasz-nat.md)
 - [Pitt](part-02/pitt.md)

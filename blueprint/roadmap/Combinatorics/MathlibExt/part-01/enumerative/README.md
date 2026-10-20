@@ -4,7 +4,7 @@ article_id: af_3f00b6074fa9362c72e9b573
 
 # Enumerative
 
-## Partition to Catalan Generating Function
+## [Partition to Catalan Generating Function](part-01/README.md)
 
 - [Partition](part-01/partition/README.md)
 - [Aerated Central Binomial Number](part-01/aerated-central-binomial-number.md)
@@ -27,7 +27,7 @@ article_id: af_3f00b6074fa9362c72e9b573
 - [Callan Sequence](part-01/callan-sequence.md)
 - [Catalan Generating Function](part-01/catalan-generating-function-sqrt.md)
 
-## Catalan Harmonic Generating Function to Euler Seidel Matrix
+## [Catalan Harmonic Generating Function to Euler Seidel Matrix](part-02/README.md)
 
 - [Catalan Harmonic Generating Function](part-02/catalan-harmonic-generating-function/README.md)
 - [Catalan Larcombe French Number](part-02/catalan-larcombe-french-number.md)
@@ -50,7 +50,7 @@ article_id: af_3f00b6074fa9362c72e9b573
 - [Engel Bell Log Convexity](part-02/engel-bell-log-convexity.md)
 - [Euler Seidel Matrix](part-02/euler-seidel-matrix/README.md)
 
-## Eulerian Polynomial Hankel to Generalized Stirling Matrix Factorization
+## [Eulerian Polynomial Hankel to Generalized Stirling Matrix Factorization](part-03/README.md)
 
 - [Eulerian Polynomial Hankel](part-03/eulerian-polynomial-hankel-determinant.md)
 - [Even Table Weight](part-03/even-table-weight/README.md)
@@ -73,7 +73,7 @@ article_id: af_3f00b6074fa9362c72e9b573
 - [Generalized Rascal Triangle](part-03/is-generalized-rascal-triangle.md)
 - [Generalized Stirling Matrix Factorization](part-03/generalized-stirling-matrix-factorizatio.md)
 
-## Generalized Stirling Numbers to Marked Step In AMulti Marked Dyck Path
+## [Generalized Stirling Numbers to Marked Step In AMulti Marked Dyck Path](part-04/README.md)
 
 - [Generalized Stirling Numbers](part-04/generalized-stirling-numbers/README.md)
 - [Heilermann Formula](part-04/heilermann-formula/README.md)
@@ -96,7 +96,7 @@ article_id: af_3f00b6074fa9362c72e9b573
 - [Marked Step In AMarked Dyck Path](part-04/marked-step-in-amarked-dyck-path/README.md)
 - [Marked Step In AMulti Marked Dyck Path](part-04/marked-step-in-amulti-marked-dyck-path/README.md)
 
-## Median Euler Number to Narayana Sequence
+## [Median Euler Number to Narayana Sequence](part-05/README.md)
 
 - [Median Euler Number](part-05/median-euler-number/README.md)
 - [Median Genocchi Divisibility](part-05/median-genocchi-odd-divisibility.md)
@@ -119,7 +119,7 @@ article_id: af_3f00b6074fa9362c72e9b573
 - [Narayana Polynomial](part-05/narayana-polynomial/README.md)
 - [Narayana Sequence](part-05/narayana-cows-sequence.md)
 
-## Nontrivial1234 3412 Classes to Perfect Compositions
+## [Nontrivial1234 3412 Classes to Perfect Compositions](part-06/README.md)
 
 - [Nontrivial1234 3412 Classes](part-06/card-nontrivial-1234-3412-classes.md)
 - [Octagonal Pyramidal Composition](part-06/octagonal-pyramidal-number-eq-compositio.md)
@@ -142,7 +142,7 @@ article_id: af_3f00b6074fa9362c72e9b573
 - [Pentagonal Number](part-06/pentagonal-number/README.md)
 - [Perfect Compositions](part-06/perfect-compositions/README.md)
 
-## Pollak Partial Parking Functions to Shifted Riordan Array Row Sums
+## [Pollak Partial Parking Functions to Shifted Riordan Array Row Sums](part-07/README.md)
 
 - [Pollak Partial Parking Functions](part-07/pollak-partial-parking-functions-card.md)
 - [Poly Initial Expansion](part-07/poly-initial-expansion/README.md)
@@ -165,7 +165,7 @@ article_id: af_3f00b6074fa9362c72e9b573
 - [Shifted Eulerian Hankel](part-07/hankel-transform-shifted-eulerian-polyno.md)
 - [Shifted Riordan Array Row Sums](part-07/shifted-riordan-array-constant-term-and.md)
 
-## Signed Robbins Number to Twin Powers
+## [Signed Robbins Number to Twin Powers](part-08/README.md)
 
 - [Signed Robbins Number](part-08/signed-robbins-number/README.md)
 - [Signed Stirling First](part-08/signed-stirling-first.md)
@@ -188,7 +188,7 @@ article_id: af_3f00b6074fa9362c72e9b573
 - [Triple Factorization](part-08/triple-factorization-of-dot-diagram.md)
 - [Twin Powers](part-08/twin-powers.md)
 
-## ULDMotzkin Number Of Rank R to Zagier Number
+## [ULDMotzkin Number Of Rank R to Zagier Number](part-09/README.md)
 
 - [ULDMotzkin Number Of Rank R](part-09/uldmotzkin-number-of-rank-r/README.md)
 - [Union Closed Orderly](part-09/union-closed-orderly/README.md)

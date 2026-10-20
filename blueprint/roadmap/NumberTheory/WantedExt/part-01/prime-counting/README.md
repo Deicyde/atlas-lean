@@ -4,7 +4,7 @@ article_id: af_a3ae95d78a3f73c6ccb1f089
 
 # Prime Counting
 
-## Axler Nth Prime Lower Bound Wanted to Mandl Prime Sum Wanted
+## [Axler Nth Prime Lower Bound Wanted to Mandl Prime Sum Wanted](part-01/README.md)
 
 - [Axler Nth Prime Lower Bound Wanted](part-01/axler-nth-prime-lower-bound.md)
 - [Axler Nth Prime Upper Bound Wanted](part-01/axler-nth-prime-upper-bound.md)
@@ -27,7 +27,7 @@ article_id: af_a3ae95d78a3f73c6ccb1f089
 - [Laishram Ramanujan Prime Bound Wanted](part-01/laishram-ramanujan-prime-bound.md)
 - [Mandl Prime Sum Wanted](part-01/mandl-prime-sum-inequality.md)
 
-## Platt Trudgian Riemann Hypothesis Wanted to Uniform Prime Counting Wanted
+## [Platt Trudgian Riemann Hypothesis Wanted to Uniform Prime Counting Wanted](part-02/README.md)
 
 - [Platt Trudgian Riemann Hypothesis Wanted](part-02/platt-trudgian-rh-to-height.md)
 - [Prime Prime Counting Wanted](part-02/prime-prime-counting-asymptotic.md)

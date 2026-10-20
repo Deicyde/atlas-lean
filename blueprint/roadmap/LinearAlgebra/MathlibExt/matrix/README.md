@@ -4,7 +4,7 @@ article_id: af_e551606fe376cd7328f3543f
 
 # Matrix
 
-## Factorizations to Real SVD
+## [Factorizations to Real SVD](part-01/README.md)
 
 - [Factorizations](part-01/factorizations/README.md)
 - [Adj Matrix Pow Walk](part-01/adj-matrix-pow-weighted-walk-sum.md)
@@ -27,7 +27,7 @@ article_id: af_e551606fe376cd7328f3543f
 - [Polar Decomposition GL](part-01/polar-decomposition-gl/README.md)
 - [Real SVD](part-01/real-svd/README.md)
 
-## Reduced Row Echelon to Zagier Matrix Inverse
+## [Reduced Row Echelon to Zagier Matrix Inverse](part-02/README.md)
 
 - [Reduced Row Echelon](part-02/reduced-row-echelon/README.md)
 - [Rouche Capelli](part-02/rouche-capelli.md)

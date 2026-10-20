@@ -10,7 +10,7 @@ This section assembles classical results about Euclidean plane figures, includin
 
 ## Contents
 
-### Angle Bisector to Japanese Quads
+### [Angle Bisector to Japanese Quads](part-01/README.md)
 
 - [Angle Bisector](part-01/angle-bisector/README.md)
 - [Angle Trisection Impossible](part-01/angle-trisection-impossible.md)
@@ -33,7 +33,7 @@ This section assembles classical results about Euclidean plane figures, includin
 - [Intercept Theorem](part-01/intercept-theorem.md)
 - [Japanese Quads](part-01/japanese-theorem-concyclic-quadrilateral.md)
 
-### Johnson–Lindenstrauss lemma to Viviani
+### [Johnson–Lindenstrauss lemma to Viviani](part-02/README.md)
 
 - [Johnson–Lindenstrauss lemma](part-02/johnson-lindenstrauss.md)
 - [Jung](part-02/jung.md)

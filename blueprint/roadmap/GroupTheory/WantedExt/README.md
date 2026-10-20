@@ -5,7 +5,7 @@ navigation: collection
 
 # WantedExt
 
-## Absolute Profinite Rigidity to Golden Ratio Thompson Embed
+## [Absolute Profinite Rigidity to Golden Ratio Thompson Embed](part-01/README.md)
 
 - [Absolute Profinite Rigidity](part-01/absolute-profinite-rigidity-wanted/README.md)
 - [Ado Iwasawa Wanted](part-01/ado-iwasawa.md)
@@ -28,7 +28,7 @@ navigation: collection
 - [Glauberman ZStar Wanted](part-01/glauberman-z-star.md)
 - [Golden Ratio Thompson Embed](part-01/golden-ratio-thompson-embed-wanted/README.md)
 
-## Golod Shafarevich to Word Problem Solvable Shared
+## [Golod Shafarevich to Word Problem Solvable Shared](part-02/README.md)
 
 - [Golod Shafarevich](part-02/golod-shafarevich-wanted/README.md)
 - [Gorenstein Walter Wanted](part-02/gorenstein-walter.md)

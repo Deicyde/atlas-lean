@@ -5,7 +5,7 @@ navigation: collection
 
 # WantedExt
 
-## Asymptotics to Dirichlet Space Polynomial Density
+## [Asymptotics to Dirichlet Space Polynomial Density](part-01/README.md)
 
 - [Asymptotics](part-01/asymptotics/README.md)
 - [Calculus](part-01/calculus/README.md)
@@ -28,7 +28,7 @@ navigation: collection
 - [Dirichlet Eigenvalues Wanted](part-01/dirichlet-eigenvalues-eq-nat-sq.md)
 - [Dirichlet Space Polynomial Density](part-01/dirichlet-space-polynomial-density-wanted/README.md)
 
-## Entire Zeros Ones Lines to Hayman Spherical Area Ratio
+## [Entire Zeros Ones Lines to Hayman Spherical Area Ratio](part-02/README.md)
 
 - [Entire Zeros Ones Lines](part-02/entire-zeros-ones-lines-wanted/README.md)
 - [Erdos Entire Function Countable Dense Preimage](part-02/erdos-entire-function-countable-dense-preimage-w/README.md)
@@ -51,7 +51,7 @@ navigation: collection
 - [Hayman Robertson39](part-02/hayman-robertson39-wanted/README.md)
 - [Hayman Spherical Area Ratio](part-02/hayman-spherical-area-ratio-wanted/README.md)
 
-## Heat Kernel to Rouche Wanted
+## [Heat Kernel to Rouche Wanted](part-03/README.md)
 
 - [Heat Kernel](part-03/heat-kernel-wanted/README.md)
 - [Herman Problem290](part-03/herman-problem290-wanted/README.md)
@@ -74,7 +74,7 @@ navigation: collection
 - [Rising Sun](part-03/rising-sun-wanted/README.md)
 - [Rouche Wanted](part-03/rouche-zero-count-eq.md)
 
-## Rubel HInfinity Coherence to Wirsing Constant
+## [Rubel HInfinity Coherence to Wirsing Constant](part-04/README.md)
 
 - [Rubel HInfinity Coherence](part-04/rubel-hinfinity-coherence-wanted/README.md)
 - [Runge Wanted](part-04/runge.md)

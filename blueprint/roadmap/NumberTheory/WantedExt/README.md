@@ -5,7 +5,7 @@ navigation: collection
 
 # WantedExt
 
-## Arithmetic Function to Calegari Dimitrov Tang Linear Independent Wanted
+## [Arithmetic Function to Calegari Dimitrov Tang Linear Independent Wanted](part-01/README.md)
 
 - [Arithmetic Function](part-01/arithmetic-function/README.md)
 - [Digits](part-01/digits/README.md)
@@ -28,7 +28,7 @@ navigation: collection
 - [Buchi Square Sequence Bound](part-01/buchi-square-sequence-bound-wanted/README.md)
 - [Calegari Dimitrov Tang Linear Independent Wanted](part-01/cdt-linear-independent.md)
 
-## Chebyshev Sign Change to Erdos Minimum Overlap Constant
+## [Chebyshev Sign Change to Erdos Minimum Overlap Constant](part-02/README.md)
 
 - [Chebyshev Sign Change](part-02/chebyshev-sign-change-wanted/README.md)
 - [Chowla And Twin Prime Over Fq T](part-02/chowla-and-twin-prime-over-fq-twanted/README.md)
@@ -51,7 +51,7 @@ navigation: collection
 - [Erdos Graham Covering](part-02/erdos-graham-covering-wanted/README.md)
 - [Erdos Minimum Overlap Constant](part-02/erdos-minimum-overlap-constant-wanted/README.md)
 
-## Erdos Problem1138 to Erdos Problem871
+## [Erdos Problem1138 to Erdos Problem871](part-03/README.md)
 
 - [Erdos Problem1138](part-03/erdos-problem1138-wanted/README.md)
 - [Erdos Problem1148](part-03/erdos-problem1148-wanted/README.md)
@@ -74,7 +74,7 @@ navigation: collection
 - [Erdos Problem869](part-03/erdos-problem869-wanted/README.md)
 - [Erdos Problem871](part-03/erdos-problem871-wanted/README.md)
 
-## Erdos Problem937 to Geometric Sums Two Squares
+## [Erdos Problem937 to Geometric Sums Two Squares](part-04/README.md)
 
 - [Erdos Problem937](part-04/erdos-problem937-wanted/README.md)
 - [Erdos Problem997](part-04/erdos-problem997-wanted/README.md)
@@ -97,7 +97,7 @@ navigation: collection
 - [Genocchi Explicit](part-04/genocchi-explicit-wanted/README.md)
 - [Geometric Sums Two Squares](part-04/geometric-sums-two-squares-wanted/README.md)
 
-## Hardy Littlewood Prime Tuple Wanted to Odd Greedy Expansion
+## [Hardy Littlewood Prime Tuple Wanted to Odd Greedy Expansion](part-05/README.md)
 
 - [Hardy Littlewood Prime Tuple Wanted](part-05/hardy-littlewood-prime-tuple-conjecture.md)
 - [Harmonic Valuation](part-05/harmonic-valuation-wanted/README.md)
@@ -120,7 +120,7 @@ navigation: collection
 - [Nishioka Mahler Rationality Wanted](part-05/nishioka-algebraic-k-mahler-is-rational.md)
 - [Odd Greedy Expansion](part-05/odd-greedy-expansion-wanted/README.md)
 
-## Odlyzko Root Discriminant Wanted to Ramanujan Harmonic Identity
+## [Odlyzko Root Discriminant Wanted to Ramanujan Harmonic Identity](part-06/README.md)
 
 - [Odlyzko Root Discriminant Wanted](part-06/odlyzko-root-discr-ge.md)
 - [Oeis A002897](part-06/oeis-a002897-wanted/README.md)
@@ -143,7 +143,7 @@ navigation: collection
 - [Rademacher LILConstant](part-06/rademacher-lilconstant-wanted/README.md)
 - [Ramanujan Harmonic Identity](part-06/ramanujan-harmonic-identity-wanted/README.md)
 
-## Ramanujan Tau to Two Complexity
+## [Ramanujan Tau to Two Complexity](part-07/README.md)
 
 - [Ramanujan Tau](part-07/ramanujan-tau-wanted/README.md)
 - [Regular Residues Wanted](part-07/is-regular-mod-iff-gcd-sq-eq-gcd.md)
@@ -166,7 +166,7 @@ navigation: collection
 - [Tu Deng Conjecture Wanted](part-07/tu-deng-conjecture-holds.md)
 - [Two Complexity](part-07/two-complexity-wanted/README.md)
 
-## Two Ninety Theorem to Zagier Hoffman Positive Char
+## [Two Ninety Theorem to Zagier Hoffman Positive Char](part-08/README.md)
 
 - [Two Ninety Theorem](part-08/two-ninety-theorem-wanted/README.md)
 - [Two Sets Sumset Squares](part-08/two-sets-sumset-squares-wanted/README.md)

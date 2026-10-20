@@ -5,7 +5,7 @@ navigation: collection
 
 # WantedExt
 
-## Convex to Hopf Rinow
+## [Convex to Hopf Rinow](part-01/README.md)
 
 - [Convex](part-01/convex/README.md)
 - [Polyhedra](part-01/polyhedra/README.md)
@@ -28,7 +28,7 @@ navigation: collection
 - [Hippocrates Lunes](part-01/hippocrates-lunes-wanted/README.md)
 - [Hopf Rinow](part-01/hopf-rinow-wanted/README.md)
 
-## Hopf Umlaufsatz to Optimal Moebius
+## [Hopf Umlaufsatz to Optimal Moebius](part-02/README.md)
 
 - [Hopf Umlaufsatz](part-02/hopf-umlaufsatz-wanted/README.md)
 - [Hyperplane Slicing Universal](part-02/hyperplane-slicing-universal-wanted/README.md)
@@ -51,7 +51,7 @@ navigation: collection
 - [Newlander Nirenberg](part-02/newlander-nirenberg-wanted/README.md)
 - [Optimal Moebius](part-02/optimal-moebius-wanted/README.md)
 
-## Parallel Postulate to Weinstein Conjecture3 D
+## [Parallel Postulate to Weinstein Conjecture3 D](part-03/README.md)
 
 - [Parallel Postulate](part-03/parallel-postulate-wanted/README.md)
 - [Pascal Pappus](part-03/pascal-pappus-wanted/README.md)

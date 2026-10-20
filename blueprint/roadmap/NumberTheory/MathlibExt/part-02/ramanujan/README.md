@@ -4,7 +4,7 @@ article_id: af_2843fbabc75b48cfa8baf4b3
 
 # Ramanujan
 
-## Part1 Ch1 Entry1 to Part1 Ch2 Entry7 Example3
+## [Part1 Ch1 Entry1 to Part1 Ch2 Entry7 Example3](part-01/README.md)
 
 - [Part1 Ch1 Entry1](part-01/ramanujan-part1-ch1-entry1-magicsquare3.md)
 - [Part1 Ch2](part-01/ramanujan-part1-ch2-entry3-infinite-eval.md)
@@ -27,7 +27,7 @@ article_id: af_2843fbabc75b48cfa8baf4b3
 - [Part1 Ch2 Entry7 Example2](part-01/ramanujan-part1-ch2-entry7-example2.md)
 - [Part1 Ch2 Entry7 Example3](part-01/ramanujan-part1-ch2-entry7-example3.md)
 
-## Part1 Ch2 Entry7 Example4 to Part1 Ch3 Entry13
+## [Part1 Ch2 Entry7 Example4 to Part1 Ch3 Entry13](part-02/README.md)
 
 - [Part1 Ch2 Entry7 Example4](part-02/ramanujan-part1-ch2-entry7-example4.md)
 - [Part1 Ch2 Entry7 Example5 Alternating](part-02/ramanujan-part1-ch2-entry7-example5-alte.md)
@@ -50,7 +50,7 @@ article_id: af_2843fbabc75b48cfa8baf4b3
 - [Part1 Ch3 Entry12 Summable Succ N](part-02/part1-ch3-entry12-summable-succ-n/README.md)
 - [Part1 Ch3 Entry13](part-02/ramanujan-part1-ch3-entry13.md)
 
-## Part1 Ch3 Entry13 Corollary Schroder to Part1 Ch3 Entry4
+## [Part1 Ch3 Entry13 Corollary Schroder to Part1 Ch3 Entry4](part-03/README.md)
 
 - [Part1 Ch3 Entry13 Corollary Schroder](part-03/part1-ch3-entry13-corollary-schroder/README.md)
 - [Part1 Ch3 Entry14 Cor1 Catalanpowerseries](part-03/ramanujan-part1-ch3-entry14-cor1-catalan.md)
@@ -73,7 +73,7 @@ article_id: af_2843fbabc75b48cfa8baf4b3
 - [Part1 Ch3 Entry3 Psisummable](part-03/part1-ch3-entry3-psisummable/README.md)
 - [Part1 Ch3 Entry4](part-03/ramanujan-part1-ch3-entry4.md)
 
-## Part1 Ch3 Entry4 Inner Summable to Part1 Ch3 Section8 Example4 Integrable
+## [Part1 Ch3 Entry4 Inner Summable to Part1 Ch3 Section8 Example4 Integrable](part-04/README.md)
 
 - [Part1 Ch3 Entry4 Inner Summable](part-04/ramanujan-part1-ch3-entry4-inner-summabl.md)
 - [Part1 Ch3 Entry5](part-04/ramanujan-part1-ch3-entry5.md)

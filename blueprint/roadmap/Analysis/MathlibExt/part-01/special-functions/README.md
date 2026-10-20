@@ -4,7 +4,7 @@ article_id: af_3fedaa4200a2bf6c9d3756be
 
 # Special Functions
 
-## Elliptic to Gauss Hypergeometric Summation Klamkin
+## [Elliptic to Gauss Hypergeometric Summation Klamkin](part-01/README.md)
 
 - [Elliptic](part-01/elliptic/README.md)
 - [Exponential Integral](part-01/exponential-integral/README.md)
@@ -27,7 +27,7 @@ article_id: af_3fedaa4200a2bf6c9d3756be
 - [Gauss Hypergeometric Summation Frisch](part-01/gauss-hypergeometric-summation-frisch.md)
 - [Gauss Hypergeometric Summation Klamkin](part-01/gauss-hypergeometric-summation-klamkin/README.md)
 
-## Generalized Hypergeometric to Takagi Function
+## [Generalized Hypergeometric to Takagi Function](part-02/README.md)
 
 - [Generalized Hypergeometric](part-02/generalized-hypergeometric/README.md)
 - [Jacobi Theta Product](part-02/jacobi-theta-product/README.md)

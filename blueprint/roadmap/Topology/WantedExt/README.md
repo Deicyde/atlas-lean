@@ -5,7 +5,7 @@ navigation: collection
 
 # WantedExt
 
-## Annulus Shared to Hurewicz
+## [Annulus Shared to Hurewicz](part-01/README.md)
 
 - [Annulus Shared](part-01/annulus-shared/README.md)
 - [Annulus Theorem Dim Four Wanted](part-01/annulus-theorem-dim-four.md)
@@ -28,7 +28,7 @@ navigation: collection
 - [House With Two Rooms](part-01/house-with-two-rooms-wanted/README.md)
 - [Hurewicz](part-01/hurewicz-wanted/README.md)
 
-## Kirk Normal Structure to Watanabe Smale Disproof Wanted
+## [Kirk Normal Structure to Watanabe Smale Disproof Wanted](part-02/README.md)
 
 - [Kirk Normal Structure](part-02/kirk-normal-structure-wanted/README.md)
 - [Linking Wanted](part-02/exists-nonisotopic-link.md)

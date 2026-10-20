@@ -4,7 +4,7 @@ article_id: af_bd8b31d08f5ed66b92069249
 
 # Ramanujan
 
-## Part1 Ch5 Entry1 to Part1 Ch7 Entry10 Zeta4
+## [Part1 Ch5 Entry1 to Part1 Ch7 Entry10 Zeta4](part-01/README.md)
 
 - [Part1 Ch5 Entry1](part-01/ramanujan-part1-ch5-entry1.md)
 - [Part1 Ch5 Entry10b Euleriansymmetry](part-01/part1-ch5-entry10b-euleriansymmetry/README.md)
@@ -27,7 +27,7 @@ article_id: af_bd8b31d08f5ed66b92069249
 - [Part1 Ch7 Entry10 Zeta2](part-01/part1-ch7-entry10-zeta2/README.md)
 - [Part1 Ch7 Entry10 Zeta4](part-01/ramanujan-part1-ch7-entry10-zeta4.md)
 
-## Part1 Ch7 Entry10 Zetaviabernoulli to Part1 Ch8 Entry10 Qgammalimit
+## [Part1 Ch7 Entry10 Zetaviabernoulli to Part1 Ch8 Entry10 Qgammalimit](part-02/README.md)
 
 - [Part1 Ch7 Entry10 Zetaviabernoulli](part-02/part1-ch7-entry10-zetaviabernoulli/README.md)
 - [Part1 Ch7 Entry13 Bernoullipolyadd](part-02/ramanujan-part1-ch7-entry13-bernoullipol.md)
@@ -50,7 +50,7 @@ article_id: af_bd8b31d08f5ed66b92069249
 - [Part1 Ch7 Power Difference](part-02/part1-ch7-power-difference/README.md)
 - [Part1 Ch8 Entry10 Qgammalimit](part-02/ramanujan-part1-ch8-entry10-qgammalimit.md)
 
-## Part1 Ch8 Entry11 Qgammafunctional to Part1 Ch9 Entry1 Logratio
+## [Part1 Ch8 Entry11 Qgammafunctional to Part1 Ch9 Entry1 Logratio](part-03/README.md)
 
 - [Part1 Ch8 Entry11 Qgammafunctional](part-03/part1-ch8-entry11-qgammafunctional/README.md)
 - [Part1 Ch8 Entry12 Qgammaintegers](part-03/part1-ch8-entry12-qgammaintegers/README.md)
@@ -73,7 +73,7 @@ article_id: af_bd8b31d08f5ed66b92069249
 - [Part1 Ch9 Entry19 Catalangf](part-03/ramanujan-part1-ch9-entry19-catalangf.md)
 - [Part1 Ch9 Entry1 Logratio](part-03/ramanujan-part1-ch9-entry1-logratio.md)
 
-## Part1 Ch9 Entry2 to Part1 Ch9 Entry8 Arcsin
+## [Part1 Ch9 Entry2 to Part1 Ch9 Entry8 Arcsin](part-04/README.md)
 
 - [Part1 Ch9 Entry2](part-04/ramanujan-part1-ch9-entry2.md)
 - [Part1 Ch9 Entry20 Piseries1](part-04/ramanujan-part1-ch9-entry20-piseries1.md)

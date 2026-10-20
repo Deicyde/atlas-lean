@@ -4,7 +4,7 @@ article_id: af_249676b6034c88822cc825b5
 
 # Number Field
 
-## Completion to Principal Idele
+## [Completion to Principal Idele](part-01/README.md)
 
 - [Completion](part-01/completion/README.md)
 - [Cyclotomic](part-01/cyclotomic/README.md)
@@ -27,7 +27,7 @@ article_id: af_249676b6034c88822cc825b5
 - [Polar Density](part-01/polar-density/README.md)
 - [Principal Idele](part-01/principal-ideles-discrete.md)
 
-## Units to Unramified
+## [Units to Unramified](part-02/README.md)
 
 - [Units](part-02/finite-index-closure-range-of-lt-one-off.md)
 - [Unramified](part-02/unramified/README.md)

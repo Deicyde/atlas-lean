@@ -5,7 +5,7 @@ navigation: collection
 
 # MathlibExt
 
-## Burnside Paqb to Group Growth
+## [Burnside Paqb to Group Growth](part-01/README.md)
 
 - [Burnside Paqb](part-01/burnside-paqb/README.md)
 - [Group Action](part-01/group-action/README.md)
@@ -28,7 +28,7 @@ navigation: collection
 - [General Linear Group Exponent](part-01/general-linear-group-exponent-eq-lcm-eq.md)
 - [Group Growth](part-01/group-growth/README.md)
 
-## HNNEmbedding to Two Power Rank
+## [HNNEmbedding to Two Power Rank](part-02/README.md)
 
 - [HNNEmbedding](part-02/higman-neumann-neumann-embedding.md)
 - [Hyperbolic Group](part-02/hyperbolic-group/README.md)

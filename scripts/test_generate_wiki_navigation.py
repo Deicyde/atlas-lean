@@ -137,9 +137,8 @@ This section studies the distances determined by finite point configurations.
         root = wiki.chunk("Geometry", "geometry", [_target(index) for index in range(41)])
         wiki.assign_paths(root, wiki.ROADMAP / "Geometry")
         rendered = wiki.render_container(root, None)
-        self.assertIn("## Result 0 to Result 19\n\n- [Result 0](part-01/result-0.md)\n", rendered)
-        self.assertIn("## Part 3 of 3\n\n- [Result 40](part-03/result-40.md)\n", rendered)
-        self.assertNotIn("(part-01/README.md)", rendered)
+        self.assertIn("## [Result 0 to Result 19](part-01/README.md)\n\n- [Result 0](part-01/result-0.md)\n", rendered)
+        self.assertIn("## [Part 3 of 3](part-03/README.md)\n\n- [Result 40](part-03/result-40.md)\n", rendered)
 
     def test_ids_are_found_by_lean_name_when_a_page_moves(self):
         with tempfile.TemporaryDirectory() as folder:

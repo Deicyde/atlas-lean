@@ -5,7 +5,7 @@ navigation: collection
 
 # MathlibExt
 
-## AP to Alternating Binomial Partial Sum
+## [AP to Alternating Binomial Partial Sum](part-01/README.md)
 
 - [AP](part-01/ap/README.md)
 - [Additive](part-01/additive/README.md)
@@ -28,7 +28,7 @@ navigation: collection
 - [Words](part-01/words/README.md)
 - [Alternating Binomial Partial Sum](part-01/alternating-binomial-partial-sum.md)
 
-## Associated Stirling Eulerian to Isolation Lemma
+## [Associated Stirling Eulerian to Isolation Lemma](part-02/README.md)
 
 - [Associated Stirling Eulerian](part-02/associated-stirling-eulerian/README.md)
 - [Associated Stirling Second](part-02/associated-stirling-second/README.md)
@@ -51,7 +51,7 @@ navigation: collection
 - [Isogeny Volcano](part-02/isogeny-volcano/README.md)
 - [Isolation Lemma](part-02/isolation-lemma.md)
 
-## Jaccard Lattice to Von Szily Super Catalan
+## [Jaccard Lattice to Von Szily Super Catalan](part-03/README.md)
 
 - [Jaccard Lattice](part-03/jaccard-lattice/README.md)
 - [KCyclic Partition](part-03/kcyclic-partition/README.md)

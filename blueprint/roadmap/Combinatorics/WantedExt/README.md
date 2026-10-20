@@ -5,7 +5,7 @@ navigation: collection
 
 # WantedExt
 
-## Coding to Erdos Problem800
+## [Coding to Erdos Problem800](part-01/README.md)
 
 - [Coding](part-01/coding/README.md)
 - [Enumerative](part-01/enumerative/README.md)
@@ -28,7 +28,7 @@ navigation: collection
 - [Erdos Problem794](part-01/erdos-problem794-wanted/README.md)
 - [Erdos Problem800](part-01/erdos-problem800-wanted/README.md)
 
-## Erdos Problem899 to Palindromic Recurrent Outside P
+## [Erdos Problem899 to Palindromic Recurrent Outside P](part-02/README.md)
 
 - [Erdos Problem899](part-02/erdos-problem899-wanted/README.md)
 - [Erdos Problem914](part-02/erdos-problem914-wanted/README.md)
@@ -51,7 +51,7 @@ navigation: collection
 - [PVHHCube Morphic Word](part-02/pvhhcube-morphic-word-wanted/README.md)
 - [Palindromic Recurrent Outside P](part-02/palindromic-recurrent-outside-pwanted/README.md)
 
-## Partial Hadamard to Universal Cycle Subsets
+## [Partial Hadamard to Universal Cycle Subsets](part-03/README.md)
 
 - [Partial Hadamard](part-03/partial-hadamard-wanted/README.md)
 - [Partial List Coloring Proportional Bound](part-03/partial-list-coloring-proportional-bound-wanted/README.md)
@@ -74,7 +74,7 @@ navigation: collection
 - [Unit Distance Upper Bound](part-03/unit-distance-upper-bound-wanted/README.md)
 - [Universal Cycle Subsets](part-03/universal-cycle-subsets-wanted/README.md)
 
-## Upper Bound Simplicial Spheres to Valid Ordering
+## [Upper Bound Simplicial Spheres to Valid Ordering](part-04/README.md)
 
 - [Upper Bound Simplicial Spheres](part-04/upper-bound-simplicial-spheres-wanted/README.md)
 - [Valid Ordering](part-04/valid-ordering-wanted/README.md)

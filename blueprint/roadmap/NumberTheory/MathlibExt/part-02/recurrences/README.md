@@ -4,7 +4,7 @@ article_id: af_e45511ce63b7a380a7579d90
 
 # Recurrences
 
-## Alfred Fibonacci Determinant to Horadam Generalized Catalan Identity
+## [Alfred Fibonacci Determinant to Horadam Generalized Catalan Identity](part-01/README.md)
 
 - [Alfred Fibonacci Determinant](part-01/alfred-consecutive-fibonacci-powers-dete.md)
 - [Brousseau Fibonacci Reciprocal](part-01/brousseau-fibonacci-reciprocal-sum.md)
@@ -27,7 +27,7 @@ article_id: af_e45511ce63b7a380a7579d90
 - [Honsberger Fibonacci P](part-01/honsberger-fibonacci-p/README.md)
 - [Horadam Generalized Catalan Identity](part-01/horadam-generalized-catalan-identity.md)
 
-## Jacobsthal Closed Form to Weighted Fibonacci Binet
+## [Jacobsthal Closed Form to Weighted Fibonacci Binet](part-02/README.md)
 
 - [Jacobsthal Closed Form](part-02/jacobsthal-closed-form.md)
 - [Lucas Binet Formula](part-02/lucas-binet-formula/README.md)

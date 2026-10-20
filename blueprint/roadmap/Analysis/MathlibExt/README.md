@@ -5,7 +5,7 @@ navigation: collection
 
 # MathlibExt
 
-## Absolute Value to Specific Limits
+## [Absolute Value to Specific Limits](part-01/README.md)
 
 - [Absolute Value](part-01/absolute-value/README.md)
 - [Approximation](part-01/approximation/README.md)
@@ -28,7 +28,7 @@ navigation: collection
 - [Special Functions](part-01/special-functions/README.md)
 - [Specific Limits](part-01/specific-limits/README.md)
 
-## Variational to Wirsing Constant
+## [Variational to Wirsing Constant](part-02/README.md)
 
 - [Variational](part-02/variational/README.md)
 - [Beurling Ahlfors](part-02/beurling-ahlfors/README.md)

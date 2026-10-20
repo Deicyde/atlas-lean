@@ -5,7 +5,7 @@ navigation: collection
 
 # MathlibExt
 
-## Combinatorics to Hoeffding Binomial Lower Tail
+## [Combinatorics to Hoeffding Binomial Lower Tail](part-01/README.md)
 
 - [Combinatorics](part-01/combinatorics/README.md)
 - [Distributions](part-01/distributions/README.md)
@@ -28,7 +28,7 @@ navigation: collection
 - [Hoeffding Bernoulli Sum Abs Tail](part-01/hoeffding-bernoulli-sum-abs-tail.md)
 - [Hoeffding Binomial Lower Tail](part-01/hoeffding-binomial-lower-tail.md)
 
-## Khintchine Inequality to Strassen Coupling
+## [Khintchine Inequality to Strassen Coupling](part-02/README.md)
 
 - [Khintchine Inequality](part-02/khintchine-inequality.md)
 - [Kolmogorov Extension](part-02/kolmogorov-extension.md)

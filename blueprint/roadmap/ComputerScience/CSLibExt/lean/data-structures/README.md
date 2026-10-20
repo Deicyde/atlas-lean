@@ -4,7 +4,7 @@ article_id: af_7afe10d0333ab8002f4fdefd
 
 # Data Structures
 
-## Avl Tree to Binary Counter
+## [Avl Tree to Binary Counter](part-01/README.md)
 
 - [Avl Tree](part-01/avl-tree/README.md)
 - [BTree](part-01/btree/README.md)
@@ -27,7 +27,7 @@ article_id: af_7afe10d0333ab8002f4fdefd
 - [Ball Tree](part-01/ball-tree/README.md)
 - [Binary Counter](part-01/binary-counter/README.md)
 
-## Binary Heap to Ordered Insert
+## [Binary Heap to Ordered Insert](part-02/README.md)
 
 - [Binary Heap](part-02/binary-heap/README.md)
 - [Binary Search Tree](part-02/binary-search-tree/README.md)
@@ -50,7 +50,7 @@ article_id: af_7afe10d0333ab8002f4fdefd
 - [Order Statistic Tree](part-02/order-statistic-tree/README.md)
 - [Ordered Insert](part-02/ordered-insert/README.md)
 
-## Perfect Hashing to YFast Trie
+## [Perfect Hashing to YFast Trie](part-03/README.md)
 
 - [Perfect Hashing](part-03/perfect-hashing/README.md)
 - [Radix Trie](part-03/radix-trie/README.md)

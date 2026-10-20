@@ -10,7 +10,7 @@ Smooth manifolds provide the setting for local parametrizations, immersions, sub
 
 ## Contents
 
-### Collar Neighborhood to Thom Transversality
+### [Collar Neighborhood to Thom Transversality](part-01/README.md)
 
 - [Collar Neighborhood](part-01/topological-collar-neighborhood-of-smoot.md)
 - [Hadamard Global Inverse](part-01/hadamard-caccioppoli-global-inverse.md)
@@ -33,6 +33,6 @@ Smooth manifolds provide the setting for local parametrizations, immersions, sub
 - [Submersion Of Surjective MFDeriv](part-01/submersion-of-surjective-mfderiv/README.md)
 - [Thom Transversality](part-01/thom-transversality/README.md)
 
-### Part 2 of 2
+### [Part 2 of 2](part-02/README.md)
 
 - [Tubular Neighborhood](part-02/tubular-smooth-retraction.md)
