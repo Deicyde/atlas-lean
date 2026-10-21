@@ -33,6 +33,7 @@ jobs:
     # created review's ID so the verdict job can attest the exact review
     # (empty when no review was posted).
     outputs:
+      authorized: ${{ steps.check_auth.outputs.authorized }}
       verdict: ${{ steps.submit.outputs.verdict }}
       review_id: ${{ steps.submit.outputs.review_id }}
       reviewed_sha: ${{ steps.target.outputs.ref }}
@@ -394,6 +395,11 @@ jobs:
           server.listen(8080, "0.0.0.0");
           EOF
 
+      # This organization secret reaches every workflow run in the repository
+      # except fork-PR and Dependabot runs, so a write collaborator can already
+      # read it from a push-triggered workflow on their own branch, and moving
+      # this job to pull_request_target would not change that. The broker keeps
+      # the key away from the Codex agent, which reads untrusted PR content.
       - name: Start isolated credential broker
         if: steps.check_auth.outputs.authorized == 'true'
         env:
@@ -714,8 +720,28 @@ jobs:
             core.setOutput("verdict", "");
             core.setOutput("review_id", "");
 
+      - name: Upload Codex output
+        if: always() && steps.check_auth.outputs.authorized == 'true'
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: codex-output-${{ github.run_id }}
+          path: ${{ runner.temp }}/codex-io/codex-output.md
+          if-no-files-found: ignore
+          retention-days: 14
+
+  # A separate job because a timeout cancels the codex job, which skips its
+  # failure() steps.
+  report-failure:
+    name: report-failure
+    needs: [codex]
+    if: always() && needs.codex.result == 'failure' && needs.codex.outputs.authorized != 'false'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
       - name: Post workflow failure
-        if: failure() && steps.check_auth.outputs.authorized == 'true'
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           script: |
@@ -737,15 +763,6 @@ jobs:
                 `## ${heading}\n\n` +
                 `Codex failed before producing a response. [View logs](${runUrl}).`,
             });
-
-      - name: Upload Codex output
-        if: always() && steps.check_auth.outputs.authorized == 'true'
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-        with:
-          name: codex-output-${{ github.run_id }}
-          path: ${{ runner.temp }}/codex-io/codex-output.md
-          if-no-files-found: ignore
-          retention-days: 14
 
   # Verdict attestation for the automerge gate: this job-created check
   # succeeds iff the automatic review verdict is approval. The gate
