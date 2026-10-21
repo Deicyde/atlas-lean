@@ -744,7 +744,7 @@ jobs:
             --env CODEX_HOME=/codex-home \
             --env HOME=/codex-home \
             --env CODEX_BROKER_TOKEN \
-            --mount "type=bind,source=$PWD,target=/workspace" \
+            --mount "type=bind,source=$PWD,target=/workspace,readonly" \
             --mount "type=bind,source=$RUNNER_TEMP/codex-home,target=/codex-home" \
             --mount "type=bind,source=$RUNNER_TEMP/codex-runtime,target=/opt/codex,readonly" \
             --mount "type=bind,source=$io,target=/codex-io" \
