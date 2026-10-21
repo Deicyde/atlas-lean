@@ -761,7 +761,7 @@ jobs:
               issue_number: issueNumber,
               body:
                 `## ${heading}\n\n` +
-                `Codex failed before producing a response. [View logs](${runUrl}).`,
+                `Codex failed before posting a response. [View logs](${runUrl}).`,
             });
 
   # Verdict attestation for the automerge gate: this job-created check
