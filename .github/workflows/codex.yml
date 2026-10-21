@@ -728,6 +728,16 @@ jobs:
             )
           fi
 
+          # Mount single files rather than the I/O directory: later steps read
+          # the output with credentials, so the agent must not be able to
+          # replace it with a symlink.
+          output="$io/codex-output.md"
+          : > "$output"
+          io_mounts=(--mount "type=bind,source=$output,target=/codex-io/codex-output.md")
+          if [[ "$AUTOMATIC_REVIEW" == "true" ]]; then
+            io_mounts+=(--mount "type=bind,source=$io/codex-review-schema.json,target=/codex-io/codex-review-schema.json,readonly")
+          fi
+
           broker_token="$(cat "$RUNNER_TEMP/codex-broker/token")"
           codex_bin=/opt/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex
 
@@ -747,7 +757,7 @@ jobs:
             --mount "type=bind,source=$PWD,target=/workspace,readonly" \
             --mount "type=bind,source=$RUNNER_TEMP/codex-home,target=/codex-home" \
             --mount "type=bind,source=$RUNNER_TEMP/codex-runtime,target=/opt/codex,readonly" \
-            --mount "type=bind,source=$io,target=/codex-io" \
+            "${io_mounts[@]}" \
             --workdir /workspace \
             "$CODEX_IMAGE" \
             bash -c '
@@ -785,11 +795,11 @@ jobs:
                 exit 1
               fi
               probe="$(od -An -N16 -tx1 /dev/urandom | tr -d " \n")"
-              cp /bin/sleep /codex-io/probe-sleep
-              chmod 0111 /codex-io/probe-sleep
+              cp /bin/sleep /codex-home/probe-sleep
+              chmod 0111 /codex-home/probe-sleep
               PROBE="$probe" sleep 30 &
               visible=$!
-              PROBE="$probe" /codex-io/probe-sleep 30 &
+              PROBE="$probe" /codex-home/probe-sleep 30 &
               hidden=$!
               sleep 1
               kill -0 "$visible" "$hidden"
@@ -804,13 +814,17 @@ jobs:
               kill -0 "$hidden"
               kill "$visible" "$hidden"
               wait || true
-              rm -f /codex-io/probe-sleep
+              rm -f /codex-home/probe-sleep
               exec "$@"
             ' codex-agent \
             "$codex_bin" "${codex_args[@]}" \
             < "$input" > "$log" 2>&1
           then
             tail -n 200 "$log"
+            exit 1
+          fi
+          if [[ -L "$output" || ! -f "$output" ]]; then
+            echo "::error title=Codex output::$output is not a regular file"
             exit 1
           fi
 
