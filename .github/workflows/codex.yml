@@ -461,6 +461,9 @@ jobs:
           # Docker as the outer boundary instead: the agent sees neither the
           # host/broker process table nor public egress, and only the broker
           # container receives the real provider credential.
+          # The agent image has no Lean toolchain, so the review cannot build.
+          # The CI workflow builds every PR and runs scripts/check.sh, and
+          # REVIEWING.md treats green CI as the proof that Lean accepts the code.
           network="codex-review-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
           agent="codex-agent-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
           io="$RUNNER_TEMP/codex-io"
