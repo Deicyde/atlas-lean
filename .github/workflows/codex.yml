@@ -311,6 +311,10 @@ jobs:
           # REVIEWING.md is injected from the base branch; never load
           # instructions from the untrusted pull-request checkout.
           project_doc_max_bytes = 0
+          # Shell snapshots copy Codex's environment, broker token included,
+          # into a file under CODEX_HOME that agent commands can read.
+          [features]
+          shell_snapshot = false
           [shell_environment_policy]
           inherit = "all"
           ignore_default_excludes = false
