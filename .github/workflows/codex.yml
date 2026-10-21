@@ -447,6 +447,9 @@ jobs:
 
       - name: Run Codex
         if: steps.check_auth.outputs.authorized == 'true'
+        # Below the 30-minute job timeout: a step timeout fails the job, which
+        # report-failure reports, while a job timeout cancels it.
+        timeout-minutes: 25
         env:
           CODEX_IMAGE: node:24-bookworm@sha256:64af3819f9275802414d7cdc38c27e9d82bd564dec4d4da87d008255d36c63b4
           AUTOMATIC_REVIEW: ${{ github.event_name == 'pull_request' }}
@@ -729,8 +732,8 @@ jobs:
           if-no-files-found: ignore
           retention-days: 14
 
-  # A separate job because a timeout cancels the codex job, which skips its
-  # failure() steps.
+  # Failures only: a newer push cancels an in-progress automatic review, and
+  # that cancellation needs no comment.
   report-failure:
     name: report-failure
     needs: [codex]
