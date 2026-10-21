@@ -297,7 +297,10 @@ jobs:
           runtime="$RUNNER_TEMP/codex-runtime"
           codex_home="$RUNNER_TEMP/codex-home"
           npm install --prefix "$runtime" @openai/codex@0.155.1
-          "$runtime/node_modules/.bin/codex" --version
+          codex_bin="$runtime/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex"
+          "$codex_bin" --version
+          # Execute-only, so the Codex process runs non-dumpable; see Run Codex.
+          chmod 0111 "$codex_bin"
           mkdir -p "$codex_home"
           cat > "$codex_home/config.toml" <<'EOF'
           model = "gpt-5-6-sol"
@@ -321,13 +324,23 @@ jobs:
           wire_api = "responses"
           EOF
           cat > "$RUNNER_TEMP/codex-model-proxy.js" <<'EOF'
+          const crypto = require("node:crypto");
           const http = require("node:http");
           const https = require("node:https");
 
+          const upstreamHost = "api.meta.ai";
+          const upstreamPort = 443;
+          // Per-run limits on Codex, the only client that holds the broker token.
+          const maxRequests = 300;
+          const maxInFlight = 2;
+          const maxBodyBytes = 16 * 1024 * 1024;
+
           const apiKey = process.env.MODEL_API_KEY;
-          if (!apiKey) {
-            throw new Error("MODEL_API_KEY is required");
+          const brokerToken = process.env.BROKER_TOKEN;
+          if (!apiKey || !brokerToken) {
+            throw new Error("MODEL_API_KEY and BROKER_TOKEN are required");
           }
+          const expectedAuthorization = Buffer.from(`Bearer ${brokerToken}`);
 
           const hopByHopHeaders = new Set([
             "connection",
@@ -340,7 +353,119 @@ jobs:
             "upgrade",
           ]);
 
+          let admitted = 0;
+          let inFlight = 0;
+          const queued = [];
+
+          function isAuthorized(header) {
+            if (typeof header !== "string") {
+              return false;
+            }
+            const given = Buffer.from(header);
+            return (
+              given.length === expectedAuthorization.length &&
+              crypto.timingSafeEqual(given, expectedAuthorization)
+            );
+          }
+
+          function reject(response, status, message) {
+            if (response.headersSent) {
+              response.destroy();
+              return;
+            }
+            response.writeHead(status, {
+              "content-type": "application/json",
+              connection: "close",
+            });
+            response.end(JSON.stringify({ error: { message } }));
+          }
+
+          // A request holds one of the maxInFlight slots from the time it starts until
+          // its client connection closes; later requests wait in arrival order.
+          function acquire(start) {
+            if (inFlight < maxInFlight) {
+              inFlight += 1;
+              start();
+            } else {
+              queued.push(start);
+            }
+          }
+
+          function release() {
+            const next = queued.shift();
+            if (next) {
+              next();
+            } else {
+              inFlight -= 1;
+            }
+          }
+
+          function forward(request, response, id) {
+            const chunks = [];
+            let bytes = 0;
+            let tooLarge = false;
+            request.on("data", (chunk) => {
+              if (tooLarge) {
+                return;
+              }
+              bytes += chunk.length;
+              if (bytes > maxBodyBytes) {
+                tooLarge = true;
+                chunks.length = 0;
+                console.log(`request ${id} ${request.url} 413 ${bytes}`);
+                reject(response, 413, "request body exceeds the broker limit");
+                return;
+              }
+              chunks.push(chunk);
+            });
+            request.on("end", () => {
+              if (tooLarge) {
+                return;
+              }
+              const body = Buffer.concat(chunks);
+              const headers = { ...request.headers };
+              for (const header of hopByHopHeaders) {
+                delete headers[header];
+              }
+              headers.host = upstreamHost;
+              headers.authorization = `Bearer ${apiKey}`;
+              headers["content-length"] = String(body.length);
+              const upstream = https.request(
+                {
+                  hostname: upstreamHost,
+                  port: upstreamPort,
+                  method: "POST",
+                  path: request.url,
+                  headers,
+                },
+                (upstreamResponse) => {
+                  console.log(
+                    `request ${id} ${request.url} ${upstreamResponse.statusCode} ${body.length}`
+                  );
+                  const responseHeaders = { ...upstreamResponse.headers };
+                  for (const header of hopByHopHeaders) {
+                    delete responseHeaders[header];
+                  }
+                  response.writeHead(
+                    upstreamResponse.statusCode ?? 502,
+                    responseHeaders
+                  );
+                  upstreamResponse.on("error", () => response.destroy());
+                  upstreamResponse.pipe(response);
+                }
+              );
+              upstream.on("error", () => {
+                console.log(`request ${id} ${request.url} 502 ${body.length}`);
+                reject(response, 502, "upstream request failed");
+              });
+              response.on("close", () => upstream.destroy());
+              upstream.end(body);
+            });
+          }
+
           const server = http.createServer((request, response) => {
+            request.on("error", () => {});
+            response.on("error", () => {});
             if (request.method === "GET" && request.url === "/healthz") {
               response.writeHead(204);
               response.end();
@@ -354,42 +479,35 @@ jobs:
               response.end("not found");
               return;
             }
-
-            const headers = { ...request.headers };
-            for (const header of hopByHopHeaders) {
-              delete headers[header];
+            if (!isAuthorized(request.headers.authorization)) {
+              console.log(`unauthorized ${request.url}`);
+              reject(response, 401, "missing or invalid broker token");
+              return;
             }
-            headers.host = "api.meta.ai";
-            headers.authorization = `Bearer ${apiKey}`;
-
-            const upstream = https.request(
-              {
-                hostname: "api.meta.ai",
-                port: 443,
-                method: "POST",
-                path: request.url,
-                headers,
-              },
-              (upstreamResponse) => {
-                const responseHeaders = { ...upstreamResponse.headers };
-                for (const header of hopByHopHeaders) {
-                  delete responseHeaders[header];
-                }
-                response.writeHead(
-                  upstreamResponse.statusCode ?? 502,
-                  responseHeaders
-                );
-                upstreamResponse.pipe(response);
+            if (admitted >= maxRequests) {
+              console.log(`over-budget ${request.url}`);
+              reject(response, 403, "broker request budget exhausted");
+              return;
+            }
+            admitted += 1;
+            const id = admitted;
+            let holdsSlot = false;
+            let closed = false;
+            response.on("close", () => {
+              closed = true;
+              if (holdsSlot) {
+                holdsSlot = false;
+                release();
               }
-            );
-            upstream.on("error", () => {
-              if (!response.headersSent) {
-                response.writeHead(502);
-              }
-              response.end("upstream request failed");
             });
-            request.on("aborted", () => upstream.destroy());
-            request.pipe(upstream);
+            acquire(() => {
+              if (closed) {
+                release();
+                return;
+              }
+              holdsSlot = true;
+              forward(request, response, id);
+            });
           });
 
           server.listen(8080, "0.0.0.0");
@@ -399,7 +517,8 @@ jobs:
       # except fork-PR and Dependabot runs, so a write collaborator can already
       # read it from a push-triggered workflow on their own branch, and moving
       # this job to pull_request_target would not change that. The broker keeps
-      # the key away from the Codex agent, which reads untrusted PR content.
+      # the key away from the Codex agent, which reads untrusted PR content,
+      # and serves only requests that carry a per-run token held by Codex.
       - name: Start isolated credential broker
         if: steps.check_auth.outputs.authorized == 'true'
         env:
@@ -413,6 +532,11 @@ jobs:
           fi
           network="codex-review-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
           broker="codex-model-proxy-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          BROKER_TOKEN="$(openssl rand -hex 32)"
+          export BROKER_TOKEN
+          echo "::add-mask::$BROKER_TOKEN"
+          install -d -m 700 "$RUNNER_TEMP/codex-broker"
+          (umask 077 && printf '%s\n' "$BROKER_TOKEN" > "$RUNNER_TEMP/codex-broker/token")
           docker network create --internal "$network"
           docker run --detach \
             --name "$broker" \
@@ -424,6 +548,7 @@ jobs:
             --tmpfs /tmp:rw,nosuid,nodev,size=64m \
             --pids-limit 128 \
             --env MODEL_API_KEY \
+            --env BROKER_TOKEN \
             --mount \
               "type=bind,source=$RUNNER_TEMP/codex-model-proxy.js,target=/opt/codex-model-proxy.js,readonly" \
             "$CODEX_IMAGE" \
@@ -554,12 +679,15 @@ jobs:
             )
           fi
 
+          broker_token="$(cat "$RUNNER_TEMP/codex-broker/token")"
+          codex_bin=/opt/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex
+
           # Transient model-capacity failures (429/high-demand) fail the whole
           # check. Retry those with backoff; fail fast on anything else.
           codex_attempt=1
           codex_max_attempts=4
           while true; do
-            if docker run --rm --interactive \
+            if CODEX_BROKER_TOKEN="$broker_token" docker run --rm --interactive \
             --name "$agent" \
             --network "$network" \
             --user "$(id -u):$(id -g)" \
@@ -569,7 +697,7 @@ jobs:
             --pids-limit 512 \
             --env CODEX_HOME=/codex-home \
             --env HOME=/codex-home \
-            --env CODEX_BROKER_TOKEN=isolated-broker \
+            --env CODEX_BROKER_TOKEN \
             --mount "type=bind,source=$PWD,target=/workspace" \
             --mount "type=bind,source=$RUNNER_TEMP/codex-home,target=/codex-home" \
             --mount "type=bind,source=$RUNNER_TEMP/codex-runtime,target=/opt/codex" \
@@ -591,9 +719,49 @@ jobs:
                 exit 1
               fi
               node -e "fetch(\"http://codex-model-proxy:8080/healthz\").then(r => process.exit(r.status === 204 ? 0 : 1)).catch(() => process.exit(1))"
+              if [[ -z "${CODEX_BROKER_TOKEN:-}" ]]; then
+                echo "Broker token is missing" >&2
+                exit 1
+              fi
+              status="$(node -e "fetch(\"http://codex-model-proxy:8080/v1/responses\", { method: \"POST\", body: \"{}\" }).then(r => console.log(r.status)).catch(() => console.log(0))")"
+              if [[ "$status" != 401 ]]; then
+                echo "Broker did not reject a request without its token (HTTP $status)" >&2
+                exit 1
+              fi
+              # Codex runs agent commands as this same user, and its own
+              # environment holds the broker token. Running an execute-only
+              # binary makes the kernel mark the process non-dumpable, which
+              # hides its /proc environment from same-user processes. Check the
+              # binary mode, and probe that kernel behavior here with an
+              # execute-only copy of sleep next to an ordinary one.
+              if [[ ! -x "$1" || -r "$1" ]]; then
+                echo "Credential isolation failed: Codex binary is not execute-only" >&2
+                exit 1
+              fi
+              probe="$(od -An -N16 -tx1 /dev/urandom | tr -d " \n")"
+              cp /bin/sleep /codex-io/probe-sleep
+              chmod 0111 /codex-io/probe-sleep
+              PROBE="$probe" sleep 30 &
+              visible=$!
+              PROBE="$probe" /codex-io/probe-sleep 30 &
+              hidden=$!
+              sleep 1
+              kill -0 "$visible" "$hidden"
+              if ! tr "\0" "\n" < "/proc/$visible/environ" | grep -qx "PROBE=$probe"; then
+                echo "Isolation probe failed: an ordinary process environment is unreadable" >&2
+                exit 1
+              fi
+              if tr "\0" "\n" 2>/dev/null < "/proc/$hidden/environ" | grep -q "$probe"; then
+                echo "Credential isolation failed: an execute-only process environment is readable" >&2
+                exit 1
+              fi
+              kill -0 "$hidden"
+              kill "$visible" "$hidden"
+              wait || true
+              rm -f /codex-io/probe-sleep
               exec "$@"
             ' codex-agent \
-            /opt/codex/node_modules/.bin/codex "${codex_args[@]}" \
+            "$codex_bin" "${codex_args[@]}" \
             < "$input" > "$log" 2>&1
             then
               break
@@ -622,6 +790,13 @@ jobs:
         run: |
           broker="codex-model-proxy-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
           network="codex-review-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          if summary="$(docker logs "$broker" 2>/dev/null | awk '
+            $1 == "request" { requests++; bytes += $5; if ($4 !~ /^2/) failed++ }
+            $1 == "unauthorized" { unauthorized++ }
+            $1 == "over-budget" { over++ }
+            END { printf "requests=%d failed=%d request_bytes=%d unauthorized=%d over_budget=%d", requests, failed, bytes, unauthorized, over }')"; then
+            echo "::notice title=Codex broker::$summary"
+          fi
           docker rm --force "$broker" >/dev/null 2>&1 || true
           docker network rm "$network" >/dev/null 2>&1 || true
 
