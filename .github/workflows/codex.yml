@@ -18,7 +18,7 @@ jobs:
       (github.event_name == 'issue_comment' && startsWith(github.event.comment.body, '@codex')) ||
       (github.event_name == 'pull_request_review_comment' && startsWith(github.event.comment.body, '@codex'))
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     concurrency:
       group: codex-${{ github.repository }}-${{ github.event.issue.number || github.event.pull_request.number }}-${{ github.event_name == 'pull_request' && 'automatic' || github.event.comment.id || github.run_id }}
       cancel-in-progress: ${{ github.event_name == 'pull_request' }}
@@ -334,6 +334,12 @@ jobs:
           const maxRequests = 300;
           const maxInFlight = 2;
           const maxBodyBytes = 16 * 1024 * 1024;
+          // Codex does not retry HTTP 429 itself, so the broker retries capacity
+          // errors that arrive before any response bytes reach Codex.
+          const retryableStatuses = new Set([429, 503, 529]);
+          const maxUpstreamRetries = 3;
+          const retryBaseDelayMs = 20000;
+          const maxRetryAfterSeconds = 120;
 
           const apiKey = process.env.MODEL_API_KEY;
           const brokerToken = process.env.BROKER_TOKEN;
@@ -380,6 +386,14 @@ jobs:
             response.end(JSON.stringify({ error: { message } }));
           }
 
+          function retryDelayMs(retryAfter, retry) {
+            const seconds = Number(retryAfter);
+            if (retryAfter !== undefined && Number.isFinite(seconds) && seconds >= 0) {
+              return Math.min(seconds, maxRetryAfterSeconds) * 1000;
+            }
+            return retryBaseDelayMs * 2 ** retry;
+          }
+
           // A request holds one of the maxInFlight slots from the time it starts until
           // its client connection closes; later requests wait in arrival order.
           function acquire(start) {
@@ -404,6 +418,16 @@ jobs:
             const chunks = [];
             let bytes = 0;
             let tooLarge = false;
+            let upstream = null;
+            let retryTimer = null;
+            let closed = false;
+            response.on("close", () => {
+              closed = true;
+              clearTimeout(retryTimer);
+              if (upstream) {
+                upstream.destroy();
+              }
+            });
             request.on("data", (chunk) => {
               if (tooLarge) {
                 return;
@@ -419,7 +443,7 @@ jobs:
               chunks.push(chunk);
             });
             request.on("end", () => {
-              if (tooLarge) {
+              if (tooLarge || closed) {
                 return;
               }
               const body = Buffer.concat(chunks);
@@ -430,36 +454,56 @@ jobs:
               headers.host = upstreamHost;
               headers.authorization = `Bearer ${apiKey}`;
               headers["content-length"] = String(body.length);
-              const upstream = https.request(
-                {
-                  hostname: upstreamHost,
-                  port: upstreamPort,
-                  method: "POST",
-                  path: request.url,
-                  headers,
-                },
-                (upstreamResponse) => {
-                  console.log(
-                    `request ${id} ${request.url} ${upstreamResponse.statusCode} ${body.length}`
-                  );
-                  const responseHeaders = { ...upstreamResponse.headers };
-                  for (const header of hopByHopHeaders) {
-                    delete responseHeaders[header];
+
+              const send = (retry) => {
+                const attempt = https.request(
+                  {
+                    hostname: upstreamHost,
+                    port: upstreamPort,
+                    method: "POST",
+                    path: request.url,
+                    headers,
+                  },
+                  (upstreamResponse) => {
+                    const status = upstreamResponse.statusCode ?? 502;
+                    if (retryableStatuses.has(status) && retry < maxUpstreamRetries) {
+                      const delay = retryDelayMs(
+                        upstreamResponse.headers["retry-after"],
+                        retry
+                      );
+                      console.log(`retry ${id} ${request.url} ${status} ${delay}`);
+                      attempt.removeAllListeners("error");
+                      attempt.on("error", () => {});
+                      upstreamResponse.on("error", () => {});
+                      upstreamResponse.resume();
+                      retryTimer = setTimeout(() => {
+                        if (!closed) {
+                          send(retry + 1);
+                        }
+                      }, delay);
+                      return;
+                    }
+                    console.log(`request ${id} ${request.url} ${status} ${body.length}`);
+                    const responseHeaders = { ...upstreamResponse.headers };
+                    for (const header of hopByHopHeaders) {
+                      delete responseHeaders[header];
+                    }
+                    response.writeHead(status, responseHeaders);
+                    upstreamResponse.on("error", () => response.destroy());
+                    upstreamResponse.pipe(response);
                   }
-                  response.writeHead(
-                    upstreamResponse.statusCode ?? 502,
-                    responseHeaders
-                  );
-                  upstreamResponse.on("error", () => response.destroy());
-                  upstreamResponse.pipe(response);
-                }
-              );
-              upstream.on("error", () => {
-                console.log(`request ${id} ${request.url} 502 ${body.length}`);
-                reject(response, 502, "upstream request failed");
-              });
-              response.on("close", () => upstream.destroy());
-              upstream.end(body);
+                );
+                attempt.on("error", () => {
+                  if (closed) {
+                    return;
+                  }
+                  console.log(`request ${id} ${request.url} 502 ${body.length}`);
+                  reject(response, 502, "upstream request failed");
+                });
+                upstream = attempt;
+                attempt.end(body);
+              };
+              send(0);
             });
           }
 
@@ -572,8 +616,9 @@ jobs:
 
       - name: Run Codex
         if: steps.check_auth.outputs.authorized == 'true'
-        # Below the 30-minute job timeout: a step timeout fails the job, which
-        # report-failure reports, while a job timeout cancels it.
+        # A step timeout fails the job, which report-failure reports, while a
+        # job timeout cancels it. The 40-minute job timeout leaves 15 minutes
+        # for the steps before and after this one, which take about a minute.
         timeout-minutes: 25
         env:
           CODEX_IMAGE: node:24-bookworm@sha256:64af3819f9275802414d7cdc38c27e9d82bd564dec4d4da87d008255d36c63b4
@@ -682,12 +727,9 @@ jobs:
           broker_token="$(cat "$RUNNER_TEMP/codex-broker/token")"
           codex_bin=/opt/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/bin/codex
 
-          # Transient model-capacity failures (429/high-demand) fail the whole
-          # check. Retry those with backoff; fail fast on anything else.
-          codex_attempt=1
-          codex_max_attempts=4
-          while true; do
-            if CODEX_BROKER_TOKEN="$broker_token" docker run --rm --interactive \
+          # One Codex run per job. The broker retries upstream capacity errors,
+          # so nothing here acts on the agent's output.
+          if ! CODEX_BROKER_TOKEN="$broker_token" docker run --rm --interactive \
             --name "$agent" \
             --network "$network" \
             --user "$(id -u):$(id -g)" \
@@ -700,7 +742,7 @@ jobs:
             --env CODEX_BROKER_TOKEN \
             --mount "type=bind,source=$PWD,target=/workspace" \
             --mount "type=bind,source=$RUNNER_TEMP/codex-home,target=/codex-home" \
-            --mount "type=bind,source=$RUNNER_TEMP/codex-runtime,target=/opt/codex" \
+            --mount "type=bind,source=$RUNNER_TEMP/codex-runtime,target=/opt/codex,readonly" \
             --mount "type=bind,source=$io,target=/codex-io" \
             --workdir /workspace \
             "$CODEX_IMAGE" \
@@ -763,27 +805,10 @@ jobs:
             ' codex-agent \
             "$codex_bin" "${codex_args[@]}" \
             < "$input" > "$log" 2>&1
-            then
-              break
-            fi
-            # Match only structured provider/client capacity signatures in the
-            # fatal tail: bare words like "capacity" or "try again" (and bare
-            # 429s, which collide with line numbers) appear in normal output.
-            # insufficient_quota is permanent billing exhaustion, never a
-            # transient retry case (it usually ships with an HTTP 429 line
-            # that would otherwise match), so reject it first and fail fast.
-            fatal_tail="$(tail -n 50 "$log")"
-            if ! grep -q -i "insufficient_quota" <<< "$fatal_tail" \
-              && grep -q -i -E "429 Too Many Requests|HTTP/[0-9.]+ 429|status\W{0,3}429|error\W{0,3}429|rate[_ -]?limit|overloaded_error|rate_limit_exceeded|temporarily_unavailable" <<< "$fatal_tail" \
-              && [[ "$codex_attempt" -lt "$codex_max_attempts" ]]; then
-              codex_attempt=$((codex_attempt + 1))
-              echo "Codex run hit transient capacity error (attempt $((codex_attempt - 1))/$codex_max_attempts); retrying in 240s" >&2
-              sleep 240
-              continue
-            fi
+          then
             tail -n 200 "$log"
             exit 1
-          done
+          fi
 
       - name: Stop isolated credential broker
         if: always() && steps.check_auth.outputs.authorized == 'true'
@@ -794,7 +819,8 @@ jobs:
             $1 == "request" { requests++; bytes += $5; if ($4 !~ /^2/) failed++ }
             $1 == "unauthorized" { unauthorized++ }
             $1 == "over-budget" { over++ }
-            END { printf "requests=%d failed=%d request_bytes=%d unauthorized=%d over_budget=%d", requests, failed, bytes, unauthorized, over }')"; then
+            $1 == "retry" { retries++ }
+            END { printf "requests=%d failed=%d request_bytes=%d upstream_retries=%d unauthorized=%d over_budget=%d", requests, failed, bytes, retries, unauthorized, over }')"; then
             echo "::notice title=Codex broker::$summary"
           fi
           docker rm --force "$broker" >/dev/null 2>&1 || true
