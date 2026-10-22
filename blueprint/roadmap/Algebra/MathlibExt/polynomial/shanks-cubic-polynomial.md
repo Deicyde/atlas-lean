@@ -9,6 +9,7 @@ lean: MetaMathlibExt.shanksCubicPolynomial
 # Shanks cubic polynomial
 
 **Shanks cubic polynomial.** For an element $h$ of a ring $R$, the Shanks cubic polynomial is
+
 $$x^3 - h x^2 - (h + 3) x - 1 \in R[x].$$
 
 The source writes this polynomial as $\rho(h, -1, x)$.

@@ -2,6 +2,8 @@
 article_id: af_5acf21c0fcd7a1c060e5d71a
 declaration: def
 origin: cited
+statement: formalized
+lean: NewtonPolygon.newtonSupport
 ---
 
 # Newton Support

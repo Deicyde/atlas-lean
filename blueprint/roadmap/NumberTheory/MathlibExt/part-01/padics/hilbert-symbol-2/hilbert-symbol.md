@@ -2,6 +2,8 @@
 article_id: af_8cacaf0df5aa4779aa643d03
 declaration: def
 origin: cited
+statement: formalized
+lean: hilbertSymbol
 ---
 
 # Hilbert Symbol

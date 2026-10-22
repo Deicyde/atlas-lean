@@ -2,6 +2,9 @@
 article_id: af_9063d37f0c44aa6684a5aca5
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: HilbertSymbol.hilbert_symbol_units_eq_one_of_odd
 ---
 
 # Hilbert symbol units eq one of odd

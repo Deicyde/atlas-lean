@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: IsogenyVolcano.ascending_iff_descending_symm
 ---
 
 # Ascending iff descending symm

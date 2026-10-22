@@ -19,7 +19,9 @@ $0 \le u_k(x) \le C$ for all $k$ and all $x \in \overline{P}(c, R)$, and $u_k(x)
 $k \to \infty$ for every $x \in \overline{P}(c, R)$. Suppose moreover that for every $k$, every
 $x \in \overline{P}(c, R)$, every coordinate $j$ and every $r > 0$ such that
 $x_{j \leftarrow z} \in \overline{P}(c, R)$ for all $z$ with $|z - x_j| \le r$,
+
 $$u_k(x) \le \frac{1}{2\pi} \int_0^{2\pi} u_k(x_{j \leftarrow x_j + r e^{i\theta}}) \, d\theta.$$
+
 Then for every $\varepsilon > 0$ there is $K$ such that $u_k(x) \le \varepsilon$ for all
 $k \ge K$ and all $x \in \overline{P}(c, R/4)$.
 

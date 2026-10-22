@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: IsogenyVolcano.IsHorizontalEdge
 ---
 
 # Is Horizontal Edge

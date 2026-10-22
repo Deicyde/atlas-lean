@@ -2,6 +2,8 @@
 article_id: af_a052cb7bf140257644454a58
 declaration: def
 origin: cited
+statement: formalized
+lean: PadicInt.padicExpansion
 ---
 
 # Padic Expansion

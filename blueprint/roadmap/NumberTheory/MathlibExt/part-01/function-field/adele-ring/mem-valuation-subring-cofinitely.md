@@ -2,6 +2,9 @@
 article_id: af_70d10ebf4d1823c5b3c36250
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: FunctionFieldAdeleRing.mem_valuationSubring_cofinitely
 ---
 
 # Mem valuation Subring cofinitely

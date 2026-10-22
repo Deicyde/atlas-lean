@@ -2,6 +2,8 @@
 article_id: af_1f88e052d4bf7f91c9375304
 declaration: def
 origin: cited
+statement: formalized
+lean: FunctionFieldAdeleRing
 ---
 
 # Function Field Adele Ring

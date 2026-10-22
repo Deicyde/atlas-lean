@@ -2,6 +2,8 @@
 article_id: af_caeb7cf0f8c62eb206dbb5d1
 declaration: def
 origin: cited
+statement: formalized
+lean: NewtonPolygon.newtonPolygonInterior
 ---
 
 # Newton Polygon Interior

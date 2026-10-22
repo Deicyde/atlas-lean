@@ -2,6 +2,9 @@
 article_id: af_46c29862876a499efca03af4
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: latticeDiscriminant_eq_imp_eq
 ---
 
 # Lattice Discriminant eq imp eq

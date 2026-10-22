@@ -2,6 +2,8 @@
 article_id: af_5d4fce8cfbfbef737388ec96
 declaration: def
 origin: cited
+statement: formalized
+lean: extensionDiscriminant
 ---
 
 # Extension Discriminant

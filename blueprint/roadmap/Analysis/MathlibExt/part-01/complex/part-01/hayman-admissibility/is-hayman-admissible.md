@@ -18,8 +18,10 @@ $r\,G'(r)/G(r)$ is real; $A(r) \to \infty$ and $B(r) \to \infty$ as $r$ tends to
 $(R_0, \rho)$; and there is a function $\delta : \mathbb{R} \to \mathbb{R}$ with
 $0 < \delta(r) < \pi$ for $r$ near $\rho$ such that for every $\varepsilon > 0$ and all $r$ near
 $\rho$, every real $\theta$ with $|\theta| \le \delta(r)$ satisfies the locality estimate
+
 $$\left|G(re^{i\theta}) - G(r)\,e^{i\theta A(r) - \theta^2 B(r)/2}\right|
 \le \varepsilon \left|G(r)\,e^{i\theta A(r) - \theta^2 B(r)/2}\right|,$$
+
 and every real $\theta$ with $\delta(r) \le |\theta| < \pi$ satisfies the decay estimate
 $|G(re^{i\theta})| \le \varepsilon\,|G(r)|/\sqrt{B(r)}$.
 

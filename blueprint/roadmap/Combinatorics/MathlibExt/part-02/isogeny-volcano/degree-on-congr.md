@@ -1,6 +1,9 @@
 ---
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: Multigraph.degreeOn_congr
 ---
 
 # Degree On congr

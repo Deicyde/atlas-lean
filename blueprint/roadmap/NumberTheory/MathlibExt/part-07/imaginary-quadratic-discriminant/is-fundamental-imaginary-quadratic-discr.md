@@ -1,6 +1,8 @@
 ---
 declaration: def
 origin: cited
+statement: formalized
+lean: ImaginaryQuadraticDiscriminant.IsFundamentalImaginaryQuadraticDiscriminant
 ---
 
 # Is Fundamental Imaginary Quadratic Discriminant

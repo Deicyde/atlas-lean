@@ -11,6 +11,7 @@ lean: MetaMathlibExt.ascPochhammer_eval_add
 
 **Binomial theorem for rising factorials.** For every natural number $n$ and all real numbers
 $a$ and $b$, writing $x^{\overline{m}} = x(x+1)\cdots(x+m-1)$ for the rising factorial,
+
 $$(a+b)^{\overline{n}} = \sum_{k=0}^{n} \binom{n}{k}\, a^{\overline{k}}\, b^{\overline{n-k}}.$$
 
 ## Depends on

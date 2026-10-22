@@ -2,6 +2,8 @@
 article_id: af_33940132cbb348375487d5e3
 declaration: def
 origin: cited
+statement: formalized
+lean: TateCohomology.herbrandQuotient
 ---
 
 # Herbrand Quotient

@@ -2,6 +2,9 @@
 article_id: af_d2319d4c2dc195f82c180519
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: CurveDivisor.divZeros_nonneg
 ---
 
 # Div Zeros nonneg

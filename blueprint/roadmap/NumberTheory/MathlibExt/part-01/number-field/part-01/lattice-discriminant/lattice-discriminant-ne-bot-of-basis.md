@@ -2,6 +2,9 @@
 article_id: af_6da1412bf72f275b6a94dba8
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: latticeDiscriminant_ne_bot_of_basis
 ---
 
 # Lattice Discriminant ne bot of basis

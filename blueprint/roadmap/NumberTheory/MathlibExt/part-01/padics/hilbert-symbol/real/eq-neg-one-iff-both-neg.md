@@ -2,6 +2,9 @@
 article_id: af_90d1c71ed306d9f34d95cce7
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: realHilbertSymbol.eq_neg_one_iff_both_neg
 ---
 
 # Eq neg one iff both neg

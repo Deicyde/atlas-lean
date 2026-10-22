@@ -1,6 +1,8 @@
 ---
 declaration: structure
 origin: cited
+statement: formalized
+lean: ImaginaryQuadraticDiscriminant.ImaginaryQuadraticDiscriminantDecomposition
 ---
 
 # Imaginary Quadratic Discriminant Decomposition

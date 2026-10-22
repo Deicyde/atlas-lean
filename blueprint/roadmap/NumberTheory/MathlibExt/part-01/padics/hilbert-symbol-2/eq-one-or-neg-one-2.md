@@ -2,6 +2,9 @@
 article_id: af_6e8c34695253243eb7b0a78e
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: padicHilbertSymbol.eq_one_or_neg_one
 ---
 
 # Eq one or neg one

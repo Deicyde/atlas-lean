@@ -17,7 +17,9 @@ $w$ and $w \mapsto f(z, w)$ is complex differentiable on all of $\mathbb{C}$ for
 Suppose $|f(z, w)| \le M$ whenever $\|z - z_0\| \le A$ and $|w - w_0| \le B$. Then for every
 $k \in \mathbb{N}$ the $k$-th Cauchy coefficient of $f(z, \cdot)$ about $w_0$ on the circle of
 radius $B/2$,
+
 $$a_k(z) = \frac{1}{2\pi i} \oint_{|w - w_0| = B/2} \frac{f(z, w)}{(w - w_0)^{k+1}} \, dw,$$
+
 is a complex differentiable function of $z$ on the open ball $\|z - z_0\| < A/2$.
 
 ## Depends on

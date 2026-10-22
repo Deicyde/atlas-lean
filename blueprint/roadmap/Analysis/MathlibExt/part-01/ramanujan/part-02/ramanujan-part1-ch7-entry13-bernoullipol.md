@@ -11,8 +11,10 @@ lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry13Bernoullipolyadd.ramanujan_p
 
 **Stieltjes constants exist, and the zeroth is Euler's constant.** There is exactly one sequence
 of real numbers $(c_k)_{k \ge 0}$ such that, for every $k \ge 0$,
+
 $$\sum_{j=1}^{m} \frac{(\log j)^k}{j} - \frac{(\log m)^{k+1}}{k+1} \longrightarrow c_k
   \quad (m \to \infty),$$
+
 and $c_0 = \gamma$, where $\gamma$ is Euler's constant.
 
 ## Depends on

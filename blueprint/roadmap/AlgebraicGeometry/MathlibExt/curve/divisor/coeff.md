@@ -2,6 +2,8 @@
 article_id: af_9aaf66c3d5cddb48dd16a925
 declaration: def
 origin: cited
+statement: formalized
+lean: CurveDivisor.coeff
 ---
 
 # Coeff

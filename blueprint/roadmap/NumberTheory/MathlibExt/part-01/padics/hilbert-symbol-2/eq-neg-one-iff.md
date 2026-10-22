@@ -2,6 +2,9 @@
 article_id: af_eb190ea5573873c75c26a43a
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: padicHilbertSymbol.eq_neg_one_iff
 ---
 
 # Eq neg one iff

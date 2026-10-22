@@ -2,6 +2,8 @@
 article_id: af_0a5d668760eef15ad6872e82
 declaration: def
 origin: cited
+statement: formalized
+lean: ModularFunction.IsMeromorphicOnH
 ---
 
 # Is Meromorphic On H

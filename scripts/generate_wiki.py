@@ -200,6 +200,9 @@ ARTICLE_ID = re.compile(r"^article_id: (af_[0-9a-f]{24})$", re.M)
 MATH_SPAN = re.compile(
     r"(?s)(?<!\\)(?P<dollars>\${1,2}).*?(?<!\\)(?P=dollars)|\\\(.*?\\\)|\\\[.*?\\\]"
 )
+# Arithmatex renders $$...$$ as display math only when it is a paragraph of its own;
+# a formula on lines of its own gets one.
+DISPLAY_MATH = re.compile(r"\s*^[ \t]*(\$\$(?:\\.|(?!\$\$)[^\\])+?\$\$)[ \t]*$\s*", re.M | re.S)
 
 
 @dataclass
@@ -433,7 +436,8 @@ def load_library(library: str, index) -> tuple[list[Target], dict]:
                 raise SystemExit(f"{relative}: no subject for directory {module[1]}")
             summary["subjects"].add(subject)
             body = "\n".join(
-                "\\" + row if row.lstrip().startswith("#") else row for row in statement_text.splitlines()
+                "\\" + row if row.lstrip().startswith("#") else row
+                for row in DISPLAY_MATH.sub(r"\n\n\1\n\n", statement_text).strip().splitlines()
             )
             targets.append(
                 Target(
@@ -726,7 +730,9 @@ def ids_by_lean() -> dict[str, str]:
 
 
 def generate() -> dict[Path, str]:
-    index = index_project(ROOT)
+    # The archived v1 release is not part of the wiki. Indexing it would make
+    # every v2 name it also declares ambiguous, and those articles unlinked.
+    index = index_project(ROOT, exclude_roots=("v1",))
     files: dict[Path, str] = {}
     previous = lambda path: path.read_text() if path.is_file() else None  # noqa: E731
     known_ids = ids_by_lean()

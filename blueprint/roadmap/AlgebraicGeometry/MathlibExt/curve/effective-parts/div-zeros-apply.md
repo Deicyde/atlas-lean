@@ -2,6 +2,9 @@
 article_id: af_e9ae70e52d28ed90602973a8
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: CurveDivisor.divZeros_apply
 ---
 
 # Div Zeros apply

@@ -2,6 +2,9 @@
 article_id: af_33afe4077ec5b9bf233d0f4c
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: mem_imageOfB
 ---
 
 # Mem image Of B

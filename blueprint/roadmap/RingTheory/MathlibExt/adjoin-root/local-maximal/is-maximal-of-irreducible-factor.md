@@ -2,6 +2,9 @@
 article_id: af_8f0dcc813f93d01b1e3778f1
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: AdjoinRoot.is_maximal_of_irreducible_factor
 ---
 
 # Is maximal of irreducible factor

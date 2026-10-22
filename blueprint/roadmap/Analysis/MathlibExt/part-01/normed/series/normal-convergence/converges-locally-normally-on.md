@@ -2,6 +2,8 @@
 article_id: af_e34f0b649193970cc9e6f930
 declaration: def
 origin: cited
+statement: formalized
+lean: ConvergesLocallyNormallyOn
 ---
 
 # Converges Locally Normally On

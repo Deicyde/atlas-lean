@@ -15,6 +15,7 @@ $(c_n)_{n \ge 0}$ be complex numbers such that $\sum_{n \ge 0} c_n z^n$ converge
 $G(z)$ for every complex $z$ with $|z| < \rho$, and let $(r_n)_{n \ge 0}$ be real numbers such
 that for all sufficiently large $n$, $r_n \in (R_0, \rho)$, $A(r_n) = n$, and $r_n$ is the only
 $r \in (R_0, \rho)$ with $A(r) = n$. Then, as $n \to \infty$,
+
 $$c_n \sim \frac{G(r_n)}{r_n^n \sqrt{2\pi B(r_n)}}.$$
 
 Proof: The saddle converges to the finite radius, Cauchy's coefficient integral is split at the

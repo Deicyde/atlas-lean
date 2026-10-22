@@ -2,6 +2,9 @@
 article_id: af_6505954f986cf21af943ea5f
 declaration: theorem
 origin: cited
+statement: formalized
+proof: formalized
+lean: CurveDivisor.divPoles_apply
 ---
 
 # Div Poles apply
