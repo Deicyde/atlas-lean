@@ -5,12 +5,12 @@ navigation: module
 
 # Bezout
 
-- [Proj Space](proj-space.md)
-- [Vanishing Set](vanishing-set.md)
-- [Chart Index](chart-index.md)
-- [Affine Cone Coord](affine-cone-coord.md)
-- [Eval At](eval-at.md)
-- [Max Ideal At](max-ideal-at.md)
-- [Local Ring At](local-ring-at.md)
-- [Intersection Multiplicity](intersection-multiplicity.md)
-- [Bezout multiplicity](bezout-multiplicity.md)
+- [Projective space](proj-space.md)
+- [Projective vanishing set](vanishing-set.md)
+- [Chart index of a projective point](chart-index.md)
+- [Affine coordinates of a projective point](affine-cone-coord.md)
+- [Evaluation at an affine point](eval-at.md)
+- [Maximal ideal of an affine point](max-ideal-at.md)
+- [Local ring of affine space at a point](local-ring-at.md)
+- [Intersection multiplicity at a projective point](intersection-multiplicity.md)
+- [Bézout's theorem (with multiplicity)](bezout-multiplicity.md)

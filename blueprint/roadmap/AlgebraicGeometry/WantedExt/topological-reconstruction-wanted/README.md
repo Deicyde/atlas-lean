@@ -5,7 +5,7 @@ navigation: module
 
 # Topological Reconstruction
 
-- [Proj To Spec](proj-to-spec.md)
-- [Is Projective Hom](is-projective-hom.md)
-- [Is Normal Scheme](is-normal-scheme.md)
-- [Kollar lieblich olsson sawin](kollar-lieblich-olsson-sawin.md)
+- [Structure morphism of a projective spectrum](proj-to-spec.md)
+- [Projective morphism to an affine scheme](is-projective-hom.md)
+- [Normal scheme](is-normal-scheme.md)
+- [Kollár–Lieblich–Olsson–Sawin topological reconstruction theorem](kollar-lieblich-olsson-sawin.md)

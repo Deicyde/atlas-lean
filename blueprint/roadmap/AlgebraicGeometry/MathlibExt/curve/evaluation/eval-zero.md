@@ -7,17 +7,19 @@ proof: formalized
 lean: CurveDivisor.eval_zero
 ---
 
-# Eval zero
+# The zero divisor evaluates to one
 
-The zero divisor evaluates to one.
+**The zero divisor evaluates to one.** For a commutative group $G$ and every function
+$f : C \to G$, the evaluation of the zero divisor on $C$ against $f$ is the identity element
+$1$ of $G$.
 
 ## Depends on
 
-- [Eval](eval.md)
+- [Evaluation of a divisor against a function](eval.md)
 
 ## Proof depends on
 
-- [Eval Monoid Hom](eval-monoid-hom.md)
+- [Evaluation of divisors as a group homomorphism](eval-monoid-hom.md)
 
 ## Sources
 

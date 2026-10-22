@@ -5,6 +5,6 @@ navigation: module
 
 # Basic
 
-- [Laplace Convergent](laplace-convergent.md)
-- [Laplace](laplace.md)
-- [Has Laplace](has-laplace.md)
+- [Convergence of the Laplace transform](laplace-convergent.md)
+- [The one-sided Laplace transform](laplace.md)
+- [Laplace transform with a given value](has-laplace.md)

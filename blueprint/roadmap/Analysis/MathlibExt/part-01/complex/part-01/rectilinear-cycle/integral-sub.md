@@ -7,21 +7,23 @@ proof: formalized
 lean: RectilinearCycle.integral_sub
 ---
 
-# Integral sub
+# Integral over a difference of cycles
 
-Contour integration turns subtraction of cycles into subtraction in the
-Banach-space codomain.
+**Integral over a difference of cycles.** For rectilinear cycles $\Gamma$ and $\Lambda$, a
+complex Banach space $E$ and a function $f : \mathbb{C} \to E$, the contour integral of $f$ over
+$\Gamma - \Lambda$ equals the contour integral of $f$ over $\Gamma$ minus the contour integral of
+$f$ over $\Lambda$.
 
 ## Depends on
 
 - [Rectilinear Cycle](rectilinear-cycle.md)
-- [Integral](integral.md)
+- [Contour integral over a rectilinear cycle](integral.md)
 - [Rectilinear Rectangle](rectilinear-rectangle.md)
 
 ## Proof depends on
 
-- [Integral add](integral-add.md)
-- [Integral neg](integral-neg.md)
+- [Additivity of the contour integral in the cycle](integral-add.md)
+- [Reversing a cycle negates its integral](integral-neg.md)
 
 ## Sources
 

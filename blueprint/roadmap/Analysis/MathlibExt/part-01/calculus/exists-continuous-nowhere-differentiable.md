@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.Analysis.Calculus.NowhereDifferentiable.exists_continuous_nowhere_differentiable
 ---
 
-# Nowhere Differentiable
+# A continuous nowhere differentiable function
 
-There exists a continuous real function which is nowhere differentiable.
+**A continuous nowhere differentiable function.** There exists a continuous function
+$f : \mathbb{R} \to \mathbb{R}$ that is differentiable at no point of $\mathbb{R}$.
 
 ## Depends on
 

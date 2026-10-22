@@ -6,10 +6,11 @@ statement: formalized
 lean: RectilinearCycle.indexAddHom
 ---
 
-# Index Add Hom
+# Winding index as an additive map
 
-Winding index at a fixed point, bundled as an additive homomorphism in
-the rectilinear cycle.
+**Winding index as an additive map.** For a fixed point $w \in \mathbb{C}$, the map sending a
+rectilinear cycle $\Gamma$ to its index about $w$ is an additive group homomorphism from
+rectilinear cycles to $\mathbb{C}$.
 
 ## Depends on
 
@@ -18,9 +19,9 @@ the rectilinear cycle.
 
 ## Proof depends on
 
-- [Index](index.md)
-- [Integral](integral.md)
-- [Integral add](integral-add.md)
+- [Index of a rectilinear cycle](index.md)
+- [Contour integral over a rectilinear cycle](integral.md)
+- [Additivity of the contour integral in the cycle](integral-add.md)
 
 ## Sources
 

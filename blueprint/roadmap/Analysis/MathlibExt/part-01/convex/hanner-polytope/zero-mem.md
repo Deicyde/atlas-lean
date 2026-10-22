@@ -6,19 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.IsHannerPolytope.zero_mem
 ---
 
-# Zero mem
+# Hanner polytopes contain the origin
 
-The origin belongs to every Hanner polytope.
+**Hanner polytopes contain the origin.** The origin belongs to every Hanner polytope.
 
 ## Depends on
 
-- [Is Hanner Polytope](is-hanner-polytope.md)
+- [Hanner polytopes](is-hanner-polytope.md)
 
 ## Proof depends on
 
-- [Hanner Infinity Sum](hanner-infinity-sum.md)
-- [Hanner One Sum](hanner-one-sum.md)
-- [Hanner Unit Segment](hanner-unit-segment.md)
+- [$\ell_\infty$ sum of bodies](hanner-infinity-sum.md)
+- [$\ell_1$ sum of bodies](hanner-one-sum.md)
+- [Centered unit segment](hanner-unit-segment.md)
 
 ## Sources
 

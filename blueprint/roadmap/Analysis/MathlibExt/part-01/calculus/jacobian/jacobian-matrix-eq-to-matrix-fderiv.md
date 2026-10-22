@@ -7,17 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.jacobianMatrix_eq_toMatrix'_fderiv
 ---
 
-# Jacobian Matrix eq to Matrix' fderiv
+# The Jacobian is the matrix of the derivative
 
-At a differentiability point, the Jacobian is the matrix of the Fréchet derivative.
+**The Jacobian is the matrix of the derivative.** Let $f : \mathbb{R}^m \to \mathbb{R}^n$ be
+differentiable at $x \in \mathbb{R}^m$. Then the Jacobian matrix of $f$ at $x$ is the matrix, in
+the standard bases of $\mathbb{R}^m$ and $\mathbb{R}^n$, of the Fréchet derivative of $f$ at $x$,
+viewed as a linear map $\mathbb{R}^m \to \mathbb{R}^n$.
 
 ## Depends on
 
-- [Jacobian Matrix](jacobian-matrix.md)
+- [Jacobian matrix](jacobian-matrix.md)
 
 ## Proof depends on
 
-- [Jacobian Matrix apply of differentiable At](jacobian-matrix-apply-of-differentiable.md)
+- [Jacobian entries at a point of differentiability](jacobian-matrix-apply-of-differentiable.md)
 
 ## Sources
 

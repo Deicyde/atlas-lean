@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry10bEuleriansymmetry.chapter5EulerEven_step
 ---
 
-# Chapter5 Euler Even step
+# Recursion for the even-index Euler numbers
 
-Unfolding of `E_m` for `m ≠ 0` as a signed binomial sum over earlier values.
+**Recursion for the even-index Euler numbers.** For every natural number $m \ge 1$,
+$E_{2m} = -\sum_{k=0}^{m-1} \binom{2m}{2k} E_{2k}$.
 
 ## Depends on
 
-- [Chapter5 Euler Even](chapter5-euler-even.md)
+- [Even-index Euler numbers](chapter5-euler-even.md)
 
 ## Sources
 

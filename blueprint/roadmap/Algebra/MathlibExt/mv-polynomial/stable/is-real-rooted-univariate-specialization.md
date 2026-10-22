@@ -14,16 +14,16 @@ values, provided the resulting univariate degree is constant.
 
 ## Depends on
 
-- [Is Real Stable](is-real-stable.md)
-- [Univariate Specialization](univariate-specialization.md)
-- [Is Real Rooted](../../polynomial/real-rooted/is-real-rooted.md)
+- [Real stable polynomials](is-real-stable.md)
+- [Univariate specialization](univariate-specialization.md)
+- [Real-rooted polynomials](../../polynomial/real-rooted/is-real-rooted.md)
 
 ## Proof depends on
 
-- [Is Stable](is-stable.md)
-- [Eval univariate Specialization](eval-univariate-specialization.md)
-- [Map star univariate Specialization](map-star-univariate-specialization.md)
-- [Is Real Rooted of map star eq self of roots im nonpos](../../polynomial/real-rooted/is-real-rooted-of-map-star-eq-self-of-ro.md)
+- [Stable polynomials](is-stable.md)
+- [Evaluating a univariate specialization](eval-univariate-specialization.md)
+- [Univariate specialization at real values preserves real coefficients](map-star-univariate-specialization.md)
+- [Conjugation-invariant polynomials with roots in the closed lower half-plane are real-rooted](../../polynomial/real-rooted/is-real-rooted-of-map-star-eq-self-of-ro.md)
 
 ## Sources
 

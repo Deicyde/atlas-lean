@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Chapter7 Power Difference Sum](../part1-ch7-power-difference/chapter7-power-difference-sum.md)
+- [The power-difference series](../part1-ch7-power-difference/chapter7-power-difference-sum.md)
 
 ## Sources
 

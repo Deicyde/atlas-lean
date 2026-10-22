@@ -5,5 +5,5 @@ navigation: module
 
 # Two Power Bad Sets
 
-- [Wiman Exceptional Set](wiman-exceptional-set.md)
-- [Exists finite wiman Exceptional Set](exists-finite-wiman-exceptional-set.md)
+- [Wiman exceptional set](wiman-exceptional-set.md)
+- [The Wiman exceptional set has finite measure](exists-finite-wiman-exceptional-set.md)

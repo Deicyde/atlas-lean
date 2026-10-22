@@ -7,17 +7,19 @@ proof: formalized
 lean: CurveDivisor.eval_zsmul
 ---
 
-# Eval zsmul
+# Evaluation of an integer multiple
 
-Evaluation sends integer scaling of a divisor to the corresponding power.
+**Evaluation of an integer multiple.** For a commutative group $G$, every function
+$f : C \to G$, every integer $n$ and every divisor $D$ on $C$, writing $f(D)$ for the
+evaluation of $D$ against $f$, we have $f(nD) = f(D)^n$.
 
 ## Depends on
 
-- [Eval](eval.md)
+- [Evaluation of a divisor against a function](eval.md)
 
 ## Proof depends on
 
-- [Eval Monoid Hom](eval-monoid-hom.md)
+- [Evaluation of divisors as a group homomorphism](eval-monoid-hom.md)
 
 ## Sources
 

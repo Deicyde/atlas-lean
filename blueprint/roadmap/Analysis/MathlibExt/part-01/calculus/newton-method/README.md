@@ -5,5 +5,5 @@ navigation: module
 
 # Newton Method
 
-- [Newton step sub root abs le](newton-step-sub-root-abs-le.md)
-- [Newton method local quadratic convergence](newton-method-local-quadratic-convergenc.md)
+- [One-step error bound for Newton's method](newton-step-sub-root-abs-le.md)
+- [Local quadratic convergence of Newton's method](newton-method-local-quadratic-convergenc.md)

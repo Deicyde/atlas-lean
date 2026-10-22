@@ -7,17 +7,19 @@ proof: formalized
 lean: CurveDivisor.eval_single
 ---
 
-# Eval single
+# Evaluation of a one-point divisor
 
-A divisor supported at one point evaluates to the corresponding power.
+**Evaluation of a one-point divisor.** For a commutative group $G$, every function
+$f : C \to G$, every point $P \in C$ and every integer $n$, the divisor $n \cdot P$, with
+coefficient $n$ at $P$ and $0$ elsewhere, evaluates against $f$ to $f(P)^n$.
 
 ## Depends on
 
-- [Eval](eval.md)
+- [Evaluation of a divisor against a function](eval.md)
 
 ## Proof depends on
 
-- [Eval eq prod](eval-eq-prod.md)
+- [Evaluation is a product over the support](eval-eq-prod.md)
 
 ## Sources
 

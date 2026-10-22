@@ -6,9 +6,11 @@ statement: formalized
 lean: LogarithmicMahlerMeasure.torusCharacter
 ---
 
-# Torus Character
+# Torus character
 
-The torus character `e ↦ exp (I * ∑ j, e j * θ j)` at the angle vector `θ`.
+**Torus character.** For an angle vector $\theta \in \mathbb{R}^n$, the torus character at
+$\theta$ sends an exponent vector $e \in \mathbb{Z}^n$ to
+$\exp\bigl(i \sum_{j} e_j \theta_j\bigr) \in \mathbb{C}$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Real Sum](real-sum.md)
+- [Phase of an exponent vector](real-sum.md)
 
 ## Sources
 

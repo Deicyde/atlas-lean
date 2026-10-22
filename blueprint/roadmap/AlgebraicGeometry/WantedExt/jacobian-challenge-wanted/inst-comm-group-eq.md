@@ -5,14 +5,19 @@ statement: formalized
 lean: MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.AlgebraicGeometry.JacobianChallenge.instCommGroup_eq
 ---
 
-# Inst Comm Group eq
+# Group law on the rational points of the Jacobian
 
-The group law on Jacobian points above is the canonical one induced by the
-group-object structure, not an arbitrary commutative-group structure.
+**Group law on the rational points of the Jacobian.** Let $C$ be a proper, smooth,
+geometrically irreducible curve over a field $k$. The commutative group structure on the set of
+$k$-rational points of the Jacobian $J(C)$ is the one induced by its commutative group scheme
+structure: the product of two $k$-points $x$ and $y$ is $\mu \circ (x, y)$, where $\mu$ is the
+multiplication morphism of $J(C)$.
+
+This pins down the group law rather than allowing an arbitrary commutative group structure.
 
 ## Depends on
 
-- [Jacobian](jacobian.md)
+- [Jacobian of a smooth proper curve](jacobian.md)
 
 ## Sources
 

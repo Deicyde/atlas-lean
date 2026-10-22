@@ -6,17 +6,20 @@ statement: formalized
 lean: NonnegativeDiscreteSpectrum.countingFunction
 ---
 
-# Counting Function
+# Eigenvalue counting function
 
-Strict counting function `N(Λ) = #{j | E_j < Λ}`, with multiplicity.
+**Eigenvalue counting function.** For a nonnegative discrete spectrum with eigenvalues
+$E_0 \le E_1 \le \cdots$ and a real number $\Lambda$, the counting function $N(\Lambda)$ is the
+number of indices $j \in \mathbb{N}$ with $E_j < \Lambda$, so eigenvalues are counted with
+multiplicity.
 
 ## Depends on
 
-- [Nonnegative Discrete Spectrum](nonnegative-discrete-spectrum.md)
+- [Nonnegative discrete spectrum](nonnegative-discrete-spectrum.md)
 
 ## Proof depends on
 
-- [Sublevel Finset](sublevel-finset.md)
+- [Finite strict sublevel set](sublevel-finset.md)
 
 ## Sources
 

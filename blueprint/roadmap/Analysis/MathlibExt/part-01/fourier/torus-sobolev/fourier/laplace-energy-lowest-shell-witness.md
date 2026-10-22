@@ -7,23 +7,24 @@ proof: formalized
 lean: TorusSobolev.laplaceEnergy_lowestShellWitness
 ---
 
-# Laplace Energy lowest Shell Witness
+# Laplacian energy of the lowest-shell witness
 
-Its Laplacian energy, with the primary's physical-frequency weights.
+**Laplacian energy of the lowest-shell witness.** The Laplacian energy of the lowest-shell
+witness equals $1$.
 
 ## Depends on
 
-- [Laplace Energy](../basic/laplace-energy.md)
-- [Lowest Shell Witness](lowest-shell-witness.md)
+- [Laplacian energy](../basic/laplace-energy.md)
+- [Lowest-shell witness](lowest-shell-witness.md)
 
 ## Proof depends on
 
-- [Frequency](../basic/frequency.md)
-- [Axis Frequency](axis-frequency.md)
-- [Fourier Coefficient](../basic/fourier-coefficient.md)
-- [Fourier Coefficient lowest Shell Witness](fourier-coefficient-lowest-shell-witness.md)
-- [Frequency Weight](../basic/frequency-weight.md)
-- [Lowest Shell](lowest-shell.md)
+- [Integer frequencies](../basic/frequency.md)
+- [Axis frequency](axis-frequency.md)
+- [Fourier coefficients on the torus](../basic/fourier-coefficient.md)
+- [Fourier coefficients of the lowest-shell witness](fourier-coefficient-lowest-shell-witness.md)
+- [Squared frequency](../basic/frequency-weight.md)
+- [Lowest frequency shell](lowest-shell.md)
 
 ## Sources
 

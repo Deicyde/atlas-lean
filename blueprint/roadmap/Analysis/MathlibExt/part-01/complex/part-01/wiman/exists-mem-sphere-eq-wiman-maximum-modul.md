@@ -7,14 +7,15 @@ proof: formalized
 lean: Complex.exists_mem_sphere_eq_wimanMaximumModulus
 ---
 
-# Maximum Modulus Attained
+# The maximum modulus is attained
 
-The supremum defining the maximum modulus is attained on every
-nonnegatively-sized circle.
+**The maximum modulus is attained.** Let $f$ be an entire function and let $r \ge 0$. Then
+there is a point $z$ with $|z| = r$ such that $|f(w)| \le |f(z)|$ for every $w$ with $|w| = r$,
+and the maximum modulus $M(r) = \sup_{|w| = r} |f(w)|$ equals $|f(z)|$.
 
 ## Depends on
 
-- [Wiman Maximum Modulus](../../part-02/wiman/wiman-maximum-modulus.md)
+- [Wiman maximum modulus](../../part-02/wiman/wiman-maximum-modulus.md)
 
 ## Sources
 

@@ -7,17 +7,19 @@ proof: formalized
 lean: Complex.wimanTerm_neg
 ---
 
-# Wiman Term neg
+# Wiman term at a negated radius
 
-Negating a radius does not change its Wiman term.
+**Wiman term at a negated radius.** For every function $f : \mathbb{C} \to \mathbb{C}$, every
+real number $r$ and every natural number $n$, the Wiman term of $f$ at radius $-r$ and index $n$
+equals the Wiman term of $f$ at radius $r$ and index $n$.
 
 ## Depends on
 
-- [Wiman Term](wiman-term.md)
+- [Wiman term](wiman-term.md)
 
 ## Proof depends on
 
-- [Wiman Taylor Coefficient](wiman-taylor-coefficient.md)
+- [Wiman Taylor coefficient](wiman-taylor-coefficient.md)
 
 ## Sources
 

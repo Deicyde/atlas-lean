@@ -6,10 +6,10 @@ statement: formalized
 lean: MathlibExt.Algebra.Ring.JacobsonCommutativity.IsMSystem
 ---
 
-# Is MSystem
+# m-system
 
-An `m`-system: a nonempty set avoiding `0`, closed under joining pairs
-through `R`.
+**m-system.** A subset $M$ of a ring $R$ is an $m$-system if it is nonempty, does not
+contain $0$, and for all $a, b \in M$ there is some $r \in R$ with $a r b \in M$.
 
 ## Depends on
 

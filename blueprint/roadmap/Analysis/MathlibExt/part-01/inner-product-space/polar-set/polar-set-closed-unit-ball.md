@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.polarSet_closedUnitBall
 ---
 
-# Polar Set closed Unit Ball
+# The closed unit ball is self-polar
 
-The one-sided real inner-product polar of the closed unit ball is itself.
+**The closed unit ball is self-polar.** In a real inner product space $E$, the polar of the
+closed unit ball $\{x \in E : \|x\| \le 1\}$ is the closed unit ball itself.
 
 ## Depends on
 
-- [Polar Set](polar-set.md)
+- [Polar of a set](polar-set.md)
 
 ## Sources
 

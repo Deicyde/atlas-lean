@@ -7,9 +7,14 @@ proof: formalized
 lean: Complex.boundary_rect_one_div_outside
 ---
 
-# Boundary rect one div outside
+# Rectangle integral of $1/s$ with the pole outside
 
-Rectangle boundary of `1/s` with the pole outside (`0 < a`): vanishes.
+**Rectangle integral of $1/s$ with the pole outside.** Let $a, b, T$ be real numbers with
+$0 < a \le b$ and $T > 0$. Then
+$$\int_a^b \frac{dx}{x - iT} - \int_a^b \frac{dx}{x + iT} +
+i \left( \int_{-T}^{T} \frac{dy}{b + iy} - \int_{-T}^{T} \frac{dy}{a + iy} \right) = 0,$$
+that is, the integral of $1/s$ over the positively oriented boundary of the rectangle with
+corners $a - iT$ and $b + iT$ vanishes.
 
 ## Depends on
 
@@ -17,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Horiz diff one div](horiz-diff-one-div.md)
-- [Vertical side one div](vertical-side-one-div.md)
+- [Difference of horizontal integrals of the reciprocal](horiz-diff-one-div.md)
+- [Integral of $1/(c + iy)$ over a symmetric interval](vertical-side-one-div.md)
 
 ## Sources
 

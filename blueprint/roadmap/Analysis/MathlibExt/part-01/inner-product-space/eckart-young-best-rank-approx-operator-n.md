@@ -7,10 +7,14 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.EckartYoungWanted.eckartYoung_best_rank_approx_operator_norm
 ---
 
-# Eckart Young
+# Eckart–Young theorem in operator norm
 
-Eckart-Young best rank-`k` approximation in operator norm: the infimum operator-norm distance from
-`T` to linear maps `S` of `finrank` at most `k` equals `T.singularValues k`.
+**Eckart–Young theorem in operator norm.** Let $E$ and $F$ be finite-dimensional inner product
+spaces over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, let $T : E \to F$ be a linear map and let
+$k \ge 0$ be an integer. The infimum of the operator norms $\|T - S\|$ over all linear maps
+$S : E \to F$ whose range has dimension at most $k$ equals $\sigma_k(T)$, where
+$\sigma_0(T) \ge \sigma_1(T) \ge \cdots$ are the singular values of $T$ listed with multiplicity
+and indexed from $0$, and $\sigma_j(T) = 0$ for $j \ge \dim E$.
 
 ## Depends on
 

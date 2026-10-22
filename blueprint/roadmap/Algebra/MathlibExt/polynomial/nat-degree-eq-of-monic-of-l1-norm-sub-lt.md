@@ -7,17 +7,19 @@ proof: formalized
 lean: Polynomial.natDegree_eq_of_monic_of_l1Norm_sub_lt_one
 ---
 
-# Degree Stability
+# Monic polynomials close in L1 norm have the same degree
 
-Monic polynomials within l1-distance one have equal natural degree.
+**Monic polynomials close in L1 norm have the same degree.** Let $K$ be a nontrivial ring
+and $v$ a real-valued absolute value on $K$. If $f, g \in K[x]$ are monic and the L1 norm of
+$f - g$ with respect to $v$ is strictly less than $1$, then $f$ and $g$ have the same degree.
 
 ## Depends on
 
-- [L1 Norm](l1-norm/l1-norm.md)
+- [L1 norm of a polynomial](l1-norm/l1-norm.md)
 
 ## Proof depends on
 
-- [L1 Norm def](l1-norm/l1-norm-def.md)
+- [L1 norm as a sum over the support](l1-norm/l1-norm-def.md)
 
 ## Sources
 

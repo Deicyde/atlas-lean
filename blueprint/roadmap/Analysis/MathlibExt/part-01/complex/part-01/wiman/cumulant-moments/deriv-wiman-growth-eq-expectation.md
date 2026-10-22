@@ -7,22 +7,26 @@ proof: formalized
 lean: Complex.deriv_wimanGrowth_eq_expectation
 ---
 
-# Deriv wiman Growth eq expectation
+# Derivative of the logarithmic majorant as a mean
 
-The first derivative of the logarithmic majorant is the mean index under the tilted
-coefficient distribution.
+**Derivative of the logarithmic majorant as a mean.** Let $f$ be an entire function whose
+Taylor coefficients $a_n$ at the origin are not all zero, and let
+$\Phi(x) = \log \sum_{n \ge 0} |a_n| e^{nx}$. For real $x$, let $\nu_x$ be the coefficient
+measure tilted at $x$, the probability measure on $\mathbb{N}$ with
+$\nu_x(\{n\}) = |a_n| e^{nx} / \sum_{m \ge 0} |a_m| e^{mx}$. Then
+$\Phi'(x) = \int n \, d\nu_x(n)$, the mean of $n$ under $\nu_x$.
 
 ## Depends on
 
 - [Wiman Growth](../coefficient-exponential-family/wiman-growth.md)
-- [Wiman Taylor Coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
-- [Wiman Tilted Measure](../coefficient-exponential-family/wiman-tilted-measure.md)
+- [Wiman Taylor coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
+- [Tilted coefficient measure](../coefficient-exponential-family/wiman-tilted-measure.md)
 
 ## Proof depends on
 
-- [Mem interior integrable Exp Set wiman Coefficient Measure](../coefficient-exponential-family/mem-interior-integrable-exp-set-wiman-co.md)
-- [Wiman Coefficient Measure](../coefficient-exponential-family/wiman-coefficient-measure.md)
-- [Wiman cgf eq growth](../coefficient-exponential-family/wiman-cgf-eq-growth.md)
+- [Every real parameter is interior to the exponential-integrability set](../coefficient-exponential-family/mem-interior-integrable-exp-set-wiman-co.md)
+- [Wiman coefficient measure](../coefficient-exponential-family/wiman-coefficient-measure.md)
+- [The Wiman growth is the cumulant generating function of the coefficient measure](../coefficient-exponential-family/wiman-cgf-eq-growth.md)
 
 ## Sources
 

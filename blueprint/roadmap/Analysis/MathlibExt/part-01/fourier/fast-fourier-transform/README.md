@@ -5,9 +5,9 @@ navigation: module
 
 # Fast Fourier Transform
 
-- [Dft Sum](dft-sum.md)
-- [Dft Sum two mul](dft-sum-two-mul.md)
+- [Discrete Fourier sum](dft-sum.md)
+- [Even–odd splitting of the DFT sum](dft-sum-two-mul.md)
 - [Dft Sum mod](dft-sum-mod.md)
-- [Cooley tukey](cooley-tukey.md)
-- [Fft Cost](fft-cost.md)
-- [Fft Cost recurrence](fft-cost-recurrence.md)
+- [Radix-2 Cooley–Tukey splitting](cooley-tukey.md)
+- [FFT operation count](fft-cost.md)
+- [The FFT cost satisfies the radix-2 recurrence](fft-cost-recurrence.md)

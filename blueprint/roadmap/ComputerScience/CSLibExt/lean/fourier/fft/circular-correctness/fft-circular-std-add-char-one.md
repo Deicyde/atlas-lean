@@ -23,7 +23,7 @@ Every actual MIT/CLRS-sign circular output is its cyclic convolution coefficient
 - [Fft std Add Char one normalized](../canonical-dft/fft-std-add-char-one-normalized.md)
 - [Ifft](../inverse/ifft.md)
 - [Ifft std Add Char one](../inverse-canonical-dft/ifft-std-add-char-one.md)
-- [ZMod Convolution](../../../../../../Analysis/MathlibExt/part-01/fourier/inv-dft-mul-dft.md)
+- [Convolution theorem for the discrete Fourier transform](../../../../../../Analysis/MathlibExt/part-01/fourier/inv-dft-mul-dft.md)
 
 ## Sources
 

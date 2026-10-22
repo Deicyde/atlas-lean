@@ -7,19 +7,21 @@ proof: formalized
 lean: RectilinearCycle.integral_neg
 ---
 
-# Integral neg
+# Reversing a cycle negates its integral
 
-Reversing a rectilinear cycle negates its contour integral.
+**Reversing a cycle negates its integral.** For every rectilinear cycle $\Gamma$, every
+complex Banach space $E$ and every function $f : \mathbb{C} \to E$, the contour integral of $f$
+over $-\Gamma$ is the negative of the contour integral of $f$ over $\Gamma$.
 
 ## Depends on
 
 - [Rectilinear Cycle](rectilinear-cycle.md)
-- [Integral](integral.md)
+- [Contour integral over a rectilinear cycle](integral.md)
 - [Rectilinear Rectangle](rectilinear-rectangle.md)
 
 ## Proof depends on
 
-- [Integral add](integral-add.md)
+- [Additivity of the contour integral in the cycle](integral-add.md)
 
 ## Sources
 

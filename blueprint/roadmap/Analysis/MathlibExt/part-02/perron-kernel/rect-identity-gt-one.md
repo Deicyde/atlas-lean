@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Boundary rect one div](../../part-01/complex/part-01/rectilinear-cycle/boundary-rect-one-div.md)
+- [Rectangle integral of $1/s$ around the origin](../../part-01/complex/part-01/rectilinear-cycle/boundary-rect-one-div.md)
 - [Cpow div eq remainder add](cpow-div-eq-remainder-add.md)
 - [Perron Remainder](perron-remainder.md)
 - [Perron Remainder differentiable](perron-remainder-differentiable.md)

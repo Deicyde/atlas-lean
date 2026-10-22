@@ -5,9 +5,9 @@ navigation: module
 
 # Hessian
 
-- [Hessian Matrix](hessian-matrix.md)
-- [Hessian Matrix apply](hessian-matrix-apply.md)
-- [Hessian Matrix eq fderiv fderiv](hessian-matrix-eq-fderiv-fderiv.md)
-- [Hessian Matrix symmetric](hessian-matrix-symmetric.md)
+- [Hessian matrix](hessian-matrix.md)
+- [Entries of the Hessian matrix](hessian-matrix-apply.md)
+- [Hessian entries as second Fréchet derivatives](hessian-matrix-eq-fderiv-fderiv.md)
+- [Symmetry of the Hessian](hessian-matrix-symmetric.md)
 - [Deriv deriv nonneg](deriv-deriv-nonneg.md)
-- [Is Local Min hessian quadratic nonneg](is-local-min-hessian-quadratic-nonneg.md)
+- [Second-derivative test, necessary condition](is-local-min-hessian-quadratic-nonneg.md)

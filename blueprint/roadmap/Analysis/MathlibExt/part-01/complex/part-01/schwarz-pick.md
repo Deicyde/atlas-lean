@@ -7,10 +7,11 @@ proof: formalized
 lean: MathlibExt.Analysis.Complex.SchwarzPick.schwarzPick
 ---
 
-# Schwarz Pick
+# Schwarz–Pick lemma
 
-If `f : ℂ → ℂ` is holomorphic on `ball 0 1` and maps the ball into itself, then `‖(f z - f w)/(1 -
-conj (f w) * f z)‖ ≤ ‖(z - w)/(1 - conj w * z)‖` for all `z, w ∈ ball 0 1`, where `conj = star`.
+**Schwarz–Pick lemma.** Let $f : \mathbb{C} \to \mathbb{C}$ be holomorphic on the open unit disc
+$\mathbb{D} = \{z : |z| < 1\}$ and map $\mathbb{D}$ into itself. Then for all $z, w \in \mathbb{D}$,
+$|f(z) - f(w)| / |1 - \overline{f(w)}\, f(z)| \le |z - w| / |1 - \bar w z|$.
 
 ## Depends on
 
@@ -19,4 +20,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.SchwarzPick](../../../../../../sources/v2/MathlibExt.md)
-- Schwarz–Pick lemma, G. Pick (1916), building on Schwarz's lemma; see Ahlfors; Lean is holomorphic self-map of disc pseudo-hyperbolic distance nonincreasing inequality with star conj. Proves `Wanted` entry `schwarzPick`.
+- Schwarz–Pick lemma, G. Pick (1916), building on Schwarz's lemma; see Ahlfors; Lean is holomorphic self-map of disc pseudo-hyperbolic distance nonincreasing inequality with star conj.

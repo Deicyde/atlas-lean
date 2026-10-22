@@ -6,9 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.partialDeriv
 ---
 
-# Partial Deriv
+# Partial derivative along a coordinate axis
 
-Coordinate partial derivative of `f` along the `i`-th axis.
+**Partial derivative along a coordinate axis.** For $f : \mathbb{R}^n \to \mathbb{R}$ and a
+coordinate index $i$, let $e_i$ be the $i$-th standard basis vector. The partial derivative
+$\partial_i f : \mathbb{R}^n \to \mathbb{R}$ sends $x$ to the derivative at $t = 0$ of
+$t \mapsto f(x + t e_i)$, taken to be $0$ when this function is not differentiable at $0$.
 
 ## Depends on
 

@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Chapter8 Digamma eq digamma](chapter8-digamma-eq-digamma.md)
+- [Digamma as the logarithmic derivative of Gamma (used for Chapter 8, Entry 11)](chapter8-digamma-eq-digamma.md)
 - [Ramanujan part1 ch8 entry11 qgammafunctional digamma](ramanujan-part1-ch8-entry11-qgammafuncti.md)
 
 ## Sources

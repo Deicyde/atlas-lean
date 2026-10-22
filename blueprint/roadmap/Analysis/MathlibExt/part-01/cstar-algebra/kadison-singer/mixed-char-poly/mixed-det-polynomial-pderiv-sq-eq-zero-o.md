@@ -7,17 +7,23 @@ proof: formalized
 lean: MathlibExt.Analysis.CStarAlgebra.KadisonSinger.mixedDetPolynomial_pderiv_sq_eq_zero_of_eq_vecMulVec
 ---
 
-# Mixed Det Polynomial pderiv sq eq zero of eq vec Mul Vec
+# Rank-one coefficients make the mixed determinant polynomial affine
 
-A determinant polynomial is affine in a variable whose coefficient matrix has rank one.
+**Rank-one coefficients make the mixed determinant polynomial affine.** Let
+$A_1, \dots, A_m$ be square complex matrices whose rows and columns are indexed by a finite set
+$d$, and suppose that $A_i = u v^{\mathsf T}$ for some index $i$ and vectors
+$u, v \in \mathbb{C}^d$. Consider the mixed determinant polynomial
+$\det(x I + \sum_{j=1}^m z_j A_j)$ in the variables $x, z_1, \dots, z_m$, where $I$ is the
+identity matrix. Then its second partial derivative with respect to $z_i$ is zero; equivalently,
+it has degree at most one in $z_i$.
 
 ## Depends on
 
-- [Mixed Det Polynomial](mixed-det-polynomial.md)
+- [Mixed determinant polynomial](mixed-det-polynomial.md)
 
 ## Proof depends on
 
-- [Eval mixed Det Polynomial](eval-mixed-det-polynomial.md)
+- [Values of the mixed determinant polynomial](eval-mixed-det-polynomial.md)
 - [Det add smul vec Mul Vec](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/mv-polynomial/det-add-smul-vec-mul-vec.md)
 
 ## Sources

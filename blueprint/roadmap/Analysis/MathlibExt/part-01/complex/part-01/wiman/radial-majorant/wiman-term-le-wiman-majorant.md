@@ -7,19 +7,22 @@ proof: formalized
 lean: Complex.wimanTerm_le_wimanMajorant
 ---
 
-# Wiman Term le wiman Majorant
+# Each radial Taylor term is at most the radial majorant
 
-Each Taylor term is bounded by the radial majorant.
+**Each radial Taylor term is at most the radial majorant.** Let $f$ be an entire function with
+Taylor coefficients $a_n = f^{(n)}(0) / n!$ at the origin, and let
+$M_f(r) = \sum_{k \ge 0} |a_k| \, |r|^k$ be its radial majorant. For every real $r$ and every
+$n \in \mathbb{N}$, $|a_n| \, |r|^n \le M_f(r)$.
 
 ## Depends on
 
-- [Wiman Majorant](wiman-majorant.md)
-- [Wiman Term](../../../part-02/wiman/wiman-term.md)
+- [Radial majorant](wiman-majorant.md)
+- [Wiman term](../../../part-02/wiman/wiman-term.md)
 
 ## Proof depends on
 
-- [Summable wiman Term](summable-wiman-term.md)
-- [Wiman Term nonneg](wiman-term-nonneg.md)
+- [Summability of the radial Taylor terms](summable-wiman-term.md)
+- [Radial Taylor terms are nonnegative](wiman-term-nonneg.md)
 
 ## Sources
 

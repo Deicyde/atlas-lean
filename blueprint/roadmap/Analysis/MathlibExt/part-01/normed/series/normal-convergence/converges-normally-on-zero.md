@@ -7,17 +7,19 @@ proof: formalized
 lean: convergesNormallyOn_zero
 ---
 
-# Converges Normally On zero
+# Normal convergence of the zero series
 
-The zero series converges normally on every set.
+**Normal convergence of the zero series.** For every set $S \subseteq X$ and every seminormed
+additive commutative group $E$, the series of functions $X \to E$ whose terms are all zero
+converges normally on $S$.
 
 ## Depends on
 
-- [Sup Norm On](sup-norm-on.md)
+- [Extended supremum norm on a set](sup-norm-on.md)
 
 ## Proof depends on
 
-- [Sup Norm On zero](sup-norm-on-zero.md)
+- [Supremum norm of the zero function](sup-norm-on-zero.md)
 
 ## Sources
 

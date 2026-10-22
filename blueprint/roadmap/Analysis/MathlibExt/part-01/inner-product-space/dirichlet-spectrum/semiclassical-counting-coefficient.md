@@ -6,10 +6,12 @@ statement: formalized
 lean: EuclideanLaplacian.semiclassicalCountingCoefficient
 ---
 
-# Semiclassical Counting Coefficient
+# Semiclassical counting coefficient
 
-Semiclassical counting coefficient `ωₙ |Ω| / (2π)ⁿ`: the product of the
-unit-ball volume and the domain volume, divided by `(2π)ⁿ`.
+**Semiclassical counting coefficient.** For an open set $\Omega \subseteq \mathbb{R}^n$, the
+semiclassical counting coefficient is $\omega_n |\Omega| / (2\pi)^n$, where $\omega_n$ is the
+volume of the unit ball in $\mathbb{R}^n$ and $|\Omega|$ is the Lebesgue measure of $\Omega$
+taken as a real number, with $|\Omega| = 0$ when that measure is infinite.
 
 ## Depends on
 
@@ -17,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Domain Volume](domain-volume.md)
-- [Unit Ball Volume](unit-ball-volume.md)
+- [Volume of a domain](domain-volume.md)
+- [Volume of the unit ball](unit-ball-volume.md)
 
 ## Sources
 

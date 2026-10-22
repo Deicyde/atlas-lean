@@ -7,19 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.catalan_stirling_asymptotic_expansions
 ---
 
-# Catalan stirling asymptotic expansions
+# Stirling-type asymptotic expansions of the Catalan numbers
 
-The two Stirling-type asymptotic expansions of the Catalan numbers, in
-logarithmic form: with `C n = catalan n`, `log (C n * n * √(π * n) / 4 ^ n)`
-is asymptotic to `∑_{k=1}^{m} (-1)^{k+1} ((2^{-k} - 2) B_{k+1} - k - 1) /
-(k (k + 1)) n^{-k}` with remainder `o(n^{-m})` for every `m`, and
-`log (C n * √(π * (n + 3/4)^3) / 4 ^ n)` is asymptotic to
-`∑_{k=1}^{m} 2^{-4k-2} (4 - E_{2k}) / k (n + 3/4)^{-2k}` with remainder
-`o((n + 3/4)^{-2m})` for every `m`. The sequence `E` is pinned down by the
-Euler-number recurrence `E 0 = 1`, `∑_j C(n,2j) E_{n-2j} = 0` for `n > 0`
-(giving `E = 1, 0, -1, 0, 5, ...`), and `bernoulli` is the Bernoulli-number
-sequence. The `k = 1` term of the first expansion is `-9 / (8n)`, matching
-the classical `C_n = 4^n / (√π n^{3/2}) (1 - 9/(8n) + ...)`.
+**Stirling-type asymptotic expansions of the Catalan numbers.** Let $C_n$ be the $n$-th Catalan
+number and $B_k$ the $k$-th Bernoulli number, and let $(E_k)$ be a sequence of integers with
+$E_0 = 1$ and $\sum_{j=0}^{\lfloor n/2 \rfloor} \binom{n}{2j} E_{n-2j} = 0$ for every $n > 0$
+(these are the Euler numbers $1, 0, -1, 0, 5, \dots$). For $k \ge 1$ put
+$c_k = (-1)^{k+1} \left((2^{-k} - 2) B_{k+1} - k - 1\right) / (k (k + 1))$ and
+$d_k = 2^{-4k-2} (4 - E_{2k}) / k$. Then for every $m \ge 0$, as $n \to \infty$,
+$\log\left(C_n \, n \sqrt{\pi n} / 4^n\right) = \sum_{k=1}^{m} c_k n^{-k} + o(n^{-m})$ and,
+writing $x = n + 3/4$,
+$\log\left(C_n \sqrt{\pi x^3} / 4^n\right) = \sum_{k=1}^{m} d_k x^{-2k} + o(x^{-2m})$.
+
+The first coefficient is $c_1 = -9/8$, matching the classical expansion
+$C_n = \frac{4^n}{\sqrt{\pi} \, n^{3/2}} \left(1 - \frac{9}{8n} + \dots\right)$.
 
 Proof: The Catalan recurrence gives a logarithmic first-difference equation.
 Telescoping its Bernoulli-polynomial expansion yields both all-orders formulas.

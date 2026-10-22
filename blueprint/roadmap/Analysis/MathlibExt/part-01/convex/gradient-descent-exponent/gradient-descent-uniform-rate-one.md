@@ -7,20 +7,23 @@ proof: formalized
 lean: gradientDescentUniformRate_one
 ---
 
-# Gradient Descent Uniform Rate one
+# Constant unit steps achieve exponent one
 
-The existing fixed-step descent theorem supplies a uniform exponent-one
-member of the optimization family, not its claimed optimum.
+**Constant unit steps achieve exponent one.** The step schedule with every step size equal to
+$1$ achieves a uniform last-iterate rate with exponent $1$.
+
+This follows from the fixed-step descent theorem; it is a lower bound for the gradient descent
+exponent, not its conjectured optimal value.
 
 ## Depends on
 
-- [Gradient Descent Uniform Rate](gradient-descent-uniform-rate.md)
+- [Uniform last-iterate rate of a step schedule](gradient-descent-uniform-rate.md)
 
 ## Proof depends on
 
-- [Is Unit Smooth Convex](is-unit-smooth-convex.md)
-- [Gradient Descent](../gradient-descent-convex-sublinear-rate.md)
-- [Gradient Descent Trajectory](gradient-descent-trajectory.md)
+- [Convex functions with $1$-Lipschitz gradient](is-unit-smooth-convex.md)
+- [Sublinear rate of gradient descent for smooth convex functions](../gradient-descent-convex-sublinear-rate.md)
+- [Gradient descent with a step schedule](gradient-descent-trajectory.md)
 
 ## Sources
 

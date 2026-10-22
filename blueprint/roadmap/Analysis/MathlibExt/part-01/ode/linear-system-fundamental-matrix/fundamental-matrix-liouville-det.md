@@ -7,10 +7,14 @@ proof: formalized
 lean: MathlibExt.Analysis.ODE.LinearSystemFundamentalMatrixWanted.fundamental_matrix_liouville_det
 ---
 
-# Fundamental matrix liouville det
+# Liouville's formula for the principal matrix solution
 
-Liouville (Abel) formula: the Wronskian determinant of a fundamental
-matrix grows by the exponential of the integrated trace.
+**Liouville's formula for the principal matrix solution.** Let $n \in \mathbb{N}$, let
+$A : \mathbb{R} \to \mathbb{R}^{n \times n}$ be continuous, let $t_0 \in \mathbb{R}$, write $I$ for
+the $n \times n$ identity matrix, and let $\Phi : \mathbb{R} \to \mathbb{R}^{n \times n}$ satisfy
+$\Phi(t_0) = I$ and $\Phi'(t) = A(t) \Phi(t)$ for every $t \in \mathbb{R}$. Then for every
+$t \in \mathbb{R}$,
+$\det \Phi(t) = \det \Phi(t_0) \exp\left(\int_{t_0}^{t} \operatorname{tr} A(s)\, ds\right)$.
 
 Proof: Jacobi's formula follows from the determinant's first-order term; an integrating factor then
 gives Teschl, Lemma 3.11, formula (3.91).

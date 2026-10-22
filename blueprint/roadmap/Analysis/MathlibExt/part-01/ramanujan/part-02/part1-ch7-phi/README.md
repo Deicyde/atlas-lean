@@ -5,5 +5,5 @@ navigation: module
 
 # Part1 Ch7 Phi
 
-- [Chapter7 Phi Argument](chapter7-phi-argument.md)
-- [Chapter7 Phi](chapter7-phi.md)
+- [Arguments of Berndt's $\varphi_r(x)$](chapter7-phi-argument.md)
+- [Berndt's function $\varphi_r(x)$ on $(-1, 0)$](chapter7-phi.md)

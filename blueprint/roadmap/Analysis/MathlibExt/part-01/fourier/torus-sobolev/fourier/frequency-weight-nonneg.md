@@ -7,14 +7,15 @@ proof: formalized
 lean: TorusSobolev.frequencyWeight_nonneg
 ---
 
-# Frequency Weight nonneg
+# Frequency weights are nonnegative
 
-The weights are nonnegative squared integer frequencies.
+**Frequency weights are nonnegative.** For every frequency $k = (k_0, k_1) \in \mathbb{Z}^2$,
+the frequency weight $k_0^2 + k_1^2$ is nonnegative.
 
 ## Depends on
 
-- [Frequency](../basic/frequency.md)
-- [Frequency Weight](../basic/frequency-weight.md)
+- [Integer frequencies](../basic/frequency.md)
+- [Squared frequency](../basic/frequency-weight.md)
 
 ## Sources
 

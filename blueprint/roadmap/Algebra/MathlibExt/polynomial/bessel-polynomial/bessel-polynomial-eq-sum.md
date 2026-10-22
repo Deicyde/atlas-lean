@@ -7,15 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.besselPolynomial_eq_sum
 ---
 
-# Bessel Polynomial eq sum
+# Explicit formula for the Bessel polynomials
 
-Restatement of the defining formula for `besselPolynomial`
-(concept `jis_sem_0d5596f0982681bcb579a894`; Schork source lines 285-288).
+**Explicit formula for the Bessel polynomials.** For every natural number $n$, the Bessel
+polynomial $y_n \in \mathbb{Q}[x]$ equals
+$\sum_{k=0}^{n} \frac{(n+k)!}{2^k \, k! \, (n-k)!} \, x^k$.
+
+This is the defining formula, so the identity holds by definition.
 
 ## Depends on
 
-- [Bessel Polynomial](bessel-polynomial.md)
+- [Bessel polynomial](bessel-polynomial.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Polynomial.BesselPolynomial](../../../../../sources/v2/MathlibExt.md)
+- Schork, lines 285-288 (concept `jis_sem_0d5596f0982681bcb579a894`).

@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.polarSet_subset_polarSet
 ---
 
-# Polar Set subset polar Set
+# The polar reverses inclusion
 
-The polar is antitone: a larger set has a smaller polar.
+**The polar reverses inclusion.** Let $A$ and $B$ be subsets of a real inner product space.
+If $A \subseteq B$, then the polar $B^\circ$ of $B$ is contained in the polar $A^\circ$ of $A$.
 
 ## Depends on
 
-- [Polar Set](polar-set.md)
+- [Polar of a set](polar-set.md)
 
 ## Sources
 

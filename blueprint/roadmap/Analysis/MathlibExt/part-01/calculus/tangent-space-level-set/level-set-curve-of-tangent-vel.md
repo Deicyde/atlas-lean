@@ -7,11 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.levelSet_curve_of_tangent_vel
 ---
 
-# Level Set curve of tangent vel
+# Kernel vectors are velocities of curves in a regular level set
 
-Every kernel vector is tangent to a regular level set: at a point where
-the Frechet derivative is surjective, each `v` with `fderiv = 0` is the
-velocity of a curve staying in the level set.
+**Kernel vectors are velocities of curves in a regular level set.** Let $E$ be a real
+Banach space, $f : E \to \mathbb{R}$ a $C^1$ function, $c \in \mathbb{R}$, and $x \in E$ a point
+with $f(x) = c$ at which the derivative $Df(x) : E \to \mathbb{R}$ is surjective. Then for every
+$v \in E$ with $Df(x)v = 0$ there is a curve $\gamma : \mathbb{R} \to E$ with $\gamma(0) = x$,
+$\gamma'(0) = v$ and $f(\gamma(t)) = c$ for all $t \in \mathbb{R}$.
 
 Proof: Use the implicit function theorem to construct a local curve tangent to the kernel vector,
 then compose it with a bounded arctangent reparametrization to obtain a curve on all of `ℝ`

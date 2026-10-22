@@ -7,18 +7,21 @@ proof: formalized
 lean: MathlibExt.Analysis.Convex.Straszewicz.dirDeriv_add_neg_nonneg
 ---
 
-# Dir Deriv add neg nonneg
+# Opposite directional derivatives have nonnegative sum
 
-The two opposite directional derivatives sum to something nonnegative.
+**Opposite directional derivatives have nonnegative sum.** Let $E$ be a real normed space
+with continuous dual $E^*$, let $h : E^* \to \mathbb{R}$ be convex, and write $h'(x; v)$ for the
+directional derivative of $h$ at $x$ in direction $v$. For all $x, v \in E^*$,
+$h'(x; v) + h'(x; -v) \ge 0$.
 
 ## Depends on
 
-- [Dir Deriv](dir-deriv.md)
+- [Directional derivative](dir-deriv.md)
 
 ## Proof depends on
 
-- [Dir Deriv subadd](dir-deriv-subadd.md)
-- [Dir Deriv zero](dir-deriv-zero.md)
+- [Subadditivity of the directional derivative](dir-deriv-subadd.md)
+- [Directional derivative in direction zero](dir-deriv-zero.md)
 
 ## Sources
 

@@ -7,16 +7,16 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.BoundedSelfAdjointSpectralWanted.boundedSelfAdjoint_spectral_multiplication
 ---
 
-# Bounded Self Adjoint spectral multiplication
+# Spectral theorem for bounded self-adjoint operators, multiplication form
 
-Spectral theorem for bounded self-adjoint operators, multiplication-operator form: a
-self-adjoint `T : E →L[ℂ] E` is unitarily equivalent to multiplication by a real-valued
-measurable function on some `L²`. Sources: Mathlib
-`Mathlib/Analysis/InnerProductSpace/Spectrum.lean` TODO (spectral theory for bounded
-self-adjoint operators); W. Rudin, Functional Analysis, 2nd ed., Ch. 12.
+**Spectral theorem for bounded self-adjoint operators, multiplication form.** Let $E$ be a
+complex Hilbert space and $T$ a bounded self-adjoint operator on $E$. Then there are a measure
+space $(X, \mu)$, a measurable function $\varphi : X \to \mathbb{R}$ and a linear isometric
+isomorphism $U$ of $E$ onto $L^2(X, \mu; \mathbb{C})$ such that for every $x \in E$,
+$U(Tx)(a) = \varphi(a)\,(Ux)(a)$ for $\mu$-almost every $a \in X$.
 
 Proof: Scalar measures from the continuous functional calculus identify each cyclic subspace with an
-`L²` space. A maximal orthogonal family of cyclic subspaces is then assembled over a disjoint-union
+$L^2$ space. A maximal orthogonal family of cyclic subspaces is then assembled over a disjoint-union
 measure, where the spectral coordinate acts by multiplication.
 
 ## Depends on
@@ -25,8 +25,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists spectral Measure](exists-spectral-measure.md)
+- [Scalar spectral measure of a vector](exists-spectral-measure.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.InnerProductSpace.BoundedSelfAdjointSpectral](../../../../../../sources/v2/MathlibExt.md)
+- Mathlib `Mathlib/Analysis/InnerProductSpace/Spectrum.lean` TODO (spectral theory for bounded self-adjoint operators); W. Rudin, Functional Analysis, 2nd ed., Ch. 12.

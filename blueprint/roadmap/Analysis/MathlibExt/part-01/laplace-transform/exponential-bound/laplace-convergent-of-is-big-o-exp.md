@@ -7,23 +7,22 @@ proof: formalized
 lean: laplaceConvergent_of_isBigO_exp
 ---
 
-# Laplace Convergent of is Big O exp
+# Convergence of the Laplace transform under exponential growth
 
-Laplace convergence from a source-shaped eventual exponential Big-O bound.
+**Convergence of the Laplace transform under exponential growth.** Let $E$ be a complex
+normed space, $a \in \mathbb{R}$, and $f : \mathbb{R} \to E$ locally integrable on $[0, \infty)$
+with $\|f(t)\| = O(e^{a t})$ as $t \to \infty$. Then for every $s \in \mathbb{C}$ with
+$\operatorname{Re} s > a$ the Laplace transform of $f$ converges at $s$, that is,
+$t \mapsto e^{-st} f(t)$ is integrable on $(0, \infty)$.
 
-This is the first half of a corrected, strengthened-premise formalization of the
-ATLAS N320 intended convergence claim: a locally integrable function with
-`f =O[atTop] exp (a * t)` has a convergent Laplace transform for `a < s.re`.
-The `LocallyIntegrableOn f (Set.Ici 0)` premise explicitly repairs the missing
-endpoint condition: ATLAS's piecewise continuity on `ℝ_{>0}` does not supply
-near-zero integrability (counterexample `f(t) = 1/t`); the tail is handled by the
-asymptotic integrability API. This is not a literal proof of the under-specified
-source wording.
+Local integrability on $[0, \infty)$, not only on $(0, \infty)$, is needed: $f(t) = 1/t$ is
+continuous on $(0, \infty)$ and bounded at infinity, but not integrable near $0$.
 
 ## Depends on
 
-- [Laplace Convergent](../basic/laplace-convergent.md)
+- [Convergence of the Laplace transform](../basic/laplace-convergent.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.LaplaceTransform.ExponentialBound](../../../../../../sources/v2/MathlibExt.md)
+- ATLAS NumberTheoryI N320 (Sutherland, 18.785 Number Theory I, Lecture 16); a corrected, strengthened-premise formalization of the intended convergence claim, since the source's piecewise continuity on the open ray does not give integrability near 0. This is not a literal proof of the under-specified source wording.

@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.Analysis.Complex.MittagLefflerWanted.principalPart_analyticAt
 ---
 
-# Principal Part analytic At
+# The principal part is analytic away from its pole
 
-Away from its pole `s`, the principal part is analytic.
+**The principal part is analytic away from its pole.** For every $s \in \mathbb{C}$ and every
+finitely supported sequence $c$ of complex coefficients, the principal part at $s$ with
+coefficients $c$ is analytic at every point $z \neq s$.
 
 ## Depends on
 
-- [Principal Part](principal-part.md)
+- [Principal part with finitely many coefficients](principal-part.md)
 
 ## Sources
 

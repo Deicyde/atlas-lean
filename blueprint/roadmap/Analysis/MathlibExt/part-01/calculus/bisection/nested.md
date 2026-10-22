@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.IsBisectionSequence.nested
 ---
 
-# Nested
+# Bisection intervals are nested
 
-Consecutive bisection intervals are nested.
+**Bisection intervals are nested.** Let $f : \mathbb{R} \to \mathbb{R}$, let $a \le b$, and let
+$u, v$ be a bisection sequence for $f$ from $a$ to $b$. Then for every $n \in \mathbb{N}$,
+$u_n \le u_{n+1} \le v_{n+1} \le v_n$.
 
 ## Depends on
 
-- [Is Bisection Sequence](is-bisection-sequence.md)
+- [Bisection sequence](is-bisection-sequence.md)
 
 ## Sources
 

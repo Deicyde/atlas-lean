@@ -7,15 +7,18 @@ proof: formalized
 lean: BooleanCube.eval_cubeBasis
 ---
 
-# Eval cube Basis
+# Lagrange basis polynomials on the cube are point indicators
 
-A cube basis polynomial evaluates to one at its point and zero at every
-other Boolean point.
+**Lagrange basis polynomials on the cube are point indicators.** Let $x$ and $y$ be points
+of the Boolean cube of dimension $n$, and identify $y$ with the point of
+$\{0,1\}^n \subseteq \mathbb{R}^n$ whose $i$-th coordinate is $1$ when $y_i$ is true and $0$
+when it is false. Then the cube basis polynomial of $x$ evaluated at $y$ equals $1$ if $x = y$
+and $0$ otherwise.
 
 ## Depends on
 
-- [Bool Cube](bool-cube.md)
-- [Cube Basis](cube-basis.md)
+- [Boolean cube](bool-cube.md)
+- [Lagrange basis polynomial of a cube point](cube-basis.md)
 
 ## Sources
 

@@ -11,4 +11,4 @@ navigation: module
 - [Div Poles apply](div-poles-apply.md)
 - [Div Zeros nonneg](div-zeros-nonneg.md)
 - [Div Poles nonneg](div-poles-nonneg.md)
-- [Div Zeros sub div Poles](div-zeros-sub-div-poles.md)
+- [A divisor is its zero part minus its pole part](div-zeros-sub-div-poles.md)

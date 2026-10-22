@@ -6,10 +6,13 @@ statement: formalized
 lean: AlgebraicClosure.IsClosestConjugate
 ---
 
-# Is Closest Conjugate
+# Closest conjugate
 
-`α` is the closest conjugate to `β` if `β` is closer to `α` than to every image of
-`α` under a nontrivial `K`-algebra automorphism of the algebraic closure.
+**Closest conjugate.** Let $K$ be a normed field with algebraic closure $\overline{K}$, and
+let $\lVert \cdot \rVert$ be the spectral norm on $\overline{K}$ over $K$. For
+$\alpha, \beta \in \overline{K}$, $\alpha$ is the closest conjugate to $\beta$ if
+$\lVert \beta - \alpha \rVert < \lVert \beta - \sigma(\alpha) \rVert$ for every $K$-algebra
+automorphism $\sigma$ of $\overline{K}$ with $\sigma(\alpha) \ne \alpha$.
 
 ## Depends on
 

@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.IsHannerPolytope.neg_mem_iff
 ---
 
-# Neg mem iff
+# Negation preserves membership in a Hanner polytope
 
-Membership in a Hanner polytope is invariant under negation.
+**Negation preserves membership in a Hanner polytope.** For every Hanner polytope
+$K \subseteq \mathbb{R}^n$ and every $x \in \mathbb{R}^n$, $-x \in K$ if and only if $x \in K$.
 
 ## Depends on
 
-- [Is Hanner Polytope](is-hanner-polytope.md)
+- [Hanner polytopes](is-hanner-polytope.md)
 
 ## Proof depends on
 
-- [Neg eq self](neg-eq-self.md)
+- [Hanner polytopes are centrally symmetric](neg-eq-self.md)
 
 ## Sources
 

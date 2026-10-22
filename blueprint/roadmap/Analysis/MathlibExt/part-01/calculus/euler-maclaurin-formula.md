@@ -7,10 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.eulerMaclaurinFormula
 ---
 
-# Euler Maclaurin Formula
+# Euler–Maclaurin formula
 
-Euler-Maclaurin formula (canonical name "Euler-Maclaurin formula",
-statement `euler-maclaurin-s1`).
+**Euler–Maclaurin formula.** Let $a < b$ be integers, let $p \ge 1$ be a natural number, and
+let $f : \mathbb{R} \to \mathbb{R}$ be $p$ times continuously differentiable on $[a, b]$, its
+derivatives $f^{(k)}$ being taken relative to $[a, b]$ (one-sided at the endpoints). Let $B_j$
+be the Bernoulli numbers with $B_1 = -\tfrac{1}{2}$. Then there are $1$-periodic functions
+$P_m : \mathbb{R} \to \mathbb{R}$ for $m \ge 0$ such that $P_p$ agrees on $[0, 1)$ with the
+Bernoulli polynomial $\sum_{j=0}^{p} \binom{p}{j} B_j x^{p-j}$, and
+$\sum_{n=a}^{b} f(n) = I + E + R$, where $I = \int_a^b f(x)\,dx + \frac{f(a) + f(b)}{2}$,
+$E = \sum_{k=1}^{\lfloor p/2 \rfloor} \frac{B_{2k}}{(2k)!} (f^{(2k-1)}(b) - f^{(2k-1)}(a))$
+and $R = \frac{(-1)^{p+1}}{p!} \int_a^b P_p(x) f^{(p)}(x)\,dx$.
 
 ## Depends on
 
@@ -19,4 +26,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Calculus.EulerMaclaurinFormula](../../../../../sources/v2/MathlibExt.md)
-- https://en.wikipedia.org/wiki/Euler%E2%80%93Maclaurin_formula. Let `f` be `p`-times continuously differentiable on `[a, b]` with integers `a < b`, and `B_{2k}` the Bernoulli numbers. Then `∑ n ∈ Icc a b, f n` equals `∫ x in a..b, f x + (f a + f b) / 2` plus `∑ k ∈ Icc 1 (p / 2), B_{2k} / (2k)! * (f^{(2k-1)} b - f^{(2k-1)} a)` plus the standard periodic-Bernoulli remainder integral `(-1)^(p+1) / p! ∫ x in a..b, P_p x * f^{(p)} x`, where `P_p` is the `1`-periodic Bernoulli kernel agreeing on the half-open interval `[0, 1)` with the Bernoulli polynomial `∑ j ∈ range (p+1), C(p,j) B_j x^(p-j)` under the standard `B_1 = -1/2` convention.
+- https://en.wikipedia.org/wiki/Euler%E2%80%93Maclaurin_formula.

@@ -7,13 +7,15 @@ proof: formalized
 lean: convergesLocallyNormallyOn_empty
 ---
 
-# Converges Locally Normally On empty
+# Local normal convergence on the empty set
 
-Every function series converges locally normally on the empty set.
+**Local normal convergence on the empty set.** Let $X$ be a topological space. Every series
+of functions $f_n \colon X \to E$ ($n \in \mathbb{N}$) with values in a seminormed additive
+commutative group $E$ converges locally normally on the empty set.
 
 ## Depends on
 
-- [Sup Norm On](sup-norm-on.md)
+- [Extended supremum norm on a set](sup-norm-on.md)
 
 ## Sources
 

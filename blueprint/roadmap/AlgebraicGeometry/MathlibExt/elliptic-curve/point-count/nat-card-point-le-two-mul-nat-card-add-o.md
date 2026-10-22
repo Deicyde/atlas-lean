@@ -7,10 +7,14 @@ proof: formalized
 lean: WeierstrassCurve.Affine.natCard_point_le_two_mul_natCard_add_one
 ---
 
-# Nat Card point le two mul nat Card add one
+# Upper bound on the point count
 
-A Weierstrass equation over a finite field has at most two affine points over each
-`x`-coordinate, plus the point at infinity.
+**Upper bound on the point count.** Let $W$ be a Weierstrass curve over a finite field $F$
+with $q$ elements. The number of nonsingular $F$-points of $W$, counting the point at infinity, is
+at most $2q + 1$.
+
+Each $x \in F$ lies under at most two affine points, since the Weierstrass equation is quadratic
+in $y$.
 
 ## Depends on
 

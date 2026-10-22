@@ -7,18 +7,21 @@ proof: formalized
 lean: Polynomial.eval_re_nonneg_of_maxRealRoot_le
 ---
 
-# Eval re nonneg of max Real Root le
+# Monic real-rooted polynomials have nonnegative real part from the largest root on
 
-A monic real-rooted polynomial is nonnegative at and to the right of its largest root.
+**Monic real-rooted polynomials have nonnegative real part from the largest root on.**
+Let $p$ be a monic real-rooted complex polynomial, and let $\rho(p)$ be the largest real part of
+a root of $p$, or $0$ if $p$ has no roots. Then $\operatorname{Re} p(x) \ge 0$ for every real
+number $x \ge \rho(p)$.
 
 ## Depends on
 
-- [Is Real Rooted](is-real-rooted.md)
-- [Max Real Root](max-real-root.md)
+- [Real-rooted polynomials](is-real-rooted.md)
+- [Largest real part of a root](max-real-root.md)
 
 ## Proof depends on
 
-- [Root re le max Real Root](root-re-le-max-real-root.md)
+- [Real parts of roots are bounded by the largest one](root-re-le-max-real-root.md)
 
 ## Sources
 

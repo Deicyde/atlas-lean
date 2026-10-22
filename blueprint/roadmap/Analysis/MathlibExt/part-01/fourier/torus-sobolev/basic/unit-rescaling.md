@@ -6,13 +6,15 @@ statement: formalized
 lean: TorusSobolev.unitRescaling
 ---
 
-# Unit Rescaling
+# Rescaling the torus to unit period
 
-Canonical coordinate rescaling from physical period `2*pi` to unit period.
+**Rescaling the torus to unit period.** The homeomorphism from the torus
+$\mathbb{T}^2 = (\mathbb{R}/2\pi\mathbb{Z})^2$ onto the unit torus $(\mathbb{R}/\mathbb{Z})^2$
+that sends $(x_1, x_2)$ to $(x_1/(2\pi), x_2/(2\pi))$.
 
 ## Depends on
 
-- [Torus](torus.md)
+- [The torus of period $2\pi$](torus.md)
 
 ## Sources
 

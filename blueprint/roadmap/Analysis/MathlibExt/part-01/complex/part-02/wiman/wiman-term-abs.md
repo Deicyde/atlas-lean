@@ -7,17 +7,19 @@ proof: formalized
 lean: Complex.wimanTerm_abs
 ---
 
-# Wiman Term abs
+# Wiman term at the absolute value of the radius
 
-Re-normalizing a Wiman term's radius does not change it.
+**Wiman term at the absolute value of the radius.** For every function
+$f : \mathbb{C} \to \mathbb{C}$, every real number $r$ and every natural number $n$, the Wiman term
+of $f$ at radius $|r|$ and index $n$ equals the Wiman term of $f$ at radius $r$ and index $n$.
 
 ## Depends on
 
-- [Wiman Term](wiman-term.md)
+- [Wiman term](wiman-term.md)
 
 ## Proof depends on
 
-- [Wiman Taylor Coefficient](wiman-taylor-coefficient.md)
+- [Wiman Taylor coefficient](wiman-taylor-coefficient.md)
 
 ## Sources
 

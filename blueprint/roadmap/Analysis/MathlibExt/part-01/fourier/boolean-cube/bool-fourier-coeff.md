@@ -6,17 +6,21 @@ statement: formalized
 lean: BooleanCube.boolFourierCoeff
 ---
 
-# Bool Fourier Coeff
+# Fourier coefficient on the Boolean cube
 
-The normalized Fourier coefficient `f̂(S) = E_x[f(x) χ_S(x)]`.
+**Fourier coefficient on the Boolean cube.** For $n \in \mathbb{N}$, a function
+$f : \{-1, 1\}^n \to \mathbb{R}$ and a set $S \subseteq \{0, \dots, n-1\}$, the normalized Fourier
+coefficient of $f$ at $S$ is
+$\hat f(S) = \frac{1}{|\{-1, 1\}^n|} \sum_{x \in \{-1, 1\}^n} f(x) \chi_S(x)$, where
+$\chi_S(x) = \prod_{i \in S} x_i$. That is, $\hat f(S)$ is the uniform expectation of $f \chi_S$.
 
 ## Depends on
 
-- [Bool Cube](bool-cube.md)
+- [Boolean cube](bool-cube.md)
 
 ## Proof depends on
 
-- [Cube Chi](cube-chi.md)
+- [Fourier character on the Boolean cube](cube-chi.md)
 
 ## Sources
 

@@ -7,17 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.convolution_theorem
 ---
 
-# Convolution Theorem
+# Convolution theorem
 
-Convolution theorem: the Fourier transform turns convolution into pointwise
-product. For a sigma-finite translation-invariant Borel measure `μ` and integrable
-`f g : ℝ → ℂ`, the Fourier transform of the Mathlib convolution
-`(f ⋆[ContinuousLinearMap.lsmul ℂ ℂ, μ] g)` at `w` equals the pointwise product
-of the Fourier transforms at `w`.
+**Convolution theorem.** Let $e$ be a continuous additive character from $\mathbb{R}$ to the
+unit circle, and let $\mu$ be a σ-finite measure on $\mathbb{R}$ that is preserved by every
+translation $x \mapsto a + x$. For $\varphi : \mathbb{R} \to \mathbb{C}$ write
+$\hat\varphi(w) = \int e(-xw)\,\varphi(x)\,d\mu(x)$ for its Fourier transform with respect to
+$e$ and $\mu$, and for $f, g : \mathbb{R} \to \mathbb{C}$ write
+$(f * g)(x) = \int f(t)\,g(x - t)\,d\mu(t)$ for their convolution. If $f$ and $g$ are
+$\mu$-integrable, then $\widehat{f * g}(w) = \hat f(w)\,\hat g(w)$ for every $w \in \mathbb{R}$.
 
-Proof: The proof uses convolution-integrand integrability, Fubini, translation invariance, and
-character factorization, following Stein--Shakarchi, Ch. 5, Prop. 1.11, and Mathlib's
-`Real.fourier_bilin_convolution_eq_integral`.
+Proof: Integrability of the convolution integrand, Fubini's theorem, translation invariance of
+$\mu$ and multiplicativity of $e$, following Stein--Shakarchi, Ch. 5, Prop. 1.11.
 
 ## Depends on
 

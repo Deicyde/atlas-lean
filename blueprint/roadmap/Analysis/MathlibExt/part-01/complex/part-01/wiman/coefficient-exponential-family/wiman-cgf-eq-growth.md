@@ -7,19 +7,23 @@ proof: formalized
 lean: Complex.wiman_cgf_eq_growth
 ---
 
-# Wiman cgf eq growth
+# The Wiman growth is the cumulant generating function of the coefficient measure
 
-The coefficient-measure cumulant-generating function is the logarithmic majorant.
+**The Wiman growth is the cumulant generating function of the coefficient measure.** Let $f$
+be an entire function and let $\mu_f$ be its Wiman coefficient measure on $\mathbb{N}$. For every
+real $x$, the cumulant generating function of $n \mapsto n$ under $\mu_f$ at $x$, namely
+$\log \int e^{xn}\,d\mu_f(n)$, equals the Wiman growth $G_f(x) = \log M_f(e^x)$, where $M_f$ is
+the Wiman majorant of $f$.
 
 ## Depends on
 
-- [Wiman Coefficient Measure](wiman-coefficient-measure.md)
+- [Wiman coefficient measure](wiman-coefficient-measure.md)
 - [Wiman Growth](wiman-growth.md)
 
 ## Proof depends on
 
-- [Wiman Majorant](../radial-majorant/wiman-majorant.md)
-- [Wiman mgf eq majorant](wiman-mgf-eq-majorant.md)
+- [Radial majorant](../radial-majorant/wiman-majorant.md)
+- [Moment generating function of the coefficient measure](wiman-mgf-eq-majorant.md)
 
 ## Sources
 

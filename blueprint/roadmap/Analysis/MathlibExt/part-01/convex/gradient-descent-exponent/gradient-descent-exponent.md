@@ -6,10 +6,13 @@ statement: formalized
 lean: gradientDescentExponent
 ---
 
-# Gradient Descent Exponent
+# The gradient descent exponent
 
-C35: the supremum of real exponents achievable by one predetermined schedule.
-The supremum is taken in EReal, including its empty and unbounded conventions.
+**The gradient descent exponent.** The gradient descent exponent is the supremum, in the
+extended reals $[-\infty, +\infty]$, of the set of real numbers $c$ such that some step schedule
+$s : \mathbb{N} \to \mathbb{R}$ achieves a uniform last-iterate rate with exponent $c$. In
+particular, it is $-\infty$ if there is no such $c$, and $+\infty$ if these exponents are
+unbounded above.
 
 ## Depends on
 
@@ -17,8 +20,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gradient Descent Uniform Rate](gradient-descent-uniform-rate.md)
+- [Uniform last-iterate rate of a step schedule](gradient-descent-uniform-rate.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Convex.GradientDescentExponent](../../../../../../sources/v2/MathlibExt.md)
+- OptimizationProblems, `constants/35a.md` (constant C35).

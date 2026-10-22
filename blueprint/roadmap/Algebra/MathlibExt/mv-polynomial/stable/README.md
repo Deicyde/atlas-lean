@@ -7,12 +7,12 @@ navigation: module
 
 ## Mv Polynomial
 
-- [Is Stable](is-stable.md)
-- [Is Real Stable](is-real-stable.md)
-- [Univariate Specialization](univariate-specialization.md)
-- [Derivative univariate Specialization](derivative-univariate-specialization.md)
-- [Eval univariate Specialization](eval-univariate-specialization.md)
-- [Map star univariate Specialization](map-star-univariate-specialization.md)
+- [Stable polynomials](is-stable.md)
+- [Real stable polynomials](is-real-stable.md)
+- [Univariate specialization](univariate-specialization.md)
+- [Partial derivatives under univariate specialization](derivative-univariate-specialization.md)
+- [Evaluating a univariate specialization](eval-univariate-specialization.md)
+- [Univariate specialization at real values preserves real coefficients](map-star-univariate-specialization.md)
 
 ## Mv Polynomial Stable
 

@@ -7,20 +7,21 @@ proof: formalized
 lean: RectilinearRectangle.boundaryIntegral_inv_sub_eq_zero_of_not_mem_carrier
 ---
 
-# Boundary Integral inv sub eq zero of not mem carrier
+# Cauchy kernel with the pole outside a rectangle
 
-The Cauchy kernel has zero boundary integral when its pole is outside
-the closed rectangle.
+**Cauchy kernel with the pole outside a rectangle.** Let $R$ be a rectilinear rectangle and
+let $w$ be a complex number that does not lie in the closed rectangle spanned by the corners of
+$R$ (the carrier of $R$). Then the boundary integral of $z \mapsto 1/(z - w)$ over $R$ is $0$.
 
 ## Depends on
 
 - [Rectilinear Rectangle](rectilinear-rectangle.md)
-- [Boundary Integral](boundary-integral.md)
-- [Carrier](carrier.md)
+- [Boundary integral over a rectangle](boundary-integral.md)
+- [Carrier of an axis-parallel rectangle](carrier.md)
 
 ## Proof depends on
 
-- [Boundary Integral eq zero](boundary-integral-eq-zero.md)
+- [Cauchy–Goursat theorem for rectangles](boundary-integral-eq-zero.md)
 
 ## Sources
 

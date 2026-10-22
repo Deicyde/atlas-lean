@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceSum
 ---
 
-# Chapter7 Power Difference Sum
+# The power-difference series
 
-The power-difference series `φ_r(x) = ∑_{j ≥ 0} ((j + 1)ʳ - (j + 1 + x)ʳ)`.
+**The power-difference series.** For complex numbers $r$ and $x$,
+$\varphi_r(x) = \sum_{j \ge 0} \bigl((j + 1)^r - (j + 1 + x)^r\bigr)$ (principal powers), where
+the sum is taken to be $0$ when the series is not summable.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Chapter7 Power Difference Term](chapter7-power-difference-term.md)
+- [Terms of the power-difference series](chapter7-power-difference-term.md)
 
 ## Sources
 

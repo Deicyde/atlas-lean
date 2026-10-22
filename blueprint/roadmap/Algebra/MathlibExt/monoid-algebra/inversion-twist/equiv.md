@@ -6,13 +6,15 @@ statement: formalized
 lean: GroupRing.InversionTwist.equiv
 ---
 
-# Equiv
+# Underlying bijection of the inversion twist
 
-The canonical equivalence between an inversion twist and its underlying type.
+**Underlying bijection of the inversion twist.** For every type $A$, the map sending an
+element of the inversion twist of $A$ to its underlying element of $A$ is a bijection, whose
+inverse sends $a \in A$ to its copy in the twist.
 
 ## Depends on
 
-- [Inversion Twist](inversion-twist.md)
+- [Inversion twist of a group-ring module](inversion-twist.md)
 
 ## Sources
 

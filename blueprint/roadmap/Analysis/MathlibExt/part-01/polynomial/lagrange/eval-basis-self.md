@@ -7,13 +7,15 @@ proof: formalized
 lean: Lagrange.evalBasis_self
 ---
 
-# Eval Basis self
+# Lagrange basis polynomials equal one at their own node
 
-The evaluated basis is `1` at its own node for injective nodes.
+**Lagrange basis polynomials equal one at their own node.** If the real nodes
+$x_0, \dots, x_{n-1}$ are pairwise distinct, then $\ell_k(x_k) = 1$ for every $k < n$, where
+$\ell_k$ is the $k$-th evaluated Lagrange basis polynomial for these nodes.
 
 ## Depends on
 
-- [Eval Basis](eval-basis.md)
+- [Evaluated Lagrange basis polynomial](eval-basis.md)
 
 ## Sources
 

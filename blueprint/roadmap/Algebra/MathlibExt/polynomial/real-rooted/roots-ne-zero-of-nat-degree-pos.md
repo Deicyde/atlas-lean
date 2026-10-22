@@ -7,9 +7,10 @@ proof: formalized
 lean: Polynomial.roots_ne_zero_of_natDegree_pos
 ---
 
-# Roots ne zero of nat Degree pos
+# Nonconstant complex polynomials have a root
 
-A positive-degree complex polynomial has at least one root.
+**Nonconstant complex polynomials have a root.** Every complex polynomial of positive
+degree has at least one root.
 
 ## Depends on
 

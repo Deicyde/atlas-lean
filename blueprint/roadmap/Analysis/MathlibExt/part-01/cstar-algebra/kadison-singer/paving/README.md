@@ -5,6 +5,6 @@ navigation: module
 
 # Paving
 
-- [Finite MSSBound](finite-mssbound.md)
-- [Exists frame partition of finite MSS](exists-frame-partition-of-finite-mss.md)
-- [Anderson Paving of finite MSS](anderson-paving-of-finite-mss.md)
+- [Finite-support Marcus–Spielman–Srivastava bound](finite-mssbound.md)
+- [Partitioning a Parseval frame with the finite MSS bound](exists-frame-partition-of-finite-mss.md)
+- [Anderson paving from the finite MSS bound](anderson-paving-of-finite-mss.md)

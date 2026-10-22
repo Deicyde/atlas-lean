@@ -7,22 +7,22 @@ proof: formalized
 lean: MathlibExt.Analysis.Complex.GreatPicardWanted.greatPicard
 ---
 
-# Great Picard
+# Great Picard theorem
 
-If `f` has an essential isolated singularity at `c`, then the set of `w : ℂ` whose fiber over some
-punctured `ball c r \ {c}` is finite is a subsingleton: at most one value is taken only finitely
-often near `c`. Source: Great Picard theorem, E. Picard 1879; see Ahlfors, Complex Analysis; Lean
-is essential isolated singularity version with finite-fiber exceptional set subsingleton, at most
-one value finitely often near c.
+**Great Picard theorem.** Suppose $f : \mathbb{C} \to \mathbb{C}$ has an essential isolated
+singularity at $c \in \mathbb{C}$. Then there is at most one $w \in \mathbb{C}$ for which some
+$r > 0$ makes the set $\{z : 0 < |z - c| < r,\ f(z) = w\}$ finite; that is, with at most one
+exception, $f$ takes every complex value infinitely often on every punctured disc around $c$.
 
 ## Depends on
 
-- [Is Essential Isolated Singularity At](is-essential-isolated-singularity-at.md)
+- [Essential isolated singularity](is-essential-isolated-singularity-at.md)
 
 ## Proof depends on
 
-- [Bloch](../bloch.md)
+- [Bloch's theorem](../bloch.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.GreatPicard](../../../../../../../sources/v2/MathlibExt.md)
+- Great Picard theorem, E. Picard 1879; see Ahlfors, Complex Analysis; Lean is essential isolated singularity version with finite-fiber exceptional set subsingleton, at most one value finitely often near c.

@@ -4,7 +4,7 @@ article_id: af_5bbb0198b86971e086093d3c
 
 # Kadison Singer
 
-- [Barrier](mixed-characteristic-polynomial-max-real.md)
+- [Marcus--Spielman--Srivastava barrier bound](mixed-characteristic-polynomial-max-real.md)
 - [MSS](mss/README.md)
 - [Mixed Char Poly](mixed-char-poly/README.md)
 - [Paving](paving/README.md)

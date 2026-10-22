@@ -7,12 +7,23 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry14Bernoulliasymptotic.ramanujan_part1_ch7_entry14_bernoulliasymptotic
 ---
 
-# Part1 Ch7 Entry14 Bernoulliasymptotic
+# Expansion of $\sum 1/(n^{s+1} \log n)$ in the Stieltjes constants
 
-Proof outline: the limits `c k` are the Stieltjes constants. For
-`ζ(s) - 1/(s-1)`, the `k`th derivative at `s = 1` is `(-1)^k c k`, while the
-normalized Taylor coefficient is `(-1)^k c k / k! = chapter7StieltjesA c k`.
-The identity follows by termwise differentiation in `s` and evaluation at `s = 1`.
+**Expansion of $\sum 1/(n^{s+1} \log n)$ in the Stieltjes constants.** Let $(c_k)_{k \ge 0}$ be
+real numbers such that, for every $k \ge 0$,
+$\sum_{j=1}^{m} (\log j)^k / j - (\log m)^{k+1} / (k+1)$ tends to $c_k$ as $m \to \infty$, and put
+$A_k = (-1)^k c_k / k!$. Then the series $\sum_{n \ge 2} \frac{1}{n^2 \log n}$ and
+$\sum_{k \ge 1} \frac{A_k}{k+1}$ converge absolutely, and for every real $s > 0$ the series
+$\sum_{n \ge 2} \frac{1}{n^{s+1} \log n}$ and $\sum_{k \ge 1} \frac{A_k s^{k+1}}{k+1}$ converge
+absolutely and
+$$\sum_{n=2}^{\infty} \frac{1}{n^{s+1} \log n} = -\log s + C + (1 - \gamma) s
+  - \sum_{k=1}^{\infty} \frac{A_k s^{k+1}}{k+1},$$
+where $\gamma$ is Euler's constant and
+$C = \sum_{n \ge 2} \frac{1}{n^2 \log n} - 1 + \gamma + \sum_{k \ge 1} \frac{A_k}{k+1}$.
+
+Proof outline: the limits $c_k$ are the Stieltjes constants, and
+$\zeta(1+s) - 1/s = \sum_{k \ge 0} A_k s^k$. Both sides are differentiated termwise in $s$, their
+derivatives agree on $s > 0$, and the two sides agree at $s = 1$.
 
 ## Depends on
 
@@ -20,7 +31,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Part1 Ch7 Entry13 Bernoullirecurrence](ramanujan-part1-ch7-entry13-bernoullirec.md)
+- [Laurent expansion of $\zeta$ at $s = 1$](ramanujan-part1-ch7-entry13-bernoullirec.md)
 
 ## Sources
 

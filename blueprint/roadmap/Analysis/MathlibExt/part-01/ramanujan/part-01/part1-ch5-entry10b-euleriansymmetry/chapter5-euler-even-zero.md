@@ -7,13 +7,13 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry10bEuleriansymmetry.chapter5EulerEven_zero
 ---
 
-# Chapter5 Euler Even zero
+# The initial even-index Euler number
 
-The initial even Euler number: `E_0 = 1`.
+**The initial even-index Euler number.** $E_0 = 1$.
 
 ## Depends on
 
-- [Chapter5 Euler Even](chapter5-euler-even.md)
+- [Even-index Euler numbers](chapter5-euler-even.md)
 
 ## Sources
 

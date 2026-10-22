@@ -13,11 +13,11 @@ The operator `1 - ∂ᵢ` preserves real stability.
 
 ## Depends on
 
-- [Is Real Stable](is-real-stable.md)
+- [Real stable polynomials](is-real-stable.md)
 
 ## Proof depends on
 
-- [Is Stable](is-stable.md)
+- [Stable polynomials](is-stable.md)
 - [Sub pderiv](sub-pderiv.md)
 
 ## Sources

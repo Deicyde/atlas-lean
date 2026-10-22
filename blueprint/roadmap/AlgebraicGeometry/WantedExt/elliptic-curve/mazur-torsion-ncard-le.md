@@ -8,10 +8,11 @@ lean: MetaMathlibExt.mazur_torsion_ncard_le
 
 # Mazur's torsion theorem
 
-**Mazur's torsion theorem**, in the form the Fermat's Last Theorem project
-assumes it: the torsion subgroup of the group of rational points of an elliptic
-curve over `ℚ` is finite and has at most 16 elements. The explicit finiteness
-conjunct is essential because `Set.ncard` is `0` on an infinite set.
+**Mazur's torsion theorem.** Let $E$ be an elliptic curve over $\mathbb{Q}$. The torsion
+subgroup of the group $E(\mathbb{Q})$ of rational points of $E$ is finite and has at most $16$
+elements.
+
+Only this bound is stated, not Mazur's full list of the fifteen possible torsion subgroups.
 
 ## Depends on
 

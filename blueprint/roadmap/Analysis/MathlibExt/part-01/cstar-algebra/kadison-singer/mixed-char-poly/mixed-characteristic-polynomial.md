@@ -6,10 +6,14 @@ statement: formalized
 lean: MathlibExt.Analysis.CStarAlgebra.KadisonSinger.mixedCharacteristicPolynomial
 ---
 
-# Mixed Characteristic Polynomial
+# Mixed characteristic polynomial
 
-The mixed characteristic polynomial
-`(∏ᵢ (1 - ∂_{zᵢ})) det(x I + ∑ᵢ zᵢ Aᵢ)|_{z=0}`.
+**Mixed characteristic polynomial.** For square complex matrices $A_1, \dots, A_m$ whose rows
+and columns are indexed by a finite set $d$, consider the mixed determinant polynomial
+$\det(x I + \sum_{i=1}^m z_i A_i)$ in the variables $x, z_1, \dots, z_m$, where $I$ is the
+identity matrix. The mixed characteristic polynomial is the polynomial in $x$ with complex
+coefficients obtained by applying the operator $\prod_{i=1}^m (1 - \partial_{z_i})$ to it and
+then setting $z_1 = \dots = z_m = 0$.
 
 ## Depends on
 
@@ -17,8 +21,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Mixed Det Polynomial](mixed-det-polynomial.md)
-- [Mixed Differential](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential.md)
+- [Mixed determinant polynomial](mixed-det-polynomial.md)
+- [Mixed differential operator](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential.md)
 
 ## Sources
 

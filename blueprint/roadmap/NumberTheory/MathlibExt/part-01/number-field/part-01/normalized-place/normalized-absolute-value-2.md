@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Rpow](../../../../../../Analysis/MathlibExt/part-01/absolute-value/rpow/rpow.md)
+- [Powers of an absolute value](../../../../../../Analysis/MathlibExt/part-01/absolute-value/rpow/rpow.md)
 
 ## Sources
 

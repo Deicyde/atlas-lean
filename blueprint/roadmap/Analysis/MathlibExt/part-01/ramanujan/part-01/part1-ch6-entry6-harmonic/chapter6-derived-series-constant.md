@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry6Harmonic.chapter6DerivedSeriesConstant
 ---
 
-# Chapter6 Derived Series Constant
+# Ramanujan's derivative-series constants
 
-The constant `∑_{k ≥ 0} f⁽q⁾(k + 1)`: the shifted series of `q`-th derivatives at `x = 0`.
+**Ramanujan's derivative-series constants.** For $f : \mathbb{R} \to \mathbb{R}$ and a natural
+number $q$, the constant $c_q$ is $\sum_{k \ge 1} f^{(q)}(k)$, the sum of the values of the
+$q$-th iterated derivative of $f$ at the positive integers, where a derivative that does not
+exist is taken to be $0$ and a series that is not summable is given the value $0$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Chapter6 Shifted Derived Series Term](chapter6-shifted-derived-series-term.md)
+- [Terms of the shifted derivative series](chapter6-shifted-derived-series-term.md)
 
 ## Sources
 

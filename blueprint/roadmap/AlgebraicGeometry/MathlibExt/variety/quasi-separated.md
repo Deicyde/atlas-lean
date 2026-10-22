@@ -7,13 +7,14 @@ proof: formalized
 lean: AlgebraicGeometry.IsVariety.quasiSeparated
 ---
 
-# Quasi Separated
+# Varieties are quasi-separated
 
-The structure morphism of a variety is quasi-separated (being separated).
+**Varieties are quasi-separated.** If $X$ is a variety over a field $k$, then its structure
+morphism $X \to \operatorname{Spec} k$ is quasi-separated, since it is separated.
 
 ## Depends on
 
-- [Is Variety](is-variety.md)
+- [Variety over a field](is-variety.md)
 
 ## Sources
 

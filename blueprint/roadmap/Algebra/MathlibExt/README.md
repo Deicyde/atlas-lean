@@ -16,4 +16,4 @@ navigation: collection
 - [Mv Polynomial](mv-polynomial/README.md)
 - [Polynomial](polynomial/README.md)
 - [Ring](ring/README.md)
-- [LAdditive Function](is-ladditive.md)
+- [L-additive functions on a ring](is-ladditive.md)

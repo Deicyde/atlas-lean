@@ -7,18 +7,20 @@ proof: formalized
 lean: MvPolynomial.mem_tangentSpacePoly
 ---
 
-# Mem tangent Space Poly
+# Membership in the tangent space of a hypersurface
 
-Membership in the hypersurface tangent space is vanishing of the total derivative.
+**Membership in the tangent space of a hypersurface.** Let $k$ be a field,
+$f \in k[x_1, \dots, x_n]$, and $P, v \in k^n$. Then $v$ lies in the tangent space of the
+hypersurface $f = 0$ at $P$ if and only if the total derivative of $f$ at $P$ along $v$ is zero.
 
 ## Depends on
 
-- [Tangent Space Poly](tangent-space-poly.md)
-- [Total Derivative At](total-derivative-at.md)
+- [Tangent space of a hypersurface](tangent-space-poly.md)
+- [Total derivative at a point](total-derivative-at.md)
 
 ## Proof depends on
 
-- [Total Derivative At Lin](total-derivative-at-lin.md)
+- [Total derivative as a linear map](total-derivative-at-lin.md)
 
 ## Sources
 

@@ -7,22 +7,24 @@ proof: formalized
 lean: MathlibExt.Algebra.Lie.PoissonBracket.poissonCore_poisson
 ---
 
-# Poisson Core poisson
+# The Poisson core is a Poisson ideal
 
-The Poisson core of `J` is Poisson: the family of Poisson ideals
-below `J` is directed (closed under suprema), so membership in the
-core reduces to membership in some member.
+**The Poisson core is a Poisson ideal.** Let $A$ be a commutative $\mathbb{C}$-algebra with a
+Poisson bracket. For every ideal $J$ of $A$, the Poisson core of $J$ is a Poisson ideal.
+
+The family of Poisson ideals contained in $J$ is nonempty and directed (the sum of two members
+is again a member), so every element of the core lies in some member of the family.
 
 ## Depends on
 
-- [Is Poisson Ideal](is-poisson-ideal.md)
-- [Poisson Bracket](poisson-bracket.md)
-- [Poisson Core](poisson-core.md)
+- [Poisson ideal](is-poisson-ideal.md)
+- [Poisson bracket](poisson-bracket.md)
+- [Poisson core](poisson-core.md)
 
 ## Proof depends on
 
-- [Bot poisson](bot-poisson.md)
-- [Sup poisson](sup-poisson.md)
+- [The zero ideal is a Poisson ideal](bot-poisson.md)
+- [The sum of two Poisson ideals inside an ideal](sup-poisson.md)
 
 ## Sources
 

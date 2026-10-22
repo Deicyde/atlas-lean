@@ -12,13 +12,13 @@ Every recursively constructed coordinate cross-polytope is a Hanner polytope.
 
 ## Depends on
 
-- [Is Hanner Polytope](is-hanner-polytope.md)
-- [Hanner Cross Polytope](hanner-cross-polytope.md)
+- [Hanner polytopes](is-hanner-polytope.md)
+- [Hanner cross-polytope](hanner-cross-polytope.md)
 
 ## Proof depends on
 
-- [Hanner One Sum](hanner-one-sum.md)
-- [Hanner Unit Segment](hanner-unit-segment.md)
+- [$\ell_1$ sum of bodies](hanner-one-sum.md)
+- [Centered unit segment](hanner-unit-segment.md)
 
 ## Sources
 

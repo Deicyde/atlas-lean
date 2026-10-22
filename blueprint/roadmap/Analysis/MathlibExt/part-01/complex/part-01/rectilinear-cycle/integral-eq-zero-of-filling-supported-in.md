@@ -7,23 +7,26 @@ proof: formalized
 lean: RectilinearCycle.integral_eq_zero_of_fillingSupportedIn
 ---
 
-# Integral eq zero of filling Supported In
+# Cauchy–Goursat theorem for rectilinear cycles
 
-Cauchy--Goursat for a finite rectilinear cycle whose rectangle filling is
-contained in the domain of differentiability.
+**Cauchy–Goursat theorem for rectilinear cycles.** Let $E$ be a complex Banach space, let
+$G \subseteq \mathbb{C}$, and let $f : \mathbb{C} \to E$ be complex differentiable on $G$. If
+$\Gamma$ is a rectilinear cycle whose rectangle filling is supported in $G$, that is, the closed
+rectangle of every rectangle occurring in $\Gamma$ with nonzero coefficient is contained in $G$,
+then the contour integral of $f$ over $\Gamma$ is $0$.
 
 ## Depends on
 
 - [Rectilinear Cycle](rectilinear-cycle.md)
-- [Filling Supported In](filling-supported-in.md)
-- [Integral](integral.md)
+- [Rectangle filling supported in a set](filling-supported-in.md)
+- [Contour integral over a rectilinear cycle](integral.md)
 
 ## Proof depends on
 
 - [Rectilinear Rectangle](rectilinear-rectangle.md)
-- [Boundary Integral](boundary-integral.md)
-- [Boundary Integral eq zero](boundary-integral-eq-zero.md)
-- [Carrier](carrier.md)
+- [Boundary integral over a rectangle](boundary-integral.md)
+- [Cauchy–Goursat theorem for rectangles](boundary-integral-eq-zero.md)
+- [Carrier of an axis-parallel rectangle](carrier.md)
 
 ## Sources
 

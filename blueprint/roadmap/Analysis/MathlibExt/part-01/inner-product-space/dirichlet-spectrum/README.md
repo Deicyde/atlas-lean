@@ -5,11 +5,11 @@ navigation: module
 
 # Dirichlet Spectrum
 
-- [Smooth Test Space](smooth-test-space.md)
-- [Rayleigh Quotient](rayleigh-quotient.md)
-- [Variational Eigenvalue](variational-eigenvalue.md)
-- [Is Dirichlet Spectrum](is-dirichlet-spectrum.md)
-- [Unit Ball Volume](unit-ball-volume.md)
-- [Domain Volume](domain-volume.md)
-- [Semiclassical Counting Coefficient](semiclassical-counting-coefficient.md)
-- [Polya Eigenvalue Benchmark](polya-eigenvalue-benchmark.md)
+- [Smooth test functions](smooth-test-space.md)
+- [Rayleigh quotient](rayleigh-quotient.md)
+- [Variational eigenvalue](variational-eigenvalue.md)
+- [Dirichlet spectrum of an open set](is-dirichlet-spectrum.md)
+- [Volume of the unit ball](unit-ball-volume.md)
+- [Volume of a domain](domain-volume.md)
+- [Semiclassical counting coefficient](semiclassical-counting-coefficient.md)
+- [Pólya eigenvalue benchmark](polya-eigenvalue-benchmark.md)

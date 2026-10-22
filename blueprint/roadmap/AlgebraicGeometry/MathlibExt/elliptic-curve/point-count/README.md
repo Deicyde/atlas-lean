@@ -5,8 +5,8 @@ navigation: module
 
 # Point Count
 
-- [Frobenius Trace](frobenius-trace.md)
-- [Nat Card point eq nat Card affine Solutions add one](nat-card-point-eq-nat-card-affine-soluti.md)
-- [Nat Card point le two mul nat Card add one](nat-card-point-le-two-mul-nat-card-add-o.md)
-- [Nat Card point eq nat Card add one sub frobenius Trace](nat-card-point-eq-nat-card-add-one-sub-f.md)
-- [Nat Card point add frobenius Trace eq](nat-card-point-add-frobenius-trace-eq.md)
+- [Frobenius trace](frobenius-trace.md)
+- [Point count from affine solutions](nat-card-point-eq-nat-card-affine-soluti.md)
+- [Upper bound on the point count](nat-card-point-le-two-mul-nat-card-add-o.md)
+- [Point count from the Frobenius trace](nat-card-point-eq-nat-card-add-one-sub-f.md)
+- [Point count plus Frobenius trace](nat-card-point-add-frobenius-trace-eq.md)

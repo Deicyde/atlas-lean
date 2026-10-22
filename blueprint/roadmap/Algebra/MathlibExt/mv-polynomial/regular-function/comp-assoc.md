@@ -7,14 +7,16 @@ proof: formalized
 lean: MvPolynomial.RegularFunction.comp_assoc
 ---
 
-# Comp assoc
+# Associativity of composition of regular functions
 
-Composition of regular functions is associative.
+**Associativity of composition of regular functions.** For regular functions $H$ from
+$k^\iota$ to $k^\kappa$, $G$ from $k^\tau$ to $k^\iota$ and $F$ from $k^\sigma$ to $k^\tau$,
+we have $(H \circ G) \circ F = H \circ (G \circ F)$.
 
 ## Depends on
 
-- [Regular Function](regular-function.md)
-- [Comp](comp.md)
+- [Regular functions](regular-function.md)
+- [Composition of regular functions](comp.md)
 
 ## Sources
 

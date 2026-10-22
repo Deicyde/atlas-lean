@@ -7,12 +7,14 @@ proof: formalized
 lean: Asymptotics.isEquivalent_id_of_monotoneOn_of_tendsto_integral_sub_div_sq
 ---
 
-# Monotone Integral Criterion
+# Integral criterion for asymptotic equivalence to the identity
 
-Integral criterion for asymptotic equivalence to the identity (ATLAS
-`NumberTheoryI` Lemma 16.8): a function nondecreasing on `[1, ∞)` whose
-normalized deviation `(f t - t) / t ^ 2` has convergent integral over
-`[1, x]` satisfies `f x ~ x`. Monotonicity below `1` is not needed.
+**Integral criterion for asymptotic equivalence to the identity.** Let $f$ be a real function
+on $\mathbb{R}$ that is nondecreasing on $[1, \infty)$, and suppose that the integral
+$\int_1^x (f(t) - t) / t^2 \, dt$ converges to a finite limit as $x \to \infty$. Then
+$f(x) \sim x$ as $x \to \infty$.
+
+No monotonicity is assumed below $1$.
 
 ## Depends on
 
@@ -21,3 +23,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Asymptotics.MonotoneIntegralCriterion](../../../../../sources/v2/MathlibExt.md)
+- ATLAS `NumberTheoryI` Lemma 16.8.

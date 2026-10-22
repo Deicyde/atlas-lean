@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry10Centralbinomialexpansion.summable_chapter6Entry14PlusTerm
 ---
 
-# Summable chapter6 Entry14 Plus Term
+# Summability of the Lambert series $\sum_k 1/(e^{kx}+1)$
 
-The summands in `chapter6Entry14PlusSum` are summable for positive arguments.
+**Summability of the Lambert series $\sum_k 1/(e^{kx}+1)$.** For every real $x > 0$, the
+series $\sum_{k=1}^{\infty} \frac{1}{e^{kx} + 1}$ is summable.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Summable chapter6 Entry14 Minus Term](summable-chapter6-entry14-minus-term.md)
+- [Summability of the Lambert series $\sum_k 1/(e^{kx}-1)$](summable-chapter6-entry14-minus-term.md)
 
 ## Sources
 

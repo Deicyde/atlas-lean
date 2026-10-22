@@ -5,21 +5,23 @@ statement: formalized
 lean: AlgebraicGeometry.Scheme.birationalAutOver
 ---
 
-# Birational Aut Over
+# Birational automorphisms over a base
 
-The subgroup of the group of birational self-maps of `X` consisting of those maps
-that are defined over the base scheme `S`.
+**Birational automorphisms over a base.** Let $X$ be an irreducible scheme over a scheme
+$S$. The birational automorphisms of $X$ over $S$ form the subgroup of the group of birational
+self-maps of $X$ consisting of those birational maps whose forward rational map
+$X \dashrightarrow X$ is compatible with the structure maps to $S$.
 
 ## Depends on
 
-- [Birational Map](birational-map.md)
-- [Refl](refl.md)
-- [Symm](symm.md)
-- [Trans](trans.md)
+- [Birational map](birational-map.md)
+- [Identity birational map](refl.md)
+- [Inverse birational map](symm.md)
+- [Composition of birational maps](trans.md)
 
 ## Proof depends on
 
-- [Is Over](is-over.md)
+- [Birational maps over a base](is-over.md)
 
 ## Sources
 

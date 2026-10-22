@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Algebra.PermutationPolynomialsWanted.sum_zmod_pow_eq_ite
 ---
 
-# Sum zmod pow eq ite
+# Power sums over $\mathbb{Z}/p\mathbb{Z}$
 
-Ding and Zieve's Lemma 1: for a prime `p` and positive `t`,
-`∑ a : ZMod p, a ^ t` is `-1` if `p - 1 ∣ t`, and `0` otherwise.
+**Power sums over $\mathbb{Z}/p\mathbb{Z}$.** Let $p$ be a prime and $t$ a positive
+integer. Then $\sum_{a \in \mathbb{Z}/p\mathbb{Z}} a^t$ equals $-1$ if $p - 1$ divides $t$,
+and $0$ otherwise.
 
 ## Depends on
 

@@ -13,7 +13,7 @@ Every coefficient of the executed inverse equals its full normalized DFT sum.
 ## Depends on
 
 - [Ifft](../inverse/ifft.md)
-- [Dft Sum](../../../../../../Analysis/MathlibExt/part-01/fourier/fast-fourier-transform/dft-sum.md)
+- [Discrete Fourier sum](../../../../../../Analysis/MathlibExt/part-01/fourier/fast-fourier-transform/dft-sum.md)
 
 ## Proof depends on
 

@@ -7,9 +7,13 @@ proof: formalized
 lean: MathlibExt.Algebra.Algebra.AmitsurLevitzkiWanted.amitsur_levitzki
 ---
 
-# Amitsur Levitzki
+# Amitsur–Levitzki theorem
 
-The standard polynomial `S_{2n}` vanishes on `n × n` matrices over a commutative ring.
+**Amitsur–Levitzki theorem.** Let $R$ be a commutative ring and $n$ a natural number. For all
+$n \times n$ matrices $M_1, \dots, M_{2n}$ over $R$, the sum over all permutations $\sigma$ of
+$\{1, \dots, 2n\}$ of $\mathrm{sgn}(\sigma) M_{\sigma(1)} M_{\sigma(2)} \cdots M_{\sigma(2n)}$ is
+the zero matrix, where $\mathrm{sgn}(\sigma) \in \{1, -1\}$ is the sign of $\sigma$. In other
+words, the standard polynomial of degree $2n$ vanishes on $n \times n$ matrices over $R$.
 
 ## Depends on
 

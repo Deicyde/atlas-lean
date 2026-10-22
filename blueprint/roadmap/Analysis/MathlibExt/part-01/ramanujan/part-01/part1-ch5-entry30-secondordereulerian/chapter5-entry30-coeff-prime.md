@@ -13,11 +13,11 @@ At a prime `p`, the coefficient is `a p`.
 
 ## Depends on
 
-- [Chapter5 Entry30 Coeff](chapter5-entry30-coeff.md)
+- [Coefficients for Entry 30](chapter5-entry30-coeff.md)
 
 ## Proof depends on
 
-- [Chapter5 Entry30 Coeff of squarefree](chapter5-entry30-coeff-of-squarefree.md)
+- [Entry 30 coefficients at squarefree integers](chapter5-entry30-coeff-of-squarefree.md)
 
 ## Sources
 

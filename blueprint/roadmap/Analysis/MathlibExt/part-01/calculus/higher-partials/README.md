@@ -5,9 +5,9 @@ navigation: module
 
 # Higher Partials
 
-- [Partial Deriv](partial-deriv.md)
-- [Partial Deriv spec](partial-deriv-spec.md)
-- [Partial Deriv eq fderiv apply](partial-deriv-eq-fderiv-apply.md)
-- [Partial Deriv eq fderiv apply of differentiable](partial-deriv-eq-fderiv-apply-of-differe.md)
-- [Partial Deriv partial Deriv eq fderiv fderiv](partial-deriv-partial-deriv-eq-fderiv-fd.md)
-- [Iterated partial Deriv commute](iterated-partial-deriv-commute.md)
+- [Partial derivative along a coordinate axis](partial-deriv.md)
+- [Partial derivative as the derivative of a coordinate slice](partial-deriv-spec.md)
+- [Partial derivative as a Fréchet derivative](partial-deriv-eq-fderiv-apply.md)
+- [Partial derivative function of a differentiable function](partial-deriv-eq-fderiv-apply-of-differe.md)
+- [Mixed partial derivatives via the second Fréchet derivative](partial-deriv-partial-deriv-eq-fderiv-fd.md)
+- [Symmetry of mixed partial derivatives (Clairaut's theorem)](iterated-partial-deriv-commute.md)

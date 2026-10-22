@@ -7,18 +7,20 @@ proof: formalized
 lean: BooleanCube.multilinearDegreeLE_of_dimension_le
 ---
 
-# Multilinear Degree LE of dimension le
+# Fourier degree is at most the dimension
 
-Every function on an `n`-dimensional cube has Fourier degree at most `n`.
+**Fourier degree is at most the dimension.** Let $f$ be a real-valued function on the
+Boolean cube of dimension $n$, and let $d \ge n$ be a natural number. Then $f$ has Fourier
+degree at most $d$.
 
 ## Depends on
 
-- [Bool Cube](bool-cube.md)
-- [Multilinear Degree LE](multilinear-degree-le.md)
+- [Boolean cube](bool-cube.md)
+- [Fourier degree at most $d$](multilinear-degree-le.md)
 
 ## Proof depends on
 
-- [Bool Fourier Coeff](bool-fourier-coeff.md)
+- [Fourier coefficient on the Boolean cube](bool-fourier-coeff.md)
 
 ## Sources
 

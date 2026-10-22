@@ -7,18 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.good_reduction_torsion_unramified
 ---
 
-# Neron Ogg Shafarevich
+# Néron–Ogg–Shafarevich criterion, easy direction
 
-The easy direction of the **Néron–Ogg–Shafarevich criterion**: if `E`
-over `Frac R` has good reduction at the discrete valuation ring `R`, then every
-element of the inertia subgroup fixes every `n`-torsion point of `E` over the
-separable closure, where `n` is nonzero in the residue field.
+**Néron–Ogg–Shafarevich criterion, easy direction.** Let $R$ be a discrete valuation ring
+with fraction field $k$, and let $E$ be an elliptic curve over $k$ given by a Weierstrass
+equation with good reduction at $R$. Let $n$ be a natural number whose image in the residue
+field of $R$ is nonzero, let $k^{\mathrm{sep}}$ be a separable closure of $k$, and let
+$\mathcal{O}$ be a valuation subring of $k^{\mathrm{sep}}$ whose intersection with $k$ is $R$.
+Then every element $\sigma$ of the inertia subgroup of $\mathcal{O}$ in
+$\mathrm{Gal}(k^{\mathrm{sep}}/k)$ fixes every point $P \in E(k^{\mathrm{sep}})$ with $nP = 0$.
 
-Note: upstream states torsion membership via `AddSubgroup.torsionBy`, which is
-absent from Mathlib; here it is unfolded to the membership condition
-`(n : ℤ) • P = 0`, which is definitionally the same condition.
-
-Proof: We use Silverman's elementary valuation filtration at the origin in `(z, w)` coordinates,
+Proof: We use Silverman's elementary valuation filtration at the origin in $(z, w)$ coordinates,
 together with reduction to the nonsingular residue curve; see *The Arithmetic of Elliptic Curves*,
 IV.1, VII.3, and VII.7.
 

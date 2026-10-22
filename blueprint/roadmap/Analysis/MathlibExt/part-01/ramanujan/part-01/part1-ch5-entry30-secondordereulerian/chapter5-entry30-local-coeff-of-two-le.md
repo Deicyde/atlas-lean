@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry30Secondordereulerian.chapter5Entry30LocalCoeff_of_two_le
 ---
 
-# Chapter5 Entry30 Local Coeff of two le
+# Entry 30 local factors vanish at exponents at least two
 
-The local factor vanishes at exponents `e ≥ 2`.
+**Entry 30 local factors vanish at exponents at least two.** For every function
+$a : \mathbb{N} \to \mathbb{C}$, every $p \in \mathbb{N}$ and every $e \ge 2$, the Entry 30 local
+factor of $a$ at $p$ with exponent $e$ is $0$.
 
 ## Depends on
 
-- [Chapter5 Entry30 Local Coeff](chapter5-entry30-local-coeff.md)
+- [Local factor](chapter5-entry30-local-coeff.md)
 
 ## Sources
 

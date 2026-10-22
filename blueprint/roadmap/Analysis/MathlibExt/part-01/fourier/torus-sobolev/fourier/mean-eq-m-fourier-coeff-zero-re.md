@@ -7,22 +7,27 @@ proof: formalized
 lean: TorusSobolev.mean_eq_mFourierCoeff_zero_re
 ---
 
-# Mean eq m Fourier Coeff zero re
+# The mean is the real part of the zeroth Fourier coefficient
 
-The actual real mean is the real part of the actual zero Fourier coefficient.
+**The mean is the real part of the zeroth Fourier coefficient.** For every continuous
+function $u : \mathbb{T} \to \mathbb{R}$ on the torus $\mathbb{T} = (\mathbb{R}/2\pi\mathbb{Z})^2$,
+the mean of $u$ equals the real part of the zeroth Fourier coefficient
+$\int_{(\mathbb{R}/\mathbb{Z})^2} \tilde u(y)\,dy$, taken with respect to normalized Haar measure,
+of the unit representative $\tilde u$ of $u$ (the function $u$, viewed as complex-valued and
+transported to the unit-period torus $(\mathbb{R}/\mathbb{Z})^2$).
 
 ## Depends on
 
-- [Torus](../basic/torus.md)
-- [Mean](../basic/mean.md)
-- [Unit Representative](../basic/unit-representative.md)
+- [The torus of period $2\pi$](../basic/torus.md)
+- [Mean of a function on the torus](../basic/mean.md)
+- [A function on the torus as a function on the unit torus](../basic/unit-representative.md)
 
 ## Proof depends on
 
-- [Frequency](../basic/frequency.md)
-- [M Fourier Coeff integrable](m-fourier-coeff-integrable.md)
-- [Unit Haar](../basic/unit-haar.md)
-- [Unit Rescaling](../basic/unit-rescaling.md)
+- [Integer frequencies](../basic/frequency.md)
+- [Integrability of Fourier integrands on the 2-torus](m-fourier-coeff-integrable.md)
+- [Normalized Haar measure on the unit torus](../basic/unit-haar.md)
+- [Rescaling the torus to unit period](../basic/unit-rescaling.md)
 
 ## Sources
 

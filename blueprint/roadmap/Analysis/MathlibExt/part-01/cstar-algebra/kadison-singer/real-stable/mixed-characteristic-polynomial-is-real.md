@@ -7,25 +7,27 @@ proof: formalized
 lean: MathlibExt.Analysis.CStarAlgebra.KadisonSinger.mixedCharacteristicPolynomial_isRealRooted_of_posSemidef
 ---
 
-# Mixed Characteristic Polynomial is Real Rooted of pos Semidef
+# Mixed characteristic polynomials of positive semidefinite matrices are real-rooted
 
-The mixed characteristic polynomial of positive semidefinite matrices is real-rooted.
+**Mixed characteristic polynomials of positive semidefinite matrices are real-rooted.** For
+every finite family $A_1, \dots, A_m$ of positive semidefinite complex square matrices of a common
+size, the mixed characteristic polynomial of $A_1, \dots, A_m$ is real-rooted.
 
 ## Depends on
 
-- [Mixed Characteristic Polynomial](../mixed-char-poly/mixed-characteristic-polynomial.md)
-- [Is Real Rooted](../../../../../../Algebra/MathlibExt/polynomial/real-rooted/is-real-rooted.md)
+- [Mixed characteristic polynomial](../mixed-char-poly/mixed-characteristic-polynomial.md)
+- [Real-rooted polynomials](../../../../../../Algebra/MathlibExt/polynomial/real-rooted/is-real-rooted.md)
 
 ## Proof depends on
 
-- [Mixed Det Polynomial](../mixed-char-poly/mixed-det-polynomial.md)
-- [Mixed Det Polynomial is Real Stable of pos Semidef](mixed-det-polynomial-is-real-stable-of-p.md)
-- [Is Real Stable](../../../../../../Algebra/MathlibExt/mv-polynomial/stable/is-real-stable.md)
+- [Mixed determinant polynomial](../mixed-char-poly/mixed-det-polynomial.md)
+- [Real stability of the determinant polynomial](mixed-det-polynomial-is-real-stable-of-p.md)
+- [Real stable polynomials](../../../../../../Algebra/MathlibExt/mv-polynomial/stable/is-real-stable.md)
 - [Mixed Differential](../../../../../../Algebra/MathlibExt/mv-polynomial/stable/mixed-differential-2.md)
 - [Is Real Rooted univariate Specialization of is Real Stable](../../../../../../Algebra/MathlibExt/mv-polynomial/stable/is-real-rooted-univariate-specialization.md)
-- [Mixed Differential](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential.md)
-- [Mixed Differential cons](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential-cons.md)
-- [Univariate Specialization](../../../../../../Algebra/MathlibExt/mv-polynomial/stable/univariate-specialization.md)
+- [Mixed differential operator](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential.md)
+- [Mixed differential along a list with a given first index](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential-cons.md)
+- [Univariate specialization](../../../../../../Algebra/MathlibExt/mv-polynomial/stable/univariate-specialization.md)
 
 ## Sources
 

@@ -7,9 +7,13 @@ proof: formalized
 lean: TorusSobolev.lowestShellUnit_im_zero
 ---
 
-# Lowest Shell Unit im zero
+# The lowest-shell unit polynomial is real-valued
 
-Opposite Fourier modes make this polynomial real.
+**The lowest-shell unit polynomial is real-valued.** For every point $y$ of the unit torus
+$(\mathbb{R}/\mathbb{Z})^2$, the lowest-shell unit polynomial $P$ satisfies
+$\operatorname{Im} P(y) = 0$.
+
+Its Fourier modes come in opposite pairs $\pm k$ with equal coefficients.
 
 ## Depends on
 
@@ -17,8 +21,8 @@ Opposite Fourier modes make this polynomial real.
 
 ## Proof depends on
 
-- [Frequency](../basic/frequency.md)
-- [Axis Frequency](axis-frequency.md)
+- [Integer frequencies](../basic/frequency.md)
+- [Axis frequency](axis-frequency.md)
 
 ## Sources
 

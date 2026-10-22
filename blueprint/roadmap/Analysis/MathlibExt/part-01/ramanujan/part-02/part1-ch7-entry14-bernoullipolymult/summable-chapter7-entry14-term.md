@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry14Bernoullipolymult.summable_chapter7Entry14Term
 ---
 
-# Summable chapter7 Entry14 Term
+# Convergence of $\sum 1/(n(n^x - 1))$
 
-The series defining `chapter7Entry14Sum` is summable at every positive argument.
+**Convergence of $\sum 1/(n(n^x - 1))$.** For every real $x > 0$ the series
+$\sum_{n \ge 2} \frac{1}{n(n^x - 1)}$ converges absolutely.
 
 ## Depends on
 

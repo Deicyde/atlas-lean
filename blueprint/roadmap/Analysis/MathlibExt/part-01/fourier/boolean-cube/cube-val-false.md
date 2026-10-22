@@ -7,13 +7,13 @@ proof: formalized
 lean: BooleanCube.cubeVal_false
 ---
 
-# Cube Val false
+# Sign of false
 
-A `false` coordinate represents the negative sign.
+**Sign of false.** The sign $\sigma(\text{false})$ of the Boolean value false equals $-1$.
 
 ## Depends on
 
-- [Cube Val](cube-val.md)
+- [Sign of a Boolean coordinate](cube-val.md)
 
 ## Sources
 

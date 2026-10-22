@@ -7,19 +7,19 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry10bEuleriansymmetry.chapter5EulerEven_recurrence
 ---
 
-# Chapter5 Euler Even recurrence
+# Binomial recurrence for the even-index Euler numbers
 
-The defining binomial recurrence for even Euler numbers:
-`∑_{k = 0}^m (2m).choose (2k) * E_k` is `1` for `m = 0` and `0` otherwise.
+**Binomial recurrence for the even-index Euler numbers.** For every natural number $m$,
+$\sum_{k=0}^{m} \binom{2m}{2k} E_{2k}$ is $1$ if $m = 0$ and $0$ if $m \ge 1$.
 
 ## Depends on
 
-- [Chapter5 Euler Even](chapter5-euler-even.md)
+- [Even-index Euler numbers](chapter5-euler-even.md)
 
 ## Proof depends on
 
-- [Chapter5 Euler Even step](chapter5-euler-even-step.md)
-- [Chapter5 Euler Even zero](chapter5-euler-even-zero.md)
+- [Recursion for the even-index Euler numbers](chapter5-euler-even-step.md)
+- [The initial even-index Euler number](chapter5-euler-even-zero.md)
 
 ## Sources
 

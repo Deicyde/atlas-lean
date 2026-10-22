@@ -7,11 +7,10 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry8Eulerianformula.chapter5Entry8_exp_add_one_ne
 ---
 
-# Chapter5 Entry8 exp add one ne
+# No zeros of e^z + 1 in the disc of radius pi
 
-Component of Entry 8 (see `ramanujan_part1_ch5_entry8_eulerianformula`):
-`Complex.exp z + 1 ≠ 0` for `‖z‖ < π`, without the unrelated positive `n`
-required by the bundled statement.
+**No zeros of e^z + 1 in the disc of radius pi.** For every complex number $z$ with
+$|z| < \pi$, we have $e^z + 1 \ne 0$.
 
 ## Depends on
 

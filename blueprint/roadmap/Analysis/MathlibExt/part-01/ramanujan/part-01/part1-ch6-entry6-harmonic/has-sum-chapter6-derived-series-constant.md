@@ -13,8 +13,8 @@ lean: MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry6Harmonic.hasSum_chapter6Deriv
 
 ## Depends on
 
-- [Chapter6 Derived Series Constant](chapter6-derived-series-constant.md)
-- [Chapter6 Shifted Derived Series Term](chapter6-shifted-derived-series-term.md)
+- [Ramanujan's derivative-series constants](chapter6-derived-series-constant.md)
+- [Terms of the shifted derivative series](chapter6-shifted-derived-series-term.md)
 
 ## Sources
 

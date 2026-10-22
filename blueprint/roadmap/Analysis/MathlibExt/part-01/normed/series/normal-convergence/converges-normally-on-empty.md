@@ -7,17 +7,19 @@ proof: formalized
 lean: convergesNormallyOn_empty
 ---
 
-# Converges Normally On empty
+# Normal convergence on the empty set
 
-Every function series converges normally on the empty set.
+**Normal convergence on the empty set.** Every series of functions $f_n \colon X \to E$
+($n \in \mathbb{N}$) with values in a seminormed additive commutative group $E$ converges
+normally on the empty set.
 
 ## Depends on
 
-- [Sup Norm On](sup-norm-on.md)
+- [Extended supremum norm on a set](sup-norm-on.md)
 
 ## Proof depends on
 
-- [Sup Norm On empty](sup-norm-on-empty.md)
+- [Supremum norm over the empty set](sup-norm-on-empty.md)
 
 ## Sources
 

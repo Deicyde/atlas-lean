@@ -5,5 +5,5 @@ navigation: module
 
 # Part1 Ch6 Entry16 Finite Sum
 
-- [Ramanujan part1 ch6 entry16 finite sum general](ramanujan-part1-ch6-entry16-finite-sum-g.md)
-- [Ramanujan part1 ch6 entry16 finite sum](ramanujan-part1-ch6-entry16-finite-sum.md)
+- [A finite identity for $\sum_k r^k/(1-ax^k)$ over a field](ramanujan-part1-ch6-entry16-finite-sum-g.md)
+- [Ramanujan's finite identity for $\sum_k r^k/(1-ax^k)$](ramanujan-part1-ch6-entry16-finite-sum.md)

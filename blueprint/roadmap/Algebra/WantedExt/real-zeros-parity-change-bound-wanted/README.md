@@ -5,8 +5,8 @@ navigation: module
 
 # Real Zeros Parity Change Bound
 
-- [C Tilde](c-tilde.md)
-- [Pos Indices](pos-indices.md)
-- [V Val](v-val.md)
-- [Conjecture](conjecture.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [Newton-type coefficient differences](c-tilde.md)
+- [Indices with positive Newton-type difference](pos-indices.md)
+- [Parity changes of the positive-difference indices](v-val.md)
+- [Parity-change bound on real zeros (conjecture)](conjecture.md)
+- [The parity-change bound on real zeros is false](conjecture-refuted.md)

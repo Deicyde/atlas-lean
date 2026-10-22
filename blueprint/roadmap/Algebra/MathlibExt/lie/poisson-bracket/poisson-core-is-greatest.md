@@ -7,22 +7,24 @@ proof: formalized
 lean: MathlibExt.Algebra.Lie.PoissonBracket.poissonCore_isGreatest
 ---
 
-# Poisson Core is Greatest
+# Universal property of the Poisson core
 
-Universal property: the Poisson core is the largest Poisson ideal
-below `J`.
+**Universal property of the Poisson core.** Let $A$ be a commutative $\mathbb{C}$-algebra
+with a Poisson bracket. For every ideal $J$ of $A$, the Poisson core of $J$ is the greatest
+element of the set of Poisson ideals of $A$ contained in $J$: it is a Poisson ideal contained in
+$J$, and it contains every Poisson ideal of $A$ contained in $J$.
 
 ## Depends on
 
-- [Is Poisson Ideal](is-poisson-ideal.md)
-- [Poisson Bracket](poisson-bracket.md)
-- [Poisson Core](poisson-core.md)
+- [Poisson ideal](is-poisson-ideal.md)
+- [Poisson bracket](poisson-bracket.md)
+- [Poisson core](poisson-core.md)
 
 ## Proof depends on
 
-- [Le poisson Core](le-poisson-core.md)
-- [Poisson Core le](poisson-core-le.md)
-- [Poisson Core poisson](poisson-core-poisson.md)
+- [Poisson ideals inside an ideal lie in its Poisson core](le-poisson-core.md)
+- [The Poisson core is contained in the ideal](poisson-core-le.md)
+- [The Poisson core is a Poisson ideal](poisson-core-poisson.md)
 
 ## Sources
 

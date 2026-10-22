@@ -7,14 +7,16 @@ proof: formalized
 lean: MathlibExt.Analysis.Complex.HartogsWanted.differentiableAt_of_barDeriv_eq_zero
 ---
 
-# Differentiable At of bar Deriv eq zero
+# Cauchy–Riemann criterion for complex differentiability
 
-A real-differentiable function with vanishing Wirtinger derivative is complex
-differentiable.
+**Cauchy–Riemann criterion for complex differentiability.** Let $f : \mathbb{C} \to
+\mathbb{C}$ and $z \in \mathbb{C}$. If $f$ is real differentiable at $z$ and its Wirtinger
+derivative $\partial f / \partial \bar z$ vanishes at $z$, then $f$ is complex differentiable at
+$z$.
 
 ## Depends on
 
-- [Bar Deriv](bar-deriv.md)
+- [The Wirtinger derivative with respect to z̄](bar-deriv.md)
 
 ## Sources
 

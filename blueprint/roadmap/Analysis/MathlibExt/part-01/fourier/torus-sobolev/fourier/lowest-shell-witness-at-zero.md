@@ -7,22 +7,23 @@ proof: formalized
 lean: TorusSobolev.lowestShellWitness_at_zero
 ---
 
-# Lowest Shell Witness at zero
+# Value of the lowest-shell witness at the origin
 
-The actual point value agrees with the primary four-mode example.
+**Value of the lowest-shell witness at the origin.** The lowest-shell witness $u$ takes the
+value $u(0) = 1/\pi$ at the origin of the torus.
 
 ## Depends on
 
-- [Torus](../basic/torus.md)
-- [Lowest Shell Witness](lowest-shell-witness.md)
+- [The torus of period $2\pi$](../basic/torus.md)
+- [Lowest-shell witness](lowest-shell-witness.md)
 
 ## Proof depends on
 
-- [Frequency](../basic/frequency.md)
-- [Axis Frequency](axis-frequency.md)
+- [Integer frequencies](../basic/frequency.md)
+- [Axis frequency](axis-frequency.md)
 - [Lowest Shell Unit](lowest-shell-unit.md)
-- [Unit Rescaling](../basic/unit-rescaling.md)
-- [Unit Rescaling zero](unit-rescaling-zero.md)
+- [Rescaling the torus to unit period](../basic/unit-rescaling.md)
+- [The unit rescaling fixes the origin](unit-rescaling-zero.md)
 
 ## Sources
 

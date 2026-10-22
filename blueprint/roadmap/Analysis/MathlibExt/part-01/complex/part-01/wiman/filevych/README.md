@@ -5,5 +5,5 @@ navigation: module
 
 # Filevych
 
-- [Tendsto wiman Maximum Term exp at Top](tendsto-wiman-maximum-term-exp-at-top.md)
-- [Exists wiman radius two thirds](exists-wiman-radius-two-thirds.md)
+- [The maximum term tends to infinity along logarithmic radii](tendsto-wiman-maximum-term-exp-at-top.md)
+- [Wiman's inequality with exponent $2/3$ at arbitrarily large radii](exists-wiman-radius-two-thirds.md)

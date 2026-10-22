@@ -25,9 +25,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hasse bound of is Char Ne Two NF](manin-twist/hasse-bound-of-is-char-ne-two-nf.md)
-- [Hasse bound of is Char Two NF](manin-twist-char-two/hasse-bound-of-is-char-two-nf.md)
-- [Nat Card point eq](variable-change-point/nat-card-point-eq.md)
+- [Hasse bound for the odd-characteristic normal form](manin-twist/hasse-bound-of-is-char-ne-two-nf.md)
+- [Hasse bound for the characteristic-two normal forms](manin-twist-char-two/hasse-bound-of-is-char-two-nf.md)
+- [Variable changes preserve the point count](variable-change-point/nat-card-point-eq.md)
 
 ## Sources
 

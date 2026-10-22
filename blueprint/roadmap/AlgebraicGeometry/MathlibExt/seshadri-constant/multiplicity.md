@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.AlgebraicGeometry.SeshadriConstant.multiplicity
 ---
 
-# Multiplicity
+# Multiplicity of a plane polynomial at a point
 
-The multiplicity of a plane polynomial at a point: the least total degree
-occurring after translating the point to the origin. It is totalized to `0`
-for the zero polynomial; applications below exclude that case.
+**Multiplicity of a plane polynomial at a point.** For a polynomial
+$f \in \mathbb{C}[X_0, X_1]$ and a point $a = (a_0, a_1) \in \mathbb{C}^2$, the multiplicity
+of $f$ at $a$ is the least total degree of a monomial occurring with nonzero coefficient in
+the translated polynomial $f(X_0 + a_0, X_1 + a_1)$. For the zero polynomial it is $0$.
 
 ## Depends on
 
@@ -18,8 +19,8 @@ for the zero polynomial; applications below exclude that case.
 
 ## Proof depends on
 
-- [Monomial Degree](monomial-degree.md)
-- [Shifted](shifted.md)
+- [Total degree of a monomial](monomial-degree.md)
+- [Translate of a plane polynomial](shifted.md)
 
 ## Sources
 

@@ -7,18 +7,21 @@ proof: formalized
 lean: Complex.eventually_pos_log_wimanMaximumTerm
 ---
 
-# Eventually pos log wiman Maximum Term
+# The logarithm of the maximum term is eventually positive
 
-Eventually the logarithm of the maximum Taylor term is positive.
+**The logarithm of the maximum term is eventually positive.** Let $f$ be an entire function
+that is not a polynomial function, with Taylor coefficients $a_n$ at the origin and maximum term
+$\mu(r) = \sup_n |a_n|\,|r|^n$. Then there is $R$ such that $\log \mu(r) > 0$ for all real
+$r \ge R$.
 
 ## Depends on
 
-- [Is Transcendental](../../../part-02/wiman/is-transcendental.md)
-- [Wiman Maximum Term](../../../part-02/wiman/wiman-maximum-term.md)
+- [Transcendental functions](../../../part-02/wiman/is-transcendental.md)
+- [Wiman maximum term](../../../part-02/wiman/wiman-maximum-term.md)
 
 ## Proof depends on
 
-- [Eventually one lt wiman Maximum Term](eventually-one-lt-wiman-maximum-term.md)
+- [The maximum term eventually exceeds one](eventually-one-lt-wiman-maximum-term.md)
 
 ## Sources
 

@@ -7,17 +7,21 @@ proof: formalized
 lean: MathlibExt.Analysis.Convex.FenchelMoreau.biconj_le
 ---
 
-# Biconj le
+# The biconjugate lies below the function
 
-Easy direction of Fenchel–Moreau: the biconjugate never exceeds `f`.
+**The biconjugate lies below the function.** Let $E$ be a real vector space with a topology
+and let $f : E \to [-\infty, \infty]$ never take the value $-\infty$. Then $f^{**}(x) \le f(x)$
+for every $x \in E$, where $f^{**}$ is the Fenchel biconjugate of $f$.
+
+This is the easy direction of the Fenchel–Moreau theorem.
 
 ## Depends on
 
-- [Fenchel Biconj](fenchel-biconj.md)
+- [Fenchel biconjugate](fenchel-biconj.md)
 
 ## Proof depends on
 
-- [Fenchel Conj](fenchel-conj.md)
+- [Fenchel conjugate](fenchel-conj.md)
 
 ## Sources
 

@@ -5,6 +5,6 @@ navigation: module
 
 # Is Closest Conjugate
 
-- [Is Closest Conjugate](is-closest-conjugate.md)
-- [Lt spectral Norm sub of is Conj Root](lt-spectral-norm-sub-of-is-conj-root.md)
-- [Adjoin le](adjoin-le.md)
+- [Closest conjugate](is-closest-conjugate.md)
+- [Closest conjugates satisfy Krasner's hypothesis](lt-spectral-norm-sub-of-is-conj-root.md)
+- [Krasner's lemma for closest conjugates](adjoin-le.md)

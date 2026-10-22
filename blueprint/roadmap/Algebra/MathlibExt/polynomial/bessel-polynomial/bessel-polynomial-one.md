@@ -7,15 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.besselPolynomial_one
 ---
 
-# Bessel Polynomial one
+# The first Bessel polynomial
 
-The value `y_1 = 1 + X` (concept `jis_sem_0d5596f0982681bcb579a894`;
-Schork source lines 285-288).
+**The first Bessel polynomial.** The Bessel polynomial $y_1$ equals $1 + x$.
 
 ## Depends on
 
-- [Bessel Polynomial](bessel-polynomial.md)
+- [Bessel polynomial](bessel-polynomial.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Polynomial.BesselPolynomial](../../../../../sources/v2/MathlibExt.md)
+- Schork, lines 285-288 (concept `jis_sem_0d5596f0982681bcb579a894`).

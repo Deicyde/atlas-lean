@@ -7,9 +7,13 @@ proof: formalized
 lean: MathlibExt.Analysis.ODE.CauchyPeanoWanted.cauchy_peano_exists
 ---
 
-# Cauchy Peano
+# Cauchy–Peano existence theorem
 
-Continuous ODEs on finite-dimensional spaces admit local solutions through any initial data.
+**Cauchy–Peano existence theorem.** Let $E$ be a finite-dimensional real normed space and let
+$f : \mathbb{R} \times E \to E$ be continuous. Then for every $t_0 \in \mathbb{R}$ and
+$x_0 \in E$ there are $\varepsilon > 0$ and a function $x : \mathbb{R} \to E$ with
+$x(t_0) = x_0$ such that, for every $t \in (t_0 - \varepsilon, t_0 + \varepsilon)$, $x$ is
+differentiable at $t$ with $x'(t) = f(t, x(t))$.
 
 ## Depends on
 

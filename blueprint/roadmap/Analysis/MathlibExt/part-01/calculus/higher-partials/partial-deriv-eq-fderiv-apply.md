@@ -7,16 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.partialDeriv_eq_fderiv_apply
 ---
 
-# Partial Deriv eq fderiv apply
+# Partial derivative as a Fréchet derivative
 
-A partial derivative is the Frechet derivative applied to the axis vector.
+**Partial derivative as a Fréchet derivative.** Let $f : \mathbb{R}^n \to \mathbb{R}$ be
+differentiable at a point $x$, and let $e_i$ be the $i$-th standard basis vector of
+$\mathbb{R}^n$. Then the partial derivative of $f$ along the $i$-th coordinate axis at $x$ equals
+$Df(x)\,e_i$, the Fréchet derivative of $f$ at $x$ applied to $e_i$.
 
-Proof: Differentiate the affine coordinate line `t ↦ x + t • Pi.single i 1` and compose with `f`
-by the chain rule `HasFDerivAt.comp_hasDerivAt`.
+The proof differentiates $f$ along the line $t \mapsto x + t e_i$ by the chain rule.
 
 ## Depends on
 
-- [Partial Deriv](partial-deriv.md)
+- [Partial derivative along a coordinate axis](partial-deriv.md)
 
 ## Sources
 

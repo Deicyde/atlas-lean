@@ -18,7 +18,7 @@ Conjugate the input, execute FFT and conjugate its returned coefficients.
 ## Proof depends on
 
 - [DFTCorrectness](../fft-correct.md)
-- [Dft Sum](../../../../../../Analysis/MathlibExt/part-01/fourier/fast-fourier-transform/dft-sum.md)
+- [Discrete Fourier sum](../../../../../../Analysis/MathlibExt/part-01/fourier/fast-fourier-transform/dft-sum.md)
 
 ## Sources
 

@@ -5,5 +5,5 @@ navigation: module
 
 # Spectrum
 
-- [Charpoly is Real Rooted](charpoly-is-real-rooted.md)
-- [L2 op Norm eq max Real Root charpoly](l2-op-norm-eq-max-real-root-charpoly.md)
+- [Hermitian matrices have real-rooted characteristic polynomials](charpoly-is-real-rooted.md)
+- [Spectral norm of a positive semidefinite matrix](l2-op-norm-eq-max-real-root-charpoly.md)

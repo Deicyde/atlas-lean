@@ -5,7 +5,7 @@ navigation: module
 
 # Hayman Admissibility
 
-- [Hayman Auxiliary A](hayman-auxiliary-a.md)
-- [Hayman Auxiliary B](hayman-auxiliary-b.md)
-- [Is Hayman Admissible](is-hayman-admissible.md)
-- [Hayman coefficient asymptotic](hayman-coefficient-asymptotic.md)
+- [Hayman auxiliary function $A$](hayman-auxiliary-a.md)
+- [Hayman auxiliary function $B$](hayman-auxiliary-b.md)
+- [Hayman-admissible function (finite radius)](is-hayman-admissible.md)
+- [Hayman's coefficient asymptotic (finite radius)](hayman-coefficient-asymptotic.md)

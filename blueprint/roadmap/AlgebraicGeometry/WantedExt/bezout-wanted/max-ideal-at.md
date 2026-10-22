@@ -6,9 +6,13 @@ statement: formalized
 lean: MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.maxIdealAt
 ---
 
-# Max Ideal At
+# Maximal ideal of an affine point
 
-Maximal ideal of `K[X_0, …, X_n]` at the affine point `q`.
+**Maximal ideal of an affine point.** For a field $K$ and a point $q \in K^{n+1}$, this is the
+ideal of $K[X_0, \dots, X_n]$ consisting of the polynomials $g$ with $g(q) = 0$, that is, the
+kernel of evaluation at $q$.
+
+It is a maximal ideal, since evaluation at $q$ is surjective onto $K$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Eval At](eval-at.md)
+- [Evaluation at an affine point](eval-at.md)
 
 ## Sources
 

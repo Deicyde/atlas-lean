@@ -7,13 +7,15 @@ proof: formalized
 lean: gradientDescentTrajectory_zeroSchedule
 ---
 
-# Gradient Descent Trajectory zero Schedule
+# Gradient descent with zero step sizes stays put
 
-Zero steps leave every initial point unchanged.
+**Gradient descent with zero step sizes stays put.** Let $E$ be a real Hilbert space,
+$f : E \to \mathbb{R}$ and $x_0 \in E$. If every step size is $0$, then for every $k \in \mathbb{N}$
+the $k$-th gradient descent iterate of $f$ from $x_0$ equals $x_0$.
 
 ## Depends on
 
-- [Gradient Descent Trajectory](gradient-descent-trajectory.md)
+- [Gradient descent with a step schedule](gradient-descent-trajectory.md)
 
 ## Sources
 

@@ -22,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Watson Laplace Lemma](../../../../Analysis/MathlibExt/part-01/asymptotics/watson-laplace-integral-asymptotic.md)
+- [Watson's lemma for Laplace integrals](../../../../Analysis/MathlibExt/part-01/asymptotics/watson-laplace-integral-asymptotic.md)
 
 ## Sources
 

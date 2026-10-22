@@ -7,9 +7,11 @@ proof: formalized
 lean: MathlibExt.Analysis.Convex.FenchelMoreau.isClosed_epi_real
 ---
 
-# Is Closed epi real
+# Lower semicontinuous functions have closed epigraphs
 
-A lower-semicontinuous function's `ℝ`-threshold epigraph is closed.
+**Lower semicontinuous functions have closed epigraphs.** Let $E$ be a topological space and
+let $f : E \to [-\infty, \infty]$ be lower semicontinuous. Then the set
+$\{(x, r) \in E \times \mathbb{R} : f(x) \le r\}$ is closed in $E \times \mathbb{R}$.
 
 ## Depends on
 

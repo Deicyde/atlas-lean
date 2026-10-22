@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.zero_mem_polarSet
 ---
 
-# Zero mem polar Set
+# The origin lies in every polar
 
-The origin lies in every polar set, since `⟪x, 0⟫_ℝ = 0 ≤ 1`.
+**The origin lies in every polar.** In a real inner product space $E$, for every set
+$A \subseteq E$ the origin $0$ lies in the polar $A^\circ$ of $A$, since
+$\langle x, 0 \rangle = 0 \le 1$ for every $x \in A$.
 
 ## Depends on
 
-- [Polar Set](polar-set.md)
+- [Polar of a set](polar-set.md)
 
 ## Sources
 

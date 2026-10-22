@@ -13,7 +13,7 @@ A DFT sum at an `n`th root of unity depends only on the frequency modulo `n`.
 
 ## Depends on
 
-- [Dft Sum](dft-sum.md)
+- [Discrete Fourier sum](dft-sum.md)
 
 ## Sources
 

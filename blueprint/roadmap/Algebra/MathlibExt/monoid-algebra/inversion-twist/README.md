@@ -7,13 +7,13 @@ navigation: module
 
 ## Group Ring
 
-- [Inversion](inversion.md)
-- [Inversion single](inversion-single.md)
+- [Inversion on a group ring](inversion.md)
+- [Inversion on basis elements](inversion-single.md)
 - [Inversion involution](inversion-involution.md)
-- [Inversion Twist](inversion-twist.md)
+- [Inversion twist of a group-ring module](inversion-twist.md)
 
 ## Inversion Twist
 
-- [Equiv](equiv.md)
-- [Val smul](val-smul.md)
-- [Twist Twist Equiv](twist-twist-equiv.md)
+- [Underlying bijection of the inversion twist](equiv.md)
+- [Scalar action on the inversion twist](val-smul.md)
+- [Twisting twice by inversion recovers the module](twist-twist-equiv.md)

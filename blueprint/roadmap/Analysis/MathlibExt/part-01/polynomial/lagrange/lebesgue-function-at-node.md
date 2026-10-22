@@ -7,19 +7,20 @@ proof: formalized
 lean: Lagrange.lebesgueFunction_at_node
 ---
 
-# Lebesgue Function at node
+# The Lebesgue function equals one at the nodes
 
-For injective nodes, the Lebesgue function equals `1` at every node.
+**The Lebesgue function equals one at the nodes.** If the real nodes $x_0, \dots, x_{n-1}$
+are pairwise distinct, then their Lebesgue function satisfies $L_n(x_j) = 1$ for every $j < n$.
 
 ## Depends on
 
-- [Lebesgue Function](lebesgue-function.md)
+- [Lebesgue function](lebesgue-function.md)
 
 ## Proof depends on
 
-- [Eval Basis](eval-basis.md)
-- [Eval Basis of ne](eval-basis-of-ne.md)
-- [Eval Basis self](eval-basis-self.md)
+- [Evaluated Lagrange basis polynomial](eval-basis.md)
+- [Lagrange basis polynomials vanish at the other nodes](eval-basis-of-ne.md)
+- [Lagrange basis polynomials equal one at their own node](eval-basis-self.md)
 
 ## Sources
 

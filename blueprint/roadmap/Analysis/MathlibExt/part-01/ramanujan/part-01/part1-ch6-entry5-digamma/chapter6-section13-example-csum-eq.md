@@ -7,19 +7,21 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.chapter6Section13ExampleCSum_eq
 ---
 
-# Chapter6 Section13 Example CSum eq
+# Functional equation of Ramanujan's factorial series
 
-The functional equation `C(x) = 1 / (x + 1) - C(x + 1) / (x + 1)` for `0 < x`.
+**Functional equation of Ramanujan's factorial series.** Let
+$C(x) = \sum_{j \ge 0} (-1)^j / ((x + 1)(x + 2) \cdots (x + j + 1))$ be Ramanujan's factorial
+series. For every real $x > 0$, $C(x) = \frac{1}{x + 1} - \frac{C(x + 1)}{x + 1}$.
 
 ## Depends on
 
-- [Chapter6 Section13 Example CSum](chapter6-section13-example-csum.md)
+- [Ramanujan's factorial series](chapter6-section13-example-csum.md)
 
 ## Proof depends on
 
-- [Chapter6 Section13 Example CTerm](chapter6-section13-example-cterm.md)
-- [Chapter6 Section13 Example CTerm succ](chapter6-section13-example-cterm-succ.md)
-- [Summable chapter6 Section13 Example CTerm](summable-chapter6-section13-example-cter.md)
+- [Terms of Ramanujan's factorial series](chapter6-section13-example-cterm.md)
+- [Recursion for the terms of Ramanujan's factorial series](chapter6-section13-example-cterm-succ.md)
+- [Convergence of Ramanujan's factorial series](summable-chapter6-section13-example-cter.md)
 
 ## Sources
 

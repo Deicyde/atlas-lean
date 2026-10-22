@@ -6,10 +6,13 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.RosenthalL1Wanted.HasUniformL1LowerBound
 ---
 
-# Has Uniform L1 Lower Bound
+# Uniform $\ell^1$ lower bound
 
-`y : ℕ → E` has a uniform `ℓ¹` lower bound when some `c > 0` satisfies
-`‖∑ i, a i • y i‖ ≥ c * ∑ i, ‖a i‖` for every finitely supported `a : ℕ →₀ 𝕜`.
+**Uniform $\ell^1$ lower bound.** Let $E$ be a normed space over $\mathbb{K} = \mathbb{R}$ or
+$\mathbb{C}$. A sequence $(y_i)_{i \in \mathbb{N}}$ in $E$ has a uniform $\ell^1$ lower bound when
+there is a real $c > 0$ such that $\|\sum_i a_i y_i\| \ge c \sum_i |a_i|$ for every finitely
+supported sequence $(a_i)_{i \in \mathbb{N}}$ of scalars in $\mathbb{K}$, both sums running over
+the finitely many $i$ with $a_i \ne 0$.
 
 ## Depends on
 

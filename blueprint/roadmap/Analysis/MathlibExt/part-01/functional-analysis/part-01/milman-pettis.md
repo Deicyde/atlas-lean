@@ -7,10 +7,12 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.MilmanPettisWanted.milman_pettis
 ---
 
-# Milman Pettis
+# Milman–Pettis theorem
 
-If `E` is a uniformly convex Banach space over `𝕜 = ℝ` or `ℂ`, then every continuous linear
-functional on the dual `E →L[𝕜] 𝕜` is evaluation at some `x : E`, i.e. `∃ x, ∀ f, Φ f = f x`.
+**Milman–Pettis theorem.** Let $E$ be a uniformly convex Banach space over $\mathbb{K} = \mathbb{R}$
+or $\mathbb{C}$, and let $E^*$ be the space of continuous linear functionals on $E$. Then every
+continuous linear functional $\Phi$ on $E^*$ is evaluation at a point: there is $x \in E$ with
+$\Phi(f) = f(x)$ for every $f \in E^*$.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Banach Space](goldstine.md)
+- [Goldstine's theorem](goldstine.md)
 
 ## Sources
 

@@ -5,12 +5,12 @@ statement: formalized
 lean: MathlibExt.Algebra.PalindromicZeroOneWanted.not_irreducible_comp_pow_iff
 ---
 
-# Theorem 1.2
+# Capelli's theorem for $f(x^r)$
 
-**Theorem 1.2**: let `f(x) ∈ ℤ[x]` be irreducible
-and `r ≥ 2`. Then `f(x^r)` is reducible if and only if
-either `f(x^p)` is reducible for some prime `p`
-dividing `r`, or `4 ∣ r` and `f(x^4)` is reducible.
+**Capelli's theorem for $f(x^r)$.** Let $f \in \mathbb{Z}[x]$ be irreducible in
+$\mathbb{Z}[x]$ and let $r \ge 2$ be an integer. Then $f(x^r)$ is reducible if and only if
+either $f(x^p)$ is reducible for some prime $p$ dividing $r$, or $4$ divides $r$ and
+$f(x^4)$ is reducible. Here reducible means not irreducible in $\mathbb{Z}[x]$.
 
 ## Depends on
 

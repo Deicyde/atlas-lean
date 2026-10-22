@@ -5,6 +5,6 @@ navigation: module
 
 # Logarithmic Bounds
 
-- [One Log Bound](one-log-bound.md)
+- [One-log bound with coefficient $c$ and constant $K$](one-log-bound.md)
 - [Double Log Bound](double-log-bound.md)
-- [One Log Leading Coefficient Infimum](one-log-leading-coefficient-infimum.md)
+- [Optimal one-log coefficient](one-log-leading-coefficient-infimum.md)

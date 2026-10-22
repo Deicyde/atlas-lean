@@ -7,14 +7,17 @@ proof: formalized
 lean: MathlibExt.Algebra.Lie.PoissonBracket.sup_poisson
 ---
 
-# Sup poisson
+# The sum of two Poisson ideals inside an ideal
 
-The supremum of two Poisson ideals below `J` is Poisson below `J`.
+**The sum of two Poisson ideals inside an ideal.** Let $A$ be a commutative
+$\mathbb{C}$-algebra with a Poisson bracket, and let $I$, $K$ and $J$ be ideals of $A$. If $I$
+and $K$ are Poisson ideals contained in $J$, then their sum $I + K$ is a Poisson ideal contained
+in $J$.
 
 ## Depends on
 
-- [Is Poisson Ideal](is-poisson-ideal.md)
-- [Poisson Bracket](poisson-bracket.md)
+- [Poisson ideal](is-poisson-ideal.md)
+- [Poisson bracket](poisson-bracket.md)
 
 ## Sources
 

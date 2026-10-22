@@ -5,6 +5,6 @@ navigation: module
 
 # Manin Projective Degree
 
-- [Primitive Triple](primitive-triple.md)
-- [Primitive Triple of no common irreducible](primitive-triple-of-no-common-irreducibl.md)
-- [Projective first nat Degree](projective-first-nat-degree.md)
+- [Primitive triple of polynomials](primitive-triple.md)
+- [Polynomials with no common irreducible factor form a primitive triple](primitive-triple-of-no-common-irreducibl.md)
+- [Numerator degrees from a primitive presentation of product and sum](projective-first-nat-degree.md)

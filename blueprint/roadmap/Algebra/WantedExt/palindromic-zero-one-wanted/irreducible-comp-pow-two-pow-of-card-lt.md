@@ -5,17 +5,18 @@ statement: formalized
 lean: MathlibExt.Algebra.PalindromicZeroOneWanted.irreducible_comp_pow_two_pow_of_card_lt
 ---
 
-# Theorem 1.1
+# Irreducibility under repeated squaring of the variable
 
-**Theorem 1.1**: if `f(x) ∈ 𝒩_irred` is reciprocal,
-non-cyclotomic, and has fewer than `15` terms, then
-`f(x^{2^n})` is irreducible for every `n`.
+**Irreducibility under repeated squaring of the variable.** Let $f \in \mathbb{Z}[x]$ be
+an irreducible, reciprocal, non-cyclotomic $0,1$-polynomial with fewer than $15$ nonzero
+coefficients. Then $f(x^{2^n})$ is irreducible in $\mathbb{Z}[x]$ for every natural
+number $n$.
 
 ## Depends on
 
-- [Is Noncyclotomic](is-noncyclotomic.md)
-- [Is Reciprocal Poly](is-reciprocal-poly.md)
-- [Is Zero One Poly](is-zero-one-poly.md)
+- [Non-cyclotomic polynomial](is-noncyclotomic.md)
+- [Reciprocal polynomial](is-reciprocal-poly.md)
+- [0,1-polynomial](is-zero-one-poly.md)
 
 ## Sources
 

@@ -7,20 +7,22 @@ proof: formalized
 lean: Matrix.PosSemidef.l2_opNorm_eq_maxRealRoot_charpoly
 ---
 
-# L2 op Norm eq max Real Root charpoly
+# Spectral norm of a positive semidefinite matrix
 
-For a nonempty positive semidefinite complex matrix, the L2 operator norm equals the largest
-root of its characteristic polynomial.
+**Spectral norm of a positive semidefinite matrix.** Let $A$ be a positive semidefinite
+complex square matrix indexed by a nonempty finite set. Then the operator norm of $A$ with
+respect to the Euclidean ($\ell^2$) norm equals the largest real part of a root of the
+characteristic polynomial of $A$. Since these roots are real, this is its largest root.
 
 ## Depends on
 
-- [Max Real Root](../../../../../Algebra/MathlibExt/polynomial/real-rooted/max-real-root.md)
+- [Largest real part of a root](../../../../../Algebra/MathlibExt/polynomial/real-rooted/max-real-root.md)
 
 ## Proof depends on
 
-- [Charpoly is Real Rooted](charpoly-is-real-rooted.md)
-- [Coe max Real Root mem roots](../../../../../Algebra/MathlibExt/polynomial/real-rooted/coe-max-real-root-mem-roots.md)
-- [Root re le max Real Root](../../../../../Algebra/MathlibExt/polynomial/real-rooted/root-re-le-max-real-root.md)
+- [Hermitian matrices have real-rooted characteristic polynomials](charpoly-is-real-rooted.md)
+- [For a real-rooted polynomial, the largest real part of a root is a root](../../../../../Algebra/MathlibExt/polynomial/real-rooted/coe-max-real-root-mem-roots.md)
+- [Real parts of roots are bounded by the largest one](../../../../../Algebra/MathlibExt/polynomial/real-rooted/root-re-le-max-real-root.md)
 
 ## Sources
 

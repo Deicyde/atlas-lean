@@ -18,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is MSystem](is-msystem.md)
-- [Is Prime Ideal](is-prime-ideal.md)
+- [m-system](is-msystem.md)
+- [Prime two-sided ideal](is-prime-ideal.md)
 
 ## Sources
 

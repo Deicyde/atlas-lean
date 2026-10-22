@@ -7,9 +7,11 @@ proof: formalized
 lean: MathlibExt.Analysis.Calculus.BorelWanted.borel_jet_real
 ---
 
-# Borel
+# Borel's lemma
 
-For any real sequence there exists a smooth function with prescribed jet at zero.
+**Borel's lemma.** For every sequence $(a_n)_{n \ge 0}$ of real numbers there is an infinitely
+differentiable function $f : \mathbb{R} \to \mathbb{R}$ whose derivatives at $0$ are
+$f^{(n)}(0) = a_n$ for every $n \ge 0$.
 
 ## Depends on
 

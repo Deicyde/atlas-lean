@@ -5,7 +5,7 @@ navigation: module
 
 # Part1 Ch7 Entry14 Bernoullipolymult
 
-- [Chapter7 Stieltjes A eq entry14 Bernoulliasymptotic](chapter7-stieltjes-a-eq-entry14-bernoull.md)
-- [Summable chapter7 Entry14 Term](summable-chapter7-entry14-term.md)
-- [Chapter7 Stieltjes Approx eq entry13 Bernoullipolyadd](chapter7-stieltjes-approx-eq-entry13-ber.md)
-- [Ramanujan part1 ch7 entry14 bernoullipolymult](ramanujan-part1-ch7-entry14-bernoullipol.md)
+- [Two definitions of the normalized Stieltjes coefficients agree](chapter7-stieltjes-a-eq-entry14-bernoull.md)
+- [Convergence of $\sum 1/(n(n^x - 1))$](summable-chapter7-entry14-term.md)
+- [Two definitions of the Stieltjes approximants agree](chapter7-stieltjes-approx-eq-entry13-ber.md)
+- [Asymptotic expansion of $\sum 1/(n(n^x - 1))$ as $x \to 0^+$](ramanujan-part1-ch7-entry14-bernoullipol.md)

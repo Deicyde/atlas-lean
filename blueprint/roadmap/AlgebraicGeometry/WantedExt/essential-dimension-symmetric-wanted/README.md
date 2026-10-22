@@ -4,10 +4,10 @@ navigation: module
 
 # Essential Dimension Symmetric
 
-- [Buhler Reichstein1997 Upper Bound wanted](buhler-reichstein1997-upper-bound-wanted.md)
-- [Buhler Reichstein Duncan Lower Bound wanted](buhler-reichstein-duncan-lower-bound-wan.md)
-- [Ess Dim Ratio Lower Bound wanted](ess-dim-ratio-lower-bound-wanted.md)
-- [Ed Sn five wanted](ed-sn-five-wanted.md)
-- [Ed Sn four wanted](ed-sn-four-wanted.md)
-- [Ed Sn six wanted](ed-sn-six-wanted.md)
-- [Ed Sn seven wanted](ed-sn-seven-wanted.md)
+- [Upper bound for the essential dimension of symmetric groups](buhler-reichstein1997-upper-bound-wanted.md)
+- [Lower bound for the essential dimension of symmetric groups](buhler-reichstein-duncan-lower-bound-wan.md)
+- [Lower bound for the asymptotic essential-dimension ratio](ess-dim-ratio-lower-bound-wanted.md)
+- [Essential dimension of the symmetric group on five letters](ed-sn-five-wanted.md)
+- [Essential dimension of the symmetric group on four letters](ed-sn-four-wanted.md)
+- [Essential dimension of the symmetric group on six letters](ed-sn-six-wanted.md)
+- [Essential dimension of the symmetric group on seven letters](ed-sn-seven-wanted.md)

@@ -7,18 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.hessianMatrix_eq_fderiv_fderiv
 ---
 
-# Hessian Matrix eq fderiv fderiv
+# Hessian entries as second Fréchet derivatives
 
-The entries of the Hessian matrix are evaluations of the second Fréchet derivative on the
-standard basis.
+**Hessian entries as second Fréchet derivatives.** Let $f : \mathbb{R}^n \to \mathbb{R}$ be
+twice continuously differentiable and let $x \in \mathbb{R}^n$. For all indices $i, j$, the
+$(i, j)$ entry of the Hessian matrix of $f$ at $x$ equals $D(Df)(x)(e_i)(e_j)$, the derivative of
+the Fréchet derivative $Df$ at $x$ in the direction $e_i$, applied to $e_j$, where
+$e_1, \dots, e_n$ is the standard basis of $\mathbb{R}^n$.
 
 ## Depends on
 
-- [Hessian Matrix](hessian-matrix.md)
+- [Hessian matrix](hessian-matrix.md)
 
 ## Proof depends on
 
-- [Hessian Matrix apply](hessian-matrix-apply.md)
+- [Entries of the Hessian matrix](hessian-matrix-apply.md)
 
 ## Sources
 

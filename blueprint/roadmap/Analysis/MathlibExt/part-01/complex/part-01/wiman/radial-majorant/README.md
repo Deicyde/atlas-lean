@@ -5,8 +5,8 @@ navigation: module
 
 # Radial Majorant
 
-- [Wiman Majorant](wiman-majorant.md)
-- [Wiman Term nonneg](wiman-term-nonneg.md)
-- [Summable wiman Term](summable-wiman-term.md)
+- [Radial majorant](wiman-majorant.md)
+- [Radial Taylor terms are nonnegative](wiman-term-nonneg.md)
+- [Summability of the radial Taylor terms](summable-wiman-term.md)
 - [Wiman Majorant nonneg](wiman-majorant-nonneg.md)
-- [Wiman Term le wiman Majorant](wiman-term-le-wiman-majorant.md)
+- [Each radial Taylor term is at most the radial majorant](wiman-term-le-wiman-majorant.md)

@@ -7,9 +7,12 @@ proof: formalized
 lean: MathlibExt.Algebra.Algebra.BurnsideMatrixWanted.burnside_matrix
 ---
 
-# Burnside Matrix
+# Burnside's theorem on matrix algebras
 
-If `A` is a `k`-subalgebra of `M_n(k)` acting irreducibly, then `A` is the full matrix algebra.
+**Burnside's theorem on matrix algebras.** Let $k$ be an algebraically closed field, $n$ a natural
+number, and $A$ a $k$-subalgebra of the algebra $M_n(k)$ of $n \times n$ matrices over $k$.
+Suppose that the only subspaces $W$ of $k^n$ with $Mv \in W$ for all $M \in A$ and all $v \in W$
+are $0$ and $k^n$. Then $A = M_n(k)$.
 
 ## Depends on
 

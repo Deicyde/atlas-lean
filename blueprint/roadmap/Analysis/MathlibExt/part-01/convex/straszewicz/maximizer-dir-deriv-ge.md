@@ -7,18 +7,22 @@ proof: formalized
 lean: MathlibExt.Analysis.Convex.Straszewicz.maximizer_dirDeriv_ge
 ---
 
-# Maximizer dir Deriv ge
+# A maximizer bounds the directional derivative of the support function from below
 
-A maximizer of a functional lower-bounds the directional derivative.
+**A maximizer bounds the directional derivative of the support function from below.** Let
+$K$ be a nonempty compact subset of a real normed space $E$, let $h_K(l) = \sup_{y \in K} l(y)$
+be its support function on the continuous dual $E^*$, and write $h_K'(u; v)$ for the
+directional derivative of $h_K$ at $u$ in direction $v$. If $u \in E^*$ and $z \in K$ satisfy
+$u(z) = h_K(u)$, then $v(z) \le h_K'(u; v)$ for every $v \in E^*$.
 
 ## Depends on
 
-- [Dir Deriv](dir-deriv.md)
-- [Supp Func](supp-func.md)
+- [Directional derivative](dir-deriv.md)
+- [Support function](supp-func.md)
 
 ## Proof depends on
 
-- [Dir Quot](dir-quot.md)
+- [Difference quotients](dir-quot.md)
 
 ## Sources
 

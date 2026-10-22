@@ -6,17 +6,20 @@ statement: formalized
 lean: NonnegativeDiscreteSpectrum.rieszMean
 ---
 
-# Riesz Mean
+# Riesz mean
 
-Finite Riesz mean `R_σ(Λ) = ∑_{E_j < Λ} (Λ - E_j)^σ` via `Real.rpow`.
+**Riesz mean.** For a nonnegative discrete spectrum with eigenvalues $E_0 \le E_1 \le \cdots$
+and real numbers $\sigma$ and $\Lambda$, the Riesz mean of order $\sigma$ at $\Lambda$ is the
+finite sum $R_\sigma(\Lambda) = \sum_{j \in \mathbb{N},\, E_j < \Lambda} (\Lambda - E_j)^\sigma$
+over indices, where $x^\sigma$ is the real power.
 
 ## Depends on
 
-- [Nonnegative Discrete Spectrum](nonnegative-discrete-spectrum.md)
+- [Nonnegative discrete spectrum](nonnegative-discrete-spectrum.md)
 
 ## Proof depends on
 
-- [Sublevel Finset](sublevel-finset.md)
+- [Finite strict sublevel set](sublevel-finset.md)
 
 ## Sources
 

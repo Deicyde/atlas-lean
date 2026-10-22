@@ -5,5 +5,5 @@ navigation: module
 
 # Bounded Self Adjoint Spectral
 
-- [Exists spectral Measure](exists-spectral-measure.md)
-- [Bounded Self Adjoint spectral multiplication](bounded-self-adjoint-spectral-multiplica.md)
+- [Scalar spectral measure of a vector](exists-spectral-measure.md)
+- [Spectral theorem for bounded self-adjoint operators, multiplication form](bounded-self-adjoint-spectral-multiplica.md)

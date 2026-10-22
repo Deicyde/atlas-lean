@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Banach Space](../../../functional-analysis/part-01/goldstine.md)
+- [Goldstine's theorem](../../../functional-analysis/part-01/goldstine.md)
 
 ## Sources
 

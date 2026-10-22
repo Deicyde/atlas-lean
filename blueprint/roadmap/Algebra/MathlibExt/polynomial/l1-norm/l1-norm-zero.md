@@ -7,13 +7,14 @@ proof: formalized
 lean: Polynomial.l1Norm_zero
 ---
 
-# L1 Norm zero
+# L1 norm of the zero polynomial
 
-The L1 norm of the zero polynomial is zero.
+**L1 norm of the zero polynomial.** Let $K$ be a semiring and $v$ a real-valued absolute value
+on $K$. The L1 norm of the zero polynomial in $K[X]$ with respect to $v$ is $0$.
 
 ## Depends on
 
-- [L1 Norm](l1-norm.md)
+- [L1 norm of a polynomial](l1-norm.md)
 
 ## Sources
 

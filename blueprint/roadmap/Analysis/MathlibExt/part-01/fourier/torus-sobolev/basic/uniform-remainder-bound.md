@@ -6,9 +6,14 @@ statement: formalized
 lean: TorusSobolev.UniformRemainderBound
 ---
 
-# Uniform Remainder Bound
+# Uniform logarithmic remainder bound
 
-The primary inequality, quantified over actual functions and every point of the torus.
+**Uniform logarithmic remainder bound.** For a real constant $L$, the bound with constant $L$
+holds when, for every continuous $u : \mathbb{T}^2 \to \mathbb{R}$ on the torus
+$\mathbb{T}^2 = (\mathbb{R}/2\pi\mathbb{Z})^2$ that has mean zero and lies in $H^2$, has positive
+gradient energy $E(u)$, and, writing $\Delta(u)$ for its Laplace energy, has frequency ratio
+$\Lambda(u) = \Delta(u)/E(u) \ge 1$, every point $x$ of the torus satisfies
+$u(x)^2 \le \frac{E(u)}{4\pi}\bigl(\log \Lambda(u) + \log(1 + \log \Lambda(u)) + L\bigr)$.
 
 ## Depends on
 
@@ -16,10 +21,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Zero Mean H2](is-zero-mean-h2.md)
-- [Torus](torus.md)
-- [Frequency Ratio](frequency-ratio.md)
-- [Gradient Energy](gradient-energy.md)
+- [Zero-mean $H^2$ functions](is-zero-mean-h2.md)
+- [The torus of period $2\pi$](torus.md)
+- [Frequency ratio](frequency-ratio.md)
+- [Gradient energy](gradient-energy.md)
 
 ## Sources
 

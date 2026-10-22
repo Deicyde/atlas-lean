@@ -7,19 +7,21 @@ proof: formalized
 lean: BooleanCube.multilinearExtension_allTrue
 ---
 
-# Multilinear Extension all True
+# Multilinear extension of the AND function
 
-The all-true function has the product of all variables as its extension.
+**Multilinear extension of the AND function.** For every natural number $n$, the real
+multilinear extension of the AND function on the Boolean cube of dimension $n$ (true exactly
+when every coordinate is true) is the monomial $\prod_{i=0}^{n-1} X_i$.
 
 ## Depends on
 
-- [All True Function](all-true-function.md)
-- [Multilinear Extension](multilinear-extension.md)
+- [All-true function](all-true-function.md)
+- [Multilinear extension](multilinear-extension.md)
 
 ## Proof depends on
 
-- [Bool Cube](bool-cube.md)
-- [Cube Basis](cube-basis.md)
+- [Boolean cube](bool-cube.md)
+- [Lagrange basis polynomial of a cube point](cube-basis.md)
 
 ## Sources
 

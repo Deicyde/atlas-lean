@@ -7,21 +7,23 @@ proof: formalized
 lean: MetaMathlibExt.hessianMatrix_symmetric
 ---
 
-# Hessian Matrix symmetric
+# Symmetry of the Hessian
 
-The Hessian of a `C^2` function is symmetric.
+**Symmetry of the Hessian.** If $f : \mathbb{R}^n \to \mathbb{R}$ is twice continuously
+differentiable, then for every $x \in \mathbb{R}^n$ the Hessian matrix of $f$ at $x$ is symmetric:
+it equals its transpose.
 
 Proof: Rewrite the matrix entries as evaluations of the second Fréchet derivative and apply
-Mathlib's Schwarz theorem `ContDiffAt.isSymmSndFDerivAt`, following Wikipedia's “Symmetry of
-second derivatives”.
+Schwarz's theorem on the symmetry of second derivatives, as proved in Mathlib, following
+Wikipedia's “Symmetry of second derivatives”.
 
 ## Depends on
 
-- [Hessian Matrix](hessian-matrix.md)
+- [Hessian matrix](hessian-matrix.md)
 
 ## Proof depends on
 
-- [Hessian Matrix eq fderiv fderiv](hessian-matrix-eq-fderiv-fderiv.md)
+- [Hessian entries as second Fréchet derivatives](hessian-matrix-eq-fderiv-fderiv.md)
 
 ## Sources
 

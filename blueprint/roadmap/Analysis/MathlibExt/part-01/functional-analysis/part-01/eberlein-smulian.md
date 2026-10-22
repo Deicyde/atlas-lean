@@ -7,13 +7,12 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.BanachSpaceWanted.eberlein_smulian
 ---
 
-# Eberlein Smulian
+# Eberlein–Šmulian theorem
 
-For a Banach space over `ℝ` or `ℂ`, a set in the weak topology `WeakSpace 𝕜 E` is compact iff it
-is sequentially compact. Source: W. F. Eberlein, Weak Compactness in Banach Spaces,
-PNAS 33 (1947), 51–53, DOI 10.1073/pnas.33.3.51, and V. Smulian (1947); Dunford-Schwartz,
-Linear Operators I, 1958, V.5-6; Lean states `RCLike` Banach case with
-`IsCompact ↔ IsSeqCompact` in `WeakSpace`.
+**Eberlein–Šmulian theorem.** Let $E$ be a Banach space over $\mathbb{K} = \mathbb{R}$ or
+$\mathbb{C}$. A subset of $E$ is compact in the weak topology if and only if it is sequentially
+compact in the weak topology, that is, every sequence in it has a subsequence that converges
+weakly to a point of the subset.
 
 ## Depends on
 
@@ -22,3 +21,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.EberleinSmulian](../../../../../../sources/v2/MathlibExt.md)
+- W. F. Eberlein, Weak Compactness in Banach Spaces, PNAS 33 (1947), 51–53, DOI 10.1073/pnas.33.3.51, and V. Smulian (1947); Dunford-Schwartz, Linear Operators I, 1958, V.5-6; Lean states `RCLike` Banach case with `IsCompact ↔ IsSeqCompact` in `WeakSpace`.

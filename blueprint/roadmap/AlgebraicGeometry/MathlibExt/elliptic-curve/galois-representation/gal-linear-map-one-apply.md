@@ -7,18 +7,23 @@ proof: formalized
 lean: MetaMathlibExt.galLinearMap_one_apply
 ---
 
-# Gal Linear Map one apply
+# The identity acts trivially on $W(p)$
 
-The identity acts as the identity linear map.
+**The identity acts trivially on $W[p]$.** Let $W$ be a Weierstrass curve over $\mathbb{Q}$,
+$p$ a natural number, $W(\overline{\mathbb{Q}})$ the group of nonsingular points of $W$ with
+coordinates in the algebraic closure $\overline{\mathbb{Q}}$, together with the point at
+infinity, and $W[p]$ its $p$-torsion subgroup. Under the $\mathbb{Z}/p\mathbb{Z}$-linear action
+of the absolute Galois group of $\mathbb{Q}$ on $W[p]$, the identity element maps every
+$x \in W[p]$ to $x$.
 
 ## Depends on
 
-- [Gal Linear Map](gal-linear-map.md)
-- [Torsion Pts](torsion-pts.md)
+- [Linear Galois action on $W(p)$](gal-linear-map.md)
+- [The $p$-torsion subgroup](torsion-pts.md)
 
 ## Proof depends on
 
-- [Gal Point Hom apply one](gal-point-hom-apply-one.md)
+- [The identity acts trivially on points](gal-point-hom-apply-one.md)
 
 ## Sources
 

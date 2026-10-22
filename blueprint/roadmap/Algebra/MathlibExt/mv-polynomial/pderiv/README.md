@@ -5,10 +5,10 @@ navigation: module
 
 # PDeriv
 
-- [Pderiv comm](pderiv-comm.md)
-- [Mixed Differential](mixed-differential.md)
-- [Mixed Differential nil](mixed-differential-nil.md)
-- [Mixed Differential cons](mixed-differential-cons.md)
-- [Mixed Differential eq of perm](mixed-differential-eq-of-perm.md)
-- [Mixed Differential append](mixed-differential-append.md)
-- [Pderiv mixed Differential](pderiv-mixed-differential.md)
+- [Partial derivatives commute](pderiv-comm.md)
+- [Mixed differential operator](mixed-differential.md)
+- [Mixed differential along the empty list](mixed-differential-nil.md)
+- [Mixed differential along a list with a given first index](mixed-differential-cons.md)
+- [The mixed differential ignores the order of the indices](mixed-differential-eq-of-perm.md)
+- [Mixed differential along a concatenated list](mixed-differential-append.md)
+- [Partial derivatives commute with the mixed differential](pderiv-mixed-differential.md)

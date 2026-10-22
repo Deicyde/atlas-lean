@@ -7,14 +7,16 @@ proof: formalized
 lean: BooleanCube.cubeChi_empty
 ---
 
-# Cube Chi empty
+# The empty Fourier character is constant one
 
-The empty Fourier character is the constant one function.
+**The empty Fourier character is constant one.** For every $n$ and every point $x$ of the
+Boolean cube in $n$ coordinates, the Fourier character $\chi_\emptyset$ of the empty set of
+coordinates satisfies $\chi_\emptyset(x) = 1$.
 
 ## Depends on
 
-- [Bool Cube](bool-cube.md)
-- [Cube Chi](cube-chi.md)
+- [Boolean cube](bool-cube.md)
+- [Fourier character on the Boolean cube](cube-chi.md)
 
 ## Sources
 

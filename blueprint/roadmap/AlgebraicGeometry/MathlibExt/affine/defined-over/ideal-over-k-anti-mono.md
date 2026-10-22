@@ -7,13 +7,14 @@ proof: formalized
 lean: MvPolynomial.idealOverK_anti_mono
 ---
 
-# Ideal Over K anti mono
+# The ideal over $k$ reverses inclusions
 
-`I_k` is antitone in the set.
+**The ideal over $k$ reverses inclusions.** Let $k$ be a field with algebraic closure
+$\bar k$. If $Z_1 \subseteq Z_2 \subseteq \bar k^n$, then $I_k(Z_2) \subseteq I_k(Z_1)$.
 
 ## Depends on
 
-- [Ideal Over K](ideal-over-k.md)
+- [Ideal over $k$ of a subset of affine space](ideal-over-k.md)
 
 ## Sources
 

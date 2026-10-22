@@ -6,9 +6,13 @@ statement: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry30Secondordereulerian.chapter5Entry30SignedCoeff
 ---
 
-# Chapter5 Entry30 Signed Coeff
+# Signed multiplicative coefficient
 
-`chapter5Entry30Coeff` with local values `a p = -p ^ (-s)`.
+**Signed multiplicative coefficient.** For $s \in \mathbb{C}$ and a natural number $n$, let
+$a(p) = -p^{-s}$ for natural numbers $p$. The signed coefficient of $n$ is $0$ if $n = 0$ and,
+for $n \ne 0$, the product over the prime factors $p$ of $n$ of the local factor of $a$ at $p$
+with exponent the multiplicity of $p$ in $n$, where the local factor of $a$ at $p$ with exponent
+$e$ is $1$ for $e = 0$, $a(p)$ for $e = 1$, and $0$ for $e \ge 2$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Chapter5 Entry30 Coeff](chapter5-entry30-coeff.md)
+- [Coefficients for Entry 30](chapter5-entry30-coeff.md)
 
 ## Sources
 

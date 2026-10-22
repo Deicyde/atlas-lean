@@ -7,15 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.besselPolynomial_two
 ---
 
-# Bessel Polynomial two
+# The second Bessel polynomial
 
-The value `y_2 = 1 + 3 * X + 3 * X ^ 2`
-(concept `jis_sem_0d5596f0982681bcb579a894`; Schork source lines 285-288).
+**The second Bessel polynomial.** The Bessel polynomial $y_2$ equals $1 + 3x + 3x^2$.
 
 ## Depends on
 
-- [Bessel Polynomial](bessel-polynomial.md)
+- [Bessel polynomial](bessel-polynomial.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Algebra.Polynomial.BesselPolynomial](../../../../../sources/v2/MathlibExt.md)
+- Schork, lines 285-288 (concept `jis_sem_0d5596f0982681bcb579a894`).

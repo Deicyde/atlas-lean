@@ -5,5 +5,5 @@ navigation: module
 
 # Part1 Ch5 Entry2i Euleriangf
 
-- [Chapter5 Polynomial Shift eq taylor](chapter5-polynomial-shift-eq-taylor.md)
-- [Ramanujan part1 ch5 entry2i euleriangf](ramanujan-part1-ch5-entry2i-euleriangf.md)
+- [The polynomial shift is the Taylor shift](chapter5-polynomial-shift-eq-taylor.md)
+- [Ramanujan's solutions of two central difference equations](ramanujan-part1-ch5-entry2i-euleriangf.md)

@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.Algebra.Module.KaplanskyProjectiveWanted.kaplansky_projective_local_free
 ---
 
-# Kaplansky Projective
+# Kaplansky's theorem on projective modules over local rings
 
-Every projective module over a commutative local ring is free.
+**Kaplansky's theorem on projective modules over local rings.** Every projective module over a
+commutative local ring is free.
 
 ## Depends on
 

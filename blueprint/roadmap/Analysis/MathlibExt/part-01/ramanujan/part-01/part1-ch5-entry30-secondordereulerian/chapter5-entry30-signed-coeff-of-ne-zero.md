@@ -7,19 +7,21 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry30Secondordereulerian.chapter5Entry30SignedCoeff_of_ne_zero
 ---
 
-# Chapter5 Entry30 Signed Coeff of ne zero
+# Explicit form of the signed coefficient
 
-For `n ≠ 0`, the signed coefficient is `-n ^ (-s)` or `n ^ (-s)` when `n` is squarefree
-with an odd or even number of prime factors, and `0` when `n` is not squarefree.
+**Explicit form of the signed coefficient.** For $s \in \mathbb{C}$ and a natural number
+$n \ne 0$, the signed coefficient of $n$ equals $-n^{-s}$ if $n$ is squarefree with an odd number
+of distinct prime factors, $n^{-s}$ if $n$ is squarefree with an even number of distinct prime
+factors, and $0$ if $n$ is not squarefree.
 
 ## Depends on
 
-- [Chapter5 Entry30 Signed Coeff](chapter5-entry30-signed-coeff.md)
+- [Signed multiplicative coefficient](chapter5-entry30-signed-coeff.md)
 
 ## Proof depends on
 
-- [Chapter5 Entry30 Coeff](chapter5-entry30-coeff.md)
-- [Chapter5 Entry30 Coeff of ne zero](chapter5-entry30-coeff-of-ne-zero.md)
+- [Coefficients for Entry 30](chapter5-entry30-coeff.md)
+- [Closed form of the Entry 30 coefficients](chapter5-entry30-coeff-of-ne-zero.md)
 
 ## Sources
 

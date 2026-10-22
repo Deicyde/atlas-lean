@@ -6,9 +6,11 @@ statement: formalized
 lean: Lagrange.lebesgueFunction
 ---
 
-# Lebesgue Function
+# Lebesgue function
 
-Lebesgue function `Lₙ(t) = ∑_k |l_k(t)|`.
+**Lebesgue function.** For real nodes $x_0, \dots, x_{n-1}$ and a real number $t$, the
+Lebesgue function of the nodes at $t$ is $L_n(t) = \sum_{k < n} |\ell_k(t)|$, where $\ell_k$ is
+the $k$-th evaluated Lagrange basis polynomial for these nodes.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Eval Basis](eval-basis.md)
+- [Evaluated Lagrange basis polynomial](eval-basis.md)
 
 ## Sources
 

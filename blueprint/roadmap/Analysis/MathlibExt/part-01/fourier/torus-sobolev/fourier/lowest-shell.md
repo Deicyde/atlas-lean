@@ -6,17 +6,19 @@ statement: formalized
 lean: TorusSobolev.lowestShell
 ---
 
-# Lowest Shell
+# Lowest frequency shell
 
-The four distinct lowest nonzero modes of the source's lattice.
+**Lowest frequency shell.** The lowest shell is the set $\{e_1, -e_1, e_2, -e_2\}$ of
+frequencies in $\mathbb{Z}^2$, where $e_1 = (1, 0)$ and $e_2 = (0, 1)$; these are the four nonzero
+frequencies of smallest length.
 
 ## Depends on
 
-- [Frequency](../basic/frequency.md)
+- [Integer frequencies](../basic/frequency.md)
 
 ## Proof depends on
 
-- [Axis Frequency](axis-frequency.md)
+- [Axis frequency](axis-frequency.md)
 
 ## Sources
 

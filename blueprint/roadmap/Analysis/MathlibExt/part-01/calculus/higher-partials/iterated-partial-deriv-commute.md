@@ -7,21 +7,24 @@ proof: formalized
 lean: MetaMathlibExt.iterated_partialDeriv_commute
 ---
 
-# Iterated partial Deriv commute
+# Symmetry of mixed partial derivatives (Clairaut's theorem)
 
-Iterated partials commute for `C^2` functions (Clairaut's theorem).
+**Symmetry of mixed partial derivatives (Clairaut's theorem).** For a function
+$g : \mathbb{R}^n \to \mathbb{R}$, write $\partial_i g$ for its partial derivative along the
+$i$-th coordinate axis. If $f : \mathbb{R}^n \to \mathbb{R}$ is twice continuously
+differentiable, then for all coordinate indices $i, j$ and every point $x \in \mathbb{R}^n$,
+$\partial_j (\partial_i f)(x) = \partial_i (\partial_j f)(x)$.
 
-Proof: Rewrite both iterated partials through the Fréchet bridge above, then apply Mathlib's
-`ContDiffAt.isSymmSndFDerivAt`, Schwarz's theorem as stated in Wikipedia, "Symmetry of second
-derivatives".
+The proof writes both mixed partials as values of the second Fréchet derivative of $f$ at $x$
+and applies Schwarz's theorem on the symmetry of second derivatives.
 
 ## Depends on
 
-- [Partial Deriv](partial-deriv.md)
+- [Partial derivative along a coordinate axis](partial-deriv.md)
 
 ## Proof depends on
 
-- [Partial Deriv partial Deriv eq fderiv fderiv](partial-deriv-partial-deriv-eq-fderiv-fd.md)
+- [Mixed partial derivatives via the second Fréchet derivative](partial-deriv-partial-deriv-eq-fderiv-fd.md)
 
 ## Sources
 

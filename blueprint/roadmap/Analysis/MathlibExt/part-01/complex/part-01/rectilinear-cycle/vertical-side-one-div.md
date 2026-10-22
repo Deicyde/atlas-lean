@@ -7,9 +7,11 @@ proof: formalized
 lean: Complex.vertical_side_one_div
 ---
 
-# Vertical side one div
+# Integral of $1/(c + iy)$ over a symmetric interval
 
-Vertical side integral of `1/s`: `2 * arctan (T / c)`.
+**Integral of $1/(c + iy)$ over a symmetric interval.** For real numbers $c \ne 0$ and
+$T \ge 0$, $\int_{-T}^{T} \frac{1}{c + iy}\,dy = 2\arctan(T/c)$, where the integrand is complex
+valued and the integral is taken over the real variable $y$.
 
 ## Depends on
 
@@ -17,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Integral div add sq](integral-div-add-sq.md)
-- [Odd integral eq zero](odd-integral-eq-zero.md)
+- [Arctangent integral](integral-div-add-sq.md)
+- [Integral of an odd function over a symmetric interval](odd-integral-eq-zero.md)
 
 ## Sources
 

@@ -7,17 +7,20 @@ proof: formalized
 lean: Complex.integrableExpSet_wimanCoefficientMeasure_eq_univ
 ---
 
-# Integrable Exp Set wiman Coefficient Measure eq univ
+# The exponential-integrability set of the Wiman coefficient measure is the whole line
 
-The exponential-integrability interval of the coefficient measure is all of `ℝ`.
+**The exponential-integrability set of the Wiman coefficient measure is the whole line.** Let
+$f$ be an entire function and let $\mu_f$ be its Wiman coefficient measure on $\mathbb{N}$. The set
+of real $t$ for which $n \mapsto e^{tn}$ is integrable with respect to $\mu_f$ is all of
+$\mathbb{R}$.
 
 ## Depends on
 
-- [Wiman Coefficient Measure](wiman-coefficient-measure.md)
+- [Wiman coefficient measure](wiman-coefficient-measure.md)
 
 ## Proof depends on
 
-- [Integrable exp mul wiman Coefficient Measure](integrable-exp-mul-wiman-coefficient-mea.md)
+- [Exponential moments of the Wiman coefficient measure are finite](integrable-exp-mul-wiman-coefficient-mea.md)
 
 ## Sources
 

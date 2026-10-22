@@ -7,17 +7,19 @@ proof: formalized
 lean: Polynomial.l1Norm_nonneg
 ---
 
-# L1 Norm nonneg
+# Nonnegativity of the L1 norm
 
-The L1 norm of a polynomial is nonnegative.
+**Nonnegativity of the L1 norm.** Let $K$ be a semiring and $v$ a real-valued absolute value
+on $K$. For every polynomial $p \in K[X]$, the L1 norm of $p$ with respect to $v$ satisfies
+$\|p\|_v \ge 0$.
 
 ## Depends on
 
-- [L1 Norm](l1-norm.md)
+- [L1 norm of a polynomial](l1-norm.md)
 
 ## Proof depends on
 
-- [L1 Norm def](l1-norm-def.md)
+- [L1 norm as a sum over the support](l1-norm-def.md)
 
 ## Sources
 

@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry30Secondordereulerian.chapter5Entry30Coeff_prime_pow_of_two_le
 ---
 
-# Chapter5 Entry30 Coeff prime pow of two le
+# Entry 30 coefficients vanish at higher prime powers
 
-The coefficient vanishes at prime powers `p ^ e` with `e ≥ 2`.
+**Entry 30 coefficients vanish at higher prime powers.** For every function
+$a : \mathbb{N} \to \mathbb{C}$, every prime $p$ and every $e \ge 2$, the Entry 30 coefficient
+satisfies $c_a(p^e) = 0$.
 
 ## Depends on
 
-- [Chapter5 Entry30 Coeff](chapter5-entry30-coeff.md)
+- [Coefficients for Entry 30](chapter5-entry30-coeff.md)
 
 ## Proof depends on
 

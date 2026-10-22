@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7Admissible_zero
 ---
 
-# Chapter7 Admissible zero
+# Zero is admissible
 
-Compatibility alias for the former `Entry10Zetaviabernoulli.chapter7Admissible_zero`.
+**Zero is admissible.** The point $x = 0$ is admissible: $j + 1 + x \neq 0$ for every natural
+number $j$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ Compatibility alias for the former `Entry10Zetaviabernoulli.chapter7Admissible_z
 
 ## Proof depends on
 
-- [Chapter7 Admissible](../part1-ch7-power-difference/chapter7-admissible.md)
+- [Admissible parameters for the power-difference series](../part1-ch7-power-difference/chapter7-admissible.md)
 
 ## Sources
 

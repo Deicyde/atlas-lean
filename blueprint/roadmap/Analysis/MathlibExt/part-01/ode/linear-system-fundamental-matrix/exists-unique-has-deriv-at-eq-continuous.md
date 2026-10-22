@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ode global exists of global lipschitz](../maximal-solution/ode-global-exists-of-global-lipschitz.md)
+- [Global existence and uniqueness for globally Lipschitz ODEs](../maximal-solution/ode-global-exists-of-global-lipschitz.md)
 
 ## Sources
 

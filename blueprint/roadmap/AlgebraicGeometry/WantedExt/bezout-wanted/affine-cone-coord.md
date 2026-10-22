@@ -6,17 +6,21 @@ statement: formalized
 lean: MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.affineConeCoord
 ---
 
-# Affine Cone Coord
+# Affine coordinates of a projective point
 
-Affine cone coordinates of `p` on the chart `X_{chartIndex p} = 1`.
+**Affine coordinates of a projective point.** For a field $K$ and a point
+$p \in \mathbb{P}^n(K)$, let $v = (v_0, \dots, v_n) \in K^{n+1} \setminus \{0\}$ be the chosen
+representative of $p$ and $i$ its chart index (a chosen index with $v_i \neq 0$). The affine cone
+coordinates of $p$ are the vector $q \in K^{n+1}$ with $q_j = v_j / v_i$ for every $j$; in
+particular $q_i = 1$.
 
 ## Depends on
 
-- [Proj Space](proj-space.md)
+- [Projective space](proj-space.md)
 
 ## Proof depends on
 
-- [Chart Index](chart-index.md)
+- [Chart index of a projective point](chart-index.md)
 
 ## Sources
 

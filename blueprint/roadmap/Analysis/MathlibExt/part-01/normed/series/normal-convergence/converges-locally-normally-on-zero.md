@@ -7,17 +7,19 @@ proof: formalized
 lean: convergesLocallyNormallyOn_zero
 ---
 
-# Converges Locally Normally On zero
+# Local normal convergence of the zero series
 
-The zero series converges locally normally on every set.
+**Local normal convergence of the zero series.** Let $X$ be a topological space and $E$ a
+seminormed additive commutative group. For every set $S \subseteq X$, the series of functions
+$X \to E$ whose terms are all zero converges locally normally on $S$.
 
 ## Depends on
 
-- [Sup Norm On](sup-norm-on.md)
+- [Extended supremum norm on a set](sup-norm-on.md)
 
 ## Proof depends on
 
-- [Converges Normally On zero](converges-normally-on-zero.md)
+- [Normal convergence of the zero series](converges-normally-on-zero.md)
 
 ## Sources
 

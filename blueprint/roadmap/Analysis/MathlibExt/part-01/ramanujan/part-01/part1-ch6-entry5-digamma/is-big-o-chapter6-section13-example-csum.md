@@ -7,19 +7,22 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.isBigO_chapter6Section13ExampleCSum_sub_sum_bell
 ---
 
-# Is Big O chapter6 Section13 Example CSum sub sum bell
+# Asymptotic expansion of Ramanujan's factorial series
 
-The asymptotic expansion `C(x) = ∑_{j < N} (-1)ʲ B_{j+1} / x^{j+1} + O(1 / x^{N+1})` of
-Ramanujan's factorial series as `x → ∞`, with the Bell numbers `Nat.bell`.
+**Asymptotic expansion of Ramanujan's factorial series.** Let
+$C(x) = \sum_{j \ge 0} (-1)^j / ((x + 1)(x + 2) \cdots (x + j + 1))$ be Ramanujan's factorial
+series and let $B_n$ denote the $n$-th Bell number. For every natural number $N$,
+$$C(x) - \sum_{j=0}^{N-1} \frac{(-1)^j B_{j+1}}{x^{j+1}} = O\left(\frac{1}{x^{N+1}}\right)
+\quad \text{as } x \to \infty.$$
 
 ## Depends on
 
-- [Chapter6 Section13 Example CSum](chapter6-section13-example-csum.md)
+- [Ramanujan's factorial series](chapter6-section13-example-csum.md)
 
 ## Proof depends on
 
-- [Chapter6 Section13 Example CSum eq](chapter6-section13-example-csum-eq.md)
-- [Chapter6 Section13 Example CTerm](chapter6-section13-example-cterm.md)
+- [Functional equation of Ramanujan's factorial series](chapter6-section13-example-csum-eq.md)
+- [Terms of Ramanujan's factorial series](chapter6-section13-example-cterm.md)
 
 ## Sources
 

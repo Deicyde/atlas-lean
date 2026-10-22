@@ -7,10 +7,14 @@ proof: formalized
 lean: MathlibExt.Analysis.Complex.HartogsWanted.differentiableAt_uncurry_of_separately_differentiable_of_bounded
 ---
 
-# Differentiable At uncurry of separately differentiable of bounded
+# Osgood's lemma at the origin
 
-A separately holomorphic function whose values are bounded on the product of the unit
-balls is jointly complex differentiable at the center.
+**Osgood's lemma at the origin.** Let $E$ be a complex normed space and let $f(z, w)$ be a
+complex-valued function of $z \in E$ and $w \in \mathbb{C}$ such that $z \mapsto f(z, w)$ is
+complex differentiable on all of $E$ for every $w \in \mathbb{C}$ and $w \mapsto f(z, w)$ is
+complex differentiable on all of $\mathbb{C}$ for every $z \in E$. If there is a real number $M$
+with $|f(z, w)| \le M$ whenever $\|z\| \le 1$ and $|w| \le 1$, then $f$, as a function on
+$E \times \mathbb{C}$, is complex differentiable at $(0, 0)$.
 
 ## Depends on
 

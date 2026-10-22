@@ -6,11 +6,11 @@ statement: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry1Euleriangf.chapter5PolynomialShift
 ---
 
-# Chapter5 Polynomial Shift
+# Polynomial shift
 
-The source's shift `p(x) ↦ p(x + h)`. It is `Polynomial.taylor h p` (see
-`chapter5PolynomialShift_eq_taylor`); the name is kept because the frozen `Wanted` statement uses
-it.
+**Polynomial shift.** For a semiring $R$, an element $h \in R$ and a polynomial
+$p \in R[x]$, the shift of $p$ by $h$ is the polynomial $p(x + h)$, the composition of $p$ with
+$x + h$.
 
 ## Depends on
 

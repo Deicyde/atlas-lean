@@ -7,18 +7,18 @@ navigation: module
 
 ## Meta Mathlib Ext
 
-- [Is Bisection Sequence](is-bisection-sequence.md)
+- [Bisection sequence](is-bisection-sequence.md)
 
 ## Is Bisection Sequence
 
-- [Le and le](le-and-le.md)
-- [Invariants](invariants.md)
-- [Nested](nested.md)
-- [Sub eq](sub-eq.md)
+- [Bisection intervals stay inside the initial interval](le-and-le.md)
+- [Bisection invariants](invariants.md)
+- [Bisection intervals are nested](nested.md)
+- [Length of the bisection intervals](sub-eq.md)
 
 ## Meta Mathlib Ext
 
-- [Exists is Bisection Sequence](exists-is-bisection-sequence.md)
-- [Exists is Bisection Sequence nested](exists-is-bisection-sequence-nested.md)
-- [Bisection nested intervals](bisection-nested-intervals.md)
-- [Bisection approximate root with rate](bisection-approximate-root-with-rate.md)
+- [Existence of bisection sequences](exists-is-bisection-sequence.md)
+- [Nested bisection intervals from a sign bracket](exists-is-bisection-sequence-nested.md)
+- [Bisection method: nested intervals](bisection-nested-intervals.md)
+- [Bisection method converges at a linear rate](bisection-approximate-root-with-rate.md)

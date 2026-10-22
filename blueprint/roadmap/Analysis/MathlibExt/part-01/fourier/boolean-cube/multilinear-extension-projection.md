@@ -7,18 +7,20 @@ proof: formalized
 lean: BooleanCube.multilinearExtension_projection
 ---
 
-# Multilinear Extension projection
+# Multilinear extension of a coordinate projection
 
-A coordinate projection has extension `X i`.
+**Multilinear extension of a coordinate projection.** For every coordinate $i$ of the
+Boolean cube of dimension $n$, the real multilinear extension of the projection $x \mapsto x_i$
+is the variable $X_i$.
 
 ## Depends on
 
-- [Bool Cube](bool-cube.md)
-- [Multilinear Extension](multilinear-extension.md)
+- [Boolean cube](bool-cube.md)
+- [Multilinear extension](multilinear-extension.md)
 
 ## Proof depends on
 
-- [Cube Basis](cube-basis.md)
+- [Lagrange basis polynomial of a cube point](cube-basis.md)
 
 ## Sources
 

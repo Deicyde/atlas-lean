@@ -7,20 +7,22 @@ proof: formalized
 lean: MathlibExt.Analysis.CStarAlgebra.KadisonSinger.mixedCharacteristicPolynomial_natDegree
 ---
 
-# Mixed Characteristic Polynomial nat Degree
+# Degree of a mixed characteristic polynomial
 
-The degree of a mixed characteristic polynomial equals the matrix dimension.
+**Degree of a mixed characteristic polynomial.** For every finite family $A_1, \dots, A_m$ of
+complex square matrices whose rows and columns are indexed by a finite set $d$, the mixed
+characteristic polynomial of $A_1, \dots, A_m$ has degree $|d|$, the number of elements of $d$.
 
 ## Depends on
 
-- [Mixed Characteristic Polynomial](../mixed-char-poly/mixed-characteristic-polynomial.md)
+- [Mixed characteristic polynomial](../mixed-char-poly/mixed-characteristic-polynomial.md)
 
 ## Proof depends on
 
-- [Mixed Det Polynomial](../mixed-char-poly/mixed-det-polynomial.md)
-- [Mixed Differential](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential.md)
-- [Mixed Differential cons](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential-cons.md)
-- [Univariate Specialization](../../../../../../Algebra/MathlibExt/mv-polynomial/stable/univariate-specialization.md)
+- [Mixed determinant polynomial](../mixed-char-poly/mixed-det-polynomial.md)
+- [Mixed differential operator](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential.md)
+- [Mixed differential along a list with a given first index](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential-cons.md)
+- [Univariate specialization](../../../../../../Algebra/MathlibExt/mv-polynomial/stable/univariate-specialization.md)
 
 ## Sources
 

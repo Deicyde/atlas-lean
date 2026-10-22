@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Algebra.Lie.PoissonBracket.IsPoissonIdeal
 ---
 
-# Is Poisson Ideal
+# Poisson ideal
 
-`P` is a Poisson ideal: stable under bracketing with all of `A`.
+**Poisson ideal.** Let $A$ be a commutative $\mathbb{C}$-algebra with a Poisson bracket
+$\lbrace \cdot, \cdot \rbrace$. An ideal $P$ of $A$ is a Poisson ideal when
+$\lbrace a, p \rbrace \in P$ for all $a \in A$ and all $p \in P$.
 
 ## Depends on
 
-- [Poisson Bracket](poisson-bracket.md)
+- [Poisson bracket](poisson-bracket.md)
 
 ## Sources
 

@@ -5,8 +5,8 @@ navigation: module
 
 # Sturm
 
-- [Sturm Aux](sturm-aux.md)
-- [Sturm Chain](sturm-chain.md)
+- [Negated-remainder sequence with fuel](sturm-aux.md)
+- [Sturm chain](sturm-chain.md)
 - [Sign Changes](sign-changes.md)
-- [Sigma](sigma.md)
-- [Sturm](sturm.md)
+- [Sturm sign-variation function](sigma.md)
+- [Sturm's theorem](sturm.md)

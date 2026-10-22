@@ -7,24 +7,24 @@ proof: formalized
 lean: MathlibExt.Analysis.Complex.NormalFamilies.vitali
 ---
 
-# Vitali
+# Vitali's convergence theorem
 
-Let `U` be open preconnected, `F` holomorphic on `U` and locally uniformly bounded, and `S ⊆ U`
-accumulate at some `x₀ ∈ U`. If `Fₙ → g` pointwise on `S`, then `F` converges locally uniformly on
-`U` to holomorphic `f` extending `g` on `S`. Source: Vitali convergence theorem, G. Vitali 1903;
-see Hille, Analytic Function Theory Vol II and Conway II; Lean is open preconnected U locally
-uniformly bounded with AccPt accumulation and pointwise limit on S extends to locally uniform
-holomorphic convergence, Montel-related strengthening.
-Proves `Wanted` entry `vitali`.
+**Vitali's convergence theorem.** Let $U \subseteq \mathbb{C}$ be open and preconnected, and let
+$(F_n)_{n \in \mathbb{N}}$ be a sequence of functions $\mathbb{C} \to \mathbb{C}$, each holomorphic
+on $U$, that is locally uniformly bounded on $U$. Let $S \subseteq U$ have an accumulation point
+$x_0 \in U$, and let $g : \mathbb{C} \to \mathbb{C}$ satisfy $F_n(z) \to g(z)$ as $n \to \infty$
+for every $z \in S$. Then there is a function $f : \mathbb{C} \to \mathbb{C}$, holomorphic on $U$,
+with $f(z) = g(z)$ for all $z \in S$, such that $F_n \to f$ locally uniformly on $U$.
 
 ## Depends on
 
-- [Is Locally Uniformly Bounded On](is-locally-uniformly-bounded-on.md)
+- [Locally uniformly bounded sequence of functions](is-locally-uniformly-bounded-on.md)
 
 ## Proof depends on
 
-- [Montel](montel.md)
+- [Montel's theorem](montel.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.NormalFamilies](../../../../../../../sources/v2/MathlibExt.md)
+- Vitali convergence theorem, G. Vitali 1903; see Hille, Analytic Function Theory Vol II and Conway II; Lean is open preconnected U locally uniformly bounded with AccPt accumulation and pointwise limit on S extends to locally uniform holomorphic convergence, Montel-related strengthening. Proves `Wanted` entry `vitali`.

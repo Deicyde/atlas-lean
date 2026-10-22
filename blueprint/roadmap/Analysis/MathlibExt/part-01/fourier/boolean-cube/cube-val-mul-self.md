@@ -7,13 +7,14 @@ proof: formalized
 lean: BooleanCube.cubeVal_mul_self
 ---
 
-# Cube Val mul self
+# Coordinate signs square to one
 
-Each coordinate sign has square one.
+**Coordinate signs square to one.** For every Boolean value $b$, its sign $\sigma(b)$ satisfies
+$\sigma(b) \cdot \sigma(b) = 1$.
 
 ## Depends on
 
-- [Cube Val](cube-val.md)
+- [Sign of a Boolean coordinate](cube-val.md)
 
 ## Sources
 

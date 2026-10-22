@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.hannerCrossPolytope
 ---
 
-# Hanner Cross Polytope
+# Hanner cross-polytope
 
-The recursively constructed coordinate cross-polytope in positive dimension.
+**Hanner cross-polytope.** For $n \in \mathbb{N}$, the Hanner cross-polytope
+$P_n \subseteq \mathbb{R}^{n+1}$ is defined by recursion on $n$: $P_0$ is the centered unit
+segment $[-1, 1] \subseteq \mathbb{R}^1$, and $P_{n+1} \subseteq \mathbb{R}^{n+2}$ is the
+$\ell_1$ sum of $P_n$ and the centered unit segment.
 
 ## Depends on
 
@@ -15,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hanner One Sum](hanner-one-sum.md)
-- [Hanner Unit Segment](hanner-unit-segment.md)
+- [$\ell_1$ sum of bodies](hanner-one-sum.md)
+- [Centered unit segment](hanner-unit-segment.md)
 
 ## Sources
 

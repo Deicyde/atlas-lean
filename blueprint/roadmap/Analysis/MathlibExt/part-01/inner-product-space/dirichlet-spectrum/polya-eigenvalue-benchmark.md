@@ -6,12 +6,16 @@ statement: formalized
 lean: EuclideanLaplacian.polyaEigenvalueBenchmark
 ---
 
-# Polya Eigenvalue Benchmark
+# Pólya eigenvalue benchmark
 
-Zero-based eigenvalue benchmark at index `j`: `(2π)²` times the real power
-of the one-based eigenvalue number `((j + 1 : ℕ) : ℝ)` divided by
-`ωₙ |Ω|`, with exponent `2 / (n : ℝ)`. The one-based numerator is kept explicit
-because `NonnegativeDiscreteSpectrum` is zero-based.
+**Pólya eigenvalue benchmark.** For an open set $\Omega \subseteq \mathbb{R}^n$ and an index
+$j \ge 0$, the Pólya benchmark at index $j$ is
+$$(2\pi)^2 \left(\frac{j+1}{\omega_n |\Omega|}\right)^{2/n},$$
+where $\omega_n$ is the volume of the unit ball in $\mathbb{R}^n$ and $|\Omega|$ is the volume of
+$\Omega$. Indices start at $0$, so index $j$ belongs to the $(j+1)$-st eigenvalue.
+
+Division by zero is read as $0$: the exponent is $0$ when $n = 0$, and the base is $0$ when
+$\omega_n |\Omega| = 0$.
 
 ## Depends on
 
@@ -19,8 +23,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Domain Volume](domain-volume.md)
-- [Unit Ball Volume](unit-ball-volume.md)
+- [Volume of a domain](domain-volume.md)
+- [Volume of the unit ball](unit-ball-volume.md)
 
 ## Sources
 

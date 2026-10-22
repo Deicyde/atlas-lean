@@ -7,9 +7,10 @@ proof: formalized
 lean: AbsoluteValue.eq_one_of_ne_zero_of_finite
 ---
 
-# Eq one of ne zero of finite
+# Absolute values on finite fields are trivial
 
-Any absolute value on a finite field is trivial on nonzero elements.
+**Absolute values on finite fields are trivial.** Let $K$ be a finite field and $v$ a
+real-valued absolute value on $K$. Then $v(x) = 1$ for every nonzero $x \in K$.
 
 ## Depends on
 

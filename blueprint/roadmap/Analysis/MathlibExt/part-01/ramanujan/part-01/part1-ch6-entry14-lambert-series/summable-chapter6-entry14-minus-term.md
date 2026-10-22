@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry10Centralbinomialfull.summable_chapter6Entry14MinusTerm
 ---
 
-# Summable chapter6 Entry14 Minus Term
+# Summability of the Lambert series $\sum_k 1/(e^{kx}-1)$
 
-The summands in `chapter6Entry14MinusSum` are summable for positive arguments.
+**Summability of the Lambert series $\sum_k 1/(e^{kx}-1)$.** For every real $x > 0$, the
+series $\sum_{k=1}^{\infty} \frac{1}{e^{kx} - 1}$ is summable.
 
 ## Depends on
 

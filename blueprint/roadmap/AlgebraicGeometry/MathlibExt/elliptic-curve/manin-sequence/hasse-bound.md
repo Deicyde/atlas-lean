@@ -7,18 +7,19 @@ proof: formalized
 lean: MathlibExt.AlgebraicGeometry.EllipticCurve.ManinDegreeData.hasse_bound
 ---
 
-# Hasse bound
+# Hasse bound from Manin degree data
 
-Manin degree data implies the integral squared form of the Hasse bound.
+**Hasse bound from Manin degree data.** Let $q$ and $N$ be natural numbers. If there is
+Manin degree data for $q$ and $N$, then $(q + 1 - N)^2 \le 4q$, computed in the integers.
 
 ## Depends on
 
-- [Manin Degree Data](manin-degree-data.md)
+- [Manin degree data](manin-degree-data.md)
 
 ## Proof depends on
 
-- [Eq quadratic of recurrence](eq-quadratic-of-recurrence.md)
-- [Sq le four mul of quadratic nonnegative](sq-le-four-mul-of-quadratic-nonnegative.md)
+- [Integer sequences with constant second difference two](eq-quadratic-of-recurrence.md)
+- [Discriminant bound for a nonnegative integral quadratic without adjacent zeros](sq-le-four-mul-of-quadratic-nonnegative.md)
 
 ## Sources
 

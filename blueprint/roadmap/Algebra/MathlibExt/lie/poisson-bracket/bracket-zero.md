@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.Algebra.Lie.PoissonBracket.bracket_zero
 ---
 
-# Bracket zero
+# Bracket with zero
 
-Bracketing with zero vanishes.
+**Bracket with zero.** Let $A$ be a commutative $\mathbb{C}$-algebra with a Poisson bracket
+$\lbrace \cdot, \cdot \rbrace$. For every $a \in A$, $\lbrace a, 0 \rbrace = 0$.
 
 ## Depends on
 
-- [Poisson Bracket](poisson-bracket.md)
+- [Poisson bracket](poisson-bracket.md)
 
 ## Sources
 

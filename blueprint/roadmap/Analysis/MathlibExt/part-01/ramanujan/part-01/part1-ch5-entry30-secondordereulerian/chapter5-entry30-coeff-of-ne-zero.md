@@ -7,19 +7,20 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry30Secondordereulerian.chapter5Entry30Coeff_of_ne_zero
 ---
 
-# Chapter5 Entry30 Coeff of ne zero
+# Closed form of the Entry 30 coefficients
 
-For `n ≠ 0`, the coefficient is the product of `a p` over the prime factors of `n` when `n`
-is squarefree, and `0` otherwise.
+**Closed form of the Entry 30 coefficients.** For every function $a : \mathbb{N} \to \mathbb{C}$
+and every $n \in \mathbb{N}$ with $n \ne 0$, the Entry 30 coefficient $c_a(n)$ equals the product of
+$a(p)$ over the prime factors $p$ of $n$ when $n$ is squarefree, and $c_a(n) = 0$ otherwise.
 
 ## Depends on
 
-- [Chapter5 Entry30 Coeff](chapter5-entry30-coeff.md)
+- [Coefficients for Entry 30](chapter5-entry30-coeff.md)
 
 ## Proof depends on
 
 - [Chapter5 Entry30 Coeff of not squarefree](chapter5-entry30-coeff-of-not-squarefree.md)
-- [Chapter5 Entry30 Coeff of squarefree](chapter5-entry30-coeff-of-squarefree.md)
+- [Entry 30 coefficients at squarefree integers](chapter5-entry30-coeff-of-squarefree.md)
 
 ## Sources
 

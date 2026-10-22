@@ -7,8 +7,8 @@ navigation: module
 
 ## Positive Linear Map
 
-- [Exists gns cyclic vector](exists-gns-cyclic-vector.md)
+- [Existence of a unit cyclic vector in the GNS space](exists-gns-cyclic-vector.md)
 
 ## Landmark Wanted
 
-- [C Star Algebra gns cyclic vector](c-star-algebra-gns-cyclic-vector.md)
+- [GNS cyclic vector of a state](c-star-algebra-gns-cyclic-vector.md)

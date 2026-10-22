@@ -7,14 +7,16 @@ proof: formalized
 lean: Polynomial.isRealRooted_of_map_star_eq_self_of_roots_im_nonpos
 ---
 
-# Is Real Rooted of map star eq self of roots im nonpos
+# Conjugation-invariant polynomials with roots in the closed lower half-plane are real-rooted
 
-A conjugation-invariant polynomial whose roots lie in the closed lower half-plane is
-real-rooted.
+**Conjugation-invariant polynomials with roots in the closed lower half-plane are real-rooted.**
+Let $p$ be a nonzero complex polynomial that is unchanged when complex conjugation is applied to
+each of its coefficients. If every root $z$ of $p$ satisfies $\operatorname{Im} z \le 0$, then
+$p$ is real-rooted.
 
 ## Depends on
 
-- [Is Real Rooted](is-real-rooted.md)
+- [Real-rooted polynomials](is-real-rooted.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.Cr
 ---
 
-# Cr
+# Cremona group
 
-The Cremona group `Crₙ(𝕜)` over a field `𝕜`, defined as the group of birational
-automorphisms of affine `n`-space over `𝕜`.
+**Cremona group.** For a field $k$ and $n \in \mathbb{N}$, the Cremona group
+$\mathrm{Cr}_n(k)$ is the group of birational automorphisms of affine $n$-space
+$\mathbb{A}^n_k$ over $\operatorname{Spec} k$.
 
 ## Depends on
 
@@ -16,12 +17,12 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Birational Map](birational-map.md)
-- [Refl](refl.md)
-- [Symm](symm.md)
-- [Trans](trans.md)
-- [Birational Aut Over](birational-aut-over.md)
-- [Variety](variety.md)
+- [Birational map](birational-map.md)
+- [Identity birational map](refl.md)
+- [Inverse birational map](symm.md)
+- [Composition of birational maps](trans.md)
+- [Birational automorphisms over a base](birational-aut-over.md)
+- [Variety over a field](variety.md)
 
 ## Sources
 

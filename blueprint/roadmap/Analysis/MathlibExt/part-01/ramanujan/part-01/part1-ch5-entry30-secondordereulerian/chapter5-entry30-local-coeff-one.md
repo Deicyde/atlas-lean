@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry30Secondordereulerian.chapter5Entry30LocalCoeff_one
 ---
 
-# Chapter5 Entry30 Local Coeff one
+# Local factor at exponent one
 
-The local factor at exponent `1` is `a p`.
+**Local factor at exponent one.** For every $a : \mathbb{N} \to \mathbb{C}$ and every natural
+number $p$, the local factor of $a$ at $p$ with exponent $1$ is $a(p)$.
 
 ## Depends on
 
-- [Chapter5 Entry30 Local Coeff](chapter5-entry30-local-coeff.md)
+- [Local factor](chapter5-entry30-local-coeff.md)
 
 ## Sources
 

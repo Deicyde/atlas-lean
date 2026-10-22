@@ -6,18 +6,20 @@ statement: formalized
 lean: TorusSobolev.IsZeroMeanH2
 ---
 
-# Is Zero Mean H2
+# Zero-mean $H^2$ functions
 
-Actual zero-mean real `H²` functions on the period-`2π` torus.
+**Zero-mean $H^2$ functions.** A continuous function
+$u : (\mathbb{R}/2\pi\mathbb{Z})^2 \to \mathbb{R}$ is a zero-mean $H^2$ function when it is in
+$H^2$ and its mean is $0$.
 
 ## Depends on
 
-- [Torus](torus.md)
+- [The torus of period $2\pi$](torus.md)
 
 ## Proof depends on
 
-- [Is H2](is-h2.md)
-- [Mean](mean.md)
+- [Functions in $H^2$](is-h2.md)
+- [Mean of a function on the torus](mean.md)
 
 ## Sources
 

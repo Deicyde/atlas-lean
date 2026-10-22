@@ -7,14 +7,14 @@ navigation: module
 
 ## Int
 
-- [Eq quadratic of recurrence](eq-quadratic-of-recurrence.md)
-- [Sq le four mul of quadratic nonnegative](sq-le-four-mul-of-quadratic-nonnegative.md)
+- [Integer sequences with constant second difference two](eq-quadratic-of-recurrence.md)
+- [Discriminant bound for a nonnegative integral quadratic without adjacent zeros](sq-le-four-mul-of-quadratic-nonnegative.md)
 
 ## Elliptic Curve
 
-- [Manin Degree Data](manin-degree-data.md)
+- [Manin degree data](manin-degree-data.md)
 
 ## Manin Degree Data
 
-- [Of Quadratic](of-quadratic.md)
-- [Hasse bound](hasse-bound.md)
+- [Manin degree data from a quadratic](of-quadratic.md)
+- [Hasse bound from Manin degree data](hasse-bound.md)

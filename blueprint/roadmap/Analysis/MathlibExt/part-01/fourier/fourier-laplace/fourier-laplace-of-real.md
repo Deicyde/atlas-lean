@@ -7,17 +7,16 @@ proof: formalized
 lean: Fourier.fourierLaplace_ofReal
 ---
 
-# Fourier Laplace of Real
+# Fourier–Laplace transform on the real axis
 
-On the real axis `fourierLaplace` coincides with Mathlib's Fourier integral
-for the standard `2π` additive character `Real.fourierChar`.
-
-More precisely, for `r : ℝ` (coerced to `ℂ`) we have
-`fourierLaplace f (r : ℂ) = fourierIntegral Real.fourierChar volume f r`.
+**Fourier–Laplace transform on the real axis.** For every $f : \mathbb{R} \to \mathbb{C}$
+and every real $r$, the Fourier–Laplace transform of $f$ at the complex number $r$, namely
+$\int_{\mathbb{R}} f(x) \, e^{-2\pi i x r} \, dx$, equals the Fourier transform of $f$ at $r$
+with the $2\pi$ normalization, $\hat f(r) = \int_{\mathbb{R}} e^{-2\pi i x r} f(x) \, dx$.
 
 ## Depends on
 
-- [Fourier Laplace](fourier-laplace.md)
+- [Fourier–Laplace transform](fourier-laplace.md)
 
 ## Sources
 

@@ -7,18 +7,20 @@ proof: formalized
 lean: BooleanCube.boolFourierCoeff_zero
 ---
 
-# Bool Fourier Coeff zero
+# Fourier coefficients of the zero function
 
-The identically zero function has zero Fourier coefficients.
+**Fourier coefficients of the zero function.** For every $n \in \mathbb{N}$ and every
+$S \subseteq \{0, \dots, n-1\}$, the normalized Fourier coefficient at $S$ of the identically zero
+function on $\{-1, 1\}^n$ is $0$.
 
 ## Depends on
 
-- [Bool Cube](bool-cube.md)
-- [Bool Fourier Coeff](bool-fourier-coeff.md)
+- [Boolean cube](bool-cube.md)
+- [Fourier coefficient on the Boolean cube](bool-fourier-coeff.md)
 
 ## Proof depends on
 
-- [Cube Chi](cube-chi.md)
+- [Fourier character on the Boolean cube](cube-chi.md)
 
 ## Sources
 

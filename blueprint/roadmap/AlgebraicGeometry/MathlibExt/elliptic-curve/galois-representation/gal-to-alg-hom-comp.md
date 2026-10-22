@@ -7,17 +7,22 @@ proof: formalized
 lean: MetaMathlibExt.galToAlgHom_comp
 ---
 
-# Gal To Alg Hom comp
+# Galois automorphisms compose as algebra maps
 
-The algebra-homomorphism form of the bridge is multiplicative.
+**Galois automorphisms compose as algebra maps.** Let $\overline{\mathbb{Q}}$ be the algebraic
+closure of $\mathbb{Q}$. For all $\sigma, \tau$ in the absolute Galois group $G_{\mathbb{Q}}$ of
+$\mathbb{Q}$, the $\mathbb{Q}$-algebra homomorphism
+$\overline{\mathbb{Q}} \to \overline{\mathbb{Q}}$ underlying the product $\sigma\tau$ is the
+composite $\sigma \circ \tau$ of the $\mathbb{Q}$-algebra homomorphisms underlying $\sigma$
+and $\tau$.
 
 ## Depends on
 
-- [Gal Alg Equiv](gal-alg-equiv.md)
+- [Galois elements as automorphisms of $\overline{\mathbb{Q}}$](gal-alg-equiv.md)
 
 ## Proof depends on
 
-- [Gal Alg Equiv mul](gal-alg-equiv-mul.md)
+- [Galois elements as automorphisms of $\overline{\mathbb{Q}}$ respect products](gal-alg-equiv-mul.md)
 
 ## Sources
 

@@ -7,18 +7,19 @@ proof: formalized
 lean: MathlibExt.Algebra.Lie.PoissonBracket.bot_poisson
 ---
 
-# Bot poisson
+# The zero ideal is a Poisson ideal
 
-The zero ideal is Poisson.
+**The zero ideal is a Poisson ideal.** Let $A$ be a commutative $\mathbb{C}$-algebra with a
+Poisson bracket. The zero ideal of $A$ is a Poisson ideal.
 
 ## Depends on
 
-- [Is Poisson Ideal](is-poisson-ideal.md)
-- [Poisson Bracket](poisson-bracket.md)
+- [Poisson ideal](is-poisson-ideal.md)
+- [Poisson bracket](poisson-bracket.md)
 
 ## Proof depends on
 
-- [Bracket zero](bracket-zero.md)
+- [Bracket with zero](bracket-zero.md)
 
 ## Sources
 

@@ -7,13 +7,15 @@ proof: formalized
 lean: MvPolynomial.idealOverK_empty
 ---
 
-# Ideal Over K empty
+# The ideal over $k$ of the empty set
 
-The ideal over `k` of the empty set is the whole ring.
+**The ideal over $k$ of the empty set.** Let $k$ be a field with algebraic closure $\bar k$.
+For every $n$, the ideal $I_k(\emptyset)$ of the empty subset of $\bar k^n$ is all of
+$k[X_1, \dots, X_n]$.
 
 ## Depends on
 
-- [Ideal Over K](ideal-over-k.md)
+- [Ideal over $k$ of a subset of affine space](ideal-over-k.md)
 
 ## Sources
 

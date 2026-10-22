@@ -7,19 +7,21 @@ proof: formalized
 lean: Polynomial.coe_maxRealRoot_mem_roots
 ---
 
-# Coe max Real Root mem roots
+# For a real-rooted polynomial, the largest real part of a root is a root
 
-For a real-rooted polynomial of positive degree, `maxRealRoot` is itself a root.
+**For a real-rooted polynomial, the largest real part of a root is a root.** Let $p$ be a
+real-rooted complex polynomial of positive degree, and let $\rho(p)$ be the largest real part of
+a root of $p$. Then the real number $\rho(p)$, viewed as a complex number, is a root of $p$.
 
 ## Depends on
 
-- [Is Real Rooted](is-real-rooted.md)
-- [Max Real Root](max-real-root.md)
+- [Real-rooted polynomials](is-real-rooted.md)
+- [Largest real part of a root](max-real-root.md)
 
 ## Proof depends on
 
-- [Exists root re eq max Real Root](exists-root-re-eq-max-real-root.md)
-- [Roots ne zero of nat Degree pos](roots-ne-zero-of-nat-degree-pos.md)
+- [The largest real part of a root is attained](exists-root-re-eq-max-real-root.md)
+- [Nonconstant complex polynomials have a root](roots-ne-zero-of-nat-degree-pos.md)
 
 ## Sources
 

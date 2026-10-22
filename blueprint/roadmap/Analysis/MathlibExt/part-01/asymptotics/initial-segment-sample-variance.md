@@ -6,15 +6,15 @@ statement: formalized
 lean: MetaMathlibExt.initialSegmentSampleVariance
 ---
 
-# Taylor Initial Sample Variance
+# Initial-segment sample variance
 
-Unbiased initial-segment sample variance `v(a, n) = (1 / (n - 1)) * ∑_{j=1}^n (a(j) - m(a,
-n))^2`
-in `ℝ` for Taylor's variance-to-mean power law: the first equality of `eq:varexpanded`,
-with mean `m(a, n) = (1 / n) * ∑_{j=1}^n a(j)` from `eq:mean` inlined.
+**Initial-segment sample variance.** For a sequence $a : \mathbb{N} \to \mathbb{N}$ and
+$n \in \mathbb{N}$, the unbiased initial-segment sample variance is the real number
+$v(a, n) = \frac{1}{n - 1} \sum_{j=1}^{n} \left(a(j) - \frac{1}{n} \sum_{k=1}^{n} a(k)\right)^2$,
+with the convention $1 / 0 = 0$; in particular $v(a, 0) = v(a, 1) = 0$.
 
-Indices run from `1` through `n`; total in Lean (`n = 0` gives `0` via
-inverse-zero); the source invokes it for `n ≥ 2` with `ℕ = {1, 2, ...}`.
+The inner average is the initial-segment mean $m(a, n)$. The source uses $v(a, n)$ only for
+$n \ge 2$, with indices starting at $1$.
 
 ## Depends on
 

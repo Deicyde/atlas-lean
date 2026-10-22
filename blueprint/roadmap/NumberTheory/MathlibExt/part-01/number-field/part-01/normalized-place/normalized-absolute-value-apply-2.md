@@ -17,8 +17,8 @@ Evaluation of the degree-normalized absolute value at an infinite place.
 
 ## Proof depends on
 
-- [Rpow](../../../../../../Analysis/MathlibExt/part-01/absolute-value/rpow/rpow.md)
-- [Rpow apply](../../../../../../Analysis/MathlibExt/part-01/absolute-value/rpow/rpow-apply.md)
+- [Powers of an absolute value](../../../../../../Analysis/MathlibExt/part-01/absolute-value/rpow/rpow.md)
+- [Values of a power of an absolute value](../../../../../../Analysis/MathlibExt/part-01/absolute-value/rpow/rpow-apply.md)
 
 ## Sources
 

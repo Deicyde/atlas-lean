@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7Entry10CorollaryRight
 ---
 
-# Chapter7 Entry10 Corollary Right
+# Right side of the corollary to Entry 10
 
-The right side `(n - n⁻ʳ) ζ(-r)` of the corollary to Entry 10.
+**Right side of the corollary to Entry 10.** For a natural number $n$ and $r \in \mathbb{C}$,
+the right side of the corollary to Entry 10 is $(n - n^{-r})\,\zeta(-r)$, where $n^{-r}$ is the
+principal complex power and $\zeta$ is the Riemann zeta function.
 
 ## Depends on
 

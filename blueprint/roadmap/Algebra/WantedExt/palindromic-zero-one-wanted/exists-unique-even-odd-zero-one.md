@@ -5,20 +5,23 @@ statement: formalized
 lean: MathlibExt.Algebra.PalindromicZeroOneWanted.existsUnique_evenOdd_zeroOne
 ---
 
-# Lemma 2.2
+# Even–odd decomposition of a reciprocal 0,1-polynomial
 
-**Lemma 2.2**: let `f(x) ∈ 𝒩_irred` be reciprocal
-of degree `2m` with `f(x^2)` reducible. Then there exist
-unique reciprocal `0,1`-polynomials `f_e, f_o` and a
-unique positive odd integer `ℓ` such that
-`deg f_e = m`, `deg f_o = m - ℓ`,
-`f(x) = f_e(x^2) + x^ℓ f_o(x^2)` and
-`f_e(0) f_o(0) ≠ 0`.
+**Even–odd decomposition of a reciprocal 0,1-polynomial.** Let $f \in \mathbb{Z}[x]$ be
+an irreducible reciprocal $0,1$-polynomial of degree $2m$ such that $f(x^2)$ is not
+irreducible. Then there is exactly one $f_e \in \mathbb{Z}[x]$ for which there is exactly
+one $f_o \in \mathbb{Z}[x]$ for which there is exactly one natural number $\ell$ such that
+$f_e$ and $f_o$ are reciprocal $0,1$-polynomials, $\ell$ is odd and positive,
+$\deg f_e = m$, $\deg f_o = \max(m - \ell, 0)$, $f(x) = f_e(x^2) + x^\ell f_o(x^2)$ and
+$f_e(0)\,f_o(0) \ne 0$.
+
+Since $\ell$ is odd, $f_e(x^2)$ is the even part of $f$, and $f_o(0) \ne 0$ then determines
+$\ell$ and $f_o$; so this amounts to a unique triple $(f_e, f_o, \ell)$.
 
 ## Depends on
 
-- [Is Reciprocal Poly](is-reciprocal-poly.md)
-- [Is Zero One Poly](is-zero-one-poly.md)
+- [Reciprocal polynomial](is-reciprocal-poly.md)
+- [0,1-polynomial](is-zero-one-poly.md)
 
 ## Sources
 

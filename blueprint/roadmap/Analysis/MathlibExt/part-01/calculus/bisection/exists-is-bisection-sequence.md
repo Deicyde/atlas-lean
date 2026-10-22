@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.exists_isBisectionSequence
 ---
 
-# Exists is Bisection Sequence
+# Existence of bisection sequences
 
-A bisection sequence exists for every function and pair of endpoints.
+**Existence of bisection sequences.** For every function $f : \mathbb{R} \to \mathbb{R}$ and
+all reals $a$, $b$, there are sequences $u, v$ forming a bisection sequence for $f$ from $a$ to
+$b$.
 
 ## Depends on
 
-- [Is Bisection Sequence](is-bisection-sequence.md)
+- [Bisection sequence](is-bisection-sequence.md)
 
 ## Sources
 

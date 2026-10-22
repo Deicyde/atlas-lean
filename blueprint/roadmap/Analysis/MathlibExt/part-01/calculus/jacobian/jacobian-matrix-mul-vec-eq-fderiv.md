@@ -7,21 +7,24 @@ proof: formalized
 lean: MetaMathlibExt.jacobianMatrix_mulVec_eq_fderiv
 ---
 
-# Jacobian Matrix mul Vec eq fderiv
+# The Jacobian matrix computes the derivative
 
-The Jacobian matrix represents the Frechet derivative on coordinates.
+**The Jacobian matrix computes the derivative.** Let $f : \mathbb{R}^m \to \mathbb{R}^n$ be
+differentiable at $x \in \mathbb{R}^m$, and let $J$ be the Jacobian matrix of $f$ at $x$. Then for
+every $v \in \mathbb{R}^m$, the product $J v$ equals $Df(x)\, v$, the Fréchet derivative of $f$ at
+$x$ applied to $v$.
 
-Proof: The Jacobian is the matrix of `fderiv` (Wikipedia, "Jacobian matrix and determinant":
-it represents the total derivative), by `jacobianMatrix_eq_toMatrix'_fderiv`; then use
-`LinearMap.toMatrix'_mulVec`.
+Proof: The Jacobian is the matrix of the Fréchet derivative (Wikipedia, "Jacobian matrix and
+determinant": it represents the total derivative), and multiplying a vector by the matrix of a
+linear map applies the map to that vector.
 
 ## Depends on
 
-- [Jacobian Matrix](jacobian-matrix.md)
+- [Jacobian matrix](jacobian-matrix.md)
 
 ## Proof depends on
 
-- [Jacobian Matrix eq to Matrix' fderiv](jacobian-matrix-eq-to-matrix-fderiv.md)
+- [The Jacobian is the matrix of the derivative](jacobian-matrix-eq-to-matrix-fderiv.md)
 
 ## Sources
 

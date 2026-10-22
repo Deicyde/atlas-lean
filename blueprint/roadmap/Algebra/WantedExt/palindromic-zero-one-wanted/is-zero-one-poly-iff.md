@@ -6,13 +6,15 @@ proof: formalized
 lean: MathlibExt.Algebra.PalindromicZeroOneWanted.isZeroOnePoly_iff
 ---
 
-# Is Zero One Poly iff
+# Characterization of 0,1-polynomials
 
-Characterization of `IsZeroOnePoly`.
+**Characterization of 0,1-polynomials.** A polynomial $f \in \mathbb{Z}[x]$ is a
+$0,1$-polynomial if and only if, for every $n \ge 0$, the coefficient of $x^n$ in $f$ is
+$0$ or $1$.
 
 ## Depends on
 
-- [Is Zero One Poly](is-zero-one-poly.md)
+- [0,1-polynomial](is-zero-one-poly.md)
 
 ## Sources
 

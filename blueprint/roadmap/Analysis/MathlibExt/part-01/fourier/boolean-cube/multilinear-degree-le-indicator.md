@@ -7,25 +7,27 @@ proof: formalized
 lean: BooleanCube.multilinearDegreeLE_indicator
 ---
 
-# Multilinear Degree LE indicator
+# Fourier degree is at most Boolean degree
 
-The Fourier degree of the `0/1` indicator of a Boolean function is at most
-its Boolean degree: Fourier coefficients above the degree of the multilinear
-extension vanish. This connects `booleanDegree` to `MultilinearDegreeLE`.
+**Fourier degree is at most Boolean degree.** Let $f$ be a Boolean function on the Boolean
+cube of dimension $n$, and let $g$ be the real function with $g(x) = 1$ if $f(x)$ is true and
+$g(x) = 0$ otherwise. Then $g$ has Fourier degree at most the Boolean degree of $f$: every
+Fourier coefficient $\hat g(S)$ with $|S|$ greater than the total degree of the multilinear
+extension of $f$ vanishes.
 
 ## Depends on
 
-- [Bool Cube](bool-cube.md)
-- [Multilinear Degree LE](multilinear-degree-le.md)
-- [Boolean Degree](boolean-degree.md)
+- [Boolean cube](bool-cube.md)
+- [Fourier degree at most $d$](multilinear-degree-le.md)
+- [Boolean degree](boolean-degree.md)
 
 ## Proof depends on
 
-- [Bool Fourier Coeff](bool-fourier-coeff.md)
-- [Cube Chi](cube-chi.md)
-- [Cube Val](cube-val.md)
-- [Eval multilinear Extension](eval-multilinear-extension.md)
-- [Multilinear Extension](multilinear-extension.md)
+- [Fourier coefficient on the Boolean cube](bool-fourier-coeff.md)
+- [Fourier character on the Boolean cube](cube-chi.md)
+- [Sign of a Boolean coordinate](cube-val.md)
+- [The multilinear extension agrees with its function on the cube](eval-multilinear-extension.md)
+- [Multilinear extension](multilinear-extension.md)
 
 ## Sources
 

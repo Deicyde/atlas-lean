@@ -5,5 +5,5 @@ navigation: module
 
 # Riesz Thorin
 
-- [Riesz thorin finite](riesz-thorin-finite.md)
-- [Riesz thorin](riesz-thorin.md)
+- [Riesz–Thorin interpolation on finite sets, auxiliary form](riesz-thorin-finite.md)
+- [Riesz–Thorin interpolation theorem on finite sets](riesz-thorin.md)

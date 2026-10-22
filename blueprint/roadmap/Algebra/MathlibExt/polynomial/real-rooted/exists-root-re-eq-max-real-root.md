@@ -7,13 +7,15 @@ proof: formalized
 lean: Polynomial.exists_root_re_eq_maxRealRoot
 ---
 
-# Exists root re eq max Real Root
+# The largest real part of a root is attained
 
-A polynomial with a root has a root whose real part is `maxRealRoot`.
+**The largest real part of a root is attained.** Let $p$ be a complex polynomial whose
+multiset of roots is nonempty, and let $\rho(p)$ be the largest real part of a root of $p$.
+Then some root $z$ of $p$ satisfies $\operatorname{Re} z = \rho(p)$.
 
 ## Depends on
 
-- [Max Real Root](max-real-root.md)
+- [Largest real part of a root](max-real-root.md)
 
 ## Sources
 

@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry30Secondordereulerian.chapter5Entry30NonSquarefreeTerm_def
 ---
 
-# Chapter5 Entry30 Non Squarefree Term def
+# Non-squarefree term, explicit form
 
-Unfolding lemma for `chapter5Entry30NonSquarefreeTerm`.
+**Non-squarefree term, explicit form.** For $s \in \mathbb{C}$ and a natural number $j$, the
+$j$-th term of the Dirichlet series over non-squarefree integers equals $0$ if $j + 1$ is
+squarefree and $(j + 1)^{-s}$ otherwise.
 
 ## Depends on
 
-- [Chapter5 Entry30 Non Squarefree Term](chapter5-entry30-non-squarefree-term.md)
+- [Terms of the Dirichlet series over non-squarefree integers](chapter5-entry30-non-squarefree-term.md)
 
 ## Sources
 

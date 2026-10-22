@@ -7,14 +7,17 @@ proof: formalized
 lean: ConvergesLocallyNormallyOn.exists_nhds_inter
 ---
 
-# Exists nhds inter
+# Local normal convergence gives a neighbourhood of each point of the set
 
-Projection from local normal convergence at a point: at any `x ∈ S`,
-some neighbourhood intersected with `S` carries normal convergence.
+**Local normal convergence gives a neighbourhood of each point of the set.** Let $X$ be a
+topological space, $E$ a seminormed additive commutative group, $f_n \colon X \to E$
+($n \in \mathbb{N}$) functions and $S \subseteq X$. If the series $\sum_n f_n$ converges locally
+normally on $S$, then every $x \in S$ has a neighbourhood $U$ such that the series converges
+normally on $U \cap S$.
 
 ## Depends on
 
-- [Sup Norm On](sup-norm-on.md)
+- [Extended supremum norm on a set](sup-norm-on.md)
 
 ## Sources
 

@@ -5,5 +5,5 @@ navigation: module
 
 # Finite Field
 
-- [Is Nonarchimedean of char P](is-nonarchimedean-of-char-p.md)
-- [Eq one of ne zero of finite](eq-one-of-ne-zero-of-finite.md)
+- [Absolute values in positive characteristic are nonarchimedean](is-nonarchimedean-of-char-p.md)
+- [Absolute values on finite fields are trivial](eq-one-of-ne-zero-of-finite.md)

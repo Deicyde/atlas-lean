@@ -7,22 +7,24 @@ proof: formalized
 lean: TorusSobolev.lowestShellWitness_isH2
 ---
 
-# Lowest Shell Witness is H2
+# The lowest-shell witness is in $H^2$
 
-Weighted square summability of this actual finite-mode function.
+**The lowest-shell witness is in $H^2$.** The lowest-shell witness $u$ belongs to the spectral
+Sobolev space $H^2$: if $a_k(u)$ denotes its Fourier coefficients, the series
+$\sum_{k \in \mathbb{Z}^2} (1 + |k|^2)^2 |a_k(u)|^2$ converges.
 
 ## Depends on
 
-- [Is H2](../basic/is-h2.md)
-- [Lowest Shell Witness](lowest-shell-witness.md)
+- [Functions in $H^2$](../basic/is-h2.md)
+- [Lowest-shell witness](lowest-shell-witness.md)
 
 ## Proof depends on
 
-- [Frequency](../basic/frequency.md)
-- [Fourier Coefficient](../basic/fourier-coefficient.md)
-- [Fourier Coefficient lowest Shell Witness](fourier-coefficient-lowest-shell-witness.md)
-- [Frequency Weight](../basic/frequency-weight.md)
-- [Lowest Shell](lowest-shell.md)
+- [Integer frequencies](../basic/frequency.md)
+- [Fourier coefficients on the torus](../basic/fourier-coefficient.md)
+- [Fourier coefficients of the lowest-shell witness](fourier-coefficient-lowest-shell-witness.md)
+- [Squared frequency](../basic/frequency-weight.md)
+- [Lowest frequency shell](lowest-shell.md)
 
 ## Sources
 

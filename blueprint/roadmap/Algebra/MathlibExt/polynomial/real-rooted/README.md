@@ -5,12 +5,12 @@ navigation: module
 
 # Real Rooted
 
-- [Is Real Rooted](is-real-rooted.md)
-- [Is Real Rooted of map star eq self of roots im nonpos](is-real-rooted-of-map-star-eq-self-of-ro.md)
-- [Max Real Root](max-real-root.md)
-- [Root re le max Real Root](root-re-le-max-real-root.md)
-- [Exists root re eq max Real Root](exists-root-re-eq-max-real-root.md)
-- [Roots ne zero of nat Degree pos](roots-ne-zero-of-nat-degree-pos.md)
-- [Coe max Real Root mem roots](coe-max-real-root-mem-roots.md)
-- [Eval re pos of max Real Root lt](eval-re-pos-of-max-real-root-lt.md)
-- [Eval re nonneg of max Real Root le](eval-re-nonneg-of-max-real-root-le.md)
+- [Real-rooted polynomials](is-real-rooted.md)
+- [Conjugation-invariant polynomials with roots in the closed lower half-plane are real-rooted](is-real-rooted-of-map-star-eq-self-of-ro.md)
+- [Largest real part of a root](max-real-root.md)
+- [Real parts of roots are bounded by the largest one](root-re-le-max-real-root.md)
+- [The largest real part of a root is attained](exists-root-re-eq-max-real-root.md)
+- [Nonconstant complex polynomials have a root](roots-ne-zero-of-nat-degree-pos.md)
+- [For a real-rooted polynomial, the largest real part of a root is a root](coe-max-real-root-mem-roots.md)
+- [Monic real-rooted polynomials have positive real part right of the largest root](eval-re-pos-of-max-real-root-lt.md)
+- [Monic real-rooted polynomials have nonnegative real part from the largest root on](eval-re-nonneg-of-max-real-root-le.md)

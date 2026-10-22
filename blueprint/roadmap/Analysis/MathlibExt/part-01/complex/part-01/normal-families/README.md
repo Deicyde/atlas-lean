@@ -5,8 +5,8 @@ navigation: module
 
 # Normal Families
 
-- [Is Locally Uniformly Bounded On](is-locally-uniformly-bounded-on.md)
-- [Is Locally Uniformly Bounded On of forall norm le](is-locally-uniformly-bounded-on-of-foral.md)
-- [Exists bound of is Compact](exists-bound-of-is-compact.md)
-- [Montel](montel.md)
-- [Vitali](vitali.md)
+- [Locally uniformly bounded sequence of functions](is-locally-uniformly-bounded-on.md)
+- [A uniformly bounded sequence on an open set is locally uniformly bounded](is-locally-uniformly-bounded-on-of-foral.md)
+- [Locally uniformly bounded sequences are uniformly bounded on compact subsets](exists-bound-of-is-compact.md)
+- [Montel's theorem](montel.md)
+- [Vitali's convergence theorem](vitali.md)

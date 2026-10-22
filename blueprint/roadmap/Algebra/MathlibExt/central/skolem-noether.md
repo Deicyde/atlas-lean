@@ -7,9 +7,11 @@ proof: formalized
 lean: MathlibExt.Algebra.Central.SkolemNoether.skolem_noether
 ---
 
-# Skolem Noether
+# Skolem–Noether theorem
 
-Every k-algebra automorphism of a finite-dimensional central simple algebra is inner.
+**Skolem–Noether theorem.** Let $k$ be a field and let $A$ be a finite-dimensional central
+simple algebra over $k$. Then every $k$-algebra automorphism $\sigma$ of $A$ is inner: there is
+a unit $u \in A^\times$ such that $\sigma(x) = u x u^{-1}$ for all $x \in A$.
 
 ## Depends on
 

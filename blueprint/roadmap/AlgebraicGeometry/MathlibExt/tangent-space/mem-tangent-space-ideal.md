@@ -7,19 +7,21 @@ proof: formalized
 lean: MvPolynomial.mem_tangentSpaceIdeal
 ---
 
-# Mem tangent Space Ideal
+# Membership in the tangent space of an ideal
 
-Membership in the ideal tangent space is simultaneous vanishing on all of `I`.
+**Membership in the tangent space of an ideal.** Let $k$ be a field, $I$ an ideal of
+$k[x_1, \dots, x_n]$, and $P, v \in k^n$. Then $v$ lies in the tangent space of $I$ at $P$ if and
+only if, for every $f \in I$, the total derivative of $f$ at $P$ along $v$ is zero.
 
 ## Depends on
 
-- [Tangent Space Ideal](tangent-space-ideal.md)
-- [Total Derivative At](total-derivative-at.md)
+- [Tangent space of an ideal](tangent-space-ideal.md)
+- [Total derivative at a point](total-derivative-at.md)
 
 ## Proof depends on
 
-- [Mem tangent Space Poly](mem-tangent-space-poly.md)
-- [Tangent Space Poly](tangent-space-poly.md)
+- [Membership in the tangent space of a hypersurface](mem-tangent-space-poly.md)
+- [Tangent space of a hypersurface](tangent-space-poly.md)
 
 ## Sources
 

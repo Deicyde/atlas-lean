@@ -7,19 +7,21 @@ proof: formalized
 lean: NonnegativeDiscreteSpectrum.mem_sublevelFinset
 ---
 
-# Mem sublevel Finset
+# Membership in the finite strict sublevel set
 
-Exact membership for the sublevel finset.
+**Membership in the finite strict sublevel set.** For a nonnegative discrete spectrum with
+eigenvalues $E_0 \le E_1 \le \cdots$, a real number $\Lambda$ and an index $j \in \mathbb{N}$, the
+index $j$ lies in the finite strict sublevel set at $\Lambda$ if and only if $E_j < \Lambda$.
 
 ## Depends on
 
-- [Nonnegative Discrete Spectrum](nonnegative-discrete-spectrum.md)
-- [Sublevel Finset](sublevel-finset.md)
+- [Nonnegative discrete spectrum](nonnegative-discrete-spectrum.md)
+- [Finite strict sublevel set](sublevel-finset.md)
 
 ## Proof depends on
 
-- [Sublevel Set](sublevel-set.md)
-- [Sublevel Set finite](sublevel-set-finite.md)
+- [Strict sublevel set](sublevel-set.md)
+- [Strict sublevel sets are finite](sublevel-set-finite.md)
 
 ## Sources
 

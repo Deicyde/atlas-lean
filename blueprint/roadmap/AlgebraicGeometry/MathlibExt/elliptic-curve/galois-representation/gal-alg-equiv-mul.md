@@ -7,14 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.galAlgEquiv_mul
 ---
 
-# Gal Alg Equiv mul
+# Galois elements as automorphisms of $\overline{\mathbb{Q}}$ respect products
 
-The bridge preserves multiplication definitionally; recorded for rewriting
-in the action proofs.
+**Galois elements as automorphisms of $\overline{\mathbb{Q}}$ respect products.** For all
+$\sigma, \tau$ in the absolute Galois group $G_{\mathbb{Q}}$ of $\mathbb{Q}$, the
+$\mathbb{Q}$-algebra automorphism of the algebraic closure $\overline{\mathbb{Q}}$ attached to
+$\sigma\tau$ is the composite of the automorphisms attached to $\sigma$ and to $\tau$, with the
+one attached to $\tau$ applied first.
+
+The equality holds by definition.
 
 ## Depends on
 
-- [Gal Alg Equiv](gal-alg-equiv.md)
+- [Galois elements as automorphisms of $\overline{\mathbb{Q}}$](gal-alg-equiv.md)
 
 ## Sources
 

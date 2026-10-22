@@ -7,10 +7,12 @@ proof: formalized
 lean: MathlibExt.Algebra.Lie.LandmarkWanted.ado
 ---
 
-# Ado
+# Ado's theorem
 
-Every finite-dimensional Lie algebra `L` over a field `K` of characteristic zero admits a faithful
-finite-dimensional representation `ρ : L →ₗ⁅K⁆ Module.End K (Fin n → K)` that is injective.
+**Ado's theorem.** Every finite-dimensional Lie algebra $L$ over a field $K$ of
+characteristic zero has a faithful finite-dimensional representation: there are a natural
+number $n$ and an injective homomorphism of Lie algebras over $K$ from $L$ into the Lie algebra
+of $K$-linear endomorphisms of $K^n$ with the commutator bracket.
 
 Proof: Following Tao's 2011 route, the nilpotent and solvable cases are proved by induction using
 finite-dimensional quotients of universal enveloping algebras. The general case uses the Levi

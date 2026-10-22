@@ -7,10 +7,11 @@ proof: formalized
 lean: WeierstrassCurve.Affine.natCard_point_eq_natCard_affineSolutions_add_one
 ---
 
-# Nat Card point eq nat Card affine Solutions add one
+# Point count from affine solutions
 
-The rational-point count is one plus the number of affine solutions to the Weierstrass
-equation; the extra point is the point at infinity.
+**Point count from affine solutions.** Let $W$ be an elliptic curve in Weierstrass form over a
+finite field $F$. The number of $F$-points of $W$, counting the point at infinity, is one more than
+the number of pairs $(x, y) \in F \times F$ satisfying the Weierstrass equation of $W$.
 
 ## Depends on
 

@@ -17,11 +17,11 @@ here.
 
 ## Depends on
 
-- [Formal Orthogonality](is-formally-orthogonal.md)
+- [Formally orthogonal polynomial family](is-formally-orthogonal.md)
 
 ## Proof depends on
 
-- [Favard Forward](favard-forward.md)
+- [Favard's theorem, forward direction](favard-forward.md)
 
 ## Sources
 

@@ -7,22 +7,25 @@ proof: formalized
 lean: MathlibExt.Analysis.Complex.MittagLefflerWanted.mittag_leffler
 ---
 
-# Mittag leffler
+# Mittag-Leffler theorem
 
-For closed discrete `S ⊆ ℂ` and any `coeff : ↥S → ℕ →₀ ℂ`, there exists `f : ℂ → ℂ` holomorphic on
-`Sᶜ` and meromorphic on `ℂ` whose difference from `principalPart s.val (coeff s)` is analytic at
-each `s ∈ S`. Source: Mittag-Leffler theorem, G. Mittag-Leffler, Acta Math. 4 (1884); see Rudin;
-Lean is closed discrete S with punctured-ball isolation, prescribed finite principal parts via
-Finsupp, global meromorphic existence holomorphic on Sᶜ.
+**Mittag-Leffler theorem.** Let $S \subseteq \mathbb{C}$ be a closed set such that every $z \in S$
+has a radius $\varepsilon > 0$ for which the punctured disk $\{w : 0 < |w - z| < \varepsilon\}$
+contains no point of $S$, and for each $s \in S$ let $c_s$ be a finitely supported sequence of
+complex coefficients. Then there is a function $f : \mathbb{C} \to \mathbb{C}$ that is holomorphic
+on $\mathbb{C} \setminus S$, meromorphic on all of $\mathbb{C}$, and such that for every $s \in S$
+the difference between $f$ and the principal part at $s$ with coefficients $c_s$ is analytic at
+$s$.
 
 ## Depends on
 
-- [Principal Part](principal-part.md)
+- [Principal part with finitely many coefficients](principal-part.md)
 
 ## Proof depends on
 
-- [Mittag leffler of is Discrete](mittag-leffler-of-is-discrete.md)
+- [Mittag-Leffler theorem, discrete-subspace form](mittag-leffler-of-is-discrete.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.MittagLeffler](../../../../../../../sources/v2/MathlibExt.md)
+- Mittag-Leffler theorem, G. Mittag-Leffler, Acta Math. 4 (1884); see Rudin; Lean is closed discrete S with punctured-ball isolation, prescribed finite principal parts via Finsupp, global meromorphic existence holomorphic on Sᶜ.

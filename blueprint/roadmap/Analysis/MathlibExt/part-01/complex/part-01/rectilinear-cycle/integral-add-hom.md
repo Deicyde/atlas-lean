@@ -6,10 +6,11 @@ statement: formalized
 lean: RectilinearCycle.integralAddHom
 ---
 
-# Integral Add Hom
+# Contour integration as an additive map
 
-Contour integration against a fixed function, bundled as an additive
-homomorphism in the rectilinear cycle.
+**Contour integration as an additive map.** Let $E$ be a complex Banach space and
+$f : \mathbb{C} \to E$. The map sending a rectilinear cycle $\Gamma$ to the contour integral of
+$f$ over $\Gamma$ is an additive group homomorphism from rectilinear cycles to $E$.
 
 ## Depends on
 
@@ -18,8 +19,8 @@ homomorphism in the rectilinear cycle.
 
 ## Proof depends on
 
-- [Integral](integral.md)
-- [Integral add](integral-add.md)
+- [Contour integral over a rectilinear cycle](integral.md)
+- [Additivity of the contour integral in the cycle](integral-add.md)
 
 ## Sources
 

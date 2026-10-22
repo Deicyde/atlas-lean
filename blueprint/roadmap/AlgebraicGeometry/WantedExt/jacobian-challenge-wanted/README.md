@@ -4,22 +4,22 @@ navigation: module
 
 # Jacobian Challenge
 
-- [Genus](genus.md)
-- [Jacobian](jacobian.md)
+- [Genus of a smooth proper curve](genus.md)
+- [Jacobian of a smooth proper curve](jacobian.md)
 
 ## The Jacobian of `C` is an abelian variety.
 
-- [Smooth Of Relative Dimension genus](smooth-of-relative-dimension-genus.md)
-- [Of Curve](of-curve.md)
-- [Comp of Curve](comp-of-curve.md)
-- [Exists unique of Curve comp](exists-unique-of-curve-comp.md)
+- [The Jacobian has dimension equal to the genus](smooth-of-relative-dimension-genus.md)
+- [Abel–Jacobi map](of-curve.md)
+- [The Abel–Jacobi map sends the base point to zero](comp-of-curve.md)
+- [Universal property of the Jacobian](exists-unique-of-curve-comp.md)
 
 ## Uniform Mordell–Lang (co-located with the Jacobian interface it uses)
 
-- [Inst Comm Group eq](inst-comm-group-eq.md)
+- [Group law on the rational points of the Jacobian](inst-comm-group-eq.md)
 
 ## Theorem 1.1
 
-- [C](c.md)
-- [C pos](c-pos.md)
-- [Theorem 1 1](theorem-1-1.md)
+- [Uniform Mordell–Lang constant](c.md)
+- [The uniform Mordell–Lang constant is at least one](c-pos.md)
+- [Uniform Mordell–Lang for curves](theorem-1-1.md)

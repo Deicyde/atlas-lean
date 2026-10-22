@@ -7,9 +7,9 @@ navigation: module
 
 ## Algebraic Geometry
 
-- [Is Variety](is-variety.md)
+- [Variety over a field](is-variety.md)
 
 ## Is Variety
 
-- [Is Variety iff](is-variety-iff.md)
-- [Quasi Separated](quasi-separated.md)
+- [Characterization of varieties](is-variety-iff.md)
+- [Varieties are quasi-separated](quasi-separated.md)

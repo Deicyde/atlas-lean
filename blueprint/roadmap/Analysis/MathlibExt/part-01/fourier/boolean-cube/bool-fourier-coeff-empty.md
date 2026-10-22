@@ -7,19 +7,21 @@ proof: formalized
 lean: BooleanCube.boolFourierCoeff_empty
 ---
 
-# Bool Fourier Coeff empty
+# The empty Fourier coefficient is the mean
 
-The coefficient of the empty character is the uniform mean.
+**The empty Fourier coefficient is the mean.** For every $n \in \mathbb{N}$ and every function
+$f : \{-1, 1\}^n \to \mathbb{R}$, the normalized Fourier coefficient of $f$ at the empty set is the
+uniform mean of $f$: $\hat f(\emptyset) = \frac{1}{|\{-1, 1\}^n|} \sum_{x \in \{-1, 1\}^n} f(x)$.
 
 ## Depends on
 
-- [Bool Cube](bool-cube.md)
-- [Bool Fourier Coeff](bool-fourier-coeff.md)
+- [Boolean cube](bool-cube.md)
+- [Fourier coefficient on the Boolean cube](bool-fourier-coeff.md)
 
 ## Proof depends on
 
-- [Cube Chi](cube-chi.md)
-- [Cube Chi empty](cube-chi-empty.md)
+- [Fourier character on the Boolean cube](cube-chi.md)
+- [The empty Fourier character is constant one](cube-chi-empty.md)
 
 ## Sources
 

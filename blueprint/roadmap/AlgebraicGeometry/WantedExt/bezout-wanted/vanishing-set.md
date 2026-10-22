@@ -6,18 +6,18 @@ statement: formalized
 lean: MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.vanishingSet
 ---
 
-# Vanishing Set
+# Projective vanishing set
 
-The projective vanishing set, defined by evaluating `f` on a chosen
-representative `Projectivization.rep p`.
+**Projective vanishing set.** For a field $K$ and a polynomial $f \in K[X_0, \dots, X_n]$, the
+vanishing set of $f$ is the set of points $p \in \mathbb{P}^n(K)$ such that $f(v) = 0$, where
+$v \in K^{n+1} \setminus \{0\}$ is the chosen representative of $p$.
 
-This is representative-independent only when `f` is homogeneous of
-positive degree (`f(λv) = λᵈ f(v)`); the theorem below uses it only
-under that hypothesis.
+When $f$ is homogeneous of degree $d$, $f(\lambda v) = \lambda^d f(v)$, so this set does not depend
+on the choice of representatives.
 
 ## Depends on
 
-- [Proj Space](proj-space.md)
+- [Projective space](proj-space.md)
 
 ## Sources
 

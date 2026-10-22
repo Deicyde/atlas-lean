@@ -7,13 +7,14 @@ proof: formalized
 lean: supNormOn_zero
 ---
 
-# Sup Norm On zero
+# Supremum norm of the zero function
 
-The sup norm of the zero function vanishes.
+**Supremum norm of the zero function.** For every set $S \subseteq X$, the supremum norm on
+$S$ of the zero function from $X$ to a seminormed additive commutative group $E$ is $0$.
 
 ## Depends on
 
-- [Sup Norm On](sup-norm-on.md)
+- [Extended supremum norm on a set](sup-norm-on.md)
 
 ## Sources
 

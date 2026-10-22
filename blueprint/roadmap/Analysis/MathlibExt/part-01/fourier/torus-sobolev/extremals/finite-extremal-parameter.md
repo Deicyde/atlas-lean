@@ -6,9 +6,13 @@ statement: formalized
 lean: TorusSobolev.FiniteExtremalParameter
 ---
 
-# Finite Extremal Parameter
+# Finite extremal parameters
 
-Finite nonsingular parameters. The source's two limit endpoints are separate constructors.
+**Finite extremal parameters.** A finite extremal parameter is a real number $\mu$ with
+$\mu < -1$ or $\mu > 0$.
+
+The endpoints $\mu = -1$ and $\mu = \infty$ are not finite extremal parameters; the extremal
+parameter domain adds them separately.
 
 ## Depends on
 

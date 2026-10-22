@@ -7,22 +7,23 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry30Secondordereulerian.tsum_chapter5Entry30OddTerm
 ---
 
-# Tsum chapter5 Entry30 Odd Term
+# Sum of $n^{-s}$ over squarefree $n$ with an odd number of prime factors
 
-`∑ n ^ (-s)` over squarefree `n ≥ 1` with an odd number of prime factors is
-`(ζ(s) ^ 2 - ζ(2s)) / (2 ζ(s) ζ(2s))` for `1 < s.re`.
+**Sum of $n^{-s}$ over squarefree $n$ with an odd number of prime factors.** For every complex
+number $s$ with $\operatorname{Re} s > 1$, the sum of $n^{-s}$ over the squarefree $n \ge 1$ with
+an odd number of distinct prime factors equals $(\zeta(s)^2 - \zeta(2s))/(2\zeta(s)\zeta(2s))$.
 
 ## Depends on
 
-- [Chapter5 Entry30 Odd Term](chapter5-entry30-odd-term.md)
+- [Terms over squarefree integers with an odd number of prime factors](chapter5-entry30-odd-term.md)
 
 ## Proof depends on
 
-- [Chapter5 Entry30 Odd Term def](chapter5-entry30-odd-term-def.md)
-- [Chapter5 Entry30 Squarefree Term](chapter5-entry30-squarefree-term.md)
-- [Chapter5 Entry30 Squarefree Term def](chapter5-entry30-squarefree-term-def.md)
-- [Summable chapter5 Entry30 Squarefree Term](summable-chapter5-entry30-squarefree-ter.md)
-- [Tsum chapter5 Entry30 Squarefree Term](tsum-chapter5-entry30-squarefree-term.md)
+- [Odd-count squarefree term, explicit form](chapter5-entry30-odd-term-def.md)
+- [Terms of the Dirichlet series over squarefree integers](chapter5-entry30-squarefree-term.md)
+- [Squarefree term, explicit form](chapter5-entry30-squarefree-term-def.md)
+- [Summability of the squarefree terms](summable-chapter5-entry30-squarefree-ter.md)
+- [Sum of $n^{-s}$ over squarefree $n$](tsum-chapter5-entry30-squarefree-term.md)
 
 ## Sources
 

@@ -7,17 +7,19 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry30Secondordereulerian.tsum_chapter5Entry30SquarefreeTerm
 ---
 
-# Tsum chapter5 Entry30 Squarefree Term
+# Sum of $n^{-s}$ over squarefree $n$
 
-`∑ n ^ (-s)` over squarefree `n ≥ 1` is `ζ(s) / ζ(2s)` for `1 < s.re`.
+**Sum of $n^{-s}$ over squarefree $n$.** For every complex number $s$ with
+$\operatorname{Re} s > 1$, the sum of $n^{-s}$ over the squarefree $n \ge 1$ equals
+$\zeta(s)/\zeta(2s)$.
 
 ## Depends on
 
-- [Chapter5 Entry30 Squarefree Term](chapter5-entry30-squarefree-term.md)
+- [Terms of the Dirichlet series over squarefree integers](chapter5-entry30-squarefree-term.md)
 
 ## Proof depends on
 
-- [Chapter5 Entry30 Squarefree Term def](chapter5-entry30-squarefree-term-def.md)
+- [Squarefree term, explicit form](chapter5-entry30-squarefree-term-def.md)
 
 ## Sources
 

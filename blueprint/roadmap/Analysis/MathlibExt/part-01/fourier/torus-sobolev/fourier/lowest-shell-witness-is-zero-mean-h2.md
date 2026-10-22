@@ -7,21 +7,22 @@ proof: formalized
 lean: TorusSobolev.lowestShellWitness_isZeroMeanH2
 ---
 
-# Lowest Shell Witness is Zero Mean H2
+# The lowest-shell witness is a zero-mean $H^2$ function
 
-The positive witness is genuinely in the source's zero-mean Sobolev class.
+**The lowest-shell witness is a zero-mean $H^2$ function.** The lowest-shell witness $u$
+belongs to the spectral Sobolev space $H^2$ and has mean $0$.
 
 ## Depends on
 
-- [Is Zero Mean H2](../basic/is-zero-mean-h2.md)
-- [Lowest Shell Witness](lowest-shell-witness.md)
+- [Zero-mean $H^2$ functions](../basic/is-zero-mean-h2.md)
+- [Lowest-shell witness](lowest-shell-witness.md)
 
 ## Proof depends on
 
-- [Is H2](../basic/is-h2.md)
-- [Lowest Shell Witness is H2](lowest-shell-witness-is-h2.md)
-- [Mean](../basic/mean.md)
-- [Mean lowest Shell Witness](mean-lowest-shell-witness.md)
+- [Functions in $H^2$](../basic/is-h2.md)
+- [The lowest-shell witness is in $H^2$](lowest-shell-witness-is-h2.md)
+- [Mean of a function on the torus](../basic/mean.md)
+- [The lowest-shell witness has mean zero](mean-lowest-shell-witness.md)
 
 ## Sources
 

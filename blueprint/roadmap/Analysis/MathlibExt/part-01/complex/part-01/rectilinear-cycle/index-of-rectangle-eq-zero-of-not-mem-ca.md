@@ -7,23 +7,24 @@ proof: formalized
 lean: RectilinearCycle.index_ofRectangle_eq_zero_of_not_mem_carrier
 ---
 
-# Index of Rectangle eq zero of not mem carrier
+# Rectangle index vanishes outside the rectangle
 
-A rectangle has winding index zero about every point outside its closed
-carrier.
+**Rectangle index vanishes outside the rectangle.** For an axis-parallel rectangle $r$ and a
+point $w \in \mathbb{C}$ outside the closed carrier of $r$, the index about $w$ of the cycle
+consisting of the boundary of $r$ is $0$.
 
 ## Depends on
 
-- [Index](index.md)
-- [Of Rectangle](of-rectangle.md)
+- [Index of a rectilinear cycle](index.md)
+- [The cycle of a single rectangle](of-rectangle.md)
 - [Rectilinear Rectangle](rectilinear-rectangle.md)
-- [Carrier](carrier.md)
+- [Carrier of an axis-parallel rectangle](carrier.md)
 
 ## Proof depends on
 
-- [Integral](integral.md)
-- [Boundary Integral](boundary-integral.md)
-- [Boundary Integral eq zero](boundary-integral-eq-zero.md)
+- [Contour integral over a rectilinear cycle](integral.md)
+- [Boundary integral over a rectangle](boundary-integral.md)
+- [Cauchy–Goursat theorem for rectangles](boundary-integral-eq-zero.md)
 
 ## Sources
 

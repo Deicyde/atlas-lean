@@ -7,13 +7,15 @@ proof: formalized
 lean: Complex.hasSum_wimanTaylorCoefficient_mul_pow
 ---
 
-# Taylor Expansion
+# Taylor expansion of an entire function
 
-An entire function is the sum of the Taylor coefficients used by the Wiman definitions.
+**Taylor expansion of an entire function.** Let $f$ be an entire function with Taylor
+coefficients $a_n = f^{(n)}(0) / n!$ at the origin. For every $z \in \mathbb{C}$, the series
+$\sum_{n \ge 0} a_n z^n$ converges unconditionally to $f(z)$.
 
 ## Depends on
 
-- [Wiman Taylor Coefficient](../../part-02/wiman/wiman-taylor-coefficient.md)
+- [Wiman Taylor coefficient](../../part-02/wiman/wiman-taylor-coefficient.md)
 
 ## Sources
 

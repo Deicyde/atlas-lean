@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.mem_polarSet
 ---
 
-# Mem polar Set
+# Membership in the polar
 
-Membership characterization of `polarSet`.
+**Membership in the polar.** Let $E$ be a real inner product space, $A \subseteq E$ and
+$y \in E$. Then $y$ lies in the polar $A^\circ$ of $A$ if and only if $\langle x, y \rangle \le 1$
+for every $x \in A$.
 
 ## Depends on
 
-- [Polar Set](polar-set.md)
+- [Polar of a set](polar-set.md)
 
 ## Sources
 

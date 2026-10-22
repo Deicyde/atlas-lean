@@ -7,13 +7,15 @@ proof: formalized
 lean: Complex.wimanMaximumModulus_neg
 ---
 
-# Wiman Maximum Modulus neg
+# The Wiman maximum modulus is even in the radius
 
-Negating a radius does not change the maximum modulus.
+**The Wiman maximum modulus is even in the radius.** For every function
+$f : \mathbb{C} \to \mathbb{C}$ and every real number $r$, the Wiman maximum modulus of $f$ at
+radius $-r$ equals the Wiman maximum modulus of $f$ at radius $r$.
 
 ## Depends on
 
-- [Wiman Maximum Modulus](wiman-maximum-modulus.md)
+- [Wiman maximum modulus](wiman-maximum-modulus.md)
 
 ## Sources
 

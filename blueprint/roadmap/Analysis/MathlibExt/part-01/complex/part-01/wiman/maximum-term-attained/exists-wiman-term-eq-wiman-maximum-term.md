@@ -7,21 +7,23 @@ proof: formalized
 lean: Complex.exists_wimanTerm_eq_wimanMaximumTerm
 ---
 
-# Exists wiman Term eq wiman Maximum Term
+# The maximum term is attained by a Taylor term
 
-A summable nonnegative Taylor-term sequence realizes its supremum.
+**The maximum term is attained by a Taylor term.** Let $f$ be an entire function with Taylor
+coefficients $a_n$ at the origin and maximum term $\mu(r) = \sup_n |a_n|\,|r|^n$. For every real
+$r$ there is an $n \in \mathbb{N}$ with $|a_n|\,|r|^n = \mu(r)$.
 
 ## Depends on
 
-- [Wiman Maximum Term](../../../part-02/wiman/wiman-maximum-term.md)
-- [Wiman Term](../../../part-02/wiman/wiman-term.md)
+- [Wiman maximum term](../../../part-02/wiman/wiman-maximum-term.md)
+- [Wiman term](../../../part-02/wiman/wiman-term.md)
 
 ## Proof depends on
 
-- [Summable wiman Term](../radial-majorant/summable-wiman-term.md)
-- [Wiman Maximum Term le iff](wiman-maximum-term-le-iff.md)
-- [Wiman Term le wiman Maximum Term](wiman-term-le-wiman-maximum-term.md)
-- [Wiman Term nonneg](../radial-majorant/wiman-term-nonneg.md)
+- [Summability of the radial Taylor terms](../radial-majorant/summable-wiman-term.md)
+- [Bounding the maximum term](wiman-maximum-term-le-iff.md)
+- [Each Taylor term is at most the maximum term](wiman-term-le-wiman-maximum-term.md)
+- [Radial Taylor terms are nonnegative](../radial-majorant/wiman-term-nonneg.md)
 
 ## Sources
 

@@ -5,22 +5,25 @@ statement: formalized
 lean: MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.IsPseudoRegularizable
 ---
 
-# Is Pseudo Regularizable
+# Pseudo-regularizable birational automorphism
 
-Definition 4.1: A birational automorphism `φ` is pseudo-regularizable if
-`φ = α⁻¹ ∘ γ ∘ α`, where
-- `α : X ⤏ X'` is a birational map (we do not assume `X'` is smooth nor projective);
-- `γ : X' ⤏ X'` is a pseudo-automorphism, namely an isomorphism in codimension one.
+**Pseudo-regularizable birational automorphism.** Let $X$ be a variety over a field $k$. A
+birational automorphism $\varphi$ of $X$ is pseudo-regularizable if there exist a variety $X'$
+over $k$, a birational map $\alpha \colon X \dashrightarrow X'$ over $k$, and a partial
+isomorphism $\gamma$ from $X'$ to itself over $k$ that is a pseudo-isomorphism (an isomorphism
+in codimension one), such that $\varphi = \alpha^{-1} \circ \gamma \circ \alpha$, where $\gamma$
+is viewed as a birational map. The variety $X'$ need not be smooth or projective.
 
 ## Depends on
 
-- [Birational Map](birational-map.md)
-- [Variety](variety.md)
+- [Birational map](birational-map.md)
+- [Variety over a field](variety.md)
 
 ## Proof depends on
 
-- [Pseudo Regularization](pseudo-regularization.md)
+- [Pseudo-regularization of a birational automorphism](pseudo-regularization.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.AlgebraicGeometry.MotivicInvariantsWanted](../../../../sources/v2/WantedExt.md)
+- H.-Y. Lin and E. Shinder, Motivic invariants of birational maps, Definition 4.1.

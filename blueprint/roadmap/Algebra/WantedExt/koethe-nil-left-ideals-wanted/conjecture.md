@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Algebra.KoetheNilLeftIdealsWanted.conjecture
 ---
 
-# Conjecture
+# Köthe's conjecture
 
-Köthe's conjecture: the sum of two nil left ideals is nil.
+**Köthe's conjecture.** The statement that for every ring $R$ (associative, with identity)
+and all nil left ideals $I$ and $J$ of $R$, the sum $I + J$ is again a nil left ideal.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Nil Left Ideal](is-nil-left-ideal.md)
+- [Nil left ideal](is-nil-left-ideal.md)
 
 ## Sources
 

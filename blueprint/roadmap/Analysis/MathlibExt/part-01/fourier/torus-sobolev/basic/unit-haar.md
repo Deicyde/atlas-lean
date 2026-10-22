@@ -6,9 +6,11 @@ statement: formalized
 lean: TorusSobolev.unitHaar
 ---
 
-# Unit Haar
+# Normalized Haar measure on the unit torus
 
-Normalized product Haar measure, used explicitly for the actual mean.
+**Normalized Haar measure on the unit torus.** The measure on the unit torus
+$(\mathbb{R}/\mathbb{Z})^2$ that is the product of two copies of the Haar probability measure on the
+circle $\mathbb{R}/\mathbb{Z}$.
 
 ## Depends on
 

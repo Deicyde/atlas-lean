@@ -7,14 +7,20 @@ proof: formalized
 lean: MathlibExt.Analysis.ODE.ExplicitEulerWanted.explicit_euler_first_order_convergence
 ---
 
-# Explicit euler first order convergence
+# First-order convergence of the explicit Euler method
 
-Explicit Euler is first-order convergent: for a `C^2` right-hand side,
-Lipschitz in the state, a true solution exists on `[t₀, T]` and the Euler
-polygonal approximations have global error `O(h)` with a uniform constant.
+**First-order convergence of the explicit Euler method.** Let $E$ be a real Banach space,
+let $t_0 < T$, let $x_0 \in E$ and $L \ge 0$, and let $f : \mathbb{R} \times E \to E$ be $C^2$
+with $f(t, \cdot)$ $L$-Lipschitz for every $t \in [t_0, T]$. Then there are a function
+$x : \mathbb{R} \to E$ with $x(t_0) = x_0$ and $x'(t) = f(t, x(t))$ for every $t \in [t_0, T]$,
+and a constant $C$, such that the following holds for every step size $h \in (0, T - t_0]$: if
+$(X_n)_{n \in \mathbb{N}}$ is the explicit Euler sequence $X_0 = x_0$,
+$X_{n+1} = X_n + h f(t_0 + n h, X_n)$, then $\|X_n - x(t_0 + n h)\| \le C h$ for every
+$n \in \mathbb{N}$ with $n h \le T - t_0$.
 
-Proof: clamp the time variable and use global Picard--Lindelöf for existence.  The local bound
-above and Mathlib's discrete Grönwall inequality then give the first-order global estimate.
+Proof: clamp the time variable and use global existence for globally Lipschitz right-hand
+sides. The local truncation bound and the discrete Grönwall inequality then give the
+first-order global estimate.
 
 ## Depends on
 
@@ -22,7 +28,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ode global exists of global lipschitz](../maximal-solution/ode-global-exists-of-global-lipschitz.md)
+- [Global existence and uniqueness for globally Lipschitz ODEs](../maximal-solution/ode-global-exists-of-global-lipschitz.md)
 - [Exists explicit Euler local Truncation Error le](exists-explicit-euler-local-truncation-e.md)
 
 ## Sources

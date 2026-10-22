@@ -5,15 +5,17 @@ statement: formalized
 lean: MathlibExt.Algebra.PalindromicZeroOneWanted.map_comp_sq_eq_mul
 ---
 
-# Theorem 1.3
+# Square compositions of $0,1$-polynomials modulo $4$
 
-**Theorem 1.3**: let `f(x) ∈ 𝒩_irred`. If `f(x^2)`
-is reducible then `f(x^2) ≡ f(x) f(-x) (mod 4)` as
-polynomials.
+**Square compositions of $0,1$-polynomials modulo $4$.** Let $f \in \mathbb{Z}[x]$ be
+irreducible in $\mathbb{Z}[x]$, with every coefficient equal to $0$ or $1$ and with constant
+term $f(0) = 1$. If $f(x^2)$ is not irreducible in $\mathbb{Z}[x]$, then
+$f(x^2) \equiv f(x)\,f(-x) \pmod 4$ as polynomials, that is, the two polynomials have the
+same image in $(\mathbb{Z}/4\mathbb{Z})[x]$.
 
 ## Depends on
 
-- [Is Zero One Poly](is-zero-one-poly.md)
+- [0,1-polynomial](is-zero-one-poly.md)
 
 ## Sources
 

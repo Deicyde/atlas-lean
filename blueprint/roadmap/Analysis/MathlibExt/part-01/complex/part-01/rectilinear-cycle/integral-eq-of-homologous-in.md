@@ -7,21 +7,25 @@ proof: formalized
 lean: RectilinearCycle.integral_eq_of_homologousIn
 ---
 
-# Integral eq of homologous In
+# Homologous rectilinear cycles have equal integrals
 
-Homologous rectilinear cycles have the same integral for a function
-differentiable on the filling domain.
+**Homologous rectilinear cycles have equal integrals.** Let $E$ be a complex Banach space,
+let $G \subseteq \mathbb{C}$, and let $f : \mathbb{C} \to E$ be complex differentiable on $G$. If
+$\Gamma$ and $\Lambda$ are rectilinear cycles that are homologous in $G$, that is, the closed
+rectangle of every rectangle occurring in $\Gamma - \Lambda$ with nonzero coefficient is contained
+in $G$, then the contour integral of $f$ over $\Gamma$ equals the contour integral of $f$ over
+$\Lambda$.
 
 ## Depends on
 
 - [Rectilinear Cycle](rectilinear-cycle.md)
-- [Homologous In](homologous-in.md)
-- [Integral](integral.md)
+- [Rectilinear cycles homologous in a set](homologous-in.md)
+- [Contour integral over a rectilinear cycle](integral.md)
 
 ## Proof depends on
 
-- [Integral eq zero of filling Supported In](integral-eq-zero-of-filling-supported-in.md)
-- [Integral sub](integral-sub.md)
+- [Cauchy–Goursat theorem for rectilinear cycles](integral-eq-zero-of-filling-supported-in.md)
+- [Integral over a difference of cycles](integral-sub.md)
 - [Rectilinear Rectangle](rectilinear-rectangle.md)
 
 ## Sources

@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Algebra.SturmWanted.Algebra.sigma
 ---
 
-# Sigma
+# Sturm sign-variation function
 
-The Sturm sign-variation function `σ_p(x)` of a real polynomial `p`.
+**Sturm sign-variation function.** For a real polynomial $p$ with Sturm chain
+$p_0, p_1, \dots, p_m$ and a real number $x$, $\sigma_p(x)$ is the number of sign changes,
+ignoring zeros, in the sequence of values $p_0(x), p_1(x), \dots, p_m(x)$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Sign Changes](sign-changes.md)
-- [Sturm Chain](sturm-chain.md)
+- [Sturm chain](sturm-chain.md)
 
 ## Sources
 

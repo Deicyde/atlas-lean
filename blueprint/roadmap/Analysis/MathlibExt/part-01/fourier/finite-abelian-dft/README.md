@@ -5,7 +5,7 @@ navigation: module
 
 # Finite Abelian DFT
 
-- [Dft Fun](dft-fun.md)
-- [Dft inversion](dft-inversion.md)
-- [Dft plancherel](dft-plancherel.md)
-- [Dft Fun translate](dft-fun-translate.md)
+- [Discrete Fourier transform on a finite abelian group](dft-fun.md)
+- [Fourier inversion on a finite abelian group](dft-inversion.md)
+- [Plancherel formula on a finite abelian group](dft-plancherel.md)
+- [Translation modulates the discrete Fourier transform](dft-fun-translate.md)

@@ -7,17 +7,18 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzHausdorffWanted.toeplitz_hausdorff
 ---
 
-# Toeplitz hausdorff
+# Toeplitz–Hausdorff theorem
 
-The numerical range of a bounded operator on a complex Hilbert space is convex.
+**Toeplitz–Hausdorff theorem.** The numerical range of a bounded linear operator on a complex
+Hilbert space is convex.
 
 ## Depends on
 
-- [Numerical Range](numerical-range.md)
+- [Numerical range](numerical-range.md)
 
 ## Proof depends on
 
-- [Toeplitz hausdorff general](toeplitz-hausdorff-general.md)
+- [Toeplitz–Hausdorff theorem without completeness](toeplitz-hausdorff-general.md)
 
 ## Sources
 

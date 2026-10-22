@@ -6,18 +6,23 @@ statement: formalized
 lean: TorusSobolev.frequencyRatio
 ---
 
-# Frequency Ratio
+# Frequency ratio
 
-The source's frequency ratio; applications require positive gradient energy.
+**Frequency ratio.** For a continuous function
+$u : (\mathbb{R}/2\pi\mathbb{Z})^2 \to \mathbb{R}$, the frequency ratio is the Laplacian energy
+of $u$ divided by the gradient energy of $u$.
+
+Applications assume positive gradient energy; when the gradient energy is $0$, the quotient is
+taken to be $0$.
 
 ## Depends on
 
-- [Torus](torus.md)
+- [The torus of period $2\pi$](torus.md)
 
 ## Proof depends on
 
-- [Gradient Energy](gradient-energy.md)
-- [Laplace Energy](laplace-energy.md)
+- [Gradient energy](gradient-energy.md)
+- [Laplacian energy](laplace-energy.md)
 
 ## Sources
 

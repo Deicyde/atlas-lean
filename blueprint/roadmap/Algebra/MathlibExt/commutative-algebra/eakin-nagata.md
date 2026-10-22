@@ -7,10 +7,11 @@ proof: formalized
 lean: MathlibExt.Algebra.CommutativeAlgebra.EakinNagataWanted.eakin_nagata
 ---
 
-# Eakin Nagata
+# Eakin–Nagata theorem
 
-If `A → B` is injective, `B` is module-finite over `A` and `B` is Noetherian, then `A` is
-Noetherian.
+**Eakin–Nagata theorem.** Let $A$ and $B$ be commutative rings and let $B$ be an $A$-algebra
+that is finitely generated as an $A$-module. If the structure map $A \to B$ is injective and $B$
+is Noetherian, then $A$ is Noetherian.
 
 ## Depends on
 

@@ -7,22 +7,26 @@ proof: formalized
 lean: MathlibExt.Analysis.Convex.Straszewicz.dirDeriv_continuous_in_v
 ---
 
-# Dir Deriv continuous in v
+# Continuity of the directional derivative of a support function in the direction
 
-The directional derivative is continuous in the direction.
+**Continuity of the directional derivative of a support function in the direction.** Let
+$E$ be a real normed space with continuous dual $E^*$, let $K \subseteq E$ be a nonempty compact
+set with support function $h_K$, and write $h_K'(x; w)$ for the directional derivative of $h_K$
+at $x$ in direction $w$. For every $x \in E^*$, the map $w \mapsto h_K'(x; w)$ is continuous on
+$E^*$.
 
 ## Depends on
 
-- [Dir Deriv](dir-deriv.md)
-- [Supp Func](supp-func.md)
+- [Directional derivative](dir-deriv.md)
+- [Support function](supp-func.md)
 
 ## Proof depends on
 
-- [Dir Deriv subadd](dir-deriv-subadd.md)
-- [Dir Quot](dir-quot.md)
-- [Dir Quot bdd Below](dir-quot-bdd-below.md)
-- [Supp Func convex](supp-func-convex.md)
-- [Supp Func lipschitz](supp-func-lipschitz.md)
+- [Subadditivity of the directional derivative](dir-deriv-subadd.md)
+- [Difference quotients](dir-quot.md)
+- [Difference quotients of a convex function are bounded below](dir-quot-bdd-below.md)
+- [The support function of a compact set is convex](supp-func-convex.md)
+- [The support function of a compact set is Lipschitz](supp-func-lipschitz.md)
 
 ## Sources
 

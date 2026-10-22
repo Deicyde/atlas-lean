@@ -17,7 +17,7 @@ The number of Lyndon words with prescribed positive content is Witt's multigrade
 - [Lyndon Words Of Content](lyndon-words-of-content.md)
 - [Words Of Content](words-of-content.md)
 - [Sum witt Word Content](sum-witt-word-content.md)
-- [Witt Multigraded Value](../../../../../Algebra/MathlibExt/lie/witt-multigraded-value.md)
+- [Witt's multigraded value](../../../../../Algebra/MathlibExt/lie/witt-multigraded-value.md)
 - [Witt Word Content](witt-word-content.md)
 
 ## Proof depends on

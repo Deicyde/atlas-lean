@@ -7,13 +7,17 @@ proof: formalized
 lean: MathlibExt.Analysis.Complex.HartogsWanted.exists_differentiable_barDeriv_eq_of_hasCompactSupport
 ---
 
-# Exists differentiable bar Deriv eq of has Compact Support
+# Solving the ∂̄-equation for compactly supported C¹ data
 
-A compactly supported `C¹` function on `ℂ` is a Wirtinger derivative.
+**Solving the ∂̄-equation for compactly supported C¹ data.** Let $g : \mathbb{C} \to
+\mathbb{C}$ be real differentiable on all of $\mathbb{C}$, with continuous real derivative and
+compact support. Then there is a function $u : \mathbb{C} \to \mathbb{C}$, real differentiable on
+all of $\mathbb{C}$, whose Wirtinger derivative satisfies
+$\frac{\partial u}{\partial \bar z}(z) = g(z)$ for every $z \in \mathbb{C}$.
 
 ## Depends on
 
-- [Bar Deriv](bar-deriv.md)
+- [The Wirtinger derivative with respect to z̄](bar-deriv.md)
 
 ## Sources
 

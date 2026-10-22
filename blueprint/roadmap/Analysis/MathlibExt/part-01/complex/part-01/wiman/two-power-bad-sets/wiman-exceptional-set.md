@@ -6,9 +6,12 @@ statement: formalized
 lean: Complex.wimanExceptionalSet
 ---
 
-# Wiman Exceptional Set
+# Wiman exceptional set
 
-The union of the power-growth bad sets for the logarithmic majorant and its derivative.
+**Wiman exceptional set.** For a function $f : \mathbb{C} \to \mathbb{C}$ with radial majorant
+$M_f$, let $g(x) = \log M_f(e^x)$. For $x_0 \in \mathbb{R}$, the Wiman exceptional set $E_f(x_0)$
+is the union of the power-growth bad sets of $g$ and of $g'$ with exponent $9/8$ above $x_0$,
+that is, the set of $x \ge x_0$ with $g(x)^{9/8} \le g'(x)$ or $g'(x)^{9/8} \le g''(x)$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Wiman Growth](../coefficient-exponential-family/wiman-growth.md)
-- [Power Growth Bad Set](../../../../calculus/power-growth-bad-set/power-growth-bad-set.md)
+- [Power-growth exceptional set](../../../../calculus/power-growth-bad-set/power-growth-bad-set.md)
 
 ## Sources
 

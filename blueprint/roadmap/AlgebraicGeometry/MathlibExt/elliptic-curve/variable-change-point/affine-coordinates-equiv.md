@@ -6,9 +6,12 @@ statement: formalized
 lean: WeierstrassCurve.VariableChange.affineCoordinatesEquiv
 ---
 
-# Affine Coordinates Equiv
+# Variable changes act bijectively on affine coordinates
 
-Affine coordinates form an equivalence under an admissible Weierstrass variable change.
+**Variable changes act bijectively on affine coordinates.** For a variable change
+$C = (u, r, s, t)$ over a field $F$, the map $(x, y) \mapsto (u^2 x + r,\ u^3 y + u^2 s x + t)$
+is a bijection $F^2 \to F^2$, whose inverse is the corresponding map of the inverse variable
+change $C^{-1}$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Map Affine Coordinates](map-affine-coordinates.md)
+- [Coordinate map of a Weierstrass variable change](map-affine-coordinates.md)
 
 ## Sources
 

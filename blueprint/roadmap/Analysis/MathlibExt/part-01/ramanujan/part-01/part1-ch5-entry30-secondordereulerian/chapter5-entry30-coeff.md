@@ -6,10 +6,13 @@ statement: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry30Secondordereulerian.chapter5Entry30Coeff
 ---
 
-# Chapter5 Entry30 Coeff
+# Coefficients for Entry 30
 
-The multiplicative coefficient with local factors `chapter5Entry30LocalCoeff a`: `0` at
-`n = 0`, otherwise the product of the local factors over the prime factors of `n`.
+**Coefficients for Entry 30.** For a function $a : \mathbb{N} \to \mathbb{C}$ and
+$n \in \mathbb{N}$, the Entry 30 coefficient $c_a(n) \in \mathbb{C}$ is $0$ when $n = 0$. When
+$n \ne 0$ it is the product, over the prime factors $p$ of $n$, of the local factor of $a$ at $p$
+with exponent the multiplicity of $p$ in $n$. The local factor at $p$ with exponent $e$ is $1$
+for $e = 0$, $a(p)$ for $e = 1$, and $0$ for $e \ge 2$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Chapter5 Entry30 Local Coeff](chapter5-entry30-local-coeff.md)
+- [Local factor](chapter5-entry30-local-coeff.md)
 
 ## Sources
 

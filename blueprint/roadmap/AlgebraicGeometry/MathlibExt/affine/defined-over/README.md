@@ -5,10 +5,10 @@ navigation: module
 
 # Defined Over
 
-- [Ideal Over K](ideal-over-k.md)
-- [Mem ideal Over K iff](mem-ideal-over-k-iff.md)
-- [Is Defined Over](is-defined-over.md)
-- [Is Defined Over iff](is-defined-over-iff.md)
-- [Eval of mem ideal Over K](eval-of-mem-ideal-over-k.md)
-- [Ideal Over K empty](ideal-over-k-empty.md)
-- [Ideal Over K anti mono](ideal-over-k-anti-mono.md)
+- [Ideal over $k$ of a subset of affine space](ideal-over-k.md)
+- [Membership in the ideal over $k$](mem-ideal-over-k-iff.md)
+- [Sets defined over $k$](is-defined-over.md)
+- [Defined over $k$ as an equality of ideals](is-defined-over-iff.md)
+- [Polynomials in the ideal over $k$ vanish on the set](eval-of-mem-ideal-over-k.md)
+- [The ideal over $k$ of the empty set](ideal-over-k-empty.md)
+- [The ideal over $k$ reverses inclusions](ideal-over-k-anti-mono.md)

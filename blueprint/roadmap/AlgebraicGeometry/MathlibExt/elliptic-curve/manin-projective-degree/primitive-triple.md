@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.AlgebraicGeometry.EllipticCurve.ManinProjectiveDegree.PrimitiveTriple
 ---
 
-# Primitive Triple
+# Primitive triple of polynomials
 
-Three homogeneous coordinates are primitive when they generate the unit ideal.
+**Primitive triple of polynomials.** Let $K$ be a field. Polynomials $a, b, c \in K[X]$
+form a primitive triple when they generate the unit ideal of $K[X]$, that is, when there are
+$u, v, w \in K[X]$ with $ua + vb + wc = 1$.
 
 ## Depends on
 

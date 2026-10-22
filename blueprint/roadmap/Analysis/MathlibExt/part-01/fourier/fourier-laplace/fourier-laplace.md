@@ -6,10 +6,12 @@ statement: formalized
 lean: Fourier.fourierLaplace
 ---
 
-# Fourier Laplace
+# Fourier–Laplace transform
 
-The complex-parameter Fourier–Laplace integral
-`z ↦ ∫ x, f x * exp (-2π I x z)` on `ℝ`.
+**Fourier–Laplace transform.** For $f : \mathbb{R} \to \mathbb{C}$ and $z \in \mathbb{C}$,
+the Fourier–Laplace transform of $f$ at $z$ is the Lebesgue integral
+$\int_{\mathbb{R}} f(x) \, e^{-2\pi i x z} \, dx$, taken to be $0$ when the integrand is not
+integrable.
 
 ## Depends on
 

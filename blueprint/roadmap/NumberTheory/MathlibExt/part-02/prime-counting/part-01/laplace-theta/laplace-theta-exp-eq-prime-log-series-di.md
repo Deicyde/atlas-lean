@@ -14,7 +14,7 @@ Lemma 16.10 identity: the Laplace transform of `theta (exp ·)` at `s`.
 ## Depends on
 
 - [Prime Log Series](prime-log-series.md)
-- [Laplace](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/basic/laplace.md)
+- [The one-sided Laplace transform](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/basic/laplace.md)
 
 ## Sources
 

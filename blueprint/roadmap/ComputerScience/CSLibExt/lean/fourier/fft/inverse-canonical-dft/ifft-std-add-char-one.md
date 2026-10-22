@@ -17,7 +17,7 @@ Actual positive-sign source inverse coefficients equal normalized forward DFT.
 ## Proof depends on
 
 - [Ifft correct](../inverse-correctness/ifft-correct.md)
-- [Dft Sum](../../../../../../Analysis/MathlibExt/part-01/fourier/fast-fourier-transform/dft-sum.md)
+- [Discrete Fourier sum](../../../../../../Analysis/MathlibExt/part-01/fourier/fast-fourier-transform/dft-sum.md)
 
 ## Sources
 

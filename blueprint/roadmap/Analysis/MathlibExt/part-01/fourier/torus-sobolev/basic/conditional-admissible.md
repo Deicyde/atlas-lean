@@ -6,19 +6,22 @@ statement: formalized
 lean: TorusSobolev.ConditionalAdmissible
 ---
 
-# Conditional Admissible
+# Conditionally admissible functions
 
-The source's conditional variational constraints on actual functions.
+**Conditionally admissible functions.** Let $\delta$ be a real number. A continuous
+function $u : (\mathbb{R}/2\pi\mathbb{Z})^2 \to \mathbb{R}$ is admissible at level $\delta$
+when it is a zero-mean $H^2$ function, its gradient energy equals $1$, and its Laplacian
+energy equals $\delta$.
 
 ## Depends on
 
-- [Torus](torus.md)
+- [The torus of period $2\pi$](torus.md)
 
 ## Proof depends on
 
-- [Is Zero Mean H2](is-zero-mean-h2.md)
-- [Gradient Energy](gradient-energy.md)
-- [Laplace Energy](laplace-energy.md)
+- [Zero-mean $H^2$ functions](is-zero-mean-h2.md)
+- [Gradient energy](gradient-energy.md)
+- [Laplacian energy](laplace-energy.md)
 
 ## Sources
 

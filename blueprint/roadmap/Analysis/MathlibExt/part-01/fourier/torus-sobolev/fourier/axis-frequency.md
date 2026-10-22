@@ -6,13 +6,14 @@ statement: formalized
 lean: TorusSobolev.axisFrequency
 ---
 
-# Axis Frequency
+# Axis frequency
 
-The physical unit frequency in coordinate `i`.
+**Axis frequency.** For $i \in \{0, 1\}$, the axis frequency $e_i$ is the frequency in
+$\mathbb{Z}^2$ whose $i$-th coordinate is $1$ and whose other coordinate is $0$.
 
 ## Depends on
 
-- [Frequency](../basic/frequency.md)
+- [Integer frequencies](../basic/frequency.md)
 
 ## Sources
 

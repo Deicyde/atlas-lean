@@ -16,8 +16,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Frequency](../basic/frequency.md)
-- [Axis Frequency](axis-frequency.md)
+- [Integer frequencies](../basic/frequency.md)
+- [Axis frequency](axis-frequency.md)
 
 ## Sources
 

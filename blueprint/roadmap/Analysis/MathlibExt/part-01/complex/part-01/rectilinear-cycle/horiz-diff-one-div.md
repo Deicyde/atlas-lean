@@ -7,9 +7,12 @@ proof: formalized
 lean: Complex.horiz_diff_one_div
 ---
 
-# Horiz diff one div
+# Difference of horizontal integrals of the reciprocal
 
-Bottom-minus-top of `1/s`: `2i·Δarctan` (log parts cancel).
+**Difference of horizontal integrals of the reciprocal.** Let $a \le b$ and $T \ne 0$ be
+real numbers. Then
+$\int_a^b \frac{dx}{x - iT} - \int_a^b \frac{dx}{x + iT}
+= 2i\left(\arctan\frac{b}{T} - \arctan\frac{a}{T}\right)$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Integral div add sq](integral-div-add-sq.md)
+- [Arctangent integral](integral-div-add-sq.md)
 
 ## Sources
 

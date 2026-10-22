@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.Algebra.PalindromicZeroOneWanted.IsZeroOnePoly
 ---
 
-# Is Zero One Poly
+# 0,1-polynomial
 
-A *`0,1`-polynomial* has all coefficients in
-`{0, 1}`.
+**0,1-polynomial.** A polynomial $f \in \mathbb{Z}[x]$ is a *$0,1$-polynomial* if every
+coefficient of $f$ is $0$ or $1$.
 
 ## Depends on
 

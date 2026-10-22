@@ -7,13 +7,16 @@ proof: formalized
 lean: MathlibExt.Analysis.Fourier.FastFourierTransformWanted.dftSum_two_mul
 ---
 
-# Dft Sum two mul
+# Even–odd splitting of the DFT sum
 
-Splits an even-length DFT sum into its even and odd samples.
+**Even–odd splitting of the DFT sum.** For every natural number $n$, every
+$\omega \in \mathbb{C}$, every $f : \mathbb{N} \to \mathbb{C}$ and every natural number $K$,
+$$\sum_{j < 2n} \omega^{jK} f(j) = \sum_{t < n} (\omega^2)^{tK} f(2t)
+  + \omega^K \sum_{t < n} (\omega^2)^{tK} f(2t + 1).$$
 
 ## Depends on
 
-- [Dft Sum](dft-sum.md)
+- [Discrete Fourier sum](dft-sum.md)
 
 ## Sources
 

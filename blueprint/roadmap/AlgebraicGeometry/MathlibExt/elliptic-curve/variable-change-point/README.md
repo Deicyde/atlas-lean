@@ -5,9 +5,9 @@ navigation: module
 
 # Variable Change Point
 
-- [Map Affine Coordinates](map-affine-coordinates.md)
-- [Affine Coordinates Equiv](affine-coordinates-equiv.md)
-- [Equation map Affine Coordinates iff](equation-map-affine-coordinates-iff.md)
-- [Affine Equation Equiv](affine-equation-equiv.md)
-- [Point Equiv](point-equiv.md)
-- [Nat Card point eq](nat-card-point-eq.md)
+- [Coordinate map of a Weierstrass variable change](map-affine-coordinates.md)
+- [Variable changes act bijectively on affine coordinates](affine-coordinates-equiv.md)
+- [Variable changes transform the Weierstrass equation](equation-map-affine-coordinates-iff.md)
+- [Variable changes biject affine solutions](affine-equation-equiv.md)
+- [Variable changes biject rational points](point-equiv.md)
+- [Variable changes preserve the point count](nat-card-point-eq.md)

@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Chapter7 Admissible](../part1-ch7-power-difference/chapter7-admissible.md)
+- [Admissible parameters for the power-difference series](../part1-ch7-power-difference/chapter7-admissible.md)
 
 ## Sources
 

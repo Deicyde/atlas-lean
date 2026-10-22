@@ -6,11 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.polarSet
 ---
 
-# Polar Set
+# Polar of a set
 
-The polar of a set `A` in a real inner-product space:
-`polarSet A = {y | ∀ x ∈ A, ⟪x, y⟫_ℝ ≤ 1}`, using the one-sided real
-inner-product convention `⟪x, y⟫_ℝ ≤ 1`.
+**Polar of a set.** Let $E$ be a real inner product space. The polar of a set $A \subseteq E$
+is the set $A^\circ = \{y \in E : \langle x, y \rangle \le 1 \text{ for all } x \in A\}$. This
+uses the one-sided bound $\langle x, y \rangle \le 1$, not $|\langle x, y \rangle| \le 1$.
 
 ## Depends on
 

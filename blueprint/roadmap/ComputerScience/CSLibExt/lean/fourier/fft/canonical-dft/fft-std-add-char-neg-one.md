@@ -17,7 +17,7 @@ The actual negative-sign source FFT is every canonical forward DFT coefficient.
 ## Proof depends on
 
 - [DFTCorrectness](../fft-correct.md)
-- [Dft Sum](../../../../../../Analysis/MathlibExt/part-01/fourier/fast-fourier-transform/dft-sum.md)
+- [Discrete Fourier sum](../../../../../../Analysis/MathlibExt/part-01/fourier/fast-fourier-transform/dft-sum.md)
 
 ## Sources
 

@@ -7,18 +7,20 @@ proof: formalized
 lean: Complex.wimanMaximumTerm_neg
 ---
 
-# Wiman Maximum Term neg
+# The Wiman maximum term is even in the radius
 
-Negating a radius does not change the maximum Taylor term.
+**The Wiman maximum term is even in the radius.** For every function
+$f : \mathbb{C} \to \mathbb{C}$ and every real number $r$, the Wiman maximum term of $f$ at
+radius $-r$ equals the Wiman maximum term of $f$ at radius $r$.
 
 ## Depends on
 
-- [Wiman Maximum Term](wiman-maximum-term.md)
+- [Wiman maximum term](wiman-maximum-term.md)
 
 ## Proof depends on
 
-- [Wiman Term](wiman-term.md)
-- [Wiman Term neg](wiman-term-neg.md)
+- [Wiman term](wiman-term.md)
+- [Wiman term at a negated radius](wiman-term-neg.md)
 
 ## Sources
 

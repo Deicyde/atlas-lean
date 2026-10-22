@@ -7,11 +7,12 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry2iEuleriangf.chapter5PolynomialShift_eq_taylor
 ---
 
-# Chapter5 Polynomial Shift eq taylor
+# The polynomial shift is the Taylor shift
 
-The shift is `Polynomial.taylor h p` (see `Polynomial.taylor_apply`); stated to match the
-`chapter5PolynomialShift_eq_taylor` interface of `Entry1Euleriangf`. The local definition is
-kept because the frozen `Wanted` statement references it by name.
+**The polynomial shift is the Taylor shift.** For a semiring $R$, an element $h \in R$ and a
+polynomial $p \in R[x]$, the shift $p(x + h)$ (the composition of $p$ with $x + h$) equals the
+Taylor expansion of $p$ at $h$, the polynomial whose coefficient of $x^k$ is the $k$-th Hasse
+derivative of $p$ evaluated at $h$.
 
 ## Depends on
 

@@ -7,19 +7,25 @@ proof: formalized
 lean: Polynomial.exists_monic_and_natDegree_eq_and_l1Norm_sub_lt_and_map_irreducible_and_separable
 ---
 
-# Exists monic and nat Degree eq and l1 Norm sub lt and map irreducible and separable
+# Approximation by irreducible separable polynomials over a dense field
 
-Dense scalar coefficients approximate a monic irreducible separable polynomial in `l1Norm`
-while preserving irreducibility and separability after mapping to the complete field.
+**Approximation by irreducible separable polynomials over a dense field.** Let $K$ be a field
+and $L$ a complete nontrivially normed field whose norm is ultrametric, with a $K$-algebra
+structure such that the image of $K$ in $L$ is dense. Let $f \in L[X]$ be monic, irreducible and
+separable, and let $\varepsilon > 0$ be real. Then there is a monic $g \in K[X]$ with
+$\deg g = \deg f$ such that, writing $\bar g \in L[X]$ for the image of $g$,
+$\lVert f - \bar g \rVert_1 < \varepsilon$, where $\lVert \cdot \rVert_1$ is the $\ell^1$ norm
+(the sum of the norms of the coefficients), and $\bar g$ is irreducible and separable in
+$L[X]$.
 
 ## Depends on
 
-- [L1 Norm](../../../../../../Algebra/MathlibExt/polynomial/l1-norm/l1-norm.md)
+- [L1 norm of a polynomial](../../../../../../Algebra/MathlibExt/polynomial/l1-norm/l1-norm.md)
 
 ## Proof depends on
 
-- [Exists pos irreducible and separable of l1 Norm sub lt](exists-pos-irreducible-and-separable-of.md)
-- [L1 Norm def](../../../../../../Algebra/MathlibExt/polynomial/l1-norm/l1-norm-def.md)
+- [Small monic perturbations stay irreducible and separable](exists-pos-irreducible-and-separable-of.md)
+- [L1 norm as a sum over the support](../../../../../../Algebra/MathlibExt/polynomial/l1-norm/l1-norm-def.md)
 
 ## Sources
 

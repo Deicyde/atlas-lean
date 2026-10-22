@@ -7,9 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.schwarz_reflection
 ---
 
-# Schwarz Reflection
+# Schwarz reflection principle
 
-Schwarz reflection principle (source: https://en.wikipedia.org/wiki/Schwarz_reflection_principle, statement `schwarz-refl-s1`): a function holomorphic on the upper half-plane extending continuously to the real diameter with real values there extends holomorphically across via `f (conj z) = conj (f z)`.
+**Schwarz reflection principle.** Let $f : \mathbb{C} \to \mathbb{C}$ be holomorphic on the
+open upper half-plane $\{z : \operatorname{Im} z > 0\}$, continuous on the closed upper half-plane
+$\{z : \operatorname{Im} z \ge 0\}$, and real-valued on the real axis. Then there is an entire
+function $g$ that agrees with $f$ on the closed upper half-plane and satisfies
+$g(\bar z) = \overline{g(z)}$ for every $z \in \mathbb{C}$.
 
 ## Depends on
 
@@ -18,3 +22,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Complex.SchwarzReflection](../../../../../../sources/v2/MathlibExt.md)
+- https://en.wikipedia.org/wiki/Schwarz_reflection_principle, statement `schwarz-refl-s1`.

@@ -5,5 +5,5 @@ navigation: module
 
 # Rpow
 
-- [Rpow](rpow.md)
-- [Rpow apply](rpow-apply.md)
+- [Powers of an absolute value](rpow.md)
+- [Values of a power of an absolute value](rpow-apply.md)

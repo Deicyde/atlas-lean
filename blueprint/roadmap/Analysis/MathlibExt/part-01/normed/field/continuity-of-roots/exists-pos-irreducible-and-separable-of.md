@@ -7,20 +7,23 @@ proof: formalized
 lean: Polynomial.exists_pos_irreducible_and_separable_of_l1Norm_sub_lt
 ---
 
-# Exists pos irreducible and separable of l1 Norm sub lt
+# Small monic perturbations stay irreducible and separable
 
-Irreducibility and separability persist under sufficiently small monic coefficient
-perturbations.
+**Small monic perturbations stay irreducible and separable.** Let $K$ be a complete
+nontrivially normed field whose norm is ultrametric, and let $f \in K[X]$ be monic, irreducible
+and separable. Then there is a real $\delta > 0$ such that every monic $g \in K[X]$ with
+$\lVert f - g \rVert_1 < \delta$, where $\lVert \cdot \rVert_1$ is the $\ell^1$ norm (the sum of
+the norms of the coefficients), is irreducible and separable.
 
 ## Depends on
 
-- [L1 Norm](../../../../../../Algebra/MathlibExt/polynomial/l1-norm/l1-norm.md)
+- [L1 norm of a polynomial](../../../../../../Algebra/MathlibExt/polynomial/l1-norm/l1-norm.md)
 
 ## Proof depends on
 
-- [Is Closest Conjugate](../is-closest-conjugate/is-closest-conjugate.md)
-- [Exists is Closest Conjugate root of l1 Norm sub lt](exists-is-closest-conjugate-root-of-l1-n.md)
-- [Degree Stability](../../../../../../Algebra/MathlibExt/polynomial/nat-degree-eq-of-monic-of-l1-norm-sub-lt.md)
+- [Closest conjugate](../is-closest-conjugate/is-closest-conjugate.md)
+- [Closest conjugate roots of nearby monic polynomials](exists-is-closest-conjugate-root-of-l1-n.md)
+- [Monic polynomials close in L1 norm have the same degree](../../../../../../Algebra/MathlibExt/polynomial/nat-degree-eq-of-monic-of-l1-norm-sub-lt.md)
 
 ## Sources
 

@@ -7,13 +7,14 @@ proof: formalized
 lean: Matrix.IsHermitian.charpoly_isRealRooted
 ---
 
-# Charpoly is Real Rooted
+# Hermitian matrices have real-rooted characteristic polynomials
 
-The characteristic polynomial of a Hermitian complex matrix is real-rooted.
+**Hermitian matrices have real-rooted characteristic polynomials.** The characteristic
+polynomial of a Hermitian complex matrix is real-rooted.
 
 ## Depends on
 
-- [Is Real Rooted](../../../../../Algebra/MathlibExt/polynomial/real-rooted/is-real-rooted.md)
+- [Real-rooted polynomials](../../../../../Algebra/MathlibExt/polynomial/real-rooted/is-real-rooted.md)
 
 ## Sources
 

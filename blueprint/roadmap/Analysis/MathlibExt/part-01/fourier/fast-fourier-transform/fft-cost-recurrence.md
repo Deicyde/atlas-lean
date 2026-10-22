@@ -7,16 +7,17 @@ proof: formalized
 lean: MathlibExt.Analysis.Fourier.FastFourierTransformWanted.fftCost_recurrence
 ---
 
-# Fft Cost recurrence
+# The FFT cost satisfies the radix-2 recurrence
 
-The `n log n` cost satisfies the radix-2 FFT recurrence.
+**The FFT cost satisfies the radix-2 recurrence.** Let $C(n) = n \lfloor \log_2 n \rfloor$ be the
+closed-form FFT operation count. For every natural number $n > 0$, $C(2n) = 2\,C(n) + 2n$.
 
-Proof: Apply `Nat.log_mul_base` to `n * 2`, commute the factors, and expand
-multiplication.
+Proof: Since $n > 0$, $\lfloor \log_2 (2n) \rfloor = \lfloor \log_2 n \rfloor + 1$; expand the
+product.
 
 ## Depends on
 
-- [Fft Cost](fft-cost.md)
+- [FFT operation count](fft-cost.md)
 
 ## Sources
 

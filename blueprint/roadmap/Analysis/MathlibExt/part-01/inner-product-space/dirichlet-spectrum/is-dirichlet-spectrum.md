@@ -6,19 +6,20 @@ statement: formalized
 lean: NonnegativeDiscreteSpectrum.IsDirichletSpectrum
 ---
 
-# Is Dirichlet Spectrum
+# Dirichlet spectrum of an open set
 
-A nonnegative discrete spectrum is the Dirichlet spectrum of `Ω` when every
-zero-based sequence value equals the variational min--max value. This is a
-pointwise equality, not an unconstrained certificate field.
+**Dirichlet spectrum of an open set.** A nonnegative discrete spectrum $S = (S_j)_{j \ge 0}$
+is the Dirichlet spectrum of an open set $\Omega \subseteq \mathbb{R}^n$ when
+$S_j = \lambda_j(\Omega)$ for every $j \ge 0$, where $\lambda_j(\Omega)$ is the variational
+eigenvalue of $\Omega$ at index $j$.
 
 ## Depends on
 
-- [Nonnegative Discrete Spectrum](../discrete-spectrum/nonnegative-discrete-spectrum.md)
+- [Nonnegative discrete spectrum](../discrete-spectrum/nonnegative-discrete-spectrum.md)
 
 ## Proof depends on
 
-- [Variational Eigenvalue](variational-eigenvalue.md)
+- [Variational eigenvalue](variational-eigenvalue.md)
 
 ## Sources
 

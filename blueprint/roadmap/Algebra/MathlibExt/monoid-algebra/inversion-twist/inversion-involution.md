@@ -13,7 +13,7 @@ Applying the group-ring inversion twice is the identity.
 
 ## Depends on
 
-- [Inversion](inversion.md)
+- [Inversion on a group ring](inversion.md)
 
 ## Sources
 

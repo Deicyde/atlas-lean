@@ -14,12 +14,12 @@ polynomial.
 
 ## Depends on
 
-- [Mixed Characteristic Polynomial](mixed-characteristic-polynomial.md)
+- [Mixed characteristic polynomial](mixed-characteristic-polynomial.md)
 
 ## Proof depends on
 
-- [Mixed Det Polynomial](mixed-det-polynomial.md)
-- [Mixed Differential](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential.md)
+- [Mixed determinant polynomial](mixed-det-polynomial.md)
+- [Mixed differential operator](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential.md)
 
 ## Sources
 

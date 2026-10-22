@@ -7,17 +7,19 @@ proof: formalized
 lean: ConvergesNormallyOn.mono
 ---
 
-# Mono
+# Normal convergence passes to subsets
 
-Normal convergence persists when the domain shrinks.
+**Normal convergence passes to subsets.** Let $f_n \colon X \to E$ ($n \in \mathbb{N}$) be
+functions into a seminormed additive commutative group $E$ and let $T \subseteq S \subseteq X$.
+If the series $\sum_n f_n$ converges normally on $S$, then it converges normally on $T$.
 
 ## Depends on
 
-- [Sup Norm On](sup-norm-on.md)
+- [Extended supremum norm on a set](sup-norm-on.md)
 
 ## Proof depends on
 
-- [Sup Norm On mono](sup-norm-on-mono.md)
+- [Monotonicity of the supremum norm in the domain](sup-norm-on-mono.md)
 
 ## Sources
 

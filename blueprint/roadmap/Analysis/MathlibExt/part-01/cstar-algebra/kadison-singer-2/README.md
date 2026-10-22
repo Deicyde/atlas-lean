@@ -5,5 +5,5 @@ navigation: module
 
 # Kadison Singer
 
-- [Paving Proj](paving-proj.md)
-- [Kadison singer paving](kadison-singer-paving.md)
+- [Paving projection](paving-proj.md)
+- [Anderson paving theorem](kadison-singer-paving.md)

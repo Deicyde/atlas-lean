@@ -7,14 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.partialDeriv_spec
 ---
 
-# Partial Deriv spec
+# Partial derivative as the derivative of a coordinate slice
 
-Characteristic spec: the partial is the single-variable derivative of the
-axis slice.
+**Partial derivative as the derivative of a coordinate slice.** For
+$f : \mathbb{R}^n \to \mathbb{R}$, a coordinate index $i$ and a point $x \in \mathbb{R}^n$, let
+$e_i$ be the $i$-th standard basis vector. The partial derivative of $f$ along the $i$-th
+coordinate axis at $x$ equals the derivative at $t = 0$ of the one-variable function
+$t \mapsto f(x + t e_i)$, taken to be $0$ when that function is not differentiable at $0$.
 
 ## Depends on
 
-- [Partial Deriv](partial-deriv.md)
+- [Partial derivative along a coordinate axis](partial-deriv.md)
 
 ## Sources
 

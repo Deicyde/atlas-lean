@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7Admissible
 ---
 
-# Chapter7 Admissible
+# Admissible parameters for the power-difference series
 
-`x` is admissible when no shifted base `j + 1 + x` vanishes, i.e. `x ∉ {-1, -2, …}`.
+**Admissible parameters for the power-difference series.** A complex number $x$ is admissible
+when $j + 1 + x \ne 0$ for every natural number $j$, that is, when $x$ is not one of
+$-1, -2, -3, \dots$.
 
 ## Depends on
 

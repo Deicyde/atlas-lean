@@ -6,13 +6,16 @@ statement: formalized
 lean: RectilinearCycle.index
 ---
 
-# Index
+# Index of a rectilinear cycle
 
-The analytic index expression of a rectilinear cycle about `w`.
+**Index of a rectilinear cycle.** For a rectilinear cycle $\Gamma$ and a point
+$w \in \mathbb{C}$, the index of $\Gamma$ about $w$ is
+$\frac{1}{2\pi i}\int_\Gamma \frac{dz}{z - w}$, the contour integral over $\Gamma$ of
+$z \mapsto (z - w)^{-1}$, multiplied by $(2\pi i)^{-1}$.
 
-Lean's inverse is total, so the definition also has a value when `w` lies
-on a presented rectangle boundary; no geometric winding-number claim is made
-there.
+With the conventions $0^{-1} = 0$ and that a non-integrable integral is $0$, the formula also
+has a value when $w$ lies on the boundary of a rectangle occurring in $\Gamma$; no geometric
+winding-number claim is made there.
 
 ## Depends on
 
@@ -20,7 +23,7 @@ there.
 
 ## Proof depends on
 
-- [Integral](integral.md)
+- [Contour integral over a rectilinear cycle](integral.md)
 
 ## Sources
 

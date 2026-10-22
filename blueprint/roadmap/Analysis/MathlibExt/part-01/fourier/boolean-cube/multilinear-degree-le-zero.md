@@ -7,19 +7,20 @@ proof: formalized
 lean: BooleanCube.multilinearDegreeLE_zero
 ---
 
-# Multilinear Degree LE zero
+# The zero function satisfies every Fourier degree bound
 
-The zero function has Fourier degree at most every natural number.
+**The zero function satisfies every Fourier degree bound.** For all natural numbers $n$ and
+$d$, the zero function on the Boolean cube of dimension $n$ has Fourier degree at most $d$.
 
 ## Depends on
 
-- [Bool Cube](bool-cube.md)
-- [Multilinear Degree LE](multilinear-degree-le.md)
+- [Boolean cube](bool-cube.md)
+- [Fourier degree at most $d$](multilinear-degree-le.md)
 
 ## Proof depends on
 
-- [Bool Fourier Coeff](bool-fourier-coeff.md)
-- [Bool Fourier Coeff zero](bool-fourier-coeff-zero.md)
+- [Fourier coefficient on the Boolean cube](bool-fourier-coeff.md)
+- [Fourier coefficients of the zero function](bool-fourier-coeff-zero.md)
 
 ## Sources
 

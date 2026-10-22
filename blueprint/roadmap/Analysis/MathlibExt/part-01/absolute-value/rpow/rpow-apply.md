@@ -7,13 +7,15 @@ proof: formalized
 lean: AbsoluteValue.rpow_apply
 ---
 
-# Rpow apply
+# Values of a power of an absolute value
 
-Evaluation of `AbsoluteValue.rpow`.
+**Values of a power of an absolute value.** Let $R$ be a semiring, $v$ a real-valued
+absolute value on $R$ and $c$ a real number with $0 < c \le 1$. The $c$-th power of $v$ takes
+the value $v(x)^c$ at every $x \in R$.
 
 ## Depends on
 
-- [Rpow](rpow.md)
+- [Powers of an absolute value](rpow.md)
 
 ## Sources
 

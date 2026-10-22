@@ -7,14 +7,12 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.BanachSaksWanted.banach_saks
 ---
 
-# Banach Saks
+# Banach–Saks theorem for uniformly convex spaces
 
-In a uniformly convex real Banach space, every norm-bounded sequence `x : ℕ → E` admits a strictly
-increasing subsequence `φ` and a point `y` such that the Cesàro means `(n:ℝ)⁻¹ • ∑ i ∈ range n, x
-(φ i)` converge to `y` in norm. Source: S. Banach and S. Saks, Studia Math. 2 (1930) 51-57;
-uniformly convex form and property due to Kakutani, 1939; textbook Diestel, Sequences and Series
-in Banach Spaces; Lean gives uniformly convex real Banach specialization with explicit `StrictMono
-φ` and norm-convergent Cesàro means.
+**Banach–Saks theorem for uniformly convex spaces.** Let $E$ be a uniformly convex real Banach
+space and let $(x_n)_{n \in \mathbb{N}}$ be a bounded sequence in $E$. Then there are a strictly
+increasing map $\varphi : \mathbb{N} \to \mathbb{N}$ and a point $y \in E$ such that the Cesàro
+means $\frac{1}{n} \sum_{i=0}^{n-1} x_{\varphi(i)}$ converge to $y$ in norm as $n \to \infty$.
 
 ## Depends on
 
@@ -22,9 +20,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Eberlein Smulian](eberlein-smulian.md)
-- [Milman Pettis](milman-pettis.md)
+- [Eberlein–Šmulian theorem](eberlein-smulian.md)
+- [Milman–Pettis theorem](milman-pettis.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.BanachSaks](../../../../../../sources/v2/MathlibExt.md)
+- S. Banach and S. Saks, Studia Math. 2 (1930) 51-57; uniformly convex form and property due to Kakutani, 1939; textbook Diestel, Sequences and Series in Banach Spaces; Lean gives uniformly convex real Banach specialization with explicit `StrictMono φ` and norm-convergent Cesàro means.

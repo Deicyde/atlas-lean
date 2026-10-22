@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.AlgebraicGeometry.TopologicalReconstructionWanted.AlgebraicGeometry.TopologicalReconstruction.IsNormalScheme
 ---
 
-# Is Normal Scheme
+# Normal scheme
 
-A scheme X is normal if for all `x : X` the local ring O_{X,x} is a normal domain.
+**Normal scheme.** A scheme $X$ is normal if for every point $x \in X$ the local ring
+$\mathcal{O}_{X,x}$ is an integrally closed domain.
 
 ## Depends on
 

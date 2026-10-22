@@ -7,14 +7,16 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.chapter6Section13ExampleCTerm_succ
 ---
 
-# Chapter6 Section13 Example CTerm succ
+# Recursion for the terms of Ramanujan's factorial series
 
-Peeling off the first factor: the `(j + 1)`-th term at `x` is `-1 / (x + 1)` times the
-`j`-th term at `x + 1`.
+**Recursion for the terms of Ramanujan's factorial series.** Write
+$c_j(x) = (-1)^j / ((x + 1)(x + 2) \cdots (x + j + 1))$ for the $j$-th term of Ramanujan's
+factorial series, with division by $0$ read as $0$. For every real $x$ and every natural number
+$j$, $c_{j+1}(x) = -\frac{1}{x + 1} \, c_j(x + 1)$.
 
 ## Depends on
 
-- [Chapter6 Section13 Example CTerm](chapter6-section13-example-cterm.md)
+- [Terms of Ramanujan's factorial series](chapter6-section13-example-cterm.md)
 
 ## Sources
 

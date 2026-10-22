@@ -6,9 +6,11 @@ statement: formalized
 lean: CurveDivisor.eval
 ---
 
-# Eval
+# Evaluation of a divisor against a function
 
-Evaluate a divisor by multiplying the corresponding integer powers of `f`.
+**Evaluation of a divisor against a function.** For a commutative group $G$, a function
+$f : C \to G$ and a divisor $D$ on $C$, the evaluation of $D$ against $f$ is the element
+$f(D) = \prod_{P \in \operatorname{supp} D} f(P)^{D(P)}$ of $G$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Eval Monoid Hom](eval-monoid-hom.md)
+- [Evaluation of divisors as a group homomorphism](eval-monoid-hom.md)
 
 ## Sources
 

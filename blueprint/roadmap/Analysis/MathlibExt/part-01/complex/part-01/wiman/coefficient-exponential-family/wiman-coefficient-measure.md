@@ -6,9 +6,11 @@ statement: formalized
 lean: Complex.wimanCoefficientMeasure
 ---
 
-# Wiman Coefficient Measure
+# Wiman coefficient measure
 
-The atomic measure whose mass at `n` is the norm of the `n`th Taylor coefficient.
+**Wiman coefficient measure.** For $f : \mathbb{C} \to \mathbb{C}$ with Taylor coefficients
+$a_n = f^{(n)}(0)/n!$ at $0$, the Wiman coefficient measure of $f$ is the measure
+$\mu_f = \sum_{n \ge 0} |a_n|\,\delta_n$ on $\mathbb{N}$, which gives each $n$ mass $|a_n|$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Wiman Taylor Coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
+- [Wiman Taylor coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
 
 ## Sources
 

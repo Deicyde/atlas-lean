@@ -5,5 +5,5 @@ navigation: module
 
 # Kirszbraun
 
-- [Kirszbraun general](kirszbraun-general.md)
-- [Kirszbraun](kirszbraun.md)
+- [Kirszbraun extension theorem](kirszbraun-general.md)
+- [Kirszbraun extension theorem for Hilbert spaces](kirszbraun.md)

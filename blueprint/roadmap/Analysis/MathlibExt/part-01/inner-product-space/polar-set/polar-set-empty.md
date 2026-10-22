@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.polarSet_empty
 ---
 
-# Polar Set empty
+# Polar of the empty set
 
-The polar of the empty set is everything (the condition is vacuous).
+**Polar of the empty set.** In a real inner product space $E$, the polar of the empty
+set is all of $E$, since the defining condition is vacuous.
 
 ## Depends on
 
-- [Polar Set](polar-set.md)
+- [Polar of a set](polar-set.md)
 
 ## Sources
 

@@ -5,5 +5,5 @@ navigation: module
 
 # Free Lie Multihomogeneous Component
 
-- [Is Free Lie Monomial](is-free-lie-monomial.md)
-- [Free Lie Multihomogeneous Component](free-lie-multihomogeneous-component.md)
+- [Free Lie monomials](is-free-lie-monomial.md)
+- [Multihomogeneous components of a free Lie algebra](free-lie-multihomogeneous-component.md)

@@ -7,11 +7,10 @@ proof: formalized
 lean: MetaMathlibExt.candido_identity
 ---
 
-# Candido Identity
+# Candido's identity
 
-Candido polynomial identity:
-`2 * (x ^ 4 + y ^ 4 + (x + y) ^ 4) = (x ^ 2 + y ^ 2 + (x + y) ^ 2) ^ 2`,
-valid over any commutative semiring.
+**Candido's identity.** For all elements $x$ and $y$ of a commutative semiring,
+$2\left(x^4 + y^4 + (x + y)^4\right) = \left(x^2 + y^2 + (x + y)^2\right)^2$.
 
 ## Depends on
 

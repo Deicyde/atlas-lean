@@ -6,9 +6,11 @@ statement: formalized
 lean: TorusSobolev.oneLogLeadingCoefficientInfimum
 ---
 
-# One Log Leading Coefficient Infimum
+# Optimal one-log coefficient
 
-The infimum over leading coefficients whose actual uniform bound holds.
+**Optimal one-log coefficient.** The infimum, taken in the extended reals, of all real
+numbers $c$ for which there is a real constant $K$ such that the one-log bound with
+coefficient $c$ and constant $K$ holds. It is $+\infty$ when no such $c$ exists.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [One Log Bound](one-log-bound.md)
+- [One-log bound with coefficient $c$ and constant $K$](one-log-bound.md)
 
 ## Sources
 

@@ -6,19 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.IsHannerPolytope.dimension_pos
 ---
 
-# Dimension pos
+# Hanner polytopes live in positive dimension
 
-Every Hanner polytope has positive dimension.
+**Hanner polytopes live in positive dimension.** If $K \subseteq \mathbb{R}^n$ is a Hanner
+polytope, then $0 < n$.
 
 ## Depends on
 
-- [Is Hanner Polytope](is-hanner-polytope.md)
+- [Hanner polytopes](is-hanner-polytope.md)
 
 ## Proof depends on
 
-- [Hanner Infinity Sum](hanner-infinity-sum.md)
-- [Hanner One Sum](hanner-one-sum.md)
-- [Hanner Unit Segment](hanner-unit-segment.md)
+- [$\ell_\infty$ sum of bodies](hanner-infinity-sum.md)
+- [$\ell_1$ sum of bodies](hanner-one-sum.md)
+- [Centered unit segment](hanner-unit-segment.md)
 
 ## Sources
 

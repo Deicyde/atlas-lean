@@ -17,12 +17,12 @@ The real-variable prime number theorem in a residue class for `ψ`.
 
 ## Proof depends on
 
-- [Monotone Integral Criterion](../../../../../../Analysis/MathlibExt/part-01/asymptotics/is-equivalent-id-of-monotone-on-of-tends.md)
-- [Has Laplace](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/basic/has-laplace.md)
-- [Laplace Convergent](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/basic/laplace-convergent.md)
-- [Laplace](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/basic/laplace.md)
-- [Laplace Convergent of norm le exp](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/exponential-bound/laplace-convergent-of-norm-le-exp.md)
-- [Newman Tauberian](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/newman-tauberian.md)
+- [Integral criterion for asymptotic equivalence to the identity](../../../../../../Analysis/MathlibExt/part-01/asymptotics/is-equivalent-id-of-monotone-on-of-tends.md)
+- [Laplace transform with a given value](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/basic/has-laplace.md)
+- [Convergence of the Laplace transform](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/basic/laplace-convergent.md)
+- [The one-sided Laplace transform](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/basic/laplace.md)
+- [Convergence of the Laplace transform under an exponential bound](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/exponential-bound/laplace-convergent-of-norm-le-exp.md)
+- [Newman's Tauberian theorem](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/newman-tauberian.md)
 
 ## Sources
 

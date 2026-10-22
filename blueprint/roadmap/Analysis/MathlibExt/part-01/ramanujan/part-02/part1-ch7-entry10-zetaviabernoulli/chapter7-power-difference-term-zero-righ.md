@@ -7,10 +7,10 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry10Zetaviabernoulli.chapter7PowerDifferenceTerm_zero_right
 ---
 
-# Chapter7 Power Difference Term zero right
+# Power-difference terms vanish at $x = 0$
 
-Compatibility alias for the former
-`Entry10Zetaviabernoulli.chapter7PowerDifferenceTerm_zero_right`.
+**Power-difference terms vanish at $x = 0$.** For every $r \in \mathbb{C}$ and every natural
+number $j$, the power-difference term $(j + 1)^r - (j + 1 + x)^r$ vanishes at $x = 0$.
 
 ## Depends on
 
@@ -18,7 +18,7 @@ Compatibility alias for the former
 
 ## Proof depends on
 
-- [Chapter7 Power Difference Term](../part1-ch7-power-difference/chapter7-power-difference-term.md)
+- [Terms of the power-difference series](../part1-ch7-power-difference/chapter7-power-difference-term.md)
 
 ## Sources
 

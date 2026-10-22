@@ -7,13 +7,16 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.KyFanWanted.ky_fan_eigenvalue_sum_le
 ---
 
-# Ky fan eigenvalue sum le
+# Ky Fan inequality for sums of largest eigenvalues
 
-Sum of k largest eigenvalues of A+B is at most sum for A plus sum for B.
+**Ky Fan inequality for sums of largest eigenvalues.** Let $A$ and $B$ be Hermitian $n \times n$
+complex matrices and let $k \le n$. Then the sum of the $k$ largest eigenvalues of $A + B$ is at
+most the sum of the $k$ largest eigenvalues of $A$ plus the sum of the $k$ largest eigenvalues
+of $B$, where eigenvalues are counted with multiplicity.
 
 ## Depends on
 
-- [Eig Pref Sum](eig-pref-sum.md)
+- [Prefix sum of a finite real sequence](eig-pref-sum.md)
 
 ## Sources
 

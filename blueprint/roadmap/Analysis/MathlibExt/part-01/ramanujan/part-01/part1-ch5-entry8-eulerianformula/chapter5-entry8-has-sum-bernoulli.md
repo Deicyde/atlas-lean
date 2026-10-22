@@ -7,11 +7,11 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry8Eulerianformula.chapter5Entry8_hasSum_bernoulli
 ---
 
-# Chapter5 Entry8 has Sum bernoulli
+# Bernoulli-number expansion of 1/(e^z + 1) in the disc of radius pi
 
-Component of Entry 8 (see `ramanujan_part1_ch5_entry8_eulerianformula`):
-Bernoulli-number series for `1 / (Complex.exp z + 1)`, without the unrelated
-positive `n` required by the bundled statement.
+**Bernoulli-number expansion of 1/(e^z + 1) in the disc of radius pi.** Let $B_m$ be the
+Bernoulli numbers, with $B_1 = -\tfrac{1}{2}$. For every complex number $z$ with $|z| < \pi$, the
+series $\sum_{j \ge 0} (1 - 2^{j+1}) B_{j+1} z^j/(j+1)!$ is summable with sum $1/(e^z + 1)$.
 
 ## Depends on
 

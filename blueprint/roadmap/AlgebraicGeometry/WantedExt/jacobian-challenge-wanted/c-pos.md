@@ -5,14 +5,14 @@ statement: formalized
 lean: MathlibExt.AlgebraicGeometry.JacobianChallengeWanted.c_pos
 ---
 
-# C pos
+# The uniform Mordell–Lang constant is at least one
 
-The uniform constant of Theorem 1.1 satisfies `c(g, d) ≥ 1`, as the
-source statement requires.
+**The uniform Mordell–Lang constant is at least one.** For all natural numbers $g$ and
+$d$, the uniform constant satisfies $c(g, d) \ge 1$.
 
 ## Depends on
 
-- [C](c.md)
+- [Uniform Mordell–Lang constant](c.md)
 
 ## Sources
 

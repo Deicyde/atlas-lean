@@ -7,18 +7,20 @@ proof: formalized
 lean: Complex.wimanMaximumTerm_le_iff
 ---
 
-# Wiman Maximum Term le iff
+# Bounding the maximum term
 
-The maximum term is below a bound exactly when every Taylor term is.
+**Bounding the maximum term.** Let $f$ be an entire function with Taylor coefficients $a_n$
+at the origin and maximum term $\mu(r) = \sup_n |a_n|\,|r|^n$. For all real $r$ and $c$,
+$\mu(r) \le c$ if and only if $|a_n|\,|r|^n \le c$ for every $n \in \mathbb{N}$.
 
 ## Depends on
 
-- [Wiman Maximum Term](../../../part-02/wiman/wiman-maximum-term.md)
-- [Wiman Term](../../../part-02/wiman/wiman-term.md)
+- [Wiman maximum term](../../../part-02/wiman/wiman-maximum-term.md)
+- [Wiman term](../../../part-02/wiman/wiman-term.md)
 
 ## Proof depends on
 
-- [Wiman Term le wiman Maximum Term](wiman-term-le-wiman-maximum-term.md)
+- [Each Taylor term is at most the maximum term](wiman-term-le-wiman-maximum-term.md)
 
 ## Sources
 

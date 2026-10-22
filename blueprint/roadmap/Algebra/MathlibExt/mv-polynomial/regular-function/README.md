@@ -7,14 +7,14 @@ navigation: module
 
 ## Mv Polynomial
 
-- [Regular Function](regular-function.md)
+- [Regular functions](regular-function.md)
 
 ## Regular Function
 
-- [Jacobian](jacobian.md)
-- [Comp](comp.md)
-- [Id comp](id-comp.md)
-- [Comp id](comp-id.md)
-- [Comp assoc](comp-assoc.md)
-- [Aeval](aeval.md)
-- [Comp aeval](comp-aeval.md)
+- [Jacobian matrix of a regular function](jacobian.md)
+- [Composition of regular functions](comp.md)
+- [The identity is a left unit for composition](id-comp.md)
+- [The identity is a right unit for composition](comp-id.md)
+- [Associativity of composition of regular functions](comp-assoc.md)
+- [Evaluation of a regular function at a point](aeval.md)
+- [Evaluation respects composition](comp-aeval.md)

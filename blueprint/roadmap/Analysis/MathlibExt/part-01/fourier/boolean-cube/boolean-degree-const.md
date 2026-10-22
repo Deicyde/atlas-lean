@@ -7,19 +7,21 @@ proof: formalized
 lean: BooleanCube.booleanDegree_const
 ---
 
-# Boolean Degree const
+# Constant functions have Boolean degree zero
 
-Constants have Boolean degree zero.
+**Constant functions have Boolean degree zero.** For every $n \in \mathbb{N}$ and every Boolean
+value $b$, the constant function $x \mapsto b$ on the Boolean cube of dimension $n$ has Boolean
+degree $0$.
 
 ## Depends on
 
-- [Bool Cube](bool-cube.md)
-- [Boolean Degree](boolean-degree.md)
+- [Boolean cube](bool-cube.md)
+- [Boolean degree](boolean-degree.md)
 
 ## Proof depends on
 
-- [Multilinear Extension](multilinear-extension.md)
-- [Multilinear Extension const](multilinear-extension-const.md)
+- [Multilinear extension](multilinear-extension.md)
+- [Multilinear extension of a constant function](multilinear-extension-const.md)
 
 ## Sources
 

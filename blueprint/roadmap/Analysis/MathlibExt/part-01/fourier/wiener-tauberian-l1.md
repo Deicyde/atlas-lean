@@ -7,10 +7,16 @@ proof: formalized
 lean: MathlibExt.Analysis.Fourier.WienerWanted.wiener_tauberian_L1
 ---
 
-# Wiener Tauberian
+# Wiener's Tauberian theorem on $L^1(\mathbb{R})$
 
-Wiener Tauberian/approximation `L¹(ℝ)`: `f : ℝ → ℂ` `Integrable` with `𝓕 f` nowhere zero, translates
-span dense in `L¹`.
+**Wiener's Tauberian theorem on $L^1(\mathbb{R})$.** Let $f : \mathbb{R} \to \mathbb{C}$ be
+Lebesgue integrable, and suppose that its Fourier transform
+$\hat f(w) = \int_{\mathbb{R}} e^{-2\pi i x w} f(x)\,dx$ vanishes at no real $w$. Then for every
+Lebesgue integrable $g : \mathbb{R} \to \mathbb{C}$ and every $\varepsilon > 0$ there are a finite
+set $S \subset \mathbb{R}$ and coefficients $c_t \in \mathbb{C}$ for $t \in S$ such that the
+function $h(x) = g(x) - \sum_{t \in S} c_t f(x - t)$ is integrable and
+$\int_{\mathbb{R}} |h(x)|\,dx < \varepsilon$. In other words, the translates of $f$ span a dense
+subspace of $L^1(\mathbb{R})$.
 
 ## Depends on
 
@@ -18,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fourier comp mul left of pos](scaling/fourier-comp-mul-left-of-pos.md)
+- [Fourier transform of a dilation by a positive factor](scaling/fourier-comp-mul-left-of-pos.md)
 
 ## Sources
 

@@ -7,19 +7,23 @@ proof: formalized
 lean: Complex.wimanTiltedMeasure_eq_sum
 ---
 
-# Wiman Tilted Measure eq sum
+# Atomic form of the tilted coefficient measure
 
-The tilted measure has the atomic mass representation of normalized Taylor terms.
+**Atomic form of the tilted coefficient measure.** Let $f$ be an entire function with Taylor
+coefficients $a_n = f^{(n)}(0)/n!$, radial majorant $M_f(r) = \sum_n |a_n|\,|r|^n$ and Taylor terms
+$T_n(r) = |a_n|\,|r|^n$. For every real $x$, the tilted coefficient measure $\mu_{f,x}$ equals
+$\sum_{n \in \mathbb{N}} \frac{T_n(e^x)}{M_f(e^x)}\,\delta_n$, the measure on $\mathbb{N}$ with mass
+$T_n(e^x) / M_f(e^x)$ at each $n$ (with the convention $t/0 = 0$).
 
 ## Depends on
 
-- [Wiman Majorant](../radial-majorant/wiman-majorant.md)
-- [Wiman Term](../../../part-02/wiman/wiman-term.md)
-- [Wiman Tilted Measure](wiman-tilted-measure.md)
+- [Radial majorant](../radial-majorant/wiman-majorant.md)
+- [Wiman term](../../../part-02/wiman/wiman-term.md)
+- [Tilted coefficient measure](wiman-tilted-measure.md)
 
 ## Proof depends on
 
-- [Wiman Tilted Measure singleton](wiman-tilted-measure-singleton.md)
+- [Atoms of the tilted coefficient measure](wiman-tilted-measure-singleton.md)
 
 ## Sources
 

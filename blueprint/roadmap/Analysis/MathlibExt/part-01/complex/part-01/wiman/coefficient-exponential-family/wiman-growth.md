@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Wiman Majorant](../radial-majorant/wiman-majorant.md)
+- [Radial majorant](../radial-majorant/wiman-majorant.md)
 
 ## Sources
 

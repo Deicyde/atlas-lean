@@ -16,10 +16,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Zero Mean H2](../basic/is-zero-mean-h2.md)
-- [Torus](../basic/torus.md)
-- [Frequency Ratio](../basic/frequency-ratio.md)
-- [Gradient Energy](../basic/gradient-energy.md)
+- [Zero-mean $H^2$ functions](../basic/is-zero-mean-h2.md)
+- [The torus of period $2\pi$](../basic/torus.md)
+- [Frequency ratio](../basic/frequency-ratio.md)
+- [Gradient energy](../basic/gradient-energy.md)
 
 ## Sources
 

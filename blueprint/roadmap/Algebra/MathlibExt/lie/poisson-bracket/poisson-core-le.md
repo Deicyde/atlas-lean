@@ -7,18 +7,19 @@ proof: formalized
 lean: MathlibExt.Algebra.Lie.PoissonBracket.poissonCore_le
 ---
 
-# Poisson Core le
+# The Poisson core is contained in the ideal
 
-The Poisson core lies below `J`.
+**The Poisson core is contained in the ideal.** Let $A$ be a commutative $\mathbb{C}$-algebra
+with a Poisson bracket. For every ideal $J$ of $A$, the Poisson core of $J$ is contained in $J$.
 
 ## Depends on
 
-- [Poisson Bracket](poisson-bracket.md)
-- [Poisson Core](poisson-core.md)
+- [Poisson bracket](poisson-bracket.md)
+- [Poisson core](poisson-core.md)
 
 ## Proof depends on
 
-- [Is Poisson Ideal](is-poisson-ideal.md)
+- [Poisson ideal](is-poisson-ideal.md)
 
 ## Sources
 

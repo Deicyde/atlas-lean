@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Monotone Integral Criterion](../../../Analysis/MathlibExt/part-01/asymptotics/is-equivalent-id-of-monotone-on-of-tends.md)
+- [Integral criterion for asymptotic equivalence to the identity](../../../Analysis/MathlibExt/part-01/asymptotics/is-equivalent-id-of-monotone-on-of-tends.md)
 - [Abs normalized Theta Error le](../part-02/prime-counting/part-01/normalized-theta-error/abs-normalized-theta-error-le.md)
 - [Has Laplace normalized Theta Error](../part-02/prime-counting/part-01/laplace-theta-continuation/has-laplace-normalized-theta-error.md)
 - [Measurable normalized Theta Error](../part-02/prime-counting/part-01/normalized-theta-error/measurable-normalized-theta-error.md)
@@ -29,7 +29,7 @@ This node has no prerequisites.
 - [Normalized Theta Error Continuation](../part-02/prime-counting/part-01/laplace-theta-continuation/normalized-theta-error-continuation.md)
 - [Normalized Theta Error Continuation analytic On](../part-02/prime-counting/part-01/laplace-theta-continuation/normalized-theta-error-continuation-anal.md)
 - [Prime Counting is Equivalent of theta is Equivalent](../part-02/prime-counting/part-01/chebyshev/prime-counting-is-equivalent-of-theta-is.md)
-- [Newman Tauberian](../../../Analysis/MathlibExt/part-01/laplace-transform/newman-tauberian.md)
+- [Newman's Tauberian theorem](../../../Analysis/MathlibExt/part-01/laplace-transform/newman-tauberian.md)
 
 ## Sources
 

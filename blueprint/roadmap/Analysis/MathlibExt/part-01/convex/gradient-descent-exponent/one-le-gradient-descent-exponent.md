@@ -7,18 +7,19 @@ proof: formalized
 lean: one_le_gradientDescentExponent
 ---
 
-# One le gradient Descent Exponent
+# The gradient descent exponent is at least one
 
-The actual optimization family is nonempty and C35 is at least one.
+**The gradient descent exponent is at least one.** The gradient descent exponent is at
+least $1$.
 
 ## Depends on
 
-- [Gradient Descent Exponent](gradient-descent-exponent.md)
+- [The gradient descent exponent](gradient-descent-exponent.md)
 
 ## Proof depends on
 
-- [Gradient Descent Uniform Rate](gradient-descent-uniform-rate.md)
-- [Gradient Descent Uniform Rate one](gradient-descent-uniform-rate-one.md)
+- [Uniform last-iterate rate of a step schedule](gradient-descent-uniform-rate.md)
+- [Constant unit steps achieve exponent one](gradient-descent-uniform-rate-one.md)
 
 ## Sources
 

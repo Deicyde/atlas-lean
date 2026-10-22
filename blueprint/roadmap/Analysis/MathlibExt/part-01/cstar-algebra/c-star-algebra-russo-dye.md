@@ -7,11 +7,10 @@ proof: formalized
 lean: MathlibExt.Analysis.CStarAlgebra.LandmarkWanted.cStarAlgebra_russoDye
 ---
 
-# Russo Dye
+# Russo–Dye theorem
 
-In a C*-algebra, the norm-closure of the convex hull of unitaries equals the closed unit ball
-`closedBall 0 1`. Source: Russo–Dye theorem, B. Russo–H. Dye, Duke Math. J. 33 (1966); see
-Takesaki I; Lean is norm-closure of convex hull of unitaries equals closed unit ball.
+**Russo–Dye theorem.** In a unital C*-algebra $A$, the norm closure of the convex hull of the
+unitary elements of $A$ equals the closed unit ball $\{a \in A : \|a\| \le 1\}$.
 
 ## Depends on
 
@@ -20,3 +19,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.CStarAlgebra.RussoDye](../../../../../sources/v2/MathlibExt.md)
+- Russo–Dye theorem, B. Russo–H. Dye, Duke Math. J. 33 (1966); see Takesaki I; Lean is norm-closure of convex hull of unitaries equals closed unit ball.

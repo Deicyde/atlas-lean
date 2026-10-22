@@ -7,21 +7,25 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry6Harmonic.chapter6ConvergentSumExtension_natCast
 ---
 
-# Chapter6 Convergent Sum Extension nat Cast
+# Ramanujan's extension agrees with the partial sums at natural numbers
 
-At natural numbers the extension is the partial sum `f 1 + ⋯ + f m`.
+**Ramanujan's extension agrees with the partial sums at natural numbers.** Let
+$f : \mathbb{R} \to \mathbb{R}$ and let $F(x) = \sum_{k \ge 1} f(k) - \sum_{k \ge 1} f(k + x)$,
+where a series that is not summable is given the value $0$. If the series
+$\sum_{k \ge 1} f(k)$ is summable, then $F(m) = f(1) + f(2) + \cdots + f(m)$ for every natural
+number $m$ (for $m = 0$ the right side is the empty sum $0$).
 
 ## Depends on
 
-- [Chapter6 Convergent Sum Extension](chapter6-convergent-sum-extension.md)
-- [Chapter6 Partial Sum](chapter6-partial-sum.md)
-- [Chapter6 Shifted Derived Series Term](chapter6-shifted-derived-series-term.md)
+- [Ramanujan's extension of partial sums](chapter6-convergent-sum-extension.md)
+- [Partial sums of a real function over the positive integers](chapter6-partial-sum.md)
+- [Terms of the shifted derivative series](chapter6-shifted-derived-series-term.md)
 
 ## Proof depends on
 
-- [Chapter6 Convergent Sum Extension sub sub one](chapter6-convergent-sum-extension-sub-su.md)
-- [Chapter6 Derived Series Constant](chapter6-derived-series-constant.md)
-- [Summable chapter6 Shifted Derived Series Term nat Cast](summable-chapter6-shifted-derived-series.md)
+- [Difference equation for Ramanujan's extension](chapter6-convergent-sum-extension-sub-su.md)
+- [Ramanujan's derivative-series constants](chapter6-derived-series-constant.md)
+- [Tails of the shifted series of derivatives converge](summable-chapter6-shifted-derived-series.md)
 
 ## Sources
 

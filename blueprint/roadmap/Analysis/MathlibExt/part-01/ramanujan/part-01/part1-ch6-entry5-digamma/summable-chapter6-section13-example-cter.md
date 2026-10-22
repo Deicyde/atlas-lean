@@ -7,13 +7,16 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.summable_chapter6Section13ExampleCTerm
 ---
 
-# Summable chapter6 Section13 Example CTerm
+# Convergence of Ramanujan's factorial series
 
-For `0 < x` the terms are bounded by `1 / (j + 1)!`, so the series converges.
+**Convergence of Ramanujan's factorial series.** For every real $x > 0$, the series
+$\sum_{j \ge 0} (-1)^j / ((x + 1)(x + 2) \cdots (x + j + 1))$ is summable.
+
+Its $j$-th term is bounded in absolute value by $1 / (j + 1)!$.
 
 ## Depends on
 
-- [Chapter6 Section13 Example CTerm](chapter6-section13-example-cterm.md)
+- [Terms of Ramanujan's factorial series](chapter6-section13-example-cterm.md)
 
 ## Sources
 

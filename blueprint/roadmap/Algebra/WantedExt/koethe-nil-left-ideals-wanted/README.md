@@ -5,6 +5,6 @@ navigation: module
 
 # Koethe Nil Left Ideals
 
-- [Is Nil Left Ideal](is-nil-left-ideal.md)
-- [Conjecture](conjecture.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [Nil left ideal](is-nil-left-ideal.md)
+- [Köthe's conjecture](conjecture.md)
+- [Köthe's conjecture is false](conjecture-refuted.md)

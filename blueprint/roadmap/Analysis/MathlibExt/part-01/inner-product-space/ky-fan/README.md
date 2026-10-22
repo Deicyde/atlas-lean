@@ -5,5 +5,5 @@ navigation: module
 
 # Ky Fan
 
-- [Eig Pref Sum](eig-pref-sum.md)
-- [Ky fan eigenvalue sum le](ky-fan-eigenvalue-sum-le.md)
+- [Prefix sum of a finite real sequence](eig-pref-sum.md)
+- [Ky Fan inequality for sums of largest eigenvalues](ky-fan-eigenvalue-sum-le.md)

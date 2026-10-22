@@ -7,18 +7,21 @@ proof: formalized
 lean: BooleanCube.multilinearExtension_const
 ---
 
-# Multilinear Extension const
+# Multilinear extension of a constant function
 
-Constant Boolean functions have constant multilinear extension.
+**Multilinear extension of a constant function.** For every natural number $n$ and every
+Boolean value $b$, the real multilinear extension of the constant function $b$ on the Boolean
+cube of dimension $n$ is the constant polynomial $1$ if $b$ is true and the constant
+polynomial $0$ if $b$ is false.
 
 ## Depends on
 
-- [Bool Cube](bool-cube.md)
-- [Multilinear Extension](multilinear-extension.md)
+- [Boolean cube](bool-cube.md)
+- [Multilinear extension](multilinear-extension.md)
 
 ## Proof depends on
 
-- [Cube Basis](cube-basis.md)
+- [Lagrange basis polynomial of a cube point](cube-basis.md)
 
 ## Sources
 

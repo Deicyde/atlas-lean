@@ -6,9 +6,14 @@ statement: formalized
 lean: TorusSobolev.OneLogBound
 ---
 
-# One Log Bound
+# One-log bound with coefficient $c$ and constant $K$
 
-The one-log inequality, including a finite additive constant.
+**One-log bound with coefficient $c$ and constant $K$.** For real numbers $c$ and $K$, the
+one-log bound holds when every continuous function $u : \mathbb{T} \to \mathbb{R}$ on the torus
+$\mathbb{T} = (\mathbb{R}/2\pi\mathbb{Z})^2$ that is a zero-mean $H^2$ function, has gradient energy
+$E(u) > 0$ and has frequency ratio $\delta(u) \ge 1$ (the Laplacian energy divided by $E(u)$)
+satisfies, at every point $x \in \mathbb{T}$,
+$$u(x)^2 \le c\,E(u)\bigl(\log\delta(u) + K\bigr).$$
 
 ## Depends on
 
@@ -16,10 +21,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Zero Mean H2](../basic/is-zero-mean-h2.md)
-- [Torus](../basic/torus.md)
-- [Frequency Ratio](../basic/frequency-ratio.md)
-- [Gradient Energy](../basic/gradient-energy.md)
+- [Zero-mean $H^2$ functions](../basic/is-zero-mean-h2.md)
+- [The torus of period $2\pi$](../basic/torus.md)
+- [Frequency ratio](../basic/frequency-ratio.md)
+- [Gradient energy](../basic/gradient-energy.md)
 
 ## Sources
 

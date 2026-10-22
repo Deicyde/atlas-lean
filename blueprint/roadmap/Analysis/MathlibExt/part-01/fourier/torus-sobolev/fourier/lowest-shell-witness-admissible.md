@@ -7,23 +7,25 @@ proof: formalized
 lean: TorusSobolev.lowestShellWitness_admissible
 ---
 
-# Lowest Shell Witness admissible
+# The lowest-shell witness is admissible at $\delta = 1$
 
-A populated positive case of the actual constrained optimization problem.
+**The lowest-shell witness is admissible at $\delta = 1$.** The lowest-shell witness $u$
+satisfies the conditional constraints with $\delta = 1$: it is a zero-mean $H^2$ function on the
+torus, its gradient energy is $1$, and its Laplacian energy is $1$.
 
 ## Depends on
 
-- [Conditional Admissible](../basic/conditional-admissible.md)
-- [Lowest Shell Witness](lowest-shell-witness.md)
+- [Conditionally admissible functions](../basic/conditional-admissible.md)
+- [Lowest-shell witness](lowest-shell-witness.md)
 
 ## Proof depends on
 
-- [Is Zero Mean H2](../basic/is-zero-mean-h2.md)
-- [Gradient Energy](../basic/gradient-energy.md)
-- [Gradient Energy lowest Shell Witness](gradient-energy-lowest-shell-witness.md)
-- [Laplace Energy](../basic/laplace-energy.md)
-- [Laplace Energy lowest Shell Witness](laplace-energy-lowest-shell-witness.md)
-- [Lowest Shell Witness is Zero Mean H2](lowest-shell-witness-is-zero-mean-h2.md)
+- [Zero-mean $H^2$ functions](../basic/is-zero-mean-h2.md)
+- [Gradient energy](../basic/gradient-energy.md)
+- [Gradient energy of the lowest-shell witness](gradient-energy-lowest-shell-witness.md)
+- [Laplacian energy](../basic/laplace-energy.md)
+- [Laplacian energy of the lowest-shell witness](laplace-energy-lowest-shell-witness.md)
+- [The lowest-shell witness is a zero-mean $H^2$ function](lowest-shell-witness-is-zero-mean-h2.md)
 
 ## Sources
 

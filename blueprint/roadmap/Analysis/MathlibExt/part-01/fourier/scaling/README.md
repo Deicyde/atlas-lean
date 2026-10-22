@@ -7,9 +7,9 @@ navigation: module
 
 ## Real
 
-- [Fourier comp mul left](fourier-comp-mul-left.md)
-- [Fourier comp mul left of pos](fourier-comp-mul-left-of-pos.md)
+- [Fourier transform of a dilation](fourier-comp-mul-left.md)
+- [Fourier transform of a dilation by a positive factor](fourier-comp-mul-left-of-pos.md)
 
 ## Schwartz Map
 
-- [Fourier coe comp mul left of pos](fourier-coe-comp-mul-left-of-pos.md)
+- [Fourier transform of a dilated Schwartz function](fourier-coe-comp-mul-left-of-pos.md)

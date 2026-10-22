@@ -7,9 +7,11 @@ proof: formalized
 lean: AbsoluteValue.isNonarchimedean_of_charP
 ---
 
-# Is Nonarchimedean of char P
+# Absolute values in positive characteristic are nonarchimedean
 
-Any absolute value on a positive-characteristic field is nonarchimedean.
+**Absolute values in positive characteristic are nonarchimedean.** Let $K$ be a field of
+characteristic $p > 0$. Then every real-valued absolute value $v$ on $K$ is nonarchimedean:
+$v(x + y) \le \max(v(x), v(y))$ for all $x, y \in K$.
 
 ## Depends on
 

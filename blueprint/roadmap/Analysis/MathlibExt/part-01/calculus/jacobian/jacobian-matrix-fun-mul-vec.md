@@ -7,17 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.jacobianMatrix_fun_mulVec
 ---
 
-# Jacobian Matrix fun mul Vec
+# Jacobian of a linear map given by a matrix
 
-The Jacobian of a matrix acting by multiplication is the matrix itself at every point.
+**Jacobian of a linear map given by a matrix.** Let $M$ be a real $n \times m$ matrix. At every
+point $x \in \mathbb{R}^m$, the Jacobian matrix of the map $y \mapsto M y$ from $\mathbb{R}^m$ to
+$\mathbb{R}^n$ is $M$.
 
 ## Depends on
 
-- [Jacobian Matrix](jacobian-matrix.md)
+- [Jacobian matrix](jacobian-matrix.md)
 
 ## Proof depends on
 
-- [Jacobian Matrix apply of differentiable At](jacobian-matrix-apply-of-differentiable.md)
+- [Jacobian entries at a point of differentiability](jacobian-matrix-apply-of-differentiable.md)
 
 ## Sources
 

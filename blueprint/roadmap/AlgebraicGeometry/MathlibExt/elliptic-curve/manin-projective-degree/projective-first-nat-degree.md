@@ -7,18 +7,21 @@ proof: formalized
 lean: MathlibExt.AlgebraicGeometry.EllipticCurve.ManinProjectiveDegree.projective_first_natDegree
 ---
 
-# Projective first nat Degree
+# Numerator degrees from a primitive presentation of product and sum
 
-A primitive projective presentation of the product and sum of two nonzero rational
-functions has first-coordinate degree equal to the sum of their numerator degrees.
+**Numerator degrees from a primitive presentation of product and sum.** Let $K$ be a field,
+let $u, v, h \in K[X]$ form a primitive triple with $h \neq 0$, and let $x, y \in K(X)$ be
+nonzero rational functions with $u/h = xy$ and $v/h = x + y$ in $K(X)$. Then
+$\deg u = \deg \operatorname{num}(x) + \deg \operatorname{num}(y)$, where $\operatorname{num}$
+denotes the numerator of a rational function written in lowest terms.
 
 ## Depends on
 
-- [Primitive Triple](primitive-triple.md)
+- [Primitive triple of polynomials](primitive-triple.md)
 
 ## Proof depends on
 
-- [Primitive Triple of no common irreducible](primitive-triple-of-no-common-irreducibl.md)
+- [Polynomials with no common irreducible factor form a primitive triple](primitive-triple-of-no-common-irreducibl.md)
 
 ## Sources
 

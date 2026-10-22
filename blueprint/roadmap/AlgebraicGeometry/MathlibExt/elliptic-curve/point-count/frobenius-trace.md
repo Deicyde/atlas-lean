@@ -6,10 +6,11 @@ statement: formalized
 lean: WeierstrassCurve.Affine.frobeniusTrace
 ---
 
-# Frobenius Trace
+# Frobenius trace
 
-The Frobenius trace of an elliptic curve over a finite field, defined by
-`a_q(E) = q + 1 - #E(𝔽_q)`. The point at infinity belongs to `W.Point`.
+**Frobenius trace.** Let $W$ be a Weierstrass curve over a finite field $F$ with $q$ elements,
+and let $\#W(F)$ be the number of nonsingular $F$-points of $W$, counting the point at infinity.
+The Frobenius trace of $W$ is the integer $a_q(W) = q + 1 - \#W(F)$.
 
 ## Depends on
 

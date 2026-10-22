@@ -7,27 +7,30 @@ proof: formalized
 lean: TorusSobolev.fourierCoefficient_lowestShellWitness
 ---
 
-# Fourier Coefficient lowest Shell Witness
+# Fourier coefficients of the lowest-shell witness
 
-The actual primary coefficients are `1/2` on four modes and zero elsewhere.
+**Fourier coefficients of the lowest-shell witness.** For every frequency $k \in \mathbb{Z}^2$,
+the Fourier coefficient of the lowest-shell witness at $k$ equals $1/2$ if $k$ lies in the
+lowest shell, that is, $k$ is one of $(1, 0)$, $(-1, 0)$, $(0, 1)$, $(0, -1)$, and equals $0$
+otherwise.
 
 ## Depends on
 
-- [Frequency](../basic/frequency.md)
-- [Fourier Coefficient](../basic/fourier-coefficient.md)
-- [Lowest Shell](lowest-shell.md)
-- [Lowest Shell Witness](lowest-shell-witness.md)
+- [Integer frequencies](../basic/frequency.md)
+- [Fourier coefficients on the torus](../basic/fourier-coefficient.md)
+- [Lowest frequency shell](lowest-shell.md)
+- [Lowest-shell witness](lowest-shell-witness.md)
 
 ## Proof depends on
 
-- [Torus](../basic/torus.md)
-- [Axis Frequency](axis-frequency.md)
+- [The torus of period $2\pi$](../basic/torus.md)
+- [Axis frequency](axis-frequency.md)
 - [Lowest Shell Unit](lowest-shell-unit.md)
-- [M Fourier Coeff add](m-fourier-coeff-add.md)
-- [M Fourier Coeff monomial](m-fourier-coeff-monomial.md)
-- [M Fourier Coeff smul](m-fourier-coeff-smul.md)
-- [Unit Representative](../basic/unit-representative.md)
-- [Unit Representative lowest Shell Witness](unit-representative-lowest-shell-witness.md)
+- [Additivity of Fourier coefficients on the 2-torus](m-fourier-coeff-add.md)
+- [Fourier coefficients of a Fourier monomial on the 2-torus](m-fourier-coeff-monomial.md)
+- [Homogeneity of Fourier coefficients on the 2-torus](m-fourier-coeff-smul.md)
+- [A function on the torus as a function on the unit torus](../basic/unit-representative.md)
+- [Unit representative of the lowest-shell witness](unit-representative-lowest-shell-witness.md)
 
 ## Sources
 

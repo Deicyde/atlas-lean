@@ -7,10 +7,18 @@ proof: formalized
 lean: MathlibExt.Analysis.Complex.HartogsWanted.differentiableOn_cauchyCoefficient_of_separately_differentiable_of_bounded
 ---
 
-# Differentiable On cauchy Coefficient of separately differentiable of bounded
+# Holomorphic dependence of Cauchy coefficients on a parameter
 
-On a bounded product, the Cauchy coefficients in the scalar variable are holomorphic in the
-finite-dimensional block variable on a smaller ball.
+**Holomorphic dependence of Cauchy coefficients on a parameter.** Let $E$ be a
+finite-dimensional complex normed space, let $z_0 \in E$, $w_0 \in \mathbb{C}$, $A > 0$, $B > 0$
+and $M \in \mathbb{R}$, and let $f(z, w)$ be a complex-valued function of $z \in E$ and
+$w \in \mathbb{C}$ such that $z \mapsto f(z, w)$ is complex differentiable on all of $E$ for every
+$w$ and $w \mapsto f(z, w)$ is complex differentiable on all of $\mathbb{C}$ for every $z$.
+Suppose $|f(z, w)| \le M$ whenever $\|z - z_0\| \le A$ and $|w - w_0| \le B$. Then for every
+$k \in \mathbb{N}$ the $k$-th Cauchy coefficient of $f(z, \cdot)$ about $w_0$ on the circle of
+radius $B/2$,
+$$a_k(z) = \frac{1}{2\pi i} \oint_{|w - w_0| = B/2} \frac{f(z, w)}{(w - w_0)^{k+1}} \, dw,$$
+is a complex differentiable function of $z$ on the open ball $\|z - z_0\| < A/2$.
 
 ## Depends on
 
@@ -18,7 +26,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Differentiable At uncurry of separately differentiable of locally bounded](differentiable-at-uncurry-of-separately-2.md)
+- [Osgood's lemma for functions bounded on open sets](differentiable-at-uncurry-of-separately-2.md)
 
 ## Sources
 

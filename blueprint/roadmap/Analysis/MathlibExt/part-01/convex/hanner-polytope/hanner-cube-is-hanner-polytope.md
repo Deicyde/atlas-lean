@@ -12,13 +12,13 @@ Every recursively constructed coordinate cube is a Hanner polytope.
 
 ## Depends on
 
-- [Is Hanner Polytope](is-hanner-polytope.md)
-- [Hanner Cube](hanner-cube.md)
+- [Hanner polytopes](is-hanner-polytope.md)
+- [Hanner cube](hanner-cube.md)
 
 ## Proof depends on
 
-- [Hanner Infinity Sum](hanner-infinity-sum.md)
-- [Hanner Unit Segment](hanner-unit-segment.md)
+- [$\ell_\infty$ sum of bodies](hanner-infinity-sum.md)
+- [Centered unit segment](hanner-unit-segment.md)
 
 ## Sources
 

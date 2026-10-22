@@ -7,22 +7,25 @@ proof: formalized
 lean: newman_tauberian
 ---
 
-# Newman Tauberian
+# Newman's Tauberian theorem
 
-Newman's Tauberian theorem: a bounded measurable function on the positive ray
-whose Laplace transform extends analytically to the closed right half-plane has
-convergent partial integrals tending to the value at zero.
+**Newman's Tauberian theorem.** Let $f : \mathbb{R} \to \mathbb{C}$ be almost everywhere
+strongly measurable on $(0, \infty)$ and bounded on $[0, \infty)$: for some real $B \ge 0$,
+$|f(t)| \le B$ for all $t \ge 0$. Let $G : \mathbb{C} \to \mathbb{C}$ be analytic at every point
+of the closed half-plane $\{s : \operatorname{Re} s \ge 0\}$, and suppose that for every $s$
+with $\operatorname{Re} s > 0$ the Laplace transform of $f$ converges at $s$ and equals $G(s)$.
+Then $\int_0^T f(t)\,dt \to G(0)$ as $T \to \infty$.
 
 ## Depends on
 
-- [Has Laplace](basic/has-laplace.md)
+- [Laplace transform with a given value](basic/has-laplace.md)
 
 ## Proof depends on
 
-- [Boundary rect one div](../complex/part-01/rectilinear-cycle/boundary-rect-one-div.md)
-- [Laplace Convergent](basic/laplace-convergent.md)
-- [Differentiable On laplace of norm le exp](exponential-bound/differentiable-on-laplace-of-norm-le-exp.md)
-- [Laplace](basic/laplace.md)
+- [Rectangle integral of $1/s$ around the origin](../complex/part-01/rectilinear-cycle/boundary-rect-one-div.md)
+- [Convergence of the Laplace transform](basic/laplace-convergent.md)
+- [Holomorphy of the Laplace transform under an exponential bound](exponential-bound/differentiable-on-laplace-of-norm-le-exp.md)
+- [The one-sided Laplace transform](basic/laplace.md)
 
 ## Sources
 

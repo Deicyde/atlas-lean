@@ -6,10 +6,12 @@ statement: formalized
 lean: RectilinearCycle.HomologousIn
 ---
 
-# Homologous In
+# Rectilinear cycles homologous in a set
 
-A present rectangular homology relation: the difference of two
-cycles has a rectangle filling contained in `G`.
+**Rectilinear cycles homologous in a set.** Let $G \subseteq \mathbb{C}$. Two rectilinear
+cycles $\Gamma$ and $\Lambda$ are homologous in $G$ when the rectangle filling of
+$\Gamma - \Lambda$ is supported in $G$: every rectangle with nonzero coefficient in
+$\Gamma - \Lambda$ has its closed carrier contained in $G$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ cycles has a rectangle filling contained in `G`.
 
 ## Proof depends on
 
-- [Filling Supported In](filling-supported-in.md)
+- [Rectangle filling supported in a set](filling-supported-in.md)
 - [Rectilinear Rectangle](rectilinear-rectangle.md)
 
 ## Sources

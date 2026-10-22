@@ -7,19 +7,24 @@ proof: formalized
 lean: AlgebraicGeometry.CubicSurface.isSingularPoint_iff
 ---
 
-# Is Singular Point iff
+# Singular points via partial derivatives
 
-When `3` is invertible in `k`, a point is singular exactly when all partial derivatives of the
-defining cubic vanish there; the equation `f = 0` is then automatic (Euler's identity).
+**Singular points via partial derivatives.** Let $S$ be a cubic surface over a field $k$ in
+which $3 \neq 0$, and let $f \in k[x_0, x_1, x_2, x_3]$ be its defining cubic form. A point
+$x \in k^4$ is a singular point of the affine cone over $S$ if and only if every partial
+derivative $\partial f / \partial x_i$ vanishes at $x$.
+
+The condition $f(x) = 0$ in the definition of a singular point is then automatic, by Euler's
+identity.
 
 ## Depends on
 
-- [Cubic Surface](cubic-surface.md)
-- [Is Singular Point](is-singular-point.md)
+- [Cubic surface](cubic-surface.md)
+- [Singular point of a cubic surface](is-singular-point.md)
 
 ## Proof depends on
 
-- [Aeval defining eq zero of pderiv](aeval-defining-eq-zero-of-pderiv.md)
+- [Vanishing partial derivatives force the cubic to vanish when $3 \neq 0$](aeval-defining-eq-zero-of-pderiv.md)
 
 ## Sources
 

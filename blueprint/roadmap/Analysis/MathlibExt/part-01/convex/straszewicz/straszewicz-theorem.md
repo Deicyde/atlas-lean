@@ -18,13 +18,13 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Gateaux Pt](gateaux-pt.md)
-- [Convex Hull of compact](convex-hull-of-compact.md)
-- [Dense gateaux](dense-gateaux.md)
-- [Gateaux unique maximizer](gateaux-unique-maximizer.md)
-- [Supp Func](supp-func.md)
-- [Supp Func attain](supp-func-attain.md)
-- [Unique maximizer exposed](unique-maximizer-exposed.md)
+- [Gateaux points](gateaux-pt.md)
+- [Convex hull of a compact set is compact](convex-hull-of-compact.md)
+- [Mazur's theorem for support functions](dense-gateaux.md)
+- [Maximizers at a Gateaux point of the support function are unique](gateaux-unique-maximizer.md)
+- [Support function](supp-func.md)
+- [The support function of a compact set is attained](supp-func-attain.md)
+- [A unique maximizer of a linear functional is an exposed point](unique-maximizer-exposed.md)
 
 ## Sources
 

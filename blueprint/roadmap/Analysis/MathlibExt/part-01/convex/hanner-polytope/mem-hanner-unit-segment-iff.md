@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.mem_hannerUnitSegment_iff
 ---
 
-# Mem hanner Unit Segment iff
+# Membership in the Hanner unit segment
 
-Membership in the one-dimensional Hanner leaf is the coordinate bound.
+**Membership in the Hanner unit segment.** A point $x \in \mathbb{R}^1$ lies in the Hanner
+unit segment if and only if every coordinate $x_i$ of $x$ satisfies $|x_i| \le 1$.
 
 ## Depends on
 
-- [Hanner Unit Segment](hanner-unit-segment.md)
+- [Centered unit segment](hanner-unit-segment.md)
 
 ## Sources
 

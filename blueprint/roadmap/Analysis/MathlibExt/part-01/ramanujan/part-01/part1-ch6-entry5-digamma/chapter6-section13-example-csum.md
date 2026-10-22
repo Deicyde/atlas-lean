@@ -6,10 +6,14 @@ statement: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.chapter6Section13ExampleCSum
 ---
 
-# Chapter6 Section13 Example CSum
+# Ramanujan's factorial series
 
-The sum `∑_{j ≥ 0} (-1)ʲ / ((x + 1) ⋯ (x + j + 1))` of the factorial series; it converges for
-`0 < x` (`summable_chapter6Section13ExampleCTerm`).
+**Ramanujan's factorial series.** For a real number $x$, $C(x)$ is the sum
+$\sum_{j \ge 0} (-1)^j / ((x + 1)(x + 2) \cdots (x + j + 1))$ of Ramanujan's factorial series,
+where a term is read as $0$ when its denominator vanishes and the sum is taken to be $0$ when
+the series is not summable.
+
+The series is summable for every $x > 0$.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Chapter6 Section13 Example CTerm](chapter6-section13-example-cterm.md)
+- [Terms of Ramanujan's factorial series](chapter6-section13-example-cterm.md)
 
 ## Sources
 

@@ -5,19 +5,20 @@ statement: formalized
 lean: MathlibExt.Algebra.PalindromicZeroOneWanted.l_eq_min_support_and_lt
 ---
 
-# Lemma 2.3
+# Position of the first odd exponent
 
-**Lemma 2.3**: let `f(x) ∈ 𝒩_irred` be reciprocal
-and non-cyclotomic of degree `2m`, and let
-`f(x) = f_e(x^2) + x^ℓ f_o(x^2)` be as in Lemma 2.2. If
-`f(x^2)` is reducible, then `ℓ` is the smallest positive
-exponent appearing in `f(x)` and `ℓ < m / 2`.
+**Position of the first odd exponent.** Let $f \in \mathbb{Z}[x]$ be an irreducible,
+reciprocal, non-cyclotomic $0,1$-polynomial of degree $2m$ such that $f(x^2)$ is not
+irreducible. Let $f_e, f_o \in \mathbb{Z}[x]$ and let $\ell$ be a positive odd integer with
+$f(x) = f_e(x^2) + x^\ell f_o(x^2)$, $\deg f_e = m$ and $\deg f_o = \max(m - \ell, 0)$, where
+the degree of the zero polynomial is taken to be $0$. Then the coefficient of $x^e$ in $f$ is
+$0$ for every $1 \le e < \ell$, the coefficient of $x^\ell$ in $f$ is nonzero, and $2\ell < m$.
 
 ## Depends on
 
-- [Is Noncyclotomic](is-noncyclotomic.md)
-- [Is Reciprocal Poly](is-reciprocal-poly.md)
-- [Is Zero One Poly](is-zero-one-poly.md)
+- [Non-cyclotomic polynomial](is-noncyclotomic.md)
+- [Reciprocal polynomial](is-reciprocal-poly.md)
+- [0,1-polynomial](is-zero-one-poly.md)
 
 ## Sources
 

@@ -5,13 +5,14 @@ statement: formalized
 lean: AlgebraicGeometry.Scheme.BirationalMap.refl
 ---
 
-# Refl
+# Identity birational map
 
-The identity birational map on `X`.
+**Identity birational map.** For an irreducible scheme $X$, the identity birational map of
+$X$ has the identity rational map of $X$ as both its forward and its inverse map.
 
 ## Depends on
 
-- [Birational Map](birational-map.md)
+- [Birational map](birational-map.md)
 
 ## Sources
 

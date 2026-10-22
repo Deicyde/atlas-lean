@@ -7,25 +7,31 @@ proof: formalized
 lean: MathlibExt.Analysis.CStarAlgebra.KadisonSinger.mixedCharacteristicPolynomial_update_sum
 ---
 
-# Mixed Characteristic Polynomial update sum
+# The mixed characteristic polynomial is affine in each matrix
 
-The mixed characteristic polynomial is affine in each matrix coordinate.
+**The mixed characteristic polynomial is affine in each matrix.** Let $A_1, \dots, A_m$ be
+square complex matrices whose rows and columns are indexed by a finite set $d$, and fix an index
+$i$. Let $(C_a)_{a \in \iota}$ be a family of such matrices indexed by a finite set $\iota$, with
+real weights $w_a$, not necessarily nonnegative, such that $\sum_a w_a = 1$. Then the mixed
+characteristic polynomial of the family obtained from $A_1, \dots, A_m$ by replacing $A_i$ with
+$\sum_a w_a C_a$ equals $\sum_a w_a \mu_a$, where $\mu_a$ is the mixed characteristic polynomial of
+the family obtained by replacing $A_i$ with $C_a$.
 
 ## Depends on
 
-- [Mixed Characteristic Polynomial](mixed-characteristic-polynomial.md)
+- [Mixed characteristic polynomial](mixed-characteristic-polynomial.md)
 
 ## Proof depends on
 
-- [Eval mixed Det Polynomial](eval-mixed-det-polynomial.md)
-- [Mixed Det Polynomial](mixed-det-polynomial.md)
+- [Values of the mixed determinant polynomial](eval-mixed-det-polynomial.md)
+- [Mixed determinant polynomial](mixed-det-polynomial.md)
 - [Coeff one det add X smul](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/mv-polynomial/coeff-one-det-add-x-smul.md)
 - [Det Linear](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/mv-polynomial/det-linear.md)
 - [Det Linear add](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/mv-polynomial/det-linear-add.md)
 - [Det Linear smul](../../../../../../LinearAlgebra/MathlibExt/matrix/part-01/mv-polynomial/det-linear-smul.md)
-- [Mixed Differential](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential.md)
-- [Mixed Differential cons](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential-cons.md)
-- [Mixed Differential eq of perm](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential-eq-of-perm.md)
+- [Mixed differential operator](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential.md)
+- [Mixed differential along a list with a given first index](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential-cons.md)
+- [The mixed differential ignores the order of the indices](../../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential-eq-of-perm.md)
 
 ## Sources
 

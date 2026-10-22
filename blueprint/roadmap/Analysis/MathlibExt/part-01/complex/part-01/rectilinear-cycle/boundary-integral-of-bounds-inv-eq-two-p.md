@@ -7,20 +7,20 @@ proof: formalized
 lean: RectilinearRectangle.boundaryIntegral_ofBounds_inv_eq_two_pi_mul_I
 ---
 
-# Boundary Integral of Bounds inv eq two pi mul I
+# Rectangle integral of $1/z$ around the origin
 
-The boundary integral of the Cauchy kernel on a rectangle centered
-vertically at the origin is its residue, provided the origin is strictly
-between the two vertical sides.
+**Rectangle integral of $1/z$ around the origin.** Let $a, b, T$ be real numbers with
+$a < 0 < b$ and $T > 0$. Then the boundary integral of $z \mapsto 1/z$ over the rectangle with
+corners $a - iT$ and $b + iT$ equals $2\pi i$.
 
 ## Depends on
 
-- [Boundary Integral](boundary-integral.md)
-- [Of Bounds](of-bounds.md)
+- [Boundary integral over a rectangle](boundary-integral.md)
+- [Rectangle with given coordinate bounds](of-bounds.md)
 
 ## Proof depends on
 
-- [Boundary rect one div](boundary-rect-one-div.md)
+- [Rectangle integral of $1/s$ around the origin](boundary-rect-one-div.md)
 - [Rectilinear Rectangle](rectilinear-rectangle.md)
 
 ## Sources

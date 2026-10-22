@@ -7,17 +7,19 @@ proof: formalized
 lean: MvPolynomial.eval_of_mem_idealOverK
 ---
 
-# Eval of mem ideal Over K
+# Polynomials in the ideal over $k$ vanish on the set
 
-Membership in `I_k(Z)` implies vanishing of the extended polynomial.
+**Polynomials in the ideal over $k$ vanish on the set.** Let $k$ be a field with algebraic
+closure $\bar k$, let $Z \subseteq \bar k^n$, and let $f \in I_k(Z)$. Then for every point
+$P \in Z$, the image of $f$ in $\bar k[X_1, \dots, X_n]$ evaluated at $P$ is $0$.
 
 ## Depends on
 
-- [Ideal Over K](ideal-over-k.md)
+- [Ideal over $k$ of a subset of affine space](ideal-over-k.md)
 
 ## Proof depends on
 
-- [Mem ideal Over K iff](mem-ideal-over-k-iff.md)
+- [Membership in the ideal over $k$](mem-ideal-over-k-iff.md)
 
 ## Sources
 

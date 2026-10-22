@@ -7,10 +7,12 @@ proof: formalized
 lean: Polynomial.existsUnique_taylor_remainder
 ---
 
-# Taylor
+# First-order Taylor expansion of a polynomial
 
-First-order Taylor expansion with unique quadratic remainder, over an
-arbitrary commutative ring.
+**First-order Taylor expansion of a polynomial.** Let $R$ be a commutative ring, let
+$f \in R[X]$ and $a \in R$, and let $f'$ be the formal derivative of $f$. There is a unique
+polynomial $g \in R[X]$ such that
+$$f = f(a) + f'(a)\,(X - a) + g\,(X - a)^2.$$
 
 ## Depends on
 

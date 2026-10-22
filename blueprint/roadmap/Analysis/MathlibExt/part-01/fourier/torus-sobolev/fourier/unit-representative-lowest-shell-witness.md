@@ -7,21 +7,24 @@ proof: formalized
 lean: TorusSobolev.unitRepresentative_lowestShellWitness
 ---
 
-# Unit Representative lowest Shell Witness
+# Unit representative of the lowest-shell witness
 
-No arbitrary reconstruction is supplied: the representative is the actual polynomial.
+**Unit representative of the lowest-shell witness.** The unit representative of the
+lowest-shell witness is the lowest-shell polynomial
+$(4\pi)^{-1}\bigl(e_{(1,0)} + e_{(-1,0)} + e_{(0,1)} + e_{(0,-1)}\bigr)$ on the unit torus
+$(\mathbb{R}/\mathbb{Z})^2$, where $e_n(y) = e^{2\pi i\, n \cdot y}$ for $n \in \mathbb{Z}^2$.
 
 ## Depends on
 
 - [Lowest Shell Unit](lowest-shell-unit.md)
-- [Lowest Shell Witness](lowest-shell-witness.md)
-- [Unit Representative](../basic/unit-representative.md)
+- [Lowest-shell witness](lowest-shell-witness.md)
+- [A function on the torus as a function on the unit torus](../basic/unit-representative.md)
 
 ## Proof depends on
 
-- [Torus](../basic/torus.md)
-- [Lowest Shell Unit im zero](lowest-shell-unit-im-zero.md)
-- [Unit Rescaling](../basic/unit-rescaling.md)
+- [The torus of period $2\pi$](../basic/torus.md)
+- [The lowest-shell unit polynomial is real-valued](lowest-shell-unit-im-zero.md)
+- [Rescaling the torus to unit period](../basic/unit-rescaling.md)
 
 ## Sources
 

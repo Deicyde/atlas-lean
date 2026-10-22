@@ -7,13 +7,16 @@ proof: formalized
 lean: WeierstrassCurve.Affine.natCard_point_eq_natCard_add_one_sub_frobeniusTrace
 ---
 
-# Nat Card point eq nat Card add one sub frobenius Trace
+# Point count from the Frobenius trace
 
-The point-count formula rearranged as `#E(𝔽_q) = q + 1 - a_q(E)`.
+**Point count from the Frobenius trace.** Let $W$ be a Weierstrass curve over a finite field
+$F$ with $q$ elements, and let $\#W(F)$ be the number of nonsingular $F$-points of $W$, counting
+the point at infinity. Then $\#W(F) = q + 1 - a_q(W)$, where $a_q(W)$ is the Frobenius trace of
+$W$.
 
 ## Depends on
 
-- [Frobenius Trace](frobenius-trace.md)
+- [Frobenius trace](frobenius-trace.md)
 
 ## Sources
 

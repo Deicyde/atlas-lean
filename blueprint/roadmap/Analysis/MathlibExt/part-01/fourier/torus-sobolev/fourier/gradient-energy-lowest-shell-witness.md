@@ -7,23 +7,24 @@ proof: formalized
 lean: TorusSobolev.gradientEnergy_lowestShellWitness
 ---
 
-# Gradient Energy lowest Shell Witness
+# Gradient energy of the lowest-shell witness
 
-Its gradient energy, computed from the actual integral coefficients.
+**Gradient energy of the lowest-shell witness.** The gradient energy of the lowest-shell
+witness equals $1$.
 
 ## Depends on
 
-- [Gradient Energy](../basic/gradient-energy.md)
-- [Lowest Shell Witness](lowest-shell-witness.md)
+- [Gradient energy](../basic/gradient-energy.md)
+- [Lowest-shell witness](lowest-shell-witness.md)
 
 ## Proof depends on
 
-- [Frequency](../basic/frequency.md)
-- [Axis Frequency](axis-frequency.md)
-- [Fourier Coefficient](../basic/fourier-coefficient.md)
-- [Fourier Coefficient lowest Shell Witness](fourier-coefficient-lowest-shell-witness.md)
-- [Frequency Weight](../basic/frequency-weight.md)
-- [Lowest Shell](lowest-shell.md)
+- [Integer frequencies](../basic/frequency.md)
+- [Axis frequency](axis-frequency.md)
+- [Fourier coefficients on the torus](../basic/fourier-coefficient.md)
+- [Fourier coefficients of the lowest-shell witness](fourier-coefficient-lowest-shell-witness.md)
+- [Squared frequency](../basic/frequency-weight.md)
+- [Lowest frequency shell](lowest-shell.md)
 
 ## Sources
 

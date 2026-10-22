@@ -7,13 +7,16 @@ proof: formalized
 lean: MathlibExt.Analysis.Complex.NormalFamilies.isLocallyUniformlyBoundedOn_of_forall_norm_le
 ---
 
-# Is Locally Uniformly Bounded On of forall norm le
+# A uniformly bounded sequence on an open set is locally uniformly bounded
 
-A family bounded by `C` on an open set is locally uniformly bounded there.
+**A uniformly bounded sequence on an open set is locally uniformly bounded.** Let
+$U \subseteq \mathbb{C}$ be open, let $(F_n)_{n \in \mathbb{N}}$ be a sequence of functions
+$\mathbb{C} \to \mathbb{C}$ and let $C \ge 0$ be real. If $|F_n(y)| \le C$ for all
+$n \in \mathbb{N}$ and all $y \in U$, then $(F_n)$ is locally uniformly bounded on $U$.
 
 ## Depends on
 
-- [Is Locally Uniformly Bounded On](is-locally-uniformly-bounded-on.md)
+- [Locally uniformly bounded sequence of functions](is-locally-uniformly-bounded-on.md)
 
 ## Sources
 

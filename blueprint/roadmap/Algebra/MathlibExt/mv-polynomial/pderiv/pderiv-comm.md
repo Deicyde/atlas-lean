@@ -7,9 +7,12 @@ proof: formalized
 lean: MvPolynomial.pderiv_comm
 ---
 
-# Pderiv comm
+# Partial derivatives commute
 
-Partial derivatives of a multivariate polynomial commute.
+**Partial derivatives commute.** Let $R$ be a commutative semiring and
+$p \in R[x_s : s \in \sigma]$. For all indices $i, j \in \sigma$, writing $\partial_i$ for the
+partial derivative with respect to $x_i$, we have
+$\partial_i \partial_j p = \partial_j \partial_i p$.
 
 ## Depends on
 

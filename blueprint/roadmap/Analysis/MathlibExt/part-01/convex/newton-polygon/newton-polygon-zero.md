@@ -7,9 +7,11 @@ proof: formalized
 lean: NewtonPolygon.newtonPolygon_zero
 ---
 
-# Newton Polygon zero
+# The Newton polygon of the zero polynomial is empty
 
-Newton polygon of zero is empty.
+**The Newton polygon of the zero polynomial is empty.** For every commutative semiring $k$, the
+Newton polygon of the zero polynomial in two variables over $k$ is the empty subset of
+$\mathbb{R}^2$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Newton Support zero](newton-support-zero.md)
+- [The Newton support of the zero polynomial is empty](newton-support-zero.md)
 
 ## Sources
 

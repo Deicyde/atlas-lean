@@ -7,18 +7,20 @@ proof: formalized
 lean: Complex.wimanTerm_le_wimanMaximumTerm
 ---
 
-# Wiman Term le wiman Maximum Term
+# Each Taylor term is at most the maximum term
 
-Every Taylor term is bounded by the supremal maximum term.
+**Each Taylor term is at most the maximum term.** Let $f$ be an entire function with Taylor
+coefficients $a_n$ at the origin and maximum term $\mu(r) = \sup_k |a_k|\,|r|^k$. For every real
+$r$ and every $n \in \mathbb{N}$, $|a_n|\,|r|^n \le \mu(r)$.
 
 ## Depends on
 
-- [Wiman Maximum Term](../../../part-02/wiman/wiman-maximum-term.md)
-- [Wiman Term](../../../part-02/wiman/wiman-term.md)
+- [Wiman maximum term](../../../part-02/wiman/wiman-maximum-term.md)
+- [Wiman term](../../../part-02/wiman/wiman-term.md)
 
 ## Proof depends on
 
-- [Bdd Above range wiman Term](bdd-above-range-wiman-term.md)
+- [The Taylor terms are bounded above](bdd-above-range-wiman-term.md)
 
 ## Sources
 

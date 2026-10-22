@@ -6,12 +6,15 @@ statement: formalized
 lean: Complex.wimanTerm
 ---
 
-# Wiman Term
+# Wiman term
 
-The modulus of the `n`th Taylor term at radius `|r|`.
+**Wiman term.** For a function $f : \mathbb{C} \to \mathbb{C}$, a real number $r$ and a natural
+number $n$, the Wiman term of $f$ at radius $r$ and index $n$ is the real number $|a_n| \, |r|^n$,
+where $a_n = f^{(n)}(0) / n!$ is the $n$th Taylor coefficient of $f$ at the origin. It is the
+modulus of the $n$th Taylor term of $f$ on the circle of radius $|r|$.
 
-Normalizing at the definition boundary makes negative inputs denote the same radius as their
-absolute values, so this quantity is always nonnegative.
+Using $|r|$ makes a negative input denote the same radius as its absolute value, so the Wiman
+term is always nonnegative.
 
 ## Depends on
 
@@ -19,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Wiman Taylor Coefficient](wiman-taylor-coefficient.md)
+- [Wiman Taylor coefficient](wiman-taylor-coefficient.md)
 
 ## Sources
 

@@ -7,18 +7,19 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry30Secondordereulerian.chapter5Entry30Coeff_of_squarefree
 ---
 
-# Chapter5 Entry30 Coeff of squarefree
+# Entry 30 coefficients at squarefree integers
 
-At a squarefree `n ≠ 0`, the coefficient is the product of `a p` over the prime factors
-of `n`.
+**Entry 30 coefficients at squarefree integers.** For every function
+$a : \mathbb{N} \to \mathbb{C}$ and every squarefree $n \in \mathbb{N}$ with $n \ne 0$, the Entry 30
+coefficient $c_a(n)$ is the product of $a(p)$ over the prime factors $p$ of $n$.
 
 ## Depends on
 
-- [Chapter5 Entry30 Coeff](chapter5-entry30-coeff.md)
+- [Coefficients for Entry 30](chapter5-entry30-coeff.md)
 
 ## Proof depends on
 
-- [Chapter5 Entry30 Local Coeff](chapter5-entry30-local-coeff.md)
+- [Local factor](chapter5-entry30-local-coeff.md)
 
 ## Sources
 

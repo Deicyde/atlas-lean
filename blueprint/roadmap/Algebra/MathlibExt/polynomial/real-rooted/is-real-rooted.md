@@ -6,9 +6,10 @@ statement: formalized
 lean: Polynomial.IsRealRooted
 ---
 
-# Is Real Rooted
+# Real-rooted polynomials
 
-A complex polynomial is real-rooted if every member of its root multiset is real.
+**Real-rooted polynomials.** A complex polynomial $p$ is real-rooted if every element $z$
+of its multiset of roots is real, that is, $\operatorname{Im} z = 0$.
 
 ## Depends on
 

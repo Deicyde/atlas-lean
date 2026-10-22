@@ -7,14 +7,15 @@ proof: formalized
 lean: NonnegativeDiscreteSpectrum.ext
 ---
 
-# Ext
+# A nonnegative discrete spectrum is determined by its eigenvalues
 
-Pointwise extensionality: spectra with equal eigenvalue functions are equal;
-proof fields are irrelevant.
+**A nonnegative discrete spectrum is determined by its eigenvalues.** If two nonnegative
+discrete spectra $S$ and $T$ have the same $j$-th eigenvalue for every index $j \in \mathbb{N}$,
+then $S = T$.
 
 ## Depends on
 
-- [Nonnegative Discrete Spectrum](nonnegative-discrete-spectrum.md)
+- [Nonnegative discrete spectrum](nonnegative-discrete-spectrum.md)
 
 ## Sources
 

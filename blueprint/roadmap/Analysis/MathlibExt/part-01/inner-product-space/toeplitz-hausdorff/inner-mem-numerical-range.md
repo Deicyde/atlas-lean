@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzHausdorffWanted.inner_mem_numericalRange
 ---
 
-# Inner mem numerical Range
+# Unit vectors give points of the numerical range
 
-`⟪A x, x⟫` lies in the numerical range for every unit vector `x`.
+**Unit vectors give points of the numerical range.** Let $A$ be a bounded linear operator on a
+complex inner product space $E$. For every $x \in E$ with $\|x\| = 1$, the number
+$\langle A x, x \rangle$ lies in the numerical range $W(A)$.
 
 ## Depends on
 
-- [Numerical Range](numerical-range.md)
+- [Numerical range](numerical-range.md)
 
 ## Sources
 

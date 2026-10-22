@@ -5,9 +5,9 @@ navigation: module
 
 # Polar Set
 
-- [Polar Set](polar-set.md)
-- [Mem polar Set](mem-polar-set.md)
-- [Polar Set empty](polar-set-empty.md)
-- [Zero mem polar Set](zero-mem-polar-set.md)
-- [Polar Set subset polar Set](polar-set-subset-polar-set.md)
-- [Polar Set closed Unit Ball](polar-set-closed-unit-ball.md)
+- [Polar of a set](polar-set.md)
+- [Membership in the polar](mem-polar-set.md)
+- [Polar of the empty set](polar-set-empty.md)
+- [The origin lies in every polar](zero-mem-polar-set.md)
+- [The polar reverses inclusion](polar-set-subset-polar-set.md)
+- [The closed unit ball is self-polar](polar-set-closed-unit-ball.md)

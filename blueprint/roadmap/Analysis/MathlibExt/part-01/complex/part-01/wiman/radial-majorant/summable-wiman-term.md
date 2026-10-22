@@ -7,17 +7,19 @@ proof: formalized
 lean: Complex.summable_wimanTerm
 ---
 
-# Summable wiman Term
+# Summability of the radial Taylor terms
 
-The radial Taylor terms of an entire function are absolutely summable.
+**Summability of the radial Taylor terms.** Let $f$ be an entire function with Taylor
+coefficients $a_n = f^{(n)}(0) / n!$ at the origin. For every real $r$, the series
+$\sum_{n \ge 0} |a_n| \, |r|^n$ converges.
 
 ## Depends on
 
-- [Wiman Term](../../../part-02/wiman/wiman-term.md)
+- [Wiman term](../../../part-02/wiman/wiman-term.md)
 
 ## Proof depends on
 
-- [Wiman Taylor Coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
+- [Wiman Taylor coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
 
 ## Sources
 

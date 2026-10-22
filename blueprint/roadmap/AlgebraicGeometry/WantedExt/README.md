@@ -14,4 +14,4 @@ navigation: collection
 - [Motivic Invariants](motivic-invariants-wanted/README.md)
 - [Seshadri Constant](seshadri-constant-wanted/README.md)
 - [Topological Reconstruction](topological-reconstruction-wanted/README.md)
-- [Weil Conjectures Wanted](weil-conjectures.md)
+- [The Weil conjectures](weil-conjectures.md)

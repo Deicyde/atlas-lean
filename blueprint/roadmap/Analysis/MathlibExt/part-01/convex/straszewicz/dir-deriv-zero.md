@@ -7,17 +7,19 @@ proof: formalized
 lean: MathlibExt.Analysis.Convex.Straszewicz.dirDeriv_zero
 ---
 
-# Dir Deriv zero
+# Directional derivative in direction zero
 
-The directional derivative in direction zero vanishes.
+**Directional derivative in direction zero.** Let $E$ be a real normed space with continuous
+dual $E^*$ and let $h : E^* \to \mathbb{R}$ be any function. For every $x \in E^*$, the directional
+derivative of $h$ at $x$ in direction $0$ is $0$.
 
 ## Depends on
 
-- [Dir Deriv](dir-deriv.md)
+- [Directional derivative](dir-deriv.md)
 
 ## Proof depends on
 
-- [Dir Quot](dir-quot.md)
+- [Difference quotients](dir-quot.md)
 
 ## Sources
 

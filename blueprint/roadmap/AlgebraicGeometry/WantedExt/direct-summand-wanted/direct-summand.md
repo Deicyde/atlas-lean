@@ -5,9 +5,13 @@ statement: formalized
 lean: MathlibExt.AlgebraicGeometry.DirectSummandWanted.AlgebraicGeometry.DirectSummand.direct_summand
 ---
 
-# Direct summand
+# Direct summand theorem
 
-Source: see manifest Via leanprover/lean-eval@38361be, problem `direct_summand`.
+**Direct summand theorem.** Let $A$ be a regular commutative ring and let $B$ be a commutative
+$A$-algebra that is finitely generated as an $A$-module and on which $A$ acts faithfully
+(equivalently, the structure map $A \to B$ is injective). Then there is an $A$-linear map
+$\pi \colon B \to A$ with $\pi(a \cdot 1) = a$ for every $a \in A$; that is, $A$ is a direct
+summand of $B$ as an $A$-module.
 
 ## Depends on
 
@@ -16,3 +20,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.AlgebraicGeometry.DirectSummandWanted](../../../../sources/v2/WantedExt.md)
+- see manifest Via leanprover/lean-eval@38361be, problem `direct_summand`.

@@ -13,11 +13,11 @@ Lemma 16.10 holomorphy on `{s | 1 < s.re}` via the exponential bound.
 
 ## Depends on
 
-- [Laplace](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/basic/laplace.md)
+- [The one-sided Laplace transform](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/basic/laplace.md)
 
 ## Proof depends on
 
-- [Differentiable On laplace of norm le exp](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/exponential-bound/differentiable-on-laplace-of-norm-le-exp.md)
+- [Holomorphy of the Laplace transform under an exponential bound](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/exponential-bound/differentiable-on-laplace-of-norm-le-exp.md)
 
 ## Sources
 

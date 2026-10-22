@@ -13,14 +13,14 @@ Any finite composition of the operators `1 - ∂ᵢ` preserves real stability.
 
 ## Depends on
 
-- [Is Real Stable](is-real-stable.md)
-- [Mixed Differential](../pderiv/mixed-differential.md)
+- [Real stable polynomials](is-real-stable.md)
+- [Mixed differential operator](../pderiv/mixed-differential.md)
 
 ## Proof depends on
 
 - [Sub pderiv](sub-pderiv-2.md)
-- [Mixed Differential cons](../pderiv/mixed-differential-cons.md)
-- [Mixed Differential nil](../pderiv/mixed-differential-nil.md)
+- [Mixed differential along a list with a given first index](../pderiv/mixed-differential-cons.md)
+- [Mixed differential along the empty list](../pderiv/mixed-differential-nil.md)
 
 ## Sources
 

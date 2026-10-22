@@ -7,18 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.partialDeriv_eq_fderiv_apply_of_differentiable
 ---
 
-# Partial Deriv eq fderiv apply of differentiable
+# Partial derivative function of a differentiable function
 
-For a differentiable function, the coordinate partial derivative is its Fréchet derivative
-applied pointwise to the coordinate vector.
+**Partial derivative function of a differentiable function.** Let
+$f : \mathbb{R}^n \to \mathbb{R}$ be differentiable and let $e_i$ be the $i$-th standard basis
+vector of $\mathbb{R}^n$. Then the partial derivative $\partial_i f$ of $f$ along the $i$-th
+coordinate axis is the function $x \mapsto Df(x)\,e_i$, where $Df(x)$ is the Fréchet derivative
+of $f$ at $x$.
 
 ## Depends on
 
-- [Partial Deriv](partial-deriv.md)
+- [Partial derivative along a coordinate axis](partial-deriv.md)
 
 ## Proof depends on
 
-- [Partial Deriv eq fderiv apply](partial-deriv-eq-fderiv-apply.md)
+- [Partial derivative as a Fréchet derivative](partial-deriv-eq-fderiv-apply.md)
 
 ## Sources
 

@@ -7,11 +7,14 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.KirszbraunWanted.kirszbraun
 ---
 
-# Kirszbraun
+# Kirszbraun extension theorem for Hilbert spaces
 
-Kirszbraun extension with the former `Wanted` signature. It follows from `kirszbraun_general`;
-the hypothesis `CompleteSpace E` is unused and keeps exact compatibility with the original
-statement.
+**Kirszbraun extension theorem for Hilbert spaces.** Let $E$ and $F$ be real Hilbert spaces,
+let $s \subseteq E$ and let $K \ge 0$. Every map $f : E \to F$ that is $K$-Lipschitz on $s$
+agrees on $s$ with some map $g : E \to F$ that is $K$-Lipschitz on all of $E$.
+
+Completeness of $E$ is not used: this is a special case of the Kirszbraun extension theorem for
+an arbitrary real inner product space domain.
 
 ## Depends on
 
@@ -19,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Kirszbraun general](kirszbraun-general.md)
+- [Kirszbraun extension theorem](kirszbraun-general.md)
 
 ## Sources
 

@@ -7,19 +7,21 @@ proof: formalized
 lean: BooleanCube.booleanDegree_projection
 ---
 
-# Boolean Degree projection
+# Coordinate projections have Boolean degree one
 
-Coordinate projections have Boolean degree one.
+**Coordinate projections have Boolean degree one.** For every $n \in \mathbb{N}$ and every
+$i < n$, the coordinate projection $x \mapsto x_i$ on the Boolean cube of dimension $n$ has
+Boolean degree $1$.
 
 ## Depends on
 
-- [Bool Cube](bool-cube.md)
-- [Boolean Degree](boolean-degree.md)
+- [Boolean cube](bool-cube.md)
+- [Boolean degree](boolean-degree.md)
 
 ## Proof depends on
 
-- [Multilinear Extension](multilinear-extension.md)
-- [Multilinear Extension projection](multilinear-extension-projection.md)
+- [Multilinear extension](multilinear-extension.md)
+- [Multilinear extension of a coordinate projection](multilinear-extension-projection.md)
 
 ## Sources
 

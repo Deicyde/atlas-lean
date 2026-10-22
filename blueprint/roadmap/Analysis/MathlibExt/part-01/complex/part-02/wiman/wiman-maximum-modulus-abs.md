@@ -7,13 +7,15 @@ proof: formalized
 lean: Complex.wimanMaximumModulus_abs
 ---
 
-# Wiman Maximum Modulus abs
+# Wiman maximum modulus at the absolute value of the radius
 
-Re-normalizing the radius does not change the maximum modulus.
+**Wiman maximum modulus at the absolute value of the radius.** For every function
+$f : \mathbb{C} \to \mathbb{C}$ and every real number $r$, the Wiman maximum modulus of $f$ at
+radius $|r|$ equals the Wiman maximum modulus of $f$ at radius $r$.
 
 ## Depends on
 
-- [Wiman Maximum Modulus](wiman-maximum-modulus.md)
+- [Wiman maximum modulus](wiman-maximum-modulus.md)
 
 ## Sources
 

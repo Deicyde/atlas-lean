@@ -7,17 +7,19 @@ proof: formalized
 lean: Polynomial.one_le_l1Norm_of_monic
 ---
 
-# One le l1 Norm of monic
+# Monic polynomials have L1 norm at least one
 
-The L1 norm of a monic polynomial is at least one.
+**Monic polynomials have L1 norm at least one.** Let $K$ be a nontrivial semiring (one with
+$0 \neq 1$) and $v$ a real-valued absolute value on $K$. If $f \in K[X]$ is monic, then the L1
+norm of $f$ with respect to $v$ satisfies $\|f\|_v \ge 1$.
 
 ## Depends on
 
-- [L1 Norm](l1-norm.md)
+- [L1 norm of a polynomial](l1-norm.md)
 
 ## Proof depends on
 
-- [L1 Norm eq sum range](l1-norm-eq-sum-range.md)
+- [L1 norm as a sum up to the degree](l1-norm-eq-sum-range.md)
 
 ## Sources
 

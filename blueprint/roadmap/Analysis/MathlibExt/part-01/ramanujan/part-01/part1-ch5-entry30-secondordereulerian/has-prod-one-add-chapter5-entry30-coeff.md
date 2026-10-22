@@ -7,23 +7,26 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry30Secondordereulerian.hasProd_one_add_chapter5Entry30Coeff
 ---
 
-# Has Prod one add chapter5 Entry30 Coeff
+# Euler product for the Entry 30 coefficients
 
-Euler product: when `‖a p‖ ≤ p ^ (-c)` at every prime, for some `c > 1`, the product of
-`1 + a p` over the primes is `1 + ∑' j, chapter5Entry30Coeff a (j + 2)`.
+**Euler product for the Entry 30 coefficients.** Let $a : \mathbb{N} \to \mathbb{C}$ and let
+$c > 1$ be real with $|a(p)| \le p^{-c}$ for every prime $p$. Write $f_a(n)$ for the Entry 30
+coefficient of $a$ at $n$ (it is $0$ at $n = 0$; for $n \ge 1$ it is the product of $a(p)$ over
+the primes $p \mid n$ if $n$ is squarefree, and $0$ otherwise). Then the product of $1 + a(p)$
+over all primes $p$ converges unconditionally to $1 + \sum_{n \ge 2} f_a(n)$.
 
 ## Depends on
 
-- [Chapter5 Entry30 Coeff](chapter5-entry30-coeff.md)
+- [Coefficients for Entry 30](chapter5-entry30-coeff.md)
 
 ## Proof depends on
 
-- [Chapter5 Entry30 Coeff mul of coprime](chapter5-entry30-coeff-mul-of-coprime.md)
+- [Entry 30 coefficients are multiplicative](chapter5-entry30-coeff-mul-of-coprime.md)
 - [Chapter5 Entry30 Coeff of not squarefree](chapter5-entry30-coeff-of-not-squarefree.md)
-- [Chapter5 Entry30 Coeff of squarefree](chapter5-entry30-coeff-of-squarefree.md)
+- [Entry 30 coefficients at squarefree integers](chapter5-entry30-coeff-of-squarefree.md)
 - [Chapter5 Entry30 Coeff one](chapter5-entry30-coeff-one.md)
 - [Chapter5 Entry30 Coeff prime](chapter5-entry30-coeff-prime.md)
-- [Chapter5 Entry30 Coeff prime pow of two le](chapter5-entry30-coeff-prime-pow-of-two.md)
+- [Entry 30 coefficients vanish at higher prime powers](chapter5-entry30-coeff-prime-pow-of-two.md)
 - [Chapter5 Entry30 Coeff zero](chapter5-entry30-coeff-zero.md)
 
 ## Sources

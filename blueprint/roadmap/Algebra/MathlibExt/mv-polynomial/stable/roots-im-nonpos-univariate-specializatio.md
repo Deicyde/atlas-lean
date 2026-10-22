@@ -14,12 +14,12 @@ leaves every root of a nonzero specialization in the closed lower half-plane.
 
 ## Depends on
 
-- [Is Stable](is-stable.md)
-- [Univariate Specialization](univariate-specialization.md)
+- [Stable polynomials](is-stable.md)
+- [Univariate specialization](univariate-specialization.md)
 
 ## Proof depends on
 
-- [Eval univariate Specialization](eval-univariate-specialization.md)
+- [Evaluating a univariate specialization](eval-univariate-specialization.md)
 
 ## Sources
 

@@ -7,14 +7,15 @@ proof: formalized
 lean: TorusSobolev.unitRescaling_zero
 ---
 
-# Unit Rescaling zero
+# The unit rescaling fixes the origin
 
-The physical origin is taken to the unit-torus origin.
+**The unit rescaling fixes the origin.** The coordinate rescaling from the torus
+$(\mathbb{R}/2\pi\mathbb{Z})^2$ to the unit torus $(\mathbb{R}/\mathbb{Z})^2$ maps $0$ to $0$.
 
 ## Depends on
 
-- [Torus](../basic/torus.md)
-- [Unit Rescaling](../basic/unit-rescaling.md)
+- [The torus of period $2\pi$](../basic/torus.md)
+- [Rescaling the torus to unit period](../basic/unit-rescaling.md)
 
 ## Sources
 

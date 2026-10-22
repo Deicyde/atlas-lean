@@ -6,11 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.GeneralizedChebyshevSecondKind.Q
 ---
 
-# Q
+# Generalized Chebyshev polynomials of the second kind
 
-Generalized Chebyshev polynomials of the second kind: `Q 0 = 1`,
-`Q 1 = P 1 - C lam * P 0`, and
-`Q (n + 2) = P (n + 2) - C lam * P (n + 1) - C mu * P n`.
+**Generalized Chebyshev polynomials of the second kind.** For a commutative ring $R$ and
+$r, s, \lambda, \mu \in R$, let $P_n \in R[x]$ be the modified Chebyshev base polynomials
+with parameters $r, s$. The polynomials $Q_n \in R[x]$ are defined by $Q_0 = 1$,
+$Q_1 = P_1 - \lambda P_0$ and $Q_{n+2} = P_{n+2} - \lambda P_{n+1} - \mu P_n$
+for every $n \ge 0$.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [P](p.md)
+- [Modified Chebyshev base polynomials of the second kind](p.md)
 
 ## Sources
 

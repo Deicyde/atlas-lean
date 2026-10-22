@@ -7,18 +7,18 @@ navigation: module
 
 ## Algebraic Geometry
 
-- [Cubic Surface](cubic-surface.md)
+- [Cubic surface](cubic-surface.md)
 
 ## Cubic Surface
 
-- [Total Degree defining](total-degree-defining.md)
-- [Is Homogeneous pderiv](is-homogeneous-pderiv.md)
-- [Is Singular Point](is-singular-point.md)
-- [Is Smooth](is-smooth.md)
-- [Aeval defining eq zero of pderiv](aeval-defining-eq-zero-of-pderiv.md)
-- [Is Singular Point iff](is-singular-point-iff.md)
+- [The defining cubic has total degree three](total-degree-defining.md)
+- [The partial derivatives of a cubic form are quadratic](is-homogeneous-pderiv.md)
+- [Singular point of a cubic surface](is-singular-point.md)
+- [Smooth cubic surface](is-smooth.md)
+- [Vanishing partial derivatives force the cubic to vanish when $3 \neq 0$](aeval-defining-eq-zero-of-pderiv.md)
+- [Singular points via partial derivatives](is-singular-point-iff.md)
 
 ## Algebraic Geometry
 
-- [Fermat Cubic Surface](fermat-cubic-surface.md)
-- [Triple Plane](triple-plane.md)
+- [Fermat cubic surface](fermat-cubic-surface.md)
+- [Triple plane](triple-plane.md)

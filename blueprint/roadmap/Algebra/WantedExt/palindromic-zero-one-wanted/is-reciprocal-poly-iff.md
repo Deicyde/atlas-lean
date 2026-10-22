@@ -6,13 +6,15 @@ proof: formalized
 lean: MathlibExt.Algebra.PalindromicZeroOneWanted.isReciprocalPoly_iff
 ---
 
-# Is Reciprocal Poly iff
+# Characterization of reciprocal polynomials
 
-Characterization of `IsReciprocalPoly`.
+**Characterization of reciprocal polynomials.** A polynomial $f \in \mathbb{Z}[x]$ of
+degree $d$ (with $d = 0$ for the zero polynomial) is reciprocal if and only if its reversal
+$x^d f(1/x)$ equals $f$.
 
 ## Depends on
 
-- [Is Reciprocal Poly](is-reciprocal-poly.md)
+- [Reciprocal polynomial](is-reciprocal-poly.md)
 
 ## Sources
 

@@ -6,21 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.IsHannerPolytope.isCompact
 ---
 
-# Is Compact
+# Hanner polytopes are compact
 
-Every Hanner polytope is compact.
+**Hanner polytopes are compact.** Every Hanner polytope is compact.
 
 ## Depends on
 
-- [Is Hanner Polytope](is-hanner-polytope.md)
+- [Hanner polytopes](is-hanner-polytope.md)
 
 ## Proof depends on
 
-- [Convex](convex.md)
-- [Zero mem](zero-mem.md)
-- [Hanner Infinity Sum](hanner-infinity-sum.md)
-- [Hanner One Sum](hanner-one-sum.md)
-- [Hanner Unit Segment](hanner-unit-segment.md)
+- [Hanner polytopes are convex](convex.md)
+- [Hanner polytopes contain the origin](zero-mem.md)
+- [$\ell_\infty$ sum of bodies](hanner-infinity-sum.md)
+- [$\ell_1$ sum of bodies](hanner-one-sum.md)
+- [Centered unit segment](hanner-unit-segment.md)
 
 ## Sources
 

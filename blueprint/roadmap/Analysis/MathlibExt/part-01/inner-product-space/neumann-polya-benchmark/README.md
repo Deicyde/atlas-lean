@@ -5,5 +5,5 @@ navigation: module
 
 # Neumann Polya Benchmark
 
-- [Neumann Polya Eigenvalue Benchmark](neumann-polya-eigenvalue-benchmark.md)
-- [Neumann Polya Eigenvalue Benchmark succ](neumann-polya-eigenvalue-benchmark-succ.md)
+- [Neumann Pólya benchmark](neumann-polya-eigenvalue-benchmark.md)
+- [Neumann and Dirichlet Pólya benchmarks agree after an index shift](neumann-polya-eigenvalue-benchmark-succ.md)

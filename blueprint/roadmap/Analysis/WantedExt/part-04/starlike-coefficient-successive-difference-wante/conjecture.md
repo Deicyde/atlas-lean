@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Wiman Taylor Coefficient](../../../MathlibExt/part-01/complex/part-02/wiman/wiman-taylor-coefficient.md)
+- [Wiman Taylor coefficient](../../../MathlibExt/part-01/complex/part-02/wiman/wiman-taylor-coefficient.md)
 - [Is In Class S](is-in-class-s.md)
 - [Is Starlike](is-starlike.md)
 

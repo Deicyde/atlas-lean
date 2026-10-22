@@ -5,7 +5,7 @@ navigation: module
 
 # Maximum Term Attained
 
-- [Bdd Above range wiman Term](bdd-above-range-wiman-term.md)
-- [Wiman Term le wiman Maximum Term](wiman-term-le-wiman-maximum-term.md)
-- [Wiman Maximum Term le iff](wiman-maximum-term-le-iff.md)
-- [Exists wiman Term eq wiman Maximum Term](exists-wiman-term-eq-wiman-maximum-term.md)
+- [The Taylor terms are bounded above](bdd-above-range-wiman-term.md)
+- [Each Taylor term is at most the maximum term](wiman-term-le-wiman-maximum-term.md)
+- [Bounding the maximum term](wiman-maximum-term-le-iff.md)
+- [The maximum term is attained by a Taylor term](exists-wiman-term-eq-wiman-maximum-term.md)

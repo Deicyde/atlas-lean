@@ -7,9 +7,10 @@ proof: formalized
 lean: MathlibExt.Analysis.Convex.Straszewicz.IsCompact.convexHull_of_compact
 ---
 
-# Convex Hull of compact
+# Convex hull of a compact set is compact
 
-Convex hull of a compact set in a finite-dimensional space is compact.
+**Convex hull of a compact set is compact.** Let $E$ be a finite-dimensional real normed
+space. If $K \subseteq E$ is compact, then the convex hull of $K$ is compact.
 
 ## Depends on
 

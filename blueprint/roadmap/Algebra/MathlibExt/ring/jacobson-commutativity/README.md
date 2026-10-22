@@ -5,6 +5,6 @@ navigation: module
 
 # Jacobson Commutativity
 
-- [Is Prime Ideal](is-prime-ideal.md)
-- [Is MSystem](is-msystem.md)
+- [Prime two-sided ideal](is-prime-ideal.md)
+- [m-system](is-msystem.md)
 - [Jacobson commutativity](jacobson-commutativity.md)

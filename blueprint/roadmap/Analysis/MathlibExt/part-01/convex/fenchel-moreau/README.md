@@ -5,8 +5,8 @@ navigation: module
 
 # Fenchel Moreau
 
-- [Fenchel Conj](fenchel-conj.md)
-- [Fenchel Biconj](fenchel-biconj.md)
-- [Is Closed epi real](is-closed-epi-real.md)
-- [Biconj le](biconj-le.md)
-- [Fenchel moreau](fenchel-moreau.md)
+- [Fenchel conjugate](fenchel-conj.md)
+- [Fenchel biconjugate](fenchel-biconj.md)
+- [Lower semicontinuous functions have closed epigraphs](is-closed-epi-real.md)
+- [The biconjugate lies below the function](biconj-le.md)
+- [Fenchel–Moreau theorem](fenchel-moreau.md)

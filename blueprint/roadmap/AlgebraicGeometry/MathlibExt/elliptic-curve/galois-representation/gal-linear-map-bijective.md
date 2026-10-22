@@ -7,20 +7,26 @@ proof: formalized
 lean: MetaMathlibExt.galLinearMap_bijective
 ---
 
-# Gal Linear Map bijective
+# Galois automorphisms act bijectively on $W(p)$
 
-Each Galois automorphism acts bijectively, with the inverse automorphism
-supplying a two-sided inverse.
+**Galois automorphisms act bijectively on $W[p]$.** Let $W$ be a Weierstrass curve over
+$\mathbb{Q}$, $p$ a natural number, $W(\overline{\mathbb{Q}})$ the group of nonsingular points of
+$W$ with coordinates in the algebraic closure $\overline{\mathbb{Q}}$, together with the point at
+infinity, and $W[p]$ its $p$-torsion subgroup. For every $\sigma$ in the absolute Galois group
+$G_{\mathbb{Q}}$ of $\mathbb{Q}$, the $\mathbb{Z}/p\mathbb{Z}$-linear map by which $\sigma$ acts
+on $W[p]$ is bijective.
+
+The action of $\sigma^{-1}$ is a two-sided inverse.
 
 ## Depends on
 
-- [Gal Linear Map](gal-linear-map.md)
-- [Torsion Pts](torsion-pts.md)
+- [Linear Galois action on $W(p)$](gal-linear-map.md)
+- [The $p$-torsion subgroup](torsion-pts.md)
 
 ## Proof depends on
 
-- [Gal Linear Map mul apply](gal-linear-map-mul-apply.md)
-- [Gal Linear Map one apply](gal-linear-map-one-apply.md)
+- [The linear Galois action on $W(p)$ respects products](gal-linear-map-mul-apply.md)
+- [The identity acts trivially on $W(p)$](gal-linear-map-one-apply.md)
 
 ## Sources
 

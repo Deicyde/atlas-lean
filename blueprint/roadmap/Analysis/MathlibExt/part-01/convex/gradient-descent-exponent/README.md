@@ -5,13 +5,13 @@ navigation: module
 
 # Gradient Descent Exponent
 
-- [Gradient Descent Trajectory](gradient-descent-trajectory.md)
-- [Is Unit Smooth Convex](is-unit-smooth-convex.md)
-- [Gradient Descent Uniform Rate](gradient-descent-uniform-rate.md)
-- [Gradient Descent Exponent](gradient-descent-exponent.md)
-- [Gradient Descent Silver Ratio](gradient-descent-silver-ratio.md)
-- [Silver Gradient Descent Exponent](silver-gradient-descent-exponent.md)
-- [Silver Gradient Descent Schedule](silver-gradient-descent-schedule.md)
-- [Gradient Descent Uniform Rate one](gradient-descent-uniform-rate-one.md)
-- [One le gradient Descent Exponent](one-le-gradient-descent-exponent.md)
-- [Gradient Descent Trajectory zero Schedule](gradient-descent-trajectory-zero-schedul.md)
+- [Gradient descent with a step schedule](gradient-descent-trajectory.md)
+- [Convex functions with $1$-Lipschitz gradient](is-unit-smooth-convex.md)
+- [Uniform last-iterate rate of a step schedule](gradient-descent-uniform-rate.md)
+- [The gradient descent exponent](gradient-descent-exponent.md)
+- [Silver ratio](gradient-descent-silver-ratio.md)
+- [Silver exponent](silver-gradient-descent-exponent.md)
+- [Silver step schedule](silver-gradient-descent-schedule.md)
+- [Constant unit steps achieve exponent one](gradient-descent-uniform-rate-one.md)
+- [The gradient descent exponent is at least one](one-le-gradient-descent-exponent.md)
+- [Gradient descent with zero step sizes stays put](gradient-descent-trajectory-zero-schedul.md)

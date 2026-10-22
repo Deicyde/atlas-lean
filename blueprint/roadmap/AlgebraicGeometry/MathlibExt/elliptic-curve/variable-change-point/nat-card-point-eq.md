@@ -7,10 +7,11 @@ proof: formalized
 lean: WeierstrassCurve.VariableChange.natCard_point_eq
 ---
 
-# Nat Card point eq
+# Variable changes preserve the point count
 
-An admissible variable change preserves the number of rational points of an elliptic
-Weierstrass equation over a finite field.
+**Variable changes preserve the point count.** Let $W$ be an elliptic Weierstrass curve over
+a finite field $F$, let $C$ be a variable change and let $C \cdot W$ be the transformed curve.
+Then $C \cdot W$ and $W$ have the same number of rational points.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Point Equiv](point-equiv.md)
+- [Variable changes biject rational points](point-equiv.md)
 
 ## Sources
 

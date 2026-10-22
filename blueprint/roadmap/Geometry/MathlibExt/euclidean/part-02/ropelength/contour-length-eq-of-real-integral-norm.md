@@ -17,7 +17,7 @@ For a `C¹` curve, contour length is the integral of speed.
 
 ## Proof depends on
 
-- [Curve length eq integral norm deriv](../../../../../Analysis/MathlibExt/part-01/calculus/curve-length/curve-length-eq-integral-norm-deriv.md)
+- [Length of a $C^1$ curve](../../../../../Analysis/MathlibExt/part-01/calculus/curve-length/curve-length-eq-integral-norm-deriv.md)
 
 ## Sources
 

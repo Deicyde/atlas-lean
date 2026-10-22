@@ -5,12 +5,12 @@ navigation: module
 
 # Discrete Spectrum
 
-- [Nonnegative Discrete Spectrum](nonnegative-discrete-spectrum.md)
-- [Ext](ext.md)
-- [Sublevel Set](sublevel-set.md)
-- [Sublevel Set finite](sublevel-set-finite.md)
-- [Sublevel Finset](sublevel-finset.md)
-- [Mem sublevel Finset](mem-sublevel-finset.md)
-- [Counting Function](counting-function.md)
-- [Riesz Mean](riesz-mean.md)
-- [Riesz Mean zero](riesz-mean-zero.md)
+- [Nonnegative discrete spectrum](nonnegative-discrete-spectrum.md)
+- [A nonnegative discrete spectrum is determined by its eigenvalues](ext.md)
+- [Strict sublevel set](sublevel-set.md)
+- [Strict sublevel sets are finite](sublevel-set-finite.md)
+- [Finite strict sublevel set](sublevel-finset.md)
+- [Membership in the finite strict sublevel set](mem-sublevel-finset.md)
+- [Eigenvalue counting function](counting-function.md)
+- [Riesz mean](riesz-mean.md)
+- [The Riesz mean of order zero is the counting function](riesz-mean-zero.md)

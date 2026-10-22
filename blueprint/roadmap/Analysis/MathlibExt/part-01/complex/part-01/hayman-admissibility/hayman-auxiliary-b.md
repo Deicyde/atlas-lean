@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.haymanAuxiliaryB
 ---
 
-# Hayman Auxiliary B
+# Hayman auxiliary function $B$
 
-Hayman auxiliary function `B(r) = r * A'(r)`.
+**Hayman auxiliary function $B$.** For a function $G : \mathbb{C} \to \mathbb{C}$ and a real
+number $r$, $B(r) = r\,A'(r)$, where $A$ is the Hayman auxiliary function of $G$, viewed as a
+real function of $r$, and $A'$ is its derivative.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Hayman Auxiliary A](hayman-auxiliary-a.md)
+- [Hayman auxiliary function $A$](hayman-auxiliary-a.md)
 
 ## Sources
 

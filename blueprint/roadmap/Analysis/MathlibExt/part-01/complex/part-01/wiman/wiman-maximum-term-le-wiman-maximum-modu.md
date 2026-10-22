@@ -7,22 +7,23 @@ proof: formalized
 lean: Complex.wimanMaximumTerm_le_wimanMaximumModulus
 ---
 
-# Maximum Term Le Modulus
+# Cauchy's inequality for the maximum term
 
-The maximum Taylor term is bounded by the maximum modulus on every
-positive-radius circle.
+**Cauchy's inequality for the maximum term.** Let $f$ be an entire function with Taylor
+coefficients $a_n$ at the origin, maximum term $\mu(r) = \sup_n |a_n|\,|r|^n$ and maximum modulus
+$M(r) = \sup_{|z| = |r|} |f(z)|$. Then $\mu(r) \le M(r)$ for every real $r > 0$.
 
 ## Depends on
 
-- [Wiman Maximum Modulus](../../part-02/wiman/wiman-maximum-modulus.md)
-- [Wiman Maximum Term](../../part-02/wiman/wiman-maximum-term.md)
+- [Wiman maximum modulus](../../part-02/wiman/wiman-maximum-modulus.md)
+- [Wiman maximum term](../../part-02/wiman/wiman-maximum-term.md)
 
 ## Proof depends on
 
-- [Maximum Modulus Attained](exists-mem-sphere-eq-wiman-maximum-modul.md)
-- [Wiman Maximum Term le iff](maximum-term-attained/wiman-maximum-term-le-iff.md)
-- [Wiman Taylor Coefficient](../../part-02/wiman/wiman-taylor-coefficient.md)
-- [Wiman Term](../../part-02/wiman/wiman-term.md)
+- [The maximum modulus is attained](exists-mem-sphere-eq-wiman-maximum-modul.md)
+- [Bounding the maximum term](maximum-term-attained/wiman-maximum-term-le-iff.md)
+- [Wiman Taylor coefficient](../../part-02/wiman/wiman-taylor-coefficient.md)
+- [Wiman term](../../part-02/wiman/wiman-term.md)
 
 ## Sources
 

@@ -6,10 +6,10 @@ statement: formalized
 lean: Set.IsProductFree
 ---
 
-# Product Free
+# Product-free set
 
-A set in a multiplicative type is product-free if no product of two of its elements
-lies in the set.
+**Product-free set.** A set $S$ in a type $M$ with a multiplication is product-free if
+$xy \notin S$ for all $x, y \in S$, where $x$ and $y$ need not be distinct.
 
 ## Depends on
 

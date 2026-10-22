@@ -6,9 +6,10 @@ statement: formalized
 lean: MvPolynomial.IsRealStable
 ---
 
-# Is Real Stable
+# Real stable polynomials
 
-A complex multivariate polynomial is real stable if it is stable and has real coefficients.
+**Real stable polynomials.** A complex multivariate polynomial is real stable if it is stable
+and has real coefficients.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Stable](is-stable.md)
+- [Stable polynomials](is-stable.md)
 
 ## Sources
 

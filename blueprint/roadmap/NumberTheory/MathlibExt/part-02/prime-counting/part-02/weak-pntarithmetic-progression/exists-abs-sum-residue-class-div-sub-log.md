@@ -21,11 +21,11 @@ This node has no prerequisites.
 
 - [Psi Residue Class](../residue-class-psi/psi-residue-class.md)
 - [Tendsto psi Residue Class div self](tendsto-psi-residue-class-div-self.md)
-- [Has Laplace](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/basic/has-laplace.md)
-- [Laplace Convergent](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/basic/laplace-convergent.md)
-- [Laplace](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/basic/laplace.md)
-- [Laplace Convergent of norm le exp](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/exponential-bound/laplace-convergent-of-norm-le-exp.md)
-- [Newman Tauberian](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/newman-tauberian.md)
+- [Laplace transform with a given value](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/basic/has-laplace.md)
+- [Convergence of the Laplace transform](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/basic/laplace-convergent.md)
+- [The one-sided Laplace transform](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/basic/laplace.md)
+- [Convergence of the Laplace transform under an exponential bound](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/exponential-bound/laplace-convergent-of-norm-le-exp.md)
+- [Newman's Tauberian theorem](../../../../../../Analysis/MathlibExt/part-01/laplace-transform/newman-tauberian.md)
 
 ## Sources
 

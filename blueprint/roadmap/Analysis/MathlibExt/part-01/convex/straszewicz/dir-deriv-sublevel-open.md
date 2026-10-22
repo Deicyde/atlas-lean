@@ -7,21 +7,25 @@ proof: formalized
 lean: MathlibExt.Analysis.Convex.Straszewicz.dirDeriv_sublevel_open
 ---
 
-# Dir Deriv sublevel open
+# Strict sublevel sets of the symmetrized directional derivative are open
 
-Sublevel sets of the symmetrized directional derivative are open.
+**Strict sublevel sets of the symmetrized directional derivative are open.** Let $E$ be a
+real normed space with continuous dual $E^*$, let $K \subseteq E$ be a nonempty compact set with
+support function $h_K$, and write $h_K'(x; v)$ for the directional derivative of $h_K$ at $x$ in
+direction $v$. For every $v \in E^*$ and every real $c$, the set of $x \in E^*$ with
+$h_K'(x; v) + h_K'(x; -v) < c$ is open.
 
 ## Depends on
 
-- [Dir Deriv](dir-deriv.md)
-- [Supp Func](supp-func.md)
+- [Directional derivative](dir-deriv.md)
+- [Support function](supp-func.md)
 
 ## Proof depends on
 
-- [Dir Quot](dir-quot.md)
-- [Dir Quot bdd Below](dir-quot-bdd-below.md)
-- [Supp Func continuous](supp-func-continuous.md)
-- [Supp Func convex](supp-func-convex.md)
+- [Difference quotients](dir-quot.md)
+- [Difference quotients of a convex function are bounded below](dir-quot-bdd-below.md)
+- [The support function of a compact set is continuous](supp-func-continuous.md)
+- [The support function of a compact set is convex](supp-func-convex.md)
 
 ## Sources
 

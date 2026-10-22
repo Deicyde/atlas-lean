@@ -7,18 +7,21 @@ proof: formalized
 lean: MathlibExt.Analysis.Convex.Straszewicz.dirDeriv_subadd
 ---
 
-# Dir Deriv subadd
+# Subadditivity of the directional derivative
 
-Subadditivity of the directional derivative (midpoint rescaling trick).
+**Subadditivity of the directional derivative.** Let $E$ be a real normed space with
+continuous dual $E^*$, let $h : E^* \to \mathbb{R}$ be convex, and write $h'(x; v)$ for the
+directional derivative of $h$ at $x$ in direction $v$. For all $x, v, w \in E^*$,
+$h'(x; v + w) \le h'(x; v) + h'(x; w)$.
 
 ## Depends on
 
-- [Dir Deriv](dir-deriv.md)
+- [Directional derivative](dir-deriv.md)
 
 ## Proof depends on
 
-- [Dir Quot](dir-quot.md)
-- [Dir Quot bdd Below](dir-quot-bdd-below.md)
+- [Difference quotients](dir-quot.md)
+- [Difference quotients of a convex function are bounded below](dir-quot-bdd-below.md)
 
 ## Sources
 

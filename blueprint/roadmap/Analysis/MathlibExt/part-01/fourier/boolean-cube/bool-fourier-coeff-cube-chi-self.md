@@ -7,19 +7,22 @@ proof: formalized
 lean: BooleanCube.boolFourierCoeff_cubeChi_self
 ---
 
-# Bool Fourier Coeff cube Chi self
+# A character's own Fourier coefficient
 
-A Fourier character has normalized coefficient one at its own index.
+**A character's own Fourier coefficient.** For every $n \in \mathbb{N}$ and every
+$S \subseteq \{0, \dots, n-1\}$, the normalized Fourier coefficient at $S$ of the character
+$\chi_S(x) = \prod_{i \in S} x_i$ on $\{-1, 1\}^n$ equals $1$, that is,
+$\widehat{\chi_S}(S) = 1$.
 
 ## Depends on
 
-- [Bool Fourier Coeff](bool-fourier-coeff.md)
-- [Cube Chi](cube-chi.md)
+- [Fourier coefficient on the Boolean cube](bool-fourier-coeff.md)
+- [Fourier character on the Boolean cube](cube-chi.md)
 
 ## Proof depends on
 
-- [Bool Cube](bool-cube.md)
-- [Cube Chi mul self](cube-chi-mul-self.md)
+- [Boolean cube](bool-cube.md)
+- [Fourier characters square to one](cube-chi-mul-self.md)
 
 ## Sources
 

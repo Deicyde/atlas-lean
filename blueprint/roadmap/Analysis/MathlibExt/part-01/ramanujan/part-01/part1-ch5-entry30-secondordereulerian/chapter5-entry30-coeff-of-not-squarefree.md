@@ -13,12 +13,12 @@ The coefficient vanishes at every non-squarefree `n`.
 
 ## Depends on
 
-- [Chapter5 Entry30 Coeff](chapter5-entry30-coeff.md)
+- [Coefficients for Entry 30](chapter5-entry30-coeff.md)
 
 ## Proof depends on
 
-- [Chapter5 Entry30 Local Coeff](chapter5-entry30-local-coeff.md)
-- [Chapter5 Entry30 Local Coeff of two le](chapter5-entry30-local-coeff-of-two-le.md)
+- [Local factor](chapter5-entry30-local-coeff.md)
+- [Entry 30 local factors vanish at exponents at least two](chapter5-entry30-local-coeff-of-two-le.md)
 
 ## Sources
 

@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.Analysis.Complex.MittagLefflerWanted.principalPart_meromorphicAt
 ---
 
-# Principal Part meromorphic At
+# The principal part is meromorphic
 
-The principal part is meromorphic at every point.
+**The principal part is meromorphic.** For every $s \in \mathbb{C}$ and every finitely
+supported sequence $c$ of complex coefficients, the principal part at $s$ with coefficients $c$ is
+meromorphic at every point of $\mathbb{C}$.
 
 ## Depends on
 
-- [Principal Part](principal-part.md)
+- [Principal part with finitely many coefficients](principal-part.md)
 
 ## Sources
 

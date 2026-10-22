@@ -6,17 +6,18 @@ statement: formalized
 lean: MathlibExt.Algebra.Lie.PoissonBracket.IsPoissonPrime
 ---
 
-# Is Poisson Prime
+# Poisson prime ideal
 
-`P` is a Poisson prime: prime and Poisson.
+**Poisson prime ideal.** Let $A$ be a commutative $\mathbb{C}$-algebra with a Poisson bracket.
+An ideal $P$ of $A$ is a Poisson prime when it is both a prime ideal and a Poisson ideal.
 
 ## Depends on
 
-- [Poisson Bracket](poisson-bracket.md)
+- [Poisson bracket](poisson-bracket.md)
 
 ## Proof depends on
 
-- [Is Poisson Ideal](is-poisson-ideal.md)
+- [Poisson ideal](is-poisson-ideal.md)
 
 ## Sources
 

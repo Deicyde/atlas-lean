@@ -13,12 +13,12 @@ The normalized radial majorant is nonnegative.
 
 ## Depends on
 
-- [Wiman Majorant](wiman-majorant.md)
+- [Radial majorant](wiman-majorant.md)
 
 ## Proof depends on
 
-- [Wiman Term](../../../part-02/wiman/wiman-term.md)
-- [Wiman Term nonneg](wiman-term-nonneg.md)
+- [Wiman term](../../../part-02/wiman/wiman-term.md)
+- [Radial Taylor terms are nonnegative](wiman-term-nonneg.md)
 
 ## Sources
 

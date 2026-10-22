@@ -7,17 +7,20 @@ proof: formalized
 lean: Complex.mem_interior_integrableExpSet_wimanCoefficientMeasure
 ---
 
-# Mem interior integrable Exp Set wiman Coefficient Measure
+# Every real parameter is interior to the exponential-integrability set
 
-Every real parameter lies in the interior exponential-integrability interval.
+**Every real parameter is interior to the exponential-integrability set.** Let $f$ be an
+entire function and let $\mu_f$ be its Wiman coefficient measure on $\mathbb{N}$. Every real $x$
+lies in the interior of the set of real $t$ for which $n \mapsto e^{tn}$ is integrable with
+respect to $\mu_f$.
 
 ## Depends on
 
-- [Wiman Coefficient Measure](wiman-coefficient-measure.md)
+- [Wiman coefficient measure](wiman-coefficient-measure.md)
 
 ## Proof depends on
 
-- [Integrable Exp Set wiman Coefficient Measure eq univ](integrable-exp-set-wiman-coefficient-mea.md)
+- [The exponential-integrability set of the Wiman coefficient measure is the whole line](integrable-exp-set-wiman-coefficient-mea.md)
 
 ## Sources
 

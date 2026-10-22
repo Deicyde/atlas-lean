@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.IsBisectionSequence.le_and_le
 ---
 
-# Le and le
+# Bisection intervals stay inside the initial interval
 
-Every bisection interval stays ordered and inside the initial interval.
+**Bisection intervals stay inside the initial interval.** Let $f : \mathbb{R} \to \mathbb{R}$,
+let $a \le b$, and let $u, v$ be a bisection sequence for $f$ from $a$ to $b$. Then
+$a \le u_n \le v_n \le b$ for every $n \in \mathbb{N}$.
 
 ## Depends on
 
-- [Is Bisection Sequence](is-bisection-sequence.md)
+- [Bisection sequence](is-bisection-sequence.md)
 
 ## Sources
 

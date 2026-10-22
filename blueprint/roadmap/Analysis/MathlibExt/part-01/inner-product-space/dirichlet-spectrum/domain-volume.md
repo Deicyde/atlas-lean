@@ -6,10 +6,11 @@ statement: formalized
 lean: EuclideanLaplacian.domainVolume
 ---
 
-# Domain Volume
+# Volume of a domain
 
-Real volume of an open domain `Ω ⊂ ℝⁿ`: the canonical `volume` measure of
-the underlying set, coerced to `ℝ` via `Measure.real`.
+**Volume of a domain.** For an open set $\Omega \subseteq \mathbb{R}^n$, the volume $|\Omega|$
+is the Lebesgue measure of $\Omega$ taken as a real number, with $|\Omega| = 0$ when the
+Lebesgue measure of $\Omega$ is infinite.
 
 ## Depends on
 

@@ -4,6 +4,6 @@ navigation: module
 
 # Direct Summand
 
-- [Single Functor Plus Iso Comp Qh](single-functor-plus-iso-comp-qh.md)
-- [Derived direct summand](derived-direct-summand.md)
-- [Direct summand](direct-summand.md)
+- [Single complexes in the bounded-below derived category](single-functor-plus-iso-comp-qh.md)
+- [Derived direct summand theorem](derived-direct-summand.md)
+- [Direct summand theorem](direct-summand.md)

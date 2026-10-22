@@ -5,5 +5,5 @@ navigation: module
 
 # MSS
 
-- [Exists outcome max Real Root le mixed Characteristic Polynomial](exists-outcome-max-real-root-le-mixed-ch.md)
-- [Finite MSSBound](finite-mssbound.md)
+- [An outcome bounded by the mixed characteristic polynomial](exists-outcome-max-real-root-le-mixed-ch.md)
+- [Marcus--Spielman--Srivastava bound, finite-support form](finite-mssbound.md)

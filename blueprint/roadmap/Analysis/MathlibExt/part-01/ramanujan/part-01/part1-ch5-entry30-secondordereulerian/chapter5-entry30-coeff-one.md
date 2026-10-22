@@ -13,11 +13,11 @@ The coefficient at `1` is `1`.
 
 ## Depends on
 
-- [Chapter5 Entry30 Coeff](chapter5-entry30-coeff.md)
+- [Coefficients for Entry 30](chapter5-entry30-coeff.md)
 
 ## Proof depends on
 
-- [Chapter5 Entry30 Local Coeff](chapter5-entry30-local-coeff.md)
+- [Local factor](chapter5-entry30-local-coeff.md)
 
 ## Sources
 

@@ -7,14 +7,15 @@ proof: formalized
 lean: GroupRing.inversion_single
 ---
 
-# Inversion single
+# Inversion on basis elements
 
-The group-ring involution sends the basis element at `g` to the basis
-element at `g⁻¹`, without changing its coefficient.
+**Inversion on basis elements.** Let $R$ be a commutative ring and $G$ a commutative group.
+For every $g \in G$ and $r \in R$, the inversion of the group ring $R[G]$ sends $r\, g$ to
+$r\, g^{-1}$.
 
 ## Depends on
 
-- [Inversion](inversion.md)
+- [Inversion on a group ring](inversion.md)
 
 ## Sources
 

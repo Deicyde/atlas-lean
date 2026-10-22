@@ -6,15 +6,18 @@ statement: formalized
 lean: GroupRing.InversionTwist.twistTwistEquiv
 ---
 
-# Twist Twist Equiv
+# Twisting twice by inversion recovers the module
 
-Twisting twice by inversion canonically recovers the original module.
+**Twisting twice by inversion recovers the module.** Let $R$ be a commutative ring, $G$ a
+commutative group and $A$ a module over the group ring $R[G]$. The map sending an element of the
+inversion twist of the inversion twist of $A$ to its underlying element of $A$ is an
+$R[G]$-linear isomorphism.
 
 ## Depends on
 
-- [Inversion Twist](inversion-twist.md)
-- [Equiv](equiv.md)
-- [Inversion](inversion.md)
+- [Inversion twist of a group-ring module](inversion-twist.md)
+- [Underlying bijection of the inversion twist](equiv.md)
+- [Inversion on a group ring](inversion.md)
 
 ## Proof depends on
 

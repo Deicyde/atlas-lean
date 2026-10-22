@@ -5,8 +5,8 @@ navigation: module
 
 # Real Stable
 
-- [Mixed Det Polynomial is Stable of pos Semidef](mixed-det-polynomial-is-stable-of-pos-se.md)
-- [Mixed Det Polynomial is Real Stable of pos Semidef](mixed-det-polynomial-is-real-stable-of-p.md)
-- [Mixed Characteristic Polynomial monic](mixed-characteristic-polynomial-monic.md)
-- [Mixed Characteristic Polynomial nat Degree](mixed-characteristic-polynomial-nat-degr.md)
-- [Mixed Characteristic Polynomial is Real Rooted of pos Semidef](mixed-characteristic-polynomial-is-real.md)
+- [Stability of the determinant polynomial](mixed-det-polynomial-is-stable-of-pos-se.md)
+- [Real stability of the determinant polynomial](mixed-det-polynomial-is-real-stable-of-p.md)
+- [Mixed characteristic polynomials are monic](mixed-characteristic-polynomial-monic.md)
+- [Degree of a mixed characteristic polynomial](mixed-characteristic-polynomial-nat-degr.md)
+- [Mixed characteristic polynomials of positive semidefinite matrices are real-rooted](mixed-characteristic-polynomial-is-real.md)

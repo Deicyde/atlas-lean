@@ -6,10 +6,11 @@ statement: formalized
 lean: Polynomial.HasCommonUpperInterlacing
 ---
 
-# Has Common Upper Interlacing
+# Common upper interlacing point
 
-A finite polynomial family has a common upper interlacing point when one real number lies
-between the two largest roots of every member, with multiplicity.
+**Common upper interlacing point.** A family $(P_i)_{i \in I}$ of complex polynomials,
+indexed by an arbitrary type $I$, has a common upper interlacing point if some real number $a$
+is an upper interlacing point of $P_i$ for every $i \in I$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Upper Interlacing Point](has-upper-interlacing-point.md)
+- [Upper interlacing point](has-upper-interlacing-point.md)
 
 ## Sources
 

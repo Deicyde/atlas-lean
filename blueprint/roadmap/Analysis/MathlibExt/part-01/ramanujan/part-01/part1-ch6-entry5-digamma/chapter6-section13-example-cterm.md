@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch6.Entry5Digamma.chapter6Section13ExampleCTerm
 ---
 
-# Chapter6 Section13 Example CTerm
+# Terms of Ramanujan's factorial series
 
-The `j`-th term `(-1)ʲ / ((x + 1)(x + 2) ⋯ (x + j + 1))` of Ramanujan's factorial series.
+**Terms of Ramanujan's factorial series.** For a real number $x$ and a natural number $j$,
+the $j$-th term of Ramanujan's factorial series is $(-1)^j / ((x + 1)(x + 2) \cdots (x + j + 1))$,
+read as $0$ when the denominator vanishes.
 
 ## Depends on
 

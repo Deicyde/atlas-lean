@@ -6,10 +6,11 @@ statement: formalized
 lean: RectilinearCycle.FillingSupportedIn
 ---
 
-# Filling Supported In
+# Rectangle filling supported in a set
 
-A rectangle filling is supported in `G` when every rectangle occurring
-with nonzero coefficient is contained in `G`.
+**Rectangle filling supported in a set.** Let $G \subseteq \mathbb{C}$. A rectilinear cycle
+$\Gamma$, read as a filling by rectangles, is supported in $G$ when, for every rectangle $r$ whose
+coefficient in $\Gamma$ is nonzero, the closed carrier of $r$ is contained in $G$.
 
 ## Depends on
 
@@ -18,7 +19,7 @@ with nonzero coefficient is contained in `G`.
 ## Proof depends on
 
 - [Rectilinear Rectangle](rectilinear-rectangle.md)
-- [Carrier](carrier.md)
+- [Carrier of an axis-parallel rectangle](carrier.md)
 
 ## Sources
 

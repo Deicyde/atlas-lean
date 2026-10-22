@@ -7,21 +7,23 @@ proof: formalized
 lean: Complex.tendsto_wimanMaximumTerm_atTop
 ---
 
-# Tendsto wiman Maximum Term at Top
+# The maximum term of a transcendental entire function tends to infinity
 
-The maximum Taylor term of a transcendental entire function tends to infinity.
+**The maximum term of a transcendental entire function tends to infinity.** Let $f$ be an
+entire function that is not a polynomial function, with Taylor coefficients $a_n$ at the origin
+and maximum term $\mu(r) = \sup_n |a_n|\,|r|^n$. Then $\mu(r) \to \infty$ as $r \to \infty$.
 
 ## Depends on
 
-- [Is Transcendental](../../../part-02/wiman/is-transcendental.md)
-- [Wiman Maximum Term](../../../part-02/wiman/wiman-maximum-term.md)
+- [Transcendental functions](../../../part-02/wiman/is-transcendental.md)
+- [Wiman maximum term](../../../part-02/wiman/wiman-maximum-term.md)
 
 ## Proof depends on
 
 - [Infinite Taylor Support](../infinite-support-wiman-taylor-coefficien.md)
-- [Wiman Taylor Coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
-- [Wiman Term](../../../part-02/wiman/wiman-term.md)
-- [Wiman Term le wiman Maximum Term](../maximum-term-attained/wiman-term-le-wiman-maximum-term.md)
+- [Wiman Taylor coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
+- [Wiman term](../../../part-02/wiman/wiman-term.md)
+- [Each Taylor term is at most the maximum term](../maximum-term-attained/wiman-term-le-wiman-maximum-term.md)
 
 ## Sources
 

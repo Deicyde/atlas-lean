@@ -7,15 +7,18 @@ proof: formalized
 lean: BooleanCube.cubeChi_singleton
 ---
 
-# Cube Chi singleton
+# Singleton Fourier characters are coordinate signs
 
-A singleton Fourier character is its coordinate sign.
+**Singleton Fourier characters are coordinate signs.** For every $n$, every coordinate $i$ and
+every point $x$ of the Boolean cube in $n$ coordinates, the Fourier character $\chi_{\{i\}}$ of
+the singleton $\{i\}$ satisfies $\chi_{\{i\}}(x) = \sigma(x_i)$, where $\sigma$ is the sign of a
+coordinate: $\sigma(\text{true}) = 1$ and $\sigma(\text{false}) = -1$.
 
 ## Depends on
 
-- [Bool Cube](bool-cube.md)
-- [Cube Chi](cube-chi.md)
-- [Cube Val](cube-val.md)
+- [Boolean cube](bool-cube.md)
+- [Fourier character on the Boolean cube](cube-chi.md)
+- [Sign of a Boolean coordinate](cube-val.md)
 
 ## Sources
 

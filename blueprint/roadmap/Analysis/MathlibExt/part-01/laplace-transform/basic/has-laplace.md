@@ -6,10 +6,13 @@ statement: formalized
 lean: HasLaplace
 ---
 
-# Has Laplace
+# Laplace transform with a given value
 
-`HasLaplace f s v` packages Laplace convergence at `s` with the value
-`laplace f s`.
+**Laplace transform with a given value.** Let $E$ be a complex normed space,
+$f : \mathbb{R} \to E$, $s \in \mathbb{C}$ and $v \in E$. Then $f$ has Laplace transform $v$ at
+$s$ when the Laplace transform of $f$ converges at $s$, that is, $t \mapsto e^{-st} f(t)$ is
+integrable on $(0, \infty)$, and the Bochner integral $\int_{(0, \infty)} e^{-st} f(t)\,dt$
+equals $v$; as usual this integral is taken to be $0$ when $E$ is not complete.
 
 ## Depends on
 
@@ -17,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Laplace Convergent](laplace-convergent.md)
-- [Laplace](laplace.md)
+- [Convergence of the Laplace transform](laplace-convergent.md)
+- [The one-sided Laplace transform](laplace.md)
 
 ## Sources
 

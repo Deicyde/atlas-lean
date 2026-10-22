@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.AlgebraicGeometry.SeshadriConstantWanted.nagataConjecture10
 ---
 
-# Nagata Conjecture10
+# Nagata's conjecture for ten points
 
-The Nagata prediction for ten points, recorded as a proposition only.
-It is not asserted.
+**Nagata's conjecture for ten points.** The proposition that the generic ten-point
+Seshadri constant of $\mathbb{P}^2$, in the affine-chart model, equals $1/\sqrt{10}$.
+
+It is recorded as a proposition only and is not asserted.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Seshadri Constant10](../../MathlibExt/seshadri-constant/seshadri-constant10.md)
+- [Ten-point Seshadri constant](../../MathlibExt/seshadri-constant/seshadri-constant10.md)
 
 ## Sources
 

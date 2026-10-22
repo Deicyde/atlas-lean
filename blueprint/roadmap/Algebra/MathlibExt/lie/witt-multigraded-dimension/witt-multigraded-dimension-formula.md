@@ -7,25 +7,24 @@ proof: formalized
 lean: MetaMathlibExt.witt_multigraded_dimension_formula
 ---
 
-# Witt multigraded dimension formula
+# Witt's multigraded dimension formula
 
-Witt's multigraded dimension formula for free Lie algebras: the
-multihomogeneous component of multidegree `(n_1, ..., n_r)` of the free Lie
-algebra has dimension `M(n_1, ..., n_r)`. The component is imported from
-`MathlibExt.Algebra.Lie.FreeLieMultihomogeneousComponent` and the value `M`
-from `MathlibExt.Algebra.Lie.WittMultigradedValue`.
+**Witt's multigraded dimension formula.** Let $K$ be a field, let $r > 0$, and let
+$n_1, \dots, n_r$ be natural numbers with $n_1 + \dots + n_r > 0$. Then the multihomogeneous
+component of multidegree $(n_1, \dots, n_r)$ of the free Lie algebra over $K$ on $r$ generators
+has dimension over $K$ equal to Witt's multigraded value $M(n_1, \dots, n_r)$.
 
 Proof: The Lyndon-word basis identifies the component with the Lyndon words of
 the prescribed content, which are counted by Möbius inversion.
 
 ## Depends on
 
-- [Free Lie Multihomogeneous Component](../free-lie-multihomogeneous-component/free-lie-multihomogeneous-component.md)
-- [Witt Multigraded Value](../witt-multigraded-value.md)
+- [Multihomogeneous components of a free Lie algebra](../free-lie-multihomogeneous-component/free-lie-multihomogeneous-component.md)
+- [Witt's multigraded value](../witt-multigraded-value.md)
 
 ## Proof depends on
 
-- [Finrank free Lie Multihomogeneous Component](finrank-free-lie-multihomogeneous-compon.md)
+- [Dimension of a multihomogeneous component of a free Lie algebra](finrank-free-lie-multihomogeneous-compon.md)
 
 ## Sources
 

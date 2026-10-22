@@ -7,17 +7,19 @@ proof: formalized
 lean: Polynomial.l1Norm_eq_sum_range
 ---
 
-# L1 Norm eq sum range
+# L1 norm as a sum up to the degree
 
-The L1 norm as a sum over all degrees through the natural degree.
+**L1 norm as a sum up to the degree.** Let $K$ be a semiring and $v$ a real-valued absolute
+value on $K$. Let $p = \sum_i a_i X^i \in K[X]$ and let $n$ be the degree of $p$, with $n = 0$
+when $p = 0$. Then the L1 norm of $p$ with respect to $v$ is $\|p\|_v = \sum_{i=0}^{n} v(a_i)$.
 
 ## Depends on
 
-- [L1 Norm](l1-norm.md)
+- [L1 norm of a polynomial](l1-norm.md)
 
 ## Proof depends on
 
-- [L1 Norm def](l1-norm-def.md)
+- [L1 norm as a sum over the support](l1-norm-def.md)
 
 ## Sources
 

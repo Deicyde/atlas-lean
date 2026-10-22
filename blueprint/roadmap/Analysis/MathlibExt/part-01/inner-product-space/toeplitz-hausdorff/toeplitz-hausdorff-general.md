@@ -7,14 +7,14 @@ proof: formalized
 lean: MathlibExt.Analysis.InnerProductSpace.ToeplitzHausdorffWanted.toeplitz_hausdorff_general
 ---
 
-# Toeplitz hausdorff general
+# Toeplitz–Hausdorff theorem without completeness
 
-Toeplitz-Hausdorff theorem: the numerical range of a bounded operator on a complex inner
-product space is convex. Completeness is not needed.
+**Toeplitz–Hausdorff theorem without completeness.** The numerical range of a bounded linear
+operator on a complex inner product space is convex. Completeness of the space is not needed.
 
 ## Depends on
 
-- [Numerical Range](numerical-range.md)
+- [Numerical range](numerical-range.md)
 
 ## Sources
 

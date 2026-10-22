@@ -7,19 +7,21 @@ proof: formalized
 lean: Complex.iteratedDeriv_two_wimanGrowth_nonneg
 ---
 
-# Iterated Deriv two wiman Growth nonneg
+# The logarithmic majorant has nonnegative second derivative
 
-The logarithmic radial majorant has nonnegative second derivative.
+**The logarithmic majorant has nonnegative second derivative.** Let $f$ be an entire
+function whose Taylor coefficients $a_n$ at the origin are not all zero, and let
+$\Phi(x) = \log \sum_{n \ge 0} |a_n| e^{nx}$. Then $\Phi''(x) \ge 0$ for every real $x$.
 
 ## Depends on
 
 - [Wiman Growth](../coefficient-exponential-family/wiman-growth.md)
-- [Wiman Taylor Coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
+- [Wiman Taylor coefficient](../../../part-02/wiman/wiman-taylor-coefficient.md)
 
 ## Proof depends on
 
-- [Iterated Deriv two wiman Growth eq variance](iterated-deriv-two-wiman-growth-eq-varia.md)
-- [Wiman Tilted Measure](../coefficient-exponential-family/wiman-tilted-measure.md)
+- [Second derivative of the logarithmic majorant as a variance](iterated-deriv-two-wiman-growth-eq-varia.md)
+- [Tilted coefficient measure](../coefficient-exponential-family/wiman-tilted-measure.md)
 
 ## Sources
 

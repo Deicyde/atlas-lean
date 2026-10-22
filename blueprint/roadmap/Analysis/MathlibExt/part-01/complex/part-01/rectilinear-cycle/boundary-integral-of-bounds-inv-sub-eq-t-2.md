@@ -7,24 +7,26 @@ proof: formalized
 lean: RectilinearRectangle.boundaryIntegral_ofBounds_inv_sub_eq_two_pi_mul_I
 ---
 
-# Boundary Integral of Bounds inv sub eq two pi mul I
+# Rectangle integral of the Cauchy kernel at an interior point
 
-A positively oriented rectangle has Cauchy-kernel boundary integral
-`2πi` at every point of its open interior.
+**Rectangle integral of the Cauchy kernel at an interior point.** Let $x_0, x_1, y_0, y_1$ be
+real numbers and let $w$ be a complex number with $x_0 < \operatorname{Re} w < x_1$ and
+$y_0 < \operatorname{Im} w < y_1$. Then the boundary integral of $z \mapsto 1/(z - w)$ over the
+rectangle with corners $x_0 + iy_0$ and $x_1 + iy_1$ equals $2\pi i$.
 
 ## Depends on
 
-- [Boundary Integral](boundary-integral.md)
-- [Of Bounds](of-bounds.md)
+- [Boundary integral over a rectangle](boundary-integral.md)
+- [Rectangle with given coordinate bounds](of-bounds.md)
 
 ## Proof depends on
 
 - [Rectilinear Rectangle](rectilinear-rectangle.md)
-- [Boundary Integral inv sub eq zero of not mem carrier](boundary-integral-inv-sub-eq-zero-of-not.md)
-- [Boundary Integral of Bounds horizontal concat](boundary-integral-of-bounds-horizontal-c.md)
-- [Boundary Integral of Bounds inv eq two pi mul I](boundary-integral-of-bounds-inv-eq-two-p.md)
-- [Boundary Integral of Bounds inv sub eq translate](boundary-integral-of-bounds-inv-sub-eq-t.md)
-- [Carrier](carrier.md)
+- [Cauchy kernel with the pole outside a rectangle](boundary-integral-inv-sub-eq-zero-of-not.md)
+- [Gluing rectangles along a horizontal side](boundary-integral-of-bounds-horizontal-c.md)
+- [Rectangle integral of $1/z$ around the origin](boundary-integral-of-bounds-inv-eq-two-p.md)
+- [Translating the Cauchy kernel to the origin](boundary-integral-of-bounds-inv-sub-eq-t.md)
+- [Carrier of an axis-parallel rectangle](carrier.md)
 
 ## Sources
 

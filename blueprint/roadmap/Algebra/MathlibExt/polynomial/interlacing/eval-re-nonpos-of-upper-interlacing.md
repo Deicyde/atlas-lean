@@ -7,20 +7,23 @@ proof: formalized
 lean: Polynomial.eval_re_nonpos_of_upperInterlacing
 ---
 
-# Eval re nonpos of upper Interlacing
+# Nonpositivity between an upper interlacing point and the largest root
 
-Below its largest root but above an upper interlacing point, a monic real-rooted polynomial
-is nonpositive.
+**Nonpositivity between an upper interlacing point and the largest root.** Let $p$ be a
+monic complex polynomial of positive degree all of whose roots are real, let
+$\operatorname{maxroot}(p)$ be its largest root, and let $a$ be an upper interlacing point
+of $p$. Then for every real $x$ with $a \le x \le \operatorname{maxroot}(p)$, the real part
+of $p(x)$ is at most $0$.
 
 ## Depends on
 
-- [Has Upper Interlacing Point](has-upper-interlacing-point.md)
-- [Is Real Rooted](../real-rooted/is-real-rooted.md)
-- [Max Real Root](../real-rooted/max-real-root.md)
+- [Upper interlacing point](has-upper-interlacing-point.md)
+- [Real-rooted polynomials](../real-rooted/is-real-rooted.md)
+- [Largest real part of a root](../real-rooted/max-real-root.md)
 
 ## Proof depends on
 
-- [Coe max Real Root mem roots](../real-rooted/coe-max-real-root-mem-roots.md)
+- [For a real-rooted polynomial, the largest real part of a root is a root](../real-rooted/coe-max-real-root-mem-roots.md)
 
 ## Sources
 

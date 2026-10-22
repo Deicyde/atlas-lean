@@ -7,13 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.galAlgEquiv_inv
 ---
 
-# Gal Alg Equiv inv
+# Galois elements as automorphisms of $\overline{\mathbb{Q}}$ respect inverses
 
-The bridge preserves inverses definitionally.
+**Galois elements as automorphisms of $\overline{\mathbb{Q}}$ respect inverses.** For every
+$\sigma$ in the absolute Galois group $G_{\mathbb{Q}}$ of $\mathbb{Q}$, the $\mathbb{Q}$-algebra
+automorphism of the algebraic closure $\overline{\mathbb{Q}}$ attached to $\sigma^{-1}$ is the
+inverse of the automorphism attached to $\sigma$.
+
+The equality holds by definition.
 
 ## Depends on
 
-- [Gal Alg Equiv](gal-alg-equiv.md)
+- [Galois elements as automorphisms of $\overline{\mathbb{Q}}$](gal-alg-equiv.md)
 
 ## Sources
 

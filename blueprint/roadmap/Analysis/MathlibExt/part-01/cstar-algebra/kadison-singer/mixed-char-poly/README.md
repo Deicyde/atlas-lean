@@ -5,11 +5,11 @@ navigation: module
 
 # Mixed Char Poly
 
-- [Mixed Det Polynomial](mixed-det-polynomial.md)
-- [Eval mixed Det Polynomial](eval-mixed-det-polynomial.md)
-- [Mixed Det Polynomial pderiv sq eq zero of eq vec Mul Vec](mixed-det-polynomial-pderiv-sq-eq-zero-o.md)
-- [Mixed Characteristic Polynomial](mixed-characteristic-polynomial.md)
-- [Mixed Characteristic Polynomial update sum](mixed-characteristic-polynomial-update-s.md)
-- [Mixed Characteristic Polynomial update affine](mixed-characteristic-polynomial-update-a.md)
-- [Mixed Characteristic Polynomial eq charpoly sum of eq vec Mul Vec](mixed-characteristic-polynomial-eq-charp.md)
+- [Mixed determinant polynomial](mixed-det-polynomial.md)
+- [Values of the mixed determinant polynomial](eval-mixed-det-polynomial.md)
+- [Rank-one coefficients make the mixed determinant polynomial affine](mixed-det-polynomial-pderiv-sq-eq-zero-o.md)
+- [Mixed characteristic polynomial](mixed-characteristic-polynomial.md)
+- [The mixed characteristic polynomial is affine in each matrix](mixed-characteristic-polynomial-update-s.md)
+- [The mixed characteristic polynomial along a line](mixed-characteristic-polynomial-update-a.md)
+- [Mixed characteristic polynomials of outer products](mixed-characteristic-polynomial-eq-charp.md)
 - [Mixed Characteristic Polynomial fin one](mixed-characteristic-polynomial-fin-one.md)

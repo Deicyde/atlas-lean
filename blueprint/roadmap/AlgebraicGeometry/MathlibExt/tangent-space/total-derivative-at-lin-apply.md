@@ -7,14 +7,16 @@ proof: formalized
 lean: MvPolynomial.totalDerivativeAtLin_apply
 ---
 
-# Total Derivative At Lin apply
+# Evaluating the total derivative linear map
 
-The linear map evaluates as the total derivative.
+**Evaluating the total derivative linear map.** For a field $k$, a polynomial
+$f \in k[x_1, \dots, x_n]$ and $P, v \in k^n$, the total derivative of $f$ at $P$, viewed as a
+$k$-linear map $k^n \to k$, sends $v$ to the total derivative of $f$ at $P$ along $v$.
 
 ## Depends on
 
-- [Total Derivative At](total-derivative-at.md)
-- [Total Derivative At Lin](total-derivative-at-lin.md)
+- [Total derivative at a point](total-derivative-at.md)
+- [Total derivative as a linear map](total-derivative-at-lin.md)
 
 ## Sources
 

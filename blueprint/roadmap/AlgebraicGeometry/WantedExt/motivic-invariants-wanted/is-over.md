@@ -5,15 +5,17 @@ statement: formalized
 lean: AlgebraicGeometry.Scheme.BirationalMap.IsOver
 ---
 
-# Is Over
+# Birational maps over a base
 
-A birational map between irreducible schemes `X` and `Y` over a base scheme `S`: a
-`BirationalMap` whose underlying forward rational map is an `S`-map.
-The inverse is then automatically an `S`-map too; see the instance below.
+**Birational maps over a base.** Let $X$ and $Y$ be irreducible schemes over a scheme $S$.
+A birational map from $X$ to $Y$ is over $S$ when its forward rational map
+$X \dashrightarrow Y$ is compatible with the structure maps to $S$.
+
+Its inverse rational map is then compatible with the structure maps to $S$ as well.
 
 ## Depends on
 
-- [Birational Map](birational-map.md)
+- [Birational map](birational-map.md)
 
 ## Sources
 

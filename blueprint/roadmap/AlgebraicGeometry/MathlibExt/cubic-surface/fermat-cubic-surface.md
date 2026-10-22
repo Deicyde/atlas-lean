@@ -6,14 +6,16 @@ statement: formalized
 lean: AlgebraicGeometry.fermatCubicSurface
 ---
 
-# Fermat Cubic Surface
+# Fermat cubic surface
 
-The Fermat cubic surface `x₀³ + x₁³ + x₂³ + x₃³ = 0`, the standard ordinary example (smooth
-over fields of characteristic other than `3`).
+**Fermat cubic surface.** Over a field $k$, the Fermat cubic surface is the cubic surface in
+$\mathbb{P}^3$ with defining cubic form $x_0^3 + x_1^3 + x_2^3 + x_3^3$.
+
+It is smooth when the characteristic of $k$ is not $3$.
 
 ## Depends on
 
-- [Cubic Surface](cubic-surface.md)
+- [Cubic surface](cubic-surface.md)
 
 ## Sources
 

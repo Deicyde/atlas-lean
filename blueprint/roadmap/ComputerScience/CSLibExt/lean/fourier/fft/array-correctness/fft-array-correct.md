@@ -13,7 +13,7 @@ An actual admitted Complex array has its full source coefficient at every valid 
 ## Depends on
 
 - [Fft Array](../array/fft-array.md)
-- [Dft Sum](../../../../../../Analysis/MathlibExt/part-01/fourier/fast-fourier-transform/dft-sum.md)
+- [Discrete Fourier sum](../../../../../../Analysis/MathlibExt/part-01/fourier/fast-fourier-transform/dft-sum.md)
 
 ## Proof depends on
 

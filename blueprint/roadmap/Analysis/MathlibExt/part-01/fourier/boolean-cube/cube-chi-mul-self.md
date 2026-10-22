@@ -7,19 +7,21 @@ proof: formalized
 lean: BooleanCube.cubeChi_mul_self
 ---
 
-# Cube Chi mul self
+# Fourier characters square to one
 
-Every Fourier character has square one.
+**Fourier characters square to one.** For every $n$, every set $S$ of the $n$ coordinates and
+every point $x$ of the Boolean cube in $n$ coordinates, the Fourier character $\chi_S$ satisfies
+$\chi_S(x) \cdot \chi_S(x) = 1$.
 
 ## Depends on
 
-- [Bool Cube](bool-cube.md)
-- [Cube Chi](cube-chi.md)
+- [Boolean cube](bool-cube.md)
+- [Fourier character on the Boolean cube](cube-chi.md)
 
 ## Proof depends on
 
-- [Cube Val](cube-val.md)
-- [Cube Val mul self](cube-val-mul-self.md)
+- [Sign of a Boolean coordinate](cube-val.md)
+- [Coordinate signs square to one](cube-val-mul-self.md)
 
 ## Sources
 

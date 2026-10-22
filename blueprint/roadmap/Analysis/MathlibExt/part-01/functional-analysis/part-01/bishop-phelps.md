@@ -7,12 +7,12 @@ proof: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.BanachSpaceWanted.bishop_phelps
 ---
 
-# Bishop Phelps
+# Bishop–Phelps theorem
 
-For a Banach space over `ℝ` or `ℂ`, the set of norm-attaining functionals is norm-dense in the
-strong dual `StrongDual 𝕜 E`. Source: E. Bishop and R. R. Phelps, Bull. Amer. Math. Soc. 67 (1961)
-97-98 and Pacific J. Math. 1961; Bollobas quantitative version; Lean states `RCLike` Banach case
-as density of attaining functionals.
+**Bishop–Phelps theorem.** Let $E$ be a Banach space over $\mathbb{K} = \mathbb{R}$ or
+$\mathbb{C}$, with dual space $E^*$. The functionals that attain their norm on the closed unit
+ball, that is, the $f \in E^*$ such that $|f(x)| = \|f\|$ for some $x \in E$ with
+$\|x\| \le 1$, form a dense subset of $E^*$ in the norm topology.
 
 ## Depends on
 
@@ -21,3 +21,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.FunctionalAnalysis.BishopPhelps](../../../../../../sources/v2/MathlibExt.md)
+- E. Bishop and R. R. Phelps, Bull. Amer. Math. Soc. 67 (1961) 97-98 and Pacific J. Math. 1961; Bollobas quantitative version; Lean states `RCLike` Banach case as density of attaining functionals.

@@ -7,14 +7,17 @@ proof: formalized
 lean: MvPolynomial.RegularFunction.id_comp
 ---
 
-# Id comp
+# The identity is a left unit for composition
 
-Composing with the identity on the left is the identity.
+**The identity is a left unit for composition.** For every regular function $F$ from
+$k^\sigma$ to $k^\tau$, composing the identity regular function on $k^\tau$, whose components
+are the variables $X_t$ for $t \in \tau$, with $F$ gives $F$, that is,
+$\mathrm{id} \circ F = F$.
 
 ## Depends on
 
-- [Regular Function](regular-function.md)
-- [Comp](comp.md)
+- [Regular functions](regular-function.md)
+- [Composition of regular functions](comp.md)
 
 ## Sources
 

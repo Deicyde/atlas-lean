@@ -7,14 +7,15 @@ proof: formalized
 lean: Complex.norm_le_wimanMaximumModulus
 ---
 
-# Norm le wiman Maximum Modulus
+# Values on a circle are bounded by the maximum modulus
 
-Every value on the circle is bounded by the supremum used for the Wiman
-maximum modulus.
+**Values on a circle are bounded by the maximum modulus.** Let $f : \mathbb{C} \to \mathbb{C}$
+be continuous, let $r$ be a real number and let $z \in \mathbb{C}$ with $|z| = r$. Then
+$|f(z)| \le M(f, r)$, where $M(f, r)$ is the Wiman maximum modulus of $f$ at radius $r$.
 
 ## Depends on
 
-- [Wiman Maximum Modulus](wiman-maximum-modulus.md)
+- [Wiman maximum modulus](wiman-maximum-modulus.md)
 
 ## Sources
 

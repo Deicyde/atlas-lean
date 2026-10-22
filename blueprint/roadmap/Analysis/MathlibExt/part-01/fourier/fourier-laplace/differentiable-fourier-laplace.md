@@ -7,18 +7,20 @@ proof: formalized
 lean: Fourier.differentiable_fourierLaplace
 ---
 
-# Differentiable fourier Laplace
+# The Fourier–Laplace transform of an integrable compactly supported function is entire
 
-The Fourier–Laplace transform of an integrable compactly supported function
-is entire (complex-differentiable at every `z`).
+**The Fourier–Laplace transform of an integrable compactly supported function is entire.**
+Let $f : \mathbb{R} \to \mathbb{C}$ be integrable with compact support. Then its Fourier–Laplace
+transform $z \mapsto \int_{\mathbb{R}} f(x) \, e^{-2\pi i x z} \, dx$ is complex differentiable
+at every $z \in \mathbb{C}$, that is, it is entire.
 
 ## Depends on
 
-- [Fourier Laplace](fourier-laplace.md)
+- [Fourier–Laplace transform](fourier-laplace.md)
 
 ## Proof depends on
 
-- [Has Deriv At fourier Laplace](has-deriv-at-fourier-laplace.md)
+- [Derivative of the Fourier–Laplace transform](has-deriv-at-fourier-laplace.md)
 
 ## Sources
 

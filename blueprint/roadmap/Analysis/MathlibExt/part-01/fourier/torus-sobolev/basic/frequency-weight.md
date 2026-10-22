@@ -6,13 +6,15 @@ statement: formalized
 lean: TorusSobolev.frequencyWeight
 ---
 
-# Frequency Weight
+# Squared frequency
 
-The squared physical frequency, for a torus of period `2π`.
+**Squared frequency.** For a frequency $k = (k_1, k_2) \in \mathbb{Z}^2$, the frequency
+weight is $|k|^2 = k_1^2 + k_2^2$, the squared frequency of the mode $e^{i k \cdot x}$ on the
+torus $(\mathbb{R}/2\pi\mathbb{Z})^2$.
 
 ## Depends on
 
-- [Frequency](frequency.md)
+- [Integer frequencies](frequency.md)
 
 ## Sources
 

@@ -6,4 +6,4 @@ navigation: module
 # James Reflexivity
 
 - [Goldstine finite](goldstine-finite.md)
-- [James reflexivity](james-reflexivity.md)
+- [James' reflexivity theorem](james-reflexivity.md)

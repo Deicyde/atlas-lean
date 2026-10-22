@@ -7,13 +7,13 @@ proof: formalized
 lean: BooleanCube.cubeVal_true
 ---
 
-# Cube Val true
+# Sign of true
 
-A `true` coordinate represents the positive sign.
+**Sign of true.** The sign $\sigma(\text{true})$ of the Boolean value true equals $1$.
 
 ## Depends on
 
-- [Cube Val](cube-val.md)
+- [Sign of a Boolean coordinate](cube-val.md)
 
 ## Sources
 

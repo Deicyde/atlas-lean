@@ -7,15 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.ascPochhammer_eval_add
 ---
 
-# Rising Factorial Binomial
+# Binomial theorem for rising factorials
 
-Binomial theorem for rising factorials: `(a + b)` raised to the rising
-`n`-th power expands as the choose-weighted sum of products of the rising
-powers of `a` and `b`.
-
-The source proves this by induction on `n`, using the Pascal recurrence;
-verified computationally for `n = 0..8` over five real pairs `(a, b)`.
-Proves `Wanted` entry `ascPochhammer_eval_add`.
+**Binomial theorem for rising factorials.** For every natural number $n$ and all real numbers
+$a$ and $b$, writing $x^{\overline{m}} = x(x+1)\cdots(x+m-1)$ for the rising factorial,
+$$(a+b)^{\overline{n}} = \sum_{k=0}^{n} \binom{n}{k}\, a^{\overline{k}}\, b^{\overline{n-k}}.$$
 
 ## Depends on
 

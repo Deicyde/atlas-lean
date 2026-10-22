@@ -7,17 +7,19 @@ proof: formalized
 lean: MathlibExt.Analysis.Convex.Straszewicz.suppFunc_continuous
 ---
 
-# Supp Func continuous
+# The support function of a compact set is continuous
 
-The support function is continuous.
+**The support function of a compact set is continuous.** Let $K$ be a nonempty compact
+subset of a real normed space $E$. Its support function $h_K(l) = \sup_{x \in K} l(x)$ is
+continuous on the continuous dual $E^*$ with the operator norm.
 
 ## Depends on
 
-- [Supp Func](supp-func.md)
+- [Support function](supp-func.md)
 
 ## Proof depends on
 
-- [Supp Func lipschitz](supp-func-lipschitz.md)
+- [The support function of a compact set is Lipschitz](supp-func-lipschitz.md)
 
 ## Sources
 

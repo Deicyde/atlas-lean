@@ -5,6 +5,6 @@ navigation: module
 
 # Tangent Space Level Set
 
-- [Level Set tangent vel of curve](level-set-tangent-vel-of-curve.md)
+- [Velocities of curves in a level set lie in the kernel of the derivative](level-set-tangent-vel-of-curve.md)
 - [Exists level Set curve](exists-level-set-curve.md)
-- [Level Set curve of tangent vel](level-set-curve-of-tangent-vel.md)
+- [Kernel vectors are velocities of curves in a regular level set](level-set-curve-of-tangent-vel.md)

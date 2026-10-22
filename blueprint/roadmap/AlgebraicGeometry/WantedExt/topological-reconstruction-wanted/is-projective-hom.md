@@ -6,10 +6,13 @@ statement: formalized
 lean: MathlibExt.AlgebraicGeometry.TopologicalReconstructionWanted.AlgebraicGeometry.TopologicalReconstruction.IsProjectiveHom
 ---
 
-# Is Projective Hom
+# Projective morphism to an affine scheme
 
-A morphism from a scheme to Spec R is projective if it factors through some
-closed immersion into ℙⁿ_R.
+**Projective morphism to an affine scheme.** Let $R$ be a commutative ring and $X$ a scheme.
+A morphism $f : X \to \operatorname{Spec} R$ is projective if there are $n \in \mathbb{N}$ and a
+closed immersion $i$ of $X$ into $\operatorname{Proj} R[x_1, \dots, x_n]$, the polynomial ring
+graded by total degree, such that $f$ is $i$ followed by the structure morphism
+$\operatorname{Proj} R[x_1, \dots, x_n] \to \operatorname{Spec} R$.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Proj To Spec](proj-to-spec.md)
+- [Structure morphism of a projective spectrum](proj-to-spec.md)
 
 ## Sources
 

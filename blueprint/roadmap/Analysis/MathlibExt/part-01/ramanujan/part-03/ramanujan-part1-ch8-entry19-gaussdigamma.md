@@ -18,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Part1 Ch7 Entry1 Powersum](../part-02/ramanujan-part1-ch7-entry1-powersum.md)
-- [Euler Maclaurin Formula](../../calculus/euler-maclaurin-formula.md)
+- [Ramanujan's asymptotic expansion of power sums](../part-02/ramanujan-part1-ch7-entry1-powersum.md)
+- [Euler–Maclaurin formula](../../calculus/euler-maclaurin-formula.md)
 
 ## Sources
 

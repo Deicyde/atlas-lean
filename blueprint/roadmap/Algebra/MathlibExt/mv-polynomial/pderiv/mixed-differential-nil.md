@@ -7,13 +7,15 @@ proof: formalized
 lean: MvPolynomial.mixedDifferential_nil
 ---
 
-# Mixed Differential nil
+# Mixed differential along the empty list
 
-Applying no mixed differential operators leaves a polynomial unchanged.
+**Mixed differential along the empty list.** Let $R$ be a commutative ring, let $\sigma$ be
+an index type, and let $p \in R[x_s : s \in \sigma]$. The mixed differential of $p$ along the
+empty list of indices is $p$ itself.
 
 ## Depends on
 
-- [Mixed Differential](mixed-differential.md)
+- [Mixed differential operator](mixed-differential.md)
 
 ## Sources
 

@@ -23,7 +23,7 @@ Every actual Princeton-sign circular output is its cyclic convolution coefficien
 - [Fft std Add Char neg one](../canonical-dft/fft-std-add-char-neg-one.md)
 - [Ifft](../inverse/ifft.md)
 - [Ifft std Add Char neg one](../inverse-canonical-dft/ifft-std-add-char-neg-one.md)
-- [ZMod Convolution](../../../../../../Analysis/MathlibExt/part-01/fourier/inv-dft-mul-dft.md)
+- [Convolution theorem for the discrete Fourier transform](../../../../../../Analysis/MathlibExt/part-01/fourier/inv-dft-mul-dft.md)
 
 ## Sources
 

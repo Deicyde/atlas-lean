@@ -5,8 +5,8 @@ navigation: module
 
 # Part1 Ch5 Entry10b Euleriansymmetry
 
-- [Chapter5 Euler Even](chapter5-euler-even.md)
-- [Chapter5 Euler Even zero](chapter5-euler-even-zero.md)
-- [Chapter5 Euler Even step](chapter5-euler-even-step.md)
-- [Chapter5 Euler Even recurrence](chapter5-euler-even-recurrence.md)
-- [Ramanujan part1 ch5 entry10b euleriansymmetry](ramanujan-part1-ch5-entry10b-euleriansym.md)
+- [Even-index Euler numbers](chapter5-euler-even.md)
+- [The initial even-index Euler number](chapter5-euler-even-zero.md)
+- [Recursion for the even-index Euler numbers](chapter5-euler-even-step.md)
+- [Binomial recurrence for the even-index Euler numbers](chapter5-euler-even-recurrence.md)
+- [Bernoulli numbers as a convolution of even-index Euler numbers](ramanujan-part1-ch5-entry10b-euleriansym.md)

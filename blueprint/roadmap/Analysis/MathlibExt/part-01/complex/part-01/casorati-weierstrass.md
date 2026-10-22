@@ -7,10 +7,12 @@ proof: formalized
 lean: MathlibExt.Analysis.Complex.CasoratiWeierstrass.casoratiWeierstrass
 ---
 
-# Casorati Weierstrass
+# Casorati–Weierstrass theorem
 
-Casorati-Weierstrass: if `f : ℂ → ℂ` has an essential isolated singularity at `c`, then every
-punctured neighbourhood of `c` has dense image in `ℂ`.
+**Casorati–Weierstrass theorem.** Let $c \in \mathbb{C}$, $r > 0$, and let
+$f : \mathbb{C} \to \mathbb{C}$ be holomorphic on the punctured disc $0 < |z - c| < r$ and not
+meromorphic at $c$ (that is, $c$ is neither a removable singularity nor a pole of $f$). Then the
+image of the punctured disc $0 < |z - c| < r$ under $f$ is dense in $\mathbb{C}$.
 
 ## Depends on
 

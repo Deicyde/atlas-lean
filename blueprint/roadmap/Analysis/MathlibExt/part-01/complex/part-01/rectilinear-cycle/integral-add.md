@@ -7,19 +7,22 @@ proof: formalized
 lean: RectilinearCycle.integral_add
 ---
 
-# Integral add
+# Additivity of the contour integral in the cycle
 
-Contour integration is additive in the rectilinear cycle.
+**Additivity of the contour integral in the cycle.** Let $E$ be a complex Banach space and
+$f : \mathbb{C} \to E$. For rectilinear cycles $\Gamma$ and $\Lambda$, the contour integral of
+$f$ over $\Gamma + \Lambda$ equals the integral of $f$ over $\Gamma$ plus the integral of $f$
+over $\Lambda$.
 
 ## Depends on
 
 - [Rectilinear Cycle](rectilinear-cycle.md)
-- [Integral](integral.md)
+- [Contour integral over a rectilinear cycle](integral.md)
 - [Rectilinear Rectangle](rectilinear-rectangle.md)
 
 ## Proof depends on
 
-- [Boundary Integral](boundary-integral.md)
+- [Boundary integral over a rectangle](boundary-integral.md)
 
 ## Sources
 

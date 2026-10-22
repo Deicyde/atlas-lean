@@ -6,10 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.GeneralizedChebyshevSecondKind.P
 ---
 
-# P
+# Modified Chebyshev base polynomials of the second kind
 
-Modified second-kind base polynomials: `P 0 = 1`, `P 1 = X - C r`, and
-`P (n + 2) = (X - C r) * P (n + 1) - C s * P n`.
+**Modified Chebyshev base polynomials of the second kind.** For a commutative ring $R$ and
+$r, s \in R$, the polynomials $P_n \in R[x]$, $n \ge 0$, are defined by $P_0 = 1$,
+$P_1 = x - r$ and $P_{n+2} = (x - r) P_{n+1} - s P_n$ for every $n \ge 0$.
 
 ## Depends on
 

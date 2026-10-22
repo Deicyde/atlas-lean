@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Wiman Maximum Modulus](../../../MathlibExt/part-01/complex/part-02/wiman/wiman-maximum-modulus.md)
+- [Wiman maximum modulus](../../../MathlibExt/part-01/complex/part-02/wiman/wiman-maximum-modulus.md)
 
 ## Sources
 

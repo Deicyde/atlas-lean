@@ -7,17 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.bisection_approximate_root_with_rate
 ---
 
-# Bisection approximate root with rate
+# Bisection method converges at a linear rate
 
-Bisection correctness with linear rate: the midpoints converge to a root
-with error at most `(b - a) / 2 ^ (n + 1)`.
+**Bisection method converges at a linear rate.** Let $f : \mathbb{R} \to \mathbb{R}$ be
+continuous on $[a, b]$, where $a \le b$ and $f(a) \le 0 \le f(b)$, and let $u, v$ be a bisection
+sequence for $f$ from $a$ to $b$. Then there is $c \in [a, b]$ with $f(c) = 0$ such that the
+midpoints $(u_n + v_n)/2$ converge to $c$ and $|(u_n + v_n)/2 - c| \le (b - a)/2^{n+1}$ for
+every $n \in \mathbb{N}$.
 
 Proof: Monotone convergence gives the common endpoint limit, continuity makes it a root, and the
 halved interval length gives the midpoint error bound, following Burden and Faires, Theorem 2.1.
 
 ## Depends on
 
-- [Is Bisection Sequence](is-bisection-sequence.md)
+- [Bisection sequence](is-bisection-sequence.md)
 
 ## Sources
 
