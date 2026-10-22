@@ -6,6 +6,11 @@ This source code is licensed under the license found in the
 LICENSE file in the root directory of this source tree.
 -/
 
+/-
+Ported from fairinternal/formal-math at `bc0a5a31aa07d127ead55e6848aa133300c4ce0a`.
+Original formalization by Manasa Hariharan (@manasahari-meta); ported with permission.
+-/
+
 module
 
 public import Mathlib.Probability.Density
