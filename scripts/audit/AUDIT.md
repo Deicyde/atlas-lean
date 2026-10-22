@@ -4,8 +4,9 @@ One audit judges one wiki article (a node of the roadmap graph) against the Lean
 declaration it renders. The pipeline is lint, packet, audit, verify, apply,
 regenerate. Lint, packets and batches are deterministic scripts in this
 directory; `run_audit.py` runs the audit and verify agents (Claude Code in
-print mode, read-only tools); `apply_fixes.py` writes verified fixes back to
-their sources so they survive regeneration.
+print mode, told not to write, with no editor and a short list of Bash
+commands); `apply_fixes.py` writes verified fixes back to their sources so
+they survive regeneration.
 
     python scripts/audit/lint_articles.py blueprint/roadmap --json /tmp/all.jsonl
     python scripts/audit/lint_articles.py blueprint/roadmap --subject S --json /tmp/s.jsonl
@@ -89,6 +90,12 @@ a wording preference is not a defect, and every rewrite costs an upstream review
   5. No `-/` or `/-` inside (Lean comments nest, so a stray `/-` swallows the
      rest of the file), lines at most 100 columns, `/--` and `-/` placement as
      in the surrounding file.
+  6. When `$...$` math continues onto the next line, that line must not start
+     with `+ `, `- `, `* `, `>`, `#` or a number followed by `.` or `)`:
+     Markdown starts a list item, quote or heading there and breaks the
+     formula. End the previous line with the operator instead.
+  7. Write a literal dollar sign as `\$`; a bare `$` opens math. Put a
+     `$$...$$` formula on lines of its own.
 - **needs-lean-change.** Lean does not match its source. Do not edit Lean;
   describe the mismatch for an upstream issue.
 - **generator.** The defect comes from the pipeline (title collisions from
@@ -101,8 +108,17 @@ context, told to refute it: find any difference between the proposed text and
 the Lean signature (quantifier order, strictness, domain such as `ℝ` against
 `ℝ≥0∞`, typeclass such as `Field` against `CommRing`, a missing hypothesis), any
 symbol used before it is introduced, any title that claims more than the
-statement. A fix is applied only when the verifier accepts it; a verifier may
-return a corrected docstring, which goes through verification again.
+statement.
+
+Verification goes in rounds, each with a fresh verifier that sees none of the
+earlier verdicts. A fix is applied once two verifiers that did not write it
+have accepted it; one verifier alone let through about one fix in twenty (the
+2026-10-22 recheck), mostly notation used before it was introduced. A
+verifier that rejects a fix may return a corrected docstring, which replaces
+the fix and needs two accepts of its own. A fix still short of two after four
+rounds is dropped. Before writing a fix, `apply_fixes.py` re-breaks lines so
+that no line of continued math opens a list item, quote or heading (TeX
+ignores the break), and rejects a docstring it cannot repair.
 
 ## Calibration examples
 

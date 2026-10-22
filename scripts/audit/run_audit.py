@@ -4,18 +4,25 @@
     python run_audit.py REPO BATCHES_JSON OUT_DIR [--jobs 6] [--model opus] [--only b000,b001]
 
 For every batch from make_batches.py, one agent audits the articles against
-AUDIT.md, an independent agent tries to refute each proposed fix, and fixes
-the verifier corrected get a second verification. Claims that a Lean
-statement is defective or that a status overstates Lean get their own
-checker, because they turn into upstream issues and status changes. Agents may only read: the
-tool list has no editor, and Bash is limited to read-only commands. Each step
-writes OUT_DIR/<batch>.<step>.json, so a rerun resumes where the last one
-stopped; OUT_DIR/results.json collects every batch for apply_fixes.py.
+AUDIT.md, and then, round by round, fresh agents try to refute each proposed
+fix. A fix is accepted once two verifiers that did not write it have accepted
+it. A verifier that rejects a fix may return a corrected docstring, which
+replaces the fix and needs two accepts of its own; a fix still short of two
+after four rounds is dropped. Claims that a Lean statement is defective or
+that a status overstates Lean get their own checker, because they turn into
+upstream issues and status changes. Agents are told not to write, the tool
+list has no editor, and Bash is limited to the listed commands; nightly.sh
+refuses to commit a checkout an agent changed. Each step writes
+OUT_DIR/<batch>.<digest>.<step>.json, named by digests of the batch's packets
+and of the fixes a round was sent, so a rerun resumes where the last one
+stopped and never reuses a verdict on other text; OUT_DIR/results.json
+collects every batch for apply_fixes.py.
 """
 
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import subprocess
 import sys
@@ -25,6 +32,8 @@ from pathlib import Path
 
 AUDIT_DIR = Path(__file__).resolve().parent
 TIMEOUT = 45 * 60
+ACCEPTS = 2  # verifiers that must accept a fix they did not write
+ROUNDS = 4
 READ_ONLY = " ".join(
     ["Read", "Grep", "Glob"]
     + [f"Bash({command}:*)" for command in ("grep", "rg", "sed", "head", "tail", "cat", "jq", "ls", "find", "wc", "awk")]
@@ -125,10 +134,9 @@ Packets:
 {json.dumps(batch["packets"], indent=1, ensure_ascii=False)}"""
 
 
-def verify_prompt(repo: Path, batch: dict, fixes: list[dict], second: bool) -> str:
+def verify_prompt(repo: Path, batch: dict, fixes: list[dict]) -> str:
     ids = {fix["article_id"] for fix in fixes}
     packets = [packet for packet in batch["packets"] if packet["article_id"] in ids]
-    again = " These fixes were already corrected once; judge them just as strictly." if second else ""
     return f"""You are an independent verifier for proposed fixes to Atlas wiki articles generated from the Lean library in {repo}.
 Read {AUDIT_DIR}/AUDIT.md (sections "Fixes" and "Verification") first.
 
@@ -136,9 +144,9 @@ Read {AUDIT_DIR}/AUDIT.md (sections "Fixes" and "Verification") first.
 
 Additional rules: do not try to modify any file, and do not run lean, lake or pytest at all.
 
-Your job is to refute each proposed fix. For each one, read the Lean declaration (lean_file:lean_line) and every definition it uses, then compare the proposed text with the Lean statement term by term: quantifiers and their order, every hypothesis, strict against weak inequalities, the domain and codomain (for example ℝ against ℝ≥0∞, ℕ against ℤ), typeclass assumptions (Field against CommRing), and the conclusion. Check that every symbol is introduced before use, the TeX is valid inside $...$, the title claims no more than the statement, every original Source: paragraph is preserved byte for byte as the last paragraph, nothing contains -/ or /- inside the docstring, and no line exceeds 100 columns.
-Accept only when you find no difference. When you reject, list each problem concretely; if the fix is repairable, also return the corrected docstring as corrected_docstring.{again}
-Return one verdict per proposed fix, with its article_id.
+Your job is to refute each proposed fix. For each one, read the Lean declaration (lean_file:lean_line) and every definition it uses, then compare the proposed text with the Lean statement term by term: quantifiers and their order, every hypothesis, strict against weak inequalities, the domain and codomain (for example ℝ against ℝ≥0∞, ℕ against ℤ), typeclass assumptions (Field against CommRing), and the conclusion. Check that every symbol is introduced before use, the TeX is valid inside $...$, no line of $...$ math that continues onto a new line starts with "+ ", "- ", "* ", ">", "#" or a number followed by "." or ")" (Markdown would start a list item, quote or heading there), the title claims no more than the statement, every original Source: paragraph is preserved byte for byte as the last paragraph, nothing contains -/ or /- inside the docstring, and no line exceeds 100 columns.
+Accept only when you find no difference; an accepting verdict lists no problems and no corrected docstring. When you reject, list each problem concretely; if the fix is repairable, also return the corrected docstring as corrected_docstring.
+Return exactly one verdict per proposed fix, with its article_id.
 
 Articles and their packets:
 {json.dumps(packets, indent=1, ensure_ascii=False)}
@@ -239,6 +247,50 @@ def fixes_of(nodes: list[dict]) -> list[dict]:
     ]
 
 
+def fingerprint(value) -> str:
+    return hashlib.sha256(json.dumps(value, sort_keys=True).encode()).hexdigest()[:12]
+
+
+def answers(fixes: list[dict]):
+    """A run_agent check: exactly one verdict per fix sent, and an accept with no problems or correction."""
+    wanted = sorted(fix["article_id"] for fix in fixes)
+
+    def check(result: dict) -> str | None:
+        verdicts = result.get("verdicts")
+        if not isinstance(verdicts, list) or not all(isinstance(verdict, dict) for verdict in verdicts):
+            return "verdicts must be a list of objects"
+        got = sorted(str(verdict.get("article_id")) for verdict in verdicts)
+        if got != wanted:
+            return f"returned verdicts for {got}, expected exactly one for each of {wanted}"
+        if not all(isinstance(verdict.get("accept"), bool) for verdict in verdicts):
+            return "every verdict needs a boolean accept"
+        if not all(isinstance(verdict.get("corrected_docstring", ""), str) for verdict in verdicts):
+            return "corrected_docstring must be a string"
+        if any(v["accept"] and (v.get("problems") or v.get("corrected_docstring")) for v in verdicts):
+            return "an accepting verdict must list no problems and no corrected_docstring"
+        return None
+
+    return check
+
+
+def claimed(nodes: list[dict]):
+    """A run_agent check: exactly one claim verdict per disputed node, with a boolean confirmed."""
+    wanted = sorted(node["article_id"] for node in nodes)
+
+    def check(result: dict) -> str | None:
+        claims = result.get("claims")
+        if not isinstance(claims, list) or not all(isinstance(claim, dict) for claim in claims):
+            return "claims must be a list of objects"
+        got = sorted(str(claim.get("article_id")) for claim in claims)
+        if got != wanted:
+            return f"returned claims for {got}, expected exactly one for each of {wanted}"
+        if not all(isinstance(claim.get("confirmed"), bool) for claim in claims):
+            return "every claim needs a boolean confirmed"
+        return None
+
+    return check
+
+
 def step(out: Path, batch: str, name: str, make) -> dict:
     """Reuse OUT/<batch>.<name>.json from an earlier run, or compute and save it."""
     path = out / f"{batch}.{name}.json"
@@ -251,6 +303,8 @@ def step(out: Path, batch: str, name: str, make) -> dict:
 
 def run_batch(repo: Path, out: Path, batch: dict, model: str, effort: str, lock: threading.Lock) -> dict:
     name = batch["id"]
+    # Batch ids restart at b000 every run; the digest keeps another selection's steps from being reused.
+    key = f"{name}.{fingerprint(batch['packets'])}"
 
     def say(message: str) -> None:
         with lock:
@@ -266,25 +320,30 @@ def run_batch(repo: Path, out: Path, batch: dict, model: str, effort: str, lock:
         say("auditing")
         return run_agent(audit_prompt(repo, batch), AUDIT_SCHEMA, path, model, effort, complete)
 
-    audit = step(out, name, "audit", audited)
+    audit = step(out, key, "audit", audited)
     fixes = fixes_of(audit["nodes"])
-    record = {"batch": name, "audit": audit, "fixes": fixes, "verify": None, "corrected": [], "reverify": None}
-    if fixes:
-        say(f"verifying {len(fixes)} fixes")
-        verify = step(out, name, "verify", lambda path: run_agent(
-            verify_prompt(repo, batch, fixes, False), VERIFY_SCHEMA, path, model, effort))
-        corrected = []
-        for verdict in verify["verdicts"]:
-            original = next((fix for fix in fixes if fix["article_id"] == verdict["article_id"]), None)
-            if original is None or verdict["accept"]:
-                continue
-            if verdict.get("corrected_docstring"):
-                corrected.append({**original, "docstring": verdict["corrected_docstring"]})
-        record.update(verify=verify, corrected=corrected)
-        if corrected:
-            say(f"re-verifying {len(corrected)} corrected fixes")
-            record["reverify"] = step(out, name, "reverify", lambda path: run_agent(
-                verify_prompt(repo, batch, corrected, True), VERIFY_SCHEMA, path, model, effort))
+    record = {"batch": name, "audit": audit, "fixes": fixes, "rounds": [], "accepted": []}
+    # (fix, accepts so far); a correction replaces its fix and starts again from zero.
+    pending = [(fix, 0) for fix in fixes]
+    for number in range(1, ROUNDS + 1):
+        if not pending:
+            break
+        sent = [fix for fix, _ in pending]
+        say(f"verification round {number}: {len(sent)} fixes")
+        verdicts = step(out, key, f"verify{number}.{fingerprint(sent)}", lambda path: run_agent(
+            verify_prompt(repo, batch, sent), VERIFY_SCHEMA, path, model, effort, answers(sent)))
+        record["rounds"].append({"sent": sent, "verdicts": verdicts["verdicts"]})
+        verdict = {v["article_id"]: v for v in verdicts["verdicts"]}
+        still = []
+        for fix, accepts in pending:
+            mine = verdict[fix["article_id"]]
+            if mine["accept"] and accepts + 1 == ACCEPTS:
+                record["accepted"].append(fix)
+            elif mine["accept"]:
+                still.append((fix, accepts + 1))
+            elif mine.get("corrected_docstring"):
+                still.append(({**fix, "docstring": mine["corrected_docstring"]}, 0))
+        pending = still
     disputed = [
         node for node in audit["nodes"]
         if node.get("fix", {}).get("kind") == "needs-lean-change" or not node.get("status_ok", True)
@@ -292,8 +351,8 @@ def run_batch(repo: Path, out: Path, batch: dict, model: str, effort: str, lock:
     record["claims"] = None
     if disputed:
         say(f"checking {len(disputed)} defect claims")
-        record["claims"] = step(out, name, "claims", lambda path: run_agent(
-            claims_prompt(repo, batch, disputed), CLAIMS_SCHEMA, path, model, effort))
+        record["claims"] = step(out, key, "claims", lambda path: run_agent(
+            claims_prompt(repo, batch, disputed), CLAIMS_SCHEMA, path, model, effort, claimed(disputed)))
     say("done")
     return record
 
