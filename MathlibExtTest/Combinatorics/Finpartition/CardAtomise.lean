@@ -30,6 +30,7 @@ example : (⊥ : Finpartition (∅ : Finset (Fin 3))).cardProd (fun _ => (2 : �
 /-- `cardProd` over the bottom partition of `Fin 3` with constant weight `2`. -/
 example : (⊥ : Finpartition (Finset.univ : Finset (Fin 3))).cardProd (fun _ => (2 : ℕ)) = 8 := by
   rw [Finpartition.cardProd_bot, Finset.card_univ, Fintype.card_fin]
+  decide
 
 /-- `cardProd` over the top partition reads the weight at the carrier card. -/
 example : (⊤ : Finpartition (Finset.univ : Finset (Fin 3))).cardProd (fun n => n) = 3 := by
