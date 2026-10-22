@@ -15,7 +15,7 @@ their sources so they survive regeneration.
     python scripts/audit/apply_fixes.py . /tmp/packets.jsonl /tmp/run/results.json LEDGER STAMP
 
 `nightly.sh` chains these for an unattended run: it audits the articles the
-ledger (`blueprint/audit/ledger.jsonl`) has not judged, or whose packet changed
+ledger (`scripts/audit/ledger.jsonl`) has not judged, or whose packet changed
 since (`select_work.py`), up to a nightly limit, then regenerates, checks,
 commits and pushes.
 

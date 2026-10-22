@@ -22,7 +22,7 @@ git merge -q --ff-only "origin/$BRANCH"
 
 "$PYTHON" scripts/audit/lint_articles.py blueprint/roadmap --json "$RUN/lint.jsonl" | head -2
 "$PYTHON" scripts/audit/build_packets.py . "$RUN/lint.jsonl" "$RUN/packets.jsonl" | head -1
-"$PYTHON" scripts/audit/select_work.py "$RUN/packets.jsonl" blueprint/audit/ledger.jsonl "$RUN/selected.jsonl" --limit "$LIMIT"
+"$PYTHON" scripts/audit/select_work.py "$RUN/packets.jsonl" scripts/audit/ledger.jsonl "$RUN/selected.jsonl" --limit "$LIMIT"
 if [ ! -s "$RUN/selected.jsonl" ]; then
   echo "nothing to audit"
   exit 0
@@ -30,16 +30,16 @@ fi
 "$PYTHON" scripts/audit/make_batches.py "$RUN/selected.jsonl" "$RUN/batches.json"
 # A failed batch is left out of results.json and picked again next run.
 "$PYTHON" scripts/audit/run_audit.py . "$RUN/batches.json" "$RUN/out" --jobs "$JOBS" || true
-"$PYTHON" scripts/audit/apply_fixes.py . "$RUN/selected.jsonl" "$RUN/out/results.json" blueprint/audit/ledger.jsonl "$STAMP"
+"$PYTHON" scripts/audit/apply_fixes.py . "$RUN/selected.jsonl" "$RUN/out/results.json" scripts/audit/ledger.jsonl "$STAMP"
 "$PYTHON" scripts/generate_wiki.py
 "$PYTHON" -m autoform_cli check blueprint --lean-root . | tail -3
 
-git add -A blueprint MathlibExt CSLibExt WantedExt
+git add -A blueprint MathlibExt CSLibExt WantedExt scripts/audit/ledger.jsonl
 if git diff --cached --quiet; then
   echo "no changes"
   exit 0
 fi
 audited=$(wc -l < "$RUN/selected.jsonl" | tr -d ' ')
-git commit -q -m "Audit $audited wiki articles ($STAMP)" -m "Automated run of scripts/audit/nightly.sh; see blueprint/audit/ledger.jsonl for each article's scores and findings."
+git commit -q -m "Audit $audited wiki articles ($STAMP)" -m "Automated run of scripts/audit/nightly.sh; see scripts/audit/ledger.jsonl for each article's scores and findings."
 git push -q origin "HEAD:$BRANCH"
 git log --oneline -1
