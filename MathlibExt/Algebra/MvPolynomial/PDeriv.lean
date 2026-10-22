@@ -14,23 +14,6 @@ public import Mathlib.Algebra.MvPolynomial.PDeriv
 
 namespace MvPolynomial
 
-/-- **Partial derivatives commute.** Let $R$ be a commutative semiring and
-$p \in R[x_s : s \in \sigma]$. For all indices $i, j \in \sigma$, writing $\partial_i$ for the
-partial derivative with respect to $x_i$, we have
-$\partial_i \partial_j p = \partial_j \partial_i p$. -/
-public theorem pderiv_comm {σ R : Type*} [CommSemiring R]
-    (i j : σ) (p : MvPolynomial σ R) :
-    pderiv i (pderiv j p) = pderiv j (pderiv i p) := by
-  by_cases h : i = j
-  · subst j
-    rfl
-  · ext s
-    simp only [coeff_pderiv]
-    rw [show s + Finsupp.single i 1 + Finsupp.single j 1 =
-      s + Finsupp.single j 1 + Finsupp.single i 1 by abel]
-    simp [h, Ne.symm h]
-    ring
-
 /-- **Mixed differential operator.** Let $R$ be a commutative ring, let $\sigma$ be an index
 type, and write $\partial_s$ for the partial derivative with respect to $x_s$ on the polynomial
 ring $R[x_s : s \in \sigma]$. For a finite list $(i_1, \dots, i_k)$ of indices in $\sigma$
