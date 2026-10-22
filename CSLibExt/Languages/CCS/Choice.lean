@@ -7,6 +7,11 @@ LICENSE file in the root directory of this source tree.
 -/
 
 /-
+Ported from fairinternal/formal-math at `290c48922e071d1e4267dd103a14e73b547adf60`.
+Original formalization by Zeina Migeed (@migeed-z); ported with permission.
+-/
+
+/-
 # Finite CCS choice processes
 -/
 module
