@@ -67,7 +67,8 @@ example : (Tm.weaken idTm : Tm [b] (b ⇒ b)) = .lam (.var .zero) := rfl
 
 /-- Renaming distributes over application. -/
 example (f : Tm [b] (b ⇒ b)) (a : Tm [b] b) :
-    Tm.rename Var.succ (.app f a) = .app (Tm.rename Var.succ f) (Tm.rename Var.succ a) :=
+    Tm.rename (Var.succ : Ren [b] [b, b]) (.app f a) =
+      .app (Tm.rename (Var.succ : Ren [b] [b, b]) f) (Tm.rename (Var.succ : Ren [b] [b, b]) a) :=
   Tm.rename_app _ _ _
 
 end SyntaxTests
