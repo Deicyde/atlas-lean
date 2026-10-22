@@ -41,7 +41,7 @@ The Lean declarations encode the second assertion clause by clause.
   `ProfiniteCompletion.completion (GrpCat.of ↑P)` is the source's profinite completion
   “as a group,” indexed by all finite-index normal subgroups rather than only the open ones.
 * `ProfiniteCompletion.etaFn (GrpCat.of ↑P)` is the underlying function of the
-  canonical homomorphism `G → Ġ).  Because it is already a group homomorphism,
+  canonical homomorphism `G → Ĝ`.  Because it is already a group homomorphism,
   `Function.Bijective` is exactly the source's “isomorphic as a group.”
 * `IsStronglyComplete ↑P` states verbatim that every finite-index subgroup of `G` is
   open.  The reverse implication passes from an arbitrary finite-index subgroup to its
