@@ -6,6 +6,11 @@ This source code is licensed under the license found in the
 LICENSE file in the root directory of this source tree.
 -/
 
+/-
+Ported from fairinternal/formal-math at `85a3956f8d763f4003659b2ea871b54d9d9f711e`.
+Original formalization by Zeina Migeed (@migeed-z); ported with permission.
+-/
+
 module
 
 import Mathlib.Tactic
