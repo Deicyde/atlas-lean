@@ -265,6 +265,24 @@ class ReportParsing(unittest.TestCase):
                 )
                 self.assertEqual(value, 1e308)
 
+    def test_underflow_and_precision_loss_literals_rejected(self):
+        for section in ("header", "row"):
+            for literal in (
+                "1e-9999",
+                "-1e-9999",
+                "1.0000000000000000000000000000000001",
+            ):
+                with self.subTest(section=section, literal=literal):
+                    with self.assertRaisesRegex(
+                        ValueError, "not exactly representable"
+                    ):
+                        inventory.parse_report(overflow_report(section, literal))
+
+    def test_shortest_repr_decimals_preserved(self):
+        for literal, expected in (("0.1", 0.1), ("1e22", 1e22), ("5e-324", 5e-324)):
+            with self.subTest(literal=literal):
+                self.assertEqual(inventory.finite_float(literal), expected)
+
     def test_nonfinite_values_rejected(self):
         with self.assertRaisesRegex(ValueError, "Non-finite JSON"):
             inventory.parse_report(b'{"statements":{"details":[]},"score":NaN}')

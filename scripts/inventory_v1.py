@@ -4,6 +4,7 @@
 import argparse
 from collections import Counter, defaultdict
 import ctypes
+import decimal
 import errno
 import hashlib
 import json
@@ -122,6 +123,14 @@ def finite_float(literal):
     value = float(literal)
     if not math.isfinite(value):
         raise ValueError(f"Non-finite JSON number: {literal}")
+    # Reject literals whose decimal value binary floating point cannot
+    # represent faithfully (underflow such as 1e-9999 -> 0.0, or extra
+    # precision silently rounded away): the inventory retains historical
+    # claims unmodified and hashes them, so an altered value is worse
+    # than an explicit failure.  Values whose shortest repr denotes the
+    # same decimal (such as 0.1) round-trip exactly and are accepted.
+    if decimal.Decimal(literal) != decimal.Decimal(repr(value)):
+        raise ValueError(f"JSON number not exactly representable: {literal}")
     return value
 
 
