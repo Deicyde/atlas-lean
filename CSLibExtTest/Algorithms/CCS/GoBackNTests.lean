@@ -53,7 +53,7 @@ example : (.tau, none) ∈ dataSteps (some 1) := by decide
 example : (.input (.recv 1), .reply 0) ∈ receiverSteps (.expect 0) := by decide
 
 /-- The empty buffer cannot weakly deliver. -/
-theorem buf_not_weaklyEnabled_del : ¬ lts.saturate.Enabled buf (.output .del) := by
+theorem buf_not_hasOutLabel_del : ¬ lts.saturate.HasOutLabel buf (.output .del) := by
   rintro ⟨target, hweak⟩
   rw [saturate_tr_sTr, STr.iff_exists_of_ne (by simp)] at hweak
   obtain ⟨before, after, hsilent, hstep, -⟩ := hweak
@@ -68,8 +68,8 @@ theorem buf_not_weaklyEnabled_del : ¬ lts.saturate.Enabled buf (.output .del) :
 
 /-- The protocol is not weakly bisimilar to a buffer holding one message. -/
 example : ¬ lts.HomWeakBisimilarity goBackN (buffer 1) := fun h =>
-  buf_not_weaklyEnabled_del
-    ((HomWeakBisimilarity.enabled_saturate_iff (goBackN_weaklyBisimilar_buffer.symm.trans h) _).2
+  buf_not_hasOutLabel_del
+    ((HomWeakBisimilarity.hasOutLabel_saturate_iff (goBackN_weaklyBisimilar_buffer.symm.trans h) _).2
       ⟨buffer 0, STr.single
         ((realizes_buffer 1 _ _).2 ⟨0, by simp [bufferSteps], rfl⟩)⟩)
 

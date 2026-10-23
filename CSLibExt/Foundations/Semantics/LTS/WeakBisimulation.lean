@@ -169,19 +169,19 @@ theorem HomBisimilarity.to_homWeakBisimilarity {left right : State}
     obtain ⟨s₁', hleft, hnext⟩ := (hbisim hs μ).2 s₂' hstep
     exact ⟨s₁', STr.single hleft, hnext⟩
 
-/-- Weakly bisimilar states weakly enable the same labels. -/
-theorem HomWeakBisimilarity.enabled_saturate_iff {left right : State}
+/-- Weakly bisimilar states have the same saturated outgoing labels. -/
+theorem HomWeakBisimilarity.hasOutLabel_saturate_iff {left right : State}
     (hbisim : HomWeakBisimilarity lts left right) (label : Label) :
-    lts.saturate.Enabled left label ↔ lts.saturate.Enabled right label := by
+    lts.saturate.HasOutLabel left label ↔ lts.saturate.HasOutLabel right label := by
   have hsat : HomBisimilarity lts.saturate left right := hbisim
-  exact hsat.enabled_iff label
+  exact hsat.hasOutLabel_iff label
 
-/-- Weakly bisimilar states have equal saturated ready sets. -/
-theorem HomWeakBisimilarity.readySet_saturate_eq {left right : State}
+/-- Weakly bisimilar states have equal saturated sets of outgoing labels. -/
+theorem HomWeakBisimilarity.outgoingLabels_saturate_eq {left right : State}
     (hbisim : HomWeakBisimilarity lts left right) :
-    lts.saturate.readySet left = lts.saturate.readySet right := by
+    lts.saturate.outgoingLabels left = lts.saturate.outgoingLabels right := by
   have hsat : HomBisimilarity lts.saturate left right := hbisim
-  exact hsat.readySet_eq
+  exact hsat.outgoingLabels_eq
 
 end LTS
 

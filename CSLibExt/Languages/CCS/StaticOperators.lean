@@ -182,12 +182,15 @@ instance instDecidableAllowed (blocked : List Name) (action : Label Name) :
     Decidable (Allowed blocked action) := by
   cases action <;> simp only [Allowed] <;> infer_instance
 
+omit [DecidableEq Name] in
 @[simp] theorem allowed_tau (blocked : List Name) :
     Allowed blocked (.tau : Label Name) := trivial
 
+omit [DecidableEq Name] in
 @[simp] theorem allowed_input (blocked : List Name) (name : Name) :
     Allowed blocked (.input name) ↔ name ∉ blocked := Iff.rfl
 
+omit [DecidableEq Name] in
 @[simp] theorem allowed_output (blocked : List Name) (name : Name) :
     Allowed blocked (.output name) ↔ name ∉ blocked := Iff.rfl
 

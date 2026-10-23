@@ -52,7 +52,7 @@ example : configSteps (((.await false, .full false), .expect true), .empty) =
   decide +kernel
 
 /-- The empty buffer cannot weakly deliver. -/
-theorem buf_not_weaklyEnabled_del : ¬ lts.saturate.Enabled buf (.output .del) := by
+theorem buf_not_hasOutLabel_del : ¬ lts.saturate.HasOutLabel buf (.output .del) := by
   rintro ⟨target, hweak⟩
   rw [saturate_tr_sTr, STr.iff_exists_of_ne (by simp)] at hweak
   obtain ⟨before, after, hsilent, hstep, -⟩ := hweak
@@ -66,20 +66,20 @@ theorem buf_not_weaklyEnabled_del : ¬ lts.saturate.Enabled buf (.output .del) :
   simp [bufferSteps] at hy
 
 /-- The full buffer can deliver. -/
-theorem buffer_true_weaklyEnabled_del :
-    lts.saturate.Enabled (buffer true) (.output .del) :=
+theorem buffer_true_hasOutLabel_del :
+    lts.saturate.HasOutLabel (buffer true) (.output .del) :=
   ⟨buffer false, STr.single
     ((realizes_buffer true _ _).2 ⟨false, by simp [bufferSteps], rfl⟩)⟩
 
 /-- The protocol is not weakly bisimilar to a buffer that starts full. -/
 example : ¬ lts.HomWeakBisimilarity abp (buffer true) := fun h =>
-  buf_not_weaklyEnabled_del
-    ((HomWeakBisimilarity.enabled_saturate_iff (abp_weaklyBisimilar_buffer.symm.trans h) _).2
-      buffer_true_weaklyEnabled_del)
+  buf_not_hasOutLabel_del
+    ((HomWeakBisimilarity.hasOutLabel_saturate_iff (abp_weaklyBisimilar_buffer.symm.trans h) _).2
+      buffer_true_hasOutLabel_del)
 
 /-- The protocol can weakly accept. -/
-example : lts.saturate.Enabled abp (.input .acc) :=
-  (abp_weaklyBisimilar_buffer.enabled_saturate_iff _).2
+example : lts.saturate.HasOutLabel abp (.input .acc) :=
+  (abp_weaklyBisimilar_buffer.hasOutLabel_saturate_iff _).2
     ⟨buffer true, STr.single
       ((realizes_buffer false _ _).2 ⟨true, by simp [bufferSteps], rfl⟩)⟩
 

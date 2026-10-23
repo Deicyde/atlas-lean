@@ -367,8 +367,8 @@ theorem stuckClosure_no_acc : stuckClosure.all (fun c => (lossyConfigSteps c).al
   decide +kernel
 
 /-- No configuration silently reachable from the stuck one accepts. -/
-theorem stuck_not_weaklyEnabled_acc :
-    ¬ lts.saturate.Enabled (lossySystem (((⟨0, 2, 2⟩, none), .deliver 1), none))
+theorem stuck_not_hasOutLabel_acc :
+    ¬ lts.saturate.HasOutLabel (lossySystem (((⟨0, 2, 2⟩, none), .deliver 1), none))
       (.input .acc) := by
   rintro ⟨target, hweak⟩
   obtain ⟨before, after, hpre, hstep, -⟩ := (STr.iff_exists_of_ne (by simp)).1 hweak
@@ -431,7 +431,7 @@ theorem lossyGoBackN_not_weaklyBisimilar_buffer :
   obtain rfl : m1 = 1 := by simpa [bufferSteps] using hm1
   obtain rfl : m2 = 2 := by simpa [bufferSteps] using hm2
   obtain rfl : m3 = 1 := by simpa [bufferSteps] using hm3
-  exact stuck_not_weaklyEnabled_acc ((hb3.enabled_saturate_iff _).2
+  exact stuck_not_hasOutLabel_acc ((hb3.hasOutLabel_saturate_iff _).2
     ⟨buffer 2, STr.single ((realizes_buffer 1 _ _).2 ⟨2, by simp [bufferSteps], rfl⟩)⟩)
 
 end Cslib.Algorithms.CCS.GoBackN
