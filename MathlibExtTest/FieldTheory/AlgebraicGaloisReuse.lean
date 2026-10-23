@@ -73,6 +73,17 @@ example (p : Polynomial K) (x : p.SplittingField) :
     ((minpoly K x).map (algebraMap K p.SplittingField)).Splits :=
   Normal.splits (inferInstance : Normal K p.SplittingField) x
 
+example (p : ℕ) [Fact p.Prime] (n : ℕ) (hn : 0 < n) :
+    (∃ α : GaloisField p n, IntermediateField.adjoin (ZMod p) {α} = ⊤) ∧
+      ∃ f : Polynomial (ZMod p), Irreducible f ∧ f.natDegree = n := by
+  obtain ⟨α, hα⟩ :=
+    Field.exists_primitive_element_of_finite_top (ZMod p) (GaloisField p n)
+  refine ⟨⟨α, hα⟩, minpoly (ZMod p) α,
+    minpoly.irreducible (IsIntegral.of_finite _ _), ?_⟩
+  have hdegree :=
+    (Field.primitive_element_iff_minpoly_natDegree_eq (ZMod p) α).mp hα
+  rwa [GaloisField.finrank p hn.ne'] at hdegree
+
 #print axioms IsAlgebraic
 #print axioms IsAlgebraic.add
 #print axioms IsAlgebraic.mul
@@ -88,6 +99,9 @@ example (p : Polynomial K) (x : p.SplittingField) :
 #print axioms GaloisField.algEquivGaloisField
 #print axioms GaloisField.finrank
 #print axioms Field.exists_primitive_element_of_finite_top
+#print axioms Field.primitive_element_iff_minpoly_natDegree_eq
+#print axioms IsIntegral.of_finite
+#print axioms minpoly.irreducible
 #print axioms isCyclic_subgroup_units
 #print axioms IsGalois.card_aut_eq_finrank
 #print axioms IsGalois.of_card_aut_eq_finrank
