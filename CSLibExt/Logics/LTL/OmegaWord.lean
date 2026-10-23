@@ -47,8 +47,8 @@ are read at the first letter, `next` moves to `w.tail`, and `until` quantifies o
 * `satisfies_map`: relabelling the letters of a word is composing the valuation.
 * Boolean structure of `language`: `language_not`, `language_and`, `language_or`.
 
-The semantics does not use the local LTS core; `CSLibExt.Logics.LTL.OmegaWordBridge` proves it
-agrees with the run semantics `Cslib.LTL.Satisfies` of `CSLibExt.Logics.LTL.Basic`.
+The semantics does not use the local LTS core. A run-based semantics over state sequences,
+and a proof that it agrees with this ω-word semantics, are future work.
 -/
 
 @[expose] public section
