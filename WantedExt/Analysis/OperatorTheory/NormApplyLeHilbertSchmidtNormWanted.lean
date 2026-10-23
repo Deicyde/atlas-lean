@@ -40,7 +40,7 @@ module
 
 public import Batteries.Util.ProofWanted
 public import Mathlib
-public import WantedExt.Analysis.OperatorTheory.HilbertSchmidtNorm
+public import MathlibExt.Analysis.OperatorTheory.HilbertSchmidtNorm
 
 @[expose] public section
 

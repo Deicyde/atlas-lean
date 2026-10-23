@@ -30,7 +30,11 @@ openbmb/MA-ProofBench), distributed under the MIT License above. Changes made: c
 `exists_const_integral_pow_four_mul_weight_le`; moved the informal problem statement docstring
 onto it and placed the declarations in namespace
 `MathlibExt.Analysis.FunctionalAnalysis.WeightedLadyzhenskayaPlaneWanted`; replaced `import
-Mathlib` by `public import Mathlib` under the module system.
+Mathlib` by `public import Mathlib` under the module system; wrote the regularity
+hypothesis `ContDiff ℝ (⊤ : ℕ∞) u` in the equivalent scoped form `ContDiff ℝ ∞ u`
+(both elaborate to `((⊤ : ℕ∞) : WithTop ℕ∞)`, ordinary smoothness; analyticity is the
+distinct order `ω = (⊤ : WithTop ℕ∞)`; the weight binder is renamed `ω` to `w` because
+the `ContDiff` scope reserves `ω` for the analytic order).
 -/
 module
 
@@ -40,6 +44,8 @@ public import Mathlib
 @[expose] public section
 
 open MeasureTheory
+
+open scoped ContDiff
 
 namespace MathlibExt.Analysis.FunctionalAnalysis.WeightedLadyzhenskayaPlaneWanted
 
@@ -56,13 +62,13 @@ in real analysis), `benchmark/level2/ma_proofbench_l2_48.lean` at openbmb/ma-pro
 -/
 public theorem_wanted exists_const_integral_pow_four_mul_weight_le :
   ∃ C : ℝ, 0 < C ∧
-    ∀ ω : EuclideanSpace ℝ (Fin 2) → ℝ,
-      (∀ x : EuclideanSpace ℝ (Fin 2), 0 < ω x) →
-      ContDiff ℝ 1 ω →
-      eLpNorm (fun x : EuclideanSpace ℝ (Fin 2) => ‖fderiv ℝ ω x‖ / ω x) ⊤ volume ≤ 1 →
-      ∀ u : EuclideanSpace ℝ (Fin 2) → ℝ, ContDiff ℝ (⊤ : ℕ∞) u → HasCompactSupport u →
-        ∫ x : EuclideanSpace ℝ (Fin 2), (u x) ^ (4 : ℕ) * ω x ≤
+    ∀ w : EuclideanSpace ℝ (Fin 2) → ℝ,
+      (∀ x : EuclideanSpace ℝ (Fin 2), 0 < w x) →
+      ContDiff ℝ 1 w →
+      eLpNorm (fun x : EuclideanSpace ℝ (Fin 2) => ‖fderiv ℝ w x‖ / w x) ⊤ volume ≤ 1 →
+      ∀ u : EuclideanSpace ℝ (Fin 2) → ℝ, ContDiff ℝ ∞ u → HasCompactSupport u →
+        ∫ x : EuclideanSpace ℝ (Fin 2), (u x) ^ (4 : ℕ) * w x ≤
           C * (ENNReal.toReal (eLpNorm u 2 volume)) ^ (2 : ℕ) *
-            ∫ x : EuclideanSpace ℝ (Fin 2), (‖fderiv ℝ u x‖ ^ (2 : ℕ) + |u x| ^ (2 : ℕ)) * ω x
+            ∫ x : EuclideanSpace ℝ (Fin 2), (‖fderiv ℝ u x‖ ^ (2 : ℕ) + |u x| ^ (2 : ℕ)) * w x
 
 end MathlibExt.Analysis.FunctionalAnalysis.WeightedLadyzhenskayaPlaneWanted
