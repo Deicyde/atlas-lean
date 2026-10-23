@@ -15,7 +15,7 @@ set_option autoImplicit false
 
 namespace MetaMathlibExt
 
--- The smallest allowed cyclic subgroup has order two; the ambient group is D₂.
+-- The order-two example: the cyclic subgroup has order two; the ambient group is D₂.
 example : Nonempty (DihedralGroup 2 ≃* DihedralGroup 2) := by
   classical
   let H : Subgroup (DihedralGroup 2) := Subgroup.zpowers (DihedralGroup.r (1 : ZMod 2))
