@@ -152,6 +152,40 @@ def parse_report(data):
     return report
 
 
+# Repository-selecting Git environment settings must never redirect a
+# pinned snapshot read to a different repository or object store.
+_FORBIDDEN_GIT_ENV = {
+    "GIT_ALTERNATE_OBJECT_DIRECTORIES",
+    "GIT_CEILING_DIRECTORIES",
+    "GIT_COMMON_DIR",
+    "GIT_CONFIG",
+    "GIT_CONFIG_COUNT",
+    "GIT_CONFIG_GLOBAL",
+    "GIT_CONFIG_LOCAL",
+    "GIT_CONFIG_SYSTEM",
+    "GIT_DIR",
+    "GIT_DISCOVERY_ACROSS_FILESYSTEM",
+    "GIT_INDEX_FILE",
+    "GIT_NAMESPACE",
+    "GIT_OBJECT_DIRECTORY",
+    "GIT_WORK_TREE",
+}
+
+
+def _git_env():
+    env = {
+        key: value
+        for key, value in os.environ.items()
+        if key not in _FORBIDDEN_GIT_ENV
+        and not key.startswith(("GIT_CONFIG_KEY_", "GIT_CONFIG_VALUE_"))
+    }
+    env["GIT_OPTIONAL_LOCKS"] = "0"
+    # A local refs/replace entry must not substitute replacement bytes
+    # for the pinned commit's actual tree.
+    env["GIT_NO_REPLACE_OBJECTS"] = "1"
+    return env
+
+
 class GitSource:
     def __init__(self, repo, ref):
         self.repo = str(repo)
@@ -176,9 +210,7 @@ class GitSource:
     def run(self, *args):
         command = ["git", "-C", self.repo, *args]
         self.commands.append(command)
-        return subprocess.check_output(
-            command, env=dict(os.environ, GIT_OPTIONAL_LOCKS="0")
-        )
+        return subprocess.check_output(command, env=_git_env())
 
     def read(self, path):
         if self.tree[path]["kind"] != "blob" or self.tree[path]["mode"] != "100644":

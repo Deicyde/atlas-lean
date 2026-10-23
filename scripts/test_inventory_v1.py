@@ -2,7 +2,9 @@
 
 import errno
 import json
+import os
 from pathlib import Path
+import subprocess
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -376,6 +378,58 @@ class InventoryRelations(unittest.TestCase):
         self.assertEqual(len(records[0]["prior_roadmap_candidates"]), 2)
         records, _ = inventory.book_inventory(fixture_source(), "FixtureBook")
         self.assertEqual(records[0]["prior_roadmap_candidates"], [])
+
+
+class GitSourceProvenance(unittest.TestCase):
+    def _git(self, repo, *args, env=None):
+        command = [
+            "git", "-C", str(repo),
+            "-c", "user.name=Inventory Fixture",
+            "-c", "user.email=fixture@example.invalid",
+            *args,
+        ]
+        return subprocess.check_output(command, env=env).decode().strip()
+
+    def test_replace_ref_does_not_substitute_snapshot_bytes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            self._git(repo, "init", "-q")
+            (repo / "x.txt").write_bytes(b"original\n")
+            self._git(repo, "add", "x.txt")
+            self._git(repo, "commit", "-qm", "original")
+            original = self._git(repo, "rev-parse", "HEAD")
+            original_blob = self._git(repo, "rev-parse", "HEAD:x.txt")
+            (repo / "x.txt").write_bytes(b"replacement\n")
+            self._git(repo, "add", "x.txt")
+            self._git(repo, "commit", "-qm", "replacement")
+            replacement = self._git(repo, "rev-parse", "HEAD")
+            self._git(repo, "replace", original, replacement)
+            # Sanity: plain git really serves the substituted bytes here.
+            self.assertEqual(
+                self._git(repo, "show", original + ":x.txt"), "replacement"
+            )
+            source = inventory.GitSource(repo, original)
+            self.assertEqual(source.revision, original)
+            self.assertEqual(source.tree["x.txt"]["git_blob"], original_blob)
+            self.assertEqual(source.read("x.txt"), b"original\n")
+            self.assertEqual(source.provenance("x.txt")["git_blob"], original_blob)
+
+    def test_git_env_sanitizes_repository_selection(self):
+        with patch.dict(
+            os.environ,
+            {
+                "GIT_DIR": "/elsewhere/.git",
+                "GIT_OBJECT_DIRECTORY": "/elsewhere/objects",
+                "GIT_CONFIG_KEY_0": "core.bare",
+                "PATH": os.environ.get("PATH", ""),
+            },
+        ):
+            env = inventory._git_env()
+        self.assertEqual(env["GIT_NO_REPLACE_OBJECTS"], "1")
+        self.assertEqual(env["GIT_OPTIONAL_LOCKS"], "0")
+        self.assertNotIn("GIT_DIR", env)
+        self.assertNotIn("GIT_OBJECT_DIRECTORY", env)
+        self.assertNotIn("GIT_CONFIG_KEY_0", env)
 
 
 class Command(unittest.TestCase):
