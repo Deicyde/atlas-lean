@@ -4,6 +4,7 @@
 import argparse
 from collections import Counter, defaultdict
 import ctypes
+import decimal
 import errno
 import hashlib
 import json
@@ -122,6 +123,14 @@ def finite_float(literal):
     value = float(literal)
     if not math.isfinite(value):
         raise ValueError(f"Non-finite JSON number: {literal}")
+    # Reject literals whose decimal value binary floating point cannot
+    # represent faithfully (underflow such as 1e-9999 -> 0.0, or extra
+    # precision silently rounded away): the inventory retains historical
+    # claims unmodified and hashes them, so an altered value is worse
+    # than an explicit failure.  Values whose shortest repr denotes the
+    # same decimal (such as 0.1) round-trip exactly and are accepted.
+    if decimal.Decimal(literal) != decimal.Decimal(repr(value)):
+        raise ValueError(f"JSON number not exactly representable: {literal}")
     return value
 
 
@@ -152,6 +161,40 @@ def parse_report(data):
     return report
 
 
+# Repository-selecting Git environment settings must never redirect a
+# pinned snapshot read to a different repository or object store.
+_FORBIDDEN_GIT_ENV = {
+    "GIT_ALTERNATE_OBJECT_DIRECTORIES",
+    "GIT_CEILING_DIRECTORIES",
+    "GIT_COMMON_DIR",
+    "GIT_CONFIG",
+    "GIT_CONFIG_COUNT",
+    "GIT_CONFIG_GLOBAL",
+    "GIT_CONFIG_LOCAL",
+    "GIT_CONFIG_SYSTEM",
+    "GIT_DIR",
+    "GIT_DISCOVERY_ACROSS_FILESYSTEM",
+    "GIT_INDEX_FILE",
+    "GIT_NAMESPACE",
+    "GIT_OBJECT_DIRECTORY",
+    "GIT_WORK_TREE",
+}
+
+
+def _git_env():
+    env = {
+        key: value
+        for key, value in os.environ.items()
+        if key not in _FORBIDDEN_GIT_ENV
+        and not key.startswith(("GIT_CONFIG_KEY_", "GIT_CONFIG_VALUE_"))
+    }
+    env["GIT_OPTIONAL_LOCKS"] = "0"
+    # A local refs/replace entry must not substitute replacement bytes
+    # for the pinned commit's actual tree.
+    env["GIT_NO_REPLACE_OBJECTS"] = "1"
+    return env
+
+
 class GitSource:
     def __init__(self, repo, ref):
         self.repo = str(repo)
@@ -176,9 +219,7 @@ class GitSource:
     def run(self, *args):
         command = ["git", "-C", self.repo, *args]
         self.commands.append(command)
-        return subprocess.check_output(
-            command, env=dict(os.environ, GIT_OPTIONAL_LOCKS="0")
-        )
+        return subprocess.check_output(command, env=_git_env())
 
     def read(self, path):
         if self.tree[path]["kind"] != "blob" or self.tree[path]["mode"] != "100644":
@@ -288,7 +329,11 @@ def book_inventory(source, book, prior=None):
                 "source_span": target["span"],
                 "source_fields": target["fields"],
                 "legacy_matches": matches,
-                "duplicate_source_ordinals": duplicates[target["source_sha256"]],
+                "duplicate_source_ordinals": (
+                    duplicates[target["source_sha256"]]
+                    if len(duplicates[target["source_sha256"]]) > 1
+                    else []
+                ),
                 "prior_roadmap_candidates": pointers[ordinal],
                 "gaps": sorted(set(gaps)),
             }

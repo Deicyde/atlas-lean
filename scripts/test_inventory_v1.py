@@ -2,7 +2,9 @@
 
 import errno
 import json
+import os
 from pathlib import Path
+import subprocess
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -263,6 +265,24 @@ class ReportParsing(unittest.TestCase):
                 )
                 self.assertEqual(value, 1e308)
 
+    def test_underflow_and_precision_loss_literals_rejected(self):
+        for section in ("header", "row"):
+            for literal in (
+                "1e-9999",
+                "-1e-9999",
+                "1.0000000000000000000000000000000001",
+            ):
+                with self.subTest(section=section, literal=literal):
+                    with self.assertRaisesRegex(
+                        ValueError, "not exactly representable"
+                    ):
+                        inventory.parse_report(overflow_report(section, literal))
+
+    def test_shortest_repr_decimals_preserved(self):
+        for literal, expected in (("0.1", 0.1), ("1e22", 1e22), ("5e-324", 5e-324)):
+            with self.subTest(literal=literal):
+                self.assertEqual(inventory.finite_float(literal), expected)
+
     def test_nonfinite_values_rejected(self):
         with self.assertRaisesRegex(ValueError, "Non-finite JSON"):
             inventory.parse_report(b'{"statements":{"details":[]},"score":NaN}')
@@ -296,6 +316,7 @@ class InventoryRelations(unittest.TestCase):
             summary["report_mentioned_non_target_dependencies"], ["Storage.helper"]
         )
         self.assertEqual(records[0]["duplicate_source_ordinals"], [0, 1])
+        self.assertEqual(records[1]["duplicate_source_ordinals"], [0, 1])
         self.assertEqual(
             records[0]["legacy_matches"][0]["declarations"],
             ["Storage.token", "Storage.slot"],
@@ -308,6 +329,13 @@ class InventoryRelations(unittest.TestCase):
             summary["historical_report_metadata"]["evidence"], inventory.HISTORICAL
         )
         self.assertIn("git_blob", records[0]["legacy_matches"][0]["files"][0])
+
+    def test_unique_target_has_no_duplicate_source_ordinals(self):
+        records, _summary = inventory.book_inventory(
+            fixture_source(targets=[TARGET], rows=[], files={}),
+            "FixtureBook",
+        )
+        self.assertEqual(records[0]["duplicate_source_ordinals"], [])
 
     def test_missing_row_file_and_declaration(self):
         source = fixture_source(
@@ -368,6 +396,58 @@ class InventoryRelations(unittest.TestCase):
         self.assertEqual(len(records[0]["prior_roadmap_candidates"]), 2)
         records, _ = inventory.book_inventory(fixture_source(), "FixtureBook")
         self.assertEqual(records[0]["prior_roadmap_candidates"], [])
+
+
+class GitSourceProvenance(unittest.TestCase):
+    def _git(self, repo, *args, env=None):
+        command = [
+            "git", "-C", str(repo),
+            "-c", "user.name=Inventory Fixture",
+            "-c", "user.email=fixture@example.invalid",
+            *args,
+        ]
+        return subprocess.check_output(command, env=env).decode().strip()
+
+    def test_replace_ref_does_not_substitute_snapshot_bytes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            self._git(repo, "init", "-q")
+            (repo / "x.txt").write_bytes(b"original\n")
+            self._git(repo, "add", "x.txt")
+            self._git(repo, "commit", "-qm", "original")
+            original = self._git(repo, "rev-parse", "HEAD")
+            original_blob = self._git(repo, "rev-parse", "HEAD:x.txt")
+            (repo / "x.txt").write_bytes(b"replacement\n")
+            self._git(repo, "add", "x.txt")
+            self._git(repo, "commit", "-qm", "replacement")
+            replacement = self._git(repo, "rev-parse", "HEAD")
+            self._git(repo, "replace", original, replacement)
+            # Sanity: plain git really serves the substituted bytes here.
+            self.assertEqual(
+                self._git(repo, "show", original + ":x.txt"), "replacement"
+            )
+            source = inventory.GitSource(repo, original)
+            self.assertEqual(source.revision, original)
+            self.assertEqual(source.tree["x.txt"]["git_blob"], original_blob)
+            self.assertEqual(source.read("x.txt"), b"original\n")
+            self.assertEqual(source.provenance("x.txt")["git_blob"], original_blob)
+
+    def test_git_env_sanitizes_repository_selection(self):
+        with patch.dict(
+            os.environ,
+            {
+                "GIT_DIR": "/elsewhere/.git",
+                "GIT_OBJECT_DIRECTORY": "/elsewhere/objects",
+                "GIT_CONFIG_KEY_0": "core.bare",
+                "PATH": os.environ.get("PATH", ""),
+            },
+        ):
+            env = inventory._git_env()
+        self.assertEqual(env["GIT_NO_REPLACE_OBJECTS"], "1")
+        self.assertEqual(env["GIT_OPTIONAL_LOCKS"], "0")
+        self.assertNotIn("GIT_DIR", env)
+        self.assertNotIn("GIT_OBJECT_DIRECTORY", env)
+        self.assertNotIn("GIT_CONFIG_KEY_0", env)
 
 
 class Command(unittest.TestCase):
