@@ -16,3 +16,6 @@ review using `REVIEWING.md` and the pull request checklist.
 For a read-only source/report inventory of the archived v1 books, see
 [`INVENTORY.md`](INVENTORY.md). It records historical metadata and source
 identity without scanning or compiling Lean.
+
+For AlgebraNotes' compact, non-accepted migration ledger and identity validator,
+see [`blueprint/migrations/README.md`](../blueprint/migrations/README.md).
