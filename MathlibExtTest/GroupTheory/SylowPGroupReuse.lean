@@ -42,6 +42,21 @@ example [Finite G] : Nat.card (Sylow p G) ≡ 1 [MOD p] := card_sylow_modEq_one 
 example [Fintype G] (h : p ∣ Fintype.card G) : ∃ g : G, orderOf g = p :=
   exists_prime_orderOf_dvd_card p h
 
+-- The legacy pole set `{x | ∃ h ≠ 1, h • x = x}` (points with nontrivial
+-- stabilizer) is closed under the action: if `p` has a nontrivial
+-- stabilizer element, so does `g • p`, by conjugation.  This is the content
+-- of the legacy `SylowTheorems.smul_mem_poles`, from `MulAction.stabilizer`
+-- conjugation.
+example {X : Type*} [MulAction G X] (g : G) (p : X)
+    (hp : ∃ h ∈ MulAction.stabilizer G p, h ≠ 1) :
+    ∃ h ∈ MulAction.stabilizer G (g • p), h ≠ 1 := by
+  obtain ⟨h, hstab, hne⟩ := hp
+  refine ⟨MulAut.conj g h, ?_, ?_⟩
+  · rw [MulAction.stabilizer_smul_eq_stabilizer_map_conj]
+    exact Subgroup.mem_map.mpr ⟨h, hstab, rfl⟩
+  · intro heq
+    exact hne ((MulAut.conj g).injective (by simpa using heq))
+
 #print axioms IsPGroup.iff_card
 #print axioms IsPGroup.center_nontrivial
 #print axioms IsPGroup.isMulCommutative_of_card_eq_prime_sq
