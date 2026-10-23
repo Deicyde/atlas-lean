@@ -56,7 +56,7 @@ buffer occupancy it simulates), checked with `decide +kernel`.
 namespace Cslib.Algorithms.CCS.GoBackN
 
 open Cslib.CCS (Label)
-open Cslib.CCS.Recursive Cslib.Semantics
+open Cslib.CCS.Recursive Cslib.LTS
 
 /-- Channel names; sequence numbers are `0`, `1`, `2`. -/
 inductive Name
@@ -283,13 +283,13 @@ theorem certCheck_certificate : certCheck configSteps bufferSteps certificate = 
 /-- **Go-back-N with window 2 implements a two-place buffer**: over a lossy
 one-place data channel, with timeouts and cumulative acknowledgements, the
 protocol is weakly bisimilar to the empty two-place buffer. -/
-theorem goBackN_weaklyBisimilar_buffer : lts.WeaklyBisimilar (tau := .tau) goBackN buf :=
+theorem goBackN_weaklyBisimilar_buffer : lts.HomWeakBisimilarity goBackN buf :=
   weaklyBisimilar_of_certCheck realizes_system realizes_buffer certCheck_certificate
     (x := initial) (y := 0) (by decide +kernel)
 
 /-- The protocol is even observation congruent to the buffer. -/
 theorem goBackN_observationCongruent_buffer :
-    lts.RootedWeaklyBisimilar (tau := .tau) goBackN buf :=
+    lts.RootedWeaklyBisimilar goBackN buf :=
   rootedWeaklyBisimilar_of_certCheck realizes_system realizes_buffer certCheck_certificate
     (x := initial) (y := 0) (by decide +kernel)
 
@@ -326,12 +326,12 @@ def lossyGoBackN : Process Name Agent := lossySystem (initial, none)
 
 /-- A step of the lossy variant read off its configuration transitions. -/
 theorem lossy_step {c c' : LossyConfig} {a : Label Name} (h : (a, c') ∈ lossyConfigSteps c) :
-    lts.step (lossySystem c) a (lossySystem c') :=
+    lts.Tr (lossySystem c) a (lossySystem c') :=
   (realizes_lossySystem c a _).2 ⟨c', h, rfl⟩
 
 /-- The buffer takes no silent steps. -/
 theorem buffer_silentClosure {n : ℕ} {Q : Process Name Agent}
-    (h : lts.SilentClosure .tau (buffer n) Q) : Q = buffer n := by
+    (h : lts.τSTr (buffer n) Q) : Q = buffer n := by
   induction h with
   | refl => rfl
   | tail _ hstep ih =>
@@ -342,9 +342,9 @@ theorem buffer_silentClosure {n : ℕ} {Q : Process Name Agent}
 
 /-- The visible weak steps of the buffer are its steps. -/
 theorem buffer_weakStep {n : ℕ} {a : Label Name} {Q : Process Name Agent} (ha : a ≠ .tau)
-    (h : lts.WeakStep (tau := .tau) (buffer n) a Q) :
+    (h : lts.STr (buffer n) a Q) :
     ∃ m, (a, m) ∈ bufferSteps n ∧ Q = buffer m := by
-  obtain ⟨before, after, hpre, hstep, hpost⟩ := (LTS.weakStep_of_ne ha).1 h
+  obtain ⟨before, after, hpre, hstep, hpost⟩ := (STr.iff_exists_of_ne ha).1 h
   rw [buffer_silentClosure hpre] at hstep
   obtain ⟨m, hm, rfl⟩ := (realizes_buffer n _ _).1 hstep
   exact ⟨m, hm, buffer_silentClosure hpost⟩
@@ -368,11 +368,11 @@ theorem stuckClosure_no_acc : stuckClosure.all (fun c => (lossyConfigSteps c).al
 
 /-- No configuration silently reachable from the stuck one accepts. -/
 theorem stuck_not_weaklyEnabled_acc :
-    ¬ lts.WeaklyEnabled (tau := .tau) (lossySystem (((⟨0, 2, 2⟩, none), .deliver 1), none))
+    ¬ lts.saturate.Enabled (lossySystem (((⟨0, 2, 2⟩, none), .deliver 1), none))
       (.input .acc) := by
   rintro ⟨target, hweak⟩
-  obtain ⟨before, after, hpre, hstep, -⟩ := (LTS.weakStep_of_ne (by simp)).1 hweak
-  have hinv : ∀ Q, lts.SilentClosure .tau
+  obtain ⟨before, after, hpre, hstep, -⟩ := (STr.iff_exists_of_ne (by simp)).1 hweak
+  have hinv : ∀ Q, lts.τSTr
       (lossySystem (((⟨0, 2, 2⟩, none), .deliver 1), none)) Q →
       ∃ c ∈ stuckClosure, Q = lossySystem c := by
     intro Q hQ
@@ -384,7 +384,7 @@ theorem stuck_not_weaklyEnabled_acc :
         have h := stuckClosure_closed
         simp only [List.all_eq_true, Bool.or_eq_true, bne_iff_ne, ne_eq,
           List.contains_iff_mem] at h
-        exact ⟨c', (h c hc _ hc').resolve_left (by simp), rfl⟩
+        exact ⟨c', (h c hc _ hc').resolve_left (fun hne => hne rfl), rfl⟩
   obtain ⟨c, hc, rfl⟩ := hinv before hpre
   obtain ⟨c', hc', -⟩ := (realizes_lossySystem c _ _).1 hstep
   have h := stuckClosure_no_acc
@@ -398,40 +398,40 @@ first and lose its acknowledgement, and let the receiver take the second frame:
 the buffer now holds one message and accepts another, but the protocol cannot
 accept before it delivers. -/
 theorem lossyGoBackN_not_weaklyBisimilar_buffer :
-    ¬ lts.WeaklyBisimilar (tau := .tau) lossyGoBackN buf := by
+    ¬ lts.HomWeakBisimilarity lossyGoBackN buf := by
   intro hbisim
   -- accept, accept
-  have h1 : lts.WeakStep (tau := .tau) lossyGoBackN (.input .acc)
+  have h1 : lts.STr lossyGoBackN (.input .acc)
       (lossySystem (((⟨0, 1, 0⟩, none), .expect 0), none)) :=
-    LTS.weakStep_of_step (lossy_step (by decide +kernel))
-  have h2 : lts.WeakStep (tau := .tau) (lossySystem (((⟨0, 1, 0⟩, none), .expect 0), none))
+    STr.single (lossy_step (by decide +kernel))
+  have h2 : lts.STr (lossySystem (((⟨0, 1, 0⟩, none), .expect 0), none))
       (.input .acc) (lossySystem (((⟨0, 2, 0⟩, none), .expect 0), none)) :=
-    LTS.weakStep_of_step (lossy_step (by decide +kernel))
+    STr.single (lossy_step (by decide +kernel))
   -- transmit and deliver frame 0, lose its acknowledgement, receive frame 1
-  have h3 : lts.WeakStep (tau := .tau) (lossySystem (((⟨0, 2, 0⟩, none), .expect 0), none))
+  have h3 : lts.STr (lossySystem (((⟨0, 2, 0⟩, none), .expect 0), none))
       (.output .del) (lossySystem (((⟨0, 2, 2⟩, none), .deliver 1), none)) := by
-    refine (LTS.weakStep_of_ne (by simp)).2
+    refine (STr.iff_exists_of_ne (by simp)).2
       ⟨lossySystem (((⟨0, 2, 1⟩, none), .deliver 0), none),
         lossySystem (((⟨0, 2, 1⟩, none), .reply 1), none), ?_, lossy_step (by decide +kernel), ?_⟩
-    · exact LTS.silentClosure_cons (lossy_step (c' := (((⟨0, 2, 1⟩, some 0), .expect 0), none))
-        (by decide +kernel)) (LTS.silentClosure_of_step (lossy_step (by decide +kernel)))
-    · refine LTS.silentClosure_cons
+    · exact τSTr.cons (lossy_step (c' := (((⟨0, 2, 1⟩, some 0), .expect 0), none))
+        (by decide +kernel)) (τSTr.of_tr (lossy_step (by decide +kernel)))
+    · refine τSTr.cons
         (lossy_step (c' := (((⟨0, 2, 1⟩, none), .expect 1), some 1)) (by decide +kernel)) ?_
-      refine LTS.silentClosure_cons
+      refine τSTr.cons
         (lossy_step (c' := (((⟨0, 2, 1⟩, none), .expect 1), none)) (by decide +kernel)) ?_
-      exact LTS.silentClosure_cons
+      exact τSTr.cons
         (lossy_step (c' := (((⟨0, 2, 2⟩, some 1), .expect 1), none)) (by decide +kernel))
-        (LTS.silentClosure_of_step (lossy_step (by decide +kernel)))
-  obtain ⟨Q1, hQ1, hb1⟩ := hbisim.match_weakLeft h1
+        (τSTr.of_tr (lossy_step (by decide +kernel)))
+  obtain ⟨Q1, hQ1, hb1⟩ := hbisim.sTr h1
   obtain ⟨m1, hm1, rfl⟩ := buffer_weakStep (by simp) hQ1
-  obtain ⟨Q2, hQ2, hb2⟩ := hb1.match_weakLeft h2
+  obtain ⟨Q2, hQ2, hb2⟩ := hb1.sTr h2
   obtain ⟨m2, hm2, rfl⟩ := buffer_weakStep (by simp) hQ2
-  obtain ⟨Q3, hQ3, hb3⟩ := hb2.match_weakLeft h3
+  obtain ⟨Q3, hQ3, hb3⟩ := hb2.sTr h3
   obtain ⟨m3, hm3, rfl⟩ := buffer_weakStep (by simp) hQ3
   obtain rfl : m1 = 1 := by simpa [bufferSteps] using hm1
   obtain rfl : m2 = 2 := by simpa [bufferSteps] using hm2
   obtain rfl : m3 = 1 := by simpa [bufferSteps] using hm3
-  exact stuck_not_weaklyEnabled_acc ((hb3.weaklyEnabled_iff _).2
-    ⟨buffer 2, LTS.weakStep_of_step ((realizes_buffer 1 _ _).2 ⟨2, by simp [bufferSteps], rfl⟩)⟩)
+  exact stuck_not_weaklyEnabled_acc ((hb3.enabled_saturate_iff _).2
+    ⟨buffer 2, STr.single ((realizes_buffer 1 _ _).2 ⟨2, by simp [bufferSteps], rfl⟩)⟩)
 
 end Cslib.Algorithms.CCS.GoBackN

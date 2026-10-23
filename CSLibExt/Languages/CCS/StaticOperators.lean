@@ -214,9 +214,9 @@ inductive Step : StaticProcess Name → Label Name → StaticProcess Name → Pr
         (.relabelling rename next)
 
 /-- The labelled transition system of finite CCS with static operators. -/
-def lts : Cslib.Semantics.LTS (StaticProcess Name) (Label Name) := ⟨Step⟩
+def lts : Cslib.LTS (StaticProcess Name) (Label Name) := ⟨Step⟩
 
-open Cslib.Semantics LTS
+open Cslib.LTS
 
 theorem nil_no_step {action : Label Name} {next : StaticProcess Name} :
     ¬Step .nil action next := by
@@ -279,45 +279,56 @@ inductive RestrictionLift (blocked : List Name)
 
 theorem restrictionLift_isSimulation {blocked : List Name}
     {relation : StaticProcess Name → StaticProcess Name → Prop}
-    (hsim : lts.IsSimulation relation) :
-    lts.IsSimulation (RestrictionLift blocked relation) := by
-  intro source target action next hrel hstep
+    (hsim : lts.IsHomSimulation relation) :
+    lts.IsHomSimulation (RestrictionLift blocked relation) := by
+  intro source target hrel action next hstep
   cases hrel with
   | base hrel =>
-      obtain ⟨next', hnext', hrel'⟩ := hsim hrel hstep
+      obtain ⟨next', hnext', hrel'⟩ := hsim.follow hrel hstep
       exact ⟨next', hnext', .base hrel'⟩
   | restriction hrel =>
       change Step (.restriction blocked _) action next at hstep
       rw [restriction_step_iff] at hstep
       obtain ⟨source', hsource', allowed, rfl⟩ := hstep
-      obtain ⟨target', htarget', hrel'⟩ := hsim hrel hsource'
+      obtain ⟨target', htarget', hrel'⟩ := hsim.follow hrel hsource'
       exact ⟨.restriction blocked target', .restrict htarget' allowed, .restriction hrel'⟩
 
 theorem restrictionLift_isBisimulation {blocked : List Name}
     {relation : StaticProcess Name → StaticProcess Name → Prop}
-    (hbisim : lts.IsBisimulation relation) :
-    lts.IsBisimulation (RestrictionLift blocked relation) := by
+    (hbisim : lts.IsHomBisimulation relation) :
+    lts.IsHomBisimulation (RestrictionLift blocked relation) := by
+  intro source target hrel action
   constructor
-  · exact restrictionLift_isSimulation hbisim.1
-  · intro target source action next hrel hstep
+  · intro next hstep
     cases hrel with
     | base hrel =>
-        obtain ⟨next', hnext', hrel'⟩ := hbisim.2 hrel hstep
+        obtain ⟨next', hnext', hrel'⟩ := (hbisim hrel _).1 next hstep
+        exact ⟨next', hnext', .base hrel'⟩
+    | restriction hrel =>
+        change Step (.restriction blocked _) action next at hstep
+        rw [restriction_step_iff] at hstep
+        obtain ⟨source', hsource', allowed, rfl⟩ := hstep
+        obtain ⟨target', htarget', hrel'⟩ := (hbisim hrel _).1 _ hsource'
+        exact ⟨.restriction blocked target', .restrict htarget' allowed, .restriction hrel'⟩
+  · intro next hstep
+    cases hrel with
+    | base hrel =>
+        obtain ⟨next', hnext', hrel'⟩ := (hbisim hrel _).2 next hstep
         exact ⟨next', hnext', .base hrel'⟩
     | restriction hrel =>
         change Step (.restriction blocked _) action next at hstep
         rw [restriction_step_iff] at hstep
         obtain ⟨target', htarget', allowed, rfl⟩ := hstep
-        obtain ⟨source', hsource', hrel'⟩ := hbisim.2 hrel htarget'
+        obtain ⟨source', hsource', hrel'⟩ := (hbisim hrel _).2 _ htarget'
         exact ⟨.restriction blocked source', .restrict hsource' allowed, .restriction hrel'⟩
 
 /-- Restriction preserves strong bisimilarity. -/
 theorem restriction_congr (blocked : List Name) {left right : StaticProcess Name}
-    (h : lts.Bisimilar left right) :
-    lts.Bisimilar (.restriction blocked left) (.restriction blocked right) := by
-  obtain ⟨relation, hbisim, hrel⟩ := h
-  exact ⟨RestrictionLift blocked relation, restrictionLift_isBisimulation hbisim,
-    .restriction hrel⟩
+    (h : lts.HomBisimilarity left right) :
+    lts.HomBisimilarity (.restriction blocked left) (.restriction blocked right) := by
+  obtain ⟨relation, hrel, hbisim⟩ := h
+  exact ⟨RestrictionLift blocked relation, .restriction hrel,
+    restrictionLift_isBisimulation hbisim⟩
 
 /-- Lift a relation through one fixed relabelling context. -/
 inductive RelabellingLift (rename : Relabelling Name)
@@ -329,45 +340,56 @@ inductive RelabellingLift (rename : Relabelling Name)
 
 theorem relabellingLift_isSimulation {rename : Relabelling Name}
     {relation : StaticProcess Name → StaticProcess Name → Prop}
-    (hsim : lts.IsSimulation relation) :
-    lts.IsSimulation (RelabellingLift rename relation) := by
-  intro source target action next hrel hstep
+    (hsim : lts.IsHomSimulation relation) :
+    lts.IsHomSimulation (RelabellingLift rename relation) := by
+  intro source target hrel action next hstep
   cases hrel with
   | base hrel =>
-      obtain ⟨next', hnext', hrel'⟩ := hsim hrel hstep
+      obtain ⟨next', hnext', hrel'⟩ := hsim.follow hrel hstep
       exact ⟨next', hnext', .base hrel'⟩
   | relabelling hrel =>
       change Step (.relabelling rename _) action next at hstep
       rw [relabelling_step_iff] at hstep
       obtain ⟨sourceAction, source', hsource', rfl, rfl⟩ := hstep
-      obtain ⟨target', htarget', hrel'⟩ := hsim hrel hsource'
+      obtain ⟨target', htarget', hrel'⟩ := hsim.follow hrel hsource'
       exact ⟨.relabelling rename target', .relabel htarget', .relabelling hrel'⟩
 
 theorem relabellingLift_isBisimulation {rename : Relabelling Name}
     {relation : StaticProcess Name → StaticProcess Name → Prop}
-    (hbisim : lts.IsBisimulation relation) :
-    lts.IsBisimulation (RelabellingLift rename relation) := by
+    (hbisim : lts.IsHomBisimulation relation) :
+    lts.IsHomBisimulation (RelabellingLift rename relation) := by
+  intro source target hrel action
   constructor
-  · exact relabellingLift_isSimulation hbisim.1
-  · intro target source action next hrel hstep
+  · intro next hstep
     cases hrel with
     | base hrel =>
-        obtain ⟨next', hnext', hrel'⟩ := hbisim.2 hrel hstep
+        obtain ⟨next', hnext', hrel'⟩ := (hbisim hrel _).1 next hstep
+        exact ⟨next', hnext', .base hrel'⟩
+    | relabelling hrel =>
+        change Step (.relabelling rename _) action next at hstep
+        rw [relabelling_step_iff] at hstep
+        obtain ⟨sourceAction, source', hsource', rfl, rfl⟩ := hstep
+        obtain ⟨target', htarget', hrel'⟩ := (hbisim hrel _).1 _ hsource'
+        exact ⟨.relabelling rename target', .relabel htarget', .relabelling hrel'⟩
+  · intro next hstep
+    cases hrel with
+    | base hrel =>
+        obtain ⟨next', hnext', hrel'⟩ := (hbisim hrel _).2 next hstep
         exact ⟨next', hnext', .base hrel'⟩
     | relabelling hrel =>
         change Step (.relabelling rename _) action next at hstep
         rw [relabelling_step_iff] at hstep
         obtain ⟨sourceAction, target', htarget', rfl, rfl⟩ := hstep
-        obtain ⟨source', hsource', hrel'⟩ := hbisim.2 hrel htarget'
+        obtain ⟨source', hsource', hrel'⟩ := (hbisim hrel _).2 _ htarget'
         exact ⟨.relabelling rename source', .relabel hsource', .relabelling hrel'⟩
 
 /-- Relabelling preserves strong bisimilarity. -/
 theorem relabelling_congr (rename : Relabelling Name) {left right : StaticProcess Name}
-    (h : lts.Bisimilar left right) :
-    lts.Bisimilar (.relabelling rename left) (.relabelling rename right) := by
-  obtain ⟨relation, hbisim, hrel⟩ := h
-  exact ⟨RelabellingLift rename relation, relabellingLift_isBisimulation hbisim,
-    .relabelling hrel⟩
+    (h : lts.HomBisimilarity left right) :
+    lts.HomBisimilarity (.relabelling rename left) (.relabelling rename right) := by
+  obtain ⟨relation, hrel, hbisim⟩ := h
+  exact ⟨RelabellingLift rename relation, .relabelling hrel,
+    relabellingLift_isBisimulation hbisim⟩
 
 end StaticProcess
 

@@ -50,7 +50,7 @@ condition (`rootCheck`) and concludes rooted observation congruence.
 namespace Cslib.Algorithms.CCS
 
 open Cslib.CCS (Label StaticProcess)
-open Cslib.CCS.Recursive Cslib.Semantics
+open Cslib.CCS.Recursive Cslib.LTS
 
 variable {Name Constant : Type*} [DecidableEq Name]
 
@@ -190,7 +190,7 @@ variable {f : α → Process Name Constant} {g : β → Process Name Constant}
 private theorem backward_match (hf : Realizes spec f s) (hb : backwardCheck s t rel = true) :
     ∀ (n : Nat) (x : α) (y : β), rel.idxOf (x, y) = n → (x, y) ∈ rel →
       ∀ a y', (a, y') ∈ t y →
-        ∃ x', (Process.lts spec).WeakStep (tau := .tau) (f x) a (f x') ∧ (x', y') ∈ rel := by
+        ∃ x', (Process.lts spec).STr (f x) a (f x') ∧ (x', y') ∈ rel := by
   intro n
   induction n using Nat.strong_induction_on with
   | _ n ih =>
@@ -200,32 +200,35 @@ private theorem backward_match (hf : Realizes spec f s) (hb : backwardCheck s t 
     simp only [Bool.or_eq_true, Bool.and_eq_true, beq_iff_eq, List.contains_iff_mem,
       List.any_eq_true, decide_eq_true_eq] at h
     rcases h with (⟨rfl, hmem⟩ | ⟨⟨b, x'⟩, hx', rfl, hmem⟩) | ⟨⟨b, x''⟩, hx'', ⟨rfl, hmem⟩, hlt⟩
-    · exact ⟨x, LTS.weakStep_tau_refl _, hmem⟩
-    · have hstep : (Process.lts spec).step (f x) b (f x') := (hf x b (f x')).2 ⟨x', hx', rfl⟩
-      exact ⟨x', LTS.weakStep_of_step hstep, hmem⟩
-    · have hstep : (Process.lts spec).step (f x) .tau (f x'') :=
+    · exact ⟨x, STr.refl, hmem⟩
+    · have hstep : (Process.lts spec).Tr (f x) b (f x') := (hf x b (f x')).2 ⟨x', hx', rfl⟩
+      exact ⟨x', STr.single hstep, hmem⟩
+    · have hstep : (Process.lts spec).Tr (f x) .tau (f x'') :=
         (hf x .tau (f x'')).2 ⟨x'', hx'', rfl⟩
       obtain ⟨x', hweak, hmem'⟩ := ih _ (hn ▸ hlt) x'' y rfl hmem a y' hy'
-      exact ⟨x', LTS.SilentClosure.weakStep_trans (LTS.silentClosure_of_step hstep) hweak, hmem'⟩
+      exact ⟨x', τSTr.trans_sTr (τSTr.of_tr hstep) hweak, hmem'⟩
 
 /-- A successful certificate check makes every listed pair weakly bisimilar. -/
 theorem weaklyBisimilar_of_certCheck (hf : Realizes spec f s) (hg : Realizes spec g t)
     (hcheck : certCheck s t rel = true) {x : α} {y : β} (hxy : (x, y) ∈ rel) :
-    (Process.lts spec).WeaklyBisimilar (tau := .tau) (f x) (g y) := by
+    (Process.lts spec).HomWeakBisimilarity (f x) (g y) := by
   simp only [certCheck, Bool.and_eq_true] at hcheck
   obtain ⟨hfwd, hbwd⟩ := hcheck
-  refine ⟨fun P Q => ∃ x y, (x, y) ∈ rel ∧ P = f x ∧ Q = g y, ⟨?_, ?_⟩, x, y, hxy, rfl, rfl⟩
-  · rintro _ _ a P' ⟨x, y, hxy, rfl, rfl⟩ hstep
+  refine ⟨fun P Q => ∃ x y, (x, y) ∈ rel ∧ P = f x ∧ Q = g y, ⟨x, y, hxy, rfl, rfl⟩, ?_⟩
+  refine IsSWBisimulation.isWeakBisimulation ?_
+  rintro P Q ⟨x, y, hxy, rfl, rfl⟩ a
+  constructor
+  · intro P' hstep
     obtain ⟨x', hx', rfl⟩ := (hf x a P').1 hstep
     simp only [forwardCheck, List.all_eq_true] at hfwd
     have h := hfwd (x, y) hxy (a, x') hx'
     simp only [Bool.or_eq_true, Bool.and_eq_true, beq_iff_eq, List.contains_iff_mem,
       List.any_eq_true] at h
     rcases h with ⟨rfl, hmem⟩ | ⟨⟨b, y'⟩, hy', rfl, hmem⟩
-    · exact ⟨g y, LTS.weakStep_tau_refl _, x', y, hmem, rfl, rfl⟩
-    · have hstep' : (Process.lts spec).step (g y) b (g y') := (hg y b (g y')).2 ⟨y', hy', rfl⟩
-      exact ⟨g y', LTS.weakStep_of_step hstep', x', y', hmem, rfl, rfl⟩
-  · rintro _ _ a Q' ⟨x, y, hxy, rfl, rfl⟩ hstep
+    · exact ⟨g y, STr.refl, x', y, hmem, rfl, rfl⟩
+    · have hstep' : (Process.lts spec).Tr (g y) b (g y') := (hg y b (g y')).2 ⟨y', hy', rfl⟩
+      exact ⟨g y', STr.single hstep', x', y', hmem, rfl, rfl⟩
+  · intro Q' hstep
     obtain ⟨y', hy', rfl⟩ := (hg y a Q').1 hstep
     obtain ⟨x', hweak, hmem⟩ := backward_match hf hbwd _ x y rfl hxy a y' hy'
     exact ⟨f x', hweak, x', y', hmem, rfl, rfl⟩
@@ -246,7 +249,7 @@ def rootCheck (s : α → List (Label Name × α)) (t : β → List (Label Name 
 observation congruence (Milner, Chapter 7). -/
 theorem rootedWeaklyBisimilar_of_certCheck (hf : Realizes spec f s) (hg : Realizes spec g t)
     (hcheck : certCheck s t rel = true) {x : α} {y : β} (hroot : rootCheck s t rel x y = true) :
-    (Process.lts spec).RootedWeaklyBisimilar (tau := .tau) (f x) (g y) := by
+    (Process.lts spec).RootedWeaklyBisimilar (f x) (g y) := by
   simp only [rootCheck, Bool.and_eq_true, List.all_eq_true, List.any_eq_true, beq_iff_eq,
     List.contains_iff_mem] at hroot
   obtain ⟨hleft, hright⟩ := hroot
@@ -254,12 +257,12 @@ theorem rootedWeaklyBisimilar_of_certCheck (hf : Realizes spec f s) (hg : Realiz
   · intro a P' hstep
     obtain ⟨x', hx', rfl⟩ := (hf x a P').1 hstep
     obtain ⟨⟨b, y'⟩, hy', rfl, hmem⟩ := hleft (a, x') hx'
-    exact ⟨g y', LTS.rootedWeakStep_of_step ((hg y _ _).2 ⟨y', hy', rfl⟩),
+    exact ⟨g y', LTS.rootedWeakStep_of_tr ((hg y _ _).2 ⟨y', hy', rfl⟩),
       weaklyBisimilar_of_certCheck hf hg hcheck hmem⟩
   · intro a Q' hstep
     obtain ⟨y', hy', rfl⟩ := (hg y a Q').1 hstep
     obtain ⟨⟨b, x'⟩, hx', rfl, hmem⟩ := hright (a, y') hy'
-    exact ⟨f x', LTS.rootedWeakStep_of_step ((hf x _ _).2 ⟨x', hx', rfl⟩),
+    exact ⟨f x', LTS.rootedWeakStep_of_tr ((hf x _ _).2 ⟨x', hx', rfl⟩),
       weaklyBisimilar_of_certCheck hf hg hcheck hmem⟩
 
 end Certificate

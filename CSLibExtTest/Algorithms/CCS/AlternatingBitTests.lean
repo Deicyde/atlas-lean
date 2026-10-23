@@ -28,7 +28,7 @@ public import CSLibExt.Algorithms.CCS.AlternatingBit
 namespace Cslib.Algorithms.CCS.AlternatingBit.Tests
 
 open Cslib.CCS (Label)
-open Cslib.CCS.Recursive Cslib.Semantics
+open Cslib.CCS.Recursive Cslib.LTS
 
 /-- Initially the only transition is accepting a message. -/
 example : configSteps initial =
@@ -52,9 +52,9 @@ example : configSteps (((.await false, .full false), .expect true), .empty) =
   decide +kernel
 
 /-- The empty buffer cannot weakly deliver. -/
-theorem buf_not_weaklyEnabled_del : ¬ lts.WeaklyEnabled (tau := .tau) buf (.output .del) := by
+theorem buf_not_weaklyEnabled_del : ¬ lts.saturate.Enabled buf (.output .del) := by
   rintro ⟨target, hweak⟩
-  rw [LTS.weakStep_of_ne (by simp)] at hweak
+  rw [saturate_tr_sTr, STr.iff_exists_of_ne (by simp)] at hweak
   obtain ⟨before, after, hsilent, hstep, -⟩ := hweak
   have hbefore : before = buf := by
     rcases Relation.ReflTransGen.cases_head hsilent with h | ⟨mid, hmid, -⟩
@@ -67,20 +67,20 @@ theorem buf_not_weaklyEnabled_del : ¬ lts.WeaklyEnabled (tau := .tau) buf (.out
 
 /-- The full buffer can deliver. -/
 theorem buffer_true_weaklyEnabled_del :
-    lts.WeaklyEnabled (tau := .tau) (buffer true) (.output .del) :=
-  ⟨buffer false, LTS.weakStep_of_step
+    lts.saturate.Enabled (buffer true) (.output .del) :=
+  ⟨buffer false, STr.single
     ((realizes_buffer true _ _).2 ⟨false, by simp [bufferSteps], rfl⟩)⟩
 
 /-- The protocol is not weakly bisimilar to a buffer that starts full. -/
-example : ¬ lts.WeaklyBisimilar (tau := .tau) abp (buffer true) := fun h =>
+example : ¬ lts.HomWeakBisimilarity abp (buffer true) := fun h =>
   buf_not_weaklyEnabled_del
-    (((abp_weaklyBisimilar_buffer.symm.trans h).weaklyEnabled_iff _).2
+    ((HomWeakBisimilarity.enabled_saturate_iff (abp_weaklyBisimilar_buffer.symm.trans h) _).2
       buffer_true_weaklyEnabled_del)
 
 /-- The protocol can weakly accept. -/
-example : lts.WeaklyEnabled (tau := .tau) abp (.input .acc) :=
-  (abp_weaklyBisimilar_buffer.weaklyEnabled_iff _).2
-    ⟨buffer true, LTS.weakStep_of_step
+example : lts.saturate.Enabled abp (.input .acc) :=
+  (abp_weaklyBisimilar_buffer.enabled_saturate_iff _).2
+    ⟨buffer true, STr.single
       ((realizes_buffer false _ _).2 ⟨true, by simp [bufferSteps], rfl⟩)⟩
 
 /-- The certificate covers the 54 reachable configurations in each phase. -/

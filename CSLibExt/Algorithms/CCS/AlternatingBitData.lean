@@ -42,7 +42,7 @@ with `decide +kernel`.
 namespace Cslib.Algorithms.CCS.AlternatingBitData
 
 open Cslib.CCS (Label)
-open Cslib.CCS.Recursive Cslib.Semantics
+open Cslib.CCS.Recursive Cslib.LTS
 
 /-- Channel names; `b` is a sequence bit and `d` a data bit. -/
 inductive Name
@@ -405,13 +405,13 @@ theorem certCheck_certificate : certCheck configSteps bufferSteps certificate = 
 
 /-- **The alternating-bit protocol transmits data correctly**: it is weakly
 bisimilar to the empty one-place buffer of bits. -/
-theorem abpData_weaklyBisimilar_buffer : lts.WeaklyBisimilar (tau := .tau) abpData buf :=
+theorem abpData_weaklyBisimilar_buffer : lts.HomWeakBisimilarity abpData buf :=
   weaklyBisimilar_of_certCheck realizes_system realizes_buffer certCheck_certificate
     (x := initial) (y := none) (by decide +kernel)
 
 /-- The protocol is even observation congruent to the buffer. -/
 theorem abpData_observationCongruent_buffer :
-    lts.RootedWeaklyBisimilar (tau := .tau) abpData buf :=
+    lts.RootedWeaklyBisimilar abpData buf :=
   rootedWeaklyBisimilar_of_certCheck realizes_system realizes_buffer certCheck_certificate
     (x := initial) (y := none) (by decide +kernel)
 

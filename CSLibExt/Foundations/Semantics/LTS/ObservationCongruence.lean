@@ -9,6 +9,8 @@ LICENSE file in the root directory of this source tree.
 /-
 Ported from fairinternal/formal-math at `290c48922e071d1e4267dd103a14e73b547adf60`.
 Original formalization by Zeina Migeed (@migeed-z); ported with permission.
+Adapted to the upstream weak semantics (`LTS.τSTr`, `LTS.STr`,
+`LTS.HomWeakBisimilarity`); the rooted notions are not upstream.
 -/
 
 /-
@@ -33,179 +35,185 @@ Prentice Hall, 1989, Chapter 5 (ISBN 978-0-13-115007-2).
 
 @[expose] public section
 
-namespace Cslib.Semantics.LTS
+namespace Cslib
 
-variable {State Label : Type*} (lts : LTS State Label) (tau : Label)
+namespace LTS
+
+variable {State Label : Type*} [HasTau Label] (lts : LTS State Label)
 
 /-- A rooted weak transition contains one actual transition carrying the
 displayed label, surrounded by silent transitions. -/
 def RootedWeakStep (source : State) (label : Label) (target : State) : Prop :=
   ∃ before after,
-    lts.SilentClosure tau source before ∧
-    lts.step before label after ∧
-    lts.SilentClosure tau after target
+    lts.τSTr source before ∧
+    lts.Tr before label after ∧
+    lts.τSTr after target
 
-variable {lts tau}
+variable {lts}
 
 /-- Every strong transition is rooted weak. -/
-theorem rootedWeakStep_of_step {source target : State} {label : Label}
-    (hstep : lts.step source label target) :
-    lts.RootedWeakStep tau source label target :=
+theorem rootedWeakStep_of_tr {source target : State} {label : Label}
+    (hstep : lts.Tr source label target) :
+    lts.RootedWeakStep source label target :=
   ⟨source, target, .refl, hstep, .refl⟩
 
 /-- Rooted weak transitions are weak transitions. -/
-theorem RootedWeakStep.toWeakStep {source target : State} {label : Label}
-    (hstep : lts.RootedWeakStep tau source label target) :
-    lts.WeakStep (tau := tau) source label target := by
+theorem RootedWeakStep.toSTr {source target : State} {label : Label}
+    (hstep : lts.RootedWeakStep source label target) :
+    lts.STr source label target := by
   obtain ⟨before, after, hbefore, hmiddle, hafter⟩ := hstep
-  by_cases hlabel : label = tau
+  by_cases hlabel : label = HasTau.τ
   · subst label
-    exact weakStep_tau_of_silentClosure
-      (hbefore.trans ((silentClosure_of_step hmiddle).trans hafter))
-  · exact Or.inr ⟨hlabel, before, after, hbefore, hmiddle, hafter⟩
+    exact (sTr_τSTr_iff lts).mpr
+      (hbefore.trans ((τSTr.of_tr hmiddle).trans hafter))
+  · exact .tr hbefore hmiddle hafter
 
 /-- Silent preparation can be added to a rooted weak transition. -/
-theorem SilentClosure.rootedWeakStep_trans {source middle target : State}
+theorem τSTr.rootedWeakStep_trans {source middle target : State}
     {label : Label}
-    (hbefore : lts.SilentClosure tau source middle)
-    (hstep : lts.RootedWeakStep tau middle label target) :
-    lts.RootedWeakStep tau source label target := by
+    (hbefore : lts.τSTr source middle)
+    (hstep : lts.RootedWeakStep middle label target) :
+    lts.RootedWeakStep source label target := by
   obtain ⟨before, after, hprefix, hmiddle, hsuffix⟩ := hstep
   exact ⟨before, after, hbefore.trans hprefix, hmiddle, hsuffix⟩
 
 /-- Silent cleanup can be added to a rooted weak transition. -/
-theorem RootedWeakStep.trans_silentClosure {source middle target : State}
+theorem RootedWeakStep.trans_τSTr {source middle target : State}
     {label : Label}
-    (hstep : lts.RootedWeakStep tau source label middle)
-    (hafter : lts.SilentClosure tau middle target) :
-    lts.RootedWeakStep tau source label target := by
+    (hstep : lts.RootedWeakStep source label middle)
+    (hafter : lts.τSTr middle target) :
+    lts.RootedWeakStep source label target := by
   obtain ⟨before, after, hprefix, hmiddle, hsuffix⟩ := hstep
   exact ⟨before, after, hprefix, hmiddle, hsuffix.trans hafter⟩
 
 /-- A rooted silent transition followed by a weak transition remains rooted.
 The initial rooted transition supplies the required actual silent step even
 when the following weak transition is reflexive. -/
-theorem RootedWeakStep.trans_weakStep {source middle target : State}
+theorem RootedWeakStep.trans_sTr {source middle target : State}
     {label : Label}
-    (hrooted : lts.RootedWeakStep tau source tau middle)
-    (hweak : lts.WeakStep (tau := tau) middle label target) :
-    lts.RootedWeakStep tau source label target := by
-  by_cases hlabel : label = tau
+    (hrooted : lts.RootedWeakStep source HasTau.τ middle)
+    (hweak : lts.STr middle label target) :
+    lts.RootedWeakStep source label target := by
+  by_cases hlabel : label = HasTau.τ
   · subst label
-    rw [weakStep_tau_iff] at hweak
-    exact hrooted.trans_silentClosure hweak
-  · rw [weakStep_of_ne hlabel] at hweak
-    obtain ⟨before, after, hprefix, hmiddle, hsuffix⟩ := hweak
-    have hrootedWeak := hrooted.toWeakStep
-    rw [weakStep_tau_iff] at hrootedWeak
-    exact ⟨before, after, hrootedWeak.trans hprefix, hmiddle, hsuffix⟩
+    exact hrooted.trans_τSTr ((sTr_τSTr_iff lts).mp hweak)
+  · obtain ⟨before, after, hprefix, hmiddle, hsuffix⟩ :=
+      (STr.iff_exists_of_ne hlabel).mp hweak
+    have hsource : lts.τSTr source middle :=
+      (sTr_τSTr_iff lts).mp hrooted.toSTr
+    exact ⟨before, after, hsource.trans hprefix, hmiddle, hsuffix⟩
 
 /-- Rooted observational congruence: initial transitions are matched by rooted
 weak transitions and their derivatives are weakly bisimilar. -/
 def RootedWeaklyBisimilar (left right : State) : Prop :=
-  (∀ ⦃label left'⦄, lts.step left label left' →
-    ∃ right', lts.RootedWeakStep tau right label right' ∧
-      lts.WeaklyBisimilar (tau := tau) left' right') ∧
-  (∀ ⦃label right'⦄, lts.step right label right' →
-    ∃ left', lts.RootedWeakStep tau left label left' ∧
-      lts.WeaklyBisimilar (tau := tau) left' right')
+  (∀ ⦃label left'⦄, lts.Tr left label left' →
+    ∃ right', lts.RootedWeakStep right label right' ∧
+      HomWeakBisimilarity lts left' right') ∧
+  (∀ ⦃label right'⦄, lts.Tr right label right' →
+    ∃ left', lts.RootedWeakStep left label left' ∧
+      HomWeakBisimilarity lts left' right')
 
 @[refl]
 theorem observationCongruent_refl (state : State) :
-    lts.RootedWeaklyBisimilar (tau := tau) state state := by
+    lts.RootedWeaklyBisimilar state state := by
   constructor <;> intro label next hstep
-  · exact ⟨next, rootedWeakStep_of_step hstep, weaklyBisimilar_refl next⟩
-  · exact ⟨next, rootedWeakStep_of_step hstep, weaklyBisimilar_refl next⟩
+  · exact ⟨next, rootedWeakStep_of_tr hstep, HomWeakBisimilarity.eqv.refl next⟩
+  · exact ⟨next, rootedWeakStep_of_tr hstep, HomWeakBisimilarity.eqv.refl next⟩
 
 theorem RootedWeaklyBisimilar.symm {left right : State}
-    (hcongr : lts.RootedWeaklyBisimilar (tau := tau) left right) :
-    lts.RootedWeaklyBisimilar (tau := tau) right left := by
+    (hcongr : lts.RootedWeaklyBisimilar left right) :
+    lts.RootedWeaklyBisimilar right left := by
   constructor
   · intro label right' hstep
     obtain ⟨left', hleft', hnext⟩ := hcongr.2 hstep
-    exact ⟨left', hleft', hnext.symm⟩
+    exact ⟨left', hleft', HomWeakBisimilarity.eqv.symm hnext⟩
   · intro label left' hstep
     obtain ⟨right', hright', hnext⟩ := hcongr.1 hstep
-    exact ⟨right', hright', hnext.symm⟩
+    exact ⟨right', hright', HomWeakBisimilarity.eqv.symm hnext⟩
 
 /-- Rooted observational congruence matches rooted weak transitions while
 preserving weak bisimilarity of their derivatives. -/
 theorem RootedWeaklyBisimilar.match_rootedLeft {left right left' : State}
-    {label : Label} (hcongr : lts.RootedWeaklyBisimilar (tau := tau) left right)
-    (hstep : lts.RootedWeakStep tau left label left') :
-    ∃ right', lts.RootedWeakStep tau right label right' ∧
-      lts.WeaklyBisimilar (tau := tau) left' right' := by
+    {label : Label} (hcongr : lts.RootedWeaklyBisimilar left right)
+    (hstep : lts.RootedWeakStep left label left') :
+    ∃ right', lts.RootedWeakStep right label right' ∧
+      HomWeakBisimilarity lts left' right' := by
   obtain ⟨before, after, hprefix, hmiddle, hsuffix⟩ := hstep
-  rcases hprefix.cases_head with hEq | ⟨prepared, hhead, htail⟩
+  rcases Relation.ReflTransGen.cases_head hprefix with hEq | ⟨prepared, hhead, htail⟩
   · subst before
     obtain ⟨right', hright', hnext⟩ := hcongr.1 hmiddle
     obtain ⟨right'', hright'', hfinal⟩ :=
-      hnext.match_weakLeft (weakStep_tau_of_silentClosure hsuffix)
-    rw [weakStep_tau_iff] at hright''
-    exact ⟨right'', hright'.trans_silentClosure hright'', hfinal⟩
-  · have hremainder : lts.RootedWeakStep tau prepared label left' :=
-      SilentClosure.rootedWeakStep_trans htail
+      hnext.sTr ((sTr_τSTr_iff lts).mpr hsuffix)
+    exact ⟨right'', hright'.trans_τSTr ((sTr_τSTr_iff lts).mp hright''), hfinal⟩
+  · have hremainder : lts.RootedWeakStep prepared label left' :=
+      τSTr.rootedWeakStep_trans htail
         ⟨before, after, .refl, hmiddle, hsuffix⟩
     obtain ⟨right', hright', hnext⟩ := hcongr.1 hhead
     obtain ⟨right'', hright'', hfinal⟩ :=
-      hnext.match_weakLeft hremainder.toWeakStep
-    exact ⟨right'', hright'.trans_weakStep hright'', hfinal⟩
+      hnext.sTr hremainder.toSTr
+    exact ⟨right'', hright'.trans_sTr hright'', hfinal⟩
 
 /-- Rooted observational congruence is transitive. -/
 @[trans]
 theorem RootedWeaklyBisimilar.trans {left middle right : State}
-    (hleft : lts.RootedWeaklyBisimilar (tau := tau) left middle)
-    (hright : lts.RootedWeaklyBisimilar (tau := tau) middle right) :
-    lts.RootedWeaklyBisimilar (tau := tau) left right := by
+    (hleft : lts.RootedWeaklyBisimilar left middle)
+    (hright : lts.RootedWeaklyBisimilar middle right) :
+    lts.RootedWeaklyBisimilar left right := by
   constructor
   · intro label left' hstep
     obtain ⟨middle', hmiddle', hleftNext⟩ := hleft.1 hstep
     obtain ⟨right', hright', hrightNext⟩ := hright.match_rootedLeft hmiddle'
-    exact ⟨right', hright', hleftNext.trans hrightNext⟩
+    exact ⟨right', hright', HomWeakBisimilarity.eqv.trans hleftNext hrightNext⟩
   · intro label right' hstep
     obtain ⟨middle', hmiddle', hrightNext⟩ := hright.2 hstep
     obtain ⟨left', hleft', hleftNext⟩ := hleft.symm.match_rootedLeft hmiddle'
-    exact ⟨left', hleft', hleftNext.symm.trans hrightNext⟩
+    exact ⟨left', hleft',
+      HomWeakBisimilarity.eqv.trans (HomWeakBisimilarity.eqv.symm hleftNext)
+        hrightNext⟩
 
 /-- Rooted observational congruence is an equivalence relation. -/
 theorem observationCongruent_equivalence :
-    Equivalence (lts.RootedWeaklyBisimilar (tau := tau)) :=
+    Equivalence (lts.RootedWeaklyBisimilar) :=
   ⟨observationCongruent_refl, RootedWeaklyBisimilar.symm,
     RootedWeaklyBisimilar.trans⟩
 
 /-- Strong bisimilarity implies observational congruence. -/
 theorem observationCongruent_of_bisimilar {left right : State}
-    (hbisim : lts.Bisimilar left right) :
-    lts.RootedWeaklyBisimilar (tau := tau) left right := by
+    (hbisim : HomBisimilarity lts left right) :
+    lts.RootedWeaklyBisimilar left right := by
   constructor
   · intro label left' hstep
-    obtain ⟨right', hright, hnext⟩ := hbisim.match_left hstep
-    exact ⟨right', rootedWeakStep_of_step hright, hnext.toWeaklyBisimilar⟩
+    obtain ⟨right', hright, hnext⟩ := Bisimilarity.follow_fst hbisim hstep
+    exact ⟨right', rootedWeakStep_of_tr hright, HomBisimilarity.to_homWeakBisimilarity hnext⟩
   · intro label right' hstep
-    obtain ⟨left', hleft, hnext⟩ := hbisim.match_right hstep
-    exact ⟨left', rootedWeakStep_of_step hleft, hnext.toWeaklyBisimilar⟩
+    obtain ⟨left', hleft, hnext⟩ := Bisimilarity.follow_snd hbisim hstep
+    exact ⟨left', rootedWeakStep_of_tr hleft, HomBisimilarity.to_homWeakBisimilarity hnext⟩
 
 /-- Observational congruence is finer than weak bisimilarity. -/
-theorem RootedWeaklyBisimilar.toWeaklyBisimilar {left right : State}
-    (hcongr : lts.RootedWeaklyBisimilar (tau := tau) left right) :
-    lts.WeaklyBisimilar (tau := tau) left right := by
+theorem RootedWeaklyBisimilar.to_homWeakBisimilarity {left right : State}
+    (hcongr : lts.RootedWeaklyBisimilar left right) :
+    HomWeakBisimilarity lts left right := by
   let relation : State → State → Prop := fun p q =>
-    lts.RootedWeaklyBisimilar (tau := tau) p q ∨
-      lts.WeaklyBisimilar (tau := tau) p q
-  have hweak : lts.IsWeakBisimulation (tau := tau) relation := by
+    lts.RootedWeaklyBisimilar p q ∨ HomWeakBisimilarity lts p q
+  have hweak : IsWeakBisimulation lts lts relation := by
+    rw [isWeakBisimulation_iff_isSWBisimulation]
+    intro p q hpq μ
     constructor
-    · intro p q label p' hpq hstep
+    · intro p' hstep
       rcases hpq with hpq | hpq
       · obtain ⟨q', hq', hnext⟩ := hpq.1 hstep
-        exact ⟨q', hq'.toWeakStep, Or.inr hnext⟩
-      · obtain ⟨q', hq', hnext⟩ := hpq.match_left hstep
+        exact ⟨q', hq'.toSTr, Or.inr hnext⟩
+      · obtain ⟨q', hq', hnext⟩ := hpq.tr hstep
         exact ⟨q', hq', Or.inr hnext⟩
-    · intro q p label q' hpq hstep
+    · intro q' hstep
       rcases hpq with hpq | hpq
       · obtain ⟨p', hp', hnext⟩ := hpq.2 hstep
-        exact ⟨p', hp'.toWeakStep, Or.inr hnext⟩
-      · obtain ⟨p', hp', hnext⟩ := hpq.symm.match_left hstep
-        exact ⟨p', hp', Or.inr hnext.symm⟩
-  exact ⟨relation, hweak, Or.inl hcongr⟩
+        exact ⟨p', hp'.toSTr, Or.inr hnext⟩
+      · obtain ⟨p', hp', hnext⟩ :=
+          (HomWeakBisimilarity.eqv.symm hpq).tr hstep
+        exact ⟨p', hp', Or.inr (HomWeakBisimilarity.eqv.symm hnext)⟩
+  exact ⟨relation, Or.inl hcongr, hweak⟩
 
-end Cslib.Semantics.LTS
+end LTS
+
+end Cslib

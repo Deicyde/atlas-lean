@@ -26,7 +26,7 @@ public import CSLibExt.Algorithms.CCS.AlternatingBitData
 namespace Cslib.Algorithms.CCS.AlternatingBitData.Tests
 
 open Cslib.CCS (Label)
-open Cslib.CCS.Recursive Cslib.Semantics
+open Cslib.CCS.Recursive Cslib.LTS
 
 -- The labelled configurations are deep products: instance synthesis needs a
 -- larger size bound to find their decidable equality.
@@ -46,9 +46,9 @@ example : (.input (.recv true false), .reply true) ∈ receiverSteps (.expect fa
 
 /-- The empty buffer cannot weakly deliver. -/
 theorem buf_not_weaklyEnabled_del (d : Bool) :
-    ¬ lts.WeaklyEnabled (tau := .tau) buf (.output (.del d)) := by
+    ¬ lts.saturate.Enabled buf (.output (.del d)) := by
   rintro ⟨target, hweak⟩
-  rw [LTS.weakStep_of_ne (by simp)] at hweak
+  rw [saturate_tr_sTr, STr.iff_exists_of_ne (by simp)] at hweak
   obtain ⟨before, after, hsilent, hstep, -⟩ := hweak
   have hbefore : before = buf := by
     rcases Relation.ReflTransGen.cases_head hsilent with h | ⟨mid, hmid, -⟩
@@ -60,10 +60,10 @@ theorem buf_not_weaklyEnabled_del (d : Bool) :
   simp [bufferSteps] at hy
 
 /-- The protocol is not weakly bisimilar to a buffer holding a bit. -/
-example (d : Bool) : ¬ lts.WeaklyBisimilar (tau := .tau) abpData (buffer (some d)) := fun h =>
+example (d : Bool) : ¬ lts.HomWeakBisimilarity abpData (buffer (some d)) := fun h =>
   buf_not_weaklyEnabled_del d
-    (((abpData_weaklyBisimilar_buffer.symm.trans h).weaklyEnabled_iff _).2
-      ⟨buffer none, LTS.weakStep_of_step
+    ((HomWeakBisimilarity.enabled_saturate_iff (abpData_weaklyBisimilar_buffer.symm.trans h) _).2
+      ⟨buffer none, STr.single
         ((realizes_buffer (some d) _ _).2 ⟨none, by simp [bufferSteps], rfl⟩)⟩)
 
 /-- Flipping the simulated data bit of every pair breaks the certificate. -/

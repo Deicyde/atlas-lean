@@ -26,7 +26,7 @@ public import CSLibExt.Algorithms.CCS.FiniteState
 namespace Cslib.Algorithms.CCS.FiniteStateTests
 
 open Cslib.CCS (Label)
-open Cslib.CCS.Recursive Cslib.Semantics
+open Cslib.CCS.Recursive Cslib.LTS
 
 inductive N | a | b
   deriving DecidableEq
@@ -65,13 +65,13 @@ def cert : List (Y × Bool) := [(.y0, false), (.y2, true), (.y1, true)]
 
 example : certCheck ySteps xSteps cert = true := by decide
 
-example : (Process.lts spec).WeaklyBisimilar (tau := .tau)
+example : (Process.lts spec).HomWeakBisimilarity
     (.constant (.y .y0)) (.constant (.x false)) :=
   weaklyBisimilar_of_certCheck realizes_y realizes_x (rel := cert) (by decide) (x := .y0)
     (y := false)
     (by decide)
 
-example : (Process.lts spec).RootedWeaklyBisimilar (tau := .tau)
+example : (Process.lts spec).RootedWeaklyBisimilar
     (.constant (.y .y0)) (.constant (.x false)) :=
   rootedWeaklyBisimilar_of_certCheck realizes_y realizes_x (rel := cert) (by decide) (x := .y0)
     (y := false)

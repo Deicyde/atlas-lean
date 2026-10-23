@@ -29,7 +29,7 @@ public import CSLibExt.Algorithms.CCS.GoBackN
 namespace Cslib.Algorithms.CCS.GoBackN.Tests
 
 open Cslib.CCS (Label)
-open Cslib.CCS.Recursive Cslib.Semantics
+open Cslib.CCS.Recursive Cslib.LTS
 
 example : configSteps initial = [(.input .acc, ((⟨0, 1, 0⟩, none), .expect 0))] := by
   decide +kernel
@@ -53,9 +53,9 @@ example : (.tau, none) ∈ dataSteps (some 1) := by decide
 example : (.input (.recv 1), .reply 0) ∈ receiverSteps (.expect 0) := by decide
 
 /-- The empty buffer cannot weakly deliver. -/
-theorem buf_not_weaklyEnabled_del : ¬ lts.WeaklyEnabled (tau := .tau) buf (.output .del) := by
+theorem buf_not_weaklyEnabled_del : ¬ lts.saturate.Enabled buf (.output .del) := by
   rintro ⟨target, hweak⟩
-  rw [LTS.weakStep_of_ne (by simp)] at hweak
+  rw [saturate_tr_sTr, STr.iff_exists_of_ne (by simp)] at hweak
   obtain ⟨before, after, hsilent, hstep, -⟩ := hweak
   have hbefore : before = buf := by
     rcases Relation.ReflTransGen.cases_head hsilent with h | ⟨mid, hmid, -⟩
@@ -67,10 +67,10 @@ theorem buf_not_weaklyEnabled_del : ¬ lts.WeaklyEnabled (tau := .tau) buf (.out
   simp [bufferSteps] at hy
 
 /-- The protocol is not weakly bisimilar to a buffer holding one message. -/
-example : ¬ lts.WeaklyBisimilar (tau := .tau) goBackN (buffer 1) := fun h =>
+example : ¬ lts.HomWeakBisimilarity goBackN (buffer 1) := fun h =>
   buf_not_weaklyEnabled_del
-    (((goBackN_weaklyBisimilar_buffer.symm.trans h).weaklyEnabled_iff _).2
-      ⟨buffer 0, LTS.weakStep_of_step
+    ((HomWeakBisimilarity.enabled_saturate_iff (goBackN_weaklyBisimilar_buffer.symm.trans h) _).2
+      ⟨buffer 0, STr.single
         ((realizes_buffer 1 _ _).2 ⟨0, by simp [bufferSteps], rfl⟩)⟩)
 
 /-- The certificate covers the 147 reachable configurations. -/

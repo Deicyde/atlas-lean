@@ -58,7 +58,7 @@ to the next visible action, which the backward check uses as a ranking.
 namespace Cslib.Algorithms.CCS.AlternatingBit
 
 open Cslib.CCS (Label)
-open Cslib.CCS.Recursive Cslib.Semantics
+open Cslib.CCS.Recursive Cslib.LTS
 
 /-- Channel names: the user interface `acc` and `del`, and the internal
 channels, each in two versions tagged by a bit. -/
@@ -311,13 +311,13 @@ theorem certCheck_certificate : certCheck configSteps bufferSteps certificate = 
 
 /-- **The alternating-bit protocol implements a one-place buffer**: over lossy
 one-place channels, `abp` is weakly bisimilar to `buf = acc.del.buf`. -/
-theorem abp_weaklyBisimilar_buffer : lts.WeaklyBisimilar (tau := .tau) abp buf :=
+theorem abp_weaklyBisimilar_buffer : lts.HomWeakBisimilarity abp buf :=
   weaklyBisimilar_of_certCheck realizes_system realizes_buffer certCheck_certificate
     (x := initial) (y := false) (by decide +kernel)
 
 /-- The protocol is even observation congruent (rooted weakly bisimilar) to
 the buffer: initially neither side can move silently. -/
-theorem abp_observationCongruent_buffer : lts.RootedWeaklyBisimilar (tau := .tau) abp buf :=
+theorem abp_observationCongruent_buffer : lts.RootedWeaklyBisimilar abp buf :=
   rootedWeaklyBisimilar_of_certCheck realizes_system realizes_buffer certCheck_certificate
     (x := initial) (y := false) (by decide +kernel)
 
