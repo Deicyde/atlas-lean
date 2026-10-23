@@ -46,8 +46,8 @@ The main results are the fixed-point characterizations of `EF` and `EG`:
 `EF φ` holds exactly on the least fixed point of
 `Z ↦ ⟦φ⟧ ∪ PreExists Z`, and `EG φ` holds exactly on the greatest fixed
 point of `Z ↦ ⟦φ⟧ ∩ PreExists Z`, where `PreExists` is the existential
-predecessor operator.  No finite model-checking algorithm is developed
-here; that is future work.
+predecessor operator.  The finite-state model checker built on this
+semantics is in `CSLibExt.Logics.CTL.ModelChecking`.
 
 The direction from the greatest fixed point to `EG` builds an infinite
 run by repeated choice of successors and therefore depends on

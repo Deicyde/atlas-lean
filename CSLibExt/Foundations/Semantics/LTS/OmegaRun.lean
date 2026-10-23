@@ -8,7 +8,7 @@ LICENSE file in the root directory of this source tree.
 
 /-
 Ported from fairinternal/formal-math at `85a3956f8d763f4003659b2ea871b54d9d9f711e`.
-Original formalization by Zeina Migeed (@migeed-z); ported with permission.
+Original formalization by Adam Kiezun.
 Adapted to the upstream `Cslib.LTS` type (its `Tr` relation and `MTr`
 multistep transitions).
 -/
