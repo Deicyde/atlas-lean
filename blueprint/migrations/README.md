@@ -78,13 +78,19 @@ promote the historical `mapped_existing` findings.
 
 ## Fresh triage and canonical-use index
 
-`AlgebraNotesChecks.json` is a compact companion to this same book ledger.
-Its `identity_sha256` binds the book/base/source fingerprints/library pins.
-`triage_sources` hashes locate the supplied lane maps without copying them;
-`triage` joins each fresh observation by lane, ordinal and authoritative
-sourceHash. Lane row hashes are separate locators, not replacements for
-inventory_v1's sourceHash. `triage_apis` provides exact named API/module/pin
-pointers; unresolved anonymous instance names remain explicitly null.
+`AlgebraNotesChecks.json` (schema `algebra-notes-checks/2`) is a compact
+companion to this same book ledger. Its `identity_sha256` binds the
+book/base/source fingerprints/library pins. Each `row_content_sha256` is the
+canonical SHA-256 of that row's other committed fields. The three
+`triage_sources` content fingerprints are likewise recomputed by the validator
+from the committed lane rows: the full triage-row contents sorted by ordinal,
+the ordinal/legacy-declaration pairs, and the API-row contents sorted by ID.
+These content hashes make the committed triage transcription tamper-evident;
+they do not prove its fidelity to the supplied lane maps, which are not
+committed, so transcription fidelity remains unverified. `triage` joins each
+fresh observation by lane, ordinal and authoritative sourceHash.
+`triage_apis` provides exact named API/module/pin pointers; unresolved
+anonymous instance names remain explicitly null.
 
 Fresh dispositions are triage only. Every source remains unverified; scope
 issues have compact codes and `scope: partial`, never complete-clause coverage.
@@ -106,7 +112,7 @@ receipt-hash locator. A full-compile locator must also name an actual compiler
 runtime/image and environment receipt in `compiler_environments`; these pins
 are independent of destination/source pins. The reported VMVM runtime is
 Lean 4.34.0 / Mathlib `5ed2965256430c3649e86755f9576b54eca72435`, not the
-repository destination Lean 4.34.1 / Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`.
+repository destination Lean 4.35.0 / Mathlib `56a005855ea17e0b0958f73ec801ae140b0a1679`.
 The reported image is
 `vmvm-registry.fbinfra.net/code_exec/code_exec:lean-4.34.0`; its environment
 receipt and fresh per-file result-row hashes are bound in this index. All 18

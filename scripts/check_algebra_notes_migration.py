@@ -367,7 +367,7 @@ def validate(ledger, source, expected_count=COUNT, expected_base=None):
     }
 
 
-CHECKS_SCHEMA = "algebra-notes-checks/1"
+CHECKS_SCHEMA = "algebra-notes-checks/2"
 TRIAGE_STATUSES = {
     "static_reuse",
     "partial_static_reuse",
@@ -385,6 +385,46 @@ def identity_hash(ledger):
             {key: ledger[key] for key in ("book", "base", "sources", "pins")}
         )
     )
+
+
+def content_sha256(value):
+    return inventory.sha256(inventory.canonical(value))
+
+
+def row_content_sha256(row):
+    """Hash every committed row field except the content-hash field itself."""
+    return content_sha256(
+        {key: value for key, value in row.items() if key != "row_content_sha256"}
+    )
+
+
+def lane_content_fingerprints(lane, triage_rows, api_rows):
+    """Reproducible lane digests over the committed triage transcription."""
+    lane_triage = sorted(
+        (
+            {key: value for key, value in row.items() if key != "row_content_sha256"}
+            for row in triage_rows
+            if row["lane"] == lane
+        ),
+        key=lambda row: row["ordinal"],
+    )
+    declarations = [
+        {"ordinal": row["ordinal"], "legacy_declarations": row["legacy_declarations"]}
+        for row in lane_triage
+    ]
+    lane_apis = sorted(
+        (
+            {key: value for key, value in row.items() if key != "row_content_sha256"}
+            for row in api_rows
+            if row["lane"] == lane
+        ),
+        key=lambda row: row["id"],
+    )
+    return {
+        "targets_content_sha256": content_sha256(lane_triage),
+        "declarations_content_sha256": content_sha256(declarations),
+        "api_rows_content_sha256": content_sha256(lane_apis),
+    }
 
 
 def example_id(span):
@@ -474,9 +514,9 @@ def validate_checks(checks, ledger, root):
             (
                 "lane",
                 "target_count",
-                "targets_sha256",
-                "declarations_sha256",
-                "api_receipts_sha256",
+                "targets_content_sha256",
+                "declarations_content_sha256",
+                "api_rows_content_sha256",
             ),
             "triage source",
         )
@@ -491,14 +531,18 @@ def validate_checks(checks, ledger, root):
             type(source["target_count"]) is int and source["target_count"] > 0,
             "empty triage source",
         )
-        for key in ("targets_sha256", "declarations_sha256", "api_receipts_sha256"):
+        for key in (
+            "targets_content_sha256",
+            "declarations_content_sha256",
+            "api_rows_content_sha256",
+        ):
             digest(source[key])
         sources[lane] = source
     apis = {}
     for api in checks["triage_apis"]:
         fields(
             api,
-            ("id", "lane", "name", "kind", "module", "revision", "row_sha256"),
+            ("id", "lane", "name", "kind", "module", "revision", "row_content_sha256"),
             "triage API",
         )
         require(
@@ -532,7 +576,11 @@ def validate_checks(checks, ledger, root):
             else ledger["base"]
         )
         require(api["revision"] == pin, "stale triage API pin")
-        digest(api["row_sha256"])
+        digest(api["row_content_sha256"])
+        require(
+            api["row_content_sha256"] == row_content_sha256(api),
+            "stale triage API row content hash",
+        )
         apis[api["id"]] = api
     targets = {row["ordinal"]: row for row in ledger["records"]}
     triage = {}
@@ -543,7 +591,7 @@ def validate_checks(checks, ledger, root):
                 "lane",
                 "ordinal",
                 "sourceHash",
-                "row_sha256",
+                "row_content_sha256",
                 "legacy_declarations",
                 "api_refs",
                 "disposition",
@@ -598,12 +646,23 @@ def validate_checks(checks, ledger, root):
             not row["issues"] or row["scope"] == "partial",
             "scope must retain triage issues",
         )
-        digest(row["row_sha256"])
+        digest(row["row_content_sha256"])
+        require(
+            row["row_content_sha256"] == row_content_sha256(row),
+            "stale triage row content hash",
+        )
         triage[key] = row
     for lane, source in sources.items():
         require(
             sum(k[0] == lane for k in triage) == source["target_count"],
             "incomplete fresh triage coverage",
+        )
+        expected = lane_content_fingerprints(
+            lane, checks["triage"], checks["triage_apis"]
+        )
+        require(
+            all(source[key] == value for key, value in expected.items()),
+            "stale lane content fingerprints",
         )
     covered = {key[1] for key in triage}
     pending = set()

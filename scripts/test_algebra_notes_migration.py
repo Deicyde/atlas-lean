@@ -144,6 +144,26 @@ def fixture_ledger(source):
 
 
 def fixture_checks(ledger):
+    api = {
+        "id": "fixture:api",
+        "lane": "fixture",
+        "name": "Fixture.libraryToken",
+        "kind": "named",
+        "module": "Mathlib.Fixture.Token",
+        "revision": "c" * 40,
+    }
+    api["row_content_sha256"] = check.row_content_sha256(api)
+    row = {
+        "lane": "fixture",
+        "ordinal": 1,
+        "sourceHash": ledger["records"][1]["sourceHash"],
+        "legacy_declarations": ["Fixture.first"],
+        "api_refs": ["fixture:api"],
+        "disposition": "static_reuse",
+        "scope": "unverified",
+        "issues": [],
+    }
+    row["row_content_sha256"] = check.row_content_sha256(row)
     return {
         "schema": check.CHECKS_SCHEMA,
         "identity_sha256": check.identity_hash(ledger),
@@ -163,35 +183,11 @@ def fixture_checks(ledger):
             {
                 "lane": "fixture",
                 "target_count": 1,
-                "targets_sha256": "1" * 64,
-                "declarations_sha256": "2" * 64,
-                "api_receipts_sha256": "3" * 64,
+                **check.lane_content_fingerprints("fixture", [row], [api]),
             }
         ],
-        "triage_apis": [
-            {
-                "id": "fixture:api",
-                "lane": "fixture",
-                "name": "Fixture.libraryToken",
-                "kind": "named",
-                "module": "Mathlib.Fixture.Token",
-                "revision": "c" * 40,
-                "row_sha256": "4" * 64,
-            }
-        ],
-        "triage": [
-            {
-                "lane": "fixture",
-                "ordinal": 1,
-                "sourceHash": ledger["records"][1]["sourceHash"],
-                "row_sha256": "5" * 64,
-                "legacy_declarations": ["Fixture.first"],
-                "api_refs": ["fixture:api"],
-                "disposition": "static_reuse",
-                "scope": "unverified",
-                "issues": [],
-            }
-        ],
+        "triage_apis": [api],
+        "triage": [row],
         "canonical_use_tests": [],
         "pending_targets": [
             {
@@ -603,6 +599,35 @@ class CanonicalUseIndex(unittest.TestCase):
             lambda index: index.update(identity_sha256="0" * 64), "source/pin identity"
         )
 
+    def test_triage_content_hashes_reject_tampering(self):
+        self.rejected(
+            lambda index: index["triage"][0].update(disposition="partial_static_reuse"),
+            "triage row content hash",
+        )
+        self.rejected(
+            lambda index: index["triage"][0].update(row_content_sha256="0" * 64),
+            "triage row content hash",
+        )
+        self.rejected(
+            lambda index: index["triage_apis"][0].update(name="Fixture.otherToken"),
+            "API row content hash",
+        )
+        self.rejected(
+            lambda index: index["triage_apis"][0].update(row_content_sha256="0" * 64),
+            "API row content hash",
+        )
+        for key in (
+            "targets_content_sha256",
+            "declarations_content_sha256",
+            "api_rows_content_sha256",
+        ):
+            self.rejected(
+                lambda index, key=key: index["triage_sources"][0].update(
+                    {key: "0" * 64}
+                ),
+                "lane content fingerprints",
+            )
+
     def test_canonical_use_cannot_pass_migration_source_or_equivalence_gates(self):
         self.rejected(
             lambda index: index.update(migration_gate="passed"), "migration/v1"
@@ -661,15 +686,22 @@ class CanonicalUseIndex(unittest.TestCase):
         )
 
     def test_overlapping_lanes_count_distinct_target_once(self):
-        source = copy.deepcopy(self.checks["triage_sources"][0])
-        source["lane"] = "parallel"
-        self.checks["triage_sources"].append(source)
         api = copy.deepcopy(self.checks["triage_apis"][0])
         api.update(id="parallel:api", lane="parallel")
+        api["row_content_sha256"] = check.row_content_sha256(api)
         self.checks["triage_apis"].append(api)
         observation = copy.deepcopy(self.checks["triage"][0])
         observation.update(lane="parallel", api_refs=["parallel:api"])
+        observation["row_content_sha256"] = check.row_content_sha256(observation)
         self.checks["triage"].append(observation)
+        source = copy.deepcopy(self.checks["triage_sources"][0])
+        source["lane"] = "parallel"
+        source.update(
+            check.lane_content_fingerprints(
+                "parallel", self.checks["triage"], self.checks["triage_apis"]
+            )
+        )
+        self.checks["triage_sources"].append(source)
         self.assertEqual(len(self.checks["triage"]), 2)
         self.assertEqual(self.validate()["fresh_triage_targets"], 1)
 
