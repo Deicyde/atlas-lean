@@ -27,12 +27,12 @@ theorem complete_bisimilar : HomBisimilarity completeLTS false true := by
 
 /-- Bisimilar states enable the same labels. -/
 example (μ : Unit) :
-    completeLTS.Enabled false μ ↔ completeLTS.Enabled true μ :=
-  complete_bisimilar.enabled_iff μ
+    completeLTS.HasOutLabel false μ ↔ completeLTS.HasOutLabel true μ :=
+  complete_bisimilar.hasOutLabel_iff μ
 
 /-- Bisimilar states have equal ready sets. -/
-example : completeLTS.readySet false = completeLTS.readySet true :=
-  complete_bisimilar.readySet_eq
+example : completeLTS.outgoingLabels false = completeLTS.outgoingLabels true :=
+  complete_bisimilar.outgoingLabels_eq
 
 /-- Multistep transitions transfer across bisimilarity: the two-step run
 from `false` is matched from `true`, ending in bisimilar states. -/

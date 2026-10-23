@@ -15,7 +15,7 @@ forms); only the consequences missing upstream are proved here.
 -/
 
 /-
-# Strong bisimulation: trace transfer and ready sets
+# Strong bisimulation: trace transfer and outgoing labels
 -/
 module
 
@@ -23,7 +23,7 @@ public import CSLibExt.Foundations.Semantics.LTS.Basic
 public import Cslib.Foundations.Semantics.LTS.Bisimulation
 
 /-!
-# Strong bisimulation: trace transfer and ready sets
+# Strong bisimulation: trace transfer and outgoing labels
 
 Simulation, bisimulation and bisimilarity themselves are the upstream
 `Cslib.LTS.IsSimulation`, `Cslib.LTS.IsBisimulation` and
@@ -31,7 +31,7 @@ Simulation, bisimulation and bisimilarity themselves are the upstream
 `IsHomBisimulation`, `HomBisimilarity`).  Recorded here are the facts the
 process-semantics development uses that upstream does not state: a
 multistep transition transfers across homogeneous bisimilarity, and
-bisimilar states enable the same labels, hence have equal ready sets.
+bisimilar states have the same outgoing labels.
 -/
 
 @[expose] public section
@@ -54,10 +54,10 @@ theorem HomBisimilarity.mtr {left right left' : State} {labels : List Label}
       obtain ⟨right', htrace, hfinal⟩ := ih hnext
       exact ⟨right', MTr.stepL hright htrace, hfinal⟩
 
-/-- Bisimilar states enable the same labels. -/
-theorem HomBisimilarity.enabled_iff {left right : State}
+/-- Bisimilar states have the same outgoing labels. -/
+theorem HomBisimilarity.hasOutLabel_iff {left right : State}
     (hbisim : HomBisimilarity lts left right) (label : Label) :
-    lts.Enabled left label ↔ lts.Enabled right label := by
+    lts.HasOutLabel left label ↔ lts.HasOutLabel right label := by
   constructor
   · rintro ⟨left', hstep⟩
     obtain ⟨right', hright, _⟩ := Bisimilarity.follow_fst hbisim hstep
@@ -66,12 +66,12 @@ theorem HomBisimilarity.enabled_iff {left right : State}
     obtain ⟨left', hleft, _⟩ := Bisimilarity.follow_snd hbisim hstep
     exact ⟨left', hleft⟩
 
-/-- Bisimilar states have equal ready sets. -/
-theorem HomBisimilarity.readySet_eq {left right : State}
+/-- Bisimilar states have equal sets of outgoing labels. -/
+theorem HomBisimilarity.outgoingLabels_eq {left right : State}
     (hbisim : HomBisimilarity lts left right) :
-    lts.readySet left = lts.readySet right := by
+    lts.outgoingLabels left = lts.outgoingLabels right := by
   ext label
-  exact hbisim.enabled_iff label
+  exact hbisim.hasOutLabel_iff label
 
 end LTS
 

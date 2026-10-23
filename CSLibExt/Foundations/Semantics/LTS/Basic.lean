@@ -15,7 +15,7 @@ Adapted to define the extensions directly on the upstream `Cslib.LTS` type
 -/
 
 /-
-# Labelled transition systems: enabled labels and reachability
+# Labelled transition systems: reachability
 -/
 module
 
@@ -23,11 +23,12 @@ public import Cslib.Foundations.Semantics.LTS.Basic
 public import Mathlib.Data.Set.Basic
 
 /-!
-# Labelled transition systems: enabled labels and reachability
+# Labelled transition systems: reachability
 
 Extensions of the upstream `Cslib.LTS` used by the process-semantics
-development: the labels enabled at a state, its ready set, and transitivity
-of upstream reachability (`Cslib.LTS.CanReach`).
+development: transitivity of upstream reachability (`Cslib.LTS.CanReach`).
+Outgoing labels are the upstream `Cslib.LTS.HasOutLabel` and
+`Cslib.LTS.outgoingLabels`.
 -/
 
 @[expose] public section
@@ -37,14 +38,6 @@ namespace Cslib
 namespace LTS
 
 variable {State Label : Type*} (lts : LTS State Label)
-
-/-- A state can perform `label` when it has a successor with that label. -/
-def Enabled (state : State) (label : Label) : Prop :=
-  ∃ next, lts.Tr state label next
-
-/-- The set of labels enabled at a state. -/
-def readySet (state : State) : Set Label :=
-  {label | lts.Enabled state label}
 
 variable {lts}
 
