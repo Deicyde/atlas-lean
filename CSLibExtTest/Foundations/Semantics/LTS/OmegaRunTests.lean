@@ -19,7 +19,7 @@ namespace Cslib.LTS.OmegaRunTests
 /-- The natural-number counter: `n` steps to `n + 1` under the unit label. -/
 def counter : LTS ℕ Unit := ⟨fun n _ m => m = n + 1⟩
 
-example : counter.Step 2 3 := ⟨(), rfl⟩
+example : counter.UnlabelledTr 2 3 := ⟨(), rfl⟩
 
 example : counter.OmegaRun (fun i => i) := by
   intro i
@@ -31,8 +31,8 @@ example : counter.OmegaRun (fun i => i + 7) := by
   show (i + 1) + 7 = (i + 7) + 1
   omega
 
-example : counter.Reachable 0 5 := by
-  apply LTS.finiteRun_reachable (ss := fun i => i) (k := 5)
+example : counter.CanReach 0 5 := by
+  apply LTS.finiteRun_canReach (ss := fun i => i) (k := 5)
   intro i _
   exact ⟨(), rfl⟩
 
@@ -53,6 +53,6 @@ example : Semantics.shiftSeq (fun i => i) 0 = (fun i => i) :=
   Semantics.shiftSeq_zero _
 
 #print axioms Cslib.LTS.exists_finiteRun_of_mtr
-#print axioms Cslib.LTS.finiteRun_reachable
+#print axioms Cslib.LTS.finiteRun_canReach
 
 end Cslib.LTS.OmegaRunTests

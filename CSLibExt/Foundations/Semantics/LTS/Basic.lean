@@ -26,9 +26,8 @@ public import Mathlib.Data.Set.Basic
 # Labelled transition systems: enabled labels and reachability
 
 Extensions of the upstream `Cslib.LTS` used by the process-semantics
-development: the labels enabled at a state, its ready set, and reachability
-through a finite multistep transition (`Cslib.LTS.MTr`) with the labels
-forgotten.
+development: the labels enabled at a state, its ready set, and transitivity
+of upstream reachability (`Cslib.LTS.CanReach`).
 -/
 
 @[expose] public section
@@ -47,22 +46,14 @@ def Enabled (state : State) (label : Label) : Prop :=
 def readySet (state : State) : Set Label :=
   {label | lts.Enabled state label}
 
-/-- Reachability through a finite multistep transition, forgetting the
-labels: `target` is reachable from `source` when some label list witnesses
-an `MTr` from `source` to `target`. -/
-def Reachable (source target : State) : Prop :=
-  ∃ labels, lts.MTr source labels target
-
 variable {lts}
 
-@[refl]
-theorem reachable_refl (state : State) : lts.Reachable state state :=
-  ⟨[], MTr.refl⟩
-
+/-- Upstream reachability `CanReach` is transitive: concatenate the two
+witnessing multistep transitions. -/
 @[trans]
-theorem Reachable.trans {source middle target : State}
-    (hsm : lts.Reachable source middle) (hmt : lts.Reachable middle target) :
-    lts.Reachable source target := by
+theorem CanReach.trans {source middle target : State}
+    (hsm : lts.CanReach source middle) (hmt : lts.CanReach middle target) :
+    lts.CanReach source target := by
   obtain ⟨left, hleft⟩ := hsm
   obtain ⟨right, hright⟩ := hmt
   exact ⟨left ++ right, (MTr.append_iff (lts := lts)).2 ⟨middle, hleft, hright⟩⟩

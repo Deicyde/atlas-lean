@@ -57,10 +57,6 @@ namespace LTS
 
 variable {State Label : Type*} (lts : LTS State Label)
 
-/-- One unlabelled step: some label witnesses a transition. -/
-def Step (source target : State) : Prop :=
-  ∃ label, lts.Tr source label target
-
 /-- `ss` is a run prefix of length `k`, from `ss 0` to `ss k`; values
 beyond index `k` are unconstrained. -/
 def FiniteRun (ss : ℕ → State) (k : ℕ) : Prop :=
@@ -86,19 +82,19 @@ theorem omegaRun_finiteRun {ss : ℕ → State} {k : ℕ}
   intro i _
   exact h i
 
-theorem finiteRun_reachable {ss : ℕ → State} {k : ℕ}
-    (h : lts.FiniteRun ss k) : lts.Reachable (ss 0) (ss k) := by
+theorem finiteRun_canReach {ss : ℕ → State} {k : ℕ}
+    (h : lts.FiniteRun ss k) : lts.CanReach (ss 0) (ss k) := by
   induction k with
-  | zero => exact reachable_refl _
+  | zero => exact CanReach.refl _ _
   | succ k ih =>
       have hpre : lts.FiniteRun ss k := finiteRun_mono h (by omega)
-      have hrec : lts.Reachable (ss 0) (ss k) := ih hpre
+      have hrec : lts.CanReach (ss 0) (ss k) := ih hpre
       obtain ⟨label, hstep⟩ := h k (by omega)
       exact hrec.trans ⟨[label], MTr.stepL hstep MTr.refl⟩
 
-theorem reachable_omegaRun_apply {ss : ℕ → State}
-    (h : lts.OmegaRun ss) (k : ℕ) : lts.Reachable (ss 0) (ss k) :=
-  finiteRun_reachable (omegaRun_finiteRun h)
+theorem canReach_omegaRun_apply {ss : ℕ → State}
+    (h : lts.OmegaRun ss) (k : ℕ) : lts.CanReach (ss 0) (ss k) :=
+  finiteRun_canReach (omegaRun_finiteRun h)
 
 theorem exists_finiteRun_of_mtr {s t : State} {labels : List Label}
     (h : lts.MTr s labels t) :
@@ -126,8 +122,8 @@ theorem exists_finiteRun_of_mtr {s t : State} {labels : List Label}
         | succ i =>
             exact hrun i (by omega)
 
-theorem exists_finiteRun_of_reachable {s t : State}
-    (h : lts.Reachable s t) :
+theorem exists_finiteRun_of_canReach {s t : State}
+    (h : lts.CanReach s t) :
     ∃ (ss : ℕ → State) (k : ℕ), ss 0 = s ∧ ss k = t ∧
       lts.FiniteRun ss k := by
   obtain ⟨labels, htrace⟩ := h
@@ -162,7 +158,7 @@ holds initially and is preserved by every step holds at every position
 of the run. -/
 theorem forall_state_of_invariant {run : ℕ → State}
     (hrun : lts.OmegaRun run) {P : State → Prop} (h0 : P (run 0))
-    (hstep : ∀ s t, P s → lts.Step s t → P t) :
+    (hstep : ∀ s t, P s → lts.UnlabelledTr s t → P t) :
     ∀ k, P (run k) := by
   intro k
   induction k with

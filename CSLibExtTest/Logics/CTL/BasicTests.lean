@@ -130,7 +130,7 @@ example (φ : Formula Unit) :
     cases t
     exact hφ
   · intro hφ
-    exact ⟨(), LTS.reachable_refl _, hφ⟩
+    exact ⟨(), LTS.CanReach.refl _ _, hφ⟩
 
 /- Deadlock regression: under the classical `AU`/`AF` duality
 translations, `A[⊤ U ψ]` and `AF ψ` below would hold at this deadlocked

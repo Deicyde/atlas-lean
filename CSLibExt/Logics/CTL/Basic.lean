@@ -357,22 +357,22 @@ theorem existsUntil_expansion :
 /-- `EF φ` holds exactly when some reachable state satisfies `φ`. -/
 theorem existsFinally_iff_reachable :
     Satisfies lts valuation s φ.existsFinally ↔
-      ∃ t, lts.Reachable s t ∧ Satisfies lts valuation t φ := by
+      ∃ t, lts.CanReach s t ∧ Satisfies lts valuation t φ := by
   rw [existsFinally_iff]
   constructor
   · rintro ⟨ss, k, h0, hrun, hφ⟩
     refine ⟨ss k, ?_, hφ⟩
-    have hreach := LTS.finiteRun_reachable hrun
+    have hreach := LTS.finiteRun_canReach hrun
     rwa [h0] at hreach
   · rintro ⟨t, hreach, hφ⟩
     obtain ⟨ss, k, h0, hk, hrun⟩ :=
-      LTS.exists_finiteRun_of_reachable hreach
+      LTS.exists_finiteRun_of_canReach hreach
     exact ⟨ss, k, h0, hrun, hk ▸ hφ⟩
 
 /-- `AG φ` holds exactly when every reachable state satisfies `φ`. -/
 theorem forallGlobally_iff_reachable :
     Satisfies lts valuation s φ.forallGlobally ↔
-      ∀ t, lts.Reachable s t → Satisfies lts valuation t φ := by
+      ∀ t, lts.CanReach s t → Satisfies lts valuation t φ := by
   change ¬Satisfies lts valuation s (φ.not).existsFinally ↔ _
   rw [existsFinally_iff_reachable]
   constructor
