@@ -288,7 +288,11 @@ def book_inventory(source, book, prior=None):
                 "source_span": target["span"],
                 "source_fields": target["fields"],
                 "legacy_matches": matches,
-                "duplicate_source_ordinals": duplicates[target["source_sha256"]],
+                "duplicate_source_ordinals": (
+                    duplicates[target["source_sha256"]]
+                    if len(duplicates[target["source_sha256"]]) > 1
+                    else []
+                ),
                 "prior_roadmap_candidates": pointers[ordinal],
                 "gaps": sorted(set(gaps)),
             }

@@ -296,6 +296,7 @@ class InventoryRelations(unittest.TestCase):
             summary["report_mentioned_non_target_dependencies"], ["Storage.helper"]
         )
         self.assertEqual(records[0]["duplicate_source_ordinals"], [0, 1])
+        self.assertEqual(records[1]["duplicate_source_ordinals"], [0, 1])
         self.assertEqual(
             records[0]["legacy_matches"][0]["declarations"],
             ["Storage.token", "Storage.slot"],
@@ -308,6 +309,13 @@ class InventoryRelations(unittest.TestCase):
             summary["historical_report_metadata"]["evidence"], inventory.HISTORICAL
         )
         self.assertIn("git_blob", records[0]["legacy_matches"][0]["files"][0])
+
+    def test_unique_target_has_no_duplicate_source_ordinals(self):
+        records, _summary = inventory.book_inventory(
+            fixture_source(targets=[TARGET], rows=[], files={}),
+            "FixtureBook",
+        )
+        self.assertEqual(records[0]["duplicate_source_ordinals"], [])
 
     def test_missing_row_file_and_declaration(self):
         source = fixture_source(
