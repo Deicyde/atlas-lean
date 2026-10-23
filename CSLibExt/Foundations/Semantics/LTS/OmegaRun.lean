@@ -7,6 +7,13 @@ LICENSE file in the root directory of this source tree.
 -/
 
 /-
+Ported from fairinternal/formal-math at `85a3956f8d763f4003659b2ea871b54d9d9f711e`.
+Original formalization by Zeina Migeed (@migeed-z); ported with permission.
+Adapted to the upstream `Cslib.LTS` type (its `Tr` relation and `MTr`
+multistep transitions).
+-/
+
+/-
 # Finite and infinite runs
 -/
 module
@@ -17,9 +24,9 @@ public import CSLibExt.Foundations.Semantics.LTS.Basic
 # Finite and infinite runs
 
 Temporal logics quantify over sequences of states and forget the labels
-that witness each transition.  This file supplies that carrier: finite
-run prefixes and infinite runs over a labelled transition system, their
-relation to traces and reachability, and suffix shifts of sequences.
+that witness each transition.  This file supplies that carrier over the
+upstream `Cslib.LTS`: finite run prefixes and infinite runs, their relation
+to multistep transitions and reachability, and suffix shifts of sequences.
 -/
 
 @[expose] public section
@@ -42,22 +49,26 @@ theorem shiftSeq_add {State : Type*} (ss : ℕ → State) (a b : ℕ) :
   congr 1
   omega
 
+end Cslib.Semantics
+
+namespace Cslib
+
 namespace LTS
 
 variable {State Label : Type*} (lts : LTS State Label)
 
 /-- One unlabelled step: some label witnesses a transition. -/
 def Step (source target : State) : Prop :=
-  ∃ label, lts.step source label target
+  ∃ label, lts.Tr source label target
 
 /-- `ss` is a run prefix of length `k`, from `ss 0` to `ss k`; values
 beyond index `k` are unconstrained. -/
 def FiniteRun (ss : ℕ → State) (k : ℕ) : Prop :=
-  ∀ i, i < k → ∃ label, lts.step (ss i) label (ss (i + 1))
+  ∀ i, i < k → ∃ label, lts.Tr (ss i) label (ss (i + 1))
 
 /-- `ss` is an infinite run: every consecutive pair is a transition. -/
 def OmegaRun (ss : ℕ → State) : Prop :=
-  ∀ i, ∃ label, lts.step (ss i) label (ss (i + 1))
+  ∀ i, ∃ label, lts.Tr (ss i) label (ss (i + 1))
 
 variable {lts}
 
@@ -83,52 +94,51 @@ theorem finiteRun_reachable {ss : ℕ → State} {k : ℕ}
       have hpre : lts.FiniteRun ss k := finiteRun_mono h (by omega)
       have hrec : lts.Reachable (ss 0) (ss k) := ih hpre
       obtain ⟨label, hstep⟩ := h k (by omega)
-      exact hrec.trans ⟨[label], Trace.cons hstep (Trace.nil _)⟩
+      exact hrec.trans ⟨[label], MTr.stepL hstep MTr.refl⟩
 
 theorem reachable_omegaRun_apply {ss : ℕ → State}
     (h : lts.OmegaRun ss) (k : ℕ) : lts.Reachable (ss 0) (ss k) :=
   finiteRun_reachable (omegaRun_finiteRun h)
 
-theorem exists_finiteRun_of_trace {s t : State} {labels : List Label}
-    (h : lts.Trace s labels t) :
+theorem exists_finiteRun_of_mtr {s t : State} {labels : List Label}
+    (h : lts.MTr s labels t) :
     ∃ ss : ℕ → State, ss 0 = s ∧ ss labels.length = t ∧
       lts.FiniteRun ss labels.length := by
   induction h with
-  | nil state =>
-      exact ⟨fun _ => state, rfl, rfl, finiteRun_zero⟩
-  | cons head tail ih =>
-      rename_i source middle target label labels
+  | refl =>
+      rename_i st
+      exact ⟨fun _ => st, rfl, rfl, finiteRun_zero⟩
+  | stepL head tail ih =>
+      rename_i src lab mid _labs _tgt
       obtain ⟨ss', h0, hlen, hrun⟩ := ih
-      refine ⟨fun i => match i with | 0 => source | i + 1 => ss' i,
+      refine ⟨fun i => match i with | 0 => src | i + 1 => ss' i,
         rfl, ?_, ?_⟩
       · simp only [List.length_cons]
-        show ss' labels.length = target
         exact hlen
       · intro i hi
         simp only [List.length_cons] at hi
         cases i with
         | zero =>
-            refine ⟨label, ?_⟩
-            change lts.step source label (ss' 0)
+            refine ⟨lab, ?_⟩
+            change lts.Tr src lab (ss' 0)
             rw [h0]
             exact head
         | succ i =>
-            have hi' : i < labels.length := by omega
-            exact hrun i hi'
+            exact hrun i (by omega)
 
 theorem exists_finiteRun_of_reachable {s t : State}
     (h : lts.Reachable s t) :
     ∃ (ss : ℕ → State) (k : ℕ), ss 0 = s ∧ ss k = t ∧
       lts.FiniteRun ss k := by
   obtain ⟨labels, htrace⟩ := h
-  obtain ⟨ss, h0, hlen, hrun⟩ := exists_finiteRun_of_trace htrace
+  obtain ⟨ss, h0, hlen, hrun⟩ := exists_finiteRun_of_mtr htrace
   exact ⟨ss, labels.length, h0, hlen, hrun⟩
 
 theorem omegaRun_shift {ss : ℕ → State}
     (h : lts.OmegaRun ss) (k : ℕ) :
-    lts.OmegaRun (shiftSeq ss k) := by
+    lts.OmegaRun (Semantics.shiftSeq ss k) := by
   intro i
-  change ∃ label, lts.step (ss (i + k)) label (ss (i + 1 + k))
+  change ∃ label, lts.Tr (ss (i + k)) label (ss (i + 1 + k))
   obtain ⟨label, hstep⟩ := h (i + k)
   refine ⟨label, ?_⟩
   have hidx : i + 1 + k = i + k + 1 := by omega
@@ -137,9 +147,9 @@ theorem omegaRun_shift {ss : ℕ → State}
 
 theorem finiteRun_shift {ss : ℕ → State} {j k : ℕ}
     (h : lts.FiniteRun ss (j + k)) :
-    lts.FiniteRun (shiftSeq ss j) k := by
+    lts.FiniteRun (Semantics.shiftSeq ss j) k := by
   intro i hi
-  change ∃ label, lts.step (ss (i + j)) label (ss (i + 1 + j))
+  change ∃ label, lts.Tr (ss (i + j)) label (ss (i + 1 + j))
   have hlt : i + j < j + k := by omega
   obtain ⟨label, hstep⟩ := h (i + j) hlt
   refine ⟨label, ?_⟩
@@ -161,4 +171,4 @@ theorem forall_state_of_invariant {run : ℕ → State}
 
 end LTS
 
-end Cslib.Semantics
+end Cslib

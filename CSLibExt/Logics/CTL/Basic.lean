@@ -115,7 +115,7 @@ def forallGlobally (φ : Formula Atom) : Formula Atom :=
 end Formula
 
 variable {State Label Atom : Type*}
-variable {lts : Semantics.LTS State Label}
+variable {lts : LTS State Label}
 variable {valuation : State → Atom → Prop}
 
 /-- Satisfaction of a CTL formula at a state of a labelled transition
@@ -125,7 +125,7 @@ states; `existsGlobally φ` is witnessed by an infinite run on which `φ`
 holds everywhere.  `forallUntil φ ψ` quantifies over maximal paths:
 every infinite run and every finite run ending at a deadlocked state
 reaches a `ψ`-state, with `φ` at all earlier states. -/
-def Satisfies (lts : Semantics.LTS State Label)
+def Satisfies (lts : LTS State Label)
     (valuation : State → Atom → Prop) (state : State) :
     Formula Atom → Prop
   | .atom a => valuation state a
@@ -134,7 +134,7 @@ def Satisfies (lts : Semantics.LTS State Label)
   | .and φ ψ =>
       Satisfies lts valuation state φ ∧ Satisfies lts valuation state ψ
   | .existsNext φ =>
-      ∃ label next, lts.step state label next ∧
+      ∃ label next, lts.Tr state label next ∧
         Satisfies lts valuation next φ
   | .existsUntil φ ψ =>
       ∃ ss k, ss 0 = state ∧ lts.FiniteRun ss k ∧
@@ -148,21 +148,21 @@ def Satisfies (lts : Semantics.LTS State Label)
         ∃ k, Satisfies lts valuation (ss k) ψ ∧
           ∀ j, j < k → Satisfies lts valuation (ss j) φ) ∧
       (∀ ss k, ss 0 = state → lts.FiniteRun ss k →
-        (∀ label t, ¬lts.step (ss k) label t) →
+        (∀ label t, ¬lts.Tr (ss k) label t) →
         ∃ j, j ≤ k ∧ Satisfies lts valuation (ss j) ψ ∧
           ∀ i, i < j → Satisfies lts valuation (ss i) φ)
 
 /-- The existential predecessor operator: `s` satisfies `PreExists lts Z`
 when some successor of `s` satisfies `Z`. -/
-def PreExists (lts : Semantics.LTS State Label) (Z : State → Prop)
+def PreExists (lts : LTS State Label) (Z : State → Prop)
     (s : State) : Prop :=
-  ∃ label t, lts.step s label t ∧ Z t
+  ∃ label t, lts.Tr s label t ∧ Z t
 
 /-- A transition system is serial (total) when every state has a
 successor, so there are no deadlocked states and every maximal path is
 infinite. -/
-def Serial (lts : Semantics.LTS State Label) : Prop :=
-  ∀ s, ∃ label t, lts.step s label t
+def Serial (lts : LTS State Label) : Prop :=
+  ∀ s, ∃ label t, lts.Tr s label t
 
 /-- In a serial system, every finite run extends to an infinite run
 agreeing with it up to its endpoint.  The extension iterates a chosen
@@ -171,16 +171,16 @@ successor function from the endpoint, so it depends on
 theorem exists_omegaRun_extending_of_serial (hser : Serial lts)
     {ss : ℕ → State} {k : ℕ} (hrun : lts.FiniteRun ss k) :
     ∃ ss', (∀ i, i ≤ k → ss' i = ss i) ∧ lts.OmegaRun ss' := by
-  have hsucc : ∀ x : State, ∃ y, ∃ label, lts.step x label y := by
+  have hsucc : ∀ x : State, ∃ y, ∃ label, lts.Tr x label y := by
     intro x
     obtain ⟨label, t, hstep⟩ := hser x
     exact ⟨t, label, hstep⟩
   obtain ⟨next, hnext⟩ : ∃ f : State → State,
-      ∀ x, ∃ label, lts.step x label (f x) :=
+      ∀ x, ∃ label, lts.Tr x label (f x) :=
     ⟨fun x => Classical.choose (hsucc x),
       fun x => Classical.choose_spec (hsucc x)⟩
   obtain ⟨lab, hlab⟩ : ∃ g : State → Label,
-      ∀ x, lts.step x (g x) (next x) :=
+      ∀ x, lts.Tr x (g x) (next x) :=
     ⟨fun x => Classical.choose (hnext x),
       fun x => Classical.choose_spec (hnext x)⟩
   let ss' : ℕ → State :=
@@ -232,7 +232,7 @@ theorem and_iff : Satisfies lts valuation s (.and φ ψ) ↔
 @[simp]
 theorem existsNext_iff :
     Satisfies lts valuation s (.existsNext φ) ↔
-      ∃ label next, lts.step s label next ∧
+      ∃ label next, lts.Tr s label next ∧
         Satisfies lts valuation next φ := Iff.rfl
 
 @[simp]
@@ -255,7 +255,7 @@ theorem forallUntil_iff :
         ∃ k, Satisfies lts valuation (ss k) ψ ∧
           ∀ j, j < k → Satisfies lts valuation (ss j) φ) ∧
       (∀ ss k, ss 0 = s → lts.FiniteRun ss k →
-        (∀ label t, ¬lts.step (ss k) label t) →
+        (∀ label t, ¬lts.Tr (ss k) label t) →
         ∃ j, j ≤ k ∧ Satisfies lts valuation (ss j) ψ ∧
           ∀ i, i < j → Satisfies lts valuation (ss i) φ) := Iff.rfl
 
@@ -324,14 +324,14 @@ theorem existsUntil_expansion :
         · have hrun' : lts.FiniteRun ss (1 + n) := by
             have hcomm : (1 : ℕ) + n = n + 1 := by omega
             rwa [hcomm]
-          exact Semantics.LTS.finiteRun_shift hrun'
+          exact LTS.finiteRun_shift hrun'
         · change Satisfies lts valuation (ss (n + 1)) ψ
           exact hψ
         · intro j hj
           change Satisfies lts valuation (ss (j + 1)) φ
           exact hφ (j + 1) (by omega)
   · rintro (hψ | ⟨hφs, label, next, hstep, ss, k, h0, hrun, hψ, hφ⟩)
-    · refine ⟨fun _ => s, 0, rfl, Semantics.LTS.finiteRun_zero, hψ, ?_⟩
+    · refine ⟨fun _ => s, 0, rfl, LTS.finiteRun_zero, hψ, ?_⟩
       intro j hj
       exact (Nat.not_lt_zero j hj).elim
     · refine ⟨fun i => match i with | 0 => s | i + 1 => ss i, k + 1,
@@ -340,7 +340,7 @@ theorem existsUntil_expansion :
         cases i with
         | zero =>
             refine ⟨label, ?_⟩
-            change lts.step s label (ss 0)
+            change lts.Tr s label (ss 0)
             rw [h0]
             exact hstep
         | succ i =>
@@ -362,11 +362,11 @@ theorem existsFinally_iff_reachable :
   constructor
   · rintro ⟨ss, k, h0, hrun, hφ⟩
     refine ⟨ss k, ?_, hφ⟩
-    have hreach := Semantics.LTS.finiteRun_reachable hrun
+    have hreach := LTS.finiteRun_reachable hrun
     rwa [h0] at hreach
   · rintro ⟨t, hreach, hφ⟩
     obtain ⟨ss, k, h0, hk, hrun⟩ :=
-      Semantics.LTS.exists_finiteRun_of_reachable hreach
+      LTS.exists_finiteRun_of_reachable hreach
     exact ⟨ss, k, h0, hrun, hk ▸ hφ⟩
 
 /-- `AG φ` holds exactly when every reachable state satisfies `φ`. -/
@@ -384,8 +384,8 @@ theorem forallGlobally_iff_reachable :
 /-- `AX φ` holds exactly when every successor state satisfies `φ`. -/
 theorem forallNext_iff :
     Satisfies lts valuation s φ.forallNext ↔
-      ∀ label t, lts.step s label t → Satisfies lts valuation t φ := by
-  change ¬(∃ label next, lts.step s label next ∧
+      ∀ label t, lts.Tr s label t → Satisfies lts valuation t φ := by
+  change ¬(∃ label next, lts.Tr s label next ∧
       ¬Satisfies lts valuation next φ) ↔ _
   constructor
   · intro h label t hstep
@@ -401,7 +401,7 @@ theorem forallFinally_iff_omega_and_finite :
       (∀ ss, ss 0 = s → lts.OmegaRun ss →
         ∃ k, Satisfies lts valuation (ss k) φ) ∧
       (∀ ss k, ss 0 = s → lts.FiniteRun ss k →
-        (∀ label t, ¬lts.step (ss k) label t) →
+        (∀ label t, ¬lts.Tr (ss k) label t) →
         ∃ j, j ≤ k ∧ Satisfies lts valuation (ss j) φ) := by
   change Satisfies lts valuation s (.forallUntil .top φ) ↔ _
   rw [forallUntil_iff]
@@ -423,14 +423,14 @@ theorem forallFinally_iff_omega_and_finite :
 condition is vacuous (an infinite run needs a step at index `0`), and
 the constant finite run of length `0` forces `ψ` at the state itself. -/
 theorem forallUntil_deadlock
-    (hdead : ∀ label t, ¬lts.step s label t) :
+    (hdead : ∀ label t, ¬lts.Tr s label t) :
     Satisfies lts valuation s (.forallUntil φ ψ) ↔
       Satisfies lts valuation s ψ := by
   rw [forallUntil_iff]
   constructor
   · intro h
     obtain ⟨j, hjk, hψ, -⟩ :=
-      h.2 (fun _ => s) 0 rfl Semantics.LTS.finiteRun_zero hdead
+      h.2 (fun _ => s) 0 rfl LTS.finiteRun_zero hdead
     have hj : j = 0 := by omega
     subst hj
     exact hψ
@@ -446,7 +446,7 @@ theorem forallUntil_deadlock
 
 /-- At a deadlocked state, `AF φ` reduces to `φ`. -/
 theorem forallFinally_deadlock
-    (hdead : ∀ label t, ¬lts.step s label t) :
+    (hdead : ∀ label t, ¬lts.Tr s label t) :
     Satisfies lts valuation s φ.forallFinally ↔
       Satisfies lts valuation s φ := by
   change Satisfies lts valuation s (.forallUntil .top φ) ↔ _
@@ -533,7 +533,7 @@ theorem forallUntil_iff_classical_of_serial (hser : Serial lts) :
         obtain ⟨k, hkψ, hkmin⟩ := key k0 hk0
         refine ⟨k, hkψ, fun j hjk => ?_⟩
         exact Classical.byContradiction (fun hnotφ => h (Or.inl
-          ⟨ss, j, h0, Semantics.LTS.omegaRun_finiteRun hrun,
+          ⟨ss, j, h0, LTS.omegaRun_finiteRun hrun,
             ⟨hnotφ, hkmin j hjk⟩,
             fun i hi => hkmin i (by omega)⟩))
     · intro ss k _ _ hdead
@@ -560,14 +560,14 @@ theorem existsGlobally_expansion :
     obtain ⟨label, hstep⟩ := hrun 0
     refine ⟨h0 ▸ hall 0, label, ss 1, h0 ▸ hstep, ?_⟩
     exact ⟨Semantics.shiftSeq ss 1, rfl,
-      Semantics.LTS.omegaRun_shift hrun 1, fun i => hall (i + 1)⟩
+      LTS.omegaRun_shift hrun 1, fun i => hall (i + 1)⟩
   · rintro ⟨hφs, label, next, hstep, ss, h0, hrun, hall⟩
     refine ⟨fun i => match i with | 0 => s | i + 1 => ss i, rfl, ?_, ?_⟩
     · intro i
       cases i with
       | zero =>
           refine ⟨label, ?_⟩
-          change lts.step s label (ss 0)
+          change lts.Tr s label (ss 0)
           rw [h0]
           exact hstep
       | succ i => exact hrun i
@@ -579,12 +579,12 @@ theorem existsGlobally_expansion :
           exact hall i
 
 /-- The functional whose least fixed point is `EF φ`. -/
-def existsFinallyFun (lts : Semantics.LTS State Label)
+def existsFinallyFun (lts : LTS State Label)
     (valuation : State → Atom → Prop) (φ : Formula Atom)
     (Z : State → Prop) : State → Prop :=
   fun s => Satisfies lts valuation s φ ∨ PreExists lts Z s
 
-theorem existsFinallyFun_mono (lts : Semantics.LTS State Label)
+theorem existsFinallyFun_mono (lts : LTS State Label)
     (valuation : State → Atom → Prop) (φ : Formula Atom) :
     Monotone (existsFinallyFun lts valuation φ) := by
   intro Z₁ Z₂ hle s hs
@@ -593,7 +593,7 @@ theorem existsFinallyFun_mono (lts : Semantics.LTS State Label)
   · exact Or.inr ⟨label, t, hstep, hle t hZ⟩
 
 /-- The `EF` functional packaged as a monotone operator. -/
-def existsFinallyOrderHom (lts : Semantics.LTS State Label)
+def existsFinallyOrderHom (lts : LTS State Label)
     (valuation : State → Atom → Prop) (φ : Formula Atom) :
     (State → Prop) →o (State → Prop) :=
   ⟨existsFinallyFun lts valuation φ, existsFinallyFun_mono lts valuation φ⟩
@@ -604,12 +604,12 @@ theorem existsFinallyOrderHom_apply (φ : Formula Atom) (Z : State → Prop) :
       existsFinallyFun lts valuation φ Z := rfl
 
 /-- The functional whose greatest fixed point is `EG φ`. -/
-def existsGloballyFun (lts : Semantics.LTS State Label)
+def existsGloballyFun (lts : LTS State Label)
     (valuation : State → Atom → Prop) (φ : Formula Atom)
     (Z : State → Prop) : State → Prop :=
   fun s => Satisfies lts valuation s φ ∧ PreExists lts Z s
 
-theorem existsGloballyFun_mono (lts : Semantics.LTS State Label)
+theorem existsGloballyFun_mono (lts : LTS State Label)
     (valuation : State → Atom → Prop) (φ : Formula Atom) :
     Monotone (existsGloballyFun lts valuation φ) := by
   intro Z₁ Z₂ hle s hs
@@ -617,7 +617,7 @@ theorem existsGloballyFun_mono (lts : Semantics.LTS State Label)
   exact ⟨hφ, label, t, hstep, hle t hZ⟩
 
 /-- The `EG` functional packaged as a monotone operator. -/
-def existsGloballyOrderHom (lts : Semantics.LTS State Label)
+def existsGloballyOrderHom (lts : LTS State Label)
     (valuation : State → Atom → Prop) (φ : Formula Atom) :
     (State → Prop) →o (State → Prop) :=
   ⟨existsGloballyFun lts valuation φ, existsGloballyFun_mono lts valuation φ⟩
@@ -639,15 +639,15 @@ theorem existsFinally_eq_lfp (φ : Formula Atom) :
     rw [existsFinally_iff_reachable] at hs
     obtain ⟨t, ⟨labels, htrace⟩, hφ⟩ := hs
     have key : ∀ {a b : State} {labels : List Label},
-        lts.Trace a labels b → Satisfies lts valuation b φ →
+        lts.MTr a labels b → Satisfies lts valuation b φ →
           (existsFinallyOrderHom lts valuation φ).lfp a := by
       intro a b labels htr
       induction htr with
-      | nil state =>
+      | refl =>
           intro hφstate
           rw [← OrderHom.map_lfp (existsFinallyOrderHom lts valuation φ)]
           exact Or.inl hφstate
-      | cons head tail ih =>
+      | stepL head tail ih =>
           intro hφtarget
           rw [← OrderHom.map_lfp (existsFinallyOrderHom lts valuation φ)]
           exact Or.inr ⟨_, _, head, ih hφtarget⟩
@@ -673,7 +673,7 @@ theorem existsGlobally_eq_gfp (φ : Formula Atom) :
     have hfix : ∀ x : State,
         (existsGloballyOrderHom lts valuation φ).gfp x →
           Satisfies lts valuation x φ ∧
-            ∃ label t, lts.step x label t ∧
+            ∃ label t, lts.Tr x label t ∧
               (existsGloballyOrderHom lts valuation φ).gfp t := by
       intro x hx
       have hmem : existsGloballyOrderHom lts valuation φ
@@ -685,25 +685,25 @@ theorem existsGlobally_eq_gfp (φ : Formula Atom) :
         (existsGloballyOrderHom lts valuation φ).gfp x},
         ∃ y : {x : State //
           (existsGloballyOrderHom lts valuation φ).gfp x},
-          ∃ label, lts.step x.1 label y.1 := by
+          ∃ label, lts.Tr x.1 label y.1 := by
       rintro ⟨x, hx⟩
       obtain ⟨-, label, t, hstep, ht⟩ := hfix x hx
       exact ⟨⟨t, ht⟩, label, hstep⟩
     obtain ⟨next, hnext⟩ : ∃ f : {x : State //
         (existsGloballyOrderHom lts valuation φ).gfp x} →
           {x : State // (existsGloballyOrderHom lts valuation φ).gfp x},
-          ∀ x, ∃ label, lts.step x.1 label (f x).1 :=
+          ∀ x, ∃ label, lts.Tr x.1 label (f x).1 :=
       ⟨fun x => Classical.choose (hsucc x),
         fun x => Classical.choose_spec (hsucc x)⟩
     obtain ⟨lab, hlab⟩ : ∃ g : {x : State //
         (existsGloballyOrderHom lts valuation φ).gfp x} → Label,
-          ∀ x, lts.step x.1 (g x) (next x).1 :=
+          ∀ x, lts.Tr x.1 (g x) (next x).1 :=
       ⟨fun x => Classical.choose (hnext x),
         fun x => Classical.choose_spec (hnext x)⟩
     refine ⟨fun n => (next^[n] ⟨s, hs⟩).1, rfl, ?_, ?_⟩
     · intro i
       refine ⟨lab (next^[i] ⟨s, hs⟩), ?_⟩
-      change lts.step (next^[i] ⟨s, hs⟩).1 _ (next^[i + 1] ⟨s, hs⟩).1
+      change lts.Tr (next^[i] ⟨s, hs⟩).1 _ (next^[i + 1] ⟨s, hs⟩).1
       rw [Function.iterate_succ_apply']
       exact hlab _
     · intro i

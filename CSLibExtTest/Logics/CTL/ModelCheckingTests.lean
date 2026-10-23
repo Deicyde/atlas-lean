@@ -15,14 +15,14 @@ public import CSLibExt.Logics.CTL.ModelChecking
 namespace Cslib.CTL.ModelCheckingTests
 
 /-- The toggle system: two states, each stepping to the other. -/
-def mcToggleLTS : Semantics.LTS Bool Unit where
-  step b _ b' := b' = !b
+def mcToggleLTS : LTS Bool Unit where
+  Tr b _ b' := b' = !b
 
 /-- The unique atom holds exactly at `true`. -/
 def mcToggleVal : Bool → Unit → Prop := fun b _ => b = true
 
 instance (b : Bool) (μ : Unit) (b' : Bool) :
-    Decidable (mcToggleLTS.step b μ b') :=
+    Decidable (mcToggleLTS.Tr b μ b') :=
   inferInstanceAs (Decidable (b' = !b))
 
 instance (b : Bool) (a : Unit) :
@@ -65,9 +65,9 @@ example :
       (.existsGlobally (.atom ()))) := inferInstance
 
 /-- The diamond system on `Fin 4`: `0` branches to `1` and `2`, both
-step to `3`, and `3` self-loops. -/
-def mcDiamondLTS : Semantics.LTS (Fin 4) Unit where
-  step s _ t :=
+Tr to `3`, and `3` self-loops. -/
+def mcDiamondLTS : LTS (Fin 4) Unit where
+  Tr s _ t :=
     (s = 0 ∧ (t = 1 ∨ t = 2)) ∨ ((s = 1 ∨ s = 2) ∧ t = 3) ∨
       (s = 3 ∧ t = 3)
 
@@ -75,7 +75,7 @@ def mcDiamondLTS : Semantics.LTS (Fin 4) Unit where
 def mcDiamondVal : Fin 4 → Unit → Prop := fun s _ => s = 3
 
 instance (s : Fin 4) (μ : Unit) (t : Fin 4) :
-    Decidable (mcDiamondLTS.step s μ t) :=
+    Decidable (mcDiamondLTS.Tr s μ t) :=
   inferInstanceAs (Decidable
     ((s = 0 ∧ (t = 1 ∨ t = 2)) ∨ ((s = 1 ∨ s = 2) ∧ t = 3) ∨
       (s = 3 ∧ t = 3)))
@@ -105,8 +105,8 @@ example :
 
 /-- The partially deadlocked system on `Fin 2`: state `0` self-loops
 while state `1` has no successors. -/
-def mcDeadLTS : Semantics.LTS (Fin 2) Unit where
-  step s _ t := s = 0 ∧ t = 0
+def mcDeadLTS : LTS (Fin 2) Unit where
+  Tr s _ t := s = 0 ∧ t = 0
 
 /-- The unique atom holds exactly at `0`. -/
 def mcDeadValAt0 : Fin 2 → Unit → Prop := fun s _ => s = 0
@@ -115,7 +115,7 @@ def mcDeadValAt0 : Fin 2 → Unit → Prop := fun s _ => s = 0
 def mcDeadValAt1 : Fin 2 → Unit → Prop := fun s _ => s = 1
 
 instance (s : Fin 2) (μ : Unit) (t : Fin 2) :
-    Decidable (mcDeadLTS.step s μ t) :=
+    Decidable (mcDeadLTS.Tr s μ t) :=
   inferInstanceAs (Decidable (s = 0 ∧ t = 0))
 
 instance (s : Fin 2) (a : Unit) :

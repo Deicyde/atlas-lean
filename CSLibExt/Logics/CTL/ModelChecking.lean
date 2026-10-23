@@ -41,8 +41,9 @@ translation without that disjunct is unsound at deadlocks (see the
 documentation of `CSLibExt.Logics.CTL.Basic`).
 
 No CTL and no model checker exists upstream in `leanprover/cslib` at the
-pinned revision `7c8f6c0f` (its `Logics` directory has HML, Modal, and
-Propositional only), so this file is new with `CSLibExt`, as is `Basic`.
+pinned revision `5b56df99362532c46e1175381fbbdd755bd56030` (its `Logics`
+directory has HML, LinearLogic, Modal, and Propositional only), so this
+file is new with `CSLibExt`, as is `Basic`.
 
 The correctness proof `mem_sat` depends on `Classical.choice`, inherited
 from the greatest-fixed-point characterization of `EG` in `Basic` and
@@ -60,7 +61,7 @@ namespace CTL
 section Duality
 
 variable {State Label Atom : Type*}
-variable {lts : Semantics.LTS State Label}
+variable {lts : LTS State Label}
 variable {valuation : State → Atom → Prop}
 
 /-- Some index attaining `p` is least such. -/
@@ -77,26 +78,26 @@ reached; the construction depends on `Classical.choice`. -/
 theorem exists_maximalPath (s : State) :
     (∃ ss, ss 0 = s ∧ lts.OmegaRun ss) ∨
       (∃ ss k, ss 0 = s ∧ lts.FiniteRun ss k ∧
-        ∀ label t, ¬lts.step (ss k) label t) := by
+        ∀ label t, ¬lts.Tr (ss k) label t) := by
   classical
-  have hchoice : ∀ x : State, (∃ label t, lts.step x label t) →
-      ∃ t, ∃ label, lts.step x label t :=
+  have hchoice : ∀ x : State, (∃ label t, lts.Tr x label t) →
+      ∃ t, ∃ label, lts.Tr x label t :=
     fun x ⟨label, t, hstep⟩ => ⟨t, label, hstep⟩
   let next : State → State := fun x =>
-    if h : ∃ label t, lts.step x label t then
+    if h : ∃ label t, lts.Tr x label t then
       Classical.choose (hchoice x h)
     else x
-  have hnext : ∀ x, (∃ label t, lts.step x label t) →
-      ∃ label, lts.step x label (next x) := by
+  have hnext : ∀ x, (∃ label t, lts.Tr x label t) →
+      ∃ label, lts.Tr x label (next x) := by
     intro x hx
     have hnx : next x = Classical.choose (hchoice x hx) := dite_eq_left hx
     rw [hnx]
     exact Classical.choose_spec (hchoice x hx)
-  by_cases hdead : ∃ k, ∀ label t, ¬lts.step (next^[k] s) label t
+  by_cases hdead : ∃ k, ∀ label t, ¬lts.Tr (next^[k] s) label t
   · obtain ⟨k, hk⟩ := hdead
     obtain ⟨k₀, hk₀, hk₀min⟩ := exists_minimal_index
-      (p := fun k => ∀ label t, ¬lts.step (next^[k] s) label t) ⟨k, hk⟩
-    have hmin : ∀ m, m < k₀ → ∃ label t, lts.step (next^[m] s) label t := by
+      (p := fun k => ∀ label t, ¬lts.Tr (next^[k] s) label t) ⟨k, hk⟩
+    have hmin : ∀ m, m < k₀ → ∃ label t, lts.Tr (next^[m] s) label t := by
       intro m hm
       by_contra hcon
       push Not at hcon
@@ -105,17 +106,17 @@ theorem exists_maximalPath (s : State) :
     intro i hi
     obtain ⟨label, hstep⟩ := hnext _ (hmin i hi)
     refine ⟨label, ?_⟩
-    show lts.step (next^[i] s) label (next^[i + 1] s)
+    show lts.Tr (next^[i] s) label (next^[i + 1] s)
     rwa [Function.iterate_succ_apply']
   · refine Or.inl ⟨fun n => next^[n] s, rfl, ?_⟩
     intro i
-    have hsucc : ∃ label t, lts.step (next^[i] s) label t := by
+    have hsucc : ∃ label t, lts.Tr (next^[i] s) label t := by
       by_contra hcon
       push Not at hcon
       exact hdead ⟨i, hcon⟩
     obtain ⟨label, hstep⟩ := hnext _ hsucc
     refine ⟨label, ?_⟩
-    show lts.step (next^[i] s) label (next^[i + 1] s)
+    show lts.Tr (next^[i] s) label (next^[i + 1] s)
     rwa [Function.iterate_succ_apply']
 
 namespace Satisfies
@@ -123,8 +124,8 @@ namespace Satisfies
 /-- `¬EX ⊤` holds exactly at deadlocked states. -/
 theorem not_existsNext_top_iff {s : State} :
     Satisfies lts valuation s (.not (.existsNext .top)) ↔
-      ∀ label t, ¬lts.step s label t := by
-  show ¬(∃ label t, lts.step s label t ∧ True) ↔ _
+      ∀ label t, ¬lts.Tr s label t := by
+  show ¬(∃ label t, lts.Tr s label t ∧ True) ↔ _
   constructor
   · intro h label t hstep
     exact h ⟨label, t, hstep, trivial⟩
@@ -138,7 +139,7 @@ theorem forallUntil_bad_iff {φ ψ : Formula Atom} {t : State} :
         (.and (.not ψ) (Formula.or (.not φ) (.not (.existsNext .top)))) ↔
       ¬Satisfies lts valuation t ψ ∧
         (¬Satisfies lts valuation t φ ∨
-          ∀ label u, ¬lts.step t label u) := by
+          ∀ label u, ¬lts.Tr t label u) := by
   rw [and_iff, or_iff, not_existsNext_top_iff, not_iff, not_iff]
 
 /-- The forward direction of the one-step expansion of `A[φ U ψ]`: if
@@ -150,8 +151,8 @@ proved by prepending the step to maximal paths from the successor;
 theorem forallUntil_expansion_forward {s : State} {φ ψ : Formula Atom}
     (hAU : Satisfies lts valuation s (.forallUntil φ ψ)) :
     Satisfies lts valuation s ψ ∨
-      (Satisfies lts valuation s φ ∧ (∃ label t, lts.step s label t) ∧
-        ∀ label t, lts.step s label t →
+      (Satisfies lts valuation s φ ∧ (∃ label t, lts.Tr s label t) ∧
+        ∀ label t, lts.Tr s label t →
           Satisfies lts valuation t (.forallUntil φ ψ)) := by
   classical
   by_cases hψ : Satisfies lts valuation s ψ
@@ -183,7 +184,7 @@ theorem forallUntil_expansion_forward {s : State} {φ ψ : Formula Atom}
           cases i with
           | zero =>
               refine ⟨label, ?_⟩
-              show lts.step s label (ss 0)
+              show lts.Tr s label (ss 0)
               rw [h0]
               exact hstep
           | succ i => exact hrun i
@@ -201,7 +202,7 @@ theorem forallUntil_expansion_forward {s : State} {φ ψ : Formula Atom}
           cases i with
           | zero =>
               refine ⟨label, ?_⟩
-              show lts.step s label (ss 0)
+              show lts.Tr s label (ss 0)
               rw [h0]
               exact hstep
           | succ i => exact hrun i (by omega)
@@ -285,7 +286,7 @@ theorem forallUntil_iff_not {s : State} {φ ψ : Formula Atom} :
             (fun hnφ => hcon2 ⟨j, hj, hnφ⟩)
         obtain ⟨j0, hj0k, hnotφ⟩ := hexbad
         refine Or.inl ⟨ss, j0, h0,
-          Semantics.LTS.omegaRun_finiteRun hrun, ?_, ?_⟩
+          LTS.omegaRun_finiteRun hrun, ?_, ?_⟩
         · exact forallUntil_bad_iff.mpr ⟨hkmin j0 hj0k, Or.inl hnotφ⟩
         · intro i hi
           exact hkmin i (by omega)
@@ -306,7 +307,7 @@ theorem forallUntil_iff_not {s : State} {φ ψ : Formula Atom} :
             (fun hnφ => hcon2 ⟨j, hj, hnφ⟩)
         obtain ⟨j0, hj0k, hnotφ⟩ := hexbad
         refine Or.inl ⟨ss, j0, h0,
-          Semantics.LTS.finiteRun_mono hrun (by omega), ?_, ?_⟩
+          LTS.finiteRun_mono hrun (by omega), ?_, ?_⟩
         · exact forallUntil_bad_iff.mpr ⟨hmin' j0 hj0k, Or.inl hnotφ⟩
         · intro i hi
           exact hmin' i (by omega)
@@ -315,7 +316,7 @@ theorem forallUntil_iff_not {s : State} {φ ψ : Formula Atom} :
         by_cases hbad : ∃ j, j ≤ k ∧ ¬Satisfies lts valuation (ss j) φ
         · obtain ⟨j0, hj0le, hnotφ⟩ := hbad
           refine Or.inl ⟨ss, j0, h0,
-            Semantics.LTS.finiteRun_mono hrun hj0le, ?_, ?_⟩
+            LTS.finiteRun_mono hrun hj0le, ?_, ?_⟩
           · exact forallUntil_bad_iff.mpr
               ⟨hnoψ j0 hj0le, Or.inl hnotφ⟩
           · intro i hi
@@ -370,13 +371,13 @@ theorem existsNext_iff_preExists {s : State} {φ : Formula Atom} :
       PreExists lts (fun t => Satisfies lts valuation t φ) s := Iff.rfl
 
 /-- The functional whose least fixed point is `E[φ U ψ]`. -/
-def existsUntilFun (lts : Semantics.LTS State Label)
+def existsUntilFun (lts : LTS State Label)
     (valuation : State → Atom → Prop) (φ ψ : Formula Atom)
     (Z : State → Prop) : State → Prop :=
   fun s => Satisfies lts valuation s ψ ∨
     (Satisfies lts valuation s φ ∧ PreExists lts Z s)
 
-theorem existsUntilFun_mono (lts : Semantics.LTS State Label)
+theorem existsUntilFun_mono (lts : LTS State Label)
     (valuation : State → Atom → Prop) (φ ψ : Formula Atom) :
     Monotone (existsUntilFun lts valuation φ ψ) := by
   intro Z₁ Z₂ hle s hs
@@ -385,7 +386,7 @@ theorem existsUntilFun_mono (lts : Semantics.LTS State Label)
   · exact Or.inr ⟨hφ, label, t, hstep, hle t hZ⟩
 
 /-- The `EU` functional packaged as a monotone operator. -/
-def existsUntilOrderHom (lts : Semantics.LTS State Label)
+def existsUntilOrderHom (lts : LTS State Label)
     (valuation : State → Atom → Prop) (φ ψ : Formula Atom) :
     (State → Prop) →o (State → Prop) :=
   ⟨existsUntilFun lts valuation φ ψ,
@@ -422,7 +423,7 @@ theorem existsUntil_eq_lfp (φ ψ : Formula Atom) :
             have hcomm : (1 : ℕ) + n = n + 1 := by omega
             rwa [hcomm]
           exact ih (Semantics.shiftSeq ss 1)
-            (Semantics.LTS.finiteRun_shift hrun') hψ
+            (LTS.finiteRun_shift hrun') hψ
             (fun j hj => hφ (j + 1) (by omega))
     have hs0 := key k ss hrun hψ hφ
     rwa [h0] at hs0
@@ -440,21 +441,21 @@ variable {State Label Atom : Type*}
 
 variable [Fintype State]
 
-variable [Fintype Label] {lts : Semantics.LTS State Label}
+variable [Fintype Label] {lts : LTS State Label}
   {valuation : State → Atom → Prop}
-variable [∀ s μ t, Decidable (lts.step s μ t)]
+variable [∀ s μ t, Decidable (lts.Tr s μ t)]
 
 /-- The finite existential predecessor set: states with a step into
 `Z`.  It computes `PreExists` of the membership predicate of `Z`
 (`mem_preExistsFin`). -/
-def preExistsFin (lts : Semantics.LTS State Label)
-    [∀ s μ t, Decidable (lts.step s μ t)] (Z : Finset State) :
+def preExistsFin (lts : LTS State Label)
+    [∀ s μ t, Decidable (lts.Tr s μ t)] (Z : Finset State) :
     Finset State :=
-  Finset.univ.filter (fun s => ∃ μ, ∃ t ∈ Z, lts.step s μ t)
+  Finset.univ.filter (fun s => ∃ μ, ∃ t ∈ Z, lts.Tr s μ t)
 
 theorem mem_preExistsFin {Z : Finset State} {s : State} :
     s ∈ preExistsFin lts Z ↔ PreExists lts (fun t => t ∈ Z) s := by
-  show s ∈ Finset.univ.filter (fun s => ∃ μ, ∃ t ∈ Z, lts.step s μ t) ↔
+  show s ∈ Finset.univ.filter (fun s => ∃ μ, ∃ t ∈ Z, lts.Tr s μ t) ↔
     PreExists lts (fun t => t ∈ Z) s
   simp only [Finset.mem_filter, Finset.mem_univ, true_and]
   constructor
@@ -475,28 +476,28 @@ variable [DecidableEq State]
 /-- The finite set of states satisfying an existential until with side
 set `A` and target set `B`, as the least fixed point of
 `Z ↦ B ∪ (A ∩ preExistsFin Z)`. -/
-def eUntilFin (lts : Semantics.LTS State Label)
-    [∀ s μ t, Decidable (lts.step s μ t)] (A B : Finset State) :
+def eUntilFin (lts : LTS State Label)
+    [∀ s μ t, Decidable (lts.Tr s μ t)] (A B : Finset State) :
     Finset State :=
   Finset.lfpFin (fun Z => B ∪ (A ∩ preExistsFin lts Z))
 
 /-- The finite set of states satisfying an existential globally with
 set `A`, as the greatest fixed point of `Z ↦ A ∩ preExistsFin Z`. -/
-def eGloballyFin (lts : Semantics.LTS State Label)
-    [∀ s μ t, Decidable (lts.step s μ t)] (A : Finset State) :
+def eGloballyFin (lts : LTS State Label)
+    [∀ s μ t, Decidable (lts.Tr s μ t)] (A : Finset State) :
     Finset State :=
   Finset.gfpFin (fun Z => A ∩ preExistsFin lts Z)
 
-theorem eUntilFin_fun_mono (lts : Semantics.LTS State Label)
-    [∀ s μ t, Decidable (lts.step s μ t)] (A B : Finset State) :
+theorem eUntilFin_fun_mono (lts : LTS State Label)
+    [∀ s μ t, Decidable (lts.Tr s μ t)] (A B : Finset State) :
     Monotone (fun Z => B ∪ (A ∩ preExistsFin lts Z)) := by
   intro Z₁ Z₂ hZ
   exact Finset.union_subset_union (Finset.Subset.refl _)
     (Finset.inter_subset_inter (Finset.Subset.refl _)
       (preExistsFin_mono hZ))
 
-theorem eGloballyFin_fun_mono (lts : Semantics.LTS State Label)
-    [∀ s μ t, Decidable (lts.step s μ t)] (A : Finset State) :
+theorem eGloballyFin_fun_mono (lts : LTS State Label)
+    [∀ s μ t, Decidable (lts.Tr s μ t)] (A : Finset State) :
     Monotone (fun Z => A ∩ preExistsFin lts Z) := by
   intro Z₁ Z₂ hZ
   exact Finset.inter_subset_inter (Finset.Subset.refl _)
@@ -562,9 +563,9 @@ deadlock-correct duality of `Satisfies.forallUntil_iff_not` (the
 bad-target set is built from the complement sets of the subformulas
 and `preExistsFin lts Finset.univ`, the set of non-deadlocked
 states). -/
-def sat (lts : Semantics.LTS State Label)
+def sat (lts : LTS State Label)
     (valuation : State → Atom → Prop)
-    [∀ s μ t, Decidable (lts.step s μ t)]
+    [∀ s μ t, Decidable (lts.Tr s μ t)]
     [∀ s a, Decidable (valuation s a)] :
     Formula Atom → Finset State
   | .atom a => Finset.univ.filter (fun s => valuation s a)
@@ -619,9 +620,9 @@ theorem mem_sat {φ : Formula Atom} {s : State} :
       show s ∈ preExistsFin lts (sat lts valuation φ) ↔
         Satisfies lts valuation s (.existsNext φ)
       rw [mem_preExistsFin, Satisfies.existsNext_iff]
-      show (∃ label t, lts.step s label t ∧
+      show (∃ label t, lts.Tr s label t ∧
           t ∈ sat lts valuation φ) ↔
-        (∃ label t, lts.step s label t ∧
+        (∃ label t, lts.Tr s label t ∧
           Satisfies lts valuation t φ)
       constructor <;> rintro ⟨label, t, hstep, ht⟩
       · exact ⟨label, t, hstep, (ih (s := t)).mp ht⟩
@@ -674,9 +675,9 @@ theorem mem_sat {φ : Formula Atom} {s : State} :
 
 /-- The model checker as a boolean decision procedure: decide
 membership in the computed satisfaction set. -/
-def check (lts : Semantics.LTS State Label)
+def check (lts : LTS State Label)
     (valuation : State → Atom → Prop)
-    [∀ s μ t, Decidable (lts.step s μ t)]
+    [∀ s μ t, Decidable (lts.Tr s μ t)]
     [∀ s a, Decidable (valuation s a)] (s : State)
     (φ : Formula Atom) : Bool :=
   decide (s ∈ sat lts valuation φ)

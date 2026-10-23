@@ -29,11 +29,11 @@ namespace Cslib.Algorithms.Concurrency.DiningPhilosophers.Tests
 open Cslib.CTL
 
 /-- The deadlocking schedule of the naive protocol. -/
-example : (lts naive).step initial 0 (1, 0, 0) ∧ (lts naive).step (1, 0, 0) 1 (1, 1, 0) ∧
-    (lts naive).step (1, 1, 0) 2 (1, 1, 1) := by decide
+example : (lts naive).Tr initial 0 (1, 0, 0) ∧ (lts naive).Tr (1, 0, 0) 1 (1, 1, 0) ∧
+    (lts naive).Tr (1, 1, 0) 2 (1, 1, 1) := by decide
 
 /-- In the deadlock nobody can move. -/
-example (i : Fin 3) (t : State) : ¬ (lts naive).step (1, 1, 1) i t := by
+example (i : Fin 3) (t : State) : ¬ (lts naive).Tr (1, 1, 1) i t := by
   revert i t; decide
 
 example : ordered.first 2 = 0 ∧ ordered.second 2 = 2 := by decide
@@ -45,7 +45,7 @@ example : ¬ Satisfies (lts ordered) eating initial (Formula.existsFinally deadl
 
 /-- The state where everybody holds its first fork is not reachable under the
 ordered protocol: philosophers `0` and `2` both start with fork `0`. -/
-example : ¬ (lts ordered).step (1, 1, 0) 2 (1, 1, 1) := by decide
+example : ¬ (lts ordered).Tr (1, 1, 0) 2 (1, 1, 1) := by decide
 
 /-- Starvation without fairness: philosopher `0` need not eat on every path. -/
 example : ¬ Satisfies (lts ordered) eating initial (Formula.forallFinally (.atom 0)) := by

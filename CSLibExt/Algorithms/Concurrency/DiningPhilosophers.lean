@@ -67,12 +67,16 @@ def setPhase (s : State) (i : Fin 3) (p : Fin 3) : State :=
   | 2 => (s.1, s.2.1, p)
 
 /-- A protocol: the fork each philosopher picks up first and the one it picks
-up second (its two neighbouring forks, `i` and `i + 1`, in some order). -/
+up second.  The two forks of philosopher `i` are its two neighbouring forks,
+`i` and `i + 1`, in some order (the `neighbours` invariant). -/
 structure Protocol where
   /-- The fork picked up first. -/
   first : Fin 3 → Fin 3
   /-- The fork picked up second. -/
   second : Fin 3 → Fin 3
+  /-- The two forks are the two neighbouring forks, in some order. -/
+  neighbours : ∀ i, (first i = i ∧ second i = i + 1) ∨
+    (first i = i + 1 ∧ second i = i)
 
 /-- Whether fork `f` is held by some philosopher. -/
 def held (P : Protocol) (s : State) (f : Fin 3) : Bool :=
@@ -94,11 +98,11 @@ def move (s : State) (i : Fin 3) : State :=
 
 /-- The transition system of a protocol; the label is the philosopher that
 moves. -/
-def lts (P : Protocol) : Semantics.LTS State (Fin 3) where
-  step s i t := canMove P s i = true ∧ t = move s i
+def lts (P : Protocol) : LTS State (Fin 3) where
+  Tr s i t := canMove P s i = true ∧ t = move s i
 
 instance (P : Protocol) (s : State) (i : Fin 3) (t : State) :
-    Decidable ((lts P).step s i t) :=
+    Decidable ((lts P).Tr s i t) :=
   inferInstanceAs (Decidable (_ ∧ _))
 
 /-- The atom `i` holds when philosopher `i` eats. -/
@@ -111,10 +115,11 @@ instance (s : State) (i : Fin 3) : Decidable (eating s i) :=
 def initial : State := (0, 0, 0)
 
 /-- Everybody picks up the left fork first. -/
-def naive : Protocol := ⟨fun i => i, fun i => i + 1⟩
+def naive : Protocol := ⟨fun i => i, fun i => i + 1, fun _ => Or.inl ⟨rfl, rfl⟩⟩
 
 /-- Everybody picks up the lower-numbered fork first. -/
-def ordered : Protocol := ⟨fun i => min i (i + 1), fun i => max i (i + 1)⟩
+def ordered : Protocol :=
+  ⟨fun i => min i (i + 1), fun i => max i (i + 1), by decide⟩
 
 /-- A deadlock: no philosopher can move. -/
 def deadlock : Formula (Fin 3) := .not (.existsNext .top)

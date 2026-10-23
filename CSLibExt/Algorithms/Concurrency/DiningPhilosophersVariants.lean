@@ -53,10 +53,10 @@ def moveAtomic (s : State) (i : Fin 3) : State :=
   setPhase s i (if (phase s i).val = 0 then 2 else 0)
 
 /-- The transition system with atomic acquisition of both forks. -/
-def atomicLts : Semantics.LTS State (Fin 3) where
-  step s i t := canMoveAtomic s i = true ∧ t = moveAtomic s i
+def atomicLts : LTS State (Fin 3) where
+  Tr s i t := canMoveAtomic s i = true ∧ t = moveAtomic s i
 
-instance (s : State) (i : Fin 3) (t : State) : Decidable (atomicLts.step s i t) :=
+instance (s : State) (i : Fin 3) (t : State) : Decidable (atomicLts.Tr s i t) :=
   inferInstanceAs (Decidable (_ ∧ _))
 
 /-- The number of philosophers holding at least one fork. -/
@@ -69,10 +69,10 @@ def canMoveButler (s : State) (i : Fin 3) : Bool :=
   canMove naive s i && ((phase s i).val != 0 || decide (seated s < 2))
 
 /-- The transition system of the naive protocol under a butler. -/
-def butlerLts : Semantics.LTS State (Fin 3) where
-  step s i t := canMoveButler s i = true ∧ t = move s i
+def butlerLts : LTS State (Fin 3) where
+  Tr s i t := canMoveButler s i = true ∧ t = move s i
 
-instance (s : State) (i : Fin 3) (t : State) : Decidable (butlerLts.step s i t) :=
+instance (s : State) (i : Fin 3) (t : State) : Decidable (butlerLts.Tr s i t) :=
   inferInstanceAs (Decidable (_ ∧ _))
 
 /-- **Atomic acquisition prevents deadlock.** -/

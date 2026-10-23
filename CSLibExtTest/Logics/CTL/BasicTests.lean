@@ -15,8 +15,8 @@ public import CSLibExt.Logics.CTL.Basic
 namespace Cslib.CTL.BasicTests
 
 /-- The toggle system: two states, each stepping to the other. -/
-def toggleLTS : Semantics.LTS Bool Unit where
-  step b _ b' := b' = !b
+def toggleLTS : LTS Bool Unit where
+  Tr b _ b' := b' = !b
 
 /-- The unique atom holds exactly at `true`. -/
 def toggleVal : Bool → Unit → Prop := fun b _ => b = true
@@ -35,7 +35,7 @@ example : Satisfies toggleLTS toggleVal true (.existsGlobally .top) :=
 example : Satisfies toggleLTS toggleVal false
     (Formula.existsFinally (.atom ())) := by
   rw [Satisfies.existsFinally_iff_reachable]
-  exact ⟨true, ⟨[()], .cons rfl (.nil _)⟩, rfl⟩
+  exact ⟨true, ⟨[()], .stepL rfl .refl⟩, rfl⟩
 
 example : Satisfies toggleLTS toggleVal false (.existsNext (.atom ())) :=
   ⟨(), true, rfl, rfl⟩
@@ -60,7 +60,7 @@ example : ¬Satisfies toggleLTS toggleVal true
     (Formula.forallGlobally (.atom ())) := by
   rw [Satisfies.forallGlobally_iff_reachable]
   intro h
-  have hfalse := h false ⟨[()], .cons rfl (.nil _)⟩
+  have hfalse := h false ⟨[()], .stepL rfl .refl⟩
   cases hfalse
 
 example : Satisfies toggleLTS toggleVal false
@@ -76,8 +76,8 @@ example : Satisfies toggleLTS toggleVal false
   exact hall 1 h1
 
 /-- The counter system: natural numbers stepping to their successor. -/
-def counterLTS : Semantics.LTS Nat Unit where
-  step n _ m := m = n + 1
+def counterLTS : LTS Nat Unit where
+  Tr n _ m := m = n + 1
 
 /-- The atom `a` holds exactly at the state `a`. -/
 def counterVal : Nat → Nat → Prop := fun n a => n = a
@@ -90,15 +90,15 @@ example : Satisfies counterLTS counterVal 0
     (Formula.existsFinally (.atom 5)) := by
   rw [Satisfies.existsFinally_iff_reachable]
   exact ⟨5, ⟨[(), (), (), (), ()],
-    .cons rfl (.cons rfl (.cons rfl (.cons rfl (.cons rfl (.nil 5)))))⟩,
+    .stepL rfl (.stepL rfl (.stepL rfl (.stepL rfl (.stepL rfl .refl))))⟩,
     rfl⟩
 
 example : Satisfies counterLTS counterVal 0 (.existsGlobally .top) :=
   ⟨fun n => n, rfl, fun _ => ⟨(), rfl⟩, fun _ => trivial⟩
 
 /-- The deadlocked system: a single state with no transitions. -/
-def deadlockLTS : Semantics.LTS Unit Unit where
-  step _ _ _ := False
+def deadlockLTS : LTS Unit Unit where
+  Tr _ _ _ := False
 
 /-- No atom holds at the deadlocked state. -/
 def deadlockVal : Unit → Unit → Prop := fun _ _ => False
@@ -108,7 +108,7 @@ def deadlockValTrue : Unit → Unit → Prop := fun _ _ => True
 
 /-- The unique state of `deadlockLTS` is deadlocked. -/
 theorem deadlock_dead :
-    ∀ label t, ¬deadlockLTS.step () label t := by
+    ∀ label t, ¬deadlockLTS.Tr () label t := by
   simp [deadlockLTS]
 
 example (φ : Formula Unit) :
@@ -130,7 +130,7 @@ example (φ : Formula Unit) :
     cases t
     exact hφ
   · intro hφ
-    exact ⟨(), Semantics.LTS.reachable_refl _, hφ⟩
+    exact ⟨(), LTS.reachable_refl _, hφ⟩
 
 /- Deadlock regression: under the classical `AU`/`AF` duality
 translations, `A[⊤ U ψ]` and `AF ψ` below would hold at this deadlocked

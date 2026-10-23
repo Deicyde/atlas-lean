@@ -26,16 +26,16 @@ namespace Cslib.Algorithms.Concurrency.DiningPhilosophers.VariantsTests
 
 open Cslib.CTL
 
-example : atomicLts.step initial 0 (2, 0, 0) := by decide
+example : atomicLts.Tr initial 0 (2, 0, 0) := by decide
 
 /-- Philosopher `1` cannot start while philosopher `0`, who holds fork `1`,
 eats. -/
-example (t : State) : ¬ atomicLts.step (2, 0, 0) 1 t := by
+example (t : State) : ¬ atomicLts.Tr (2, 0, 0) 1 t := by
   revert t; decide
 
 /-- The naive protocol lets philosopher `2` take its left fork while the other
 two hold theirs; the butler does not. -/
-example : (lts naive).step (1, 1, 0) 2 (1, 1, 1) ∧ ¬ butlerLts.step (1, 1, 0) 2 (1, 1, 1) := by
+example : (lts naive).Tr (1, 1, 0) 2 (1, 1, 1) ∧ ¬ butlerLts.Tr (1, 1, 0) 2 (1, 1, 1) := by
   decide
 
 /-- Starvation without fairness under atomic acquisition. -/
