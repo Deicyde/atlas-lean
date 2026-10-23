@@ -31,6 +31,19 @@ The binary accessibility relation is `m.rel`, and the atom valuation is `m.v`.
   semantic logic `Cslib.Logic.Modal.Unimodal.K World Atom` (respectively `T`, `S4`, `S5`) for
   every type of worlds. These model classes retain the same reflexivity, transitivity and
   right-Euclidean conditions on the binary relation.
+
+The translation is completed to a bidirectional equivalence below
+(`KripkeModel.toModel`, `KripkeModel.ofModel_toModel`,
+`KripkeModel.toModel_ofModel`, `Formula.toProposition`,
+`satisfies_toProposition`).  The local `Formula`/`KripkeModel` of
+`Kripke.lean` are retained because the Hilbert-system development
+(derivations in the `⊥`/`→`/`□` basis, canonical models, filtration in
+`Hilbert.lean`, `Canonical.lean`, `Filtration.lean`) is built over that
+concrete syntax and uses a bundled `Nonempty World` invariant, whereas
+CSLib's `Proposition`/`Model` are generic over a `PFunctor` signature
+with an `or`/`not`/`triangle` basis and possibly empty world types; the
+equivalence here shows the two presentations define the same unimodal
+semantics, so results transfer in both directions.
 -/
 
 namespace Cslib
@@ -84,6 +97,95 @@ theorem satisfies_ofProposition [Nonempty World]
       change m.toFrame.diagonal op = m.toFrame.diagonal default
       exact congrArg m.toFrame.diagonal (Subsingleton.elim op default)
     simpa only [hrel, KripkeModel.ofModel] using hsem.symm
+
+/-- A Kripke model as a CSLib unimodal model: the frame built from the
+accessibility relation, with the same valuation. -/
+def KripkeModel.toModel (k : KripkeModel World Atom) :
+    Logic.Modal.Unimodal.Model World Atom where
+  toFrame := Frame.ofRelation k.rel
+  v := k.valuation
+
+/-- From a Kripke model to a CSLib model and back is the identity (the
+`Nonempty World` instance, a proposition, agrees with the model's
+`nonempty_world` field by proof irrelevance). -/
+theorem KripkeModel.ofModel_toModel [Nonempty World] (k : KripkeModel World Atom) :
+    KripkeModel.ofModel (KripkeModel.toModel k) = k := by
+  cases k with
+  | mk hne rel val => rfl
+
+/-- From a CSLib model to a Kripke model and back is the identity: a
+unimodal frame is determined by its binary accessibility relation. -/
+theorem KripkeModel.toModel_ofModel [Nonempty World]
+    (m : Logic.Modal.Unimodal.Model World Atom) :
+    (KripkeModel.ofModel m).toModel = m := by
+  obtain ⟨f, v⟩ := m
+  have hframe : Frame.ofRelation (Frame.rel f) = f := by
+    cases f with
+    | mk r =>
+      congr 1
+  change (⟨Frame.ofRelation (Frame.rel f), v⟩ :
+    Logic.Modal.Unimodal.Model World Atom) = ⟨f, v⟩
+  rw [hframe]
+
+/-- Formulas in the `⊥`, `→`, `□` basis as CSLib unimodal propositions
+(`⊥ ↦ false`, `φ → ψ ↦ ¬φ ∨ ψ`, `□φ ↦ ¬◇¬φ`). -/
+def Formula.toProposition : Formula Atom → Logic.Modal.Unimodal.Proposition Atom
+  | .atom p => .atom p
+  | .bot => .false
+  | .imp phi psi => .or (.not (toProposition phi)) (toProposition psi)
+  | .box phi => .not (.triangle default (fun _ => .not (toProposition phi)))
+
+/-- The reverse translation also preserves satisfaction: a formula holds
+at a world of a Kripke model iff its translation holds there in the
+associated CSLib model.  Together with `satisfies_ofProposition` and the
+model round trips, the two presentations have the same unimodal
+semantics. -/
+theorem satisfies_toProposition (k : KripkeModel World Atom) (w : World)
+    (phi : Formula Atom) :
+    k.Satisfies w phi ↔ Logic.Modal.Satisfies k.toModel w (Formula.toProposition phi) := by
+  induction phi generalizing w with
+  | atom p => rfl
+  | bot => rfl
+  | imp phi psi ih₁ ih₂ =>
+    simp only [KripkeModel.satisfies_imp, Formula.toProposition,
+      Logic.Modal.Satisfies, ih₁, ih₂]
+    constructor
+    · intro h
+      exact Classical.byCases (fun hphi => Or.inr (h hphi)) (fun hphi => Or.inl hphi)
+    · rintro (hphi | hpsi) hphi'
+      · exact False.elim (hphi hphi')
+      · exact hpsi
+  | box phi ih =>
+    have hsem : Logic.Modal.Satisfies k.toModel w
+        (.triangle default (fun _ => .not (Formula.toProposition phi))) ↔
+        ∃ next, k.toModel.toFrame.diagonal default w next ∧
+          Logic.Modal.Satisfies k.toModel next
+            (.not (Formula.toProposition phi)) := by
+      rw [Logic.Modal.Proposition.triangle_def,
+        Logic.Modal.Proposition.unary_triangle_eq_dynDiamond]
+      exact Logic.Modal.Satisfies.dynDiamond_iff_exists
+    have hdiag : ∀ a b, k.toModel.toFrame.diagonal default a b ↔ k.rel a b := by
+      intro a b
+      rw [← Frame.rel_iff_diagonal]
+      show (Frame.ofRelation k.rel).rel a b ↔ k.rel a b
+      rw [Frame.ofRelation_rel]
+    rw [Formula.toProposition]
+    constructor
+    · intro hbox hcon
+      obtain ⟨next, hnext, hnot⟩ := hsem.mp hcon
+      exact hnot ((ih next).mp (hbox next ((hdiag w next).mp hnext)))
+    · intro h next hnext
+      exact Classical.byContradiction fun hnot =>
+        h (hsem.mpr ⟨next, (hdiag w next).mpr hnext,
+          fun hsat => hnot ((ih next).mpr hsat)⟩)
+
+/-- Validity transfers to the associated CSLib model under the reverse
+translation. -/
+theorem KripkeModel.valid_toProposition (k : KripkeModel World Atom)
+    (phi : Formula Atom) :
+    k.Valid phi ↔
+      ∀ w, Logic.Modal.Satisfies k.toModel w (Formula.toProposition phi) :=
+  forall_congr' fun w => satisfies_toProposition k w phi
 
 /-- A proposition whose translation is valid in the Kripke model of every CSLib model in a class
 belongs to CSLib's semantic logic of that class. -/
