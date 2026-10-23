@@ -31,25 +31,22 @@ openbmb/MA-ProofBench), distributed under the MIT License above. Changes made: c
 and placed the declarations in namespace
 `MathlibExt.Analysis.OperatorTheory.NormApplyLeHilbertSchmidtNormWanted`; replaced `import
 Mathlib` by `public import Mathlib` under the module system; added docstrings to helper
-definitions.
+definitions; replaced the real-valued helper `hsNorm` (which is `0` when the defining series
+diverges) by the shared `ℝ≥0∞`-valued `HilbertSchmidtNorm.hsENNNorm` and dropped the
+divergence disjunct from the conclusion (with the extended-valued norm the bound holds as
+stated, trivially when the Hilbert–Schmidt norm is `⊤`).
 -/
 module
 
 public import Batteries.Util.ProofWanted
 public import Mathlib
+public import WantedExt.Analysis.OperatorTheory.HilbertSchmidtNorm
 
 @[expose] public section
 
 open scoped BigOperators
 
 namespace MathlibExt.Analysis.OperatorTheory.NormApplyLeHilbertSchmidtNormWanted
-
-/-- `(∑' n, ‖T (u n)‖ ^ 2) ^ (1 / 2)`, the Hilbert–Schmidt norm of `T` computed in the family `u`.
--/
-noncomputable def hsNorm
-    {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℝ H]
-    (T : H →L[ℝ] H) (u : ℕ → H) : ℝ :=
-  Real.sqrt (∑' n : ℕ, ‖T (u n)‖ ^ 2)
 
 /-- Let $H$ be an infinite-dimensional separable Hilbert space, and $T:H\to H$ a bounded operator.
 The operator norm and Hilbert-Schmidt norm of $T$ are
@@ -60,6 +57,10 @@ The operator norm and Hilbert-Schmidt norm of $T$ are
 where $\{u_i\}_{i=1}^{\infty}$ is any fixed orthonormal basis of $H$.
 Show that $\|Tx\|\le \|T\|_{\mathrm{HS}}$ for any $x\in H$ with $\|x\|=1$.
 
+Here $\|T\|_{\mathrm{HS}}$ is taken in $\mathbb{R}_{\ge 0}\cup\{\infty\}$
+(`HilbertSchmidtNorm.hsENNNorm`): it is $+\infty$ when $\sum_i\|Tu_i\|^2$ diverges, and
+the bound is then trivial.
+
 Source: MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Operator theory; Special
 classes of linear operators), `benchmark/level2/ma_proofbench_l2_68.lean` at
 openbmb/ma-proofbench@31bab4c.
@@ -68,7 +69,6 @@ public theorem_wanted norm_apply_le_hsNorm_of_norm_eq_one
     (H : Type*) [NormedAddCommGroup H] [InnerProductSpace ℝ H] [CompleteSpace H]
     (T : H →L[ℝ] H)
     (u : HilbertBasis ℕ ℝ H) :
-    (∑' n : ℕ, ENNReal.ofReal (‖T (u n)‖ ^ 2)) = ⊤ ∨
-      (∀ x : H, ‖x‖ = 1 → ‖T x‖ ≤ hsNorm T u)
+    ∀ x : H, ‖x‖ = 1 → ENNReal.ofReal ‖T x‖ ≤ HilbertSchmidtNorm.hsENNNorm T u
 
 end MathlibExt.Analysis.OperatorTheory.NormApplyLeHilbertSchmidtNormWanted
