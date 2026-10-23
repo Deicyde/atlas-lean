@@ -182,33 +182,44 @@ theorem odometerDigitPartialSum_zero (q : ℂ) (ω : ℕ → Fin 2) :
     odometerDigitPartialSum q ω 0 = 0 := by
   simp [odometerDigitPartialSum]
 
-/-- The canonical normalizing coefficient of the fluctuation
-`t ↦ S_{q,ω}(t l) - t S_{q,ω}(l)` on `[0, 1]`: its maximal absolute value, set to `1` when
-that maximum is `0`.
-
-Source: Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*,
-INTEGERS 26 (2026), Article A61, Section 3 (definition of the normalization factor `R_n`),
-and *Limiting curves for the dyadic odometer and the generalized Trollope-Delange formula*,
-equation (4) (the normalizing coefficient is "canonically defined to be equal to the
-maximum"). -/
-noncomputable def odometerNormalizingCoeff (q : ℂ) (ω : ℕ → Fin 2) (l : ℕ) : ℝ :=
-  let M := ⨆ t : Set.Icc (0 : ℝ) 1,
-    ‖odometerDigitPartialSum q ω ((t : ℝ) * (l : ℝ)) -
-      (t : ℝ) * odometerDigitPartialSum q ω (l : ℝ)‖
-  if M = 0 then 1 else M
-
-/-- A **stabilizing sequence** for `(q, ω)` with limiting curve `φ`: a sequence `l_n` of
-positive integers tending to infinity such that, with `R_n` the canonical normalizing
-coefficient (`odometerNormalizingCoeff`) at scale `l_n`, the normalized fluctuations
-`(S_{q,ω}(t l_n) - t S_{q,ω}(l_n)) / R_n` converge uniformly on `[0, 1]` to the continuous
-function `φ`. The sequence `R_n` is then called a **normalizing sequence**.
+/-- The maximal absolute fluctuation of `t ↦ S_{q,ω}(t l) - t S_{q,ω}(l)` on `[0, 1]`.
+This is the scale of the *canonical* normalizing coefficient of the sources: "the
+normalizing coefficient `R_n` is canonically defined to be equal to the maximum in
+`t ∈ [0, 1]` of `|𝒮(t·l_n(x)) - t·𝒮(l_n)|`".
 
 Source: Aleksei Minabutdinov, *Limiting curves for the dyadic odometer and the generalized
-Trollope-Delange formula*, Definition 1, restated in *A q-Weighted Analogue of the
-Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 3. -/
+Trollope-Delange formula*, Section 2.2 (definition of `φ_n` and `R_n`), and *A q-Weighted
+Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 3
+(definition of the normalization factor `R_n`). -/
+noncomputable def odometerMaxFluctuation (q : ℂ) (ω : ℕ → Fin 2) (l : ℕ) : ℝ :=
+  ⨆ t : Set.Icc (0 : ℝ) 1,
+    ‖odometerDigitPartialSum q ω ((t : ℝ) * (l : ℝ)) -
+      (t : ℝ) * odometerDigitPartialSum q ω (l : ℝ)‖
+
+/-- A **stabilizing sequence** for `(q, ω)` with **normalizing sequence** `R` and limiting
+curve `φ`: a sequence `l_n` of positive integers tending to infinity and a sequence `R_n`
+of nonzero scalars, unbounded in absolute value and eventually of the same order as the
+canonical coefficient `odometerMaxFluctuation q ω (l n)`, such that the normalized
+fluctuations `(S_{q,ω}(t l_n) - t S_{q,ω}(l_n)) / R_n` converge uniformly on `[0, 1]` to
+the continuous function `φ`.
+
+`R` is a *chosen* sequence of the canonical order, not forced to equal the maximal
+fluctuation: with that equality every normalized fluctuation would have sup-norm `≤ 1`,
+so the limit in Theorem 2 below could not be `-𝒯_a` (for example `𝒯_{3/4}(1/3) = 4/3`).
+This matches the sources' usage, where `φ^{l_n,R_n}` is parametrized by the chosen `R_n`
+(e.g. `R_n = (2q)^{n-1}` along `l_n = 2^n` in Article A61, Section 3); unbounded growth
+of `R_n` is the necessary condition for a limiting curve recorded in the odometer paper.
+
+Source: Aleksei Minabutdinov, *Limiting curves for the dyadic odometer and the generalized
+Trollope-Delange formula*, Definition 1 and Section 3.1, restated in *A q-Weighted
+Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 3. -/
 def IsStabilizingSeq (q : ℂ) (ω : ℕ → Fin 2) (l : ℕ → ℕ) (R : ℕ → ℂ) (φ : ℝ → ℂ) : Prop :=
   (∀ n, 0 < l n) ∧ Filter.Tendsto l Filter.atTop Filter.atTop ∧
-    (∀ n, R n = (odometerNormalizingCoeff q ω (l n) : ℂ)) ∧
+    (∀ n, R n ≠ 0) ∧
+    Filter.Tendsto (fun n => ‖R n‖) Filter.atTop Filter.atTop ∧
+    (∃ c C : ℝ, 0 < c ∧ ∀ᶠ n in Filter.atTop,
+      c * odometerMaxFluctuation q ω (l n) ≤ ‖R n‖ ∧
+        ‖R n‖ ≤ C * odometerMaxFluctuation q ω (l n)) ∧
     ContinuousOn φ (Set.Icc 0 1) ∧
     TendstoUniformlyOn
       (fun n (t : ℝ) => (odometerDigitPartialSum q ω (t * l n) -
@@ -217,8 +228,9 @@ def IsStabilizingSeq (q : ℂ) (ω : ℕ → Fin 2) (l : ℕ → ℕ) (R : ℕ �
 
 /-- **Theorem 2** (quoted from the author's earlier work): for `1/2 < |q| < 1` and Haar-almost
 every `ω ∈ ℤ₂` there are a stabilizing sequence `l_n` of positive integers and a normalizing
-sequence `R_n` (in the sense of `IsStabilizingSeq`, with the canonical normalization) such
-that `φ^{l_n,R_n}_{q,ω}(t) = (S_{q,ω}(t l_n) - t S_{q,ω}(l_n))/R_n` converges uniformly on
+sequence `R_n` (in the sense of `IsStabilizingSeq`: nonzero, unbounded, and of the order
+of the maximal fluctuation) such that
+`φ^{l_n,R_n}_{q,ω}(t) = (S_{q,ω}(t l_n) - t S_{q,ω}(l_n))/R_n` converges uniformly on
 `[0, 1]` to `-𝒯_a` with `a = 1/(2q)`.
 
 Source: Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*,
