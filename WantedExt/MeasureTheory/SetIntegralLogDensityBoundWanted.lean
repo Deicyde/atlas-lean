@@ -30,7 +30,10 @@ openbmb/MA-ProofBench), distributed under the MIT License above. Changes made: c
 `setIntegral_log_le_measure_mul_log_inv_measure`; moved the informal problem statement docstring
 onto it and placed the declarations in namespace
 `MathlibExt.MeasureTheory.SetIntegralLogDensityBoundWanted`; replaced `import Mathlib` by
-`public import Mathlib` under the module system.
+`public import Mathlib` under the module system; added the hypothesis that `log f` is
+integrable on `E` and stated the inequality directly (the source statement concluded with the
+disjunction `(IntegrableOn … ∧ inequality) ∨ ¬IntegrableOn …`, which asserts nothing in the
+nonintegrable case, where the integral is `-∞`).
 -/
 module
 
@@ -46,11 +49,17 @@ namespace MathlibExt.MeasureTheory.SetIntegralLogDensityBoundWanted
 variable {X : Type*} [MeasurableSpace X] (μ : Measure X)
 
 /-- Suppose $\mu$ is a positive measure on $X$ and $f:X\to(0,\infty)$ satisfies $\int_X f\,d\mu=1$.
-Prove, for every $E\subset X$ with $0<\mu(E)<\infty$, that
+Prove, for every $E\subset X$ with $0<\mu(E)<\infty$ such that $\log f$ is integrable on $E$,
+that
 
 \[
 \int_E (\log f)\,d\mu \le \mu(E)\log\frac{1}{\mu(E)}
 \]
+
+The integrability of $\log f$ on $E$ is assumed so that the statement is real-valued: the
+positive part of $\log f$ is integrable on $E$ (since $(\log f)^{+}\le f$), so if $\log f$
+is not integrable on $E$ then $\int_E(\log f)\,d\mu=-\infty$ and the inequality holds in
+$\mathbb{R}\cup\{-\infty\}$.
 
 Source: MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Measure and integration;
 Classical measure theory), `benchmark/level1/ma_proofbench_l1_82.lean` at
@@ -62,9 +71,8 @@ public theorem_wanted setIntegral_log_le_measure_mul_log_inv_measure (f : X → 
     (hf_one : (∫ x, f x ∂μ) = 1)
     (E : Set X) (hE_meas : MeasurableSet E)
     (hE_pos : 0 < μ E)
-    (hE_fin : μ E < ⊤) :
-    (IntegrableOn (fun x => Real.log (f x)) E μ ∧
-    (∫ x in E, Real.log (f x) ∂μ) ≤ (μ E).toReal * Real.log (1 / (μ E).toReal))
-    ∨ ¬ IntegrableOn (fun x ↦ Real.log (f x)) E μ
+    (hE_fin : μ E < ⊤)
+    (hf_log_int : IntegrableOn (fun x => Real.log (f x)) E μ) :
+    (∫ x in E, Real.log (f x) ∂μ) ≤ (μ E).toReal * Real.log (1 / (μ E).toReal)
 
 end MathlibExt.MeasureTheory.SetIntegralLogDensityBoundWanted
