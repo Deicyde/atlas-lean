@@ -162,11 +162,8 @@ theorem nonempty_mulEquiv_dihedralGroup_of_card_eq_ten_of_not_isCyclic
     omega
   have houtside : ∀ g : G, g ∉ Subgroup.zpowers x → g ^ 2 = 1 :=
     outside_square_one G hG hnc x y hx5 hy2
-  have hH2 : 2 ≤ Nat.card (Subgroup.zpowers x) := by
-    rw [Nat.card_zpowers, hx5]
-    decide
   have h := nonempty_mulEquiv_dihedralGroup_of_index_eq_two
-    (Subgroup.zpowers x) (inferInstance : IsCyclic (Subgroup.zpowers x)) hindex houtside hH2
+    (Subgroup.zpowers x) (inferInstance : IsCyclic (Subgroup.zpowers x)) hindex houtside
   have hcard : Nat.card (Subgroup.zpowers x) = 5 := by
     rw [Nat.card_zpowers, hx5]
   rw [hcard] at h

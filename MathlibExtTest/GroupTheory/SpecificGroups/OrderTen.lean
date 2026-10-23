@@ -35,7 +35,7 @@ example : Nonempty (DihedralGroup 2 ≃* DihedralGroup 2) := by
         rw [hcast, mul_zero, DihedralGroup.r_zero]
     | sr i => rw [sq, DihedralGroup.sr_mul_self]
   have h := nonempty_mulEquiv_dihedralGroup_of_index_eq_two H
-    (inferInstance : IsCyclic H) hindex houtside (by omega)
+    (inferInstance : IsCyclic H) hindex houtside
   rw [hHcard] at h
   exact h
 
@@ -62,7 +62,7 @@ example : Nonempty (DihedralGroup 5 ≃* DihedralGroup 5) := by
         simpa [DihedralGroup.r_pow] using h
     | sr i => rw [sq, DihedralGroup.sr_mul_self]
   have h := nonempty_mulEquiv_dihedralGroup_of_index_eq_two H
-    (inferInstance : IsCyclic H) hindex houtside (by rw [hHcard]; decide)
+    (inferInstance : IsCyclic H) hindex houtside
   rw [hHcard] at h
   exact h
 
@@ -77,8 +77,22 @@ example (G : Type*) [Group G] [Fintype G] (hG : Fintype.card G = 10) (hnc : ¬Is
     Nonempty (G ≃* DihedralGroup 5) :=
   nonempty_mulEquiv_dihedralGroup_of_card_eq_ten_of_not_isCyclic G hG hnc
 
--- The generic constructor excludes a trivial rotation subgroup, and D₁ is cyclic.
-example : ¬ 2 ≤ Nat.card (⊥ : Subgroup (DihedralGroup 1)) := by simp
+-- The generic constructor also covers the boundary case of a trivial
+-- rotation subgroup: `DihedralGroup 1` from `⊥` (and D₁ is cyclic).
+example : Nonempty (DihedralGroup 1 ≃* DihedralGroup 1) := by
+  have h := nonempty_mulEquiv_dihedralGroup_of_index_eq_two
+    (⊥ : Subgroup (DihedralGroup 1)) inferInstance
+    (by rw [Subgroup.index_bot, DihedralGroup.nat_card]) (by
+      intro g _
+      cases g with
+      | r i =>
+        fin_cases i
+        decide
+      | sr i =>
+        fin_cases i
+        decide)
+  rwa [Nat.card_unique] at h
+
 example : IsCyclic (DihedralGroup 1) := DihedralGroup.isCyclic_iff.mpr rfl
 
 #print axioms nonempty_mulEquiv_dihedralGroup_of_index_eq_two

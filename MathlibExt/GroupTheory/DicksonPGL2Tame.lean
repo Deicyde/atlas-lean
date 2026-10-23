@@ -1255,7 +1255,7 @@ private lemma dickson_cyclic_or_dihedral_of_orbit_card_two
       have hHpos : 0 < Nat.card H := Nat.card_pos
       omega
     exact ⟨Nat.card H, hH2,
-      nonempty_mulEquiv_dihedralGroup_of_index_eq_two H hHcyc hindex houtside hH2⟩
+      nonempty_mulEquiv_dihedralGroup_of_index_eq_two H hHcyc hindex houtside⟩
 
 private lemma dickson_cyclic_or_dihedral_of_normal_cyclic_subgroup
     (G : Subgroup (PGL p)) [Finite G] (hG_tame : ¬p ∣ Nat.card G)

@@ -26,16 +26,15 @@ set_option autoImplicit false
 namespace MetaMathlibExt
 @[expose] public section
 
-/-- A finite group with a cyclic index-two subgroup of order at least two is dihedral
+/-- A finite group with a cyclic index-two subgroup is dihedral
 when every element outside that subgroup is an involution. -/
 theorem nonempty_mulEquiv_dihedralGroup_of_index_eq_two {G : Type*} [Group G] [Finite G]
     (H : Subgroup G) (hHcyc : IsCyclic H) (hindex : H.index = 2)
-    (houtside : ∀ g : G, g ∉ H → g ^ 2 = 1) (hH2 : 2 ≤ Nat.card H) :
+    (houtside : ∀ g : G, g ∉ H → g ^ 2 = 1) :
     Nonempty (G ≃* DihedralGroup (Nat.card H)) := by
   classical
   let n := Nat.card H
-  have hn : 2 ≤ n := hH2
-  let _ : NeZero n := ⟨by omega⟩
+  let _ : NeZero n := ⟨Nat.card_pos.ne'⟩
   let _ : H.Normal := Subgroup.normal_of_index_eq_two hindex
   have hHtop : H ≠ ⊤ := by
     intro h
