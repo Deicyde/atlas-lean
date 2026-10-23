@@ -182,21 +182,51 @@ theorem odometerDigitPartialSum_zero (q : ℂ) (ω : ℕ → Fin 2) :
     odometerDigitPartialSum q ω 0 = 0 := by
   simp [odometerDigitPartialSum]
 
+/-- The canonical normalizing coefficient of the fluctuation
+`t ↦ S_{q,ω}(t l) - t S_{q,ω}(l)` on `[0, 1]`: its maximal absolute value, set to `1` when
+that maximum is `0`.
+
+Source: Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*,
+INTEGERS 26 (2026), Article A61, Section 3 (definition of the normalization factor `R_n`),
+and *Limiting curves for the dyadic odometer and the generalized Trollope-Delange formula*,
+equation (4) (the normalizing coefficient is "canonically defined to be equal to the
+maximum"). -/
+noncomputable def odometerNormalizingCoeff (q : ℂ) (ω : ℕ → Fin 2) (l : ℕ) : ℝ :=
+  let M := ⨆ t : Set.Icc (0 : ℝ) 1,
+    ‖odometerDigitPartialSum q ω ((t : ℝ) * (l : ℝ)) -
+      (t : ℝ) * odometerDigitPartialSum q ω (l : ℝ)‖
+  if M = 0 then 1 else M
+
+/-- A **stabilizing sequence** for `(q, ω)` with limiting curve `φ`: a sequence `l_n` of
+positive integers tending to infinity such that, with `R_n` the canonical normalizing
+coefficient (`odometerNormalizingCoeff`) at scale `l_n`, the normalized fluctuations
+`(S_{q,ω}(t l_n) - t S_{q,ω}(l_n)) / R_n` converge uniformly on `[0, 1]` to the continuous
+function `φ`. The sequence `R_n` is then called a **normalizing sequence**.
+
+Source: Aleksei Minabutdinov, *Limiting curves for the dyadic odometer and the generalized
+Trollope-Delange formula*, Definition 1, restated in *A q-Weighted Analogue of the
+Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Section 3. -/
+def IsStabilizingSeq (q : ℂ) (ω : ℕ → Fin 2) (l : ℕ → ℕ) (R : ℕ → ℂ) (φ : ℝ → ℂ) : Prop :=
+  (∀ n, 0 < l n) ∧ Filter.Tendsto l Filter.atTop Filter.atTop ∧
+    (∀ n, R n = (odometerNormalizingCoeff q ω (l n) : ℂ)) ∧
+    ContinuousOn φ (Set.Icc 0 1) ∧
+    TendstoUniformlyOn
+      (fun n (t : ℝ) => (odometerDigitPartialSum q ω (t * l n) -
+        t * odometerDigitPartialSum q ω (l n)) / R n)
+      φ Filter.atTop (Set.Icc 0 1)
+
 /-- **Theorem 2** (quoted from the author's earlier work): for `1/2 < |q| < 1` and Haar-almost
 every `ω ∈ ℤ₂` there are a stabilizing sequence `l_n` of positive integers and a normalizing
-sequence `R_n` such that
-`φ^{l_n,R_n}_{q,ω}(t) = (S_{q,ω}(t l_n) - t S_{q,ω}(l_n))/R_n` converges uniformly on `[0, 1]`
-to `-𝒯_a` with `a = 1/(2q)`.
+sequence `R_n` (in the sense of `IsStabilizingSeq`, with the canonical normalization) such
+that `φ^{l_n,R_n}_{q,ω}(t) = (S_{q,ω}(t l_n) - t S_{q,ω}(l_n))/R_n` converges uniformly on
+`[0, 1]` to `-𝒯_a` with `a = 1/(2q)`.
 
 Source: Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*,
 INTEGERS 26 (2026), Article A61, Theorem 2 (`integers-2026-A61-thm-2`). -/
 public theorem_wanted odometer_limitingCurve_eq_neg_takagi (q : ℂ) (hq : 1 / 2 < ‖q‖)
     (hq1 : ‖q‖ < 1) :
-    ∀ᵐ ω ∂dyadicHaar, ∃ (l : ℕ → ℕ) (R : ℕ → ℂ), (∀ n, 0 < l n) ∧
-      TendstoUniformlyOn
-        (fun n (t : ℝ) => (odometerDigitPartialSum q ω (t * l n) -
-          t * odometerDigitPartialSum q ω (l n)) / R n)
-        (fun t => -takagiLandsberg (1 / (2 * q)) t) Filter.atTop (Set.Icc 0 1)
+    ∀ᵐ ω ∂dyadicHaar, ∃ (l : ℕ → ℕ) (R : ℕ → ℂ),
+      IsStabilizingSeq q ω l R (fun t => -takagiLandsberg (1 / (2 * q)) t)
 
 end
 
