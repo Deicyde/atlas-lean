@@ -18,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Mk partition Function mul pentagonal Series](../../../part-06/pentagonal-number/mk-partition-function-mul-pentagonal-ser.md)
-- [Partition Function](../../../part-06/pentagonal-number/partition-function.md)
+- [Mk partition Function mul pentagonal Series](../../../part-07/pentagonal-number/mk-partition-function-mul-pentagonal-ser.md)
+- [Partition Function](../../../part-07/pentagonal-number/partition-function.md)
 
 ## Sources
 

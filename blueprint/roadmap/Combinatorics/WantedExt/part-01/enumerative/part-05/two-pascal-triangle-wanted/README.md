@@ -1,0 +1,37 @@
+---
+navigation: module
+---
+
+# Two Pascal Triangle
+
+- [Theorem 1](riordan-array-sum-eq-coeff-subst.md)
+- [Theorem 3](trinomial-coefficient-eq-coeff.md)
+- [Theorem 9](sum-trinomial-coefficient-arith-prog.md)
+- [Corollary 10](trinomial-coefficient-alternating-sums-m.md)
+- [Corollary 11](sum-trinomial-coefficient-arith-prog-alt.md)
+- [Corollary 13](sum-trinomial-coefficient-even.md)
+- [Corollary 15](sum-trinomial-coefficient-odd.md)
+- [Theorem 16](sum-trinomial-coefficient-mul-choose-alt.md)
+- [Theorem 17](sum-trinomial-coefficient-mul-choose-eq.md)
+- [Theorem 18](sum-trinomial-coefficient-sub-mul-choose.md)
+- [Theorem 19](sum-trinomial-coefficient-two-mul-sub.md)
+- [Theorem 20](sum-trinomial-coefficient-convolution.md)
+- [Theorem 24](sum-trinomial-coefficient-sq-alternating.md)
+- [Theorem 26](sum-trinomial-coefficient-even-sq.md)
+- [Lemma 31](trinomial-coefficient-absorption.md)
+- [Theorem 32](sum-trinomial-coefficient-diagonal-weigh.md)
+- [Corollary 35](sum-trinomial-coefficient-diagonal-alter.md)
+- [Corollary 40](sum-trinomial-coefficient-upper-half.md)
+- [Theorem 38](trinomial-coefficient-eq-coeff-sqrt.md)
+- [Theorem 47](implicit-riordan-sum-inverse.md)
+- [Theorem 2](sum-choose-mul-coeff-eq-coeff-subst.md)
+- [Theorem 6](trinomial-coefficient-eq-coeff-alpha-mul.md)
+- [Theorem 7](sum-trinomial-coefficient-mul-coeff-eq-c.md)
+- [Theorem 21](sum-choose-gould-and-extended-trinomial.md)
+- [Theorem 23](sum-extended-trinomial-alternating-eq.md)
+- [Theorem 27](two-pow-mul-tribonacci-eq.md)
+- [Theorem 28](sum-trinomial-coefficient-diagonal-binet.md)
+- [Corollary 33](two-pow-mul-sum-trinomial-coefficient-di.md)
+- [Corollary 36](sum-trinomial-coefficient-diagonal-weigh-2.md)
+- [Corollary 42](sum-trinomial-coefficient-add-sub-eq-tri.md)
+- [Corollary 49](coeff-two-mul-eq-inverse-trinomial-trans.md)

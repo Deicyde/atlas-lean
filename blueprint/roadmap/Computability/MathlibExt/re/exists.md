@@ -8,8 +8,8 @@ lean: MetaMathlibExt.REPred.exists
 
 # Exists
 
-R.e. predicates are closed under (unbounded) existential projection: search over pairs of
-a candidate and a step bound, by dovetailing with `Nat.Partrec.Code.evaln`.
+R.e. predicates are closed under (unbounded) existential projection: the domain of the
+selection function `REPred.exists_partrec_choose`.
 
 ## Depends on
 

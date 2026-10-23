@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.IsKRegularSequence.two_le
+---
+
+# Two le
+
+A `k`-regular sequence has base `k ≥ 2`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.Words.RegularSequence](../../../../../../sources/v2/MathlibExt.md)
+- John M. Campbell and Benoît Cloitre, *Meta-Automatic Sequences*, Journal of Integer Sequences 29 (2026), Article 26.4.1, Lemma 28.

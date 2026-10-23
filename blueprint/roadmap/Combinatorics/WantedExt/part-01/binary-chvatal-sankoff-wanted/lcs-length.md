@@ -17,7 +17,7 @@ dynamic-programming implementation.
 
 ## Proof depends on
 
-- [Longest Common Subsequence](../../../../ComputerScience/CSLibExt/lean/dynamic-programming/longest-common-subsequence/longest-common-subsequence.md)
+- [Longest Common Subsequence](../../../../ComputerScience/CSLibExt/part-01/lean/part-01/dynamic-programming/longest-common-subsequence/longest-common-subsequence.md)
 
 ## Sources
 

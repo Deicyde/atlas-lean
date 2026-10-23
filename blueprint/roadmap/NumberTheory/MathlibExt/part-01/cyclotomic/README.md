@@ -5,6 +5,7 @@ article_id: af_77327e753dc06301bcd423db
 # Cyclotomic
 
 - [Cubic Residue Symbol](cubic-residue-symbol/README.md)
+- [Homogenized Cyclotomic](homogenized-cyclotomic/README.md)
 - [Intermediate Field](intermediate-field/README.md)
 - [Lehmer Coprime Index Minpoly](lehmer-coprime-index-minpoly/README.md)
 - [Lehmer Laurent Identity](lehmer-laurent-identity/README.md)

@@ -9,4 +9,5 @@ article_id: af_7fad17e48e1ca6f49133994d
 - [Coordinate Cross Polytope](volume-coordinate-cross-polytope.md)
 - [Coordinate Cube](volume-coordinate-cube.md)
 - [Image Null](measure-image-null-of-locally-null.md)
+- [Pi With Density](pi-with-density/README.md)
 - [Vitali Nonmeasurable](vitali-nonmeasurable.md)

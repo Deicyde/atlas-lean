@@ -3,13 +3,15 @@ article_id: af_0e4f37a6566a5d9b2c80d17c
 navigation: transparent
 ---
 
-# Axler Nth Prime Lower Bound Wanted to Mandl Prime Sum Wanted
+# Axler Effective Prime Estimates to Kadiri Zero Free Region
 
+- [Axler Effective Prime Estimates](axler-effective-prime-estimates-wanted/README.md)
 - [Axler Nth Prime Lower Bound Wanted](axler-nth-prime-lower-bound.md)
 - [Axler Nth Prime Upper Bound Wanted](axler-nth-prime-upper-bound.md)
 - [Bellotti Wong Zero Count](bellotti-wong-zero-count-wanted/README.md)
 - [Bombieri Vinogradov](bombieri-vinogradov-wanted/README.md)
 - [Brun Constant Bounds](brun-constant-bounds-wanted/README.md)
+- [Calzado Parity Sieve](calzado-parity-sieve-wanted/README.md)
 - [Chebyshev Theta PNTError Wanted](prime-number-theorem-chebyshev-theta-err.md)
 - [Conjecture AFour Square Prime Values Wanted](conjecture-a-prime-values-four-square.md)
 - [Dusart2010](dusart2010/README.md)
@@ -23,5 +25,3 @@ navigation: transparent
 - [Dusart Pi Upper Shifted Log Wanted](dusart-pi-upper-shifted-log.md)
 - [Dusart Prime Gap Wanted](dusart-prime-gap.md)
 - [Kadiri Zero Free Region](kadiri-zero-free-region-wanted/README.md)
-- [Laishram Ramanujan Prime Bound Wanted](laishram-ramanujan-prime-bound.md)
-- [Mandl Prime Sum Wanted](mandl-prime-sum-inequality.md)

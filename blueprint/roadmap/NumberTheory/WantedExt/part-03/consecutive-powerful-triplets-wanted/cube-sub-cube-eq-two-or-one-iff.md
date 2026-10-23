@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.cube_sub_cube_eq_two_or_one_iff
+---
+
+# Cube sub cube eq two or one iff
+
+`u³ - v³ = 2` has the unique integer solution `(1, -1)`, and `u³ - v³ = 1`
+has exactly the integer solutions `(1, 0)` and `(0, -1)`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.NumberTheory.ConsecutivePowerfulTripletsWanted](../../../../../sources/v2/WantedExt.md)
+- Jialai She, *Nonexistence of Consecutive Powerful Triplets Around Cubes with Prime-Square Factors*, INTEGERS 25 (2025), Article A103, Lemma 5 (`integers-2025-A103-lem-5`).

@@ -2,14 +2,25 @@
 navigation: transparent
 ---
 
-# Two Ninety Theorem to Zagier Hoffman Positive Char
+# Gcd Sum Moments to Gobel Non Integrality
 
-- [Two Ninety Theorem](two-ninety-theorem-wanted/README.md)
-- [Two Sets Sumset Squares](two-sets-sumset-squares-wanted/README.md)
-- [Van Der Waerden Conjecture](van-der-waerden-conjecture-wanted/README.md)
-- [Velez Uniform Distribution Wanted](subsequence-second-order-recurrence.md)
-- [Vinogradov Mean Value](vinogradov-mean-value-wanted/README.md)
-- [Wieferich Nine Cubes](wieferich-nine-cubes-wanted/README.md)
-- [Theorem 1](wilson-mod-prime-sq.md)
-- [Wilson Quotients](wilson-quotients-wanted/README.md)
-- [Zagier Hoffman Positive Char](zagier-hoffman-positive-char-wanted/README.md)
+- [Gcd Sum Moments](gcd-sum-moments-wanted/README.md)
+- [Gen Leonardo](gen-leonardo-wanted/README.md)
+- [General Conditional Sequence](general-conditional-sequence-wanted/README.md)
+- [General Pell Bisectors](general-pell-bisectors-wanted/README.md)
+- [Generalized Fermat Exponents](generalized-fermat-exponents-wanted/README.md)
+- [Generalized Fibonacci Zeta](generalized-fibonacci-zeta-wanted/README.md)
+- [Generalized Frobenius Triangular](generalized-frobenius-triangular-wanted/README.md)
+- [Generalized Fruit Diophantine](generalized-fruit-diophantine-wanted/README.md)
+- [Generalized Harmonic Gamma](generalized-harmonic-gamma-wanted/README.md)
+- [Generalized Hofstadter Order](generalized-hofstadter-order-wanted/README.md)
+- [Generalized Markov Uniqueness](generalized-markov-uniqueness-wanted/README.md)
+- [Generalized Padovan Perrin Model](generalized-padovan-perrin-model-wanted/README.md)
+- [Generalized Tau Regular Partition](generalized-tau-regular-partition-wanted/README.md)
+- [Genocchi Explicit](genocchi-explicit-wanted/README.md)
+- [Geometric Sums Two Squares](geometric-sums-two-squares-wanted/README.md)
+- [Gibonacci Polynomial Power Sums](gibonacci-polynomial-power-sums-wanted/README.md)
+- [Gibonacci Polynomial Square Sums Revisited](gibonacci-polynomial-square-sums-revisited-wante/README.md)
+- [Glaisher Divisors Infinite Products](glaisher-divisors-infinite-products-wanted/README.md)
+- [Gleeful Numbers](gleeful-numbers-wanted/README.md)
+- [Gobel Non Integrality](gobel-non-integrality-wanted/README.md)

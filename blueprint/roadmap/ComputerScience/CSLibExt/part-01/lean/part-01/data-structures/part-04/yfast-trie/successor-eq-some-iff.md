@@ -1,0 +1,34 @@
+---
+article_id: af_e59568c5902fb9515ef75411
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.GroupedYFastTrie.successor_eq_some_iff
+---
+
+# Successor eq some iff
+
+The successor is `some y` exactly when `y` is the least stored key above `x`.
+
+## Depends on
+
+- [Grouped YFast Trie](grouped-yfast-trie.md)
+- [Valid](valid.md)
+- [Contents](contents.md)
+- [Successor](successor.md)
+
+## Proof depends on
+
+- [Group Ordered](group-ordered.md)
+- [Find Group](find-group.md)
+- [Mem contents iff](mem-contents-iff.md)
+- [XFast Trie](../../part-03/xfast-trie/xfast-trie.md)
+- [Valid](../../part-03/xfast-trie/valid.md)
+- [Successor](../../part-03/xfast-trie/successor.md)
+- [Successor eq none iff](../../part-03/xfast-trie/successor-eq-none-iff.md)
+- [Successor eq some iff](../../part-03/xfast-trie/successor-eq-some-iff.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DataStructures.YFastTrie](../../../../../../../../../sources/v2/CSLibExt.md)

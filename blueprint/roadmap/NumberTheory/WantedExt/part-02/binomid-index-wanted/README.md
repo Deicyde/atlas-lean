@@ -1,0 +1,35 @@
+---
+navigation: module
+---
+
+# Binomid Index
+
+- [Is Binomid Index](is-binomid-index.md)
+- [Is Binomid Index const](is-binomid-index-const.md)
+- [Is Lex Minimal Extension Of](is-lex-minimal-extension-of.md)
+- [Is Lex Minimal Extension](is-lex-minimal-extension.md)
+- [Is Lex Minimal Extension Of zero](is-lex-minimal-extension-of-zero.md)
+- [Binomid Shift](binomid-shift.md)
+- [Binomid Shift zero](binomid-shift-zero.md)
+- [Is Binomid Index of monotone](is-binomid-index-of-monotone.md)
+- [Is Binomid Index iff partial Sum](is-binomid-index-iff-partial-sum.md)
+- [Is Lex Minimal Extension Of periodic of monotone On](is-lex-minimal-extension-of-periodic-of.md)
+- [Apply period eq apply zero](apply-period-eq-apply-zero.md)
+- [Is Lex Minimal Extension of periodic](is-lex-minimal-extension-of-periodic.md)
+- [Add](add.md)
+- [Binomid Shift image inter eq zero](binomid-shift-image-inter-eq-zero.md)
+- [Infinite set Of prime dvd choose](infinite-set-of-prime-dvd-choose.md)
+- [Infinite set Of prime dvd fibonomial](infinite-set-of-prime-dvd-fibonomial.md)
+- [Is Lex Minimal Extension Of of greedy](is-lex-minimal-extension-of-of-greedy.md)
+- [Exists nomid eq one](exists-nomid-eq-one.md)
+- [Infinite set Of prime dvd nomid of not is Lex Minimal Extension](infinite-set-of-prime-dvd-nomid-of-not-i.md)
+- [Binomid Average](binomid-average.md)
+- [Binomid Average const](binomid-average-const.md)
+- [Binomid Upper Average](binomid-upper-average.md)
+- [Binomid Upper Average const](binomid-upper-average-const.md)
+- [Binomid Average Condition](binomid-average-condition.md)
+- [Binomid Average Condition const](binomid-average-condition-const.md)
+- [Binomid Average props](binomid-average-props.md)
+- [Binomid Upper Average eq i Sup](binomid-upper-average-eq-i-sup.md)
+- [Binomid Average Condition](binomid-average-condition-2.md)
+- [Is Lex Minimal Extension and eventually periodic](is-lex-minimal-extension-and-eventually.md)

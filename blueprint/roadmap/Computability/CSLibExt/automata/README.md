@@ -1,3 +1,6 @@
 # Automata
 
+- [DA](da/README.md)
+- [Epsilon NA](epsilon-na/README.md)
+- [NA](na/README.md)
 - [PDA](pda/README.md)

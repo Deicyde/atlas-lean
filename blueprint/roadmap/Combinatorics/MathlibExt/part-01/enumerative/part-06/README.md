@@ -3,8 +3,10 @@ article_id: af_9ca22494844e5cb046f69ca7
 navigation: transparent
 ---
 
-# Nontrivial1234 3412 Classes to Perfect Compositions
+# Narayana Polynomial to Pell Riordan
 
+- [Narayana Polynomial](narayana-polynomial/README.md)
+- [Narayana Sequence](narayana-cows-sequence.md)
 - [Nontrivial1234 3412 Classes](card-nontrivial-1234-3412-classes.md)
 - [Octagonal Pyramidal Composition](octagonal-pyramidal-number-eq-compositio.md)
 - [Octagonal Pyramidal Number](octagonal-pyramidal-number/README.md)
@@ -23,5 +25,3 @@ navigation: transparent
 - [Peak Statistic231](card-permutations-avoiding-231-with-peak.md)
 - [Pell Lucas Number](pell-lucas.md)
 - [Pell Riordan](pell-riordan/README.md)
-- [Pentagonal Number](pentagonal-number/README.md)
-- [Perfect Compositions](perfect-compositions/README.md)

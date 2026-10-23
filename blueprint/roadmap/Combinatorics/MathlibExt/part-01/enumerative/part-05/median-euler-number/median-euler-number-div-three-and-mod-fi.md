@@ -16,8 +16,8 @@ For `n ≥ 1`, `3 ∣ R_n` and `R_n / 3 ≡ 3^(n-1) (mod 5)`.
 
 ## Proof depends on
 
-- [Euler Seidel Matrix](../../part-02/euler-seidel-matrix/euler-seidel-matrix.md)
-- [Euler Seidel Matrix eq sum](../../part-02/euler-seidel-matrix/euler-seidel-matrix-eq-sum.md)
+- [Euler Seidel Matrix](../../part-03/euler-seidel-matrix/euler-seidel-matrix.md)
+- [Euler Seidel Matrix eq sum](../../part-03/euler-seidel-matrix/euler-seidel-matrix-eq-sum.md)
 - [Median Euler Coeff](median-euler-coeff.md)
 - [Median Euler Coeff egf](median-euler-coeff-egf.md)
 - [Median Euler Coeff zero](median-euler-coeff-zero.md)

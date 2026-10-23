@@ -1,0 +1,37 @@
+---
+navigation: module
+---
+
+# Affine Alignment
+
+- [Gap State](gap-state.md)
+- [Gap Cost](gap-cost.md)
+- [Affine Score Aux](affine-score-aux.md)
+- [Affine Score](affine-score.md)
+- [Gotoh Aux](gotoh-aux.md)
+- [Gotoh Cont None](gotoh-cont-none.md)
+- [Gotoh Cont Gap X](gotoh-cont-gap-x.md)
+- [Gotoh Cont Gap Y](gotoh-cont-gap-y.md)
+- [Gotoh Score](gotoh-score.md)
+- [Gap Run Cost](gap-run-cost.md)
+- [Gap Run Cost succ](gap-run-cost-succ.md)
+- [Is Alignment of cons match](is-alignment-of-cons-match.md)
+- [Is Alignment of cons gap X](is-alignment-of-cons-gap-x.md)
+- [Is Alignment of cons gap Y](is-alignment-of-cons-gap-y.md)
+- [Is Alignment cons match](is-alignment-cons-match.md)
+- [Is Alignment cons gap X](is-alignment-cons-gap-x.md)
+- [Is Alignment cons gap Y](is-alignment-cons-gap-y.md)
+- [Gotoh is optimal](affine-score-le-gotoh-score.md)
+- [Gotoh is attained](exists-affine-score-eq-gotoh-score.md)
+- [First-column recurrence for the `none` continuation](gotoh-cont-none-eq.md)
+- [First-column recurrence for the `gapX` continuation](gotoh-cont-gap-x-eq.md)
+- [First-column recurrence for the `gapY` continuation](gotoh-cont-gap-y-eq.md)
+- [Gotoh Cont None nil left](gotoh-cont-none-nil-left.md)
+- [Gotoh Cont None nil right](gotoh-cont-none-nil-right.md)
+- [Gotoh Cont Gap X nil left](gotoh-cont-gap-x-nil-left.md)
+- [Gotoh Cont Gap X nil right](gotoh-cont-gap-x-nil-right.md)
+- [Gotoh Cont Gap Y nil left](gotoh-cont-gap-y-nil-left.md)
+- [Gotoh Cont Gap Y nil right](gotoh-cont-gap-y-nil-right.md)
+- [Affine Score Aux eq alignment Score](affine-score-aux-eq-alignment-score.md)
+- [Affine Score eq alignment Score](affine-score-eq-alignment-score.md)
+- [Gotoh Score eq nw Score](gotoh-score-eq-nw-score.md)

@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.phi_sq_mul_phi_sq_fifteen_eisenstein
+---
+
+# Phi sq mul phi sq fifteen eisenstein
+
+For `‖q‖ < 1`, `φ²(q)φ²(q¹⁵) = -(1/36)[P₁ - 2P₂ - 3P₃ + 4P₄ + 5P₅ + 6P₆ - 10P₁₀ - 12P₁₂
+- 15P₁₅ + 20P₂₀ + 30P₃₀ - 60P₆₀] + (2/3)[q f₁f₃f₅f₁₅ - 2q² f₂f₆f₁₀f₃₀ + 4q⁴ f₄f₁₂f₂₀f₆₀
++ 4q f₃f₅f₆f₁₀ + 8q² f₆f₁₀f₁₂f₂₀]`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.NumberTheory.QuaternaryQuadraticFormsWanted](../../../../../sources/v2/WantedExt.md)
+- K. R. Vasuki and P. Nagendra, *On Certain Quaternary Quadratic Forms*, INTEGERS 25 (2025), Article A24, Lemma 4.2.

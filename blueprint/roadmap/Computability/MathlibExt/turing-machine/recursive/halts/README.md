@@ -19,5 +19,6 @@ navigation: module
 ## R.e. sets are halting sets
 
 - [Tm2 Halts On fwd TM iff](tm2-halts-on-fwd-tm-iff.md)
+- [Every r.e. predicate is the halting set of a multi-stack machine (`FinTM2`)](exists-finite-tm2-halts-on-iff-of-re-pre.md)
 - [Every r.e. predicate is the halting set of a multi-stack machine (`FinTM2`)](exists-tm2-halts-on-iff-of-re-pred.md)
 - [R.e. equals halting set of a multi-stack machine (`FinTM2`)](re-pred-iff-exists-tm2-halts-on.md)

@@ -7,13 +7,13 @@ status: adopted
 
 Established results whose Lean implementation or proof is deferred. Source: <https://github.com/facebookresearch/atlas-lean/tree/main/WantedExt>.
 
-578 modules declare 3327 public declarations. Leaving
-out 87 instances, the 3096 with a docstring are
+1336 modules declare 13351 public declarations. Leaving
+out 150 instances, the 13033 with a docstring are
 roadmap articles whose statement is that docstring, with its citations moved
 to the article's sources. Theorems are proved and definitions defined unless
 their module contains `sorry`.
 
-1450 articles are `theorem_wanted` or `def_wanted` entries: their Lean
+7255 articles are `theorem_wanted` or `def_wanted` entries: their Lean
 statements exist without proofs. A wanted theorem shows as stated and unproved;
 a wanted definition shows as not stated, because a stated definition counts
 as defined.

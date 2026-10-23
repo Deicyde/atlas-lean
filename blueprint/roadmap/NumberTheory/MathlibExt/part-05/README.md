@@ -3,8 +3,11 @@ article_id: af_361ab9a75ac8234c824c47ad
 navigation: transparent
 ---
 
-# Even Pseudoprime to Generalized Fibocatalan Number
+# Euler Fermat Prime Power to Gaussian Int Split Primes
 
+- [Euler Fermat Prime Power](euler-fermat-prime-power/README.md)
+- [Euler Prime](euler-prime/README.md)
+- [Even Perfect Numbers](euler-characterization-of-even-perfect-n.md)
 - [Even Pseudoprime](even-pseudoprime/README.md)
 - [Exponential Pascal Matrix](exponential-pascal-matrix/README.md)
 - [Extremely Abundant Number](is-extremely-abundant-number.md)
@@ -20,8 +23,5 @@ navigation: transparent
 - [Fraenkel Covering Bernoulli](fraenkel-covering-bernoulli/README.md)
 - [Frobenius Pseudoprime](frobenius-pseudoprime/README.md)
 - [Fuss Catalan Number](fuss-catalan-number.md)
-- [Gelfond Schneider](gelfond-schneider/README.md)
-- [General Arithmetical Eulerian Polynomial](general-arithmetical-eulerian-polynomial/README.md)
-- [Generalized Catalan Prime Divisibility](generalized-catalan-prime-dvd-iff-not-ge.md)
-- [Generalized Fermat Number](generalized-fermat-number.md)
-- [Generalized Fibocatalan Number](generalized-fibocatalan-number/README.md)
+- [Gaussian Int Prime Basics](gaussian-int-prime-basics/README.md)
+- [Gaussian Int Split Primes](gaussian-int-split-primes/README.md)

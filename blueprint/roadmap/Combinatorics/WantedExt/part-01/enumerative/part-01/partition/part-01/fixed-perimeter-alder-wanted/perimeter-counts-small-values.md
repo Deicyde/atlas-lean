@@ -1,0 +1,21 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.perimeterCounts_small_values
+---
+
+# Perimeter Counts small values
+
+Small values at `d = a = 1`, perimeter `3`: `h = f = ℓ = 2`; `h_1^(1)(2, 2) = 1`
+(`2 + 1`), `f_1^(1)(3, 1) = 1` (`3`), `ℓ_1^(1)(1, 3) = 1` (`1 + 1 + 1`).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.Enumerative.Partition.FixedPerimeterAlderWanted](../../../../../../../../../sources/v2/WantedExt.md)
+- Ling Chen, Isabelle Hernandez, Zain Shields, and Holly Swisher, *Analogues of Alder-Type Partition Inequalities for Fixed Perimeter Partitions*, INTEGERS 24 (2024), Article A102, Equations (1.1)–(1.3).

@@ -5,9 +5,10 @@ navigation: collection
 
 # MathlibExt
 
-## [Burnside Paqb to Group Growth](part-01/README.md)
+## [Burnside Paqb to General Linear Group Exponent](part-01/README.md)
 
 - [Burnside Paqb](part-01/burnside-paqb/README.md)
+- [Finite Abelian](part-01/finite-abelian/README.md)
 - [Group Action](part-01/group-action/README.md)
 - [Permutation](part-01/permutation/README.md)
 - [Specific Groups](part-01/specific-groups/README.md)
@@ -26,10 +27,10 @@ navigation: collection
 - [Finite Group Convolution](part-01/finite-group-convolution/README.md)
 - [GHarmonic](part-01/gharmonic/README.md)
 - [General Linear Group Exponent](part-01/general-linear-group-exponent-eq-lcm-eq.md)
-- [Group Growth](part-01/group-growth/README.md)
 
-## [HNNEmbedding to Two Power Rank](part-02/README.md)
+## [Group Growth to Two Power Rank](part-02/README.md)
 
+- [Group Growth](part-02/group-growth/README.md)
 - [HNNEmbedding](part-02/higman-neumann-neumann-embedding.md)
 - [Hyperbolic Group](part-02/hyperbolic-group/README.md)
 - [Irreducible Character Basis](part-02/irreducible-character-basis/README.md)

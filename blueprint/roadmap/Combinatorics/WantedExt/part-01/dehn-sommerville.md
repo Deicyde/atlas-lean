@@ -11,8 +11,8 @@ Source: M. Dehn (1905); D. M. Y. Sommerville (1927); see Stanley, *Combinatorics
 
 ## Depends on
 
-- [Finite Simplicial Sphere](../part-03/simplicial-sphere-shared/finite-simplicial-sphere.md)
-- [H Vector](../part-03/simplicial-sphere-shared/h-vector.md)
+- [Finite Simplicial Sphere](../part-05/simplicial-sphere-shared/finite-simplicial-sphere.md)
+- [H Vector](../part-05/simplicial-sphere-shared/h-vector.md)
 
 ## Sources
 

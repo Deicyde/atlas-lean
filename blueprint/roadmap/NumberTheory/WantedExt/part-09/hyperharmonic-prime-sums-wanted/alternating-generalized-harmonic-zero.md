@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.alternatingGeneralizedHarmonic_zero
+---
+
+# Alternating Generalized Harmonic zero
+
+`H̄_0^{(s)} = 0`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.NumberTheory.HyperharmonicPrimeSumsWanted](../../../../../sources/v2/WantedExt.md)
+- Rusen Li, *Sums over Primes II*, Journal of Integer Sequences 27 (2024), Article 24.4.1, Section 1 (definition of `H̄_n^{(p)}`).

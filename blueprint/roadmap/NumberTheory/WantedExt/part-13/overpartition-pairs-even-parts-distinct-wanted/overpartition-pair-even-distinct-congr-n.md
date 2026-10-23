@@ -1,0 +1,26 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.overpartitionPairEvenDistinct_congr_neg_two_eleven
+---
+
+# Overpartition Pair Even Distinct congr neg two eleven
+
+For a prime `p ≥ 5` with `(-2/p) = -1` and all `k, m, α, β ≥ 0` with `p ∤ m`:
+`bped_{3,3}(4·3^{4α+3}·5^{2β}·p^{2k+1} m + (11·3^{4α+2}·5^{2β}·p^{2k+2} - 1)/2) ≡ 0 (mod 16)`
+(10), `bped_{3,3}(12·5^{2β}·p^{2k+1} m + (11·5^{2β}·p^{2k+2} - 1)/2) ≡ 0 (mod 4)` (11),
+`bped_{3,6}(3^{4α+2}·5^{2β}·p^{2k+1}(24m + 11p)) ≡ 0 (mod 32)` (12) and
+`bped_{3,6}(3·5^{2β}·p^{2k+1}(24m + 11p)) ≡ 0 (mod 32)` (13).
+The paper prints `p^{2α+2}` in (10) and (11); the proof's substitution gives `p^{2k+2}`, and the
+printed exponent fails: `p = 5, k = 1, α = β = 0, m = 1` gives `bped_{3,3}(14737) ≡ 8 (mod 16)` in
+(10) and `bped_{3,3}(1637) ≡ 2 (mod 4)` in (11).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.NumberTheory.OverpartitionPairsEvenPartsDistinctWanted](../../../../../sources/v2/WantedExt.md)
+- Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Theorem 2 (`integers-2026-A118-thm-2`).

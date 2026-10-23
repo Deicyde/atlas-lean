@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.szBlockIndex_cons
+---
+
+# Sz Block Index cons
+
+`szBlockIndex ((k, d) :: kd) = k :: {0}^{d-1} ++ szBlockIndex kd`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.NumberTheory.QMultipleZetaValuesWanted](../../../../../../sources/v2/WantedExt.md)
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 5, index notation.

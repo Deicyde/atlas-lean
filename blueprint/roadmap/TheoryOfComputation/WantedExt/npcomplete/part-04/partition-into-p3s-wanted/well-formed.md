@@ -1,0 +1,18 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.Complexity.NPComplete.PartitionIntoP3s.WellFormed
+---
+
+# Well Formed
+
+Well-formedness of an instance.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Complexity.NPComplete.PartitionIntoP3sWanted](../../../../../../sources/v2/WantedExt.md)

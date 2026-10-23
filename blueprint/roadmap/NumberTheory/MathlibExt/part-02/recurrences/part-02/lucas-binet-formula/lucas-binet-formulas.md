@@ -33,9 +33,9 @@ normalized formula lines 283–289 SHA-256
 
 ## Depends on
 
-- [Lucas Sequence Params](../../../../part-07/lucas-sequence/lucas-sequence-params.md)
-- [Lucas U](../../../../part-07/lucas-sequence/lucas-u.md)
-- [Lucas V](../../../../part-07/lucas-sequence/lucas-v.md)
+- [Lucas Sequence Params](../../../../part-08/lucas-sequence/lucas-sequence-params.md)
+- [Lucas U](../../../../part-08/lucas-sequence/lucas-u.md)
+- [Lucas V](../../../../part-08/lucas-sequence/lucas-v.md)
 
 ## Proof depends on
 

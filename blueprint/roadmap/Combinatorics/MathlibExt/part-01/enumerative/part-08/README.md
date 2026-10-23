@@ -3,8 +3,12 @@ article_id: af_a7f21d2906361d89fa8d4b21
 navigation: transparent
 ---
 
-# Signed Robbins Number to Twin Powers
+# Set Partition Peaks to Totienomial Coefficient
 
+- [Set Partition Peaks](total-peaks-canonical.md)
+- [Set Partitions By Two Rises](set-partition-two-rise-ordinary-generati.md)
+- [Shifted Eulerian Hankel](hankel-transform-shifted-eulerian-polyno.md)
+- [Shifted Riordan Array Row Sums](shifted-riordan-array-constant-term-and.md)
 - [Signed Robbins Number](signed-robbins-number/README.md)
 - [Signed Stirling First](signed-stirling-first.md)
 - [Smarandache Permutation Sequence](smarandache-permutation-sequence/README.md)
@@ -21,7 +25,3 @@ navigation: transparent
 - [Tangent Number Divisibility](tangent-number-two-adic-divisibility-mod.md)
 - [Total Descents Parking Functions](total-descents-over-parking-functions.md)
 - [Totienomial Coefficient](totienomial-coefficient/README.md)
-- [Touchard Catalan Identity](touchard-catalan-identity.md)
-- [Triangular Strip Tilings](quarter-period-factorizations.md)
-- [Triple Factorization](triple-factorization-of-dot-diagram.md)
-- [Twin Powers](twin-powers.md)

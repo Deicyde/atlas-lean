@@ -1,0 +1,30 @@
+# Partition
+
+## [Colored Partitions Euler Type to Rook Decomposition](part-01/README.md)
+
+- [Colored Partitions Euler Type](part-01/colored-partitions-euler-type-wanted/README.md)
+- [Diagonal Sequences](part-01/diagonal-sequences-wanted/README.md)
+- [Five Core Analogs](part-01/five-core-analogs-wanted/README.md)
+- [Fixed Perimeter Alder](part-01/fixed-perimeter-alder-wanted/README.md)
+- [Frobenius Partitions Four Repetitions](part-01/frobenius-partitions-four-repetitions-wanted/README.md)
+- [Generalized Cubic Partition](part-01/generalized-cubic-partition-wanted/README.md)
+- [Lit Cells Partitions](part-01/lit-cells-partitions-wanted/README.md)
+- [Merca Distinct Parts Sum](part-01/merca-distinct-parts-sum-wanted/README.md)
+- [Multiset Reconstruction Pairwise Products](part-01/multiset-reconstruction-pairwise-products-wanted/README.md)
+- [Odd Designated Summands](part-01/odd-designated-summands-wanted/README.md)
+- [Overcubic Partition Triples](part-01/overcubic-partition-triples-wanted/README.md)
+- [Overpartition Mex](part-01/overpartition-mex-wanted/README.md)
+- [Overpartition Mod Five Twelve](part-01/overpartition-mod-five-twelve-wanted/README.md)
+- [Partitions Even Parts Distinct](part-01/partitions-even-parts-distinct-wanted/README.md)
+- [Pond Pend Congruences](part-01/pond-pend-congruences-wanted/README.md)
+- [Ramanujan Mex Partition Congruences](part-01/ramanujan-mex-partition-congruences-wanted/README.md)
+- [Regular Cubic Overlined](part-01/regular-cubic-overlined-wanted/README.md)
+- [Regular Partitions LK](part-01/regular-partitions-lkwanted/README.md)
+- [Regular Tripartition Congruences](part-01/regular-tripartition-congruences-wanted/README.md)
+- [Rook Decomposition](part-01/rook-decomposition-wanted/README.md)
+
+## [Slater Order Eighteen Theta to Two Color Seven Power Partition](part-02/README.md)
+
+- [Slater Order Eighteen Theta](part-02/slater-order-eighteen-theta-wanted/README.md)
+- [Stanley Elder Parts](part-02/stanley-elder-parts-wanted/README.md)
+- [Two Color Seven Power Partition](part-02/two-color-seven-power-partition-wanted/README.md)

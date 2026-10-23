@@ -1,0 +1,33 @@
+# Lean
+
+## [AStar to Parallel](part-01/README.md)
+
+- [AStar](part-01/astar/README.md)
+- [Approximation](part-01/approximation/README.md)
+- [CSP](part-01/csp/README.md)
+- [Circuit](part-01/circuit/README.md)
+- [Compression](part-01/compression/README.md)
+- [Data Structures](part-01/data-structures/README.md)
+- [Divide And Conquer](part-01/divide-and-conquer/README.md)
+- [Dynamic Programming](part-01/dynamic-programming/README.md)
+- [Fourier](part-01/fourier/README.md)
+- [Game Tree](part-01/game-tree/README.md)
+- [Geometry](part-01/geometry/README.md)
+- [Graph](part-01/graph/README.md)
+- [Greedy](part-01/greedy/README.md)
+- [MDP](part-01/mdp/README.md)
+- [Matching](part-01/matching/README.md)
+- [Matrix](part-01/matrix/README.md)
+- [Number Theory](part-01/number-theory/README.md)
+- [Numerical](part-01/numerical/README.md)
+- [Online](part-01/online/README.md)
+- [Parallel](part-01/parallel/README.md)
+
+## [Random to String Matching](part-02/README.md)
+
+- [Random](part-02/random/README.md)
+- [Search](part-02/search/README.md)
+- [Selection](part-02/selection/README.md)
+- [Sort](part-02/sort/README.md)
+- [Sorting Networks](part-02/sorting-networks/README.md)
+- [String Matching](part-02/string-matching/README.md)

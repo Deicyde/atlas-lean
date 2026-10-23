@@ -1,9 +1,0 @@
----
-article_id: af_e6ef7ed416883316a2058622
-navigation: module
----
-
-# House With Two Rooms
-
-- [House With Two Rooms](house-with-two-rooms.md)
-- [Contractible Space house With Two Rooms](contractible-space-house-with-two-rooms.md)

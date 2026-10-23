@@ -11,7 +11,7 @@ Source: P.S. Novikov, 'On the algorithmic unsolvability of the word problem in g
 
 ## Depends on
 
-- [Word Problem Solvable Shared](word-problem-solvable.md)
+- [Word Problem Solvable Shared](../part-03/word-problem-solvable.md)
 
 ## Sources
 

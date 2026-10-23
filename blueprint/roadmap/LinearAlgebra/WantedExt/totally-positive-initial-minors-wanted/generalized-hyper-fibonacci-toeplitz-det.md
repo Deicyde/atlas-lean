@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.generalizedHyperFibonacci_toeplitz_det_eventually_pos
+---
+
+# Generalized Hyper Fibonacci toeplitz det eventually pos
+
+For `m ≥ 1`, `det T_{m,n}^{(m-1)} > 0` for all sufficiently large `n`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.LinearAlgebra.TotallyPositiveInitialMinorsWanted](../../../../sources/v2/WantedExt.md)
+- Abdelhak Taane, Ihab-Eddine Djellas and Mohammed Mekkaoui, *Total Positivity of Toeplitz Matrices Involving Generalized Hyper-Fibonacci Numbers*, Journal of Integer Sequences 29 (2026), Article 26.2.5, Theorem 8 (`jis-2026-26.2.5-thm-8`).

@@ -13,6 +13,7 @@ article_id: af_0b0b0c422f826cdce8255bed
 - [Legendre Three Square Converse](not-exists-four-pow-mul-eight-mul-add-se.md)
 - [Pell Type Solution Mul Unit](pell-type-solution-mul-unit.md)
 - [Reduced](is-gauss-reduced.md)
+- [Sqrt Neg2 Count](sqrt-neg2-count/README.md)
 - [Sum Two Coprime Squares](sum-two-coprime-squares-characterization.md)
 - [Three Floor Square Sums](every-nat-eq-sum-three-sq-div-eight.md)
 - [Three Squares](three-squares/README.md)

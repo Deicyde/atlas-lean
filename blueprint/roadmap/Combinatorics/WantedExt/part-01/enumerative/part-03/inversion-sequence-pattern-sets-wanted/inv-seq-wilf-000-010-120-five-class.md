@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.invSeq_wilf_000_010_120_five_class
+---
+
+# Theorem 5
+
+**Theorem 5.** `{000, 010, 101, 120, 201}`, `{000, 010, 101, 120, 210}` and `{000, 010, 110,
+120, 210}` are I-Wilf-equivalent.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.Enumerative.InversionSequencePatternSetsWanted](../../../../../../../sources/v2/WantedExt.md)
+- Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 5 (`integers-2024-A76-thm-5`).

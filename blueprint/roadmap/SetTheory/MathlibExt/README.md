@@ -6,3 +6,9 @@ navigation: collection
 # MathlibExt
 
 - [Cardinal](cardinal/README.md)
+- [Dichotomies](dichotomies/README.md)
+- [Forcing](forcing/README.md)
+- [Infinitary Combinatorics](infinitary-combinatorics/README.md)
+- [Order](order/README.md)
+- [Tree](tree/README.md)
+- [Ultrafilter](ultrafilter/README.md)

@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Prime Number Theorem](../../../../part-09/prime-number-theorem.md)
+- [Prime Number Theorem](../../../../part-10/prime-number-theorem.md)
 
 ## Sources
 

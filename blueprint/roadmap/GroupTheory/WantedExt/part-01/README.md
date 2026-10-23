@@ -3,8 +3,9 @@ article_id: af_751315896035c56419670088
 navigation: transparent
 ---
 
-# Absolute Profinite Rigidity to Golden Ratio Thompson Embed
+# Finite Abelian to Glauberman ZStar Wanted
 
+- [Finite Abelian](finite-abelian/README.md)
 - [Absolute Profinite Rigidity](absolute-profinite-rigidity-wanted/README.md)
 - [Ado Iwasawa Wanted](ado-iwasawa.md)
 - [Approximate Subgroup Structure Wanted](breuillard-green-tao-approximate-subgrou.md)
@@ -24,4 +25,3 @@ navigation: transparent
 - [Frobenius Determinant](frobenius-determinant-wanted/README.md)
 - [Frobenius Wanted](frobenius-kernel-is-normal.md)
 - [Glauberman ZStar Wanted](glauberman-z-star.md)
-- [Golden Ratio Thompson Embed](golden-ratio-thompson-embed-wanted/README.md)

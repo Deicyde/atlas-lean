@@ -22,7 +22,6 @@ mixed differential along $L$ of $\partial_i p$.
 ## Proof depends on
 
 - [Mixed differential along a list with a given first index](mixed-differential-cons.md)
-- [Partial derivatives commute](pderiv-comm.md)
 
 ## Sources
 

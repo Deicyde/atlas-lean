@@ -1,0 +1,36 @@
+---
+navigation: module
+---
+
+# Permutation Wordle
+
+- [Permute Along](permute-along.md)
+- [Permute Along univ](permute-along-univ.md)
+- [Perm Wordle Next Guess](perm-wordle-next-guess.md)
+- [Perm Wordle Next Guess of eq](perm-wordle-next-guess-of-eq.md)
+- [Perm Wordle Guess](perm-wordle-guess.md)
+- [Perm Wordle Guess succ](perm-wordle-guess-succ.md)
+- [Perm Wordle Guess one of forall ne](perm-wordle-guess-one-of-forall-ne.md)
+- [Perm Wordle Solved In](perm-wordle-solved-in.md)
+- [Perm Wordle Solved In one iff](perm-wordle-solved-in-one-iff.md)
+- [Perm Wordle Coeff](perm-wordle-coeff.md)
+- [Perm Wordle Coeff zero](perm-wordle-coeff-zero.md)
+- [Perm Wordle First Correct At](perm-wordle-first-correct-at.md)
+- [Perm Wordle First Correct At one iff](perm-wordle-first-correct-at-one-iff.md)
+- [Cyclic Shift Strategy](cyclic-shift-strategy.md)
+- [Cyclic Shift Strategy apply](cyclic-shift-strategy-apply.md)
+- [Cyclic Shift Left Strategy](cyclic-shift-left-strategy.md)
+- [Cyclic Shift Left Strategy self](cyclic-shift-left-strategy-self.md)
+- [Cyclic Shift Left Strategy of ne](cyclic-shift-left-strategy-of-ne.md)
+- [Is Inductive Perm Wordle Strategy](is-inductive-perm-wordle-strategy.md)
+- [Proposition 4](avg-card-correct-second-guess-derangemen.md)
+- [Theorem 5](perm-wordle-coeff-one-and-two.md)
+- [Theorem 7](perm-wordle-coeff-three-lt-cyclic-shift.md)
+- [Lemma 9](card-derangements-solved-in-three-cyclic.md)
+- [Theorem 10](card-solved-in-three-first-correct-at-on.md)
+- [Theorem 11](card-solved-in-three-first-correct-at-th.md)
+- [Theorem 12](card-solved-in-three-first-correct-at-tw.md)
+- [Theorem 13](card-solved-in-three-first-correct-at-tw-2.md)
+- [Theorem 14](perm-wordle-coeff-three-cyclic-shift-lef.md)
+- [Theorem 15](card-solved-in-three-first-correct-at-tw-3.md)
+- [Theorem 16](card-first-correct-at-two-cyclic-shift-l.md)

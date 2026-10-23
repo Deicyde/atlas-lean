@@ -1,5 +1,6 @@
 # Distributed
 
+- [Byzantine](byzantine/README.md)
 - [Chang Roberts](chang-roberts/README.md)
 - [Lamport Clock](lamport-clock/README.md)
 - [Two Phase Commit](two-phase-commit/README.md)

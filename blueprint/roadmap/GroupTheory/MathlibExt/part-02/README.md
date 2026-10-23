@@ -3,8 +3,9 @@ article_id: af_fbabc58a05058f5653b972c3
 navigation: transparent
 ---
 
-# HNNEmbedding to Two Power Rank
+# Group Growth to Two Power Rank
 
+- [Group Growth](group-growth/README.md)
 - [HNNEmbedding](higman-neumann-neumann-embedding.md)
 - [Hyperbolic Group](hyperbolic-group/README.md)
 - [Irreducible Character Basis](irreducible-character-basis/README.md)

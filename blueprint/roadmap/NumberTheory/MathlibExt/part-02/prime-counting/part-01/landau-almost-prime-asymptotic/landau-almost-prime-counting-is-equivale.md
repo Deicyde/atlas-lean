@@ -20,7 +20,7 @@ Landau's theorem on `k`-almost primes: the counting function
 ## Proof depends on
 
 - [Theta is Equivalent of prime Counting is Equivalent](../chebyshev/theta-is-equivalent-of-prime-counting-is.md)
-- [Prime Number Theorem](../../../../part-09/prime-number-theorem.md)
+- [Prime Number Theorem](../../../../part-10/prime-number-theorem.md)
 
 ## Sources
 

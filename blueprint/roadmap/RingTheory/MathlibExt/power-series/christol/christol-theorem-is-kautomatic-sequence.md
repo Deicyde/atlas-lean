@@ -12,7 +12,7 @@ Christol's theorem in DFAO form: algebraicity iff automaticity.
 
 ## Depends on
 
-- [Is KAutomatic Sequence](../../../../Combinatorics/MathlibExt/part-01/words/cobham-uniform-morphism/is-kautomatic-sequence.md)
+- [Is KAutomatic Sequence](../../../../Combinatorics/MathlibExt/part-02/words/cobham-uniform-morphism/is-kautomatic-sequence.md)
 
 ## Proof depends on
 

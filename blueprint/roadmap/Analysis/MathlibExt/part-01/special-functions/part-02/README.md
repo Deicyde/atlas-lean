@@ -15,4 +15,5 @@ navigation: transparent
 - [Modified Bessel First Kind](modified-bessel-first-kind/README.md)
 - [QPochhammer](qpochhammer/README.md)
 - [Real Power Parametrization](exists-parametrization-of-rpow-eq-rpow.md)
+- [Sigmoid Log Odds](sigmoid-log-sub-log.md)
 - [Takagi Function](takagi-function/README.md)

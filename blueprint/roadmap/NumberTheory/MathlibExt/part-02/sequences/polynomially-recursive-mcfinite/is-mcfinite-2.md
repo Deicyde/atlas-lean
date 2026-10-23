@@ -15,7 +15,7 @@ MC-finite.
 ## Depends on
 
 - [Is MCFinite](is-mcfinite.md)
-- [PRecursive Sequence](../../../part-08/is-precursive-sequence.md)
+- [PRecursive Sequence](../../../part-09/is-precursive-sequence.md)
 
 ## Proof depends on
 

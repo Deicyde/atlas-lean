@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.multiplicativeOfPrimePowers_prime_pow
+---
+
+# Multiplicative Of Prime Powers prime pow
+
+`multiplicativeOfPrimePowers g (p ^ m) = g m` for a prime `p` and `m ≥ 1`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.ArithmeticFunction.UnitaryConvolution](../../../../../../../sources/v2/MathlibExt.md)
+- Emil Daniel Schwab, *Fibonacci Numbers via Dirichlet Convolution and Lucas Numbers via Unitary Convolution*, Journal of Integer Sequences 28 (2025), Article 25.1.7, Section 1.3.

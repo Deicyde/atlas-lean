@@ -1,0 +1,24 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.HindleyMilner.ne_node_self_left
+---
+
+# Ne node self left
+
+No monotype is an arrow from itself.
+
+## Depends on
+
+- [Ty](ty.md)
+- [Term](../../../../part-02/unification/basic/term.md)
+
+## Proof depends on
+
+- [Size](../../../../part-02/unification/basic/size.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Languages.LambdaCalculus.HindleyMilner.Typing](../../../../../../../sources/v2/CSLibExt.md)

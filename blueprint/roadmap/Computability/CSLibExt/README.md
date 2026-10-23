@@ -7,6 +7,13 @@ navigation: collection
 
 - [Automata](automata/README.md)
 - [Circuit](circuit/README.md)
+- [Complexity](complexity/README.md)
+- [Decidability](decidability/README.md)
 - [Distributed](distributed/README.md)
+- [Kolmogorov](kolmogorov/README.md)
 - [Languages](languages/README.md)
+- [Machines](machines/README.md)
+- [Busy Beaver](busy-beaver/README.md)
 - [Cook Levin](cook-levin/README.md)
+- [Sat Time M](sat-time-m/README.md)
+- [Time MComplexity](time-mcomplexity/README.md)

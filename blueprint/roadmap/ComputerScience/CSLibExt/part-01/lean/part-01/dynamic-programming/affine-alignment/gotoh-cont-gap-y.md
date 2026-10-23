@@ -1,0 +1,21 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Algorithms.Lean.gotohContGapY
+---
+
+# Gotoh Cont Gap Y
+
+Best score of a suffix alignment given the previous column was a gap in `xs`
+(an open `gapY` run). A continuation value, not an endpoint-restricted matrix:
+the next column may be a match or either gap; the previous state only makes the
+next gap in `xs` cost `gapExtend` instead of `gapOpen`.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.DynamicProgramming.AffineAlignment](../../../../../../../../sources/v2/CSLibExt.md)

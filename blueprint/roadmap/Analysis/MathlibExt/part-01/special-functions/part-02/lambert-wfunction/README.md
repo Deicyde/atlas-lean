@@ -7,3 +7,4 @@ navigation: module
 
 - [Lambert Map](lambert-map.md)
 - [Exists Unique lambert Map preimage](exists-unique-lambert-map-preimage.md)
+- [Exists Unique lambert Map lower preimage](exists-unique-lambert-map-lower-preimage.md)

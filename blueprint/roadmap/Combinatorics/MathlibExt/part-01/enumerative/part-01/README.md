@@ -7,7 +7,7 @@ navigation: transparent
 
 - [Partition](partition/README.md)
 - [Aerated Central Binomial Number](aerated-central-binomial-number.md)
-- [Aigner Motzkin Inequality](aigner-motzkin-ratio-inequality.md)
+- [Aigner Motzkin Inequality](aigner-motzkin-inequality/README.md)
 - [BAry Binomial Coefficient](bary-binomial-coefficient/README.md)
 - [BAry Binomial Generating Function](bary-binomial-generating-function/README.md)
 - [BAry Binomial Symmetry Pascal](bary-binomial-symmetry-pascal/README.md)

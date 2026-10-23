@@ -21,7 +21,7 @@ termwise binomial identity gives the recurrence.
 
 ## Depends on
 
-- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-11/trinomial-coefficient.md)
+- [Trinomial Coefficient](../../../../../../NumberTheory/MathlibExt/part-12/trinomial-coefficient.md)
 
 ## Proof depends on
 

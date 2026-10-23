@@ -39,4 +39,5 @@ article_id: af_3fedaa4200a2bf6c9d3756be
 - [Modified Bessel First Kind](part-02/modified-bessel-first-kind/README.md)
 - [QPochhammer](part-02/qpochhammer/README.md)
 - [Real Power Parametrization](part-02/exists-parametrization-of-rpow-eq-rpow.md)
+- [Sigmoid Log Odds](part-02/sigmoid-log-sub-log.md)
 - [Takagi Function](part-02/takagi-function/README.md)

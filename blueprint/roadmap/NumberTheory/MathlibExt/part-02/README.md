@@ -3,7 +3,7 @@ article_id: af_d8b3797cb53a42ed7ef31e83
 navigation: transparent
 ---
 
-# Polynomial to BNomial Number Type3
+# Polynomial to BNomial Coefficient
 
 - [Polynomial](polynomial/README.md)
 - [Prime Counting](prime-counting/README.md)
@@ -21,7 +21,7 @@ navigation: transparent
 - [Alternating Binomial Transform Harmonic](alternating-binomial-transform-harmonic.md)
 - [Apostol Bernoulli Number](is-apostol-bernoulli-sequence.md)
 - [Appell Sequence](is-appell-sequence.md)
+- [Arithmetic Derivative](arithmetic-derivative/README.md)
 - [Associated Pell Cassini](associated-pell-cassini-identity.md)
 - [BAry Multinomial Coefficient](bary-multinomial-coefficient/README.md)
 - [BNomial Coefficient](bnomial-coefficient/README.md)
-- [BNomial Number Type3](bnomial-number-type3/README.md)

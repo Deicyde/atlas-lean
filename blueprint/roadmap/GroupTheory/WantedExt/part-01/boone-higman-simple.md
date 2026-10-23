@@ -11,7 +11,7 @@ Source: A.V. Kuznetsov, 'Algorithms as operations in algebraic systems', Uspekhi
 
 ## Depends on
 
-- [Word Problem Solvable Shared](../part-02/word-problem-solvable.md)
+- [Word Problem Solvable Shared](../part-03/word-problem-solvable.md)
 
 ## Sources
 

@@ -1,0 +1,22 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: MetaMathlibExt.rCycleStirlingEulerian_small
+---
+
+# R Cycle Stirling Eulerian small
+
+Characteristic values: `A^{(r)}_{0,0} = 1` (the empty permutation),
+`A^{(2)}_{2,1} = 1` (the transposition), `A^{(2)}_{3,1} = 0`, and
+`A^{(3)}_{3,1} = A^{(3)}_{3,2} = 1` (the two 3-cycles).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.Combinatorics.AssociatedStirlingEulerian](../../../../../sources/v2/MathlibExt.md)
+- Imboa-Navalona Manjaka Rakotoson and Fanja Rakotondrajao, *Associated Stirling Eulerian Numbers and Their q-Analogues*, Journal of Integer Sequences 28 (2025), Article 25.5.7, Theorem 20 and Corollary 25.

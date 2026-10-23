@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Euler Seidel Matrix](../../part-02/euler-seidel-matrix/euler-seidel-matrix.md)
+- [Euler Seidel Matrix](../../part-03/euler-seidel-matrix/euler-seidel-matrix.md)
 - [Median Euler Initial Row](median-euler-initial-row.md)
 
 ## Sources

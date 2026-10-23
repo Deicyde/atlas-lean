@@ -1,0 +1,10 @@
+---
+navigation: module
+---
+
+# Starlike Coefficient Successive Difference
+
+- [Is In Class S](is-in-class-s.md)
+- [Is Starlike](is-starlike.md)
+- [Conjecture](conjecture.md)
+- [Conjecture holds](conjecture-holds.md)

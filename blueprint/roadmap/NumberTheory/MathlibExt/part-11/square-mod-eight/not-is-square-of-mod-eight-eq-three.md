@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Nat.not_isSquare_of_mod_eight_eq_three
+---
+
+# Not is Square of mod eight eq three
+
+A natural number congruent to `3` mod 8 is not a square.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [MathlibExt, MathlibExt.NumberTheory.SquareModEight](../../../../../sources/v2/MathlibExt.md)

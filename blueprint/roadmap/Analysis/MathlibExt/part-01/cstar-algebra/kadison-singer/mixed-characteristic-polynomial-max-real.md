@@ -39,7 +39,6 @@ $A_1, \dots, A_m$ is at most $(1 + \sqrt{\eta})^2$.
 - [Univariate specialization at real values preserves real coefficients](../../../../../Algebra/MathlibExt/mv-polynomial/stable/map-star-univariate-specialization.md)
 - [Mixed differential operator](../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential.md)
 - [Mixed differential along a list with a given first index](../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/mixed-differential-cons.md)
-- [Partial derivatives commute](../../../../../Algebra/MathlibExt/mv-polynomial/pderiv/pderiv-comm.md)
 - [Univariate specialization](../../../../../Algebra/MathlibExt/mv-polynomial/stable/univariate-specialization.md)
 - [Real-rooted polynomials](../../../../../Algebra/MathlibExt/polynomial/real-rooted/is-real-rooted.md)
 - [For a real-rooted polynomial, the largest real part of a root is a root](../../../../../Algebra/MathlibExt/polynomial/real-rooted/coe-max-real-root-mem-roots.md)

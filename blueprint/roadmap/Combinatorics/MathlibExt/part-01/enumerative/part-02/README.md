@@ -3,7 +3,7 @@ article_id: af_758d089851f89b0479749e59
 navigation: transparent
 ---
 
-# Catalan Harmonic Generating Function to Euler Seidel Matrix
+# Catalan Harmonic Generating Function to Engel Bell Log Convexity
 
 - [Catalan Harmonic Generating Function](catalan-harmonic-generating-function/README.md)
 - [Catalan Larcombe French Number](catalan-larcombe-french-number.md)
@@ -23,5 +23,5 @@ navigation: transparent
 - [Domb Number](domb-number/README.md)
 - [Domino Tiling Sequence Factorization](domino-tiling-sequence-factorization.md)
 - [Double Binomial Sum Reduction](double-binomial-sum-eq-single-binomial-s.md)
+- [Dyck Peak Descents](dyck-peak-descents/README.md)
 - [Engel Bell Log Convexity](engel-bell-log-convexity.md)
-- [Euler Seidel Matrix](euler-seidel-matrix/README.md)

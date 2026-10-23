@@ -15,6 +15,7 @@ article_id: af_de0add6955b0899bf1c1b9e8
 - [Partition Polynomial](partition-polynomial/README.md)
 - [Partition Polynomial Derivatives](partition-polynomial-derivatives/README.md)
 - [Peak Generating Function](peak-generating-function/README.md)
+- [QEuler Product](qeuler-product/README.md)
 - [Ramanujan Partition Congruence](ramanujan-partition-congruence/README.md)
 - [Ramanujan Partition Congruence Mod Eleven](ramanujan-partition-congruence-mod-eleve.md)
 - [Restricted Growth Word Generating Function](restricted-growth-word-monomial-generati.md)

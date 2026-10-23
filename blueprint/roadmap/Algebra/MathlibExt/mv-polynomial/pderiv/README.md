@@ -5,7 +5,6 @@ navigation: module
 
 # PDeriv
 
-- [Partial derivatives commute](pderiv-comm.md)
 - [Mixed differential operator](mixed-differential.md)
 - [Mixed differential along the empty list](mixed-differential-nil.md)
 - [Mixed differential along a list with a given first index](mixed-differential-cons.md)

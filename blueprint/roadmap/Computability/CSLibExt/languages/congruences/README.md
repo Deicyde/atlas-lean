@@ -1,0 +1,16 @@
+# Congruences
+
+- [Brzozowski](brzozowski/README.md)
+- [Contexts](contexts/README.md)
+- [Hopcroft](hopcroft/README.md)
+- [Minimality](minimality/README.md)
+- [Minimization](minimization/README.md)
+- [Moore](moore/README.md)
+- [Morphisms](morphisms/README.md)
+- [Nerode](nerode/README.md)
+- [Quotients](quotients/README.md)
+- [Recognition](recognition/README.md)
+- [Regularity](regularity/README.md)
+- [Syntactic](syntactic/README.md)
+- [Universal](universal/README.md)
+- [Word Morphisms](word-morphisms/README.md)

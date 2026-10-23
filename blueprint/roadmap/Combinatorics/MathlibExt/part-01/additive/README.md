@@ -12,6 +12,7 @@ article_id: af_9593d6f1d31234ddd6db5cd5
 - [Minimum Restricted Additive Basis](minimum-restricted-additive-basis/README.md)
 - [No Small Sum Dominant Set](no-small-sum-dominant-set/README.md)
 - [Representation Count](representation-count/README.md)
+- [Restricted Signed Sumset](restricted-signed-sumset/README.md)
 - [Sarkozy](sarkozy/README.md)
 - [Sidon](is-sidon.md)
 - [Singer Difference Set](singer-cyclic-difference-set-exists.md)
@@ -19,3 +20,4 @@ article_id: af_9593d6f1d31234ddd6db5cd5
 - [Szemeredi](szemeredi.md)
 - [Van Der Waerden AP](van-der-waerden.md)
 - [Vosper Theorem](vosper-eq-iff.md)
+- [Weighted Davenport](weighted-davenport/README.md)

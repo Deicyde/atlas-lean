@@ -1,0 +1,22 @@
+---
+declaration: abbrev
+origin: cited
+statement: formalized
+lean: Cslib.HindleyMilner.Ty
+---
+
+# Ty
+
+Monotypes: type variables, base types, and arrows (`node`).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Proof depends on
+
+- [Term](../../../../part-02/unification/basic/term.md)
+
+## Sources
+
+- [CSLibExt, CSLibExt.Languages.LambdaCalculus.HindleyMilner.Typing](../../../../../../../sources/v2/CSLibExt.md)

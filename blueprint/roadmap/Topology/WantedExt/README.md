@@ -5,11 +5,13 @@ navigation: collection
 
 # WantedExt
 
-## [Annulus Shared to Hurewicz](part-01/README.md)
+## [Manifold to Hopf Invariant One Wanted](part-01/README.md)
 
+- [Manifold](part-01/manifold/README.md)
 - [Annulus Shared](part-01/annulus-shared/README.md)
 - [Annulus Theorem Dim Four Wanted](part-01/annulus-theorem-dim-four.md)
 - [Annulus Theorem High Dim Wanted](part-01/annulus-theorem-high-dim.md)
+- [Arithmetical Self Similar Compact Set](part-01/arithmetical-self-similar-compact-set-wanted/README.md)
 - [Aspherical Homology Sphere](part-01/aspherical-homology-sphere-wanted/README.md)
 - [Aut Fn Finite Index Positive Betti](part-01/aut-fn-finite-index-positive-betti-wanted/README.md)
 - [Aut Fn Finite Index Property FA](part-01/aut-fn-finite-index-property-fawanted/README.md)
@@ -25,13 +27,14 @@ navigation: collection
 - [Hilbert Smith3 DWanted](part-01/hilbert-smith-padic-dimension-three.md)
 - [Homotopy Groups Wanted](part-01/pi1-circle-mul-equiv-int.md)
 - [Hopf Invariant One Wanted](part-01/h-space-sphere-iff.md)
-- [House With Two Rooms](part-01/house-with-two-rooms-wanted/README.md)
-- [Hurewicz](part-01/hurewicz-wanted/README.md)
 
-## [Kirk Normal Structure to Watanabe Smale Disproof Wanted](part-02/README.md)
+## [House With Two Rooms to Scottish Book136 Wanted](part-02/README.md)
 
+- [House With Two Rooms](part-02/house-with-two-rooms-wanted/README.md)
+- [Hurewicz](part-02/hurewicz-wanted/README.md)
 - [Kirk Normal Structure](part-02/kirk-normal-structure-wanted/README.md)
 - [Linking Wanted](part-02/exists-nonisotopic-link.md)
+- [Macias Arithmetic Progressions](part-02/macias-arithmetic-progressions-wanted/README.md)
 - [Macias Coprime Topology](part-02/macias-coprime-topology-wanted/README.md)
 - [Manolescu Triangulation](part-02/manolescu-triangulation-wanted/README.md)
 - [Milnor Exotic Sphere Seven Wanted](part-02/milnor-exotic-sphere-seven.md)
@@ -46,6 +49,19 @@ navigation: collection
 - [Poincare4 DTopological Wanted](part-02/poincare-4d-topological.md)
 - [Poincare High Dim Topological Wanted](part-02/poincare-high-dim-topological.md)
 - [Quadrisecant](part-02/quadrisecant-wanted/README.md)
-- [Slice Dichotomy Wanted](part-02/exists-topologically-slice-not-smoothly.md)
-- [Smale Conjecture Wanted](part-02/smale-conjecture.md)
-- [Watanabe Smale Disproof Wanted](part-02/watanabe-four-dim-smale-disproof.md)
+- [Scottish Book136 Wanted](part-02/kolmogorov-interior-map-raises-dimension.md)
+
+## [Scottish Book138 to Watanabe Smale Disproof Wanted](part-03/README.md)
+
+- [Scottish Book138](part-03/scottish-book138-wanted/README.md)
+- [Scottish Book175](part-03/scottish-book175-wanted/README.md)
+- [Scottish Book183](part-03/scottish-book183-wanted/README.md)
+- [Scottish Book187b](part-03/scottish-book187b-wanted/README.md)
+- [Scottish Book187c](part-03/scottish-book187c-wanted/README.md)
+- [Scottish Book42](part-03/scottish-book42-wanted/README.md)
+- [Scottish Book43](part-03/scottish-book43-wanted/README.md)
+- [Scottish Book46 Wanted](part-03/sphere-in-banach-space-is-unicoherent.md)
+- [Scottish Book52](part-03/scottish-book52-wanted/README.md)
+- [Slice Dichotomy Wanted](part-03/exists-topologically-slice-not-smoothly.md)
+- [Smale Conjecture Wanted](part-03/smale-conjecture.md)
+- [Watanabe Smale Disproof Wanted](part-03/watanabe-four-dim-smale-disproof.md)

@@ -6,6 +6,8 @@ navigation: collection
 # WantedExt
 
 - [Algebraic](algebraic/README.md)
+- [NPComplete](npcomplete/README.md)
+- [Busy Beaver](busy-beaver-wanted/README.md)
 - [Co CStrong Normalization](co-cstrong-normalization-wanted/README.md)
 - [Cook–Levin theorem: SAT is NP-complete](cook-levin-sat-np-complete.md)
 - [Integer Multiplication](integer-multiplication-wanted/README.md)

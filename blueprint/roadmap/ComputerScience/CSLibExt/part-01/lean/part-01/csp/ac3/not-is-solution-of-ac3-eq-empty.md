@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Algorithms.Lean.ArcConsistency.not_isSolution_of_ac3_eq_empty
+---
+
+# Not is Solution of ac3 eq empty
+
+If AC-3 empties a domain, the problem has no solution.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Algorithms.Lean.CSP.AC3](../../../../../../../../sources/v2/CSLibExt.md)

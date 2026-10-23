@@ -3,12 +3,17 @@ article_id: af_bd5c8c5b85a1b6bf901df2d3
 navigation: transparent
 ---
 
-# Domination to List Coloring
+# Degeneracy Coloring to Hamiltonian Cycle
 
+- [Degeneracy Coloring](degeneracy-coloring/README.md)
+- [Deza](deza/README.md)
+- [Dichromatic](dichromatic/README.md)
+- [Dirac](dirac.md)
 - [Domination](domination/README.md)
 - [Edge Coloring](edge-coloring/README.md)
 - [Edge Graceful](edge-graceful/README.md)
 - [Edge Indexed Multigraph](edge-indexed-multigraph/README.md)
+- [Edge Transposition Graph](edge-transposition-graph.md)
 - [Erdos Gallai](erdos-gallai.md)
 - [Erdos Girth Chromatic](erdos-high-girth-chromatic.md)
 - [Euler Circuit](euler-circuit/README.md)
@@ -17,11 +22,6 @@ navigation: transparent
 - [Fleischner Strong](has-strong-square-cycle.md)
 - [Frucht](frucht.md)
 - [Generalized Extremal](generalized-extremal/README.md)
+- [Generalized Johnson](johnson-graph.md)
 - [Hajnal Szemeredi](hajnal-szemeredi/README.md)
 - [Hamiltonian Cycle](of-cyclic-list.md)
-- [Hypercube Extremal](hypercube-extremal/README.md)
-- [Induced Forest Number](induced-forest-number/README.md)
-- [Johnson](johnson/README.md)
-- [Kneser Lovasz](kneser-lovasz/README.md)
-- [Konig Matching Cover](konig-matching-cover/README.md)
-- [List Coloring](list-coloring/README.md)

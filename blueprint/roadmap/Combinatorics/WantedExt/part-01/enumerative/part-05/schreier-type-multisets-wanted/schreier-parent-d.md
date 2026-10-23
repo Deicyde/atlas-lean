@@ -1,0 +1,21 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.schreierParentD
+---
+
+# Schreier Parent D
+
+The parent sequence `d_{u,n}`: `1` for `n ≤ 2u - 1`, and `d_{u,n} = d_{u,n-u} + d_{u,n-2u+1}`
+for `n ≥ 2u` (the paper takes `u ≥ 2` and indexes from `n = 1`; here `d_{u,0} = 1`, and the
+degenerate `u = 0` is set to `1`).
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.Enumerative.SchreierTypeMultisetsWanted](../../../../../../../sources/v2/WantedExt.md)
+- Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Section 4 (definition of `d_{u,n}`).

@@ -3,9 +3,10 @@ article_id: af_b1385140a5dce86848f6c5ce
 navigation: transparent
 ---
 
-# Burnside Paqb to Group Growth
+# Burnside Paqb to General Linear Group Exponent
 
 - [Burnside Paqb](burnside-paqb/README.md)
+- [Finite Abelian](finite-abelian/README.md)
 - [Group Action](group-action/README.md)
 - [Permutation](permutation/README.md)
 - [Specific Groups](specific-groups/README.md)
@@ -24,4 +25,3 @@ navigation: transparent
 - [Finite Group Convolution](finite-group-convolution/README.md)
 - [GHarmonic](gharmonic/README.md)
 - [General Linear Group Exponent](general-linear-group-exponent-eq-lcm-eq.md)
-- [Group Growth](group-growth/README.md)

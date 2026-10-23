@@ -6,6 +6,7 @@ article_id: af_74cd9464950bca3c6942edc1
 
 - [Bessel Polynomial](bessel-polynomial/README.md)
 - [Coefficients of the Chebyshev polynomials of the second kind](chebyshev-u-coeff-eq-binomial-sum.md)
+- [Coefficient Denominator](coefficient-denominator/README.md)
 - [Monic polynomials close in L1 norm have the same degree](nat-degree-eq-of-monic-of-l1-norm-sub-lt.md)
 - [Favard's theorem, forward direction](favard-forward.md)
 - [Favard Iff](favard-iff.md)

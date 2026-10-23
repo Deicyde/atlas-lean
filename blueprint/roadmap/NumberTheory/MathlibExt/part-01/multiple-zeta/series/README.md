@@ -19,3 +19,5 @@ navigation: module
 - [Star Summand to Weakly Decreasing](star-summand-to-weakly-decreasing.md)
 - [Star Value](star-value.md)
 - [Star Value empty](star-value-empty.md)
+- [Replicate](replicate.md)
+- [Replicate is Admissible Or Empty](replicate-is-admissible-or-empty.md)

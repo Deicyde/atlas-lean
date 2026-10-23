@@ -18,7 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Comap eq base maximal of is Adic Complete of is Integral](comap-eq-base-maximal-of-is-adic-complet.md)
-- [Exists monic coprime factorization of is Adic Complete](../../../../NumberTheory/MathlibExt/part-06/hensel-factorization/exists-monic-coprime-factorization-of-is.md)
+- [Exists monic coprime factorization of is Adic Complete](../../../../NumberTheory/MathlibExt/part-07/hensel-factorization/exists-monic-coprime-factorization-of-is.md)
 
 ## Sources
 

@@ -3,13 +3,14 @@ article_id: af_4aa2dd86738af4346c1c38bf
 navigation: transparent
 ---
 
-# Combinatorics to Hoeffding Binomial Lower Tail
+# Combinatorics to Hewitt Savage
 
 - [Combinatorics](combinatorics/README.md)
 - [Distributions](distributions/README.md)
 - [Finance](finance/README.md)
 - [Geometry](geometry/README.md)
 - [Number Theory](number-theory/README.md)
+- [Probability Mass Function](probability-mass-function/README.md)
 - [Statistics](statistics/README.md)
 - [Berry Esseen](berry-esseen/README.md)
 - [Berry Esseen Constant](berry-esseen-constant/README.md)
@@ -22,6 +23,5 @@ navigation: transparent
 - [De Finetti](de-finetti-binary.md)
 - [Donsker](donsker/README.md)
 - [Efron Stein](efron-stein/README.md)
+- [Finite Weight](finite-weight/README.md)
 - [Hewitt Savage](hewitt-savage/README.md)
-- [Hoeffding Bernoulli Sum Abs Tail](hoeffding-bernoulli-sum-abs-tail.md)
-- [Hoeffding Binomial Lower Tail](hoeffding-binomial-lower-tail.md)

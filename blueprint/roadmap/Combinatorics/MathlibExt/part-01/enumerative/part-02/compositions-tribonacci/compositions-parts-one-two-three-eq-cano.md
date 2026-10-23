@@ -16,7 +16,7 @@ Proof: Specialize `compositions_parts_one_two_three_eq_tribonacci` to
 
 ## Depends on
 
-- [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-11/tribonacci.md)
+- [Tribonacci Sequence With Initial Values001](../../../../../../NumberTheory/MathlibExt/part-12/tribonacci.md)
 
 ## Proof depends on
 

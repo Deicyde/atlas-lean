@@ -12,7 +12,7 @@ Source: W. W. Boone & G. Higman, *An algebraic characterization of groups with s
 
 ## Depends on
 
-- [Word Problem Solvable Shared](../part-02/word-problem-solvable.md)
+- [Word Problem Solvable Shared](../part-03/word-problem-solvable.md)
 
 ## Sources
 

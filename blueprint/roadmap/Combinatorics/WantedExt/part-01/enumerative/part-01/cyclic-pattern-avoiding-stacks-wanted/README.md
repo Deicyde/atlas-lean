@@ -1,0 +1,37 @@
+---
+navigation: module
+---
+
+# Cyclic Pattern Avoiding Stacks
+
+- [Same Relative Order](same-relative-order.md)
+- [Contains Pattern Seq](contains-pattern-seq.md)
+- [Contains Consecutive Pattern Seq](contains-consecutive-pattern-seq.md)
+- [Restricted Stack Sort Aux](restricted-stack-sort-aux.md)
+- [West Stack Sort](west-stack-sort.md)
+- [Cyclic Stack Sort](cyclic-stack-sort.md)
+- [Consecutive Cyclic Stack Sort](consecutive-cyclic-stack-sort.md)
+- [Cyclic Sorting Machine](cyclic-sorting-machine.md)
+- [Stack Sort examples](stack-sort-examples.md)
+- [Standardize Seq](standardize-seq.md)
+- [Consecutive Run Heads](consecutive-run-heads.md)
+- [Reduction Seq](reduction-seq.md)
+- [Standardize Seq reduction Seq examples](standardize-seq-reduction-seq-examples.md)
+- [Superimpose Push](superimpose-push.md)
+- [Superimpose](superimpose.md)
+- [Superimpose examples](superimpose-examples.md)
+- [Xi Permutation](xi-permutation.md)
+- [Xi Permutation six seven](xi-permutation-six-seven.md)
+- [Is Good Seq](is-good-seq.md)
+- [Sorted Permutations](sorted-permutations.md)
+- [Is Good Seq consecutive Cyclic Stack Sort examples](is-good-seq-consecutive-cyclic-stack-sor.md)
+- [Cyclic Sorting Machine 123 iterate sorts](cyclic-sorting-machine-123-iterate-sorts.md)
+- [Cyclic Sorting Machine 321 identity orbit period](cyclic-sorting-machine-321-identity-orbi.md)
+- [Sorted Permutations consecutive Cyclic Stack Sort 123](sorted-permutations-consecutive-cyclic-s.md)
+- [Card sorted Permutations consecutive Cyclic Stack Sort 321](card-sorted-permutations-consecutive-cyc.md)
+- [Reduction Seq cyclic Sorting Machine 123 reduction Seq](reduction-seq-cyclic-sorting-machine-123.md)
+- [Cyclic Sorting Machine 123 iterate eq id iff reduction Seq](cyclic-sorting-machine-123-iterate-eq-id.md)
+- [Length reduction Seq cyclic Sorting Machine 123 lt](length-reduction-seq-cyclic-sorting-mach.md)
+- [Cyclic Sorting Machine 321 superimpose](cyclic-sorting-machine-321-superimpose.md)
+- [Head tail of mem sorted Permutations consecutive Cyclic Stack Sort 321](head-tail-of-mem-sorted-permutations-con.md)
+- [Mem sorted Permutations consecutive Cyclic Stack Sort 321 iff](mem-sorted-permutations-consecutive-cycl.md)

@@ -1,0 +1,35 @@
+---
+navigation: module
+---
+
+# Unit Weighted Zero Sum Constants
+
+- [Davenport prod ring ge](davenport-prod-ring-ge.md)
+- [Davenport prod ge](davenport-prod-ge.md)
+- [Consecutive prod ring ge](consecutive-prod-ring-ge.md)
+- [Consecutive prod ge](consecutive-prod-ge.md)
+- [Consecutive constant eq card](consecutive-constant-eq-card.md)
+- [Exists consecutive orthogonal](exists-consecutive-orthogonal.md)
+- [Exists consecutive even inter](exists-consecutive-even-inter.md)
+- [Unit Weighted Zero Sum of even non Divisible](unit-weighted-zero-sum-of-even-non-divis.md)
+- [Davenport zmod two pow](davenport-zmod-two-pow.md)
+- [Exists ne zero orthogonal](exists-ne-zero-orthogonal.md)
+- [Exists nonempty even inter](exists-nonempty-even-inter.md)
+- [Exists zero Sum card zmod two pow](exists-zero-sum-card-zmod-two-pow.md)
+- [Exists weight orthogonal](exists-weight-orthogonal.md)
+- [Exists card even inter](exists-card-even-inter.md)
+- [Exists unit Weighted Zero Sum card](exists-unit-weighted-zero-sum-card.md)
+- [Exists weight mem subspace](exists-weight-mem-subspace.md)
+- [Max finrank avoiding weight](max-finrank-avoiding-weight.md)
+- [Gao unit constant of even](gao-unit-constant-of-even.md)
+- [E Extremal of unit Equiv profile](e-extremal-of-unit-equiv-profile.md)
+- [Unit Equiv profile of e Extremal](unit-equiv-profile-of-e-extremal.md)
+- [Unit Weighted Zero Sum of even units](unit-weighted-zero-sum-of-even-units.md)
+- [Unit Weighted Zero Sum of div prime](unit-weighted-zero-sum-of-div-prime.md)
+- [C Extremal iff halves](c-extremal-iff-halves.md)
+- [Consecutive interval weights](consecutive-interval-weights.md)
+- [Consecutive odd weights](consecutive-odd-weights.md)
+- [Davenport unit pow le](davenport-unit-pow-le.md)
+- [Pair no weighted Zero Sum iff](pair-no-weighted-zero-sum-iff.md)
+- [Davenport proper subgroup ge three](davenport-proper-subgroup-ge-three.md)
+- [Davenport unit pow ge three](davenport-unit-pow-ge-three.md)

@@ -1,0 +1,19 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+proof: formalized
+lean: Cslib.Complexity.Karp.HamVerify.decodeW_of_some
+---
+
+# Decode W of some
+
+A first number, then the rest.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Computability.Complexity.Karp.HamPathCheck](../../../../../../../sources/v2/CSLibExt.md)

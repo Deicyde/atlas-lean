@@ -19,8 +19,8 @@ lean: MathlibExt.Combinatorics.BinaryChvatalSankoffWanted.lcsLength_isGreatest
 
 ## Proof depends on
 
-- [Longest Common Subsequence](../../../../ComputerScience/CSLibExt/lean/dynamic-programming/longest-common-subsequence/longest-common-subsequence.md)
-- [Longest Common Subsequence correct](../../../../ComputerScience/CSLibExt/lean/dynamic-programming/longest-common-subsequence/longest-common-subsequence-correct.md)
+- [Longest Common Subsequence](../../../../ComputerScience/CSLibExt/part-01/lean/part-01/dynamic-programming/longest-common-subsequence/longest-common-subsequence.md)
+- [Longest Common Subsequence correct](../../../../ComputerScience/CSLibExt/part-01/lean/part-01/dynamic-programming/longest-common-subsequence/longest-common-subsequence-correct.md)
 - [Is Common Subsequence](is-common-subsequence.md)
 
 ## Sources

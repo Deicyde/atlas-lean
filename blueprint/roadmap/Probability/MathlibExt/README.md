@@ -5,13 +5,14 @@ navigation: collection
 
 # MathlibExt
 
-## [Combinatorics to Hoeffding Binomial Lower Tail](part-01/README.md)
+## [Combinatorics to Hewitt Savage](part-01/README.md)
 
 - [Combinatorics](part-01/combinatorics/README.md)
 - [Distributions](part-01/distributions/README.md)
 - [Finance](part-01/finance/README.md)
 - [Geometry](part-01/geometry/README.md)
 - [Number Theory](part-01/number-theory/README.md)
+- [Probability Mass Function](part-01/probability-mass-function/README.md)
 - [Statistics](part-01/statistics/README.md)
 - [Berry Esseen](part-01/berry-esseen/README.md)
 - [Berry Esseen Constant](part-01/berry-esseen-constant/README.md)
@@ -24,12 +25,14 @@ navigation: collection
 - [De Finetti](part-01/de-finetti-binary.md)
 - [Donsker](part-01/donsker/README.md)
 - [Efron Stein](part-01/efron-stein/README.md)
+- [Finite Weight](part-01/finite-weight/README.md)
 - [Hewitt Savage](part-01/hewitt-savage/README.md)
-- [Hoeffding Bernoulli Sum Abs Tail](part-01/hoeffding-bernoulli-sum-abs-tail.md)
-- [Hoeffding Binomial Lower Tail](part-01/hoeffding-binomial-lower-tail.md)
 
-## [Khintchine Inequality to Strassen Coupling](part-02/README.md)
+## [Hoeffding Bernoulli Sum Abs Tail to Strassen Coupling](part-02/README.md)
 
+- [Hoeffding Bernoulli Sum Abs Tail](part-02/hoeffding-bernoulli-sum-abs-tail.md)
+- [Hoeffding Binomial Lower Tail](part-02/hoeffding-binomial-lower-tail.md)
+- [Joint Law](part-02/map-prod-mk-apply-prod.md)
 - [Khintchine Inequality](part-02/khintchine-inequality.md)
 - [Kolmogorov Extension](part-02/kolmogorov-extension.md)
 - [Kolmogorov Maximal](part-02/kolmogorov-maximal-inequality.md)
@@ -38,7 +41,10 @@ navigation: collection
 - [Levy Khintchin](part-02/levy-khintchin.md)
 - [Mc Diarmid](part-02/mc-diarmid/README.md)
 - [Mean Short Chords](part-02/mean-short-chords-in-linear-k-chord-diag.md)
+- [Median](part-02/median/README.md)
+- [Monte Carlo Rate](part-02/variance-sample-mean-of-iid.md)
 - [The Paley-Zygmund Inequality](part-02/paley-zygmund.md)
+- [Probability Generating Function](part-02/probability-generating-function/README.md)
 - [Product Bond Percolation](part-02/product-bond-percolation/README.md)
 - [Quantile](part-02/quantile/README.md)
 - [Skorokhod Representation](part-02/skorokhod-representation.md)

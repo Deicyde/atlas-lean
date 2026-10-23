@@ -1,0 +1,20 @@
+---
+declaration: theorem
+origin: cited
+statement: formalized
+lean: MetaMathlibExt.isLunarPrime_of_indecomposable_candidate
+---
+
+# Is Lunar Prime of indecomposable candidate
+
+Lemma 30 (Applegate, LeBrun and Sloane): an indecomposable prime candidate of `ℬ_b[x]` is
+prime.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [WantedExt, WantedExt.Combinatorics.Additive.MaxMinIndecomposabilityWanted](../../../../../../sources/v2/WantedExt.md)
+- Baily, Dell, Fleischmann, Jackson, Pesikoff, Miller and Reifenberg, *Indecomposability Over the Max-Min Semiring*, Journal of Integer Sequences 28 (2025), Article 25.2.7, Lemma 30 (`jis-2025-25.2.7-lem-30`).

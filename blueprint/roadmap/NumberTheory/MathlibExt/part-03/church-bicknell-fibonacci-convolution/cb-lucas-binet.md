@@ -13,7 +13,7 @@ Binet's formula for the Lucas numbers.
 
 ## Depends on
 
-- [Lucas Number](../../part-07/lucas-sequence/lucas-number.md)
+- [Lucas Number](../../part-08/lucas-sequence/lucas-number.md)
 
 ## Sources
 

@@ -1,0 +1,38 @@
+---
+navigation: module
+---
+
+# Stirling Lucky Displacement
+
+- [Stirling Pref](stirling-pref.md)
+- [Stirling Park Spot](stirling-park-spot.md)
+- [Stirling Lucky Set](stirling-lucky-set.md)
+- [Stirling Displacement](stirling-displacement.md)
+- [Stirling Total Displacement](stirling-total-displacement.md)
+- [Is Admissible Lucky Set](is-admissible-lucky-set.md)
+- [Stirling Lucky Set small](stirling-lucky-set-small.md)
+- [Stirling Displacement small](stirling-displacement-small.md)
+- [Stirling Lucky Set basic](stirling-lucky-set-basic.md)
+- [Stirling Lucky Set eq singleton iff](stirling-lucky-set-eq-singleton-iff.md)
+- [Card extremely unlucky stirling](card-extremely-unlucky-stirling.md)
+- [Stirling Lucky Set card eq iff](stirling-lucky-set-card-eq-iff.md)
+- [Extremely lucky stirling equiv dyck Word](extremely-lucky-stirling-equiv-dyck-word.md)
+- [Card extremely lucky stirling](card-extremely-lucky-stirling.md)
+- [Succ](succ.md)
+- [One mem and two mul not mem](one-mem-and-two-mul-not-mem.md)
+- [Stirling Park Spot before second lucky](stirling-park-spot-before-second-lucky.md)
+- [Stirling odd of lt all before](stirling-odd-of-lt-all-before.md)
+- [Stirling second lucky odd](stirling-second-lucky-odd.md)
+- [Stirling second lucky pref](stirling-second-lucky-pref.md)
+- [Stirling first pref ge lucky](stirling-first-pref-ge-lucky.md)
+- [Stirling penultimate lucky iff](stirling-penultimate-lucky-iff.md)
+- [Is Admissible Lucky Set pair iff](is-admissible-lucky-set-pair-iff.md)
+- [Ncard admissible Lucky Set card two](ncard-admissible-lucky-set-card-two.md)
+- [Stirling second lucky eq n](stirling-second-lucky-eq-n.md)
+- [Is Admissible Lucky Set one pred two mul sub two iff](is-admissible-lucky-set-one-pred-two-mul.md)
+- [Stirling Total Displacement comp perm](stirling-total-displacement-comp-perm.md)
+- [Stirling Total Displacement eq](stirling-total-displacement-eq.md)
+- [Stirling card zero displacement](stirling-card-zero-displacement.md)
+- [Extremely lucky unlucky car](extremely-lucky-unlucky-car.md)
+- [Extremely lucky eq of displacement eq](extremely-lucky-eq-of-displacement-eq.md)
+- [Card stirling displacement nonzero parts](card-stirling-displacement-nonzero-parts.md)

@@ -1,0 +1,36 @@
+---
+navigation: module
+---
+
+# Absolute Lucas Pseudoprimes
+
+- [Jacobi Sym prime add mul eq](jacobi-sym-prime-add-mul-eq.md)
+- [Mul dvd prod sub sign iff](mul-dvd-prod-sub-sign-iff.md)
+- [Is DCarmichael](is-dcarmichael.md)
+- [Not prime](not-prime.md)
+- [Not is DCarmichael five nine](not-is-dcarmichael-five-nine.md)
+- [Lucas Digit Sum](lucas-digit-sum.md)
+- [Lucas Digit Sum five seven 6601](lucas-digit-sum-five-seven-6601.md)
+- [Is Primary DCarmichael](is-primary-dcarmichael.md)
+- [Is Secondary DCarmichael](is-secondary-dcarmichael.md)
+- [Is DCarmichael](is-dcarmichael-2.md)
+- [Is Signature Carmichael](is-signature-carmichael.md)
+- [Not is Signature Carmichael four](not-is-signature-carmichael-four.md)
+- [Is Universal Linear DForm](is-universal-linear-dform.md)
+- [Not is Universal Linear DForm mul succ](not-is-universal-linear-dform-mul-succ.md)
+- [Is DCarmichael iff korselt](is-dcarmichael-iff-korselt.md)
+- [Infinite primary carmichael of prime KTuples](infinite-primary-carmichael-of-prime-ktu.md)
+- [Is Signature Carmichael iff](is-signature-carmichael-iff.md)
+- [Two Factor is DCarmichael](two-factor-is-dcarmichael.md)
+- [Is Universal Linear DForm chernick](is-universal-linear-dform-chernick.md)
+- [Infinite primary five Carmichael of prime KTuples](infinite-primary-five-carmichael-of-prim.md)
+- [Three QR is DCarmichael iff](three-qr-is-dcarmichael-iff.md)
+- [Primary Five Carmichael pairs of prime KTuples](primary-five-carmichael-pairs-of-prime-k.md)
+- [Primary Thirteen Carmichael pairs of prime KTuples](primary-thirteen-carmichael-pairs-of-pri.md)
+- [Universal five Thirteen forms](universal-five-thirteen-forms.md)
+- [Infinite primary five neg Eleven of schinzel H](infinite-primary-five-neg-eleven-of-schi.md)
+- [Is DCarmichael opposite signs](is-dcarmichael-opposite-signs.md)
+- [Jacobi Sym eq of is DCarmichael three](jacobi-sym-eq-of-is-dcarmichael-three.md)
+- [Mul dvd prod sub sign of mod Eq](mul-dvd-prod-sub-sign-of-mod-eq.md)
+- [Three QR is DCarmichael divisibility](three-qr-is-dcarmichael-divisibility.md)
+- [Is DCarmichael mul iff](is-dcarmichael-mul-iff.md)

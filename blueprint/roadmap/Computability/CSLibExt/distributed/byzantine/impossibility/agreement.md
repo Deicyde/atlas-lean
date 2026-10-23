@@ -1,0 +1,19 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Distributed.Byzantine.Impossibility.OralProtocol.Agreement
+---
+
+# Agreement
+
+Condition IC1 (agreement) after `T` rounds: all loyal lieutenants decide the same
+value.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Computability.Distributed.Byzantine.Impossibility](../../../../../../sources/v2/CSLibExt.md)

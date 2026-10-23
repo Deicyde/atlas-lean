@@ -1,0 +1,38 @@
+---
+navigation: module
+---
+
+# Irvine Conjecture
+
+- [Kimberling Morphism](kimberling-morphism.md)
+- [Kimberling Block](kimberling-block.md)
+- [Kimberling Block one](kimberling-block-one.md)
+- [Kimberling Block two](kimberling-block-two.md)
+- [Kimberling Block prefix succ](kimberling-block-prefix-succ.md)
+- [Kimberling Block prefix](kimberling-block-prefix.md)
+- [Two pow le length kimberling Block](two-pow-le-length-kimberling-block.md)
+- [Kimberling Word](kimberling-word.md)
+- [Kimberling Word eq get D](kimberling-word-eq-get-d.md)
+- [Kimberling Word initial](kimberling-word-initial.md)
+- [Kimberling Word hundred](kimberling-word-hundred.md)
+- [Gutkovskiy Table](gutkovskiy-table.md)
+- [Gutkovskiy](gutkovskiy.md)
+- [Size gutkovskiy Table](size-gutkovskiy-table.md)
+- [Get D gutkovskiy Table](get-d-gutkovskiy-table.md)
+- [Gutkovskiy le](gutkovskiy-le.md)
+- [Gutkovskiy succ](gutkovskiy-succ.md)
+- [Gutkovskiy initial](gutkovskiy-initial.md)
+- [Gutkovskiy hundred](gutkovskiy-hundred.md)
+- [Kimberling One Position](kimberling-one-position.md)
+- [Kimberling Zero Position](kimberling-zero-position.md)
+- [Kimberling One Position one](kimberling-one-position-one.md)
+- [Kimberling Zero Position one](kimberling-zero-position-one.md)
+- [Kimberling Block eq append](kimberling-block-eq-append.md)
+- [Gutkovskiy eq sum kimberling Word](gutkovskiy-eq-sum-kimberling-word.md)
+- [Gutkovskiy eq two mul floor](gutkovskiy-eq-two-mul-floor.md)
+- [Kimberling One Position kimberling Zero Position](kimberling-one-position-kimberling-zero.md)
+- [Is Omega Limit gutkovskiy mod two](is-omega-limit-gutkovskiy-mod-two.md)
+- [Gutkovskiy eq two mul sum mod two add](gutkovskiy-eq-two-mul-sum-mod-two-add.md)
+- [Right Special Factors kimberling Word ncard eq two iff](right-special-factors-kimberling-word-nc.md)
+- [Limsup liminf word Factor Complexity kimberling Word](limsup-liminf-word-factor-complexity-kim.md)
+- [S Sup exponent kimberling Word](s-sup-exponent-kimberling-word.md)

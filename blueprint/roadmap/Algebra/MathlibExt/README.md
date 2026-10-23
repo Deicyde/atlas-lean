@@ -6,6 +6,7 @@ navigation: collection
 # MathlibExt
 
 - [Algebra](algebra/README.md)
+- [Big Operators](big-operators/README.md)
 - [Central](central/README.md)
 - [Commutative Algebra](commutative-algebra/README.md)
 - [Continued Fractions](continued-fractions/README.md)

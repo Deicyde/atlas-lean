@@ -18,7 +18,7 @@ keeps the inline `Nat.rec` spelling of the Pell factor for the `Wanted` entry.
 
 ## Depends on
 
-- [Pell Number Sequence](../../../../../../NumberTheory/MathlibExt/part-08/pell-number.md)
+- [Pell Number Sequence](../../../../../../NumberTheory/MathlibExt/part-09/pell-number.md)
 
 ## Sources
 

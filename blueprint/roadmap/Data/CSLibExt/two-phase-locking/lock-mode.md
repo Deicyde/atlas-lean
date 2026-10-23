@@ -1,0 +1,18 @@
+---
+declaration: inductive
+origin: cited
+statement: formalized
+lean: Cslib.Databases.LockMode
+---
+
+# Lock Mode
+
+The mode of a lock.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Databases.TwoPhaseLocking](../../../../sources/v2/CSLibExt.md)

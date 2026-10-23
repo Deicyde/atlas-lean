@@ -3,8 +3,9 @@ article_id: af_68420f47a5e79f1dcc2ef9dd
 navigation: transparent
 ---
 
-# Bang Zsigmondy to Collatz
+# BNomial Number Type3 to Cobham Gap Theorem
 
+- [BNomial Number Type3](bnomial-number-type3/README.md)
 - [Bang Zsigmondy](bang-zsigmondy/README.md)
 - [Base Recognizable](base-recognizable/README.md)
 - [Bell Matrix](bell-matrix/README.md)
@@ -24,4 +25,3 @@ navigation: transparent
 - [Clement Twin Primes](clement-twin-prime-criterion.md)
 - [Cobham Base Dependence](cobham-base-dependence/README.md)
 - [Cobham Gap Theorem](cobham-gap-theorem/README.md)
-- [Collatz](collatz/README.md)

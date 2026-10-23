@@ -3,8 +3,10 @@ article_id: af_4b7f57d2d1b1257f1b5c82fe
 navigation: transparent
 ---
 
-# Associated Stirling Eulerian to Isolation Lemma
+# Words to Howard Potential Polynomial
 
+- [Words](words/README.md)
+- [Alternating Binomial Partial Sum](alternating-binomial-partial-sum.md)
 - [Associated Stirling Eulerian](associated-stirling-eulerian/README.md)
 - [Associated Stirling Second](associated-stirling-second/README.md)
 - [Baranyai](baranyai-theorem.md)
@@ -23,5 +25,3 @@ navigation: transparent
 - [Generalized Bell Polynomial](generalized-bell-polynomial/README.md)
 - [Harper Isoperimetric](harper-isoperimetric-inequality.md)
 - [Howard Potential Polynomial](howard-potential-polynomial/README.md)
-- [Isogeny Volcano](isogeny-volcano/README.md)
-- [Isolation Lemma](isolation-lemma.md)

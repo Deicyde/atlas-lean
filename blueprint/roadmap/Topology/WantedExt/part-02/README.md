@@ -3,10 +3,13 @@ article_id: af_44765b8dc0b65e707de5f412
 navigation: transparent
 ---
 
-# Kirk Normal Structure to Watanabe Smale Disproof Wanted
+# House With Two Rooms to Scottish Book136 Wanted
 
+- [House With Two Rooms](house-with-two-rooms-wanted/README.md)
+- [Hurewicz](hurewicz-wanted/README.md)
 - [Kirk Normal Structure](kirk-normal-structure-wanted/README.md)
 - [Linking Wanted](exists-nonisotopic-link.md)
+- [Macias Arithmetic Progressions](macias-arithmetic-progressions-wanted/README.md)
 - [Macias Coprime Topology](macias-coprime-topology-wanted/README.md)
 - [Manolescu Triangulation](manolescu-triangulation-wanted/README.md)
 - [Milnor Exotic Sphere Seven Wanted](milnor-exotic-sphere-seven.md)
@@ -21,6 +24,4 @@ navigation: transparent
 - [Poincare4 DTopological Wanted](poincare-4d-topological.md)
 - [Poincare High Dim Topological Wanted](poincare-high-dim-topological.md)
 - [Quadrisecant](quadrisecant-wanted/README.md)
-- [Slice Dichotomy Wanted](exists-topologically-slice-not-smoothly.md)
-- [Smale Conjecture Wanted](smale-conjecture.md)
-- [Watanabe Smale Disproof Wanted](watanabe-four-dim-smale-disproof.md)
+- [Scottish Book136 Wanted](kolmogorov-interior-map-raises-dimension.md)

@@ -3,8 +3,16 @@ article_id: af_3255b8db5852dc86793463a7
 navigation: transparent
 ---
 
-# Pentanacci Number to Prime Support
+# Odd Lichtenberg Numbers to Practical Number
 
+- [Odd Lichtenberg Numbers](odd-lichtenberg.md)
+- [Odd Perfect Polynomial](odd-perfect-polynomial-is-square.md)
+- [Oppermann Cyclic Numbers](oppermann-cyclic-numbers/README.md)
+- [PRecursive Sequence](is-precursive-sequence.md)
+- [Padovan Sequence](padovan-sequence/README.md)
+- [Pell Cassini Identity](pell-cassini-identity.md)
+- [Pell Lucas Sequence](pell-lucas-sequence/README.md)
+- [Pell Number Sequence](pell-number.md)
 - [Pentanacci Number](pentanacci-number.md)
 - [Perrin Sequence](perrin-sequence.md)
 - [Pierce Expansion](pierce-expansion/README.md)
@@ -17,11 +25,3 @@ navigation: transparent
 - [Power Sum Vanishing](power-sum-vanishing-mod-prime.md)
 - [Powerful Numbers Arithmetic Progressions](powerful-numbers-arithmetic-progressions/README.md)
 - [Practical Number](is-practical-number.md)
-- [Prime Gap](prime-gap.md)
-- [Prime Gap Liminf](prime-gap-liminf/README.md)
-- [Prime Gaps Near Primorials](prime-gaps-near-primorials/README.md)
-- [Prime Number Theorem](prime-number-theorem.md)
-- [Prime Number Theorem AP](prime-number-theorem-ap/README.md)
-- [Prime Power Factorization Sum](prime-power-factorization-sum-eq-iff.md)
-- [Prime Power Lifting](prime-power-lifting/README.md)
-- [Prime Support](same-prime-support.md)

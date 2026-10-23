@@ -1,0 +1,36 @@
+---
+navigation: module
+---
+
+# Penults Of Tak
+
+- [Placement Terminal](placement-terminal.md)
+- [Placement Ult](placement-ult.md)
+- [Placement Penult](placement-penult.md)
+- [Placement Game](placement-game.md)
+- [Mem placement Game moves](mem-placement-game-moves.md)
+- [Placement First Player Wins](placement-first-player-wins.md)
+- [Placement First Player Wins iff](placement-first-player-wins-iff.md)
+- [Placement Terminal univ](placement-terminal-univ.md)
+- [Tic Ended](tic-ended.md)
+- [Not tic Ended empty](not-tic-ended-empty.md)
+- [Tak Adjacent](tak-adjacent.md)
+- [Tak Has Road](tak-has-road.md)
+- [Not tak Has Road empty](not-tak-has-road-empty.md)
+- [Weighted Cross Weight](weighted-cross-weight.md)
+- [Sum weighted Cross Weight](sum-weighted-cross-weight.md)
+- [Impartial Tic first Player Wins iff odd](impartial-tic-first-player-wins-iff-odd.md)
+- [Impartial Tak not first Player Wins of even](impartial-tak-not-first-player-wins-of-e.md)
+- [Impartial Tak five first Player Wins](impartial-tak-five-first-player-wins.md)
+- [Impartial Tic dual penult card le](impartial-tic-dual-penult-card-le.md)
+- [Impartial Tic dual penult card le of four](impartial-tic-dual-penult-card-le-of-fou.md)
+- [Impartial Tic exists dual penult card](impartial-tic-exists-dual-penult-card.md)
+- [Impartial Tak exists penult card](impartial-tak-exists-penult-card.md)
+- [Impartial Tak is Greatest penult card](impartial-tak-is-greatest-penult-card.md)
+- [Impartial Tak exists snake penult](impartial-tak-exists-snake-penult.md)
+- [Impartial Tak penult cross nonempty](impartial-tak-penult-cross-nonempty.md)
+- [Impartial Tak penult card ge fifth](impartial-tak-penult-card-ge-fifth.md)
+- [Impartial Tak penult thick Cross](impartial-tak-penult-thick-cross.md)
+- [Impartial Tak penult card ge quarter](impartial-tak-penult-card-ge-quarter.md)
+- [Impartial Tak penult weighted Cross](impartial-tak-penult-weighted-cross.md)
+- [Impartial Tak penult card ge weighted Cross](impartial-tak-penult-card-ge-weighted-cr.md)

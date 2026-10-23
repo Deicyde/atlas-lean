@@ -3,8 +3,11 @@ article_id: af_44508550c9ac2dfd9bb2f971
 navigation: transparent
 ---
 
-# Pollak Partial Parking Functions to Shifted Riordan Array Row Sums
+# Pentagonal Number to Rising Diagonal Sequence
 
+- [Pentagonal Number](pentagonal-number/README.md)
+- [Perfect Compositions](perfect-compositions/README.md)
+- [Permutation Statistics](permutation-statistics/README.md)
 - [Pollak Partial Parking Functions](pollak-partial-parking-functions-card.md)
 - [Poly Initial Expansion](poly-initial-expansion/README.md)
 - [QRDowling QStirling Expansion](qrdowling-qstirling-expansion/README.md)
@@ -14,6 +17,7 @@ navigation: transparent
 - [RHorse Number Fubini](r-horse-number-eq-stirling-first-sum-fub.md)
 - [RParameter Generalized Fibonacci Sequence](r-fibonacci-number.md)
 - [RStirling First Alternating Expansion](rstirling-first-alternating-expansion/README.md)
+- [RStirling Second](rstirling-second/README.md)
 - [Refined Eulerian Marginals](sun-refined-eulerian-marginals.md)
 - [Refined Eulerian Polynomial](refined-eulerian-polynomial-palindromic.md)
 - [Right Down Diagonal Sequences](right-down-diagonal-sequences/README.md)
@@ -21,7 +25,3 @@ navigation: transparent
 - [Riordan Array Inverse](riordan-array-inverse/README.md)
 - [Riordan Number](riordan-number/README.md)
 - [Rising Diagonal Sequence](rising-diagonal-sequence/README.md)
-- [Set Partition Peaks](total-peaks-canonical.md)
-- [Set Partitions By Two Rises](set-partition-two-rise-ordinary-generati.md)
-- [Shifted Eulerian Hankel](hankel-transform-shifted-eulerian-polyno.md)
-- [Shifted Riordan Array Row Sums](shifted-riordan-array-constant-term-and.md)

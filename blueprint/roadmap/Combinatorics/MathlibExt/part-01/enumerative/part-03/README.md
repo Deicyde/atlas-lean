@@ -3,8 +3,9 @@ article_id: af_ed6262e345033125e279e7c9
 navigation: transparent
 ---
 
-# Eulerian Polynomial Hankel to Generalized Stirling Matrix Factorization
+# Euler Seidel Matrix to Generalized Rascal Triangle
 
+- [Euler Seidel Matrix](euler-seidel-matrix/README.md)
 - [Eulerian Polynomial Hankel](eulerian-polynomial-hankel-determinant.md)
 - [Even Table Weight](even-table-weight/README.md)
 - [Falling Binomial Transform](falling-equiv.md)
@@ -24,4 +25,3 @@ navigation: transparent
 - [Gaussian QBinomial](gaussian-pair-sorted-expansion.md)
 - [Generalized Catalan Schroeder](generalized-catalan-schroeder/README.md)
 - [Generalized Rascal Triangle](is-generalized-rascal-triangle.md)
-- [Generalized Stirling Matrix Factorization](generalized-stirling-matrix-factorizatio.md)

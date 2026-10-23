@@ -1,0 +1,20 @@
+---
+declaration: def
+origin: cited
+statement: formalized
+lean: Cslib.Databases.LosslessJoin
+---
+
+# Lossless Join
+
+The decomposition of `R₁ ∪ R₂` into `R₁` and `R₂` is lossless for `F`: every relation over
+`R₁ ∪ R₂` with values in `D` that satisfies the dependencies derivable from `F` between attributes
+of `R₁ ∪ R₂` is the join of its two projections.
+
+## Depends on
+
+This node has no prerequisites.
+
+## Sources
+
+- [CSLibExt, CSLibExt.Databases.NormalForms](../../../../sources/v2/CSLibExt.md)

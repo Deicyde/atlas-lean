@@ -3,8 +3,9 @@ article_id: af_4d4d2836b6dd733e2e9033c4
 navigation: transparent
 ---
 
-# Generalized Stirling Numbers to Marked Step In AMulti Marked Dyck Path
+# Generalized Stirling Matrix Factorization to Marked Step In AMarked Dyck Path
 
+- [Generalized Stirling Matrix Factorization](generalized-stirling-matrix-factorizatio.md)
 - [Generalized Stirling Numbers](generalized-stirling-numbers/README.md)
 - [Heilermann Formula](heilermann-formula/README.md)
 - [Heilermann Weighted Motzkin](exists-weighted-motzkin-coefficients-of.md)
@@ -24,4 +25,3 @@ navigation: transparent
 - [Lunnon Dimension Decomposition](lunnon-dimension-decomposition/README.md)
 - [Macaulay Monomial Shadow](macaulay-multiset-shadow-minimal.md)
 - [Marked Step In AMarked Dyck Path](marked-step-in-amarked-dyck-path/README.md)
-- [Marked Step In AMulti Marked Dyck Path](marked-step-in-amulti-marked-dyck-path/README.md)

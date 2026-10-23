@@ -5,8 +5,9 @@ navigation: collection
 
 # WantedExt
 
-## [Absolute Profinite Rigidity to Golden Ratio Thompson Embed](part-01/README.md)
+## [Finite Abelian to Glauberman ZStar Wanted](part-01/README.md)
 
+- [Finite Abelian](part-01/finite-abelian/README.md)
 - [Absolute Profinite Rigidity](part-01/absolute-profinite-rigidity-wanted/README.md)
 - [Ado Iwasawa Wanted](part-01/ado-iwasawa.md)
 - [Approximate Subgroup Structure Wanted](part-01/breuillard-green-tao-approximate-subgrou.md)
@@ -26,21 +27,32 @@ navigation: collection
 - [Frobenius Determinant](part-01/frobenius-determinant-wanted/README.md)
 - [Frobenius Wanted](part-01/frobenius-kernel-is-normal.md)
 - [Glauberman ZStar Wanted](part-01/glauberman-z-star.md)
-- [Golden Ratio Thompson Embed](part-01/golden-ratio-thompson-embed-wanted/README.md)
 
-## [Golod Shafarevich to Word Problem Solvable Shared](part-02/README.md)
+## [Golden Ratio Thompson Embed to Scottish Book95 Wanted](part-02/README.md)
 
+- [Golden Ratio Thompson Embed](part-02/golden-ratio-thompson-embed-wanted/README.md)
 - [Golod Shafarevich](part-02/golod-shafarevich-wanted/README.md)
 - [Gorenstein Walter Wanted](part-02/gorenstein-walter.md)
 - [Higman Infinite Simple Wanted](part-02/higman-infinite-simple.md)
+- [Kourovka21 Problem134b](part-02/kourovka21-problem134b-wanted/README.md)
 - [M23 Tensor Square Wanted](part-02/m23-irrep-tensor-square-decomp.md)
 - [Mc Kay Conjecture](part-02/mc-kay-conjecture-wanted/README.md)
 - [Multiply Transitive Wanted](part-02/five-transitive-card-classification.md)
+- [Nikolov Segal](part-02/nikolov-segal-wanted/README.md)
 - [Novikov Unsolvable Wanted](part-02/novikov-unsolvable.md)
 - [On Coherence Of One Relator Groups](part-02/on-coherence-of-one-relator-groups-wanted/README.md)
 - [On Property T](part-02/on-property-twanted/README.md)
 - [Product Theorem Special Linear Wanted](part-02/product-theorem-special-linear.md)
 - [Schur Weyl](part-02/schur-weyl-wanted/README.md)
-- [Spread Of AFinite Group](part-02/spread-of-afinite-group-wanted/README.md)
-- [Unit Conjecture](part-02/unit-conjecture-wanted/README.md)
-- [Word Problem Solvable Shared](part-02/word-problem-solvable.md)
+- [Scottish Book112](part-02/scottish-book112-wanted/README.md)
+- [Scottish Book142](part-02/scottish-book142-wanted/README.md)
+- [Scottish Book160 Part2](part-02/scottish-book160-part2-wanted/README.md)
+- [Scottish Book62](part-02/scottish-book62-wanted/README.md)
+- [Scottish Book90 Wanted](part-02/semisimple-lie-group-two-generators-dens.md)
+- [Scottish Book95 Wanted](part-02/real-add-group-embeds-in-perm-nat.md)
+
+## [Spread Of AFinite Group to Word Problem Solvable Shared](part-03/README.md)
+
+- [Spread Of AFinite Group](part-03/spread-of-afinite-group-wanted/README.md)
+- [Unit Conjecture](part-03/unit-conjecture-wanted/README.md)
+- [Word Problem Solvable Shared](part-03/word-problem-solvable.md)

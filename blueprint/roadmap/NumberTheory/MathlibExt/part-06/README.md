@@ -3,9 +3,15 @@ article_id: af_773179ec77d2940daca86350
 navigation: transparent
 ---
 
-# Generalized Fibonacci Polynomial to Hurwitz Quaternion Waring
+# Gelfond Schneider to Hardy Littlewood Prime Tuple
 
+- [Gelfond Schneider](gelfond-schneider/README.md)
+- [General Arithmetical Eulerian Polynomial](general-arithmetical-eulerian-polynomial/README.md)
+- [Generalized Catalan Prime Divisibility](generalized-catalan-prime-dvd-iff-not-ge.md)
+- [Generalized Fermat Number](generalized-fermat-number.md)
+- [Generalized Fibocatalan Number](generalized-fibocatalan-number/README.md)
 - [Generalized Fibonacci Polynomial](generalized-fibonacci-polynomial/README.md)
+- [Generalized Frobenius Number](generalized-frobenius-number/README.md)
 - [Generalized Fuss Catalan Numbers FMNK](generalized-fuss-catalan-numbers-fmnk/README.md)
 - [Generalized Lucas](generalized-lucas/README.md)
 - [Generalized Lucasnomial Fuss Catalan](generalized-lucasnomial-fuss-catalan/README.md)
@@ -19,9 +25,3 @@ navigation: transparent
 - [Giuga Number](is-giuga-number.md)
 - [Hankel Transform](hankel-transform/README.md)
 - [Hardy Littlewood Prime Tuple](hardy-littlewood-prime-tuple/README.md)
-- [Harmonic Partial Sum](harmonic-partial-sum-not-int.md)
-- [Hensel Factorization](hensel-factorization/README.md)
-- [Higher Order Harmonic](higher-harmonic.md)
-- [Highly Composite](highly-composite/README.md)
-- [Hilbert Waring](hilbert-waring.md)
-- [Hurwitz Quaternion Waring](hurwitz-quaternion-waring-bound.md)

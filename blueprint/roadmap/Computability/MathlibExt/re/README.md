@@ -11,4 +11,5 @@ navigation: module
 - [Dovetailing](exists-mem.md)
 - [Forall mem](forall-mem.md)
 - [Computable list any](computable-list-any.md)
+- [Selection for r.e. relations](exists-partrec-choose.md)
 - [Exists](exists.md)

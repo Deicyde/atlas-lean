@@ -1,0 +1,36 @@
+---
+navigation: module
+---
+
+# Stable Matching Sequences
+
+- [Preference Profile](preference-profile.md)
+- [Man Rank](man-rank.md)
+- [Woman Rank](woman-rank.md)
+- [Is Soulmate Pair](is-soulmate-pair.md)
+- [Soulmate Pair Count](soulmate-pair-count.md)
+- [Man Prefs](man-prefs.md)
+- [Woman Prefs](woman-prefs.md)
+- [Is Stable Matching](is-stable-matching.md)
+- [Is Stable Matching iff](is-stable-matching-iff.md)
+- [Is Hell Couple](is-hell-couple.md)
+- [Latin Square Count](latin-square-count.md)
+- [GSEngaged](gsengaged.md)
+- [Gs Proposals](gs-proposals.md)
+- [Gale Shapley Rounds](gale-shapley-rounds.md)
+- [Gs Proposals zero](gs-proposals-zero.md)
+- [Gs Proposals succ](gs-proposals-succ.md)
+- [Gale Shapley Rounds of zero](gale-shapley-rounds-of-zero.md)
+- [Soulmate Pair Count le](soulmate-pair-count-le.md)
+- [Latin Square Count zero](latin-square-count-zero.md)
+- [Gale Shapley Rounds of same taste](gale-shapley-rounds-of-same-taste.md)
+- [Gale Shapley Rounds eq one iff](gale-shapley-rounds-eq-one-iff.md)
+- [Disjoint profiles card le and dvd](disjoint-profiles-card-le-and-dvd.md)
+- [Outside no soulmates card](outside-no-soulmates-card.md)
+- [Soulmate profiles card](soulmate-profiles-card.md)
+- [Unique stable matching of soulmate Pair Count eq pred](unique-stable-matching-of-soulmate-pair.md)
+- [Men latin soulmate profiles card](men-latin-soulmate-profiles-card.md)
+- [Mutually latin soulmate profiles card](mutually-latin-soulmate-profiles-card.md)
+- [Hell Couple subsingleton](hell-couple-subsingleton.md)
+- [Hell Couple mem all stable](hell-couple-mem-all-stable.md)
+- [Outcast profiles card](outcast-profiles-card.md)

@@ -3,7 +3,7 @@ article_id: af_33837175230911e8ec76cde3
 navigation: transparent
 ---
 
-# Factorizations to Real SVD
+# Factorizations to Polar Decomposition GL
 
 - [Factorizations](factorizations/README.md)
 - [Adj Matrix Pow Walk](adj-matrix-pow-weighted-walk-sum.md)
@@ -15,6 +15,7 @@ navigation: transparent
 - [Hankel](hankel/README.md)
 - [Jordan Normal Form](jordan-normal-form/README.md)
 - [LUDecomposition](ludecomposition/README.md)
+- [Log Det Trace](log-det-mul-le-trace.md)
 - [Lower Toeplitz](lower-toeplitz/README.md)
 - [Matrix Exp Det Trace](matrix-exp-det-trace/README.md)
 - [Mv Polynomial](mv-polynomial/README.md)
@@ -24,4 +25,3 @@ navigation: transparent
 - [Pan Vandermonde](pan-vandermonde/README.md)
 - [Perron Frobenius](perron-frobenius/README.md)
 - [Polar Decomposition GL](polar-decomposition-gl/README.md)
-- [Real SVD](real-svd/README.md)

@@ -142,8 +142,8 @@ x^{λ+δ}=1. For symmetric polynomials f and g in
 R[x₁,…,xₙ], the scalar product of f and g is
 
   ⟨ f,g⟩ₙ=∑_λ
-  [x^{λ+δ}](a_δ f)
-  [x^{λ+δ}](a_δ g),
+  \[x^{λ+δ}](a_δ f)
+  \[x^{λ+δ}](a_δ g),
 
 the sum taken over all sequences λ as above.
 -/

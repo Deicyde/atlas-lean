@@ -178,10 +178,15 @@ LIBRARIES = {
         "Reusable, fully proved computer-science developments built on MathlibExt.",
         {
             "Algorithms": "ComputerScience",
+            "AutomatedReasoning": "Logic",
+            "Coding": "InformationTheory",
             "Complexity": "TheoryOfComputation",
+            "Crypto": "ComputerScience",
+            "Databases": "Data",
             "Foundations": "ComputerScience",
             "Languages": "ComputerScience",
             "Logics": "Logic",
+            "MachineLearning": "ComputerScience",
         },
     ),
     "WantedExt": (
