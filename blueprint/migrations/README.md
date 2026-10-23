@@ -94,6 +94,8 @@ anonymous instance names remain explicitly null.
 
 Fresh dispositions are triage only. Every source remains unverified; scope
 issues have compact codes and `scope: partial`, never complete-clause coverage.
+Validation requires the declared triage API IDs to be exactly those referenced
+by triage rows, so stale or unrelated API rows cannot hide in the index.
 The two lanes account for 174 targets (107 foundations, 67 linear). Explicit
 `pending_targets` retains ordinals 34 and 158 with missing context, and validation
 requires fresh triage plus pending targets to cover all 176 identities.
@@ -107,18 +109,12 @@ missing/stale files, spans, target/API joins, duplicate bindings and overclaims.
 Intended API use and the span's relationship to the target require parent review;
 byte identity alone cannot establish either.
 Every indexed test has `scope: canonical_use_only` and unverified source fidelity.
-Compiler evidence is either pending or an explicitly parent-reported full-compile
-receipt-hash locator. A full-compile locator must also name an actual compiler
-runtime/image and environment receipt in `compiler_environments`; these pins
-are independent of destination/source pins. The reported VMVM runtime is
-Lean 4.34.0 / Mathlib `5ed2965256430c3649e86755f9576b54eca72435`, not the
-repository destination Lean 4.35.0 / Mathlib `56a005855ea17e0b0958f73ec801ae140b0a1679`.
-The reported image is
-`vmvm-registry.fbinfra.net/code_exec/code_exec:lean-4.34.0`; its environment
-receipt and fresh per-file result-row hashes are bound in this index. All 18
-exact test files have parent-reported full compilation in that runtime.
-The validator checks locator binding/shape, not its external
-report or truth; independent review and actual compiler checks remain parent-owned.
+Compiler evidence in this index is always `parent_pending`, with no receipt or
+environment, and `compiler_environments` is empty. No reproducible receipt
+artifact binding a test file, compiler environment, command, and successful
+result is committed, so the validator counts zero reported compiles and rejects
+any stronger compiler-evidence claim. Repository CI and local Lean builds are
+separate execution gates; their results are not recorded as receipts here.
 
 Successful canonical-use compilation cannot pass the separate migration/v1
 compiler gates, prove formal equivalence, or establish printed-source fidelity.
@@ -127,6 +123,5 @@ Each bound example has explicit partial scope and a component, boundary or
 compatibility reason; no whole-source coverage is inferred from a passing file.
 All 18 parent-copied test file hashes are retained with only meaningful bindings.
 Examples lacking a matching target/API pointer remain unbound/pending in the
-local handoff rather than receiving invented receipts. Compiler locators name
-only the fresh parent-reported canonical-use rows; source, v1 equivalence and
-exact destination-environment gates remain independently pending.
+local handoff rather than receiving invented receipts. Source, v1 equivalence
+and exact destination-environment gates remain independently pending.

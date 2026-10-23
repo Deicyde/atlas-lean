@@ -170,15 +170,7 @@ def fixture_checks(ledger):
         "source_fidelity": "unverified",
         "migration_gate": "parent_owned_pending",
         "v1_compiler_gate": "parent_owned_pending",
-        "compiler_environments": [
-            {
-                "id": "fixture-vm",
-                "lean": "leanprover/lean4:v0.0.1",
-                "mathlib": "9" * 40,
-                "image": "fixture-image",
-                "receipt_sha256": "7" * 64,
-            }
-        ],
+        "compiler_environments": [],
         "triage_sources": [
             {
                 "lane": "fixture",
@@ -514,14 +506,7 @@ class CanonicalUseIndex(unittest.TestCase):
                 "parent_reported_canonical_compiles": 0,
             },
         )
-        self.checks["canonical_use_tests"][0]["compiler_evidence"] = {
-            "status": "parent_reported_full_compile",
-            "receipt_sha256": "6" * 64,
-            "environment": "fixture-vm",
-        }
-        result = self.validate()
-        self.assertEqual(result["parent_reported_canonical_compiles"], 1)
-        self.assertNotIn("accepted", result)
+        self.assertNotIn("accepted", self.validate())
 
     def test_missing_and_stale_actual_file_fail(self):
         self.file.unlink()
@@ -571,7 +556,7 @@ class CanonicalUseIndex(unittest.TestCase):
         )
 
     def test_missing_duplicate_stale_and_overclaiming_triage_fail(self):
-        self.rejected(lambda index: index.update(triage=[]), "coverage")
+        self.rejected(lambda index: index.update(triage=[], triage_apis=[]), "coverage")
         self.rejected(
             lambda index: index["triage"].append(copy.deepcopy(index["triage"][0])),
             "duplicate",
@@ -670,19 +655,19 @@ class CanonicalUseIndex(unittest.TestCase):
             lambda index: index["canonical_use_tests"][0]["compiler_evidence"].update(
                 status="accepted"
             ),
-            "compiler status",
+            "parent_pending",
         )
         self.rejected(
             lambda index: index["canonical_use_tests"][0]["compiler_evidence"].update(
                 status="parent_reported_full_compile"
             ),
-            "fingerprint",
+            "parent_pending",
         )
         self.rejected(
             lambda index: index["canonical_use_tests"][0]["compiler_evidence"].update(
                 receipt_sha256="6" * 64
             ),
-            "pending compiler",
+            "parent_pending",
         )
 
     def test_overlapping_lanes_count_distinct_target_once(self):
@@ -726,37 +711,40 @@ class CanonicalUseIndex(unittest.TestCase):
             "pending target",
         )
 
-    def test_actual_runtime_is_separate_and_required_for_compile_locator(self):
-        test = self.checks["canonical_use_tests"][0]
-        test["compiler_evidence"] = {
-            "status": "parent_reported_full_compile",
-            "receipt_sha256": "6" * 64,
-            "environment": "fixture-vm",
-        }
-        self.assertNotEqual(
-            self.checks["compiler_environments"][0]["mathlib"],
-            self.ledger["pins"]["mathlib"],
-        )
-        self.validate()
+    def test_compiler_evidence_requires_verified_receipt_artifact(self):
         self.rejected(
-            lambda index: index["canonical_use_tests"][0]["compiler_evidence"].update(
-                environment="absent"
+            lambda index: index["canonical_use_tests"][0].update(
+                compiler_evidence={
+                    "status": "parent_reported_full_compile",
+                    "receipt_sha256": "6" * 64,
+                    "environment": "fixture-vm",
+                }
             ),
-            "environment",
+            "parent_pending",
         )
         self.rejected(
-            lambda index: index["compiler_environments"][0].update(receipt_sha256=None),
-            "environment",
-        )
-        self.rejected(
-            lambda index: index["compiler_environments"][0].update(
-                image=None, receipt_sha256=None
+            lambda index: index.update(
+                compiler_environments=[
+                    {
+                        "id": "fixture-vm",
+                        "lean": "leanprover/lean4:v0.0.1",
+                        "mathlib": "9" * 40,
+                        "image": "fixture-image",
+                        "receipt_sha256": "7" * 64,
+                    }
+                ]
             ),
-            "environment",
+            "verified receipt artifacts",
         )
+        self.assertEqual(self.validate()["parent_reported_canonical_compiles"], 0)
+
+    def test_unreferenced_triage_api_rows_fail(self):
+        orphan = copy.deepcopy(self.checks["triage_apis"][0])
+        orphan.update(id="fixture:orphan", name="Fixture.orphanToken")
+        orphan["row_content_sha256"] = check.row_content_sha256(orphan)
         self.rejected(
-            lambda index: index["compiler_environments"][0].update(mathlib="unknown"),
-            "fingerprint",
+            lambda index: index["triage_apis"].append(orphan),
+            "unreferenced triage API",
         )
 
     def test_test_paths_are_confined_and_duplicate_files_fail(self):

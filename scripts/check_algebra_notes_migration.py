@@ -479,34 +479,10 @@ def validate_checks(checks, ledger, root):
         ),
         "checks tables must be lists",
     )
-    environments = {}
-    for environment in checks["compiler_environments"]:
-        fields(
-            environment,
-            ("id", "lean", "mathlib", "image", "receipt_sha256"),
-            "compiler environment",
-        )
-        require(
-            isinstance(environment["id"], str)
-            and environment["id"]
-            and environment["id"] not in environments,
-            "duplicate/invalid compiler environment",
-        )
-        require(
-            isinstance(environment["lean"], str)
-            and re.fullmatch(r"leanprover/lean4:v\d+\.\d+\.\d+", environment["lean"]),
-            "invalid actual compiler Lean version",
-        )
-        digest(environment["mathlib"], 40)
-        require(
-            environment["image"] is None
-            or (isinstance(environment["image"], str) and environment["image"]),
-            "invalid actual compiler image",
-        )
-        if environment["receipt_sha256"] is not None:
-            digest(environment["receipt_sha256"])
-            require(environment["image"] is not None, "unbound compiler image")
-        environments[environment["id"]] = environment
+    require(
+        checks["compiler_environments"] == [],
+        "compiler environments require verified receipt artifacts",
+    )
     sources = {}
     for source in checks["triage_sources"]:
         fields(
@@ -584,6 +560,7 @@ def validate_checks(checks, ledger, root):
         apis[api["id"]] = api
     targets = {row["ordinal"]: row for row in ledger["records"]}
     triage = {}
+    referenced_apis = set()
     for row in checks["triage"]:
         fields(
             row,
@@ -651,7 +628,9 @@ def validate_checks(checks, ledger, root):
             row["row_content_sha256"] == row_content_sha256(row),
             "stale triage row content hash",
         )
+        referenced_apis.update(row["api_refs"])
         triage[key] = row
+    require(referenced_apis == set(apis), "unreferenced triage API rows")
     for lane, source in sources.items():
         require(
             sum(k[0] == lane for k in triage) == source["target_count"],
@@ -690,7 +669,6 @@ def validate_checks(checks, ledger, root):
     files = set()
     examples = set()
     bindings_count = 0
-    reported_compiles = 0
     for test in checks["canonical_use_tests"]:
         fields(
             test,
@@ -737,24 +715,16 @@ def validate_checks(checks, ledger, root):
             ("status", "receipt_sha256", "environment"),
             "compiler evidence locator",
         )
-        if evidence["status"] == "parent_pending":
-            require(
-                evidence["receipt_sha256"] is None and evidence["environment"] is None,
-                "unbound pending compiler evidence",
-            )
-        else:
-            require(
-                evidence["status"] == "parent_reported_full_compile",
-                "unknown/overclaiming compiler status",
-            )
-            digest(evidence["receipt_sha256"])
-            require(
-                evidence["environment"] in environments
-                and environments[evidence["environment"]]["image"] is not None
-                and environments[evidence["environment"]]["receipt_sha256"] is not None,
-                "unbound actual compiler environment/image",
-            )
-            reported_compiles += 1
+        require(
+            evidence
+            == {
+                "status": "parent_pending",
+                "receipt_sha256": None,
+                "environment": None,
+            },
+            "compiler evidence must remain parent_pending without a verified "
+            "receipt artifact",
+        )
         require(
             isinstance(test["bindings"], list) and test["bindings"],
             "unbound canonical-use test",
@@ -815,7 +785,7 @@ def validate_checks(checks, ledger, root):
         "pending_context_targets": len(pending),
         "canonical_use_test_files": len(files),
         "canonical_use_bindings": bindings_count,
-        "parent_reported_canonical_compiles": reported_compiles,
+        "parent_reported_canonical_compiles": 0,
     }
 
 
