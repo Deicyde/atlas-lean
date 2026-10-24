@@ -14,9 +14,9 @@ public import Mathlib.Order.Monotone.Basic
 # Monotonicity of sequences indexed by `ℕ`
 
 Successor-step characterizations of monotone and antitone sequences.
-Mathlib provides only the forward directions
+Mathlib provides only the reverse directions
 (`monotone_nat_of_le_succ`, `antitone_nat_of_succ_le`); this file adds the
-converse directions, hence the iff characterizations, and the combined
+forward directions, hence the iff characterizations, and the combined
 characterization of a sequence that is monotone in the book sense, i.e.
 increasing or decreasing.
 -/
