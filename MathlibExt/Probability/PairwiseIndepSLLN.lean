@@ -107,7 +107,7 @@ lemma indepFun_indicator_of_indepSet {s t : Set Ω} (h : IndepSet s t μ) :
 /-- The indicator function `1_s` of a measurable set is in `L²` for any probability measure. -/
 lemma memLp_indicator_one {s : Set Ω} (hs : MeasurableSet s) :
     MemLp (s.indicator (1 : Ω → ℝ)) 2 μ :=
-  memLp_indicator_const 2 hs 1 (Or.inr (measure_ne_top μ s))
+  memLp_indicator_const 2 hs.nullMeasurableSet 1 (Or.inr (measure_ne_top μ s))
 
 /-- The square of an indicator function equals the indicator function itself: `(1_s)² = 1_s`. -/
 lemma indicator_one_sq (s : Set Ω) :
