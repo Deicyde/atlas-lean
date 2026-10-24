@@ -8,7 +8,7 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import Mathlib.Topology.Order.LeftRightLim
+public import Mathlib.MeasureTheory.Measure.Stieltjes
 public import Mathlib.Topology.Sequences
 public import Mathlib.Topology.MetricSpace.Basic
 public import Mathlib.Topology.Order.Compact
@@ -38,9 +38,9 @@ fully proved in v1).
 
 ## Main results
 
-* `ProbabilityTheory.IsDistributionFunction`: a real function is a
-  (cumulative) distribution function if it is monotone, right-continuous,
-  tends to `0` at `-∞` and to `1` at `+∞`.
+* `ProbabilityTheory.IsDistributionFunction`: a `StieltjesFunction ℝ` is a
+  (cumulative) distribution function if it tends to `0` at `-∞` and to `1`
+  at `+∞`; the bundle supplies monotonicity and right continuity.
 * `ProbabilityTheory.helly_selection`: every sequence of distribution
   functions has a strictly monotone subsequence converging pointwise to a
   monotone, right-continuous function at every continuity point of the limit.
@@ -63,57 +63,31 @@ open scoped Topology
 
 namespace ProbabilityTheory
 
-/-- A real function `F : ℝ → ℝ` is a (cumulative) distribution function if it is
-monotone non-decreasing, right-continuous, tends to `0` at `-∞`, and tends to `1`
-at `+∞`. These are exactly the distribution functions of probability measures on `ℝ`. -/
-structure IsDistributionFunction (F : ℝ → ℝ) : Prop where
-  mono : Monotone F
-  right_continuous : ∀ x, ContinuousWithinAt F (Ici x) x
+/-- A Stieltjes function is a (cumulative) distribution function if it tends to `0`
+at `-∞` and to `1` at `+∞`. The bundle supplies monotonicity and right continuity.
+These are exactly the distribution functions of probability measures on `ℝ`. -/
+structure IsDistributionFunction (F : StieltjesFunction ℝ) : Prop where
   tendsto_atBot : Tendsto F atBot (𝓝 0)
   tendsto_atTop : Tendsto F atTop (𝓝 1)
 
 /-- A distribution function is non-negative: `0 ≤ F x` for all `x ∈ ℝ`. -/
-theorem IsDistributionFunction.nonneg {F : ℝ → ℝ} (hF : IsDistributionFunction F) (x : ℝ) :
+theorem IsDistributionFunction.nonneg {F : StieltjesFunction ℝ}
+    (hF : IsDistributionFunction F) (x : ℝ) :
     0 ≤ F x :=
-  le_of_tendsto hF.tendsto_atBot (eventually_atBot.mpr ⟨x, fun _ hy => hF.mono hy⟩)
+  le_of_tendsto hF.tendsto_atBot (eventually_atBot.mpr ⟨x, fun _ hy => F.mono hy⟩)
 
 /-- A distribution function is bounded above by `1`: `F x ≤ 1` for all `x ∈ ℝ`. -/
-theorem IsDistributionFunction.le_one {F : ℝ → ℝ} (hF : IsDistributionFunction F) (x : ℝ) :
+theorem IsDistributionFunction.le_one {F : StieltjesFunction ℝ}
+    (hF : IsDistributionFunction F) (x : ℝ) :
     F x ≤ 1 :=
-  ge_of_tendsto hF.tendsto_atTop (eventually_atTop.mpr ⟨x, fun _ hy => hF.mono hy⟩)
+  ge_of_tendsto hF.tendsto_atTop (eventually_atTop.mpr ⟨x, fun _ hy => F.mono hy⟩)
 
 /-- For any distribution function `F` and any `x ∈ ℝ`, `F x` lies in the unit
 interval `[0, 1]`. -/
-theorem IsDistributionFunction.mem_Icc {F : ℝ → ℝ} (hF : IsDistributionFunction F) (x : ℝ) :
+theorem IsDistributionFunction.mem_Icc {F : StieltjesFunction ℝ}
+    (hF : IsDistributionFunction F) (x : ℝ) :
     F x ∈ Icc (0 : ℝ) 1 :=
   ⟨hF.nonneg x, hF.le_one x⟩
-
-namespace HellySelection
-
-/-- A bundled monotone, right-continuous real function `ℝ → ℝ`. This is the natural
-class of subsequential limits arising in Helly's selection theorem. -/
-structure MonotoneRightContinuous where
-  toFun : ℝ → ℝ
-  mono' : Monotone toFun
-  right_continuous' : ∀ x, ContinuousWithinAt toFun (Ici x) x
-
-namespace MonotoneRightContinuous
-
-/-- Coercion allowing a `MonotoneRightContinuous` to be applied as a function `ℝ → ℝ`. -/
-instance instCoeFun : CoeFun MonotoneRightContinuous fun _ => ℝ → ℝ :=
-  ⟨toFun⟩
-
-end MonotoneRightContinuous
-
-/-- Given any monotone function `f : ℝ → ℝ`, the right-limit `rightLim f` is monotone
-and right-continuous, yielding a canonical `MonotoneRightContinuous`. -/
-noncomputable def ofMonotone (f : ℝ → ℝ) (hf : Monotone f) :
-    MonotoneRightContinuous where
-  toFun := Function.rightLim f
-  mono' := hf.rightLim
-  right_continuous' x := continuousWithinAt_rightLim_Ici (hf.tendsto_rightLim x)
-
-end HellySelection
 
 /-- For a monotone, `[0, 1]`-valued function `g : ℚ → ℝ`, the supremum of `g` over
 all rationals `r ≤ q` equals `g q`. This is the key bookkeeping step in the proof of
@@ -129,13 +103,14 @@ private theorem sSup_image_rat_eq (g : ℚ → ℝ) (hg_mono : ∀ q₁ q₂ : �
   · exact le_csSup ⟨1, by rintro _ ⟨r, _, rfl⟩; exact (hg_bdd r).2⟩
       ⟨q, show (q : ℝ) ≤ ↑q from le_rfl, rfl⟩
 
-/-- **Helly's selection theorem**. Every sequence `F : ℕ → ℝ → ℝ` of distribution
+/-- **Helly's selection theorem**. Every sequence `F : ℕ → StieltjesFunction ℝ` of distribution
 functions has a subsequence `F ∘ φ` that converges pointwise to a monotone,
 right-continuous function `G : ℝ → ℝ` at every continuity point of `G`. The limit
 `G` need not itself be a distribution function (it may lose mass to ±∞), but it is
 always monotone and right-continuous. -/
-theorem helly_selection (F : ℕ → ℝ → ℝ) (hF : ∀ n, IsDistributionFunction (F n)) :
-    ∃ (φ : ℕ → ℕ) (G : HellySelection.MonotoneRightContinuous),
+theorem helly_selection (F : ℕ → StieltjesFunction ℝ)
+    (hF : ∀ n, IsDistributionFunction (F n)) :
+    ∃ (φ : ℕ → ℕ) (G : StieltjesFunction ℝ),
       StrictMono φ ∧
       ∀ x, ContinuousAt (↑G) x → Tendsto (fun k => F (φ k) x) atTop (𝓝 (G x)) := by
   classical
@@ -150,7 +125,7 @@ theorem helly_selection (F : ℕ → ℝ → ℝ) (hF : ∀ n, IsDistributionFun
   have hg_mono : ∀ q₁ q₂ : ℚ, q₁ ≤ q₂ → g q₁ ≤ g q₂ := by
     intro p q hpq
     exact le_of_tendsto_of_tendsto (hconv_rat p) (hconv_rat q)
-      (Eventually.of_forall fun k => (hF (φ k)).mono (Rat.cast_le.mpr hpq))
+      (Eventually.of_forall fun k => (F (φ k)).mono (Rat.cast_le.mpr hpq))
   have hg_bdd : ∀ q, 0 ≤ g q ∧ g q ≤ 1 := fun q => (a q).2
   let h : ℝ → ℝ := fun x => sSup (g '' { q : ℚ | (q : ℝ) ≤ x })
   have hh_mono : Monotone h := by
@@ -162,7 +137,7 @@ theorem helly_selection (F : ℕ → ℝ → ℝ) (hF : ∀ n, IsDistributionFun
       exact ⟨g q, ⟨q, le_of_lt hq, rfl⟩⟩
     · exact image_mono (fun q (hq : (q : ℝ) ≤ a) => le_trans hq hab)
   have hh_rat : ∀ q : ℚ, h (↑q) = g q := sSup_image_rat_eq g hg_mono hg_bdd
-  let G := HellySelection.ofMonotone h hh_mono
+  let G := hh_mono.stieltjesFunction
   refine ⟨φ, G, hφ_strict, ?_⟩
   intro x hx_cont
   have hleft_eq : Function.leftLim h x = Function.rightLim h x := by
@@ -209,8 +184,8 @@ theorem helly_selection (F : ℕ → ℝ → ℝ) (hF : ∀ n, IsDistributionFun
   have hFr := hN₁ k (le_of_max_le_left hk)
   have hFs := hN₂ k (le_of_max_le_right hk)
   rw [Real.dist_eq, abs_lt] at hFr hFs
-  have hle_r : F (φ k) ↑r ≤ F (φ k) x := (hF (φ k)).mono (le_of_lt hr_lt)
-  have hle_s : F (φ k) x ≤ F (φ k) ↑s := (hF (φ k)).mono (le_of_lt hs_lt)
+  have hle_r : F (φ k) ↑r ≤ F (φ k) x := (F (φ k)).mono (le_of_lt hr_lt)
+  have hle_s : F (φ k) x ≤ F (φ k) ↑s := (F (φ k)).mono (le_of_lt hs_lt)
   rw [Real.dist_eq, abs_lt]
   constructor <;> linarith
 

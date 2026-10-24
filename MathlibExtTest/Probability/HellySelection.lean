@@ -17,12 +17,11 @@ open scoped Topology
 
 namespace MathlibExtTest.Probability.HellySelection
 
-/-- The step function at `c` — `0` before `c`, `1` from `c` on — is a
-distribution function: the cumulative distribution function of a point mass
-at `c`. -/
-private theorem step_isDistributionFunction (c : ℝ) :
-    IsDistributionFunction (fun x => if x < c then (0 : ℝ) else 1) where
-  mono := by
+/-- The step function at `c`, zero before `c` and one from `c` on, as a
+Stieltjes function. -/
+private noncomputable def step (c : ℝ) : StieltjesFunction ℝ where
+  toFun := fun x => if x < c then (0 : ℝ) else 1
+  mono' := by
     intro a b hab
     by_cases ha : a < c
     · by_cases hb : b < c
@@ -31,7 +30,7 @@ private theorem step_isDistributionFunction (c : ℝ) :
     · by_cases hb : b < c
       · exact absurd (lt_of_le_of_lt hab hb) ha
       · simp [ha, hb]
-  right_continuous := by
+  right_continuous' := by
     intro x
     rw [Metric.continuousWithinAt_iff]
     intro ε hε
@@ -48,6 +47,9 @@ private theorem step_isDistributionFunction (c : ℝ) :
       have hy_ge : c ≤ y := le_trans hx (Set.mem_Ici.mp hy)
       rw [ite_eq_right (not_lt.mpr hy_ge), ite_eq_right (not_lt.mpr hx)]
       simp [hε]
+
+/-- The step function has the endpoint limits of the distribution of a point mass. -/
+private theorem step_isDistributionFunction (c : ℝ) : IsDistributionFunction (step c) where
   tendsto_atBot := by
     refine Filter.Tendsto.congr' ?_ tendsto_const_nhds
     filter_upwards [Filter.eventually_atBot.mpr ⟨c - 1, fun _ h => h⟩] with y hy
@@ -60,8 +62,8 @@ private theorem step_isDistributionFunction (c : ℝ) :
     rw [ite_eq_right (not_lt.mpr (le_trans (by linarith) hy))]
 
 /-- Helly's selection theorem restates with the exact public signature. -/
-example (F : ℕ → ℝ → ℝ) (hF : ∀ n, IsDistributionFunction (F n)) :
-    ∃ (φ : ℕ → ℕ) (G : HellySelection.MonotoneRightContinuous),
+example (F : ℕ → StieltjesFunction ℝ) (hF : ∀ n, IsDistributionFunction (F n)) :
+    ∃ (φ : ℕ → ℕ) (G : StieltjesFunction ℝ),
       StrictMono φ ∧
       ∀ x, ContinuousAt (↑G) x → Tendsto (fun k => F (φ k) x) atTop (𝓝 (G x)) :=
   helly_selection F hF
@@ -75,44 +77,44 @@ example (c x : ℝ) : 0 ≤ (if x < c then (0 : ℝ) else 1) ∧
 /-- Helly's theorem applied to the constant sequence of point-mass
 distribution functions: a convergent subsequence exists. -/
 example :
-    ∃ (φ : ℕ → ℕ) (G : HellySelection.MonotoneRightContinuous),
+    ∃ (φ : ℕ → ℕ) (G : StieltjesFunction ℝ),
       StrictMono φ ∧
       ∀ x, ContinuousAt (↑G) x →
         Tendsto (fun k => (fun _ => if x < (0 : ℝ) then (0 : ℝ) else 1) (φ k))
           atTop (𝓝 (G x)) :=
-  helly_selection _ (fun _ => step_isDistributionFunction 0)
+  helly_selection (fun _ => step 0) (fun _ => step_isDistributionFunction 0)
 
 /-- Helly's theorem applied to the genuinely non-constant sequence of
 point masses at `n`: the mass escapes to `+∞`, so the subsequential limit
 is allowed to lose mass — the theorem still produces a monotone,
 right-continuous subsequential limit. -/
 example :
-    ∃ (φ : ℕ → ℕ) (G : HellySelection.MonotoneRightContinuous),
+    ∃ (φ : ℕ → ℕ) (G : StieltjesFunction ℝ),
       StrictMono φ ∧
       ∀ x, ContinuousAt (↑G) x →
         Tendsto (fun k => (if x < (φ k : ℝ) then (0 : ℝ) else 1))
           atTop (𝓝 (G x)) := by
-  apply helly_selection (fun n => fun x => if x < (n : ℝ) then (0 : ℝ) else 1)
+  apply helly_selection (fun n => step (n : ℝ))
   intro n
   exact step_isDistributionFunction (n : ℝ)
 
 /-- Right-limit regularization preserves the expected pointwise values. -/
 example (f : ℝ → ℝ) (hf : Monotone f) (x : ℝ) :
-    HellySelection.ofMonotone f hf x = Function.rightLim f x := rfl
+    hf.stieltjesFunction x = Function.rightLim f x := rfl
 
 /-- The distribution contract includes both unit-interval bounds and right continuity. -/
-example (F : ℝ → ℝ) (hF : IsDistributionFunction F) (x : ℝ) :
+example (F : StieltjesFunction ℝ) (hF : IsDistributionFunction F) (x : ℝ) :
     0 ≤ F x ∧ F x ≤ 1 ∧ ContinuousWithinAt F (Ici x) x :=
-  ⟨hF.nonneg x, hF.le_one x, hF.right_continuous x⟩
+  ⟨hF.nonneg x, hF.le_one x, F.right_continuous x⟩
 
--- `#print axioms` for the public declarations: only the standard triple.
+-- `#print axioms` for the public and reused declarations: only the standard triple.
 #print axioms ProbabilityTheory.IsDistributionFunction
-#print axioms ProbabilityTheory.HellySelection.MonotoneRightContinuous
-#print axioms ProbabilityTheory.HellySelection.MonotoneRightContinuous.instCoeFun
 #print axioms ProbabilityTheory.helly_selection
 #print axioms ProbabilityTheory.IsDistributionFunction.nonneg
 #print axioms ProbabilityTheory.IsDistributionFunction.le_one
 #print axioms ProbabilityTheory.IsDistributionFunction.mem_Icc
-#print axioms ProbabilityTheory.HellySelection.ofMonotone
+#print axioms StieltjesFunction
+#print axioms StieltjesFunction.instCoeFun
+#print axioms Monotone.stieltjesFunction
 
 end MathlibExtTest.Probability.HellySelection
