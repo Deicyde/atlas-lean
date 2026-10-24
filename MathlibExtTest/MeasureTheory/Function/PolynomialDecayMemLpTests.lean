@@ -58,6 +58,24 @@ example : eLpNorm (fun x : ℝ => (1 + |x|) ^ (-2 : ℝ)) 2 volume < ⊤ := by
       simp
   exact h.eLpNorm_lt_top
 
+/-- Increasing the value at a single null-set point preserves the decay conclusion.
+The value at `0` is `2`, so the bound with `C = 1` holds only almost everywhere. -/
+example {p : ℝ≥0∞} (hp : 1 ≤ p) :
+    MemLp (fun x : ℝ => if x = 0 then (2 : ℝ) else (1 + |x|) ^ (-2 : ℝ))
+      p volume := by
+  apply memLp_of_polynomial_decay_ae (C := 1) (q := 2) ?_
+    (by norm_num) (by norm_num) ?_ hp
+  · apply Measurable.aestronglyMeasurable
+    have hd : Measurable (fun x : ℝ => (1 + |x|) ^ (-2 : ℝ)) := by
+      measurability
+    exact Measurable.ite (p := fun x : ℝ => x = 0) (f := fun _ : ℝ => (2 : ℝ))
+        (g := fun x : ℝ => (1 + |x|) ^ (-2 : ℝ))
+        (by simp) measurable_const hd
+  · have hae : ∀ᵐ x : ℝ ∂volume, x ≠ 0 := by
+      simp [ae_iff]
+    filter_upwards [hae] with x hx
+    simp [hx]
+
 /-- Counterexample to the `≥` form of the decay hypothesis: the constant function `1`
 satisfies `‖1‖ ≥ 1 * (1 + |x|) ^ (-2)` everywhere, but `1 ∉ L^2 (ℝ)`. -/
 example : ¬ MemLp (fun _ : ℝ => (1 : ℝ)) 2 volume := by
