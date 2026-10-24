@@ -107,6 +107,72 @@ example (F : StieltjesFunction ℝ) (hF : IsDistributionFunction F) (x : ℝ) :
     0 ≤ F x ∧ F x ≤ 1 ∧ ContinuousWithinAt F (Ici x) x :=
   ⟨hF.nonneg x, hF.le_one x, F.right_continuous x⟩
 
+/-- The selected Stieltjes bundle exposes the standard interval-measure formula. -/
+example (G : StieltjesFunction ℝ) (a b : ℝ) :
+    G.measure (Ioc a b) = ENNReal.ofReal (G b - G a) :=
+  G.measure_Ioc a b
+
+/-- The closed right endpoint includes the unit jump at `c`. -/
+example (c : ℝ) : (step c).measure (Ioc (c - 1) c) = 1 := by
+  rw [StieltjesFunction.measure_Ioc]
+  simp [step, show c - 1 < c by linarith]
+
+/-- An interval open at the jump excludes its mass. -/
+example (c : ℝ) : (step c).measure (Ioc c (c + 1)) = 0 := by
+  rw [StieltjesFunction.measure_Ioc]
+  simp [step, show ¬c + 1 < c by linarith]
+
+/-- Both endpoint limits give the point-mass Stieltjes measure total mass one. -/
+example (c : ℝ) : (step c).measure univ = 1 := by
+  have h := step_isDistributionFunction c
+  simpa using (step c).measure_univ h.tendsto_atBot h.tendsto_atTop
+
+/-- The concrete point-mass fixture is a probability measure through the standard API. -/
+example (c : ℝ) : MeasureTheory.IsProbabilityMeasure (step c).measure := by
+  have h := step_isDistributionFunction c
+  exact (step c).isProbabilityMeasure h.tendsto_atBot h.tendsto_atTop
+
+/-- The public unit-interval API applies directly to the standard bundle. -/
+example (F : StieltjesFunction ℝ) (hF : IsDistributionFunction F) (x : ℝ) :
+    F x ∈ Icc (0 : ℝ) 1 := hF.mem_Icc x
+
+/-- The escaping family has different distributions already at indices zero and one. -/
+example : step 0 0 = 1 ∧ step 1 0 = 0 := by
+  simp [step]
+
+/-- For each fixed real argument, point masses at `n` converge to zero. -/
+example (x : ℝ) : Tendsto (fun n : ℕ => step (n : ℝ) x) atTop (𝓝 0) := by
+  obtain ⟨N, hN⟩ := exists_nat_gt x
+  refine Tendsto.congr' ?_ tendsto_const_nhds
+  filter_upwards [eventually_atTop.mpr ⟨N, fun _ hn => hn⟩] with n hn
+  have hx : x < (n : ℝ) := lt_of_lt_of_le hN (by exact_mod_cast hn)
+  simp [step, hx]
+
+/-- Point masses at `-n` converge to one at every fixed real argument. -/
+example (x : ℝ) : Tendsto (fun n : ℕ => step (-(n : ℝ)) x) atTop (𝓝 1) := by
+  obtain ⟨N, hN⟩ := exists_nat_gt (-x)
+  refine Tendsto.congr' ?_ tendsto_const_nhds
+  filter_upwards [eventually_atTop.mpr ⟨N, fun _ hn => hn⟩] with n hn
+  have hcast : (N : ℝ) ≤ (n : ℝ) := by exact_mod_cast hn
+  have hx : ¬x < -(n : ℝ) := by linarith
+  simp [step, hx]
+
+/-- The zero limit is a Stieltjes function but fails the distribution limit at `+∞`. -/
+example : ¬IsDistributionFunction (StieltjesFunction.const ℝ 0) := by
+  intro h
+  have hz : Tendsto (StieltjesFunction.const ℝ 0 : ℝ → ℝ) atTop (𝓝 0) :=
+    tendsto_const_nhds
+  have heq : (0 : ℝ) = 1 := tendsto_nhds_unique hz h.tendsto_atTop
+  norm_num at heq
+
+/-- The one limit fails the distribution limit at `-∞`. -/
+example : ¬IsDistributionFunction (StieltjesFunction.const ℝ 1) := by
+  intro h
+  have ho : Tendsto (StieltjesFunction.const ℝ 1 : ℝ → ℝ) atBot (𝓝 1) :=
+    tendsto_const_nhds
+  have heq : (1 : ℝ) = 0 := tendsto_nhds_unique ho h.tendsto_atBot
+  norm_num at heq
+
 -- `#print axioms` for the public and reused declarations: only the standard triple.
 #print axioms ProbabilityTheory.IsDistributionFunction
 #print axioms ProbabilityTheory.helly_selection
@@ -116,5 +182,7 @@ example (F : StieltjesFunction ℝ) (hF : IsDistributionFunction F) (x : ℝ) :
 #print axioms StieltjesFunction
 #print axioms StieltjesFunction.instCoeFun
 #print axioms Monotone.stieltjesFunction
+#print axioms step
+#print axioms step_isDistributionFunction
 
 end MathlibExtTest.Probability.HellySelection
