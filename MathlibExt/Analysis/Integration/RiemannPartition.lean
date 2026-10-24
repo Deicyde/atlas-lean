@@ -16,6 +16,7 @@ public import Mathlib.Algebra.Order.BigOperators.Group.Finset
 public import Mathlib.Data.Finset.Sort
 public import Mathlib.Order.Fin.Basic
 public import Mathlib.Topology.Order.Basic
+import Mathlib.Data.Fintype.BigOperators
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Ring
 
