@@ -18,7 +18,7 @@ open scoped Topology
 
 namespace MathlibExtTest.MeasureTheory.Function.ScheffeLemma
 
-variable {α : Type*} {m : MeasurableSpace α} {μ : Measure α} [IsFiniteMeasure μ]
+variable {α : Type*} {m : MeasurableSpace α} {μ : Measure α}
   {f : ℕ → α → ℝ} {g : α → ℝ}
 
 /-- Scheffé's lemma restates with the exact public signature. -/
@@ -46,7 +46,7 @@ example (hf : ∀ n, MemLp (f n) 1 μ) (hg : MemLp g 1 μ)
   uniformIntegrable_of_tendstoInMeasure_of_tendsto_eLpNorm hf hg hfg hnorm
 
 /-- The TFAE restates with the exact public signature. -/
-example (hf : ∀ n, MemLp (f n) 1 μ) (hg : MemLp g 1 μ)
+example [IsFiniteMeasure μ] (hf : ∀ n, MemLp (f n) 1 μ) (hg : MemLp g 1 μ)
     (hfg : TendstoInMeasure μ f atTop g) :
     [UniformIntegrable f 1 μ,
      Tendsto (fun n => eLpNorm (f n - g) 1 μ) atTop (𝓝 0),

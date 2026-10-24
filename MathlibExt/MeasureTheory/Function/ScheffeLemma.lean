@@ -220,7 +220,6 @@ This is Scheffé's lemma applied along a further subsequence, extracted from
 every subsequence by convergence in measure. -/
 theorem tendsto_eLpNorm_one_of_tendstoInMeasure_of_tendsto_eLpNorm
     {α : Type*} {m : MeasurableSpace α} {μ : Measure α}
-    [IsFiniteMeasure μ]
     {f : ℕ → α → ℝ} {g : α → ℝ}
     (hf : ∀ n, MemLp (f n) 1 μ) (hg : MemLp g 1 μ)
     (hfg : TendstoInMeasure μ f atTop g)
@@ -239,7 +238,6 @@ uniformly integrable in `L¹`: this is `L¹` convergence (from the previous
 theorem) plus Vitali's theorem in Mathlib. -/
 theorem uniformIntegrable_of_tendstoInMeasure_of_tendsto_eLpNorm
     {α : Type*} {m : MeasurableSpace α} {μ : Measure α}
-    [IsFiniteMeasure μ]
     {f : ℕ → α → ℝ} {g : α → ℝ}
     (hf : ∀ n, MemLp (f n) 1 μ) (hg : MemLp g 1 μ)
     (hfg : TendstoInMeasure μ f atTop g)
