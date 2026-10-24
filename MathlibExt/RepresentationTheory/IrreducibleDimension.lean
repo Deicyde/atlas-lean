@@ -8,20 +8,21 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import Mathlib.Algebra.GCDMonoid.IntegrallyClosed
-public import Mathlib.Algebra.MonoidAlgebra.Basic
-public import Mathlib.Algebra.Polynomial.Monic
-public import Mathlib.Algebra.Polynomial.Roots
-public import Mathlib.Data.Rat.Defs
-public import Mathlib.FieldTheory.Minpoly.Basic
+import Mathlib.Algebra.GCDMonoid.IntegrallyClosed
+import Mathlib.Algebra.MonoidAlgebra.Basic
+import Mathlib.Algebra.Polynomial.Monic
+import Mathlib.Algebra.Polynomial.Roots
+import Mathlib.Data.Rat.Defs
+public import Mathlib.FieldTheory.IsAlgClosed.Basic
+import Mathlib.FieldTheory.Minpoly.Basic
 public import Mathlib.LinearAlgebra.Dimension.Finrank
-public import Mathlib.LinearAlgebra.Eigenspace.Charpoly
-public import Mathlib.LinearAlgebra.Eigenspace.Minpoly
-public import Mathlib.LinearAlgebra.Trace
-public import Mathlib.RepresentationTheory.Character
+import Mathlib.LinearAlgebra.Eigenspace.Charpoly
+import Mathlib.LinearAlgebra.Eigenspace.Minpoly
+import Mathlib.LinearAlgebra.Trace
+import Mathlib.RepresentationTheory.Character
 public import Mathlib.RepresentationTheory.Irreducible
-public import Mathlib.RingTheory.IntegralClosure.IntegrallyClosed
-public import Mathlib.RingTheory.IntegralClosure.IsIntegral.Basic
+import Mathlib.RingTheory.IntegralClosure.IntegrallyClosed
+import Mathlib.RingTheory.IntegralClosure.IsIntegral.Basic
 import Mathlib.LinearAlgebra.Matrix.Charpoly.Eigs
 import Mathlib.Tactic.FieldSimp
 import Mathlib.Tactic.Group
