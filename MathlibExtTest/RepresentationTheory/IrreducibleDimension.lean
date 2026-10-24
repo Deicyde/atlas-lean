@@ -33,7 +33,7 @@ theorem one_dim_rep_irreducible {G : Type u} [Group G] [Fintype G]
 /-- The dimension-divides-order theorem applied to a one-dimensional
 representation: `1 ∣ |G|`. -/
 theorem finrank_one_dvd_card {G : Type u} [Group G] [Fintype G]
-    {k : Type u} [Field k] [IsAlgClosed k] [CharZero k] [NeZero (Nat.card G : k)]
+    {k : Type u} [Field k] [IsAlgClosed k] [CharZero k]
     (ρ : Representation k G k) :
     Module.finrank k k ∣ Fintype.card G := by
   have : ρ.IsIrreducible := one_dim_rep_irreducible ρ
@@ -42,12 +42,8 @@ theorem finrank_one_dvd_card {G : Type u} [Group G] [Fintype G]
 /-- The trivial representation of `S₃` on `ℂ` is one-dimensional, so its
 dimension `1` divides `|S₃| = 6`. -/
 theorem trivial_rep_s3_dim_dvd_card :
-    Module.finrank ℂ ℂ ∣ Fintype.card (Equiv.Perm (Fin 3)) := by
-  have hcard : (Nat.card (Equiv.Perm (Fin 3)) : ℂ) ≠ 0 := by
-    rw [Nat.card_eq_fintype_card, Fintype.card_perm, Fintype.card_fin]
-    exact_mod_cast Nat.factorial_ne_zero 3
-  have : NeZero (Nat.card (Equiv.Perm (Fin 3)) : ℂ) := ⟨hcard⟩
-  exact finrank_one_dvd_card (Representation.trivial ℂ (Equiv.Perm (Fin 3)) ℂ)
+    Module.finrank ℂ ℂ ∣ Fintype.card (Equiv.Perm (Fin 3)) :=
+  finrank_one_dvd_card (Representation.trivial ℂ (Equiv.Perm (Fin 3)) ℂ)
 
 /-- The sign representation of `S₃`: a permutation `g` acts on `ℂ` by
 multiplication by `sign g`. -/
@@ -70,17 +66,13 @@ noncomputable def signRep : Representation ℂ (Equiv.Perm (Fin 3)) ℂ where
 /-- The sign representation of `S₃` is one-dimensional, so its dimension `1`
 divides `|S₃| = 6`. -/
 theorem sign_rep_s3_dim_dvd_card :
-    Module.finrank ℂ ℂ ∣ Fintype.card (Equiv.Perm (Fin 3)) := by
-  have hcard : (Nat.card (Equiv.Perm (Fin 3)) : ℂ) ≠ 0 := by
-    rw [Nat.card_eq_fintype_card, Fintype.card_perm, Fintype.card_fin]
-    exact_mod_cast Nat.factorial_ne_zero 3
-  have : NeZero (Nat.card (Equiv.Perm (Fin 3)) : ℂ) := ⟨hcard⟩
-  exact finrank_one_dvd_card signRep
+    Module.finrank ℂ ℂ ∣ Fintype.card (Equiv.Perm (Fin 3)) :=
+  finrank_one_dvd_card signRep
 
 /-- The theorem applies to an arbitrary irreducible representation, with no
 one-dimensionality assumption. -/
 theorem irred_dim_dvd_card_of_irreducible {G : Type u} [Group G] [Fintype G]
-    {k : Type u} [Field k] [IsAlgClosed k] [CharZero k] [NeZero (Nat.card G : k)]
+    {k : Type u} [Field k] [IsAlgClosed k] [CharZero k]
     {V : Type u} [AddCommGroup V] [Module k V] [FiniteDimensional k V]
     (ρ : Representation k G V) [ρ.IsIrreducible] :
     Module.finrank k V ∣ Fintype.card G :=

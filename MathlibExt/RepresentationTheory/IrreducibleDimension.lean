@@ -352,10 +352,12 @@ algebraically closed field `k` of characteristic zero, then
 the order of the group. -/
 theorem irred_dim_dvd_card
     {G : Type u} [Group G] [Fintype G] {k : Type u} [Field k] [IsAlgClosed k]
-    [CharZero k] [NeZero (Nat.card G : k)]
+    [CharZero k]
     {V : Type u} [AddCommGroup V] [Module k V] [FiniteDimensional k V]
     (ρ : Representation k G V) [ρ.IsIrreducible] :
     Module.finrank k V ∣ Fintype.card G := by
+  letI : NeZero (Nat.card G : k) :=
+    ⟨Nat.cast_ne_zero.mpr (Nat.card_pos (α := G)).ne'⟩
   rw [← Nat.card_eq_fintype_card]
   exact mainTheorem_dim_dvd_card_charZero ρ
 
