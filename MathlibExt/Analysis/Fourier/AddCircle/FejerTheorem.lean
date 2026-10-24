@@ -170,7 +170,13 @@ theorem cesaroMean_uniform_bound (f : C(AddCircle T, ℂ))
 
 /-- Fejér's theorem on `AddCircle T`: for every continuous function
 `f : AddCircle T → ℂ` (equivalently, every continuous `T`-periodic function on `ℝ`),
-the Cesàro–Fourier means `σ_N f` converge uniformly to `f` as `N → ∞`. -/
+the Cesàro–Fourier means `σ_N f` converge uniformly to `f` as `N → ∞`.
+
+The real-line entry `Analysis.fejer` in
+`WantedExt/Analysis/FourierConvergenceWanted.lean` remains deferred: its proof
+must descend the periodic function to `AddCircle (2 * Real.pi)`, identify its
+`fourierCoeffOn` and exponential partial sums with `partialFourierSum`, and
+pull this uniform convergence back along the quotient map. -/
 theorem fejer_uniform_convergence (f : C(AddCircle T, ℂ)) :
     TendstoUniformly (fun N => cesaroFourierMean (⇑f) N) (⇑f) atTop := by
   rw [Metric.tendstoUniformly_iff]

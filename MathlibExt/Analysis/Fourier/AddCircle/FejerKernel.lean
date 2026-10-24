@@ -44,8 +44,13 @@ open MeasureTheory AddCircle Finset Filter Complex
 namespace AddCircle
 
 /-- The Fejér kernel `K_N`, defined as the Cesàro mean of the Dirichlet kernels:
-`K_N(x) = (N+1)⁻¹ • ∑_{k=0}^{N} ∑_{n=-k}^{k} e^{2πi n x / T}`. Equivalently (after
-algebra), `K_N(x) = (N+1)⁻¹ • (sin((N+1)x/2) / sin(x/2))²` away from the origin. -/
+for a real representative `t` of `x : AddCircle T`,
+`K_N(x) = (N+1)⁻¹ • ∑_{k=0}^{N} ∑_{n=-k}^{k} e^{2πi n t / T}`.
+When `sin(π t / T) ≠ 0`, the closed form is
+`K_N(x) = (N+1)⁻¹ * (sin((N+1) π t / T) / sin(π t / T))²`,
+with the real expression coerced into `ℂ`.
+This normalization uses Haar probability measure; at `T = 2π`, the kernel
+for integration against Lebesgue measure is `K_N / (2π)`. -/
 noncomputable def fejerKernel (N : ℕ) : AddCircle T → ℂ :=
   fun x => ((N : ℂ) + 1)⁻¹ • ∑ k ∈ range (N + 1),
     ∑ n ∈ Finset.Icc (-(k : ℤ)) (k : ℤ), fourier n x
