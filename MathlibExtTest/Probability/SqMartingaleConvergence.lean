@@ -64,4 +64,15 @@ example (c : ℝ) :
   (martingale_const ℱ μ c).ae_tendsto_of_tendsto_predictableQuadVar
     (fun _ => integrable_const _)
 
+/-- The original source formula, with the sum and conditional square explicit. -/
+example (n : ℕ) (ω : Ω) :
+    predictableQuadVar μ ℱ f n ω = (Finset.range n).sum (fun k =>
+      (μ[(fun ω' => (f (k + 1) ω' - f k ω') ^ 2) | ℱ k]) ω) := rfl
+
+/-- This definition-level fixture has increments one and three, giving variation ten. -/
+example (ω : Ω) :
+    predictableQuadVar μ ℱ (fun n _ => (n : ℝ) ^ 2) 2 ω = 10 := by
+  norm_num [predictableQuadVar, Finset.sum_range_succ,
+    condExp_const (μ := μ) (ℱ.le 0), condExp_const (μ := μ) (ℱ.le 1)]
+
 end MathlibExtTest.Probability.SqMartingaleConvergence
