@@ -23,6 +23,7 @@ import MathlibExt.Analysis.Complex.CasoratiWeierstrass
 import MathlibExt.Analysis.Complex.MittagLeffler
 import MathlibExt.Analysis.Complex.NormalFamilies
 import MathlibExt.Analysis.Complex.Rouche
+import MathlibExt.Analysis.LaplaceTransform.ExponentialBound
 import MathlibExt.Analysis.LaplaceTransform.NewmanTauberian
 import MathlibExt.NumberTheory.LSeries.PrimeLog
 
@@ -156,21 +157,30 @@ example : Differentiable ℂ riemannZeta₀ := differentiable_riemannZeta₀
 example {x : ℝ} (hx : 0 ≤ x) : Chebyshev.theta x ≤ Real.log 4 * x :=
   Chebyshev.theta_le_log4_mul_x hx
 
--- Target 36: `ζ(s) ≠ 0` and `Φ(s) - 1/(s - 1)` is holomorphic for `Re s ≥ 1`.
-example {s : ℂ} (hs : 1 ≤ s.re) : riemannZeta s ≠ 0 := riemannZeta_ne_zero_of_one_le_re hs
+-- Target 36: `ζ(s) ≠ 0` for `Re s ≥ 1`, and `Φ(s) - 1/(s - 1)` (with `Φ(s) = ∑_p log p / p ^ s`)
+-- extends to a function analytic at every point of `Re s ≥ 1`; both parts in one statement.
+example :
+    (∀ s : ℂ, 1 ≤ s.re → riemannZeta s ≠ 0) ∧
+      ∃ F : ℂ → ℂ, AnalyticOnNhd ℂ F {s | 1 ≤ s.re} ∧
+        Set.EqOn F (fun s => Nat.Primes.logDirichletSeries s - 1 / (s - 1)) {s | 1 < s.re} :=
+  ⟨fun _ hs => riemannZeta_ne_zero_of_one_le_re hs, Nat.Primes.logDirichletContinuation,
+    Nat.Primes.logDirichletContinuation_analyticOn, Nat.Primes.logDirichletContinuation_agree⟩
 
-example : AnalyticOnNhd ℂ Nat.Primes.logDirichletContinuation {s | 1 ≤ s.re} :=
-  Nat.Primes.logDirichletContinuation_analyticOn
-
-example : Set.EqOn Nat.Primes.logDirichletContinuation
-    (fun s => Nat.Primes.logDirichletSeries s - 1 / (s - 1)) {s | 1 < s.re} :=
-  Nat.Primes.logDirichletContinuation_agree
-
--- Target 37: Newman's Tauberian theorem.
-example (f : ℝ → ℂ) (B : ℝ)
-    (hfmeas : MeasureTheory.AEStronglyMeasurable f (MeasureTheory.volume.restrict (Set.Ioi 0)))
-    (hB : 0 ≤ B) (hbound : ∀ t : ℝ, 0 ≤ t → ‖f t‖ ≤ B) (G : ℂ → ℂ)
-    (hG_analytic : AnalyticOnNhd ℂ G {s | 0 ≤ s.re})
-    (hG : ∀ s : ℂ, 0 < s.re → HasLaplace f s (G s)) :
-    Tendsto (fun T : ℝ => ∫ t : ℝ in (0 : ℝ)..T, f t) atTop (𝓝 (G 0)) :=
-  newman_tauberian f B hfmeas hB hbound G hG_analytic hG
+-- Target 37: Newman's analytic theorem in the book's form. If `f` is bounded and locally
+-- integrable on `[0, ∞)` and its Laplace transform `g z = ∫₀^∞ e^{-zt} f t dt` (`Re z > 0`) extends
+-- holomorphically to `Re z ≥ 0`, then `∫₀^T f → g 0`.
+example {f : ℝ → ℂ} {g : ℂ → ℂ} (hf_bdd : ∃ B : ℝ, ∀ t : ℝ, 0 ≤ t → ‖f t‖ ≤ B)
+    (hf_loc : MeasureTheory.LocallyIntegrableOn f (Set.Ici 0))
+    (hg_laplace : ∀ z : ℂ, 0 < z.re →
+      g z = ∫ t in Set.Ioi (0 : ℝ), Complex.exp (-z * t) * f t)
+    (hg : AnalyticOnNhd ℂ g {z | 0 ≤ z.re}) :
+    Tendsto (fun T : ℝ => ∫ t in (0 : ℝ)..T, f t) atTop (𝓝 (g 0)) := by
+  obtain ⟨B, hB⟩ := hf_bdd
+  have hB0 : 0 ≤ B := (norm_nonneg _).trans (hB 0 le_rfl)
+  have hmeas : MeasureTheory.AEStronglyMeasurable f
+      (MeasureTheory.volume.restrict (Set.Ioi 0)) :=
+    hf_loc.aestronglyMeasurable.mono_set Set.Ioi_subset_Ici_self
+  refine newman_tauberian f B hmeas hB0 hB g hg fun z hz => ⟨?_, ?_⟩
+  · refine laplaceConvergent_of_norm_le_exp f 0 B hmeas hB0 (fun t ht => ?_) hz
+    simpa using hB t ht
+  · simp only [laplace, smul_eq_mul, hg_laplace z hz]
