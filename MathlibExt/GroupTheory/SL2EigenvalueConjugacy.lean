@@ -48,7 +48,8 @@ def HasEigenvalues (M : Matrix.SpecialLinearGroup (Fin 2) F) (s : F) : Prop :=
   (↑M : Matrix (Fin 2) (Fin 2) F).charpoly =
     (Polynomial.X - Polynomial.C s) * (Polynomial.X - Polynomial.C s⁻¹)
 
-/-- Standard conjugacy to `diag2` is exactly the source matrix-existential statement. -/
+/-- Conjugacy to `Matrix.SpecialLinearGroup.diag2` is equivalent to the source
+statement about a matrix conjugator. -/
 theorem isConj_diag2_iff (M : Matrix.SpecialLinearGroup (Fin 2) F)
     (s : F) (hs0 : s ≠ 0) :
     IsConj M (Matrix.SpecialLinearGroup.diag2 s hs0) ↔
@@ -185,14 +186,15 @@ theorem eigenvalues_implies_isConj_diag2 (s : F) (hs : s ≠ s⁻¹)
     _ = 1 * Matrix.diagonal ![s, s⁻¹] := by rw [hQinv_mul]
     _ = Matrix.diagonal ![s, s⁻¹] := by rw [Matrix.one_mul]
 
-/-- The source diagonalization statement, with no separate nonzero hypothesis. -/
+/-- The source diagonalization theorem with the original scalar hypothesis. -/
 theorem eigenvalues_implies_conj_to_diag (s : F) (hs : s ≠ s⁻¹)
     (M : Matrix.SpecialLinearGroup (Fin 2) F) (hM : HasEigenvalues M s) :
     ∃ P : Matrix.SpecialLinearGroup (Fin 2) F,
       (P * M * P⁻¹ : Matrix.SpecialLinearGroup (Fin 2) F).1 =
         Matrix.diagonal ![s, s⁻¹] := by
   have hs0 : s ≠ 0 := fun h => hs (by simp [h])
-  exact (isConj_diag2_iff M s hs0).mp (eigenvalues_implies_isConj_diag2 s hs M hM hs0)
+  exact (isConj_diag2_iff M s hs0).mp
+    (eigenvalues_implies_isConj_diag2 s hs M hM hs0)
 
 /-- A normal subgroup of `SL₂(F)` containing one matrix with eigenvalues `s`
 and `s⁻¹`, with `s ≠ s⁻¹`, contains every matrix with those eigenvalues. -/
