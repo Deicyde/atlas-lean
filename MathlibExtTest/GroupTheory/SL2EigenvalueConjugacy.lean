@@ -10,6 +10,7 @@ module
 
 import MathlibExt.GroupTheory.SL2EigenvalueConjugacy
 
+import Mathlib.Algebra.Group.Conj
 import Mathlib.Tactic
 
 namespace MathlibExtTest.GroupTheory.SL2EigenvalueConjugacy
@@ -84,5 +85,41 @@ theorem conj_diag_mem_of_mem
     swapSL2 * diagSL2 (2 : ℚ) (by norm_num) * swapSL2⁻¹ ∈ N :=
   normal_contains_all_with_eigenvalues N hN 2 (by norm_num) _ hB
     (diag_hasEigenvalues 2 (by norm_num)) _ conj_diag_hasEigenvalues
+
+/-- A nontrivial matrix with repeated eigenvalues `1` and `1`. -/
+private def unipotent : Matrix.SpecialLinearGroup (Fin 2) ℚ :=
+  ⟨!![1, 1; 0, 1], by norm_num [Matrix.det_fin_two]⟩
+
+/-- The source characteristic-polynomial predicate allows repeated eigenvalues. -/
+theorem unipotent_hasEigenvalues_one : HasEigenvalues unipotent 1 := by
+  unfold HasEigenvalues
+  rw [Matrix.charpoly_fin_two]
+  norm_num [unipotent, Matrix.trace, Matrix.det_fin_two, Fin.sum_univ_two,
+    Polynomial.C_ofNat]
+  ring
+
+/-- Repeated eigenvalues do not imply conjugacy to the identity. -/
+theorem unipotent_not_isConj_one : ¬ IsConj unipotent 1 := by
+  rw [isConj_one_left]
+  intro h
+  have h01 := congrArg (fun M : Matrix.SpecialLinearGroup (Fin 2) ℚ => M.1 0 1) h
+  norm_num [unipotent] at h01
+
+/-- The source theorem gives an actual member of a concrete normal closure. -/
+theorem conj_diag_mem_normalClosure :
+    swapSL2 * diagSL2 (2 : ℚ) (by norm_num) * swapSL2⁻¹ ∈
+      Subgroup.normalClosure
+        ({diagSL2 (2 : ℚ) (by norm_num)} :
+          Set (Matrix.SpecialLinearGroup (Fin 2) ℚ)) :=
+  conj_diag_mem_of_mem _ inferInstance (Subgroup.subset_normalClosure (by simp))
+
+#print axioms diag_hasEigenvalues
+#print axioms diag_isConjToDiag
+#print axioms conj_diag_hasEigenvalues
+#print axioms conj_diag_isConjToDiag
+#print axioms conj_diag_mem_of_mem
+#print axioms unipotent_hasEigenvalues_one
+#print axioms unipotent_not_isConj_one
+#print axioms conj_diag_mem_normalClosure
 
 end MathlibExtTest.GroupTheory.SL2EigenvalueConjugacy
