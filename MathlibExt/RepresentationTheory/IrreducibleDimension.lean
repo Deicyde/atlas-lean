@@ -10,20 +10,14 @@ module
 
 import Mathlib.Algebra.GCDMonoid.IntegrallyClosed
 import Mathlib.Algebra.MonoidAlgebra.Basic
-import Mathlib.Algebra.Polynomial.Monic
-import Mathlib.Algebra.Polynomial.Roots
 import Mathlib.Data.Rat.Defs
 public import Mathlib.FieldTheory.IsAlgClosed.Basic
-import Mathlib.FieldTheory.Minpoly.Basic
 public import Mathlib.LinearAlgebra.Dimension.Finrank
-import Mathlib.LinearAlgebra.Eigenspace.Charpoly
-import Mathlib.LinearAlgebra.Eigenspace.Minpoly
 import Mathlib.LinearAlgebra.Trace
 import Mathlib.RepresentationTheory.Character
 public import Mathlib.RepresentationTheory.Irreducible
 import Mathlib.RingTheory.IntegralClosure.IntegrallyClosed
 import Mathlib.RingTheory.IntegralClosure.IsIntegral.Basic
-import Mathlib.LinearAlgebra.Matrix.Charpoly.Eigs
 import Mathlib.Tactic.FieldSimp
 import Mathlib.Tactic.Group
 import Mathlib.Tactic.Linarith
@@ -220,41 +214,6 @@ private lemma monoidAlgebra_pow_isIntegral_general
     intro p _
     exact (ih p.1).mul (hφ p.2)
 
-/-- The trace of `ρ g` is an algebraic integer: it is a sum of roots of the
-characteristic polynomial, each a root of unity of order dividing `|G|`. -/
-private lemma char_isIntegral_general
-    {k : Type*} [Field k] [IsAlgClosed k]
-    {G : Type*} [Group G] [Fintype G]
-    {V : Type*} [AddCommGroup V] [Module k V] [FiniteDimensional k V]
-    (ρ : Representation k G V) (g : G) :
-    IsIntegral ℤ (LinearMap.trace k V (ρ g)) := by
-  set F := ρ g
-  have hord : F ^ Fintype.card G = 1 := by
-    simp only [F, ← map_pow, pow_card_eq_one, map_one]
-  set b := Module.finBasis k V
-  rw [LinearMap.trace_eq_matrix_trace k b, Matrix.trace_eq_sum_roots_charpoly]
-  apply IsIntegral.multiset_sum
-  intro μ hμ
-  have hev : Module.End.HasEigenvalue F μ := by
-    rw [Module.End.hasEigenvalue_iff_isRoot_charpoly, (LinearMap.charpoly_toMatrix F b).symm]
-    exact (Polynomial.mem_roots ((Matrix.charpoly_monic _).ne_zero)).mp hμ
-  have hμ_pow : μ ^ Fintype.card G = 1 := by
-    have hdvd : minpoly k F ∣ (Polynomial.X ^ Fintype.card G - 1) := by
-      apply minpoly.dvd; simp only [map_sub, map_pow, map_one, Polynomial.aeval_X]
-      exact sub_eq_zero.mpr hord
-    have hμ_root : (Polynomial.X ^ Fintype.card G - 1 : Polynomial k).IsRoot μ := by
-      obtain ⟨q, hq⟩ := hdvd
-      rw [Polynomial.IsRoot.def, hq, Polynomial.eval_mul,
-          (Polynomial.IsRoot.def ..).mpr ((Module.End.hasEigenvalue_iff_isRoot).mp hev), zero_mul]
-    simp only [Polynomial.IsRoot.def, Polynomial.eval_sub, Polynomial.eval_pow,
-               Polynomial.eval_X, Polynomial.eval_one] at hμ_root
-    exact sub_eq_zero.mp hμ_root
-  exact ⟨Polynomial.X ^ Fintype.card G - 1, by
-    rw [show (1 : Polynomial ℤ) = Polynomial.C 1 from by simp]
-    exact Polynomial.monic_X_pow_sub_C 1 (Fintype.card_pos (α := G)).ne', by
-    simp only [Polynomial.eval₂_sub, Polynomial.eval₂_pow, Polynomial.eval₂_X,
-               Polynomial.eval₂_one, hμ_pow, sub_self]⟩
-
 /-- The `Nat.card` form of the dimension-divides-order theorem. The scalar
 `c` from `rep_conj_char_eq_scalar` equals `|G| / dim ρ` in `k`, and its
 powers have integral trace, so `|G| / dim ρ` is an integer. -/
@@ -288,7 +247,7 @@ private theorem mainTheorem_dim_dvd_card_charZero
     rw [h1]; simp [r, map_div₀]; ring
 
   have hf_int : ∀ g : G, IsIntegral ℤ (ρ.character g⁻¹) := fun g =>
-    char_isIntegral_general ρ g⁻¹
+    Representation.isIntegral_character ρ g⁻¹
 
   have hρf : repOfFun ρ (fun g => ρ.character g⁻¹) = (algebraMap ℚ k r) • LinearMap.id := by
     rw [hcf, hc_eq]
@@ -319,7 +278,7 @@ private theorem mainTheorem_dim_dvd_card_charZero
     have htrace_int : IsIntegral ℤ (LinearMap.trace k V
         ((repOfFun ρ (fun g => ρ.character g⁻¹)) ^ n)) := by
       rw [htrace_sum]; apply IsIntegral.sum; intro g _
-      exact (monoidAlgebra_pow_isIntegral_general φ hbase n g).mul (char_isIntegral_general ρ g)
+      exact (monoidAlgebra_pow_isIntegral_general φ hbase n g).mul (Representation.isIntegral_character ρ g)
 
     rw [htrace_eq] at htrace_int
     have hrat : (d : k) * (algebraMap ℚ k r) ^ n = algebraMap ℚ k ((d : ℚ) * r ^ n) := by
