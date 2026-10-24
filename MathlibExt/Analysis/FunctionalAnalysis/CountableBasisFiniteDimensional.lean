@@ -11,9 +11,9 @@ module
 public import Mathlib.Analysis.RCLike.Basic
 public import Mathlib.LinearAlgebra.FiniteDimensional.Defs
 public import Mathlib.Topology.Algebra.Module.Basic
-public import Mathlib.Topology.Algebra.Module.FiniteDimension
-public import Mathlib.Topology.Baire.CompleteMetrizable
-public import Mathlib.Topology.Baire.Lemmas
+import Mathlib.Topology.Algebra.Module.FiniteDimension
+import Mathlib.Topology.Baire.CompleteMetrizable
+import Mathlib.Topology.Baire.Lemmas
 
 @[expose] public section
 
