@@ -22,7 +22,7 @@ namespace MathlibExt.MeasureTheory.Function.MemLpTruncation
 /-!
 # `L^p` membership via truncated integrals on `ℝ`
 
-For a measurable set `S ⊆ ℝ` and `1 ≤ p < ∞`, a measurable function `f : ℝ → F`
+For a measurable set `S ⊆ ℝ` and `0 < p < ∞`, a measurable function `f : ℝ → F`
 belongs to `L^p (S)` if and only if the integrals of `‖f‖ ^ p` over the truncations
 `[-n, n] ∩ S` stay bounded, i.e. their supremum is finite. Since those truncated
 integrals increase with `n`, the supremum is the limit of the truncated integrals,
@@ -77,7 +77,7 @@ theorem lintegral_eq_iSup_lintegral_Icc_inter
   rw [← h_sup, lintegral_iSup h_meas h_mono]
 
 /-- **Characterization of `L^p` membership via truncated integrals.** For `E ⊆ ℝ`
-measurable and `1 ≤ p < ∞` (here `p ≠ 0` and `p ≠ ⊤`), a measurable function
+measurable and `0 < p < ∞` (here `p ≠ 0` and `p ≠ ⊤`), a measurable function
 `f : ℝ → F` belongs to `L^p (E)` if and only if
 `⨆ n : ℕ, ∫⁻ x in [-n, n] ∩ E, ‖f x‖ₑ ^ p.toReal < ⊤`. -/
 theorem memLp_iff_iSup_lintegral_Icc_inter_lt_top
@@ -97,8 +97,5 @@ theorem memLp_iff_iSup_lintegral_Icc_inter_lt_top
       MeasureTheory.eLpNorm_lt_top_iff_lintegral_rpow_enorm_lt_top hp_ne_zero hp_ne_top
         hf.aestronglyMeasurable.restrict]
     rwa [lintegral_eq_iSup_lintegral_Icc_inter S hS _ (by measurability)]
-
-#print axioms lintegral_eq_iSup_lintegral_Icc_inter
-#print axioms memLp_iff_iSup_lintegral_Icc_inter_lt_top
 
 end MathlibExt.MeasureTheory.Function.MemLpTruncation

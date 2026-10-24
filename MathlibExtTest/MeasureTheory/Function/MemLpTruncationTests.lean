@@ -80,4 +80,7 @@ example : ¬ MemLp (fun _ : ℝ => (1 : ℝ)) 2 volume := by
     exact iSup_mono hge
   exact absurd (h'.trans_le htop) (by simp)
 
+#print axioms lintegral_eq_iSup_lintegral_Icc_inter
+#print axioms memLp_iff_iSup_lintegral_Icc_inter_lt_top
+
 end MathlibExtTest.MeasureTheory.Function.MemLpTruncationTests
