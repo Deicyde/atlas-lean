@@ -11,8 +11,9 @@ module
 public import Mathlib.Analysis.InnerProductSpace.Adjoint
 public import Mathlib.Analysis.InnerProductSpace.Spectrum
 public import Mathlib.Analysis.Normed.Operator.Compact.Basic
-public import Mathlib.Topology.MetricSpace.Cauchy
-public import Mathlib.Topology.Sequences
+import Mathlib.Topology.MetricSpace.Cauchy
+import Mathlib.Topology.Sequences
+import Mathlib.Tactic.Linarith
 
 @[expose] public section
 
