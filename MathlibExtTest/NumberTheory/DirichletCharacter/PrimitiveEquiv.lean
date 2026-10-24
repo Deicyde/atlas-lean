@@ -23,6 +23,13 @@ namespace DirichletCharacter
 
 variable {R : Type*} [CommMonoidWithZero R] {m : ℕ} (hm : m ≠ 0)
 
+/-- The second source bijection evaluates the character induced to level `m`
+on units modulo `m`. -/
+example (p : PrimitiveInducer R m) (u : (ZMod m)ˣ) :
+    (PrimitiveInducer.equivUnitHom m hm p u : R) =
+      changeLevel p.level_dvd p.char (u : ZMod m) :=
+  PrimitiveInducer.equivUnitHom_apply p hm u
+
 /-- Round trip: inducing the primitive inducer of `χ` recovers `χ`. -/
 example (χ : DirichletCharacter R m) :
     (equivPrimitiveInducer m hm).symm (equivPrimitiveInducer m hm χ) = χ :=

@@ -19,7 +19,7 @@ Let `M(m)` be the set of Dirichlet characters of modulus `m` and `X(m)` the set 
 primitive Dirichlet characters of modulus dividing `m`. Every character `χ` of
 modulus `m` is induced by a unique primitive character, namely its canonical
 primitive character `χ.primitiveCharacter` at level `χ.conductor`. This file
-packages that correspondence as an equivalence `M(m) ≃ X(m)`.
+packages the chain of correspondences `M(m) ≃ X(m) ≃ Ĝ(m)`.
 
 The uniqueness half of the correspondence is
 `DirichletCharacter.primitiveCharacter_isPrimitive_and_unique` in
@@ -34,10 +34,11 @@ primitive character induces a character of the same conductor.
   level dividing `m`, i.e. an element of `X(m)`.
 * `DirichletCharacter.equivPrimitiveInducer`: the equivalence `M(m) ≃ X(m)`
   of Corollary 18.16.
+* `DirichletCharacter.PrimitiveInducer.equivUnitHom`: the equivalence
+  `X(m) ≃ Ĝ(m)` of the same corollary.
 
-The second bijection of Corollary 18.16, `M(m) ≃* Ĝ(m)` to the character group
-of `(ZMod m)ˣ`, is already Mathlib's `MulChar.mulEquivToUnitHom` and is not
-re-proved here.
+The second bijection composes induction to level `m` with Mathlib's
+`MulChar.equivToUnitHom` to the character group of `(ZMod m)ˣ`.
 
 ATLAS source: ATLAS `NumberTheoryI`, Section 18.2.1, Corollary 18.16.
 The source formalization is `v1/Atlas/NumberTheoryI/code/Cor1816.lean`
@@ -120,6 +121,20 @@ theorem equivPrimitiveInducer_char (χ : DirichletCharacter R m) (hm : m ≠ 0) 
     ((equivPrimitiveInducer m hm χ).char : DirichletCharacter R χ.conductor) =
       χ.primitiveCharacter :=
   rfl
+
+/-- The second bijection of Corollary 18.16: primitive characters at divisor
+levels correspond to characters of the unit group modulo `m`. -/
+noncomputable def PrimitiveInducer.equivUnitHom (m : ℕ) (hm : m ≠ 0) :
+    PrimitiveInducer R m ≃ ((ZMod m)ˣ →* Rˣ) :=
+  (equivPrimitiveInducer m hm).symm.trans MulChar.equivToUnitHom
+
+/-- The unit-group character evaluates the primitive character induced to
+level `m`. -/
+@[simp] theorem PrimitiveInducer.equivUnitHom_apply
+    (p : PrimitiveInducer R m) (hm : m ≠ 0) (u : (ZMod m)ˣ) :
+    (PrimitiveInducer.equivUnitHom m hm p u : R) =
+      changeLevel p.level_dvd p.char (u : ZMod m) :=
+  MulChar.coe_equivToUnitHom _ _
 
 end DirichletCharacter
 
