@@ -8,11 +8,11 @@ LICENSE file in the root directory of this source tree.
 
 module
 
-public import Mathlib.Analysis.Calculus.Deriv.Pow
+import Mathlib.Analysis.Calculus.Deriv.Pow
 public import Mathlib.Analysis.Calculus.IteratedDeriv.Defs
-public import Mathlib.Analysis.Calculus.IteratedDeriv.Lemmas
-public import Mathlib.Analysis.Convex.Deriv
-public import Mathlib.Analysis.Calculus.TangentCone.Real
+import Mathlib.Analysis.Calculus.IteratedDeriv.Lemmas
+import Mathlib.Analysis.Convex.Deriv
+import Mathlib.Analysis.Calculus.TangentCone.Real
 public import Mathlib.Topology.ContinuousMap.Basic
 
 @[expose] public section
@@ -131,7 +131,5 @@ theorem sturm_liouville_uniqueness
     nlinarith [sq_nonneg (u x)]
   simp [hu_def, Pi.sub_apply] at hux_eq
   linarith
-
-#print axioms sturm_liouville_uniqueness
 
 end MathlibExt.Analysis.ODE.SturmLiouvilleUniqueness

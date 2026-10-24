@@ -68,4 +68,6 @@ example (V : C(Set.Icc (0 : ℝ) 1, ℝ)) (hV : ∀ x : Set.Icc (0 : ℝ) 1, 0 �
   exact sturm_liouville_uniqueness V hV (ContinuousMap.const (Set.Icc (0 : ℝ) 1) (0 : ℝ))
     (fun _ : ℝ => (0 : ℝ)) (fun x => (0 : ℝ) * x) (zero_solution V) h₂
 
+#print axioms sturm_liouville_uniqueness
+
 end MathlibExtTest.Analysis.ODE.SturmLiouvilleUniquenessTests
