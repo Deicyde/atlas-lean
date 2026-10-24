@@ -39,10 +39,12 @@ example {G : Type} [Group G] [Fintype G] [Invertible (Nat.card G : ℂ)] :
     (one_dim_rep_irreducible (Representation.trivial ℂ G ℂ))
 
 /-- The character of the trivial representation is constantly `1`, so its
-self-pairing is `|G|⁻¹ * |G| = 1` by direct computation. -/
+self-pairing is `|G|⁻¹ * |G| = 1` by direct computation. The converse of the
+criterion then proves that the representation is irreducible. -/
 example {G : Type} [Group G] [Fintype G] [Invertible (Nat.card G : ℂ)] :
-    classInnerProduct (Representation.trivial ℂ G ℂ).character
-      (Representation.trivial ℂ G ℂ).character = 1 := by
+    (Representation.trivial ℂ G ℂ).IsIrreducible := by
+  apply (irreducible_iff_classInnerProduct_self_eq_one
+    (Representation.trivial ℂ G ℂ)).mpr
   have hne : (Nat.card G : ℂ) ≠ 0 :=
     Nat.cast_ne_zero.mpr (Nat.card_pos (α := G) |>.ne')
   have hchar : ∀ g : G, (Representation.trivial ℂ G ℂ).character g = 1 := by
@@ -60,8 +62,8 @@ example {G : Type} [Group G] [Fintype G] [Invertible (Nat.card G : ℂ)] :
     ← Nat.card_eq_fintype_card, inv_mul_cancel₀ hne]
 
 /-- The trivial representation on `ℂ × ℂ` has character constantly `2`, so
-its self-pairing is `4 ≠ 1`; by the criterion (reverse direction) it is not
-irreducible. -/
+its self-pairing is `4 ≠ 1`; by contraposition of the forward direction it
+is not irreducible. -/
 example {G : Type} [Group G] [Fintype G] [Invertible (Nat.card G : ℂ)] :
     ¬ (Representation.trivial ℂ G (ℂ × ℂ)).IsIrreducible := by
   intro hirr
