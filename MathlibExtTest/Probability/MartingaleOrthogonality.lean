@@ -83,6 +83,28 @@ example (c : ℝ) {m n : ℕ} (hmn : m ≤ n) :
         ((fun _ _ => c) m ω) ^ 2 :=
   (martingale_const ℱ μ c).condExp_sub_sq_eq (fun _ => memLp_const c) hmn
 
+/-- Apply orthogonality to the martingale constructed from a terminal variable. -/
+example (Z : Ω → ℝ) (hZ : MemLp Z 2 μ) {m n : ℕ} (hmn : m ≤ n)
+    {Y : Ω → ℝ} (hY : StronglyMeasurable[ℱ m] Y)
+    (hY2 : Integrable (fun ω => Y ω ^ 2) μ) :
+    ∫ ω, (μ[Z | ℱ n] ω - μ[Z | ℱ m] ω) * Y ω ∂μ = 0 :=
+  (martingale_condExp Z ℱ μ).integral_sub_mul_eq_zero hmn hY hY2
+    (fun k => (hZ.condExp (m := ℱ k) one_le_two).integrable_sq)
+
+/-- The same constructed martingale satisfies the second-moment increment identity. -/
+example (Z : Ω → ℝ) (hZ : MemLp Z 2 μ) {m n : ℕ} (hmn : m ≤ n) :
+    ∫ ω, (μ[Z | ℱ n] ω - μ[Z | ℱ m] ω) ^ 2 ∂μ =
+      ∫ ω, (μ[Z | ℱ n] ω) ^ 2 ∂μ - ∫ ω, (μ[Z | ℱ m] ω) ^ 2 ∂μ :=
+  (martingale_condExp Z ℱ μ).integral_sub_sq_eq hmn
+    (fun k => (hZ.condExp (m := ℱ k) one_le_two).integrable_sq)
+
+/-- Its conditional increment variance follows from the source-facing API. -/
+example (Z : Ω → ℝ) (hZ : MemLp Z 2 μ) {m n : ℕ} (hmn : m ≤ n) :
+    μ[fun ω => (μ[Z | ℱ n] ω - μ[Z | ℱ m] ω) ^ 2 | ℱ m] =ᵐ[μ]
+      fun ω => μ[fun ω' => (μ[Z | ℱ n] ω') ^ 2 | ℱ m] ω - (μ[Z | ℱ m] ω) ^ 2 :=
+  (martingale_condExp Z ℱ μ).condExp_sub_sq_eq
+    (fun k => hZ.condExp (m := ℱ k) one_le_two) hmn
+
 #print axioms MeasureTheory.Martingale.integral_sub_mul_eq_zero
 #print axioms MeasureTheory.Martingale.integral_sub_sq_eq
 #print axioms MeasureTheory.Martingale.condExp_sub_sq_eq

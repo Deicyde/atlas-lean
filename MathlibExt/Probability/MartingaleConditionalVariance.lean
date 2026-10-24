@@ -25,10 +25,10 @@ conditional second moment of `X_n`.
 This formalizes the target "Theorem (Conditional variance theorem)"
 (Lecture 28) of `v1/Atlas/TheoryOfProbability/targets.yaml`, whose v1
 formalization is `v1/Atlas/TheoryOfProbability/code/ConditionalVariance.lean`
-(`MeasureTheory.martingale_condVar_identity`). The companion definition-only
+(`martingale_condVar_identity`). The companion definition-only
 restatement of the ordinary conditional-variance formula in that v1 file is
 not ported: it is just Mathlib's
-`MeasureTheory.condVar_ae_eq_condExp_sq_sub_sq_condExp`.
+`ProbabilityTheory.condVar_ae_eq_condExp_sq_sub_sq_condExp`.
 
 ## Main results
 
