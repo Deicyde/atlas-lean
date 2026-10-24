@@ -17,6 +17,7 @@ public import Mathlib.Analysis.Matrix.Normed
 public import Mathlib.Analysis.Normed.Algebra.Exponential
 public import Mathlib.Analysis.ODE.Gronwall
 public import Mathlib.Analysis.SpecialFunctions.Exponential
+public import Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Defs
 import Mathlib.Analysis.Calculus.Deriv.Linear
 import Mathlib.Tactic.Convert
 import Mathlib.Tactic.Group
@@ -32,13 +33,18 @@ such group is the exponential of a fixed matrix: there is a unique matrix `A`
 with `φ t = exp (t • A)` for all `t`, and conversely every exponential curve
 of this form is a one-parameter group.
 
+For a subgroup `G ≤ GL_n (ℂ)`, `IsOneParameterGroupIn G φ` additionally requires
+`φ t ∈ G` for every real `t`. The canonical lift `IsOneParameterGroup.toGL`
+turns a matrix-valued one-parameter group into a `GL_n (ℂ)`-valued curve.
+
 The proof differentiates the homomorphism law to get the linear ODE
-`φ'(s) = A • φ(s)` with `A = φ'(0)`, and concludes by Grönwall uniqueness:
+`φ'(s) = A * φ(s)` with `A = φ'(0)`, and concludes by Grönwall uniqueness:
 `φ - exp (· • A)` satisfies the same homogeneous ODE with initial value `0`.
 
 Source: `v1/Atlas/AlgebraNotes/code/SimpleGroups.lean` (targets
 `SimpleGroups.IsOneParameterGroup` and `SimpleGroups.one_param_subgroup_form`
-in `v1/Atlas/AlgebraNotes/targets.yaml` / `report.json`).
+in `v1/Atlas/AlgebraNotes/targets.yaml` / `report.json`). The subgroup-relative
+definition is represented by `IsOneParameterGroupIn`.
 -/
 
 @[expose] public section
@@ -54,6 +60,27 @@ structure IsOneParameterGroup (m : ℕ) (φ : ℝ → Matrix (Fin m) (Fin m) ℂ
   map_add : ∀ s t : ℝ, φ (s + t) = φ s * φ t
   /-- `φ` is differentiable (for the entrywise topology on matrices). -/
   differentiable : Differentiable ℝ φ
+
+/-- A one-parameter group in `G`, with its pointwise subgroup membership. -/
+structure IsOneParameterGroupIn {m : ℕ}
+    (G : Subgroup (Matrix.GeneralLinearGroup (Fin m) ℂ))
+    (φ : ℝ → Matrix.GeneralLinearGroup (Fin m) ℂ) : Prop
+    extends IsOneParameterGroup m (fun t => (φ t : Matrix (Fin m) (Fin m) ℂ)) where
+  /-- Every value of the curve lies in `G`. -/
+  mem : ∀ t : ℝ, φ t ∈ G
+
+/-- The canonical `GL`-valued curve, with inverse given by the value at `-t`. -/
+def IsOneParameterGroup.toGL {m : ℕ} {φ : ℝ → Matrix (Fin m) (Fin m) ℂ}
+    (hφ : IsOneParameterGroup m φ) (t : ℝ) : Matrix.GeneralLinearGroup (Fin m) ℂ where
+  val := φ t
+  inv := φ (-t)
+  val_inv := by rw [← hφ.map_add, add_neg_cancel, hφ.map_zero]
+  inv_val := by rw [← hφ.map_add, neg_add_cancel, hφ.map_zero]
+
+/-- The canonical lift has the original matrix value. -/
+@[simp] theorem IsOneParameterGroup.coe_toGL {m : ℕ}
+    {φ : ℝ → Matrix (Fin m) (Fin m) ℂ} (hφ : IsOneParameterGroup m φ) (t : ℝ) :
+    (hφ.toGL t : Matrix (Fin m) (Fin m) ℂ) = φ t := rfl
 
 section OneParamSubgroupTheorem
 
