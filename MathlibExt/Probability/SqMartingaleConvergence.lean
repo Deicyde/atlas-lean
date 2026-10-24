@@ -8,6 +8,7 @@ LICENSE file in the root directory of this source tree.
 
 module
 
+public import MathlibExt.Probability.DoobLpInequality
 public import Mathlib.Probability.Martingale.Convergence
 public import Mathlib.Probability.Martingale.BorelCantelli
 public import Mathlib.Probability.Martingale.OptionalStopping
@@ -45,17 +46,14 @@ bounded by `E[f_0²] + (M + 1)`, via the telescoping identity
 
 ## Notes on scope
 
-This file is self-contained with respect to the batch base: it does not
-import the Doob maximal-inequality file from an earlier batch, which is
-not present in that base. Its `predictableQuadVar` is the same object as
-that file's `predictableQuadraticVariation` (same formula, `μ ℱ f`
-argument order) under the v1 name; the two should be unified when the
-batches are rebased onto a common base.
+This file uses the canonical `MeasureTheory.predictableQuadraticVariation`
+and the public telescoping theorem
+`Martingale.integral_predictableQuadraticVariation` from
+`MathlibExt.Probability.DoobLpInequality`. The stopped-process bound and
+convergence argument below are local to this file.
 
 ## Main results
 
-* `MeasureTheory.predictableQuadVar`: the predictable quadratic
-  variation `A_n = ∑_{k < n} E[(f_{k+1} - f_k)² | ℱ_k]`.
 * `MeasureTheory.Martingale.ae_tendsto_of_tendsto_predictableQuadVar`:
   if `A_n(ω)` converges, then `f_n(ω)` converges, almost surely.
 -/
@@ -70,103 +68,18 @@ namespace MeasureTheory
 variable {Ω : Type*} {m0 : MeasurableSpace Ω} {μ : Measure Ω} {ℱ : Filtration ℕ m0}
   {f : ℕ → Ω → ℝ}
 
-/-- The **predictable quadratic variation** of a process `f` with respect to
-a filtration `ℱ` and a measure `μ`, defined pointwise by
-`A_n(ω) = ∑_{k=0}^{n-1} E[(f_{k+1} - f_k)² | ℱ_k] (ω)`. For a
-square-integrable martingale this is the predictable part of `f²` in
-Doob's decomposition. -/
-noncomputable def predictableQuadVar (μ : Measure Ω) (ℱ : Filtration ℕ m0)
-    (f : ℕ → Ω → ℝ) (n : ℕ) (ω : Ω) : ℝ :=
-  (Finset.range n).sum (fun k =>
-    (μ[(fun ω' => (f (k + 1) ω' - f k ω') ^ 2) | ℱ k]) ω)
-
-/-- The predictable quadratic variation is integrable. -/
-private theorem integrable_predictableQuadVar [IsProbabilityMeasure μ] (n : ℕ) :
-    Integrable (predictableQuadVar μ ℱ f n) μ := by
-  have h : Integrable (fun ω => ∑ k ∈ Finset.range n,
-      (μ[(fun ω' => (f (k + 1) ω' - f k ω') ^ 2) | ℱ k]) ω) μ :=
-    integrable_finsetSum _ (fun k _ => integrable_condExp)
-  have hEq : predictableQuadVar μ ℱ f n =
-      fun ω => ∑ k ∈ Finset.range n,
-        (μ[(fun ω' => (f (k + 1) ω' - f k ω') ^ 2) | ℱ k]) ω := by
-    funext ω
-    simp [predictableQuadVar]
-  rw [hEq]
-  exact h
-
-/-- Orthogonality of a martingale increment against the current value:
-`∫ f_{k+1} * f_k = ∫ f_k²`, since `E[f_{k+1} | ℱ_k] = f_k` a.e. -/
-private theorem Martingale.integral_mul_succ_eq [IsProbabilityMeasure μ]
-    (hmart : Martingale f ℱ μ) (hL2 : ∀ n, MemLp (f n) 2 μ) (k : ℕ) :
-    ∫ ω, f (k + 1) ω * f k ω ∂μ = ∫ ω, (f k ω) ^ 2 ∂μ := by
-  have hprod_int : Integrable (f (k + 1) * f k) μ :=
-    (hL2 (k + 1)).integrable_mul (hL2 k)
-  have hcond : μ[(fun ω => f (k + 1) ω * f k ω) | ℱ k] =ᵐ[μ] fun ω => (f k ω) ^ 2 := by
-    calc μ[(fun ω => f (k + 1) ω * f k ω) | ℱ k]
-        =ᵐ[μ] μ[f (k + 1) | ℱ k] * f k :=
-          condExp_mul_of_stronglyMeasurable_right (hmart.stronglyMeasurable k)
-            hprod_int (hmart.integrable (k + 1))
-      _ =ᵐ[μ] f k * f k :=
-          (hmart.condExp_ae_eq (Nat.le_succ k)).mul (EventuallyEq.refl (ae μ) (f k))
-      _ =ᵐ[μ] fun ω => (f k ω) ^ 2 := by
-          filter_upwards with ω
-          simp [Pi.mul_apply, pow_two]
-  calc ∫ ω, f (k + 1) ω * f k ω ∂μ
-      = ∫ ω, μ[(fun ω => f (k + 1) ω * f k ω) | ℱ k] ω ∂μ :=
-        (integral_condExp (ℱ.le k)).symm
-    _ = ∫ ω, (f k ω) ^ 2 ∂μ := integral_congr_ae hcond
-
-/-- The expectation of the predictable quadratic variation telescopes:
-`E[A_n] = E[f_n²] - E[f_0²]`, by orthogonality of martingale increments. -/
-private theorem Martingale.integral_predictableQuadVar [IsProbabilityMeasure μ]
-    (hmart : Martingale f ℱ μ) (hL2 : ∀ n, MemLp (f n) 2 μ) (n : ℕ) :
-    ∫ ω, predictableQuadVar μ ℱ f n ω ∂μ =
-      ∫ ω, (f n ω) ^ 2 ∂μ - ∫ ω, (f 0 ω) ^ 2 ∂μ := by
-  have hsum : ∫ ω, predictableQuadVar μ ℱ f n ω ∂μ =
-      ∑ k ∈ Finset.range n, ∫ ω, (f (k + 1) ω - f k ω) ^ 2 ∂μ := by
-    simp only [predictableQuadVar]
-    rw [integral_finsetSum _ (fun k _ => integrable_condExp)]
-    apply Finset.sum_congr rfl
-    intro k _
-    rw [integral_condExp (ℱ.le k)]
-  have hdiff : ∀ k, ∫ ω, (f (k + 1) ω - f k ω) ^ 2 ∂μ =
-      ∫ ω, (f (k + 1) ω) ^ 2 ∂μ - ∫ ω, (f k ω) ^ 2 ∂μ := by
-    intro k
-    have h1 : Integrable (fun ω => (f (k + 1) ω) ^ 2) μ := (hL2 _).integrable_sq
-    have h2 : Integrable (fun ω => (f k ω) ^ 2) μ := (hL2 _).integrable_sq
-    have hprod_int : Integrable (fun ω => f (k + 1) ω * f k ω) μ :=
-      (hL2 (k + 1)).integrable_mul (hL2 k)
-    have hprod2_int : Integrable (fun ω => 2 * (f (k + 1) ω * f k ω)) μ :=
-      hprod_int.const_mul 2
-    have hA : Integrable (fun ω =>
-        (f (k + 1) ω) ^ 2 - 2 * (f (k + 1) ω * f k ω)) μ :=
-      h1.sub hprod2_int
-    calc ∫ ω, (f (k + 1) ω - f k ω) ^ 2 ∂μ
-        = ∫ ω, ((f (k + 1) ω) ^ 2 - 2 * (f (k + 1) ω * f k ω) + (f k ω) ^ 2) ∂μ := by
-          apply integral_congr_ae
-          filter_upwards with ω
-          ring
-      _ = (∫ ω, (f (k + 1) ω) ^ 2 ∂μ - ∫ ω, 2 * (f (k + 1) ω * f k ω) ∂μ) +
-            ∫ ω, (f k ω) ^ 2 ∂μ := by
-          rw [integral_add hA h2, integral_sub h1 hprod2_int]
-      _ = ∫ ω, (f (k + 1) ω) ^ 2 ∂μ - ∫ ω, (f k ω) ^ 2 ∂μ := by
-          rw [integral_const_mul, hmart.integral_mul_succ_eq hL2 k]
-          ring
-  rw [hsum, Finset.sum_congr rfl (fun k _ => hdiff k)]
-  exact Finset.sum_range_sub (fun k => ∫ ω, (f k ω) ^ 2 ∂μ) n
-
 /-- The shifted predictable quadratic variation `n ↦ A_{n+1}` is adapted:
 each summand `E[(f_{k+1} - f_k)² | ℱ_k]` is `ℱ_k`-measurable, hence
 `ℱ_n`-measurable for `k ≤ n`. -/
-private theorem stronglyAdapted_predictableQuadVar_succ :
-    StronglyAdapted ℱ (fun n => predictableQuadVar μ ℱ f (n + 1)) := by
+private theorem stronglyAdapted_predictableQuadraticVariation_succ :
+    StronglyAdapted ℱ (fun n => predictableQuadraticVariation μ ℱ f (n + 1)) := by
   intro n
-  show StronglyMeasurable[ℱ n] (predictableQuadVar μ ℱ f (n + 1))
-  have hEq : predictableQuadVar μ ℱ f (n + 1) =
+  show StronglyMeasurable[ℱ n] (predictableQuadraticVariation μ ℱ f (n + 1))
+  have hEq : predictableQuadraticVariation μ ℱ f (n + 1) =
       ∑ k ∈ Finset.range (n + 1),
         (μ[(fun ω' => (f (k + 1) ω' - f k ω') ^ 2) | ℱ k]) := by
     funext ω
-    simp [predictableQuadVar]
+    simp [predictableQuadraticVariation]
   rw [hEq]
   apply Finset.stronglyMeasurable_sum
   intro k hk
@@ -185,14 +98,14 @@ using that `τ` is the first hitting time of `M + 1`. -/
 private theorem integral_sq_stoppedProcess_le [IsProbabilityMeasure μ]
     (hmart : Martingale f ℱ μ) (hL2 : ∀ n, MemLp (f n) 2 μ) (M : ℕ) (n : ℕ) :
     ∫ ω, (stoppedProcess f
-      (leastGE (fun i => predictableQuadVar μ ℱ f (i + 1)) ((M : ℝ) + 1)) n ω) ^ 2 ∂μ ≤
+      (leastGE (fun i => predictableQuadraticVariation μ ℱ f (i + 1)) ((M : ℝ) + 1)) n ω) ^ 2 ∂μ ≤
       ∫ ω, (f 0 ω) ^ 2 ∂μ + ((M : ℝ) + 1) := by
   classical
   set τ : Ω → WithTop ℕ :=
-    leastGE (fun i => predictableQuadVar μ ℱ f (i + 1)) ((M : ℝ) + 1) with hτ_def
+    leastGE (fun i => predictableQuadraticVariation μ ℱ f (i + 1)) ((M : ℝ) + 1) with hτ_def
   set g : ℕ → Ω → ℝ := stoppedProcess f τ with hg_def
   have hτ : IsStoppingTime ℱ τ :=
-    stronglyAdapted_predictableQuadVar_succ.isStoppingTime_leastGE _
+    stronglyAdapted_predictableQuadraticVariation_succ.isStoppingTime_leastGE _
   have hg_mart : Martingale g ℱ μ := by
     refine martingale_iff.mpr ⟨?_, ?_⟩
     · have h1 := hmart.neg.submartingale.stoppedProcess hτ
@@ -206,9 +119,9 @@ private theorem integral_sq_stoppedProcess_le [IsProbabilityMeasure μ]
   have hg0 : g 0 = f 0 := by
     funext ω
     simp [hg_def, stoppedProcess]
-  have htele := hg_mart.integral_predictableQuadVar hg_L2 n
+  have htele := hg_mart.integral_predictableQuadraticVariation hg_L2 n
   rw [hg0] at htele
-  have hA_bound : ∫ ω, predictableQuadVar μ ℱ g n ω ∂μ ≤ (M : ℝ) + 1 := by
+  have hA_bound : ∫ ω, predictableQuadraticVariation μ ℱ g n ω ∂μ ≤ (M : ℝ) + 1 := by
     -- Expand the expectation of the stopped quadratic variation as a sum of
     -- set integrals over `{k < τ}`.
     have hdiff_sq : ∀ k : ℕ, (fun ω => (g (k + 1) ω - g k ω) ^ 2) =
@@ -257,7 +170,7 @@ private theorem integral_sq_stoppedProcess_le [IsProbabilityMeasure μ]
         simp [not_le]
       rw [hEq]
       exact (hτ.measurableSet_le k).compl
-    have hsum : ∫ ω, predictableQuadVar μ ℱ g n ω ∂μ =
+    have hsum : ∫ ω, predictableQuadraticVariation μ ℱ g n ω ∂μ =
         ∑ k ∈ Finset.range n,
           ∫ ω in {ω | (k : WithTop ℕ) < τ ω}, (f (k + 1) ω - f k ω) ^ 2 ∂μ := by
       have hstep : ∀ k : ℕ, ∫ ω, (μ[(fun ω' => (g (k + 1) ω' - g k ω') ^ 2) | ℱ k]) ω ∂μ =
@@ -266,7 +179,7 @@ private theorem integral_sq_stoppedProcess_le [IsProbabilityMeasure μ]
         rw [hdiff_sq k]
         rw [integral_condExp (ℱ.le k)]
         rw [← integral_indicator (hset_meas k)]
-      simp only [predictableQuadVar]
+      simp only [predictableQuadraticVariation]
       rw [integral_finsetSum _ (fun k _ => integrable_condExp)]
       apply Finset.sum_congr rfl
       intro k _
@@ -336,11 +249,11 @@ private theorem integral_sq_stoppedProcess_le [IsProbabilityMeasure μ]
             rw [htop]
             exact WithTop.coe_lt_top _
           have hlt' : (↑(n - 1) : WithTop ℕ) <
-              hittingAfter (fun i => predictableQuadVar μ ℱ f (i + 1))
+              hittingAfter (fun i => predictableQuadraticVariation μ ℱ f (i + 1))
                 (Set.Ici ((M : ℝ) + 1)) ⊥ ω := hlt
-          have hnot : predictableQuadVar μ ℱ f ((n - 1) + 1) ω ∉
+          have hnot : predictableQuadraticVariation μ ℱ f ((n - 1) + 1) ω ∉
               Set.Ici ((M : ℝ) + 1) :=
-            notMem_of_lt_hittingAfter (u := fun i => predictableQuadVar μ ℱ f (i + 1))
+            notMem_of_lt_hittingAfter (u := fun i => predictableQuadraticVariation μ ℱ f (i + 1))
               (s := Set.Ici ((M : ℝ) + 1)) (n := ⊥) (k := n - 1) hlt' bot_le
           rw [Set.mem_Ici, not_le] at hnot
           have hn1 : (n - 1) + 1 = n := by omega
@@ -382,19 +295,19 @@ private theorem integral_sq_stoppedProcess_le [IsProbabilityMeasure μ]
             rw [← ht]
             exact WithTop.coe_lt_coe.mpr htlt
           have hlt' : (↑(t - 1) : WithTop ℕ) <
-              hittingAfter (fun i => predictableQuadVar μ ℱ f (i + 1))
+              hittingAfter (fun i => predictableQuadraticVariation μ ℱ f (i + 1))
                 (Set.Ici ((M : ℝ) + 1)) ⊥ ω := hlt
-          have hnot : predictableQuadVar μ ℱ f ((t - 1) + 1) ω ∉
+          have hnot : predictableQuadraticVariation μ ℱ f ((t - 1) + 1) ω ∉
               Set.Ici ((M : ℝ) + 1) :=
-            notMem_of_lt_hittingAfter (u := fun i => predictableQuadVar μ ℱ f (i + 1))
+            notMem_of_lt_hittingAfter (u := fun i => predictableQuadraticVariation μ ℱ f (i + 1))
               (s := Set.Ici ((M : ℝ) + 1)) (n := ⊥) (k := t - 1) hlt' bot_le
           rw [Set.mem_Ici, not_le] at hnot
           have ht1 : (t - 1) + 1 = t := by omega
           rw [ht1] at hnot
           have hAt : ∑ k ∈ Finset.range t,
               (μ[(fun ω' => (f (k + 1) ω' - f k ω') ^ 2) | ℱ k]) ω =
-            predictableQuadVar μ ℱ f t ω := by
-            simp [predictableQuadVar]
+            predictableQuadraticVariation μ ℱ f t ω := by
+            simp [predictableQuadraticVariation]
           rw [hAt] at hle_sum
           exact le_trans hle_sum (le_of_lt hnot)
     have hconst : ∫ _ : Ω, ((M : ℝ) + 1) ∂μ = (M : ℝ) + 1 := by
@@ -410,14 +323,14 @@ with `f` there, and the stopped process converges a.e. by the
 `L¹`-bounded submartingale convergence theorem. -/
 private theorem exists_ae_tendsto_of_forall_quadVar_le [IsProbabilityMeasure μ]
     (hmart : Martingale f ℱ μ) (hL2 : ∀ n, MemLp (f n) 2 μ) (M : ℕ) :
-    ∀ᵐ ω ∂μ, (∀ n, predictableQuadVar μ ℱ f n ω ≤ (M : ℝ)) →
+    ∀ᵐ ω ∂μ, (∀ n, predictableQuadraticVariation μ ℱ f n ω ≤ (M : ℝ)) →
       ∃ l, Tendsto (fun n => f n ω) atTop (𝓝 l) := by
   classical
   set τ : Ω → WithTop ℕ :=
-    leastGE (fun i => predictableQuadVar μ ℱ f (i + 1)) ((M : ℝ) + 1) with hτ_def
+    leastGE (fun i => predictableQuadraticVariation μ ℱ f (i + 1)) ((M : ℝ) + 1) with hτ_def
   set g : ℕ → Ω → ℝ := stoppedProcess f τ with hg_def
   have hτ : IsStoppingTime ℱ τ :=
-    stronglyAdapted_predictableQuadVar_succ.isStoppingTime_leastGE _
+    stronglyAdapted_predictableQuadraticVariation_succ.isStoppingTime_leastGE _
   have hg_mart : Martingale g ℱ μ := by
     refine martingale_iff.mpr ⟨?_, ?_⟩
     · have h1 := hmart.neg.submartingale.stoppedProcess hτ
@@ -494,19 +407,19 @@ finite almost surely on the event that `A_n` converges (in particular,
 on `{A_∞ < ∞}`). -/
 theorem Martingale.ae_tendsto_of_tendsto_predictableQuadVar [IsProbabilityMeasure μ]
     (hmart : Martingale f ℱ μ) (hinteg : ∀ n, Integrable (fun ω => (f n ω) ^ 2) μ) :
-    ∀ᵐ ω ∂μ, (∃ l, Tendsto (fun n => predictableQuadVar μ ℱ f n ω) atTop (𝓝 l)) →
+    ∀ᵐ ω ∂μ, (∃ l, Tendsto (fun n => predictableQuadraticVariation μ ℱ f n ω) atTop (𝓝 l)) →
       ∃ l, Tendsto (fun n => f n ω) atTop (𝓝 l) := by
   have hL2 : ∀ n, MemLp (f n) 2 μ := fun n =>
     (memLp_two_iff_integrable_sq
       ((hmart.stronglyMeasurable n).mono (ℱ.le n)).aestronglyMeasurable).mpr (hinteg n)
-  have key : ∀ᵐ ω ∂μ, ∀ M : ℕ, (∀ n, predictableQuadVar μ ℱ f n ω ≤ (M : ℝ)) →
+  have key : ∀ᵐ ω ∂μ, ∀ M : ℕ, (∀ n, predictableQuadraticVariation μ ℱ f n ω ≤ (M : ℝ)) →
       ∃ l, Tendsto (fun n => f n ω) atTop (𝓝 l) := by
     rw [ae_all_iff]
     intro M
     exact exists_ae_tendsto_of_forall_quadVar_le hmart hL2 M
   filter_upwards [key] with ω hω hconv
   obtain ⟨l, hl⟩ := hconv
-  have hbdd : ∃ M : ℕ, ∀ n, predictableQuadVar μ ℱ f n ω ≤ (M : ℝ) := by
+  have hbdd : ∃ M : ℕ, ∀ n, predictableQuadraticVariation μ ℱ f n ω ≤ (M : ℝ) := by
     obtain ⟨B, hB⟩ := hl.isBoundedUnder_le.bddAbove_range
     obtain ⟨M, hM⟩ := exists_nat_gt B
     exact ⟨M, fun n =>
