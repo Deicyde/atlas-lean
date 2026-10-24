@@ -27,24 +27,30 @@ In particular the stopped process `n ↦ f_{τ ∧ n}` is uniformly integrable.
 
 ## Source
 
-This formalizes the target "Theorem (General optional stopping,
-uniform integrability preservation)" / "Theorem (General form of
-optional stopping)" (Lecture 29) of
-`v1/Atlas/TheoryOfProbability/targets.yaml`:
+This proves the martingale cases of the targets
+"Theorem (General optional stopping, uniform integrability preservation)"
+and "Theorem (General optional stopping, expectation inequality)"
+(Lecture 29) of `v1/Atlas/TheoryOfProbability/targets.yaml`:
 
 * "Let `X_n` be a uniformly integrable submartingale; for any stopping
   time `N ≤ ∞` we have `EX_0 ≤ EX_N ≤ EX_∞`."
 
-The v1 formalization is
+For martingales, the expectation inequalities sharpen to equalities.
+The separate target "Theorem (General form of optional stopping)"
+concerns arbitrary stopping times `L ≤ M`, assumes uniform integrability
+of `Y_{M ∧ n}`, and concludes both `EY_L ≤ EY_M` and
+`Y_L ≤ E(Y_M | ℱ_L)`. That general conditional target is omitted here.
+
+The v1 expectation statement is
 `v1/Atlas/TheoryOfProbability/code/GeneralOptionalStopping.lean`
-(`general_optional_stopping`, left unproved) and
+(`general_optional_stopping`, left unproved). UI preservation is stated in
+`v1/Atlas/TheoryOfProbability/code/OptionalStoppingUI.lean`
+(`optional_stopping_uniformly_integrable`), whose helper in
 `v1/Atlas/TheoryOfProbability/code/OptionalStoppingAlt.lean`
-(`optional_stopping_alt_ui_preserved`, with two unproved bounds).
-The bounded-stopping-time conditional form was ported in an earlier
-batch (bounded optional stopping); the unbounded form was left unproved
-there. This file proves the unbounded form for *martingales* (as opposed
-to submartingales, where the corresponding uniform-integrability
-preservation is the hard step left open in v1).
+(`optional_stopping_alt_ui_preserved`) has two unproved bounds.
+The bounded-stopping-time conditional form was formalized separately.
+This file proves expectation preservation and UI preservation for
+*martingales*; the full submartingale cases are omitted.
 
 ## Proof outline
 
@@ -82,7 +88,7 @@ variable {Ω : Type*} {m0 : MeasurableSpace Ω} {μ : Measure Ω} [IsProbability
 
 /-- The value of a process `f` at a possibly infinite stopping time `τ`:
 `f (τ ω) ω` when `τ ω < ∞`, and the limit `limUnder atTop (f · ω)` when
-`τ ω = ∞`. This extends `stoppedValue` (which returns `f 0` at `τ = ⊤`)
+`τ ω = ∞`. This extends `stoppedValue` (which uses an arbitrary finite index at `τ = ⊤`)
 to allow infinite stopping times, as required for the general optional
 stopping theorem. -/
 noncomputable def stoppedValueAtTop (f : ℕ → Ω → ℝ) (τ : Ω → WithTop ℕ) : Ω → ℝ :=
