@@ -59,7 +59,8 @@ section OneParamSubgroupTheorem
 attribute [local instance] Matrix.linftyOpNormedRing Matrix.linftyOpNormedAlgebra
 
 /-- The derivative of the exponential curve `t ↦ exp (t • B)`. -/
-private theorem hasDerivAt_exp_ofReal_smul (B : Matrix (Fin m) (Fin m) ℂ) (s : ℝ) :
+private theorem hasDerivAt_exp_ofReal_smul {m : ℕ}
+    (B : Matrix (Fin m) (Fin m) ℂ) (s : ℝ) :
     HasDerivAt (fun u : ℝ => NormedSpace.exp ((↑u : ℂ) • B))
       (NormedSpace.exp ((↑s : ℂ) • B) * B) s := by
   have ist : IsScalarTower ℝ ℂ (Matrix (Fin m) (Fin m) ℂ) := inferInstance
