@@ -12,7 +12,7 @@ lean: MetaMathlibExt.fibonacci_iccanobiF_conjugate_a
 
 ## Depends on
 
-- [Fib Word](../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-word.md)
+- [Finite Fibonacci words](../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-word.md)
 
 ## Sources
 

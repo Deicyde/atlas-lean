@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.binomialProduct_X_pow_mul_inv_pow
 ---
 
-# Lemma 4
+# Binomial product of shifted powers of geometric series
 
-**Lemma 4.** `xʲ / (1 - αx)^{j+1} ⊙ xᵏ / (1 - βx)^{k+1} =
-binom(j + k, j) x^{j+k} / (1 - (α + β)x)^{j+k+1}`.
+**Binomial product of shifted powers of geometric series.** For every field $K$ of
+characteristic $0$, all $j, k \in \mathbb{N}$ and all $\alpha, \beta \in K$,
+
+$$\frac{x^j}{(1 - \alpha x)^{j+1}} \odot \frac{x^k}{(1 - \beta x)^{k+1}} =
+\binom{j + k}{j} \frac{x^{j+k}}{(1 - (\alpha + \beta) x)^{j+k+1}},$$
+
+where $\odot$ is the binomial product.
 
 ## Depends on
 

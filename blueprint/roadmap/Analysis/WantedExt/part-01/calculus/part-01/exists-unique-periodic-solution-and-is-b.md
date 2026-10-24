@@ -5,17 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.NonresonantForcedOscillatorPeriodicWanted.existsUnique_periodic_solution_and_isBounded_of_ne_natCast
 ---
 
-# Nonresonant Forced Oscillator Periodic Wanted
+# Nonresonant forced oscillator
 
-Let $\omega > 0$ and $g : \mathbb{R} \to \mathbb{R}$ be a continuous function with period
-$2\pi$. Consider
-the equation
-\[
-\frac{d^2 u}{dx^2} + \omega^2 u = g(x).
-\]
-
-Show that if $\omega$ is not an integer, then there is a unique solution with period $2\pi$
-and all solutions are bounded.
+**Nonresonant forced oscillator.** Let $\omega > 0$ be a real number that is not an integer,
+and let $g : \mathbb{R} \to \mathbb{R}$ be continuous and $2\pi$-periodic. Then the equation
+$u'' + \omega^2 u = g$ has exactly one twice continuously differentiable solution
+$u : \mathbb{R} \to \mathbb{R}$ that is $2\pi$-periodic, and every twice continuously
+differentiable solution $u : \mathbb{R} \to \mathbb{R}$ of this equation is bounded.
 
 ## Depends on
 

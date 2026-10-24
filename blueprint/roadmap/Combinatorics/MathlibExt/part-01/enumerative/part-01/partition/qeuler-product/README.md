@@ -4,6 +4,6 @@ navigation: module
 
 # QEuler Product
 
-- [Q Euler Product](q-euler-product.md)
-- [Q Euler Product one](q-euler-product-one.md)
-- [Constant Coeff q Euler Product](constant-coeff-q-euler-product.md)
+- [The Euler products of partition theory](q-euler-product.md)
+- [Pentagonal series expansion of the first Euler product](q-euler-product-one.md)
+- [Constant term of the Euler products](constant-coeff-q-euler-product.md)

@@ -4,6 +4,6 @@ navigation: module
 
 # Wang Zahl Kakeya
 
-- [Space](space.md)
-- [Is Kakeya](is-kakeya.md)
-- [Wang zahl kakeya dim H](wang-zahl-kakeya-dim-h.md)
+- [Three-dimensional Euclidean space](space.md)
+- [Kakeya set](is-kakeya.md)
+- [Wang–Zahl theorem: the Kakeya conjecture in three dimensions](wang-zahl-kakeya-dim-h.md)

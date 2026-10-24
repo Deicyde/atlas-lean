@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.rStirlingSecond_zero_right
 ---
 
-# R Stirling Second zero right
+# r-Stirling numbers of the second kind for r = 0
 
-`{n \brace m}_0` is the Stirling number `{n \brace m}`.
+**r-Stirling numbers of the second kind for r = 0.** For all natural numbers $n$ and $m$,
+the r-Stirling number of the second kind ${n \brace m}_0$ equals the Stirling number of the
+second kind ${n \brace m}$.
 
 ## Depends on
 
-- [R Stirling Second](r-stirling-second.md)
+- [r-Stirling numbers of the second kind](r-stirling-second.md)
 
 ## Proof depends on
 
-- [R Stirling Second add add](r-stirling-second-add-add.md)
+- [Finite-sum formula for r-Stirling numbers of the second kind](r-stirling-second-add-add.md)
 
 ## Sources
 

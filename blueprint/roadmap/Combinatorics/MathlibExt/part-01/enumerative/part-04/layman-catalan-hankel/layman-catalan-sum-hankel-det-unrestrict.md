@@ -7,11 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.layman_catalan_sum_hankel_det_unrestricted
 ---
 
-# Layman catalan sum hankel det unrestricted
+# Layman's Catalan-sum Hankel determinant, including the empty matrix
 
-Layman's Catalan-sum Hankel determinant identity, without any hypothesis on `n`:
-`det [C_{i+j+1} + C_{i+j+2}] = F_{2n+2}` holds for every `n`, including `n = 0`
-where both sides are `1`.
+**Layman's Catalan-sum Hankel determinant, including the empty matrix.** Let $C_m$ denote the
+$m$-th Catalan number and $F_m$ the $m$-th Fibonacci number, with $F_0 = 0$ and $F_1 = 1$. For
+every natural number $n$, the determinant of the $n \times n$ integer matrix whose $(i, j)$ entry
+is $C_{i+j+1} + C_{i+j+2}$ for $0 \le i, j \le n-1$ equals $F_{2n+2}$. For $n = 0$ the matrix is
+empty and both sides equal $1$.
 
 ## Depends on
 

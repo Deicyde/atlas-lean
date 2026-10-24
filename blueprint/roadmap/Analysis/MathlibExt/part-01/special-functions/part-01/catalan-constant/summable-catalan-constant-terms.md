@@ -7,10 +7,11 @@ proof: formalized
 lean: Real.summable_catalanConstant_terms
 ---
 
-# Summable catalan Constant terms
+# The series for Catalan's constant converges absolutely
 
-The defining series of Catalan's constant converges absolutely: its
-terms are bounded in norm by the convergent series `∑ n, 1 / (n + 1)^2`.
+**The series for Catalan's constant converges absolutely.** The series
+$\sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)^2}$ converges absolutely: its terms are bounded in
+absolute value by $\frac{1}{(n+1)^2}$, and $\sum_{n=0}^{\infty} \frac{1}{(n+1)^2}$ converges.
 
 ## Depends on
 

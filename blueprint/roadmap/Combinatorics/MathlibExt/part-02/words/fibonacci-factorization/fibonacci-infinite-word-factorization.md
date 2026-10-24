@@ -17,10 +17,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fib Word](../../../part-01/infinite-word/fibonacci-word/fib-word.md)
+- [Finite Fibonacci words](../../../part-01/infinite-word/fibonacci-word/fib-word.md)
 - [Fib Word add two](fib-word-add-two.md)
 - [Fib Word factorization](fib-word-factorization.md)
-- [Fib Word length](../../../part-01/infinite-word/fibonacci-word/fib-word-length.md)
+- [Lower bound on the length of the finite Fibonacci words](../../../part-01/infinite-word/fibonacci-word/fib-word-length.md)
 
 ## Sources
 

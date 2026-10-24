@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.UniformlyContinuousIntegrableTendstoZeroWanted.UniformContinuous.tendsto_cocompact_zero_of_integrable
 ---
 
-# Uniformly Continuous Integrable Tendsto Zero Wanted
+# Uniformly continuous integrable functions vanish at infinity
 
-if we assume that $f$ is uniformly continuous on $\mathbb{R}$ and integrable, then
-$\lim_{|x|\to\infty} f(x)=0$.
+**Uniformly continuous integrable functions vanish at infinity.** Let
+$f : \mathbb{R} \to \mathbb{R}$ be uniformly continuous and Lebesgue integrable on $\mathbb{R}$.
+Then $f(x) \to 0$ as $|x| \to \infty$.
 
 ## Depends on
 

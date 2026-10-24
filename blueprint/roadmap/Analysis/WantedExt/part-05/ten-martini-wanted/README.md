@@ -4,6 +4,6 @@ navigation: module
 
 # Ten Martini
 
-- [Ell Two](ell-two.md)
-- [Is Almost Mathieu Operator](is-almost-mathieu-operator.md)
-- [Ten martini problem](ten-martini-problem.md)
+- [The sequence space $\ell^2(\mathbb{Z})$](ell-two.md)
+- [Almost Mathieu operator](is-almost-mathieu-operator.md)
+- [Ten Martini theorem (Avila–Jitomirskaya)](ten-martini-problem.md)

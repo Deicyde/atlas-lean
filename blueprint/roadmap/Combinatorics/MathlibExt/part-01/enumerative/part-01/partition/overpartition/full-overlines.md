@@ -7,14 +7,16 @@ proof: formalized
 lean: Nat.Overpartition.full_overlines
 ---
 
-# Full overlines
+# Overlined sizes of the fully overlined overpartition
 
-The overlined sizes of `full p` are the distinct parts of `p`.
+**Overlined sizes of the fully overlined overpartition.** For every partition $p$ of $n$,
+the set of overlined part sizes of the fully overlined overpartition of $p$ is the set of
+distinct parts of $p$.
 
 ## Depends on
 
 - [Overpartition](overpartition.md)
-- [Full](full.md)
+- [Fully overlined overpartition](full.md)
 
 ## Sources
 

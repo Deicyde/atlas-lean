@@ -21,7 +21,7 @@ and `-` for `i ≡ 2, 3 (mod 4)`. The paper's coprimality hypothesis
 
 ## Depends on
 
-- [Poly Cont Fract](poly-cont-fract.md)
+- [Finite continued fraction with polynomial partial quotients](poly-cont-fract.md)
 
 ## Sources
 

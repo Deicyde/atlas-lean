@@ -5,14 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.binomialProduct_rational
 ---
 
-# Theorem 6
+# Binomial products of proper rational series
 
-**Theorem 6.** If `A = R / ∏_{i ≤ m} (1 - αᵢx)` with `deg R < m` and
-`B = S / ∏_{j ≤ n} (1 - βⱼx)` with `deg S < n` (the `αᵢ`, `βⱼ` need not be distinct nor
-nonzero), then `A ⊙ B = T / ∏ᵢ ∏ⱼ (1 - (αᵢ + βⱼ)x)` for a polynomial `T` of degree at most
-`mn - 1`.
+**Binomial products of proper rational series.** Let $K$ be a field of characteristic $0$, let
+$\alpha_1, \dots, \alpha_m, \beta_1, \dots, \beta_n \in K$, not necessarily distinct or nonzero,
+and let $R$, $S$ be polynomials over $K$ with $\deg R < m$ and $\deg S < n$. If $A$, $B$ are power
+series over $K$ with $A(x) \prod_{i=1}^m (1 - \alpha_i x) = R(x)$ and
+$B(x) \prod_{j=1}^n (1 - \beta_j x) = S(x)$, then there is a polynomial $T$ over $K$ with
+$\deg T < mn$ such that
 
-Denominators are cleared; `deg T < mn` (so `T = 0` when `mn = 0`).
+$$(A \odot B)(x) \prod_{i=1}^m \prod_{j=1}^n \bigl(1 - (\alpha_i + \beta_j) x\bigr) = T(x),$$
+
+where $\odot$ is the binomial product.
+
+Here $\deg 0 = -\infty$, so $T = 0$ when $mn = 0$.
 
 ## Depends on
 

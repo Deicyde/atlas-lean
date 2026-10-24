@@ -7,24 +7,30 @@ proof: formalized
 lean: MetaMathlibExt.peak_generating_function_set_partitions
 ---
 
-# Peak generating function set partitions
+# Peak generating function for set partitions
 
-For `k ≥ 1`, the generating function `PP_k(x, q)` counting partitions of
-`[n]` with `k` blocks by peaks equals the Chebyshev closed form
-`x^k (1-q)^k ∏_{j=1}^k (...)`, using Mathlib's second-kind Chebyshev
-polynomials evaluated at `t = 1 + x^2 (1-q)/2`. Integer indexing expresses
-the source denominator `U_{j-1}(t) - U_{j-2}(t)` directly, including `j = 1`.
+**Peak generating function for set partitions.** Let $k \ge 1$. Work in the fraction field of
+the ring $\mathbb{Z}[q][[x]]$ of power series in $x$ with coefficients in $\mathbb{Z}[q]$. For
+a word $w = w_0 \cdots w_{n-1}$, let $\mathrm{pk}(w)$ be the number of positions $a$ with
+$a + 2 < n$ and $w_a < w_{a+1} > w_{a+2}$, and let $W_{n,k}$ be the set of surjective
+restricted-growth strings of length $n$ with letters in $\{0, \dots, k-1\}$. Let
+$t = 1 + x^2 (1-q)/2$, let $U_m = U_m(t)$ for $m \in \mathbb{Z}$, where $U_m$ is the Chebyshev
+polynomial of the second kind extended to negative indices by its recurrence (so $U_{-1} = 0$
+and $U_{-2} = -1$), and let $R_j = (U_j - U_{j-1})/(U_{j-1} - U_{j-2})$. Then
 
-Partitions are encoded via restricted-growth strings, with peaks as
-strict-rise/strict-descent triples; division is total in the fraction field,
-so no nonvanishing hypotheses are part of the formalized statement.
+$$\sum_{n \ge 0} \sum_{w \in W_{n,k}} q^{\mathrm{pk}(w)} x^n = x^k (1-q)^k \prod_{j=1}^{k}
+\frac{1 + x + x^2 (1-q) - R_j}{1 + x (1-q) - R_j}.$$
+
+Set partitions of $\{1, \dots, n\}$ with $k$ blocks are encoded by the strings in $W_{n,k}$, and
+$\mathrm{pk}(w)$ counts the peaks of the encoded partition. Division is total in the fraction
+field, so the statement carries no nonvanishing hypotheses.
 
 Proof: Following Mansour and Shattuck, Lemmas 2.1, 2.2, and 2.6 and Theorem 2.7,
 the proof combines first-occurrence decompositions with the Chebyshev recurrence.
 
 ## Depends on
 
-- [Is Surjective Restricted Growth String](is-surjective-restricted-growth-string.md)
+- [Surjective restricted-growth strings](is-surjective-restricted-growth-string.md)
 
 ## Sources
 

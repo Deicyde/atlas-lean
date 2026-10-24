@@ -7,9 +7,12 @@ proof: formalized
 lean: MathlibExt.Analysis.SpecialFunctions.CatalanSqrtTwo.catalan_hasProd_sqrt_two
 ---
 
-# Catalan Sqrt Two
+# Catalan's product for $\sqrt{2}$
 
-Catalan's product for `√2`: `∏ m, (4m+2)^2 / ((4m+1) * (4m+3)) = √2`.
+**Catalan's product for $\sqrt{2}$.** The infinite product over all natural numbers $m \ge 0$
+of $\frac{(4m+2)^2}{(4m+1)(4m+3)}$ converges unconditionally to $\sqrt{2}$; that is,
+$\frac{2 \cdot 2}{1 \cdot 3} \cdot \frac{6 \cdot 6}{5 \cdot 7} \cdot \frac{10 \cdot 10}{9 \cdot 11}
+\cdots = \sqrt{2}$.
 
 ## Depends on
 

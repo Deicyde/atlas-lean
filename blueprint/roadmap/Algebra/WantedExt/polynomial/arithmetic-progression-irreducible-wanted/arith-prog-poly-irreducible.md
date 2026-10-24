@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.arithProgPoly_irreducible
 ---
 
-# Arith Prog Poly irreducible
+# Irreducibility of polynomials with coefficients in an arithmetic progression
 
-Main theorem: for `m ≥ 2` and coprime positive integers `a`, `d` with `8a > m² d²`, the
-polynomial `a x^m + (a + d) x^(m-1) + ⋯ + (a + (m-1)d) x + (a + md)` is irreducible over `ℤ`.
+**Irreducibility of polynomials with coefficients in an arithmetic progression.** Let
+$m \ge 2$ and let $a$, $d$ be coprime positive integers with $m^2 d^2 < 8a$. Then the polynomial
+$a x^m + (a + d) x^{m-1} + \cdots + (a + (m - 1)d) x + (a + md)$ is irreducible in
+$\mathbb{Z}[x]$.
 
 ## Depends on
 

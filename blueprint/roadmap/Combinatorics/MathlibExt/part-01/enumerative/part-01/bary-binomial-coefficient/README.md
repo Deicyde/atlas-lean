@@ -5,5 +5,5 @@ navigation: module
 
 # BAry Binomial Coefficient
 
-- [B Ary Binomial Coefficient](b-ary-binomial-coefficient.md)
-- [B Ary Binomial Coefficient eq prod get D](b-ary-binomial-coefficient-eq-prod-get-d.md)
+- [The $b$-ary binomial coefficient](b-ary-binomial-coefficient.md)
+- [Digitwise product formula for the $b$-ary binomial coefficient](b-ary-binomial-coefficient-eq-prod-get-d.md)

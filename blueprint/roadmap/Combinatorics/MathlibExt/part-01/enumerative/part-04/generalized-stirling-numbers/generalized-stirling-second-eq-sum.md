@@ -6,17 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.generalizedStirlingSecond_eq_sum
 ---
 
-# Generalized Stirling Second eq sum
+# Sum formula for generalized Stirling numbers of the second kind
 
-Characterization of `generalizedStirlingSecond`: under `m ≤ n` it equals the
-exact source sum with coefficient `choose n i`, ordinary number
-`stirlingSecond (n-i) m`, and power `x^i`, including both endpoints `i = 0` and
-`i = n - m`. Source: Cereceda, arXiv:2401.13696v4, lines 132-142.
+**Sum formula for generalized Stirling numbers of the second kind.** For natural numbers
+$m \le n$ and every real number $x$, the generalized Stirling number of the second kind satisfies
+
+$${n \brace m}_x = \sum_{i=0}^{n-m} \binom{n}{i} {n-i \brace m} x^i,$$
+
+where ${n \brace k}$ is the Stirling number of the second kind; the sum includes both endpoints
+$i = 0$ and $i = n - m$.
 
 ## Depends on
 
-- [Generalized Stirling Second](generalized-stirling-second.md)
+- [Generalized Stirling numbers of the second kind](generalized-stirling-second.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.GeneralizedStirlingNumbers](../../../../../../../sources/v2/MathlibExt.md)
+- Cereceda, arXiv:2401.13696v4, lines 132-142.

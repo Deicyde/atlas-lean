@@ -16,7 +16,7 @@ The diagonal of `s(n)` is all ones.
 
 ## Proof depends on
 
-- [Signed Stirling First](../../../../../MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
+- [Signed Stirling numbers of the first kind](../../../../../MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
 
 ## Sources
 

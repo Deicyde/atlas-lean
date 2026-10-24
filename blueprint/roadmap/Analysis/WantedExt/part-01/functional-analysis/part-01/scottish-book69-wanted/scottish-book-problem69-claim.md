@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Metric Center](is-metric-center.md)
+- [Metric center of a pair of points](is-metric-center.md)
 
 ## Sources
 

@@ -7,11 +7,12 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Additive.CauchyDavenportChowlaWanted.cauchy_davenport_chowla
 ---
 
-# Cauchy Davenport Chowla
+# Cauchy–Davenport–Chowla theorem
 
-If `A` and `B` are nonempty subsets of `ZMod q`, zero belongs to `B`, and
-every nonzero member of `B` is a unit, then
-`|A + B| ≥ min(q, |A| + |B| - 1)`.
+**Cauchy–Davenport–Chowla theorem.** Let $q$ be a positive integer and let $A$ and $B$ be
+nonempty subsets of $\mathbb{Z}/q\mathbb{Z}$ such that $0 \in B$ and every nonzero element of $B$
+is a unit of $\mathbb{Z}/q\mathbb{Z}$. Then $|A + B| \ge \min(q, |A| + |B| - 1)$, where
+$A + B = \{a + b : a \in A, b \in B\}$.
 
 ## Depends on
 

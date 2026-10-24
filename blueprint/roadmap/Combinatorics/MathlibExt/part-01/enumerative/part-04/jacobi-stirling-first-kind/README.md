@@ -5,9 +5,9 @@ navigation: module
 
 # Jacobi Stirling First Kind
 
-- [Jacobi Stirling First Poly](jacobi-stirling-first-poly.md)
-- [Jacobi Stirling First](jacobi-stirling-first.md)
-- [Jacobi Stirling First initial row](jacobi-stirling-first-initial-row.md)
-- [Jacobi Stirling First recurrence](jacobi-stirling-first-recurrence.md)
-- [Jacobi Stirling First support](jacobi-stirling-first-support.md)
-- [Jacobi Stirling First diagonal](jacobi-stirling-first-diagonal.md)
+- [Generating polynomial of the first-kind Jacobi–Stirling numbers](jacobi-stirling-first-poly.md)
+- [First-kind Jacobi–Stirling numbers](jacobi-stirling-first.md)
+- [Initial row of the first-kind Jacobi–Stirling numbers](jacobi-stirling-first-initial-row.md)
+- [Recurrence for the first-kind Jacobi–Stirling numbers](jacobi-stirling-first-recurrence.md)
+- [First-kind Jacobi–Stirling numbers vanish above the diagonal](jacobi-stirling-first-support.md)
+- [Diagonal of the first-kind Jacobi–Stirling numbers](jacobi-stirling-first-diagonal.md)

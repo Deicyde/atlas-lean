@@ -12,7 +12,7 @@ Same `G`, `c`, `β`; `A ⊆ {1, …, β}` with `p^{e_1 - c} ∈ A`. If `β ∣ p
 
 ## Depends on
 
-- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
+- [Weighted Davenport constant](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 
 ## Sources
 

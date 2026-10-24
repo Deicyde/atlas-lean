@@ -4,7 +4,7 @@ navigation: module
 
 # Viscosity Solutions
 
-- [R](r.md)
-- [Without Collisions](without-collisions.md)
+- [Mutual distances](r.md)
+- [Configurations without collisions](without-collisions.md)
 - [Is NBody Solution](is-nbody-solution.md)
-- [Theorem 1 1](theorem-1-1.md)
+- [Maderna–Venturelli theorem on hyperbolic motions](theorem-1-1.md)

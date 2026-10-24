@@ -7,13 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.gamma_closed_form
 ---
 
-# Gamma Closed Form
+# Closed form of the Eloe–Kublik gamma array
 
-Closed form for the Eloe-Kublik gamma array: any doubly indexed real sequence
-satisfying the linear recursion with the given initial and vanishing
-conditions has `γ n k = (-1/4)^k * choose n (2*k) * catalan k`.
+**Closed form of the Eloe–Kublik gamma array.** Let $\gamma_{n,k}$, for natural numbers $n$ and
+$k$, be real numbers such that $\gamma_{n,0} = 1$ for every $n$, $\gamma_{2n-1,n} = 0$ for every
+$n \ge 1$, and
 
-The `k ≤ n / 2` bound is the paper's `0 ≤ k ≤ ⌊n/2⌋`.
+$$\gamma_{n,k} = (1 + \frac{2k}{n+2})\,\gamma_{n-1,k} + \frac{2k-n-1}{n+2}\,\gamma_{n-1,k-1}$$
+
+whenever $n \ge 2$ and $1 \le k \le \lfloor n/2 \rfloor$. Then
+$\gamma_{n,k} = (-\frac{1}{4})^k \binom{n}{2k} C_k$ for all natural numbers $n$ and $k$ with
+$k \le \lfloor n/2 \rfloor$, where $C_k$ is the $k$-th Catalan number.
 
 ## Depends on
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.virtualRackIso_iff_isConj
 ---
 
-# Virtual Rack Iso iff is Conj
+# Isomorphism of virtual structures is conjugacy
 
-Two virtual structures `f₁, f₂` on a rack `R` give isomorphic virtual racks if and only if
-they are conjugate in `Aut R`.
+**Isomorphism of virtual structures is conjugacy.** Let $R$ be a rack and let $f_1$ and $f_2$
+be elements of its automorphism group $\operatorname{Aut} R$. Then the virtual racks $(R, f_1)$
+and $(R, f_2)$ are isomorphic if and only if $f_1$ and $f_2$ are conjugate in
+$\operatorname{Aut} R$.
 
 ## Depends on
 
-- [Virtual Rack Iso](virtual-rack-iso.md)
-- [Rack Aut](rack-aut.md)
+- [Isomorphism of virtual racks](virtual-rack-iso.md)
+- [Automorphism group of a rack](rack-aut.md)
 
 ## Sources
 

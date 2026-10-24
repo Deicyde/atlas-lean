@@ -6,17 +6,19 @@ proof: formalized
 lean: MathlibExt.Analysis.iharaConstantOf_eq_of_eventually_eq
 ---
 
-# Ihara Constant Of eq of eventually eq
+# Agreement from an index onward preserves the abstract Ihara constant
 
-Agreement from some index onward determines the abstract constant.
+**Agreement from an index onward preserves the abstract Ihara constant.** Let
+$N, M : \mathbb{N} \to \mathbb{N}$ and $G \in \mathbb{N}$. If $N(g) = M(g)$ for every $g \ge G$,
+then $N$ and $M$ have the same abstract Ihara constant.
 
 ## Depends on
 
-- [Ihara Constant Of](ihara-constant-of.md)
+- [Abstract Ihara constant of a sequence](ihara-constant-of.md)
 
 ## Proof depends on
 
-- [Ihara Constant Of congr](ihara-constant-of-congr.md)
+- [The abstract Ihara constant ignores finitely many values](ihara-constant-of-congr.md)
 
 ## Sources
 

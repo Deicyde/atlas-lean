@@ -7,10 +7,10 @@ proof: formalized
 lean: MetaMathlibExt.blumberg_theorem
 ---
 
-# Blumberg
+# Blumberg's theorem
 
-Blumberg's theorem (https://en.wikipedia.org/wiki/Blumberg_theorem, statement blumberg-s1):
-every function `f : ℝ → ℝ` is continuous on some dense set.
+**Blumberg's theorem.** For every function $f : \mathbb{R} \to \mathbb{R}$ there is a dense
+set $D \subseteq \mathbb{R}$ such that the restriction of $f$ to $D$ is continuous.
 
 ## Depends on
 
@@ -19,3 +19,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Blumberg](../../../../sources/v2/MathlibExt.md)
+- https://en.wikipedia.org/wiki/Blumberg_theorem, statement blumberg-s1.

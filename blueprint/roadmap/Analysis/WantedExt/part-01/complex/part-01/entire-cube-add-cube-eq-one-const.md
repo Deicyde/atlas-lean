@@ -5,13 +5,10 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.EntireFermatCubicConstantWanted.entire_cube_add_cube_eq_one_const
 ---
 
-# Entire Fermat Cubic Constant Wanted
+# Entire solutions of the Fermat cubic are constant
 
-Let $f$ and $g$ be entire functions such that
-\[
-f^3+g^3=1\quad \text{on } \mathbb{C}.
-\]
-Show that $f$ and $g$ are constant.
+**Entire solutions of the Fermat cubic are constant.** Let $f$ and $g$ be entire functions
+with $f(z)^3 + g(z)^3 = 1$ for every $z \in \mathbb{C}$. Then $f$ and $g$ are constant.
 
 ## Depends on
 

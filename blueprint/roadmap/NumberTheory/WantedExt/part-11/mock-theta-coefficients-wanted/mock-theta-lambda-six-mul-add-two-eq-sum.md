@@ -14,7 +14,7 @@ coefficient of `q^j` in `(f_2/f_1^2)^3` (Equation (7)) and vanishes for `j < 0`.
 ## Depends on
 
 - [Mock Theta Lambda](mock-theta-lambda.md)
-- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [The Euler products of partition theory](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

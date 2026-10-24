@@ -6,11 +6,15 @@ statement: formalized
 lean: MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.HasBoundedRootCounts
 ---
 
-# Has Bounded Root Counts
+# Bounded root counts
 
-`HasBoundedRootCounts f`: for every radius `r`, the real-valued root
-counts `rootCount f a r` are bounded above as `a` varies, so that the
-conditional supremum `n f r` is taken over a bounded set.
+**Bounded root counts.** A function $f\colon \mathbb{C} \to \mathbb{C}$ has bounded root
+counts if for every real $r$ the root counts of $f$ in radius $r$, that is, the numbers of roots
+of $f(z) = a$ in $|z| < r$ counted with multiplicity, are bounded above as $a$ ranges over
+$\mathbb{C}$.
+
+This guarantees that the supremum over $a$ defining the maximum valence of $f$ in radius $r$ is
+taken over a bounded set.
 
 ## Depends on
 
@@ -18,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Root Count](root-count.md)
+- [Root count](root-count.md)
 
 ## Sources
 

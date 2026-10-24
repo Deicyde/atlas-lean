@@ -4,10 +4,10 @@ navigation: module
 
 # Hausdorff Absolute Continuity
 
-- [Cube](cube.md)
-- [Monomial](monomial.md)
+- [Closed unit cube](cube.md)
+- [Multivariate monomial](monomial.md)
 - [Moment Of](moment-of.md)
-- [Multi Choose](multi-choose.md)
-- [Diff](diff.md)
-- [Uniformly Absolutely Continuous](uniformly-absolutely-continuous.md)
-- [Hausdorff absolute continuity](hausdorff-absolute-continuity.md)
+- [Multi-index binomial coefficient](multi-choose.md)
+- [Iterated backward difference of a multi-sequence](diff.md)
+- [Uniformly absolutely continuous measures](uniformly-absolutely-continuous.md)
+- [Hausdorff's absolute continuity criterion](hausdorff-absolute-continuity.md)

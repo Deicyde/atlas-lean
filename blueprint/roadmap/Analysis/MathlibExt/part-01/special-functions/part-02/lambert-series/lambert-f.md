@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.lambertF
 ---
 
-# Lambert F
+# The weighted Lambert series $f$
 
-The weighted Lambert series `f(q) = ∑_{n≥1} n qⁿ / (1 - qⁿ)`.
+**The weighted Lambert series $f$.** For a complex number $q$ with $|q| < 1$, the weighted
+Lambert series is $f(q) = \sum_{n \ge 1} n q^n / (1 - q^n)$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lambert FSummand](lambert-fsummand.md)
+- [Terms of the weighted Lambert series $f$](lambert-fsummand.md)
 
 ## Sources
 

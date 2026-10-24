@@ -21,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Szemeredi](../../../Combinatorics/MathlibExt/part-01/additive/szemeredi.md)
+- [Szemerédi's theorem](../../../Combinatorics/MathlibExt/part-01/additive/szemeredi.md)
 
 ## Sources
 

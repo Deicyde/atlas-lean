@@ -5,5 +5,5 @@ navigation: module
 
 # PQSuper Patalan Numbers
 
-- [Pq Super Patalan Number](pq-super-patalan-number.md)
-- [Super Patalan Number](super-patalan-number.md)
+- [The (p,q)-super Patalan numbers](pq-super-patalan-number.md)
+- [Super Patalan numbers of order p](super-patalan-number.md)

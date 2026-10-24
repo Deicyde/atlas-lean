@@ -6,13 +6,14 @@ statement: formalized
 lean: MetaMathlibExt.AreFiniteArithmeticProgressionsWithCommonDifference
 ---
 
-# Common Difference Progressions
+# Arithmetic progressions with a common difference
 
-Common-difference progressions: holds exactly when there is one shared
-`d : G` such that `A` and `B` are both set-level arithmetic progressions of
-their own cardinalities with difference `d`, stated directly with
-`Set.IsAPOfLengthWith`; the two progressions may have different initial
-terms and different cardinalities.
+**Arithmetic progressions with a common difference.** Let $G$ be an additive commutative
+monoid and let $A$ and $B$ be finite subsets of $G$. We say that $A$ and $B$ are arithmetic
+progressions with a common difference if there are $d, a, b \in G$ such that
+$A = \{a + nd : n \in \mathbb{N},\ n < |A|\}$ and $B = \{b + nd : n \in \mathbb{N},\ n < |B|\}$,
+where $nd$ is the sum of $n$ copies of $d$. The two progressions may have different initial terms
+and different lengths.
 
 ## Depends on
 
@@ -20,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is APOf Length With](../ap/basic/is-apof-length-with.md)
+- [Set arithmetic progressions with given first term and difference](../ap/basic/is-apof-length-with.md)
 
 ## Sources
 

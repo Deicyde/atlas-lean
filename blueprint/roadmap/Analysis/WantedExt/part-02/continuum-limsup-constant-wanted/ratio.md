@@ -6,14 +6,13 @@ statement: formalized
 lean: MathlibExt.Analysis.ContinuumLimsupConstantWanted.Ratio
 ---
 
-# Ratio
+# Ratio of $\log |f|$ to the logarithm of the maximum modulus
 
-The ratio `log |f z| / log M(|z|)` in `EReal`, with zeros of `f`
-mapped to `⊥` (the genuine logarithm of a zero modulus is `-∞`).
-This avoids the conditionally complete `Filter.limsup` on `ℝ` collapsing
-the `-∞` case to `0`. Division by `log M(|z|) = 0` retains the real
-division-by-zero junk value `0`; that convention is recorded in the
-metadata gaps.
+**Ratio of $\log |f|$ to the logarithm of the maximum modulus.** For a function
+$f : \mathbb{C} \to \mathbb{C}$ and a point $z \in \mathbb{C}$, this is the extended real number
+equal to $-\infty$ if $f(z) = 0$, and otherwise to the real number
+$\log |f(z)| / \log M(f, |z|)$, where $M(f, r)$ is the Wiman maximum modulus of $f$, $\log 0$ is
+taken to be $0$, and division by $0$ gives $0$.
 
 ## Depends on
 

@@ -4,5 +4,5 @@ navigation: module
 
 # Scottish Book4
 
-- [Fair Coin Measure](fair-coin-measure.md)
-- [Schreier Cesaro Subsequences](schreier-cesaro-subsequences.md)
+- [Fair coin measure](fair-coin-measure.md)
+- [Schreier's theorem on Cesàro means of random subsequences](schreier-cesaro-subsequences.md)

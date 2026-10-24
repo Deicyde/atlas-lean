@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.tsum_odd_mul_catalan_div_four_pow_special
 ---
 
-# Tsum odd mul catalan div four pow special
+# Catalan series over powers of $4$ equal to $4\ln 2$ and $4\ln 2 - 2$
 
-Theorem 5 (special values): `Σ_{n≥0} ((2n + 1)/(n + 1)) C_n/2^{2n} = 4 ln 2` and
-`Σ_{n≥0} ((2n + 1)/((n + 1)(n + 2))) C_n/2^{2n} = 4 ln 2 - 2`.
+**Catalan series over powers of $4$ equal to $4\ln 2$ and $4\ln 2 - 2$.** Let $C_n$ be the
+$n$-th Catalan number. Then
+
+$$\sum_{n=0}^{\infty} \frac{2n+1}{n+1} \cdot \frac{C_n}{4^n} = 4\ln 2$$
+
+and
+
+$$\sum_{n=0}^{\infty} \frac{2n+1}{(n+1)(n+2)} \cdot \frac{C_n}{4^n} = 4\ln 2 - 2.$$
 
 ## Depends on
 

@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.coeff_jacobiCubeSeries_eq_zero
 ---
 
-# Coeff jacobi Cube Series eq zero
+# Vanishing coefficients of Jacobi's cube series
 
-Coefficients of `jacobiCubeSeries` vanish away from triangular indices `(t + 1).choose 2`.
+**Vanishing coefficients of Jacobi's cube series.** Let $J(X)$ be Jacobi's cube series. If a
+natural number $b$ is not of the form $t(t+1)/2$ for any natural number $t$, then the coefficient
+of $X^b$ in $J(X)$ is $0$.
 
 ## Depends on
 
-- [Jacobi Cube Series](jacobi-cube-series.md)
+- [Jacobi's cube series](jacobi-cube-series.md)
 
 ## Sources
 

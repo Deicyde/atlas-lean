@@ -5,5 +5,5 @@ navigation: module
 
 # Rado
 
-- [Rado matroidal marriage'](rado-matroidal-marriage.md)
-- [Rado matroidal marriage](rado-matroidal-marriage-2.md)
+- [Rado's theorem on independent transversals, arbitrary ground set](rado-matroidal-marriage.md)
+- [Rado's theorem on independent transversals](rado-matroidal-marriage-2.md)

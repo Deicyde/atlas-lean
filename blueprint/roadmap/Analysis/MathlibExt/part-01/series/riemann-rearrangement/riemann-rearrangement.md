@@ -14,11 +14,11 @@ prescribed real number.
 
 ## Depends on
 
-- [Ordered Has Sum](ordered-has-sum.md)
+- [Convergence of a series in order](ordered-has-sum.md)
 
 ## Proof depends on
 
-- [Ordered Has Sum tendsto zero](ordered-has-sum-tendsto-zero.md)
+- [Terms of a convergent series tend to zero](ordered-has-sum-tendsto-zero.md)
 
 ## Sources
 

@@ -5,7 +5,7 @@ navigation: module
 
 # Catalan Constant
 
-- [Catalan Constant](catalan-constant.md)
-- [Summable catalan Constant terms](summable-catalan-constant-terms.md)
-- [Catalan Constant eq tsum](catalan-constant-eq-tsum.md)
-- [Has Sum catalan Constant](has-sum-catalan-constant.md)
+- [Catalan's constant](catalan-constant.md)
+- [The series for Catalan's constant converges absolutely](summable-catalan-constant-terms.md)
+- [Catalan's constant as a series](catalan-constant-eq-tsum.md)
+- [The series for Catalan's constant converges to it](has-sum-catalan-constant.md)

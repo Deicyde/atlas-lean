@@ -7,18 +7,20 @@ proof: formalized
 lean: PerronKernel.E1_sub_one_le
 ---
 
-# E1 sub one le
+# Linear bound for the averaging operator near zero
 
-`‖E1 v - 1‖ ≤ ‖v‖` for `‖v‖ ≤ 1`.
+**Linear bound for the averaging operator near zero.** Let $E_1(u) = \int_0^1 e^{tu}\,dt$ for
+$u \in \mathbb{C}$. For every complex number $v$ with $|v| \le 1$, we have
+$|E_1(v) - 1| \le |v|$.
 
 ## Depends on
 
-- [E1](e1.md)
+- [The averaging operator $E_1$](e1.md)
 
 ## Proof depends on
 
-- [E1 eq div](e1-eq-div.md)
-- [E1 zero](e1-zero.md)
+- [The averaging operator as a difference quotient](e1-eq-div.md)
+- [Value of the averaging operator at zero](e1-zero.md)
 
 ## Sources
 

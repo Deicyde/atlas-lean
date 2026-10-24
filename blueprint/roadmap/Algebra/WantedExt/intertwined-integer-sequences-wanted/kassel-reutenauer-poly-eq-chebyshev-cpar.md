@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.kasselReutenauerPoly_eq_chebyshevCPartialSum_iff
 ---
 
-# Kassel Reutenauer Poly eq chebyshev CPartial Sum iff
+# $\bar P_n$ equals $F_{n-1}$ exactly for powers of two
 
-`P̄_n(X) = F_{n-1}(X)` if and only if `n` is a power of `2` (for `n ≥ 1`).
+**$\bar P_n$ equals $F_{n-1}$ exactly for powers of two.** Let $n \ge 1$, let $\bar P_n$ be the
+Kassel–Reutenauer polynomial, and let $F_{n-1} = 1 + \sum_{k=1}^{n-1} \bar T_k$ be the partial
+sum of the monic Chebyshev polynomials. Then $\bar P_n = F_{n-1}$ if and only if $n = 2^k$ for
+some natural number $k$.
 
 ## Depends on
 
-- [Chebyshev CPartial Sum](chebyshev-cpartial-sum.md)
-- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
+- [Partial sums of the monic Chebyshev polynomials](chebyshev-cpartial-sum.md)
+- [Kassel–Reutenauer polynomial](kassel-reutenauer-poly.md)
 
 ## Sources
 

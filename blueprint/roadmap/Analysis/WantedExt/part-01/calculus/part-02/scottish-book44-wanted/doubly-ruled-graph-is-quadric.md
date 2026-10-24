@@ -5,24 +5,23 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.ScottishBook44Wanted.doubly_ruled_graph_is_quadric
 ---
 
-# Doubly ruled graph is quadric
+# Doubly ruled graphs are planes or hyperbolic paraboloids
 
-Steinhaus, Problem 44 of the Scottish Book. Original question: let
-`z = f(x, y)` be a continuous function whose graph is a surface through
-every point of which there pass two straight lines lying entirely in the
-surface; is the surface then necessarily a hyperbolic paraboloid, and can
-this be proved without assuming continuity? The answer is affirmative in
-both respects: Banach solved it, also without assuming continuity, with a
-proof based on the remark that any two lines on the surface either
-intersect or their projections on the `xy`-plane are parallel. The
-conclusion is stated as the quadratic classification: `f` is a quadratic
-polynomial, and either its quadratic part vanishes (the graph is a plane,
-the degenerate doubly ruled case) or its discriminant is positive (the
-graph is a hyperbolic paraboloid). No continuity of `f` is assumed.
+**Doubly ruled graphs are planes or hyperbolic paraboloids.** Let $f$ be a real-valued
+function of two real variables whose graph is doubly ruled; no continuity of $f$ is assumed. Then
+there are real numbers $a, b, c, d, e, g$ such that
+$f(x, y) = ax^2 + bxy + cy^2 + dx + ey + g$ for all real $x$ and $y$, and either $a = b = c = 0$
+(the graph is a plane) or $b^2 - 4ac > 0$ (the graph is a hyperbolic paraboloid).
+
+This answers Steinhaus's Problem 44 of the Scottish Book, which asks whether such a surface, the
+graph of a continuous function, must be a hyperbolic paraboloid, and whether this can be proved
+without continuity. Banach answered both questions affirmatively, with a proof based on the remark
+that any two lines on the surface either intersect or have parallel projections on the
+$xy$-plane; planes are the degenerate doubly ruled case.
 
 ## Depends on
 
-- [Doubly Ruled Graph](doubly-ruled-graph.md)
+- [Doubly ruled graph](doubly-ruled-graph.md)
 
 ## Sources
 

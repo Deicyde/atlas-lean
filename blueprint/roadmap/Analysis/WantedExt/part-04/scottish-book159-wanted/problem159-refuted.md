@@ -5,21 +5,22 @@ statement: formalized
 lean: MathlibExt.Analysis.ScottishBook159Wanted.problem159Refuted
 ---
 
-# Problem159 Refuted
+# Scottish Book Problem 159 has a negative answer
 
-Problem 159 is false: no such power series exists. The typescript's own
-addendum Ad 159 states that in this formulation the answer is negative,
-giving Sternbach's argument with the functions `sin²(2ⁿ π x)`, and records
-Mazur's necessary and sufficient condition that, for an arbitrary set `Φ`
-of this form, such a power series exists exactly when the functions of `Φ`
-are equicontinuous (the equicontinuity criterion is recorded here in prose
-and is not formalized). The typescript inequality is read with a universal
-quantifier over `x`, as the Ad 159 argument uses the maximum over
-`0 ≤ x ≤ 1`.
+**Scottish Book Problem 159 has a negative answer.** There is no sequence of real numbers
+$a_0, a_1, a_2, \dots$ with the following property: for every $\varepsilon > 0$ there is a natural
+number $N$ such that for every function $f : \mathbb{R} \to \mathbb{R}$ that is continuous on
+$[0, 1]$ and satisfies $f(0) = 0$ and $0 \le f(x) \le 1$ for all $x \in [0, 1]$, there is a natural
+number $n \le N$ with $\left|f(x) - \sum_{k=0}^{n} a_k x^k\right| < \varepsilon$ for all
+$x \in [0, 1]$.
+
+Sternbach's argument in the addendum Ad 159 uses the functions $\sin^2(2^n \pi x)$. Mazur showed
+that for an arbitrary family $\Phi$ of functions of this kind, a power series with this property
+exists exactly when the functions of $\Phi$ are equicontinuous.
 
 ## Depends on
 
-- [Scottish Book Problem159 Claim](scottish-book-problem159-claim.md)
+- [The claim of Scottish Book Problem 159](scottish-book-problem159-claim.md)
 
 ## Sources
 

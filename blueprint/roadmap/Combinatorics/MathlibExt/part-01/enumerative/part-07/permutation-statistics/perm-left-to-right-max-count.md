@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.permLeftToRightMaxCount
 ---
 
-# Perm Left To Right Max Count
+# Number of left-to-right maxima
 
-The number of left-to-right maxima `lmax(σ)`: entries larger than every entry to their left.
+**Number of left-to-right maxima.** For a permutation $\sigma$ of $\{0, 1, \dots, n-1\}$,
+$\mathrm{lmax}(\sigma)$ is the number of positions $i$ such that $\sigma(j) < \sigma(i)$ for
+every position $j < i$, that is, the number of entries larger than every entry to their left.
 
 ## Depends on
 

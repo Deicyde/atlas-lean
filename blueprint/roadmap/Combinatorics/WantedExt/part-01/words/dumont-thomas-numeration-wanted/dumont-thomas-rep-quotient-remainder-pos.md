@@ -19,7 +19,7 @@ sequence `(mᵢ, aᵢ)_{i < k}` of `rep_u(n)` (Theorem 4.1 with the period `p`),
 - [Is Dumont Thomas Rep](is-dumont-thomas-rep.md)
 - [Is Letter Admissible Sequence](is-letter-admissible-sequence.md)
 - [Is Periodic Point With Growing Seed](is-periodic-point-with-growing-seed.md)
-- [Morph Iterate](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
+- [Iterates of a letter map](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources
 

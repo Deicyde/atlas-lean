@@ -5,14 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.VanishingMomentsImpliesZeroWanted.eqOn_zero_of_integral_mul_pow_eq_zero
 ---
 
-# Vanishing Moments Implies Zero Wanted
+# A function continuous on $(0,1)$ with vanishing moments is zero on $(0,1)$
 
-If $f$ is continuous on $[0,1]$ and if
-
-\[
-\int_{0}^{1} f(x)x^{n}\,dx=0\qquad (n=0,1,2,\dots),
-\]
-prove that $f(x)=0$ on $[0,1]$.
+**A function continuous on $[0,1]$ with vanishing moments is zero on $[0,1]$.** Let
+$f : \mathbb{R} \to \mathbb{R}$ be continuous on $[0,1]$, and suppose that
+$\int_0^1 f(x)\,x^n\,dx = 0$ for every natural number $n = 0, 1, 2, \dots$. Then $f(x) = 0$ for
+every $x \in [0,1]$.
 
 ## Depends on
 

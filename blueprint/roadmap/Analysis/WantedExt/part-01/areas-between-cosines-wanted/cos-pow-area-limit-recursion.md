@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.cosPowArea_limit_recursion
 ---
 
-# Cos Pow Area limit recursion
+# Recursion for the limiting areas between cosine powers
 
-Theorem 3: for `n ≥ 3` the limits `A_n` and `A_{n-2}` exist and
-`A_n = (n - 1)/n · A_{n-2} + 8/(n² π)` for `n` odd, `+ 16/(n² π)` for `n` even.
+**Recursion for the limiting areas between cosine powers.** For natural numbers $n$ and $k$,
+let $A_n(k) = \int_0^\pi |\cos^n x - \cos^n(kx)|\,dx$. For every natural number $n \ge 3$ there
+are real numbers $L$ and $L'$ such that $A_n(k) \to L$ and $A_{n-2}(k) \to L'$ as $k \to \infty$
+through the natural numbers, and $L = \frac{n-1}{n} L' + \frac{c}{n^2 \pi}$, where $c = 8$ if $n$
+is odd and $c = 16$ if $n$ is even.
 
 ## Depends on
 
-- [Cos Pow Area](cos-pow-area.md)
+- [Area between powers of cosines](cos-pow-area.md)
 
 ## Sources
 

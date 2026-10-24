@@ -6,14 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.kasselReutenauerCoeff_small
 ---
 
-# Kassel Reutenauer Coeff small
+# Small values of the coefficients $a_{n,i}$
 
-Characteristic values `a_{1,0} = 1`, `a_{2,0} = a_{2,1} = 1`,
-`a_{3,0} = 0`, `a_{3,1} = a_{3,2} = 1`.
+**Small values of the coefficients $a_{n,i}$.** The Kassel–Reutenauer coefficients satisfy
+$a_{1,0} = 1$, $a_{2,0} = a_{2,1} = 1$, $a_{3,0} = 0$ and $a_{3,1} = a_{3,2} = 1$.
 
 ## Depends on
 
-- [Kassel Reutenauer Coeff](kassel-reutenauer-coeff.md)
+- [The Kassel–Reutenauer coefficients $a_{n,i}$](kassel-reutenauer-coeff.md)
 
 ## Sources
 

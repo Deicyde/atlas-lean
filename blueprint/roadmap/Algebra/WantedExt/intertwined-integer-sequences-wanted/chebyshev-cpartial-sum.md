@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.chebyshevCPartialSum
 ---
 
-# Chebyshev CPartial Sum
+# Partial sums of the monic Chebyshev polynomials
 
-The polynomial `F_n(X) = 1 + ∑_{k=1}^n T̄_k(X)`, where `T̄_k` is the monic
-Chebyshev polynomial (`Polynomial.Chebyshev.C`); equivalently `F_0 = 1` and
-`F_n = F_{n-1} + T̄_n`.
+**Partial sums of the monic Chebyshev polynomials.** For $n \ge 0$, $F_n(X)$ is the
+polynomial with integer coefficients
+
+$$F_n(X) = 1 + \sum_{k=1}^{n} \bar T_k(X),$$
+
+where $\bar T_k \in \mathbb{Z}[X]$ is the monic Chebyshev polynomial of the source, that is, the
+polynomial with $\bar T_k(q + q^{-1}) = q^k + q^{-k}$; equivalently $\bar T_0 = 2$,
+$\bar T_1 = X$ and $\bar T_{k+2} = X \bar T_{k+1} - \bar T_k$. Thus $F_0 = 1$ and
+$F_n = F_{n-1} + \bar T_n$ for $n \ge 1$.
 
 ## Depends on
 

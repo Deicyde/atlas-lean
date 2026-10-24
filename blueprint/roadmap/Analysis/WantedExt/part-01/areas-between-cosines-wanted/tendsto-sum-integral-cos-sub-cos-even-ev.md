@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_sum_integral_cos_sub_cos_even_even
 ---
 
-# Tendsto sum integral cos sub cos even even
+# Alternating integral sums of $\cos qx - \cos qkx$ for even $q$ and even $k$
 
-Lemma 12: for `q` even, with `k = 2m` even tending to infinity and
-`f(x) = cos qx - cos qkx`,
-`∑_{ℓ=1}^{k/2} (∫_{(ℓ-1)π/(k-1)}^{ℓπ/(k+1)} f - ∫_{ℓπ/(k+1)}^{ℓπ/(k-1)} f)`
-tends to `0` if `q ≡ 0 (mod 4)` and to `16/(q² π)` if `q ≡ 2 (mod 4)`.
+**Alternating integral sums of $\cos qx - \cos qkx$ for even $q$ and even $k$.** Let $q$ be an
+even natural number, for each natural number $m$ put $k = 2m$, and let
+$f(x) = \cos(qx) - \cos(qkx)$. Then, as $m \to \infty$,
+
+$$\sum_{\ell=1}^{m} \left(\int_{(\ell-1)\pi/(k-1)}^{\ell\pi/(k+1)} f(x)\,dx -
+\int_{\ell\pi/(k+1)}^{\ell\pi/(k-1)} f(x)\,dx\right)$$
+
+tends to $0$ if $q \equiv 0 \pmod 4$ and to $16/(q^2\pi)$ if $q \equiv 2 \pmod 4$.
 
 ## Depends on
 

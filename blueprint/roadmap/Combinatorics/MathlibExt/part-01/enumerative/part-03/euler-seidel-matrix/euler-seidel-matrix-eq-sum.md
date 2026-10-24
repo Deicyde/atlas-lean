@@ -7,14 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.eulerSeidelMatrix_eq_sum
 ---
 
-# Euler Seidel Matrix eq sum
+# Closed form of the Euler–Seidel matrix
 
-Closed form of the Euler–Seidel matrix: the `(n, k)` entry is the binomial
-transform of the initial row.
+**Closed form of the Euler–Seidel matrix.** Let $M$ be an additive commutative monoid and let
+$(a_n)_{n \ge 0}$ be a sequence in $M$. For all $n, k \ge 0$, the entry $a_n^k$ of the
+Euler–Seidel matrix of $a$ equals $\sum_{i=0}^{k} \binom{k}{i} a_{n+i}$.
 
 ## Depends on
 
-- [Euler Seidel Matrix](euler-seidel-matrix.md)
+- [Euler–Seidel matrix](euler-seidel-matrix.md)
 
 ## Sources
 

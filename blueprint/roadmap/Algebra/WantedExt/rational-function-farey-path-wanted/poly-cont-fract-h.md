@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.polyContFract_h
 ---
 
-# Poly Cont Fract h
+# Integral part of a polynomial continued fraction
 
-The integral part of `polyContFract a n` is `a₀`.
+**Integral part of a polynomial continued fraction.** Let $F$ be a field, let $n \in \mathbb N$,
+and let $a_0, a_1, \dots, a_n \in F[X]$. The integral part (head term) of the continued fraction
+$[a_0, a_1, \dots, a_n]$ over $F(X)$ is $a_0$.
 
 ## Depends on
 
-- [Poly Cont Fract](poly-cont-fract.md)
+- [Finite continued fraction with polynomial partial quotients](poly-cont-fract.md)
 
 ## Sources
 

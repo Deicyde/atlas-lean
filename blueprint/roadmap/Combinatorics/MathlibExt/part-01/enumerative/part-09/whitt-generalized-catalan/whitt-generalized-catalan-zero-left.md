@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.whittGeneralizedCatalan_zero_left
 ---
 
-# Whitt Generalized Catalan zero left
+# Whitt's generalized Catalan numbers with parameter zero
 
-`C(0, n) = 1` for `n ≥ 1`: only the `k = 0` term survives.
+**Whitt's generalized Catalan numbers with parameter zero.** For every natural number
+$n \ge 1$, Whitt's generalized Catalan number $C(0, n)$ equals $1$: only the term $k = 0$ of the
+defining sum survives.
 
 ## Depends on
 
-- [Whitt Generalized Catalan](whitt-generalized-catalan.md)
+- [Whitt's generalized Catalan numbers](whitt-generalized-catalan.md)
 
 ## Sources
 

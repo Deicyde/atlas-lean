@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.IsThreeAbelianSquare
 ---
 
-# Is Three Abelian Square
+# $3$-abelian squares over a ternary alphabet
 
-Ternary specialization of a `3`-abelian square.
+**$3$-abelian squares over a ternary alphabet.** A word $w$ over the alphabet $\{0, 1, 2\}$ is
+a $3$-abelian square when $w = uv$ for two nonempty words $u$ and $v$ that are $3$-abelian
+equivalent.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is KAbelian Square](is-kabelian-square.md)
+- [$k$-abelian squares](is-kabelian-square.md)
 
 ## Sources
 

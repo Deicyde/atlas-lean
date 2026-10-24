@@ -7,17 +7,18 @@ proof: formalized
 lean: Complex.analyticOnNhd_ein
 ---
 
-# Analytic On Nhd ein
+# Analyticity of the entire exponential integral
 
-`ein` is entire, stated in Mathlib's neighborhood-analytic form.
+**Analyticity of the entire exponential integral.** The entire exponential integral
+$\operatorname{Ein}$ is complex analytic at every point of $\mathbb{C}$.
 
 ## Depends on
 
-- [Ein](ein.md)
+- [The entire exponential integral Ein](ein.md)
 
 ## Proof depends on
 
-- [Differentiable ein](differentiable-ein.md)
+- [Differentiability of the entire exponential integral](differentiable-ein.md)
 
 ## Sources
 

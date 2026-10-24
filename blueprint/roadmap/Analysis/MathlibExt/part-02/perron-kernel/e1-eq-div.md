@@ -7,17 +7,18 @@ proof: formalized
 lean: PerronKernel.E1_eq_div
 ---
 
-# E1 eq div
+# The averaging operator as a difference quotient
 
-`E1` agrees with the difference quotient off `0`.
+**The averaging operator as a difference quotient.** Let $E_1(u) = \int_0^1 e^{tu}\,dt$ for
+$u \in \mathbb{C}$. Then $E_1(u) = (e^u - 1)/u$ for every nonzero complex number $u$.
 
 ## Depends on
 
-- [E1](e1.md)
+- [The averaging operator $E_1$](e1.md)
 
 ## Proof depends on
 
-- [Exp sub one eq](exp-sub-one-eq.md)
+- [Integral formula for $e^w - 1$](exp-sub-one-eq.md)
 
 ## Sources
 

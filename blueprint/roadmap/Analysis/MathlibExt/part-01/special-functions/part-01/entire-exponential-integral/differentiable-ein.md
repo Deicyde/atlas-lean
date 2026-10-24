@@ -7,17 +7,18 @@ proof: formalized
 lean: Complex.differentiable_ein
 ---
 
-# Differentiable ein
+# Differentiability of the entire exponential integral
 
-The power series defining `ein` is complex differentiable everywhere.
+**Differentiability of the entire exponential integral.** The entire exponential integral
+$\operatorname{Ein}$ is complex differentiable at every point of $\mathbb{C}$.
 
 ## Depends on
 
-- [Ein](ein.md)
+- [The entire exponential integral Ein](ein.md)
 
 ## Proof depends on
 
-- [Ein Term](ein-term.md)
+- [Terms of the series for the entire exponential integral](ein-term.md)
 
 ## Sources
 

@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.c4Sq_integerGroupDeterminants_two_pow_fifteen
 ---
 
-# Lemma 22
+# Integer group determinants of $C_4^2$ of the form $2^{15} p (2m + 1)$
 
-**Lemma 22.** For every `m ∈ ℤ` and `p ∈ P`, `2^15 p (2m + 1) ∈ S(C₄²)`.
+**Integer group determinants of $C_4^2$ of the form $2^{15} p (2m + 1)$.** Let $P$ be
+the set of positive primes $p \equiv 5 \pmod 8$. For every integer $m$ and every $p \in P$, the
+integer $2^{15} p (2m + 1)$ lies in the set $S(C_4^2)$ of integer group determinants of
+$C_4^2 = \mathbb{Z}/4 \times \mathbb{Z}/4$.
 
 ## Depends on
 
-- [Integer Group Determinants](integer-group-determinants.md)
-- [Primes Five Mod Eight](primes-five-mod-eight.md)
+- [Integer group determinants](integer-group-determinants.md)
+- [Primes congruent to $-3$ modulo $8$](primes-five-mod-eight.md)
 
 ## Sources
 

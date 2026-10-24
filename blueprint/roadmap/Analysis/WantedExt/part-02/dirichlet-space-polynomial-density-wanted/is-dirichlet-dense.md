@@ -6,15 +6,19 @@ statement: formalized
 lean: MathlibExt.Analysis.DirichletSpacePolynomialDensityWanted.IsDirichletDense
 ---
 
-# Is Dirichlet Dense
+# Density in the Dirichlet norm
 
-Density in the Dirichlet norm: `S` is dense in `D` when every
-`u ∈ D` is approximated arbitrarily well by elements of `S` in
-`|u 0|² + ∫_{|z| < 1} |u'(z)|²`.
+**Density in the Dirichlet norm.** A set $S$ of elements of the Dirichlet space $\mathcal{D}$
+is dense in the Dirichlet norm when for every $u \in \mathcal{D}$ and every real $\varepsilon > 0$
+there is $h \in S$ with
+
+$$|h(0) - u(0)|^2 + \int_{|z| < 1} |h'(z) - u'(z)|^2 \, dA(z) < \varepsilon,$$
+
+where $A$ is Lebesgue (area) measure on $\mathbb{C}$.
 
 ## Depends on
 
-- [Dirichlet Space](dirichlet-space.md)
+- [The Dirichlet space](dirichlet-space.md)
 
 ## Sources
 

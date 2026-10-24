@@ -6,10 +6,13 @@ statement: formalized
 lean: MathlibExt.Analysis.AMR22Problem7082Wanted.IsNormalizedAtZero
 ---
 
-# Is Normalized At Zero
+# Motion equal to the identity at parameter zero
 
-Condition (c) from [AMR-022-7082] Problem 7.82: at parameter zero,
-the motion is the identity on `E`.
+**Motion equal to the identity at parameter zero.** Let $E$ be a set of complex numbers and
+$F$ a function assigning a complex number $F(w, z)$ to each pair of complex numbers $w, z$.
+Condition (c) holds for $E$ and $F$ when $F(w, 0) = w$ for every $w \in E$.
+
+This is condition (c) of Problem 7.82 in AMR-022-7082.
 
 ## Depends on
 

@@ -5,5 +5,5 @@ navigation: module
 
 # RPRelation
 
-- [KString](kstring.md)
-- [Rp Relation](rp-relation.md)
+- [$k$-strings](kstring.md)
+- [The reverse-permute relation](rp-relation.md)

@@ -5,16 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.kasselReutenauer_C_div_pow_eq_sum
 ---
 
-# Kassel Reutenauer C div pow eq sum
+# $C_n(q)/q^n$ as a sum over the solutions of $h(h + 1 + 2a) = 2n$
 
-Representation formula for `C_n(q)/q^n` (in `ℤ[T;T⁻¹]`, `q = T 1`):
-`C_n(q)/q^n = ∑ (-1)^h (q^a + q^{-a})` over all `h ≥ 1`, `a ∈ ℤ` with
-`n = h (h + 1 + 2a)/2`; moreover, a solution `(a, h)` is determined by `|a|`.
-Every solution satisfies `h ≤ 2n` and `|a| ≤ n`, so the sum is over a finite box.
+**$C_n(q)/q^n$ as a sum over the solutions of $h(h + 1 + 2a) = 2n$.** Let $n \ge 1$, let
+$\bar P_n$ be the Kassel–Reutenauer polynomial, and write $C_n(q)/q^n$ for the Laurent polynomial
+$(q - 2 + q^{-1})\,\bar P_n(q + q^{-1})$ in $\mathbb{Z}[q, q^{-1}]$. Then
+
+$$\frac{C_n(q)}{q^n} = \sum_{(h, a)} (-1)^h \left(q^a + q^{-a}\right),$$
+
+where the sum runs over the pairs of integers $(h, a)$ with $1 \le h \le 2n$, $-n \le a \le n$
+and $h(h + 1 + 2a) = 2n$. Moreover, if $h, h'$ are positive integers and $a, a'$ are
+integers with $h(h + 1 + 2a) = 2n$, $h'(h' + 1 + 2a') = 2n$ and $|a| = |a'|$, then $h = h'$
+and $a = a'$.
+
+Every pair of integers $(h, a)$ with $h \ge 1$ and $h(h + 1 + 2a) = 2n$ satisfies $h \le 2n$
+and $|a| \le n$, so the sum runs over all such pairs.
 
 ## Depends on
 
-- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
+- [Kassel–Reutenauer polynomial](kassel-reutenauer-poly.md)
 
 ## Sources
 

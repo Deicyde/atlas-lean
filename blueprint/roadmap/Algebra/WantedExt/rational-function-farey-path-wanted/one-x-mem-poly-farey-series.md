@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.one_X_mem_polyFareySeries
 ---
 
-# One X mem poly Farey Series
+# The fraction 1/X in the polynomial Farey series
 
-Characteristic member: `1 / x ∈ 𝓕ₙ` for `n ≥ 1`.
+**The fraction 1/X in the polynomial Farey series.** Let $F$ be a field. For every natural
+number $n \ge 1$, the pair $(1, X)$, that is, the fraction $1/X$, belongs to the Farey series
+$\mathcal F_n$ of order $n$ over $F$.
 
 ## Depends on
 
-- [Poly Farey Series](poly-farey-series.md)
+- [Farey series over a field](poly-farey-series.md)
 
 ## Sources
 

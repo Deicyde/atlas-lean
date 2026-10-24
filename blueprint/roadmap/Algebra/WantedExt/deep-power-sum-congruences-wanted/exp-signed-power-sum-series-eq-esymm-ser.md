@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.exp_signedPowerSumSeries_eq_esymmSeries
 ---
 
-# Exp signed Power Sum Series eq esymm Series
+# The generating function of the elementary symmetric polynomials
 
-`E(t) = exp P(t)`: `Σ_k e_k tᵏ = exp (Σ_{n ≥ 1} (-1)^(n-1) p_n tⁿ / n)`.
+**The generating function of the elementary symmetric polynomials.** Let $\sigma$ be a finite
+set of variables, and in $\mathbb{Q}[x_i : i \in \sigma]$ let $e_k$ be the $k$-th elementary
+symmetric polynomial and $p_n = \sum_{i \in \sigma} x_i^n$ the $n$-th power sum. Then, as formal
+power series in $t$ with coefficients in $\mathbb{Q}[x_i : i \in \sigma]$,
+
+$$\sum_{k \ge 0} e_k t^k = \exp\Big(\sum_{n \ge 1} \frac{(-1)^{n-1}}{n} p_n t^n\Big).$$
 
 ## Depends on
 

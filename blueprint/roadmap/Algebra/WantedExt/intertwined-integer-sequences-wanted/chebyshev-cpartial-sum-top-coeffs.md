@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.chebyshevCPartialSum_top_coeffs
 ---
 
-# Chebyshev CPartial Sum top coeffs
+# Leading coefficients of the partial sums of Chebyshev polynomials
 
-Top coefficients of `F_n`: for `n ≥ 5`,
-`F_n(X) = Xⁿ + X^{n-1} - (n-1) X^{n-2} - (n-2) X^{n-3} + ((n-2)(n-3)/2) X^{n-4}
-  + ((n-3)(n-4)/2) X^{n-5}` plus monomials of degree `≤ n - 6` (stated as: the
-difference has degree `< n - 5`). The fractions are written `C(n-2, 2)` and
-`C(n-3, 2)`.
+**Leading coefficients of the partial sums of Chebyshev polynomials.** Let
+$F_n = 1 + \sum_{k=1}^{n} \bar T_k \in \mathbb{Z}[X]$ be the partial sums of the monic Chebyshev
+polynomials $\bar T_k$ ($\bar T_0 = 2$, $\bar T_1 = X$, $\bar T_{k+2} = X \bar T_{k+1} - \bar T_k$).
+For every $n \ge 5$, the polynomial
+
+$$F_n - \Big(X^n + X^{n-1} - (n-1) X^{n-2} - (n-2) X^{n-3} + \binom{n-2}{2} X^{n-4} +
+\binom{n-3}{2} X^{n-5}\Big)$$
+
+is either zero or has degree less than $n - 5$.
+
+Here $\binom{n-2}{2} = (n-2)(n-3)/2$ and $\binom{n-3}{2} = (n-3)(n-4)/2$.
 
 ## Depends on
 
-- [Chebyshev CPartial Sum](chebyshev-cpartial-sum.md)
+- [Partial sums of the monic Chebyshev polynomials](chebyshev-cpartial-sum.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ partitions of `[n]`, and there are `C_n` (the Catalan number) of them.
 
 - [Is Maximal Set Of Lanes](is-maximal-set-of-lanes.md)
 - [Lanes Meet](lanes-meet.md)
-- [Noncrossing Partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/noncrossing-partition.md)
+- [Noncrossing partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/noncrossing-partition.md)
 
 ## Sources
 

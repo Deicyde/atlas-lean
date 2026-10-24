@@ -16,7 +16,7 @@ with `1 ≤ k < n` is an integer multiple of `p`.
 
 - [Is Binomid Index](is-binomid-index.md)
 - [Is Lex Minimal Extension](is-lex-minimal-extension.md)
-- [Generalized Binomial Coefficient](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-08/totienomial-coefficient/generalized-binomial-coefficient.md)
+- [Generalized binomial coefficient](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-08/totienomial-coefficient/generalized-binomial-coefficient.md)
 
 ## Sources
 

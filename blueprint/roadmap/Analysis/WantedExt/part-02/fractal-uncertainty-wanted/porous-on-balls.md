@@ -6,10 +6,13 @@ statement: formalized
 lean: MathlibExt.Analysis.FractalUncertaintyWanted.FractalUncertainty.PorousOnBalls
 ---
 
-# Porous On Balls
+# Porosity on balls
 
-We say a set `X ⊂ ℝᵈ` is `ν`-porous on balls from scales `α₀` to `α₁` if, for every ball `B` of
-diameter `α₀ < R < α₁`, there is some `x ∈ B` such that `closedBall x (ν * R) ∩ X = ∅`.
+**Porosity on balls.** Let $d$ be a natural number and let $\nu$, $\alpha_0$ and $\alpha_1$ be
+real numbers. A set $X$ in the Euclidean space $\mathbb{R}^d$ is $\nu$-porous on balls from scales
+$\alpha_0$ to $\alpha_1$ if for every $y \in \mathbb{R}^d$ and every $R$ with
+$\alpha_0 < R < \alpha_1$, the closed ball of radius $R/2$ about $y$ contains a point $x$ such that
+the closed ball of radius $\nu R$ about $x$ is disjoint from $X$.
 
 ## Depends on
 

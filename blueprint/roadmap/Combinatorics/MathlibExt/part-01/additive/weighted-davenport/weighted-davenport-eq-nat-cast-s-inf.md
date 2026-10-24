@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.weightedDavenport_eq_natCast_sInf
 ---
 
-# Weighted Davenport eq nat Cast s Inf
+# The weighted Davenport constant as a least length
 
-When some forcing length exists, `D_A(G)` is the least one, as a natural number.
+**The weighted Davenport constant as a least length.** Let $G$ be an additive commutative
+monoid, $A$ a finite set of natural numbers and $D_A(G)$ the $A$-weighted Davenport constant
+of $G$. If there is a length $\ell \in \mathbb{N}$ such that no sequence over $G$ of length
+$\ell$ is $A$-weighted zero-sum free, then $D_A(G)$ is finite and equals the least such length.
 
 ## Depends on
 
-- [Is Weighted Zero Sum Free](is-weighted-zero-sum-free.md)
-- [Weighted Davenport](weighted-davenport.md)
+- [Weighted zero-sum free sequences](is-weighted-zero-sum-free.md)
+- [Weighted Davenport constant](weighted-davenport.md)
 
 ## Sources
 

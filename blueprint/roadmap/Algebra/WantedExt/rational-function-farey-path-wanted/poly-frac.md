@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.polyFrac
 ---
 
-# Poly Frac
+# The fraction of a pair of polynomials
 
-The value `u / v ∈ F(x)` of a pair `(u, v)`.
+**The fraction of a pair of polynomials.** Let $F$ be a field. The value of a pair $(u, v)$ of
+polynomials in $F[x]$ is the rational function $u / v$ in the field $F(x)$ of rational functions
+over $F$ (it is $0$ when $v = 0$).
 
 ## Depends on
 

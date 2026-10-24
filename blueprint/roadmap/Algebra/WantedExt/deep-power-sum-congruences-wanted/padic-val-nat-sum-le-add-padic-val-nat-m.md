@@ -5,10 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.padicValNat_sum_le_add_padicValNat_multinomial
 ---
 
-# Padic Val Nat sum le add padic Val Nat multinomial
+# A valuation bound from Kummer's theorem
 
-`v_p(r_i) ≥ v_p(m) - v_p((m; r_1, …, r_k))` for `m = r_1 + ⋯ + r_k` and `r_i ≠ 0` (the paper
-has `v_p(0) = ∞`; with `r = (0, p)` and Mathlib's `v_p(0) = 0` the inequality fails).
+**A valuation bound from Kummer's theorem.** Let $p$ be a prime, let $r_1, \dots, r_k$ be
+natural numbers with sum $m$, and let $j$ be an index with $r_j \ne 0$. Then
+
+$$v_p(m) \le v_p(r_j) + v_p\binom{m}{r_1, \dots, r_k},$$
+
+that is, $v_p(r_j) \ge v_p(m) - v_p\binom{m}{r_1, \dots, r_k}$.
+
+The hypothesis $r_j \ne 0$ is needed because $v_p(0)$ is taken to be $0$: for $(r_1, r_2) = (0, p)$
+the inequality fails at $j = 1$. With the paper's convention $v_p(0) = \infty$ that case is trivial.
 
 ## Depends on
 

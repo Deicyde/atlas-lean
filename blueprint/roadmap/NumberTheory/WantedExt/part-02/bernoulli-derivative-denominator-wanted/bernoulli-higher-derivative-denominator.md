@@ -15,7 +15,7 @@ For `k, n ≥ 1`, the denominator `𝔇_n^{(k)}` of `B_n^{(k)}(x)` equals, when 
 ## Depends on
 
 - [Bernoulli Diff Denominator Coprime Part](bernoulli-diff-denominator-coprime-part.md)
-- [Polynomial Denominator](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
+- [Denominator of a rational polynomial](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
 
 ## Sources
 

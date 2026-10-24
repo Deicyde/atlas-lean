@@ -4,5 +4,5 @@ navigation: module
 
 # Scottish Book159
 
-- [Scottish Book Problem159 Claim](scottish-book-problem159-claim.md)
-- [Problem159 Refuted](problem159-refuted.md)
+- [The claim of Scottish Book Problem 159](scottish-book-problem159-claim.md)
+- [Scottish Book Problem 159 has a negative answer](problem159-refuted.md)

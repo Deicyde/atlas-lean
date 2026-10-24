@@ -5,14 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.c4Sq_groupDet_eq_prod_circulantDetFour
 ---
 
-# Corollary 2
+# Factorization of the complex group determinant of $C_4^2$
 
-**Corollary 2.** For complex variables `y`, the `C₄²` group determinant factors as
-`∏_{k=0}^{3} D₄(∑_s i^{ks} y_{4s}, ∑_s i^{ks} y_{1+4s}, ∑_s i^{ks} y_{2+4s}, ∑_s i^{ks} y_{3+4s})`.
+**Factorization of the complex group determinant of $C_4^2$.** For every
+$y \colon \mathbb{Z}/4 \times \mathbb{Z}/4 \to \mathbb{C}$,
+
+$$
+\det\bigl(y(h - g)\bigr)_{g, h \in \mathbb{Z}/4 \times \mathbb{Z}/4} =
+\prod_{k=0}^{3} D_4\bigl(z_k(0), z_k(1), z_k(2), z_k(3)\bigr), \qquad
+z_k(r) = \sum_{s=0}^{3} i^{ks} y(r, s),
+$$
+
+where $i = \sqrt{-1}$ and $D_4(x_0, x_1, x_2, x_3)$ is the determinant of the $4 \times 4$
+circulant matrix with first row $(x_0, x_1, x_2, x_3)$.
 
 ## Depends on
 
-- [Circulant Det Four](circulant-det-four.md)
+- [The group determinant of $C_4$](circulant-det-four.md)
 
 ## Sources
 

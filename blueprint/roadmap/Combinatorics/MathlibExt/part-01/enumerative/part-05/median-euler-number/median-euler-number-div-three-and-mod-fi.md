@@ -6,22 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.medianEulerNumber_div_three_and_modFive
 ---
 
-# Median Euler Number div three and mod Five
+# Median Euler numbers modulo three and five
 
-For `n ≥ 1`, `3 ∣ R_n` and `R_n / 3 ≡ 3^(n-1) (mod 5)`.
+**Median Euler numbers modulo three and five.** For every natural number $n \ge 1$, the median
+Euler number $R_n$ is divisible by $3$, and $R_n / 3 \equiv 3^{n-1} \pmod 5$.
 
 ## Depends on
 
-- [Median Euler Number](median-euler-number.md)
+- [Median Euler numbers](median-euler-number.md)
 
 ## Proof depends on
 
-- [Euler Seidel Matrix](../../part-03/euler-seidel-matrix/euler-seidel-matrix.md)
-- [Euler Seidel Matrix eq sum](../../part-03/euler-seidel-matrix/euler-seidel-matrix-eq-sum.md)
-- [Median Euler Coeff](median-euler-coeff.md)
-- [Median Euler Coeff egf](median-euler-coeff-egf.md)
-- [Median Euler Coeff zero](median-euler-coeff-zero.md)
-- [Median Euler Initial Row](median-euler-initial-row.md)
+- [Euler–Seidel matrix](../../part-03/euler-seidel-matrix/euler-seidel-matrix.md)
+- [Closed form of the Euler–Seidel matrix](../../part-03/euler-seidel-matrix/euler-seidel-matrix-eq-sum.md)
+- [Euler coefficients](median-euler-coeff.md)
+- [Exponential generating function of the Euler coefficients](median-euler-coeff-egf.md)
+- [The zeroth Euler coefficient](median-euler-coeff-zero.md)
+- [Initial row for the median Euler numbers](median-euler-initial-row.md)
 
 ## Sources
 

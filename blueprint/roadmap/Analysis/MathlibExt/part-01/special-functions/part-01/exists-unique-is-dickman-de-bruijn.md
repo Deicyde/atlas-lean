@@ -7,13 +7,17 @@ proof: formalized
 lean: Real.existsUnique_isDickmanDeBruijn
 ---
 
-# Dickman De Bruijn Exists Unique
+# Existence and uniqueness of the Dickman–de Bruijn function
 
-There exists a unique total real function satisfying the Dickman–de Bruijn characterization.
+**Existence and uniqueness of the Dickman–de Bruijn function.** There is exactly one function
+$\rho : \mathbb{R} \to \mathbb{R}$ that is a Dickman–de Bruijn function, that is, such that
+$\rho(u) = 0$ for $u < 0$, $0 \le \rho(u) \le 1$ for $u \ge 0$, $\rho$ is continuous on
+$[0, \infty)$, $\rho(u) = 1$ for $0 \le u \le 1$, and for every $u > 1$ the function $\rho$ is
+differentiable at $u$ with $u \rho'(u) + \rho(u - 1) = 0$.
 
 ## Depends on
 
-- [Is Dickman De Bruijn](dickman-de-bruijn/is-dickman-de-bruijn.md)
+- [Dickman–de Bruijn functions](dickman-de-bruijn/is-dickman-de-bruijn.md)
 
 ## Sources
 

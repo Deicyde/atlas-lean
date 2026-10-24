@@ -5,12 +5,15 @@ statement: formalized
 lean: CSLibExt.Combinatorics.RandomThreeSat.IsUpperCutoff
 ---
 
-# Is Upper Cutoff
+# Upper threshold cutoff
 
-`ρ` is an upper threshold cutoff when, at every constant density
-strictly above `ρ`, a random formula is unsatisfiable with probability
-tending to `1` (equivalently `satProb` tends to `0`). Literature upper
-bounds on the threshold are exactly cutoffs in this sense.
+**Upper threshold cutoff.** A real number $\rho$ is an upper threshold cutoff for random
+3-SAT when, for every real $r > \rho$, the probability that a uniformly random formula with
+$\lfloor r n \rfloor$ clauses on $n$ variables is satisfiable tends to $0$ as $n \to \infty$
+(when $r n < 0$ the formula has no clauses); equivalently, such a formula is unsatisfiable
+with probability tending to $1$.
+
+Literature upper bounds on the threshold are exactly cutoffs in this sense.
 
 ## Depends on
 
@@ -18,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sat Prob](sat-prob.md)
+- [Satisfiability probability of random 3-SAT](sat-prob.md)
 
 ## Sources
 

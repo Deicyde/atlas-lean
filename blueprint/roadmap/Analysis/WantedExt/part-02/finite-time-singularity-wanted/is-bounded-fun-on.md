@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Analysis.FiniteTimeSingularityWanted.IsBoundedFunOn
 ---
 
-# Is Bounded Fun On
+# Functions bounded on a set
 
-We say that a function `f` is bounded on a set `s` if the image of `s` under `f` is bounded.
+**Functions bounded on a set.** A function $f : \beta \to \alpha$ into a space $\alpha$ with a
+bornology is bounded on a set $s \subseteq \beta$ if the image $f(s)$ is a bounded subset of
+$\alpha$.
 
 ## Depends on
 

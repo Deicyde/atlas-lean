@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.polyElemSymm
 ---
 
-# Poly Elem Symm
+# Elementary symmetric functions of a polynomial
 
-The paper's `e_n(P)` for a monic polynomial `P` of degree `d`: `1` for `n = 0`, the
-`X ^ (d - n)`-coefficient times `(-1) ^ n` for `1 ≤ n ≤ d`, and `0` for `n > d`.
+**Elementary symmetric functions of a polynomial.** Let $P$ be a polynomial of degree $d$ over
+a commutative ring, with $d = 0$ for $P = 0$. For a natural number $n$, $e_n(P)$ is $(-1)^n$ times
+the coefficient of $X^{d - n}$ in $P$ if $n \le d$, and $0$ if $n > d$. In particular
+$e_0(P) = 1$ when $P$ is monic.
 
 ## Depends on
 

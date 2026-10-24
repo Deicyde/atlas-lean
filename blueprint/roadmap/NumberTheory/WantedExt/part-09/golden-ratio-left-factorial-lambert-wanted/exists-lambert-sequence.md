@@ -15,11 +15,11 @@ with `lambertMap (-a / (n - 1)) = -(1/(n-1)) c^(1/(n-1))`, i.e.
 
 ## Depends on
 
-- [Lambert Map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/lambert-map.md)
+- [Lambert map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/lambert-map.md)
 
 ## Proof depends on
 
-- [Exists Unique lambert Map lower preimage](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/exists-unique-lambert-map-lower-preimage.md)
+- [Lower-branch preimages of the Lambert map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/exists-unique-lambert-map-lower-preimage.md)
 
 ## Sources
 

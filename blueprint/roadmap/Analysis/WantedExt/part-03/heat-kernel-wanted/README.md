@@ -5,5 +5,5 @@ navigation: module
 
 # Heat Kernel
 
-- [Heat Solution](heat-solution.md)
-- [Heat kernel solves heat equation](heat-kernel-solves-heat-equation.md)
+- [Heat-kernel solution](heat-solution.md)
+- [The Gaussian heat kernel solves the heat equation](heat-kernel-solves-heat-equation.md)

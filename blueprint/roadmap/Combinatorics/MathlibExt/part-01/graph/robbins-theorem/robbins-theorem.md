@@ -7,17 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.robbins_theorem
 ---
 
-# Robbins theorem
+# Robbins' theorem, allowing the empty graph
 
-Robbins' theorem (https://en.wikipedia.org/wiki/Robbins%27_theorem): a finite
-undirected simple graph is 2-edge-connected (preconnected and bridgeless, with
-bridgelessness expressed as reachability after deleting any single edge) if and
-only if it admits a strongly connected orientation.
+**Robbins' theorem, allowing the empty graph.** Let $G$ be a simple graph on a finite,
+possibly empty, vertex set $V$. Then every vertex of $G$ is reachable from every vertex and,
+after deleting any single edge of $G$, every vertex is still reachable from every vertex, if
+and only if $G$ has a strongly connected orientation: a relation $D$ on $V$ such that $D(u, v)$
+holds only when $u$ and $v$ are adjacent, for every edge $uv$ exactly one of $D(u, v)$ and
+$D(v, u)$ holds, and every vertex $v$ can be reached from every vertex $u$ by a finite,
+possibly empty, sequence of $D$-steps.
 
-The connectivity hypothesis is `G.Preconnected` (`∀ u v, G.Reachable u v`), which holds
-vacuously when `V` is empty: both sides of this formulation are true for the empty graph,
-so this extends the standard `G.Connected` formulation to the empty graph (see
-`robbins_theorem_connected`, which assumes `[Nonempty V]`).
+For nonempty $V$ the left-hand condition says that $G$ is 2-edge-connected; for empty $V$ both
+sides hold.
 
 ## Depends on
 
@@ -25,8 +26,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Robbins theorem connected](robbins-theorem-connected.md)
+- [Robbins' theorem](robbins-theorem-connected.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Graph.RobbinsTheorem](../../../../../../sources/v2/MathlibExt.md)
+- https://en.wikipedia.org/wiki/Robbins%27_theorem

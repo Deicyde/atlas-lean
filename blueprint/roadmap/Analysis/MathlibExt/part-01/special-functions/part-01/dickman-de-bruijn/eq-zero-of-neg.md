@@ -7,13 +7,15 @@ proof: formalized
 lean: Real.IsDickmanDeBruijn.eq_zero_of_neg
 ---
 
-# Eq zero of neg
+# The Dickman–de Bruijn function vanishes on the negative reals
 
-A Dickman–de Bruijn function vanishes at negative arguments.
+**The Dickman–de Bruijn function vanishes on the negative reals.** If
+$\rho : \mathbb{R} \to \mathbb{R}$ is a Dickman–de Bruijn function, then $\rho(u) = 0$ for every
+real $u < 0$.
 
 ## Depends on
 
-- [Is Dickman De Bruijn](is-dickman-de-bruijn.md)
+- [Dickman–de Bruijn functions](is-dickman-de-bruijn.md)
 
 ## Sources
 

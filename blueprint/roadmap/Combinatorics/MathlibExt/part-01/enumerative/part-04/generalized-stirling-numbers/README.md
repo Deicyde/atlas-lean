@@ -4,7 +4,7 @@ navigation: module
 
 # Generalized Stirling Numbers
 
-- [Generalized Stirling First](generalized-stirling-first.md)
-- [Generalized Stirling Second](generalized-stirling-second.md)
-- [Generalized Stirling First eq sum](generalized-stirling-first-eq-sum.md)
-- [Generalized Stirling Second eq sum](generalized-stirling-second-eq-sum.md)
+- [Generalized Stirling numbers of the first kind](generalized-stirling-first.md)
+- [Generalized Stirling numbers of the second kind](generalized-stirling-second.md)
+- [Sum formula for generalized Stirling numbers of the first kind](generalized-stirling-first-eq-sum.md)
+- [Sum formula for generalized Stirling numbers of the second kind](generalized-stirling-second-eq-sum.md)

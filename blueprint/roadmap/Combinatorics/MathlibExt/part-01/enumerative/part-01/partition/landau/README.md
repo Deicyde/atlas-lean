@@ -12,5 +12,5 @@ navigation: module
 ## Nat
 
 - [Landau Function](landau-function.md)
-- [Parts LCM le landau Function](parts-lcm-le-landau-function.md)
-- [Exists partition parts LCM eq landau Function](exists-partition-parts-lcm-eq-landau-fun.md)
+- [The Landau function bounds the LCM of the parts](parts-lcm-le-landau-function.md)
+- [The Landau function is attained](exists-partition-parts-lcm-eq-landau-fun.md)

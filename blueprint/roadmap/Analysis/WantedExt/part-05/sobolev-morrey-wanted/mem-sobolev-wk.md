@@ -6,18 +6,21 @@ statement: formalized
 lean: MathlibExt.Analysis.SobolevMorreyWanted.Analysis.SobolevMorreyProblem.MemSobolevWk
 ---
 
-# Mem Sobolev Wk
+# Sobolev space $W^{k,p}(\mathbb{R}^n)$
 
-Membership in `W^{k,p}(ℝⁿ)`: locally integrable, and every weak
-derivative `D^m f` of order `|m| ≤ k` exists and lies in `L^p`.
+**Sobolev space $W^{k,p}(\mathbb{R}^n)$.** For a natural number $k$ and $p \in [0, \infty]$, a
+function $f : \mathbb{R}^n \to \mathbb{R}$ belongs to $W^{k,p}(\mathbb{R}^n)$ when $f$ is locally
+integrable and, for every multi-index $m = (m_0, \dots, m_{n-1})$ of natural numbers with
+$m_0 + \cdots + m_{n-1} \le k$, $f$ has a weak derivative $D^m f$ that lies in
+$L^p(\mathbb{R}^n)$. Local integrability and $L^p$ are with respect to Lebesgue measure.
 
 ## Depends on
 
-- [E](e.md)
+- [Euclidean space $\mathbb{R}^n$](e.md)
 
 ## Proof depends on
 
-- [Is Weak Deriv](is-weak-deriv.md)
+- [Weak derivative](is-weak-deriv.md)
 
 ## Sources
 

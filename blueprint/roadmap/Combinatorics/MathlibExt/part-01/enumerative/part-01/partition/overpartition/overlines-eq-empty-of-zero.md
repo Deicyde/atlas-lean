@@ -7,9 +7,10 @@ proof: formalized
 lean: Nat.Overpartition.overlines_eq_empty_of_zero
 ---
 
-# Overlines eq empty of zero
+# Overpartitions of zero have no overlined sizes
 
-An overpartition of zero has no overlined sizes.
+**Overpartitions of zero have no overlined sizes.** Every overpartition of $0$ has no
+overlined part sizes.
 
 ## Depends on
 

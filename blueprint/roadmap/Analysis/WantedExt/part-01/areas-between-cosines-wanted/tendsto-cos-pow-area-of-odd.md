@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_cosPowArea_of_odd
 ---
 
-# Tendsto cos Pow Area of odd
+# Area between $\cos^n x$ and $\cos^n(kx)$ in the limit, odd $n$
 
-Theorem 1: for `n` odd,
-`A_n = 8 / (2^(n-1) π) · ∑_{j=0}^{(n-1)/2} C(n, j) / (n - 2j)²`.
+**Area between $\cos^n x$ and $\cos^n(kx)$ in the limit, odd $n$.** Let $n$ be an odd natural
+number. As $k \to \infty$ through the natural numbers, the area
+$\int_0^\pi |\cos^n x - \cos^n(kx)|\,dx$ between $\cos^n x$ and $\cos^n(kx)$ on $[0, \pi]$
+converges to
+
+$$\frac{8}{2^{n-1}\pi} \sum_{j=0}^{(n-1)/2} \frac{\binom{n}{j}}{(n-2j)^2}.$$
 
 ## Depends on
 
-- [Cos Pow Area](cos-pow-area.md)
+- [Area between powers of cosines](cos-pow-area.md)
 
 ## Sources
 

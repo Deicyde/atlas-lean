@@ -7,17 +7,19 @@ proof: formalized
 lean: MathlibExt.Analysis.SpecialFunctions.ArcsinTaylorSeries.norm_arcsinIntegralSeries_term_le
 ---
 
-# Norm arcsin Integral Series term le
+# Bound on the terms of the integrated arcsine series
 
-Uniform summable bound for the terms of `arcsinIntegralSeries` on `[-1, 1]`.
+**Bound on the terms of the integrated arcsine series.** Write $c_k = \binom{2k}{k}/4^k$ for
+the normalized central binomial coefficient. For every real number $t$ with $|t| \le 1$ and every
+natural number $k$, $\left|\frac{c_k\, t^{2k+1}}{(2k+1)^2}\right| \le \frac{1}{(k+1)^2}$.
 
 ## Depends on
 
-- [Central Binomial Coeff](central-binomial-coeff.md)
+- [Normalized central binomial coefficient](central-binomial-coeff.md)
 
 ## Proof depends on
 
-- [Arcsin Integral Series term eq](arcsin-integral-series-term-eq.md)
+- [Terms of the integrated arcsine series](arcsin-integral-series-term-eq.md)
 
 ## Sources
 

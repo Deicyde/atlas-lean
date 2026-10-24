@@ -6,18 +6,20 @@ statement: formalized
 lean: MetaMathlibExt.IsSquareDominoTiling
 ---
 
-# Is Square Domino Tiling
+# Square-and-domino tilings
 
-A square-and-domino tiling is a disjoint family of valid tiles covering
-every cell of the rectangle.
+**Square-and-domino tilings.** A square-and-domino tiling of the $3 \times n$ rectangle is a
+finite family $T$ of sets of cells such that every member of $T$ is a square-or-domino tile (a
+single cell or two adjacent cells), any two distinct members of $T$ are disjoint, and every cell
+of the rectangle lies in some member of $T$.
 
 ## Depends on
 
-- [Tiling Cell](tiling-cell.md)
+- [Cells of the $3 \times n$ rectangle](tiling-cell.md)
 
 ## Proof depends on
 
-- [Is Square Or Domino](is-square-or-domino.md)
+- [Square and domino tiles](is-square-or-domino.md)
 
 ## Sources
 

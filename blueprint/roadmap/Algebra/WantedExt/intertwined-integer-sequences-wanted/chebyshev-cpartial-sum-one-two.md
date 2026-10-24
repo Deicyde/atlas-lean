@@ -6,18 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.chebyshevCPartialSum_one_two
 ---
 
-# Chebyshev CPartial Sum one two
+# First and second partial sums of the Chebyshev polynomials
 
-Characteristic values `F_1(X) = X + 1` and `F_2(X) = X² + X - 1` (Table 4).
+**First and second partial sums of the Chebyshev polynomials.** Let
+$F_n = 1 + \sum_{k=1}^{n} \bar T_k \in \mathbb{Z}[X]$ be the partial sums of the monic Chebyshev
+polynomials $\bar T_k$ ($\bar T_0 = 2$, $\bar T_1 = X$, $\bar T_{k+2} = X \bar T_{k+1} - \bar T_k$).
+Then $F_1 = X + 1$ and $F_2 = X^2 + X - 1$.
 
 ## Depends on
 
-- [Chebyshev CPartial Sum](chebyshev-cpartial-sum.md)
+- [Partial sums of the monic Chebyshev polynomials](chebyshev-cpartial-sum.md)
 
 ## Proof depends on
 
-- [Chebyshev CPartial Sum succ](chebyshev-cpartial-sum-succ.md)
-- [Chebyshev CPartial Sum zero](chebyshev-cpartial-sum-zero.md)
+- [Successive partial sums of the Chebyshev polynomials](chebyshev-cpartial-sum-succ.md)
+- [Zeroth partial sum of the Chebyshev polynomials](chebyshev-cpartial-sum-zero.md)
 
 ## Sources
 

@@ -5,9 +5,9 @@ navigation: module
 
 # Part1 Ch9 Entry13 Bernoulligen
 
-- [Chapter9 Clausen Term norm bound](chapter9-clausen-term-norm-bound.md)
-- [Chapter9 Clausen Term summable of two le](chapter9-clausen-term-summable-of-two-le.md)
-- [Chapter9 Clausen zero](chapter9-clausen-zero.md)
-- [Chapter9 Clausen one](chapter9-clausen-one.md)
-- [Chapter9 Clausen of two le](chapter9-clausen-of-two-le.md)
-- [Ramanujan part1 ch9 entry13 bernoulligen](ramanujan-part1-ch9-entry13-bernoulligen.md)
+- [Termwise bound for the Clausen series (Chapter 9, Entry 13)](chapter9-clausen-term-norm-bound.md)
+- [Summability of the Clausen series (Chapter 9, Entry 13)](chapter9-clausen-term-summable-of-two-le.md)
+- [Clausen function of order zero (Chapter 9, Entry 13)](chapter9-clausen-zero.md)
+- [Clausen function of order one (Chapter 9, Entry 13)](chapter9-clausen-one.md)
+- [Clausen functions of order at least two as series (Chapter 9, Entry 13)](chapter9-clausen-of-two-le.md)
+- [Integrals of $u^n \cot(u/2)$ via Clausen functions (Chapter 9, Entry 13)](ramanujan-part1-ch9-entry13-bernoulligen.md)

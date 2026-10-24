@@ -5,5 +5,5 @@ navigation: module
 
 # Banach Alaoglu
 
-- [Weak Star Polar](weak-star-polar.md)
-- [Banach alaoglu bourbaki](banach-alaoglu-bourbaki.md)
+- [Weak-star polar](weak-star-polar.md)
+- [Banach–Alaoglu–Bourbaki theorem](banach-alaoglu-bourbaki.md)

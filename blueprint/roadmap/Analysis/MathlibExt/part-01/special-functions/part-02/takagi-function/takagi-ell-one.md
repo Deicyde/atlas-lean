@@ -7,20 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.takagiEll_one
 ---
 
-# Takagi Ell one
+# The first Takagi coefficient vanishes
 
-Boundary lemma (required clause `ell`): `ell_1 = 0` for all presentations.
-Cites concept `jis_sem_95dbf183cc4eaf1172157db5` and source statement
-`jis_23b2f8f9e624bca533bd6deb`.
+**The first Takagi coefficient vanishes.** For every natural number $n$ and every integer $k$,
+the Takagi coefficient $\ell_1(n, k)$ is $0$.
 
 ## Depends on
 
-- [Takagi Ell](takagi-ell.md)
+- [Takagi coefficients](takagi-ell.md)
 
 ## Proof depends on
 
-- [Takagi Bit](takagi-bit.md)
+- [Binary digits of a natural number](takagi-bit.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.TakagiFunction](../../../../../../../sources/v2/MathlibExt.md)
+- Laura Monroe, *Takagi Function Identities on Dyadic Rationals*, Journal of Integer Sequences 27 (2024), Article 24.2.7, Definition `takagi_newdef` (concept `jis_sem_95dbf183cc4eaf1172157db5`, source statement `jis_23b2f8f9e624bca533bd6deb`).

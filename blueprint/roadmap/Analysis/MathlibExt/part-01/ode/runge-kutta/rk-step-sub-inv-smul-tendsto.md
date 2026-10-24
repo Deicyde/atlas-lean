@@ -6,21 +6,25 @@ proof: formalized
 lean: MathlibExt.Analysis.ODE.RungeKutta.rkStep_sub_inv_smul_tendsto
 ---
 
-# Consistency
+# Consistency of explicit Runge–Kutta methods
 
-**Consistency**: if `∑ b i = 1` and `f` is continuous at `(t, y)`, then
-`h⁻¹ • (rkStep h - y) → f t y` as `h → 0` through nonzero values.
+**Consistency of explicit Runge–Kutta methods.** Let $E$ be a real normed vector space,
+let $f(t, y)$ be a vector field $\mathbb{R} \times E \to E$, let $t \in \mathbb{R}$ and
+$y \in E$, and for an explicit Runge–Kutta method with weights $b$ let $y_1(h)$ be the
+result of one step of size $h$ from the state $y$ at time $t$. If $\sum_i b_i = 1$ and $f$
+is continuous at $(t, y)$ as a function of both variables, then
+$h^{-1} (y_1(h) - y) \to f(t, y)$ as $h \to 0$ with $h \neq 0$.
 
 ## Depends on
 
-- [Explicit RK](explicit-rk.md)
-- [Order One](order-one.md)
-- [Rk Step](rk-step.md)
+- [Explicit Runge–Kutta method](explicit-rk.md)
+- [Order-one condition for Runge–Kutta methods](order-one.md)
+- [One Runge–Kutta step](rk-step.md)
 
 ## Proof depends on
 
-- [Stage](stage.md)
-- [Stage tendsto](stage-tendsto.md)
+- [Runge–Kutta stages](stage.md)
+- [Runge–Kutta stages tend to the vector field as the step shrinks](stage-tendsto.md)
 
 ## Sources
 

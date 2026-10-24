@@ -5,23 +5,21 @@ statement: formalized
 lean: MathlibExt.Analysis.Fourier.ConvolutionTranslateClosureCircleWanted.closure_convolution_set_eq_closure_translate_span
 ---
 
-# Closure convolution set eq closure translate span
+# Convolutions and linear combinations of translates have the same closure
 
-Fix $f \in L^1(T)$, where $T = \mathbb{R}/2\pi\mathbb{Z}$. For each $\tau \in T$, define
-$f_\tau$, a translate of $f$ by $\tau$, using
-\[
-f_\tau(x) = f(x - \tau).
-\]
-Consider the sets $B_f$ and $M_f$ defined by
-\[
-B_f = \left\{ \sum_{i=1}^N a_i f_{\tau_i}(x) : N \in \mathbb{N}, a_i \in \mathbb{R}, \tau_i \in T
-\right\}, \quad M_f = \{f * g : g \in L^1(T)\}.
-\]
-Show that $\overline{M_f} = \overline{B_f}$, where the overlines denote the $L^1(T)$-closures.
+**Convolutions and linear combinations of translates have the same closure.** Let
+$T = \mathbb{R}/2\pi\mathbb{Z}$ with the measure induced by Lebesgue measure on $[0, 2\pi)$, and
+let $L^1(T)$ be the space of real-valued integrable functions on $T$ modulo equality almost
+everywhere. Fix a real-valued integrable $f$ on $T$. Let $B_f \subseteq L^1(T)$ be the set of
+classes of the finite linear combinations of translates
+$x \mapsto \sum_{i=1}^N a_i f(x - \tau_i)$ with $N \in \mathbb{N}$, $a_i \in \mathbb{R}$ and
+$\tau_i \in T$, and let $M_f \subseteq L^1(T)$ be the set of classes of the convolutions
+$(f * g)(x) = \int_T f(y)\, g(x - y)\,dy$ with $g$ real-valued and integrable on $T$. Then $M_f$
+and $B_f$ have the same closure in $L^1(T)$.
 
 ## Depends on
 
-- [T](t.md)
+- [The circle $\mathbb{R}/2\pi\mathbb{Z}$](t.md)
 
 ## Sources
 

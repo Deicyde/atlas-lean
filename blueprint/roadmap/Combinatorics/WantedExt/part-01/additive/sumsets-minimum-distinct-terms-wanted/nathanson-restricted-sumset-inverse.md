@@ -12,8 +12,8 @@ an arithmetic progression.
 
 ## Depends on
 
-- [Restricted Sumset](../../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-sumset.md)
-- [Is APOf Length](../../../../MathlibExt/part-01/ap/basic/is-apof-length.md)
+- [Restricted sumset](../../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-sumset.md)
+- [Sets that are arithmetic progressions](../../../../MathlibExt/part-01/ap/basic/is-apof-length.md)
 
 ## Sources
 

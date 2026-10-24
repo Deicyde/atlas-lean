@@ -7,13 +7,16 @@ proof: formalized
 lean: PeriodPair.fundamentalParallelogram_zero
 ---
 
-# Fundamental Parallelogram zero
+# Fundamental parallelogram at the origin
 
-At the origin, the fundamental parallelogram is the standard fundamental domain.
+**Fundamental parallelogram at the origin.** Let $\omega_1, \omega_2$ be $\mathbb{R}$-linearly
+independent complex numbers. The fundamental parallelogram with vertex $0$ equals the set of
+$z \in \mathbb{C}$ whose two coordinates in the $\mathbb{R}$-basis $\omega_1, \omega_2$ of
+$\mathbb{C}$ both lie in $[0, 1)$.
 
 ## Depends on
 
-- [Fundamental Parallelogram](fundamental-parallelogram.md)
+- [Fundamental parallelogram](fundamental-parallelogram.md)
 
 ## Sources
 

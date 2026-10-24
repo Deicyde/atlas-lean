@@ -15,7 +15,7 @@ integer with `J_k(n) + k * m > n + m` and moreover
 
 ## Depends on
 
-- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
+- [Josephus survivor function](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 
 ## Sources
 

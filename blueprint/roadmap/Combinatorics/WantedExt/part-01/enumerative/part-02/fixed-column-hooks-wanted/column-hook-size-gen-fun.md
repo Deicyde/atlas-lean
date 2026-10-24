@@ -20,7 +20,7 @@ exponent `km - (l-1)(m-1)` is nonnegative. `(q; q)_j` is `qPochFin X j` and
 
 ## Depends on
 
-- [Q Poch Fin](../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/q-poch-fin.md)
+- [Finite $Q$-Pochhammer symbol](../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/q-poch-fin.md)
 - [Partition Hook Length](partition-hook-length.md)
 - [Partition Row Len](partition-row-len.md)
 

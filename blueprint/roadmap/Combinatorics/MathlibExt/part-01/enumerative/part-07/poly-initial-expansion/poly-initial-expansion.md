@@ -20,11 +20,11 @@ Proof: Following Dil, Kurt, and Cenkci, Proposition 5, the proof is induction on
 
 ## Depends on
 
-- [Generalized Stirling Second](../../part-04/generalized-stirling-numbers/generalized-stirling-second.md)
+- [Generalized Stirling numbers of the second kind](../../part-04/generalized-stirling-numbers/generalized-stirling-second.md)
 
 ## Proof depends on
 
-- [Chen stirling Second expansion](chen-stirling-second-expansion.md)
+- [Chen's Stirling expansion](chen-stirling-second-expansion.md)
 
 ## Sources
 

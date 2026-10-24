@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.lip_restrict_injective
 ---
 
-# Corollary 1
+# Locally integer polynomial functions agreeing on an infinite subset are equal
 
-**Corollary 1.** For infinite `U ⊆ V ⊆ ℤ`, restriction `LIP(V) → LIP(U)` is injective
-(with `V = ℤ`: `LIP(ℤ)` embeds in every `LIP(U)`).
+**Locally integer polynomial functions agreeing on an infinite subset are equal.** Let
+$U \subseteq V \subseteq \mathbb{Z}$ with $U$ infinite, and let $f, g : V \to \mathbb{Z}$ lie in
+the ring $\mathrm{LIP}(V)$ of locally integer polynomial functions on $V$. If $f(x) = g(x)$ for
+every $x \in U$, then $f = g$.
 
 ## Depends on
 
-- [Lip Subring](lip-subring.md)
+- [The ring $\mathrm{LIP}(U)$ of locally integer polynomial functions](lip-subring.md)
 
 ## Sources
 

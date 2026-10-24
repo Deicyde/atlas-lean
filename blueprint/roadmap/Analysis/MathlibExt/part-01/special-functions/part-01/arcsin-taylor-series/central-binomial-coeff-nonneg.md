@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.Analysis.SpecialFunctions.ArcsinTaylorSeries.centralBinomialCoeff_nonneg
 ---
 
-# Central Binomial Coeff nonneg
+# Normalized central binomial coefficients are nonnegative
 
-The normalized central-binomial coefficients are nonnegative.
+**Normalized central binomial coefficients are nonnegative.** For every natural number $n$,
+$0 \le \binom{2n}{n}/4^n$.
 
 ## Depends on
 
-- [Central Binomial Coeff](central-binomial-coeff.md)
+- [Normalized central binomial coefficient](central-binomial-coeff.md)
 
 ## Sources
 

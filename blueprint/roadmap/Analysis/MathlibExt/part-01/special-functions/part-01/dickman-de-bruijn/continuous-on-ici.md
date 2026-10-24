@@ -7,13 +7,15 @@ proof: formalized
 lean: Real.IsDickmanDeBruijn.continuousOn_Ici
 ---
 
-# Continuous On Ici
+# Continuity of the Dickman–de Bruijn function on the nonnegative reals
 
-A Dickman–de Bruijn function is continuous on the nonnegative reals.
+**Continuity of the Dickman–de Bruijn function on the nonnegative reals.** If
+$\rho : \mathbb{R} \to \mathbb{R}$ is a Dickman–de Bruijn function, then $\rho$ is continuous on
+$[0, \infty)$.
 
 ## Depends on
 
-- [Is Dickman De Bruijn](is-dickman-de-bruijn.md)
+- [Dickman–de Bruijn functions](is-dickman-de-bruijn.md)
 
 ## Sources
 

@@ -7,19 +7,21 @@ proof: formalized
 lean: ThreeAPFree.isAPOfLengthFree_three
 ---
 
-# Is APOf Length Free three
+# Sets of naturals without three-term progressions
 
-Mathlib's `ThreeAPFree` predicate implies freedom from three-term progressions in the
-general-length API.
+**Sets of naturals without three-term progressions.** Let $s$ be a set of natural numbers
+such that $a = b$ whenever $a, b, c \in s$ satisfy $a + c = 2b$. Then $s$ is free of nontrivial
+arithmetic progressions of length $3$: no subset of $s$ is an arithmetic progression of
+length $3$.
 
 ## Depends on
 
-- [Is APOf Length Free](is-apof-length-free.md)
+- [Progression-free sets](is-apof-length-free.md)
 
 ## Proof depends on
 
-- [Is APOf Length](is-apof-length.md)
-- [Is APOf Length With](is-apof-length-with.md)
+- [Sets that are arithmetic progressions](is-apof-length.md)
+- [Set arithmetic progressions with given first term and difference](is-apof-length-with.md)
 
 ## Sources
 

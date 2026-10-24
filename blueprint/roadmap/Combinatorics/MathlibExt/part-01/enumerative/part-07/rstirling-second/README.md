@@ -4,9 +4,9 @@ navigation: module
 
 # RStirling Second
 
-- [R Stirling Second](r-stirling-second.md)
-- [R Stirling Second add add](r-stirling-second-add-add.md)
-- [R Stirling Second eq zero](r-stirling-second-eq-zero.md)
-- [R Stirling Second zero right](r-stirling-second-zero-right.md)
-- [R Stirling Second add self](r-stirling-second-add-self.md)
-- [R Stirling Second add add eq generalized Stirling Second](r-stirling-second-add-add-eq-generalized.md)
+- [r-Stirling numbers of the second kind](r-stirling-second.md)
+- [Finite-sum formula for r-Stirling numbers of the second kind](r-stirling-second-add-add.md)
+- [Vanishing of r-Stirling numbers of the second kind](r-stirling-second-eq-zero.md)
+- [r-Stirling numbers of the second kind for r = 0](r-stirling-second-zero-right.md)
+- [r-Stirling numbers of the second kind with exactly r blocks](r-stirling-second-add-self.md)
+- [r-Stirling numbers as generalized Stirling numbers](r-stirling-second-add-add-eq-generalized.md)

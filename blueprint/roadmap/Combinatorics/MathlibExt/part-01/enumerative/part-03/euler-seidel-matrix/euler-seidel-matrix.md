@@ -6,12 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.eulerSeidelMatrix
 ---
 
-# Euler Seidel Matrix
+# Euler–Seidel matrix
 
-Euler-Seidel matrix of an initial sequence (concept `jis_sem_2d9f269b63b4ba3ecb7264dc`,
-required clause `jis_a4c0543f8c36d23dbc01b6aa`): given `a : ℕ → M`, the array `a_n^k`
-with `a_n^0 = a_n` for `n ≥ 0` and `a_n^k = a_n^{k-1} + a_{n+1}^{k-1}` for `n ≥ 0`,
-`k ≥ 1`.
+**Euler–Seidel matrix.** Let $M$ be a type with an addition and let $(a_n)_{n \ge 0}$ be a
+sequence in $M$. The Euler–Seidel matrix of $a$ is the array $(a_n^k)_{n, k \ge 0}$, with entry
+$a_n^k$ in position $(n, k)$, defined by $a_n^0 = a_n$ and
+$a_n^k = a_n^{k-1} + a_{n+1}^{k-1}$ for $k \ge 1$.
 
 ## Depends on
 

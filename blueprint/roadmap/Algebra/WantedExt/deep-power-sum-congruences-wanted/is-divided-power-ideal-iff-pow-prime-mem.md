@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.isDividedPowerIdeal_iff_pow_prime_mem
 ---
 
-# Is Divided Power Ideal iff pow prime mem
+# The $p$-th power criterion for divided-power ideals
 
-In a `ℤ_(p)`-algebra, an ideal is a divided-power ideal if and only if `a ^ p ∈ p 𝔞` for every
-`a ∈ 𝔞`. The paper also assumes `A` torsion-free; the statement does not need it.
+**The $p$-th power criterion for divided-power ideals.** Let $p$ be a prime and let $A$ be a
+commutative ring in which every natural number not divisible by $p$ is a unit (a
+$\mathbb{Z}_{(p)}$-algebra). An ideal $\mathfrak{a}$ of $A$ is a divided-power ideal if and only if
+for every $a \in \mathfrak{a}$ there is $c \in \mathfrak{a}$ with $a^p = p\,c$, that is,
+$a^p \in p\mathfrak{a}$.
+
+The paper also assumes $A$ torsion-free; the statement does not need it.
 
 ## Depends on
 
-- [Is Divided Power Ideal](is-divided-power-ideal.md)
+- [Divided-power ideal](is-divided-power-ideal.md)
 
 ## Sources
 

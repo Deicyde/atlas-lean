@@ -7,14 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.generalizedFactorial_pos
 ---
 
-# Generalized Factorial pos
+# Generalized factorials of positive sequences are positive
 
-A generalized factorial is positive when `f` has the source's positive range.
+**Generalized factorials of positive sequences are positive.** Let $f \colon \mathbb{N} \to
+\mathbb{N}$ be a positive sequence, that is $f(i) > 0$ for every $i > 0$. Then for every natural
+number $n$, the generalized factorial $f(1) f(2) \cdots f(n)$ is positive.
 
 ## Depends on
 
-- [Is Positive Sequence](is-positive-sequence.md)
-- [Generalized Factorial](generalized-factorial.md)
+- [Positive sequence](is-positive-sequence.md)
+- [Generalized factorial](generalized-factorial.md)
 
 ## Sources
 

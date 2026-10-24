@@ -14,7 +14,7 @@ coefficientwise.  Denominator clearing is the only algebraic deviation.
 ## Depends on
 
 - [Positive Unilateral Series](positive-unilateral-series.md)
-- [Q Euler Product](../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [The Euler products of partition theory](../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

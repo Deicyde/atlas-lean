@@ -7,14 +7,15 @@ proof: formalized
 lean: AdditiveCombinatorics.orderedRepresentationCount_pos_iff
 ---
 
-# Ordered Representation Count pos iff
+# Positivity of the ordered representation count
 
-Positivity of the ordered representation count holds iff there is an
-ordered representation `a + b = n` with `a ∈ A` and `b ∈ A`.
+**Positivity of the ordered representation count.** For a set $A$ of natural numbers and a
+natural number $n$, the number of ordered pairs $(a, b) \in A \times A$ with $a + b = n$ is
+positive if and only if $n = a + b$ for some $a \in A$ and $b \in A$.
 
 ## Depends on
 
-- [Ordered Representation Count](ordered-representation-count.md)
+- [Ordered representation count](ordered-representation-count.md)
 
 ## Sources
 

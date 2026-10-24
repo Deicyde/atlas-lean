@@ -7,13 +7,16 @@ proof: formalized
 lean: MathlibExt.Analysis.SpecialFunctions.ArcsinTaylorSeries.arcsinIntegralSeries_term_eq
 ---
 
-# Arcsin Integral Series term eq
+# Terms of the integrated arcsine series
 
-Rewrites a term of `arcsinIntegralSeries` without the normalized coefficient.
+**Terms of the integrated arcsine series.** Let $c_n = \binom{2n}{n}/4^n$ be the normalized
+central binomial coefficient. For every natural number $n$ and every real $t$,
+
+$$\frac{c_n\, t^{2n+1}}{(2n+1)^2} = \frac{\binom{2n}{n}\, t^{2n+1}}{2^{2n}\,(2n+1)^2}.$$
 
 ## Depends on
 
-- [Central Binomial Coeff](central-binomial-coeff.md)
+- [Normalized central binomial coefficient](central-binomial-coeff.md)
 
 ## Sources
 

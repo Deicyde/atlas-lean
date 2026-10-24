@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Analysis.FiniteTimeSingularityWanted.FiniteTimeSingularity.e
 ---
 
-# E
+# Standard basis vectors of ℝ³
 
-`e i` is the `i`th standard basis vector in `ℝ³`.
+**Standard basis vectors of ℝ³.** For $i \in \{0, 1, 2\}$, $e_i \in \mathbb{R}^3$ is the
+$i$-th standard basis vector: its $i$-th coordinate is $1$ and its other coordinates are $0$.
 
 ## Depends on
 

@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.medianEulerCoeff_zero
 ---
 
-# Median Euler Coeff zero
+# The zeroth Euler coefficient
 
-The zeroth Euler coefficient is `1`.
+**The zeroth Euler coefficient.** The Euler coefficient $E_0$ equals $1$.
 
 ## Depends on
 
-- [Median Euler Coeff](median-euler-coeff.md)
+- [Euler coefficients](median-euler-coeff.md)
 
 ## Sources
 

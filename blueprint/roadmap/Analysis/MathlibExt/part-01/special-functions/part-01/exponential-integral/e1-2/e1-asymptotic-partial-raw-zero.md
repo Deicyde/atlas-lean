@@ -7,18 +7,22 @@ proof: formalized
 lean: Complex.e1AsymptoticPartialRaw_zero
 ---
 
-# E1 Asymptotic Partial Raw zero
+# Totalized partial sums of the $E_1$ expansion vanish at zero
 
-Each raw partial sum vanishes at `0`.
+**Totalized partial sums of the $E_1$ expansion vanish at zero.** For every
+$n \in \mathbb{N}$, the totalized sum of the first $n$ terms of the asymptotic expansion of $E_1$
+equals $0$ at $z = 0$.
+
+This value comes from the convention that division by zero gives $0$, not from analysis.
 
 ## Depends on
 
-- [E1 Asymptotic Partial Raw](e1-asymptotic-partial-raw.md)
+- [Totalized partial sum of the $E_1$ asymptotic expansion](e1-asymptotic-partial-raw.md)
 
 ## Proof depends on
 
-- [E1 Asymptotic Term Raw](e1-asymptotic-term-raw.md)
-- [E1 Asymptotic Term Raw zero](e1-asymptotic-term-raw-zero.md)
+- [Totalized asymptotic term of $E_1$](e1-asymptotic-term-raw.md)
+- [Totalized $E_1$ asymptotic terms vanish at zero](e1-asymptotic-term-raw-zero.md)
 
 ## Sources
 

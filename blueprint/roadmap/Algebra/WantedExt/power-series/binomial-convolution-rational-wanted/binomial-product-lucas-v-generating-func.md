@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.binomialProduct_lucasV_generatingFunction
 ---
 
-# Theorem 11
+# Binomial square of the Lucas generating function
 
-**Theorem 11.** If `g(x) = ∑ Gₙ xⁿ = (2 - ax) / (1 - ax - bx²)`, then
-`g ⊙ g = 2 / (1 - ax) + g(2x)`, so `∑_k binom(n, k) G_k G_{n-k} = 2aⁿ + 2ⁿ Gₙ`.
+**Binomial square of the Lucas generating function.** Let $K$ be a field of characteristic
+$0$, let $a, b \in K$, and let $g(x) = \sum_{n \ge 0} G_n x^n$ be a power series over $K$ with
+$g(x)(1 - ax - bx^2) = 2 - ax$. Then
 
-`g` is given by `g (1 - ax - bx²) = 2 - ax`; `g(2x)` is `PowerSeries.rescale 2 g`.
+$$g \odot g = \frac{2}{1 - ax} + g(2x),$$
+
+where $\odot$ is the binomial product, and
+$\sum_{k=0}^{n} \binom{n}{k} G_k G_{n-k} = 2a^n + 2^n G_n$ for every $n \ge 0$.
 
 ## Depends on
 

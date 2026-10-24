@@ -6,12 +6,12 @@ statement: formalized
 lean: AdditiveCombinatorics.sumNE
 ---
 
-# Sum NE
+# Sum of a nonempty list
 
-Sum of the entries of a nonempty list, by folding `+` over the tail starting
-from the head. The `l ≠ []` hypothesis rules out the empty list; it is ignored
-by the computation, so it cannot affect the value
-(see `sumNE_proof_irrel`).
+**Sum of a nonempty list.** For a nonempty list $(a_1, \dots, a_k)$ of elements of a type with
+an addition, its sum is obtained by adding the entries from left to right starting from the head:
+it is $a_1$ when $k = 1$, and $(\cdots((a_1 + a_2) + a_3) + \cdots) + a_k$ in general. No zero
+element is needed, and the proof that the list is nonempty does not affect the value.
 
 ## Depends on
 

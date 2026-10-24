@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.StripBoundedHolomorphicGrowthWanted.D
 ---
 
-# D
+# The open unit disc $D$
 
-The open unit disc.
+**The open unit disc $D$.** The set $D=\{z\in\mathbb{C}:|z|<1\}$ is the open disc of radius $1$
+about $0$.
 
 ## Depends on
 

@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.eulerianPolynomial_hankelDeterminant
 ---
 
-# Eulerian Polynomial Hankel
+# Hankel determinants of the Eulerian polynomials
 
-The Hankel determinant of order `n + 1` for the Eulerian polynomials is
-`X ^ choose (n + 1) 2` times the product of the squared factorials from `1` to `n`.
+**Hankel determinants of the Eulerian polynomials.** For $m \ge 0$ let $P_m \in \mathbb{Z}[X]$
+be the Eulerian polynomial $P_m = \sum_{k=0}^{m} W_{m,k} X^k$, where
+$W_{m,k} = \sum_{i=0}^{m-k} (-1)^i \binom{m+1}{i} (m-k-i)^m$ with $0^0 = 1$ (so $P_0 = 1$ and
+$P_2 = 1 + X$). Then for every $n \ge 0$ the Hankel determinant
+$\det(P_{i+j})_{0 \le i, j \le n}$ equals $X^{\binom{n+1}{2}} \prod_{k=1}^{n} (k!)^2$.
 
-Proof: Barry's Eulerian moment recurrence gives the zeroth column of a weighted-Motzkin table
-with down-step weights `λ_k = k² X`. The weighted-Motzkin determinant theorem and a product
-simplification then give the stated formula.
+The proof writes $P_m$ as the moments of a weighted Motzkin table with down-step weights
+$\lambda_k = k^2 X$ (Barry's Eulerian moment recurrence) and applies the weighted-Motzkin
+determinant theorem.
 
 ## Depends on
 
@@ -22,7 +25,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Hankel Transform](../../../../../NumberTheory/MathlibExt/part-06/hankel-transform/hankel-transform.md)
-- [Heilermann Weighted Motzkin Determinant](../part-04/hankel-transform-eq-prod-of-weighted-mot.md)
+- [Heilermann's formula for weighted Motzkin arrays](../part-04/hankel-transform-eq-prod-of-weighted-mot.md)
 
 ## Sources
 

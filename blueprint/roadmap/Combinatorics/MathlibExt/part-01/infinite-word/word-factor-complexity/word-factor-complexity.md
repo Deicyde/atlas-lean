@@ -6,13 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.wordFactorComplexity
 ---
 
-# Word Factor Complexity
+# Factor complexity of an infinite word
 
-Factor complexity of an infinite word `w` over a finite alphabet:
-the complexity function `p_w(n)`, the number of distinct contiguous factors
-of `w` of length `n`, where a length-`n` factor starting at `i` is
-`fun j : Fin n => w (i + j)`. The image set collapses repeated occurrences,
-so `Set.ncard` of the range counts distinct factors rather than occurrences.
+**Factor complexity of an infinite word.** Let $w = w_0 w_1 w_2 \cdots$ be an infinite word
+over a finite alphabet $A$. For $n \ge 0$ and a position $i \ge 0$, the factor of $w$ of length
+$n$ at position $i$ is the word $w_i w_{i+1} \cdots w_{i+n-1}$. The factor complexity $p_w(n)$ is
+the number of distinct factors of $w$ of length $n$, each word being counted once however often it
+occurs in $w$.
 
 ## Depends on
 
@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Factor Set](../factor/factor-set.md)
+- [Set of factors of a given length](../factor/factor-set.md)
 
 ## Sources
 

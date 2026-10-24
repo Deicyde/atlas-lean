@@ -7,10 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.minimal_permutations_card
 ---
 
-# Minimal Permutations Enumeration
+# Minimal permutations of length two more than their number of descents
 
-The number of minimal permutations with `d` descents and size `d + 2`.
-Minimality means deleting any one entry leaves fewer than `d` descents.
+**Minimal permutations of length two more than their number of descents.** For every natural
+number $d$, the number of permutations $\sigma$ of $\{0, 1, \dots, d + 1\}$ such that $\sigma$ has
+exactly $d$ descents (positions $0 \le i \le d$ with $\sigma(i) > \sigma(i + 1)$) and, for every
+position $j$, deleting the entry at position $j$ leaves a sequence of $d + 1$ entries with fewer
+than $d$ descents, equals $2^{d+2} - (d + 1)(d + 2) - 2$.
 
 ## Depends on
 

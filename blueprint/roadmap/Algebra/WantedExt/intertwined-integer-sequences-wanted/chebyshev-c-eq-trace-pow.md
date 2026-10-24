@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.chebyshevC_eq_trace_pow
 ---
 
-# Chebyshev C eq trace pow
+# Trace formula for the monic Chebyshev polynomials
 
-Trace formula: `T̄_k(X) = tr(M^k)` for the companion matrix
-`M = !![X, -1; 1, 0]` and all `k ≥ 0`.
+**Trace formula for the monic Chebyshev polynomials.** Let $\bar T_k \in \mathbb{Z}[X]$ be
+the monic Chebyshev polynomials, given by $\bar T_0 = 2$, $\bar T_1 = X$ and
+$\bar T_{k+2} = X \bar T_{k+1} - \bar T_k$, and let $M$ be the $2 \times 2$ matrix over
+$\mathbb{Z}[X]$ with rows $(X, -1)$ and $(1, 0)$. Then $\bar T_k = \operatorname{tr}(M^k)$ for
+every natural number $k$.
 
 ## Depends on
 

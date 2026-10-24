@@ -13,7 +13,7 @@ of the first `w(1)` spots.
 
 ## Depends on
 
-- [Is Stirling Permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
+- [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
 - [Stirling Lucky Set](stirling-lucky-set.md)
 - [Stirling Park Spot](stirling-park-spot.md)
 

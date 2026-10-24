@@ -7,18 +7,19 @@ proof: formalized
 lean: PerronKernel.E1_continuous
 ---
 
-# E1 continuous
+# Continuity of the averaging operator
 
-`E1` is continuous everywhere.
+**Continuity of the averaging operator.** The function $E_1 : \mathbb{C} \to \mathbb{C}$ given
+by $E_1(u) = \int_0^1 e^{tu}\,dt$ is continuous.
 
 ## Depends on
 
-- [E1](e1.md)
+- [The averaging operator $E_1$](e1.md)
 
 ## Proof depends on
 
-- [E1 continuous At zero](e1-continuous-at-zero.md)
-- [E1 eq div](e1-eq-div.md)
+- [Continuity of the averaging operator at zero](e1-continuous-at-zero.md)
+- [The averaging operator as a difference quotient](e1-eq-div.md)
 
 ## Sources
 

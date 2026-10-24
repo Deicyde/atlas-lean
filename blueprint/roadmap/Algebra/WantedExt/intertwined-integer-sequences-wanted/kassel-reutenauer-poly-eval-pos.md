@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.kasselReutenauerPoly_eval_pos
 ---
 
-# Kassel Reutenauer Poly eval pos
+# Positivity of the Kassel–Reutenauer polynomials at integers $N \ge 2$
 
-Positivity: for every `n ≥ 1` and every integer `N ≥ 2`, `P̄_n(N) > 0`.
+**Positivity of the Kassel–Reutenauer polynomials at integers $N \ge 2$.** For every $n \ge 1$
+and every integer $N \ge 2$, the Kassel–Reutenauer polynomial $\bar P_n$ satisfies
+$\bar P_n(N) > 0$.
 
 ## Depends on
 
-- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
+- [Kassel–Reutenauer polynomial](kassel-reutenauer-poly.md)
 
 ## Sources
 

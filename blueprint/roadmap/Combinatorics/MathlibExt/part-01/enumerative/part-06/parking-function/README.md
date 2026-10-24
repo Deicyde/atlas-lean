@@ -5,6 +5,6 @@ navigation: module
 
 # Parking Function
 
-- [Is Partial Parking Function](is-partial-parking-function.md)
-- [Is Parking Function](is-parking-function.md)
-- [Is Parking Function iff card filter le](is-parking-function-iff-card-filter-le.md)
+- [Partial parking function](is-partial-parking-function.md)
+- [Parking function](is-parking-function.md)
+- [Lower-tail characterization of parking functions](is-parking-function-iff-card-filter-le.md)

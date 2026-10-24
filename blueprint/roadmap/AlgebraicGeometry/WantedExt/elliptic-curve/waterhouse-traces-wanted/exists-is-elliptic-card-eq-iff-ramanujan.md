@@ -5,19 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.exists_isElliptic_card_eq_iff_ramanujan_two_vertices
 ---
 
-# Exists is Elliptic card eq iff ramanujan two vertices
+# Elliptic curves with point count divisible by 4 and Ramanujan graphs on two vertices
 
-Theorem 8 (Theorem A) of Vallières, in point-count form. Let `F` be a finite field with
-`q = p ^ a` elements, `p` an odd prime and `a ∈ {1, 2}`. A natural number `N` is the number of
-`F`-points of an elliptic curve over `F` with `4 ∣ N` if and only if `N = 2m` for the two-vertex
-graph `X(l, m)` (`m` edges between the vertices, `l` loops at each vertex, `2l + m = q + 1`) that is
-connected (`0 < m`) and Ramanujan. The non-trivial eigenvalue of `X(l, m)` is `2l - m`, so the
-Ramanujan condition `|2l - m| ≤ 2 √q` is written `(2l - m)² ≤ 4q`.
+**Elliptic curves with point count divisible by 4 and Ramanujan graphs on two vertices.** Let
+$p$ be an odd prime, let $a \in \{1, 2\}$, and let $F$ be a finite field with $q = p^a$ elements. A
+natural number $N$ is the number $\#E(F)$ of $F$-points (counting the point at infinity) of some
+elliptic curve $E$ over $F$ with $4 \mid N$ if and only if there are natural numbers $l$ and $m$
+with $N = 2m$, $2l + m = q + 1$, $m > 0$ and $(2l - m)^2 \le 4q$.
 
-The paper's map `[C] ↦ X(l, m)` with `m = #C(F)/2` and `l = (q + 1)/2 - #C(F)/4` is a bijection from
-`F`-isogeny classes; this declaration states that it is well defined (lands in connected Ramanujan
-graphs with `l, m ∈ ℕ`) and surjective, at the level of point counts. Injectivity on isogeny classes
-is Tate's theorem (Corollary 2), omitted because Mathlib has no isogenies.
+In graph terms, $X(l, m)$ is the two-vertex graph with $l$ loops at each vertex and $m$ edges
+between the two vertices. For such $l$ and $m$ it is $(q + 1)$-regular, it is connected exactly
+when $m > 0$, and its non-trivial eigenvalue is $2l - m$, so the last condition says that $X(l, m)$
+is Ramanujan. The paper states a bijection from $F$-isogeny classes of such curves to these
+graphs; the statement above is its point-count form, and injectivity on isogeny classes is Tate's
+theorem.
 
 ## Depends on
 

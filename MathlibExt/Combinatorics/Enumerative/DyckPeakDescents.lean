@@ -37,8 +37,10 @@ def dyckPeakDescents (l : List DyckStep) : List ℕ :=
   ((List.range l.length).filter fun i => decide (l[i]? = some U ∧ l[i + 1]? = some D)).map
     fun i => ((l.drop (i + 1)).takeWhile (· == D)).length
 
-/-- The source's sample path `U U U (U D^3) (U D^2) U (U D) U (U D^3)` has four
-peaks with descents `3, 2, 1, 3`.
+/-- **Peak descents of a sample Dyck path.** The Dyck path $UUUUDDDUDDUUDUUDDD$, which factors
+as $U\,U\,U\,(UD^3)(UD^2)\,U\,(UD)\,U\,(UD^3)$, has four peaks $UD$, and the lengths of the
+maximal runs of $D$ steps starting at the $D$ of each peak are, from left to right,
+$3, 2, 1, 3$.
 
 Source: Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck
 Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article

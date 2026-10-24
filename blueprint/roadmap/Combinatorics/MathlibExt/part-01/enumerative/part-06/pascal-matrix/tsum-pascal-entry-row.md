@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.tsum_pascalEntry_row
 ---
 
-# Tsum pascal Entry row
+# Summing the Pascal matrix row by row
 
-Summing each finite row first gives the geometric series in `2 * x`.
+**Summing the Pascal matrix row by row.** For every real number $x$ with $|x| < 1/2$,
+writing $\binom{i}{j}$ for the entry of the infinite Pascal matrix in row $i$ and column $j$, we
+have $\sum_{i \ge 0} x^i \sum_{j=0}^{i} \binom{i}{j} = \frac{1}{1 - 2x}$.
 
 ## Depends on
 
-- [Pascal Entry](pascal-entry.md)
+- [Entries of the infinite Pascal matrix](pascal-entry.md)
 
 ## Sources
 

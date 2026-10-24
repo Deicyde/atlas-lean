@@ -7,16 +7,19 @@ proof: formalized
 lean: PeriodPair.poleMultiplicity_eq_neg_divisor
 ---
 
-# Pole Multiplicity eq neg divisor
+# Pole multiplicity via the divisor
 
-On a set where `f` is meromorphic, the multiplicity is the negated divisor value.
-This is the explicit-domain counterpart of `poleMultiplicity`: unlike
-`MeromorphicOn.divisor`, the definition of `poleMultiplicity` itself takes no domain
-argument, so no global meromorphicity is hidden in it.
+**Pole multiplicity via the divisor.** Let $U \subseteq \mathbb{C}$, let
+$f \colon \mathbb{C} \to \mathbb{C}$ be meromorphic on $U$ and let $z \in U$. Let $D(z)$ be the
+value at $z$ of the divisor of $f$ on $U$, that is, the order of $f$ at $z$, taken to be $0$ when
+that order is infinite. Then the pole multiplicity of $f$ at $z$ equals $\max(0, -D(z))$.
+
+Unlike the divisor, the pole multiplicity is defined without reference to a domain, so no global
+meromorphicity is hidden in its definition.
 
 ## Depends on
 
-- [Pole Multiplicity](pole-multiplicity.md)
+- [Pole multiplicity](pole-multiplicity.md)
 
 ## Sources
 

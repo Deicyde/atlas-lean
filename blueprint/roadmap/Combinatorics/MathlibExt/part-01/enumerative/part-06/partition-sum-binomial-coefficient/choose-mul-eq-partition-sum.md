@@ -22,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Choose mul eq partition sum unconditional](choose-mul-eq-partition-sum-unconditiona.md)
+- [Partition-sum expansion of $\binom{nm}{l}$, unconditional form](choose-mul-eq-partition-sum-unconditiona.md)
 
 ## Sources
 

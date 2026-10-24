@@ -4,5 +4,5 @@ navigation: module
 
 # Scottish Book79
 
-- [Scottish Book Problem79 Claim](scottish-book-problem79-claim.md)
-- [Mazur Orlicz79 refuted](mazur-orlicz79-refuted.md)
+- [Mazur–Orlicz claim on polynomial automorphisms of the plane](scottish-book-problem79-claim.md)
+- [Mazur–Orlicz Problem 79 has a negative answer](mazur-orlicz79-refuted.md)

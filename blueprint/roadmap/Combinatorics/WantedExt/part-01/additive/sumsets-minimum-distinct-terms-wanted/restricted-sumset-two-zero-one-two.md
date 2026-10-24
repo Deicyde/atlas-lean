@@ -13,7 +13,7 @@ lean: MetaMathlibExt.restrictedSumset_two_zero_one_two
 
 ## Depends on
 
-- [Restricted Sumset](../../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-sumset.md)
+- [Restricted sumset](../../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-sumset.md)
 
 ## Sources
 

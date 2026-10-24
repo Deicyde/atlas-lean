@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.circulantDetFour_single_one
 ---
 
-# Circulant Det Four single one
+# The 4 × 4 circulant determinant of (1, 0, 0, 0)
 
-`D₄(1, 0, 0, 0) = 1`.
+**The 4 × 4 circulant determinant of (1, 0, 0, 0).** Over every commutative ring $R$, the
+$4 \times 4$ circulant determinant satisfies $D_4(1, 0, 0, 0) = 1$.
 
 ## Depends on
 
-- [Circulant Det Four](circulant-det-four.md)
+- [The group determinant of $C_4$](circulant-det-four.md)
 
 ## Sources
 

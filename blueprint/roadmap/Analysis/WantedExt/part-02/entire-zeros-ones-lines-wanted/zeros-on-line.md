@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Analysis.EntireZerosOnesLinesWanted.ZerosOnLine
 ---
 
-# Zeros On Line
+# Functions whose zeros lie in a given set
 
-All zeros of `f` lie on `l`, [AMR-022-2024] Problem 2.24.
+**Functions whose zeros lie in a given set.** A function $f : \mathbb{C} \to \mathbb{C}$ has
+all its zeros in a set $l \subseteq \mathbb{C}$ if every $z \in \mathbb{C}$ with $f(z) = 0$ lies
+in $l$.
 
 ## Depends on
 
@@ -17,3 +19,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.EntireZerosOnesLinesWanted](../../../../../sources/v2/WantedExt.md)
+- Research Problems in Function Theory, Problem 2.24 (record AMR-022-2024).

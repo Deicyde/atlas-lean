@@ -27,7 +27,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Sum stirling Second succ egf](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-08/stirling-second-explicit/has-sum-stirling-second-succ-egf.md)
+- [Exponential generating function of a shifted Stirling column](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-08/stirling-second-explicit/has-sum-stirling-second-succ-egf.md)
 
 ## Sources
 

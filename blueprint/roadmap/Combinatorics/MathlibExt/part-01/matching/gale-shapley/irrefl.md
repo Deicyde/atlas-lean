@@ -6,16 +6,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Matching.GaleShapley.StrictTotalOrder.irrefl
 ---
 
-# Irrefl
+# Irreflexivity of a strict total order
 
-Compatibility alias for the former `GaleShapley.StrictTotalOrder.irrefl` projection.
-
-For new code, use `MathlibExt.Order.StrictTotalOrder.irrefl` directly.
+**Irreflexivity of a strict total order.** Let $T$ be a strict total order on a set $\alpha$,
+with relation $\lt _T$. Then $a \lt _T a$ fails for every $a \in \alpha$.
 
 ## Depends on
 
-- [Strict Total Order](strict-total-order.md)
-- [Lt](lt.md)
+- [Strict preference order](strict-total-order.md)
+- [Relation of a strict total order](lt.md)
 
 ## Proof depends on
 

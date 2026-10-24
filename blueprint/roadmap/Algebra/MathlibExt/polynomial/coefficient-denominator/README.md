@@ -4,6 +4,6 @@ navigation: module
 
 # Coefficient Denominator
 
-- [Polynomial Denominator](polynomial-denominator.md)
-- [Coeff den dvd polynomial Denominator](coeff-den-dvd-polynomial-denominator.md)
-- [Polynomial Denominator eq one iff](polynomial-denominator-eq-one-iff.md)
+- [Denominator of a rational polynomial](polynomial-denominator.md)
+- [Coefficient denominators divide the denominator of a polynomial](coeff-den-dvd-polynomial-denominator.md)
+- [Denominator one characterizes integer polynomials](polynomial-denominator-eq-one-iff.md)

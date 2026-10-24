@@ -20,7 +20,7 @@ on the minimum distance, from MathlibExt's Singleton bound for arbitrary codes. 
 ## Proof depends on
 
 - [Card filter mem](card-filter-mem.md)
-- [Singleton Bound](../../../Combinatorics/MathlibExt/part-01/coding/singleton-bound.md)
+- [Singleton bound](../../../Combinatorics/MathlibExt/part-01/coding/singleton-bound.md)
 
 ## Sources
 

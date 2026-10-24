@@ -5,5 +5,5 @@ navigation: module
 
 # Compositions Tribonacci
 
-- [Compositions parts one two three eq tribonacci](compositions-parts-one-two-three-eq-trib.md)
-- [Compositions parts one two three eq canonical tribonacci](compositions-parts-one-two-three-eq-cano.md)
+- [Compositions with parts $1$, $2$, $3$ are counted by Tribonacci numbers](compositions-parts-one-two-three-eq-trib.md)
+- [Compositions with parts $1$, $2$, $3$ and the Tribonacci sequence](compositions-parts-one-two-three-eq-cano.md)

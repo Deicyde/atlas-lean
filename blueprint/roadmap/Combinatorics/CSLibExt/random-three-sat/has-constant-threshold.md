@@ -5,13 +5,16 @@ statement: formalized
 lean: CSLibExt.Combinatorics.RandomThreeSat.HasConstantThreshold
 ---
 
-# Has Constant Threshold
+# Random 3-SAT threshold conjecture
 
-The random 3-SAT constant-threshold conjecture in the source's form:
-a single constant density separates satisfiability probability tending
-to `1` below it from probability tending to `0` above it. Convergence to
-one constant is open (Friedgut's sharp-threshold theorem, by contrast,
-is proved); it is stated here as a proposition, not asserted.
+**Random 3-SAT threshold conjecture.** There is a real number $c$ that is both a lower and
+an upper threshold cutoff: for every real $r < c$, the probability that a uniformly random
+formula with $\lfloor r n \rfloor$ clauses on $n$ variables is satisfiable tends to $1$ as
+$n \to \infty$, and for every real $r > c$ this probability tends to $0$ (when $r n < 0$ the
+formula has no clauses).
+
+This is stated as a proposition, not asserted: the existence of such a constant is open,
+whereas Friedgut's sharp-threshold theorem is proved.
 
 ## Depends on
 
@@ -19,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Lower Cutoff](is-lower-cutoff.md)
-- [Is Upper Cutoff](is-upper-cutoff.md)
+- [Lower threshold cutoff](is-lower-cutoff.md)
+- [Upper threshold cutoff](is-upper-cutoff.md)
 
 ## Sources
 

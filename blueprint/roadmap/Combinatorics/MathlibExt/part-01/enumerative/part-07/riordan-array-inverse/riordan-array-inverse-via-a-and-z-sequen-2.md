@@ -7,15 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.riordan_array_inverse_via_a_and_z_sequences
 ---
 
-# Riordan array inverse via a and z sequences
+# Inverse of a Riordan array from its A- and Z-sequences
 
-Riordan array inverse from the A-sequence and Z-sequence generating functions.
+**Inverse of a Riordan array from its A- and Z-sequences.** Let $K$ be a field, let
+$g, f, A, Z, \bar f$ be formal power series over $K$, and let $d_{00} \in K$ with $d_{00} \ne 0$.
+Suppose that $g(0) = d_{00}$, $f(0) = 0$, $A(0) \ne 0$ and $\bar f(0) = 0$; that
+$f(\bar f(x)) = x$ and $\bar f(f(x)) = x$, so that $\bar f$ is the compositional inverse of $f$;
+that $f(x) = x\, A(f(x))$, so that $A$ is the generating function of the A-sequence; and that
+$g(x) = d_{00} \bigl(1 - x\, Z(f(x))\bigr)^{-1}$, so that $Z$ is the generating function of the
+Z-sequence. Then
 
-`fInv` is the compositional inverse of `f`; `A` and `Z` are the generating functions
-of the A-sequence and Z-sequence, with `f = X * subst f A` and
-`g = d00 / (1 - X * subst f Z)`.
-It follows from `riordan_array_inverse_via_a_and_z_sequences_general`; the hypothesis
-`hcomp_right` is unused and keeps the source's shape.
+$$\left(\frac{1}{g(\bar f(x))},\ \bar f(x)\right) =
+\left(\frac{A(x) - x\, Z(x)}{d_{00}\, A(x)},\ \frac{x}{A(x)}\right).$$
+
+The pair on the left is the inverse of the Riordan array $(g, f)$. The hypothesis
+$\bar f(f(x)) = x$ is not needed for the conclusion; it is kept to match the source.
 
 ## Depends on
 
@@ -23,7 +29,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Riordan array inverse via a and z sequences general](riordan-array-inverse-via-a-and-z-sequen.md)
+- [Inverse of a Riordan array from its A- and Z-sequences (one-sided form)](riordan-array-inverse-via-a-and-z-sequen.md)
 
 ## Sources
 

@@ -4,5 +4,5 @@ navigation: module
 
 # Wirsing Constant
 
-- [Mayer Roepstorff Lower Bound wanted](mayer-roepstorff-lower-bound-wanted.md)
-- [Mayer Roepstorff Upper Bound wanted](mayer-roepstorff-upper-bound-wanted.md)
+- [Mayer–Roepstorff lower bound for the Wirsing constant](mayer-roepstorff-lower-bound-wanted.md)
+- [Mayer–Roepstorff upper bound for the Wirsing constant](mayer-roepstorff-upper-bound-wanted.md)

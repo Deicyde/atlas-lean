@@ -7,29 +7,31 @@ proof: formalized
 lean: MetaMathlibExt.fault_free_3xn_tiling_recursion
 ---
 
-# Fault free 3xn tiling recursion
+# Recurrence for vertical-fault-free tilings of the $3 \times n$ rectangle
 
-For `n ≥ 1`, the independently defined number of vertical-fault-free
-square-and-domino tilings equals the sequence with initial values
-`3, 13, 26, 66, 154, 380` and recurrence
-`V_n = V_{n-1} + 4 V_{n-2} - V_{n-3} - V_{n-4}`.
+**Recurrence for vertical-fault-free tilings of the $3 \times n$ rectangle.** For $n \ge 1$, let
+$V_n$ be the number of vertical-fault-free tilings of the $3 \times n$ rectangle by unit squares
+and dominoes. Then $V_1 = 3$, $V_2 = 13$, $V_3 = 26$, $V_4 = 66$, $V_5 = 154$, $V_6 = 380$, and
+$V_n = V_{n-1} + 4 V_{n-2} - V_{n-3} - V_{n-4}$ for every $n \ge 7$.
+
+Here $V_n$ counts the tilings directly; the recurrence is a theorem, not its definition.
 
 Proof: The count is encoded by a transfer matrix over column profiles. An annihilating
 polynomial for that matrix gives the recurrence after the six initial values.
 
 ## Depends on
 
-- [Tiling Count](tiling-count.md)
-- [Vertical Fault Free Tiling Count](vertical-fault-free-tiling-count.md)
+- [Recurrence sequence for vertical-fault-free $3 \times n$ tilings](tiling-count.md)
+- [Number of vertical-fault-free tilings of the $3 \times n$ rectangle](vertical-fault-free-tiling-count.md)
 
 ## Proof depends on
 
-- [Is Square Domino Tiling](is-square-domino-tiling.md)
-- [Is Square Or Domino](is-square-or-domino.md)
-- [Is Vertical Fault Free](is-vertical-fault-free.md)
-- [Tiling Cell](tiling-cell.md)
-- [Adjacent](adjacent.md)
-- [Is Square Or Domino iff](is-square-or-domino-iff.md)
+- [Square-and-domino tilings](is-square-domino-tiling.md)
+- [Square and domino tiles](is-square-or-domino.md)
+- [Vertical-fault-free families](is-vertical-fault-free.md)
+- [Cells of the $3 \times n$ rectangle](tiling-cell.md)
+- [Adjacent cells](adjacent.md)
+- [Characterization of square and domino tiles](is-square-or-domino-iff.md)
 
 ## Sources
 

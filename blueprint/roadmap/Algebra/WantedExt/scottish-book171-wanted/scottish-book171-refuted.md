@@ -5,22 +5,25 @@ statement: formalized
 lean: MathlibExt.Algebra.ScottishBook171Wanted.scottishBook171_refuted
 ---
 
-# Scottish Book171 refuted
+# Scottish Book Problem 171 is false
 
-Scottish Book Problem 171, as printed, is false: there are associative,
-permutation-invariant operations on self-maps other than composition —
-reverse composition `U(f, g) = g ∘ f` and the two projections
-`U(f, g) = f`, `U(f, g) = g` satisfy (1) and (2) but are not composition
-in general. The typescript's parenthetical `(U(f,g) ≠ 1)` is of unclear
-meaning and is not read as excluding these counterexamples. Status:
-solved-negative. Source: J. Schreier – S. Ulam, Problem 171 of the
-Scottish Book, typescript p. 76.
+**Scottish Book Problem 171 is false.** Not every associative, permutation-invariant operation
+on self-maps is composition: there are a set $A$, an operation $U$ that assigns to any two maps
+$f, g \colon A \to A$ a map $U(f, g) \colon A \to A$ and is both associative (condition (1) of
+Problem 171) and invariant under permutations of $A$ (condition (2)), and maps
+$f, g \colon A \to A$ with $U(f, g) \ne f \circ g$, where $(f \circ g)(x) = f(g(x))$.
+
+Reverse composition $U(f, g) = g \circ f$ and the two projections $U(f, g) = f$ and
+$U(f, g) = g$ satisfy (1) and (2) but are not composition in general. The typescript's
+parenthetical $(U(f,g) \ne 1)$ is of unclear meaning and is not read as excluding these
+counterexamples.
 
 ## Depends on
 
-- [Is Associative](is-associative.md)
-- [Is Permutation Invariant](is-permutation-invariant.md)
+- [Associative operations on self-maps](is-associative.md)
+- [Permutation-invariant operations on self-maps](is-permutation-invariant.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Algebra.ScottishBook171Wanted](../../../../sources/v2/WantedExt.md)
+- J. Schreier – S. Ulam, Problem 171 of the Scottish Book, typescript p. 76.

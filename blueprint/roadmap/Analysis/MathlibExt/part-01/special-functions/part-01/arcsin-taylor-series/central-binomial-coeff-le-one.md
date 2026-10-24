@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.Analysis.SpecialFunctions.ArcsinTaylorSeries.centralBinomialCoeff_le_one
 ---
 
-# Central Binomial Coeff le one
+# Normalized central binomial coefficients are at most one
 
-The normalized central-binomial coefficients are at most one.
+**Normalized central binomial coefficients are at most one.** For every natural number $n$,
+$\binom{2n}{n}/4^n \le 1$.
 
 ## Depends on
 
-- [Central Binomial Coeff](central-binomial-coeff.md)
+- [Normalized central binomial coefficient](central-binomial-coeff.md)
 
 ## Sources
 

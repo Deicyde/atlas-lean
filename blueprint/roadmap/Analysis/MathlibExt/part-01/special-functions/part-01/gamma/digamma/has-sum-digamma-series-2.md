@@ -14,17 +14,17 @@ Complex digamma expansion: for `1 < s.re`, `ψ(s) + γ` is the sum of
 
 ## Depends on
 
-- [Digamma Series Term](digamma-series-term.md)
+- [Terms of the complex digamma series](digamma-series-term.md)
 
 ## Proof depends on
 
-- [Analytic At digamma](analytic-at-digamma.md)
-- [Deriv Gamma of Real](deriv-gamma-of-real.md)
-- [Digamma Series Fun](digamma-series-fun.md)
-- [Summable digamma Series Term](summable-digamma-series-term.md)
-- [Deriv log Gamma](deriv-log-gamma.md)
-- [Has Sum digamma series](has-sum-digamma-series.md)
-- [Summable one div add nat succ sq](summable-one-div-add-nat-succ-sq.md)
+- [Analyticity of the digamma function](analytic-at-digamma.md)
+- [Complex and real derivatives of Gamma agree on the positive reals](deriv-gamma-of-real.md)
+- [Complex digamma series](digamma-series-fun.md)
+- [Summability of the digamma series terms](summable-digamma-series-term.md)
+- [Logarithmic derivative of the real Gamma function](deriv-log-gamma.md)
+- [Digamma series on the positive reals](has-sum-digamma-series.md)
+- [Summability of the Basel series](summable-one-div-add-nat-succ-sq.md)
 
 ## Sources
 

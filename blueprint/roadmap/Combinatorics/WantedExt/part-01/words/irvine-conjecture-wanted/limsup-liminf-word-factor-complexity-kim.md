@@ -13,7 +13,7 @@ The subword complexity `ρ(n)` of `k` satisfies `limsup ρ(n)/n = (30 + √3)/23
 ## Depends on
 
 - [Kimberling Word](kimberling-word.md)
-- [Word Factor Complexity](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
+- [Factor complexity of an infinite word](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
 
 ## Sources
 

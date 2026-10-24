@@ -5,21 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.binomialProduct_cubic_denominator
 ---
 
-# Theorem 12
+# Binomial products of series with a cubic denominator
 
-**Theorem 12.** Let `r`, `s` be proper rational series with denominator
-`D(x) = 1 + Ax + Bx² + Cx³ = ∏_{i ≤ 3} (1 - αᵢx)`, `C ≠ 0`, where `2αᵢ ≠ αⱼ + α_k` for
-`i, j, k` not all equal. Then for some polynomials `u`, `v` of degree at most `2`,
-`r ⊙ s = u(x) / D(2x) + 1 / (1 + Ax) ⊙ v(x) / D(-x)`.
+**Binomial products of series with a cubic denominator.** Let $K$ be a field of characteristic
+$0$, let $A, B, C \in K$ with $C \ne 0$, and let $D(x) = 1 + Ax + Bx^2 + Cx^3$. Suppose that
+$D(x) = \prod_{i=1}^{3} (1 - \alpha_i x)$ with $\alpha_1, \alpha_2, \alpha_3 \in K$ and that
+$2\alpha_i \ne \alpha_j + \alpha_k$ whenever $i, j, k \in \{1, 2, 3\}$ are not all equal. Let $r$
+and $s$ be power series over $K$ such that $r D$ and $s D$ are polynomials of degree less than $3$.
+Then there are polynomials $u$, $v$ over $K$ of degree at most $2$ such that
 
-Corrected reading: the record prints `1 / (1 - Ax)`, which is false. For the tribonacci series
-`t = x / (1 - x - x² - x³)` (`A = -1`), the paper's own computation gives
-`t ⊙ t = (1 + x + 10x²) / (11 D(2x)) - (1 + x - 8x²) / (11 (1 - 2x + 2x³))` and
-`(1 + x - 8x²) / (1 - 2x + 2x³) = 1 / (1 - x) ⊙ (1 + 3x - 6x²) / D(-x)`, i.e. the factor is
-`1 / (1 + Ax)`; with `1 / (1 - Ax) = 1 / (1 + x)` the second part `1 / (1 - x) ⊙ (…)` times
-`D(-x)` is not a polynomial (exact check: nonzero coefficient of `x⁴`). The hypothesis
-"not all equal" is from the paper's statement (the record drops it, which would make the
-hypothesis unsatisfiable). The `αᵢ` are taken in `K`.
+$$r \odot s = \frac{u(x)}{D(2x)} + \frac{1}{1 + Ax} \odot \frac{v(x)}{D(-x)},$$
+
+where $\odot$ is the binomial product.
+
+The second term uses the factor $1/(1 + Ax)$; with $1/(1 - Ax)$ in its place the statement already
+fails for the tribonacci series $x/(1 - x - x^2 - x^3)$, where $A = -1$.
 
 ## Depends on
 

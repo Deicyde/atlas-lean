@@ -21,12 +21,12 @@ was already known, so the formal statement only asks for existence.
 
 ## Depends on
 
-- [Is Local Euler Equation Solution](is-local-euler-equation-solution.md)
-- [Is Odd](is-odd.md)
-- [Div](div.md)
+- [Local solutions of the incompressible Euler equations](is-local-euler-equation-solution.md)
+- [Odd vector fields in three dimensions](is-odd.md)
+- [Divergence](div.md)
 - [Vorticity](vorticity.md)
-- [Is Cont Diff Holder](is-cont-diff-holder.md)
-- [Is Cont Diff Holder On](is-cont-diff-holder-on.md)
+- [Continuously differentiable functions with Hölder derivative](is-cont-diff-holder.md)
+- [Continuously differentiable functions with Hölder derivative on a set](is-cont-diff-holder-on.md)
 
 ## Sources
 

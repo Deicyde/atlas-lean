@@ -4,5 +4,5 @@ navigation: module
 
 # Scottish Book108
 
-- [Is Schauder Basis](is-schauder-basis.md)
-- [Krein basis in dense set](krein-basis-in-dense-set.md)
+- [Schauder basis](is-schauder-basis.md)
+- [Krein's theorem on bases in dense sets](krein-basis-in-dense-set.md)

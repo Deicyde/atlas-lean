@@ -4,5 +4,5 @@ navigation: module
 
 # Poincare Siegel
 
-- [Is Diophantine](is-diophantine.md)
-- [Poincare siegel](poincare-siegel.md)
+- [Diophantine real numbers](is-diophantine.md)
+- [Poincaré–Siegel linearisation theorem](poincare-siegel.md)

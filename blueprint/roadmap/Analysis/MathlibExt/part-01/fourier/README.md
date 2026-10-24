@@ -11,7 +11,7 @@ article_id: af_95126640a0aa4ed4b5f84bf1
 - [Fast Fourier Transform](fast-fourier-transform/README.md)
 - [Finite Abelian DFT](finite-abelian-dft/README.md)
 - [Fourier Laplace](fourier-laplace/README.md)
-- [Periodic Convolution](periodic-convolution.md)
+- [Periodic convolution](periodic-convolution.md)
 - [Scaling](scaling/README.md)
 - [Wiener's Tauberian theorem on $L^1(\mathbb{R})$](wiener-tauberian-l1.md)
 - [Convolution theorem for the discrete Fourier transform](inv-dft-mul-dft.md)

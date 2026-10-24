@@ -7,9 +7,11 @@ proof: formalized
 lean: Complex.outer_sector_sin_abs_arg_pos
 ---
 
-# Outer sector sin abs arg pos
+# Positivity of $\sin |\arg z|$ in the outer sector
 
-The sine of the absolute argument is positive in the outer sector.
+**Positivity of $\sin |\arg z|$ in the outer sector.** Let $z \ne 0$ be a complex number with
+$\pi/2 \le |\arg z| < \pi$, where $\arg z \in (-\pi, \pi]$ is the principal argument. Then
+$\sin |\arg z| > 0$.
 
 ## Depends on
 

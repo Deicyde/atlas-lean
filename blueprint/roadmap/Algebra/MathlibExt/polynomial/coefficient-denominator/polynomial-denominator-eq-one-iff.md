@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.polynomialDenominator_eq_one_iff
 ---
 
-# Polynomial Denominator eq one iff
+# Denominator one characterizes integer polynomials
 
-`polynomialDenominator P = 1` exactly when every coefficient of `P` is an integer.
+**Denominator one characterizes integer polynomials.** For every polynomial
+$P \in \mathbb{Q}[x]$, its denominator $\operatorname{denom}(P)$ equals $1$ if and only if, for
+every $i \in \mathbb{N}$, the coefficient of $x^i$ in $P$ is an integer.
 
 ## Depends on
 
-- [Polynomial Denominator](polynomial-denominator.md)
+- [Denominator of a rational polynomial](polynomial-denominator.md)
 
 ## Proof depends on
 
-- [Coeff den dvd polynomial Denominator](coeff-den-dvd-polynomial-denominator.md)
+- [Coefficient denominators divide the denominator of a polynomial](coeff-den-dvd-polynomial-denominator.md)
 
 ## Sources
 

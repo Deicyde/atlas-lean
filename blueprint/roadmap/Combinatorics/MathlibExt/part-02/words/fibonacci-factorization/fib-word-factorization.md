@@ -14,7 +14,7 @@ Prepending `01` to the concatenation `fibWord 0 ++ ⋯ ++ fibWord (N - 1)` gives
 
 ## Depends on
 
-- [Fib Word](../../../part-01/infinite-word/fibonacci-word/fib-word.md)
+- [Finite Fibonacci words](../../../part-01/infinite-word/fibonacci-word/fib-word.md)
 
 ## Proof depends on
 

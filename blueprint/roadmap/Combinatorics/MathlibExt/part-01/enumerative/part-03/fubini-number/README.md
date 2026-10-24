@@ -5,9 +5,9 @@ navigation: module
 
 # Fubini Number
 
-- [Fubini Number](fubini-number.md)
-- [Fubini Number eq sum](fubini-number-eq-sum.md)
-- [Fubini Number zero](fubini-number-zero.md)
-- [Fubini Number one](fubini-number-one.md)
-- [Fubini Number two](fubini-number-two.md)
-- [Fubini Number three](fubini-number-three.md)
+- [Fubini numbers](fubini-number.md)
+- [Fubini numbers as sums of Stirling numbers](fubini-number-eq-sum.md)
+- [Fubini number of zero](fubini-number-zero.md)
+- [Fubini number of one](fubini-number-one.md)
+- [Fubini number of two](fubini-number-two.md)
+- [Fubini number of three](fubini-number-three.md)

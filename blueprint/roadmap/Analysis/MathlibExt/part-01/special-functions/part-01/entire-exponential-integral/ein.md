@@ -6,10 +6,11 @@ statement: formalized
 lean: Complex.ein
 ---
 
-# Ein
+# The entire exponential integral Ein
 
-The entire exponential integral
-`Ein z = sum_(j >= 1) (-1)^(j+1) z^j / (j * j!)`.
+**The entire exponential integral Ein.** The entire exponential integral is the function
+$\operatorname{Ein} : \mathbb{C} \to \mathbb{C}$ defined by
+$\operatorname{Ein}(z) = \sum_{j \ge 1} \frac{(-1)^{j+1} z^j}{j \cdot j!}$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ein Term](ein-term.md)
+- [Terms of the series for the entire exponential integral](ein-term.md)
 
 ## Sources
 

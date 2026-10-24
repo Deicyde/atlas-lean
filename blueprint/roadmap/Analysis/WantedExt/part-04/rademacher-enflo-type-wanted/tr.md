@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Analysis.RademacherEnfloTypeWanted.RademacherEnfloType.TR
 ---
 
-# TR
+# Rademacher type constant
 
-`Tᴿₚ(X)` is defined to be the infimum over all `C` such that the
-proposition `IsRademacherType X C p` holds.
+**Rademacher type constant.** For a real Banach space $X$ and a real number $p$,
+$T^R_p(X)$ is the infimum in $[0, \infty]$ of all $C \in [0, \infty]$ such that $X$ has
+Rademacher type $p$ with constant $C$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Rademacher Type](is-rademacher-type.md)
+- [Rademacher type](is-rademacher-type.md)
 
 ## Sources
 

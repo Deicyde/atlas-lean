@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.kasselReutenauerPoly_three
 ---
 
-# Kassel Reutenauer Poly three
+# The third Kassel–Reutenauer polynomial
 
-Characteristic value `P̄_3(X) = X² + X - 2` (Table 2).
+**The third Kassel–Reutenauer polynomial.** The Kassel–Reutenauer polynomial $\bar P_3$ is
+$X^2 + X - 2$.
 
 ## Depends on
 
-- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
+- [Kassel–Reutenauer polynomial](kassel-reutenauer-poly.md)
 
 ## Proof depends on
 
-- [Kassel Reutenauer Coeff](kassel-reutenauer-coeff.md)
+- [The Kassel–Reutenauer coefficients $a_{n,i}$](kassel-reutenauer-coeff.md)
 
 ## Sources
 

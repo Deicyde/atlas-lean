@@ -7,9 +7,11 @@ proof: formalized
 lean: Real.hasDerivAt_tsum_digamma_series
 ---
 
-# Has Deriv At tsum digamma series
+# Derivative of the digamma series
 
-Term-by-term derivative of the digamma series: its derivative is `∑ 1/(y+j+1)²`.
+**Derivative of the digamma series.** For every real $y > 0$, the real function
+$z \mapsto \sum_{j=0}^{\infty} \left(\frac{1}{j+1} - \frac{1}{z+j+1}\right)$ is differentiable
+at $y$ with derivative $\sum_{j=0}^{\infty} \frac{1}{(y+j+1)^2}$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Summable one div add nat succ sq](summable-one-div-add-nat-succ-sq.md)
+- [Summability of the Basel series](summable-one-div-add-nat-succ-sq.md)
 
 ## Sources
 

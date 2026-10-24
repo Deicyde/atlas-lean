@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.JosephusWanted.josephus_eq_self_iff
 
 ## Depends on
 
-- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
+- [Josephus survivor function](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 
 ## Sources
 

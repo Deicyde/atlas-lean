@@ -5,14 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.HolomorphicDiskDiameterDerivBoundWanted.two_mul_norm_deriv_le_ediam_image_ball
 ---
 
-# Holomorphic Disk Diameter Deriv Bound Wanted
+# Diameter bound for the derivative at the center of the disc
 
-Suppose $f:D\to\mathbb{C}$ is holomorphic. Show that the diameter $d=\sup_{z,w\in D}|f(z)-f(w)|$
-of the image of $f$ satisfies
-
-\[
-2|f'(0)|\le d.
-\]
+**Diameter bound for the derivative at the center of the disc.** Let $D$ be the open unit disc
+in $\mathbb{C}$ and let $f : \mathbb{C} \to \mathbb{C}$ be holomorphic on $D$. Then the diameter
+$d = \sup_{z,w \in D} |f(z) - f(w)|$ of the image $f(D)$, which may be $+\infty$, satisfies
+$2|f'(0)| \le d$.
 
 ## Depends on
 

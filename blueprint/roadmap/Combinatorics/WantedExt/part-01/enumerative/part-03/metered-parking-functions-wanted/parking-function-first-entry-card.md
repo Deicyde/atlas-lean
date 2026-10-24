@@ -17,7 +17,7 @@ exponents are `1^{-1}` at `i = n` and `m = 1`, equal to the truncated `1^0`).
 
 ## Depends on
 
-- [Is Partial Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-partial-parking-function.md)
+- [Partial parking function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-partial-parking-function.md)
 
 ## Sources
 

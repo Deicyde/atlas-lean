@@ -5,11 +5,11 @@ navigation: module
 
 # Pure Morphic Word
 
-- [Morph Extend](morph-extend.md)
-- [Morph Iterate](morph-iterate.md)
-- [Morph Extend append](morph-extend-append.md)
-- [Morph Iterate length of uniform](morph-iterate-length-of-uniform.md)
-- [Is Non Erasing](is-non-erasing.md)
-- [Is Prefix Preserving](is-prefix-preserving.md)
-- [Is Omega Limit](is-omega-limit.md)
-- [Is Pure Morphic](is-pure-morphic.md)
+- [Extension of a letter map to finite words](morph-extend.md)
+- [Iterates of a letter map](morph-iterate.md)
+- [Extended letter maps preserve concatenation](morph-extend-append.md)
+- [Length of iterates of a uniform letter map](morph-iterate-length-of-uniform.md)
+- [Non-erasing letter maps](is-non-erasing.md)
+- [Prolongable letter maps](is-prefix-preserving.md)
+- [Infinite word as the limit of iterates](is-omega-limit.md)
+- [Pure morphic words](is-pure-morphic.md)

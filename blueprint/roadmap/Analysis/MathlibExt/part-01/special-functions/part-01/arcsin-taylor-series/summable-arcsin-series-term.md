@@ -7,18 +7,20 @@ proof: formalized
 lean: MathlibExt.Analysis.SpecialFunctions.ArcsinTaylorSeries.summable_arcsinSeries_term
 ---
 
-# Summable arcsin Series term
+# Summability of the arcsine series
 
-The terms defining `arcsinSeries` are summable in the open unit interval.
+**Summability of the arcsine series.** Write $c_n = \binom{2n}{n}/4^n$ for the normalized
+central binomial coefficient. For every real number $y$ with $|y| < 1$, the series
+$\sum_{n=0}^{\infty} \frac{c_n\, y^{2n+1}}{2n+1}$ converges absolutely.
 
 ## Depends on
 
-- [Central Binomial Coeff](central-binomial-coeff.md)
+- [Normalized central binomial coefficient](central-binomial-coeff.md)
 
 ## Proof depends on
 
-- [Central Binomial Coeff le one](central-binomial-coeff-le-one.md)
-- [Central Binomial Coeff nonneg](central-binomial-coeff-nonneg.md)
+- [Normalized central binomial coefficients are at most one](central-binomial-coeff-le-one.md)
+- [Normalized central binomial coefficients are nonnegative](central-binomial-coeff-nonneg.md)
 
 ## Sources
 

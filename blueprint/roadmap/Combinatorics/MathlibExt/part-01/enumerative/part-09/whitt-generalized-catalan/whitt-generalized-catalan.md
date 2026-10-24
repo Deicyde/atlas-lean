@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.whittGeneralizedCatalan
 ---
 
-# Whitt Generalized Catalan
+# Whitt's generalized Catalan numbers
 
-The generalized Catalan numbers of Whitt (OEIS A064062 for `α = 2`):
-`C(α, n) = ∑_{k=0}^{n-1} (1 - k/n) C(n-1+k, k) α^k`, i.e. the source's
-`C(α, n+1) = ∑_{k=0}^{n} (1 - k/(n+1)) C(n+k, k) α^k` with `n + 1` renamed `n`
-(`C(α, 0) = 0`, the empty sum).
+**Whitt's generalized Catalan numbers.** For a rational number $\alpha$ and a natural number
+$n$, Whitt's generalized Catalan number $C(\alpha, n)$ is the rational number
+
+$$C(\alpha, n) = \sum_{k=0}^{n-1} \left(1 - \frac{k}{n}\right) \binom{n-1+k}{k} \alpha^k.$$
+
+In particular $C(\alpha, 0) = 0$, the empty sum. Writing $n + 1$ for $n$ gives the source's form
+$C(\alpha, n+1) = \sum_{k=0}^{n} \left(1 - \frac{k}{n+1}\right) \binom{n+k}{k} \alpha^k$. For
+$\alpha = 2$ and $n \ge 1$ these are the terms of OEIS A064062.
 
 ## Depends on
 

@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.polyContFract_nums_one
 ---
 
-# Poly Cont Fract nums one
+# First convergent numerator of a polynomial continued fraction
 
-`A₁ = a₁ a₀ + 1` when `n ≥ 1`.
+**First convergent numerator of a polynomial continued fraction.** Let $F$ be a field,
+let $a_0, a_1, \ldots$ be polynomials in $F[X]$ and let $n \ge 1$. The numerator $A_1$ of the
+first convergent of the continued fraction $[a_0; a_1, \ldots, a_n]$ over $F(X)$ is
+$a_1 a_0 + 1$.
 
 ## Depends on
 
-- [Poly Cont Fract](poly-cont-fract.md)
+- [Finite continued fraction with polynomial partial quotients](poly-cont-fract.md)
 
 ## Proof depends on
 
-- [Poly Cont Fract s get?](poly-cont-fract-s-get.md)
+- [Terms of a polynomial continued fraction](poly-cont-fract-s-get.md)
 
 ## Sources
 

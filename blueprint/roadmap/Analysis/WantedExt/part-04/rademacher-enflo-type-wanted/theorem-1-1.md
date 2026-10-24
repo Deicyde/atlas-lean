@@ -6,18 +6,16 @@ statement: formalized
 lean: MathlibExt.Analysis.RademacherEnfloTypeWanted.RademacherEnfloType.theorem_1_1
 ---
 
-# Theorem 1 1
+# Comparison of Rademacher and Enflo type constants
 
-Statement of Theorem 1.1:
-
-For any `p ∈ [1,2]`, and Banach space `X`
-
-`TRₚ(X) ≤ TEₚ(X) ≤ (π / √2) TRₚ(X)`.
+**Comparison of Rademacher and Enflo type constants.** For every real Banach space $X$ and every
+real number $p$ with $1 \le p \le 2$, the Rademacher type constant and the Enflo type constant
+of $X$ satisfy $T^R_p(X) \le T^E_p(X) \le \frac{\pi}{\sqrt{2}}\, T^R_p(X)$.
 
 ## Depends on
 
-- [TE](te.md)
-- [TR](tr.md)
+- [Enflo type constant](te.md)
+- [Rademacher type constant](tr.md)
 
 ## Sources
 

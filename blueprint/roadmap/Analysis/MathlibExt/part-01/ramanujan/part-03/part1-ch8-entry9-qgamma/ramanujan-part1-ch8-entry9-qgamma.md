@@ -7,11 +7,18 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry9Qgamma.ramanujan_part1_ch8_entry9_qgamma
 ---
 
-# Ramanujan part1 ch8 entry9 qgamma
+# Ramanujan's integral for $\Gamma'/\Gamma$ (Chapter 8, Entry 9)
 
-Source: Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 8.
+**Ramanujan's integral for $\Gamma'/\Gamma$ (Chapter 8, Entry 9).** Let $x$ be a complex number
+with $\operatorname{Re} x > 0$, and for real $u$ write $u^x = e^{x \log u}$ if $u > 0$ and
+$0^x = 0$. Write $\Gamma'$ for the complex derivative of the Gamma function. Then $x \ne 0$; the
+function $u \mapsto u^x/(1 + u^x)$ is integrable on $[0, 1]$; $1 + u^x \ne 0$ for every
+$u \in [0, 1]$; $\Gamma(1/(2x) + 1) \ne 0$ and $\Gamma(1/x + 1) \ne 0$; and
 
-Proves `Wanted` entry `ramanujan_part1_ch8_entry9_qgamma`.
+$$
+\frac{\Gamma'}{\Gamma}\Bigl(\frac{1}{2x} + 1\Bigr) =
+\frac{\Gamma'}{\Gamma}\Bigl(\frac{1}{x} + 1\Bigr) - \log 2 + x \int_0^1 \frac{u^x}{1 + u^x}\,du.
+$$
 
 ## Depends on
 
@@ -19,9 +26,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Chapter8 Digamma eq digamma](chapter8-digamma-eq-digamma.md)
-- [Ramanujan part1 ch8 entry9 qgamma digamma](ramanujan-part1-ch8-entry9-qgamma-digamm.md)
+- [Digamma as the logarithmic derivative of Gamma (Chapter 8, Entry 9)](chapter8-digamma-eq-digamma.md)
+- [Ramanujan's integral for the digamma function (Chapter 8, Entry 9)](ramanujan-part1-ch8-entry9-qgamma-digamm.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.Ramanujan.Part1Ch8Entry9Qgamma](../../../../../../../sources/v2/MathlibExt.md)
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 8.

@@ -7,19 +7,20 @@ proof: formalized
 lean: MathlibExt.gaussBinom_self
 ---
 
-# Gauss Binom self
+# Diagonal Gaussian binomial coefficients
 
-The diagonal case: `G(M, M) = 1`.
+**Diagonal Gaussian binomial coefficients.** Let $R$ be a semiring and $Q \in R$. For every
+natural number $M$, the Gaussian binomial coefficient $\binom{M}{M}_Q$ equals $1$.
 
 ## Depends on
 
-- [Gauss Binom](gauss-binom.md)
+- [Gaussian binomial coefficient](gauss-binom.md)
 
 ## Proof depends on
 
-- [Gauss Binom eq zero of lt](gauss-binom-eq-zero-of-lt.md)
-- [Gauss Binom succ succ](gauss-binom-succ-succ.md)
-- [Gauss Binom zero right](gauss-binom-zero-right.md)
+- [Gaussian binomial coefficients vanish when $k > M$](gauss-binom-eq-zero-of-lt.md)
+- [$Q$-Pascal recursion for Gaussian binomial coefficients](gauss-binom-succ-succ.md)
+- [Gaussian binomial coefficients with $k = 0$](gauss-binom-zero-right.md)
 
 ## Sources
 

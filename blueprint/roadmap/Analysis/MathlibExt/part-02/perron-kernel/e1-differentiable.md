@@ -7,17 +7,18 @@ proof: formalized
 lean: PerronKernel.E1_differentiable
 ---
 
-# E1 differentiable
+# The averaging operator is entire
 
-`E1` is differentiable everywhere.
+**The averaging operator is entire.** The function $E_1 : \mathbb{C} \to \mathbb{C}$ given by
+$E_1(u) = \int_0^1 e^{tu}\,dt$ is complex differentiable at every point of $\mathbb{C}$.
 
 ## Depends on
 
-- [E1](e1.md)
+- [The averaging operator $E_1$](e1.md)
 
 ## Proof depends on
 
-- [E1 has Deriv At](e1-has-deriv-at.md)
+- [Derivative of the averaging operator](e1-has-deriv-at.md)
 
 ## Sources
 

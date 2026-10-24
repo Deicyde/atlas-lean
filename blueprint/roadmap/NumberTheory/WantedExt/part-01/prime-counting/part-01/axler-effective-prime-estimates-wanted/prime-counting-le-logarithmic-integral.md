@@ -14,7 +14,7 @@ original bound is strict.
 
 ## Depends on
 
-- [Logarithmic Integral Real](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-01/log/integral-derivative/logarithmic-integral-real.md)
+- [Real logarithmic integral extended by zero](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-01/log/integral-derivative/logarithmic-integral-real.md)
 
 ## Sources
 

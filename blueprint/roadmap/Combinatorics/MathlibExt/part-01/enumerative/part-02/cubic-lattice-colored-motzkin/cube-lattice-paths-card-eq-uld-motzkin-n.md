@@ -7,23 +7,28 @@ proof: formalized
 lean: MetaMathlibExt.cube_lattice_paths_card_eq_uldMotzkinNumber
 ---
 
-# Cube lattice paths card eq uld Motzkin Number
+# Cubic lattice walks counted by a colored Motzkin number
 
-Lattice paths in the cubic lattice of dimension `n + 1` of length `k`, with the last
-coordinate constrained to a Dyck bridge, are counted by the `(u,l,d)`-Motzkin number of
-rank `1` with one up color, `2 * n` level colors, and one down color.
+**Cubic lattice walks counted by a colored Motzkin number.** Let $n$ and $k$ be natural numbers,
+and let $e_0, \dots, e_n$ be the standard basis vectors of $\mathbb{Z}^{n+1}$. The number of walks
+of $k$ steps in the cubic lattice $\mathbb{Z}^{n+1}$ that start at the origin, each step being
+$+e_i$ or $-e_i$ for some $i \in \{0, \dots, n\}$, such that, counting only the steps in the last
+coordinate $i = n$, every initial segment has at least as many $+e_n$ steps as $-e_n$ steps and
+the whole walk has equally many, equals the $(u,l,d)$-Motzkin number of rank $1$ with
+$u = d = 1$ and $l = 2n$ at length $k$, that is, the number of Motzkin paths of length $k$ with
+one color of up step, $2n$ colors of level step and one color of down step.
 
 ## Depends on
 
-- [Uld Motzkin Number](../../part-09/uldmotzkin-number-of-rank-r/uld-motzkin-number.md)
+- [(u,l,d)-Motzkin numbers of rank r](../../part-09/uldmotzkin-number-of-rank-r/uld-motzkin-number.md)
 
 ## Proof depends on
 
-- [Is Motzkin Path](../../part-09/uldmotzkin-number-of-rank-r/is-motzkin-path.md)
-- [ULDMotzkin Step](../../part-09/uldmotzkin-number-of-rank-r/uldmotzkin-step.md)
-- [Path Height](../../part-09/uldmotzkin-number-of-rank-r/path-height.md)
-- [Step Height](../../part-09/uldmotzkin-number-of-rank-r/step-height.md)
-- [Uld Motzkin Number eq card](../../part-09/uldmotzkin-number-of-rank-r/uld-motzkin-number-eq-card.md)
+- [Colored Motzkin path condition](../../part-09/uldmotzkin-number-of-rank-r/is-motzkin-path.md)
+- [Colored Motzkin steps of a given rank](../../part-09/uldmotzkin-number-of-rank-r/uldmotzkin-step.md)
+- [Height of a colored step sequence after k steps](../../part-09/uldmotzkin-number-of-rank-r/path-height.md)
+- [Height change of a colored Motzkin step](../../part-09/uldmotzkin-number-of-rank-r/step-height.md)
+- [The (u,l,d)-Motzkin number counts Motzkin step sequences](../../part-09/uldmotzkin-number-of-rank-r/uld-motzkin-number-eq-card.md)
 
 ## Sources
 

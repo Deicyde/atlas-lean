@@ -7,17 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.engel_bell_log_convexity
 ---
 
-# Engel Bell Log Convexity
+# Engel's inequality for Bell numbers
 
-Engel's log-convexity inequality for Bell numbers, Eq. (E2).
+**Engel's inequality for Bell numbers.** For every integer $n \ge 1$, the Bell numbers
+satisfy $B_n^2 \le B_{n-1} B_{n+1}$, where $B_n$ is the number of partitions of an $n$-element
+set.
 
-Horst Alzer, "On Engel's Inequality for Bell Numbers,"
-Journal of Integer Sequences 22 (2019).
-
-Stable concept id: `jis_grounded_0ea6ed8edd46a1ad43f4d963`.
-
-Scope: this is the complete selected non-strict theorem as stated in Eq. (E2);
-it is not Alzer's later strict refinement nor the series identity.
+This non-strict inequality is Eq. (E2) of Horst Alzer, "On Engel's Inequality for Bell
+Numbers," Journal of Integer Sequences 22 (2019); Alzer's strict refinement is a different
+result.
 
 ## Depends on
 
@@ -25,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bell Turan Identity](../part-01/bell-turan-identity.md)
+- [Turán-type identity for the Bell numbers](../part-01/bell-turan-identity.md)
 
 ## Sources
 

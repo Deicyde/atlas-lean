@@ -18,7 +18,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Array R](array-r.md)
-- [Legendre Stirling First](../../../../../MathlibExt/part-01/enumerative/part-04/legendre-stirling-first-kind/legendre-stirling-first.md)
+- [Legendre–Stirling numbers of the first kind](../../../../../MathlibExt/part-01/enumerative/part-04/legendre-stirling-first-kind/legendre-stirling-first.md)
 
 ## Sources
 

@@ -6,18 +6,20 @@ proof: formalized
 lean: MathlibExt.Analysis.iharaConstantOf_le_of_eventually_le_add
 ---
 
-# Ihara Constant Of le of eventually le add
+# Eventual affine upper bound on the abstract Ihara constant
 
-An eventual affine upper bound `N g ≤ c * g + d`, with finite additive
-error `d`, gives the corresponding limsup bound.
+**Eventual affine upper bound on the abstract Ihara constant.** Let
+$N : \mathbb{N} \to \mathbb{N}$, $c \in [0, \infty]$ and $d \in [0, \infty)$. If
+$N(g) \le c \cdot g + d$ in $[0, \infty]$ for all sufficiently large $g$, then the abstract Ihara
+constant of $N$ is at most $c$.
 
 ## Depends on
 
-- [Ihara Constant Of](ihara-constant-of.md)
+- [Abstract Ihara constant of a sequence](ihara-constant-of.md)
 
 ## Proof depends on
 
-- [Ihara Constant Of le of eventually le](ihara-constant-of-le-of-eventually-le.md)
+- [Eventual linear upper bound on the abstract Ihara constant](ihara-constant-of-le-of-eventually-le.md)
 
 ## Sources
 

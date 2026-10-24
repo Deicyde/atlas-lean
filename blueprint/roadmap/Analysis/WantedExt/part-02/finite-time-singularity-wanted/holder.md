@@ -6,10 +6,12 @@ statement: formalized
 lean: MathlibExt.Analysis.FiniteTimeSingularityWanted.Holder
 ---
 
-# Holder
+# Hölder continuity
 
-We say that a function `f : X → Y` is `r-Hölder` if there exists `C ≥ 0`, such that
-for all `x₁, x₂ : X`, `d_Y(f x₁, f x₂) ≤ C * d_X(x₁, x₂) ^ r`.
+**Hölder continuity.** Let $X$ and $Y$ be pseudo-extended metric spaces (distances take
+values in $[0, \infty]$), let $r \ge 0$ be a real number and $f : X \to Y$. Then $f$ is
+$r$-Hölder if there is a constant $C \ge 0$ such that
+$d_Y(f(x_1), f(x_2)) \le C \, d_X(x_1, x_2)^r$ for all $x_1, x_2 \in X$.
 
 ## Depends on
 

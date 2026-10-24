@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.hilbertSchemeTorus_zeta_eq_prod
 ---
 
-# Hilbert Scheme Torus zeta eq prod
+# Zeta function of the Hilbert scheme of points on the two-dimensional torus
 
-Local zeta function of the Hilbert scheme `H^n` of `n` points on the two-dimensional torus
-over `𝔽_q`, `q = p^k`: for `n ≥ 1`,
-`Z_{H^n/𝔽_q}(t) = ∏_{d ∣ n, d odd} (1 - q^{n+r_n(d)} t)(1 - q^{n-r_n(d)} t) /
-((1 - q^{n+r_n(d)+1} t)(1 - q^{n-r_n(d)-1} t))`, where `r_n(d) = n/d - (d+1)/2`.
-The zeta function is the formal power series `exp (∑_{m ≥ 1} N_m t^m / m)`, where `N_m`, the
-number of `𝔽_{q^m}`-points of `H^n`, is the number of ideals of colength `n` in the Laurent
-polynomial ring `𝔽_{q^m}[x^{±1}, y^{±1}]` (the group algebra of `ℤ × ℤ`), and `𝔽_{q^m}` is
-`GaloisField p (k * m)`. The exponents `n ± r_n(d)`, `n + r_n(d) + 1`, `n - r_n(d) - 1` are
-nonnegative; they are written as integer powers.
+**Zeta function of the Hilbert scheme of points on the two-dimensional torus.** Let $p$ be a
+prime, $k \ge 1$, $q = p^k$ and $n \ge 1$. For $m \ge 1$ let $\mathbb{F}_{q^m}$ be the field with
+$q^m$ elements and let $N_m$ be the number of ideals $I$ of the Laurent polynomial ring
+$\mathbb{F}_{q^m}[x^{\pm 1}, y^{\pm 1}]$ (the group algebra of $\mathbb{Z} \times \mathbb{Z}$)
+such that the quotient by $I$ has dimension $n$ over $\mathbb{F}_{q^m}$; this is the number of
+$\mathbb{F}_{q^m}$-points of the Hilbert scheme $H^n$ of $n$ points on the torus. For an odd
+divisor $d$ of $n$ put $r_n(d) = n/d - (d + 1)/2$, $a_d = n + r_n(d)$ and $b_d = n - r_n(d)$.
+Then the zeta function $Z(t) = \exp\big(\sum_{m \ge 1} N_m t^m / m\big)$, a formal power series
+with rational coefficients, is
+
+$$Z(t) = \prod_{d} \frac{(1-q^{a_d}t)(1-q^{b_d}t)}{(1-q^{a_d+1}t)(1-q^{b_d-1}t)},$$
+
+the product running over the odd divisors $d$ of $n$.
+
+The exponents $a_d$, $b_d$, $a_d + 1$ and $b_d - 1$ are nonnegative integers.
 
 ## Depends on
 

@@ -6,15 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.QPochhammer.qPochhammerInfRaw
 ---
 
-# Q Pochhammer Inf Raw
+# Raw infinite q-Pochhammer product
 
-Raw complex infinite q-Pochhammer product `(a;q)_∞`, total in `q`.
-
-This is Mathlib's `tprod` over `ℕ` of the zero-based factor family
-`1 - a * q ^ n`. When the factors are not multipliable (in particular for most
-`q` with `‖q‖ ≥ 1`), `tprod` takes its conventional default value `1`; see
-`qPochhammerInfRaw_two_one`. Use the canonical `qPochhammerInf`, which requires
-convergence evidence `‖q‖ < 1`, unless this fallback behaviour is intended.
+**Raw infinite q-Pochhammer product.** For complex numbers $a$ and $q$, the raw infinite
+q-Pochhammer product is the unconditional infinite product $\prod_{n=0}^{\infty} (1 - a q^n)$,
+defined for every $q$: when this product does not converge unconditionally (in particular for
+most $q$ with $|q| \ge 1$), its value is $1$ by convention.
 
 ## Depends on
 

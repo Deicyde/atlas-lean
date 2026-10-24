@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.card_conjClasses_cyclicHolomorph
 ---
 
-# Card conj Classes cyclic Holomorph
+# Class number of the holomorph of $\mathbb{Z}/n\mathbb{Z}$
 
-For `n > 0`, the class number of the holomorph `ℤ/nℤ ⋊ (ℤ/nℤ)ˣ` is
-`φ(n) ∑_{d ∣ n} 1/φ(d)`.
+**Class number of the holomorph of $\mathbb{Z}/n\mathbb{Z}$.** For every integer $n > 0$,
+the number of conjugacy classes of the holomorph
+$\mathbb{Z}/n\mathbb{Z} \rtimes (\mathbb{Z}/n\mathbb{Z})^\times$ of $\mathbb{Z}/n\mathbb{Z}$ equals
+$\varphi(n) \sum_{d \mid n} 1/\varphi(d)$, where $\varphi$ is Euler's totient function.
 
 ## Depends on
 
-- [Cyclic Holomorph](cyclic-holomorph.md)
-- [Zmod Units Mul Aut](zmod-units-mul-aut.md)
+- [Holomorph of $\mathbb{Z}/n\mathbb{Z}$](cyclic-holomorph.md)
+- [Multiplication action of the units of $\mathbb{Z}/n\mathbb{Z}$](zmod-units-mul-aut.md)
 
 ## Sources
 

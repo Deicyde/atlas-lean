@@ -11,11 +11,11 @@ A formula is satisfiable when some assignment satisfies every clause.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Formulas of the random 3-SAT model](formula.md)
 
 ## Proof depends on
 
-- [Clause Sat](clause-sat.md)
+- [Satisfaction of a 3-clause](clause-sat.md)
 
 ## Sources
 

@@ -7,15 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.sum_signedStirlingFirst_mul_stirlingSecond
 ---
 
-# Sum signed Stirling First mul stirling Second
+# Orthogonality relation for Stirling numbers
 
-Scalar form of `stirlingMatrices_mutualInverse_and_lowerTriangular`: the signed first-kind
-and the second-kind Stirling numbers are orthogonal, `∑_{k=0}^n (-1)^(n-k) s(n,k) S(k,m) = δ_{nm}`
-for all `n` and `m`.
+**Orthogonality relation for Stirling numbers.** Write $c(n,k)$ for the unsigned Stirling
+numbers of the first kind, $s(n,k) = (-1)^{n-k} c(n,k)$ for the signed ones, and $S(k,m)$ for the
+Stirling numbers of the second kind. For all natural numbers $n$ and $m$,
+
+$$\sum_{k=0}^{n} s(n,k)\, S(k,m) = \delta_{nm},$$
+
+where $\delta_{nm}$ is $1$ if $n = m$ and $0$ otherwise.
 
 ## Depends on
 
-- [Signed Stirling First](../signed-stirling-first.md)
+- [Signed Stirling numbers of the first kind](../signed-stirling-first.md)
 
 ## Sources
 

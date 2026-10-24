@@ -13,7 +13,7 @@ Let `w ∈ Q_n` be extremely lucky. For `i ∈ [n]`, the `i`-th unlucky car `j`
 
 ## Depends on
 
-- [Is Stirling Permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
+- [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
 - [Stirling Displacement](stirling-displacement.md)
 - [Stirling Lucky Set](stirling-lucky-set.md)
 

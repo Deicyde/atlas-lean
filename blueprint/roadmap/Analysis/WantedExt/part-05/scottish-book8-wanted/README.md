@@ -4,5 +4,5 @@ navigation: module
 
 # Scottish Book8
 
-- [Scottish Book Problem8 Claim](scottish-book-problem8-claim.md)
-- [Mazur8 Cauchy Product refuted](mazur8-cauchy-product-refuted.md)
+- [The claim of Scottish Book Problem 8](scottish-book-problem8-claim.md)
+- [Mazur's Problem 8 has a negative answer](mazur8-cauchy-product-refuted.md)

@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.RadialSchwartz
 ---
 
-# Radial Schwartz
+# Radial Schwartz functions
 
-Radial complex-valued Schwartz functions on `R^n`.
+**Radial Schwartz functions.** For a natural number $n$, this is the set of complex-valued
+Schwartz functions $f$ on $\mathbb{R}^n$ that are radial: $f(x) = f(y)$ whenever $|x| = |y|$.
 
 ## Depends on
 

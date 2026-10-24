@@ -13,7 +13,7 @@ The totienomial coefficient is an integer with the stated prime factorization.
 
 ## Depends on
 
-- [Totienomial Coefficient](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-08/totienomial-coefficient/totienomial-coefficient.md)
+- [Totienomial coefficient](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-08/totienomial-coefficient/totienomial-coefficient.md)
 
 ## Sources
 

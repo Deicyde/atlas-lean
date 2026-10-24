@@ -4,5 +4,5 @@ navigation: module
 
 # Choquet
 
-- [Choquet](choquet.md)
-- [Bauer unique](bauer-unique.md)
+- [Choquet's representation theorem in Banach spaces](choquet.md)
+- [Bauer's uniqueness theorem at extreme points](bauer-unique.md)

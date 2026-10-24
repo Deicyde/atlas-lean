@@ -5,13 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.tsum_odd_mul_catalan_mul_harmonic_div_four_pow_mul_binom
 ---
 
-# Tsum odd mul catalan mul harmonic div four pow mul binom
+# Adegoke–Frontczak series with odd weights, Catalan numbers and harmonic numbers
 
-Theorem 6 (general identity): for `Re z > 1/2`,
-`Σ_{n≥0} ((2n + 1)/2^{2n}) C_n H_{n+z}/C(n + z, n)
-  = 2(zH_z - 1)(H_{z-1} - H_{z-3/2}) + 2z(H^{(2)}_{z-1} - H^{(2)}_{z-3/2})`,
-with `H_α = ψ(α + 1) + γ` and
-`H^{(2)}_{z-1} - H^{(2)}_{z-3/2} = Σ_{j≥0} (1/(j + z - 1/2)² - 1/(j + z)²)`.
+**Adegoke–Frontczak series with odd weights, Catalan numbers and harmonic numbers.** Let $z$
+be a complex number with $\operatorname{Re} z > \frac12$. Write $C_n$ for the $n$-th Catalan
+number, $\psi$ for the digamma function, $\gamma$ for the Euler–Mascheroni constant,
+$H_\alpha = \psi(\alpha + 1) + \gamma$ for complex $\alpha$, and
+$\binom{n+z}{n} = \prod_{j=1}^{n} \frac{z+j}{j}$. Then
+
+$$
+\sum_{n \ge 0} \frac{(2n+1)\, C_n\, H_{n+z}}{4^n \binom{n+z}{n}} =
+2\,(z H_z - 1)\bigl(\psi(z) - \psi(z - \tfrac12)\bigr) +
+2z \sum_{j \ge 0} \Bigl(\frac{1}{(j + z - \frac12)^2} - \frac{1}{(j + z)^2}\Bigr).
+$$
 
 ## Depends on
 

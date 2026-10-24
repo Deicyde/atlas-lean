@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.weightedDavenport
 ---
 
-# Weighted Davenport
+# Weighted Davenport constant
 
-The `A`-weighted Davenport constant `D_A(G)`: the least length `ℓ` such that every
-sequence over `G` of length `ℓ` has a non-empty `A`-weighted zero-sum subsequence, valued in
-`ℕ∞` so that it is `⊤` when no such length exists (for example for `A = ∅`, or `A = {1}` and
-`G = ℤ`). For a finite group and a non-empty weight set it is finite.
-The ordinary Davenport constant is `weightedDavenport {1} G`.
+**Weighted Davenport constant.** Let $G$ be an additive commutative monoid and $A$ a finite
+set of natural numbers. The $A$-weighted Davenport constant $D_A(G) \in \mathbb{N} \cup \{\infty\}$
+is the least length $\ell \in \mathbb{N}$ such that no sequence over $G$ of length $\ell$ is
+$A$-weighted zero-sum free, that is, such that every sequence over $G$ of length $\ell$ has a
+non-empty $A$-weighted zero-sum subsequence; it is $\infty$ when no such length exists.
+
+For example $D_A(G) = \infty$ when $A = \emptyset$, or when $A = \{1\}$ and $G = \mathbb{Z}$. For
+a finite group $G$ and a non-empty weight set $A$ it is finite. The ordinary Davenport constant of
+$G$ is $D_{\{1\}}(G)$.
 
 ## Depends on
 
@@ -19,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Weighted Zero Sum Free](is-weighted-zero-sum-free.md)
+- [Weighted zero-sum free sequences](is-weighted-zero-sum-free.md)
 
 ## Sources
 

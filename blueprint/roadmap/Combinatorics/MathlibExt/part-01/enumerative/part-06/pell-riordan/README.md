@@ -5,5 +5,5 @@ navigation: module
 
 # Pell Riordan
 
-- [Pell riordan general](pell-riordan-general.md)
-- [Pell riordan](pell-riordan.md)
+- [Generalized Pell matrix as a Riordan array, for every k](pell-riordan-general.md)
+- [Generalized Pell matrix as a Riordan array](pell-riordan.md)

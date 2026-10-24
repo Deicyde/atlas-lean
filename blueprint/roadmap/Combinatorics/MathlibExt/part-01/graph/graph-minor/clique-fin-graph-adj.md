@@ -7,14 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.cliqueFinGraph_adj
 ---
 
-# Clique Fin Graph adj
+# Adjacency in the complete graph
 
-Adjacency in `Kₙ` is inequality of vertices.
+**Adjacency in the complete graph.** For every natural number $n$ and all vertices $x$ and $y$
+of the complete graph $K_n$, whose vertices are the natural numbers less than $n$, $x$ and $y$ are
+adjacent if and only if $x \ne y$.
 
 ## Depends on
 
-- [Fin Graph](fin-graph.md)
-- [Clique Fin Graph](clique-fin-graph.md)
+- [Finite simple graph](fin-graph.md)
+- [Complete graph as a finite graph](clique-fin-graph.md)
 
 ## Sources
 

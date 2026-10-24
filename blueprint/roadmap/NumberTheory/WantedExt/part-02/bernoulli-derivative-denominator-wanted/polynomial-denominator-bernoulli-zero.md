@@ -12,11 +12,11 @@ lean: MetaMathlibExt.polynomialDenominator_bernoulli_zero
 
 ## Depends on
 
-- [Polynomial Denominator](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
+- [Denominator of a rational polynomial](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
 
 ## Proof depends on
 
-- [Polynomial Denominator eq one iff](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator-eq-one-iff.md)
+- [Denominator one characterizes integer polynomials](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator-eq-one-iff.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.isPSplitting_replicate_singleton
 ---
 
-# Is PSplitting replicate singleton
+# $p$ copies of $u$ form a $p$-splitting of $\{pu\}$
 
-`(u)^p` is a `p`-splitting of `(pu)`.
+**$p$ copies of $u$ form a $p$-splitting of $\{pu\}$.** For every natural number $p$ and every
+integer $u \ge 1$, the multiset consisting of $p$ copies of $u$ is a $p$-splitting of the
+one-element multiset $\{pu\}$.
 
 ## Depends on
 
-- [Is PSplitting](is-psplitting.md)
+- [$p$-splitting of multisets of parts](is-psplitting.md)
 
 ## Sources
 

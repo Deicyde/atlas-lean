@@ -5,6 +5,6 @@ navigation: module
 
 # Bh Set
 
-- [Sum NE](sum-ne.md)
-- [Sum NE proof irrel](sum-ne-proof-irrel.md)
-- [Is Bh Set](is-bh-set.md)
+- [Sum of a nonempty list](sum-ne.md)
+- [The sum of a nonempty list does not depend on the nonemptiness proof](sum-ne-proof-irrel.md)
+- [$B_h$-set](is-bh-set.md)

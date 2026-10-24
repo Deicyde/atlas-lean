@@ -6,12 +6,16 @@ statement: formalized
 lean: PeriodPair.IsProperIdeal
 ---
 
-# Is Proper Ideal
+# Lattices that are proper ideals
 
-A period lattice is a proper ideal of `𝒪` when its endomorphism ring is exactly `𝒪`.
+**Lattices that are proper ideals.** Let $\Lambda$ be the period lattice of a pair of
+$\mathbb{R}$-linearly independent complex numbers, and let $\mathcal{O}$ be a subring of
+$\mathbb{C}$. Then $\Lambda$ is a proper ideal of $\mathcal{O}$ when the endomorphism ring of
+$\Lambda$, the subring of all $a \in \mathbb{C}$ with $a z \in \Lambda$ for every $z \in \Lambda$,
+equals $\mathcal{O}$.
 
-The ambient assumptions that `𝒪` is an imaginary quadratic order and that the lattice is an
-`𝒪`-ideal are deliberately kept separate from this predicate.
+The ambient assumptions that $\mathcal{O}$ is an imaginary quadratic order and that $\Lambda$ is
+an $\mathcal{O}$-ideal are deliberately kept separate from this predicate.
 
 ## Depends on
 
@@ -19,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Endomorphism Ring](endomorphism-ring.md)
+- [Endomorphism ring of a period lattice](endomorphism-ring.md)
 
 ## Sources
 

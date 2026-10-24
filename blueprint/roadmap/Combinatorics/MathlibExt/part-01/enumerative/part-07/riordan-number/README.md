@@ -5,5 +5,5 @@ navigation: module
 
 # Riordan Number
 
-- [Riordan Number](riordan-number.md)
-- [Riordan Number eq sum](riordan-number-eq-sum.md)
+- [Riordan numbers](riordan-number.md)
+- [Riordan numbers as an alternating Catalan sum](riordan-number-eq-sum.md)

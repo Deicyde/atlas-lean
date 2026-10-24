@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.taylorCoeff_comp_eq_sum_partitions
 ---
 
-# Taylor Coeff comp eq sum partitions
+# Faà di Bruno's formula for Taylor coefficients
 
-Faà di Bruno's formula for Taylor coefficients: writing `Tₙ(f; a) = f⁽ⁿ⁾(a) / n!`,
-`Tₙ(f ∘ g; a) = ∑_{π ∈ P(n)} (l(π) choose π₁, …, πₙ) · T_{l(π)}(f; g(a)) · ∏_{i=1}^{n} Tᵢ(g; a)^{πᵢ}`,
-where a partition `π` of `n` is described by the multiplicities `πᵢ` of its parts `i`,
-`l(π) = π₁ + ⋯ + πₙ` is its number of parts, and the multinomial coefficient is
-`l(π)! / (π₁! ⋯ πₙ!)`. The hypothesis "`f` and `g` have `n`th derivatives" is read as
-`f` being `Cⁿ` near `g(a)` and `g` being `Cⁿ` near `a` (`ContDiffAt ℝ n`), so that Mathlib's
-`iteratedDeriv` is the classical `n`th derivative; real functions of a real variable.
+**Faà di Bruno's formula for Taylor coefficients.** Let $f, g : \mathbb{R} \to \mathbb{R}$,
+let $a \in \mathbb{R}$ and let $n$ be a natural number. Suppose that $g$ is $n$ times continuously
+differentiable on a neighbourhood of $a$ and that $f$ is $n$ times continuously differentiable on a
+neighbourhood of $g(a)$. For a partition $\pi$ of $n$, let $m_i(\pi)$ be the number of parts of
+$\pi$ equal to $i$, and let $\ell(\pi) = m_1(\pi) + \cdots + m_n(\pi)$ be its number of parts. Then
+
+$$\frac{(f \circ g)^{(n)}(a)}{n!} = \sum_{\pi} \frac{\ell(\pi)!}{\prod_{i=1}^{n} m_i(\pi)!} \cdot
+\frac{f^{(\ell(\pi))}(g(a))}{\ell(\pi)!} \cdot
+\prod_{i=1}^{n} \Bigl(\frac{g^{(i)}(a)}{i!}\Bigr)^{m_i(\pi)},$$
+
+where the sum runs over all partitions $\pi$ of $n$.
 
 ## Depends on
 

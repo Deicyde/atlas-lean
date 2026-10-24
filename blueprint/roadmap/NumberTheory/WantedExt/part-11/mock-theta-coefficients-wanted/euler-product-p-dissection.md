@@ -17,7 +17,7 @@ Gu, Theorem 2.2.)
 
 ## Depends on
 
-- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [The Euler products of partition theory](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 - [Ramanujan Theta Monomial](ramanujan-theta-monomial.md)
 
 ## Sources

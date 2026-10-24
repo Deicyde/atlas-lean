@@ -6,9 +6,11 @@ proof: formalized
 lean: Finpartition.eq_bot_iff_card_parts_eq_card
 ---
 
-# Eq bot iff card parts eq card
+# Recognizing the partition into singletons by its number of blocks
 
-A partition is bottom iff its number of blocks equals the carrier cardinality.
+**Recognizing the partition into singletons by its number of blocks.** A partition $P$ of a
+finite set $s$ is the finest partition $\bot$ of $s$, whose blocks are the singletons $\{a\}$
+for $a \in s$, if and only if the number of blocks of $P$ equals $|s|$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [One le card of mem parts](one-le-card-of-mem-parts.md)
+- [Blocks are nonempty](one-le-card-of-mem-parts.md)
 
 ## Sources
 

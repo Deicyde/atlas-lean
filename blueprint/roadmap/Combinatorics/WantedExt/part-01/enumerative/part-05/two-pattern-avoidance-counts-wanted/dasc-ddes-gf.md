@@ -17,8 +17,8 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Has Pattern](../../part-04/odd-fibonacci-wanted/has-pattern.md)
-- [Perm Double Ascents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-ascents.md)
-- [Perm Double Descents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-descents.md)
+- [Number of double ascents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-ascents.md)
+- [Number of double descents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-descents.md)
 
 ## Sources
 

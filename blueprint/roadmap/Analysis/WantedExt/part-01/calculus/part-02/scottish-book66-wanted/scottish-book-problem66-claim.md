@@ -5,16 +5,20 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.ScottishBook66Wanted.ScottishBookProblem66Claim
 ---
 
-# Scottish Book Problem66 Claim
+# Mazur's mixed partial derivatives claim
 
-Mazur's Problem 66 from the Scottish Book: if a real-valued function
-`f` of two real variables has first partial derivatives and the two pure
-second partial derivatives, must the two mixed second partial derivatives
-exist almost everywhere? The hypotheses and the conclusion are stated
-on the open unit square: `f` is separately twice differentiable at every
-point of `(0, 1) × (0, 1)`, and the conclusion is that the mixed partial
-`f_xy`, the derivative in `x` of the `y`-partial, exists at almost every
-point of the square.
+**Mazur's mixed partial derivatives claim.** This is the following statement, the claim of
+Mazur's Problem 66 from the Scottish Book. Let $Q = (0, 1) \times (0, 1)$ be the open unit square.
+For every function $f : \mathbb{R}^2 \to \mathbb{R}$ such that, at every point $(x, y) \in Q$, the
+functions $s \mapsto f(s, y)$ and $s \mapsto f(x, s)$ are differentiable at $x$ and at $y$
+respectively, and their derivatives $\partial_x f(\cdot, y)$ and $\partial_y f(x, \cdot)$ are
+again differentiable at $x$ and at $y$ respectively, the mixed partial derivative
+$\partial_x \partial_y f$ exists at almost every point of $Q$ for Lebesgue measure: for almost
+every $(x, y) \in Q$, the function $s \mapsto \partial_y f(s, y)$ is differentiable at $x$.
+
+Mazur asked whether a function with first partial derivatives and both pure second partial
+derivatives must have its mixed second partial derivatives almost everywhere; the claim asks this
+only for $\partial_x \partial_y f$.
 
 ## Depends on
 

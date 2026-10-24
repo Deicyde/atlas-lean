@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.IsDividedPowerIdeal.mul
 ---
 
-# Mul
+# Product of a divided-power ideal with an ideal
 
-If `𝔞` is a divided-power ideal, then so is `𝔞𝔟` for every ideal `𝔟`. Stated for any
-commutative ring.
+**Product of a divided-power ideal with an ideal.** Let $A$ be a commutative ring. If
+$\mathfrak{a}$ is a divided-power ideal of $A$, then for every ideal $\mathfrak{b}$ of $A$ the
+product $\mathfrak{a}\mathfrak{b}$ is a divided-power ideal.
 
 ## Depends on
 
-- [Is Divided Power Ideal](is-divided-power-ideal.md)
+- [Divided-power ideal](is-divided-power-ideal.md)
 
 ## Sources
 

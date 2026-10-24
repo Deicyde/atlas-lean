@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_cosPowArea_doubleFactorial
 ---
 
-# Tendsto cos Pow Area double Factorial
+# Limiting area between cosine powers via double factorials
 
-Theorem 4, double-factorial formulas: for `n` odd,
-`A_n = 8/π · n!/(n!!)² · ∑_{j=0}^{(n-1)/2} (2j-1)!!/(2j)!! · 1/(2j+1)`, and for
-`n ≥ 2` even,
-`A_n = 16/π · n!/(n!!)² · ∑_{j=0}^{(n-2)/2} (2j)!!/(2j+1)!! · 1/(2j+2)`
-(with `(-1)!! = 1`, which `Nat.doubleFactorial (2 * 0 - 1) = 0‼ = 1` matches).
+**Limiting area between cosine powers via double factorials.** For natural numbers $n$ and
+$k$, let $A_n(k) = \int_0^\pi |\cos^n x - \cos^n(kx)|\,dx$. As $k \to \infty$ through the natural
+numbers: if $n$ is odd, then
+
+$$A_n(k) \to \frac{8 \, n!}{\pi (n!!)^2} \sum_{j=0}^{(n-1)/2} \frac{(2j-1)!!}{(2j)!! (2j+1)},$$
+
+and if $n \ge 2$ is even, then
+
+$$A_n(k) \to \frac{16 \, n!}{\pi (n!!)^2} \sum_{j=0}^{(n-2)/2} \frac{(2j)!!}{(2j+1)!! (2j+2)}.$$
+
+Here $(-1)!! = 1$ and $0!! = 1$.
 
 ## Depends on
 
-- [Cos Pow Area](cos-pow-area.md)
+- [Area between powers of cosines](cos-pow-area.md)
 
 ## Sources
 

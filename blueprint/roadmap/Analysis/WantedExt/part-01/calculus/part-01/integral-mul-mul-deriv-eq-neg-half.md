@@ -5,17 +5,20 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.IntegralXFDerivFWanted.integral_mul_mul_deriv_eq_neg_half
 ---
 
-# Integral XFDeriv FWanted
+# The integral of $x f(x) f'(x)$ equals $-1/2$
 
-Suppose $f$ is a real, continuously differentiable function on $[a,b]$, $f(a)=f(b)=0$, and
+**The integral of $x f(x) f'(x)$ equals $-1/2$.** Let $a\lt b$ and let
+$f : \mathbb{R} \to \mathbb{R}$ be continuously differentiable on $[a,b]$ with $f(a)=f(b)=0$ and
 
-\[
-\int_a^b f^2(x)\,dx=1.
-\]
-Prove that
-\[
-\int_a^b x f(x)f'(x)\,dx=-\frac12
-\]
+$$
+\int_a^b f(x)^2\,dx=1.
+$$
+
+Then
+
+$$
+\int_a^b x\,f(x)\,f'(x)\,dx=-\frac12.
+$$
 
 ## Depends on
 

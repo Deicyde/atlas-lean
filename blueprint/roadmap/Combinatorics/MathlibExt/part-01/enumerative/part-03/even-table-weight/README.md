@@ -5,5 +5,5 @@ navigation: module
 
 # Even Table Weight
 
-- [Even Table](even-table.md)
-- [Even Table Weight](even-table-weight.md)
+- [Even table](even-table.md)
+- [Weight of an even table](even-table-weight.md)

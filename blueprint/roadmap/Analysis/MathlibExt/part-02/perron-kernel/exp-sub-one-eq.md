@@ -7,9 +7,13 @@ proof: formalized
 lean: PerronKernel.exp_sub_one_eq
 ---
 
-# Exp sub one eq
+# Integral formula for $e^w - 1$
 
-`exp w - 1 = w * ∫_0^1 exp (t * w)`, by FTC.
+**Integral formula for $e^w - 1$.** For every complex number $w$,
+
+$$e^w - 1 = w \int_0^1 e^{tw}\,dt,$$
+
+where $t$ ranges over the real interval $[0, 1]$.
 
 ## Depends on
 

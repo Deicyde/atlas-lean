@@ -13,7 +13,7 @@ function is pinned by the repository predicate `Real.IsDickmanDeBruijn` (normali
 
 ## Depends on
 
-- [Is Dickman De Bruijn](../../../../Analysis/MathlibExt/part-01/special-functions/part-01/dickman-de-bruijn/is-dickman-de-bruijn.md)
+- [Dickman–de Bruijn functions](../../../../Analysis/MathlibExt/part-01/special-functions/part-01/dickman-de-bruijn/is-dickman-de-bruijn.md)
 
 ## Sources
 

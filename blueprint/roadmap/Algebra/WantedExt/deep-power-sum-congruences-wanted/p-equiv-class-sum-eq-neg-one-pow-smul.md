@@ -5,14 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.pEquivClassSum_eq_neg_one_pow_smul
 ---
 
-# P Equiv Class Sum eq neg one pow smul
+# For odd $p$ the signs in $g_\lambda$ are constant
 
-For odd `p` the signs in `g_λ` are constant on the class:
-`g_λ = (-1)^λ Σ_{μ ∼_p λ} p_μ / z_μ`.
+**For odd $p$ the signs in $g_\lambda$ are constant.** Let $p$ be an odd prime, $\sigma$ a
+finite set of variables and $\lambda$ a partition of $n$ with $\ell(\lambda)$ parts. Then the
+$p$-equivalence class sum $g_\lambda$ in $\mathbb{Q}[x_i : i \in \sigma]$ satisfies
+
+$$g_\lambda = (-1)^{n - \ell(\lambda)} \sum_{\mu \in C_\lambda} \frac{p_\mu}{z_\mu},$$
+
+where $C_\lambda$ is the $p$-equivalence class of $\lambda$ (the partitions $\mu$ of $n$ with
+$\mu \sim_p \lambda$), $p_\mu = \prod_i p_{\mu_i}$ is the product of the power sums
+$p_k = \sum_{i \in \sigma} x_i^k$, and $z_\mu = \prod_a a^{r_a} \, r_a!$, the product over the
+distinct parts $a$ of $\mu$, with $r_a$ the number of parts of $\mu$ equal to $a$.
 
 ## Depends on
 
-- [P Equiv Class](p-equiv-class.md)
+- [The $p$-equivalence class of a multiset of parts](p-equiv-class.md)
 - [P Equiv Class Sum](p-equiv-class-sum.md)
 
 ## Sources

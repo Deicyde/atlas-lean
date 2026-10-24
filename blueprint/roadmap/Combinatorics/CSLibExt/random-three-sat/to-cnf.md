@@ -5,19 +5,21 @@ statement: formalized
 lean: CSLibExt.Combinatorics.RandomThreeSat.toCNF
 ---
 
-# To CNF
+# CNF formula of a random 3-SAT formula
 
-The canonical CNF formula of a model formula.
+**CNF formula of a random 3-SAT formula.** The CNF formula of a formula $F$ with $m$ clauses
+$F_0, \dots, F_{m-1}$ on $n$ variables is the list of the CNF clauses of $F_0, \dots, F_{m-1}$,
+in this order.
 
 ## Depends on
 
-- [Formula](formula.md)
+- [Formulas of the random 3-SAT model](formula.md)
 - [CNF](../../../Logic/CSLibExt/propositional/cnf/basic/cnf.md)
 
 ## Proof depends on
 
-- [Clause](clause.md)
-- [To CNFClause](to-cnfclause.md)
+- [3-clause](clause.md)
+- [CNF clause of a random 3-SAT clause](to-cnfclause.md)
 - [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

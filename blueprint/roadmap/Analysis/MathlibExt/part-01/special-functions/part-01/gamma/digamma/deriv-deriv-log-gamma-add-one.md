@@ -7,9 +7,11 @@ proof: formalized
 lean: Real.deriv_deriv_log_Gamma_add_one
 ---
 
-# Deriv deriv log Gamma add one
+# Trigamma series
 
-Trigamma series on `(1, ∞)`: `(log ∘ Gamma)''(y + 1) = ∑ 1/(y+j+1)²` for `y > 0`.
+**Trigamma series.** For every real $y > 0$, the second derivative of $\log \Gamma$ at
+$y + 1$ equals $\sum_{j=0}^{\infty} \frac{1}{(y + j + 1)^2}$, where $\Gamma$ is the real Gamma
+function.
 
 ## Depends on
 
@@ -17,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Deriv At tsum digamma series](has-deriv-at-tsum-digamma-series.md)
-- [Has Sum digamma series](has-sum-digamma-series.md)
+- [Derivative of the digamma series](has-deriv-at-tsum-digamma-series.md)
+- [Digamma series on the positive reals](has-sum-digamma-series.md)
 
 ## Sources
 

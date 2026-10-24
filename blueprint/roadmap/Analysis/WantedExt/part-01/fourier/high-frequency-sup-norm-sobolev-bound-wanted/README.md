@@ -4,5 +4,5 @@ navigation: module
 
 # High Frequency Sup Norm Sobolev Bound
 
-- [Dot HSeminorm](dot-hseminorm.md)
-- [S Sup norm le rpow mul dot HSeminorm of tsupport fourier compl Icc](s-sup-norm-le-rpow-mul-dot-hseminorm-of.md)
+- [Homogeneous Sobolev seminorm for the high-frequency sup-norm bound](dot-hseminorm.md)
+- [Sup bound for Schwartz functions with high-frequency Fourier support](s-sup-norm-le-rpow-mul-dot-hseminorm-of.md)

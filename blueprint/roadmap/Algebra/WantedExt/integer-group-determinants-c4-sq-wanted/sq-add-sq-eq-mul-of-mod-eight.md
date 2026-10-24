@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.sq_add_sq_eq_mul_of_mod_eight
 ---
 
-# Corollary 3
+# Sums of two squares congruent to −3 modulo 8
 
-**Corollary 3.** If `a² + b² ≡ -3 (mod 8)`, then `a² + b² = (8k + 1)(8l - 3)` for some
-`k ∈ ℤ` and `8l - 3 ∈ P`.
+**Sums of two squares congruent to −3 modulo 8.** Let $a$ and $b$ be integers with
+$a^2 + b^2 \equiv -3 \pmod 8$. Then there are integers $k$ and $l$ such that $8l - 3$ lies in
+the set $P$ of positive primes congruent to $5$ modulo $8$, and $a^2 + b^2 = (8k + 1)(8l - 3)$.
 
 ## Depends on
 
-- [Primes Five Mod Eight](primes-five-mod-eight.md)
+- [Primes congruent to $-3$ modulo $8$](primes-five-mod-eight.md)
 
 ## Sources
 

@@ -5,10 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.Gamma_add_one_mul_log_le_Gamma_rpow_self
 ---
 
-# Gamma add one mul log le Gamma rpow self
+# Upper bound $\Gamma(x + 1) \ln \Gamma(x + 1) \le \Gamma(x)^{\Gamma(x)}$
 
-Lemma 9, second inequality: `Γ(x + 1) ln Γ(x + 1) ≤ Γ(x)^{Γ(x)}` for every
-real `x > 4`.
+**Upper bound $\Gamma(x + 1) \ln \Gamma(x + 1) \le \Gamma(x)^{\Gamma(x)}$.** For every real
+number $x > 4$, $\Gamma(x + 1) \ln \Gamma(x + 1) \le \Gamma(x)^{\Gamma(x)}$.
 
 ## Depends on
 

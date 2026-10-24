@@ -17,10 +17,10 @@ lean: MetaMathlibExt.pedNineNine_zero_and_pedNineEighteen_zero
 
 ## Proof depends on
 
-- [Constant Coeff q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/constant-coeff-q-euler-product.md)
+- [Constant term of the Euler products](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/constant-coeff-q-euler-product.md)
 - [Ped Nine Eighteen generating Function](ped-nine-eighteen-generating-function.md)
 - [Ped Nine Nine generating Function](ped-nine-nine-generating-function.md)
-- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [The Euler products of partition theory](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

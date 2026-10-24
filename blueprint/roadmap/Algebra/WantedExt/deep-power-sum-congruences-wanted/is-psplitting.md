@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsPSplitting
 ---
 
-# Is PSplitting
+# $p$-splitting of multisets of parts
 
-`s` is a *`p`-splitting* of `t` (multisets of parts): `t` contains a part `p u` with `u ≥ 1`,
-and `s` is obtained from `t` by replacing one instance of `p u` with `p` copies of `u`.
+**$p$-splitting of multisets of parts.** Let $p$ be a natural number and $s$, $t$ multisets of
+natural numbers (multisets of parts). Then $s$ is a *$p$-splitting* of $t$ when there is $u \ge 1$
+such that $t$ contains the part $pu$ and $s$ is obtained from $t$ by removing one instance of $pu$
+and adding $p$ copies of $u$.
 
 ## Depends on
 

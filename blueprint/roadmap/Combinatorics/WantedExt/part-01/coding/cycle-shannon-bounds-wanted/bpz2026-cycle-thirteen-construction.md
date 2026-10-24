@@ -11,7 +11,7 @@ Source: BPZ, arXiv:2607.29681, thirteen-cycle construction in dimension 432.
 
 ## Depends on
 
-- [Is Cycle Code](../../../../MathlibExt/part-01/coding/cycle-code/is-cycle-code.md)
+- [Independent codes for the modular cycle](../../../../MathlibExt/part-01/coding/cycle-code/is-cycle-code.md)
 - [BPZProfile](bpzprofile.md)
 - [Bpz C13 Pi72](bpz-c13-pi72.md)
 

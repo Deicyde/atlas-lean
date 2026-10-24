@@ -7,9 +7,10 @@ proof: formalized
 lean: MetaMathlibExt.staver_sign_even
 ---
 
-# Staver sign even
+# Reflecting a power of minus one, even case
 
-For even `n`, reflection preserves the sign.
+**Reflecting a power of minus one, even case.** If $n$ is an even natural number and
+$k \le n$ is a natural number, then $(-1)^{n-k} = (-1)^k$ in $\mathbb{Q}$.
 
 ## Depends on
 
@@ -17,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Staver sign mul](staver-sign-mul.md)
-- [Staver sign sq](staver-sign-sq.md)
+- [Splitting a power of minus one](staver-sign-mul.md)
+- [Squares of powers of minus one](staver-sign-sq.md)
 
 ## Sources
 

@@ -7,11 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.chen_stirlingSecond_expansion
 ---
 
-# Chen stirling Second expansion
+# Chen's Stirling expansion
 
-Chen's expansion of the zeroth entry of an array satisfying
-`a m (s + 1) = m * a m s - (m + 1) * a (m + 1) s`, a variant of the Akiyama-Tanigawa
-algorithm, by signed Stirling numbers of the second kind.
+**Chen's Stirling expansion.** Let $a(m, s)$, for natural numbers $m$ and $s$, be real
+numbers satisfying $a(m, s + 1) = m \, a(m, s) - (m + 1) \, a(m + 1, s)$ for all $m$ and $s$.
+Then for every natural number $t$,
+
+$$a(0, t) = \sum_{m=0}^{t} (-1)^m \, m! \, S(t, m) \, a(m, 0),$$
+
+where $S(t, m)$ is the Stirling number of the second kind.
+
+This recurrence is a variant of the Akiyama–Tanigawa algorithm.
 
 ## Depends on
 

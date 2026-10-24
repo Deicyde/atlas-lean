@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.mem_compositionIndexSet
 ---
 
-# Mem composition Index Set
+# Membership in $T(m, n, q)$
 
-Membership in `T(m, n, q)` unfolded.
+**Membership in $T(m, n, q)$.** For natural numbers $m$, $n$, $q$ and $k$, the number $k$
+lies in the index set $T(m, n, q)$ if and only if $k \equiv n - q \pmod{m}$, with the difference
+taken in the integers, and $k < n$.
 
 ## Depends on
 
-- [Composition Index Set](composition-index-set.md)
+- [The index set $T(m, n, q)$](composition-index-set.md)
 
 ## Sources
 

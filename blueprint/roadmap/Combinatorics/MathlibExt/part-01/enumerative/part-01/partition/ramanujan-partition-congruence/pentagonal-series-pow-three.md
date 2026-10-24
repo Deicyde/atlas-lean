@@ -7,26 +7,28 @@ proof: formalized
 lean: MetaMathlibExt.pentagonalSeries_pow_three
 ---
 
-# Pentagonal Series pow three
+# Jacobi's cube identity
 
-Jacobi's cube identity, formal: `E^3 = J` in `ℤ⟦X⟧`.
+**Jacobi's cube identity.** Let $E(X) = \sum_{k \in \mathbb{Z}} (-1)^k X^{k(3k-1)/2}$ be
+Euler's pentagonal series and $J(X) = \sum_{t \ge 0} (-1)^t (2t+1) X^{t(t+1)/2}$ Jacobi's cube
+series, both in $\mathbb{Z}[[X]]$. Then $E(X)^3 = J(X)$.
 
 ## Depends on
 
-- [Jacobi Cube Series](jacobi-cube-series.md)
+- [Jacobi's cube series](jacobi-cube-series.md)
 
 ## Proof depends on
 
-- [Gauss Binom](../../../part-03/gaussian-binomial/gauss-binom.md)
-- [Gauss Binom eq zero of lt](../../../part-03/gaussian-binomial/gauss-binom-eq-zero-of-lt.md)
-- [Gauss Binom mul q Poch Fin mul q Poch Fin](../../../part-03/gaussian-binomial/gauss-binom-mul-q-poch-fin-mul-q-poch-fi.md)
-- [Gauss Binom self](../../../part-03/gaussian-binomial/gauss-binom-self.md)
-- [Gauss Binom succ succ](../../../part-03/gaussian-binomial/gauss-binom-succ-succ.md)
-- [Gauss Binom zero right](../../../part-03/gaussian-binomial/gauss-binom-zero-right.md)
-- [Gauss Binom zero succ](../../../part-03/gaussian-binomial/gauss-binom-zero-succ.md)
-- [Q Poch Fin](../../../part-03/gaussian-binomial/q-poch-fin.md)
-- [Q Poch Fin succ](../../../part-03/gaussian-binomial/q-poch-fin-succ.md)
-- [Two mul choose two succ](two-mul-choose-two-succ.md)
+- [Gaussian binomial coefficient](../../../part-03/gaussian-binomial/gauss-binom.md)
+- [Gaussian binomial coefficients vanish when $k > M$](../../../part-03/gaussian-binomial/gauss-binom-eq-zero-of-lt.md)
+- [Product formula for Gaussian binomial coefficients](../../../part-03/gaussian-binomial/gauss-binom-mul-q-poch-fin-mul-q-poch-fi.md)
+- [Diagonal Gaussian binomial coefficients](../../../part-03/gaussian-binomial/gauss-binom-self.md)
+- [$Q$-Pascal recursion for Gaussian binomial coefficients](../../../part-03/gaussian-binomial/gauss-binom-succ-succ.md)
+- [Gaussian binomial coefficients with $k = 0$](../../../part-03/gaussian-binomial/gauss-binom-zero-right.md)
+- [Gaussian binomial coefficients with $M = 0$](../../../part-03/gaussian-binomial/gauss-binom-zero-succ.md)
+- [Finite $Q$-Pochhammer symbol](../../../part-03/gaussian-binomial/q-poch-fin.md)
+- [Recursion for the finite $Q$-Pochhammer symbol](../../../part-03/gaussian-binomial/q-poch-fin-succ.md)
+- [Twice a triangular number](two-mul-choose-two-succ.md)
 
 ## Sources
 

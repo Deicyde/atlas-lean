@@ -5,18 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.XYOverNormSqDiscontinuityWanted.continuousOn_compl_and_not_continuousAt_mul_div_sq_add_sq
 ---
 
-# XYOver Norm Sq Discontinuity Wanted
+# The function $xy/(x^2+y^2)$ is discontinuous only at the origin
 
-Consider the function $f:\mathbb{R}^{2}\to\mathbb{R}$ defined by
-
-\[
-f(x,y):=
-\begin{cases}
-\dfrac{xy}{x^{2}+y^{2}}, & (x,y)\neq(0,0),\\
-0, & (x,y)=(0,0).
-\end{cases}
-\]
-Prove that $f$ is continuous on $\mathbb{R}^{2}\setminus\{(0,0)\}$ and discontinuous at $(0,0)$.
+**The function $xy/(x^2+y^2)$ is discontinuous only at the origin.** Let
+$f : \mathbb{R}^2 \to \mathbb{R}$ be given by $f(x,y) = \frac{xy}{x^2+y^2}$ for
+$(x,y) \neq (0,0)$ and $f(0,0) = 0$. Then $f$ is continuous on $\mathbb{R}^2 \setminus \{(0,0)\}$
+and is not continuous at $(0,0)$.
 
 ## Depends on
 

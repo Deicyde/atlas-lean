@@ -5,7 +5,7 @@ navigation: module
 
 # Sturmian Word
 
-- [Factor Ones](factor-ones.md)
-- [Is Balanced](is-balanced.md)
-- [Is Aperiodic](is-aperiodic.md)
-- [Is Sturmian](is-sturmian.md)
+- [Number of ones in a factor](factor-ones.md)
+- [Balanced infinite words](is-balanced.md)
+- [Aperiodic infinite words](is-aperiodic.md)
+- [Sturmian words](is-sturmian.md)

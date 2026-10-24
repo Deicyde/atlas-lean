@@ -6,20 +6,21 @@ proof: formalized
 lean: MathlibExt.Analysis.ODE.RungeKutta.midpointRK_orderTwo
 ---
 
-# Midpoint RK order Two
+# The midpoint tableau satisfies the order-two conditions
 
-The midpoint method satisfies the order-two conditions.
+**The midpoint tableau satisfies the order-two conditions.** For the midpoint tableau, with
+weights $b_i$ and nodes $c_i$, we have $\sum_i b_i = 1$ and $\sum_i b_i c_i = 1/2$.
 
 ## Depends on
 
-- [Order Two](order-two.md)
-- [Midpoint RK](midpoint-rk.md)
+- [Order-two conditions for Runge–Kutta methods](order-two.md)
+- [Midpoint tableau](midpoint-rk.md)
 
 ## Proof depends on
 
-- [Explicit RK](explicit-rk.md)
-- [C](c.md)
-- [Order One](order-one.md)
+- [Explicit Runge–Kutta method](explicit-rk.md)
+- [Nodes of a Runge–Kutta method](c.md)
+- [Order-one condition for Runge–Kutta methods](order-one.md)
 
 ## Sources
 

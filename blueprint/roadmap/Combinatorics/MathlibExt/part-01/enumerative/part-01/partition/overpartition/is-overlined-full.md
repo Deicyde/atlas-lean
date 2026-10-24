@@ -7,14 +7,16 @@ proof: formalized
 lean: Nat.Overpartition.isOverlined_full
 ---
 
-# Is Overlined full
+# Overlined sizes in the fully overlined overpartition
 
-A size is overlined in `full p` exactly when it occurs in `p`.
+**Overlined sizes in the fully overlined overpartition.** For every partition $p$ of $n$ and
+every natural number $a$, $a$ is overlined in the fully overlined overpartition of $p$ if and
+only if $a$ is a part of $p$.
 
 ## Depends on
 
-- [Is Overlined](is-overlined.md)
-- [Full](full.md)
+- [Overlined part size](is-overlined.md)
+- [Fully overlined overpartition](full.md)
 
 ## Sources
 

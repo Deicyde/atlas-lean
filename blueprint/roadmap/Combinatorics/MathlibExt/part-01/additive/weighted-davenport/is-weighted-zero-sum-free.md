@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.IsWeightedZeroSumFree
 ---
 
-# Is Weighted Zero Sum Free
+# Weighted zero-sum free sequences
 
-A list `s` over `G` is `A`-weighted zero-sum free when no non-empty set of its
-positions, with weights from `A` attached to those positions, has weighted sum zero.
-Lists keep multiplicities; positions are indexed by `Fin s.length`.
+**Weighted zero-sum free sequences.** Let $G$ be an additive commutative monoid and $A$ a
+finite set of natural numbers. A finite sequence $s = (s_1, \dots, s_n)$ over $G$ is
+$A$-weighted zero-sum free when, for every non-empty set $I \subseteq \{1, \dots, n\}$ of
+positions and every choice of weights $a_i \in A$ for $i \in I$, the weighted sum
+$\sum_{i \in I} a_i s_i$ is non-zero, where $a_i s_i$ is the sum of $a_i$ copies of $s_i$.
+Terms are indexed by position, so repeated terms count separately.
 
 ## Depends on
 

@@ -7,17 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.QRWhitney.whitneySecond_zero_succ
 ---
 
-# Whitney Second zero succ
+# Row zero of the second-kind (q, r)-Whitney numbers vanishes off the diagonal
 
-Initial condition `W(0, k + 1) = 0`.
-Concept `jis_sem_1510537ed21edced61e4c308`; statements `jis_b6c9b8526668212b3d271ce0`,
-`jis_bfbfab3b67f1c02f167938f1`, `jis_bfd5e69c1279fc0a6f4ff0e3`, `jis_ceb0c2289757d5617de10695`,
-`jis_dd5f8c454fc5760fb197859b`.
+**Row zero of the second-kind (q, r)-Whitney numbers vanishes off the diagonal.** For
+complex numbers $m$, $r$, $q$, let $W_{m,r,q}(i, j)$, for natural numbers $i$ and $j$, denote
+the $(q, r)$-Whitney numbers of the second kind. Then $W_{m,r,q}(0, k + 1) = 0$ for every
+natural number $k$.
 
 ## Depends on
 
-- [Whitney Second](whitney-second.md)
+- [(q, r)-Whitney numbers of the second kind](whitney-second.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.QRWhitneyNumbers](../../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_1510537ed21edced61e4c308`; statements `jis_b6c9b8526668212b3d271ce0`, `jis_bfbfab3b67f1c02f167938f1`, `jis_bfd5e69c1279fc0a6f4ff0e3`, `jis_ceb0c2289757d5617de10695`, `jis_dd5f8c454fc5760fb197859b`.

@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.permRightToLeftMaxCount
 ---
 
-# Perm Right To Left Max Count
+# Number of right-to-left maxima
 
-The number of right-to-left maxima `rmax(σ)`: entries larger than every entry to their right.
+**Number of right-to-left maxima.** For a permutation $\sigma$ of $\{0, 1, \dots, n - 1\}$
+written in one-line notation, $\operatorname{rmax}(\sigma)$ is the number of positions $i$ such
+that $\sigma(j) < \sigma(i)$ for every position $j > i$, that is, the number of entries larger
+than every entry to their right.
 
 ## Depends on
 

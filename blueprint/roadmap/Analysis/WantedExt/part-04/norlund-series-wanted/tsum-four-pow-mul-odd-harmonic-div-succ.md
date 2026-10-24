@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.tsum_four_pow_mul_odd_harmonic_div_succ_mul_choose_mul_centralBinom
 ---
 
-# Tsum four pow mul odd harmonic div succ mul choose mul central Binom
+# An odd harmonic series with binomial and central binomial denominators
 
-Theorem 11: for a positive integer `m`,
-`Σ_{n≥0} 2^{2n} O_{n+m}/((n + 1) C(n + m, m) C(2(n + m), n + m))
-  = (m/4) C(2(m - 1), m - 1)^{-1} (7ζ(3) - 8O^{(3)}_{m-1} + O_{m-1}(3ζ(2) - 4O^{(2)}_{m-1}))`.
+**An odd harmonic series with binomial and central binomial denominators.** Let $\zeta$ be
+the Riemann zeta function, let $O^{(r)}_k = \sum_{j=1}^{k} 1/(2j-1)^r$ be the $k$-th odd harmonic
+number of order $r$, and write $O_k = O^{(1)}_k$. For every positive integer $m$,
+
+$$\sum_{n=0}^{\infty} \frac{4^n O_{n+m}}{(n+1) \binom{n+m}{m} \binom{2(n+m)}{n+m}} =
+\frac{m}{4 \binom{2(m-1)}{m-1}} \Bigl(7\zeta(3) - 8 O^{(3)}_{m-1} +
+O_{m-1} \bigl(3\zeta(2) - 4 O^{(2)}_{m-1}\bigr)\Bigr).$$
 
 ## Depends on
 

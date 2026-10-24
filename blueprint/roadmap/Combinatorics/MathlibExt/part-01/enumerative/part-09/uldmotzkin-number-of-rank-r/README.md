@@ -4,10 +4,10 @@ navigation: module
 
 # ULDMotzkin Number Of Rank R
 
-- [ULDMotzkin Step](uldmotzkin-step.md)
-- [Step Height](step-height.md)
-- [Path Height](path-height.md)
-- [Is Motzkin Path](is-motzkin-path.md)
-- [ULDMotzkin Path](uldmotzkin-path.md)
-- [Uld Motzkin Number](uld-motzkin-number.md)
-- [Uld Motzkin Number eq card](uld-motzkin-number-eq-card.md)
+- [Colored Motzkin steps of a given rank](uldmotzkin-step.md)
+- [Height change of a colored Motzkin step](step-height.md)
+- [Height of a colored step sequence after k steps](path-height.md)
+- [Colored Motzkin path condition](is-motzkin-path.md)
+- [Colored Motzkin paths of rank r and length n](uldmotzkin-path.md)
+- [(u,l,d)-Motzkin numbers of rank r](uld-motzkin-number.md)
+- [The (u,l,d)-Motzkin number counts Motzkin step sequences](uld-motzkin-number-eq-card.md)

@@ -7,10 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.card_add_le_card_sub_of_card_lt_six
 ---
 
-# Card add le card sub of card lt six
+# Chu's theorem for arbitrary finite sets of integers
 
-Chu theorem with the nonnegativity normalization removed, since the argument
-works for every finite set of integers.
+**Chu's theorem for arbitrary finite sets of integers.** Let $A$ be a finite set of integers with
+$|A| < 6$. Then $|A + A| \le |A - A|$, where $A + A = \{a + b : a, b \in A\}$ is the sumset and
+$A - A = \{a - b : a, b \in A\}$ is the difference set of $A$.
+
+This is Chu's theorem without the assumption that the elements of $A$ are nonnegative.
 
 ## Depends on
 

@@ -4,5 +4,5 @@ navigation: module
 
 # Scottish Book66
 
-- [Scottish Book Problem66 Claim](scottish-book-problem66-claim.md)
-- [Mazur66 refuted](mazur66-refuted.md)
+- [Mazur's mixed partial derivatives claim](scottish-book-problem66-claim.md)
+- [Mazur's Problem 66 has a negative answer](mazur66-refuted.md)

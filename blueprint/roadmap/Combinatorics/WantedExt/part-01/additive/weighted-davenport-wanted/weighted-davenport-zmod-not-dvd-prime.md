@@ -14,7 +14,7 @@ the claim fails (`n = 10`, `p = 3`: `k = 0` but `D_A(Z_10) = 2`).
 
 ## Depends on
 
-- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
+- [Weighted Davenport constant](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 
 ## Sources
 

@@ -7,18 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.setLT_iff_setKey_lt
 ---
 
-# Set LT iff set Key lt
+# The sort key encodes the set order
 
-The paper's strict set order agrees exactly with strict order on its numeric sort key.
+**The sort key encodes the set order.** For all subsets $A$ and $B$ of $\{0, \dots, n-1\}$,
+$A < B$ in the set order if and only if the sort key of $A$ is less than the sort key of $B$.
 
 ## Depends on
 
-- [Set Key](set-key.md)
-- [Set LT](set-lt.md)
+- [Sort key of a subset](set-key.md)
+- [Set order](set-lt.md)
 
 ## Proof depends on
 
-- [Bin Rep](bin-rep.md)
+- [Binary code of a subset](bin-rep.md)
 
 ## Sources
 

@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.whittGeneralizedCatalan_zero
 ---
 
-# Whitt Generalized Catalan zero
+# Whitt's generalized Catalan number at zero
 
-`C(α, 0) = 0` (the empty sum).
+**Whitt's generalized Catalan number at zero.** For every rational number $\alpha$, Whitt's
+generalized Catalan number $C(\alpha, 0)$ equals $0$, being an empty sum.
 
 ## Depends on
 
-- [Whitt Generalized Catalan](whitt-generalized-catalan.md)
+- [Whitt's generalized Catalan numbers](whitt-generalized-catalan.md)
 
 ## Sources
 

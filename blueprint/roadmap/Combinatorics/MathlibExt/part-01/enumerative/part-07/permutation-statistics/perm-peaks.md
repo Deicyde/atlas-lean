@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.permPeaks
 ---
 
-# Perm Peaks
+# Number of peaks of a permutation
 
-`pk σ`: the number of peaks of `σ`.
+**Number of peaks of a permutation.** For a permutation $\sigma$ of $\{0, 1, \dots, n - 1\}$
+written in one-line notation, $\operatorname{pk}(\sigma)$ is the number of positions $i$ with
+$i + 2 < n$ and $\sigma(i) < \sigma(i + 1) > \sigma(i + 2)$, that is, the number of peaks of
+$\sigma$.
 
 ## Depends on
 
@@ -15,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Peak At](is-peak-at.md)
+- [Peak of a permutation](is-peak-at.md)
 
 ## Sources
 

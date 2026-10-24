@@ -7,36 +7,31 @@ proof: formalized
 lean: MetaMathlibExt.orderly_canonical_prefix
 ---
 
-# Orderly canonical prefix
+# Orderly generation of union-closed families
 
-Orderly generation for union-closed sets: let `U ≠ {Ω_n, ∅}` be a union-closed
-family for the universe `Ω_n` that is the canonical representative of its
-isomorphism class. If `U = {A_1, …, A_k, ∅}` with `A_1 < ⋯ < A_k` in the
-paper's set order and `1 ≤ m ≤ k`, then the prefix `{A_1, …, A_m, ∅}` is also
-the canonical representative of its class.
+**Orderly generation of union-closed families.** Let $n$, $k$ and $m$ be natural numbers with
+$1 \le m \le k$, and let $A_1, \dots, A_k$ be nonempty subsets of $\Omega_n = \{0, \dots, n-1\}$
+with $A_i < A_j$ in the set order whenever $i < j$. Suppose the family
+$U = \{\emptyset, A_1, \dots, A_k\}$ is union-closed, every element of $\Omega_n$ lies in some
+member of $U$, $U \ne \{\Omega_n, \emptyset\}$, and $U$ is canonical. Then the prefix family
+$\{\emptyset, A_1, \dots, A_m\}$ is canonical.
 
-Provenance: Gunnar Brinkmann and Robin Deklerck, "Generation of Union-Closed
-Sets and Moore Families", Journal of Integer Sequences 21 (2018),
-Article 18.1.7, Theorem `thm:orderly`, source lines 275–281,
-<https://cs.uwaterloo.ca/journals/JIS/VOL21/Brinkmann/brink6.tex>.
-Canonical means the family string (sort keys of nonempty members in increasing
-order) is lexicographically minimal among permuted images; the set order sorts
-by decreasing cardinality, breaking ties by the binary code.
-
-Proof: The binary-key bound identifies the indexed families with strictly sorted key lists, and
-sorted-submultiset order statistics lift any improving permutation of a prefix to the full family.
-This is the orderly-generation argument of Brinkmann and Deklerck, Theorem `thm:orderly`.
+The hypotheses that $U$ is union-closed, covers $\Omega_n$ and differs from
+$\{\Omega_n, \emptyset\}$ are not used in the proof. The string of $U$ lists the sort keys of
+$A_1, \dots, A_k$ in order, so the string of the prefix family is a prefix of it, and a
+permutation that made the prefix family's string smaller would make the string of $U$ smaller.
 
 ## Depends on
 
-- [Is Canonical](is-canonical.md)
-- [Is Union Closed](is-union-closed.md)
-- [Set LT](set-lt.md)
+- [Canonical family](is-canonical.md)
+- [Union-closed family](is-union-closed.md)
+- [Set order](set-lt.md)
 
 ## Proof depends on
 
-- [Orderly canonical prefix of sorted](orderly-canonical-prefix-of-sorted.md)
+- [Prefixes of a sorted canonical family are canonical](orderly-canonical-prefix-of-sorted.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.UnionClosedOrderly](../../../../../../../sources/v2/MathlibExt.md)
+- Gunnar Brinkmann and Robin Deklerck, "Generation of Union-Closed Sets and Moore Families", Journal of Integer Sequences 21 (2018), Article 18.1.7, Theorem `thm:orderly`, source lines 275–281, <https://cs.uwaterloo.ca/journals/JIS/VOL21/Brinkmann/brink6.tex>.

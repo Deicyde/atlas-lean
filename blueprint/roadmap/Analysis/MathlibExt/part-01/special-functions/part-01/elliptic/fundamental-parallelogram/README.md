@@ -5,7 +5,7 @@ navigation: module
 
 # Fundamental Parallelogram
 
-- [Fundamental Parallelogram](fundamental-parallelogram.md)
-- [Fundamental Parallelogram zero](fundamental-parallelogram-zero.md)
-- [Basis repr omega](basis-repr-omega.md)
-- [Mem fundamental Parallelogram iff](mem-fundamental-parallelogram-iff.md)
+- [Fundamental parallelogram](fundamental-parallelogram.md)
+- [Fundamental parallelogram at the origin](fundamental-parallelogram-zero.md)
+- [Coordinates in the period basis](basis-repr-omega.md)
+- [Membership in a fundamental parallelogram](mem-fundamental-parallelogram-iff.md)

@@ -5,20 +5,21 @@ statement: formalized
 lean: MathlibExt.Analysis.Distribution.PlemeljLimitTemperedDistributionWanted.exists_temperedDistribution_tendsto_inv_add_mul_I
 ---
 
-# Exists tempered Distribution tendsto inv add mul I
+# The tempered distributions $(x \pm i\varepsilon)^{-1}$ converge as $\varepsilon \to 0^+$
 
-For $\varepsilon > 0$, define $u_{\pm,\varepsilon} : S(\mathbb{R}) \to \mathbb{C}$ by
-$u_{\pm,\varepsilon}(\phi) = \int_{\mathbb{R}} (x \pm i\varepsilon)^{-1}\phi(x)\, dx$, $\phi \in
-S(\mathbb{R})$.
-
-Show that for all $\varepsilon > 0$, $u_{\pm,\varepsilon} \in S'(\mathbb{R})$, and that there exist
-$u_\pm \in S'(\mathbb{R})$ such that for all $\phi \in S(\mathbb{R})$, $u_{\pm,\varepsilon}(\phi)
-\to u_\pm(\phi)$ as $\varepsilon \to 0$.
+**The tempered distributions $(x \pm i\varepsilon)^{-1}$ converge as $\varepsilon \to 0^+$.**
+Write $S(\mathbb{R})$ for the space of complex-valued Schwartz functions on $\mathbb{R}$, and for
+$\varepsilon > 0$ and $\phi \in S(\mathbb{R})$ let
+$u_{\pm,\varepsilon}(\phi) = \int_{\mathbb{R}} (x \pm i\varepsilon)^{-1}\phi(x)\, dx$. Then for
+every $\varepsilon > 0$ both $u_{+,\varepsilon}$ and $u_{-,\varepsilon}$ are tempered
+distributions, that is, continuous $\mathbb{C}$-linear functionals on $S(\mathbb{R})$, and there
+are tempered distributions $u_+$ and $u_-$ such that $u_{+,\varepsilon}(\phi) \to u_+(\phi)$ and
+$u_{-,\varepsilon}(\phi) \to u_-(\phi)$ as $\varepsilon \to 0^+$ for every $\phi \in S(\mathbb{R})$.
 
 ## Depends on
 
-- [U Minus Eps](u-minus-eps.md)
-- [U Plus Eps](u-plus-eps.md)
+- [The pairing with $(x - i\varepsilon)^{-1}$](u-minus-eps.md)
+- [The pairing with $(x + i\varepsilon)^{-1}$](u-plus-eps.md)
 
 ## Sources
 

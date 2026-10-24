@@ -13,7 +13,7 @@ For all `n ≥ 0`, `bt(192n+8) ≡ 2 [q^n] f_1 (mod 4)`, i.e.
 ## Depends on
 
 - [Overcubic Triple Count](overcubic-triple-count.md)
-- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

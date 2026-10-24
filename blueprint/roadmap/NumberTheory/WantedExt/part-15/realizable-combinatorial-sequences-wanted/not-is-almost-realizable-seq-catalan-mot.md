@@ -14,7 +14,7 @@ The Catalan numbers, the Motzkin numbers, and the large Schröder numbers (Mathl
 ## Depends on
 
 - [Is Almost Realizable Seq](is-almost-realizable-seq.md)
-- [Motzkin Number](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
+- [Motzkin numbers as a Catalan-weighted binomial sum](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
 
 ## Sources
 

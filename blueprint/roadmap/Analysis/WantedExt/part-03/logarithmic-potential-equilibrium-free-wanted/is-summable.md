@@ -6,14 +6,14 @@ statement: formalized
 lean: MathlibExt.Analysis.LogarithmicPotentialEquilibriumFreeWanted.IsSummable
 ---
 
-# Is Summable
+# Summable charge sequences
 
-Summability Σ1/|z_n| < ∞, with all charge positions nonzero so every
-term is defined.
+**Summable charge sequences.** A charge sequence $(z_n)$ is summable when $z_n \neq 0$ for every
+$n$ and $\sum_n 1/|z_n| < \infty$.
 
 ## Depends on
 
-- [Charge Seq](charge-seq.md)
+- [Charge sequences](charge-seq.md)
 
 ## Sources
 

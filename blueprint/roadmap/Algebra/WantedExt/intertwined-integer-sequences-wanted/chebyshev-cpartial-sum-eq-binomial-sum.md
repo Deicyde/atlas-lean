@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.chebyshevCPartialSum_eq_binomial_sum
 ---
 
-# Chebyshev CPartial Sum eq binomial sum
+# Binomial expansion of the partial sums of Chebyshev polynomials
 
-Binomial expansion: for `n ≥ 1`,
-`F_n(X) = ∑_{0 ≤ m ≤ n/2} (-1)^m C(n-m, m) X^{n-2m}
-  + ∑_{0 ≤ m ≤ (n-1)/2} (-1)^m C(n-m-1, m) X^{n-2m-1}`.
+**Binomial expansion of the partial sums of Chebyshev polynomials.** Let
+$F_n = 1 + \sum_{k=1}^{n} \bar T_k \in \mathbb{Z}[X]$ be the partial sums of the monic Chebyshev
+polynomials $\bar T_k$ ($\bar T_0 = 2$, $\bar T_1 = X$, $\bar T_{k+2} = X \bar T_{k+1} - \bar T_k$).
+For every $n \ge 1$,
+
+$$F_n = \sum_{m=0}^{\lfloor n/2 \rfloor} (-1)^m \binom{n-m}{m} X^{n-2m} +
+\sum_{m=0}^{\lfloor (n-1)/2 \rfloor} (-1)^m \binom{n-m-1}{m} X^{n-2m-1}.$$
 
 ## Depends on
 
-- [Chebyshev CPartial Sum](chebyshev-cpartial-sum.md)
+- [Partial sums of the monic Chebyshev polynomials](chebyshev-cpartial-sum.md)
 
 ## Sources
 

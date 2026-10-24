@@ -15,7 +15,7 @@ Mansour and Sun's formula, as recalled by the source:
 ## Depends on
 
 - [Colored Dyck Path Count](colored-dyck-path-count.md)
-- [Partial Bell Polynomial](../../../../../MathlibExt/part-01/enumerative/part-06/partial-bell-polynomial.md)
+- [Partial Bell polynomial](../../../../../MathlibExt/part-01/enumerative/part-06/partial-bell-polynomial.md)
 
 ## Sources
 

@@ -6,20 +6,21 @@ statement: formalized
 lean: MetaMathlibExt.PartitionNumberArray.partCount
 ---
 
-# Part Count
+# Number of parts of a partition
 
-Part count of a partition multiplicity vector.
-Concept `jis_sem_4bcead3a4bcda58a1d4dbb9f`; source D3
-`jis_352979520d341b10e3330dad`.
+**Number of parts of a partition.** Let $(a_1, \dots, a_n)$ be a partition multiplicity
+vector of $n$, that is, nonnegative integers with $\sum_{j=1}^{n} j\,a_j = n$, where $a_j$
+counts the parts equal to $j$. Its part count is $\sum_{j=1}^{n} a_j$.
 
 ## Depends on
 
-- [Partition Multiplicity](partition-multiplicity.md)
+- [Partition multiplicity vectors](partition-multiplicity.md)
 
 ## Proof depends on
 
-- [Count Sum](count-sum.md)
+- [Number of parts of an exponent vector](count-sum.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.PartitionNumberArray](../../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_4bcead3a4bcda58a1d4dbb9f`; source D3 `jis_352979520d341b10e3330dad`.

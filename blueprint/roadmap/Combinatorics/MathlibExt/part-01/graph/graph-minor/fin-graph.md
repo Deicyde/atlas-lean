@@ -6,13 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.FinGraph
 ---
 
-# Fin Graph
+# Finite simple graph
 
-Bundled finite simple graph: a vertex type together with its finiteness
-witness and a simple graph on it. The witness is an instance-implicit field,
-so it is synthesized by typeclass search at construction; downstream code
-still accesses it explicitly as `G.fin`, since instances cannot depend on a
-locally bound graph.
+**Finite simple graph.** A finite graph consists of a finite vertex set $V$ together with a
+simple graph on $V$, that is, a symmetric and irreflexive adjacency relation on $V$.
+
 Stable source: https://en.wikipedia.org/wiki/Robertson%E2%80%93Seymour_theorem.
 
 ## Depends on

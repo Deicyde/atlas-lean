@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cloitre Mirror](../../../../Combinatorics/MathlibExt/part-01/infinite-word/cloitre-sequence/cloitre-mirror.md)
+- [Mirror image with first-letter complement](../../../../Combinatorics/MathlibExt/part-01/infinite-word/cloitre-sequence/cloitre-mirror.md)
 
 ## Sources
 

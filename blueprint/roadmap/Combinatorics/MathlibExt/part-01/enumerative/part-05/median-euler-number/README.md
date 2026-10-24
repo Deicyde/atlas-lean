@@ -4,11 +4,11 @@ navigation: module
 
 # Median Euler Number
 
-- [Median Euler Coefficients](median-euler-coefficients.md)
-- [Median Euler Coeff](median-euler-coeff.md)
-- [Median Euler Initial Row](median-euler-initial-row.md)
-- [Median Euler Number](median-euler-number.md)
-- [Median Euler Coeff zero](median-euler-coeff-zero.md)
-- [Median Euler Coeff succ](median-euler-coeff-succ.md)
-- [Median Euler Coeff egf](median-euler-coeff-egf.md)
-- [Median Euler Number div three and mod Five](median-euler-number-div-three-and-mod-fi.md)
+- [The list of the first Euler coefficients](median-euler-coefficients.md)
+- [Euler coefficients](median-euler-coeff.md)
+- [Initial row for the median Euler numbers](median-euler-initial-row.md)
+- [Median Euler numbers](median-euler-number.md)
+- [The zeroth Euler coefficient](median-euler-coeff-zero.md)
+- [Recurrence for the Euler coefficients](median-euler-coeff-succ.md)
+- [Exponential generating function of the Euler coefficients](median-euler-coeff-egf.md)
+- [Median Euler numbers modulo three and five](median-euler-number-div-three-and-mod-fi.md)

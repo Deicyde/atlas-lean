@@ -17,8 +17,8 @@ There is exactly one overpartition of `0`.
 ## Proof depends on
 
 - [Overpartition](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/overpartition/overpartition.md)
-- [Eq of zero](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/overpartition/eq-of-zero.md)
-- [Of Partition](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/overpartition/of-partition.md)
+- [Uniqueness of the overpartition of zero](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/overpartition/eq-of-zero.md)
+- [The overpartition attached to a partition](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/overpartition/of-partition.md)
 
 ## Sources
 

@@ -5,5 +5,5 @@ navigation: module
 
 # Word Factor Complexity
 
-- [Word Factor Complexity](word-factor-complexity.md)
-- [Word Factor Complexity zero](word-factor-complexity-zero.md)
+- [Factor complexity of an infinite word](word-factor-complexity.md)
+- [Factor complexity at length zero](word-factor-complexity-zero.md)

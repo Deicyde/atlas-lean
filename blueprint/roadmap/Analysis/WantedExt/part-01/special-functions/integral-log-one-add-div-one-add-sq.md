@@ -5,13 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.SpecialFunctions.IntegralLogOnePlusOverOnePlusSqWanted.integral_log_one_add_div_one_add_sq
 ---
 
-# Integral Log One Plus Over One Plus Sq Wanted
+# Serret's integral
 
-Prove that
+**Serret's integral.** With $\log$ the natural logarithm,
 
-\[
-\int_{0}^{1}\frac{\log(1+x)}{1+x^{2}}\,dx=\frac{\pi}{8}\log 2.
-\]
+$$\int_0^1 \frac{\log(1+x)}{1+x^2}\,dx = \frac{\pi}{8}\log 2.$$
 
 ## Depends on
 

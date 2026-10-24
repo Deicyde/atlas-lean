@@ -13,11 +13,11 @@ The defining identity `f_1 f_9 f_36 ∑ ped_{9,18}(n) q^n = f_4 f_18^2`.
 ## Depends on
 
 - [Ped Nine Eighteen](ped-nine-eighteen.md)
-- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [The Euler products of partition theory](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Proof depends on
 
-- [Constant Coeff q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/constant-coeff-q-euler-product.md)
+- [Constant term of the Euler products](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/constant-coeff-q-euler-product.md)
 - [Ped Nine Eighteen Series](ped-nine-eighteen-series.md)
 
 ## Sources

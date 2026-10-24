@@ -12,7 +12,7 @@ is `(k - 1) S_{n-1,k} + ∑_{j=2}^k binom(j, 2) ∑_{i=3}^{n-k} j^{i-3} S_{n-i,k
 
 ## Depends on
 
-- [Is Surjective Restricted Growth String](../../../../../MathlibExt/part-01/enumerative/part-01/partition/peak-generating-function/is-surjective-restricted-growth-string.md)
+- [Surjective restricted-growth strings](../../../../../MathlibExt/part-01/enumerative/part-01/partition/peak-generating-function/is-surjective-restricted-growth-string.md)
 - [Symmetric Peak Count](../symmetric-peaks-compositions-wanted/symmetric-peak-count.md)
 
 ## Sources

@@ -5,16 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.kasselReutenauerPoly_eq_oddDivisor_sum
 ---
 
-# Kassel Reutenauer Poly eq odd Divisor sum
+# Odd-divisor formula for the Kassel–Reutenauer polynomials
 
-Odd-divisor formula: for `n ≥ 1`, with `r_n(d) = n/d - (d+1)/2`,
-`P̄_n(X) = ∑_{d ∣ n, d odd, r_n(d) ≥ 0} F_{r_n(d)}(X)
-  - ∑_{d ∣ n, d odd, r_n(d) < 0} F_{-r_n(d)-1}(X)`.
+**Odd-divisor formula for the Kassel–Reutenauer polynomials.** Let $n \ge 1$, and for each
+odd divisor $d$ of $n$ put $r_n(d) = n/d - (d+1)/2$, an integer. Then the Kassel–Reutenauer
+polynomial $\bar P_n$ satisfies
+
+$$
+\bar P_n(X) = \sum_{d \mid n,\ d \text{ odd},\ r_n(d) \ge 0} F_{r_n(d)}(X) -
+\sum_{d \mid n,\ d \text{ odd},\ r_n(d) < 0} F_{-r_n(d)-1}(X),
+$$
+
+where $F_r(X) = 1 + \sum_{k=1}^{r} \bar T_k(X)$ is the partial sum of the monic Chebyshev
+polynomials $\bar T_k$.
 
 ## Depends on
 
-- [Chebyshev CPartial Sum](chebyshev-cpartial-sum.md)
-- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
+- [Partial sums of the monic Chebyshev polynomials](chebyshev-cpartial-sum.md)
+- [Kassel–Reutenauer polynomial](kassel-reutenauer-poly.md)
 
 ## Sources
 

@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.exists_tetration_eq_iterate_rpow
 ---
 
-# Exists tetration eq iterate rpow
+# Power towers rewritten in another base
 
-For `a, b > e^{1/e}` and `n > 0` there are `p ≥ 0` and `c ∈ (1, b]` with
-`a ↑↑ n = E_p(b, c)`, where `a ↑↑ n` is the `n`-fold iterate of `x ↦ a ^ x` from `1` and
-`E_p(b, c)` the `p`-fold iterate of `x ↦ b ^ x` from `c`.
+**Power towers rewritten in another base.** Let $a, b > e^{1/e}$ be real numbers and $n > 0$
+a natural number. Let $a \uparrow\uparrow n$ be the $n$-fold iterate of $x \mapsto a^x$ starting
+at $1$, and $E_p(b, c)$ the $p$-fold iterate of $x \mapsto b^x$ starting at $c$. Then there are
+a natural number $p$ and a real number $c$ with $1 < c \le b$ such that
+$a \uparrow\uparrow n = E_p(b, c)$.
 
 ## Depends on
 

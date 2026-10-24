@@ -6,9 +6,11 @@ statement: formalized
 lean: Complex.e1AsymptoticTerm
 ---
 
-# E1 Asymptotic Term
+# Asymptotic term of $E_1$
 
-The `n`-th full term in the finite asymptotic expansion of `E1`.
+**Asymptotic term of $E_1$.** For $n \in \mathbb{N}$ and a nonzero complex number $z$, the
+$n$-th term of the asymptotic expansion of the exponential integral $E_1$ is
+$\frac{e^{-z}}{z} \cdot \frac{(-1)^n \, n!}{z^n}$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [E1 Asymptotic Term Raw](e1-asymptotic-term-raw.md)
+- [Totalized asymptotic term of $E_1$](e1-asymptotic-term-raw.md)
 
 ## Sources
 

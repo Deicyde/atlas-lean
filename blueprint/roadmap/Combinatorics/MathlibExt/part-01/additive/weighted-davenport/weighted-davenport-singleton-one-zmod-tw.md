@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.weightedDavenport_singleton_one_zmod_two
 ---
 
-# Weighted Davenport singleton one zmod two
+# Davenport constant of the group of order two
 
-The ordinary Davenport constant of `ZMod 2` is `2`.
+**Davenport constant of the group of order two.** The ordinary Davenport constant of
+$\mathbb{Z}/2\mathbb{Z}$, that is, its $\{1\}$-weighted Davenport constant, is
+$D_{\{1\}}(\mathbb{Z}/2\mathbb{Z}) = 2$.
 
 ## Depends on
 
-- [Weighted Davenport](weighted-davenport.md)
+- [Weighted Davenport constant](weighted-davenport.md)
 
 ## Proof depends on
 
-- [Is Weighted Zero Sum Free](is-weighted-zero-sum-free.md)
-- [Weighted Davenport eq nat Cast s Inf](weighted-davenport-eq-nat-cast-s-inf.md)
+- [Weighted zero-sum free sequences](is-weighted-zero-sum-free.md)
+- [The weighted Davenport constant as a least length](weighted-davenport-eq-nat-cast-s-inf.md)
 
 ## Sources
 

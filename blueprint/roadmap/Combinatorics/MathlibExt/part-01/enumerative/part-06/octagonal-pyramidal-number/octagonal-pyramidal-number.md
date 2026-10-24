@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.octagonalPyramidalNumber
 ---
 
-# Octagonal Pyramidal Number
+# Octagonal pyramidal numbers
 
-The `k`-th octagonal pyramidal number, `k(k+1)(2k-1)/2`.
+**Octagonal pyramidal numbers.** For a natural number $k$, the $k$-th octagonal pyramidal
+number is $k(k+1)(2k-1)/2$.
 
 ## Depends on
 

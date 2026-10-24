@@ -6,12 +6,11 @@ statement: formalized
 lean: MathlibExt.Analysis.HermanProblem290Wanted.IsAnalyticallyConjugateToRotation
 ---
 
-# Is Analytically Conjugate To Rotation
+# Analytic conjugacy to a rotation
 
-Real-analytic conjugacy of a circle-map lift F to the rigid rotation by α:
-there exists an analytic orientation-preserving circle diffeomorphism H whose
-lift intertwines F with the translation y ↦ y + α, i.e. H ∘ F = R_α ∘ H.
-Cites: Hayman (2018), Problem 2.90; https://arxiv.org/abs/1809.07200.
+**Analytic conjugacy to a rotation.** A function $F : \mathbb{R} \to \mathbb{R}$ is
+analytically conjugate to the rotation by $\alpha \in \mathbb{R}$ when there is a real-analytic
+circle diffeomorphism with lift $H$ such that $H(F(x)) = H(x) + \alpha$ for every real $x$.
 
 ## Depends on
 
@@ -19,8 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Analytic Circle Diffeo](analytic-circle-diffeo.md)
+- [Real-analytic circle diffeomorphisms](analytic-circle-diffeo.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HermanProblem290Wanted](../../../../../sources/v2/WantedExt.md)
+- Hayman (2018), Problem 2.90; https://arxiv.org/abs/1809.07200.

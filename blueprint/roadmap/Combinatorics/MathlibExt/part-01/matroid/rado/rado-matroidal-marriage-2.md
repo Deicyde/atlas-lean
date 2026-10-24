@@ -7,12 +7,16 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Matroid.RadoWanted.rado_matroidal_marriage
 ---
 
-# Rado matroidal marriage
+# Rado's theorem on independent transversals
 
-Finite matroidal marriage (Rado): transversal independent iff Hall-Rado rank condition holds for all
-`J`.
+**Rado's theorem on independent transversals.** Let $I$ and $E$ be finite sets, let $M$ be a
+matroid whose ground set is all of $E$, and let $(A_i)_{i \in I}$ be a family of subsets of $E$.
+Then there is an injective map $f : I \to E$ such that $f(i) \in A_i$ for every $i \in I$ and
+the image $f(I)$ is independent in $M$, if and only if
+$|J| \le r_M\bigl(\bigcup_{i \in J} A_i\bigr)$ for every $J \subseteq I$, where $r_M$ is the rank
+function of $M$.
 
-The full-ground hypothesis is not needed; see `rado_matroidal_marriage'`.
+The hypothesis that the ground set of $M$ is all of $E$ is not needed.
 
 ## Depends on
 
@@ -20,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Rado matroidal marriage'](rado-matroidal-marriage.md)
+- [Rado's theorem on independent transversals, arbitrary ground set](rado-matroidal-marriage.md)
 
 ## Sources
 

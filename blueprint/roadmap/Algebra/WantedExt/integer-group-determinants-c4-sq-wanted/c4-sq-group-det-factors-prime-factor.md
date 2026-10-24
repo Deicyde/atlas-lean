@@ -5,19 +5,29 @@ statement: formalized
 lean: MetaMathlibExt.c4Sq_groupDet_factors_prime_factor
 ---
 
-# Lemma 19
+# A prime factor $p \equiv 5 \pmod 8$ of $D_4(b) D_4(c) \beta\bar\beta \gamma\bar\gamma$
 
-**Lemma 19.** If `b₀ + b₂ ≡ b₁ + b₃ ≡ 1 (mod 2)`, `D₄(b) D₄(c) ∈ 2^8 ℤ_odd` and
-`β β̄ γ γ̄ ∈ 2^7 ℤ_odd`, then `D₄(b) D₄(c) β β̄ γ γ̄ = 2^15 p (2m + 1)` with `p ∈ P`.
+**A prime factor $p \equiv 5 \pmod 8$ of $D_4(b) D_4(c) \beta\bar\beta \gamma\bar\gamma$.**
+Let $a \colon \mathbb{Z}/4 \times \mathbb{Z}/4 \to \mathbb{Z}$. For $0 \le i \le 3$ let
+$b_i = a(i, 0) + a(i, 2) + a(i, 1) + a(i, 3)$, $c_i = a(i, 0) + a(i, 2) - a(i, 1) - a(i, 3)$
+and $\alpha_i = (a(i, 0) - a(i, 2)) + (a(i, 1) - a(i, 3))\sqrt{-1} \in \mathbb{Z}[\sqrt{-1}]$,
+and let $\beta = (\alpha_0 + \alpha_2)^2 - (\alpha_1 + \alpha_3)^2$ and
+$\gamma = (\alpha_0 - \alpha_2)^2 + (\alpha_1 - \alpha_3)^2$, with complex conjugates $\bar\beta$
+and $\bar\gamma$. Let $D_4(x_0, x_1, x_2, x_3)$ be the determinant of the $4 \times 4$
+circulant matrix with first row $(x_0, x_1, x_2, x_3)$.
+Let $P$ be the set of positive primes $p \equiv 5 \pmod 8$. Suppose that $b_0 + b_2$ and
+$b_1 + b_3$ are odd, that $D_4(b) D_4(c) = 2^8 (2t + 1)$ for some integer $t$, and that
+$\beta\bar\beta \gamma\bar\gamma = 2^7 (2t' + 1)$ for some integer $t'$. Then there are $p \in P$
+and $m \in \mathbb{Z}$ with $D_4(b) D_4(c) \beta\bar\beta \gamma\bar\gamma = 2^{15} p (2m + 1)$.
 
 ## Depends on
 
-- [C4 Sq B](c4-sq-b.md)
-- [C4 Sq Beta](c4-sq-beta.md)
-- [C4 Sq C](c4-sq-c.md)
-- [C4 Sq Gamma](c4-sq-gamma.md)
-- [Circulant Det Four](circulant-det-four.md)
-- [Primes Five Mod Eight](primes-five-mod-eight.md)
+- [The sums $b_i$](c4-sq-b.md)
+- [The Gaussian integer $\beta$](c4-sq-beta.md)
+- [The alternating sums $c_i$](c4-sq-c.md)
+- [The Gaussian integer $\gamma$ of a function on $C_4^2$](c4-sq-gamma.md)
+- [The group determinant of $C_4$](circulant-det-four.md)
+- [Primes congruent to $-3$ modulo $8$](primes-five-mod-eight.md)
 
 ## Sources
 

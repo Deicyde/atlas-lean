@@ -13,7 +13,7 @@ most `s + 1` parts and at most `k` lit cells is
 
 ## Depends on
 
-- [Gauss Binom](../../../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom.md)
+- [Gaussian binomial coefficient](../../../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/gauss-binom.md)
 - [Lit Cells Decreasing](lit-cells-decreasing.md)
 - [Triangular QBinomial](triangular-qbinomial.md)
 

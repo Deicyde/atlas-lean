@@ -12,7 +12,7 @@ The strict order on women induced by man `i`'s ranking: `a` before `b` when
 
 ## Depends on
 
-- [MPrefs](../../../../../MathlibExt/part-01/matching/gale-shapley/mprefs.md)
+- [Men's preferences](../../../../../MathlibExt/part-01/matching/gale-shapley/mprefs.md)
 - [Preference Profile](preference-profile.md)
 
 ## Proof depends on

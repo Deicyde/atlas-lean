@@ -5,5 +5,5 @@ navigation: module
 
 # Gauss Hypergeometric Summation Klamkin
 
-- [Gauss hypergeometric summation klamkin](gauss-hypergeometric-summation-klamkin.md)
-- [Has Sum ordinary Hypergeometric Coefficient klamkin](has-sum-ordinary-hypergeometric-coeffici.md)
+- [Klamkin's Gauss summation](gauss-hypergeometric-summation-klamkin.md)
+- [Klamkin's Gauss summation as a convergent series](has-sum-ordinary-hypergeometric-coeffici.md)

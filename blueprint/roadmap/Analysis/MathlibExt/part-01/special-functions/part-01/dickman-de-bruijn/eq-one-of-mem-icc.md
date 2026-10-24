@@ -7,13 +7,15 @@ proof: formalized
 lean: Real.IsDickmanDeBruijn.eq_one_of_mem_Icc
 ---
 
-# Eq one of mem Icc
+# The Dickman–de Bruijn function equals one on the unit interval
 
-A Dickman–de Bruijn function equals one on `[0, 1]`.
+**The Dickman–de Bruijn function equals one on the unit interval.** If
+$\rho : \mathbb{R} \to \mathbb{R}$ is a Dickman–de Bruijn function, then $\rho(u) = 1$ for every
+$u \in [0, 1]$.
 
 ## Depends on
 
-- [Is Dickman De Bruijn](is-dickman-de-bruijn.md)
+- [Dickman–de Bruijn functions](is-dickman-de-bruijn.md)
 
 ## Sources
 

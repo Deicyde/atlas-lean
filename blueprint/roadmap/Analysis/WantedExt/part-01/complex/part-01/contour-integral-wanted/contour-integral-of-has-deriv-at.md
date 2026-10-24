@@ -5,11 +5,15 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.ContourIntegralWanted.contourIntegral_of_hasDerivAt
 ---
 
-# Contour Integral of has Deriv At
+# Fundamental theorem of contour integration
 
-Fundamental theorem of contour integration: if `γ` is `C¹` and `F` has complex
-derivative `f` on an open neighborhood of the path, then the contour integral
-of `f` along `γ` is `F b - F a`.
+**Fundamental theorem of contour integration.** Let $U \subseteq \mathbb{C}$ be open and let
+$F, f : \mathbb{C} \to \mathbb{C}$ be such that $F$ is complex-differentiable at every $z \in U$
+with $F'(z) = f(z)$. Let $\gamma : [0, 1] \to \mathbb{C}$ be a path from $a$ to $b$ whose image
+lies in $U$ and which is continuously differentiable on $[0, 1]$, with derivative $\gamma'$
+(one-sided at the endpoints). If $t \mapsto f(\gamma(t))\,\gamma'(t)$ is integrable on $[0, 1]$,
+then $\int_\gamma f(z)\,dz = F(b) - F(a)$, where
+$\int_\gamma f(z)\,dz = \int_0^1 f(\gamma(t))\,\gamma'(t)\,dt$.
 
 ## Depends on
 

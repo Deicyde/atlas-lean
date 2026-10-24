@@ -7,17 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.motzkin_central_trinomial_recurrence
 ---
 
-# Motzkin central trinomial recurrence
+# Recurrence linking central trinomial coefficients and Motzkin numbers
 
-The Motzkin numbers `M` (Catalan-weighted binomial sums) and the canonical
-central trinomial coefficients are linked by
-`T (n + 1) = T n + 2 * n * M (n - 1)` for `n ≥ 1`. The source attributes the
-recurrence to Barcucci, Pinzani, and Sprugnoli, "The Motzkin family" (its
-reference PUMA).
+**Recurrence linking central trinomial coefficients and Motzkin numbers.** For $n \in \mathbb{N}$
+let $T_n$ be the central trinomial coefficient, the coefficient of $X^n$ in $(1 + X + X^2)^n$.
+Let $M : \mathbb{N} \to \mathbb{N}$ be any function with
+$M_n = \sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} C_k$ for every $n$, where $C_k$ is the
+$k$-th Catalan number (these sums are the Motzkin numbers). Then for every $n \ge 1$,
+$T_{n+1} = T_n + 2n \, M_{n-1}$.
 
-Proof: Equation eq1 of Blasiak et al. supplies the central trinomial sum and eq34 supplies the
-recurrence. The source uses hybrid-polynomial operator calculus for eq34; here an elementary
-termwise binomial identity gives the recurrence.
+The source attributes the recurrence to Barcucci, Pinzani, and Sprugnoli, "The Motzkin family",
+and proves it with hybrid-polynomial operator calculus; the proof here instead uses the binomial
+sum for $T_n$ and an elementary termwise binomial identity.
 
 ## Depends on
 
@@ -25,7 +26,7 @@ termwise binomial identity gives the recurrence.
 
 ## Proof depends on
 
-- [Trinomial Coefficient self eq sum](trinomial-coefficient-self-eq-sum.md)
+- [Central trinomial coefficients as a binomial sum](trinomial-coefficient-self-eq-sum.md)
 
 ## Sources
 

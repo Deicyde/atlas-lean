@@ -14,7 +14,7 @@ For an admissible sequence `(mᵢ, aᵢ)_{i = 0, …, k}`,
 
 - [Is Admissible Sequence](is-admissible-sequence.md)
 - [Is Substitution](is-substitution.md)
-- [Morph Iterate](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
+- [Iterates of a letter map](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources
 

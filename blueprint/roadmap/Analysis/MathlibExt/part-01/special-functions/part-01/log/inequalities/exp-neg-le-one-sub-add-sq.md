@@ -6,9 +6,10 @@ proof: formalized
 lean: Real.exp_neg_le_one_sub_add_sq
 ---
 
-# Exp neg le one sub add sq
+# Quadratic upper bound for $e^{-x}$
 
-Upper bound on `exp (-x)` for `0 ≤ x`: it lies below `1 - x + x ^ 2`.
+**Quadratic upper bound for $e^{-x}$.** For every real number $x \ge 0$,
+$e^{-x} \le 1 - x + x^2$.
 
 ## Depends on
 

@@ -18,11 +18,11 @@ stable matchings.
 - [The Gale-Shapley matching](gs-matching.md)
 - [Mprefs](mprefs.md)
 - [Wprefs](wprefs.md)
-- [Is Stable](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/is-stable.md)
-- [MPrefs](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/mprefs.md)
-- [Perfect Matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/perfect-matching.md)
-- [Lt](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/lt.md)
-- [WPrefs](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/wprefs.md)
+- [Stable perfect matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/is-stable.md)
+- [Men's preferences](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/mprefs.md)
+- [Perfect matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/perfect-matching.md)
+- [Relation of a strict total order](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/lt.md)
+- [Women's preference profile](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/wprefs.md)
 
 ## Proof depends on
 
@@ -30,7 +30,7 @@ stable matchings.
 - [Proposer-optimality](gs-matching-proposer-optimal.md)
 - [The Gale-Shapley matching is stable](is-stable-gs-matching.md)
 - [To Order](to-order.md)
-- [Strict Total Order](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/strict-total-order.md)
+- [Strict preference order](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/strict-total-order.md)
 - [Strict Total Order](../../../../../../../Order/MathlibExt/strict-total-order/strict-total-order.md)
 
 ## Sources

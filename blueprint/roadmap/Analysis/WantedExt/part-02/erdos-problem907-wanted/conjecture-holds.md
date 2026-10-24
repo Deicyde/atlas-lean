@@ -6,13 +6,17 @@ statement: formalized
 lean: MathlibExt.Analysis.ErdosProblem907Wanted.conjecture_holds
 ---
 
-# Conjecture holds
+# De Bruijn's theorem on continuous differences (Erdős Problem 907)
 
-Resolved true: Answered yes by de Bruijn; a proof is available in an external Lean development.
+**De Bruijn's theorem on continuous differences (Erdős Problem 907).** Let
+$f : \mathbb{R} \to \mathbb{R}$ be a function such that for every $h > 0$ the function
+$x \mapsto f(x + h) - f(x)$ is continuous. Then there are functions
+$g, a : \mathbb{R} \to \mathbb{R}$ with $g$ continuous and $a$ additive, that is,
+$a(x + y) = a(x) + a(y)$ for all real $x$ and $y$, such that $f = g + a$.
 
 ## Depends on
 
-- [Conjecture](conjecture.md)
+- [Erdős Problem 907](conjecture.md)
 
 ## Sources
 

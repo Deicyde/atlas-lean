@@ -5,17 +5,18 @@ statement: formalized
 lean: NoncrossingPartition.IsNoncrossing
 ---
 
-# Is Noncrossing
+# Noncrossing set partition
 
-A partition of `Fin n` is noncrossing iff it has no crossing.
+**Noncrossing set partition.** A set partition of $\{0, \dots, n-1\}$ is noncrossing if it
+has no crossing.
 
 ## Depends on
 
-- [Set Partition](set-partition.md)
+- [Set partition](set-partition.md)
 
 ## Proof depends on
 
-- [Has Crossing](has-crossing.md)
+- [Crossing in a set partition](has-crossing.md)
 
 ## Sources
 

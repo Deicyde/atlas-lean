@@ -7,15 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.GeneralizedThueMorse.shiftLetter_val
 ---
 
-# Shift Letter val
+# Value of the cyclic letter shift
 
-Value equation for the cyclic shift: it sends `aᵢ` to `a_{i+t mod L}`
-(concept `jis_sem_12ac243c6e8826ae73e194e0`, statement `jis_099e0392547ec836b0b913d1`).
+**Value of the cyclic letter shift.** For every $L \in \mathbb{N}$ and all letters $a, t$ of
+the alphabet $\{0, \dots, L-1\}$, the cyclic shift of $a$ by $t$ is the letter
+$(a + t) \bmod L$.
 
 ## Depends on
 
-- [Shift Letter](shift-letter.md)
+- [Cyclic letter shift](shift-letter.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.GeneralizedThueMorseSequence](../../../../../../sources/v2/MathlibExt.md)
+- JIS Definition 2.2 (concept `jis_sem_12ac243c6e8826ae73e194e0`, statement `jis_099e0392547ec836b0b913d1`).

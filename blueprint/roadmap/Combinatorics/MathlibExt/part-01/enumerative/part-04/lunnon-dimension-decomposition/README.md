@@ -5,13 +5,13 @@ navigation: module
 
 # Lunnon Dimension Decomposition
 
-- [Lattice Cell](lattice-cell.md)
-- [Face Adjacent](face-adjacent.md)
-- [Is Polycube Cells](is-polycube-cells.md)
-- [Is Canonical Cells](is-canonical-cells.md)
-- [Proper Dimension](proper-dimension.md)
-- [Fixed Polycube](fixed-polycube.md)
-- [Fixed Polycube Count](fixed-polycube-count.md)
-- [Proper Fixed Polycube](proper-fixed-polycube.md)
-- [Proper Fixed Polycube Count](proper-fixed-polycube-count.md)
-- [Lunnon fixed polycube dimension decomposition](lunnon-fixed-polycube-dimension-decompos.md)
+- [Lattice cells](lattice-cell.md)
+- [Face adjacency of lattice cells](face-adjacent.md)
+- [Polycube](is-polycube-cells.md)
+- [Canonical position of a cell set](is-canonical-cells.md)
+- [Proper dimension](proper-dimension.md)
+- [Fixed polycubes](fixed-polycube.md)
+- [Number of fixed polycubes](fixed-polycube-count.md)
+- [Proper fixed polycubes](proper-fixed-polycube.md)
+- [Number of proper fixed polycubes](proper-fixed-polycube-count.md)
+- [Lunnon's dimension decomposition for fixed polycubes](lunnon-fixed-polycube-dimension-decompos.md)

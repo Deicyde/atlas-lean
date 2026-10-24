@@ -5,21 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.UpperHalfPlaneSelfMapIterateConvergesWanted.tendsto_iterate_two_mul_I_of_fixed_I
 ---
 
-# Upper Half Plane Self Map Iterate Converges Wanted
+# Iterates of a self-map of the upper half-plane fixing $i$
 
-Let
-\[
-\mathbb{H}:=\{z\in\mathbb{C}:\Im z>0\},
-\]
-and let $f:\mathbb{H}\to\mathbb{H}$ be a holomorphic function such that
-\[
-f(i)=i,\qquad f(2i)=\frac{15}{8}i.
-\]
-Prove that
-\[
-\lim_{n\to\infty} f^{\circ n}(2i)=i,
-\]
-where $f^{\circ n}$ denotes the $n$-th iterate of $f$.
+**Iterates of a self-map of the upper half-plane fixing $i$.** Let
+$\mathbb{H}=\{z\in\mathbb{C} : \mathrm{Im}\,z>0\}$ be the upper half-plane, and let $f$ be a
+complex function that is holomorphic on $\mathbb{H}$, maps $\mathbb{H}$ into $\mathbb{H}$, and
+satisfies $f(i)=i$ and $f(2i)=\frac{15}{8}i$. Then the iterates $f^{\circ n}(2i)$ converge to $i$
+as $n\to\infty$, where $f^{\circ n}$ is the $n$-fold composite of $f$ with itself.
 
 ## Depends on
 

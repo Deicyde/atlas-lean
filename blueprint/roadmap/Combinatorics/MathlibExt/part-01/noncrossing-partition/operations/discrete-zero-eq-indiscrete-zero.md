@@ -6,19 +6,20 @@ proof: formalized
 lean: NoncrossingPartition.discrete_zero_eq_indiscrete_zero
 ---
 
-# Discrete zero eq indiscrete zero
+# Discrete and indiscrete partitions agree on the empty set
 
-At arity zero discrete and indiscrete coincide.
+**Discrete and indiscrete partitions agree on the empty set.** For $n = 0$, the discrete and
+the indiscrete noncrossing partitions of the empty set $\{0, \dots, n-1\}$ are equal.
 
 ## Depends on
 
-- [Noncrossing Partition](../basic/noncrossing-partition.md)
-- [Discrete](discrete.md)
-- [Indiscrete](indiscrete.md)
+- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [Discrete noncrossing partition](discrete.md)
+- [The indiscrete noncrossing partition](indiscrete.md)
 
 ## Proof depends on
 
-- [Eq indiscrete zero](eq-indiscrete-zero.md)
+- [The empty set has a unique noncrossing partition](eq-indiscrete-zero.md)
 
 ## Sources
 

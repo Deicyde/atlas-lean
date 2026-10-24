@@ -6,9 +6,11 @@ statement: formalized
 lean: Complex.e1AsymptoticPartial
 ---
 
-# E1 Asymptotic Partial
+# Partial sum of the $E_1$ asymptotic expansion
 
-The first `n` terms in the finite asymptotic expansion of `E1`.
+**Partial sum of the $E_1$ asymptotic expansion.** For $n \in \mathbb{N}$ and a nonzero complex
+number $z$, the sum of the first $n$ terms of the asymptotic expansion of the exponential
+integral $E_1$ is $\sum_{j < n} \frac{e^{-z}}{z} \cdot \frac{(-1)^j \, j!}{z^j}$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [E1 Asymptotic Term](e1-asymptotic-term.md)
+- [Asymptotic term of $E_1$](e1-asymptotic-term.md)
 
 ## Sources
 

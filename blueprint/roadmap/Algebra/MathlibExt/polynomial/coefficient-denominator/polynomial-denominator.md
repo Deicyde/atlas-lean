@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.polynomialDenominator
 ---
 
-# Polynomial Denominator
+# Denominator of a rational polynomial
 
-The denominator `denom(P)` of a rational polynomial: the least common multiple of the
-denominators of its coefficients, so `denom(P) = 1` exactly when `P ∈ ℤ[x]`.
+**Denominator of a rational polynomial.** For a polynomial $P \in \mathbb{Q}[x]$, the
+denominator $\operatorname{denom}(P)$ is the least common multiple of the denominators (in lowest
+terms) of the nonzero coefficients of $P$; in particular $\operatorname{denom}(0) = 1$. Thus
+$\operatorname{denom}(P) = 1$ exactly when $P \in \mathbb{Z}[x]$.
 
 ## Depends on
 

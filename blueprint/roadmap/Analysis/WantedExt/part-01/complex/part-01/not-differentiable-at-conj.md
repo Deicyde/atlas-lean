@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.ConjNowhereDifferentiableWanted.not_differentiableAt_conj
 ---
 
-# Conj Nowhere Differentiable Wanted
+# Complex conjugation is nowhere complex-differentiable
 
-Show that $f:\mathbb{C}\to\mathbb{C}$, $z\mapsto \bar z$, is nowhere differentiable.
+**Complex conjugation is nowhere complex-differentiable.** Let $f : \mathbb{C} \to \mathbb{C}$
+be the function $f(z) = \bar z$. Then $f$ is not complex-differentiable at any point
+$z \in \mathbb{C}$.
 
 ## Depends on
 

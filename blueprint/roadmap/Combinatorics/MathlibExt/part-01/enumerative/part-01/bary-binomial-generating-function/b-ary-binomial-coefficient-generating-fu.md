@@ -7,19 +7,24 @@ proof: formalized
 lean: MetaMathlibExt.bAryBinomialCoefficient_generating_function
 ---
 
-# B Ary Binomial Coefficient generating function
+# Generating function of the $b$-ary binomial coefficients
 
-The generating function over `k` of the `b`-ary binomial coefficients
-`bAryBinomialCoefficient b n k` factors over the base-`b` digits `n_l` of `n` as
-`∏_l (1 + x^(b^l))^(n_l)`, over any commutative semiring.
+**Generating function of the $b$-ary binomial coefficients.** Let $R$ be a commutative semiring,
+let $x \in R$, let $b \ge 2$, and write $\binom{n}{k}_b$ for the $b$-ary binomial coefficient of
+natural numbers $n$ and $k$. Let $n$ have base-$b$ digits $n_0, \dots, n_{m-1}$, where $m$ is
+the number of base-$b$ digits of $n$ ($m = 0$ for $n = 0$). Then
+
+$$
+\sum_{k=0}^{n} \binom{n}{k}_b x^k = \prod_{l=0}^{m-1} \left(1 + x^{b^l}\right)^{n_l}.
+$$
 
 ## Depends on
 
-- [B Ary Binomial Coefficient](../bary-binomial-coefficient/b-ary-binomial-coefficient.md)
+- [The $b$-ary binomial coefficient](../bary-binomial-coefficient/b-ary-binomial-coefficient.md)
 
 ## Proof depends on
 
-- [B Ary Binomial Coefficient eq prod get D](../bary-binomial-coefficient/b-ary-binomial-coefficient-eq-prod-get-d.md)
+- [Digitwise product formula for the $b$-ary binomial coefficient](../bary-binomial-coefficient/b-ary-binomial-coefficient-eq-prod-get-d.md)
 
 ## Sources
 

@@ -5,10 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.tsum_catalan_div_four_pow_special
 ---
 
-# Tsum catalan div four pow special
+# Catalan series summing to $4(1 - \log 2)$ and $\frac{10}{3} - 4 \log 2$
 
-Theorem 3 (special values): `Σ_{n≥0} C_n/(2^{2n}(n+1)) = 4(1 - ln 2)` and
-`Σ_{n≥0} C_n/(2^{2n}(n+1)(n+2)) = 10/3 - 4 ln 2`.
+**Catalan series summing to $4(1 - \log 2)$ and $\frac{10}{3} - 4 \log 2$.** With $C_n$ the
+$n$th Catalan number,
+
+$$\sum_{n=0}^{\infty} \frac{C_n}{4^n (n + 1)} = 4 (1 - \log 2)$$
+
+and
+
+$$\sum_{n=0}^{\infty} \frac{C_n}{4^n (n + 1)(n + 2)} = \frac{10}{3} - 4 \log 2.$$
 
 ## Depends on
 

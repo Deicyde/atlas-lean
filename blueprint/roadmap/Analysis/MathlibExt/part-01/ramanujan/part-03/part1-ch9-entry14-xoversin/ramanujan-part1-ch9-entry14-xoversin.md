@@ -7,11 +7,24 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.ramanujan_part1_ch9_entry14_xoversin
 ---
 
-# Ramanujan part1 ch9 entry14 xoversin
+# Entry 14 of Chapter 9: the integral of $u^n / (2 \sin u)$
 
-Proof: Subtracts a scaled Entry 13 identity at `2x` from the identity at `x`, then
-splits the zeta and Clausen series into even and odd frequencies, following Berndt
-and Lewin, *Polylogarithms and Associated Functions*, Chapter 4.
+**Entry 14 of Chapter 9: the integral of $u^n / (2 \sin u)$.** For an integer $m \ge 2$ write
+$\lambda(m) = \sum_{k \ge 0} (2k+1)^{-m}$. For real $x$ let
+$C_1(x) = -\tfrac{1}{2} \log|\tan(x/2)|$, and for an integer $m \ge 2$ let $s_m = \sin$ if $m$ is
+even and $s_m = \cos$ if $m$ is odd, and let $C_m(x) = \sum_{k \ge 0} s_m((2k+1)x)/(2k+1)^m$. Let
+$n \ge 1$ be an integer and $x$ a real number with $x \ne 0$ and $|x| < \pi$. Then
+$u \mapsto u^n / (2 \sin u)$ is integrable on the interval between $0$ and $x$; the series
+defining $\lambda(n+1)$ is summable; the partial sums $\sum_{k < N} \cos((2k+1)x)/(2k+1)$ tend
+to $C_1(x)$ as $N \to \infty$; for every integer $m$ with $2 \le m \le n+1$ the series defining
+$C_m(x)$ is summable; and
+
+$$\int_0^x \frac{u^n}{2 \sin u}\,du = \cos\frac{n\pi}{2}\, n!\, \lambda(n+1) -
+\sum_{j=0}^{n} (-1)^{j(j+1)/2} \frac{n!}{(n-j)!}\, x^{n-j}\, C_{j+1}(x).$$
+
+The proof subtracts a scaled copy of Entry 13 at $2x$ from Entry 13 at $x$ and splits the zeta and
+Clausen series into even and odd frequencies, following Berndt and Lewin, *Polylogarithms and
+Associated Functions*, Chapter 4.
 
 ## Depends on
 
@@ -19,10 +32,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ramanujan part1 ch9 entry13 bernoulligen](../part1-ch9-entry13-bernoulligen/ramanujan-part1-ch9-entry13-bernoulligen.md)
-- [Chapter9 Chi At One eq zeta](chapter9-chi-at-one-eq-zeta.md)
-- [Chapter9 Odd Clausen Term summable of two le](chapter9-odd-clausen-term-summable-of-tw.md)
-- [Chapter9 Odd Clausen eq clausen sub](chapter9-odd-clausen-eq-clausen-sub.md)
+- [Integrals of $u^n \cot(u/2)$ via Clausen functions (Chapter 9, Entry 13)](../part1-ch9-entry13-bernoulligen/ramanujan-part1-ch9-entry13-bernoulligen.md)
+- [Odd reciprocal power sums in terms of $\zeta$](chapter9-chi-at-one-eq-zeta.md)
+- [Summability of the odd Clausen series for $m \ge 2$](chapter9-odd-clausen-term-summable-of-tw.md)
+- [Odd-frequency part of a Clausen function for $0 < |x| < \pi$](chapter9-odd-clausen-eq-clausen-sub.md)
 
 ## Sources
 

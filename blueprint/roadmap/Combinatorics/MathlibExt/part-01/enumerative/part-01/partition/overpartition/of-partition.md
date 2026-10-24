@@ -6,9 +6,10 @@ statement: formalized
 lean: Nat.Overpartition.ofPartition
 ---
 
-# Of Partition
+# The overpartition attached to a partition
 
-Equip a partition with no overlined part sizes.
+**The overpartition attached to a partition.** For a partition $p$ of a natural number $n$, the
+overpartition of $n$ attached to $p$ has underlying partition $p$ and no overlined part sizes.
 
 ## Depends on
 

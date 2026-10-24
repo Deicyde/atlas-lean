@@ -5,5 +5,5 @@ navigation: module
 
 # Octagonal Pyramidal Number
 
-- [Octagonal Pyramidal Number](octagonal-pyramidal-number.md)
-- [Octagonal Pyramidal Compositions](octagonal-pyramidal-compositions.md)
+- [Octagonal pyramidal numbers](octagonal-pyramidal-number.md)
+- [Compositions avoiding parts 2, 3 and 4](octagonal-pyramidal-compositions.md)

@@ -6,10 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.binomialTransform
 ---
 
-# Binomial Transform
+# Binomial transform
 
-Binomial transform of a sequence, the `k = 1` case of
-`fallingKBinomialTransform`.
+**Binomial transform.** The binomial transform of an integer sequence $(a_i)_{i \ge 0}$ is the
+falling k-binomial transform of $a$ with $k = 1$, the sequence whose $n$-th term is
+$\sum_{i=0}^{n} \binom{n}{i} 1^{n-i} a_i$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Falling KBinomial Transform](falling-kbinomial-transform.md)
+- [Falling k-binomial transform](falling-kbinomial-transform.md)
 
 ## Sources
 

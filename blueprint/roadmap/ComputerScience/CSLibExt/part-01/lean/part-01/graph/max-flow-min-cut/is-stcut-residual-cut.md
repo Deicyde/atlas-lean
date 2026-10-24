@@ -14,7 +14,7 @@ The certificate cut of the Edmonds-Karp flow separates the source from the sink.
 
 - [Edmonds Karp](../edmonds-karp/edmonds-karp.md)
 - [Residual Cut](../edmonds-karp/residual-cut.md)
-- [Is STCut](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/is-stcut.md)
+- [Source–sink cut](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/is-stcut.md)
 
 ## Proof depends on
 

@@ -13,7 +13,7 @@ this is the reading Corollaries 1 and 2 restate.
 
 ## Depends on
 
-- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
+- [Weighted Davenport constant](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 
 ## Sources
 

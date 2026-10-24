@@ -6,13 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.motzkinNumber_eq_sum_range_half
 ---
 
-# Motzkin Number eq sum range half
+# Truncated Catalan-weighted sum for Motzkin numbers
 
-The defining sum may stop at `k = ⌊n/2⌋`, since `C(n,2k) = 0` for `2k > n`.
+**Truncated Catalan-weighted sum for Motzkin numbers.** Let $C_k$ denote the $k$-th Catalan
+number. For every natural number $n$, the $n$-th Motzkin number $M(n)$ satisfies
+
+$$M(n) = \sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} C_k.$$
+
+The terms dropped from the defining sum vanish, since $\binom{n}{2k} = 0$ for $2k > n$.
 
 ## Depends on
 
-- [Motzkin Number](motzkin-number.md)
+- [Motzkin numbers as a Catalan-weighted binomial sum](motzkin-number.md)
 
 ## Sources
 

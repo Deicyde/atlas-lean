@@ -7,15 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.exponentialGeneratingFunction_binomialTransform
 ---
 
-# Binomial Transform Exponential Generating Function
+# Exponential generating function of the binomial transform
 
-The exponential generating function of a sequence's binomial transform is
-its exponential generating function multiplied by `exp`.
+**Exponential generating function of the binomial transform.** Let $(a_n)_{n \ge 0}$ and
+$(b_n)_{n \ge 0}$ be real sequences with $b_n = \sum_{k=0}^{n} \binom{n}{k} a_k$ for every $n$,
+and let $A : \mathbb{R} \to \mathbb{R}$ be any function. For every real number $t$, if the series
+$\sum_{n \ge 0} a_n t^n / n!$ converges absolutely with sum $A(t)$, then the series
+$\sum_{n \ge 0} b_n t^n / n!$ converges absolutely with sum $e^t A(t)$.
 
-`b` is the binomial transform of `a`, `A` its exponential generating
-function, and the conclusion is the EGF of `b`. The formulation is pointwise:
-it assumes convergence of the EGF of `a` only at the argument `t` under
-consideration.
+The formulation is pointwise: convergence of the exponential generating function of $a$ is
+assumed only at the point $t$ under consideration.
 
 ## Depends on
 

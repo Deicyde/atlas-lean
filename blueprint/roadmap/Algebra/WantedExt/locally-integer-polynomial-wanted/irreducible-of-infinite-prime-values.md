@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.irreducible_of_infinite_prime_values
 ---
 
-# Theorem 2
+# LIP functions with infinitely many prime values are irreducible
 
-**Theorem 2.** If `f ∈ LIP(U)` and `|f(x)|` is prime for infinitely many `x ∈ U`, then `f`
-is irreducible in `LIP(U)`.
+**LIP functions with infinitely many prime values are irreducible.** Let
+$U \subseteq \mathbb{Z}$, and write $\mathrm{LIP}(U)$ for the ring of locally integer polynomial
+functions on $U$: the functions $U \to \mathbb{Z}$ whose restriction to every finite subset of $U$
+agrees with a polynomial with integer coefficients. Let $f \in \mathrm{LIP}(U)$. If $|f(x)|$ is a
+prime number for infinitely many $x \in U$, then $f$ is irreducible in the ring $\mathrm{LIP}(U)$.
 
 ## Depends on
 
-- [Lip Subring](lip-subring.md)
+- [The ring $\mathrm{LIP}(U)$ of locally integer polynomial functions](lip-subring.md)
 
 ## Sources
 

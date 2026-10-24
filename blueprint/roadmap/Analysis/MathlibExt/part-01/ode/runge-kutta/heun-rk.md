@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.Analysis.ODE.RungeKutta.heunRK
 ---
 
-# Heun RK
+# Heun's tableau
 
-Heun's tableau: `a = [[0, 0], [1, 0]]`, `b = [1 / 2, 1 / 2]`.
+**Heun's tableau.** The explicit Runge–Kutta method with two stages, Butcher tableau entries
+$a_{21} = 1$ and $a_{11} = a_{12} = a_{22} = 0$, and weights $b_1 = b_2 = 1/2$.
 
 ## Depends on
 
-- [Explicit RK](explicit-rk.md)
+- [Explicit Runge–Kutta method](explicit-rk.md)
 
 ## Sources
 

@@ -7,23 +7,23 @@ proof: formalized
 lean: MetaMathlibExt.pentagonal_number_theorem
 ---
 
-# Pentagonal number theorem
+# Euler's pentagonal recurrence for the partition function
 
-Euler's recurrence from the pentagonal number theorem: for `n ≥ 1`,
-`p(n)` equals the finite alternating sum over nonzero `k` of
-`(-1) ^ (k + 1) * p (n - g k)`, where `g k` are the generalized
-pentagonal numbers. Stable source:
-https://en.wikipedia.org/wiki/Pentagonal_number_theorem
-("Pentagonal number theorem", statement `pentagonal-s1`).
+**Euler's pentagonal recurrence for the partition function.** Let $p(n)$ be the number of
+partitions of $n$, and for an integer $k$ let $g(k) = k(3k - 1)/2$ be the generalized pentagonal
+number of $k$. For every natural number $n \ge 1$,
+$p(n) = \sum_{k} (-1)^{k+1}\, p(n - g(k))$, where the sum runs over the nonzero integers $k$
+with $g(k) \le n$.
 
 ## Depends on
 
-- [Partition Function](partition-function.md)
+- [The partition function](partition-function.md)
 
 ## Proof depends on
 
-- [Mk partition Function mul pentagonal Series](mk-partition-function-mul-pentagonal-ser.md)
+- [Euler's identity for the partition generating function](mk-partition-function-mul-pentagonal-ser.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.PentagonalNumber](../../../../../../../sources/v2/MathlibExt.md)
+- https://en.wikipedia.org/wiki/Pentagonal_number_theorem ("Pentagonal number theorem", statement `pentagonal-s1`).

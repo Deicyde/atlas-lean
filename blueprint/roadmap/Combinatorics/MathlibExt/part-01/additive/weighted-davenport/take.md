@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.IsWeightedZeroSumFree.take
 ---
 
-# Take
+# Prefixes of weighted zero-sum free sequences
 
-Prefixes of a weighted zero-sum free sequence are weighted zero-sum free.
+**Prefixes of weighted zero-sum free sequences.** Let $G$ be an additive commutative monoid
+and $A$ a finite set of natural numbers. If a sequence $s$ over $G$ is $A$-weighted zero-sum
+free, then for every $\ell \in \mathbb{N}$ the prefix of $s$ formed by its first $\ell$ terms
+(all of $s$ when $\ell$ is at least its length) is $A$-weighted zero-sum free.
 
 ## Depends on
 
-- [Is Weighted Zero Sum Free](is-weighted-zero-sum-free.md)
+- [Weighted zero-sum free sequences](is-weighted-zero-sum-free.md)
 
 ## Sources
 

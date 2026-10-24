@@ -7,17 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.bAryBinomialCoefficient_symm
 ---
 
-# B Ary Binomial Coefficient symm
+# Symmetry of $b$-ary binomial coefficients
 
-The `b`-ary binomial coefficients are symmetric: `C_b(n, k) = C_b(n, n - k)` for `k ≤ n`.
+**Symmetry of $b$-ary binomial coefficients.** Let $b \ge 2$ and write $\binom{n}{k}_b$ for
+the $b$-ary binomial coefficient. For all natural numbers $k \le n$,
+$\binom{n}{k}_b = \binom{n}{n-k}_b$.
 
 ## Depends on
 
-- [B Ary Binomial Coefficient](../bary-binomial-coefficient/b-ary-binomial-coefficient.md)
+- [The $b$-ary binomial coefficient](../bary-binomial-coefficient/b-ary-binomial-coefficient.md)
 
 ## Proof depends on
 
-- [B Ary Binomial Coefficient eq prod div pow](b-ary-binomial-coefficient-eq-prod-div-p.md)
+- [Digit-product formula for $b$-ary binomial coefficients](b-ary-binomial-coefficient-eq-prod-div-p.md)
 
 ## Sources
 

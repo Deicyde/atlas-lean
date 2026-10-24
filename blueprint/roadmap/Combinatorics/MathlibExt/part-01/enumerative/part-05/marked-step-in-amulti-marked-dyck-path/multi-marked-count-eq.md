@@ -7,19 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.multiMarkedCountEq
 ---
 
-# Multi Marked Count Eq
+# Equal horizontal and vertical step counts
 
-Diagonal count equality: the `E` count of a multi-marked Dyck path equals
-its total vertical-step count. Concept `jis_sem_ee7327c841ed4326952fd4fb`;
-source statement `jis_54a13fcd4eb84116f24d6935`.
+**Equal horizontal and vertical step counts.** For every multi-marked Dyck path $P$, the
+number $E(P)$ of horizontal steps of $P$ equals the number of vertical steps of $P$, plain steps
+$N$ and marked steps $N^*_t$ counted together.
 
 ## Depends on
 
-- [Multi Marked Dyck Path](multi-marked-dyck-path.md)
-- [Multi Marked Step](multi-marked-step.md)
-- [Multi Marked Count E](multi-marked-count-e.md)
-- [Multi Marked Count Vert](multi-marked-count-vert.md)
+- [Multi-marked Dyck path](multi-marked-dyck-path.md)
+- [Steps of a multi-marked Dyck path](multi-marked-step.md)
+- [Number of horizontal steps](multi-marked-count-e.md)
+- [Number of vertical steps](multi-marked-count-vert.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MarkedStepInAMultiMarkedDyckPath](../../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_ee7327c841ed4326952fd4fb`; source statement `jis_54a13fcd4eb84116f24d6935`.

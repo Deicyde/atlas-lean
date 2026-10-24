@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.Analysis.Series.ScottishBook5BoundedWanted.IsBounded
 ---
 
-# Is Bounded
+# Bounded sequences
 
-A sequence is bounded if its terms are uniformly bounded in
-absolute value.
+**Bounded sequences.** A real sequence $(x_n)_{n \in \mathbb{N}}$ is bounded when there is a
+real number $B$ with $|x_n| \le B$ for all $n$.
 
 ## Depends on
 

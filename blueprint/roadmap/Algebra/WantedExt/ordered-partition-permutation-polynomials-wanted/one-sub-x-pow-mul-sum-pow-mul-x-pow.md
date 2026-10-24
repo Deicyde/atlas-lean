@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.one_sub_X_pow_mul_sum_pow_mul_X_pow
 ---
 
-# One sub X pow mul sum pow mul X pow
+# Rational form of the power-weighted geometric sum
 
-For positive integers `t, k`, `(1 - X)^(t+1) ∑_{n=1}^{k} n^t X^n` equals
-`∑_{n=1}^{t} (∑_{i=0}^{n-1} (-1)^i C(t+1, i) (n - i)^t) X^n
-+ ∑_{m=1}^{t+1} (∑_{i=m}^{t+1} (-1)^i C(t+1, i) (k + m - i)^t) X^(k+m)`, i.e. for `x ≠ 1` the
-polynomial `h_t^k(x) = ∑ n^t x^n` is this numerator divided by `(1 - x)^(t+1)`. Stated as an
-identity in `ℤ[X]` (equivalent to the paper's quotient form at every `x ≠ 1`).
+**Rational form of the power-weighted geometric sum.** For positive integers $t$ and $k$,
+the following identity holds in $\mathbb{Z}[X]$:
+
+$$(1 - X)^{t+1} \sum_{n=1}^{k} n^t X^n =
+\sum_{n=1}^{t} \Bigl(\sum_{i=0}^{n-1} (-1)^i \binom{t+1}{i} (n - i)^t\Bigr) X^n +
+\sum_{m=1}^{t+1} \Bigl(\sum_{i=m}^{t+1} (-1)^i \binom{t+1}{i} (k + m - i)^t\Bigr) X^{k+m}.$$
+
+Equivalently, for every $x \ne 1$ the value $h_t^k(x) = \sum_{n=1}^{k} n^t x^n$ is the
+right-hand side at $x$ divided by $(1 - x)^{t+1}$, which is the form the source states.
 
 ## Depends on
 

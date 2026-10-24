@@ -6,23 +6,24 @@ statement: formalized
 lean: PeriodPair.ellipticOrderInFundamentalParallelogram
 ---
 
-# Elliptic Order In Fundamental Parallelogram
+# Elliptic order in a fundamental parallelogram
 
-The elliptic order of `f` counted in the fundamental parallelogram with arbitrary
-vertex `α`: the sum of the pointwise pole multiplicities over the finite pole set.
-The sum is taken over the finite set supplied by
-`PeriodPair.poleSetInFundamentalParallelogram_finite`, which requires the elliptic
-hypothesis `hf`.
+**Elliptic order in a fundamental parallelogram.** Let $L$ be a period pair, let $f$ be an
+elliptic function for $L$ and let $\alpha \in \mathbb{C}$. The elliptic order of $f$ in the
+fundamental parallelogram of $L$ with vertex $\alpha$ is the natural number obtained by summing
+the pole multiplicity of $f$ at $z$ over all points $z$ of the pole set of $f$ in that
+parallelogram, that is, over the points of the parallelogram where this multiplicity is nonzero.
+Because $f$ is elliptic, this pole set is finite, so the sum is finite.
 
 ## Depends on
 
-- [Is Elliptic Function](../function/is-elliptic-function.md)
+- [Elliptic functions](../function/is-elliptic-function.md)
 
 ## Proof depends on
 
-- [Pole Multiplicity](pole-multiplicity.md)
-- [Pole Set In Fundamental Parallelogram](pole-set-in-fundamental-parallelogram.md)
-- [Pole Set In Fundamental Parallelogram finite](pole-set-in-fundamental-parallelogram-fi.md)
+- [Pole multiplicity](pole-multiplicity.md)
+- [Poles in a fundamental parallelogram](pole-set-in-fundamental-parallelogram.md)
+- [Finitely many poles in a fundamental parallelogram](pole-set-in-fundamental-parallelogram-fi.md)
 
 ## Sources
 

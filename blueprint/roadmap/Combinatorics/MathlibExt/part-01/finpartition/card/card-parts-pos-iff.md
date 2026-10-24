@@ -6,9 +6,11 @@ proof: formalized
 lean: Finpartition.card_parts_pos_iff
 ---
 
-# Card parts pos iff
+# Recognizing the one-block partition
 
-A partition of a nonempty carrier is top iff it has one block. -/
+**Recognizing the one-block partition.** If $P$ is a partition of a nonempty finite set
+$s$, then $P$ is the coarsest partition $\top$ of $s$, whose only block is $s$, if and only if
+$P$ has exactly one block. -/
 theorem eq_top_iff_card_parts_eq_one (P : Finpartition s) (hs : s.Nonempty) :
     P = ⊤ ↔ P.parts.card = 1 := by
   constructor

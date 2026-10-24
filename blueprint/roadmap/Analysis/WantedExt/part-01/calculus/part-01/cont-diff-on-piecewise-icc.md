@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.PiecewiseContDiffWanted.contDiffOn_piecewise_Icc
 ---
 
-# Piecewise Cont Diff Wanted
+# Gluing $C^n$ functions on adjacent closed intervals
 
-Gluing lemma for piecewise `C^n` functions on adjacent closed intervals: if
-`f` is `C^n` on `[a, b]`, `g` is `C^n` on `[b, c]`, and all iterated derivatives
-up to order `n` agree at the junction point `b`, then the piecewise function
-(equal to `f` on `[a, b]` and to `g` elsewhere) is `C^n` on `[a, c]`. Mathlib
-only has gluing over open unions (`ContDiffOn.union_of_isOpen`).
+**Gluing $C^n$ functions on adjacent closed intervals.** Let $E$ be a real normed space, let
+$n \in \mathbb{N} \cup \{\infty\}$ and let $a \le b \le c$ be real numbers. Let
+$f, g : \mathbb{R} \to E$ be such that $f$ is $C^n$ on $[a, b]$ and $g$ is $C^n$ on $[b, c]$, and
+suppose that for every natural number $k \le n$ the $k$-th derivative of $f$ within $[a, b]$ and
+the $k$-th derivative of $g$ within $[b, c]$ agree at $b$. Then the function equal to $f$ on
+$[a, b]$ and to $g$ elsewhere is $C^n$ on $[a, c]$.
 
 ## Depends on
 

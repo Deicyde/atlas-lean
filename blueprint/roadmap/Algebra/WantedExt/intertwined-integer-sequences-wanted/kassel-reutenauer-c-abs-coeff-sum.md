@@ -5,15 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.kasselReutenauer_C_abs_coeff_sum
 ---
 
-# Kassel Reutenauer C abs coeff sum
+# The absolute coefficient sum of $C_n$ counts odd divisors
 
-The sum of the absolute values of the coefficients of `C_n(q)` equals four
-times the number of odd divisors of `n` (`n ≥ 1`). Stated for the Laurent
-polynomial `C_n(q)/q^n`, which has the same coefficients.
+**The absolute coefficient sum of $C_n$ counts odd divisors.** Let $n \ge 1$, let $\bar P_n$ be
+the Kassel–Reutenauer polynomial, and write $C_n(q)/q^n$ for the Laurent polynomial
+$(q - 2 + q^{-1})\,\bar P_n(q + q^{-1})$ in $\mathbb{Z}[q, q^{-1}]$. Then the sum of the absolute
+values of the coefficients of $C_n(q)/q^n$ equals four times the number of odd divisors of $n$.
+
+Multiplying by $q^n$ does not change the coefficients, so this is the source's statement about
+the polynomial $C_n(q)$.
 
 ## Depends on
 
-- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
+- [Kassel–Reutenauer polynomial](kassel-reutenauer-poly.md)
 
 ## Sources
 

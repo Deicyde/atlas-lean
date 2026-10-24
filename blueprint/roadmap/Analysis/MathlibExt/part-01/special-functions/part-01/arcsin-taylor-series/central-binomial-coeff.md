@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Analysis.SpecialFunctions.ArcsinTaylorSeries.centralBinomialCoeff
 ---
 
-# Central Binomial Coeff
+# Normalized central binomial coefficient
 
-The central-binomial coefficient `C(2n,n) / 4^n`.
+**Normalized central binomial coefficient.** For a natural number $n$, the normalized central
+binomial coefficient is the real number $c_n = \binom{2n}{n}/2^{2n} = \binom{2n}{n}/4^n$.
 
 ## Depends on
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: CSLibExt.Combinatorics.RandomThreeSat.extendAssign
 ---
 
-# Extend Assign
+# Extension of an assignment by false
 
-Extend a finite assignment to all natural variable indices, defaulting
-to `false` outside the model's variables.
+**Extension of an assignment by false.** An assignment $a$ of Boolean values to the variables
+$0, \dots, n - 1$ extends to all natural-number variables by giving variable $i$ the value $a(i)$
+when $i < n$ and the value false otherwise.
 
 ## Depends on
 

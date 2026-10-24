@@ -4,5 +4,5 @@ navigation: module
 
 # Homogeneous Sobolev Holder Embedding
 
-- [Dot HSeminorm](dot-hseminorm.md)
-- [Exists holder Seminorm le mul dot HSeminorm](exists-holder-seminorm-le-mul-dot-hsemin.md)
+- [Homogeneous Sobolev seminorm for the Hölder embedding](dot-hseminorm.md)
+- [The homogeneous Sobolev seminorm controls the Hölder seminorm](exists-holder-seminorm-le-mul-dot-hsemin.md)

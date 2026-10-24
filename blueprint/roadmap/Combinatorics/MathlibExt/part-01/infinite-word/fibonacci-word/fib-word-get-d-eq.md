@@ -7,20 +7,23 @@ proof: formalized
 lean: MetaMathlibExt.fibWord_getD_eq
 ---
 
-# Fib Word get D eq
+# Letters of the finite Fibonacci words stabilize
 
-Covered indices stabilize across iterates: later words agree with earlier ones.
-Concept `jis_sem_f409ef3715730614fd194b4d`.
+**Letters of the finite Fibonacci words stabilize.** Let $f_0 = 0$ and let $f_{k+1}$ be the
+image of $f_k$ under the Fibonacci morphism ($0 \mapsto 01$, $1 \mapsto 0$). For all natural
+numbers $n \le m$ and every index $i$ less than the length of $f_n$ (indices start at $0$), the
+letter of $f_m$ at index $i$ equals the letter of $f_n$ at index $i$.
 
 ## Depends on
 
-- [Fib Word](fib-word.md)
+- [Finite Fibonacci words](fib-word.md)
 
 ## Proof depends on
 
-- [Fib Word prefix](fib-word-prefix.md)
-- [Get D append prefix](get-d-append-prefix.md)
+- [Earlier finite Fibonacci words are prefixes of later ones](fib-word-prefix.md)
+- [Appending a word does not change earlier letters](get-d-append-prefix.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.FibonacciWord](../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_f409ef3715730614fd194b4d`.

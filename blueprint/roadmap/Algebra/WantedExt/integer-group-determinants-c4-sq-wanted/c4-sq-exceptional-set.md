@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.c4SqExceptionalSet
 ---
 
-# C4 Sq Exceptional Set
+# The exceptional set $A$ for $C_4^2$
 
-The paper's set
-`A = {(8k-3)(8l-3)(8m-3)(8n-3) | k ∈ ℤ, 8l-3, 8m-3, 8n-3 ∈ P, k + l ≢ m + n (mod 2)}`.
+**The exceptional set $A$ for $C_4^2$.** Let $P$ be the set of positive primes
+$p \equiv 5 \pmod 8$. The set $A \subseteq \mathbb{Z}$ consists of all products
+$(8k - 3)(8l - 3)(8m - 3)(8n - 3)$ with $k, l, m, n \in \mathbb{Z}$ such that $8l - 3$,
+$8m - 3$ and $8n - 3$ lie in $P$ and $k + l \not\equiv m + n \pmod 2$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Primes Five Mod Eight](primes-five-mod-eight.md)
+- [Primes congruent to $-3$ modulo $8$](primes-five-mod-eight.md)
 
 ## Sources
 

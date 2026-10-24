@@ -13,7 +13,7 @@ if `3 ∣ k` and `3 · 2^k - 2` otherwise; and `p_{ℳ₂}(2^{k+3}) = 8 p_{ℳ�
 ## Depends on
 
 - [Meta Automatic Two](meta-automatic-two.md)
-- [Word Factor Complexity](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
+- [Factor complexity of an infinite word](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
 
 ## Sources
 

@@ -4,6 +4,6 @@ navigation: module
 
 # Scottish Book44
 
-- [Line In Graph](line-in-graph.md)
-- [Doubly Ruled Graph](doubly-ruled-graph.md)
-- [Doubly ruled graph is quadric](doubly-ruled-graph-is-quadric.md)
+- [Line lying in a graph](line-in-graph.md)
+- [Doubly ruled graph](doubly-ruled-graph.md)
+- [Doubly ruled graphs are planes or hyperbolic paraboloids](doubly-ruled-graph-is-quadric.md)

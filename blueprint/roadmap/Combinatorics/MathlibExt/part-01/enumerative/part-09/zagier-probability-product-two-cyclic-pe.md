@@ -7,12 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.zagier_probability_product_two_cyclic_permutations
 ---
 
-# Zagier Cyclic Permutation Product
+# Zagier's formula for products of two cyclic permutations
 
-Zagier's formula for the probability that the product of two uniformly chosen cyclic
-permutations of `Fin n` has exactly `k` cycles:
-`(1 + (-1) ^ (n - k)) / Nat.factorial (n + 1) * Nat.stirlingFirst (n + 1) k`.
-Cyclicity is encoded as cycle-type-plus-fixed-points count equal to one.
+**Zagier's formula for products of two cyclic permutations.** Let $n$ and $k$ be integers
+with $n \ge 1$ and $1 \le k \le n$. Call a permutation of an $n$-element set cyclic when it has
+exactly one cycle, fixed points counted as cycles. Write $c(n+1, k)$ for the unsigned Stirling
+number of the first kind, the number of permutations of $n + 1$ elements with exactly $k$
+cycles. If $\sigma$ and $\tau$ are chosen independently and uniformly among the cyclic
+permutations of an $n$-element set, then the probability that $\sigma\tau$ has exactly $k$
+cycles, fixed points included, is
+
+$$\frac{1 + (-1)^{n-k}}{(n+1)!} \, c(n+1, k).$$
 
 Proof: We formalize the plane-permutation transposition and reflection bijections of
 Chen and Reidys, arXiv:1502.07674, lines 786-1074, and their specialization to Zagier's
@@ -25,9 +30,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Card perm cycle Count eq stirling First](../part-08/stirling/card-perm-cycle-count-eq-stirling-first.md)
-- [Cycle Quotient Count](../part-08/stirling/cycle-quotient-count.md)
-- [Cycle Quotient Count eq](../part-08/stirling/cycle-quotient-count-eq.md)
+- [Stirling numbers of the first kind count permutations by cycles](../part-08/stirling/card-perm-cycle-count-eq-stirling-first.md)
+- [Number of cycles of a permutation](../part-08/stirling/cycle-quotient-count.md)
+- [Counting cycles via the cycle type](../part-08/stirling/cycle-quotient-count-eq.md)
 
 ## Sources
 

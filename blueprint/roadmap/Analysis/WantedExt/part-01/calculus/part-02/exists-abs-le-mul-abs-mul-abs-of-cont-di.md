@@ -5,14 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.SmoothVanishingOnAxesBoundWanted.exists_abs_le_mul_abs_mul_abs_of_contDiff_of_eq_zero_on_axes
 ---
 
-# Smooth Vanishing On Axes Bound Wanted
+# Smooth functions vanishing on the axes are $O(|x|\,|y|)$ near the origin
 
-Let $f : \mathbb{R}^2 \to \mathbb{R}$ be an infinitely differentiable function. Suppose
-$f(x,y)=0$ whenever $xy=0$.
-Prove that there exists $C>0$ such that
-\[
-|f(x,y)| \le C|x||y|, \quad \forall (x,y)\in B(0,1).
-\]
+**Smooth functions vanishing on the axes are $O(|x|\,|y|)$ near the origin.** Let
+$f : \mathbb{R}^2 \to \mathbb{R}$ be infinitely differentiable with $f(x,y) = 0$ whenever $xy = 0$.
+Then there is a constant $C > 0$ such that $|f(x,y)| \le C\,|x|\,|y|$ for all real $x$ and $y$ with
+$|x| < 1$ and $|y| < 1$, that is, on the open unit ball of $\mathbb{R}^2$ for the maximum norm.
 
 ## Depends on
 

@@ -4,11 +4,11 @@ navigation: module
 
 # Card
 
-- [Card Prod](card-prod.md)
-- [Card le of mem parts](card-le-of-mem-parts.md)
-- [One le card of mem parts](one-le-card-of-mem-parts.md)
-- [Card lt of ne top](card-lt-of-ne-top.md)
-- [Eq top iff card parts eq one](eq-top-iff-card-parts-eq-one.md)
-- [Card parts pos iff](card-parts-pos-iff.md)
-- [Eq bot iff card parts eq card](eq-bot-iff-card-parts-eq-card.md)
-- [Card Prod map Monoid Hom](card-prod-map-monoid-hom.md)
+- [Product over block sizes](card-prod.md)
+- [Blocks are no larger than the ground set](card-le-of-mem-parts.md)
+- [Blocks are nonempty](one-le-card-of-mem-parts.md)
+- [Blocks of a partition other than the coarsest are smaller than the ground set](card-lt-of-ne-top.md)
+- [Recognizing the one-block partition](eq-top-iff-card-parts-eq-one.md)
+- [Recognizing the one-block partition](card-parts-pos-iff.md)
+- [Recognizing the partition into singletons by its number of blocks](eq-bot-iff-card-parts-eq-card.md)
+- [Monoid homomorphisms preserve block-size products](card-prod-map-monoid-hom.md)

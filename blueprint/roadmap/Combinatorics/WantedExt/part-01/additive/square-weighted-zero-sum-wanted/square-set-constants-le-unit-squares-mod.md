@@ -18,7 +18,7 @@ ambient `n ≥ 2`), since then `S(1)` is empty, so `D_{S(1)} = ⊤`, while
 - [Square Set](square-set.md)
 - [Unit Square Set](unit-square-set.md)
 - [Weighted Consecutive Constant](weighted-consecutive-constant.md)
-- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
+- [Weighted Davenport constant](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 - [Zmod Weight Reps](zmod-weight-reps.md)
 
 ## Sources

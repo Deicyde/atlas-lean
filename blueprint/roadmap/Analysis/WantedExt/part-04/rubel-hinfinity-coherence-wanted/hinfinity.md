@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Analysis.RubelHInfinityCoherenceWanted.HInfinity
 ---
 
-# HInfinity
+# Elements of $H^\infty$
 
-The carrier type of H∞ ([AMR-022-5024], Problem 5.24).
+**Elements of $H^\infty$.** The space whose points are the members of the subring $H^\infty$
+of complex-valued functions on the open unit disc $\mathbb{D}$, that is, the bounded functions
+on $\mathbb{D}$ that agree on $\mathbb{D}$ with a function complex differentiable there.
 
 ## Depends on
 
@@ -16,9 +18,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Disc](disc.md)
-- [HInfinity Subring](hinfinity-subring.md)
+- [The open unit disc](disc.md)
+- [The ring $H^\infty$ as a subring of functions on the disc](hinfinity-subring.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.RubelHInfinityCoherenceWanted](../../../../../sources/v2/WantedExt.md)
+- [AMR-022-5024], Research Problems in Function Theory, Problem 5.24.

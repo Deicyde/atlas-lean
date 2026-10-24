@@ -5,7 +5,7 @@ navigation: module
 
 # Fourier Convergence
 
-- [Fourier Partial Sum](fourier-partial-sum.md)
+- [Symmetric Fourier partial sums](fourier-partial-sum.md)
 - [Fourier Cesaro Mean](fourier-cesaro-mean.md)
-- [Dirichlet pointwise](dirichlet-pointwise.md)
-- [Fejer](fejer.md)
+- [Dirichlet's theorem on pointwise convergence of Fourier series](dirichlet-pointwise.md)
+- [Fejér's theorem](fejer.md)

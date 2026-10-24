@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.artinHasse_coeff_den_not_dvd
 ---
 
-# Artin Hasse coeff den not dvd
+# The Artin–Hasse exponential has $p$-integral coefficients
 
-The Artin-Hasse exponential `F(z) = exp (Σ_{j ≥ 0} z^(p^j) / p^j)` has `p`-integral
-coefficients: no coefficient has denominator divisible by `p`.
+**The Artin–Hasse exponential has $p$-integral coefficients.** Let $p$ be a prime and let
+$F(z) = \exp\big(\sum_{j \ge 0} z^{p^j} / p^j\big) \in \mathbb{Q}[[z]]$ be the Artin–Hasse
+exponential. For every $n \ge 0$, the coefficient of $z^n$ in $F$, written in lowest terms, has a
+denominator not divisible by $p$.
 
 ## Depends on
 

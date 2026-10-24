@@ -6,10 +6,14 @@ statement: formalized
 lean: MathlibExt.Analysis.AMR22Problem7082Wanted.IsInjectiveInParam
 ---
 
-# Is Injective In Param
+# Injectivity at each parameter of the disc
 
-Condition (a) from [AMR-022-7082] Problem 7.82: for every fixed
-`z ∈ 𝔻`, the map `w ↦ F w z` is injective on `E`.
+**Injectivity at each parameter of the disc.** Let $\mathbb{D}$ be the open unit disc, $E$ a
+set of complex numbers and $F$ a function assigning a complex number $F(w, z)$ to each pair of
+complex numbers $w, z$. Condition (a) holds for $E$ and $F$ when, for every $z \in \mathbb{D}$,
+the map $w \mapsto F(w, z)$ is injective on $E$.
+
+This is condition (a) of Problem 7.82 in AMR-022-7082.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Unit Disc](unit-disc.md)
+- [Open unit disc](unit-disc.md)
 
 ## Sources
 

@@ -17,7 +17,7 @@ first multiplied by `f_1^8 f_3^4 f_4^4 f_6^4 f_12^4`).
 ## Depends on
 
 - [Odd Designated Summands Count](odd-designated-summands-count.md)
-- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

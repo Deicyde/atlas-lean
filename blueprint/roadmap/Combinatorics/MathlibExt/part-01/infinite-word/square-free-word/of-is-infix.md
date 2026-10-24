@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.IsSquareFreeWord.of_isInfix
 ---
 
-# Of is Infix
+# Factors of square-free words are square-free
 
-Every infix of a squarefree word is squarefree.
+**Factors of square-free words are square-free.** If a finite word $v$ is square-free and $u$
+is a factor of $v$, that is, $v = puq$ for some words $p$ and $q$, then $u$ is square-free.
 
 ## Depends on
 
-- [Is Square Free Word](is-square-free-word.md)
+- [Square-free finite word](is-square-free-word.md)
 
 ## Sources
 

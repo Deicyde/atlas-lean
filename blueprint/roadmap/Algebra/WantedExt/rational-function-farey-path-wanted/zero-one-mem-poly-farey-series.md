@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.zero_one_mem_polyFareySeries
 ---
 
-# Zero one mem poly Farey Series
+# The fraction $0/1$ lies in every Farey series
 
-Characteristic member: `0 / 1 ∈ 𝓕ₙ` for every `n`.
+**The fraction $0/1$ lies in every Farey series.** For every field $F$ and every natural number
+$n$, the pair $(0, 1)$, that is the fraction $0 / 1$, belongs to the Farey series $\mathcal{F}_n$
+of order $n$ over $F$.
 
 ## Depends on
 
-- [Poly Farey Series](poly-farey-series.md)
+- [Farey series over a field](poly-farey-series.md)
 
 ## Sources
 

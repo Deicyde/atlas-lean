@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.mem_range_polynomialToLIP_of_factorial_bound
 ---
 
-# Theorem 7
+# LIP functions on $\mathbb{Z}$ below the factorial bound are polynomials
 
-**Theorem 7.** If `f ∈ Lℤ[x]` and `|f(x)| < (2|x| - 1)!/2^{2|x|-1}` for all but finitely
-many `x ∈ ℤ`, then `f` is an integer polynomial.
+**LIP functions on $\mathbb{Z}$ below the factorial bound are polynomials.** Let $f$ lie in
+$\mathrm{LIP}(\mathbb{Z})$, the ring of locally integer polynomial functions
+$\mathbb{Z} \to \mathbb{Z}$. If $|f(x)| < (2|x| - 1)!/2^{2|x| - 1}$ for all but finitely many
+$x \in \mathbb{Z}$, then there is a polynomial $p \in \mathbb{Z}[x]$ with $f(x) = p(x)$ for all
+$x \in \mathbb{Z}$.
 
 ## Depends on
 
-- [Lip Subring](lip-subring.md)
+- [The ring $\mathrm{LIP}(U)$ of locally integer polynomial functions](lip-subring.md)
 - [Polynomial To LIP](polynomial-to-lip.md)
 
 ## Sources

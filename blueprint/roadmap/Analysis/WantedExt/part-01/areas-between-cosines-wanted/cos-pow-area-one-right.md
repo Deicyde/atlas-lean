@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.cosPowArea_one_right
 ---
 
-# Cos Pow Area one right
+# The area between cosine powers vanishes at frequency one
 
-For `k = 1` the two curves coincide, so the area is `0`.
+**The area between cosine powers vanishes at frequency one.** For natural numbers $n$ and $k$,
+let $A_n(k) = \int_0^\pi |\cos^n x - \cos^n(kx)|\,dx$ be the area between $\cos^n x$ and
+$\cos^n(kx)$ on $[0, \pi]$. Then $A_n(1) = 0$ for every natural number $n$, since the two curves
+then coincide.
 
 ## Depends on
 
-- [Cos Pow Area](cos-pow-area.md)
+- [Area between powers of cosines](cos-pow-area.md)
 
 ## Sources
 

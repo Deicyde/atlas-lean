@@ -5,9 +5,9 @@ navigation: module
 
 # Herman Problem290
 
-- [Is Diophantine](is-diophantine.md)
-- [Analytic Circle Diffeo](analytic-circle-diffeo.md)
-- [Has Rotation Number](has-rotation-number.md)
-- [Is Analytically Conjugate To Rotation](is-analytically-conjugate-to-rotation.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Diophantine numbers](is-diophantine.md)
+- [Real-analytic circle diffeomorphisms](analytic-circle-diffeo.md)
+- [Rotation number of a lift](has-rotation-number.md)
+- [Analytic conjugacy to a rotation](is-analytically-conjugate-to-rotation.md)
+- [Herman's analytic linearization problem](conjecture.md)
+- [Herman's analytic linearization problem has a positive answer](conjecture-holds.md)

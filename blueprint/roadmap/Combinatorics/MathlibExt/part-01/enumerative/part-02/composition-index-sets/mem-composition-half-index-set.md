@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.mem_compositionHalfIndexSet
 ---
 
-# Mem composition Half Index Set
+# Membership in $S(m, n, q)$
 
-Membership in `S(m, n, q)` unfolded.
+**Membership in $S(m, n, q)$.** For natural numbers $m$, $n$, $q$ and $k$, the number $k$
+lies in the index set $S(m, n, q)$ if and only if $2k \equiv n - q \pmod{m}$, with the difference
+taken in the integers, and $2k < n$.
 
 ## Depends on
 
-- [Composition Half Index Set](composition-half-index-set.md)
+- [The index set $S(m, n, q)$](composition-half-index-set.md)
 
 ## Sources
 

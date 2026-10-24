@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.arithProgPoly_irreducible_of_primitiveRoot
 ---
 
-# Arith Prog Poly irreducible of primitive Root
+# Irreducibility when $d$ has a primitive-root prime factor
 
-If `m + 1` is prime and `d` has a prime divisor `p` with `p ≢ 0 (mod m + 1)` that is a
-primitive root modulo `m + 1`, then `A_m(x) = a x^m + (a + d) x^(m-1) + ⋯ + (a + md)` is
-irreducible over `ℤ` (for coprime positive `a`, `d`, the paper's standing assumption).
+**Irreducibility when $d$ has a primitive-root prime factor.** Let $m \ge 2$ with $m + 1$
+prime, and let $a$, $d$ be coprime positive integers. Suppose $d$ has a prime divisor $p$ that is
+not divisible by $m + 1$ and whose residue modulo $m + 1$ has multiplicative order $m$ (that is,
+$p$ is a primitive root modulo $m + 1$). Then the polynomial
+$a x^m + (a + d) x^{m-1} + \cdots + (a + (m - 1)d) x + (a + md)$ is irreducible in
+$\mathbb{Z}[x]$.
 
 ## Depends on
 

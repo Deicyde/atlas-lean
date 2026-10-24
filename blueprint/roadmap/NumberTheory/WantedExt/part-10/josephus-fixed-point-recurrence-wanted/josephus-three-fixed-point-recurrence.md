@@ -15,7 +15,7 @@ For consecutive fixed points `a = n_p^{(ℓ)}`, `b = n_p^{(ℓ+1)}` of `J₃`, t
 ## Depends on
 
 - [Is Josephus Three Fixed Point](is-josephus-three-fixed-point.md)
-- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
+- [Josephus survivor function](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 
 ## Sources
 

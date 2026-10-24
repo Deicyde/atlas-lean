@@ -6,19 +6,24 @@ statement: formalized
 lean: MathlibExt.Analysis.NyquistShannonWanted.Analysis.NyquistShannon.nyquist_shannon_sampling
 ---
 
-# Nyquist--Shannon sampling theorem / Whittaker--Shannon interpolation formula
+# Nyquist–Shannon sampling theorem (Whittaker–Shannon interpolation formula)
 
-**Nyquist--Shannon sampling theorem / Whittaker--Shannon interpolation
-formula** for Schwartz functions with Fourier support in the mathlib-convention
-Nyquist band `[-1/2, 1/2]`.
+**Nyquist–Shannon sampling theorem (Whittaker–Shannon interpolation formula).** Let
+$\operatorname{sinc}(x) = \frac{\sin x}{x}$ for real $x \neq 0$ and $\operatorname{sinc}(0) = 1$,
+and let $f \colon \mathbb{R} \to \mathbb{C}$ be a Schwartz function whose Fourier transform
+$\hat f(\xi) = \int_{\mathbb{R}} f(x)\, e^{-2\pi i x \xi}\, dx$ vanishes at every real $\xi$
+outside $[-\frac12, \frac12]$. Then for every real $t$ the series
+$\sum_{n \in \mathbb{Z}} f(n) \operatorname{sinc}(\pi(n - t))$ is summable over $\mathbb{Z}$
+(unconditionally convergent) and
 
-The explicit `Summable` conjunct records the convergence content of the
-cardinal series, rather than relying only on Lean's total `tsum`.
+$$
+f(t) = \sum_{n \in \mathbb{Z}} f(n) \operatorname{sinc}(\pi(n - t)).
+$$
 
 ## Depends on
 
-- [Fourier Supported In Nyquist](fourier-supported-in-nyquist.md)
-- [Sinc](sinc.md)
+- [Fourier support in the Nyquist band](fourier-supported-in-nyquist.md)
+- [Unnormalised cardinal sine](sinc.md)
 
 ## Sources
 

@@ -7,20 +7,22 @@ proof: formalized
 lean: MetaMathlibExt.jacobiStirlingFirst_support
 ---
 
-# Jacobi Stirling First support
+# First-kind Jacobi–Stirling numbers vanish above the diagonal
 
-Support: `J(n,k;ζ) = 0` for `k > n`.
-Concept `jis_sem_108a092cfddb7cc6b11d221e`, from `e:JacobiStirling1`.
+**First-kind Jacobi–Stirling numbers vanish above the diagonal.** For every commutative ring
+$R$, every $\zeta \in R$ and all natural numbers $n < k$, the first-kind Jacobi–Stirling number
+$J(n,k;\zeta)$ equals $0$.
 
 ## Depends on
 
-- [Jacobi Stirling First](jacobi-stirling-first.md)
+- [First-kind Jacobi–Stirling numbers](jacobi-stirling-first.md)
 
 ## Proof depends on
 
-- [Jacobi Stirling First initial row](jacobi-stirling-first-initial-row.md)
-- [Jacobi Stirling First recurrence](jacobi-stirling-first-recurrence.md)
+- [Initial row of the first-kind Jacobi–Stirling numbers](jacobi-stirling-first-initial-row.md)
+- [Recurrence for the first-kind Jacobi–Stirling numbers](jacobi-stirling-first-recurrence.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.JacobiStirlingFirstKind](../../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_108a092cfddb7cc6b11d221e`, from `e:JacobiStirling1`.

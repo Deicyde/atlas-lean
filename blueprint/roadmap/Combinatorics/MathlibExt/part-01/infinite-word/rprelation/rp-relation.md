@@ -6,18 +6,18 @@ statement: formalized
 lean: MetaMathlibExt.ReversePermute.rpRelation
 ---
 
-# Rp Relation
+# The reverse-permute relation
 
-Reverse-permute (RP) relation on `k`-strings: `s` and `t` are related when
-`t` can be obtained from `s` by permuting the entries (applying a permutation
-of `Fin k` pointwise) and possibly reversing the string.
-Cites concept `jis_sem_f50f75500661653b133949f3` (`rp relation`, alias
-`RP relation`) and source statement `jis_cd98d66d9dff78260169a2e4`.
+**The reverse-permute relation.** For a natural number $k$, a $k$-string $s$ is related to a
+$k$-string $t$ by the reverse-permute (RP) relation when there is a permutation $\sigma$ of
+$\{0, 1, \ldots, k-1\}$ such that $t$ is obtained, either from $s$ or from the reversal of $s$,
+by replacing each entry $x$ with $\sigma(x)$.
 
 ## Depends on
 
-- [KString](kstring.md)
+- [$k$-strings](kstring.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.RPRelation](../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_f50f75500661653b133949f3` (`rp relation`, alias `RP relation`) and source statement `jis_cd98d66d9dff78260169a2e4`.

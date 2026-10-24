@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.lambertGMu
 ---
 
-# Lambert GMu
+# The power-weighted Lambert series $g_\mu$
 
-The power-weighted series `g_μ(q) = ∑_{n≥1} n^μ qⁿ / (1 + qⁿ)`.
+**The power-weighted Lambert series $g_\mu$.** For a complex number $q$ with $|q| < 1$ and an
+integer $\mu \ge 1$, the power-weighted Lambert series is
+$g_\mu(q) = \sum_{n \ge 1} n^\mu q^n / (1 + q^n)$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lambert GMu Summand](lambert-gmu-summand.md)
+- [Terms of the power-weighted Lambert series $g_\mu$](lambert-gmu-summand.md)
 
 ## Sources
 

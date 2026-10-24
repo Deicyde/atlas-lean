@@ -7,13 +7,14 @@ proof: formalized
 lean: PeriodPair.IsHomothetic.refl
 ---
 
-# Refl
+# Homothety of period pairs is reflexive
 
-Homothety of period pairs is reflexive.
+**Homothety of period pairs is reflexive.** Every period pair $L$ is
+homothetic to itself.
 
 ## Depends on
 
-- [Is Homothetic](is-homothetic.md)
+- [Homothetic period pairs](is-homothetic.md)
 
 ## Sources
 

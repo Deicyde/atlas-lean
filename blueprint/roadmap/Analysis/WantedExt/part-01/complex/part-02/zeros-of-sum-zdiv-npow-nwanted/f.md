@@ -5,9 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.ZerosOfSumZDivNPowNWanted.F
 ---
 
-# F
+# The entire function $1+\sum_{n\ge 1}(z/n)^n$
 
-The entire function `F z = 1 + ∑' n, (z / (n + 1)) ^ (n + 1)`.
+**The entire function $1+\sum_{n\ge 1}(z/n)^n$.** This is the function
+$F:\mathbb{C}\to\mathbb{C}$ given by
+
+$$F(z)=1+\sum_{n=1}^{\infty}\left(\frac{z}{n}\right)^{n}.$$
 
 ## Depends on
 

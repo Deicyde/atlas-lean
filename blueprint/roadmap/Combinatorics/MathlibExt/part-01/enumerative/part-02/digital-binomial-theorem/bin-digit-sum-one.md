@@ -7,18 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.binDigitSum_one
 ---
 
-# Bin Digit Sum one
+# Binary digit sum of one
 
-The binary digit sum of `1` is `1`.
+**Binary digit sum of one.** The binary digit sum of $1$ is $1$.
 
 ## Depends on
 
-- [Bin Digit Sum](bin-digit-sum.md)
+- [Binary digit sum](bin-digit-sum.md)
 
 ## Proof depends on
 
-- [Bin Digit Sum two mul add one](bin-digit-sum-two-mul-add-one.md)
-- [Bin Digit Sum zero](bin-digit-sum-zero.md)
+- [Binary digit sum of an odd number](bin-digit-sum-two-mul-add-one.md)
+- [Binary digit sum of zero](bin-digit-sum-zero.md)
 
 ## Sources
 

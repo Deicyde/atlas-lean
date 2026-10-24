@@ -7,11 +7,11 @@ navigation: module
 
 ## Meta Mathlib Ext
 
-- [Menger vertex](menger-vertex.md)
+- [Menger's theorem, vertex form](menger-vertex.md)
 
 ## Menger Vertex Wanted
 
-- [Is Internally Vertex Disjoint STPaths](is-internally-vertex-disjoint-stpaths.md)
-- [Is STVertex Cut](is-stvertex-cut.md)
-- [Is STVertex Cut iff walk Separator](is-stvertex-cut-iff-walk-separator.md)
-- [Menger vertex max min](menger-vertex-max-min.md)
+- [Internally vertex-disjoint paths](is-internally-vertex-disjoint-stpaths.md)
+- [Vertex cuts separating two vertices](is-stvertex-cut.md)
+- [Vertex cuts are walk separators](is-stvertex-cut-iff-walk-separator.md)
+- [Menger's theorem for vertex cuts and internally disjoint paths](menger-vertex-max-min.md)

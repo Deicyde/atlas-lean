@@ -6,15 +6,15 @@ proof: formalized
 lean: CSLibExt.Combinatorics.RandomThreeSat.clause_nonempty
 ---
 
-# Clause nonempty
+# 3-clauses exist on at least three variables
 
-There is a clause as soon as there are three variables: take the first
-three variables, with polarity `true` on them and the normalized `false`
-elsewhere.
+**3-clauses exist on at least three variables.** If $n \ge 3$, then there is a 3-clause on
+$n$ variables: take the first three variables, with polarity true on them and the normalized
+polarity false elsewhere.
 
 ## Depends on
 
-- [Clause](clause.md)
+- [3-clause](clause.md)
 
 ## Sources
 

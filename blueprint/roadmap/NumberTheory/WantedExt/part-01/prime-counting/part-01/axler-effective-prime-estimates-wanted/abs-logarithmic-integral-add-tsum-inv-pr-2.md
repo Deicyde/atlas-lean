@@ -12,7 +12,7 @@ Under the Riemann hypothesis, for every integer `n ≥ 2` and real `x ≥ 599`,
 
 ## Depends on
 
-- [Logarithmic Integral Real](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-01/log/integral-derivative/logarithmic-integral-real.md)
+- [Real logarithmic integral extended by zero](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-01/log/integral-derivative/logarithmic-integral-real.md)
 
 ## Sources
 

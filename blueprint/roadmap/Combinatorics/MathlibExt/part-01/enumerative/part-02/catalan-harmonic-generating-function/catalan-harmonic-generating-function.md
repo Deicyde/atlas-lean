@@ -7,10 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.catalan_harmonic_generating_function
 ---
 
-# Catalan harmonic generating function
+# Catalan–harmonic generating function with explicit coefficients
 
-For `|x| < 1 / 4`, the generating function of the products of the Catalan numbers and
-harmonic numbers has the stated logarithmic closed form.
+**Catalan–harmonic generating function with explicit coefficients.** For every real number $x$
+with $|x| < 1/4$,
+
+$$
+\sum_{n=1}^{\infty} \frac{\binom{2n}{n}}{n+1} \Bigl(\sum_{k=1}^{n} \frac{1}{k}\Bigr) x^{n+1} =
+\log 2 + \sqrt{1-4x}\,\log\bigl(2\sqrt{1-4x}\bigr) -
+\bigl(1 + \sqrt{1-4x}\bigr)\log\bigl(1 + \sqrt{1-4x}\bigr).
+$$
+
+Here $\binom{2n}{n}/(n+1)$ is the $n$th Catalan number (the division is exact) and
+$\sum_{k=1}^{n} 1/k$ is the $n$th harmonic number.
 
 ## Depends on
 
@@ -18,7 +27,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Catalan harmonic generating function canonical](catalan-harmonic-generating-function-can.md)
+- [Generating function of Catalan–harmonic products](catalan-harmonic-generating-function-can.md)
 
 ## Sources
 

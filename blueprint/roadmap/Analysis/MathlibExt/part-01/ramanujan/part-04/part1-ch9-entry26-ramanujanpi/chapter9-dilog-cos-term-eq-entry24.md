@@ -7,9 +7,12 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry26Ramanujanpi.chapter9DilogCosTerm_eq_entry24
 ---
 
-# Chapter9 Dilog Cos Term eq entry24
+# The Entry 26 and Entry 24 dilogarithm cosine terms agree
 
-The protected Entry 26 cosine term agrees with the existing Entry 24 term.
+**The Entry 26 and Entry 24 dilogarithm cosine terms agree.** For all real $\rho$ and
+$\alpha$ and every natural number $j$, the $j$-th term $\rho^{j+1} \cos((j+1)\alpha) / (j+1)^2$ of
+the dilogarithm cosine series defined for Entry 26 equals the $j$-th term of the cosine series
+defined for Entry 24, which is given by the same formula.
 
 ## Depends on
 

@@ -6,13 +6,14 @@ statement: formalized
 lean: MathlibExt.Analysis.LogarithmicPotentialEquilibriumFreeWanted.PointsDistinct
 ---
 
-# Points Distinct
+# Distinct charge positions
 
-Distinctness of the positions.
+**Distinct charge positions.** A charge sequence $(z_n)$ has distinct positions when its terms
+are pairwise distinct: $z_m \neq z_n$ whenever $m \neq n$.
 
 ## Depends on
 
-- [Charge Seq](charge-seq.md)
+- [Charge sequences](charge-seq.md)
 
 ## Sources
 

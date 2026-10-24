@@ -7,14 +7,15 @@ proof: formalized
 lean: AdditiveCombinatorics.sumNE_proof_irrel
 ---
 
-# Sum NE proof irrel
+# The sum of a nonempty list does not depend on the nonemptiness proof
 
-`sumNE` does not depend on the nonemptiness proof, so that proof cannot
-alter the semantics of the sum.
+**The sum of a nonempty list does not depend on the nonemptiness proof.** For every list $l$
+of elements of a type with an addition and any two proofs $e_1$ and $e_2$ that $l$ is nonempty,
+the sum of $l$ computed with $e_1$ equals the sum of $l$ computed with $e_2$.
 
 ## Depends on
 
-- [Sum NE](sum-ne.md)
+- [Sum of a nonempty list](sum-ne.md)
 
 ## Sources
 

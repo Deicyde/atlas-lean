@@ -13,7 +13,7 @@ the hypotheses of `abs_logarithmicIntegral_add_tsum_inv_prime_pow_lt`, for every
 
 ## Depends on
 
-- [Logarithmic Integral Real](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-01/log/integral-derivative/logarithmic-integral-real.md)
+- [Real logarithmic integral extended by zero](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-01/log/integral-derivative/logarithmic-integral-real.md)
 
 ## Sources
 

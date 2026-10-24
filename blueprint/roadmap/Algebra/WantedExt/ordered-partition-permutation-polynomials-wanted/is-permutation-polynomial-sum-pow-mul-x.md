@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.isPermutationPolynomial_sum_pow_mul_X_pow_add
 ---
 
-# Is Permutation Polynomial sum pow mul X pow add
+# Shifted power-sum permutation polynomials of a prime field
 
-For an odd prime `p`, positive integers `k, t, a` with `gcd(a + 1, p - 1) = 1` and
-`k ≡ 1 (mod p(p - 1))`, the polynomial `∑_{n=1}^{k} n^t X^(n+a)` permutes `𝔽_p` provided
-`p - 1 ∤ t`, or `p² ∣ k - 1`.
+**Shifted power-sum permutation polynomials of a prime field.** Let $p$ be an odd prime and
+let $k, t, a$ be positive integers with $\gcd(a + 1, p - 1) = 1$ and $k \equiv 1 \pmod{p(p-1)}$.
+Suppose that $p - 1 \nmid t$ or $p^2 \mid k - 1$. Then the polynomial
+$\sum_{n=1}^{k} n^t X^{n+a}$, with coefficients reduced modulo $p$, is a permutation polynomial
+of $\mathbb{F}_p$.
 
 ## Depends on
 

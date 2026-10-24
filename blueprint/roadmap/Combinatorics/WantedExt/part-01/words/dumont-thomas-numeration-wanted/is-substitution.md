@@ -17,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Non Erasing](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/is-non-erasing.md)
-- [Morph Iterate](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
+- [Non-erasing letter maps](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/is-non-erasing.md)
+- [Iterates of a letter map](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources
 

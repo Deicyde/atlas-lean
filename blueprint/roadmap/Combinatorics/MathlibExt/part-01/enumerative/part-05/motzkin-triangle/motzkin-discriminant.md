@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.motzkinDiscriminant
 ---
 
-# Motzkin Discriminant
+# Motzkin discriminant
 
-The discriminant `1 - 2X - 3X²` in the generating functions for the Motzkin triangle.
+**Motzkin discriminant.** The Motzkin discriminant is the formal power series
+$1 - 2X - 3X^2 \in \mathbb{Q}[[X]]$, the discriminant in the generating functions for the Motzkin
+triangle.
 
 ## Depends on
 

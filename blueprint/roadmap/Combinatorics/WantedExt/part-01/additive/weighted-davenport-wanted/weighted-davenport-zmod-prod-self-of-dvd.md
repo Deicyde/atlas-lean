@@ -12,7 +12,7 @@ For `n ≥ 2` and a divisor `m ≥ 2` of `n`, every `A ⊆ {1, …, ⌈n/(m-1)�
 
 ## Depends on
 
-- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
+- [Weighted Davenport constant](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 
 ## Sources
 

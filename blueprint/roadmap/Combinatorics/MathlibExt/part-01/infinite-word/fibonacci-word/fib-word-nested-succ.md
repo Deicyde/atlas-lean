@@ -7,20 +7,22 @@ proof: formalized
 lean: MetaMathlibExt.fibWord_nested_succ
 ---
 
-# Fib Word nested succ
+# Consecutive finite Fibonacci words are nested
 
-Successive finite iterates are nested.
-Concept `jis_sem_f409ef3715730614fd194b4d`.
+**Consecutive finite Fibonacci words are nested.** For every natural number $n$, the $n$-th
+finite Fibonacci word $f_n$ is a prefix of $f_{n+1}$: there is a finite word $t$ in the letters
+$0$ and $1$ with $f_{n+1} = f_n t$.
 
 ## Depends on
 
-- [Fib Word](fib-word.md)
+- [Finite Fibonacci words](fib-word.md)
 
 ## Proof depends on
 
-- [Fib Morph](fib-morph.md)
-- [Fib Morph append](fib-morph-append.md)
+- [Fibonacci morphism](fib-morph.md)
+- [The Fibonacci morphism respects concatenation](fib-morph-append.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.FibonacciWord](../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_f409ef3715730614fd194b4d`.

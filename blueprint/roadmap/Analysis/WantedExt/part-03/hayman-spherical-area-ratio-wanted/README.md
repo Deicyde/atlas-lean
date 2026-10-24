@@ -4,11 +4,11 @@ navigation: module
 
 # Hayman Spherical Area Ratio
 
-- [Root Count](root-count.md)
-- [N](n.md)
-- [Spherical Density](spherical-density.md)
-- [A](a.md)
-- [Is Nonconstant](is-nonconstant.md)
-- [Has Bounded Root Counts](has-bounded-root-counts.md)
-- [Conjecture](conjecture.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [Root count](root-count.md)
+- [Maximum valence](n.md)
+- [Spherical density](spherical-density.md)
+- [Normalized spherical area](a.md)
+- [Germ-wise nonconstant function](is-nonconstant.md)
+- [Bounded root counts](has-bounded-root-counts.md)
+- [Hayman's spherical-area ratio conjecture](conjecture.md)
+- [Hayman's spherical-area ratio conjecture is false](conjecture-refuted.md)

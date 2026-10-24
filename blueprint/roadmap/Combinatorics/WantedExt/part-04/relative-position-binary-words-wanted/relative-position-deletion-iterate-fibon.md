@@ -12,7 +12,7 @@ lean: MetaMathlibExt.relativePosition_deletion_iterate_fibonacciWord
 ## Depends on
 
 - [Deletion](deletion.md)
-- [Fib Inf](../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
+- [Infinite Fibonacci word](../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
 - [Relative Position](relative-position.md)
 
 ## Sources

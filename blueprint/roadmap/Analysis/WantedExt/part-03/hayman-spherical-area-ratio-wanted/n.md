@@ -6,12 +6,14 @@ statement: formalized
 lean: MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.n
 ---
 
-# N
+# Maximum valence
 
-`n f r`: supremum over `a` of `rootCount f a r`, as a real number.
-This is a conditional real supremum, so it is only meaningful when the
-range of root counts at radius `r` is bounded above; see
-`HasBoundedRootCounts`.
+**Maximum valence.** For $f\colon \mathbb{C} \to \mathbb{C}$ and real $r$, $n(f, r)$ is the
+supremum in $\mathbb{R}$, over all $a \in \mathbb{C}$, of the root count of $f$ at $a$ in radius
+$r$, that is, of the number of roots of $f(z) = a$ in $|z| < r$ counted with multiplicity.
+
+This is a conditional supremum of real numbers, so it is meaningful only when these root counts
+are bounded above as $a$ varies; see bounded root counts.
 
 ## Depends on
 
@@ -19,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Root Count](root-count.md)
+- [Root count](root-count.md)
 
 ## Sources
 

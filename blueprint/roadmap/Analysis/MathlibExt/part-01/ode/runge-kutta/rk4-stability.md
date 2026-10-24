@@ -6,20 +6,23 @@ proof: formalized
 lean: MathlibExt.Analysis.ODE.RungeKutta.rk4_stability
 ---
 
-# Rk4 stability
+# Stability function of the classical RK4 method
 
-On the linear test equation `y' = λ y`, one RK4 step multiplies by the stability
-polynomial `1 + z + z² / 2 + z³ / 6 + z⁴ / 24`, `z = λ h`.
+**Stability function of the classical RK4 method.** For all real numbers $\lambda$, $y$
+and $h$, one step of size $h$ of the classical fourth-order Runge–Kutta method applied to
+the scalar linear test equation $u' = \lambda u$ on $\mathbb{R}$, starting from the state
+$y$ at time $0$, gives $y \, R(\lambda h)$, where
+$R(z) = 1 + z + \frac{z^2}{2} + \frac{z^3}{6} + \frac{z^4}{24}$.
 
 ## Depends on
 
-- [Rk4](rk4.md)
-- [Rk Step](rk-step.md)
+- [The classical RK4 tableau](rk4.md)
+- [One Runge–Kutta step](rk-step.md)
 
 ## Proof depends on
 
-- [Explicit RK](explicit-rk.md)
-- [Stage](stage.md)
+- [Explicit Runge–Kutta method](explicit-rk.md)
+- [Runge–Kutta stages](stage.md)
 - [The defining equation of the stages](stage-eq.md)
 
 ## Sources

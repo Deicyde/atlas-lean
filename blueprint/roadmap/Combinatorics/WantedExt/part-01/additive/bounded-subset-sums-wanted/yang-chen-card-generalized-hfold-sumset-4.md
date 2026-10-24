@@ -15,7 +15,7 @@ Yang–Chen inverse theorem for `k = 4`: if `2 ≤ h ≤ r₀ + r₁ + r₂ + r�
 
 - [Generalized HFold Sumset](generalized-hfold-sumset.md)
 - [Yang Chen Bound](yang-chen-bound.md)
-- [Is APOf Length](../../../../MathlibExt/part-01/ap/basic/is-apof-length.md)
+- [Sets that are arithmetic progressions](../../../../MathlibExt/part-01/ap/basic/is-apof-length.md)
 
 ## Sources
 

@@ -17,9 +17,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Chapter9 Clausen of two le](../../../Analysis/MathlibExt/part-01/ramanujan/part-03/part1-ch9-entry13-bernoulligen/chapter9-clausen-of-two-le.md)
-- [Chapter9 Clausen one](../../../Analysis/MathlibExt/part-01/ramanujan/part-03/part1-ch9-entry13-bernoulligen/chapter9-clausen-one.md)
-- [Ramanujan part1 ch9 entry13 bernoulligen](../../../Analysis/MathlibExt/part-01/ramanujan/part-03/part1-ch9-entry13-bernoulligen/ramanujan-part1-ch9-entry13-bernoulligen.md)
+- [Clausen functions of order at least two as series (Chapter 9, Entry 13)](../../../Analysis/MathlibExt/part-01/ramanujan/part-03/part1-ch9-entry13-bernoulligen/chapter9-clausen-of-two-le.md)
+- [Clausen function of order one (Chapter 9, Entry 13)](../../../Analysis/MathlibExt/part-01/ramanujan/part-03/part1-ch9-entry13-bernoulligen/chapter9-clausen-one.md)
+- [Integrals of $u^n \cot(u/2)$ via Clausen functions (Chapter 9, Entry 13)](../../../Analysis/MathlibExt/part-01/ramanujan/part-03/part1-ch9-entry13-bernoulligen/ramanujan-part1-ch9-entry13-bernoulligen.md)
 
 ## Sources
 

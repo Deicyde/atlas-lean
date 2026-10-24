@@ -12,10 +12,10 @@ Proposition 30: with `J_n` the length-`n` factors of `𝒬` that are not factors
 
 ## Depends on
 
-- [Factor Set](../../../../MathlibExt/part-01/infinite-word/factor/factor-set.md)
-- [Thue Morse](../../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
+- [Set of factors of a given length](../../../../MathlibExt/part-01/infinite-word/factor/factor-set.md)
+- [Thue–Morse sequence](../../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
 - [Thue Morse Quarto](thue-morse-quarto.md)
-- [Word Factor Complexity](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
+- [Factor complexity of an infinite word](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
 
 ## Sources
 

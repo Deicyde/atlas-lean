@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.Distribution.NewtonPotentialWanted.newton_potential_harmonic
 ---
 
-# Newton potential harmonic
+# The Newton potential is harmonic away from the origin
 
-The Newton potential `-1/(4π‖y‖)` is harmonic away from the origin in dimension three.
+**The Newton potential is harmonic away from the origin.** Let $E$ be a real inner product space
+of dimension $3$, and define $N : E \to \mathbb{R}$ by $N(y) = -1/(4\pi\|y\|)$ for $y \neq 0$ and
+$N(0) = 0$. Then the Laplacian of $N$ vanishes at every point $x \neq 0$ of $E$.
 
 ## Depends on
 

@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.IsOverlapFreeBinaryWord
 ---
 
-# Is Overlap Free Binary Word
+# Overlap-free binary words
 
-A finite binary word is overlap-free when none of its contiguous factors is an overlap.
+**Overlap-free binary words.** A finite binary word is overlap-free when none of its
+contiguous factors is an overlap.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Word Overlap](is-word-overlap.md)
+- [Overlaps in words](is-word-overlap.md)
 
 ## Sources
 

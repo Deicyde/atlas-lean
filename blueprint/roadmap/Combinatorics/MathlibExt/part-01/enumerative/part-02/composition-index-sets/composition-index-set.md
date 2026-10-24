@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.compositionIndexSet
 ---
 
-# Composition Index Set
+# The index set $T(m, n, q)$
 
-The index set `T(m, n, q)`: the naturals `k` with
-`k ≡ n - q (mod m)` and `0 ≤ k ≤ n - 1`. The bound is written
-`k < n`.
+**The index set $T(m, n, q)$.** For natural numbers $m$, $n$ and $q$, the set $T(m, n, q)$
+consists of the natural numbers $k$ such that $k \equiv n - q \pmod{m}$, where the difference
+$n - q$ is taken in the integers, and $k < n$.
 
 ## Depends on
 

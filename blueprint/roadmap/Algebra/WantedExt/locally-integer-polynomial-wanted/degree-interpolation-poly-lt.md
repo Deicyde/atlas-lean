@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.degree_interpolationPoly_lt
 ---
 
-# Degree interpolation Poly lt
+# Degree bound for the interpolation polynomial
 
-`f_X` has degree `< |X|`.
+**Degree bound for the interpolation polynomial.** Let $X \subseteq \mathbb{Z}$ be finite and
+$f : \mathbb{Z} \to \mathbb{Z}$. The interpolation polynomial $f_X \in \mathbb{Q}[x]$ of $f$ on $X$
+has degree less than $|X|$, where the zero polynomial has degree $-\infty$.
 
 ## Depends on
 
-- [Interpolation Poly](interpolation-poly.md)
+- [Interpolation polynomial](interpolation-poly.md)
 
 ## Sources
 

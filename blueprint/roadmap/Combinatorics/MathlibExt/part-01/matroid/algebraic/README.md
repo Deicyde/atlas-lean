@@ -5,9 +5,9 @@ navigation: module
 
 # Algebraic
 
-- [Algebraic Representation](algebraic-representation.md)
-- [Is Algebraic Over](is-algebraic-over.md)
-- [Algebraic Representation Some Field](algebraic-representation-some-field.md)
-- [Is Algebraic](is-algebraic.md)
-- [To Is Algebraic Over](to-is-algebraic-over.md)
-- [To Is Algebraic](to-is-algebraic.md)
+- [Algebraic representation of a matroid](algebraic-representation.md)
+- [Algebraic matroid over a field](is-algebraic-over.md)
+- [Algebraic representation of a matroid over some field](algebraic-representation-some-field.md)
+- [Algebraic matroid](is-algebraic.md)
+- [Algebraic representations witness algebraicity over a field](to-is-algebraic-over.md)
+- [Representations over some field witness algebraicity](to-is-algebraic.md)

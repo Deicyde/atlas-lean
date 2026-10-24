@@ -5,5 +5,5 @@ navigation: module
 
 # Erdos Problem1126
 
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Erdős Problem 1126 on almost additive functions](conjecture.md)
+- [Almost additive functions agree almost everywhere with additive functions](conjecture-holds.md)

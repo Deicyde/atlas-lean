@@ -5,20 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.coeff_hermiteShift_mul_trinomialNegPowSeries
 ---
 
-# Theorem 2
+# Hermite-shifted Catalan-type polynomials as convolutions
 
-**Theorem 2.** The polynomials `H^{k;λ}_{n,m}(x, y, z)` and `h^{k;λ}_{n,m}(x, y, z)`,
-the coefficients of `t^n` in `e^(xt + yt²) H_k(x + 2yt, y) / (1 - m t + z t^m)^λ` and
-`e^(xt + yt²) H_k(x + 2yt, y) / (1 - m z t + t^m)^λ` (Definition 3), are
-`∑_{r=0}^n H_{n-r+k}(x, y) P^λ_{r,m}(z) / (n - r)!` and
-`∑_{r=0}^n H_{n-r+k}(x, y) h^λ_{r,m}(z) / (n - r)!` (Equations (8) and (9)), where
-`P^λ_{r,m}(z)` and `h^λ_{r,m}(z)` are the coefficients of `t^r` in the two denominator
-factors. Stated for all `m` and real `λ`.
+**Hermite-shifted Catalan-type polynomials as convolutions.** Write $H_n(x, y) = H^2_n(x, y)$
+for the Kampé de Fériet polynomials, and for a natural number $m$ and real numbers $\lambda, z$
+let $P^\lambda_{r,m}(z)$ and $h^\lambda_{r,m}(z)$ be the coefficients of $t^r$ in the formal
+expansions of $(1 - m t + z t^m)^{-\lambda}$ and $(1 - m z t + t^m)^{-\lambda}$ in powers of $t$.
+For all natural numbers $k, m, n$ and real numbers $\lambda, x, y, z$, as formal power series in
+$t$ (with $e^{xt + yt^2}$ the exponential series and $H_k(x + 2yt, y)$ evaluated in power
+series), the coefficient of $t^n$ in $e^{xt + yt^2} H_k(x + 2yt, y) (1 - m t + z t^m)^{-\lambda}$
+is $\sum_{r=0}^{n} H_{n-r+k}(x, y) P^\lambda_{r,m}(z) / (n - r)!$, and the coefficient of $t^n$
+in $e^{xt + yt^2} H_k(x + 2yt, y) (1 - m z t + t^m)^{-\lambda}$ is
+$\sum_{r=0}^{n} H_{n-r+k}(x, y) h^\lambda_{r,m}(z) / (n - r)!$.
+
+These coefficients are the paper's $H^{k;\lambda}_{n,m}(x, y, z)$ and
+$h^{k;\lambda}_{n,m}(x, y, z)$ (Definition 3, Equations (8) and (9)).
 
 ## Depends on
 
-- [Kampe De Feriet Hermite](kampe-de-feriet-hermite.md)
-- [Trinomial Neg Pow Series](trinomial-neg-pow-series.md)
+- [Kampé de Fériet polynomials](kampe-de-feriet-hermite.md)
+- [Negative real power of a trinomial as a power series](trinomial-neg-pow-series.md)
 
 ## Sources
 

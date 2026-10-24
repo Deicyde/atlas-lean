@@ -22,7 +22,7 @@ condition `N ≤ |η^k(b)|` makes explicit that the word `u_{-|η^k(b)|} ⋯ u_{
 
 - [Is Letter Admissible Sequence](is-letter-admissible-sequence.md)
 - [Is Substitution](is-substitution.md)
-- [Morph Iterate](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
+- [Iterates of a letter map](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources
 

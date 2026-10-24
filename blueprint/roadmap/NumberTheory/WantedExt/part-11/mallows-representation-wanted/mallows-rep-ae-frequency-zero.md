@@ -12,7 +12,7 @@ irrational `α ∈ (0, 1)`, the frequency of occurrences of `w` in `M(α)` is `0
 
 ## Depends on
 
-- [Factor List](../../../../Combinatorics/MathlibExt/part-01/infinite-word/factor/factor-list.md)
+- [Factor as a list](../../../../Combinatorics/MathlibExt/part-01/infinite-word/factor/factor-list.md)
 - [Mallows Letter](mallows-letter.md)
 - [Mallows Rep](mallows-rep.md)
 

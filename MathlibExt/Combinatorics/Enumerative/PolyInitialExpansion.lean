@@ -57,9 +57,15 @@ private theorem polyInitialExpansion_stirlingSecond_sum_succ (t : ℕ) (b : ℕ 
     Nat.cast_mul, Nat.cast_add, Nat.cast_one]
   ring
 
-/-- Chen's expansion of the zeroth entry of an array satisfying
-`a m (s + 1) = m * a m s - (m + 1) * a (m + 1) s`, a variant of the Akiyama-Tanigawa
-algorithm, by signed Stirling numbers of the second kind.
+/-- **Chen's Stirling expansion.** Let $a(m, s)$, for natural numbers $m$ and $s$, be real
+numbers satisfying $a(m, s + 1) = m \, a(m, s) - (m + 1) \, a(m + 1, s)$ for all $m$ and $s$.
+Then for every natural number $t$,
+
+$$a(0, t) = \sum_{m=0}^{t} (-1)^m \, m! \, S(t, m) \, a(m, 0),$$
+
+where $S(t, m)$ is the Stirling number of the second kind.
+
+This recurrence is a variant of the Akiyama–Tanigawa algorithm.
 
 Source: K.-W. Chen, "Algorithms for Bernoulli numbers and Euler numbers," Journal of Integer
 Sequences 4 (2001), Article 01.1.6, as stated in Dil, Kurt, and Cenkci (2007), Proposition 4.

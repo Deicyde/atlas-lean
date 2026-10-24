@@ -5,17 +5,17 @@ statement: formalized
 lean: MathlibExt.Analysis.ScottishBook157Wanted.wardApproximatelyContinuousPositiveDerivMonotone
 ---
 
-# Ward Approximately Continuous Positive Deriv Monotone
+# Approximate derivative test for monotonicity (Scottish Book Problem 157)
 
-Let `f` be a real function of a real variable which is approximately
-continuous everywhere, and suppose that at each point `x` the upper
-right-hand approximate derivative of `f` at `x` is positive. Then `f` is
-monotone increasing (nondecreasing).
+**Approximate derivative test for monotonicity (Scottish Book Problem 157).** Let
+$f \colon \mathbb{R} \to \mathbb{R}$ be approximately continuous at every point, and suppose that
+at every point $x$ the upper right-hand approximate derivative of $f$ is positive. Then $f$ is
+monotone nondecreasing.
 
 ## Depends on
 
-- [Approx Continuous At](approx-continuous-at.md)
-- [Has Positive Upper Right Approx Deriv](has-positive-upper-right-approx-deriv.md)
+- [Approximate continuity](approx-continuous-at.md)
+- [Positive upper right approximate derivative](has-positive-upper-right-approx-deriv.md)
 
 ## Sources
 

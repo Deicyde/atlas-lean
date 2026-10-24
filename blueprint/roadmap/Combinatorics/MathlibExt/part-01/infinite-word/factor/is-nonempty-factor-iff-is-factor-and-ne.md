@@ -7,21 +7,22 @@ proof: formalized
 lean: InfiniteWord.isNonemptyFactor_iff_isFactor_and_ne_nil
 ---
 
-# Is Nonempty Factor iff is Factor and ne nil
+# Nonempty factors are the factors that are nonempty
 
-The source's nonempty factor predicate is exactly the conventional factor
-predicate together with nonemptiness.
+**Nonempty factors are the factors that are nonempty.** For a finite list $w$ over an
+alphabet $\alpha$ and a right-infinite word $u$ over $\alpha$, $w$ is a nonempty factor of $u$ if
+and only if $w$ is nonempty and $w$ is a factor of $u$.
 
 ## Depends on
 
-- [Is Factor](is-factor.md)
-- [Is Nonempty Factor](is-nonempty-factor.md)
+- [Lists occurring in an infinite word](is-factor.md)
+- [Nonempty factors of an infinite word](is-nonempty-factor.md)
 
 ## Proof depends on
 
-- [Factor List](factor-list.md)
-- [Is Factor iff exists factor List](is-factor-iff-exists-factor-list.md)
-- [Is Nonempty Factor iff exists factor List](is-nonempty-factor-iff-exists-factor-lis.md)
+- [Factor as a list](factor-list.md)
+- [Occurrence via list-valued factors](is-factor-iff-exists-factor-list.md)
+- [Nonempty factors via list-valued factors](is-nonempty-factor-iff-exists-factor-lis.md)
 
 ## Sources
 

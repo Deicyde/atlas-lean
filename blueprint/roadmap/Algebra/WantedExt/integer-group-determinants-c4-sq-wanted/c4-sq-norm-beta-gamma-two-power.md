@@ -13,11 +13,11 @@ lean: MetaMathlibExt.c4Sq_norm_beta_gamma_two_power
 
 ## Depends on
 
-- [C4 Sq B](c4-sq-b.md)
-- [C4 Sq Beta](c4-sq-beta.md)
-- [C4 Sq C](c4-sq-c.md)
-- [C4 Sq D](c4-sq-d.md)
-- [C4 Sq Gamma](c4-sq-gamma.md)
+- [The sums $b_i$](c4-sq-b.md)
+- [The Gaussian integer $\beta$](c4-sq-beta.md)
+- [The alternating sums $c_i$](c4-sq-c.md)
+- [The differences $d_i$ of a function on $C_4^2$](c4-sq-d.md)
+- [The Gaussian integer $\gamma$ of a function on $C_4^2$](c4-sq-gamma.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ with the right sum over `k ≤ min(r, n)`.
 
 ## Depends on
 
-- [R Stirling Second](../../../../../MathlibExt/part-01/enumerative/part-07/rstirling-second/r-stirling-second.md)
+- [r-Stirling numbers of the second kind](../../../../../MathlibExt/part-01/enumerative/part-07/rstirling-second/r-stirling-second.md)
 
 ## Sources
 

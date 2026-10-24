@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 - [Is Substitution](is-substitution.md)
 - [Is Two Sided Periodic Point](is-two-sided-periodic-point.md)
-- [Morph Iterate](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
+- [Iterates of a letter map](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources
 

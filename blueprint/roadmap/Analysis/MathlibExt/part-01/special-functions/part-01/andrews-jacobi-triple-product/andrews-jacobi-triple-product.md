@@ -7,14 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.andrews_jacobi_triple_product
 ---
 
-# Andrews jacobi triple product
+# Andrews' form of the Jacobi triple product identity
 
-Andrews' equivalent form of Jacobi's triple product identity: for `‖q‖ < 1`
-and `0 < i ≤ k`, the bilateral series
-`∑' n : ℤ, (-1) ^ n * q ^ ((2k+1) * n * (n+1) / 2 - i * n)` equals the stated
-triple Euler product. The source equation does not restate the `0 < i ≤ k`
-hypotheses alongside it; they are needed (at `i = 0` the product side has a
-zero factor while the series side does not vanish).
+**Andrews' form of the Jacobi triple product identity.** Let $q$ be a complex number with
+$|q| < 1$, and let $k$ and $i$ be natural numbers with $0 < i \le k$. Then
+
+$$\sum_{n \in \mathbb{Z}} (-1)^n q^{(2k+1)n(n+1)/2 - in} =
+\prod_{n=0}^{\infty} \left(1 - q^{(2k+1)(n+1)}\right) \left(1 - q^{(2k+1)n + i}\right)
+\left(1 - q^{(2k+1)(n+1) - i}\right).$$
 
 ## Depends on
 
@@ -22,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Jacobi Triple Product](../../part-02/jacobi-triple-product.md)
+- [Jacobi triple product identity](../../part-02/jacobi-triple-product.md)
 
 ## Sources
 

@@ -7,14 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.risingDiagonal_const
 ---
 
-# Rising Diagonal const
+# Rising diagonals of a binary binomial interpolated triangle are constant
 
-Every rising diagonal of `BT(a₀,a₁,α,β;α,β)` is constant.
+**Rising diagonals of a binary binomial interpolated triangle are constant.** Let
+$a_0, a_1, \alpha, \beta$ be real numbers and let $a = (a_{n,k})_{n,k \ge 0}$ be a real array that
+is the binary binomial interpolated triangle $BT(a_0, a_1, \alpha, \beta; \alpha, \beta)$. Then
+for every $n \ge 0$ the rising diagonal of $a$ at level $n$ is constant: $a_{n-i,i} = a_{n-j,j}$
+for all $0 \le i, j \le \lfloor n/2 \rfloor$.
 
 ## Depends on
 
-- [Is Binary Binomial Interpolated Triangle](is-binary-binomial-interpolated-triangle.md)
-- [Rising Diagonal](rising-diagonal.md)
+- [Binary binomial interpolated triangle](is-binary-binomial-interpolated-triangle.md)
+- [Rising diagonal](rising-diagonal.md)
 
 ## Sources
 

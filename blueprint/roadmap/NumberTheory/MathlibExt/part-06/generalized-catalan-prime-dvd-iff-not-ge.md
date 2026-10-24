@@ -22,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fuss Catalan Divisibility](../../../Combinatorics/MathlibExt/part-01/enumerative/part-03/fuss-catalan-dvd-choose.md)
+- [Integrality of the Fuss–Catalan numbers](../../../Combinatorics/MathlibExt/part-01/enumerative/part-03/fuss-catalan-dvd-choose.md)
 
 ## Sources
 

@@ -7,29 +7,27 @@ proof: formalized
 lean: MetaMathlibExt.rStirlingFirst_eq_alternating_sum
 ---
 
-# R Stirling First eq alternating sum
+# Broder's alternating expansion of the r-Stirling numbers of the first kind
 
-Broder's expansion formula for r-Stirling numbers of the first kind.
+**Broder's alternating expansion of the r-Stirling numbers of the first kind.** Let $n$, $m$
+and $r$ be natural numbers with $1 \le r \le n$. Write $[n, m]_r$ for the unsigned $r$-Stirling
+number of the first kind, $[a, b]$ for the unsigned Stirling number of the first kind and
+$\lbrace a, b \rbrace$ for the Stirling number of the second kind. Then, in the integers,
 
-Equation (43): `(-1)^r [n,m]_r = ∑ k, [n,m-r+k] {k-1,r-1} (-1)^k`,
-for `n ≥ r ≥ 1`, where square brackets are unsigned first-kind Stirling
-numbers and braces are second-kind Stirling numbers.
+$$(-1)^r [n, m]_r = \sum_{k=r}^{n+r-m} [n, m+k-r] \, \lbrace k-1, r-1 \rbrace \, (-1)^k.$$
 
-Finite support and index encoding: the second-kind factor vanishes below
-`k = r`, and the first-kind factor vanishes above `k = n + r - m`, so the
-sum is over `Finset.Icc r (n + r - m)`; for `k ≥ r` the source index
-`m - r + k` is represented without truncation as `m + (k - r)`.
-Natural coefficients are cast to `Int` so the alternating signs are exact.
+Broder's Equation (43) sums over all $k$; every term outside the range above vanishes, since
+$\lbrace k-1, r-1 \rbrace$ vanishes for $k < r$ and $[n, m+k-r]$ vanishes for $k > n + r - m$.
 
 ## Depends on
 
-- [R Stirling First](r-stirling-first.md)
+- [Unsigned r-Stirling numbers of the first kind](r-stirling-first.md)
 
 ## Proof depends on
 
-- [R Stirling First self](r-stirling-first-self.md)
-- [R Stirling First succ](r-stirling-first-succ.md)
-- [R Stirling First zero of pos](r-stirling-first-zero-of-pos.md)
+- [Initial row of the r-Stirling numbers of the first kind](r-stirling-first-self.md)
+- [Recurrence for the r-Stirling numbers of the first kind](r-stirling-first-succ.md)
+- [Vanishing of the r-Stirling numbers of the first kind with second index zero](r-stirling-first-zero-of-pos.md)
 
 ## Sources
 

@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.kasselReutenauerPoly_abs_eval_multiplicative_iff
 ---
 
-# Kassel Reutenauer Poly abs eval multiplicative iff
+# Integers at which $|\bar P_n|$ is multiplicative
 
-For an integer `N`, the function `n ↦ |P̄_n(N)|` (on positive integers) is
-multiplicative if and only if `N ∈ {-2, -1, 0, 2}`.
+**Integers at which $|\bar P_n|$ is multiplicative.** Let $\bar P_n$ be the
+Kassel–Reutenauer polynomial and let $N$ be an integer. Then
+$|\bar P_{mn}(N)| = |\bar P_m(N)|\,|\bar P_n(N)|$ for all coprime positive integers $m$ and $n$
+if and only if $N \in \{-2, -1, 0, 2\}$.
 
 ## Depends on
 
-- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
+- [Kassel–Reutenauer polynomial](kassel-reutenauer-poly.md)
 
 ## Sources
 

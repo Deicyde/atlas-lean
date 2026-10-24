@@ -5,11 +5,11 @@ navigation: module
 
 # Square Free Word
 
-- [Is Word Square](is-word-square.md)
-- [Is Square Free Word](is-square-free-word.md)
-- [Is Infinite Square Free Word](is-infinite-square-free-word.md)
-- [Ternary Alphabet](ternary-alphabet.md)
-- [Is Ternary Square Free Length](is-ternary-square-free-length.md)
-- [Is Infinite Ternary Square Free Word](is-infinite-ternary-square-free-word.md)
-- [Of is Infix](of-is-infix.md)
-- [Is Square Free Word iff inits tails](is-square-free-word-iff-inits-tails.md)
+- [Square word](is-word-square.md)
+- [Square-free finite word](is-square-free-word.md)
+- [Square-free infinite word](is-infinite-square-free-word.md)
+- [The ternary alphabet](ternary-alphabet.md)
+- [Square-free ternary words of length $n$](is-ternary-square-free-length.md)
+- [Square-free infinite ternary word](is-infinite-ternary-square-free-word.md)
+- [Factors of square-free words are square-free](of-is-infix.md)
+- [Square-freeness via prefixes of suffixes](is-square-free-word-iff-inits-tails.md)

@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.stirlingFirst_addition
 ---
 
-# Stirling First Addition
+# Addition formula for Stirling numbers of the first kind
 
-Addition formula for the unsigned Stirling numbers of the first kind.
+**Addition formula for Stirling numbers of the first kind.** Write $c(n,k)$ for the unsigned
+Stirling numbers of the first kind and $u^{\overline{i}} = u(u+1)\cdots(u+i-1)$ for the rising
+factorial. For all natural numbers $u$, $v$ and $k$,
 
-The source sums `j, i = 0, …, v`; the `if j ≤ k` guard encodes the
-vanishing of the factor `[u; k-j]` for `j > k`, and `u.ascFactorial i`
-is the source's rising factorial `u^{(i)}`.
+$$c(u+v,k) = \sum_{j=0}^{v} \sum_{i=0}^{v} \binom{v}{i}\, u^{\overline{i}}\, c(v-i,j)\, c(u,k-j),$$
+
+where a term with $j > k$ is read as $0$.
 
 ## Depends on
 

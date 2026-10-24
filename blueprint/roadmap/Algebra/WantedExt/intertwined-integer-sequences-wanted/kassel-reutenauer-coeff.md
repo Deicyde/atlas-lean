@@ -5,12 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.kasselReutenauerCoeff
 ---
 
-# Kassel Reutenauer Coeff
+# The Kassel–Reutenauer coefficients $a_{n,i}$
 
-The coefficient `a_{n,i}` of the paper: the number of divisors `d` of `n`
-with `(i + √(2n + i²))/2 < d ≤ i + √(2n + i²)`. Over `ℕ` the two inequalities
-are equivalent to `d (d - 2i) ≤ 2n` and `n < 2d (d - i)` (truncated subtraction;
-for `d ≤ i`, resp. `d ≤ 2i`, the truncated forms give the correct truth value).
+**The Kassel–Reutenauer coefficients $a_{n,i}$.** For natural numbers $n$ and $i$, $a_{n,i}$ is
+the number of positive divisors $d$ of $n$ with
+
+$$\frac{i + \sqrt{2n + i^2}}{2} < d \le i + \sqrt{2n + i^2},$$
+
+equivalently with $d(d - 2i) \le 2n$ and $n < 2d(d - i)$. For $n = 0$ the set of divisors is
+taken to be empty, so $a_{0,i} = 0$.
 
 ## Depends on
 

@@ -5,11 +5,11 @@ navigation: module
 
 # Ramanujan Partition Congruence
 
-- [Two mul choose two succ](two-mul-choose-two-succ.md)
-- [Jacobi Cube Series](jacobi-cube-series.md)
-- [Coeff jacobi Cube Series triangle](coeff-jacobi-cube-series-triangle.md)
-- [Coeff jacobi Cube Series eq zero](coeff-jacobi-cube-series-eq-zero.md)
-- [Pentagonal Series pow three](pentagonal-series-pow-three.md)
-- [Dvd partition Function of dvd coeff pentagonal Series pow](dvd-partition-function-of-dvd-coeff-pent.md)
-- [Ramanujan partition congruence mod five](ramanujan-partition-congruence-mod-five.md)
-- [Ramanujan partition congruence mod seven](ramanujan-partition-congruence-mod-seven.md)
+- [Twice a triangular number](two-mul-choose-two-succ.md)
+- [Jacobi's cube series](jacobi-cube-series.md)
+- [Coefficients of Jacobi's cube series at triangular numbers](coeff-jacobi-cube-series-triangle.md)
+- [Vanishing coefficients of Jacobi's cube series](coeff-jacobi-cube-series-eq-zero.md)
+- [Jacobi's cube identity](pentagonal-series-pow-three.md)
+- [Partition congruences from a power of Euler's series](dvd-partition-function-of-dvd-coeff-pent.md)
+- [Ramanujan's congruence modulo 5](ramanujan-partition-congruence-mod-five.md)
+- [Ramanujan's congruence modulo 7](ramanujan-partition-congruence-mod-seven.md)

@@ -7,18 +7,19 @@ proof: formalized
 lean: InfiniteWord.tribonacciWordApprox_length_mono
 ---
 
-# Tribonacci Word Approx length mono
+# Lengths of finite Tribonacci words are monotone
 
-The lengths of finite Tribonacci-word approximants are monotone.
+**Lengths of finite Tribonacci words are monotone.** For all natural numbers $m \le n$,
+the length of the finite Tribonacci word $W(m)$ is at most the length of $W(n)$.
 
 ## Depends on
 
-- [Tribonacci Letter](tribonacci-letter.md)
-- [Tribonacci Word Approx](tribonacci-word-approx.md)
+- [The Tribonacci alphabet](tribonacci-letter.md)
+- [Finite Tribonacci words](tribonacci-word-approx.md)
 
 ## Proof depends on
 
-- [Tribonacci Word Approx prefix](tribonacci-word-approx-prefix.md)
+- [Finite Tribonacci words form a prefix chain](tribonacci-word-approx-prefix.md)
 
 ## Sources
 

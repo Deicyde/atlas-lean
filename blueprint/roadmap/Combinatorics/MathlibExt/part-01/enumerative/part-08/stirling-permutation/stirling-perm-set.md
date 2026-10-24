@@ -6,13 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.StirlingPermSet
 ---
 
-# Stirling Perm Set
+# The set of Stirling permutations
 
-The set `Q_n` of Stirling permutations of order `n`
-(concept `jis_sem_2caeda2867f94a2afc83e068`,
-statement `jis_e248733f0c7bd4348abb29fb`,
-source `https://cs.uwaterloo.ca/journals/JIS/VOL27/Tenner/tenner12.tex`),
-written as words `w(1) w(2) ⋯ w(2n)`.
+**The set of Stirling permutations.** For a natural number $n$, $Q_n$ is the set of all
+Stirling permutations of order $n$, viewed as words $w_1 w_2 \cdots w_{2n}$ of natural numbers.
 
 ## Depends on
 
@@ -20,8 +17,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Stirling Permutation](is-stirling-permutation.md)
+- [Stirling permutations](is-stirling-permutation.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.StirlingPermutation](../../../../../../../sources/v2/MathlibExt.md)
+- `https://cs.uwaterloo.ca/journals/JIS/VOL27/Tenner/tenner12.tex` (concept `jis_sem_2caeda2867f94a2afc83e068`, statement `jis_e248733f0c7bd4348abb29fb`).

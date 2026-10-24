@@ -5,5 +5,5 @@ navigation: module
 
 # Median Genocchi Number
 
-- [Genocchi Number Via Bernoulli](genocchi-number-via-bernoulli.md)
-- [Median Genocchi Odd](median-genocchi-odd.md)
+- [Genocchi numbers via Bernoulli numbers](genocchi-number-via-bernoulli.md)
+- [Odd-indexed median Genocchi numbers](median-genocchi-odd.md)

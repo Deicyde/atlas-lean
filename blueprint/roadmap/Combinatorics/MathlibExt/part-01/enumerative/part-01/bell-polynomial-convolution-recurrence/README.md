@@ -5,6 +5,6 @@ navigation: module
 
 # Bell Polynomial Convolution Recurrence
 
-- [Bell convolution linear recurrence of char Zero](bell-convolution-linear-recurrence-of-ch.md)
-- [Bell convolution linear recurrence](bell-convolution-linear-recurrence.md)
-- [Bell convolution linear recurrence partial Bell Polynomial](bell-convolution-linear-recurrence-parti.md)
+- [Linear recurrence for INVERT convolution powers in characteristic zero](bell-convolution-linear-recurrence-of-ch.md)
+- [Linear recurrence for convolution powers of an INVERT sequence](bell-convolution-linear-recurrence.md)
+- [Linear recurrence for INVERT convolution powers via partial Bell polynomials](bell-convolution-linear-recurrence-parti.md)

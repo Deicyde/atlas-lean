@@ -6,16 +6,17 @@ statement: formalized
 lean: MetaMathlibExt.multiMarkedCountPlainN
 ---
 
-# Multi Marked Count Plain N
+# Number of plain vertical steps
 
-Count `N(P)` of plain (unmarked) vertical `N` steps in the ordered step
-sequence. Concept `jis_sem_ee7327c841ed4326952fd4fb`;
-source statement `jis_54a13fcd4eb84116f24d6935`.
+**Number of plain vertical steps.** For a finite sequence $P$ of multi-marked steps
+(horizontal steps $E$, plain vertical steps $N$ and marked vertical steps $N^*_t$ with index
+$t \ge 2$), $N(P)$ is the number of plain (unmarked) vertical steps $N$ in $P$.
 
 ## Depends on
 
-- [Multi Marked Step](multi-marked-step.md)
+- [Steps of a multi-marked Dyck path](multi-marked-step.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MarkedStepInAMultiMarkedDyckPath](../../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_ee7327c841ed4326952fd4fb`; source statement `jis_54a13fcd4eb84116f24d6935`.

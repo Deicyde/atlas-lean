@@ -7,13 +7,15 @@ proof: formalized
 lean: Real.IsDickmanDeBruijn.differentiableAt_of_one_lt
 ---
 
-# Differentiable At of one lt
+# Differentiability of the Dickman–de Bruijn function above one
 
-A Dickman–de Bruijn function is differentiable above one.
+**Differentiability of the Dickman–de Bruijn function above one.** If
+$\rho : \mathbb{R} \to \mathbb{R}$ is a Dickman–de Bruijn function, then $\rho$ is differentiable
+at every real $u > 1$.
 
 ## Depends on
 
-- [Is Dickman De Bruijn](is-dickman-de-bruijn.md)
+- [Dickman–de Bruijn functions](is-dickman-de-bruijn.md)
 
 ## Sources
 

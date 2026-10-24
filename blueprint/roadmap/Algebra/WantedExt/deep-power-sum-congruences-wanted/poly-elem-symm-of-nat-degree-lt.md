@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.polyElemSymm_of_natDegree_lt
 ---
 
-# Poly Elem Symm of nat Degree lt
+# Elementary symmetric functions vanish above the degree
 
-`e_n(P) = 0` for `n > deg P`.
+**Elementary symmetric functions vanish above the degree.** Let $P$ be a polynomial of degree
+$d$ over a commutative ring, with $d = 0$ for $P = 0$. Then $e_n(P) = 0$ for every $n > d$.
 
 ## Depends on
 
-- [Poly Elem Symm](poly-elem-symm.md)
+- [Elementary symmetric functions of a polynomial](poly-elem-symm.md)
 
 ## Sources
 

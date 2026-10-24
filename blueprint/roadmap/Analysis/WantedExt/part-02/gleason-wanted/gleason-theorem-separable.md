@@ -6,14 +6,21 @@ statement: formalized
 lean: MathlibExt.Analysis.GleasonWanted.Analysis.gleason_theorem_separable
 ---
 
-# Gleason theorem separable
+# Gleason's theorem for separable Hilbert spaces
 
-Source: A. M. Gleason, Measures on the closed subspaces of a Hilbert space, J. Math. Mech. 6 (1957), 885-893. Via leanprover/lean-eval@38361be, problem `gleason_theorem_separable`.
+**Gleason's theorem for separable Hilbert spaces.** Let $H$ be a separable complex Hilbert
+space whose dimension over $\mathbb{C}$ is at least $3$, and let $f$ be a frame function on the
+unit sphere of $H$. Then there is a positive continuous linear operator $\rho$ on $H$ such that
+$f(x) = \operatorname{Re} \langle x, \rho x \rangle$ for every unit vector $x$ in $H$.
+
+The statement does not assert that $\rho$ is trace class with trace $1$, nor that $\rho$ is
+unique.
 
 ## Depends on
 
-- [Sphere Frame Function](sphere-frame-function.md)
+- [Frame function on the unit sphere](sphere-frame-function.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.GleasonWanted](../../../../../sources/v2/WantedExt.md)
+- A. M. Gleason, Measures on the closed subspaces of a Hilbert space, J. Math. Mech. 6 (1957), 885-893. Via leanprover/lean-eval@38361be, problem `gleason_theorem_separable`.

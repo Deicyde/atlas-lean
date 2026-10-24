@@ -7,11 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.spivey_bell_recurrence
 ---
 
-# Spivey bell recurrence
+# Spivey's recurrence for Bell numbers
 
-Spivey recurrence expressing a Bell number as a double sum involving Stirling
-numbers of the second kind, binomial coefficients, and smaller Bell numbers. This is
-`spivey_bell_number_add` with the two finite sums commuted.
+**Spivey's recurrence for Bell numbers.** For all natural numbers $n$ and $m$,
+
+$$B_{n+m} = \sum_{k=0}^{n} \sum_{j=0}^{m} j^{n-k} \, S(m, j) \binom{n}{k} B_k,$$
+
+where $B_k$ is the $k$-th Bell number, $S(m, j)$ is the Stirling number of the second kind, and
+$0^0 = 1$. This is Spivey's Bell number formula with the two finite sums interchanged.
 
 ## Depends on
 
@@ -19,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Spivey bell number add](spivey-bell-number-add.md)
+- [Spivey's Bell number formula](spivey-bell-number-add.md)
 
 ## Sources
 

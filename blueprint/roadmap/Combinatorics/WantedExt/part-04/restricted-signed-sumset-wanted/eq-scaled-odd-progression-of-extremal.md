@@ -18,11 +18,11 @@ uses `scaleFinset` and `oddProgression` for `a₁*{1,3,…,2k-1}`.
 - [Initial Segment](initial-segment.md)
 - [Odd Progression](odd-progression.md)
 - [Ordered Finset](ordered-finset.md)
-- [Restricted Signed Sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
-- [Restricted Sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-sumset.md)
+- [Restricted signed sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
+- [Restricted sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-sumset.md)
 - [Scale Finset](scale-finset.md)
 - [Tail Finset](tail-finset.md)
-- [Is APOf Length With](../../../MathlibExt/part-01/ap/basic/is-apof-length-with.md)
+- [Set arithmetic progressions with given first term and difference](../../../MathlibExt/part-01/ap/basic/is-apof-length-with.md)
 
 ## Sources
 

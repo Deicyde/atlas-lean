@@ -7,17 +7,23 @@ proof: formalized
 lean: Real.logarithmicIntegral_of_one_lt
 ---
 
-# Logarithmic Integral of one lt
+# The logarithmic integral above $1$
 
-Unfolding for the upper branch `1 < x`.
+**The logarithmic integral above $1$.** For every real number $x > 1$, the logarithmic
+integral $\mathrm{li}$ satisfies
 
-The paired integral `∫₀¹ ((log (1 - u))⁻¹ + (log (1 + u))⁻¹)` is the
-symmetric principal value `PV ∫₀²`.
+$$
+\mathrm{li}(x) = \int_0^1 \Big(\frac{1}{\log(1-u)} + \frac{1}{\log(1+u)}\Big) du +
+\int_2^x \frac{dt}{\log t}.
+$$
+
+The paired integral over $[0, 1]$ is the symmetric principal value
+$\mathrm{PV}\int_0^2 \frac{dt}{\log t}$.
 
 ## Depends on
 
-- [Logarithmic Integral Domain](logarithmic-integral-domain.md)
-- [Logarithmic Integral](logarithmic-integral.md)
+- [Domain of the logarithmic integral](logarithmic-integral-domain.md)
+- [Logarithmic integral](logarithmic-integral.md)
 
 ## Sources
 

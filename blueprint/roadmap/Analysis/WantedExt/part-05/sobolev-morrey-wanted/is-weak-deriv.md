@@ -6,19 +6,25 @@ statement: formalized
 lean: MathlibExt.Analysis.SobolevMorreyWanted.Analysis.SobolevMorreyProblem.IsWeakDeriv
 ---
 
-# Is Weak Deriv
+# Weak derivative
 
-`g` is the **weak partial derivative** `D^m f` (multi-index `m`):
-`∫ f · D^m φ = (−1)^{|m|} ∫ g · φ` for every smooth compactly supported
-test function `φ`.
+**Weak derivative.** Let $f, g : \mathbb{R}^n \to \mathbb{R}$ and let
+$m = (m_0, \dots, m_{n-1})$ be a multi-index of order $|m| = m_0 + \cdots + m_{n-1}$. Then $g$ is
+a weak derivative $D^m f$ of $f$ when every smooth ($C^\infty$) compactly supported function
+$\varphi : \mathbb{R}^n \to \mathbb{R}$ satisfies
+
+$$\int_{\mathbb{R}^n} f \, D^m \varphi \, dx = (-1)^{|m|} \int_{\mathbb{R}^n} g \, \varphi \, dx,$$
+
+where $D^m \varphi$ is the classical mixed partial derivative and each integral is the Lebesgue
+integral, taken to be $0$ when the integrand is not integrable.
 
 ## Depends on
 
-- [E](e.md)
+- [Euclidean space $\mathbb{R}^n$](e.md)
 
 ## Proof depends on
 
-- [Mixed Deriv](mixed-deriv.md)
+- [Mixed partial derivative](mixed-deriv.md)
 
 ## Sources
 

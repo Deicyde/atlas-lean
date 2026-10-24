@@ -1,3 +1,3 @@
 # Inner Product Space
 
-- [Orthogonal Polynomial Hilbert Basis Wanted](orthogonal-polynomial-hilbert-basis.md)
+- [Hilbert basis of orthogonal polynomials on $(-1, 1)$](orthogonal-polynomial-hilbert-basis.md)

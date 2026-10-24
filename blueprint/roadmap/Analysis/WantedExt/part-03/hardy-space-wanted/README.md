@@ -4,5 +4,5 @@ navigation: module
 
 # Hardy Space
 
-- [H1](h1.md)
-- [H1 not closed Complemented](h1-not-closed-complemented.md)
+- [The boundary Hardy space H¹](h1.md)
+- [Newman's theorem: no bounded projection onto the Hardy space](h1-not-closed-complemented.md)

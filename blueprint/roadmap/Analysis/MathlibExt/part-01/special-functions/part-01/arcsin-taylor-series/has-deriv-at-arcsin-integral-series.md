@@ -7,24 +7,26 @@ proof: formalized
 lean: MathlibExt.Analysis.SpecialFunctions.ArcsinTaylorSeries.hasDerivAt_arcsinIntegralSeries
 ---
 
-# Has Deriv At arcsin Integral Series
+# Derivative of the integrated arcsine series
 
-The derivative of the integrated arcsine series is `Real.arcsin y / y`
-for nonzero `y` in the open unit interval.
+**Derivative of the integrated arcsine series.** Let
+$F(t) = \sum_{n \ge 0} \binom{2n}{n} 4^{-n}\, t^{2n+1}/(2n+1)^2$ be the integrated arcsine
+series. For every real $y$ with $|y| < 1$ and $y \neq 0$, $F$ is differentiable at $y$ with
+$F'(y) = \arcsin(y)/y$.
 
 ## Depends on
 
-- [Arcsin Integral Series](arcsin-integral-series.md)
+- [Integrated arcsine series](arcsin-integral-series.md)
 
 ## Proof depends on
 
-- [Arcsin Series](arcsin-series.md)
-- [Arcsin Series eq arcsin](arcsin-series-eq-arcsin.md)
-- [Central Binomial Coeff](central-binomial-coeff.md)
-- [Central Binomial Coeff le one](central-binomial-coeff-le-one.md)
-- [Central Binomial Coeff nonneg](central-binomial-coeff-nonneg.md)
-- [Norm arcsin Integral Series term le](norm-arcsin-integral-series-term-le.md)
-- [Summable arcsin Series term](summable-arcsin-series-term.md)
+- [Arcsine Taylor series](arcsin-series.md)
+- [Taylor series of the arcsine](arcsin-series-eq-arcsin.md)
+- [Normalized central binomial coefficient](central-binomial-coeff.md)
+- [Normalized central binomial coefficients are at most one](central-binomial-coeff-le-one.md)
+- [Normalized central binomial coefficients are nonnegative](central-binomial-coeff-nonneg.md)
+- [Bound on the terms of the integrated arcsine series](norm-arcsin-integral-series-term-le.md)
+- [Summability of the arcsine series](summable-arcsin-series-term.md)
 
 ## Sources
 

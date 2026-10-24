@@ -21,14 +21,14 @@ This node has no prerequisites.
 - [Has Pattern](../../part-04/odd-fibonacci-wanted/has-pattern.md)
 - [Perm Ascents](perm-ascents.md)
 - [Perm Descents](perm-descents.md)
-- [Perm Double Ascents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-ascents.md)
-- [Perm Double Descents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-descents.md)
-- [Perm Left To Right Max Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-left-to-right-max-count.md)
-- [Perm Left To Right Min Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-left-to-right-min-count.md)
-- [Perm Peaks](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-peaks.md)
-- [Perm Right To Left Max Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-right-to-left-max-count.md)
-- [Perm Right To Left Min Count](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-right-to-left-min-count.md)
-- [Perm Valleys](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-valleys.md)
+- [Number of double ascents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-ascents.md)
+- [Number of double descents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-descents.md)
+- [Number of left-to-right maxima](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-left-to-right-max-count.md)
+- [Number of left-to-right minima](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-left-to-right-min-count.md)
+- [Number of peaks of a permutation](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-peaks.md)
+- [Number of right-to-left maxima](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-right-to-left-max-count.md)
+- [Number of right-to-left minima](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-right-to-left-min-count.md)
+- [Number of valleys of a permutation](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-valleys.md)
 
 ## Sources
 

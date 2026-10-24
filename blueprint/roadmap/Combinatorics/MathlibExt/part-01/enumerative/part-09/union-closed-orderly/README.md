@@ -5,13 +5,13 @@ navigation: module
 
 # Union Closed Orderly
 
-- [Bin Rep](bin-rep.md)
-- [Set LT](set-lt.md)
-- [Set Key](set-key.md)
-- [Fam String](fam-string.md)
-- [Perm Image](perm-image.md)
-- [Is Union Closed](is-union-closed.md)
-- [Is Canonical](is-canonical.md)
-- [Set LT iff set Key lt](set-lt-iff-set-key-lt.md)
-- [Orderly canonical prefix of sorted](orderly-canonical-prefix-of-sorted.md)
-- [Orderly canonical prefix](orderly-canonical-prefix.md)
+- [Binary code of a subset](bin-rep.md)
+- [Set order](set-lt.md)
+- [Sort key of a subset](set-key.md)
+- [String of a family](fam-string.md)
+- [Permuted image of a family](perm-image.md)
+- [Union-closed family](is-union-closed.md)
+- [Canonical family](is-canonical.md)
+- [The sort key encodes the set order](set-lt-iff-set-key-lt.md)
+- [Prefixes of a sorted canonical family are canonical](orderly-canonical-prefix-of-sorted.md)
+- [Orderly generation of union-closed families](orderly-canonical-prefix.md)

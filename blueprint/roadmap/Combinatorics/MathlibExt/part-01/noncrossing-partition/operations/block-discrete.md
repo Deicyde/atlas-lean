@@ -6,18 +6,20 @@ proof: formalized
 lean: NoncrossingPartition.block_discrete
 ---
 
-# Block discrete
+# The block of a point in the discrete noncrossing partition
 
-Blocks of the discrete partition are singletons.
+**The block of a point in the discrete noncrossing partition.** For every natural number
+$n$ and every $a \in \{0, \dots, n-1\}$, the block containing $a$ in the discrete noncrossing
+partition of $\{0, \dots, n-1\}$ is the singleton $\{a\}$.
 
 ## Depends on
 
-- [Block](../basic/block.md)
-- [Discrete](discrete.md)
+- [Block of a noncrossing partition](../basic/block.md)
+- [Discrete noncrossing partition](discrete.md)
 
 ## Proof depends on
 
-- [Set Partition](../basic/set-partition.md)
+- [Set partition](../basic/set-partition.md)
 
 ## Sources
 

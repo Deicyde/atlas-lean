@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.IsThreeAbelianSquareFree
 ---
 
-# Is Three Abelian Square Free
+# $3$-abelian square-free ternary words
 
-Ternary specialization of `3`-abelian square-freeness.
+**$3$-abelian square-free ternary words.** A finite word $w$ over the alphabet $\{0, 1, 2\}$
+is $3$-abelian square-free when no factor of $w$ (a word $x$ with $w = pxs$ for some words $p$
+and $s$) is a $3$-abelian square.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is KAbelian Square Free](is-kabelian-square-free.md)
+- [$k$-abelian square-free words](is-kabelian-square-free.md)
 
 ## Sources
 

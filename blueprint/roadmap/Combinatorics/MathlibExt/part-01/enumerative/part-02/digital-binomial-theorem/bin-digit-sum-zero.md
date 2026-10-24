@@ -7,13 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.binDigitSum_zero
 ---
 
-# Bin Digit Sum zero
+# Binary digit sum of zero
 
-The binary digit sum of `0` is `0`.
+**Binary digit sum of zero.** The binary digit sum of $0$ is $0$.
 
 ## Depends on
 
-- [Bin Digit Sum](bin-digit-sum.md)
+- [Binary digit sum](bin-digit-sum.md)
 
 ## Sources
 

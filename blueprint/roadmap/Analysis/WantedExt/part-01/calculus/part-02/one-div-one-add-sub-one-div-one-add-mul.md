@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.ReciprocalDifferenceSqrtBoundWanted.one_div_one_add_sub_one_div_one_add_mul_le
 ---
 
-# Reciprocal Difference Sqrt Bound Wanted
+# A bound on a difference of reciprocals
 
-For $a>1$, show that
+**A bound on a difference of reciprocals.** For all real numbers $a > 1$ and $x \ge 1$,
 
-\[
-\frac{1}{1+x}-\frac{1}{1+ax}\le \frac{\sqrt{a}-1}{\sqrt{a}+1},\qquad x\ge 1.
-\]
+$$
+\frac{1}{1+x}-\frac{1}{1+ax}\le \frac{\sqrt{a}-1}{\sqrt{a}+1}.
+$$
 
 ## Depends on
 

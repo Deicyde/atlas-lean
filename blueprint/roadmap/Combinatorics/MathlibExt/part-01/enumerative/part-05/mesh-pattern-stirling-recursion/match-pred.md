@@ -6,12 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.MatchPred
 ---
 
-# Match Pred
+# Mesh-pattern match
 
-Canonical mesh-match predicate: position `i` is a left-to-right maximum of `σ` with at
-least `r - 1` larger entries strictly between `i` and a global maximizer. Shared by the
-recursion (`meshPatternCount_stirlingRecursion`) and the coefficient theorem
-(`meshPatternCount_eq_factorial_mul_rStirlingNumber`).
+**Mesh-pattern match.** Let $\sigma$ be a permutation of $m$ elements, with positions numbered
+$1, \dots, m$, let $p$ be the position of the largest value of $\sigma$, and let $r$ be a natural
+number. A position $i$ is a mesh-pattern match of $\sigma$ with parameter $r$ when
+$\sigma(t) < \sigma(i)$ for every position $t < i$ and at least $r - 1$ positions $t$ with
+$i < t < p$ have $\sigma(t) > \sigma(i)$.
 
 ## Depends on
 

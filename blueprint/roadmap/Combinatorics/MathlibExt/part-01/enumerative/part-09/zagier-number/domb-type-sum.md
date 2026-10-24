@@ -6,11 +6,14 @@ statement: formalized
 lean: MetaMathlibExt.dombTypeSum
 ---
 
-# Domb Type Sum
+# Domb-type sums
 
-The source's Domb-type sum
-`D(n,r,s,t) = ∑_{k=0}^n choose(n,k)^r choose(2k,k)^s choose(2(n-k),n-k)^t`.
-The paper uses positive `r`; the same finite formula is meaningful at `r = 0`.
+**Domb-type sums.** For natural numbers $n$, $r$, $s$ and $t$, the Domb-type sum is the
+natural number
+
+$$D(n, r, s, t) = \sum_{k=0}^{n} \binom{n}{k}^r \binom{2k}{k}^s \binom{2(n-k)}{n-k}^t.$$
+
+The paper uses positive $r$; the same finite formula is meaningful at $r = 0$.
 
 ## Depends on
 

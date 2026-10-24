@@ -16,8 +16,8 @@ lean: MetaMathlibExt.one_mem_bernoulliIntegralDerivativeIndices_one
 
 ## Proof depends on
 
-- [Polynomial Denominator](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
-- [Polynomial Denominator eq one iff](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator-eq-one-iff.md)
+- [Denominator of a rational polynomial](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
+- [Denominator one characterizes integer polynomials](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator-eq-one-iff.md)
 
 ## Sources
 

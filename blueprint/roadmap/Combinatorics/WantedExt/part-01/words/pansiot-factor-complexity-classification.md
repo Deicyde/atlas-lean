@@ -26,7 +26,7 @@ with the same complexity up to `Θ`.
 ## Depends on
 
 - [Is Eventually Periodic](../../../../Dynamics/MathlibExt/eventually-periodic-sequence/is-eventually-periodic.md)
-- [Word Factor Complexity](../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
+- [Factor complexity of an infinite word](../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
 
 ## Sources
 

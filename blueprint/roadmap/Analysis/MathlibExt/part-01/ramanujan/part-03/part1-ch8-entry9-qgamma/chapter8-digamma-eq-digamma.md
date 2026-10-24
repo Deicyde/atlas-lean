@@ -7,9 +7,12 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry9Qgamma.chapter8Digamma_eq_digamma
 ---
 
-# Chapter8 Digamma eq digamma
+# Digamma as the logarithmic derivative of Gamma (Chapter 8, Entry 9)
 
-The wishlist digamma is the canonical `Complex.digamma`.
+**Digamma as the logarithmic derivative of Gamma (Chapter 8, Entry 9).** For every complex
+number $z$, $\Gamma'(z)/\Gamma(z) = \psi(z)$, where $\Gamma'$ is the complex derivative of the
+Gamma function and $\psi$ is the digamma function. At the poles of $\Gamma$ both sides are $0$ by
+convention.
 
 ## Depends on
 

@@ -12,13 +12,13 @@ Every noncrossing partition of `Fin 3` has one, two, or three blocks.
 
 ## Depends on
 
-- [Noncrossing Partition](../basic/noncrossing-partition.md)
-- [Is Noncrossing](../basic/is-noncrossing.md)
-- [Set Partition](../basic/set-partition.md)
+- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [Noncrossing set partition](../basic/is-noncrossing.md)
+- [Set partition](../basic/set-partition.md)
 
 ## Proof depends on
 
-- [Card parts pos iff](../../finpartition/card/card-parts-pos-iff.md)
+- [Recognizing the one-block partition](../../finpartition/card/card-parts-pos-iff.md)
 
 ## Sources
 

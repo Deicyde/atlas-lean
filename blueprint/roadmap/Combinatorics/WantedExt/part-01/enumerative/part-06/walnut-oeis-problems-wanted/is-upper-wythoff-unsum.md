@@ -19,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fib Inf](../../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
+- [Infinite Fibonacci word](../../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
 
 ## Sources
 

@@ -6,20 +6,22 @@ proof: formalized
 lean: CSLibExt.Combinatorics.RandomThreeSat.satProb_zero
 ---
 
-# Sat Prob zero
+# Satisfiability probability with no clauses
 
-The empty formula is satisfiable, so the probability at `m = 0` is `1`.
+**Satisfiability probability with no clauses.** For every number $n$ of variables, the
+probability that a uniformly random formula with $0$ clauses on $n$ variables is satisfiable is
+$1$: the only such formula is the empty one, and every assignment satisfies it.
 
 ## Depends on
 
-- [Sat Prob](sat-prob.md)
+- [Satisfiability probability of random 3-SAT](sat-prob.md)
 
 ## Proof depends on
 
-- [Clause](clause.md)
-- [Formula](formula.md)
+- [3-clause](clause.md)
+- [Formulas of the random 3-SAT model](formula.md)
 - [Satisfiable](satisfiable.md)
-- [Clause Sat](clause-sat.md)
+- [Satisfaction of a 3-clause](clause-sat.md)
 
 ## Sources
 

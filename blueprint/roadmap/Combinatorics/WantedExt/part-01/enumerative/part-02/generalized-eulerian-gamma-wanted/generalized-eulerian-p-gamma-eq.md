@@ -15,7 +15,7 @@ with these coefficients (for rational `q, t, x, y`, `x ≠ y`), and each is
 
 ## Depends on
 
-- [Cycle Quotient Count](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
+- [Number of cycles of a permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
 - [Double Excedance Count](double-excedance-count.md)
 - [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
 - [Generalized Eulerian P](generalized-eulerian-p.md)

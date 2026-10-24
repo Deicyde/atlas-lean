@@ -5,5 +5,5 @@ navigation: module
 
 # Knuth Catalan Log Sq
 
-- [Knuth catalan log sq canonical](knuth-catalan-log-sq-canonical.md)
-- [Knuth catalan log sq](knuth-catalan-log-sq.md)
+- [Knuth's identity in harmonic-number notation](knuth-catalan-log-sq-canonical.md)
+- [Knuth's identity for central binomial coefficients and harmonic numbers](knuth-catalan-log-sq.md)

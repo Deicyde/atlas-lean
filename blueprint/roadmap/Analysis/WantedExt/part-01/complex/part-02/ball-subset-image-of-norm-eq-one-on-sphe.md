@@ -5,15 +5,18 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.UnimodularBoundaryImageContainsDiscWanted.ball_subset_image_of_norm_eq_one_on_sphere
 ---
 
-# Unimodular Boundary Image Contains Disc Wanted
+# Nonconstant holomorphic functions of modulus one on the unit circle cover the unit disc
 
-Let $f$ be non-constant and holomorphic in an open set containing the closed unit disc.
+**Nonconstant holomorphic functions of modulus one on the unit circle cover the unit disc.**
+Let $U\subseteq\mathbb{C}$ be a connected open set containing the closed unit disc
+$\{z:|z|\le 1\}$, and let $f:\mathbb{C}\to\mathbb{C}$ be holomorphic on $U$ and non-constant on
+$U$. If $|f(z)|=1$ whenever $|z|=1$, then every $w$ with $|w|<1$ is $f(z)$ for some $z\in U$; that
+is, $f(U)$ contains the open unit disc.
 
-Show that if $|f(z)|=1$ whenever $|z|=1$, then the image of $f$ contains the unit disc.
-
-Lean variant: the source statement is false for a disconnected `U` (take `U = ball 0 2 ∪ ball 10 1`
-with `f = 1` on the first component and `f z = z` on the second), so the hypothesis `IsPreconnected
-U`, the intended reading of `U` as a domain, is added.
+The connectedness of $U$ is added to the source statement, which asks only for an open set: for
+$U=\{z:|z|<2\}\cup\{z:|z-10|<1\}$, with $f=1$ on the first disc and $f(z)=z$ on the second, $f$
+is non-constant and holomorphic on $U$ and has modulus one on the unit circle, but $f(U)$ does not
+contain the open unit disc.
 
 ## Depends on
 

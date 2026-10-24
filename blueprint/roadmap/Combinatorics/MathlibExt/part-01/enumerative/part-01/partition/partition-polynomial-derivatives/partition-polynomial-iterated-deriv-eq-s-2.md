@@ -7,15 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.partitionPolynomial_iteratedDeriv_eq_sum_stirlingSecond
 ---
 
-# Partition Polynomial iterated Deriv eq sum stirling Second
+# Derivatives of the partition polynomial via Stirling numbers
 
-The derivative formula for the partition polynomial, expressed using Stirling numbers of the
-second kind.
+**Derivatives of the partition polynomial via Stirling numbers.** Let $k \ge 1$, let
+$m \colon \mathbb{N} \to \mathbb{N}$, and write $m_i = m(i)$. Assume $m_k \ne 0$ and $m_i = 0$
+for every $i$ outside $\{1, \dots, k\}$, so that $m$ lists the part multiplicities of a
+partition $\lambda = \langle 1^{m_1}, \dots, k^{m_k} \rangle$ with largest part $k$. Let
+$f(y) = \sum_{i=1}^{k} m_i y^i$ for real $y$. Then for every natural number $d \le k$ and every
+real $x \ne 0$,
 
-The partition `λ = ⟨1^m₁, …, k^mₖ⟩` in frequency notation has largest part `k`
-(`m k ≠ 0`, support in `Icc 1 k`) and partition polynomial `f(y) = ∑ mᵢ yⁱ`; the
-`d`th derivative at nonzero `x` is the displayed Stirling recursion, valid for
-`0 ≤ d ≤ k` (the second sum is empty for `d = 0`).
+$$f^{(d)}(x) = \sum_{i=1}^{k} i^d m_i x^{i-d} -
+\sum_{j=0}^{d-1} S(d, j)\, x^{j-d} f^{(j)}(x),$$
+
+where $S(d, j)$ are the Stirling numbers of the second kind and $f^{(j)}$ is the $j$th
+derivative of $f$; for $d = 0$ the second sum is empty.
 
 ## Depends on
 
@@ -23,7 +28,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Partition Polynomial iterated Deriv eq sum stirling Second general](partition-polynomial-iterated-deriv-eq-s.md)
+- [Stirling recursion for derivatives, for arbitrary multiplicities](partition-polynomial-iterated-deriv-eq-s.md)
 
 ## Sources
 

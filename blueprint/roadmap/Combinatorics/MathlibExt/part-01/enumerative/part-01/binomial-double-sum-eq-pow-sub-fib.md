@@ -7,14 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.binomial_double_sum_eq_pow_sub_fib
 ---
 
-# Binomial Double Sum
+# A binomial double sum equal to a power of two minus a Fibonacci number
 
-The binomial double sum equals a power of two minus a Fibonacci number.
+**A binomial double sum equal to a power of two minus a Fibonacci number.** For every natural
+number $n$,
 
-`Finset.range (n / 2 + 1)` encodes the source sum over `k = 0..⌊n/2⌋`; the
-inner `Finset.range (n - 2*k + 1)` sums `q = 0..n-2k`; `Nat.fib` is the
-source's `F`.
-Proves `Wanted` entry `binomial_double_sum_eq_pow_sub_fib`.
+$$\sum_{k=0}^{\lfloor n/2 \rfloor} \sum_{q=0}^{n-2k} \binom{n-k}{q} = 2^{n+1} - F_{n+2},$$
+
+where $F_m$ is the $m$-th Fibonacci number, with $F_0 = 0$ and $F_1 = 1$.
 
 ## Depends on
 

@@ -6,14 +6,15 @@ statement: formalized
 lean: MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.IsNonconstant
 ---
 
-# Is Nonconstant
+# Germ-wise nonconstant function
 
-A function `f : ℂ → ℂ` is nonconstant in the germ-wise sense: there
-are two points at which `f` is differentiable (analytic points of the
-meromorphic germ) with different values. This excludes pointwise-modified
-constant representatives (for example `f 0 = 1`, `f z = 0` elsewhere),
-which are meromorphic with zero derivative density but represent the
-constant-zero germ.
+**Germ-wise nonconstant function.** A function $f\colon \mathbb{C} \to \mathbb{C}$ is
+nonconstant if there are points $u, v \in \mathbb{C}$ at which $f$ is complex differentiable and
+$f(u) \ne f(v)$.
+
+This excludes pointwise-modified constant functions (for example $f(0) = 1$ and $f(z) = 0$ for
+$z \ne 0$), which are meromorphic with zero derivative density but represent the constant zero
+germ.
 
 ## Depends on
 

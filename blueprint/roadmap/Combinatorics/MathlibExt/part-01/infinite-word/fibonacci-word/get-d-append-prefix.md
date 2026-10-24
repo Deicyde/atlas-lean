@@ -7,10 +7,12 @@ proof: formalized
 lean: MetaMathlibExt.getD_append_prefix
 ---
 
-# Get D append prefix
+# Appending a word does not change earlier letters
 
-Reading an index below the prefix length through an appended suffix agrees.
-Concept `jis_sem_f409ef3715730614fd194b4d`.
+**Appending a word does not change earlier letters.** Let $a$ and $t$ be finite words in the
+letters $0$ and $1$, and let $k$ be a natural number smaller than the length of $a$. Then the
+letter at position $k$ of the concatenation $a t$ equals the letter at position $k$ of $a$,
+counting positions from $0$.
 
 ## Depends on
 
@@ -19,3 +21,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.FibonacciWord](../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_f409ef3715730614fd194b4d`.

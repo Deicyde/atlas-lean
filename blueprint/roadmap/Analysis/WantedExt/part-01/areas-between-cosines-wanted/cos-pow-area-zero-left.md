@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.cosPowArea_zero_left
 ---
 
-# Cos Pow Area zero left
+# The area between cosine powers vanishes for exponent zero
 
-For `n = 0` the two curves coincide, so the area is `0`.
+**The area between cosine powers vanishes for exponent zero.** For natural numbers $n$ and
+$k$, let $A_n(k) = \int_0^\pi |\cos^n x - \cos^n(kx)|\,dx$ be the area between $\cos^n x$ and
+$\cos^n(kx)$ on $[0, \pi]$. Then $A_0(k) = 0$ for every natural number $k$, since both curves are
+then the constant $1$.
 
 ## Depends on
 
-- [Cos Pow Area](cos-pow-area.md)
+- [Area between powers of cosines](cos-pow-area.md)
 
 ## Sources
 

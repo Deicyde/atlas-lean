@@ -6,17 +6,21 @@ statement: formalized
 lean: MetaMathlibExt.multiMarkedShiftedIndexSum
 ---
 
-# Multi Marked Shifted Index Sum
+# Shifted index sum of a multi-marked step sequence
 
-Finite sum over marked-step occurrences of `t - 1`; the exact
-occurrence-level representation of the source sum `∑ (t - 1) * N*_t(P)`
-grouped by index. Concept `jis_sem_ee7327c841ed4326952fd4fb`;
-source statement `jis_54a13fcd4eb84116f24d6935`.
+**Shifted index sum of a multi-marked step sequence.** For a finite sequence $s$ of steps of
+a multi-marked Dyck path, the shifted index sum of $s$ is the sum of $t - 1$ over all
+occurrences of marked steps $N^*_t$ in $s$, each occurrence counted separately; the steps $E$
+and $N$ contribute nothing.
+
+Grouping the occurrences by index, the shifted index sum equals
+$\sum_t (t - 1) \cdot N^*_t(s)$, where $N^*_t(s)$ is the number of marked steps of index $t$ in $s$.
 
 ## Depends on
 
-- [Multi Marked Step](multi-marked-step.md)
+- [Steps of a multi-marked Dyck path](multi-marked-step.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MarkedStepInAMultiMarkedDyckPath](../../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_ee7327c841ed4326952fd4fb`, source statement `jis_54a13fcd4eb84116f24d6935`.

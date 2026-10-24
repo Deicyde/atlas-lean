@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.kasselReutenauerPoly_two
 ---
 
-# Kassel Reutenauer Poly two
+# The Kassel–Reutenauer polynomial $\bar P_2$
 
-Characteristic value `P̄_2(X) = X + 1` (Table 2).
+**The Kassel–Reutenauer polynomial $\bar P_2$.** The Kassel–Reutenauer polynomial
+$\bar P_2(X) \in \mathbb{Z}[X]$ equals $X + 1$.
 
 ## Depends on
 
-- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
+- [Kassel–Reutenauer polynomial](kassel-reutenauer-poly.md)
 
 ## Proof depends on
 
-- [Kassel Reutenauer Coeff](kassel-reutenauer-coeff.md)
+- [The Kassel–Reutenauer coefficients $a_{n,i}$](kassel-reutenauer-coeff.md)
 
 ## Sources
 

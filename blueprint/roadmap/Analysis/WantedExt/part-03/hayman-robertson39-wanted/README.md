@@ -4,13 +4,13 @@ navigation: module
 
 # Hayman Robertson39
 
-- [Hayman Unit Disc](hayman-unit-disc.md)
-- [Hayman Is Schlicht](hayman-is-schlicht.md)
-- [Hayman Is Starlike](hayman-is-starlike.md)
-- [Hayman Has Real Coeffs](hayman-has-real-coeffs.md)
-- [Hayman Is Close To Convex](hayman-is-close-to-convex.md)
-- [Hayman Is Odd Sqrt](hayman-is-odd-sqrt.md)
-- [Hayman Odd Sqrt Coeff](hayman-odd-sqrt-coeff.md)
-- [Hayman Robertson Bound](hayman-robertson-bound.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Open unit disc](hayman-unit-disc.md)
+- [Normalized univalent functions (class $S$)](hayman-is-schlicht.md)
+- [Starlike univalent functions](hayman-is-starlike.md)
+- [Real Taylor coefficients at the origin](hayman-has-real-coeffs.md)
+- [Close-to-convex functions](hayman-is-close-to-convex.md)
+- [Normalized odd square roots](hayman-is-odd-sqrt.md)
+- [Taylor coefficients at the origin](hayman-odd-sqrt-coeff.md)
+- [Robertson's bound](hayman-robertson-bound.md)
+- [Robertson's conjecture for real-coefficient and close-to-convex functions](conjecture.md)
+- [Robertson's conjecture holds for real-coefficient and close-to-convex functions](conjecture-holds.md)

@@ -4,5 +4,5 @@ navigation: module
 
 # Radial Symmetry
 
-- [Solves Semilinear Poisson](solves-semilinear-poisson.md)
-- [Semilinear poisson radial symmetry](semilinear-poisson-radial-symmetry.md)
+- [Semilinear Poisson problem on the unit ball](solves-semilinear-poisson.md)
+- [Radial symmetry of positive solutions of the semilinear Poisson problem](semilinear-poisson-radial-symmetry.md)

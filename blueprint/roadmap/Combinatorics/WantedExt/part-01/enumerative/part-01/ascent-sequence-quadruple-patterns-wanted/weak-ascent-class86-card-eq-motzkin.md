@@ -13,7 +13,7 @@ with `M_n` the Motzkin numbers.
 
 ## Depends on
 
-- [Motzkin Number](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
+- [Motzkin numbers as a Catalan-weighted binomial sum](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
 - [Weak Ascent Avoiders](weak-ascent-avoiders.md)
 
 ## Sources

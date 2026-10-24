@@ -7,9 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.bell_eq_sum_stirlingSecond
 ---
 
-# Bell Stirling Sum
+# Bell numbers are row sums of Stirling numbers of the second kind
 
-Bell numbers as Stirling-second-kind row sums: `Bₙ = ∑_{k=0}^n S(n, k)`.
+**Bell numbers are row sums of Stirling numbers of the second kind.** For every
+natural number $n$, the Bell number $B_n$ equals $\sum_{k=0}^{n} S(n, k)$, where $S(n, k)$ is the
+Stirling number of the second kind.
 
 ## Depends on
 

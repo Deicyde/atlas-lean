@@ -18,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Perfect Set](is-perfect-set.md)
+- [Perfect sets of real numbers](is-perfect-set.md)
 
 ## Sources
 

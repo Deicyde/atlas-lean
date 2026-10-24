@@ -17,7 +17,7 @@ The likelihood of a sequence depends only on its counts: `∏ₘ θ (s m) = ∏�
 
 ## Proof depends on
 
-- [Prod Comp Pow](../../../../../Algebra/MathlibExt/big-operators/prod-comp-eq-prod-pow.md)
+- [Products regrouped by the values of a function](../../../../../Algebra/MathlibExt/big-operators/prod-comp-eq-prod-pow.md)
 
 ## Sources
 

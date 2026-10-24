@@ -17,7 +17,7 @@ periodic outcome `(π_1, …, π_n, π_1, …)`; the printed `π_{n mod n} = π_
 ## Depends on
 
 - [Is Metered Parking Function](is-metered-parking-function.md)
-- [Is Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
+- [Parking function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
 - [Metered Outcome](metered-outcome.md)
 
 ## Sources

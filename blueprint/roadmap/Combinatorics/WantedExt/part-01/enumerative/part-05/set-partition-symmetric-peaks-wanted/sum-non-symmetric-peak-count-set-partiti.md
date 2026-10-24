@@ -12,7 +12,7 @@ blocks is `binom(k-1, 2) S_{n-1,k} + 2 ∑_{j=3}^k binom(j, 3) ∑_{i=3}^{n-k} j
 
 ## Depends on
 
-- [Is Surjective Restricted Growth String](../../../../../MathlibExt/part-01/enumerative/part-01/partition/peak-generating-function/is-surjective-restricted-growth-string.md)
+- [Surjective restricted-growth strings](../../../../../MathlibExt/part-01/enumerative/part-01/partition/peak-generating-function/is-surjective-restricted-growth-string.md)
 - [Non Symmetric Peak Count](non-symmetric-peak-count.md)
 
 ## Sources

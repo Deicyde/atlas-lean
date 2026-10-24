@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.interpolationPoly
 ---
 
-# Interpolation Poly
+# Interpolation polynomial
 
-The interpolation polynomial `f_X ∈ ℚ[x]` of `f : ℤ → ℤ` on a finite set `X ⊆ ℤ`: the
-unique rational polynomial of degree `< |X|` agreeing with `f` on `X`.
+**Interpolation polynomial.** Let $X \subseteq \mathbb{Z}$ be finite and
+$f : \mathbb{Z} \to \mathbb{Z}$. The interpolation polynomial $f_X \in \mathbb{Q}[x]$ of $f$ on $X$
+is the Lagrange interpolation polynomial: the unique polynomial with rational coefficients of
+degree less than $|X|$ such that $f_X(x) = f(x)$ for every $x \in X$.
 
 ## Depends on
 

@@ -6,10 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.fixedPolycube
 ---
 
-# Fixed Polycube
+# Fixed polycubes
 
-Fixed `n`-cell polycubes in dimension `d`, as canonical representatives:
-nonempty finite face-connected sets of cardinality `n` with minima at zero.
+**Fixed polycubes.** For natural numbers $d$ and $n$, the fixed $n$-cell polycubes in
+dimension $d$ are represented by the finite sets $S$ of lattice cells in $\mathbb{Z}^d$ that are
+polycubes (nonempty and connected through face adjacency), have exactly $n$ cells, and are in
+canonical position (the minimum of each coordinate over $S$ is $0$).
 
 ## Depends on
 
@@ -17,9 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Canonical Cells](is-canonical-cells.md)
-- [Is Polycube Cells](is-polycube-cells.md)
-- [Lattice Cell](lattice-cell.md)
+- [Canonical position of a cell set](is-canonical-cells.md)
+- [Polycube](is-polycube-cells.md)
+- [Lattice cells](lattice-cell.md)
 
 ## Sources
 

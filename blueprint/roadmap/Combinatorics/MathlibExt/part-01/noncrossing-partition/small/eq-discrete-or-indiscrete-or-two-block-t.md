@@ -12,15 +12,15 @@ Canonical classification at arity three.
 
 ## Depends on
 
-- [Noncrossing Partition](../basic/noncrossing-partition.md)
-- [Discrete](../operations/discrete.md)
-- [Indiscrete](../operations/indiscrete.md)
+- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [Discrete noncrossing partition](../operations/discrete.md)
+- [The indiscrete noncrossing partition](../operations/indiscrete.md)
 - [Two Block Partition](two-block-partition.md)
 
 ## Proof depends on
 
-- [Is Noncrossing](../basic/is-noncrossing.md)
-- [Set Partition](../basic/set-partition.md)
+- [Noncrossing set partition](../basic/is-noncrossing.md)
+- [Set partition](../basic/set-partition.md)
 - [Eq discrete of card three three](eq-discrete-of-card-three-three.md)
 - [Eq indiscrete of card one three](eq-indiscrete-of-card-one-three.md)
 - [Three card one two three](three-card-one-two-three.md)

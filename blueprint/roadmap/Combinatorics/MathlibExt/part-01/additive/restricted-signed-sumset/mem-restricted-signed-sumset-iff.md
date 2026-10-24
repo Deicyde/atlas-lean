@@ -6,15 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.mem_restrictedSignedSumset_iff
 ---
 
-# Mem restricted Signed Sumset iff
+# Coefficient description of the restricted signed sumset
 
-Membership in `restrictedSignedSumset` is equivalent to the paper's coefficient
-definition: coefficients on `A` lie in `{-1,0,1}`, their absolute values sum to `h`, and
-`x` is their weighted sum. No deviation from the paper's definition is made.
+**Coefficient description of the restricted signed sumset.** For a natural number $h$, a
+finite set $A$ of integers and an integer $x$, $x$ lies in the restricted signed sumset
+$h^{\wedge}_{\pm} A$ if and only if there is a function $c : \mathbb{Z} \to \mathbb{Z}$ with
+$c(a) \in \{-1, 0, 1\}$ for every $a \in A$, $\sum_{a \in A} |c(a)| = h$ and
+$x = \sum_{a \in A} c(a)\, a$.
 
 ## Depends on
 
-- [Restricted Signed Sumset](restricted-signed-sumset.md)
+- [Restricted signed sumset](restricted-signed-sumset.md)
 
 ## Sources
 

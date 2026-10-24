@@ -6,17 +6,21 @@ statement: formalized
 lean: MathlibExt.Analysis.SobolevMorreyWanted.Analysis.SobolevMorreyProblem.mixedDeriv
 ---
 
-# Mixed Deriv
+# Mixed partial derivative
 
-Classical mixed partial derivative `D^m φ` for a multi-index `m`.
+**Mixed partial derivative.** For a multi-index $m = (m_0, \dots, m_{n-1})$ of natural numbers
+and a function $\varphi : \mathbb{R}^n \to \mathbb{R}$, the mixed partial derivative is
+$D^m \varphi = \partial_0^{m_0} \partial_1^{m_1} \cdots \partial_{n-1}^{m_{n-1}} \varphi$, where
+$\partial_i^{j}$ is the $j$-fold iterate of the partial derivative $\partial_i$; thus
+$\partial_{n-1}$ is applied first and $\partial_0$ last.
 
 ## Depends on
 
-- [E](e.md)
+- [Euclidean space $\mathbb{R}^n$](e.md)
 
 ## Proof depends on
 
-- [Partial Deriv](partial-deriv.md)
+- [Partial derivative](partial-deriv.md)
 
 ## Sources
 

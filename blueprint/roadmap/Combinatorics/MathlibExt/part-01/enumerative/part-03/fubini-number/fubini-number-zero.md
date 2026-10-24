@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.fubiniNumber_zero
 ---
 
-# Fubini Number zero
+# Fubini number of zero
 
-`F 0 = 1`: the empty set has exactly one weak ordering.
+**Fubini number of zero.** The Fubini number $F(0)$ equals $1$: the empty set has exactly
+one weak ordering.
 
 ## Depends on
 
-- [Fubini Number](fubini-number.md)
+- [Fubini numbers](fubini-number.md)
 
 ## Sources
 

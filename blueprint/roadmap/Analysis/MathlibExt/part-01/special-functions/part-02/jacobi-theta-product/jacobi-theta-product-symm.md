@@ -13,11 +13,11 @@ Involutive parameter symmetry: `j(q / x; q) = j(x; q)` when `q ≠ 0`.
 
 ## Depends on
 
-- [Jacobi Theta Product](jacobi-theta-product.md)
+- [Jacobi theta function, product form](jacobi-theta-product.md)
 
 ## Proof depends on
 
-- [Q Pochhammer Inf](../qpochhammer/q-pochhammer-inf.md)
+- [Infinite q-Pochhammer symbol](../qpochhammer/q-pochhammer-inf.md)
 
 ## Sources
 

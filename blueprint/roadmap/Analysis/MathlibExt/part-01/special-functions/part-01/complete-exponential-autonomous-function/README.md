@@ -5,5 +5,5 @@ navigation: module
 
 # Complete Exponential Autonomous Function
 
-- [Complete Bell Polynomial](complete-bell-polynomial.md)
-- [Complete Exponential Autonomous Function](complete-exponential-autonomous-function.md)
+- [Complete Bell polynomials](complete-bell-polynomial.md)
+- [Complete exponential autonomous functions](complete-exponential-autonomous-function.md)

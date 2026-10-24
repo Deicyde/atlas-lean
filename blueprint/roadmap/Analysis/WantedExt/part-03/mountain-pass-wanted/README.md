@@ -5,8 +5,8 @@ navigation: module
 
 # Mountain Pass
 
-- [Is Critical Point](is-critical-point.md)
-- [Palais Smale](palais-smale.md)
-- [Mountain Range](mountain-range.md)
-- [Mountain Pass Level](mountain-pass-level.md)
-- [Mountain pass](mountain-pass.md)
+- [Critical point](is-critical-point.md)
+- [Palais–Smale condition](palais-smale.md)
+- [Mountain range](mountain-range.md)
+- [Mountain pass level](mountain-pass-level.md)
+- [Mountain pass theorem](mountain-pass.md)

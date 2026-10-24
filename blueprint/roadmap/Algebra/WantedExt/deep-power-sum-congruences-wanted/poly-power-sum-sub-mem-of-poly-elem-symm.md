@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.polyPowerSum_sub_mem_of_polyElemSymm_sub_mem
 ---
 
-# Poly Power Sum sub mem of poly Elem Symm sub mem
+# Congruent elementary symmetric functions give deep power-sum congruences
 
-Let `A` be a torsion-free `ℤ_(p)`-algebra, `𝔞` a divided-power ideal, `P, Q` monic and
-`N ≥ 1`. If `e_n(P) ≡ e_n(Q) mod 𝔞` for `1 ≤ n ≤ N`, then `p_N(P) ≡ p_N(Q) mod N𝔞`.
+**Congruent elementary symmetric functions give deep power-sum congruences.** Let $p$ be a
+prime and let $A$ be a commutative ring without additive torsion in which every natural number
+not divisible by $p$ is a unit (a torsion-free $\mathbb{Z}_{(p)}$-algebra). Let
+$\mathfrak{a}$ be a divided-power ideal of $A$, let $P, Q \in A[X]$ be monic and let $N \ge 1$;
+write $e_n$ and $p_n$ for the elementary symmetric functions and power sums of a polynomial.
+If $e_n(P) - e_n(Q) \in \mathfrak{a}$ for every $n$ with $1 \le n \le N$, then there is
+$c \in \mathfrak{a}$ with $p_N(P) - p_N(Q) = N c$, that is,
+$p_N(P) \equiv p_N(Q) \pmod{N \mathfrak{a}}$.
 
 ## Depends on
 
-- [Is Divided Power Ideal](is-divided-power-ideal.md)
-- [Poly Elem Symm](poly-elem-symm.md)
-- [Poly Power Sum](poly-power-sum.md)
+- [Divided-power ideal](is-divided-power-ideal.md)
+- [Elementary symmetric functions of a polynomial](poly-elem-symm.md)
+- [Power sums of a polynomial](poly-power-sum.md)
 
 ## Sources
 

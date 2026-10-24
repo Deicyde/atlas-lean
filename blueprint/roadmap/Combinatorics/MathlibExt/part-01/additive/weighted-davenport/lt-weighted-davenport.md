@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.lt_weightedDavenport
 ---
 
-# Lt weighted Davenport
+# Lower bound for the weighted Davenport constant
 
-Lower bound: an `A`-weighted zero-sum free sequence of length `L` gives `L < D_A(G)`.
+**Lower bound for the weighted Davenport constant.** Let $G$ be an additive commutative
+monoid, $A$ a finite set of natural numbers and $D_A(G)$ the $A$-weighted Davenport constant
+of $G$. If a sequence over $G$ of length $L$ is $A$-weighted zero-sum free, then $L < D_A(G)$.
 
 ## Depends on
 
-- [Is Weighted Zero Sum Free](is-weighted-zero-sum-free.md)
-- [Weighted Davenport](weighted-davenport.md)
+- [Weighted zero-sum free sequences](is-weighted-zero-sum-free.md)
+- [Weighted Davenport constant](weighted-davenport.md)
 
 ## Proof depends on
 
-- [Take](take.md)
-- [Weighted Davenport eq nat Cast s Inf](weighted-davenport-eq-nat-cast-s-inf.md)
+- [Prefixes of weighted zero-sum free sequences](take.md)
+- [The weighted Davenport constant as a least length](weighted-davenport-eq-nat-cast-s-inf.md)
 
 ## Sources
 

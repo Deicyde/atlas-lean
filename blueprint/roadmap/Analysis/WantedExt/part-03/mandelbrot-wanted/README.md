@@ -5,6 +5,6 @@ navigation: module
 
 # Mandelbrot
 
-- [Tc](tc.md)
-- [Mandelbrot](mandelbrot.md)
-- [Mandelbrot connected](mandelbrot-connected.md)
+- [The quadratic family](tc.md)
+- [The Mandelbrot set](mandelbrot.md)
+- [The Mandelbrot set is connected (Douady–Hubbard)](mandelbrot-connected.md)

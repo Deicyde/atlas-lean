@@ -6,10 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.properFixedPolycube
 ---
 
-# Proper Fixed Polycube
+# Proper fixed polycubes
 
-Proper fixed `n`-cell polycubes in proper dimension `i`: canonical
-representatives in host dimension `i` whose varying-axis count equals `i`.
+**Proper fixed polycubes.** For natural numbers $n$ and $i$, the fixed $n$-cell polycubes
+proper in dimension $i$ are the fixed $n$-cell polycubes in dimension $i$ whose proper dimension
+is $i$, that is, which vary along each of the $i$ axes.
 
 ## Depends on
 
@@ -17,11 +18,11 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fixed Polycube](fixed-polycube.md)
-- [Is Canonical Cells](is-canonical-cells.md)
-- [Is Polycube Cells](is-polycube-cells.md)
-- [Lattice Cell](lattice-cell.md)
-- [Proper Dimension](proper-dimension.md)
+- [Fixed polycubes](fixed-polycube.md)
+- [Canonical position of a cell set](is-canonical-cells.md)
+- [Polycube](is-polycube-cells.md)
+- [Lattice cells](lattice-cell.md)
+- [Proper dimension](proper-dimension.md)
 
 ## Sources
 

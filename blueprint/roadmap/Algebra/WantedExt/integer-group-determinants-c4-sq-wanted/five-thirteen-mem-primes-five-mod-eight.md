@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.five_thirteen_mem_primesFiveModEight
 ---
 
-# Five thirteen mem primes Five Mod Eight
+# $5$ and $13$ lie in $P$
 
-`5 ∈ P` and `13 ∈ P`.
+**$5$ and $13$ lie in $P$.** The integers $5$ and $13$ both belong to the set $P$ of
+positive primes $p \equiv -3 \pmod 8$.
 
 ## Depends on
 
-- [Primes Five Mod Eight](primes-five-mod-eight.md)
+- [Primes congruent to $-3$ modulo $8$](primes-five-mod-eight.md)
 
 ## Sources
 

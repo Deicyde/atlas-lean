@@ -5,19 +5,21 @@ statement: formalized
 lean: MathlibExt.Analysis.ScottishBook144Wanted.mazurUlam144_refuted
 ---
 
-# Mazur Ulam144 refuted
+# Scottish Book Problem 144 is false as stated
 
-Mazur–Ulam Problem 144 is false as stated: take `E = ℝ`. Its unit sphere
-is `{-1, 1}`, so the singleton `U = {1}` is a nonempty open subset of the
-sphere, but for every `f` its image `f '' U` is a singleton, hence of
-Lebesgue measure zero, contradicting `0 < volume (f '' U)`. The source
-contains no dimension restriction (it says "infinite-dimensional"
-explicitly when it means it, e.g. Problem 7), so no
-`¬ Module.Finite ℝ E` restriction is added here. Status: solved-negative.
+**Scottish Book Problem 144 is false as stated.** The Scottish Book Problem 144 claim fails: some
+separable real Banach space $E$ admits no injective map $f$ from its unit sphere $K$ to $[0, 1]$
+such that the image under $f$ of every nonempty open subset of $K$ has positive Lebesgue outer
+measure.
+
+For example, take $E = \mathbb{R}$: its unit sphere is $\{-1, 1\}$, so $U = \{1\}$ is a nonempty
+open subset of $K$, and its image under any $f$ is a single point, of measure zero. The source
+contains no dimension restriction (it says "infinite-dimensional" explicitly when it means it,
+e.g. Problem 7), so none is added here.
 
 ## Depends on
 
-- [Scottish Book Problem144 Claim](scottish-book-problem144-claim.md)
+- [Scottish Book Problem 144 (Mazur–Ulam), as a claim](scottish-book-problem144-claim.md)
 
 ## Sources
 

@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.prime_dvd_sum_compositions_mul_prod_pow
 ---
 
-# Prime dvd sum compositions mul prod pow
+# Vishwakarma–Singh congruence for ordered partitions into multiples
 
-For an odd prime `p`, positive integers `a, k, s, t` with `gcd(a, p - 1) = 1`, `s ≤ p - 2`,
-`k ≡ 1 (mod p(p - 1))` and `p² ∣ k - 1` whenever `p - 1 ∣ t`, with `μ = ⌊aks/(p - 1)⌋`:
-`∑_{j=1}^{μ} ∑ (ω_1 ⋯ ω_s)^t ≡ 0 (mod p)` over `s`-tuples with entries in `{an : 1 ≤ n ≤ k}`
-summing to `j(p - 1)`. Two corrections. The printed hypothesis `s ≢ 0 (mod p)` is replaced by
-`s ≤ p - 2` (as in Theorem 1); as printed the claim fails, e.g. `a = 1`, `p = 3`, `k = 7`,
-`s = 2`, `t = 1`. The printed bound `μ = ⌊ks/(p - 1)⌋` is extended to `⌊aks/(p - 1)⌋`, the
-largest `j` with `j(p - 1)` an exponent of `h_{k,a}(x)^s` (the paper's proof applies Hermite's
-criterion to that power); with the printed bound the claim fails for `a > 1`, e.g. `p = 5`,
-`a = 3`, `k = 21`, `s = t = 1` gives the sum `12`.
+**Vishwakarma–Singh congruence for ordered partitions into multiples.** Let $p$ be an odd
+prime and let $a, k, s, t$ be positive integers with $\gcd(a, p - 1) = 1$, $s \le p - 2$ and
+$k \equiv 1 \pmod{p(p-1)}$, such that $p^2 \mid k - 1$ whenever $p - 1 \mid t$. Let
+$\mu = \lfloor aks/(p - 1) \rfloor$. Then
+
+$$\sum_{j=1}^{\mu} \sum_{\omega} (\omega_1 \cdots \omega_s)^t \equiv 0 \pmod{p},$$
+
+where for each $j$ the inner sum runs over all $s$-tuples $\omega = (\omega_1, \dots, \omega_s)$
+with entries in $\{an : 1 \le n \le k\}$ and $\omega_1 + \cdots + \omega_s = j(p - 1)$.
+
+The source states this with two differences. It assumes $s \not\equiv 0 \pmod{p}$ in place of
+$s \le p - 2$; with that hypothesis the claim fails, e.g. for $a = 1$, $p = 3$, $k = 7$, $s = 2$,
+$t = 1$. It takes $\mu = \lfloor ks/(p - 1) \rfloor$; with that bound the claim fails for $a > 1$,
+e.g. for $p = 5$, $a = 3$, $k = 21$, $s = t = 1$ the sum is $12$. The bound
+$\lfloor aks/(p - 1) \rfloor$ covers every multiple of $p - 1$ up to $aks$, the degree of the
+$s$-th power of $\sum_{n=1}^{k} (an)^t X^{an}$, to which the proof applies Hermite's criterion.
 
 ## Depends on
 

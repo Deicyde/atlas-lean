@@ -5,12 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.tsum_four_pow_div_succ_mul_choose_mul_centralBinom
 ---
 
-# Tsum four pow div succ mul choose mul central Binom
+# Series over $4^n$ with binomial and central binomial denominators
 
-Theorem 10: for a positive integer `m`,
-`Σ_{n≥0} 2^{2n}/((n + 1) C(n + m, m) C(2(n + m), n + m))
-  = (m/4)(3ζ(2) - 4O^{(2)}_{m-1})/C(2(m - 1), m - 1)`,
-with `ζ(2) = π²/6`.
+**Series over $4^n$ with binomial and central binomial denominators.** Write
+$O^{(2)}_k = \sum_{j=1}^{k} 1/(2j-1)^2$. For every positive integer $m$,
+
+$$\sum_{n=0}^{\infty} \frac{4^n}{(n+1) \binom{n+m}{m} \binom{2(n+m)}{n+m}} =
+\frac{m}{4} \cdot \frac{3 \cdot \pi^2/6 - 4 O^{(2)}_{m-1}}{\binom{2(m-1)}{m-1}}.$$
 
 ## Depends on
 

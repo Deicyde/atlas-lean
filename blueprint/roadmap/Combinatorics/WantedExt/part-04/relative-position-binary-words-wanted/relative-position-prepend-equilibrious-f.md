@@ -13,7 +13,7 @@ lean: MetaMathlibExt.relativePosition_prepend_equilibrious_fibonacci
 ## Depends on
 
 - [Is Equilibrious Word](../../../MathlibExt/part-02/words/equilibrious-word/is-equilibrious-word.md)
-- [Fib Inf](../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
+- [Infinite Fibonacci word](../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
 - [Relative Position](relative-position.md)
 
 ## Sources

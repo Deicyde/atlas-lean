@@ -13,7 +13,7 @@ Freiman's `3k - 4` theorem: let `A ⊆ ℤ` with `|A| = k ≥ 3`, `min A = 0` an
 
 ## Depends on
 
-- [Is APOf Length](../../../../MathlibExt/part-01/ap/basic/is-apof-length.md)
+- [Sets that are arithmetic progressions](../../../../MathlibExt/part-01/ap/basic/is-apof-length.md)
 
 ## Sources
 

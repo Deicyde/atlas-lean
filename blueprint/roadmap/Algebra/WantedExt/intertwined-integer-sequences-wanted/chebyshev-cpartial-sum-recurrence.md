@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.chebyshevCPartialSum_recurrence
 ---
 
-# Chebyshev CPartial Sum recurrence
+# Three-term recurrence for the partial sums of Chebyshev polynomials
 
-Linear recurrence: `F_{k+1}(X) = X F_k(X) - F_{k-1}(X)` for `k ≥ 1`.
+**Three-term recurrence for the partial sums of Chebyshev polynomials.** Let
+$F_n = 1 + \sum_{k=1}^{n} \bar T_k \in \mathbb{Z}[X]$ be the partial sums of the monic Chebyshev
+polynomials $\bar T_k$ ($\bar T_0 = 2$, $\bar T_1 = X$, $\bar T_{k+2} = X \bar T_{k+1} - \bar T_k$).
+For every $k \ge 1$, $F_{k+1} = X F_k - F_{k-1}$.
 
 ## Depends on
 
-- [Chebyshev CPartial Sum](chebyshev-cpartial-sum.md)
+- [Partial sums of the monic Chebyshev polynomials](chebyshev-cpartial-sum.md)
 
 ## Sources
 

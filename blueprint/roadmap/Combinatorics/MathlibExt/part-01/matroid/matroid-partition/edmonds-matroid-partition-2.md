@@ -7,9 +7,13 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Matroid.MatroidPartitionWanted.edmonds_matroid_partition
 ---
 
-# Edmonds matroid partition
+# Edmonds' matroid partition theorem
 
-Edmonds' matroid partition theorem (k-partition form).
+**Edmonds' matroid partition theorem.** Let $E$ be a finite set, let $M$ be a matroid whose
+ground set is all of $E$, let $S \subseteq E$ and let $k$ be a natural number. Then
+$S = J_1 \cup \dots \cup J_k$ for some sets $J_1, \dots, J_k$ that are independent in $M$ (not
+necessarily disjoint) if and only if $|X| \le k \, r_M(X)$ for every $X \subseteq S$, where $r_M$
+is the rank function of $M$.
 
 ## Depends on
 
@@ -17,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Edmonds matroid partition'](edmonds-matroid-partition.md)
+- [Edmonds' matroid partition theorem, arbitrary ground set](edmonds-matroid-partition.md)
 
 ## Sources
 

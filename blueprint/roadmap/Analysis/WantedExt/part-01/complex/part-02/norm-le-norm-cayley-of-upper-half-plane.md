@@ -5,17 +5,14 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.UpperHalfPlaneSchwarzLemmaWanted.norm_le_norm_cayley_of_upperHalfPlane_bounded_vanishing_at_I
 ---
 
-# Upper Half Plane Schwarz Lemma Wanted
+# Schwarz lemma on the upper half-plane
 
-Let $F:\mathbb{H}\to\mathbb{C}$ be a holomorphic function that satisfies
+**Schwarz lemma on the upper half-plane.** Let
+$\mathbb{H}=\{z\in\mathbb{C} : \mathrm{Im}\,z>0\}$ be the upper half-plane, and let $F$ be a
+complex function that is holomorphic on $\mathbb{H}$, satisfies $|F(z)|\le 1$ for every
+$z\in\mathbb{H}$, and vanishes at $i$. Then for every $z\in\mathbb{H}$,
 
-\[
-|F(z)|\le 1\qquad\text{and}\qquad F(i)=0.
-\]
-Prove that
-\[
-|F(z)|\le \left|\frac{z-i}{z+i}\right|\qquad\text{for all } z\in\mathbb{H}.
-\]
+$$|F(z)|\le\left|\frac{z-i}{z+i}\right|.$$
 
 ## Depends on
 

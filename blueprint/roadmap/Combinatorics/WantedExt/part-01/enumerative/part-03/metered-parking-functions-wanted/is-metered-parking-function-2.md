@@ -13,7 +13,7 @@ every `t ≥ 0`.
 ## Depends on
 
 - [Is Metered Parking Function](is-metered-parking-function.md)
-- [Is Partial Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-partial-parking-function.md)
+- [Partial parking function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-partial-parking-function.md)
 
 ## Sources
 

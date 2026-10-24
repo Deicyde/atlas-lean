@@ -4,5 +4,5 @@ navigation: module
 
 # Exp Neg Sqrt Norm Self Convolution Limit
 
-- [F](f.md)
-- [Tendsto convolution self div at Top norm](tendsto-convolution-self-div-at-top-norm.md)
+- [The function $e^{-\sqrt{\|x\|}}$ on the plane](f.md)
+- [Asymptotics of the self-convolution of $e^{-\sqrt{\|x\|}}$](tendsto-convolution-self-div-at-top-norm.md)

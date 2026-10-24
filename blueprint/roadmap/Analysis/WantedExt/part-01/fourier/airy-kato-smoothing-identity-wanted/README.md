@@ -4,5 +4,5 @@ navigation: module
 
 # Airy Kato Smoothing Identity
 
-- [Airy Solution](airy-solution.md)
-- [Exists pos const integral norm deriv airy Solution sq eq](exists-pos-const-integral-norm-deriv-air.md)
+- [Fourier solution of the Airy equation](airy-solution.md)
+- [Kato smoothing identity for the Airy equation](exists-pos-const-integral-norm-deriv-air.md)

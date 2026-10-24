@@ -5,16 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.c4Sq_circulantDetFour_product_mod_sixteen
 ---
 
-# Lemma 10
+# $D_4(b) D_4(c)$ modulo $16$
 
-**Lemma 10.** If `b₀ + b₂ ≢ b₁ + b₃ (mod 2)`, then
-`D₄(b) D₄(c) ≡ 1 - 4(b₀b₂ + b₁b₃ + c₀c₂ + c₁c₃) (mod 16)`.
+**$D_4(b) D_4(c)$ modulo $16$.** Let
+$a \colon \mathbb{Z}/4 \times \mathbb{Z}/4 \to \mathbb{Z}$ have sums $b_i$ and alternating sums
+$c_i$, and let $D_4$ be the $4 \times 4$ circulant determinant. If
+$b_0 + b_2 \not\equiv b_1 + b_3 \pmod 2$, then
+$D_4(b) D_4(c) \equiv 1 - 4(b_0 b_2 + b_1 b_3 + c_0 c_2 + c_1 c_3) \pmod{16}$.
 
 ## Depends on
 
-- [C4 Sq B](c4-sq-b.md)
-- [C4 Sq C](c4-sq-c.md)
-- [Circulant Det Four](circulant-det-four.md)
+- [The sums $b_i$](c4-sq-b.md)
+- [The alternating sums $c_i$](c4-sq-c.md)
+- [The group determinant of $C_4$](circulant-det-four.md)
 
 ## Sources
 

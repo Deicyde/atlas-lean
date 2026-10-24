@@ -6,14 +6,15 @@ statement: formalized
 lean: MetaMathlibExt.isCanonicalCells
 ---
 
-# Is Canonical Cells
+# Canonical position of a cell set
 
-Canonical representative of a fixed translation class: every coordinate
-minimum is translated to zero.
+**Canonical position of a cell set.** A finite set $S$ of lattice cells in $\mathbb{Z}^d$ is
+in canonical position when, for every axis $k$, every cell $x \in S$ has $x_k \ge 0$ and some
+cell $x \in S$ has $x_k = 0$; that is, the minimum of each coordinate over $S$ is $0$.
 
 ## Depends on
 
-- [Lattice Cell](lattice-cell.md)
+- [Lattice cells](lattice-cell.md)
 
 ## Sources
 

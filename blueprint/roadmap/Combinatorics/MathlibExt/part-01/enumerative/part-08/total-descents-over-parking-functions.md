@@ -7,22 +7,25 @@ proof: formalized
 lean: MetaMathlibExt.total_descents_over_parking_functions
 ---
 
-# Total Descents Parking Functions
+# Total number of descents over parking functions
 
-The total number of descents (adjacent pairs with `a_i > a_{i+1}`) among all
-parking functions of length `n` is `C(n,2) (n+1)^{n−2}`. Parking functions
-use the shared, efficiently decidable `IsParkingFunction` threshold predicate
-from MathlibExt. This is equivalent to the source's sorted-preference
-formulation.
+**Total number of descents over parking functions.** Let $n$ be a natural number. A descent of
+a function $f \colon \{0, \dots, n-1\} \to \{0, \dots, n-1\}$ is an index $i$ with $i + 1 < n$
+and $f(i) > f(i+1)$. Summed over all parking functions
+$f \colon \{0, \dots, n-1\} \to \{0, \dots, n-1\}$ of length $n$, the number of descents is
+$\binom{n}{2} (n+1)^{n-2}$, which is $0$ for $n < 2$.
+
+Parking functions are taken in threshold form: for each $k < n$, at most $n - k$ of the values
+$f(i)$ are at least $k$. This is equivalent to the source's sorted-preference formulation.
 
 ## Depends on
 
-- [Is Parking Function](../part-06/parking-function/is-parking-function.md)
-- [Is Partial Parking Function](../part-06/parking-function/is-partial-parking-function.md)
+- [Parking function](../part-06/parking-function/is-parking-function.md)
+- [Partial parking function](../part-06/parking-function/is-partial-parking-function.md)
 
 ## Proof depends on
 
-- [Is Parking Function iff card filter le](../part-06/parking-function/is-parking-function-iff-card-filter-le.md)
+- [Lower-tail characterization of parking functions](../part-06/parking-function/is-parking-function-iff-card-filter-le.md)
 
 ## Sources
 

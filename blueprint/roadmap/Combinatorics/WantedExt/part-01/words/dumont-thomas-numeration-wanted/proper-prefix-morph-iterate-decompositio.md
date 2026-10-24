@@ -14,7 +14,7 @@ and `m'' ∈ A*` with `m'a'` a prefix of `η(a)`, `m''` a proper prefix of `η^{
 ## Depends on
 
 - [Is Substitution](is-substitution.md)
-- [Morph Iterate](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
+- [Iterates of a letter map](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources
 

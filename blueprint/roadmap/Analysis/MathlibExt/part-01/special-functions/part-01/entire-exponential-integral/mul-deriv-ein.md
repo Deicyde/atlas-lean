@@ -7,18 +7,21 @@ proof: formalized
 lean: Complex.mul_deriv_ein
 ---
 
-# Mul deriv ein
+# Derivative of the entire exponential integral
 
-The derivative identity for the entire exponential integral, in a form
-that remains valid at `z = 0`.
+**Derivative of the entire exponential integral.** For every complex number $z$, the entire
+exponential integral $\operatorname{Ein}$ satisfies $z \operatorname{Ein}'(z) = 1 - e^{-z}$.
+
+This is the identity $\operatorname{Ein}'(z) = (1 - e^{-z})/z$ multiplied through by $z$, a form
+that remains valid at $z = 0$.
 
 ## Depends on
 
-- [Ein](ein.md)
+- [The entire exponential integral Ein](ein.md)
 
 ## Proof depends on
 
-- [Ein Term](ein-term.md)
+- [Terms of the series for the entire exponential integral](ein-term.md)
 
 ## Sources
 

@@ -7,16 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.fuss_catalan_dvd_choose
 ---
 
-# Fuss Catalan Divisibility
+# Integrality of the Fuss–Catalan numbers
 
-Classical case: for `a ≥ 2` and `n ≥ 1`, `(a-1)*n+1` divides `C(a*n, n)`,
-so the Fuss-Catalan numbers are integers.
-
-The `r = 1` case of eq:FC is `C(a*n,n)/((a-1)*n+1)`; the source proves
-integrality for the Lucasnomial family (Theorem thm:1) while the classical
-divisibility is cited as known. Verified computationally for `2 ≤ a ≤ 9`
-and `1 ≤ n ≤ 39`.
-Proves `Wanted` entry `fuss_catalan_dvd_choose`.
+**Integrality of the Fuss–Catalan numbers.** For natural numbers $a \ge 2$ and $n \ge 1$, the
+integer $(a-1)n + 1$ divides the binomial coefficient $\binom{an}{n}$. Hence the Fuss–Catalan
+number $\frac{1}{(a-1)n+1}\binom{an}{n}$ is an integer.
 
 ## Depends on
 

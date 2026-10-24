@@ -5,5 +5,5 @@ navigation: module
 
 # Garabedian Bernoulli Stirling
 
-- [Garabedian genocchi formula general](garabedian-genocchi-formula-general.md)
-- [Garabedian genocchi formula](garabedian-genocchi-formula.md)
+- [Garabedian's formula for the Bernoulli numbers, including $n = 0$](garabedian-genocchi-formula-general.md)
+- [Garabedian's formula for the Bernoulli numbers](garabedian-genocchi-formula.md)

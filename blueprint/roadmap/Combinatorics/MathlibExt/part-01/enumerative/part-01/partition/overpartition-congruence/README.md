@@ -7,16 +7,16 @@ navigation: module
 
 ## Meta Mathlib Ext
 
-- [Overpartition mul five mod five](overpartition-mul-five-mod-five.md)
+- [Overpartitions of $5n$ modulo $5$, explicit form](overpartition-mul-five-mod-five.md)
 
 ## Overpartition
 
-- [Nat Card eq card subtype](nat-card-eq-card-subtype.md)
+- [Overpartitions as pairs of a multiset and a set](nat-card-eq-card-subtype.md)
 
 ## Nat
 
-- [Three Square Representation Count eq nat Card](three-square-representation-count-eq-nat.md)
+- [The three-square count counts all integer solutions](three-square-representation-count-eq-nat.md)
 
 ## Meta Mathlib Ext
 
-- [Overpartition card mul five mod Eq](overpartition-card-mul-five-mod-eq.md)
+- [Overpartitions of $5n$ modulo $5$](overpartition-card-mul-five-mod-eq.md)

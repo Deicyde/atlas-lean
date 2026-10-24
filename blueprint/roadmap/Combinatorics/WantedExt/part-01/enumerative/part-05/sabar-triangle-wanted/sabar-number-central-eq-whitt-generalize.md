@@ -13,7 +13,7 @@ Theorem 7: for `n ≥ 1`,
 ## Depends on
 
 - [Sabar Number](sabar-number.md)
-- [Whitt Generalized Catalan](../../../../../MathlibExt/part-01/enumerative/part-09/whitt-generalized-catalan/whitt-generalized-catalan.md)
+- [Whitt's generalized Catalan numbers](../../../../../MathlibExt/part-01/enumerative/part-09/whitt-generalized-catalan/whitt-generalized-catalan.md)
 
 ## Sources
 

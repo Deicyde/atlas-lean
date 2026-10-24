@@ -17,7 +17,7 @@ Lemma 9: six theta-function identities, with `f(q) = f_1(-q)`, `χ(-q) = (q; q^2
 
 ## Depends on
 
-- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 - [Ramanujan Theta Pow](ramanujan-theta-pow.md)
 
 ## Sources

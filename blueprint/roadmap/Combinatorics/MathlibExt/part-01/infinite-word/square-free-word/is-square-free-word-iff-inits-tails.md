@@ -7,18 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.isSquareFreeWord_iff_inits_tails
 ---
 
-# Is Square Free Word iff inits tails
+# Square-freeness via prefixes of suffixes
 
-A finite word is squarefree exactly when none of the prefixes of its suffixes
-is a nonempty square. This form is directly decidable when letter equality is decidable.
+**Square-freeness via prefixes of suffixes.** A finite word $w$ is square-free if and only if,
+for every prefix $s$ of a suffix of $w$ and every nonempty prefix $x$ of $s$, we have $s \ne xx$,
+where $xx$ denotes the concatenation of $x$ with itself.
+
+This form is directly decidable when letter equality is decidable.
 
 ## Depends on
 
-- [Is Square Free Word](is-square-free-word.md)
+- [Square-free finite word](is-square-free-word.md)
 
 ## Proof depends on
 
-- [Is Word Square](is-word-square.md)
+- [Square word](is-word-square.md)
 
 ## Sources
 

@@ -7,17 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.binDigitSum_two_mul
 ---
 
-# Bin Digit Sum two mul
+# Binary digit sum of an even number
 
-Doubling appends a binary digit `0`.
+**Binary digit sum of an even number.** For every natural number $k$, the binary digit sum of
+$2k$ equals the binary digit sum of $k$: doubling appends the binary digit $0$.
 
 ## Depends on
 
-- [Bin Digit Sum](bin-digit-sum.md)
+- [Binary digit sum](bin-digit-sum.md)
 
 ## Proof depends on
 
-- [Bin Digit Sum zero](bin-digit-sum-zero.md)
+- [Binary digit sum of zero](bin-digit-sum-zero.md)
 
 ## Sources
 

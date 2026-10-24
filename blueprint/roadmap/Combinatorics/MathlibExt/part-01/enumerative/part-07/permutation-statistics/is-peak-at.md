@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsPeakAt
 ---
 
-# Is Peak At
+# Peak of a permutation
 
-Position `i` is a peak of `σ`: `i + 2 < n` and `σ i < σ (i + 1) > σ (i + 2)`.
+**Peak of a permutation.** Let $\sigma$ be a permutation of $\{0, 1, \dots, n-1\}$.
+A position $i$ is a peak of $\sigma$ if $i + 2 < n$ and $\sigma(i) < \sigma(i+1) > \sigma(i+2)$.
+Thus the peak entry is $\sigma(i+1)$, and the position recorded is $i$, that of the first of
+the three entries.
 
 ## Depends on
 

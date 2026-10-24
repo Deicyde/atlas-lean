@@ -5,4 +5,4 @@ navigation: module
 # Dyck Peak Descents
 
 - [Dyck Peak Descents](dyck-peak-descents.md)
-- [Dyck Peak Descents sample](dyck-peak-descents-sample.md)
+- [Peak descents of a sample Dyck path](dyck-peak-descents-sample.md)

@@ -6,17 +6,19 @@ statement: formalized
 lean: MetaMathlibExt.isPolycubeCells
 ---
 
-# Is Polycube Cells
+# Polycube
 
-A polycube as a nonempty finite cell set connected through face adjacency.
+**Polycube.** A finite set $S$ of lattice cells in $\mathbb{Z}^d$ is a polycube when it is
+nonempty and any two cells $x, y \in S$ are joined by a finite sequence of cells of $S$, starting
+at $x$ and ending at $y$, in which consecutive cells are face adjacent.
 
 ## Depends on
 
-- [Lattice Cell](lattice-cell.md)
+- [Lattice cells](lattice-cell.md)
 
 ## Proof depends on
 
-- [Face Adjacent](face-adjacent.md)
+- [Face adjacency of lattice cells](face-adjacent.md)
 
 ## Sources
 

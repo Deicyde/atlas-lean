@@ -7,9 +7,10 @@ proof: formalized
 lean: Complex.integral_exp_neg_mul_pow_Ioi
 ---
 
-# Integral exp neg mul pow Ioi
+# The moments of $e^{-t}$ are factorials
 
-The `n`-th exponential moment on the positive real axis is `n!`.
+**The moments of $e^{-t}$ are factorials.** For every natural number $n$, the integral of
+$e^{-t} t^n$ over the open interval $(0, \infty)$ equals $n!$.
 
 ## Depends on
 

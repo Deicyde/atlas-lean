@@ -6,18 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.mem_c4SqExceptionalSet_1625
 ---
 
-# Mem c4 Sq Exceptional Set 1625
+# The exceptional set $A$ contains $1625$
 
-`1625 = 5 · 5 · 5 · 13 ∈ A` (`k = l = m = 1`, `n = 2`).
+**The exceptional set $A$ contains $1625$.** Let $P$ be the set of positive primes
+$p \equiv -3 \pmod 8$ and $A$ the set of products $(8k-3)(8l-3)(8m-3)(8n-3)$ with
+$k, l, m, n \in \mathbb{Z}$, $8l-3, 8m-3, 8n-3 \in P$ and $k + l \not\equiv m + n \pmod 2$.
+Then $1625 \in A$: take $k = l = m = 1$ and $n = 2$, so that $1625 = 5 \cdot 5 \cdot 5 \cdot 13$.
 
 ## Depends on
 
-- [C4 Sq Exceptional Set](c4-sq-exceptional-set.md)
+- [The exceptional set $A$ for $C_4^2$](c4-sq-exceptional-set.md)
 
 ## Proof depends on
 
-- [Five thirteen mem primes Five Mod Eight](five-thirteen-mem-primes-five-mod-eight.md)
-- [Primes Five Mod Eight](primes-five-mod-eight.md)
+- [$5$ and $13$ lie in $P$](five-thirteen-mem-primes-five-mod-eight.md)
+- [Primes congruent to $-3$ modulo $8$](primes-five-mod-eight.md)
 
 ## Sources
 

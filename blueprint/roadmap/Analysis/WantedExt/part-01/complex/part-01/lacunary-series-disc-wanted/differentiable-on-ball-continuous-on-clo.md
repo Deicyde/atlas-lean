@@ -5,18 +5,16 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.LacunarySeriesDiscWanted.differentiableOn_ball_continuousOn_closedBall_lacunary
 ---
 
-# Differentiable On ball continuous On closed Ball lacunary
+# Regularity of a lacunary series on the unit disc
 
-Prove that the function
-
-\[
-f(z)=\sum_{j=0}^{\infty} 2^{-j} z^{(2^j)}
-\]
-is holomorphic on $D(0,1)$ and continuous on $\overline{D}(0,1)$.
+**Regularity of a lacunary series on the unit disc.** Let $f$ be the lacunary series
+$f(z) = \sum_{j=0}^{\infty} 2^{-j} z^{2^j}$. Then $f$ is holomorphic on the open unit disc
+$\{z \in \mathbb{C} : |z| < 1\}$ and continuous on its closure, the closed unit disc
+$\{z \in \mathbb{C} : |z| \le 1\}$.
 
 ## Depends on
 
-- [F](f.md)
+- [A lacunary power series](f.md)
 
 ## Sources
 

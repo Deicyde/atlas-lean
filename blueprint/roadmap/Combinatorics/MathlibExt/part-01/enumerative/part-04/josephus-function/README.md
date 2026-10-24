@@ -5,7 +5,7 @@ navigation: module
 
 # Josephus Function
 
-- [Josephus](josephus.md)
-- [Josephus one](josephus-one.md)
-- [Josephus succ](josephus-succ.md)
-- [Josephus range](josephus-range.md)
+- [Josephus survivor function](josephus.md)
+- [The Josephus function at one](josephus-one.md)
+- [Euler recurrence for the Josephus function](josephus-succ.md)
+- [Range of the Josephus function](josephus-range.md)

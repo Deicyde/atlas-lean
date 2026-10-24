@@ -6,10 +6,13 @@ statement: formalized
 lean: MathlibExt.Analysis.BeurlingAhlfors.beurlingAhlforsConstant
 ---
 
-# Beurling Ahlfors Constant
+# Beurling–Ahlfors constant
 
-The Beurling--Ahlfors constant `C₅₄ = sup_{1<p<∞} ‖B‖ₚ / (p* - 1)`,
-totalized by real `sSup`.
+**Beurling–Ahlfors constant.** The Beurling–Ahlfors constant is the supremum, over real
+numbers $p > 1$, of $\|B\|_p / (p^* - 1)$, where $B$ is the Beurling–Ahlfors transform,
+$\|B\|_p$ is the infimum of the real numbers $C \ge 0$ that are admissible $L^p$ bound
+constants for $B$ (and $0$ if there is no such $C$), and $p^* = \max(p, p/(p-1))$. The
+supremum is taken in $\mathbb{R}$, so it is $0$ when these ratios are not bounded above.
 
 ## Depends on
 
@@ -17,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Beurling Norm](beurling-norm.md)
-- [Pstar](pstar.md)
+- [Norm of the Beurling–Ahlfors transform](beurling-norm.md)
+- [Larger of an exponent and its conjugate](pstar.md)
 
 ## Sources
 

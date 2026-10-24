@@ -7,12 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.centralTrinomialCoeff_three_term_recurrence
 ---
 
-# Central Trinomial Recurrence
+# Three-term recurrence for central trinomial coefficients
 
-The central trinomial coefficients satisfy a three-term recurrence.
+**Three-term recurrence for central trinomial coefficients.** For a natural number $m$, let
+$T_m$ be the central trinomial coefficient, the coefficient of $x^m$ in $(1 + x + x^2)^m$.
+For every natural number $n$ the following holds, where for $n = 0$ the index $n - 1$ is read
+as $0$ (the last term then vanishes, since $3n = 0$):
 
-The central coefficient in row `m` is the canonical
-`MetaMathlibExt.trinomialCoefficient m m`.
+$$(n + 1)\,T_{n+1} = (2n + 1)\,T_n + 3n\,T_{n-1}.$$
 
 ## Depends on
 

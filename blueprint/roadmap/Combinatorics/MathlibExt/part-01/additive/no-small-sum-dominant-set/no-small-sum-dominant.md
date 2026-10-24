@@ -7,13 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.no_small_sum_dominant
 ---
 
-# No small sum dominant
+# Chu's theorem: sets with fewer than six elements are not sum-dominant
 
-A set `A` with `|A| < 6` is not sum-dominant.
+**Chu's theorem: sets with fewer than six elements are not sum-dominant.** Let $A$ be a finite
+set of nonnegative integers with $|A| < 6$. Then $|A + A| \le |A - A|$, where
+$A + A = \{a + b : a, b \in A\}$ is the sumset and $A - A = \{a - b : a, b \in A\}$ is the
+difference set of $A$; that is, $A$ is not sum-dominant.
 
-The source works with sets of nonnegative integers; the hypothesis
-`h_nonneg` records the source's normalization and is not needed
-(see `card_add_le_card_sub_of_card_lt_six`).
+The nonnegativity assumption follows the source's normalization and is not needed: the same
+bound holds for every finite set of integers with fewer than six elements.
 
 ## Depends on
 
@@ -21,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Card add le card sub of card lt six](card-add-le-card-sub-of-card-lt-six.md)
+- [Chu's theorem for arbitrary finite sets of integers](card-add-le-card-sub-of-card-lt-six.md)
 
 ## Sources
 

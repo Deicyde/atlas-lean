@@ -15,7 +15,7 @@ functions with exactly `k` lucky cars,
 
 - [Lucky Count](lucky-count.md)
 - [Lucky Gen Poly](lucky-gen-poly.md)
-- [Is Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
+- [Parking function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
 
 ## Sources
 

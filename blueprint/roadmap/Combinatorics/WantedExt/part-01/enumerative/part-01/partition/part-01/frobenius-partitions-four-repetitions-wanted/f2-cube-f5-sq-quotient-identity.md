@@ -13,7 +13,7 @@ sides multiplied by `f₁⁵ f₂² f₁₀²`). The lemma's other identity (16)
 
 ## Depends on
 
-- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

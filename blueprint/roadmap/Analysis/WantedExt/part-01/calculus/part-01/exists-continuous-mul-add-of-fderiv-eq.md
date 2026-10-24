@@ -5,12 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.EqualPartialsFactorSumWanted.exists_continuous_mul_add_of_fderiv_eq
 ---
 
-# Equal Partials Factor Sum Wanted
+# Equal partial derivatives give a factor $x+y$
 
-The function $f\in C^{1}(\mathbb{R}^{2},\mathbb{R})$ satisfies $\partial_{1}f=\partial_{2}f$ and
-$f(0,0)=0$. Show that there is a
-
-$g\in C(\mathbb{R}^{2},\mathbb{R})$ such that $f(x,y)=g(x,y)(x+y)$ for $(x,y)\in\mathbb{R}^{2}$.
+**Equal partial derivatives give a factor $x+y$.** Let $f : \mathbb{R}^2 \to \mathbb{R}$ be
+continuously differentiable with $\partial_1 f = \partial_2 f$ on $\mathbb{R}^2$ and $f(0,0)=0$.
+Then there is a continuous $g : \mathbb{R}^2 \to \mathbb{R}$ with $f(x,y)=g(x,y)\,(x+y)$ for all
+$(x,y)\in\mathbb{R}^2$.
 
 ## Depends on
 

@@ -4,5 +4,5 @@ navigation: module
 
 # Wiener Atom
 
-- [Fourier Coeff Measure](fourier-coeff-measure.md)
-- [Wiener atom detection](wiener-atom-detection.md)
+- [Fourier coefficients of a measure on the circle](fourier-coeff-measure.md)
+- [Wiener's atom-detection formula](wiener-atom-detection.md)

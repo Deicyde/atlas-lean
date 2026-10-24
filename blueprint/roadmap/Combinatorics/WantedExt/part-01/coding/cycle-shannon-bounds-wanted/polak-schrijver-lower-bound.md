@@ -11,7 +11,7 @@ Source: Polak--Schrijver, arXiv:1808.07438, the fifth-power 367-word constructio
 
 ## Depends on
 
-- [Is Cycle Code](../../../../MathlibExt/part-01/coding/cycle-code/is-cycle-code.md)
+- [Independent codes for the modular cycle](../../../../MathlibExt/part-01/coding/cycle-code/is-cycle-code.md)
 
 ## Sources
 

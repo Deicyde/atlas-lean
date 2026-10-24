@@ -5,11 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_sin_pi_mul_div_of_even_of_even
 ---
 
-# Sum sin pi mul div of even of even
+# Half-step sine sum for even modulus and even multiplier
 
-Lemma 7: for `N` positive and even and `q` even,
-`∑_{ℓ=1}^{N/2} sin(q ℓ π / N)` is `0` for `q ≡ 0 (mod 4)` and `cot(q π / (2N))`
-for `q ≡ 2 (mod 4)`. The paper's positivity of `q` is dropped.
+**Half-step sine sum for even modulus and even multiplier.** Let $N$ be a positive even
+natural number and $q$ an even natural number. Then $\sum_{\ell=1}^{N/2} \sin(q \ell \pi / N)$
+equals $0$ if $q \equiv 0 \pmod 4$ and $\cot(q\pi / (2N))$ if $q \equiv 2 \pmod 4$.
+
+The paper also assumes $q > 0$; that hypothesis is dropped here.
 
 ## Depends on
 

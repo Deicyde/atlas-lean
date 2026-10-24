@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.SupNormSqLeHalfH1NormWanted.sSup_norm_sq_le_half_integral_sq_add_deriv_sq
 ---
 
-# Sup Norm Sq Le Half H1 Norm Wanted
+# Sup-norm bound by the $H^1$ energy for functions vanishing at both ends
 
-Suppose $f\in C^{1}(I,\mathbb{R})$ has $f(\alpha)=f(\beta)=0$. Show that
+**Sup-norm bound by the $H^1$ energy for functions vanishing at both ends.** Let
+$\alpha \le \beta$ be real numbers and let $f : \mathbb{R} \to \mathbb{R}$ be continuously
+differentiable on $[\alpha, \beta]$ with $f(\alpha) = f(\beta) = 0$. Then
 
-\[
-\|f\|_{\infty}^{2}\le \frac{1}{2}\int_{\alpha}^{\beta}\bigl(f^{2}+(f')^{2}\bigr)\,dx.
-\]
+$$\Bigl(\sup_{x \in [\alpha, \beta]} |f(x)|\Bigr)^2 \le
+\frac{1}{2} \int_\alpha^\beta \bigl(f(x)^2 + f'(x)^2\bigr)\,dx.$$
 
 ## Depends on
 

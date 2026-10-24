@@ -19,8 +19,8 @@ the factor of the index `(2n-1) 2^j` in the summand `n`, which becomes `2^{μ j}
 
 ## Depends on
 
-- [Lambert FMu](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-series/lambert-fmu.md)
-- [Lambert GMu](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-series/lambert-gmu.md)
+- [The power-weighted Lambert series $f_\mu$](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-series/lambert-fmu.md)
+- [The power-weighted Lambert series $g_\mu$](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-series/lambert-gmu.md)
 
 ## Sources
 

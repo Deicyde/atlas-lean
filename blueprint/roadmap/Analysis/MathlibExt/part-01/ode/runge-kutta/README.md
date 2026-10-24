@@ -4,41 +4,41 @@ navigation: module
 
 # Runge Kutta
 
-- [Explicit RK](explicit-rk.md)
-- [C](c.md)
-- [Stage Row](stage-row.md)
-- [Stage](stage.md)
-- [Stage Row eq of lt](stage-row-eq-of-lt.md)
+- [Explicit Runge–Kutta method](explicit-rk.md)
+- [Nodes of a Runge–Kutta method](c.md)
+- [Stages computed row by row](stage-row.md)
+- [Runge–Kutta stages](stage.md)
+- [Partial stage rows agree with the stages](stage-row-eq-of-lt.md)
 - [The defining equation of the stages](stage-eq.md)
-- [Rk Step](rk-step.md)
+- [One Runge–Kutta step](rk-step.md)
 
 ## Order conditions
 
-- [Order One](order-one.md)
-- [Order Two](order-two.md)
-- [Order Three](order-three.md)
-- [Order Four](order-four.md)
+- [Order-one condition for Runge–Kutta methods](order-one.md)
+- [Order-two conditions for Runge–Kutta methods](order-two.md)
+- [Order-three conditions for Runge–Kutta methods](order-three.md)
+- [Order-four conditions](order-four.md)
 
 ## Classical tableaux
 
-- [Euler RK](euler-rk.md)
-- [Midpoint RK](midpoint-rk.md)
-- [Heun RK](heun-rk.md)
-- [Rk4](rk4.md)
-- [Euler RK order One](euler-rk-order-one.md)
-- [Midpoint RK order Two](midpoint-rk-order-two.md)
-- [Heun RK order Two](heun-rk-order-two.md)
+- [Euler tableau](euler-rk.md)
+- [Midpoint tableau](midpoint-rk.md)
+- [Heun's tableau](heun-rk.md)
+- [The classical RK4 tableau](rk4.md)
+- [The Euler tableau satisfies the order-one condition](euler-rk-order-one.md)
+- [The midpoint tableau satisfies the order-two conditions](midpoint-rk-order-two.md)
+- [Heun's tableau satisfies the order-two conditions](heun-rk-order-two.md)
 - [The classical RK4 tableau satisfies all eight order-four conditions](rk4-order-four.md)
 
 ## Euler as a Runge–Kutta method
 
-- [Euler step](euler-step.md)
+- [The Euler tableau gives the explicit Euler step](euler-step.md)
 
 ## Consistency
 
-- [Stage tendsto](stage-tendsto.md)
-- [Consistency](rk-step-sub-inv-smul-tendsto.md)
+- [Runge–Kutta stages tend to the vector field as the step shrinks](stage-tendsto.md)
+- [Consistency of explicit Runge–Kutta methods](rk-step-sub-inv-smul-tendsto.md)
 
 ## Linear stability of RK4
 
-- [Rk4 stability](rk4-stability.md)
+- [Stability function of the classical RK4 method](rk4-stability.md)

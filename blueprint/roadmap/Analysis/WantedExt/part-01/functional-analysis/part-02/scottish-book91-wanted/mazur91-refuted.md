@@ -5,13 +5,16 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.ScottishBook91Wanted.mazur91_refuted
 ---
 
-# Mazur91 refuted
+# Mazur's Problem 91 has a negative answer
 
-Problem 91 is false in general: the claim fails already in even dimension.
+**Mazur's Problem 91 has a negative answer.** There is a finite-dimensional real normed
+space $E$ that is linearly isometric to its dual space $E^*$ (the continuous linear
+functionals on $E$ with the operator norm) but whose norm is not induced by any inner
+product on $E$. Thus the Banach-space form of Mazur's Problem 91 is false.
 
 ## Depends on
 
-- [Scottish Book Problem91 Claim](scottish-book-problem91-claim.md)
+- [Mazur's Problem 91 (Scottish Book), Banach-space form](scottish-book-problem91-claim.md)
 
 ## Sources
 

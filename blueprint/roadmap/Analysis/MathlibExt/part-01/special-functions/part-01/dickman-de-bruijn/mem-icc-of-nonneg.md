@@ -7,17 +7,19 @@ proof: formalized
 lean: Real.IsDickmanDeBruijn.mem_Icc_of_nonneg
 ---
 
-# Mem Icc of nonneg
+# Pointwise range bound for the Dickman–de Bruijn function
 
-The range bound for a Dickman–de Bruijn function at a nonnegative argument.
+**Pointwise range bound for the Dickman–de Bruijn function.** If
+$\rho : \mathbb{R} \to \mathbb{R}$ is a Dickman–de Bruijn function and $u \ge 0$ is real, then
+$\rho(u) \in [0, 1]$.
 
 ## Depends on
 
-- [Is Dickman De Bruijn](is-dickman-de-bruijn.md)
+- [Dickman–de Bruijn functions](is-dickman-de-bruijn.md)
 
 ## Proof depends on
 
-- [Maps To Ici Icc](maps-to-ici-icc.md)
+- [Range of the Dickman–de Bruijn function on the nonnegative reals](maps-to-ici-icc.md)
 
 ## Sources
 

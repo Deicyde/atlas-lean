@@ -5,6 +5,6 @@ navigation: module
 
 # Basic Hypergeometric
 
-- [Basic Hypergeometric Coefficient](basic-hypergeometric-coefficient.md)
-- [Basic Hypergeometric Series](basic-hypergeometric-series.md)
-- [Basic Hypergeometric Coefficient phi succ](basic-hypergeometric-coefficient-phi-suc.md)
+- [Coefficients of the basic hypergeometric series](basic-hypergeometric-coefficient.md)
+- [Basic hypergeometric series](basic-hypergeometric-series.md)
+- [Coefficients of the series ${}_{s+1}\phi_s$](basic-hypergeometric-coefficient-phi-suc.md)

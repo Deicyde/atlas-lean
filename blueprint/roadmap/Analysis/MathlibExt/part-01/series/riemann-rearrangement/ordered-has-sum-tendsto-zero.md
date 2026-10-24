@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.Analysis.Series.RiemannRearrangementWanted.orderedHasSum_tendsto_zero
 ---
 
-# Ordered Has Sum tendsto zero
+# Terms of a convergent series tend to zero
 
-Convergent ordered series have vanishing terms.
+**Terms of a convergent series tend to zero.** If $f : \mathbb{N} \to \mathbb{R}$ and the
+series $\sum_n f(n)$ converges in order to some $s \in \mathbb{R}$, then $f(n) \to 0$ as
+$n \to \infty$.
 
 ## Depends on
 
-- [Ordered Has Sum](ordered-has-sum.md)
+- [Convergence of a series in order](ordered-has-sum.md)
 
 ## Sources
 

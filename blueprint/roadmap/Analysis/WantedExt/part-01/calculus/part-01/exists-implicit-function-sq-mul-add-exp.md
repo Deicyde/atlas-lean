@@ -5,18 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.ImplicitFunctionExpExampleWanted.exists_implicit_function_sq_mul_add_exp_add
 ---
 
-# Implicit Function Exp Example Wanted
+# An implicit function for $x^2y_1+e^x+y_2=0$ near $(1,-1)$
 
-Define $f$ in $R^3$ by
-
-\[
-f(x,y_1,y_2)=x^2y_1+e^x+y_2.
-\]
-Show that there exists a differentiable function $g$ in some neighborhood of $(1,-1)$ in $R^2$, such
-that $g(1,-1)=0$ and
-\[
-f(g(y_1,y_2),y_1,y_2)=0.
-\]
+**An implicit function for $x^2y_1+e^x+y_2=0$ near $(1,-1)$.** Let
+$f(x,y_1,y_2)=x^2y_1+e^x+y_2$ on $\mathbb{R}^3$. Then there are an open set
+$U\subseteq\mathbb{R}^2$ containing $(1,-1)$ and a function $g : \mathbb{R}^2 \to \mathbb{R}$,
+differentiable on $U$, with $g(1,-1)=0$ and $f(g(y_1,y_2),y_1,y_2)=0$ for all $(y_1,y_2)\in U$.
 
 ## Depends on
 

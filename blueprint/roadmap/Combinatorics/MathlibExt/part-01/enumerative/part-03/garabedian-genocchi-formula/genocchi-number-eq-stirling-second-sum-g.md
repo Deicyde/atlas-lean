@@ -7,11 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.genocchiNumber_eq_stirlingSecond_sum_general
 ---
 
-# Genocchi Number eq stirling Second sum general
+# Garabedian's formula for the Genocchi numbers, including $n = 0$
 
-Garabedian's explicit formula for the Genocchi numbers, for every `n : ℕ`:
-`G n = n * ∑ k = 1..n, (-1)^(n-k) * (k-1)! * S(n, k) / 2^(k-1)`. At `n = 0` both sides are `0`.
-`genocchiNumber_eq_stirlingSecond_sum` is the source-shaped form.
+**Garabedian's formula for the Genocchi numbers, including $n = 0$.** For every natural
+number $n$, the Genocchi number $G_n$, defined by $\sum_{m \ge 0} G_m x^m / m! = 2x/(e^x + 1)$,
+satisfies
+
+$$G_n = n \sum_{k=1}^{n} \frac{(-1)^{n-k} (k-1)!\, S(n, k)}{2^{k-1}},$$
+
+where $S(n, k)$ is the Stirling number of the second kind. At $n = 0$ both sides are $0$.
 
 ## Depends on
 
@@ -19,7 +23,7 @@ Garabedian's explicit formula for the Genocchi numbers, for every `n : ℕ`:
 
 ## Proof depends on
 
-- [Garabedian genocchi formula general](../garabedian-bernoulli-stirling/garabedian-genocchi-formula-general.md)
+- [Garabedian's formula for the Bernoulli numbers, including $n = 0$](../garabedian-bernoulli-stirling/garabedian-genocchi-formula-general.md)
 - [Genocchi Number eq bernoulli](../../../../../../NumberTheory/MathlibExt/part-06/genocchi-bernoulli/genocchi-number-eq-bernoulli.md)
 
 ## Sources

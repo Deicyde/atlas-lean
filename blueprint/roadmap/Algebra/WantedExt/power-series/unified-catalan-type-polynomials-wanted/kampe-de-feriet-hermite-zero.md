@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.kampeDeFerietHermite_zero
 ---
 
-# Kampe De Feriet Hermite zero
+# The zeroth Kampé de Fériet polynomial
 
-`H^m_0(x, y) = 1`.
+**The zeroth Kampé de Fériet polynomial.** For every natural number $m$ and all elements
+$x, y$ of a commutative $\mathbb{R}$-algebra, $H^m_0(x, y) = 1$.
 
 ## Depends on
 
-- [Kampe De Feriet Hermite](kampe-de-feriet-hermite.md)
+- [Kampé de Fériet polynomials](kampe-de-feriet-hermite.md)
 
 ## Sources
 

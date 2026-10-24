@@ -6,10 +6,12 @@ statement: formalized
 lean: MathlibExt.Analysis.NyquistShannonWanted.Analysis.NyquistShannon.FourierSupportedInNyquist
 ---
 
-# Fourier Supported In Nyquist
+# Fourier support in the Nyquist band
 
-The Fourier transform of `f` is supported in the Nyquist band for
-mathlib's `e^{-2π i x ξ}` Fourier convention, namely `[-1/2, 1/2]`.
+**Fourier support in the Nyquist band.** A Schwartz function
+$f \colon \mathbb{R} \to \mathbb{C}$ has Fourier support in the Nyquist band when its Fourier
+transform $\hat f(\xi) = \int_{\mathbb{R}} f(x)\, e^{-2\pi i x \xi}\, dx$ vanishes at every real
+$\xi$ outside the closed interval $[-\frac12, \frac12]$.
 
 ## Depends on
 

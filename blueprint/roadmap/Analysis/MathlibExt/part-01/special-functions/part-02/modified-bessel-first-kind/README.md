@@ -5,7 +5,7 @@ navigation: module
 
 # Modified Bessel First Kind
 
-- [Modified Bessel I term](modified-bessel-i-term.md)
-- [Modified Bessel I](modified-bessel-i.md)
-- [Modified Bessel I zero](modified-bessel-i-zero.md)
-- [Modified Bessel I one](modified-bessel-i-one.md)
+- [Terms of the modified Bessel series](modified-bessel-i-term.md)
+- [Modified Bessel function of the first kind](modified-bessel-i.md)
+- [Modified Bessel function of the first kind of order zero](modified-bessel-i-zero.md)
+- [Modified Bessel function of the first kind of order one](modified-bessel-i-one.md)

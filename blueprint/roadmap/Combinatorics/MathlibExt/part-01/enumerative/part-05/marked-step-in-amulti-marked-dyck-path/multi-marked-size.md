@@ -6,21 +6,22 @@ statement: formalized
 lean: MetaMathlibExt.multiMarkedSize
 ---
 
-# Multi Marked Size
+# Size of a multi-marked step sequence
 
-Size of a step sequence: `E(P)` plus the occurrence sum of `t - 1` over
-marked steps. Concept `jis_sem_ee7327c841ed4326952fd4fb`;
-source statement `jis_54a13fcd4eb84116f24d6935`.
+**Size of a multi-marked step sequence.** The size of a finite sequence $s$ of steps of a
+multi-marked Dyck path is $E(s) + \sum (t - 1)$, where $E(s)$ is the number of horizontal steps
+$E$ in $s$ and the sum runs over all occurrences of marked steps $N^*_t$ in $s$.
 
 ## Depends on
 
-- [Multi Marked Step](multi-marked-step.md)
+- [Steps of a multi-marked Dyck path](multi-marked-step.md)
 
 ## Proof depends on
 
-- [Multi Marked Count E](multi-marked-count-e.md)
-- [Multi Marked Shifted Index Sum](multi-marked-shifted-index-sum.md)
+- [Number of horizontal steps](multi-marked-count-e.md)
+- [Shifted index sum of a multi-marked step sequence](multi-marked-shifted-index-sum.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MarkedStepInAMultiMarkedDyckPath](../../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_ee7327c841ed4326952fd4fb`, source statement `jis_54a13fcd4eb84116f24d6935`.

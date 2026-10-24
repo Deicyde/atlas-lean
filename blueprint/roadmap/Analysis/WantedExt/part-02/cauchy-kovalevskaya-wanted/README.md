@@ -4,5 +4,5 @@ navigation: module
 
 # Cauchy Kovalevskaya
 
-- [E](e.md)
-- [Cauchy kovalevskaya](cauchy-kovalevskaya.md)
+- [Model space $\mathbb{R}^d$ of the Cauchy–Kovalevskaya problem](e.md)
+- [Cauchy–Kovalevskaya theorem](cauchy-kovalevskaya.md)

@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.NonnegHarmonicUpperHalfPlaneAxisIntegrableWanted.eq_zero_of_harmonicOnNhd_upperHalfPlane_of_nonneg_of_integrableOn_imagAxis
 ---
 
-# Nonneg Harmonic Upper Half Plane Axis Integrable Wanted
+# Nonnegative harmonic functions on the upper half-plane integrable along the imaginary axis vanish
 
-Let $\mathbb{C}_{+}=\{z:\Im z>0\}$. Suppose $f:\mathbb{C}_{+}\to\mathbb{R}$ is harmonic,
-non-negative, and satisfies
+**Nonnegative harmonic functions on the upper half-plane integrable along the imaginary axis
+vanish.** Let $\mathbb{C}_{+}=\{z\in\mathbb{C}:\Im z>0\}$ be the upper half-plane. Suppose
+$f:\mathbb{C}_{+}\to\mathbb{R}$ is harmonic and non-negative, and satisfies
 \[
 \int_{0}^{\infty}\lvert f(iy)\rvert\,dy\lt \infty.
 \]
-Show that $f$ is identically zero.
+Then $f(z)=0$ for every $z\in\mathbb{C}_{+}$.
 
 ## Depends on
 

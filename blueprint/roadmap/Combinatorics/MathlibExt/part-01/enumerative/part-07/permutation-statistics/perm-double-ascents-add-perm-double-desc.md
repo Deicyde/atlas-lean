@@ -6,26 +6,30 @@ proof: formalized
 lean: MetaMathlibExt.permDoubleAscents_add_permDoubleDescents_add_permPeaks_add_permValleys
 ---
 
-# Perm Double Ascents add perm Double Descents add perm Peaks add perm Valleys
+# Sum of the four local statistics of a permutation
 
-The four local statistics partition the positions `i` with `i + 2 < n`:
-`dasc σ + ddes σ + pk σ + vl σ = n - 2`.
+**Sum of the four local statistics of a permutation.** Let $\sigma$ be a permutation of
+$\{0, 1, \dots, n-1\}$, and write $\mathrm{dasc}(\sigma)$, $\mathrm{ddes}(\sigma)$,
+$\mathrm{pk}(\sigma)$ and $\mathrm{vl}(\sigma)$ for its numbers of double ascents, double
+descents, peaks and valleys. Then
+$\mathrm{dasc}(\sigma) + \mathrm{ddes}(\sigma) + \mathrm{pk}(\sigma) + \mathrm{vl}(\sigma) = n - 2$,
+where $n - 2$ is truncated subtraction (it is $0$ when $n < 2$).
 
 ## Depends on
 
-- [Perm Double Ascents](perm-double-ascents.md)
-- [Perm Double Descents](perm-double-descents.md)
-- [Perm Peaks](perm-peaks.md)
-- [Perm Valleys](perm-valleys.md)
+- [Number of double ascents](perm-double-ascents.md)
+- [Number of double descents](perm-double-descents.md)
+- [Number of peaks of a permutation](perm-peaks.md)
+- [Number of valleys of a permutation](perm-valleys.md)
 
 ## Proof depends on
 
-- [Is Double Ascent At](is-double-ascent-at.md)
-- [Is Double Descent At](is-double-descent-at.md)
-- [Is Peak At](is-peak-at.md)
-- [Is Valley At](is-valley-at.md)
-- [Card filter add two lt](card-filter-add-two-lt.md)
-- [Ite is Double Ascent At add ite is Double Descent At add ite is Peak At add ite is Valley At](ite-is-double-ascent-at-add-ite-is-doubl.md)
+- [Double ascent of a permutation](is-double-ascent-at.md)
+- [Double descent of a permutation](is-double-descent-at.md)
+- [Peak of a permutation](is-peak-at.md)
+- [Valley of a permutation](is-valley-at.md)
+- [Number of positions with two successors](card-filter-add-two-lt.md)
+- [Local shape of a position in a permutation](ite-is-double-ascent-at-add-ite-is-doubl.md)
 
 ## Sources
 

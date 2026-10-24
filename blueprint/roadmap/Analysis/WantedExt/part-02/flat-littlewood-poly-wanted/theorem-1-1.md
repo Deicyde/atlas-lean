@@ -6,16 +6,16 @@ statement: formalized
 lean: MathlibExt.Analysis.FlatLittlewoodPolyWanted.FlatLittlewoodPoly.theorem_1_1
 ---
 
-# Theorem 1 1
+# Flat Littlewood polynomials exist
 
-Statement of Theorem 1.1:
-
-There exist constants `∆ > δ > 0` such that, for all `n ≥ 2`, there exists a Littlewood
-polynomial `P(z)` of degree `n` with `δ√n ≤ |P (z)| ≤ ∆√n` for all `z ∈ ℂ` with `|z| = 1`.
+**Flat Littlewood polynomials exist.** There exist real constants $\Delta > \delta > 0$ such
+that for every natural number $n \ge 2$ there is a Littlewood polynomial $P$ with complex
+coefficients and of degree $n$ such that $\delta \sqrt{n} \le |P(z)| \le \Delta \sqrt{n}$ for all
+$z \in \mathbb{C}$ with $|z| = 1$.
 
 ## Depends on
 
-- [Is Littlewood Polynomial](is-littlewood-polynomial.md)
+- [Littlewood polynomials](is-littlewood-polynomial.md)
 
 ## Sources
 

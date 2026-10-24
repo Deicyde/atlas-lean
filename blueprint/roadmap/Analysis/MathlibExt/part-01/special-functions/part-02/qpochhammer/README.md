@@ -5,9 +5,9 @@ navigation: module
 
 # QPochhammer
 
-- [Q Pochhammer Inf Raw](q-pochhammer-inf-raw.md)
-- [Q Pochhammer Inf](q-pochhammer-inf.md)
-- [Q Pochhammer Inf zero left](q-pochhammer-inf-zero-left.md)
-- [Has Prod q Pochhammer Inf](has-prod-q-pochhammer-inf.md)
-- [Q Pochhammer Inf one zero](q-pochhammer-inf-one-zero.md)
-- [Q Pochhammer Inf Raw two one](q-pochhammer-inf-raw-two-one.md)
+- [Raw infinite q-Pochhammer product](q-pochhammer-inf-raw.md)
+- [Infinite q-Pochhammer symbol](q-pochhammer-inf.md)
+- [The q-Pochhammer symbol with a = 0](q-pochhammer-inf-zero-left.md)
+- [Convergence of the infinite q-Pochhammer product](has-prod-q-pochhammer-inf.md)
+- [The q-Pochhammer symbol vanishes at a = 1 and q = 0](q-pochhammer-inf-one-zero.md)
+- [The raw q-Pochhammer product at a = 2 and q = 1 equals 1](q-pochhammer-inf-raw-two-one.md)

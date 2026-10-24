@@ -5,15 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.SpecialFunctions.IntegralInvAddMulCosWanted.integral_one_div_add_mul_cos_eq
 ---
 
-# Integral Inv Add Mul Cos Wanted
+# Integral of $1/(a + b\cos\theta)$ over a period
 
-Prove that
+**Integral of $1/(a + b\cos\theta)$ over a period.** Let $a$ and $b$ be real numbers with
+$a > |b|$. Then
 
-\[
-\int_0^{2\pi} \frac{d\theta}{a+b\cos\theta}
-= \frac{2\pi}{\sqrt{a^2-b^2}}
-\]
-if $a>|b|$ and $a,b\in\mathbb{R}$.
+$$\int_0^{2\pi} \frac{d\theta}{a + b\cos\theta} = \frac{2\pi}{\sqrt{a^2 - b^2}}.$$
 
 ## Depends on
 

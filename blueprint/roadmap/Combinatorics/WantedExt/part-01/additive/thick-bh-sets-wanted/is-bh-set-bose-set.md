@@ -13,7 +13,7 @@ lean: MetaMathlibExt.isBhSet_boseSet
 
 ## Depends on
 
-- [Is Bh Set](../../../../MathlibExt/part-01/additive/bh-set/is-bh-set.md)
+- [$B_h$-set](../../../../MathlibExt/part-01/additive/bh-set/is-bh-set.md)
 - [Bose Set](bose-set.md)
 
 ## Sources

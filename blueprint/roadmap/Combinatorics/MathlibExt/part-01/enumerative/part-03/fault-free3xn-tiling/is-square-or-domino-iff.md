@@ -7,15 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.isSquareOrDomino_iff
 ---
 
-# Is Square Or Domino iff
+# Characterization of square and domino tiles
 
-A valid square-or-domino tile is exactly a singleton or an adjacent pair.
+**Characterization of square and domino tiles.** A set $d$ of cells of the $3 \times n$
+rectangle is a square-or-domino tile if and only if either $d = \{x\}$ for some cell $x$, or
+$d = \{x, y\}$ for some distinct adjacent cells $x$ and $y$.
 
 ## Depends on
 
-- [Is Square Or Domino](is-square-or-domino.md)
-- [Tiling Cell](tiling-cell.md)
-- [Adjacent](adjacent.md)
+- [Square and domino tiles](is-square-or-domino.md)
+- [Cells of the $3 \times n$ rectangle](tiling-cell.md)
+- [Adjacent cells](adjacent.md)
 
 ## Sources
 

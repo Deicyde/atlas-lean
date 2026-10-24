@@ -7,20 +7,25 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.MengerVertexWanted.menger_vertex_max_min
 ---
 
-# Menger vertex max min
+# Menger's theorem for vertex cuts and internally disjoint paths
 
-Finite vertex Menger max-min: for distinct nonadjacent `s,t`, max number of internally
-vertex-disjoint `s-t` paths equals min size of `s-t` vertex cut.
+**Menger's theorem for vertex cuts and internally disjoint paths.** Let $G$ be a simple graph on a
+finite vertex set and let $s$ and $t$ be distinct, nonadjacent vertices of $G$. Then there is a
+natural number $k$ such that there exist $k$ internally vertex-disjoint paths from $s$ to $t$ and
+an $s$-$t$ vertex cut with exactly $k$ vertices, every family of internally vertex-disjoint
+paths from $s$ to $t$ has at most $k$ members, and every $s$-$t$ vertex cut has at least $k$
+vertices. In words, the maximum number of internally vertex-disjoint paths from $s$ to $t$
+equals the minimum size of an $s$-$t$ vertex cut.
 
 ## Depends on
 
-- [Is Internally Vertex Disjoint STPaths](is-internally-vertex-disjoint-stpaths.md)
-- [Is STVertex Cut](is-stvertex-cut.md)
+- [Internally vertex-disjoint paths](is-internally-vertex-disjoint-stpaths.md)
+- [Vertex cuts separating two vertices](is-stvertex-cut.md)
 
 ## Proof depends on
 
-- [Is STVertex Cut iff walk Separator](is-stvertex-cut-iff-walk-separator.md)
-- [Menger vertex](menger-vertex.md)
+- [Vertex cuts are walk separators](is-stvertex-cut-iff-walk-separator.md)
+- [Menger's theorem, vertex form](menger-vertex.md)
 
 ## Sources
 

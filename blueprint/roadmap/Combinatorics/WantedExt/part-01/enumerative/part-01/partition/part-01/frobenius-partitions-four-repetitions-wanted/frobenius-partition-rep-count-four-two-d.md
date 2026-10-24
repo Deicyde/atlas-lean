@@ -16,7 +16,7 @@ lean: MetaMathlibExt.frobeniusPartitionRepCount_four_two_dissection
 ## Depends on
 
 - [Frobenius Partition Rep Count](frobenius-partition-rep-count.md)
-- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

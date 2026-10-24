@@ -5,12 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_cot_div_pred_add_cot_div_succ
 ---
 
-# Tendsto cot div pred add cot div succ
+# The cotangent limit $4/x$
 
-Lemma 8: for every real `x ≠ 0`,
-`(1/k - 1) cot(x/(k-1)) + (1/k + 1) cot(x/(k+1)) → 4/x` as `k → ∞`. The
-hypothesis `x ≠ 0` is added: the paper says "any real number", but at `x = 0`
-the cotangents and `4/x` are undefined.
+**The cotangent limit $4/x$.** For every nonzero real number $x$, as $k \to \infty$ through the
+natural numbers,
+
+$$\left(\frac{1}{k} - 1\right)\cot\frac{x}{k-1} + \left(\frac{1}{k} + 1\right)\cot\frac{x}{k+1}
+\to \frac{4}{x}.$$
+
+The paper states this for every real number $x$; the hypothesis $x \neq 0$ is added because at
+$x = 0$ the cotangents and $4/x$ are undefined.
 
 ## Depends on
 

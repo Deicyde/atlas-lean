@@ -6,17 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.polyContFract_dens_one
 ---
 
-# Poly Cont Fract dens one
+# The partial denominator B₁ of a polynomial continued fraction
 
-`B₁ = a₁` when `n ≥ 1`.
+**The partial denominator B₁ of a polynomial continued fraction.** Let $F$ be a field, let
+$n \ge 1$, and let $a_0, a_1, \dots, a_n \in F[X]$. The partial denominator $B_1$ of the continued
+fraction $[a_0, a_1, \dots, a_n]$ over $F(X)$ equals $a_1$.
 
 ## Depends on
 
-- [Poly Cont Fract](poly-cont-fract.md)
+- [Finite continued fraction with polynomial partial quotients](poly-cont-fract.md)
 
 ## Proof depends on
 
-- [Poly Cont Fract s get?](poly-cont-fract-s-get.md)
+- [Terms of a polynomial continued fraction](poly-cont-fract-s-get.md)
 
 ## Sources
 

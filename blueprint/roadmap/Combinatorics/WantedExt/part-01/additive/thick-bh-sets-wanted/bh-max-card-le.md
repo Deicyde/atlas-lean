@@ -16,7 +16,7 @@ lean: MetaMathlibExt.bhMaxCard_le
 
 ## Proof depends on
 
-- [Is Bh Set](../../../../MathlibExt/part-01/additive/bh-set/is-bh-set.md)
+- [$B_h$-set](../../../../MathlibExt/part-01/additive/bh-set/is-bh-set.md)
 
 ## Sources
 

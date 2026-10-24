@@ -6,14 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.morphIterate
 ---
 
-# Morph Iterate
+# Iterates of a letter map
 
-Finite iterates of the extended letter map applied to a finite word, with
-the zeroth iterate the identity (concept `jis_sem_817d955b6393d48d72476d2d`,
-clause `word_morphism`; statements `jis_59581da9ed7395999b79fb6c`,
-`jis_686fde4820b8be0b1543930a`, `jis_83acfc0f995c923dbbbed9e5`,
-`jis_95467c21193bf40b4aae1281`, `jis_e5dacb15b7f36a3e2d33683c`,
-`jis_f0ae0eecd29e48e7e5a45717`).
+**Iterates of a letter map.** Let $f$ send each letter of an alphabet $A$ to a finite word
+over $A$, extended to finite words by concatenation. The iterates of $f$ on finite words over
+$A$ are defined by $f^0(w) = w$ and $f^{n+1}(w) = f(f^n(w))$ for every finite word $w$ over $A$
+and every natural number $n$.
 
 ## Depends on
 
@@ -21,8 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Morph Extend](morph-extend.md)
+- [Extension of a letter map to finite words](morph-extend.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.PureMorphicWord](../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_817d955b6393d48d72476d2d`, clause `word_morphism`; statements `jis_59581da9ed7395999b79fb6c`, `jis_686fde4820b8be0b1543930a`, `jis_83acfc0f995c923dbbbed9e5`, `jis_95467c21193bf40b4aae1281`, `jis_e5dacb15b7f36a3e2d33683c`, `jis_f0ae0eecd29e48e7e5a45717`.

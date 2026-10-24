@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.dihedralAffinePerm_mem_rackAut
 ---
 
-# Dihedral Affine Perm mem rack Aut
+# Affine maps are automorphisms of the dihedral quandle
 
-`T_{a,u}` is a rack automorphism of the dihedral quandle `R_n`, i.e. a virtual structure.
+**Affine maps are automorphisms of the dihedral quandle.** For every natural number $n$,
+every $a \in \mathbb{Z}/n\mathbb{Z}$ and every unit $u \in (\mathbb{Z}/n\mathbb{Z})^\times$, the
+affine map $T_{a,u} \colon x \mapsto a + u x$ is a rack automorphism of the dihedral quandle
+$R_n$, the set $\mathbb{Z}/n\mathbb{Z}$ with $x \triangleleft y = 2x - y$.
 
 ## Depends on
 
-- [Dihedral Affine Perm](dihedral-affine-perm.md)
-- [Rack Aut](rack-aut.md)
+- [Affine permutations of the dihedral quandle](dihedral-affine-perm.md)
+- [Automorphism group of a rack](rack-aut.md)
 
 ## Sources
 

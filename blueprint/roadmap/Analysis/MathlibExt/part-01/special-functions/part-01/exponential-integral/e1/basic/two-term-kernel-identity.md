@@ -7,10 +7,11 @@ proof: formalized
 lean: Complex.two_term_kernel_identity
 ---
 
-# Two term kernel identity
+# Two-term expansion of $1/(t + z)$
 
-The finite geometric expansion of the kernel in the DLMF integral
-representation, specialized through the quadratic remainder.
+**Two-term expansion of $1/(t + z)$.** Let $z \ne 0$ be a complex number and $t$ a real
+number with $t + z \ne 0$. Then
+$\frac{1}{t + z} = \frac{1}{z} - \frac{t}{z^2} + \frac{t^2}{z^2 (t + z)}$.
 
 ## Depends on
 

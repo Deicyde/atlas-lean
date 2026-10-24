@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.arithProgPoly_four_not_mul_quadratics
 ---
 
-# Arith Prog Poly four not mul quadratics
+# The arithmetic-progression quartic is not a product of two quadratics
 
-For coprime positive integers `a ≥ d`, the quartic
-`A_4(x) = a x^4 + (a + d) x^3 + (a + 2d) x^2 + (a + 3d) x + (a + 4d)` is not a product of two
-quadratic polynomials in `ℤ[x]`.
+**The arithmetic-progression quartic is not a product of two quadratics.** Let $a$, $d$ be
+coprime integers with $0 < d \le a$. Then the polynomial
+$a x^4 + (a + d) x^3 + (a + 2d) x^2 + (a + 3d) x + (a + 4d)$ is not the product of two
+polynomials of degree $2$ in $\mathbb{Z}[x]$.
 
 ## Depends on
 

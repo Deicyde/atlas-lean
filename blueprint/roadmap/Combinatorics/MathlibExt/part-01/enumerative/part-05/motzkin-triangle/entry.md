@@ -6,13 +6,15 @@ statement: formalized
 lean: MetaMathlibExt.MotzkinRiordanPair.entry
 ---
 
-# Entry
+# Entries of a Motzkin Riordan array
 
-The `(n, k)` entry of the Motzkin triangle represented by `p`.
+**Entries of a Motzkin Riordan array.** For a Motzkin Riordan pair $(g, h)$ and natural numbers
+$n$ and $k$, the $(n, k)$ entry is the rational number $[X^n]\, g h^k$, the coefficient of $X^n$ in
+the power series $g h^k \in \mathbb{Q}[[X]]$.
 
 ## Depends on
 
-- [Motzkin Riordan Pair](motzkin-riordan-pair.md)
+- [Bundled Motzkin Riordan pairs](motzkin-riordan-pair.md)
 
 ## Sources
 

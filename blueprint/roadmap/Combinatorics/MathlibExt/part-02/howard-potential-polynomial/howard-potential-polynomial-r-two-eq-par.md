@@ -23,7 +23,7 @@ evidence only.
 
 ## Depends on
 
-- [Partial Bell Polynomial](../../part-01/enumerative/part-06/partial-bell-polynomial.md)
+- [Partial Bell polynomial](../../part-01/enumerative/part-06/partial-bell-polynomial.md)
 
 ## Sources
 

@@ -5,8 +5,8 @@ navigation: module
 
 # RStirling First Alternating Expansion
 
-- [R Stirling First](r-stirling-first.md)
-- [R Stirling First self](r-stirling-first-self.md)
-- [R Stirling First zero of pos](r-stirling-first-zero-of-pos.md)
-- [R Stirling First succ](r-stirling-first-succ.md)
-- [R Stirling First eq alternating sum](r-stirling-first-eq-alternating-sum.md)
+- [Unsigned r-Stirling numbers of the first kind](r-stirling-first.md)
+- [Initial row of the r-Stirling numbers of the first kind](r-stirling-first-self.md)
+- [Vanishing of the r-Stirling numbers of the first kind with second index zero](r-stirling-first-zero-of-pos.md)
+- [Recurrence for the r-Stirling numbers of the first kind](r-stirling-first-succ.md)
+- [Broder's alternating expansion of the r-Stirling numbers of the first kind](r-stirling-first-eq-alternating-sum.md)

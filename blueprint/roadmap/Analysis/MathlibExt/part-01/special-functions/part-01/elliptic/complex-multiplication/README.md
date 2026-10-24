@@ -5,5 +5,5 @@ navigation: module
 
 # Complex Multiplication
 
-- [Endomorphism Ring](endomorphism-ring.md)
-- [Is Proper Ideal](is-proper-ideal.md)
+- [Endomorphism ring of a period lattice](endomorphism-ring.md)
+- [Lattices that are proper ideals](is-proper-ideal.md)

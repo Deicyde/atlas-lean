@@ -7,16 +7,12 @@ proof: formalized
 lean: MetaMathlibExt.partitions_two_distant_eq_polarized
 ---
 
-# Two Distant Polarized
+# Partitions with 2-distant parts and polarized partitions
 
-Partitions with 2-distant parts equal polarized partitions.
-
-A partition has 2-distant parts when it lies in `Dₙ²`, i.e. its parts are distinct
-and any two parts differ by at least 2 (source lines 98–105).
-A polarized partition has 1-distant (distinct) parts and every even part,
-if there are any, is greater than twice the number of odd parts
-(source lines 112–121); for all-odd partitions the even-part condition holds
-vacuously, per the intended reading at source line 121.
+**Partitions with 2-distant parts and polarized partitions.** For every natural number $n$, the
+number of partitions of $n$ into distinct parts any two of which differ by at least $2$ equals the
+number of polarized partitions of $n$, that is, partitions of $n$ into distinct parts in which
+every even part is greater than twice the number of odd parts.
 
 ## Depends on
 

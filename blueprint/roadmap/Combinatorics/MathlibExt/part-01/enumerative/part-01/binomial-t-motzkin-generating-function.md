@@ -7,13 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.binomial_tMotzkin_generatingFunction
 ---
 
-# Binomial TMotzkin Paths
+# Generating function of binomial Motzkin paths
 
-The generating function counting binomial `[t]`-Motzkin paths by length is the
-`t`-th power of the generalized Catalan generating function. Steps are
-`Σ k : Fin (t+1), Fin (t.choose k)` with height change `1 - k`, so there are
-`C(t,k)` colors of the step of height change `1 - k`; `catalanGF` is the source
-`C_t(z) = ∑ C(tn,n) / ((t-1)n+1) z^n` (source line 321).
+**Generating function of binomial Motzkin paths.** Let $t \ge 1$. A binomial $[t]$-Motzkin step
+is one of $\binom{t}{k}$ differently colored steps that change the height by $1 - k$, for some
+$k \in \{0, 1, \dots, t\}$. For $n \ge 0$ let $M_n$ be the number of sequences of $n$ such steps
+for which, starting from height $0$, the height after the first $m$ steps is nonnegative for
+every $0 \le m \le n$ and the height after all $n$ steps is $0$. Then, as formal power series
+over $\mathbb{Q}$,
+
+$$\sum_{n \ge 0} M_n z^n = C_t(z)^t, \qquad
+C_t(z) = \sum_{n \ge 0} \frac{1}{(t-1)n + 1} \binom{tn}{n} z^n.$$
 
 ## Depends on
 

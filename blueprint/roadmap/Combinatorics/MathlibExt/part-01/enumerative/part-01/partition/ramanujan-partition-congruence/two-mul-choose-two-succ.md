@@ -7,9 +7,9 @@ proof: formalized
 lean: MetaMathlibExt.two_mul_choose_two_succ
 ---
 
-# Two mul choose two succ
+# Twice a triangular number
 
-Twice the triangular number `(a + 1).choose 2` is `a * (a + 1)`.
+**Twice a triangular number.** For every natural number $a$, $2\binom{a+1}{2} = a(a+1)$.
 
 ## Depends on
 

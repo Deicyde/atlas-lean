@@ -5,9 +5,9 @@ navigation: module
 
 # Wirsing Constant
 
-- [Gkw Term](gkw-term.md)
-- [Is Eigenvalue](is-eigenvalue.md)
-- [Is Eigenvalue one](is-eigenvalue-one.md)
-- [Gkw Term Hol](gkw-term-hol.md)
-- [Is Holomorphic Eigenvalue](is-holomorphic-eigenvalue.md)
-- [Wirsing Constant](wirsing-constant.md)
+- [Terms of the Gauss–Kuzmin–Wirsing series](gkw-term.md)
+- [Eigenvalues of the Gauss–Kuzmin–Wirsing operator on continuous functions](is-eigenvalue.md)
+- [The Gauss–Kuzmin–Wirsing operator has eigenvalue one](is-eigenvalue-one.md)
+- [Terms of the complex Gauss–Kuzmin–Wirsing series](gkw-term-hol.md)
+- [Holomorphic eigenvalues of the Gauss–Kuzmin–Wirsing operator](is-holomorphic-eigenvalue.md)
+- [Wirsing constant](wirsing-constant.md)

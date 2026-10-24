@@ -11,7 +11,7 @@ Source: Itty--Rosin--Carstensen--Reichman, arXiv:2607.21517, tenth-power constru
 
 ## Depends on
 
-- [Is Cycle Code](../../../../MathlibExt/part-01/coding/cycle-code/is-cycle-code.md)
+- [Independent codes for the modular cycle](../../../../MathlibExt/part-01/coding/cycle-code/is-cycle-code.md)
 
 ## Sources
 

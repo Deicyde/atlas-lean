@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.polyContFract_dens_zero
 ---
 
-# Poly Cont Fract dens zero
+# The partial denominator B₀ of a polynomial continued fraction
 
-`B₀ = 1`.
+**The partial denominator B₀ of a polynomial continued fraction.** Let $F$ be a field, let
+$n \in \mathbb N$, and let $a_0, a_1, \dots, a_n \in F[X]$. The partial denominator $B_0$ of the
+continued fraction $[a_0, a_1, \dots, a_n]$ over $F(X)$ equals $1$.
 
 ## Depends on
 
-- [Poly Cont Fract](poly-cont-fract.md)
+- [Finite continued fraction with polynomial partial quotients](poly-cont-fract.md)
 
 ## Sources
 

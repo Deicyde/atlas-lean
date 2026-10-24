@@ -6,12 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.palindromicNarayanaNumber
 ---
 
-# Palindromic Narayana Number
+# Palindromic Narayana numbers
 
-The palindromic Narayana number
-`Ñ(n, k) = binomial(n, k) * binomial(n + 1, k) / (k + 1)`.
+**Palindromic Narayana numbers.** For natural numbers $n$ and $k$, the palindromic Narayana
+number is the rational number $\tilde{N}(n, k) = \binom{n}{k} \binom{n+1}{k} / (k+1)$.
 
-The value is taken in `ℚ` so that the displayed quotient is represented literally.
+The value is taken in $\mathbb{Q}$ so that the displayed quotient is represented literally.
 
 ## Depends on
 
@@ -20,3 +20,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.PalindromicNarayanaNumber](../../../../../../sources/v2/MathlibExt.md)
+- Paul Barry, "Generalized Catalan Numbers Associated with a Family of Pascal-like Triangles," <https://cs.uwaterloo.ca/journals/JIS/VOL22/Barry3/barry422.tex>.

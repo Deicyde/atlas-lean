@@ -16,7 +16,7 @@ lean: Cslib.Algorithms.Lean.Graph.MaxFlowMinCut.isFeasibleFlow_realFlow
 - [Is Feasible](../edmonds-karp/is-feasible.md)
 - [Real Cap](real-cap.md)
 - [Real Flow](real-flow.md)
-- [Is Feasible Flow](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/is-feasible-flow.md)
+- [Feasible flow](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/is-feasible-flow.md)
 
 ## Proof depends on
 

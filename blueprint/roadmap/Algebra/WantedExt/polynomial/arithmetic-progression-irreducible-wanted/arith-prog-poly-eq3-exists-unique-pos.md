@@ -5,11 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.arithProgPoly_eq3_existsUnique_pos
 ---
 
-# Arith Prog Poly eq3 exists Unique pos
+# The auxiliary equation has a unique positive root, which exceeds $1$
 
-For `m ≥ 2` and positive integers `a ≥ d`, the equation
-`a_1 x^{m+2} + a_0 x^{m+1} - a_{m+2} x - a_{m+1} = 0` (`a_n = a + (n - 1)d`), equation (3), has
-exactly one positive real solution, and it is larger than `1`.
+**The auxiliary equation has a unique positive root, which exceeds $1$.** Let $m \ge 2$ and
+let $a$, $d$ be integers with $0 < d \le a$. Then the equation
+$a x^{m+2} + (a - d) x^{m+1} - (a + (m + 1)d) x - (a + md) = 0$ has exactly one positive real
+solution, and every positive real solution $x$ satisfies $x > 1$.
 
 ## Depends on
 

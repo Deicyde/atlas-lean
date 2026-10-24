@@ -5,7 +5,7 @@ navigation: module
 
 # Riemann Rearrangement
 
-- [Ordered Has Sum](ordered-has-sum.md)
-- [Ordered Has Sum iff](ordered-has-sum-iff.md)
-- [Ordered Has Sum tendsto zero](ordered-has-sum-tendsto-zero.md)
+- [Convergence of a series in order](ordered-has-sum.md)
+- [Convergence in order via partial sums](ordered-has-sum-iff.md)
+- [Terms of a convergent series tend to zero](ordered-has-sum-tendsto-zero.md)
 - [Riemann rearrangement](riemann-rearrangement.md)

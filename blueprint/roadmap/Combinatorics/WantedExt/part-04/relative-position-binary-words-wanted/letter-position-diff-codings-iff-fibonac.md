@@ -16,7 +16,7 @@ every `w ∈ a𝒲`.
 ## Depends on
 
 - [Both Letters Infinite](both-letters-infinite.md)
-- [Fib Inf](../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
+- [Infinite Fibonacci word](../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
 - [Letter Position](letter-position.md)
 
 ## Sources

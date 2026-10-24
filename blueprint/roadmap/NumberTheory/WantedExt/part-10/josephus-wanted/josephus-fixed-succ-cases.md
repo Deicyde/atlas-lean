@@ -16,7 +16,7 @@ if `k = s_ℓ + 1` for some `ℓ ≥ 1`; `k₁ - 1` if
 
 ## Depends on
 
-- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
+- [Josephus survivor function](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 
 ## Sources
 

@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.center_eq_bot_iff_mulAut_eq_rackAut_conj
 ---
 
-# Center eq bot iff mul Aut eq rack Aut conj
+# Trivial center and automorphisms of the conjugation quandle
 
-A group `G` has trivial center if and only if its group automorphisms are exactly the
-quandle automorphisms of `Conj G` (as sets of permutations of `G`).
+**Trivial center and automorphisms of the conjugation quandle.** For a group $G$, let
+$\operatorname{Conj}(G)$ be the conjugation quandle on $G$, with $x \triangleleft y = x y x^{-1}$.
+Then $G$ has trivial center if and only if the permutations of $G$ that are group automorphisms
+are exactly the rack automorphisms of $\operatorname{Conj}(G)$.
 
 ## Depends on
 
-- [Rack Aut](rack-aut.md)
+- [Automorphism group of a rack](rack-aut.md)
 
 ## Sources
 

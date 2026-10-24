@@ -13,7 +13,7 @@ For a nonempty finite `A` in an abelian group with `1 ≤ r ≤ |A|` and `h ≥ 
 ## Depends on
 
 - [At Least Distinct Sumset](at-least-distinct-sumset.md)
-- [Restricted Sumset](../../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-sumset.md)
+- [Restricted sumset](../../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-sumset.md)
 
 ## Sources
 

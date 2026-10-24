@@ -7,20 +7,23 @@ proof: formalized
 lean: InfiniteWord.tribonacciWord_eq_getElem_of_le
 ---
 
-# Tribonacci Word eq get Elem of le
+# Finite Tribonacci words agree with the infinite word
 
-Every sufficiently late approximant agrees with the infinite Tribonacci word.
+**Finite Tribonacci words agree with the infinite word.** For all natural numbers
+$k \le n$ such that $k$ is less than the length of the finite Tribonacci word $W(n)$, the
+letter of $W(n)$ at position $k$ equals the letter of the infinite Tribonacci word at
+position $k$, positions being counted from $0$.
 
 ## Depends on
 
-- [Tribonacci Letter](tribonacci-letter.md)
-- [Tribonacci Word](tribonacci-word.md)
-- [Tribonacci Word Approx](tribonacci-word-approx.md)
+- [The Tribonacci alphabet](tribonacci-letter.md)
+- [The infinite Tribonacci word](tribonacci-word.md)
+- [Finite Tribonacci words](tribonacci-word-approx.md)
 
 ## Proof depends on
 
-- [Tribonacci Word Approx length ge](tribonacci-word-approx-length-ge.md)
-- [Tribonacci Word Approx prefix](tribonacci-word-approx-prefix.md)
+- [Length lower bound for finite Tribonacci words](tribonacci-word-approx-length-ge.md)
+- [Finite Tribonacci words form a prefix chain](tribonacci-word-approx-prefix.md)
 
 ## Sources
 

@@ -4,12 +4,12 @@ navigation: module
 
 # Ordered Partition Permutation Polynomials
 
-- [Is Permutation Polynomial X pow iff coprime](is-permutation-polynomial-x-pow-iff-copr.md)
-- [Injective iff sum pow eq](injective-iff-sum-pow-eq.md)
-- [Sum neg one pow choose mul pow](sum-neg-one-pow-choose-mul-pow.md)
-- [Is Permutation Polynomial sum pow mul X pow add](is-permutation-polynomial-sum-pow-mul-x.md)
-- [Is Permutation Polynomial sum mul pow mul X pow mul](is-permutation-polynomial-sum-mul-pow-mu.md)
-- [One sub X pow mul sum pow mul X pow](one-sub-x-pow-mul-sum-pow-mul-x-pow.md)
-- [Prime dvd sum compositions prod pow](prime-dvd-sum-compositions-prod-pow.md)
-- [Prime dvd sum compositions prod](prime-dvd-sum-compositions-prod.md)
-- [Prime dvd sum compositions mul prod pow](prime-dvd-sum-compositions-mul-prod-pow.md)
+- [Monomial permutation polynomials of a finite field](is-permutation-polynomial-x-pow-iff-copr.md)
+- [Power-sum criterion for distinct elements of a finite field](injective-iff-sum-pow-eq.md)
+- [Alternating binomial sums of powers](sum-neg-one-pow-choose-mul-pow.md)
+- [Shifted power-sum permutation polynomials of a prime field](is-permutation-polynomial-sum-pow-mul-x.md)
+- [Dilated power-sum permutation polynomials of a prime field](is-permutation-polynomial-sum-mul-pow-mu.md)
+- [Rational form of the power-weighted geometric sum](one-sub-x-pow-mul-sum-pow-mul-x-pow.md)
+- [Vishwakarma–Singh congruence for ordered partitions](prime-dvd-sum-compositions-prod-pow.md)
+- [Vishwakarma–Singh congruence for ordered partitions, linear case](prime-dvd-sum-compositions-prod.md)
+- [Vishwakarma–Singh congruence for ordered partitions into multiples](prime-dvd-sum-compositions-mul-prod-pow.md)

@@ -4,5 +4,5 @@ navigation: module
 
 # Euler Seidel Matrix
 
-- [Euler Seidel Matrix](euler-seidel-matrix.md)
-- [Euler Seidel Matrix eq sum](euler-seidel-matrix-eq-sum.md)
+- [Euler–Seidel matrix](euler-seidel-matrix.md)
+- [Closed form of the Euler–Seidel matrix](euler-seidel-matrix-eq-sum.md)

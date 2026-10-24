@@ -6,15 +6,16 @@ statement: formalized
 lean: MathlibExt.Analysis.TuranThreeValueBoundedDistributionWanted.IsBoundedValueDistribution
 ---
 
-# Is Bounded Value Distribution
+# Bounded value distribution
 
-Bounded value distribution for a plane meromorphic function.
+**Bounded value distribution.** A function $f : \mathbb{C} \to \mathbb{C}$ has bounded value
+distribution if for every real $r > 0$ there is a natural number $C$ such that, for every value
+$w$ of the Riemann sphere $\mathbb{C} \cup \{\infty\}$ and every open disc of radius $r$, the
+multiplicities of $w$ as a value of $f$ at the points of any finite subset of the disc add up
+to at most $C$.
 
-Citing stable source identifiers: Hayman - Research Problems in Function Theory
-(2018), Problem 2.28 [AMR-022-2028], `https://arxiv.org/abs/1809.07200`:
-for every positive `r` there exists `C(r)` such that `f(z) = w` has at most
-`C(r)` roots, counted with multiplicity, in any disc of radius `r`, for
-every value `w` finite or infinite (poles counted with multiplicity).
+The source states this for functions meromorphic in the plane; the definition itself does not
+assume meromorphy.
 
 ## Depends on
 
@@ -22,8 +23,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Root Mult Sph](root-mult-sph.md)
+- [Multiplicity of a value on the Riemann sphere](root-mult-sph.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.TuranThreeValueBoundedDistributionWanted](../../../../../sources/v2/WantedExt.md)
+- Hayman - Research Problems in Function Theory (2018), Problem 2.28 [AMR-022-2028], `https://arxiv.org/abs/1809.07200`.

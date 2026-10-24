@@ -17,7 +17,7 @@ lean: MetaMathlibExt.two_pow_le_length_kimberlingBlock
 ## Proof depends on
 
 - [Kimberling Morphism](kimberling-morphism.md)
-- [Morph Extend](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-extend.md)
+- [Extension of a letter map to finite words](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-extend.md)
 
 ## Sources
 

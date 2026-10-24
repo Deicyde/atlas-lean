@@ -7,15 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.bell_eq_signed_stirlingFirst_convolution
 ---
 
-# Bell Convolution
+# Gould–Quaintance double-sum formula for Bell numbers
 
-New double-sum formula for Bell numbers via Spivey's formula and Stirling
-numbers of the first kind.
+**Gould–Quaintance double-sum formula for Bell numbers.** Write $B_n$ for the $n$-th Bell
+number and $s(p, m) = (-1)^{p-m} {p \brack m}$ for the signed Stirling number of the first kind,
+where ${p \brack m}$ is the number of permutations of $p$ elements with exactly $m$ cycles. For all
+natural numbers $n$ and $p$, with the convention $0^0 = 1$,
 
-Mathlib's `Nat.stirlingFirst` is the unsigned Stirling number of the first
-kind, so `(-1)^(p-m) * stirlingFirst p m` is the signed `s(p,m)` of the
-source. The source states `p ≥ 1` and notes the `0^0 = 1` convention extends
-the formula to `p = 0`, matching Lean.
+$$B_n = \sum_{k=0}^{n} (-p)^{n-k} \binom{n}{k} \sum_{m=0}^{p} B_{k+m}\, s(p, m).$$
+
+The source states the formula for $p \ge 1$; with $0^0 = 1$ it also holds for $p = 0$.
 
 ## Depends on
 

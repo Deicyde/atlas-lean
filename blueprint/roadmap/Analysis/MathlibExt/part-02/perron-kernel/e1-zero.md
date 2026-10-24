@@ -7,13 +7,14 @@ proof: formalized
 lean: PerronKernel.E1_zero
 ---
 
-# E1 zero
+# Value of the averaging operator at zero
 
-`E1 0 = 1`.
+**Value of the averaging operator at zero.** Let $E_1(u) = \int_0^1 e^{tu}\,dt$ for
+$u \in \mathbb{C}$. Then $E_1(0) = 1$.
 
 ## Depends on
 
-- [E1](e1.md)
+- [The averaging operator $E_1$](e1.md)
 
 ## Sources
 

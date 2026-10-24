@@ -6,22 +6,24 @@ proof: formalized
 lean: MetaMathlibExt.c4Sq_notation_single
 ---
 
-# C4 Sq notation single
+# The C₄² notation at the indicator of the identity
 
-For the identity indicator `a = δ_{(0,0)}` one has `b = c = (1, 0, 0, 0)`,
-`d = (1, 0, …, 0)` and `β = γ = 1`.
+**The C₄² notation at the indicator of the identity.** Let $\delta$ be the integer-valued
+function on $C_4^2 = \mathbb{Z}/4 \times \mathbb{Z}/4$ that is $1$ at $(0, 0)$ and $0$ elsewhere.
+For $a = \delta$ the associated integers are $b = c = (1, 0, 0, 0)$ and
+$d = (1, 0, 0, 0, 0, 0, 0, 0)$, and the associated Gaussian integers are $\beta = \gamma = 1$.
 
 ## Depends on
 
-- [C4 Sq B](c4-sq-b.md)
-- [C4 Sq Beta](c4-sq-beta.md)
-- [C4 Sq C](c4-sq-c.md)
-- [C4 Sq D](c4-sq-d.md)
-- [C4 Sq Gamma](c4-sq-gamma.md)
+- [The sums $b_i$](c4-sq-b.md)
+- [The Gaussian integer $\beta$](c4-sq-beta.md)
+- [The alternating sums $c_i$](c4-sq-c.md)
+- [The differences $d_i$ of a function on $C_4^2$](c4-sq-d.md)
+- [The Gaussian integer $\gamma$ of a function on $C_4^2$](c4-sq-gamma.md)
 
 ## Proof depends on
 
-- [C4 Sq Alpha](c4-sq-alpha.md)
+- [The Gaussian integers $\alpha_i$](c4-sq-alpha.md)
 
 ## Sources
 

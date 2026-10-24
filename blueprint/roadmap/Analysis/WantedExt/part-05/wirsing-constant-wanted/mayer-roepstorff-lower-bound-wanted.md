@@ -6,16 +6,16 @@ statement: formalized
 lean: MathlibExt.Analysis.WirsingConstantWanted.mayerRoepstorffLowerBound_wanted
 ---
 
-# Mayer Roepstorff Lower Bound wanted
+# Mayer–Roepstorff lower bound for the Wirsing constant
 
-Source: Mayer and Roepstorff (1987), eq. (5.20), catalogue lower
-bound `0.30366299`, certified via generalized Temple inequalities.
-Known literature result; its proof is not supplied here.
+**Mayer–Roepstorff lower bound for the Wirsing constant.** The
+Wirsing constant is at least $0.30366299$.
 
 ## Depends on
 
-- [Wirsing Constant](../../../MathlibExt/part-02/wirsing-constant/wirsing-constant.md)
+- [Wirsing constant](../../../MathlibExt/part-02/wirsing-constant/wirsing-constant.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.WirsingConstantWanted](../../../../../sources/v2/WantedExt.md)
+- Mayer and Roepstorff (1987), eq. (5.20), catalogue lower bound `0.30366299`, certified via generalized Temple inequalities. Known literature result; its proof is not supplied here.

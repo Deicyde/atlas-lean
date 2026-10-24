@@ -6,11 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.IsSturmian
 ---
 
-# Is Sturmian
+# Sturmian words
 
-An infinite binary word `x : ℕ → Bool` is Sturmian exactly when it is
-   aperiodic and balanced (concept `jis_term_4c219044135404e2d10fb16f`,
-   statement `jis_a07921e69f2b6f8112afb1b1`).
+**Sturmian words.** An infinite binary word $x = x_0 x_1 x_2 \cdots$ over $\{0, 1\}$ is
+Sturmian when it is both aperiodic and balanced.
 
 ## Depends on
 
@@ -18,9 +17,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Aperiodic](is-aperiodic.md)
-- [Is Balanced](is-balanced.md)
+- [Aperiodic infinite words](is-aperiodic.md)
+- [Balanced infinite words](is-balanced.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.SturmianWord](../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_term_4c219044135404e2d10fb16f`, statement `jis_a07921e69f2b6f8112afb1b1`.

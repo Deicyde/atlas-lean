@@ -7,18 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.coeff_jacobiCubeSeries_triangle
 ---
 
-# Coeff jacobi Cube Series triangle
+# Coefficients of Jacobi's cube series at triangular numbers
 
-The coefficient of `jacobiCubeSeries` at the triangular index `(t + 1).choose 2`
-is `(-1) ^ t * (2 * t + 1)`.
+**Coefficients of Jacobi's cube series at triangular numbers.** Let $J(X)$ be Jacobi's cube
+series. For every natural number $t$, the coefficient of $X^{t(t+1)/2}$ in $J(X)$ is
+$(-1)^t (2t+1)$.
 
 ## Depends on
 
-- [Jacobi Cube Series](jacobi-cube-series.md)
+- [Jacobi's cube series](jacobi-cube-series.md)
 
 ## Proof depends on
 
-- [Two mul choose two succ](two-mul-choose-two-succ.md)
+- [Twice a triangular number](two-mul-choose-two-succ.md)
 
 ## Sources
 

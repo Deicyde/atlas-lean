@@ -7,13 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.fubiniNumber_one
 ---
 
-# Fubini Number one
+# Fubini number of one
 
-`F 1 = 1`.
+**Fubini number of one.** The Fubini number $F(1)$ equals $1$.
 
 ## Depends on
 
-- [Fubini Number](fubini-number.md)
+- [Fubini numbers](fubini-number.md)
 
 ## Sources
 

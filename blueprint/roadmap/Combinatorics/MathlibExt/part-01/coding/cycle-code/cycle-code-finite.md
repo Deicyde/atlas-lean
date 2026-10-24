@@ -6,17 +6,18 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleGraphCode.cycleCode_finite
 ---
 
-# Cycle Code finite
+# Finitely many cycle codes of each length
 
-For a nonzero modulus, the code type at each fixed length is finite.
+**Finitely many cycle codes of each length.** For every nonzero natural number $q$ and every
+natural number $n$, there are only finitely many cycle codes of length $n$ modulo $q$.
 
 ## Depends on
 
-- [Cycle Code](cycle-code.md)
+- [Cycle codes](cycle-code.md)
 
 ## Proof depends on
 
-- [Is Cycle Code](is-cycle-code.md)
+- [Independent codes for the modular cycle](is-cycle-code.md)
 
 ## Sources
 

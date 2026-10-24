@@ -24,8 +24,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ward Generalized Binomial Coefficient](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-09/ward-generalized-binomial/ward-generalized-binomial-coefficient.md)
-- [Ward Generalized Binomial Coefficient eq prod Icc](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-09/ward-generalized-binomial/ward-generalized-binomial-coefficient-eq.md)
+- [Ward generalized binomial coefficient](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-09/ward-generalized-binomial/ward-generalized-binomial-coefficient.md)
+- [Ward's generalized binomial coefficient as a finite product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-09/ward-generalized-binomial/ward-generalized-binomial-coefficient-eq.md)
 - [Ward sbinomial carry product general](ward-sbinomial-carry-product-general.md)
 
 ## Sources

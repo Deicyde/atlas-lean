@@ -5,14 +5,16 @@ statement: formalized
 lean: CSLibExt.Combinatorics.RandomThreeSat.toCNFClause
 ---
 
-# To CNFClause
+# CNF clause of a random 3-SAT clause
 
-The canonical literal list of a model clause: one `(index, polarity)`
-literal per chosen variable.
+**CNF clause of a random 3-SAT clause.** The CNF clause of a clause $c$ on $n$ variables is the
+list of literals $(i, b_i)$, one for each of the three variables $i$ of $c$ taken as a
+natural-number index, where $b_i$ is the polarity that $c$ prescribes for $i$; the literals are
+listed in some fixed order.
 
 ## Depends on
 
-- [Clause](clause.md)
+- [3-clause](clause.md)
 - [CNFClause](../../../Logic/CSLibExt/propositional/cnf/basic/cnfclause.md)
 
 ## Sources

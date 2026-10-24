@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.binomialProduct_rational_general
 ---
 
-# Corollary 7
+# Binomial products of arbitrary rational series
 
-**Corollary 7.** If `A = R / ∏_{i ≤ m} (1 - αᵢx)` and `B = S / ∏_{j ≤ n} (1 - βⱼx)` with all
-`αᵢ`, `βⱼ` nonzero, `u = max(deg R + 1 - m, 0)` and `v = max(deg S + 1 - n, 0)`, then
-`A ⊙ B = T / ((∏ᵢ (1 - αᵢx))^v (∏ⱼ (1 - βⱼx))^u ∏ᵢ ∏ⱼ (1 - (αᵢ + βⱼ)x))` for a polynomial `T`
-of degree less than `(u + m)(v + n)`.
+**Binomial products of arbitrary rational series.** Let $K$ be a field of characteristic $0$,
+let $\alpha_1, \dots, \alpha_m$ and $\beta_1, \dots, \beta_n$ be nonzero elements of $K$, and let
+$R$, $S$ be polynomials over $K$. Let $A$, $B$ be power series over $K$ with
+$A(x) \prod_{i=1}^m (1 - \alpha_i x) = R(x)$ and $B(x) \prod_{j=1}^n (1 - \beta_j x) = S(x)$.
+Put $u = \max(d_R + 1 - m, 0)$ and $v = \max(d_S + 1 - n, 0)$, where $d_R$ and $d_S$ are the
+degrees of $R$ and $S$, the zero polynomial counting as degree $0$. Then there is a polynomial
+$T$ over $K$ of degree less than $(u + m)(v + n)$ such that
 
-Denominators are cleared; `u`, `v` use truncated subtraction of `natDegree`.
+$$(A \odot B)(x) \Big(\prod_{i=1}^m (1 - \alpha_i x)\Big)^{v}
+\Big(\prod_{j=1}^n (1 - \beta_j x)\Big)^{u} \prod_{i=1}^m \prod_{j=1}^n (1 - (\alpha_i + \beta_j) x)
+= T(x),$$
+
+where $\odot$ is the binomial product.
 
 ## Depends on
 

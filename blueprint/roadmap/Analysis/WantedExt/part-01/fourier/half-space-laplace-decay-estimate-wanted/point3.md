@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.Analysis.Fourier.HalfSpaceLaplaceDecayEstimateWanted.point3
 ---
 
-# Point3
+# Appending a third coordinate
 
-The point `(x 0, x 1, z)` of three-space.
+**Appending a third coordinate.** For a point $x = (x_1, x_2)$ of the Euclidean plane
+$\mathbb{R}^2$ and a real number $z$, this is the point $(x_1, x_2, z)$ of Euclidean three-space
+$\mathbb{R}^3$.
 
 ## Depends on
 
-- [R2](r2.md)
-- [R3](r3.md)
+- [The Euclidean plane](r2.md)
+- [Euclidean three-space](r3.md)
 
 ## Sources
 

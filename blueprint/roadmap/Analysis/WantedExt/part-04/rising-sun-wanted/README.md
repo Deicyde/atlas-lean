@@ -4,7 +4,7 @@ navigation: module
 
 # Rising Sun
 
-- [Rising Sun Set](rising-sun-set.md)
-- [Has Rising Sun Decomposition](has-rising-sun-decomposition.md)
-- [Has Rising Sun Property](has-rising-sun-property.md)
-- [Rising sun lemma](rising-sun-lemma.md)
+- [Rising sun set](rising-sun-set.md)
+- [Rising sun decomposition](has-rising-sun-decomposition.md)
+- [Rising sun property](has-rising-sun-property.md)
+- [Riesz's rising sun lemma](rising-sun-lemma.md)

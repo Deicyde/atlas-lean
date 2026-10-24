@@ -7,10 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.stirlingMatrices_mutualInverse_and_lowerTriangular
 ---
 
-# Stirling Matrices mutual Inverse and lower Triangular
+# Stirling matrices are mutually inverse and lower triangular
 
-Every finite truncation of the signed first-kind and second-kind Stirling
-matrices consists of mutual inverses, and both matrices are lower triangular.
+**Stirling matrices are mutually inverse and lower triangular.** Let $N$ be a natural number,
+and let $A$ and $B$ be the $N \times N$ integer matrices with rows and columns indexed by
+$0, 1, \dots, N-1$ and entries $A_{ij} = (-1)^{i-j} c(i,j)$ and $B_{ij} = S(i,j)$, where $c(i,j)$
+is the unsigned Stirling number of the first kind and $S(i,j)$ the Stirling number of the second
+kind. Then $AB = BA = I$, and $A_{ij} = B_{ij} = 0$ whenever $i < j$.
 
 ## Depends on
 
@@ -18,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Signed Stirling First](../signed-stirling-first.md)
+- [Signed Stirling numbers of the first kind](../signed-stirling-first.md)
 
 ## Sources
 

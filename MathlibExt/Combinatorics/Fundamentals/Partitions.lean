@@ -118,19 +118,15 @@ def _root_.List.partitionConjugate (l : List ℕ) : List ℕ :=
 -- Combinatorics 445: Self-Conjugate Partition
 
 
-/-- Let λ=[λ₁,…,λ_L]
-be a partition, where L is an integer
-with L≥ 0 and
-λ₁≥⋯≥λ_L≥ 1,
-and let λ' be its conjugate
-partition. Then λ is
-self-conjugate when
+/-- **Self-conjugate partition.** Let $\lambda = [\lambda_1, \dots, \lambda_L]$ be a finite list of
+natural numbers, with $L \ge 0$. Its conjugate $\lambda'$ is the empty list if $L = 0$, and
+otherwise the list $[\lambda'_1, \dots, \lambda'_{\lambda_1}]$ of length $\lambda_1$ with
+$\lambda'_j = \#\{i : 1 \le i \le L,\ \lambda_i \ge j\}$ for $1 \le j \le \lambda_1$. The list
+$\lambda$ is self-conjugate when $\lambda' = \lambda$.
 
-  λ'=λ.
-
-Equivalently, the Young diagram of
-λ is equal to its own transpose.
-The empty partition is self-conjugate.
+The conjugate of any list is weakly decreasing with all entries at least $1$, so a self-conjugate
+list is a partition $\lambda_1 \ge \dots \ge \lambda_L \ge 1$, and for a partition the condition
+says that its Young diagram equals its own transpose. The empty list is self-conjugate.
 -/
 def List.IsSelfConjugate (l : List ℕ) : Prop :=
   l.partitionConjugate = l
@@ -138,22 +134,11 @@ def List.IsSelfConjugate (l : List ℕ) : Prop :=
 -- Combinatorics 452: Partitions in a Box
 
 
-/-- Let j,k,n∈ℤ_{≥ 0}. A
-partition of n is a finite multiset of
-positive integers whose sum is n;
-written in weakly decreasing order it is
-λ=[λ₁,…,λₘ]
-with λᵢ≥λᵢ₊₁ for
-1≤ i<m and λᵢ≥ 1 for
-1≤ i≤ m, and for m=0 it is the
-empty partition, the unique partition of
-0. Then p(j,k,n) is the number of
-partitions of n having at most k
-parts, so m≤ k, and largest part at
-most j, so λᵢ≤ j for
-1≤ i≤ m. In particular
-p(j,k,0)=1 for all j and k, while
-p(0,k,n)=p(j,0,n)=0 for n≥ 1.
+/-- **Number of partitions in a box.** Let $j, k, n \ge 0$ be integers. A partition of $n$ is a
+finite multiset of positive integers whose sum is $n$; the empty partition is the unique partition
+of $0$. Then $p(j, k, n)$ is the number of partitions of $n$ with at most $k$ parts, counted with
+multiplicity, each of which is at most $j$. In particular $p(j, k, 0) = 1$ for all $j$ and $k$,
+while $p(0, k, n) = p(j, 0, n) = 0$ for $n \ge 1$.
 -/
 def Nat.partitionsInBox (j k n : ℕ) : ℕ :=
   (Finset.univ.filter fun p : Nat.Partition n =>
@@ -205,11 +190,13 @@ v(0)=1, and the next values are v(1)=1,
 v(2)=3, v(3)=6 and v(4)=12.
 -/
 
-/-- Let n∈ℤ_{≥ 0}. A partition is a finite multiset of positive integers, and its weight |λ| is the
-sum of its parts. Written in weakly decreasing order a partition is λ=[λ₁,…,λₘ] with λ₁≥⋯≥λₘ≥ 1; for
-m=0 it is the empty partition ∅, of weight 0.
+/-- **V-partition.** Let $n \ge 0$ be an integer. A partition $\lambda$ is a finite multiset of
+positive integers, and its weight $|\lambda|$ is the sum of its parts. A V-partition of weight $n$
+is a triple $(c, \lambda, \mu)$ in which $c \ge 0$ is an integer, $\lambda$ and $\mu$ are
+partitions all of whose parts are at most $c$, and $c + |\lambda| + |\mu| = n$.
 
-The full informal statement is in the module documentation directly above.
+The order of $\lambda$ and $\mu$ matters, so $(c, \lambda, \mu)$ and $(c, \mu, \lambda)$ are
+distinct whenever $\lambda \ne \mu$.
 -/
 structure Nat.VPartition (n : ℕ) where
   corner : ℕ
@@ -273,9 +260,11 @@ The Lean indexes positions from 0, so the
 peak index there is j-1.
 -/
 
-/-- Let m∈ℤ_{≥ 1} and write [m]={1,…,m}.
-
-The full informal statement is in the module documentation directly above.
+/-- **Unimodal sequence.** A finite list $d = [d_1, \dots, d_m]$ of natural numbers is unimodal
+when $d_i \ge 1$ for every $i$ and there is an index $j$ with $1 \le j \le m$ such that
+$d_1 \le d_2 \le \dots \le d_j$ and $d_j \ge d_{j+1} \ge \dots \ge d_m$. In particular a unimodal
+list has $m \ge 1$, so the empty list is not unimodal; for $j = 1$ the first condition is vacuous
+and for $j = m$ the second is.
 -/
 def List.IsUnimodal (d : List ℕ) : Prop :=
   (∀ x ∈ d, 0 < x) ∧

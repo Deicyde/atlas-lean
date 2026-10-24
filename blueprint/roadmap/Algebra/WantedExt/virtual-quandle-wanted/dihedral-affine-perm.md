@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.dihedralAffinePerm
 ---
 
-# Dihedral Affine Perm
+# Affine permutations of the dihedral quandle
 
-The affine transformation `T_{a,u} : x ↦ a + u x` of `ℤ/nℤ`, as a permutation of the
-dihedral quandle `R_n`.
+**Affine permutations of the dihedral quandle.** For a natural number $n$, an element
+$a \in \mathbb{Z}/n\mathbb{Z}$ and a unit $u \in (\mathbb{Z}/n\mathbb{Z})^\times$, $T_{a,u}$ is the
+affine map $x \mapsto a + u x$ of $\mathbb{Z}/n\mathbb{Z}$, viewed as a permutation of the
+dihedral quandle $R_n$ (the set $\mathbb{Z}/n\mathbb{Z}$ with $x \triangleleft y = 2x - y$).
 
 ## Depends on
 

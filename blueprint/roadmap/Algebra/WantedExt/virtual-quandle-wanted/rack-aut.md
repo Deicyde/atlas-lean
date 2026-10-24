@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.rackAut
 ---
 
-# Rack Aut
+# Automorphism group of a rack
 
-The automorphism group `Aut R` of a rack `R`, as the subgroup of permutations `f` of `R`
-with `f (x ◃ y) = f x ◃ f y` (Mathlib's `x ◃ y` is the paper's `s_x(y)`).
+**Automorphism group of a rack.** For a rack $R$ with operation $\triangleleft$, the
+automorphism group $\operatorname{Aut} R$ is the subgroup of the group of permutations of $R$
+consisting of the permutations $f$ with $f(x \triangleleft y) = f(x) \triangleleft f(y)$ for all
+$x, y \in R$.
+
+Here $x \triangleleft y$ is the paper's $s_x(y)$.
 
 ## Depends on
 

@@ -7,9 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.exists_parametrization_of_rpow_eq_rpow
 ---
 
-# Real Power Parametrization
+# Parametrization of the solutions of $x^y = y^x$ with $0 < y < x$
 
-Classical parametrization of distinct solutions to x ^ y = y ^ x with 0 < y < x.
+**Parametrization of the solutions of $x^y = y^x$ with $0 < y < x$.** Let $x$ and $y$ be real
+numbers with $0 < y < x$ and $x^y = y^x$. Then there is a real number $t > 0$ such that
+$y = (1 + 1/t)^t$ and $x = (1 + 1/t)^{t+1}$.
 
 ## Depends on
 

@@ -5,14 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.iteratedDeriv_arcsin_div_one_sub_doubleFactorial
 ---
 
-# Iterated Deriv arcsin div one sub double Factorial
+# Double-factorial sums as derivatives of arcsine quotients
 
-Theorem 4, OEIS link: for `n` odd, `n! ∑_{j=0}^{(n-1)/2} (2j-1)!!/(2j)!! ·
-1/(2j+1)` is the `n`th term of the exponential generating function of
-`arcsin x / (1 - x)` (OEIS A296726), and for `n ≥ 2` even,
-`n! ∑_{j=0}^{(n-2)/2} (2j)!!/(2j+1)!! · 1/(2j+2)` is the `n`th term of the
-exponential generating function of `arcsin² x / (2 (1 - x))` (OEIS A372324).
-EGF terms are stated as `n`th derivatives at `0`.
+**Double-factorial sums as derivatives of arcsine quotients.** Let $n$ be a natural number.
+If $n$ is odd, the $n$th derivative at $0$ of $x \mapsto \arcsin x / (1 - x)$ is
+
+$$n! \sum_{j=0}^{(n-1)/2} \frac{(2j-1)!!}{(2j)!!\,(2j+1)},$$
+
+and if $n \ge 2$ is even, the $n$th derivative at $0$ of $x \mapsto (\arcsin x)^2 / (2(1 - x))$ is
+
+$$n! \sum_{j=0}^{(n-2)/2} \frac{(2j)!!}{(2j+1)!!\,(2j+2)},$$
+
+where $(-1)!! = 1$ and $0!! = 1$.
+
+These are the $n$th terms of the exponential generating functions of $\arcsin x / (1 - x)$
+(OEIS A296726) and of $(\arcsin x)^2 / (2(1 - x))$ (OEIS A372324).
 
 ## Depends on
 

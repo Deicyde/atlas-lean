@@ -16,9 +16,9 @@ her Gale-Shapley partner.
 - [The Gale-Shapley matching](gs-matching.md)
 - [Mprefs](mprefs.md)
 - [Wprefs](wprefs.md)
-- [Is Stable](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/is-stable.md)
-- [Perfect Matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/perfect-matching.md)
-- [Lt](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/lt.md)
+- [Stable perfect matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/is-stable.md)
+- [Perfect matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/perfect-matching.md)
+- [Relation of a strict total order](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/lt.md)
 
 ## Proof depends on
 

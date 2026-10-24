@@ -18,8 +18,8 @@ permutation of `Fin 0` has no excedance and no cycle.
 ## Proof depends on
 
 - [Coeff perm Excedance Cycle EGF](coeff-perm-excedance-cycle-egf.md)
-- [Cycle Quotient Count](../../part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
-- [Cycle Quotient Count eq](../../part-01/enumerative/part-08/stirling/cycle-quotient-count-eq.md)
+- [Number of cycles of a permutation](../../part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
+- [Counting cycles via the cycle type](../../part-01/enumerative/part-08/stirling/cycle-quotient-count-eq.md)
 - [Excedance Count](excedance-count.md)
 
 ## Sources

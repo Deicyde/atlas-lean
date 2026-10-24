@@ -14,12 +14,12 @@ The finite Fibonacci words satisfy the concatenation recurrence
 
 ## Depends on
 
-- [Fib Word](../../../part-01/infinite-word/fibonacci-word/fib-word.md)
+- [Finite Fibonacci words](../../../part-01/infinite-word/fibonacci-word/fib-word.md)
 
 ## Proof depends on
 
-- [Fib Morph](../../../part-01/infinite-word/fibonacci-word/fib-morph.md)
-- [Fib Morph append](../../../part-01/infinite-word/fibonacci-word/fib-morph-append.md)
+- [Fibonacci morphism](../../../part-01/infinite-word/fibonacci-word/fib-morph.md)
+- [The Fibonacci morphism respects concatenation](../../../part-01/infinite-word/fibonacci-word/fib-morph-append.md)
 
 ## Sources
 

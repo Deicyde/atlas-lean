@@ -7,18 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.mk_partitionFunction_mul_pentagonalSeries
 ---
 
-# Mk partition Function mul pentagonal Series
+# Euler's identity for the partition generating function
 
-Euler: the partition generating function times `PowerSeries.pentagonalSeries ℤ`,
-which is `∏ (1 - X ^ (i + 1))`, is `1`.
+**Euler's identity for the partition generating function.** Let $p(n)$ be the number of
+partitions of $n$. Over the integers,
+$\left(\sum_{n \ge 0} p(n)\, x^n\right) \cdot \sum_{k \in \mathbb{Z}} (-1)^k x^{k(3k-1)/2} = 1$.
+By the pentagonal number theorem the second factor equals $\prod_{i \ge 1} (1 - x^i)$.
 
 ## Depends on
 
-- [Partition Function](partition-function.md)
+- [The partition function](partition-function.md)
 
 ## Proof depends on
 
-- [Mk partition Function eq gen Fun](mk-partition-function-eq-gen-fun.md)
+- [Partition generating function with unit weights](mk-partition-function-eq-gen-fun.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ unsummable inputs `tsum` is a junk value.
 
 ## Depends on
 
-- [Charge Seq](charge-seq.md)
+- [Charge sequences](charge-seq.md)
 
 ## Sources
 

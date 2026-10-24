@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.NoProperHolomorphicMapUnitDiscWanted.not_exists_differentiableOn_ball_isCompact_preimage
 ---
 
-# No Proper Holomorphic Map Unit Disc Wanted
+# No proper holomorphic map from the unit disc to the complex plane
 
-Let $\Delta := \{z\in\mathbb{C}\mid |z|<1\}$ be the unit disc in the complex plane. Prove there
-is no proper holomorphic map $f:\Delta\to\mathbb{C}$. (Proper means that the preimage of a compact
-set is compact.)
+**No proper holomorphic map from the unit disc to the complex plane.** Let
+$\Delta := \{z\in\mathbb{C}\mid |z|<1\}$ be the unit disc in the complex plane. There is no proper
+holomorphic map $f:\Delta\to\mathbb{C}$, where proper means that the preimage under $f$ of every
+compact subset of $\mathbb{C}$ is a compact subset of $\Delta$.
 
 ## Depends on
 

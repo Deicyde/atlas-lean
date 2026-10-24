@@ -7,14 +7,16 @@ proof: formalized
 lean: Nat.Overpartition.ofPartition_toPartition
 ---
 
-# Of Partition to Partition
+# The underlying partition of the overpartition attached to a partition
 
-The underlying partition of `ofPartition p` is `p`.
+**The underlying partition of the overpartition attached to a partition.** For every partition
+$p$ of a natural number $n$, the underlying partition of the overpartition of $n$ attached to $p$
+(underlying partition $p$, no part size overlined) is $p$.
 
 ## Depends on
 
 - [Overpartition](overpartition.md)
-- [Of Partition](of-partition.md)
+- [The overpartition attached to a partition](of-partition.md)
 
 ## Sources
 

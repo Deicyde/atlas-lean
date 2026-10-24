@@ -7,16 +7,16 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Matching.GaleShapley.StrictTotalOrder.ext
 ---
 
-# Ext
+# Strict total orders are determined by their relation
 
-Compatibility alias for the former `GaleShapley.StrictTotalOrder.ext` lemma.
-
-For new code, use `MathlibExt.Order.StrictTotalOrder.ext` directly.
+**Strict total orders are determined by their relation.** Let $T$ and $T'$ be strict total
+orders on a set $\alpha$, with relations $\lt _T$ and $\lt _{T'}$. If $x \lt _T y \iff x \lt _{T'} y$ for all
+$x, y \in \alpha$, then $T = T'$.
 
 ## Depends on
 
-- [Strict Total Order](strict-total-order.md)
-- [Lt](lt.md)
+- [Strict preference order](strict-total-order.md)
+- [Relation of a strict total order](lt.md)
 
 ## Proof depends on
 

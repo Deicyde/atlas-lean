@@ -5,5 +5,5 @@ navigation: module
 
 # Right Down Diagonal Sequences
 
-- [Right Down Diagonal Coefficient](right-down-diagonal-coefficient.md)
-- [Is Right Down Diagonal Family](is-right-down-diagonal-family.md)
+- [Right-down diagonal coefficient](right-down-diagonal-coefficient.md)
+- [Right-down diagonal families of order $k$](is-right-down-diagonal-family.md)

@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_cosPowArea_of_even
 ---
 
-# Tendsto cos Pow Area of even
+# Limiting area between even cosine powers
 
-Theorem 2: for `n ≡ 2 (mod 4)`,
-`A_n = 16 / (2^n π) · ∑_{j=0}^{(n-2)/4} C(n, 2j) / (n/2 - 2j)²`, and for
-`n ≡ 0 (mod 4)`,
-`A_n = 16 / (2^n π) · ∑_{j=0}^{(n-4)/4} C(n, 2j+1) / (n/2 - (2j+1))²`.
-(At `n = 0` both sides are `0`, so no positivity hypothesis is needed.)
+**Limiting area between even cosine powers.** For natural numbers $n$ and $k$, let
+$A_n(k) = \int_0^\pi |\cos^n x - \cos^n(kx)|\,dx$. As $k \to \infty$ through the natural numbers:
+if $n \equiv 2 \pmod 4$, then
+
+$$A_n(k) \to \frac{16}{2^n \pi} \sum_{j=0}^{(n-2)/4} \frac{\binom{n}{2j}}{(n/2 - 2j)^2},$$
+
+and if $n \equiv 0 \pmod 4$, then
+
+$$A_n(k) \to \frac{16}{2^n \pi} \sum_{j=0}^{(n-4)/4} \frac{\binom{n}{2j+1}}{(n/2 - 2j - 1)^2}.$$
+
+For $n = 0$ the right-hand side is $0$, as is $A_0(k)$ for every $k$, so no positivity hypothesis
+is needed.
 
 ## Depends on
 
-- [Cos Pow Area](cos-pow-area.md)
+- [Area between powers of cosines](cos-pow-area.md)
 
 ## Sources
 

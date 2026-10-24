@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Analysis.ViscositySolutionsWanted.ViscositySolutions.WithoutCollisions
 ---
 
-# Without Collisions
+# Configurations without collisions
 
-We say that a configuration `x : Eᴺ` is without collisions if `rᵢⱼ ≠ 0` for each `i ≠ j`.
+**Configurations without collisions.** A configuration $x = (x_1, \dots, x_N) \in E^N$ of
+$N$ points in a finite-dimensional real inner product space $E$ is without collisions if
+$r_{ij}(x) = \lVert x_i - x_j \rVert \neq 0$ for all $i \neq j$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [R](r.md)
+- [Mutual distances](r.md)
 
 ## Sources
 

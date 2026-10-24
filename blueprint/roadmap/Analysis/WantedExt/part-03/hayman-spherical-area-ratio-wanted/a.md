@@ -6,11 +6,13 @@ statement: formalized
 lean: MathlibExt.Analysis.HaymanSphericalAreaRatioWanted.A
 ---
 
-# A
+# Normalized spherical area
 
-`A f r`: normalized spherical area of `f` on the disk `|z| < r`,
-i.e. `(1 / π)` times the Lebesgue integral of `sphericalDensity f`
-over `Metric.ball 0 r`.
+**Normalized spherical area.** For $f\colon \mathbb{C} \to \mathbb{C}$ and real $r$, the
+normalized spherical area $A(f, r)$ of $f$ on the disk $|z| < r$ is $\frac{1}{\pi}$ times the
+Lebesgue integral of the spherical density of $f$ over the open disk
+$\{z \in \mathbb{C} : |z| < r\}$ (the integral is taken to be $0$ if the density is not
+integrable there).
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Spherical Density](spherical-density.md)
+- [Spherical density](spherical-density.md)
 
 ## Sources
 

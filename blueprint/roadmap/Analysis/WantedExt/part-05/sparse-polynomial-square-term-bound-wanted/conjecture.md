@@ -6,10 +6,12 @@ statement: formalized
 lean: MathlibExt.Analysis.SparsePolynomialSquareTermBoundWanted.conjecture
 ---
 
-# Conjecture
+# Erdős–Rényi conjecture on squares of sparse polynomials
 
-For every positive target `k`, sufficiently many nonzero terms in a complex polynomial force
-its square to have at least `k` nonzero terms.
+**Erdős–Rényi conjecture on squares of sparse polynomials.** There is a function
+$f : \mathbb{N} \to \mathbb{N}$ such that for every integer $k \ge 1$, every complex polynomial $p$
+with at least $f(k)$ nonzero coefficients has a square $p^2$ with at least $k$ nonzero
+coefficients.
 
 ## Depends on
 

@@ -5,19 +5,21 @@ statement: formalized
 lean: NoncrossingPartition.discrete
 ---
 
-# Discrete
+# Discrete noncrossing partition
 
-Discrete noncrossing partition of `Fin n` (singletons), bundled.
+**Discrete noncrossing partition.** For a natural number $n$, the discrete noncrossing
+partition of $\{0, \dots, n-1\}$ is the finest partition of this set, whose blocks are the
+singletons $\{a\}$ for $a \in \{0, \dots, n-1\}$; it is noncrossing.
 
 ## Depends on
 
-- [Noncrossing Partition](../basic/noncrossing-partition.md)
+- [Noncrossing partition](../basic/noncrossing-partition.md)
 
 ## Proof depends on
 
-- [Is Noncrossing](../basic/is-noncrossing.md)
-- [Set Partition](../basic/set-partition.md)
-- [Is Noncrossing bot](is-noncrossing-bot.md)
+- [Noncrossing set partition](../basic/is-noncrossing.md)
+- [Set partition](../basic/set-partition.md)
+- [The discrete partition is noncrossing](is-noncrossing-bot.md)
 
 ## Sources
 

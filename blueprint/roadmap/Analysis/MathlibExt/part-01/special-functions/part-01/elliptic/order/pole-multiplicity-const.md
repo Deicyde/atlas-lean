@@ -7,18 +7,19 @@ proof: formalized
 lean: PeriodPair.poleMultiplicity_const
 ---
 
-# Pole Multiplicity const
+# Pole multiplicity of a constant function
 
-A constant function has pole multiplicity `0` everywhere, including the zero
-constant (whose order is `⊤`).
+**Pole multiplicity of a constant function.** For all $c, z \in \mathbb{C}$, the pole
+multiplicity at $z$ of the constant function with value $c$ is $0$. This includes the zero
+constant, whose meromorphic order at every point is $\infty$.
 
 ## Depends on
 
-- [Pole Multiplicity](pole-multiplicity.md)
+- [Pole multiplicity](pole-multiplicity.md)
 
 ## Proof depends on
 
-- [Pole Multiplicity eq zero of nonneg](pole-multiplicity-eq-zero-of-nonneg.md)
+- [Pole multiplicity vanishes at points of nonnegative order](pole-multiplicity-eq-zero-of-nonneg.md)
 
 ## Sources
 

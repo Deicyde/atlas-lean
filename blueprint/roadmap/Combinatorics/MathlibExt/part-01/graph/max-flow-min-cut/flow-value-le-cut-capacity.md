@@ -7,20 +7,22 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Graph.MaxFlowMinCutWanted.flowValue_le_cutCapacity
 ---
 
-# Flow Value le cut Capacity
+# Weak duality for flows and cuts
 
-Weak duality: any feasible flow value is at most any s-t cut capacity.
+**Weak duality for flows and cuts.** Let $V$ be a finite set, $c : V \times V \to \mathbb{R}$
+a capacity function and $s, t \in V$. If $f$ is a feasible $s$-$t$ flow for $c$ and $S$ is an
+$s$-$t$ cut, then the flow value of $f$ is at most the capacity of $S$ for $c$.
 
 ## Depends on
 
-- [Is Feasible Flow](is-feasible-flow.md)
-- [Is STCut](is-stcut.md)
-- [Cut Capacity](cut-capacity.md)
-- [Flow Value](flow-value.md)
+- [Feasible flow](is-feasible-flow.md)
+- [Source–sink cut](is-stcut.md)
+- [Cut capacity](cut-capacity.md)
+- [Flow value](flow-value.md)
 
 ## Proof depends on
 
-- [Cut Flow eq](cut-flow-eq.md)
+- [Flow across a cut](cut-flow-eq.md)
 
 ## Sources
 

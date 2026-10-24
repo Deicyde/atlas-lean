@@ -11,12 +11,12 @@ The proper noncrossing partitions of `Fin 2` are equivalent to `Unit`.
 
 ## Depends on
 
-- [Noncrossing Partition](../basic/noncrossing-partition.md)
-- [Indiscrete](../operations/indiscrete.md)
+- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [The indiscrete noncrossing partition](../operations/indiscrete.md)
 
 ## Proof depends on
 
-- [Discrete](../operations/discrete.md)
+- [Discrete noncrossing partition](../operations/discrete.md)
 - [Discrete two ne indiscrete two](discrete-two-ne-indiscrete-two.md)
 - [Eq discrete or indiscrete two](eq-discrete-or-indiscrete-two.md)
 

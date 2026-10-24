@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.mem_lifts_of_degree_lt_of_eval_eq
 ---
 
-# Lemma 2
+# Integrality of low-degree interpolants
 
-**Lemma 2.** If `q ∈ ℚ[x]` has degree `< |X|` and agrees on the finite set `X ⊆ ℤ` with
-some integer polynomial `p`, then `q ∈ ℤ[x]`.
+**Integrality of low-degree interpolants.** Let $X \subseteq \mathbb{Z}$ be finite, let
+$q \in \mathbb{Q}[x]$ have degree less than $|X|$, and let $p \in \mathbb{Z}[x]$ satisfy
+$q(x) = p(x)$ for all $x \in X$. Then $q$ has integer coefficients, that is, $q$ is the image in
+$\mathbb{Q}[x]$ of a polynomial in $\mathbb{Z}[x]$.
 
 ## Depends on
 

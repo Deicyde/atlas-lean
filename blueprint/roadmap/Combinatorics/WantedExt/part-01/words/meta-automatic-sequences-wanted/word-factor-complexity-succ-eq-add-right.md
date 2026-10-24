@@ -13,7 +13,7 @@ Lemma 27: for every infinite binary word `a` and `n ≥ 1`,
 ## Depends on
 
 - [Right Special Factors](right-special-factors.md)
-- [Word Factor Complexity](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
+- [Factor complexity of an infinite word](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
 
 ## Sources
 

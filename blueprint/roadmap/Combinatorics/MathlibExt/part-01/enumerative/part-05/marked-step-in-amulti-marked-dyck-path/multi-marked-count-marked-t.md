@@ -6,17 +6,18 @@ statement: formalized
 lean: MetaMathlibExt.multiMarkedCountMarkedT
 ---
 
-# Multi Marked Count Marked T
+# Number of marked steps of a given index
 
-Grouped count statistic `N*_t(P)`: number of marked steps with index
-exactly `t` in the ordered step sequence. Concept
-`jis_sem_ee7327c841ed4326952fd4fb`;
-source statement `jis_54a13fcd4eb84116f24d6935`.
+**Number of marked steps of a given index.** For a finite sequence $P$ of multi-marked steps
+(horizontal steps $E$, plain vertical steps $N$ and marked vertical steps $N^*_s$ with index
+$s \ge 2$) and a natural number $t$, $N^*_t(P)$ is the number of marked steps in $P$ whose index
+is exactly $t$.
 
 ## Depends on
 
-- [Multi Marked Step](multi-marked-step.md)
+- [Steps of a multi-marked Dyck path](multi-marked-step.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MarkedStepInAMultiMarkedDyckPath](../../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_ee7327c841ed4326952fd4fb`; source statement `jis_54a13fcd4eb84116f24d6935`.

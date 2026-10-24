@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.ArePolyFareyNeighbors
 ---
 
-# Are Poly Farey Neighbors
+# Neighbouring fractions in the polynomial Farey series
 
-`u / v` and `h / k` in `𝓕ₙ` are neighbours: `u / v` is a `deg v`-neighbour of
-`h / k` and `h / k` is a `deg k`-neighbour of `u / v`.
+**Neighbouring fractions in the polynomial Farey series.** Let $F$ be a field and let
+$n \in \mathbb N$. Two pairs $(u, v)$ and $(h, k)$ of polynomials over $F$, read as the fractions
+$u/v$ and $h/k$, are neighbours in the Farey series $\mathcal F_n$ of order $n$ over $F$ when
+$u/v$ is a $(\deg v)$-neighbour of $h/k$ in $\mathcal F_n$ and $h/k$ is a $(\deg k)$-neighbour of
+$u/v$ in $\mathcal F_n$. In particular, both fractions then lie in $\mathcal F_n$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Poly Farey Deg Neighbor](is-poly-farey-deg-neighbor.md)
+- [Degree neighbours in the polynomial Farey series](is-poly-farey-deg-neighbor.md)
 
 ## Sources
 

@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fib Word](../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-word.md)
+- [Finite Fibonacci words](../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-word.md)
 - [Fibonacci Nu Morphism](fibonacci-nu-morphism.md)
 
 ## Sources

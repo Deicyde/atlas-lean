@@ -17,7 +17,7 @@ natural-valued.
 - [Square Set](square-set.md)
 - [Weighted Consecutive Constant](weighted-consecutive-constant.md)
 - [Weighted Consecutive Defining Set](weighted-consecutive-defining-set.md)
-- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
+- [Weighted Davenport constant](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 - [Zmod Weight Reps](zmod-weight-reps.md)
 
 ## Sources

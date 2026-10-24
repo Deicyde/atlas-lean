@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Matching.GaleShapley.WPrefs
 ---
 
-# WPrefs
+# Women's preference profile
 
-Preferences of `W` over `M`.
+**Women's preference profile.** For types $M$ and $W$, a preference profile of $W$ over $M$
+assigns to each $w \in W$ a strict total order on $M$, read as the strict preference of $w$
+among the elements of $M$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Strict Total Order](strict-total-order.md)
+- [Strict preference order](strict-total-order.md)
 
 ## Sources
 

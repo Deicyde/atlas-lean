@@ -14,7 +14,7 @@ Narayana's cows sequence are Sierpiński numbers (`IsSierpinskiNumber`: odd `k` 
 ## Depends on
 
 - [Is Sierpinski Number](../../part-16/sierpinski-riesel-repdigits-wanted/is-sierpinski-number.md)
-- [Narayana Sequence](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-06/narayana-cows-sequence.md)
+- [Narayana's cows sequence](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-06/narayana-cows-sequence.md)
 
 ## Sources
 

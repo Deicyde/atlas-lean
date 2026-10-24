@@ -7,19 +7,20 @@ proof: formalized
 lean: PeriodPair.isHomothetic_equivalence
 ---
 
-# Is Homothetic equivalence
+# Homothety of period pairs is an equivalence relation
 
-Homothety of period pairs is an equivalence relation.
+**Homothety of period pairs is an equivalence relation.** On period pairs,
+homothety is reflexive, symmetric and transitive.
 
 ## Depends on
 
-- [Is Homothetic](is-homothetic.md)
+- [Homothetic period pairs](is-homothetic.md)
 
 ## Proof depends on
 
-- [Refl](refl.md)
-- [Symm](symm.md)
-- [Trans](trans.md)
+- [Homothety of period pairs is reflexive](refl.md)
+- [Homothety of period pairs is symmetric](symm.md)
+- [Homothety of period pairs is transitive](trans.md)
 
 ## Sources
 

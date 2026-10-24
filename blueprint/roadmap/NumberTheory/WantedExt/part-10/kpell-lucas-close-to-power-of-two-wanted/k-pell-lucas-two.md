@@ -13,7 +13,7 @@ For `k = 2` the sequence is the Pell–Lucas sequence `2, 2, 6, 14, 34, …`.
 ## Depends on
 
 - [K Pell Lucas](k-pell-lucas.md)
-- [Pell Lucas Number](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-06/pell-lucas.md)
+- [Pell–Lucas numbers](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-06/pell-lucas.md)
 
 ## Sources
 

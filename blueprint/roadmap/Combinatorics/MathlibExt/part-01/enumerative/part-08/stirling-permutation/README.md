@@ -5,5 +5,5 @@ navigation: module
 
 # Stirling Permutation
 
-- [Is Stirling Permutation](is-stirling-permutation.md)
-- [Stirling Perm Set](stirling-perm-set.md)
+- [Stirling permutations](is-stirling-permutation.md)
+- [The set of Stirling permutations](stirling-perm-set.md)

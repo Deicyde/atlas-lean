@@ -16,9 +16,9 @@ lean: MetaMathlibExt.oddDesignatedSummandsCount_zero
 
 ## Proof depends on
 
-- [Constant Coeff q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/constant-coeff-q-euler-product.md)
+- [Constant term of the Euler products](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/constant-coeff-q-euler-product.md)
 - [Odd Designated Summands Count generating Function](odd-designated-summands-count-generating.md)
-- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

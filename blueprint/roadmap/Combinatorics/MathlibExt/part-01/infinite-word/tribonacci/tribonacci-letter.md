@@ -6,9 +6,10 @@ statement: formalized
 lean: InfiniteWord.TribonacciLetter
 ---
 
-# Tribonacci Letter
+# The Tribonacci alphabet
 
-The three-letter alphabet of the Tribonacci word.
+**The Tribonacci alphabet.** The Tribonacci word is written over the three-letter alphabet
+whose letters are $a$, $b$ and $c$.
 
 ## Depends on
 

@@ -6,19 +6,21 @@ proof: formalized
 lean: MetaMathlibExt.rStirlingSecond_add_add_eq_generalizedStirlingSecond
 ---
 
-# R Stirling Second add add eq generalized Stirling Second
+# r-Stirling numbers as generalized Stirling numbers
 
-Bridge to the real-parameter generalized Stirling numbers:
-`{n+r \brace m+r}_r = generalizedStirlingSecond n m r`.
+**r-Stirling numbers as generalized Stirling numbers.** For all natural numbers $n$, $m$
+and $r$, the r-Stirling number of the second kind ${n+r \brace m+r}_r$, viewed as a real number,
+equals the generalized Stirling number of the second kind of $n$ and $m$ (after Carlitz and
+Broder) at the real parameter $x = r$.
 
 ## Depends on
 
-- [Generalized Stirling Second](../../part-04/generalized-stirling-numbers/generalized-stirling-second.md)
-- [R Stirling Second](r-stirling-second.md)
+- [Generalized Stirling numbers of the second kind](../../part-04/generalized-stirling-numbers/generalized-stirling-second.md)
+- [r-Stirling numbers of the second kind](r-stirling-second.md)
 
 ## Proof depends on
 
-- [R Stirling Second add add](r-stirling-second-add-add.md)
+- [Finite-sum formula for r-Stirling numbers of the second kind](r-stirling-second-add-add.md)
 
 ## Sources
 

@@ -6,10 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.multipleBinomialTransform
 ---
 
-# Multiple Binomial Transform
+# Multiple binomial transform
 
-The `n`-fold binomial transform of an integer sequence, obtained by applying
-`binomialTransform` successively `n` times. The zero-fold transform is the identity.
+**Multiple binomial transform.** The binomial transform sends an integer sequence
+$(a_i)_{i \ge 0}$ to the sequence $(b_n)_{n \ge 0}$ given by
+$b_n = \sum_{i=0}^{n} \binom{n}{i} a_i$. For a natural number $r$, the $r$-fold binomial
+transform of $a$ is obtained by applying the binomial transform $r$ times in succession; the
+$0$-fold transform of $a$ is $a$ itself.
 
 * Jiaqiang Pan, *Multiple Binomial Transforms and Families of Integer Sequences*,
   Journal of Integer Sequences 13 (2010), lines 128–150:
@@ -31,7 +34,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Binomial Transform](../part-03/falling-kbinomial-transform/binomial-transform.md)
+- [Binomial transform](../part-03/falling-kbinomial-transform/binomial-transform.md)
 
 ## Sources
 

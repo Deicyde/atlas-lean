@@ -15,7 +15,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Thue Morse Substitution](../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse-substitution.md)
+- [Thue–Morse substitution](../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse-substitution.md)
 
 ## Sources
 

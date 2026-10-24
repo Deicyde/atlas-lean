@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.UnitNormCurveDerivOrthogonalWanted.inner_deriv_self_eq_zero_of_norm_eq_one
 ---
 
-# Unit Norm Curve Deriv Orthogonal Wanted
+# A unit-norm curve in $\mathbb{R}^3$ is orthogonal to its derivative
 
-Suppose $f$ is a differentiable mapping of $R^1$ into $R^3$ such that $|f(t)|=1$ for every $t$.
-Prove that $f'(t)\cdot f(t)=0$.
+**A unit-norm curve in $\mathbb{R}^3$ is orthogonal to its derivative.** Let
+$f : \mathbb{R} \to \mathbb{R}^3$ be a differentiable map such that $\|f(t)\| = 1$ for every real
+$t$, where $\|\cdot\|$ is the Euclidean norm. Then $\langle f'(t), f(t) \rangle = 0$ for every
+real $t$, where $\langle \cdot, \cdot \rangle$ is the standard inner product on $\mathbb{R}^3$.
 
 ## Depends on
 

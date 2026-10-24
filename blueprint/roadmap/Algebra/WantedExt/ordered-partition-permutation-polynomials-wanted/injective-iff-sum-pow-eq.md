@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.injective_iff_sum_pow_eq
 ---
 
-# Injective iff sum pow eq
+# Power-sum criterion for distinct elements of a finite field
 
-Elements `a₁, …, a_q` of the finite field `K` with `q` elements are distinct if and only
-if `∑ aᵢ^t = 0` for `t = 0, 1, …, q - 2` and `∑ aᵢ^(q-1) = -1` (with `0 ^ 0 = 1`).
+**Power-sum criterion for distinct elements of a finite field.** Let $K$ be a finite field
+with $q$ elements and let $a_1, \dots, a_q \in K$. Then $a_1, \dots, a_q$ are pairwise distinct
+if and only if $\sum_{i=1}^{q} a_i^t = 0$ for every $t = 0, 1, \dots, q - 2$ and
+$\sum_{i=1}^{q} a_i^{q-1} = -1$, where $0^0 = 1$.
 
 ## Depends on
 

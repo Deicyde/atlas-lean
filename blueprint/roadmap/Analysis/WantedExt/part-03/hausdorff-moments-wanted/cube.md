@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Analysis.HausdorffMomentsWanted.Analysis.cube
 ---
 
-# Cube
+# Unit cube of the Hausdorff moment problem
 
-The closed unit cube `Iᵈ = [0,1]ᵈ ⊆ ℝᵈ`.
+**Unit cube of the Hausdorff moment problem.** For $d \in \mathbb{N}$, the closed unit cube
+$I^d = [0,1]^d$ is the set of points $x \in \mathbb{R}^d$ with $0 \le x_i \le 1$ for every
+coordinate $i$.
 
 ## Depends on
 

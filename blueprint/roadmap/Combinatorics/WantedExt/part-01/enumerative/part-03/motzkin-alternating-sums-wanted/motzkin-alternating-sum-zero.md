@@ -16,8 +16,8 @@ lean: MetaMathlibExt.motzkinAlternatingSum_zero
 
 ## Proof depends on
 
-- [Motzkin Number](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
-- [Motzkin Number zero](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number-zero.md)
+- [Motzkin numbers as a Catalan-weighted binomial sum](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
+- [Value of the Motzkin number at 0](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number-zero.md)
 
 ## Sources
 

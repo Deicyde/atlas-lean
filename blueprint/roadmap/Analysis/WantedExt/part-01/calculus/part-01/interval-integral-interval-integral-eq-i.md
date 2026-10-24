@@ -5,14 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.IteratedIntegralCauchyFormulaWanted.intervalIntegral_intervalIntegral_eq_integral_sub_smul
 ---
 
-# Iterated Integral Cauchy Formula Wanted
+# Cauchy's formula for the twice-iterated integral
 
-For $f\in C([\alpha,\beta],E)$, show
+**Cauchy's formula for the twice-iterated integral.** Let $E$ be a real Banach space, let
+$\alpha \le \beta$ be real numbers and let $f : \mathbb{R} \to E$ be continuous on
+$[\alpha, \beta]$. Then for every $s \in [\alpha, \beta]$,
 
-\[
-\int_{\alpha}^{s}\left(\int_{\alpha}^{t} f(\tau)\,d\tau\right)\,dt=\int_{\alpha}^{s} (s-t)f(t)\,dt
-\qquad \text{for } s\in[\alpha,\beta].
-\]
+$$\int_\alpha^s \Bigl(\int_\alpha^t f(\tau)\,d\tau\Bigr)\,dt = \int_\alpha^s (s - t)\, f(t)\,dt.$$
 
 ## Depends on
 

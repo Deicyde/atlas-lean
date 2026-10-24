@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.polyPowerSum_one
 ---
 
-# Poly Power Sum one
+# The first power sum is the first elementary symmetric function
 
-`p_1(P) = e_1(P)`.
+**The first power sum is the first elementary symmetric function.** For every polynomial $P$
+over a commutative ring, $p_1(P) = e_1(P)$.
 
 ## Depends on
 
-- [Poly Elem Symm](poly-elem-symm.md)
-- [Poly Power Sum](poly-power-sum.md)
+- [Elementary symmetric functions of a polynomial](poly-elem-symm.md)
+- [Power sums of a polynomial](poly-power-sum.md)
 
 ## Sources
 

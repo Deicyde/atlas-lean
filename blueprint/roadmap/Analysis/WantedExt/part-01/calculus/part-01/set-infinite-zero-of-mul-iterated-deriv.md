@@ -5,14 +5,16 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.BesselTypeOdeInfinitelyManyZerosWanted.setInfinite_zero_of_mul_iteratedDeriv_two_add_two_deriv_add_eq_zero
 ---
 
-# Bessel Type Ode Infinitely Many Zeros Wanted
+# Solutions of $xu''+2u'+u=0$ have infinitely many zeros
 
-Consider the following second order linear equation for $u=u(x)$:
-\[
-x\frac{d^2u}{dx^2}+2\frac{du}{dx}+u=0.
-\]
+**Solutions of $xu''+2u'+u=0$ have infinitely many zeros.** Let $u : \mathbb{R} \to \mathbb{R}$
+be twice continuously differentiable on $(0,\infty)$ and satisfy
 
-Prove that all nontrivial real-valued solutions have infinite number of zeroes on $(1,\infty)$.
+$$
+x\,u''(x)+2u'(x)+u(x)=0 \quad \text{for all } x>0.
+$$
+
+If $u(x) \ne 0$ for some $x>0$, then $u$ has infinitely many zeros in $(1,\infty)$.
 
 ## Depends on
 

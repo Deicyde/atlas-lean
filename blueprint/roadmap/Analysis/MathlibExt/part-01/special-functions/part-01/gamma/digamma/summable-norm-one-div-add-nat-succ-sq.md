@@ -7,11 +7,14 @@ proof: formalized
 lean: Complex.summable_norm_one_div_add_nat_succ_sq
 ---
 
-# Summable norm one div add nat succ sq
+# Absolute convergence of the trigamma series
 
-The trigamma series `∑ 1 / (z + k + 1)²` converges absolutely for every `z : ℂ`.
-At a pole `z = -(k + 1)` Lean's totalized division makes that term `0`, so no
-pole-avoidance hypothesis is needed.
+**Absolute convergence of the trigamma series.** For every complex number $z$, the series
+$\sum_{k \ge 0} \frac{1}{(z + k + 1)^2}$ converges absolutely, that is, the series of absolute
+values $\sum_{k \ge 0} \left|\frac{1}{(z + k + 1)^2}\right|$ is summable, where a term whose
+denominator vanishes is read as $0$.
+
+Because of this convention no hypothesis excluding the poles $z = -(k + 1)$ is needed.
 
 ## Depends on
 

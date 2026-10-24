@@ -18,7 +18,7 @@ Proposition 33: for `n ≥ 16`, `k = ⌊log₂ n⌋`, `n = 2^k + i`: `p_𝒬(n)`
 
 - [Right Special Factors](right-special-factors.md)
 - [Thue Morse Quarto](thue-morse-quarto.md)
-- [Word Factor Complexity](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
+- [Factor complexity of an infinite word](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
 
 ## Sources
 

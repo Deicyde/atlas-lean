@@ -6,12 +6,14 @@ statement: formalized
 lean: MathlibExt.Analysis.NyquistShannonWanted.Analysis.NyquistShannon.sinc
 ---
 
-# Sinc
+# Unnormalised cardinal sine
 
-The unnormalised cardinal sine, with the removable singularity filled by
-the standard value `1`.  Knill writes `sinc x = sin x / x`; the reconstruction
-formula evaluates this at `0` when `t` is an integer, so the total version is
-the faithful formal spelling.
+**Unnormalised cardinal sine.** The function $\operatorname{sinc} \colon \mathbb{R} \to
+\mathbb{C}$ is defined by $\operatorname{sinc}(x) = \frac{\sin x}{x}$ for $x \neq 0$ and
+$\operatorname{sinc}(0) = 1$, the value that removes the singularity at $0$. Its values are real.
+
+The Whittaker–Shannon interpolation formula evaluates $\operatorname{sinc}$ at $0$ at the integer
+sample points, so the value at $0$ is part of the definition.
 
 ## Depends on
 

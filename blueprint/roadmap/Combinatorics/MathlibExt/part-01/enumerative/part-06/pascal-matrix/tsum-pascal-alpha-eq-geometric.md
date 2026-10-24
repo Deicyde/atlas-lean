@@ -7,19 +7,22 @@ proof: formalized
 lean: MetaMathlibExt.tsum_pascalAlpha_eq_geometric
 ---
 
-# Tsum pascal Alpha eq geometric
+# Total generating function of the Pascal matrix
 
-The total generating function of the infinite Pascal matrix.
+**Total generating function of the Pascal matrix.** For every real number $x$ with
+$|x| < 1/2$, the sum $\sum_{j \ge 0} \alpha_j(x)$ of the column generating functions of the
+infinite Pascal matrix equals $\sum_{i \ge 0} (2x)^i$, and
+$\sum_{i \ge 0} (2x)^i = \frac{1}{1 - 2x}$.
 
 ## Depends on
 
-- [Pascal Alpha](pascal-alpha.md)
+- [Column generating functions of the Pascal matrix](pascal-alpha.md)
 
 ## Proof depends on
 
-- [Pascal Entry](pascal-entry.md)
-- [Tsum pascal Alpha eq](tsum-pascal-alpha-eq.md)
-- [Tsum pascal Entry comm](tsum-pascal-entry-comm.md)
+- [Entries of the infinite Pascal matrix](pascal-entry.md)
+- [Summing the Pascal column generating functions](tsum-pascal-alpha-eq.md)
+- [Reversing the order of summation in the Pascal matrix](tsum-pascal-entry-comm.md)
 
 ## Sources
 

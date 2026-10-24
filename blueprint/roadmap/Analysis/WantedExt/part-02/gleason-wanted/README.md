@@ -5,9 +5,9 @@ navigation: module
 
 # Gleason
 
-- [Is Orth Proj](is-orth-proj.md)
-- [Frame Function](frame-function.md)
-- [Re Tr](re-tr.md)
-- [Gleason theorem finite](gleason-theorem-finite.md)
-- [Sphere Frame Function](sphere-frame-function.md)
-- [Gleason theorem separable](gleason-theorem-separable.md)
+- [Orthogonal projection](is-orth-proj.md)
+- [Frame function on projections](frame-function.md)
+- [Real part of the trace](re-tr.md)
+- [Gleason's theorem in finite dimensions](gleason-theorem-finite.md)
+- [Frame function on the unit sphere](sphere-frame-function.md)
+- [Gleason's theorem for separable Hilbert spaces](gleason-theorem-separable.md)

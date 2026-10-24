@@ -7,10 +7,10 @@ proof: formalized
 lean: MetaMathlibExt.ramanujan_partition_congruence_mod_seven
 ---
 
-# Ramanujan partition congruence mod seven
+# Ramanujan's congruence modulo 7
 
-Ramanujan's partition congruence modulo 7: the number of unordered partitions of
-`7 * m + 5` is divisible by 7 for every `m : ℕ`.
+**Ramanujan's congruence modulo 7.** For every natural number $m$, the number of partitions
+of $7m + 5$ is divisible by $7$.
 
 ## Depends on
 
@@ -18,12 +18,12 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Coeff jacobi Cube Series eq zero](coeff-jacobi-cube-series-eq-zero.md)
-- [Coeff jacobi Cube Series triangle](coeff-jacobi-cube-series-triangle.md)
-- [Dvd partition Function of dvd coeff pentagonal Series pow](dvd-partition-function-of-dvd-coeff-pent.md)
-- [Jacobi Cube Series](jacobi-cube-series.md)
-- [Pentagonal Series pow three](pentagonal-series-pow-three.md)
-- [Two mul choose two succ](two-mul-choose-two-succ.md)
+- [Vanishing coefficients of Jacobi's cube series](coeff-jacobi-cube-series-eq-zero.md)
+- [Coefficients of Jacobi's cube series at triangular numbers](coeff-jacobi-cube-series-triangle.md)
+- [Partition congruences from a power of Euler's series](dvd-partition-function-of-dvd-coeff-pent.md)
+- [Jacobi's cube series](jacobi-cube-series.md)
+- [Jacobi's cube identity](pentagonal-series-pow-three.md)
+- [Twice a triangular number](two-mul-choose-two-succ.md)
 
 ## Sources
 

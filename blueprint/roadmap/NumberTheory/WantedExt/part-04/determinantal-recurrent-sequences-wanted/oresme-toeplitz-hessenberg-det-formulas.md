@@ -29,7 +29,7 @@ determinant is `8 = 2^2 P_2`). Negative powers of `2` are written as divisions.
 - [Lucas Sequence Params](../../../MathlibExt/part-08/lucas-sequence/lucas-sequence-params.md)
 - [Lucas Number](../../../MathlibExt/part-08/lucas-sequence/lucas-number.md)
 - [Lucas U](../../../MathlibExt/part-08/lucas-sequence/lucas-u.md)
-- [Pell Lucas Number](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-06/pell-lucas.md)
+- [Pell–Lucas numbers](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-06/pell-lucas.md)
 - [Pell Number Sequence](../../../MathlibExt/part-09/pell-number.md)
 
 ## Sources

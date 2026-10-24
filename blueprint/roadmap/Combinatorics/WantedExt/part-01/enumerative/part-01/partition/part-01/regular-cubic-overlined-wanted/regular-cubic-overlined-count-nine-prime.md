@@ -13,7 +13,7 @@ For a prime `p ≥ 5` with `(-2/p) = -1`, all `δ, n ≥ 0` and `1 ≤ t ≤ p -
 
 ## Depends on
 
-- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 - [Regular Cubic Overlined Count](regular-cubic-overlined-count.md)
 
 ## Sources

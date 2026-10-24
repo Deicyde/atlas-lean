@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Analysis.RisingSunWanted.Analysis.RisingSun.HasRisingSunProperty
 ---
 
-# Has Rising Sun Property
+# Rising sun property
 
-The rising-sun property on `[a,b]`.
+**Rising sun property.** Let $a, b$ be real numbers, let $f : \mathbb{R} \to \mathbb{R}$, and
+let $S$ be the rising sun set of $f$ on $(a, b)$. Then $f$ has the rising sun property on
+$[a, b]$ if $S$ is open, $S$ is empty if and only if $f$ is antitone (non-increasing) on
+$[a, b]$, and, whenever $S$ is nonempty, $S$ has a rising sun decomposition for $f$.
 
 ## Depends on
 
@@ -16,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Rising Sun Decomposition](has-rising-sun-decomposition.md)
-- [Rising Sun Set](rising-sun-set.md)
+- [Rising sun decomposition](has-rising-sun-decomposition.md)
+- [Rising sun set](rising-sun-set.md)
 
 ## Sources
 

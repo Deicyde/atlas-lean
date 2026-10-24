@@ -15,7 +15,7 @@ progression when `r₁ ≥ 2`.
 
 - [Generalized HFold Sumset](generalized-hfold-sumset.md)
 - [Yang Chen Bound](yang-chen-bound.md)
-- [Is APOf Length](../../../../MathlibExt/part-01/ap/basic/is-apof-length.md)
+- [Sets that are arithmetic progressions](../../../../MathlibExt/part-01/ap/basic/is-apof-length.md)
 
 ## Sources
 

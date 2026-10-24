@@ -5,12 +5,12 @@ navigation: module
 
 # Ising Phase Transition
 
-- [Ising Site](ising-site.md)
-- [Spin Value](spin-value.md)
-- [Right Neighbour](right-neighbour.md)
-- [Up Neighbour](up-neighbour.md)
-- [Ising Energy](ising-energy.md)
-- [Ising Partition Function](ising-partition-function.md)
-- [Finite Ising Free Energy](finite-ising-free-energy.md)
+- [Sites of the periodic square lattice](ising-site.md)
+- [Numerical value of a spin](spin-value.md)
+- [Right neighbour](right-neighbour.md)
+- [Upward neighbour](up-neighbour.md)
+- [Energy of an Ising configuration](ising-energy.md)
+- [Ising partition function](ising-partition-function.md)
+- [Finite-volume Ising free energy density](finite-ising-free-energy.md)
 - [Finite Ising Free Energy Seq](finite-ising-free-energy-seq.md)
-- [Ising 2d phase transition](ising-2d-phase-transition.md)
+- [Onsager's phase transition for the two-dimensional Ising model](ising-2d-phase-transition.md)

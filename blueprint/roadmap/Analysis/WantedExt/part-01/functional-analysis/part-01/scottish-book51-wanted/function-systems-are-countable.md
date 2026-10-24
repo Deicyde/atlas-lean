@@ -5,19 +5,19 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.ScottishBook51Wanted.FunctionSystemsAreCountable
 ---
 
-# Function Systems Are Countable
+# Countability of orthogonal systems of functions
 
-The function part of the claim of Problem 51: every pairwise-orthogonal
-family of measurable functions on `[0, 1]` is at most countable.
-Orthogonality means the product is integrable with integral `0`. No
-square-integrability is assumed. An orthogonal system is taken modulo
-almost-everywhere equality: every member is nonzero a.e., and `S`
-contains at most one representative of each a.e.-equality class. The
-second clause is needed alongside orthogonality for a.e.-distinct pairs:
-without it, uncountably many a.e.-equal copies of one function would
-satisfy the orthogonality hypothesis vacuously. The singleton
-indicators `δ_a` are excluded by the first clause, since each is zero
-almost everywhere.
+**Countability of orthogonal systems of functions.** Let $\lambda$ be Lebesgue measure on
+$[0, 1]$. This is the statement that every set $S$ of functions $[0, 1] \to \mathbb{R}$ with the
+following three properties is at most countable: no member of $S$ is $\lambda$-almost everywhere
+equal to $0$; any two members of $S$ that are equal $\lambda$-almost everywhere are equal; and
+any two members $f, g$ of $S$ that are not equal $\lambda$-almost everywhere are measurable, have
+$\lambda$-integrable product $fg$, and satisfy $\int_{[0, 1]} f g \, d\lambda = 0$.
+
+No square-integrability is assumed. Without the second property, uncountably many
+almost-everywhere-equal copies of one function would satisfy the orthogonality condition
+vacuously. The first property excludes the indicator functions of single points, each of which
+is zero almost everywhere.
 
 ## Depends on
 

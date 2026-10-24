@@ -7,13 +7,15 @@ proof: formalized
 lean: Real.IsDickmanDeBruijn.mapsTo_Ici_Icc
 ---
 
-# Maps To Ici Icc
+# Range of the Dickman–de Bruijn function on the nonnegative reals
 
-A Dickman–de Bruijn function maps nonnegative inputs into `[0, 1]`.
+**Range of the Dickman–de Bruijn function on the nonnegative reals.** If
+$\rho : \mathbb{R} \to \mathbb{R}$ is a Dickman–de Bruijn function, then $0 \le \rho(u) \le 1$
+for every real $u \ge 0$.
 
 ## Depends on
 
-- [Is Dickman De Bruijn](is-dickman-de-bruijn.md)
+- [Dickman–de Bruijn functions](is-dickman-de-bruijn.md)
 
 ## Sources
 

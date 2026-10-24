@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.IsDoubleDescentAt
 ---
 
-# Is Double Descent At
+# Double descent of a permutation
 
-Position `i` is a double descent of `σ`: `i + 2 < n` and `σ i > σ (i + 1) > σ (i + 2)`.
+**Double descent of a permutation.** Let $\sigma$ be a permutation of $\{0, 1, \dots, n-1\}$.
+A position $i$ is a double descent of $\sigma$ if $i + 2 < n$ and
+$\sigma(i) > \sigma(i+1) > \sigma(i+2)$.
 
 ## Depends on
 

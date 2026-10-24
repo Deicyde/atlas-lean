@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.ContinuousHolomorphicOffAxesEntireWanted.imagAxis
 ---
 
-# Imag Axis
+# Imaginary axis
 
-The imaginary axis `{z : ℂ | z.re = 0}`.
+**Imaginary axis.** The imaginary axis is the set
+$\{z \in \mathbb{C} : \operatorname{Re} z = 0\}$.
 
 ## Depends on
 

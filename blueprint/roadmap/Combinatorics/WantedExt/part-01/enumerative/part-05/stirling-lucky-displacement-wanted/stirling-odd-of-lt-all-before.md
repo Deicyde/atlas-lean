@@ -14,7 +14,7 @@ Let `w ∈ Q_n` and let `j` be the first car preferring spot `k = w(j)`. If
 
 ## Depends on
 
-- [Is Stirling Permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
+- [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
 
 ## Sources
 

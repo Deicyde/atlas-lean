@@ -4,5 +4,5 @@ navigation: module
 
 # Scottish Book167
 
-- [Scottish Book Problem167 Claim](scottish-book-problem167-claim.md)
-- [Ulam167 refuted](ulam167-refuted.md)
+- [Scottish Book Problem 167](scottish-book-problem167-claim.md)
+- [Negative answer to Scottish Book Problem 167](ulam167-refuted.md)

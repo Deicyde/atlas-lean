@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.tsum_nat_mul_catalan_mul_harmonic_special
 ---
 
-# Tsum nat mul catalan mul harmonic special
+# Special values of the $n$-weighted Catalan–harmonic series
 
-Theorem 7 (special values, `z = 1` and `z = 3/2`):
-`Σ_{n≥1} (n C_n/2^{2n}) H_{n+1}/(n + 1) = 2π²/3 - 4` and
-`Σ_{n≥1} n O_{n+2}/((n + 1)(2n + 1)(2n + 3)) = 13/4 - 2 ln 2 - π²/6` (the `n = 0` terms vanish).
+**Special values of the $n$-weighted Catalan–harmonic series.** Let $C_n$ be the $n$-th
+Catalan number, $H_k = \sum_{j=1}^{k} 1/j$ the $k$-th harmonic number and
+$O_k = \sum_{j=1}^{k} 1/(2j-1)$ the $k$-th odd harmonic number. Then
+
+$$\sum_{n=0}^{\infty} \frac{n\,C_n H_{n+1}}{4^n (n+1)} = \frac{2\pi^2}{3} - 4$$
+
+and
+
+$$\sum_{n=0}^{\infty} \frac{n\,O_{n+2}}{(n+1)(2n+1)(2n+3)} =
+\frac{13}{4} - 2\ln 2 - \frac{\pi^2}{6}.$$
 
 ## Depends on
 

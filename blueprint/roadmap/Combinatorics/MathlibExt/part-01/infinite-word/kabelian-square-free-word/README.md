@@ -5,10 +5,10 @@ navigation: module
 
 # KAbelian Square Free Word
 
-- [Word Factor Count](word-factor-count.md)
-- [Is KAbelian Equivalent](is-kabelian-equivalent.md)
-- [Is KAbelian Square](is-kabelian-square.md)
-- [Is KAbelian Square Free](is-kabelian-square-free.md)
-- [Is Three Abelian Equivalent](is-three-abelian-equivalent.md)
-- [Is Three Abelian Square](is-three-abelian-square.md)
-- [Is Three Abelian Square Free](is-three-abelian-square-free.md)
+- [Number of occurrences of a factor](word-factor-count.md)
+- [$k$-abelian equivalence](is-kabelian-equivalent.md)
+- [$k$-abelian squares](is-kabelian-square.md)
+- [$k$-abelian square-free words](is-kabelian-square-free.md)
+- [$3$-abelian equivalence of ternary words](is-three-abelian-equivalent.md)
+- [$3$-abelian squares over a ternary alphabet](is-three-abelian-square.md)
+- [$3$-abelian square-free ternary words](is-three-abelian-square-free.md)

@@ -7,9 +7,10 @@ proof: formalized
 lean: MetaMathlibExt.staver_sign_sq
 ---
 
-# Staver sign sq
+# Squares of powers of minus one
 
-Square of a signed power is one.
+**Squares of powers of minus one.** For every natural number $k$, we have
+$(-1)^k \cdot (-1)^k = 1$ in $\mathbb{Q}$.
 
 ## Depends on
 

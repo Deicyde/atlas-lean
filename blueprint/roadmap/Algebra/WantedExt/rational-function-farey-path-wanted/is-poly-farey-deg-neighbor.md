@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.IsPolyFareyDegNeighbor
 ---
 
-# Is Poly Farey Deg Neighbor
+# Degree neighbours in the polynomial Farey series
 
-`h / k` is a `deg k`-neighbour of `u / v` in `𝓕ₙ`: both fractions lie in `𝓕ₙ`,
-they are distinct as rational functions,
-and `|u/v - h/k| ≤ |u/v - h'/k'|` for every `h'/k' ∈ 𝓕ₙ` other than `u / v` with
-`deg k' = deg k`, where `|·|` is the degree valuation (`RatFunc.inftyValuation`).
-The fraction `u / v` itself is excluded from the comparison, as the paper's
-counts (Theorem 3 with `t = 0`, Figure 1) require.
+**Degree neighbours in the polynomial Farey series.** Let $F$ be a field, let $n \in \mathbb N$,
+and let $\mathcal F_n$ be the Farey series of order $n$ over $F$. For pairs $(u, v)$ and $(h, k)$
+of polynomials over $F$, read as the fractions $u/v$ and $h/k$, the fraction $h/k$ is a
+$(\deg k)$-neighbour of $u/v$ in $\mathcal F_n$ when both fractions lie in $\mathcal F_n$,
+$h/k \ne u/v$ as rational functions, and $|u/v - h/k| \le |u/v - h'/k'|$ for every
+$h'/k' \in \mathcal F_n$ with $\deg k' = \deg k$ and $h'/k' \ne u/v$. Here $|\cdot|$ is the
+valuation of $F(X)$ at infinity, which orders nonzero rational functions $f/g$ by
+$\deg f - \deg g$ and puts $0$ below every nonzero value.
+
+The fraction $u/v$ itself is excluded from the comparison, as the paper's counts (Theorem 3 with
+$t = 0$, Figure 1) require.
 
 ## Depends on
 
@@ -20,8 +25,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Poly Farey Series](poly-farey-series.md)
-- [Poly Frac](poly-frac.md)
+- [Farey series over a field](poly-farey-series.md)
+- [The fraction of a pair of polynomials](poly-frac.md)
 
 ## Sources
 

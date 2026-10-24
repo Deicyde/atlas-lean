@@ -6,11 +6,13 @@ statement: formalized
 lean: MathlibExt.Analysis.BeurlingAhlfors.IwaniecConjecture
 ---
 
-# Iwaniec Conjecture
+# Iwaniec's conjecture
 
-Iwaniec's conjecture: `‖B‖ₚ = p* - 1` for every `1 < p` (equivalently
-the constant above equals `1`, given Lehto's lower bound). Stated as a
-proposition only.
+**Iwaniec's conjecture.** For every real number $p > 1$, the $L^p$ norm of the
+Beurling–Ahlfors transform $B$ satisfies $\|B\|_p = p^* - 1$, where $p^* = \max(p, p/(p-1))$.
+
+Given Lehto's lower bound $\|B\|_p \ge p^* - 1$, this is equivalent to the Beurling–Ahlfors
+constant being equal to $1$.
 
 ## Depends on
 
@@ -18,8 +20,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Beurling Norm](beurling-norm.md)
-- [Pstar](pstar.md)
+- [Norm of the Beurling–Ahlfors transform](beurling-norm.md)
+- [Larger of an exponent and its conjugate](pstar.md)
 
 ## Sources
 

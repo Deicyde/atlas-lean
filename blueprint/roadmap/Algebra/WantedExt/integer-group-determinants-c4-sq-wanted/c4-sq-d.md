@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.c4SqD
 ---
 
-# C4 Sq D
+# The differences $d_i$ of a function on $C_4^2$
 
-The paper's `d_i = a_i - a_{i+8}`, `0 ≤ i ≤ 7` (so `d_i = a (i, 0) - a (i, 2)`
-and `d_{i+4} = a (i, 1) - a (i, 3)` for `i ≤ 3`).
+**The differences $d_i$ of a function on $C_4^2$.** For
+$a \colon \mathbb{Z}/4 \times \mathbb{Z}/4 \to \mathbb{Z}$, the integers $d_0, \dots, d_7$ are
+$d_i = a(i, 0) - a(i, 2)$ and $d_{i+4} = a(i, 1) - a(i, 3)$ for $0 \le i \le 3$. Writing
+$a_{r + 4s}$ for $a(r, s)$, this is the paper's $d_i = a_i - a_{i+8}$ for $0 \le i \le 7$.
 
 ## Depends on
 

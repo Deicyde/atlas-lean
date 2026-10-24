@@ -4,5 +4,5 @@ navigation: module
 
 # Scottish Book173
 
-- [Scottish Book Problem173 Claim](scottish-book-problem173-claim.md)
-- [Eidelheit173 refuted](eidelheit173-refuted.md)
+- [Scottish Book Problem 173](scottish-book-problem173-claim.md)
+- [Negative answer to Scottish Book Problem 173](eidelheit173-refuted.md)

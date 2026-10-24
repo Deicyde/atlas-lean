@@ -5,11 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.ScottishBook44Wanted.LineInGraph
 ---
 
-# Line In Graph
+# Line lying in a graph
 
-A straight line through `(x₀, y₀, f x₀ y₀)` with direction `(u, v, w)`
-lies entirely in the graph of `f`: the line has a nonzero horizontal
-direction, and every point of the line satisfies the graph equation.
+**Line lying in a graph.** Let $f$ be a real-valued function of two real variables, and let
+$x_0, y_0, u, v, w$ be real numbers. The line through $(x_0, y_0, f(x_0, y_0))$ with direction
+$(u, v, w)$ lies in the graph of $f$ when $(u, v) \ne (0, 0)$ and
+$f(x_0 + tu, y_0 + tv) = f(x_0, y_0) + tw$ for every real $t$.
 
 ## Depends on
 

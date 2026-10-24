@@ -6,11 +6,20 @@ statement: formalized
 lean: MathlibExt.Analysis.AMR22Problem7082Wanted.conjecture
 ---
 
-# Conjecture
+# Extension problem for holomorphic motions
 
-Extension question from [AMR-022-7082] Problem 7.82 (Sullivan,
-Thurston, Royden): every `F` on `E × 𝔻` satisfying (a), (b), (c)
-extends to a `G` on `ℂ × 𝔻` satisfying (a), (b), (c).
+**Extension problem for holomorphic motions.** Let $\mathbb{D}$ be the open unit disc. The
+proposition asserts the following. Let $E$ be a set of complex numbers and $F$ a function
+assigning a complex number $F(w, z)$ to each pair of complex numbers $w, z$, such that (a) for
+every $z \in \mathbb{D}$ the map $w \mapsto F(w, z)$ is injective on $E$, (b) for every
+$w \in E$ the map $z \mapsto F(w, z)$ is analytic on $\mathbb{D}$, and (c) $F(w, 0) = w$ for
+every $w \in E$. Then there is a function $G$ of the same kind that satisfies (a), (b) and (c)
+with $E$ replaced by $\mathbb{C}$ and has $G(w, z) = F(w, z)$ for all $w \in E$ and all
+$z \in \mathbb{D}$.
+
+Conditions (a), (b) and (c) say that $F$ is a holomorphic motion of $E$ over $\mathbb{D}$; the
+question, due to Sullivan, Thurston and Royden, is whether every such motion extends to a
+holomorphic motion of the whole plane.
 
 ## Depends on
 
@@ -18,11 +27,12 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Agrees On Disc](agrees-on-disc.md)
-- [Is Analytic In Disc](is-analytic-in-disc.md)
-- [Is Injective In Param](is-injective-in-param.md)
-- [Is Normalized At Zero](is-normalized-at-zero.md)
+- [Agreement of two motions on a set](agrees-on-disc.md)
+- [Holomorphic dependence of a motion on the parameter](is-analytic-in-disc.md)
+- [Injectivity at each parameter of the disc](is-injective-in-param.md)
+- [Motion equal to the identity at parameter zero](is-normalized-at-zero.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.AMR22Problem7082Wanted](../../../../../sources/v2/WantedExt.md)
+- AMR-022-7082, Problem 7.82.

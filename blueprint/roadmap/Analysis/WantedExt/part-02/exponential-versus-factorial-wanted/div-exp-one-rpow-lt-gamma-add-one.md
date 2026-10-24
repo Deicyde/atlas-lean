@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.div_exp_one_rpow_lt_Gamma_add_one
 ---
 
-# Div exp one rpow lt Gamma add one
+# Lower bound $\Gamma(x + 1) > (x/e)^x$ for the Gamma function
 
-Lemma 9, first inequality: `Γ(x + 1) > (x / e)^x` for every real `x ≥ 1`.
+**Lower bound $\Gamma(x + 1) > (x/e)^x$ for the Gamma function.** For every real number
+$x \ge 1$, $\Gamma(x + 1) > (x/e)^x$.
 
 ## Depends on
 

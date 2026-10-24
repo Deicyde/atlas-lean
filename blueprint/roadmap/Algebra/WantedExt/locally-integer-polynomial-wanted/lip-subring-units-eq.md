@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.lipSubring_units_eq
 ---
 
-# Lemma 4
+# Units of $\mathrm{LIP}(U)$
 
-**Lemma 4** (units). For infinite `U ⊆ ℤ`, the only units of `LIP(U)` are `1` and `-1`.
+**Units of $\mathrm{LIP}(U)$.** For every infinite set $U \subseteq \mathbb{Z}$, the only
+units of the ring $\mathrm{LIP}(U)$ of locally integer polynomial functions on $U$ are the
+constant functions $1$ and $-1$.
 
 ## Depends on
 
-- [Lip Subring](lip-subring.md)
+- [The ring $\mathrm{LIP}(U)$ of locally integer polynomial functions](lip-subring.md)
 
 ## Sources
 

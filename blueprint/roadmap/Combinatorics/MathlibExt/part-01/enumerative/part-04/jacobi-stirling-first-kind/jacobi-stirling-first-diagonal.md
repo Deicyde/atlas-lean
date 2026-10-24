@@ -7,21 +7,23 @@ proof: formalized
 lean: MetaMathlibExt.jacobiStirlingFirst_diagonal
 ---
 
-# Jacobi Stirling First diagonal
+# Diagonal of the first-kind Jacobi–Stirling numbers
 
-Diagonal: `J(n,n;ζ) = 1`.
-Concept `jis_sem_108a092cfddb7cc6b11d221e`, from `e:JacobiStirling1`.
+**Diagonal of the first-kind Jacobi–Stirling numbers.** For every commutative ring $R$, every
+$\zeta \in R$ and every natural number $n$, the first-kind Jacobi–Stirling number
+$J(n,n;\zeta)$ equals $1$.
 
 ## Depends on
 
-- [Jacobi Stirling First](jacobi-stirling-first.md)
+- [First-kind Jacobi–Stirling numbers](jacobi-stirling-first.md)
 
 ## Proof depends on
 
-- [Jacobi Stirling First initial row](jacobi-stirling-first-initial-row.md)
-- [Jacobi Stirling First recurrence](jacobi-stirling-first-recurrence.md)
-- [Jacobi Stirling First support](jacobi-stirling-first-support.md)
+- [Initial row of the first-kind Jacobi–Stirling numbers](jacobi-stirling-first-initial-row.md)
+- [Recurrence for the first-kind Jacobi–Stirling numbers](jacobi-stirling-first-recurrence.md)
+- [First-kind Jacobi–Stirling numbers vanish above the diagonal](jacobi-stirling-first-support.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.JacobiStirlingFirstKind](../../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_108a092cfddb7cc6b11d221e`, from `e:JacobiStirling1`.

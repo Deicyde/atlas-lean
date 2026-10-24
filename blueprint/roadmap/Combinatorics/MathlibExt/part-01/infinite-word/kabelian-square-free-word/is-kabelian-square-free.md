@@ -6,10 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.IsKAbelianSquareFree
 ---
 
-# Is KAbelian Square Free
+# $k$-abelian square-free words
 
-A finite word is `k`-abelian square-free when none of its contiguous factors is a
-`k`-abelian square.
+**$k$-abelian square-free words.** For a natural number $k$, a finite word $w$ is
+$k$-abelian square-free when $k \ge 1$ and no factor of $w$ (a word $x$ with $w = pxs$ for some
+words $p$ and $s$) is a $k$-abelian square.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is KAbelian Square](is-kabelian-square.md)
+- [$k$-abelian squares](is-kabelian-square.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Source: Lovász (1979); the closed form is also printed in the retained BPZ prim
 
 ## Depends on
 
-- [Shannon Capacity Cycle](../../../../MathlibExt/part-01/coding/cycle-code/shannon-capacity-cycle.md)
+- [Shannon capacity of the modular cycle](../../../../MathlibExt/part-01/coding/cycle-code/shannon-capacity-cycle.md)
 - [Lovasz Theta Cycle Seven](lovasz-theta-cycle-seven.md)
 
 ## Sources

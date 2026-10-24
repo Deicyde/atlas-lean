@@ -15,10 +15,10 @@ ascent, `321` one double descent, `132` one peak and no valley, `213` one valley
 ## Depends on
 
 - [Pattern3](pattern3.md)
-- [Perm Double Ascents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-ascents.md)
-- [Perm Double Descents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-descents.md)
-- [Perm Peaks](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-peaks.md)
-- [Perm Valleys](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-valleys.md)
+- [Number of double ascents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-ascents.md)
+- [Number of double descents](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-double-descents.md)
+- [Number of peaks of a permutation](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-peaks.md)
+- [Number of valleys of a permutation](../../../../../MathlibExt/part-01/enumerative/part-07/permutation-statistics/perm-valleys.md)
 
 ## Sources
 

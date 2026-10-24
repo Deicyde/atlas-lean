@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.latticeCell
 ---
 
-# Lattice Cell
+# Lattice cells
 
-Lattice cells in ambient dimension `d`, as integer points `Fin d → ℤ`.
+**Lattice cells.** For a natural number $d$, a lattice cell in dimension $d$ is a point of
+$\mathbb{Z}^d$, that is, a function assigning an integer to each of the $d$ coordinate axes.
 
 ## Depends on
 

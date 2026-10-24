@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.polyContFract_nums_zero
 ---
 
-# Poly Cont Fract nums zero
+# Zeroth convergent numerator of a polynomial continued fraction
 
-`A₀ = a₀`.
+**Zeroth convergent numerator of a polynomial continued fraction.** Let $F$ be a field,
+let $a_0, a_1, \ldots$ be polynomials in $F[X]$ and let $n \in \mathbb{N}$. The numerator $A_0$
+of the zeroth convergent of the continued fraction $[a_0; a_1, \ldots, a_n]$ over $F(X)$ is
+$a_0$.
 
 ## Depends on
 
-- [Poly Cont Fract](poly-cont-fract.md)
+- [Finite continued fraction with polynomial partial quotients](poly-cont-fract.md)
 
 ## Sources
 

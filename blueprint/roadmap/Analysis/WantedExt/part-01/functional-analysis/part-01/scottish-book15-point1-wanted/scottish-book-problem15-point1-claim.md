@@ -5,10 +5,10 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.ScottishBook15Point1Wanted.ScottishBookProblem15Point1Claim
 ---
 
-# Scottish Book Problem15 Point1 Claim
+# Scottish Book Problem 15.1
 
-Mazur and Orlicz's Problem 15.1 from the Scottish Book: is every space
-`E` of type (F) that possesses a bounded sphere necessarily of type (B)?
+**Scottish Book Problem 15.1.** The claim of Mazur and Orlicz that every real vector space $E$
+with a topology that is of type (F) and contains a bounded sphere is of type (B).
 
 ## Depends on
 
@@ -16,10 +16,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Admits Banach Norm](admits-banach-norm.md)
-- [Is Bounded Set](is-bounded-set.md)
-- [Is Sphere](is-sphere.md)
-- [Is Type F](is-type-f.md)
+- [Spaces of type (B)](admits-banach-norm.md)
+- [Sequentially bounded sets](is-bounded-set.md)
+- [Spheres in the ray sense](is-sphere.md)
+- [Spaces of type (F)](is-type-f.md)
 
 ## Sources
 

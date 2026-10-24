@@ -6,22 +6,25 @@ statement: formalized
 lean: MetaMathlibExt.motzkinRiordanPair
 ---
 
-# Motzkin Riordan Pair
+# The canonical Motzkin Riordan pair
 
-The canonical Riordan pair defining the Motzkin triangle.
+**The canonical Motzkin Riordan pair.** Let $s \in \mathbb{Q}[[X]]$ be the canonical square
+root of $1 - 2X - 3X^2$, given by the binomial series, which has constant coefficient $1$. The
+canonical Motzkin Riordan pair is $(g, h)$ with $g = s^{-1}$ and $h = (1 - X - s)/(2X)$, the
+Motzkin Riordan pair conditions being witnessed by $s$.
 
 ## Depends on
 
-- [Motzkin Riordan Pair](motzkin-riordan-pair.md)
+- [Bundled Motzkin Riordan pairs](motzkin-riordan-pair.md)
 
 ## Proof depends on
 
-- [Is Motzkin Riordan Pair](is-motzkin-riordan-pair.md)
-- [Is Motzkin Square Root](is-motzkin-square-root.md)
-- [Motzkin Discriminant](motzkin-discriminant.md)
-- [Motzkin G](motzkin-g.md)
-- [Motzkin H](motzkin-h.md)
-- [Motzkin Square Root](motzkin-square-root.md)
+- [Motzkin Riordan pairs](is-motzkin-riordan-pair.md)
+- [Square roots of the Motzkin discriminant](is-motzkin-square-root.md)
+- [Motzkin discriminant](motzkin-discriminant.md)
+- [First component of the Motzkin Riordan pair](motzkin-g.md)
+- [Second component of the Motzkin Riordan pair](motzkin-h.md)
+- [Canonical square root of the Motzkin discriminant](motzkin-square-root.md)
 
 ## Sources
 

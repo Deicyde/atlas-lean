@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.Fourier.L2ConvolutionContinuousVanishingWanted.continuous_and_tendsto_cocompact_convolution_of_memLp_two
 ---
 
-# L2 Convolution Continuous Vanishing Wanted
+# Convolution of two square-integrable functions is continuous and vanishes at infinity
 
-Let $f, g \in L^2(\mathbb{R}^n)$. Show that $f \ast g \in C(\mathbb{R}^n)$ and
-$\lim_{|x|\to\infty}(f \ast g)(x) = 0$.
+**Convolution of two square-integrable functions is continuous and vanishes at infinity.**
+Let $n$ be a natural number and let $f, g : \mathbb{R}^n \to \mathbb{C}$ be square-integrable.
+Then the convolution $(f \ast g)(x) = \int_{\mathbb{R}^n} f(x - y) \, g(y) \, dy$ is a continuous
+function of $x \in \mathbb{R}^n$, and $(f \ast g)(x) \to 0$ as $|x| \to \infty$.
 
 ## Depends on
 

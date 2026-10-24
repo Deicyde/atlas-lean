@@ -6,14 +6,16 @@ statement: formalized
 lean: MetaMathlibExt.narayanaPolynomial
 ---
 
-# Narayana Polynomial
+# Narayana polynomials
 
-The Narayana row-generating polynomial with zero constant coefficient in
-positive rows.
+**Narayana polynomials.** For a semiring $R$ and a natural number $n$, the $n$-th Narayana
+polynomial is
 
-Concept `jis_sem_06bee1249c32868dc6d7f8d6`; the source normalization begins
-`1`, `X`, `X² + X`, `X³ + 3X² + X`, and uses the finite sum
-`N_n(X) = ∑_{k=0}^n N(n,k) X^k`.
+$$N_n(X) = \sum_{k=0}^{n} a(n, k)\, X^k \in R[X],$$
+
+where $a(n, k)$ is the Narayana polynomial coefficient, taken in $R$. Since $a(0, 0) = 1$ and,
+for $n \ge 1$, $a(n, 0) = 0$ and $a(n, k)$ is the Narayana number $N(n, k)$ for $k \ge 1$, the
+first polynomials are $N_0 = 1$, $N_1 = X$, $N_2 = X^2 + X$ and $N_3 = X^3 + 3X^2 + X$.
 
 ## Depends on
 
@@ -21,8 +23,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Narayana Polynomial Coeff](narayana-polynomial-coeff.md)
+- [Narayana polynomial coefficients](narayana-polynomial-coeff.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.NarayanaPolynomial](../../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_06bee1249c32868dc6d7f8d6`.

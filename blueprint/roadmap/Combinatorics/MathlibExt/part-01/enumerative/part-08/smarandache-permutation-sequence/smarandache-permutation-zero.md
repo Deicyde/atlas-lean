@@ -7,14 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.smarandachePermutation_zero
 ---
 
-# Smarandache Permutation zero
+# Initial term of the Smarandache permutation sequence
 
-Initial term of A004741 (statement `jis_c46e1d9809a20ee69374dac7`).
+**Initial term of the Smarandache permutation sequence.** Indexing the Smarandache permutation
+sequence $(a_i)_{i \ge 0}$ from $0$, its initial term is $a_0 = 1$.
 
 ## Depends on
 
-- [Smarandache Permutation](smarandache-permutation.md)
+- [Smarandache permutation sequence](smarandache-permutation.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.SmarandachePermutationSequence](../../../../../../../sources/v2/MathlibExt.md)
+- statement `jis_c46e1d9809a20ee69374dac7`.

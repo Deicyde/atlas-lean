@@ -7,14 +7,15 @@ proof: formalized
 lean: Real.logarithmicIntegral_of_lt_one
 ---
 
-# Logarithmic Integral of lt one
+# The logarithmic integral below $1$
 
-Unfolding for the lower branch `x < 1`.
+**The logarithmic integral below $1$.** For every real number $x$ with $0 \le x < 1$, the
+logarithmic integral $\mathrm{li}$ satisfies $\mathrm{li}(x) = \int_0^x \frac{dt}{\log t}$.
 
 ## Depends on
 
-- [Logarithmic Integral Domain](logarithmic-integral-domain.md)
-- [Logarithmic Integral](logarithmic-integral.md)
+- [Domain of the logarithmic integral](logarithmic-integral-domain.md)
+- [Logarithmic integral](logarithmic-integral.md)
 
 ## Sources
 

@@ -6,16 +6,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Matching.GaleShapley.StrictTotalOrder.trans
 ---
 
-# Trans
+# Transitivity of a strict total order
 
-Compatibility alias for the former `GaleShapley.StrictTotalOrder.trans` projection.
-
-For new code, use `MathlibExt.Order.StrictTotalOrder.trans` directly.
+**Transitivity of a strict total order.** Let $<$ be the relation of a strict total order on a
+type $\alpha$. If $a, b, c \in \alpha$ satisfy $a < b$ and $b < c$, then $a < c$.
 
 ## Depends on
 
-- [Strict Total Order](strict-total-order.md)
-- [Lt](lt.md)
+- [Strict preference order](strict-total-order.md)
+- [Relation of a strict total order](lt.md)
 
 ## Proof depends on
 

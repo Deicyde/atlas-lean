@@ -7,10 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.hasSum_centralBinomial_harmonic
 ---
 
-# Central Binomial Harmonic Generating Function
+# Central binomial–harmonic generating function
 
-Let `H_n` be the `n`th harmonic number. Then the generating function
-`∑_{n=1}^∞ binom(2n,n) H_n x^n` has the stated logarithmic closed form.
+**Central binomial–harmonic generating function.** Let $H_n = \sum_{k=1}^{n} 1/k$ be the $n$th
+harmonic number. For every real number $x$ with $|x| < 1/4$, the series
+$\sum_{n=1}^{\infty} \binom{2n}{n} H_n x^n$ converges unconditionally, with sum
+
+$$
+\sum_{n=1}^{\infty} \binom{2n}{n} H_n x^n =
+\frac{2}{\sqrt{1-4x}} \log \frac{1 + \sqrt{1-4x}}{2\sqrt{1-4x}}.
+$$
 
 ## Depends on
 

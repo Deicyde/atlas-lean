@@ -15,7 +15,7 @@ Theorem 7: for `n ≥ 1`,
 
 - [Degenerate Harmonic Rank](degenerate-harmonic-rank.md)
 - [Degenerate Stirling First](degenerate-stirling-first.md)
-- [Generalized Falling Factorial](../../../../../MathlibExt/part-01/enumerative/part-04/hsu-shiue-generalized-stirling-number/generalized-falling-factorial.md)
+- [Generalized falling factorial](../../../../../MathlibExt/part-01/enumerative/part-04/hsu-shiue-generalized-stirling-number/generalized-falling-factorial.md)
 
 ## Sources
 

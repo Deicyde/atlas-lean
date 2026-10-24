@@ -7,19 +7,24 @@ proof: formalized
 lean: PeriodPair.poleMultiplicity_ne_zero_iff
 ---
 
-# Pole Multiplicity ne zero iff
+# Pole multiplicity is nonzero exactly at negative order
 
-The multiplicity is nonzero if and only if the order is negative, that is, if
-and only if `f` has a genuine pole at `z`. This holds unconditionally: where `f` is
-not locally meromorphic, both sides are false for an explicitly local reason.
+**Pole multiplicity is nonzero exactly at negative order.** Let
+$f \colon \mathbb{C} \to \mathbb{C}$ and $z \in \mathbb{C}$, and let the order of $f$ at $z$ be its
+meromorphic order, an element of $\mathbb{Z} \cup \{\infty\}$ that is $0$ by convention when $f$
+is not meromorphic at $z$. The pole multiplicity of $f$ at $z$ is nonzero if and only if this
+order is negative, that is, if and only if $f$ has a pole at $z$.
+
+No hypothesis on $f$ is needed: where $f$ is not meromorphic at $z$, its order is $0$ and both
+sides are false.
 
 ## Depends on
 
-- [Pole Multiplicity](pole-multiplicity.md)
+- [Pole multiplicity](pole-multiplicity.md)
 
 ## Proof depends on
 
-- [Pole Multiplicity eq zero of nonneg](pole-multiplicity-eq-zero-of-nonneg.md)
+- [Pole multiplicity vanishes at points of nonnegative order](pole-multiplicity-eq-zero-of-nonneg.md)
 
 ## Sources
 

@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.pow_mem_prime_pow_padicValNat_factorial_iff
 ---
 
-# Pow mem prime pow padic Val Nat factorial iff
+# A prime-exponent criterion for powers in an ideal
 
-For an ideal `b` of any commutative ring, `a ^ n ∈ p ^ v_p(n!) b` for all `n ≥ 1` and `a ∈ b`
-if and only if `a ^ p ∈ p b` for all `a ∈ b`.
+**A prime-exponent criterion for powers in an ideal.** Let $p$ be a prime, $v_p$ the $p$-adic
+valuation, and $\mathfrak{b}$ an ideal of a commutative ring $B$.
+The following are equivalent: for every $n \ge 1$ and every $a \in \mathfrak{b}$ there is
+$c \in \mathfrak{b}$ with $a^n = p^{v_p(n!)} c$; and for every $a \in \mathfrak{b}$ there is
+$c \in \mathfrak{b}$ with $a^p = p c$.
 
 ## Depends on
 

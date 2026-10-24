@@ -6,9 +6,13 @@ statement: formalized
 lean: TorusSobolev.LogarithmicRemainderWanted.beta
 ---
 
-# Torus Logarithmic Remainder Wanted
+# The Bartuccelli–Deane–Zelik constant $\beta$
 
-Exact beta from the primary's Appendix, expressed without a decimal surrogate.
+**The Bartuccelli–Deane–Zelik constant $\beta$.** Let
+$\beta = \pi \left( 2\gamma + 2 \log 2 + 3 \log \pi - 4 \log \Gamma(\tfrac14) \right)$, where
+$\gamma$ is the Euler–Mascheroni constant and $\Gamma$ is the gamma function.
+
+This is the exact constant from the Appendix of the source, not a decimal approximation.
 
 ## Depends on
 

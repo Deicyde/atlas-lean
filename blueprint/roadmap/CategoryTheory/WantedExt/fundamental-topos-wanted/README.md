@@ -5,5 +5,5 @@ navigation: module
 
 # Fundamental Topos
 
-- [Is Topos](is-topos.md)
-- [Fundamental topos theory](fundamental-topos-theory.md)
+- [Elementary topos](is-topos.md)
+- [Fundamental theorem of topos theory](fundamental-topos-theory.md)

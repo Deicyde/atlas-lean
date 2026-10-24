@@ -5,18 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.c4Sq_norm_beta_gamma_prime_factor
 ---
 
-# Lemma 18
+# A prime factor p ≡ −3 mod 8 of ββ̄γγ̄ in the even case (C₄²)
 
-**Lemma 18.** If `b₀ + b₂ ≡ b₁ + b₃ ≡ 0 (mod 2)`, `β β̄ γ γ̄ ∈ 2^4 ℤ_odd` and
-`b₀b₂ + b₁b₃ + c₀c₂ + c₁c₃ ≡ 2 (mod 4)`, then `β β̄ γ γ̄ = 2^4 p (2m + 1)` with `p ∈ P`.
+**A prime factor p ≡ −3 mod 8 of ββ̄γγ̄ in the even case (C₄²).** Let $a$ be an integer-valued
+function on $C_4^2 = \mathbb{Z}/4 \times \mathbb{Z}/4$, with associated integers $b_i$, $c_i$
+$(0 \le i \le 3)$ and Gaussian integers $\beta$, $\gamma$, write $\beta\bar\beta$ and
+$\gamma\bar\gamma$ for the norms of $\beta$ and $\gamma$, and let $P$ be the set of primes
+$p \equiv -3 \pmod 8$. Suppose that $b_0 + b_2 \equiv b_1 + b_3 \equiv 0 \pmod 2$, that
+$\beta\bar\beta\gamma\bar\gamma = 2^4(2t + 1)$ for some integer $t$, and that
+$b_0b_2 + b_1b_3 + c_0c_2 + c_1c_3 \equiv 2 \pmod 4$. Then
+$\beta\bar\beta\gamma\bar\gamma = 2^4 p(2m + 1)$ for some $p \in P$ and some integer $m$.
 
 ## Depends on
 
-- [C4 Sq B](c4-sq-b.md)
-- [C4 Sq Beta](c4-sq-beta.md)
-- [C4 Sq C](c4-sq-c.md)
-- [C4 Sq Gamma](c4-sq-gamma.md)
-- [Primes Five Mod Eight](primes-five-mod-eight.md)
+- [The sums $b_i$](c4-sq-b.md)
+- [The Gaussian integer $\beta$](c4-sq-beta.md)
+- [The alternating sums $c_i$](c4-sq-c.md)
+- [The Gaussian integer $\gamma$ of a function on $C_4^2$](c4-sq-gamma.md)
+- [Primes congruent to $-3$ modulo $8$](primes-five-mod-eight.md)
 
 ## Sources
 

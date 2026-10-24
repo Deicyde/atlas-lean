@@ -5,11 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.tsum_four_pow_div_binom_mul_centralBinom_mul_sq
 ---
 
-# Tsum four pow div binom mul central Binom mul sq
+# Digamma evaluation of a central binomial series with a complex binomial parameter
 
-Theorem 8 (general identity): for `h ∈ ℂ` with `Re h > -1/2` and `h ∉ ℕ`,
-`Σ_{n≥0} 2^{2n}/(C(n, h) C(2(n + 1), n + 1)(n + 1)²) = (π/4)(H_{h-1/2} - H_{-1/2})/sin(πh)`, where
-`1/C(n, h) = Γ(h + 1)Γ(n - h + 1)/n!` and `H_{h-1/2} - H_{-1/2} = ψ(h + 1/2) - ψ(1/2)`.
+**Digamma evaluation of a central binomial series with a complex binomial parameter.** Let
+$\Gamma$ be the Gamma function and $\psi$ the digamma function, and let $h$ be a complex number
+that is not a nonnegative integer and has $\operatorname{Re} h > -1/2$. Writing $\binom{n}{h}^{-1}$
+for $\Gamma(h+1)\,\Gamma(n-h+1)/n!$, we have
+
+$$\sum_{n=0}^{\infty} \frac{4^n}{\binom{n}{h} \binom{2(n+1)}{n+1} (n+1)^2} =
+\frac{\pi}{4} \cdot \frac{\psi(h + \tfrac12) - \psi(\tfrac12)}{\sin(\pi h)}.$$
 
 ## Depends on
 

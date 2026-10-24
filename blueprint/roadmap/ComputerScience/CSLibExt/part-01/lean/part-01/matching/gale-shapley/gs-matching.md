@@ -11,7 +11,7 @@ lean: Cslib.Algorithms.Lean.Matching.GaleShapley.gsMatching
 
 ## Depends on
 
-- [Perfect Matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/perfect-matching.md)
+- [Perfect matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/perfect-matching.md)
 
 ## Proof depends on
 
@@ -34,7 +34,7 @@ lean: Cslib.Algorithms.Lean.Matching.GaleShapley.gsMatching
 - [Remaining](remaining.md)
 - [Run](run.md)
 - [Wprefs](wprefs.md)
-- [Is Stable](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/is-stable.md)
+- [Stable perfect matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/is-stable.md)
 
 ## Sources
 

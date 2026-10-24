@@ -7,19 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.QPochhammer.qPochhammerInfRaw_two_one
 ---
 
-# Q Pochhammer Inf Raw two one
+# The raw q-Pochhammer product at a = 2 and q = 1 equals 1
 
-Regression for the raw product outside the unit disk: the `tprod` fallback.
+**The raw q-Pochhammer product at a = 2 and q = 1 equals 1.** The raw infinite q-Pochhammer
+product at $a = 2$ and $q = 1$ equals $1$.
 
-At `(a, q) = (2, 1)` every factor equals `-1`, so the family is not
-multipliable and the total product `qPochhammerInfRaw 2 1` is `1` by the
-`tprod` convention (`tprod_eq_one_of_not_multipliable`), not a limit of
-partial products. This is exactly the silent wrong-value behaviour that the
-gated `qPochhammerInf` (which demands `‖q‖ < 1`) rules out.
+Every factor $1 - 2 \cdot 1^n$ equals $-1$, so the finite partial products alternate between $-1$
+and $1$ and the product does not converge; the value $1$ is the default that the unconditional
+product takes in that case, not a limit of partial products. The q-Pochhammer symbol
+$(a;q)_\infty$, which requires $|q| < 1$, excludes such arguments.
 
 ## Depends on
 
-- [Q Pochhammer Inf Raw](q-pochhammer-inf-raw.md)
+- [Raw infinite q-Pochhammer product](q-pochhammer-inf-raw.md)
 
 ## Sources
 

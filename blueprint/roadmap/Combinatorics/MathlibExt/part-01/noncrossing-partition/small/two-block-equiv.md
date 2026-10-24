@@ -11,9 +11,9 @@ Bundled equivalence for the two-block stratum at arity three.
 
 ## Depends on
 
-- [Noncrossing Partition](../basic/noncrossing-partition.md)
-- [Is Noncrossing](../basic/is-noncrossing.md)
-- [Set Partition](../basic/set-partition.md)
+- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [Noncrossing set partition](../basic/is-noncrossing.md)
+- [Set partition](../basic/set-partition.md)
 
 ## Proof depends on
 

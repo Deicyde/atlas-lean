@@ -5,19 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.coeff_catalanTypeKernel_decomposition
 ---
 
-# Theorem 6
+# Splitting the numerator of a unified Catalan-type generating function
 
-**Theorem 6.** For the kernel `R(x, t) = [c - a x t + b t^m (2x - 1)^d]^λ`, the
-coefficients `P^{j.k;a,b,c,d,λ,A}_{n,m}(x, y)` of `(S(j, k, yt) + A(x) t) / R(x, t)`
-(Equation (15), `S` the pseudo-Bessel function of Equation (5)) satisfy
-`P^{j.k;…,λ,A}_{n,m}(x, y) = P^{j.k;…,λ,0}_{n,m}(x, y) + P^{1.0;…,λ,A}_{n,m}(x) -
-P^{1.0;…,λ,0}_{n,m}(x)`, where the last two are the `y = 0` specializations with numerators
-`1 + A(x) t` and `1`. Stated for `d ∈ ℕ`, `A ∈ ℤ[x]`, all real `a, b, c, λ`; the kernel is the
-paper's for `c > 0`.
+**Splitting the numerator of a unified Catalan-type generating function.** Let
+$j, k, m, d, n$ be natural numbers, let $a, b, c, \lambda, x, y$ be real numbers and let $A$ be
+a polynomial with integer coefficients. Let $K(t)$ be the formal expansion of
+$(c - a x t + b (2x - 1)^d t^m)^{-\lambda}$ in powers of $t$, and let $S(t) = \sum_i y^i t^i / i!$,
+the sum running over the natural numbers $i \ge k$ with $j \mid i - k$ (for $j \ge 1$ this is
+the pseudo-Bessel function $S(j, k, yt)$ of Equation (5)). Then the coefficient of $t^n$ in
+$(S(t) + A(x)\, t)\, K(t)$ equals the coefficient of $t^n$ in $S(t) K(t)$, plus the coefficient
+of $t^n$ in $(1 + A(x)\, t)\, K(t)$, minus the coefficient of $t^n$ in $K(t)$.
+
+In the paper's notation this is
+$P^{j.k;\lambda,A}_{n,m}(x, y) = P^{j.k;\lambda,0}_{n,m}(x, y) + P^{1.0;\lambda,A}_{n,m}(x) -
+P^{1.0;\lambda,0}_{n,m}(x)$; the kernel is the paper's for $c > 0$.
 
 ## Depends on
 
-- [Trinomial Neg Pow Series](trinomial-neg-pow-series.md)
+- [Negative real power of a trinomial as a power series](trinomial-neg-pow-series.md)
 
 ## Sources
 

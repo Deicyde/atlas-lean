@@ -7,15 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.IsMinor.of_step
 ---
 
-# Of step
+# A single minor step gives a minor
 
-A single minor step yields a minor.
+**A single minor step gives a minor.** For finite graphs $H$ and $G$, if $H$ arises from $G$ by
+one minor step, then $H$ is a minor of $G$.
 
 ## Depends on
 
-- [Fin Graph](fin-graph.md)
-- [Is Minor](is-minor.md)
-- [Minor Step](minor-step.md)
+- [Finite simple graph](fin-graph.md)
+- [Graph minor relation](is-minor.md)
+- [One-step graph minor](minor-step.md)
 
 ## Sources
 

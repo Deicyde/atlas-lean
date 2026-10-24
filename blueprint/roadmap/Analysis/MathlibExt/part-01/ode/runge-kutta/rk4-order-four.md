@@ -12,16 +12,16 @@ lean: MathlibExt.Analysis.ODE.RungeKutta.rk4_orderFour
 
 ## Depends on
 
-- [Order Four](order-four.md)
-- [Rk4](rk4.md)
+- [Order-four conditions](order-four.md)
+- [The classical RK4 tableau](rk4.md)
 
 ## Proof depends on
 
-- [Explicit RK](explicit-rk.md)
-- [C](c.md)
-- [Order One](order-one.md)
-- [Order Three](order-three.md)
-- [Order Two](order-two.md)
+- [Explicit Runge–Kutta method](explicit-rk.md)
+- [Nodes of a Runge–Kutta method](c.md)
+- [Order-one condition for Runge–Kutta methods](order-one.md)
+- [Order-three conditions for Runge–Kutta methods](order-three.md)
+- [Order-two conditions for Runge–Kutta methods](order-two.md)
 
 ## Sources
 

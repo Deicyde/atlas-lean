@@ -4,7 +4,7 @@ navigation: module
 
 # Starlike Coefficient Successive Difference
 
-- [Is In Class S](is-in-class-s.md)
-- [Is Starlike](is-starlike.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Normalized univalent functions (the class $S$)](is-in-class-s.md)
+- [Starlike functions on the unit disc](is-starlike.md)
+- [Hayman's successive coefficient problem for starlike functions](conjecture.md)
+- [Leung's theorem on successive coefficients of starlike functions](conjecture-holds.md)

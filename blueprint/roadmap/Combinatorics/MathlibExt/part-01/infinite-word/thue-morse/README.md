@@ -5,6 +5,6 @@ navigation: module
 
 # Thue Morse
 
-- [Thue Morse Substitution](thue-morse-substitution.md)
-- [Thue Morse Block](thue-morse-block.md)
-- [Thue Morse](thue-morse.md)
+- [Thue–Morse substitution](thue-morse-substitution.md)
+- [Thue–Morse blocks](thue-morse-block.md)
+- [Thue–Morse sequence](thue-morse.md)

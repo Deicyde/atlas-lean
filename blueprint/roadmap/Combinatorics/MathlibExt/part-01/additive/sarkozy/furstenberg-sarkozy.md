@@ -7,18 +7,18 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Additive.SarkozyWanted.furstenberg_sarkozy
 ---
 
-# Furstenberg sarkozy
+# Furstenberg–Sárközy theorem
 
-If `A ⊆ ℕ` has positive upper density, witnessed by `δ > 0` with `δ * N ≤ |A ∩ range N|` for
-arbitrarily large `N`, then there are `a, b, k ∈ ℕ` with `a ∈ A`, `b ∈ A`, `0 < k`, `a < b`, and
-`b = a + k * k`. Source: A. Sárközy, Acta Math. Acad. Sci. Hungar. 31 (1978) and H. Furstenberg,
-J. Analyse Math. 31 (1977); Lean states positive upper density via `initialSegmentCount` with
-arbitrarily large N.
+**Furstenberg–Sárközy theorem.** Let $A$ be a set of natural numbers, and suppose there is a real
+number $\delta > 0$ such that for every natural number $M$ there is a natural number $N \ge M$
+with $\delta N \le |A \cap \{0, 1, \dots, N - 1\}|$. Then there are $a, b \in A$ and a natural
+number $k > 0$ with $a < b$ and $b = a + k^2$.
 
 ## Depends on
 
-- [Initial Segment Count](initial-segment-count.md)
+- [Initial segment count](initial-segment-count.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Additive.Sarkozy](../../../../../../sources/v2/MathlibExt.md)
+- A. Sárközy, Acta Math. Acad. Sci. Hungar. 31 (1978) and H. Furstenberg, J. Analyse Math. 31 (1977); Lean states positive upper density via `initialSegmentCount` with arbitrarily large N.

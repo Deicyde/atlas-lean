@@ -14,7 +14,7 @@ with `d ≥ 1` (`Set.IsAPOfLengthWith`), equals `∑_{m=0}^{n-1} D(m)` with
 
 ## Depends on
 
-- [Is APOf Length With](../../../../../MathlibExt/part-01/ap/basic/is-apof-length-with.md)
+- [Set arithmetic progressions with given first term and difference](../../../../../MathlibExt/part-01/ap/basic/is-apof-length-with.md)
 
 ## Sources
 

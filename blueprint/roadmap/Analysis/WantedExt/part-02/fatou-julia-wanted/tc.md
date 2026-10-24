@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Analysis.FatouJuliaWanted.ComplexAnalysis.FatouJuliaProblem.Tc
 ---
 
-# Tc
+# Quadratic map $T_c$
 
-The quadratic family member `T_c(z) = z² + c`.
+**Quadratic map $T_c$.** For $c \in \mathbb{C}$, $T_c \colon \mathbb{C} \to \mathbb{C}$ is the
+map $T_c(z) = z^2 + c$.
 
 ## Depends on
 

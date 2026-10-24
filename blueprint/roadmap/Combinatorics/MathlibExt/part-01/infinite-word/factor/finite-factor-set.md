@@ -7,13 +7,15 @@ proof: formalized
 lean: InfiniteWord.finite_factorSet
 ---
 
-# Finite factor Set
+# Finitely many factors of each length
 
-The set of length-`k` factors over a finite alphabet is finite.
+**Finitely many factors of each length.** If the alphabet $\alpha$ is finite, then for every
+right-infinite word $u$ over $\alpha$ and every natural number $k$, the set of length-$k$
+factors of $u$ is finite.
 
 ## Depends on
 
-- [Factor Set](factor-set.md)
+- [Set of factors of a given length](factor-set.md)
 
 ## Sources
 

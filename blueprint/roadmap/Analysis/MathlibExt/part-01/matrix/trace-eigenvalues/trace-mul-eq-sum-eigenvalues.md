@@ -6,9 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.trace_mul_eq_sum_eigenvalues
 ---
 
-# Trace mul eq sum eigenvalues
+# The trace of a product of symmetric matrices in their eigenbases
 
-`tr (A B) = ∑ᵢ ∑ⱼ αᵢ βⱼ ⟪uᵢ, vⱼ⟫²` for symmetric `A`, `B` with eigenbases `u`, `v`.
+**The trace of a product of symmetric matrices in their eigenbases.** Let $A$ and $B$ be real
+symmetric matrices with rows and columns indexed by a finite set $I$. Let $(u_i)_{i \in I}$ and
+$(v_j)_{j \in I}$ be the orthonormal bases of $\mathbb{R}^I$ of eigenvectors of $A$ and $B$ chosen
+by the spectral theorem, with $A u_i = \alpha_i u_i$ and $B v_j = \beta_j v_j$. Then
+$\operatorname{tr}(AB) = \sum_i \sum_j \alpha_i \beta_j \langle v_j, u_i \rangle^2$.
 
 ## Depends on
 
@@ -16,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Inner to Euclidean Lin self eq sum](inner-to-euclidean-lin-self-eq-sum.md)
+- [The quadratic form of a symmetric matrix in an orthonormal eigenbasis](inner-to-euclidean-lin-self-eq-sum.md)
 
 ## Sources
 

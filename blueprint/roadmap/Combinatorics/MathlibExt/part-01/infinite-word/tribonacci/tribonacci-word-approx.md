@@ -6,14 +6,16 @@ statement: formalized
 lean: InfiniteWord.tribonacciWordApprox
 ---
 
-# Tribonacci Word Approx
+# Finite Tribonacci words
 
-Finite Tribonacci-word approximants: `W(0) = a`, `W(1) = ab`, `W(2) = abac`,
-and `W(n + 3) = W(n + 2) W(n + 1) W(n)`, where juxtaposition is concatenation.
+**Finite Tribonacci words.** The finite Tribonacci words $W(n)$, for $n \ge 0$, are the
+words over the alphabet $\{a, b, c\}$ defined by $W(0) = a$, $W(1) = ab$, $W(2) = abac$ and
+$W(n + 3) = W(n + 2)\,W(n + 1)\,W(n)$ for every $n \ge 0$, where juxtaposition denotes
+concatenation.
 
 ## Depends on
 
-- [Tribonacci Letter](tribonacci-letter.md)
+- [The Tribonacci alphabet](tribonacci-letter.md)
 
 ## Sources
 

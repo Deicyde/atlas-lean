@@ -6,11 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.PartitionNumberArray.countSumAux
 ---
 
-# Count Sum Aux
+# Sum of the first n values of a sequence
 
-Part-count recursion helper.
-Concept `jis_sem_4bcead3a4bcda58a1d4dbb9f`; source D3
-`jis_352979520d341b10e3330dad`.
+**Sum of the first n values of a sequence.** For a natural number $n$ and a sequence
+$f \colon \mathbb{N} \to \mathbb{N}$, this is the natural number $\sum_{i=0}^{n-1} f(i)$.
 
 ## Depends on
 
@@ -19,3 +18,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.PartitionNumberArray](../../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_4bcead3a4bcda58a1d4dbb9f`; D3 `jis_352979520d341b10e3330dad`.

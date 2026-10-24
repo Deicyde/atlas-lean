@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.gaussBinom_zero_succ
 ---
 
-# Gauss Binom zero succ
+# Gaussian binomial coefficients with $M = 0$
 
-The `M = 0` case: `G(0, k+1) = 0`.
+**Gaussian binomial coefficients with $M = 0$.** Let $R$ be a semiring and $Q \in R$. For
+every natural number $k$, the Gaussian binomial coefficient $\binom{0}{k+1}_Q$ equals $0$.
 
 ## Depends on
 
-- [Gauss Binom](gauss-binom.md)
+- [Gaussian binomial coefficient](gauss-binom.md)
 
 ## Sources
 

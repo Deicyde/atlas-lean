@@ -5,8 +5,8 @@ navigation: module
 
 # Entire Exponential Integral
 
-- [Ein Term](ein-term.md)
-- [Ein](ein.md)
-- [Differentiable ein](differentiable-ein.md)
-- [Analytic On Nhd ein](analytic-on-nhd-ein.md)
-- [Mul deriv ein](mul-deriv-ein.md)
+- [Terms of the series for the entire exponential integral](ein-term.md)
+- [The entire exponential integral Ein](ein.md)
+- [Differentiability of the entire exponential integral](differentiable-ein.md)
+- [Analyticity of the entire exponential integral](analytic-on-nhd-ein.md)
+- [Derivative of the entire exponential integral](mul-deriv-ein.md)

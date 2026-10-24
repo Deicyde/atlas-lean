@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.kasselReutenauerPoly_sub_chebyshevCPartialSum_coeff
 ---
 
-# Kassel Reutenauer Poly sub chebyshev CPartial Sum coeff
+# Approximation of $\bar P_n$ by $F_{n-1}$
 
-Approximation theorem: for `n ≥ 2`, `P̄_n(X) - F_{n-1}(X)` has degree
-`< n/2 - 1`, i.e. every nonzero coefficient sits in a degree `k` with
-`2k + 2 < n`.
+**Approximation of $\bar P_n$ by $F_{n-1}$.** Let $\bar P_n$ be the Kassel–Reutenauer
+polynomials, and for $r \ge 0$ let $F_r(X) = 1 + \sum_{j=1}^{r} \bar T_j(X)$ be the partial sum
+of the monic Chebyshev polynomials $\bar T_j$. For $n \ge 2$, every nonzero coefficient of
+$\bar P_n(X) - F_{n-1}(X)$ sits in a degree $k$ with $2k + 2 < n$; that is, the difference has
+degree less than $n/2 - 1$.
 
 ## Depends on
 
-- [Chebyshev CPartial Sum](chebyshev-cpartial-sum.md)
-- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
+- [Partial sums of the monic Chebyshev polynomials](chebyshev-cpartial-sum.md)
+- [Kassel–Reutenauer polynomial](kassel-reutenauer-poly.md)
 
 ## Sources
 

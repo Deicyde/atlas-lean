@@ -18,8 +18,8 @@ Stable source: https://en.wikipedia.org/wiki/Robertson%E2%80%93Seymour_theorem.
 
 ## Depends on
 
-- [Fin Graph](../../../MathlibExt/part-01/graph/graph-minor/fin-graph.md)
-- [Is Minor](../../../MathlibExt/part-01/graph/graph-minor/is-minor.md)
+- [Finite simple graph](../../../MathlibExt/part-01/graph/graph-minor/fin-graph.md)
+- [Graph minor relation](../../../MathlibExt/part-01/graph/graph-minor/is-minor.md)
 
 ## Sources
 

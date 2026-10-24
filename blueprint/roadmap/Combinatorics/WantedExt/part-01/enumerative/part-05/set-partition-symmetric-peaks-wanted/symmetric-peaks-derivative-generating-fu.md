@@ -14,7 +14,7 @@ where the left side is `∑_n (∑_{π ∈ P_{n,k}} sp(π)) x^n`; integer power 
 
 ## Depends on
 
-- [Is Surjective Restricted Growth String](../../../../../MathlibExt/part-01/enumerative/part-01/partition/peak-generating-function/is-surjective-restricted-growth-string.md)
+- [Surjective restricted-growth strings](../../../../../MathlibExt/part-01/enumerative/part-01/partition/peak-generating-function/is-surjective-restricted-growth-string.md)
 - [Symmetric Peak Count](../symmetric-peaks-compositions-wanted/symmetric-peak-count.md)
 
 ## Sources

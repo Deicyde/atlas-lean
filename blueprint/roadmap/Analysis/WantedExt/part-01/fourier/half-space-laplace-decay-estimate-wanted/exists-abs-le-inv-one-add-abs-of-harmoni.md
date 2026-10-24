@@ -5,38 +5,31 @@ statement: formalized
 lean: MathlibExt.Analysis.Fourier.HalfSpaceLaplaceDecayEstimateWanted.exists_abs_le_inv_one_add_abs_of_harmonic_lowerHalfSpace
 ---
 
-# Exists abs le inv one add abs of harmonic lower Half Space
+# Decay of bounded harmonic extensions of Schwartz data in a half-space
 
-Let $\phi:\mathbb{R}^2\to\mathbb{R}$ be a Schwartz function. Consider the Laplace's equation in
-half space as follows,
-\[
-\left\{
-\begin{aligned}
-\Delta_{x,y,z}u(x,y,z) &= 0, && (x,y,z)\in \mathbb{R}^3_-:=\mathbb{R}^2\times[0,-\infty)\\
-u\big|_{z=0} &= \phi\\
-\lim_{z\to -\infty}\sup_{x,y\in\mathbb{R}}|u(x,y,z)| &= 0
-\end{aligned}
-\right.
-\]
-Prove that, there exists an constant $C(\phi)$, which depends on $\phi$, such that the following
-estimate holds,
-\[
-\forall z\in[0,-\infty),\ \sup_{x,y\in\mathbb{R}}|u(x,y,z)|\le C(\phi)(1+|z|)^{-1}.
-\]
+**Decay of bounded harmonic extensions of Schwartz data in a half-space.** Write a point of
+$\mathbb{R}^3$ as $(x, z)$ with $x = (x_1, x_2) \in \mathbb{R}^2$ and $z \in \mathbb{R}$. Let
+$\phi : \mathbb{R}^2 \to \mathbb{R}$ be a Schwartz function and let
+$u : \mathbb{R}^3 \to \mathbb{R}$ be harmonic at every point of the open lower half-space
+$\{(x, z) : z < 0\}$, continuous on the closed lower half-space $\{(x, z) : z \le 0\}$ and bounded
+there, with $u(x, 0) = \phi(x)$ for every $x \in \mathbb{R}^2$. Suppose that $u(x, z) \to 0$ as
+$z \to -\infty$ uniformly in $x$: for every $\varepsilon > 0$ there is $z_0$ such that
+$|u(x, z)| < \varepsilon$ for all $z \le z_0$ and all $x \in \mathbb{R}^2$. Then there is a
+constant $C > 0$ such that $|u(x, z)| \le C (1 + |z|)^{-1}$ for all $z \le 0$ and all
+$x \in \mathbb{R}^2$.
 
-Lean variant: the source hypotheses do not force `u` to be bounded, and without that the decay bound
-fails (add to the Poisson extension of `φ` the harmonic function `Im G(x₁ + i z)` built from
-Newman's entire function `G`, which vanishes on `z = 0` and as `z → -∞` but is unbounded near the
-boundary); the standard implicit hypothesis `hu_bdd`, that `u` is bounded on the closed half-space,
-is added.
+Boundedness of $u$ is not among the hypotheses of the source problem, but the bound fails without
+it: adding to the Poisson extension of $\phi$ the harmonic function $\operatorname{Im} G(x_1 + iz)$
+built from Newman's entire function $G$, which vanishes on $z = 0$ and as $z \to -\infty$ but is
+unbounded near the boundary, gives a counterexample.
 
 ## Depends on
 
-- [Lower Half Space](lower-half-space.md)
-- [Open Lower Half Space](open-lower-half-space.md)
-- [R2](r2.md)
-- [R3](r3.md)
-- [Point3](point3.md)
+- [Closed lower half-space](lower-half-space.md)
+- [Open lower half-space](open-lower-half-space.md)
+- [The Euclidean plane](r2.md)
+- [Euclidean three-space](r3.md)
+- [Appending a third coordinate](point3.md)
 
 ## Sources
 

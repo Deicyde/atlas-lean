@@ -5,5 +5,5 @@ navigation: module
 
 # Layman Catalan Hankel
 
-- [Layman catalan sum hankel det unrestricted](layman-catalan-sum-hankel-det-unrestrict.md)
-- [Layman catalan sum hankel det](layman-catalan-sum-hankel-det.md)
+- [Layman's Catalan-sum Hankel determinant, including the empty matrix](layman-catalan-sum-hankel-det-unrestrict.md)
+- [Layman's Catalan-sum Hankel determinant](layman-catalan-sum-hankel-det.md)

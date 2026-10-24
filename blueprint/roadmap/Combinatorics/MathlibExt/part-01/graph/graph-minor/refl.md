@@ -7,18 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.IsMinor.refl
 ---
 
-# Refl
+# Reflexivity of the graph minor relation
 
-The minor relation is reflexive.
+**Reflexivity of the graph minor relation.** Every finite graph $G$ is a minor of itself.
 
 ## Depends on
 
-- [Fin Graph](fin-graph.md)
-- [Is Minor](is-minor.md)
+- [Finite simple graph](fin-graph.md)
+- [Graph minor relation](is-minor.md)
 
 ## Proof depends on
 
-- [Minor Step](minor-step.md)
+- [One-step graph minor](minor-step.md)
 
 ## Sources
 

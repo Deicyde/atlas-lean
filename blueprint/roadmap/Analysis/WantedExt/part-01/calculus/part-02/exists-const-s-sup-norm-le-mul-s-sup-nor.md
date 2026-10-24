@@ -5,13 +5,17 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.SupNormEpsDerivPlusIntegralWanted.exists_const_sSup_norm_le_mul_sSup_norm_deriv_add_mul_integral
 ---
 
-# Sup Norm Eps Deriv Plus Integral Wanted
+# Sup norm on $(0,1)$ bounded by the derivative and the $L^1$ norm
 
-Prove that for every $\varepsilon>0$, there exists $C_\varepsilon>0$ such that the following
-holds for all $f\in C^{1}([0,1])$:
- \[
- \max_{[0,1]} |f| \le \varepsilon \max_{[0,1]} |f'| + C_\varepsilon \int_{0}^{1} |f|.
- \]
+**Sup norm on $[0,1]$ bounded by the derivative and the $L^1$ norm.** For every
+$\varepsilon > 0$ there is a constant $C_\varepsilon > 0$ such that every function
+$f : \mathbb{R} \to \mathbb{R}$ that is continuously differentiable on $[0,1]$ satisfies
+
+$$\sup_{x \in [0,1]} |f(x)| \le
+\varepsilon \sup_{x \in [0,1]} |f'(x)| + C_\varepsilon \int_0^1 |f(x)|\,dx.$$
+
+At $x = 0$ and $x = 1$, $f'(x)$ is the two-sided derivative of $f$ on $\mathbb{R}$, taken to be $0$
+where it does not exist; this does not change the supremum.
 
 ## Depends on
 

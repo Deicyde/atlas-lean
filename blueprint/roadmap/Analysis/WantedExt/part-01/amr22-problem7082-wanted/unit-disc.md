@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Analysis.AMR22Problem7082Wanted.UnitDisc
 ---
 
-# Unit Disc
+# Open unit disc
 
-Unit disc `𝔻` from [AMR-022-7082] Problem 7.82.
+**Open unit disc.** The open unit disc $\mathbb{D}$ is the set of complex numbers $z$ with
+$|z| < 1$, the open ball of radius $1$ about $0$ in $\mathbb{C}$.
 
 ## Depends on
 

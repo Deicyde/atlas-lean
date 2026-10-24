@@ -6,14 +6,17 @@ proof: formalized
 lean: MathlibExt.Analysis.iharaConstantOf_le_of_eventually_ratio_le
 ---
 
-# Ihara Constant Of le of eventually ratio le
+# Eventual ratio bounds bound the abstract Ihara constant
 
-An eventual bound on the normalized ratios bounds their limsup.
+**Eventual ratio bounds bound the abstract Ihara constant.** Let
+$N : \mathbb{N} \to \mathbb{N}$ and $c \in [0, \infty]$. If the normalized ratio of $N$ at $g$ is
+at most $c$ for all sufficiently large $g$, then the abstract Ihara constant of $N$ is at most
+$c$.
 
 ## Depends on
 
-- [Ihara Constant Of](ihara-constant-of.md)
-- [Ihara Ratio](ihara-ratio.md)
+- [Abstract Ihara constant of a sequence](ihara-constant-of.md)
+- [Normalized Ihara ratio](ihara-ratio.md)
 
 ## Sources
 

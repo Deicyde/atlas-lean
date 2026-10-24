@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Analysis.FourFunctionHRTWanted.modulationOne
 ---
 
-# Modulation One
+# Frequency-one modulation factor
 
-Modulation by frequency one.
+**Frequency-one modulation factor.** The function $\mathbb{R} \to \mathbb{C}$ given by
+$x \mapsto e^{2\pi i x}$; multiplying a function by it modulates that function by frequency one.
 
 ## Depends on
 

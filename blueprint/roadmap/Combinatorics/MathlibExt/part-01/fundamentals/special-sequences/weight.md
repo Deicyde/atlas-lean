@@ -5,40 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.SoutheastPath.weight
 ---
 
-# Weight
+# Weight of a southeast path
 
-Let R be a commutative monoid, written
-multiplicatively, and let x=(xⱼ) be a
-family of elements of R indexed by
-j∈ℤ_{≥ 0}. Let p and q be
-points of the quarter plane and let
-v=[v₀,…,vₘ] be a southeast path
-from p to q.
+**Weight of a southeast path.** Let $R$ be a commutative monoid, written multiplicatively, let
+$x = (x_j)_{j \in \mathbb{N}}$ be a family of elements of $R$, let $p, q \in \mathbb{N}^2$, and let
+$v = [v_0, \dots, v_m]$ be a southeast path from $p$ to $q$. For $1 \le t \le m$, the step from
+$v_{t-1}$ to $v_t$ has weight $w_t = x_j$ if it is an east step at height $j$, that is,
+$v_{t-1} = (a, j)$ and $v_t = (a+1, j)$, and weight $w_t = 1$ if it is a south step. The weight of
+$v$ is $\operatorname{wt}(v) = \prod_{t=1}^{m} w_t$.
 
-Every step of v is an east step or a south
-step. An east step leaves the height
-unchanged; if that common height is j,
-the step has weight xⱼ. A south step has
-weight 1. The weight of v is the product
-of the weights of its steps,
-
-wt(v)=∏ₜ₌₁ᵐwₜ,
-
-where wₜ is the weight of the step from
-vₜ₋₁ to vₜ. Equivalently, it is the
-product of the xⱼ taken over the east
-steps of v, each east step contributing
-the height j at which it occurs.
-
-For m=0 the product is empty, so the
-one-point path [p] has weight 1. The
-same holds for a path all of whose steps are
-south steps. The weight depends only on the
-list v, not on p and q separately.
+For $m = 0$ the product is empty, so the one-point path $[p]$ has weight $1$; so does every path
+all of whose steps are south steps. The weight depends only on the list $v$.
 
 ## Depends on
 
-- [Southeast Path](southeast-path.md)
+- [Southeast paths](southeast-path.md)
 
 ## Sources
 

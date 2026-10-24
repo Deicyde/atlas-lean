@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.tsum_two_pow_prod_eq_neg_pi_mul_tan
 ---
 
-# Tsum two pow prod eq neg pi mul tan
+# Adegoke–Frontczak series for the tangent
 
-Theorem 2: for `z ∈ ℂ` with `-1/2 < Re z < 1/2`,
-`Σ_{n≥0} (2^{n+1}/(n+1)) ∏_{j=0}^n (2z - j)/(2z - (2j + 1)) = -π tan(πz)`.
+**Adegoke–Frontczak series for the tangent.** For every complex number $z$ with
+$-\frac12 < \operatorname{Re} z < \frac12$,
+
+$$
+\sum_{n \ge 0} \frac{2^{n+1}}{n+1} \prod_{j=0}^{n} \frac{2z - j}{2z - (2j+1)} = -\pi \tan(\pi z).
+$$
 
 ## Depends on
 

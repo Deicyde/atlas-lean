@@ -14,7 +14,7 @@ proof is not supplied here.
 
 ## Depends on
 
-- [Is Lower Cutoff](../../../CSLibExt/random-three-sat/is-lower-cutoff.md)
+- [Lower threshold cutoff](../../../CSLibExt/random-three-sat/is-lower-cutoff.md)
 
 ## Sources
 

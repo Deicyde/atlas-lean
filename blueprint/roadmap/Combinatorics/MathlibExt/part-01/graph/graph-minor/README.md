@@ -5,12 +5,12 @@ navigation: module
 
 # Graph Minor
 
-- [Fin Graph](fin-graph.md)
-- [Clique Fin Graph](clique-fin-graph.md)
-- [Clique Fin Graph adj](clique-fin-graph-adj.md)
-- [Minor Step](minor-step.md)
-- [Is Minor](is-minor.md)
-- [Refl](refl.md)
-- [Trans](trans.md)
-- [Of step](of-step.md)
-- [Of iso](of-iso.md)
+- [Finite simple graph](fin-graph.md)
+- [Complete graph as a finite graph](clique-fin-graph.md)
+- [Adjacency in the complete graph](clique-fin-graph-adj.md)
+- [One-step graph minor](minor-step.md)
+- [Graph minor relation](is-minor.md)
+- [Reflexivity of the graph minor relation](refl.md)
+- [Transitivity of the graph minor relation](trans.md)
+- [A single minor step gives a minor](of-step.md)
+- [An isomorphic copy is a minor](of-iso.md)

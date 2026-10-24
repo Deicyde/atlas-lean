@@ -7,19 +7,25 @@ proof: formalized
 lean: PerronKernel.perron_bound_lt_one
 ---
 
-# Perron bound lt one
+# Truncated Perron bound for $0 < y < 1$
 
-Truncated Perron bound for `y < 1`.
+**Truncated Perron bound for $0 < y < 1$.** Let $0 < y < 1$, $c > 0$ and $T > 0$ be real
+numbers, and let $K(y, c, T) = \frac{1}{2\pi}\int_{-T}^{T} \frac{y^{c+it}}{c+it}\,dt$ be the
+truncated Perron kernel. Then
+
+$$|K(y, c, T)| \le \frac{\exp(c \log y)}{\pi T |\log y|}.$$
+
+Here $y^s$ is the principal complex power.
 
 ## Depends on
 
-- [Perron Kernel](perron-kernel.md)
+- [Truncated Perron kernel](perron-kernel.md)
 
 ## Proof depends on
 
-- [Horiz side bound exact](horiz-side-bound-exact.md)
-- [Rect identity lt one](rect-identity-lt-one.md)
-- [Vert side bound right](vert-side-bound-right.md)
+- [Horizontal side bound for the Perron integrand on $(c, U)$](horiz-side-bound-exact.md)
+- [Rectangle integral of $y^s/s$ with the pole outside](rect-identity-lt-one.md)
+- [Bound for the integral of $y^s/s$ along the right vertical side](vert-side-bound-right.md)
 
 ## Sources
 

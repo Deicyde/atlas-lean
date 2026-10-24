@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.lambertSeries
 ---
 
-# Lambert Series
+# Lambert series
 
-The basic Lambert series `L(q) = ∑_{n≥1} qⁿ / (1 - qⁿ)`.
+**Lambert series.** For a complex number $q$ with $|q| < 1$, the basic Lambert series is
+$L(q) = \sum_{n \ge 1} q^n / (1 - q^n)$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Lambert Series Summand](lambert-series-summand.md)
+- [Lambert series summand](lambert-series-summand.md)
 
 ## Sources
 

@@ -5,19 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.c4Sq_circulantDetFour_product_prime_factor
 ---
 
-# Lemma 11
+# A prime factor $8l - 3$ of $D_4(b) D_4(c)$
 
-**Lemma 11.** If `b₀ + b₂ ≢ b₁ + b₃ (mod 2)` and `β β̄ ≡ -3 (mod 8)`, then
-`D₄(b) D₄(c) = (8k - 3)(8l - 3)` with `8l - 3 ∈ P`, where `k ≢ l` or `k ≡ l (mod 2)`
-according as `b₀b₂ + b₁b₃ + c₀c₂ + c₁c₃ ≡ 0` or `2 (mod 4)`.
+**A prime factor $8l - 3$ of $D_4(b) D_4(c)$.** Let
+$a \colon \mathbb{Z}/4 \times \mathbb{Z}/4 \to \mathbb{Z}$ have sums $b_i$, alternating sums
+$c_i$ and Gaussian integer $\beta$, let $D_4$ be the $4 \times 4$ circulant determinant, and let
+$P$ be the set of positive primes $p \equiv 5 \pmod 8$. Suppose
+$b_0 + b_2 \not\equiv b_1 + b_3 \pmod 2$ and that the norm $\beta \bar\beta \equiv -3 \pmod 8$,
+and put $Q = b_0 b_2 + b_1 b_3 + c_0 c_2 + c_1 c_3$. If $Q \equiv 0 \pmod 4$, then
+$D_4(b) D_4(c) = (8k - 3)(8l - 3)$ for some integers $k \not\equiv l \pmod 2$ with
+$8l - 3 \in P$. If $Q \equiv 2 \pmod 4$, then $D_4(b) D_4(c) = (8k - 3)(8l - 3)$ for some
+integers $k \equiv l \pmod 2$ with $8l - 3 \in P$.
 
 ## Depends on
 
-- [C4 Sq B](c4-sq-b.md)
-- [C4 Sq Beta](c4-sq-beta.md)
-- [C4 Sq C](c4-sq-c.md)
-- [Circulant Det Four](circulant-det-four.md)
-- [Primes Five Mod Eight](primes-five-mod-eight.md)
+- [The sums $b_i$](c4-sq-b.md)
+- [The Gaussian integer $\beta$](c4-sq-beta.md)
+- [The alternating sums $c_i$](c4-sq-c.md)
+- [The group determinant of $C_4$](circulant-det-four.md)
+- [Primes congruent to $-3$ modulo $8$](primes-five-mod-eight.md)
 
 ## Sources
 

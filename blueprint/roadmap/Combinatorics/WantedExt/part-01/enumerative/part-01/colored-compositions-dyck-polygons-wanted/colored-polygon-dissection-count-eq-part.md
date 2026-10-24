@@ -14,7 +14,7 @@ Birmajer, Gil, and Weiner's formula, as recalled by the source:
 ## Depends on
 
 - [Colored Polygon Dissection Count](colored-polygon-dissection-count.md)
-- [Partial Bell Polynomial](../../../../../MathlibExt/part-01/enumerative/part-06/partial-bell-polynomial.md)
+- [Partial Bell polynomial](../../../../../MathlibExt/part-01/enumerative/part-06/partial-bell-polynomial.md)
 
 ## Sources
 

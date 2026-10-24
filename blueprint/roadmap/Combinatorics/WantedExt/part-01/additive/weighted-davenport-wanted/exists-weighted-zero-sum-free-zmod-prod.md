@@ -13,7 +13,7 @@ subsequence (the existence form; it gives `D_{1..α}(Z_n ⊕ Z_{kn}) ≥ m + ⌈
 
 ## Depends on
 
-- [Is Weighted Zero Sum Free](../../../../MathlibExt/part-01/additive/weighted-davenport/is-weighted-zero-sum-free.md)
+- [Weighted zero-sum free sequences](../../../../MathlibExt/part-01/additive/weighted-davenport/is-weighted-zero-sum-free.md)
 
 ## Sources
 

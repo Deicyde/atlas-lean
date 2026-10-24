@@ -5,6 +5,6 @@ navigation: module
 
 # Multiset Eulerian Number
 
-- [Multiset Descent Number](multiset-descent-number.md)
-- [Is Multiset Permutation](is-multiset-permutation.md)
-- [Multiset Eulerian Number](multiset-eulerian-number.md)
+- [Descent number of a word](multiset-descent-number.md)
+- [Multiset permutation](is-multiset-permutation.md)
+- [Eulerian numbers of multiset permutations](multiset-eulerian-number.md)

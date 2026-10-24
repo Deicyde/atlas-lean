@@ -18,8 +18,8 @@ lean: MetaMathlibExt.kimberlingBlock_prefix_succ
 ## Proof depends on
 
 - [Kimberling Morphism](kimberling-morphism.md)
-- [Morph Extend](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-extend.md)
-- [Morph Extend append](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-extend-append.md)
+- [Extension of a letter map to finite words](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-extend.md)
+- [Extended letter maps preserve concatenation](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-extend-append.md)
 
 ## Sources
 

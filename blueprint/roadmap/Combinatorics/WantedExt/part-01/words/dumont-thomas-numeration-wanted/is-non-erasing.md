@@ -12,12 +12,12 @@ A substitution is non-erasing.
 
 ## Depends on
 
-- [Is Non Erasing](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/is-non-erasing.md)
+- [Non-erasing letter maps](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/is-non-erasing.md)
 - [Is Substitution](is-substitution.md)
 
 ## Proof depends on
 
-- [Morph Iterate](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
+- [Iterates of a letter map](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources
 

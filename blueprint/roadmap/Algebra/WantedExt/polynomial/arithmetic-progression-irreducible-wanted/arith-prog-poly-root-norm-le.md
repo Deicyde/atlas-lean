@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.arithProgPoly_root_norm_le
 ---
 
-# Arith Prog Poly root norm le
+# Bound on the zeros of the arithmetic-progression polynomial
 
-For `m ≥ 2`, positive integers `a ≥ d`, and `λ` the positive solution of equation (3),
-every zero `z ∈ ℂ` of `A_m(x)` has `|z| ≤ λ`, with equality only at `z = -λ`.
+**Bound on the zeros of the arithmetic-progression polynomial.** Let $m \ge 2$, let $a$, $d$
+be integers with $0 < d \le a$, and let $\lambda > 0$ be a real number with
+$a \lambda^{m+2} + (a - d) \lambda^{m+1} - (a + (m + 1)d) \lambda - (a + md) = 0$. Then every
+complex zero $z$ of $A_m(x) = a x^m + (a + d) x^{m-1} + \cdots + (a + md)$ satisfies
+$|z| \le \lambda$, and $|z| = \lambda$ only if $z = -\lambda$.
 
 ## Depends on
 

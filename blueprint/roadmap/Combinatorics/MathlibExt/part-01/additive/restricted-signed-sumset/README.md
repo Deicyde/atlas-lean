@@ -4,7 +4,7 @@ navigation: module
 
 # Restricted Signed Sumset
 
-- [Restricted Sumset](restricted-sumset.md)
-- [Restricted Signed Sumset](restricted-signed-sumset.md)
-- [Mem restricted Sumset iff](mem-restricted-sumset-iff.md)
-- [Mem restricted Signed Sumset iff](mem-restricted-signed-sumset-iff.md)
+- [Restricted sumset](restricted-sumset.md)
+- [Restricted signed sumset](restricted-signed-sumset.md)
+- [Coefficient description of the restricted sumset](mem-restricted-sumset-iff.md)
+- [Coefficient description of the restricted signed sumset](mem-restricted-signed-sumset-iff.md)

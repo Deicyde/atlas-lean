@@ -5,6 +5,6 @@ navigation: module
 
 # Partition Polynomial
 
-- [Partition Polynomial](partition-polynomial.md)
-- [Coeff partition Polynomial](coeff-partition-polynomial.md)
-- [Eval partition Polynomial at one](eval-partition-polynomial-at-one.md)
+- [Partition polynomial](partition-polynomial.md)
+- [Coefficients of the partition polynomial](coeff-partition-polynomial.md)
+- [The partition polynomial at one](eval-partition-polynomial-at-one.md)

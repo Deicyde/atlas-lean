@@ -5,9 +5,9 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.ContinuousHolomorphicOffAxesEntireWanted.realAxis
 ---
 
-# Real Axis
+# Real axis
 
-The real axis `{z : ℂ | z.im = 0}`.
+**Real axis.** The real axis is the set $\{z \in \mathbb{C} : \operatorname{Im} z = 0\}$.
 
 ## Depends on
 

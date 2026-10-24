@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.polyContFract
 ---
 
-# Poly Cont Fract
+# Finite continued fraction with polynomial partial quotients
 
-The finite continued fraction `[a₀, a₁, …, aₙ]` with polynomial partial
-quotients `aᵢ ∈ F[X]`, as a Mathlib generalized continued fraction over
-`RatFunc F` with all partial numerators `1`. Its `nums i` and `dens i` are the
-paper's partial numerators `Aᵢ` and partial denominators `Bᵢ`
-(`A₋₁ = 1`, `A₀ = a₀`, `Aᵢ₊₁ = aᵢ₊₁ Aᵢ + Aᵢ₋₁`, and likewise `Bᵢ` with
-`B₋₁ = 0`, `B₀ = 1`), and `convs i = Aᵢ / Bᵢ` is the `i`th convergent.
+**Finite continued fraction with polynomial partial quotients.** Let $F$ be a field, let
+$a_0, a_1, a_2, \ldots$ be polynomials in $F[X]$ and let $n \in \mathbb{N}$. The continued
+fraction $[a_0; a_1, \ldots, a_n]$ is the generalized continued fraction over the field $F(X)$ of
+rational functions with integral part $a_0$ and, for $1 \le i \le n$, an $i$th term with partial
+numerator $1$ and partial denominator $a_i$; it has no further terms. For $i \ge 0$ write $A_i$
+and $B_i$ for the numerator and denominator of its $i$th convergent $A_i / B_i$. Thus, with
+$A_{-1} = 1$ and $B_{-1} = 0$, we have $A_0 = a_0$, $B_0 = 1$, and $A_{i+1} = a_{i+1} A_i + A_{i-1}$
+and $B_{i+1} = a_{i+1} B_i + B_{i-1}$ for $0 \le i < n$.
 
 ## Depends on
 

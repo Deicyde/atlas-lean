@@ -17,7 +17,7 @@ C(2(n-k),n-k) C(n,k)^{-1} (O_{n+1} - O_{k+1})` (sum over `k ≤ min(r,n)`); in p
 
 - [Central Binom Pow Sum](central-binom-pow-sum.md)
 - [Odd Harmonic](../../../../../../NumberTheory/MathlibExt/part-01/harmonic/odd-harmonic/odd-harmonic.md)
-- [R Stirling Second](../../../../../MathlibExt/part-01/enumerative/part-07/rstirling-second/r-stirling-second.md)
+- [r-Stirling numbers of the second kind](../../../../../MathlibExt/part-01/enumerative/part-07/rstirling-second/r-stirling-second.md)
 
 ## Sources
 

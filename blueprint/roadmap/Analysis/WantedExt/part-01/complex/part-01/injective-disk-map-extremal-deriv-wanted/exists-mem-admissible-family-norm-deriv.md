@@ -5,18 +5,19 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.InjectiveDiskMapExtremalDerivWanted.exists_mem_admissibleFamily_norm_deriv_eq_sSup
 ---
 
-# Exists mem admissible Family norm deriv eq s Sup
+# Existence of an extremal injective map into the unit disc
 
-Assume $0 \in \Omega$ is an open connected subset of the unit disk $D$. Let $F$ be the
-family of all the holomorphic maps $f : \Omega \to D$ such that $f$ is injective, $f(0) = 0$ and
-$f(\Omega) \subset D$. Prove that there is a holomorphic map $g \in F$ such that
-\[
-|g'(0)| = \sup_{f \in F} |f'(0)|.
-\]
+**Existence of an extremal injective map into the unit disc.** Let $D$ be the open unit disc
+$\{z \in \mathbb{C} : |z| < 1\}$, let $\Omega \subseteq D$ be open and connected with
+$0 \in \Omega$, and let $F$ be the family of functions $f$ that are holomorphic and injective on
+$\Omega$, map $\Omega$ into $D$, and satisfy $f(0) = 0$. Then some $g \in F$ attains the supremum
+of $|f'(0)|$ over $F$:
+
+$$|g'(0)| = \sup_{f \in F} |f'(0)|.$$
 
 ## Depends on
 
-- [Admissible Family](admissible-family.md)
+- [Admissible maps into the unit disc](admissible-family.md)
 - [Unit Disk](unit-disk.md)
 
 ## Sources

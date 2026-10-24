@@ -7,16 +7,18 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Enumerative.vandermondeTypeConvolutionForSRestrictedWeightedCompositions
 ---
 
-# Vandermonde Type Convolution For SRestricted Weighted Compositions
+# Vandermonde convolution for restricted weighted compositions
 
-Vandermonde-type convolution for `S`-restricted weighted compositions.
+**Vandermonde convolution for restricted weighted compositions.** Let $R$ be a commutative
+ring, $S$ a finite set of natural numbers and $f \colon \mathbb{N} \to R$ a weight function, and
+write $d_{S,f}(n, k)$ for the weighted count of $S$-restricted $f$-weighted compositions of $n$
+with $k$ parts. Then for all natural numbers $n$, $k$ and $j$ with $j \le k$,
 
-For every `j` with `0 ≤ j ≤ k` (the lower bound is automatic for `j : ℕ`),
-`d_{S,f}(n, k) = ∑_{m = 0}^n d_{S,f}(m, j) * d_{S,f}(n - m, k - j)`.
+$$d_{S,f}(n, k) = \sum_{m=0}^{n} d_{S,f}(m, j) \, d_{S,f}(n - m, k - j).$$
 
 ## Depends on
 
-- [S Restricted Weighted Composition Count](s-restricted-weighted-composition-count.md)
+- [Restricted weighted composition count](s-restricted-weighted-composition-count.md)
 
 ## Sources
 

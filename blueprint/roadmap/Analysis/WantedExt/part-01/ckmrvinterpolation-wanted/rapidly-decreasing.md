@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.RapidlyDecreasing
 ---
 
-# Rapidly Decreasing
+# Rapidly decreasing sequences
 
-A complex sequence indexed by integers at least `k₀` is rapidly decreasing
-if multiplication by every natural power of the index still tends to zero.
+**Rapidly decreasing sequences.** For a natural number $k_0$, a complex sequence
+$(a_k)_{k \ge k_0}$ indexed by the integers $k \ge k_0$ is rapidly decreasing if
+$k^m |a_k| \to 0$ as $k \to \infty$ for every natural number $m$.
 
 ## Depends on
 

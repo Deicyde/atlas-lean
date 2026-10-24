@@ -13,7 +13,7 @@ unicellular hypermonopoles `(σ, α)` with `σ = (1, …, n)` and `z(α) = k` is
 
 ## Depends on
 
-- [Cycle Quotient Count](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
+- [Number of cycles of a permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
 - [Cyclic Product Number](cyclic-product-number.md)
 
 ## Sources

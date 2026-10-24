@@ -5,5 +5,5 @@ navigation: module
 
 # Lah Number
 
-- [Unsigned Lah Number](unsigned-lah-number.md)
-- [Signed Lah Number](signed-lah-number.md)
+- [Unsigned Lah number](unsigned-lah-number.md)
+- [Signed Lah number](signed-lah-number.md)

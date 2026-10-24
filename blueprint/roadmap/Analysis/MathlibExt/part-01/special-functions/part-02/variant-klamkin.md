@@ -7,13 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.variant_Klamkin
 ---
 
-# Klamkin Variant
+# Abel's variant of Klamkin's identity
 
-Variant of Klamkin's identity as an infinite series.
+**Abel's variant of Klamkin's identity.** For real numbers $c$ and $d$ write
+$\binom{c}{d} = \Gamma(c+1) / (\Gamma(d+1) \, \Gamma(c-d+1))$; for natural numbers this is the
+usual binomial coefficient. Let $a$ and $b$ be real numbers such that $-a$ and $-b$ are not in
+$\{0, 1, 2, \dots\}$ and $a - b$ is not an integer, and let $n \ge 1$ be a natural number with
+$n < -a - 1$. Then the series
 
-The generalized binomial `C(a, b+k)` is rendered with Gamma functions. Abel assumes only
-`a - b + 1 ∉ ℕ`; here `h_ab` excludes every integer value of `a - b`, since otherwise some
-`Gamma (a - (b + k) + 1)` sits at a pole (value `0` in Lean) and the rendered summands vanish.
+$$\sum_{k \ge 0} (-1)^k \binom{n+k-1}{k} \binom{a}{b+k}^{-1}$$
+
+converges unconditionally to $\frac{a+1}{a+n+1} \binom{a+n}{b}^{-1}$.
+
+Abel assumes only $a - b + 1 \notin \mathbb{N}$; here $a - b$ must avoid every integer, since
+otherwise some $\Gamma(a - b - k + 1)$ is evaluated at a pole of $\Gamma$.
 
 Proof: Rewrite the summand as an ordinary hypergeometric coefficient and apply Abel's
 specialization of Gauss's formula (Abramowitz-Stegun 15.1.20), then simplify by Gamma recurrence.
@@ -24,7 +31,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Has Sum ordinary Hypergeometric Coefficient klamkin](../part-01/gauss-hypergeometric-summation-klamkin/has-sum-ordinary-hypergeometric-coeffici.md)
+- [Klamkin's Gauss summation as a convergent series](../part-01/gauss-hypergeometric-summation-klamkin/has-sum-ordinary-hypergeometric-coeffici.md)
 
 ## Sources
 

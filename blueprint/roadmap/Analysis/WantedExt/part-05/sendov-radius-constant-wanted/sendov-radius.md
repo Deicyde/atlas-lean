@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Admissible Radius](is-admissible-radius.md)
+- [Admissible radius in Sendov's problem](is-admissible-radius.md)
 
 ## Sources
 

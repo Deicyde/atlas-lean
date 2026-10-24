@@ -16,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Finite Ising Free Energy](finite-ising-free-energy.md)
+- [Finite-volume Ising free energy density](finite-ising-free-energy.md)
 
 ## Sources
 

@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Analysis.MandelbrotWanted.ComplexAnalysis.MandelbrotProblem.Tc
 ---
 
-# Tc
+# The quadratic family
 
-The quadratic family member `T_c(z) = z² + c`.
+**The quadratic family.** For $c \in \mathbb{C}$, $T_c \colon \mathbb{C} \to \mathbb{C}$ is the
+map $T_c(z) = z^2 + c$.
 
 ## Depends on
 

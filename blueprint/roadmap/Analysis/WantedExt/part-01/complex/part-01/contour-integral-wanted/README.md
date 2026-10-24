@@ -4,5 +4,5 @@ navigation: module
 
 # Contour Integral
 
-- [Contour Integral of has Deriv At](contour-integral-of-has-deriv-at.md)
-- [Norm contour Integral le](norm-contour-integral-le.md)
+- [Fundamental theorem of contour integration](contour-integral-of-has-deriv-at.md)
+- [ML estimate for contour integrals](norm-contour-integral-le.md)

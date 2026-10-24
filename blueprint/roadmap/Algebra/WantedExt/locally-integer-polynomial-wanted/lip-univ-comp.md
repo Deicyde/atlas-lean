@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.lip_univ_comp
 ---
 
-# Theorem 5 (1)
+# $\mathrm{LIP}(\mathbb{Z})$ is closed under composition
 
-**Theorem 5 (1).** `Lℤ[x]` is closed under composition.
+**$\mathrm{LIP}(\mathbb{Z})$ is closed under composition.** If $f$ and $g$ lie in
+$\mathrm{LIP}(\mathbb{Z})$, the ring of locally integer polynomial functions
+$\mathbb{Z} \to \mathbb{Z}$, then so does the composite $x \mapsto f(g(x))$.
 
 ## Depends on
 
-- [Lip Subring](lip-subring.md)
+- [The ring $\mathrm{LIP}(U)$ of locally integer polynomial functions](lip-subring.md)
 
 ## Sources
 

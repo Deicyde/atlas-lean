@@ -5,12 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.power_sum_mul_div_max_le
 ---
 
-# Power sum mul div max le
+# Lower bound for a power sum at the mean exponent
 
-Lower bound of Theorem 2: for `0 < x_1 ≤ ⋯ ≤ x_n`, `r, s > 0` and
-`α = (r + s) / 2`,
-`S^{[r]} S^{[s]} / max (x_n ^ (r/2) S^{[s/2]}, x_n ^ (s/2) S^{[r/2]}) ≤ S^{[α]}`.
-The paper states it in both cases `α ≥ β` and `α < β`; it does not involve `β`.
+**Lower bound for a power sum at the mean exponent.** Let $0 < x_1 \le \dots \le x_N$ be
+$N \ge 1$ real numbers, and for real $p$ write $S^{[p]} = \sum_{k=1}^{N} x_k^p$. For all real
+$r, s > 0$,
+$S^{[r]} S^{[s]} / \max(x_N^{r/2} S^{[s/2]}, x_N^{s/2} S^{[r/2]}) \le S^{[(r+s)/2]}$.
 
 ## Depends on
 

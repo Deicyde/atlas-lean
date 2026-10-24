@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.Analysis.ScottishBook157Wanted.HasPositiveUpperRightApproxDeriv
 ---
 
-# Has Positive Upper Right Approx Deriv
+# Positive upper right approximate derivative
 
-The upper right-hand approximate derivative of `f` at `x` is positive:
-for some threshold `a > 0`, the set of `h > 0` with
-`(f (x + h) - f x) / h > a` has positive upper density at `0`, i.e. its
-density does not tend to `0`. This is the approximate limsup of the
-difference quotient over `h → 0⁺`, neglecting sets of `h` of density `0`
-at `0`, being positive.
+**Positive upper right approximate derivative.** The upper right-hand approximate derivative
+of $f \colon \mathbb{R} \to \mathbb{R}$ at $x$ is positive: there are $a > 0$ and $\varepsilon > 0$
+such that for every $\delta > 0$ there is $\delta' \in (0, \delta]$ for which the Lebesgue outer
+measure of $\{h \in (0, \delta'] : (f(x + h) - f(x))/h > a\}$ is at least $\varepsilon \delta'$.
+
+Equivalently, the approximate upper limit of the difference quotient $(f(x + h) - f(x))/h$ as
+$h \to 0^+$, which neglects sets of $h$ of right density $0$ at $0$, is positive.
 
 ## Depends on
 

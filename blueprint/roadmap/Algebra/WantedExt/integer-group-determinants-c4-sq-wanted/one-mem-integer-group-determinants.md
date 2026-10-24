@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.one_mem_integerGroupDeterminants
 ---
 
-# One mem integer Group Determinants
+# $1$ is an integer group determinant
 
-`1 ∈ S(G)`: the indicator of the identity gives the identity matrix.
+**$1$ is an integer group determinant.** For every finite group $G$, written additively,
+$1 \in S(G)$, where $S(G)$ is the set of integer group determinants of $G$: the indicator
+function of the identity element gives the identity matrix.
 
 ## Depends on
 
-- [Integer Group Determinants](integer-group-determinants.md)
+- [Integer group determinants](integer-group-determinants.md)
 
 ## Sources
 

@@ -21,12 +21,12 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Analytic At Gamma](../../special-functions/part-01/gamma/digamma/analytic-at-gamma.md)
-- [Deriv Gamma of Real](../../special-functions/part-01/gamma/digamma/deriv-gamma-of-real.md)
-- [Summable norm one div add nat succ sq](../../special-functions/part-01/gamma/digamma/summable-norm-one-div-add-nat-succ-sq.md)
-- [Deriv log Gamma](../../special-functions/part-01/gamma/digamma/deriv-log-gamma.md)
-- [Has Deriv At tsum digamma series](../../special-functions/part-01/gamma/digamma/has-deriv-at-tsum-digamma-series.md)
-- [Has Sum digamma series](../../special-functions/part-01/gamma/digamma/has-sum-digamma-series.md)
+- [Analyticity of the Gamma function](../../special-functions/part-01/gamma/digamma/analytic-at-gamma.md)
+- [Complex and real derivatives of Gamma agree on the positive reals](../../special-functions/part-01/gamma/digamma/deriv-gamma-of-real.md)
+- [Absolute convergence of the trigamma series](../../special-functions/part-01/gamma/digamma/summable-norm-one-div-add-nat-succ-sq.md)
+- [Logarithmic derivative of the real Gamma function](../../special-functions/part-01/gamma/digamma/deriv-log-gamma.md)
+- [Derivative of the digamma series](../../special-functions/part-01/gamma/digamma/has-deriv-at-tsum-digamma-series.md)
+- [Digamma series on the positive reals](../../special-functions/part-01/gamma/digamma/has-sum-digamma-series.md)
 
 ## Sources
 

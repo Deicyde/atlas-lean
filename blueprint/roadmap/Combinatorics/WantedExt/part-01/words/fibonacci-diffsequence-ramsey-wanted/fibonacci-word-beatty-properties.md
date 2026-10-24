@@ -15,7 +15,7 @@ other two cases are `S(n) = 1`); (iv) `T(n) = 1` iff `n = 2⌊mφ⌋ - m` for so
 
 ## Depends on
 
-- [Fib Inf](../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
+- [Infinite Fibonacci word](../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
 - [Wesley Word S](wesley-word-s.md)
 - [Wesley Word T](wesley-word-t.md)
 

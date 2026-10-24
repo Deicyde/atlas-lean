@@ -5,11 +5,11 @@ navigation: module
 
 # Marked Step In AMarked Dyck Path
 
-- [Marked Dyck Step](marked-dyck-step.md)
-- [Marked Dyck Count E](marked-dyck-count-e.md)
-- [Marked Dyck Count N](marked-dyck-count-n.md)
-- [Marked Dyck Count Nstar](marked-dyck-count-nstar.md)
-- [Marked Dyck Path](marked-dyck-path.md)
-- [Is Marked Step](is-marked-step.md)
-- [Path Size](path-size.md)
-- [Size eq](size-eq.md)
+- [Steps of a marked Dyck path](marked-dyck-step.md)
+- [Number of horizontal steps](marked-dyck-count-e.md)
+- [Number of unmarked vertical steps](marked-dyck-count-n.md)
+- [Number of marked vertical steps](marked-dyck-count-nstar.md)
+- [Marked Dyck path](marked-dyck-path.md)
+- [Marked step of a marked Dyck path](is-marked-step.md)
+- [Size of a marked Dyck path](path-size.md)
+- [Size of a marked Dyck path in vertical steps](size-eq.md)

@@ -14,7 +14,7 @@ least two, then `D_{S(n)} ≥ 3` (in `ℕ∞`).
 ## Depends on
 
 - [Square Set](square-set.md)
-- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
+- [Weighted Davenport constant](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 - [Zmod Weight Reps](zmod-weight-reps.md)
 
 ## Sources

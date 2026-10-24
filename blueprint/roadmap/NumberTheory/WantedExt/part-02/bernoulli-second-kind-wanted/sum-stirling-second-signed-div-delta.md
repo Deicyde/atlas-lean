@@ -12,7 +12,7 @@ C(n,k) B_{n-k} + δ_{n-1,k}` for `1 ≤ k ≤ n`.
 
 ## Depends on
 
-- [Signed Stirling First](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
+- [Signed Stirling numbers of the first kind](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
 
 ## Sources
 

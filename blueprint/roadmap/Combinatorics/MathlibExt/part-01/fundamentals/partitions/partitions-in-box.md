@@ -5,24 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.Nat.partitionsInBox
 ---
 
-# Partitions In Box
+# Number of partitions in a box
 
-Let j,k,n∈ℤ_{≥ 0}. A
-partition of n is a finite multiset of
-positive integers whose sum is n;
-written in weakly decreasing order it is
-λ=[λ₁,…,λₘ]
-with λᵢ≥λᵢ₊₁ for
-1≤ i<m and λᵢ≥ 1 for
-1≤ i≤ m, and for m=0 it is the
-empty partition, the unique partition of
-0. Then p(j,k,n) is the number of
-partitions of n having at most k
-parts, so m≤ k, and largest part at
-most j, so λᵢ≤ j for
-1≤ i≤ m. In particular
-p(j,k,0)=1 for all j and k, while
-p(0,k,n)=p(j,0,n)=0 for n≥ 1.
+**Number of partitions in a box.** Let $j, k, n \ge 0$ be integers. A partition of $n$ is a
+finite multiset of positive integers whose sum is $n$; the empty partition is the unique partition
+of $0$. Then $p(j, k, n)$ is the number of partitions of $n$ with at most $k$ parts, counted with
+multiplicity, each of which is at most $j$. In particular $p(j, k, 0) = 1$ for all $j$ and $k$,
+while $p(0, k, n) = p(j, 0, n) = 0$ for $n \ge 1$.
 
 ## Depends on
 

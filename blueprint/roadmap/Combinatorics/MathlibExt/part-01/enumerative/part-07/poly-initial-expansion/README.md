@@ -5,5 +5,5 @@ navigation: module
 
 # Poly Initial Expansion
 
-- [Chen stirling Second expansion](chen-stirling-second-expansion.md)
+- [Chen's Stirling expansion](chen-stirling-second-expansion.md)
 - [Poly initial expansion](poly-initial-expansion.md)

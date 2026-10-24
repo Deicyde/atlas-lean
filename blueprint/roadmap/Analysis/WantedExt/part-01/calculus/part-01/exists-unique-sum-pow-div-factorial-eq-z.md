@@ -5,11 +5,10 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.ExpTaylorPolyOddUniqueZeroWanted.existsUnique_sum_pow_div_factorial_eq_zero_of_odd
 ---
 
-# Exp Taylor Poly Odd Unique Zero Wanted
+# Odd Taylor polynomials of the exponential have exactly one real zero
 
-The function $f(x)=1+x+x^2/2!+\cdots+x^n/n!$, $x\in\mathbb{R}$, has a unique zero for odd
-
-$n\in\mathbb{N}^*$.
+**Odd Taylor polynomials of the exponential have exactly one real zero.** For every odd
+positive integer $n$, the polynomial $1+x+x^2/2!+\cdots+x^n/n!$ has exactly one real zero.
 
 ## Depends on
 

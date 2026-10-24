@@ -7,17 +7,19 @@ proof: formalized
 lean: Set.IsAPOfLength.card
 ---
 
-# Card
+# Cardinality of a set arithmetic progression
 
-The cardinality of a set arithmetic progression is its declared length.
+**Cardinality of a set arithmetic progression.** Let $M$ be an additive commutative monoid
+and $l \in \mathbb{N} \cup \{\infty\}$. If a set $s \subseteq M$ is an arithmetic progression of
+length $l$, then $s$ has exactly $l$ elements, counting the size of an infinite set as $\infty$.
 
 ## Depends on
 
-- [Is APOf Length](is-apof-length.md)
+- [Sets that are arithmetic progressions](is-apof-length.md)
 
 ## Proof depends on
 
-- [Is APOf Length With](is-apof-length-with.md)
+- [Set arithmetic progressions with given first term and difference](is-apof-length-with.md)
 
 ## Sources
 

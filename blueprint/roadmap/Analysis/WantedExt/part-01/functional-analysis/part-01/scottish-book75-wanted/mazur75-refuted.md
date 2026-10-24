@@ -5,13 +5,17 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.ScottishBook75Wanted.mazur75_refuted
 ---
 
-# Mazur75 refuted
+# Mazur's Scottish Book Problem 75 fails in general Banach spaces
 
-Mazur's Problem 75 is false in the general Banach-space form above.
+**Mazur's Scottish Book Problem 75 fails in general Banach spaces.** The Scottish Book Problem 75
+claim is false: there are a real Banach space $E$, a set $R \subseteq E$, a continuous bilinear
+form $B$ on $E$ and a real $\alpha \ne 0$ such that $|B(x, x)|$ is bounded on some open
+$\varepsilon$-neighbourhood of $R$ with $\varepsilon > 0$, but is unbounded on every open
+$\delta$-neighbourhood of $\alpha R = \{\alpha r : r \in R\}$ with $\delta > 0$.
 
 ## Depends on
 
-- [Scottish Book Problem75 Claim](scottish-book-problem75-claim.md)
+- [Scottish Book Problem 75 (Mazur), general Banach-space form](scottish-book-problem75-claim.md)
 
 ## Sources
 

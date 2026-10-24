@@ -7,15 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.narayanaPolynomialCoeff_succ_succ
 ---
 
-# Narayana Polynomial Coeff succ succ
+# Narayana polynomial coefficients at positive indices
 
-Positive-index Narayana-polynomial coefficients agree definitionally with
-the shared Narayana-number API.
+**Narayana polynomial coefficients at positive indices.** For all natural numbers $n$ and
+$k$, the Narayana polynomial coefficient in row $n + 1$ and degree $k + 1$ equals the Narayana
+number $N(n + 1, k + 1)$.
+
+This holds by definition.
 
 ## Depends on
 
-- [Narayana](../../part-05/narayana-number/narayana.md)
-- [Narayana Polynomial Coeff](narayana-polynomial-coeff.md)
+- [Narayana number](../../part-05/narayana-number/narayana.md)
+- [Narayana polynomial coefficients](narayana-polynomial-coeff.md)
 
 ## Sources
 

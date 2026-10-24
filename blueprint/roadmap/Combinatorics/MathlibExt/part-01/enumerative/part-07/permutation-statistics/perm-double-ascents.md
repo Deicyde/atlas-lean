@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.permDoubleAscents
 ---
 
-# Perm Double Ascents
+# Number of double ascents
 
-`dasc σ`: the number of double ascents of `σ`.
+**Number of double ascents.** For a permutation $\sigma$ of $\{0, 1, \dots, n-1\}$,
+$\mathrm{dasc}(\sigma)$ is the number of positions $i$ that are double ascents of $\sigma$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Double Ascent At](is-double-ascent-at.md)
+- [Double ascent of a permutation](is-double-ascent-at.md)
 
 ## Sources
 

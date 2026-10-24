@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Analysis.IsingPhaseTransitionWanted.Analysis.IsingPhaseTransition.rightNeighbour
 ---
 
-# Right Neighbour
+# Right neighbour
 
-Right neighbour in the periodic lattice.
+**Right neighbour.** For a positive integer $L$, the right neighbour of a site $(i, j)$ of
+the periodic $L \times L$ square lattice is $(i + 1, j)$, with addition in
+$\mathbb{Z}/L\mathbb{Z}$.
 
 ## Depends on
 
-- [Ising Site](ising-site.md)
+- [Sites of the periodic square lattice](ising-site.md)
 
 ## Sources
 

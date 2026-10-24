@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.IsMotzkinSquareRoot
 ---
 
-# Is Motzkin Square Root
+# Square roots of the Motzkin discriminant
 
-A square root of `motzkinDiscriminant` on the branch with constant coefficient one.
+**Square roots of the Motzkin discriminant.** A formal power series $s \in \mathbb{Q}[[X]]$ is
+a Motzkin square root when $s^2 = 1 - 2X - 3X^2$ and the constant coefficient of $s$ is $1$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Motzkin Discriminant](motzkin-discriminant.md)
+- [Motzkin discriminant](motzkin-discriminant.md)
 
 ## Sources
 

@@ -6,12 +6,14 @@ statement: formalized
 lean: MathlibExt.Analysis.PoincareSiegelWanted.ComplexAnalysis.IsDiophantine
 ---
 
-# Is Diophantine
+# Diophantine real numbers
 
-A real `α` is **Diophantine** if there are `C > 0` and `τ : ℝ` such
-that `C / |q|^τ ≤ |α − p/q|` for all integers `p, q` with `q ≠ 0`. The
-exponent τ is implicitly ≥ 2 by Dirichlet's theorem. This implies α is
-irrational, so `e^{2πiα}` is not a root of unity.
+**Diophantine real numbers.** A real number $\alpha$ is Diophantine if there are real numbers
+$C > 0$ and $\tau$ such that $C / |q|^{\tau} \le |\alpha - p/q|$ for all integers $p$ and $q$
+with $q \neq 0$.
+
+Any such exponent $\tau$ is at least $2$, by Dirichlet's approximation theorem. A Diophantine
+$\alpha$ is irrational, so $e^{2\pi i \alpha}$ is not a root of unity.
 
 ## Depends on
 

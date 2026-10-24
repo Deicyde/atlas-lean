@@ -7,14 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.garabedian_genocchi_formula_general
 ---
 
-# Garabedian genocchi formula general
+# Garabedian's formula for the Bernoulli numbers, including $n = 0$
 
-Garabedian's Bernoulli-number identity in Stirling form for every `n : ℕ`:
-`2 * (1 - 2 ^ n) * B n` equals `n` times the signed sum of
-`(-1) ^ (n - k) * (k - 1)! * S(n, k) / 2 ^ (k - 1)` over `1 ≤ k ≤ n`,
-with `B = bernoulli` and `S = Nat.stirlingSecond`. The cited source states the case
-`n ≥ 1`; at `n = 0` both sides are `0`. `garabedian_genocchi_formula` is the
-source-shaped form.
+**Garabedian's formula for the Bernoulli numbers, including $n = 0$.** For every natural
+number $n$,
+
+$$2(1 - 2^n) B_n = n \sum_{k=1}^{n} \frac{(-1)^{n-k} (k-1)!\, S(n, k)}{2^{k-1}},$$
+
+where $B_n$ is the $n$-th Bernoulli number, with $B_1 = -\frac{1}{2}$, and $S(n, k)$ is the
+Stirling number of the second kind. At $n = 0$ both sides are $0$.
 
 ## Depends on
 

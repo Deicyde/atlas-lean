@@ -6,12 +6,16 @@ statement: formalized
 lean: AdditiveCombinatorics.IsBhSet
 ---
 
-# Is Bh Set
+# $B_h$-set
 
-`IsBhSet A h` states that `A` is a `B_h`-set: `A` is nonempty, `h` is
-positive, and any two length-`h` lists over `A` with equal nonempty sums are
-permutations of each other. Repeated summands are allowed, since the
-representatives are arbitrary lists.
+**$B_h$-set.** Let $G$ be an additive commutative semigroup, $A \subseteq G$ and $h$ a natural
+number. $A$ is a $B_h$-set if $A$ is nonempty, $h \ge 1$, and whenever two sequences
+$(a_1, \dots, a_h)$ and $(b_1, \dots, b_h)$ of elements of $A$ satisfy
+$a_1 + \dots + a_h = b_1 + \dots + b_h$, the sequence $(b_1, \dots, b_h)$ is a rearrangement of
+$(a_1, \dots, a_h)$.
+
+Repeated summands are allowed: the entries of each sequence need not be distinct. No zero element
+is assumed.
 
 ## Depends on
 
@@ -19,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sum NE](sum-ne.md)
+- [Sum of a nonempty list](sum-ne.md)
 
 ## Sources
 

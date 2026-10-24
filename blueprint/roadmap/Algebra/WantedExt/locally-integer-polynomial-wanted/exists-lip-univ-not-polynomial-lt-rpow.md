@@ -5,14 +5,19 @@ statement: formalized
 lean: MetaMathlibExt.exists_lip_univ_not_polynomial_lt_rpow
 ---
 
-# Theorem 6
+# Non-polynomial LIP functions on the integers that are small on an infinite set
 
-**Theorem 6.** For every `τ : ℕ → ℝ` with `τ(n) → +∞` there is a non-polynomial
-`f ∈ Lℤ[x]` with `|f(x)| < |x|^{τ(|x|)}` on some infinite `X ⊆ ℤ`.
+**Non-polynomial LIP functions on the integers that are small on an infinite set.** Let
+$\tau : \mathbb{N} \to \mathbb{R}$ with $\tau(n) \to +\infty$ as $n \to \infty$. Write
+$\mathrm{LIP}(\mathbb{Z})$ for the ring of locally integer polynomial functions on $\mathbb{Z}$:
+the functions $\mathbb{Z} \to \mathbb{Z}$ whose restriction to every finite subset of $\mathbb{Z}$
+agrees with a polynomial with integer coefficients. Then there is $f \in \mathrm{LIP}(\mathbb{Z})$
+that is not of the form $x \mapsto p(x)$ for any $p \in \mathbb{Z}[x]$, together with an infinite
+set $X \subseteq \mathbb{Z}$ such that $|f(x)| < |x|^{\tau(|x|)}$ for every $x \in X$.
 
 ## Depends on
 
-- [Lip Subring](lip-subring.md)
+- [The ring $\mathrm{LIP}(U)$ of locally integer polynomial functions](lip-subring.md)
 - [Polynomial To LIP](polynomial-to-lip.md)
 
 ## Sources

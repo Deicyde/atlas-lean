@@ -11,7 +11,7 @@ Source: Tandon, arXiv:2608.30273, exact dimension-500 root rate.
 
 ## Depends on
 
-- [Shannon Capacity Cycle](../../../../MathlibExt/part-01/coding/cycle-code/shannon-capacity-cycle.md)
+- [Shannon capacity of the modular cycle](../../../../MathlibExt/part-01/coding/cycle-code/shannon-capacity-cycle.md)
 - [Tandon2026 Mstar](tandon2026-mstar.md)
 
 ## Sources

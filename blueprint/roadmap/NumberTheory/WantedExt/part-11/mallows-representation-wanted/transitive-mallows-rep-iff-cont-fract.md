@@ -12,7 +12,7 @@ iff every finite word over `ℤ_{>0}` occurs in `⟨a_1, a_2, …⟩`; `a k = a_
 
 ## Depends on
 
-- [Is Factor](../../../../Combinatorics/MathlibExt/part-01/infinite-word/factor/is-factor.md)
+- [Lists occurring in an infinite word](../../../../Combinatorics/MathlibExt/part-01/infinite-word/factor/is-factor.md)
 - [Mallows Letter](mallows-letter.md)
 - [Mallows Rep](mallows-rep.md)
 

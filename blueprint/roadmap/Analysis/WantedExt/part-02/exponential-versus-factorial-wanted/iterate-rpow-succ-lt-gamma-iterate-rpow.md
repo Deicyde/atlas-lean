@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.iterate_rpow_succ_lt_Gamma_iterate_rpow
 ---
 
-# Iterate rpow succ lt Gamma iterate rpow
+# Gamma of an iterated exponential exceeds the next iterate
 
-For `n > 0` and `b ≥ e`, `Γ(E_n(b, b)) > E_{n+1}(b, b)`, where `E_m(b, b)` is the
-`m`-fold iterate of `x ↦ b ^ x` from `b`.
+**Gamma of an iterated exponential exceeds the next iterate.** Let $b \ge e$ and, for
+$m \ge 0$, let $E_m(b, b)$ be the $m$-fold iterate of $x \mapsto b^x$ started at $b$, so that
+$E_0(b, b) = b$ and $E_{m+1}(b, b) = b^{E_m(b, b)}$. Then for every integer $n > 0$,
+$E_{n+1}(b, b) < \Gamma(E_n(b, b))$.
 
 ## Depends on
 

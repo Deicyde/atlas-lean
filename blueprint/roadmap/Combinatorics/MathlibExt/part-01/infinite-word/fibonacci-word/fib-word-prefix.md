@@ -7,19 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.fibWord_prefix
 ---
 
-# Fib Word prefix
+# Earlier finite Fibonacci words are prefixes of later ones
 
-Finite iterates are nested: earlier words are prefixes of later words.
-Concept `jis_sem_f409ef3715730614fd194b4d`.
+**Earlier finite Fibonacci words are prefixes of later ones.** For all natural numbers
+$n \le m$, the $n$-th finite Fibonacci word $f_n$ is a prefix of the $m$-th finite Fibonacci word
+$f_m$: there is a finite word $t$ in the letters $0$ and $1$ with $f_m = f_n t$.
 
 ## Depends on
 
-- [Fib Word](fib-word.md)
+- [Finite Fibonacci words](fib-word.md)
 
 ## Proof depends on
 
-- [Fib Word nested succ](fib-word-nested-succ.md)
+- [Consecutive finite Fibonacci words are nested](fib-word-nested-succ.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.FibonacciWord](../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_f409ef3715730614fd194b4d`.

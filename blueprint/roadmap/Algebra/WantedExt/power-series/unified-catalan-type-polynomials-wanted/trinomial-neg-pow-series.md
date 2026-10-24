@@ -5,12 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.trinomialNegPowSeries
 ---
 
-# Trinomial Neg Pow Series
+# Negative real power of a trinomial as a power series
 
-The formal expansion of `(c - α t + β t^m)^(-λ)` in powers of `t`, written as
-`c^(-λ) (1 + u)^(-λ)` with `u = (-α t + β t^m) / c` and Mathlib's binomial series. For
-`c > 0` and `m ≥ 1` this is the denominator factor of every generating function in the
-paper (with `c = 1`, `α = m`, `β = x` in Section 2).
+**Negative real power of a trinomial as a power series.** For real numbers $\lambda$, $c$,
+$\alpha$, $\beta$ and a natural number $m$, this is the formal power series in $t$ with real
+coefficients
+
+$$c^{-\lambda} \sum_{n \ge 0} \binom{-\lambda}{n} u^n, \qquad u = \frac{-\alpha t + \beta t^m}{c},$$
+
+that is, the real power $c^{-\lambda}$ times the binomial series
+$(1 + t)^{-\lambda} = \sum_{n \ge 0} \binom{-\lambda}{n} t^n$ with $u$ substituted for $t$ (for
+$c = 0$ the division is read as $0$, so $u = 0$). The substitution is meaningful when $u$ has
+zero constant term, which holds for $m \ge 1$; for $c > 0$ and $m \ge 1$ the series is the
+expansion of $(c - \alpha t + \beta t^m)^{-\lambda}$ in powers of $t$.
+
+For $c > 0$ and $m \ge 1$ this is the denominator factor of every generating function in Pathan
+and Usman's paper; Section 2 takes $c = 1$, $\alpha = m$ and $\beta = x$.
 
 ## Depends on
 

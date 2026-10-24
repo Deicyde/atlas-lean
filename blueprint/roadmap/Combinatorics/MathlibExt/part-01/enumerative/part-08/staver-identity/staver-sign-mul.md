@@ -7,9 +7,10 @@ proof: formalized
 lean: MetaMathlibExt.staver_sign_mul
 ---
 
-# Staver sign mul
+# Splitting a power of minus one
 
-Sign split: `(-1)^(n-k) * (-1)^k = (-1)^n` for `k ≤ n`.
+**Splitting a power of minus one.** For natural numbers $k \le n$, we have
+$(-1)^{n-k} \cdot (-1)^k = (-1)^n$ in $\mathbb{Q}$.
 
 ## Depends on
 

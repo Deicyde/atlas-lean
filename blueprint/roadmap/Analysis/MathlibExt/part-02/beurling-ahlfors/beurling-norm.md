@@ -6,13 +6,12 @@ statement: formalized
 lean: MathlibExt.Analysis.BeurlingAhlfors.beurlingNorm
 ---
 
-# Beurling Norm
+# Norm of the Beurling–Ahlfors transform
 
-The operator norm `‖B‖ₚ`, totalized as the infimum of nonnegative
-admissible bound constants in this model. The totalization takes the
-value `0` when there is no admissible bound at all, so norm inequalities
-alone do not assert boundedness; use `beurlingNorm_le_of_isBound` to
-derive them from an actual admissible bound.
+**Norm of the Beurling–Ahlfors transform.** For a real number $p$, the norm $\|B\|_p$ of the
+Beurling–Ahlfors transform $B$ is the infimum of the real numbers $C \ge 0$ that are admissible
+$L^p$ bound constants for $B$, and is $0$ when there is no such $C$. In particular an upper
+bound on $\|B\|_p$ alone does not imply that $B$ is bounded on $L^p$.
 
 ## Depends on
 
@@ -20,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Bound](is-bound.md)
+- [Admissible bounds for the Beurling–Ahlfors transform](is-bound.md)
 
 ## Sources
 

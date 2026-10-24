@@ -4,9 +4,9 @@ navigation: module
 
 # Labeled Digraph
 
-- [Labeled Digraph](labeled-digraph.md)
-- [Ext](ext.md)
-- [Restrict](restrict.md)
-- [Restrict src](restrict-src.md)
-- [Restrict tgt](restrict-tgt.md)
-- [Restrict label](restrict-label.md)
+- [Labeled directed graph](labeled-digraph.md)
+- [Extensionality for labeled directed graphs](ext.md)
+- [Restriction of a labeled directed graph](restrict.md)
+- [Source of an edge in a restriction](restrict-src.md)
+- [Target of an edge in a restriction](restrict-tgt.md)
+- [Label of an edge in a restriction](restrict-label.md)

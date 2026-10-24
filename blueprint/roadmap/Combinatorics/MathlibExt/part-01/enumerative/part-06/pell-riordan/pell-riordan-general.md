@@ -7,11 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.pell_riordan_general
 ---
 
-# Pell riordan general
+# Generalized Pell matrix as a Riordan array, for every k
 
-The matrix `Pell_k` is the Riordan array `(1/(1-x), x(1+x+⋯+x^k)/(1-x))` for every `k`:
-the entries of any matrix satisfying the stated generating-function relation are the
-coefficients of the Riordan-array product. `pell_riordan` is the source-shaped form.
+**Generalized Pell matrix as a Riordan array, for every k.** Let $k$ be a natural number
+and let $p(n, m)$, for natural numbers $n$ and $m$, be natural numbers such that for every $n$
+the power series $\sum_{m \ge 0} p(n, m)\, x^m$ over $\mathbb{Q}$ satisfies
+$\left(\sum_{m \ge 0} p(n, m)\, x^m\right)(1 - x)^{n+1} = (1 + x + \dots + x^k)^n$. Then for all
+natural numbers $n$ and $m$, the coefficient of $x^n$ in
+$\frac{1}{1-x} \left(\frac{x(1 + x + \dots + x^k)}{1-x}\right)^m$ is $p(m, n - m)$ if $m \le n$
+and $0$ otherwise. That is, the lower-triangular matrix whose entry in row $n$ and column $m$
+is $p(m, n - m)$ is the Riordan array
+$\left(\frac{1}{1-x}, \frac{x(1 + x + \dots + x^k)}{1-x}\right)$.
 
 ## Depends on
 

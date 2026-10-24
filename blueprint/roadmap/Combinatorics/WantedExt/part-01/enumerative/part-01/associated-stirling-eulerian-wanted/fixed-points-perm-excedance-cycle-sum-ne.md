@@ -14,7 +14,7 @@ Corollary 60: for `n ‚â• s`, summing over the `s`-fixed-points-permutations `ùì
 ## Depends on
 
 - [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
-- [Cycle Quotient Count](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
+- [Number of cycles of a permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
 - [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
 
 ## Sources

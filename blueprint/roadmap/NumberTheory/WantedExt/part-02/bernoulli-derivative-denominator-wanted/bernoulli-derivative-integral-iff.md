@@ -14,7 +14,7 @@ is prime.
 
 - [Bernoulli Diff Denominator Coprime Part](bernoulli-diff-denominator-coprime-part.md)
 - [Bernoulli Integral Derivative Indices](bernoulli-integral-derivative-indices.md)
-- [Polynomial Denominator](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
+- [Denominator of a rational polynomial](../../../../Algebra/MathlibExt/polynomial/coefficient-denominator/polynomial-denominator.md)
 
 ## Sources
 

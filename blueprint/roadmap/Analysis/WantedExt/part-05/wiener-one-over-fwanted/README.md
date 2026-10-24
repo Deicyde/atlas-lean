@@ -4,5 +4,5 @@ navigation: module
 
 # Wiener One Over F
 
-- [In Wiener Algebra](in-wiener-algebra.md)
-- [Wiener inverse closed](wiener-inverse-closed.md)
+- [Functions with absolutely convergent Fourier series](in-wiener-algebra.md)
+- [Wiener's 1/f theorem](wiener-inverse-closed.md)

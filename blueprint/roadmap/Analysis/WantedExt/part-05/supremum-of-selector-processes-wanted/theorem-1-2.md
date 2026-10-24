@@ -6,24 +6,24 @@ statement: formalized
 lean: MathlibExt.Analysis.SupremumOfSelectorProcessesWanted.SupremumOfSelectorProcesses.theorem_1_2
 ---
 
-# Theorem 1 2
+# Park–Pham theorem on selector processes (Talagrand's selector process conjecture)
 
-Statement of Theorem 1.2:
+**Park–Pham theorem on selector processes (Talagrand's selector process conjecture).** There is
+a real number $L > 0$ with the following property. Let $0 < p < 1$, let $X$ be a finite type,
+let $\Lambda$ be a set of functions from $X$ to $[0, \infty)$, and let $X_p$ be a binomial random
+subset of $X$ with parameter $p$. Write
+$E = \mathbb{E}\bigl[\sup_{f \in \Lambda} \sum_{i \in X_p} f(i)\bigr]$, computed in
+$[0, \infty]$. If $0 < E < \infty$, then the family of subsets $s \subseteq X$ with
+$\sup_{f \in \Lambda} \sum_{i \in s} f(i) \ge L E$ is $p$-small.
 
-There exists `L > 0` such that for any `0 < p < 1`, finite type `X`, and set `Λ` of functions from
-`X` to `ℝ≥0` such that `0 < 𝔼[sup_{f ∈ Λ} ∑ i ∈ Xp, f i] < ∞`, the collection of sets
-
-`{s ⊆ X | sup_{f ∈ Λ} ∑ i ∈ s, f i ≥ L * 𝔼[sup_{f ∈ Λ} ∑ i ∈ Xp, f i]}`
-
-is `p-small`, where `Xp` is a binomial random subset of `X` with parameter `p`.
-
-Note: The assumption `0 < 𝔼[sup_{f ∈ Λ} ∑ i ∈ Xp, f i] < ∞` is not explicitly stated in the theorem
-but used in the last step of the proof where `𝔼 ≥ (L/L') * 𝔼` is a contradiction for `L > L'`.
+The hypothesis $0 < E < \infty$ is not stated explicitly in the paper's theorem, but it is used
+in the last step of the proof, which derives a contradiction from an inequality $E \ge c E$
+with a constant $c > 1$.
 
 ## Depends on
 
-- [Is Small](is-small.md)
-- [Binomial Set Distribution](binomial-set-distribution.md)
+- [$p$-small families of sets](is-small.md)
+- [Binomial random subset](binomial-set-distribution.md)
 
 ## Sources
 

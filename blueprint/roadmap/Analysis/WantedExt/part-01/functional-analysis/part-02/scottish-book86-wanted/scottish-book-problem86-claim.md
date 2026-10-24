@@ -5,16 +5,21 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.ScottishBook86Wanted.ScottishBookProblem86Claim
 ---
 
-# Scottish Book Problem86 Claim
+# Scottish Book Problem 86 (Banach)
 
-Banach's Problem 86 from the Scottish Book: can every sequence
-`φ` of functions on `[0, 1]` that is orthogonal, normed (in `L²`),
-measurable, and uniformly bounded by `M` be completed, using functions
-with the same bound `M`, to a sequence `ψ` that is orthogonal, normed,
-and complete? Completeness is the vanishing of the orthogonal
-complement in `L²`: every square-integrable `g` orthogonal to all of
-`ψ` is zero almost everywhere. The case of interest is when infinitely
-many functions are necessary for the completion.
+**Scottish Book Problem 86 (Banach).** The claim that for every real $M > 0$ and every
+sequence $(\varphi_n)_{n \in \mathbb{N}}$ of functions $\mathbb{R} \to \mathbb{R}$ that are
+almost everywhere measurable on $[0, 1]$, orthonormal in $L^2[0, 1]$ (that is,
+$\int_0^1 \varphi_n \varphi_m \, dt$ is $1$ if $n = m$ and $0$ otherwise) and satisfy
+$|\varphi_n(t)| \le M$ for all $n$ and all $t \in [0, 1]$, there is a sequence
+$(\psi_n)_{n \in \mathbb{N}}$ of functions $\mathbb{R} \to \mathbb{R}$, almost everywhere
+measurable on $[0, 1]$, orthonormal in the same sense and with $|\psi_n(t)| \le M$ for all $n$
+and all $t \in [0, 1]$, such that every $\varphi_n$ equals some $\psi_m$ and $(\psi_n)$ is
+complete: every $g \in L^2[0, 1]$ with $\int_0^1 \psi_n g \, dt = 0$ for all $n$ vanishes
+almost everywhere on $[0, 1]$.
+
+The case of interest in the original problem is when infinitely many functions are necessary
+for the completion.
 
 ## Depends on
 
@@ -22,7 +27,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Scottish Book86 Measure](scottish-book86-measure.md)
+- [Lebesgue measure on the unit interval (Scottish Book Problem 86)](scottish-book86-measure.md)
 
 ## Sources
 

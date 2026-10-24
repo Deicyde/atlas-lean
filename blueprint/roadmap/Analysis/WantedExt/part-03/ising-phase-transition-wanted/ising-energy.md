@@ -6,19 +6,27 @@ statement: formalized
 lean: MathlibExt.Analysis.IsingPhaseTransitionWanted.Analysis.IsingPhaseTransition.isingEnergy
 ---
 
-# Ising Energy
+# Energy of an Ising configuration
 
-Zero-field ferromagnetic Ising Hamiltonian on the periodic box.
+**Energy of an Ising configuration.** For a positive integer $L$, let $\sigma$ be a spin
+configuration on the periodic $L \times L$ square lattice, assigning to each site $p$ a spin
+$\sigma_p \in \{1, -1\}$. Its energy in the zero-field ferromagnetic Ising model with unit
+coupling is
+
+$$H_L(\sigma) = -\sum_p \left(\sigma_p \sigma_{p + e_1} + \sigma_p \sigma_{p + e_2}\right),$$
+
+where $p$ runs over all sites, and $p + e_1$ and $p + e_2$ are obtained from $p$ by adding $1$
+modulo $L$ to its first and to its second coordinate respectively.
 
 ## Depends on
 
-- [Ising Site](ising-site.md)
+- [Sites of the periodic square lattice](ising-site.md)
 
 ## Proof depends on
 
-- [Right Neighbour](right-neighbour.md)
-- [Spin Value](spin-value.md)
-- [Up Neighbour](up-neighbour.md)
+- [Right neighbour](right-neighbour.md)
+- [Numerical value of a spin](spin-value.md)
+- [Upward neighbour](up-neighbour.md)
 
 ## Sources
 

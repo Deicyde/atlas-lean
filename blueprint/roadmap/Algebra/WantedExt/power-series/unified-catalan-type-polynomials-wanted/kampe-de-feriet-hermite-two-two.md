@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.kampeDeFerietHermite_two_two
 ---
 
-# Kampe De Feriet Hermite two two
+# The second Kampé de Fériet polynomial
 
-`H_2(x, y) = x² + 2 y`.
+**The second Kampé de Fériet polynomial.** For all real numbers $x$ and $y$,
+$H^2_2(x, y) = x^2 + 2y$.
 
 ## Depends on
 
-- [Kampe De Feriet Hermite](kampe-de-feriet-hermite.md)
+- [Kampé de Fériet polynomials](kampe-de-feriet-hermite.md)
 
 ## Sources
 

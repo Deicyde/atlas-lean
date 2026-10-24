@@ -5,5 +5,5 @@ navigation: module
 
 # Erdos Problem907
 
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Erdős Problem 907](conjecture.md)
+- [De Bruijn's theorem on continuous differences (Erdős Problem 907)](conjecture-holds.md)

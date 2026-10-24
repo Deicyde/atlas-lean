@@ -5,9 +5,9 @@ navigation: module
 
 # Logarithmic Potential Equilibrium Free
 
-- [Charge Seq](charge-seq.md)
-- [Points Distinct](points-distinct.md)
-- [Is Summable](is-summable.md)
+- [Charge sequences](charge-seq.md)
+- [Distinct charge positions](points-distinct.md)
+- [Summable charge sequences](is-summable.md)
 - [Field Sum](field-sum.md)
-- [Conjecture](conjecture.md)
-- [Conjecture refuted](conjecture-refuted.md)
+- [Equilibrium-free logarithmic potential conjecture](conjecture.md)
+- [The equilibrium-free logarithmic potential conjecture is false](conjecture-refuted.md)

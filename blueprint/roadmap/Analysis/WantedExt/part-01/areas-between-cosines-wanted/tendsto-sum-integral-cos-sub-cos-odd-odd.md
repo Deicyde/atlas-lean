@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_sum_integral_cos_sub_cos_odd_odd
 ---
 
-# Tendsto sum integral cos sub cos odd odd
+# Integral sums of $\cos qkx - \cos qx$ for odd $q$ and odd $k$
 
-Lemma 9: for `q` odd, with `k = 2m + 1` odd tending to infinity,
-`∑_{ℓ=1}^{(k-1)/2} ∫_{2πℓ/(k+1)}^{2πℓ/(k-1)} (cos qkx - cos qx) dx → 4/(q² π)`.
+**Integral sums of $\cos qkx - \cos qx$ for odd $q$ and odd $k$.** Let $q$ be an odd natural
+number, and for each natural number $m$ put $k = 2m + 1$. Then, as $m \to \infty$,
+
+$$\sum_{\ell=1}^{m} \int_{2\pi\ell/(k+1)}^{2\pi\ell/(k-1)} \bigl(\cos(qkx) - \cos(qx)\bigr)\,dx
+\to \frac{4}{q^2\pi}.$$
 
 ## Depends on
 

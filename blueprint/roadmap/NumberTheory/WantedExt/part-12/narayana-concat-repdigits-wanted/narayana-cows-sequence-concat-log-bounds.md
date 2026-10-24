@@ -14,7 +14,7 @@ real root of `x³ - x² - 1` (its only real root).
 
 ## Depends on
 
-- [Narayana Sequence](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-06/narayana-cows-sequence.md)
+- [Narayana's cows sequence](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-06/narayana-cows-sequence.md)
 
 ## Sources
 

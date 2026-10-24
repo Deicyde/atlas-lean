@@ -7,12 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.chu_vandermonde_terminating_specialization
 ---
 
-# Chu Vandermonde Terminating Specialization
+# Terminating Chu–Vandermonde specialization
 
-Chu–Vandermonde summation for a terminating Gauss hypergeometric series:
-`∑ k ∈ Finset.range (n + 1), (n.choose k) * ((n + k).choose k) * (-1)^k / (k + 1) = 0`
-for `1 ≤ n`. The source identifies the sum as
-`₂F₁(n+1, -n; 2; 1) = (1-n)_n / (2)_n = 0`.
+**Terminating Chu–Vandermonde specialization.** For every natural number $n \ge 1$, the
+following sum of rational numbers vanishes:
+
+$$\sum_{k=0}^{n} \binom{n}{k} \binom{n+k}{k} \frac{(-1)^k}{k+1} = 0.$$
+
+The source identifies the sum as the terminating Gauss hypergeometric value
+${}_2F_1(n+1, -n; 2; 1) = (1-n)_n / (2)_n = 0$, where $(a)_n$ is the rising factorial.
 
 ## Depends on
 

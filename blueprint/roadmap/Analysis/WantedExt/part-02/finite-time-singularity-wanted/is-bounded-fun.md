@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Analysis.FiniteTimeSingularityWanted.IsBoundedFun
 ---
 
-# Is Bounded Fun
+# Bounded functions
 
-We say that a function `f` is bounded if its range is bounded.
+**Bounded functions.** A function $f : \beta \to \alpha$ into a space $\alpha$ with a
+bornology is bounded if its range $f(\beta)$ is a bounded subset of $\alpha$.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Bounded Fun On](is-bounded-fun-on.md)
+- [Functions bounded on a set](is-bounded-fun-on.md)
 
 ## Sources
 

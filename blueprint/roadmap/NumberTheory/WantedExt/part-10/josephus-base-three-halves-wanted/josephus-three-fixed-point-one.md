@@ -16,7 +16,7 @@ The second zero-indexed positive fixed point is `2`, the paper's `n_p^{(2)}`.
 
 ## Proof depends on
 
-- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
+- [Josephus survivor function](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 
 ## Sources
 

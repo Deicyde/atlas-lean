@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.pascalEntry
 ---
 
-# Pascal Entry
+# Entries of the infinite Pascal matrix
 
-Entry `(i, j)` of the infinite Pascal matrix.
+**Entries of the infinite Pascal matrix.** For natural numbers $i$ and $j$, the entry of the
+infinite Pascal matrix in row $i$ and column $j$ is the binomial coefficient $\binom{i}{j}$.
 
 ## Depends on
 

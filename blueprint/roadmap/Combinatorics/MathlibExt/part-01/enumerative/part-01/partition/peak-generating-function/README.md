@@ -5,5 +5,5 @@ navigation: module
 
 # Peak Generating Function
 
-- [Is Surjective Restricted Growth String](is-surjective-restricted-growth-string.md)
-- [Peak generating function set partitions](peak-generating-function-set-partitions.md)
+- [Surjective restricted-growth strings](is-surjective-restricted-growth-string.md)
+- [Peak generating function for set partitions](peak-generating-function-set-partitions.md)

@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.tsum_nat_mul_catalan_mul_harmonic_div_four_pow_mul_binom
 ---
 
-# Tsum nat mul catalan mul harmonic div four pow mul binom
+# Digamma evaluation of the $n$-weighted Catalan–harmonic series with binomial denominators
 
-Theorem 7 (general identity): for `Re z > 1/2`,
-`Σ_{n≥0} (n/2^{2n}) C_n H_{n+z}/C(n + z, n)
-  = (zH_z - 1)(2H_{z-1} - H_{z-1/2} - H_{z-3/2})
-    + z(2H^{(2)}_{z-1} - H^{(2)}_{z-1/2} - H^{(2)}_{z-3/2})`,
-with `H_α = ψ(α + 1) + γ` and
-`2H^{(2)}_{z-1} - H^{(2)}_{z-1/2} - H^{(2)}_{z-3/2}
-  = Σ_{j≥0} (1/(j + z + 1/2)² + 1/(j + z - 1/2)² - 2/(j + z)²)`.
+**Digamma evaluation of the $n$-weighted Catalan–harmonic series with binomial
+denominators.** Let $C_n$ be the $n$-th Catalan number, $\psi$ the digamma function and $\gamma$
+the Euler–Mascheroni constant; for complex $w$ write $H_w = \psi(w + 1) + \gamma$, and for complex
+$z$ write $\binom{n+z}{n} = \prod_{j=1}^{n} (z+j)/j$. For every complex number $z$ with
+$\operatorname{Re} z > 1/2$,
+
+$$\sum_{n=0}^{\infty} \frac{n\,C_n H_{n+z}}{4^n \binom{n+z}{n}} =
+(z H_z - 1)\bigl(2\psi(z) - \psi(z + \tfrac12) - \psi(z - \tfrac12)\bigr) +
+z \sum_{j=0}^{\infty} \Bigl(\frac{1}{(j + z + \frac12)^2} + \frac{1}{(j + z - \frac12)^2} -
+\frac{2}{(j + z)^2}\Bigr).$$
 
 ## Depends on
 

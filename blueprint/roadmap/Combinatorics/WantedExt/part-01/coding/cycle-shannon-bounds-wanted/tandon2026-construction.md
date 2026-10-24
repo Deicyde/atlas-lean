@@ -11,7 +11,7 @@ Source: Tandon, arXiv:2608.30273, exact dimension-500 construction.
 
 ## Depends on
 
-- [Is Cycle Code](../../../../MathlibExt/part-01/coding/cycle-code/is-cycle-code.md)
+- [Independent codes for the modular cycle](../../../../MathlibExt/part-01/coding/cycle-code/is-cycle-code.md)
 - [Tandon2026 Mstar](tandon2026-mstar.md)
 
 ## Sources

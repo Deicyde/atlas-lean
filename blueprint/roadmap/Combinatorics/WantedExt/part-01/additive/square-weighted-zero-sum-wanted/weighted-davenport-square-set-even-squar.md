@@ -13,7 +13,7 @@ Theorem 12: if `n ≥ 2` is even and a natural-number square, then
 ## Depends on
 
 - [Square Set](square-set.md)
-- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
+- [Weighted Davenport constant](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 - [Zmod Weight Reps](zmod-weight-reps.md)
 
 ## Sources

@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.isPermutationPolynomial_X_pow_iff_coprime
 ---
 
-# Is Permutation Polynomial X pow iff coprime
+# Monomial permutation polynomials of a finite field
 
-`X ^ d` (with `d ≥ 1`) is a permutation polynomial of the finite field `K` with `q`
-elements if and only if `gcd(d, q - 1) = 1`. The hypothesis `d ≥ 1` is added: at `d = 0`,
-`q = 2` the right side holds but `X ^ 0 = 1` is constant.
+**Monomial permutation polynomials of a finite field.** Let $K$ be a finite field with $q$
+elements and let $d \ge 1$ be an integer. Then $X^d$ is a permutation polynomial of $K$ if and
+only if $\gcd(d, q - 1) = 1$.
+
+The hypothesis $d \ge 1$ is needed: for $d = 0$ and $q = 2$ the condition $\gcd(d, q - 1) = 1$
+holds, but $X^0 = 1$ is constant.
 
 ## Depends on
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.circulantDetFour_eq
 ---
 
-# Corollary 1
+# Factorization of the 4 × 4 circulant determinant
 
-**Corollary 1.** `D₄(x₀, x₁, x₂, x₃) = {(x₀ + x₂)² - (x₁ + x₃)²}{(x₀ - x₂)² + (x₁ - x₃)²}`
-over any commutative ring. The paper's intermediate factorization through `D₂` is
-omitted.
+**Factorization of the 4 × 4 circulant determinant.** For every commutative ring $R$ and all
+$x_0, x_1, x_2, x_3 \in R$, the $4 \times 4$ circulant determinant $D_4$ satisfies
+
+$$D_4(x_0, x_1, x_2, x_3) =
+\bigl((x_0 + x_2)^2 - (x_1 + x_3)^2\bigr)\bigl((x_0 - x_2)^2 + (x_1 - x_3)^2\bigr).$$
 
 ## Depends on
 
-- [Circulant Det Four](circulant-det-four.md)
+- [The group determinant of $C_4$](circulant-det-four.md)
 
 ## Sources
 

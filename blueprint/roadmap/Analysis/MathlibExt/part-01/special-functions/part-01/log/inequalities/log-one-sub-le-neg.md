@@ -6,9 +6,10 @@ proof: formalized
 lean: Real.log_one_sub_le_neg
 ---
 
-# Log one sub le neg
+# Linear upper bound for $\log(1 - x)$
 
-Upper bound on `log (1 - x)`: it lies below `-x`.
+**Linear upper bound for $\log(1 - x)$.** For every real number $x$ with $1 - x > 0$,
+$\log(1 - x) \le -x$.
 
 ## Depends on
 

@@ -17,7 +17,7 @@ sequence `i ↦ p ^ η (i - 1)`.
 ## Depends on
 
 - [Is Lex Minimal Extension Of](is-lex-minimal-extension-of.md)
-- [Generalized Binomial Coefficient](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-08/totienomial-coefficient/generalized-binomial-coefficient.md)
+- [Generalized binomial coefficient](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-08/totienomial-coefficient/generalized-binomial-coefficient.md)
 
 ## Sources
 

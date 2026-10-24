@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.OpialTypeIntegralInequalityWanted.integral_abs_mul_deriv_le_of_eq_zero_left
 ---
 
-# Opial Type Integral Inequality Wanted
+# Opial's inequality with one boundary condition
 
-Suppose $f\in C^{1}(I,\mathbb{R})$ has $f(\alpha)=0$. Show that
+**Opial's inequality with one boundary condition.** Let $\alpha \le \beta$ be real numbers and
+let $f : \mathbb{R} \to \mathbb{R}$ be continuously differentiable on $[\alpha, \beta]$ with
+$f(\alpha) = 0$. Then
 
-\[
-\int_{\alpha}^{\beta} |f f'|\,dx \le \frac{\beta-\alpha}{2}\int_{\alpha}^{\beta} |f'|^{2}\,dx.
-\]
+$$\int_\alpha^\beta |f(x) f'(x)|\,dx \le \frac{\beta - \alpha}{2} \int_\alpha^\beta |f'(x)|^2\,dx.$$
 
 ## Depends on
 

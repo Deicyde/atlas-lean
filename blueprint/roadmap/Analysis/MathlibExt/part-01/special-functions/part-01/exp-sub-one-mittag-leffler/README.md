@@ -5,9 +5,9 @@ navigation: module
 
 # Exp Sub One Mittag Leffler
 
-- [One div exp sub one eq tsum](one-div-exp-sub-one-eq-tsum.md)
-- [One Div Exp Sub One Laurent Remainder](one-div-exp-sub-one-laurent-remainder.md)
-- [Differentiable one Div Exp Sub One Laurent Remainder](differentiable-one-div-exp-sub-one-laure.md)
-- [One Div Exp Sub One Laurent Remainder abs le](one-div-exp-sub-one-laurent-remainder-ab.md)
-- [Abs deriv one Div Exp Sub One Laurent Remainder le](abs-deriv-one-div-exp-sub-one-laurent-re.md)
-- [Abs one div exp sub one sub laurent le](abs-one-div-exp-sub-one-sub-laurent-le.md)
+- [Mittag-Leffler expansion of $1/(e^u - 1)$](one-div-exp-sub-one-eq-tsum.md)
+- [Remainder of the Laurent expansion of $1/(e^v - 1)$](one-div-exp-sub-one-laurent-remainder.md)
+- [The Laurent remainder of $1/(e^v - 1)$ is differentiable](differentiable-one-div-exp-sub-one-laure.md)
+- [Bound on the Laurent remainder of $1/(e^v - 1)$](one-div-exp-sub-one-laurent-remainder-ab.md)
+- [Bound on the derivative of the Laurent remainder of $1/(e^v - 1)$](abs-deriv-one-div-exp-sub-one-laurent-re.md)
+- [Global remainder bound for the Laurent expansion of $1/(e^v - 1)$](abs-one-div-exp-sub-one-sub-laurent-le.md)

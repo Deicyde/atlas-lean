@@ -6,13 +6,15 @@ statement: formalized
 lean: MathlibExt.Analysis.IsingPhaseTransitionWanted.Analysis.IsingPhaseTransition.upNeighbour
 ---
 
-# Up Neighbour
+# Upward neighbour
 
-Upward neighbour in the periodic lattice.
+**Upward neighbour.** For a positive integer $L$, the upward neighbour of a site $(i, j)$ of
+the periodic $L \times L$ square lattice is $(i, j + 1)$, with addition in
+$\mathbb{Z}/L\mathbb{Z}$.
 
 ## Depends on
 
-- [Ising Site](ising-site.md)
+- [Sites of the periodic square lattice](ising-site.md)
 
 ## Sources
 

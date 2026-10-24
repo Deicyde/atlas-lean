@@ -6,10 +6,10 @@ statement: formalized
 lean: Real.catalanConstant
 ---
 
-# Catalan Constant
+# Catalan's constant
 
-Catalan's constant, defined by its alternating reciprocal odd-square
-series `∑ n, (-1)^n / (2n+1)^2`.
+**Catalan's constant.** Catalan's constant is the real number
+$G = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)^2}$.
 
 ## Depends on
 

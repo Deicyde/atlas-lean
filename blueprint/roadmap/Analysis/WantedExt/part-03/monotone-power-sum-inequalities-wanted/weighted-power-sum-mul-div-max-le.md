@@ -5,12 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.weighted_power_sum_mul_div_max_le
 ---
 
-# Weighted power sum mul div max le
+# Lower bound for a weighted power sum at the mean exponent
 
-Lower bound (6), (7) of Theorem 4 (weighted): for `0 < x_1 ≤ ⋯ ≤ x_n`, weights
-`w_k > 0`, `r, s > 0` and `α = (r + s) / 2`,
-`S^{[r]}(x;w) S^{[s]}(x;w) / max (x_n ^ (r/2) S^{[s/2]}(x;w), x_n ^ (s/2) S^{[r/2]}(x;w))
-≤ S^{[α]}(x;w)`, where `S^{[p]}(x;w) = ∑ w_k x_k ^ p`.
+**Lower bound for a weighted power sum at the mean exponent.** Let
+$0 < x_1 \le \dots \le x_N$ be $N \ge 1$ real numbers and $w_1, \dots, w_N$ positive real
+weights, and for real $p$ write $S^{[p]} = \sum_{k=1}^{N} w_k x_k^p$. For all real $r, s > 0$,
+$S^{[r]} S^{[s]} / \max(x_N^{r/2} S^{[s/2]}, x_N^{s/2} S^{[r/2]}) \le S^{[(r+s)/2]}$.
 
 ## Depends on
 

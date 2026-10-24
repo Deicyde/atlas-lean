@@ -15,7 +15,7 @@ lean: Cslib.Algorithms.Lean.Matching.GaleShapley.isStable_gsMatching
 - [The Gale-Shapley matching](gs-matching.md)
 - [Mprefs](mprefs.md)
 - [Wprefs](wprefs.md)
-- [Is Stable](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/is-stable.md)
+- [Stable perfect matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/is-stable.md)
 
 ## Proof depends on
 
@@ -34,9 +34,9 @@ lean: Cslib.Algorithms.Lean.Matching.GaleShapley.isStable_gsMatching
 - [Propose](propose.md)
 - [Remaining](remaining.md)
 - [Run](run.md)
-- [Is Blocking Pair](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/is-blocking-pair.md)
-- [Perfect Matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/perfect-matching.md)
-- [Lt](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/lt.md)
+- [Blocking pair](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/is-blocking-pair.md)
+- [Perfect matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/perfect-matching.md)
+- [Relation of a strict total order](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/lt.md)
 
 ## Sources
 

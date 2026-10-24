@@ -5,24 +5,35 @@ statement: formalized
 lean: MetaMathlibExt.kasselReutenauer_C_div_pow_increasingSequences
 ---
 
-# Kassel Reutenauer C div pow increasing Sequences
+# Increasing-sequence and odd-divisor formulas for $C_n(q)/q^n$
 
-Increasing-sequence and odd-divisor formulas for `C_n(q)/q^n` (in
-`ℤ[T;T⁻¹]`, `q = T 1`), `n ≥ 1`:
+**Increasing-sequence and odd-divisor formulas for $C_n(q)/q^n$.** Let $n \ge 1$, let
+$\bar P_n$ be the Kassel–Reutenauer polynomial, and write $C_n(q)/q^n$ for the Laurent polynomial
+$(q - 2 + q^{-1})\,\bar P_n(q + q^{-1})$ in $\mathbb{Z}[q, q^{-1}]$. For integers $h \ge 1$ and
+$a$ let $IS(a, h) = \{a + 1, \dots, a + h\}$.
 
-(i) `C_n(q)/q^n = ∑ (-1)^h (q^a + q^{-a})` over the increasing sequences
-`IS(a, h) = {a+1, …, a+h}` (`h ≥ 1`) whose elements sum to `n`, and for given
-`|a|` there is a unique such sequence (all such `(h, a)` lie in the box
-`h ≤ 2n`, `|a| ≤ n`);
+(i) We have
 
-(ii) `C_n(q)/q^n = ∑_{d ∣ n, d odd} (q^{n/d - (d-1)/2} + q^{-n/d + (d-1)/2}
-  - q^{n/d - (d+1)/2} - q^{-n/d + (d+1)/2})`, and the exponents `≠ 0` occurring
-in this sum are pairwise distinct (the multiset of nonzero exponents is
-duplicate-free).
+$$\frac{C_n(q)}{q^n} = \sum_{(h, a)} (-1)^h \left(q^a + q^{-a}\right),$$
+
+where the sum runs over the pairs of integers $(h, a)$ with $1 \le h \le 2n$ and $-n \le a \le n$
+such that the elements of $IS(a, h)$ sum to $n$. Moreover, if $h, h' \ge 1$ and $a, a'$ are
+integers such that the elements of $IS(a, h)$ and those of $IS(a', h')$ both sum to $n$, and
+$|a| = |a'|$, then $h = h'$ and $a = a'$.
+
+(ii) For an odd divisor $d$ of $n$ put $u_d = n/d - (d - 1)/2$ and $v_d = n/d - (d + 1)/2$. Then
+
+$$\frac{C_n(q)}{q^n} = \sum_{d \mid n,\ d \text{ odd}} (q^{u_d} + q^{-u_d} - q^{v_d} - q^{-v_d}),$$
+
+and in the list of the exponents $u_d, -u_d, v_d, -v_d$ over all odd divisors $d$ of $n$, the
+nonzero entries are pairwise distinct.
+
+Every pair $(h, a)$ with $h \ge 1$ such that the elements of $IS(a, h)$ sum to $n$ satisfies
+$h \le 2n$ and $|a| \le n$, so the sum in (i) runs over all such sequences.
 
 ## Depends on
 
-- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
+- [Kassel–Reutenauer polynomial](kassel-reutenauer-poly.md)
 
 ## Sources
 

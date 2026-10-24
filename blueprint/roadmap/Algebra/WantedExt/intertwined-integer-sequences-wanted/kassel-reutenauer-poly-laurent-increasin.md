@@ -5,17 +5,25 @@ statement: formalized
 lean: MetaMathlibExt.kasselReutenauerPoly_laurent_increasingSequences
 ---
 
-# Kassel Reutenauer Poly laurent increasing Sequences
+# Increasing-sequence formula for the Kassel–Reutenauer polynomials
 
-Increasing-sequence formula for `P_n(q)/q^{n-1} = P̄_n(q + q⁻¹)` (in
-`ℤ[T;T⁻¹]`, `q = T 1`), `n ≥ 1`: with `a = r_n(d) = n/d - (d+1)/2`, `h = d`,
-`ǎ = -r_n(d) - 1`, `ȟ = 2n/d` and `IS(a, h) = {a+1, …, a+h}`,
-`P_n(q)/q^{n-1} = ∑_{d ∣ n odd, r_n(d) ≥ 0} ∑_{i ∈ IS(ǎ,ȟ) \ IS(a,h)} q^i
-  - ∑_{d ∣ n odd, r_n(d) < 0} ∑_{i ∈ IS(a,h) \ IS(ǎ,ȟ)} q^i`.
+**Increasing-sequence formula for the Kassel–Reutenauer polynomials.** Let $n \ge 1$ and
+work in the ring $\mathbb{Z}[q, q^{-1}]$ of Laurent polynomials. For integers $a$ and $h$ let
+$IS(a, h) = \{a+1, \dots, a+h\}$. For an odd divisor $d$ of $n$ put $r_n(d) = n/d - (d+1)/2$,
+$A_d = IS(r_n(d), d)$ and $\check A_d = IS(-r_n(d) - 1, 2n/d)$. Then the Kassel–Reutenauer
+polynomial $\bar P_n$ satisfies
+
+$$
+\bar P_n(q + q^{-1}) = \sum_{d \mid n,\ d \text{ odd},\ r_n(d) \ge 0}\
+\sum_{i \in \check A_d \setminus A_d} q^i -
+\sum_{d \mid n,\ d \text{ odd},\ r_n(d) < 0}\ \sum_{i \in A_d \setminus \check A_d} q^i.
+$$
+
+The left-hand side is the paper's $P_n(q)/q^{n-1}$.
 
 ## Depends on
 
-- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
+- [Kassel–Reutenauer polynomial](kassel-reutenauer-poly.md)
 
 ## Sources
 

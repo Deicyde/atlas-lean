@@ -14,7 +14,7 @@ letters `a = k`, `b = -k`.
 
 - [Both Letters Infinite](both-letters-infinite.md)
 - [Relative Position](relative-position.md)
-- [Thue Morse](../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
+- [Thue–Morse sequence](../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
 
 ## Sources
 

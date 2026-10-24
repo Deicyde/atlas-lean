@@ -7,18 +7,19 @@ proof: formalized
 lean: Nat.Overpartition.isOverlined_pos
 ---
 
-# Is Overlined pos
+# Overlined sizes are positive
 
-An overlined size is positive.
+**Overlined sizes are positive.** If $a$ is overlined in an overpartition $O$ of $n$, then
+$a > 0$.
 
 ## Depends on
 
 - [Overpartition](overpartition.md)
-- [Is Overlined](is-overlined.md)
+- [Overlined part size](is-overlined.md)
 
 ## Proof depends on
 
-- [Is Overlined mem parts](is-overlined-mem-parts.md)
+- [Overlined sizes are parts](is-overlined-mem-parts.md)
 
 ## Sources
 

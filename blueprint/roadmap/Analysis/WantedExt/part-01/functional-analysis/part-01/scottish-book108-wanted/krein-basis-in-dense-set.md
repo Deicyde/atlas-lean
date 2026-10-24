@@ -5,19 +5,18 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.ScottishBook108Wanted.krein_basis_in_dense_set
 ---
 
-# Krein basis in dense set
+# Krein's theorem on bases in dense sets
 
-Krein's affirmative answer to Banach-Mazur-Ulam Problem 108: in a Banach
-space with a (Schauder) basis, (1) for every everywhere-dense set `H` there
-is a basis whose terms lie in `H`, and (2) the same holds when `H` is a
-linear subspace, here encoded by a dense submodule. Source: S. Banach,
-S. Mazur, S. Ulam, Problem 108 of the Scottish Book; affirmative answer
-(Krein), typescript addendum Ad 108.
+**Krein's theorem on bases in dense sets.** Let $E$ be a real Banach space that has a Schauder
+basis. Then for every dense subset $H \subseteq E$ there is a Schauder basis $(e_n)_{n \ge 0}$ of
+$E$ with $e_n \in H$ for all $n$, and likewise for every dense linear subspace $S \subseteq E$
+there is a Schauder basis $(e_n)_{n \ge 0}$ of $E$ with $e_n \in S$ for all $n$.
 
 ## Depends on
 
-- [Is Schauder Basis](is-schauder-basis.md)
+- [Schauder basis](is-schauder-basis.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.FunctionalAnalysis.ScottishBook108Wanted](../../../../../../../sources/v2/WantedExt.md)
+- S. Banach, S. Mazur, S. Ulam, Problem 108 of the Scottish Book; affirmative answer (Krein), typescript addendum Ad 108.

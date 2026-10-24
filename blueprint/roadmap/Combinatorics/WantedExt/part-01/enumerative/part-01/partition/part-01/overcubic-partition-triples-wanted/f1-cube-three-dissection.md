@@ -12,7 +12,7 @@ stated with denominators cleared (both sides multiplied by `f_3 f_6^2 f_9^3 f_18
 
 ## Depends on
 
-- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

@@ -6,10 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.fibMorph
 ---
 
-# Fib Morph
+# Fibonacci morphism
 
-Extension of the Fibonacci substitution to finite words by concatenation.
-Concept `jis_sem_f409ef3715730614fd194b4d`, source `jis_2ff564e576beedc024b95b9a`.
+**Fibonacci morphism.** The Fibonacci morphism $\varphi$ extends the Fibonacci substitution
+$\sigma$, which maps $0$ to $01$ and $1$ to $0$, to finite binary words by concatenation: $\varphi$
+maps the empty word to the empty word, and $\varphi(bw) = \sigma(b)\varphi(w)$ for every letter
+$b$ and every finite binary word $w$.
 
 ## Depends on
 
@@ -17,8 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fib Subst](fib-subst.md)
+- [Fibonacci substitution](fib-subst.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.FibonacciWord](../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_f409ef3715730614fd194b4d`, source `jis_2ff564e576beedc024b95b9a`.

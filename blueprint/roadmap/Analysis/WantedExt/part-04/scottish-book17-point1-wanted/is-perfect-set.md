@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Analysis.ScottishBook17Point1Wanted.IsPerfectSet
 ---
 
-# Is Perfect Set
+# Perfect sets of real numbers
 
-A perfect set: closed, nonempty, with no isolated points.
+**Perfect sets of real numbers.** A set $s \subseteq \mathbb{R}$ is perfect if it is closed,
+nonempty, and has no isolated points: every $x \in s$ lies in the closure of $s \setminus \{x\}$.
 
 ## Depends on
 

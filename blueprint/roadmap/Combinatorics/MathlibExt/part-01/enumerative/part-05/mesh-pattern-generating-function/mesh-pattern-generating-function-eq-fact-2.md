@@ -7,9 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.meshPatternGeneratingFunction_eq_factorial_mul_prod
 ---
 
-# Mesh Pattern Generating Function eq factorial mul prod
+# Product formula from the mesh-pattern recurrence, real case
 
-Product formula for the mesh-pattern generating function from its recurrence and base value.
+**Product formula from the mesh-pattern recurrence, real case.** Let $0 < k \le n$ be natural
+numbers, let $x$ be a real number, and let $P(m, r, y)$ be real numbers indexed by natural
+numbers $m, r$ and a real number $y$. Suppose that $P(k-1, k, x) = (k-1)!$ and that
+$P(m, k, x) = (x + m - 1)\,P(m-1, k, x)$ for every natural number $m \ge k$. Then
+
+$$P(n, k, x) = (k-1)! \prod_{i=0}^{n-k} (x + k - 1 + i).$$
 
 ## Depends on
 
@@ -17,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Mesh Pattern Generating Function eq factorial mul prod general](mesh-pattern-generating-function-eq-fact.md)
+- [Product formula from the mesh-pattern recurrence](mesh-pattern-generating-function-eq-fact.md)
 
 ## Sources
 

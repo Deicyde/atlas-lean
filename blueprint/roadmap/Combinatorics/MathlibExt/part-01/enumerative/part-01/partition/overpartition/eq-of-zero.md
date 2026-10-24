@@ -7,9 +7,9 @@ proof: formalized
 lean: Nat.Overpartition.eq_of_zero
 ---
 
-# Eq of zero
+# Uniqueness of the overpartition of zero
 
-There is only one overpartition of zero.
+**Uniqueness of the overpartition of zero.** Any two overpartitions of $0$ are equal.
 
 ## Depends on
 
@@ -17,7 +17,7 @@ There is only one overpartition of zero.
 
 ## Proof depends on
 
-- [Overlines eq empty of zero](overlines-eq-empty-of-zero.md)
+- [Overpartitions of zero have no overlined sizes](overlines-eq-empty-of-zero.md)
 
 ## Sources
 

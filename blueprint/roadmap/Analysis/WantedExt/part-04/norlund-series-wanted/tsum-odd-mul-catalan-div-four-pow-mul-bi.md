@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.tsum_odd_mul_catalan_div_four_pow_mul_binom
 ---
 
-# Tsum odd mul catalan div four pow mul binom
+# Digamma evaluation of the $(2n+1)$-weighted Catalan series with binomial denominators
 
-Theorem 5 (general identity): for `Re z > 1/2`,
-`Σ_{n≥0} (2n + 1) C_n/(2^{2n} C(n + z, n)) = 2z(H_{z-1} - H_{z-3/2}) = 2z(ψ(z) - ψ(z - 1/2))`.
+**Digamma evaluation of the $(2n+1)$-weighted Catalan series with binomial denominators.**
+Let $C_n$ be the $n$-th Catalan number and $\psi$ the digamma function, and for complex $z$ write
+$\binom{n+z}{n} = \prod_{j=1}^{n} (z+j)/j$. For every complex number $z$ with
+$\operatorname{Re} z > 1/2$,
+
+$$\sum_{n=0}^{\infty} \frac{(2n+1)\,C_n}{4^n \binom{n+z}{n}} =
+2z\bigl(\psi(z) - \psi(z - \tfrac12)\bigr).$$
 
 ## Depends on
 

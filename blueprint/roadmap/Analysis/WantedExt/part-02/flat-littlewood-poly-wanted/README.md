@@ -5,5 +5,5 @@ navigation: module
 
 # Flat Littlewood Poly
 
-- [Is Littlewood Polynomial](is-littlewood-polynomial.md)
-- [Theorem 1 1](theorem-1-1.md)
+- [Littlewood polynomials](is-littlewood-polynomial.md)
+- [Flat Littlewood polynomials exist](theorem-1-1.md)

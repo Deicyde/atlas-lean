@@ -12,7 +12,7 @@ Corollary 29: for an odd square `n ≥ 2`, `D_{S(n)} = 5`.
 ## Depends on
 
 - [Square Set](square-set.md)
-- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
+- [Weighted Davenport constant](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 - [Zmod Weight Reps](zmod-weight-reps.md)
 
 ## Sources

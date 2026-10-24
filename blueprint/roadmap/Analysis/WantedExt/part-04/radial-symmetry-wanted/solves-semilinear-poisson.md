@@ -6,10 +6,16 @@ statement: formalized
 lean: MathlibExt.Analysis.RadialSymmetryWanted.Analysis.PDE.SolvesSemilinearPoisson
 ---
 
-# Solves Semilinear Poisson
+# Semilinear Poisson problem on the unit ball
 
-`u` solved a semilinear Poisson problem if `-Δ u = f(u)` in the open unit
-ball and `u = 0` on the unit sphere.
+**Semilinear Poisson problem on the unit ball.** Let $n$ be a natural number, let
+$f : \mathbb{R} \to \mathbb{R}$, and let $u : \mathbb{R}^n \to \mathbb{R}$ be a function on
+Euclidean space. Then $u$ solves the semilinear Poisson problem for $f$ if
+$-\Delta u(x) = f(u(x))$ for every $x$ in the open unit ball and $u(x) = 0$ for every $x$ on the
+unit sphere.
+
+The definition imposes no differentiability on $u$; regularity is assumed separately where it is
+needed.
 
 ## Depends on
 

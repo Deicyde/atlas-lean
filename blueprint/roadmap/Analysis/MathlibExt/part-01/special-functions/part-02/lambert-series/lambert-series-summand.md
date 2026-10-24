@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.lambertSeriesSummand
 ---
 
-# Lambert Series Summand
+# Lambert series summand
 
-The summand `qⁿ / (1 - qⁿ)` of the basic Lambert series.
+**Lambert series summand.** For a complex number $q$ with $|q| < 1$ and a natural number $k$,
+the $k$-th summand of the basic Lambert series is $q^{k+1} / (1 - q^{k+1})$, that is, the term
+$q^n / (1 - q^n)$ with $n = k + 1$.
 
 ## Depends on
 

@@ -16,8 +16,8 @@ A permutation with `k` cycles has at most `k` fixed points, so `a(n, k, j) = 0` 
 
 ## Proof depends on
 
-- [Cycle Quotient Count](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
-- [Cycle Quotient Count eq](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count-eq.md)
+- [Number of cycles of a permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
+- [Counting cycles via the cycle type](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count-eq.md)
 
 ## Sources
 

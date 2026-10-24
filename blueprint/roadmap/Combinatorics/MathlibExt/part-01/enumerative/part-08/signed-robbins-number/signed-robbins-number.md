@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.signedRobbinsNumber
 ---
 
-# Signed Robbins Number
+# Signed Robbins numbers
 
-The signed Robbins sequence `(-1) ^ choose (n + 1) 2 * A_(n+1)`.
+**Signed Robbins numbers.** For $n \in \mathbb{N}$, the signed Robbins number is the integer
+$(-1)^{\binom{n+1}{2}} A_{n+1}$, where $A_{n+1}$ is the Robbins number.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Robbins Number](robbins-number.md)
+- [Robbins numbers](robbins-number.md)
 
 ## Sources
 

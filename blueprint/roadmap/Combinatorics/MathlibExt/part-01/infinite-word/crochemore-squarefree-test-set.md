@@ -7,35 +7,31 @@ proof: formalized
 lean: MetaMathlibExt.crochemore_squarefree_test_set
 ---
 
-# Crochemore Squarefree Criterion
+# Crochemore's square-freeness test
 
-Crochemore's finite test: a letter map `f` on the ternary alphabet induces a
-squarefreeness-preserving free-monoid morphism (via `List.flatMap`) on all words
-if and only if it does so on squarefree words of length at most 5.
+**Crochemore's square-freeness test.** Let $f$ map each letter of the three-letter alphabet
+$\{a, b, c\}$ to a finite word over a set $T$, and extend $f$ to words by concatenation,
+$f(x_1 \cdots x_n) = f(x_1) \cdots f(x_n)$. Then $f$ maps every square-free word over
+$\{a, b, c\}$ to a square-free word if and only if it maps every square-free word over
+$\{a, b, c\}$ of length at most $5$ to a square-free word.
 
-Currie lines 99-100 state that a morphism `f` defined on `Σ*` preserves
-squarefreeness exactly when it preserves squarefreeness on words of length at
-most 5 (authoritative source
-`https://cs.uwaterloo.ca/journals/JIS/VOL22/Currie/currie20.tex`,
-span SHA-256
-`ae0ba8107ccc5dfcd1a4065609be8a31f1a809ea3f1f9b37ce7a2cd762dd5bf9`);
-the primary reference is Crochemore, Theoret. Comput. Sci. 18(2) (1982),
-DOI 10.1016/0304-3975(82)90023-8. The source states no non-erasing hypothesis
-for this criterion, so none is formalized.
+A word is square-free when no factor has the form $uu$ with $u$ nonempty. No non-erasing
+hypothesis is assumed: the image of a letter may be empty.
 
 Proof: reduce erasing morphisms first, then apply Currie's synchronization
 method to a shortest square occurrence and its shortest source-word cover.
 
 ## Depends on
 
-- [Is Square Free Word](square-free-word/is-square-free-word.md)
-- [Ternary Alphabet](square-free-word/ternary-alphabet.md)
+- [Square-free finite word](square-free-word/is-square-free-word.md)
+- [The ternary alphabet](square-free-word/ternary-alphabet.md)
 
 ## Proof depends on
 
-- [Of is Infix](square-free-word/of-is-infix.md)
-- [Is Word Square](square-free-word/is-word-square.md)
+- [Factors of square-free words are square-free](square-free-word/of-is-infix.md)
+- [Square word](square-free-word/is-word-square.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.CrochemoreSquarefreeCriterion](../../../../../sources/v2/MathlibExt.md)
+- Currie, lines 99-100 of `https://cs.uwaterloo.ca/journals/JIS/VOL22/Currie/currie20.tex`, span SHA-256 `ae0ba8107ccc5dfcd1a4065609be8a31f1a809ea3f1f9b37ce7a2cd762dd5bf9`; primary reference Crochemore, Theoret. Comput. Sci. 18(2) (1982), DOI 10.1016/0304-3975(82)90023-8.

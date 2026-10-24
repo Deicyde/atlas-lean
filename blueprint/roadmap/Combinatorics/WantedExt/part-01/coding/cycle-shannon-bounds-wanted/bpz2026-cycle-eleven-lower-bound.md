@@ -11,7 +11,7 @@ Source: BPZ, arXiv:2607.29681, exact eleven-cycle root rate.
 
 ## Depends on
 
-- [Shannon Capacity Cycle](../../../../MathlibExt/part-01/coding/cycle-code/shannon-capacity-cycle.md)
+- [Shannon capacity of the modular cycle](../../../../MathlibExt/part-01/coding/cycle-code/shannon-capacity-cycle.md)
 - [BPZProfile](bpzprofile.md)
 - [Bpz C11 Pi58](bpz-c11-pi58.md)
 

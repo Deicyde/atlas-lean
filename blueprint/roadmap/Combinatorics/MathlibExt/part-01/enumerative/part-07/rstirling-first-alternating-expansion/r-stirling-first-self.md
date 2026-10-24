@@ -7,13 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.rStirlingFirst_self
 ---
 
-# R Stirling First self
+# Initial row of the r-Stirling numbers of the first kind
 
-At `n = r` the product is empty, so `[r, m]_r` is `1` at `m = r` and `0` otherwise.
+**Initial row of the r-Stirling numbers of the first kind.** For all natural numbers $m$ and
+$r$, the unsigned $r$-Stirling number of the first kind $[r, m]_r$ equals $1$ if $m = r$ and $0$
+otherwise: when the first index equals $r$, the product in the definition is empty, so the
+polynomial is $x^r$.
 
 ## Depends on
 
-- [R Stirling First](r-stirling-first.md)
+- [Unsigned r-Stirling numbers of the first kind](r-stirling-first.md)
 
 ## Sources
 

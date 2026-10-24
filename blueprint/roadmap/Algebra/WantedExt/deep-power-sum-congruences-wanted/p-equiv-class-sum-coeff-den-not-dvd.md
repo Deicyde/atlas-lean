@@ -5,10 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.pEquivClassSum_coeff_den_not_dvd
 ---
 
-# P Equiv Class Sum coeff den not dvd
+# $g_\lambda$ is $p$-integral
 
-`g_λ` is `p`-integral: in any finite number of variables, no coefficient of `g_λ` has
-denominator divisible by `p` (the paper's `g_λ ∈ Λ_{ℤ_(p)}`).
+**$g_\lambda$ is $p$-integral.** Let $p$ be a prime, $\sigma$ a finite set of variables and
+$\lambda$ a partition of $n$. Every coefficient of the $p$-equivalence class sum $g_\lambda$ in
+$\mathbb{Q}[x_i : i \in \sigma]$ is a rational number whose denominator in lowest terms is not
+divisible by $p$.
+
+This is the paper's $g_\lambda \in \Lambda_{\mathbb{Z}_{(p)}}$, in finitely many variables.
 
 ## Depends on
 

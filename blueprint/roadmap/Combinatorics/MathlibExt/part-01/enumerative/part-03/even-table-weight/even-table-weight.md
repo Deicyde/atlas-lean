@@ -6,17 +6,23 @@ statement: formalized
 lean: MetaMathlibExt.evenTableWeight
 ---
 
-# Even Table Weight
+# Weight of an even table
 
-The weight of an even table is the product of its column weights.
+**Weight of an even table.** Let $M$ be a commutative monoid and $f : \mathbb{N} \to M$. The
+weight of an even $k \times n$ table $t$ with respect to $f$ is the product of the column weights
+of its $n$ columns with respect to $f$:
+
+$$\prod_{j=0}^{n-1} \prod_{v=0}^{n-1} f(m_j(v)),$$
+
+where $m_j(v)$ is the number of times the value $v$ occurs in column $j$ of $t$.
 
 ## Depends on
 
-- [Even Table](even-table.md)
+- [Even table](even-table.md)
 
 ## Proof depends on
 
-- [Column Weight](../../part-02/column-weight.md)
+- [Column weight](../../part-02/column-weight.md)
 
 ## Sources
 

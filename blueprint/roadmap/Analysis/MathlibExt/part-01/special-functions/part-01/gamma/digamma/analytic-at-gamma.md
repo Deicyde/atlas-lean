@@ -7,9 +7,10 @@ proof: formalized
 lean: Complex.analyticAt_Gamma
 ---
 
-# Analytic At Gamma
+# Analyticity of the Gamma function
 
-`Complex.Gamma` is analytic away from its poles at the nonpositive integers.
+**Analyticity of the Gamma function.** The complex Gamma function is analytic at every
+$w \in \mathbb{C}$ that is not a nonpositive integer.
 
 ## Depends on
 

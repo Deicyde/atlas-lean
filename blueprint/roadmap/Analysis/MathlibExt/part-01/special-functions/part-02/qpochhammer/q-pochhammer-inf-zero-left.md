@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.QPochhammer.qPochhammerInf_zero_left
 ---
 
-# Q Pochhammer Inf zero left
+# The q-Pochhammer symbol with a = 0
 
-With zero first parameter, every q-Pochhammer factor is one.
+**The q-Pochhammer symbol with a = 0.** For every complex number $q$ with $|q| < 1$,
+$(0;q)_\infty = 1$, since every factor $1 - 0 \cdot q^n$ equals $1$.
 
 ## Depends on
 
-- [Q Pochhammer Inf](q-pochhammer-inf.md)
+- [Infinite q-Pochhammer symbol](q-pochhammer-inf.md)
 
 ## Sources
 

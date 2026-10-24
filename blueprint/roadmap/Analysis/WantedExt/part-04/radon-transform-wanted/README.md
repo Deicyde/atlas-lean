@@ -4,7 +4,7 @@ navigation: module
 
 # Radon Transform
 
-- [Radon](radon.md)
-- [Fourier1](fourier1.md)
-- [Fourier2](fourier2.md)
-- [Radon can be diagonalized and pseudo inverted](radon-can-be-diagonalized-and-pseudo-inv.md)
+- [Radon transform on the plane](radon.md)
+- [One-dimensional Fourier transform](fourier1.md)
+- [Two-dimensional Fourier transform](fourier2.md)
+- [Fourier slice theorem and injectivity of the Radon transform on Schwartz functions](radon-can-be-diagonalized-and-pseudo-inv.md)

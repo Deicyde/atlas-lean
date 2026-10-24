@@ -7,12 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.spivey_bell_number_add
 ---
 
-# Spivey bell number add
+# Spivey's Bell number formula
 
-Spivey's Bell-number addition formula: `(n + m).bell` equals the double
-sum over `j = 0..m` and `k = 0..n` of
-`j ^ (n - k) * S(m, j) * C(n, k) * B_k`, with natural subtraction and power
-(`0 ^ 0 = 1`).
+**Spivey's Bell number formula.** For all natural numbers $m$ and $n$,
+
+$$B_{n+m} = \sum_{j=0}^{m} \sum_{k=0}^{n} j^{n-k} \, S(m, j) \binom{n}{k} B_k,$$
+
+where $B_k$ is the $k$-th Bell number, $S(m, j)$ is the Stirling number of the second kind, and
+$0^0 = 1$.
 
 ## Depends on
 

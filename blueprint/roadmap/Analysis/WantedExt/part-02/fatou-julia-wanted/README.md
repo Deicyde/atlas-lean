@@ -5,7 +5,7 @@ navigation: module
 
 # Fatou Julia
 
-- [Tc](tc.md)
-- [Mandelbrot](mandelbrot.md)
-- [Filled Julia](filled-julia.md)
-- [Julia cantor dichotomy](julia-cantor-dichotomy.md)
+- [Quadratic map $T_c$](tc.md)
+- [Mandelbrot set of the quadratic family](mandelbrot.md)
+- [Filled Julia set](filled-julia.md)
+- [Fatou–Julia dichotomy for quadratic polynomials](julia-cantor-dichotomy.md)

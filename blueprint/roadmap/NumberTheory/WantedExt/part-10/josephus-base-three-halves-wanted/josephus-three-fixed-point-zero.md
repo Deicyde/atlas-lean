@@ -16,7 +16,7 @@ The first zero-indexed positive fixed point is `1`, the paper's `n_p^{(1)}`.
 
 ## Proof depends on
 
-- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
+- [Josephus survivor function](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 
 ## Sources
 

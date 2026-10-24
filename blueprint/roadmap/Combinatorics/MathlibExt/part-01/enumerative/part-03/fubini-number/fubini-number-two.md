@@ -7,13 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.fubiniNumber_two
 ---
 
-# Fubini Number two
+# Fubini number of two
 
-`F 2 = 3`.
+**Fubini number of two.** The Fubini number $F(2)$ equals $3$.
 
 ## Depends on
 
-- [Fubini Number](fubini-number.md)
+- [Fubini numbers](fubini-number.md)
 
 ## Sources
 

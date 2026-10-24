@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.virtualRackClassCount_dihedral
 ---
 
-# Virtual Rack Class Count dihedral
+# Virtual quandle structures on the dihedral quandle
 
-For `n > 0`, the number of isomorphism classes of virtual quandles whose underlying quandle
-is the dihedral quandle `R_n` is `v(R_n) = φ(n) ∑_{d ∣ n} 1/φ(d)`.
+**Virtual quandle structures on the dihedral quandle.** For every $n > 0$, the number
+$v(R_n)$ of isomorphism classes of virtual racks whose underlying rack is the dihedral quandle
+$R_n$ (the set $\mathbb{Z}/n\mathbb{Z}$ with $x \triangleleft y = 2x - y$) equals
+$\varphi(n) \sum_{d \mid n} 1/\varphi(d)$, where $\varphi$ is Euler's totient function.
 
 ## Depends on
 
-- [Virtual Rack Class Count](virtual-rack-class-count.md)
+- [Number of isomorphism classes of virtual racks on a rack](virtual-rack-class-count.md)
 
 ## Sources
 

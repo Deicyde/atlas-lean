@@ -7,17 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.QPochhammer.qPochhammerInf_one_zero
 ---
 
-# Q Pochhammer Inf one zero
+# The q-Pochhammer symbol vanishes at a = 1 and q = 0
 
-The first factor vanishes at `(a, q) = (1, 0)`.
+**The q-Pochhammer symbol vanishes at a = 1 and q = 0.** The infinite q-Pochhammer symbol
+satisfies $(1;0)_\infty = 0$, because its factor for $n = 0$ is $1 - 1 \cdot 0^0 = 0$ (with the
+convention $0^0 = 1$).
 
 ## Depends on
 
-- [Q Pochhammer Inf](q-pochhammer-inf.md)
+- [Infinite q-Pochhammer symbol](q-pochhammer-inf.md)
 
 ## Proof depends on
 
-- [Has Prod q Pochhammer Inf](has-prod-q-pochhammer-inf.md)
+- [Convergence of the infinite q-Pochhammer product](has-prod-q-pochhammer-inf.md)
 
 ## Sources
 

@@ -5,5 +5,5 @@ navigation: module
 
 # Stirling Matrices
 
-- [Sum signed Stirling First mul stirling Second](sum-signed-stirling-first-mul-stirling-s.md)
-- [Stirling Matrices mutual Inverse and lower Triangular](stirling-matrices-mutual-inverse-and-low.md)
+- [Orthogonality relation for Stirling numbers](sum-signed-stirling-first-mul-stirling-s.md)
+- [Stirling matrices are mutually inverse and lower triangular](stirling-matrices-mutual-inverse-and-low.md)

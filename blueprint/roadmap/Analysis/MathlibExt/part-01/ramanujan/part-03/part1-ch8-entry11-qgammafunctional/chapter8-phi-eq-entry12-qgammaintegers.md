@@ -22,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Chapter8 Phi Term eq entry12 Qgammaintegers](chapter8-phi-term-eq-entry12-qgammainteg.md)
+- [The Entry 11 and Entry 12 series terms agree](chapter8-phi-term-eq-entry12-qgammainteg.md)
 
 ## Sources
 

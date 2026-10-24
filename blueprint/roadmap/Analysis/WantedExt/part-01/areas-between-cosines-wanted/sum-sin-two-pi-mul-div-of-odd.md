@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.sum_sin_two_pi_mul_div_of_odd
 ---
 
-# Sum sin two pi mul div of odd
+# Half-period sine sum for odd modulus
 
-Lemma 6: for `N` odd,
-`∑_{ℓ=1}^{(N-1)/2} sin(2π q ℓ / N)` is `-(1/2) tan(q π / (2N))` for `q` even and
-`(1/2) cot(q π / (2N))` for `q` odd. The paper's positivity of `q` is dropped
-(`q = 0` holds trivially).
+**Half-period sine sum for odd modulus.** Let $N$ be an odd natural number. For every
+natural number $q$, $\sum_{\ell=1}^{(N-1)/2} \sin(2\pi q \ell / N)$ equals
+$-\frac{1}{2} \tan\frac{q\pi}{2N}$ if $q$ is even and $\frac{1}{2} \cot\frac{q\pi}{2N}$ if $q$ is
+odd.
+
+The paper also assumes $q > 0$; for $q = 0$ both sides are $0$.
 
 ## Depends on
 

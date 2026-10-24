@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.DividedPowers.isDividedPowerIdeal
 ---
 
-# Is Divided Power Ideal
+# Ideals with divided powers are divided-power ideals
 
-An ideal carrying a divided-power structure in Mathlib's sense is a divided-power ideal.
+**Ideals with divided powers are divided-power ideals.** Let $I$ be an ideal of a commutative
+ring $A$. If $I$ carries a divided-power structure $(\gamma_k)_{k \ge 0}$ in the usual sense, then
+$I$ is a divided-power ideal: for every $a \in I$ and every $k \ge 1$ there is $c \in I$ with
+$a^k = k!\, c$.
 
 ## Depends on
 
-- [Is Divided Power Ideal](is-divided-power-ideal.md)
+- [Divided-power ideal](is-divided-power-ideal.md)
 
 ## Sources
 

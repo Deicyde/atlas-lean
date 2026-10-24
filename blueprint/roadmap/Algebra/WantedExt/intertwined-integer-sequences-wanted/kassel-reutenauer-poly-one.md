@@ -6,17 +6,18 @@ proof: formalized
 lean: MetaMathlibExt.kasselReutenauerPoly_one
 ---
 
-# Kassel Reutenauer Poly one
+# The first Kassel–Reutenauer polynomial
 
-Characteristic value `P̄_1(X) = 1` (Table 2).
+**The first Kassel–Reutenauer polynomial.** The Kassel–Reutenauer polynomial $\bar P_1$ is the
+constant polynomial $1$.
 
 ## Depends on
 
-- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
+- [Kassel–Reutenauer polynomial](kassel-reutenauer-poly.md)
 
 ## Proof depends on
 
-- [Kassel Reutenauer Coeff](kassel-reutenauer-coeff.md)
+- [The Kassel–Reutenauer coefficients $a_{n,i}$](kassel-reutenauer-coeff.md)
 
 ## Sources
 

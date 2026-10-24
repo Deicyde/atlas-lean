@@ -6,10 +6,12 @@ statement: formalized
 lean: MathlibExt.Analysis.RademacherEnfloTypeWanted.RademacherEnfloType.rademacherProductDistribution
 ---
 
-# Rademacher Product Distribution
+# Product Rademacher distribution
 
-Definition of the distribution of a sequence of independent Rademacher variables
-indexed by the type `ι`, which is a measure on `ι → {-1,1}`.
+**Product Rademacher distribution.** For an index type $\iota$, this is the product over
+$\iota$ of copies of the Rademacher distribution: the joint law of a family
+$(\varepsilon_i)_{i \in \iota}$ of independent Rademacher random variables, as a measure on the
+functions $\iota \to \{-1, 1\}$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Rademacher Distribution](rademacher-distribution.md)
+- [Rademacher distribution](rademacher-distribution.md)
 
 ## Sources
 

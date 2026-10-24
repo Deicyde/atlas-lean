@@ -25,7 +25,7 @@ This node has no prerequisites.
 
 - [Summability of the Lambert series $\sum_k 1/(e^{kx}-1)$](summable-chapter6-entry14-minus-term.md)
 - [Euler–Maclaurin formula](../../../calculus/euler-maclaurin-formula.md)
-- [One div exp sub one eq tsum](../../../special-functions/part-01/exp-sub-one-mittag-leffler/one-div-exp-sub-one-eq-tsum.md)
+- [Mittag-Leffler expansion of $1/(e^u - 1)$](../../../special-functions/part-01/exp-sub-one-mittag-leffler/one-div-exp-sub-one-eq-tsum.md)
 
 ## Sources
 

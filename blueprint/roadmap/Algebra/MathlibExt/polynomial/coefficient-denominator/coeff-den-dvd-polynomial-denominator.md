@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.coeff_den_dvd_polynomialDenominator
 ---
 
-# Coeff den dvd polynomial Denominator
+# Coefficient denominators divide the denominator of a polynomial
 
-Every coefficient denominator divides `polynomialDenominator P`.
+**Coefficient denominators divide the denominator of a polynomial.** For every polynomial
+$P \in \mathbb{Q}[x]$ and every $i \in \mathbb{N}$, the denominator (in lowest terms) of the
+coefficient of $x^i$ in $P$ divides the denominator $\operatorname{denom}(P)$ of $P$.
 
 ## Depends on
 
-- [Polynomial Denominator](polynomial-denominator.md)
+- [Denominator of a rational polynomial](polynomial-denominator.md)
 
 ## Sources
 

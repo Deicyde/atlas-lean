@@ -15,7 +15,7 @@ extremal point and `j := J_k(n_e + 1)`, then
 ## Depends on
 
 - [Is High Extremal](is-high-extremal.md)
-- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
+- [Josephus survivor function](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 
 ## Sources
 

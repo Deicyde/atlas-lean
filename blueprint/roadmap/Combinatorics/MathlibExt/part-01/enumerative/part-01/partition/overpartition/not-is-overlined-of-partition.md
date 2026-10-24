@@ -7,14 +7,16 @@ proof: formalized
 lean: Nat.Overpartition.not_isOverlined_ofPartition
 ---
 
-# Not is Overlined of Partition
+# No overlines in a plain partition
 
-No size is overlined in `ofPartition p`.
+**No overlines in a plain partition.** For every partition $p$ of $n$ and every natural
+number $a$, $a$ is not overlined in the overpartition whose underlying partition is $p$ and
+whose set of overlined part sizes is empty.
 
 ## Depends on
 
-- [Is Overlined](is-overlined.md)
-- [Of Partition](of-partition.md)
+- [Overlined part size](is-overlined.md)
+- [The overpartition attached to a partition](of-partition.md)
 
 ## Sources
 

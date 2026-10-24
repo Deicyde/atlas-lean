@@ -6,18 +6,21 @@ statement: formalized
 lean: InfiniteWord.tribonacciWord
 ---
 
-# Tribonacci Word
+# The infinite Tribonacci word
 
-The infinite Tribonacci word, obtained from the coherent chain of finite approximants.
+**The infinite Tribonacci word.** The infinite Tribonacci word is the sequence over the
+alphabet $\{a, b, c\}$ whose letter at each position $k \ge 0$ (positions counted from $0$) is
+the letter at position $k$ of the finite Tribonacci word $W(k)$; this position exists because
+$W(k)$ has length at least $k + 1$.
 
 ## Depends on
 
-- [Tribonacci Letter](tribonacci-letter.md)
+- [The Tribonacci alphabet](tribonacci-letter.md)
 
 ## Proof depends on
 
-- [Tribonacci Word Approx](tribonacci-word-approx.md)
-- [Tribonacci Word Approx length ge](tribonacci-word-approx-length-ge.md)
+- [Finite Tribonacci words](tribonacci-word-approx.md)
+- [Length lower bound for finite Tribonacci words](tribonacci-word-approx-length-ge.md)
 
 ## Sources
 

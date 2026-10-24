@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.exists_factorial_div_two_pow_le_abs_eval
 ---
 
-# Lemma 5
+# Integer polynomials take a large value at a small nonnegative integer
 
-**Lemma 5.** An integer polynomial of degree `d` satisfies `|f(x)| ≥ d!/2^d` for some
-`x ∈ {0, 1, …, d}`.
+**Integer polynomials take a large value at a small nonnegative integer.** Let
+$f \in \mathbb{Z}[x]$ have degree $d$. Then there is an integer $x$ with $0 \le x \le d$ such that
+$|f(x)| \ge d!/2^d$.
 
 ## Depends on
 

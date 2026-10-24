@@ -6,16 +6,18 @@ proof: formalized
 lean: NoncrossingPartition.eq_discrete_iff_val_eq_bot
 ---
 
-# Eq discrete iff val eq bot
+# Characterization of the discrete noncrossing partition
 
-Equality to discrete is determined by `val = ⊥`.
+**Characterization of the discrete noncrossing partition.** Let $n$ be a natural number. A
+noncrossing partition $P$ of $\{0, \dots, n-1\}$ equals the discrete noncrossing partition if
+and only if $P$, viewed as a set partition, is the finest partition of $\{0, \dots, n-1\}$.
 
 ## Depends on
 
-- [Noncrossing Partition](../basic/noncrossing-partition.md)
-- [Is Noncrossing](../basic/is-noncrossing.md)
-- [Set Partition](../basic/set-partition.md)
-- [Discrete](discrete.md)
+- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [Noncrossing set partition](../basic/is-noncrossing.md)
+- [Set partition](../basic/set-partition.md)
+- [Discrete noncrossing partition](discrete.md)
 
 ## Sources
 

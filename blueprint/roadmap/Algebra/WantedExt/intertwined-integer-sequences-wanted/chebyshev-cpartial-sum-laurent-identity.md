@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.chebyshevCPartialSum_laurent_identity
 ---
 
-# Chebyshev CPartial Sum laurent identity
+# Laurent polynomial identity for the partial sums of Chebyshev polynomials
 
-For `r ≥ 0`, `q^{r+1} + q^{-r-1} - q^r - q^{-r} = q⁻¹ (q - 1)² F_r(q + q⁻¹)`
-in `ℤ[T;T⁻¹]` (`q = T 1`).
+**Laurent polynomial identity for the partial sums of Chebyshev polynomials.** Let
+$F_r = 1 + \sum_{k=1}^{r} \bar T_k \in \mathbb{Z}[X]$ be the partial sums of the monic Chebyshev
+polynomials $\bar T_k$ ($\bar T_0 = 2$, $\bar T_1 = X$, $\bar T_{k+2} = X \bar T_{k+1} - \bar T_k$).
+For every natural number $r$, in the ring $\mathbb{Z}[q, q^{-1}]$ of Laurent polynomials,
+
+$$q^{r+1} + q^{-r-1} - q^r - q^{-r} = q^{-1} (q - 1)^2 F_r(q + q^{-1}).$$
 
 ## Depends on
 
-- [Chebyshev CPartial Sum](chebyshev-cpartial-sum.md)
+- [Partial sums of the monic Chebyshev polynomials](chebyshev-cpartial-sum.md)
 
 ## Sources
 

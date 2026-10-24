@@ -7,14 +7,16 @@ proof: formalized
 lean: Matroid.AlgebraicRepresentation.toIsAlgebraicOver
 ---
 
-# To Is Algebraic Over
+# Algebraic representations witness algebraicity over a field
 
-A representation in `max u v` witnesses algebraicity over `K`.
+**Algebraic representations witness algebraicity over a field.** Let $K$ be a field and $M$
+a matroid on a type $E$. If $M$ has an algebraic representation over $K$ whose extension field
+lies in the larger of the universes of $K$ and $E$, then $M$ is algebraic over $K$.
 
 ## Depends on
 
-- [Algebraic Representation](algebraic-representation.md)
-- [Is Algebraic Over](is-algebraic-over.md)
+- [Algebraic representation of a matroid](algebraic-representation.md)
+- [Algebraic matroid over a field](is-algebraic-over.md)
 
 ## Sources
 

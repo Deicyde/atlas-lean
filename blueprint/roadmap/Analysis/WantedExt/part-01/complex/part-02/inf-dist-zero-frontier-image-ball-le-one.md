@@ -5,12 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.UnivalentImageBoundaryDistLeOneWanted.infDist_zero_frontier_image_ball_le_one
 ---
 
-# Univalent Image Boundary Dist Le One Wanted
+# The boundary of a normalized univalent image of the disc is within distance one of the origin
 
-Let $D=\{z\in\mathbb{C}:|z|<1\}$ be the unit disk and suppose $f:D\to\mathbb{C}$ is an injective
-holomorphic function with $f(0)=0$ and $f'(0)=1$. Define $\Omega:=f(D)$.
-
-Show that $\mathrm{dist}(0,\partial\Omega):=\inf\{|z|:z\in\partial\Omega\}\le 1$.
+**The boundary of a normalized univalent image of the disc is within distance one of the
+origin.** Let $D=\{z\in\mathbb{C}:|z|<1\}$ be the unit disk and suppose $f:D\to\mathbb{C}$ is an
+injective holomorphic function with $f(0)=0$ and $f'(0)=1$. Let $\Omega=f(D)$ and let
+$\partial\Omega$ be its boundary. Then
+$\mathrm{dist}(0,\partial\Omega)=\inf\{|z|:z\in\partial\Omega\}\le 1$.
 
 ## Depends on
 

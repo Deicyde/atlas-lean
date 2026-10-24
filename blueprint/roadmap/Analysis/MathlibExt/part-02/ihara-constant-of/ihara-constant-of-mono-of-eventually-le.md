@@ -6,18 +6,20 @@ proof: formalized
 lean: MathlibExt.Analysis.iharaConstantOf_mono_of_eventually_le
 ---
 
-# Ihara Constant Of mono of eventually le
+# Monotonicity of the abstract Ihara constant
 
-The abstract Ihara constant is monotone under eventual domination.
+**Monotonicity of the abstract Ihara constant.** Let $N, M : \mathbb{N} \to \mathbb{N}$. If
+$N(g) \le M(g)$ for all sufficiently large $g$, then the abstract Ihara constant of $N$ is at
+most that of $M$.
 
 ## Depends on
 
-- [Ihara Constant Of](ihara-constant-of.md)
+- [Abstract Ihara constant of a sequence](ihara-constant-of.md)
 
 ## Proof depends on
 
-- [Ihara Ratio](ihara-ratio.md)
-- [Ihara Ratio mono](ihara-ratio-mono.md)
+- [Normalized Ihara ratio](ihara-ratio.md)
+- [Monotonicity of the normalized ratio](ihara-ratio-mono.md)
 
 ## Sources
 

@@ -5,6 +5,6 @@ navigation: module
 
 # Lambert WFunction
 
-- [Lambert Map](lambert-map.md)
-- [Exists Unique lambert Map preimage](exists-unique-lambert-map-preimage.md)
-- [Exists Unique lambert Map lower preimage](exists-unique-lambert-map-lower-preimage.md)
+- [Lambert map](lambert-map.md)
+- [Principal-branch preimages of the Lambert map](exists-unique-lambert-map-preimage.md)
+- [Lower-branch preimages of the Lambert map](exists-unique-lambert-map-lower-preimage.md)

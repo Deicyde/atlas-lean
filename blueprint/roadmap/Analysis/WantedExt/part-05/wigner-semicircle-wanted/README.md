@@ -4,8 +4,8 @@ navigation: module
 
 # Wigner Semicircle
 
-- [Empirical Spectral Measure Herm](empirical-spectral-measure-herm.md)
-- [Semicircle Law](semicircle-law.md)
-- [Wigner Matrix](wigner-matrix.md)
+- [Empirical spectral measure of a Hermitian matrix](empirical-spectral-measure-herm.md)
+- [Semicircle distribution](semicircle-law.md)
+- [Wigner matrix](wigner-matrix.md)
 - [Wigner Matrix is Hermitian](wigner-matrix-is-hermitian.md)
-- [Wigner semicircle](wigner-semicircle.md)
+- [Wigner's semicircle law](wigner-semicircle.md)

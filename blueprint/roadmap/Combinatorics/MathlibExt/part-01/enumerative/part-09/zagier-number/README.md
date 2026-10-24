@@ -5,5 +5,5 @@ navigation: module
 
 # Zagier Number
 
-- [Domb Type Sum](domb-type-sum.md)
-- [Zagier Number](zagier-number.md)
+- [Domb-type sums](domb-type-sum.md)
+- [Zagier numbers](zagier-number.md)

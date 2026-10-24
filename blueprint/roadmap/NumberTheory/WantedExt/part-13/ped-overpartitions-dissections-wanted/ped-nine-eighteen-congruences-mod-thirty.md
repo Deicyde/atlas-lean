@@ -23,7 +23,7 @@ Congruences modulo `32` for `ped_{9,18}`: for all `n, α, β ≥ 0`,
 ## Depends on
 
 - [Ped Nine Eighteen](ped-nine-eighteen.md)
-- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [The Euler products of partition theory](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.LandauKolmogorovSecondOrderWanted.bddAbove_abs_deriv_and_iSup_le_two_mul_sqrt
 ---
 
-# Landau Kolmogorov Second Order Wanted
+# Landau's inequality
 
-For $f \in C^2(\mathbb{R})$, let $M_k = \sup_x |f^{(k)}(x)|$.
-Prove that $M_1 \le 2\sqrt{M_0 M_2}$.
+**Landau's inequality.** Let $f : \mathbb{R} \to \mathbb{R}$ be twice continuously
+differentiable, and for $k = 0, 1, 2$ let $M_k = \sup_{x \in \mathbb{R}} |f^{(k)}(x)|$. If $f$ and
+$f''$ are bounded, then $f'$ is bounded and $M_1 \le 2\sqrt{M_0 M_2}$.
 
 ## Depends on
 

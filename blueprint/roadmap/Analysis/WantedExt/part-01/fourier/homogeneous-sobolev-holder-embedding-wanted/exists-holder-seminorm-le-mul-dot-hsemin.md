@@ -5,22 +5,21 @@ statement: formalized
 lean: MathlibExt.Analysis.Fourier.HomogeneousSobolevHolderEmbeddingWanted.exists_holderSeminorm_le_mul_dotHSeminorm
 ---
 
-# Exists holder Seminorm le mul dot HSeminorm
+# The homogeneous Sobolev seminorm controls the Hölder seminorm
 
-Fix $s\in \left(\tfrac12,1\right]$. For a Schwartz function $f:\mathbb{R}\to\mathbb{C}$, define
-\[
-\|f\|_{\dot H^{s}(\mathbb{R})} = \left( \int_{\mathbb{R}} |\xi|^{2s} |\widehat{f}|^{2}(\xi)\, d\xi
-\right)^{1/2}.
-\]
-Prove that there exists $C_3>0$ such that the following holds for all $f\in
-\mathcal{S}(\mathbb{R})$:
- \[
- \sup_{x\ne y} \frac{|f(x)-f(y)|}{|x-y|^{\,s-\frac12}} \le C_3 \|f\|_{\dot H^{s}(\mathbb{R})}.
- \]
+**The homogeneous Sobolev seminorm controls the Hölder seminorm.** Let $s \in (\tfrac12, 1]$,
+and for a Schwartz function $f : \mathbb{R} \to \mathbb{C}$ with Fourier transform $\hat f$ let
+$\|f\|_{\dot H^s} = \left( \int_{\mathbb{R}} |\xi|^{2s} |\hat f(\xi)|^2 \, d\xi \right)^{1/2}$
+be its homogeneous Sobolev seminorm. There is a constant $C_3 > 0$ such that for every Schwartz
+function $f : \mathbb{R} \to \mathbb{C}$,
+
+$$
+\sup_{x \ne y} \frac{|f(x) - f(y)|}{|x - y|^{s - \frac12}} \le C_3 \, \|f\|_{\dot H^s}.
+$$
 
 ## Depends on
 
-- [Dot HSeminorm](dot-hseminorm.md)
+- [Homogeneous Sobolev seminorm for the Hölder embedding](dot-hseminorm.md)
 
 ## Sources
 

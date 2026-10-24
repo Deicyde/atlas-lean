@@ -7,14 +7,14 @@ navigation: module
 - [Weak Composition](weak-composition.md)
 - [Set Composition](set-composition.md)
 - [Partition Conjugate](partition-conjugate.md)
-- [Is Self Conjugate](is-self-conjugate.md)
-- [Partitions In Box](partitions-in-box.md)
+- [Self-conjugate partition](is-self-conjugate.md)
+- [Number of partitions in a box](partitions-in-box.md)
 
 ## Informal statement of `Nat.VPartition`
 
-- [VPartition](vpartition.md)
+- [V-partition](vpartition.md)
 
 ## Informal statement of `List.IsUnimodal`
 
-- [Is Unimodal](is-unimodal.md)
+- [Unimodal sequence](is-unimodal.md)
 - [Dominates](dominates.md)

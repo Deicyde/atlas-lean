@@ -7,19 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.jacobiStirlingFirst_initial_row
 ---
 
-# Jacobi Stirling First initial row
+# Initial row of the first-kind Jacobi–Stirling numbers
 
-Initial row: `J(0,k;ζ)` is `1` when `k = 0` and `0` otherwise.
-Concept `jis_sem_108a092cfddb7cc6b11d221e`, from `e:JacobiStirling1` note `J(0,k;ζ) = δ_{0,k}`.
+**Initial row of the first-kind Jacobi–Stirling numbers.** For every commutative ring $R$,
+every $\zeta \in R$ and every natural number $k$, the first-kind Jacobi–Stirling number
+$J(0,k;\zeta)$ equals $1$ if $k = 0$ and $0$ otherwise.
 
 ## Depends on
 
-- [Jacobi Stirling First](jacobi-stirling-first.md)
+- [First-kind Jacobi–Stirling numbers](jacobi-stirling-first.md)
 
 ## Proof depends on
 
-- [Jacobi Stirling First Poly](jacobi-stirling-first-poly.md)
+- [Generating polynomial of the first-kind Jacobi–Stirling numbers](jacobi-stirling-first-poly.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.JacobiStirlingFirstKind](../../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_108a092cfddb7cc6b11d221e`, from `e:JacobiStirling1` note `J(0,k;ζ) = δ_{0,k}`.

@@ -7,13 +7,15 @@ proof: formalized
 lean: PerronKernel.E1_hasDerivAt
 ---
 
-# E1 has Deriv At
+# Derivative of the averaging operator
 
-Derivative of `E1` under the integral sign.
+**Derivative of the averaging operator.** Let $E_1(u) = \int_0^1 e^{tu}\,dt$ for
+$u \in \mathbb{C}$. For every $x_0 \in \mathbb{C}$, the function $E_1$ has complex derivative
+$\int_0^1 t\,e^{t x_0}\,dt$ at $x_0$.
 
 ## Depends on
 
-- [E1](e1.md)
+- [The averaging operator $E_1$](e1.md)
 
 ## Sources
 

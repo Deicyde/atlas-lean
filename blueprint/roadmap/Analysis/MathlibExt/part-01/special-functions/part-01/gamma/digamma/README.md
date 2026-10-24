@@ -7,19 +7,19 @@ navigation: module
 
 ## Real
 
-- [Summable one div add nat succ sq](summable-one-div-add-nat-succ-sq.md)
-- [Has Sum digamma series](has-sum-digamma-series.md)
-- [Has Deriv At tsum digamma series](has-deriv-at-tsum-digamma-series.md)
-- [Deriv deriv log Gamma add one](deriv-deriv-log-gamma-add-one.md)
-- [Deriv log Gamma](deriv-log-gamma.md)
+- [Summability of the Basel series](summable-one-div-add-nat-succ-sq.md)
+- [Digamma series on the positive reals](has-sum-digamma-series.md)
+- [Derivative of the digamma series](has-deriv-at-tsum-digamma-series.md)
+- [Trigamma series](deriv-deriv-log-gamma-add-one.md)
+- [Logarithmic derivative of the real Gamma function](deriv-log-gamma.md)
 
 ## Complex
 
-- [Analytic At Gamma](analytic-at-gamma.md)
-- [Analytic At digamma](analytic-at-digamma.md)
-- [Deriv Gamma of Real](deriv-gamma-of-real.md)
-- [Summable norm one div add nat succ sq](summable-norm-one-div-add-nat-succ-sq.md)
-- [Digamma Series Term](digamma-series-term.md)
-- [Digamma Series Fun](digamma-series-fun.md)
-- [Summable digamma Series Term](summable-digamma-series-term.md)
+- [Analyticity of the Gamma function](analytic-at-gamma.md)
+- [Analyticity of the digamma function](analytic-at-digamma.md)
+- [Complex and real derivatives of Gamma agree on the positive reals](deriv-gamma-of-real.md)
+- [Absolute convergence of the trigamma series](summable-norm-one-div-add-nat-succ-sq.md)
+- [Terms of the complex digamma series](digamma-series-term.md)
+- [Complex digamma series](digamma-series-fun.md)
+- [Summability of the digamma series terms](summable-digamma-series-term.md)
 - [Has Sum digamma series](has-sum-digamma-series-2.md)

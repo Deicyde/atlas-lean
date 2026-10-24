@@ -7,15 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.fibMorph_length_ge
 ---
 
-# Fib Morph length ge
+# The Fibonacci morphism does not shorten words
 
-Every letter maps to a nonempty word, so the morphism never shrinks length.
-Concept `jis_sem_f409ef3715730614fd194b4d`.
+**The Fibonacci morphism does not shorten words.** Let $\varphi$ be the Fibonacci morphism on
+finite binary words, induced by $0 \mapsto 01$ and $1 \mapsto 0$. For every finite binary word $w$,
+the length of $\varphi(w)$ is at least the length of $w$, that is, $|w| \le |\varphi(w)|$.
+
+The reason is that every letter maps to a nonempty word.
 
 ## Depends on
 
-- [Fib Morph](fib-morph.md)
+- [Fibonacci morphism](fib-morph.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.FibonacciWord](../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_f409ef3715730614fd194b4d`.

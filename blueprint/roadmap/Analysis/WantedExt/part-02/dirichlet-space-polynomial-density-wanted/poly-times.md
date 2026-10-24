@@ -6,14 +6,18 @@ statement: formalized
 lean: MathlibExt.Analysis.DirichletSpacePolynomialDensityWanted.polyTimes
 ---
 
-# Poly Times
+# Polynomial multiples of a function in the Dirichlet space
 
-Polynomial multiples Pg from [AMR-022-8011] Problem 8.11, Pg as defined in Problem 8.10 (Hayman (2018); https://arxiv.org/abs/1809.07200): products of the fixed function `g ∈ D` by analytic polynomials, with equality required on the disc only.
+**Polynomial multiples of a function in the Dirichlet space.** For $g$ in the Dirichlet
+space $\mathcal{D}$, the set $Pg$ consists of the functions $h \in \mathcal{D}$ for which there is
+a polynomial $p$ with complex coefficients such that $h(z) = p(z) g(z)$ for all $|z| < 1$; only
+values on the open unit disc are compared.
 
 ## Depends on
 
-- [Dirichlet Space](dirichlet-space.md)
+- [The Dirichlet space](dirichlet-space.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.DirichletSpacePolynomialDensityWanted](../../../../../sources/v2/WantedExt.md)
+- `AMR-022-8011` (Hayman, Research Problems in Function Theory (2018), Problem 8.11, with $Pg$ as defined in Problem 8.10), https://arxiv.org/abs/1809.07200.

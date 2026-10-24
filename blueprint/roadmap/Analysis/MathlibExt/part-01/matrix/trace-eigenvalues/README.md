@@ -4,9 +4,9 @@ navigation: module
 
 # Trace Eigenvalues
 
-- [Inner to Euclidean Lin self eq sum](inner-to-euclidean-lin-self-eq-sum.md)
-- [Trace mul eq sum eigenvalues](trace-mul-eq-sum-eigenvalues.md)
-- [Overlap mem doubly Stochastic](overlap-mem-doubly-stochastic.md)
-- [Exists perm sum le of mem doubly Stochastic](exists-perm-sum-le-of-mem-doubly-stochas.md)
-- [A trace inequality for eigenvalues](exists-perm-sum-mul-eigenvalues-le-trace.md)
-- [A trace inequality for eigenvalues](exists-perm-trace-mul-le-sum-mul-eigenva.md)
+- [The quadratic form of a symmetric matrix in an orthonormal eigenbasis](inner-to-euclidean-lin-self-eq-sum.md)
+- [The trace of a product of symmetric matrices in their eigenbases](trace-mul-eq-sum-eigenvalues.md)
+- [The overlap matrix of two orthonormal bases is doubly stochastic](overlap-mem-doubly-stochastic.md)
+- [Linear functionals on doubly stochastic matrices are bounded below at a permutation](exists-perm-sum-le-of-mem-doubly-stochas.md)
+- [A pairing of eigenvalues bounds the trace of a product from below](exists-perm-sum-mul-eigenvalues-le-trace.md)
+- [A pairing of eigenvalues bounds the trace of a product from above](exists-perm-trace-mul-le-sum-mul-eigenva.md)

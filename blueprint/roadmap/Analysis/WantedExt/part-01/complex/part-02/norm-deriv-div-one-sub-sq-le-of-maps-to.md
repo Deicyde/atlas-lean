@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.SchwarzPickDerivBoundWanted.norm_deriv_div_one_sub_sq_le_of_mapsTo_unitBall
 ---
 
-# Schwarz Pick Deriv Bound Wanted
+# Schwarz–Pick lemma, derivative form
 
-Prove that if $f:\mathbb{D}\to\mathbb{D}$ is holomorphic, then
+**Schwarz–Pick lemma, derivative form.** Let $\mathbb{D}=\{z\in\mathbb{C}:|z|<1\}$ be the open
+unit disc. If $f:\mathbb{D}\to\mathbb{D}$ is holomorphic, then
 
 \[
 \frac{|f'(z)|}{1-|f(z)|^2}\le \frac{1}{1-|z|^2}\qquad\text{for all } z\in\mathbb{D}.

@@ -7,16 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.stirlingSecond_addition
 ---
 
-# Stirling Second Addition
+# Addition formula for Stirling numbers of the second kind
 
-Addition formula for the Stirling numbers of the second kind.
+**Addition formula for Stirling numbers of the second kind.** Write $S(n,k)$ for the Stirling
+numbers of the second kind. For all natural numbers $u$, $v$ and $k$ with $u > 0$,
 
-The source sums `n = 1, …, k` and `m = k - n, …, v`, matching the
-`Finset.Icc` ranges below.
+$$S(u+v,k) = \sum_{n=1}^{k} S(u,n) \sum_{m=k-n}^{v} \binom{v}{m} S(m,k-n)\, n^{v-m},$$
 
-The hypothesis `0 < u` is not explicit in the source, but this encoding needs it: at
-`(u, v, k) = (0, 1, 1)` the left side is `1`, while the sum over `n ∈ Finset.Icc 1 1` is `0`
-because `Nat.stirlingSecond 0 1 = 0`.
+where an inner sum with $k - n > v$ is empty.
+
+The source does not state the hypothesis $u > 0$, but the formula needs it: for $u = 0$ and
+$v = k = 1$ the left side is $S(1,1) = 1$, while every term on the right has the factor
+$S(0,1) = 0$.
 
 ## Depends on
 

@@ -7,13 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.partitionFunction_zero
 ---
 
-# Partition Function zero
+# The partition number of zero
 
-There is one partition of `0`, the empty one.
+**The partition number of zero.** Let $p(n)$ be the number of partitions of $n$. Then
+$p(0) = 1$: the only partition of $0$ is the empty one.
 
 ## Depends on
 
-- [Partition Function](partition-function.md)
+- [The partition function](partition-function.md)
 
 ## Sources
 

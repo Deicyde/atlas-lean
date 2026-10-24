@@ -7,9 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.reciprocal_central_binomial_sums
 ---
 
-# Reciprocal Central Binomial Sums
+# Sums of reciprocals of central binomial coefficients
 
-Three reciprocal central binomial series evaluations.
+**Sums of reciprocals of central binomial coefficients.** The following three series converge
+absolutely, with the stated sums:
+
+$$\sum_{n=1}^{\infty} \frac{1}{n \binom{2n}{n}} = \frac{\pi \sqrt{3}}{9},$$
+
+
+
+$$\sum_{n=1}^{\infty} \frac{1}{\binom{2n}{n}} = \frac{1}{3} + \frac{2\pi}{9\sqrt{3}},$$
+
+
+
+$$\sum_{n=1}^{\infty} \frac{1}{n^2 \binom{2n}{n}} = \frac{\pi^2}{18}.$$
 
 ## Depends on
 

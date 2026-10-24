@@ -6,10 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.meshN
 ---
 
-# Mesh N
+# Canonical mesh-pattern statistic
 
-Canonical mesh-pattern count statistic: number of `MatchPred` positions plus one when
-`ZeroPred` holds. Shared by the recursion and the coefficient theorem.
+**Canonical mesh-pattern statistic.** Let $\sigma$ be a permutation of $m$ elements, with
+positions numbered $1, \dots, m$, and let $r$ be a natural number. The statistic $N_r(\sigma)$ is
+the number of mesh-pattern matches of $\sigma$ with parameter $r$, plus $1$ if the mesh-pattern
+zero condition holds, that is, if the largest value of $\sigma$ sits at a position $p \ge r$.
 
 ## Depends on
 
@@ -17,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Match Pred](match-pred.md)
-- [Zero Pred](zero-pred.md)
+- [Mesh-pattern match](match-pred.md)
+- [Mesh-pattern zero condition](zero-pred.md)
 
 ## Sources
 

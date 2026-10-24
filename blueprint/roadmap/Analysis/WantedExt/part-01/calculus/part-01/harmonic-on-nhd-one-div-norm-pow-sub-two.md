@@ -5,14 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.NormPowTwoSubDimHarmonicWanted.harmonicOnNhd_one_div_norm_pow_sub_two
 ---
 
-# Norm Pow Two Sub Dim Harmonic Wanted
+# The Newtonian kernel is harmonic away from the origin
 
-Verify that $g_m:\mathbb R^m\setminus\{0\}\to\mathbb R$ defined by
-
-\[
-g_m(x):=|x|^{2-m}, & m>2,
-\]
-is harmonic in $\mathbb R^m\setminus\{0\}$.
+**The Newtonian kernel is harmonic away from the origin.** Let $m > 2$ be a natural number.
+The function $x \mapsto 1/|x|^{m-2}$ on the Euclidean space $\mathbb{R}^m$, where $|x|$ is the
+Euclidean norm, is harmonic on $\mathbb{R}^m \setminus \{0\}$.
 
 ## Depends on
 

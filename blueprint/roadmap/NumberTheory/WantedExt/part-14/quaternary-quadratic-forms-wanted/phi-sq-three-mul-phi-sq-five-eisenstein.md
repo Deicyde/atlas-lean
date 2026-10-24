@@ -13,7 +13,7 @@ For `‖q‖ < 1`, `φ²(q³)φ²(q⁵) = -(1/36)[P₁ - 2P₂ - 3P₃ + 4P₄ +
 
 ## Depends on
 
-- [Q Pochhammer Inf Raw](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
+- [Raw infinite q-Pochhammer product](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
 - [Ramanujan Theta Raw](../../../MathlibExt/part-01/modular-forms/jacobi-theta/ramanujan/ramanujan-theta-raw.md)
 
 ## Sources

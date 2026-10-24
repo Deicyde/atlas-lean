@@ -7,16 +7,14 @@ proof: formalized
 lean: Real.catalanConstant_eq_tsum
 ---
 
-# Catalan Constant eq tsum
+# Catalan's constant as a series
 
-Characteristic equation: Catalan's constant is the sum of its
-defining alternating series. Downstream users should rewrite with this
-lemma (or `Real.hasSum_catalanConstant`) instead of unfolding the
-definition.
+**Catalan's constant as a series.** Catalan's constant $G$ equals
+$\sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)^2}$.
 
 ## Depends on
 
-- [Catalan Constant](catalan-constant.md)
+- [Catalan's constant](catalan-constant.md)
 
 ## Sources
 

@@ -6,14 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.completeBellPolynomial
 ---
 
-# Complete Bell Polynomial
+# Complete Bell polynomials
 
-Complete Bell polynomial family `B n`, as used in source statement
-`jis_4e6064ed86b521df4a4febe5` (concept `jis_sem_2f450d618ad4cc4cadb7505f`).
+**Complete Bell polynomials.** For a sequence $x = (x_0, x_1, x_2, \dots)$ of complex numbers,
+the complete Bell polynomials $B_n(x)$ are defined by $B_0(x) = 1$ and, for every $m \ge 0$,
+$B_{m+1}(x) = \sum_{i=0}^{m} \binom{m}{i} B_{m-i}(x) \, x_i$.
 
-`B 0` is `1`, and `B (m + 1)` applied to `x : Nat → Complex` (with `x i`
-standing for `y_{i+1}`) is
-`∑ i ∈ Finset.range (m + 1), C(m, i) * B (m - i) x * x i`.
+Writing $x_i = y_{i+1}$, this is the usual recurrence for $B_{m+1}(y_1, \dots, y_{m+1})$.
 
 ## Depends on
 
@@ -22,3 +21,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.CompleteExponentialAutonomousFunction](../../../../../../../sources/v2/MathlibExt.md)
+- statement `jis_4e6064ed86b521df4a4febe5` (concept `jis_sem_2f450d618ad4cc4cadb7505f`).

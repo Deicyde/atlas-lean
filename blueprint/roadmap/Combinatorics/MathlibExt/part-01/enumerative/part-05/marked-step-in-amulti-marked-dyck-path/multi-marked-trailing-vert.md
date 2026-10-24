@@ -6,21 +6,22 @@ statement: formalized
 lean: MetaMathlibExt.multiMarkedTrailingVert
 ---
 
-# Multi Marked Trailing Vert
+# Final run of vertical steps
 
-Final (trailing) run of vertical steps: the suffix after the last `E`
-step, or the whole sequence if there is no `E` step.
-Concept `jis_sem_ee7327c841ed4326952fd4fb`;
-source statement `jis_54a13fcd4eb84116f24d6935`.
+**Final run of vertical steps.** The final run of vertical steps of a finite sequence $s$
+of steps of a multi-marked Dyck path is the longest suffix of $s$ consisting of vertical steps
+($N$ or $N^*_t$): the part of $s$ after its last horizontal step $E$, or all of $s$ if $s$ has
+no step $E$.
 
 ## Depends on
 
-- [Multi Marked Step](multi-marked-step.md)
+- [Steps of a multi-marked Dyck path](multi-marked-step.md)
 
 ## Proof depends on
 
-- [Multi Marked Is Vert](multi-marked-is-vert.md)
+- [Vertical steps of a multi-marked Dyck path](multi-marked-is-vert.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MarkedStepInAMultiMarkedDyckPath](../../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_ee7327c841ed4326952fd4fb`, source statement `jis_54a13fcd4eb84116f24d6935`.

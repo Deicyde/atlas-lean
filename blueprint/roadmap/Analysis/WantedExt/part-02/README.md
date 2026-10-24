@@ -7,10 +7,10 @@ navigation: transparent
 
 - [Cauchy Kovalevskaya](cauchy-kovalevskaya-wanted/README.md)
 - [Choquet](choquet-wanted/README.md)
-- [Complementary Polynomials Wanted](exists-complementary-polynomial-on-unit.md)
+- [Complementary polynomial on the unit circle](exists-complementary-polynomial-on-unit.md)
 - [Continuum Limsup Constant](continuum-limsup-constant-wanted/README.md)
-- [Cubic Decay Wanted](cubic-decay-asymptotic.md)
-- [Dirichlet Eigenvalues Wanted](dirichlet-eigenvalues-eq-nat-sq.md)
+- [Decay rate of solutions of $y' = -y^3$](cubic-decay-asymptotic.md)
+- [Dirichlet eigenvalues of $-y'' = \lambda y$ on $(0, \pi)$](dirichlet-eigenvalues-eq-nat-sq.md)
 - [Dirichlet Space Polynomial Density](dirichlet-space-polynomial-density-wanted/README.md)
 - [Entire Zeros Ones Lines](entire-zeros-ones-lines-wanted/README.md)
 - [Erdos Entire Function Countable Dense Preimage](erdos-entire-function-countable-dense-preimage-w/README.md)

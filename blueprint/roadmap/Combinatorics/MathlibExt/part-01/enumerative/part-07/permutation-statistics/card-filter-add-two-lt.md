@@ -6,10 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.card_filter_add_two_lt
 ---
 
-# Card filter add two lt
+# Number of positions with two successors
 
-The positions `i` with `i + 2 < n`, the possible positions of the four local statistics, number
-`n - 2`.
+**Number of positions with two successors.** For every natural number $n$, exactly $n - 2$ of
+the positions $i \in \{0, 1, \dots, n-1\}$ satisfy $i + 2 < n$, where $n - 2$ is truncated
+subtraction (it is $0$ when $n < 2$).
+
+These are the positions at which a permutation of $\{0, 1, \dots, n-1\}$ can have a double
+ascent, a double descent, a peak or a valley.
 
 ## Depends on
 

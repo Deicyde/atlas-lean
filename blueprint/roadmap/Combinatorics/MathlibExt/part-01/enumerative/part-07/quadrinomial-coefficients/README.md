@@ -5,6 +5,6 @@ navigation: module
 
 # Quadrinomial Coefficients
 
-- [Zhang VSum](zhang-vsum.md)
-- [Quadrinomial Coeff](quadrinomial-coeff.md)
-- [Quadrinomial Coeff eq zhang VSum](quadrinomial-coeff-eq-zhang-vsum.md)
+- [Zhang's six-parameter binomial sum](zhang-vsum.md)
+- [Quadrinomial sequence A005725](quadrinomial-coeff.md)
+- [Quadrinomial numbers as a specialization of Zhang's V-sum](quadrinomial-coeff-eq-zhang-vsum.md)

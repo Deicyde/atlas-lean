@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.sum_fib_rpow_le_card_mul_rpow
 ---
 
-# Sum fib rpow le card mul rpow
+# Upper bounds for Fibonacci power sums with exponent below 2
 
-Upper bounds of Theorem 3(ii) for Fibonacci numbers, with `α = (r + s) / 2`: if
-`0 < α < 2` then
-`∑_{k=1}^n F_k ^ α ≤ n (F_n F_{n+1} / n) ^ (α / 2) ≤ F_n F_{n+1}`.
+**Upper bounds for Fibonacci power sums with exponent below 2.** Let $F_k$ denote the $k$-th
+Fibonacci number. For every natural number $n \ge 1$ and every real $\alpha$ with
+$0 < \alpha < 2$,
+$\sum_{k=1}^{n} F_k^\alpha \le n (F_n F_{n+1} / n)^{\alpha/2} \le F_n F_{n+1}$.
+
+In the paper $\alpha = (r + s)/2$.
 
 ## Depends on
 

@@ -12,7 +12,7 @@ lean: MetaMathlibExt.tprod_qPochhammer_threeAdic_factorization
 
 ## Depends on
 
-- [Q Pochhammer Inf](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf.md)
+- [Infinite q-Pochhammer symbol](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf.md)
 
 ## Sources
 

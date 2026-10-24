@@ -7,10 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.card_permutations_avoiding_231_with_peak_count
 ---
 
-# Peak Statistic231
+# Peaks of 231-avoiding permutations
 
-The number of 231-avoiding permutations of length `n` with exactly `k` peaks has the stated
-closed form.
+**Peaks of 231-avoiding permutations.** Let $n \ge 1$ and $k$ be natural numbers. A permutation
+$\sigma$ of $\{0, \dots, n-1\}$ avoids $231$ if there are no positions $i < j < l$ with
+$\sigma(l) < \sigma(i) < \sigma(j)$, and $\sigma$ has a peak at a position $i$ with
+$0 < i < n - 1$ if $\sigma(i-1) < \sigma(i)$ and $\sigma(i+1) < \sigma(i)$. The number of
+231-avoiding permutations of $\{0, \dots, n-1\}$ with exactly $k$ peaks is
+$2^{n-2k-1} \binom{n-1}{2k} \binom{2k}{k} / (k+1)$, computed in the natural numbers: the
+exponent $n - 2k - 1$ is truncated at $0$ and the division rounds down.
 
 ## Depends on
 

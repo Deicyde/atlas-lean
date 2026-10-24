@@ -5,6 +5,6 @@ navigation: module
 
 # Narayana Number
 
-- [Narayana](narayana.md)
-- [Narayana eq](narayana-eq.md)
-- [Narayana eq second](narayana-eq-second.md)
+- [Narayana number](narayana.md)
+- [Defining formula for the Narayana number](narayana-eq.md)
+- [Second formula for the Narayana number](narayana-eq-second.md)

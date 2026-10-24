@@ -7,14 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.bAryBinomialCoefficient_eq_prod_getD
 ---
 
-# B Ary Binomial Coefficient eq prod get D
+# Digitwise product formula for the $b$-ary binomial coefficient
 
-`bAryBinomialCoefficient b n k hb` is the product of the digitwise binomial coefficients over
-any range of positions `L` covering the base-`b` digits of both `n` and `k`.
+**Digitwise product formula for the $b$-ary binomial coefficient.** Let $b \ge 2$, let $n$
+and $k$ be natural numbers with base-$b$ digits $n_i$ and $k_i$ (taken to be $0$ beyond the last
+digit, and with $0$ having no digits), and let $L$ be at least the number of base-$b$ digits of
+$n$ and at least the number of base-$b$ digits of $k$. Then the $b$-ary binomial coefficient of
+$n$ and $k$ equals $\prod_{i=0}^{L-1} \binom{n_i}{k_i}$.
 
 ## Depends on
 
-- [B Ary Binomial Coefficient](b-ary-binomial-coefficient.md)
+- [The $b$-ary binomial coefficient](b-ary-binomial-coefficient.md)
 
 ## Sources
 

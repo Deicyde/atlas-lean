@@ -5,5 +5,5 @@ navigation: module
 
 # Stirling Second Explicit
 
-- [Stirling Second mul factorial eq sum](stirling-second-mul-factorial-eq-sum.md)
-- [Has Sum stirling Second succ egf](has-sum-stirling-second-succ-egf.md)
+- [Explicit formula for Stirling numbers of the second kind](stirling-second-mul-factorial-eq-sum.md)
+- [Exponential generating function of a shifted Stirling column](has-sum-stirling-second-succ-egf.md)

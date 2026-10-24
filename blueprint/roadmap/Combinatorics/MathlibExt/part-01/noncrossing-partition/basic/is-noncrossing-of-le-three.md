@@ -6,18 +6,19 @@ proof: formalized
 lean: NoncrossingPartition.isNoncrossing_of_le_three
 ---
 
-# Is Noncrossing of le three
+# Partitions of at most three points are noncrossing
 
-Every partition of `Fin n` is noncrossing when `n ≤ 3`.
+**Partitions of at most three points are noncrossing.** For every $n \le 3$, every set
+partition of $\{0, \dots, n-1\}$ is noncrossing.
 
 ## Depends on
 
-- [Is Noncrossing](is-noncrossing.md)
-- [Set Partition](set-partition.md)
+- [Noncrossing set partition](is-noncrossing.md)
+- [Set partition](set-partition.md)
 
 ## Proof depends on
 
-- [Has Crossing](has-crossing.md)
+- [Crossing in a set partition](has-crossing.md)
 
 ## Sources
 

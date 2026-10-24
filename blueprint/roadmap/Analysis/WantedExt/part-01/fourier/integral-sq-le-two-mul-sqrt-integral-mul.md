@@ -5,12 +5,17 @@ statement: formalized
 lean: MathlibExt.Analysis.Fourier.SchwartzWeightedL2DerivInequalityWanted.integral_sq_le_two_mul_sqrt_integral_mul_sq_mul_sqrt_integral_deriv_sq
 ---
 
-# Schwartz Weighted L2 Deriv Inequality Wanted
+# Weighted $L^2$ inequality for real Schwartz functions
 
-Prove that the following inequality holds for any $f \in S(\mathbb{R})$:
-\[
-\|f\|_{L^2}^2 \le 2\|xf\|_{L^2}\|f'\|_{L^2}.
-\]
+**Weighted $L^2$ inequality for real Schwartz functions.** For every real-valued Schwartz
+function $f : \mathbb{R} \to \mathbb{R}$,
+
+$$
+\int_{\mathbb{R}} f(x)^2 \, dx \le 2 \left( \int_{\mathbb{R}} x^2 f(x)^2 \, dx \right)^{1/2}
+\left( \int_{\mathbb{R}} f'(x)^2 \, dx \right)^{1/2},
+$$
+
+that is, $\|f\|_{L^2}^2 \le 2 \, \|x f\|_{L^2} \, \|f'\|_{L^2}$.
 
 ## Depends on
 

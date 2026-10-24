@@ -5,11 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.padicValNat_multinomial_eq_sum_carries
 ---
 
-# Padic Val Nat multinomial eq sum carries
+# Kummer's theorem for multinomial coefficients
 
-Kummer: `v_p` of the multinomial coefficient `(r_1 + ⋯ + r_k; r_1, …, r_k)` is the sum of the
-carries when `r_1 + ⋯ + r_k` is added in base `p`; the carry into digit position `i ≥ 1` is
-`⌊Σ_j (r_j mod pⁱ) / pⁱ⌋`, and positions beyond `m = Σ_j r_j` carry nothing.
+**Kummer's theorem for multinomial coefficients.** Let $p$ be a prime and let
+$r_1, \dots, r_k$ be natural numbers with sum $m$. For $i \ge 1$ let
+$c_i = \lfloor ((r_1 \bmod p^i) + \dots + (r_k \bmod p^i)) / p^i \rfloor$. Then
+
+$$v_p\binom{m}{r_1, \dots, r_k} = \sum_{i=1}^{m} c_i.$$
+
+Here $c_i$ is the carry into digit position $i$ when $r_1 + \dots + r_k$ is added in base $p$, and
+$c_i = 0$ for $i > m$, so the right side is the sum of all the carries.
 
 ## Depends on
 

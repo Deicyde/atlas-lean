@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.tsum_centralBinom_div_choose_mul_centralBinom_mul_sq
 ---
 
-# Tsum central Binom div choose mul central Binom mul sq
+# A shifted central binomial series
 
-Corollary 2: for `h ∈ ℕ`,
-`Σ_{n≥h} C(2(n - h), n - h)/(C(n, h) C(2(n + 1), n + 1)(n + 1)²)
-  = (-1)^h (H_h + 2 ln 2)/((h + 1) C(2(h + 1), h + 1))
-    - Σ_{n=0}^{h-1} (-1)^{n-h} C(h, n)/(C(2(h - n), h - n) C(2(n + 1), n + 1)(n + 1)²)`,
-with the summation index shifted by `h`.
+**A shifted central binomial series.** For every natural number $h$, with
+$H_h = \sum_{j=1}^{h} \frac{1}{j}$ the $h$th harmonic number,
+
+$$\sum_{n=0}^{\infty} \frac{\binom{2n}{n}}{\binom{n+h}{h} \binom{2(n+h+1)}{n+h+1} (n + h + 1)^2} =
+\frac{(-1)^h (H_h + 2 \log 2)}{(h + 1) \binom{2(h+1)}{h+1}} -
+\sum_{n=0}^{h-1} \frac{(-1)^{h-n} \binom{h}{n}}{\binom{2(h-n)}{h-n} \binom{2(n+1)}{n+1} (n+1)^2}.$$
+
+After replacing $n$ by $n - h$, the left side is
+$\sum_{n \ge h} \binom{2(n-h)}{n-h} / \bigl(\binom{n}{h} \binom{2(n+1)}{n+1} (n + 1)^2\bigr)$.
 
 ## Depends on
 

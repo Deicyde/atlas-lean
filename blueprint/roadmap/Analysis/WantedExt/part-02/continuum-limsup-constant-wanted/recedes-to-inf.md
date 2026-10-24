@@ -6,12 +6,13 @@ statement: formalized
 lean: MathlibExt.Analysis.ContinuumLimsupConstantWanted.RecedesToInf
 ---
 
-# Recedes To Inf
+# Continua receding to infinity
 
-A continuum receding to infinity: closed, connected, and unbounded.
-Continuum is read as closed connected; receding to infinity is read as
-unbounded. Compactness at finite scales is not required, since an
-unbounded set is never compact.
+**Continua receding to infinity.** A set $\Gamma \subseteq \mathbb{C}$ is a continuum receding
+to infinity when it is closed, connected and unbounded.
+
+Here a continuum is read as a closed connected set and receding to infinity as unbounded;
+compactness is not required, since an unbounded set is never compact.
 
 ## Depends on
 

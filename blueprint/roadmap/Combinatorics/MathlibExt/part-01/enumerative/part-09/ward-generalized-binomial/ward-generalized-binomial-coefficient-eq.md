@@ -7,19 +7,22 @@ proof: formalized
 lean: MetaMathlibExt.wardGeneralizedBinomialCoefficient_eq_prod_Icc
 ---
 
-# Ward Generalized Binomial Coefficient eq prod Icc
+# Ward's generalized binomial coefficient as a finite product
 
-Ward's generalized binomial coefficient as a product over the bases `2, …, n + m` of
-`s b` raised to the units-place carry `(n % b + m % b) / b`.
+**Ward's generalized binomial coefficient as a finite product.** Let $R$ be a commutative
+monoid and $s = (s_b)_{b \in \mathbb{N}}$ a sequence in $R$. For all natural numbers $n$ and $m$,
+the Ward generalized binomial coefficient $\binom{n+m}{n}_s$ equals
+
+$$\prod_{b=2}^{n+m} s_b^{\lfloor ((n \bmod b) + (m \bmod b)) / b \rfloor}.$$
 
 ## Depends on
 
-- [Ward Generalized Binomial Coefficient](ward-generalized-binomial-coefficient.md)
+- [Ward generalized binomial coefficient](ward-generalized-binomial-coefficient.md)
 
 ## Proof depends on
 
-- [Ward Units Carry](ward-units-carry.md)
-- [Ward Units Carry eq div](ward-units-carry-eq-div.md)
+- [Units-place carry](ward-units-carry.md)
+- [Units-place carry as a quotient](ward-units-carry-eq-div.md)
 
 ## Sources
 

@@ -6,23 +6,25 @@ statement: formalized
 lean: Real.logarithmicIntegral
 ---
 
-# Logarithmic Integral
+# Logarithmic integral
 
-Normalized Cauchy-principal-value logarithmic integral `li`.
+**Logarithmic integral.** For a real number $x$ in the domain of the logarithmic integral
+(that is, $x \ge 0$ and $x \ne 1$), the logarithmic integral $\mathrm{li}(x)$ is
+$\mathrm{li}(x) = \int_0^x \frac{dt}{\log t}$ if $x < 1$, and if $x > 1$ it is
 
-For `0 ≤ x < 1`, `li x = ∫ t in 0..x, (log t)⁻¹`. For `x > 1`,
-`li x = (∫ u in 0..1, ((log (1 - u))⁻¹ + (log (1 + u))⁻¹)) +
-        ∫ t in 2..x, (log t)⁻¹`,
-where the first integral is the paired symmetric principal value
-`PV ∫₀² dt / log t = ∫₀¹ ((log (1-u))⁻¹ + (log (1+u))⁻¹) du` obtained
-by `t = 1 ∓ u`. The value at `0` is `0`. The function is not defined at
-`1` because the integrand is singular there. Single-point totalizations
-`(log 1)⁻¹ = 0` and `(log 0)⁻¹ = 0` do not affect Lebesgue interval
-integrals.
+$$
+\mathrm{li}(x) = \int_0^1 \Big(\frac{1}{\log(1-u)} + \frac{1}{\log(1+u)}\Big) du +
+\int_2^x \frac{dt}{\log t}.
+$$
+
+The first integral in the second case is the Cauchy principal value
+$\mathrm{PV}\int_0^2 \frac{dt}{\log t}$, rewritten by the substitutions $t = 1 - u$ and
+$t = 1 + u$, so that $\mathrm{li}(x)$ is the principal value
+$\mathrm{PV}\int_0^x \frac{dt}{\log t}$. In particular $\mathrm{li}(0) = 0$.
 
 ## Depends on
 
-- [Logarithmic Integral Domain](logarithmic-integral-domain.md)
+- [Domain of the logarithmic integral](logarithmic-integral-domain.md)
 
 ## Sources
 

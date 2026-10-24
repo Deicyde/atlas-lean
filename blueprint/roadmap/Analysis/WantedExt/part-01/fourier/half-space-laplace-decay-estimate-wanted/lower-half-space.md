@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.Analysis.Fourier.HalfSpaceLaplaceDecayEstimateWanted.LowerHalfSpace
 ---
 
-# Lower Half Space
+# Closed lower half-space
 
-The closed lower half-space `{p | p 2 ≤ 0}`.
+**Closed lower half-space.** The closed lower half-space is the set of points
+$(p_1, p_2, p_3)$ of Euclidean three-space $\mathbb{R}^3$ with $p_3 \le 0$.
 
 ## Depends on
 
-- [R3](r3.md)
+- [Euclidean three-space](r3.md)
 
 ## Sources
 

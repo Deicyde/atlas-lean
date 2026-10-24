@@ -6,10 +6,12 @@ statement: formalized
 lean: MathlibExt.Analysis.HessianEstimatesWanted.HessianEstimates.frobeniusNorm
 ---
 
-# Frobenius Norm
+# Frobenius norm
 
-Given a linear map `T` from a finite-dimensional inner product space `E` to a finite-dimensional
-inner product space `F` we define the Frobenius norm of `T` by `‖T‖_F := √ Trace (T^* ∘ T)`.
+**Frobenius norm.** Let $E$ and $F$ be finite-dimensional real inner product spaces. The
+Frobenius norm of a continuous linear map $T : E \to F$ is
+$\|T\|_F = \sqrt{\operatorname{tr}(T^* T)}$, where $T^* : F \to E$ is the adjoint of $T$ and the
+trace is taken on $E$.
 
 ## Depends on
 

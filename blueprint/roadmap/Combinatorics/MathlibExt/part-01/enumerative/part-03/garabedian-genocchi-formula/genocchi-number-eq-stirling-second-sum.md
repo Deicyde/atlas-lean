@@ -7,21 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.genocchiNumber_eq_stirlingSecond_sum
 ---
 
-# Genocchi Number eq stirling Second sum
+# Garabedian's formula for the Genocchi numbers
 
-Garabedian's explicit formula for the Genocchi numbers: for `n ≥ 1`,
-`G n = n * ∑ k = 1..n, (-1)^(n-k) * (k-1)! * S(n, k) / 2^(k-1)`,
-where the left-hand side uses the canonical generating-function definition
-`genocchiNumber`; the source identifies that same sequence with its Bernoulli
-formula, exactly the first equality in the source's displayed formula (g19).
+**Garabedian's formula for the Genocchi numbers.** For every natural number $n \ge 1$, the
+Genocchi number $G_n$, defined by $\sum_{m \ge 0} G_m x^m / m! = 2x/(e^x + 1)$, satisfies
 
-Historical attribution: H. L. Garabedian, "A new formula for the Bernoulli
-numbers," Bulletin of the American Mathematical Society 46 (1940), 531–533,
-DOI `10.1090/S0002-9904-1940-07255-6`.
+$$G_n = n \sum_{k=1}^{n} \frac{(-1)^{n-k} (k-1)!\, S(n, k)}{2^{k-1}},$$
 
-Since `k ∈ Finset.Icc 1 n`, both natural subtractions `n - k` and `k - 1`
-are genuine differences. It follows from `genocchiNumber_eq_stirlingSecond_sum_general`; the
-hypothesis `hn` is unused and keeps the source's shape.
+where $S(n, k)$ is the Stirling number of the second kind.
+
+The identity also holds for $n = 0$, where both sides are $0$.
+
+The formula is due to H. L. Garabedian, "A new formula for the Bernoulli numbers," Bulletin of
+the American Mathematical Society 46 (1940), 531–533, DOI 10.1090/S0002-9904-1940-07255-6.
 
 ## Depends on
 
@@ -29,7 +27,7 @@ hypothesis `hn` is unused and keeps the source's shape.
 
 ## Proof depends on
 
-- [Genocchi Number eq stirling Second sum general](genocchi-number-eq-stirling-second-sum-g.md)
+- [Garabedian's formula for the Genocchi numbers, including $n = 0$](genocchi-number-eq-stirling-second-sum-g.md)
 
 ## Sources
 

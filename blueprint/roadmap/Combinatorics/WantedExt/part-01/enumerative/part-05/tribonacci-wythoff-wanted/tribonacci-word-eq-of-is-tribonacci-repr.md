@@ -14,8 +14,8 @@ in `0`).
 
 ## Depends on
 
-- [Tribonacci Letter](../../../../../MathlibExt/part-01/infinite-word/tribonacci/tribonacci-letter.md)
-- [Tribonacci Word](../../../../../MathlibExt/part-01/infinite-word/tribonacci/tribonacci-word.md)
+- [The Tribonacci alphabet](../../../../../MathlibExt/part-01/infinite-word/tribonacci/tribonacci-letter.md)
+- [The infinite Tribonacci word](../../../../../MathlibExt/part-01/infinite-word/tribonacci/tribonacci-word.md)
 - [Is Tribonacci Repr](is-tribonacci-repr.md)
 
 ## Sources

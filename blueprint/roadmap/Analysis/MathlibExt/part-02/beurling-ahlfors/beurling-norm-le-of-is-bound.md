@@ -7,16 +7,17 @@ proof: formalized
 lean: MathlibExt.Analysis.BeurlingAhlfors.beurlingNorm_le_of_isBound
 ---
 
-# Beurling Norm le of is Bound
+# Nonnegative admissible bounds bound the Beurling–Ahlfors norm
 
-Characteristic lemma for the totalized norm: any nonnegative
-admissible bound bounds `beurlingNorm p` above. This is the correct way
-to turn a concrete `L^p` bound into a statement about `beurlingNorm`.
+**Nonnegative admissible bounds bound the Beurling–Ahlfors norm.** Let $p$ and $C$ be real
+numbers with $C \ge 0$, and let $\|B\|_p$ be the infimum of the nonnegative admissible $L^p$
+bound constants for the Beurling–Ahlfors transform $B$ ($0$ if there are none). If $C$ is an
+admissible $L^p$ bound constant for $B$, then $\|B\|_p \le C$.
 
 ## Depends on
 
-- [Is Bound](is-bound.md)
-- [Beurling Norm](beurling-norm.md)
+- [Admissible bounds for the Beurling–Ahlfors transform](is-bound.md)
+- [Norm of the Beurling–Ahlfors transform](beurling-norm.md)
 
 ## Sources
 

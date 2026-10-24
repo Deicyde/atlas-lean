@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.virtualRackIso_refl
 ---
 
-# Virtual Rack Iso refl
+# Reflexivity of virtual rack isomorphism
 
-Every rack automorphism is a virtual rack isomorphism from `(R, f)` to itself; in
-particular virtual rack isomorphism is reflexive.
+**Reflexivity of virtual rack isomorphism.** For every rack $R$ and every permutation $f$ of
+$R$, the pair $(R, f)$ is isomorphic to itself in the sense of virtual rack isomorphism. The
+permutation $f$ need not be a rack automorphism.
 
 ## Depends on
 
-- [Virtual Rack Iso](virtual-rack-iso.md)
+- [Isomorphism of virtual racks](virtual-rack-iso.md)
 
 ## Sources
 

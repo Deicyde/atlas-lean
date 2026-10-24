@@ -5,6 +5,6 @@ navigation: module
 
 # Stirling
 
-- [Cycle Quotient Count](cycle-quotient-count.md)
-- [Cycle Quotient Count eq](cycle-quotient-count-eq.md)
-- [Card perm cycle Count eq stirling First](card-perm-cycle-count-eq-stirling-first.md)
+- [Number of cycles of a permutation](cycle-quotient-count.md)
+- [Counting cycles via the cycle type](cycle-quotient-count-eq.md)
+- [Stirling numbers of the first kind count permutations by cycles](card-perm-cycle-count-eq-stirling-first.md)

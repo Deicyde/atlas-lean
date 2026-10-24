@@ -6,10 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.BasicHypergeometric.basicHypergeometricSeries
 ---
 
-# Basic Hypergeometric Series
+# Basic hypergeometric series
 
-The formal power series over `ℂ` whose `n`-th coefficient is
-`basicHypergeometricCoefficient a b q n`.
+**Basic hypergeometric series.** Let $r$ and $s$ be natural numbers and let
+$a_1, \dots, a_r$, $b_1, \dots, b_s$ and $q$ be complex numbers. The basic hypergeometric series
+${}_r\phi_s(a_1, \dots, a_r; b_1, \dots, b_s; q, z)$ is the formal power series in $z$ over
+$\mathbb{C}$ whose coefficient of $z^n$, for each natural number $n$, is the $n$-th basic
+hypergeometric coefficient of these parameters.
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Basic Hypergeometric Coefficient](basic-hypergeometric-coefficient.md)
+- [Coefficients of the basic hypergeometric series](basic-hypergeometric-coefficient.md)
 
 ## Sources
 

@@ -4,5 +4,5 @@ navigation: module
 
 # Scottish Book55
 
-- [Scottish Book Problem55 Claim](scottish-book-problem55-claim.md)
-- [Mazur55 refuted](mazur55-refuted.md)
+- [Mazur's factorisation claim (Scottish Book Problem 55)](scottish-book-problem55-claim.md)
+- [Mazur's Problem 55 has a negative answer](mazur55-refuted.md)

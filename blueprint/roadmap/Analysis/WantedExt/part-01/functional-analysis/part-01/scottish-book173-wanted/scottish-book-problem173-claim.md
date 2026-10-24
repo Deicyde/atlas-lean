@@ -5,12 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.ScottishBook173Wanted.ScottishBookProblem173Claim
 ---
 
-# Scottish Book Problem173 Claim
+# Scottish Book Problem 173
 
-Eidelheit's Problem 173 from the Scottish Book, in its original form:
-in the ring `A` of all bounded linear operations of a Banach space into
-itself, the operations possessing a continuous (two-sided) inverse are
-dense in `A` under the usual operator norm.
+**Scottish Book Problem 173.** Eidelheit's claim that for every real Banach space $E$, the
+bounded linear operators $E \to E$ that have a bounded linear two-sided inverse are dense, for
+the operator norm, in the space of all bounded linear operators on $E$.
 
 ## Depends on
 

@@ -6,10 +6,12 @@ statement: formalized
 lean: MathlibExt.Analysis.AMR22Problem7082Wanted.AgreesOnDisc
 ---
 
-# Agrees On Disc
+# Agreement of two motions on a set
 
-Agreement on `E` from [AMR-022-7082] Problem 7.82: `G = F` on
-`E × 𝔻`.
+**Agreement of two motions on a set.** Let $\mathbb{D}$ be the open unit disc, $E$ a set of
+complex numbers, and $F$ and $G$ functions assigning complex numbers $F(w, z)$ and $G(w, z)$ to
+each pair of complex numbers $w, z$. Then $G$ agrees with $F$ on $E$ when $G(w, z) = F(w, z)$
+for every $w \in E$ and every $z \in \mathbb{D}$.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Unit Disc](unit-disc.md)
+- [Open unit disc](unit-disc.md)
 
 ## Sources
 

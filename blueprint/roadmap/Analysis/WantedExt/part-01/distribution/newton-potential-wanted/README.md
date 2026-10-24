@@ -4,5 +4,5 @@ navigation: module
 
 # Newton Potential
 
-- [Exists fundamental solution laplacian](exists-fundamental-solution-laplacian.md)
-- [Newton potential harmonic](newton-potential-harmonic.md)
+- [Fundamental solution of the Laplacian in dimension three](exists-fundamental-solution-laplacian.md)
+- [The Newton potential is harmonic away from the origin](newton-potential-harmonic.md)

@@ -7,15 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.shiftedRiordanArray_constantTerm_and_sumCoefficients
 ---
 
-# Shifted Riordan Array Row Sums
+# Constant term and row sum of a shifted array
 
-The constant term and coefficient sum of a shifted Riordan row polynomial: for
-the `r`-shifted array, evaluating the row polynomial at 0 gives the column-0
-entry `∑ k, A n k * r ^ k`, and evaluating at 1 (the row sum) gives the
-column-0 entry of the `(r + 1)`-shifted array.
-
-The `r`-Riordan array is Definition de1parameterRiordan (lines 220–222).
-Proves `Wanted` entry `shiftedRiordanArray_constantTerm_and_sumCoefficients`.
+**Constant term and row sum of a shifted array.** Let $R$ be a commutative semiring, let
+$(A_{i,k})_{i,k \in \mathbb{N}}$ be an array with entries in $R$, and let $r \in R$ and
+$n \in \mathbb{N}$. For $s \in R$ let $A^{(s)}$ be the $s$-shifted array with entries
+$A^{(s)}_{i,j} = \sum_{k=j}^{i} \binom{k}{j} A_{i,k} s^{k-j}$ (an empty sum when $j > i$), and let
+$p(X) = \sum_{k=0}^{n} A^{(r)}_{n,k} X^k \in R[X]$ be the $n$-th row polynomial of $A^{(r)}$.
+Then $p(0) = A^{(r)}_{n,0} = \sum_{k=0}^{n} A_{n,k} r^k$ and
+$p(1) = \sum_{k=0}^{n} A^{(r)}_{n,k} = A^{(r+1)}_{n,0}$.
 
 ## Depends on
 

@@ -6,11 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.PartitionNumberArray.countSum
 ---
 
-# Count Sum
+# Number of parts of an exponent vector
 
-Total part count of an exponent vector.
-Concept `jis_sem_4bcead3a4bcda58a1d4dbb9f`; source D3
-`jis_352979520d341b10e3330dad`.
+**Number of parts of an exponent vector.** For a vector $(a_1, \dots, a_n)$ of natural
+numbers, this is the natural number $\sum_{j=1}^{n} a_j$.
+
+When $a_j$ is the number of parts equal to $j$ in a partition of $n$, this is the number of parts
+of the partition.
 
 ## Depends on
 
@@ -18,9 +20,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Count Sum Aux](count-sum-aux.md)
-- [Extend A](extend-a.md)
+- [Sum of the first n values of a sequence](count-sum-aux.md)
+- [Extension of a vector by zero](extend-a.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.PartitionNumberArray](../../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_4bcead3a4bcda58a1d4dbb9f`; D3 `jis_352979520d341b10e3330dad`.

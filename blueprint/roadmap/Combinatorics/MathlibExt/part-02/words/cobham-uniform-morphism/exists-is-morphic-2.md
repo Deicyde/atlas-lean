@@ -14,7 +14,7 @@ Every `k`-automatic sequence is a morphic word.
 ## Depends on
 
 - [Is KAutomatic Sequence](is-kautomatic-sequence.md)
-- [Is Morphic](../../../part-01/infinite-word/morphic-word/is-morphic.md)
+- [Morphic words via a coding](../../../part-01/infinite-word/morphic-word/is-morphic.md)
 
 ## Proof depends on
 

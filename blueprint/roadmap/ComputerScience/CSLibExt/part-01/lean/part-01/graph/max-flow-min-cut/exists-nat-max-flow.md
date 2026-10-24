@@ -14,8 +14,8 @@ lean: Cslib.Algorithms.Lean.Graph.MaxFlowMinCut.exists_nat_max_flow
 ## Depends on
 
 - [Real Cap](real-cap.md)
-- [Is Feasible Flow](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/is-feasible-flow.md)
-- [Flow Value](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/flow-value.md)
+- [Feasible flow](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/is-feasible-flow.md)
+- [Flow value](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/flow-value.md)
 
 ## Proof depends on
 
@@ -24,8 +24,8 @@ lean: Cslib.Algorithms.Lean.Graph.MaxFlowMinCut.exists_nat_max_flow
 - [Arc Flow](arc-flow.md)
 - [Edmonds-Karp computes a maximum flow and a minimum cut](edmonds-karp-max-flow-min-cut.md)
 - [Real Flow](real-flow.md)
-- [Is STCut](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/is-stcut.md)
-- [Cut Capacity](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/cut-capacity.md)
+- [Source–sink cut](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/is-stcut.md)
+- [Cut capacity](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/cut-capacity.md)
 
 ## Sources
 

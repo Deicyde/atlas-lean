@@ -5,13 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.prod_one_sub_mul_eq_resultant
 ---
 
-# Theorem 14
+# Resultant identity for pairwise products
 
-**Theorem 14.** With `U(x) = ∏_{i ≤ m} (1 - αᵢx)` and `V(x) = ∏_{j ≤ n} (1 - βⱼx)`,
-`∏ᵢ ∏ⱼ (1 - αᵢβⱼx) = (-1)^{mn} Res(U(y), yⁿ V(x / y), y)`.
+**Resultant identity for pairwise products.** Let $K$ be a field of characteristic $0$, let
+$m, n \ge 0$ be integers, and let $\alpha_1, \dots, \alpha_m$ and $\beta_1, \dots, \beta_n$ be
+elements of $K$. Regard $f(y) = \prod_{i=1}^{m} (1 - \alpha_i y)$ and
+$g(y) = \prod_{j=1}^{n} (y - \beta_j x)$ as polynomials in $y$ with coefficients in $K[x]$,
+and let $\operatorname{Res}_{m,n}(f, g)$ be the determinant of their Sylvester matrix formed with
+the formal degrees $m$ and $n$. Then in $K[x]$
 
-The resultant arguments are polynomials in `y` over `K[x]`, with `yⁿ V(x / y)` written
-expanded as `∏ⱼ (y - βⱼx)`; the resultant uses the formal degrees `m` and `n`.
+$$
+\prod_{i=1}^{m} \prod_{j=1}^{n} (1 - \alpha_i \beta_j x) = (-1)^{mn} \operatorname{Res}_{m,n}(f, g).
+$$
+
+With $U(x) = \prod_{i=1}^{m} (1 - \alpha_i x)$ and $V(x) = \prod_{j=1}^{n} (1 - \beta_j x)$, these
+are $f(y) = U(y)$ and $g(y) = y^n V(x / y)$, the form used in the source.
 
 ## Depends on
 

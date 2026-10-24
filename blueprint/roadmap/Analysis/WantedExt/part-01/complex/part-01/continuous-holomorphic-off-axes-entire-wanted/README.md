@@ -4,7 +4,7 @@ navigation: module
 
 # Continuous Holomorphic Off Axes Entire
 
-- [Real Axis](real-axis.md)
-- [Imag Axis](imag-axis.md)
-- [Coord Axes](coord-axes.md)
-- [Differentiable of continuous of differentiable On compl coord Axes](differentiable-of-continuous-of-differen.md)
+- [Real axis](real-axis.md)
+- [Imaginary axis](imag-axis.md)
+- [Coordinate axes](coord-axes.md)
+- [Continuous functions holomorphic off the coordinate axes are entire](differentiable-of-continuous-of-differen.md)

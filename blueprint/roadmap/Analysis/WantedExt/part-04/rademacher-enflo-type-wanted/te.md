@@ -6,10 +6,11 @@ statement: formalized
 lean: MathlibExt.Analysis.RademacherEnfloTypeWanted.RademacherEnfloType.TE
 ---
 
-# TE
+# Enflo type constant
 
-`Tᴱₚ(X)` is defined to be the infimum over all `C` such that the
-proposition `IsEnfloType X C p` holds.
+**Enflo type constant.** For a real Banach space $X$ and a real number $p$, $T^E_p(X)$ is
+the infimum in $[0, \infty]$ of all $C \in [0, \infty]$ such that $X$ has Enflo type $p$ with
+constant $C$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Enflo Type](is-enflo-type.md)
+- [Enflo type](is-enflo-type.md)
 
 ## Sources
 

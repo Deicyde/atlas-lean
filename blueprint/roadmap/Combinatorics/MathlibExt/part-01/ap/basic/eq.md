@@ -7,17 +7,20 @@ proof: formalized
 lean: Set.IsAPOfLength.eq
 ---
 
-# Eq
+# First term and difference of a set arithmetic progression
 
-Unpack a set arithmetic progression into its first term and common difference.
+**First term and difference of a set arithmetic progression.** Let $M$ be an additive
+commutative monoid and $l \in \mathbb{N} \cup \{\infty\}$. If a set $s \subseteq M$ is an
+arithmetic progression of length $l$, then there are $a, d \in M$ with
+$s = \{a + n d : n \in \mathbb{N},\ n < l\}$, where $n d$ is the sum of $n$ copies of $d$.
 
 ## Depends on
 
-- [Is APOf Length](is-apof-length.md)
+- [Sets that are arithmetic progressions](is-apof-length.md)
 
 ## Proof depends on
 
-- [Is APOf Length With](is-apof-length-with.md)
+- [Set arithmetic progressions with given first term and difference](is-apof-length-with.md)
 
 ## Sources
 

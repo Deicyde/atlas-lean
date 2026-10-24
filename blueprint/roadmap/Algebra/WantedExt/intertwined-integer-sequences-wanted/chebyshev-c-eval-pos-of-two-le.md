@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.chebyshevC_eval_pos_of_two_le
 ---
 
-# Chebyshev C eval pos of two le
+# Positivity of the monic Chebyshev polynomials
 
-Positivity of the monic Chebyshev polynomials: `T̄_k(x) > 0` for every
-`k ≥ 0` and every real `x ≥ 2`.
+**Positivity of the monic Chebyshev polynomials.** Let $\bar T_k \in \mathbb{R}[X]$ be the
+monic Chebyshev polynomials, given by $\bar T_0 = 2$, $\bar T_1 = X$ and
+$\bar T_{k+2} = X \bar T_{k+1} - \bar T_k$. Then $\bar T_k(x) > 0$ for every natural number $k$
+and every real number $x \ge 2$.
 
 ## Depends on
 

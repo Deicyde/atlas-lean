@@ -11,7 +11,7 @@ The receivers' preferences in MathlibExt's sense.
 
 ## Depends on
 
-- [WPrefs](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/wprefs.md)
+- [Women's preference profile](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/wprefs.md)
 
 ## Proof depends on
 

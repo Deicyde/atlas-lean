@@ -16,14 +16,14 @@ letter images all have length `k`.
 ## Depends on
 
 - [Is Coding Of Prolongable KUniform Fixed Point](is-coding-of-prolongable-kuniform-fixed.md)
-- [Is Omega Limit](../../../part-01/infinite-word/pure-morphic-word/is-omega-limit.md)
-- [Is Prefix Preserving](../../../part-01/infinite-word/pure-morphic-word/is-prefix-preserving.md)
+- [Infinite word as the limit of iterates](../../../part-01/infinite-word/pure-morphic-word/is-omega-limit.md)
+- [Prolongable letter maps](../../../part-01/infinite-word/pure-morphic-word/is-prefix-preserving.md)
 
 ## Proof depends on
 
-- [Morph Extend](../../../part-01/infinite-word/pure-morphic-word/morph-extend.md)
-- [Morph Iterate](../../../part-01/infinite-word/pure-morphic-word/morph-iterate.md)
-- [Morph Iterate length of uniform](../../../part-01/infinite-word/pure-morphic-word/morph-iterate-length-of-uniform.md)
+- [Extension of a letter map to finite words](../../../part-01/infinite-word/pure-morphic-word/morph-extend.md)
+- [Iterates of a letter map](../../../part-01/infinite-word/pure-morphic-word/morph-iterate.md)
+- [Length of iterates of a uniform letter map](../../../part-01/infinite-word/pure-morphic-word/morph-iterate-length-of-uniform.md)
 
 ## Sources
 

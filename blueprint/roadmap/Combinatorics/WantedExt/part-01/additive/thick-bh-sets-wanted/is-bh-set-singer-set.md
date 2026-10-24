@@ -14,7 +14,7 @@ elements.
 
 ## Depends on
 
-- [Is Bh Set](../../../../MathlibExt/part-01/additive/bh-set/is-bh-set.md)
+- [$B_h$-set](../../../../MathlibExt/part-01/additive/bh-set/is-bh-set.md)
 - [Singer Set](singer-set.md)
 
 ## Sources

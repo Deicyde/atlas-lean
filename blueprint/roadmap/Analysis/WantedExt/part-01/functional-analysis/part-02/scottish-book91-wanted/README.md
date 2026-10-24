@@ -4,5 +4,5 @@ navigation: module
 
 # Scottish Book91
 
-- [Scottish Book Problem91 Claim](scottish-book-problem91-claim.md)
-- [Mazur91 refuted](mazur91-refuted.md)
+- [Mazur's Problem 91 (Scottish Book), Banach-space form](scottish-book-problem91-claim.md)
+- [Mazur's Problem 91 has a negative answer](mazur91-refuted.md)

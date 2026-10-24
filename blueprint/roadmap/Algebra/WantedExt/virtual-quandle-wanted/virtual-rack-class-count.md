@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.virtualRackClassCount
 ---
 
-# Virtual Rack Class Count
+# Number of isomorphism classes of virtual racks on a rack
 
-`v(R)`: the number of isomorphism classes of virtual racks with underlying rack `R`,
-i.e. of virtual structures `f ∈ Aut R` modulo virtual rack isomorphism. (Every virtual rack
-whose underlying rack is isomorphic to `R` is isomorphic to one of the form `(R, f)`.)
+**Number of isomorphism classes of virtual racks on a rack.** For a rack $R$, let
+$\operatorname{Aut} R$ be its group of rack automorphisms; a virtual structure on $R$ is an
+element $f \in \operatorname{Aut} R$, and $(R, f)$ is the corresponding virtual rack. The number
+$v(R)$ is the number of classes of virtual structures on $R$, where $f, g \in \operatorname{Aut} R$
+are identified when the virtual racks $(R, f)$ and $(R, g)$ are isomorphic; that is, the number
+of isomorphism classes of virtual racks with underlying rack $R$. It is $0$ when there are
+infinitely many classes.
+
+Every virtual rack whose underlying rack is isomorphic to $R$ is isomorphic to one of the form
+$(R, f)$.
 
 ## Depends on
 
@@ -17,8 +24,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Virtual Rack Iso](virtual-rack-iso.md)
-- [Rack Aut](rack-aut.md)
+- [Isomorphism of virtual racks](virtual-rack-iso.md)
+- [Automorphism group of a rack](rack-aut.md)
 
 ## Sources
 

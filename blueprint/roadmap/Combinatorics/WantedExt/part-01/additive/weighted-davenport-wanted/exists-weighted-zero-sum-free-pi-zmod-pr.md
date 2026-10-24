@@ -15,7 +15,7 @@ exponent `e` is named `c`; `e_i ≥ 1` follows from `1 ≤ c ≤ e_1` and monoto
 
 ## Depends on
 
-- [Is Weighted Zero Sum Free](../../../../MathlibExt/part-01/additive/weighted-davenport/is-weighted-zero-sum-free.md)
+- [Weighted zero-sum free sequences](../../../../MathlibExt/part-01/additive/weighted-davenport/is-weighted-zero-sum-free.md)
 
 ## Sources
 

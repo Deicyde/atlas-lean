@@ -14,7 +14,7 @@ Three eta-quotient expressions for `k(q)`: for `0 < ‖q‖ < 1`, with `k = k(q)
 
 ## Depends on
 
-- [Q Pochhammer Inf Raw](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
+- [Raw infinite q-Pochhammer product](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
 - [Ramanujan K](ramanujan-k.md)
 
 ## Sources

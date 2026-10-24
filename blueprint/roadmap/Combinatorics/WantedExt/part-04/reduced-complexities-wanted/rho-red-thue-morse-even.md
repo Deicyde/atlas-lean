@@ -13,7 +13,7 @@ lean: MathlibExt.Combinatorics.ReducedComplexitiesWanted.rhoRed_thueMorse_even
 ## Depends on
 
 - [Rho Red](rho-red.md)
-- [Thue Morse](../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
+- [Thue–Morse sequence](../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
 
 ## Sources
 

@@ -5,5 +5,5 @@ navigation: module
 
 # Spivey Bell Number Addition
 
-- [Spivey bell number add](spivey-bell-number-add.md)
-- [Spivey bell recurrence](spivey-bell-recurrence.md)
+- [Spivey's Bell number formula](spivey-bell-number-add.md)
+- [Spivey's recurrence for Bell numbers](spivey-bell-recurrence.md)

@@ -5,18 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.polyContFract_of_farey_path_det_neg_one
 ---
 
-# Poly Cont Fract of farey path det neg one
+# Farey paths of polynomials with all determinants −1
 
-Corollary 4: in the setting of Theorem 6 with `cᵢ = -1`, the path defines
-the regular continued fraction of `uₙ / vₙ` with partial numerators and
-denominators `Aᵢ = ± uᵢ`, `Bᵢ = ± vᵢ` (sign `+` for `i ≡ 0, 3 (mod 4)`, `-` for
-`i ≡ 1, 2 (mod 4)`), and partial quotients
-`aᵢ = (-1)^(i+1) (uᵢ vᵢ₋₂ - uᵢ₋₂ vᵢ)` (for `i = 1`, with `u₋₁ = 1`,
-`v₋₁ = 0`, this reads `a₁ = -v₁`). Stated over any field.
+**Farey paths of polynomials with all determinants −1.** Let $F$ be a field, let
+$n \in \mathbb{N}$, and let $u_i, v_i \in F[X]$ for $i \ge 0$. Suppose that $v_0 = 1$ and that
+for $1 \le i \le n$ we have $\deg v_{i-1} < \deg v_i$ and $u_i v_{i-1} - u_{i-1} v_i = -1$. Let
+$a_0, a_1, \ldots \in F[X]$ satisfy $a_0 = u_0$, $a_1 = -v_1$ and
+$a_i = (-1)^{i+1} (u_i v_{i-2} - u_{i-2} v_i)$ for $2 \le i \le n$. Then $a_i$ is nonconstant
+for $1 \le i \le n$, and for every $i \le n$ the numerator $A_i$ and denominator $B_i$ of the
+$i$th convergent of the continued fraction $[a_0; a_1, \ldots, a_n]$ over $F(X)$ are
+$A_i = \varepsilon_i u_i$ and $B_i = \varepsilon_i v_i$, where $\varepsilon_i = 1$ if
+$i \equiv 0, 3 \pmod 4$ and $\varepsilon_i = -1$ if $i \equiv 1, 2 \pmod 4$.
 
 ## Depends on
 
-- [Poly Cont Fract](poly-cont-fract.md)
+- [Finite continued fraction with polynomial partial quotients](poly-cont-fract.md)
 
 ## Sources
 

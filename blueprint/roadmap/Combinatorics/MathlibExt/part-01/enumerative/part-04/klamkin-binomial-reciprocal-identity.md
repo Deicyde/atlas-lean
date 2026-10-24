@@ -7,9 +7,12 @@ proof: formalized
 lean: MetaMathlibExt.klamkin_binomial_reciprocal_identity
 ---
 
-# Klamkin Binomial Reciprocal
+# Klamkin's binomial reciprocal identity
 
-Klamkin's binomial reciprocal identity for natural parameters.
+**Klamkin's binomial reciprocal identity.** For natural numbers $n$, $b$ and $x$ with
+$n + b \le x$, the following equality of rational numbers holds:
+
+$$\sum_{k=0}^{n} \frac{\binom{n}{k}}{\binom{x}{k+b}} = \frac{x+1}{(x-n+1)\binom{x-n}{b}}.$$
 
 ## Depends on
 

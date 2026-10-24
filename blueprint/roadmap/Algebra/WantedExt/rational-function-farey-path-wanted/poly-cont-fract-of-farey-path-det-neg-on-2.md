@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.polyContFract_of_farey_path_det_neg_one_pow
 ---
 
-# Poly Cont Fract of farey path det neg one pow
+# Farey paths of polynomials with alternating determinants starting at −1
 
-Corollary 2: in the setting of Theorem 6 with `cᵢ = (-1)^i`, the path
-defines the regular continued fraction of `uₙ / vₙ` with partial numerators
-`(-1)^i uᵢ`, partial denominators `(-1)^i vᵢ`, and partial quotients
-`a₁ = -v₁`, `aᵢ = (-1)^i (uᵢ vᵢ₋₂ - uᵢ₋₂ vᵢ)` for `i ≥ 2`. Stated over any field.
+**Farey paths of polynomials with alternating determinants starting at −1.** Let $F$ be a
+field, let $n \in \mathbb{N}$, and let $u_i, v_i \in F[X]$ for $i \ge 0$. Suppose that $v_0 = 1$
+and that for $1 \le i \le n$ we have $\deg v_{i-1} < \deg v_i$ and
+$u_i v_{i-1} - u_{i-1} v_i = (-1)^i$. Let $a_0, a_1, \ldots \in F[X]$ satisfy $a_0 = u_0$,
+$a_1 = -v_1$ and $a_i = (-1)^i (u_i v_{i-2} - u_{i-2} v_i)$ for $2 \le i \le n$. Then $a_i$ is
+nonconstant for $1 \le i \le n$, and for every $i \le n$ the numerator $A_i$ and denominator
+$B_i$ of the $i$th convergent of the continued fraction $[a_0; a_1, \ldots, a_n]$ over $F(X)$
+are $A_i = (-1)^i u_i$ and $B_i = (-1)^i v_i$.
 
 ## Depends on
 
-- [Poly Cont Fract](poly-cont-fract.md)
+- [Finite continued fraction with polynomial partial quotients](poly-cont-fract.md)
 
 ## Sources
 

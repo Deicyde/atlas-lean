@@ -5,15 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.pow_sub_pow_mem_of_sub_mem
 ---
 
-# Pow sub pow mem of sub mem
+# Powers of elements congruent modulo a divided-power ideal
 
-In a `ℤ_(p)`-algebra with divided-power ideal `𝔞`, `x ≡ y mod 𝔞` implies
-`x ^ (p ^ m) ≡ y ^ (p ^ m) mod p ^ m 𝔞` for all `m` and `xⁿ ≡ yⁿ mod n𝔞` for all `n`.
-Torsion-freeness is not needed.
+**Powers of elements congruent modulo a divided-power ideal.** Let $p$ be a prime, let $A$ be
+a commutative ring in which every natural number not divisible by $p$ is a unit (a
+$\mathbb{Z}_{(p)}$-algebra), and let $\mathfrak{a}$ be a divided-power ideal of $A$. If
+$x, y \in A$ satisfy $x - y \in \mathfrak{a}$, then for every $m \ge 0$ there is
+$c \in \mathfrak{a}$ with $x^{p^m} - y^{p^m} = p^m c$, and for every $n \ge 0$ there is
+$c \in \mathfrak{a}$ with $x^n - y^n = n c$.
+
+The ring $A$ is not assumed to be torsion-free.
 
 ## Depends on
 
-- [Is Divided Power Ideal](is-divided-power-ideal.md)
+- [Divided-power ideal](is-divided-power-ideal.md)
 
 ## Sources
 

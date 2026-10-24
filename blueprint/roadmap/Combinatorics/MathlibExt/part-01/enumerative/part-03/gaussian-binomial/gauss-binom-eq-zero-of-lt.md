@@ -7,18 +7,20 @@ proof: formalized
 lean: MathlibExt.gaussBinom_eq_zero_of_lt
 ---
 
-# Gauss Binom eq zero of lt
+# Gaussian binomial coefficients vanish when $k > M$
 
-Vanishing when `M < k`.
+**Gaussian binomial coefficients vanish when $k > M$.** Let $R$ be a semiring and $Q \in R$.
+For natural numbers $M$ and $k$ with $M < k$, the Gaussian binomial coefficient $\binom{M}{k}_Q$
+is $0$.
 
 ## Depends on
 
-- [Gauss Binom](gauss-binom.md)
+- [Gaussian binomial coefficient](gauss-binom.md)
 
 ## Proof depends on
 
-- [Gauss Binom succ succ](gauss-binom-succ-succ.md)
-- [Gauss Binom zero succ](gauss-binom-zero-succ.md)
+- [$Q$-Pascal recursion for Gaussian binomial coefficients](gauss-binom-succ-succ.md)
+- [Gaussian binomial coefficients with $M = 0$](gauss-binom-zero-succ.md)
 
 ## Sources
 

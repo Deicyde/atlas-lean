@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleGraphCode.shannonCapacityCycle
 ---
 
-# Shannon Capacity Cycle
+# Shannon capacity of the modular cycle
 
-The supremum over all concrete positive-length independent-code rates.
+**Shannon capacity of the modular cycle.** For a natural number $q$, the Shannon capacity of
+the $q$-cycle is the supremum, in $[0, \infty]$, of the rates $|A|^{1/n}$ over all positive
+integers $n$ and all cycle codes $A$ of length $n$ modulo $q$.
 
 ## Depends on
 
@@ -15,9 +17,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cycle Code](cycle-code.md)
-- [Positive Nat](positive-nat.md)
-- [Cycle Code Rate](cycle-code-rate.md)
+- [Cycle codes](cycle-code.md)
+- [Positive block lengths](positive-nat.md)
+- [Rate of a cycle code](cycle-code-rate.md)
 
 ## Sources
 

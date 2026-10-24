@@ -5,18 +5,20 @@ statement: formalized
 lean: NoncrossingPartition.block
 ---
 
-# Block
+# Block of a noncrossing partition
 
-Block accessor for noncrossing partitions.
+**Block of a noncrossing partition.** For a noncrossing partition $P$ of
+$\{0, \dots, n-1\}$ and a point $a \in \{0, \dots, n-1\}$, the block of $P$ at $a$ is the block
+of the underlying set partition that contains $a$.
 
 ## Depends on
 
-- [Noncrossing Partition](noncrossing-partition.md)
+- [Noncrossing partition](noncrossing-partition.md)
 
 ## Proof depends on
 
-- [Is Noncrossing](is-noncrossing.md)
-- [Set Partition](set-partition.md)
+- [Noncrossing set partition](is-noncrossing.md)
+- [Set partition](set-partition.md)
 
 ## Sources
 

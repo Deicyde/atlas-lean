@@ -5,11 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.iterate_factorial_lt_iterate_factorial
 ---
 
-# Iterate factorial lt iterate factorial
+# Comparison of iterated factorials
 
-Comparison of iterated factorials: for `n, n' ≥ 3` and `k > k'`, if
-`F_{k-k'}(n) > n'` then `F_k(n) > F_{k'}(n')`, where `F_j(m) = m!⋯!` (`j` factorials) is
-the `j`-fold iterate of `Nat.factorial` at `m`.
+**Comparison of iterated factorials.** For natural numbers $j$ and $m$ let $F_j(m)$ be the
+$j$-fold iterated factorial $m!\cdots!$ (with $j$ factorials). Let $n, n' \ge 3$ and $k > k'$ be
+natural numbers. If $n' < F_{k-k'}(n)$, then $F_{k'}(n') < F_k(n)$.
 
 ## Depends on
 

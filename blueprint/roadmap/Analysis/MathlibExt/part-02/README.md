@@ -7,7 +7,7 @@ navigation: transparent
 
 - [Variational](variational/README.md)
 - [Beurling Ahlfors](beurling-ahlfors/README.md)
-- [Blumberg](blumberg-theorem.md)
+- [Blumberg's theorem](blumberg-theorem.md)
 - [Ihara Constant Of](ihara-constant-of/README.md)
 - [Perron Kernel](perron-kernel/README.md)
 - [Wirsing Constant](wirsing-constant/README.md)

@@ -6,17 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.ite_isDoubleAscentAt_add_ite_isDoubleDescentAt_add_ite_isPeakAt_add_ite_isValleyAt
 ---
 
-# Ite is Double Ascent At add ite is Double Descent At add ite is Peak At add ite is Valley At
+# Local shape of a position in a permutation
 
-Every position `i` with `i + 2 < n` is exactly one of a double ascent, a double descent, a peak
-or a valley, and no other position is any of them.
+**Local shape of a position in a permutation.** Let $\sigma$ be a permutation of
+$\{0, 1, \dots, n-1\}$ and let $i$ be a position. If $i + 2 < n$, then $i$ is exactly one of a
+double ascent, a double descent, a peak or a valley of $\sigma$; otherwise $i$ is none of them.
+That is, the number of these four properties that $i$ has is $1$ when $i + 2 < n$ and $0$
+otherwise.
 
 ## Depends on
 
-- [Is Double Ascent At](is-double-ascent-at.md)
-- [Is Double Descent At](is-double-descent-at.md)
-- [Is Peak At](is-peak-at.md)
-- [Is Valley At](is-valley-at.md)
+- [Double ascent of a permutation](is-double-ascent-at.md)
+- [Double descent of a permutation](is-double-descent-at.md)
+- [Peak of a permutation](is-peak-at.md)
+- [Valley of a permutation](is-valley-at.md)
 
 ## Sources
 

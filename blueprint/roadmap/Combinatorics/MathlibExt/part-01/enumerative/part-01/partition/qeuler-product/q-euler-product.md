@@ -5,10 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.qEulerProduct
 ---
 
-# Q Euler Product
+# The Euler products of partition theory
 
-The Euler product `f_k = (q^k; q^k)_∞ = ∏_{m ≥ 1} (1 - q^{k m})` as an integer power series
-(infinite product in the coefficientwise topology; used for `k ≥ 1`).
+**The Euler products of partition theory.** For a natural number $k$, the Euler product
+$f_k = (q^k; q^k)_\infty = \prod_{m \ge 1} (1 - q^{km})$ is this infinite product in the ring of
+integer power series in $q$, taken in the coefficientwise topology. It is used for $k \ge 1$.
 
 ## Depends on
 

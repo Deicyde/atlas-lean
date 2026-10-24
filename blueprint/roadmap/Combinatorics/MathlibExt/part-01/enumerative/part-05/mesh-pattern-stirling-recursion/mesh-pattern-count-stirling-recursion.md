@@ -7,10 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.meshPatternCount_stirlingRecursion
 ---
 
-# Mesh Pattern Count stirling Recursion
+# Stirling-type recursion for the mesh-pattern counting polynomial
 
-The counting polynomial for the quadrant marked mesh pattern satisfies a Stirling-type recursion,
-together with its coefficient recurrence and initial value.
+**Stirling-type recursion for the mesh-pattern counting polynomial.** Let $1 < k \le n$ and
+$j > 0$. For a permutation $\sigma$ of $m$ elements, with positions numbered $1, \dots, m$, let
+$p$ be the position of its largest value and let $N_r(\sigma)$ be the number of positions $i$
+such that $\sigma(t) < \sigma(i)$ for all $t < i$ and at least $r - 1$ positions $t$ with
+$i < t < p$ have $\sigma(t) > \sigma(i)$, plus $1$ if $p \ge r$. Let $P_{m,r}(X) \in \mathbb{N}[X]$
+be the sum of $X^{N_r(\sigma)}$ over all permutations $\sigma$ of $m$ elements, and let
+$c_{m,r}(s)$ be its coefficient of $X^s$. Then
+$c_{n,k}(j) = (n-1)\,c_{n-1,k}(j) + c_{n-1,k}(j-1)$,
+$P_{n,k}(X) = (X + n - 1)\,P_{n-1,k}(X)$, $c_{n,k}(0) = (n-1)\,c_{n-1,k}(0)$, and
+$P_{k-1,k}(X) = (k-1)!$.
 
 ## Depends on
 
@@ -18,10 +26,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Match Pred](match-pred.md)
-- [Poly N](poly-n.md)
-- [Zero Pred](zero-pred.md)
-- [Mesh N](mesh-n.md)
+- [Mesh-pattern match](match-pred.md)
+- [Mesh-pattern counting polynomial](poly-n.md)
+- [Mesh-pattern zero condition](zero-pred.md)
+- [Canonical mesh-pattern statistic](mesh-n.md)
 
 ## Sources
 

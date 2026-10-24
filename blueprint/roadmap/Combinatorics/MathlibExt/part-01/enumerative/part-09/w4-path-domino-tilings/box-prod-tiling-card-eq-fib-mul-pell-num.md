@@ -7,14 +7,13 @@ proof: formalized
 lean: MetaMathlibExt.boxProd_tiling_card_eq_fib_mul_pellNumber
 ---
 
-# Box Prod tiling card eq fib mul pell Number
+# Sellers' domino tiling theorem
 
-The number of domino tilings, as perfect matchings, of `W_4 □ P_{n-1}`
-equals `Nat.fib n * pellNumber n` for `n ≥ 2`, with the Pell factor stated via
-the canonical `MetaMathlibExt.pellNumber` sequence.
-
-This is the `pellNumber` form of `boxProd_tiling_card_eq_fib_mul_pell`, which
-keeps the inline `Nat.rec` spelling of the Pell factor for the `Wanted` entry.
+**Sellers' domino tiling theorem.** Let $W_4$ be the complete graph $K_4$ with one edge
+removed and $P_{n-1}$ the path graph on $n - 1$ vertices. For every natural number $n \ge 2$,
+the number of perfect matchings (domino tilings) of the Cartesian product $W_4 \square P_{n-1}$
+equals $f_n p_n$, where $f_n$ is the $n$-th Fibonacci number ($f_0 = 0$, $f_1 = 1$) and $p_n$ is
+the $n$-th Pell number ($p_0 = 0$, $p_1 = 1$, $p_{k+2} = 2 p_{k+1} + p_k$).
 
 ## Depends on
 

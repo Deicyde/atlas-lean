@@ -7,9 +7,11 @@ proof: formalized
 lean: Complex.deriv_Gamma_ofReal
 ---
 
-# Deriv Gamma of Real
+# Complex and real derivatives of Gamma agree on the positive reals
 
-At a positive real `t`, the complex derivative of `Gamma` is the real derivative.
+**Complex and real derivatives of Gamma agree on the positive reals.** For every real
+$t > 0$, the derivative of the complex Gamma function at $t$ equals the derivative of the real
+Gamma function at $t$.
 
 ## Depends on
 

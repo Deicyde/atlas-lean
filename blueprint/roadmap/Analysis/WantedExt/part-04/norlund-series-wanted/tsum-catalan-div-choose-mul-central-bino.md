@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.tsum_catalan_div_choose_mul_centralBinom
 ---
 
-# Tsum catalan div choose mul central Binom
+# Catalan numbers over binomial and central binomial coefficients
 
-Theorem 12: for a positive integer `m`,
-`Σ_{n≥0} C_n/(C(n + m, n) C(2(n + m), n + m))
-  = (m/2)(H_{m-1} - 2O_{m-1} + 2 ln 2)/C(2(m - 1), m - 1)`.
+**Catalan numbers over binomial and central binomial coefficients.** Let $m$ be a positive
+integer, $C_n$ the $n$th Catalan number, $H_n = \sum_{j=1}^{n} \frac{1}{j}$ the $n$th harmonic
+number and $O_n = \sum_{j=1}^{n} \frac{1}{2j - 1}$. Then
+
+$$\sum_{n=0}^{\infty} \frac{C_n}{\binom{n+m}{n} \binom{2(n+m)}{n+m}} =
+\frac{m}{2} \cdot \frac{H_{m-1} - 2 O_{m-1} + 2 \log 2}{\binom{2(m-1)}{m-1}}.$$
 
 ## Depends on
 

@@ -7,9 +7,12 @@ proof: formalized
 lean: MetaMathlibExt.staver_reflect_one
 ---
 
-# Staver reflect one
+# Reflection of the weighted alternating reciprocal binomial sum
 
-Reflection for the first-weighted sum, keeping the weight in `ℕ`.
+**Reflection of the weighted alternating reciprocal binomial sum.** For every natural
+number $n$,
+$\sum_{k=0}^{n} (-1)^{n-k} \, k \binom{n}{k}^{-1} =
+\sum_{k=0}^{n} (-1)^{k} (n-k) \binom{n}{k}^{-1}$ in $\mathbb{Q}$.
 
 ## Depends on
 

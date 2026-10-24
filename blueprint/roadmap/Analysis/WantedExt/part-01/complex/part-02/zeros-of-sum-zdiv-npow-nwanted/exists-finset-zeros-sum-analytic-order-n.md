@@ -5,18 +5,19 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.ZerosOfSumZDivNPowNWanted.exists_finset_zeros_sum_analyticOrderNatAt_le
 ---
 
-# Exists finset zeros sum analytic Order Nat At le
+# Zeros of $1+\sum_{n\ge 1}(z/n)^n$ in a disc
 
-Consider the entire function
-\[
-F(z)=1+\sum_{n=1}^{\infty}\left(\frac{z}{n}\right)^{n}.
-\]
-Show that for any $R>0$, the function $F(z)$ has no more than $4R$ zeros (counting multiplicity) in
-the ball $\{z\in\mathbb{C}:\lvert z\rvert\lt R\}$.
+**Zeros of $1+\sum_{n\ge 1}(z/n)^n$ in a disc.** Let $F$ be the entire function
+
+$$F(z)=1+\sum_{n=1}^{\infty}\left(\frac{z}{n}\right)^{n}.$$
+
+For every real $R>0$, $F$ has only finitely many zeros in the open disc
+$\{z\in\mathbb{C} : |z|\lt R\}$, and the number of these zeros counted with multiplicity is at
+most $4R$.
 
 ## Depends on
 
-- [F](f.md)
+- [The entire function $1+\sum_{n\ge 1}(z/n)^n$](f.md)
 
 ## Sources
 

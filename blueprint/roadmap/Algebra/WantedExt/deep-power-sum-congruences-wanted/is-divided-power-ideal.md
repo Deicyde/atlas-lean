@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.IsDividedPowerIdeal
 ---
 
-# Is Divided Power Ideal
+# Divided-power ideal
 
-An ideal `I` of a commutative ring is a *divided-power ideal* when `a ^ k ∈ k! • I` for every
-`a ∈ I` and every `k ≥ 1`; in a torsion-free `ℤ_(p)`-algebra this says `a ^ k / k! ∈ I`.
+**Divided-power ideal.** An ideal $I$ of a commutative ring $A$ is a *divided-power ideal* when
+for every $a \in I$ and every integer $k \ge 1$ there is $c \in I$ with $a^k = k! \, c$, that is,
+$a^k \in k! \, I$. For a prime $p$, in a torsion-free $\mathbb{Z}_{(p)}$-algebra this says
+$a^k / k! \in I$.
 
 ## Depends on
 

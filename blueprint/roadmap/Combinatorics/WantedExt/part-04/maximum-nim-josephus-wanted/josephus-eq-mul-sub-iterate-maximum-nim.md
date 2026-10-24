@@ -13,7 +13,7 @@ one-based survivor `josephus k n` is `nk-h_k^p(0)`. There is no deviation.
 
 ## Depends on
 
-- [Josephus](../../../MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
+- [Josephus survivor function](../../../MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 - [Maximum Nim H](maximum-nim-h.md)
 
 ## Sources

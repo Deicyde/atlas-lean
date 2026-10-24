@@ -16,7 +16,7 @@ Theorem 6: for a prime `p ≥ 5` with `(-2/p) = -1`, every `α ≥ 0` and `1 ≤
 ## Depends on
 
 - [Mock Theta Sigma](mock-theta-sigma.md)
-- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [The Euler products of partition theory](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

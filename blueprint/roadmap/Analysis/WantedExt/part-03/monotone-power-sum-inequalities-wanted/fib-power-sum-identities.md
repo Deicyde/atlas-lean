@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.fib_power_sum_identities
 ---
 
-# Fib power sum identities
+# Classical Fibonacci sum identities
 
-Classical Fibonacci sums quoted in Lemma 1 (from Koshy): for `n ≥ 1`,
-(b) `∑_{i=1}^n F_{2i-1} = F_{2n}`, (c) `∑_{i=1}^n F_{2i} = F_{2n+1} - 1`,
-(d) `∑_{i=1}^n i F_i = n F_{n+2} - F_{n+3} + 2`, (e) `∑_{i=1}^n F_i F_{3i} = F_n F_{n+1} F_{2n+1}`,
-(g) `∑_{i=1}^n binom(n,i) F_i = F_{2n}`, over `ℤ`. Part (a), `∑ F_i = F_{n+2} - 1`, is Mathlib's
-`Nat.fib_succ_eq_succ_sum` and is not restated; parts (f) and (h) are omitted because their
-extracted text is garbled.
+**Classical Fibonacci sum identities.** Let $F_k$ denote the $k$-th Fibonacci number, with
+$F_0 = 0$ and $F_1 = 1$. For every natural number $n \ge 1$, the following identities hold in
+the integers: $\sum_{i=1}^{n} F_{2i-1} = F_{2n}$; $\sum_{i=1}^{n} F_{2i} = F_{2n+1} - 1$;
+$\sum_{i=1}^{n} i F_i = n F_{n+2} - F_{n+3} + 2$;
+$\sum_{i=1}^{n} F_i F_{3i} = F_n F_{n+1} F_{2n+1}$; and
+$\sum_{i=1}^{n} \binom{n}{i} F_i = F_{2n}$.
+
+These are parts (b), (c), (d), (e) and (g) of Lemma 1 of the paper, quoted there from Koshy.
 
 ## Depends on
 

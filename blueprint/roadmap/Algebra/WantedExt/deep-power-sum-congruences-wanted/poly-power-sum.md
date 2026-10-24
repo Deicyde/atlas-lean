@@ -5,11 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.polyPowerSum
 ---
 
-# Poly Power Sum
+# Power sums of a polynomial
 
-The paper's `p_n(P)`: `p_0(P) = deg P` and, for `n ≥ 1`, Newton's identity
-`p_n = Σ_{i=1}^{n-1} (-1)^(i-1) e_i p_(n-i) + (-1)^(n-1) n e_n` with `e_i = e_i(P)`. For `P` with
-roots `α_1, …, α_d` in a domain this is `α_1 ^ n + ⋯ + α_d ^ n`.
+**Power sums of a polynomial.** For a polynomial $P$ over a commutative ring $A$, with
+elementary symmetric functions $e_i = e_i(P)$, the power sums $p_n = p_n(P) \in A$ are defined
+recursively: $p_0$ is the degree of $P$ as a natural number ($0$ for $P = 0$), and for
+$n \ge 1$ Newton's identity holds:
+
+$$p_n = \sum_{i=1}^{n-1} (-1)^{i-1} e_i\, p_{n-i} + (-1)^{n-1} n\, e_n.$$
+
+If $P$ is monic and $P = (X - \alpha_1) \cdots (X - \alpha_d)$, then
+$p_n = \alpha_1^n + \cdots + \alpha_d^n$ for every $n$.
 
 ## Depends on
 
@@ -17,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Poly Elem Symm](poly-elem-symm.md)
+- [Elementary symmetric functions of a polynomial](poly-elem-symm.md)
 
 ## Sources
 

@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.qPochFin_zero
 ---
 
-# Q Poch Fin zero
+# The finite $Q$-Pochhammer symbol at $0$
 
-The empty product: `P_Q(0) = 1`.
+**The finite $Q$-Pochhammer symbol at $0$.** Let $R$ be a commutative ring and $Q \in R$. The
+finite $Q$-Pochhammer symbol $P_Q(m) = \prod_{i < m} (1 - Q^{i+1})$, the product running over the
+natural numbers $i < m$, satisfies $P_Q(0) = 1$.
 
 ## Depends on
 
-- [Q Poch Fin](q-poch-fin.md)
+- [Finite $Q$-Pochhammer symbol](q-poch-fin.md)
 
 ## Sources
 

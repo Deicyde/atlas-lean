@@ -18,7 +18,7 @@ replaced by their first `n + 1` factors, which changes no coefficient below `q^{
 
 ## Depends on
 
-- [Q Poch Fin](../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/q-poch-fin.md)
+- [Finite $Q$-Pochhammer symbol](../../../../../MathlibExt/part-01/enumerative/part-03/gaussian-binomial/q-poch-fin.md)
 
 ## Sources
 

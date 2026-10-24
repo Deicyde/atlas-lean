@@ -5,11 +5,11 @@ navigation: module
 
 # Beurling Ahlfors
 
-- [Pstar](pstar.md)
-- [Beurling Trunc](beurling-trunc.md)
-- [Beurling Transform](beurling-transform.md)
-- [Is Bound](is-bound.md)
-- [Beurling Norm](beurling-norm.md)
-- [Beurling Norm le of is Bound](beurling-norm-le-of-is-bound.md)
-- [Beurling Ahlfors Constant](beurling-ahlfors-constant.md)
-- [Iwaniec Conjecture](iwaniec-conjecture.md)
+- [Larger of an exponent and its conjugate](pstar.md)
+- [Truncated Beurling–Ahlfors integral](beurling-trunc.md)
+- [Beurling–Ahlfors transform](beurling-transform.md)
+- [Admissible bounds for the Beurling–Ahlfors transform](is-bound.md)
+- [Norm of the Beurling–Ahlfors transform](beurling-norm.md)
+- [Nonnegative admissible bounds bound the Beurling–Ahlfors norm](beurling-norm-le-of-is-bound.md)
+- [Beurling–Ahlfors constant](beurling-ahlfors-constant.md)
+- [Iwaniec's conjecture](iwaniec-conjecture.md)

@@ -6,24 +6,23 @@ statement: formalized
 lean: MetaMathlibExt.BasicHypergeometric.basicHypergeometricCoefficient
 ---
 
-# Basic Hypergeometric Coefficient
+# Coefficients of the basic hypergeometric series
 
-The coefficient of `z ^ n` in the general basic hypergeometric series `{}_rφ_s`.
+**Coefficients of the basic hypergeometric series.** Let $r$ and $s$ be natural numbers, let
+$a_1, \dots, a_r$, $b_1, \dots, b_s$ and $q$ be complex numbers, and write
+$(x;q)_n = \prod_{j=0}^{n-1} (1 - x q^j)$ for the finite $q$-Pochhammer symbol, so that
+$(q;q)_n = \prod_{j=0}^{n-1} (1 - q^{j+1})$. For a natural number $n$, the coefficient of $z^n$ in
+the basic hypergeometric series ${}_r\phi_s(a_1, \dots, a_r; b_1, \dots, b_s; q, z)$ is
 
-This is DLMF 17.4.1 adapted from `_{r+1}φ_s` to `{}_rφ_s`: with `r` upper parameters
-`a₁,…,aᵣ` and `s` lower parameters `b₁,…,bₛ`,
+$$\frac{(a_1;q)_n \cdots (a_r;q)_n}{(q;q)_n\,(b_1;q)_n \cdots (b_s;q)_n}
+\left((-1)^n q^{\binom{n}{2}}\right)^{1+s-r},$$
 
-```
-coeff n = (∏_i (a_i;q)_n) / ((q;q)_n ∏_i (b_i;q)_n) * ((-1)^n q^{n choose 2})^{1+s-r}
-```
+where the exponent $1 + s - r$ is an integer and may be negative. This is DLMF 17.4.1, which is
+written for $r + 1$ upper parameters, restated for $r$ upper parameters.
 
-where `(a;q)_n = ∏_{j=0}^{n-1} (1 - a q^j)` and `(q;q)_n = ∏_{j=0}^{n-1} (1 - q^{j+1})`.
-The factor `(-1)^n q^{n choose 2}` is `(-1 : ℂ)^n * q ^ Nat.choose n 2` and the outer
-exponent `1 + s - r` is in `ℤ` via totalized `zpow` on `ℂ`.
-
-Finite `q`-Pochhammer symbols are expanded directly as products. Division and integer powers
-use Mathlib's totalized operations on `ℂ`; analytic applications must separately establish that
-the denominator does not vanish.
+No condition on the parameters is imposed: division by zero gives $0$, and so does every negative
+power of $0$. Analytic applications must separately establish that the denominator does not
+vanish.
 
 ## Depends on
 

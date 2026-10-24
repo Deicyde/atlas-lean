@@ -5,13 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.X_sub_one_pow_dvd_alternating_sum_prod_X_pow_add_C
 ---
 
-# X sub one pow dvd alternating sum prod X pow add C
+# The factor $(x - 1)^n$ of an alternating binomial sum
 
-Theorem 1.1: for every real `a` and `n ≥ 0`, `(x - 1)^n` divides
-`H_n(x; a) = ∑_{i=0}^n (-1)^i C(n, i) ∏_{k=0, k ≠ i}^n (x^k + a)`, a formal cross-multiplied
-polynomial; for `a ≠ -1` (the paper's condition) it is the numerator of
-`G_n(x; a) = ∑_{i=0}^n (-1)^i C(n, i) / (x^i + a)`, while at `a = -1` the factor `x^0 + a` is
-zero and only the polynomial statement remains.
+**The factor $(x - 1)^n$ of an alternating binomial sum.** For every real number $a$ and
+every natural number $n$, the polynomial $(x - 1)^n$ divides, in $\mathbb{R}[x]$, the polynomial
+
+$$H_n(x; a) = \sum_{i=0}^{n} (-1)^i \binom{n}{i} \prod_{0 \le k \le n,\ k \ne i} (x^k + a).$$
+
+For $a \ne -1$ (the paper's condition), $H_n(x; a)$ is the numerator of
+$G_n(x; a) = \sum_{i=0}^{n} (-1)^i \binom{n}{i} / (x^i + a)$ over the common denominator
+$\prod_{k=0}^{n} (x^k + a)$; at $a = -1$ the factor $x^0 + a$ is zero and only the polynomial
+statement remains.
 
 ## Depends on
 

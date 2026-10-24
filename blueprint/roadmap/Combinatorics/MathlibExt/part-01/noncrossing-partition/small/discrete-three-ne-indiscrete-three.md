@@ -12,16 +12,16 @@ Discrete and indiscrete partitions of `Fin 3` are distinct.
 
 ## Depends on
 
-- [Noncrossing Partition](../basic/noncrossing-partition.md)
-- [Discrete](../operations/discrete.md)
-- [Indiscrete](../operations/indiscrete.md)
+- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [Discrete noncrossing partition](../operations/discrete.md)
+- [The indiscrete noncrossing partition](../operations/indiscrete.md)
 
 ## Proof depends on
 
-- [Is Noncrossing](../basic/is-noncrossing.md)
-- [Set Partition](../basic/set-partition.md)
-- [Discrete parts](../operations/discrete-parts.md)
-- [Indiscrete parts pos](../operations/indiscrete-parts-pos.md)
+- [Noncrossing set partition](../basic/is-noncrossing.md)
+- [Set partition](../basic/set-partition.md)
+- [The discrete noncrossing partition consists of the singletons](../operations/discrete-parts.md)
+- [The indiscrete partition of a nonempty set has a single block](../operations/indiscrete-parts-pos.md)
 
 ## Sources
 

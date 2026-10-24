@@ -5,5 +5,5 @@ navigation: module
 
 # Representation Count
 
-- [Ordered Representation Count](ordered-representation-count.md)
-- [Ordered Representation Count pos iff](ordered-representation-count-pos-iff.md)
+- [Ordered representation count](ordered-representation-count.md)
+- [Positivity of the ordered representation count](ordered-representation-count-pos-iff.md)

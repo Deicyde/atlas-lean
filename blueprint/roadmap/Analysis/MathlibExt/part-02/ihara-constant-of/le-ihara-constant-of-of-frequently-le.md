@@ -6,19 +6,22 @@ proof: formalized
 lean: MathlibExt.Analysis.le_iharaConstantOf_of_frequently_le
 ---
 
-# Le ihara Constant Of of frequently le
+# Lower bound for the Ihara constant from a linear bound
 
-A frequently attained linear lower bound gives a limsup lower bound.
+**Lower bound for the Ihara constant from a linear bound.** Let $N : \mathbb{N} \to \mathbb{N}$
+and $c \in [0, \infty]$. If there are infinitely many integers $g > 0$ with $c \cdot g \le N(g)$
+in $[0, \infty]$, then $c \le \limsup_{g \to \infty} N(g)/g$, the Ihara constant of $N$, where the
+ratio $N(g)/g$ is taken in $[0, \infty]$ and set to $0$ at $g = 0$.
 
 ## Depends on
 
-- [Ihara Constant Of](ihara-constant-of.md)
+- [Abstract Ihara constant of a sequence](ihara-constant-of.md)
 
 ## Proof depends on
 
-- [Ihara Ratio](ihara-ratio.md)
-- [Le ihara Constant Of of frequently ratio le](le-ihara-constant-of-of-frequently-ratio.md)
-- [Le ihara Ratio of mul le](le-ihara-ratio-of-mul-le.md)
+- [Normalized Ihara ratio](ihara-ratio.md)
+- [Lower bound for the Ihara constant from the normalized ratios](le-ihara-constant-of-of-frequently-ratio.md)
+- [Lower bound for one normalized Ihara ratio](le-ihara-ratio-of-mul-le.md)
 
 ## Sources
 

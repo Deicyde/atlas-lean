@@ -7,20 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.legendreStirlingFirst_eq_zero_of_lt
 ---
 
-# Legendre Stirling First eq zero of lt
+# Legendre–Stirling numbers of the first kind vanish above the diagonal
 
-Support: `J(n, k; 1) = 0` for `k > n`.
-Concept `jis_sem_f66a64ccd0402d409b050315` (statements
-`jis_01122ed9cc65cc42cecf4da1`, `jis_073a5750ee8a25ebbba42d0c`).
+**Legendre–Stirling numbers of the first kind vanish above the diagonal.** For all natural
+numbers $n < k$, the Legendre–Stirling number of the first kind $J(n, k; 1)$ is $0$.
 
 ## Depends on
 
-- [Legendre Stirling First](legendre-stirling-first.md)
+- [Legendre–Stirling numbers of the first kind](legendre-stirling-first.md)
 
 ## Proof depends on
 
-- [Jacobi Stirling First support](../jacobi-stirling-first-kind/jacobi-stirling-first-support.md)
+- [First-kind Jacobi–Stirling numbers vanish above the diagonal](../jacobi-stirling-first-kind/jacobi-stirling-first-support.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.LegendreStirlingFirstKind](../../../../../../../sources/v2/MathlibExt.md)
+- Concept `jis_sem_f66a64ccd0402d409b050315` (statements `jis_01122ed9cc65cc42cecf4da1`, `jis_073a5750ee8a25ebbba42d0c`).

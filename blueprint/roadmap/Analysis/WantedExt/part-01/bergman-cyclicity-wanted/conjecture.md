@@ -6,9 +6,14 @@ statement: formalized
 lean: MathlibExt.Analysis.BergmanCyclicityWanted.conjecture
 ---
 
-# Conjecture
+# Bergman cyclicity conjecture
 
-[AMR-022-8010] If `f` and `1 / f` are both in the Bergman space `A^2` (with `f` zero-free on the disc, so the reciprocal is genuine and not Lean's totalized inverse), then the polynomial multiples of `f` are dense in `A^2`.
+**Bergman cyclicity conjecture.** Write $\mathbb{D}$ for the open unit disc and $dA$ for
+Lebesgue area measure on it. The statement that for every function $f : \mathbb{C} \to \mathbb{C}$
+with no zeros in $\mathbb{D}$ such that $f$ and its pointwise reciprocal $1/f$ both belong to the
+Bergman space $A^2$, the polynomial multiples of $f$ are dense in $A^2$: for every $g \in A^2$ and
+every $\varepsilon > 0$ there is a complex polynomial $p$ with
+$\left(\int_{\mathbb{D}} |p f - g|^2 \, dA\right)^{1/2} < \varepsilon$.
 
 ## Depends on
 
@@ -16,11 +21,12 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bergman](bergman.md)
-- [Dense](dense.md)
-- [Disc](disc.md)
-- [Inv](inv.md)
+- [Bergman space $A^2$ of the unit disc](bergman.md)
+- [Density of polynomial multiples in $A^2$](dense.md)
+- [The open unit disc](disc.md)
+- [Pointwise reciprocal](inv.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.BergmanCyclicityWanted](../../../../../sources/v2/WantedExt.md)
+- record `AMR-022-8010`; the record's generalization to other spaces is not formalized.

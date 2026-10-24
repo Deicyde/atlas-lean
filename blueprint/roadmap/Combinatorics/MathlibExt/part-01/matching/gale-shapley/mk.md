@@ -6,15 +6,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Matching.GaleShapley.StrictTotalOrder.mk
 ---
 
-# Mk
+# Building a strict total order from a relation
 
-Compatibility alias for the former `GaleShapley.StrictTotalOrder.mk` constructor.
-
-For new code, use `MathlibExt.Order.StrictTotalOrder.mk` directly.
+**Building a strict total order from a relation.** A binary relation $<$ on a set $\alpha$
+that is irreflexive ($a \not< a$ for all $a$), transitive ($a < b$ and $b < c$ imply $a < c$) and
+total on distinct elements ($a \ne b$ implies $a < b$ or $b < a$) defines a strict total order on
+$\alpha$ whose relation is $<$.
 
 ## Depends on
 
-- [Strict Total Order](strict-total-order.md)
+- [Strict preference order](strict-total-order.md)
 
 ## Proof depends on
 

@@ -5,10 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.tsum_four_pow_div_centralBinom_mul_sq_special
 ---
 
-# Tsum four pow div central Binom mul sq special
+# Central binomial series for $\pi^2/8$ and a series for $2\ln 2$
 
-Theorem 8 (special values): `Σ_{n≥0} 2^{2n}/(C(2(n + 1), n + 1)(n + 1)²) = π²/8` and
-`Σ_{n≥0} 1/((2n + 1)(n + 1)) = 2 ln 2`.
+**Central binomial series for $\pi^2/8$ and a series for $2\ln 2$.** We have
+
+$$\sum_{n=0}^{\infty} \frac{4^n}{\binom{2(n+1)}{n+1} (n+1)^2} = \frac{\pi^2}{8}$$
+
+and
+
+$$\sum_{n=0}^{\infty} \frac{1}{(2n+1)(n+1)} = 2\ln 2.$$
 
 ## Depends on
 

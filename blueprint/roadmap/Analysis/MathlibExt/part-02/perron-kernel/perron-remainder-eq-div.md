@@ -7,18 +7,20 @@ proof: formalized
 lean: PerronKernel.perronRemainder_eq_div
 ---
 
-# Perron Remainder eq div
+# The Perron remainder as a difference quotient
 
-Agreement with the quotient off `0`.
+**The Perron remainder as a difference quotient.** For every real $y > 0$ and every complex
+$s \neq 0$, the Perron remainder $R_y$ satisfies $R_y(s) = (y^s - 1)/s$, where
+$y^s = e^{s \log y}$.
 
 ## Depends on
 
-- [Perron Remainder](perron-remainder.md)
+- [Perron remainder](perron-remainder.md)
 
 ## Proof depends on
 
-- [E1](e1.md)
-- [E1 eq div](e1-eq-div.md)
+- [The averaging operator $E_1$](e1.md)
+- [The averaging operator as a difference quotient](e1-eq-div.md)
 
 ## Sources
 

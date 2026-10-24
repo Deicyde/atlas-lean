@@ -7,24 +7,25 @@ proof: formalized
 lean: MetaMathlibExt.MarkedDyckPath.size_eq
 ---
 
-# Size eq
+# Size of a marked Dyck path in vertical steps
 
-The size of a marked Dyck path `P` equals `N(P) + 2 * N*(P)`.
-Source statement `jis_f51c1ff9625da95f812ce507`;
-concept `jis_sem_1ec0710af356bb3047cb9588`.
+**Size of a marked Dyck path in vertical steps.** For every marked Dyck path $P$, the size of
+$P$ equals $N(P) + 2N^*(P)$, where $N(P)$ and $N^*(P)$ are the numbers of unmarked and marked
+vertical steps of $P$.
 
 ## Depends on
 
-- [Marked Dyck Path](marked-dyck-path.md)
-- [Path Size](path-size.md)
-- [Marked Dyck Step](marked-dyck-step.md)
-- [Marked Dyck Count N](marked-dyck-count-n.md)
-- [Marked Dyck Count Nstar](marked-dyck-count-nstar.md)
+- [Marked Dyck path](marked-dyck-path.md)
+- [Size of a marked Dyck path](path-size.md)
+- [Steps of a marked Dyck path](marked-dyck-step.md)
+- [Number of unmarked vertical steps](marked-dyck-count-n.md)
+- [Number of marked vertical steps](marked-dyck-count-nstar.md)
 
 ## Proof depends on
 
-- [Marked Dyck Count E](marked-dyck-count-e.md)
+- [Number of horizontal steps](marked-dyck-count-e.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MarkedStepInAMarkedDyckPath](../../../../../../../sources/v2/MathlibExt.md)
+- statement `jis_f51c1ff9625da95f812ce507`; concept `jis_sem_1ec0710af356bb3047cb9588`.

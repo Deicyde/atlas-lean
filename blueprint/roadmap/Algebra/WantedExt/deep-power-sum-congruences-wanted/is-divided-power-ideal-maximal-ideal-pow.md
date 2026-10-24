@@ -5,16 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.isDividedPowerIdeal_maximalIdeal_pow_iff
 ---
 
-# Is Divided Power Ideal maximal Ideal pow iff
+# Powers of the maximal ideal of a DVR that are divided-power ideals
 
-In a discrete valuation ring `O` with `p O = 𝔪 ^ e`, `e ≥ 1` (so `v_p(𝔪) = 1 / e`), the ideal
-`𝔪 ^ k` is a divided-power ideal if and only if `e ≤ (p - 1) k`, that is
-`v_p(𝔪 ^ k) ≥ 1 / (p - 1)`. The paper states this for `p`-adic DVRs and remarks that it also holds
-for localizations of rings of integers; here `O` is any such DVR, and the zero ideal is omitted.
+**Powers of the maximal ideal of a DVR that are divided-power ideals.** Let $p$ be a prime and
+let $O$ be a discrete valuation ring with maximal ideal $\mathfrak{m}$ such that
+$pO = \mathfrak{m}^e$ for some integer $e \ge 1$. Then for every $k \ge 0$, the ideal
+$\mathfrak{m}^k$ is a divided-power ideal if and only if $e \le (p - 1)k$.
+
+Equivalently, with $v_p(\mathfrak{m}) = 1/e$, the condition is $v_p(\mathfrak{m}^k) \ge 1/(p - 1)$.
+The paper states this for $p$-adic discrete valuation rings and remarks that it also holds for
+localizations of rings of integers; here $O$ is any such ring, and the zero ideal is omitted.
 
 ## Depends on
 
-- [Is Divided Power Ideal](is-divided-power-ideal.md)
+- [Divided-power ideal](is-divided-power-ideal.md)
 
 ## Sources
 

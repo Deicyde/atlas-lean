@@ -7,9 +7,10 @@ proof: formalized
 lean: MetaMathlibExt.staver_sign_odd
 ---
 
-# Staver sign odd
+# Reflecting a power of minus one, odd case
 
-For odd `n`, reflection flips the sign.
+**Reflecting a power of minus one, odd case.** If $n$ is an odd natural number and
+$k \le n$ is a natural number, then $(-1)^{n-k} = -(-1)^k$ in $\mathbb{Q}$.
 
 ## Depends on
 
@@ -17,8 +18,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Staver sign mul](staver-sign-mul.md)
-- [Staver sign sq](staver-sign-sq.md)
+- [Splitting a power of minus one](staver-sign-mul.md)
+- [Squares of powers of minus one](staver-sign-sq.md)
 
 ## Sources
 

@@ -5,19 +5,21 @@ statement: formalized
 lean: NoncrossingPartition.indiscrete
 ---
 
-# Indiscrete
+# The indiscrete noncrossing partition
 
-Indiscrete noncrossing partition of `Fin n` (one block), bundled.
+**The indiscrete noncrossing partition.** For a natural number $n$, the indiscrete noncrossing
+partition of $\{0, \dots, n-1\}$ is the coarsest partition of this set: its only block is the whole
+set when $n > 0$, and it has no blocks when $n = 0$. It is noncrossing.
 
 ## Depends on
 
-- [Noncrossing Partition](../basic/noncrossing-partition.md)
+- [Noncrossing partition](../basic/noncrossing-partition.md)
 
 ## Proof depends on
 
-- [Is Noncrossing](../basic/is-noncrossing.md)
-- [Set Partition](../basic/set-partition.md)
-- [Is Noncrossing top](is-noncrossing-top.md)
+- [Noncrossing set partition](../basic/is-noncrossing.md)
+- [Set partition](../basic/set-partition.md)
+- [The indiscrete partition is noncrossing](is-noncrossing-top.md)
 
 ## Sources
 

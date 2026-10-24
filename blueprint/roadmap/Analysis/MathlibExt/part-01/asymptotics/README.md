@@ -11,5 +11,5 @@ article_id: af_747b5eafebc7990493eb57c4
 - [Admissible sequences for Taylor's law](is-taylor-admissible-sequence.md)
 - [Initial-segment mean](initial-segment-mean.md)
 - [Initial-segment sample variance](initial-segment-sample-variance.md)
-- [Taylors Law](satisfies-taylors-law-asymptotically.md)
+- [Taylor's law, asymptotic form](satisfies-taylors-law-asymptotically.md)
 - [Watson's lemma for Laplace integrals](watson-laplace-integral-asymptotic.md)

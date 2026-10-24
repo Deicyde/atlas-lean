@@ -5,17 +5,24 @@ statement: formalized
 lean: MetaMathlibExt.c4Sq_cross_sum_mod_four_of_two_power
 ---
 
-# Lemma 17
+# Two conditions forcing $b_0 b_2 + b_1 b_3 + c_0 c_2 + c_1 c_3 \equiv 2 \pmod 4$
 
-**Lemma 17.** Two situations in which `b₀b₂ + b₁b₃ + c₀c₂ + c₁c₃ ≡ 2 (mod 4)`.
+**Two conditions forcing $b_0 b_2 + b_1 b_3 + c_0 c_2 + c_1 c_3 \equiv 2 \pmod 4$.** Let
+$a \colon \mathbb{Z}/4 \times \mathbb{Z}/4 \to \mathbb{Z}$ have sums $b_i$, alternating sums
+$c_i$ and Gaussian integers $\beta$, $\gamma$; let $D_4$ be the $4 \times 4$ circulant
+determinant, and put $D = D_4(b) D_4(c)$, $N = \beta \bar\beta \gamma \bar\gamma$ and
+$Q = b_0 b_2 + b_1 b_3 + c_0 c_2 + c_1 c_3$. If every $b_i$ is odd and $D = 2^{11} (2t + 1)$
+for some integer $t$, then $Q \equiv 2 \pmod 4$. If $b_0 \equiv b_2$, $b_1 \equiv b_3$ and
+$b_0 \not\equiv b_1 \pmod 2$, and $D = 2^{11} (2t + 1)$ and $N = 2^4 (2s + 1)$ for some
+integers $t$ and $s$, then $Q \equiv 2 \pmod 4$.
 
 ## Depends on
 
-- [C4 Sq B](c4-sq-b.md)
-- [C4 Sq Beta](c4-sq-beta.md)
-- [C4 Sq C](c4-sq-c.md)
-- [C4 Sq Gamma](c4-sq-gamma.md)
-- [Circulant Det Four](circulant-det-four.md)
+- [The sums $b_i$](c4-sq-b.md)
+- [The Gaussian integer $\beta$](c4-sq-beta.md)
+- [The alternating sums $c_i$](c4-sq-c.md)
+- [The Gaussian integer $\gamma$ of a function on $C_4^2$](c4-sq-gamma.md)
+- [The group determinant of $C_4$](circulant-det-four.md)
 
 ## Sources
 

@@ -5,7 +5,7 @@ navigation: module
 
 # BAry Binomial Symmetry Pascal
 
-- [B Ary Binomial Coefficient eq prod div pow](b-ary-binomial-coefficient-eq-prod-div-p.md)
-- [B Ary Binomial Coefficient symm](b-ary-binomial-coefficient-symm.md)
-- [B Ary Binomial Coefficient pascal](b-ary-binomial-coefficient-pascal.md)
-- [Bary Binomial symmetry and pascal](bary-binomial-symmetry-and-pascal.md)
+- [Digit-product formula for $b$-ary binomial coefficients](b-ary-binomial-coefficient-eq-prod-div-p.md)
+- [Symmetry of $b$-ary binomial coefficients](b-ary-binomial-coefficient-symm.md)
+- [Pascal's recurrence for $b$-ary binomial coefficients](b-ary-binomial-coefficient-pascal.md)
+- [Symmetry and Pascal's recurrence for $b$-ary binomial coefficients](bary-binomial-symmetry-and-pascal.md)

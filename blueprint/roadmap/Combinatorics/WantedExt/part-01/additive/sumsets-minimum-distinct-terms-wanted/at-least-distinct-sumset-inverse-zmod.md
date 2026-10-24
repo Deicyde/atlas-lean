@@ -13,7 +13,7 @@ If `A ⊆ ℤ_p`, `|A| = k ≥ 2`, `1 ≤ r ≤ k`, `h ≥ r + 2` and
 ## Depends on
 
 - [At Least Distinct Sumset](at-least-distinct-sumset.md)
-- [Is APOf Length](../../../../MathlibExt/part-01/ap/basic/is-apof-length.md)
+- [Sets that are arithmetic progressions](../../../../MathlibExt/part-01/ap/basic/is-apof-length.md)
 
 ## Sources
 

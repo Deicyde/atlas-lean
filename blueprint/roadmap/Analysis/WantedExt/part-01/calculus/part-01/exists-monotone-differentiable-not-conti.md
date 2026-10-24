@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.MonotoneDiscontinuousDerivWanted.exists_monotone_differentiable_not_continuous_deriv
 ---
 
-# Monotone Discontinuous Deriv Wanted
+# A monotone differentiable function with discontinuous derivative
 
-Construct a monotonic function $f$ on $\mathbb{R}^1$ so that $f'(x)$ exists (finitely) for every
-$x\in \mathbb{R}^1$, but $f'$ is not a continuous function.
+**A monotone differentiable function with discontinuous derivative.** There is a
+nondecreasing function $f : \mathbb{R} \to \mathbb{R}$ that is differentiable at every point and
+whose derivative $f'$ is not continuous.
 
 ## Depends on
 

@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Analysis.GleasonWanted.Analysis.IsOrthProj
 ---
 
-# Is Orth Proj
+# Orthogonal projection
 
-An orthogonal projection on `H`: a self-adjoint idempotent continuous linear map.
+**Orthogonal projection.** A continuous linear operator $P$ on a complex Hilbert space $H$ is
+an orthogonal projection if it is idempotent, $P^2 = P$, and self-adjoint, $P^* = P$.
 
 ## Depends on
 

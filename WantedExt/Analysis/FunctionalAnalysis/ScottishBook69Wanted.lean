@@ -18,10 +18,10 @@ public import Mathlib.Topology.MetricSpace.Pseudo.Defs
 
 namespace MathlibExt.Analysis.FunctionalAnalysis.ScottishBook69Wanted
 
-/-- The iterated sets defining the metric center of a pair `(p, q)`:
-`R 0` is the set of points `x` with `px + xq = pq`, and `R (n + 1)` is
-the set of points `r` in `R n` whose distance to every point of `R n`
-is at most half the diameter of `R n`. -/
+/-- **Iterated metric center sets.** Let $p, q$ be points of a pseudometric space $E$ with
+distance $d$. The iterated metric center sets $R_n \subseteq E$ of $(p, q)$, for
+$n \in \mathbb{N}$, are defined by $R_0 = \{x \in E : d(p, x) + d(x, q) = d(p, q)\}$ and
+$R_{n+1} = \{r \in R_n : d(r, x) \le \operatorname{diam}(R_n) / 2 \text{ for all } x \in R_n\}$. -/
 noncomputable def metricCenterSets (E : Type*) [PseudoMetricSpace E]
     (p q : E) : ℕ → Set E
   | 0 => {x | dist p x + dist x q = dist p q}
@@ -30,8 +30,10 @@ noncomputable def metricCenterSets (E : Type*) [PseudoMetricSpace E]
       ∀ x ∈ metricCenterSets E p q n,
         dist r x ≤ Metric.diam (metricCenterSets E p q n) / 2}
 
-/-- `c` is the metric center of the pair `(p, q)`: it lies in every
-iterated set, and it is the only point that does. -/
+/-- **Metric center of a pair of points.** Let $p, q, c$ be points of a pseudometric space $E$
+and let $R_n$, for $n \in \mathbb{N}$, be the iterated metric center sets of $(p, q)$. We say
+that $c$ is the metric center of $(p, q)$ when $c \in R_n$ for every $n$, and every point
+$y \in E$ with $y \in R_n$ for every $n$ equals $c$. -/
 def IsMetricCenter (E : Type*) [PseudoMetricSpace E] (p q c : E) : Prop :=
   (∀ n, c ∈ metricCenterSets E p q n) ∧
   ∀ y, (∀ n, y ∈ metricCenterSets E p q n) → y = c

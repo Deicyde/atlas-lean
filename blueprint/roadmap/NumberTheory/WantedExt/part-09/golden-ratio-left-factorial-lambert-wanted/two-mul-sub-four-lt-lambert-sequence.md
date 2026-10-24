@@ -11,7 +11,7 @@ Lemma 8: `2n - 4 < (3/4) a n` for `n ≥ 4`.
 
 ## Depends on
 
-- [Lambert Map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/lambert-map.md)
+- [Lambert map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/lambert-map.md)
 
 ## Sources
 

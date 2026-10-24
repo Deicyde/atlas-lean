@@ -5,29 +5,28 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.ScottishBook51Wanted.orthogonal_systems_not_necessarily_countable
 ---
 
-# Orthogonal systems not necessarily countable
+# Orthogonal systems need not be countable
 
-Mazur, Problem 51 of the Scottish Book. (a) Is every set of measurable
-functions on `[0, 1]`, in which any two functions of the set are orthogonal,
-at most countable? The functions are not assumed to be square-integrable.
-(b) The analogous question for sequences: is every set of sequences in
-which any two sequences of the set are orthogonal, meaning the sum over
-`n` from `1` to infinity of `ξₙ ηₙ` equals `0`, at most countable? The
-answer to both parts is no, stated as two separate negations:
-Plichko and Razenkov construct a continuum-sized pairwise-orthogonal
-family of sequences, and from it an uncountable orthogonal system of
-functions on an interval. Orthogonal systems are taken with the
-non-degeneracy in `FunctionSystemsAreCountable` / `SequenceSystemsAreCountable`:
-nonzero elements modulo a.e. equality, so the singleton-indicator
-family is not a trivial witness against the function part. The refutation
-uses the absence of square-integrability: in `ℓ²` or `L²` an orthogonal
-family is at most countable, since those spaces are separable Hilbert
-spaces.
+**Orthogonal systems need not be countable.** Both of the following statements are false.
+(a) Every set $S$ of real sequences $(f_n)_{n \in \mathbb{N}}$ in which no member is the zero
+sequence, and in which for any two distinct $f, g \in S$ the series $\sum_n f_n g_n$ converges
+absolutely with sum $0$, is at most countable. (b) Let $\lambda$ be Lebesgue measure on
+$[0, 1]$. Every set $S$ of functions $[0, 1] \to \mathbb{R}$ in which no member is
+$\lambda$-almost everywhere equal to $0$, no two distinct members are equal $\lambda$-almost
+everywhere, and any two members $f, g$ that are not equal $\lambda$-almost everywhere are
+measurable with $fg$ $\lambda$-integrable and $\int_{[0, 1]} f g \, d\lambda = 0$, is at most
+countable.
+
+This answers both parts of Mazur's Problem 51 of the Scottish Book in the negative: Plichko and
+Razenkov construct a continuum-sized pairwise-orthogonal family of sequences, and from it an
+uncountable orthogonal system of functions on an interval. No square-integrability is assumed;
+in $\ell^2$ or $L^2$ an orthogonal family is at most countable, since those spaces are
+separable Hilbert spaces.
 
 ## Depends on
 
-- [Function Systems Are Countable](function-systems-are-countable.md)
-- [Sequence Systems Are Countable](sequence-systems-are-countable.md)
+- [Countability of orthogonal systems of functions](function-systems-are-countable.md)
+- [Countability of orthogonal systems of sequences](sequence-systems-are-countable.md)
 
 ## Sources
 

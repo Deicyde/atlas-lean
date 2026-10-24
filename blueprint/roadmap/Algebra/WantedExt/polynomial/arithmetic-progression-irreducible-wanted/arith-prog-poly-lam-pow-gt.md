@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.arithProgPoly_lam_pow_gt
 ---
 
-# Arith Prog Poly lam pow gt
+# Lower bound on a power of the auxiliary root
 
-For `m ≥ 2`, positive integers `a ≥ d`, and `λ` the positive solution of equation (3),
-`a λ^m - a_{m+1} > 0`, i.e. `a + md < a λ^m`.
+**Lower bound on a power of the auxiliary root.** Let $m \ge 2$, let $a$, $d$ be integers with
+$0 < d \le a$, and let $\lambda > 0$ be a real number with
+$a \lambda^{m+2} + (a - d) \lambda^{m+1} - (a + (m + 1)d) \lambda - (a + md) = 0$. Then
+$a + md < a \lambda^m$.
 
 ## Depends on
 

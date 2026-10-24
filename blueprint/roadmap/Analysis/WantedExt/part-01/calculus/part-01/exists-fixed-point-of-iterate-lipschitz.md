@@ -5,18 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.IterateLipschitzNullFixedPointWanted.exists_fixedPoint_of_iterate_lipschitz_tendsto_zero
 ---
 
-# Iterate Lipschitz Null Fixed Point Wanted
+# Fixed points of maps whose iterates have null Lipschitz constants
 
-Let $X$ be a complete metric space and, for $f:X\to X$, let $f^n$ denote the $n^{\text{th}}$
-iterate
-
-of $f$, that is, $f^0 := \mathrm{id}_X$ and $f^n := f\circ f^{n-1}$, $n\in\mathbb{N}^*$. Suppose
-that, for each $n\in\mathbb{N}$, there
-is some $q_n\ge 0$ such that
-\[
-d\bigl(f^n(x),f^n(y)\bigr)\le q_n d(x,y), \qquad x,y\in X.
-\]
-Show that, if $(q_n)$ is a null sequence, then $f$ has a fixed point in $X$.
+**Fixed points of maps whose iterates have null Lipschitz constants.** Let $X$ be a nonempty
+complete metric space, let $f : X \to X$, and write $f^n$ for the $n$-th iterate of $f$. Let
+$(q_n)_{n \in \mathbb{N}}$ be a sequence of nonnegative real numbers with $q_n \to 0$ such that
+$d(f^n(x), f^n(y)) \le q_n \, d(x, y)$ for every $n \ge 1$ and all $x, y \in X$. Then $f$ has a
+fixed point: there is $x \in X$ with $f(x) = x$.
 
 ## Depends on
 

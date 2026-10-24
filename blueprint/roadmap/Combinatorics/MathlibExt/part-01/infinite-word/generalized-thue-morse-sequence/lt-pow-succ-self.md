@@ -7,10 +7,10 @@ proof: formalized
 lean: MetaMathlibExt.GeneralizedThueMorse.lt_pow_succ_self
 ---
 
-# Lt pow succ self
+# A crude exponential bound
 
-Exponential lower bound used to select a long-enough block
-(concept `jis_sem_12ac243c6e8826ae73e194e0`, statement `jis_099e0392547ec836b0b913d1`).
+**A crude exponential bound.** For every natural number $k > 1$ and every $m \in \mathbb{N}$,
+we have $m < k^{m+1}$.
 
 ## Depends on
 
@@ -19,3 +19,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.GeneralizedThueMorseSequence](../../../../../../sources/v2/MathlibExt.md)
+- JIS Definition 2.2 (concept `jis_sem_12ac243c6e8826ae73e194e0`, statement `jis_099e0392547ec836b0b913d1`).

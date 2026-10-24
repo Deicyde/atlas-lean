@@ -20,10 +20,10 @@ is at most every cut's capacity, and it equals the capacity of the certificate c
 - [Residual Cut](../edmonds-karp/residual-cut.md)
 - [Real Cap](real-cap.md)
 - [Real Flow](real-flow.md)
-- [Is Feasible Flow](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/is-feasible-flow.md)
-- [Is STCut](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/is-stcut.md)
-- [Cut Capacity](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/cut-capacity.md)
-- [Flow Value](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/flow-value.md)
+- [Feasible flow](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/is-feasible-flow.md)
+- [Source–sink cut](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/is-stcut.md)
+- [Cut capacity](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/cut-capacity.md)
+- [Flow value](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/flow-value.md)
 
 ## Proof depends on
 
@@ -36,7 +36,7 @@ is at most every cut's capacity, and it equals the capacity of the certificate c
 - [A feasible skew flow gives a feasible flow](is-feasible-flow-real-flow.md)
 - [Is STCut residual Cut](is-stcut-residual-cut.md)
 - [Sum real Flow sub](sum-real-flow-sub.md)
-- [Flow Value le cut Capacity](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/flow-value-le-cut-capacity.md)
+- [Weak duality for flows and cuts](../../../../../../../Combinatorics/MathlibExt/part-01/graph/max-flow-min-cut/flow-value-le-cut-capacity.md)
 
 ## Sources
 

@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.lip_eq_zero_of_infinite_zeros
 ---
 
-# Lemma 3
+# A locally integer polynomial function with infinitely many zeros is zero
 
-**Lemma 3.** A LIP function vanishing at infinitely many points of `U` is zero.
+**A locally integer polynomial function with infinitely many zeros is zero.** Let
+$U \subseteq \mathbb{Z}$ and let $f : U \to \mathbb{Z}$ lie in the ring $\mathrm{LIP}(U)$ of
+locally integer polynomial functions on $U$. If $f(x) = 0$ for infinitely many $x \in U$, then
+$f(x) = 0$ for every $x \in U$.
 
 ## Depends on
 
-- [Lip Subring](lip-subring.md)
+- [The ring $\mathrm{LIP}(U)$ of locally integer polynomial functions](lip-subring.md)
 
 ## Sources
 

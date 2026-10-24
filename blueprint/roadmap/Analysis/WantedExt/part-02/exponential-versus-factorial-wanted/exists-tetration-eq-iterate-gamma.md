@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.exists_tetration_eq_iterate_Gamma
 ---
 
-# Exists tetration eq iterate Gamma
+# Tetrations as iterated Gamma values
 
-Tetrations as iterated Gamma values: let `z > 1` be the nontrivial solution of
-`Γ(z) = z`. For `b > z` there is a convergent sequence `(x_n)`, strictly decreasing for all
-sufficiently large `n`, with `b ↑↑ n = Γ^n(x_n)` for `n ≥ 1`. Here `b ↑↑ n` is the `n`-fold
-iterate of `x ↦ b ^ x` from `1` and `Γ^n` the `n`-fold iterate of `Real.Gamma`; `n = 0` is
-excluded since the paper's `b ↑↑ n = E_{n-1}(b, b)` is defined only for `n ≥ 1`.
+**Tetrations as iterated Gamma values.** Let $z > 1$ be a real number with $\Gamma(z) = z$,
+and let $b > z$. Let $b \uparrow\uparrow n$ be the $n$-fold iterate of $y \mapsto b^y$ starting
+at $1$, and $\Gamma^n$ the $n$-fold iterate of $\Gamma$. Then there is a convergent sequence
+$(x_n)$ of real numbers, strictly decreasing from some index on, such that
+$b \uparrow\uparrow n = \Gamma^n(x_n)$ for every $n \ge 1$.
+
+The case $n = 0$ is excluded, as the paper defines power towers only for $n \ge 1$.
 
 ## Depends on
 

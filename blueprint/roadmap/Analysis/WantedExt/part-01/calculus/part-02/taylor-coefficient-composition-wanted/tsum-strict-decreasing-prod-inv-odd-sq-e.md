@@ -7,12 +7,15 @@ lean: MetaMathlibExt.tsum_strictDecreasing_prod_inv_odd_sq_eq
 
 # Strictly nested sums of reciprocal odd squares
 
-**Strictly nested sums of reciprocal odd squares** (Iovleff's `A₁(k)`):
-`A₁(k) = ∑_{1 ≤ i_1 < ⋯ < i_k} ∏_j (2 i_j - 1)^{-2} = (π/2)^{2k} / (2k)!`. The paper states
-`k > 0`; the identity also holds at `k = 0` (empty sum convention `A₁(0) = 1`, used in the
-paper's proof), so `k > 0` is not assumed. The strictly nested positive indices are listed in
-decreasing order as `MultipleZeta.StrictDecreasingTuple k` (the summation domain of
-`MultipleZeta.strictValue`); the summand is symmetric, so the order does not matter.
+**Strictly nested sums of reciprocal odd squares.** For every natural number $k$,
+
+$$\sum_{i_1 > i_2 > \cdots > i_k \ge 1} \prod_{j=1}^{k} \frac{1}{(2 i_j - 1)^2} =
+\frac{(\pi/2)^{2k}}{(2k)!},$$
+
+where the sum runs over all strictly decreasing $k$-tuples $(i_1, \ldots, i_k)$ of positive
+integers. For $k = 0$ the sum has the single empty term and both sides equal $1$.
+
+The source states the identity for $k > 0$; the case $k = 0$ is included here.
 
 ## Depends on
 

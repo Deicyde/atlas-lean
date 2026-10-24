@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.Nat.VPartition
 ---
 
-# VPartition
+# V-partition
 
-Let n∈ℤ_{≥ 0}. A partition is a finite multiset of positive integers, and its weight |λ| is the
-sum of its parts. Written in weakly decreasing order a partition is λ=[λ₁,…,λₘ] with λ₁≥⋯≥λₘ≥ 1; for
-m=0 it is the empty partition ∅, of weight 0.
+**V-partition.** Let $n \ge 0$ be an integer. A partition $\lambda$ is a finite multiset of
+positive integers, and its weight $|\lambda|$ is the sum of its parts. A V-partition of weight $n$
+is a triple $(c, \lambda, \mu)$ in which $c \ge 0$ is an integer, $\lambda$ and $\mu$ are
+partitions all of whose parts are at most $c$, and $c + |\lambda| + |\mu| = n$.
 
-The full informal statement is in the module documentation directly above.
+The order of $\lambda$ and $\mu$ matters, so $(c, \lambda, \mu)$ and $(c, \mu, \lambda)$ are
+distinct whenever $\lambda \ne \mu$.
 
 ## Depends on
 

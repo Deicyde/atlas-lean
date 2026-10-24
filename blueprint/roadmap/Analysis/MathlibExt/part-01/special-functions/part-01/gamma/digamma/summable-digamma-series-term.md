@@ -7,17 +7,19 @@ proof: formalized
 lean: Complex.summable_digammaSeriesTerm
 ---
 
-# Summable digamma Series Term
+# Summability of the digamma series terms
 
-The complex digamma series terms are summable for `1 < s.re`.
+**Summability of the digamma series terms.** For every complex number $s$ with
+$\operatorname{Re} s > 1$, the sequence of digamma series terms
+$\frac{1}{j+1} - \frac{1}{j+s}$, for $j = 0, 1, 2, \dots$, is summable.
 
 ## Depends on
 
-- [Digamma Series Term](digamma-series-term.md)
+- [Terms of the complex digamma series](digamma-series-term.md)
 
 ## Proof depends on
 
-- [Summable one div add nat succ sq](summable-one-div-add-nat-succ-sq.md)
+- [Summability of the Basel series](summable-one-div-add-nat-succ-sq.md)
 
 ## Sources
 

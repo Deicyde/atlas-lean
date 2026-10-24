@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.sub_two_mul_one_add_tsum_prod_eq_pi_mul_cot
 ---
 
-# Sub two mul one add tsum prod eq pi mul cot
+# A product series for $\pi \cot(\pi/k)$
 
-Theorem 1: for each integer `k ≥ 2`,
-`(k - 2)(1 + Σ_{n≥1} (1/(n+1)) ∏_{j=1}^n (kj - (k-2))/(kj + 1)) = π cot(π/k)`.
+**A product series for $\pi \cot(\pi/k)$.** For every integer $k \ge 2$,
+
+$$(k - 2)\Bigl(1 + \sum_{n=1}^{\infty} \frac{1}{n + 1}
+\prod_{j=1}^{n} \frac{kj - (k - 2)}{kj + 1}\Bigr) = \pi \cot\frac{\pi}{k}.$$
 
 ## Depends on
 

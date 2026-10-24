@@ -16,7 +16,7 @@ kind `{r, i}_s` (recurrence `{r+1, k}_s = (rs + k) {r, k}_s + {r, k-1}_s`, `{0, 
 
 ## Depends on
 
-- [Is Hsu Shiue Family](../../../../../MathlibExt/part-01/enumerative/part-04/hsu-shiue-generalized-stirling-number/is-hsu-shiue-family.md)
+- [Characterization of the Hsu–Shiue generalized Stirling numbers](../../../../../MathlibExt/part-01/enumerative/part-04/hsu-shiue-generalized-stirling-number/is-hsu-shiue-family.md)
 
 ## Sources
 

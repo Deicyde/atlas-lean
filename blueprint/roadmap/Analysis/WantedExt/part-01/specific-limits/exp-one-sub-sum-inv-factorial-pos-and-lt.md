@@ -5,13 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.SpecificLimits.ExpOneTaylorRemainderBoundWanted.exp_one_sub_sum_inv_factorial_pos_and_lt
 ---
 
-# Exp One Taylor Remainder Bound Wanted
+# Error bound for the partial sums of the series for $e$
 
-For $n\in\N^\ast$, prove the following error estimate:
+**Error bound for the partial sums of the series for $e$.** For every integer $n \ge 1$,
 
-\[
-0\lt e-\sum_{k=0}^{n}\frac{1}{k!}\lt \frac{1}{n\,n!}.
-\]
+$$0 < e - \sum_{k=0}^{n} \frac{1}{k!} < \frac{1}{n \cdot n!}.$$
 
 ## Depends on
 

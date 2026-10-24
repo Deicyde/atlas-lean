@@ -12,19 +12,19 @@ Classification at arity two: a noncrossing partition is discrete or indiscrete.
 
 ## Depends on
 
-- [Noncrossing Partition](../basic/noncrossing-partition.md)
-- [Discrete](../operations/discrete.md)
-- [Indiscrete](../operations/indiscrete.md)
+- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [Discrete noncrossing partition](../operations/discrete.md)
+- [The indiscrete noncrossing partition](../operations/indiscrete.md)
 
 ## Proof depends on
 
-- [Card parts pos iff](../../finpartition/card/card-parts-pos-iff.md)
-- [Eq bot iff card parts eq card](../../finpartition/card/eq-bot-iff-card-parts-eq-card.md)
-- [Eq top iff card parts eq one](../../finpartition/card/eq-top-iff-card-parts-eq-one.md)
-- [Is Noncrossing](../basic/is-noncrossing.md)
-- [Set Partition](../basic/set-partition.md)
-- [Eq discrete iff val eq bot](../operations/eq-discrete-iff-val-eq-bot.md)
-- [Eq indiscrete iff val eq top](../operations/eq-indiscrete-iff-val-eq-top.md)
+- [Recognizing the one-block partition](../../finpartition/card/card-parts-pos-iff.md)
+- [Recognizing the partition into singletons by its number of blocks](../../finpartition/card/eq-bot-iff-card-parts-eq-card.md)
+- [Recognizing the one-block partition](../../finpartition/card/eq-top-iff-card-parts-eq-one.md)
+- [Noncrossing set partition](../basic/is-noncrossing.md)
+- [Set partition](../basic/set-partition.md)
+- [Characterization of the discrete noncrossing partition](../operations/eq-discrete-iff-val-eq-bot.md)
+- [Characterization of the indiscrete noncrossing partition](../operations/eq-indiscrete-iff-val-eq-top.md)
 
 ## Sources
 

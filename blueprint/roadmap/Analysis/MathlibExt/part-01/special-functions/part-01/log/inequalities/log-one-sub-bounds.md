@@ -6,9 +6,10 @@ proof: formalized
 lean: Real.log_one_sub_bounds
 ---
 
-# Log one sub bounds
+# Two-sided bound for $\log(1 - x)$
 
-Two-sided bound on `log (1 - x)` for `0 < x < 1 / 2`.
+**Two-sided bound for $\log(1 - x)$.** For every real number $x$ with $0 < x < 1/2$,
+$-x - x^2 \le \log(1 - x) \le -x$.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Log one sub le neg](log-one-sub-le-neg.md)
-- [Neg add sq le log one sub](neg-add-sq-le-log-one-sub.md)
+- [Linear upper bound for $\log(1 - x)$](log-one-sub-le-neg.md)
+- [Quadratic lower bound for $\log(1 - x)$](neg-add-sq-le-log-one-sub.md)
 
 ## Sources
 

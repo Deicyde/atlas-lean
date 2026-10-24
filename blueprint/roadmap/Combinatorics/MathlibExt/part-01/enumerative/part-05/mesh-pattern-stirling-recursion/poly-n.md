@@ -6,10 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.PolyN
 ---
 
-# Poly N
+# Mesh-pattern counting polynomial
 
-Canonical mesh-pattern counting polynomial: `∑ σ, X ^ meshN r σ`. Shared by the
-recursion and the coefficient theorem.
+**Mesh-pattern counting polynomial.** For natural numbers $m$ and $r$, the polynomial
+$P_{m,r}(X) \in \mathbb{N}[X]$ is the sum of $X^{N_r(\sigma)}$ over all permutations $\sigma$ of
+$m$ elements, where $N_r(\sigma)$ is the canonical mesh-pattern statistic with parameter $r$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Mesh N](mesh-n.md)
+- [Canonical mesh-pattern statistic](mesh-n.md)
 
 ## Sources
 

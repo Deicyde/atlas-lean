@@ -13,7 +13,7 @@ every nonzero letter to `0010`, which only matters on `1` here.
 
 ## Depends on
 
-- [Is Omega Limit](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/is-omega-limit.md)
+- [Infinite word as the limit of iterates](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/is-omega-limit.md)
 - [Gutkovskiy](gutkovskiy.md)
 
 ## Sources

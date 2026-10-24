@@ -6,13 +6,14 @@ statement: formalized
 lean: MetaMathlibExt.cliqueFinGraph
 ---
 
-# Clique Fin Graph
+# Complete graph as a finite graph
 
-The complete graph on `n` vertices, `Kₙ`, as a bundled finite graph.
+**Complete graph as a finite graph.** For a natural number $n$, $K_n$ is the finite graph whose
+vertices are the natural numbers less than $n$, in which any two distinct vertices are adjacent.
 
 ## Depends on
 
-- [Fin Graph](fin-graph.md)
+- [Finite simple graph](fin-graph.md)
 
 ## Sources
 

@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.lip_union_natProgression
 ---
 
-# Corollary 6
+# Gluing LIP functions on two intersecting progressions
 
-**Corollary 6.** Let `U₁ = a₁ + d₁ℤ_{≥0}` and `U₂ = a₂ + d₂ℤ_{≥0}` (`d₁, d₂ > 0`) be
-intersecting progressions in `ℕ`. If `f` is LIP on `U₁` and on `U₂`, it is LIP on `U₁ ∪ U₂`.
+**Gluing LIP functions on two intersecting progressions.** Let $a_1, a_2 \ge 0$ and
+$d_1, d_2 \ge 1$ be integers, let $U_i = \{a_i + d_i n : n \in \mathbb{Z}, n \ge 0\}$ for
+$i = 1, 2$, and suppose $U_1 \cap U_2$ is nonempty. If $f : \mathbb{Z} \to \mathbb{Z}$ restricts
+to an element of $\mathrm{LIP}(U_1)$ on $U_1$ and to an element of $\mathrm{LIP}(U_2)$ on $U_2$,
+then the restriction of $f$ to $U_1 \cup U_2$ lies in $\mathrm{LIP}(U_1 \cup U_2)$.
 
 ## Depends on
 
-- [Lip Subring](lip-subring.md)
+- [The ring $\mathrm{LIP}(U)$ of locally integer polynomial functions](lip-subring.md)
 
 ## Sources
 

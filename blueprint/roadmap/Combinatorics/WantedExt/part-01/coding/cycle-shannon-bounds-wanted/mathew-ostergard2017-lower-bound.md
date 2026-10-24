@@ -11,7 +11,7 @@ Source: Mathew--Östergård (2017), exact rate row; no unprinted code is supplie
 
 ## Depends on
 
-- [Shannon Capacity Cycle](../../../../MathlibExt/part-01/coding/cycle-code/shannon-capacity-cycle.md)
+- [Shannon capacity of the modular cycle](../../../../MathlibExt/part-01/coding/cycle-code/shannon-capacity-cycle.md)
 
 ## Sources
 

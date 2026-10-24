@@ -16,7 +16,7 @@ bound and equality iff clause are exactly the corollary's two conclusions; `a 0`
 
 - [Is Indexed AP](is-indexed-ap.md)
 - [Ordered Finset](ordered-finset.md)
-- [Restricted Signed Sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
+- [Restricted signed sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
 
 ## Sources
 

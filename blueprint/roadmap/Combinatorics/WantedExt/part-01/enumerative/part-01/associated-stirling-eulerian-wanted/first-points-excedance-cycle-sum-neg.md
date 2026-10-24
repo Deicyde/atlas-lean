@@ -13,7 +13,7 @@ in distinct cycles, `∑ x^{e(σ)} (-s)^{c(σ)} = (-1)^s s^{n+s} (x-1)^n`.
 ## Depends on
 
 - [First Points In Distinct Cycles](first-points-in-distinct-cycles.md)
-- [Cycle Quotient Count](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
+- [Number of cycles of a permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
 - [Excedance Count](../../../../../MathlibExt/part-02/associated-stirling-eulerian/excedance-count.md)
 
 ## Sources

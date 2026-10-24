@@ -6,10 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.setLT
 ---
 
-# Set LT
+# Set order
 
-The paper's strict order on subsets: `A < B` iff `|A| > |B|`, or the
-cardinalities agree and `b(A) < b(B)`.
+**Set order.** For subsets $A$ and $B$ of $\{0, \dots, n-1\}$, $A$ precedes $B$ in the set
+order, written $A < B$, if $|A| > |B|$, or $|A| = |B|$ and $b(A) < b(B)$, where
+$b(A) = \sum_{i \in A} 2^i$ is the binary code of $A$.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Bin Rep](bin-rep.md)
+- [Binary code of a subset](bin-rep.md)
 
 ## Sources
 

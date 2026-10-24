@@ -13,7 +13,7 @@ The 2-dissection modulo 4: `∑ PD_2(2n) q^n ≡ f_4^2 / (f_1^2 f_3^2) (mod 4)` 
 ## Depends on
 
 - [Odd Designated Summands Count](odd-designated-summands-count.md)
-- [Q Euler Product](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [The Euler products of partition theory](../../../../../../../MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

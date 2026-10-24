@@ -7,10 +7,17 @@ proof: formalized
 lean: MetaMathlibExt.partitionPolynomial_iteratedDeriv_eq_sum_stirlingSecond_general
 ---
 
-# Partition Polynomial iterated Deriv eq sum stirling Second general
+# Stirling recursion for derivatives, for arbitrary multiplicities
 
-The Stirling-number formula for the `d`th derivative of `y ↦ ∑ i ∈ Icc 1 k, mᵢ yⁱ` at
-nonzero `x`, for arbitrary `k`, `d` and multiplicities `m`.
+**Stirling recursion for derivatives, for arbitrary multiplicities.** Let $k$ and $d$ be
+natural numbers, let $m \colon \mathbb{N} \to \mathbb{N}$, write $m_i = m(i)$, and let
+$f(y) = \sum_{i=1}^{k} m_i y^i$ for real $y$. Then for every real $x \ne 0$,
+
+$$f^{(d)}(x) = \sum_{i=1}^{k} i^d m_i x^{i-d} -
+\sum_{j=0}^{d-1} S(d, j)\, x^{j-d} f^{(j)}(x),$$
+
+where $S(d, j)$ are the Stirling numbers of the second kind and $f^{(j)}$ is the $j$th
+derivative of $f$. No relation between $d$ and $k$ is assumed.
 
 ## Depends on
 

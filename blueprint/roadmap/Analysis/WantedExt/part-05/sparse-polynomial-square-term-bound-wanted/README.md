@@ -4,5 +4,5 @@ navigation: module
 
 # Sparse Polynomial Square Term Bound
 
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Erdős–Rényi conjecture on squares of sparse polynomials](conjecture.md)
+- [Schinzel's theorem on squares of sparse polynomials](conjecture-holds.md)

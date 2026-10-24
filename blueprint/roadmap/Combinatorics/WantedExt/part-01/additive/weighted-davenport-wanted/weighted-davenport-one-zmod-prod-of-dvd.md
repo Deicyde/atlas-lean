@@ -11,7 +11,7 @@ Olson's theorem: for `h ∣ k`, `D(Z_h ⊕ Z_k) = h + k - 1`.
 
 ## Depends on
 
-- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
+- [Weighted Davenport constant](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 
 ## Sources
 

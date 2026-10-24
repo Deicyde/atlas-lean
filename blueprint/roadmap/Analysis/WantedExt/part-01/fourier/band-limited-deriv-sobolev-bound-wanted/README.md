@@ -4,5 +4,5 @@ navigation: module
 
 # Band Limited Deriv Sobolev Bound
 
-- [Dot HSeminorm](dot-hseminorm.md)
-- [Norm deriv le rpow mul dot HSeminorm of fourier support Icc](norm-deriv-le-rpow-mul-dot-hseminorm-of.md)
+- [Homogeneous Sobolev seminorm (band-limited derivative bound)](dot-hseminorm.md)
+- [Bernstein-type bound for the derivative of a band-limited Schwartz function](norm-deriv-le-rpow-mul-dot-hseminorm-of.md)

@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.Analysis.SendovRadiusConstantWanted.bddBelow_admissibleRadii
 ---
 
-# Bdd Below admissible Radii
+# The admissible radii are bounded below
 
-The set of admissible radii is bounded below by zero.
+**The admissible radii are bounded below.** The set of admissible radii is bounded below.
+
+Zero is a lower bound, since every admissible radius is positive.
 
 ## Depends on
 
-- [Is Admissible Radius](is-admissible-radius.md)
+- [Admissible radius in Sendov's problem](is-admissible-radius.md)
 
 ## Sources
 

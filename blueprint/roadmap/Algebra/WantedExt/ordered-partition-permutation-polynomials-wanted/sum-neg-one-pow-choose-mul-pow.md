@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.sum_neg_one_pow_choose_mul_pow
 ---
 
-# Sum neg one pow choose mul pow
+# Alternating binomial sums of powers
 
-For complex `x, y, k` and positive integers `n, m`,
-`∑_{i=0}^{n} (-1)^i C(n, i) (kx + iy)^m` equals `(-1)^n y^n n!` when `n = m` and `0` when
-`n > m`.
+**Alternating binomial sums of powers.** Let $x, y, k \in \mathbb{C}$ and let $n, m$ be
+positive integers. If $n = m$, then
+
+$$\sum_{i=0}^{n} (-1)^i \binom{n}{i} (kx + iy)^m = (-1)^n y^n n!,$$
+
+and if $m < n$, then $\sum_{i=0}^{n} (-1)^i \binom{n}{i} (kx + iy)^m = 0$.
 
 ## Depends on
 

@@ -5,15 +5,17 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.PolynomialOfPointwiseVanishingDerivWanted.exists_polynomial_eq_of_forall_exists_iteratedDerivWithin_eq_zero
 ---
 
-# Polynomial Of Pointwise Vanishing Deriv Wanted
+# A smooth function on the unit interval with some vanishing derivative at each point is a polynomial there
 
-Let $f:[0,1]\to \mathbb{R}$ be a smooth function. Suppose that for every $x\in [0,1]$, there
-exists $n\in \mathbb{Z}_{\ge 0}$ such that $f^{(n)}(x)=0$. Prove that $f$ is a polynomial.
+**A smooth function on the unit interval with some vanishing derivative at each point is a
+polynomial there.** Let $f : \mathbb{R} \to \mathbb{R}$ be infinitely differentiable on $[0, 1]$,
+and suppose that for every $x \in [0, 1]$ there is an integer $n \ge 0$ such that the $n$-th
+derivative of $f$ within $[0, 1]$ vanishes at $x$ (at the endpoints these derivatives are
+one-sided). Then there is a polynomial $p$ with real coefficients such that $f(x) = p(x)$ for
+every $x \in [0, 1]$.
 
-Lean variant: the source writes `ContDiffOn ℝ ⊤`, which is real-analyticity in current Mathlib and
-reduces the problem to the identity theorem; the intended smoothness `ContDiffOn ℝ ∞` is used, and
-the derivatives are taken within `[0, 1]` (`iteratedDerivWithin`) so the endpoint values are not
-junk two-sided derivatives.
+Smoothness means infinite differentiability here, not real analyticity: the source's formal
+statement assumed real analyticity, which reduces the problem to the identity theorem.
 
 ## Depends on
 

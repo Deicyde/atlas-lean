@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.arithProgPoly_mul_sub_one_sq
 ---
 
-# Arith Prog Poly mul sub one sq
+# The arithmetic-progression polynomial times $(x - 1)^2$
 
-Lemma 1, identity: with `a_n = a + (n - 1)d`,
-`A_m(x)(x - 1)² = a_1 x^{m+2} - a_0 x^{m+1} - a_{m+2} x + a_{m+1}`; stated for all `m, a, d ≥ 0`
-(the paper says positive).
+**The arithmetic-progression polynomial times $(x - 1)^2$.** For all natural numbers $m$, $a$,
+$d$, the polynomial $A_m(x) = \sum_{i=0}^{m} (a + id) x^{m-i}$ satisfies, in $\mathbb{Z}[x]$,
+
+$$A_m(x)(x - 1)^2 = a x^{m+2} - (a - d) x^{m+1} - (a + (m + 1)d) x + (a + md).$$
+
+The source assumes $m$, $a$, $d$ positive.
 
 ## Depends on
 

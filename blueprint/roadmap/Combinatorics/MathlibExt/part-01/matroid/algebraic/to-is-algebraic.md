@@ -7,14 +7,16 @@ proof: formalized
 lean: Matroid.AlgebraicRepresentationSomeField.toIsAlgebraic
 ---
 
-# To Is Algebraic
+# Representations over some field witness algebraicity
 
-A same-universe package witnesses algebraicity of `M`.
+**Representations over some field witness algebraicity.** If a matroid $M$ on a type $E$
+has an algebraic representation over some field whose base field and extension field lie in the
+same universe as $E$, then $M$ is algebraic.
 
 ## Depends on
 
-- [Algebraic Representation Some Field](algebraic-representation-some-field.md)
-- [Is Algebraic](is-algebraic.md)
+- [Algebraic representation of a matroid over some field](algebraic-representation-some-field.md)
+- [Algebraic matroid](is-algebraic.md)
 
 ## Sources
 

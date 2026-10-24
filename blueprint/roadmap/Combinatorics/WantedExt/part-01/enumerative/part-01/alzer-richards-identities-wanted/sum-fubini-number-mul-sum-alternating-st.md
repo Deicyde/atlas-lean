@@ -13,7 +13,7 @@ For `n ≥ 1`, with `A(r, k) = ∑_{j=0}^{k} (-1)^j C(k, j) j! S(r, j)`:
 
 ## Depends on
 
-- [Fubini Number](../../../../../MathlibExt/part-01/enumerative/part-03/fubini-number/fubini-number.md)
+- [Fubini numbers](../../../../../MathlibExt/part-01/enumerative/part-03/fubini-number/fubini-number.md)
 
 ## Sources
 

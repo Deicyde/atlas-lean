@@ -8,8 +8,11 @@ lean: MathlibExt.Analysis.FiniteTimeSingularityWanted.FiniteTimeSingularity.vort
 
 # Vorticity
 
-We define the vorticity `∇ × u` of a vector field `u : ℝ³ → ℝ³` to be its curl.
-This is given by the formula: `∑ (e i) ×₃ ∂ᵢ u` (where `×₃` is the cross product).
+**Vorticity.** The vorticity of a vector field $u : \mathbb{R}^3 \to \mathbb{R}^3$ is its curl
+$(\nabla \times u)(x) = \sum_{i=1}^{3} e_i \times Du(x)\,e_i$, where $e_1, e_2, e_3$ is the
+standard basis of $\mathbb{R}^3$, $\times$ is the cross product and $Du(x)\,e_i$ is the partial
+derivative of $u$ at $x$ in direction $e_i$ (all taken to be $0$ when $u$ is not differentiable
+at $x$).
 
 ## Depends on
 
@@ -17,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [E](e.md)
+- [Standard basis vectors of ℝ³](e.md)
 
 ## Sources
 

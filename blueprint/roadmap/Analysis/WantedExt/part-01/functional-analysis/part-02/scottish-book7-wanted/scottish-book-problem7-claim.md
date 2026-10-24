@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.ScottishBook7Wanted.ScottishBookProblem7Claim
 ---
 
-# Scottish Book Problem7 Claim
+# Scottish Book Problem 7 (Mazur–Banach)
 
-Mazur and Banach's Problem 7 from the Scottish Book: are any two closed,
-infinite-dimensional convex subsets of a Banach space always homeomorphic?
+**Scottish Book Problem 7 (Mazur–Banach).** The claim that in every real Banach space $E$,
+any two closed convex subsets $A, B \subseteq E$ whose linear spans are infinite-dimensional are
+homeomorphic, with the subspace topologies.
 
 ## Depends on
 

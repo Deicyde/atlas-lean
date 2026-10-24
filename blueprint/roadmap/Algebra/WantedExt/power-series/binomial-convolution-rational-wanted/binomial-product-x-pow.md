@@ -5,9 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.binomialProduct_X_pow
 ---
 
-# Lemma 8
+# Binomial product with a monomial
 
-**Lemma 8.** `xᵐ ⊙ A(x) = (xᵐ / m!) (d/dx)ᵐ (xᵐ A(x))`.
+**Binomial product with a monomial.** For every field $K$ of characteristic $0$, every
+$m \in \mathbb{N}$ and every power series $A(x)$ over $K$,
+
+$$x^m \odot A(x) = \frac{x^m}{m!} \frac{d^m}{dx^m}\bigl(x^m A(x)\bigr),$$
+
+where $\odot$ is the binomial product and $d/dx$ is the formal derivative.
 
 ## Depends on
 

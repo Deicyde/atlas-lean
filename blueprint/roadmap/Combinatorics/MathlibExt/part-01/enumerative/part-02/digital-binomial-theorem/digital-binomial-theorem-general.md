@@ -7,21 +7,22 @@ proof: formalized
 lean: MetaMathlibExt.digital_binomial_theorem_general
 ---
 
-# Digital binomial theorem general
+# Digital binomial theorem over a commutative semiring
 
-Digital binomial theorem over a commutative semiring: `(x + y) ^ s(n)` is the sum of
-`x ^ s(m) * y ^ s(n - m)` over the `m ≤ n` with `s(m) + s(n - m) = s(n)`, where `s` is
-`binDigitSum`.
+**Digital binomial theorem over a commutative semiring.** Let $s(m)$ denote the binary digit sum
+of a natural number $m$. For every natural number $n$ and all elements $x$, $y$ of a commutative
+semiring, $(x + y)^{s(n)}$ equals the sum of $x^{s(m)} y^{s(n - m)}$ over all $m$ with
+$0 \le m \le n$ and $s(m) + s(n - m) = s(n)$.
 
 ## Depends on
 
-- [Bin Digit Sum](bin-digit-sum.md)
+- [Binary digit sum](bin-digit-sum.md)
 
 ## Proof depends on
 
-- [Bin Digit Sum two mul](bin-digit-sum-two-mul.md)
-- [Bin Digit Sum two mul add one](bin-digit-sum-two-mul-add-one.md)
-- [Bin Digit Sum zero](bin-digit-sum-zero.md)
+- [Binary digit sum of an even number](bin-digit-sum-two-mul.md)
+- [Binary digit sum of an odd number](bin-digit-sum-two-mul-add-one.md)
+- [Binary digit sum of zero](bin-digit-sum-zero.md)
 
 ## Sources
 

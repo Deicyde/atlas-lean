@@ -7,22 +7,26 @@ proof: formalized
 lean: MetaMathlibExt.orderly_canonical_prefix_of_sorted
 ---
 
-# Orderly canonical prefix of sorted
+# Prefixes of a sorted canonical family are canonical
 
-Every prefix of a canonically sorted indexed family is canonical. This holds for every
-`m ≤ k`, including `m = 0`, and needs neither universe coverage nor union closure.
+**Prefixes of a sorted canonical family are canonical.** Let $A_1, \dots, A_k$ be nonempty
+subsets of $\{0, \dots, n-1\}$ with $A_i < A_j$ in the set order whenever $i < j$, and suppose
+the family $U = \{\emptyset, A_1, \dots, A_k\}$ is canonical. Then for every $m \le k$, including
+$m = 0$, the family $\{\emptyset, A_1, \dots, A_m\}$ is canonical.
+
+Neither union closure nor coverage of the universe is needed.
 
 ## Depends on
 
-- [Is Canonical](is-canonical.md)
-- [Set LT](set-lt.md)
+- [Canonical family](is-canonical.md)
+- [Set order](set-lt.md)
 
 ## Proof depends on
 
-- [Bin Rep](bin-rep.md)
-- [Fam String](fam-string.md)
-- [Perm Image](perm-image.md)
-- [Set Key](set-key.md)
+- [Binary code of a subset](bin-rep.md)
+- [String of a family](fam-string.md)
+- [Permuted image of a family](perm-image.md)
+- [Sort key of a subset](set-key.md)
 
 ## Sources
 

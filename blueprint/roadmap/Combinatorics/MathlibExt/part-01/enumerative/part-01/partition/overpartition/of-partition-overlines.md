@@ -7,14 +7,16 @@ proof: formalized
 lean: Nat.Overpartition.ofPartition_overlines
 ---
 
-# Of Partition overlines
+# The overpartition attached to a partition has no overlined sizes
 
-The overlined sizes of `ofPartition p` are empty.
+**The overpartition attached to a partition has no overlined sizes.** For every partition
+$p$ of a natural number $n$, the overpartition of $n$ attached to $p$ (underlying partition $p$,
+no part size overlined) has an empty set of overlined part sizes.
 
 ## Depends on
 
 - [Overpartition](overpartition.md)
-- [Of Partition](of-partition.md)
+- [The overpartition attached to a partition](of-partition.md)
 
 ## Sources
 

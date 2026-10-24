@@ -5,6 +5,6 @@ navigation: module
 
 # QRDowling QStirling Expansion
 
-- [Whitney Second eq sum q Stirling Second](whitney-second-eq-sum-q-stirling-second.md)
-- [Eval qr Dowling Polynomial whitney Second](eval-qr-dowling-polynomial-whitney-secon.md)
-- [Q r dowling polynomial q stirling expansion](q-r-dowling-polynomial-q-stirling-expans.md)
+- [(q, r)-Whitney numbers of the second kind through q-Stirling numbers](whitney-second-eq-sum-q-stirling-second.md)
+- [Expansion of the (q, r)-Dowling polynomial in q-Stirling numbers](eval-qr-dowling-polynomial-whitney-secon.md)
+- [(q, r)-Dowling polynomial expansion from the defining recurrences](q-r-dowling-polynomial-q-stirling-expans.md)

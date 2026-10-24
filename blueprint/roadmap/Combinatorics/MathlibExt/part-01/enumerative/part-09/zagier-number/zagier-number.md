@@ -6,9 +6,14 @@ statement: formalized
 lean: MetaMathlibExt.zagierNumber
 ---
 
-# Zagier Number
+# Zagier numbers
 
-The Zagier numbers `Z(n) = D(n,1,1,1)` (OEIS A081085).
+**Zagier numbers.** For a natural number $n$, the Zagier number $Z(n)$ is the Domb-type sum
+$D(n, 1, 1, 1)$, that is,
+
+$$Z(n) = \sum_{k=0}^{n} \binom{n}{k} \binom{2k}{k} \binom{2(n-k)}{n-k}.$$
+
+These are the numbers of OEIS A081085.
 
 ## Depends on
 
@@ -16,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Domb Type Sum](domb-type-sum.md)
+- [Domb-type sums](domb-type-sum.md)
 
 ## Sources
 

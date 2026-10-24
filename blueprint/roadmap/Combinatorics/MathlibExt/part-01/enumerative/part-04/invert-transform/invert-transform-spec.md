@@ -7,16 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.invertTransform_spec
 ---
 
-# Invert Transform spec
+# Generating function of the INVERT transform
 
-Generating-function characterization of the INVERT transform
-(concept `jis_sem_22fea8fd5a269c1828606fd8`): `1 + B(t)` is the multiplicative
-inverse of `1 - A(t)`, where `A(t) = X * mk a` and `B(t) = X * mk (invertTransform a)`.
+**Generating function of the INVERT transform.** Let $a = (a_n)_{n \ge 0}$ be an integer
+sequence and $b = (b_n)_{n \ge 0}$ its INVERT transform, and put
+$A(x) = \sum_{n \ge 0} a_n x^{n+1}$ and $B(x) = \sum_{n \ge 0} b_n x^{n+1}$. Then
+$(1 - A(x))(1 + B(x)) = 1$ in $\mathbb{Z}[[x]]$, that is, $1 + B(x)$ is the inverse of $1 - A(x)$.
 
 ## Depends on
 
-- [Invert Transform](invert-transform.md)
+- [The INVERT transform of an integer sequence](invert-transform.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.InvertTransform](../../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_22fea8fd5a269c1828606fd8`.

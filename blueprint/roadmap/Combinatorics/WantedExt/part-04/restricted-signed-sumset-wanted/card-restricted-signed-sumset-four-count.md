@@ -14,7 +14,7 @@ refutes the inverse sentence of Theorem 11 (the counterexample is ours, not the 
 
 ## Depends on
 
-- [Restricted Signed Sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
+- [Restricted signed sumset](../../../MathlibExt/part-01/additive/restricted-signed-sumset/restricted-signed-sumset.md)
 
 ## Sources
 

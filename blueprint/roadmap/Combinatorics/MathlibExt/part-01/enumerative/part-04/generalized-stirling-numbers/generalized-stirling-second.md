@@ -5,14 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.generalizedStirlingSecond
 ---
 
-# Generalized Stirling Second
+# Generalized Stirling numbers of the second kind
 
-Generalized Stirling numbers of the second kind, after Carlitz and Broder,
-as recorded in Cereceda (arXiv:2401.13696v4, lines 132-142; Axioms 14 (2025), 746):
-`{n,m}_x = ∑_{i=0}^{n-m} choose n i * stirlingSecond (n-i) m * x^i`
-for `m ≤ n`, with `x` real. The definition below uses the displayed finite sum
-for every `n, m`; when `m > n`, `n - m + 1 = 1` and the single ordinary term
-vanishes, giving `0`.
+**Generalized Stirling numbers of the second kind.** For natural numbers $n$, $m$ and a real
+number $x$, the generalized Stirling number of the second kind is
+
+$${n \brace m}_x = \sum_{i=0}^{n-m} \binom{n}{i} {n-i \brace m} x^i,$$
+
+where ${n \brace k}$ is the Stirling number of the second kind, the number of partitions of an
+$n$-element set into $k$ nonempty blocks. For $m > n$ the sum consists of the single term $i = 0$,
+which is $\binom{n}{0} {n \brace m} = 0$, so ${n \brace m}_x = 0$.
 
 ## Depends on
 
@@ -21,3 +23,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.GeneralizedStirlingNumbers](../../../../../../../sources/v2/MathlibExt.md)
+- Carlitz and Broder, as recorded in Cereceda, arXiv:2401.13696v4, lines 132-142; Axioms 14 (2025), 746.

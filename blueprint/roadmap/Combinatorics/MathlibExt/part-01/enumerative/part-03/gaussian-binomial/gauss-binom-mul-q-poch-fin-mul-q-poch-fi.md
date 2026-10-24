@@ -7,23 +7,25 @@ proof: formalized
 lean: MathlibExt.gaussBinom_mul_qPochFin_mul_qPochFin
 ---
 
-# Gauss Binom mul q Poch Fin mul q Poch Fin
+# Product formula for Gaussian binomial coefficients
 
-Product formula: for `k ≤ M`,
-`gaussBinom Q M k * qPochFin Q k * qPochFin Q (M - k) = qPochFin Q M`.
+**Product formula for Gaussian binomial coefficients.** Let $R$ be a commutative ring and
+$Q \in R$, and write $P_Q(m) = \prod_{i < m} (1 - Q^{i+1})$ for the finite $Q$-Pochhammer symbol,
+the product running over the natural numbers $i < m$. For natural numbers $k \le M$, the Gaussian
+binomial coefficient satisfies $\binom{M}{k}_Q \, P_Q(k) \, P_Q(M - k) = P_Q(M)$.
 
 ## Depends on
 
-- [Gauss Binom](gauss-binom.md)
-- [Q Poch Fin](q-poch-fin.md)
+- [Gaussian binomial coefficient](gauss-binom.md)
+- [Finite $Q$-Pochhammer symbol](q-poch-fin.md)
 
 ## Proof depends on
 
-- [Gauss Binom self](gauss-binom-self.md)
-- [Gauss Binom succ succ](gauss-binom-succ-succ.md)
-- [Gauss Binom zero right](gauss-binom-zero-right.md)
-- [Q Poch Fin succ](q-poch-fin-succ.md)
-- [Q Poch Fin zero](q-poch-fin-zero.md)
+- [Diagonal Gaussian binomial coefficients](gauss-binom-self.md)
+- [$Q$-Pascal recursion for Gaussian binomial coefficients](gauss-binom-succ-succ.md)
+- [Gaussian binomial coefficients with $k = 0$](gauss-binom-zero-right.md)
+- [Recursion for the finite $Q$-Pochhammer symbol](q-poch-fin-succ.md)
+- [The finite $Q$-Pochhammer symbol at $0$](q-poch-fin-zero.md)
 
 ## Sources
 

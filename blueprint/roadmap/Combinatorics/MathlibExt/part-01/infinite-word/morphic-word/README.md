@@ -5,8 +5,8 @@ navigation: module
 
 # Morphic Word
 
-- [Is Morphic](is-morphic.md)
-- [Intro](intro.md)
-- [Pure](pure.md)
-- [Coding eq](coding-eq.md)
-- [Of Pure Morphic](of-pure-morphic.md)
+- [Morphic words via a coding](is-morphic.md)
+- [Building a morphic word from its generator](intro.md)
+- [The generator of a morphic word is pure morphic](pure.md)
+- [A morphic word is the coding of its generator](coding-eq.md)
+- [Pure morphic words are morphic](of-pure-morphic.md)

@@ -6,14 +6,17 @@ proof: formalized
 lean: MetaMathlibExt.weightedDavenport_eq_top_iff
 ---
 
-# Weighted Davenport eq top iff
+# When the weighted Davenport constant is infinite
 
-`D_A(G) = ⊤` iff there are `A`-weighted zero-sum free sequences of every length.
+**When the weighted Davenport constant is infinite.** Let $G$ be an additive commutative
+monoid, $A$ a finite set of natural numbers and $D_A(G)$ the $A$-weighted Davenport constant
+of $G$. Then $D_A(G) = \infty$ if and only if for every $\ell \in \mathbb{N}$ there is an
+$A$-weighted zero-sum free sequence over $G$ of length $\ell$.
 
 ## Depends on
 
-- [Is Weighted Zero Sum Free](is-weighted-zero-sum-free.md)
-- [Weighted Davenport](weighted-davenport.md)
+- [Weighted zero-sum free sequences](is-weighted-zero-sum-free.md)
+- [Weighted Davenport constant](weighted-davenport.md)
 
 ## Sources
 

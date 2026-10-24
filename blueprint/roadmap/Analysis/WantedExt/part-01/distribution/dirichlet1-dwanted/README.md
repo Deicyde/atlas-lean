@@ -4,5 +4,5 @@ navigation: module
 
 # Dirichlet1 D
 
-- [Dirichlet 1d exists](dirichlet-1d-exists.md)
-- [Dirichlet 1d unique](dirichlet-1d-unique.md)
+- [Existence for the one-dimensional Dirichlet problem](dirichlet-1d-exists.md)
+- [Uniqueness for the one-dimensional Dirichlet problem](dirichlet-1d-unique.md)

@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.Series.ScottishBook5BoundedWanted.IsPermanent
 ---
 
-# Is Permanent
+# Permanent matrix methods
 
-A matrix method is permanent (regular), i.e. a Toeplitz method in
-the summability sense: it sums every convergent sequence to its limit.
-"Toeplitz method" is pinned to this standard reading; the typescript
-does not define it, and the Silverman-Toeplitz conditions characterise
-exactly these methods.
+**Permanent matrix methods.** A real matrix $(a_{ik})_{i,k \in \mathbb{N}}$ is a permanent
+(regular, or Toeplitz) method when it sums every convergent real sequence to its limit: for every
+real sequence $x$ and real number $S$ with $x_n \to S$, the matrix sums $x$ to $S$.
+
+The Silverman–Toeplitz conditions characterise exactly these methods.
 
 ## Depends on
 
@@ -19,8 +19,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Matrix Sums](matrix-sums.md)
+- [Summation by a matrix method](matrix-sums.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.Series.ScottishBook5BoundedWanted](../../../../../../sources/v2/WantedExt.md)
+- "Toeplitz method" is pinned to this standard reading; the typescript does not define it.

@@ -16,8 +16,8 @@ A constant word has no right-special factors.
 
 ## Proof depends on
 
-- [Factor](../../../../MathlibExt/part-01/infinite-word/factor/factor.md)
-- [Factor Set](../../../../MathlibExt/part-01/infinite-word/factor/factor-set.md)
+- [Factor of an infinite word](../../../../MathlibExt/part-01/infinite-word/factor/factor.md)
+- [Set of factors of a given length](../../../../MathlibExt/part-01/infinite-word/factor/factor-set.md)
 
 ## Sources
 

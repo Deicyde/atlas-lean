@@ -5,6 +5,6 @@ navigation: module
 
 # Four Function HRT
 
-- [Modulation One](modulation-one.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Frequency-one modulation factor](modulation-one.md)
+- [A four-function case of the HRT conjecture](conjecture.md)
+- [A four-function case of the HRT conjecture holds](conjecture-holds.md)

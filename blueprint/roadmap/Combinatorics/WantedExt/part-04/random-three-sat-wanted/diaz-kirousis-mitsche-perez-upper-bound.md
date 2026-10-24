@@ -14,7 +14,7 @@ proof is not supplied here.
 
 ## Depends on
 
-- [Is Upper Cutoff](../../../CSLibExt/random-three-sat/is-upper-cutoff.md)
+- [Upper threshold cutoff](../../../CSLibExt/random-three-sat/is-upper-cutoff.md)
 
 ## Sources
 

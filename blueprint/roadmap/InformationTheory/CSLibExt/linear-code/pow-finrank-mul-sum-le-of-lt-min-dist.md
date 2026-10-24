@@ -19,7 +19,7 @@ The **Hamming bound** for linear codes correcting `t` errors,
 ## Proof depends on
 
 - [Card filter mem](card-filter-mem.md)
-- [Hamming Sphere Packing](../../../Combinatorics/MathlibExt/part-01/coding/hamming-sphere-packing-bound.md)
+- [Hamming bound](../../../Combinatorics/MathlibExt/part-01/coding/hamming-sphere-packing-bound.md)
 
 ## Sources
 

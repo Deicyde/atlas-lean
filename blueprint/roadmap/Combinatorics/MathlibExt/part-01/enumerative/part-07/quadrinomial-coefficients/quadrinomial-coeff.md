@@ -6,10 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.quadrinomialCoeff
 ---
 
-# Quadrinomial Coeff
+# Quadrinomial sequence A005725
 
-The quadrinomial coefficient sequence A005725, expressed as
-`∑ k, choose n k * choose n (2 * k)`.
+**Quadrinomial sequence A005725.** For a natural number $n$, the quadrinomial number is
+$Q(n) = \sum_{k=0}^{n} \binom{n}{k} \binom{n}{2k}$. This is OEIS sequence A005725.
 
 ## Depends on
 

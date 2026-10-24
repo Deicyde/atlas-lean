@@ -7,18 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.bAryBinomialCoefficient_pascal
 ---
 
-# B Ary Binomial Coefficient pascal
+# Pascal's recurrence for $b$-ary binomial coefficients
 
-The `b`-ary binomial coefficients satisfy Pascal's recurrence where they are nonzero:
-`C_b(n, k) = C_b(n - 1, k - 1) + C_b(n - 1, k)` for `0 < k ≤ n` and `C_b(n, k) ≠ 0`.
+**Pascal's recurrence for $b$-ary binomial coefficients.** Let $b \ge 2$ and write
+$\binom{n}{k}_b$ for the $b$-ary binomial coefficient. For all natural numbers $n$ and $k$ with
+$0 < k \le n$ and $\binom{n}{k}_b \ne 0$,
+$\binom{n}{k}_b = \binom{n-1}{k-1}_b + \binom{n-1}{k}_b$.
 
 ## Depends on
 
-- [B Ary Binomial Coefficient](../bary-binomial-coefficient/b-ary-binomial-coefficient.md)
+- [The $b$-ary binomial coefficient](../bary-binomial-coefficient/b-ary-binomial-coefficient.md)
 
 ## Proof depends on
 
-- [B Ary Binomial Coefficient eq prod div pow](b-ary-binomial-coefficient-eq-prod-div-p.md)
+- [Digit-product formula for $b$-ary binomial coefficients](b-ary-binomial-coefficient-eq-prod-div-p.md)
 
 ## Sources
 

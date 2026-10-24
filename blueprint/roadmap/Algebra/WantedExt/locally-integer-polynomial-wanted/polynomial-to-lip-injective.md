@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.polynomialToLIP_injective
 ---
 
-# Lemma 1
+# Integer polynomials embed in LIP(U)
 
-**Lemma 1** (polynomial part). For infinite `U ⊆ ℤ`, `LIP(U)` contains `ℤ[x]`: evaluation
-`ℤ[x] → LIP(U)` is injective. The subring part of Lemma 1 is the construction of `lipSubring`.
+**Integer polynomials embed in LIP(U).** For every infinite set $U \subseteq \mathbb{Z}$, the
+evaluation map $\mathbb{Z}[x] \to \mathrm{LIP}(U)$, sending $p$ to the function $u \mapsto p(u)$,
+is injective: distinct integer polynomials give distinct functions on $U$.
+
+The other part of Lemma 1, that $\mathrm{LIP}(U)$ is a subring of the ring of all functions
+$U \to \mathbb{Z}$, holds by construction.
 
 ## Depends on
 
-- [Lip Subring](lip-subring.md)
+- [The ring $\mathrm{LIP}(U)$ of locally integer polynomial functions](lip-subring.md)
 - [Polynomial To LIP](polynomial-to-lip.md)
 
 ## Sources

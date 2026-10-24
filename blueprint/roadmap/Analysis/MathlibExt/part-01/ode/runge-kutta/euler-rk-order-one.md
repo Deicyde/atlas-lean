@@ -6,18 +6,19 @@ proof: formalized
 lean: MathlibExt.Analysis.ODE.RungeKutta.eulerRK_orderOne
 ---
 
-# Euler RK order One
+# The Euler tableau satisfies the order-one condition
 
-Euler satisfies the order-one condition.
+**The Euler tableau satisfies the order-one condition.** The weights of the Euler
+tableau sum to $1$.
 
 ## Depends on
 
-- [Order One](order-one.md)
-- [Euler RK](euler-rk.md)
+- [Order-one condition for Runge–Kutta methods](order-one.md)
+- [Euler tableau](euler-rk.md)
 
 ## Proof depends on
 
-- [Explicit RK](explicit-rk.md)
+- [Explicit Runge–Kutta method](explicit-rk.md)
 
 ## Sources
 

@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.trinomialNegPowSeries_neg_one
 ---
 
-# Trinomial Neg Pow Series neg one
+# The trinomial series at exponent one
 
-For `λ = -1` and `c = 1` the series is the trinomial `1 - α t + β t^m` itself.
+**The trinomial series at exponent one.** For all real numbers $\alpha, \beta$ and every
+natural number $m \ne 0$, the formal expansion of $(1 - \alpha t + \beta t^m)^{-\lambda}$ in
+powers of $t$ at $\lambda = -1$ is the polynomial $1 - \alpha t + \beta t^m$ itself.
 
 ## Depends on
 
-- [Trinomial Neg Pow Series](trinomial-neg-pow-series.md)
+- [Negative real power of a trinomial as a power series](trinomial-neg-pow-series.md)
 
 ## Sources
 

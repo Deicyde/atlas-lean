@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.Analysis.ODE.RungeKutta.eulerRK
 ---
 
-# Euler RK
+# Euler tableau
 
-The Euler tableau: one stage, weight `1`.
+**Euler tableau.** The explicit Runge–Kutta method with one stage, Butcher tableau
+$a = (0)$ and weight $b_1 = 1$.
 
 ## Depends on
 
-- [Explicit RK](explicit-rk.md)
+- [Explicit Runge–Kutta method](explicit-rk.md)
 
 ## Sources
 

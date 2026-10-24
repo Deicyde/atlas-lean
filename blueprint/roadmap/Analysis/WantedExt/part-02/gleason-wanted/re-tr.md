@@ -6,10 +6,12 @@ statement: formalized
 lean: MathlibExt.Analysis.GleasonWanted.Analysis.reTr
 ---
 
-# Re Tr
+# Real part of the trace
 
-The real part of the complex trace of a continuous linear operator on a
-finite-dimensional complex inner product space.
+**Real part of the trace.** For a continuous linear operator $A$ on a finite-dimensional
+complex Hilbert space $H$, let $\operatorname{tr}(A) \in \mathbb{C}$ be the trace of $A$ as a
+$\mathbb{C}$-linear map on $H$. The real part of the trace of $A$ is the real number
+$\operatorname{Re} \operatorname{tr}(A)$.
 
 ## Depends on
 

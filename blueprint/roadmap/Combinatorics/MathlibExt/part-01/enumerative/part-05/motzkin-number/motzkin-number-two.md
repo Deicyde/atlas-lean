@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.motzkinNumber_two
 ---
 
-# Motzkin Number two
+# Value of the Motzkin number at 2
 
-`M(2) = 2`.
+**Value of the Motzkin number at 2.** The second Motzkin number is $M(2) = 2$.
 
 ## Depends on
 
-- [Motzkin Number](motzkin-number.md)
+- [Motzkin numbers as a Catalan-weighted binomial sum](motzkin-number.md)
 
 ## Sources
 

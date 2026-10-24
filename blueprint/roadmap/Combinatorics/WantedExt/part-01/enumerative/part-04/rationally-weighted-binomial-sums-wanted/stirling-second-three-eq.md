@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Stirling Second mul factorial eq sum](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-second-explicit/stirling-second-mul-factorial-eq-sum.md)
+- [Explicit formula for Stirling numbers of the second kind](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-second-explicit/stirling-second-mul-factorial-eq-sum.md)
 
 ## Sources
 

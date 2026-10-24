@@ -16,7 +16,7 @@ lean: MetaMathlibExt.not_isJosephusThreeHighExtremal_four
 
 ## Proof depends on
 
-- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
+- [Josephus survivor function](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 
 ## Sources
 

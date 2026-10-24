@@ -13,7 +13,7 @@ denominator cleared, where `∑ P_σ(n) q^n = σ(q)`.
 ## Depends on
 
 - [Mock Theta Sigma](mock-theta-sigma.md)
-- [Q Euler Product](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
+- [The Euler products of partition theory](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/qeuler-product/q-euler-product.md)
 
 ## Sources
 

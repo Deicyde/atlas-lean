@@ -32,7 +32,7 @@ navigation: collection
 
 - [Variational](part-02/variational/README.md)
 - [Beurling Ahlfors](part-02/beurling-ahlfors/README.md)
-- [Blumberg](part-02/blumberg-theorem.md)
+- [Blumberg's theorem](part-02/blumberg-theorem.md)
 - [Ihara Constant Of](part-02/ihara-constant-of/README.md)
 - [Perron Kernel](part-02/perron-kernel/README.md)
 - [Wirsing Constant](part-02/wirsing-constant/README.md)

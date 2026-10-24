@@ -7,21 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.QPochhammer.hasProd_qPochhammerInf
 ---
 
-# Has Prod q Pochhammer Inf
+# Convergence of the infinite q-Pochhammer product
 
-Convergence of the complex q-Pochhammer infinite product on the
-open unit disk.
+**Convergence of the infinite q-Pochhammer product.** For all complex numbers $a$ and $q$ with
+$|q| < 1$, the infinite product $\prod_{n=0}^{\infty} (1 - a q^n)$ converges unconditionally to
+the infinite q-Pochhammer symbol $(a;q)_\infty$: the products of the factors $1 - a q^n$ over
+finite sets of indices $n$ tend to $(a;q)_\infty$.
 
-Source `2607.10576:D01`: the infinite product `(a;q)_∞` is used under
-`‖q‖ < 1`. For complex `a, q` with `‖q‖ < 1` the factor family
-`n ↦ 1 - a * q ^ n` satisfies `HasProd` to the named value
-`qPochhammerInf a q hq`. No nonvanishing hypothesis is imposed, so
-zero-factor cases (product value `0`) are covered.
+No nonvanishing hypothesis is imposed, so the cases where some factor is zero (and the product
+is $0$) are included.
 
 ## Depends on
 
-- [Q Pochhammer Inf](q-pochhammer-inf.md)
+- [Infinite q-Pochhammer symbol](q-pochhammer-inf.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.QPochhammer](../../../../../../../sources/v2/MathlibExt.md)
+- `2607.10576:D01`, where the infinite product $(a;q)_\infty$ is used under $|q| < 1$.

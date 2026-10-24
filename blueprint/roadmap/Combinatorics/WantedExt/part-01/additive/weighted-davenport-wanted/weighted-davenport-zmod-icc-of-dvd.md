@@ -12,7 +12,7 @@ For `m, n ≥ 2` with `m ∣ n` and `r = ⌈n/(m-1)⌉ - 1`, the weight set `{1,
 
 ## Depends on
 
-- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
+- [Weighted Davenport constant](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 
 ## Sources
 

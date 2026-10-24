@@ -6,15 +6,16 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Enumerative.sRestrictedWeightedCompositionCount
 ---
 
-# S Restricted Weighted Composition Count
+# Restricted weighted composition count
 
-Weighted count of `S`-restricted `f`-weighted compositions of `n` with `k` parts.
+**Restricted weighted composition count.** Let $R$ be a commutative ring, $S$ a finite set
+of natural numbers and $f \colon \mathbb{N} \to R$ a weight function. For natural numbers $n$
+and $k$, $d_{S,f}(n, k)$ is the sum, over all $k$-tuples $(\pi_1, \dots, \pi_k)$ of natural
+numbers with every $\pi_i \in S$ and $\pi_1 + \dots + \pi_k = n$, of the weight
+$f(\pi_1) \cdots f(\pi_k)$.
 
-For a commutative ring `R`, a finite set `S` of nonnegative integers, and a weight
-function `f : ℕ → R`, this is the sum over all tuples with every part in `S` and
-total `n` of the product weight `∏ i, f (π i)`. Since every part of a composition
-of `n` is at most `n`, tuples are encoded over the finite type `Fin k → Fin (n + 1)`
-with parts coerced to `ℕ`.
+Since every part of a composition of $n$ is at most $n$, the tuples range over the finite set
+of maps from $\{0, \dots, k-1\}$ to $\{0, \dots, n\}$.
 
 ## Depends on
 

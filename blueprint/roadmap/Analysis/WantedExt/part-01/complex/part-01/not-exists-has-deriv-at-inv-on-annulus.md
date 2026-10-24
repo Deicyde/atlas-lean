@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.InvNoAntiderivativeAnnulusWanted.not_exists_hasDerivAt_inv_on_annulus
 ---
 
-# Inv No Antiderivative Annulus Wanted
+# The reciprocal function has no antiderivative on an annulus
 
-The function $f(z)=1/z$ is holomorphic on $U=\{z\in\mathbb{C}:1<|z|<2\}$. Prove that $f$ does
-not have a holomorphic antiderivative on $U$.
+**The reciprocal function has no antiderivative on an annulus.** Let
+$U = \{z \in \mathbb{C} : 1 < |z| < 2\}$. There is no function $F : \mathbb{C} \to \mathbb{C}$
+that is complex differentiable at every $z \in U$ with $F'(z) = 1/z$.
 
 ## Depends on
 

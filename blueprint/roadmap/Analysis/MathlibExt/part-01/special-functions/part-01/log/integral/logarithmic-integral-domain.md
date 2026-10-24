@@ -6,13 +6,14 @@ statement: formalized
 lean: Real.LogarithmicIntegralDomain
 ---
 
-# Logarithmic Integral Domain
+# Domain of the logarithmic integral
 
-Domain of the normalized logarithmic integral: `0 ≤ x` and `x ≠ 1`.
+**Domain of the logarithmic integral.** The domain of the logarithmic integral is the set of
+real numbers $x$ with $x \ge 0$ and $x \ne 1$.
 
-`1` is excluded because `1 / log t` is singular at `t = 1`; the classical
-integral `∫₀ˣ dt / log t` has no finite real value at `x = 1` and is
-understood as a Cauchy principal value for `x ≠ 1`.
+The point $1$ is excluded because $1 / \log t$ is singular at $t = 1$; the classical integral
+$\int_0^x dt / \log t$ has no finite real value at $x = 1$ and is understood as a Cauchy
+principal value for $x \ne 1$.
 
 ## Depends on
 

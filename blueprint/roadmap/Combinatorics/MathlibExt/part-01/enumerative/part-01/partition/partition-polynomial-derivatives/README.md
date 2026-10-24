@@ -5,5 +5,5 @@ navigation: module
 
 # Partition Polynomial Derivatives
 
-- [Partition Polynomial iterated Deriv eq sum stirling Second general](partition-polynomial-iterated-deriv-eq-s.md)
-- [Partition Polynomial iterated Deriv eq sum stirling Second](partition-polynomial-iterated-deriv-eq-s-2.md)
+- [Stirling recursion for derivatives, for arbitrary multiplicities](partition-polynomial-iterated-deriv-eq-s.md)
+- [Derivatives of the partition polynomial via Stirling numbers](partition-polynomial-iterated-deriv-eq-s-2.md)

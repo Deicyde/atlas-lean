@@ -4,12 +4,12 @@ navigation: module
 
 # Sendov Radius Constant
 
-- [Is Admissible Radius](is-admissible-radius.md)
-- [Mono](mono.md)
+- [Admissible radius in Sendov's problem](is-admissible-radius.md)
+- [Enlarging an admissible radius](mono.md)
 - [Sendov Radius](sendov-radius.md)
-- [Bdd Below admissible Radii](bdd-below-admissible-radii.md)
-- [Sendov Radius le of is Admissible Radius](sendov-radius-le-of-is-admissible-radius.md)
-- [Sendov Conjecture](sendov-conjecture.md)
-- [Lower Bound One](lower-bound-one.md)
-- [Upper Bound Two](upper-bound-two.md)
-- [Sendov Conjecture holds](sendov-conjecture-holds.md)
+- [The admissible radii are bounded below](bdd-below-admissible-radii.md)
+- [Admissible radii bound the Sendov radius](sendov-radius-le-of-is-admissible-radius.md)
+- [Sendov's conjecture](sendov-conjecture.md)
+- [Lower bound one for the Sendov radius](lower-bound-one.md)
+- [Upper bound two for the Sendov radius](upper-bound-two.md)
+- [Sendov's conjecture holds](sendov-conjecture-holds.md)

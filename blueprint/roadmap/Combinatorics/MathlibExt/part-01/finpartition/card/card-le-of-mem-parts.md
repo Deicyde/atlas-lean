@@ -6,9 +6,10 @@ proof: formalized
 lean: Finpartition.card_le_of_mem_parts
 ---
 
-# Card le of mem parts
+# Blocks are no larger than the ground set
 
-Every block of a finite-set partition is bounded by the carrier cardinality.
+**Blocks are no larger than the ground set.** If $P$ is a partition of a finite set $s$
+and $B$ is a block of $P$, then $|B| \le |s|$.
 
 ## Depends on
 

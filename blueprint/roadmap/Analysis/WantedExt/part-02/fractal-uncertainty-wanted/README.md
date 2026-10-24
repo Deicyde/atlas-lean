@@ -5,7 +5,7 @@ navigation: module
 
 # Fractal Uncertainty
 
-- [Porous On Balls](porous-on-balls.md)
-- [Porous On Lines](porous-on-lines.md)
-- [Cube](cube.md)
-- [Theorem 1 1](theorem-1-1.md)
+- [Porosity on balls](porous-on-balls.md)
+- [Porosity on lines](porous-on-lines.md)
+- [Closed cubes in Euclidean space](cube.md)
+- [Cohen's fractal uncertainty principle for line-porous sets](theorem-1-1.md)

@@ -7,17 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.dombNumber_unfold
 ---
 
-# Domb Number unfold
+# Explicit formula for the Domb numbers
 
-Unfolded sum for the Domb numbers, with the powers of one simplified.
+**Explicit formula for the Domb numbers.** For every natural number $n$, the Domb number
+$\mathrm{Domb}(n)$ equals $\sum_{k=0}^{n} \binom{n}{k}^2 \binom{2k}{k} \binom{2(n-k)}{n-k}$.
 
 ## Depends on
 
-- [Domb Number](domb-number.md)
+- [Domb numbers](domb-number.md)
 
 ## Proof depends on
 
-- [Domb Type Sum](../../part-09/zagier-number/domb-type-sum.md)
+- [Domb-type sums](../../part-09/zagier-number/domb-type-sum.md)
 
 ## Sources
 

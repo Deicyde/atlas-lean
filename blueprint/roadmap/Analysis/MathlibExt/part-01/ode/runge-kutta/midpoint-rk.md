@@ -5,13 +5,14 @@ statement: formalized
 lean: MathlibExt.Analysis.ODE.RungeKutta.midpointRK
 ---
 
-# Midpoint RK
+# Midpoint tableau
 
-The midpoint tableau: `a = [[0, 0], [1 / 2, 0]]`, `b = [0, 1]`.
+**Midpoint tableau.** The explicit Runge–Kutta method with two stages, Butcher tableau
+entries $a_{21} = 1/2$ and $a_{11} = a_{12} = a_{22} = 0$, and weights $b_1 = 0$, $b_2 = 1$.
 
 ## Depends on
 
-- [Explicit RK](explicit-rk.md)
+- [Explicit Runge–Kutta method](explicit-rk.md)
 
 ## Sources
 

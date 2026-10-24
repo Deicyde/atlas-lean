@@ -6,15 +6,16 @@ statement: formalized
 lean: MetaMathlibExt.minimumRestrictedAdditiveBasisCard
 ---
 
-# Minimum Restricted Additive Basis Card
+# Minimum size of a restricted additive basis
 
-Minimum restricted additive-basis cardinality for `[0, s]`: the summand
-set `A : Finset ℕ` satisfies the restriction `2 * a ≤ s` for all `a ∈ A`;
-every `x ≤ s` equals `a + b` for some `a ∈ A`, `b ∈ A` (independent choices,
-so `a = b` allowed); `A.card = k` for `opt = some k`, minimal among all such
-witness sets; `opt = none` exactly when no such witness set exists. The
-restriction `2 * a ≤ s` applies for every `s`, odd or even, with no parity
-requirement and no sentinel value for absence.
+**Minimum size of a restricted additive basis.** Let $s$ be a natural number. A restricted
+additive basis of $\{0, 1, \dots, s\}$ is a finite set $A$ of natural numbers with $2a \le s$ for
+every $a \in A$ such that every natural number $x \le s$ can be written as $x = a + b$ with
+$a, b \in A$, where $a = b$ is allowed. The minimum restricted additive basis size $k^*(s)$ is
+the smallest cardinality of a restricted additive basis of $\{0, 1, \dots, s\}$; it is undefined
+when no restricted additive basis of $\{0, 1, \dots, s\}$ exists.
+
+The restriction $2a \le s$ is imposed for odd $s$ as well as for even $s$.
 
 ## Depends on
 

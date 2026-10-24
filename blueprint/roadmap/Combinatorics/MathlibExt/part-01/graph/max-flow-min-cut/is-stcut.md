@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Graph.MaxFlowMinCutWanted.IsSTCut
 ---
 
-# Is STCut
+# Source–sink cut
 
-An `s-t` cut is a vertex set `S` with `s ∈ S`, `t ∉ S`.
+**Source–sink cut.** For a finite set $V$ and vertices $s, t \in V$, an $s$-$t$ cut is a
+subset $S \subseteq V$ with $s \in S$ and $t \notin S$.
 
 ## Depends on
 

@@ -7,9 +7,10 @@ proof: formalized
 lean: Nat.exists_partition_partsLCM_eq_landauFunction
 ---
 
-# Exists partition parts LCM eq landau Function
+# The Landau function is attained
 
-Some partition attains the value of the Landau function.
+**The Landau function is attained.** For every natural number $n$, some partition of $n$
+has least common multiple of its parts equal to the Landau function at $n$.
 
 ## Depends on
 

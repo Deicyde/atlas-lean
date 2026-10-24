@@ -5,5 +5,5 @@ navigation: module
 
 # Vandermonde Type Convolution For SRestricted Weighted Compositions
 
-- [S Restricted Weighted Composition Count](s-restricted-weighted-composition-count.md)
-- [Vandermonde Type Convolution For SRestricted Weighted Compositions](vandermonde-type-convolution-for-srestri.md)
+- [Restricted weighted composition count](s-restricted-weighted-composition-count.md)
+- [Vandermonde convolution for restricted weighted compositions](vandermonde-type-convolution-for-srestri.md)

@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Analysis.EntireZerosOnesLinesWanted.IsComplexLine
 ---
 
-# Is Complex Line
+# Straight lines in the complex plane
 
-Straight line in the complex plane, [AMR-022-2024] Problem 2.24.
+**Straight lines in the complex plane.** A set $s \subseteq \mathbb{C}$ is a straight line if
+there are $a, v \in \mathbb{C}$ with $v \ne 0$ such that $s = \{a + tv : t \in \mathbb{R}\}$.
 
 ## Depends on
 
@@ -17,3 +18,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.EntireZerosOnesLinesWanted](../../../../../sources/v2/WantedExt.md)
+- Research Problems in Function Theory, Problem 2.24 (record AMR-022-2024).

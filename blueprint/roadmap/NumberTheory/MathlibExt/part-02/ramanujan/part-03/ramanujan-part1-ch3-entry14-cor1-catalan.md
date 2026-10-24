@@ -20,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Catalan Generating Function](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/catalan-generating-function-sqrt.md)
+- [Closed form of the Catalan generating function](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/catalan-generating-function-sqrt.md)
 
 ## Sources
 

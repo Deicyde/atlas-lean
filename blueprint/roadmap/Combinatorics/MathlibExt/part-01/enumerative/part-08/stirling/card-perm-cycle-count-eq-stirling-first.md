@@ -7,10 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.card_perm_cycleCount_eq_stirlingFirst
 ---
 
-# Card perm cycle Count eq stirling First
+# Stirling numbers of the first kind count permutations by cycles
 
-The unsigned Stirling number of the first kind counts permutations with the given number
-of cycles, where fixed points are included as one-cycles.
+**Stirling numbers of the first kind count permutations by cycles.** For all natural
+numbers $n$ and $k$, the number of permutations $\sigma$ of $\{0, \dots, n-1\}$ such that the
+number of cycles of $\sigma$ of length at least $2$ plus the number of fixed points of $\sigma$
+equals $k$ is the unsigned Stirling number of the first kind $c(n, k)$. In other words,
+$c(n, k)$ counts the permutations of an $n$-element set with exactly $k$ cycles, each fixed
+point counted as a cycle of length one.
 
 ## Depends on
 
@@ -18,8 +22,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cycle Quotient Count](cycle-quotient-count.md)
-- [Cycle Quotient Count eq](cycle-quotient-count-eq.md)
+- [Number of cycles of a permutation](cycle-quotient-count.md)
+- [Counting cycles via the cycle type](cycle-quotient-count-eq.md)
 
 ## Sources
 

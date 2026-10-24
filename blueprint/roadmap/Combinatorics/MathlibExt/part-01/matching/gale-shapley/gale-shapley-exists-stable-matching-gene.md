@@ -7,26 +7,30 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Matching.GaleShapley.gale_shapley_exists_stable_matching_general
 ---
 
-# Gale shapley exists stable matching general
+# Existence of stable perfect matchings
 
-Gale–Shapley stable marriage existence without `DecidableEq` instances on the two sides.
-`gale_shapley_exists_stable_matching` is the source-shaped form.
+**Existence of stable perfect matchings.** Let $M$ and $W$ be finite sets with the same
+number of elements. Suppose that each $m \in M$ has a strict total order of preference on $W$ and
+each $w \in W$ has a strict total order of preference on $M$. Then some perfect matching between
+$M$ and $W$ is stable for these preferences.
+
+This is the Gale–Shapley theorem, stated without decidability assumptions on $M$ and $W$.
 
 ## Depends on
 
-- [Is Stable](is-stable.md)
-- [MPrefs](mprefs.md)
-- [Perfect Matching](perfect-matching.md)
-- [WPrefs](wprefs.md)
+- [Stable perfect matching](is-stable.md)
+- [Men's preferences](mprefs.md)
+- [Perfect matching](perfect-matching.md)
+- [Women's preference profile](wprefs.md)
 
 ## Proof depends on
 
-- [Is Blocking Pair](is-blocking-pair.md)
-- [Strict Total Order](strict-total-order.md)
-- [Irrefl](irrefl.md)
-- [Lt](lt.md)
-- [Total](total.md)
-- [Trans](trans.md)
+- [Blocking pair](is-blocking-pair.md)
+- [Strict preference order](strict-total-order.md)
+- [Irreflexivity of a strict total order](irrefl.md)
+- [Relation of a strict total order](lt.md)
+- [Strict total orders are total on distinct elements](total.md)
+- [Transitivity of a strict total order](trans.md)
 
 ## Sources
 

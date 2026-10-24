@@ -7,14 +7,18 @@ proof: formalized
 lean: PeriodPair.poleMultiplicity_eq_zero_of_not_meromorphicAt
 ---
 
-# Pole Multiplicity eq zero of not meromorphic At
+# Pole multiplicity vanishes where the function is not meromorphic
 
-The multiplicity vanishes where `f` is not locally meromorphic (junk order `0`).
-This is an explicitly local statement: no global hypothesis on `f` is used.
+**Pole multiplicity vanishes where the function is not meromorphic.** Let
+$f \colon \mathbb{C} \to \mathbb{C}$ and $z \in \mathbb{C}$. If $f$ is not meromorphic at $z$, then
+the pole multiplicity of $f$ at $z$ is $0$.
+
+This holds because the order of $f$ at such a point is $0$ by convention; no global hypothesis on
+$f$ is used.
 
 ## Depends on
 
-- [Pole Multiplicity](pole-multiplicity.md)
+- [Pole multiplicity](pole-multiplicity.md)
 
 ## Sources
 

@@ -7,9 +7,11 @@ proof: formalized
 lean: Complex.analyticAt_digamma
 ---
 
-# Analytic At digamma
+# Analyticity of the digamma function
 
-`Complex.digamma` is analytic at any non-pole `w`.
+**Analyticity of the digamma function.** The digamma function $\psi = \Gamma'/\Gamma$, where
+$\Gamma$ is the complex Gamma function, is complex analytic at every $w \in \mathbb{C}$ that is
+not a nonpositive integer.
 
 ## Depends on
 
@@ -17,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Analytic At Gamma](analytic-at-gamma.md)
+- [Analyticity of the Gamma function](analytic-at-gamma.md)
 
 ## Sources
 

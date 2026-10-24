@@ -18,9 +18,9 @@ Small values: `T_1 = 0` and `T_2 = 2`.
 
 - [Motzkin Alternating Sum succ](motzkin-alternating-sum-succ.md)
 - [Motzkin Alternating Sum zero](motzkin-alternating-sum-zero.md)
-- [Motzkin Number](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
-- [Motzkin Number one](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number-one.md)
-- [Motzkin Number two](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number-two.md)
+- [Motzkin numbers as a Catalan-weighted binomial sum](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
+- [Value of the Motzkin number at 1](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number-one.md)
+- [Value of the Motzkin number at 2](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number-two.md)
 
 ## Sources
 

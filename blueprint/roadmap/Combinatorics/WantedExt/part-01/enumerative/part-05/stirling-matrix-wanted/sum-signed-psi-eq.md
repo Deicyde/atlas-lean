@@ -16,7 +16,7 @@ lean: MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_signed_psi_e
 
 - [Lambda](lambda.md)
 - [Psi](psi.md)
-- [Signed Stirling First](../../../../../MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
+- [Signed Stirling numbers of the first kind](../../../../../MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
 
 ## Sources
 

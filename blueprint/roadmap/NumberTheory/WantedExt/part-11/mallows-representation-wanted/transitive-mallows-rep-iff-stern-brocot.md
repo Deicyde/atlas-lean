@@ -13,7 +13,7 @@ over `{L, M, R}` occurs in it) iff its Stern–Brocot representation is (every f
 
 ## Depends on
 
-- [Is Factor](../../../../Combinatorics/MathlibExt/part-01/infinite-word/factor/is-factor.md)
+- [Lists occurring in an infinite word](../../../../Combinatorics/MathlibExt/part-01/infinite-word/factor/is-factor.md)
 - [Mallows Letter](mallows-letter.md)
 - [Stern Brocot Letter](stern-brocot-letter.md)
 - [Mallows Rep](mallows-rep.md)

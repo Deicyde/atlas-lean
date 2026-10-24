@@ -5,9 +5,9 @@ navigation: module
 
 # Basic
 
-- [Two term kernel identity](two-term-kernel-identity.md)
-- [Integrable On exp neg mul pow](integrable-on-exp-neg-mul-pow.md)
-- [Integral exp neg mul pow Ioi](integral-exp-neg-mul-pow-ioi.md)
-- [Outer sector sin abs arg pos](outer-sector-sin-abs-arg-pos.md)
-- [Outer sector distance](outer-sector-distance.md)
-- [Integral remainder bound](integral-remainder-bound.md)
+- [Two-term expansion of $1/(t + z)$](two-term-kernel-identity.md)
+- [Integrability of $e^{-t} t^n$ on $(0, \infty)$](integrable-on-exp-neg-mul-pow.md)
+- [The moments of $e^{-t}$ are factorials](integral-exp-neg-mul-pow-ioi.md)
+- [Positivity of $\sin |\arg z|$ in the outer sector](outer-sector-sin-abs-arg-pos.md)
+- [Lower bound for $|t + z|$ in the outer sector](outer-sector-distance.md)
+- [Outer-sector bound for the quadratic integral remainder](integral-remainder-bound.md)

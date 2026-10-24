@@ -15,7 +15,7 @@ side by a complex `tsum`; these are the requested analytic encodings.
 
 ## Depends on
 
-- [Q Pochhammer Inf Raw](../../../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
+- [Raw infinite q-Pochhammer product](../../../../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
 - [Sigma Mex Overpartition](sigma-mex-overpartition.md)
 
 ## Sources

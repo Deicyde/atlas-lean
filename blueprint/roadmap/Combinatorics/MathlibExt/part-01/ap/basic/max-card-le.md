@@ -7,17 +7,19 @@ proof: formalized
 lean: Set.IsAPOfLengthFree.maxCard_le
 ---
 
-# Max Card le
+# Trivial upper bound for the largest progression-free subset
 
-The extremal cardinality is at most the size of `{1, ..., N}`.
+**Trivial upper bound for the largest progression-free subset.** For all natural numbers $k$
+and $N$, the largest size $r_k(N)$ of a subset of $\{1, \dots, N\}$ free of nontrivial
+arithmetic progressions of length $k$ satisfies $r_k(N) \le N$.
 
 ## Depends on
 
-- [Max Card](max-card.md)
+- [Largest size of a progression-free subset of $\{1, \dots, N\}$](max-card.md)
 
 ## Proof depends on
 
-- [Is APOf Length Free](is-apof-length-free-2.md)
+- [Progression-free finite sets](is-apof-length-free-2.md)
 
 ## Sources
 

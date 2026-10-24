@@ -5,14 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.GraphNonAccumulationPointsCountableWanted.countable_diff_setOf_exists_seq_tendsto_and_tendsto_apply
 ---
 
-# Graph Non Accumulation Points Countable Wanted
+# Isolated points of a graph are countable
 
-For $E \subset \mathbb{R}^n$ and $f : E \to \mathbb{R}^n$, let
-\[
-F = \{x \in E : \text{there is } \{x_k\}_{k=1}^\infty \subset E \setminus \{x\} \text{ with } x_k
-\to x \text{ and } f(x_k) \to f(x)\}.
-\]
-Prove that $E \setminus F$ is at most countable.
+**Isolated points of a graph are countable.** Let $E \subseteq \mathbb{R}^n$, let
+$f : \mathbb{R}^n \to \mathbb{R}^n$, and let $F$ be the set of $x\in E$ for which there is a
+sequence $(x_k)$ in $E\setminus\{x\}$ with $x_k \to x$ and $f(x_k) \to f(x)$. Then $E \setminus F$
+is countable.
 
 ## Depends on
 

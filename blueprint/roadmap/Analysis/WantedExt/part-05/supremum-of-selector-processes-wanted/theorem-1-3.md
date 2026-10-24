@@ -6,28 +6,27 @@ statement: formalized
 lean: MathlibExt.Analysis.SupremumOfSelectorProcessesWanted.SupremumOfSelectorProcesses.theorem_1_3
 ---
 
-# Theorem 1 3
+# Park–Pham theorem on positive empirical processes
 
-Statement of Theorem 1.3:
+**Park–Pham theorem on positive empirical processes.** There is a real number $L > 0$ with the
+following property. Let $N > 0$, let $\mathbb{T}$ be a Polish space with its Borel
+$\sigma$-algebra and a probability measure $\nu$, and let $Y_1, \dots, Y_N$ be independent random
+variables on a measure space $(\Omega, P)$ with values in $\mathbb{T}$, each with law $\nu$. For
+$f : \mathbb{T} \to [0, \infty)$ let $Z_f = \frac{1}{N} \sum_{i=1}^{N} f(Y_i)$. Let
+$\mathcal{F}$ be a finite set of measurable functions from $\mathbb{T}$ to $[0, \infty)$ that are
+essentially bounded with respect to $\nu$, and write
+$E = \mathbb{E}\bigl[\sup_{f \in \mathcal{F}} Z_f\bigr]$, computed in $[0, \infty]$. If
+$0 < E < \infty$, then there is a finite collection $\mathcal{C}$ of pairs $(g, t)$, where
+$g : \mathbb{T} \to [0, \infty)$ is measurable and $t > 0$ is real, such that every $\omega$
+with $\sup_{f \in \mathcal{F}} Z_f(\omega) \ge L E$ satisfies $Z_g(\omega) \ge t$ for some
+$(g, t) \in \mathcal{C}$, and $\sum_{(g, t) \in \mathcal{C}} P(Z_g \ge t) \le 1/2$.
 
-There exists `L > 0` such that for any `N > 0`, i.i.d random variables `Y_1, …, Y_N` distributed
-according to a Borel probability measure `ν` on a Polish space `𝕋`, if `𝓕` is a finite set of
-non-negative functions in `L∞(𝕋)` and `0 < 𝔼[sup_{f ∈ 𝓕} Z Y f] < ∞` then there exists a finite
-collection `𝓒` of pairs `(g, t)` where `g : 𝕋 → ℝ≥0`, `t > 0` such that
-
-`{sup_{f ∈ 𝓕} Z N Y f ≥ L * 𝔼[sup_{f ∈ 𝓕} Z N Y f] } ⊆ ⋃ (g,t) ∈ 𝓒, {t ≤ Z N Y g}`
-
-and
-
-`∑ (g,t) ∈ 𝓒, P(t ≤ Z N Y g) ≤ 2⁻¹`.
-
-Note: The requirement that the collection `𝓒` be finite is not explicitly stated in the paper.
-However, `𝓒` must at least be assumed to be countable in order for the sum to make sense,
-and the collections `𝓒` produced by the proof are indeed finite.
+The paper does not state explicitly that $\mathcal{C}$ is finite. It must at least be countable
+for the sum to make sense, and the collections produced by the proof are finite.
 
 ## Depends on
 
-- [Z](z.md)
+- [Empirical averages](z.md)
 
 ## Sources
 

@@ -7,13 +7,14 @@ proof: formalized
 lean: PeriodPair.IsHomothetic.symm
 ---
 
-# Symm
+# Homothety of period pairs is symmetric
 
-Homothety of period pairs is symmetric.
+**Homothety of period pairs is symmetric.** If a period pair $L$ is homothetic to a period
+pair $L'$, then $L'$ is homothetic to $L$.
 
 ## Depends on
 
-- [Is Homothetic](is-homothetic.md)
+- [Homothetic period pairs](is-homothetic.md)
 
 ## Sources
 

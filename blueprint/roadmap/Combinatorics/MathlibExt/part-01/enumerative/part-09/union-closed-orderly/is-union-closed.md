@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.IsUnionClosed
 ---
 
-# Is Union Closed
+# Union-closed family
 
-A family is union-closed if it contains the union of any two members.
+**Union-closed family.** A family $U$ of subsets of $\{0, \dots, n-1\}$ is union-closed if
+$A \cup B \in U$ for all $A, B \in U$.
 
 ## Depends on
 

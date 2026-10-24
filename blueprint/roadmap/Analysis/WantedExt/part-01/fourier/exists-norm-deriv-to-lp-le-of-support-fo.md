@@ -5,14 +5,15 @@ statement: formalized
 lean: MathlibExt.Analysis.Fourier.BernsteinInequalityBandLimitedWanted.exists_norm_deriv_toLp_le_of_support_fourier_subset_ball
 ---
 
-# Bernstein Inequality Band Limited Wanted
+# Bernstein inequality for band-limited Schwartz functions
 
-Prove that there exists $C_0 > 0$ such that the following holds for all $1 \le p \le \infty$ and
-all $f \in \mathcal{S}(\mathbb{R})$ satisfying $\mathrm{supp}(\mathcal{F}f) \subset B(0, 1)$:
-\[
-\|f'\|_{L^p(\mathbb{R})} \le C_0 \|f\|_{L^p(\mathbb{R})},
-\]
-where $\mathcal{F}$ denotes the Fourier transform.
+**Bernstein inequality for band-limited Schwartz functions.** For a Schwartz function
+$f : \mathbb{R} \to \mathbb{C}$ write $\hat f(\xi) = \int_{\mathbb{R}} f(x) e^{-2\pi i x\xi}\,dx$
+for its Fourier transform. There is a constant $C_0 > 0$ such that for every $p \in [1, \infty]$
+and every Schwartz function $f : \mathbb{R} \to \mathbb{C}$ with $\hat f(\xi) = 0$ whenever
+$|\xi| \ge 1$,
+
+$$\|f'\|_{L^p(\mathbb{R})} \le C_0 \|f\|_{L^p(\mathbb{R})}.$$
 
 ## Depends on
 

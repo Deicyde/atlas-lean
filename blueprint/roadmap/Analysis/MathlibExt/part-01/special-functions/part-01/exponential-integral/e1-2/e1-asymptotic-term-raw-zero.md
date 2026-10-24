@@ -7,13 +7,17 @@ proof: formalized
 lean: Complex.e1AsymptoticTermRaw_zero
 ---
 
-# E1 Asymptotic Term Raw zero
+# Totalized $E_1$ asymptotic terms vanish at zero
 
-Each raw asymptotic term vanishes at `0` by junk-value division.
+**Totalized $E_1$ asymptotic terms vanish at zero.** For every $n \in \mathbb{N}$, the
+totalized $n$-th term $\frac{e^{-z}}{z} \cdot \frac{(-1)^n \, n!}{z^n}$ of the asymptotic
+expansion of $E_1$, with division by zero read as $0$, equals $0$ at $z = 0$.
+
+This value comes from the convention that division by zero gives $0$, not from analysis.
 
 ## Depends on
 
-- [E1 Asymptotic Term Raw](e1-asymptotic-term-raw.md)
+- [Totalized asymptotic term of $E_1$](e1-asymptotic-term-raw.md)
 
 ## Sources
 

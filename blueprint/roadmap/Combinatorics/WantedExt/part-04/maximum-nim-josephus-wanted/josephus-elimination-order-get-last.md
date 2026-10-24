@@ -15,7 +15,7 @@ relaxed to `k ≥ 1`; there is no other deviation.
 
 ## Depends on
 
-- [Josephus](../../../MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
+- [Josephus survivor function](../../../MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 - [Josephus Elimination Order](josephus-elimination-order.md)
 
 ## Proof depends on

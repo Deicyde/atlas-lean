@@ -7,13 +7,14 @@ proof: formalized
 lean: MathlibExt.Analysis.SendovRadiusConstantWanted.IsAdmissibleRadius.mono
 ---
 
-# Mono
+# Enlarging an admissible radius
 
-Increasing an admissible radius preserves admissibility.
+**Enlarging an admissible radius.** If $R$ is an admissible radius and $R \le S$, then $S$ is
+an admissible radius.
 
 ## Depends on
 
-- [Is Admissible Radius](is-admissible-radius.md)
+- [Admissible radius in Sendov's problem](is-admissible-radius.md)
 
 ## Sources
 

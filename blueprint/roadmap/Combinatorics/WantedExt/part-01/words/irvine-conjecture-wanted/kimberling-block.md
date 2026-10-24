@@ -16,7 +16,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Kimberling Morphism](kimberling-morphism.md)
-- [Morph Iterate](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
+- [Iterates of a letter map](../../../../MathlibExt/part-01/infinite-word/pure-morphic-word/morph-iterate.md)
 
 ## Sources
 

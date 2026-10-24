@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.XSqSinInvSqNonintegrableDerivWanted.differentiable_and_not_integrableOn_deriv_sq_mul_sin_inv_sq
 ---
 
-# XSq Sin Inv Sq Nonintegrable Deriv Wanted
+# The derivative of $x^2 \sin(1/x^2)$ exists everywhere but is not integrable
 
-Consider the function $F(x)=x^2\sin(1/x^2)$, $x\ne 0$, with $F(0)=0$. Show that $F'(x)$ exists
-for every $x$, but $F'$ is not integrable on $[-1,1]$.
+**The derivative of $x^2 \sin(1/x^2)$ exists everywhere but is not integrable.** Let
+$F : \mathbb{R} \to \mathbb{R}$ be given by $F(x) = x^2 \sin(1/x^2)$ for $x \ne 0$ and $F(0) = 0$.
+Then $F$ is differentiable at every real $x$, but its derivative $F'$ is not Lebesgue integrable
+on $[-1,1]$.
 
 ## Depends on
 

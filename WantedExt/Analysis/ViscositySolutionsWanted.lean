@@ -67,7 +67,9 @@ local notation "Eᴺ" => EuclideanSpace E (Fin N)
 
 section Definitions
 
-/-- Given `x : Eᴺ` we define `rᵢⱼ = ‖xᵢ - xⱼ‖`. -/
+/-- **Mutual distances.** For a configuration $x = (x_1, \dots, x_N) \in E^N$ of $N$ points in a
+finite-dimensional real inner product space $E$ and indices $i, j$, the mutual distance of the
+$i$-th and $j$-th points is $r_{ij}(x) = \lVert x_i - x_j \rVert$. -/
 def r (x : Eᴺ) (i j : Fin N) : ℝ := dist (x i) (x j)
 
 /-- Given masses `m : ℝᴺ`, `x : Eᴺ` we define the norm of `x` with respect to the mass scalar
@@ -92,7 +94,9 @@ def weightedGrad (m : ℝᴺ) (f : Eᴺ → ℝ) (x : Eᴺ) : Eᴺ where
 noncomputable
 def U (m : ℝᴺ) (x : Eᴺ) : ℝ := ∑ j, ∑ i < j, m i * m j * (r x i j)⁻¹
 
-/-- We say that a configuration `x : Eᴺ` is without collisions if `rᵢⱼ ≠ 0` for each `i ≠ j`. -/
+/-- **Configurations without collisions.** A configuration $x = (x_1, \dots, x_N) \in E^N$ of
+$N$ points in a finite-dimensional real inner product space $E$ is without collisions if
+$r_{ij}(x) = \lVert x_i - x_j \rVert \neq 0$ for all $i \neq j$. -/
 def WithoutCollisions (x : Eᴺ) : Prop := ∀ i j, i ≠ j → r x i j ≠ 0
 
 /-- Given masses `m : ℝᴺ`, we say that `x : ℝ → Eᴺ` is a solution to the N-body problem if
@@ -105,16 +109,16 @@ structure IsNBodySolution (m : ℝᴺ) (x : ℝ → Eᴺ) where
 end Definitions
 
 /--
-Statement of Theorem 1.1:
+**Maderna–Venturelli theorem on hyperbolic motions.** Let $E$ be a finite-dimensional real
+inner product space of dimension at least $2$, let $N$ be a natural number, and let
+$m = (m_1, \dots, m_N)$ be positive masses. Let $x_0 \in E^N$, let $a \in E^N$ be a configuration
+without collisions with $\lVert a \rVert_m = 1$, where
+$\lVert a \rVert_m = \bigl(\sum_i m_i \lVert a_i \rVert^2\bigr)^{1/2}$, and let $h > 0$. Then
+there are a solution $x : \mathbb{R} \to E^N$ of the $N$-body problem with masses $m$ and a
+function $\varepsilon : \mathbb{R} \to E^N$ with $\lVert \varepsilon(t) \rVert / t \to 0$ as
+$t \to \infty$ such that $x(0) = x_0$, the configuration $x(t)$ is without collisions for every
+$t > 0$, and $x(t) = \sqrt{2h}\, t\, a + \varepsilon(t)$ for every $t \ge 0$.
 
-For any `N`, finite dimensional inner product space `E` of dimension at least `2`,
-(positive) masses `m : ℝᴺ`, any initial condition `x₀ : Eᴺ`, any configuration `a : Eᴺ`
-without collisions such that `‖a‖ₘ = 1`, and any (positive) energy constant `h`, there exists
-(hyperbolic) motions `x : ℝ → Eᴺ` such that they form a solution to the N-body problem with
-masses `m`, satisfy the initial condition `x(0) = x₀`, are without collisions for all `t > 0`,
-and satisfy
-
-`x(t) = √(2h)ta + o(t)` as `t → ∞`.
 Source: E. Maderna and A. Venturelli, `Viscosity solutions and hyperbolic motions: a new PDE method for the N-body problem`, Annals of Math, 192 (2) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2020-192-2-ViscositySolutions.lean Via leanprover/lean-eval@38361be, problem `annals_viscosity_solutions`.
 -/
 public theorem_wanted theorem_1_1 (hE : 2 ≤ Module.finrank ℝ E) (m : ℝᴺ) (hm : ∀ i, 0 < m i)

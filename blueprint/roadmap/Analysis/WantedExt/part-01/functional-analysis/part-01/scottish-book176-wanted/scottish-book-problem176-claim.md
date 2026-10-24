@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.ScottishBook176Wanted.ScottishBookProblem176Claim
 ---
 
-# Scottish Book Problem176 Claim
+# Scottish Book Problem 176 (Eidelheit's claim)
 
-Eidelheit's Problem 176 from the Scottish Book, in its original form:
-in a Banach ring (a normed, complete linear ring with `‖x * y‖ ≤ ‖x‖ * ‖y‖`)
-containing a unit, every element possessing an inverse is a limit of
-polynomials in itself, with scalar coefficients depending on the sequence
-index.
+**Scottish Book Problem 176 (Eidelheit's claim).** The claim that in every complete normed
+ring $A$ (so $\|xy\| \le \|x\| \, \|y\|$, and $A$ has a unit) that is a normed algebra over
+$\mathbb{R}$, the inverse of every invertible element is a limit of real polynomials in that
+element: whenever $a, b \in A$ satisfy $ab = 1$ and $ba = 1$, there is a sequence
+$(p_n)_{n \ge 0}$ of real polynomials with $p_n(a) \to b$ as $n \to \infty$.
 
 ## Depends on
 

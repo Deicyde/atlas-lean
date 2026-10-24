@@ -5,11 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.tsum_odd_mul_catalan_mul_harmonic_special
 ---
 
-# Tsum odd mul catalan mul harmonic special
+# Special values of the odd-weighted Catalan–harmonic series
 
-Theorem 6 (special values): `Σ_{n≥0} ((2n + 1)/(n + 1)) C_n H_{n+1}/2^{2n} = 2π²/3`,
-`Σ_{n≥0} ((2n + 1)/((n + 2)(n + 1))) C_n H_{n+2}/2^{2n} = 2π²/3 + 4 ln 2 - 8`, and
-`Σ_{n≥0} O_{n+2}/((n + 1)(2n + 3)) = 4 - 2 ln 2 - π²/6`.
+**Special values of the odd-weighted Catalan–harmonic series.** Let $C_n$ be the $n$-th
+Catalan number, $H_n = \sum_{k=1}^{n} \frac1k$ the $n$-th harmonic number and
+$O_n = \sum_{k=1}^{n} \frac{1}{2k-1}$ the $n$-th odd harmonic number. Then
+
+$$
+\sum_{n \ge 0} \frac{2n+1}{n+1} \cdot \frac{C_n H_{n+1}}{4^n} = \frac{2\pi^2}{3}, \qquad
+\sum_{n \ge 0} \frac{2n+1}{(n+2)(n+1)} \cdot \frac{C_n H_{n+2}}{4^n} =
+\frac{2\pi^2}{3} + 4 \ln 2 - 8,
+$$
+
+and
+
+$$
+\sum_{n \ge 0} \frac{O_{n+2}}{(n+1)(2n+3)} = 4 - 2 \ln 2 - \frac{\pi^2}{6}.
+$$
 
 ## Depends on
 

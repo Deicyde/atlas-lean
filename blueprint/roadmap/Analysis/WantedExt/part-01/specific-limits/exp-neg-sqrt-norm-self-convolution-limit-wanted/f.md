@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Analysis.SpecificLimits.ExpNegSqrtNormSelfConvolutionLimitWanted.f
 ---
 
-# F
+# The function $e^{-\sqrt{\|x\|}}$ on the plane
 
-`f x = exp (-√‖x‖)` on the plane.
+**The function $e^{-\sqrt{\|x\|}}$ on the plane.** Let $f : \mathbb{R}^2 \to \mathbb{R}$ be
+$f(x) = e^{-\sqrt{\|x\|}}$, where $\|x\|$ is the Euclidean norm of $x$.
 
 ## Depends on
 

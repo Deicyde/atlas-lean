@@ -5,13 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.lipSubring_isDomain
 ---
 
-# Lemma 4
+# Locally integer polynomial functions on an infinite set form a domain
 
-**Lemma 4** (domain). For infinite `U ⊆ ℤ`, `LIP(U)` is a domain.
+**Locally integer polynomial functions on an infinite set form a domain.** For every infinite
+$U \subseteq \mathbb{Z}$, the ring $\mathrm{LIP}(U)$ of locally integer polynomial functions
+$U \to \mathbb{Z}$ is an integral domain.
 
 ## Depends on
 
-- [Lip Subring](lip-subring.md)
+- [The ring $\mathrm{LIP}(U)$ of locally integer polynomial functions](lip-subring.md)
 
 ## Sources
 

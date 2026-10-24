@@ -7,9 +7,10 @@ proof: formalized
 lean: Real.summable_one_div_add_nat_succ_sq
 ---
 
-# Summable one div add nat succ sq
+# Summability of the Basel series
 
-Shifted zeta-two summability: `∑ 1/(j+1)²` converges.
+**Summability of the Basel series.** The series of real numbers
+$\sum_{j \ge 0} \frac{1}{(j+1)^2}$ is summable.
 
 ## Depends on
 

@@ -6,20 +6,17 @@ statement: formalized
 lean: MetaMathlibExt.rStirlingFirst
 ---
 
-# R Stirling First
+# Unsigned r-Stirling numbers of the first kind
 
-Unsigned r-Stirling number of the first kind, after A. Z. Broder,
-"The r-Stirling numbers", Stanford Computer Science Report STAN-CS-82-949
-(December 1982), PDF page 12 / printed page 9, Equation (24);
-journal version: Discrete Mathematics 49 (1984), 241-259,
-DOI 10.1016/0012-365X(84)90161-4.
+**Unsigned r-Stirling numbers of the first kind.** For natural numbers $n$, $m$ and $r$, the
+unsigned $r$-Stirling number of the first kind $[n, m]_r$ is the coefficient of $x^m$ in the
+polynomial with natural-number coefficients
 
-Equation (24) characterizes `[n,m]_r` by
-`∑ k, [n,k]_r z^k = z^r (z+r)(z+r+1)...(z+n-1)` for `n ≥ r > 0`.
-The definition below is the coefficient of `X^m` in
-`X^r * ∏ k in Finset.Ico r n, (X + C k)` over `Polynomial ℕ`,
-which directly implements Equation (24), including zero outside the
-triangular support.
+$$x^r \prod_{r \le k < n} (x + k).$$
+
+For $n \ge r$ this is Broder's characterization
+$\sum_m [n, m]_r \, x^m = x^r (x+r)(x+r+1) \cdots (x+n-1)$. For $n < r$ the product is empty, so
+the polynomial is $x^r$.
 
 ## Depends on
 
@@ -28,3 +25,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.RStirlingFirstAlternatingExpansion](../../../../../../../sources/v2/MathlibExt.md)
+- A. Z. Broder, "The r-Stirling numbers", Stanford Computer Science Report STAN-CS-82-949 (December 1982), PDF page 12 / printed page 9, Equation (24); journal version: Discrete Mathematics 49 (1984), 241-259, DOI 10.1016/0012-365X(84)90161-4.

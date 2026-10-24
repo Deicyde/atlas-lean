@@ -5,15 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.SatisfiesTaylorsLawAsymptotically
 ---
 
-# Taylors Law
+# Taylor's law, asymptotic form
 
-Taylor's variance-to-mean power law, asymptotic form, for integer sequences.
-
-The sequence is indexed from `1` (the value at `0` is ignored). Admissibility
-uses the canonical `IsTaylorAdmissibleSequence` predicate. Mean and variance reuse the canonical
-`initialSegmentMean` / `initialSegmentSampleVariance` APIs. The law holds iff
-`variance(a, n) / mean(a, n) ^ b` tends to a constant `c > 0` as `n → ∞`,
-with `b` any finite real.
+**Taylor's law, asymptotic form.** A sequence $a : \mathbb{N} \to \mathbb{N}$, indexed from
+$1$ (its value at $0$ is ignored), satisfies Taylor's law asymptotically when it is admissible
+for Taylor's law and, writing $m(a, n)$ and $v(a, n)$ for its initial-segment mean and
+initial-segment sample variance, there are real numbers $c > 0$ and $b$ such that
+$v(a, n) / m(a, n)^b \to c$ as $n \to \infty$.
 
 ## Depends on
 

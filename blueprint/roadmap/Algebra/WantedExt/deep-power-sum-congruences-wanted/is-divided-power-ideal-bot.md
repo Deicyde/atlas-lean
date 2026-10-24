@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.isDividedPowerIdeal_bot
 ---
 
-# Is Divided Power Ideal bot
+# The zero ideal is a divided-power ideal
 
-The zero ideal is a divided-power ideal.
+**The zero ideal is a divided-power ideal.** In every commutative ring, the zero ideal is a
+divided-power ideal.
 
 ## Depends on
 
-- [Is Divided Power Ideal](is-divided-power-ideal.md)
+- [Divided-power ideal](is-divided-power-ideal.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ lean: MetaMathlibExt.iccanobiF_fixed_points
 
 ## Depends on
 
-- [Fib Inf](../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
+- [Infinite Fibonacci word](../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
 - [Relative Position](relative-position.md)
 
 ## Sources

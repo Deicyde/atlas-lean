@@ -5,5 +5,5 @@ navigation: module
 
 # Sarkozy
 
-- [Initial Segment Count](initial-segment-count.md)
-- [Furstenberg sarkozy](furstenberg-sarkozy.md)
+- [Initial segment count](initial-segment-count.md)
+- [Furstenberg–Sárközy theorem](furstenberg-sarkozy.md)

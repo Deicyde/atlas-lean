@@ -11,7 +11,7 @@ Lemma 9: `∑_{t=0}^{k} a_n^t / t! < a_n^{k+1} / (k+1)!` for `n ≥ 5` and `0 �
 
 ## Depends on
 
-- [Lambert Map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/lambert-map.md)
+- [Lambert map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/lambert-map.md)
 
 ## Sources
 

@@ -4,11 +4,11 @@ navigation: module
 
 # Rademacher Enflo Type
 
-- [Rademacher Distribution](rademacher-distribution.md)
-- [Rademacher Product Distribution](rademacher-product-distribution.md)
-- [D](d.md)
-- [Is Rademacher Type](is-rademacher-type.md)
-- [TR](tr.md)
-- [Is Enflo Type](is-enflo-type.md)
-- [TE](te.md)
-- [Theorem 1 1](theorem-1-1.md)
+- [Rademacher distribution](rademacher-distribution.md)
+- [Product Rademacher distribution](rademacher-product-distribution.md)
+- [Discrete partial derivative on the Rademacher cube](d.md)
+- [Rademacher type](is-rademacher-type.md)
+- [Rademacher type constant](tr.md)
+- [Enflo type](is-enflo-type.md)
+- [Enflo type constant](te.md)
+- [Comparison of Rademacher and Enflo type constants](theorem-1-1.md)

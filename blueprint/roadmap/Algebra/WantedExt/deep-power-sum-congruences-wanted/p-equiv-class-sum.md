@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [P Equiv Class](p-equiv-class.md)
+- [The $p$-equivalence class of a multiset of parts](p-equiv-class.md)
 
 ## Sources
 

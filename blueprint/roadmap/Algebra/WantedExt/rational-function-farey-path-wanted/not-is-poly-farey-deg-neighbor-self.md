@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.not_isPolyFareyDegNeighbor_self
 ---
 
-# Not is Poly Farey Deg Neighbor self
+# No fraction is its own degree neighbour
 
-No fraction is a neighbour of itself.
+**No fraction is its own degree neighbour.** Let $F$ be a field and let $n \in \mathbb N$. For
+every pair $(u, v)$ of polynomials over $F$, the fraction $u/v$ is not a $(\deg v)$-neighbour of
+itself in the Farey series $\mathcal F_n$ of order $n$ over $F$.
 
 ## Depends on
 
-- [Is Poly Farey Deg Neighbor](is-poly-farey-deg-neighbor.md)
+- [Degree neighbours in the polynomial Farey series](is-poly-farey-deg-neighbor.md)
 
 ## Proof depends on
 
-- [Poly Farey Series](poly-farey-series.md)
-- [Poly Frac](poly-frac.md)
+- [Farey series over a field](poly-farey-series.md)
+- [The fraction of a pair of polynomials](poly-frac.md)
 
 ## Sources
 

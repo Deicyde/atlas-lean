@@ -13,7 +13,7 @@ Proposition 34: `p_{ℳ₁}(n) = Θ(n)` and `p_{ℳ₂}(n) = Θ(n)`.
 
 - [Meta Automatic One](meta-automatic-one.md)
 - [Meta Automatic Two](meta-automatic-two.md)
-- [Word Factor Complexity](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
+- [Factor complexity of an infinite word](../../../../MathlibExt/part-01/infinite-word/word-factor-complexity/word-factor-complexity.md)
 
 ## Sources
 

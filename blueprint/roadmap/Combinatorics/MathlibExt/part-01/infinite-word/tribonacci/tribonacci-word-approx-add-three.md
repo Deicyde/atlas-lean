@@ -7,14 +7,15 @@ proof: formalized
 lean: InfiniteWord.tribonacciWordApprox_add_three
 ---
 
-# Tribonacci Word Approx add three
+# Recursion for the finite Tribonacci words
 
-The defining recursion for finite Tribonacci-word approximants.
+**Recursion for the finite Tribonacci words.** For every $n \ge 0$, the finite Tribonacci
+word $W(n + 3)$ is the concatenation $W(n + 2)\,W(n + 1)\,W(n)$.
 
 ## Depends on
 
-- [Tribonacci Letter](tribonacci-letter.md)
-- [Tribonacci Word Approx](tribonacci-word-approx.md)
+- [The Tribonacci alphabet](tribonacci-letter.md)
+- [Finite Tribonacci words](tribonacci-word-approx.md)
 
 ## Sources
 

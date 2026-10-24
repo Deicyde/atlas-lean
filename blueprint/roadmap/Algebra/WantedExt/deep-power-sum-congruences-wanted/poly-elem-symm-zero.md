@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.polyElemSymm_zero
 ---
 
-# Poly Elem Symm zero
+# The zeroth elementary symmetric function of a monic polynomial
 
-`e_0(P) = 1` for monic `P`.
+**The zeroth elementary symmetric function of a monic polynomial.** For every monic
+polynomial $P$ over a commutative ring, $e_0(P) = 1$.
 
 ## Depends on
 
-- [Poly Elem Symm](poly-elem-symm.md)
+- [Elementary symmetric functions of a polynomial](poly-elem-symm.md)
 
 ## Sources
 

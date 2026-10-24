@@ -6,9 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.IsPositiveSequence
 ---
 
-# Is Positive Sequence
+# Positive sequence
 
-The source-domain condition on `f`: positive indices have positive values.
+**Positive sequence.** A sequence $f \colon \mathbb{N} \to \mathbb{N}$ is positive when
+$f(i) > 0$ for every $i > 0$; the value $f(0)$ is unrestricted.
+
+This is the condition on $f$ under which the source defines generalized binomial coefficients.
 
 ## Depends on
 

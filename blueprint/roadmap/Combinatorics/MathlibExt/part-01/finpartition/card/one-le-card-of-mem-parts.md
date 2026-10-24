@@ -6,9 +6,10 @@ proof: formalized
 lean: Finpartition.one_le_card_of_mem_parts
 ---
 
-# One le card of mem parts
+# Blocks are nonempty
 
-Every block of a finite-set partition has cardinality at least one.
+**Blocks are nonempty.** Every block $B$ of a partition of a finite set $s$ satisfies
+$|B| \ge 1$.
 
 ## Depends on
 

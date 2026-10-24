@@ -5,13 +5,15 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.ScottishBook88Wanted.ScottishBookProblem88Claim
 ---
 
-# Scottish Book Problem88 Claim
+# Scottish Book Problem 88 (Mazur)
 
-Mazur's Problem 88 from the Scottish Book, in the form: if for every
-bounded sequence `x` the inner series `∑ n, a (m + n) * x n` converge and
-the outer series `∑ m, |∑ n, a (m + n) * x n|` converges, then
-`∑ n, n * |a n|` converges. The inner series is stated via convergence of
-partial sums, not absolute convergence, as in Mazur's original question.
+**Scottish Book Problem 88 (Mazur).** The claim that every real sequence $(a_n)_{n \ge 0}$
+with the following property satisfies $\sum_n n |a_n| < \infty$: for every real sequence
+$(x_n)_{n \ge 0}$ with $|x_n| \le 1$ for all $n$, each series $\sum_n a_{m+n} x_n$ with $m \ge 0$
+converges, as the limit of its partial sums, to some $L_m$, and $\sum_m |L_m| < \infty$.
+
+The inner series is required to converge as a limit of partial sums, not absolutely, as in
+Mazur's original question.
 
 ## Depends on
 

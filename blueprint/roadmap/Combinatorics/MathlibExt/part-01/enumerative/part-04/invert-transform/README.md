@@ -5,5 +5,5 @@ navigation: module
 
 # Invert Transform
 
-- [Invert Transform](invert-transform.md)
-- [Invert Transform spec](invert-transform-spec.md)
+- [The INVERT transform of an integer sequence](invert-transform.md)
+- [Generating function of the INVERT transform](invert-transform-spec.md)

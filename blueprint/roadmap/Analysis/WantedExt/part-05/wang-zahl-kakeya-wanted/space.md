@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Analysis.WangZahlKakeyaWanted.Analysis.WangZahlKakeya.Space
 ---
 
-# Space
+# Three-dimensional Euclidean space
 
-Three-dimensional Euclidean space.
+**Three-dimensional Euclidean space.** The space $\mathbb{R}^3$ with the Euclidean inner
+product.
 
 ## Depends on
 

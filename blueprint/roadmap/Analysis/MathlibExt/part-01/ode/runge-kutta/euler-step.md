@@ -6,21 +6,24 @@ proof: formalized
 lean: MathlibExt.Analysis.ODE.RungeKutta.euler_step
 ---
 
-# Euler step
+# The Euler tableau gives the explicit Euler step
 
-The one-stage method is the explicit Euler step.
+**The Euler tableau gives the explicit Euler step.** Let $E$ be a real normed space and let
+$f$ assign to each time $t \in \mathbb{R}$ and state $y \in E$ a vector $f(t, y) \in E$. For all
+$t, h \in \mathbb{R}$ and $y \in E$, one Runge–Kutta step of size $h$ from the state $y$ at time
+$t$ with the Euler tableau equals $y + h f(t, y)$.
 
 ## Depends on
 
-- [Euler RK](euler-rk.md)
-- [Rk Step](rk-step.md)
+- [Euler tableau](euler-rk.md)
+- [One Runge–Kutta step](rk-step.md)
 
 ## Proof depends on
 
-- [Explicit RK](explicit-rk.md)
-- [C](c.md)
-- [Stage](stage.md)
-- [Stage Row](stage-row.md)
+- [Explicit Runge–Kutta method](explicit-rk.md)
+- [Nodes of a Runge–Kutta method](c.md)
+- [Runge–Kutta stages](stage.md)
+- [Stages computed row by row](stage-row.md)
 
 ## Sources
 

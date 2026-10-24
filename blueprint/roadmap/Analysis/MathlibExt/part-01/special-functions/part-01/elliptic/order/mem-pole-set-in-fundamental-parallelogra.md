@@ -7,15 +7,18 @@ proof: formalized
 lean: PeriodPair.mem_poleSetInFundamentalParallelogram_iff
 ---
 
-# Mem pole Set In Fundamental Parallelogram iff
+# Membership in the pole set of a fundamental parallelogram
 
-Membership in the pole set unfolds to the conjunction of its defining data.
+**Membership in the pole set of a fundamental parallelogram.** Let $L$ be a period pair, let
+$f \colon \mathbb{C} \to \mathbb{C}$ be any function and let $\alpha, z \in \mathbb{C}$. Then $z$
+lies in the pole set of $f$ in the fundamental parallelogram of $L$ with vertex $\alpha$ if and
+only if $z$ lies in that parallelogram and the pole multiplicity of $f$ at $z$ is nonzero.
 
 ## Depends on
 
-- [Fundamental Parallelogram](../fundamental-parallelogram/fundamental-parallelogram.md)
-- [Pole Multiplicity](pole-multiplicity.md)
-- [Pole Set In Fundamental Parallelogram](pole-set-in-fundamental-parallelogram.md)
+- [Fundamental parallelogram](../fundamental-parallelogram/fundamental-parallelogram.md)
+- [Pole multiplicity](pole-multiplicity.md)
+- [Poles in a fundamental parallelogram](pole-set-in-fundamental-parallelogram.md)
 
 ## Sources
 

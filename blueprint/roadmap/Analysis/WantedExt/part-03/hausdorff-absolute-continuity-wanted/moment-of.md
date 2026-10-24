@@ -16,8 +16,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Cube](cube.md)
-- [Monomial](monomial.md)
+- [Closed unit cube](cube.md)
+- [Multivariate monomial](monomial.md)
 
 ## Sources
 

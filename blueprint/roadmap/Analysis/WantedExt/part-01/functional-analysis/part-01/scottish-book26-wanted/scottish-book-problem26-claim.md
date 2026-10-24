@@ -5,12 +5,17 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.ScottishBook26Wanted.ScottishBookProblem26Claim
 ---
 
-# Scottish Book Problem26 Claim
+# Scottish Book Problem 26 (Mazur and Orlicz's claim)
 
-Mazur and Orlicz's Problem 26 from the Scottish Book: let `E` be a space
-of type `{F_o}`, and let `F n` be a sequence of linear functionals on `E`
-converging to zero uniformly on every bounded set `R` in `E`. Does the
-sequence then converge to zero uniformly in some neighbourhood of zero?
+**Scottish Book Problem 26 (Mazur and Orlicz's claim).** The claim that for every real vector
+space $E$ with a topology that is of type $\{F_o\}$ and every sequence $(F_n)_{n \ge 0}$ of
+linear functionals $E \to \mathbb{R}$, if $F_n \to 0$ uniformly on every bounded set
+$R \subseteq E$, then there is an open set $U \subseteq E$ containing $0$ on which
+$F_n \to 0$ uniformly.
+
+Here $F_n \to 0$ uniformly on a set $S$ means that for every $\varepsilon > 0$ there is $N$
+with $|F_n(x)| < \varepsilon$ for all $n \ge N$ and all $x \in S$. The $F_n$ are only assumed
+linear, not continuous.
 
 ## Depends on
 
@@ -18,8 +23,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Bounded Set](is-bounded-set.md)
-- [Is Type Fo](is-type-fo.md)
+- [Bounded sets in Scottish Book Problem 26](is-bounded-set.md)
+- [Spaces of type $\{F_o\}$](is-type-fo.md)
 
 ## Sources
 

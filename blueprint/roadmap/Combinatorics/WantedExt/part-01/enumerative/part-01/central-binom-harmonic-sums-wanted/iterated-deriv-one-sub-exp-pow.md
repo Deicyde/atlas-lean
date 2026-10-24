@@ -14,7 +14,7 @@ Lemma 1: for natural `k`, `r`, `v`,
 
 ## Depends on
 
-- [R Stirling Second](../../../../../MathlibExt/part-01/enumerative/part-07/rstirling-second/r-stirling-second.md)
+- [r-Stirling numbers of the second kind](../../../../../MathlibExt/part-01/enumerative/part-07/rstirling-second/r-stirling-second.md)
 
 ## Sources
 

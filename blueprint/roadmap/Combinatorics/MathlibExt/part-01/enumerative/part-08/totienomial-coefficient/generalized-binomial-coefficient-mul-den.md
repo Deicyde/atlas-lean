@@ -7,20 +7,24 @@ proof: formalized
 lean: MetaMathlibExt.generalizedBinomialCoefficient_mul_denominator
 ---
 
-# Generalized Binomial Coefficient mul denominator
+# Defining equation of the generalized binomial coefficient
 
-On positive-valued sequences, the totalized definition satisfies the source's defining
-quotient equation with a nonzero denominator.
+**Defining equation of the generalized binomial coefficient.** Let $f \colon \mathbb{N} \to
+\mathbb{N}$ be a positive sequence, that is $f(i) > 0$ for every $i > 0$, and write
+$k!_f = f(1) f(2) \cdots f(k)$ for its generalized factorial. Then for all natural numbers $n$
+and $m$, the generalized binomial coefficient $\binom{n+m}{n}_f$, defined as
+$(n+m)!_f / (n!_f \, m!_f)$ with division by $0$ giving $0$, satisfies
+$\binom{n+m}{n}_f \cdot n!_f \, m!_f = (n+m)!_f$ in $\mathbb{Q}$.
 
 ## Depends on
 
-- [Is Positive Sequence](is-positive-sequence.md)
-- [Generalized Binomial Coefficient](generalized-binomial-coefficient.md)
-- [Generalized Factorial](generalized-factorial.md)
+- [Positive sequence](is-positive-sequence.md)
+- [Generalized binomial coefficient](generalized-binomial-coefficient.md)
+- [Generalized factorial](generalized-factorial.md)
 
 ## Proof depends on
 
-- [Generalized Factorial pos](generalized-factorial-pos.md)
+- [Generalized factorials of positive sequences are positive](generalized-factorial-pos.md)
 
 ## Sources
 

@@ -16,9 +16,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Factor Set](../../../MathlibExt/part-01/infinite-word/factor/factor-set.md)
+- [Set of factors of a given length](../../../MathlibExt/part-01/infinite-word/factor/factor-set.md)
 - [Alternations](alternations.md)
-- [Thue Morse](../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
+- [Thue–Morse sequence](../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
 
 ## Sources
 

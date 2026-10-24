@@ -6,13 +6,14 @@ statement: formalized
 lean: MathlibExt.Analysis.HermanProblem290Wanted.conjecture
 ---
 
-# Conjecture
+# Herman's analytic linearization problem
 
-Hayman Problem 2.90 (M. R. Herman): does there exist an irrational number
-α satisfying no diophantine condition such that every ℝ-analytic
-orientation-preserving diffeomorphism of the circle with rotation number α
-is ℝ-analytically conjugated to a rotation?
-Cites: Hayman (2018), Problem 2.90; https://arxiv.org/abs/1809.07200.
+**Herman's analytic linearization problem.** The statement that there is an irrational real
+number $\alpha$ that is not Diophantine such that, for every real-analytic circle diffeomorphism
+whose lift $F$ has rotation number $\alpha$, $F$ is analytically conjugate to the rotation by
+$\alpha$.
+
+M. R. Herman asked whether such an $\alpha$ exists; this is Problem 2.90 in Hayman's list.
 
 ## Depends on
 
@@ -20,11 +21,12 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Analytic Circle Diffeo](analytic-circle-diffeo.md)
-- [Has Rotation Number](has-rotation-number.md)
-- [Is Analytically Conjugate To Rotation](is-analytically-conjugate-to-rotation.md)
-- [Is Diophantine](is-diophantine.md)
+- [Real-analytic circle diffeomorphisms](analytic-circle-diffeo.md)
+- [Rotation number of a lift](has-rotation-number.md)
+- [Analytic conjugacy to a rotation](is-analytically-conjugate-to-rotation.md)
+- [Diophantine numbers](is-diophantine.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HermanProblem290Wanted](../../../../../sources/v2/WantedExt.md)
+- Hayman (2018), Problem 2.90; https://arxiv.org/abs/1809.07200.

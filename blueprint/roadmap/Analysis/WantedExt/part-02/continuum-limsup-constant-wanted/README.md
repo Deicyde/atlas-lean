@@ -4,8 +4,8 @@ navigation: module
 
 # Continuum Limsup Constant
 
-- [Entire](entire.md)
-- [Recedes To Inf](recedes-to-inf.md)
-- [Ratio](ratio.md)
-- [Conjecture](conjecture.md)
-- [Conjecture holds](conjecture-holds.md)
+- [Entire functions](entire.md)
+- [Continua receding to infinity](recedes-to-inf.md)
+- [Ratio of $\log |f|$ to the logarithm of the maximum modulus](ratio.md)
+- [Lower bound $-1$ for the log-modulus ratio along continua](conjecture.md)
+- [Hayman–Kjellberg theorem on continua receding to infinity](conjecture-holds.md)

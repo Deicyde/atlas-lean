@@ -5,5 +5,5 @@ navigation: module
 
 # Filipponi Binomial Sum
 
-- [Filipponi binomial sum formula general](filipponi-binomial-sum-formula-general.md)
-- [Filipponi binomial sum formula](filipponi-binomial-sum-formula.md)
+- [Filipponi's binomial-sum formula, without range conditions](filipponi-binomial-sum-formula-general.md)
+- [Filipponi's binomial-sum formula](filipponi-binomial-sum-formula.md)

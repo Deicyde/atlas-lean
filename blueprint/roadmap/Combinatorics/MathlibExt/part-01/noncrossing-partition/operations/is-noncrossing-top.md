@@ -6,18 +6,19 @@ proof: formalized
 lean: NoncrossingPartition.isNoncrossing_top
 ---
 
-# Is Noncrossing top
+# The indiscrete partition is noncrossing
 
-The indiscrete partition `⊤` of `Fin n` is noncrossing for every `n`.
+**The indiscrete partition is noncrossing.** For every natural number $n$, the indiscrete
+partition of $\{0, \dots, n-1\}$, the coarsest partition of this set, is noncrossing.
 
 ## Depends on
 
-- [Is Noncrossing](../basic/is-noncrossing.md)
-- [Set Partition](../basic/set-partition.md)
+- [Noncrossing set partition](../basic/is-noncrossing.md)
+- [Set partition](../basic/set-partition.md)
 
 ## Proof depends on
 
-- [Has Crossing](../basic/has-crossing.md)
+- [Crossing in a set partition](../basic/has-crossing.md)
 
 ## Sources
 

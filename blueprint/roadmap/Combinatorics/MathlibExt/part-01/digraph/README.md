@@ -1,4 +1,4 @@
 # Digraph
 
-- [Directed Cayley](directed-cayley-graph.md)
+- [Cayley digraph](directed-cayley-graph.md)
 - [Labeled Digraph](labeled-digraph/README.md)

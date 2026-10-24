@@ -6,14 +6,13 @@ statement: formalized
 lean: MathlibExt.Analysis.HermanProblem290Wanted.AnalyticCircleDiffeo
 ---
 
-# Analytic Circle Diffeo
+# Real-analytic circle diffeomorphisms
 
-Real-analytic orientation-preserving diffeomorphism of the circle,
-modeled by its degree-one lift F : ℝ → ℝ to the universal cover.
-Characteristic properties: analyticity of the lift and of the inverse lift,
-degree-one periodicity F (x + 1) = F x + 1 (circle map), two-sided inverse
-(diffeomorphism), and strict monotonicity (orientation-preserving).
-Cites: Hayman (2018), Problem 2.90; https://arxiv.org/abs/1809.07200.
+**Real-analytic circle diffeomorphisms.** A real-analytic orientation-preserving
+diffeomorphism of the circle is given by a lift $F : \mathbb{R} \to \mathbb{R}$ together with an
+inverse lift $G : \mathbb{R} \to \mathbb{R}$, both real-analytic on all of $\mathbb{R}$, such that
+for every real $x$ we have $F(x + 1) = F(x) + 1$, $G(x + 1) = G(x) + 1$, $G(F(x)) = x$ and
+$F(G(x)) = x$, and $F$ is strictly increasing.
 
 ## Depends on
 
@@ -22,3 +21,4 @@ This node has no prerequisites.
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.HermanProblem290Wanted](../../../../../sources/v2/WantedExt.md)
+- Hayman (2018), Problem 2.90; https://arxiv.org/abs/1809.07200.

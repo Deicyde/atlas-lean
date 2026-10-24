@@ -6,9 +6,10 @@ statement: formalized
 lean: Nat.Overpartition.IsOverlined
 ---
 
-# Is Overlined
+# Overlined part size
 
-`a` is overlined in the overpartition `O`.
+**Overlined part size.** A natural number $a$ is overlined in an overpartition $O$ of $n$
+when $a$ belongs to the set of overlined part sizes of $O$.
 
 ## Depends on
 

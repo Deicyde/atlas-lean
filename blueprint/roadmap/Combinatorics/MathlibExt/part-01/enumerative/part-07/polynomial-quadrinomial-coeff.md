@@ -6,11 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.polynomialQuadrinomialCoeff
 ---
 
-# Quadrinomial Coefficient
+# Quadrinomial coefficient triangle
 
-Quadrinomial coefficient `{n; 4 choose k}` (concept `jis_sem_21c48e3801524f9403d681b0`,
-source statement `jis_cb7e03aa435f1bbd253660ca`, OEIS A008287): the coefficient
-of `x ^ k` in `(1 + x + x ^ 2 + x ^ 3) ^ n`, with `0 ≤ k ≤ 3 * n`.
+**Quadrinomial coefficient triangle.** For natural numbers $n$ and $k$, the quadrinomial
+coefficient $\binom{n}{k}_4$ is the coefficient of $x^k$ in the polynomial
+$(1 + x + x^2 + x^3)^n$ with natural-number coefficients. These numbers form the triangle
+OEIS A008287.
 
 ## Depends on
 
@@ -19,3 +20,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.QuadrinomialCoefficient](../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_21c48e3801524f9403d681b0`, source statement `jis_cb7e03aa435f1bbd253660ca`.

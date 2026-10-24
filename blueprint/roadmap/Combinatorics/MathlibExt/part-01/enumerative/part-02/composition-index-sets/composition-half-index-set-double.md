@@ -6,19 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.compositionHalfIndexSet_double
 ---
 
-# Composition Half Index Set double
+# Doubling identity for the composition index sets
 
-The doubling identity `S(2m, 2n, 2q) = T(m, n, q)`.
+**Doubling identity for the composition index sets.** For natural numbers $m$, $n$ and $q$,
+let $S(m, n, q)$ be the set of natural numbers $k$ with $2k \equiv n - q \pmod{m}$ and $2k < n$,
+and let $T(m, n, q)$ be the set of natural numbers $k$ with $k \equiv n - q \pmod{m}$ and
+$k < n$, where the difference $n - q$ is taken in the integers. Then for all natural numbers
+$m$, $n$ and $q$ the sets satisfy $S(2m, 2n, 2q) = T(m, n, q)$.
 
 ## Depends on
 
-- [Composition Half Index Set](composition-half-index-set.md)
-- [Composition Index Set](composition-index-set.md)
+- [The index set $S(m, n, q)$](composition-half-index-set.md)
+- [The index set $T(m, n, q)$](composition-index-set.md)
 
 ## Proof depends on
 
-- [Mem composition Half Index Set](mem-composition-half-index-set.md)
-- [Mem composition Index Set](mem-composition-index-set.md)
+- [Membership in $S(m, n, q)$](mem-composition-half-index-set.md)
+- [Membership in $T(m, n, q)$](mem-composition-index-set.md)
 
 ## Sources
 

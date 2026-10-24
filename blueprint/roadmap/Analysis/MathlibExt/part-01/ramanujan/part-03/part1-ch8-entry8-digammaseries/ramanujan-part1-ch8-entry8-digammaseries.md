@@ -7,11 +7,14 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry8Digammaseries.ramanujan_part1_ch8_entry8_digammaseries_complex_digamma
 ---
 
-# Ramanujan part1 ch8 entry8 digammaseries complex digamma
+# Alternating series $\sum_{k \ge 1} (-1)^{k-1}/(a + kb)$ via the digamma function
 
-Entry 8 sum stated with Mathlib's `Complex.digamma` and without the
-Gamma-nonvanishing hypotheses. `ramanujan_part1_ch8_entry8_digammaseries`
-follows from this by `chapter8Digamma_eq_Complex_digamma`.
+**Alternating series $\sum_{k \ge 1} (-1)^{k-1}/(a + kb)$ via the digamma function.** Let $a$
+and $b$ be complex numbers with $b \ne 0$ and $a + kb \ne 0$ for every integer $k \ge 1$, and let
+$\psi$ be the digamma function, the logarithmic derivative of $\Gamma$. Then the partial sums of
+$\sum_{k=1}^{\infty} \frac{(-1)^{k-1}}{a + kb}$ converge to
+
+$$\frac{1}{2b} \left(\psi\left(\frac{a+2b}{2b}\right) - \psi\left(\frac{a+b}{2b}\right)\right).$$
 
 ## Depends on
 
@@ -19,7 +22,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Analytic At digamma](../../../special-functions/part-01/gamma/digamma/analytic-at-digamma.md)
+- [Analyticity of the digamma function](../../../special-functions/part-01/gamma/digamma/analytic-at-digamma.md)
 
 ## Sources
 

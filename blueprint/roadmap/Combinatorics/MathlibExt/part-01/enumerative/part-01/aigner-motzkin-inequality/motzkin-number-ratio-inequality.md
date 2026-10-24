@@ -6,20 +6,23 @@ proof: formalized
 lean: MetaMathlibExt.motzkinNumber_ratio_inequality
 ---
 
-# Motzkin Number ratio inequality
+# Aigner's ratio inequality for Motzkin numbers
 
-Aigner's ratio inequality (equation (11)) for the canonical Motzkin numbers:
-`(M_n - M_{n-1}) / (M_{n+1} - M_n) ≤ M_n / M_{n+1}` for `n ≥ 1`
-(`aigner_motzkin_ratio_inequality` restated with `motzkinNumber`).
+**Aigner's ratio inequality for Motzkin numbers.** Let $M_n$ denote the $n$-th Motzkin
+number. For every $n \ge 1$,
+
+$$
+\frac{M_n - M_{n-1}}{M_{n+1} - M_n} \le \frac{M_n}{M_{n+1}}.
+$$
 
 ## Depends on
 
-- [Motzkin Number](../../part-05/motzkin-number/motzkin-number.md)
+- [Motzkin numbers as a Catalan-weighted binomial sum](../../part-05/motzkin-number/motzkin-number.md)
 
 ## Proof depends on
 
-- [Aigner motzkin ratio inequality](aigner-motzkin-ratio-inequality.md)
-- [Motzkin Number eq sum range half](../../part-05/motzkin-number/motzkin-number-eq-sum-range-half.md)
+- [Aigner's ratio inequality for Motzkin numbers, explicit sum form](aigner-motzkin-ratio-inequality.md)
+- [Truncated Catalan-weighted sum for Motzkin numbers](../../part-05/motzkin-number/motzkin-number-eq-sum-range-half.md)
 
 ## Sources
 

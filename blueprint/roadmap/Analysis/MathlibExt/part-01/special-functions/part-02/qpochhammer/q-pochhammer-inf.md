@@ -6,15 +6,14 @@ statement: formalized
 lean: MetaMathlibExt.QPochhammer.qPochhammerInf
 ---
 
-# Q Pochhammer Inf
+# Infinite q-Pochhammer symbol
 
-Complex infinite q-Pochhammer symbol `(a;q)_∞`, restricted to the unit disk.
+**Infinite q-Pochhammer symbol.** For complex numbers $a$ and $q$ with $|q| < 1$, the infinite
+q-Pochhammer symbol is $(a;q)_\infty = \prod_{n=0}^{\infty} (1 - a q^n)$, the unconditional
+infinite product of the factors $1 - a q^n$.
 
-Source `2607.10576:D01` / `2608.13818:D02` jointly define
-`(a;q)_∞ := ∏_{j=0}^{∞} (1 - a·q^j)` for complex `a, q` with `‖q‖ < 1`.
-On this domain the value agrees with the raw product `qPochhammerInfRaw a q`,
-while the hypothesis `hq` makes it impossible to silently evaluate at an
-out-of-domain `q`.
+The hypothesis $|q| < 1$ is an argument of the definition, so the symbol cannot be applied to
+$q$ outside the open unit disk.
 
 ## Depends on
 
@@ -22,8 +21,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Q Pochhammer Inf Raw](q-pochhammer-inf-raw.md)
+- [Raw infinite q-Pochhammer product](q-pochhammer-inf-raw.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Analysis.SpecialFunctions.QPochhammer](../../../../../../../sources/v2/MathlibExt.md)
+- `2607.10576:D01` / `2608.13818:D02` jointly define `(a;q)_∞ := ∏_{j=0}^{∞} (1 - a·q^j)` for complex `a, q` with `‖q‖ < 1`.

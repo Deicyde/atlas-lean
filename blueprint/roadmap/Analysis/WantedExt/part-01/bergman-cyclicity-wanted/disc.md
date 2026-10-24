@@ -6,9 +6,9 @@ statement: formalized
 lean: MathlibExt.Analysis.BergmanCyclicityWanted.Disc
 ---
 
-# Disc
+# The open unit disc
 
-The open unit disc in `ℂ`.
+**The open unit disc.** The set $\mathbb{D} = \{z \in \mathbb{C} : |z| < 1\}$.
 
 ## Depends on
 

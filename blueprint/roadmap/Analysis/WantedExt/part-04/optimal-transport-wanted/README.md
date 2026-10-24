@@ -5,5 +5,5 @@ navigation: module
 # Optimal Transport
 
 - [Couplings](couplings.md)
-- [Kantorovich Cost](kantorovich-cost.md)
-- [Monge kantorovich exists](monge-kantorovich-exists.md)
+- [Kantorovich cost](kantorovich-cost.md)
+- [Monge–Kantorovich existence theorem](monge-kantorovich-exists.md)

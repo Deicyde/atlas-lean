@@ -5,12 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.ScottishBook167Wanted.ScottishBookProblem167Claim
 ---
 
-# Scottish Book Problem167 Claim
+# Scottish Book Problem 167
 
-Ulam's Problem 167 from the Scottish Book, in its original form: for the
-surface `S` of the unit sphere in a Hilbert space, finitely many continuous
-real functions `f i` on `S`, and a continuous map `T` of `S` into itself,
-there is a point `p0` with `f i (T p0) = f i p0` for every `i`.
+**Scottish Book Problem 167.** Ulam's claim that for every infinite-dimensional real Hilbert
+space $H$ with unit sphere $S = \{p \in H : \|p\| = 1\}$, every $n \in \mathbb{N}$, all
+continuous functions $f_1, \dots, f_n : S \to \mathbb{R}$ and every continuous map
+$T : S \to S$, there is a point $p_0 \in S$ with $f_i(T(p_0)) = f_i(p_0)$ for every $i$.
 
 ## Depends on
 

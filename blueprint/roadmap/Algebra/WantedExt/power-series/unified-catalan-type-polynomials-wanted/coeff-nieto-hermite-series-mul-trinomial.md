@@ -5,20 +5,28 @@ statement: formalized
 lean: MetaMathlibExt.coeff_nietoHermiteSeries_mul_trinomialNegPowSeries
 ---
 
-# Theorem 3
+# Nieto–Hermite Catalan-type polynomials as convolutions
 
-**Theorem 3.** With `F(j, k, y, t) = ∑_n t^(jn+k) H_{jn+k}(y) / (jn + k)!` (Equation (1),
-`H_n` the Hermite polynomials of `e^(2yt - t²)`, so `H_n(y) / n!` is the coefficient of
-`t^n` in that exponential), the coefficients `F^{j.k;λ}_{r,m}(x, y)` and `f^{j.k;λ}_{r,m}(x, y)`
-of `t^r` in `F(j, k, y, t) / (1 - m t + x t^m)^λ` and `F(j, k, y, t) / (1 - m x t + t^m)^λ`
-(Equations (10) and (11)) are
-`∑_{n ≤ ⌊(r-k)/j⌋} H_{jn+k}(y) P^λ_{r-jn-k,m}(x) / (jn + k)!` and the same sum with
-`h^λ_{r-jn-k,m}(x)`. Stated for `k ≤ r` (for `r < k` the paper's sum is empty and both
-sides vanish), all `j, m` (the paper takes `j, m ≥ 1`) and real `λ`.
+**Nieto–Hermite Catalan-type polynomials as convolutions.** Let $j, k, m, r$ be natural
+numbers with $k \le r$ and let $\lambda, x, y$ be real numbers. Let $E(t) = e^{2yt - t^2}$ be the
+exponential series, so that its coefficient of $t^n$ is $H_n(y) / n!$ with $H_n$ the Hermite
+polynomials, and let $F(t)$ be the power series whose coefficient of $t^n$ is $H_n(y) / n!$ when
+$n \ge k$ and $j \mid n - k$, and $0$ otherwise (for $j \ge 1$ this is the series
+$F(j, k, y, t) = \sum_n H_{jn+k}(y) t^{jn+k} / (jn + k)!$ of Equation (1)). Let
+$P^\lambda_{s,m}(x)$ and $h^\lambda_{s,m}(x)$ be the coefficients of $t^s$ in the formal
+expansions of $(1 - m t + x t^m)^{-\lambda}$ and $(1 - m x t + t^m)^{-\lambda}$ in powers of $t$,
+and let $q = \lfloor (r - k) / j \rfloor$, read as $q = 0$ when $j = 0$. Then the coefficient of
+$t^r$ in $F(t) (1 - m t + x t^m)^{-\lambda}$ is
+$\sum_{n=0}^{q} H_{jn+k}(y) P^\lambda_{r-jn-k,m}(x) / (jn + k)!$, and the coefficient of $t^r$
+in $F(t) (1 - m x t + t^m)^{-\lambda}$ is the same sum with $h^\lambda_{r-jn-k,m}(x)$ in place
+of $P^\lambda_{r-jn-k,m}(x)$.
+
+These are the paper's $F^{j.k;\lambda}_{r,m}(x, y)$ and $f^{j.k;\lambda}_{r,m}(x, y)$
+(Equations (10) and (11)). The paper takes $j, m \ge 1$; for $r < k$ its sum is empty.
 
 ## Depends on
 
-- [Trinomial Neg Pow Series](trinomial-neg-pow-series.md)
+- [Negative real power of a trinomial as a power series](trinomial-neg-pow-series.md)
 
 ## Sources
 

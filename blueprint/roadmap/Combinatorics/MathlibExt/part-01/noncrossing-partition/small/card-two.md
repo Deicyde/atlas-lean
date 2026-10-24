@@ -12,17 +12,17 @@ lean: NoncrossingPartition.card_two
 
 ## Depends on
 
-- [Noncrossing Partition](../basic/noncrossing-partition.md)
-- [Has Crossing](../basic/has-crossing.md)
-- [Is Noncrossing](../basic/is-noncrossing.md)
-- [Set Partition](../basic/set-partition.md)
+- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [Crossing in a set partition](../basic/has-crossing.md)
+- [Noncrossing set partition](../basic/is-noncrossing.md)
+- [Set partition](../basic/set-partition.md)
 
 ## Proof depends on
 
-- [Discrete](../operations/discrete.md)
+- [Discrete noncrossing partition](../operations/discrete.md)
 - [Discrete two ne indiscrete two](discrete-two-ne-indiscrete-two.md)
 - [Eq discrete or indiscrete two](eq-discrete-or-indiscrete-two.md)
-- [Indiscrete](../operations/indiscrete.md)
+- [The indiscrete noncrossing partition](../operations/indiscrete.md)
 
 ## Sources
 

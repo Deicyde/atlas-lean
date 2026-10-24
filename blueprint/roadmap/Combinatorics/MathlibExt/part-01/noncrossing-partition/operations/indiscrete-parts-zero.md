@@ -6,15 +6,16 @@ proof: formalized
 lean: NoncrossingPartition.indiscrete_parts_zero
 ---
 
-# Indiscrete parts zero
+# The indiscrete partition of the empty set has no blocks
 
-Indiscrete parts are empty at arity zero.
+**The indiscrete partition of the empty set has no blocks.** For $n = 0$, the set of blocks
+of the indiscrete noncrossing partition of $\{0, \dots, n-1\}$, the empty set, is empty.
 
 ## Depends on
 
-- [Is Noncrossing](../basic/is-noncrossing.md)
-- [Set Partition](../basic/set-partition.md)
-- [Indiscrete](indiscrete.md)
+- [Noncrossing set partition](../basic/is-noncrossing.md)
+- [Set partition](../basic/set-partition.md)
+- [The indiscrete noncrossing partition](indiscrete.md)
 
 ## Sources
 

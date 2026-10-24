@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.det_catalanTypeHankel_eq_zero
 ---
 
-# Theorem 8
+# Hankel determinants of recurrent Catalan-type sequences vanish
 
-**Theorem 8.** If the sequence `P^{λ,A}_{n,m}(x)` of Theorem 7 satisfies a linear
-recurrence `∑_{k=0}^r c_k P^{λ,A}_{n-k,m}(x) = 0` for all `n ≥ r` with constants `c_k` not all
-zero (Equation (22)) and `r ≤ N`, then the Hankel matrix `H_N^{(m,λ,A)}(x)` with `(i, j)`
-entry `P^{λ,A}_{i+j,m}(x)` (Equation (20)) is singular. The paper's `1 ≤ r` is dropped
-(`r = 0` is vacuous since `P^{λ,A}_{0,m}(x) = 1`), and with it the explicit `N ≥ 1`.
+**Hankel determinants of recurrent Catalan-type sequences vanish.** Let $m, N, r$ be natural
+numbers with $r \le N$, let $\lambda, x$ be real numbers, let $A$ be a polynomial with integer
+coefficients, and let $P_n$ be the coefficient of $t^n$ in
+$(1 + A(x)\, t)(1 - m t + x t^m)^{-\lambda}$, where $(1 - m t + x t^m)^{-\lambda}$ is expanded
+formally in powers of $t$. Suppose real numbers $c_0, \dots, c_r$, not all zero, satisfy
+$\sum_{k=0}^{r} c_k P_{n-k} = 0$ for every $n \ge r$. Then the $(N + 1) \times (N + 1)$ Hankel
+matrix with $(i, j)$ entry $P_{i+j}$ for $0 \le i, j \le N$ has determinant $0$.
+
+In the paper's notation $P_n = P^{\lambda,A}_{n,m}(x)$, the recurrence is Equation (22) and the
+Hankel matrix is $H_N^{(m,\lambda,A)}(x)$ of Equation (20). The paper's assumption $1 \le r$ is
+dropped.
 
 ## Depends on
 
-- [Trinomial Neg Pow Series](trinomial-neg-pow-series.md)
+- [Negative real power of a trinomial as a power series](trinomial-neg-pow-series.md)
 
 ## Sources
 

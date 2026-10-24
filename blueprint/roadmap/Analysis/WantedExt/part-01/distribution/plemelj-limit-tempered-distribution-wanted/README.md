@@ -4,6 +4,6 @@ navigation: module
 
 # Plemelj Limit Tempered Distribution
 
-- [U Plus Eps](u-plus-eps.md)
-- [U Minus Eps](u-minus-eps.md)
-- [Exists tempered Distribution tendsto inv add mul I](exists-tempered-distribution-tendsto-inv.md)
+- [The pairing with $(x + i\varepsilon)^{-1}$](u-plus-eps.md)
+- [The pairing with $(x - i\varepsilon)^{-1}$](u-minus-eps.md)
+- [The tempered distributions $(x \pm i\varepsilon)^{-1}$ converge as $\varepsilon \to 0^+$](exists-tempered-distribution-tendsto-inv.md)

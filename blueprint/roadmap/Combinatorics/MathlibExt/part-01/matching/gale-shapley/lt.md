@@ -6,15 +6,15 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Matching.GaleShapley.StrictTotalOrder.lt
 ---
 
-# Lt
+# Relation of a strict total order
 
-Compatibility alias for the former `GaleShapley.StrictTotalOrder.lt` projection.
-
-For new code, use `MathlibExt.Order.StrictTotalOrder.lt` directly.
+**Relation of a strict total order.** The relation of a strict total order $T$ on a set
+$\alpha$ is its underlying binary relation $\lt _T$ on $\alpha$, which is irreflexive, transitive,
+and relates any two distinct elements in one direction or the other.
 
 ## Depends on
 
-- [Strict Total Order](strict-total-order.md)
+- [Strict preference order](strict-total-order.md)
 
 ## Proof depends on
 

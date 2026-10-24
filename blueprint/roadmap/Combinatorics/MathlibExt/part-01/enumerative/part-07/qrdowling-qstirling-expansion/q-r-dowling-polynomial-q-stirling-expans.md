@@ -7,12 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.q_r_dowling_polynomial_q_stirling_expansion
 ---
 
-# Q r dowling polynomial q stirling expansion
+# (q, r)-Dowling polynomial expansion from the defining recurrences
 
-The expansion of the `(q, r)`-Dowling polynomial in terms of the `q`-Stirling numbers
-of the second kind: `D(n,x) = ∑ k, C(n,k) * r ^ (n - k) * ∑ j, m ^ (k - j) *
-qStirlingSecond k j * x ^ j`, from the explicit `(q, r)`-Whitney and `q`-Stirling
-recurrences over `ℂ`.
+**(q, r)-Dowling polynomial expansion from the defining recurrences.** Let
+$q, m, r, x \in \mathbb{C}$ and $n \in \mathbb{N}$, and write $[k + 1]_q = \sum_{i=0}^{k} q^i$.
+Let $S$ and $W$ be complex-valued functions on pairs of natural numbers, and let $D(a, y)$ be a
+complex-valued function of $a \in \mathbb{N}$ and $y \in \mathbb{C}$, such that for all
+$a, k \in \mathbb{N}$ and $y \in \mathbb{C}$: $S(0, 0) = 1$, $S(0, k + 1) = 0$, $S(a + 1, 0) = 0$
+and $S(a + 1, k + 1) = q^k S(a, k) + [k + 1]_q \, S(a, k + 1)$ (the recurrence of the
+$q$-Stirling numbers of the second kind); $W(0, 0) = 1$, $W(0, k + 1) = 0$,
+$W(a + 1, 0) = r^{a + 1}$ and $W(a + 1, k + 1) = q^k W(a, k) + (m [k + 1]_q + r) \, W(a, k + 1)$
+(the recurrence of the $(q, r)$-Whitney numbers of the second kind); and
+$D(a, y) = \sum_{k=0}^{a} W(a, k) \, y^k$ (the $(q, r)$-Dowling polynomial). Then
+
+$$D(n, x) = \sum_{k=0}^{n} \binom{n}{k} r^{n-k} \sum_{j=0}^{k} m^{k-j} S(k, j) \, x^j.$$
 
 ## Depends on
 
@@ -20,13 +28,13 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Q Brack](../qrwhitney-numbers/q-brack.md)
-- [Whitney Second](../qrwhitney-numbers/whitney-second.md)
-- [Whitney Second succ succ](../qrwhitney-numbers/whitney-second-succ-succ.md)
-- [Whitney Second succ zero](../qrwhitney-numbers/whitney-second-succ-zero.md)
-- [Whitney Second zero succ](../qrwhitney-numbers/whitney-second-zero-succ.md)
-- [Whitney Second zero zero](../qrwhitney-numbers/whitney-second-zero-zero.md)
-- [Eval qr Dowling Polynomial whitney Second](eval-qr-dowling-polynomial-whitney-secon.md)
+- [Complex q-integers](../qrwhitney-numbers/q-brack.md)
+- [(q, r)-Whitney numbers of the second kind](../qrwhitney-numbers/whitney-second.md)
+- [Triangular recurrence for second-kind (q, r)-Whitney numbers](../qrwhitney-numbers/whitney-second-succ-succ.md)
+- [Column-zero recurrence for second-kind (q, r)-Whitney numbers](../qrwhitney-numbers/whitney-second-succ-zero.md)
+- [Row zero of the second-kind (q, r)-Whitney numbers vanishes off the diagonal](../qrwhitney-numbers/whitney-second-zero-succ.md)
+- [Initial value of the second-kind (q, r)-Whitney numbers](../qrwhitney-numbers/whitney-second-zero-zero.md)
+- [Expansion of the (q, r)-Dowling polynomial in q-Stirling numbers](eval-qr-dowling-polynomial-whitney-secon.md)
 - [Qr Dowling Polynomial](../../../../../../NumberTheory/MathlibExt/part-10/qrdowling-polynomial/qr-dowling-polynomial.md)
 
 ## Sources

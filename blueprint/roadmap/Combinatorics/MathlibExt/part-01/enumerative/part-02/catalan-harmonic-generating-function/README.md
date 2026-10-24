@@ -5,5 +5,5 @@ navigation: module
 
 # Catalan Harmonic Generating Function
 
-- [Catalan harmonic generating function canonical](catalan-harmonic-generating-function-can.md)
-- [Catalan harmonic generating function](catalan-harmonic-generating-function.md)
+- [Generating function of Catalan–harmonic products](catalan-harmonic-generating-function-can.md)
+- [Catalan–harmonic generating function with explicit coefficients](catalan-harmonic-generating-function.md)

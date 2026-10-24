@@ -5,12 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.tendsto_sum_integral_cos_sub_cos_even_odd
 ---
 
-# Tendsto sum integral cos sub cos even odd
+# Alternating integral sums of $\cos qx - \cos qkx$ for odd $q$ and even $k$
 
-Lemma 11: for `q` odd, with `k = 2m` even tending to infinity and
-`f(x) = cos qx - cos qkx`,
-`∑_{ℓ=1}^{k/2} (∫_{(ℓ-1)2π/(k-1)}^{ℓ2π/(k+1)} f - ∫_{ℓ2π/(k+1)}^{ℓ2π/(k-1)} f)
-→ 8/(q² π)`.
+**Alternating integral sums of $\cos qx - \cos qkx$ for odd $q$ and even $k$.** Let $q$ be an
+odd natural number, for each natural number $m$ put $k = 2m$, and let
+$f(x) = \cos(qx) - \cos(qkx)$. Then, as $m \to \infty$,
+
+$$\sum_{\ell=1}^{m} \left(\int_{2(\ell-1)\pi/(k-1)}^{2\ell\pi/(k+1)} f(x)\,dx -
+\int_{2\ell\pi/(k+1)}^{2\ell\pi/(k-1)} f(x)\,dx\right) \to \frac{8}{q^2\pi}.$$
 
 ## Depends on
 

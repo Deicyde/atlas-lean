@@ -22,7 +22,7 @@ This node has no prerequisites.
 - [Lagrange Series Coefficient add](lagrange-series-coefficient-add.md)
 - [Lagrange Series Coefficient of ne zero](lagrange-series-coefficient-of-ne-zero.md)
 - [Lagrange Series Coefficient zero](lagrange-series-coefficient-zero.md)
-- [Exp Of Continuous Add Mul](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-01/exists-eq-exp-mul-of-continuous-add-mul.md)
+- [Continuous solutions of the exponential functional equation](../../../../../../Analysis/MathlibExt/part-01/special-functions/part-01/exists-eq-exp-mul-of-continuous-add-mul.md)
 
 ## Sources
 

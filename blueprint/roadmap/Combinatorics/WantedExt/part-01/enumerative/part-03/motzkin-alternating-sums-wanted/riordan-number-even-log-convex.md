@@ -13,7 +13,7 @@ of `n`. The Riordan numbers are `MetaMathlibExt.riordanNumber` (`1, 0, 1, 1, 3, 
 
 ## Depends on
 
-- [Riordan Number](../../../../../MathlibExt/part-01/enumerative/part-07/riordan-number/riordan-number.md)
+- [Riordan numbers](../../../../../MathlibExt/part-01/enumerative/part-07/riordan-number/riordan-number.md)
 
 ## Sources
 

@@ -7,9 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.overpartition_card_mul_five_modEq
 ---
 
-# Overpartition card mul five mod Eq
+# Overpartitions of $5n$ modulo $5$
 
-Canonical API form of the overpartition congruence.
+**Overpartitions of $5n$ modulo $5$.** For every integer $n \ge 1$, the number of
+overpartitions of $5n$ is congruent modulo $5$ to $(-1)^n r_3(n)$, where $r_3(n)$ is the number of
+ordered triples $(x, y, z)$ of integers with $x^2 + y^2 + z^2 = n$.
 
 ## Depends on
 
@@ -18,9 +20,9 @@ Canonical API form of the overpartition congruence.
 
 ## Proof depends on
 
-- [Overpartition mul five mod five](overpartition-mul-five-mod-five.md)
-- [Nat Card eq card subtype](nat-card-eq-card-subtype.md)
-- [Three Square Representation Count eq nat Card](three-square-representation-count-eq-nat.md)
+- [Overpartitions of $5n$ modulo $5$, explicit form](overpartition-mul-five-mod-five.md)
+- [Overpartitions as pairs of a multiset and a set](nat-card-eq-card-subtype.md)
+- [The three-square count counts all integer solutions](three-square-representation-count-eq-nat.md)
 
 ## Sources
 

@@ -5,20 +5,25 @@ statement: formalized
 lean: MathlibExt.Analysis.ScottishBook4Wanted.schreierCesaroSubsequences
 ---
 
-# Schreier Cesaro Subsequences
+# Schreier's theorem on Cesàro means of random subsequences
 
-If a bounded sequence is summable by the first mean (Cesaro mean) to a limit
-`S`, then almost every subsequence of it is also summable by the first mean
-to `S`. "Almost every subsequence" is rendered by the fair-coin product
-measure on subsets of `ℕ`: a subset is identified with its indicator
-`ω : ℕ → Bool`, and the subsequence is `a` composed with the enumeration
-`Nat.nth (fun n => ω n = true)`. Source: J. Schreier, Problem 4 of the
-Scottish Book, stated as a theorem in the Scottish Book typescript.
+**Schreier's theorem on Cesàro means of random subsequences.** Let $(a_n)_{n \ge 0}$ be a
+bounded sequence of real numbers whose Cesàro means $\frac{1}{n} \sum_{i < n} a_i$ converge
+to a real number $S$ as $n \to \infty$. Give the space of Boolean sequences
+$\omega = (\omega_n)_{n \ge 0}$ the infinite product of fair coin measures. For such $\omega$
+let $n_0 < n_1 < \cdots$ list, in increasing order, the indices $n$ with
+$\omega_n = \mathrm{true}$, with $n_k = 0$ whenever there are at most $k$ such indices. Then
+for almost every $\omega$ the Cesàro means $\frac{1}{N} \sum_{k < N} a_{n_k}$ of the
+subsequence $(a_{n_k})$ converge to $S$ as $N \to \infty$.
+
+Identifying a subset of $\mathbb{N}$ with its indicator sequence $\omega$, this says that
+almost every subsequence of $(a_n)$ has Cesàro means converging to $S$.
 
 ## Depends on
 
-- [Fair Coin Measure](fair-coin-measure.md)
+- [Fair coin measure](fair-coin-measure.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.ScottishBook4Wanted](../../../../../sources/v2/WantedExt.md)
+- J. Schreier, Problem 4 of the Scottish Book, stated as a theorem in the Scottish Book typescript.

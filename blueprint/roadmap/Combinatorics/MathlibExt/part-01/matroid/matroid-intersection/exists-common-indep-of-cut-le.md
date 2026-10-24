@@ -7,13 +7,17 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Matroid.MatroidIntersectionWanted.exists_common_indep_of_cut_le
 ---
 
-# Exists common indep of cut le
+# Matroid intersection for abstract rank functions
 
-Abstract rank-function form of matroid intersection: two functions
-`r₁ r₂ : Finset α → ℕ` satisfying the rank axioms (bounded by cardinality,
-monotone, submodular) yield a common "independent" set `I ⊆ E` of size at
-least `k` whenever every cut `X ⊆ E` satisfies `k ≤ r₁ X + r₂ (E \ X)`.
-Proved by induction on `E`, via deletion and contraction.
+**Matroid intersection for abstract rank functions.** Let $E$ be a finite subset of a type
+$\alpha$, let $k$ be a natural number, and let $r_1, r_2$ be functions from the finite subsets of
+$\alpha$ to $\mathbb{N}$ such that, for $i = 1, 2$ and all finite $X, Y \subseteq \alpha$, we have
+$r_i(X) \le |X|$, $r_i(X) \le r_i(Y)$ whenever $X \subseteq Y$, and
+$r_i(X \cap Y) + r_i(X \cup Y) \le r_i(X) + r_i(Y)$. If every $X \subseteq E$ satisfies
+$k \le r_1(X) + r_2(E \setminus X)$, then there is a set $I \subseteq E$ with
+$r_1(I) = r_2(I) = |I|$ and $|I| \ge k$.
+
+Proved by induction on $E$, via deletion and contraction.
 
 ## Depends on
 

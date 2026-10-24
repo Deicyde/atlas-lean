@@ -7,11 +7,18 @@ proof: formalized
 lean: MetaMathlibExt.hankelTransform_eq_prod_of_hasJacobiFraction
 ---
 
-# Hankel Transform eq prod of has Jacobi Fraction
+# Heilermann's formula
 
-Heilermann's formula: the Hankel transform of a sequence with Jacobi
-continued fraction data `(alpha, beta, mu0)` is
-`h_n = mu0 ^ (n + 1) * beta_1 ^ n * beta_2 ^ (n - 1) * ... * beta_n ^ 1`.
+**Heilermann's formula.** Let $K$ be a commutative ring, let $a$, $\alpha$, $\beta$ be
+sequences in $K$ and let $\mu_0 \in K$. Suppose that $a$ has Jacobi fraction data
+$(\alpha, \beta, \mu_0)$: there are power series $F_0, F_1, \dots$ over $K$ with
+$\sum_{n \ge 0} a_n x^n = \mu_0 F_0$ and $(1 - \alpha_i x - \beta_{i+1} x^2 F_{i+1}) F_i = 1$ for
+every $i \ge 0$. Then for every $n \ge 0$ the Hankel transform of $a$ at $n$, the determinant of
+the $(n+1) \times (n+1)$ matrix $(a_{i+j})_{0 \le i, j \le n}$, equals
+
+$$\mu_0^{n+1} \prod_{j=0}^{n-1} \beta_{j+1}^{\,n-j},$$
+
+that is, $\mu_0^{n+1} \beta_1^n \beta_2^{n-1} \cdots \beta_n$, which is $\mu_0$ for $n = 0$.
 
 ## Depends on
 

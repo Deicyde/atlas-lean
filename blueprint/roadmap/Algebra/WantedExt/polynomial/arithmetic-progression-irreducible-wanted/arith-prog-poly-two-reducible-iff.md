@@ -5,16 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.arithProgPoly_two_reducible_iff
 ---
 
-# Arith Prog Poly two reducible iff
+# Reducible quadratics with coefficients in an arithmetic progression
 
-For an integer `d ≥ 2`: some positive integer `a` coprime to `d` makes
-`A_2(x) = ax² + (a + d)x + (a + 2d)` reducible over `ℤ` if and only if every prime divisor of
-`d` is `≡ 1 (mod 3)`; in that case there are exactly `2^{n-1}` such `a`, where `n` is the number
-of distinct prime divisors of `d`. Corrected reading: the record omits the paper's standing
-coprimality of `a` and `d` (without it `a = d = 7` gives content `7`) and allows `d = 1`, where
-the condition holds vacuously but `A_2` is irreducible for every `a ≥ 1` (discriminant
-`-3a² - 6a + 1 < 0`) and `2^{-1}` is not a count; the proof's conjugate-pair count needs
-`n ≥ 1`.
+**Reducible quadratics with coefficients in an arithmetic progression.** Let $d \ge 2$ be an
+integer and, for a positive integer $a$, let $A_2(x) = ax^2 + (a + d)x + (a + 2d)$ in
+$\mathbb{Z}[x]$. There is a positive integer $a$ coprime to $d$ for which $A_2$ is not
+irreducible in $\mathbb{Z}[x]$ if and only if every prime divisor of $d$ is congruent to $1$
+modulo $3$. In that case the number of positive integers $a$ coprime to $d$ for which $A_2$ is
+not irreducible is exactly $2^{n-1}$, where $n$ is the number of distinct prime divisors of $d$.
+
+Both hypotheses matter: without coprimality, $a = d = 7$ gives $A_2(x) = 7(x^2 + 2x + 3)$, which
+is not irreducible in $\mathbb{Z}[x]$; and for $d = 1$ the prime condition holds vacuously while
+$A_2$ is irreducible for every $a \ge 1$, its discriminant $-3a^2 - 6a + 1$ being negative.
 
 ## Depends on
 

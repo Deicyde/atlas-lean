@@ -7,18 +7,19 @@ proof: formalized
 lean: InfiniteWord.tribonacciWordApprox_prefix
 ---
 
-# Tribonacci Word Approx prefix
+# Finite Tribonacci words form a prefix chain
 
-Earlier finite Tribonacci-word approximants are prefixes of later ones.
+**Finite Tribonacci words form a prefix chain.** For all natural numbers $m \le n$, the
+finite Tribonacci word $W(m)$ is a prefix of $W(n)$.
 
 ## Depends on
 
-- [Tribonacci Letter](tribonacci-letter.md)
-- [Tribonacci Word Approx](tribonacci-word-approx.md)
+- [The Tribonacci alphabet](tribonacci-letter.md)
+- [Finite Tribonacci words](tribonacci-word-approx.md)
 
 ## Proof depends on
 
-- [Tribonacci Word Approx prefix succ](tribonacci-word-approx-prefix-succ.md)
+- [Each finite Tribonacci word is a prefix of the next](tribonacci-word-approx-prefix-succ.md)
 
 ## Sources
 

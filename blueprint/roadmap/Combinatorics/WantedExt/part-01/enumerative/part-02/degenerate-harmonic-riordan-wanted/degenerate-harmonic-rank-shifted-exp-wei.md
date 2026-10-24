@@ -13,7 +13,7 @@ Theorem 5: for `n ≥ 0`,
 ## Depends on
 
 - [Degenerate Harmonic Rank](degenerate-harmonic-rank.md)
-- [Generalized Falling Factorial](../../../../../MathlibExt/part-01/enumerative/part-04/hsu-shiue-generalized-stirling-number/generalized-falling-factorial.md)
+- [Generalized falling factorial](../../../../../MathlibExt/part-01/enumerative/part-04/hsu-shiue-generalized-stirling-number/generalized-falling-factorial.md)
 
 ## Sources
 

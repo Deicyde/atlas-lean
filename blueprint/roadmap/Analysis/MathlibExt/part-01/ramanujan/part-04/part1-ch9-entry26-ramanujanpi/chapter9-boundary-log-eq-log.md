@@ -7,9 +7,12 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry26Ramanujanpi.chapter9BoundaryLog_eq_log
 ---
 
-# Chapter9 Boundary Log eq log
+# The Entry 26 boundary logarithm is the real logarithm
 
-The protected Entry 26 boundary-log definition agrees with Mathlib's total real logarithm.
+**The Entry 26 boundary logarithm is the real logarithm.** Let $\log$ be the real logarithm,
+extended to all of $\mathbb{R}$ by $\log 0 = 0$ and $\log x = \log|x|$ for $x < 0$. For every
+real $x$, the boundary logarithm of $x$, defined as $0$ if $x = 0$ and as $\log x$ otherwise,
+equals $\log x$.
 
 ## Depends on
 

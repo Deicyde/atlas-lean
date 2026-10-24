@@ -5,13 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.isDividedPowerIdeal_span_prime_padicInt
 ---
 
-# Is Divided Power Ideal span prime padic Int
+# $(p)$ is a divided-power ideal of $\mathbb{Z}_p$
 
-`(p)` is a divided-power ideal of `ℤ_p`.
+**$(p)$ is a divided-power ideal of $\mathbb{Z}_p$.** For every prime $p$, the ideal generated
+by $p$ in the ring $\mathbb{Z}_p$ of $p$-adic integers is a divided-power ideal.
 
 ## Depends on
 
-- [Is Divided Power Ideal](is-divided-power-ideal.md)
+- [Divided-power ideal](is-divided-power-ideal.md)
 
 ## Sources
 

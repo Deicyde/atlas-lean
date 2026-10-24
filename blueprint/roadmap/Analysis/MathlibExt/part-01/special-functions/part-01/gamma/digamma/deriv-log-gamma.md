@@ -7,9 +7,11 @@ proof: formalized
 lean: Real.deriv_log_Gamma
 ---
 
-# Deriv log Gamma
+# Logarithmic derivative of the real Gamma function
 
-On `(0, ∞)`, the derivative of `log ∘ Gamma` is `Gamma' / Gamma`.
+**Logarithmic derivative of the real Gamma function.** For every real $u > 0$, the
+derivative of $\log \Gamma$ at $u$ equals $\Gamma'(u) / \Gamma(u)$, where $\Gamma$ is the real
+Gamma function.
 
 ## Depends on
 

@@ -6,9 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.cycleQuotientCount
 ---
 
-# Cycle Quotient Count
+# Number of cycles of a permutation
 
-The number of cycles of a finite permutation, including fixed points as one-cycles.
+**Number of cycles of a permutation.** For a permutation $\sigma$ of a finite type $\alpha$,
+the number of cycles of $\sigma$, counting each fixed point as a cycle of length one, is the
+number of equivalence classes of $\alpha$ under the relation that holds between $x$ and $y$ when
+$\sigma^i(x) = y$ for some integer $i$.
 
 ## Depends on
 

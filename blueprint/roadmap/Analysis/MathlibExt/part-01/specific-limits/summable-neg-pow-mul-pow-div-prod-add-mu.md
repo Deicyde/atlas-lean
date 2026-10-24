@@ -7,10 +7,11 @@ proof: formalized
 lean: Complex.summable_neg_pow_mul_pow_div_prod_add_mul
 ---
 
-# Rising Product Series
+# Summability of a rising-product series
 
-The series `∑ j, (-b) ^ j * x ^ (j + 1) / ∏ r < j + 1, (c + b * (r + 1))` converges whenever
-no factor `c + b * (r + 1)` vanishes.
+**Summability of a rising-product series.** Let $b$, $c$ and $x$ be complex numbers such
+that $c + kb \neq 0$ for every integer $k \ge 1$. Then the series
+$\sum_{j=0}^{\infty} \frac{(-b)^j x^{j+1}}{\prod_{k=1}^{j+1} (c + kb)}$ is summable.
 
 ## Depends on
 

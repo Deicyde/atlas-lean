@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.motzkinNumber_zero
 ---
 
-# Motzkin Number zero
+# Value of the Motzkin number at 0
 
-`M(0) = 1`.
+**Value of the Motzkin number at 0.** The $0$-th Motzkin number is $M(0) = 1$.
 
 ## Depends on
 
-- [Motzkin Number](motzkin-number.md)
+- [Motzkin numbers as a Catalan-weighted binomial sum](motzkin-number.md)
 
 ## Sources
 

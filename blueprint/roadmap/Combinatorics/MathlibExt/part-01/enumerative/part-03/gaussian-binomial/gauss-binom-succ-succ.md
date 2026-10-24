@@ -7,13 +7,15 @@ proof: formalized
 lean: MathlibExt.gaussBinom_succ_succ
 ---
 
-# Gauss Binom succ succ
+# $Q$-Pascal recursion for Gaussian binomial coefficients
 
-The Pascal recursion for `G`.
+**$Q$-Pascal recursion for Gaussian binomial coefficients.** Let $R$ be a semiring and
+$Q \in R$. For all natural numbers $M$ and $k$, the Gaussian binomial coefficients satisfy
+$\binom{M+1}{k+1}_Q = \binom{M}{k}_Q + Q^{k+1} \binom{M}{k+1}_Q$.
 
 ## Depends on
 
-- [Gauss Binom](gauss-binom.md)
+- [Gaussian binomial coefficient](gauss-binom.md)
 
 ## Sources
 

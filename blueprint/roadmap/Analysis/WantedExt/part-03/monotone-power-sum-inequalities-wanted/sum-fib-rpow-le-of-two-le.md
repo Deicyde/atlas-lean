@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.sum_fib_rpow_le_of_two_le
 ---
 
-# Sum fib rpow le of two le
+# Upper bound for Fibonacci power sums with exponent at least 2
 
-Upper bounds of Theorem 3 for Fibonacci numbers, with `α = (r + s) / 2`: if
-`α ≥ 2` then `∑_{k=1}^n F_k ^ α ≤ (F_n F_{n+1}) ^ (α / 2)`.
+**Upper bound for Fibonacci power sums with exponent at least 2.** Let $F_k$ denote the
+$k$-th Fibonacci number. For every natural number $n \ge 1$ and every real $\alpha \ge 2$,
+$\sum_{k=1}^{n} F_k^\alpha \le (F_n F_{n+1})^{\alpha/2}$.
+
+In the paper $\alpha = (r + s)/2$.
 
 ## Depends on
 

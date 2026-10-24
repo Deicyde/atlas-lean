@@ -6,9 +6,12 @@ statement: formalized
 lean: MathlibExt.Analysis.LogarithmicPotentialEquilibriumFreeWanted.conjecture
 ---
 
-# Conjecture
+# Equilibrium-free logarithmic potential conjecture
 
-[AMR-022-7078] An equilibrium-free configuration exists.
+**Equilibrium-free logarithmic potential conjecture.** The conjecture states that there exists
+a charge sequence $(z_n)$ whose positions are pairwise distinct, which is summable ($z_n \neq 0$
+for every $n$ and $\sum_n 1/|z_n| < \infty$), and whose field $\sum_n 1/(z - z_n)$ is nonzero at
+every point $z \in \mathbb{C}$ that is not one of the $z_n$.
 
 ## Depends on
 
@@ -16,11 +19,12 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Charge Seq](charge-seq.md)
+- [Charge sequences](charge-seq.md)
 - [Field Sum](field-sum.md)
-- [Is Summable](is-summable.md)
-- [Points Distinct](points-distinct.md)
+- [Summable charge sequences](is-summable.md)
+- [Distinct charge positions](points-distinct.md)
 
 ## Sources
 
 - [WantedExt, WantedExt.Analysis.LogarithmicPotentialEquilibriumFreeWanted](../../../../../sources/v2/WantedExt.md)
+- record AMR-022-7078 (Problem 7.78, Rubel).

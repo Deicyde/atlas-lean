@@ -6,9 +6,10 @@ statement: formalized
 lean: MetaMathlibExt.IsKAbelianSquare
 ---
 
-# Is KAbelian Square
+# $k$-abelian squares
 
-A `k`-abelian square is a concatenation of two nonempty `k`-abelian equivalent words.
+**$k$-abelian squares.** For a natural number $k$, a word $w$ is a $k$-abelian square when
+$w = uv$ for two nonempty words $u$ and $v$ that are $k$-abelian equivalent.
 
 ## Depends on
 
@@ -16,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is KAbelian Equivalent](is-kabelian-equivalent.md)
+- [$k$-abelian equivalence](is-kabelian-equivalent.md)
 
 ## Sources
 

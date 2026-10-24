@@ -5,16 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.Calculus.SixthPowerIntegralLeDerivSqWanted.exists_integral_pow_six_le_integral_deriv_sq_of_integral_sq_eq_one
 ---
 
-# Sixth Power Integral Le Deriv Sq Wanted
+# Sixth-power integral bounded by the Dirichlet energy under $L^2$ normalization
 
-Prove that there is a constant $C_2 > 0$ such that
-\[
-\int_{-\infty}^{\infty} u^6(t) \, dt \le C_2 \int_{-\infty}^{\infty} (u')^2(t) \, dt
-\]
-for all $u \in C_c^\infty(\mathbb{R})$ satisfying
-\[
-\int_{-\infty}^{\infty} u^2(t) \, dt = 1.
-\]
+**Sixth-power integral bounded by the Dirichlet energy under $L^2$ normalization.** There is
+a constant $C_2 > 0$ such that every infinitely differentiable, compactly supported function
+$u : \mathbb{R} \to \mathbb{R}$ with $\int_{\mathbb{R}} u(t)^2 \, dt = 1$ satisfies
+
+$$\int_{\mathbb{R}} u(t)^6 \, dt \le C_2 \int_{\mathbb{R}} u'(t)^2 \, dt.$$
 
 ## Depends on
 

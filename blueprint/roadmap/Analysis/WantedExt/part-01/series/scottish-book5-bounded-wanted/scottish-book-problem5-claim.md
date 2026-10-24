@@ -5,9 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.Series.ScottishBook5BoundedWanted.ScottishBookProblem5Claim
 ---
 
-# Scottish Book Problem5 Claim
+# The bounded case of Scottish Book Problem 5
 
-Mazur's Problem 5 (bounded case): some permanent matrix method sums exactly the bounded asymptotically convergent sequences.
+**The bounded case of Scottish Book Problem 5.** There is a real matrix
+$(a_{ik})_{i,k \in \mathbb{N}}$ that is a permanent matrix method such that for every bounded real
+sequence $x$ and every real number $S$, the matrix sums $x$ to $S$ if and only if $x$ is
+asymptotically convergent to $S$.
 
 ## Depends on
 
@@ -15,10 +18,10 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Asymptotically Convergent](asymptotically-convergent.md)
-- [Is Bounded](is-bounded.md)
-- [Is Permanent](is-permanent.md)
-- [Matrix Sums](matrix-sums.md)
+- [Asymptotically convergent sequences](asymptotically-convergent.md)
+- [Bounded sequences](is-bounded.md)
+- [Permanent matrix methods](is-permanent.md)
+- [Summation by a matrix method](matrix-sums.md)
 
 ## Sources
 

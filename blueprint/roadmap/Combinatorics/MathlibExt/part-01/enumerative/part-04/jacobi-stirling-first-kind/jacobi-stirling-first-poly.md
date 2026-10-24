@@ -6,11 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.jacobiStirlingFirstPoly
 ---
 
-# Jacobi Stirling First Poly
+# Generating polynomial of the first-kind Jacobi–Stirling numbers
 
-N-th first-kind Jacobi-Stirling generating polynomial over a commutative ring,
-the product over `i < n` of `X - C (i * (i + ζ))`.
-Concept `jis_sem_108a092cfddb7cc6b11d221e`, source equation `e:JacobiStirling1`.
+**Generating polynomial of the first-kind Jacobi–Stirling numbers.** For a commutative ring
+$R$, an element $\zeta \in R$ and a natural number $n$, the $n$-th first-kind Jacobi–Stirling
+generating polynomial is $\prod_{i=0}^{n-1} (X - i(i + \zeta))$ in $R[X]$.
 
 ## Depends on
 
@@ -19,3 +19,4 @@ This node has no prerequisites.
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.JacobiStirlingFirstKind](../../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_108a092cfddb7cc6b11d221e`, source equation `e:JacobiStirling1`.

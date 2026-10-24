@@ -14,11 +14,11 @@ block containing the first element has exactly `2k + 2` elements.
 ## Depends on
 
 - [Descending Strict Naples Count](descending-strict-naples-count.md)
-- [Noncrossing Partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/noncrossing-partition.md)
-- [Has Crossing](../../../../../MathlibExt/part-01/noncrossing-partition/basic/has-crossing.md)
-- [Is Noncrossing](../../../../../MathlibExt/part-01/noncrossing-partition/basic/is-noncrossing.md)
-- [Set Partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/set-partition.md)
-- [Block](../../../../../MathlibExt/part-01/noncrossing-partition/basic/block.md)
+- [Noncrossing partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/noncrossing-partition.md)
+- [Crossing in a set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/has-crossing.md)
+- [Noncrossing set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/is-noncrossing.md)
+- [Set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/set-partition.md)
+- [Block of a noncrossing partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/block.md)
 
 ## Sources
 

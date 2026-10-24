@@ -17,7 +17,7 @@ points, so the zero-indexed gap `josephusThreeGap 1` is the paper's `m̄_2 = 3`.
 
 ## Proof depends on
 
-- [Josephus](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
+- [Josephus survivor function](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-04/josephus-function/josephus.md)
 - [Josephus Three Fixed Point](josephus-three-fixed-point.md)
 - [Josephus Three Fixed Point one](josephus-three-fixed-point-one.md)
 - [Josephus Three Fixed Point two](josephus-three-fixed-point-two.md)

@@ -5,13 +5,17 @@ statement: formalized
 lean: MathlibExt.Analysis.ScottishBook124Wanted.marcinkiewicz124_holds
 ---
 
-# Marcinkiewicz124 holds
+# The Volterra-form sub-conjecture of Scottish Book Problem 124 holds
 
-Marcinkiewicz's Problem 124 sub-conjecture holds (solved-positive).
+**The Volterra-form sub-conjecture of Scottish Book Problem 124 holds.** For every continuous
+function $f : \mathbb{R} \to \mathbb{R}$ with $f(0) \ne 0$ and every function
+$y : \mathbb{R} \to \mathbb{R}$ that is Lebesgue integrable on $[0, 1]$, if
+$\int_0^x y(t) f(x - t)\,dt = 0$ for every $x \in [0, 1]$, then $y = 0$ almost everywhere on
+$[0, 1]$.
 
 ## Depends on
 
-- [Scottish Book Problem124 Claim](scottish-book-problem124-claim.md)
+- [The Volterra-form sub-conjecture of Scottish Book Problem 124](scottish-book-problem124-claim.md)
 
 ## Sources
 

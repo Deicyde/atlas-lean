@@ -12,7 +12,7 @@ if `w' ∈ Q_n` has `dis(w') = dis(w)`, then `w' = w`.
 
 ## Depends on
 
-- [Is Stirling Permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
+- [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
 - [Stirling Displacement](stirling-displacement.md)
 - [Stirling Lucky Set](stirling-lucky-set.md)
 

@@ -7,18 +7,19 @@ proof: formalized
 lean: PerronKernel.E1_continuousAt_zero
 ---
 
-# E1 continuous At zero
+# Continuity of the averaging operator at zero
 
-`E1` is continuous at `0`.
+**Continuity of the averaging operator at zero.** The function
+$E_1 : \mathbb{C} \to \mathbb{C}$ given by $E_1(u) = \int_0^1 e^{tu}\,dt$ is continuous at $0$.
 
 ## Depends on
 
-- [E1](e1.md)
+- [The averaging operator $E_1$](e1.md)
 
 ## Proof depends on
 
-- [E1 sub one le](e1-sub-one-le.md)
-- [E1 zero](e1-zero.md)
+- [Linear bound for the averaging operator near zero](e1-sub-one-le.md)
+- [Value of the averaging operator at zero](e1-zero.md)
 
 ## Sources
 

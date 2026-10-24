@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.constantCoeff_qEulerProduct
 ---
 
-# Constant Coeff q Euler Product
+# Constant term of the Euler products
 
-For `k ≥ 1`, `f_k = ∏_{m ≥ 1} (1 - q^{k m})` has constant coefficient `1`.
+**Constant term of the Euler products.** For every natural number $k \ge 1$, the integer power
+series $f_k = \prod_{m \ge 1} (1 - q^{km})$ has constant coefficient $1$.
 
 ## Depends on
 
-- [Q Euler Product](q-euler-product.md)
+- [The Euler products of partition theory](q-euler-product.md)
 
 ## Sources
 

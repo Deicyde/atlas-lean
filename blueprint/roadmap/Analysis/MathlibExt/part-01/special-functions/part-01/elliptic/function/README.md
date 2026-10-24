@@ -5,5 +5,5 @@ navigation: module
 
 # Function
 
-- [Is Lattice Periodic](is-lattice-periodic.md)
-- [Is Elliptic Function](is-elliptic-function.md)
+- [Lattice-periodic functions](is-lattice-periodic.md)
+- [Elliptic functions](is-elliptic-function.md)

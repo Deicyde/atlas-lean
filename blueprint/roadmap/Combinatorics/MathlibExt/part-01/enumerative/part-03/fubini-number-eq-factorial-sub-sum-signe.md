@@ -7,23 +7,24 @@ proof: formalized
 lean: MetaMathlibExt.fubiniNumber_eq_factorial_sub_sum_signed_stirling
 ---
 
-# Fubini Recurrence
+# Alternating recurrence for the Fubini numbers
 
-The alternating recurrence `F(n) = n! - ∑_{j=1}^n s(n,n-j) F(n-j)` for the Fubini numbers
-`fubiniNumber`, with `s` the signed first-kind Stirling numbers `signedStirlingFirst`.
+**Alternating recurrence for the Fubini numbers.** For every natural number $n$, the Fubini
+number $F(n)$ satisfies
 
-This recurrence is distinct from the same paper's r-horse-number theorem
-(label thm:fubinir).
+$$F(n) = n! - \sum_{j=1}^{n} s(n, n-j)\, F(n-j),$$
+
+where $s(n, k)$ is the signed Stirling number of the first kind.
 
 ## Depends on
 
-- [Fubini Number](fubini-number/fubini-number.md)
-- [Signed Stirling First](../part-08/signed-stirling-first.md)
+- [Fubini numbers](fubini-number/fubini-number.md)
+- [Signed Stirling numbers of the first kind](../part-08/signed-stirling-first.md)
 
 ## Proof depends on
 
-- [Fubini Number eq sum](fubini-number/fubini-number-eq-sum.md)
-- [Sum signed Stirling First mul stirling Second](../part-08/stirling-matrices/sum-signed-stirling-first-mul-stirling-s.md)
+- [Fubini numbers as sums of Stirling numbers](fubini-number/fubini-number-eq-sum.md)
+- [Orthogonality relation for Stirling numbers](../part-08/stirling-matrices/sum-signed-stirling-first-mul-stirling-s.md)
 
 ## Sources
 

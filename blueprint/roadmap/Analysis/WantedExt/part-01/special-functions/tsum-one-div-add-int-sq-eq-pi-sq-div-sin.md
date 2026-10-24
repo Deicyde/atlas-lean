@@ -5,12 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.SpecialFunctions.TsumInvSqShiftEqPiSqDivSinSqWanted.tsum_one_div_add_int_sq_eq_pi_sq_div_sin_sq
 ---
 
-# Tsum Inv Sq Shift Eq Pi Sq Div Sin Sq Wanted
+# Partial fraction expansion of $\pi^2/\sin^2(\pi u)$
 
-Suppose $u \notin \mathbb{Z}$. Prove that
-\[
-\sum_{n=-\infty}^{\infty} \frac{1}{(u+n)^2} = \frac{\pi^2}{(\sin \pi u)^2}.
-\]
+**Partial fraction expansion of $\pi^2/\sin^2(\pi u)$.** For every real number $u$ that is
+not an integer,
+
+$$\sum_{n \in \mathbb{Z}} \frac{1}{(u+n)^2} = \frac{\pi^2}{\sin^2(\pi u)}.$$
 
 ## Depends on
 

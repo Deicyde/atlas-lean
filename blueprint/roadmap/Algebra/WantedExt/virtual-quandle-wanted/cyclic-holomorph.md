@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.cyclicHolomorph
 ---
 
-# Cyclic Holomorph
+# Holomorph of $\mathbb{Z}/n\mathbb{Z}$
 
-The holomorph `G = A ⋊ A^×` of `A = ℤ/nℤ`; the element `(a, u)` is
-`⟨Multiplicative.ofAdd a, u⟩`, with product `(a, u)(b, v) = (a + u b, u v)`.
+**Holomorph of $\mathbb{Z}/n\mathbb{Z}$.** For a natural number $n$, let
+$A = \mathbb{Z}/n\mathbb{Z}$. The holomorph of $A$ is the semidirect product $A \rtimes A^\times$
+in which the unit group $A^\times$ acts on $A$ by multiplication. Its elements are the pairs
+$(a, u)$ with $a \in A$ and $u \in A^\times$, with product $(a, u)(b, v) = (a + u b, u v)$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Zmod Units Mul Aut](zmod-units-mul-aut.md)
+- [Multiplication action of the units of $\mathbb{Z}/n\mathbb{Z}$](zmod-units-mul-aut.md)
 
 ## Sources
 

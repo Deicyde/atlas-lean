@@ -32,10 +32,10 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Convergence of $\sum 1/(n(n^x - 1))$](summable-chapter7-entry14-term.md)
-- [Abs deriv one Div Exp Sub One Laurent Remainder le](../../../special-functions/part-01/exp-sub-one-mittag-leffler/abs-deriv-one-div-exp-sub-one-laurent-re.md)
-- [Differentiable one Div Exp Sub One Laurent Remainder](../../../special-functions/part-01/exp-sub-one-mittag-leffler/differentiable-one-div-exp-sub-one-laure.md)
-- [One Div Exp Sub One Laurent Remainder](../../../special-functions/part-01/exp-sub-one-mittag-leffler/one-div-exp-sub-one-laurent-remainder.md)
-- [One Div Exp Sub One Laurent Remainder abs le](../../../special-functions/part-01/exp-sub-one-mittag-leffler/one-div-exp-sub-one-laurent-remainder-ab.md)
+- [Bound on the derivative of the Laurent remainder of $1/(e^v - 1)$](../../../special-functions/part-01/exp-sub-one-mittag-leffler/abs-deriv-one-div-exp-sub-one-laurent-re.md)
+- [The Laurent remainder of $1/(e^v - 1)$ is differentiable](../../../special-functions/part-01/exp-sub-one-mittag-leffler/differentiable-one-div-exp-sub-one-laure.md)
+- [Remainder of the Laurent expansion of $1/(e^v - 1)$](../../../special-functions/part-01/exp-sub-one-mittag-leffler/one-div-exp-sub-one-laurent-remainder.md)
+- [Bound on the Laurent remainder of $1/(e^v - 1)$](../../../special-functions/part-01/exp-sub-one-mittag-leffler/one-div-exp-sub-one-laurent-remainder-ab.md)
 
 ## Sources
 

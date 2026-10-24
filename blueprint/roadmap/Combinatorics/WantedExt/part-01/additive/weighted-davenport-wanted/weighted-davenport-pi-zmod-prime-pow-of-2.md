@@ -15,7 +15,7 @@ Same setting with `β ∤ p^{e_1}`: writing `s = p^{e_1} mod β` (so `1 ≤ s < 
 
 ## Depends on
 
-- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
+- [Weighted Davenport constant](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 
 ## Sources
 

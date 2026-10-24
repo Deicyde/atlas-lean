@@ -5,10 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.zmodUnitsMulAut
 ---
 
-# Zmod Units Mul Aut
+# Multiplication action of the units of $\mathbb{Z}/n\mathbb{Z}$
 
-The action of `(ℤ/nℤ)ˣ` on `ℤ/nℤ` by multiplication, as automorphisms of the
-multiplicative copy of `ℤ/nℤ`.
+**Multiplication action of the units of $\mathbb{Z}/n\mathbb{Z}$.** For a natural number
+$n$, the group homomorphism from the unit group $(\mathbb{Z}/n\mathbb{Z})^\times$ to the
+automorphism group of the additive group $\mathbb{Z}/n\mathbb{Z}$ that sends a unit $u$ to
+multiplication by $u$, the automorphism $x \mapsto u x$.
 
 ## Depends on
 

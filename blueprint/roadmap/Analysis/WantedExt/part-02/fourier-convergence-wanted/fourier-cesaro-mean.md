@@ -17,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fourier Partial Sum](fourier-partial-sum.md)
+- [Symmetric Fourier partial sums](fourier-partial-sum.md)
 
 ## Sources
 

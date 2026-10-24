@@ -7,14 +7,16 @@ proof: formalized
 lean: MetaMathlibExt.smarandacheBlock_one
 ---
 
-# Smarandache Block one
+# First block of the Smarandache permutation sequence
 
-First block: `(1, 2)` (statement `jis_c46e1d9809a20ee69374dac7`).
+**First block of the Smarandache permutation sequence.** The first block of the Smarandache
+permutation sequence is $(1, 2)$.
 
 ## Depends on
 
-- [Smarandache Block](smarandache-block.md)
+- [Blocks of the Smarandache permutation sequence](smarandache-block.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.SmarandachePermutationSequence](../../../../../../../sources/v2/MathlibExt.md)
+- statement `jis_c46e1d9809a20ee69374dac7`.

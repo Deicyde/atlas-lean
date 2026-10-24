@@ -12,7 +12,7 @@ lean: MathlibExt.NumberTheory.BernoulliSecondKindWanted.bernoulliSecond_eq_sum
 ## Depends on
 
 - [Bernoulli Second](../../../MathlibExt/part-01/bernoulli/bernoulli-second-kind/bernoulli-second.md)
-- [Signed Stirling First](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
+- [Signed Stirling numbers of the first kind](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
 
 ## Sources
 

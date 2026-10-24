@@ -7,9 +7,11 @@ proof: formalized
 lean: MetaMathlibExt.trinomialCoefficient_self_eq_sum
 ---
 
-# Trinomial Coefficient self eq sum
+# Central trinomial coefficients as a binomial sum
 
-The central trinomial coefficient as a Catalan-free binomial sum.
+**Central trinomial coefficients as a binomial sum.** For every natural number $n$, the
+coefficient of $X^n$ in $(1 + X + X^2)^n$ equals
+$\sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} \binom{2k}{k}$.
 
 ## Depends on
 

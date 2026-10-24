@@ -6,14 +6,17 @@ statement: formalized
 lean: Complex.principalExponentialIntegralE1Raw
 ---
 
-# Principal Exponential Integral E1 Raw
+# Totalized principal exponential integral
 
-Totalized principal-`E1` kernel `Ein z - Log z - γ`.
+**Totalized principal exponential integral.** For every complex number $z$, this is
+$\operatorname{Ein}(z) - \operatorname{Log} z - \gamma$, where
+$\operatorname{Ein}(z) = \sum_{j \ge 1} (-1)^{j+1} z^j / (j \cdot j!)$ is the entire exponential
+integral, $\operatorname{Log}$ is the principal branch of the complex logarithm (imaginary part
+in $(-\pi, \pi]$) extended by $\operatorname{Log} 0 = 0$, and $\gamma$ is the Euler–Mascheroni
+constant.
 
-This is a junk-value extension: at `z = 0` it evaluates to `-γ` via
-`Complex.log 0 = 0`, not to the classical principal `E1`, which is singular
-there. Use `principalExponentialIntegralE1` with a `z ≠ 0` proof for the
-domain-safe API.
+At $z = 0$ the value is therefore $-\gamma$. This is a convention, not a value of the classical
+principal $E_1$, which has a logarithmic singularity at $0$.
 
 ## Depends on
 
@@ -21,7 +24,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Ein](../../entire-exponential-integral/ein.md)
+- [The entire exponential integral Ein](../../entire-exponential-integral/ein.md)
 
 ## Sources
 

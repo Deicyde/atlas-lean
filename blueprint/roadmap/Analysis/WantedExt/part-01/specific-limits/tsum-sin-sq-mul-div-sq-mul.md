@@ -5,13 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.SpecificLimits.SumSinSqDivSqWanted.tsum_sin_sq_mul_div_sq_mul
 ---
 
-# Sum Sin Sq Div Sq Wanted
+# A closed form for $\sum \sin^2(n\delta)/(n^2\delta)$
 
-Suppose $0\lt \delta\lt \pi$, show that
+**A closed form for $\sum \sin^2(n\delta)/(n^2\delta)$.** For every real $\delta$ with
+$0 < \delta < \pi$,
 
-\[
-\sum_{n=1}^\infty \frac{\sin^2(n\delta)}{n^2\delta} = \frac{\pi-\delta}{2}.
-\]
+$$\sum_{n=1}^{\infty} \frac{\sin^2(n\delta)}{n^2\delta} = \frac{\pi - \delta}{2}.$$
 
 ## Depends on
 

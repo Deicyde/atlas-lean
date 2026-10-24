@@ -7,10 +7,12 @@ proof: formalized
 lean: MetaMathlibExt.caristi_fixedPoint
 ---
 
-# Caristi fixed Point
+# Caristi fixed-point theorem
 
-Caristi fixed-point theorem: map whose displacement is dominated by a potential decrease has a fixed
-point.
+**Caristi fixed-point theorem.** Let $(X, d)$ be a nonempty complete metric space and let
+$\varphi : X \to \mathbb{R}$ be lower semicontinuous and bounded below. If a map $T : X \to X$
+satisfies $d(x, T x) \le \varphi(x) - \varphi(T x)$ for every $x \in X$, then $T$ has a fixed
+point: there is $x \in X$ with $T x = x$.
 
 ## Depends on
 

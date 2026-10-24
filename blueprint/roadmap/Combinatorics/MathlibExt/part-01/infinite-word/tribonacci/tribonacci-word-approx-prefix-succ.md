@@ -7,18 +7,19 @@ proof: formalized
 lean: InfiniteWord.tribonacciWordApprox_prefix_succ
 ---
 
-# Tribonacci Word Approx prefix succ
+# Each finite Tribonacci word is a prefix of the next
 
-Each finite Tribonacci-word approximant is a prefix of the next one.
+**Each finite Tribonacci word is a prefix of the next.** For every $n \ge 0$, the finite
+Tribonacci word $W(n)$ is a prefix of $W(n + 1)$.
 
 ## Depends on
 
-- [Tribonacci Letter](tribonacci-letter.md)
-- [Tribonacci Word Approx](tribonacci-word-approx.md)
+- [The Tribonacci alphabet](tribonacci-letter.md)
+- [Finite Tribonacci words](tribonacci-word-approx.md)
 
 ## Proof depends on
 
-- [Tribonacci Word Approx add three](tribonacci-word-approx-add-three.md)
+- [Recursion for the finite Tribonacci words](tribonacci-word-approx-add-three.md)
 
 ## Sources
 

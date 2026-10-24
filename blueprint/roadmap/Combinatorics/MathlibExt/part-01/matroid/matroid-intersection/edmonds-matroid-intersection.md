@@ -7,11 +7,13 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Matroid.MatroidIntersectionWanted.edmonds_matroid_intersection'
 ---
 
-# Edmonds matroid intersection'
+# Edmonds' matroid intersection theorem
 
-Edmonds matroid intersection min-max for finite matroids on a finite type, with no assumption on
-the ground sets: there is a common independent set of size at least `k` iff every cut `X`
-satisfies `k ≤ M₁.eRk X + M₂.eRk Xᶜ`.
+**Edmonds' matroid intersection theorem.** Let $M_1$ and $M_2$ be matroids on a finite type
+$\alpha$, with arbitrary ground sets, and let $k$ be a natural number. There is a set
+$I \subseteq \alpha$ independent in both $M_1$ and $M_2$ with $|I| \ge k$ if and only if every
+$X \subseteq \alpha$ satisfies $k \le r_1(X) + r_2(\alpha \setminus X)$, where $r_i(Y)$ is the
+largest size of a subset of $Y$ independent in $M_i$.
 
 ## Depends on
 
@@ -19,7 +21,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Exists common indep of cut le](exists-common-indep-of-cut-le.md)
+- [Matroid intersection for abstract rank functions](exists-common-indep-of-cut-le.md)
 
 ## Sources
 

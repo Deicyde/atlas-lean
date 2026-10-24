@@ -5,15 +5,26 @@ statement: formalized
 lean: MetaMathlibExt.c4Sq_norm_beta_gamma_eq
 ---
 
-# Lemma 1
+# Norms of β and γ as products of sums of two squares (C₄²)
 
-**Lemma 1.** The norms `β β̄` and `γ γ̄` as products of two sums of two squares in the `d_i`.
+**Norms of β and γ as products of sums of two squares (C₄²).** Let $a$ be an integer-valued
+function on $C_4^2 = \mathbb{Z}/4 \times \mathbb{Z}/4$, with associated integers $d_0, \dots, d_7$
+and Gaussian integers $\beta$, $\gamma$, and write $\beta\bar\beta$, $\gamma\bar\gamma$ for the
+norms of $\beta$ and $\gamma$. Then
+
+$$\beta\bar\beta = \bigl((d_0 + d_2 + d_1 + d_3)^2 + (d_4 + d_6 + d_5 + d_7)^2\bigr)
+\bigl((d_0 + d_2 - d_1 - d_3)^2 + (d_4 + d_6 - d_5 - d_7)^2\bigr)$$
+
+and
+
+$$\gamma\bar\gamma = \bigl((d_0 - d_2 - d_5 + d_7)^2 + (d_4 - d_6 + d_1 - d_3)^2\bigr)
+\bigl((d_0 - d_2 + d_5 - d_7)^2 + (d_4 - d_6 - d_1 + d_3)^2\bigr).$$
 
 ## Depends on
 
-- [C4 Sq Beta](c4-sq-beta.md)
-- [C4 Sq D](c4-sq-d.md)
-- [C4 Sq Gamma](c4-sq-gamma.md)
+- [The Gaussian integer $\beta$](c4-sq-beta.md)
+- [The differences $d_i$ of a function on $C_4^2$](c4-sq-d.md)
+- [The Gaussian integer $\gamma$ of a function on $C_4^2$](c4-sq-gamma.md)
 
 ## Sources
 

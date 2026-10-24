@@ -5,13 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.SpecificLimits.PowerSeriesCoeffEqOfAgreeOnReciprocalsWanted.coeff_eq_of_tsum_eq_on_inv_nat_add_two
 ---
 
-# Power Series Coeff Eq Of Agree On Reciprocals Wanted
+# Power series agreeing at $1/2, 1/3, 1/4, \dots$ have equal coefficients
 
-Let $\sum_{k=0}^{\infty}a_k x^k$ and $\sum_{k=0}^{\infty}b_k x^k$ be real power series which
-converge for $|x|<1$.
-
-Suppose that $\sum_{k=0}^{\infty}a_k x^k=\sum_{k=0}^{\infty}b_k x^k$ when $x=1/2,1/3,1/4,\dots$.
-Prove that $a_k=b_k$ for all $k$.
+**Power series agreeing at $1/2, 1/3, 1/4, \dots$ have equal coefficients.** Let $(a_k)$ and
+$(b_k)$ be real sequences such that the series $\sum_{k=0}^{\infty} a_k x^k$ and
+$\sum_{k=0}^{\infty} b_k x^k$ converge absolutely for every real $x$ with $|x| < 1$. If
+$\sum_{k=0}^{\infty} a_k x^k = \sum_{k=0}^{\infty} b_k x^k$ for $x = 1/2, 1/3, 1/4, \dots$, then
+$a_k = b_k$ for all $k \ge 0$.
 
 ## Depends on
 

@@ -5,12 +5,10 @@ statement: formalized
 lean: MathlibExt.Analysis.SpecialFunctions.ExpSubExpUniqueFixedPointWanted.existsUnique_exp_sub_one_sub_exp_one_sub_eq_self
 ---
 
-# Exp Sub Exp Unique Fixed Point Wanted
+# The map $x \mapsto e^{x-1} - e^{1-x}$ has a unique fixed point
 
-Verify that the function $f:\mathbb{R}\to\mathbb{R}$, \ $x\mapsto e^{x-1}-e^{1-x}$ has a unique
-fixed point
-
-$x^*$.
+**The map $x \mapsto e^{x-1} - e^{1-x}$ has a unique fixed point.** There is exactly one
+real number $x$ such that $e^{x-1} - e^{1-x} = x$.
 
 ## Depends on
 

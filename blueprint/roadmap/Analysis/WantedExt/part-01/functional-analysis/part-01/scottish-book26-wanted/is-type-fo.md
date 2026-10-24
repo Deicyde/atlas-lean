@@ -5,10 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.FunctionalAnalysis.ScottishBook26Wanted.IsTypeFo
 ---
 
-# Is Type Fo
+# Spaces of type $\{F_o\}$
 
-A space of type `{F_o}`: a space of type (F) with the condition that if
-`x n → 0` and `∑ |t n|` converges, then `∑ t n • x n` converges.
+**Spaces of type $\{F_o\}$.** A real vector space $E$ with a topology is of type $\{F_o\}$ if
+it is of type (F) and, for every sequence $(x_n)_{n \ge 0}$ in $E$ with $x_n \to 0$ and every
+real sequence $(t_n)_{n \ge 0}$ with $\sum_n |t_n| < \infty$, the series $\sum_n t_n x_n$
+converges in $E$.
 
 ## Depends on
 
@@ -16,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Type F](is-type-f.md)
+- [Spaces of type (F) in Scottish Book Problem 26](is-type-f.md)
 
 ## Sources
 

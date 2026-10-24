@@ -5,9 +5,11 @@ statement: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleGraphCode.CycleCode
 ---
 
-# Cycle Code
+# Cycle codes
 
-A finite independent code in the modular strong-power model.
+**Cycle codes.** For natural numbers $q$ and $n$, a cycle code of length $n$ modulo $q$ is a
+finite set of words of length $n$ over $\mathbb{Z}/q\mathbb{Z}$ that is an independent code for
+the $q$-cycle.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Cycle Code](is-cycle-code.md)
+- [Independent codes for the modular cycle](is-cycle-code.md)
 
 ## Sources
 

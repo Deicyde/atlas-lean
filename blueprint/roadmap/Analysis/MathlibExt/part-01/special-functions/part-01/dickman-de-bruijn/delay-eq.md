@@ -7,13 +7,15 @@ proof: formalized
 lean: Real.IsDickmanDeBruijn.delay_eq
 ---
 
-# Delay eq
+# Delay differential equation of the Dickman–de Bruijn function
 
-The Dickman–de Bruijn delay differential equation above one.
+**Delay differential equation of the Dickman–de Bruijn function.** If
+$\rho : \mathbb{R} \to \mathbb{R}$ is a Dickman–de Bruijn function, then
+$u \rho'(u) + \rho(u - 1) = 0$ for every real $u > 1$.
 
 ## Depends on
 
-- [Is Dickman De Bruijn](is-dickman-de-bruijn.md)
+- [Dickman–de Bruijn functions](is-dickman-de-bruijn.md)
 
 ## Sources
 

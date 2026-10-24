@@ -5,5 +5,5 @@ navigation: module
 
 # Motzkin Central Trinomial
 
-- [Trinomial Coefficient self eq sum](trinomial-coefficient-self-eq-sum.md)
-- [Motzkin central trinomial recurrence](motzkin-central-trinomial-recurrence.md)
+- [Central trinomial coefficients as a binomial sum](trinomial-coefficient-self-eq-sum.md)
+- [Recurrence linking central trinomial coefficients and Motzkin numbers](motzkin-central-trinomial-recurrence.md)

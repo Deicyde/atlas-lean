@@ -7,20 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.legendreStirlingFirst_diag
 ---
 
-# Legendre Stirling First diag
+# Diagonal Legendre–Stirling numbers of the first kind
 
-Diagonal: `J(n, n; 1) = 1`.
-Concept `jis_sem_f66a64ccd0402d409b050315` (statements
-`jis_01122ed9cc65cc42cecf4da1`, `jis_073a5750ee8a25ebbba42d0c`).
+**Diagonal Legendre–Stirling numbers of the first kind.** For every natural number $n$, the
+Legendre–Stirling number of the first kind $J(n, n; 1)$ equals $1$.
 
 ## Depends on
 
-- [Legendre Stirling First](legendre-stirling-first.md)
+- [Legendre–Stirling numbers of the first kind](legendre-stirling-first.md)
 
 ## Proof depends on
 
-- [Jacobi Stirling First diagonal](../jacobi-stirling-first-kind/jacobi-stirling-first-diagonal.md)
+- [Diagonal of the first-kind Jacobi–Stirling numbers](../jacobi-stirling-first-kind/jacobi-stirling-first-diagonal.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.LegendreStirlingFirstKind](../../../../../../../sources/v2/MathlibExt.md)
+- Concept `jis_sem_f66a64ccd0402d409b050315` (statements `jis_01122ed9cc65cc42cecf4da1`, `jis_073a5750ee8a25ebbba42d0c`).

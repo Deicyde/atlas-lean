@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Analysis.HausdorffMomentsWanted.Analysis.multiChoose
 ---
 
-# Multi Choose
+# Multi-index binomial coefficient
 
-The multi-index binomial coefficient `C(n,k) = ∏ᵢ C(nᵢ, kᵢ)`.
+**Multi-index binomial coefficient.** For multi-indices $n, k \in \mathbb{N}^d$, the binomial
+coefficient $\binom{n}{k}$ is the natural number $\prod_i \binom{n_i}{k_i}$.
 
 ## Depends on
 

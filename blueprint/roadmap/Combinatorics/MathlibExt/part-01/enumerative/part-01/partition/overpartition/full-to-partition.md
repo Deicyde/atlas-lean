@@ -7,14 +7,15 @@ proof: formalized
 lean: Nat.Overpartition.full_toPartition
 ---
 
-# Full to Partition
+# Underlying partition of the fully overlined overpartition
 
-The underlying partition of `full p` is `p`.
+**Underlying partition of the fully overlined overpartition.** For every partition $p$ of
+$n$, the underlying partition of the fully overlined overpartition of $p$ is $p$.
 
 ## Depends on
 
 - [Overpartition](overpartition.md)
-- [Full](full.md)
+- [Fully overlined overpartition](full.md)
 
 ## Sources
 

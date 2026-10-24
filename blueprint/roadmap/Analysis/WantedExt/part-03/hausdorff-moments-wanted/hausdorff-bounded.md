@@ -6,10 +6,16 @@ statement: formalized
 lean: MathlibExt.Analysis.HausdorffMomentsWanted.Analysis.HausdorffBounded
 ---
 
-# Hausdorff Bounded
+# Hausdorff-bounded sequences
 
-The moments `a` are **Hausdorff bounded**: there is `C` with
-`∑_{0 ≤ k ≤ n} |C(n,k) · (Δᵏa)ₙ| ≤ C` for every `n`.
+**Hausdorff-bounded sequences.** A real sequence $a$ indexed by $\mathbb{N}^d$ is Hausdorff
+bounded if there is a real constant $M$ such that for every multi-index $n \in \mathbb{N}^d$,
+
+$$\sum_{k \le n} \left| \binom{n}{k} (\Delta^k a)_n \right| \le M,$$
+
+where $k$ ranges over the multi-indices with $k \le n$ coordinatewise,
+$\binom{n}{k} = \prod_i \binom{n_i}{k_i}$ is the multi-index binomial coefficient, and
+$\Delta^k a$ is the iterated backward difference of $a$.
 
 ## Depends on
 
@@ -17,8 +23,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Diff](diff.md)
-- [Multi Choose](multi-choose.md)
+- [Iterated backward difference](diff.md)
+- [Multi-index binomial coefficient](multi-choose.md)
 
 ## Sources
 

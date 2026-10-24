@@ -6,22 +6,28 @@ statement: formalized
 lean: MathlibExt.Analysis.FractalUncertaintyWanted.FractalUncertainty.theorem_1_1
 ---
 
-# Theorem 1 1
+# Cohen's fractal uncertainty principle for line-porous sets
 
-Statement of Theorem 1.1:
+**Cohen's fractal uncertainty principle for line-porous sets.** Let $d$ be a natural number and
+$\nu > 0$. Then there are real numbers $\beta > 0$ and $C > 0$ such that for every $h$ with
+$0 < h < 1/100$ and all measurable sets $X, Y$ in the Euclidean space $\mathbb{R}^d$ the following
+holds: if $X \subseteq [-1,1]^d$ is $\nu$-porous on balls from scales $h$ to $1$ and
+$Y \subseteq [-h^{-1},h^{-1}]^d$ is $\nu$-porous on lines from scales $1$ to $h^{-1}$, then every
+$f \in L^2(\mathbb{R}^d)$ whose Fourier transform $\mathcal{F}f$ vanishes almost everywhere outside
+$Y$ satisfies $\|\mathbf{1}_X f\|_2 \le C h^{\beta} \|f\|_2$. Thus $\beta$ and $C$ depend only on
+$\nu$ and $d$.
 
-Let `ν > 0` and assume that
-- `X ⊆ [−1,1]ᵈ` is `ν`-porous on balls from scales `h` to `1`, and
-- `Y ⊆ [−h⁻¹,h⁻¹]ᵈ` is `ν`-porous on lines from scales `1` to `h⁻¹`.
-Then there exist `β,C > 0` depending only on `ν` and `d` such that for all `f ∈ L²(ℝᵈ)`,
-`supp (𝓕 f) ⊆ Y => ‖f * 1_X‖₂ ≤ C * h ^ β * ‖f‖₂`.
-Note: We require `X` and `Y` to be measurable to make the statement more natural.
+Here $\mathcal{F}$ is the Fourier transform on $L^2(\mathbb{R}^d)$, extended by continuity from
+$\mathcal{F}f(\xi) = \int_{\mathbb{R}^d} e^{-2\pi i \langle x, \xi \rangle} f(x)\,dx$ on Schwartz
+functions.
+
+We require $X$ and $Y$ to be measurable to make the statement more natural.
 
 ## Depends on
 
-- [Porous On Balls](porous-on-balls.md)
-- [Porous On Lines](porous-on-lines.md)
-- [Cube](cube.md)
+- [Porosity on balls](porous-on-balls.md)
+- [Porosity on lines](porous-on-lines.md)
+- [Closed cubes in Euclidean space](cube.md)
 
 ## Sources
 

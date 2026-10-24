@@ -14,7 +14,7 @@ The hypothesis `i ≥ 1` (the paper's indices are positive) is needed: for
 
 ## Depends on
 
-- [Signed Stirling First](../../../../../MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
+- [Signed Stirling numbers of the first kind](../../../../../MathlibExt/part-01/enumerative/part-08/signed-stirling-first.md)
 
 ## Sources
 

@@ -6,11 +6,13 @@ statement: formalized
 lean: MathlibExt.Analysis.HessianEstimatesWanted.HessianEstimates.σ₂
 ---
 
-# Σ₂
+# Second elementary symmetric function of the eigenvalues
 
-Given a symmetric linear endomorphism `T` of a finite-dimensional inner product space `E` we
-define: `σ₂ T := ∑ i ≤ i < j ≤ n, λᵢ * λⱼ` where `λᵢ` are the eigenvalues of `T`. When `T` is a
-non-symmetric linear endomorphism we give it the junk value `0`.
+**Second elementary symmetric function of the eigenvalues.** Let $E$ be a finite-dimensional
+real inner product space of dimension $n$. If $T : E \to E$ is a symmetric linear map with
+eigenvalues $\lambda_1, \dots, \lambda_n$, listed with multiplicity, then
+$\sigma_2(T) = \sum_{1 \le i < j \le n} \lambda_i \lambda_j$. If $T$ is not symmetric, then
+$\sigma_2(T) = 0$ by convention.
 
 ## Depends on
 

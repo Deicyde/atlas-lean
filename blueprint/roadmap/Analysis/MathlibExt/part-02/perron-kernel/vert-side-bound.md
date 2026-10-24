@@ -7,9 +7,15 @@ proof: formalized
 lean: PerronKernel.vert_side_bound
 ---
 
-# Vert side bound
+# Bound for the integral of $y^s/s$ along a vertical segment
 
-Vertical side bound at real part `d ≠ 0`.
+**Bound for the integral of $y^s/s$ along a vertical segment.** Let $y, d, T$ be real numbers
+with $y > 0$, $d \neq 0$ and $T > 0$, and write $y^s = e^{s \log y}$. Then
+
+$$\left| \int_{-T}^{T} \frac{y^{d + it}}{d + it}\,dt \right| \le
+2T \cdot \frac{e^{d \log y}}{|d|},$$
+
+that is, at most $2T y^d/|d|$.
 
 ## Depends on
 
@@ -17,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Norm cpow of Real](norm-cpow-of-real.md)
+- [Modulus of a complex power of a positive real](norm-cpow-of-real.md)
 
 ## Sources
 

@@ -11,7 +11,7 @@ Evaluation of integer polynomials, as a ring homomorphism `ℤ[x] → LIP(U)`.
 
 ## Depends on
 
-- [Lip Subring](lip-subring.md)
+- [The ring $\mathrm{LIP}(U)$ of locally integer polynomial functions](lip-subring.md)
 
 ## Sources
 

@@ -6,17 +6,20 @@ proof: formalized
 lean: MathlibExt.Analysis.iharaConstantOf_congr
 ---
 
-# Ihara Constant Of congr
+# The abstract Ihara constant ignores finitely many values
 
-Changing finitely many values of `N` does not change the limsup.
+**The abstract Ihara constant ignores finitely many values.** Let
+$N, M : \mathbb{N} \to \mathbb{N}$. If $N(g) = M(g)$ for all sufficiently large $g$, then $N$ and
+$M$ have the same abstract Ihara constant. In particular, changing finitely many values of $N$
+does not change its abstract Ihara constant.
 
 ## Depends on
 
-- [Ihara Constant Of](ihara-constant-of.md)
+- [Abstract Ihara constant of a sequence](ihara-constant-of.md)
 
 ## Proof depends on
 
-- [Ihara Ratio](ihara-ratio.md)
+- [Normalized Ihara ratio](ihara-ratio.md)
 
 ## Sources
 

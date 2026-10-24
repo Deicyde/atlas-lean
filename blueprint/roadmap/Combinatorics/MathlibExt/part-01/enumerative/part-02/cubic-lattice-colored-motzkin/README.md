@@ -5,5 +5,5 @@ navigation: module
 
 # Cubic Lattice Colored Motzkin
 
-- [Cube lattice paths card eq uld Motzkin Number](cube-lattice-paths-card-eq-uld-motzkin-n.md)
-- [Cube lattice paths card eq colored motzkin card](cube-lattice-paths-card-eq-colored-motzk.md)
+- [Cubic lattice walks counted by a colored Motzkin number](cube-lattice-paths-card-eq-uld-motzkin-n.md)
+- [Cubic lattice walks and colored Motzkin paths](cube-lattice-paths-card-eq-colored-motzk.md)

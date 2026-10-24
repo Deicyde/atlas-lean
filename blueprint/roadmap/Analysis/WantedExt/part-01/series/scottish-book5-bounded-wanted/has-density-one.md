@@ -5,12 +5,13 @@ statement: formalized
 lean: MathlibExt.Analysis.Series.ScottishBook5BoundedWanted.HasDensityOne
 ---
 
-# Has Density One
+# Index sequences of density one
 
-An index sequence has asymptotic density 1, encoded by
-`s n / n → 1` for the strictly increasing index sequence `s`. For a
-strictly increasing sequence of naturals this ratio condition is
-equivalent to the usual counting definition of density 1.
+**Index sequences of density one.** A sequence $s \colon \mathbb{N} \to \mathbb{N}$ has
+density one when it is strictly increasing and $s(n+1)/(n+1) \to 1$ as $n \to \infty$.
+
+For a strictly increasing sequence of natural numbers this ratio condition is equivalent to the
+usual counting definition of density $1$ for its set of values.
 
 ## Depends on
 

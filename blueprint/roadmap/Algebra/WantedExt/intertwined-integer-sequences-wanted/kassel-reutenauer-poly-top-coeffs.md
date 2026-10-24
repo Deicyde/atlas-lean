@@ -5,17 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.kasselReutenauerPoly_top_coeffs
 ---
 
-# Kassel Reutenauer Poly top coeffs
+# Top coefficients of the Kassel–Reutenauer polynomials
 
-Top coefficients of `P̄_n`: for `n ≥ 10`,
-`P̄_n(X) = X^{n-1} + X^{n-2} - (n-2) X^{n-3} - (n-3) X^{n-4}
-  + ((n-3)(n-4)/2) X^{n-5} + ((n-4)(n-5)/2) X^{n-6}` plus monomials of degree
-`≤ n - 7` (stated as: the difference has degree `< n - 6`). The fractions are
-written `C(n-3, 2)` and `C(n-4, 2)`.
+**Top coefficients of the Kassel–Reutenauer polynomials.** For $n \ge 10$, the polynomial
+
+$$
+\bar P_n(X) - \Bigl(X^{n-1} + X^{n-2} - (n-2) X^{n-3} - (n-3) X^{n-4} +
+\tbinom{n-3}{2} X^{n-5} + \tbinom{n-4}{2} X^{n-6}\Bigr)
+$$
+
+has degree less than $n - 6$, where $\bar P_n$ is the Kassel–Reutenauer polynomial. That is, up
+to terms of degree at most $n - 7$, $\bar P_n(X)$ equals
+$X^{n-1} + X^{n-2} - (n-2) X^{n-3} - (n-3) X^{n-4} + \frac{(n-3)(n-4)}{2} X^{n-5} +
+\frac{(n-4)(n-5)}{2} X^{n-6}$.
 
 ## Depends on
 
-- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
+- [Kassel–Reutenauer polynomial](kassel-reutenauer-poly.md)
 
 ## Sources
 

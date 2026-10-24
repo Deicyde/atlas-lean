@@ -6,17 +6,19 @@ statement: formalized
 lean: MetaMathlibExt.IsSquareOrDomino
 ---
 
-# Is Square Or Domino
+# Square and domino tiles
 
-A tile is either one unit square or one domino joining adjacent cells.
+**Square and domino tiles.** A set $d$ of cells of the $3 \times n$ rectangle is a
+square-or-domino tile when it consists of exactly one cell, or of exactly two cells that are
+adjacent.
 
 ## Depends on
 
-- [Tiling Cell](tiling-cell.md)
+- [Cells of the $3 \times n$ rectangle](tiling-cell.md)
 
 ## Proof depends on
 
-- [Adjacent](adjacent.md)
+- [Adjacent cells](adjacent.md)
 
 ## Sources
 

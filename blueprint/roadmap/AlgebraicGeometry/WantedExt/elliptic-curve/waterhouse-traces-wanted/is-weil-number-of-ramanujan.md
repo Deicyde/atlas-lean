@@ -5,19 +5,20 @@ statement: formalized
 lean: MetaMathlibExt.isWeilNumber_of_ramanujan
 ---
 
-# Is Weil Number of ramanujan
+# Ramanujan graphs give Weil numbers
 
-Proposition 1 of Vallières, in adjacency-matrix form: let `A` be a symmetric integer matrix
-(the adjacency matrix of a `(q + 1)`-regular graph `X`) that is Ramanujan, i.e. every eigenvalue
-`μ ≠ q + 1` satisfies `|μ| ≤ 2 √q`. Then every inverse root `α` of
-`P_X(u) = ∏_{μ ≠ q + 1} (1 - μ u + q u²)`, i.e. every root of `t² - μ t + q` for an eigenvalue
-`μ ≠ q + 1`, is a Weil `q`-number: an algebraic integer all of whose conjugates (the roots in `ℂ`
-of its minimal polynomial over `ℚ`, i.e. its images under the embeddings `ℚ(α) → ℂ`) have
-absolute value `√q`.
+**Ramanujan graphs give Weil numbers.** Let $q$ be a natural number and let $A$ be a symmetric
+$n \times n$ matrix with integer entries such that every complex root $\mu \ne q + 1$ of its
+characteristic polynomial satisfies $|\mu| \le 2\sqrt{q}$. Let $\mu \ne q + 1$ be a complex root
+of the characteristic polynomial of $A$ and let $\alpha \in \mathbb{C}$ satisfy
+$\alpha^2 - \mu\alpha + q = 0$. Then $\alpha$ is an algebraic integer, and every complex root of
+the minimal polynomial of $\alpha$ over $\mathbb{Q}$ has absolute value $\sqrt{q}$; that is,
+$\alpha$ is a Weil $q$-number.
 
-The paper takes `q = p ^ a` and `X` connected; neither is needed here, so `q` is any natural
-number and the regularity and connectedness hypotheses are dropped (symmetry keeps the eigenvalues
-real). The product formula for `P_X` is the one displayed in the paper (Section 2.1.3).
+When $A$ is the adjacency matrix of a $(q + 1)$-regular graph $X$, the hypothesis says that $X$ is
+Ramanujan, and the numbers $\alpha$ are the inverse roots of
+$P_X(u) = \prod_{\mu \ne q + 1} (1 - \mu u + q u^2)$. The paper takes $q = p^a$ and $X$
+connected; neither assumption is needed.
 
 ## Depends on
 

@@ -6,11 +6,13 @@ statement: formalized
 lean: MetaMathlibExt.smarandachePrefix
 ---
 
-# Smarandache Prefix
+# Prefix of the Smarandache permutation sequence
 
-Flattened prefix of the first `N` blocks of the Smarandache permutation
-sequence (concept `jis_sem_23e7b5e48daf56d0a358ebfc`, statement
-`jis_c46e1d9809a20ee69374dac7`).
+**Prefix of the Smarandache permutation sequence.** For a natural number $N$, this is the
+list of natural numbers obtained by concatenating, in order, the Smarandache blocks numbered
+$1, 2, \dots, N$, where block $n$ is the list $(1, 3, \dots, 2n - 1, 2n, 2n - 2, \dots, 2)$ of the
+odd numbers below $2n$ in increasing order followed by the even numbers from $2n$ down to $2$.
+For $N = 0$ it is the empty list.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Smarandache Block](smarandache-block.md)
+- [Blocks of the Smarandache permutation sequence](smarandache-block.md)
 
 ## Sources
 

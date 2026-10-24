@@ -7,24 +7,27 @@ proof: formalized
 lean: PeriodPair.poleSetInFundamentalParallelogram_finite
 ---
 
-# Pole Set In Fundamental Parallelogram finite
+# Finitely many poles in a fundamental parallelogram
 
-The pole set of an elliptic function in a fundamental parallelogram is finite.
-The proof restricts the divisor to a closed ball covering the parallelogram and uses
-finiteness of divisor support there.
+**Finitely many poles in a fundamental parallelogram.** Let $L$ be a period pair, let $f$ be an
+elliptic function for $L$, and let $\alpha \in \mathbb{C}$. Then the set of poles of $f$ in the
+fundamental parallelogram of $L$ with vertex $\alpha$ is finite.
+
+The proof covers the parallelogram by a closed disc, on which $f$ is meromorphic, and uses that
+the divisor of $f$ on that disc has finite support.
 
 ## Depends on
 
-- [Is Elliptic Function](../function/is-elliptic-function.md)
-- [Pole Set In Fundamental Parallelogram](pole-set-in-fundamental-parallelogram.md)
+- [Elliptic functions](../function/is-elliptic-function.md)
+- [Poles in a fundamental parallelogram](pole-set-in-fundamental-parallelogram.md)
 
 ## Proof depends on
 
-- [Fundamental Parallelogram](../fundamental-parallelogram/fundamental-parallelogram.md)
-- [Is Bounded fundamental Parallelogram](is-bounded-fundamental-parallelogram.md)
-- [Mem pole Set In Fundamental Parallelogram iff](mem-pole-set-in-fundamental-parallelogra.md)
-- [Pole Multiplicity](pole-multiplicity.md)
-- [Pole Multiplicity ne zero iff](pole-multiplicity-ne-zero-iff.md)
+- [Fundamental parallelogram](../fundamental-parallelogram/fundamental-parallelogram.md)
+- [Fundamental parallelograms are bounded](is-bounded-fundamental-parallelogram.md)
+- [Membership in the pole set of a fundamental parallelogram](mem-pole-set-in-fundamental-parallelogra.md)
+- [Pole multiplicity](pole-multiplicity.md)
+- [Pole multiplicity is nonzero exactly at negative order](pole-multiplicity-ne-zero-iff.md)
 
 ## Sources
 

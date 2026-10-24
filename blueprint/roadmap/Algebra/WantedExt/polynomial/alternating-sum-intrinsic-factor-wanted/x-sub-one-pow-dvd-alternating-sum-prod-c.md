@@ -5,14 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.X_sub_one_pow_dvd_alternating_sum_prod_comp_X_pow
 ---
 
-# X sub one pow dvd alternating sum prod comp X pow
+# The factor $(x - 1)^n$ for polynomials with distinct real roots
 
-Theorem 3.1: for `f = c ∏_{r ∈ s} (x - r)` with distinct real roots `r ∈ s`, `(x - 1)^n`
-divides the formal cross-multiplied polynomial
-`∑_{i=0}^n (-1)^i C(n, i) ∏_{k=0, k ≠ i}^n f(x^k)`.
-Under the paper's conditions `c ≠ 0`, `1 ∉ s` it is the numerator of
-`Q_n(x; f) = ∑_{i=0}^n (-1)^i C(n, i) / f(x^i)`; for `c = 0` or `1 ∈ s` some `f(x^k)` is zero
-and only the polynomial statement remains.
+**The factor $(x - 1)^n$ for polynomials with distinct real roots.** Let $c$ be a real
+number, let $s$ be a finite set of real numbers, and let $f(x) = c \prod_{r \in s} (x - r)$ in
+$\mathbb{R}[x]$. For every natural number $n$, the polynomial $(x - 1)^n$ divides the polynomial
+
+$$\sum_{i=0}^{n} (-1)^i \binom{n}{i} \prod_{0 \le k \le n,\ k \ne i} f(x^k).$$
+
+For $c \ne 0$ and $1 \notin s$ (the paper's conditions), this polynomial is the numerator of
+$Q_n(x; f) = \sum_{i=0}^{n} (-1)^i \binom{n}{i} / f(x^i)$ over the common denominator
+$\prod_{k=0}^{n} f(x^k)$; for $c = 0$ or $1 \in s$ some $f(x^k)$ is zero and only the
+polynomial statement remains.
 
 ## Depends on
 

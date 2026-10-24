@@ -11,7 +11,7 @@ Source: Gao, arXiv:2607.27869, exact dimension-200 root rate.
 
 ## Depends on
 
-- [Shannon Capacity Cycle](../../../../MathlibExt/part-01/coding/cycle-code/shannon-capacity-cycle.md)
+- [Shannon capacity of the modular cycle](../../../../MathlibExt/part-01/coding/cycle-code/shannon-capacity-cycle.md)
 - [Gao2026 M40](gao2026-m40.md)
 
 ## Sources

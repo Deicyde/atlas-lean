@@ -7,19 +7,23 @@ proof: formalized
 lean: MetaMathlibExt.centralTrinomialCoeff_eq_legendre_specialValue
 ---
 
-# Central Trinomial Legendre
+# Central trinomial coefficients as Legendre values
 
-The central trinomial coefficient as a special value of the Legendre
-polynomial: `c_n = i^n * √(3^n) * P_n(-i/√3)`.
+**Central trinomial coefficients as Legendre values.** For a natural number $n$, let $c_n$ be the
+central trinomial coefficient, the coefficient of $X^n$ in $(1 + X + X^2)^n$, and let $P_n$ be the
+$n$th Legendre polynomial. Then, in the complex numbers,
 
-The standard Legendre value `P_n(-i/√3)` is represented via
-`Polynomial.shiftedLegendre`: Mathlib's shifted polynomial satisfies
-`P⋆_n(y) = P_n(1 - 2*y)`, so evaluating at `(1 + i/√3)/2` gives `P_n(-i/√3)`.
+$$
+c_n = i^n \sqrt{3^n}\, P_n\Bigl(-\frac{i}{\sqrt{3}}\Bigr).
+$$
 
-Proof: Bonnet's recurrence `(n+1) P_{n+1}(x) = (2n+1) x P_n(x) - n P_{n-1}(x)`, evaluated at
-`x = -i/√3` and rescaled by `i^n √(3^n)`, becomes the central trinomial recurrence
-`(n+1) c_{n+1} = (2n+1) c_n + 3n c_{n-1}` (OEIS A002426), proved in
-`MathlibExt.Combinatorics.Enumerative.CentralTrinomialRecurrence`; both sides agree at `n = 0, 1`.
+Here $P_n(-i/\sqrt{3})$ is computed through the shifted Legendre polynomial
+$\tilde{P}_n(y) = \sum_{k=0}^{n} (-1)^k \binom{n}{k} \binom{n+k}{n} y^k$, which satisfies
+$\tilde{P}_n(y) = P_n(1 - 2y)$, evaluated at $y = (1 + i/\sqrt{3})/2$.
+
+Proof: Bonnet's recurrence $(n+1) P_{n+1}(x) = (2n+1) x P_n(x) - n P_{n-1}(x)$, evaluated at
+$x = -i/\sqrt{3}$ and rescaled by $i^n \sqrt{3^n}$, becomes the central trinomial recurrence
+$(n+1) c_{n+1} = (2n+1) c_n + 3n c_{n-1}$ (OEIS A002426); both sides agree at $n = 0, 1$.
 
 ## Depends on
 
@@ -27,7 +31,7 @@ Proof: Bonnet's recurrence `(n+1) P_{n+1}(x) = (2n+1) x P_n(x) - n P_{n-1}(x)`, 
 
 ## Proof depends on
 
-- [Central Trinomial Recurrence](central-trinomial-coeff-three-term-recur.md)
+- [Three-term recurrence for central trinomial coefficients](central-trinomial-coeff-three-term-recur.md)
 
 ## Sources
 

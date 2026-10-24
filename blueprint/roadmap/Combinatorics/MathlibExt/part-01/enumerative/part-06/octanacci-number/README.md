@@ -5,5 +5,5 @@ navigation: module
 
 # Octanacci Number
 
-- [Octanacci Window](octanacci-window.md)
-- [Octanacci Number](octanacci-number.md)
+- [Octanacci window](octanacci-window.md)
+- [Octanacci numbers](octanacci-number.md)

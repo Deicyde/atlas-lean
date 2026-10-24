@@ -13,12 +13,12 @@ displayed in the source.
 
 ## Depends on
 
-- [Fib Inf](../../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
+- [Infinite Fibonacci word](../../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf.md)
 
 ## Proof depends on
 
-- [Fib Inf agrees](../../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf-agrees.md)
-- [Fib Word](../../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-word.md)
+- [Finite Fibonacci words agree with the infinite Fibonacci word](../../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-inf-agrees.md)
+- [Finite Fibonacci words](../../../../../MathlibExt/part-01/infinite-word/fibonacci-word/fib-word.md)
 
 ## Sources
 

@@ -7,9 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.hasSum_stirlingSecond_succ_egf
 ---
 
-# Has Sum stirling Second succ egf
+# Exponential generating function of a shifted Stirling column
 
-The exponential generating function for a shifted column of Stirling numbers of the second kind.
+**Exponential generating function of a shifted Stirling column.** Write $S(n,k)$ for the
+Stirling numbers of the second kind. For every natural number $j$ and every real number $x$, the
+series
+
+$$\sum_{n=0}^{\infty} S(n+1,j+1)\, \frac{x^n}{n!}$$
+
+converges unconditionally to $e^x (e^x - 1)^j / j!$.
 
 ## Depends on
 
@@ -17,7 +23,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Stirling Second mul factorial eq sum](stirling-second-mul-factorial-eq-sum.md)
+- [Explicit formula for Stirling numbers of the second kind](stirling-second-mul-factorial-eq-sum.md)
 
 ## Sources
 

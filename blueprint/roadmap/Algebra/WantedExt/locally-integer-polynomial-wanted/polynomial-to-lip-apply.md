@@ -6,13 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.polynomialToLIP_apply
 ---
 
-# Polynomial To LIP apply
+# Values of the evaluation map into LIP(U)
 
-`polynomialToLIP U p` is the function `u ↦ p(u)`.
+**Values of the evaluation map into LIP(U).** For $U \subseteq \mathbb{Z}$, an integer
+polynomial $p \in \mathbb{Z}[x]$ and $u \in U$, the image of $p$ under the evaluation map
+$\mathbb{Z}[x] \to \mathrm{LIP}(U)$ takes the value $p(u)$ at $u$.
 
 ## Depends on
 
-- [Lip Subring](lip-subring.md)
+- [The ring $\mathrm{LIP}(U)$ of locally integer polynomial functions](lip-subring.md)
 - [Polynomial To LIP](polynomial-to-lip.md)
 
 ## Sources

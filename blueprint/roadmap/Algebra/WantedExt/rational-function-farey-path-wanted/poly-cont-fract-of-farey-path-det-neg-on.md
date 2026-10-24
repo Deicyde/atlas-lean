@@ -5,18 +5,23 @@ statement: formalized
 lean: MetaMathlibExt.polyContFract_of_farey_path_det_neg_one_pow_pred
 ---
 
-# Poly Cont Fract of farey path det neg one pow pred
+# Farey paths of polynomials with alternating determinants starting at 1
 
-Corollary 1: in the setting of Theorem 6 with `cᵢ = (-1)^(i-1)`, the path
-`u₀ / v₀ → ⋯ → uₙ / vₙ` defines the regular continued fraction of `uₙ / vₙ`
-with partial numerators `uᵢ`, partial denominators `vᵢ`, and partial quotients
-`aᵢ = (-1)^i (uᵢ vᵢ₋₂ - uᵢ₋₂ vᵢ)` (for `i = 1`, with `u₋₁ = 1`, `v₋₁ = 0`,
-this reads `a₁ = v₁`). The paper presents the corollaries for `F₂`, `F₃`; the
-statement holds verbatim over any field.
+**Farey paths of polynomials with alternating determinants starting at 1.** Let $F$ be a
+field, let $n \in \mathbb{N}$, and let $u_i, v_i \in F[X]$ for $i \ge 0$. Suppose that $v_0 = 1$
+and that for $1 \le i \le n$ we have $\deg v_{i-1} < \deg v_i$ and
+$u_i v_{i-1} - u_{i-1} v_i = (-1)^{i-1}$. Let $a_0, a_1, \ldots \in F[X]$ satisfy $a_0 = u_0$,
+$a_1 = v_1$ and $a_i = (-1)^i (u_i v_{i-2} - u_{i-2} v_i)$ for $2 \le i \le n$. Then $a_i$ is
+nonconstant for $1 \le i \le n$, and for every $i \le n$ the numerator $A_i$ and denominator
+$B_i$ of the $i$th convergent of the continued fraction $[a_0; a_1, \ldots, a_n]$ over $F(X)$
+are $A_i = u_i$ and $B_i = v_i$.
+
+The paper presents the corollaries for $\mathbb{F}_2$ and $\mathbb{F}_3$; the statement holds
+verbatim over any field.
 
 ## Depends on
 
-- [Poly Cont Fract](poly-cont-fract.md)
+- [Finite continued fraction with polynomial partial quotients](poly-cont-fract.md)
 
 ## Sources
 

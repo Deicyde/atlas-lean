@@ -5,14 +5,14 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.SupOnTangentCirclesLogConvexWanted.sq_sSup_norm_circle_one_le_mul
 ---
 
-# Sup On Tangent Circles Log Convex Wanted
+# A three-circles inequality for circles tangent at the origin
 
-Let $f:\mathbb{C}\to\mathbb{C}$ be an entire function and define a function
-$A:(0,\infty)\to[0,\infty)$ as follows
+**A three-circles inequality for circles tangent at the origin.** Let
+$f:\mathbb{C}\to\mathbb{C}$ be an entire function and, for $r>0$, let
 \[
 A(r)=\sup\{\lvert f(z)\rvert:\lvert z-r\rvert=r\}.
 \]
-Prove that
+Then
 \[
 A(1)^{2}\le A(2)\,A\!\left(\frac{2}{3}\right).
 \]

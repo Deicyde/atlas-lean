@@ -4,5 +4,5 @@ navigation: module
 
 # Wiener Levy
 
-- [In Wiener Algebra](in-wiener-algebra.md)
-- [Wiener levy analytic calculus](wiener-levy-analytic-calculus.md)
+- [Wiener algebra on the circle](in-wiener-algebra.md)
+- [Wiener–Lévy theorem](wiener-levy-analytic-calculus.md)

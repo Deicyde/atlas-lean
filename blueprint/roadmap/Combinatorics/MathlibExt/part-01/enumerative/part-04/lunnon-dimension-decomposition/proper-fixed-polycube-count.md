@@ -6,11 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.properFixedPolycubeCount
 ---
 
-# Proper Fixed Polycube Count
+# Number of proper fixed polycubes
 
-`DX(n,i)`: number of fixed `n`-cell polycubes proper in dimension `i`,
-counted as `Nat.card` of canonical representatives. Asinowski et al., JIS 15
-(2012), Article 12.8.4, line 978, state `DX(n,0) = 0` for `n > 1`.
+**Number of proper fixed polycubes.** For natural numbers $n$ and $i$, $\mathrm{DX}(n,i)$ is
+the number of fixed $n$-cell polycubes proper in dimension $i$, that is, of fixed $n$-cell
+polycubes in dimension $i$ whose proper dimension is $i$.
 
 ## Depends on
 
@@ -18,8 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Proper Fixed Polycube](proper-fixed-polycube.md)
+- [Proper fixed polycubes](proper-fixed-polycube.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.LunnonDimensionDecomposition](../../../../../../../sources/v2/MathlibExt.md)
+- Asinowski et al., JIS 15 (2012), Article 12.8.4, line 978, state $\mathrm{DX}(n,0) = 0$ for $n > 1$.

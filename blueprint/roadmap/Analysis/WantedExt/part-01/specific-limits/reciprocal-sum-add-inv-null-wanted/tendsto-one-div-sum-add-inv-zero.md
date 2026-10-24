@@ -5,18 +5,15 @@ statement: formalized
 lean: MathlibExt.Analysis.SpecificLimits.ReciprocalSumAddInvNullWanted.tendsto_one_div_sum_add_inv_zero
 ---
 
-# Tendsto one div sum add inv zero
+# The reciprocals of $\sum_{k=0}^{n} (a_k + 1/a_k)$ tend to zero
 
-Let $(a_n)$ be a sequence in $(0,\infty)$ and define
-
-\[
-x_n := \sum_{k=0}^n (a_k+1/a_k),\qquad n\in\N.
-\]
-Show that $(1/x_n)$ is a null sequence.
+**The reciprocals of $\sum_{k=0}^{n} (a_k + 1/a_k)$ tend to zero.** Let
+$(a_n)_{n \in \mathbb{N}}$ be a sequence of positive real numbers, and for $n \in \mathbb{N}$ let
+$x_n = \sum_{k=0}^{n} (a_k + 1/a_k)$. Then $1/x_n \to 0$ as $n \to \infty$.
 
 ## Depends on
 
-- [X Seq](x-seq.md)
+- [Partial sums of $a_k + 1/a_k$](x-seq.md)
 
 ## Sources
 

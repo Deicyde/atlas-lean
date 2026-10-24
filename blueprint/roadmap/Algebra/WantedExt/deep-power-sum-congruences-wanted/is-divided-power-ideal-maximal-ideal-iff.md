@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.isDividedPowerIdeal_maximalIdeal_iff
 ---
 
-# Is Divided Power Ideal maximal Ideal iff
+# When the maximal ideal of a DVR is a divided-power ideal
 
-The maximal ideal of a discrete valuation ring `O` with `p O = 𝔪 ^ e`, `e ≥ 1`, is a
-divided-power ideal if and only if the ramification degree `e` is at most `p - 1`.
+**When the maximal ideal of a DVR is a divided-power ideal.** Let $p$ be a prime and let $O$ be
+a discrete valuation ring with maximal ideal $\mathfrak{m}$ such that $pO = \mathfrak{m}^e$ for
+some integer $e \ge 1$. Then $\mathfrak{m}$ is a divided-power ideal if and only if $e \le p - 1$.
 
 ## Depends on
 
-- [Is Divided Power Ideal](is-divided-power-ideal.md)
+- [Divided-power ideal](is-divided-power-ideal.md)
 
 ## Sources
 

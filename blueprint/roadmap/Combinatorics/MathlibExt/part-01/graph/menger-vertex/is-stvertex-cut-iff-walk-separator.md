@@ -7,14 +7,16 @@ proof: formalized
 lean: MathlibExt.Combinatorics.SimpleGraph.MengerVertexWanted.isSTVertexCut_iff_walkSeparator
 ---
 
-# Is STVertex Cut iff walk Separator
+# Vertex cuts are walk separators
 
-A vertex cut is the same as a walk-hitting separator: `C` is an `s-t` vertex cut
-iff `s ∉ C`, `t ∉ C`, and every `s-t` walk meets `C`.
+**Vertex cuts are walk separators.** Let $G$ be a simple graph on a finite vertex set, let $s$
+and $t$ be vertices of $G$, and let $C$ be a set of vertices of $G$. Then $C$ is an $s$-$t$ vertex
+cut if and only if $s \notin C$, $t \notin C$, and every walk from $s$ to $t$ in $G$ passes
+through a vertex of $C$.
 
 ## Depends on
 
-- [Is STVertex Cut](is-stvertex-cut.md)
+- [Vertex cuts separating two vertices](is-stvertex-cut.md)
 
 ## Sources
 

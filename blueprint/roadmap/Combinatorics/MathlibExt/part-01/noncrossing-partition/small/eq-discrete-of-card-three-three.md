@@ -12,15 +12,15 @@ If a noncrossing partition of `Fin 3` has three blocks it is discrete.
 
 ## Depends on
 
-- [Noncrossing Partition](../basic/noncrossing-partition.md)
-- [Is Noncrossing](../basic/is-noncrossing.md)
-- [Set Partition](../basic/set-partition.md)
-- [Discrete](../operations/discrete.md)
+- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [Noncrossing set partition](../basic/is-noncrossing.md)
+- [Set partition](../basic/set-partition.md)
+- [Discrete noncrossing partition](../operations/discrete.md)
 
 ## Proof depends on
 
-- [Eq bot iff card parts eq card](../../finpartition/card/eq-bot-iff-card-parts-eq-card.md)
-- [Eq discrete iff val eq bot](../operations/eq-discrete-iff-val-eq-bot.md)
+- [Recognizing the partition into singletons by its number of blocks](../../finpartition/card/eq-bot-iff-card-parts-eq-card.md)
+- [Characterization of the discrete noncrossing partition](../operations/eq-discrete-iff-val-eq-bot.md)
 
 ## Sources
 

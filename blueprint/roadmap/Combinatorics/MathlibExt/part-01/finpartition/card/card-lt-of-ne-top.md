@@ -6,9 +6,12 @@ proof: formalized
 lean: Finpartition.card_lt_of_ne_top
 ---
 
-# Card lt of ne top
+# Blocks of a partition other than the coarsest are smaller than the ground set
 
-If `P ≠ ⊤`, every block has cardinality strictly below the carrier.
+**Blocks of a partition other than the coarsest are smaller than the ground set.** Let $P$
+be a partition of a finite set $s$ that is not the coarsest partition $\top$ of $s$ (the one
+whose only block is $s$ when $s$ is nonempty). Then every block $B$ of $P$ satisfies
+$|B| < |s|$.
 
 ## Depends on
 

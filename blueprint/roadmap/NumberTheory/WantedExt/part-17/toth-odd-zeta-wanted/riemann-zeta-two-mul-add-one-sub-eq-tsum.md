@@ -19,7 +19,7 @@ indexed by `n + 1`.
 
 - [Even-index Euler numbers](../../../../Analysis/MathlibExt/part-01/ramanujan/part-01/part1-ch5-entry10b-euleriansymmetry/chapter5-euler-even.md)
 - [Paperfolding Seq](../../../../Combinatorics/WantedExt/part-04/reduced-complexities-wanted/paperfolding-seq.md)
-- [Thue Morse](../../../../Combinatorics/MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
+- [Thue–Morse sequence](../../../../Combinatorics/MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
 
 ## Sources
 

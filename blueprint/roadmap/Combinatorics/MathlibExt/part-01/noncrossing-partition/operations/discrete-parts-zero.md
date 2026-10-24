@@ -6,15 +6,17 @@ proof: formalized
 lean: NoncrossingPartition.discrete_parts_zero
 ---
 
-# Discrete parts zero
+# The discrete partition of the empty set has no blocks
 
-Discrete parts are empty at arity zero.
+**The discrete partition of the empty set has no blocks.** For $n = 0$, the discrete
+noncrossing partition of the empty set $\{0, \dots, n-1\}$ has no blocks: its set of blocks is
+empty.
 
 ## Depends on
 
-- [Is Noncrossing](../basic/is-noncrossing.md)
-- [Set Partition](../basic/set-partition.md)
-- [Discrete](discrete.md)
+- [Noncrossing set partition](../basic/is-noncrossing.md)
+- [Set partition](../basic/set-partition.md)
+- [Discrete noncrossing partition](discrete.md)
 
 ## Sources
 

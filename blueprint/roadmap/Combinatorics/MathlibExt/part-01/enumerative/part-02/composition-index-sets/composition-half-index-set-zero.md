@@ -12,11 +12,11 @@ Boundary characteristic: `S(m, 0, q)` is empty.
 
 ## Depends on
 
-- [Composition Half Index Set](composition-half-index-set.md)
+- [The index set $S(m, n, q)$](composition-half-index-set.md)
 
 ## Proof depends on
 
-- [Mem composition Half Index Set](mem-composition-half-index-set.md)
+- [Membership in $S(m, n, q)$](mem-composition-half-index-set.md)
 
 ## Sources
 

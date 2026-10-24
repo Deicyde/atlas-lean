@@ -5,9 +5,10 @@ statement: formalized
 lean: MetaMathlibExt.permDoubleDescents
 ---
 
-# Perm Double Descents
+# Number of double descents
 
-`ddes σ`: the number of double descents of `σ`.
+**Number of double descents.** For a permutation $\sigma$ of $\{0, 1, \dots, n-1\}$,
+$\mathrm{ddes}(\sigma)$ is the number of positions $i$ that are double descents of $\sigma$.
 
 ## Depends on
 
@@ -15,7 +16,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Double Descent At](is-double-descent-at.md)
+- [Double descent of a permutation](is-double-descent-at.md)
 
 ## Sources
 

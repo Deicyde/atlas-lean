@@ -16,8 +16,8 @@ The empty permutation has no cycles and no fixed points: `a(0, 0, 0) = 1`.
 
 ## Proof depends on
 
-- [Cycle Quotient Count](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
-- [Cycle Quotient Count eq](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count-eq.md)
+- [Number of cycles of a permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count.md)
+- [Counting cycles via the cycle type](../../../../../MathlibExt/part-01/enumerative/part-08/stirling/cycle-quotient-count-eq.md)
 
 ## Sources
 

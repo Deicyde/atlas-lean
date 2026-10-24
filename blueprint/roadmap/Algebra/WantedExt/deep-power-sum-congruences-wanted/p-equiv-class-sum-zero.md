@@ -6,9 +6,10 @@ proof: formalized
 lean: MetaMathlibExt.pEquivClassSum_zero
 ---
 
-# P Equiv Class Sum zero
+# The class sum of the empty partition
 
-`g_∅ = 1`.
+**The class sum of the empty partition.** For every finite set of variables $\sigma$ and every
+natural number $p$, the $p$-equivalence class sum of the empty multiset is $g_\emptyset = 1$.
 
 ## Depends on
 
@@ -16,8 +17,8 @@ lean: MetaMathlibExt.pEquivClassSum_zero
 
 ## Proof depends on
 
-- [Is PSplitting](is-psplitting.md)
-- [P Equiv Class](p-equiv-class.md)
+- [$p$-splitting of multisets of parts](is-psplitting.md)
+- [The $p$-equivalence class of a multiset of parts](p-equiv-class.md)
 
 ## Sources
 

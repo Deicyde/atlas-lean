@@ -7,17 +7,21 @@ proof: formalized
 lean: MetaMathlibExt.hankelTransform_eq_prod_of_weightedMotzkin
 ---
 
-# Heilermann Weighted Motzkin Determinant
+# Heilermann's formula for weighted Motzkin arrays
 
-Weighted-Motzkin determinant form of Heilermann's formula: the Hankel
-transform of the zeroth column of a weighted-Motzkin triangle is
-`mu0 ^ (n + 1) * beta_1 ^ n * ... * beta_n ^ 1`.
+**Heilermann's formula for weighted Motzkin arrays.** Let $K$ be a commutative ring, let
+$\alpha$, $\beta$ be sequences in $K$, let $\mu_0 \in K$, and let $(M_{n,j})_{n, j \ge 0}$ be an
+array in $K$ with $M_{0,0} = \mu_0$ and, for all $n, j \ge 0$, $M_{0,j+1} = 0$,
+$M_{n+1,0} = \alpha_0 M_{n,0} + \beta_1 M_{n,1}$ and
+$M_{n+1,j+1} = M_{n,j} + \alpha_{j+1} M_{n,j+1} + \beta_{j+2} M_{n,j+2}$. Then for every
+$n \ge 0$ the Hankel transform of the column $(M_{m,0})_{m \ge 0}$ at $n$, the determinant of the
+$(n+1) \times (n+1)$ matrix $(M_{i+j,0})_{0 \le i, j \le n}$, equals
 
-The recurrence is the finite weighted-Motzkin encoding of the displayed
-Jacobi fraction: level steps carry weight `alpha`, up-down pairs carry
-weight `beta`. The product over `Finset.range n` with shift `beta (j + 1)`
-and exponent `n - j` gives `beta (j + 1)` the exponents `n, ..., 1`.
-No nonzero `beta` hypothesis is needed.
+$$\mu_0^{n+1} \prod_{j=0}^{n-1} \beta_{j+1}^{\,n-j},$$
+
+that is, $\mu_0^{n+1} \beta_1^n \beta_2^{n-1} \cdots \beta_n$, which is $\mu_0$ for $n = 0$.
+
+No hypothesis that the $\beta_i$ are nonzero is needed.
 
 ## Depends on
 

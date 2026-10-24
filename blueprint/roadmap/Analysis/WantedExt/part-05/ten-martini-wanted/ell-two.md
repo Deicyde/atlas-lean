@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Analysis.TenMartiniWanted.Analysis.TenMartini.EllTwo
 ---
 
-# Ell Two
+# The sequence space $\ell^2(\mathbb{Z})$
 
-The Hilbert space `l^2(Z)` of square-summable complex sequences.
+**The sequence space $\ell^2(\mathbb{Z})$.** We write $\ell^2(\mathbb{Z})$ for the Hilbert
+space of square-summable sequences $(u_n)_{n \in \mathbb{Z}}$ of complex numbers.
 
 ## Depends on
 

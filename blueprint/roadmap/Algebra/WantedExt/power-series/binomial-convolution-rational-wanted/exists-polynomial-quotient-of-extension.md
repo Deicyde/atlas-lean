@@ -5,13 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.exists_polynomial_quotient_of_extension
 ---
 
-# Theorem 1
+# Rationality of power series descends from field extensions
 
-**Theorem 1.** If a power series `A` with coefficients in a field `F` is a quotient of
-polynomials `p / q` with coefficients in an extension field `G`, then `A = P / Q` for
-polynomials `P`, `Q` with coefficients in `F`.
-
-The quotients are stated with denominators cleared (`A q = p`, `q ≠ 0`).
+**Rationality of power series descends from field extensions.** Let $F$ be a field, let $G$ be
+a field extension of $F$ (a field with an $F$-algebra structure), and let $A$ be a power series
+over $F$. If there are polynomials $p$, $q$ over $G$ with $q \ne 0$ and $A q = p$, where $A$ is
+viewed as a power series over $G$, then there are polynomials $P$, $Q$ over $F$ with $Q \ne 0$ and
+$A Q = P$.
 
 ## Depends on
 

@@ -7,17 +7,19 @@ proof: formalized
 lean: MetaMathlibExt.pascalAlpha_eq
 ---
 
-# Pascal Alpha eq
+# Closed form of the Pascal column generating functions
 
-The closed form for a column generating function of the infinite Pascal matrix.
+**Closed form of the Pascal column generating functions.** For every natural number $j$ and
+every real number $x$ with $|x| < 1$, the column generating function $\alpha_j$ of the infinite
+Pascal matrix satisfies $\alpha_j(x) = x^j / (1 - x)^{j+1}$.
 
 ## Depends on
 
-- [Pascal Alpha](pascal-alpha.md)
+- [Column generating functions of the Pascal matrix](pascal-alpha.md)
 
 ## Proof depends on
 
-- [Pascal Entry](pascal-entry.md)
+- [Entries of the infinite Pascal matrix](pascal-entry.md)
 
 ## Sources
 

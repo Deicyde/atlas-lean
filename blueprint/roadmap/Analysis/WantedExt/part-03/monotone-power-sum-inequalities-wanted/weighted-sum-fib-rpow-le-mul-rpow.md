@@ -5,11 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.weighted_sum_fib_rpow_le_mul_rpow
 ---
 
-# Weighted sum fib rpow le mul rpow
+# Weighted power-mean bounds for Fibonacci numbers
 
-Upper bounds of Theorem 5(ii) (weighted Fibonacci), with `α = (r + s) / 2`: for
-weights `w_k > 0`, `W = ∑_{k=1}^n w_k` and `0 < α < 2`,
-`∑ w_k F_k ^ α ≤ W (∑ w_k F_k ^ 2 / W) ^ (α / 2) ≤ ∑ w_k F_k ^ 2`.
+**Weighted power-mean bounds for Fibonacci numbers.** Let $F_k$ be the $k$-th Fibonacci
+number ($F_1 = F_2 = 1$), let $n \ge 1$, let $w_1, \dots, w_n$ be positive reals with sum
+$W = \sum_{k=1}^n w_k$, and let $\alpha$ be a real number with $0 < \alpha < 2$. Then
+
+$$
+\sum_{k=1}^n w_k F_k^{\alpha} \le
+W \left( \frac{\sum_{k=1}^n w_k F_k^2}{W} \right)^{\alpha/2} \le \sum_{k=1}^n w_k F_k^2.
+$$
+
+In the source the exponent is $\alpha = (r + s)/2$.
 
 ## Depends on
 

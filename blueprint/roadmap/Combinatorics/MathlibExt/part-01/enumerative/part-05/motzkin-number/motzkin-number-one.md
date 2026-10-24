@@ -6,13 +6,13 @@ proof: formalized
 lean: MetaMathlibExt.motzkinNumber_one
 ---
 
-# Motzkin Number one
+# Value of the Motzkin number at 1
 
-`M(1) = 1`.
+**Value of the Motzkin number at 1.** The first Motzkin number is $M(1) = 1$.
 
 ## Depends on
 
-- [Motzkin Number](motzkin-number.md)
+- [Motzkin numbers as a Catalan-weighted binomial sum](motzkin-number.md)
 
 ## Sources
 

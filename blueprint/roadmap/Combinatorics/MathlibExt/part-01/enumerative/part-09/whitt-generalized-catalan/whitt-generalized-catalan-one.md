@@ -6,13 +6,14 @@ proof: formalized
 lean: MetaMathlibExt.whittGeneralizedCatalan_one
 ---
 
-# Whitt Generalized Catalan one
+# Whitt's generalized Catalan number at one
 
-`C(α, 1) = 1` for every `α`.
+**Whitt's generalized Catalan number at one.** For every rational number $\alpha$, Whitt's
+generalized Catalan number $C(\alpha, 1)$ equals $1$.
 
 ## Depends on
 
-- [Whitt Generalized Catalan](whitt-generalized-catalan.md)
+- [Whitt's generalized Catalan numbers](whitt-generalized-catalan.md)
 
 ## Sources
 

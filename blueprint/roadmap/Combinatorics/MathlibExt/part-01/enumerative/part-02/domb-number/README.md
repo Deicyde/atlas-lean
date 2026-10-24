@@ -5,5 +5,5 @@ navigation: module
 
 # Domb Number
 
-- [Domb Number](domb-number.md)
-- [Domb Number unfold](domb-number-unfold.md)
+- [Domb numbers](domb-number.md)
+- [Explicit formula for the Domb numbers](domb-number-unfold.md)

@@ -7,9 +7,11 @@ proof: formalized
 lean: Nat.Overpartition.natCard_eq_card_subtype
 ---
 
-# Nat Card eq card subtype
+# Overpartitions as pairs of a multiset and a set
 
-Cardinality of overpartitions as the explicit pair subtype.
+**Overpartitions as pairs of a multiset and a set.** For every natural number $m$, the number
+of overpartitions of $m$ equals the number of pairs $(P, S)$ in which $P$ is a finite multiset of
+positive integers with sum $m$ and $S$ is a finite set of natural numbers each belonging to $P$.
 
 ## Depends on
 

@@ -6,9 +6,12 @@ statement: formalized
 lean: Finset.IsAPOfLengthFree
 ---
 
-# Is APOf Length Free
+# Progression-free finite sets
 
-A finite set is free of nontrivial arithmetic progressions of length `l`.
+**Progression-free finite sets.** Let $M$ be an additive commutative monoid and
+$l \in \mathbb{N} \cup \{\infty\}$. A finite set $s \subseteq M$ is free of nontrivial arithmetic
+progressions of length $l$ if it is so as a set: $l \le 1$, or no subset of $s$ is an
+arithmetic progression of length $l$.
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is APOf Length Free](is-apof-length-free.md)
+- [Progression-free sets](is-apof-length-free.md)
 
 ## Sources
 

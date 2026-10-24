@@ -11,8 +11,8 @@ Lemma 29: the factors of the Thue–Morse word are closed under bitwise compleme
 
 ## Depends on
 
-- [Factor Set](../../../../MathlibExt/part-01/infinite-word/factor/factor-set.md)
-- [Thue Morse](../../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
+- [Set of factors of a given length](../../../../MathlibExt/part-01/infinite-word/factor/factor-set.md)
+- [Thue–Morse sequence](../../../../MathlibExt/part-01/infinite-word/thue-morse/thue-morse.md)
 
 ## Sources
 

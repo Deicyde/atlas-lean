@@ -21,7 +21,7 @@ This node has no prerequisites.
 ## Proof depends on
 
 - [Lattice Polytope](lattice-polytope.md)
-- [Ordinary Ehrhart Count](../../../MathlibExt/part-01/enumerative/part-06/ordinary-ehrhart-count.md)
+- [Ordinary Ehrhart count](../../../MathlibExt/part-01/enumerative/part-06/ordinary-ehrhart-count.md)
 
 ## Sources
 

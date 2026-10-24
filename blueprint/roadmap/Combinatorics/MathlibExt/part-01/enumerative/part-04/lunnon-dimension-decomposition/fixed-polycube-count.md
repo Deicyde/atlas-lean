@@ -6,10 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.fixedPolycubeCount
 ---
 
-# Fixed Polycube Count
+# Number of fixed polycubes
 
-`A_d(n)`: number of fixed `n`-cell polycubes in dimension `d`, counted as
-`Nat.card` of canonical representatives.
+**Number of fixed polycubes.** For natural numbers $d$ and $n$, $A_d(n)$ is the number of
+fixed $n$-cell polycubes in dimension $d$, that is, the number of $n$-cell polycubes in
+$\mathbb{Z}^d$ that are in canonical position.
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fixed Polycube](fixed-polycube.md)
+- [Fixed polycubes](fixed-polycube.md)
 
 ## Sources
 

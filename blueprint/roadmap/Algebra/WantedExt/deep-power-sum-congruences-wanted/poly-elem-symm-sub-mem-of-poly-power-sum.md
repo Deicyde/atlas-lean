@@ -5,16 +5,21 @@ statement: formalized
 lean: MetaMathlibExt.polyElemSymm_sub_mem_of_polyPowerSum_sub_mem
 ---
 
-# Poly Elem Symm sub mem of poly Power Sum sub mem
+# Power-sum congruences imply elementary symmetric congruences
 
-Let `A` be a torsion-free `ℤ_(p)`-algebra, `𝔞` a divided-power ideal and `P, Q` monic. If
-`p_n(P) ≡ p_n(Q) mod n𝔞` for `1 ≤ n ≤ N`, then `e_n(P) ≡ e_n(Q) mod 𝔞` for `1 ≤ n ≤ N`.
+**Power-sum congruences imply elementary symmetric congruences.** Let $p$ be a prime and $A$ a
+torsion-free commutative ring in which every natural number not divisible by $p$ is a unit (a
+torsion-free $\mathbb{Z}_{(p)}$-algebra). Let $\mathfrak{a}$ be a divided-power ideal of $A$, let
+$P, Q \in A[X]$ be monic and let $N$ be a natural number. Suppose that for every $n$ with
+$1 \le n \le N$ there is $c \in \mathfrak{a}$ with $p_n(P) - p_n(Q) = n c$, that is,
+$p_n(P) \equiv p_n(Q) \pmod{n \mathfrak{a}}$. Then $e_n(P) - e_n(Q) \in \mathfrak{a}$ for every $n$
+with $1 \le n \le N$.
 
 ## Depends on
 
-- [Is Divided Power Ideal](is-divided-power-ideal.md)
-- [Poly Elem Symm](poly-elem-symm.md)
-- [Poly Power Sum](poly-power-sum.md)
+- [Divided-power ideal](is-divided-power-ideal.md)
+- [Elementary symmetric functions of a polynomial](poly-elem-symm.md)
+- [Power sums of a polynomial](poly-power-sum.md)
 
 ## Sources
 

@@ -14,7 +14,7 @@ Theorem 14: `B n m < !n < B n m + 1/m` for `n ≥ 5` and positive `m`, where
 ## Depends on
 
 - [Kurepa Partial Integral](kurepa-partial-integral.md)
-- [Lambert Map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/lambert-map.md)
+- [Lambert map](../../../../Analysis/MathlibExt/part-01/special-functions/part-02/lambert-wfunction/lambert-map.md)
 
 ## Sources
 

@@ -6,13 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.whittGeneralizedCatalan_succ
 ---
 
-# Whitt Generalized Catalan succ
+# Whitt's generalized Catalan numbers in the source's indexing
 
-The defining sum, in the source's indexing: `C(α, n+1) = ∑_{k=0}^{n} (1 - k/(n+1)) C(n+k, k) α^k`.
+**Whitt's generalized Catalan numbers in the source's indexing.** For every rational number
+$\alpha$ and every natural number $n$, Whitt's generalized Catalan number $C(\alpha, n + 1)$ is
+
+$$C(\alpha, n + 1) = \sum_{k=0}^{n} \left(1 - \frac{k}{n+1}\right) \binom{n+k}{k} \alpha^k.$$
 
 ## Depends on
 
-- [Whitt Generalized Catalan](whitt-generalized-catalan.md)
+- [Whitt's generalized Catalan numbers](whitt-generalized-catalan.md)
 
 ## Sources
 

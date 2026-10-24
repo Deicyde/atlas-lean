@@ -7,9 +7,13 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch9.Entry14Xoversin.chapter9ChiAtOne_eq_zeta
 ---
 
-# Chapter9 Chi At One eq zeta
+# Odd reciprocal power sums in terms of $\zeta$
 
-The odd-denominator zeta sum is the Dirichlet chi value at an integer `m ≥ 2`.
+**Odd reciprocal power sums in terms of $\zeta$.** For every integer $m \ge 2$,
+
+$$\sum_{k \ge 0} \frac{1}{(2k+1)^m} = \left(1 - \frac{1}{2^m}\right) \operatorname{Re} \zeta(m),$$
+
+where $\zeta$ is the Riemann zeta function.
 
 ## Depends on
 

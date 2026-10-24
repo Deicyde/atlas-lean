@@ -6,18 +6,21 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Coding.CycleGraphCode.cycleConstruction_implies_lowerBound
 ---
 
-# Cycle Construction implies lower Bound
+# Codes give lower bounds on the cycle capacity
 
-An actual finite construction yields its corresponding root-rate lower bound.
+**Codes give lower bounds on the cycle capacity.** Let $q$, $n$ and $M$ be natural numbers
+with $n \ge 1$. If some finite set of words of length $n$ over $\mathbb{Z}/q\mathbb{Z}$ is an
+independent code for the $q$-cycle and has exactly $M$ elements, then $M^{1/n}$ is at most the
+Shannon capacity of the $q$-cycle, as an inequality in $[0, \infty]$.
 
 ## Depends on
 
-- [Is Cycle Code](is-cycle-code.md)
-- [Shannon Capacity Cycle](shannon-capacity-cycle.md)
+- [Independent codes for the modular cycle](is-cycle-code.md)
+- [Shannon capacity of the modular cycle](shannon-capacity-cycle.md)
 
 ## Proof depends on
 
-- [Cycle Code Rate le shannon Capacity](cycle-code-rate-le-shannon-capacity.md)
+- [Code rates are at most the cycle capacity](cycle-code-rate-le-shannon-capacity.md)
 
 ## Sources
 

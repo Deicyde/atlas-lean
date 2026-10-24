@@ -6,16 +6,19 @@ proof: formalized
 lean: MetaMathlibExt.existsUnique_lambertMap_lower_preimage
 ---
 
-# Exists Unique lambert Map lower preimage
+# Lower-branch preimages of the Lambert map
 
-Lower real branch `W₋₁`: every `x` with `-exp (-1) ≤ x < 0` has exactly one preimage
-`y ≤ -1` under `h y = y * exp y`. Existence uses `h (-1) = -exp (-1)`, `h y → 0` as
-`y → -∞` and the intermediate value theorem; uniqueness uses `h' y = exp y * (1 + y) < 0`
-on `y < -1`.
+**Lower-branch preimages of the Lambert map.** Let $h(y) = y e^y$ be the Lambert map on the
+real numbers. Every real $x$ with $-e^{-1} \le x < 0$ has exactly one preimage $y \le -1$ under
+$h$, that is, there is exactly one real number $y \le -1$ with $y e^y = x$.
+
+This preimage is the value at $x$ of the lower real branch $W_{-1}$ of the Lambert W function.
+Existence uses $h(-1) = -e^{-1}$, $h(y) \to 0$ as $y \to -\infty$ and the intermediate value
+theorem; uniqueness uses $h'(y) = e^y (1 + y) < 0$ for $y < -1$.
 
 ## Depends on
 
-- [Lambert Map](lambert-map.md)
+- [Lambert map](lambert-map.md)
 
 ## Sources
 

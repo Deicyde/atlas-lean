@@ -27,15 +27,15 @@ source lemma/alignment is a separate theorem.
 
 ## Depends on
 
-- [Q Pochhammer Inf](../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf.md)
+- [Infinite q-Pochhammer symbol](../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf.md)
 
 ## Proof depends on
 
-- [Q Pochhammer Inf Raw](../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
-- [Coeff jacobi Cube Series eq zero](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/ramanujan-partition-congruence/coeff-jacobi-cube-series-eq-zero.md)
-- [Coeff jacobi Cube Series triangle](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/ramanujan-partition-congruence/coeff-jacobi-cube-series-triangle.md)
-- [Jacobi Cube Series](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/ramanujan-partition-congruence/jacobi-cube-series.md)
-- [Pentagonal Series pow three](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/ramanujan-partition-congruence/pentagonal-series-pow-three.md)
+- [Raw infinite q-Pochhammer product](../../../../../Analysis/MathlibExt/part-01/special-functions/part-02/qpochhammer/q-pochhammer-inf-raw.md)
+- [Vanishing coefficients of Jacobi's cube series](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/ramanujan-partition-congruence/coeff-jacobi-cube-series-eq-zero.md)
+- [Coefficients of Jacobi's cube series at triangular numbers](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/ramanujan-partition-congruence/coeff-jacobi-cube-series-triangle.md)
+- [Jacobi's cube series](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/ramanujan-partition-congruence/jacobi-cube-series.md)
+- [Jacobi's cube identity](../../../../../Combinatorics/MathlibExt/part-01/enumerative/part-01/partition/ramanujan-partition-congruence/pentagonal-series-pow-three.md)
 
 ## Sources
 

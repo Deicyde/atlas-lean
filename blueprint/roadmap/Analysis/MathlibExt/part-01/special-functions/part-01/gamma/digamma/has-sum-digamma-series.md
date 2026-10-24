@@ -7,10 +7,12 @@ proof: formalized
 lean: Real.hasSum_digamma_series
 ---
 
-# Has Sum digamma series
+# Digamma series on the positive reals
 
-Digamma series on `(0, ∞)`: `∑ (1/(j+1) - 1/(x+j+1)) = ψ(x+1) + γ`,
-with `ψ = (log ∘ Gamma)'`.
+**Digamma series on the positive reals.** For every real $x > 0$, the series
+$\sum_{j=0}^{\infty} \left(\frac{1}{j+1} - \frac{1}{x+j+1}\right)$ has sum $\psi(x+1) + \gamma$,
+where $\psi = (\log \Gamma)'$ with $\Gamma$ the real Gamma function, and $\gamma$ is the
+Euler–Mascheroni constant.
 
 ## Depends on
 
@@ -18,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Summable one div add nat succ sq](summable-one-div-add-nat-succ-sq.md)
+- [Summability of the Basel series](summable-one-div-add-nat-succ-sq.md)
 
 ## Sources
 

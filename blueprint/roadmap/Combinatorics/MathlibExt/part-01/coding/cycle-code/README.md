@@ -4,11 +4,11 @@ navigation: module
 
 # Cycle Code
 
-- [Positive Nat](positive-nat.md)
-- [Is Cycle Code](is-cycle-code.md)
-- [Cycle Code](cycle-code.md)
-- [Cycle Code finite](cycle-code-finite.md)
-- [Cycle Code Rate](cycle-code-rate.md)
-- [Shannon Capacity Cycle](shannon-capacity-cycle.md)
-- [Cycle Code Rate le shannon Capacity](cycle-code-rate-le-shannon-capacity.md)
-- [Cycle Construction implies lower Bound](cycle-construction-implies-lower-bound.md)
+- [Positive block lengths](positive-nat.md)
+- [Independent codes for the modular cycle](is-cycle-code.md)
+- [Cycle codes](cycle-code.md)
+- [Finitely many cycle codes of each length](cycle-code-finite.md)
+- [Rate of a cycle code](cycle-code-rate.md)
+- [Shannon capacity of the modular cycle](shannon-capacity-cycle.md)
+- [Code rates are at most the cycle capacity](cycle-code-rate-le-shannon-capacity.md)
+- [Codes give lower bounds on the cycle capacity](cycle-construction-implies-lower-bound.md)

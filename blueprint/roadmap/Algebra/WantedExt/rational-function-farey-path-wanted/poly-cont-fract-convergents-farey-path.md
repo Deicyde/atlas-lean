@@ -5,18 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.polyContFract_convergents_farey_path
 ---
 
-# Poly Cont Fract convergents farey path
+# Convergents of a polynomial continued fraction form a Farey path
 
-Theorem 4: a finite regular continued fraction `[a₀, …, aₙ]`
-(`aᵢ ∈ F[X]` nonconstant for `i ≥ 1`) defines a path in the Farey graph `χ'`
-over `F` from its integral part `a₀` to its value, with the convergents as
-vertices: each convergent `Aᵢ / Bᵢ` is a vertex of `χ'` (`Bᵢ ≠ 0` and `Aᵢ`,
-`Bᵢ` coprime), and consecutive convergents are adjacent in `χ'`
-(`Aᵢ Bᵢ₋₁ - Aᵢ₋₁ Bᵢ ∈ F \ {0}`, i.e. a unit of `F[X]`).
+**Convergents of a polynomial continued fraction form a Farey path.** Let $F$ be a field, let
+$n \in \mathbb N$, and let $a_0, a_1, \dots, a_n \in F[X]$ with $a_i$ nonconstant for
+$1 \le i \le n$. Write $A_i$ and $B_i$ for the partial numerators and partial denominators of the
+continued fraction $[a_0, a_1, \dots, a_n]$ over $F(X)$. Then for every $i \le n$, $A_i$ and $B_i$
+are polynomials in $F[X]$, $B_i \ne 0$, and $A_i$ and $B_i$ are coprime in $F[X]$; and for
+$1 \le i \le n$, the polynomial $A_i B_{i-1} - A_{i-1} B_i$ is a unit of $F[X]$, that is, a
+nonzero constant.
+
+In the language of the paper, each convergent $A_i / B_i$ is a vertex of the Farey graph over $F$
+and consecutive convergents are adjacent in it.
 
 ## Depends on
 
-- [Poly Cont Fract](poly-cont-fract.md)
+- [Finite continued fraction with polynomial partial quotients](poly-cont-fract.md)
 
 ## Sources
 

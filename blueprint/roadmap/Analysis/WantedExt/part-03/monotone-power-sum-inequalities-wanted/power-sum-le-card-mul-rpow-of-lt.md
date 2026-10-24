@@ -5,13 +5,16 @@ statement: formalized
 lean: MetaMathlibExt.power_sum_le_card_mul_rpow_of_lt
 ---
 
-# Power sum le card mul rpow of lt
+# Power mean bound for power sums with a smaller exponent
 
-Upper bounds of Theorem 2(ii): for positive `x_k` and `0 < α < β`,
-`S^{[α]} ≤ n (S^{[β]} / n) ^ (α / β)`, and if moreover every `x_k ≥ 1` then
-`n (S^{[β]} / n) ^ (α / β) ≤ S^{[β]}` (here `n` is the number of terms, `n + 1` in
-Lean; in the paper `α = (r + s) / 2` and the sequence is monotone, so `x_k ≥ 1` is the
-paper's `x_1 ≥ 1`).
+**Power mean bound for power sums with a smaller exponent.** Let $x_1, \dots, x_N$ be
+$N \ge 1$ positive real numbers, and for real $p$ write $S^{[p]} = \sum_{k=1}^{N} x_k^p$. If
+$\alpha$ and $\beta$ are real numbers with $0 < \alpha < \beta$, then
+$S^{[\alpha]} \le N (S^{[\beta]} / N)^{\alpha/\beta}$. If moreover $x_k \ge 1$ for every $k$,
+then also $N (S^{[\beta]} / N)^{\alpha/\beta} \le S^{[\beta]}$.
+
+In the paper $\alpha = (r + s)/2$ and the sequence is monotone, so the condition $x_k \ge 1$
+for every $k$ is the paper's $x_1 \ge 1$.
 
 ## Depends on
 

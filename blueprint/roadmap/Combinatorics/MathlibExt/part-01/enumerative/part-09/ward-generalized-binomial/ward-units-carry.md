@@ -6,10 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.wardUnitsCarry
 ---
 
-# Ward Units Carry
+# Units-place carry
 
-The carry in the units place when adding `n` and `m` in base `b`.
-Invalid bases `b ≤ 1` are totalized to zero.
+**Units-place carry.** For natural numbers $b$, $n$ and $m$, the units-place carry
+$\varepsilon_0^{b,n,m}$ of $n + m$ in base $b$ is $1$ if $b > 1$ and
+$(n \bmod b) + (m \bmod b) \ge b$, and $0$ otherwise; in particular it is $0$ for the invalid
+bases $b \le 1$.
 
 ## Depends on
 

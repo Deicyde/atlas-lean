@@ -6,12 +6,13 @@ statement: formalized
 lean: Matroid.IsAlgebraic
 ---
 
-# Is Algebraic
+# Algebraic matroid
 
-`M` is algebraic if some same-universe realization exists.
+**Algebraic matroid.** A matroid $M$ on a type $E$ is algebraic if it has an algebraic
+representation over some field whose base field and extension field lie in the same universe
+as $E$.
 
-Universe encoding: witness base and extension lie in `Type v`, giving the
-universe-local form of algebraicity for `E : Type v`.
+Universe encoding: this is the universe-local form of algebraicity for matroids on $E$.
 
 ## Depends on
 
@@ -19,7 +20,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Algebraic Representation Some Field](algebraic-representation-some-field.md)
+- [Algebraic representation of a matroid over some field](algebraic-representation-some-field.md)
 
 ## Sources
 

@@ -6,22 +6,25 @@ proof: formalized
 lean: NoncrossingPartition.eq_indiscrete_of_forall_block_eq_univ
 ---
 
-# Eq indiscrete of forall block eq univ
+# A partition whose blocks are all the whole set is indiscrete
 
-A partition whose every block is `univ` is indiscrete.
+**A partition whose blocks are all the whole set is indiscrete.** Let $n$ be a natural number
+and let $P$ be a noncrossing partition of $\{0, \dots, n-1\}$. If for every
+$a \in \{0, \dots, n-1\}$ the block of $P$ containing $a$ is the whole set $\{0, \dots, n-1\}$,
+then $P$ is the indiscrete noncrossing partition.
 
 ## Depends on
 
-- [Noncrossing Partition](../basic/noncrossing-partition.md)
-- [Block](../basic/block.md)
-- [Indiscrete](indiscrete.md)
+- [Noncrossing partition](../basic/noncrossing-partition.md)
+- [Block of a noncrossing partition](../basic/block.md)
+- [The indiscrete noncrossing partition](indiscrete.md)
 
 ## Proof depends on
 
-- [Card lt of ne top](../../finpartition/card/card-lt-of-ne-top.md)
-- [Is Noncrossing](../basic/is-noncrossing.md)
-- [Set Partition](../basic/set-partition.md)
-- [Eq indiscrete iff val eq top](eq-indiscrete-iff-val-eq-top.md)
+- [Blocks of a partition other than the coarsest are smaller than the ground set](../../finpartition/card/card-lt-of-ne-top.md)
+- [Noncrossing set partition](../basic/is-noncrossing.md)
+- [Set partition](../basic/set-partition.md)
+- [Characterization of the indiscrete noncrossing partition](eq-indiscrete-iff-val-eq-top.md)
 
 ## Sources
 

@@ -5,5 +5,5 @@ navigation: module
 
 # BAry Chu Vandermonde
 
-- [B Ary Binomial Coefficient chu vandermonde](b-ary-binomial-coefficient-chu-vandermon.md)
-- [Bary chu vandermonde](bary-chu-vandermonde.md)
+- [Chu–Vandermonde identity for $b$-ary binomial coefficients](b-ary-binomial-coefficient-chu-vandermon.md)
+- [$b$-ary Chu–Vandermonde identity](bary-chu-vandermonde.md)

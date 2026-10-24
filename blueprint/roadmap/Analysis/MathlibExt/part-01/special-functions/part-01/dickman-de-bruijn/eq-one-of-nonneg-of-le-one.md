@@ -7,17 +7,19 @@ proof: formalized
 lean: Real.IsDickmanDeBruijn.eq_one_of_nonneg_of_le_one
 ---
 
-# Eq one of nonneg of le one
+# Normalization of the Dickman–de Bruijn function, inequality form
 
-Inequality form of the normalization of a Dickman–de Bruijn function on `[0, 1]`.
+**Normalization of the Dickman–de Bruijn function, inequality form.** If
+$\rho : \mathbb{R} \to \mathbb{R}$ is a Dickman–de Bruijn function and $u$ is a real number with
+$0 \le u$ and $u \le 1$, then $\rho(u) = 1$.
 
 ## Depends on
 
-- [Is Dickman De Bruijn](is-dickman-de-bruijn.md)
+- [Dickman–de Bruijn functions](is-dickman-de-bruijn.md)
 
 ## Proof depends on
 
-- [Eq one of mem Icc](eq-one-of-mem-icc.md)
+- [The Dickman–de Bruijn function equals one on the unit interval](eq-one-of-mem-icc.md)
 
 ## Sources
 

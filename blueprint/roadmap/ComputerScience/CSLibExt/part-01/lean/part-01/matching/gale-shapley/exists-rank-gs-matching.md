@@ -15,7 +15,7 @@ The rank of a proposer's final partner is his last proposal.
 - [State](state.md)
 - [Deferred acceptance](gale-shapley.md)
 - [The Gale-Shapley matching](gs-matching.md)
-- [Perfect Matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/perfect-matching.md)
+- [Perfect matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/perfect-matching.md)
 
 ## Proof depends on
 
@@ -34,7 +34,7 @@ The rank of a proposer's final partner is his last proposal.
 - [Remaining](remaining.md)
 - [Run](run.md)
 - [Wprefs](wprefs.md)
-- [Is Stable](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/is-stable.md)
+- [Stable perfect matching](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/is-stable.md)
 
 ## Sources
 

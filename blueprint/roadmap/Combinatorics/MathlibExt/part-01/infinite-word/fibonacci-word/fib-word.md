@@ -6,11 +6,14 @@ statement: formalized
 lean: MetaMathlibExt.fibWord
 ---
 
-# Fib Word
+# Finite Fibonacci words
 
-Finite Fibonacci iterates starting at the one-letter word `0`.
-The source displays `0`, `01`, `010`, `01001`, `01001010`, and so on.
-Concept `jis_sem_f409ef3715730614fd194b4d`, source `jis_2ff564e576beedc024b95b9a`.
+**Finite Fibonacci words.** The finite Fibonacci words $f_n$, for natural numbers $n$, are
+the words in the letters $0$ and $1$ defined by $f_0 = 0$ and $f_{n+1} = \varphi(f_n)$, where
+$\varphi$ is the Fibonacci morphism, which replaces each letter $0$ by $01$ and each letter $1$
+by $0$.
+
+The first words are $0$, $01$, $010$, $01001$, $01001010$, and so on.
 
 ## Depends on
 
@@ -18,8 +21,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fib Morph](fib-morph.md)
+- [Fibonacci morphism](fib-morph.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.InfiniteWord.FibonacciWord](../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_f409ef3715730614fd194b4d`, source `jis_2ff564e576beedc024b95b9a`.

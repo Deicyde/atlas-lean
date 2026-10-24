@@ -7,17 +7,15 @@ proof: formalized
 lean: MetaMathlibExt.fubiniNumber_three
 ---
 
-# Fubini Number three
+# Fubini number of three
 
-The source explicitly gives `F 3 = 13`.
-
-Concept `jis_sem_e1177ff556038d65c81b8a4b`; source statement
-`jis_0874746b31275e17727c6370` (the 13 set compositions of a 3-element set).
+**Fubini number of three.** The Fubini number $F(3)$ equals $13$.
 
 ## Depends on
 
-- [Fubini Number](fubini-number.md)
+- [Fubini numbers](fubini-number.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.FubiniNumber](../../../../../../../sources/v2/MathlibExt.md)
+- concept `jis_sem_e1177ff556038d65c81b8a4b`; source statement `jis_0874746b31275e17727c6370` (the 13 set compositions of a 3-element set).

@@ -7,21 +7,28 @@ proof: formalized
 lean: Complex.integral_remainder_bound
 ---
 
-# Integral remainder bound
+# Outer-sector bound for the quadratic integral remainder
 
-Bound the explicit quadratic integral remainder by the first neglected term
-times the outer-sector cosecant factor.
+**Outer-sector bound for the quadratic integral remainder.** Let $z \ne 0$ be a complex number
+with $\pi/2 \le |\arg z| < \pi$, where $\arg z \in (-\pi, \pi]$ is the principal argument, and
+let $T_2(z) = \frac{e^{-z}}{z} \cdot \frac{(-1)^2 \, 2!}{z^2}$ be the $n = 2$ term of the
+asymptotic expansion of $E_1$. Then
+
+$$\left| \frac{e^{-z}}{z^2} \int_0^\infty \frac{e^{-t} t^2}{t + z} \, dt \right| \le
+\frac{|T_2(z)|}{\sin |\arg z|},$$
+
+where the integral is taken over the open interval $(0, \infty)$.
 
 ## Depends on
 
-- [E1 Asymptotic Term](../../e1-2/e1-asymptotic-term.md)
+- [Asymptotic term of $E_1$](../../e1-2/e1-asymptotic-term.md)
 
 ## Proof depends on
 
-- [Integrable On exp neg mul pow](integrable-on-exp-neg-mul-pow.md)
-- [Integral exp neg mul pow Ioi](integral-exp-neg-mul-pow-ioi.md)
-- [Outer sector distance](outer-sector-distance.md)
-- [Outer sector sin abs arg pos](outer-sector-sin-abs-arg-pos.md)
+- [Integrability of $e^{-t} t^n$ on $(0, \infty)$](integrable-on-exp-neg-mul-pow.md)
+- [The moments of $e^{-t}$ are factorials](integral-exp-neg-mul-pow-ioi.md)
+- [Lower bound for $|t + z|$ in the outer sector](outer-sector-distance.md)
+- [Positivity of $\sin |\arg z|$ in the outer sector](outer-sector-sin-abs-arg-pos.md)
 
 ## Sources
 

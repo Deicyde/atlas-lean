@@ -15,7 +15,7 @@ Motzkin number `M_n`. Stated for all `n` (at `n = 0` both sides are `1`).
 
 - [Contains Pattern](contains-pattern.md)
 - [Is Weak Ascent Seq](is-weak-ascent-seq.md)
-- [Motzkin Number](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
+- [Motzkin numbers as a Catalan-weighted binomial sum](../../../../../MathlibExt/part-01/enumerative/part-05/motzkin-number/motzkin-number.md)
 
 ## Sources
 

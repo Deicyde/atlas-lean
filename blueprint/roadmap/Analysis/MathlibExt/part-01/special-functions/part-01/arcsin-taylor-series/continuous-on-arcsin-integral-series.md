@@ -7,18 +7,20 @@ proof: formalized
 lean: MathlibExt.Analysis.SpecialFunctions.ArcsinTaylorSeries.continuousOn_arcsinIntegralSeries
 ---
 
-# Continuous On arcsin Integral Series
+# Continuity of the integrated arcsine series
 
-The integrated arcsine series is continuous on the closed interval `[-1, 1]`.
+**Continuity of the integrated arcsine series.** The integrated arcsine series
+$F(t) = \sum_{n \ge 0} \binom{2n}{n} 4^{-n}\, t^{2n+1}/(2n+1)^2$ is continuous on the closed
+interval $[-1, 1]$.
 
 ## Depends on
 
-- [Arcsin Integral Series](arcsin-integral-series.md)
+- [Integrated arcsine series](arcsin-integral-series.md)
 
 ## Proof depends on
 
-- [Central Binomial Coeff](central-binomial-coeff.md)
-- [Norm arcsin Integral Series term le](norm-arcsin-integral-series-term-le.md)
+- [Normalized central binomial coefficient](central-binomial-coeff.md)
+- [Bound on the terms of the integrated arcsine series](norm-arcsin-integral-series-term-le.md)
 
 ## Sources
 

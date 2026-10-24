@@ -5,14 +5,15 @@ statement: formalized
 lean: MetaMathlibExt.c4Sq_integerGroupDeterminants_basic_members
 ---
 
-# Lemma 20
+# Basic integer group determinants of $C_4^2$
 
-**Lemma 20.** For every `m ∈ ℤ`, `16m + 1`, `2^16 (4m + 1)`, `2^16 (4m - 1)` and
-`2^16 (2m)` lie in `S(C₄²)`.
+**Basic integer group determinants of $C_4^2$.** For every integer $m$, the integers
+$16m + 1$, $2^{16} (4m + 1)$, $2^{16} (4m - 1)$ and $2^{16} \cdot 2m$ all lie in the set
+$S(C_4^2)$ of integer group determinants of $C_4^2 = \mathbb{Z}/4 \times \mathbb{Z}/4$.
 
 ## Depends on
 
-- [Integer Group Determinants](integer-group-determinants.md)
+- [Integer group determinants](integer-group-determinants.md)
 
 ## Sources
 

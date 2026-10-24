@@ -5,15 +5,18 @@ statement: formalized
 lean: MetaMathlibExt.interpolationPoly_exchange
 ---
 
-# Lemma 6
+# Exchange formula for interpolation polynomials
 
-**Lemma 6** (Exchange Formula). For a finite `X ⊆ ℤ` and `a, b ∉ X`,
-`f_{X ⊔ {a}} = f_{X ⊔ {b}} + c (a - b) ∏_{z ∈ X} (x - z)`, where `c` is the coefficient of
-`x^{|X|+1}` in `f_{X ⊔ {a,b}}`.
+**Exchange formula for interpolation polynomials.** Let $f : \mathbb{Z} \to \mathbb{Z}$, and for
+a finite set $Y \subseteq \mathbb{Z}$ write $f_Y \in \mathbb{Q}[x]$ for the interpolation polynomial
+of $f$ on $Y$. Let $X \subseteq \mathbb{Z}$ be finite and $a, b \in \mathbb{Z} \setminus X$, and let
+$c$ be the coefficient of $x^{|X|+1}$ in $f_{X \cup \{a, b\}}$. Then
+
+$$f_{X \cup \{a\}} = f_{X \cup \{b\}} + c\,(a - b) \prod_{z \in X} (x - z).$$
 
 ## Depends on
 
-- [Interpolation Poly](interpolation-poly.md)
+- [Interpolation polynomial](interpolation-poly.md)
 
 ## Sources
 

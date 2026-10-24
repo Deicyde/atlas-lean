@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.StripBoundedHolomorphicGrowthWanted.norm_le_two_div_pi_mul_log_of_abs_re_lt_one
 ---
 
-# Norm le two div pi mul log of abs re lt one
+# Growth bound for holomorphic maps from the unit disc into a vertical strip
 
-Let $D=\{z:|z|<1\}\subset\mathbb{C}$ be the unit disk and $g:D\to\mathbb{C}$ be a holomorphic
-function such that $g(0)=0$ and $|\operatorname{Re} g(z)|<1$ for any $z\in D$. Prove that for any
+**Growth bound for holomorphic maps from the unit disc into a vertical strip.** Let
+$D=\{z:|z|<1\}\subset\mathbb{C}$ be the unit disk and $g:D\to\mathbb{C}$ be a holomorphic
+function such that $g(0)=0$ and $|\operatorname{Re} g(z)|<1$ for any $z\in D$. Then for any
 $z\in D$,
 \[
 |g(z)|\le \frac{2}{\pi}\log\frac{1+|z|}{1-|z|}.
@@ -16,7 +17,7 @@ $z\in D$,
 
 ## Depends on
 
-- [D](d.md)
+- [The open unit disc $D$](d.md)
 
 ## Sources
 

@@ -6,9 +6,10 @@ statement: formalized
 lean: MathlibExt.Analysis.SendovRadiusConstantWanted.sendovConjecture
 ---
 
-# Sendov Conjecture
+# Sendov's conjecture
 
-Sendov's conjecture, expressed as the radius bound `sendovRadius ≤ 1`.
+**Sendov's conjecture.** Sendov's conjecture is the proposition that the Sendov radius is at
+most $1$.
 
 ## Depends on
 

@@ -6,16 +6,16 @@ statement: formalized
 lean: MetaMathlibExt.markedDyckCountNstar
 ---
 
-# Marked Dyck Count Nstar
+# Number of marked vertical steps
 
-Number `N*(P)` of marked vertical `N*` steps in a step list `P`.
-Source statement `jis_f51c1ff9625da95f812ce507`;
-concept `jis_sem_1ec0710af356bb3047cb9588`.
+**Number of marked vertical steps.** For a finite sequence $P$ of marked Dyck steps,
+$N^*(P)$ is the number of marked vertical steps $N^*$ in $P$.
 
 ## Depends on
 
-- [Marked Dyck Step](marked-dyck-step.md)
+- [Steps of a marked Dyck path](marked-dyck-step.md)
 
 ## Sources
 
 - [MathlibExt, MathlibExt.Combinatorics.Enumerative.MarkedStepInAMarkedDyckPath](../../../../../../../sources/v2/MathlibExt.md)
+- statement `jis_f51c1ff9625da95f812ce507`; concept `jis_sem_1ec0710af356bb3047cb9588`.

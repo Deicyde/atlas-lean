@@ -6,18 +6,19 @@ proof: formalized
 lean: NoncrossingPartition.isNoncrossing_bot
 ---
 
-# Is Noncrossing bot
+# The discrete partition is noncrossing
 
-The discrete partition `⊥` of `Fin n` is noncrossing for every `n`.
+**The discrete partition is noncrossing.** For every natural number $n$, the discrete
+partition of $\{0, \dots, n-1\}$, whose blocks are the singletons, is noncrossing.
 
 ## Depends on
 
-- [Is Noncrossing](../basic/is-noncrossing.md)
-- [Set Partition](../basic/set-partition.md)
+- [Noncrossing set partition](../basic/is-noncrossing.md)
+- [Set partition](../basic/set-partition.md)
 
 ## Proof depends on
 
-- [Has Crossing](../basic/has-crossing.md)
+- [Crossing in a set partition](../basic/has-crossing.md)
 
 ## Sources
 

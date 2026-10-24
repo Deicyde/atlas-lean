@@ -5,14 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.prod_one_sub_add_eq_resultant
 ---
 
-# Theorem 10
+# Resultant identity for pairwise sums
 
-**Theorem 10.** With `U(x) = ∏_{i ≤ m} (1 - αᵢx)` and `V(x) = ∏_{j ≤ n} (1 - βⱼx)`,
-`∏ᵢ ∏ⱼ (1 - (αᵢ + βⱼ)x) = (-1)^{mn} Res((1 - y)^m U(x / (1 - y)), yⁿ V(x / y), y)`.
+**Resultant identity for pairwise sums.** Let $K$ be a field of characteristic $0$, let
+$m, n \ge 0$ be integers, and let $\alpha_1, \dots, \alpha_m$ and $\beta_1, \dots, \beta_n$ be
+elements of $K$. Regard $f(y) = \prod_{i=1}^{m} (1 - y - \alpha_i x)$ and
+$g(y) = \prod_{j=1}^{n} (y - \beta_j x)$ as polynomials in $y$ with coefficients in $K[x]$,
+and let $\operatorname{Res}_{m,n}(f, g)$ be the determinant of their Sylvester matrix formed with
+the formal degrees $m$ and $n$. Then in $K[x]$
 
-The two resultant arguments are written expanded as polynomials in `y` over `K[x]`:
-`(1 - y)^m U(x / (1 - y)) = ∏ᵢ (1 - y - αᵢx)` and `yⁿ V(x / y) = ∏ⱼ (y - βⱼx)`; the resultant
-uses the formal degrees `m` and `n`.
+$$
+\prod_{i=1}^{m} \prod_{j=1}^{n} \bigl(1 - (\alpha_i + \beta_j)x\bigr)
+= (-1)^{mn} \operatorname{Res}_{m,n}(f, g).
+$$
+
+With $U(x) = \prod_{i=1}^{m} (1 - \alpha_i x)$ and $V(x) = \prod_{j=1}^{n} (1 - \beta_j x)$, these
+are $f(y) = (1 - y)^m U(x / (1 - y))$ and $g(y) = y^n V(x / y)$, the form used in the source.
 
 ## Depends on
 

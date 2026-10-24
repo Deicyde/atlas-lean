@@ -5,14 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.exists_tetration_eq_iterate_rpow_eventually
 ---
 
-# Exists tetration eq iterate rpow eventually
+# Normalization of power towers
 
-Normalization of power towers: for `a, b > e^{1/e}` with `a ≠ b` there are `N ≥ 0`,
-`k ∈ ℤ` and a convergent sequence `(c_n)` with `1 < c_n < b` and `a ↑↑ n = E_{n+k}(b, c_n)`
-for all `n ≥ N`. Here `E_m(b, c)` (the tower `b^{b^{⋯^c}}` with `m` copies of `b`) is the
-`m`-fold iterate of `x ↦ b ^ x` from `c`, the tower `a ↑↑ n = E_{n-1}(a, a)` is the `n`-fold
-iterate of `x ↦ a ^ x` from `1`, and the index `n + k` is required to be nonnegative for
-`n ≥ N` (implicit in the paper).
+**Normalization of power towers.** Let $a, b > e^{1/e}$ be real numbers with $a \ne b$. For
+a real number $c$ and $m \ge 0$ let $E_m(b, c)$ be the $m$-fold iterate of $x \mapsto b^x$
+starting at $c$ (the tower $b^{b^{\cdots^{c}}}$ with $m$ copies of $b$), and let
+$a \uparrow\uparrow n$ be the $n$-fold iterate of $x \mapsto a^x$ starting at $1$. Then there
+are a natural number $N$, an integer $k$ and a convergent sequence $(c_n)$ of real numbers such
+that for every $n \ge N$ we have $n + k \ge 0$, $1 < c_n < b$ and
+$a \uparrow\uparrow n = E_{n+k}(b, c_n)$.
+
+The paper leaves the condition $n + k \ge 0$ implicit.
 
 ## Depends on
 

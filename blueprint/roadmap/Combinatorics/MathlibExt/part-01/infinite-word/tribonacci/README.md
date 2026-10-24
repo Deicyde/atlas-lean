@@ -5,13 +5,13 @@ navigation: module
 
 # Tribonacci
 
-- [Tribonacci Letter](tribonacci-letter.md)
-- [Tribonacci Word Approx](tribonacci-word-approx.md)
-- [Tribonacci Word Approx add three](tribonacci-word-approx-add-three.md)
-- [Tribonacci Word Approx length add three](tribonacci-word-approx-length-add-three.md)
-- [Tribonacci Word Approx length ge](tribonacci-word-approx-length-ge.md)
-- [Tribonacci Word Approx prefix succ](tribonacci-word-approx-prefix-succ.md)
-- [Tribonacci Word Approx prefix](tribonacci-word-approx-prefix.md)
-- [Tribonacci Word Approx length mono](tribonacci-word-approx-length-mono.md)
-- [Tribonacci Word](tribonacci-word.md)
-- [Tribonacci Word eq get Elem of le](tribonacci-word-eq-get-elem-of-le.md)
+- [The Tribonacci alphabet](tribonacci-letter.md)
+- [Finite Tribonacci words](tribonacci-word-approx.md)
+- [Recursion for the finite Tribonacci words](tribonacci-word-approx-add-three.md)
+- [Length recurrence for finite Tribonacci words](tribonacci-word-approx-length-add-three.md)
+- [Length lower bound for finite Tribonacci words](tribonacci-word-approx-length-ge.md)
+- [Each finite Tribonacci word is a prefix of the next](tribonacci-word-approx-prefix-succ.md)
+- [Finite Tribonacci words form a prefix chain](tribonacci-word-approx-prefix.md)
+- [Lengths of finite Tribonacci words are monotone](tribonacci-word-approx-length-mono.md)
+- [The infinite Tribonacci word](tribonacci-word.md)
+- [Finite Tribonacci words agree with the infinite word](tribonacci-word-eq-get-elem-of-le.md)

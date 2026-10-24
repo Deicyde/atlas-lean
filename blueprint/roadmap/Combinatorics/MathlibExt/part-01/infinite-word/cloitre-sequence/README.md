@@ -5,10 +5,10 @@ navigation: module
 
 # Cloitre Sequence
 
-- [Cloitre Complement First](cloitre-complement-first.md)
-- [Cloitre Mirror](cloitre-mirror.md)
-- [Cloitre Approx](cloitre-approx.md)
-- [Cloitre Sequence](cloitre-sequence.md)
-- [Is Run Boundary](is-run-boundary.md)
-- [Cloitre Run Sum](cloitre-run-sum.md)
-- [Is Cloitre Self Describing](is-cloitre-self-describing.md)
+- [First-letter complement of a word](cloitre-complement-first.md)
+- [Mirror image with first-letter complement](cloitre-mirror.md)
+- [Approximants of Cloitre's sequence](cloitre-approx.md)
+- [Cloitre's sequence](cloitre-sequence.md)
+- [Run boundaries of a sequence](is-run-boundary.md)
+- [Sum of a sequence over a run](cloitre-run-sum.md)
+- [Cloitre's self-describing property](is-cloitre-self-describing.md)

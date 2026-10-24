@@ -6,14 +6,15 @@ proof: formalized
 lean: MetaMathlibExt.LabeledDigraph.ext
 ---
 
-# Ext
+# Extensionality for labeled directed graphs
 
-Extensionality for labeled digraphs: two bundles with the same source,
-target, and label maps are equal.
+**Extensionality for labeled directed graphs.** Two labeled directed graphs $G$ and $H$
+with the same vertex set, edge set and label set are equal if they have the same source map,
+the same target map and the same label map.
 
 ## Depends on
 
-- [Labeled Digraph](labeled-digraph.md)
+- [Labeled directed graph](labeled-digraph.md)
 
 ## Sources
 

@@ -19,7 +19,7 @@ the pairs `(n, b)` of the paper's list: the values are `2, 3, 4, 6, 9, 13, 19, 2
 ## Depends on
 
 - [Is Concat Two Repdigits Base](is-concat-two-repdigits-base.md)
-- [Narayana Sequence](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-06/narayana-cows-sequence.md)
+- [Narayana's cows sequence](../../../../Combinatorics/MathlibExt/part-01/enumerative/part-06/narayana-cows-sequence.md)
 
 ## Sources
 

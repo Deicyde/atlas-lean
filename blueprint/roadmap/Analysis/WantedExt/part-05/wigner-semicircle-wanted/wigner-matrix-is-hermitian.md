@@ -14,7 +14,7 @@ are symmetric in their arguments, and the entries are real).
 
 ## Depends on
 
-- [Wigner Matrix](wigner-matrix.md)
+- [Wigner matrix](wigner-matrix.md)
 
 ## Sources
 

@@ -12,7 +12,7 @@ If `α` is the unique parking function with its statistic encoding and
 
 ## Depends on
 
-- [Is Parking Function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
+- [Parking function](../../../../../MathlibExt/part-01/enumerative/part-06/parking-function/is-parking-function.md)
 
 ## Sources
 

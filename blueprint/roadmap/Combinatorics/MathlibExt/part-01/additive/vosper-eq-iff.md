@@ -7,22 +7,24 @@ proof: formalized
 lean: MetaMathlibExt.vosper_eq_iff
 ---
 
-# Vosper Theorem
+# Vosper's theorem
 
-Vosper equality characterization: for prime `p` and nonempty
-`A B : Finset (ZMod p)` with `A + B ≠ Finset.univ`,
-`(A + B).card = A.card + B.card - 1` iff (i) `min A.card B.card = 1`, or
-(ii) `(A + B).card = p - 1` with the complement of `A + B` equal to `{c}`
-for some `c : ZMod p` and `B` the complement of the image `c - A`, or
-(iii) `AreFiniteArithmeticProgressionsWithCommonDifference A B`.
+**Vosper's theorem.** Let $p$ be a prime and let $A$ and $B$ be nonempty subsets of
+$\mathbb{Z}/p\mathbb{Z}$ whose sumset $A + B = \{a + b : a \in A, b \in B\}$ is not all of
+$\mathbb{Z}/p\mathbb{Z}$. Then $|A + B| = |A| + |B| - 1$ if and only if one of the following
+holds: (i) $\min(|A|, |B|) = 1$; (ii) $|A + B| = p - 1$ and there is an element
+$c \in \mathbb{Z}/p\mathbb{Z}$ such that the complement of $A + B$ is $\{c\}$ and $B$ is the
+complement of $c - A = \{c - a : a \in A\}$; or (iii) $A$ and $B$ are arithmetic progressions
+with the same common difference, that is, there are $d, a_0, b_0 \in \mathbb{Z}/p\mathbb{Z}$
+with $A = \{a_0 + n d : 0 \le n < |A|\}$ and $B = \{b_0 + n d : 0 \le n < |B|\}$.
 
 ## Depends on
 
-- [Common Difference Progressions](are-finite-arithmetic-progressions-with.md)
+- [Arithmetic progressions with a common difference](are-finite-arithmetic-progressions-with.md)
 
 ## Proof depends on
 
-- [Is APOf Length With](../ap/basic/is-apof-length-with.md)
+- [Set arithmetic progressions with given first term and difference](../ap/basic/is-apof-length-with.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ by its crease.
 
 ## Depends on
 
-- [Cloitre Approx](../../../../Combinatorics/MathlibExt/part-01/infinite-word/cloitre-sequence/cloitre-approx.md)
+- [Approximants of Cloitre's sequence](../../../../Combinatorics/MathlibExt/part-01/infinite-word/cloitre-sequence/cloitre-approx.md)
 - [Cloitre Crease Interleave](cloitre-crease-interleave.md)
 
 ## Sources

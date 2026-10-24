@@ -6,9 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.dombNumber
 ---
 
-# Domb Number
+# Domb numbers
 
-The Domb numbers `Domb(n) = D(n,2,1,1)` (OEIS A002895).
+**Domb numbers.** For a natural number $n$, the Domb number $\mathrm{Domb}(n)$ is the
+Domb-type sum $D(n,2,1,1)$, that is,
+$\mathrm{Domb}(n) = \sum_{k=0}^{n} \binom{n}{k}^2 \binom{2k}{k} \binom{2(n-k)}{n-k}$
+(OEIS A002895).
 
 ## Depends on
 
@@ -16,7 +19,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Domb Type Sum](../../part-09/zagier-number/domb-type-sum.md)
+- [Domb-type sums](../../part-09/zagier-number/domb-type-sum.md)
 
 ## Sources
 

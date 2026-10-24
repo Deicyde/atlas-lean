@@ -7,12 +7,14 @@ proof: formalized
 lean: MetaMathlibExt.silverman_toeplitz
 ---
 
-# Silverman Toeplitz
+# Silverman–Toeplitz theorem (sufficiency)
 
-Silverman-Toeplitz theorem: an infinite summability matrix with uniformly
-bounded `l1` row norms, columns tending to `0`, and row sums tending to `1`
-is regular, i.e. maps every convergent sequence to a convergent transformed
-sequence with the same limit.
+**Silverman–Toeplitz theorem (sufficiency).** Let $(a_{nk})_{n, k \ge 0}$ be an infinite
+matrix of complex numbers. Suppose that there is a real $C$ such that for every $n$ the series
+$\sum_k |a_{nk}|$ converges with sum at most $C$, that $a_{nk} \to 0$ as $n \to \infty$ for every
+$k$, and that $\sum_k a_{nk} \to 1$ as $n \to \infty$. Then for every sequence $(x_k)$ of complex
+numbers converging to $L$, the series $\sum_k a_{nk} x_k$ converges absolutely for every $n$, and
+$\sum_k a_{nk} x_k \to L$ as $n \to \infty$.
 
 ## Depends on
 

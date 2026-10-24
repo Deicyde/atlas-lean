@@ -5,11 +5,12 @@ statement: formalized
 lean: CSLibExt.Combinatorics.RandomThreeSat.IsLowerCutoff
 ---
 
-# Is Lower Cutoff
+# Lower threshold cutoff
 
-`ρ` is a lower threshold cutoff when, at every constant density
-strictly below `ρ`, a random formula is satisfiable with probability
-tending to `1`.
+**Lower threshold cutoff.** A real number $\rho$ is a lower threshold cutoff for random
+3-SAT when, for every real $r < \rho$, the probability that a uniformly random formula with
+$\lfloor r n \rfloor$ clauses on $n$ variables is satisfiable tends to $1$ as $n \to \infty$
+(when $r n < 0$ the formula has no clauses).
 
 ## Depends on
 
@@ -17,7 +18,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Sat Prob](sat-prob.md)
+- [Satisfiability probability of random 3-SAT](sat-prob.md)
 
 ## Sources
 

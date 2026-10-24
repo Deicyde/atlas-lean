@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Analysis.IsingPhaseTransitionWanted.Analysis.IsingPhaseTransition.IsingSite
 ---
 
-# Ising Site
+# Sites of the periodic square lattice
 
-Sites in the `L × L` periodic square lattice.
+**Sites of the periodic square lattice.** For a positive integer $L$, the sites of the
+periodic $L \times L$ square lattice are the pairs $(i, j)$ with
+$i, j \in \mathbb{Z}/L\mathbb{Z}$.
 
 ## Depends on
 

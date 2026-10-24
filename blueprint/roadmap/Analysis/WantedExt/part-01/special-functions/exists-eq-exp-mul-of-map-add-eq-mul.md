@@ -5,15 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.SpecialFunctions.ContinuousMultiplicativeFunctionalEqExpWanted.exists_eq_exp_mul_of_map_add_eq_mul
 ---
 
-# Continuous Multiplicative Functional Eq Exp Wanted
+# Continuous nonzero solutions of $f(x)f(y) = f(x+y)$ are exponentials
 
-Suppose $f(x)f(y)=f(x+y)$ for all real $x$ and $y$. Assuming that $f$ is continuous and not
-zero, prove that
-
-\[
- f(x)=e^{cx},
- \]
- where $c$ is a constant.
+**Continuous nonzero solutions of $f(x)f(y) = f(x+y)$ are exponentials.** Let
+$f : \mathbb{R} \to \mathbb{R}$ be a continuous function that is not identically zero and
+satisfies $f(x)f(y) = f(x+y)$ for all real $x$ and $y$. Then there is a real constant $c$ such
+that $f(x) = e^{cx}$ for every real $x$.
 
 ## Depends on
 

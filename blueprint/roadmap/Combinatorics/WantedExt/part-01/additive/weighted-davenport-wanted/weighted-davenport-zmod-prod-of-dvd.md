@@ -13,7 +13,7 @@ if `α ∣ n`, then `D_A(Z_n ⊕ Z_{kn}) = m + ⌈kn/α⌉ - 1` for every `k ≥
 
 ## Depends on
 
-- [Weighted Davenport](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
+- [Weighted Davenport constant](../../../../MathlibExt/part-01/additive/weighted-davenport/weighted-davenport.md)
 
 ## Sources
 

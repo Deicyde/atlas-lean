@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.sum_moebius_divisors_not_dvd_prime
 ---
 
-# Sum moebius divisors not dvd prime
+# Möbius sum over the divisors prime to a given prime
 
-`Σ_{d ∣ n, p ∤ d} μ(d)` is `1` if `n` is a power of `p` and `0` otherwise (`n ≥ 1`).
+**Möbius sum over the divisors prime to a given prime.** Let $p$ be a prime, $\mu$ the Möbius
+function and $n \ge 1$. The sum of $\mu(d)$ over the divisors $d$ of $n$ with $p \nmid d$ is $1$ if
+$n$ is a power of $p$ (including $n = 1 = p^0$) and $0$ otherwise.
 
 ## Depends on
 

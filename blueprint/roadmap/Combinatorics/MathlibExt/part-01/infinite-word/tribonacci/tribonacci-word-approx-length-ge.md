@@ -7,18 +7,19 @@ proof: formalized
 lean: InfiniteWord.tribonacciWordApprox_length_ge
 ---
 
-# Tribonacci Word Approx length ge
+# Length lower bound for finite Tribonacci words
 
-Every finite Tribonacci-word approximant is longer than its index.
+**Length lower bound for finite Tribonacci words.** For every $n \ge 0$, the finite
+Tribonacci word $W(n)$ has length at least $n + 1$.
 
 ## Depends on
 
-- [Tribonacci Letter](tribonacci-letter.md)
-- [Tribonacci Word Approx](tribonacci-word-approx.md)
+- [The Tribonacci alphabet](tribonacci-letter.md)
+- [Finite Tribonacci words](tribonacci-word-approx.md)
 
 ## Proof depends on
 
-- [Tribonacci Word Approx length add three](tribonacci-word-approx-length-add-three.md)
+- [Length recurrence for finite Tribonacci words](tribonacci-word-approx-length-add-three.md)
 
 ## Sources
 

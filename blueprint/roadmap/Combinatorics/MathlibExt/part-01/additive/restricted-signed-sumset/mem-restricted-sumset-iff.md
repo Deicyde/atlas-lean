@@ -6,15 +6,16 @@ proof: formalized
 lean: MetaMathlibExt.mem_restrictedSumset_iff
 ---
 
-# Mem restricted Sumset iff
+# Coefficient description of the restricted sumset
 
-Membership in `restrictedSumset` is equivalent to the paper's coefficient definition:
-on `A`, every `c a` is `0` or `1`, their sum is `h`, and `x` is the corresponding
-weighted sum. No deviation from the paper's definition is made.
+**Coefficient description of the restricted sumset.** For a natural number $h$, a finite set
+$A$ of integers and an integer $x$, $x$ lies in the restricted sumset $h^{\wedge} A$ if and only
+if there is a function $c : \mathbb{Z} \to \mathbb{Z}$ with $c(a) \in \{0, 1\}$ for every
+$a \in A$, $\sum_{a \in A} c(a) = h$ and $x = \sum_{a \in A} c(a)\, a$.
 
 ## Depends on
 
-- [Restricted Sumset](restricted-sumset.md)
+- [Restricted sumset](restricted-sumset.md)
 
 ## Sources
 

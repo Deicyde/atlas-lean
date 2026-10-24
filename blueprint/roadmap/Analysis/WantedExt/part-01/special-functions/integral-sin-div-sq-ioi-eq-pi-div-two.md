@@ -5,13 +5,12 @@ statement: formalized
 lean: MathlibExt.Analysis.SpecialFunctions.IntegralSincSqHalfLineWanted.integral_sin_div_sq_Ioi_eq_pi_div_two
 ---
 
-# Integral Sinc Sq Half Line Wanted
+# Integral of the squared sinc function over the half-line
 
-Prove that
+**Integral of the squared sinc function over the half-line.** The integral of
+$(\sin x / x)^2$ over $(0, \infty)$ is $\pi/2$:
 
-\[
-\int_0^\infty \left(\frac{\sin x}{x}\right)^2 dx = \frac{\pi}{2}.
-\]
+$$\int_0^\infty \left(\frac{\sin x}{x}\right)^2 dx = \frac{\pi}{2}.$$
 
 ## Depends on
 

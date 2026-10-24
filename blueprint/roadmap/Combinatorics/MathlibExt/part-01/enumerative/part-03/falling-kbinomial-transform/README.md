@@ -5,6 +5,6 @@ navigation: module
 
 # Falling KBinomial Transform
 
-- [Falling KBinomial Transform](falling-kbinomial-transform.md)
-- [Binomial Transform](binomial-transform.md)
-- [Binomial Transform eq sum](binomial-transform-eq-sum.md)
+- [Falling k-binomial transform](falling-kbinomial-transform.md)
+- [Binomial transform](binomial-transform.md)
+- [Binomial transform as a binomial sum](binomial-transform-eq-sum.md)

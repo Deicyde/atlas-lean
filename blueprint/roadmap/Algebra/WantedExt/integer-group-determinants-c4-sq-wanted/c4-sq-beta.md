@@ -5,9 +5,11 @@ statement: formalized
 lean: MetaMathlibExt.c4SqBeta
 ---
 
-# C4 Sq Beta
+# The Gaussian integer $\beta$
 
-The paper's `β = (α₀ + α₂)² - (α₁ + α₃)²`.
+**The Gaussian integer $\beta$.** For $a \colon \mathbb{Z}/4 \times \mathbb{Z}/4 \to \mathbb{Z}$
+with Gaussian integers $\alpha_0, \dots, \alpha_3$,
+$\beta = (\alpha_0 + \alpha_2)^2 - (\alpha_1 + \alpha_3)^2 \in \mathbb{Z}[\sqrt{-1}]$.
 
 ## Depends on
 
@@ -15,7 +17,7 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [C4 Sq Alpha](c4-sq-alpha.md)
+- [The Gaussian integers $\alpha_i$](c4-sq-alpha.md)
 
 ## Sources
 

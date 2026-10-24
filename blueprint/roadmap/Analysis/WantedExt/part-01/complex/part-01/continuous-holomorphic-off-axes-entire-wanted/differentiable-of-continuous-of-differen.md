@@ -5,16 +5,15 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.ContinuousHolomorphicOffAxesEntireWanted.differentiable_of_continuous_of_differentiableOn_compl_coordAxes
 ---
 
-# Differentiable of continuous of differentiable On compl coord Axes
+# Continuous functions holomorphic off the coordinate axes are entire
 
-Let $f$ be continuous on the entire plane and holomorphic on the complement of the coordinate
-axes.
-
-Prove that $f$ is actually holomorphic on all of $\C$.
+**Continuous functions holomorphic off the coordinate axes are entire.** Let
+$f : \mathbb{C} \to \mathbb{C}$ be continuous on all of $\mathbb{C}$ and holomorphic on the
+complement of the coordinate axes. Then $f$ is holomorphic on all of $\mathbb{C}$.
 
 ## Depends on
 
-- [Coord Axes](coord-axes.md)
+- [Coordinate axes](coord-axes.md)
 
 ## Sources
 

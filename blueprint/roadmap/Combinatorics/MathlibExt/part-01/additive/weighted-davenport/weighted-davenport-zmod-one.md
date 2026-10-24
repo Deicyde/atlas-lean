@@ -6,18 +6,20 @@ proof: formalized
 lean: MetaMathlibExt.weightedDavenport_zmod_one
 ---
 
-# Weighted Davenport zmod one
+# Weighted Davenport constant of the trivial group
 
-For a non-empty weight set the weighted Davenport constant of the trivial group is `1`.
+**Weighted Davenport constant of the trivial group.** For every non-empty finite set $A$ of
+natural numbers, the $A$-weighted Davenport constant of the trivial group $\mathbb{Z}/1\mathbb{Z}$
+is $D_A(\mathbb{Z}/1\mathbb{Z}) = 1$.
 
 ## Depends on
 
-- [Weighted Davenport](weighted-davenport.md)
+- [Weighted Davenport constant](weighted-davenport.md)
 
 ## Proof depends on
 
-- [Is Weighted Zero Sum Free](is-weighted-zero-sum-free.md)
-- [Weighted Davenport eq nat Cast s Inf](weighted-davenport-eq-nat-cast-s-inf.md)
+- [Weighted zero-sum free sequences](is-weighted-zero-sum-free.md)
+- [The weighted Davenport constant as a least length](weighted-davenport-eq-nat-cast-s-inf.md)
 
 ## Sources
 

@@ -13,7 +13,7 @@ noncrossing.
 
 ## Depends on
 
-- [Set Partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/set-partition.md)
+- [Set partition](../../../../../MathlibExt/part-01/noncrossing-partition/basic/set-partition.md)
 
 ## Proof depends on
 

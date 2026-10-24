@@ -6,10 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.verticalFaultFreeTilingCount
 ---
 
-# Vertical Fault Free Tiling Count
+# Number of vertical-fault-free tilings of the $3 \times n$ rectangle
 
-The actual number of vertical-fault-free square-and-domino tilings of a
-`3 × n` rectangle.
+**Number of vertical-fault-free tilings of the $3 \times n$ rectangle.** For every natural
+number $n$, this is the number of square-and-domino tilings of the $3 \times n$ rectangle that
+are vertical-fault-free.
 
 ## Depends on
 
@@ -17,9 +18,9 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Is Square Domino Tiling](is-square-domino-tiling.md)
-- [Is Vertical Fault Free](is-vertical-fault-free.md)
-- [Tiling Cell](tiling-cell.md)
+- [Square-and-domino tilings](is-square-domino-tiling.md)
+- [Vertical-fault-free families](is-vertical-fault-free.md)
+- [Cells of the $3 \times n$ rectangle](tiling-cell.md)
 
 ## Sources
 

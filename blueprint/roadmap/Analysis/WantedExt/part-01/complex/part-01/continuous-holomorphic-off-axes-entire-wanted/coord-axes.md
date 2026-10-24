@@ -5,9 +5,10 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.ContinuousHolomorphicOffAxesEntireWanted.coordAxes
 ---
 
-# Coord Axes
+# Coordinate axes
 
-The union of the real and imaginary axes.
+**Coordinate axes.** The coordinate axes of $\mathbb{C}$: the union of the real axis and the
+imaginary axis.
 
 ## Depends on
 
@@ -15,8 +16,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Imag Axis](imag-axis.md)
-- [Real Axis](real-axis.md)
+- [Imaginary axis](imag-axis.md)
+- [Real axis](real-axis.md)
 
 ## Sources
 

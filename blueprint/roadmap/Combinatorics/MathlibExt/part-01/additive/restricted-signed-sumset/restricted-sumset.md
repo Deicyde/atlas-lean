@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.restrictedSumset
 ---
 
-# Restricted Sumset
+# Restricted sumset
 
-`restrictedSumset h A` is the finset of sums of `h` distinct elements of `A`,
-implemented by imaging the `h`-element subsets of `A` under summation. It is stated for
-finsets of any additive commutative monoid (so `0^∧ A = {0}`); the paper works in `ℤ`.
+**Restricted sumset.** For a natural number $h$ and a finite subset $A$ of an additive
+commutative monoid $G$, the restricted sumset $h^{\wedge} A$ is the set of all sums
+$\sum_{a \in B} a$ with $B$ an $h$-element subset of $A$, that is, the sums of $h$ distinct
+elements of $A$. In particular $0^{\wedge} A = \{0\}$.
+
+The source works in the integers; here $G$ is an arbitrary additive commutative monoid.
 
 ## Depends on
 

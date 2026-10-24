@@ -5,10 +5,11 @@ statement: formalized
 lean: MathlibExt.Analysis.Complex.InjectiveEntireIsAffineWanted.exists_affine_of_differentiable_injective
 ---
 
-# Injective Entire Is Affine Wanted
+# Injective entire functions are affine
 
-Prove that if $f$ is entire and one-to-one, then $f$ must be linear
-(in the affine sense: $f(z)=az+b$ with $a \ne 0$).
+**Injective entire functions are affine.** If $f : \mathbb{C} \to \mathbb{C}$ is entire and
+injective, then there are $a, b \in \mathbb{C}$ with $a \ne 0$ such that $f(z) = az + b$ for all
+$z \in \mathbb{C}$.
 
 ## Depends on
 

@@ -5,10 +5,17 @@ statement: formalized
 lean: MetaMathlibExt.tsum_odd_harmonic_div_and_catalan_mul_harmonic_special
 ---
 
-# Tsum odd harmonic div and catalan mul harmonic special
+# An odd harmonic series for $\pi^2/6$ and a Catalan–harmonic series for $8 - 2\pi^2/3$
 
-Theorem 4 (special values): `Σ_{n≥0} O_{n+1}/((n + 1)(2n + 1)) = π²/6` and
-`Σ_{n≥0} (C_n/2^{2n}) H_{n+1}/(n + 1) = 8 - 2π²/3`.
+**An odd harmonic series for $\pi^2/6$ and a Catalan–harmonic series for $8 - 2\pi^2/3$.**
+Let $O_k = \sum_{j=1}^{k} 1/(2j-1)$ be the $k$-th odd harmonic number, $C_n$ the $n$-th Catalan
+number and $H_k = \sum_{j=1}^{k} 1/j$ the $k$-th harmonic number. Then
+
+$$\sum_{n=0}^{\infty} \frac{O_{n+1}}{(n+1)(2n+1)} = \frac{\pi^2}{6}$$
+
+and
+
+$$\sum_{n=0}^{\infty} \frac{C_n H_{n+1}}{4^n (n+1)} = 8 - \frac{2\pi^2}{3}.$$
 
 ## Depends on
 

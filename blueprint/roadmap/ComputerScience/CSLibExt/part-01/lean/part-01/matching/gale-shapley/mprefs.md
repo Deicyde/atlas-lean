@@ -11,7 +11,7 @@ The proposers' preferences in MathlibExt's sense.
 
 ## Depends on
 
-- [MPrefs](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/mprefs.md)
+- [Men's preferences](../../../../../../../Combinatorics/MathlibExt/part-01/matching/gale-shapley/mprefs.md)
 
 ## Proof depends on
 

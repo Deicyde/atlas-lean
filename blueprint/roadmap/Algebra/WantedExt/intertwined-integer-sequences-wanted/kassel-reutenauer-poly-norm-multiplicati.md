@@ -5,16 +5,22 @@ statement: formalized
 lean: MetaMathlibExt.kasselReutenauerPoly_norm_multiplicative_rootOfUnity
 ---
 
-# Kassel Reutenauer Poly norm multiplicative root Of Unity
+# Multiplicativity at roots of unity of order at most 4
 
-Multiplicativity at roots of unity of order `1, 2, 3, 4`: if `q ∈ ℂ` is a
-primitive `d`-th root of unity with `d ∈ {1, 2, 3, 4}`, then
-`n ↦ |P_n(q)| = |P̄_n(q + q⁻¹)|` is multiplicative. Here `|P_n(q)|` is written as
-`‖P̄_n(q + q⁻¹)‖`, which equals it since `|q| = 1`.
+**Multiplicativity at roots of unity of order at most 4.** Let $q \in \mathbb{C}$ be a primitive
+$d$-th root of unity with $d \in \{1, 2, 3, 4\}$, and let $\bar P_n$ be the Kassel–Reutenauer
+polynomials. Then for all coprime integers $m, n \ge 1$,
+
+$$
+|\bar P_{mn}(q + q^{-1})| = |\bar P_m(q + q^{-1})| \, |\bar P_n(q + q^{-1})|.
+$$
+
+Since $|q| = 1$, $|\bar P_n(q + q^{-1})|$ is the absolute value $|P_n(q)|$ of the paper's
+polynomial $P_n(q) = q^{n-1} \bar P_n(q + q^{-1})$, so $n \mapsto |P_n(q)|$ is multiplicative.
 
 ## Depends on
 
-- [Kassel Reutenauer Poly](kassel-reutenauer-poly.md)
+- [Kassel–Reutenauer polynomial](kassel-reutenauer-poly.md)
 
 ## Sources
 

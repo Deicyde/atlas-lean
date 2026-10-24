@@ -7,19 +7,20 @@ proof: formalized
 lean: MetaMathlibExt.IsMinor.of_iso
 ---
 
-# Of iso
+# An isomorphic copy is a minor
 
-Isomorphic graphs are mutual minors in one step.
+**An isomorphic copy is a minor.** For finite graphs $H$ and $G$, if $H$ is isomorphic to $G$,
+then $H$ is a minor of $G$.
 
 ## Depends on
 
-- [Fin Graph](fin-graph.md)
-- [Is Minor](is-minor.md)
+- [Finite simple graph](fin-graph.md)
+- [Graph minor relation](is-minor.md)
 
 ## Proof depends on
 
-- [Of step](of-step.md)
-- [Minor Step](minor-step.md)
+- [A single minor step gives a minor](of-step.md)
+- [One-step graph minor](minor-step.md)
 
 ## Sources
 

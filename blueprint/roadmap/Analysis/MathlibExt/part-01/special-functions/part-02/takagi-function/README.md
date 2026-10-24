@@ -5,12 +5,12 @@ navigation: module
 
 # Takagi Function
 
-- [Takagi Bit](takagi-bit.md)
-- [Takagi Ell](takagi-ell.md)
-- [Takagi Newdef](takagi-newdef.md)
-- [Takagi Bit eq](takagi-bit-eq.md)
-- [Takagi Ell zero](takagi-ell-zero.md)
-- [Takagi Ell succ](takagi-ell-succ.md)
-- [Takagi Newdef eq](takagi-newdef-eq.md)
-- [Takagi Bit neg](takagi-bit-neg.md)
-- [Takagi Ell one](takagi-ell-one.md)
+- [Binary digits of a natural number](takagi-bit.md)
+- [Takagi coefficients](takagi-ell.md)
+- [Takagi function on dyadic presentations](takagi-newdef.md)
+- [Formula for the binary digits](takagi-bit-eq.md)
+- [The Takagi coefficient at index zero](takagi-ell-zero.md)
+- [Formula for the Takagi coefficients](takagi-ell-succ.md)
+- [Series for the Takagi value](takagi-newdef-eq.md)
+- [Binary digits at negative positions vanish](takagi-bit-neg.md)
+- [The first Takagi coefficient vanishes](takagi-ell-one.md)

@@ -7,9 +7,11 @@ proof: formalized
 lean: MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry9Qgamma.chapter8UnitPow_eq_cpow
 ---
 
-# Chapter8 Unit Pow eq cpow
+# The Entry 9 power function on positive reals (Chapter 8)
 
-On `(0, ∞)` the unit power is the standard `Complex.cpow`.
+**The Entry 9 power function on positive reals (Chapter 8).** For a complex number $x$ and a
+real number $u$, let $p_x(u) = e^{x \log\lvert u\rvert}$ if $u \ne 0$ and $p_x(0) = 0$. If $u > 0$,
+then $p_x(u) = u^x$, the principal complex power of $u$.
 
 ## Depends on
 

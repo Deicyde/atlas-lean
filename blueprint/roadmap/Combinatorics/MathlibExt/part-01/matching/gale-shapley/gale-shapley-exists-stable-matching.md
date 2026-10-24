@@ -7,21 +7,23 @@ proof: formalized
 lean: MathlibExt.Combinatorics.Matching.GaleShapley.gale_shapley_exists_stable_matching
 ---
 
-# Gale shapley exists stable matching
+# Gale–Shapley theorem
 
-For two finite equal-cardinality sides with strict total preferences over opposite side, a stable
-perfect matching exists.
+**Gale–Shapley theorem.** Let $M$ and $W$ be finite sets with the same number of elements.
+Suppose that each $m \in M$ has a strict total order of preference on $W$ and each $w \in W$ has
+a strict total order of preference on $M$. Then some perfect matching between $M$ and $W$ is
+stable for these preferences.
 
 ## Depends on
 
-- [Is Stable](is-stable.md)
-- [MPrefs](mprefs.md)
-- [Perfect Matching](perfect-matching.md)
-- [WPrefs](wprefs.md)
+- [Stable perfect matching](is-stable.md)
+- [Men's preferences](mprefs.md)
+- [Perfect matching](perfect-matching.md)
+- [Women's preference profile](wprefs.md)
 
 ## Proof depends on
 
-- [Gale shapley exists stable matching general](gale-shapley-exists-stable-matching-gene.md)
+- [Existence of stable perfect matchings](gale-shapley-exists-stable-matching-gene.md)
 
 ## Sources
 

@@ -5,5 +5,5 @@ navigation: module
 
 # Integral Derivative
 
-- [Logarithmic Integral Real](logarithmic-integral-real.md)
-- [Has Deriv At logarithmic Integral Real](has-deriv-at-logarithmic-integral-real.md)
+- [Real logarithmic integral extended by zero](logarithmic-integral-real.md)
+- [Derivative of the logarithmic integral](has-deriv-at-logarithmic-integral-real.md)

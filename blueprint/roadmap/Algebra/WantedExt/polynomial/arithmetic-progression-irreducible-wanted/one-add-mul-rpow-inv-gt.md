@@ -5,9 +5,12 @@ statement: formalized
 lean: MetaMathlibExt.one_add_mul_rpow_inv_gt
 ---
 
-# One add mul rpow inv gt
+# A rational lower bound for $(1 + mx)^{1/m}$
 
-For real `x > 0` and integer `m ≥ 2`, `(1 + mx)^{1/m} > (2 + (m + 1)x) / (2 + (m - 1)x)`.
+**A rational lower bound for $(1 + mx)^{1/m}$.** For every natural number $m \ge 2$ and every
+real $x > 0$,
+
+$$\frac{2 + (m + 1)x}{2 + (m - 1)x} < (1 + mx)^{1/m}.$$
 
 ## Depends on
 

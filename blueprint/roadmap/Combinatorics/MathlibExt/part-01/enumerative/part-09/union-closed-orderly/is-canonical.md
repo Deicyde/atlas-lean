@@ -6,11 +6,12 @@ statement: formalized
 lean: MetaMathlibExt.IsCanonical
 ---
 
-# Is Canonical
+# Canonical family
 
-A family is the canonical representative of its isomorphism class if its
-string is lexicographically minimal among all permuted images (`≤` on
-`List ℕ` is the lexicographic order).
+**Canonical family.** A family $U$ of subsets of $\{0, \dots, n-1\}$ is canonical, the
+canonical representative of its isomorphism class, if for every permutation $\sigma$ of
+$\{0, \dots, n-1\}$ the string $s(U)$ is lexicographically at most the string $s(\sigma(U))$
+of the permuted family $\sigma(U)$.
 
 ## Depends on
 
@@ -18,8 +19,8 @@ This node has no prerequisites.
 
 ## Proof depends on
 
-- [Fam String](fam-string.md)
-- [Perm Image](perm-image.md)
+- [String of a family](fam-string.md)
+- [Permuted image of a family](perm-image.md)
 
 ## Sources
 

@@ -6,9 +6,11 @@ statement: formalized
 lean: MetaMathlibExt.binRep
 ---
 
-# Bin Rep
+# Binary code of a subset
 
-Binary code `b(A)` of a subset `A ⊆ Ω_n`: the sum of `2^i` over `i ∈ A`.
+**Binary code of a subset.** For a natural number $n$ and a subset $A$ of
+$\{0, 1, \dots, n-1\}$, the binary code of $A$ is the natural number
+$b(A) = \sum_{i \in A} 2^i$.
 
 ## Depends on
 

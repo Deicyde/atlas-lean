@@ -5,11 +5,14 @@ statement: formalized
 lean: MetaMathlibExt.compositionHalfIndexSet
 ---
 
-# Composition Half Index Set
+# The index set $S(m, n, q)$
 
-The index set `S(m, n, q)`: the naturals `k` with
-`2k ≡ n - q (mod m)` and `k ≤ ⌊(n - 1) / 2⌋`. The bound is written
-`2 * k < n`, which is equivalent for naturals (and empty at `n = 0`).
+**The index set $S(m, n, q)$.** For natural numbers $m$, $n$ and $q$, the set $S(m, n, q)$
+consists of the natural numbers $k$ such that $2k \equiv n - q \pmod{m}$, where the difference
+$n - q$ is taken in the integers, and $2k < n$.
+
+For natural numbers the bound $2k < n$ is equivalent to $k \le \lfloor (n - 1)/2 \rfloor$; in
+particular the set is empty when $n = 0$.
 
 ## Depends on
 

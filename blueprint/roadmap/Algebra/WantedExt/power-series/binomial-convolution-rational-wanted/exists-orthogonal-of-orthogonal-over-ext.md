@@ -5,10 +5,13 @@ statement: formalized
 lean: MetaMathlibExt.exists_orthogonal_of_orthogonal_over_extension
 ---
 
-# Lemma 3
+# Orthogonal vectors descend from field extensions
 
-**Lemma 3.** Let `F ⊆ G` be fields and `S ⊆ Fⁿ`. If some nonzero `t ∈ Gⁿ` has `s · t = 0`
-for all `s ∈ S`, then some nonzero `u ∈ Fⁿ` has `s · u = 0` for all `s ∈ S`.
+**Orthogonal vectors descend from field extensions.** Let $F$ be a field, let $G$ be a field
+extension of $F$ (a field with an $F$-algebra structure), let $n \in \mathbb{N}$ and let
+$S \subseteq F^n$. If some nonzero $t \in G^n$ satisfies $\sum_{i=1}^n s_i t_i = 0$ in $G$ for
+every $s \in S$, then some nonzero $u \in F^n$ satisfies $\sum_{i=1}^n s_i u_i = 0$ for every
+$s \in S$.
 
 ## Depends on
 

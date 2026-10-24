@@ -12,7 +12,7 @@ Let `w ∈ Q_n` with `lucky(w) ≥ 2` and `x` the second-smallest element of
 
 ## Depends on
 
-- [Is Stirling Permutation](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
+- [Stirling permutations](../../../../../MathlibExt/part-01/enumerative/part-08/stirling-permutation/is-stirling-permutation.md)
 - [Stirling Lucky Set](stirling-lucky-set.md)
 
 ## Sources

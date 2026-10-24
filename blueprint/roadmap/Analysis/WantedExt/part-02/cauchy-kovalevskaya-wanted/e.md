@@ -6,9 +6,11 @@ statement: formalized
 lean: MathlibExt.Analysis.CauchyKovalevskayaWanted.Analysis.E
 ---
 
-# E
+# Model space $\mathbb{R}^d$ of the Cauchy–Kovalevskaya problem
 
-The model space `ℝᵈ`.
+**Model space $\mathbb{R}^d$ of the Cauchy–Kovalevskaya problem.** For a natural number $d$,
+this is the real Euclidean space $\mathbb{R}^d$ of dimension $d$, with the Euclidean inner product
+and norm.
 
 ## Depends on
 

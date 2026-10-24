@@ -7,14 +7,16 @@ proof: formalized
 lean: Nat.Overpartition.isOverlined_iff
 ---
 
-# Is Overlined iff
+# Characterization of overlined sizes
 
-Membership characterization for `IsOverlined`.
+**Characterization of overlined sizes.** For an overpartition $O$ of $n$ and a natural
+number $a$, $a$ is overlined in $O$ if and only if $a$ belongs to the set of overlined part
+sizes of $O$.
 
 ## Depends on
 
 - [Overpartition](overpartition.md)
-- [Is Overlined](is-overlined.md)
+- [Overlined part size](is-overlined.md)
 
 ## Sources
 

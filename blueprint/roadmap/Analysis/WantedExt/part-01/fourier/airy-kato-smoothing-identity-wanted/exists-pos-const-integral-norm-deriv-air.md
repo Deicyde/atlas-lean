@@ -5,26 +5,26 @@ statement: formalized
 lean: MathlibExt.Analysis.Fourier.AiryKatoSmoothingIdentityWanted.exists_pos_const_integral_norm_deriv_airySolution_sq_eq
 ---
 
-# Exists pos const integral norm deriv airy Solution sq eq
+# Kato smoothing identity for the Airy equation
 
-For all $u_0\in C_c^\infty(\mathbb{R})$, we define $u(t,x)\in C^\infty(\mathbb{R}^2)$ as follows
-\[
-u(t,x)=\frac{1}{\sqrt{2\pi}}\int_{\mathbb{R}} e^{i(t\xi^3+x\xi)}\widehat{u_0}(\xi)\,d\xi.
-\]
-Show that for all $x_0\in\mathbb{R}$, the function $t\mapsto \partial_x u(t,x_0)$ belongs to
-$L^2(\mathbb{R})$ and there exists a constant $c_0>0$ independent of $x_0$ and $u$, such that
-\[
-\int_{\mathbb{R}} |\partial_x u(t,x_0)|^2\,dt = c_0 \int_{\mathbb{R}} |u_0(x)|^2\,dx.
-\]
+**Kato smoothing identity for the Airy equation.** For $u_0 : \mathbb{R} \to \mathbb{C}$ let
+$\widehat{u_0}(\xi) = (2\pi)^{-1/2} \int_{\mathbb{R}} u_0(y) e^{-iy\xi}\,dy$ be its unitary
+Fourier transform, and let
+$u(t, x) = (2\pi)^{-1/2} \int_{\mathbb{R}} e^{i(t\xi^3 + x\xi)}\, \widehat{u_0}(\xi)\,d\xi$ be
+the Airy solution with initial datum $u_0$. There is a constant $c_0 > 0$ such that for every
+smooth compactly supported $u_0 : \mathbb{R} \to \mathbb{C}$ and every $x_0 \in \mathbb{R}$, the
+function $t \mapsto \partial_x u(t, x_0)$ belongs to $L^2(\mathbb{R})$ and
 
-Lean variant: the source's helper used Mathlib's `𝓕`, whose convention is `∫ u₀(y) e^{-2πiyξ} dy`,
-together with the unitary convention's phase and prefactor, so its initial datum was not `u₀`;
-`AirySolution` now uses the unitary transform `(2π)^{-1/2} 𝓕 u₀ (ξ / 2π)`. The two initial data
-differ by an L²-isometric rescaling, so the identity holds for both with the same `c₀`.
+$$\int_{\mathbb{R}} |\partial_x u(t, x_0)|^2\,dt = c_0 \int_{\mathbb{R}} |u_0(x)|^2\,dx.$$
+
+The source's formalization used the transform $\int u_0(y) e^{-2\pi i y\xi}\,dy$ together with
+the unitary phase and prefactor, so its initial datum was not $u_0$ but the $L^2$-isometric
+rescaling $x \mapsto (2\pi)^{-1/2} u_0(x / 2\pi)$; the identity holds for both with the same
+$c_0$.
 
 ## Depends on
 
-- [Airy Solution](airy-solution.md)
+- [Fourier solution of the Airy equation](airy-solution.md)
 
 ## Sources
 

@@ -14,14 +14,14 @@ partial product is a prefix of `fibInf`, and every prefix of `fibInf` lies in on
 
 ## Depends on
 
-- [Fib Inf](../../../part-01/infinite-word/fibonacci-word/fib-inf.md)
-- [Fib Word](../../../part-01/infinite-word/fibonacci-word/fib-word.md)
+- [Infinite Fibonacci word](../../../part-01/infinite-word/fibonacci-word/fib-inf.md)
+- [Finite Fibonacci words](../../../part-01/infinite-word/fibonacci-word/fib-word.md)
 
 ## Proof depends on
 
 - [Fib Word eq of Fn fib Inf](fib-word-eq-of-fn-fib-inf.md)
 - [Fib Word factorization](fib-word-factorization.md)
-- [Fib Word length](../../../part-01/infinite-word/fibonacci-word/fib-word-length.md)
+- [Lower bound on the length of the finite Fibonacci words](../../../part-01/infinite-word/fibonacci-word/fib-word-length.md)
 
 ## Sources
 

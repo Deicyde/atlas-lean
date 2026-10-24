@@ -7,14 +7,15 @@ proof: formalized
 lean: Nat.Overpartition.isOverlined_mem_parts
 ---
 
-# Is Overlined mem parts
+# Overlined sizes are parts
 
-An overlined size occurs in the underlying multiset of parts.
+**Overlined sizes are parts.** If $a$ is overlined in an overpartition $O$ of $n$, then $a$
+is a part of the underlying partition of $O$.
 
 ## Depends on
 
 - [Overpartition](overpartition.md)
-- [Is Overlined](is-overlined.md)
+- [Overlined part size](is-overlined.md)
 
 ## Sources
 
