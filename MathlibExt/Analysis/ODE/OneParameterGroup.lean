@@ -17,6 +17,7 @@ public import Mathlib.Analysis.Matrix.Normed
 public import Mathlib.Analysis.Normed.Algebra.Exponential
 public import Mathlib.Analysis.ODE.Gronwall
 public import Mathlib.Analysis.SpecialFunctions.Exponential
+import Mathlib.Analysis.Calculus.Deriv.Linear
 import Mathlib.Tactic.Convert
 import Mathlib.Tactic.Group
 import Mathlib.Tactic.Linarith
