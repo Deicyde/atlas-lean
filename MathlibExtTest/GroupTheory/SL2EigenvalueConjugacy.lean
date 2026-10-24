@@ -10,36 +10,23 @@ module
 
 import MathlibExt.GroupTheory.SL2EigenvalueConjugacy
 
-import Mathlib.Algebra.Group.Conj
 import Mathlib.Tactic
 
 namespace MathlibExtTest.GroupTheory.SL2EigenvalueConjugacy
 
 open _root_.SL2
 
-/-- The diagonal matrix `diag(s, s⁻¹)` in `SL₂(F)`. -/
-private def diagSL2 {F : Type*} [Field F] (s : F) (hs : s ≠ 0) :
-    Matrix.SpecialLinearGroup (Fin 2) F :=
-  ⟨Matrix.diagonal ![s, s⁻¹], by
-    simp only [Matrix.det_diagonal, Fin.prod_univ_two, Matrix.cons_val_zero,
-      Matrix.cons_val_one]
-    exact mul_inv_cancel₀ hs⟩
-
 /-- The diagonal matrix `diag(s, s⁻¹)` has eigenvalues `s` and `s⁻¹`. -/
 theorem diag_hasEigenvalues {F : Type*} [Field F] (s : F) (hs : s ≠ 0) :
-    HasEigenvalues (diagSL2 s hs) s := by
+    HasEigenvalues (Matrix.SpecialLinearGroup.diag2 s hs) s := by
   unfold HasEigenvalues
-  have hcoe : ((diagSL2 s hs : Matrix.SpecialLinearGroup (Fin 2) F) :
-      Matrix (Fin 2) (Fin 2) F) = Matrix.diagonal ![s, s⁻¹] := rfl
-  rw [hcoe, Matrix.charpoly_diagonal, Fin.prod_univ_two]
-  simp
+  rw [Matrix.SpecialLinearGroup.diag2_coe, Matrix.charpoly_diagonal,
+    Fin.prod_univ_two]
 
-/-- The diagonal matrix `diag(s, s⁻¹)` is conjugate to itself. -/
-theorem diag_isConjToDiag {F : Type*} [Field F] (s : F) (hs : s ≠ 0) :
-    IsConjToDiag (diagSL2 s hs) s := by
-  refine ⟨1, ?_⟩
-  rw [inv_one, mul_one, one_mul]
-  rfl
+/-- The standard diagonal element is conjugate to itself. -/
+theorem diag_isConj {F : Type*} [Field F] (s : F) (hs : s ≠ 0) :
+    IsConj (Matrix.SpecialLinearGroup.diag2 s hs)
+      (Matrix.SpecialLinearGroup.diag2 s hs) := IsConj.refl _
 
 /-- The swap matrix in `SL₂(ℚ)`. -/
 private def swapSL2 : Matrix.SpecialLinearGroup (Fin 2) ℚ :=
@@ -50,11 +37,14 @@ eigenvalues `2` and `2⁻¹`: the characteristic polynomial is invariant under
 conjugation (here via `charpoly_mul_comm` and `adjugate_mul`, since the
 inverse in `SL₂` is the adjugate). -/
 theorem conj_diag_hasEigenvalues :
-    HasEigenvalues (swapSL2 * diagSL2 (2 : ℚ) (by norm_num) * swapSL2⁻¹) 2 := by
+    HasEigenvalues (swapSL2 * Matrix.SpecialLinearGroup.diag2 (2 : ℚ) (by norm_num) * swapSL2⁻¹) 2 := by
   have hdet : (swapSL2 : Matrix (Fin 2) (Fin 2) ℚ).det = 1 := swapSL2.2
-  have hcoe_diag : ((diagSL2 (2 : ℚ) (by norm_num) :
+  have hcoe_diag : ((Matrix.SpecialLinearGroup.diag2 (2 : ℚ) (by norm_num) :
       Matrix.SpecialLinearGroup (Fin 2) ℚ) : Matrix (Fin 2) (Fin 2) ℚ) =
-      Matrix.diagonal ![2, (2 : ℚ)⁻¹] := rfl
+      Matrix.diagonal ![2, (2 : ℚ)⁻¹] := by
+    rw [Matrix.SpecialLinearGroup.diag2_coe']
+    ext i j
+    fin_cases i <;> fin_cases j <;> simp
   unfold HasEigenvalues
   simp only [Matrix.SpecialLinearGroup.coe_mul, Matrix.SpecialLinearGroup.coe_inv,
     hcoe_diag]
@@ -73,16 +63,17 @@ theorem conj_diag_hasEigenvalues :
 
 /-- The conjugate of `diag(2, 2⁻¹)` by the swap matrix is conjugate to
 `diag(2, 2⁻¹)`, by the diagonalization theorem. -/
-theorem conj_diag_isConjToDiag :
-    IsConjToDiag (swapSL2 * diagSL2 (2 : ℚ) (by norm_num) * swapSL2⁻¹) 2 :=
-  eigenvalues_implies_conj_to_diag 2 (by norm_num) _ conj_diag_hasEigenvalues
+theorem conj_diag_isConj :
+    IsConj (swapSL2 * Matrix.SpecialLinearGroup.diag2 (2 : ℚ) (by norm_num) * swapSL2⁻¹)
+      (Matrix.SpecialLinearGroup.diag2 (2 : ℚ) (by norm_num)) :=
+  eigenvalues_implies_isConj_diag2 2 (by norm_num) _ conj_diag_hasEigenvalues (by norm_num)
 
 /-- If a normal subgroup of `SL₂(ℚ)` contains `diag(2, 2⁻¹)`, it also contains
 the conjugate of `diag(2, 2⁻¹)` by the swap matrix. -/
 theorem conj_diag_mem_of_mem
     (N : Subgroup (Matrix.SpecialLinearGroup (Fin 2) ℚ)) (hN : N.Normal)
-    (hB : diagSL2 (2 : ℚ) (by norm_num) ∈ N) :
-    swapSL2 * diagSL2 (2 : ℚ) (by norm_num) * swapSL2⁻¹ ∈ N :=
+    (hB : Matrix.SpecialLinearGroup.diag2 (2 : ℚ) (by norm_num) ∈ N) :
+    swapSL2 * Matrix.SpecialLinearGroup.diag2 (2 : ℚ) (by norm_num) * swapSL2⁻¹ ∈ N :=
   normal_contains_all_with_eigenvalues N hN 2 (by norm_num) _ hB
     (diag_hasEigenvalues 2 (by norm_num)) _ conj_diag_hasEigenvalues
 
@@ -107,16 +98,16 @@ theorem unipotent_not_isConj_one : ¬ IsConj unipotent 1 := by
 
 /-- The source theorem gives an actual member of a concrete normal closure. -/
 theorem conj_diag_mem_normalClosure :
-    swapSL2 * diagSL2 (2 : ℚ) (by norm_num) * swapSL2⁻¹ ∈
+    swapSL2 * Matrix.SpecialLinearGroup.diag2 (2 : ℚ) (by norm_num) * swapSL2⁻¹ ∈
       Subgroup.normalClosure
-        ({diagSL2 (2 : ℚ) (by norm_num)} :
+        ({Matrix.SpecialLinearGroup.diag2 (2 : ℚ) (by norm_num)} :
           Set (Matrix.SpecialLinearGroup (Fin 2) ℚ)) :=
   conj_diag_mem_of_mem _ inferInstance (Subgroup.subset_normalClosure (by simp))
 
 #print axioms diag_hasEigenvalues
-#print axioms diag_isConjToDiag
+#print axioms diag_isConj
 #print axioms conj_diag_hasEigenvalues
-#print axioms conj_diag_isConjToDiag
+#print axioms conj_diag_isConj
 #print axioms conj_diag_mem_of_mem
 #print axioms unipotent_hasEigenvalues_one
 #print axioms unipotent_not_isConj_one

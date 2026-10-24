@@ -8,6 +8,7 @@ LICENSE file in the root directory of this source tree.
 
 module
 
+public import Mathlib.Algebra.Group.Conj
 public import Mathlib.LinearAlgebra.Eigenspace.Basic
 public import Mathlib.LinearAlgebra.Eigenspace.Charpoly
 public import Mathlib.LinearAlgebra.Matrix.Adjugate
@@ -16,7 +17,6 @@ public import Mathlib.LinearAlgebra.Matrix.SpecialLinearGroup
 public import Mathlib.LinearAlgebra.Matrix.ToLin
 import Mathlib.Tactic.FinCases
 import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.Group
 import Mathlib.Tactic.LinearCombination
 import Mathlib.Tactic.NormNum
 import Mathlib.Tactic.Ring
@@ -48,11 +48,27 @@ def HasEigenvalues (M : Matrix.SpecialLinearGroup (Fin 2) F) (s : F) : Prop :=
   (↑M : Matrix (Fin 2) (Fin 2) F).charpoly =
     (Polynomial.X - Polynomial.C s) * (Polynomial.X - Polynomial.C s⁻¹)
 
-/-- A matrix `M` in `SL₂(F)` is conjugate in `SL₂(F)` to the diagonal matrix
-`diag(s, s⁻¹)`. -/
-def IsConjToDiag (M : Matrix.SpecialLinearGroup (Fin 2) F) (s : F) : Prop :=
-  ∃ P : Matrix.SpecialLinearGroup (Fin 2) F,
-    (P * M * P⁻¹ : Matrix.SpecialLinearGroup (Fin 2) F).1 = Matrix.diagonal ![s, s⁻¹]
+/-- Standard conjugacy to `diag2` is exactly the source matrix-existential statement. -/
+theorem isConj_diag2_iff (M : Matrix.SpecialLinearGroup (Fin 2) F)
+    (s : F) (hs0 : s ≠ 0) :
+    IsConj M (Matrix.SpecialLinearGroup.diag2 s hs0) ↔
+      ∃ P : Matrix.SpecialLinearGroup (Fin 2) F,
+        (P * M * P⁻¹ : Matrix.SpecialLinearGroup (Fin 2) F).1 =
+          Matrix.diagonal ![s, s⁻¹] := by
+  have hdiag : (Matrix.SpecialLinearGroup.diag2 s hs0).1 =
+      Matrix.diagonal ![s, s⁻¹] := by
+    rw [Matrix.SpecialLinearGroup.diag2_coe']
+    ext i j
+    fin_cases i <;> fin_cases j <;> simp
+  rw [isConj_iff]
+  constructor
+  · rintro ⟨P, hP⟩
+    refine ⟨P, ?_⟩
+    rw [hP]
+    exact hdiag
+  · rintro ⟨P, hP⟩
+    refine ⟨P, ?_⟩
+    exact Subtype.ext (hP.trans hdiag.symm)
 
 /-- A normal subgroup of `SL₂(F)` containing one matrix conjugate to
 `diag(s, s⁻¹)` contains every matrix conjugate to `diag(s, s⁻¹)`: the two
@@ -62,20 +78,23 @@ theorem normal_subgroup_contains_all_conj_to_diag
     (N : Subgroup (Matrix.SpecialLinearGroup (Fin 2) F))
     (hN : N.Normal) (s : F)
     (B : Matrix.SpecialLinearGroup (Fin 2) F) (hB : B ∈ N)
-    (hBdiag : IsConjToDiag B s)
+    (hBdiag : ∃ P : Matrix.SpecialLinearGroup (Fin 2) F,
+      (P * B * P⁻¹ : Matrix.SpecialLinearGroup (Fin 2) F).1 =
+        Matrix.diagonal ![s, s⁻¹])
     (Q : Matrix.SpecialLinearGroup (Fin 2) F)
-    (hQdiag : IsConjToDiag Q s) :
+    (hQdiag : ∃ P : Matrix.SpecialLinearGroup (Fin 2) F,
+      (P * Q * P⁻¹ : Matrix.SpecialLinearGroup (Fin 2) F).1 =
+        Matrix.diagonal ![s, s⁻¹]) :
     Q ∈ N := by
-  obtain ⟨P_B, hPB⟩ := hBdiag
-  obtain ⟨P_Q, hPQ⟩ := hQdiag
-  have h1 : P_B * B * P_B⁻¹ = P_Q * Q * P_Q⁻¹ := by
-    ext1; rw [hPB, hPQ]
-  have hconj : Q = (P_Q⁻¹ * P_B) * B * (P_Q⁻¹ * P_B)⁻¹ := by
-    have h2 : Q = P_Q⁻¹ * (P_B * B * P_B⁻¹) * P_Q := by
-      rw [h1]; group
-    rw [h2]; group
-  rw [hconj]
-  exact hN.conj_mem B hB (P_Q⁻¹ * P_B)
+  obtain ⟨PB, hPB⟩ := hBdiag
+  obtain ⟨PQ, hPQ⟩ := hQdiag
+  have hcommon : PB * B * PB⁻¹ = PQ * Q * PQ⁻¹ :=
+    Subtype.ext (hPB.trans hPQ.symm)
+  have hBconj : IsConj B (PB * B * PB⁻¹) := isConj_iff.mpr ⟨PB, rfl⟩
+  have hQconj : IsConj Q (PB * B * PB⁻¹) := isConj_iff.mpr ⟨PQ, hcommon.symm⟩
+  obtain ⟨P, hP⟩ := isConj_iff.mp (hBconj.trans hQconj.symm)
+  rw [← hP]
+  exact hN.conj_mem B hB P
 
 open Polynomial Module.End in
 set_option maxHeartbeats 8000000 in
@@ -84,12 +103,12 @@ is conjugate in `SL₂(F)` to `diag(s, s⁻¹)`. The proof builds the conjugatin
 matrix from eigenvectors for `s` and `s⁻¹`: distinct eigenvalues give
 linearly independent eigenvectors, so the matrix of eigenvectors has
 nonzero determinant, and rescaling its first column makes the determinant `1`. -/
-theorem eigenvalues_implies_conj_to_diag (s : F) (hs : s ≠ s⁻¹)
-    (M : Matrix.SpecialLinearGroup (Fin 2) F) (hM : HasEigenvalues M s) :
-    IsConjToDiag M s := by
+theorem eigenvalues_implies_isConj_diag2 (s : F) (hs : s ≠ s⁻¹)
+    (M : Matrix.SpecialLinearGroup (Fin 2) F) (hM : HasEigenvalues M s)
+    (hs0 : s ≠ 0) : IsConj M (Matrix.SpecialLinearGroup.diag2 s hs0) := by
   open Polynomial Module.End in
   unfold HasEigenvalues at hM
-  unfold IsConjToDiag
+  apply (isConj_diag2_iff M s hs0).mpr
   have hs_sub : s - s⁻¹ ≠ 0 := sub_ne_zero.mpr hs
   set M' := (↑M : Matrix (Fin 2) (Fin 2) F)
   have heig_s : HasEigenvalue (Matrix.toLin' M') s := by
@@ -165,6 +184,15 @@ theorem eigenvalues_implies_conj_to_diag (s : F) (hs : s ≠ s⁻¹)
     _ = Q_mat⁻¹ * Q_mat * Matrix.diagonal ![s, s⁻¹] := by rw [Matrix.mul_assoc]
     _ = 1 * Matrix.diagonal ![s, s⁻¹] := by rw [hQinv_mul]
     _ = Matrix.diagonal ![s, s⁻¹] := by rw [Matrix.one_mul]
+
+/-- The source diagonalization statement, with no separate nonzero hypothesis. -/
+theorem eigenvalues_implies_conj_to_diag (s : F) (hs : s ≠ s⁻¹)
+    (M : Matrix.SpecialLinearGroup (Fin 2) F) (hM : HasEigenvalues M s) :
+    ∃ P : Matrix.SpecialLinearGroup (Fin 2) F,
+      (P * M * P⁻¹ : Matrix.SpecialLinearGroup (Fin 2) F).1 =
+        Matrix.diagonal ![s, s⁻¹] := by
+  have hs0 : s ≠ 0 := fun h => hs (by simp [h])
+  exact (isConj_diag2_iff M s hs0).mp (eigenvalues_implies_isConj_diag2 s hs M hM hs0)
 
 /-- A normal subgroup of `SL₂(F)` containing one matrix with eigenvalues `s`
 and `s⁻¹`, with `s ≠ s⁻¹`, contains every matrix with those eigenvalues. -/
