@@ -31,15 +31,18 @@ This formalizes the target "Theorem (`L^p` convergence theorem)"
 The v1 formalization is
 `v1/Atlas/TheoryOfProbability/code/MartingaleLpConvergence.lean`
 (`martingale_Lp_convergence_ae`). It is stated there for submartingales,
-with the key step `unifIntegrable_p_at_p_of_submartingale` left as a
-`Sorry`: a submartingale with uniformly bounded `L^p` norms is claimed
-to be uniformly integrable in `L^p`. That claim is false as stated:
-on a probability space, the moving bumps
-`f_n = n ^ (1 / p) * 1_{[0, 1 / n]}` have `L^p` norm `1` but are not
-uniformly integrable in `L^p`. This file therefore proves the theorem
-for martingales (as in the book), by a different route: an `L^p`-bounded
-martingale is uniformly integrable in `L¹`, so Mathlib's `L¹` martingale
-convergence theorem represents it as the conditional-expectation
+with the key step `unifIntegrable_p_at_p_of_submartingale` left unproved:
+a submartingale with uniformly bounded `L^p` norms is claimed
+to be uniformly integrable in `L^p`. For an arbitrary family, bounded
+`L^p` norms alone do not imply uniform integrability in `L^p`: on
+`[0, 1]` with Lebesgue measure, the moving bumps
+`f_n = n ^ (1 / p) * 1_{[0, 1 / n]}`, `n ≥ 1`, have `L^p` norm `1`
+but are not uniformly integrable in `L^p`. These positive bumps do not
+satisfy the submartingale hypothesis and do not refute the v1 lemma.
+This file does not rely on that admitted step or claim the submartingale
+extension. It proves the quoted martingale target by a different route:
+an `L^p`-bounded martingale is uniformly integrable in `L¹`, so Mathlib's
+`L¹` martingale convergence theorem represents it as the conditional-expectation
 martingale of its limit process, and `L^p` convergence of that
 conditional-expectation martingale follows from a truncation argument.
 
@@ -123,9 +126,7 @@ private lemma unifIntegrable_of_eLpNorm_restrict_le {p : ℝ≥0∞} {C : ℝ≥
             exact ENNReal.mul_div_cancel_right hC1ne hC1top
 
 /-- An `L^p`-bounded family, `1 < p < ∞`, is uniformly integrable in `L¹`.
-This is the corrected form of the `L^p` uniform-integrability step: the
-bound gives uniform integrability in the strictly smaller exponent `1`,
-not in `L^p` itself. -/
+The bound alone gives this conclusion at the strictly smaller exponent `1`. -/
 private lemma uniformIntegrable_one_of_eLpNorm_bdd {p : ℝ≥0∞} (hp : 1 < p) (hp_top : p ≠ ⊤)
     {f : ℕ → Ω → ℝ} (hf : ∀ n, AEStronglyMeasurable (f n) μ)
     {R : ℝ≥0} (hbdd : ∀ n, eLpNorm (f n) p μ ≤ R) :
