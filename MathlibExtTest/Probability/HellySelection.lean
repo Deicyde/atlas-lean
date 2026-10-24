@@ -96,6 +96,15 @@ example :
   intro n
   exact step_isDistributionFunction (n : ℝ)
 
+/-- Right-limit regularization preserves the expected pointwise values. -/
+example (f : ℝ → ℝ) (hf : Monotone f) (x : ℝ) :
+    HellySelection.ofMonotone f hf x = Function.rightLim f x := rfl
+
+/-- The distribution contract includes both unit-interval bounds and right continuity. -/
+example (F : ℝ → ℝ) (hF : IsDistributionFunction F) (x : ℝ) :
+    0 ≤ F x ∧ F x ≤ 1 ∧ ContinuousWithinAt F (Ici x) x :=
+  ⟨hF.nonneg x, hF.le_one x, hF.right_continuous x⟩
+
 -- `#print axioms` for the public declarations: only the standard triple.
 #print axioms ProbabilityTheory.IsDistributionFunction
 #print axioms ProbabilityTheory.HellySelection.MonotoneRightContinuous
